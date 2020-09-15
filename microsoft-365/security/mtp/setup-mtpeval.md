@@ -1,7 +1,7 @@
 ---
-title: Konfigurera testlabbmiljön för Microsoft Threat Protection
-description: Öppna Microsoft 365 Security Center och konfigurera sedan testlabbmiljön för Microsoft Threat Protection
-keywords: Testinställning för Microsoft Threat Protection, prova Microsoft Threat Protection, Microsoft Threat Protection utvärdering lab setup
+title: Konfigurera utvärderings labb miljön för Microsoft Threat Protection
+description: Gå till Microsoft 365 säkerhets Center och ställ sedan in utvärderings labb miljön för Microsoft Threat Protection
+keywords: Utvärderings version av Microsoft Threat Protection prova Microsoft Threat Protection, Microsoft Threat Protection Evaluation Lab-konfiguration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,140 +15,138 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6cba773d0c4bea259db151d5a8f1d8e03954a045
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 69a883263952b7c20225659ae023399e0242606d
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717301"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47650075"
 ---
-# <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>Konfigurera testlabbmiljön för Microsoft Threat Protection 
+# <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>Konfigurera utvärderings labb miljön för Microsoft Threat Protection 
 
-**Gäller:**
+**Gäller för:**
 - Microsoft Hotskydd 
 
 
-Att skapa en testlabbmiljö för Microsoft Threat Protection och distribuera den är en trefasprocess:
+Att skapa en test laboratorie miljö för Microsoft Threat Protection och distribuera det är en process i tre steg:
 
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Förbered utvärderingslabbet för Microsoft Threat Protection" />
-      <br/>Fas 1: Förbered</a><br>
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Förbereda ett utvärderings labb för Microsoft Threat Protection" />
+      <br/>Fas 1: förbereda </a><br>
     </td>
      <td align="center"bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Konfigurera microsofts utvärderingslabb för hotskydd" />
-      <br/>Fas 2: Installation</a><br>
+        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Konfigurera Microsoft Threat Protection Evaluation Lab" />
+      <br/>Fas 2: konfiguration </a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
         <img src="../../media/config-onboard.png" alt="
 Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection trial lab environment and onboard your endpoints" title="
-Konfigurera varje Microsoft Threat Protection-pelare för testlabbmiljön för Microsoft Threat Protection och dina slutpunkter" />
-      <br/>Fas 3: Konfigurera & ombord</a><br>
+Konfigurera var and rings skydd för ditt Microsoft Threat Protection utvärderings labb miljö och få slut punkter" />
+      <br/>Steg 3: Konfigurera & inbyggt </a><br>
 </td>
 
 
   </tr>
 </table>
 
-Du befinner dig för närvarande i ställningsfasen. Gör de första stegen för att komma åt Microsoft 365 Security Center och konfigurera sedan testlabbets miljö.
+Du befinner dig i fasen inställning. Utför de första stegen för att komma åt Microsoft 365 Security Center och ställ sedan in utvärderings laboratorie miljön.
 
-Registrera dig för en Office 365- eller Azure Active Directory-prenumeration för att generera en *.onmicrosoft.com-klient* som du kan använda för att registrera dig för din Microsoft 365 E5-licens. 
+Registrera dig för en Office 365-eller Azure Active Directory-prenumeration och generera en *. onmicrosoft.com* -klient organisation som du kan använda för att registrera dig för din Microsoft 365 E5-licens. 
 
 >[!NOTE]
->Om du redan har en befintlig Office 365- eller Azure Active Directory-prenumeration kan du hoppa över stegen för att skapa utvärderingsversionen av Office 365 E5-utvärderingsversionen av klientversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av
+>Om du redan har en prenumeration på Office 365 eller Azure Active Directory kan du hoppa över stegen för att skapa ett Office 365 E5-prov.
 
-I den här fasen guidas du till:
-- Skapa en office 365 E5-utvärderingsorganisation
-- Aktivera testprenumeration för Microsoft 365
+I den här fasen vägleds du:
+- Skapa en Office 365 E5-prov klient
+- Aktivera utvärderings prenumeration för Microsoft 365
 
 
-## <a name="create-an-office-365-e5-trial-tenant"></a>Skapa en office 365 E5-utvärderingsorganisation
+## <a name="create-an-office-365-e5-trial-tenant"></a>Skapa en Office 365 E5-prov klient
 >[!NOTE]
->Om du redan har en befintlig Office 365- eller Azure Active Directory-prenumeration kan du hoppa över stegen för att skapa utvärderingsversionen av Office 365 E5-utvärderingsversionen av klientversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av utvärderingsversionen av
+>Om du redan har en prenumeration på Office 365 eller Azure Active Directory kan du hoppa över stegen för att skapa ett Office 365 E5-prov.
 
-1. Gå till [produktportalen för Office 365 E5](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab) och välj **Kostnadsfri utvärderingsversion**.
-![Bild of_Office 365 E5 gratis provversion sida](../../media/mtp-eval-9.png) <br>
+1. Gå till [produkt portalen för Office 365 E5](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab) och välj **gratis prov**.
+![Bild of_Office 365 E5 gratis prov sida](../../media/mtp-eval-9.png) <br>
   
-2. Slutför provregistreringen genom att ange din e-postadress (personlig eller företagsadress). Klicka på **Konfigurera konto**.
-![Bild of_Office inställningssida för 365 E5-utvärderingsregistrering](../../media/mtp-eval-10.png) <br> 
+2. Slutför utvärderings registreringen genom att ange din e-postadress (privat eller företag). Klicka på **Konfigurera konto**.
+![Bild of_Office 365 E5 prov registrerings sida för utvärderings version](../../media/mtp-eval-10.png) <br> 
 
-3. Fyll i förnamn, efternamn, företagstelefonnummer, företagsnamn, företagsstorlek och land eller region.  
-<br>![Bild of_Office inställningssida för 365 E5-utvärderingsregistrering och ber om namn, telefon och företagsuppgifter](../../media/mtp-eval-11.png) <br>
+3. Fyll i ditt förnamn, efter namn, företags telefonnummer, företags namn, företagets storlek och land eller region.  
+<br>![Bild of_Office 365 E5 utvärderings versionen av prov registrerings sidan som frågar efter namn, telefon och företagets uppgifter](../../media/mtp-eval-11.png) <br>
 >[!NOTE]
->Det land eller den region som du anger här avgör vilken datacenterregion ditt Office 365 ska vara värd för.
+>Det land eller den region som du anger här bestämmer vilket område i data centret som Office 365 hanteras på.
   
-4. Välj verifieringsinställning: via ett sms eller samtal. Klicka på **Skicka verifieringskod**. 
-![Bild of_Office inställningssida för provregistrering på 365 E5 och ber om verifieringsinställningar](../../media/mtp-eval-12.png) <br>
+4. Välj verifierings inställningar: via SMS eller ett samtal. Klicka på **Skicka verifierings kod**. 
+![Bild of_Office 365 E5 prov registrerings sida för utvärderings version](../../media/mtp-eval-12.png) <br>
 
-5. Ange det anpassade domännamnet för din klient organisation och klicka sedan på **Nästa**.
-<br>![Bild of_Office inställningssida för provregistrering på 365 E5 där du kan konfigurera ditt eget domännamn](../../media/mtp-eval-13.png) <br>
+5. Ange det anpassade domän namnet för din klient organisation och klicka sedan på **Nästa**.
+<br>![Bild of_Office 365 E5 prov registrerings sidan där du kan konfigurera ditt eget domän namn](../../media/mtp-eval-13.png) <br>
  
-6. Ställ in den första identiteten som kommer att vara en global administratör för klienten. Fyll i **namn** och **lösenord**. Klicka på **Registrera dig**.
-![Bild of_Office inställningssida för provregistrering på 365 E5 där du kan ställa in din företagsidentitet](../../media/mtp-eval-14.png) <br>
+6. Konfigurera den första identiteten som är global administratör för klient organisationen. Fyll i **namn** och **lösen ord**. Klicka på **Registrera dig**.
+![Bild of_Office 365 E5 prov registrerings sidan där du kan ställa in din företags identitet](../../media/mtp-eval-14.png) <br>
 
-7. Klicka på **Gå till installationsprogrammet** för att slutföra utvärderingsversionen av Office 365 E5-utvärderingsversionen av klientversionen.
-<br>![Bild på installationssidan för utvärderingsversionen av Office 365 E5 E5 som uppmanar dig att klicka på Knappen Gå installation](../../media/mtp-eval-15.png) <br>
+7. Klicka på **gå till installations programmet** för att slutföra Office 365 E5-etableringen för utvärderings version.
+<br>![Bild av Office 365 E5 prov registrerings sidan uppmana dig att klicka på knappen Kör inställningar](../../media/mtp-eval-15.png) <br>
 
-8. Anslut företagsdomänen till Office 365-klienten. [Valfritt] Välj **Anslut en domän som du redan äger** och skriv in ditt domännamn. Klicka på **Nästa**.
-<br>![Bild of_Office 365 E5-inställningssida där du ska anpassa din inloggning och e-post](../../media/mtp-eval-16.png) <br>
+8. Anslut företags domänen till Office 365-klient organisationen. Skriver Välj **Anslut en domän som du redan äger** och skriv in ditt domän namn. Klicka på **Nästa**.
+<br>![Bild of_Office 365 E5 – installations sida där du bör anpassa inloggnings-och e-post](../../media/mtp-eval-16.png) <br>
  
-9. Du måste lägga till en TXT- eller MX-post för att validera domänägarskapet. När du har lagt till TXT- eller MX-posten på domänen väljer du **Verifiera**.
-<br>![Bild of_Office 365 E5 installationssida där du bör lägga till en TXT av MX-post för att verifiera din domän](../../media/mtp-eval-17.png) <br>
+9. Du måste lägga till en TXT-eller MX-post för att verifiera domänens ägarskap. När du har lagt till TXT-eller MX-posten i domänen väljer du **Verifiera**.
+<br>![Bild of_Office 365 E5-installationsfilen där du bör lägga till en TXT-post för att verifiera din domän](../../media/mtp-eval-17.png) <br>
  
-10. [Valfritt] Skapa fler användarkonton för din klient. Du kan hoppa över det här steget genom att klicka på **Nästa**.
-![Bild of_Office 365 E5-inställningssida där du kan lägga till fler användare](../../media/mtp-eval-18.png) <br>
+10. Skriver Skapa fler användar konton för din klient organisation. Du kan hoppa över det här steget genom att klicka på **Nästa**.
+![Bild of_Office 365 E5-installationsfilen där du kan lägga till fler användare](../../media/mtp-eval-18.png) <br>
  
-11. [Valfritt] Ladda ned Office-appar. Klicka på **Nästa** om du vill hoppa över det här steget. 
-<br>![Bild of_Office 365 E5-sida där du kan installera dina Office-appar](../../media/mtp-eval-19.png) <br>
+11. Skriver Ladda ner Office-appar. Hoppa över det här steget genom att klicka på **Nästa** . 
+<br>![Bild of_Office 365 E5-sida där du kan installera Office-programmen](../../media/mtp-eval-19.png) <br>
 
-12. [Valfritt] Migrera e-postmeddelanden. Återigen kan du hoppa över det här steget.
-<br>![Bild of_Office 365 E5 där du kan ställa in om du vill migrera e-postmeddelanden eller inte](../../media/mtp-eval-20.png) <br>
+12. Skriver Migrera e-postmeddelanden. Du kan hoppa över det här steget.
+<br>![Bild of_Office 365 E5 där du kan ange om du vill migrera e-postmeddelanden eller inte](../../media/mtp-eval-20.png) <br>
  
-13. Välj onlinetjänster. Välj **Exchange** och klicka på **Nästa**. 
-<br>![Bild of_Office 365 E5 där du kan välja dina onlinetjänster](../../media/mtp-eval-21.png) <br>
+13. Välj online tjänster. Välj **Exchange** och klicka på **Nästa**. 
+<br>![Bild of_Office 365 E5 där du kan välja online tjänster](../../media/mtp-eval-21.png) <br>
 
-14. Lägg till MX-, CNAME- och TXT-poster i domänen. När du är klar väljer du **Verifiera**.
+14. Lägga till MX-, CNAME-och TXT-poster i din domän. När du är klar väljer du **Verifiera**.
 <br>![Bild of_Office 365 E5 här kan du lägga till dina DNS-poster](../../media/mtp-eval-22.png) <br>
  
-15. Grattis, du har slutfört etableringen av din Office 365-klientorganisation.
-<br>![Bild of_Office 365 E5 inställningsbekräftelse bekräftelsesida](../../media/mtp-eval-23.png) <br>
+15. Grattis, du har slutfört etableringen av din Office 365-klient.
+<br>![Bild of_Office 365 E5-sidan för avslutning av installations programmet](../../media/mtp-eval-23.png) <br>
 
-## <a name="enable-microsoft-365-trial-subscription"></a>Aktivera testprenumeration för Microsoft 365
+## <a name="enable-microsoft-365-trial-subscription"></a>Aktivera utvärderings prenumeration för Microsoft 365
 
 >[!NOTE]
->När du registrerar dig för en utvärderingsversion får du 25 användarlicenser att använda under en månad. Mer information finns i [Prova eller köp en M365-prenumeration.](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide#try-or-buy-a-microsoft-365-subscription-1)
+>Om du registrerar dig för en utvärderings version får du 25 användar licenser att använda i en månad. Mer information finns i [prova eller köpa en M365-prenumeration](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide#try-or-buy-a-microsoft-365-subscription-1) .
 
-1. I [Administrationscenter för Microsoft 365](https://admin.microsoft.com/)klickar du på **Fakturering** och navigerar sedan till **Köptjänster**.
+1. Från [Microsoft 365 administrations Center](https://admin.microsoft.com/)klickar du på **fakturering** och navigerar sedan till **inköps tjänster**.
 
-2. Välj **Microsoft 365 E5** och klicka på **Starta kostnadsfri provperiod**. 
-![Bild of_Microsoft 365 E5 Starta gratis provsida](../../media/mtp-eval-24.png) <br>
+2. Välj **Microsoft 365 E5** och klicka på **Starta gratis prov period**. 
+![Bild of_Microsoft 365 E5 gratis prov sida](../../media/mtp-eval-24.png) <br>
 
-3. Välj verifieringsinställning: via ett sms eller samtal. När du har bestämt dig anger du telefonnumret, väljer **Sms:a mig** eller **Ring mig** beroende på ditt val.
-![Bild of_Microsoft 365 E5 Starta gratis provsida ber om kontaktuppgifter för att skicka kod för att bevisa att du inte är en robot](../../media/mtp-eval-25.png) <br>
+3. Välj verifierings inställningar: via SMS eller ett samtal. När du har bestämt dig anger du telefonnumret, väljer **SMS** eller **Ring mig** beroende på ditt val.
+![Bild of_Microsoft 365 E5 gratis prov sida med förfrågan om kontakt information för att skicka kod som visar att du inte är en robot](../../media/mtp-eval-25.png) <br>
  
-4. Ange verifieringskoden och klicka på **Starta din kostnadsfria utvärderingsversion**. 
-<br>![Bild of_Microsoft 365 E5 Starta gratis provsida där du kan fylla i verifieringskod som systemet skickade för att bevisa att du inte är en robot](../../media/mtp-eval-26.png) <br>
+4. Ange verifierings koden och klicka på **starta din gratis prov period**. 
+<br>![Bild of_Microsoft 365 E5 gratis prov sida där du kan fylla i verifierings kod systemet skickade för att bevisa att du inte är en robot](../../media/mtp-eval-26.png) <br>
 
-5. Klicka på **Prova nu** för att bekräfta din Testversion av Microsoft 365 E5.
-<br>![Bild of_Microsoft 365 E5 Starta gratis testversion sida där du bör klocka knappen Prova nu för att starta](../../media/mtp-eval-27.png) <br>
+5. Klicka på **prova nu** för att bekräfta utvärderings versionen av Microsoft 365 E5.
+<br>![Bild of_Microsoft 365 E5 gratis prov sida där du bör stänga knappen prova nu för att starta](../../media/mtp-eval-27.png) <br>
  
-6. Gå till **Microsoft 365 Admin Center**  >  **Användare**Aktiva  >  **användare**. Välj ditt användarkonto, välj **Hantera produktlicenser**och byt sedan licensen från Office 365 E5 till **Microsoft 365 E5**. Klicka på **Spara**.
-![Bild of_Microsoft 365 Admin Center-sida där du kan välja Microsoft 365 E5-licens](../../media/mtp-eval-28.png) <br>
+6. Gå till **administrations centret för Microsoft 365**-  >  **användare**  >  **Active users**. Välj ditt användar konto, Välj **Hantera produkt licenser**och byt sedan licensen från Office 365 E5 till **Microsoft 365 E5**. Klicka på **Spara**.
+![Bild of_Microsoft 365 administrations Center sida där du kan välja Microsoft 365 E5-licens](../../media/mtp-eval-28.png) <br>
  
-7. Välj det globala administratörskontot igen och klicka sedan på **Hantera användarnamn**.
-<br>![Bild of_Microsoft 365 Admin Center sida där du kan välja Konto och sedan Hantera användarnamn](../../media/mtp-eval-29.png) <br>
+7. Välj det globala administratörs kontot igen och klicka sedan på **hantera användar namn**.
+<br>![Bild of_Microsoft 365 administrations Center sida där du kan välja konto och sedan hantera användar namn](../../media/mtp-eval-29.png) <br>
 
-8. [Valfritt] Ändra domänen från *onmicrosoft.com* till din egen domän – beroende på vad du valde i föregående steg. Klicka på **Spara ändringar**.
-<br>![Bild of_Microsoft 365 Admin Center-sida där du kan ändra domäninställningarna](../../media/mtp-eval-30.png) <br>
+8. Skriver Ändra domänen från *onmicrosoft.com* till din egen domän, beroende på vad du valde i föregående steg. Klicka på **Spara ändringar**.
+<br>![Bild of_Microsoft 365 administrations Center sida där du kan ändra din domäns preferens](../../media/mtp-eval-30.png) <br>
 
 
 
 ## <a name="next-step"></a>Nästa steg
-|||
-|:-------|:-----|
-|![Fas 3: Konfigurera & ombord](../../media/config-onboard.png) <br>[Fas 3: Konfigurera & ombord](config-mtpeval.md) | Konfigurera varje Microsoft Threat Protection-pelare för ditt Microsoft Threat Protection-utvärderingslabb och inbyggda dina slutpunkter.
+![Steg 3: Konfigurera & inbyggt](../../media/config-onboard.png) <br>[Steg 3: Konfigurera & inbyggt](config-mtpeval.md) <br>Konfigurera varje skydd mot Microsoft Threat för ditt Microsoft Threat Protection Evaluation Lab och publicera dina slut punkter.

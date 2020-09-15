@@ -6,7 +6,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 08/31/2020
+ms.date: 09/14/2020
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -17,26 +17,33 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 375e58214e19960d3e3100a0c1051fe7c4924aae
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: be35663fc32a2d214e1ca0ae91161079a5f672a3
+ms.sourcegitcommit: a13f43a3e981c90f1e0b9805c9c16a56f67fc650
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546648"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47651150"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationer av identiteter och enhetsåtkomst
 
-I den här artikeln beskrivs hur du konfigurerar säker åtkomst till moln tjänster via Microsoft 365 för företags produkter genom att implementera en rekommenderad miljö och konfiguration, inklusive en fördefinierad uppsättning principer för villkorsstyrd åtkomst och relaterade funktioner. Du kan använda den här vägledningen för att skydda åtkomst till alla tjänster som är integrerade med Azure Active Directory (Azure AD), inklusive Microsoft 365-tjänster, andra SaaS-tjänster och lokala program som har publicerats med Azure AD Application Proxy.
+Den moderna säkerhets omkretsen i din organisation utökas nu bortom ditt nätverk för att omfatta användare som har åtkomst till molnbaserade program från valfri plats med olika enheter. Din säkerhets infrastruktur måste avgöra om en viss åtkomstbegäran ska beviljas och under vilka omständigheter. 
 
-Följande rekommendationer:
+Denna bestämning bör baseras på användar kontots inloggning, den enhet som används, vilka program användaren försöker komma åt, vilken plats som åtkomstbegäran görs och en utvärdering av risken för begäran. Denna funktion säkerställer att endast godkända användare och enheter kan komma åt dina kritiska resurser.
 
-- Är justerade med [Microsofts säkra Poäng](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) och [identitets poängen i Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)och ökar poängen för din organisation
-- Hjälper dig att implementera dessa [fem steg för att skydda din identitets infrastruktur](https://docs.microsoft.com/azure/security/azure-ad-secure-steps). 
+I den här artikeln beskrivs en uppsättning nödvändiga konfigurationer för identitets-och enhets åtkomst och en uppsättning villkorliga åtkomst tjänster för Azure Active Directory (Azure AD), Microsoft Intune och andra principer för att skydda åtkomst till Microsoft 365 för företags moln program och tjänster, andra SaaS-tjänster och lokala program som publicerats med Azure AD Application Proxy.
+
+Inställningar och principer för åtkomst till identiteter och enheter rekommenderas i tre nivåer: baseline-skydd, känsligt skydd och skydd för miljöer med mycket reglerade eller sekretessbelagda data. Dessa nivåer och deras motsvarande konfigurationer ger konsekventa skydds nivåer för dina data, identiteter och enheter.
+
+Dessa möjligheter och deras rekommendationer:
+
+- Stöds i Microsoft 365 E3 och Microsoft 365 E5.
+- Är justerade med [Microsofts säkra Poäng](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) och [identitets poängen i Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)och ökar poängen för din organisation.
+- Hjälper dig att implementera dessa [fem steg för att skydda din identitets infrastruktur](https://docs.microsoft.com/azure/security/azure-ad-secure-steps).
 
 Om din organisation har unika miljö krav eller komplexa, Använd dessa rekommendationer som utgångs punkt. De flesta organisationer kan använda dessa rekommendationer enligt anvisningarna.
 
 >[!Note]
->Microsoft säljer också Enterprise Mobility + Security (EMS) för Office 365-prenumerationer. EMS-och EMS-funktioner är ungefär likvärdiga med de i Microsoft 365 E3 och Microsoft 365 E5. Se [EMS-abonnemang](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) för mer information.
+>Microsoft säljer också Enterprise Mobility + Security (EMS) för Office 365-prenumerationer. EMS-och EMS-funktioner är likvärdiga med Microsoft 365 E3 och Microsoft 365 E5. Se [EMS-abonnemang](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) för mer information.
 >
 
 ## <a name="intended-audience"></a>Avsedd mål grupp

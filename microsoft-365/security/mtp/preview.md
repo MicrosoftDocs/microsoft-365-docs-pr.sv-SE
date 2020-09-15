@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ff610cee46b2b48815af82fa86d0b30aa99f4b5c
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 502dc87b45c42f0ae95ea9da898c4d4589b19671
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798240"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47649955"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Funktioner för förhands granskning av Microsoft Threat Protection
 
@@ -57,6 +57,7 @@ Du vet att du har aktiverat funktionerna för förhands granskning när du ser a
 ## <a name="preview-features"></a>Förhandsgranskningsfunktioner
 Följande funktioner och förbättringar är för närvarande tillgängliga för förhands granskning:
 
+- API: er för **[skydd mot Microsoft Threat](api-overview.md)** -Lop för att automatisera arbets flöden baserat på de delade incidenterna och de avancerade jakt tabellerna. 
 - **[IdentityDirectoryEvents-tabell i avancerad jakt](advanced-hunting-identitydirectoryevents-table.md)** – hitta händelser som berör en lokal domänkontrollant som kör Active Directory (AD). Den här tabellen innehåller flera identitetsbaserade händelser samt system händelser på domänkontrollanten.
 - **[Funktionen AssignedIPAddresses ()](advanced-hunting-assignedipaddresses-function.md)** – Använd den här funktionen i avancerad jakt för att snabbt få de senaste IP-adresserna som har tilldelats till en enhet eller de senaste IP-adresserna från en viss tidpunkt.
 - **[Vidta åtgärder i avancerad jakt](advanced-hunting-take-action.md)** – snabb till gångar som du hittar i en [Avancerad jakt](advanced-hunting-overview.md)snabbt.

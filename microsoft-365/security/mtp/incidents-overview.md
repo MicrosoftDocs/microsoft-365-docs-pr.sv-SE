@@ -1,7 +1,7 @@
 ---
-title: Undersöka incidenter i Microsoft Threat Protection
-description: Undersök incidenter som visas på olika enheter, användare och postlådor.
-keywords: incidenter, varningar, undersöka, korrelation, attack, maskiner, enheter, användare, identiteter, identitet, brevlåda, e-post, 365, Microsoft, m365
+title: Incidenter översikt i Microsoft Threat Protection
+description: Undersök tillbud som visas på enheter, användare och post lådor.
+keywords: incidenter, varningar, undersöka, korrelation, attacker, datorer, enheter, användare, identiteter, identitet, post låda, e-post, 365, Microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,37 +19,37 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 29eeb5f0699321441543057040b434c4dad61925
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 805b83262bd9d91500dc7e8b6b82542dfbc7e9c5
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42810074"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47649943"
 ---
-# <a name="incidents-overview-in-microsoft-threat-protection"></a>Översikt över incidenter i Microsoft Threat Protection
+# <a name="incidents-overview-in-microsoft-threat-protection"></a>Incidenter översikt i Microsoft Threat Protection
 
-**Gäller:**
-- Skydd av Hot mot Microsoft
+**Gäller för:**
+- Microsoft Hotskydd
 
 
 
-Grunden för alla incidenter är varningar. Aviseringar skapas när en skadlig händelse eller aktivitet visas i nätverket. Enskilda aviseringar ger värdefulla ledtrådar i vad som händer på enskilda händelser eller entiteter. Men attacker använder vanligtvis olika attack vektorer för att utföra ett brott. Att samla enskilda ledtrådar tillsammans kan vara en utmanande och tidskrävande uppgift. 
+Underlaget för alla händelser är aviseringar. Aviseringar skapas när en illvillig händelse eller aktivitet visas i nätverket. Enskilda meddelanden ger värdefulla LED trådar i vad som händer på enskilda händelser eller enheter. Däremot använder angrepp många olika typer av attacker för att genomföra en överträdelse. Piecing enskilda LED trådar kan vara en utmaning och tids krävande uppgifter. 
 
-Microsoft Threat Protection ansluter punkterna på enskilda aviseringar. Skadliga händelser på följande entiteter visas i Microsoft 365 security center:
-- Enheter
+Microsoft Threat Protection ansluter punkterna på enskilda aviseringar. Illvilliga händelser för följande enheter är belägna i säkerhets Center för Microsoft 365:
+- Anordningar
 - Användare
-- Postlådor
+- Post lådor
 
-Misstänkta händelser som visar egenskaper hos att vara en del av en större attack sammanställs till en incident. 
+Misstänkta händelser som visar att egenskaper är en del av en större attack samlas in i en händelse. 
 
-Du vet exakt var en attack startade och andra detaljer som hjälper dig att se omfattningen av attacken.
+Du vet exakt var en attack startas och annan information som hjälper dig att se omfattningen av angreppet.
 
-Plattformen ger säkerhetsförsvarare rätt grafik och datarepresentationer för att förstå och hantera komplexa hot över flera enheter. 
+Plattformen ger säkerhets försvarare med rätt visualisering och data representationer för att förstå och adressera komplexa hot från kors enheter. 
 
-Du kommer inte bara att ha synlighet för omfattningen av en attack, men du har också tillgång till tjänster som gör att du kan vidta taktiska åtgärder för att begränsa en incident.
+Det är inte bara att du är synlig på omfattningen av en attack, men du kommer också att ha till gång till tjänster som gör att du kan ta en olycka med Tactical.
 
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Prioritera incidenter](incident-queue.md)
-- [Utreda incidenter](investigate-incidents.md)
+- [Undersöka incidenter](investigate-incidents.md)
 - [Hantera incidenter](manage-incidents.md)
