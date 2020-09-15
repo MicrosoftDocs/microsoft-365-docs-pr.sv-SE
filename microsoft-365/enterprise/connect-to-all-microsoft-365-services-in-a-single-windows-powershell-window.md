@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Sammanfattning: Ansluta till alla Microsoft 365-tjänster i ett enda PowerShell-fönster.'
-ms.openlocfilehash: 08d2f4c6ce67aa9fea196d56b2eb5f36a36d7943
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: e4cb3a10d14f6d4c16ef9323d6e5b3c500ebc0c5
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430052"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545980"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Ansluta till alla Microsoft 365-tjänster i ett enda PowerShell-fönster
 
@@ -63,11 +63,11 @@ Innan du kan hantera hela Microsoft 365 från en enda instans av PowerShell mås
     
 - Du måste installera de moduler som krävs för Azure Active Directory (Azure AD), Exchange Online, SharePoint Online, Skype för företag – Online och Teams:
     
-   - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
-   - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
-   - [Skype för företag – Online, PowerShell-modul](https://go.microsoft.com/fwlink/p/?LinkId=532439)
-   - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell-v2/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
-   - [Teams PowerShell översikt](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
+  - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+  - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
+  - [Skype för företag – Online, PowerShell-modul](https://go.microsoft.com/fwlink/p/?LinkId=532439)
+  - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
+  - [Teams PowerShell översikt](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
     
 -  PowerShell måste konfigureras för körning av signerade skript för Skype för företag – Online och Säkerhets- &amp; efterlevnadscenter. Det gör du genom att köra följande kommando i en upphöjd PowerShell-session (ett PowerShell-fönster som du öppnar genom att välja **Kör som administratör**).
     
