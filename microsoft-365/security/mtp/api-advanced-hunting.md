@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 92d5d2840963ae00ae0f03e3359f287371f770ee
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 9e92a0328d2e7fb9cfe7461241dd866081926876
+ms.sourcegitcommit: 62a8c226422eac9c085cc886b4836b037f95ef6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650594"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47825380"
 ---
 # <a name="advanced-hunting-apis"></a>Avancerade jakt-API: er
 
@@ -37,8 +37,10 @@ ms.locfileid: "47650594"
 ## <a name="limitations"></a>Begränsningar
 1. Du kan bara köra en fråga på data från de senaste 30 dagarna.
 2. Resultaten inkluderar högst 100 000 rader.
-3. Antalet körningar är begränsat per klient organisation: upp till 15 samtal per minut, 15 minuters kör tid varje timme och 4 timmar efter en dag.
+3. Antalet körningar är begränsat per klient organisation: upp till 10 samtal per minut, 10 minuters kör tid varje timme och 4 timmar efter en dag.
 4. Maximal körnings tid för en enda begäran är 10 minuter.
+5. 429-svaret kommer att representera en kvot gräns antingen per antal begär Anden eller per CPU. Svars texten för 429 anger också tiden tills kvoten förnyas. 
+
 
 ## <a name="permissions"></a>Behörigheter
 En av följande behörigheter krävs för att kunna ringa detta API. Om du vill veta mer, inklusive hur du väljer behörigheter, se [använda API: er för skydd mot Microsoft Threat Protection](api-access.md)

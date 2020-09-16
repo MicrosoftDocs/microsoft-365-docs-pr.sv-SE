@@ -1,5 +1,5 @@
 
-|**Geo-plats**             |**Kodrad**|**plats för eDiscovery-data**      |
+|  Geo-plats               |  Kodrad  |  plats för eDiscovery-data        |
 |:----------------------------|:-------|:---------------------------------|
 |Asien – Stilla havet                 |PROCEDUR     |Systemdata Center för Sydostasien och Östasien|
 |Australien                    |Australien     |Systemdata Center för Sydostasien och Östasien|

@@ -1,9 +1,9 @@
 ---
-title: Microsoft 365 multi-geo
+title: Microsoft 365 Multi-Geo
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,22 +13,22 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: I den här artikeln lär du dig hur du expanderar din Microsoft 365-närvaro till flera geografiska regioner med Microsoft 365 multi-geo.
-ms.openlocfilehash: a5843b98b5d64dfb3872c3d8a5d48c0e56949c02
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 41069490a8c824bb58a8f4247987abd3ce0901b6
+ms.sourcegitcommit: 62a8c226422eac9c085cc886b4836b037f95ef6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694746"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47825366"
 ---
-# <a name="microsoft-365-multi-geo"></a>Microsoft 365 multi-geo
+# <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
 Med Microsoft 365 multi-geo kan din organisation utöka sin Microsoft 365-närvaro till flera geografiska regioner och/eller länder inom din befintliga klient organisation. Nå ut till ditt Microsoft-konto för att registrera ett företag med flera nationella inställningar för Microsoft 365 multi-geo.
   
 Med Microsoft 365 multi-geo kan du tillhandahålla och lagra data på andra geo platser som du har valt att uppfylla data de kraven och samtidigt låsa upp din globala upplevelse av moderna produktivitets upplevelser till din arbets styrka.
 
-#### <a name="video-introducing-microsoft-365-multi-geo"></a>Video: Introduktion till Microsoft 365 multi-geo
+En video introduktion till Microsoft 365 multi-geo finns i [SharePoint Online och OneDrive multi-geo för att styra var dina data finns](https://www.youtube.com/watch?v=Do9U3JuROhk).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1Yk6B?autoplay=false]
+## <a name="multi-geo-architecture"></a>Multi-geo-arkitektur
 
 I en multi-geo-miljö består din Microsoft 365-klient organisation av en central plats (där din prenumeration på Microsoft 365 ursprungligen etablerades) och en eller flera satellit platser. I en multi-geo-klient organisation är informationen om geo-platser, grupper och användar information som hanteras i Azure Active Directory (Azure AD). Eftersom klient informationen hanteras centralt och synkroniseras till varje Geo-plats, kan delning och erfarenheter involverar vem som helst i ditt företag en global medvetenhet.
 
