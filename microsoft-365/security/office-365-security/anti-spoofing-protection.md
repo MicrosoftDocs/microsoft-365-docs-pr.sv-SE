@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Administratörer kan läsa mer om de skydd mot förfalskning som finns tillgängliga i Exchange Online Protection (EOP) och som kan hjälpa dig att minska riskerna för nätfiske från falska avsändare och domäner.
-ms.openlocfilehash: 46adb8b666bd9f73cbd76860f58efedc8d3c1c59
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: b4d1feda06aa0bd21b72b9642dea845693e20756
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868885"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949756"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Skydd mot förfalskning i EOP
 
@@ -143,7 +143,7 @@ Om du vill se till att e-post från distributionslistor klarar förfalskningskon
 
   - Läs anvisningarna i det här blogginlägget: [A tip for mailing list operators to interoperate with DMARC to avoid failures](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/) (Ett tips för dem som driver distributionslistor att samverka med DMARC för att undvika fel).
 
-  - Överväg att installera uppdateringar på distributionslistans server som stöder ARC, se [https://arc-spec.org](https://arc-spec.org/)
+  - Överväg att installera uppdateringar på distributionslistans server som stöder ARC, se <http://arc-spec.org>.
 
 - Din organisation äger inte distributionslistan:
 

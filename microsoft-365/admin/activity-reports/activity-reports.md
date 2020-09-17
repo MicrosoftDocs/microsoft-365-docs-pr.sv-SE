@@ -20,18 +20,18 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Få regelbundna rapporter om hur personer i organisationen använder Microsoft 365-tjänster. Med instrumentpanelen för översikt över användning kan du granska varje diagram för fler insikter.
-ms.openlocfilehash: f1902c71b167d6293530eae61fa6c57d63c5f06c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f0dcb1fac17a39d1125f9188028d714962c9797d
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387807"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948214"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365-rapporter i administrationscentret
 
-You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Microsoft 365 license at all.
+Du ser enkelt hur personer i företaget använder Microsoft 365-tjänster. Du kan till exempel identifiera vem som använder en tjänst mycket och når kvoter och vem som kanske inte behöver någon Microsoft 365-licens alls.
   
-Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
+Rapporter är tillgängliga för de senaste 7 dagarna, 30 dagarna, 90 dagarna och 180 dagarna. Det finns inte direktdata för alla rapporteringsperioder. Rapporterna blir tillgängliga inom 48 timmar.
   
 I den här videon finns information om hur du kan använda rapporterna:
   
@@ -141,13 +141,25 @@ De här rapporterna är tillgängliga, beroende på din prenumeration.
 
 ::: moniker range="o365-worldwide"
 
-- [Användaraktivitet för Microsoft Teams](microsoft-teams-user-activity.md)
+- [Användaraktivitet för Microsoft Teams](microsoft-teams-user-activity-preview.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Enhetsanvändning för Microsoft Teams](microsoft-teams-device-usage.md)
+- [Användaraktivitet i Microsoft Teams för försvarsdepartementet och Government Community Cloud](microsoft-teams-user-activity.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Enhetsanvändning för Microsoft Teams](microsoft-teams-device-usage-preview.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Enhetsanvändningen av Microsoft Teams för försvarsdepartementet och Government Community Cloud](microsoft-teams-device-usage.md)
 
 ::: moniker-end
 
@@ -159,7 +171,7 @@ De här rapporterna är tillgängliga, beroende på din prenumeration.
   
 ## <a name="how-to-view-usage-information-for-a-specific-user"></a>Så här visar du användningsinformation för en viss användare
 
-Use the service reports to research how much a specific user is using the service. For example, to find out how much mailbox storage a specific user has consumed, open the Mailbox usage report, and sort the users by name. If you have thousands of users, export the report to Excel so you filter through the list quickly.
+Använd tjänsterapporterna när du vill se hur mycket en viss användare använder tjänsten. Om du till exempel vill ta reda på hur mycket lagringsutrymme för e-post en viss användare har förbrukat öppnar du rapporten Postlådeanvändning och sorterar användarna efter namn. Om du har tusentals användare kan du exportera rapporten till Excel där du snabbt kan filtrera listan.
   
 Det finns ingen rapport där du anger ett användarkonto och får en lista med vilka tjänster som används och hur mycket.
   
@@ -177,7 +189,7 @@ Din användarlista kommer att se ut så här:
   
 ![Rapporter – anonymiserad användarlista](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
-It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the reports API.
+Det tar några minuter innan ändringarna börjar gälla i rapporterna i instrumentpanelen för rapporter. Den här inställningen gäller även för API för rapporter.
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>Vad händer med användningsdata när ett användarkonto stängs?
 

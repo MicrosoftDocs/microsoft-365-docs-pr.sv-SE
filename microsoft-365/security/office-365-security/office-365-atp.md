@@ -19,19 +19,19 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 Avancerat skydd innehåller säkra bifogade filer, säkra länkar, avancerade verktyg för skydd mot nätfiske, rapporteringsverktyg och funktioner för hotinformation.
-ms.openlocfilehash: 2241f48877019cb20484aea0dd1fcf7b9e7b8bb5
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 184ab53059a73de534d9a67a45fc41b20a73f13f
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653611"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949705"
 ---
-# <a name="office-365-advanced-threat-protection"></a>Office 365 Avancerat skydd
+# <a name="office-365-advanced-threat-protection-atp"></a>Office 365 ATP
 
 > [!IMPORTANT]
 > Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Läs [Avancerad Outlook.com-säkerhet för Microsoft 365-prenumeranter](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2) om du använder Outlook.com, Microsoft 365 Family eller Microsoft 365 Personal och vill ha information om säkra länkar och säkra bifogade filer i Outlook.
 
-Office 365 Avancerat skydd (ATP) skyddar din organisation mot skadliga hot som kommer från e-postmeddelanden, länkar (URL:er) och samarbetsverktyg. ATP innehåller:
+Office 365 Advanced Threat Protection (ATP) skyddar din organisation mot skadliga hot från e-postmeddelanden, länkar (URL: er) och samarbetsverktyg. ATP innehåller:
 
 - **[Principer för hotskydd](#configure-atp-policies)**: Definiera skyddsprinciper för hot för att ange rätt skyddsnivå för din organisation.
 
@@ -40,6 +40,25 @@ Office 365 Avancerat skydd (ATP) skyddar din organisation mot skadliga hot som k
 - **[Funktioner för undersökning av hot och svar](#use-threat-investigation-and-response-capabilities)**: Använd verktygen för nya funktioner för att undersöka, förstå, simulera och förhindra hot.
 
 - **[Automatiserade funktioner för undersökning och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)**: Spara tid och ansträngning för att undersöka och mildra hot.
+
+## <a name="getting-started"></a>Komma igång
+
+Om du inte har använt Office 365 Avancerat skydd eller vill ha mer information om *att göra*kan du dra nytta av den ursprungliga ATP-konfigurationen i segment, undersöka och Visa rapporter som använder den här artikeln som en referens. Här är logiska tidiga konfigurations segment:
+
+- Konfigurera allt med "*anti*" i namnet.
+    - anti-skadlig kod
+    - anti-phishing
+    - anti-spam
+- Konfigurera allt med "*säkert*" i namnet.
+    - säkra länkar
+    - Säkra bifogade filer
+- Försvara arbets belastningarna (t. ex. SharePoint Online, OneDrive och Teams) 
+- Skydda med Zero-Hour auto purge
+
+Om du vill lära dig genom att göra [klickar du på den här länken](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide&preserve-view=true). 
+
+> [!NOTE]
+> ATP kommer från två olika plan typer. Du kan se om du har **plan 1** om du har "real tids identifiering" och **plan 2**om du har hot Explorer. Planen du har påverkar de verktyg du kommer att se, så var säker på att du är medveten om din plan när du lär dig.
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP-abonnemang 1 och 2
 
@@ -52,7 +71,7 @@ I följande tabell sammanfattas vad som ingår i varje abonnemang.
 |<br/>Funktioner för konfiguration, skydd och identifiering: <ul><li>[Säkra bifogade filer](atp-safe-attachments.md)</li><li>[Säkra länkar](atp-safe-links.md)</li><li>[ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[ATP-skydd mot nätfiske](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)</li><li>[Identifiering i realtid](threat-explorer.md)</li></ul>|Funktioner i Office 365 ATP-abonnemang 1<br/>--- plus ---<br/>Funktioner för automatisering, undersökning, reparationer och utbildning:</li><li>[Hotspårare](threat-trackers.md)</li><li>[Hotutforskaren](threat-explorer.md)</li><li>[Automatiska undersökningar och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[Attacksimulator](attack-simulator.md)</li></ul>|
 |
 
-- Office 365 ATP-abonnemang 2 ingår i Office 365 E5, Office 365 A5 och Microsoft 365 E5.
+- Office 365 ATP Plan 2 ingår i Office 365 E5, Office 365 A5, Microsoft 365 E5 Security och Microsoft 365 E5.
 
 - Office 365 ATP-abonnemang 1 ingår i Microsoft 365 Business Premium.
 
@@ -68,6 +87,8 @@ Med Office 365 ATP kan din organisations säkerhetsteam konfigurera skydd genom 
 
 > [!TIP]
 > En kort lista över principer som ska definieras finns i [Skydda mot hot](protect-against-threats.md).
+
+## <a name="advanced-threat-protection-policies"></a>Policyer för avancerad hotskydd
 
 Principerna som definieras för din organisation avgör beteendet och skyddsnivån för fördefinierade hot. Principalternativ är mycket flexibla. Din organisations säkerhetsgrupp kan t. ex. ge skydd mot detaljerade hot på användar-, organisations-, mottagar- och domännivå. Det är viktigt att granska dina principer regelbundet eftersom nya hot och utmaningar dyker upp dagligen.
 

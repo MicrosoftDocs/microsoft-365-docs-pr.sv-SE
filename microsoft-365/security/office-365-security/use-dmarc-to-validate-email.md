@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Lär dig hur du konfigurerar DMARC (Domain-based Message Authentication, Reporting, and Conformance) för att validera meddelanden som skickats från din organisation.
-ms.openlocfilehash: 09c06d30d118078e310c5e3d0743ef5236ec77ba
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: 1f014a221334925f5b9c90371d552eb64d026c1f
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632123"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949438"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Använda DMARC för att validera e-post
 
@@ -206,7 +206,7 @@ Om du publicerar en DMARC-avvisningsprincip (p=reject) kan ingen annan kund i Mi
 
 ## <a name="how-microsoft-365-handles-inbound-email-that-fails-dmarc"></a>Så hanterar Microsoft 365 inkommande e-post som inte klarar DMARC
 
-Om DMARC-principen för den sändande servern är `p=reject`, markerar EOP meddelandet som falska istället för att avvisa det. Med andra ord hanterar Microsoft 365`p=reject` och `p=quarantine` på samma sätt för inkommande e-post. Administratörer kan ange vilken åtgärd som ska utföras på meddelanden som klassificeras som falska i [principen för skydd mot nätfiske](set-up-anti-phishing-policies.md).
+Om DMARC-principen för den sändande servern är `p=reject`, markerar [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) meddelandet som falska istället för att avvisa det. Med andra ord hanterar Microsoft 365`p=reject` och `p=quarantine` på samma sätt för inkommande e-post. Administratörer kan ange vilken åtgärd som ska utföras på meddelanden som klassificeras som falska i [principen för skydd mot nätfiske](set-up-anti-phishing-policies.md).
 
 Microsoft 365 är konfigurerat så här eftersom viss legitim e-post kanske inte klarar DMARC. Ett meddelande kan till exempel misslyckas i DMARC om det skickas till en distributionslista som sedan vidarebefordrar meddelandet till alla listdeltagare. Om Microsoft 365 har avvisat dessa meddelanden kan användare förlora legitim e-post och har inget sätt att hämta den. Istället så underkänns meddelandena fortfarande i DMARC men markeras som skräppost och avvisas inte. Om de vill kan användarna fortfarande så dessa meddelanden i Inkorgen genom följande metoder:
 
