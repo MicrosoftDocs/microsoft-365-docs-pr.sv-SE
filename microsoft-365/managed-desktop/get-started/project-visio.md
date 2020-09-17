@@ -1,43 +1,44 @@
 ---
-title: Installera Microsoft Project eller Microsoft Visio på Microsoft Managed Desktop-enheter
-description: Information om hur du installerar Microsoft Project eller Microsoft Visio på Microsoft Managed Desktop-enheter
-keywords: Microsoft Managed Desktop, Microsoft 365, Microsoft Project, Microsoft Visio
+title: Installera Microsoft Project eller Microsoft Visio på Microsoft Managed Station ära enheter
+description: Information om hur du installerar Microsoft Project eller Microsoft Visio på Microsoft Managed Station ära enheter
+keywords: Microsoft-hanterat skriv bord, Microsoft 365, Microsoft Project, Microsoft Visio
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c8690db17c71fd5ce604fd9165fee7e54a41c639
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: c04bcdf846bafaa7838ef5932c8de595f5035992
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126833"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950538"
 ---
-# <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>Installera Microsoft Project eller Microsoft Visio på Microsoft Managed Desktop-enheter
+# <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>Installera Microsoft Project eller Microsoft Visio på Microsoft Managed Station ära enheter
 
-Microsoft Project och Microsoft Visio kräver att specifika steg installeras på Microsoft Managed Desktop-enheter. Det här avsnittet dokumenterar förutsättningarna och installationsprocessen för dessa program.
+Microsoft Project och Microsoft Visio kräver att specifika steg installeras på Microsoft Managed Station ära datorer. I det här avsnittet beskrivs förutsättningar och installations processen för dessa program.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Administratörer bör kontrollera att de uppfyller dessa förutsättningar:
-- **Licenskvantiteter** – Rätt mängd Microsoft Project- och Microsoft Visio-licenser måste vara tillgängliga för användarna. Microsoft Managed Desktop stöder för närvarande endast 64-bitarsversioner av dessa program. 
-- **Licensnamn** - Lämpliga licensnamn för dessa program är:
+Administratörer bör kontrol lera att de uppfyller följande krav:
+- **Licens mängder** -det korrekta beloppet för Microsoft Project-och Microsoft Visio-licenser måste vara tillgängliga för användarna. Microsoft Managed Desktop stöder för närvarande endast 64-bitars versioner av dessa program. 
+- **Licens namn** -lämpliga licens namn för dessa program är:
     - **Microsoft Project** – Project Online Professional eller Project Online Premium
-    - **Microsoft Visio** - Visio Online Plan 2
-- **Företagsportal** - Företagsportalen måste vara tillgänglig i din klientorganisation för att användarna ska kunna installera dessa program. Om företagsportalen inte distribueras i din klientorganisation läser du [Företagsportalen](company-portal.md).
+    - **Microsoft Visio** – Visio Online abonnemang 2
+- **Företags Portal** -företags portalen måste vara tillgänglig i klient organisationen för att användarna ska kunna installera dessa program. Om företags portalen inte distribueras i din klient organisation, se [företags Portal](company-portal.md).
 
-## <a name="deploy-project-and-visio-for-microsoft-managed-desktop-devices"></a>Distribuera Project och Visio för Microsoft Managed Desktop-enheter
-Microsoft Managed Desktop lägger till Microsoft Project och Microsoft Visio som två Win32-program i Microsoft Intune. Vi kommer också att skapa två grupper i Azure Active Directory som kommer att tilldelas motsvarande program med avsikten "Tillgänglig". 
+## <a name="deploy-project-and-visio-for-microsoft-managed-desktop-devices"></a>Distribuera Project och Visio för Microsoft hanterade Station ära enheter
+Microsoft Managed Desktop lägger till Microsoft Project och Microsoft Visio som två Win32-program i Microsoft Intune. Dessutom skapas två grupper i Azure Active Directory som tilldelas motsvarande program med avsikten "tillgänglig". 
 
-**Så här distribuerar du Project och Visio** Lägg till användaren i lämplig grupp så blir programmet tillgängligt i företagsportalen. Det kan ta några minuter att synkronisera, men sedan kan användarna installera apparna från Företagsportalen. 
+**Distribuera Project och Visio** Lägga till användaren i en lämplig grupp så blir programmet tillgänglig i företags portalen. Det kan ta några minuter att synkronisera, men sedan kan användarna installera programmen från företags portalen. 
 
-Namn på Azure AD-grupp | Vilka användare ska tilldela?   
+Azure AD-gruppnamn | Vilka användare ska tilldelas?   
  --- | ---
-Moderna arbetsplats-office-Project_Install | Användare som behöver Project
-Moderna arbetsplats-office-Visio_Install | Användare som behöver Visio
+Modern arbets plats – Office-Project_Install | Användare som behöver projekt
+Modern arbets plats – Office-Visio_Install | Användare som behöver Visio
 
 ## <a name="communicate-changes"></a>Kommunicera ändringar
-Det är viktigt för IT-administratörer att låta sina användare veta hur de installerar Project och Visio. Detta inkluderar: 
-- Meddela användarna när dessa program är tillgängliga för dem. 
-- Instruktioner om hur du installerar dessa program från företagsportalen.
+Det är viktigt för IT-administratörer att låta användarna veta hur de kan installera Project och Visio. Detta inkluderar: 
+- Meddela användarna när de är tillgängliga för dem. 
+- Anvisningar för hur du installerar dessa program från företags portalen.

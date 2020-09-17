@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: 7cb2ab9c6987900f2b53a17c3eda49001bca4d84
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 727f14e8158f7e024b6029231fed18adb2d56a62
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898058"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949706"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>Konfigurera extern vidarebefordran av e-post i Office 365
 
@@ -31,7 +31,10 @@ Extern vidarebefordran styrs av *principen för utgående skräp post* och omfat
 
 - **Av** – automatisk extern vidarekoppling är inaktiverat och resulterar i en rapport om utebliven leverans (NDR) för slutanvändaren.
 
-Mer information om hur du konfigurerar dessa inställningar finns i [Konfigurera filtrering för utgående e-post i EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide) .
+Mer information om hur du konfigurerar dessa inställningar finns i [Konfigurera filtrering för utgående e-post i EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true) .
+
+> [!NOTE]
+> Inaktive ring av automatisk vidarebefordran kommer också att dsable som dirigerar meddelanden till externa adresser.
 
 ## <a name="controlling-external-email-forwarding"></a>Styra extern e-postvidarebefordran
 
@@ -42,7 +45,7 @@ Office 365 tillåter inte automatisk extern vidarebefordran av antingen Inkorgsh
 > [!NOTE]
 > Det går inte att inaktivera automatisk vidarebefordran till externa adresser i Office 365 i faser med uppgifter som kommunicerats via [meddelanden i meddelande Center](https://admin.microsoft.com/Adminportal/Home?source=applauncher&ref=/MessageCenter) . För att administratörer ska kunna förbereda sig för dessa ändringar har de ändrat principer i förväg för att säkerställa att användarna inte störs.
 
-Mer information om användare som använder automatisk vidarebefordran (regler för Inkorgen eller SMTP-vidarekoppling) i din organisation finns i [rapporten automatisk vidarebefordrade meddelanden](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide).
+Mer information om användare som använder automatisk vidarebefordran (regler för Inkorgen eller SMTP-vidarekoppling) i din organisation finns i [rapporten automatisk vidarebefordrade meddelanden](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide&preserve-view=true).
 
 ## <a name="how-does-this-policy-work-with-other-automatic-forwarding-controls"></a>Hur fungerar den här principen med andra kontroller för vidarekoppling av automatiskt
 

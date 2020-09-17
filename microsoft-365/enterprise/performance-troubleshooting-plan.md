@@ -1,5 +1,5 @@
 ---
-title: Plan för prestanda fel sökning för Office 365
+title: Plan för prestandafelsökning för Office 365.
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -22,27 +22,27 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Den här artikeln kan hjälpa dig att felsöka prestanda problem i Office 365 och även lösa vanliga problem.
-ms.openlocfilehash: 9287e2649a2eb126d723e7436a9178be93087bc0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 4f66ed43df2da47c9ea1931b8508dfecf4546b1c
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694598"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948394"
 ---
-# <a name="performance-troubleshooting-plan-for-office-365"></a>Plan för prestanda fel sökning för Office 365
+# <a name="performance-troubleshooting-plan-for-office-365"></a>Plan för prestandafelsökning för Office 365.
 
 Behöver du veta vad du kan göra för att identifiera och åtgärda fördröjd skrift, hänga och få låga prestanda mellan SharePoint Online, OneDrive för företag, Exchange Online eller Skype för företag – Online samt klient dator? Innan du ringer supporten kan du använda den här artikeln för att felsöka prestanda problem i Office 365 och även lösa vanliga problem.
-  
+
 Den här artikeln är ett exempel på ett åtgärds abonnemang som du kan använda för att samla in värdefull information om prestanda problem. Vissa vanligaste problem ingår också i den här artikeln.
 
 Om du inte har använt nätverks prestanda och vill göra en långsiktig plan för att övervaka prestanda mellan klient datorerna och Office 365 kan du ta en titt på [prestanda justering och fel sökning i office 365-administratör och IT-proffs](performance-tuning-using-baselines-and-history.md).
-  
+
 ## <a name="sample-performance-troubleshooting-action-plan"></a>Exempel på åtgärds plan för prestanda fel sökning
 
 Den här åtgärds planen innehåller två delar; en förberedelse fas och en loggnings fas. Om du har ett problem med prestanda och du måste göra data insamling kan du börja använda det här abonnemanget direkt.
-  
+
 ### <a name="prepare-the-client-computer"></a>Förbereda klient datorn
-  
+
 - Hitta en klient dator som kan återskapa prestanda problem. Den här datorn kommer att användas under fel sökning.
 - Skriv ned de steg som orsakar prestanda problemet så att du är redo när det kommer tid att testa.
 - Installera verktyg för insamling och inspelning av information:
@@ -51,7 +51,7 @@ Den här åtgärds planen innehåller två delar; en förberedelse fas och en lo
   - Använd en skärm bild eller kör de problem registreringar (PSR.exe) som medföljer Windows Vista och senare för att kunna registrera de steg du ska vidta under testningen.
 
 ### <a name="log-the-performance-issue"></a>Logga prestanda problem
-  
+
 - Stäng alla främmande Internet webbläsare.
 - Starta problem registrering eller en annan skärm inspelning.
 - Starta Netmon (verktyget för nätverks spårning).
@@ -70,13 +70,13 @@ Den här åtgärds planen innehåller två delar; en förberedelse fas och en lo
 - Spara spårningsfilerna. Glöm inte att ange datum och tid för inspelningen och om det visar bra eller dålig prestanda.
 
 Om du inte är bekant med att köra de verktyg som nämns i den här artikeln, oroa dig inte, eftersom vi tillhandahåller de här stegen. Om du är van vid att göra den här typen av nätverks fångst kan du hoppa till [hur du samlar in original planer](performance-tuning-using-baselines-and-history.md#how-to-collect-baselines), som beskriver hur du filtrerar och läser loggar.
-  
+
 ### <a name="flush-the-dns-cache-first"></a>Rensa DNS-cachen först
 
 Varför? Genom att ta bort DNS-cachen du startar testerna med en ren. Om du rensar cacheminnet återställs innehållet i DNS-matcharen till de senaste posterna. Kom ihåg att en tömning inte tar bort hosts File-poster. Om du använder värd fil poster på en gång bör du kopiera dessa poster till en fil i en annan katalog och sedan tömma HOST-filen.
-  
+
 #### <a name="flush-your-dns-resolver-cache"></a>Rensa DNS-matcharens cache
-  
+
 1. Öppna kommando tolken (starta antingen **Start** \> **Run** \> **cmd** eller Windows- **tangenten** \> **cmd**).
 2. Skriv följande kommando och tryck på RETUR:
 
@@ -87,13 +87,13 @@ Varför? Genom att ta bort DNS-cachen du startar testerna med en ren. Om du rens
 ## <a name="netmon"></a>Netmon
 
 Microsofts verktyg för nätverks övervakning ([Netmon](https://www.microsoft.com/download/details.aspx?id=4865)) analyserar paket, det vill säga trafik, som passerar mellan datorer i nätverket. Genom att använda Netmon för att spåra trafik med Office 365 kan du ta reda på, Visa och läsa paket rubriker, identifiera mellanliggande enheter, kontrol lera viktiga inställningar på nätverks maskin vara, söka efter tappade paket och följa flödet för trafik mellan datorer i företagets nätverk och Office 365. Eftersom den faktiska bröd texten är krypterad, det vill säga att det (skickas på port 443 via SSL/TLS, går det inte att läsa filerna som skickas. I stället får du en ofiltrerad spårning av sökvägen som paketet tar för att spåra problem beteendet.
-  
+
 Se till att du inte använder ett filter för tillfället. I stället kan du gå igenom stegen och demonstrera problemet innan du stoppar spårningen och sparandet.
-  
+
 När du har installerat Netmon 3,4 öppnar du verktyget och följer de här stegen:
-  
+
 ### <a name="take-a-netmon-trace-and-reproduce-the-issue"></a>Ta en Netmon spårning och återskapa problemet
-  
+
 1. Starta Netmon 3,4.
 Det finns tre fönster på **Start** sidan: **senaste insamlarna**, **Välj nätverk**och **komma igång med Microsoft Network Monitor 3,4. Meddelande**. På panelen Välj nätverk får du också en lista över de standardnätverk som du kan avbilda från. Kontrol lera att nätverkskort är markerade här.
 
@@ -109,18 +109,18 @@ Det finns tre fönster på **Start** sidan: **senaste insamlarna**, **Välj nät
 ## <a name="httpwatch"></a>HTTPWatch
 
 [HTTPWatch](https://www.httpwatch.com/download/) kommer att debiteras och en gratis utgåva. Den kostnads fria Basic-versionen omfattar allt du behöver för det här testet. HTTPWatch övervakar nätverks trafik och sid inläsnings tid direkt från webbläsarfönstret. HTTPWatch är ett plugin-program till Internet Explorer som grafiskt beskriver prestanda. Analysen kan sparas och visas i HTTPWatch Studio.
-  
+
 > [!NOTE]
 > Om du använder en annan webbläsare, till exempel Firefox, Google Chrome, eller om du inte kan installera HTTPWatch i Internet Explorer, öppnar du ett nytt webbläsarfönster och trycker på F12 på tangent bordet. Du bör se verktygsfältet utvecklingsverktyg längst ned i webbläsaren. Om du använder Opera trycker du på CTRL + SKIFT + I för webb kontroll och klickar sedan på fliken **nätverk** och utför testningen nedan. Informationen är lite annorlunda, men Läs tiden visas fortfarande i millisekunder. > HTTPWatch är också användbart för problem med sid laddnings tider i SharePoint Online.
-  
+
 ### <a name="run-httpwatch-and-reproduce-the-issue"></a>Kör HTTPWatch och återskapa problemet
-  
+
 HTTPWatch är ett webb läsar program som visar verktyget i webbläsaren är lite olika för varje version av Internet Explorer. Vanligt vis kan du hitta HTTPWatch under kommando fältet i Internet Explorer-webbläsaren. Om du inte ser plugin-programmet HTTPWatch i webbläsarfönstret kan du kontrol lera webbläsarens version genom att klicka på **Hjälp** \> **om**eller i senare versioner av Internet Explorer, klicka på kugg hjuls symbolen och **om Internet Explorer**. Om du vill starta **kommando** fältet högerklickar du på Meny raden i Internet Explorer och klickar på **kommando fält**.
 
 Förr har HTTPWatch associerats med både kommandona och Explorer-fälten, så när du har installerat visas inte ikonen direkt (även efter omstart **) och**verktygsfälten för ikonen. Kom ihåg att verktygsfält kan anpassas och att alternativ kan läggas till i dem.
 
 ![Internet Explorers kommando verktygsfält med ikonen HTTPWatch.](../media/198590b0-d7b1-4bff-a6ad-e4ec3a1e83df.png)
-  
+
 1. Starta HTTPWatch i ett fönster i Internet Explorer. Den kommer att visas dock i webbläsaren längst ned i fönstret. Klicka på **spela in**.
 
 2. Återskapa de exakta stegen i prestanda problemet. Klicka på **stopp** -knappen i HTTPWatch.
@@ -134,9 +134,9 @@ Denna skärm bild är från den professionella versionen av HTTPWatch. Du kan ö
 ## <a name="problem-steps-recorder"></a>Problem registrering
 
 Med problem registrering eller PSR.exe kan du spela in frågor medan de inträffar. Det är ett mycket användbart verktyg och lätt att köra.
-  
+
 ### <a name="run-problem-steps-recorder-psrexe-to-record-your-work"></a>Kör problem registrering (PSR.exe) för att registrera ditt arbete
-  
+
 1. Använd antingen **Start** \> **Run** \> **PSR.exe** \> **OK**, eller klicka på **Windows-tangenten** \> **PSR.exe** \> och sedan på RETUR.
 
 2. När fönstret för små PSR.exe visas klickar du på **Starta post** och återger de steg som orsakar prestanda problemet. Du kan lägga till kommentarer genom att klicka på **Lägg till kommentarer**.
@@ -146,25 +146,25 @@ Med problem registrering eller PSR.exe kan du spela in frågor medan de inträff
 4. Klicka på **Spara**.
 
 ![En skärm bild av problem registrering eller PSR.exe.](../media/8542b0aa-a3ff-4718-8dc4-43f5521c6c34.PNG)
-  
+
 Datum och tid registreras för dig. Detta länkar fso till din Netmon trace and HTTPWatch i tid, och hjälper till med fel sökning av precision. Datum och tid i fso-posten kan visa att en minut har passerat mellan inloggningen och webb adressen och en ofullständig åter givning av administratörs webbplatsen.
-  
+
 ## <a name="read-your-traces"></a>Läs dina spårningar
 
 Det går inte att lära sig allt om nätverks-och prestanda fel sökning som någon behöver veta med hjälp av en artikel. Det tar en bra upplevelse med prestanda och kunskap om hur nätverket fungerar och hur vanligt utförs. Men det går att runda av en lista över de vanligaste problemen och visa hur verktyg kan göra det lättare för dig att eliminera de vanligaste problemen.
-  
+
 Om du vill ta en vana att hämta färdigheter för dina Office 365-webbplatser är det ingen bättre lärare än att skapa spår av sid laddas regelbundet och läsa upp dem. Om du till exempel har en chans kan du läsa in en Office 365-tjänst och spåra processen. Filtrera spårning för DNS-trafik eller Sök efter namnet på den tjänst du bläddrade till med FrameData. Sök igenom spåret för att få en uppfattning om vad som händer när tjänsten laddas. Det här hjälper dig att få reda på hur normal sid inläsning bör se ut, och vid fel sökning, särskilt med prestanda kan det vara en bra idé att jämföra dina dåliga spår.
-  
+
 I Netmon används Microsoft IntelliSense i fältet visnings filter. IntelliSense för att fylla på en intelligent kod är att det Stick där du skriver i en period och alla tillgängliga alternativ visas i en listruta. Om du till exempel är oroar för skalning med TCP-fönster kan du hitta ett filter (till exempel  `.protocol.tcp.window < 100` ) på det här sättet.
-  
+
 ![Skärm bild av NetMon som visar att IntelliSense används i filter fältet.](../media/75a56c11-9a60-47ee-a100-aabdfb1ba10f.PNG)
-  
+
 Netmon-spår kan ha mycket trafik i dem. Om du inte har erfarenhet av att läsa dem är det troligt att du är bekymrad för att öppna spåret första gången. Det första du ska göra är att skilja signalen från bakgrunds ljudet i spåret. Du testade mot Office 365 och det är det du vill se. Om du använder för att bläddra igenom spår kanske du inte behöver den här listan.
-  
+
 Trafiken mellan din klient och Office 365 skickas via TLS, vilket betyder att bröd texten är krypterad och inte kan läsas i en allmän Netmon-spårning. Din prestanda analys behöver inte veta informationen i paketet. Det är dock mycket intressant i paket rubriker och information som de innehåller.
-  
+
 ### <a name="tips-to-get-a-good-trace"></a>Tips för att få en god spårning
-  
+
 - Få reda på värdet på klient datorns IPv4-eller IPv6-adress. Du kan hämta det från kommando tolken genom att skriva **ipconfig** och sedan trycka på RETUR. Om du känner till den här adressen får du en överblick över om trafiken i spåret direkt avser din klient dator. Om det finns en känd proxyserver skickar du ping till den och får också IP-adressen.
 
 - Rensa DNS-matcharens cache och om möjligt stänga alla webbläsare utom den där du kör testerna. Om du inte kan göra det här, till exempel om stöd använder ett visst webbläsarbaserat verktyg för att visa klient datorns dator, måste du vara beredd på att filtrera spårningen.
@@ -175,15 +175,15 @@ Om du bara använder Netmon spårning när problemet uppstår är det också. An
 
 > [!TIP]
 > Netmon har många användbara inbyggda filter. Prova knappen **Ladda filter** högst upp i fönstret _Visa_ filter.
-  
+
 ![Hitta din IP-adress genom att använda PSPing på kommando raden på klient datorn.](../media/4c43ac67-e28e-4536-842d-7add7aa28847.PNG)
-  
+
 ![Netmon spårning från klienten som visar samma PSPing-kommando via filtret TCP. Flaggor. syn = = 1.](../media/0ae7ef7d-e003-4d01-a006-dc49bd1fcef2.PNG)
-  
+
 Bekanta dig med din trafik och lär dig att hitta den information du behöver. Om du till exempel vill ta reda på vilket paket i spårningen har den första referensen till Office 365-tjänsten du använder (som "Outlook").
 
 Om du tar Office 365 Outlook online som ett exempel inleds trafiken ungefär så här:
-  
+
 - DNS-standardfråga och DNS-svar för outlook.office365.com med matchande QueryIDs. Det är viktigt att notera tids förskjutningen för den här funktionen, samt var i världen Office 365 global DNS skickar begäran om namn matchning. Helst som möjligt, i stället för världen över.
 
 - En HTTP-begäran vars status rapport flyttats permanent (301)
@@ -195,9 +195,9 @@ Om du tar Office 365 Outlook online som ett exempel inleds trafiken ungefär så
 - Sedan en serie TLS: TLS-trafik där TLS-handskakning och samtal till TLS-certifikat sker. (Kom ihåg att data krypteras via SSL/TLS.)
 
 Alla delar av trafiken är viktiga och anslutna, men små delar av spårningen innehåller information som är särskilt viktig när det gäller prestanda fel sökning, så vi fokuserar på dessa områden. Eftersom vi har tillräckligt med Office 365-felsöknings prestanda på Microsoft för att sammanställa en tio i topp-lista med vanliga problem, fokuserar vi på dessa problem och hur du använder de verktyg som krävs för att roota dem.
-  
+
 Om du inte har installerat dem är det möjligt att använda flera verktyg i matrisen. Där det är möjligt. Det finns länkar till installations punkterna. Listan innehåller vanliga verktyg för nätverks spårning, till exempel [Netmon](https://www.microsoft.com/download/details.aspx?id=4865) och [wireshark](https://www.wireshark.org/), men Använd ett spårnings verktyg som du är van vid och där du är van vid att filtrera nätverks trafik. Kom ihåg följande när du testar:
-  
+
 - *Stänga dina webbläsare och testa med bara en webbläsare*  -det här minskar den allmänna trafik som du fångar in. Det gör det enklare att spåra.
 - *Rensa DNS-matcharens cache på klient datorn*  -det ger dig en ren bakifrån när du börjar ta din Capture för en renare spårning.
 
@@ -216,19 +216,19 @@ Finns i tillståndet SYN-SYN/ACK. Legacy-eller åldrande hård vara kanske inte 
 
 #### <a name="what-to-look-for"></a>Vad du kan söka efter
 
-Leta efter SYN-SYN/ACK-trafik i nätverks spårningen.  Använd ett filter som i Netmon  `tcp.flags.syn == 1` . Det här filtret är detsamma i wireshark.  
+Leta efter SYN-SYN/ACK-trafik i nätverks spårningen.  Använd ett filter som i Netmon  `tcp.flags.syn == 1` . Det här filtret är detsamma i wireshark.
 
 ![Filtrera i Netmon eller wireshark för syn paket för båda verktygen: TCP. Flaggor. syn = = 1.](../media/4b9a12a1-c915-43c8-ac2f-a679d0435a29.PNG)
 
 Observera att för varje SYN det finns ett SrcPort-nummer (Source port) som matchas i mål porten (DstPort) för den relaterade bekräftelsen (SYN/ACK).
 
-Om du vill visa Windows skalnings värde som används av nätverks anslutningen expanderar du först SYN och sedan relaterad SYN/ACK.  
+Om du vill visa Windows skalnings värde som används av nätverks anslutningen expanderar du först SYN och sedan relaterad SYN/ACK.
 
-![Bild som visar hur du kan matcha SrcPort till DstPort i en spårning för att få tiden delta.](../media/6a4ca573-0253-4fbd-93e8-92821ee1c351.png)  
+![Bild som visar hur du kan matcha SrcPort till DstPort i en spårning för att få tiden delta.](../media/6a4ca573-0253-4fbd-93e8-92821ee1c351.png)
 
 ### <a name="tcp-idle-time-settings"></a>TCP Idle Time-inställningar
 
-Historiskt, de flesta perimeternätverk är konfigurerade för tillfälliga anslutningar, vilket innebär att inaktiva anslutningar normalt upphör. Inaktiva TCP-sessioner kan avslutas av proxyservrar och brand väggar med fler än 100 till 300 sekunder. Det här är problematiskt för Outlook online eftersom det skapar och använder långa anslutningar, oavsett om de är inaktiva eller inte.  
+Historiskt, de flesta perimeternätverk är konfigurerade för tillfälliga anslutningar, vilket innebär att inaktiva anslutningar normalt upphör. Inaktiva TCP-sessioner kan avslutas av proxyservrar och brand väggar med fler än 100 till 300 sekunder. Det här är problematiskt för Outlook online eftersom det skapar och använder långa anslutningar, oavsett om de är inaktiva eller inte.
 
 När anslutningar avbryts av proxy-eller brand Väggs enheter informeras klienten inte och ett försök att använda Outlook online innebär att en klient dator försöker att Revive anslutningen innan du skapar en ny. Det kan hända att du låser dig i produkt, uppmaning eller låg prestanda på sidan.
 
@@ -241,7 +241,7 @@ När anslutningar avbryts av proxy-eller brand Väggs enheter informeras kliente
 
 I Netmon kan du titta i fältet tids förskjutning för en rund resa. En rund resa är tiden mellan klienten som skickar en begäran till servern och får ett svar tillbaka. Kontrol lera mellan klienten och utgångs punkten (ex. Klient- \> proxy) eller klienten till Office 365 (klient-- \> Office 365). Du kan se detta i många typer av paket.
 
-Filtret i Netmon kan till exempel se ut som  `.Protocol.IPv4.Address == 10.102.14.112 AND .Protocol.IPv4.Address == 10.201.114.12` eller, i wireshark  `ip.addr == 10.102.14.112 &amp;&amp; ip.addr == 10.201.114.12` .  
+Filtret i Netmon kan till exempel se ut som  `.Protocol.IPv4.Address == 10.102.14.112 AND .Protocol.IPv4.Address == 10.201.114.12` eller, i wireshark  `ip.addr == 10.102.14.112 &amp;&amp; ip.addr == 10.201.114.12` .
 
 > [!TIP]
 > Vet du inte om IP-adressen i spårningen tillhör din DNS-Server? Pröva att leta upp det på kommando raden. Klicka på **Starta** \> **Kör** \> och skriv **cmd**, eller tryck på **Windows-tangenten** \> och skriv **cmd**. Skriv in vid uppmaningen  `nslookup <the IP address from the network trace>` . Testa genom att använda nslookup mot din egen dators IP-adress. > du vill se en lista med IP-adressintervall för Microsoft kan du läsa [Office 365 URL: er och IP](https://technet.microsoft.com/library/hh373144.aspx)-adressintervall.
@@ -252,7 +252,7 @@ Om det uppstår ett problem bör du vänta lång tids förskjutning för att det
 
 Fördröjning är ett mått som kan ändra ett par beroende på många variabler, sådana uppgraderingar av åldrande enheter, lägga till ett stort antal användare i ett nätverk och procent av total bandbredd som används av andra aktiviteter på en nätverks anslutning.
 
-Det finns bandbredds kalkylatorer för Office 365 på den här sidan [för nätverks planering och prestanda justering för office 365](network-planning-and-performance.md) .  
+Det finns bandbredds kalkylatorer för Office 365 på den här sidan [för nätverks planering och prestanda justering för office 365](network-planning-and-performance.md) .
 
 Behöver du mäta hastigheten på din anslutning, eller din Internet leverantörs bandbredd? Prova den här webbplatsen (eller platserna som den): [speedtest officiella webbplatsen](https://www.speedtest.net/)eller fråga din favorit sökmotor efter fras **hastigheten**.
 
@@ -265,18 +265,18 @@ Behöver du mäta hastigheten på din anslutning, eller din Internet leverantör
 
 #### <a name="what-to-look-for"></a>Vad du kan söka efter
 
-Om du vill följa upp svars tiden i en spårning kan du ha spelat in klient datorns IP-adress och IP-adressen för DNS-servern i Office 365. Detta används för enklare spårnings filtrering. Om du ansluter via en proxyserver behöver du klient datorns IP-adress, proxyserverns IP-adress och Office 365 DNS IP-adress för att det ska bli enklare.  
+Om du vill följa upp svars tiden i en spårning kan du ha spelat in klient datorns IP-adress och IP-adressen för DNS-servern i Office 365. Detta används för enklare spårnings filtrering. Om du ansluter via en proxyserver behöver du klient datorns IP-adress, proxyserverns IP-adress och Office 365 DNS IP-adress för att det ska bli enklare.
 
-En ping-begäran som skickas till outlook.office365.com anger namnet på det data Center som tar emot begäran, även om ping  *kanske*  inte kan ansluta för att skicka varumärkes paketet i följd. Om du använder PsPing (ett gratis verktyg för nedladdning) och specifikt för porten (443) och kanske använder IPv4 (-4) får du en genomsnittlig tids fördröjning för skickade paket. Det här kommer att fungera för andra URL-adresser i Office 365-tjänsterna `psping -4 yourSite.sharepoint.com:443` . Du kan faktiskt ange ett antal ping-nummer för att få ett större prov för medelvärdet, pröva något som liknar `psping -4 -n 20 yourSite-my.sharepoint.com:443` .  
+En ping-begäran som skickas till outlook.office365.com anger namnet på det data Center som tar emot begäran, även om ping  *kanske*  inte kan ansluta för att skicka varumärkes paketet i följd. Om du använder PsPing (ett gratis verktyg för nedladdning) och specifikt för porten (443) och kanske använder IPv4 (-4) får du en genomsnittlig tids fördröjning för skickade paket. Det här kommer att fungera för andra URL-adresser i Office 365-tjänsterna `psping -4 yourSite.sharepoint.com:443` . Du kan faktiskt ange ett antal ping-nummer för att få ett större prov för medelvärdet, pröva något som liknar `psping -4 -n 20 yourSite-my.sharepoint.com:443` .
 
 > [!NOTE]
 > PsPing skickar inte ICMP-paket. Det pingar med TCP-paket över en viss port, så att du kan använda vilken som helst som är öppen. I Office 365, som använder SSL/TLS, kan du försöka med att bifoga porten: 443 till din PsPing.
 
 ![Skärm bild som visar en ping-lösning för outlook.office365.com och en PSPing med 443 som gör samma sak, men som även rapporterar en normal till en version av 6,5.](../media/c64339f2-2c96-45b8-b168-c2a060430266.PNG)
 
-Om du läste in sidan långsam Office 365 när du utför en nätverks spårning bör du filtrera en Netmon eller wireshark trace för `DNS` . Det här är en av de adresser vi letar efter.  
+Om du läste in sidan långsam Office 365 när du utför en nätverks spårning bör du filtrera en Netmon eller wireshark trace för `DNS` . Det här är en av de adresser vi letar efter.
 
-Här är de här stegen för att filtrera Netmon för att hämta IP-adressen (och ta en titt på DNS-fördröjningen). I det här exemplet används outlook.office365.com, men du kan även använda URL-adressen till en SharePoint Online-klient organisation (till exempel hithere.sharepoint.com).  
+Här är de här stegen för att filtrera Netmon för att hämta IP-adressen (och ta en titt på DNS-fördröjningen). I det här exemplet används outlook.office365.com, men du kan även använda URL-adressen till en SharePoint Online-klient organisation (till exempel hithere.sharepoint.com).
 
 1. Skicka ping till URL `ping outlook.office365.com` -adressen och ange namn och IP-adress för DNS-servern som ping-begäran skickades till i resultatet.
 2. Nätverks spårning öppnar sidan, eller utför åtgärden som ger dig prestanda problem, eller, om du ser en hög latens för ping, sig själv, spåra det.
@@ -286,15 +286,15 @@ Här är de här stegen för att filtrera Netmon för att hämta IP-adressen (oc
 6. Öppna en kommando tolk (starta \> kör \> typen CMD eller Windows-nyckelbaserad \> cmd) och Byt katalog till den katalog där du installerade PsPing för att köra kommandot PsPing. I mina exempel kan du se att jag har gjort en ' perf '-mapp i roten av C. Du kan göra samma sak för snabb åtkomst.
 7. Skriv kommandot så att du gör PsPing mot IP-adressen för Office 365 DNS-servern från din tidigare Netmon-spårning, inklusive Port numret, till exempel `psping -n 20 132.245.24.82:445` . Då får du ett prov på 20 pingar och genomsnittlig fördröjning när PsPingen upphör.
 
-Om du kommer till Office 365 via en proxyserver är stegen lite annorlunda. Du ska först PsPing till din proxyserver för att få ett genomsnittligt fördröjnings värde i millisekunder för proxy/utgående och tillbaka, och sedan antingen köra PsPing på proxyservern eller på en dator med en direkt Internet anslutning för att få det värde som saknas (det som gäller för Office 365 och tillbaka).  
+Om du kommer till Office 365 via en proxyserver är stegen lite annorlunda. Du ska först PsPing till din proxyserver för att få ett genomsnittligt fördröjnings värde i millisekunder för proxy/utgående och tillbaka, och sedan antingen köra PsPing på proxyservern eller på en dator med en direkt Internet anslutning för att få det värde som saknas (det som gäller för Office 365 och tillbaka).
 
-Om du väljer att köra PsPing från proxyservern har du två millisekunder-värden: klient dator till proxyserver eller utgångs punkt samt proxyserver till Office 365. Nu är du klar! Dessutom kan du registrera värden.  
+Om du väljer att köra PsPing från proxyservern har du två millisekunder-värden: klient dator till proxyserver eller utgångs punkt samt proxyserver till Office 365. Nu är du klar! Dessutom kan du registrera värden.
 
 Om du kör PsPing på en annan klient dator som har en direkt anslutning till Internet kommer du att ha två millisekunder-värden: klient dator till proxyserver eller utgångs punkt samt klient dator till Office 365. I det här fallet subtraherar du värdet på klient datorn till proxyservern eller utgångs punkten från värdet på klient datorn till Office 365 och du kommer att ha alla söknummer från klient datorn till proxyservern eller utgångs punkten och från proxyservern eller utgångs punkten för Office 365.
 
 Men om du kan hitta en klient dator på den påverkade plats som är direktansluten, eller kringgår proxyn, kan du välja att se om problemet återskapas där och börjar med.
 
-Fördröjning, som den visas i en Netmon-spårning, kan de extra millisekunderna läggas till, om det finns tillräckligt med dem under en given session.  
+Fördröjning, som den visas i en Netmon-spårning, kan de extra millisekunderna läggas till, om det finns tillräckligt med dem under en given session.
 
 ![Allmän svars tid i Netmon, med kolumnen Netmon standard tid för att delta i ram översikten.](../media/7ad17380-8527-4bc2-9b9b-6310cf19ba6b.PNG)
 
@@ -305,13 +305,13 @@ Kom ihåg att utöka alla noder (det finns en knapp högst upp) om du vill söka
 
 ### <a name="proxy-authentication"></a>Proxyautentisering
 
-Det här gäller bara för dig om du reser via en proxyserver. Annars kan du hoppa över de här stegen. När du arbetar korrekt bör proxyautentisering ske i millisekunder. Dålig prestanda visas inte under de högsta användnings perioderna (till exempel).  
+Det här gäller bara för dig om du reser via en proxyserver. Annars kan du hoppa över de här stegen. När du arbetar korrekt bör proxyautentisering ske i millisekunder. Dålig prestanda visas inte under de högsta användnings perioderna (till exempel).
 
-Om proxyautentisering är på, varje gång du gör en ny TCP-anslutning till Office 365 för att få information måste du gå igenom en autentiseringsprocess bakom kulisserna. Om du till exempel byter från kalender till e-post i Outlook online verifieras. Och i SharePoint Online, om en sida visar media eller data från flera webbplatser eller platser verifierar du för varje annan TCP-anslutning som behövs för att återge data.  
+Om proxyautentisering är på, varje gång du gör en ny TCP-anslutning till Office 365 för att få information måste du gå igenom en autentiseringsprocess bakom kulisserna. Om du till exempel byter från kalender till e-post i Outlook online verifieras. Och i SharePoint Online, om en sida visar media eller data från flera webbplatser eller platser verifierar du för varje annan TCP-anslutning som behövs för att återge data.
 
 I Outlook online kan det uppstå långsamma inläsnings tider när du växlar mellan kalender och post låda eller långsam sida i SharePoint Online. Men det finns andra problem som inte finns med här.
 
-Proxyautentisering är en inställning för din utgående proxyserver. Om det orsakar ett problem med Office 365 måste du kontakta nätverks gruppen.  
+Proxyautentisering är en inställning för din utgående proxyserver. Om det orsakar ett problem med Office 365 måste du kontakta nätverks gruppen.
 
 #### <a name="tools"></a>Verktyg
 
@@ -385,15 +385,15 @@ Om problemet verkar vara DNS-specifikt kan det vara nödvändigt att kontakta IT
 
 ### <a name="proxy-scalability"></a>Skalbarhet för proxyserver
 
-Tjänster som Outlook online i Office 365 tilldelar klienter flera långsiktiga anslutningar. Därför kan varje användare använda fler anslutningar som kräver längre livs längd.  
+Tjänster som Outlook online i Office 365 tilldelar klienter flera långsiktiga anslutningar. Därför kan varje användare använda fler anslutningar som kräver längre livs längd.
 
 #### <a name="tools"></a>Verktyg
 
-Beräkna  
+Beräkna
 
 #### <a name="what-to-look-for"></a>Vad du kan söka efter
 
-Det finns inget fel söknings verktyg för nätverk. I stället baseras det på bandbredds beräkningar och andra variabler.  
+Det finns inget fel söknings verktyg för nätverk. I stället baseras det på bandbredds beräkningar och andra variabler.
 
 ### <a name="tcp-max-segment-size"></a>Max storlek för TCP-segment
 
@@ -422,7 +422,7 @@ I det här läget kan du spela in RAM numret, släppa filtret, klicka på **all 
 
 Om du inte har fått någon av IP-adresserna samtidigt som spårningen, kan du hitta din URL i spårningen ( `sphybridExample-my.sharepoint.com` till exempel) för att filtrera efter.
 
-Leta reda på anslutningen i spåret som du är intresse rad av. Du kan göra det genom att antingen Skanna spårningen, genom att filtrera efter IP-adresser, eller genom att välja specifika Konversations-ID med hjälp av fönstret för nätverks konversationer i Netmon. När du har hittat SYN-paketet expanderar du TCP (i Netmon) eller Transmission Control Protocol (i wireshark) i panelen ram information. Expandera TCP-alternativ och MaxSegmentSize. Leta reda på den relaterade SYN-ACK-ramen och expandera TCP-alternativen och MaxSegmentSize. Den mindre av de två värdena blir den maximala storleken på segmentet. I den här bilden använder jag den inbyggda kolumnen i Netmon som heter TCP-felsökning.  
+Leta reda på anslutningen i spåret som du är intresse rad av. Du kan göra det genom att antingen Skanna spårningen, genom att filtrera efter IP-adresser, eller genom att välja specifika Konversations-ID med hjälp av fönstret för nätverks konversationer i Netmon. När du har hittat SYN-paketet expanderar du TCP (i Netmon) eller Transmission Control Protocol (i wireshark) i panelen ram information. Expandera TCP-alternativ och MaxSegmentSize. Leta reda på den relaterade SYN-ACK-ramen och expandera TCP-alternativen och MaxSegmentSize. Den mindre av de två värdena blir den maximala storleken på segmentet. I den här bilden använder jag den inbyggda kolumnen i Netmon som heter TCP-felsökning.
 
 ![Nätverks spårning filtrerad i Netmon med de inbyggda kolumnerna.](../media/e073df13-71f8-497a-83b4-bb9f70bd9833.PNG)
 
@@ -482,7 +482,7 @@ DNS fungerar snabbast när namn matchning görs så nära användarens plats som
 
 Kör pingverktyget mot outlook.office365.com för att avgöra var i världen din DNS-begäran dirigeras. Om du är i Europa bör du se ett svar från något liknande outlook-emeawest.office365.com. I Amerika förväntar jag något liknande outlook-namnorthwest.office365.com.
 
-Öppna kommando tolken på klient datorn (via Start kommando \> för \> cmd eller Windows \> -tangenten Cmd). Skriv ping outlook.office365.com och tryck på RETUR. Kom ihåg att ange-4 om du vill skicka ping via IPv4. Det kan hända att du inte får ett svar från ICMP-paketen, men du bör se namnet på den DNS som begäran cirkulerats till. Om du vill se svars numret för den här anslutningen försöker du med PsPing IP-adress till den server som returneras av ping.  
+Öppna kommando tolken på klient datorn (via Start kommando \> för \> cmd eller Windows \> -tangenten Cmd). Skriv ping outlook.office365.com och tryck på RETUR. Kom ihåg att ange-4 om du vill skicka ping via IPv4. Det kan hända att du inte får ett svar från ICMP-paketen, men du bör se namnet på den DNS som begäran cirkulerats till. Om du vill se svars numret för den här anslutningen försöker du med PsPing IP-adress till den server som returneras av ping.
 
 ![Ping på outlook.office365.com som visar upplösning i Outlook-namnorthwest.](../media/06c944d5-6159-43ec-aa31-757770695e8b.PNG)
 
@@ -498,8 +498,8 @@ Kör pingverktyget mot outlook.office365.com för att avgöra var i världen din
 
 Vi täcker inte verktyg som används för programspecifik fel sökning i den här nätverksmappen artikeln. Men du hittar resurser som du  *kan*  använda [på den här sidan](https://support.office.com/article/Network-planning-and-performance-tuning-for-Office-365-e5f1228c-da3c-4654-bf16-d163daee8848).
 
-## <a name="related-topics"></a>Närliggande ämnen
+## <a name="related-topics"></a>Relaterade ämnen
 
-[Hantera slut punkter för Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
-  
-[Vanliga frågor om Office 365-slut punkter](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
+[Hantera Office 365-slutpunkter](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
+
+[Office 365-slutpunkter – vanliga frågor och svar](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)

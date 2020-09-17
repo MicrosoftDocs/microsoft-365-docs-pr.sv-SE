@@ -16,22 +16,21 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Komma igång med automatiska undersökningar och svars funktioner i Office 365 Avancerat skydds plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 14742df5d9dbd2f65a032250696dbc7c61210562
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 0587c2d58410d7a0bc4a581f156a2cbfc06701a9
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336685"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949710"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Komma igång med automatisk undersökning och svar (AIR) i Office 365
 
 [Office 365 Avancerat skydd](office-365-atp.md) (Office 365 ATP) plan 2 inkluderar kraftfulla automatiserade undersökningar och svar (Air) som kan spara tid och kraft för arbets uppgifter. När notifieringar utlöses är det upp till din säkerhets åtgärd för att granska, prioritera och svara på dessa aviseringar. Det är lätt att hålla kontakten med volymen av inkommande varningar. Att automatisera vissa av detta kan vara till hjälp. Med flyg kan din säkerhets åtgärds grupp fokusera på aktiviteter med högre prioritet utan att förlora varningar som utlöses.
 
-Den här artikeln innehåller information om:
-
-- Det [allmänna luft flödet](#the-overall-flow-of-air)
-- [Så här kommer du till luften](#how-to-get-air)
-- De [behörigheter som krävs](#required-permissions-to-use-air-capabilities) för att konfigurera eller använda Air-funktioner
+Den här artikeln innehåller:
+- LUFT [flödet](#the-overall-flow-of-air) .
+- [Hur man kommer igång](#how-to-get-air); och 
+- De [behörigheter som krävs](#required-permissions-to-use-air-capabilities) för att konfigurera eller använda Air-funktioner. 
 
 ## <a name="the-overall-flow-of-air"></a>Det allmänna luft flödet
 
@@ -101,7 +100,7 @@ Behörigheter beviljas via vissa roller, till exempel de som beskrivs i följand
 [Office 365 ATP-abonnemang 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2) licenser ska tilldelas:
 - Säkerhets administratörer (inklusive globala administratörer)
 - Organisationens säkerhets åtgärds team (inklusive säkerhets läsare och de som har rollen Sök och rensa)
-- Slutanvändare
+- Slutanvändare:
 
 Dessutom måste [principer för Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) definieras och användas för att skydd ska kunna användas.
 

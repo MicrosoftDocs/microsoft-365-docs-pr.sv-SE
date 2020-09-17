@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 'Administratörer kan läsa mer om hur du använder portalen för att skicka e-postmeddelanden, misstänkta nätfiske-meddelanden, skräp post och andra potentiellt skadligt meddelande, URL: er och filer till Microsoft för genomsökning i & den här gruppen.'
-ms.openlocfilehash: 08d1633142bba7348cbc899f9cf9b2a1288c3743
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: ef401f34bb0bc7a9a9718443101924ad09bca8a0
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394741"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47947978"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Använd administratörs sändning för att skicka misstänkt skräp post, Phish, URL: er och filer till Microsoft
 
@@ -78,7 +78,7 @@ Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microso
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Skicka en misstänkt URL till Microsoft
 
-1. Välj **URL**under **objekt typ** . I rutan som visas anger du den fullständiga URL: en (till exempel <https://www.fabrikam.com/marketing.html> ).
+1. Välj **URL**under **objekt typ** . I rutan som visas anger du den fullständiga URL: en (till exempel `https://www.fabrikam.com/marketing.html` ).
 
 2. Välj något av följande alternativ i avsnittet **orsak för inlämning** :
 

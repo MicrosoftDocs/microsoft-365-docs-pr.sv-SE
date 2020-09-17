@@ -16,12 +16,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft har utvecklat olika policyer, procedurer och infört flera metod tips för att skydda våra användare mot grova och oönskade e-postmeddelanden.
-ms.openlocfilehash: 13bc62f8be25a21f5ed2d1c2c2f4208a56d28bf0
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 5b815678fc7462df5448447624d6f7c0c63d6eb6
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826523"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949662"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referens: principer, övningar och riktlinjer
 
@@ -43,7 +43,7 @@ E-post som skickas till Microsoft 365-användare måste följa alla tillämpliga
 
 - [KAN-skräp post Act: en guide för regelefterlevnad för företag](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
-- ["Ta bort mig"-svar och ansvars områden: e-marketers måste uppfylla "unsubscribe"-anspråk](https://www.lawpublish.com/ftc-emai-marketers-unsubscribe-claims.mdl)
+- ["Ta bort mig"-svar och ansvars områden: e-marketers måste uppfylla "unsubscribe"-anspråk](https://www.lawpublish.com/ftc-emai-marketers-unsubscribe-claims.html)
 
 ## <a name="technical-guidelines"></a>Tekniska rikt linjer
 

@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Översikten för konfiguration av klient-och serverprogram för Microsoft 365.
-ms.openlocfilehash: 14169809deb363cac8ff3dd6ad35c12c20318674
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 898464222b8296cee3ab12fe7351295f39a23736
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694471"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950574"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Klient-och Server program översikt för Microsoft 365
 
@@ -34,8 +34,7 @@ Om du vill maximera företags värdet för Microsoft 365 för Enterprise-integre
 >Windows 7 upphörde med sin support den **14 januari 2020**. Mer information finns [här](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020).
 >
 
-Om du genomför de här migreringarna över tiden får organisationen närmare den [moderna arbets platsen](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/), en säker och integrerad miljö som låser upp samarbete och kreativitet i organisationen, vilka alla är aktiverade och har stöd för Microsoft 365 för företag. 
-
+Om du genomför de här migreringarna över tiden får organisationen närmare den [moderna arbets platsen](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/), en säker och integrerad miljö som låser upp samarbete och kreativitet i organisationen, vilka alla är aktiverade och har stöd för Microsoft 365 för företag.
 
 ## <a name="migration-for-microsoft-office-client-products"></a>Migrering av Microsoft Office-klientprodukter
 
@@ -44,7 +43,7 @@ Oavsett om din organisation är stor eller liten, kanske du använder en kombina
 - Kan [uppdateras](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5) med de senaste säkerhetsuppdateringarna och supportkorrigeringarna, men processen är ibland manuell och kan kanske inte skalas i hela organisationen.
 - Har inte anpassats optimalt till att använda Microsofts molntekniker som hjälper dig att transformera din verksamhet digitalt.
 - Innehåller inga nya funktioner.
- 
+
 Microsoft 365 för Enterprise innehåller Microsoft 365-appar för företag, en version av Office-klientprodukter som är tillgängliga med en Microsoft-365 för företag-licens och är installerad och uppdateras från Microsoft Cloud. Microsoft 365-applikationer för företag innehåller säkerhetsuppdateringar och de senaste funktionerna. Mer information finns i [Om Microsoft 365-applikationer för företag](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
 
 ### <a name="office-2007"></a>Office 2007
@@ -63,7 +62,7 @@ Microsoft 365-applikationer för företag installerar uppdateringar automatiskt 
 
 För Office 2010-versioner upphör supporten **13 oktober 2020**. Mer information finns i [Supporten för Office 2010 upphör](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
 
-I stället för att uppgradera datorerna som kör Office 2010 med Office 2013 eller Office 2016, där båda måste uppdateras manuellt, kan du: 
+I stället för att uppgradera datorerna som kör Office 2010 med Office 2013 eller Office 2016, där båda måste uppdateras manuellt, kan du:
 
 1. Skaffa och tilldela en Microsoft 365-licens till dina användare.
 2. Avinstallera Office 2010 på deras datorer.
@@ -92,7 +91,7 @@ Oavsett om din organisation är stor eller liten, kanske du använder en kombina
 - Innehåller inte nya produktivitetsprogram, t.ex. Microsoft Teams.
 - Innehåller inte de senaste säkerhetsfunktionerna, till exempel Advanced Threat Protection i Exchange.
 
-Microsoft 365 för Enterprise innehåller molnbaserade versioner av Office Server-tjänster som använder vissa av de verktyg som lokala versioner av Office Server-program, till exempel webbläsare och Outlook-klienten. Tjänsternas säkerhet uppdateras ständigt utan att IT-avdelningen behöver agera, vilket sparar tid när lokala servrar ska underhållas och uppdateras. Tjänsterna har också nya funktionsförbättringar som inte finns i Office-serverprogrammen. 
+Microsoft 365 för Enterprise innehåller molnbaserade versioner av Office Server-tjänster som använder vissa av de verktyg som lokala versioner av Office Server-program, till exempel webbläsare och Outlook-klienten. Tjänsternas säkerhet uppdateras ständigt utan att IT-avdelningen behöver agera, vilket sparar tid när lokala servrar ska underhållas och uppdateras. Tjänsterna har också nya funktionsförbättringar som inte finns i Office-serverprogrammen.
 
 Information om hur du migrerar användare och data för specifika Microsoft 365-arbets belastningar:
 
@@ -146,7 +145,7 @@ Det har ännu inte fastställts när supporten upphör för serverprodukter i Of
 
 ## <a name="migration-for-microsoft-windows-7-and-81"></a>Migrering för Microsoft Windows 7 och 8.1
 
-Windows 7 upphörde med sin support den **14 januari 2020**. Om du vill migrera enheter som kör Windows 7 eller Windows 8.1 kan du utföra en på-plats-uppgradering. 
+Windows 7 upphörde med sin support den **14 januari 2020**. Om du vill migrera enheter som kör Windows 7 eller Windows 8.1 kan du utföra en på-plats-uppgradering.
 
 Fler metoder finns i [Distributionsscenarier för Windows 10](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). Du kan också [planera för distribution av Windows 10](https://aka.ms/planforwin10deployment) på egen hand.
 
@@ -162,7 +161,7 @@ Du kan också [ladda ner denna affisch](https://github.com/MicrosoftDocs/microso
 
 ## <a name="transition-your-entire-organization"></a>En övergång för hela organisationen
 
-För att få en bättre bild av hur du flyttar hela organisationen till produkterna och tjänsterna i Microsoft 365 för företag, se [över gången för över gångar](../downloads/transition-org-to-m365.pdf).
+Om du vill få en bättre bild av hur du kan flytta hela organisationen till produkterna och tjänsterna i Microsoft 365 för företag kan du studera [övergångsaffischen](../downloads/transition-org-to-m365.pdf).
 
 [![Bild på affischen för övergång till Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
 
@@ -172,11 +171,10 @@ Du kan också [ladda ner denna affisch](https://github.com/MicrosoftDocs/microso
 
 ## <a name="how-microsoft-does-microsoft-365-for-enterprise"></a>Så här fungerar Microsoft 365 för företag
 
-Se hur IT-experter på Microsoft migrerade företaget till Microsoft 365 för företag med dessa resurser: 
+Se hur IT-experter på Microsoft migrerade företaget till Microsoft 365 för företag med dessa resurser:
 
 - [Distribuera och uppdatera Microsoft 365-appar för företag](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Microsoft migrerar 150 000 postlådor till Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [SharePoint till molnet: Se hur Microsoft har utfört sin egen migrering](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
 - [Distribution av Windows 10 på Microsoft som en på-plats-uppgradering](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
 - [Distribution av Windows 10: Tips och tricks från Microsoft IT](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (video)
-

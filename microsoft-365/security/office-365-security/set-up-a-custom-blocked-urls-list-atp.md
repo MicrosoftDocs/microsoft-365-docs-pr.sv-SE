@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du konfigurerar en lista över blockerade URL-adresser för organisationen med hjälp av Office 365 Avancerat skydd.
-ms.openlocfilehash: 5f863a3ba61278d0bec5304034ed75d343f93c77
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: f66d447b980cae4a4afbb706f26659c5976bdf37
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656653"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948096"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>Konfigurera en egen lista med blockerade URL-adresser med säkerhet för ATP
 
@@ -92,7 +92,7 @@ Tänk på följande när du lägger till URL-adresser i listan:
 |
 
 > [!NOTE]
-> Som standard kan du bara lägga till 500-URL: er i listan blockerade URL-adresser i Office 365-standard för Safe Links.
+> Som standard kan du bara lägga till 500-URL: er i listan blockerade URL-adresser i Office 365-standard för Safe Links. En enskild URL får inte överstiga 128 tecken. Hela den blockerade URL-listan får inte innehålla fler än 10 000 tecken.
 
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Så här definierar du undantag för vissa användare i en organisation
 

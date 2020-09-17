@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Administratörer kan lära sig hur EOP använder e-autentisering (SPF, DKIM och DMARC) för att förhindra förfalskning, phishing och skräppost.
-ms.openlocfilehash: 8db5045ec19c5552feba739628a2c9c1c508f620
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 0f4eb15df218050f7e582b1cc727522c04da594b
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866641"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949874"
 ---
 # <a name="email-authentication-in-eop"></a>E-postautentisering i EOP
 
@@ -204,4 +204,4 @@ Om du är värd för en domäns e-post eller tillhandahåller infrastruktur som 
 
 Leveransen till Microsoft garanteras inte även om du autentiserar e-post som kommer från din plattform men det ser åtminstone till att Microsoft inte markerar din e-post som skräppost för att den inte autentiseras.
 
-Mer information om bästa praxis för tjänsteleverantörer finns i [M3AAWG Mobile Messaging Best Practices för tjänsteleverantörer](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf).
+Mer information om bästa praxis för tjänsteleverantörer finns i [M3AAWG Mobile Messaging Best Practices för tjänsteleverantörer](https://www.m3aawg.org/sites/default/files/m3aawg-mobile-messaging-best-practices-service-providers-2015-08_0.pdf).

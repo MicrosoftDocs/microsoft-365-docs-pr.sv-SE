@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa, skapa, ändra och ta bort utgående skräp post principer i Exchange Online Protection (EOP).
-ms.openlocfilehash: 530c1af9b7802be6073f19331ce7f6a20bdb2668
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: ebeebe3486ad4dad926ad72509154904700e320a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845984"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949354"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurera utgående skräp post filtrering i EOP
 
@@ -361,7 +361,7 @@ Detaljerad information om syntax och parametrar finns i [Get-HostedOutboundSpamF
 Om du vill visa befintliga regler för skräp post filter använder du följande syntax:
 
 ```PowerShell
-Get-HostedOutboundSpamFilterRule [-Identity "<RuleIdentity>] [-State <Enabled | Disabled]
+Get-HostedOutboundSpamFilterRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled>]
 ```
 
 Om du vill returnera en sammanfattnings lista över alla regler för utgående skräp post filter kör du det här kommandot:

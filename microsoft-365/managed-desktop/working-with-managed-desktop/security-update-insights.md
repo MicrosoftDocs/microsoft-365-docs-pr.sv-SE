@@ -1,64 +1,65 @@
 ---
 title: Insikter om Windows-säkerhetsuppdateringar
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, tjänst, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ef2d5c897709e7f7d2484d032b7471031be77d74
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 772d1d52e977a067ff9bc3517de9cb2ae6c8c9a3
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42809457"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950373"
 ---
 # <a name="windows-security-update-insights"></a>Insikter om Windows-säkerhetsuppdateringar
-Den här vyn innehåller en översikt över statusen för säkerhetsuppdateringar för dina Microsoft Managed Desktop-enheter. 
+Den här vyn innehåller en översikt över status för säkerhets uppdateringar för Microsoft Managed Station ära datorer. 
 
-Om du vill visa användningsdata väljer du fliken Säkerhetsuppdateringar i <strong>Windows.</strong>
+Om du vill visa användnings data väljer du fliken <strong>Windows säkerhets uppdateringar</strong> .
 
-![Fönstret Windows säkerhetsuppdateringar: stapeldiagram över enhetsstatus och uppdateringsversion i vänster kolumn, uppdatera distributionsförloppet över tid i mittkolumnen och procentandel av aktiva enheter efter distributionsgrupp, samt antalet dagar som har gjorts för att nå 95%-distributionen mål i höger kolumn.](../../media/update-insights.jpg)
+![Windows säkerhets uppdaterings fönster: stapel-grafer med enhets status och uppdatera version i vänster kolumn, uppdatera distributions förloppet över tid i mitten och procent av aktiva enheter efter distributions grupp, samt antalet dagar för att nå distributions mål för 95% i höger kolumn.](../../media/update-insights.jpg)
 
-## <a name="device-status"></a>Enhetsstatus
+## <a name="device-status"></a>Enhets status
 
-För att enheter ska kunna uppdateras av Windows Update måste de vara anslutna till Internet och inte vara i viloläge i minst sex timmar, varav två måste vara kontinuerliga. Så länge en enhet är ansluten och inte övervintrar, anses den vara "i bruk". Även om det är möjligt att en enhet som inte uppfyller dessa krav kommer att uppdateras, har enheter som uppfyller dem den största sannolikheten för att uppdateras. 
+För att enheter ska uppdateras av Windows Update måste de vara anslutna till Internet och inte försätts i vilo läge i minst sex timmar, två av dessa måste vara löpande. Så länge en enhet är ansluten och inte är i vilo läge anses den vara "används". Även om det är möjligt att en enhet som inte uppfyller dessa krav kommer att uppdateras, att enheter som uppfyller dem har högsta sannolikhet för att uppdateras. 
 
-Vi kategoriserar enhetsaktivitet i samband med Windows Update med följande villkor:
+Vi kategoriserar enhets aktivitet i Windows Update med följande villkor:
 
-- <strong>Aktiv:</strong> Enheter som har uppfyllt minimianvändningskriterierna (sex timmar, två kontinuerliga) för den senaste säkerhetsuppdateringsversionen och har checkat in med Microsoft Intune minst var femte dag
-- <strong>Synkroniserad:</strong> Enheter som har checkat in med Intune under de senaste 28 dagarna
-- <strong>Osynkroniserad:</strong> Enheter som <i>inte</i> har checkat in med Intune under de senaste 28 dagarna
-
-
+- <strong>Aktivt:</strong> Enheter som har uppnått de lägsta användnings villkoren (sex timmar, två forts) för den senaste säkerhets uppdateringen och har checkats in med Microsoft Intune minst var femte dag
+- <strong>Synkroniserat:</strong> Enheter som har checkat in med Intune under de senaste 28 dagarna
+- Inte <strong>synkroniserat:</strong> Enheter som <i>inte</i> har checkats in med Intune under de senaste 28 dagarna
 
 
-## <a name="update-version-status"></a>Status för uppdateringsversionen
-
-Microsoft släpper säkerhetsuppdateringar varannan tisdag i månaden. Varje utgåva lägger till viktiga uppdateringar för kända säkerhetsproblem. Microsoft Managed Desktop säkerställer att 95 % av dess hanterade enheter uppdateras med den senaste tillgängliga säkerhetsuppdateringen varje månad. Säkerhetsuppdateringar släpps ibland vid andra tillfällen för att snabbt ta itu med nya hot. Microsoft Managed Desktop distribuerar dessa uppdateringar på ett liknande sätt.
-
-Vi kategoriserar status för säkerhetsuppdateringsversioner med följande villkor:
-
-- <strong>Aktuell:</strong> Enheter som kör uppdateringen som släpps under den aktuella månaden
-- <strong>Föregående:</strong> Enheter som kör uppdateringen som släpptes föregående månad
-- <strong>Äldre:</strong> Enheter som kör någon säkerhetsuppdatering som släpptes före föregående månad
-
-Du bör se få enheter i kategorin <strong>Äldre</strong> – en stor eller växande population indikerar förmodligen ett systemproblem som du bör rapportera till Microsoft Managed Desktop så att vi kan undersöka.
 
 
-## <a name="deployment-progress"></a>Förloppet för distribution
+## <a name="update-version-status"></a>Uppdatera versions status
 
-I början av varje startcykel för säkerhetsuppdateringar tar Microsoft Managed Desktop en ögonblicksbild av enhetspopulationen och anger sitt distributionsmål till 95 % av den populationen. <strong>Området Förlopp för distribution</strong> visar en historisk trend, uppdaterad dagligen, som spårar hur nära uppdateringsdistributionen uppfyller det här målet för varje version. Det här diagrammet visar bara enheter med aktiv status.
+Microsoft publicerar säkerhets uppdateringar varannan tisdag i månaden. Varje utgåva innehåller viktiga uppdateringar för kända säkerhets problem. Microsoft Managed Desktop säkerställer att 95% av dess hanterade enheter uppdateras med de senaste tillgängliga säkerhets uppdateringarna varje månad. Säkerhets uppdateringar släpps ibland vid andra tillfällen för att snarast adressera nya hot. Microsoft Managed Desktop distribuerar dessa uppdateringar på liknande sätt.
 
-Du kan visa dessa data för tidigare uppdateringscykler med hjälp av rullgardinsmenyn längst upp till höger. Den period du väljer i den här menyn gäller för all information på hela sidan.
+Vi kategoriserar statusen för säkerhets uppdaterings versioner med dessa villkor:
 
-Det <strong>uppdaterade aktiva enheterna efter distributionsgruppsområdet</strong> ger en annan vy genom att visa förloppet för uppdateringsinstallationen för var och en av distributionsgrupperna för Microsoft Managed Desktop.
+- <strong>Nuvarande:</strong> Enheter som kör uppdateringen släpptes under den aktuella månaden
+- <strong>Föregående:</strong> Enheter som kör uppdateringen som släpptes under den föregående månaden
+- <strong>Äldre:</strong> Enheter med säkerhets uppdateringar som släpps före den föregående månaden
 
-Området <strong>Dagar för att nå mål</strong> visar hur lång tid det tog för 95 % av det totala antalet enheter som ska uppdateras med den aktuella säkerhetsuppdateringen. När distributionen pågår visas <strong>stilluppdatering</strong> fortfarande tills 95% målet har uppnåtts för den valda uppdateringen.
-
-## <a name="device-details-area"></a>Området för enhetsinformation
-
-Längst ned på instrumentpanelen finns en tabell som visar detaljerad information för dina enheter, inklusive [enhetsstatus](#device-status) och status för [uppdateringsversionen](#update-version-status). Du kan söka i den här listan eller filtrera den efter valfritt värde i listan.
+Du bör se få enheter i den <strong>äldre</strong> kategorin – en stor eller växande population indikerar antagligen ett systemfel som du bör rapportera till Microsoft Managed Desktop så att vi kan undersöka det.
 
 
-![Enhetsinformationstabell som visar kolumner för enhetsnamn, tilldelad användare, enhetsstatus, uppdateringsversion, operativsystemversion och det datum då enheten senast synkroniserades.](../../media/security-update-insights-device-table-sterile.png)
+## <a name="deployment-progress"></a>Distributions förlopp
+
+I början av varje version för säkerhets uppdatering tar Microsoft Managed Desktop en ögonblicks bild av enhets populationen och anger dess drift sättnings mål till 95% av populationen. I området <strong>distributions förlopp</strong> visas en historisk trend, uppdaterad varje dag, och här följer en genom gång av hur nära uppdaterings distributionen uppfyller detta mål för varje utgåva. I det här diagrammet visas endast enheter med aktiv status.
+
+Du kan visa dessa data för föregående uppdaterings cykler genom att använda den nedrullningsbara menyn i det övre högra hörnet. Den period som du väljer i den här menyn gäller för all information på hela sidan.
+
+I området för <strong>uppdaterade aktiva enheter efter distributions grupp</strong> kan du se hur uppdateringen fortskrider för var och en av de olika distributions grupperna för Microsoft Managed Station.
+
+I <strong>mål</strong> området visas hur lång tid det tog för 95% av totalt antal enheter att uppdateras med den aktuella säkerhets uppdateringen. När distributionen pågår visas det <strong>fortfarande</strong> i det här området tills 95%-målet nås för den valda uppdateringen.
+
+## <a name="device-details-area"></a>Området enhets information
+
+Instrument panelens nederkant är en tabell med detaljerad information för dina enheter, inklusive [enhets status](#device-status) och status för [uppdaterings version](#update-version-status). Du kan söka i den här listan eller filtrera den med något av de angivna värdena.
+
+
+![Enhets informations tabell med kolumner för enhets namn, tilldelad användare, enhets status, uppdatering version, operativ system version och datum då enheten senast synkroniserades.](../../media/security-update-insights-device-table-sterile.png)

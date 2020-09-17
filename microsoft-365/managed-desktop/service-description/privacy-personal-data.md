@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: e7eb3eaa6961993f8c77645c8d6760e6701817e2
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 33a2bf0b85b9b8561a5dcf32eae6e4cd0cb53765
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547944"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950490"
 ---
 # <a name="privacy-and-personal-data"></a>Integritets-och person uppgifter
 
@@ -128,7 +128,7 @@ I följande avsnitt beskrivs hur Microsoft Managed Desktop hjälper styrenhetern
 
 ### <a name="it-admin-contact-information"></a>Kontakt information för IT-administratörer
 
-En klient organisation kan visa, korrigera och ta bort sina person uppgifter direkt i avsnittet admin Contact på Microsoft Managed Desktop-portalen.
+En klient organisation kan visa, korrigera och ta bort sina egna person uppgifter (till exempel sin egen kontakt information) direkt i avsnittet administratörs kontakt på Microsoft Managed Desktop-portalen.
 
 ### <a name="user-related-personal-data"></a>Användar information
 

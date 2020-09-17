@@ -19,19 +19,19 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du använder hot-och svars funktioner för att hitta och undersöka skadlig e-post.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5026b69f356fad11a664900a3e316d9c1c976905
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 91f16c3aa7ba98467c52fb25e0597f346a810003
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845960"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949270"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Undersök skadlig e-post som har levererats i Office 365
 
 Med [Office 365 Avancerat skydd](office-365-atp.md) kan du undersöka aktiviteter som ger folk i din organisation till risk och att vidta åtgärder för att skydda din organisation. Om du till exempel är en del av din organisations säkerhets team kan du hitta och undersöka misstänkta e-postmeddelanden som har levererats. Du kan göra det med hjälp av [Threat Explorer (eller identifieringar i real tid)](threat-explorer.md).
 
 > [!NOTE]
-> Hoppa till reparations artikeln [här](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-21vianet&branch=pr-en-us-4258).
+> Hoppa till reparations artikeln [här](remediate-malicious-email-delivered-office-365.md).
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
@@ -61,7 +61,7 @@ Om du vill utföra vissa åtgärder, till exempel Visa meddelande rubriker eller
 > [!NOTE]
 > För *hands versionen* är en roll och inte en roll grupp; förhands gransknings rollen måste läggas till i en befintlig roll grupp för Office 365. Rollen global administratör har tilldelats administratörs Center för Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) och rollerna säkerhets administratör och säkerhets läsare tilldelas i säkerhets & Compliance Center ( [https://protection.office.com](https://protection.office.com) ). Mer information om roller och behörigheter finns i [behörigheter i säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Hitta och ta bort misstänkta e-postmeddelanden som har levererats
+## <a name="find-suspicious-email-that-was-delivered"></a>Hitta misstänkt e-post som har levererats
 
 Threat Explorer är en kraftfull rapport som kan hantera flera ändamål, till exempel att söka efter och ta bort meddelanden, identifiera IP-adressen för en oönskad e-avsändare eller påbörja en olycka för ytterligare undersökning. Följande procedur fokuserar på att använda Utforskaren för att hitta och ta bort skadlig e-post från mottagares post lådor.
 
@@ -191,11 +191,11 @@ Leverans platsen visar resultaten av principer och upptäckter med efter-leveran
 **E-Posttids linje** är ett fält i Threat Explorer som gör det lättare för dina säkerhets åtgärder. När flera händelser inträffar samtidigt eller nära varandra i ett e-postmeddelande visas händelserna i vyn tids linje. Vissa händelser som inträffar efter leveransen i e-postmeddelandet sparas i kolumnen **särskilda åtgärder** . Om du kombinerar information från tids linjen för ett e-postmeddelande med eventuella särskilda åtgärder som vidtogs efter publiceringen blir administratörer inblick i policy-och Threat-hanteringen (till exempel var e-postadressen cirkulerades och i vissa fall vad den slutliga utvärderingen var).
 
 > [!IMPORTANT]
-> Hoppa till ett reparations ämne [här](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-worldwide).
+> Hoppa till ett reparations ämne [här](remediate-malicious-email-delivered-office-365.md).
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Åtgärda skadlig e-post som skickas i Office 365](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-worldwide)
+[Åtgärda skadlig e-post som skickas i Office 365](remediate-malicious-email-delivered-office-365.md)
 
 [Office 365 Avancerat skydd](office-365-ti.md)
 

@@ -1,46 +1,47 @@
 ---
-title: Tillförlitlighet insikter
+title: Tillförlitlighetsinsikter
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b7f56a64f1846676f458f7b3ddb210e84b9ca8f7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 06e1446ca290439c9e6689f4461c825438cf6aaf
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42812268"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950348"
 ---
-# <a name="reliability-insights"></a>Tillförlitlighet insikter
+# <a name="reliability-insights"></a>Tillförlitlighetsinsikter
 
-Den här vyn ger dig en hälsosammanfattning av dina hanterade enheter. Om du vill visa tillförlitlighetsdata väljer du fliken **Tillförlitlighet.**
+I den här vyn får du en översikt över dina hanterade enheter. Om du vill visa pålitlighets data väljer du fliken **pålitlighet** .
 
 
-![Tillförlitlighetsruta: tillförlitlighet mellan enheter i övre vänstra, tillförlitlighet över tidsdiagram i övre högra, översta problemtabellen längst ned. Hjälp- och återkopplingsknappar i nedre högra delen.](../../media/insights_reliability.png)
+![Fönstret tillförlitlighet: tillförlitlighet mellan enheter uppe till vänster, högre tillförlitlighet än tids diagram längst upp till höger, tabellen vanligaste problem nedtill. Knapparna hjälp och feedback längst ned till höger.](../../media/insights_reliability.png)
 
-**Avsnittet Tillförlitlighet mellan enheter** ger en snabb hälsosammanfattning av distributionen under de senaste 14 dagarna genom att rapportera hur många procent av enheter som anses vara "felfria" och den genomsnittliga tiden som observerats sedan det senaste rapporterade felet. 
+Avsnittet **tillförlitlighet i flera enheter** erbjuder en översikt över de senaste 14 dagarna genom rapportering om procent andelen av enheter som anses vara "felfri" och genomsnittlig tid som observerats sedan det senaste rapporterade felet. 
 
  
-**Diagrammet Tillförlitlighet över tid** till höger visar antalet enheter med kritiska fel och det totala antalet observerade kritiska fel över tid.
+Diagrammets **tillförlitlighet över tid** till höger rapporterar antalet enheter med kritiska fel och det totala antalet observerade kritiska fel över tiden.
 
-Avsnittet **Översta problem** innehåller specifika problem som påverkar minst 5 % av dina hanterade enheter. Rapporterade uppgifter inkluderar:
+Avsnittet **TOPY** retails visar specifika upptäckta problem som påverkar minst 5% av dina hanterade enheter. Rapporterade uppgifter inkluderar:
 
 - Typ av problem
-    - Programmet kraschar, där en app slutar fungera eller oväntat slutar
-    - Programmet låser sig, där ett program slutar svara på indata
-    - Kritiska fel, som uppstår när windows har stött på ett problem som det inte kan återställa från
+    - Program kraschar, där ett program slutar fungera eller oväntat stoppas
+    - Programmet hänger sig, där ett program slutar svara för inmatning
+    - Kritiska fel, som uppstår när ett problem har uppstått i Windows
 - Antalet enheter som påverkas av samma problem
-- Procentandelen hanterade enheter som antalet representerar
-- Det totala antalet händelser för det specifika problemet
-- Programvarukomponenten som verkar vara källan till problemet
+- Procent andelen hanterade enheter som numret representerar
+- Totalt antal förekomster av det specifika problemet
+- Program varu komponenten som verkar vara orsaken till problemet
 - Kategorin för det upptäckta problemet:
     - Webbläsare (Edge, Chrome, IE)
-    - Okänd (komponenter som inte kommer från Microsoft)
-    - Drivrutin (ljud, grafik eller andra drivrutiner)
-    - Produktivitet (Slack, G-Suites, Microsoft Office och dess tillägg eller tillägg, Teams)
-    - Medieappar (bild-, musik- eller videoappar
-    - Säkerhet (Windows-säkerhetskomponenter)
-- Den aktuella statusen när Microsoft Managed Desktop Operations undersöker och åtgärdar problemet
+    - Okända (icke-Microsoft-komponenter)
+    - Driv rutin (ljud, grafik eller andra driv rutiner)
+    - Produktivitet (slack, G-sviter, Microsoft Office och tillägg och tillägg, Team)
+    - Media (bild-, musik-eller videoappar
+    - Säkerhet (Windows säkerhets komponenter)
+- Den aktuella statusen som Microsoft Managed Desktop-operationer undersöker och åtgärdar problemet
 

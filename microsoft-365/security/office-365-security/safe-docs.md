@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om Safe-dokument i Microsoft 365 E5 eller Microsoft 365 E5 Security.
-ms.openlocfilehash: cd689099fc6a6caa1e0e649c3f152f1de123bf12
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 8918c7da26a60c7cfd64b7148d0added82cc6642
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827475"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949460"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Säkra dokument i Microsoft 365 E5
 
@@ -34,14 +34,16 @@ Säkra dokument är en funktion i Microsoft 365 E5-eller Microsoft 365 E5-säker
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
+- Mer information om 
+
 - Du måste tilldelas behörigheter innan du kan utföra procedurerna i det här avsnittet. För att aktivera och konfigurera säkra dokument måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** . Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="how-does-microsoft-handle-your-data"></a>Hur hanterar Microsoft dina data?
 
 För att skydda dig skickar säkra dokument filer till [Microsoft Defender Avancerat skydd för hotet](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) för analys.
 
-- Information om hur Microsoft Defender Avancerat skydd hanterar dina data finns [här](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
-- Utöver rikt linjerna ovan behålls inte filer som skickats av säkra dokument i Defender efter den tid som krävs för analys, vilket normalt är mindre än 24 timmar
+- Information om hur Microsoft Defender Avancerat skydd hanterar dina data finns [här](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
+- Utöver rikt linjerna ovan behålls inte filer som skickats av säkra dokument i Defender efter den tid som krävs för analys, vilket normalt är mindre än 24 timmar.
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Använda säkerhets & Compliance Center för att konfigurera betrodda dokument
 

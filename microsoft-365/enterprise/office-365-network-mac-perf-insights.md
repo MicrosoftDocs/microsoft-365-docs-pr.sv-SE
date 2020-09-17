@@ -14,26 +14,32 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 nätverks insikter (för hands version)
-ms.openlocfilehash: b30af89d480383fdc9011d24409e3b418339c70b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a9d4dbde112c9b6c74e340824c63ce2b9749e80e
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694603"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948522"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 nätverks insikter (för hands version)
 
-**Nätverks insikter** är real tids värden som samlas från din Microsoft 365-klient organisation och kan bara visas av administrativa användare i din klient organisation. Insikter visas i administrations centret för Microsoft 365 på <https://portal.microsoft.com/adminportal/home#/networkperformance> .
+**Nätverks insikter** är prestanda värden som samlas från din Microsoft 365-klient organisation och kan bara visas av administrativa användare i din klient organisation. Insikter visas i administrations centret för Microsoft 365 på <https://portal.microsoft.com/adminportal/home#/networkperformance> .
 
 Insikter är avsedda att hjälpa dig att utforma nätverks gränser för dina Office-platser. Varje Insight ger direkt information om prestanda egenskaper för ett specifikt gemensamt problem för varje geografisk plats där användare kan komma åt din klient organisation.
 
-Det finns fem specifika nätverks insikter som kan visas för varje Office-plats:
+Det finns sex specifika nätverks insikter som kan visas för varje Office-plats:
 
 - [Utgående nätverks utgångar](#backhauled-network-egress)
 - [Bättre prestanda upptäckt för kunder nära dig](#better-performance-detected-for-customers-near-you)
 - [Användning av en icke optimal Exchange Online-onlinetjänst](#use-of-a-non-optimal-exchange-online-service-front-door)
 - [Användning av en icke-optimal SharePoint Online-onlinetjänst](#use-of-a-non-optimal-sharepoint-online-service-front-door)
 - [Liten nedladdnings hastighet från SharePoint-startdörren](#low-download-speed-from-sharepoint-front-door)
+- [Kina-användarens optimala nätverks utgång](#china-user-optimal-network-egress)
+
+Det finns två nätverks insikter för klient organisations nivå som kan visas för klient organisationen. Dessa visas också på producvitivy resultat sidor:
+
+- [Exchange-sampel som påverkas av anslutnings problem](#exchange-sampled-connections-impacted-by-connectivity-issues)
+- [SharePoint-sampel som påverkas av anslutnings problem](#sharepoint-sampled-connections-impacted-by-connectivity-issues)
 
 >[!IMPORTANT]
 >Nätverks insikter, prestanda rekommendationer och utvärderingar i administrations centret för Microsoft 365 är för närvarande förhands gransknings status och är bara tillgänglig för Microsoft 365-klient organisationer som har registrerats i funktionen för förhands granskning.
@@ -129,7 +135,7 @@ Denna inblick visas om din organisation har användare i Kina som ansluter till 
 Om din organisation har en privat WAN-anslutning rekommenderar vi att du konfigurerar nätverks WAN-kretsen från din Office-plats i Kina som har nätverks täckning på Internet på någon av följande platser:
 
 - Hongkong
-- Japan
+- Japan 
 - Taiwan
 - Sydkorea
 - Singapore
@@ -140,6 +146,30 @@ Internet upphör längre bort från användare än de här platserna minskar pre
 ### <a name="what-should-i-do"></a>Vad ska jag göra?
 
 Mer information om hur du minskar prestanda problem som är relaterade till den här inblicken finns i [Office 365 global Performance Optimization för användare i Kina](microsoft-365-networking-china.md).
+
+## <a name="exchange-sampled-connections-impacted-by-connectivity-issues"></a>Exchange-sampel som påverkas av anslutnings problem
+
+Denna inblick visar när 50% eller fler av de uppkopplings bara förbindelserna påverkas. Effekten definieras av Exchange utvärdering som unders tiger 60% för varje prov.
+
+### <a name="what-does-this-mean"></a>Vad innebär detta?
+
+Det är en indikation på att de flesta av användarna troligt vis drabbas av problem med att Outlook ansluter till Exchange Online. Procent andelen av proverna representerar procent av användare som visar under 60 punkter.  
+
+### <a name="what-should-i-do"></a>Vad ska jag göra?
+
+Aktivera synligheten för nätverks anslutningar för Office om du inte redan har gjort det. Du vill identifiera vilka kontor som är impactred av dåligt ansluten till nätverket som påverkar Exchange och hitta olika sätt att förbättra nätverks behållning hos alla som ansluter användarna till Microsofts nätverk.
+
+## <a name="sharepoint-sampled-connections-impacted-by-connectivity-issues"></a>SharePoint-sampel som påverkas av anslutnings problem
+
+Denna inblick visar när 50% eller fler av de uppkopplings bara förbindelserna påverkas. Effekten definieras av SharePoint-utvärderingen under 40% för varje prov.
+
+### <a name="what-does-this-mean"></a>Vad innebär detta?
+
+Det är en indikation på att de flesta av användarna sannolikt har problem med användar miljön med SharePoint och OneDrive. Procent andelen av proverna representerar procent av användare som visar under 40 punkter.  
+
+### <a name="what-should-i-do"></a>Vad ska jag göra?
+
+Aktivera synligheten för nätverks anslutningar för Office om du inte redan har gjort det. Du vill identifiera vilka kontor som är impactred av dåligt nätverksanslutna anslutningar som påverkar SharePoint och hittar olika sätt att förbättra nätverks behållning hos alla som ansluter användarna till Microsofts nätverk.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

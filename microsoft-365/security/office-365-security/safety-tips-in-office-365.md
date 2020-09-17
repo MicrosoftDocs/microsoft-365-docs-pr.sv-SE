@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig mer om hur EOP och Office 365 skyddar dig mot skräp post, nätfiske och dataexekveringsskydd genom att lägga till ett säkerhets tips längst upp i e-postmeddelandena.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e13e9cce325dfd3f8312c1d68459ab3c423c1fbb
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: b4bcfd2bf05f2f5ae7a51fbc2488cb1aa6e7d2c9
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827487"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949638"
 ---
 # <a name="safety-tips-in-email-messages"></a>Säkerhetstips i e-postmeddelanden
 
@@ -38,12 +38,6 @@ Säkerhets tipset – ett färgkodat meddelande – varnar dig om potentiellt sk
     ![Skärm bild som visar ett rött säkerhets tips.](../../media/5078a0be-e556-44a1-b169-09d780d26898.png)
 
     Ett rött säkerhets tips i ett e-postmeddelande betyder att meddelandet du fick innehåller något misstänkt, till exempel ett phishing-bedrägeri. Vi rekommenderar att du tar bort e-postmeddelandet från inkorgen utan att öppna det.
-
-- Skräp post (gult säkerhets tips).
-
-    ![Skärm bild som visar ett gult säkerhets tips.](../../media/793c9265-ea44-48fd-a98f-804fadd4163b.png)
-
-    Ett gult säkerhets tips i e-post betyder att meddelandet har marker ATS som skräp post. Om du inte känner igen och litar på meddelandets avsändare kan du inte ladda ned bifogade filer eller bilder och inte klicka på några länkar i meddelandet. I Outlook på webben kan du klicka på **det är inte skräp** post i det gula fältet i en skräppost för att flytta meddelandet till Inkorgen. Om det gula säkerhets tipset visas i ett meddelande som har levererats till din inkorg beror det förmodligen på att du har inaktiverat flyttning av skräp post till mappen skräp post.
 
 - Säker e-post (grönt säkerhets tips).
 

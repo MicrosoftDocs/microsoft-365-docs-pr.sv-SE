@@ -13,18 +13,18 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Ger en introduktion till komponenterna, planer och distributionssökvägar för Microsoft 365 för företag.
-ms.openlocfilehash: 55c7ca87d307fc9891d9967029f15e25414d7c18
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1a7c0cbb339ae0023264fbafb39e9b8682e98af2
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686350"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775189"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Översikt över Microsoft 365 för företag
 
-Microsoft 365 för företag är en komplett och intelligent lösning som gör att alla kan samarbeta och arbeta tillsammans på ett säkert sätt. 
+Microsoft 365 för företag är en komplett och intelligent lösning som gör att alla kan samarbeta och arbeta tillsammans på ett säkert sätt.
 
-Microsoft 365 för Enterprise, som är utformat för stora organisationer, kan även användas för medelstora och små företag som behöver de mest avancerade funktionerna för säkerhet och produktivitet. 
+Microsoft 365 för Enterprise, som är utformat för stora organisationer men kan även användas för medelstora och små företag som behöver de mest avancerade funktionerna för säkerhet och produktivitet.
 
 ## <a name="components"></a>Komponenter
 
@@ -33,8 +33,8 @@ Microsoft 365 för företag består av:
 | Tjänster | Beskrivning |
 |:-------|:-----|
 | Lokala och molnbaserade app och produktivitetstjänster | Innehåller både Microsoft 365-appar för företag, de senaste Office-app för PC-och Mac (till exempel Word, Excel, PowerPoint, Outlook och andra) samt en komplett uppsättning onlinetjänster för e-post, fillagring och samarbete, möten och mycket mer. |
-| Windows 10 Enterprise | Tillgodoser behovet av både stora och medelstora organisationer, som ger användarna en mer produktiv och säker version av Windows och IT-personal med omfattande distribution, enhets-och apphantering. |
-| Enhetshantering och avancerade säkerhetstjänster | Innehåller Microsoft Intune, som är en molnbaserad tjänst för Enterprise Mobility Management (EMM) som gör det lättare för personalen att arbeta produktivt och skydda din organisationsdata. |
+| Windows 10 Enterprise | Möter kraven för både stora och medelstora organisationer. Det är den mest produktiva och säkra versionen av Windows för användare. För IT-tekniker tillhandahåller det även omfattande hantering av installationer, enheter och appar. |
+| Enhetshantering och avancerade säkerhetstjänster | Innehåller Microsoft Intune, som är en molnbaserad tjänst för Enterprise Mobility Management som gör det lättare för personalen att arbeta produktivt och skydda din organisationsdata. |
 |||
 
 ## <a name="plans"></a>Planer
@@ -43,9 +43,9 @@ Microsoft 365 för företag finns i tre planer.
 
 | Plannamn | Kapaciteter |
 |:-------|:-----|
-| E3 | Kom åt kärnprodukter och funktioner i Microsoft 365 för att förbättra produktiviteten på arbetsplatsen och förbättra innovationen på ett säkert sätt. |
-| E5 | Få tillgång till de senaste produkterna och funktionerna i Microsoft 365, inklusive verktyg för avancerat hotskydd, säkerhet och samarbete. Innehåller alla E3:s-funktioner samt avancerade verktyg för säkerhet, röst och dataanalys. |
-| F3 | Kommunicera med dina medarbetare i frontlinjen via syftesbyggda verktyg och resurser som gör det möjligt för dem att fungera på bästa sätt. |
+| E3 | Kom åt Microsoft 365-kärnprodukter och funktioner för att förbättra produktiviteten på arbetsplatsen och förbättra innovationen på ett säkert sätt. |
+| E5 | Få tillgång till Microsoft 365 senaste produkter och funktioner. Här ingår avancerade hotskydd, säkerhetsverktyg och samarbetsverktyg. Det här abbonemanget Innehåller alla E3:s-funktioner samt avancerade verktyg för säkerhet, röst och dataanalys. |
+| F3 | Kommunicera med dina medarbetare i frontlinjen via syftesbyggda verktyg och resurser som de kan använda för att göra det möjligt för dem att fungera på bästa sätt. |
 |||
 
 Om du har Microsoft 365 E3 kan du även skaffa följande tillägg:
@@ -55,7 +55,7 @@ Om du har Microsoft 365 E3 kan du även skaffa följande tillägg:
 - [Microsoft 365 E5 Compliance](https://www.microsoft.com/microsoft-365/business/e5-compliance)
 - Microsoft 365 E5 Insider Risk
 
-Dessa erbjudanden innehåller ytterligare funktioner som ingår i Microsoft 365 E5.
+Microsoft 365 E3-användare kan använda de här tilläggen för att dra nytta av några av de ytterligare funktionerna som Microsoft 365 E5 inkluderar.
 
 Mer information finns i [Funktioner och kapaciteter för varje plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
 
@@ -63,14 +63,14 @@ Mer information finns i [Funktioner och kapaciteter för varje plan](https://www
 
 [Affischen som visar Microsoft 365 för företag](../downloads/Microsoft365Enterprise.pdf) är en central plats där du kan se:
 
-- Fördelarna med Microsoft 365 för företag och hur app och tjänster mappas till värdepelare
-- Microsoft 365 för företagsplaner och vilka komponenter de innehåller 
-- De viktigaste komponenterna i den moderna arbetsplatsen, som Microsoft 365 för företag gör det möjligt
-- [Microsoft 365 Produktivitetsbibliotek](https://www.microsoft.com/microsoft-365/success/) och representativa scenarier för vissa vanliga organisationsavdelningar
+- Fördelarna med Microsoft 365 för företag och hur app och tjänster mappas till värdepelare.
+- Microsoft 365 för företagsplaner och vilka komponenter de innehåller.
+- De viktigaste komponenterna i Microsoft modern arbetsplatsen, som Microsoft 365 för företag gör det möjligt.
+- [Microsoft 365 Produktivitetsbibliotek](https://www.microsoft.com/microsoft-365/success/) och representativa scenarier för vissa vanliga organisationsavdelningar.
 
 [![Bild för Microsoft 365 för företag (affisch)](../media/microsoft-365-overview/m365e-poster.png)](../downloads/Microsoft365Enterprise.pdf)
 
-Klicka [här](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365Enterprise.pdf) om du vill ladda ned en kopia av affischen.
+Du kan också [ladda ned en kopia av affischen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365Enterprise.pdf).
 
 
 ## <a name="transition-your-entire-organization"></a>En övergång för hela organisationen
@@ -79,7 +79,7 @@ Om du vill få en bättre bild av hur du kan flytta hela organisationen till pro
 
 [![Bild på affischen för övergång till Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
 
-Med den här affischen på två sidor kan du snabbt inventera din befintliga infrastruktur och få vägledning och flytta till motsvarande produkt eller tjänst i Microsoft 365 för företag. Den innehåller Windows- och Office-produkter samt andra infrastruktur- och säkerhetselement, som exempelvis enhetshantering, identitet, information och skydd mot hot.
+Med den här affischen på två sidor kan du snabbt inventera din befintliga infrastruktur. Det hjälper dig att hitta vägledning och att gå till motsvarande produkt eller tjänst i Microsoft 365 för företag. Den innehåller Windows- och Office-produkter samt andra infrastruktur- och säkerhetselement, som exempelvis enhetshantering, identitet, information och skydd mot hot.
 
 Du kan också [ladda ner denna affisch](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/transition-org-to-m365.pdf) och skriva ut den i formaten Letter, Legal och tabloid (11 x 17).
 
@@ -106,25 +106,25 @@ Du kan också [ladda ner denna affisch](https://github.com/MicrosoftDocs/microso
 
 Det finns tre sätt att distribuera produkter, funktioner och komponenter i Microsoft 365 för företag:
 
-1. I samarbete med FastTrack
+- I samarbete med FastTrack:
   
    Med FastTrack hjälper Microsoft-tekniker dig att flytta till molnet i din egen takt. Se [FastTrack för Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
   
-2. Med hjälp av Microsoft Consulting Services eller en [Microsoft-partner](https://partner.microsoft.com/).
+- Med hjälp av Microsoft Consulting Services eller en [Microsoft-partner](https://partner.microsoft.com/):
 
    Konsulter kan analysera din nuvarande infrastruktur och hjälpa dig att utveckla en plan för att införliva all programvara och alla tjänster från Microsoft 365 för företag..
 
-3. Gör det själv
+- Gör det själv:
 
    Börja med [nätverksöversikt](networking-roadmap-microsoft-365.md)för att bygga ut infrastruktur- och produktivitetsarbetsbelastningar. 
 
-Se hur [Contoso Corporation](contoso-overview.md), en fiktiv men representativ multinationell organisation, har distribuerat Microsoft 365 för företag.
+En fiktiv men representativ multinationell organisation, har distribuerat Microsoft 365 för företag., se [Contoso Corporation](contoso-overview.md).
 
 ## <a name="additional-microsoft-365-products"></a>Ytterligare Microsoft 365-produkter
 
 - [Microsoft 365 Business Premium](https://docs.microsoft.com/microsoft-365/business/)
  
-  Samla de bästa produktivitets- och samarbetsfunktionerna med lösningar för enhetshantering och säkerhet för att skydda affärsdata för små och medelstora företag (SMB).
+  Samla de bästa produktivitets- och samarbetsfunktionerna med lösningar för enhetshantering och säkerhet för att skydda affärsdata för små och medelstora företag.
 
 - [Microsoft 365 Education](https://docs.microsoft.com/education)
  
@@ -138,7 +138,7 @@ Se hur [Contoso Corporation](contoso-overview.md), en fiktiv men representativ m
 
 ![Börja med Microsoft 365 Fundamentals.](../media/microsoft-365-overview/m365-fundamentals.svg)
 
-Utbilda dig och arbeta för att bli certifierad Microsoft 365. Börja med [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+Om du vill lära dig mer om Microsoft 365 och att arbeta mot en Microsoft 365-certifiering kan du börja med [Microsoft 365 Certified: Fundament](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
 
 
 ## <a name="see-also"></a>Se även

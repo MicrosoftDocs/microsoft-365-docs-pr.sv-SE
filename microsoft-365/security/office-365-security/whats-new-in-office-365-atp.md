@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/27/2020
+ms.date: 09/10/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 2e6638480ec3a687b1bed9f2a176b6bf21278ef2
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 1aa5d2b59bf1f07c0a74ee7381cbefdb2b5c7506
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308385"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949426"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nyheter i Office 365 ATP
 
@@ -40,29 +40,29 @@ Den här artikeln innehåller de nya funktionerna i den senaste versionen av Off
 
 - [Kontrol lera dina policyer med hjälp av Configuration Analyzer](configuration-analyzer-for-security-policies.md)
 - [Åsidosätt filter manuellt verdicts med listan Tillåt/blockera klient organisation](tenant-allow-block-list.md)
-- [Utökade funktioner i Threat Explorer, inklusive Top riktade användare, transport regler och kopplingar](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)
+- [Utökade funktioner i Threat Explorer, inklusive Top riktade användare, transport regler och anslutningar](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP-abonnemang 2)
 - Visa åsidosätter information i [Threat Explorer](threat-explorer.md) (e-post tillåts/blockerades av innehavaren/användar policyn)
-- Visa URL-hot i [Threat Explorer](threat-explorer.md) (skadlig program vara, Phish, spam eller ingen)
+- Visa URL-hot i [Threat Explorer](threat-explorer.md) (skadlig program vara, Phish, spam eller ingen) 
 
 ## <a name="julyaugust-2020"></a>Juli 2020 
 
-- [Upplev de förbättrade jakt funktionerna](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
-- [Använd de rekommenderade inställningarna med förvalda säkerhets principer](preset-security-policies.md)
+- [Upplev de förbättrade jakt funktionerna](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections) (Office 365 ATP-abonnemang 1 eller abonnemang 2)
+- [Använd de rekommenderade inställningarna med förvalda säkerhets principer](preset-security-policies.md) 
 
 ## <a name="marchapril-2020"></a>Mars 2020
 
-- Möjligheten att [adressera kompromissade användar konton med automatisk undersökning och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) är nu allmänt tillgänglig.
+- Möjligheten att [adressera kompromissade användar konton med automatisk undersökning och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) är nu allmänt tillgänglig. (Office 365 ATP-abonnemang 2)
 
 ## <a name="januaryfebruary-2020"></a>Januari 2020
 
-- [Allmän tillgänglighet för kampanjmallar i Office 365 ATP](campaigns.md)
-- Förbättringar av [Threat Explorer](threat-explorer.md) som gör det möjligt för säkerhets åtgärder att söka och filtrera på flera fält när du [undersöker e-post](investigate-malicious-email-that-was-delivered.md):
+- [Allmän tillgänglighet för kampanjmallar i Office 365 ATP](campaigns.md) (Office 365 ATP-abonnemang 2)
+- Förbättringar av [Threat Explorer](threat-explorer.md) som gör det möjligt för säkerhets åtgärder att söka och filtrera på flera fält när du [undersöker e-post](investigate-malicious-email-that-was-delivered.md): (Office 365 ATP-abonnemang 2)
     - Leverans plats och särskilda åtgärder
     - Riktning (inkommande, utgående eller inom organisationen)
     - Avancerade icke-filter (det här är avancerade filtrerings alternativ som inte innehåller, inkluderar inte, etc.)
     - Detaljerade tids filter (dag, timme, halvtimme) 
 
-- Widgeten **incidenter** är nu widgeten **Åtgärds Center** . (Om du vill visa dina säkerhetswidgetar kan du gå till **Threat Management**  >  i säkerhets & efterlevnad **Granska**.)
+- Widgeten **incidenter** är nu widgeten **Åtgärds Center** . (Om du vill visa dina säkerhetswidgetar kan du gå till **Threat Management**  >  i säkerhets & efterlevnad **Granska**.) (Office 365 ATP-abonnemang 2)
 
 - [Säkra dokument i Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(för hands version)**
 
@@ -70,7 +70,7 @@ Den här artikeln innehåller de nya funktionerna i den senaste versionen av Off
 
 - [Exportera URL Klicka på data för offline-analys](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP-abonnemang 1 eller abonnemang 2)
 
-- [Använda kampanjmallar i Office 365 ATP (för**hands version**)](campaigns.md)
+- [Använda kampanjmallar i Office 365 ATP (för**hands version**)](campaigns.md) (Office 365 ATP-abonnemang 2)
 
 ## <a name="november-2019"></a>November 2019
 

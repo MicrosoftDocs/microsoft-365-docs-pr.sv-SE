@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om de anti-nätfiske-principer som är tillgängliga i Exchange Online Protection (EOP) och Office 365 Avancerat skydd (Office 365 ATP).
-ms.openlocfilehash: a68baf8f2598b8ca0cd13e45d18919ecfdccdacc
-ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
+ms.openlocfilehash: 06307efdc1df03d918e7f0b48c42f6e8ecb1dd79
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47407934"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950610"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-nätfiske-principer i Microsoft 365
 
@@ -188,6 +188,9 @@ Följande inställningar för personifiering är bara tillgängliga i principer 
   - **Personifierade användare**: från-adressen innehåller en skyddad användare.
   - **Personifierade domäner**: från-adressen innehåller en skyddad domän.
   - **Ovanliga tecken**: från-adressen innehåller ovanliga tecken uppsättningar (till exempel matematiska symboler och text eller en blandning av versaler och gemener) i en skyddad avsändare eller domän.
+
+  > [!NOTE]
+  > Även när säkerhets tipset för personifiering är inaktiverat kan du använda en regel för e-postflöde (kallas även en transport regel) för att lägga till en meddelande rubrik med namnet **X-MS-Exchange-EnableFirstContactSafetyTip** . Särskilda säkerhets tips visas som meddelar mottagarna att de ofta inte får e-post från avsändaren eller i de fall då mottagaren får ett e-postmeddelande för första gången från avsändaren.
 
 - **Post låda**: aktiverar eller inaktiverar artificiell intelligens (AI) som bestämmer användarnas e-postmönster med deras vanliga kontakter. Den här inställningen hjälper AI-åtskillnaden mellan legitim och falsk e-post från de kontakterna. Post låda-intelligens är bara tillgängligt för Exchange Online-postlådor.
 
