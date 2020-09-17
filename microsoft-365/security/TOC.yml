@@ -7,21 +7,6 @@
           href: top-security-tasks-for-remote-work.md
         - name: Microsoft 365-säkerhet för beslutsfattare
           href: Microsoft-365-security-for-bdm.md
-        - name: Workshop för utbildning av IT-säkerhetsdirektörer (CISO)
-          href: ./office-365-security/ciso-workshop.md
-          items:
-            - name: Modul 1 – Information om Microsoft och cybersäkerhet
-              href: ./office-365-security/ciso-workshop-module-1.md
-            - name: Modul 2 – Säkerhetshantering
-              href: ./office-365-security/ciso-workshop-module-2.md
-            - name: Modul 3 – Identitet och användaråtkomst med noll förtroende
-              href: ./office-365-security/ciso-workshop-module-3.md
-            - name: 'Modul 4a – Strategi för hotskydd, del I'
-              href: ./office-365-security/ciso-workshop-module-4a.md
-            - name: 'Modul 4b – Strategi för hotskydd, del II'
-              href: ./office-365-security/ciso-workshop-module-4b.md
-            - name: Modul 5 – Informationsskydd
-              href: ./office-365-security/ciso-workshop-module-5.md
     - name: Konfigurationer av identiteter och enhetsåtkomst
       href: ../enterprise/microsoft-365-policies-configurations.md
       items:
@@ -87,7 +72,7 @@
               href: mtp/generate-test-alert.md
         - name: Guider med anvisningar
           items:
-            - name: Skapa en utvärderingslaboratoriemiljö
+            - name: Skapa en utvärderings- eller pilotlaboratoriemiljö
               href: mtp/mtp-evaluation.md
             - name: Distribuera tjänster som stöds
               href: mtp/deploy-supported-services.md
@@ -219,22 +204,62 @@
                   href: mtp/monitor-devices.md
                 - name: Appövervakning och rapportering
                   href: mtp/monitor-apps.md
+            - name: 'API:er'
+              items: null
+        - name: Referens
+          items:
             - name: Behörigheter och inställningar
               items:
                 - name: Hantera åtkomst
                   href: mtp/mtp-permissions.md
                 - name: Ange tidszon
                   href: mtp/mtp-time-zone.md
-            - name: Visa enhetsprofiler
-              href: mtp/device-profile.md
-            - name: Ge feedback
-              href: mtp/feedback.md
-            - name: Skapa ärenden och uppgifter i ServiceNow
+                - name: Visa enhetsprofiler
+                  href: mtp/device-profile.md
+                - name: Ge feedback
+                  href: mtp/feedback.md
+                - name: Skapa ärenden och uppgifter i ServiceNow
+                  items:
+                    - name: Översikt över ServiceNow-integrering
+                      href: ./mtp/tickets.md
+                    - name: ServiceNow-ärenden i säkerhetscentret
+                      href: ./mtp/tickets-security-center.md
+            - name: 'Microsoft Hotskydds-API:er (förhandsvisning)'
               items:
-                - name: Översikt över ServiceNow-integrering
-                  href: ./mtp/tickets.md
-                - name: ServiceNow-ärenden i säkerhetscentret
-                  href: ./mtp/tickets-security-center.md
+                - name: 'Översikt över API:er för Microsoft Hotskydd (förhandsversion)'
+                  href: mtp/api-overview.md
+                - name: 'Komma igång med Microsoft Hotskydd API:er (förhandsversion)'
+                  items:
+                    - name: API-licens för Microsoft Hotskydd och användnings villkor
+                      href: mtp/api-terms.md
+                    - name: 'Använda API:er för Microsoft Hotskydd'
+                      href: mtp/api-access.md
+                    - name: Hello World exempel
+                      href: mtp/api-hello-world.md
+                    - name: Få åtkomst med program kontext
+                      href: mtp/api-create-app-web.md
+                    - name: Få åtkomst med användarkontext
+                      href: mtp/api-create-app-user-context.md
+                    - name: Få åtkomst till partner program
+                      href: mtp/api-partner-access.md
+                    - name: Andra API-resurser
+                      href: mtp/api-articles.md
+                - name: 'Microsoft Hotskydds-API: er och schema (förhandsvisning)'
+                  items:
+                    - name: 'API: er som stöds av Microsoft Hotskydd'
+                      href: mtp/api-supported.md
+                    - name: Vanliga REST API-felkoder
+                      href: mtp/api-error-codes.md
+                    - name: Advanced jakt-API
+                      href: mtp/api-advanced-hunting.md
+                    - name: 'API:er för tillbud'
+                      items:
+                        - name: Metod och egenskaper för tillbud
+                          href: mtp/api-incident.md
+                        - name: Lista incidenter
+                          href: mtp/api-list-incidents.md
+                        - name: Uppdatera incident
+                          href: mtp/api-update-incidents.md
     - name: Office 365-säkerhet
       items:
         - name: Komma igång
