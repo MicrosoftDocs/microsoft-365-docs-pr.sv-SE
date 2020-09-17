@@ -110,20 +110,30 @@
               items:
                 - name: Översikt över avancerad jakt
                   href: mtp/advanced-hunting-overview.md
-                - name: Lär dig frågespråket
-                  href: mtp/advanced-hunting-query-language.md
-                - name: Använda metodtips för frågor
-                  href: mtp/advanced-hunting-best-practices.md
+                - name: 'Lära, träna och få exempel'
+                  items:
+                    - name: Lär dig frågespråket
+                      href: mtp/advanced-hunting-query-language.md
+                    - name: Få expertutbildning
+                      href: mtp/advanced-hunting-expert-training.md
+                    - name: Använda delade frågor
+                      href: mtp/advanced-hunting-shared-queries.md
+                    - name: 'Jaga över olika enheter, e-postmeddelanden, appar och identiteter'
+                      href: mtp/advanced-hunting-query-emails-devices.md
                 - name: Arbeta med frågeresultat
                   href: mtp/advanced-hunting-query-results.md
                 - name: Utföra en åtgärd på frågeresultat
                   href: mtp/advanced-hunting-take-action.md
-                - name: Använda delade frågor
-                  href: mtp/advanced-hunting-shared-queries.md
-                - name: 'Jaga över olika enheter, e-postmeddelanden, appar och identiteter'
-                  href: mtp/advanced-hunting-query-emails-devices.md
                 - name: Gå på jakt
                   href: mtp/advanced-hunting-go-hunt.md
+                - name: Optimera och hantera fel
+                  items:
+                    - name: Använda metodtips för frågor
+                      href: mtp/advanced-hunting-best-practices.md
+                    - name: Hantera fel
+                      href: mtp/advanced-hunting-errors.md
+                    - name: Tjänstbegränsningar
+                      href: mtp/advanced-hunting-limits.md
                 - name: Utöka datatäckning
                   href: mtp/advanced-hunting-extend-data.md
                 - name: Dataschema
