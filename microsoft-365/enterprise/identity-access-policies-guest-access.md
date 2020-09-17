@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: a88fc5f46a6dafda72a24ba5e80587b24a216955
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: c61526139111885ec345bc4a4dd3cd6b147370e6
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546494"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950814"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Principer för att tillåta gäst-och extern B2B-åtkomst
 
@@ -55,7 +55,9 @@ Om du vill inkludera eller exkludera gäster och externa användare i principer 
 ### <a name="guests-vs-external-users"></a>Gäster kontra externa användare
 I Azure AD är gäst och externa användare desamma. Användar typen för båda dessa är gäster. Gäst användare är B2B-användare.
 
-Microsoft Teams skiljer sig mellan gäst användare och externa användare inom programmet, men dessa båda är båda B2B-användare vid autentisering. Mer information om Teams gäst och externa användare finns i [Aktivera gäst och extern åtkomst till Teams](teams-access-policies.md#enabling-guest-and-external-access-for-teams).
+Microsoft Teams skiljer mellan gäst användare och externa användare inom appen. Gäst användare har Azure AD B2B-konton och kan läggas till i Teams. Externa användare kan bara delta i samtal, chatt och möten. Mer information finns i [den här jämförelsen mellan gäst och externa användare för Teams](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
+
+Se [Policy rekommendationer för att skydda Teams, grupper och filer](teams-access-policies.md) för att få mer information om att skydda identitet och åtkomst till enheter för Teams
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>Kräv MFA alltid för gäst-och externa användare
 Den här principen ber dig registrera gäster för MFA i klient organisationen, oavsett om de är registrerade för MFA i sin hem klient organisation. När du får åtkomst till resurser i klient organisationen måste gäster och externa användare använda MFA för varje begäran. 

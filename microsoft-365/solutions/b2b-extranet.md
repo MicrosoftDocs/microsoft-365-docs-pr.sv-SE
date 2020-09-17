@@ -14,23 +14,29 @@ ms.collection:
 ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Lär dig hur du skapar en B2B extranätwebbplats eller team med hanterade gästanvändare från en partnerorganisation.
-ms.openlocfilehash: 4f8eb33ad9b41f552975d4158a61ec4cedcfa9cc
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+description: Lär dig hur du skapar en webbplats eller ett B2B-team med hanterade gäst användare från en partner organisation.
+ms.openlocfilehash: 83252241833f3dfe663cc70eae28a5df1214cce0
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526988"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949390"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Skapa ett B2B-extranät med hanterade gäster
 
-Du kan använda [Azure Active Directory Entitlement Management](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview) för att skapa ett B2B-extranät för att samarbeta med en partnerorganisation som använder Azure Active Directory. Detta gör det möjligt för användare att själv registrera sig på extranätswebbplatsen eller teamet och få åtkomst via ett arbetsflöde för godkännande.
+Du kan använda [Azure Active Directory-hanteringen](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview) för att skapa ett B2B-extra nät för att samar beta med en partner organisation som använder Azure Active Directory. Detta gör att användare själv kan registrera sig på extra nätet eller teamet och få åtkomst via ett arbets flöde för godkännande.
 
-Med den här metoden för att dela resurser för samarbete kan partnerorganisationen hjälpa till att underhålla och godkänna gästanvändarna på slutet, vilket minskar belastningen på IT-avdelningen och gör det möjligt för de mest bekanta med samarbetsavtalet att hantera användaråtkomst.
+Med den här metoden för att dela resurser för samarbete kan partner organisationen hjälpa till att underhålla och godkänna gäst användarna i sin slut, vilket minskar belastningen på IT-avdelningen och gör dem mest bekanta med samarbets avtalet för att hantera användar åtkomst.
 
-Den här artikeln går igenom stegen för att skapa ett paket med resurser (i det här fallet en webbplats eller ett team) som du kan dela med en partnerorganisation via en självbetjäningsregistreringsmodell. 
+Den här artikeln innehåller anvisningar för hur du skapar ett paket med resurser (i det här fallet en webbplats eller ett team) som du kan dela med en partner organisation via en självbetjänings registrerings modell. 
 
-Innan du börjar skapar du den webbplats eller det team som du vill dela med partnerorganisationen och aktiverar den för gästdelning. Mer information [finns i Samarbeta med gäster](collaborate-in-site.md) på en webbplats eller Samarbeta med gäster i ett [team.](collaborate-as-team.md) Vi rekommenderar också att du granskar [Skapa en säker gästdelningsmiljö](create-secure-guest-sharing-environment.md) för information om säkerhets- och efterlevnadsfunktioner som du kan använda för att underhålla dina styrningsprinciper när du samarbetar med gäster.
+Innan du börjar ska du skapa en webbplats eller ett team som du vill dela med partner organisationen och aktivera den för gäst delning. Se [samar beta med gäster på en webbplats](collaborate-in-site.md) eller [samar beta med gäster i ett team](collaborate-as-team.md) för mer information. Vi rekommenderar också att du går igenom [skapa en säker gäst delnings miljö](create-secure-guest-sharing-environment.md) för information om säkerhets-och efterföljandekrav som du kan använda för att hjälpa till att underhålla dina styrnings principer när du samarbetar med gäster.
+
+## <a name="license-requirements"></a>Licens krav
+
+För att använda den här funktionen krävs en Azure AD Premium P2-licens. 
+
+Specialiserade moln, till exempel Azure Germany och Azure Kina 21Vianet, är för närvarande inte tillgängliga för användning.
 
 ## <a name="video-demonstration"></a>Videodemonstration
 
@@ -38,90 +44,89 @@ Den här videon visar de procedurer som beskrivs i den här artikeln.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wKUj?autoplay=false]
 
-## <a name="connect-the-partner-organization"></a>Anslut partnerorganisationen
+## <a name="connect-the-partner-organization"></a>Ansluta partner organisationen
 
-För att kunna bjuda in gäster från en partnerorganisation måste du lägga till partnerns domän som en ansluten organisation i Azure Active Directory.
+För att kunna bjuda in gäster från en partner organisation måste du lägga till partners domän som ansluten organisation i Azure Active Directory.
 
-Så här lägger du till en ansluten organisation
-1. Klicka på **Identitetsstyrning**i [Azure Active Directory](https://aad.portal.azure.com).
-2. Klicka på **Anslutna organisationer**.
+Lägga till en ansluten organisation
+1. Klicka på **identitets styrning**i [Azure Active Directory](https://aad.portal.azure.com).
+2. Klicka på **anslutna organisationer**.
 4. Klicka på **Lägg till ansluten organisation**.
-5. Skriv ett namn och en beskrivning för organisationen och klicka sedan på **Nästa: Katalog + domän**.
+5. Ange ett namn och en beskrivning för organisationen och klicka sedan på **Nästa: Katalog + domän**.
 6. Klicka på **Lägg till katalog + domän**.
-7. Skriv domänen för den organisation som du vill ansluta och klicka sedan på **Lägg till**.
-8. Klicka på **Anslut**och sedan på **Nästa: Sponsorer.**
-9. Lägg till personer från din organisation eller organisationen som du ansluter till och som du vill godkänna åtkomst för gästanvändare.
-10. Klicka på **Nästa: Granska + Skapa**.
-11. Granska de inställningar som du har valt och klicka sedan på **Skapa**.
+7. Skriv domänen för den organisation som du vill ansluta till och klicka sedan på **Lägg till**.
+8. Klicka på **Anslut**och sedan på **Nästa: sponsorer**.
+9. Lägg till personer från din organisation eller den organisation som du ansluter till och som du vill godkänna åtkomst för gäst användare.
+10. Klicka på **Nästa: granska + skapa**.
+11. Granska de inställningar du har valt och klicka sedan på **skapa**.
 
-    ![Skärmbild av sidan anslutna organisationer i Azure Active Directory](../media/identity-governance-connected-organizations.png)
+    ![Skärm bild av sidan anslutna organisationer i Azure Active Directory](../media/identity-governance-connected-organizations.png)
 
-## <a name="choose-the-resources-to-share"></a>Välj de resurser som ska delas
+## <a name="choose-the-resources-to-share"></a>Välj vilka resurser du vill dela
 
-Det första steget i att välja resurser att dela med en partnerorganisation är att skapa en katalog som innehåller dem.
+Det första steget när du väljer resurser som du vill dela med en partner organisation är att skapa en katalog som innehåller dem.
 
-Så här skapar du en katalog
-1. Klicka på **Identitetsstyrning**i [Azure Active Directory](https://aad.portal.azure.com).
-2. Klicka på **Kataloger**.
-3. Klicka på **Ny katalog**.
-4. Skriv ett namn och en beskrivning för katalogen och se till att **Aktiverade** och **Aktiverade för externa användare** båda är inställda på **Ja**.
+Skapa en katalog
+1. Klicka på **identitets styrning**i [Azure Active Directory](https://aad.portal.azure.com).
+2. Klicka på **kataloger**.
+3. Klicka på **ny katalog**.
+4. Ange ett namn och en beskrivning för katalogen och kontrol lera att **aktiverat** och **aktiverat för externa användare** båda är inställda på **Ja**.
 5. Klicka på **Skapa**.
 
-   ![Skärmbild av katalogsidan i Azure Active Directory Identity Governance](../media/identity-governance-catalogs.png)
+   ![Skärm bild av sidan kataloger i Azure Active Directory Identity styrelse](../media/identity-governance-catalogs.png)
 
-När katalogen har skapats lägger du till den SharePoint-webbplats eller det SharePoint-team som du vill dela med partnerorganisationen.
+När du har skapat katalogen lägger du till den SharePoint-webbplats eller det team som du vill dela med partner organisationen.
 
-Så här lägger du till resurser i en katalog
-1. I Azure AD Identity Governance klickar du på **Kataloger**och sedan på den katalog där du vill lägga till resurser.
-2. Klicka på **Resurser** och sedan på **Lägg till resurser**.
-3. Markera de team eller SharePoint-webbplatser som du vill inkludera i extranätet och klicka sedan på **Lägg till**.
+Lägga till resurser i en katalog
+1. I Azure AD Identity styrelse klickar du på **kataloger**och sedan på den katalog där du vill lägga till resurser.
+2. Klicka på **resurser** och sedan på **Lägg till resurser**.
+3. Välj de team-eller SharePoint-webbplatser som du vill ta med i extra nätet och klicka sedan på **Lägg till**.
 
-   ![Skärmbild av sidan katalogresurser i Azure Active Directory Identity Governance](../media/identity-governance-catalog-resource.png)
+   ![Skärm bild av sidan katalog resurser i Azure Active Directory Identity styrelse](../media/identity-governance-catalog-resource.png)
 
-När du har definierat de resurser som du vill dela är nästa steg att skapa ett åtkomstpaket som definierar vilken typ av åtkomst som partneranvändare beviljas och godkännandeprocessen för nya partneranvändare som begär åtkomst.
+När du har angett de resurser som du vill dela är nästa steg att skapa ett Access-paket, som definierar den typ av åtkomst som partner användare beviljar och godkännande processen för nya partner användare som begär åtkomst.
 
-Så här skapar du ett åtkomstpaket
-1. I Azure AD Identity Governance klickar du på **Kataloger**och sedan på den katalog där du vill skapa ett åtkomstpaket.
-2. Klicka på **Access-paket**och sedan på **Nytt åtkomstpaket**.
-3. Skriv ett namn och en beskrivning för åtkomstpaketet och klicka sedan på **Nästa: Resursroller**.
-4. Välj de resurser från katalogen som du vill använda för extranätet.
-5. För varje resurs väljer du den användarroll som du vill bevilja gästanvändare som använder extranätet i kolumnen **Roll.**
-6. Klicka på **Nästa: Förfrågningar**.
-7. Under **Användare som kan begära åtkomst**väljer du För användare som inte finns i **katalogen**.
-8. Kontrollera att alternativet **Specifika anslutna organisationer** är markerat och klicka sedan på Lägg till **kataloger**.
-9. Välj den anslutna organisation som du lägger till tidigare och klicka sedan på **Välj**
-10. Under **Godkännande**väljer du **Ja** för **Kräv godkännande**.
-11. Under **Första godkännaren**väljer du en av sponsorerna som du har lagt till tidigare eller väljer en viss användare.
-12. Klicka på **Lägg till reservstöd** och välj en reserv godkännare.
+Så här skapar du ett Access-paket
+1. I Azure AD Identity styrelse klickar du på **kataloger**och sedan på den katalog där du vill skapa ett Access-paket.
+2. Klicka på **Access-paket**och sedan på **nytt Access-paket**.
+3. Ange ett namn och en beskrivning för Access-paketet och klicka sedan på **Nästa: resurs roller**.
+4. Välj de resurser från katalogen som du vill använda för extra nätet.
+5. För varje resurs, i kolumnen **Role** , väljer du den användar roll du vill ge gäst användarna som använder extra nätet.
+6. Klicka på **Nästa: förfrågningar**.
+7. Under **användare som kan begära åtkomst**väljer du **för användare som inte finns i katalogen**.
+8. Kontrol lera att alternativet **specifika anslutna organisationer** är markerat och klicka sedan på **Lägg till kataloger**.
+9. Välj den anslutna organisation du lägger till tidigare och klicka sedan på **Välj**
+10. Under **godkännande**väljer du **Ja** för att **begära godkännande**.
+11. Under den **första god kännaren**väljer du något av sponsorerna som du lade till tidigare eller väljer en specifik användare.
+12. Klicka på **Lägg till reserv** och välj en reserv god kännare.
 13. Under **Aktivera**väljer du **Ja**.
-14. Klicka på **Nästa: Livscykel**.
-15. Välj de inställningar för förfallodatum och åtkomstgranskning som du vill använda och klicka sedan på **Nästa: Granska + Skapa**.
-16. Granska inställningarna och klicka sedan på **Skapa**.
+14. Klicka på **Nästa: livs cykel**.
+15. Välj de inställningar för förfallo datum och åtkomst granskning du vill använda och klicka sedan på **Nästa: granska + skapa**.
+16. Granska inställningarna och klicka sedan på **skapa**.
 
-    ![Skärmbild av skärmen åtkomstpaket i Azure Active Directory Identity Governance](../media/identity-governance-access-packages.png)
+    ![Skärm bild av skärmen med åtkomst paket i Azure Active Directory-Identity styrelse](../media/identity-governance-access-packages.png)
 
-Om du samarbetar med en stor organisation kanske du vill dölja åtkomstpaketet. Om paketet är dolt ser användarna i partnerorganisationen inte paketet på portalen *Min Åtkomst.* I stället måste de skickas en direktlänk för att registrera sig för paketet. Om du döljer åtkomstpaketet kan du minska antalet olämpliga åtkomstbegäranden och kan också hjälpa till att hålla tillgängliga åtkomstpaket organiserade i partnerorganisationens portal.
+Om du samarbetar med en stor organisation kanske du vill dölja Access-paketet. Om paketet är dolt kommer användare i partner organisationen inte att se paketet på sin *åtkomst* -Portal. I stället måste de skicka en direkt länk för att kunna registrera sig för paketet. Om du döljer Access-paketet kan du minska antalet olämpliga åtkomst begär Anden och du kan även hålla tillgängliga paket organiserade i partner organisationens Portal.
 
-Så här ställer du in ett åtkomstpaket på dolda
-1. I Azure AD Identity Governance klickar du på **Åtkomstpaket**och sedan på ditt åtkomstpaket.
-2. Klicka på **Redigera**på sidan **Översikt.**
-3. Under **Egenskaper**väljer du **Ja** för **Dold**och klickar sedan på **Spara**.
+Så här anger du att ett Access-paket ska döljas
+1. I Azure AD Identity styrelse klickar du på **Access-paket**och sedan på ditt Access-paket.
+2. Klicka på **Redigera**på sidan **Översikt** .
+3. Under **Egenskaper**väljer du **Ja** för **dold**och klickar sedan på **Spara**.
 
-   ![Skärmbild av en redigera åtkomstpaketegenskaper skärm](../media/identity-governance-access-package-hidden.png)
+   ![Skärm bild av skärmen egenskaper för redigera Access-paket](../media/identity-governance-access-package-hidden.png)
 
-## <a name="invite-partner-users"></a>Bjud in partneranvändare
+## <a name="invite-partner-users"></a>Bjuda in partner användare
 
-Om du anger åtkomstpaketet till dolda måste du skicka en direktlänk till partnerorganisationen så att de kan begära åtkomst till din webbplats eller ditt team.
+Om du anger att Access-paketet ska döljas måste du skicka en direkt länk till partner organisationen så att de kan begära åtkomst till webbplatsen eller teamet.
 
-Så här hittar du länken till åtkomstportalen
-1. I Azure AD Identity Governance klickar du på **Åtkomstpaket**och sedan på ditt åtkomstpaket.
-2. Klicka på Kopiera **till urklippslänk** för **länken Min Access på**sidan **Översikt** .
+Så här hittar du Access Portal-länken
+1. I Azure AD Identity styrelse klickar du på **Access-paket**och sedan på ditt Access-paket.
+2. På sidan **Översikt** klickar du på **Kopiera till Urklipp** -länken för **länken My Access-portalen**.
 
-   ![Skärmbild av åtkomstpaketegenskaper med åtkomstportallänk](../media/identity-governance-access-portal-link.png)
+   ![Skärm bild av egenskaper för Access-paket med åtkomst Portal länk](../media/identity-governance-access-portal-link.png)
 
-När du har kopierat länken kan du dela den med din kontakt i partnerorganisationen och de kan skicka den till användarna i deras samarbetsteam.
+När du har kopierat länken kan du dela den med din kontakt i partner organisationen och de kan skicka den till användarna i samarbets gruppen.
 
 ## <a name="see-also"></a>Se även
 
 [Skapa en säker miljö för gästdelning](create-secure-guest-sharing-environment.md)
-

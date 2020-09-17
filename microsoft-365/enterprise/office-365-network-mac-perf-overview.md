@@ -1,5 +1,5 @@
 ---
-title: Rekommendationer för nätverks prestanda i Microsoft 365 Admin Center (för hands version)
+title: Nätverks anslutning i Microsoft 365 Admin Center (för hands version)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Översikt över nätverks anslutningar i Microsoft 365 Admin Center (för hands version)
-ms.openlocfilehash: 2f7e922f1e9abd68ebe51d26ef270760a7c446e2
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: f8eff2248fb7abce75c27f227a2c5e7ec7219046
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815249"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948425"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Nätverks anslutning i Microsoft 365 Admin Center (för hands version)
 
-Administrations centret för Microsoft 365 includesaggregated nu nätverks anslutnings mått som samlas in från din Microsoft 365-klient organisation och som endast kan visas av administrativa användare i klient organisationen. **Nätverks utvärderingar** och **nätverks insikter** visas i administrations centret för Microsoft 365 under **hälsa |. Anslutning**.
+Administrations centret för Microsoft 365 inkluderar nu sammansatta nätverks anslutnings mått som samlas in från din Microsoft 365-klient organisation och som bara kan visas av administrativa användare i din klient organisation. **Nätverks utvärderingar** och **nätverks insikter** visas i administrations centret för Microsoft 365 under **hälsa |. Anslutning**.
 
 ![Sidan nätverks prestanda](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
@@ -35,9 +35,9 @@ Det finns tre alternativ för att få nätverks utvärderingar från dina Office
 
 ### <a name="1-enable-windows-location-services"></a>1. Aktivera Windows plats tjänster
 
-För det här alternativet måste du ha minst två datorer som körs på varje Office-plats som stöder kraven. OneDrive för Windows version 19,232 eller senare måste vara installerat på varje dator. Mer information om OneDrive-versioner finns i [versions anteckningar för OneDrive](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Nätverks mått planeras för att läggas till i andra Office 365-klientprogram i nära framtid.
+För det här alternativet måste du ha minst två datorer som körs på varje Office-plats som stöder kraven. OneDrive för Windows version **19,232** eller senare måste vara installerat på varje dator. Mer information om OneDrive-versioner finns i [versions anteckningar för OneDrive](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Nätverks mått planeras för att läggas till i andra Office 365-klientprogram i nära framtid.
 
-Windows plats tjänst måste skickas på maskiner. Du kan testa detta genom att köra programmet **kartor** och hitta dig själv. Den kan aktive ras på en dator med **Inställningar**  ->  **Sekretess**  ->  **plats** där inställningen "Låt appar få åtkomst till din plats" måste vara aktive rad. Windows plats tjänst medgivande kan distribueras till datorer som använder MDM eller grup princip med inställningen _LetAppsAccessLocation_.
+Windows plats tjänst måste skickas på maskiner. Du kan testa detta genom att köra programmet **kartor** och hitta dig själv. Den kan aktive ras på en enskild dator med **Inställningar | Integritet | Plats** där inställningen _Låt appar få åtkomst till din plats_ måste vara aktive rad. Windows plats tjänst medgivande kan distribueras till datorer som använder MDM eller grup princip med inställningen _LetAppsAccessLocation_.
 
 Du behöver inte lägga till platser i administrations centret med den här metoden eftersom de automatiskt identifieras i plats upplösningen. Du kan inte Visa flera Office-platser i en stad med hjälp av Windows Location Services.
 
@@ -45,9 +45,9 @@ Datorerna bör ha Wi-Fi-nätverk i stället för en Ethernet-kabel. Maskiner med
 
 Mät exempel och Office-platser bör komma att visas i 24 timmar efter att dessa förutsättningar uppfylls.
 
-### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. Lägg till platser och ange information om LAN-Adressundernät
+### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. Lägg till platser och ange information om LAN-adressundernät
 
-För det här alternativet krävs varken Windows-Platstjänster eller Wi-Fi. Du behöver OneDrive för Windows version 20.161.0811.0001 eller senare installerat på varje commputer på platsen.
+För det här alternativet krävs varken Windows-Platstjänster eller Wi-Fi. Du behöver OneDrive för Windows version 20,161 eller senare installerat på varje dator på platsen.
 
 Du måste också lägga till platser på sidan Nätverks anslutning för administrations Center eller importera dem från en CSV-fil. Platserna som läggs till måste innehålla information om din Office LAN-undernät.
 
@@ -116,16 +116,16 @@ Fliken information på sidan Office-plats visar de specifika Mät resultaten som
 
 ![Plats-specifika uppgifter](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
 
-## <a name="csv-import-for-lan-subnet-office-locations"></a>CSV-import för LAN-Undertjänster Office-platser
+## <a name="csv-import-for-lan-subnet-office-locations"></a>CSV-import för LAN-undertjänster Office-platser
 
-För identifiering av ett Office-kontor måste du lägga till varje platsen i förväg. I stället för att lägga till enskilda Office-platser på fliken **platser** kan du importera dem från en CSV-fil. Du kanske kan skaffa dessa data från andra platser som du har lagrat, till exempel instrument panelen för samtals kvalitet eller Active Directory-webbplatser och-tjänster
+För identifiering av ett Office-kontor måste du lägga till varje plats i förväg. I stället för att lägga till enskilda Office-platser på fliken **platser** kan du importera dem från en CSV-fil. Du kanske kan skaffa dessa data från andra platser som du har lagrat, till exempel instrument panelen för samtals kvalitet eller Active Directory-webbplatser och-tjänster
 
 I CSV-filen är namn **staden märkt ort**och en manuellt tillagd Office-plats är märkt **plats**.
 
 1. I huvud _anslutningen till Microsoft 365_ -fönstret klickar du på fliken **platser** .
 1. Klicka på knappen **Importera** precis ovanför plats listan. Den utfällbara **Office-platsen** visas.
 
-   ![Fel meddelande i CSV-import](../media/m365-mac-perf/m365-mac-perf-import.png)
+   ![CSV-import](../media/m365-mac-perf/m365-mac-perf-import.png)
 
 1. Klicka på länken **Hämta aktuella Office-platser (. csv)** för att exportera den aktuella plats listan till en CSV-fil och spara den på din lokala hård disk. Då får du en korrekt formaterad CSV med kolumn rubriker som du kan lägga till platser i. Du kan lämna de befintliga exporterade platserna som de är. de dupliceras inte när du importerar den uppdaterade CSV-filen. Om du vill ändra adressen för en befintlig plats uppdateras den när du importerar CSV-filen. Du kan inte ändra adressen för en hittad stad.
 1. Öppna CSV-filen och Lägg till platserna genom att fylla i följande fält på en ny rad för varje plats som du vill lägga till. Lämna alla andra fält tomma; värden som du anger i andra fält kommer att ignoreras.
@@ -169,3 +169,5 @@ Avsluts platsen för Internet är den plats där nätverks trafiken avslutar dit
 [Microsoft 365 anslutnings test i M365 administrations Center (för hands version)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 nätverks anslutningar (för hands version)](office-365-network-mac-location-services.md)
+
+[Microsoft 365-testverktyg (för hands version)](office-365-network-mac-perf-onboarding-tool.md)

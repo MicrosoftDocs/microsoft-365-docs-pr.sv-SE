@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 8c4b136f30da0499b31102683f1a903e71813142
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 1512ba01f78d901177254fce86d0154e97e36496
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547234"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950795"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Vanliga principer för identitets- och enhetsåtkomst
 
@@ -35,6 +35,10 @@ Följande diagram illustrerar den rekommenderade uppsättningen principer. Det v
 
 [ ![ Vanliga principer för att konfigurera åtkomst till identiteter och enheter](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
  [se en större version av bilden](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+
+Här är en ensidig PDF-sammanfattning med länkar till enskilda principer:
+
+[![Bild av knapp för identitet och enhets skydd för Microsoft 365-åhörar kopia](../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br/>  [Visa som en PDF-fil](../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Ladda ned som PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)  
 
 I resten av den här artikeln beskrivs hur du konfigurerar dessa principer. 
 
@@ -374,7 +378,6 @@ Så här kräver du efterlevnad för alla enheter:
 
 ## <a name="next-step"></a>Nästa steg
 
-![Steg 3: principer för gäst-och externa användare](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)
-
+[![Steg 3: principer för gäst-och externa användare](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
 
 [Läs mer om policy rekommendationer för gäst-och externa användare](identity-access-policies-guest-access.md)

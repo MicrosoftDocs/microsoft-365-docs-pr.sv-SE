@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Lär dig hur du lägger till användare och tilldelar licenser till Microsoft 365 samtidigt.
 ms.date: 07/01/2020
-ms.openlocfilehash: 6745285600b6c5a62b4327d7174b2c249ff5276c
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 95f84ead009b7510699e467bf5f12bf32d8097d8
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307379"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948802"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Lägga till användare och tilldela licenser samtidigt
 
@@ -37,7 +37,7 @@ ms.locfileid: "47307379"
 
 ::: moniker-end
 
-Personerna i gruppen behöver ett användar konto innan de kan logga in och komma åt [Microsoft 365 för företag](https://go.microsoft.com/fwlink/?LinkID=519395). Det enklaste sättet att lägga till användar konton är att lägga till ett i taget i administrations centret för Microsoft 365. När du har gjort det här har användarna Microsoft 365-licenser, inloggnings uppgifter och Microsoft 365-postlådor.
+Personerna i gruppen behöver ett användar konto innan de kan logga in och komma åt [Microsoft 365 för företag](https://www.microsoft.com/microsoft-365/business). Det enklaste sättet att lägga till användar konton är att lägga till ett i taget i administrations centret för Microsoft 365. När du har gjort det här har användarna Microsoft 365-licenser, inloggnings uppgifter och Microsoft 365-postlådor.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
@@ -54,7 +54,7 @@ Du måste vara global, licens eller en användar administratör för att lägga 
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Gå till administrationscentret på <https://admin.microsoft.com>.
 2. Gå till **användare** > **aktiva användare**och välj **Lägg till en användare**.
 3. Fyll i grundläggande användar information i fönstret **Konfigurera grunderna** och välj **Nästa**.
     - **Namn** Fyll i för-och efter namn, visnings namn och användar namn.
@@ -70,7 +70,7 @@ Du måste vara global, licens eller en användar administratör för att lägga 
 
 ::: moniker range="o365-germany"
 
-1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
+1. Gå till administrationscentret på <https://portal.office.de/adminportal>.
 2. Gå till **användare** > **aktiva användare**och välj **Lägg till en användare**.
 3. Fyll i följande information i fönstret **ny användare** . När du är klar väljer du **Lägg till**.
     - **Namn** Fylla i förnamn, efternamn, visningsnamn och användarnamn.
@@ -84,7 +84,7 @@ Du måste vara global, licens eller en användar administratör för att lägga 
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
+1. Gå till administrationscentret på <https://portal.partner.microsoftonline.cn>.
 2. Gå till **användare** > **aktiva användare**och välj **Lägg till en användare**.
 3. Fyll i följande information i fönstret **ny användare** . När du är klar väljer du **Lägg till**.
     - **Namn** Fylla i förnamn, efternamn, visningsnamn och användarnamn.
@@ -99,7 +99,7 @@ Du måste vara global, licens eller en användar administratör för att lägga 
 ## <a name="add-multiple-users-at-the-same-time"></a>Lägga till flera användare samtidigt
 
 Du kan använda någon av följande metoder för att lägga till flera användare samtidigt:
-  
+
 - **Lägga till användare i grupp med hjälp av ett kalkylblad.** Se [lägga till flera användare samtidigt](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time).
 - **Automatisera processen att lägga till och tilldela licenser.** Se [skapa användar konton med Microsoft 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell). Välj det här alternativet om du redan vet hur du använder cmdlets i Windows PowerShell.
 - **Använder du ActiveDirectory?** [Konfigurera profilsynkronisering för Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization). Använd Azure AD Connect-verktyget för att replikera Active Directory-användarkonton (och andra Active Directory-objekt) i Microsoft 365. Synkroniseringen lägger bara till användarkonton. Du måste tilldela licenser till de synkroniserade användarna innan de kan använda e-post och andra Office-program.

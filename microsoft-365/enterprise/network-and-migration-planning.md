@@ -21,16 +21,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Den här artikeln innehåller länkar till information om nätverks planering, test och migrering till Office 365.
-ms.openlocfilehash: 1e6973f93c65012f4ca007332a47cc6b9e67b3b0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2b08b05b8863fd9351510878f9438264bb2999f5
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694875"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948454"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Planering för nätverk och migrering för Office 365
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 Den här artikeln innehåller länkar till information om nätverks planering och-testning och migrering till Office 365.
   
@@ -51,7 +51,7 @@ Gör så här för att uppskatta bandbredden:
     
 2. Avgöra vilka Office 365-tjänster och-funktioner som ska vara tillgängliga för klienter. Du kommer troligen att ha grupper med personer med olika tjänster eller användar profiler.
     
-3. Mäta nätverks användning för en pilot grupp med klienter. Se till att pilot klienter är representativa för de olika företags profilerna i organisationen samt till olika geografiska platser. Du kan göra en dubbel kontroll av dina resultat mot våra gamla räknare för [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) och [Skype för företag](https://go.microsoft.com/fwlink/p/?LinkId=321551) eller den [fallstudie](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) som vi har utfört på ett eget nätverk. 
+3. Mäta nätverks användning för en pilot grupp med klienter. Se till att pilot klienter är representativa för de olika företags profilerna i organisationen samt till olika geografiska platser. Du kan göra en dubbel kontroll av dina resultat mot våra gamla kalkylatorer för [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) och [Microsoft Teams](https://docs.microsoft.com/microsoftteams/prepare-network) eller en [fallstudie](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) som vi utför på ett eget nätverk. 
     
 4. Använd måtten från pilot gruppen för att extrapolera hela organisationens behov och kontrol lera igen för att verifiera uppskattningarna innan du gör några ändringar i nätverket.
     
@@ -94,15 +94,15 @@ Se till att få mer information om hur du förbättrar Office 365-upplevelsen.
 
 Dessa ämnen innehåller detaljerad information om Office 365-nätverks referenser.
   
-- [Hantera slut punkter för Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
+- [Hantera Office 365-slutpunkter](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
     
-- [Nätverk för innehålls leverans](content-delivery-networks.md)
+- [Nätverk för innehållsleverans](content-delivery-networks.md)
     
 - [Externa DNS-poster för Office 365](external-domain-name-system-records.md)
     
 - [IPv6-stöd i Office 365-tjänster](ipv6-support.md)
     
-- [Principer för nätverks anslutning för Office 365](https://aka.ms/o365networkingprinciples)
+- [Office 365 principer för nätverksanslutningar](https://aka.ms/o365networkingprinciples)
     
 - [Vanliga frågor och svar om Office 365](office-365-video-networking-faq.md)
     

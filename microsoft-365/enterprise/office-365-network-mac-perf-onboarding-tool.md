@@ -3,7 +3,7 @@ title: Microsoft 365-test för nätverks anslutning (för hands version)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/14/2020
+ms.date: 09/15/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365-test för nätverks anslutning (för hands version)
-ms.openlocfilehash: 92bd850c98261df1808219ee1f28c75da370d443
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 0a5e7831b28488e793488f572fd830d47a0f3f9a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650056"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948550"
 ---
 # <a name="microsoft-365-network-connectivity-test-preview"></a>Microsoft 365-test för nätverks anslutning (för hands version)
 
@@ -29,6 +29,8 @@ Test verktyget för Microsoft 365 Network Connectivity finns på <https://connec
 >Nätverks anslutnings verktyget har stöd för innehavare i WW kommersiell och Tyskland, men inte GCC måttlig, GCC hög, DoD eller Kina.
 
 Nätverks insikter i administrations centret för Microsoft 365 är baserade på vanliga mått på produkten för din Microsoft 365-klient som aggregeras varje dag. Vid jämförelse körs nätverks insikter från Microsoft 365 Network Connectivity test och en gång i verktyget. Testning som kan utföras med produkten är begränsad och genom att köra test som är lokala för användaren fler data kan samlas in i större insikter. Tänk på att nätverks insikter i administrations centret för Microsoft 365 visar att det finns ett nätverks problem för användning av Microsoft 365 på en viss Office-plats. Med testet Microsoft 365 Connectivity kan du identifiera rotor Saks orsaken till det problem som ledde till en Rekommenderad åtgärd för förbättring av nätverks prestanda.
+
+![Test verktyg för nätverks anslutning](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
 Vi rekommenderar att dessa används tillsammans där statusen för nätverks kvalitet kan bedömas för varje Office-plats i administrations centret för Microsoft 365 och mer information finns efter distribution av test baserat på Microsoft 365-anslutnings testet.
 
@@ -205,6 +207,28 @@ När ett SSL-certifikat hittas som inte tillhandahålls av Microsoft visar vi FQ
 
 I det här avsnittet visas resultatet av en ICMP-traceroute till Exchange Online-tjänstens front dörr, SharePoint Online-tjänstens front dörr och Microsoft Teams-tjänsten. Den är endast avsedd för information och det finns ingen överblick för nätverket. Det finns tre traceroutes. En traceroute till _Outlook.Office365.com_, en traceroute till kundernas klient-eller _Microsoft.SharePoint.com_ om det inte tillhandahölls, och en traceroute till _World.tr.Teams.Microsoft.com_.
 
+## <a name="what-happens-at-each-test-step"></a>Vad som händer i varje test steg
+
+### <a name="office-location-identification"></a>Identifiering av Office-plats
+
+När du klickar på knappen Kör test visar vi test sidan och identifierar Office-platsen. Du kan skriva in din plats efter ort, delstat och land, eller så kan du få den att identifieras från webbläsaren. Om du upptäcker det, efterfrågar vi Latitude och longitud från webbläsaren och begränsar tillförlitligheten till 300 m med 300 m innan den används. Vi gör det eftersom det inte behövs för att identifiera platsen mer exakt än för att bygga för nätverks prestanda. 
+
+### <a name="javascript-tests"></a>JavaScript-test
+
+Efter Office-plats-ID kör vi ett TCP-testsvar i Java Script och vi efterfrågar data från tjänsten om användning och Rekommenderad Office 365-tjänst front dörr Server. När de här är klara visar vi dem på kartan och på fliken information där de kan visas före nästa steg.
+
+### <a name="download-the-advanced-tests-client-application"></a>Ladda ned klient programmet för de avancerade testerna
+
+Nästa steg är att hämta det avancerade test klient programmet. Vi använder användaren för att starta klient programmet och måste också ha .NET Core installerat.
+
+### <a name="start-the-advanced-tests-client-application"></a>Starta klient programmet avancerad test
+
+När klient programmet startar webb sidan uppdateras den och test data tas emot på webb sidan. Det uppdaterar varje gång nya data tas emot och du kan granska data när de kommer in.
+
+### <a name="advanced-tests-completed-and-test-report-upload"></a>Avancerade test är avslutade och test rapport uppladdning
+
+När testen är klara är webb sidan och de avancerade testerna båda dessa och om användaren är inloggad i test rapporten kommer den att laddas upp till klient organisationen.
+
 ## <a name="connectivity-reports"></a>Anslutnings rapporter
 
 När du är inloggad kan du granska tidigare rapporter som du har kört. Du kan också dela dem eller ta bort dem från listan.
@@ -224,6 +248,10 @@ Här är några svar på vanliga frågor.
 ### <a name="is-this-tool-released-and-supported-by-microsoft"></a>Släpps det här verktyget och stöds av Microsoft?
 
 Det är för närvarande en för hands version och vi planerar att tillhandahålla uppdateringar regelbundet tills vi har en allmän status med support från Microsoft. Ge feedback för att hjälpa oss att förbättra. Vi planerar att publicera en mer detaljerad Office 365-guide för nätverks registrering som en del av det här verktyget som är anpassat för organisationen genom dess test resultat.
+
+### <a name="what-is-required-to-run-the-advanced-test-client"></a>Vad krävs för att köra den avancerade test klienten?
+
+Den avancerade test klienten kräver .NET Core 3,1-datorprogram. Om du kör den avancerade test klienten utan att vara installerad kommer du till [sidan .net Core 3,1 installations program](https://dotnet.microsoft.com/download/dotnet-core/3.1). Kontrol lera att du installerar Skriv bords miljön och inte är SDK, eller ASP.NET Core-körningsmiljön som är högre upp på sidan. Administratörs behörighet på datorn är reuqired att installera .NET Core. 
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>Vad är Microsoft 365-tjänstens front dörr?
 

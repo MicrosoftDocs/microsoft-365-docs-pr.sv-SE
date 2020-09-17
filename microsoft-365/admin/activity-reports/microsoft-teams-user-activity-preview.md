@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365-rapporter i administrationscentret – Användaraktivitet för Microsoft Teams – Förhandsversion
+title: Microsoft 365-rapporter i administrations Center – användar aktivitet för Microsoft Teams
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -18,42 +18,46 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Läs om hur du hämtar användaraktivitetsrapporten för Microsoft Teams och får insikter om teams-aktiviteten i organisationen.
-ms.openlocfilehash: 734a4dfd62160c2f4d29b8faffb3268a1962fe4f
-ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
+description: Lär dig hur du hämtar användar aktivitets rapporten för Microsoft Teams och få insikter om Teams-aktiviteten i din organisation.
+ms.openlocfilehash: 5b6c67903e7af600cac6ad1fda10962aecc2cc83
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45167347"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949048"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity--preview"></a>Microsoft 365-rapporter i administrationscentret – Användaraktivitet för Microsoft Teams– Förhandsversion
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 365-rapporter i administrations Center – användar aktivitet för Microsoft Teams
 
-Instrumentpanelen Microsoft 365 **Reports** visar aktivitetsöversikten för produkterna i organisationen. Här kan du gå in på detaljnivå i rapporter för enskilda produkter för att få bättre insikter om aktiviteterna inom varje produkt. Ta en titt på [översiktsavsnittet för Rapporter](activity-reports.md). I användaraktivitetsrapporten för Microsoft Teams får du inblick i Microsoft Teams-aktiviteterna i organisationen.
+Instrument panelen för Microsoft 365- **rapporter** visar en översikt över produkterna i organisationen. Här kan du gå in på detaljnivå i rapporter för enskilda produkter för att få bättre insikter om aktiviteterna inom varje produkt. Ta en titt på [översiktsavsnittet för Rapporter](activity-reports.md). I användaraktivitetsrapporten för Microsoft Teams får du inblick i Microsoft Teams-aktiviteterna i organisationen.
   
 > [!NOTE]
-> Du måste vara global administratör, global läsare eller rapportläsare i Microsoft 365 eller exchange-, SharePoint-, Teams-tjänst, Teams Communications eller Skype för företag-administratör för att kunna se rapporter.  
+> Du måste vara global administratör, global läsare eller rapport läsare i Microsoft 365 eller en Exchange-, SharePoint-, teams-tjänst, grupp kommunikation eller Skype för företag-administratör för att se rapporter.  
  
-## <a name="how-to-get-to-the-preview-microsoft-teams-user-activity-report"></a>Så här kommer du till användaraktivitetsrapporten för förhandsversionen av Microsoft Teams
+## <a name="how-to-get-to-the-microsoft-teams-user-activity-report"></a>Så här visar du användaraktivitetsrapporten för Microsoft Teams
 
 1. I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>.
-2. Välj **Microsoft Teams**i listrutan Välj **en rapport** .
+2. Från instrument panelens start sida klickar du på knappen **Visa mer** på aktivitets kortet för Microsoft Teams.
   
-## <a name="interpret-the-preview-microsoft-teams-user-activity-report"></a>Tolka användaraktivitetsrapporten för förhandsversionen av Microsoft Teams
+## <a name="interpret-the-microsoft-teams-user-activity-report"></a>Tolka användaraktivitetsrapporten för Microsoft Teams
 
-Du kan visa användaraktiviteten i rapporten Förhandsgranska Teams genom att välja fliken **Användaraktivitet.**
-  
-|||
+Du kan visa användar aktiviteten i Teams-rapporten genom att välja fliken **användar aktivitet** . <br/>![Microsoft 365-rapporter – användar aktivitet för Microsoft Teams.](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
+
+Välj **Välj kolumner** för att lägga till eller ta bort kolumner i rapporten.  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
+
+Du kan också exportera rapport data till en Excel. csv-fil genom att välja **Exportera** -länken. Då exporteras data för alla användare och du kan göra enkel sortering och filtrering för vidare analys. Om du har mindre än 2 000 användare kan du sortera och filtrera i tabellen i själva rapporten. Om du har fler än 2 000 användare måste du exportera data för att kunna filtrera och sortera. 
+
+|Objekt|Beskrivning|
 |:-----|:-----|
-|**Metriska**|**Definition**|
-|Användarnamn  <br/> |Användarens e-postadress. Du kan visa den faktiska e-postadressen eller göra fältet anonymt.   <br/> |
-|Kanalmeddelanden   <br/> |Antalet unika meddelanden som användaren har publicerat i en gruppchatt under den angivna tidsperioden.  <br/> |
-|Chattmeddelanden   <br/> |Antalet unika meddelanden som användaren har publicerat i en privat chatt under den angivna tidsperioden.  <br/> |
-|Totalt antal möten   <br/> |Antalet onlinemöten som användaren deltog i under den angivna tidsperioden.  <br/> |
-|01:1 samtal   <br/> | Antalet 1:1-anrop som användaren deltog i under den angivna tidsperioden.  <br/> |
-|Sista aktivitetsdatum (UTC)  <br/> |Det sista datum då användaren deltog i en Microsoft Teams-aktivitet.<br/> |
-|Möten deltog adhoc   <br/> | Antalet möten som inte har schemalagts i kalendern som användaren deltog i under den angivna tidsperioden.  <br/> |
-|Möten organiserade adhoc <br/> |Antalet möten som inte har schemalagts i kalendern som användaren organiserade under den angivna tidsperioden. <br/>|
-|Möten ordnade schemalagda  <br/> |Antalet schemalagda möten som en användare har organiserat under den angivna tidsperioden.  <br/> |
-|Är licensierad |Väljs om användaren är licensierad att använda Teams.|
-|Övrig aktivitet|Användaren anses vara aktiv men har ett nollvärde för chattmeddelanden, 1:1-samtal, kanalmeddelanden, totalt antal möten och möten. Exempel på åtgärder är när Microsoft Teams-klienten aktiveras till förgrunden, åtgärder vidtogs i området för att skriva meddelande, popup-meddelanden dök upp i Microsoft Teams-klienten, banners visades i Microsoft Teams-klienten osv. |
+|**Mät**|**Definition**|
+|Användar namn  <br/> |Användarens e-postadress. Du kan visa den faktiska e-postadressen eller göra fältet anonymt.   <br/> |
+|Kanal meddelanden   <br/> |Antalet unika meddelanden som användaren har publicerat under den angivna tids perioden.  <br/> |
+|Chatta   <br/> |Antalet unika meddelanden som användaren publicerat i en privat chatt under den angivna tids perioden.  <br/> |
+|Totalt antal möten   <br/> |Antalet onlinemöten som användaren deltog i under den angivna tids perioden.  <br/> |
+|1:1-samtal   <br/> | Antalet 1:1-samtal som användaren deltog i under den angivna tids perioden.  <br/> |
+|Datum för senaste aktivitet (UTC)  <br/> |Det sista datum som användaren deltog i en Microsoft Teams-aktivitet.<br/> |
+|Möten deltog i adhoc   <br/> | Antalet möten som inte har schemalagts i den kalender som användaren deltog i under den angivna tids perioden.  <br/> |
+|Möten organiserade adhoc <br/> |Antalet möten som inte har schemalagts i den kalender som användaren organiserade under den angivna tids perioden. <br/>|
+|Schemalagda möten  <br/> |Antalet schemalagda möten som en användare organiserat under den angivna tids perioden.  <br/> |
+|Är licensierad |Markerad om användaren är licensierad för att använda Teams.|
+|Annan aktivitet|Användaren anses vara aktiv men har ett nollvärde för chatt meddelanden, 1:1-samtal, kanal meddelanden, totala möten och möten ordnade. Exempel åtgärder är när Microsoft Teams-klienten är aktive rad i förgrunden, att åtgärderna vidtogs i meddelande området, popup-bilder visades i Microsoft Teams-klienten, att banderollerna visades i Microsoft Teams-klienten etc. |
 |||

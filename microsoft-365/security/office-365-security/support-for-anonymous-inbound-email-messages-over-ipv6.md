@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratören kan läsa om hur du konfigurerar stöd för anonym inkommande e-post från IPv6-källor i Exchange Online och Exchange Online Protection.
-ms.openlocfilehash: 7384c1044cc02ec20079dc03068c2ca99e68d2c2
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: f2e14fe2e8e46d6085fc3764d3a41382f15049e9
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826783"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950300"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Lägga till stöd för anonym inkommande e-post via IPv6 i Microsoft 365
 
@@ -30,7 +30,7 @@ Microsoft 365-organisationer med Exchange Online-postlådor och fristående Exch
 
 - Källans IPv6-adress måste ha en giltig PTR-post (omvänd DNS lookup) som tillåter målet att hitta domän namnet från IPv6-adressen.
 
-- Avsändaren måste klara antingen SPF-verifiering (definieras i [rfc 7208](https://tools.ietf.org/html/rfc7208)) eller [DKIM-verifiering](https://dkim.org/) (definieras i [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt)).
+- Avsändaren måste klara antingen SPF-verifiering (definieras i [rfc 7208](https://tools.ietf.org/html/rfc7208)) eller [DKIM-verifiering](http://dkim.org/) (definieras i [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt)).
 
 Innan din organisation kan ta emot anonym inkommande e-post via IPv6 måste en administratör kontakta Microsoft support och be om det. Anvisningar för hur du öppnar en supportbegäran finns i [kontakta supporten för företags produkter – hjälp för administratörer](../../admin/contact-support-for-business-products.md).
 

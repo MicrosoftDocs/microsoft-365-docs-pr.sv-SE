@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ae0105fd5eba134c7896daef34136748802e9010
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: 47035b5c988dba551948334c0c93d08b779c0d38
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394687"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950742"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Det står proaktivt för problem med avancerad jakt i Microsoft Threat Protection
 
@@ -32,14 +32,14 @@ ms.locfileid: "47394687"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Advanced jakt är ett fråge baserat Threat-verktyg som gör att du kan utforska upp till 30 dagars rå data. Du kan inspektera händelser i ditt nätverk proaktivt för att hitta intressanta indikatorer och enheter. Den flexibla till gången till data underlättar obegränsad jakt för både kända och potentiella hot.
+Advanced jakt är ett fråge baserat Threat-verktyg som gör att du kan utforska upp till 30 dagars rå data. Du kan inspektera händelser i ditt nätverk proaktivt för att hitta hot indikatorer och enheter. Den flexibla till gången till data möjliggör obegränsad jakt för både kända och potentiella hot.
 <p></p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
-Du kan använda samma hot-jakt-frågor för att skapa anpassade identifierings regler. Dessa regler körs automatiskt för att söka efter och svara på olika händelser och system tillstånd, inklusive misstänkt överträdelse och felkonfigurerade maskiner.
+Du kan använda samma hot-jakt-frågor för att skapa anpassade identifierings regler. Dessa regler körs automatiskt för att söka efter och svara på misstänkt överträdelse aktivitet, felkonfigurerade maskiner och andra undersöknings resultat.
 
-Denna funktion liknar [Avancerad jakt i Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview), förutom den avancerade jakt i Microsoft Threat Protection – tillgänglig i Microsoft 365 Security Center – stöd för frågor som gäller för olika arbets ytor, inklusive data om enheter, e-post, appar och identiteter från Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security och Azure ATP. [Aktivera skydd mot Microsoft Threat om](mtp-enable.md)du vill använda en avancerad jakt.
+Denna funktion liknar [Avancerad jakt i Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). Den här funktionen är tillgänglig i Microsoft 365 Security Center och stöder frågor som kontrollerar en bredare data uppsättning från Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security och Azure ATP. [Aktivera skydd mot Microsoft Threat om](mtp-enable.md)du vill använda en avancerad jakt.
 
 ## <a name="get-started-with-advanced-hunting"></a>Komma igång med avancerad jakt
 
@@ -47,31 +47,30 @@ Vi rekommenderar att du går igenom flera olika sätt för att snabbt komma igå
 
 | Utbildnings mål | Beskrivning | Resurspool |
 |--|--|--|
-| **Bekanta dig med språket** | Avancerad jakt är baserat på [Kusto frågespråk](https://docs.microsoft.com/azure/kusto/query/), med stöd för samma syntax och operatorer. Börja lära dig frågespråket genom att köra den första frågan. | [Frågespråk, översikt](advanced-hunting-query-language.md) |
+| **Lär dig språket** | Avancerad jakt är baserat på [Kusto frågespråk](https://docs.microsoft.com/azure/kusto/query/), med stöd för samma syntax och operatorer. Börja lära dig frågespråket genom att köra den första frågan. | [Frågespråk, översikt](advanced-hunting-query-language.md) |
 | **Lär dig hur du använder frågeresultat** | Lär dig mer om diagram och olika sätt att visa eller exportera dina resultat. Lär dig hur du snabbt kan justera frågor, öka detalj nivån för att få bättre information och vidta åtgärder. | - [Arbeta med frågeresultat](advanced-hunting-query-results.md)<br>- [Vidta en åtgärd i frågeresultatet](advanced-hunting-take-action.md) |
-| **Förstå schemat** | Få en bra, högkvalitativ förståelse av tabellerna i schemat och deras kolumner. Detta hjälper dig att avgöra var du ska leta efter data och hur du skapar frågor. | [Schema referens](advanced-hunting-schema-tables.md) |
-| **Använda fördefinierade frågor** | Lär dig mer om de fördefinierade frågorna | - [Använda delade frågor](advanced-hunting-shared-queries.md)<br>- [Gå och leta](advanced-hunting-go-hunt.md) |
-| **Optimera frågor** | Förstå hur du skapar effektiva frågor och frågor som kombinerar data från e-post och enheter. | - [Metod tips för frågor](advanced-hunting-best-practices.md) <br>- [Olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md) |
-| **Skapa anpassade identifierings regler** | Förstå hur du kan använda avancerade frågor för att utlösa meddelanden och tillämpa svars åtgärder automatiskt. | - [Anpassade identifierings översikter](custom-detections-overview.md)<br>- [Anpassade identifierings regler](custom-detection-rules.md) |
+| **Förstå schemat** | Få en bra, högkvalitativ förståelse av tabellerna i schemat och deras kolumner. Lär dig hur du söker efter data när du skapar dina frågor. | [Schema referens](advanced-hunting-schema-tables.md) |
+| **Få expert tips och exempel** | Träna gratis med guider från Microsoft-experter. Lär dig mer om de fördefinierade frågorna | - [Få expert utbildning](advanced-hunting-expert-training.md)<br>- [Använda delade frågor](advanced-hunting-shared-queries.md)<br>- [Gå och leta](advanced-hunting-go-hunt.md)<br>- [Jakt efter hot på enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md) |
+| **Optimera frågor och hantera fel** | Förstå hur du skapar effektiva och felfria frågor. | - [Metod tips för frågor](advanced-hunting-best-practices.md)<br>- [Hantera fel](advanced-hunting-errors.md) |
+| **Skapa anpassade identifierings regler** | Förstå hur du kan använda avancerade frågor för att utlösa meddelanden och utföra svars åtgärder automatiskt. | - [Anpassade identifierings översikter](custom-detections-overview.md)<br>- [Anpassade identifierings regler](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>Få åtkomst
-Om du vill använda avancerad jakt eller annan [Microsoft Threat Protection](microsoft-threat-protection.md) -kapacitet måste du tilldela en lämplig roll i Azure AD. Observera att din åtkomst till slut punkts data påverkas av rollbaserad åtkomst kontroll inställningar i Microsoft Defender ATP. [Läs om hur du hanterar åtkomst till Microsoft Threat Protection](mtp-permissions.md)
+Du behöver en lämplig roll i Azure Active Directory för att kunna använda avancerad jakt eller annan [Microsoft Threat Protection](microsoft-threat-protection.md) -funktion. Din åtkomst till slut punkts data avgörs också av inställningar för en rollbaserad åtkomst kontroll (RBAC) i Microsoft Defender ATP. [Läs om hur du hanterar åtkomst till Microsoft Threat Protection](mtp-permissions.md)
 
 ## <a name="data-freshness-and-update-frequency"></a>Data aktualitet och uppdaterings frekvens
 Avancerade jakt uppgifter kan kategoriseras i två distinkta typer, som varje konsol IDE rad är annorlunda.
 
-- **Händelse-eller aktivitets data** – fyller i tabeller om aviseringar, säkerhets händelser, system händelser och utvärderings bedömningar. Advanced jakt tar emot dessa data nästan omedelbart efter att de sensorer som samlar in dem lyckades överföra dem till motsvarande moln tjänster. Du kan till exempel starta frågor mot händelse data från friska sensorer på arbets stationer eller domänkontrollanter nästan omedelbart efter att de är tillgängliga i Microsoft Defender ATP och Azure ATP.
-- **Entitetsinformation** – fyller i tabeller med konsol IDE rad information om användare och enheter. Dessa data kommer från både relativt statiska data källor, till exempel Active Directory-poster och dynamiska källor, till exempel händelse loggar. Om du vill lägga till nya data uppdateras tabellerna var 15: e minut med ny information och rader som kanske inte är helt ifyllda. Var 24: e timme konsol IDE ras för att infoga en post som innehåller de senaste, mest omfattande data uppsättningarna för varje enhet.
+- **Händelse-eller aktivitets data**– fyller i tabeller om aviseringar, säkerhets händelser, system händelser och utvärderings bedömningar. Advanced jakt tar emot dessa data nästan omedelbart efter att de sensorer som samlar in dem lyckades överföra dem till motsvarande moln tjänster. Du kan till exempel läsa händelse data från friska sensorer på arbets stationer eller domänkontrollanter nästan omedelbart efter att de är tillgängliga i Microsoft Defender ATP och Azure ATP.
+- **Entitetsinformation**– fyller i tabeller med konsol IDE rad information om användare och enheter. Dessa data kommer från både relativt statiska data källor och dynamiska källor, till exempel Active Directory-poster och händelse loggar. Om du vill lägga till nya data uppdateras tabellerna var 15: e minut och rader som kanske inte är helt ifyllda läggs till. Var 24: e timme konsol IDE ras för att infoga en post som innehåller de senaste, mest omfattande data uppsättningarna för varje enhet.
 
 ## <a name="time-zone"></a>Tidszon
-All tidsinformation i Advanced jakt är i UTC-tidszonen.
+Tidsinformation i Advanced jakt är i UTC-zonen.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
-- [Arbeta med frågeresultat](advanced-hunting-query-results.md)
-- [Utföra en åtgärd på frågeresultat](advanced-hunting-take-action.md)
+- [Få expert utbildning](advanced-hunting-expert-training.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
-- [Jaga över olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)
 - [Översikt över anpassade identifieringar](custom-detections-overview.md)
+

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 502dc87b45c42f0ae95ea9da898c4d4589b19671
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 1e779e0da89ea49fb4ed390b20a6fb67ffd3b162
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47649955"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948002"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Funktioner för förhands granskning av Microsoft Threat Protection
 
@@ -59,7 +59,6 @@ Följande funktioner och förbättringar är för närvarande tillgängliga för
 
 - API: er för **[skydd mot Microsoft Threat](api-overview.md)** -Lop för att automatisera arbets flöden baserat på de delade incidenterna och de avancerade jakt tabellerna. 
 - **[IdentityDirectoryEvents-tabell i avancerad jakt](advanced-hunting-identitydirectoryevents-table.md)** – hitta händelser som berör en lokal domänkontrollant som kör Active Directory (AD). Den här tabellen innehåller flera identitetsbaserade händelser samt system händelser på domänkontrollanten.
-- **[Funktionen AssignedIPAddresses ()](advanced-hunting-assignedipaddresses-function.md)** – Använd den här funktionen i avancerad jakt för att snabbt få de senaste IP-adresserna som har tilldelats till en enhet eller de senaste IP-adresserna från en viss tidpunkt.
 - **[Vidta åtgärder i avancerad jakt](advanced-hunting-take-action.md)** – snabb till gångar som du hittar i en [Avancerad jakt](advanced-hunting-overview.md)snabbt.
 - **[Schema referens i portalen](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** – få information om avancerade tilläggs schema tabeller direkt i säkerhets Center. Förutom tabell-och kolumn beskrivningar innehåller den här smidiga referensen information om händelse typer `ActionType` som stöds och exempel frågor.
 

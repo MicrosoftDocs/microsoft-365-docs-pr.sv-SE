@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: be35663fc32a2d214e1ca0ae91161079a5f672a3
-ms.sourcegitcommit: a13f43a3e981c90f1e0b9805c9c16a56f67fc650
+ms.openlocfilehash: 686d31c64394094530099edb97bbd10912a58cb8
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47651150"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949898"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationer av identiteter och enhetsåtkomst
 
@@ -115,7 +115,7 @@ Azure AD tillhandahåller en full uppsättning funktioner för identitets hanter
 | [Enhets registrering](/azure/active-directory/devices/overview) | Du registrerar en enhet i Azure AD för att skapa en identitet för enheten. Denna identitet används för att autentisera enheten när en användare loggar in och för att tillämpa villkorsstyrda åtkomst principer som kräver domänanslutna eller kompatibla datorer. För den här vägledningen använder vi enhets registrering för att automatiskt registrera domänanslutna Windows-datorer. Enhets registrering är en förutsättning för att hantera enheter med Intune. | Microsoft 365 E3 eller E5 |
 | [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview) | Gör det möjligt att upptäcka potentiella säkerhets problem som påverkar organisationens identitet och konfigurera automatisk reparations princip för att Visa riskerna med låg, medelhög och stor inloggning och användare. Den här vägledningen är beroende av denna riskbedömning för att tillämpa principer för villkorsstyrd åtkomst för multifaktorautentisering. Den här vägledningen innehåller även en policy för villkorsstyrd åtkomst som kräver att användare ändrar sitt lösen ord om en aktivitet med hög risk identifieras för deras konto. | Microsoft 365 E5, Microsoft 365 E3 med tillägget identitets & hot Protection, EMS E5 eller Azure Premium P2-licenser |
 | [Självbetjäning för återställning av lösen ord (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks) | Tillåt att dina användare återställer sina lösen ord på ett säkert sätt och utan hjälp genom att kontrol lera flera autentiseringsmetoder som administratören kan kontrol lera. | Microsoft 365 E3 eller E5 |
-| [Lösen ords skydd i Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad). Identifiera och blockera kända svaga lösen ord och deras varianter och ytterligare svaga termer som är specifika för din organisation. Standard listan över blockerade lösen ord tillämpas automatiskt på alla användare i en Azure AD-klient. Du kan definiera ytterligare poster i en anpassad lista över blockerade lösen ord. När användare ändrar eller återställer sina lösen ord är de här förbjudna lösen ords listorna markerade för att använda starka lösen ord. |  Microsoft 365 E3 eller E5 |
+| [Lösen ords skydd i Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | Identifiera och blockera kända svaga lösen ord och deras varianter och ytterligare svaga termer som är specifika för din organisation. Standard listan över blockerade lösen ord tillämpas automatiskt på alla användare i en Azure AD-klient. Du kan definiera ytterligare poster i en anpassad lista över blockerade lösen ord. När användare ändrar eller återställer sina lösen ord är de här förbjudna lösen ords listorna markerade för att använda starka lösen ord. |  Microsoft 365 E3 eller E5 |
 ||||
 
 ![Komponenter i åtkomst till identiteter och enheter.](../media/microsoft-365-policies-configurations/identity-device-access-components.png)

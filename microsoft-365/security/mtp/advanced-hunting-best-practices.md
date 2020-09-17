@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3ca475ef6dbdbd66af47216c4130d748788730c2
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 2259158c566223c39a6b533483551f95c2fa0824
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419138"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949306"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Metod tips för avancerad jakt frågor
 
@@ -31,7 +31,12 @@ ms.locfileid: "47419138"
 
 Använd dessa rekommendationer för att få snabbare resultat och undvika tids gränser när komplexa frågor körs. För mer information om hur du förbättrar frågeresultatet kan du läsa [Kusto metod tips](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
-## <a name="general-guidance"></a>Allmän vägledning
+## <a name="understand-cpu-resource-limits"></a>Förstå gräns värden för processor resurser
+Beroende på dess storlek har alla innehavare till gång till en mängd tilldelade CPU-resurser för att köra avancerade jakt frågor. Få reda på mer om olika tjänst gränser i [om begränsningar för avancerat jakt](advanced-hunting-limits.md).
+
+Kunder som kör flera frågor regelbundet bör spåra förbrukningen och använda optimerings vägledningen i den här artikeln för att minimera störningar som orsakas av gräns värden.
+
+## <a name="general-optimization-tips"></a>Allmänna optimerings tips
 
 - **Ändra storlek på nya frågor**– om du misstänker att en fråga returnerar en stor resultat mängd ska du först bedöma den med hjälp av [operatorn Count](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator). Använd [gräns](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) eller synonym `take` för att undvika stora resultat mängder.
 - **Använd filter tidigt**– Använd tids filter och andra filter för att minska data uppsättningen, särskilt innan du använder omvandlings-och analys funktioner, till exempel [substring ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/substringfunction), [Ersätt ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/replacefunction), [Rensa ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/trimfunction), [toupper ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/toupperfunction)eller [parse_json ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). I exemplet nedan används parsnings funktionen [extractjson ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) efter att filtrerings operatorerna har minskat antalet poster.
@@ -255,9 +260,7 @@ Om du vill veta mer om alla analys funktioner som stöds [läser du Kusto strän
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Dokumentation för Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
+- [Tjänst begränsningar](advanced-hunting-limits.md)
+- [Hantera avancerade jakt fel](advanced-hunting-errors.md)
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
-- [Arbeta med frågeresultat](advanced-hunting-query-results.md)
-- [Använda delade frågor](advanced-hunting-shared-queries.md)
-- [Jaga över olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
-- [Förstå schemat](advanced-hunting-schema-tables.md)

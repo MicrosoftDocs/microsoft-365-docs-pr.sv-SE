@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 12ac7d0a3d07749e16443e645f50de8fda185658
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: b9e900baf02e9fc866fe6fe520ad1e40ccd565de
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866785"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950706"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Integrera ServiceNow biljetter i säkerhets Center och Compliance Center för Microsoft 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "46866785"
 
 ServiceNow är en populär plattform för moln datorer som hjälper företag att hantera digitala arbets flöden för företag. Deras plattform har arbets flöden, arbets flöden och kund arbets flöden. [Lär dig mer om ServiceNow](https://www.servicenow.com/)
 
-Microsoft samarbetar med ServiceNow för att göra det lättare för IT-administratörer att hantera sina biljetter och uppgifter på båda plattformarna. [Microsoft 365 säkerhets Center](overview-security-center.md) och [Microsoft 365 Compliance Center](https://docs.microsoft.commicrosoft-365/compliance/microsoft-365-compliance-center) förbättras med möjligheten att skapa och spåra biljetter i ServiceNow.
+Microsoft samarbetar med ServiceNow för att göra det lättare för IT-administratörer att hantera sina biljetter och uppgifter på båda plattformarna. [Microsoft 365 säkerhets Center](overview-security-center.md) och [Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) förbättras med möjligheten att skapa och spåra biljetter i ServiceNow.
 
 - [**Hantera ServiceNow biljetter i säkerhets Center**](tickets-security-center.md)
 - **Hantera ServiceNow biljetter i överensstämmelse Center** (kommer snart)
@@ -61,7 +61,7 @@ När du skapar en ServiceNow-biljett från Microsoft 365 Security Center eller C
 * Användar-ID som initierar biljett skapandet
 * Aktivitets namn
 * Beskrivning av uppgift
-* Ordningen
+* Priority
 * Förfallo datum
 * Rekommendations källa (användar rekommendation eller Microsoft-rekommendation)
 * Rekommendations kategori (enheter, data, appar, identitet, infrastruktur)

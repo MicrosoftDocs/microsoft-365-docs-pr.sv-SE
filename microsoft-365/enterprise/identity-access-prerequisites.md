@@ -16,18 +16,18 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 2c654cb0ec2afd138c7c9fb4b339b53a8522e5e4
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 034dd31309c783e8b231a113d2bda5ccb1888d5b
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547210"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950766"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Nödvändigt arbete för implementering av identitets-och enhets åtkomst principer
 
 I den här artikeln beskrivs förutsättningar som måste implementeras innan du kan distribuera Rekommenderad identitet och enhets åtkomst principer. I den här artikeln beskrivs också rekommenderade standardinställningar för konfigurering av plattformar för att tillhandahålla den bästa enkel inloggnings upplevelsen (SSO) för användarna, samt de tekniska kraven för villkorlig åtkomst.
 
-## <a name="prerequisites"></a>Krav
+## <a name="prerequisites"></a>Förutsättningar
 
 Innan du implementerar de rekommenderade principer för identitet och enheter finns det flera förutsättningar för att organisationen måste mötas för dessa identitets-och autentiseringsdata för Microsoft 365 och Office 365:
 
@@ -116,6 +116,6 @@ Här är några ytterligare rekommendationer:
 
 ## <a name="next-step"></a>Nästa steg
 
-![Steg 2: konfigurera principer för villkorlig åtkomst för en gemensam identitet och åtkomst](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)
+[![Steg 2: konfigurera principer för villkorlig åtkomst för en gemensam identitet och åtkomst](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
 
 [Konfigurera principer för åtkomst för identitet och enheter](identity-access-policies.md)

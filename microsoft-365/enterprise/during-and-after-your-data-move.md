@@ -1,5 +1,5 @@
 ---
-title: Under och efter att data flyttas
+title: Under och efter dataflytt
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -16,14 +16,14 @@ f1.keywords:
 - NOCSH
 description: Data transporter är bakgrunds åtgärder som inträffar när Microsoft flyttar tjänster och tillhör ande data för din klient organisation till ett nytt Data Center geo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9f87628d6bbc65fe4122999f6d0fde809fed51b8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: acd2601d32617c56019ca8b4bf8688ce40f5d76a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694527"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950278"
 ---
-# <a name="during-and-after-your-data-move"></a>Under och efter att data flyttas
+# <a name="during-and-after-your-data-move"></a>Under och efter dataflytt
 
 Data flyttas är en backend-åtgärd som påverkar slutanvändaren minimalt. Ingen åtgärd krävs när Microsoft flyttar över alla tjänster och tillhör ande data för din klient organisation till ett nytt Data Center geo. Data överföring och verifiering sker i bakgrunden i förväg med minimal påverkan på användarna.
   
@@ -36,7 +36,7 @@ Titta på meddelande Center för Microsoft 365 för att bekräfta när det rör 
 |**Kunder med anmälan land i**|**Alla flyttningar slutförda av**|
 |:-----|:-----|
 |Australien, Nya Zeeland, Fidji  <br/> |Den 1 juli 2022  <br/> |
-|Japan  <br/> |Den 1 juli 2022  <br/> |
+|Japan   <br/> |Den 1 juli 2022  <br/> |
 |Indien  <br/> |Den 1 juli 2022  <br/> |
 |Kanada  <br/> |Den 1 juli 2022  <br/> |
 |Sydkorea  <br/> |Den 1 juli 2022  <br/> |
@@ -45,8 +45,8 @@ Titta på meddelande Center för Microsoft 365 för att bekräfta när det rör 
 |Förenade Arabemiraten  <br/> |Den 1 juli 2022  <br/> |
 |Sydafrika  <br/> |Den 1 juli 2022  <br/> |
 |Schweiz, Liechtenstein  <br/> |Den 1 juli 2022  <br/> |
-|Tyskland  <br/> |Disponera  <br/> |
 |Norge  <br/> |Den 1 november 2022  <br/> |
+|Tyskland  <br/> |Disponera  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -75,7 +75,7 @@ När SharePoint Online flyttas flyttas även data för följande tjänster:
     
 - Office i s webbläsare
     
-- Microsoft 365-applikationer för företag
+-  Microsoft 365 Apps för företag
     
 - Visio Pro för Microsoft 365
     
@@ -135,9 +135,9 @@ Tredjepartsleverantör av ljud konferens leverantörer för Skype för företag 
   
 ## <a name="related-topics"></a>Relaterade ämnen 
  
-[Så här efterfrågar du data flytten](request-your-data-move.md)
+[Hur du begär din dataflytt](request-your-data-move.md)
     
-[Vanliga frågor om data förflyttning](data-move-faq.md)
+[Vanliga frågor och svar om dataflytt](data-move-faq.md)
   
 [Ny datacenter-geos för Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   

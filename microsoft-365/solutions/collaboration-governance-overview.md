@@ -14,12 +14,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Lär dig mer om hur du styr relaterade funktioner i Microsoft 365 Groups, teams, SharePoint och Yammer.
-ms.openlocfilehash: cdef9a4f939c20b34bf32efb5a258deddd885d0e
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: b217dc089eb150d01eed9cd720b2caa290d54bf1
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662845"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950718"
 ---
 # <a name="overview-of-collaboration-governance-in-microsoft-365"></a>Översikt över samarbete i Microsoft 365
 
@@ -108,16 +108,16 @@ Se dessa konferens samtal för att lära dig mer om styrning för Microsoft 365-
 
 Lär dig grunderna och nya innovationer i Microsoft 365-grupper, inklusive ledning och styrelse trafik, metod tips för att driva användning och antagande samt själv service.
 
-- [Ta med Microsoft 365-grupper](https://myignite.techcommunity.microsoft.com/sessions/81553)
+- [Ta med Microsoft 365-grupper](https://www.youtube.com/watch?v=dAamBF1gb7M)
 
 **Styrning**
 
 Lär dig hur du konfigurerar gruppernas livs cykel, namngivnings principer, klassificerings etiketter, samarbete med externa gäster och hanterar behörighet för att skapa grupper.
 
-- [Omvandla samarbete och bekämpa skuggat med Office 365-grupper](https://myignite.techcommunity.microsoft.com/sessions/81554)
+- [Omvandla samarbete och bekämpa skuggat med Office 365-grupper](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
 
 **Kund exempel**
 
 Se ett exempel på hur Microsoft 365 Groups, SharePoint, teams och Yammer samarbetar för att tillhandahålla en global samarbets plattform.
 
-- [Hitta ditt samarbete på en plats med Office 365-grupper, SharePoint, teams och Yammer](https://myignite.techcommunity.microsoft.com/sessions/84289)
+- [Hitta ditt samarbete på en plats med Office 365-grupper, SharePoint, teams och Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)

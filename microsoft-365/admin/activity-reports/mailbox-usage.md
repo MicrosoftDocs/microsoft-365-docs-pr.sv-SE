@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365-rapporter i administrationscentret – användning av postlåda
+title: Microsoft 365-rapporter i administrations Center – använde brev Låde användning
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -18,43 +18,43 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
-description: Läs om hur du får användningsrapport för postlåda för att få information om aktiviteter för användare med en användarpostlåda.
-ms.openlocfilehash: 15da09574b2273e119ba9cf2c132d2e9596e9a64
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Lär dig hur du får en rapport om hur du kan få information om användarnas aktiviteter med en post låda.
+ms.openlocfilehash: 0b0c57bda813e1600866513df86b7c973dcdffdc
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387687"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949138"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Microsoft 365-rapporter i administrationscentret – användning av postlåda
+# <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Microsoft 365-rapporter i administrations Center – använde brev Låde användning
 
-**Användningsrapporten för postlådan** innehåller information om användare med en användarpostlåda och aktivitetsnivån för var och en baserat på e-postöverföring, läsa, skapa avtalad tid, skicka möte, acceptera möte, avböja möte och avbryta mötesaktivitet. Du får även information om hur mycket lagringsutrymme som har förbrukats av varje användarpostlåda och hur många av dem som närmar sig lagringskvotens gräns. 
+**Rapporten om användning av post lådan** innehåller information om användare med en post låda och aktivitetens aktivitets nivå baserat på e-postmeddelandet skicka, läsa, skapa avtalad tid, skicka möte, acceptera möte, avböja möte och avsluta Mötes aktivitet. Du får även information om hur mycket lagringsutrymme som har förbrukats av varje användarpostlåda och hur många av dem som närmar sig lagringskvotens gräns. 
   
 > [!NOTE]
-> Du måste vara global administratör, global läsare eller rapportläsare i Microsoft 365 eller exchange-, SharePoint-, Teams-tjänst, Teams Communications eller Skype för företag-administratör för att kunna se rapporter. 
+> Du måste vara global administratör, global läsare eller rapport läsare i Microsoft 365 eller en Exchange-, SharePoint-, teams-tjänst, grupp kommunikation eller Skype för företag-administratör för att se rapporter. 
  
 ## <a name="how-to-get-to-the-mailbox-usage-report"></a>Så här kommer du åt rapporten om postlådeanvändning
 
 1. I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>.
 
     
-2. Välj Användning **av** **Exchange** \> **Exchange-postlåda**i listrutan Välj en rapport .
+2. I list rutan **Välj en rapport** väljer du **Exchange** \> **Använd användning**av Exchange-postlåda.
   
 ## <a name="interpret-the-mailbox-usage-report"></a>Tolka rapporten om postlådeanvändning
 
 Du kan få en inblick i organisationens **Postlådeanvändning** genom att titta på diagrammen **Postlåda**, **Lagring** och **Kvot**. 
   
-|||
+|Objekt|Beskrivning|
 |:-----|:-----|
-|1.  <br/> |I rapporten **Postlådeanvändning** kan du se trender under de senaste 7, 30, 90 eller 180 dagarna. Om du väljer en viss dag i rapporten visas data i upp till 28 dagar från det aktuella datumet (inte det datum då rapporten genererades).  <br/> |
-|2.  <br/> |Uppgifterna i varje rapport omfattar vanligtvis upp till de senaste 24 till 48 timmarna.  <br/> |
+|1.  <br/> |I rapporten **Postlådeanvändning** kan du se trender under de senaste 7, 30, 90 eller 180 dagarna. Om du väljer en viss dag i rapporten visar tabellen data för upp till 28 dagar från det aktuella datumet (inte det datum då rapporten genererades).  <br/> |
+|2.  <br/> |Informationen i varje rapport täcker vanligt vis upp till de senaste 24 till 48 timmar.  <br/> |
 |3.  <br/> |Postlådediagrammet visar det totala antalet användarpostlådor i organisationen och hur många som är aktiva på en viss dag under rapportperioden. En användarpostlåda anses vara aktiv om någon av följande aktiviteter har utförts: skicka e-post, läsa e-post, skapa avtalad tid, skicka möte, acceptera möte, avböja möte eller ställa in ett möte.  <br/> |
-|4.  <br/> |Diagrammet **Lagring** visar hur stort lagringsutrymme som används i din organisation. Lagringsdiagram innehåller inte arkivpostlådor. Mer information om automatisk expanderande arkivering finns [i Översikt över obegränsad arkivering i Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/unlimited-archiving).<br/> |
+|4.  <br/> |Diagrammet **Lagring** visar hur stort lagringsutrymme som används i din organisation. Lagrings diagrammet innehåller inte Arkiv post lådor. Mer information om automatisk utökande arkivering finns i Översikt över [obegränsad arkivering i Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/unlimited-archiving).<br/> |
 |5.  <br/> | Diagrammet **Kvot** visar antalet användarpostlådor i varje kvotkategori. Det finns fyra kvotkategorier:  <br/>  Bra - antal användare vars använda lagring ligger under kvotvärdet då varning utfärdas.  <br/>  Varning - antalet användare vars använda lagring ligger på eller över värdet då varning utfärdas, men under kvoten då sändning förhindras  <br/>  Det går inte att skicka - antalet användare vars använda lagring ligger på eller över värdet då sändning förhindras, men under kvoten då både sändning och mottagning förhindras  <br/>  Det går inte att skicka/ta emot - antalet användare vars använda lagring ligger på eller över kvoten då både sändning och mottagning förhindras  <br/> |
-|6.  <br/> | I diagrammet **Postlåda** är Y-axeln antalet användarpostlådor.  <br/>  I diagrammet **Lagring** är Y-axeln mängden lagringsutrymme som används av användarpostlådor i din organisation.  <br/>  I diagrammet **Kvot** är Y-axeln antalet användarpostlådor i varje lagringskvot.  <br/>  X-axeln i diagrammen Postlåda och Lagring är det valda datumintervallet för den här specifika rapporten.  <br/>  X-axeln i diagrammen för Kvot är kvotkategorin.  <br/> |
-|7.  <br/> |Du kan filtrera diagram som du ser genom att markera ett objekt i förklaringen.  <br/> |
-|8.  <br/> | Tabellen visar en uppdelning av postlådeanvändningen per användare. Du kan lägga till fler kolumner i tabellen.  <br/> **Användarnamn** är användarens e-postadress.  <br/> **Visningsnamn** är användarens fullständiga namn.  <br/> **Borttagen** refererar till den postlåda vars aktuella status är borttagen, men som var aktiv under en del av rapportens rapporteringsperiod.  <br/> **Borttagen den** är det datum postlådan togs bort.  <br/> **Skapad den** är det datum postlådan skapades.  <br/> **Datum för senaste aktivitet** refererar till det datum postlådan senast användes för att skicka eller läsa ett e-postmeddelande.  <br/> **Objektantal** refererar till det totala antalet objekt i postlådan.  <br/> **Använt lagringsutrymme (MB)** refererar till det totala använda lagringsutrymmet.  <br/> **Borttaget antal objekt** refererar till det totala antalet borttagna objekt i postlådan. <br/> **Borttagen artikelstorlek (MB)** refererar till den totala storleken på alla borttagna objekt i postlådan. <br/> **Kvot då varning utfärdas (MB)** refererar till lagringsgränsen då postlådans ägare får en varning om att lagringskvoten snart är nådd.  <br/> **Kvot då sändning förhindras (MB)** refererar till lagringsgränsen då postlådan inte längre får skicka e-postmeddelanden.  <br/> **Kvot då sändning/mottagning förhindras (MB)** refererar till lagringsgränsen då postlådan inte längre får skicka eller ta emot e-postmeddelanden.  <br/>  Om organisationens principer förhindrar dig att visa rapporter där användarinformationen är identifierbar kan du ändra sekretessinställningen för alla de här rapporterna. Läs avsnittet **Dölj användare i avsnittet Dölj i rapporterna** i [aktivitetsrapporterna i administrationscentret för Microsoft 365](activity-reports.md).  <br/> |
-|9.  <br/> |Du kan också exportera rapportdata till en CSV-fil i Excel genom att välja länken **Exportera.**  <br/> |
+|18.6.  <br/> | I diagrammet **Postlåda** är Y-axeln antalet användarpostlådor.  <br/>  I diagrammet **Lagring** är Y-axeln mängden lagringsutrymme som används av användarpostlådor i din organisation.  <br/>  I diagrammet **Kvot** är Y-axeln antalet användarpostlådor i varje lagringskvot.  <br/>  X-axeln i diagrammen Postlåda och Lagring är det valda datumintervallet för den här specifika rapporten.  <br/>  X-axeln i diagrammen för Kvot är kvotkategorin.  <br/> |
+|borttagning.  <br/> |Du kan filtrera diagram som visas genom att markera ett objekt i förklaringen.  <br/> |
+|8.2.  <br/> | Tabellen visar en uppdelning av postlådeanvändningen per användare. Du kan lägga till fler kolumner i tabellen.  <br/> **Användarnamn** är användarens e-postadress.  <br/> **Visningsnamn** är användarens fullständiga namn.  <br/> **Borttagen** refererar till den postlåda vars aktuella status är borttagen, men som var aktiv under en del av rapportens rapporteringsperiod.  <br/> **Borttagen den** är det datum postlådan togs bort.  <br/> **Skapad den** är det datum postlådan skapades.  <br/> **Datum för senaste aktivitet** refererar till det datum postlådan senast användes för att skicka eller läsa ett e-postmeddelande.  <br/> **Objektantal** refererar till det totala antalet objekt i postlådan.  <br/> **Använt lagringsutrymme (MB)** refererar till det totala använda lagringsutrymmet.  <br/> **Antal borttagna objekt** refererar till det totala antalet borttagna objekt i post lådan. <br/> **Borttaget objekt storlek (MB)** syftar på total storleken på alla borttagna objekt i post lådan. <br/> **Kvot då varning utfärdas (MB)** refererar till lagringsgränsen då postlådans ägare får en varning om att lagringskvoten snart är nådd.  <br/> **Kvot då sändning förhindras (MB)** refererar till lagringsgränsen då postlådan inte längre får skicka e-postmeddelanden.  <br/> **Kvot då sändning/mottagning förhindras (MB)** refererar till lagringsgränsen då postlådan inte längre får skicka eller ta emot e-postmeddelanden.  <br/>  Om organisationens principer förhindrar dig att visa rapporter där användarinformationen är identifierbar kan du ändra sekretessinställningen för alla de här rapporterna. Ta en titt på ikonen **Dölj användare i avsnittet rapporter** i [aktivitets rapporterna i administrations centret för Microsoft 365](activity-reports.md).  <br/> |
+|9.  <br/> |Du kan också exportera rapport data till en Excel. csv-fil genom att välja **Exportera** -länken.  <br/> |
 |||
    
 

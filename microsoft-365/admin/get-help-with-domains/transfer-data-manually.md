@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Få reda på hur du överför data manuellt mellan två Microsoft 365-konton när du ändrade plan-eller företags namnet eller kombinerar flera abonnemang till ett.
-ms.openlocfilehash: 91ea4140f0460e1f8cc1243f1b5f203738dcc9ee
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1297e2d55692262be55b166dacc56cb89cc6c8a0
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685516"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948730"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Överföra data manuellt mellan två konton
 
@@ -106,3 +106,7 @@ Be användare [flytta sin e-post, sina kontakter, uppgifter och kalenderinformat
 ### <a name="onedrive-for-business-data"></a>OneDrive för företag-data:
 
 Be användare att kopiera eller synkronisera [OneDrive för företag-innehåll till sin dator](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd)och sedan lägga till det igen i sitt nya abonnemang.
+
+### <a name="onenote"></a>OneNote 
+
+Be användare [säkerhetskopiera OneNote](https://support.microsoft.com/office/back-up-notes-f58b34b0-611d-435e-87fa-7942a1767af4?ui=en-us&rs=en-us&ad=us) och [Återställa anteckningar från en säkerhets kopia](https://support.microsoft.com/en-us/office/restore-notes-from-a-backup-5daf9cb0-6769-4998-a5de-f044fdd0d831?ui=en-us&rs=en-us&ad=us) till deras nya abonnemang.

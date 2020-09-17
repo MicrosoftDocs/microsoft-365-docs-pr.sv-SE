@@ -1,7 +1,7 @@
 ---
-title: Automatiserade funktioner för undersökning och svar i Microsofts hotskydd
-description: Få en översikt över automatiska funktioner för undersökningar och svar i Microsoft Threat Protection
-keywords: automatiserad, utredning, alert, utlösa, åtgärder, sanering
+title: Automatiserad undersökning och svars funktioner i Microsoft Threat Protection
+description: Få en översikt över automatiserade undersökningar och svars funktioner i Microsoft Threat Protection
+keywords: automatiserad, undersökning, avisering, utlösare, åtgärd, reparation
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -18,69 +18,69 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: c45b7d1b01ee776e9519d67ee52d36b8f48bf0ef
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 9fc4c99254f4f27b476930a555b237be093bff24
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552360"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950730"
 ---
-# <a name="automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>Automatiserade funktioner för undersökning och svar i Microsofts hotskydd
+# <a name="automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>Automatiserad undersökning och svars funktioner i Microsoft Threat Protection
 
-**Gäller:**
+**Gäller för:**
 - Microsoft Hotskydd
 
-När säkerhetsaviseringar utlöses är det upp till säkerhetsoperationsteamet att titta på dessa aviseringar och vidta åtgärder för att skydda din organisation. Att prioritera och utreda varningar kan vara mycket tidskrävande, särskilt när nya varningar fortsätter att komma in medan en utredning pågår. Säkerhetsteam kan känna sig överväldigade av den stora mängd hot de måste övervaka och skydda sig mot. Automatiserade funktioner för undersökning och svar (kallas även *automatiska självläkningsfunktioner)* i Microsoft Threat Protection kan hjälpa dig. 
+När säkerhets varningar utlöses är det upp till din säkerhets åtgärds grupp för att titta på dessa meddelanden och vidta åtgärder för att skydda din organisation. Det kan ta väldigt lång tid att prioritera och undersöka aviseringar, särskilt när nya meddelanden fortsätter när en undersökning pågår. Säkerhets Operations team kan känna av sig som skir volymen av de hot som de måste övervaka och skydda mot. Automatiserade undersökningar och svars funktioner (kallas även för *själv lagning* ) i Microsoft Threat Protection kan hjälpa dig. 
 
-Titta på följande video för att se hur automatiserade självläkningsfunktioner fungerar:
+Titta på följande video för att se hur automatisk återställning fungerar:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
-Automatiserad undersökning och svar är som att ha en virtuell analytiker i ditt säkerhetscenter.
+Den automatiska undersökningen och svaret är som att ha en virtuell analytiker i säkerhets åtgärds centret.
 
 ## <a name="your-virtual-analyst"></a>Din virtuella analytiker
 
-Tänk dig att ha en virtuell analytiker i din Nivå 1 / Tier 2 säkerhetsoperationer team. Den virtuella analytikern härmar de idealiska åtgärder som säkerhetsåtgärder skulle vidta för att undersöka och åtgärda hot. Den virtuella assistenten kan arbeta 24x7, med obegränsad kapacitet, och ta på en betydande belastning av utredningar och hot sanering. En sådan virtuell assistent kan avsevärt minska tiden för att svara, vilket frigör ditt säkerhetsoperationsteam för andra viktiga strategiska projekt. Om detta scenario låter som science fiction, det är det inte! En sådan virtuell analytiker är en del av din Microsoft Threat Protection suite, och dess namn är *automatiserad undersökning och svar*.
+Föreställ dig att du har en virtuell analys i ditt team för säkerhets åtgärder för nivå 1/nivå 2. Den virtuella analytikern imiterar de idealiska stegen som säkerhets åtgärder skulle vidta för att undersöka och åtgärda hot. Den virtuella assistenten kan arbeta dygnet runt, med obegränsad kapacitet och få en omfattande inläsning av undersökningar och hot. En sådan virtuell assistent kan avsevärt minska tiden för att svara och på så sätt frigöra dina säkerhets åtgärder för andra viktiga strategiska projekt. Om det här scenariot liknar vetenskaps gilla är det inte! Sådan virtuell analytiker är en del av ditt Microsoft Threat Protection Suite och dess namn är en *Automatisk undersökning och ett svar*.
 
-Automatiserad undersökning och svar gör det möjligt för din säkerhetsoperationsgrupp att dramatiskt öka organisationens kapacitet att hantera säkerhetsaviseringar och incidenter. Med automatiserad undersökning och svar kan du minska kostnaderna för att hantera utrednings- och saneringsaktiviteter och få ut det mesta av din hotskyddssvit. automatisk undersökning och svar hjälper ditt säkerhetsteam genom att:
+Med den automatiska undersökningen och svaret kan säkerhets åtgärds gruppen markant öka organisationens kapacitet att hantera säkerhets varningar och-händelser. Genom att automatisera undersökningar och svar kan du minska kostnaderna för att hantera undersökningar och reparations aktiviteter och få ut mesta möjliga av skydds paketet. automatisk undersökning och svar hjälper din säkerhets åtgärd att:
 
-1. Avgöra om ett hot kräver åtgärder.
-2. Utföra (eller rekommendera) nödvändiga saneringsåtgärder;
-3. Fastställande av vilka ytterligare undersökningar som bör ske. Och
-4. Upprepa processen efter behov för andra aviseringar.
+1. Avgöra om ett hot kräver en åtgärd;
+2. Utföra (eller rekommendera) alla nödvändiga reparations åtgärder;
+3. Avgöra vilka ytterligare undersökningar som bör uppstå; och
+4. Upprepa processen när det behövs för andra aviseringar.
 
-## <a name="the-automated-investigation-process"></a>Den automatiserade utredningsprocessen
+## <a name="the-automated-investigation-process"></a>Den automatiserade gransknings processen
 
-**Varning**  >  **incident**  >  **automatiserad undersökning**  >  **dom**  >  **åtgärder för att åtgärda**
+**Avisering**  >  **incident**  >  **Automatisk undersökning**  >  **Verdict**  >  **reparations åtgärd**
 
-En utlöst avisering skapar en incident som kan starta en automatiserad undersökning. Den undersökningen kan resultera i en eller flera åtgärder. I Microsoft Threat Protection korrelerar varje automatiserad undersökning signaler över Azure Advanced Threat Protection (Azure ATP), Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) och Office 365 Advanced Threat Protection (Office 365 ATP), som sammanfattas i följande tabell: 
+En utlöst varning skapar en olycka som kan starta en automatiserad undersökning. Denna undersökning kan resultera i en eller flera reparations åtgärder. I Microsoft hot Protection är varje automatiserad undersökning en uppdelad över hela Azure Advanced Threat Protection (Azure ATP), Microsoft Defender Avancerat skydd (Microsoft Defender ATP) och Office 365 Avancerat skydd (Office 365 ATP), som sammanfattas i följande tabell: 
 
-|Enheter |Tjänster för skydd av hot  |
+|Posterna |Hot Protection Services  |
 |---------|---------|
-|Enheter (kallas även slutpunkter)     |[Microsoft Defender Avancerat skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
-|E-postinnehåll (filer och meddelanden i postlådor)     |[Skaffa Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
+|Enheter (kallas även slut punkter)     |[Microsoft Defender Avancerat skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
+|E-postinnehåll (filer och meddelanden i post lådor)     |[Skaffa Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-Varje undersökning genererar domar (*Malicious*, *Suspicious*, or *No threats found*) för varje bevis som undersökts. Beroende på vilken typ av hot och resulterande dom, reparationsåtgärder sker automatiskt eller efter godkännande av organisationens säkerhetsoperationer team. Väntande och slutförda åtgärder visas i [åtgärdscentret](mtp-action-center.md).
+Varje undersökning ger upphov till verdicts (*skadlig*, *misstänkt*eller *Inga hot*) för varje undersöknings bevis. Beroende på typen av hot och resulterande Verdict inträffar reparations åtgärder automatiskt eller efter godkännande av organisationens säkerhets åtgärds team. Pågående och slutförda åtgärder visas i [Åtgärds centret](mtp-action-center.md).
 
 > [!TIP]
-> Om du tror att något missades eller felaktigt upptäcktes av automatiska undersöknings- och svarsfunktioner i Microsoft Threat Protection, låt oss veta! Se [Så här rapporterar du falska positiva identifieringar/negativ i automatiska funktioner för undersökningar och svar i Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
+> Om du tror att något har missats eller upptäckts felaktigt av den automatiska undersöknings-och svars funktionerna i Microsoft Threat Protection, tala om det för oss! Lär dig [hur du rapporterar falskta positiva eller negativa negativ i automatiserad undersökning och svars funktioner i Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
-Medan en undersökning pågår läggs alla andra relaterade aviseringar som uppstår till i undersökningen tills den är klar. Om en angripen enhet visas någon annanstans utökas dess omfattning till att omfatta den enheten och en allmän säkerhetsspelbok körs. 
+När en undersökning körs läggs eventuella andra relaterade aviseringar till i undersökningen tills den är klar. Om en incriminated-enhet visas någon annan stans expanderar den automatiserade undersökningen dess omfattning för att inkludera den enheten och en allmän säkerhets Playbook körs. 
 
 > [!NOTE]
-> Inte varje varning utlöser en automatiserad undersökning, och inte varje undersökning resulterar i automatiserade saneringsåtgärder; Allt detta beror på hur automatisk undersökning och svar är konfigurerad för din organisation. 
+> Alla notifieringar utlöser en automatiserad undersökning och alla undersöknings resultat leder till automatiska reparations åtgärder; Detta beror på hur automatisk undersökning och svar är konfigurerat för din organisation. 
 
-## <a name="requirements-for-automated-investigation-and-response-in-microsoft-threat-protection"></a>Krav för automatisk undersökning och svar i Microsoft Threat Protection
+## <a name="requirements-for-automated-investigation-and-response-in-microsoft-threat-protection"></a>Krav för automatisk undersökning och svar i skydd mot Microsoft-hotet
 
 |Krav |Information |
 |--|--|
-|Krav på prenumeration |Något av följande: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 A5 <br/>- Microsoft 365 E5 Säkerhet<br/>- Microsoft 365 A5 Säkerhet<br/>- Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5<br/><br/>Se [Licenskraven för Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?#licensing-requirements).|
-|Nätverkskrav |- [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) aktiverat<br/>- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) (MCAS) konfigurerad<br/>- [MCAS integrerat med Azure ATP](https://docs.microsoft.com/cloud-app-security/aatp-integration) |
-|Krav på Windows-datorer |- Windows 10, version 1709 eller senare installerad (Se [Windows 10-utgivningsinformation)](https://docs.microsoft.com/windows/release-information/)med följande hotskyddstjänster konfigurerade:<br/>- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) <br/>- [Antivirusprogram för Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) |
-|Skydd för e-postinnehåll och Office-filer |[Office 365 Avancerat skydd mot hot](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
-|Behörigheter |- Om du vill konfigurera automatisk undersökning och svar måste rollen Global administratör eller säkerhetsadministratör tilldelas i Antingen Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) eller i Microsoft 365 administrationscenter ( [https://admin.microsoft.com](https://admin.microsoft.com) ).<br/><br/>- Information om hur du använder automatiska funktioner för undersökning och svar finns [i Obligatoriska behörigheter för åtgärdscenteruppgifter](mtp-action-center.md#required-permissions-for-action-center-tasks). |
+|Abonnemangs krav |Något av följande: <br/>-Microsoft 365 E5 <br/>-Microsoft 365 A5 <br/>-Microsoft 365 E5-säkerhet<br/>-Microsoft 365 A5-säkerhet<br/>-Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5<br/><br/>Se [licens krav för Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?#licensing-requirements).|
+|Nätverks krav |- [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) aktiverat<br/>- [Microsoft Cloud App-säkerhet](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) (MCAS) har kon figurer ATS<br/>- [MCAS integrerad med Azure ATP](https://docs.microsoft.com/cloud-app-security/aatp-integration) |
+|System krav för Windows |-Windows 10, version 1709 eller senare installerad (se [Windows 10](https://docs.microsoft.com/windows/release-information/)-versions information) med följande skydds tjänster konfigurerade:<br/>- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) <br/>- [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) |
+|Skydd för e-postinnehåll och Office-filer |[Office 365 Avancerat skydd för skyddare](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
+|Behörigheter |-För att konfigurera automatisk undersökning och svar måste du ha rollen global administratör eller säkerhets administratör tilldelad i antingen Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) eller i Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ).<br/><br/>-För att använda automatiska undersökningar och svars funktioner, se [nödvändiga behörigheter för åtgärds Center uppgifter](mtp-action-center.md#required-permissions-for-action-center-tasks). |
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Godkänna eller avvisa åtgärder relaterade till automatisk undersökning och svar](mtp-autoir-actions.md)
-- [Läs mer om Åtgärdscentret](mtp-action-center.md)
+- [Godkänna eller avvisa åtgärder relaterade till automatiserad undersökning och svar](mtp-autoir-actions.md)
+- [Läs mer om åtgärds Center](mtp-action-center.md)

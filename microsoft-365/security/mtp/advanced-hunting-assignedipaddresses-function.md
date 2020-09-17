@@ -17,30 +17,29 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 72d02bafa168e48c2d588771f5289da09e6d6000
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: 4ee07abe7ce1432921a843d713d0f9b914631174
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794237"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949318"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
 **Gäller för:**
 - Microsoft Hotskydd
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+Använd `AssignedIPAddresses()` funktionen för att snabbt få de senaste IP-adresserna som har tilldelats till en enhet. Om du anger ett timestamp-argument får den här funktionen de senaste IP-adresserna vid den angivna tiden. 
 
-Använd `AssignedIPAddresses()` funktionen för att snabbt få de senaste IP-adresserna som har tilldelats till en enhet eller de senaste IP-adresserna från en viss tidpunkt. Den här funktionen returnerar en tabell med följande kolumner:
+Den här funktionen returnerar en tabell med följande kolumner:
 
 | Kolumn | Datatyp | Beskrivning |
 |------------|-------------|-------------|
-| Tids | datetime | Senaste gången när enheten observerats med hjälp av IP-adressen |
-| IP | strängvärdet | IP-adress som används av enheten |
-| IPType | strängvärdet | Anger om IP-adressen är en offentlig eller privat adress |
-| NetworkAdapterType | signera | Nätverkskort typ som används av enheten som tilldelats IP-adressen. För möjliga värden, se [den här uppräkningen](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2)  |
-| ConnectedNetworks | signera | Nätverk som adaptern med den tilldelade IP-adressen är ansluten till. Varje JSON-matris innehåller nätverks namnet, kategorin (offentlig, privat eller domän), en beskrivning och en flagga som anger om den är ansluten offentligt till Internet |
-
+| `Timestamp` | datetime | Senaste gången när enheten observerats med hjälp av IP-adressen |
+| `IPAddress` | strängvärdet | IP-adress som används av enheten |
+| `IPType` | strängvärdet | Anger om IP-adressen är en offentlig eller privat adress |
+| `NetworkAdapterType` | signera | Nätverkskort typ som används av enheten som tilldelats IP-adressen. För möjliga värden, se [den här uppräkningen](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `ConnectedNetworks` | signera | Nätverk som adaptern med den tilldelade IP-adressen är ansluten till. Varje JSON-matris innehåller nätverks namnet, kategorin (offentlig, privat eller domän), en beskrivning och en flagga som anger om den är ansluten offentligt till Internet |
 
 ## <a name="syntax"></a>Frågesyntaxen
 
@@ -50,12 +49,12 @@ AssignedIPAddresses(x, y)
 
 ## <a name="arguments"></a>Argument
 
-- **x** – `DeviceId` eller `DeviceName` värde som identifierar enheten
-- **y** – `Timestamp` (datetime) värde som anger den specifika tidpunkt då de senaste IP-adresserna ska visas. Om inget anges returnerar funktionen de senaste IP-adresserna.
+- **x**– `DeviceId` eller `DeviceName` värde som identifierar enheten
+- **y**– `Timestamp` (datetime)-värde som anger funktionen för att hämta de senaste tilldelade IP-adresserna från en viss tidpunkt. Om inget anges returnerar funktionen de senaste IP-adresserna.
 
 ## <a name="examples"></a>Exempel
 
-### <a name="get-the-list-of-ip-addresses-used-by-a-device-as-of-24-hours-ago"></a>Hämta listan med IP-adresser som används av en enhet per 24 timmar sedan
+### <a name="get-the-list-of-ip-addresses-used-by-a-device-24-hours-ago"></a>Hämta listan med IP-adresser som används av en enhet för mer än 24 timmar sedan
 
 ```kusto
 AssignedIPAddresses('example-device-name', ago(1d))

@@ -6,17 +6,17 @@ manager: pamgreen
 ms.date: 08/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Få en översikt över dokument kunskapen i Project cortex.
-ms.openlocfilehash: bdebc8a8726a7b9a77eb9a1095f83e937cf36cb1
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: c1e4092164ee96d4f244f10be9ebab62a2c8da5b
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612720"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950054"
 ---
 # <a name="document-understanding-overview-preview"></a>Dokument översikt (för hands version)
 > [!Note] 
@@ -36,7 +36,7 @@ Du kan lägga till *klassificerare* och *utdrag* i dina dokument för att göra 
 
 - Klassificerare används för att identifiera och klassificera dokument som laddas upp till dokument biblioteket. En klassificerare kan till exempel vara "utbildad" för att identifiera alla *förnyelse* dokument som laddas upp till biblioteket. Innehålls typen kontrakt förnyelse definieras av dig när du skapar en klassificerare.
 
-- Utdrag ur dessa dokument. För alla kontrakt förnyelse dokument som identifieras i dokument biblioteket visas kolumnerna i vyn som också visar *tjänstens start datum* och *klient* för varje kontrakts förnyelse dokument. 
+- Utdrag ur dessa dokument. För alla kontrakt förnyelse dokument som identifieras i dokument biblioteket visas kolumnerna i vyn som också visar *tjänstens start datum* och  *klient* för varje kontrakts förnyelse dokument. 
 
 Du använder exempel filer för att träna och testa dina klassificerare och utdrag i din modell. Exempel på filer ger modellen ett exempel på vad du kan leta efter när du försöker identifiera och hämta data från filer. Du kan till exempel utbilda dina klassificeringar och utdrag med ett exempel på förnyelse dokument som företaget samarbetar med. Du kan också använda exempel filer för att testa effektiviteten hos modellen.
 

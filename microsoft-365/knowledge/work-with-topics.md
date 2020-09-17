@@ -7,16 +7,16 @@ manager: pamgreen
 ms.date: 08/01/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: e4a9917464e22c6220d26619e7b5ca60f090abb7
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 82a1b1990f464a892b8216caa26e0422b093bf37
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612496"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948060"
 ---
 # <a name="work-with-topics-in-the-topic-center-preview"></a>Arbeta med ämnen i ämnes centret (för hands version)
 
@@ -70,7 +70,7 @@ Så här skapar du ett nytt ämne:
     c. Skriv en eller två meningar för ämnet i avsnittet **kort beskrivning** . Den här texten används för det associerade ämnes kortet.</br>
     d. Skriv namnen på ämnes experterna i avsnittet **personer** .</br>
     e. I avsnittet **filer och sidor** väljer du **Lägg till** och på nästa sida kan du välja associerade OneDrive-filer eller SharePoint Online-sidor.</br>
-    f. I avsnittet **Sites** väljer du **Add**. I fönstret **webbplatser** som visas väljer du de webbplatser som är kopplade till avsnittet.</br>
+    f. I avsnittet **Sites** väljer du **Add**. I fönstret  **webbplatser** som visas väljer du de webbplatser som är kopplade till avsnittet.</br>
 
     ![Sidan ny ämne](../media/content-understanding/k-new-topic-page.png) </br>
 3. Om du behöver lägga till andra komponenter på sidan, till exempel text, bilder, webb delar, länkar o.s.v., väljer du ikonen arbets yta mitt på sidan för att hitta och lägga till dem.
