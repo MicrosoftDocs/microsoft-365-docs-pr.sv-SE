@@ -3,7 +3,7 @@ title: Implementera VPN-fildelning för Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 6/15/2020
+ms.date: 9/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Så här implementerar du delade VPN-tunnlar för Office 365
-ms.openlocfilehash: 1fa86501e9cf29ffd41ec5b25a86cc4f2b139d52
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: bfdc11ffe4244ec0ac83bb1c0470476aafeec939
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696749"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171428"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementera VPN-fildelning för Office 365
 
@@ -119,7 +119,7 @@ Mer information om Office 365-slutpunkter och hur de kategoriseras och hanteras 
 
 Aktuella optimerade URL-adresser finns i tabellen nedan. Under de flesta omständigheter behöver du bara använda URL-slutpunkter i en [webbläsar-PAC-fil](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic) där slut punkterna är konfigurerade att skickas direkt, i stället för till proxyservern.
 
-| Optimera URL: er | Port/protokoll | Ändamål |
+| Optimera URL: er | Port/protokoll | Syfte |
 | --- | --- | --- |
 | <https://outlook.office365.com> | TCP 443 | Det här är en av de primära URL-adresser som Outlook använder för att ansluta till Exchange Online-servern och har en stor mängd bandbredds användning och antal anslutningar. Det krävs för lite nätverks fördröjning för online-funktioner, till exempel: snabb sökning, andra post lådans kalendrar, ledig/upptagen-uppslagning, hantera regler och aviseringar, Exchange Online-arkivering, e-post som avvecklar Utkorg |
 | <https://outlook.office.com> | TCP 443 | Denna URL används för Outlook online Web Access för att ansluta till Exchange Online server och är känslig för nätverks fördröjning. Anslutningen är särskilt nödvändig för stor fil uppladdning och nedladdning med SharePoint Online. |
@@ -220,7 +220,7 @@ Vissa administratörer kan kräva mer detaljerad information om hur samtals flö
 
 ### <a name="configuration"></a>Konfiguration
 
-För både samtal och möten visas det lokala gränssnittet för Microsoft-destinationer i Microsofts IP-block ovan under förutsättning att de optimerade IP-näten för team medier fungerar korrekt i routningstabellen när Teams anropar _GetBestRoute_ -metoden för att avgöra vilket gränssnitt det ska använda för en viss destination.
+För både samtal och möten visas det lokala gränssnittet för Microsoft-destinationer i Microsofts IP-block ovan under förutsättning att de optimerade IP-näten för team medier fungerar korrekt i routningstabellen när Teams anropar funktionen [GetBestRoute](https://docs.microsoft.com/windows/win32/api/iphlpapi/nf-iphlpapi-getbestroute) för att avgöra vilket gränssnitt som ska användas för en viss destination.
 
 Vissa VPN-klientprogram tillåter cirkulations manipulering baserat på URL. Men det finns inga kopplade URL-adresser till gruppens medie trafik, så det är bara att kontrol lera routning för den här trafiken med hjälp av IP-undernät.
 
@@ -293,7 +293,7 @@ Nej, det gör inte att Office 365-slutpunkter inte är samma som konsument tjän
 
 ### <a name="how-do-i-apply-dlp-and-protect-my-sensitive-data-when-the-traffic-no-longer-flows-through-my-on-premises-solution"></a>Hur använder jag DLP och skyddar mina känsliga data när trafiken inte längre flödar genom min lokala lösning?
 
-Office 365 har många [inbyggda verktyg](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide)för att förhindra oavsiktlig visning av känslig information. Du kan använda de inbyggda DLP- [funktionerna](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide) i Teams och SharePoint för att upptäcka olämpligt lagrad eller delad känslig information. Om en del av din strategi för fjärr arbeten inbegriper en BYOD-princip (skaffa en person-egen enhet) kan du använda [app-baserad villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access) för att förhindra att känslig information hämtas till användarnas personliga enheter
+Office 365 har många [inbyggda verktyg](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)för att förhindra oavsiktlig visning av känslig information. Du kan använda de inbyggda DLP- [funktionerna](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) i Teams och SharePoint för att upptäcka olämpligt lagrad eller delad känslig information. Om en del av din strategi för fjärr arbeten inbegriper en BYOD-princip (skaffa en person-egen enhet) kan du använda [app-baserad villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access) för att förhindra att känslig information hämtas till användarnas personliga enheter
 
 ### <a name="how-do-i-evaluate-and-maintain-control-of-the-users-authentication-when-they-are-connecting-directly"></a>Hur utvärderar och underhåller jag kontrollen för användarens verifikation när de ansluter direkt?
 
@@ -307,7 +307,7 @@ Vi kan sedan utlösa princip som Godkänn, utlösa MFA-eller blockera-verifikati
 
 ### <a name="how-do-i-protect-against-viruses-and-malware"></a>Hur skyddar jag mot virus och skadlig program vara?
 
-Med Office 365 får du skydd för optimering av markerade slut punkter i olika lager i själva [tjänsten.](https://docs.microsoft.com/office365/Enterprise/office-365-malware-and-ransomware-protection) Som vi noterade är det mycket effektivare att tillhandahålla dessa säkerhets element i själva tjänsten i stället för att pröva och göra det i linje med enheter som kanske inte helt förstår protokoll/trafik. Standardinställningen är att SharePoint Online [automatiskt söker igenom fil överföringar](https://docs.microsoft.com/microsoft-365/security/office-365-security/virus-detection-in-spo?view=o365-worldwide) efter känt skadlig program vara
+Med Office 365 får du skydd för optimering av markerade slut punkter i olika lager i själva [tjänsten.](https://docs.microsoft.com/office365/Enterprise/office-365-malware-and-ransomware-protection) Som vi noterade är det mycket effektivare att tillhandahålla dessa säkerhets element i själva tjänsten i stället för att pröva och göra det i linje med enheter som kanske inte helt förstår protokoll/trafik. Standardinställningen är att SharePoint Online [automatiskt söker igenom fil överföringar](https://docs.microsoft.com/microsoft-365/security/office-365-security/virus-detection-in-spo) efter känt skadlig program vara
 
 För Exchange [Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) och [Office 365 Avancerat skydd](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) för de drifts slut punkter är det ett utmärkt jobb för att skydda trafiken till tjänsten.
 
@@ -323,7 +323,7 @@ Råd om hur du tillåter direkt åtkomst till ett virtuellt Azure-nätverk finns
 
 ### <a name="why-is-port-80-required-is-traffic-sent-in-the-clear"></a>Varför krävs port 80? Skickas trafiken i klartext?
 
-Port 80 används bara för att till exempel omdirigera till en port 443-session, inga kunddata skickas eller kan nås via port 80. I [den här artikeln](https://docs.microsoft.com/microsoft-365/compliance/encryption?view=o365-worldwide) finns en översikt över kryptering av data i transit och på andra delar av Office 365, och [den här artikeln](https://docs.microsoft.com/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic) beskriver hur vi använder srtp för att skydda Teams Media trafik.
+Port 80 används bara för att till exempel omdirigera till en port 443-session, inga kunddata skickas eller kan nås via port 80. I [den här artikeln](https://docs.microsoft.com/microsoft-365/compliance/encryption) finns en översikt över kryptering av data i transit och på andra delar av Office 365, och [den här artikeln](https://docs.microsoft.com/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic) beskriver hur vi använder srtp för att skydda Teams Media trafik.
 
 ### <a name="does-this-advice-apply-to-users-in-china-using-a-worldwide-instance-of-office-365"></a>Gäller de här råden för användare i Kina med en världs omspännande instans av Office 365?
 
@@ -341,8 +341,8 @@ Port 80 används bara för att till exempel omdirigera till en port 443-session,
 
 [Köra på VPN: hur Microsoft sköter fjärrarbets styrkan](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
-[Principer för nätverks anslutning för Office 365](microsoft-365-network-connectivity-principles.md)
+[Office 365 principer för nätverksanslutningar](microsoft-365-network-connectivity-principles.md)
 
-[Utvärdering av Office 365 nätverks anslutning](assessing-network-connectivity.md)
+[Utvärdera Nätverksanslutningar för Office 365](assessing-network-connectivity.md)
 
-[Office 365-nätverks-och prestanda inställning](network-planning-and-performance.md)
+[Office 365 nätverks- och prestandajustering](network-planning-and-performance.md)

@@ -17,16 +17,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om kampanjmallar i Office 365 Avancerat skydd.
-ms.openlocfilehash: 72662519177f4ac43e3de04e9755fd99f5ffb03f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 60ec8ea1d2c164905e7b57f4b518ea3f80e7986c
+ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867205"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48173314"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Analysvyer i Office 365 ATP
 
-Kampanjmallar är en funktion i abonnemanget Avancerat skydd (ATP) (till exempel Microsoft 365 E5 eller organisationer med ett ATP-abonnemang 2-tillägg). I Campaing i säkerhets & identifieras och kategoriseras nät fiske attacker i tjänsten. Med hjälp av kampanjmallar kan du:
+Kampanjmallar är en funktion i abonnemanget Avancerat skydd (ATP) (till exempel Microsoft 365 E5 eller organisationer med ett ATP-abonnemang 2-tillägg). I vyn kampanjer i säkerhets & identifieras och kategoriseras nätfiske-attacker i tjänsten. Med hjälp av kampanjmallar kan du:
 
 - Undersök och svara på nät fiske attacker effektivt.
 - Bättre förståelse för attackens omfattning.
@@ -47,7 +47,7 @@ Microsoft utnyttjar de stora mängderna nätfiske, anti-spam och data mot skadli
 
 En kampanj kan vara kort livs längd eller kunna omfatta flera dagar, veckor eller månader med aktiva och inaktiva perioder. En kampanj kan startas mot din specifika organisation, eller så kan din organisation vara en del av en större kampanj i flera företag.
 
-## <a name="campaign-views-the-security--compliance-center"></a>Kampanjmallar säkerhets &
+## <a name="campaign-views-in-the-security--compliance-center"></a>Kampanjmallar i säkerhets & efterlevnad
 
 Kampanjmallar är tillgängligt i [säkerhets & Compliance Center](https://protection.office.com) med kampanjer för **Threat Management** \> **Campaigns**eller direkt vid <https://protection.office.com/campaigns> .
 

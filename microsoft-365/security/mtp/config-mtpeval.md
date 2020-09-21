@@ -1,9 +1,29 @@
 ---
-Titel: Konfigurera Microsoft Threat Protectionspel för utvärderings labbet eller pilot miljö beskrivningen: Konfigurera Microsoft Threat Protection-pelare: Office 365 ATP, Azure ATP, Microsoft Cloud App Security och Microsoft Defender ATP för utvärderings labb och pilot miljö.
-Nyckelord: Konfigurera utvärderings versionen av Microsoft Threat Protection, Microsoft Threat Protection-utvärderings version, konfigurera Microsoft Threat Protection Pilot-projekt, konfigurera Microsoft Threat Protection-pelare, Microsoft Threat Protection-översikter Sök. produkt: eADQiWindows 10XVcnh search. appverid: met150 MS. Prod: W10 MS. mktglfcycl: Distribuera MS. sitesec: bibliotek MS. pageType: Security MS. author: dolmont  
-författare: DulceMontemayor MS. localizationpriority: medel chef: dansimp mål grupp: ITPro MS. Collection: M365-Security-kompabilitet MS. topic: artikeln 
+title: Konfigurera Microsoft Threat Protection-pelare för utvärderings labbet eller pilot miljön
+description: Konfigurera skydd mot Microsoft Threat Protection, till exempel Office 365 ATP, Azure ATP, Microsoft Cloud App Security och Microsoft Defender ATP, för utvärderings labbet eller pilot miljön.
+keywords: Konfigurera utvärderings versionen av Microsoft Threat Protection, test version av Microsoft Threat Protection, konfigurera Microsoft Threat Protection Pilot-projekt, konfigurera Microsoft Threat Protection-spel, Microsoft Threat Protection-pelare
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: microsoft-365-enterprise
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+f1.keywords:
+- NOCSH
+ms.author: dolmont
+author: DulceMontemayor
+ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.openlocfilehash: 4d751ec5eb786a91d62ab11988132bfed076984d
+ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47956268"
 ---
-
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-or-pilot-environment"></a>Konfigurera skydd mot Microsoft Threat för utvärderings labbet eller pilot miljön
 
 **Gäller för:**
@@ -43,7 +63,7 @@ Förberedelsen är viktig för eventuell distribution. I den här artikeln ska d
 
 ## <a name="microsoft-threat-protection-pillars"></a>Microsoft Threat Protection-pelare
 Microsoft Threat Protection består av fyra pelare. Även om en pelare redan kan ge ett värde till din nätverks organisations säkerhet, ger det fyra till gång till din organisation flest värde.
-
+<br>
 ![Of_Microsoft hot skydds lösning för användare, Azure Avancerat skydd för slut punkter Microsoft Defender Avancerat skydd, för Cloud-appar, Microsoft Cloud App-säkerhet och för data, Office 365 Avancerat skydd  ](../../media/mtp-eval-31.png) <br>
 
 I det här avsnittet får du hjälp att konfigurera:
@@ -121,7 +141,7 @@ Det finns en PowerShell-modul som heter *Office 365 Advanced Threat Protection (
 <br>![Bild of_Azure sidan för avancerat skydd där du bör Klicka på Nästa för att följa Azure ATP-sensor guiden](../../media/mtp-eval-47.png) <br>
  
 7. Klicka på **Nästa** på sensor distributions typen.
-<br>![Bild of_Azure sidan för avancerat skydd där du bör Klicka på Nästa för att följa Azure ATP-sensor guiden](../../media/mtp-eval-48.png) <br>
+<br>![Bild of_Azure sidan för avancerat skydd för hotet där du bör Klicka på Nästa för att gå till nästa sida](../../media/mtp-eval-48.png) <br>
  
 8. Kopiera snabb tangenten eftersom du måste ange den intill i guiden.
 ![Bild of_the sensorer-sida där du vill kopiera den snabb åtkomst du behöver ange på nästa sida med guiden för Azure ATP-sensor](../../media/mtp-eval-49.png) <br>
@@ -233,5 +253,6 @@ Grattis! Du har just skapat ett utvärderings labb för Microsoft Threat Protect
 
 Sedan kan du simulera en attack och se hur funktionerna för kors produkten identifieras, skapa aviseringar och automatiskt svara på en fillös attack på en slut punkt.
 
-## <a name="next-steps"></a>Nästa steg
-[Skapa en test avisering](generate-test-alert.md).
+## <a name="next-step"></a>Nästa steg
+|![Fasen för attack simulering](../../media/mtp/run-sim.png) <br>[Fasen för attack simulering](mtp-pilot-simulate.md) | Kör angrepps simuleringen för din pilot miljö för Microsoft Threat Protection.
+|:-------|:-----|

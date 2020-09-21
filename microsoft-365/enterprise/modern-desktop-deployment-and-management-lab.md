@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Läs mer om Deployment Lab kit för Windows och Office, och var du hittar det.
-ms.openlocfilehash: 09441f879fa41d1b920aae7d37625d0a52160d84
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: bf49a815c0d3d952187f863120865ab3aa4674fc
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949886"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171416"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Distributions labb paketet för Windows och Office
 
@@ -54,35 +54,47 @@ Dessutom är labbet utformat för anslutning till utvärderingsversioner av:
 Du får utföra flera labbuppgifter för olika distributions- och hanteringsscenarier med detaljerad vägledning. Labbuppgifterna har uppdaterats för de senaste versionerna av Intune och Configuration Manager. 
 
 ### <a name="plan-and-prepare-infrastructure"></a>Planera och förbereda infrastruktur 
-Desktop Analytics   
-Cloud Management Gateway & moln distributions plats för klient organisation koppla, samar beta och byte av arbets belastning    
-Fjärråtkomst
+- Desktop Analytics 
+- Cloud Management Gateway & moln distributions plats 
+- Anslut till klient organisation, samtidig hantering och byte av arbets belastning  
+- Fjärråtkomst (VPN) 
 
 ### <a name="prepare-configuration"></a>Förbered konfiguration   
-Optimera Windows 10 uppdatering leverans underhåll Windows 10 med grup princip underhåll Windows 10 med hjälp av Microsoft Intune Servicing Windows 10 med Configuration 365 Manager-program för företag med Configuration Manager-tjänsten Microsoft 365-appar för företag med Intune    
-Säkerhet och efterlevnad 
+- Optimera leverans i Windows 10   
+- Underhålla Windows 10 med grup princip
+- Underhålla Windows 10 med hjälp av Microsoft Intune   
+- Underhålla Windows 10 med Configuration Manager   
+- Underhålla Microsoft 365-appar för företag med Configuration Manager   
+- Underhålla Microsoft 365-appar för företag med Intune  
+- Säkerhet och efterlevnad   
 
 ### <a name="prepare-applications"></a>Förbereda program    
-Readiness Toolkit för Office    
-MSIX packning och konvertering av Win32-program 
+- Readiness Toolkit för Office  
+- MSIX packning och konvertering av Win32-program   
 
 ### <a name="deploy-windows-10"></a>Distribuera Windows 10   
-OS Deployment-aktivitetssekvenser i Configuration Manager OS Deployment aktivitetssekvenser i MDT Windows autopilot distribuera och hantera den nya Microsoft Edge    
+- Aktivitetssekvensdistributioner i Configuration Manager
+- OS Deployment-aktivitetssekvenser i MDT   
+- Windows Autopilot
+- Distribuera och hantera den nya Microsoft Edge  
 
 ### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Distribuera Microsoft 365-appar för företag    
-Cloud Managed Deployment    
-Lokalt hanterad distribution  
-Microsoft 365-appar för företags distribution på icke-annons anslutna enheter   
-Hanterad företags distribution med Configuration Manager Enterprise Managed Deployment med Microsoft Intune    
-Distribution och hantering av LOB med Microsoft Intune distribuera Microsoft Teams
+- Cloud Managed Deployment  
+- Lokalt hanterad distribution    
+- Microsoft 365-appar för företags distribution på icke-annons anslutna enheter 
+- Hanterad företags distribution med Configuration Manager
+- Hanterad företags distribution med Microsoft Intune  
+- Distribution och hantering av LOB med Microsoft Intune
+- Distribuera Microsoft Teams
 
 ### <a name="deploy-windows-virtual-desktop"></a>Distribuera virtuellt skriv bord i Windows  
+- Förbereda, distribuera, optimera
  
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Ladda ned Windows and Office Deployment Lab Kit
 
 [Ladda ned Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Använd en bred bandbredd för att ladda ner innehållet så att det blir lättare att ladda ner och tillåta att 30-45 minuter för automatisk etablering. Laboratorie miljön kräver minst 16 GB tillgängligt minne och 150 GB fritt disk utrymme. För optimal prestanda rekommenderas 32 GB tillgängligt minne. Lab: a upphör 4 december 2020. En ny version publiceras innan den upphör att gälla.*
+*Använd en bred bandbredd för att ladda ner innehållet så att det blir lättare att ladda ner och tillåta att 30-45 minuter för automatisk etablering. Laboratorie miljön kräver minst 16 GB tillgängligt minne och 150 GB fritt disk utrymme. För optimal prestanda rekommenderas 32 GB tillgängligt minne. Lab: a upphör 5 december 2020. En ny version publiceras innan den upphör att gälla.*
 
 ## <a name="additional-guidance"></a>Ytterligare vägledning
 

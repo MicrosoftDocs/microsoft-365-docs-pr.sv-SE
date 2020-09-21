@@ -1,7 +1,7 @@
 ---
 title: Godkänna eller avvisa väntande åtgärder efter en automatisk undersökning
-description: Använd Åtgärdscentret för att hantera åtgärder som är relaterade till automatiserad undersökning och svar
-keywords: åtgärd, centrum, autoair, automatiserad, utredning, svar, sanering
+description: Använd åtgärds centret för att hantera åtgärder relaterade till automatiserad undersökning och svar
+keywords: åtgärd, Center, autoair, automatiserad, undersökning, svar, reparation
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -18,52 +18,51 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 725d22629d2c81a0edf8f329602214afddde6511
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.reviewer: evaldm, isco
+ms.date: 09/16/2020
+ms.openlocfilehash: d7739ac6184509abe4df3aaf140db66f6039717c
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42809005"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962659"
 ---
 # <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>Godkänna eller avvisa väntande åtgärder efter en automatisk undersökning
 
-**Gäller:**
-- Skydd av Hot mot Microsoft
+**Gäller för:**
+- Microsoft Hotskydd
 
-När en automatiserad undersökning körs kan det resultera i en eller flera [reparationsåtgärder](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) som kräver godkännande för att fortsätta. Ett kluster med e-postmeddelanden kan till exempel behöva tas bort, eller så kan en fil i karantän behöva tas bort. Det är viktigt att godkänna (eller avvisa) pågående åtgärder så snart som möjligt så att dina automatiserade undersökningar kan fortsätta och slutföra i tid. 
+När en automatisk undersökning körs kan den resultera i en eller flera [reparations åtgärder](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) som kräver godkännande för att fortsätta. Ett kluster med e-postmeddelanden kan till exempel behöva tas bort, eller så måste en fil i karantän tas bort. Det är viktigt att godkänna (eller avvisa) pågående åtgärder så snart som möjligt så att dina automatiserade utredningar kan fortsätta och genomföras i god tid. 
 
 > [!TIP]
-> Om du tror att något har missats eller upptäckts felaktigt genom automatiskundersökning och svarsfunktioner i Microsoft Threat Protection, låt oss veta! Se [Hur du rapporterar falska positiva/negativa effekter i AIR-funktioner (Automated Investigation and Response) i Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
+> Om du tror att något har missats eller upptäckts felaktigt av den automatiska undersöknings-och svars funktionerna i Microsoft Threat Protection, tala om det för oss! Lär dig [hur du rapporterar falskta positiva eller negativa negativ i en automatiserad undersökning och svar (Air) i Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
-Väntande åtgärder kan granskas och godkännas med hjälp av [åtgärdscentret](#review-a-pending-action-in-the-action-center) eller [undersökningsinformationsvyn](#review-a-pending-action-in-the-investigation-details-view).
+Väntande åtgärder kan granskas och godkännas med hjälp av [Åtgärds centret](#review-a-pending-action-in-the-action-center) eller [vyn granska information](#review-a-pending-action-in-the-investigation-details-view).
 
 > [!NOTE]
-> Du måste ha [rätt behörighet](mtp-action-center.md#required-permissions-for-action-center-tasks) för att godkänna eller avvisa reparationsåtgärder.
+> Du måste ha [rätt behörighet](mtp-action-center.md#required-permissions-for-action-center-tasks) för att godkänna eller avvisa reparations åtgärder.
 
-## <a name="review-a-pending-action-in-the-action-center"></a>Granska en väntande åtgärd i åtgärdscentret
+## <a name="review-a-pending-action-in-the-action-center"></a>Granska en väntande åtgärd i åtgärds centret
 
-1. Gå [https://security.microsoft.com](https://security.microsoft.com) till och logga in. 
+1. Gå till [https://security.microsoft.com](https://security.microsoft.com) och logga in. 
 
-2. Välj **Åtgärdscenter i**navigeringsfönstret . 
+2. I navigerings fönstret väljer du **Åtgärds Center**. 
 
-3. Välj ett objekt i listan på fliken **Väntande** i Åtgärdscenter. 
+3. På fliken **förestående** i åtgärds Center väljer du ett objekt i listan. 
 
-    - Om du väljer ett objekt i kolumnen **Utredningsnummer** öppnas sidan för undersökningsinformation. Där kan du visa resultatet av undersökningen och sedan antingen godkänna eller avvisa den rekommenderade åtgärden.
+    - Om du markerar ett objekt i kolumnen **analys nummer** öppnas sidan med gransknings information. Där kan du se resultatet av undersökningen och sedan antingen godkänna eller avvisa den rekommenderade åtgärden.
  
-    - Om du väljer en rad i listan öppnas ett utfällbart objekt där du kan visa information om objektet. <br/>![Godkänna eller avvisa en åtgärd](../../media/air-actioncenter-itemselected.png)<br/>Använd länkarna för att visa en associerad avisering eller en undersökning och godkänna eller avvisa åtgärden.
+    - Om du markerar en rad i listan öppnas en utfällbar tabell där du kan visa information om objektet. <br/>![Godkänna eller avvisa en åtgärd](../../media/air-actioncenter-itemselected.png)<br/>Använd länkarna för att visa en associerad avisering eller en undersökning och godkänna eller avvisa åtgärden.
 
-## <a name="review-a-pending-action-in-the-investigation-details-view"></a>Granska en väntande åtgärd i vyn för utredningsinformation
+## <a name="review-a-pending-action-in-the-investigation-details-view"></a>Granska en väntande åtgärd i vyn granska information
 
-![Uppgifter om utredning](../../media/mtp-air-investdetails.png)
+![Gransknings uppgifter](../../media/mtp-air-investdetails.png)
 
-1. På en [sida med undersökningsinformation](mtp-autoir-results.md) väljer du fliken **Väntande åtgärder** (eller **Åtgärder).**
+1. På en [undersöknings](mtp-autoir-results.md) sida väljer du fliken **pågående åtgärder** (eller **åtgärder**). Objekt som väntar på godkännande finns här.
 
-2. Markera ett objekt i listan och välj sedan **Godkänna** eller **Avvisa**.
+2. Markera ett objekt i listan och välj sedan **Godkänn** eller **avvisa**.
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Läs mer om Åtgärdscentret](mtp-action-center.md)
-
-- [Läs mer om incidenter](incidents-overview.md)
-
-- [Lär dig mer om jakt](advanced-hunting-overview.md)
+- [Visa information och resultat från en automatisk undersökning](mtp-autoir-results.md)
+- [Hantera felaktiga positiva/negativa negativ i automatiserade undersökningar och svars funktioner](mtp-autoir-report-false-positives-negatives.md)

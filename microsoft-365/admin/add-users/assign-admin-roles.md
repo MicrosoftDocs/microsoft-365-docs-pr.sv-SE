@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Lär dig hur du tilldelar administratörs roller till en användare eller flera användare i företaget så att de kan utföra specifika uppgifter i administrations centret.
-ms.openlocfilehash: f5449bdb6b05e2a29393ad8e389c562953efd710
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 6d7a09ca9c515494eaf18ea144b7f67ce0003890
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307325"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131764"
 ---
 # <a name="assign-admin-roles"></a>Tilldela administratörsroller
 
@@ -42,7 +42,7 @@ Mer information finns i [Om administratörsroller](about-admin-roles.md).
 
 När du lägger till nya användare och inte tilldelar dem en administratörs roll är de i *användar rollen* och har inte administratörs behörighet till något administratörs Center för Microsoft. Men om du behöver hjälp med att få saker gjorda kan du tilldela en användare en administratörs roll. Om du till exempel behöver någon som hjälper dig att återställa lösen ord ska du inte tilldela dem rollen som global administratör. Att få för många globala administratörer har obegränsad till gång till dina data och online-affärer är en säkerhets risk.
 
-Titta på en kort video om hur du lägger till en administratör.<br><br>
+## <a name="watch-add-an-adminbrbr"></a>Titta: Lägg till en administratör.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
@@ -100,7 +100,6 @@ Du kan tilldela användare till en roll på två olika sätt:
 
 ::: moniker-end
 
-
 ## <a name="assign-admin-roles-to-multiple-users"></a>Tilldela administratörsroller till flera användare
 
 Om du känner till PowerShell kan du läsa [tilldela roller till användar konton med PowerShell](https://go.microsoft.com/fwlink/?linkid=854257). Det är ett bra sätt att tilldela roller till hundratals användare.
@@ -108,7 +107,6 @@ Om du känner till PowerShell kan du läsa [tilldela roller till användar konto
 Använd följande instruktioner för att tilldela roller till mer än tio användare åt gången.
 
 ::: moniker range="o365-worldwide"
-
 
 ## <a name="check-your-permissions"></a>Kontrol lera din behörighet
 

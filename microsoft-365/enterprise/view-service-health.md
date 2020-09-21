@@ -26,16 +26,16 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Se hälso statusen för Microsoft 365-tjänsterna innan du ringer support för att se om det finns ett aktivt tjänst avbrott.
-ms.openlocfilehash: 49f7d3afd3c19cd4e9b6486db580082fe933b997
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 20e19072e1a851fba20e556be696146b8ad57a2f
+ms.sourcegitcommit: 392f60efa0921c64ac1462dd63985cd156e6498a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694845"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48134081"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Så här kontrollerar du Microsoft 365-tjänstens hälsa
 
-[![Etikett som gör att du kan se att administrationscentret ändras och mer information finns på aka.ms/aboutM365preview.](../media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide)
+[![Etikett som gör att du kan se att administrationscentret ändras och mer information finns på aka.ms/aboutM365preview.](../media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide&preserve-view=true)
 
 Du kan se tillståndet för dina Microsoft-tjänster, inklusive Office på webben, Yammer, Microsoft Dynamics CRM och moln tjänster för mobila enheter, på sidan **tjänstens hälsa** i [administrations centret för Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). Om du har problem med en molnbaserad tjänst kan du kontrollera tjänstens hälsa för att ta reda på om det är ett känt problem där en lösning är på gång innan du ringer supporten eller ägnar tid åt felsökning.
 
@@ -46,7 +46,7 @@ Om det inte går att logga in på service portalen kan du använda [sidan tjäns
 1. Gå till administrations centret för Microsoft 365 på [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) och logga in med ett administratörs konto.
 
     > [!NOTE]
-    > Personer som har tilldelats rollen som global administratör eller tjänstadministratör kan visa tjänstens hälsa. För att tillåta Exchange-, SharePoint- och Skype för företag-administratörer att visa tjänstens hälsa, måste de också tilldelas tjänstadministratörsrollen. Mer information om roller som kan visa tjänstens hälsa finns i [om administratörs roller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center).
+    > Personer som har tilldelats rollen som global administratör eller tjänstadministratör kan visa tjänstens hälsa. För att tillåta Exchange-, SharePoint- och Skype för företag-administratörer att visa tjänstens hälsa, måste de också tilldelas tjänstadministratörsrollen. Mer information om roller som kan visa tjänstens hälsa finns i [om administratörs roller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#roles-available-in-the-microsoft-365-admin-center).
   
 2. Om du inte använder det nya administrations centret väljer du alternativet **testa det nya administrations centret** i det övre högra hörnet på **Start** sidan.
 
@@ -64,7 +64,9 @@ På fliken **Historik** visas historiken över de incidenter och rådgivare som 
 
 Om du upplever ett problem med en Microsoft 365-tjänst och inte ser den på sidan **tjänstens hälsa** kan du berätta om den genom att välja **rapportera ett problem**och fylla i den korta formen. Vi kommer att titta på relaterade data och rapporter från andra organisationer för att se hur omfattande problemet är, och om det kom från vår tjänst. Om så är fallet lägger vi till det som ett nytt tillbud eller råd på sidan **tjänstens hälsa** , där du kan spåra dess upplösning. Om det inte visas i listan i cirka 30 minuter bör du kontakta supporten för att lösa problemet.
 
-För att registrera dig för e-postaviseringar om nya incidenter som påverkar klient organisationens och status ändringar för en aktiv incident väljer du **Inställningar**, klicka på **Skicka Heath meddelanden via e-post**och ange sedan:
+Om du vill anpassa vilka tjänster som visas på instrument **panelen väljer du**  >  **anpassad vy**och avmarkerar kryss rutorna för de tjänster som du vill filtrera bort från din kontrollpanelflik för tjänste status. Kontrol lera att kryss rutan är markerad för varje tjänst som du vill övervaka.    
+
+För att registrera dig för e-postaviseringar om nya incidenter som påverkar klient organisationens och status ändringar för en aktiv incident, väljer du **Inställningar**för  >  **e-post**, klickar på **skicka mig Heath meddelanden i e-post**och anger sedan:
 
 - Upp till två e-postadresser.
 - Om du vill få aviseringar eller rådgivare
@@ -80,7 +82,7 @@ För att registrera dig för e-postaviseringar om nya incidenter som påverkar k
 
 I vyn **alla tjänster** visas en sammanfattningsvy över rådgivare eller händelser när du väljer tjänstens status.
   
-![En skärm bild som visar tjänstens råd](../media/service-health-advisory.png)
+[![En skärm bild som visar tjänstens råd ](../media/service-health-advisory.png)](../media/service-health-advisory.png#lightbox)
 
 Sammanfattningen av rådgivningen eller incidenten innehåller följande information:
 
@@ -150,4 +152,4 @@ För mer information om vårt engagemang för drift tid, se [transparenta åtgä
 ## <a name="related-topics"></a>Relaterade ämnen
 
 [Aktivitets rapporter i administrations centret](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
- för Microsoft 365 [Inställningar för meddelande Center](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide#preferences11)
+ för Microsoft 365 [Inställningar för meddelande Center](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true#preferences11)

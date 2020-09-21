@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange Online-administratörer hanterar organisationens e-post och post lådor. De återställer till exempel borttagna objekt i en användares post låda. '
-ms.openlocfilehash: 0b63679883e8329782700085fa0c11a0ac6585ca
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: be4c8a4f1c75402d690cc705dd408c9070e40c9b
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307439"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131776"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Om administratörsrollen i Exchange Online
 
@@ -34,15 +34,17 @@ För att hjälpa dig att administrera Microsoft 365 kan du [tilldela](assign-adm
   
  **Tips**: när du tilldelar någon till rollen Exchange-administratör tilldelar du dem också till rollen tjänst administratör. På det sättet kan de se viktig information i administrations centret för Microsoft 365, till exempel statusen för Exchange Online-tjänsten, samt ändrings-och utgivnings aviseringar.
   
+## <a name="before-you-begin"></a>Innan du börjar
+
 Här är några av de viktigaste uppgifterna som användare kan göra när de tilldelas rollen som administratör i Exchange:
   
 - [Recover deleted items in a user mailbox - Admin Help](https://docs.microsoft.com/microsoft-365/enterprise/recover-deleted-items-in-a-mailbox)
-    
+
 - [Konfigurera en princip för arkivering och borttagning för post lådor i din organisation](https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
-    
+
 - Konfigurera brevlådefunktioner såsom delningsprinciper för postlådor: hur användare kan dela kalender- och kontaktinformation med andra utanför din organisation.
-    
-- Konfigurera ombuden "[Skicka som](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" och "[Skicka på abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" för en persons post låda. En chef kan till exempel vilja att hans/hennes assistent ska kunna skicka e-post åt chefen. 
+
+- Konfigurera ombuden "[Skicka som](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" och "[Skicka på abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" för en persons post låda. En chef kan till exempel vilja att hans/hennes assistent ska kunna skicka e-post åt chefen.
 
 - [Skapa en delad post låda](../email/create-a-shared-mailbox.md) så att en grupp människor kan övervaka och skicka e-post från en gemensam e-postadress.
 

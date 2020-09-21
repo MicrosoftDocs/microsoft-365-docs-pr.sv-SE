@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 60c1a39e350a9a1d5d43c9b59ab12c4a6ad3f12a
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: c3323192e0095ad6693241390cff81d42be9cce1
+ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817187"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47956249"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>Konfigurera utvärderings labb miljön för Microsoft Threat Protection 
 
@@ -121,7 +121,7 @@ I den här fasen vägleds du:
 ## <a name="enable-microsoft-365-trial-subscription"></a>Aktivera utvärderings prenumeration för Microsoft 365
 
 >[!NOTE]
->Om du registrerar dig för en utvärderings version får du 25 användar licenser att använda i en månad. Mer information finns i [prova eller köpa en M365-prenumeration](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide#try-or-buy-a-microsoft-365-subscription-1) .
+>Om du registrerar dig för en utvärderings version får du 25 användar licenser att använda i en månad. Mer information finns i [prova eller köpa en M365-prenumeration](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365#try-or-buy-a-microsoft-365-subscription-1) .
 
 1. Från [Microsoft 365 administrations Center](https://admin.microsoft.com/)klickar du på **fakturering** och navigerar sedan till **inköps tjänster**.
 
@@ -149,4 +149,5 @@ I den här fasen vägleds du:
 
 
 ## <a name="next-step"></a>Nästa steg
-![Steg 3: Konfigurera & inbyggt](../../media/config-onboard.png) <br>[Steg 3: Konfigurera & inbyggt](config-mtpeval.md) <br>Konfigurera varje skydd mot Microsoft Threat för ditt utvärderings labb eller pilot miljö för Microsoft Threat Protection och har gjort slut punkterna.
+|![Steg 3: Konfigurera & inbyggt](../../media/config-onboard.png) <br>[Steg 3: Konfigurera & inbyggt](config-mtpeval.md) | Konfigurera varje skydd mot Microsoft Threat för ditt utvärderings labb eller pilot miljö för Microsoft Threat Protection och har gjort slut punkterna.
+|:-------|:-----|

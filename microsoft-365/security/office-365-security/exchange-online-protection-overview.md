@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: ''
+ms.date: 09/18/2020
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -13,108 +13,108 @@ localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
-description: Lär dig mer om hur Exchange Online Protection (EOP) kan skydda din lokala e-postorganisation i fristående miljöer och hybridmiljöer.
-ms.openlocfilehash: 37b38df9e94bee93202be02c01a220afa9470b8a
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+description: Lär dig hur Exchange Online Protection (EOP) hjälper till att skydda din lokala e-postorganisation i fristående och hybrid miljöer.
+ms.openlocfilehash: b546b60e242d7f4f7fd4c4550bb61b94052ff4d1
+ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204809"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48137028"
 ---
 # <a name="exchange-online-protection-overview"></a>Översikt över Exchange Online Protection
 
-Exchange Online Protection (EOP) är den molnbaserade filtreringstjänsten som hjälper till att skydda din organisation mot skräppost och skadlig kod. EOP ingår i alla Microsoft 365-organisationer med Exchange Online-postlådor.
+Exchange Online Protection (EOP) är den molnbaserade filter tjänsten som hjälper dig att skydda din organisation mot skräp post och skadlig program vara. EOP ingår i alla Microsoft 365-organisationer med Exchange Online-postlådor. EOP är också tillgängligt i följande lokala scenarier:
 
-Men EOP är också tillgängligt i följande lokala scenarier:
+- **I ett fristående scenario**: EOP tillhandahåller Cloud-baserad e-postskydd för din lokala Exchange-organisation eller för någon annan lokal SMTP-e-postlösning.
 
-- **I ett fristående scenario:** EOP ger molnbaserat e-postskydd för din lokala Exchange-organisation eller för någon annan lokal SMTP-e-postlösning.
+- **I en hybrid distribution**: EOP kan konfigureras för att skydda din e-postmiljö och styra e-postdirigering när du har en blandning av lokala och Cloud-postlådor.
 
-- **I en hybriddistribution:** EOP kan konfigureras för att skydda din e-postmiljö och styra e-postroutning när du har en blandning av lokala och molnpostlådor.
+I dessa scenarion kan EOP förenkla hanteringen av din e-postmiljö och för att minska antalet arbets bördar som medföljer underhåll av lokal maskin vara och program vara.
 
-I dessa scenarier kan EOP förenkla hanteringen av din e-postmiljö och minska många av de bördor som följer med att underhålla lokal maskinvara och programvara.
+Resten av det här avsnittet förklarar hur EOP fungerar i fristående och hybrid miljöer.
 
-I resten av det här avsnittet beskrivs hur EOP fungerar i fristående miljöer och hybridmiljöer.
+## <a name="how-eop-works"></a>Så fungerar EOP
 
-## <a name="how-eop-works"></a>Så här fungerar EOP
+För att förstå hur EOP fungerar kan du se hur det behandlar inkommande e-post:
 
-För att förstå hur EOP fungerar hjälper det att se hur det bearbetar inkommande e-post:
+:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Bild av e-post från Internet eller en kund feedback som skickas till EOP och via anslutningen, antiskadligt, flödes regler med snedstreck – byte av filtrering och innehålls filtrering, innan Verdict av antingen skräp post eller karantän eller slutanvändarens e-postleverans.":::
 
-![Diagram över processen för e-post](../../media/emailprocessingineop1.png)
+- När ett inkommande meddelande kommer till EOP övergår det initialt genom anslutnings filtrering, vilket kontrollerar avsändarens rykte. Majoriteten av skräp posten har stoppats vid den här punkten och avvisas av EOP. Mer information finns i [konfigurera anslutningsfilter](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-connection-filter-policy?view=o365-worldwide).
 
-- Ett inkommande meddelande passerar inledningsvis genom anslutningsfiltrering, som kontrollerar avsändarens rykte och kontrollerar meddelandet efter skadlig kod. Majoriteten av spam stoppas på denna punkt och tas bort av EOP. Mer information finns i [konfigurera anslutningsfilter](configure-the-connection-filter-policy.md).
+- Då kontrol leras meddelandet om att du har tecken på skadlig program vara. Om skadlig kod hittas i meddelandet eller bifogade filer skickas meddelandet till en administratörs karantän lagring. Du kan läsa mer om hur du konfigurerar anti-malware [här](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-malware-policies?view=o365-worldwide).
 
-- Meddelanden fortsätter genom principfiltrering, där meddelanden utvärderas mot anpassade regler för e-postflöde (kallas även transportregler) som du skapar eller tillämpar från en mall. Du kan till exempel ha en regel som skickar ett meddelande till en chef när e-post kommer från en viss avsändare. DLP-kontroller (Data loss prevention) utförs också vid denna tidpunkt (Exchange Enterprise CAL with Services).
+- Meddelanden fortsätter genom princip filtrering, där de utvärderas mot anpassade regler för e-postflöde (kallas även transport regler) som du skapar eller tillämpar från en mall. Du kan till exempel ha en regel som skickar ett meddelande till en chef när e-post kommer från en viss avsändare. Det sker även i den här punkten (Exchange Enterprise CAL med tjänster).
 
-- Därefter passerar meddelanden genom skräppostfiltrering (kallas även innehållsfiltrering). Ett meddelande som är bestämt att vara spam kan skickas till en användares skräppostmapp eller till karantänen, bland andra alternativ. Mer information finns i [Konfigurera principer för skräppostskydd](configure-your-spam-filter-policies.md).
+- Sedan passerar meddelandet upp genom innehålls filtrering (kallas även för skräp post). Ett meddelande om att det här filtret bestämmer sig för att vara skräp post *eller Phish* kan skickas till karantän eller till en annan mapp för skräp post. Mer information finns i [Konfigurera principer för skräp post](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide) och [Konfigurera skydd mot nätfiske](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-phishing-policies-eop?view=o365-worldwide).
 
-- När ett meddelande har skickat alla dessa skyddslager har levererats det till mottagaren.
+Alla meddelanden som klarar alla dessa skydds lager levereras till mottagaren.
 
-Mer information finns i [Ordning och prioritet för e-postskydd](how-policies-and-protections-are-combined.md).
+Mer information finns i [order och prioriteringsordning för e-postskydd](how-policies-and-protections-are-combined.md).
 
-### <a name="eop-datacenters"></a>EOP-datacenter
+## <a name="eop-plans-and-features-for-on-premises-email-organizations"></a>EOP planer och funktioner för lokala e-postorganisationer
 
-EOP körs på ett världsomspännande nätverk av datacenter som är utformade för att ge den bästa tillgängligheten. Om ett datacenter till exempel blir otillgängligt dirigeras e-postmeddelanden automatiskt till ett annat datacenter utan avbrott i tjänsten. Servrar i varje datacenter accepterar meddelanden för din räkning, vilket ger ett lager av separation mellan din organisation och internet, vilket minskar belastningen på dina servrar. Genom detta högtillgängliga nätverk kan Microsoft se till att e-post når din organisation i tid.
+De tillgängliga EOP-abonnemangen är:
 
-EOP utför belastningsutjämning mellan datacenter men bara inom en region. Om du etableras i en region bearbetas alla dina meddelanden med hjälp av e-postroutning för den regionen. Följande lista visar hur regional e-postroutning fungerar för EOP-datacenter:
+- **Fristående EOP**: du registrerar dig i EOP för att skydda din lokala e-postorganisation.
 
-- I Europa, Mellanöstern och Afrika (EMEA) finns alla Exchange Online-postlådor i EMEA-datacenter och alla meddelanden dirigeras via EMEA-datacenter för EOP-filtrering.
+- **EOP funktioner i Exchange Online**: alla abonnemang som innehåller Exchange Online (fristående eller som en del av Microsoft 365) använder EOP för att skydda dina Exchange Online-postlådor.
 
-- I Asien-Stillahavsområdet (APAC) finns alla Exchange Online-postlådor i APAC-datacenter och meddelanden dirigeras för närvarande via APAC-datacenter för EOP-filtrering.
+- **Exchange Enterprise-klientåtkomstlicens med tjänster**: om du har en lokal Exchange-organisation där du har köpt ytterligare Exchange-klientåtkomstlicens för företag med tjänste licenser är EOP en del av de tjänster som ingår.
 
-- I Amerika distribueras tjänster på följande platser:
-
-  - Sydamerika: Exchange Online-postlådor finns i datacenter i Brasilien och Chile. Alla meddelanden dirigeras via lokala datacenter för EOP-filtrering. Meddelanden i karantän lagras i det datacenter där klienten finns.
-
-  - Kanada: Exchange Online-postlådor finns i datacenter i Kanada. Alla meddelanden dirigeras via lokala datacenter för EOP-filtrering. Meddelanden i karantän lagras i det datacenter där klienten finns.
-
-  - USA: Exchange Online-postlådor finns i amerikanska datacenter. Alla meddelanden dirigeras via lokala datacenter för EOP-filtrering. Meddelanden i karantän lagras i det datacenter där klienten finns.
-
-- För Government Community Cloud (GCC) finns alla Exchange Online-postlådor i amerikanska datacenter och alla meddelanden dirigeras via amerikanska datacenter för EOP-filtrering.
-
-## <a name="eop-plans-and-features-for-on-premises-email-organizations"></a>EOP-planer och funktioner för lokala e-postorganisationer
-
-De tillgängliga EOP-prenumerationsplanerna är:
-
-- **EOP fristående**: Du registrerar dig i EOP för att skydda din lokala e-postorganisation.
-
-- **EOP-funktioner i Exchange Online**: Alla prenumerationer som inkluderar Exchange Online (fristående eller som en del av Microsoft 365) använder EOP för att skydda dina Exchange Online-postlådor.
-
-- **Exchange Enterprise CAL med tjänster**: Om du har en lokal Exchange-organisation där du har köpt ytterligare Exchange Enterprise CAL med tjänstelicenser är EOP en del av de inkluderade tjänsterna.
-
-Information om krav, viktiga begränsningar och funktionstillgänglighet i alla EOP-prenumerationsplaner finns i [beskrivningen av Tjänsten Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+Information om krav, viktiga begränsningar och tillgängligheten för alla EOP-abonnemang finns i [beskrivningen av Exchange Online Protection Service](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
 ## <a name="setting-up-eop-for-on-premises-email-organizations"></a>Konfigurera EOP för lokala e-postorganisationer
 
-Det kan vara enkelt att konfigurera EOP, särskilt när det gäller en liten organisation med en handfull efterlevnadsregler. Men om du har en stor organisation med flera domäner, anpassade efterlevnadsregler eller hybridpostflöde kan det ta mer planering och tid.
+Det är enkelt att konfigurera EOP, särskilt när det gäller en liten organisation med en fåtal regler för efterlevnad. Om du har en stor organisation med flera domäner, anpassade efterföljandekrav eller ett hybridt e-postflöde kan du ställa in mer planering och tid.
 
-Om du redan har köpt EOP läser du [Konfigurera din EOP-tjänst](set-up-your-eop-service.md) för att se till att du slutför alla nödvändiga steg för att konfigurera EOP för att skydda din meddelandemiljö.
+Om du redan har köpt EOP läser du konfigurera [EOP-tjänsten](set-up-your-eop-service.md) för att se till att slutföra alla nödvändiga steg för att konfigurera EOP för att skydda din meddelande miljö.
 
-## <a name="eop-help-for-admins"></a>EOP-hjälp för administratörer
+### <a name="eop-datacenters"></a>EOP Data Center
 
-Hjälpinnehållet för EOP-administratörer består av följande kategorier på den högsta nivån:
+EOP körs i ett världs omfattande nätverk av data Center som är utformade för att ge bästa möjliga tillgänglighet. Om till exempel ett Data Center inte är tillgängligt dirigeras e-postmeddelanden automatiskt till ett annat data Center utan avbrott i tjänsten. Servrar i varje data Center tar emot meddelanden åt dig, vilket ger en åtskillnad mellan din organisation och Internet, och därmed minskar belastningen på dina servrar. Tack vare det här tillgängliga nätverket kan Microsoft se till att e-post når din organisation i tid.
 
-- [Översikt över Exchange Online Protection](exchange-online-protection-overview.md): Introducerar hur EOP fungerar och innehåller länkar till ytterligare information.
+EOP utför belastnings fördelning mellan data centers men bara inom en region. Om du har etablerat en region kommer alla meddelanden att bearbetas med hjälp av e-postdirigering för det området. I följande lista visas hur regionala e-postroutning fungerar för EOP Data Center:
 
-- [EOP-funktioner](eop-features.md): Innehåller en lista över funktioner som är tillgängliga i EOP.
+- I Europa, Mellanöstern och Afrika (EMEA) finns alla Exchange Online-postlådor i EMEA-Data Center och alla meddelanden routas genom EMEA-data för EOP filtrering.
 
-- [Konfigurera din EOP-tjänst:](set-up-your-eop-service.md)Innehåller steg för att konfigurera din EOP-tjänst och länkar till ytterligare information.
+- I Asien-Pacific (APAC) finns alla Exchange Online-postlådor i APAC data centers och meddelanden dirigeras till i APAC data centers för EOP-filtrering.
 
-- [Byt till EOP från Google Postini, Barracuda Spam and Virus Firewall eller Cisco IronPort](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md): Beskriver processen för att byta till EOP från en annan e-postskyddsprodukt.
+- I Amerika distribueras tjänsterna på följande platser:
 
-- [Hantera mottagare i fristående EOP:](manage-recipients-in-eop.md)Beskriver hur du hanterar e-postanvändare och grupper i EOP.
+  - Sydamerika: Exchange Online-postlådor finns i data centers i Brasilien och Chile. Alla meddelanden routas genom lokala data Center för EOP filtrering. Meddelanden i karantän lagras i data centret där klient organisationen finns.
 
-- [E-postflöde i EOP:](mail-flow-in-eop.md)Beskriver hur du konfigurerar anpassade scenarier för e-postflöde med hjälp av kopplingar, hur du hanterar domäner som är associerade med tjänsten och hur du aktiverar funktionen DBEB (Directory Based Edge Blocking).
+  - Kanada: Exchange Online-postlådor finns i data centers i Kanada. Alla meddelanden routas genom lokala data Center för EOP filtrering. Meddelanden i karantän lagras i data centret där klient organisationen finns.
 
-- [Metodtips för att konfigurera EOP:](best-practices-for-configuring-eop.md)Beskriver rekommenderade konfigurationsinställningar och överväganden för när du har konfigurerat och etablerat tjänsten.
+  - USA: Exchange Online-postlådor finns i amerikanska data Center. Alla meddelanden routas genom lokala data Center för EOP filtrering. Meddelanden i karantän lagras i data centret där klient organisationen finns.
 
-- [Granskningsrapporter i fristående EOP](auditing-reports-in-eop.md): Beskriver hur du använder granskningsrapporter för att spåra konfigurationsändringar i tjänsten.
+- För det statliga community-molnet (GCC) finns alla Exchange Online-postlådor i amerikansk Data Center och alla meddelanden dirigeras via amerikanska data Center för EOP-filtrering.
 
-- [Skydd mot skräppost och skadlig kod i EOP:](anti-spam-and-anti-malware-protection.md)Beskriver filtrering av skräppost och filtrering av skadlig kod och visar hur du anpassar dem så att de bäst uppfyller organisationens behov. Beskriver också uppgifter som administratörer och slutanvändare kan utföra på meddelanden i karantän.
+## <a name="eop-help-for-admins"></a>EOP hjälp för administratörer
 
-- [Rapportering och meddelandespårning i Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md): Beskriver de rapporter och felsökningsverktyg som är tillgängliga.
+Hjälp innehållet för EOP-administratörer består av följande kategorier:
 
-- [Exchange admin center i fristående EOP:](exchange-admin-center-in-exchange-online-protection-eop.md)Beskriver hur du kommer åt och navigera genom Exchange admin center (EAC) hanteringsgränssnitt för att hantera din EOP-tjänst.
+- [Konfigurera EOP, dag 1, för Office 365 ATP-administratörer](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide): Konfigurera EOP skydds-och identifierings verktyg på grund av Office 365 Avancerat skydd.
 
-- [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell): Innehåller information om fjärr-PowerShell, som gör att du kan hantera din EOP-tjänst från kommandoraden.
+- [EOP funktioner](eop-features.md): innehåller en lista med funktioner som är tillgängliga i EOP.
 
-- [Hjälp och support för EOP](help-and-support-for-eop.md) Ger information om hur du skaffar hjälp och teknisk support.
+- [Konfigurera EOP-tjänsten](set-up-your-eop-service.md): innehåller anvisningar för hur du konfigurerar en EOP-tjänst och länkar till ytterligare information.
+
+- [Växla till EOP från Google Postini, Barracuda spam and virus Firewall eller Cisco IronPort](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md): beskriver processen för att växla till EOP från en annan e-postskydds produkt.
+
+- [Hantera mottagare i fristående EOP](manage-recipients-in-eop.md): Här beskrivs hur du hanterar e-postanvändare och grupper i EOP.
+
+- [E-postflöde i EOP](mail-flow-in-eop.md): Här beskrivs hur du konfigurerar anpassade e-postflöden med hjälp av kopplingar, hur du hanterar domäner som är associerade med tjänsten och hur du aktiverar funktionen för katalogbaserade Edge-blockering (DBEB).
+
+- [Metod tips för att konfigurera EOP](best-practices-for-configuring-eop.md): beskriver rekommenderade konfigurations inställningar och överväganden efter att du har konfigurerat och etablerat din tjänst.
+
+- [Gransknings rapporter i fristående EOP](auditing-reports-in-eop.md): Här beskrivs hur du använder gransknings rapporter för att spåra konfigurations ändringar för tjänsten.
+
+- [Skydd mot skräp post och mot skadlig program vara i EOP](anti-spam-and-anti-malware-protection.md): beskriver filtrering av skräp post och filter för skadlig program vara och visar hur du anpassar dem så att de passar bäst för din organisation. Dessutom beskrivs de uppgifter som administratörer och slutanvändare kan utföra på meddelanden i karantän.
+
+- [Rapportering och meddelande spårning i Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md): beskriver de rapporter och fel söknings verktyg som är tillgängliga.
+
+- [Administrations Center för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md): Här beskrivs hur du kommer åt och navigerar i administrations centret för Exchange (UK) för att hantera din EOP-tjänst.
+
+- [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell): ger information om Remote PowerShell, som du kan använda för att hantera din EOP-tjänst från kommando raden.
+
+- [Hjälp och support för EOP](help-and-support-for-eop.md) Innehåller information om hur du får hjälp och teknisk support.

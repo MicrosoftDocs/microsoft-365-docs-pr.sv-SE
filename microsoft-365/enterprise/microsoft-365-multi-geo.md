@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: I den här artikeln lär du dig hur du expanderar din Microsoft 365-närvaro till flera geografiska regioner med Microsoft 365 multi-geo.
-ms.openlocfilehash: 2e58d8b5ba66762bcc742f711d13007efc71b679
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 10f941549fd4899d5b3a14c97e6f301339702722
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104612"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171332"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -69,7 +69,7 @@ Följ de här stegen för att komma igång med multi-geo:
 
 1. Arbeta med ditt konto team för att lägga till _flera geo funktioner i Microsoft 365_ service plan. De hjälper dig att lägga till antalet licenser som behövs. Multi-geo-funktionen är tillgänglig för kunder med minst 250 Microsoft 365-abonnemang.
 
-   Innan du kan börja använda Microsoft 365 multi-geo måste Microsoft konfigurera Exchange Online-klienten för multi-geo-stöd. Denna konfigurations process i real tid utlöses efter att du beställt *flera geo-funktioner i Microsoft 365* service plan och de licenser som visas i klient organisationen. Du får arbets uppgifter om särskilda meddelanden i [Microsoft 365 meddelande Center](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) när klient organisationen har slutfört konfigurations processen för varje arbets belastning, och sedan kan du börja konfigurera och använda dina Microsoft 365 multi-geo-funktioner. Den tid som krävs för att konfigurera en klient organisation för multi-geo-stöd varierar från klient organisationen till klient organisationen, men de flesta klient organisationer slutar inom en månad efter mottagandet av funktions licenserna. Större eller mer komplexa klient organisationer kräver mer tid för att slutföra konfigurationen. Kontakta ditt konto team för att få information om din specifika klient organisation.
+   Innan du kan börja använda Microsoft 365 multi-geo måste Microsoft konfigurera Exchange Online-klienten för multi-geo-stöd. Denna konfigurations process i real tid utlöses efter att du beställt *flera geo-funktioner i Microsoft 365* service plan och de licenser som visas i klient organisationen. Du får arbets uppgifter specifika meddelanden i [Microsoft 365 meddelande Center](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) när klient organisationen har slutfört konfigurations processen för varje arbets belastning, och sedan kan du börja konfigurera och använda Microsoft 365 multi-geo-funktionerna. Den tid som krävs för att konfigurera en klient organisation för multi-geo-stöd varierar från klient organisationen till klient organisationen, men de flesta klient organisationer slutar inom en månad efter mottagandet av funktions licenserna. Större eller mer komplexa klient organisationer kan kräva mer tid för att slutföra konfigurationen. Kontakta ditt konto team för att få information om din specifika klient organisation.
 
 2. Läs [Planera din multi-geo-miljö](plan-for-multi-geo.md).
 

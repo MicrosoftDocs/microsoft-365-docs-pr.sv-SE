@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 nätverks insikter (för hands version)
-ms.openlocfilehash: e3730704b6672c931b7538659a38f218e769dd0a
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 682c888fefb9bec9725e470d62019c857fc2de07
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962377"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171344"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 nätverks insikter (för hands version)
 
@@ -157,7 +157,7 @@ Det är en indikation på att de flesta av användarna troligt vis drabbas av pr
 
 ### <a name="what-should-i-do"></a>Vad ska jag göra?
 
-Aktivera synligheten för nätverks anslutningar för Office om du inte redan har gjort det. Du vill identifiera vilka kontor som är impactred av dåligt ansluten till nätverket som påverkar Exchange och hitta olika sätt att förbättra nätverks behållning hos alla som ansluter användarna till Microsofts nätverk.
+Aktivera synligheten för nätverks anslutningar för Office om du inte redan har gjort det. Du vill identifiera vilka kontor som påverkas av dåligt ansluten nätverks förbindelse som påverkar Exchange och hitta olika sätt att förbättra nätverks behållning hos alla som ansluter användarna till Microsofts nätverk.
 
 ## <a name="sharepoint-sampled-connections-impacted-by-connectivity-issues"></a>SharePoint-sampel som påverkas av anslutnings problem
 
@@ -169,7 +169,7 @@ Det är en indikation på att de flesta av användarna sannolikt har problem med
 
 ### <a name="what-should-i-do"></a>Vad ska jag göra?
 
-Aktivera synligheten för nätverks anslutningar för Office om du inte redan har gjort det. Du vill identifiera vilka kontor som är impactred av dåligt nätverksanslutna anslutningar som påverkar SharePoint och hittar olika sätt att förbättra nätverks behållning hos alla som ansluter användarna till Microsofts nätverk.
+Aktivera synligheten för nätverks anslutningar för Office om du inte redan har gjort det. Du vill identifiera vilka kontor som påverkas av dåligt ansluten nätverks förbindelse som påverkar SharePoint och hitta olika sätt att förbättra nätverks behållning hos alla som ansluter användarna till Microsofts nätverk.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
@@ -177,6 +177,6 @@ Aktivera synligheten för nätverks anslutningar för Office om du inte redan ha
 
 [Microsoft 365 Network Assessment (för hands version)](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 anslutnings test i M365 administrations Center (för hands version)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365-testverktyg (för hands version)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 nätverks anslutningar (för hands version)](office-365-network-mac-location-services.md)

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Lär dig att distribuera tillägg till användare och grupper i organisationen med hjälp av centraliserad distribution i administrations centret.
-ms.openlocfilehash: aec2adab7735a2be5670210abf05f88f081fe4ed
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 5806b2a33446a8e273c2aaf78e082c6fd753bbe4
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306533"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171286"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Distribuera tillägg i administrationscentret
 
@@ -64,6 +64,9 @@ Innan du börjar läser du [kontrol lera om centraliserad distribution av tillä
 1. Gå till sidan tillägg i administrations centret **Settings** \> **Add-ins** .
     
 2. Välj **distribuera tillägg** högst upp på sidan och välj sedan **Nästa**.
+ 
+    > [!NOTE]
+    > Administrations centret uppdateras till distributions miljön med integrerade appar. Om du inte ser ovanstående steg går du till avsnittet centraliserad distribution genom att gå till **Inställningar**för  >  **integrerade appar**. **Välj tillägg**högst upp på sidan för **integrerade appar** .
     
 3. Välj ett alternativ och följ instruktionerna.
   

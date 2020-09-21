@@ -1,6 +1,6 @@
 ---
 title: Tillgång till administrationsportalen
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 ms.author: jaimeo
 author: jaimeo
@@ -9,18 +9,26 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 2ac0bb01c1a941d460e92c7e75e765ceb85b2bc0
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: f57911276d74c6945027077404e1f83c2f5072fd
+ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546580"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48137041"
 ---
 # <a name="access-the-admin-portal"></a>Gå till administrations portalen
 
 Din gateway till Microsoft Managed Desktop-tjänsten är Microsoft [Azure-portalen](https://portal.azure.com). Mer information om hur du använder och anpassar din Azure Portal-upplevelse finns i [dokumentationen för Azure-portalen](https://docs.microsoft.com/azure/azure-portal/). Tillgänglig i förhands granskning nu kan du också hitta Microsoft Managed Desktop i [Microsoft Endpoint Manager](https://endpoint.microsoft.com/). Om du inte känner till funktionerna i den här portalen för enhets hantering kan du läsa [dokumentationen för Microsoft slut punkts hanteraren](https://docs.microsoft.com/mem/).
 
-Ditt administratörs konto behöver specifika behörigheter för att få till gång till de administrativa Microsoft-hanterade Skriv bords funktionerna i antingen Azure Portal eller Microsoft Endpoint Manager. Du kan hantera administratörs åtkomst till dessa funktioner inom organisationen med hjälp av RBAC (rollbaserad åtkomst kontroll). Flera administratörs roller för Azure AD och inbyggda anpassade roller är tillgängliga för att ge mer detaljerad kontroll till olika funktioner på Microsoft Managed Desktop admin-portalen. Mer information om Azure Active Directory-roller finns i [behörigheter för administratörs roller i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Till skillnad från AAD-administratörs roller som gäller för en mängd olika Microsoft-produkter och-tjänster är anpassade roller specifika för Microsoft Managed Desktop och garanterar bara åtkomst till administratörs funktionerna för den här tjänsten. Administratörer kan tilldela anpassade roller till enskilda användare eller tillsammans med administratörs roller i AAD för att lägga till behörigheter för Microsoft Managed Desktop till befintliga administratörs konton.
+> [!NOTE]
+> Om du väljer att få åtkomst till Microsoft Managed Desktop, i [Microsoft slut punkts Manager](https://endpoint.microsoft.com/) eller från [Azure-portalen](https://portal.azure.com), stöds följande webbläsare:
+> - Microsoft Edge (senaste versionen)
+> - Microsoft Internet Explorer 11
+> - Safari (senaste versionen, endast Mac)
+> - Chrome (senaste versionen)
+> - Firefox (senaste versionen)
+
+Ditt administratörs konto behöver specifika behörigheter för att få till gång till de administrativa Microsoft-hanterade Skriv bords funktionerna i antingen Azure Portal eller Microsoft Endpoint Manager. Du kan hantera administratörs åtkomst till dessa funktioner inom organisationen med hjälp av RBAC (rollbaserad åtkomst kontroll). Flera administratörs roller för Azure Active Directory (Azure AD) och inbyggda anpassade roller är tillgängliga för att ge mer detaljerad kontroll till olika funktioner på Microsoft Managed Desktop admin-portalen. Mer information om Azure Active Directory-roller finns i [behörigheter för administratörs roller i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Till skillnad från roller för Azure AD-administratörer som gäller för en mängd olika Microsoft-produkter och-tjänster är anpassade roller specifika för Microsoft Managed Desktop och garanterar bara åtkomst till administratörs funktionerna för den här tjänsten. Administratörer kan tilldela användare egna roller individuellt eller tillsammans med Azure AD-administratörs roller för att lägga till behörigheter för Microsoft Managed Desktop till befintliga administratörs konton.
 
 Alla roller nedan kan tilldelas för att ge olika åtkomst nivåer:
 

@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365-test för nätverks anslutning (för hands version)
-ms.openlocfilehash: 2197f3361efee51dfa2bd170b0c8d8e94709d3e8
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 40a46ecb39366c64c99077e90bb35c5056f36b9d
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962411"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171356"
 ---
 # <a name="microsoft-365-network-connectivity-test-preview"></a>Microsoft 365-test för nätverks anslutning (för hands version)
 
@@ -37,13 +37,33 @@ Vi rekommenderar att dessa används tillsammans där statusen för nätverks kva
 >[!IMPORTANT]
 >Nätverks insikter, prestanda rekommendationer och utvärderingar i administrations centret för Microsoft 365 är för närvarande förhands gransknings status och är bara tillgänglig för Microsoft 365-klient organisationer som har registrerats i funktionen för förhands granskning.
 
-## <a name="the-advanced-tests-client-application"></a>Klient programmet avancerad test
+## <a name="what-happens-at-each-test-step"></a>Vad som händer i varje test steg
+
+### <a name="office-location-identification"></a>Identifiering av Office-plats
+
+När du klickar på knappen Kör test visar vi test sidan och identifierar Office-platsen. Du kan skriva in din plats efter ort, delstat och land, eller så kan du få den att identifieras från webbläsaren. Om du upptäcker det, efterfrågar vi Latitude och longitud från webbläsaren och begränsar tillförlitligheten till 300 m med 300 m innan den används. Vi gör det eftersom det inte behövs för att identifiera platsen mer exakt än för att bygga för nätverks prestanda. 
+
+### <a name="javascript-tests"></a>JavaScript-test
+
+Efter Office-plats-ID kör vi ett TCP-testsvar i Java Script och vi efterfrågar data från tjänsten om användning och Rekommenderad Office 365-tjänst front dörr Server. När de här är klara visar vi dem på kartan och på fliken information där de kan visas före nästa steg.
+
+### <a name="download-the-advanced-tests-client-application"></a>Ladda ned klient programmet för de avancerade testerna
+
+Nästa steg är att hämta det avancerade test klient programmet. Vi använder användaren för att starta klient programmet och måste också ha .NET Core installerat.
 
 Det finns två delar till Microsoft 365-nätverks anslutningen. webbplatsen <https://connectivity.office.com> och ett laddat klient program för Windows som kör avancerade nätverks anslutnings test. De flesta testerna kräver att programmet körs. Resultatet återställs till webb sidan när det körs.
 
 Du uppmanas att ladda ned det avancerade klient test programmet från webbplatsen när webb läsar testen har slutförts. Öppna och kör filen när du uppmanas till det.
 
 ![Klient program för avancerade test](../media/m365-mac-perf/m365-mac-perf-open-run-file.png)
+
+### <a name="start-the-advanced-tests-client-application"></a>Starta klient programmet avancerad test
+
+När klient programmet startar webb sidan uppdateras den och test data tas emot på webb sidan. Det uppdaterar varje gång nya data tas emot och du kan granska data när de kommer in.
+
+### <a name="advanced-tests-completed-and-test-report-upload"></a>Avancerade test är avslutade och test rapport uppladdning
+
+När testen är klara är webb sidan och de avancerade testerna båda dessa och om användaren är inloggad i test rapporten kommer den att laddas upp till klient organisationen.
 
 ## <a name="sharing-your-test-report"></a>Dela din test rapport
 
@@ -111,7 +131,7 @@ Detta kontrollerar om du använder ett VPN för att ansluta till Office 365. Ett
 
 #### <a name="vpn-split-tunnel"></a>Dela VPN-tunnel
 
-Varje Optimize Category-väg för Exchange Online, SharePoint Online och Microsoft Teams testas för att se om den är tunnelled eller inte. En uppdelad arbets belastning eliminerar VPN helt. En tunnelled arbets belastning skickas via VPN. Ett selektivt tunnelled arbets belastning har vissa flöden som skickas via VPN och vissa delas ut. Ett avsluts resultat visar om alla arbets belastningar är uppdelade eller selektiva tunnelled.
+Varje Optimize Category-väg för Exchange Online, SharePoint Online och Microsoft Teams testas för att se om det finns en tunnel på VPN eller inte. En uppdelad arbets belastning eliminerar VPN helt. Ett insamlat arbets belastning skickas via VPN. Ett selektivt inmatnings sätt för tunnel har vissa flöden som skickas via VPN och delar av dem. Ett avsluts resultat visar om alla arbets belastningar är uppdelade eller selektiva tunnlar.
 
 #### <a name="customers-in-your-metropolitan-area-with-better-performance"></a>Kunder i ditt libarea med bättre prestanda
 
@@ -207,28 +227,6 @@ När ett SSL-certifikat hittas som inte tillhandahålls av Microsoft visar vi FQ
 
 I det här avsnittet visas resultatet av en ICMP-traceroute till Exchange Online-tjänstens front dörr, SharePoint Online-tjänstens front dörr och Microsoft Teams-tjänsten. Den är endast avsedd för information och det finns ingen överblick för nätverket. Det finns tre traceroutes. En traceroute till _Outlook.Office365.com_, en traceroute till kundernas klient-eller _Microsoft.SharePoint.com_ om det inte tillhandahölls, och en traceroute till _World.tr.Teams.Microsoft.com_.
 
-## <a name="what-happens-at-each-test-step"></a>Vad som händer i varje test steg
-
-### <a name="office-location-identification"></a>Identifiering av Office-plats
-
-När du klickar på knappen Kör test visar vi test sidan och identifierar Office-platsen. Du kan skriva in din plats efter ort, delstat och land, eller så kan du få den att identifieras från webbläsaren. Om du upptäcker det, efterfrågar vi Latitude och longitud från webbläsaren och begränsar tillförlitligheten till 300 m med 300 m innan den används. Vi gör det eftersom det inte behövs för att identifiera platsen mer exakt än för att bygga för nätverks prestanda. 
-
-### <a name="javascript-tests"></a>JavaScript-test
-
-Efter Office-plats-ID kör vi ett TCP-testsvar i Java Script och vi efterfrågar data från tjänsten om användning och Rekommenderad Office 365-tjänst front dörr Server. När de här är klara visar vi dem på kartan och på fliken information där de kan visas före nästa steg.
-
-### <a name="download-the-advanced-tests-client-application"></a>Ladda ned klient programmet för de avancerade testerna
-
-Nästa steg är att hämta det avancerade test klient programmet. Vi använder användaren för att starta klient programmet och måste också ha .NET Core installerat.
-
-### <a name="start-the-advanced-tests-client-application"></a>Starta klient programmet avancerad test
-
-När klient programmet startar webb sidan uppdateras den och test data tas emot på webb sidan. Det uppdaterar varje gång nya data tas emot och du kan granska data när de kommer in.
-
-### <a name="advanced-tests-completed-and-test-report-upload"></a>Avancerade test är avslutade och test rapport uppladdning
-
-När testen är klara är webb sidan och de avancerade testerna båda dessa och om användaren är inloggad i test rapporten kommer den att laddas upp till klient organisationen.
-
 ## <a name="connectivity-reports"></a>Anslutnings rapporter
 
 När du är inloggad kan du granska tidigare rapporter som du har kört. Du kan också dela dem eller ta bort dem från listan.
@@ -251,7 +249,7 @@ Det är för närvarande en för hands version och vi planerar att tillhandahål
 
 ### <a name="what-is-required-to-run-the-advanced-test-client"></a>Vad krävs för att köra den avancerade test klienten?
 
-Den avancerade test klienten kräver .NET Core 3,1-datorprogram. Om du kör den avancerade test klienten utan att vara installerad kommer du till [sidan .net Core 3,1 installations program](https://dotnet.microsoft.com/download/dotnet-core/3.1). Kontrol lera att du installerar Skriv bords miljön och inte är SDK, eller ASP.NET Core-körningsmiljön som är högre upp på sidan. Administratörs behörighet på datorn är reuqired att installera .NET Core. 
+Den avancerade test klienten kräver .NET Core 3,1-datorprogram. Om du kör den avancerade test klienten utan att vara installerad kommer du till [sidan .net Core 3,1 installations program](https://dotnet.microsoft.com/download/dotnet-core/3.1). Kontrol lera att du installerar Skriv bords miljön och inte är SDK, eller ASP.NET Core-körningsmiljön som är högre upp på sidan. Du måste ha administratörs behörigheter för att installera .NET Core. 
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>Vad är Microsoft 365-tjänstens front dörr?
 

@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Lär dig mer om de Microsoft 365-inställningar som behövs för att konfigurera en SharePoint-webbplats för samarbete med gäster.
-ms.openlocfilehash: c04114218342a2d65b318c71d061c2a0ed815fab
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: d5a868e57753a6eb05f74b4873ed64ef0a70878e
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797822"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171274"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Samar beta med gäster på en webbplats
 
@@ -39,18 +39,18 @@ I den här videon visas de konfigurations steg som beskrivs i det här dokumente
 
 Delning i Microsoft 365 regleras på högsta nivå av [organisations Relations inställningarna i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Om gäst delning är inaktiverat eller begränsat i Azure AD åsidosätter detta eventuella delnings inställningar som du konfigurerar i Microsoft 365.
 
-Kontrol lera inställningarna för organisations relationer för att säkerställa att delning med gäster inte blockeras.
+Kontrol lera inställningarna för extern samarbete för att se till att delning med gäster inte blockeras.
 
-![Skärmbild av sidan med inställningar för organisationsrelationer i Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
+![Skärm bild av sidan med inställningar för extern samarbets katalog i Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
 
-Så här anger du inställningar för organisations relationer
+Så här anger du inställningar för extern samarbete:
+
 
 1. Logga in på Microsoft Azure på [https://portal.azure.com](https://portal.azure.com) .
 2. I det vänstra navigerings fältet klickar du på **Azure Active Directory**.
-3. I fönstret **Översikt** klickar du på **organisations relationer**.
-4. Klicka på **Inställningar**i fönstret **organisations relationer** .
-5. Kontrol lera att **Administratörer och användare i rollen för att bjuda in gäst kan bjuda** in och **medlemmar kan bjuda** in till **Ja**.
-6. Om du har gjort ändringar klickar du på **Spara**.
+3. Välj **externa identiteter** och klicka på **Inställningar för externt samarbete**.
+4. I fönstret **Inställningar för gäst inbjudningar** kontrollerar du att **Administratörer och användare i rollen som inbjudan gäst kan bjuda** in och **medlemmar kan bjuda** in till **Ja**.
+5. Om du har gjort ändringar klickar du på **Spara**.
 
 Observera inställningarna i avsnittet **samarbets begränsningar** . Kontrol lera att domänerna för de gäster som du vill samar beta med inte är blockerade.
 
@@ -146,4 +146,3 @@ Så här bjuder du in gäster till en grupp
 [Skapa en säker miljö för gästdelning](create-secure-guest-sharing-environment.md)
 
 [Skapa ett B2B-extranät med hanterade gäster](b2b-extranet.md)
-

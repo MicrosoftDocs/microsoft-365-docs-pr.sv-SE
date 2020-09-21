@@ -19,15 +19,15 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Lär dig hur du gör organisationen säkrare mot lösenordsattacker och varför du bör förbjuda vanliga lösenord och aktivera riskbaserad multifaktorautentisering.
-ms.openlocfilehash: 1d6e399acb83751ec6a45eb0c811dedec394127e
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 0ae26dc27cc698c24d999acde03f63f9cfead081
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015929"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131948"
 ---
 # <a name="password-policy-recommendations"></a>Policyrekommendationer för lösenord
- 
+
 Som administratör för en organisation är du ansvarig för att bestämma policyn för användarnas lösenord. Det kan vara komplicerat och förvirrande att ange en lösenordspolicy och den här artikeln innehåller rekommendationer för att skydda organisationen mot lösenordsattacker.
   
 Information om hur du anger hur ofta Microsoft 365-lösenord ska upphöra att gälla i organisationen finns i [Ange förfalloprincip för lösenord för Microsoft 365](../manage/set-password-expiration-policy.md).
@@ -78,11 +78,11 @@ Det här är några av de vanligaste metoderna för lösenordshantering, men for
   
 ### <a name="password-expiration-requirements-for-users"></a>Krav på giltighetstid för lösenord för användare
 
-Krav på giltighetstid för lösenord gör mer skada än nytta, eftersom de här kraven gör att användarna väljer förutsägbara lösenord, som består av sekventiella ord och tal som är nära relaterade till varandra. I sådana fall kan nästa lösenord förutsägas utifrån föregående lösenord. Krav på giltighetstid för lösenord ger inga begränsningsfördelar eftersom cyberbrottslingar nästan alltid använder inloggningsuppgifter direkt när de får tag på dem.
+Lösenordets utgångskrav gör mer skada än nytta, eftersom dessa krav får användarna att välja förutsägbara lösenord, sammansatta av ord och nummer som är nära relaterade till varandra. I dessa fall kan nästa lösenord förutsägas baserat på föregående lösenord. Lösenordens utgångskrav erbjuder inga fördelar för inneslutning eftersom cyberbrottslingar nästan alltid använder referenser så fort de äventyrar dem. Kolla in [tid att ompröva obligatoriska lösenordsändringar ](https://go.microsoft.com/fwlink/p/?linkid=861018)för mer information.
   
 ### <a name="requiring-long-passwords"></a>Krav på långa lösenord
 
-Krav på lösenordslängd (fler än cirka 10 tecken) kan leda till förutsägbara och oönskade användarbeteenden. Användare som måste ha ett lösenord med minst 16 tecken kan till exempel välja upprepade mönster som **fyrafyrafyrafyra** eller **lösenordlösenord** som uppfyller kravet på teckenlängd men inte är svåra att gissa sig till. Längdkrav ökar dessutom risken för att användare använder sig av andra osäkra metoder, till exempel att skriva ned sina lösenord, använda dem igen eller lagra dem okrypterade i sina dokument. För att uppmuntra användare att komma på ett unikt lösenord rekommenderar vi att ha ett rimligt krav om minimilängd på 8 tecken. 
+Krav på lösenordslängd (fler än cirka 10 tecken) kan leda till förutsägbara och oönskade användarbeteenden. Användare som måste ha ett lösenord med minst 16 tecken kan till exempel välja upprepade mönster som **fyrafyrafyrafyra** eller **lösenordlösenord** som uppfyller kravet på teckenlängd men inte är svåra att gissa sig till. Längdkrav ökar dessutom risken för att användare använder sig av andra osäkra metoder, till exempel att skriva ned sina lösenord, använda dem igen eller lagra dem okrypterade i sina dokument. För att uppmuntra användare att komma på ett unikt lösenord rekommenderar vi att ha ett rimligt krav om minimilängd på 8 tecken.
   
 ### <a name="requiring-the-use-of-multiple-character-sets"></a>Krav på användning av flera teckenuppsättningar
 
@@ -131,8 +131,6 @@ Med riskbaserad multifaktorautentisering går det att kontrollera att användare
 - [Dags att ompröva obligatoriska lösenordsändringar](https://go.microsoft.com/fwlink/p/?linkid=861018)
 
 - [2015 års sämsta lösenord](https://go.microsoft.com/fwlink/p/?linkid=861020)
-
-- [Ladda ned filer från webben](https://go.microsoft.com/fwlink/p/?linkid=861029)
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
