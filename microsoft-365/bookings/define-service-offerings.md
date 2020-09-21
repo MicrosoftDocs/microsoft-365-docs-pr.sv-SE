@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: Anvisningar för att ange information om tjänst erbjudanden, inklusive tjänstens namn, beskrivning, plats, längd och prissättning. Du kan också tagga de anställda som är kvalificerade för att tillhandahålla tjänsten.
-ms.openlocfilehash: 60b77633b9845b3c269f6773c1fb8a26256fbdc5
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 095188546c01149a793a478a3cbd5ac9fbeb5524
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47420244"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962543"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Definiera dina tjänst möjligheter i bokningar
 
 När du definierar dina tjänst erbjudanden i Microsoft-bokningar kan du ange ett tjänst namn, en beskrivning, en plats (Välj om du vill träffas personligen eller ha ett onlinemöte), varaktighet, standard påminnelser till kunder och personal, interna anteckningar om tjänsten och priser. Du kan också tagga de anställda som är kvalificerade för att tillhandahålla tjänsten. När kunder sedan kommer till företagets webbplats för att boka en avtalad tid kan de se exakt vilka typer av avtalade tider som är tillgängliga, välja den person som ska tillhandahålla tjänsten och hur mycket deras tjänst kommer att kosta.
 
 Du kan också lägga till anpassad information och URL-adresser i e-postbekräftelsen och påminnelser som du skickar när någon bokar en pärm till en tjänst via din boknings sida.
-
-> [!NOTE]
-> Bokningar är som standard aktiverade för kunder som har Microsoft 365 Business Standard, Microsoft 365 a3 eller Microsoft 365 A5. Bokningar är också tillgängliga för kunder som har Office 365 Enterprise E3 och Office 365 Enterprise, E5, men det är inaktiverat som standard. Kom igång genom att läsa [få till gång till Microsoft-bokningar](get-access.md). Om du vill aktivera eller inaktivera uppslagning kan du läsa [Aktivera och inaktivera en organisation](turn-bookings-on-or-off.md).
 
 ## <a name="create-the-service-details"></a>Skapa tjänst informationen
 

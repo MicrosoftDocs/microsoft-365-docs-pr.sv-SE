@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Lär dig hur du återställer lösen ordet för en användare i Microsoft 365 för företag-prenumeration.
-ms.openlocfilehash: 31a654f16e62ca574666dc9811004c5f40c546e6
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: faae2d31f29eb4817abc31cde1e1ce2bd6a47db1
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361767"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131708"
 ---
 # <a name="reset-passwords"></a>Återställ lösenord
 
@@ -40,7 +40,7 @@ I den här artikeln förklaras hur du återställer lösen ord för dig själv o
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Den här artikeln är avsedd för personer som anger en förfalloprincip för lösenord för ett företag, en skola eller en ideell förening. För att utföra de här stegen måste du logga in med ditt Microsoft 365-administratörs konto. [Vad är ett administratörs konto?](../admin-overview/admin-overview.md). 
+Den här artikeln är avsedd för personer som anger en förfalloprincip för lösenord för ett företag, en skola eller en ideell förening. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörskonto?](../admin-overview/admin-overview.md).
 
 Du måste vara [Global administratör eller lösen ords administratör](about-admin-roles.md) för att utföra de här stegen.
 

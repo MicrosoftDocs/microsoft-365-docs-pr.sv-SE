@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: Ändra språk-och tids zons inställningar i Microsoft-bokningar. Om bokningarna skapas på fel tid kan det bero på att den inte är aktive rad.
-ms.openlocfilehash: 07e5dde2a896610ee079063943aff24ec69ba721
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 3e7709666d6426b11c275e46a18d43e7b7ab3526
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47420203"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962437"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>Ange språk-och tids zoner i Microsoft-bokningar
 
 Om du använder Microsoft-bokningar och bokningar skapas på fel gång kan det hända att dina tids zons inställningar måste ändras. Om vissa bokningar är på fel språk kan du behöva ändra dina språk inställningar.
 
 Det finns två separata inställningar för språk och tidszon för bokningar. Den första inställningen styr tids zonen för boknings kalender och anges med hjälp av Outlook på webben inställningar för den personliga kalendern för den inloggade användaren. Den andra inställningen påverkar den boknings sida för självbetjäning som kunderna använder och är inställd på en "nationella inställningar"-sida som styr språk-och tidszon för den aktuella sidan.
-
-> [!NOTE]
-> Bokningar är som standard aktiverade för kunder som har Microsoft 365 Business Standard, Microsoft 365 a3 eller Microsoft 365 A5. Bokningar är också tillgängliga för kunder som har Office 365 Enterprise E3 och Office 365 Enterprise, E5, men det är inaktiverat som standard. Kom igång genom att läsa [få till gång till Microsoft-bokningar](get-access.md). Om du vill aktivera eller inaktivera uppslagning kan du läsa [Aktivera och inaktivera en organisation](turn-bookings-on-or-off.md).
 
 ## <a name="setting-language-and-time-zone-for-a-booking-calendar"></a>Ange språk och tidszon för en boknings kalender
 

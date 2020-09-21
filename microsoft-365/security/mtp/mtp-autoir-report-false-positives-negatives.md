@@ -1,7 +1,7 @@
 ---
-title: Hantera falska positiva eller falska negativ i AIR i Microsoft Threat Protection
-description: Har något missats eller felaktigt upptäckts av AIR i Microsoft Threat Protection? Lär dig hur du skickar falska positiva eller falska negativ till Microsoft för analys.
-keywords: automatiserad, utredning, alert, utlösa, åtgärd, sanering, falskt positivt, falskt negativt
+title: Hantera falskta positiva eller falska negativa negativ i luften i Microsoft Threat Protection
+description: Har något missats eller felaktigt upptäckts av AIR i Microsoft Threat Protection? Lär dig hur du skickar falska positiva eller falska negativa negativ till Microsoft för analys.
+keywords: automatiserad, undersökning, avisering, utlösare, åtgärd, reparation, falskt positivt, falskt negativt
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 01/29/2020
+ms.date: 09/16/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,70 +19,68 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 4030469b54d9a3a9c6f2eaceae384d39ea7f3e20
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.reviewer: evaldm, isco
+ms.openlocfilehash: ace9ab8e5b73e4a4310b476c8954b0be81faaa66
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637086"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962329"
 ---
-# <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Hantera falska positiva identifieringar/negativ i automatiserade undersöknings- och svarsfunktioner
+# <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Hantera felaktiga positiva/negativa negativ i automatiserade undersökningar och svars funktioner
 
-**Gäller:**
+**Gäller för:**
 - Microsoft Hotskydd
 
-Har [automatiserade undersöknings- och svarsfunktioner](mtp-autoir.md) i Microsoft Threat Protection missat eller felaktigt upptäckt något? Det finns åtgärder du kan vidta för att åtgärda det. Du kan:
+Lyckades en [Automatisk undersökning och svars funktion](mtp-autoir.md) i Microsoft Threat Protection missar något? Det finns några åtgärder du kan vidta för att åtgärda det. Du kan:
 
-- [Rapportera ett falskt positivt/negativt till Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
+- [Rapportera en falsk positiv/negativ till Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 
-- [Justera dina aviseringar](#adjust-an-alert-to-prevent-false-positives-from-recurring) (om det behövs); Och 
+- [Justera dina meddelanden](#adjust-an-alert-to-prevent-false-positives-from-recurring) (vid behov); och 
 
-- [Ångra åtgärder för reparation som har vidtagits på enheter](#undo-a-remediation-action-that-was-taken-on-a-device). 
+- [Ångra reparations åtgärder som har utförts på enheter](#undo-a-remediation-action-that-was-taken-on-a-device). 
 
-Använd den här artikeln som vägledning. 
+Använd den här artikeln som en guide. 
 
-## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Rapportera ett falskt positivt/negativt till Microsoft för analys
+## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Rapportera en falsk positiv/negativ till Microsoft för analys
 
-|Objektet har missats eller upptäckts felaktigt |Tjänst  |Vad du ska göra  |
+|Objektet missade eller upptäcktes felaktigt |Tjänst  |Vad kan jag göra?  |
 |---------|---------|---------|
-|- E-postmeddelande <br/>- Bifogad fil i e-post <br/>- URL i ett e-postmeddelande<br/>- URL i en Office-fil      |[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[Skicka misstänkt skräppost, phish, webbadresser och filer till Microsoft för skanning](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
-|Fil eller app på en enhet    |[Microsoft Defender Avancerat skydd](https://docs.microsoft.com/windows/security/threat-protection)         |[Skicka en fil till Microsoft för analys av skadlig kod](https://www.microsoft.com/wdsi/filesubmission)         |
+|-E-postmeddelande <br/>-E-postbilaga <br/>-URL i ett e-postmeddelande<br/>-URL i en Office-fil      |[Office 365 Avancerat skydd](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[Skicka misstänkt spam, Phish, webb adresser och filer till Microsoft för genomsökning](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
+|Fil eller app på en enhet    |[Microsoft Defender Avancerat skydd](https://docs.microsoft.com/windows/security/threat-protection)         |[Skicka en fil till Microsoft för analys av skadlig program vara](https://www.microsoft.com/wdsi/filesubmission)         |
 
-## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Justera en avisering för att förhindra att falska positiva identifieringar upprepas
+## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Justera en avisering för att förhindra falsk negativ från återkommande
 
-|Scenario |Tjänst |Vad du ska göra |
+|Ovanligt |Tjänst |Vad kan jag göra? |
 |--------|--------|--------|
-|- En avisering utlöses av legitim användning <br/>- En varning är felaktig    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> eller <br/>[Azure avancerad hotidentifiering](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[Hantera aviseringar i Cloud App Security-portalen](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
-|En fil, IP-adress, URL eller domän behandlas som skadlig kod på en enhet, även om den är säker|[Microsoft Defender Avancerat skydd](https://docs.microsoft.com/windows/security/threat-protection) |[Skapa en anpassad indikator med åtgärden Tillåt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
+|-En notifiering utlöses av en legitim användning <br/>-En avisering är felaktig    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> eller <br/>[Avancerad hot identifiering för Azure](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[Hantera aviseringar i Cloud App Security Portal](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
+|En fil, IP-adress, URL eller domän behandlas som skadlig program vara på en enhet, trots att det är säkert|[Microsoft Defender Avancerat skydd](https://docs.microsoft.com/windows/security/threat-protection) |[Skapa en anpassad indikator med åtgärden "Tillåt"](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 
-## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>Ångra en åtgärd som har vidtagits på en enhet
+## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>Ångra en reparations åtgärd som har utförts på en enhet
 
-Om en reparationsåtgärd har vidtagits på en enhet (till exempel en Windows 10-enhet) och objektet faktiskt inte är ett hot, kan säkerhetsoperationsgruppen ångra reparationsåtgärden i [Åtgärdscenter](mtp-action-center.md).
+Om en åtgärd för reparation har utförts på en enhet (till exempel en Windows 10-enhet) och objektet inte är ett hot kan säkerhets åtgärds gruppen ångra reparations åtgärden i [Åtgärds centret](mtp-action-center.md).
 
 > [!IMPORTANT]
-> Kontrollera att du har de [behörigheter som krävs](mtp-action-center.md#required-permissions-for-action-center-tasks) innan du försöker utföra följande uppgift.
+> Kontrol lera att du har [nödvändig behörighet](mtp-action-center.md#required-permissions-for-action-center-tasks) innan du försöker utföra följande uppgift.
 
-1. Gå [https://security.microsoft.com](https://security.microsoft.com) till och logga in. 
+1. Gå till [https://security.microsoft.com](https://security.microsoft.com) och logga in. 
 
-2. Välj **Åtgärdscenter**i navigeringsfönstret . 
+2. I navigerings fönstret väljer du **Åtgärds Center**. 
 
-3. Välj en åtgärd som du vill ångra på fliken **Historik.** Detta öppnar ett utfällbart.<br/>
+3. På fliken **Historik** väljer du en åtgärd som du vill ångra. Då öppnas en utfällbar meny.<br/>
     > [!TIP]
-    > Använd filter för att begränsa resultatlistan. 
+    > Använd filter för att begränsa resultat listan. 
 
-4. I utfällbara objekt för det markerade objektet väljer du **Öppna undersökningssida**.
+4. Välj **Öppna undersöknings sida**i utfällning för det markerade objektet.
 
-5. Välj fliken **Åtgärder** i vyn Undersökningsinformation.
+5. I vyn undersöknings information väljer du fliken **åtgärder** .
 
-6. Markera ett objekt som har **statusen Slutförd**och leta efter en länk, till exempel **Godkänd**, i kolumnen **Beslut.** Detta öppnar ett utfällbart överläge med mer information om åtgärden.
+6. Markera ett objekt som har statusen **slutförd**och leta efter en länk, till exempel **godkänd**, i kolumnen **beslut** . Då öppnas en utfällbar lista med mer information om åtgärden.
 
-7. Om du vill ångra åtgärden väljer du **Ta bort reparation**.
+7. Om du vill ångra åtgärden väljer du **ta bort reparation**.
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="see-also"></a>Se även
 
-- [Godkänna eller avvisa åtgärder relaterade till automatisk undersökning och svar](mtp-autoir-actions.md)
-
-- [Läs mer om Åtgärdscentret](mtp-action-center.md)
-
-- [Proaktivt jakt efter hot med avancerad jakt i Microsoft Threat Protection](advanced-hunting-overview.md)
+- [Visa information och resultat från en automatisk undersökning](mtp-autoir-results.md)
+- [Det står proaktivt för problem med avancerad jakt i Microsoft Threat Protection](advanced-hunting-overview.md)

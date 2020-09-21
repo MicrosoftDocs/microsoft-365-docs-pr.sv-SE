@@ -1,7 +1,7 @@
 ---
 title: Support för Microsoft Managed Desktop
 description: ''
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2d6dab7ae722b6e64b782596e51e0898ddc2cccc
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 8af782095ada41f0472e1df338ced7ebe76c97fe
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289693"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104418"
 ---
 # <a name="getting-help-for-users"></a>Få hjälp för användare
 
@@ -71,4 +71,4 @@ användare med Microsoft hanterade Station ära Skriv bords enheter har också t
 ## <a name="additional-resources"></a>Ytterligare resurser
 - [Administratörs support för Microsoft Managed Desktop](admin-support.md). 
 - [Stöd för Microsoft Managed Desktop](../service-description/support.md).
-- Om du redan abonnerar på Microsoft Managed Desktop kan du hitta detaljerade procedurer, process flöden, arbets instruktioner och vanliga frågor och svar i administratörs guiden för Microsoft-hanterade skriv bord i avsnittet **online-resurser** på [administrations portalen för Microsoft Managed Desktop](https://aka.ms/mwaasportal).
+- Om du redan prenumererar på Microsoft Managed Desktop kan du hitta detaljerade procedurer, process flöden, arbets instruktioner och vanliga frågor och svar i administratörs guiden för Microsoft- **Online resources** hanterad Skriv bords **Administration** i Microsoft [Endpoint Manager](https://endpoint.microsoft.com/).

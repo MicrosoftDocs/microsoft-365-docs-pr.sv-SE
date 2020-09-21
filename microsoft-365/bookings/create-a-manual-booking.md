@@ -9,19 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Följ de här instruktionerna för att skapa en avtalad tid och koppla en anställd till Microsoft-programmet.
-ms.openlocfilehash: d0538b1c3e19a6bc78c997ff3e681ac30aa074ff
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: dffc63b1f638c551e40d22852b1ba6a73c5be869
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47420255"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962567"
 ---
 # <a name="create-a-manual-booking"></a>Skapa en manuell bokning
 
 Bokningar kan schemaläggas och bemannas på två olika sätt. Det första är den kund som använder en fristående boknings sida eller en inbäddad boknings sida som du lägger till på webbplatsen. Det andra sättet är för dig eller en av dina anställda att ange bokningarna manuellt, till exempel när en kund ringer för en avtalad tid. I den här artikeln beskrivs det manuella scenariot.
-
-> [!NOTE]
-> Bokningar är som standard aktiverade för kunder som har Microsoft 365 Business Standard, Microsoft 365 a3 eller Microsoft 365 A5. Bokningar är också tillgängliga för kunder som har Office 365 Enterprise E3 och Office 365 Enterprise, E5, men det är inaktiverat som standard. Kom igång genom att läsa [få till gång till Microsoft-bokningar](get-access.md). Om du vill aktivera eller inaktivera uppslagning kan du läsa [Aktivera och inaktivera en organisation](turn-bookings-on-or-off.md).
 
 1. I Microsoft 365 väljer du Start programmet och väljer sedan **bokningar**.
 

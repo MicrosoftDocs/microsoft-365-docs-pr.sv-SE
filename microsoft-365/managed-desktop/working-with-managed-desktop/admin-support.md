@@ -1,7 +1,7 @@
 ---
 title: Admin-support för Microsoft Hanterat skrivbord
 description: ''
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fb786383e448ad3f5c78b22f3cdbf282c2c9f906
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 972430f5637f1160c330bed1558b79c8273171c5
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289727"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104588"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Admin-support för Microsoft Hanterat skrivbord
 
@@ -24,10 +24,11 @@ Du kan skicka in support biljetter eller feedback till Microsoft via den adminis
 >Se till att du [konfigurerar en administratörs kontakt](../get-started/add-admin-contacts.md) för programpaket, enheter, säkerhet och annan. Du kan inte skicka in en supportbegäran i något av dessa områden om en administratörs kontakt inte har kon figurer ATS.
 
 **Så här skickar du en supportbegäran**
-1. Logga in på [administrations portalen för Microsoft Managed Desktop](https://aka.ms/mwaasportal). 
-2. Välj **+ nytt support ärende**på **supportfrågor**.
-3. Välj den **typ av support förfrågan** som matchar den hjälp du behöver. I tabellen nedan beskrivs alternativen. 
-4. Välj **allvarlighets nivå**. Mer information finns i [support ärende – definitioner för allvarlighets grad](#sev). 
+1. Logga in på [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) och navigera till **fel sökning + support** -menyn.
+2. Leta efter avsnittet Microsoft Managed Desktop och välj **sevice Request**.
+3. Välj **+ nytt support ärende**på **supportfrågor**.
+4. Välj den **typ av support förfrågan** som matchar den hjälp du behöver. I tabellen nedan beskrivs alternativen. 
+5. Välj **allvarlighets nivå**. Mer information finns i [support ärende – definitioner för allvarlighets grad](#sev). 
 
 Typ av support förfrågan | När du ska använda
 --- | ---
@@ -58,7 +59,7 @@ Ytterligare information:
 
 Vi uppskattar din feedback och använder den för att förbättra support upplevelsen för administratörer.
 
-När en biljett har **begränsats** eller **lösts** kan du dela med dig av dina synpunkter på din upplevelse med just det problemet. För att göra det går du till sidan **support förfrågningar** i administrations portalen. Välj den specifika biljetten. I det här meddelandet klickar du på fliken **feedback** och anger den information som krävs. Var försiktig så att du inte får med personlig information i feedback-formuläret. Mer information om sekretess finns i [Microsofts sekretess policy](https://privacy.microsoft.com/privacystatement).
+När en biljett har **begränsats** eller **lösts** kan du dela med dig av dina synpunkter på din upplevelse med just det problemet. För att göra det går du till sidan **service begär Anden** i **fel sökning + support** -menyn i Mem-portalen. Välj den specifika biljetten. Biljett uppgifterna visas i den högra rutan, Välj fliken **feedback** och ange den information som krävs. Var försiktig så att du inte får med personlig information i feedback-formuläret. Mer information om sekretess finns i [Microsofts sekretess policy](https://privacy.microsoft.com/privacystatement).
 
 ![Feedback-formulär](../../media/feedback_form.png)
 
@@ -67,4 +68,4 @@ När en biljett har **begränsats** eller **lösts** kan du dela med dig av dina
 ## <a name="additional-resources"></a>Ytterligare resurser
 - [Användar stöd för Microsoft Managed Desktop](end-user-support.md). 
 - [Stöd för Microsoft Managed Desktop](../service-description/support.md). 
-- Om du redan abonnerar på Microsoft Managed Desktop kan du hitta detaljerade procedurer, process flöden, arbets instruktioner och vanliga frågor och svar i administratörs guiden för Microsoft-hanterade skriv bord i avsnittet **online-resurser** på [administrations portalen för Microsoft Managed Desktop](https://aka.ms/mwaasportal).
+- Om du redan prenumererar på Microsoft Managed Desktop kan du hitta detaljerade procedurer, process flöden, arbets instruktioner och vanliga frågor och svar i administratörs guiden för Microsoft- **Online resources** hanterade **Skriv bord på** **administrations** -menyn i Microsoft [slut punkts hanteraren](https://endpoint.microsoft.com/).

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du hittar och använder e-postsäkerhets rapporter för organisationen. Säkerhets rapporter för e-post finns i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2b714d9dc4e3ca143d2cb2d7164f8c3c737d1928
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: a87cee31b4e0251aea8eb39640d37184ccd0ee96
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826511"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104528"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visa rapporter om e-postsäkerhet i Säkerhets- och efterlevnadscenter
 
@@ -269,7 +269,7 @@ Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
 
 Status rapporten för **hotets skydd** är tillgänglig i både EOP och Office 365 ATP; rapporterna innehåller emellertid olika data. EOP kunder kan till exempel Visa information om skadlig kod som upptäckts i e-post, men inte information om [skadliga filer som identifieras i SharePoint Online, OneDrive eller Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
-I rapporten får du ett sammanslaget antal unika e-postmeddelanden med skadligt innehåll, till exempel filer eller webbplats adresser (URL: er) som blockerades av motorn mot skadlig program vara, en [hel timmes autorensning (Zap)](zero-hour-auto-purge.md)och alla ATP-funktioner som [säkra säkerhets länkar](atp-safe-links.md), [ATP-säkra bilagor](atp-safe-attachments.md)och [ATP-nätfiske](set-up-anti-phishing-policies.md). Du kan använda den här informationen för att identifiera trender eller för att avgöra om organisations principer behöver justeras.
+I rapporten får du räknat antalet e-postmeddelanden med skadligt innehåll, till exempel filer eller webbplats adresser (URL: er) som blockerades av motorn mot skadlig program vara, en [hel timmes autorensning (Zap)](zero-hour-auto-purge.md)och alla ATP-funktioner som [Safe ATP-länkar](atp-safe-links.md), [ATP-säkra bilagor](atp-safe-attachments.md)och [ATP-nätfiske](set-up-anti-phishing-policies.md). Du kan använda den här informationen för att identifiera trender eller för att avgöra om organisations principer behöver justeras. Det är viktigt att förstå att om ett meddelande skickas till fem mottagare räknas det som fem olika meddelanden och inte ett meddelande.
 
 Om du vill visa rapporten öppnar du [säkerhets & efterlevnad](https://protection.office.com), går till **Reports** \> **instrument paneler** för rapporter och väljer **skydds status**. Om du vill gå direkt till rapporten öppnar du en av följande webb adresser:
 

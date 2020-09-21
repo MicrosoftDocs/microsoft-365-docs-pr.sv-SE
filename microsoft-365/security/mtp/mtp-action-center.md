@@ -18,12 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 2dc641d22432e245980b905051bddd3b7dd4ed07
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.reviewer: evaldm, isco
+ms.date: 09/16/2020
+ms.openlocfilehash: 4d4aa8afc7a17d2f9f0ae2d48404d7a3da553d47
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547992"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962269"
 ---
 # <a name="the-action-center"></a>Åtgärdscentret
 
@@ -94,9 +96,6 @@ För att godkänna eller avvisa väntande åtgärder i åtgärds centret måste 
 
 ## <a name="next-steps"></a>Nästa steg 
 
-- [Lär dig mer om incidenter i Microsoft Threat Protection](incidents-overview.md)
-
+- [Godkänna eller avvisa väntande åtgärder efter en automatisk undersökning](mtp-autoir-actions.md)
 - [Visa resultatet av en automatisk undersökning](mtp-autoir-results.md)
-
-- [Lär dig mer om jakt i Microsoft Threat Protection](advanced-hunting-overview.md)
 

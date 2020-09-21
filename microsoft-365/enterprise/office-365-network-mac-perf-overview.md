@@ -3,7 +3,7 @@ title: Nätverks anslutning i Microsoft 365 Admin Center (för hands version)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/21/2020
+ms.date: 09/17/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,16 +14,20 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Översikt över nätverks anslutningar i Microsoft 365 Admin Center (för hands version)
-ms.openlocfilehash: f8eff2248fb7abce75c27f227a2c5e7ec7219046
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 35ea28ec45a7e581901c0f4f22360a1dcd0def8b
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948425"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962293"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Nätverks anslutning i Microsoft 365 Admin Center (för hands version)
 
-Administrations centret för Microsoft 365 inkluderar nu sammansatta nätverks anslutnings mått som samlas in från din Microsoft 365-klient organisation och som bara kan visas av administrativa användare i din klient organisation. **Nätverks utvärderingar** och **nätverks insikter** visas i administrations centret för Microsoft 365 under **hälsa |. Anslutning**.
+Administrations centret för Microsoft 365 inkluderar nu sammansatta nätverks anslutnings mått som samlas in från din Microsoft 365-klient organisation och som bara kan visas av administrativa användare i din klient organisation.
+
+![Test verktyg för nätverks anslutning](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
+
+**Nätverks utvärderingar** och **nätverks insikter** visas i administrations centret för Microsoft 365 under **hälsa |. Anslutning**.
 
 ![Sidan nätverks prestanda](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Hur uppdateringar hanteras på Microsoft Managed Desktop
 description: Att hålla Microsoft Managed Desktop uppdaterat är en balans mellan hastighet och stabilitet.
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1349b58bdd6243b05323f14197e0ad92c1fc0d7b
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 03a9b19a5b8ba957419e23c2bb12748c9c57e80d
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289501"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104624"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Hur uppdateringar hanteras på Microsoft Managed Desktop
 
@@ -55,16 +55,15 @@ Så här fungerar uppdaterings distribution:
 
 
 <table>
-<tr><th colspan="5">Inställningar för uppdaterings distribution</th></tr>
-<tr><th>Uppdaterings typ</th><th>Tävlingar</th><th>Skapas</th><th>Snabbspola</th><th>Personer</th></tr>
-<tr><td>Kvalitets uppdateringar för operativ systemet</td><td>0 dagar</td><td>0 dagar</td><td>0 dagar</td><td>3 dagar</td></tr>
-<tr><td>Funktions uppdateringar för operativ system</td><td>0 dagar</td><td>30 dagar</td><td>60 dagar</td><td>90 dagar</td></tr>
-<tr><td>Driv rutiner/inbyggd program vara</td><td colspan="4">Följer schemat för kvalitets uppdateringar</td></tr>
-<tr><td>Antivirus definition</td><td colspan="4">Uppdaterat med varje genomsökning</td></tr>
-<tr><td> Microsoft 365 Apps för företag</td><td colspan="4">Följer den aktuella kanalen för Office
+    <tr><th colspan="5">Inställningar för uppdaterings distribution</th></tr>
+    <tr><th>Uppdaterings typ</th><th>Tävlingar</th><th>Skapas</th><th>Snabbspola</th><th>Personer</th></tr>
+    <tr><td>Kvalitets uppdateringar för operativ systemet</td><td>0 dagar</td><td>0 dagar</td><td>0 dagar</td><td>3 dagar</td></tr>
+    <tr><td>Funktions uppdateringar för operativ system</td><td>0 dagar</td><td>30 dagar</td><td>60 dagar</td><td>90 dagar</td></tr>
+    <tr><td>Driv rutiner/inbyggd program vara</td><td colspan="4">Följer schemat för kvalitets uppdateringar</td></tr>
+    <tr><td>Antivirus definition</td><td colspan="4">Uppdaterat med varje genomsökning</td></tr>
+    <tr><td> Microsoft 365 Apps för företag</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">Läs mer</a></td></tr>
+    <tr><td>Microsoft Edge</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">Läs mer</a></td></tr>
 </table>
-
-Mer information om den aktuella kanalen för Microsoft 365-appar för företag finns i [Översikt över uppdaterings kanaler för microsoft 365-appar](https://docs.microsoft.com/deployoffice/overview-update-channels).
 
 >[!NOTE]
 >Dessa avstängnings perioder är avsiktligt utformade för att säkerställa hög säkerhet och prestanda för alla användare. Baserat på data som samlats in på alla Microsoft-hanterade Skriv bords enheter och omfattningen av olika uppdateringar, förbehåller sig Microsoft Managed Station ära datorer flexibilitet att ändra längden på de ovanstående avstängnings perioderna för alla och alla distributions grupper på ett ad hoc-basis.

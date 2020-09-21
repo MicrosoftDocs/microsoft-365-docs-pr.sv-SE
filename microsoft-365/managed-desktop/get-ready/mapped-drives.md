@@ -1,7 +1,7 @@
 ---
 title: Förbereda mappade enheter för Microsoft Hanterat skrivbord
 description: Viktiga steg för att kontrol lera
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 04c3901155ecd80fad472e07e7e46620c3ddee1f
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: fc216adadea8dd774901d42a754fb288412318a1
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289279"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104600"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Förbereda mappade enheter för Microsoft Hanterat skrivbord
 
@@ -48,8 +48,8 @@ Det är helt ditt ansvar att säkerställa att användare och grupper har och up
  
 Kontrol lera att anslutna enheter inte kan undvikas och att du noggrant har granskat kraven innan du skickar en tjänst förfrågan. Gör sedan följande:
 
-1. Gå till [Microsofts hanterade Skriv bords Portal](https://aka.ms/mmdportal).  
-2. Skicka in en support förfrågan med rubriken "anslutna enheter distribueras" genom **support > supportfrågor** och ange alla nödvändiga fil uppgifter.  
+1. Gå till [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) och välj "fel sökning + support" och leta efter "tjänst begär Anden" under avsnittet Microsoft Managed Deskop.  
+2. Skicka in en supportbegäran med rubriken "anslutna enheter distribution" och ge alla nödvändiga fil uppgifter.  
 3. Microsoft-hanterad stationär dator IT-operationer bör använda uppdateringar för support förfrågningar när begäran har slutförts. Först distribueras den här konfigurationen till enheter i test distributions gruppen.  
-4. Du måste testa och bekräfta om konfigurationen som distribueras av Microsoft Managed Desktop fungerar som förväntat. Svara med hjälp av fliken diskussion i support förfrågan för att avisera Microsoft Managed Desktop IT-operationer när du är klar med testningen.  
+4. Du måste testa och bekräfta om konfigurationen som distribueras av Microsoft Managed Desktop fungerar som förväntat. Svara med hjälp av fliken diskussion i informationen om samma supportbegäran för att meddela Microsoft Managed Desktop IT-operationer när du har gjort testen.  
 5. Gruppen Microsoft Managed Desktop IT Operations distribuerar sedan konfigurationen till de andra distributions grupperna. 

@@ -1,7 +1,7 @@
 ---
-title: Reparationsåtgärder efter automatiserade undersökningar i Microsoft Threat Protection
-description: Få en översikt över åtgärder för reparation som följer automatiserade undersökningar i Microsoft Threat Protection
-keywords: automatiserad, utredning, alert, utlösa, åtgärder, sanering
+title: Reparations åtgärder efter automatiserade utredningar av skydd mot Microsoft Threat
+description: Få en översikt över reparations åtgärder som följer automatiska utredningar av Microsoft Threat Protection
+keywords: automatiserad, undersökning, avisering, utlösare, åtgärd, reparation
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -18,49 +18,53 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: e0f76f6a232edeac350d08eeeb47188535ffe688
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.date: 09/16/2020
+ms.reviewer: evaldm, isco
+ms.openlocfilehash: 205809bac14cc82e850ea1cbc0349256432bfe68
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502943"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962591"
 ---
-# <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Reparationsåtgärder efter automatiserade undersökningar i Microsoft Threat Protection
+# <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Reparations åtgärder efter automatiserade utredningar av skydd mot Microsoft Threat
 
-**Gäller:**
+**Gäller för:**
 - Microsoft Hotskydd
 
 
 ## <a name="remediation-actions"></a>Reparationsåtgärder
 
-Under och efter en automatisk undersökning i Microsoft Threat Protection identifieras reparationsåtgärder för skadliga eller misstänkta objekt. Vissa typer av reparationsåtgärder vidtas på enheter, även kallade slutpunkter. Andra åtgärder för reparation vidtas på e-postinnehåll. Automatiserade undersökningar slutförs efter att reparationsåtgärder har vidtagits, godkänts eller avvisats.
+Under och efter en automatisk undersökning av Microsoft Threat Protection identifieras åtgärds åtgärder för skadliga eller misstänkta objekt. Vissa typer av reparations åtgärder utförs på enheter, som även kallas slut punkter. Andra reparations åtgärder vidtas på e-postinnehållet. Automatiserade undersökningar slutfört efter att reparations åtgärder vidtogs, godkännts eller avvisats.
 
-I följande tabell sammanfattas åtgärder för reparation som för närvarande stöds i Microsoft Threat Protection: 
+I följande tabell sammanfattas de reparations åtgärder som stöds för närvarande i Microsoft Threat Protection: 
 
-|Åtgärdsåtgärder för enhet (slutpunkt)  |Åtgärder för reparation av e-post  |
+|Reparations åtgärder för enheter (slut punkter)  |Åtgärder för e-postreparation  |
 |---------|---------|
-|- Samla in utredningspaket <br/>- Isolera enheten (den här åtgärden kan ångras)<br/>- Offboard maskin <br/>- Utförande av utgivningskod <br/>- Frisläppande från karantän <br/>- Ta prov på begäran <br/>- Begränsa körning av kod (den här åtgärden kan ångras) <br/>- Kör antivirus scan <br/>- Stopp och karantän      |- Blockera URL (tid-för-klick)<br/>- Mjuk ta bort e-postmeddelanden eller kluster<br/>- Karantän e-post<br/>- Karantän en e-postbilaga<br/>- Stäng av vidarebefordran av extern e-post          |
+|-Samla in undersöknings paket <br/>-Isolera enheter (denna åtgärd kan ångras)<br/>-Ta bort dator <br/>-Lansering av kod <br/>-Släpp från karantän <br/>-Begäran-exempel <br/>-Begränsa kod körning (denna åtgärd kan ångras) <br/>-Kör antivirus genomsökning <br/>-Stopp och karantän      |-Block-URL (tid för klick)<br/>-Mjuka ta bort e-postmeddelanden eller kluster<br/>-Karantän-e-postadress<br/>-Quarantine a e-postbilaga<br/>-Inaktivera vidarebefordran av externa e-post          |
 
-Reparationsåtgärder, oavsett om de väntar på godkännande eller redan är slutförda, kan visas i [Åtgärdscenter](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center).
+Reparations åtgärder som väntar på godkännande eller redan är avslutade kan visas i [Åtgärds centret](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center).
 
-## <a name="remediation-actions-follow-automated-investigations"></a>Saneringsåtgärder följer på automatiserade utredningar
+## <a name="remediation-actions-follow-automated-investigations"></a>Reparations åtgärder utför automatiserade utredningar
 
-När en automatiserad undersökning är klar, en dom nås för varje del av bevis inblandade, och sanering åtgärder identifieras. I vissa fall vidtas åtgärder för att åtgärda dem automatiskt. I andra fall väntar saneringsåtgärder på godkännande. I följande tabell listas möjliga domar och resultat:
+När en automatiserad undersökning är klar är en Verdict nådd för varje del av beviset. Beroende på Verdict identifieras åtgärds åtgärder. I vissa fall vidtas reparations åtgärder automatiskt. i andra fall väntar reparations åtgärder på godkännande. Det beror på hur [Automatisk undersökning och svar är konfigurerat](mtp-configure-auto-investigation-response.md).
 
-|Dom    |Området    |Resultat|
+I följande tabell visas möjliga verdicts och resultat:
+
+|Verdict    |Under    |Resultat|
 |------|------|------|
-|Skadlig    |Enheter (slutpunkter)    |Reparationsåtgärder vidtas automatiskt|
-|Skadlig    |E-postinnehåll (webbadresser eller bilagor) | Rekommenderade åtgärder väntar på godkännande|
-|Misstänkta    |Enheter eller e-postinnehåll |Rekommenderade åtgärder väntar på godkännande|
-|Inga hot hittades    |Enheter eller e-postinnehåll    |Inga saneringsåtgärder behövs|
+|Skadliga    |Enheter (slut punkter)    |Reparations åtgärder vidtas automatiskt (förutsatt att organisationens [enhets grupper](mtp-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) är inställda på att **automatiskt åtgärda hot**)|
+|Skadliga    |E-postinnehåll (URL: er eller bifogade filer) | Rekommenderade reparations åtgärder väntar på godkännande|
+|Misstänkt    |Enheter eller e-postinnehåll |Rekommenderade reparations åtgärder väntar på godkännande|
+|Inga hot hittades    |Enheter eller e-postinnehåll    |Inga reparations åtgärder behövs|
 
-[Granska en väntande åtgärd i åtgärdscentret](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
-
-> [!TIP]
-> Om du tror att något missades eller felaktigt upptäcktes av automatiska undersöknings- och svarsfunktioner i Microsoft Threat Protection, låt oss veta! [Rapportera falska positiva identifieringar/negativ](mtp-autoir-report-false-positives-negatives.md).
+> [!IMPORTANT]
+> Om reparations åtgärder vidtas automatiskt eller bara vid godkännande beror på vissa inställningar, till exempel organisationens enhets grup principer. Mer information finns i följande artiklar:
+> - [Konfigurera automatisk granskning och svars funktioner i Microsoft Threat Protection](mtp-configure-auto-investigation-response.md)
+> - [Hur hot åtgärdas på enheter](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Godkänna eller avvisa åtgärder](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir-actions)
-
-- [Läs mer om Åtgärdscentret](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
+- [Gå till åtgärds Center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
+- [Godkänna eller avvisa väntande åtgärder](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir-actions)
+- [Hantera felaktiga positiva/negativa negativ i automatiserade undersökningar och svars funktioner](mtp-autoir-report-false-positives-negatives.md)

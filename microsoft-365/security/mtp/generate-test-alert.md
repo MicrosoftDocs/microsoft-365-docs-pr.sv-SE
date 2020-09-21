@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f971fb579624c31afb6225d444c326cde4621729
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: c2a5c7a95a16b9a29e73b98310e64f403d4d342b
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817155"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104564"
 ---
 # <a name="generate-a-test-alert-in-your-microsoft-threat-protection-evaluation-lab"></a>Skapa en test avisering i utvärderings labb för Microsoft Threat Protection  
 
@@ -36,4 +36,6 @@ Nu när du har slutfört konfigurering och konfiguration av Microsoft Threat Pro
 <br>![Bild av simulerings kort i instrument panelen för Microsoft 365-säkerhet](../../media/mtp-eval-73.png) <br>
 
 ## <a name="next-steps"></a>Nästa steg
-Bläddra igenom [Microsoft 365-lösning och-arkitektur Center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) för att få hjälp med hur du vill att säkerhets lösningarna ska implementeras i din unika miljö.
+
+Bläddra igenom [Microsoft 365-lösning och-arkitektur Center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) för att förstå hur du utformar lösningen och arkitekturen som passar din organisation.
+

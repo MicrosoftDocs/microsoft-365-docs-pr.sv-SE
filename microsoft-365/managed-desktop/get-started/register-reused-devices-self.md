@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 51c241c46a4c8745bcae169a1c1d89e5c4393f2f
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 6c241894ab50b6b1341b06f47c107c8945fb6e8c
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289145"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104576"
 ---
 # <a name="register-existing-devices-yourself"></a>Registrera befintliga enheter själv
 
@@ -21,7 +21,7 @@ ms.locfileid: "47289145"
 
 Processen för partners är dokumenterad i [steg för att partners ska kunna registrera enheter](register-devices-partner.md).
 
-Microsoft Managed Desktop kan fungera med helt nya enheter eller kan du återanvända enheter som du kanske redan har (som kräver att du skriver ut dem igen). Du kan registrera enheter på Microsoft Managed Desktop admin-portalen.
+Microsoft Managed Desktop kan fungera med helt nya enheter eller kan du återanvända enheter som du kanske redan har (som kräver att du skriver ut dem igen). Du kan registrera enheter med Microsoft Managed Desktop i Microsoft Endpoint Manager-portalen.
 
 ## <a name="prepare-to-register-existing-devices"></a>Förbereda att registrera befintliga enheter
 
@@ -56,7 +56,7 @@ Om du har uppfyllt alla dessa krav kan du börja samla in informationen genom at
 2. Expandera noden **rapportering** i arbets ytan övervakning, expandera **rapporter**och välj **maskin varan-General-** noden. 
 3. Kör informationen i rapporten, **Windows autopilot-enhet**och visa resultaten.
 4. I rapport visnings programmet väljer du ikonen **Exportera** och väljer alternativet **CSV (kommaavgränsad)** .
-5. När du har sparat filen måste du filtrera resultat efter de enheter som du planerar att registrera med Microsoft Managed Desktop och överföra data till [administrations portalen](https://aka.ms/mmdportal)för Microsoft Managed Desktop, välja **enheter** i det vänstra navigerings fönstret. Välj **+ registrera enheter**; infarten öppnas:
+5. När du har sparat filen måste du filtrera resultaten till de enheter som du planerar att registrera med Microsoft Managed Desktop och överföra data till Microsoft Managed Desktop. Öppna Microsoft slut punkts hanteraren och gå till menyn **enheter** och leta efter Microsoft Managed Desktop och välj **enheter**. Välj **+ registrera enheter** som öppnar ett Inflygande för att registrera nya enheter.
 
 
 Mer information finns i [registrera enheter med hjälp av administrations portalen](#register-devices-by-using-the-admin-portal) .
@@ -134,9 +134,9 @@ Med hash-data som kopplats till en CSV-fil kan du fortsätta att [Registrera enh
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>Registrera enheter med hjälp av administrations portalen
 
-Välj **enheter** i det vänstra navigerings fönstret på portalen Microsoft Managed Desktop [admin](https://aka.ms/mmdportal). Välj **+ registrera enheter**; infarten öppnas:
+I [Microsoft slut punkts hanteraren](https://endpoint.microsoft.com/)väljer du **enheter** i det vänstra navigerings fönstret. Leta efter avsnittet Microsoft Managed Desktop på menyn och välj **enheter**. I arbets ytan Microsoft Managed Station ära datorer väljer du **+ registrera enheter** som öppnar ett flyg program för att registrera nya enheter.
 
-[![Flyg in när du har valt registrera enheter, visar enheter med kolumner för tilldelade användare, serie nummer, status, senaste datum och ålder](../../media/new-registration-ui.png)](../../media/new-registration-ui.png)
+<!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
@@ -149,7 +149,7 @@ Gör så här:
 1. Välj **registrera enheter**. Systemet lägger till enheter i listan med enheter i **bladet enheter**, markerade som **AutopilotRegistrationRequested**. Registreringen tar vanligt vis mindre än 10 minuter och när enheten lyckas visas den som **klar för användarna** , vilket betyder att det är klart och väntar på att en användare ska börja använda.
 
 
-Du kan övervaka förloppet av enhets registreringen på huvud sidan för **hanterade skriv bord i Microsoft** . Möjliga tillstånd rapporterade att inkludera:
+Du kan övervaka förloppet av enhets registrering på huvud sidan. Möjliga tillstånd rapporterade att inkludera:
 
 | Sessionsläget | Beskrivning |
 |---------------|-------------|

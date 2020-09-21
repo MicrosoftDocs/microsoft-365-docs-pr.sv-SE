@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: Ange buffertstorlek före eller efter en avtalad tid i Microsoft-bokningar för att möjliggöra tid för rensning eller återställning av utrustning.
-ms.openlocfilehash: dceb777f9ddba9f1ddabfee00608813afae57a86
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 882ab0340fe56976429ed8294f2fa386b801941f
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47420205"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962353"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>Ange buffertstorlek i Microsoft-bokningar
 
 Vissa av dina avtalade tider kanske kräver tid innan eller efter det att du har träffat med din kund för att konfigurera, rensa eller återställa rummet och utrustningen. Om du befinner dig på resan mellan avtalade tider med kunder kan du behöva tid för att se till att du och ditt team kan resa mellan avtalade tider utan att behöva vänta på att kunden väntar.
 
 Du kan ange buffertstorlek innan avtalade tider börjar efter att avtalade tider slutar eller båda för att ge personalen den tid de behöver för att förbereda nästa avtalade tid.
-
-> [!NOTE]
-> Bokningar är som standard aktiverade för kunder som har Microsoft 365 Business Standard, Microsoft 365 a3 eller Microsoft 365 A5. Bokningar är också tillgängliga för kunder som har Office 365 Enterprise E3 och Office 365 Enterprise, E5, men det är inaktiverat som standard. Kom igång genom att läsa [få till gång till Microsoft-bokningar](get-access.md). Om du vill aktivera eller inaktivera uppslagning kan du läsa [Aktivera och inaktivera en organisation](turn-bookings-on-or-off.md).
 
 ## <a name="set-buffer-time-defaults"></a>Ange tids inställningar för buffert
 

@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Få regelbundna rapporter om hur personer i organisationen använder Microsoft 365-tjänster. Med instrumentpanelen för översikt över användning kan du granska varje diagram för fler insikter.
-ms.openlocfilehash: f0dcb1fac17a39d1125f9188028d714962c9797d
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: e1748cf25fd36787727b0f00f6ddf6553bd454ab
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948214"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104461"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365-rapporter i administrationscentret
 
@@ -58,9 +58,8 @@ I den här videon finns information om hur du kan använda rapporterna:
 
 ::: moniker-end
 
-   
-2. Om du väljer **Välj en rapport** längst upp på instrumentpanelen så kan du välja från en lista med alla tillgängliga rapporter. Du kan också välja en översiktlig aktivitetswidget för en tjänst (t.ex. e-post eller OneDrive) om du vill ha mer information. <br/>![Instrumentpanelen Användning](../../media/usage-report-dashboard.png)
-  
+2. Klicka på **Visa mer**-knappen från aktivitetskortet för en tjänst (till exempel e-post eller OneDrive) för att se rapportdetaljsidan. Där finns olika rapporter för tjänsten i flikar. <br/>![Instrumentpanelen Användning](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+
 ## <a name="who-can-see-reports"></a>Vem kan se rapporter
 
 Personer som har följande behörigheter:
@@ -147,7 +146,7 @@ De här rapporterna är tillgängliga, beroende på din prenumeration.
 
 ::: moniker range="o365-worldwide"
 
-- [Användaraktivitet i Microsoft Teams för försvarsdepartementet och Government Community Cloud](microsoft-teams-user-activity.md)
+- [Microsoft Teams användaraktivitet för USA: s regering](microsoft-teams-user-activity.md)
 
 ::: moniker-end
 
@@ -159,7 +158,7 @@ De här rapporterna är tillgängliga, beroende på din prenumeration.
 
 ::: moniker range="o365-worldwide"
 
-- [Enhetsanvändningen av Microsoft Teams för försvarsdepartementet och Government Community Cloud](microsoft-teams-device-usage.md)
+- [Microsoft Teams enhetsanvändning för USA: s regering](microsoft-teams-device-usage.md)
 
 ::: moniker-end
 

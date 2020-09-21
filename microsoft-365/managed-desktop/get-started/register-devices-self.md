@@ -7,16 +7,16 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: e433b10b66b5e4f061227eae7e944c7fd19e2260
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 550f7dd35b3990a08da4c2bb9dd3042ff084b185
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289763"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104406"
 ---
 # <a name="register-new-devices-yourself"></a>Registrera nya enheter själv
 
-Microsoft Managed Desktop kan fungera med helt nya enheter eller kan du återanvända enheter som du kanske redan har (som kräver att du skriver ut dem igen). Du kan registrera enheter på Microsoft Managed Desktop admin-portalen.
+Microsoft Managed Desktop kan fungera med helt nya enheter eller kan du återanvända enheter som du kanske redan har (som kräver att du skriver ut dem igen). Du kan registrera enheter med Microsoft Managed Desktop i Microsoft Endpoint Manager-portalen.
 
 > [!NOTE]
 > Arbetar du med en partner för att få fram enheter? Om så är fallet behöver du inte oroa dig för att få maskinvaru-hashar; de tar hand om det åt dig. Se till att din partner etablerar en relation med dig i [partner Center](https://partner.microsoft.com/dashboard). Din partner kan läsa mer i [Hjälp för partner Center](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer). När den här relationen är etablerad registrerar din partner bara enheter åt dig – ingen ytterligare åtgärd krävs. Om du vill se informationen, eller om din partner har frågor, kan du läsa [anvisningarna för partner att registrera enheter](register-devices-partner.md). När du har registrerat enheterna kan du gå vidare med att [kontrol lera bilden](#check-the-image) och [leverera enheterna](#deliver-the-device) till användarna.
@@ -73,9 +73,9 @@ Du måste ha data i CSV-filerna sammankopplade till en enda fil för att slutfö
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>Registrera enheter med hjälp av administrations portalen
 
-Välj **enheter** i det vänstra navigerings fönstret på portalen Microsoft Managed Desktop [admin](https://aka.ms/mmdportal). Välj **+ registrera enheter**; infarten öppnas:
+I [Microsoft slut punkts hanteraren](https://endpoint.microsoft.com/)väljer du **enheter** i det vänstra navigerings fönstret. Leta efter avsnittet Microsoft Managed Desktop på menyn och välj **enheter**. I arbets ytan Microsoft Managed Station ära datorer väljer du **+ registrera enheter** som öppnar ett flyg program för att registrera nya enheter.
 
-[![Flyg in när du har valt registrera enheter, visar enheter med kolumner för tilldelade användare, serie nummer, status, senaste datum och ålder](../../media/new-registration-ui.png)](../../media/new-registration-ui.png)
+<!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
@@ -87,7 +87,7 @@ Gör så här:
 3. Välj **registrera enheter**. Systemet lägger till enheter i listan med enheter i **bladet enheter**, markerade som **AutopilotRegistrationRequested**. Registreringen tar vanligt vis mindre än 10 minuter och när enheten lyckas visas den som **klar för användarna** , vilket betyder att det är klart och väntar på att en användare ska börja använda.
 
 
-Du kan övervaka förloppet av enhets registreringen på huvud sidan för **hanterade skriv bord i Microsoft** . Möjliga tillstånd rapporterade att inkludera:
+Du kan övervaka förloppet av enhets registrering på huvud sidan. Möjliga tillstånd rapporterade att inkludera:
 
 | Sessionsläget | Beskrivning |
 |---------------|-------------|

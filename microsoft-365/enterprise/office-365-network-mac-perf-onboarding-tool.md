@@ -3,7 +3,7 @@ title: Microsoft 365-test för nätverks anslutning (för hands version)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/15/2020
+ms.date: 09/17/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,23 +14,23 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365-test för nätverks anslutning (för hands version)
-ms.openlocfilehash: 0a5e7831b28488e793488f572fd830d47a0f3f9a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 2197f3361efee51dfa2bd170b0c8d8e94709d3e8
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948550"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962411"
 ---
 # <a name="microsoft-365-network-connectivity-test-preview"></a>Microsoft 365-test för nätverks anslutning (för hands version)
 
 Test verktyget för Microsoft 365 Network Connectivity finns på <https://connectivity.office.com> . Det är ett Adjunct verktyg för nätverks utvärdering och nätverks information som är tillgänglig i administrations centret för Microsoft 365 under **tillståndet |. Menyn anslutningar** .
 
+![Verktyg för anslutnings test](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
+
 >[!NOTE]
 >Nätverks anslutnings verktyget har stöd för innehavare i WW kommersiell och Tyskland, men inte GCC måttlig, GCC hög, DoD eller Kina.
 
 Nätverks insikter i administrations centret för Microsoft 365 är baserade på vanliga mått på produkten för din Microsoft 365-klient som aggregeras varje dag. Vid jämförelse körs nätverks insikter från Microsoft 365 Network Connectivity test och en gång i verktyget. Testning som kan utföras med produkten är begränsad och genom att köra test som är lokala för användaren fler data kan samlas in i större insikter. Tänk på att nätverks insikter i administrations centret för Microsoft 365 visar att det finns ett nätverks problem för användning av Microsoft 365 på en viss Office-plats. Med testet Microsoft 365 Connectivity kan du identifiera rotor Saks orsaken till det problem som ledde till en Rekommenderad åtgärd för förbättring av nätverks prestanda.
-
-![Test verktyg för nätverks anslutning](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
 Vi rekommenderar att dessa används tillsammans där statusen för nätverks kvalitet kan bedömas för varje Office-plats i administrations centret för Microsoft 365 och mer information finns efter distribution av test baserat på Microsoft 365-anslutnings testet.
 

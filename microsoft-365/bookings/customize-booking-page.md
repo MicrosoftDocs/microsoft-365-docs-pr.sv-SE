@@ -9,19 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Ändra färgtemat på din boknings sida i programmet Microsoft-adressbok.
-ms.openlocfilehash: f76fee71194cb210f879617b8898e6fd8c9d7b92
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: b33be0cb71998d45e50a66f89f98daa4af175865
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47420252"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962519"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Anpassa och publicera boknings sidan
 
 På sidan bokning kan du ställa in hur sidan med den externa kund som kommer att återkallas. När du anpassar och publicerar boknings sidan använder dina kunder den för att boka avtalade tider.
-
-> [!NOTE]
-> Bokningar är som standard aktiverade för kunder som har Microsoft 365 Business Standard, Microsoft 365 a3 eller Microsoft 365 A5. Bokningar är också tillgängliga för kunder som har Office 365 Enterprise E3 och Office 365 Enterprise, E5, men det är inaktiverat som standard. Kom igång genom att läsa [få till gång till Microsoft-bokningar](get-access.md). Om du vill aktivera eller inaktivera uppslagning kan du läsa [Aktivera och inaktivera en organisation](turn-bookings-on-or-off.md).
 
 Om du vill anpassa din boknings sida loggar du in på [Office.com](https://office.com)och går **sedan till** \> **boknings sidan**för bokningar. Du kan anpassa boknings sidan med följande alternativ. När du har konfigurerat boknings sidan kan du publicera den så att kunder kan börja boka avtalade tider med dig.
 

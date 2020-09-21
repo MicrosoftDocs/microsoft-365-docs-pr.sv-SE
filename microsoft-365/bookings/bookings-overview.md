@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 description: En översikt över programmet Microsoft-böcker, som innehåller en webbaserad boknings kalender och som integreras med Outlook för att optimera din personals kalender och ge dina kunder flexibilitet för att boka avtalade tider.
-ms.openlocfilehash: f9880e661317b8a991d1400bc9a6a0b3223da3da
-ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
+ms.openlocfilehash: 4ad488761fa4cdbb6df1d4b70d3a7d73121295b5
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422414"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962555"
 ---
 # <a name="microsoft-bookings"></a>Microsoft-bokningar
 
 Med Microsoft-bokningar kan du schemalägga och hantera avtalade tider med enkel match. Bokningarna innehåller en webbaserad boknings kalender och integreras med Outlook för att optimera personalens kalender och ge kunderna flexibilitet att boka en tid som fungerar bäst för dem. Automatiska e-postaviseringar minskar inga-visar och förbättrar kundernas tillfredsställelse och organisationer sparar tid med minskad återkommande schemaläggning. Med inbyggd flexibilitet och möjlighet att anpassa kan bokningarna vara utformade för att passa situationen och behovet av många olika delar i en organisation. Kalender kalendrar är en post låda i Exchange Online.
 
 Med hjälp av bokningar kan du göra organisationens möten virtuella med onlinemöten via [Microsoft Teams](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b) och Skype för företag. Varje avtalad tid som bokats som ett onlinemöte skapar en unik Mötes länk som skickas till deltagare så att de kan gå med i en webbläsare, telefon uppringning eller Skype eller teams-appen. Bokningar är också tillgängliga som en app i Teams, vilket gör att du kan skapa kalendrar, tilldela personal och båda schemalägga befintliga avtalade tider utan att behöva lämna Teams.
-
-> [!NOTE]
-> Bokningar är aktiverat som standard för kunder som har Microsoft 365 Business Standard, Microsoft 365 a3 och Microsoft 365 A5. Bokningar är också tillgängliga för kunder som har Office 365 Enterprise E3 och Office 365 Enterprise, E5, men det är inaktiverat som standard. Kom igång genom att läsa [få till gång till Microsoft-bokningar](get-access.md). Om du vill aktivera eller inaktivera uppslagning kan du läsa [Aktivera och inaktivera en organisation](turn-bookings-on-or-off.md).
 
 Det finns tre huvudsakliga komponenter i bokningarna:
 
@@ -40,3 +37,5 @@ Det finns tre huvudsakliga komponenter i bokningarna:
 Titta på den här videon eller följ stegen nedan för att konfigurera bokarna.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q]
+
+Kom igång genom att läsa [få till gång till Microsoft-bokningar](get-access.md). Om du vill aktivera eller inaktivera uppslagning kan du läsa [Aktivera och inaktivera en organisation](turn-bookings-on-or-off.md).

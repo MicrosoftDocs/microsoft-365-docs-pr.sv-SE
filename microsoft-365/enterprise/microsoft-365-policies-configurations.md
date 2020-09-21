@@ -17,18 +17,18 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 686d31c64394094530099edb97bbd10912a58cb8
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: cef17142d90a15f10e82fd51c4c22202bf7ecf00
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949898"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131584"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationer av identiteter och enhetsåtkomst
 
 Den moderna säkerhets omkretsen i din organisation utökas nu bortom ditt nätverk för att omfatta användare som har åtkomst till molnbaserade program från valfri plats med olika enheter. Din säkerhets infrastruktur måste avgöra om en viss åtkomstbegäran ska beviljas och under vilka omständigheter. 
 
-Denna bestämning bör baseras på användar kontots inloggning, den enhet som används, vilka program användaren försöker komma åt, vilken plats som åtkomstbegäran görs och en utvärdering av risken för begäran. Denna funktion säkerställer att endast godkända användare och enheter kan komma åt dina kritiska resurser.
+Denna bestämning bör baseras på användar kontot för inloggningen, den enhet som används, programmet som användaren använder för åtkomst, den plats där åtkomstbegäran görs och en bedömning av risken för begäran. Denna funktion säkerställer att endast godkända användare och enheter kan komma åt dina kritiska resurser.
 
 I den här artikeln beskrivs en uppsättning nödvändiga konfigurationer för identitets-och enhets åtkomst och en uppsättning villkorliga åtkomst tjänster för Azure Active Directory (Azure AD), Microsoft Intune och andra principer för att skydda åtkomst till Microsoft 365 för företags moln program och tjänster, andra SaaS-tjänster och lokala program som publicerats med Azure AD Application Proxy.
 

@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Ange arbets tid och tillgänglighet för anställda i Microsoft-bokningar.
-ms.openlocfilehash: 656b52992f4da32ae334809bd1a3ee4dd3b89652
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 140ab5732b051931666824cd4290a38c0b11fd65
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47420232"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962531"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Anställdas arbets tid i Microsoft-bokningar
 
@@ -23,9 +23,6 @@ Genom att ange anställdas arbets tid ser du till att deras tillgänglighet visa
 På sidan **personal** kan du anpassa anställdas arbets tid så att de stämmer överens med företagets och anställdas behov.
 
 Om du vill boka tid för personalen så att kunderna inte kan boka dem när de inte är på kontoret kan du läsa mer i [Schemalägga företags stängningar, ledig tid och semester tid](schedule-closures-time-off-vacation.md) för anvisningar.
-
-> [!NOTE]
-> Bokningar är som standard aktiverade för kunder som har Microsoft 365 Business Standard, Microsoft 365 a3 eller Microsoft 365 A5. Bokningar är också tillgängliga för kunder som har Office 365 Enterprise E3 och Office 365 Enterprise, E5, men det är inaktiverat som standard. Kom igång genom att läsa [få till gång till Microsoft-bokningar](get-access.md). Om du vill aktivera eller inaktivera uppslagning kan du läsa [Aktivera och inaktivera en organisation](turn-bookings-on-or-off.md).
 
 ## <a name="customize-employee-working-hours"></a>Anpassa anställdas arbets tid
 
