@@ -70,10 +70,24 @@
               href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
             - name: Skapa ett testmeddelande
               href: mtp/generate-test-alert.md
+        - name: Kör en pilot i produktion
+          items:
+            - name: Pilotöversikt
+              href: mtp/mtp-pilot.md
+            - name: Planera
+              href: mtp/mtp-pilot-plan.md
+            - name: Förbereda
+              href: mtp/prepare-mtpeval.md
+            - name: Simulera attack
+              href: mtp/mtp-pilot-simulate.md
+            - name: Stäng och sammanfatta
+              href: mtp/mtp-pilot-close.md
         - name: Guider med anvisningar
           items:
             - name: Skapa en utvärderings- eller pilotlaboratoriemiljö
               href: mtp/mtp-evaluation.md
+            - name: Kör pilotspelbok
+              href: mtp/mtp-pilot.md
             - name: Distribuera tjänster som stöds
               href: mtp/deploy-supported-services.md
             - name: Aktivera Microsoft Hotskydd
@@ -94,16 +108,18 @@
                       href: mtp/manage-incidents.md
             - name: Automatiska undersökningar och svar
               items:
-                - name: Översikt över Automatiska undersökningar och svar
+                - name: Översikt över automatiserad utredning och svar
                   href: mtp/mtp-autoir.md
-                - name: Reparationsåtgärder
+                - name: Konfigurera automatiserade utrednings- och svarsfunktioner
+                  href: mtp/mtp-configure-auto-investigation-response.md
+                - name: Saneringsåtgärder efter automatiserade undersökningar
                   href: mtp/mtp-remediation-actions.md
-                - name: Åtgärdscentret
+                - name: Besök åtgärden centret
                   href: mtp/mtp-action-center.md
-                - name: Visa information och resultat från automatiska undersökningar
-                  href: mtp/mtp-autoir-results.md
-                - name: Godkänna eller avvisa väntande åtgärder
+                - name: Godkänn eller avvisa väntande saneringsåtgärder
                   href: mtp/mtp-autoir-actions.md
+                - name: Visa detaljer och resultat av automatiserade utredningar
+                  href: mtp/mtp-autoir-results.md
                 - name: Rapportera falska positiva/negativa identifieringar
                   href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: Avancerad jakt
@@ -214,8 +230,6 @@
                   href: mtp/monitor-devices.md
                 - name: Appövervakning och rapportering
                   href: mtp/monitor-apps.md
-            - name: 'API:er'
-              items: null
         - name: Referens
           items:
             - name: Behörigheter och inställningar
