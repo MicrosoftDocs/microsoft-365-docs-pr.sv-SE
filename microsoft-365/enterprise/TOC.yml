@@ -358,6 +358,8 @@
           href: prepare-a-non-routable-domain-for-directory-synchronization.md
         - name: Konfigurera katalogsynkronisering
           href: set-up-directory-synchronization.md
+        - name: Säker användar inloggning
+          href: microsoft-365-secure-sign-in.md
         - name: Hybridlösningar
           items:
             - name: Översikt
