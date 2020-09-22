@@ -1,7 +1,7 @@
 ---
-title: Översikt över anpassade identifieringar i Microsoft Threat Protection
-description: Förstå hur du kan använda avancerad jakt för att skapa anpassade identifieringar och generera aviseringar
-keywords: avancerad jakt, hotjakt, cyberhotjakt, microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, anpassade upptäckter, schema, kusto, microsoft 365, Microsoft Threat Protection
+title: Översikt över anpassade identifieringar i skydd mot Microsoft Threat
+description: Förstå hur du kan använda avancerad jakt för att skapa anpassade identifieringar och skapa aviseringar
+keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, anpassade identifieringar, schema, kusto, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,26 +17,29 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: cdbaf9cfd2172656ed75cb3c0a1a9e361070f25b
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: 28d6cca20c8b386d5e6f7f39b80264a39f88ec55
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498357"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199471"
 ---
-# <a name="custom-detections-overview"></a><span data-ttu-id="1ca61-104">Översikt över anpassade identifieringar</span><span class="sxs-lookup"><span data-stu-id="1ca61-104">Custom detections overview</span></span>
+# <a name="custom-detections-overview"></a><span data-ttu-id="6f501-104">Översikt över anpassade identifieringar</span><span class="sxs-lookup"><span data-stu-id="6f501-104">Custom detections overview</span></span>
 
-<span data-ttu-id="1ca61-105">**Gäller:**</span><span class="sxs-lookup"><span data-stu-id="1ca61-105">**Applies to:**</span></span>
-- <span data-ttu-id="1ca61-106">Microsoft Hotskydd</span><span class="sxs-lookup"><span data-stu-id="1ca61-106">Microsoft Threat Protection</span></span>
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="1ca61-107">Med anpassade identifieringar kan du proaktivt övervaka och svara på olika händelser och systemtillstånd, inklusive misstänkt intrångsaktivitet och felkonfigurerade slutpunkter.</span><span class="sxs-lookup"><span data-stu-id="1ca61-107">With custom detections, you can proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured endpoints.</span></span> <span data-ttu-id="1ca61-108">Detta möjliggörs genom anpassningsbara identifieringsregler som automatiskt utlöser aviseringar samt svarsåtgärder.</span><span class="sxs-lookup"><span data-stu-id="1ca61-108">This is made possible by customizable detection rules that automatically trigger alerts as well as response actions.</span></span>
 
-<span data-ttu-id="1ca61-109">Anpassade identifieringar fungerar med [avancerad jakt](advanced-hunting-overview.md), som ger ett kraftfullt, flexibelt frågespråk som täcker en bred uppsättning händelse- och systeminformation från nätverket.</span><span class="sxs-lookup"><span data-stu-id="1ca61-109">Custom detections work with [advanced hunting](advanced-hunting-overview.md), which provides a powerful, flexible query language that covers a broad set of event and system information from your network.</span></span> <span data-ttu-id="1ca61-110">Du kan ställa in dem så att de körs med jämna mellanrum, generera aviseringar och vidta svarsåtgärder när det finns matchningar.</span><span class="sxs-lookup"><span data-stu-id="1ca61-110">You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.</span></span>
+<span data-ttu-id="6f501-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="6f501-105">**Applies to:**</span></span>
+- <span data-ttu-id="6f501-106">Microsoft Hotskydd</span><span class="sxs-lookup"><span data-stu-id="6f501-106">Microsoft Threat Protection</span></span>
 
-<span data-ttu-id="1ca61-111">Anpassade identifieringar ger:</span><span class="sxs-lookup"><span data-stu-id="1ca61-111">Custom detections provide:</span></span>
-- <span data-ttu-id="1ca61-112">Varningar för regelbaserade identifieringar som skapats från avancerade jaktfrågor</span><span class="sxs-lookup"><span data-stu-id="1ca61-112">Alerts for rule-based detections built from advanced hunting queries</span></span>
-- <span data-ttu-id="1ca61-113">Automatiska svarsåtgärder</span><span class="sxs-lookup"><span data-stu-id="1ca61-113">Automatic response actions</span></span>
+<span data-ttu-id="6f501-107">Med anpassade identifieringar kan du proaktivt övervaka för att visa och svara på olika händelser och system tillstånd, inklusive misstänkt överträdelse aktivitet och felkonfigurerade slut punkter.</span><span class="sxs-lookup"><span data-stu-id="6f501-107">With custom detections, you can proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured endpoints.</span></span> <span data-ttu-id="6f501-108">Det här är möjligt genom anpassningsbara identifierings regler som automatiskt aktiverar notifieringar och svars åtgärder.</span><span class="sxs-lookup"><span data-stu-id="6f501-108">This is made possible by customizable detection rules that automatically trigger alerts as well as response actions.</span></span>
 
-## <a name="related-topic"></a><span data-ttu-id="1ca61-114">Relaterat ämne</span><span class="sxs-lookup"><span data-stu-id="1ca61-114">Related topic</span></span>
-- [<span data-ttu-id="1ca61-115">Skapa och hantera anpassade identifieringsregler</span><span class="sxs-lookup"><span data-stu-id="1ca61-115">Create and manage custom detection rules</span></span>](custom-detection-rules.md)
-- [<span data-ttu-id="1ca61-116">Översikt över avancerad jakt</span><span class="sxs-lookup"><span data-stu-id="1ca61-116">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+<span data-ttu-id="6f501-109">Anpassade identifieringar fungerar med [Avancerad jakt](advanced-hunting-overview.md), som innehåller ett kraftfullt och flexibelt frågespråk som täcker en bred uppsättning händelser och system information från ditt nätverk.</span><span class="sxs-lookup"><span data-stu-id="6f501-109">Custom detections work with [advanced hunting](advanced-hunting-overview.md), which provides a powerful, flexible query language that covers a broad set of event and system information from your network.</span></span> <span data-ttu-id="6f501-110">Du kan ange att de ska köras med jämna mellanrum, skapa aviseringar och vidta åtgärder när det finns träffar.</span><span class="sxs-lookup"><span data-stu-id="6f501-110">You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.</span></span>
+
+<span data-ttu-id="6f501-111">Anpassade identifierings alternativ:</span><span class="sxs-lookup"><span data-stu-id="6f501-111">Custom detections provide:</span></span>
+- <span data-ttu-id="6f501-112">Aviseringar för regelbaserade identifieringar baserade på avancerade jakt frågor</span><span class="sxs-lookup"><span data-stu-id="6f501-112">Alerts for rule-based detections built from advanced hunting queries</span></span>
+- <span data-ttu-id="6f501-113">Automatiska svars åtgärder</span><span class="sxs-lookup"><span data-stu-id="6f501-113">Automatic response actions</span></span>
+
+## <a name="related-topic"></a><span data-ttu-id="6f501-114">Närliggande ämne</span><span class="sxs-lookup"><span data-stu-id="6f501-114">Related topic</span></span>
+- [<span data-ttu-id="6f501-115">Skapa och hantera anpassade identifierings regler</span><span class="sxs-lookup"><span data-stu-id="6f501-115">Create and manage custom detection rules</span></span>](custom-detection-rules.md)
+- [<span data-ttu-id="6f501-116">Översikt över avancerad jakt</span><span class="sxs-lookup"><span data-stu-id="6f501-116">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
