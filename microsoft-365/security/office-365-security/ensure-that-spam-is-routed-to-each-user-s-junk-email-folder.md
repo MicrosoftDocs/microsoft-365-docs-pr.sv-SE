@@ -17,14 +17,17 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur du dirigerar skräp post till e-postmappar för användare i Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 15acc9ad87fa0c785998895d026dae036d9ddd7b
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 4c01ad0e8efa4d28e1b5d1e72b3daa87bb01b619
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547670"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196599"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Konfigurera fristående EOP för att skicka skräp post till skräppostmappen i hybrid miljöer
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!IMPORTANT]
 > Det här avsnittet gäller endast för fristående EOP-kunder i hybrid miljöer. Det här avsnittet gäller inte för Microsoft 365-kunder med Exchange Online-postlådor.
@@ -78,7 +81,7 @@ I det här avsnittet beskrivs hur du skapar de här e-postflödena för Exchange
 
 3. På sidan **ny regel** som öppnas konfigurerar du följande inställningar:
 
-   - **Namn**: Ange ett unikt, beskrivande namn för regeln. Ett exempel:
+   - **Namn**: Ange ett unikt, beskrivande namn för regeln. Till exempel:
 
      - EOP SFV: SPM till SCL 6
 
@@ -112,7 +115,7 @@ Använd följande syntax för att skapa de tre reglerna för e-postflöden:
 New-TransportRule -Name "<RuleName>" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "<EOPSpamFilteringVerdict>" -SetSCL 6
 ```
 
-Ett exempel:
+Till exempel:
 
 ```Powershell
 New-TransportRule -Name "EOP SFV:SPM to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SPM" -SetSCL 6

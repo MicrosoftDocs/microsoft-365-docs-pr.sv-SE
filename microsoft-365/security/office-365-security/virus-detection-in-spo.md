@@ -19,14 +19,17 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig mer om hur SharePoint Online identifierar virus i filer som användare laddar upp och förhindrar att användare laddar ned och synkroniserar filerna.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e58fa8dc8b30c5bc6ff5db1508d8b7f9189b73a
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 8c65db566f165939d72429bcd61b7d0a880814e0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653515"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196517"
 ---
 # <a name="virus-detection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>Virus identifiering i SharePoint Online, OneDrive och Microsoft Teams
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Microsoft 365 skyddar din miljö mot skadlig program vara genom att upptäcka virus i filer som användare laddar upp till SharePoint Online, OneDrive och Microsoft Teams. Filer kan genomsökas efter virus när de har laddats upp. Om en fil är infekterad anges en egenskap så att användare inte kan ladda ned eller synkronisera filen.
 

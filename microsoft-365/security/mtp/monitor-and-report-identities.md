@@ -15,14 +15,17 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7b29e91527f4c9cf6fd466ef730c9c4e9552b10e
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: d3eacb8804871d0371ddabbd75c78875a8b49f0d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866889"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196149"
 ---
 # <a name="identity-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Identitets övervakning och rapportering i säkerhets Center för Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Övervaka identiteterna i din organisation och håll koll på misstänkta och riskfyllda beteenden. I kategorin **identiteter** för **rapporter**kan du spåra:
 

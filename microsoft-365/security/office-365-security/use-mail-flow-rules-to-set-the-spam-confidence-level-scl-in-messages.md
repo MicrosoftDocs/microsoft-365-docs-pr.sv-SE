@@ -17,14 +17,17 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du skapar e-postflödes regler (transport regler) för att identifiera meddelanden och ange SCL (skräp säkerhets nivå) för meddelanden i Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 67a4c25a1006e9b1554cf8ffbc2d5e29b4063752
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 791e6747e1ffa92d54e7d4f4a6c257c3aad4c0d9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827379"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195861"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages-in-eop"></a>Använda regler för e-postflöde för att ange säkerhets nivån för skräp post (SCL) i meddelanden i EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I Microsoft 365-organisationer med post lådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor används principer för skräp post (kallas även för principer för skräp post filter eller principer för innehålls filter) för att söka igenom inkommande meddelanden. Mer information finns i [Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md).
 

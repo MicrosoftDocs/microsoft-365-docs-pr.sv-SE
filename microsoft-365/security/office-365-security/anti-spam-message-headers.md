@@ -16,14 +16,17 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig mer om de fält som läggs till i meddelanden av Exchange Online Protection (EOP). De här huvudfälten innehåller information om meddelandet och hur det behandlades.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5423ccf658843ab22f30dcef99fe0a0c34d512f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 71cefb4a26751b92dd8b5e5a308bbc18b1a5c221
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867193"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197507"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Meddelandehuvuden för antiskräppost i Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I alla Microsoft 365-organisationer används Exchange Online Protection (EOP) för att söka igenom alla inkommande meddelanden för skräp post, skadlig kod och andra hot. Resultatet av dessa genomsökningar läggs till i följande huvud fält i meddelanden:
 

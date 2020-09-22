@@ -14,14 +14,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: e44411fdc14279dac92b8829503fd636e3225600
-ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
+ms.openlocfilehash: c4cb142e06835101eae94365ef2d36ea8287ca9b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46608239"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195599"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsofts säkerhets portaler och administrations Center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 Även om [Microsoft 365 säkerhets Center](overview-security-center.md) är det nya start sidan för övervakning och hantering av säkerhet för dina identiteter, data, enheter och appar måste du ha till gång till olika portaler för vissa specialiserade aktiviteter.
 
 > [!TIP] 

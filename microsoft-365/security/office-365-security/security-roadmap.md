@@ -18,14 +18,17 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Rekommendationer från Microsofts Cybersecurity-team för implementering av säkerhetsfunktioner för att skydda din Microsoft 365-miljö. '
-ms.openlocfilehash: 089e63ad9c83aac0bc5e88da8a24184eb8bdee6e
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 9bdddbbfbb20900a4645d2e17cf298ed018f4c6d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656963"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197435"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Säkerhets plan – de främsta prioriteringarna för de första 30 dagarna, 90 dagar och senare
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I den här artikeln finns rekommendationer från Microsofts Cybersecurity-team för implementering av säkerhetsfunktioner för att skydda din Microsoft 365-miljö. Den här artikeln är anpassad från en Microsoft-session- [säkra Microsoft 365 som en Cybersecurity Pro: Top prioriteringar för de första 30 dagarna, 90 dagar och senare](https://www.youtube.com/watch?v=luignzNyR-o). Denna session har utvecklats och presenter ATS av mark Simos och Matt Kemelhar, Enterprise Cybersecurity Architects.
 
@@ -77,7 +80,7 @@ Dessa uppgifter tar lite längre tid att planera och implementera men det ökar 
 
 |Under|Uppgift|
 |---|---|
-|Säkerhetshantering|* Kontrol lera säkerhets poängen för rekommenderade åtgärder för din miljö ( [https://securescore.office.com](https://securescore.office.com) ).  <br/>  * Fortsätt att regelbundet granska instrument paneler och rapporter 365 i säkerhets Center, Cloud App-säkerhet och SIEM verktyg. <br/> * Leta efter och implementera program uppdateringar. <br/> * Genomföra angrepps simuleringar för Spear – nätfiske, lösen ords-och avbruten lösen ord med hjälp av [angrepps Simulator](attack-simulator.md) (ingår i [Office 365 Threat Intelligence](office-365-ti.md)).  <br/> * Leta efter risk för delning genom att granska de inbyggda rapporterna i Cloud App Security (på fliken Undersök). <br/> * Kontrol lera [Poäng villkoren](https://docs.microsoft.com/microsoft-365/compliance/compliance-score) för att granska status för regler som gäller för din organisation (till exempel GDPR, NIST 800-171).|
+|Säkerhetshantering|* Kontrol lera säkerhets poängen för rekommenderade åtgärder för din miljö ( [https://securescore.office.com](https://securescore.office.com) ).  <br/>  * Fortsätt att regelbundet granska instrument paneler och rapporter 365 i säkerhets Center, Cloud App-säkerhet och SIEM verktyg. <br/> * Leta efter och implementera program uppdateringar. <br/> * Genomföra angrepps simuleringar för Spear – nätfiske, lösen ords-och avbruten lösen ord med hjälp av [angrepps Simulator](attack-simulator.md) (ingår i [Office 365 Threat Intelligence](office-365-ti.md)).  <br/> * Leta efter risk för delning genom att granska de inbyggda rapporterna i Cloud App Security (på fliken Undersök). <br/> * Kontrol lera [överensstämmelse hanteraren](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager) och granska status för regler som gäller för din organisation (till exempel GDPR, NIST 800-171).|
 |Skydd mot hot| Implementera utökade skydd för administratörs konton: <br/> * Konfigurera [behöriga åtkomst arbets stationer](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) (PAWs) för administratörs aktivitet. <br/> * Konfigurera [Azure AD-privilegie rad identitets hantering](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure). <br/> * Konfigurera ett verktyg för säkerhets information och Event Management (SIEM) för att samla in loggnings data från Office 365, Cloud App-säkerhet och andra tjänster, inklusive AD FS. I gransknings loggen lagras data för endast 90 dagar. Om du fångar in dessa data i SIEM-verktyget kan du lagra data under en längre tid.|
 |Identitets- och åtkomsthantering|* Aktivera och verkställa MFA för alla användare. <br/> * Implementera en uppsättning [villkor för villkorsstyrd åtkomst och relaterade principer](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations). |
 |Informationsskydd| Anpassa och implementera principer för informations skydd. De här resurserna innehåller exempel: <br/> * [Office 365 informations skydd för GDPR](https://aka.ms/o365gdpr) <br/> * [Konfigurera Teams med tre skydds nivåer](../../solutions/configure-teams-three-tiers-protection.md) <br/> <br> Använd principer för data förlust skydd och övervaknings verktyg i Microsoft 365 för data som lagrats i Microsoft 365 (istället för Cloud App Security). <br><br>Använd Cloud App Security med Microsoft 365 för avancerade aviserings funktioner (annat än förhindra data förlust).|

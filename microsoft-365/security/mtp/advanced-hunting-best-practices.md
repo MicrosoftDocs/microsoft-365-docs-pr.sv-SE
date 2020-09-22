@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2259158c566223c39a6b533483551f95c2fa0824
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: af9579b94314375aa786782ea477bb11b0cd9c0b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949306"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198219"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Metod tips för avancerad jakt frågor
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gäller för:**
 - Microsoft Hotskydd
@@ -260,7 +263,7 @@ Om du vill veta mer om alla analys funktioner som stöds [läser du Kusto strän
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Dokumentation för Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
-- [Tjänst begränsningar](advanced-hunting-limits.md)
+- [Tjänstbegränsningar](advanced-hunting-limits.md)
 - [Hantera avancerade jakt fel](advanced-hunting-errors.md)
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)

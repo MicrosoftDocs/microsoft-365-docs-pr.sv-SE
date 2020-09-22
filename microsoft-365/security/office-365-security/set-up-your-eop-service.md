@@ -14,14 +14,17 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Administratörer kan läsa mer om hur du installerar ett fristående Exchange Online Protection (EOP) för att skydda lokala e-postmiljöer.
-ms.openlocfilehash: e6ca3965dd82bf0e6ed7e361984758ab34e3eea0
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 53386b700c2a2832cf16d47da0678dfb91c5b6d7
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307597"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197173"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Konfigurera din fristående EOP-tjänst
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I det här avsnittet förklaras hur du konfigurerar fristående Exchange Online Protection (EOP). Om du kommer hit från guiden Office 365-domäner går du tillbaka till guiden för Office 365-domäner om du inte vill använda Exchange Online Protection. Om du vill ha mer information om hur du konfigurerar anslutningar kan du läsa [Konfigurera e-postflöde med kopplingar i Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 

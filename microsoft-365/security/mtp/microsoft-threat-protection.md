@@ -1,7 +1,7 @@
 ---
 title: Microsoft Hotskydd
-description: Microsoft Threat Protection är en samordnad hotskyddslösning som är utformad för att skydda enheter, identitet, data och program
-keywords: introduktion till Microsoft Threat Protection, cybersäkerhet, avancerat ihållande hot, företagssäkerhet, enheter, enhet, identitet, användare, data, applikationer, incidenter, automatiserad utredning och reparation, avancerad jakt
+description: Skydd mot Microsoft Threat är en koordinerad skydds lösning som är utformad för att skydda enheter, identiteter, data och program
+keywords: Introduktion till skydd mot Microsoft Threat, cyberterrorism säkerhet, Avancerat beständigt hot, företags säkerhet, enheter, enhet, identitet, användare, data, program, händelser, automatiserad undersökning och reparation, avancerad jakt
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,72 +17,75 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: afeef8de09e0ee7a727372041791871712ca4e0d
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: bcd607afa6c1de0edf8a668d26b920079419da84
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560901"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196173"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft Hotskydd
 
-**Gäller:**
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
+**Gäller för:**
 - Microsoft Hotskydd
 
 
 
-Microsoft Threat Protection är en enhetlig företagsförsvarssvit före och efter överträdelsen som samordnar identifiering, förebyggande, utredning och svar över slutpunkter, identiteter, e-post och program för att ge integrerat skydd mot avancerade attacker.
+Skydd mot Microsoft Threat är en enhetlig för hands version av företagets för-och efter intrång som interagerar med identifiering, förebyggande, undersökning och svar på slut punkter, identiteter, e-postmeddelanden och program för att ge integrerat skydd mot sofistikerade attacker.
 
-Med den integrerade Microsoft Threat Protection-lösningen kan säkerhetspersonal sy ihop de hotsignaler som var och en av dessa produkter tar emot och avgöra hotets fulla omfattning och inverkan. hur den kom in i miljön, vad den påverkas och hur den för närvarande påverkar organisationen. Microsoft Threat Protection vidtar automatiska åtgärder för att förhindra eller stoppa angrepp och självläker affected postlådor, slutpunkter och användaridentiteter.  
+Med den integrerade Microsoft Threat Protection-lösningen kan säkerhetsexperterna häfta ihop hotet så att dessa produkter får och fastställer den fulla omfattningen och påverkan av hotet; hur den har kommit till miljön, vad den påverkar och hur den för närvarande påverkar organisationen. Microsoft Threat Protection vidtar automatisk åtgärd för att förhindra eller stoppa angreppet och själv åtgärdade post lådor, slut punkter och användar identiteter.  
 
 
-<center><h2>Microsofts tjänster för skydd av hot</center></h2>
-<table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender avancerat hotskydd</b></center></a></td>
-<td><center><b><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp"><b>Avancerat hotskydd i Office 365</b></center></a></td>
-<td><center><b><a href="https://docs.microsoft.com/azure-advanced-threat-protection/"><b>Azure avancerat hotskydd</b></a></center></td>
-<td><center><b><a href="https://docs.microsoft.com/cloud-app-security/"><b>Säkerhet för Microsoft Cloud-appar</b></a></center></td>
+<center><h2>Skydds tjänster för Microsoft Threat</center></h2>
+<table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender Avancerat skydd</b></center></a></td>
+<td><center><b><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp"><b>Office 365 Avancerat skydd</b></center></a></td>
+<td><center><b><a href="https://docs.microsoft.com/azure-advanced-threat-protection/"><b>Azure Avancerat skydd</b></a></center></td>
+<td><center><b><a href="https://docs.microsoft.com/cloud-app-security/"><b>Säkerhet för Microsoft Cloud App</b></a></center></td>
 </tr>
 </table>
 <br>
 
 
 >[!TIP]
->Kolla in den [här interaktiva guiden Microsoft Threat Protection](https://aka.ms/MTP-Interactive-Guide).
+>Kolla den här [interaktiva guiden för Microsoft Threat Protection](https://aka.ms/MTP-Interactive-Guide).
 
 
-Microsoft Threat Protection suite skyddar: 
-- **Slutpunkter med Microsoft Defender ATP** - Microsoft Defender ATP är en enhetlig slutpunktsplattform för förebyggande skydd, identifiering efter överträdelse, automatisk undersökning och svar. 
-- **E-post och samarbete med Office 365 ATP** – Office 365 ATP skyddar organisationen mot skadliga hot som orsakas av e-postmeddelanden, länkar (webbadresser) och samarbetsverktyg. 
-- **Identiteter med Azure ATP och Azure AD Identity Protection** – Azure ATP använder Active Directory-signaler för att identifiera, identifiera och undersöka avancerade hot, komprometterade identiteter och skadliga insideråtgärder som riktas mot din organisation. 
-- **Program med Microsoft Cloud App-säkerhet** – Microsoft Cloud App security är en omfattande cross-SaaS-lösning som ger djup synlighet, starka datakontroller och förbättrat hotskydd för dina molnappar. 
+Microsoft Threat Protection Suite skyddar: 
+- **Slut punkter med Microsoft Defender ATP** – Microsoft Defender ATP är en plattform för att skydda dig, efter överträdelse, automatisk undersökning och svar. 
+- **E-post och samarbete med office 365 ATP** -Office 365 ATP skyddar din organisation mot illasinnade hot via e-postmeddelanden, länkar (URL: er) och samarbets verktyg. 
+- **Identiteter med Azure ATP och Azure AD Identity Protection** – Azure ATP använder Active Directory-signaler för att identifiera, upptäcka och undersöka avancerade hot, kompromissade identiteter och illasinnade Insider-åtgärder på din organisation. 
+- **Program med Microsoft Cloud App-säkerhet** – Microsoft Cloud App Security är en omfattande SaaS lösning som ger en djup insyn, starka data kontroller och förbättrat skydd för dina molnappar. 
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww] 
 
-Microsoft Threat Protections unika lager över flera produkter förstärker de enskilda svitkomponenterna till:
-- Skydda dig mot attacker och samordna defensiva svar över hela sviten genom signaldelning och automatiserade åtgärder
-- Berätta hela historien om attacken över produktvarningar, beteenden och sammanhang för säkerhetsteam genom att gå med i data på varningar, misstänkta händelser och påverkade tillgångar till "incidenter"
-- Automatisera svar på kompromisser genom att utlösa självläkning för påverkade tillgångar genom automatisk reparation
-- Gör det möjligt för säkerhetsteam att utföra detaljerad och effektiv hotjakt över slutpunkts- och Office-data
+Microsofts unika Cross-Product-lager förstärker de enskilda Suite-komponenterna till:
+- Skydda mot attacker och koordinera försvars frågor i serien via signal delning och automatiska åtgärder
+- En berättarröst är den fullständiga artikeln i angreppet över produkt aviseringar, funktioner och kontext för säkerhets grupper genom att koppla data om aviseringar, misstänkta händelser och stötande till gångar till "incidenter"
+- Automatisera svar från kompromiss genom att utlösa själv återställning för använda till gångar genom automatisk reparation
+- Gör det möjligt för säkerhets teamerna att genomföra detaljerad och effektiv hotet mot slut punkter och Office-data
 
-![Bild av incidentöversiktssida](../../media/overview-incident.png) <br>
-Incident mellan produkter (översikt)
+![Bild av översikts sidan för incidenter](../../media/overview-incident.png) <br>
+Kors produkts incident (översikt)
 
-![Bild av aviseringar kö](../../media/incident-list.png)<br>
-Alla relaterade aviseringar i svitprodukterna korrelerade samman till en enda incident (varningsvy)
+![Bild av kön med aviseringar](../../media/incident-list.png)<br>
+Alla relaterade aviseringar mellan de olika serie produkterna i en enda olycka (vyn aviseringar)
 
-![Bild av incidentkö](../../media/advanced-hunting.png)<br>
-Frågebaserad jakt ovanpå rådata för e-post och slutpunkt
+![Bild av incident kön](../../media/advanced-hunting.png)<br>
+Query-baserad jakt ovanpå e-post och slut punkts rå data
 
 
-Funktioner för flera produkter från Microsoft Threat Protection är: 
-- **En korsproduktsingruta** med en bildruta – Central visa all information för identifieringar, påverkade tillgångar, automatiserade åtgärder som vidtagits och relaterade bevis i en enda kö och en enda ruta i [security.microsoft.com](https://security.microsoft.com). 
-- **Kombinerad incidentkö** - För att hjälpa säkerhetspersonal att fokusera på vad som är kritiskt genom att säkerställa att hela angreppsomfattningen, påverkade tillgångar och automatiserade åtgärder för reparation grupperas tillsammans och visas i tid. 
-- **Automatisk reaktion på hot** – Information om kritiska hot delas i realtid mellan Microsoft Threat Protection-produkterna för att stoppa utvecklingen av en attack. Om till exempel en skadlig fil identifieras på en slutpunkt som skyddas av Microsoft Defender ATP, instrueras Office 365 ATP att skanna och ta bort filen från alla e-postmeddelanden. Filen kommer att blockeras på sikt av hela Microsoft 365 säkerhetssvit.
-- **Självläkande för komprometterade enheter, användaridentiteter och postlådor** – Microsoft Threat Protection använder AI-drivna automatiska åtgärder och spelböcker för att åtgärda påverkade tillgångar tillbaka till ett säkert tillstånd. Microsoft Threat Protection utnyttjar automatiska reparationsfunktioner för svitprodukterna för att säkerställa att alla påverkade tillgångar som är relaterade till en incident automatiskt åtgärdas där det är möjligt.
-- **Cross-produkt hot jakt** - Säkerhetsteam kan utnyttja sina unika organisatoriska kunskaper för att jaga efter tecken på kompromiss genom att skapa sina egna anpassade frågor över rådata som samlats in av de olika skyddsprodukter. Microsoft Threat Protection ger frågebaserad åtkomst till 30 dagar med historiska råsignaler och varningsdata över slutpunkts- och Office 365 ATP-data. 
+Funktioner för Microsofts hot Protection kors produkt inkluderar: 
+- **Kors produkt ett fönster i glas** Central Visa all information om identifieringar, påverkade till gångar, automatiserade åtgärder som är vidtagna och närliggande bevis i en enda kö och en enda fönster ruta i [Security.Microsoft.com](https://security.microsoft.com). 
+- Sammanslagna **händelse köer** – för att hjälpa säkerhetsutövarna att fokusera på vad som är kritiskt genom att säkerställa hela attackens omfattning, förvissaade till gångar och automatiska reparations åtgärder grupperas tillsammans och på ett säkert sätt. 
+- **Autosvar** – kritiskt Hot-information delas i real tid mellan Microsofts hot skydds produkter för att förhindra att en attack fortskrider. Om till exempel en skadlig fil identifieras på en slut punkt som skyddas av Microsoft Defender ATP, instruerar den Office 365 ATP att skanna och ta bort filen från alla e-postmeddelanden. Filen blockeras på sikt från hela Microsoft 365-säkerhetssviten.
+- **Själv återställning för angripna enheter, användar identiteter och post lådor** – Microsoft Threat Protection använder AI-drivna automatiska åtgärder och playbooks för att åtgärda berörda till gångar i ett säkert tillstånd. Microsoft Threat Protection utnyttjar automatisk reparations kapacitet för Suite-produkterna för att säkerställa att alla berörda till gångar som är relaterade till en olycka automatiskt åtgärdas om möjligt.
+- Stöldskydd med **olika produkter** -säkerhets team kan utnyttja sin unika organisatoriska kunskap för att hitta inloggnings problem genom att skapa egna anpassade frågor via rå data som samlas in av de olika skydds produkterna. Microsoft Threat Protection ger Query-baserad till gång till 30 dagar med historiskt RAW-signaler och aviserings data över slut punkter och Office 365 ATP-data. 
 
 
 ## <a name="get-started"></a>Komma igång
-Licenskraven för Microsoft Threat Protection måste uppfyllas innan du kan aktivera tjänsten i Microsoft 365-säkerhetscentret på [security.microsoft.com](https://security.microsoft.com). För mer information, läs:
-- [Licenskrav](prerequisites.md#licensing-requirements)
+Licensierings kraven för Microsoft Threat Protection måste nås innan du kan aktivera tjänsten i Microsoft 365 Security Center på [Security.Microsoft.com](https://security.microsoft.com). Mer information finns i:
+- [Licens krav](prerequisites.md#licensing-requirements)
 - [Aktivera Microsoft Hotskydd](mtp-enable.md)

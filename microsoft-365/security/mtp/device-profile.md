@@ -1,7 +1,7 @@
 ---
-title: Enhetsprofil i Microsoft 365-säkerhetsportalen
-description: Visa risk- och exponeringsnivåer för en enhet i organisationen. Analysera tidigare och nuvarande hot och skydda enheten med de senaste uppdateringarna.
-keywords: säkerhet, skadlig kod, Microsoft 365, M365, Microsoft Threat Protection, MTP, security center, Microsoft Defender ATP, Office 365 ATP, Azure ATP, enhetssida, enhetsprofil, maskinsida, maskinprofil
+title: Enhets profil i säkerhets portalen för Microsoft 365
+description: Visa risk-och exponerings nivåer för en enhet i organisationen. Analysera och presentera hot och skydda enheten med de senaste uppdateringarna.
+keywords: säkerhet, skadlig program vara, Microsoft 365, M365, Microsoft Threat Protection, MTP, säkerhets Center, Microsoft Defender ATP, Office 365 ATP, Azure ATP, Device-sida, enhets profil, dator sida, dator profil
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -12,171 +12,174 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: db6109fb73f0e208ab4403e2469bc955a1a01b38
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: f6b79d3252084b298f94e01b18ebe3505f83b480
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43517072"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196863"
 ---
-# <a name="device-profile-page"></a>Sidan Enhetsprofil
+# <a name="device-profile-page"></a>Sidan enhets profil
 
-Microsoft 365-säkerhetsportalen ger dig enhetsprofilsidor, så att du snabbt kan bedöma hälsotillståndet och statusen för enheter i nätverket.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
+Med Microsoft 365-säkerhetsportalen får du en enhets profil sida så att du snabbt kan bedöma hälsa och status för enheter i nätverket.
 
 > [!IMPORTANT]
-> Enhetsprofilsidan kan se lite annorlunda ut, beroende på om enheten är registrerad i Microsoft Defender ATP, Azure ATP eller båda.
+> Enhets profil sidan kan verka lite annorlunda, beroende på om enheten är registrerad i Microsoft Defender ATP, Azure ATP eller båda.
 
-Om enheten är registrerad i Microsoft Defender ATP kan du också använda enhetsprofilsidan för att utföra några vanliga säkerhetsuppgifter.
+Om enheten är registrerad i Microsoft Defender ATP kan du också använda sidan enhets profil för att utföra vanliga säkerhets uppgifter.
 
-## <a name="navigating-the-device-profile-page"></a>Navigera på enhetsprofilsidan
+## <a name="navigating-the-device-profile-page"></a>Gå till sidan enhets profil
 
-Profilsidan är uppdelad i flera breda avsnitt.
+Profil sidan är uppdelad i flera breda avsnitt.
 
-![Bild av enhetsprofilsida med (1) Tabbområde (2) Sidofält och (3) Åtgärder markerade i rött](../../media/mtp-device-profile/hybrid-device-overall.png)
+![Bild av sidan enhets profil med (1) flik (2) marginal list och (3) åtgärder markerade i rött](../../media/mtp-device-profile/hybrid-device-overall.png)
 
-Sidofältet (1) listar grundläggande detaljer om enheten.
+Marginal listen (1) visar grundläggande information om enheten.
 
-Huvudinnehållsområdet (2) innehåller flikar som du kan växla igenom för att visa olika typer av information om enheten.
+Huvud innehålls området (2) innehåller flikar som du kan växla mellan för att visa olika typer av information om enheten.
 
-Om enheten är registrerad i Microsoft Defender ATP visas också en lista över svarsåtgärder (3). Med svarsåtgärder kan du utföra vanliga säkerhetsrelaterade uppgifter.
+Om enheten är registrerad i Microsoft Defender ATP visas även en lista med svars åtgärder (3). Med svars åtgärder kan du utföra vanliga säkerhetsrelaterade uppgifter.
 
-## <a name="sidebar"></a>Sidofältet
+## <a name="sidebar"></a>Sido fältet
 
-Bredvid huvudinnehållsområdet på enhetens profilsida finns sidofältet.
+Bredvid huvud innehålls området på sidan enhets profil visas marginal listen.
 
-![Bild på fliken sidofält för enhetsprofil](../../media/mtp-device-profile/azure-atp-only-device-sidebar.png)
+![Bild av fliken sidofält för enhets profil](../../media/mtp-device-profile/azure-atp-only-device-sidebar.png)
 
-Sidofältet listar enhetens fullständiga namn och exponeringsnivå. Det ger också några viktiga grundläggande information i små underavsnitt som kan växlas öppna eller stängda, till exempel:
+I list rutan visas enhetens fullständiga namn och exponerings nivå. Den innehåller också viktig grundläggande information i små underavsnitt som kan växlas öppen eller stängd, till exempel:
 
-* **Taggar** – Alla Microsoft Defender ATP-, Azure ATP- eller anpassade taggar som är associerade med enheten. Taggar från Azure ATP kan inte redigeras.
-* **Säkerhetsinformation** - Öppna incidenter och aktiva aviseringar. Enheter som är registrerade i Microsoft Defender ATP visar också exponeringsnivå och risknivå.
+* **Taggar** -alla Microsoft Defender ATP-, Azure ATP-och anpassade taggar som är associerade med enheten. Taggar från Azure ATP är inte redigerbara.
+* **Säkerhets information** – öppna incidenter och aktiva aviseringar. Enheter som är registrerade i Microsoft Defender ATP visar även exponerings nivå och risk nivå.
 
 > [!TIP]
-> Exponeringsnivån relaterar till hur mycket enheten följer säkerhetsrekommendationer, medan risknivån beräknas baserat på ett antal faktorer, inklusive typer och allvarlighetsgrad för aktiva aviseringar.
+> Exponerings nivå handlar om hur mycket enheten uppfyller säkerhets rekommendationerna, samtidigt som risk nivån beräknas baserat på ett antal faktorer, bland annat typer och allvarlighets grad för aktiva varningar.
 
-* **Enhetsinformation** - Domän, OS, tidsstämpel för när enheten först sågs, IP-adresser, resurser. Enheter som är registrerade i Microsoft Defender ATP visar också hälsotillstånd. Enheter som registrerats i Azure ATP visar SAM-namn och en tidsstämpel för när enheten först skapades.
-* **Nätverksaktivitet** - Tidsstämplar för första gången och sista gången enheten sågs i nätverket.
-* **Katalogdata** (*endast för enheter som är registrerade i Azure ATP*) - [UAC-flaggor,](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) [SPN](https://docs.microsoft.com/windows/win32/ad/service-principal-names)och gruppmedlemskap.
+* **Enhets uppgifter** – domän, OS, tidsstämpel för när enheten först visades, IP-adresser, resurser. Enheter som är registrerade i Microsoft Defender ATP visar också hälso tillstånd. Enheter som är registrerade i Azure ATP visar SAM-namn och en tidstämpel för när enheten först skapades.
+* **Nätverks aktivitet** -tidsstämplar för första gången och när enheten senast visades i nätverket.
+* **Katalog data** (*endast för enheter som är registrerade i Azure ATP*) – [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) -flaggor, [SPN](https://docs.microsoft.com/windows/win32/ad/service-principal-names)-objekt och grupp medlemskap.
 
-## <a name="response-actions"></a>Svarsåtgärder
+## <a name="response-actions"></a>Svars åtgärder
 
-Svarsåtgärder erbjuder ett snabbt sätt att försvara sig mot och analysera hot.
+Svars åtgärder är ett snabbt sätt att försvara sig mot och analysera hot.
 
-![Bild av åtgärdsfältet för enhetsprofil](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
+![Bild av åtgärds fältet för enhets profil](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
 
 > [!IMPORTANT]
-> * [Svarsåtgärder](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) är endast tillgängliga om enheten är registrerad i Microsoft Defender ATP.
-> * Enheter som är registrerade i Microsoft Defender ATP kan visa olika antal svarsåtgärder, baserat på enhetens operativsystem och versionsnummer.
+> * [Svars åtgärder](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) är bara tillgängliga om enheten är registrerad i Microsoft Defender ATP.
+> * Enheter som är registrerade i Microsoft Defender ATP kan visa olika antal svars åtgärder baserat på enhetens operativ system och versions nummer.
 
-Åtgärder som är tillgängliga på enhetens profilsida är:
+Tillgängliga åtgärder på enhets profil sidan är bland annat:
 
-* **Hantera taggar** – Uppdaterar anpassade taggar som du har använt på den här enheten.
-* **Isolera enheten** – isolerar enheten från organisationens nätverk samtidigt som den är ansluten till Microsoft Defender Advanced Threat Protection. Du kan välja att låta Outlook, Teams och Skype för företag köras medan enheten är isolerad, i kommunikationssyfte.
-* **Åtgärdscenter** - Visa status för inskickade åtgärder. Endast tillgänglig om en annan åtgärd redan har valts.
-* **Begränsa appkörning** - Förhindrar att program som inte är signerade av Microsoft körs.
-* **Kör antivirussökning** - Uppdaterar Windows Defender Antivirus definitioner och omedelbart kör en antivirussökning. Välj mellan Snabbsökning eller Fullständig genomsökning.
-* **Samla in undersökningspaket** - Samlar in information om enheten. När undersökningen är klar kan du hämta den.
-* **Initiera live-svarssession** - Laddar ett fjärrskal på enheten för [djupgående säkerhetsutredningar](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response).
-* **Initiera automatisk undersökning** - [Undersöker och åtgärdar automatiskt hot](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). Även om du manuellt kan utlösa automatiska undersökningar för att köras från den här sidan utlöser [vissa varningsprinciper](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies) automatiska undersökningar på egen hand.
-* **Åtgärdscenter** - Visar information om eventuella svarsåtgärder som körs för tillfället.
+* **Hantera Taggar** – uppdaterar anpassade taggar som du har använt på den här enheten.
+* **Isolera enhet** -isolerar enheten från organisationens nätverk samtidigt som den låter den vara ansluten till Microsoft Defender Avancerat skydd. Du kan välja att tillåta att Outlook, teams och Skype för företag körs medan enheten är isolerad, i syfte att kommunicera.
+* **Åtgärds Center** – Visa statusen för skickade åtgärder. Endast tillgängligt om en annan åtgärd redan har valts.
+* **Begränsa program körning** -förhindrar att program som inte är signerade av Microsoft körs.
+* **Kör antivirus genomsökning** -uppdatera definitioner för Windows Defender Antivirus och kör en virus genomsökning omedelbart. Välj mellan snabb sökning eller fullständig sökning.
+* **Samla in undersöknings paket** – samlar in information om enheten. När undersökningen är klar kan du ladda ned den.
+* **Starta Live-svarsomgången** -laddar ett fjärrgränssnitt på enheten för [djupgående säkerhets undersökningar](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response).
+* **Starta automatisk undersökning** – [undersöker och reparerar hot](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)automatiskt. Även om du manuellt kan utlösa automatiska utredningar att köra från den här sidan, Utlös [vissa notifieringsregler](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies) automatiska utredningar.
+* **Åtgärds Center** – visar information om alla svars åtgärder som körs för närvarande.
 
-## <a name="tabs-section"></a>Avsnittet Flikar
+## <a name="tabs-section"></a>Avsnittet flikar
 
-Med enhetsprofilflikarna kan du växla igenom en översikt över säkerhetsinformation om enheten och tabeller som innehåller en lista med aviseringar.
+Med flikarna för enhets profil kan du växla via en översikt över säkerhets information om enheten och tabeller som innehåller en lista med aviseringar.
 
-Enheter som är registrerade i Microsoft Defender ATP visar också flikar som har en tidslinje, en lista över säkerhetsrekommendationer, en programvaruinventering, en lista över upptäckta säkerhetsproblem och saknade KBs (säkerhetsuppdateringar).
+Enheter som är registrerade i Microsoft Defender ATP visar även flikar som innehåller en tids linje, en lista över säkerhets rekommendationer, en program inventering, en lista över upptäckta säkerhets problem och saknade KBs (säkerhets uppdateringar).
 
 ### <a name="overview-tab"></a>Fliken Översikt
 
-Standardfliken är **Översikt**. Det ger en snabb titt på det viktigaste säkerhetsfaktat om enheten.
+Standard-fliken är **Översikt**. Det ger en snabb överblick över de viktigaste säkerhets faktumet på enheten.
 
-![Bild av översiktsfliken för enhetsprofil](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
+![Bild av fliken Översikt för enhets profil](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
 
-Här kan du få en snabb titt på enhetens aktiva aviseringar och alla som för närvarande är inloggade på användare.
+Här kan du få en snabb överblick över enhetens aktiva aviseringar och alla användare som är inloggade.
 
-Om enheten är registrerad i Microsoft Defender ATP ser du även enhetens risknivå och alla tillgängliga data om säkerhetsbedömningar. Säkerhetsbedömningarna beskriver enhetens exponeringsnivå, ger säkerhetsrekommendationer och listar programvara som påverkas och upptäcker sårbarheter.
+Om enheten är registrerad i Microsoft Defender ATP kan du även se enhetens risk nivå och alla tillgängliga data om säkerhets utvärderingar. Säkerhets utvärderingarna beskriver enhetens exponerings nivå, tillhandahåller säkerhets rekommendationer och visar en lista över program vara och upptäckta säkerhets problem.
 
-### <a name="alerts-tab"></a>Fliken Aviseringar
+### <a name="alerts-tab"></a>Fliken aviseringar
 
-Fliken **Aviseringar** innehåller en lista över aviseringar som har höjts på enheten, från både Azure ATP och Microsoft Defender ATP.
+Fliken **aviseringar** innehåller en lista med aviseringar som har upphöjts till enheten från både Azure ATP och Microsoft Defender ATP.
 
-![Bild på fliken aviseringar för enhetsprofil](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
+![Bild av fliken aviseringar för enhets profil](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
 
-Du kan anpassa antalet objekt som visas, samt vilka kolumner som visas för varje objekt. Standardbeteendet är att lista trettio objekt per sida.
+Du kan anpassa hur många objekt som visas och vilka kolumner som ska visas för varje objekt. Standardinställningen är att lista halv objekt per sida.
 
-Kolumnerna på den här fliken innehåller information om allvarlighetsgraden för det hot som utlöste aviseringen, samt status, undersökningstillstånd och vem aviseringen har tilldelats.
+Kolumnerna på den här fliken innehåller information om hur allvarligt hotet som utlöste aviseringen, samt status, undersöknings status och vem som har tilldelats notifieringen.
 
-Kolumnen *påverkade entiteter* refererar till den enhet (entitet) vars profil du för närvarande visar, plus alla andra enheter i nätverket som påverkas.
+Kolumnen *påverkade entiteter* refererar till den enhet (entitet) vars profil du för tillfället visar, samt eventuella andra enheter i nätverket som påverkas.
 
-Om du väljer ett objekt i den här listan öppnas ett utfällbart objekt som innehåller ännu mer information om den valda aviseringen.
+Om du väljer ett objekt från listan öppnas en utfällbar lista med mer information om den valda aviseringen.
 
-Den här listan kan filtreras efter allvarlighetsgrad, status eller vem aviseringen har tilldelats.
+Den här listan kan filtreras efter allvarlighets grad, status eller vem notifieringen har tilldelats.
 
-### <a name="timeline-tab"></a>Fliken Tidslinje
+### <a name="timeline-tab"></a>Fliken tids linje
 
-Fliken **Tidslinje** innehåller ett interaktivt, kronologiskt diagram över alla händelser som utlöses på enheten. Genom att flytta det markerade området i diagrammet åt vänster eller höger kan du visa händelser över olika tidsperioder. Du kan också välja ett anpassat datumintervall från rullgardinsmenyn mellan det interaktiva diagrammet och listan över händelser.
+Fliken **tids linje** innehåller ett interaktivt, kronologiskt diagram över alla händelser som är aktiverade på enheten. Genom att flytta det markerade området i diagrammet åt vänster eller höger kan du Visa händelser under olika tids perioder. Du kan också välja ett eget datum intervall i den nedrullningsbara menyn mellan det interaktiva diagrammet och listan med händelser.
 
-Nedanför diagrammet finns en lista över händelser för det valda datumintervallet.
+Under diagrammet finns en lista över händelser för det markerade datum intervallet.
 
-![Bild på fliken tidslinje för enhetsprofil](../../media/mtp-device-profile/hybrid-device-tab-timeline.png)
+![Bild av fliken tids linje för enhets profil](../../media/mtp-device-profile/hybrid-device-tab-timeline.png)
 
-Antalet objekt som visas och kolumnerna i listan kan båda anpassas. Standardkolumnerna listar händelsetid, aktiv användare, åtgärdstyp, entiteter (processer) och ytterligare information om händelsen.
+Antalet objekt som visas och kolumnerna i listan kan båda anpassas. I standard kolumnerna listas händelse tid, aktiv användare, åtgärds typ, enheter (processer) och ytterligare information om händelsen.
 
-Om du väljer ett objekt i den här listan öppnas ett utfällbart objekt som visar ett diagram över en entiteter för händelser som visar de överordnade och underordnade processer som är involverade i händelsen.
+Om du väljer ett objekt från den här listan öppnas en utfällbar diagram som visar de överordnade och underordnade processerna i händelsen.
 
-Listan kan filtreras efter den specifika typen av händelse. till exempel registerhändelser eller smartskärmshändelser.
+Listan kan filtreras efter den speciella typen av händelse; till exempel register händelser eller händelser för smart skärm.
 
-Listan kan också exporteras till en CSV-fil, för nedladdning. Även om filen inte begränsas av antalet händelser, är det maximala tidsintervallet du kan välja att exportera sju dagar.
+Listan kan också exporteras till en CSV-fil för nedladdning. Även om filen inte begränsas av antalet händelser är det maximala tidsintervallet du kan välja att exportera sju dagar.
 
-### <a name="security-recommendations-tab"></a>Fliken Säkerhetsrekommendationer
+### <a name="security-recommendations-tab"></a>Fliken säkerhets rekommendationer
 
-På fliken **Säkerhetsrekommendationer** visas åtgärder som du kan vidta för att skydda enheten. Om du väljer ett objekt i den här listan öppnas ett utfällbart objekt där du kan få instruktioner om hur du tillämpar rekommendationen.
+På fliken **säkerhets rekommendationer** visas de åtgärder du kan vidta för att skydda enheten. Om du markerar ett objekt i den här listan öppnas en utfällbar lista där du kan få anvisningar om hur du använder rekommendationen.
 
-![Bild på fliken säkerhetsrekommendationer för enhetsprofil](../../media/mtp-device-profile/hybrid-device-tab-security-recs.png)
+![Bild av fliken säkerhets rekommendationer för enhets profil](../../media/mtp-device-profile/hybrid-device-tab-security-recs.png)
 
-Precis som med föregående flikar kan antalet objekt som visas per sida, samt vilka kolumner som är synliga, anpassas.
+Precis som med föregående flikar kan du anpassa antalet objekt som visas per sida samt vilka kolumner som ska visas.
 
-Standardvyn innehåller kolumner som beskriver de säkerhetsbrister som åtgärdats, det associerade hotet, den relaterade komponenten eller programvaran som påverkas av hotet med mera. Artiklar kan filtreras efter rekommendationens status.
+Standardvyn innehåller kolumner med information om säkerhets svagheter, tillhör ande hot, den relaterade komponenten eller program varan som påverkas av hotet och mycket mer. Objekt kan filtreras enligt rekommendationens status.
 
-### <a name="software-inventory"></a>Inventering av programvara
+### <a name="software-inventory"></a>Program varu inventering
 
-På fliken **Programvaruinventering** visas programvara som är installerad på enheten.
+På fliken **program varu inventering** visas program vara installerat på enheten.
 
-![Bild av fliken inventering av programvara för enhetsprofil](../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png)
+![Bild av fliken program varu inventering för enhets profil](../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png)
 
-Standardvyn visar programvaruleverantören, installerat versionsnummer, antal kända programvarubrister, hotinsikter, produktkod och taggar. Antalet objekt som visas och vilka kolumner som visas kan båda anpassas.
+I standardvyn visas program varu leverantören, det installerade versions numret, antalet kända program svagheter, Hot insikter, produkt kod och taggar. Antalet objekt som visas och vilka kolumner som visas kan båda anpassas.
 
-Om du väljer ett objekt från den här listan öppnas ett utfällbart objekt som innehåller mer information om den valda programvaran, samt sökvägen och tidsstämpeln för den senaste gången programvaran hittades.
+Om du väljer ett objekt från den här listan öppnas en utfällbar lista med mer information om den valda program varan samt sökväg och tidsstämpel för den senaste gången program varan hittades.
 
-Den här listan kan filtreras efter produktkod.
+Den här listan kan filtreras efter produkt kod.
 
-### <a name="discovered-vulnerabilities-tab"></a>Fliken Upptäckta säkerhetsproblem
+### <a name="discovered-vulnerabilities-tab"></a>Fliken upptäckta säkerhets problem
 
-På fliken **Identifierade säkerhetsproblem** visas alla vanliga sårbarheter och Ã¤r Ã¤nder (CVE) som kan påverka enheten.
+Fliken **upptäckta säkerhets problem** visar eventuella vanliga säkerhets problem och utnyttjanden (CVEs) som kan påverka enheten.
 
-![Bild av fliken upptäckta säkerhetsproblem för enhetsprofilen](../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png)
+![Bild av fliken upptäckta säkerhets problem för enhets profil](../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png)
 
-Standardvyn visar allvarlighetsgraden för CVE, CVS (Common Vulnerability Score), programvaran som är relaterad till CVE, när CVE publicerades, när CVE senast uppdaterades och hot som är associerade med CVE.
+I standardvyn visas allvarlighets graden för CVE, det vanligaste säkerhets problemet (CVS), program varan som är relaterad till CVE, när CVE publicerades, när CVE senast uppdaterades och hot kopplade till CVE.
 
-Precis som med föregående flikar kan antalet objekt som visas och vilka kolumner som är synliga anpassas.
+Precis som med föregående flikar kan du anpassa antalet objekt som visas och vilka kolumner som ska visas.
 
-Om du väljer ett objekt i den här listan öppnas ett utfällbart objekt som beskriver CVE.
+Om du väljer ett objekt i den här listan öppnas en utfällare som beskriver CVE.
 
 ### <a name="missing-kbs"></a>KBs saknas
 
-På fliken **Saknade KBs** visas alla Microsoft-uppdateringar som ännu inte har tillämpats på enheten. De "KBs" i fråga är [Knowledge Base artiklar](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) som beskriver dessa uppdateringar; till exempel [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
+I den **saknade KBS** -fliken visas alla uppdateringar som ännu inte har installerats på enheten. "KBs" i fråga är [kunskaps bas artiklar](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) som beskriver dessa uppdateringar. till exempel [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
 
-![Bild på fliken saknade kbs för enhetsprofil](../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG)
+![Bild av fliken KBS saknas för enhets profil](../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG)
 
-Standardvyn visar bulletinen som innehåller uppdateringar, OS-version, berörda produkter, CVEs-adresserade, KB-numret och taggarna.
+I standardvyn visas den bulletin som innehåller uppdateringarna, OS-versionen, de produkter som påverkas, CVEs adresser, KB-nummer och taggar.
 
 Antalet objekt som visas per sida och vilka kolumner som visas kan anpassas.
 
-Om du väljer ett objekt öppnas ett utfällbart objekt som länkar till uppdateringen.
+Om du markerar ett objekt öppnas en utfällbar länk till uppdateringen.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-* [Översikt över Microsofts hotskydd](microsoft-threat-protection.md)
-* [Aktivera Microsoft Threat Protection](mtp-enable.md)
-* [Undersöka entiteter på enheter med hjälp av live-svar](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
+* [Microsoft Threat Protection-översikt](microsoft-threat-protection.md)
+* [Aktivera Microsoft Hotskydd](mtp-enable.md)
+* [Undersök enheter på enheter, med Live Response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
 * [Automatisk undersökning och svar (AIR) i Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)

@@ -19,14 +19,17 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig mer om hur du använder aviserings funktionerna i säkerhets & för Office 365 för att visa och hantera aviseringar, till exempel hantera avancerade aviseringar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c51d5d58b1af64a5066e6176fb2533c91bcf6f01
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 2e53d61b2bbbf241683379916362a9d33fa5ace8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653370"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197661"
 ---
 # <a name="alerts-in-the-security--compliance-center"></a>Aviseringar i säkerhets & efterlevnad
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Använd aviserings funktionerna i säkerhets & Compliance Center för att visa och hantera aviseringar för din organisation, inklusive hantering av avancerade varningar som en del av [Microsofts moln program säkerhet översikt](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
 
@@ -61,5 +64,5 @@ I följande tabell beskrivs de verktyg som är tillgängliga under **aviseringar
 |Sysprep|Beskrivning|
 |---|---|
 |[Hantera aviseringar](../../compliance/create-activity-alerts.md)|Använd aktivitets aviseringar för att skicka e-postaviseringar till dig själv eller andra administratörer när användare utför specifika aktiviteter i Office 365. Aktivitets aviseringar liknar att söka i gransknings loggen efter händelser, förutom att du kommer att skicka ett e-postmeddelande när en händelse som du har skapat en avisering om inträffar.|
-|[Hantera avancerade aviseringar](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Använd funktionen **Hantera avancerade meddelanden** i Office 365 Cloud App Security för att skapa principer som kan varna dig för misstänkt och avvikande aktivitet i Office 365. När du har blivit aviserad kan du undersöka situationer som kan vara problematiska och, om det behövs, vidta åtgärder för att lösa säkerhets problem.|
+|[Hantera avancerade aviseringar ](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Använd funktionen **Hantera avancerade meddelanden** i Office 365 Cloud App Security för att skapa principer som kan varna dig för misstänkt och avvikande aktivitet i Office 365. När du har blivit aviserad kan du undersöka situationer som kan vara problematiska och, om det behövs, vidta åtgärder för att lösa säkerhets problem.|
 |

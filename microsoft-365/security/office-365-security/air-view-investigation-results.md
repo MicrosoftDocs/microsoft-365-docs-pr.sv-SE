@@ -15,14 +15,17 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Under och efter en automatiserad undersökning i Microsoft 365 kan du Visa resultaten och nyckeltalen.
-ms.openlocfilehash: 057dcf5e6f33c789ecfb47c7e3dfb49f0e2548fc
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 6137edf741dc2ef21ec4e046b1985dd3f85b5720
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656843"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197697"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Information och resultat från en automatiserad undersökning i Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 När en [automatiserad undersökning](office-365-air.md) görs i [Office 365 Avancerat skydd](office-365-atp.md)är det bara att få information om den undersökningen och efter den automatiska gransknings processen. Om du har nödvändig behörighet kan du Visa den informationen i vyn granska information. I vyn undersöknings Detaljer får du uppdaterade status och möjlighet att godkänna väntande åtgärder.
 
@@ -174,7 +177,7 @@ Du kan:
 
 På fliken **användare** ser du alla användare som identifieras som en del av undersökningen. Användar konton visas i undersökningen när det finns en händelse eller om att dessa användar konton kan påverkas eller angripas.
 
-I följande bild innehåller AIR dessutom indikatorer för kompromisser och avvikelser baserat på en ny regel för Inkorgen som skapats. Ytterligare uppgifter (bevis) för undersökningen finns tillgängliga via detaljerade vyer på den här fliken. det kan även finnas avvikelser från [Microsofts Cloud App-säkerhet](https://docs.microsoft.com/cloud-app-security).
+I följande bild innehåller AIR dessutom indikatorer för kompromisser och avvikelser baserat på en ny regel för Inkorgen som skapats. Ytterligare uppgifter (bevis) för undersökningen är tillgängliga via detaljerade vyer på den här fliken. Indikatorer för kompromisser och felaktigheter kan också inkludera avvikelser från [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security).
 
 ![Sidan användare av flyg utredning](../../media/air-investigationuserspage.png)
 

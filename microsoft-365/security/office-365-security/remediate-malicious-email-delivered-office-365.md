@@ -14,14 +14,17 @@ search.appverid: MET150
 description: Hot-reparation
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 2542f7af8a34088a79aae8a14f7ccdb8ea8fd121
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 526a88409514127d4fb484f88632bf3185004854
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547246"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197447"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Åtgärda skadlig e-post som skickas i Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Med reparation menas en åtgärd mot ett hot. Skadlig e-post som skickas till din organisation kan rensas antingen av systemet, via en tom timmes autorensning (ZAP) eller av säkerhets team genom reparations åtgärder som *Flytta till Inkorgen*, *Flytta till skräp post*, *gå till borttaget*, *mjuka bort*eller *ta bort borttagning*. Office Avancerat skydd (Office ATP) P2/E5 gör det möjligt för säkerhets team att åtgärda hot i e-post och samarbets funktioner genom manuell och automatisk undersökning.
 

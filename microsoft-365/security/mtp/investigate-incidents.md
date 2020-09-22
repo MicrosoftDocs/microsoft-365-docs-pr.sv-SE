@@ -1,7 +1,7 @@
 ---
-title: Undersöka incidenter i Microsofts hotskydd
-description: Analysera incidenter relaterade till enheter, användare och postlådor.
-keywords: incident, incidenter, maskiner, enheter, användare, identiteter, e-post, e-post, brevlåda, undersökning, diagram, bevis
+title: Undersök incidenter i skydd mot Microsoft Threat
+description: Analysera händelser relaterade till enheter, användare och post lådor.
+keywords: incident, händelser, datorer, enheter, användare, identiteter, e-post, e-post, brev låda, undersökning, Graf, bevis
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,100 +19,103 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1883f61f50dad9b601329369bf180ddecba70138
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 46d82220851c78525bd0b1ee00c4abae69c0304f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928968"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196317"
 ---
-# <a name="investigate-incidents-in-microsoft-threat-protection"></a>Undersöka incidenter i Microsofts hotskydd
+# <a name="investigate-incidents-in-microsoft-threat-protection"></a>Undersök incidenter i skydd mot Microsoft Threat
 
-**Gäller:**
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-- Microsofts hotskydd
 
-Microsoft Threat Protection sammanställer alla relaterade aviseringar, tillgångar, undersökningar och bevis från alla dina enheter, användare och postlådor för att ge dig en omfattande titt på hela bredden av en attack.
+**Gäller för:**
 
-Undersök aviseringar som påverkar ditt nätverk, förstå vad de betyder och samla bevis i samband med incidenter så att du kan utforma en effektiv reparationsplan.
+- Microsoft Hotskydd
 
-## <a name="investigate-an-incident"></a>Utreda en incident
+Microsoft Threat Protection aggregerar alla relaterade aviseringar, till gångar, undersökningar och fakta från enheter, användare och post lådor för att ge dig en omfattande titt på hela bredden på en attack.
 
-1. Välj en incident från incidentkön. <BR> Detta öppnar en sidopanel och ger en förhandsgranskning av viktig information som status, allvarlighetsgrad, kategorier och påverkade entiteter.
+Undersök vilka aviseringar som påverkar ditt nätverk, förstå vad de betyder och samla in bevis som är kopplade till incidenterna så att du kan utforma en effektiv reparations plan.
 
-    ![Bild av sidopanelen för incidenten](../../media/incident-side-panel.png)
+## <a name="investigate-an-incident"></a>Undersök en olycka
 
-2. Välj **Öppna incidentsida**. <BR> Då öppnas incidentsidan där du hittar mer information om incidentinformation, kommentarer och åtgärder, flikar (översikt, aviseringar, enheter, användare, undersökningar, bevis).
+1. Välj en incident från incident kön. <BR> Då öppnas en sido panel med en förhands granskning av viktig information som status, allvarlighets grad, kategorier och berörda enheter.
 
-3. Granska aviseringar, enheter, användare, andra enheter som är inblandade i incidenten.
+    ![Bild av panelen tillbud](../../media/incident-side-panel.png)
 
-## <a name="incident-overview"></a>Översikt över incidenter
+2. Välj **Open incident-sida**. <BR> Då öppnas sidan incident där du hittar mer information om incidenter, kommentarer och åtgärder, flikar (översikt, notifieringar, enheter, användare, undersökningar, bevis).
 
-Översiktssidan ger dig en ögonblicksbild blick i de översta sakerna att märka om händelsen.
+3. Granska aviseringar, enheter, användare, andra enheter inblandade i incidenten.
 
-![Bild av översiktssidan för incidenter](../../media/incidents-overview.png)
+## <a name="incident-overview"></a>Incident översikt
 
-Attackkategorierna ger dig visuell och numerisk bild av hur avancerad attacken har utvecklats mot dödskedjan. Precis som med andra Microsoft-säkerhetsprodukter är Microsoft Threat Protection anpassat till [MITRE ATT-&&trade; CK-ramverket.](https://attack.mitre.org/)
+Med översikts sidan kan du snabbt och enkelt se en ögonblicks bild.
 
-Avsnittet Omfång ger dig en lista över de mest påverkade tillgångarna som ingår i den här incidenten. Om det finns specifik information om denna tillgång, såsom risknivå, undersökningsprioritet samt eventuell märkning på tillgångarna kommer detta också att dyka upp i detta avsnitt.
+![Bild av översikts sidan för incidenter](../../media/incidents-overview.png)
 
-Tidslinjen för aviseringar ger en smygtitt på den kronologiska ordning i vilken aviseringarna inträffade, liksom orsakerna till att dessa aviseringar kopplade till den här incidenten.
+I angrepps kategorierna får du visuell och numerisk vy av hur Avancerat angreppet har framskridit mot Kill-kedjan. Precis som med andra Microsoft-säkerhetsprodukter är skydd mot Microsoft Threat det [Mitre för&CK &trade; ](https://attack.mitre.org/) -ramverk.
 
-Och sist - bevisavsnittet ger en sammanfattning av hur många olika artefakter som ingick i incidenten och deras reparationsstatus, så att du omedelbart kan identifiera om någon åtgärd behövs på din sida.
+I avsnittet omfattning får du en lista över de mest berörda till gångarna som är en del av den här incidenten. Om det finns specifik information om den här till gången, till exempel risk nivå, undersöknings prioritet och eventuella taggning på till gångar, visas även i det här avsnittet.
 
-Denna översikt kan hjälpa till i den första triage av händelsen genom att ge insikt i de bästa egenskaperna hos händelsen som du bör vara medveten om.
+Tids linjen för påminnelser ger en förhandstitt på den kronologiska ordning i vilken aviseringarna inträffade, samt orsakerna till att dessa varningar är länkade till denna incident.
+
+Och sist-beviset visar en sammanfattning av hur många olika artefakter som ingår i incidenten och deras reparations status, så att du omedelbart kan avgöra om en åtgärd krävs för ditt slut.
+
+Denna översikt kan hjälpa till med den inledande postsortering av incidenten genom att ge insyn i de viktigaste egenskaperna hos den olycka som du bör vara medveten om.
 
 ## <a name="alerts"></a>Varningar
 
-Du kan visa alla aviseringar som är relaterade till incidenten och annan information om dem, till exempel allvarlighetsgrad, entiteter som var inblandade i aviseringen, källan till aviseringarna (Azure ATP, Microsoft Defender ATP , Office 365 ATP) och anledningen till att de var sammankopplade.
+Du kan visa alla aviseringar som rör incidenten och annan information om dem, till exempel allvarlighets grad, enheter som ingick i aviseringen, källan till aviseringarna (Azure ATP, Microsoft Defender ATP, Office 365 ATP) och anledningen till att de sammanlänkade.
 
-![Bild på sidan incidentvarningar](../../media/incident-alerts.png)
+![Bild av sidan incident aviseringar](../../media/incident-alerts.png)
 
-Som standard ordnas aviseringarna kronologiskt så att du först kan se hur attacken utspelade sig över tid. Om du klickar på varje avisering leder du till den relevanta aviseringssidan där du kan göra en fördjupad undersökning av den aviseringen.
+Som standard ordnas aviseringarna kronologiskt, så att du kan se hur angreppet spelas upp med tiden. Om du klickar på varje varning kommer du till relevant aviserings sida där du kan genomföra en djupgående undersökning av den aviseringen.
 
-## <a name="devices"></a>Enheter
+## <a name="devices"></a>Anordningar
 
-På fliken Enheter visas alla enheter där aviseringar relaterade till incidenten visas.
+På fliken enheter visas alla enheter där aviseringar som rör händelsen är synliga.
 
-Om du klickar på namnet på den dator där attacken utfördes navigerar du till dess maskinsida där du kan se aviseringar som utlöstes på den och relaterade händelser som tillhandahålls för att underlätta undersökningen.
+Om du klickar på namnet på den dator där angreppet har gjorts navigerar du till dess dator sida där du kan se de meddelanden som utlöstes med den och relaterade händelser för att under lätta undersökningen.
 
-![Bild av datorer fliken för en incident](../../media/incident-machines.png)
+![Fliken dator med en olycka](../../media/incident-machines.png)
 
-Om du väljer fliken Tidslinje kan du bläddra igenom maskinens tidslinje och visa alla händelser och beteenden som observerats på datorn i kronologisk ordning, varvat med aviseringarna upp.
+Om du väljer fliken tids linje kan du bläddra igenom datorns tids linje och Visa alla händelser och funktioner som observerats på datorn i kronologisk ordning, direkt med aviseringar.
 
 ## <a name="users"></a>Användare
 
-Se användare som har identifierats vara en del av eller relaterade till en viss incident.
+Se vilka användare som har identifierats som en del av eller är relaterade till en viss olycka.
 
-Om du klickar på användarnamnet navigeras du till användarens Cloud App Security-sida där ytterligare undersökningar kan utföras.
+Om du klickar på användar namnet navigerar du till användarens moln program säkerhets sida där ytterligare undersökningar kan genomföras.
 
-![Bild på fliken användare i en incident](../../media/incident-users.png)
+![Bild av fliken användare i en händelse](../../media/incident-users.png)
 
-## <a name="mailboxes"></a>Postlådor
+## <a name="mailboxes"></a>Post lådor
 
-Undersök postlådor som har identifierats för att vara en del av eller relaterade till en incident. Om du vill utföra ytterligare utredningsarbete öppnas Office 365 Advanced Threat Protection där du kan vidta åtgärder för att upptäcka e-postrelaterade åtgärder.
+Undersök brev lådor som har identifierats som en del av eller är relaterade till en olycka. Om du vill göra ytterligare utrednings arbete genom att välja e-postrelaterad varning öppnas Office 365 Avancerat skydd där du kan utföra reparations åtgärder.
 
-![Bild på fliken postlåda för en incident](../../media/incident-mailboxes.png)
+![Bild av fliken post låda med en olycka](../../media/incident-mailboxes.png)
 
 ## <a name="investigations"></a>Utredningar
 
-Välj **Undersökningar om** du vill se alla automatiserade undersökningar som utlöses av varningar i den här incidenten. Undersökningarna utför reparationsåtgärder eller väntar på analytikergodkännande av åtgärder, beroende på hur du konfigurerade dina automatiska undersökningar för att köras i Microsoft Defender ATP och Office 365 Advanced Threat Protection.
+Välj **undersökningar** för att se alla automatiserade utredningar som utlöstes av notifieringar under den här incidenten. Undersökningen utför reparations åtgärder eller väntar på att godkänna godkännande av åtgärder, beroende på hur du har konfigurerat dina automatiserade utredningar att köra i Microsoft Defender ATP och Office 365 Avancerat skydd.
 
-![Bild av utredningar fliken av en incident](../../media/incident-investigations.png)
+![Bild av fliken undersökningar under en olycka](../../media/incident-investigations.png)
 
-Välj en undersökning för att navigera till sidan Undersökningsinformation för att få fullständig information om undersöknings- och reparationsstatus. Om det finns några åtgärder som väntar på godkännande som en del av undersökningen visas de på fliken Väntande åtgärder. Vidta åtgärder som en del av incidentens reparation.
+Välj en undersökning för att gå till sidan med gransknings informationen för att få fullständig information om undersökningen och reparations status. Om det finns några åtgärder som väntar på godkännande som en del av undersökningen kommer de att synas på fliken väntande åtgärder. Vidta en åtgärd som en del av incident åtgärden.
 
-## <a name="evidence"></a>Bevis
+## <a name="evidence"></a>Läggs
 
-Microsoft Threat Protection undersöker automatiskt alla incidenters händelser som stöds och misstänkta entiteter i aviseringarna, vilket ger dig automatisk respons och information om viktiga filer, processer, tjänster, e-postmeddelanden med mera. Detta hjälper till att snabbt upptäcka och blockera potentiella hot i incidenten.
+Microsoft Threat Protection undersöker automatiskt alla händelser och misstänkta enheter som stöds av incidenter och ger dig automatiskt svar och information om viktiga filer, processer, tjänster, e-postmeddelanden och annat. Det gör det enkelt att upptäcka och blockera potentiella hot i olyckan.
 
-![Bild på fliken bevis för en incident](../../media/incident-evidence.png)
+![Bild av fliken bevis för en olycka](../../media/incident-evidence.png)
 
-Var och en av de analyserade entiteterna markeras med en dom (Skadlig, Misstänkt, Ren) samt en reparationsstatus. Detta hjälper dig att förstå saneringsstatus för hela incidenten och vilka är de nästa steg som kan vidtas för att ytterligare åtgärda.
+Alla analyserade enheter markeras med en Verdict (skadlig, misstänkt, ren) och en reparations status. Det här hjälper dig att förstå reparations status för hela incidenten och vilka som är nästa steg som kan åtgärdas.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Översikt över incidenter](incidents-overview.md)
+- [Incident översikt](incidents-overview.md)
 - [Prioritera incidenter](incident-queue.md)
 - [Hantera incidenter](manage-incidents.md)
 
