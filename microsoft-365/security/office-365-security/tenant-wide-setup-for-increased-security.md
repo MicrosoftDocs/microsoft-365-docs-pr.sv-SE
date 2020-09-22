@@ -19,14 +19,17 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 description: I det här avsnittet får du hjälp med rekommenderad konfiguration för klient organisationens inställningar som påverkar säkerheten för din Microsoft 365-miljö.
-ms.openlocfilehash: 3a69a27aa544880e428562892832b6d33a2508e4
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 72040469f802c2cb5a4fac132ff1c3cd8999e124
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308225"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202025"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Konfigurera Microsoft 365-klient organisationen för ökad säkerhet
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I det här avsnittet får du hjälp med rekommenderad konfiguration för klient organisationens inställningar som påverkar säkerheten för din Microsoft 365-miljö. Dina säkerhets behov kan kräva mer eller mindre säkerhet. Använd dessa rekommendationer som utgångs punkt.
 

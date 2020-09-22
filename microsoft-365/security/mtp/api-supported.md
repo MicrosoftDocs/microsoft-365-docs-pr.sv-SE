@@ -1,6 +1,6 @@
 ---
-title: 'API: er för skydd mot Microsoft Threat'
-description: 'API: er för skydd mot Microsoft Threat'
+title: 'API: er som stöds av Microsoft Hotskydd'
+description: 'API: er som stöds av Microsoft Hotskydd'
 keywords: 'MTP, API: er'
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 49fa182a6142748ca7769411fe74389f365ba75f
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: fda90945f09abfadfe56ea11469687130d88b2a7
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650564"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203701"
 ---
-# <a name="supported-microsoft-threat-protection-apis"></a>API: er för skydd mot Microsoft Threat 
+# <a name="supported-microsoft-threat-protection-apis"></a>API: er som stöds av Microsoft Hotskydd 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 **Gäller för:**
 - Microsoft Hotskydd
 
@@ -52,5 +55,5 @@ ms.locfileid: "47650564"
 
 Ämnes | Beskrivning
 :---|:---
-[Avancerat jakt-API](api-advanced-hunting.md) | Kör avancerade frågor från API.
-[API för incidenter](api-incident.md) | Kör incident närliggande API-samtal, till exempel: list incidenter, uppdaterings tillbud och mer.
+[Advanced jakt-API](api-advanced-hunting.md) | Kör avancerade frågor från API.
+[API:er för tillbud](api-incident.md) | Kör incident närliggande API-samtal, till exempel: list incidenter, uppdaterings tillbud och mer.

@@ -16,14 +16,17 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft har utvecklat olika policyer, procedurer och infört flera metod tips för att skydda våra användare mot grova och oönskade e-postmeddelanden.
-ms.openlocfilehash: 5b815678fc7462df5448447624d6f7c0c63d6eb6
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b971823201fb805c9e17da8402250065d274668d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949662"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202381"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referens: principer, övningar och riktlinjer
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Microsoft värnar om att tillhandahålla den mest betrodda användar upplevelsen på webben. Därför har Microsoft utvecklat olika policyer, procedurer och infört flera metod tips för att skydda våra användare mot grova, oönskade och illasinnade e-postmeddelanden. Avsändare försöker skicka e-post till användarna så att de förstår och följer vägledningen i den här artikeln för att hjälpa till med att undvika potentiella leverans problem.
 

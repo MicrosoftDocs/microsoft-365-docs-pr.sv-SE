@@ -14,14 +14,17 @@ ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan visa vanliga frågor och svar om delegerade administrations uppgifter i Microsoft 365 för Microsoft-partners och åter försäljare.
-ms.openlocfilehash: 3efadc8793778bfabe10922e8e29044747d60ad0
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 6729f276e6afea83568ca59d3bf48c08fcd837d2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866701"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203149"
 ---
 # <a name="delegated-administration-faq"></a>Vanliga frågor och svar om delegerad administration
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Den här artikeln innehåller vanliga frågor och svar om delegerade administrations uppgifter i Microsoft 365 för Microsoft-partners och åter försäljare. Delegerad administration inkluderar möjligheten att hantera inställningar för Exchange Online Protection (EOP) för andra klient organisationer.
 

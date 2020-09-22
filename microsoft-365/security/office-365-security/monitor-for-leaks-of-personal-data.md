@@ -18,14 +18,17 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Läs om tre verktyg som du kan använda för att övervaka personliga data.
-ms.openlocfilehash: ef6e1b2edecc8ee8318f1b1e6228e9931b8c66c5
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 67cce80435aa0f01f496ec67d617f0a2dfff8ec8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351891"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202705"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Övervaka läckage av personliga data
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Det finns många verktyg som kan användas för att övervaka användning och transport av personliga data. I det här avsnittet beskrivs tre verktyg som fungerar bra.
 

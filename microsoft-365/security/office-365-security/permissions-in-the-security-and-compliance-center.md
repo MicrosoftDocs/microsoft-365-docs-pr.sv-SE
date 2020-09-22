@@ -18,14 +18,17 @@ search.appverid:
 - MET150
 description: Administratörer kan läsa mer om vilka behörigheter som är tillgängliga i säkerhets & Compliance Center i Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c1738438601712199b9a8e7365338d03e17621f0
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 6dab91169b260ea3dae47034ec5c15ebeb2462a4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171320"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202693"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>Behörigheter i Säkerhets- och efterlevnadscentret
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Med funktionen för säkerhets & efterlevnad kan du bevilja behörigheter till personer som utför arbets uppgifter som enhets hantering, förhindrande av data förlust, eDiscovery, bevarande och så vidare. De här personerna kan bara utföra de uppgifter som du uttryckligen ger dem åtkomst till. För att komma åt säkerhets & regelefterlevnad måste användare vara en global administratör eller medlem i en eller flera säkerhets & roller för efterlevnadsprinciper.
 

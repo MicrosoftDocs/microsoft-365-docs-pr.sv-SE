@@ -20,14 +20,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om karantän i Exchange Online Protection (EOP) som innehåller potentiellt farliga eller oönskade meddelanden.
-ms.openlocfilehash: d2ccf174ae929c6db14f2a5319e9594495c0778e
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 77eea3140fb96faec4fb5a749422c2bd9da85b45
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826807"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202477"
 ---
 # <a name="quarantined-email-messages-in-eop"></a>E-postmeddelanden i karantän i EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I Microsoft 365-organisationer med post lådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor är det möjligt att hålla farliga eller oönskade meddelanden.
 

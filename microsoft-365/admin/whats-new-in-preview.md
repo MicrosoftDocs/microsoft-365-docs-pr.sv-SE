@@ -21,12 +21,12 @@ description: Microsoft 365 Admin Center – lär dig mer om de funktioner som ha
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 7504fa085c6dd5413a1dcddbb71f3d015ded72c1
-ms.sourcegitcommit: 97ef8f846939c3d31bb0638edf07bb89463ace0b
+ms.openlocfilehash: 64c9939f7dd6c4370b80e74987263942dad0e62f
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47300473"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208939"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nyheter i administrations centret för Microsoft 365
 
@@ -49,17 +49,121 @@ Och om du vill veta vad som är nytt med andra moln tjänster från Microsoft:
 - [Nyheter i administrations centret för SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Office-uppdateringar](https://docs.microsoft.com/OfficeUpdates/)
 
+## <a name="ignite-2020-august--september"></a>Tänd 2020 (augusti & september)
+
+Välkommen till Microsoft antändt-vår första Online-Only. Vi hoppas att du ska se dig i en av våra sessioner: [Microsoft, 2020-sessionskatalogen](https://myignite.microsoft.com/sessions). Här är några exempel på vad det är som talar om. 
+> [!NOTE]
+> Alla funktioner är inte tillgängliga för alla direkt. Om du inte ser de nya funktionerna kan du [ansluta till riktad version](manage/release-options-in-office-365.md).
+
+### <a name="multi-tenant-management"></a>Hantering av flera innehavare
+
+Vi har utvecklat en uppsättning funktioner för administratörer som använder flera innehavare för att få jobbet gjort snabbare och mer effektivt.
+
+- **Dina klient organisationer**: växla snabbt mellan de klient organisationer som du hanterar.
+- **Alla klient organisationer**: en ny sida där du snabbt kan se hälsan hos alla dina klient organisationer, alla öppna tjänst förfrågningar, dina produkter och fakturerings program, rekommenderade konfigurations uppgifter och antalet användare hos denna klient organisation.
+- **Konfiguration**: installations sidan för flera innehavare visar en listvy av inställnings sidan, men den är ordnad för många innehavare. Du kan se vilka funktioner som inte är aktiverade, vilka uppgifter som ska utföras för alla klient organisationer, uppgifter som klient organisationerna måste slutföra. I den här vyn kan du hålla reda på vilka funktioner som ska vidtas och se till att de rekommenderade säkerhets konfigurations uppgifterna alltid är klara.
+- **Tjänstens hälsa**: vyn tjänste hälsa visar om eventuella händelser eller rådgivare påverkar klient organisationerna. Det visar även hur många av dina hanterade klient organisationer som påverkas. Välj bara ett tillbud för att få mer information på fliken Översikt och växla sedan till fliken klient organisationer som påverkas för att öka detalj nivån och support för klient organisationen.
+- **Migreringar av post lådor mellan innehavare** är en ny tjänst som du kan använda för att flytta post lådor mellan klient organisationer utan att behöva ta bort och sedan till. 
+- **Domän delning mellan innehavare**: snart kan du delta i en privat förhands granskning för att dela en domän över flera klient organisationer. Om contoso köper till exempel Wingtip Toys kan Contoso dela domänen med Wingtip Toys så att personer i båda klient organisationerna kan använda "contoso.com" som deras e-postadresser.
+
+![Sidan tjänstens hälsa för en klient organisation där en incident är markerad och fliken innehavare påverkas. Navigerings menyn har alla klient organisationer, inställningar och tjänst hälsa som de enda alternativen.](../media/MAC-WN-MTinServiceHealth.png)
+
+### <a name="monitor-your-most-important-accounts"></a>Övervaka dina viktigaste konton
+
+Du kan övervaka och spåra misslyckade eller fördröjda e-postmeddelanden som skickas till användare som har stor rörelse påverkan, till exempel din VD. Du spårar prioritets konton genom att lägga till användare i listan med prioriterade konton i administrations centret för Microsoft 365. Lägga till chefer, ledare, chefer eller andra användare som har till gång till känslig eller prioriterad information.
+
+Prioriterade konton är bara tillgängliga för organisationer som uppfyller följande krav:
+
+- Office 365 E3 eller Microsoft 365 E3, eller Office 365 E5 eller Microsoft 365 E5.
+- Minst 10 000 licenser och minst 50 månads aktiva Exchange Online-användare.
+
+![Inställnings sida för funktionen: övervaka dina viktigaste konton](../media/MAC-WN-PriorityAccounts.png)
+
+Det finns två sätt att komma igång:
+
+- Gå till **användare**och välj sedan **Hantera prioriterade konton** i menyn "fler åtgärder" för att lägga till användare i listan.
+- Gå till **installations programmet**, leta reda på de **viktigaste kontona**och välj sedan **Kom igång**.
+
+Mer information om prioritets konton finns i [övervaka prioritets](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) konton och [e-postproblem för prioriterade konton](https://docs.microsoft.com/Exchange/mail-flow-best-practices/mail-flow-insights/mfi-email-issues-for-priority-accounts).
+
+### <a name="search-faster-and-get-better-results-from-any-page"></a>Sök snabbare och få bättre resultat från vilken sida som helst
+
+Vi har börjat genomföra en ny Sök funktion för administrations centret och det går inte att vänta på att prova. ![Sökrutan har flyttats till området för banderoller. Alt + S för att söka från vilken sida som helst.](../media/MAC-WN-GlobalSearch.png)
+
+- Sökrutan flyttas till rubrik området där den står "Microsoft 365 Admin Center", så att du kan söka från vilken sida som helst, inte bara start sidan. Vi har till och med fått en genväg: **Alt + S**.
+- Sökningen är smartare och ger dig bättre resultat, ännu snabbare. Skriv "2fa" för att komma igång.
+- Sök resultaten är ordnade efter den typ av objekt eller åtgärd som du kan vidta.
+  - **Användare**: Välj användarens namn så kan du redigera den användaren. Om du väljer "fler åtgärder"-menyn bredvid namnet kan du återställa deras lösen ord. Du kan söka efter visnings namn, efter namn, förnamn, användar namn eller primär e-postadress samt e-postalias. Men om du vill ha en exakt matchning kan du söka efter primär e-postadress eller användar namn.
+  - **Grupper**: redigera gruppen från vilken sida som helst, Lägg till medlemmar, tilldela ägare.
+  - **Åtgärder**: liknar hur du kan söka efter en användare och sedan återställa deras lösen ord, du kan också söka efter "Återställ lösen ord" från valfri sida och sedan återställa ett eller flera lösen ord för användare.
+  - **Navigering**: resultaten under navigering kan snabbt hjälpa dig att snabbt komma åt en sida i administrations centret. Om du till exempel söker efter "roller" kommer du till sidan roller för Azure AD-roller.
+  - **Inställningar**: Sök efter alla inställningar som är relaterade till din organisation, de tjänster du prenumererar på och säkerhets-och sekretess inställningar. 
+  - **Domäner**: du kan hitta snabb länkar till dina domäner och sedan kommer länken till sidan Översikt och hälsa.
+  - **Dokumentation**: om vi inte hittar ett resultat för dig försöker vi hitta en del dokumentation som hjälper dig. Det tar lite längre tid för den undervisade listan med artiklar att hitta en träff, så vänta en sekund för att söka efter resultaten. 
+  - **Feedback**: hittade du inte det du letade efter? Skicka feedback till oss från sökning. Vi lägger till Sök funktioner för fler sidor och fler funktioner i administrations centret.
+
+### <a name="microsoft-365-admin-mobile-app"></a>Microsoft 365 admin-mobilapp
+
+Med [microsoft 365 admin-mobilappen](https://www.microsoft.com/microsoft-365/business/manage-office-365-admin-app), som ingår i ditt abonnemang, kan du hantera Microsoft 365 från din mobila enhet så att du kan få tag i alla dagliga uppgifter. Det finns över 90 funktioner i programmet – och vi har lagt till några fler:
+
+- **Stöd för Microsoft Intune-principer för hantering av mobil program och villkorsstyrd åtkomst**: du kan nu använda din personliga enhet för att hantera Microsoft 365 även om din organisation har aktiverat Intune-principer för hantering av mobil program och villkorsstyrd åtkomst.
+- **Meddelande Center meddelanden**: **Aktivera meddelanden i meddelande Center när**  >  **Notifications** du vill få aviseringar om nya meddelande Center. Med aviseringar vill vi hålla dig informerad om viktig information och händelser i din klient organisation.
+- **Fakturerings aviseringar**: du kan också aktivera fakturerings aviseringar via **inställnings**  >  **aviseringar** om du vill få fakturerings aviseringar på din enhet om ett abonnemang snart upphör.
+- **Mörkt läge**: Välkommen till den mörka sidan av mobilappen. Detta var de senaste funktionerna. Gå till **Inställningar**  >  **Themes** för att aktivera det.
+- **Rapportera ett problem**: du kan nu rapportera ett problem i appen eller Visa problem som rapporter ATS av andra administratörer. Besök **tjänstens hälsa** för att checka ut det.
+
+![Sidan hälsa i Microsoft 365 admin-appen med aviseringar för meddelande Center, tjänst hälsa, fakturerings aviseringar.](../media/MAC-WN-AdminMobileApp.png)
+
+### <a name="usage-recommendations-for-small-and-medium-businesses"></a>Rekommendationer för användning av små och medel stora företag
+
+Små och medel stora företag kan få en rekommendation på **Start** sidan om vissa personer i organisationen inte aktivt använder Teams, OneDrive eller Office-appar. När du visar rekommendationen kan du snabbt skicka Microsoft-utbildning till inaktiva användare som hjälper dem att komma igång med programmet och se till att du får det fulla värdet från dina abonnemang.
+
+### <a name="remote-work-collection"></a>Fjärr arbeten
+
+I oktober kommer vi att lägga till en fjärran sluten arbets grupp för att hjälpa småföretag och deras personal att arbeta online.  Installations program för **Fjärrhjälp** är en underordnad lista över alla funktioner som Microsoft rekommenderar för att säkert aktivera fjärran arbete och för att samar beta effektivt. Under några veckor kan du testa det i **Konfigurera**  >  **fjärr arbeten**.
+
+![Sidan för Fjärrhjälp i installations programmet med sju uppgifter som inte startats.](../media/MAC-WN-RemoteWork.png)
+
+Om du vill ha mer information om hur du säkert tillåter fjärrarbete och en praktisk webb adress som är lätt att komma ihåg och kan du gå till [aka.MS/Remote-Business](https://aka.ms/remote-business).
+
+### <a name="need-help-moving-to-more-admin-centers"></a>Behöver du hjälp? flytta till fler administratörs Center
+
+Vi tittar kontinuerligt på och uppdaterar innehållet och verktygen för att hålla dig uppdaterad om produkten. Nu har vi många mer själv bevarade diagnostikverktyg som hjälper dig att lösa problem snabbt och effektivt. Här är några som nyligen har lagts till:
+
+- Ändra begränsnings princip för Exchange Web Service
+- Kontrol lera status för Teams för etablering och verifiering för specifika användare
+- Åtgärda problem med DKIM konfiguration
+- Diagnosticera registrerings fel för Intune-användare
+
+Och vi håller på att lansera den nya och förbättrade support som visas i administrations centret för Microsoft 365 till några av de andra administrations centret. Administrations Center för team och säkerhets-och efterlevnadsprinciper har redan den här nya upplevelsen. Och snart kommer **administrations centret för Exchange**, **SharePoint administrations Center**och **Office.com** att uppdateras tillsammans med den här nya hjälp funktionen för administratörer.
+
+### <a name="manage-changes-with-microsoft-planner"></a>Hantera ändringar med Microsoft Planner
+
+I maj har vi meddelat att du snart kan synkronisera inlägg i Microsoft Planner och nu är det tillgängligt för alla att använda.  Du kan skapa uppgifter från meddelanden, tilldela dem och följa upp dem. Första gången du väljer Planner- **synkronisering** måste du ansluta till lämpligt abonnemang.
+
+![Sidan meddelande Center med "Planner-synkronisering" markerat i kommando fältet bredvid knappen Inställningar.](../media/MAC-WN-MCPlannerSync.png)
+
+Om du vill veta mer om det kan du läsa den här artikeln och videon för att se hur den fungerar: [spåra inlägg i meddelande Center i Planner](https://docs.microsoft.com/Office365/Planner/track-message-center-tasks-planner)
+
+### <a name="documentation-training-and-videos"></a>Dokumentation, utbildning och videor
+
+- Helt ny och bara i tid för Microsoft tändning--[det virtuella navet](https://adoption.microsoft.com/virtual-hub/). Djupgående teknisk utbildning för IT-proffs och-utvecklare. Hitta snabbt 20 nya videoklipp som en del av #SIDETRACKED, namnet på administratörs spåret det här året.
+- [Nyheter i Microsoft 365](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s) Video Series: den här månaden täcker vi nya funktioner som är tillgängliga i whiteboard för Teams och på webben, hur du automatiserar användar etableringen till Azure AD, nya Power autotriggers och åtgärder i Teams och mycket mer. Och håll koll på nästa månad, där vi har en Recap av allt som händer på antändt sätt!
+- Vi har gjort en ny design av [Microsoft 365-dokumentation](https://docs.microsoft.com/microsoft-365) som fokuserar på lösningar först. Vi markerar nya lösningar när de blir tillgängliga på den här sidan, så håll ögonen öppna.
+
+![Ny landnings sida för Microsoft 365 lösnings dokumentation med lösningar som "ge fjärranställda".](../media/MAC-WN-M365Docspage.png)
+
 ## <a name="july-2020"></a>Juli 2020
 
 ### <a name="getting-ready-for-ignite-2020"></a>Förbereder dig för 2020
 
-När vi rör sig in i säsongen hos Microsoft släpps vi inte så många funktioner så att vi kan prata om under våra sessioner. 
+När vi rör sig in i säsongen hos Microsoft släpps vi inte så många funktioner så att vi kan prata om under våra sessioner.
 
 Nästa uppdatering av den här artikeln kommer att vara samma dag som det första Online-Only. Och det här året är det gratis att delta! Kolla in det, få registrera dig: [Microsoft är 2020](https://www.microsoft.com/ignite).
 
 ### <a name="your-products"></a>Dina produkter
 
-Det har skett mycket arbete med abonnemangs hanteringen för att det ska gå snabbare att läsa in och hitta det du letar efter och att möta webb acessibility standarder (reglerna i[WCAG 2,1](http://www.w3.org/TR/WCAG21/)).
+Det har skett mycket arbete i abonnemangs hanteringen för att det ska gå snabbare att läsa in och hitta det du letar efter och för att uppfylla webb hjälpmedels standarder ([WCAG 2,1-rikt linjer](http://www.w3.org/TR/WCAG21/)).
 
 - **Tabell design**: tabellen har omarbetats så att du kan gruppera liknande abonnemang. Gå till **fakturering**  >  **av dina produkter**.
 - **Produkt information**: få mer information än någonsin dina abonnemang genom att välja produkten i listan.
@@ -73,7 +177,7 @@ Domän hanteringen kan vara komplicerad och vi har publicerat en ny funktion som
 
 :::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="Sidan Domains information för contoso.com":::
 
-### <a name="docs-training-and-videos"></a>Dokument, utbildningar och videoklipp
+### <a name="docs-training-and-videos-july-2020"></a>Dokument, utbildningar och videoklipp (juli 2020)
 
 [Nyheter i Microsoft 365](https://youtu.be/m1Nu8WJgCDY) Video Series: den här månaden täcker vi den nya Yammer-upplevelsen för webben och mobil, hur du integrerar programmet Yammer-communities för Microsoft Teams, nya policy paket för att stödja firstline-arbetare och-chefer.
 
@@ -257,7 +361,7 @@ Vi har tagit emot mycket feedback från partners och administratörer om utmanin
 ![Skärmdump: på Start sidan visas namnet på organisations profilen med ikonen växlaren.](../media/MAC-Organization-switcher.png)
 
 2. I organisationens växlaren väljer du den organisation som du vill hantera.
-![Skärmdump: på Start sidan visas namnet på organisations profilen med ikonen växlaren.](../media/MAC-OrgSwitcherSelected.png)
+![Skärmdump: växlaren mina organisationer med konsol IDE rad för Messenger markerat](../media/MAC-OrgSwitcherSelected.png)
 
 Det är verkligen det!!!
 

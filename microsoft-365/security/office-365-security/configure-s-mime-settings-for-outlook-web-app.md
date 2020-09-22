@@ -16,14 +16,17 @@ ms.collection:
 - M365-security-compliance
 description: En kort beskrivning av vilka Exchange Online-administratörer som måste göra för att visa och konfigurera S/MIME-inställningarna i Outlook på webben i Exchange Online.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9acd7d4523754c1e07ece8fb0344d9f888c0ee3d
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: fe561c3a66cf2e7bdb76aabe10ffc875d85f2d77
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825707"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203341"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>Konfigurera S/MIME-inställningar i Exchange Online för Outlook på webben
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Som administratör för Exchange Online kan du konfigurera Outlook på webben (tidigare Outlook Web App) för att tillåta att S/MIME-skyddade meddelanden skickas och tas emot. Använd cmdletarna **Get-SmimeConfig** och **set-SmimeConfig** för att visa och hantera den här funktionen i Exchange Online PowerShell. Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 

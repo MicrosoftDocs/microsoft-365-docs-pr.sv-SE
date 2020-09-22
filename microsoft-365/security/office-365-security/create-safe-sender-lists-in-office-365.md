@@ -16,14 +16,17 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa om tillgängliga och önskade alternativ för att tillåta inkommande meddelanden i Exchange Online Protection (EOP).
-ms.openlocfilehash: f182027b153ee73e33131b39066e512c9303fcbd
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: b1eda98e081338a981be1d1f5991578b49c574fd
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827117"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203173"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Skapa listor med säkra avsändare i EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Om du är Microsoft 365-kund med post lådor i Exchange Online eller på en fristående Exchange Online Protection (EOP)-kund utan Exchange Online-postlådor, erbjuder EOP flera olika sätt att säkerställa att användarna får e-post från betrodda avsändare. Dessa alternativ inkluderar regler för Exchange-postflöde (kallas även transport regler), Outlook Safe avsändare, listan över tillåtna IP-adresser (anslutnings filter) och tillåtna avsändar listor eller tillåtna domän listor i principer för skräp post. Tillsammans kan du se dessa alternativ som _listor med säkra avsändare_.
 

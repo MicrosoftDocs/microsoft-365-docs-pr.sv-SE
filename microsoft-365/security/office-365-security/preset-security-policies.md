@@ -14,14 +14,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig att använda standard-och strikta princip inställningar i skydds funktionerna i Exchange Online Protection (EOP) och Office 365 Avancerat skydd (ATP)
-ms.openlocfilehash: a2f0472d8dd44c90fd5db14e71d2db0d5d323b50
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 35be2b1ebfcf7ef8b7aad5cc2d4b3dd7032806b2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825263"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202609"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Förvalda säkerhets principer i EOP och Office 365 ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Förvalda säkerhets principer är en central plats för att tillämpa alla rekommenderade spam-, malware-och phishing-principer för användare samtidigt. Princip inställningarna kan inte konfigureras. I stället ställs de in av oss och baseras på våra observationer och erfarenheter i data centret för en avvägning mellan att hålla skadligt innehåll från användare utan att störa deras arbete.
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Lär dig mer om hur du använder centraliserade tillägg för att distribuera tillägg till användare och grupper i din organisation.
-ms.openlocfilehash: c7f8b7bf71dbdaaf1c850c801a5145d3ab47a65c
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 6339858871834637c0b8fdd1b16c17b534026de9
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171298"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48207892"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Hantera tillägg i administrationscentret
 
@@ -60,6 +60,9 @@ Du kan också ta bort ett tillägg som har distribuerats.
 
 1. I administrations centret går du till sidan **Inställningar**  >  **& tillägg** .
 
+     > [!NOTE]
+    > Administrations centret uppdateras till distributions miljön med integrerade appar. Om du inte ser ovanstående steg går du till avsnittet centraliserad distribution genom att gå till **Inställningar**för  >  **integrerade appar**. **Välj tillägg**högst upp på sidan för **integrerade appar** .
+
 2. Välj det distribuerade tillägget.
 
 3. Klicka på **ta bort tillägg**. Ta bort knappen tillägg i det nedre högra hörnet.
@@ -71,6 +74,9 @@ Du kan också ta bort ett tillägg som har distribuerats.
 Efter distribution kan administratörer även hantera användar åtkomst till tillägg.
 
 1. I administrations centret går du till sidan **Inställningar**  >  **& tillägg** .
+
+     > [!NOTE]
+    > Administrations centret uppdateras till distributions miljön med integrerade appar. Om du inte ser ovanstående steg går du till avsnittet centraliserad distribution genom att gå till **Inställningar**för  >  **integrerade appar**. **Välj tillägg**högst upp på sidan för **integrerade appar** .
 
 2. Välj det distribuerade tillägget.
 
@@ -88,6 +94,9 @@ Som en organisation kanske du vill förhindra nedladdning av nya Office-tillägg
 **Så här inaktiverar du tilläggs förvärv**
   
 1. I administrationscentret går du till sidan **Inställningar** \> [Tjänster och tillägg](https://go.microsoft.com/fwlink/p/?linkid=2053743).
+
+     > [!NOTE]
+    > Administrations centret uppdateras till distributions miljön med integrerade appar. Om du inte ser ovanstående steg går du till avsnittet centraliserad distribution genom att gå till **Inställningar**för  >  **integrerade appar**. **Välj tillägg**högst upp på sidan för **integrerade appar** .
     
 3. Välj **ägda appar och tjänster**.
     

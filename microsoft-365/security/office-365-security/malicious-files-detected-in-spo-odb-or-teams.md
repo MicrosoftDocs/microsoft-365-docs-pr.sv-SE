@@ -1,5 +1,5 @@
 ---
-title: Visa information om skadliga filer som upptäckts av Office 365 ATP
+title: Visa information om skadliga filer som identifieras av Office 365 ATP
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,54 +15,57 @@ search.appverid:
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 ms.collection:
 - M365-security-compliance
-description: Lär dig var du kan visa information om skadliga filer som identifierats i SharePoint, OneDrive eller Teams och hur du vidtar åtgärder för dessa filer.
+description: Lär dig hur du kan visa information om skadliga filer som identifieras i SharePoint, OneDrive eller teams och hur du åtgärdar dessa filer.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 47b1fea4b3b5713a8f69e8f4b2c0e2ad0f6dd6b8
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e6cd0363b546fad063290ae20e8c6c82fd6d0dea
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036650"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202001"
 ---
-# <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Visa information om skadliga filer som upptäckts i SharePoint, OneDrive eller Microsoft Teams
+# <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Visa information om skadliga filer som identifieras i SharePoint, OneDrive eller Microsoft Teams
 
-[Office 365 ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md) skyddar din organisation från skadliga filer i dokumentbibliotek och gruppwebbplatser. När en skadlig fil upptäcks blockeras filen så att ingen kan öppna, kopiera, flytta eller dela den förrän ytterligare åtgärder vidtas av organisationens säkerhetsteam. Läs den här artikeln om du vill lära dig hur du visar information om identifierade filer och vilka åtgärder som ska vidtas. 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-För att kunna utföra de uppgifter som beskrivs i den här artikeln måste du ha de behörigheter som krävs [för Säkerhetsefterlevnadscenter &amp; ](permissions-in-the-security-and-compliance-center.md). 
+
+[Office 365 ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md) skyddar din organisation från skadliga filer i dokument bibliotek och grupp webbplatser. När en skadlig fil identifieras blockeras den så att ingen kan öppna, kopiera, flytta eller dela den innan ytterligare åtgärder vidtas av organisationens säkerhets team. Läs den här artikeln om du vill veta mer om hur du visar information om upptäckta filer och vilka åtgärder som ska vidtas. 
+
+För att kunna utföra de uppgifter som beskrivs i den här artikeln måste du ha nödvändig [behörighet för säkerhets &amp; kontroll Center](permissions-in-the-security-and-compliance-center.md). 
   
 ## <a name="view-reports-with-information-about-detected-files"></a>Visa rapporter med information om identifierade filer
 
-Om du vill visa status och detaljerad information om filer som har identifierats av Office 365 ATP kan du använda rapporten Status för hotskydd.
+Om du vill visa status och detaljerad information om filer som upptäckts av Office 365 ATP kan du använda status rapporten för hotets skydd.
   
-1. Välj **Rapporter om** \> skydd mot **instrumentpanelsskydd** \> **Threat Protection Status**i [Säkerhetsefterlevnadscenter &amp; ](https://protection.office.com).
+1. Välj **rapport** [ &amp; ](https://protection.office.com) \> **Dashboard** \> **skydds status**för instrument panel för säkerhets kontroll.
     
-2. I det övre högra hörnet av rapporten väljer du **Visa informationstabell**.
+2. I det övre högra hörnet i rapporten väljer du **tabellen Visa information**.
     
-3. Visa listan över filer som har identifierats i rapporten.
+3. Visa listan över filer som upptäcktes i rapporten.
     
-4. Markera ett objekt i listan om du vill visa detaljerad information, inklusive vidtagna åtgärder, filnamnet, filsökvägen med mera.
+4. Välj ett objekt i listan för att visa detaljerad information, inklusive utförda åtgärder, fil namnet, fil Sök vägen och annat.
     
-5. Välj fliken **Avancerad analys** om du vill visa information, till exempel observerad beteende- och analysinformation. 
+5. Välj fliken **Avancerad analys** för att visa information, till exempel observerat beteende och analys information. 
   
 ## <a name="view-and-take-action-on-files-in-quarantine"></a>Visa och vidta åtgärder för filer i karantän
 
-1. I Security &amp; Compliance Center väljer du **Review** \> **Karantän** **för granskning av hothantering** \> . (Du kan också [https://protection.office.com/quarantine](https://protection.office.com/quarantine)gå direkt till .)
+1. &amp;Välj **Threat Management** \> **granskning** \> **Quarantine**i Center för säkerhets kontroll. (Du kan också gå direkt till [https://protection.office.com/quarantine](https://protection.office.com/quarantine) .)
     
-2. I det övre vänstra hörnet ändrar du rullgardinsmenyn från **e-post** till **filer**. Om resultatlistan innehåller för många objekt använder du **funktionen Filter** för att begränsa markeringen.
+2. I det övre vänstra hörnet ändrar du den nedrullningsbara menyn från **e-post** till **filer**. Om resultat listan innehåller för många objekt använder du **filter** funktionen för att begränsa markeringen.
     
-3. Markera ett objekt i listan om du vill visa detaljerad information, inklusive filens URL.
+3. Välj ett objekt i listan för att visa detaljerad information, inklusive filens URL.
     
 4. Välj en tillgänglig åtgärd.
     
-    - Välj **Släpp-fil** för att avblockera filen. 
+    - Välj **släpp filen** för att häva blockeringen av filen. 
 
-      Välj **Skicka rapport till Microsoft** om du vill rapportera filen som ett falskt positivt till Microsoft. 
+      Välj **Skicka rapport till Microsoft** för att rapportera filen som en falsk positiv till Microsoft. 
 
-    - Välj **Hämta fil** för att undersöka filen ytterligare. 
+    - Välj **Ladda ner fil** för att undersöka filen. 
 
-    - Välj **Ta bort från karantänen** om du vill ta bort filen från listan över objekt i karantän. Om du väljer det här alternativet måste du också ta bort filen från respektive bibliotek i SharePoint Online, OneDrive för företag eller Microsoft Teams. Det här alternativet avblockerar inte en fil från att öppnas eller delas. 
+    - Välj **ta bort från karantän** för att ta bort filen från listan med objekt i karantän. Om du väljer det här alternativet måste du även ta bort filen från dess bibliotek i SharePoint Online, OneDrive för företag eller Microsoft Teams. Det här alternativet avblockerar inte en fil från att öppnas eller delas. 
     
-5. Välj **Stäng** om du vill stänga informationen för ett markerat objekt. 
+5. Välj **Stäng** för att stänga informationen för ett markerat objekt. 
   
   
 

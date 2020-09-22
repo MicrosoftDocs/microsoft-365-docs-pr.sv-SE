@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 16749e22b91afb3d1c2bfdc3c40ca271948a97a7
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: d76992108fb3cda82bd9ad9886a2886f70695788
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650563"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203683"
 ---
 #  <a name="microsoft-threat-protection-apis-license-and-terms-of-use"></a>Microsoft Threat Protection API-licens och användnings villkor
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 **Gäller för:**
 - Microsoft Hotskydd
 
@@ -34,7 +37,7 @@ ms.locfileid: "47650563"
 >Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
 
 
-## <a name="apis"></a>API
+## <a name="apis"></a>API:er
 
  Microsoft Threat Protection API: er lyder under [Microsoft API-licens och användnings villkor](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
 
