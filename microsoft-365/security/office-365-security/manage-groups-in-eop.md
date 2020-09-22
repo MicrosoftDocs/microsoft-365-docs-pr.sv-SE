@@ -14,14 +14,17 @@ ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer i fristående Exchange Online Protection (EOP)-organisationer kan lära sig hur du skapar, ändrar och tar bort distributions grupper och e-postaktiverade säkerhets grupper i administrations centret för Exchange (UK) och i fristående Exchange Online Protection (EOP) PowerShell.
-ms.openlocfilehash: e7b93b9d05fda7e4f5f8abea02fbe3f1c70a6c74
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: a395c0738093a00c0225aea22a6e556863eebee5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826559"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201883"
 ---
 # <a name="manage-groups-in-eop"></a>Hantera grupper i EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor kan du skapa, ändra och ta bort följande typer av grupper:
 

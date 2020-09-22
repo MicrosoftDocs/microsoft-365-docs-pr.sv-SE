@@ -15,62 +15,71 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Funktionen Säkra länkar ger snabb verifiering av hyperlänkar i Office-dokument och i e-postmeddelanden. Läs den här artikeln om du vill veta hur ATP Safe Links fungerar.
-ms.openlocfilehash: e79c44b91eb5de7564058b4dc50c94d2a4223f08
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+description: Med funktionen för säkra länkar kan du klicka på verifiering av hyperlänkar i Office-dokument och i e-postmeddelanden. Läs den här artikeln för att få reda på hur säkerhets länkar i ATP fungerar.
+ms.openlocfilehash: 09357b20173e2609587137764737c8aba044190e
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046370"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201478"
 ---
 # <a name="how-atp-safe-links-works"></a>Så fungerar ATP – säkra länkar
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 > [!IMPORTANT] 
-> För att Office 365 ATP Safe Links ska fungera korrekt måste alla tjänster vara i samma version.
+> För att Office 365 ska få säkra Länkar för att fungera korrekt måste alla tjänsterna finnas i samma version.
          
-## <a name="how-atp-safe-links-works-with-urls-in-email"></a>Så här fungerar ATP Safe Links med webbadresser i e-post
+## <a name="how-atp-safe-links-works"></a>Så fungerar ATP – säkra länkar
 
-På en hög nivå fungerar så här [för ATP Safe Links-skydd](atp-safe-links.md) för webbadresser i e-post (finns i Office 365, inte lokalt):
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+ med URL: er via e-post
+
+På en hög nivå, så här gör du så här för att skydda dina URL [-adresser i](atp-safe-links.md) e-post (som finns i Office 365, inte lokalt):
   
-1. Personer får e-postmeddelanden, varav vissa innehåller webbadresser.
+1. Personer får e-postmeddelanden, varav vissa innehåller URL: er.
     
-2. All e-post går via Exchange Online Protection, där IP-filter (Internet Protocol) och kuvertfilter, signaturbaserat skydd mot skadlig kod, skräppost- och anti-malware-filter tillämpas. 
+2. All e-post går genom Exchange Online Protection, där IP (Internet Protocol) och kuvert filter, signaturbaserade skydd mot skadlig program vara samt filter mot skräp post. 
     
-3. E-post kommer i människors inkorgar.
+3. E-post anländer till personers inkorgar.
     
-4. En användare loggar in på Office 365 och går till sin e-postkorg.
+4. En användare loggar in i Office 365 och går till deras e-postinkorg.
     
-5. Användaren öppnar ett e-postmeddelande och klickar på en WEBBADRESS i e-postmeddelandet.
+5. Användaren öppnar ett e-postmeddelande och klickar på en URL i e-postmeddelandet.
     
-6. Funktionen FÖR betrodda LÄNKAR i ATP kontrollerar omedelbart webbadressen innan webbplatsen öppnas. WEBBADRESSEN identifieras som blockerad, skadlig eller säker.
+6. Med funktionen för Safet ATP-länkar kontrol leras URL-adressen omedelbart innan webbplatsen öppnas. URL: en identifieras som blockerad, skadlig eller säker.
         
-   - Om webbadressen är till en webbplats som ingår i organisationens [anpassade blockerade webbadresser öppnas](set-up-a-custom-blocked-urls-list-atp.md)en [varningssida.](atp-safe-links-warning-pages.md) 
+   - Om URL-adressen är till en webbplats som ingår i organisationens [anpassade lista över blockerade URL-adresser](set-up-a-custom-blocked-urls-list-atp.md)öppnas en [varnings sida](atp-safe-links-warning-pages.md) . 
     
-   - Om webbadressen är till en webbplats som har fastställts vara skadlig öppnas en [varningssida.](atp-safe-links-warning-pages.md) 
+   - Om URL-adressen är till en webbplats som har bedömts vara skadlig visas en [varnings sida](atp-safe-links-warning-pages.md) . 
     
-   - Om webbadressen går till en nedladdningsbar fil och organisationens [ATP Safe Links-principer](set-up-atp-safe-links-policies.md) är konfigurerade för att skanna sådant innehåll kontrolleras den nedladdningsbara filen. 
+   - Om URL-adressen går till en nedladdnings bar fil och organisationens [principer för Safet ATP-länkar](set-up-atp-safe-links-policies.md) är konfigurerade för genomsökning av sådant innehåll är den nedladdnings bara filen markerad. 
     
-   - Om webbadressen bedöms vara säker öppnas webbplatsen.
+   - Om webb adressen är säker öppnas webbplatsen.
     
-## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>Så här fungerar ATP Safe Links med webbadresser i Office-dokument 
+## <a name="how-atp-safe-links-works"></a>Så fungerar ATP – säkra länkar
 
-På en hög nivå fungerar så här för [ATP Safe Links-skydd](atp-safe-links.md) för webbadresser i Microsoft 365 Apps för företag eller Business Premium-program (aktuella versioner av Word, Excel och PowerPoint på Windows, Mac eller i en webbläsare, Office-appar på iOS- eller Android-enheter, Visio på Windows, OneNote i en webbläsare):
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+ med URL-adresser i Office-dokument 
+
+På en hög nivå, så här gör du så här för att skydda dina URL [-adresser i](atp-safe-links.md) Microsoft 365-appar för Enterprise-eller Business Premium-program (aktuella versioner av Word, Excel och PowerPoint på Windows, Mac eller i en webbläsare, Office-appar på iOS-eller Android-enheter, Visio på Windows, OneNote i en webbläsare):
   
-1. Personer har installerat Microsoft 365 Apps för företag eller Business Premium på sin dator, smartphone eller surfplatta. (Eller så använder de Office i sin webbläsare.)
+1. Personer har installerat Microsoft 365-appar för företag eller företag Premium på sin dator, smartphone eller surfplatta. (Eller så använder de Office i webbläsaren.)
     
-2. En användare öppnar ett Word, Excel, PowerPoint, OneNote (i webbläsaren) eller Visio (på skrivbordet) och loggar in på Office 365 Enterprise med sitt arbets- eller skolkonto. Dokumentet innehåller webbadresser.
+2. En användare öppnar ett ord, Excel, PowerPoint, OneNote (i webbläsaren) eller Visio (på Skriv bordet) och loggar in på Office 365 Enterprise med sitt arbets-eller skol konto. Dokumentet innehåller URL: er.
     
-3. När användaren klickar på en URL i dokumentet kontrolleras länken av tjänsten ATP Safe Links.
+3. När användaren klickar på en URL i dokumentet kontrol leras länken av tjänsten ATP Safe Links.
     
-   - Om webbadressen är till en webbplats som ingår i organisationens [anpassade blockerade webbadresser](set-up-a-custom-blocked-urls-list-atp.md)visas användaren på en [varningssida](atp-safe-links-warning-pages.md).
+   - Om URL-adressen är till en webbplats som ingår i organisationens [anpassade lista över blockerade URL-adresser](set-up-a-custom-blocked-urls-list-atp.md), kommer användaren till en [varnings sida](atp-safe-links-warning-pages.md).
     
-   - Om webbadressen är till en webbplats som har fastställts vara skadlig, tas användaren till en [varningssida](atp-safe-links-warning-pages.md).
+   - Om URL-adressen är till en webbplats som har bedömts vara skadlig, kommer användaren till en [varnings sida](atp-safe-links-warning-pages.md).
     
-   - Om webbadressen går till en nedladdningsbar fil och [ATP Safe Links-principerna](set-up-atp-safe-links-policies.md) är konfigurerade för att skanna sådana nedladdningar kontrolleras den nedladdningsbara filen. 
+   - Om URL-adressen går till en nedladdnings bar fil och [principer för Safet ATP-länkar](set-up-atp-safe-links-policies.md) är konfigurerade för att söka igenom sådana nedladdningar är nedladdnings bar fil markerad. 
     
-   - Om webbadressen anses säker, användaren tas till webbplatsen.
+   - Om URL: en anses vara säker kommer användaren till webbplatsen.
       
-   - Om URL-kontrollen misslyckas utlöses inte skyddet för säkra länkar. På skrivbordsklienterna kommer användaren att varnas innan du fortsätter till webbplatsen.
+   - Om webb adress kontrollen inte fungerar utlöses inte säkra länkar. Användaren får ett varnings meddelande innan de fortsätter genom till webbplatsen.
       
 > [!NOTE]
-> Det kan ta flera sekunder i början av varje session att kontrollera att användaren har ATP Safe Links for Office aktiverat. 
+> Det kan ta flera sekunder i början av varje session att kontrol lera att användaren har Safet ATP-Länkar för Office. 
       

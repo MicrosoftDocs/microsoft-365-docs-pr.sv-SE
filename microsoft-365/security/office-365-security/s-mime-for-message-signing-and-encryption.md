@@ -15,14 +15,17 @@ search.appverid:
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Administratörer kan lära sig att använda S/MIME (Secure/Multipurpose Internet Mail Extensions) i Exchange Online för att kryptera e-post och signera dem digitalt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ca865fa8ef658b4715d18e09fe9cbc1cffb201e6
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 8dce3e3fa3d24e1773f51f96e19a58d8a3b2efce
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845932"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200613"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME för meddelande signering och kryptering i Exchange Online
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 S/MIME (Secure/Multipurpose Internet Mail Extensions) är en allmänt godkänd metod (eller mer exakt ett protokoll) för att skicka digitalt signerade och krypterade meddelanden. Med S/MIME kan du kryptera e-post och signera dem digitalt. När du använder S/MIME med ett e-postmeddelande kan de personer som får meddelandet att vara säker på att det som visas i Inkorgen är det exakta meddelandet som börjar med avsändaren. Det hjälper också personer som får meddelanden att vara säker på att meddelandet kommer från den specifika avsändaren och inte från någon som är inloggad som avsändare. För att göra det här är S/MIME för kryptografiska säkerhets tjänster, till exempel för meddelandeautentisering, meddelande integritet och oavvislig het (med hjälp av digitala signaturer). Den förbättrar också integritets-och data säkerhet (med kryptering) för elektroniska meddelanden. En mer komplett bakgrund om historik och arkitektur för S/MIME-kontexten för e-post finns i [förstå S/MIME](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65)).
 

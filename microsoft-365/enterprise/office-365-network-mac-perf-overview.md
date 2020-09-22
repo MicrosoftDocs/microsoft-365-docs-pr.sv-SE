@@ -3,7 +3,7 @@ title: Nätverks anslutning i Microsoft 365 Admin Center (för hands version)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/17/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Översikt över nätverks anslutningar i Microsoft 365 Admin Center (för hands version)
-ms.openlocfilehash: 644efe53e862f6bbe98be7dca889bc3637084521
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: a51cfba962ff884afa634473c0523e49a92a56f5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171368"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200803"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Nätverks anslutning i Microsoft 365 Admin Center (för hands version)
 
@@ -63,7 +63,7 @@ Mät exempel och Office-platser bör komma att visas i 24 timmar efter att dessa
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. samla in test rapporter manuellt med testverktyget Microsoft 365 Network Connectivity
 
-För det här alternativet måste du identifiera en person på varje plats. Be dem gå till [Microsoft 365-nätverks anslutnings test](https://connectivity.office.com) på en Windows-dator som de har administratörs behörighet för. På webbplatsen måste de logga in på sitt Office 365-konto för samma organisation som du vill visa resultatet. Sedan klickar de på Kör test. Under testet finns ett hämtat anslutnings test-EXE. De måste öppna och köra det också. När testerna är klara laddas test resultatet till Office 365.
+För det här alternativet måste du identifiera en person på varje plats. Be dem gå till [Microsoft 365-nätverks anslutnings test](https://connectivity.office.com) på en Windows-dator där de har administratörs behörighet. På webbplatsen måste de logga in på sitt Office 365-konto för samma organisation som du vill visa resultatet. Då ska de klicka på **Kör test**. Under testet finns ett hämtat anslutnings test-EXE. De måste öppna och köra det också. När testerna är klara laddas test resultatet till Office 365.
 
 Test rapporter länkas till en plats om den har lagts till med informationen i LAN-undernätet, annars visas de endast på ort platsen.
 
@@ -174,7 +174,7 @@ Microsoft 365-tjänstens front dörr är en start adress i Microsofts globala n�
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>Vad är en optimal tjänst i Microsoft 365-tjänsten?
 
-En optimal Microsoft 365-tjänst front dörr är en som ligger närmast ditt nätverks uttag, vanligt vis i staden eller i Metro-området. Använd [microsoft 365 Connectivity test](office-365-network-mac-perf-onboarding-tool.md) för att bestämma platsen för din användning av Microsoft 365-tjänsten och optimal tjänstens front dörr. Om det är optimalt att använda verktyget kan du ansluta till Microsofts globala nätverk.
+En optimal Microsoft 365-tjänst front dörr är en som ligger närmast ditt nätverks uttag, vanligt vis i staden eller i Metro-området. Använd [microsoft 365 Connectivity Test Tool (för hands version)](office-365-network-mac-perf-onboarding-tool.md) för att bestämma platsen för din användning av Microsoft 365-tjänsten och optimal tjänstens främre dörr. Om det är optimalt att använda verktyget kan du ansluta till Microsofts globala nätverk.
 
 ### <a name="what-is-an-internet-egress-location"></a>Vad är ett avgångs läge för Internet?
 
@@ -186,8 +186,6 @@ Avsluts platsen för Internet är den plats där nätverks trafiken avslutar dit
 
 [Microsoft 365 Network Assessment (för hands version)](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 anslutnings test i M365 administrations Center (för hands version)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 Connectivity (för hands version)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 nätverks anslutningar (för hands version)](office-365-network-mac-location-services.md)
-
-[Microsoft 365-testverktyg (för hands version)](office-365-network-mac-perf-onboarding-tool.md)

@@ -16,14 +16,17 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: För att det ska vara lätt att skydda användar förtroendet för användning av e-post har Microsoft infört olika principer och teknologier som hjälper våra användare att hjälpa dig.
-ms.openlocfilehash: 74389d3b975a0ffaebdc1619be40fd3ac74d72f4
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: e9389d52ee1d6c1c0bbab8630778749a6ed6005f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652663"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199583"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Tjänster för ej kunder som skickar e-post till Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 E-POSTMISSBRUK, skräp post och bedräglig e-post (phishing) fortsätter att belasta hela e-postekoet. Microsoft har ett flertal principer och teknologier för att skydda våra användare för att under lätta användar förtroendet för användning av e-post. Microsoft förstår att legitim e-post inte bör påverkas negativt. Därför har vi fastställt en svit med tjänster för att hjälpa avsändarna att kunna skicka e-post till Microsoft 365-användare genom att proaktivt hantera sitt sändnings rykte.
 

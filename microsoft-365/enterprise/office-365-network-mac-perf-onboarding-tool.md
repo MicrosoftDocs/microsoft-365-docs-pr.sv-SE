@@ -1,9 +1,9 @@
 ---
-title: Microsoft 365-test för nätverks anslutning (för hands version)
+title: Microsoft 365-testverktyg (för hands version)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/17/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,15 +13,15 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Microsoft 365-test för nätverks anslutning (för hands version)
-ms.openlocfilehash: 40a46ecb39366c64c99077e90bb35c5056f36b9d
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+description: Microsoft 365-testverktyg (för hands version)
+ms.openlocfilehash: 72f42a71ec44d165a24187edaf03aa62d330479b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171356"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200823"
 ---
-# <a name="microsoft-365-network-connectivity-test-preview"></a>Microsoft 365-test för nätverks anslutning (för hands version)
+# <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Microsoft 365-testverktyg (för hands version)
 
 Test verktyget för Microsoft 365 Network Connectivity finns på <https://connectivity.office.com> . Det är ett Adjunct verktyg för nätverks utvärdering och nätverks information som är tillgänglig i administrations centret för Microsoft 365 under **tillståndet |. Menyn anslutningar** .
 
@@ -249,7 +249,7 @@ Det är för närvarande en för hands version och vi planerar att tillhandahål
 
 ### <a name="what-is-required-to-run-the-advanced-test-client"></a>Vad krävs för att köra den avancerade test klienten?
 
-Den avancerade test klienten kräver .NET Core 3,1-datorprogram. Om du kör den avancerade test klienten utan att vara installerad kommer du till [sidan .net Core 3,1 installations program](https://dotnet.microsoft.com/download/dotnet-core/3.1). Kontrol lera att du installerar Skriv bords miljön och inte är SDK, eller ASP.NET Core-körningsmiljön som är högre upp på sidan. Du måste ha administratörs behörigheter för att installera .NET Core. 
+Den avancerade test klienten kräver .NET Core 3,1-datorprogram. Om du kör den avancerade test klienten utan att vara installerad kommer du till [sidan .net Core 3,1 installations program](https://dotnet.microsoft.com/download/dotnet-core/3.1). Kontrol lera att du installerar Skriv bords miljön och inte är SDK, eller ASP.NET Core-körningsmiljön som är högre upp på sidan. Du måste ha administratörs behörigheter för att installera .NET Core.
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>Vad är Microsoft 365-tjänstens front dörr?
 
@@ -267,7 +267,7 @@ Avsluts platsen för Internet är den plats där nätverks trafiken avslutar dit
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Rekommendationer för nätverks prestanda i Microsoft 365 Admin Center (för hands version)](office-365-network-mac-perf-overview.md)
+[Nätverks anslutning i Microsoft 365 Admin Center (för hands version)](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365 nätverks prestanda (för hands version)](office-365-network-mac-perf-insights.md)
 

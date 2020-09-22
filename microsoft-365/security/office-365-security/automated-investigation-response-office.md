@@ -16,14 +16,17 @@ ms.collection: M365-security-compliance
 ms.date: 08/21/2020
 description: Få en översikt över automatiserade undersökningar och svars funktioner i Office 365 Avancerat skydds plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 27a2330d5f1ff339aabf6a0fccb94a15dec30852
-ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
+ms.openlocfilehash: d6793793a663e562b05df7e8458a6a8933e5ee47
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2020
-ms.locfileid: "46860727"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200351"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>En översikt över automatiserad undersökning och svar (AIR) i Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 När säkerhets varningar utlöses är det upp till din säkerhets åtgärds grupp för att titta på dessa meddelanden och vidta åtgärder för att skydda din organisation. Ibland kan säkerhets Operations teamen bli försäkrade av volymen av de larm som utlöses. Automatiserade undersökningar och svar (AIR) i Office 365 Avancerat skydd (Office 365 ATP) kan hjälpa dig. 
 
@@ -150,6 +153,6 @@ Till exempel har en organisation ställt in ett sätt för sin säkerhets åtgä
 
 ## <a name="see-also"></a>Se även
 
-- [Microsoft 365-översikt](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [Översikt över Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
 - [Automatiserad undersökning och svars funktioner i Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide)

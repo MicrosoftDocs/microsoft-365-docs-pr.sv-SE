@@ -14,14 +14,17 @@ ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa om olika typer av mottagar objekt i fristående Exchange Online Protection (EOP).
-ms.openlocfilehash: 8ee3821d05a4d777227e90c9b6208b3e9f8644a4
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: c277365fb8a5c43108faa15a375af39ecc086eed
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827045"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201747"
 ---
 # <a name="manage-recipients-in-standalone-eop"></a>Hantera mottagare i fristående EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor har stöd för följande typer av mottagare:
 

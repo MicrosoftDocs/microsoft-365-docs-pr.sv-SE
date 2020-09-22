@@ -19,14 +19,17 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan få information om hur de tar bort användare från portalen för åtkomstbegränsade användare i Office 365. Användare läggs till i portalen med åtkomstbegränsade användare för att de skickat utgående skräppost, oftast som ett resultat av kontointrång.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d411cec48ff6704d737850974e832dbe07a3ad3
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: c63d50fcf24e19c6a3265d57ea34fb8ab852c61c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826535"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201561"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Ta bort blockerade användare från portalen med åtkomstbegränsade användare i Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Om en användare överskrider någon av de utgående sändningsgränserna som anges i [tjänstbegränsningarna](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) eller i [utgående skräppostprinciper](configure-the-outbound-spam-policy.md), begränsas användaren från att skicka e-post, men de kan fortfarande ta emot e-post.
 

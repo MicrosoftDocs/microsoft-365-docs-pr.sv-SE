@@ -15,14 +15,17 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Lär dig mer om åtgärder i automatiserad undersökning och svars funktioner i Office 365 Avancerat skydds abonnemang 2.
-ms.openlocfilehash: 761ae38250dc084a248203dd78b66ed18ea9c401
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: c327bdf505b774532600169e9579ffa6acfac1b1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653384"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199907"
 ---
 # <a name="remediation-actions-in-microsoft-365"></a>Reparations åtgärder i Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="remediation-actions"></a>Reparationsåtgärder
 

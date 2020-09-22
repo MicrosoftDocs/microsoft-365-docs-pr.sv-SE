@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Administratörer kan läsa om vilka administratörs gransknings rapporter som är tillgängliga i Exchange Online Protection (EOP)
-ms.openlocfilehash: ab2c1af7197094b456d8e1b4151dd42791d992a1
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 8e5175266cd964a2f2fb721a67f64e709661ce26
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825791"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200339"
 ---
 # <a name="auditing-reports-in-standalone-eop"></a>Granskningsrapporter i fristående EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor kan du använda gransknings rapporter för att uppfylla kraven för regler, efterlevnad och rättslighet för organisationen. Du kan få gransknings rapporter när som helst för att ta reda på vilka ändringar som har gjorts i din EOP-konfiguration. Dessa rapporter kan hjälpa dig att felsöka konfigurations problem eller hitta orsaken till relaterade problem med säkerhet eller efterlevnad.
 

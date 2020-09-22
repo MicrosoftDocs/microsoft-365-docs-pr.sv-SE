@@ -13,14 +13,17 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Lär dig hur du hanterar e-postanvändare i Exchange Online Protection (EOP), inklusive att använda Directory-synkronisering, UK och PowerShell för att hantera användare.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 64b7effadd96b6dc025677139c4303acd538dadb
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 56e6f8955b5993fb4b5064aa92cdde80a4c67ffe
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827081"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201789"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Hantera e-postanvändare i fristående EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor är e-postanvändarna grundläggande användar konto. En e-postanvändare har kontoautentiseringsuppgifter i din fristående EOP-organisation och kan komma åt resurser (har tilldelade behörigheter). E-postadressen till en e-postanvändare är extern (till exempel i din lokala e-postmiljö).
 
@@ -273,7 +276,7 @@ Skaffa nödvändiga behörigheter och förbereda för Active Directory-synkronis
 
 3. [Välj vilken Installations typ som ska användas för Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation):
 
-   - [Uttrycklig](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)
+   - [Express](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)
 
    - [Företagsanpassade](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom)
 

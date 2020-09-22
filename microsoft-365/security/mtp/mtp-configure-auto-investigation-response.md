@@ -14,14 +14,17 @@ ms.collection: M365-security-compliance.
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: 81ad3ab0d3bc20a49128fa6ed45ff62195b32bc7
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: f7bcfa4f08bee51408de33964f1dfd1e1db3bd33
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47963865"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199751"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>Konfigurera automatisk granskning och svars funktioner i Microsoft Threat Protection
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Microsoft Threat Protection inkluderar kraftfulla [automatiserade undersökningar och svars funktioner](mtp-autoir.md) som kan spara säkerhets arbets gruppen på mycket tid och ansträngning. Med själv lagning kan de här funktionerna efterlikna de steg som en säkerhetsanalytiker vidtar för att undersöka och reagera på hot, bara snabbare och med större kapacitet att bygga ut. I den här artikeln beskrivs hur du konfigurerar automatisk undersökning och svar i Microsoft Threat Protection.
 

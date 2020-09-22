@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om de avancerade inställningarna för skräp post filter (ASF) som är tillgängliga i principer för skräp post överföring i Exchange Online Protection (EOP).
-ms.openlocfilehash: 6a670a9aba2204035646840d0f128ca9a90ece15
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: f2c58349bc1ffd2bb231eadf83bd4d70582925a2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867227"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199953"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Avancerade inställningar för skräp post filter (ASF) i EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!NOTE]
 > ASF-inställningar som för närvarande är tillgängliga i principer för skräp post är i föråldrade. Vi rekommenderar att du inte använder dessa inställningar i principer för skräp post. Funktionerna i dessa ASF-inställningar läggs in i andra delar av filtrerings stacken. Mer information finns i [EOP princip inställningar för skräp post](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).

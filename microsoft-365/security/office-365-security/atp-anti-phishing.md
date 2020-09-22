@@ -17,14 +17,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig mer om nätfiske-funktioner som är en del av Office 365 Avancerat skydd för att skydda råvaru & Spear nätfiske-attacker.
-ms.openlocfilehash: 238c841ec7ba45fe2675598a29979b550c1c4fa3
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: db1587d0cd60dc94e79b1498e000e63aa2a5ceac
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653371"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199069"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>ATP-funktioner för skydd mot nätfiske i Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ATP-nätfiske är en del av [Office 365 Avancerat skydd](office-365-atp.md). ATP-nätfiske tillämpar en uppsättning dator utbildnings modeller tillsammans med algoritmerna för identifiering av personifieringsnivå för inkommande meddelanden för att skydda råvaru-och Spear nät fiske attacker. Alla meddelanden är föremål för en omfattande uppsättning maskin utbildnings modeller utbildade för att upptäcka nät fiske meddelanden, tillsammans med en uppsättning avancerade algoritmer som används för att skydda mot olika användar-och domän användnings attacker. ATP-nätfiske skyddar din organisation utifrån de principer som anges av globala eller säkerhets administratörer för Office 365.
   

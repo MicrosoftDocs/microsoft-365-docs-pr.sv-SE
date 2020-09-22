@@ -14,14 +14,17 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln får du lära dig hur du flyttar domäner och inställningar från en Microsoft Exchange Online Protection (EOP)-organisation till en annan.
-ms.openlocfilehash: a33042631a5a5371e2d120f76f49cb2a46a638a3
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 141fb85bb7120f4e547c27f399d254847b19e3c2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827695"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200509"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Flytta domäner och inställningar från en EOP-organisation till en annan
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Du kan ibland behöva dela en Microsoft Exchange Online Protection-organisation (EOP) i två separata organisationer, slå samman två organisationer till en eller flytta domän-och EOP-inställningar från en organisation till en annan organisation. Att förflytta dig från en EOP-organisation till en andra EOP-organisation kan vara utmanande, men med ett fåtal grundläggande Windows PowerShell-skript och en liten mängd förberedelse kan detta uppnås med ett relativt litet underhålls fönster.
 

@@ -3,7 +3,7 @@ title: Microsoft 365 Network Assessment (för hands version)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/17/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Network Assessment (för hands version)
-ms.openlocfilehash: 21fb9515ea1621225cffbe23fe87d0daeb5265de
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 3d80130dbf9ca41342bc1a01fe3ce992303efb48
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104552"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200753"
 ---
 # <a name="microsoft-365-network-assessment-preview"></a>Microsoft 365 Network Assessment (för hands version)
 
@@ -101,8 +101,6 @@ Vi beräknar ett medelvärde för resultatet från dessa UDP-mått för en skala
 
 [Microsoft 365 nätverks prestanda (för hands version)](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365 anslutnings test i M365 administrations Center (för hands version)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365-testverktyg (för hands version)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 nätverks anslutningar (för hands version)](office-365-network-mac-location-services.md)
-
-[Microsoft 365-testverktyg (för hands version)](office-365-network-mac-perf-onboarding-tool.md)

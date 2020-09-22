@@ -1,7 +1,7 @@
 ---
-title: Felsöka serviceproblem för Microsoft Threat Protection
-description: Hitta lösningar och lösa information om kända problem med Microsoft Threat Protection
-keywords: felsöka Microsoft Threat Protection, felsöka, Azure ATP, problem, tillägg, inställningssida
+title: Felsöka problem med Microsoft Threat Protection-tjänsten
+description: Hitta lösningar och Undvik kända problem med Microsoft Threat Protection
+keywords: felsöka Microsoft Threat Protection, felsöka, Azure ATP, problem, tillägg, sidan Inställningar
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,32 +19,35 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e19e5758f4d42799c96ecec51fd6295e3da19f9b
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: bcf5b79fcd2fdf0a5af5648e6f6b7ea65d69594c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844924"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201297"
 ---
-# <a name="troubleshoot-microsoft-threat-protection-service-issues"></a>Felsöka serviceproblem för Microsoft Threat Protection
+# <a name="troubleshoot-microsoft-threat-protection-service-issues"></a>Felsöka problem med Microsoft Threat Protection-tjänsten
 
-**Gäller:**
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
+**Gäller för:**
 - Microsoft Hotskydd
 
-I det här avsnittet beskrivs problem som kan uppstå när du använder Microsoft Threat Protection-tjänsten.
+I det här avsnittet åtgärdas problem som kan uppstå när du använder tjänsten Microsoft Threat Protection.
 
 
-## <a name="i-dont-see-microsoft-threat-protection-content"></a>Jag ser inte Microsoft Threat Protection-innehåll
-Om du inte ser funktioner i navigeringsfönstret, till exempel Incidenter, Åtgärdscenter eller Jakt i portalen, måste du kontrollera att din klient har rätt licenser. 
+## <a name="i-dont-see-microsoft-threat-protection-content"></a>Jag ser inte innehåll från Microsoft Threat Protection
+Om du inte ser funktionerna i navigerings fönstret, till exempel händelser, åtgärds Center eller jakt på din portal, måste du verifiera att klient organisationen har rätt licenser. 
 
-Mer information finns i [Förutsättningar](prerequisites.md).
+För mer information, se [förutsättningar](prerequisites.md).
 
-## <a name="azure-atp-alerts-are-not-showing-up-in-the-microsoft-threat-protection-incidents"></a>Azure ATP-aviseringar visas inte i Microsoft Threat Protection-incidenterna
-Om du har Azure ATP distribuerat i din miljö men inte ser Azure ATP-aviseringar som en del av Microsoft Threat Protection-incidenter måste du se till att Microsoft Cloud App Security och Azure ATP-integrering är aktiverad. 
+## <a name="azure-atp-alerts-are-not-showing-up-in-the-microsoft-threat-protection-incidents"></a>Azure ATP-meddelanden visas inte i Microsofts skydds händelser för hotet
+Om du har distribuerat Azure ATP i din miljö men inte ser Azure ATP-aviseringar som en del av Microsoft Threat Protection-incidenter måste du kontrol lera att Microsoft Cloud App Security och Azure ATP-integreringen är aktive rad. 
 
-Mer information finns i [Azure ATP-integrering](https://docs.microsoft.com/cloud-app-security/aatp-integration).
+Mer information finns i [integreringen av Azure ATP](https://docs.microsoft.com/cloud-app-security/aatp-integration).
 
-## <a name="where-is-the-settings-page-for-turning-the-service-on"></a>Var finns inställningssidan för att slå på tjänsten?
-Om du vill aktivera Microsoft Threat Protection öppnar du **Inställningar** från navigeringsfönstret i Microsoft 365-säkerhetscentret. Det här [navigeringsobjektet](mtp-enable.md#check-license-eligibility-and-required-permissions)visas bara om du har behörighet och licenser .
+## <a name="where-is-the-settings-page-for-turning-the-service-on"></a>Var är inställnings sidan för att aktivera tjänsten?
+Aktivera åtkomst **Inställningar** för Microsoft Threat från navigerings fönstret i Microsoft 365 säkerhets Center. Det här navigerings objektet visas bara om du har [behörighet och licenser för nödvändig](mtp-enable.md#check-license-eligibility-and-required-permissions)installation.
  
 

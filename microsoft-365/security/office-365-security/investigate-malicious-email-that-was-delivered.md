@@ -19,14 +19,17 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du använder hot-och svars funktioner för att hitta och undersöka skadlig e-post.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 91f16c3aa7ba98467c52fb25e0597f346a810003
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 120cc32a2736858a0f0d99ab37f1d51c70a6071c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949270"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201919"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Undersök skadlig e-post som har levererats i Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Med [Office 365 Avancerat skydd](office-365-atp.md) kan du undersöka aktiviteter som ger folk i din organisation till risk och att vidta åtgärder för att skydda din organisation. Om du till exempel är en del av din organisations säkerhets team kan du hitta och undersöka misstänkta e-postmeddelanden som har levererats. Du kan göra det med hjälp av [Threat Explorer (eller identifieringar i real tid)](threat-explorer.md).
 

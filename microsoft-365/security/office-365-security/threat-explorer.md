@@ -17,14 +17,17 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du använder Utforskaren och real tids identifiering i &amp; Center för säkerhets kontroll för att undersöka och reagera på hot effektivt och effektivt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4220c850e5ef7f830f7fc6ec57bb220cca29eaf4
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: f6df9ce21f29cdeaf4943ba930668420a24344ca
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47322046"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201871"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer och real tids identifiering
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Om din organisation har [office 365 Avancerat skydd](office-365-atp.md) (Office 365 ATP) och du har de [nödvändiga behörigheterna](#required-licenses-and-permissions)har du antingen **Explorer** **-eller real tids identifiering** (tidigare *real tids rapporter* – [se vad som är nytt](#new-features-in-threat-explorer-and-real-time-detections)!). Gå till **Threat Management**i säkerhets & efterlevnad och välj sedan **Utforskaren** _eller_ **identifiering av real tid**.
 

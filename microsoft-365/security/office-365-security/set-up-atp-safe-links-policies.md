@@ -17,14 +17,17 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Konfigurera principer för säkra Länkar för att skydda din organisation från skadliga länkar i Word-, Excel-, PowerPoint-och Visio-filer samt i e-postmeddelanden.
-ms.openlocfilehash: 121de6137e392ae0c66d9961fd2138f003a9d9fa
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 8c72473a9b1337e1d932ec7235ed12e79f0c48f6
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307767"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201765"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Konfigurera principer för säkra Office 365 ATP-länkar
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!IMPORTANT]
 > Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](office-365-atp.md). Om du är hem användare letar efter information om säkra länkar i Outlook kan du läsa mer i [avancerad Outlook.com säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).

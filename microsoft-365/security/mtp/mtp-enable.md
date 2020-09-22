@@ -1,7 +1,7 @@
 ---
-title: Aktivera Microsoft Threat Protection i Microsoft 365-säkerhetscentret
-description: Lär dig hur du aktiverar Microsoft Threat Protection och börjar integrera din säkerhetsincident och ditt säkerhetssvar.
-keywords: komma igång, aktivera MTP, Microsoft Threat Protection, M365, säkerhet, dataplats, nödvändiga behörigheter, licensberättigande, inställningssida
+title: Aktivera skydd mot Microsoft Threat i säkerhets Center för Microsoft 365
+description: Lär dig hur du aktiverar skydd mot Microsoft Threats och hur du integrerar dina säkerhets tillbud och svar.
+keywords: komma igång, aktivera MTP, Microsoft Threat Protection, M365, säkerhet, data plats, behörigheter, licens kvalificering, sidan Inställningar
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,88 +19,91 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b6ac30f7e32bbec80952ad4f2104032886b11503
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 65e3a2609bc41ddeda95134874e5873e184a2a54
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016349"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201165"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Aktivera Microsoft Hotskydd
 
-**Gäller:**
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
+**Gäller för:**
 - Microsoft Hotskydd
 
-[Microsoft Threat Protection](microsoft-threat-protection.md) förenar din incidentsvarsprocess genom att integrera viktiga funktioner i Microsoft Defender Advanced Threat Protection (ATP), Office 365 ATP, Microsoft Cloud App Security och Azure ATP. Den här enhetliga upplevelsen ger dig kraftfulla funktioner som du kan komma åt i Microsoft 365-säkerhetscentret.
+[Skydd mot Microsoft-hotet](microsoft-threat-protection.md) interagerar med att integrera viktiga funktioner i Microsoft Defender Avancerat skydd (ATP), Office 365 ATP, Microsoft Cloud App Security och Azure ATP. Denna enhetliga upplevelse lägger till kraftfulla funktioner som du kan komma åt i Microsoft 365 Security Center.
 
-Microsoft Threat Protection aktiveras automatiskt när berättigade kunder med de behörigheter som krävs besöker Microsoft 365-säkerhetscenter. Läs den här artikeln om du vill förstå olika förutsättningar och hur Microsoft Threat Protection etableras.
+Skydd mot Microsoft Threat aktive ras automatiskt när berättigade kunder med nödvändig behörighet gå till Microsoft 365 säkerhets Center. Läs den här artikeln för att förstå olika förutsättningar och hur Microsoft Threat Protection etableras.
 
-## <a name="check-license-eligibility-and-required-permissions"></a>Kontrollera behörighet för licenser och nödvändiga behörigheter
-En licens till en Microsoft 365-säkerhetsprodukt ger dig i allmänhet rätt att använda Microsoft Threat Protection i Microsoft 365-säkerhetscenter utan extra licenskostnader. Vi rekommenderar att du skaffar en Microsoft 365 E5-, E5 Security-, A5- eller A5-säkerhetslicens eller en giltig kombination av licenser som ger åtkomst till alla tjänster som stöds.
+## <a name="check-license-eligibility-and-required-permissions"></a>Kontrol lera licens krav och nödvändiga behörigheter
+En licens till en Microsoft 365-säkerhetsprodukt ger generellt rätt att använda Microsoft Threat Protection i Microsoft 365 säkerhets Center utan extra licens kostnad. Vi rekommenderar att få en Microsoft 365 E5-, E5-säkerhet, A5-eller A5-säkerhetslicens eller en giltig kombination av licenser som ger till gång till alla tjänster som stöds.
 
-Detaljerad licensinformation [finns i licenskraven](prerequisites.md#licensing-requirements).
+Mer detaljerad information om licensiering finns [i licens kraven](prerequisites.md#licensing-requirements).
 
-### <a name="check-your-role"></a>Kontrollera din roll
-Du måste vara **global administratör** eller **säkerhetsadministratör** i Azure Active Directory för att kunna aktivera Microsoft Threat Protection. [Visa dina roller i Azure AD](https://docs.microsoft.com//azure/active-directory/users-groups-roles/directory-manage-roles-portal)
+### <a name="check-your-role"></a>Kontrol lera din roll
+Du måste vara **Global administratör** eller **säkerhets administratör** i Azure Active Directory för att aktivera skydd mot Microsoft Threat. [Visa dina roller i Azure AD](https://docs.microsoft.com//azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## <a name="supported-services"></a>Tjänster som stöds
-Microsoft Threat Protection sammanställer data från de olika tjänster som stöds som du redan har distribuerat. Det kommer att bearbeta och lagra data centralt för att identifiera nya insikter och göra centraliserade svarsarbetsflöden möjliga. Det gör detta utan att påverka befintliga distributioner, inställningar eller data som är associerade med de integrerade tjänsterna.
+Microsoft Threat Protection samlar data från olika tjänster som du redan har distribuerat. Den bearbetar och lagrar data centralt för att identifiera nya insikter och göra centraliserade arbets flöden möjligt. Det gör det utan att befintliga distributioner, inställningar eller data som är kopplade till de integrerade tjänsterna påverkas.
 
-För att få bästa möjliga skydd och optimera Microsoft Threat Protection rekommenderar vi att du distribuerar alla tillämpliga tjänster som stöds i nätverket. Mer information [finns i om hur du distribuerar tjänster som stöds](deploy-supported-services.md).
+För att få bästa möjliga skydd och optimera Microsoft Threat Protection rekommenderar vi att du distribuerar alla tillämpliga tjänster som stöds på ditt nätverk. Mer information finns i [om att distribuera tjänster som stöds](deploy-supported-services.md).
 
-## <a name="before-starting-the-service"></a>Innan du påbörjar tjänsten
-Innan du aktiverar tjänsten visar Microsoft 365-säkerhetscentret ([security.microsoft.com](https://security.microsoft.com)) sidan Microsoft Threat Protection-inställning när du väljer **Incidenter,** **Åtgärdscenter**eller **Jakt** i navigeringsfönstret. Dessa navigeringsobjekt visas inte om du inte kan använda Microsoft Threat Protection.
+## <a name="before-starting-the-service"></a>Innan tjänsten startas
+Innan du aktiverar tjänsten visar Microsoft 365 säkerhets Center ([Security.Microsoft.com](https://security.microsoft.com)) Sidan skydds inställningar för Microsoft Threat när du väljer **händelser**, **Åtgärds Center**eller **jakt** från navigerings fönstret. Dessa navigerings objekt visas inte om du inte är behörig att använda skydd mot Microsoft Threat.
 
-![Bild av inställningssidan för Microsoft Threat Protection som visas om Microsoft Threat Protection inte har aktiverats i ](../../media/mtp-enable/mtp-settings.png)
- *Microsoft Threat Protection-inställningarna i Microsoft 365-säkerhetscenter*
+![Bild av sidan Microsoft Threat Protection Settings som visas om Microsoft Threat Protection inte har Aktiver ATS för ](../../media/mtp-enable/mtp-settings.png)
+ *Microsoft Threat Protection-inställningar i Microsoft 365 Security Center*
 
-## <a name="starting-the-service"></a>Starta tjänsten
-Om du vill aktivera Microsoft Threat Protection väljer du Aktivera **Microsoft Threat Protection** och tillämpar ändringen. Du kan också komma åt det här alternativet genom att välja **Inställningar** ([security.microsoft.com/settings](https://security.microsoft.com/settings)) i navigeringsfönstret och sedan välja **Microsoft Threat Protection**.
-
->[!NOTE]
->Om du inte ser **Inställningar** i navigeringsfönstret eller inte kunde komma åt sidan kontrollerar du dina behörigheter och licenser.
-
-### <a name="data-center-location"></a>Plats för datacenter
-Microsoft Threat Protection lagrar och bearbetar data på [samma plats som används av Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Om du inte har Microsoft Defender ATP väljs en ny datacenterplats automatiskt baserat på platsen för aktiva Microsoft 365-säkerhetstjänster. Den valda datacenterplatsen visas på skärmen. 
-
-Välj **Behöver du hjälp?** i Microsoft 365-säkerhetscentret för att kontakta Microsoft-supporten om etablering av Microsoft Threat Protection på en annan datacenterplats. 
+## <a name="starting-the-service"></a>Startar tjänsten
+Om du vill aktivera skyddet mot Microsoft Threats väljer du **aktivera Microsoft Threat Protection** och tillämpa ändringen. Du kan också komma åt det här alternativet genom att välja **Inställningar** ([Security.Microsoft.com/settings](https://security.microsoft.com/settings)) i navigerings fönstret och sedan välja **Microsoft Threat Protection**.
 
 >[!NOTE]
->Microsoft Defender ATP etablerar automatiskt bestämmelser i EU-datacenter när de aktiveras via Azure Security Center. Microsoft Threat Protection etableras automatiskt i samma EU-datacenter för kunder som har etablerat Microsoft Defender ATP på det här sättet. 
+>Om du inte ser **Inställningar** i navigerings fönstret eller inte har åtkomst till sidan kontrollerar du dina behörigheter och licenser.
 
-### <a name="confirm-that-the-service-is-on"></a>Bekräfta att tjänsten är aktiverad
-När tjänsten har etablerats läggs den till:
+### <a name="data-center-location"></a>Plats för data Center
+Microsoft Threat Protection lagrar och bearbetar data på [samma plats som Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Om du inte har Microsoft Defender ATP, väljs automatiskt en ny data Center plats som baseras på platsen för den aktiva Microsoft 365-säkerhetstjänsten. Den valda data Center platsen visas på skärmen. 
+
+Välj **behöver du hjälp?** i Microsoft 365 säkerhets Center kan du kontakta Microsoft support om att tillhandahålla Microsoft Threat Protection på en annan plats i data centret. 
+
+>[!NOTE]
+>Microsoft Defender ATP tillhandahåller automatiskt bestämmelser i EU-datacenter när de aktive ras via Azure Security Center. Microsoft Threat Protection tillhandahåller automatiskt samma EU-datacenter för kunder som har etablerat Microsoft Defender ATP på det här sättet. 
+
+### <a name="confirm-that-the-service-is-on"></a>Kontrol lera att tjänsten är på
+När tjänsten har etablerats lägger den till:
 
 - [Hantering av incidenter](incidents-overview.md)
-- Ett åtgärdscenter för hantering av [automatisk undersökning och svar](mtp-autoir.md)
-- [Avancerad jaktkapacitet](advanced-hunting-overview.md)
+- Ett åtgärds Center för att hantera [Automatisk undersökning och svar](mtp-autoir.md)
+- [Avancerade jakt](advanced-hunting-overview.md) funktioner
 
-![Bild av navigeringsfönstret i Microsoft 365 security center med Microsoft Threat Protection-funktioner ](../../media/mtp-enable/mtp-on.png)
- *i Microsoft 365-säkerhetscenter med incidenthantering och andra funktioner för Microsoft Threat Protection*
+![Bild av navigerings fönstret i Microsoft 365 säkerhets Center med Microsoft Threat Protection ](../../media/mtp-enable/mtp-on.png)
+ *, Microsoft 365 säkerhets Center med problem hantering och andra hot Protection-funktioner från Microsoft*
 
-### <a name="getting-azure-atp-data"></a>Hämta Azure ATP-data
-Om du vill dela Azure ATP-data med Microsoft Threat Protection kontrollerar du att Microsoft Cloud App Security och Azure ATP-integrering är aktiverat. [Läs mer om den här integrationen](https://docs.microsoft.com/cloud-app-security/aatp-integration)
+### <a name="getting-azure-atp-data"></a>Hämta data för Azure ATP
+Om du vill dela Azure ATP-data med Microsoft Threat Protection kontrollerar du att Microsoft Cloud App Security och Azure ATP-integreringen är aktiverat. [Läs mer om denna integrering](https://docs.microsoft.com/cloud-app-security/aatp-integration)
 
 
-## <a name="turn-off-microsoft-threat-protection"></a>Inaktivera Microsoft Threat Protection
-Om du vill sluta använda Microsoft Threat Protection går du till **Inställningar**  >  **microsoft threat protection**  >  **opt-in / opt-out** i Microsoft 365 security center. Avmarkera **Aktivera Microsoft Threat Protection** och tillämpa ändringarna.
+## <a name="turn-off-microsoft-threat-protection"></a>Inaktivera skydd mot Microsoft Threat
+Om du vill sluta använda skydd mot Microsoft kan du gå till **Inställningar**  >  **Microsoft Threat Protection**  >  **och välja bort** Microsoft 365 säkerhets Center. Avmarkera **aktivera Microsoft Threat Protection** och tillämpa ändringarna.
 
-Motsvarande funktioner kommer att tas bort från Microsoft 365 säkerhetscenter.
+Motsvarande funktioner tas bort från Microsoft 365 säkerhets Center.
 
 ## <a name="get-assistance"></a>Få hjälp
 
-Om du vill ha svar på de vanligaste frågorna om hur du aktiverar Microsoft Threat Protection [läser du vanliga frågor och svar](mtp-enable-faq.md).
+Om du vill få svar på de vanligaste frågorna om att aktivera skydd mot Microsoft Threat kan du [läsa vanliga frågor och svar](mtp-enable-faq.md).
 
-Microsofts supportpersonal kan hjälpa till att etablera eller avetablera tjänsten och relaterade resurser på din klientorganisation. Om du behöver hjälp väljer du **Behöver du hjälp?** NÃ¤s Ã¤n ã¤nder du support nÃ¤nder du Microsoft Threat Protection.
+Microsofts support personal kan tillhandahålla eller avetablera tjänsten och relaterade resurser för din klient organisation. För mer information, Välj **behöver du hjälp?** i Microsoft 365 Security Center. När du kontaktar supporten kan du nämna Microsoft Threat Protection.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
 - [Vanliga frågor och svar](mtp-enable-faq.md)
-- [Licenskrav och andra förutsättningar](prerequisites.md)
+- [Licens krav och andra förutsättningar](prerequisites.md)
 - [Distribuera tjänster som stöds](deploy-supported-services.md)
-- [Översikt över Microsoft Threat Protection](microsoft-threat-protection.md)
+- [Microsoft Threat Protection-översikt](microsoft-threat-protection.md)
 - [Översikt över Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Översikt över Office 365 ATP](../office-365-security/office-365-atp.md)
-- [Översikt över Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
+- [Office 365 ATP-översikt](../office-365-security/office-365-atp.md)
+- [Säkerhets översikt för Microsoft Cloud App](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
 - [Översikt över Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
-- [Microsoft Defender ATP-datalagring](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+- [Microsoft Defender ATP-data lagring](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)

@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig mer om hur EOP och Office 365 skyddar dig mot skräp post, nätfiske och dataexekveringsskydd genom att lägga till ett säkerhets tips längst upp i e-postmeddelandena.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b4bcfd2bf05f2f5ae7a51fbc2488cb1aa6e7d2c9
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 3da52a8ef2913c30c281fec74f92142847e29792
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949638"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201989"
 ---
 # <a name="safety-tips-in-email-messages"></a>Säkerhetstips i e-postmeddelanden
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Exchange Online Protection (EOP) och Microsoft 365 skyddar dig mot skräp post, nätfiske och skadlig program vara. I dag är vissa av dessa attacker så väl utformade att de ser äkta ut. Det räcker inte med att skicka meddelanden till mappen skräp post. När du sedan checkar in din e-post i Outlook eller Outlook på webben eller en e-postklient kontrollerar EOP automatiskt avsändaren och lägger till ett säkerhets tips längst upp i e-postmeddelandet.
 

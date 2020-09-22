@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Den här artikeln innehåller felsöknings information för problem med att skicka e-post till Inkorgen i Microsoft 365 & metod tips för Mass utskick till Microsoft 365-kunder.
-ms.openlocfilehash: 4243f46746cb21425fc2dc7493c69818f095e71f
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 52b4bb333a92dcaa21f45977b3d59a96053a69c2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307585"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201749"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Felsöka e-post som skickas till Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Den här artikeln innehåller felsöknings information för avsändare som har problem med att skicka e-post till inkorgar i Microsoft 365 och metod tips för Mass utskick till kunder.
 

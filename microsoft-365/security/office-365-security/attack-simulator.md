@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig att använda en angrepps Simulator för att köra simulerade nätfiske och lösen ords attacker i sina Microsoft 365 E5-eller ATP-abonnemang 2-organisationer.
-ms.openlocfilehash: 9fc28cdecc07f5325918e3d5176e52d1051a626c
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: 86d365036daa4f24d2c2e3b8e64b5836e291889f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47426999"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200395"
 ---
 # <a name="attack-simulator-in-atp"></a>Attack Simulator i ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Om din organisation har Office 365-abonnemang 2 för avancerat skydd (ATP), som innehåller [hot undersökningar och svars funktioner](office-365-ti.md), kan du använda angrepps simulatorn i säkerhets & för att köra realistiska angrepp i din organisation. Dessa simulerade attacker kan hjälpa dig att identifiera och hitta sårbara användare innan en verklig attack påverkar din botten linje. Läs den här artikeln om du vill veta mer.
 

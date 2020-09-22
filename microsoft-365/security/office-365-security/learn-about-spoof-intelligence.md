@@ -19,14 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om förfalsknings intelligens i Exchange Online Protection (EOP), där du kan tillåta eller blockera specifika avsändare.
-ms.openlocfilehash: 66cfc419c3e2f3a5dd8ad45cdb9fe651b613679b
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 86771397f0175d389a69c1008e0ac5471697afc5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826583"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199607"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Konfigurera förfalsknings information i EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I Microsoft 365-organisationer med post lådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor skyddas inkommande e-postmeddelanden automatiskt mot förfalskning genom EOP som i oktober 2018. EOP använder förfalsknings intelligens som en del av organisationens allmänna försvar mot nätfiske. Mer information finns i [skydd mot förfalskning i EOP](anti-spoofing-protection.md).
 

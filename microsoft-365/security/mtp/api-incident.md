@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 310e3105c973223ea79373d770eb10f7753b917e
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: ac149ca7263b8ef8bb37a7dd18bf0787a3114b37
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650582"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201309"
 ---
 # <a name="incident-resource-type"></a>Resurs typ för incident
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gäller för:**
 - Microsoft Hotskydd
@@ -38,7 +41,7 @@ ms.locfileid: "47650582"
 
 Metod |Returtyp |Beskrivning
 :---|:---|:---
-[List händelser](api-list-incidents.md) | [Incident](api-incident.md) lista | Få en lista över incidenter.
+[Lista incidenter](api-list-incidents.md) | [Incident](api-incident.md) lista | Få en lista över incidenter.
 [Uppdatera incident](api-update-incidents.md) | [Händelse](api-incident.md) | Uppdatera specifik incident.
 
 

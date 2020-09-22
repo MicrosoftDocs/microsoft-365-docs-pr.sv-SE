@@ -14,14 +14,17 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: Lär dig hur du påskyndar processen att upptäcka och rikta in användar konton med automatiserade undersökningar och svars funktioner i Office 365 Avancerat skydds abonnemang 2.
-ms.openlocfilehash: 5a1dd64a0b30bb230af0d96432ae9542ce0370d8
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: fa648b33180cab7d70348dc4d1d6e64930ecff99
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656915"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201237"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Lösa användar konton med automatisk undersökning och svar
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [Office 365 Avancerat skydds plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2) inkluderar kraftfulla [automatiserade undersökningar och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (Air). Sådana funktioner kan spara din säkerhets åtgärds grupp mycket tid och ansträngning för att hantera hot. Microsoft fortsätter att förbättra säkerhets funktionerna. De senaste lösningarna har förbättrats för att omfatta Playbook (för närvarande för hands version). Läs den här artikeln om du vill ha mer information om säkerhets Playbook. Och se hur det går [fortare att upptäcka och reagera på användarens kompromisser och begränsa omfattningen av intrång till Office 365 ATP](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) .
 

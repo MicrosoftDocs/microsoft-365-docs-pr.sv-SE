@@ -16,14 +16,17 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig mer om de inbyggda alternativen för skräp post, inte skräp post och nätfiske i Outlook på webben (Outlook Web App) i Exchange Online och hur du inaktiverar dessa rapporterings alternativ för användare.
-ms.openlocfilehash: 947f9bb9c1c686b549d83b27c262e86eda0d5008
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 75be22d6ec38ca3c8d11836ea28c7af74b93f14c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826547"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201249"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>Rapportera skräp post och nätfiske i Outlook på webben i Exchange Online
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I Microsoft 365-organisationer med post lådor i Exchange Online kan du använda de inbyggda rapporterings alternativen i Outlook på webben (tidigare Outlook Web App) för att skicka falska positiva (e-postmeddelanden markerade som skräp post), falskt negativ (dålig e-post) och nätfiske-meddelanden till Exchange Online Protection (EOP).
 

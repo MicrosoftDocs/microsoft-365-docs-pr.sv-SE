@@ -1,5 +1,5 @@
 ---
-title: Threat Trackers - Nya och anmärkningsvärda
+title: Hot-Spårare-nya och intressanta
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,92 +15,95 @@ search.appverid:
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
-description: Lär dig mer om Hot Trackers, inklusive nya anmärkningsvärda trackers, för att hjälpa din organisation att hålla koll på säkerhetsfrågor.
-ms.openlocfilehash: 13e8463d88250fe76474311e9df394577949989e
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+description: Lär dig mer om hot Spårare, inklusive nya viktiga Spårare, för att hjälpa din organisation att hålla dig informerad om säkerhets problem.
+ms.openlocfilehash: e4e157e64da92cf3c9178af1223fbc6c85e3fd95
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755070"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201801"
 ---
-# <a name="threat-trackers---new-and-noteworthy"></a>Threat Trackers - Nya och anmärkningsvärda
+# <a name="threat-trackers---new-and-noteworthy"></a>Hot-Spårare-nya och intressanta
 
-[Med office 365-funktioner för hotutredning och hothantering](office-365-ti.md) kan organisationens säkerhetsteam upptäcka och vidta åtgärder mot cybersäkerhetshot. Office 365 Threat Investigation and Response-funktionerna inkluderar hotspårares funktioner, inklusive anmärkningsvärda spårare. Läs den här artikeln om du vill få en översikt över de här nya funktionerna och nästa steg. 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+[Office 365 hot undersökningar och svars](office-365-ti.md) funktioner gör att organisationens säkerhets team kan upptäcka och vidta åtgärder mot Cybersecurity hot. Office 365 hot undersökningar och svars funktioner innehåller funktioner för Threat Spårare, inklusive intressanta spårare. Läs den här artikeln för att få en översikt över de här nya funktionerna och nästa steg. 
 
 > [!IMPORTANT]
-> Office 365 Threat Intelligence är nu Office 365 Advanced Threat Protection Plan 2, tillsammans med ytterligare hotskyddsfunktioner. Mer information finns i [Office 365 Advanced Threat Protection-abonnemang och priser](https://products.office.com/exchange/advance-threat-protection) och beskrivningen av Office [365 Advanced Threat Protection Service](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Threat Intelligence är nu Office 365-skydds plan 2 för avancerade hot och skydds funktioner. Mer information finns i [Office 365-abonnemang och priser](https://products.office.com/exchange/advance-threat-protection) för avancerat skydd för office [-365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
   
-## <a name="what-are-threat-trackers"></a>Vad är Hot Trackers?
+## <a name="what-are-threat-trackers"></a>Vad är Threat-Spårare?
 
-Threat Trackers är informativa widgets och vyer som ger dig information om olika cybersäkerhetsproblem som kan påverka ditt företag. Du kan till exempel visa information om hur du trendar kampanjer för skadlig kod med hjälp av hotspårare.
+Threat-spårare är en informativ widget och vyer som ger dig information om olika Cybersecurity problem som kan påverka ditt företag. Du kan till exempel Visa information om hur du trendar kampanjer med skadlig program vara med hot spårare.
   
-![Exempel på hotspårare som visar kampanjer för skadlig kod](../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
+![Exempel på Threat Spårare för kampanjer med skadlig program vara](../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
   
-De flesta uppföljningssidor innehåller trendtal som uppdateras med jämna mellanrum, widgets som hjälper dig att förstå vilka problem som är störst eller har vuxit mest, och en snabblänk i kolumnen **Åtgärder** som tar dig till Utforskaren, där du kan visa mer detaljerad information. 
+De flesta Spårare-sidor innehåller trend nummer som uppdateras regelbundet, widgetar som hjälper dig att förstå vilka problem som är viktigast eller har blivit mest och en snabb länk i kolumnen **åtgärder** som tar dig till Utforskaren där du kan visa mer detaljerad information. 
   
-![Exempel på kampanjinformation i Explorer](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
+![Exempel på kampanj information i Utforskaren](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
-Trackers är bara några av de många bra funktioner du får med [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md). Hot Trackers inkluderar [Noteworth trackers,](#noteworthy-trackers) [Trending trackers,](#trending-trackers) [Spårade frågor](#tracked-queries)och [sparade frågor](#saved-queries).
+Spårare är bara några av de många fantastiska funktioner som du får med [Office 365 Avancerat skydds abonnemang 2](office-365-ti.md). Threat-Spårare inkluderar [Noteworth-Spårare](#noteworthy-trackers), [trender för Spårare](#trending-trackers), [spårade frågor](#tracked-queries)och [sparade frågor](#saved-queries).
   
-Om du vill visa och använda hotspårarna för din organisation går du till Security &amp; Compliance Center ( ) och väljer [https://protection.office.com](https://protection.office.com) **Hothanteringshotspårare** \> **Threat tracker**.
+Om du vill visa och använda dina Threat-Spårare för organisationen går du till säkerhets &amp; kontroll Center ( [https://protection.office.com](https://protection.office.com) ) och väljer hot **Management** \> **Threat-Spårare**.
   
 > [!NOTE]
-> Om du vill använda Threat Trackers måste du vara global administratör, säkerhetsadministratör eller säkerhetsläsare. Se [Behörigheter i &amp; Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md). 
+> För att använda Threat-Spårare måste du vara global administratör, säkerhets administratör eller säkerhets läsare. Se [behörigheter i säkerhetsrelaterade &amp; Center](permissions-in-the-security-and-compliance-center.md). 
   
-### <a name="noteworthy-trackers"></a>Anmärkningsvärda trackers
+### <a name="noteworthy-trackers"></a>Intressanta Spårare
 
-Anmärkningsvärda trackers är där du hittar stora och mindre hot och risker som vi tycker att du bör känna till. Anmärkningsvärda spårare hjälper dig att ta reda på om dessa problem finns i din Microsoft 365-miljö, plus länk till artiklar (som den här) som ger dig mer information om vad som händer och hur de påverkar organisationens användning av Office 365. Oavsett om det är ett stort nytt hot (t.ex. Wannacry, Petya) eller ett befintligt hot som kan skapa några nya utmaningar (som vår andra inledande Anmärkningsvärt objekt - Nemucod), det är här du hittar viktiga nya objekt du och ditt säkerhetsteam bör granska och undersöka regelbundet.
+Viktiga spårare är där du kan hitta stora och mindre hot och risker som vi tror att du bör känna till. Viktiga Spårare hjälper dig att hitta om de här problemen finns i Microsoft 365-miljön, plus länka till artiklar (som den här) som ger dig mer information om vad som händer och hur de påverkar organisationens användning av Office 365. Vare sig det är ett stort nytt hot (till exempel Wannacry, Petya) eller ett befintligt hot som kan skapa vissa nya utmaningar (till exempel vår andra Inaugural-Nemucod), är det här du hittar viktiga nya saker och att din säkerhets grupp bör granska och granska och undersöka dem regelbundet.
   
-Vanligtvis anmärkningsvärda trackers kommer att publiceras för bara ett par veckor när vi identifierar nya hot och tror att du kan behöva den extra synlighet som den här funktionen ger. När den största risken för ett hot har passerat tar vi bort det anmärkningsvärda objektet. På så sätt kan vi hålla listan fräsch och uppdaterad med andra relevanta nya objekt.
+Intressanta Spårare kommer att publiceras för bara några veckor när vi identifierar nya hot och tror att du kan behöva den extra synbarheten som den här funktionen erbjuder. När den största risken för ett hot har passerat tar vi bort det postintressanta objektet. På så sätt kan vi hålla listan färska och uppdaterade med andra relevanta objekt.
   
-### <a name="trending-trackers"></a>Populära trackers
+### <a name="trending-trackers"></a>Trender
 
-Populära spårare (tidigare kallade Kampanjer) belyser nya hot som mottagits i organisationens e-post under den senaste veckan.
+Trender för Spårare (tidigare kallade kampanjer) Markera nya hot som tagits emot i organisationens e-postadress under den senaste veckan.
   
-![Exempel på widgeten populära kampanjer för skadlig kod](../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
+![Exempel på att trender för widget av skadliga program](../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
   
-Trendande trackers ger dig en uppfattning om nya hot som du bör granska för att säkerställa att din bredare företagsmiljö är förberedd mot attacker.
+Att hålla Spårare ger dig en uppfattning om nya hot du bör undersöka för att se till att din bredare företags miljö förbereds mot attacker.
   
 ### <a name="tracked-queries"></a>Spårade frågor
 
-Spårade frågor utnyttjar dina sparade frågor för att regelbundet utvärdera Microsoft 365-aktivitet i organisationen. Detta ger dig händelse trend, med mer att komma under de kommande månaderna. Spårade frågor körs automatiskt, vilket ger dig aktuell information utan att behöva komma ihåg att köra dina frågor igen.
+Med spårade frågor kan du använda dina sparade frågor för att regelbundet utvärdera Microsoft 365-aktiviteter i din organisation. Det ger dig evenemangs trender, med mer att komma under de kommande månaderna. Spårade frågor körs automatiskt och du får den senaste informationen utan att behöva komma ihåg att köra frågorna igen.
   
 ![Exempel på spårade frågor med en markerad](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
   
 ### <a name="saved-queries"></a>Sparade frågor
 
-Sparade frågor finns också i avsnittet Spårare. Du kan använda Sparade frågor för att lagra de vanliga Explorer-sökningar som du vill komma tillbaka till snabbare och upprepade gånger, utan att behöva återskapa sökningen varje gång.
+Sparade frågor finns också i avsnittet spårare. Du kan använda sparade frågor för att lagra vanliga sökningar i Explorer som du vill gå tillbaka till snabbare och flera gånger, utan att behöva återskapa sökningen varje gång.
   
 ![Exempel på sparade frågor med en markerad](../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
   
-Du kan alltid spara en anteckningsvärd uppföljningsfråga eller någon av dina egna Explorer-frågor med knappen **Spara fråga** högst upp på Explorer-sidan. Allt som sparas där visas i listan **Sparade frågor** på sidan Spårare. 
+Du kan alltid spara en fråga eller någon av dina egna Explorer-frågor med hjälp av knappen **Spara fråga** högst upp på sidan Utforskaren. Allting som sparats visas i listan **sparade frågor** på spår-sidan. 
   
 ## <a name="trackers-and-explorer"></a>Spårare och Utforskaren
 
-Oavsett om du granskar e-post-, innehålls- eller Office-aktiviteter (kommer snart) samarbetar Explorer och Trackers för att hjälpa dig att undersöka och spåra säkerhetsrisker och hot. Tillsammans ger Trackers dig information för att skydda dina användare genom att lyfta fram nya, anmärkningsvärda och ofta sökta problem – så att ditt företag skyddas bättre när det flyttas till molnet.
+Oavsett om du ska granska e-post, innehåll och Office-aktiviteter (kommer snart) samarbetar Explorer och Spårare tillsammans för att undersöka och spåra säkerhets risker och hot. Alla tillsammans ger Spårare information om hur du skyddar användarna genom att markera nya, viktiga och ofta förekommande problem – säkerställer att företaget skyddas bättre när det flyttas till molnet.
   
-Och kom ihåg att du alltid kan ge oss feedback på denna eller andra Microsoft 365 säkerhetsfunktioner genom att klicka på **feedback-knappen** i det nedre högra hörnet [av Översikt över Security & Compliance Center](https://support.microsoft.com/office/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
+Och kom ihåg att du alltid kan skicka feedback till oss via den här eller andra Microsoft 365-säkerhetsfunktioner genom att klicka på **feedback** -knappen i det nedre högra hörnet i [översikten över säkerhets & Compliance Center](https://support.microsoft.com/office/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
   
-![&amp;Center för säkerhetsefterlevnad](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Center för säkerhetsfunktioner &amp;](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
   
-## <a name="trackers-and-office-365-advanced-threat-protection"></a>Spårare och avancerat hotskydd i Office 365
+## <a name="trackers-and-office-365-advanced-threat-protection"></a>Spårare och Office 365 Avancerat skydd
 
-Med vårt inledande anmärkningsvärt hot belyser vi avancerade hot mot skadlig kod som upptäckts av [safe-bilagor i Office 365 ATP](atp-safe-attachments.md). Om du är Office 365 Enterprise E5-kund och inte använder [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) bör du vara det – det ingår i din prenumeration. ATP ger värde även om du har andra säkerhetsverktyg som filtrerar e-postflödet med dina Office 365-tjänster. Funktioner för skräppost och [office 365 ATP-säkra länkar](atp-safe-links.md) fungerar dock bäst när din huvudsakliga e-säkerhetslösning är via Office 365. 
+Med vårt Inaugural-språksäkra hot, har vi markerat avancerade hot mot skadlig program vara upptäckta av [Office 365 ATP-Safe Attachments](atp-safe-attachments.md). Om du är Office 365 Enterprise, E5-kund och du inte använder [office 365 Avancerat skydd](office-365-atp.md) (ATP) bör du vara-det ingår i ditt abonnemang. ATP ger ett värde även om du har andra säkerhets verktyg filtrerar e-postflöden till dina Office 365-tjänster. Anti-spam och [Office 365-Safe Links](atp-safe-links.md) -funktioner fungerar bäst när din primära e-postlösning är via Office 365. 
   
-![ATP i &amp; Säkerhetsefterlevnadscenter](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
+![ATP i säkerhetsrelaterade &amp; Center](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   
-I dagens hot-fullspäckade värld, kör endast traditionella anti-malware skanningar innebär att du inte är tillräckligt bra mot attacker. Dagens mer sofistikerade angripare använder allmänt tillgängliga verktyg för att skapa nya, fördunklade eller försenade attacker som inte kommer att kännas igen av traditionella signaturbaserade anti-malware motorer. Funktionen BETRODDa bilagor tar e-postbilagor och detonerar dem i en virtuell miljö för att avgöra om de är säkra eller skadliga. Denna detonation process öppnar varje fil i en virtuell dator miljö, sedan klockor vad som händer efter att filen öppnas. Oavsett om det är en PDF-fil och komprimerad fil, eller ett Office-dokument, kan skadlig kod döljas i en fil och aktiveras först när offret öppnar den på sin dator. Genom att detonera och analysera filen i e-postflödet hittar Office 365 ATP-funktioner dessa hot baserat på beteenden, filrykte och ett antal heuristiska regler.
+I dagens hot – riddled-världen är det bara att använda vanliga sökningar av skadlig program vara som innebär att du inte är tillräckligt väl skyddad mot attacker. Dagens mer sofistikerade attackerare använder vanliga verktyg för att skapa nya, Obfuscated eller fördröjda attacker som inte känns igen av traditionella antispionprogram. Det säkraste alternativet för e-postbilagor tar emot bifogade filer och spränger dem i en virtuell miljö för att avgöra om de är säkra. Denna sprängning öppnar varje fil i en virtuell dator miljö och visar vad som händer när filen har öppnats. Om det är en PDF-fil eller ett Office-dokument kan skadlig kod vara dold i en fil och aktive ras bara när den har öppnats på sin dator. Genom att spränga och analysera filen i e-postflödet hittar Office 365 ATP-kapaciteterna baserat på beteenden, fil rykte och ett antal heuristik-regler.
   
-Det nya filtret Anmärkningsvärt hot markerar objekt som nyligen upptäcktes via ATP Safe Attachments. Dessa identifieringar representerar objekt som är nya skadliga filer, som inte tidigare hittades av Microsoft 365 i e-postflödet eller andra kunders e-post. Var uppmärksam på objekten i Noteworthy Threat Tracker, se vem som var måltavla för dem och granska detonationen detaljer som visas på fliken Avancerad analys (hittades genom att klicka på ämnet för e-postmeddelandet i Explorer). Observera att du bara hittar den här fliken på e-postmeddelanden som upptäckts av funktionen BETRODDa bilagor för ATP - den här anmärkningsvärda spåraren innehåller filtret, men du kan också använda filtret för andra sökningar i Explorer.
+Det nya filtret för ett nytt hot-hotet markerar objekt som nyligen identifierats via säkra bilagor för ATP. Dessa identifieringar representerar objekt som är nya skadliga filer, som inte tidigare upptäckts av Microsoft 365 i ditt e-postflöde eller andra kunders e-postmeddelanden. Lär dig hur du åtgärdar objekten i den aktuella hotets Spårare, se vem som var riktade till dem och granska detaljerna för Sprängaren på fliken Avancerad analys (som du hittar genom att klicka på e-postmeddelandets ämne i Utforskaren). Obs! du hittar bara den här fliken i e-postmeddelanden som upptäckts med den aktuella bilage funktionen för ATP – den här observerade spårningen inkluderar filtret, men du kan även använda filtret för andra sökningar i Utforskaren.
   
 ## <a name="next-steps"></a>Nästa steg
 
-- Om din organisation inte redan har dessa funktioner för utredning och svar i Office 365-hot läser du [Hur får vi funktioner för utredning och svar i Office 365-hot?](office-365-ti.md)
+- Om din organisation inte redan har de här Office 365 Threat-undersöknings-och svars funktionerna kan [du läsa hur du får svar på office 365 om hot-undersökningar och-reaktioner?](office-365-ti.md).
     
-- Kontrollera att säkerhetsteamet har rätt roller och behörigheter tilldelade. Du måste vara global administratör eller ha rollen Säkerhetsadministratör eller Sök och rensa tilldelad i Security &amp; Compliance Center. Se [Behörigheter i &amp; Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
+- Kontrol lera att din säkerhets grupp har rätt roller och behörigheter tilldelade. Du måste vara global administratör eller ha rollen säkerhets administratör eller sökning och rensning som är tilldelad i &amp; Säkerhetscenter. Se [behörigheter i säkerhetsrelaterade &amp; Center](permissions-in-the-security-and-compliance-center.md).
     
-- Håll utkik efter de nya trackers som visas i din Microsoft 365-miljö. När det finns tillgängligt hittar du dina trackers [här.](https://protection.office.com/) Gå **Threat management** till \> **Hothantering Hot trackers**.
+- Titta efter de nya spårningarna som visas i din Microsoft 365-miljö. När det är tillgängligt hittar du dina Spårare [här](https://protection.office.com/). Gå till hot **Management** \> **Threat-Spårare**.
     
-- Om du inte redan har gjort det kan du läsa mer om och konfigurera [Office 365 Advanced Threat Protection](office-365-atp.md) för din organisation, inklusive [betrodda office 365 ATP-länkar](atp-safe-links.md) och [Office 365 ATP-säkra bilagor](atp-safe-attachments.md).
+- Om du inte redan har gjort det kan du läsa mer om och konfigurera [office 365 Avancerat skydd](office-365-atp.md) för din organisation, inklusive [Office 365 ATP-säkra länkar](atp-safe-links.md) och [Office 365 ATP-säkra bifogade filer](atp-safe-attachments.md).
   
 

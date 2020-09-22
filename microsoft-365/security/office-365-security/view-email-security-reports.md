@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du hittar och använder e-postsäkerhets rapporter för organisationen. Säkerhets rapporter för e-post finns i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a87cee31b4e0251aea8eb39640d37184ccd0ee96
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 588c30ca07684636661c7946b2418b75574c8cbd
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104528"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199223"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visa rapporter om e-postsäkerhet i Säkerhets- och efterlevnadscenter
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Det finns en mängd olika rapporter i [säkerhets & Compliance Center](https://protection.office.com) som hjälper dig att se hur säkerhetsfunktionerna för e-post, till exempel skydd mot skräp post, mot skadlig program vara och krypterings funktioner i Microsoft 365 som skyddar din organisation. Om du har [nödvändig behörighet](#what-permissions-are-needed-to-view-these-reports)kan du visa dessa rapporter i säkerhets & Compliance Center genom att gå till **Reports** \> **instrument panelen**för rapporter. Öppna för att gå direkt till instrument panelen rapporter <https://protection.office.com/insightdashboard> .
 

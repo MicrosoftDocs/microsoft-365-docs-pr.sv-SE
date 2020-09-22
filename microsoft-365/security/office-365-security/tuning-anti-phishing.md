@@ -12,14 +12,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Administratörer kan lära sig att identifiera varför och hur ett nät fiske meddelande gick igenom i Microsoft 365 och vad man bör göra för att förhindra fler nät fiske meddelanden i framtiden.
-ms.openlocfilehash: b0fbb29489cece6d708811c5c8d8d60450938f0c
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: c62d09a1cf8b586b5c1d4393d7316d6d6d0cc96d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825215"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201681"
 ---
 # <a name="tune-anti-phishing-protection"></a>Finjustera skydd mot nätfiske
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Ã ven om Microsoft 365 kommer med en mängd anti-nätfiske-funktioner som är aktiverade som standard, är det möjligt att vissa nät fiske meddelanden ändå kan komma fram till dina post lådor. I det här avsnittet beskrivs vad du kan göra för att ta reda på varför ett nät fiske meddelande hamnade och vad du kan göra för att justera inställningarna för nät fiske i din Microsoft 365-organisation _utan att göra saker ännu värre_.
 

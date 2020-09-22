@@ -19,14 +19,17 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Lär dig hur du känner igen och hanterar ett komprometterat e-postkonto ned tillgängliga verktyg i Microsoft 365.
-ms.openlocfilehash: cfd20b0d5e6e13343346761b9b909a333b9a6ff5
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 2830fd10b633e094c92fd98fe61ce678a4da842b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827523"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200135"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Hantera ett komprometterat e-postkonto
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 **Sammanfattning** Lär dig hur du känner igen och hanterar ett komprometterat e-postkonto i Microsoft 365.
 

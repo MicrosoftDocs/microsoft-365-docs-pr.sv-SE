@@ -14,14 +14,17 @@ ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om hur man kör en administratörs grupp rapport i fristående Exchange Online Protection (EOP). Den här rapporten loggar när en administratör lägger till eller tar bort medlemmar från administratörs roll grupper, loggar EOP varje gång.
-ms.openlocfilehash: db1934c7865209d358d164ff5165bb23026589cc
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: f2f3e32a818825d14c02b2bbffdc136e82f83013
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827511"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200487"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Köra en administratörsrapport för rollgrupp i fristående EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor när en administratör lägger till eller tar bort medlemmar från administratörs roll grupper loggar tjänsten in varje förekomst. Mer information om roll grupper i fristående EOP finns i [behörigheter i fristående EOP](feature-permissions-in-eop.md).
 

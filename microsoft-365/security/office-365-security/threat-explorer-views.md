@@ -15,14 +15,17 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du använder Threat Explorer och rapporten om identifiering av real tids rapporter för att undersöka och reagera på hot i säkerhets &amp; Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5064c3a250ba9e7dcf48d6bc360102b3ab4b8504
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 5500a7bff0766159384604e9973b5ad81b3dbc6f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656951"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200113"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vyer i Threat Explorer och identifieringar i real tid
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ![Hotutforskaren](../../media/ThreatExplorerFirstOpened.png)
 
@@ -37,8 +40,8 @@ När du först öppnar Utforskaren (eller rapporten real tids identifiering) vis
 
 |Prenumerationsvy|Nytta|Dagar med data|
 |---|---|---|
-|ATP-test|Realtidsidentifiering|borttagning|
-|ATP P1 betalt|Realtidsidentifiering|halvtimme|
+|ATP-test|Identifiering i realtid|borttagning|
+|ATP P1 betalt|Identifiering i realtid|halvtimme|
 |ATP P1-betal test för ATP|Hotutforskaren|borttagning|
 |ATP-prov|Hotutforskaren|borttagning|
 |ATP-betalat|Hotutforskaren|halvtimme|

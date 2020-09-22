@@ -20,14 +20,17 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Administratörer kan läsa mer om de skydd mot förfalskning som finns tillgängliga i Exchange Online Protection (EOP) och som kan hjälpa dig att minska riskerna för nätfiske från falska avsändare och domäner.
-ms.openlocfilehash: b4d1feda06aa0bd21b72b9642dea845693e20756
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 48207d708400416bea01b4eb9ba0a94b249d7d70
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949756"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199105"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Skydd mot förfalskning i EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 För Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor, ingår det funktioner i EOP som hjälper till att skydda organisationen mot falska (förfalskade) avsändare.
 
