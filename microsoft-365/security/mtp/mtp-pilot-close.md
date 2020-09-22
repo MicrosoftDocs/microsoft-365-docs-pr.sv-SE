@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f2ba1b63b3c1a986b3e811b3495bb4de85f93223
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: d6e9dbc214cdbb7aaf6bf8922ca4eaf986f8a91c
+ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956532"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48173290"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>Stänga och sammanfatta ditt Microsoft Threat Protection pilot  
 
 **Gäller för:**
 - Microsoft Hotskydd
 
-Du har precis simulerat ett avancerat minnes angrepp som kördes med kod på en domänkontrollant. Du har sett att Microsoft Defender ATP och Azure ATP upptäcker och varnar för stealthy uppsåtlig aktivitet. Du har också lärt dig hur aviseringar från olika källor levereras tillsammans med annan kontextuell information till en enda olycka i Microsoft Threat Protection-portalen, så att SOC-analytiker kan undersöka och vidta nödvändiga åtgärder. Du har också skapat en avancerad jakt fråga som identifierar inkommande e-postmeddelanden där användaren öppnade eller sparade den bifogade filen och skapade identifiering som baseras på den frågan.
+Du har precis simulerat ett avancerat minnes angrepp som kördes med kod på en domänkontrollant. Du har sett att Microsoft Defender ATP och Azure ATP upptäcker och varnar för stealthy uppsåtlig aktivitet. Du har också sett hur aviseringar från olika källor levereras tillsammans med annan kontextuell information till en enda händelse i Microsoft 365 Security Center-portalen, så att SOC-analytiker kan undersöka och vidta nödvändiga åtgärder. Du har också skapat en avancerad jakt fråga som identifierar inkommande e-postmeddelanden där användaren öppnade eller sparade den bifogade filen och skapade identifiering som baseras på den frågan.
 
 Du har nått slutet av processen efter att alla tester har genomförts.
 

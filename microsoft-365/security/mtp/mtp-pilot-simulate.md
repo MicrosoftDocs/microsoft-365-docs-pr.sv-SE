@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 518afae2d241cca5fdff054faeb07d25e37eb585
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: aa4767deac30641e39880c2eeb001c2dc884540a
+ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956591"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48173326"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>Kör dina simuleringar av angrepps skydd för Microsoft Threats  
 
@@ -33,9 +33,9 @@ När du har utarbetat din pilot miljö är det dags att testa Microsofts hot sky
 
 I den här simuleringen börjar vårt exempel scenario med ett PowerShell-skript. En användare kan ha svårt att köra ett skript. Eller så kan ett skript köras från en fjärr anslutning till en annan dator från en tidigare infekterad enhet – angriparen försöker flytta på ett senare plats i nätverket. Det kan vara svårt att identifiera dessa skript eftersom administratörer ofta kör skript för att utföra olika administrativa aktiviteter.
 
-Under simuleringen injicerar angreppet shellcode i en Innocent process. I det här scenariot ska vi använda notepad.exe. Vi valde den här processen för simuleringen, men angripare kommer att få mer sannolika en lång tids krävande system process, till exempel svchost.exe. Shellcode väljer sedan för att kontakta angriparens kommando-och-kontroll (C2)-Server för att få anvisningar om hur du ska fortsätta. Dessutom försöker skriptet att köra Reconnaissance frågor mot domän kontrol Lanterna (DC). Då kan en angripare få information om de senaste inloggnings uppgifterna. När angriparen har den här informationen kan de vid ett senare tillfälle gå vidare till ett specifikt känsligt konto
-
 ![Reconnaisance PowerShell-attack med process inmatning och SMB-](../../media/mtp/mtpdiydiagram.png)
+
+Under simuleringen injicerar angreppet shellcode i en Innocent process. I det här scenariot ska vi använda notepad.exe. Vi valde den här processen för simuleringen, men angripare kommer att få mer sannolika en lång tids krävande system process, till exempel svchost.exe. Shellcode väljer sedan för att kontakta angriparens kommando-och-kontroll (C2)-Server för att få anvisningar om hur du ska fortsätta. Dessutom försöker skriptet att köra Reconnaissance frågor mot domän kontrol Lanterna (DC). Då kan en angripare få information om de senaste inloggnings uppgifterna. När angriparen har den här informationen kan de vid ett senare tillfälle gå vidare till ett specifikt känsligt konto
 
 >[!IMPORTANT]
 >För optimalt resultat följer du anvisningarna för att simulera angrepp så nära som möjligt.
@@ -109,9 +109,9 @@ Om du vill se funktionen automatisk incident och svar håller du notepad.exe pro
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-Om du växlar till SOC-analysatorn kan du börja undersöka anslagen i Microsoft Threat Protection-portalen. 
+Om du växlar till SOC analytiker kan du börja undersöka anslagen i Microsoft 365 Security Center-portalen. 
 
-1.  Öppna incident kön för [Microsoft Threat Protection Portal](https://security.microsoft.com/incidents) från valfri enhet.
+1.  Öppna [Microsoft 365 Security Center-portalens](https://security.microsoft.com/incidents) incident kö från valfri enhet.
 
 2.  Navigera till **incidenter** från menyn. 
 
@@ -230,7 +230,7 @@ Klicka på användar namnet för att öppna användarens profil sida där ytterl
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-Navigera tillbaka till incidenten i Microsoft Threat Protection Portal. På fliken **undersökningar** på sidan **incident** visas de automatiska utredningar som utlöstes av Azure ATP och Microsoft Defender ATP. Skärm bilden nedan visar endast den automatiska undersökningen som utlöstes av Microsoft Defender ATP. Som standard åtgärdar Microsoft Defender ATP automatiskt de artefakter som finns i den kö som kräver reparation.
+Navigera tillbaka till incidenten i Microsoft 365 Security Center-portalen. På fliken **undersökningar** på sidan **incident** visas de automatiska utredningar som utlöstes av Azure ATP och Microsoft Defender ATP. Skärm bilden nedan visar endast den automatiska undersökningen som utlöstes av Microsoft Defender ATP. Som standard åtgärdar Microsoft Defender ATP automatiskt de artefakter som finns i den kö som kräver reparation.
 
 ![Skärm bild av automatiska utredningar relaterade till händelsen](../../media/mtp/fig14.png)
 
@@ -255,7 +255,7 @@ När undersökningen är fullständig och bekräftad kan du stänga den.
 
 Klicka på **Hantera incident**. Ställ in statusen för att **lösa problemet** och välj relevant klassificering.
 
-När incidenten har åtgärd ATS stänger den alla tillhör ande aviseringar i Microsoft Threat Protection och i de relaterade portalerna.
+När incidenten har åtgärd ATS stänger den alla tillhör ande aviseringar i Microsoft 365 säkerhets Center och i de relaterade portalerna.
 
 ![Skärm bild av sidan incidenter med panelen öppna hantera incident där du kan klicka på växeln för att lösa problemet](../../media/mtp/fig16.png) 
 
@@ -289,7 +289,7 @@ Det finns en enda intern post låda och enhet för det här scenariot. Du behöv
 1.  Öppna security.microsoft.com-portalen.
 2.  Navigera till **jakt > avancerad jakt**.
 
-    ![Skärm bild av avancerad jakt i navigerings fältet M365 Security Portal](../../media/mtp/fig17.png) 
+    ![Skärm bild av avancerad jakt i M365 Security Center Portal navigerings fält](../../media/mtp/fig17.png) 
 
 3.  Skapa en fråga som börjar med att samla in e-posthändelser.
     a.  I fönstret fråga väljer du nytt.
