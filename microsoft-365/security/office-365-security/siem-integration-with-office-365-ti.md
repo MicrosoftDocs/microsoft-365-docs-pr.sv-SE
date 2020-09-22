@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Integrera din organisations SIEM-server med Office 365 Avancerat skydd och relaterade hot händelser i Office 365 Activity Management API.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8e9dcf24adfb227d0c454b4f5952c879cea511f7
-ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
+ms.openlocfilehash: cfb76485fec8eca2f2b62da59fa2d18a56177bba
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2020
-ms.locfileid: "46860695"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203661"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>SIEM integrering med avancerat skydd
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Om din organisation använder en säkerhets tillbud och en SIEM Server (Event Management) kan du integrera Office 365 Avancerat skydd (Office 365 ATP) med SIEM Server. Du kan ställa in denna integrering genom att använda [API för aktivitets hantering i Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
 

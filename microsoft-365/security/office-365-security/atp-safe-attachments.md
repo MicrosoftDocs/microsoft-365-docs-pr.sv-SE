@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: I den här artikeln får du lära dig mer om funktionen för säker åtkomst för varje ATP för Office 365 och hur du får till gång till prenumerationen.
-ms.openlocfilehash: 16b9ae47ead318e200cdf1e5e5beb58c2bc396bc
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 1ff7021f1c9fa64d3f04cbcac7231733399ad2b8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656999"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198781"
 ---
 # <a name="atp-safe-attachments"></a>Säkra filer för ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="overview-of-office-365-atp-safe-attachments"></a>Översikt över Office 365 ATP-säkra bifogade filer
 

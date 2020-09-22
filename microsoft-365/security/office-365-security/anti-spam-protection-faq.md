@@ -17,14 +17,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan se vanliga frågor och svar om skydd mot skräp post i Exchange Online Protection (EOP).
-ms.openlocfilehash: ed871990cf5f8fc4e15995987312fc6814ab8296
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: d114c20a3a246eb0cd925b6783b10071d056443d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825179"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198613"
 ---
 # <a name="anti-spam-protection-faq"></a>Vanliga frågor om skydd mot skräppost
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Det här avsnittet innehåller vanliga frågor och svar om skydd mot skadlig program vara för Microsoft 365-organisationer med post lådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor.
 

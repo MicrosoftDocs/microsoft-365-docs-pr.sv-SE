@@ -17,14 +17,17 @@ ms.custom:
 - SIEM
 - seo-marvel-apr2020
 description: Få en översikt över säkerhets information och SIEM Server integration med Microsoft 365-molntjänster och-program
-ms.openlocfilehash: d2be5e0127adf25b3884e3717caccf60d4db1d28
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 6d657990417cab2a8cbb1b03b8b79a65c095d1a5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653586"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202215"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Integrering av säkerhets information och Event Management (SIEM) med Microsoft 365-tjänster och-program
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="summary"></a>Sammanfattning
 

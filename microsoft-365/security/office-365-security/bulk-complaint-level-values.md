@@ -16,14 +16,17 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig mer om värden för BCL (Mass Utjämnings nivå) som används i Exchange Online Protection (EOP).
-ms.openlocfilehash: e24c0c97afcca2e7aa014d929d7b2131c6a2d074
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: d59bb152de075bb807e3cae72839fe459d7da40f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827439"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203533"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>Bulk klagomål (BCL) i EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I Microsoft 365-organisationer med post lådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor tilldelar EOP ett Mass kompatibelt (BCL) för inkommande meddelanden från andra Mass utskick. BCL läggs till i meddelandet i ett X-sidhuvud och liknar den [skräp nivå](spam-confidence-levels.md) som används för att identifiera meddelanden som skräp post. Ett högre BCL tyder på att ett Mass meddelande är mer sannolikt att skapa klagomål (och därför är det mer sannolikt att få skräp post). Microsoft använder både interna och tredje parts källor för att identifiera Mass utskick och fastställa lämpliga BCL.
 

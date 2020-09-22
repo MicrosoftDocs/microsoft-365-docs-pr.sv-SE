@@ -1,5 +1,5 @@
 ---
-title: Svar på säkerhetsincidenter
+title: Säkerhets tillbud
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,54 +15,57 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Den här lösningen talar om hur de vanligaste cybersäkerhetsattackerna kan se ut i Microsoft 365 och hur du ska svara på dem
+description: Den här lösningen visar vilka de vanligaste Cybersecurity-attackerna kan se ut i Microsoft 365 och hur de ska reagera på dem
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: c6f5087799a0e3a06d0849f99e9911cf77260e1b
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 221303d43620e89b8200392961d8aa0916c82763
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818801"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198709"
 ---
-# <a name="security-incident-response"></a>Svar på säkerhetsincidenter
+# <a name="security-incident-response"></a>Säkerhets tillbud
 
- **Sammanfattning:** Den här lösningen talar om för dig vilka indikatorer som är för de vanligaste cybersäkerhetsattackerna i Office 365, hur du på ett positivt sätt kan bekräfta en viss attack och hur du ska svara på den.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-## <a name="learn-how-to-respond-to-cyberattacks"></a>Läs om hur du svarar på cyberattacker
 
-Inte alla cyberattacker kan omintetgöras. Angripare letar ständigt efter nya svagheter i din defensiva strategi eller de utnyttjar gamla. Att veta hur man känner igen en attack kan du svara på det snabbare, vilket förkortar varaktigheten av säkerhetsincidenten.
+ **Sammanfattning:** Den här lösningen visar vilka indikatorer som gäller för de vanligaste Cybersecurity-attackerna i Office 365, hur man positivt bekräftar eventuella attacker och hur du svarar på det.
 
-Den här artikelserien hjälper dig att förstå hur en viss typ av angrepp kan se ut i Microsoft 365 och ger dig åtgärder som du kan vidta för att svara. De är snabba ingångar för att förstå:
+## <a name="learn-how-to-respond-to-cyberattacks"></a>Lär dig att svara på cyberattacks
 
-- Vad attacken är och hur den fungerar.
+Alla cyberattacks kan inte vara Thwarted. Attackerare letar ständigt efter nya svagheter i din prenumeration eller de utnyttjar gamla. Att känna till hur man känner igen en attack gör att du kan svara snabbare, vilket minskar giltighets tiden för säkerhets tillbudet.
 
-- Vilka tecken, som kallas indikatorer på kompromiss (IOK), att leta efter och hur man letar efter dem.
+Den här artikeln hjälper dig att förstå vad en viss typ av attack kan se ut i Microsoft 365 och ger dig instruktioner för att svara. Det är snabbt att sätta sig till:
 
-- Hur man positivt bekräfta attacken.
+- Vad attacket är och hur det fungerar.
 
-- Åtgärder för att avbryta attacken och bättre skydda din organisation i framtiden.
+- Vilka tecken kallas för anslags indikationer (IOC) och hur du kan leta efter dem.
 
-- Länkar till fördjupad information om varje attacktyp.
+- Bekräfta angreppet positivt.
 
-Kom tillbaka hit varje månad eftersom fler artiklar kommer att läggas till med tiden.
+- Steg för att ta bort angreppet och bättre skydda din organisation i framtiden.
 
-## <a name="detect-and-remediate-articles"></a>Upptäcka och åtgärda artiklar
+- Länkar till djupgående information för varje typ av attack.
+
+Kom tillbaka här varje månad allteftersom fler artiklar läggs till över tiden.
+
+## <a name="detect-and-remediate-articles"></a>Identifiera och åtgärda artiklar
 
 - [Identifiera och åtgärda olovliga medgivandebeviljanden i Office 365](detect-and-remediate-illicit-consent-grants.md)
 
 - [Identifiera och reparera Outlook-regler och inmatningsattacker i anpassade formulär i Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
-## <a name="incident-response-articles"></a>Artiklar om incidentsvar
+## <a name="incident-response-articles"></a>Artiklar om incident svar
 
 - [Svara på ett komprometterat e-postkonto i Office 365](responding-to-a-compromised-email-account.md)
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Skydda Microsoft 365 som en expert på cybersäkerhet
 
-Din Microsoft 365-prenumeration innehåller kraftfulla säkerhetsfunktioner som du kan använda för att skydda dina data och dina användare.  Använd [microsoft 365-säkerhetsfärdplanen – De viktigaste prioriteringarna för de första 30 dagarna, 90 dagarna och därefter](security-roadmap.md) för att implementera Microsofts rekommenderade metodtips för att skydda din Microsoft 365-organisation.
+Din Microsoft 365-prenumeration innehåller kraftfulla säkerhetsfunktioner som du kan använda för att skydda dina data och dina användare.  Använd [microsofts 365 säkerhets plan – de viktigaste prioriteringarna för de första 30 dagarna, 90 dagar och senare](security-roadmap.md) för att implementera Microsofts rekommenderade metod tips för att skydda Microsoft 365-organisationen.
 
 - Uppgifter som ska utföras under de första 30 dagarna.  De har omedelbar effekt och påverkar inte användarna i någon större utsträckning.
 
-- Uppgifter som ska utföras inom 90 dagar. Dessa tar lite mer tid att planera och genomföra men kraftigt förbättra din säkerhet hållning
+- Uppgifter som ska utföras inom 90 dagar. Det tar lite längre tid att planera och implementera men det är avsevärt bättre Posture
 
 - Efter 90 dagar. De här förbättringarna uppnås under de första 90 dagarna.

@@ -14,14 +14,17 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln lär du dig mer om rapporter och fel söknings verktyg som är tillgängliga för Microsoft Exchange Online Protection (EOP)-administratörer.
-ms.openlocfilehash: 149f7fa36a717a92d3cda5f6f3f82651f0144d73
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 86f4e18430324ed95f036f93746d826225ec3b2f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827635"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196405"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Rapportering och meddelande spårning i EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I Microsoft 365-organisationer med post lådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor finns det många olika rapporter i EOP som hjälper dig att avgöra den övergripande statusen och tillståndet för din organisation. Det finns också verktyg som hjälper dig att felsöka specifika händelser (till exempel ett meddelande som inte kommer till dess avsedda mottagare) och gransknings rapporter med krav på efterlevnad.
 

@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d0fd359bb6f56f7c20b0a39b7fd45ec551e7e49e
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 3fc563c762e7cd00888665b63e66159e4d3d9612
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797788"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196983"
 ---
 # <a name="fileprofile"></a>FileProfile()
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gäller för:**
 - Microsoft Hotskydd
@@ -47,7 +50,7 @@ ms.locfileid: "46797788"
 | IsRootSignerMicrosoft | returtyp | Anger om undertecknaren hos rot certifikatet är Microsoft |
 | IsExecutable | returtyp | Om filen är en fil för Portable körbara filer (PE) |
 | ThreatName | strängvärdet | Identifierings namn för skadlig program vara eller andra hot Funna |
-| Skapas | strängvärdet | Namn på organisationen som har publicerat filen |
+| Publisher | strängvärdet | Namn på organisationen som har publicerat filen |
 | SoftwareName | strängvärdet | Namnet på program varu produkten |
 
 ## <a name="syntax"></a>Frågesyntaxen

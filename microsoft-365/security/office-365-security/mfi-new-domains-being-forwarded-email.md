@@ -11,14 +11,17 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Administratörer kan läsa mer om hur du använder de nya domänerna som vidarebefordrar e-postmeddelande inblick i det moderna administrations centret för Exchange för att undersöka när användare i organisationen vidarebefordrar meddelanden till externa domäner som aldrig har vidarebefordrats till.
-ms.openlocfilehash: 0f0622fc686cb9c90790630e16c187bf9f69d918
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 62e254e324322aec55d692cfe3128e8e4dd60e4b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358264"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200741"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Nya domäner vidarebefordras med e-post i säkerhets & efterlevnad
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Även om du kan ha giltiga företags skäl att vidarebefordra e-postmeddelanden till externa mottagare i vissa domäner är det misstänkt när användare i organisationen plötsligt startar vidarebefordran av meddelanden till externa domäner och ingen i organisationen har översänt meddelanden till dessa domäner före (nya domäner). Detta kan tyda på att användar kontona har komprometterats. Om du misstänker att kontona är inaktiverade kan du läsa mer i [svara på ett komprometterat e-postkonto](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
 

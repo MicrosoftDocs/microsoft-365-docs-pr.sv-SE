@@ -13,14 +13,17 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om hur du använder översikten för e-postflöden i instrument panelen för e-postflöde i säkerhets & efterföljandekrav för att visualisera och spåra hur e-flöden kommer till och från sin organisation via kopplingar och utan att använda kopplingar.
-ms.openlocfilehash: e144d1d42603fbf2a8f031b1cf7584b6e6ed5c7b
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 74cabb7f7b34be6248d18d71565c8a9729d7e38b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358596"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199377"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Översikt över e-postflöde i säkerhets & efterlevnad
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 **E-postflödes kartan** i [instrument panelen för e-postflöde](mail-flow-insights-v2.md) i [säkerhets & Compliance Center](https://protection.office.com) ger en överblick över hur e-flöden passerar genom din organisation. Du kan använda den här informationen för att lära dig mönster, identifiera avvikelser och åtgärda problem när de uppstår.
 

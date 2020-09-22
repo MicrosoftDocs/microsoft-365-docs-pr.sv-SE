@@ -14,14 +14,17 @@ ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa om alternativen för att konfigurera e-postflöde och routning i Exchange Online Protection (EOP).
-ms.openlocfilehash: c58981afaadf2c4083b6a6db99c74cf9544715c3
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e1c821e3de8dd7dd18c192522bd18fd32a395dca
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827731"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200709"
 ---
 # <a name="mail-flow-in-eop"></a>E-postflöde i EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I Microsoft 365-organisationer med Exchange Online-postlådor eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor kan alla meddelanden som skickas till organisationen passera genom EOP innan dina anställda ser dem. Du har alternativ för att dirigera meddelanden som passerar genom EOP för bearbetning innan de cirkuleras till dina anställdas inkorgar.
 

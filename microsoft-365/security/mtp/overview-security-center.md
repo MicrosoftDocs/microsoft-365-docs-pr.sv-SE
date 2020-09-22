@@ -14,14 +14,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f831e952b20d04796f69a6c3c00ba4d69d332951
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 425956ebd4c3badc54f074b779997d530e2ee1a5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867239"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200997"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Översikt över Microsoft 365 säkerhets Center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Om du hanterar säkerheten för ditt företag för att skydda mot ett ständigt växande hot-landskap får många utmaningar. Du kanske har för många säkerhetslösningar med olika platser för att konfigurera många kontroller. Du kan bli problem med att veta vilka kontroller som är mest effektiva och vilka som kommer att introducera nya utmaningar för din arbets styrka. Det kan vara svårt för säkerhets teamerna att hitta rätt balans på säkerhet och produktivitet.
 

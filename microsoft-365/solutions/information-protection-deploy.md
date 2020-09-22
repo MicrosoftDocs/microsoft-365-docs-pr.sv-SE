@@ -1,5 +1,5 @@
 ---
-title: Distribuera informationsskydd för datasekretessbestämmelser med Microsoft 365
+title: Distribuera informations skydd för data integritets regler med Microsoft 365
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -16,94 +16,93 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-overview
 ms.custom: ''
-description: Konfigurera säkerhets- och tjänstinfrastrukturen för att skydda din information och följa datasekretessreglerna.
-ms.openlocfilehash: 640ce075515c687c037cb0e4ab3e03e3beda81dc
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+description: Konfigurera säkerhet och tjänst infrastruktur för att skydda din information och följa data integritets regler.
+ms.openlocfilehash: 2b249b3b43f1b520e42be4b6e5f9d684c718dc79
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522295"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195645"
 ---
-# <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Distribuera informationsskydd för datasekretessbestämmelser med Microsoft 365
+# <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Distribuera informations skydd för data integritets regler med Microsoft 365
 
-Din organisation kan omfattas av regionala datasekretessbestämmelser som kräver att du skyddar, hanterar och tillhandahåller rättigheter och kontroll över personlig information som lagras i din IT-infrastruktur, inklusive både lokalt och i molnet. Det bästa exemplet på en dataskyddsförordning är EU:s allmänna dataskyddsförordning (GDPR). Underlåtenhet att följa reglerna för datasekretess kan resultera i betydande böter.
+Din organisation kan vara föremål för nationella data integritets regler som kräver att du skyddar, hanterar och ger rättigheter och kontroll över person uppgifter som lagras i IT-infrastrukturen, inklusive både lokalt och i molnet. Det bästa exemplet på en data integritets förordning är Europeiska unionens allmänna data skydds förordning (GDPR). Underlåtenhet att uppfylla data integritets regler kan leda till avsevärda problem.
 
-Exempel på datatyper i Microsoft 365 är chattsessioner i Microsoft Teams, e-postmeddelanden i Exchange och filer i SharePoint och OneDrive. Den här lösningen ger vägledning om hur du identifierar, lokaliserar, skyddar, styr och svarar på datasekretessincidenter för personuppgifter som lagras i Microsoft 365-tjänster som omfattas av datasekretessbestämmelser.
+Exempel på data typer i Microsoft 365 inkluderar chatt i Microsoft Teams, e-postmeddelanden i Exchange och filer i SharePoint och OneDrive. Den här lösningen ger råd om hur du identifierar, letar reda på, skyddar, styr och svarar på data integritets incidenter för person uppgifter som lagras i Microsoft 365-tjänster som lyder under data integritets regler.
 
 ![Distribuera informationsskydd för datasekretessregler](../media/information-protection-deploy/information-protection-deploy-big-picture.png)
 
-Ytterligare information finns också om användningen av Microsoft 365-identitets-, enhets- och hotskyddskontroller för dina datasekretessbehov. 
+Ytterligare information om användning av Microsoft 365-inställningar för identitets-, enhets-och hot skydd för dina data integritets behov. 
 
-Om du vill uppfylla kriterierna för att skydda information för att uppfylla reglerna för datasekretess använder du dessa funktioner och funktioner för Microsoft 365.
+För att uppfylla villkoren för att skydda information om efterlevnad av data integritets regler, Använd dessa Microsoft 365-funktioner och-funktioner.
 
 | Resurs eller funktion | Beskrivning | Licensiering |
 |:-------|:-----|:-------|
-| Efterlevnadshanteraren | Hantera regelefterlevnad som rör Microsofts molntjänster med detta arbetsflödesbaserade verktyg för riskbedömning i Microsoft Service Trust Portal. | Microsoft 365 E3 och E5 |
-| Efterlevnadspoäng (förhandsversion) | Se en övergripande poäng för din aktuella efterlevnadskonfiguration och rekommendationer för att förbättra den i Efterlevnadscentret för Microsoft 365. | Microsoft 365 E3 och E5 |
-| Office Advanced Threat Protection (ATP) | Skydda dina Microsoft 365-appar och data – t.ex. e-postmeddelanden, Office-dokument och samarbetsverktyg – från angrepp. | Microsoft 365 E3 och E5 | 
+| Efterlevnadshanteraren | Hantera efterlevnad av myndighets aktiviteter, få en total poäng för din aktuella konfiguration av efterlevnad och hitta rekommendationer för förbättringar i det här arbets flödes verktyget för riskbedömning i Microsoft 365 Compliance Center. | Microsoft 365 E3 och E5 |
+| Office Avancerat skydd (ATP) | Skydda dina Microsoft 365-appar och data – t.ex. e-postmeddelanden, Office-dokument och samarbetsverktyg – från angrepp. | Microsoft 365 E3 och E5 | 
 | Känslighetsetiketter | Med hjälp av etiketter med olika nivåer av skydd för e-post, filer och webbplatser kan du klassificera och skydda din organisations data utan att hindra användarnas produktivitet och möjligheter att samarbeta. | Microsoft 365 E3 och E5 |
 | Dataförlustskydd (DLP) | Identifiera, varna för och blockera riskfylld, oavsiktlig eller olämplig delning, t.ex. av data som innehåller personuppgifter, både internt och externt. | Microsoft 365 E3 och E5 | 
 | Etiketter och principer för kvarhållning av data | Implementera kontrollerna för informationsstyrning, t.ex. hur länge data ska behållas och kraven för lagring av personuppgifter för kunder, för att uppfylla organisationens principer och dataföreskrifter. | Microsoft 365 E3 och E5 |
 | E-postkryptering | Skicka och ta emot krypterade e-postmeddelanden som innehåller reglerade data, t.ex. personliga data om kunder, mellan personer i och utanför din organisation. | Microsoft 365 E3 och E5 |
 ||||
 
-## <a name="organization-of-the-guidance-in-this-solution"></a>Organisation av vägledningen i denna lösning
+## <a name="organization-of-the-guidance-in-this-solution"></a>Organisation för vägledningen i den här lösningen
 
-För att hjälpa dig att förstå de Microsoft 365-verktyg som finns tillgängliga för att identifiera, hantera, kontrollera och övervaka personliga data som omfattas av en eller flera sekretessrelaterade bestämmelser, är den här vägledningen uppdelad i avsnitt.
+För att hjälpa dig att förstå de Microsoft 365-verktyg som är tillgängliga för att identifiera, hantera, kontrol lera och övervaka person uppgifter som gäller för en eller flera integritets regler är den här vägledningen ordnad i avsnitt.
  
 ![Distribuera informationsskydd för datasekretessregler](../media/information-protection-deploy/information-protection-deploy-grid.png)
 
-Var och en av dessa avsnitt motsvarar en separat artikel i den här lösningen.
+Varje avsnitt motsvarar en separat artikel i den här lösningen.
 
 >[!Note]
->Om du redan är bekant med dina datasekretessskyldigheter och utför mot en befintlig plan kanske du vill fokusera på vägledningen Förhindra, Skydda, Behåll och Undersöka.
+>Om du redan är bekant med dina data integritets åtaganden och kör ett befintligt abonnemang kanske du vill fokusera på att råd för att förhindra, skydda, hålla och undersöka.
 
 >[!Important]
->Att följa den här vägledningen kommer inte nödvändigtvis att göra dig kompatibel med någon datasekretessreglering, särskilt med tanke på antalet steg som krävs som ligger utanför ramen för funktionerna. Du är ansvarig för att säkerställa din efterlevnad och att konsultera dina juridiska och efterlevnadsteam eller för att söka vägledning och råd från tredje part som är specialiserade på efterlevnad.
+>Om du följer den här vägledningen blir du inte nödvändigt vis kompatibel med någon data integritets förordning, särskilt med tanke på hur många steg som krävs för att funktionerna ska bli ännu bättre. Du är ansvarig för att se till att du uppfyller dina krav och att du kan söka råd och råd från tredje part som specialiserar sig på efterlevnaden.
 >
 
-## <a name="plan-assess-data-privacy-risks-and-identify-sensitive-items"></a>Planera: Bedöma datasekretessrisker och identifiera känsliga objekt 
+## <a name="plan-assess-data-privacy-risks-and-identify-sensitive-items"></a>Planera: utvärdera data integritets risker och identifiera känsliga objekt 
 
-Att bedöma datasekretessregler och risker som din organisation omfattas av är ett viktigt första steg att ta innan du börjar implementera förbättringar, inklusive de som kan uppnås via Microsoft 365-konfiguration. Detta kan omfatta en övergripande bedömning eller identifiering av särskilda känsliga informationstyper som omfattas av regelkontroller som din organisation måste följa, samt förekomsten av dem i din Microsoft 365-miljö.
+Att utvärdera data integritets regler och risker som din organisation är föremål för är en viktig åtgärd innan du börjar implementera förbättringar, inklusive de som kan nås via Microsoft 365-konfigurationen. Detta kan inkludera en övergripande beredskaps bedömning eller identifiering av särskilda känsliga informations typer som lyder under myndighets regler som din organisation måste uppfylla, samt förekomsten av dem i din Microsoft 365-miljö.
 
-Mer information finns i [Bedöma datasekretessrisker och identifiera känsliga objekt](information-protection-deploy-assess.md).
+Mer information finns i [utvärdera data integritets risker och identifiera känsliga objekt](information-protection-deploy-assess.md).
 
-## <a name="track-use-compliance-score-and-compliance-manager"></a>Spår: Använd efterlevnadspoäng och efterlevnadshanterare 
+## <a name="track-use-compliance-manager"></a>Spåra: använda Compliance Manager
 
-Compliance Score and Compliance Manager innehåller en integrerad uppsättning verktyg som är tillgängliga i Microsoft 365 Compliance admin center och Services Trust Portal. Tillsammans ger dessa verktyg dig en inbyggd förmåga att spåra och hantera förbättringsåtgärder totalt sett samt de som rör flera datasekretessbestämmelser som du utsätts för.
+Compliance Manager, som är tillgänglig i Microsoft 365 Compliance Center, ger dig en inbyggd funktion för att spåra och hantera förbättrings åtgärder generellt samt de som är relaterade till flera informations integritets regler som gäller för dig.
 
-Med verktygen kan du också utnyttja inbyggda bedömningsmallar som är specifika för varje förordning, där du kan spåra åtgärdsobjekt för varje vald bedömningsmall, samt visa specifika regelkontroller och relatera dem till specifika åtgärder.
+Använd inbyggda Analyskolumnmallar som är specifika för varje förordning, där du kan spåra uppgifter för varje bedömnings mall som valts, samt för att visa särskilda kontroller och relatera dem till vissa åtgärder.
 
-Mer information finns i [Använd efterlevnadspoäng och efterlevnadshanteraren för att hantera förbättringsåtgärder](information-protection-deploy-compliance.md).
+Mer information finns i [använda överensstämmelse hanteraren för att hantera förbättrings åtgärder](information-protection-deploy-compliance.md).
 
-## <a name="prevent-use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Förhindra: Använd identitet, enhet och hotskydd för datasekretessreglering
+## <a name="prevent-use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Förhindra: Använd identitets-, enhets-och hot skydd för data integritets förordning
 
-Microsoft 365 tillhandahåller ett antal funktioner för identitet, enhet och hotskydd som du kan använda för att följa efterlevnaden av datasekretessregleringen. 
+Microsoft 365 tillhandahåller ett antal funktioner för identitets-, enhets-och hot skydd som du kan använda för att uppfylla data integritets reglernas efterlevnad. 
 
-Mer information finns i [Använda identitet, enhet och hotskydd för dataskyddsreglering](information-protection-deploy-identity-device-threat.md).
+Mer information finns i [använda identitets-, enhets-och hot skydd för data integritets reglering](information-protection-deploy-identity-device-threat.md).
 
-I den här artikeln beskrivs kortfattat vad de dataskyddsbestämmelser som vanligtvis kräver inom dessa områden och innehåller en lista över relaterade Microsoft 365-lösningar, med länkar till mer information som hjälper dig att hantera eventuella implementeringskrav. 
+I den här artikeln beskrivs vad som gäller för data integritets reglerna i allmänhet för dessa områden och ger en lista över relaterade Microsoft 365-lösningar, med länkar till mer information som hjälper dig att hantera eventuella implementerings krav. 
 
-## <a name="protect-information-subject-to-data-privacy-regulation"></a>Skydda information som omfattas av dataskyddsförordningen
+## <a name="protect-information-subject-to-data-privacy-regulation"></a>Skydda information som lyder under data integritets förordning
 
-Dataskyddsregler dikterar ett antal kontroller för skydd av personuppgifter som kan användas i din miljö, inklusive mer än fyrtio protect information-kontroller över bara de fyra dataskyddsbestämmelserna i vår urval av GDPR, California Consumer Protection Act (CCPA), HIPAA-HITECH (United States health care privacy act) och Brazil Data Protection Act (LGPD).
+Data integritets regler anger ett antal skydds kontroller för person uppgifter som kan användas i din miljö, inklusive mer än 40 skydda informations kontroller med bara de fyra data integritets reglerna i vår GDPR, California konsument skydd Act (CCPA), HIPAA-HITECH (USA Health Policy för sjukvårds vård) och språkskydds Act (LGPD).
 
-Mer information finns i [Skydda information som omfattas av datasekretessreglering i din organisation](information-protection-deploy-protect-information.md).
+Mer information finns i [skydda information som lyder under data integritets regler i din organisation](information-protection-deploy-protect-information.md).
 
-I den här artikeln beskrivs de viktigaste kontrollscheman som kan användas för att tillgodose informationsskyddsbehov för datasekretess i din organisation.
+I den här artikeln beskrivs de viktigaste kontroll systemen som kan användas för att skydda informations skydd i din organisation.
 
-## <a name="retain-govern-information-subject-to-data-privacy-regulation"></a>Behåll: Reglera information som omfattas av dataskyddsförordningen
+## <a name="retain-govern-information-subject-to-data-privacy-regulation"></a>Behåll: styr information som lyder under data integritets förordning
 
-Datasekretessbestämmelser kräver kontroller för styrning av personuppgifter som kan användas i din miljö, inklusive mer än tjugofyra kontroller i de fyra datasekretessreglerna i vår urvalsuppsättning GDPR, CCPA, HIPAA-HITECH och LGPD.
+Data integritets regler för att ringa till kontroller för person uppgifter som kan användas i din miljö, inklusive fler än 21 kontroller i de fyra olika sekretess bestämmelserna i vårt exempel på GDPR, CCPA, HIPAA-HITECH och LGPD.
 
-Mer information finns i [Styr information som omfattas av dataskyddsreglering i din organisation](information-protection-deploy-govern.md).
+Mer information finns i [regler för informations integritets reglering i din organisation](information-protection-deploy-govern.md).
 
-Även om reglerna för datasekretess kan vara vaga när det gäller informationsstyrning, &mdash; till exempel målmedveten lagring, innehåller radering och arkivering &mdash; av den här artikeln de primära kontrollscheman som du kan använda behov av informationsstyrning för datasekretess i organisationen.
+Även om data integritets reglerna kan vag information &mdash; som betydelsefullt bevarande, borttagning och arkivering &mdash; av den här artikeln innehåller de primära kontroll systemen som du kan använda för att hantera data integritet i din organisation.
 
-## <a name="investigate-monitor-and-respond-subject-to-data-privacy-regulation"></a>Undersöka: Övervaka och svara på datasekretessreglering
+## <a name="investigate-monitor-and-respond-subject-to-data-privacy-regulation"></a>Undersök: övervaka och svara på ämnet för data integritets reglering
 
-Det finns Microsoft 365-funktioner som hjälper dig att övervaka, undersöka och svara på datasekretessincidenter i organisationen när du operationaliserar relaterade funktioner. 
+Det finns Microsoft 365-funktioner som hjälper dig att övervaka, undersöka och svara på data integritets tillbud i din organisation när du operationalize relaterade funktioner. 
 
-Att ha processer, förfaranden och annan dokumentation för var och en av dessa kan vara viktigt för att visa efterlevnad för tillsynsorgan.
+Att ha processer, procedurer och annan dokumentation för var och en av dessa kan vara viktiga för att påvisa efterlevnad av myndighets organ.
 
-Mer information finns i [Övervaka och svara på datasekretessincidenter i din organisation](information-protection-deploy-monitor-respond.md).
+Mer information finns i [övervaka och svara på data integritets tillbud i din organisation](information-protection-deploy-monitor-respond.md).

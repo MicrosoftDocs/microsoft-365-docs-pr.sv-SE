@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 601e81fc5265fe2ec5f41009b6c4fa43c0c8233d
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: d18b3d8ede271cb0d9611d6210a3d1d32849581a
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962615"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195657"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>Planera pilotmaterial Microsoft Threat Protection Project 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gäller för:**
 - Microsoft Hotskydd

@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa om vilka typer av e-postadresser som accepteras eller nekas av Exchange Online Protection (EOP) och Outlook.com för att förhindra nätfiske.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c67cf5855f2b0a99cf8d03bb6d7ba8557329b300
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e0afd05c80bb4de665d23b17c7089631dad93c78
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827427"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196065"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Så här verifierar EOP från-adressen för att förhindra nätfiske
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Nät fiske attacker är ett konstant hot mot alla e-postorganisationer. Utöver [falska e-postadresser som inte är förfalskade](anti-spoofing-protection.md)använder angripare ofta värden i från-adressen som bryter mot Internet-standarden. För att förhindra den här typen av nätfiske måste du nu använda Exchange Online Protection (EOP) och Outlook.com för att inkludera en RFC-kompatibel adress enligt beskrivningen i det här avsnittet. Denna tillämpning har Aktiver ATS i november 2017.
 

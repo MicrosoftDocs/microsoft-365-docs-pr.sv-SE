@@ -1,7 +1,7 @@
 ---
-title: Vidta åtgärder för avancerade jaktfrågeresultat i Microsoft Threat Protection
-description: Ta snabbt itu med hot och påverkade tillgångar i dina avancerade jaktfrågeresultat
-keywords: avancerad jakt, hotjakt, cyberhotjakt, microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, vidta åtgärder
+title: Vidta åtgärder för frågor om avancerad jakt fråga i Microsoft Threat Protection
+description: Adressera hot och berörda till gångar snabbt och påverkas av dina frågor
+keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, åtgärd
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,65 +17,68 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4ebf220472db69d48127b805256e15246bd400cb
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 14785e032d6e4a7a0868308f4029df623456af2a
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552754"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197899"
 ---
-# <a name="take-action-on-advanced-hunting-query-results"></a>Vidta åtgärder för avancerade jaktfrågeresultat
+# <a name="take-action-on-advanced-hunting-query-results"></a>Vidta åtgärder för avancerade frågor
 
-**Gäller:**
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
+**Gäller för:**
 - Microsoft Hotskydd
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Du kan snabbt innehålla hot eller hantera komprometterade tillgångar som du hittar i [avancerad jakt](advanced-hunting-overview.md) med kraftfulla och omfattande åtgärdsalternativ. Med dessa alternativ kan du:
+Du kan snabbt ta med hot eller adresser som äventyrade till gångar som du hittar i [Avancerad jakt](advanced-hunting-overview.md) med kraftfulla och omfattande åtgärds alternativ. Med dessa alternativ kan du:
 
-- Vidta olika åtgärder på enheter
-- Karantänfiler
+- Utföra olika åtgärder på enheter
+- Quarantine-filer
 
 ## <a name="required-permissions"></a>Nödvändiga behörigheter
-För att kunna vidta åtgärder genom avancerad jakt behöver du en roll i Microsoft Defender ATP med [behörighet att skicka åtgärder för reparation på enheter](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). Om du inte kan vidta åtgärder kontaktar du en global administratör om du vill ha följande behörighet:
+För att kunna vidta åtgärder genom avancerad jakt måste du ha en roll i Microsoft Defender ATP med [behörigheter för att skicka reparations åtgärder på enheter](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). Om du inte kan vidta en åtgärd kontaktar du en global administratör för att få följande behörighet:
 
-*Aktiva åtgärder för reparation > hot- och sårbarhetshantering - Reparationshantering*
+*Aktiva reparations åtgärder > hot och sårbarhet hantering – reparations hantering*
 
-## <a name="take-various-actions-on-devices"></a>Vidta olika åtgärder på enheter
-Du kan vidta följande åtgärder på enheter som identifieras av `DeviceId` kolumnen i frågeresultaten:
+## <a name="take-various-actions-on-devices"></a>Utföra olika åtgärder på enheter
+Du kan utföra följande åtgärder på enheter som identifieras av `DeviceId` kolumnen i frågans resultat:
 
-- Isolera berörda enheter för att innehålla en infektion eller förhindra att attacker rör sig i sidled
-- Samla in utredningspaket för att få mer kriminalteknisk information
-- Kör en antivirussökning för att hitta och ta bort hot med hjälp av de senaste uppdateringarna av säkerhetsinformation
-- Starta en automatiserad undersökning för att kontrollera och åtgärda hot på enheten och eventuellt andra berörda enheter
-- Begränsa appkörningen till endast Microsoft-signerade körbara filer, förhindra efterföljande hotaktivitet via skadlig kod eller andra ej betrodda körbara filer
+- Isolera berörda enheter för att innehålla en infektion eller förhindra att attacker kan flyttas senare
+- Samla in ett Forensic-paket för att få mer information
+- Kör en Antivirus sökning för att hitta och ta bort hot med de senaste säkerhets uppdateringarna
+- Starta en automatiserad undersökning för att kontrol lera och åtgärda hot på enheten och möjligen andra berörda enheter
+- Begränsa program körning till endast Microsoft-signerade körbara filer, förhindra efterföljande hot-aktiviteter genom att använda skadlig program vara eller andra obetrodda program
 
-Om du vill veta mer om hur dessa svarsåtgärder utförs via Microsoft Defender ATP [läser du om svarsåtgärder på enheter](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).
+Om du vill veta mer om hur dessa svars åtgärder utförs via Microsoft Defender ATP [läser du om svars åtgärder på enheter](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).
    
-## <a name="quarantine-files"></a>Karantänfiler
-Du kan distribuera *karantänåtgärden* på filer så att de automatiskt sätts i karantän när de påträffas. När du väljer den här åtgärden kan du välja mellan följande kolumner för att identifiera vilka filer i frågeresultatet som ska sättas i karantän:
+## <a name="quarantine-files"></a>Quarantine-filer
+Du kan distribuera *karantän* åtgärden på filer så att de automatiskt satts i karantän när de påträffas. När du väljer den här åtgärden kan du välja mellan följande kolumner för att identifiera vilka filer i frågeresultatet som ska visas:
 
-- `SHA1`— I de mest avancerade jakttabellerna är detta SHA-1 i filen som påverkades av den registrerade åtgärden. Om en fil till exempel kopierades är det den kopierade filen.
-- `InitiatingProcessSHA1`— I de mest avancerade jakttabellerna är detta den akt som ansvarar för att inleda den registrerade åtgärden. Om till exempel en underordnad process startades är det den överordnade processen. 
-- `SHA256`— Detta är SHA-256-motsvarigheten till den fil som identifieras av `SHA1` kolumnen.
-- `InitiatingProcessSHA256`— Detta är SHA-256-motsvarigheten till den fil som identifieras av `InitiatingProcessSHA1` kolumnen.
+- `SHA1` – I de flesta avancerade jakt tabeller är detta SHA-1 för filen som påverkades av den registrerade åtgärden. Om du till exempel kopierar en fil, blir detta den kopierade filen.
+- `InitiatingProcessSHA1` – I de flesta avancerade jakt tabeller är detta den fil som är ansvarig för att inleda den inspelade åtgärden. Om till exempel en underordnad process är det den överordnade processen. 
+- `SHA256` — Det här är SHA-256-motsvarigheten till filen som identifieras av `SHA1` kolumnen.
+- `InitiatingProcessSHA256` — Det här är SHA-256-motsvarigheten till filen som identifieras av `InitiatingProcessSHA1` kolumnen.
 
-Om du vill veta mer om hur karantänåtgärder vidtas och hur filer kan återställas [läser du om svarsåtgärder på filer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts).
+Läs mer om hur du gör för att få mer information om hur karantäns åtgärder vidtas och hur filer kan återställas [med svars åtgärder på filer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts).
 
 >[!NOTE]
->För att hitta filer och sätta dem i karantän bör frågeresultatet även innehålla `DeviceId` värden som enhetsidentifierare.  
+>Om du vill söka efter filer och karantän kan frågeresultatet innehålla `DeviceId` värden som enhets identifierare.  
 
-## <a name="take-action"></a>Vidta åtgärder
-Om du vill vidta någon av de beskrivna åtgärderna markerar du en eller flera poster i frågeresultatet och väljer sedan **Vidta åtgärder**. En guide guidar dig genom processen att välja och sedan skicka in önskade åtgärder.
+## <a name="take-action"></a>Utför åtgärd
+Om du vill använda någon av de beskrivna åtgärderna markerar du en eller flera poster i frågeresultatet och väljer sedan **vidta åtgärder**. En guide vägleder dig genom processen att välja och sedan skicka dina önskade åtgärder.
 
-![Bild på vald post med panel för att kontrollera posten](../../media/mtp-ah/ah-take-actions.png)
+![Bild av den valda posten med panelen för kontroll av posten](../../media/mtp-ah/ah-take-actions.png)
 
-## <a name="review-actions-taken"></a>Granska vidtagna åtgärder
-Varje åtgärd registreras individuellt i [åtgärdscentret](mtp-action-center.md) under **ÅtgärdscenterHistorik**  >  **History** ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Gå till åtgärdscentret för att kontrollera status för varje åtgärd.
+## <a name="review-actions-taken"></a>Gransknings åtgärder som utförs
+Varje åtgärd registreras individuellt i [Åtgärds centret](mtp-action-center.md) under **Åtgärds Center**  >  **Historik** ([Security.Microsoft.com/Action-Center/History](https://security.microsoft.com/action-center/history)). Gå till åtgärds centret för att kontrol lera status för varje åtgärd.
  
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Arbeta med frågeresultat](advanced-hunting-query-results.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
-- [Översikt över åtgärdscenter](mtp-action-center.md)
+- [Översikt över åtgärds centret](mtp-action-center.md)

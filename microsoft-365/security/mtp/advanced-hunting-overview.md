@@ -18,19 +18,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 47035b5c988dba551948334c0c93d08b779c0d38
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 9b7e20daa3a5d642a864f9b24e836d3c75bbd7b1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950742"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199859"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Det står proaktivt för problem med avancerad jakt i Microsoft Threat Protection
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Gäller för:**
 - Microsoft Hotskydd
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Advanced jakt är ett fråge baserat Threat-verktyg som gör att du kan utforska upp till 30 dagars rå data. Du kan inspektera händelser i ditt nätverk proaktivt för att hitta hot indikatorer och enheter. Den flexibla till gången till data möjliggör obegränsad jakt för både kända och potentiella hot.
 <p></p>
@@ -68,7 +69,7 @@ Tidsinformation i Advanced jakt är i UTC-zonen.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
-- [Få expert utbildning](advanced-hunting-expert-training.md)
+- [Få expertutbildning](advanced-hunting-expert-training.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)

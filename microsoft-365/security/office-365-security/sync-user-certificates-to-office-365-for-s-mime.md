@@ -16,14 +16,17 @@ ms.assetid: 351c932e-99c1-4512-a6e8-788e90b7838f
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln får du lära dig hur du publicerar lämpliga certifikat till Office 365 innan du skickar S/MIME-skyddade meddelanden i Exchange Online.
-ms.openlocfilehash: 634b65e45b01186a27f9ae61c91d4b27f1a11635
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 3551dbacc3cc6279d319860f1133d059216ae591
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826487"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202109"
 ---
 # <a name="sync-user-certificates-to-office-365-for-smime"></a>Synkronisera användarcertifikat med Office 365 för S/MIME
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Innan någon kan skicka S/MIME-skyddade meddelanden i Exchange Online måste lämpliga certifikat vara konfigurerade. För att skicka krypterade meddelanden via Exchange Online använder avsändarens e-postprogram det offentliga certifikatet för mottagaren för att kryptera meddelandet. Det här offentliga 509-certifikatet måste publiceras till Office 365.
 

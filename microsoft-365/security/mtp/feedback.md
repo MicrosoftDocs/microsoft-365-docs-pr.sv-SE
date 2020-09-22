@@ -1,7 +1,7 @@
 ---
-title: Ge feedback om Microsofts hotskydd
-description: Ge produktfeedback om Microsofts hotskydd
-keywords: feedback, m365 säkerhet, säkerhet, 365, funktioner
+title: Ge feedback om skydd mot Microsoft Threat
+description: Ge feedback om produkten på Microsoft Threat Protection
+keywords: feedback, m365, säkerhet, 365, funktioner
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,24 +19,27 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 130bd4bd3d4da10c36da041e41486d55ace1f41a
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 832442ce392882951d0b960d5f36a864ba59684b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113619"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199411"
 ---
-# <a name="provide-feedback-on-microsoft-threat-protection"></a>Ge feedback om Microsofts hotskydd
+# <a name="provide-feedback-on-microsoft-threat-protection"></a>Ge feedback om skydd mot Microsoft Threat
 
-**Gäller:**
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
+**Gäller för:**
 - Microsoft Hotskydd
 
-Din feedback hjälper oss att bli bättre på att skydda din miljö från avancerade attacker. Dela med dig av dina erfarenheter, visningar och önskemål genom att ge feedback.
+Din feedback hjälper oss att få bättre möjligheter att skydda din miljö från avancerade attacker. Dela med dig av dina erfarenheter, exponeringar och förfrågningar genom att ge feedback.
 
-1. Välj **Ge feedback**från valfri del av portalen . 
+1. Välj **ge feedback**i vilken del av portalen som helst. 
 
-    ![Bild på feedbackknappen](../../media/feedback.png)
+    ![Bild av knappen feedback](../../media/feedback.png)
 
-2. Betygsätt din upplevelse och ge information om vad du gillade eller var förbättringar kan göras. Du kan också välja att bli kontaktad om feedbacken. 
+2. Betygs ätt din upplevelse och ge information om vad du tyckte om eller var förbättringen kan göras. Du kan också välja att få kontakt med feedback. 
 
 3. Välj **Skicka**.

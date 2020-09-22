@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 222d7f12c1a648800e4a359eb341354a5609c548
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: d9650811a264992c20a1ed88939e06694373b25c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649385"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197709"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Arbeta med resultat från avancerad jakt fråga
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gäller för:**
 - Microsoft Hotskydd
@@ -134,7 +137,7 @@ Högerklicka på ett värde i resultatet för att snabbt förbättra din fråga.
 
 - Leta tydligt efter det markerade värdet ( `==` )
 - Exkludera det markerade värdet från frågan ( `!=` )
-- Få mer avancerade operatorer för att lägga till värdet i frågan, till `contains` exempel `starts with` och`ends with` 
+- Få mer avancerade operatorer för att lägga till värdet i frågan, till `contains` exempel `starts with` och `ends with` 
 
 ![Bild av avancerad jakt resultat uppsättning](../../media/advanced-hunting-results-filter.png)
 
@@ -151,7 +154,7 @@ När du har tillämpat filtret för att ändra frågan och sedan kör frågan up
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
-- [Olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
+- [Jaga över olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)
 - [Översikt över anpassade identifieringar](custom-detections-overview.md)

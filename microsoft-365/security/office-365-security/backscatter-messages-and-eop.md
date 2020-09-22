@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln får du lära dig mer om bakEOP och Microsoft Exchange Online Protection ()
-ms.openlocfilehash: f1705fd7fc30c9a8cde5f6acfaf145861de3af08
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 2a752c89e2430f24441d14178942b89362736322
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827791"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203593"
 ---
 # <a name="backscatter-in-eop"></a>Återspridning i EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 *Bakgrunds rapporter som inte* kan levereras (kallas även NDR eller studsande meddelanden) som du får för meddelanden som du inte har skickat. Skräp post Forge (förfalskningar) från: adress till sina meddelanden och använder ofta riktiga e-postadresser för att ge trovärdigheten till sina meddelanden. Så när skräp post avsändare inte kan skicka meddelanden till icke befintliga mottagare (spam är en hög volym), är mål-e-postservern i huvudsak att returnera det icke-skickade meddelandet i en NDR till den förfalskade avsändaren i mappen från: adress.
 

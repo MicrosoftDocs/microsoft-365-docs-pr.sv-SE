@@ -14,14 +14,17 @@ ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig att använda åtgärds reglerna för långsam e-postflöde inblick i säkerhets & Compliance Center för att identifiera och åtgärda ineffektiva eller felaktiga regler för e-postflöde (kallas även transport regler) i organisationen.
-ms.openlocfilehash: c933a6816c82161d0f4a6199ff1a339dd8a10eae
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 2f9a35534ab4377cff164b38eeb66dd55c48d5b9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357350"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199271"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Åtgärda regler för långsam e-postflöde inblick i centret för säkerhets & efterlevnad
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Ineffektiva regler för e-postflöde (kallas även transport regler) kan leda till fördröjning i e-postflöden för din organisation. Den här Insight rapporterar regler för e-postflöde som påverkar organisationens e-postflöde. Här följer exempel på dessa typer av regler:
 

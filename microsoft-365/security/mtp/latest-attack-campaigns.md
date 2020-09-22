@@ -15,14 +15,17 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 01a014de3de0a7433aa154d251aa8e1ad5487400
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 48fd80aca01ab3bf5665a53e5538cc450320cf6b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866913"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197923"
 ---
 # <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>Förstå de senaste angrepps kampanjerna och teknikerna med Threat Analytics 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Cyberterrorism hot blir ofta mer frekventa och avancerade. Det är viktigt för organisationer att snabbt kunna bedöma deras säkerhets Posture och återhämtning mot specifika hot.
 

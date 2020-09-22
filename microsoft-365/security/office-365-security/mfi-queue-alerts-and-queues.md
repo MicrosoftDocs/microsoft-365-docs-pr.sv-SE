@@ -11,14 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Administratörer kan lära dig hur du använder widgeten köer i instrument panelen för e-postflöde i säkerhets & Compliance Center för att övervaka misslyckade e-postflöden till deras lokala eller partner organisationer via utgående anslutningar.
-ms.openlocfilehash: bcd78a50f017aae65e82185bf167ea7a227656fa
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 3291a21828215d0a2a99c2226147bb1b748b8469
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357394"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199295"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Köer inblickar i säkerhets & Compliance Center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 När meddelanden inte kan skickas från din organisation till lokala eller partnersbaserade e-postservrar med kopplingar köas de i Microsoft 365. Vanliga exempel som orsakar det här problemet:
 

@@ -1,5 +1,5 @@
 ---
-title: Genomgång - Spoof intelligens insikt
+title: Genom gång – Insight-inblick
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,93 +16,96 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan lära sig hur falska intelligens insikt fungerar, inklusive hur man snabbt avgöra vilka avsändare som lagligen skickar dig oautentiserade e-post.
+description: Administratörer kan lära sig hur inblicken för förfalsknings information fungerar, inklusive hur man snabbt tar reda på vilka avsändare som skickar ett overifierat e-postmeddelande.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1f04baca3761e44acfd26c09cdc0d5283db13697
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: 6fc934491606a53ebfb4bae4f46ab9e1ee93467b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726513"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198577"
 ---
-# <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Genomgång - ATP Spoof intelligens insikt i Microsoft 365
+# <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Genom gång – ATP-information i Microsoft 365
 
-I Microsoft 365-organisationer med Atp (Advanced Threat Protection) kan du använda den falska intelligensinsikten för att snabbt avgöra vilka avsändare som lagligen skickar oautentiserade e-postmeddelanden till dig. Genom att tillåta dem att skicka falska meddelanden kan du minska risken för att falska positiva identifieringar går till användarna. Du kan också använda den falska intelligensinsikten för att övervaka och hantera tillåtna domänpar för att tillhandahålla ett extra säkerhetslager och förhindra att osäkra meddelanden kommer till din organisation.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Om du inte har tidigare information [om rapporter och insikter i Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)kan det hjälpa dig att se hur du enkelt kan navigera från en instrumentpanel till en insikt och rekommenderade åtgärder.
 
-Den här genomgången är en av flera för Security & Compliance Center. Om du vill navigera i rapporter och insikter läser du genomgångarna i avsnittet Närliggande ämnen.
+I Microsoft 365-organisationer med avancerat skydd (ATP) kan du använda falsk IT-insyn för att snabbt avgöra vilka avsändare som skickar ett legitimt e-postmeddelande till dig. Genom att tillåta att de skickar falska meddelanden kan du minska risken för falsk positiv identifiering till användarna. Du kan också använda falsk information för att övervaka och hantera tillåtna domän par för att tillhandahålla ett ytterligare säkerhets lager och förhindra osäkra meddelanden från att komma i din organisation.
+
+Om du inte har använt [rapporter och insikter i säkerhets & Compliance Center](reports-and-insights-in-security-and-compliance.md)kan det vara bra att se hur du enkelt kan navigera från en instrument panel till en inblick och Rekommenderad åtgärd.
+
+Den här genom gången är en av flera för säkerhets & Compliance Center. Information om hur du navigerar i rapporter och insikter finns i avsnittet närliggande information.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till **instrumentpanelssidan för säkerhet** använder du <https://protection.office.com/searchandinvestigation/dashboard> .
+- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. För att gå direkt till sidan **säkerhets instrument panel** <https://protection.office.com/searchandinvestigation/dashboard> .
 
-  Du kan visa den falska intelligensinsikten från mer än en instrumentpanel i Security & Compliance Center. Oavsett vilken instrumentpanel du tittar på ger insikten samma information och gör att du snabbt kan utföra samma uppgifter.
+  Du kan visa inblick från fler än en instrument panel i säkerhets & Compliance Center. Oavsett vilken instrument panel du tittar på, ger inblicken samma uppgifter och gör att du snabbt kan utföra samma uppgifter.
 
-- Du måste tilldelas behörigheter innan du kan göra procedurerna i det här avsnittet. Om du vill använda den falska intelligensinsikten måste du vara medlem i någon av följande rollgrupper:
+- Du måste tilldelas behörigheter innan du kan utföra procedurerna i det här avsnittet. Om du vill använda falsk IT-insikt måste du vara medlem i någon av följande roll grupper:
 
-  - **Organisationshantering** eller **säkerhetsadministratör** i [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-  - **Organisationshantering** eller **hygienhantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
-  - **Säkerhetsläsaren** i [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-  - **Endast visningsorganisation i** [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Organisationshantering** eller **Säkerhetsadministratör** i [Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
+  - **Organisationshantering** eller **Hygienhantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Säkerhetsläsare** i [Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
+  - **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- Du aktiverar och inaktiverar falska underrättelser i ATP:s principer för phishing.You enable and disable spoof intelligence in ATP anti-phishing policies. Mer information finns [i Konfigurera ATP:s principer för phishing-phishing i Microsoft 365](configure-atp-anti-phishing-policies.md).
+- Du aktiverar och inaktiverar förfalsknings information i AntiPhishing-principer för ATP. Mer information finns i [Konfigurera AntiPhishing-principer för ATP i Microsoft 365](configure-atp-anti-phishing-policies.md).
 
-- I Microsoft 365-organisationer med Exchange Online-postlådor och i fristående Exchange Online Protection (EOP) utan Exchange Online-postlådor kan du använda falska underrättelser för att övervaka och hantera avsändare som du skickar meddelanden som inte har autentiseringslag. Mer information finns i [Konfigurera förfalskningsinformation i Microsoft 365](learn-about-spoof-intelligence.md).
+- I Microsoft 365-organisationer med Exchange Online-postlådor och i fristående Exchange Online Protection (EOP) utan Exchange Online-postlådor kan du använda falsk intelligens för att övervaka och hantera avsändare som skickar dig overifierade meddelanden. Mer information finns i [Konfigurera förfalskningsinformation i Microsoft 365](learn-about-spoof-intelligence.md).
 
-## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>Öppna den falska intelligensinsikten i Security & Compliance Center
+## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>Öppna inblicken för falsk identitet i säkerhets & efterlevnad
 
-1. Gå till **instrumentpanelen för &-efterlevnad i** Säkerhets- & Compliance \> **Center.**
+1. Gå till instrument panelen **Threat Management** i säkerhets & efterlevnad \> **.**
 
-2. Leta efter något av följande objekt på raden **Insikter:**
+2. Leta efter något av följande i raden **insikter** :
 
-   - **Falska underrättelser är aktiverad:** Insikten heter **Falska domäner som misslyckades autentisering av de senaste 30 dagarna**. Detta är standardvärdet.
+   - **Förfalsknings intelligens är aktiverat**: inblicken heter **falska domäner som inte kunde verifieras av de senaste 30 dagarna**. Det här är standardinställningen.
 
-   - **Falska underrättelser är inaktiverat**: Insikten i namnet **Aktivera förfalskningsskydd**– och genom att klicka på den kan du aktivera falska underrättelser.
+   - **Förfalsknings intelligens är inaktiverat**: inblicken i namngivna **Aktivera förfalsknings skydd**och när du klickar på den kan du aktivera förfalsknings intelligens.
 
-3. Insikten på instrumentpanelen visar information så här:
+3. Inblicken på instrument panelen visar information så här:
 
-   ![Skärmbild av falska underrättelseinsikter](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
+   ![Skärm bild av inblick i Spoof intelligens](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
 
-   Den här insikten har två lägen:
+   Denna inblick har två lägen:
 
-   - **Insiktsläge**. Om du har någon spoof politik aktiverad, då insikten visar hur många mail påverkades av vår falska intelligens kapacitet under de senaste 30 dagarna.
+   - **Insight-läge**. Om du har en förfalsknings princip aktive rad visar inblicken hur många e-postmeddelanden som har påverkats av våra förfalsknings funktioner under de senaste 30 dagarna.
 
-   - **Vad händer om läge**. Om du inte har någon falska politik aktiverad, då insikten visar hur många mail *skulle* ha påverkats av vår falska intelligens kapacitet under de senaste 30 dagarna.
+   - **Vad händer om-läge**. Om du inte har någon förfalsknings princip aktive rad visar inblicken hur många e-postmeddelanden  *som har*  påverkats av våra förfalsknings uppgifter under de senaste 30 dagarna.
 
-   Hursomhelst, de falska domäner som visas i insikten är uppdelade i två kategorier: **misstänkta domänpar** och **icke-misstänkta domänpar**. Dessa kategorier är ytterligare indelade i tre olika buckets för dig att granska.
+   Oavsett vilket är de falska domänerna som visas i inblicken indelade i två kategorier: **misstänkta domän par** och **icke misstänkt domän par**. Dessa kategorier är indelade i tre olika buckets för att du ska kunna granska.
 
-   Ett **domänpar** är en kombination av Från-adressen och den sändande infrastrukturen:
+   Ett **domän par** är en kombination av från-adressen och den sändande infrastrukturen:
 
-   - Från-adressen är avsändarens e-postadress som visas i e-postklienter. Adressen identifierar e-postmeddelandets upphovsman. Det vill säga, postlådan för personen eller systemet som ansvarar för att skriva meddelandet. Den här adressen kallas även `5322.From` adressen.
+   - Från-adressen är avsändarens e-postadress som visas i e-postklienter. Adressen identifierar e-postmeddelandets upphovsman. Det vill säga, postlådan för personen eller systemet som ansvarar för att skriva meddelandet. Denna adress kallas också `5322.From` adress.
 
-   - Den sändande infrastrukturen, eller avsändaren, är organisationsdomänen för ptr-posten (reverse DNS lookup) för den sändande IP-adressen. Om den sändande IP-adressen inte har någon PTR-post identifieras avsändaren av den sändande IP-adressen med nätmasken 255.255.255.0 i CIDR-notation (/24). Om IP-adressen till exempel är 192.168.100.100 är avsändarens fullständiga IP-adress 192.168.100.100/24.
+   - Den sändande infrastrukturen, eller avsändaren, är domän domänen för omvänd DNS-sökning (PTR-post) för den sändande IP-adressen. Om den sändande IP-adressen inte har någon PTR-post identifieras avsändaren av den sändande undernätet med den 255.255.255.0 nät masken i CIDR-notation (/24). Om IP-adressen till exempel är 192.168.100.100 är avsändarens fullständiga IP-adress 192.168.100.100/24.
 
-   **Misstänkta domänpar** inkluderar:
+   **Misstänkta domän par** är:
 
-   - **Högförtroende parodi:** Microsoft 365 fick starka signaler om att dessa domäner är misstänkta, baserat på de historiska sändningsmönstren och ryktespoängen för domänerna. Microsoft 365 är mycket övertygade om att domänerna är förfalskning och att meddelanden som skickas från dessa domäner är mindre benägna att vara legitima.
+   - **Falska säkerhets**problem: Microsoft 365 fick starka signaler som de här domänerna är misstänkta, baserat på de historiska sändnings mönstren och platsens ryktes poäng. Microsoft 365 är mycket säkert att domänerna är falska och att meddelanden som skickas från dessa domäner är mindre troligt att de är felfria.
 
-   - **Måttlig förtroende parodi:** Microsoft 365 fick måttliga signaler om att dessa domäner är misstänkta, baserat på historiska sändningsmönster och rykte poäng av domänerna. Office 365 är måttligt säker på att domänerna förfalskar och att meddelanden som skickas från dessa domäner är legitima. Denna hink har större chans att innehålla falska positiva (FPs) än hög förtroende parodi hink.
+   - **Falska problem med måttlig exakthet**: Microsoft 365 tog emot måttliga signaler som de här domänerna är misstänkta, baserat på historiska sändnings mönster och företagets ryktes poäng. Office 365 är ganska säkert med att domänerna är falska och att meddelanden som skickas från dessa domäner är giltiga. Den här Bucket har större chans att innehålla falskt positiva (FPs) än en Spoof-Bucket med hög exakthet.
 
-   - **Icke-misstänkta domänpar** (inkluderar **räddad parodi):** Räddad parodi är domäner som har misslyckats med de explicita autentiseringskontrollerna [SPF,](how-office-365-uses-spf-to-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md)) men som har klarat våra implicita e-postautentiseringskontroller ([sammansatt autentisering](email-validation-and-authentication.md#composite-authentication)). Som ett resultat räddade Microsoft 365 posten för din räkning och inga anti-spoofing åtgärder vidtogs på meddelandet.
+   - **Icke misstänkt domän par** (inklusive **räddad förfalskning**): räddade förfalskningar är domäner som inte har de explicita autentiseringsmetoderna för kontroll av [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md)), men klarade med den implicita kontrollen av e-postverifikationen ([sammansatt verifikation](email-validation-and-authentication.md#composite-authentication)). Därför har Microsoft 365 räddat e-postmeddelandet och ingen åtgärd mot förfalskning vidtogs för meddelandet.
 
-### <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>Visa detaljerad information om misstänkta domänpar från falska underrättelseinsikten
+### <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>Visa detaljerad information om misstänkta domän par från inblicken för falska uppgifter
 
-1. På falska intelligens insikt, klicka på någon av domänparen (hög, måttlig eller räddad).
+1. Klicka på något av de här domän paren (High, måttlig eller räddat) i den här funktionen.
 
-   Sidan **Spoof Intelligence-insikt** visas som visar en lista över avsändare som skickar oautentiserade e-postmeddelanden till din organisation. Informationen på den här sidan hjälper dig att avgöra om falska meddelanden är auktoriserade eller om du behöver vidta ytterligare åtgärder. Du kan sortera informationen efter antal meddelanden, det datum då förfalskningen senast upptäcktes med mera. (Klicka på kolumnrubriker, till exempel **Antal meddelanden** eller **Senast sedd.**
+   Sidan med **information om falska** uppgifter visas med en lista över avsändare som skickar overifierad e-post till din organisation. Informationen på den här sidan hjälper dig att avgöra om falska meddelanden är godkända eller om du behöver vidta ytterligare åtgärder. Du kan sortera informationen efter antal meddelanden, det datum då datafilen senast upptäcktes och mer. (Klicka på kolumn rubriker, till exempel **antal meddelanden** eller **senaste**).)
 
-2. Välj ett objekt i tabellen för att öppna ett informationsfönster som innehåller omfattande information om domänparet, inklusive varför vi fångade detta, vad du behöver göra, en domänsammanfattning, WhoIs-data om avsändaren och liknande e-postmeddelanden som vi har sett i din klientorganisation från samma avsändare. Härifrån kan du också välja att lägga till eller ta bort domänparet från listan **Tillåtet försyre säker** avsändare.
+2. Välj ett objekt i tabellen för att öppna en informations ruta som innehåller omfattande information om domän paret, inklusive orsaken till att vi upptäckte att det här är en domän sammanfattning, WhoIs information om avsändaren och liknande e-postmeddelanden som vi har sett i din klient organisation från samma avsändare. Härifrån kan du också välja att lägga till eller ta bort domän paret från **AllowedToSpoof** Safe delistion.
 
-   ![Skärmbild av en domän i informationsfönstret för falska underrättelseinsikter](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
+   ![Skärm bild av en domän i informations fönstret för förfalsknings information](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
 
-### <a name="add-or-remove-a-domain-from-the-allowedtospoof-safe-sender-list"></a>Lägga till eller ta bort en domän från listan Tillåtetsumma för säker avsändare
+### <a name="add-or-remove-a-domain-from-the-allowedtospoof-safe-sender-list"></a>Lägga till eller ta bort en domän från AllowedToSpoof Safe Sender List
 
-Du lägger till eller tar bort en domän från listan Tillåtetsummabehållsam avsändare när du granskar domänparet i informationsfönstret i den falska intelligensinsikten. Ställ bara in växlingen därefter.
+Du lägger till eller tar bort en domän från AllowedToSpoof Safe details list och läser in domän paret i informations fönstret i inblicken med falsk syn. Ställ in växlings knappen på motsvarande sätt.
 
-Detta ändrar den unika domänparkombinationen av den falska domänen och den sändande infrastrukturen och ger inte täckning för hela den falska domänen eller den sändande infrastrukturen separat.
+Detta ändrar den unika kombinationen av domän par i den falska domänen och den sändande infrastrukturen och ger inte täckning för hela den falska domänen eller den sändande infrastrukturen i isolering.
 
-Om du till exempel lägger till följande domänpar i listan Tillåten till förfalskning av avsändare: *Förfalskad domän* "gmail.com" och *Skicka infrastruktur* "tms *.mx.com",* tillåts endast e-post från det domänparet att förfalskas. Andra avsändare som försöker förfalska "gmail.com" och andra domäner som "tms.mx.com" försöker förfalska kommer att fortsätta att skyddas av falska underrättelser.
+Om du till exempel lägger till följande domän par i listan Tillåt avsändare för AllowedToSpoof:  *falsk domän*  "gmail.com" och *skickar infrastruktur* "TMS *. MX.com",* kommer endast e-post från det domän paret att tillåtas för falska. Andra avsändare försöker få falska falsk "gmail.com" och andra domäner som "tms.mx.com" försöker att skydda förfalskningarna genom förfalsknings intelligens.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

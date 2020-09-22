@@ -19,14 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig mer om hot-och svars funktioner i Office 365 Avancerat skydds abonnemang.
-ms.openlocfilehash: 6c009a756b30d4b35159b98b145b19b72c9ab541
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: c37129c7c3801ab1e55bd59f9c40c9e65f9cbd8d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656677"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198439"
 ---
 # <a name="threat-investigation-and-response"></a>Hot utredning och svar
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Hot-undersöknings-och svars funktioner i [Office 365 Avancerat skydds](office-365-atp.md) analyser och administratörer skyddar organisationens Microsoft 365 för företag-användare genom att:
 - Gör det enkelt att identifiera, övervaka och förstå cyberattacks

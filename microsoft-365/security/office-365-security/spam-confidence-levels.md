@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om säkerhets nivån för skräp post (SCL) som tillämpas på meddelanden i Exchange Online Protection (EOP).
-ms.openlocfilehash: 44687b8234e38e7f818aee908d1b65f382c908fe
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: fbd892b0171cee71f516d7ca3b26b91da664af79
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827403"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202239"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>Säkerhets nivån för skräp post (SCL) i EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I Microsoft 365-organisationer med post lådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor flyttas inkommande meddelanden via skräp post filtrering i EOP och har tilldelats ett skräp inlägg. Den poängen mappas till en enskild skräp konfidensnivå (SCL) som läggs till i meddelandet i ett X-sidhuvud. Ett högre SCL anger att ett meddelande är mer troligt för skräp post. EOP åtgärdar meddelande baserat på SCL.
 
@@ -45,7 +48,7 @@ Du märker att SCL 2, 3, 4, 7 och 8 inte används för filtrering av skräp post
 
 Du kan använda regler för e-postflöde (kallas även transport regler) för att stämpla SCL på meddelanden. Om du använder en regel för e-post för att ange SCL utlöser värdena 5 eller 6 skräp post filtrerings åtgärden för **skräp post**och värdena 7, 8 och 9 utlöser skräp post filtrerings åtgärden för **skräp post**filter. Mer information finns i [använda regler för e-postflöde för att ange säkerhets nivån för skräp post (SCL) i meddelanden](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
 
-På samma sätt som i SCL (BCL) identifieras dåligt Mass utskick (kallas även _grå e-post_). Ett högre BCL tyder på att ett Mass utskick är mer sannolikt att skapa klagomål (och därför är det mer sannolikt att få skräp post). Du konfigurerar tröskelvärdet för BCL i principer för skräp post. Mer information finns i [Konfigurera principer för skräp post i EOP](configure-your-spam-filter-policies.md), [bulk klagomål (BCL) i EOP)](bulk-complaint-level-values.md)och [Vad är skillnaden mellan skräp post och Mass utskick?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+På samma sätt som i SCL (BCL) identifieras dåligt Mass utskick (kallas även _grå e-post_). En högre BCL anger att ett Mass utskick innebär att det är mer troligt att vi skapar klagomål (och är därför förmodligen mer sannolikt att få skräp post). Du konfigurerar tröskelvärdet för BCL i principer för skräp post. Mer information finns i [Konfigurera principer för skräp post i EOP](configure-your-spam-filter-policies.md), [bulk klagomål (BCL) i EOP)](bulk-complaint-level-values.md)och [Vad är skillnaden mellan skräp post och Mass utskick?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
 |<!-- -->|
 |---|

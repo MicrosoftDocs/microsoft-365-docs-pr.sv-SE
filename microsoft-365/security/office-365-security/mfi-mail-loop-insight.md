@@ -13,14 +13,17 @@ ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om hur du använder korrigerings filen för möjlig e-post som inblickas i instrument panelen för e-postflöde i säkerhets & efterlevnad för att identifiera och åtgärda e-postloopar i organisationen.
-ms.openlocfilehash: 063906195488aa7d65093c538d9045002448e181
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: e868c020ae307ba490e85e5803f94a67a1a94057
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358276"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198451"
 ---
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Åtgärda eventuell e-postloop inblick i säkerhets & Compliance Center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 En e-postloop är dålig eftersom den tar emot system resurser, använder organisationens e-postkvot och skickar förvirrande rapporter (kallas även för NDR eller studs meddelanden) till de ursprungliga avsändarna.
 

@@ -16,14 +16,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om program ordningen för skydd i Exchange Online Protection (EOP) och hur prioritet svärdet i skydds principer bestämmer vilken princip som tillämpas.
-ms.openlocfilehash: 9556d2262eb59224357e20027a1f0e63404081f2
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e2da22bfbe0e7df70cf8d8b0d8cfd09eaf6e2ee3
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827415"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196053"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Prioritetsordning för e-postskydd
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I Microsoft 365-organisationer med post lådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor kan inkommande e-post flaggas med flera former av skydd. Till exempel är de inbyggda EOPa anti-phishing-principer som är tillgängliga för alla Microsoft 365-kunder och de stabilare säkerhets reglerna för ATP som också är tillgängliga för Office 365 Advanced Threat Protection (Office 365 ATP)-kunder. Meddelanden passerar också genom flera identifierings sökningar för skadlig program vara, spam, nätfiske etc. Allt detta kan vara en del av vilken princip som tillämpas.
 
@@ -35,7 +38,7 @@ Det finns två huvud faktorer som avgör vilken princip som tillämpas på ett m
 
   ****
 
-  |Ordningen|E-postskydd|Kategori|Plats att hantera|
+  |Priority|E-postskydd|Kategori|Plats att hantera|
   |---|---|---|---|
   |9.1|Program|KAT: MALW|[Konfigurera principer för skydd mot skadlig program vara i EOP](configure-anti-malware-policies.md)|
   |två|Fiske|KAT: PHSH|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
@@ -57,7 +60,7 @@ Det finns två huvud faktorer som avgör vilken princip som tillämpas på ett m
 
   ****
 
-  |Antivirus policy för ATP|Ordningen|Användar personifiering|Skydd mot förfalskning|
+  |Antivirus policy för ATP|Priority|Användar personifiering|Skydd mot förfalskning|
   |---|---|---|---|
   |Princip A|9.1|På|Av|
   |Princip B|två|Av|På|

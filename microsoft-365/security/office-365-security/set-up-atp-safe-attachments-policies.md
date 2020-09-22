@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du definierar principer för säkra bifogade filer för att skydda din organisation från skadliga filer via e-post.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a8b69d114b1387a1ef76d962424149c1db93ce04
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 5f9f1a6cc250fdd336e48c19c6cb5d73e9a05800
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656640"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197229"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Konfigurera Office 365-principer för säkra bifogade filer
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!IMPORTANT]
 > Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](office-365-atp.md). Om du är hem användare letar efter information om säkra bifogade filer i Outlook kan du läsa mer i [avancerad Outlook.com säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -97,7 +100,7 @@ När du skapar principer för säkra bifogade filer via ATP väljer du bland må
 |---|---|---|
 |**Av**|Söker inte igenom bifogade filer för skadlig kod  <br/> Fördröj inte leverans av meddelanden|Inaktivera inaktive avsökning för markerade mottagare.  <br/> Förhindra onödiga fördröjningar i routning av intern e-post.  <br/> **Det här alternativet rekommenderas inte för de flesta användare. Du bör bara använda det här alternativet om du vill inaktivera sökningar efter ATP-säkra bilagor för mottagare som bara får e-post från betrodda avsändare.**|
 |**Övervaka**|Skickar meddelanden med bifogade filer och följer sedan upp vad som händer med identifierad skadlig kod|Se var upptäckta skadlig kod hamnar i din organisation|
-|**Spärrade**|Förhindrar att meddelanden med upptäckta bilagor för skadlig kod fortsätter  <br/> Skickar meddelanden med identifierat skadlig kod till [karantän i Office 365](manage-quarantined-messages-and-files.md) där en säkerhets administratör eller analytiker kan granska och släppa (eller ta bort) dessa meddelanden  <br/> Blockerar framtida meddelanden och bilagor automatiskt|Skydda din organisation från upprepade attacker med samma skadliga program vara|
+|**Blockera**|Förhindrar att meddelanden med upptäckta bilagor för skadlig kod fortsätter  <br/> Skickar meddelanden med identifierat skadlig kod till [karantän i Office 365](manage-quarantined-messages-and-files.md) där en säkerhets administratör eller analytiker kan granska och släppa (eller ta bort) dessa meddelanden  <br/> Blockerar framtida meddelanden och bilagor automatiskt|Skydda din organisation från upprepade attacker med samma skadliga program vara|
 |**Byter**|Tar bort identifierade bifogade filer  <br/> Meddelar mottagare om att bifogade filer har tagits bort  <br/> Skickar meddelanden med identifierat skadlig kod till [karantän i Office 365](manage-quarantined-messages-and-files.md) där en säkerhets administratör eller analytiker kan granska och släppa (eller ta bort) dessa meddelanden|Öka synligheten för mottagarna att bifogade filer har tagits bort på grund av upptäckt skadlig kod|
 |**Dynamisk leverans**|Skickar meddelanden omedelbart  <br/> Ersätter bifogade filer med en plats hållare tills genomsökningen är klar och bifogar sedan bilagor igen om ingen skadlig kod hittas  <br/> Inkluderar funktioner för förhands granskning av bifogade filer för de flesta PDF-och Office-filer under genomsökning  <br/> Skickar meddelanden med identifierat skadlig kod till karantän där en säkerhets administratör eller analytiker kan granska och släppa (eller ta bort) dessa meddelanden  <br/> [Lär dig mer om dynamisk leverans och förhands granskning med säkra filer för ATP](dynamic-delivery-and-previewing.md) <br/> |Undvik meddelande fördröjningar när du skyddar mottagare från skadliga filer  <br/> Aktivera användare för att förhandsgranska bifogade filer i fel säkert läge när genomsökning sker|
 |**Aktivera omdirigering**|Gäller när alternativet övervaka, blockera eller Ersätt är markerat  <br/> Skickar bifogade filer till en viss e-postadress där säkerhets administratörer och analytiker kan undersöka|Aktivera säkerhets administratörer och analytiker för att undersöka misstänkta bilagor|

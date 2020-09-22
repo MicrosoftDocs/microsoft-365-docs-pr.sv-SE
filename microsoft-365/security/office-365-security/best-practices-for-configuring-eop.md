@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Följ de här rekommendationerna för en fristående Exchange Online Protection (EOP) för att ställa in dig själv och undvika vanliga konfigurations fel.
-ms.openlocfilehash: eb8e4aff765fbc1ab13c603f32ca0af51f87a4ae
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: cb3aa36720a6a46932d69341394304937bb1a296
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827671"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203569"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Metod tips för att konfigurera fristående EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Följ de här rekommendationerna för en fristående Exchange Online Protection (EOP) för att ställa in dig själv och undvika vanliga konfigurations fel. I det här avsnittet förutsätts det att du redan har slutfört installationen. Om du inte har slutfört EOP installations programmet läser du [Konfigurera EOP-tjänsten](set-up-your-eop-service.md).
 
@@ -41,7 +44,7 @@ Dessa inställningar täcker ett antal funktioner utanför säkerhets principer.
 
 ****
 
-|Säkerhetsfunktionens namn|Standar|Tillåts|Kommentar|
+|Säkerhetsfunktionens namn|Standard|Tillåts|Kommentar|
 |---|---|---|---|
 |[Konfigurera SPF för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Ja|Ja||
 |[Använd DKIM för att validera utgående e-post som skickas från din egna domän i Office 365](use-dkim-to-validate-outbound-email.md)|Ja|Ja||

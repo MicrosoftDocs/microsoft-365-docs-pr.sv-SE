@@ -13,14 +13,17 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära dig hur du använder SMTP AUTH inblick och rapport i instrument panelen för e-postflöde i säkerhets & Compliance Center för att övervaka e-avsändare i organisationen som använder autentiserad SMTP (SMTP AUTH) för att skicka e-postmeddelanden.
-ms.openlocfilehash: 4123edcfa08e31217dcd6a29186492bc036fa7a0
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 7ca673e5ecc92c28996a976c26a38ae570f16203
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357440"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199247"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>SMTP-AUTH-klienter inblick och rapportera i säkerhets & Compliance Center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 **SMTP-AUTH-klienterna** inblickar i [instrument panelen för e-postflöden](mail-flow-insights-v2.md) och den tillhör ande [SMTP-authn-rapporten](#smtp-auth-clients-report) i [säkerhets & Compliance Center](https://protection.office.com) markerar användning av SMTP auth client-klientprogrammet för överföring av användare eller system konton i din organisation. Det här bakåtkompatibla protokollet (som använder slut punkts smtp.office365.com) endast erbjuder grundläggande inloggningsautentisering och är känsligt för att användas av obehöriga konton för att skicka e-post. Med inblick och rapport kan du söka efter ovanlig aktivitet för SMTP-profilens e-postinlägg. Det visar också TLS-dataanvändningen för klienter eller enheter med SMTP-autentisering.
 

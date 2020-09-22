@@ -14,14 +14,17 @@ ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln får du lära dig hur du växlar till Exchange Online Protection (EOP) från en lokal server för e-posthygien eller Cloud-baserad skydd.
-ms.openlocfilehash: a6405411a130abf8369b312f553060caf0bf3855
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 25669982c06127331369fdb595c6614733681047
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827803"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202131"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Byta till EOP från Google Postini, Barracuda Spam and Virus Firewall eller Cisco IronPort
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  Syftet med det här avsnittet är att hjälpa dig att förstå processen för att växla till Exchange Online Protection (EOP) från en lokal server för e-posthygien eller Cloud-baserad skydds tjänst, och sedan tillhandahålla hjälp resurser för att komma igång. Det finns många lösningar för skräp post filtrering, men processen för att växla till EOP är i de flesta fall.
 

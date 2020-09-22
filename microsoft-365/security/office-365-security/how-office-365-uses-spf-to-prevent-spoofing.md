@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur Microsoft 365 använder SPF-posten (avsändarens Policy Framework) i DNS för att säkerställa att mål-e-postsystemen litar på meddelanden som skickas från din egen domän.
-ms.openlocfilehash: 702c5de90c53388a3d55ad752010fbaa04b5556b
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: c437793a63f3869573b023cbcd9420e4d3c3b554
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307655"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196113"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Så använder Microsoft 365 SPF (Sender Policy Framework) för att förhindra förfalskning
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **Sammanfattning:** I den här artikeln beskrivs hur Microsoft 365 använder SPF-posten (avsändarens Policy Framework) i DNS för att säkerställa att mål-e-postsystemen litar på meddelanden som skickas från din egen domän. Detta gäller för utgående e-post som skickas från Microsoft 365. Meddelanden som skickas från Microsoft 365 till en mottagare inom Microsoft 365 kommer alltid att skicka SPF.
 

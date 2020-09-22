@@ -1,7 +1,7 @@
 ---
-title: Översikt över anpassade identifieringar i Microsoft Threat Protection
-description: Förstå hur du kan använda avancerad jakt för att skapa anpassade identifieringar och generera aviseringar
-keywords: avancerad jakt, hotjakt, cyberhotjakt, microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, anpassade upptäckter, schema, kusto, microsoft 365, Microsoft Threat Protection
+title: Översikt över anpassade identifieringar i skydd mot Microsoft Threat
+description: Förstå hur du kan använda avancerad jakt för att skapa anpassade identifieringar och skapa aviseringar
+keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, anpassade identifieringar, schema, kusto, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,26 +17,29 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: cdbaf9cfd2172656ed75cb3c0a1a9e361070f25b
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: 28d6cca20c8b386d5e6f7f39b80264a39f88ec55
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498357"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199471"
 ---
 # <a name="custom-detections-overview"></a>Översikt över anpassade identifieringar
 
-**Gäller:**
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
+**Gäller för:**
 - Microsoft Hotskydd
 
-Med anpassade identifieringar kan du proaktivt övervaka och svara på olika händelser och systemtillstånd, inklusive misstänkt intrångsaktivitet och felkonfigurerade slutpunkter. Detta möjliggörs genom anpassningsbara identifieringsregler som automatiskt utlöser aviseringar samt svarsåtgärder.
+Med anpassade identifieringar kan du proaktivt övervaka för att visa och svara på olika händelser och system tillstånd, inklusive misstänkt överträdelse aktivitet och felkonfigurerade slut punkter. Det här är möjligt genom anpassningsbara identifierings regler som automatiskt aktiverar notifieringar och svars åtgärder.
 
-Anpassade identifieringar fungerar med [avancerad jakt](advanced-hunting-overview.md), som ger ett kraftfullt, flexibelt frågespråk som täcker en bred uppsättning händelse- och systeminformation från nätverket. Du kan ställa in dem så att de körs med jämna mellanrum, generera aviseringar och vidta svarsåtgärder när det finns matchningar.
+Anpassade identifieringar fungerar med [Avancerad jakt](advanced-hunting-overview.md), som innehåller ett kraftfullt och flexibelt frågespråk som täcker en bred uppsättning händelser och system information från ditt nätverk. Du kan ange att de ska köras med jämna mellanrum, skapa aviseringar och vidta åtgärder när det finns träffar.
 
-Anpassade identifieringar ger:
-- Varningar för regelbaserade identifieringar som skapats från avancerade jaktfrågor
-- Automatiska svarsåtgärder
+Anpassade identifierings alternativ:
+- Aviseringar för regelbaserade identifieringar baserade på avancerade jakt frågor
+- Automatiska svars åtgärder
 
-## <a name="related-topic"></a>Relaterat ämne
-- [Skapa och hantera anpassade identifieringsregler](custom-detection-rules.md)
+## <a name="related-topic"></a>Närliggande ämne
+- [Skapa och hantera anpassade identifierings regler](custom-detection-rules.md)
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

@@ -17,14 +17,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om kampanjmallar i Office 365 Avancerat skydd.
-ms.openlocfilehash: 60ec8ea1d2c164905e7b57f4b518ea3f80e7986c
-ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
+ms.openlocfilehash: 881dcde1157877eb015d9700bcbcd08fd3336192
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48173314"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203485"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Analysvyer i Office 365 ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Kampanjmallar är en funktion i abonnemanget Avancerat skydd (ATP) (till exempel Microsoft 365 E5 eller organisationer med ett ATP-abonnemang 2-tillägg). I vyn kampanjer i säkerhets & identifieras och kategoriseras nätfiske-attacker i tjänsten. Med hjälp av kampanjmallar kan du:
 

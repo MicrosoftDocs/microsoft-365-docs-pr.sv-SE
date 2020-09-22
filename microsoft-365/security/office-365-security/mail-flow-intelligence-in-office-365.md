@@ -13,14 +13,17 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Administratörer kan läsa mer om fel koderna som är kopplade till meddelande leverans via kopplingar (kallas även för e-postflöde).
-ms.openlocfilehash: e8427f3e0341ccb381121b6cdc83d20727713d4c
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 0d73ea1fe64cda3c3f29f7bd437bba4e93f37529
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307923"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198509"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>E-postflödesinformation i EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I Microsoft 365-organisationer med post lådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor använder du vanligt vis en koppling för att dirigera e-postmeddelanden från EOP till din lokala e-postmiljö. Du kan också använda en koppling för att dirigera meddelanden från Microsoft 365 till en partner organisation. När Microsoft 365 inte kan leverera dessa meddelanden via kopplingen köas de i Microsoft 365. Microsoft 365 fortsätter att försöka leverera för varje meddelande i 24 timmar. Efter 24 timmar upphör det köade meddelandet att upphöra och meddelandet kommer att återföras till den ursprungliga avsändaren i en rapport om utebliven leverans (kallas även för en NDR eller ett studs meddelande).
 

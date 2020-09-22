@@ -20,14 +20,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig om skräp post meddelanden för meddelanden i karantän i Exchange Online Protection (EOP).
-ms.openlocfilehash: 9e9c95fafe3610e0ad945f18aa85ff13342d8d65
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 9d1da6c4db245ecb065a5a076f2bc6a9c275c494
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827367"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195825"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Använda skräp post meddelanden för att frigöra och rapportera översatta meddelanden
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor lagrar karantänen potentiellt farliga eller oönskade meddelanden. Mer information finns i [karantän meddelanden i EOP](quarantine-email-messages.md).
 

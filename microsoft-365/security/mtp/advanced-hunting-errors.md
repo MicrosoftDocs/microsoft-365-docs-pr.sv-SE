@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5bc49ddfa93a06bc8f3d84ce7b8492681ee65cb7
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 20133e0f5dda3abc583adf66cc20a1d8fde190cf
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950959"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198007"
 ---
 # <a name="handle-advanced-hunting-errors"></a>Hantera avancerade jakt fel
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 I Advanced jakt visas fel för att informera om syntaxfel och när frågor trycker på [fördefinierade gränser](advanced-hunting-limits.md). Se tabellen nedan för tips om hur du kan lösa eller undvika fel. 
 
@@ -40,6 +43,6 @@ I Advanced jakt visas fel för att informera om syntaxfel och när frågor tryck
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Avancerade råd om att få råd](advanced-hunting-best-practices.md)
-- [Tjänst begränsningar](advanced-hunting-limits.md)
+- [Tjänstbegränsningar](advanced-hunting-limits.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Kusto Query-översikt](https://docs.microsoft.com/azure/data-explorer/kusto/query/)

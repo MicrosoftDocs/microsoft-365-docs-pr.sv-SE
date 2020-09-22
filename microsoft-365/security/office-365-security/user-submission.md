@@ -15,14 +15,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa hur du konfigurerar en post låda för att samla in skräp post och nätfiske som rapporteras av användare.
-ms.openlocfilehash: e482399adb6304840b8286a226800e6b9dcb6813
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: 6ae534278f4471f98f2d3bdd2318c687cea9f1d3
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394729"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195813"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>Ange en post låda för användar överföringar av skräp post och nät fiske meddelanden i Exchange Online
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 I Microsoft 365-organisationer med Exchange Online-postlådor kan du ange en post låda som tar emot meddelanden som användare rapporterar som skadlig eller inte skadlig. När användarna skickar meddelanden med olika rapporterings alternativ kan du använda den här post lådan för att avlyssna meddelanden (endast skicka till den anpassade post lådan) eller ta emot kopior av meddelanden (skicka till den anpassade post lådan och Microsoft). Den här funktionen fungerar med följande alternativ för meddelande rapportering:
 
