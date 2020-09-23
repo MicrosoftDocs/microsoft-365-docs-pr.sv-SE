@@ -3,7 +3,7 @@ title: Implementera VPN-fildelning för Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/21/2020
+ms.date: 9/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Så här implementerar du delade VPN-tunnlar för Office 365
-ms.openlocfilehash: bfdc11ffe4244ec0ac83bb1c0470476aafeec939
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: af5c2ea35df921abe8eaa9a85ab2ab244931c098
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171428"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214894"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementera VPN-fildelning för Office 365
 
@@ -37,7 +37,7 @@ För ganska lite tid är VPN-modeller där alla anslutningar från fjär renhete
 
 Det är väldigt optimalt att använda tvingande tunnel anslutningar för att ansluta till distribuerade och prestanda känsliga moln tillämpningar, men den negativa påverkan av detta kan ha godkänts av vissa företag, så att du bevarar statusen quo från ett säkerhets perspektiv. Ett exempel diagram för det här scenariot visas nedan:
 
-![VPN-konfiguration för delad tunnel](../media/vpn-split-tunneling/vpn-ent-challenge.png)
+![VPN-konfiguration för delad tunnel](../media/vpn-split-tunneling/enterprise-network-traditional.png)
 
 Det här problemet har växandets för ett antal år, med många kunder som rapporterar en större nätverks trafik. Trafik som används för lokal anslutning ansluter nu till externa moln slut punkter. Många Microsoft-kunder rapporterar att tidigare, runt 80% av nätverks trafiken var till en intern källa (representerade av den prickade linjen i ovanstående diagram). I 2020 det numret är nu cirka 20% eller lägre när de har förflyttade stora arbets belastningar till molnet, är dessa trender inte ovanliga med andra företag. Över tiden blir modellen ovan allt mer besvärlig och unhållbart, vilket gör att en organisation inte kan bli smidig när den flyttas till ett moln först världen.
 
@@ -95,7 +95,7 @@ I det här avsnittet hittar du de enkla stegen som krävs för att migrera din V
 
 I diagrammet nedan visas hur Rekommenderad VPN-delnings-tunnel-lösning fungerar:
 
-![Information om delad tunnel-VPN-lösning](../media/vpn-split-tunneling/vpn-split-detail.png)
+![Information om delad tunnel-VPN-lösning](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. identifiera slut punkterna som ska optimeras
 
@@ -109,9 +109,6 @@ URL-adresser i den här kategorin har följande egenskaper:
 - Är bandbredd och/eller fördröjnings känslig
 - Kan ha nödvändiga säkerhets element i tjänsten i stället för på infogade nätverk
 - Konto för omkring 70-80% av volymen för trafik till Office 365-tjänsten
-
->[!NOTE]
->Microsoft har bekräftat att **det ska gå** att pausa slut punkter för Office 365 till och med minst **juni 30 2020**, vilket gör att kunderna kan fokusera på andra utmaningar i stället för att underhålla slut punkts Lägg efter att den ursprungligen implementerats. Den här artikeln kommer att uppdateras för att återspegla eventuella framtida ändringar.
 
 Mer information om Office 365-slutpunkter och hur de kategoriseras och hanteras finns i artikeln [Hantera Office 365-slutpunkter](managing-office-365-endpoints.md).
 

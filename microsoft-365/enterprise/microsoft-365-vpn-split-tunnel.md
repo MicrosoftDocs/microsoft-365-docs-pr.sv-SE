@@ -3,7 +3,7 @@ title: 'Översikt: dela VPN-tunnlar med Office 365'
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/3/2020
+ms.date: 9/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Vägledning för att använda delade VPN-tunnlar med Office 365 för att optimera Office 365-anslutningen för fjärran vändare.
-ms.openlocfilehash: aad7932abb6b96a518b069ec24e836d2b5d234a1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: cda9333c7edbcc323544290c2ba946a8464f9c57
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696743"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214772"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>Optimera Office 365-anslutningen för fjärranvändare med uppdelad VPN-tunnel
 <!---
@@ -89,16 +89,13 @@ Den här täta uppsättningen slut punkter kan delas ut från den tvingade VPN-t
 
 Säkerhets element som DLP, AV-skydd, inloggningsautentisering och åtkomst kontroll kan skickas mycket mer effektivt mot dessa slut punkter i olika lager i tjänsten. När vi också avlastar trafik volymen från VPN-lösningen, frigör den VPN-kapaciteten för affärs kritisk trafik som fortfarande använder den. Dessutom bör behovet av många fall ta bort så att du kan gå igenom ett tids krävande och dyrt uppgraderings program för att hantera det nya sättet att fungera.
 
-![VPN-konfiguration för delad tunnel](../media/vpn-split-tunneling/vpn-model-2.png)
+![Information om delade tunnlar för tunnel](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 _Bild 3: en lösning för VPN-delning med definierade Office 365-undantag direkt till tjänsten. All annan trafik återförs till företagets nätverk oavsett destination._
 
 Från ett säkerhets perspektiv har Microsoft en matris med säkerhetsfunktioner som kan användas för att ge liknande eller ännu bättre säkerhet än den som skickas via den lokala säkerhets stacken. Microsoft Security Teams blogg inlägg [alternativa sätt för säkerhetsexperter och det för att få moderna säkerhets kontroller i dagens unika scenarier för fjärrarbete](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) har en tydlig översikt över tillgängliga funktioner och du hittar mer detaljerad vägledning i den här artikeln. Du kan också läsa om Microsofts implementering av uppdelad VPN-tunnel vid [körning på VPN: hur Microsoft sköter fjärrpersonalen](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv).
 
 I många fall kan den här implementeringen uppnås på flera timmar, vilket möjliggör en snabb lösning på ett av de mest näraste problemen med organisationer, medan de snabbt kan växla till fjärran sluten fjärråtkomst. Information om hur du skapar delade tunnlar finns i [Implementera VPN dela tunnlar för Office 365](microsoft-365-vpn-implement-split-tunnel.md).
-
->[!NOTE]
->Microsoft har bekräftat att **det ska gå** att pausa slut punkter för Office 365 till och med minst **juni 30 2020**, vilket gör att kunderna kan fokusera på andra utmaningar i stället för att underhålla slut punkts Lägg efter att den ursprungligen implementerats.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
@@ -112,8 +109,8 @@ I många fall kan den här implementeringen uppnås på flera timmar, vilket mö
 
 [Köra på VPN: hur Microsoft sköter fjärrarbets styrkan](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
-[Principer för nätverks anslutning för Office 365](microsoft-365-network-connectivity-principles.md)
+[Office 365 principer för nätverksanslutningar](microsoft-365-network-connectivity-principles.md)
 
-[Utvärdering av Office 365 nätverks anslutning](assessing-network-connectivity.md)
+[Utvärdera Nätverksanslutningar för Office 365](assessing-network-connectivity.md)
 
-[Microsoft 365 anslutnings test](https://aka.ms/netonboard)
+[Microsoft 365 anslutningstest](https://aka.ms/netonboard)

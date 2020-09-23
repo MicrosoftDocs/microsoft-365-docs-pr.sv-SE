@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Översikt över nätverks anslutningar i Microsoft 365 Admin Center (för hands version)
-ms.openlocfilehash: a51cfba962ff884afa634473c0523e49a92a56f5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fc800d6f7a63e34f83b089fdea41b68cbf9134da
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200803"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214921"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Nätverks anslutning i Microsoft 365 Admin Center (för hands version)
 
@@ -33,7 +33,7 @@ Administrations centret för Microsoft 365 inkluderar nu sammansatta nätverks a
 
 Du kan uppmanas att gå med i den offentliga för hands versionen för din organisation. Godkännandet skedde vanligt vis omedelbart och sedan visas sidan Nätverks anslutning. 
 
-Om du navigerar till sidan Nätverks anslutning visas en översikts ruta med en karta över globala nätverks prestanda, en nätverks utvärdering omfångst för hela klient organisationen och en lista över aktuella problem. För att komma åt sidan måste du vara administratör för organisationen i Microsoft 365. Den administrativa rollen för rapport läsaren får Läs åtkomst till den här informationen. Konfigurera platser och andra delar av nätverks anslutningen en administratör måste ingå i en server administratörs roll, till exempel rollen tjänst support administratör. Från översikten kan du öka detalj nivån för att visa specifika mått för nätverks prestanda och problem efter plats. Mer information finns i [Översikt över nätverkets prestanda i administrations centret för Microsoft 365](#network-connectivity-overview-in-the-microsoft-365-admin-center).
+Om du navigerar till sidan Nätverks anslutning visas en översikts ruta med en karta över globala nätverks prestanda, en nätverks utvärdering omfångst för hela klient organisationen och en lista över aktuella problem. För att komma åt sidan måste du vara administratör för organisationen i Microsoft 365. Den administrativa rollen för rapport läsaren får Läs åtkomst till den här informationen. Konfigurera platser och andra delar av nätverks anslutningen en administratör måste ingå i en server administratörs roll, till exempel rollen tjänst support administratör. Från översikten kan du öka detalj nivån för att visa specifika mått för nätverks prestanda och problem efter plats. Mer information finns i [nätverks anslutnings översikt i administrations centret för Microsoft 365](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>Förutsättningar för att nätverks anslutningar ska visas
 
