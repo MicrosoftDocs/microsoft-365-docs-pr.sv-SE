@@ -14,6 +14,8 @@
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Plan för säkerhet och efterlevnad i Office 365
       href: plan-for-security-and-compliance.md
+    - name: Förlängning av efterlevnad
+      href: compliance-extensibility.md
 - name: Hantera insiderrisker
   items:
     - name: Hantering av insiderrisker
@@ -258,6 +260,8 @@
               href: retention-policies-sharepoint.md
             - name: Kvarhållning för Microsoft Teams
               href: retention-policies-teams.md
+            - name: Retention för Yammer
+              href: retention-policies-yammer.md
             - name: Kvarhållning för Exchange
               href: retention-policies-exchange.md
         - name: Komma igång med kvarhållning
@@ -310,8 +314,52 @@
               href: archive-instant-bloomberg-data.md
             - name: LinkedIn
               href: archive-linkedin-data.md
+            - name: Fysiska märkningsdata
+              href: import-physical-badging-data.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
+        - name: Globanet-datakontakter
+          items:
+            - name: EML
+              href: archive-eml-data.md
+            - name: FX-anslutning
+              href: archive-fxconnect-data.md
+            - name: Reuters Eikon
+              href: archive-reuterseikon-data.md
+            - name: Slack
+              href: archive-slack-data.md
+            - name: Symphony
+              href: archive-symphony-data.md
+            - name: Textavgränsad
+              href: archive-text-delimited-data.md
+            - name: Webex Teams
+              href: archive-webexteams-data.md
+            - name: Arbetsplats från Facebook
+              href: archive-workplacefromfacebook-data.md
+            - name: Zooma möten
+              href: archive-zoommeetings-data.md
+            - name: Slack
+              href: archive-slack-data.md
+            - name: Zooma möten
+              href: archive-zoommeetings-data.md
+        - name: TeleMessage-datakontakter
+          items:
+            - name: Android
+              href: archive-android-archiver-data.md
+            - name: AT & T-nätverk
+              href: archive-att-network-archiver-data.md
+            - name: Bell-nätverk
+              href: archive-bell-network-data.md
+            - name: Företagsnummer
+              href: archive-enterprise-number-data.md
+            - name: O2-nätverk
+              href: archive-o2-network-data.md
+            - name: TELUS-nätverk
+              href: archive-telus-network-data.md
+            - name: Verizon-nätverk
+              href: archive-verizon-network-data.md
+            - name: WhatsApp
+              href: archive-whatsapp-data.md
         - name: Arbeta med en partner för att arkivera data från tredje part
           href: work-with-partner-to-archive-third-party-data.md
         - name: Söka efter data från tredje part
@@ -794,31 +842,30 @@
       href: alert-policies.md
 - name: Hantera efterlevnadsrisker
   items:
+    - name: Efterlevnadshanteraren
+      items:
+        - name: Lär dig om Compliance Manager
+          href: compliance-manager.md
+        - name: Snabbstart för Compliance Manager
+          href: compliance-manager-quickstart.md
+        - name: Kom igång med Compliance Manager
+          href: compliance-manager-setup.md
+        - name: Skapa och hantera utvärderingar
+          href: compliance-manager-assessments.md
+        - name: Arbeta med utvärderingsmallar
+          href: compliance-manager-templates.md
+        - name: Lista över mallar för efterlevnadshanterare
+          href: compliance-manager-templates-list.md
+        - name: Tilldela och slutföra förbättringsåtgärder
+          href: compliance-manager-improvement-actions.md
+        - name: Hur din efterlevnadspoäng beräknas
+          href: compliance-score-calculation.md
+        - name: Vanliga frågor (FAQ)
+          href: compliance-manager-faq.md
+        - name: Compliance Manager (klassisk)
+          href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Microsoft Service Trust Portal
       href: get-started-with-service-trust-portal.md
-    - name: Efterlevnadspoäng och Compliance Manager (förhandsversion)
-      items:
-        - name: Efterlevnadspoäng (förhandsversion)
-          href: compliance-score.md
-        - name: Konfigurera Efterlevnadspoäng
-          href: compliance-score-setup.md
-        - name: Anpassa Efterlevnadspoäng med bedömningar
-          href: compliance-score-assessments.md
-        - name: Tilldela och utföra arbete med förbättringsåtgärder
-          href: compliance-score-improvement-actions.md
-        - name: Så beräknas din poäng
-          href: compliance-score-methodology.md
-        - name: Vanliga frågor (FAQ)
-          href: compliance-score-faq.md
-        - name: Compliance Manager (förhandsversion)
-          href: compliance-manager-overview.md
-          items:
-            - name: Nyheter i Compliance Manager (förhandsversion)
-              href: compliance-manager-release-notes.md
-            - name: Arbeta med Compliance Manager (förhandsversion)
-              href: working-with-compliance-manager.md
-            - name: Compliance Manager (klassisk)
-              href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: GDPR – verktyg för begäran från registrerad person
       href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md
     - name: Informationsskydd för Office 365 för GDPR
