@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Sammanfattning: den nya webb tjänsten för slut punkter innehåller inte ett litet antal slut punkter för specifika scenarier.'
 hideEdit: true
-ms.openlocfilehash: 821332f573eb8499a01838a5dc9941c9844086a3
-ms.sourcegitcommit: 04f196528a7a91b404478553433af3fa94d7eee7
+ms.openlocfilehash: 30d0c7af8420f85abf820839a26c989704860c0a
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47317511"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235588"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Ytterligare slut punkter som inte ingår i Office 365 IP Address and URL Web Service
 
@@ -67,7 +67,7 @@ Förutom DNS är det alla valfria för de flesta kunder om du inte behöver det 
 | 20.1  | [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) med 21 ViaNet i Kina för att synkronisera lokala användar konton med Azure AD. | \*. digicert.com:80 <BR> \*. entrust.net:80 <BR> \*. chinacloudapi.cn:443 <BR> secure.aadcdn.partner.microsoftonline-p.cn:443 <BR>*. partner.microsoftonline.cn:443 <BR> <BR>Se även [Felsöka problem med Azure AD-anslutningsproblem](https://docs.azure.cn/zh-cn/active-directory/hybrid/tshoot-connect-connectivity). | Endast utgående Server trafik |
 | 21.3  | Microsoft Stream (kräver Azure AD User token). <BR> Office 365 världen över (inklusive GCC) | \*. cloudapp.net <BR> \*. api.microsoftstream.com <BR> \*. notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> TCP-port 443  | Inkommande server trafik |
 | 22  | Använd MFA Server för multifaktorautentisering med multifaktorautentisering, både nya installationer av servern och inställningar i Active Directory Domain Services (AD DS). | Se [komma igång med Azure Multi-Factor Server](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment).  | Endast utgående Server trafik |
-| 23  | Microsoft Graph-ändrings aviseringar | Utvecklarna kan utnyttja [ändrings aviseringar](https://docs.microsoft.com/graph/webhooks?context=graph%2Fapi%2F1.0&view=graph-rest-1.0) för att prenumerera på händelser i Microsoft Graph. | *. cloudapp.net<BR> 104.43.130.21, 137.116.169.230, 13.79.38.63, 104.214.39.228, offentlig moln: 168.63.250.205, 52.161.9.202, 40.68.103.62, 13.89.60.223, 23.100.95.104, 40.113.95.219, 104.214.32.10, 168.63.237.145, 52.161.110.176, 52.174.177.183 <BR> Microsoft Cloud för amerikanska myndigheter: 52.244.231.173, 52.238.76.151, 52.244.250.211, 52.238.78.108 <BR> Microsoft Cloud Germany: 51.4.231.136, 51.5.243.223, 51.4.226.154, 51.5.244.215 <BR> Microsoft Cloud Kina drivs av 21Vianet: 139.219.15.33, 42.159.154.223, 42.159.88.79, 42.159.155.77<BR> TCP-port 443 <BR> Obs! utvecklare kan ange olika portar när de skapar abonnemangen.  | Inkommande server trafik |
+| 23  | Microsoft Graph-ändrings aviseringar | Utvecklarna kan utnyttja [ändrings aviseringar](https://docs.microsoft.com/graph/webhooks?context=graph%2Fapi%2F1.0&view=graph-rest-1.0) för att prenumerera på händelser i Microsoft Graph. | *. cloudapp.net<BR> 104.43.130.21, 137.116.169.230, 13.79.38.63, 104.214.39.228, offentlig moln: 168.63.250.205, 52.161.9.202, 40.68.103.62, 13.89.60.223, 23.100.95.104, 40.113.95.219, 104.214.32.10, 168.63.237.145, 52.161.110.176, 52.174.177.183, 13.85.192.59, 13.85.192.123, 13.86.37.15, 13.89.108.233, 13.89.104.147, 20.44.210.83, 20.44.210.146, 40.76.162.99, 40.76.162.42, 40.74.203.28, 40.74.203.27, 51.104.159.213, 51.104.159.181, 51.124.75.43, 51.124.73.177, 51.138.90.7, 51.138.90.52, 52.139.153.222, 52.139.170.157, 52.139.170.47, 52.142.114.29, 52.142.115.31, 52.147.213.251, 52.147.213.181, 52.148.24.136, 52.148.27.39, 52.148.115.48, 52.148.114.238, 52.154.246.238, 52.159.23.209, 52.159.17.84, 52.184.94.140 <BR> Microsoft Cloud för amerikanska myndigheter: 52.244.231.173, 52.238.76.151, 52.244.250.211, 52.238.78.108, 52.243.147.249, 52.243.148.19, 52.243.157.104, 52.243.157.105, 52.244.33.45, 52.244.35.174, 52.244.111.156, 52.244.111.170 <BR> Microsoft Cloud Tyskland: 51.4.231.136, 51.5.243.223, 51.4.226.154, 51.5.244.215, 51.4.150.206, 51.4.150.235, 51.5.147.130, 51.5.148.103 <BR> Microsoft Cloud Kina drivs av 21Vianet: 139.219.15.33, 42.159.154.223, 42.159.88.79, 42.159.155.77, 40.72.155.199, 40.72.155.216, 40.125.138.23, 40.125.136.69, 42.159.72.35, 42.159.72.47, 42.159.180.55, 42.159.180.56<BR> TCP-port 443 <BR> Obs! utvecklare kan ange olika portar när de skapar abonnemangen.  | Inkommande server trafik |
 |||||
 
 ## <a name="related-topics"></a>Relaterade ämnen

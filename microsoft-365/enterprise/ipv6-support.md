@@ -18,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Sammanfattning: beskriver IPv6-stöd i Microsoft Office 365-komponenter och i Office 365 stats support.'
-ms.openlocfilehash: c4ecd2ef26ecf660eb1d172b1951907724d2238a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f671e8caf868ebbed628a155b73ce6fe413949a9
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694478"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235613"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>IPv6-stöd i Office 365-tjänster
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 Office 365 stöder både IPv6 och IPv4; men inte alla Office 365-funktioner är helt aktiverade med IPv6. Det innebär att du måste använda både IPv4 och IPv6 för att ansluta till Office 365. Om du filtrerar utgående trafik till Office 365 finns den fullständiga listan över IPv6-adresser som stöds av Office 365 i artikeln [Office 365 URL: er och IP-adressintervall](urls-and-ip-address-ranges.md). När nätverket är konfigurerat och rätt IPv6-adresser tillåts kan du hämta [Office 365 IPv6 test plan](https://go.microsoft.com/fwlink/?LinkId=293447) från Microsoft Download Center.
   
@@ -50,6 +50,10 @@ Om det program som du använder för att ansluta till SharePoint Online har stö
 ### <a name="skype-for-business-and-ipv6"></a>Skype för företag och IPv6
 
 Observera att IPv6 inte stöds i Skype för företag och kan inte längre aktive ras.
+
+### <a name="microsoft-teams-and-ipv6"></a>Microsoft Teams och IPV6
+
+Endast Microsoft Teams Direct routing stöder IPv4. Microsoft Teams service och klient stöder både IPv4 och IPv6. Om du vill styra kommunikationen med Microsoft Teams använder du IP-adressintervallet i [Office 365 URL: er och IP-adressintervall](urls-and-ip-address-ranges.md).
   
 ### <a name="exchange-online-protection-and-ipv6"></a>Exchange Online Protection och IPv6
 

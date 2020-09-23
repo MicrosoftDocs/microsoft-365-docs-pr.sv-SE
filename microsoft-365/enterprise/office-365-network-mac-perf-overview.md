@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Översikt över nätverks anslutningar i Microsoft 365 Admin Center (för hands version)
-ms.openlocfilehash: fc800d6f7a63e34f83b089fdea41b68cbf9134da
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.openlocfilehash: 52d1995572a3ae0220ac8529862ba69d5bca8cdb
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214921"
+ms.locfileid: "48235544"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Nätverks anslutning i Microsoft 365 Admin Center (för hands version)
 
@@ -30,6 +30,11 @@ Administrations centret för Microsoft 365 inkluderar nu sammansatta nätverks a
 **Nätverks utvärderingar** och **nätverks insikter** visas i administrations centret för Microsoft 365 under **hälsa |. Anslutning**.
 
 ![Sidan nätverks prestanda](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
+
+>[!NOTE]
+>Nätverks anslutnings verktyget har stöd för innehavare i WW kommersiell och Tyskland, men inte GCC måttlig, GCC hög, DoD eller Kina.
+
+När du först navigerar till sidan Nätverks prestanda visas en översikts ruta med en översikt över globala nätverks prestanda, en nätverks utvärdering omfångst till hela klient organisationen och en lista över aktuella problem. Från översikten kan du öka detalj nivån för att visa specifika mått för nätverks prestanda och problem efter plats. Mer information finns i [Översikt över nätverkets prestanda i administrations centret för Microsoft 365](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
 Du kan uppmanas att gå med i den offentliga för hands versionen för din organisation. Godkännandet skedde vanligt vis omedelbart och sedan visas sidan Nätverks anslutning. 
 

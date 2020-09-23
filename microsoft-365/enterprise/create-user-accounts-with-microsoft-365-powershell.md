@@ -3,7 +3,7 @@ title: Skapa Microsoft 365-användarkonton med PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: I den här artikeln lär du dig hur du använder PowerShell för att skapa användar konton eller flera Microsoft 365-användarkonton.
-ms.openlocfilehash: 53077352862b6d0df6bb569300e2d8bc2475df91
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 00ae8806e786eada092704febd65c72c72382788
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694693"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235600"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>Skapa Microsoft 365-användarkonton med PowerShell
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 Du kan använda PowerShell för Microsoft 365 för att effektivt skapa användar konton, särskilt flera användar konton. När du skapar användar konton i PowerShell behövs alltid vissa konto egenskaper. Andra egenskaper behövs inte för att skapa kontot, men annars är det viktigt. Dessa egenskaper beskrivs i följande tabell:
   
@@ -42,7 +42,10 @@ Du kan använda PowerShell för Microsoft 365 för att effektivt skapa användar
 |**LicenseAssignment** <br/> |Nej  <br/> |Det här är licens planen (kallas även licens planen eller SKU) som en tillgänglig licens har tilldelats till. Licensen definierar vilka Microsoft 365-tjänster som är tillgängliga för konto. Du behöver inte tilldela en licens till en användare när du skapar kontot, men kontot kräver en licens för åtkomst till Microsoft 365-tjänster. Du har 30 dagar på dig att licensiera användar kontot när du har skapat det. |
 |**Lösenord** <br/> |Nej  <br/> | Om du inte anger något lösen ord tilldelas användar kontot ett slumpmässigt lösen ord och lösen ordet visas i resultatet av kommandot. Om du anger ett lösen ord måste det vara 8 till 16 ASCII-tecken från någon av följande typer: gemener, versaler, siffror och symboler. <br/> |
 |**UsageLocation** <br/> |Nej  <br/> |Det här är en giltig ISO 3166-1 alpha-2-landskod. Till exempel för USA och FR för Frankrike. Det är viktigt att ange det här värdet eftersom vissa Microsoft 365-tjänster inte är tillgängliga i vissa länder, så du kan inte tilldela en licens till ett användar konto om inte kontot har konfigurerat det här värdet. Mer information finns i [om licens begränsningar](https://go.microsoft.com/fwlink/p/?LinkId=691730).  <br/> |
-   
+
+>[!Note]
+>[Lär dig hur du skapar användar konton](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) med administrations centret för Microsoft 365. En lista över ytterligare resurser finns i [Hantera användare och grupper](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+>   
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för diagramvyn
 
@@ -77,7 +80,7 @@ New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last
 ```
 
 >[!Note]
->PowerShell Core stöder inte Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen och cmdlets med **MSOL** . För att kunna fortsätta använda dessa cmdletar måste du köra dem från Windows PowerShell.
+>PowerShell Core stöder inte Microsoft Azure Active Directory-modul för Windows PowerShell-modulen och-cmdlets med **MSOL** i namnet. Om du vill fortsätta använda dessa cmdlets måste du köra dem från Windows PowerShell.
 >
 
 Använd det här kommandot för att lista de tillgängliga namnen på licens planerna:
@@ -126,4 +129,4 @@ I det här exemplet skapas användar konton från filen C:\Mina Documents\NewAcc
   
 [Hantera Microsoft 365 med PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Komma igång med PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Börja använda PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Ta reda på om din klient organisation och användare uppfyller kraven och Använd centraliserad distribution för att distribuera Office-tillägg.
-ms.openlocfilehash: 4bd81dcf1d1ee6221a3519baac0a3b1bc63b791f
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: c3e306789f5b1c09e835d8d2c5ebea668bf14874
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131740"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235424"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Avgöra om centraliserad distribution av tillägg fungerar för din organisation
 
@@ -45,7 +45,7 @@ Det kan ta upp till 24 timmar för ett tillägg att visas för klienten och alla
   
 ## <a name="requirements"></a>Krav
 
-Centraliserad distribution av tillägg kräver att användarna använder Microsoft 365-appar för företag (och är inloggade på Office med deras organisations-ID) och har Exchange Online och aktiva Exchange Online-postlådor. Abonnemangs katalogen måste antingen vara i eller sammankopplad till Azure Active Directory.
+Centraliserad distribution av tillägg kräver att användarna använder Microsoft 365-appar för Enterprise eller Microsoft 365 Business Premium (och är inloggade på Office med deras organisations-ID) och har Exchange Online och aktiva Exchange Online-postlådor. Abonnemangs katalogen måste antingen vara i eller sammankopplad till Azure Active Directory.
 Du kan se specifika krav för Office och Exchange nedan eller använda kompatibilitetskontrollen för[centraliserad distribution](#centralized-deployment-compatibility-checker).
 
 Centraliserad distribution stöder inte följande:
@@ -61,11 +61,11 @@ Centraliserad distribution stöder inte följande:
 ### <a name="office-requirements"></a>Office-krav
 
 - För Word-, Excel-och PowerPoint-tillägg måste användarna använda något av följande:
-  - På en Windows-enhet, version 1704 eller senare av Microsoft 365-appar för företag.
+  - På en Windows-enhet, version 1704 eller senare av Microsoft 365-program för företag eller Microsoft 365 Business Premium.
   - På en Mac, version 15,34 eller senare.
 
 - För Outlook måste användarna använda något av följande: 
-  - Version 1701 eller senare av Microsoft 365-appar för företag.
+  - Version 1701 eller senare av Microsoft 365-appar för Enterprise eller Microsoft 365 Business Premium.
   - Version 1808 eller senare av Office Professional Plus 2019 eller Office Standard 2019.
   - Version 16.0.4494.1000 eller senare av Office Professional Plus 2016 (MSI) eller Office Standard 2016 (MSI)\*
   - Version 15.0.4937.1000 eller senare av Office Professional Plus 2013 (MSI) eller Office Standard 2013 (MSI)\*

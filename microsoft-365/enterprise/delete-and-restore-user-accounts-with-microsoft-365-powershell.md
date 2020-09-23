@@ -3,7 +3,7 @@ title: Ta bort Microsoft 365-användarkonton med PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,16 +20,20 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: I den här artikeln lär du dig hur du använder olika moduler i PowerShell för att ta bort Microsoft 365-användarkonton.
-ms.openlocfilehash: 6da2d83b3f305db09f8c1d02f54e643a0ad1978b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0c13b57c13fb3d01d648438a5d6973fea8b9db67
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694686"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235448"
 ---
 # <a name="delete-microsoft-365-user-accounts-with-powershell"></a>Ta bort Microsoft 365-användarkonton med PowerShell
 
-Du kan använda PowerShell för Microsoft 365 för att ta bort ett användar konto.
+Du kan använda PowerShell för Microsoft 365 för att ta bort och återställa ett användar konto.
+
+>[!Note]
+>[Lär dig hur du återställer ett användar konto](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user) med administrations centret för Microsoft 365. En lista över ytterligare resurser finns i [Hantera användare och grupper](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+>   
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för diagramvyn
 
@@ -84,7 +88,7 @@ Remove-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 >[!Note]
->PowerShell Core stöder inte Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen och cmdlets med **MSOL** . För att kunna fortsätta använda dessa cmdletar måste du köra dem från Windows PowerShell.
+>PowerShell Core stöder inte Microsoft Azure Active Directory-modul för Windows PowerShell-modulen och-cmdlets med **MSOL** i namnet. Om du vill fortsätta använda dessa cmdlets måste du köra dem från Windows PowerShell.
 >
 
 Det här exemplet tar bort användar kontots BelindaN@litwareinc.com.
@@ -122,4 +126,4 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
   
 [Hantera Microsoft 365 med PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Komma igång med PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Börja använda PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)

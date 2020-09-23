@@ -3,7 +3,7 @@ title: Tilldela Microsoft 365-licenser till användar konton med PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/16/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,21 +21,25 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: I den här artikeln lär du dig hur du använder PowerShell till att tilldela en Microsoft 365-licens till olicensierade användare.
-ms.openlocfilehash: 7bd217dfeed762a11161c3f512fb55a8e6c4968e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f042f8109bf9ac9b634bc66509c60a5181fb1af6
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694363"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235624"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Tilldela Microsoft 365-licenser till användar konton med PowerShell
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 Användare kan inte använda några Microsoft 365-tjänster förrän deras konto har tilldelats en licens från en licens plan. Du kan använda PowerShell för att snabbt tilldela licenser till olicensierade konton. 
 
 >[!Note]
 >Användar konton måste tilldelas en plats. Du kan göra detta från egenskaperna för ett användar konto i Microsoft 365 Admin Center eller från PowerShell.
+>
+
+>[!Note]
+>[Lär dig hur du tilldelar licenser till användar konton](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) med Microsoft 365 Admin Center. En lista över ytterligare resurser finns i [Hantera användare och grupper](https://docs.microsoft.com/microsoft-365/admin/add-users/).
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för diagramvyn
@@ -84,7 +88,7 @@ Börja [med att ansluta till din Microsoft 365-klient organisation](connect-to-m
 Kör `Get-MsolAccountSku` kommandot för att visa tillgängliga licens planer och antalet tillgängliga licenser för varje plan i organisationen. Antalet tillgängliga licenser för varje abonnemang är **ActiveUnits**  -  **WarningUnits**  -  **ConsumedUnits**. Mer information om licens planer, licenser och tjänster finns i [Visa licenser och tjänster med PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
 
 >[!Note]
->PowerShell Core stöder inte Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen och cmdlets med **MSOL** . För att kunna fortsätta använda dessa cmdletar måste du köra dem från Windows PowerShell.
+>PowerShell Core stöder inte Microsoft Azure Active Directory-modul för Windows PowerShell-modulen och-cmdlets med **MSOL** i namnet. Om du vill fortsätta använda dessa cmdlets måste du köra dem från Windows PowerShell.
 >
 
 Kör det här kommandot för att hitta de olicensierade kontona i organisationen.
@@ -205,8 +209,8 @@ $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq
 
 ## <a name="see-also"></a>Se även
 
-[Hantera användar konton, licenser och grupper med PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
+[Hantera användarkonton,-licenser och-grupper med PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
 [Hantera Microsoft 365 med PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Komma igång med PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Börja använda PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)

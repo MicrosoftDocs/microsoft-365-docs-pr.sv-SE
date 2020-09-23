@@ -3,7 +3,7 @@ title: Tilldela roller till Microsoft 365-användarkonton med PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/16/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,21 +20,21 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: I den här artikeln lär du dig hur snabbt och enkelt kan använda PowerShell för Microsoft 365 för att tilldela roller till användar konton.
-ms.openlocfilehash: 4726dcea109490ff28299002bc5263aa15dca949
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 9df1b018cf3e89e0afbd5265fdd1ec9f92b34aec
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694362"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235436"
 ---
 # <a name="assign-roles-to-microsoft-365-user-accounts-with-powershell"></a>Tilldela roller till Microsoft 365-användarkonton med PowerShell
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 Du kan snabbt och enkelt tilldela roller till användar konton med PowerShell för Microsoft 365.
 
 >[!Note]
->Information om hur du tilldelar roller till användar konton med Microsoft 365 Admin Center finns i [de här anvisningarna](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles).
+>[Lär dig hur du tilldelar roller till användar konton](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) med administrations centret för Microsoft 365. En lista över ytterligare resurser finns i [Hantera användare och grupper](https://docs.microsoft.com/microsoft-365/admin/add-users/).
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för diagramvyn
@@ -107,7 +107,7 @@ Om du använder för att arbeta med användar kontonas visnings namn bestämmer 
     Det här kommandot visar visnings namnet för dina användar konton, sorterade efter visnings namnet, en skärm bild i taget. Du kan filtrera listan till en mindre uppsättning med hjälp av **WHERE** -cmdleten. Här är ett exempel:
 
    >[!Note]
-   >PowerShell Core stöder inte Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen och cmdlets med **MSOL** . För att kunna fortsätta använda dessa cmdletar måste du köra dem från Windows PowerShell.
+   >PowerShell Core stöder inte Microsoft Azure Active Directory-modul för Windows PowerShell-modulen och-cmdlets med **MSOL** i namnet. Om du vill fortsätta använda dessa cmdlets måste du köra dem från Windows PowerShell.
    >
     
   ```powershell
@@ -240,4 +240,4 @@ $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmai
 
 - [Hantera Microsoft 365-användarkonton,-licenser och-grupper med PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
 - [Hantera Microsoft 365 med PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
-- [Komma igång med PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+- [Börja använda PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)

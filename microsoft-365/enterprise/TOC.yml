@@ -269,6 +269,8 @@
       items:
         - name: Lägga till en domän
           href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
+        - name: Installationsguider
+          href: setup-guides-for-microsoft-365.md
     - name: Flera klientorganisationer
       items:
         - name: Samarbete mellan klientorganisationer
@@ -355,38 +357,40 @@
         - name: Identitet endast för molnet
           href: cloud-only-identities.md
         - name: Hybrididentitet
-          href: prepare-for-directory-synchronization.md
-        - name: Förbereda en icke-dirigerbar domän för katalogsynkronisering
-          href: prepare-a-non-routable-domain-for-directory-synchronization.md
-        - name: Konfigurera katalogsynkronisering
-          href: set-up-directory-synchronization.md
+          items:
+            - name: Förbereda för katalogsynkronisering
+              href: prepare-for-directory-synchronization.md
+            - name: Förbereda en icke-dirigerbar domän för katalogsynkronisering
+              href: prepare-a-non-routable-domain-for-directory-synchronization.md
+            - name: Konfigurera katalogsynkronisering
+              href: set-up-directory-synchronization.md
+            - name: Hybridlösningar
+              items:
+                - name: Översikt
+                  href: hybrid-solutions.md
+                - name: Använd Azure Active Directory för SharePoint Server 2016 autentisering
+                  href: using-azure-ad-for-sharepoint-server-authentication.md
+                - name: Ansluta ett lokalt nätverk till ett virtuellt Azure-nätverk
+                  href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
+                - name: Distribuera en katalogpartition för servrar i Azure IaaS
+                  href: deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md
+                - name: Distribuera federerad autentisering med hög tillgänglighet i Azure
+                  href: deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md
+                  items:
+                    - name: Fas 1 – Konfigurera Azure
+                      href: high-availability-federated-authentication-phase-1-configure-azure.md
+                    - name: Fas 2 – Konfigurera domänkontrollanter
+                      href: high-availability-federated-authentication-phase-2-configure-domain-controllers.md
+                    - name: Fas 3 – Konfigurera AD FS-servrar
+                      href: high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md
+                    - name: Fas 4 – Konfigurera WAPs (Web App proxy)
+                      href: high-availability-federated-authentication-phase-4-configure-web-application-pro.md
+                    - name: Fas 5 – Konfigurera federerad autentisering
+                      href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
+                - name: SharePoint Server 2013 katastrofåterställning i Microsoft Azure
+                  href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
         - name: Säker användar inloggning
           href: microsoft-365-secure-sign-in.md
-        - name: Hybridlösningar
-          items:
-            - name: Översikt
-              href: hybrid-solutions.md
-            - name: Använd Azure Active Directory för SharePoint Server 2016 autentisering
-              href: using-azure-ad-for-sharepoint-server-authentication.md
-            - name: Ansluta ett lokalt nätverk till ett virtuellt Azure-nätverk
-              href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
-            - name: Distribuera en katalogpartition för servrar i Azure IaaS
-              href: deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md
-            - name: Distribuera federerad autentisering med hög tillgänglighet i Azure
-              href: deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md
-              items:
-                - name: Fas 1 – Konfigurera Azure
-                  href: high-availability-federated-authentication-phase-1-configure-azure.md
-                - name: Fas 2 – Konfigurera domänkontrollanter
-                  href: high-availability-federated-authentication-phase-2-configure-domain-controllers.md
-                - name: Fas 3 – Konfigurera AD FS-servrar
-                  href: high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md
-                - name: Fas 4 – Konfigurera WAPs (Web App proxy)
-                  href: high-availability-federated-authentication-phase-4-configure-web-application-pro.md
-                - name: Fas 5 – Konfigurera federerad autentisering
-                  href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
-            - name: SharePoint Server 2013 katastrofåterställning i Microsoft Azure
-              href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
     - name: Hantera
       items:
         - name: Tilldela licenser till användarkonton
@@ -565,7 +569,7 @@
               href: block-user-accounts-with-microsoft-365-powershell.md
         - name: Licenser och tjänster
           items:
-            - name: Visa
+            - name: Visa licenser och tjänster
               href: view-licenses-and-services-with-microsoft-365-powershell.md
             - name: Visa licensierade och olicensierade användare
               href: view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md
@@ -573,6 +577,8 @@
               href: assign-licenses-to-user-accounts-with-microsoft-365-powershell.md
             - name: Visa information om kontolicenser och-tjänster
               href: view-account-license-and-service-details-with-microsoft-365-powershell.md
+            - name: Ta bort licenser från användarkonton
+              href: remove-licenses-from-user-accounts-with-microsoft-365-powershell.md
             - name: Inaktivera åtkomst till tjänster
               href: disable-access-to-services-with-microsoft-365-powershell.md
               items:
@@ -580,8 +586,6 @@
                   href: disable-access-to-sway-with-microsoft-365-powershell.md
                 - name: Inaktivera åtkomst till tjänster när du tilldelar användarlicenser
                   href: disable-access-to-services-while-assigning-user-licenses.md
-                - name: Ta bort licenser från användarkonton
-                  href: remove-licenses-from-user-accounts-with-microsoft-365-powershell.md
         - name: Grupper
           items:
             - name: Hantera gruppmedlemskap
