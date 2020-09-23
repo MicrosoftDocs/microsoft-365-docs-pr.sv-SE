@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-remotework
 ms.custom: ''
 description: Använd säkerhets- och efterlevnadstjänsterna i Microsoft 365 för att skydda appar, data och enheter för distansarbetare.
-ms.openlocfilehash: 223de710b924fc213e30fd9a6e246b3fec2344c0
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: f2743e9f7d2f102231531e7a9146a0f26727e1d4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560469"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200949"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Steg 3: Distribuera säkerhet och efterlevnad för distansarbetare
 
@@ -68,7 +68,7 @@ Uppfyll de interna principerna eller regelkraven med dessa efterlevnadsfunktione
 | Etiketter och principer för kvarhållning av data | Implementera kontrollerna för informationsstyrning, t.ex. hur länge data ska behållas och kraven för lagring av personuppgifter för kunder, för att uppfylla organisationens principer och dataföreskrifter. | Microsoft 365 E3 eller E5 |
 | Meddelandekryptering i Office (OME) | Skicka och ta emot krypterade e-postmeddelanden som innehåller reglerade data, t.ex. personliga data om kunder, mellan personer i och utanför din organisation. | Microsoft 365 E3 eller E5 |
 | Efterlevnadshanteraren | Hantera regelefterlevnad som rör Microsofts molntjänster med detta arbetsflödesbaserade verktyg för riskbedömning i Microsoft Service Trust Portal. | Microsoft 365 E3 eller E5 |
-| Efterlevnadspoäng (förhandsversion) | Se en övergripande poäng för din aktuella efterlevnadskonfiguration och rekommendationer för att förbättra den i Efterlevnadscentret för Microsoft 365. | Microsoft 365 E3 eller E5 |
+| Efterlevnadshanteraren | Se en övergripande poäng för din nuvarande konfiguration och rekommendationer för att förbättra den i Microsoft 365 Efterlevnadscentret. | Microsoft 365 E3 eller E5 |
 | Efterlevnad av kommunikation  | Identifiera, fånga och vidta reparationsåtgärder för olämpliga meddelanden i organisationen. | Microsoft 365 E5 eller Microsoft 365 E3 med tilläggen för efterlevnad och Insider-riskhantering |
 | Hantering av insiderrisk |  Identifiera, undersöka och åtgärda skadliga och oavsiktliga risker i organisationen. Microsoft 365 kan upptäcka sådana typer av risker även om en arbetstagare använder en ohanterad enhet. | Microsoft 365 E5 eller Microsoft 365 E3 med tilläggen för efterlevnad och Insider-riskhantering |
 ||||

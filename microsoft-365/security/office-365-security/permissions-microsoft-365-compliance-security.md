@@ -17,14 +17,17 @@ search.appverid:
 - MET150
 description: Med hjälp av Microsoft 365 Säkerhetscenter och Microsoft 365 Efterlevnadscenter kan du hantera behörigheter centralt för alla uppgifter som är relaterade till säkerhet och efterlevnad.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c18f50fcad7b934e02c2110fa05196874ab0169a
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 43c98e0b710f5b88c17e089fd974e924728f27f3
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307779"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202681"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Behörigheter i efterlevnadscentret i Microsoft 365 och säkerhetscentret i Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Din organisation behöver hantera säkerhets- och efterlevnadsscenarier som omfattar alla Microsoft 365-tjänster. Du behöver också flexibiliteten att ge rätt administratörsbehörigheter till rätt personer i din organisations IT-grupp. Med hjälp av Microsoft 365 Säkerhetscenter och Microsoft 365 Efterlevnadscenter kan du hantera behörigheter centralt för alla uppgifter som är relaterade till säkerhet och efterlevnad.
 
@@ -63,7 +66,7 @@ Användare som har den här rollen har behörighet att hantera efterlevnadsrelat
 |I den här tjänsten...|Kan efterlevnadsadministratören...|
 |---|---|
 |[**Efterlevnadscentret i Microsoft 365**](https://compliance.microsoft.com/)|Skydda och hantera organisationens data i Microsoft 365-tjänsterna. <br/><br/> Hantera aviseringar om efterlevnad.|
-|[**Efterlevnadspoäng**](https://docs.microsoft.com/microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Spåra, tilldela och verifiera organisationens aktiviteter för regelefterlevnad.|
+|[**Compliance Manager**](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager)|Spåra, tilldela och verifiera organisationens aktiviteter för regelefterlevnad.|
 |[**Säkerhets- och efterlevnadscenter**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|Hantera datastyrning. <br/><br/> Utföra rätts- och dataundersökningar. <br/><br/> Hantera begäran från registrerad person.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Visa alla Intune-granskningsdata.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Har skrivskyddad behörighet och kan hantera aviseringar. <br/><br/> Kan skapa och ändra filprinciper och tillåta åtgärder för filstyrning. <br/><br/> Kan visa alla inbyggda rapporter under datahantering.|
@@ -71,14 +74,14 @@ Användare som har den här rollen har behörighet att hantera efterlevnadsrelat
 
 ### <a name="compliance-data-administrator"></a>Administratör för efterlevnadsdata
 
-Användare som har den här rollen har behörighet att skydda och spåra data i efterlevnadscentret i Microsoft 365, Administrationscenter för Microsoft 365 och Azure. Användare kan även hantera alla funktioner i Administrationscenter för Exchange och Administrationscenter för Teams och Skype för företag och skapa supportärenden för Azure och Microsoft 365.
+Användare som har den här rollen har behörighet att skydda och spåra data i efterlevnadscentret i Microsoft 365, Administrationscenter för Microsoft 365 och Azure. Användare kan också hantera alla funktioner i Exchange administratörscenter, Compliance Manager och Teams och Skype for Business administratörscenter och skapa supportbiljetter för Azure och Microsoft 365.
 
 ****
 
 |I den här tjänsten...|Kan administratören för efterlevnadsdata...|
 |---|---|
 |[**Efterlevnadscentret i Microsoft 365**](https://compliance.microsoft.com/)|Skydda och hantera organisationens data i Microsoft 365-tjänsterna. <br/><br/> Hantera aviseringar om efterlevnad. <br/><br/> Hantera känslighetsetiketter|
-|[**Efterlevnadspoäng**](https://docs.microsoft.com/microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Spåra, tilldela och verifiera organisationens aktiviteter för regelefterlevnad.|
+|[**Compliance Manager**](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager)|Spåra, tilldela och verifiera organisationens aktiviteter för regelefterlevnad.|
 |[**Säkerhets- och efterlevnadscenter**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|Hantera datastyrning. <br/><br/> Utföra rätts- och dataundersökningar. <br/><br/> Hantera begäran från registrerad person. <br/><br/> Hantera känslighetsetiketter|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control) (kommer snart)|Visa alla Intune-granskningsdata.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Använda läsbehörigheter för att visa information. <br/>Hantera aviseringar. <br/><br/> Skapa och ändra filprinciper och tillåta åtgärder för filstyrning. <br/><br/> Visa alla inbyggda rapporter under datahantering.|
@@ -173,7 +176,7 @@ Genom att tilldela en användare någon av rollerna som efterlevnads- eller säk
 |Azure Active Directory (Azure AD) och Azure AD-identitetsskydd|[Administratörsroller för Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Azure Advanced Threat Protection|[Azure ATP-rollgrupper](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure Information Protection|[Administratörsroller för Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Efterlevnadspoäng|[Roller för efterlevnadspoäng](https://docs.microsoft.com/microsoft-365/compliance/compliance-score-setup#set-user-permissions-and-assign-roles)|
+|Efterlevnadshanteraren|[Compliance Manager](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager-setup#set-user-permissions-and-assign-roles)|
 |Exchange Online|[Rollbaserad åtkomstkontroll i Exchange](https://docs.microsoft.com/exchange/understanding-role-based-access-control-exchange-2013-help)|
 |Intune|[Rollbaserad åtkomstkontroll i Intune](https://docs.microsoft.com/intune/role-based-access-control)|
 |Hanterat skrivbord|[Administratörsroller för Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
