@@ -115,8 +115,6 @@
               href: azure-expressroute.md
             - name: Hur modern autentisering fungerar för Office 2013- och Office 2016-klientprogram
               href: modern-auth-for-office-2013-and-2016.md
-        - name: Samarbete mellan klientorganisationer
-          href: microsoft-365-inter-tenant-collaboration.md
         - name: Stöd för klientapp
           items:
             - name: Certifikatbaserad autentisering
@@ -271,8 +269,12 @@
       items:
         - name: Lägga till en domän
           href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
-        - name: Installationsguider
-          href: setup-guides-for-microsoft-365.md
+    - name: Flera klientorganisationer
+      items:
+        - name: Samarbete mellan klientorganisationer
+          href: microsoft-365-inter-tenant-collaboration.md
+        - name: Migrering av postlådor mellan klientorganisationer
+          href: cross-tenant-mailbox-migration.md
     - name: Multi-geo
       items:
         - name: Microsoft 365 Multi-Geo
