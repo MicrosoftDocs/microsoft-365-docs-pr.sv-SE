@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Administratörer kan lära sig mer om rapporten för automatiskt vidarebefordrade meddelanden i instrument panelen för e-postflöde i säkerhets & efterlevnad.
-ms.openlocfilehash: b5255a95718fa6624c85e93a19c8accf9c3dcdb2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d4b772e6392e0af22e6bed475970f637ed03dcb1
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199365"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245953"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Automatiskt vidarebefordrade meddelanden är inblick i säkerhets & Compliance Center
 
@@ -35,7 +35,7 @@ När du klickar på antalet meddelanden i widgeten visas en utfällbar ruta som 
 
   - **Regler för e-postflöde**
   - **Regler för Inkorgen**
-  - **Via SMTP-vidarekoppling**
+  - **Genom SMTP-vidarekoppling**: det här är automatisk vidarebefordran som administratörer kan konfigurera på en post låda enligt beskrivningen i [Konfigurera e-postvidarekoppling för en post låda](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
   - En länk till [vidarekoppling](view-mail-flow-reports.md#forwarding-report) för mer information.
 
 - **Automatiskt vidarebefordrade meddelanden per domän och användare**:

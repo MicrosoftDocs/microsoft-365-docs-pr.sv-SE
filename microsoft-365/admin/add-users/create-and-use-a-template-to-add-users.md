@@ -2,8 +2,8 @@
 title: Skapa och använda en mall för att lägga till användare
 f1.keywords:
 - NOCSH
-ms.author: v-sharos
-author: shars
+ms.author: sirkkuw
+author: Sirkkuw
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,72 +20,72 @@ search.appverid:
 - MET150
 - MOE150
 description: Du kan skapa och använda en mall för att spara tid och standardisera inställningar när du lägger till flera användare.
-ms.openlocfilehash: 29953eb97476799d74e883ed8b20bd5f3382cbf4
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 92d3bd68a57291586da27eb2d578a26c53d20d78
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45022151"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245863"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Skapa och använda en mall för att lägga till användare
 
-Du kan skapa och använda en mall för att spara tid och standardisera inställningar när du lägger till flera användare. Mallar är särskilt användbara om du har användare som delar många vanliga egenskaper, som de som har samma roll och arbetar på samma plats och de som behöver samma programvara. Du kan till exempel ha ett team med supporttekniker som arbetar på samma kontor.  
+Du kan skapa och använda en mall för att spara tid och standardisera inställningar när du lägger till flera användare. Mallar är särskilt användbara om du har användare som delar många vanliga egenskaper, till exempel personer som har samma roll och som har samma program vara. Du kanske till exempel har ett team med support tekniker som arbetar i samma kontor.  
 
 ## <a name="create-a-template"></a>Skapa en mall
 
-Mallar är lätta att &mdash; skapa, du kan välja **Användare**  >  **Aktiva användare**  >  **Användarmallar**, och sedan välja Lägg till en **mall** i listrutan, eller så kan du lägga till en ny användare och när du är klar, har du möjlighet att spara posten som en mall.
+Det är enkelt att skapa mallar och &mdash; välja **användare**  >  **aktiva**användare användarmallar  >  **User templates**och sedan välja **Lägg till en mall** från List rutan, eller så kan du lägga till en ny användare och när du är klar har du möjlighet att spara posten som en mall.
 
-När du skapar en mall när du har lagt till en användare sparas de värden du väljer för följande inställningar i mallen:
+När du skapar en mall när du har lagt till en användare sparas värdena som du väljer för följande inställningar i mallen:
 
 - Domännamn
-- Val av lösenordsinställningar: du kan välja att skapa lösenord eller låta dem genereras automatiskt
-- Engångslösenord: du kan kräva att användaren skapar ett nytt lösenord efter första inloggningen
-- Licensplats
-- Licensval
-- Programval
+- Alternativ för lösen ords inställningar: du kan välja att skapa lösen ord eller automatiskt generera dem
+- Lösen ords val för enskilda samtidigt: du kan kräva att användaren skapar ett nytt lösen ord efter att ha loggat in
+- Licens plats
+- Licens val
+- Program alternativ
 - Roll
-- Mest profilinformation, till exempel **Jobbprofil,** **Avdelning,** **Office,** **Office-telefon**och **Gatuadress** 
+- De flesta profil uppgifter, till exempel **jobb profil**, **avdelning**, **kontor**, **kontors telefon**och **gatuadress** 
 
 Följande information är användarspecifik och sparas inte i mallen:
 
-- För- och efternamn
+- För-och efter namn
 - Visningsnamn
-- Användarnamn
-- Val att skicka lösenordet via e-post och vem lösenordet e-postmeddelandet skickas till
-- Mobiltelefonnummer
+- Användar namn
+- Alternativ för att skicka lösen ordet i e-post och vem som skickar e-postmeddelandet till
+- Mobiltelefon nummer
 
-Om du väljer att inte ange information för en inställning i ett avsnitt är det värdet tomt och den inställningen visas inte i mallen. Om du till exempel lämnar **befattningen** tom visas inte **befattningen jobbtitel** alls när du granskar mallen och när du använder mallen. Om du lämnar alla inställningar **för profilavsnittet** tomma visas **Ingen** i den slutliga mallen i avsnittet **Profil.**
+Om du väljer att inte ange information för en inställning inom ett avsnitt kommer det värdet att vara tomt och inställningen visas inte i mallen. Om du till **exempel lämnar befattningen** tom visas inte **jobb namnet** alls när du granskar mallen och när du använder mallen. Om du låter alla inställningar för **profil** avsnitt vara tomma visas inte **profil** **avsnittet i den** slutliga mallen.
 
-När du skapar en mall genom att välja alternativet **Lägg till en mall** kan du välja vilka värden som ska slutföras. Allt som lämnas tomt visas som **Ingen i** mallen.
+När du skapar en mall genom att välja alternativet **Lägg till en mall** kan du välja vilka värden som ska slutföras. Allting som lämnas tomt visas som ej **angivet** i mallen.
 
 ## <a name="use-a-template-to-add-a-user"></a>Använda en mall för att lägga till en användare
 
 Så här använder du en befintlig mall för att lägga till en användare:
 
-1. I administrationscentret väljer du **Aktiva**  >  **användare**.
+1. Välj **användare**  >  **aktiva användare**i administrations centret.
 
-2. Välj **Användarmallar**och välj sedan en mall i listrutan. (Listan innehåller bara de mallar som du har skapat, inte de som skapats av andra administratörer.)
+2. Välj **användarmallar**och välj sedan en mall i list rutan. (Listan kommer bara att innehålla de mallar som du har skapat, inte de som skapats av andra administratörer.)
 
  > [!NOTE]
- > Du kan också använda en mall för att lägga till en användare genom att välja **Användarmallar**  >  **Hantera mallar,** välja en mall och sedan välja **Använd mall**.
+ > Du kan också använda en mall för att lägga till en användare genom **att välja användarmallar**  >  **Hantera mallar**, välja en mall och sedan välja **Använd mall**.
 
-3. Följ stegen för att skapa en användare från den mall du valde.
+3. Följ stegen för att skapa en användare från mallen som du har valt.
 
 > [!NOTE]
-> Om du inte har tillräckliga licenser tillgängliga för en användare som du lägger till och din betalningsinformation är tillgänglig försöker vi köpa en annan licens med din befintliga betalningsinformation. Om din betalningsinformation inte är tillgänglig skapas användaren som en olicensierad användare.
+> Om du inte har tillräckligt med licenser tillgängliga för en användare som du lägger till och din betalnings information är tillgänglig försöker vi köpa en annan licens med din befintliga betalnings information. Om din betalnings information inte är tillgänglig skapas användaren som en olicensierad användare.
 
 ## <a name="manage-templates"></a>Hantera mallar
 
 Du kan enkelt ta bort mallar som du inte längre behöver och lägga till nya. Så här tar du bort en mall:
 
-1. I administrationscentret väljer du **Aktiva**  >  **användare**.
+1. Välj **användare**  >  **aktiva användare**i administrations centret.
 
-2. Välj **Mallar**och välj sedan **Hantera mallar** i listrutan.
+2. Välj **mallar**och sedan **Hantera mallar** i list rutan.
 
 3. En lista med mallar visas. Du kan ta bort en mall genom att göra något av följande:
-    - Markera en eller flera mallar och välj sedan **Ta bort**. 
-    - Markera de tre punkterna till höger om mallnamnet och välj sedan **Ta bort**.
-    - Välj mallnamnet. När mallinformationen visas till höger på skärmen väljer du **Ta bort mall**.
+    - Välj en eller flera mallar och välj sedan **ta bort**. 
+    - Markera de tre punkterna till höger om mallnamnet och välj sedan **ta bort**.
+    - Välj mallnamnet. Välj **ta bort mall**när mal detaljer visas till höger på skärmen.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

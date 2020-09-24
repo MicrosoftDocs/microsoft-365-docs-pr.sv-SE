@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Med funktionen för säkra länkar kan du klicka på verifiering av hyperlänkar i Office-dokument och i e-postmeddelanden. Läs den här artikeln för att få reda på hur säkerhets länkar i ATP fungerar.
-ms.openlocfilehash: 09357b20173e2609587137764737c8aba044190e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: e19d3a1f93d11cd9873e6b5fad9952b018e0a481
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201478"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245887"
 ---
 # <a name="how-atp-safe-links-works"></a>Så fungerar ATP – säkra länkar
 
@@ -30,7 +30,7 @@ ms.locfileid: "48201478"
 > [!IMPORTANT] 
 > För att Office 365 ska få säkra Länkar för att fungera korrekt måste alla tjänsterna finnas i samma version.
          
-## <a name="how-atp-safe-links-works"></a>Så fungerar ATP – säkra länkar
+## <a name="how-atp-safe-links-works-with-urls-in-email"></a>Hur säkerhets Länkar för ATP fungerar med URL: er via e-post
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
  med URL: er via e-post
@@ -57,10 +57,7 @@ På en hög nivå, så här gör du så här för att skydda dina URL [-adresser
     
    - Om webb adressen är säker öppnas webbplatsen.
     
-## <a name="how-atp-safe-links-works"></a>Så fungerar ATP – säkra länkar
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
- med URL-adresser i Office-dokument 
+## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>Hur säkerhets Länkar för ATP fungerar med URL: er i Office-dokument
 
 På en hög nivå, så här gör du så här för att skydda dina URL [-adresser i](atp-safe-links.md) Microsoft 365-appar för Enterprise-eller Business Premium-program (aktuella versioner av Word, Excel och PowerPoint på Windows, Mac eller i en webbläsare, Office-appar på iOS-eller Android-enheter, Visio på Windows, OneNote i en webbläsare):
   
