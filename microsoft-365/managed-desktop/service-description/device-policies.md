@@ -1,7 +1,7 @@
 ---
 title: Enhetskonfiguration
 description: Läs mer om standard principerna som används på Microsoft Managed Station ära enheter.
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 319b26261f623a7e19e5bb8fbcd0b5d8a50d10a8
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: a76bae70adeb07d9ea0574a25bac14f89a0a790d
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289715"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262223"
 ---
 # <a name="device-configuration"></a>Enhetskonfiguration
 
@@ -42,7 +42,7 @@ Uppdaterings distribution | Använd Windows Update för företag för att utför
 Anslutningar med datapriser | Uppdateringar över anslutningar med datapriser (till exempel LTE-nätverk) är inaktiverade som standard, även om varje användare kan aktivera den här funktionen i **inställningar > uppdateringar > avancerade alternativ**. Om du vill tillåta att alla användare aktiverar uppdateringar via anslutningar med datapriser [skickar du en ändringsbegäran](../working-with-managed-desktop/admin-support.md)och aktiverar den här inställningen för alla enheter.
 | Kompatibilitet med enheter | Dessa principer är konfigurerade för alla Microsoft-hanterade Skriv bords enheter. En enhet rapporteras som icke-kompatibel när vår säkerhets konfiguration används.
 
-## <a name="diagnostic-data"></a>Diagnostikdata
+## <a name="windows-diagnostic-data"></a>Windows-diagnostikdata
 
  Enheter ställs in för att tillhandahålla utökade diagnostikdata till Microsoft under ett känt handels-ID. Som en del av Microsoft Managed Desktop kan IT-administratörer inte ändra de här inställningarna. För kunder i GDPR-regioner (General Data Protection förordning) kan användarna minska den nivå med diagnostikdata som tillhandahålls, men tjänsten minskar också. Microsoft Managed Desktop kan till exempel inte samla in de data som behövs för att iterera efter inställningar och policyer för bästa prestanda och säkerhets behov. Mer information finns i [Konfigurera diagnostikdata för Windows i organisationen.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 
