@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Lär dig mer om de Microsoft 365-inställningar som behövs för att konfigurera en SharePoint-webbplats för samarbete med gäster.
-ms.openlocfilehash: d5a868e57753a6eb05f74b4873ed64ef0a70878e
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: cb3cfc52191be4bacfb9d84672131149082ee80e
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171274"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277574"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Samar beta med gäster på en webbplats
 
@@ -35,7 +35,7 @@ I den här videon visas de konfigurations steg som beskrivs i det här dokumente
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44Llg?autoplay=false]
 
-## <a name="azure-organizational-relationships-settings"></a>Inställningar för Azure organisations relationer
+## <a name="azure-external-collaboration-settings"></a>Inställningar för extern samarbete i Azure
 
 Delning i Microsoft 365 regleras på högsta nivå av [organisations Relations inställningarna i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Om gäst delning är inaktiverat eller begränsat i Azure AD åsidosätter detta eventuella delnings inställningar som du konfigurerar i Microsoft 365.
 

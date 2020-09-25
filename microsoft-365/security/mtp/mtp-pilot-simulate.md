@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f7d00575a0a5757f0662c07e727d7166d571e2ca
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8d4eb6cedbfa9a74eccdbb94e71f9eb32189ccbb
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201201"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277546"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>Kör dina simuleringar av angrepps skydd för Microsoft Threats  
 
@@ -30,7 +30,7 @@ ms.locfileid: "48201201"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft Threat Protection
 
 När du har utarbetat din pilot miljö är det dags att testa Microsofts hot skydds-och automatiserade undersökningar och reparations funktioner. Vi hjälper dig att simulera en sofistikerad attack som använder avancerade tekniker för att dölja mot identifiering. Angrepps funktionen räknar upp öppnade SMB-sessioner (Server Message Block) på domän kontrol Lanterna och hämtar de senaste IP-adresserna för användarnas enheter. Den här kategorin av attacker inkluderar vanligt vis inte filer som ignorerats på den skadelidandes enhet – de är bara i minnet. De "bor utanför marken" genom att använda befintliga system-och administrations verktyg och injicera sin kod i system processer för att dölja deras utförande, så att de kan Evade identifiering och bevaras på enheten.
 
@@ -48,7 +48,7 @@ Under simuleringen injicerar angreppet shellcode i en Innocent process. I det h�
 
 Eftersom du redan har konfigurerat din pilot miljö under förberedelse fasen bör du kontrol lera att du har två enheter för det här scenariot: en testen het och en domänkontrollant.
 
-1.  Verifiera att din klient organisation har [skydd](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service).
+1.  Kontrol lera att din klient organisation har [aktiverat Microsoft Threat Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service).
 2.  Verifiera konfigurationen för din testdomänkontrollant:
     - Enheten körs med Windows Server 2008 R2 eller en senare version.
     - Testa domänkontrollanten till [Avancerat Azure-skydd](https://docs.microsoft.com/azure/security-center/security-center-wdatp) och aktivera [fjärrhantering](https://docs.microsoft.com/windows-server/administration/server-manager/configure-remote-management-in-server-manager).    

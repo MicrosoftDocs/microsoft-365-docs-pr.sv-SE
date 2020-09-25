@@ -1,5 +1,5 @@
 ---
-title: Migrering av post låda mellan innehavare
+title: Migrering av postlådor mellan klientorganisationer
 description: Så här flyttar du post lådor mellan Microsoft 365 eller Office 365-klient organisationer.
 ms.author: josephd
 author: JoeDavies-MSFT
@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: f649a72dc5569e8aec46347df295aa3ff9d93613
-ms.sourcegitcommit: 327163f70eac0de568ebe3c9a97a744c3ed408cb
+ms.openlocfilehash: 06a82fda31e602ed2feb53d00e8839daf801bf7e
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48177193"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277490"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migrera mellan innehavare (för hands version)
 
@@ -57,12 +57,12 @@ Om du vill skaffa klient organisationens ID för ett abonnemang loggar du in i a
 
 Så här fungerar processen.
 
-:::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg" alt-text="Förberedelse av klient organisation för migrering av post låda.":::
+:::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png" alt-text="Förberedelse av klient organisation för migrering av post låda.":::
 
 <!--
-[![Tenant preparation for mailbox migration](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg)
+[![Tenant preparation for mailbox migration](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)
 
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg).
+[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png).
 --> 
 
 ### <a name="prepare-tenants"></a>Förbereda klient organisationer
@@ -162,11 +162,11 @@ Konfigurationen för mål administratören är nu klar!
 
 1.  Logga in på din post låda som den-ResourceTenantAdminEmail som anges av mål administratören under installationen. Sök efter e-postinbjudan från mål innehavaren och välj sedan knappen **Kom igång** .
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="Invided dialog ruta":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="Dialog rutan har blivit inbjuden":::
 
 2. Välj **acceptera** för att acceptera inbjudan.
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="Dialog ruta för att acceptera behörigheter":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="Dialog ruta för att godkänna behörigheter":::
 
    > [!NOTE]
    > Om du inte får det här e-postmeddelandet eller inte kan hitta det, har mål organisationens administratör en direkt URL som kan tilldelas dig för att acceptera inbjudan. URL: en ska i avskriften för klient organisationens fjärradministratörs fjärrsession.
