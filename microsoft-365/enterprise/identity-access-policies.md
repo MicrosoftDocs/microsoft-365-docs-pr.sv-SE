@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 1512ba01f78d901177254fce86d0154e97e36496
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 6a8ab25a1bce4355e63482b8450412884a9f0faf
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950795"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269411"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Vanliga principer för identitets- och enhetsåtkomst
 
@@ -169,6 +169,8 @@ Välj **Välj** för att spara inställningen för **beviljande** .
 **Välj slutligen för** **att aktivera principer**och välj sedan **skapa**.
 
 Överväg att använda [verktyget för att testa](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) policyn.
+
+För Exchange Online kan du använda autentiseringsprinciper för att [Inaktivera grundläggande](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)åtkomst, vilket tvingar alla klient åtkomst förfrågningar att använda modern verifikation.
 
 ## <a name="high-risk-users-must-change-password"></a>Användare med hög risk måste byta lösenord
 

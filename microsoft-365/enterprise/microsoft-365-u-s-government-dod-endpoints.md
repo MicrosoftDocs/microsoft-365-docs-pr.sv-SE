@@ -3,7 +3,7 @@ title: Office 365 amerikanska myndigheters DOD-slut punkter
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/28/2020
+ms.date: 09/01/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,45 +19,45 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 f1.keywords:
 - NOCSH
-description: Office 365 kräver anslutning till Internet. Slut punkterna nedan bör vara tillgängliga för kunder som använder Office 365 amerikanska myndigheter för offentliga DoD-abonnemang.
+description: Office 365 kräver internetanslutning. Slut punkterna nedan bör vara tillgängliga för kunder som använder Office 365 amerikanska myndigheter för offentliga DoD-abonnemang.
 hideEdit: true
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 43a412f3b4629d17ac9788da7ff38ba0971be955
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e1c16b8b7283d81a15170a189d091941a42a09a5
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696754"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269583"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 amerikanska myndigheters DoD-slut punkter
 
 *Gäller för Office 365-administratör*
 
- Office 365 kräver anslutning till Internet. Slut punkterna nedan bör vara tillgängliga för kunder som använder Office 365 amerikanska myndigheter för offentliga DoD-abonnemang.
+ Office 365 kräver internetanslutning. Slut punkterna nedan bör vara tillgängliga för kunder som använder Office 365 amerikanska myndigheter för offentliga DoD-abonnemang.
   
  **Office 365-slutpunkter:** [världen över (inklusive GCC)](urls-and-ip-address-ranges.md)  |  [Office 365 som drivs av 21 Vianet](urls-and-ip-address-ranges-21vianet.md)   |  [Office 365 Tyskland](microsoft-365-germany-endpoints.md)  |  *Office 365 amerikanska myndigheter DoD*  |  [Office 365 amerikanska myndigheter gcc](microsoft-365-u-s-government-gcc-high-endpoints.md) |
   
 |||
 |:-----|:-----|
-|**Uppdaterades senast:** 07/28/2020 – ![ prenumeration på RSS- ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ändrings logg](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Ladda ned:** hela listan i [JSON-format](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Uppdaterades senast:** 09/01/2020 – ![ prenumeration på RSS- ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ändrings logg](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Ladda ned:** hela listan i [JSON-format](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
 
- Börja med att [Hantera Office 365-slutpunkter](managing-office-365-endpoints.md) för att förstå våra rekommendationer för att hantera nätverks anslutningen med dessa data. Slut punkter uppdateras i början av varje månad med nya IP-adresser och URL: er publicerade 30 dagar innan de aktive ras. Detta gör att kunder som ännu inte har automatiserat uppdateringar kan slutföra sina processer innan nya anslutningar krävs. Slut punkter kan också uppdateras under den månad som behövs för att adressera supporten, säkerhets tillbud eller andra omedelbara drifts krav. De data som visas på den här sidan nedan är alla som genereras från de REST-baserade webb tjänsterna. Om du använder ett skript eller en nätverks enhet för att komma åt dessa data bör du gå direkt till [webb tjänsten](microsoft-365-ip-web-service.md) .
+ Börja med [Hantera Office 365-slutpunkter](managing-office-365-endpoints.md) för att förstå våra rekommendationer för hantering av nätverksanslutningar med dessa data. Slutpunktsdata uppdateras i början av varje månad med nya IP-adresser och URL:er publicerade 30 dagar i förväg. Detta gör att kunder som ännu inte har automatiserat uppdateringar kan slutföra sina processer innan nya anslutningar krävs. Slutpunkter kan också uppdateras under månaden om det behövs för att lösa stöd för eskalering, säkerhetstillbud och andra omedelbara driftskrav. De data som visas på den här sidan nedan skapas från de REST-baserade webbtjänsterna. Om du använder ett skript eller en nätverksenhet för att komma åt dessa data ska du gå direkt till [Webbtjänst](microsoft-365-ip-web-service.md).
 
-För slut punkts data nedan visas krav för anslutning från en användares dator till Office 365. Den inkluderar inte nätverks anslutningar från Microsoft till ett kund nätverk, ibland kallade hybrid-eller inkommande nätverks anslutningar. Mer information finns i [ytterligare slut punkter som inte ingår i webb tjänsten](additional-office365-ip-addresses-and-urls.md). 
+I slutpunktsdata nedan visar krav för anslutning från en användares dator till Office 365. Den innehåller inte nätverksanslutningar från Microsoft till ett kundnätverk, som ibland kallas hybrid-eller inkommande nätverksanslutningar. Mer information finns i [ytterligare slut punkter som inte ingår i webb tjänsten](additional-office365-ip-addresses-and-urls.md). 
 
-Slut punkterna är grupperade i fyra service områden. De första tre tjänst områdena kan väljas separat för anslutning. Det fjärde tjänste området är ett vanligt beroende (kallas Microsoft 365 common och Office) och måste alltid ha nätverks anslutning.
+Slutpunkterna är grupperade i fyra tjänstområden. De tre första tjänsterna kan väljas oberoende för anslutning. Det fjärde tjänstområdet är ett vanligt beroende (kallat Microsoft 365 Common och Office) och måste alltid ha nätverksanslutning.
 
-Data kolumner visas:
+Data kolumnerna som visas är:
 
-- **ID**: radens ID-nummer, som också kallas för en slut punkts uppsättning. Detta ID är det samma som returneras av webb tjänsten för slut punkts uppsättningen.
+- **ID**: Raden för ID-numret, som även kallas för en slutpunktsuppsättning. Detta ID är samma som returneras av webbtjänsten för slutpunktsuppsättningen.
 
-- **Kategori**: visar om slut punkts uppsättningen kategoriseras som "optimera", "Tillåt" eller "standard". Du kan läsa om de här kategorierna och vägledningen för att hantera dem [https://aka.ms/pnc](https://aka.ms/pnc) . I den här kolumnen kan du också se vilka slut punkts uppsättningar som krävs för att nätverks anslutningen ska visas. För slut punkts uppsättningar som inte måste ha nätverks anslutning ger vi anteckningar i det här fältet för att ange vilka funktioner som skulle sakna om slut punkts uppsättningen blockeras. Om du utesluter ett helt tjänst område behöver inte slut punkts uppsättningarna som krävs vara anslutningar.
+- **Kategori**: Visar om slutpunktsuppsättningen kategoriseras som "Optimera", "Tillåt" eller "Standard". Du kan läsa om de här kategorierna och vägledningen för att hantera dem [https://aka.ms/pnc](https://aka.ms/pnc) . I den här kolumnen visas även vilka slutpunktsuppsättningar som krävs för nätverksanslutningar. För slutpunktsuppsättningar som inte är nödvändiga för att ha nätverksanslutning tillhandahåller vi anteckningar i det här fältet för att ange vilka funktioner som skulle saknas om slutpunktsuppsättningen är blockerad. Om du undantar ett helt tjänstområde kräver inte slutpunktsuppsättningarna som anges som krav anslutning.
 
-- **Er**: det här är **Ja** om slut punkts uppsättningen stöds via Azure ExpressRoute med Office 365-väg-prefix. BGP-communityn som innehåller de adressprefix som visas är justerade med tjänst området som visas. När ER är **Nej**innebär det att ExpressRoute inte stöds för den här slut punkts uppsättningen. Men det bör inte antas att inga vägar annonseras för en slut punkts uppsättning där ER är **Nej**. Om du planerar att använda Azure AD Connect läser du [avsnittet särskilda överväganden](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government) för att kontrol lera att du har rätt Azure AD Connect-konfiguration.
+- **ER**: Det här är **Ja** om slutpunktsuppsättningen stöds över Azure ExpressRoute med Office 365-väg-prefix. BGP-communityn som innehåller de väg-prefix som visas är justeras med tjänstområdet som visas. När ER är **Nej**, innebär det att ExpressRoute inte stöds för denna slutpunktsuppsättning. Tänk dock på att det inte ska finnas några vägar som annonseras för en slutpunkt där ER är **Nej**. Om du planerar att använda Azure AD Connect läser du [avsnittet särskilda överväganden](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government) för att kontrol lera att du har rätt Azure AD Connect-konfiguration.
 
-- **Adresser**: Visar FQDN-namnen eller domän namn för jokertecken för slut punkts uppsättningen. Observera att ett IP-adressintervall är i CIDR-format och kan innehålla många enskilda IP-adresser i det angivna nätverket.
+- **Adresser**: listar FQDN-namn eller domännamn med jokertecken och IP-adressintervall för slutpunktsuppsättningen. Observera att ett IP-adressintervall är i CIDR-format och kan innehålla många enskilda IP-adresser i det angivna nätverket.
  
-- **Portar**: visar TCP-eller UDP-portarna som kombineras med adresserna för att bilda nätverks slut punkten. Det kan hända att en del dubbletter i IP-adressintervall där det finns olika portar visas.
+- **Portar**: Listar de TCP-eller UDP-portar som kombineras med adresserna för att skapa nätverksslutpunkten. Du märker kanske att det finns dubbletter i IP-adressintervall där olika portar finns med i listan.
  
 [!INCLUDE [Office 365 U.S. Government DoD endpoints](../includes/office-365-u.s.-government-dod-endpoints.md)]
   
