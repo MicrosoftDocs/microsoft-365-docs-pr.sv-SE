@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a126627a4c4d96b2b6918cefb0630801b3674383
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b877a35133be13cd6783659f1e5d981633338be8
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950502"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269379"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Vad är Microsoft Hanterat skrivbord?
 
@@ -44,7 +44,7 @@ Våra principer och säkerhetsbaslinje ger dina användare följande fördelar:
 - Starttider för Microsoft Hanterat skrivbord-enheter tar knappt en fjärdedel av tiden.
 - Minst två gånger batteriets livslängd
 - Cirka en tredjedel av enheter kraschar varje år
-- Enhetsmobilitet genom [Enterprise State Roaming](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), så att användare kan ha samma upplevelse oavsett vilken enhet de vill logga in på
+- Enhetsmobilitet genom [Enterprise State Roaming](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), som tillåter att användare kan ha samma upplevelse oavsett vilken enhet de loggar in på
 
 Din IT-administratör drar nytta av de här funktionerna:
 
