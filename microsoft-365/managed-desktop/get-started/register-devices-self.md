@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 550f7dd35b3990a08da4c2bb9dd3042ff084b185
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 225cb8b74a50fa8308cc14e8ad35283e6a7aa044
+ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104406"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48279571"
 ---
 # <a name="register-new-devices-yourself"></a>Registrera nya enheter själv
 
@@ -84,14 +84,14 @@ I [Microsoft slut punkts hanteraren](https://endpoint.microsoft.com/)väljer du 
 Gör så här:
 
 1. Ange en sökväg till CSV-filen som du skapade tidigare i **fil överföring**.
-3. Välj **registrera enheter**. Systemet lägger till enheter i listan med enheter i **bladet enheter**, markerade som **AutopilotRegistrationRequested**. Registreringen tar vanligt vis mindre än 10 minuter och när enheten lyckas visas den som **klar för användarna** , vilket betyder att det är klart och väntar på att en användare ska börja använda.
+3. Välj **registrera enheter**. Systemet lägger till enheter i listan med enheter i **bladet enheter**, markerade som **registrering väntar**. Registreringen tar vanligt vis mindre än 10 minuter och när enheten lyckas visas den som **klar för användarna** , vilket betyder att det är klart och väntar på att en användare ska börja använda.
 
 
 Du kan övervaka förloppet av enhets registrering på huvud sidan. Möjliga tillstånd rapporterade att inkludera:
 
 | Sessionsläget | Beskrivning |
 |---------------|-------------|
-| AutopilotRegistrationRequested | Registreringen är inte klar ännu. Kom tillbaka senare. |
+| Registrering väntar | Registreringen är inte klar ännu. Kom tillbaka senare. |
 | Registreringen misslyckades | Det gick inte att genomföra registreringen. Mer information finns i [fel sökning av enhets registrering](#troubleshooting-device-registration) . |
 | Redo för användare | Registreringen lyckades och enheten är nu klar att levereras till användaren. Microsoft Managed Desktop vägleder dem genom första gången, vilket innebär att du inte behöver göra några fler förberedelser. |
 | Aktiva | Enheten har levererats till användaren och har registrerats hos din klient organisation. Detta indikerar också att de ofta använder enheten. |

@@ -17,24 +17,23 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Konfigurera principer för säkra Länkar för att skydda din organisation från skadliga länkar i Word-, Excel-, PowerPoint-och Visio-filer samt i e-postmeddelanden.
-ms.openlocfilehash: 8c72473a9b1337e1d932ec7235ed12e79f0c48f6
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 76d0aba026b96251a64163ef7d7f518fe0b1e1b1
+ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201765"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48279579"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Konfigurera principer för säkra Office 365 ATP-länkar
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
 > [!IMPORTANT]
 > Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](office-365-atp.md). Om du är hem användare letar efter information om säkra länkar i Outlook kan du läsa mer i [avancerad Outlook.com säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-[ATP-säkra länkar](atp-safe-links.md), en funktion i [Office 365 Avancerat skydd](office-365-atp.md) (ATP), skyddar din organisation från illasinnade länkar som används i nätfiske och andra attacker. Om du har nödvändig [behörighet för säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md)kan du konfigurera principer för säkraste säkerhets Länkar för att säkerställa att när personer klickar på webb adresser (URL: er) skyddas din organisation. Dina principer för säker säkerhet för ATP kan konfigureras för genomsökning av URL-adresser i e-post och URL-adresser i Office-dokument
+[ATP-säkra länkar](atp-safe-links.md) är en funktion i [Office 365 Avancerat skydd](office-365-atp.md) (ATP) som kan skydda din organisation från skadliga länkar som används i nätfiske och andra attacker. Om du har nödvändig [behörighet för säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md)kan du konfigurera principer för säkraste säkerhets Länkar för att säkerställa att när personer klickar på webb adresser (URL: er) skyddas din organisation. Dina principer för säker säkerhet för ATP kan konfigureras för genomsökning av URL-adresser i e-post och URL-adresser i Office-dokument De säkraste säkerhets sökningarna skannar inkommande e-post för kända illasinnade hyperlänkar och för bifogade filer som Den här funktionen skriver skannade URL-adresser till Microsofts vanliga URL-standardprefix <https://nam01.safelinks.protection.outlook.com> . När en länk har skrivits om analyseras den för potentiellt skadligt innehåll. Med Safet ATP-länkar aktiverat, om en användare klickar på en länk i ett e-postmeddelande och URL-adressen har blockerats av organisationens anpassade blockerade URL-lista eller om URL: en är skadlig, öppnas en varnings sida.
 
-Med Safet ATP-länkar aktiverat, om en användare klickar på en länk i ett e-postmeddelande och URL-adressen har blockerats av organisationens anpassade blockerade URL-lista eller om URL: en är skadlig, öppnas en varnings sida.
+När ATP-Safe-länkar har skrivit om en URL-adress och meddelandet vidarebefordras eller besvaras kommer URL-adressen att fortsätta att skrivas över. Ytterligare länkar som läggs till i meddelandet som besvaras eller vidarebefordras skrivs inte över.
 
 [Nya funktioner läggs hela tiden till för ATP](office-365-atp.md#new-features-in-office-365-atp). När nya funktioner läggs till kan du behöva justera dina befintliga principer för säkerhet på ATP.
 
