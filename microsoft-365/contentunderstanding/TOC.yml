@@ -1,22 +1,44 @@
 - name: Komma igång med innehålls förståelse
   items:
+    - name: Introduktion till Microsoft SharePoint Syntex
+      href: microsoft-sharepoint-syntex-overview.md
     - name: Översikt över dokument förståelse
       href: document-understanding-overview.md
     - name: Översikt över formulär bearbetning
       href: form-processing-overview.md
     - name: Skillnad mellan dokument-och formulär bearbetnings modeller
       href: difference-between-document-understanding-and-form-processing-model.md
+    - name: Lär dig mer om modeller genom exempel modellen
+      href: learn-about-document-understanding-models-through-the-sample-model.md
     - name: Skapa ett innehålls Center
       href: create-a-content-center.md
     - name: Skapa en klassificerare
       href: create-a-classifier.md
     - name: Skapa en Extractor
       href: create-an-extractor.md
+    - name: Översikt över förklarings typer
+      href: explanation-types-overview.md
     - name: Använda en modell
       href: apply-a-model.md
     - name: Skapa en modell för formulär bearbetning
       href: create-a-form-processing-model.md
-- name: Komma igång med installationen
+    - name: Använda en bevarande etikett
+      href: apply-a-retention-label-to-a-model.md
+    - name: Modell för användnings analys
+      href: model-usage-analytics.md
+- name: Konfiguration och administration
   items:
     - name: Konfigurera innehålls förståelse
       href: set-up-content-understanding.md
+    - name: Bild markeringar
+      href: image-tagging.md
+- name: Innehålls tjänster
+  items:
+    - name: Importera med SKOS
+      href: import-term-set-skos.md
+    - name: SKOS formaterings referens
+      href: skos-format-reference.md
+    - name: Skicka innehålls typen till navet
+      href: push-content-type-to-hub.md
+    - name: Term lagrings rapporter
+      href: term-store-analytics.md
