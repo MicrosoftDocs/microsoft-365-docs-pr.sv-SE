@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Få en rapport från Microsoft 365-grupper om du vill veta mer om grupperna och deras aktiviteter.
-ms.openlocfilehash: 1d329efa4fe7cdf12b6c7452b6480d237fb3d5c1
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b45582388103e843e2893cfceb9aa1106cb9ce76
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948994"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295100"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365-rapporter i administrations Center – Microsoft 365-grupper
 
@@ -37,8 +37,8 @@ Instrument panelen för Microsoft 365- **rapporter** visar en översikt över pr
 
 1. I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>.
 
-    
-2. I list rutan **Välj en rapport** väljer du aktivitet i **Office 365** - \> **grupper**.
+2. Välj **Visa mer** under **aktiva användare – Microsoft 365-tjänster**från alternativen.
+3. I list rutan **Välj en rapport** väljer du aktivitet i **Office 365** - \> **grupper**.
   
 ## <a name="interpret-the-groups-report"></a>Tolka rapporten grupper
 
@@ -61,4 +61,3 @@ Du kan få en vy i grupp aktivitet genom att titta på **grupperna grupper**, **
 |Nr  <br/> |Du kan också exportera rapport data till en Excel. csv-fil genom att välja **Exportera** -länken. Då exporteras data för alla användare och du kan göra enkel sortering och filtrering för vidare analys. Om du har mindre än 2 000 användare kan du sortera och filtrera i tabellen i själva rapporten. Om du har fler än 2 000 användare måste du exportera data för att kunna filtrera och sortera.  <br/> |
 |||
    
-

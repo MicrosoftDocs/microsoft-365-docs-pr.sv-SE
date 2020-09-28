@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du hittar och använder e-postsäkerhets rapporter för organisationen. Säkerhets rapporter för e-post finns i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 588c30ca07684636661c7946b2418b75574c8cbd
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: b26dd18754a96d1879a2f57ae9742ae1d1a36ce4
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199223"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295544"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visa rapporter om e-postsäkerhet i Säkerhets- och efterlevnadscenter
 
@@ -364,8 +364,13 @@ Följande vyer är tillgängliga:
 Om du klickar på **filter**kan du ändra rapporten med följande filter:
 
 - **Start datum** och **slutdatum**
-- Detektions värde
-- **Skyddas av** (endast Office 365 ATP): **ATP** eller **EOP**. Observera att den här filter bara egenskapen inte är tillgänglig i **Visa data genom: \> skadlig program vara**.
+- **Proxyidentifiering**
+- **Skyddas av**: **ATP** eller **EOP**
+- **Tagg**: Filtrera efter tagg för att returnera användare eller grupper som har en viss tagg. Mer information om användar flaggor finns i [User Tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Domain**
+
+> [!NOTE]
+> **Skyddas av**, **tagg** och **Domain** är endast Office 365 ATP. De här filter bara egenskaperna är inte tillgängliga i **Visa data genom: \> skadlig program vara**.
 
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>Vyn detaljerad tabell för status rapport för hotet skydd
 
@@ -378,7 +383,12 @@ Om du klickar på **Visa informations tabell**beror informationen som visas på 
   - **Omkopplad av**
   - **Namn på skadlig kod**
 
-- **Visa data efter: översikt**: knappen för **tabell information** är tillgänglig.
+Om du klickar på **filter** i den här vyn kan du ändra rapporten med följande filter:
+
+- **Start datum** och **slutdatum**
+- **Proxyidentifiering**
+
+**Visa data efter: översikt**: knappen för **tabell information** är tillgänglig.
 
 - Alla andra diagram:
 
@@ -389,12 +399,16 @@ Om du klickar på **Visa informations tabell**beror informationen som visas på 
   - **Identifieras av**
   - **Leverans status**
   - **Kompromiss källa**
+  - **Taggen**
 
 Om du klickar på **filter**kan du ändra rapporten med följande filter:
 
 - **Start datum** och **slutdatum**
-- Detektions värde
-- **Skyddas av** (endast Office 365 ATP): **ATP** eller **EOP**. Observera att den här filter bara egenskapen inte är tillgänglig i **Visa data genom: \> skadlig program vara**.
+- **Proxyidentifiering**
+- **Skyddas av** (endast Office 365 ATP): **ATP** eller **EOP**
+- **Tagg**: Filtrera efter tagg för att returnera användare eller grupper som har en viss tagg. Mer information om användar flaggor finns i [User Tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Domain**
+- **Mottagare** (Observera att den här filter bara egenskapen är endast tillgänglig i vyn detaljerad tabell)
 
 ## <a name="top-malware-report"></a>Top skadlig kod-rapport
 

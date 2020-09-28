@@ -1,7 +1,7 @@
 ---
 title: Microsoft Secure Score
 description: Här beskrivs säker Poäng i Microsoft 365 Security Center, hur du förbättrar Posture och vilka säkerhets administratörer som kan förvänta dig.
-keywords: säkerhet, skadlig program vara, Microsoft 365, M365, säker poäng, säkerhets Center, förbättrings åtgärder
+keywords: Microsoft säkra poäng, säkra poäng, Office 365 säkra poäng, säkerhets poäng, Microsoft 365 säkerhets Center, förbättrings åtgärder
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: b378288637baa5b51f74fb63d8c8da33ac5e148f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ea580ad6b7bb7cc905a299e473f23a4c74fb289e
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196197"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48294790"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -129,4 +129,4 @@ Om du har några problem kan du meddela oss genom att publicera det i [säkerhet
 - [Utvärdera säkerhets genom övergå molnet](microsoft-secure-score-improvement-actions.md)
 - [Spåra din Microsoft säkra Poäng historik och uppfylla målen](microsoft-secure-score-history-metrics-trends.md)
 - [Kommer snart](microsoft-secure-score-whats-coming.md)
-- [Vad är nytt](microsoft-secure-score-whats-new.md)
+- [Nyheter](microsoft-secure-score-whats-new.md)

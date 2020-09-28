@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Lär dig hur du lägger till och konfigurerar din domän i Microsoft 365 så att dina tjänster som e-post och Skype för företag – Online kan använda ditt eget domän namn.
-ms.openlocfilehash: 6a99ee90db3bb71038309175b32bd4d96097aa5a
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 34e4db5748f9d4c1f1864db09071374bcec73e1d
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662238"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295064"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Ändra namnservrar för att konfigurera Microsoft 365 med valfri domän registrator
 
@@ -122,8 +122,8 @@ Gör så här om du själv vill ändra domänens namnservrar på din domänregis
 |:-----|:-----|
 |Första namnservern  <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |Andra namnservern  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|Tredje namnserver  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|Fjärde namnserver  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|Tredje namnserver  <br/> |ns3.bdm.microsoftonline.com  <br/> |
+|Fjärde namnserver  <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
    > [!TIP]
    > Det bästa är att lägga till alla fyra poster, men om din registrator endast stöder två lägger du till **ns1.bdm.microsoftonline.com** och **ns2.bdm.microsoftonline.com**. 

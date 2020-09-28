@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Så här implementerar du delade VPN-tunnlar för Office 365
-ms.openlocfilehash: af5c2ea35df921abe8eaa9a85ab2ab244931c098
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.openlocfilehash: ff79138d44c98d76af1a3d9c374159b0fae4c7ed
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214894"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295280"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementera VPN-fildelning för Office 365
 
@@ -325,6 +325,10 @@ Port 80 används bara för att till exempel omdirigera till en port 443-session,
 ### <a name="does-this-advice-apply-to-users-in-china-using-a-worldwide-instance-of-office-365"></a>Gäller de här råden för användare i Kina med en världs omspännande instans av Office 365?
 
 **Nej**, det gör det inte. Det enda villkoret för ovanstående råd är användare i Kina som ansluter till en världs omspännande instans av Office 365. På grund av den vanliga förekomsten av gränsöverskridande nätverks belastning i regionen kan direkt avlämning av Internet prestanda vara variabel. De flesta kunder i regionen samarbetar med ett VPN för att föra över trafiken till företagets nätverk och använda sin godkända MPLS-krets eller liknande att utlandet är på en optimerad väg. Detta beskrivs mer i artikeln [Office 365 Performance Optimization för Kina-användare](microsoft-365-networking-china.md).
+
+### <a name="does-split-tunnel-configuration-work-for-teams-running-in-a-browser"></a>Fungerar konfiguration för delade tunnlar för grupper som körs i en webbläsare?
+
+**Nej**, det gör det inte. Den fungerar bara på klient versionen av Microsoft Teams-1.3.00.13565 eller senare. Den här versionen inkluderar förbättringar av hur klienten identifierar tillgängliga nätverks Sök vägar.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

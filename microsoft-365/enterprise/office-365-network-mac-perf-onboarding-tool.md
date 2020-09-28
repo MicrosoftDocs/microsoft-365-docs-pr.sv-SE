@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365-testverktyg (för hands version)
-ms.openlocfilehash: 72f42a71ec44d165a24187edaf03aa62d330479b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2be48f42c8529334b55b311e6f202d9f3b25ff9e
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200823"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295532"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Microsoft 365-testverktyg (för hands version)
 
@@ -205,7 +205,7 @@ Dessa test för UDP-anslutning till Microsoft Teams-tjänsten. Om det är blocke
 
 Visar förlust av UDP-paket mätt i ett 10-testljud-samtal från klienten till Microsoft Teams tjänstens främre dörr. Detta bör vara mindre än **1,00%** för ett pass.
 
-### <a name="latency"></a>Borttagning
+#### <a name="latency"></a>Borttagning
 
 Visar uppmätt UDP-fördröjning, som ska vara lägre än **100ms**.
 

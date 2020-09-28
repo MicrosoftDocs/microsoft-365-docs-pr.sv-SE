@@ -1,7 +1,7 @@
 ---
 title: Spåra din Microsoft säkra Poäng historik och uppfylla målen
-description: Få information som påverkar din säkra poäng. Upptäck trender och ställa in mål.
-keywords: säkerhet, skadlig program vara, Microsoft 365, M365, säker poäng, säkerhets Center, förbättrings åtgärder
+description: Få insikter i aktiviteter som påverkat din Microsoft säkra poäng. Upptäck trender och ställa in mål.
+keywords: Microsoft säkra poäng, säkra poäng, Office 365 säkra poäng, säkerhets poäng, Microsoft 365 säkerhets Center, förbättrings åtgärder
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6c31ea1f7217babd4949bee843b091bb767e210e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4f5d0a59372fb32b2802a094c247e45740ba3946
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196295"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295256"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Spåra din Microsoft säkra Poäng historik och uppfylla målen
 
@@ -81,4 +81,4 @@ Om du har några problem kan du meddela oss genom att publicera det i [säkerhet
 - [Översikt över Microsofts säkra Poäng](microsoft-secure-score.md)
 - [Utvärdera säkerhets genom övergå molnet](microsoft-secure-score-improvement-actions.md)
 - [Kommer snart](microsoft-secure-score-whats-coming.md)
-- [Vad är nytt](microsoft-secure-score-whats-new.md)
+- [Nyheter](microsoft-secure-score-whats-new.md)
