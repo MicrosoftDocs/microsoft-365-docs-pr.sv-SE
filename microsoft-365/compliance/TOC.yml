@@ -151,8 +151,10 @@
       items:
         - name: Förstå kryptering
           href: encryption.md
-        - name: Dubbel nyckelkryptering (förhandsvisning)
+        - name: Kryptering med dubbla nycklar (DKE)
           href: double-key-encryption.md
+        - name: Kryptering med dubbla nycklar FAQ
+          href: double-key-encryption-overview.md
         - name: Tjänstkryptering i Office 365
           href: office-365-service-encryption.md
         - name: Customer Key
@@ -340,10 +342,6 @@
               href: archive-workplacefromfacebook-data.md
             - name: Zooma möten
               href: archive-zoommeetings-data.md
-            - name: Slack
-              href: archive-slack-data.md
-            - name: Zooma möten
-              href: archive-zoommeetings-data.md
         - name: TeleMessage-datakontakter
           items:
             - name: Android
@@ -425,7 +423,7 @@
               href: configure-edge-to-export-search-results.md
             - name: Söka efter och ta bort e-postmeddelanden
               href: search-for-and-delete-messages-in-your-organization.md
-            - name: Söka i de molnbaserade postlådorna för lokala användare
+            - name: Sök efter Teams chattdata för lokala användare
               href: search-cloud-based-mailboxes-for-on-premises-users.md
             - name: Massredigering av flera innehållssökningar
               href: bulk-edit-content-searches.md

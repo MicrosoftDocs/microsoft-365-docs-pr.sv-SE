@@ -95,6 +95,8 @@
               href: get-started/register-reused-devices-self.md
         - name: Gör användarna redo att använda enheter
           href: get-started/get-started-devices.md
+        - name: Välkomstprogrammet med Autopilot och sidan Registreringsstatus
+          href: get-started/esp-first-run.md
         - name: Kom igång med appens kontroll
           href: get-started/get-started-app-control.md
         - name: Distribuera appar
