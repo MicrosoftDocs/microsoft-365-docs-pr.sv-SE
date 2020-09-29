@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du utvärderar e-post från min egen domän till en Microsoft 365-postlåda genom att bara använda två test konton.
-ms.openlocfilehash: bfcb2bda4d560ab629ddebed88ac1d55e6224c05
-ms.sourcegitcommit: 5f980a9eb5aca61cf3662ef0bc65dec215e21656
+ms.openlocfilehash: 8bb04edc9a7879edc2094f1fed667d5956174ea3
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45186053"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295040"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Pilot Microsoft 365 från min anpassade domän
 
@@ -101,7 +101,48 @@ I Microsoft 365 används Exchange Online Protection (EOP) för skräp post skydd
 
 5. Välj **skapa** > **stänga**.
 
-### <a name="step-6-update-dns-records-at-your-dns-hosting-provider"></a>Steg 6: Uppdatera DNS-posterna hos DNS-värden
+### <a name="step-6-configure-mail-to-flow-from-microsoft-365-or-office-365-to-email-server"></a>Steg 6: **Konfigurera e-post att flytta från Microsoft 365 eller Office 365 till e-postservern
+
+Det finns två steg för detta:
+
+1. Konfigurera din Microsoft 365 eller Office 365-miljö.
+
+2. Konfigurera en anslutning från Microsoft 365 eller Office 365 till din e-postserver.
+
+### <a name="1-configure-your-microsoft-365-or-office-365-environment"></a>1. Konfigurera din Microsoft 365 eller Office 365-miljö.
+
+Kontrollera att du är klar med följande i Microsoft 365 eller Office 365:
+
+1. För att konfigurera anslutningar behöver du ha behörigheter tilldelade innan du kan börja. Om du vill kontrollera vilka behörigheter du behöver, kolla i Microsoft 365 och Office 365 anslutningspost i [Funktionsbehörigheter i EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop) avsnittet.
+
+2. Om du vill att EOP eller Exchange Online skickar e-post från din e-postserver till Internet gör du något av följande:
+
+   - Använd ett certifikat konfigurerat med ett ämnesnamn som överensstämmer med en godkänd domän i Microsoft 365 eller Office 365. Vi rekommenderar att ditt certifikats namn eller ämnets alternativa namn överensstämmer med din organisations primära SMTP-domän. Mer information finns i[Förutsättningar för din lokala e-postmiljö](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment).
+
+   – ELLER –
+
+   - Kontrollera att alla din organisations avsändardomäner och underdomäner är konfigurerade som godkända domäner i Microsoft 365 eller Office 365.
+
+   Mer information om definiering av godkända domäner finns i [Hantera godkända domäner i Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) och [Aktivera e-postflöde för underdomäner i Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains).
+
+3. Bestäm om du vill använda regler för e-postflöde (kallas även transportregler) eller domän namn for att leverera e-post från Microsoft 365 eller Office 365 till dina e-postservrar. De flesta företag väljer att skicka e-post för alla godkända domäner. Mer information finns i [Scenario: Villkorsstyrd e-postdirigering i Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing).
+
+> [!NOTE]
+> Du kan konfigurera regler för e-postflöde enligt beskrivningen i [Åtgärder för e-postflödesregler i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions). Du vill, till exempel, kanske använda regler för e-postflöde med anslutningar om din e-post för närvarande är dirigerad via distributionslistor till flera webbplatser.
+
+### <a name="2-set-up-a-connector-from-microsoft-365-or-office-365-to-your-email-server"></a>2. Konfigurera en anslutning från Microsoft 365 eller Office 365 till din e-postserver
+
+För att skapa en anslutning i Microsoft 365 eller Office 365, klicka på **Admin**och klicka sedan på **Exchange** för att gå till Administrations centret för Exchange. Sedan klickar du på ** e-postflöde **och klickar på **anslutningar**.
+
+Konfigurera anslutningar med hjälp av guiden.
+
+Starta guiden genom att klicka på plustecknet **+**. På den första skärmen välj **Från** Office 365 och **Till** Din Organisations e-postserver.
+
+Klicka **Nästa**och följ instruktionerna i guiden. Klicka på **Hjälp** eller **Läs Mer** länkarna om du behöver mer information. Guiden tar dig igenom konfigurationen. På slutet kontrollera att din anslutningen har verifierats. Om anslutningen inte validerar dubbelklicka på det meddelande som visas för mer information och läsa [Verifiera anslutningar ](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) för hjälp med problemlösning.
+
+
+
+### <a name="step-7-update-dns-records-at-your-dns-hosting-provider"></a>Steg 7: Uppdatera DNS-posterna hos DNS-värden
 
 Logga in på din DNS-värds webbplats och följ anvisningarna i [lägga till DNS-poster för att ansluta domänen](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
@@ -115,7 +156,7 @@ Logga in på din DNS-värds webbplats och följ anvisningarna i [lägga till DNS
 
     Om du inte har en SPF-post ändrar du den som rekommenderas av Microsoft 365 för att inkludera domänen för din aktuella e-postleverantör och lägga till spf.protection.outlook.com. Detta godkänner utgående meddelanden från båda e-postsystemen.
 
-### <a name="step-7-set-up-email-forwarding-at-your-current-provider"></a>Steg 7: Konfigurera vidarebefordran av e-post hos din nuvarande leverantör
+### <a name="step-8-set-up-email-forwarding-at-your-current-provider"></a>Steg 8: Konfigurera vidarebefordran av e-post hos din nuvarande leverantör
 
 På din aktuella e-postleverantör ställer du in vidarebefordring för dina användares e-postkonton i din onmicrosoft.com-domän:
 
@@ -130,7 +171,7 @@ När du slutför det här steget blir all e-post som skickas till usera@yourcomp
 > Du behöver inte spara en kopia av meddelanden hos den aktuella e-postleverantören.<br/>
 > De flesta leverantörer vidarebefordrar e-post genom att lämna svar till avsändarens e-postadress intakt så att svar går till den ursprungliga avsändaren.
 
-### <a name="step-8-test-mail-flow"></a>Steg 8: Testa e-postflöde
+### <a name="step-9-test-mail-flow"></a>Steg 9: Testa e-postflöde
 
 1. Logga in på Outlook Web App med inloggnings uppgifterna för användaren A.
 
@@ -142,10 +183,10 @@ När du slutför det här steget blir all e-post som skickas till usera@yourcomp
 
     - Kontrollera att vidarebefordran är rätt konfigurerat från ett externt konto eller från ett e-postkonto i det befintliga e-postsystemet. Skicka till exempel ett e-postmeddelande från det ursprungliga serverkontot för User C eller ett Hotmail-konto och verifiera att det anländer till Microsoft 365-postlådan för användare A.
 
-### <a name="step-9-move-mailbox-contents"></a>Steg 9: Flytta postlådeinnehåll
+### <a name="step-10-move-mailbox-contents"></a>Steg 10: Flytta postlådeinnehåll
 
 Eftersom du bara flyttar två test användare, och användare A och användare B båda använder Outlook, kan du flytta e-postmeddelandet genom att öppna det gamla. PST-filen i den nya Outlook-profilen och kopiera meddelanden, Kalender objekt, kontakter och så vidare. Mer information finns i [importera e-post, kontakter och kalender från en Outlook. PST-fil](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
 
 När de har importer ATS till lämpliga platser i Microsoft 365-post lådan kan objekten vara tillgängliga från vilken enhet som helst, var som helst.
 
-När flera post lådor är inblandade, eller om anställda inte använder Outlook, kan du använda de Migreringsverktyg som finns tillgängliga i administrations centret för Exchange. Kom igång genom att gå till administrations centret för Exchange och följa anvisningarna i [migrera e-post från en IMAP-server till Exchange Online-postlådor – vi behöver en ny artikel resurs].
+När flera post lådor är inblandade, eller om anställda inte använder Outlook, kan du använda de Migreringsverktyg som finns tillgängliga i administrations centret för Exchange. För att komma igång, gå till Administrationscenter för Exchange och följa anvisningarna i [Migrera e-post från en IMAP-server till Exchange Online-postlådor](https://docs.microsoft.com/exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes).
