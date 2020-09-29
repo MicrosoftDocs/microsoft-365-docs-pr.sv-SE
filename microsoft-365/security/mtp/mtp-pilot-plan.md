@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: d18b3d8ede271cb0d9611d6210a3d1d32849581a
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a52ba30aa9b89dc78e9bd5a538cb530cd7bf6e00
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195657"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305372"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>Planera pilotmaterial Microsoft Threat Protection Project 
 
@@ -30,7 +30,7 @@ ms.locfileid: "48195657"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft Threat Protection
 
 För att se till att ditt Pilot projekt är framgångs rika är det viktigt att planera omsorgsfullt med och få godkännanden från dina intressenter i början. Planerings element inkludera identifierings område, Använd ärende, krav och villkor för framgång.. 
 
@@ -78,7 +78,7 @@ Ett sätt att samla ihop alla element i planen är att skapa ett styrkort. Visa 
 
 |**Användnings fall**|**Krav**|**Konfigurations krav**|**Test plan**|**Förväntat resultat**|**Test status**|**Poäng**|**Kommentarer**|
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
-|Ärende hantering|-Skydd mot Microsoft Threat </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Säkerhet för Microsoft Cloud App (valfritt)|Se [förutsättningarna](https://aka.ms/mtp-trial-lab) för förberedelse, konfigurering och konfiguration för information |[Simulera attack](mtp-pilot-simulate.md) <br></br>[Undersök problemet](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#investigate-an-incident) |Prövare kan förstå omfattningen och konsekvenserna av incidenten och hantera händelsen||||
+|Ärende hantering|-Skydd mot Microsoft Threat </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Säkerhet för Microsoft Cloud App (valfritt)|Se [förutsättningarna](https://aka.ms/mtp-trial-lab) för förberedelse, konfigurering och konfiguration för information |[Simulera attack](mtp-pilot-simulate.md) <br></br>[Undersök problemet](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |Prövare kan förstå omfattningen och konsekvenserna av incidenten och hantera händelsen||||
 |AutoIR|-Skydd mot Microsoft Threat </br></br>-Azure ATP </br></br>-Microsoft Defender ATP |Se [förutsättningarna](https://aka.ms/mtp-trial-lab) för förberedelse, konfigurering och konfiguration för information <br>Aktivera AutoIR  |[Simulera attack](mtp-pilot-simulate.md) <br></br>[Automatisk undersökning](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Aviseringar och händelser åtgärdas automatiskt av skydd mot Microsoft Threat||||
 |Avancerad jakt|-Skydd mot Microsoft Threat </br></br>-Microsoft Defender ATP </br></br>-Office 365 ATP   |Se [förutsättningarna](https://aka.ms/mtp-trial-lab) för förberedelse, konfigurering och konfiguration för information|[Avancerat jakt scenario](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#advanced-hunting-scenario) |Prövare kan hitta data genom avancerad jakt, pivotering till förverkningarade enheter och genom att skapa anpassade identifieringar||||
 

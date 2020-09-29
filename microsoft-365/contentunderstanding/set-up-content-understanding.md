@@ -10,12 +10,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Konfigurera innehålls förståelse i Project cortex
-ms.openlocfilehash: f0a26f0044e578928730cf4930f1524e86dff9f3
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 31c6b6dd31b3f1bc47deb8424dd847cc0af6d429
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294890"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304786"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Konfigurera SharePoint-Syntex
 
@@ -107,27 +107,7 @@ Om du har 300 eller fler SharePoint Syntex-licenser för SharePoint Syntex i org
 
 Du kan uppskatta vilken AI Builder-kapacitet som passar dig med [AI Builder-kalkylatorn](https://powerapps.microsoft.com/ai-builder-calculator).
 
-1. Gå till [administrations centret för Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) för att kontrol lera kredit och användning.
-
-    > [!NOTE]
-    > Aktivera den här inställningen i ett SharePoint-dokumentbibliotek påverkar inte befintliga modeller som tillämpas på biblioteket eller möjligheten att tillämpa dokument förståelse på ett bibliotek. 
-    
-2. På sidan **skapa innehålls Center** kan du skapa en SharePoint-webbplats för innehålls Center där användare kan skapa och hantera dokument förståelse modeller. </br>
-    a. För **webbplats namn**anger du det namn du vill använda för innehålls Center webbplatsen.</br>
-    b. Webb **adressen** för din webbplats visas, baserat på webbplats namnet.</br>
-
-    > [!NOTE] 
-    > Du kan välja ett språk som stöds, innehålls förstå modeller kan bara skapas för engelska.</br>
-
-      ![Skapa innehålls Center](../media/content-understanding/admin-cu-create-cc.png)</br>
-
-3. Välj **Nästa**.
-
-4. På sidan **Slutför och granska** tittar du på den valda inställningen och väljer att göra ändringar. Om du är nöjd med dina val väljer du **Aktivera**.
-
-5. Sidan **innehålls användning aktive rad** visas och bekräftar att systemet har lagt till dina inställningar för formulär bearbetning och skapat innehålls Center webbplatsen. Välj **klar**.
-
-6. Du kommer att återföras till sidan **Automatisera innehålls förståelse** . Från den här sidan kan du välja **Hantera** för att ändra dina konfigurations inställningar. 
+Gå till [administrations centret för Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) för att kontrol lera kredit och användning.
 
 ## <a name="see-also"></a>Se även
 

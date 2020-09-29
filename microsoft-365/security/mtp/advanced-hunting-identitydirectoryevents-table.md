@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4a698bc0d6a7c1ebadec44357b932e9b56dc0a3c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 118d96b797e9d46b4a9912f919cafbba680a9609
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196851"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305288"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
@@ -30,9 +30,7 @@ ms.locfileid: "48196851"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+- Microsoft Threat Protection
 
 `IdentityDirectoryEvents`Tabellen i det [avancerade](advanced-hunting-overview.md) antivirus programmet innehåller händelser som berör en lokal domänkontrollant som kör Active Directory (AD). Den här tabellen innehåller olika identitets relaterade händelser, till exempel lösen ords ändringar, lösen ords giltighet och UPN-ändringar. Den fångar också system händelser på domänkontrollanten, som schemaläggning av uppgifter och PowerShell-aktivitet. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
@@ -57,7 +55,7 @@ Information om andra tabeller i det avancerade jakt schema [finns i referens fö
 | `AccountDomain` | strängvärdet | Kontots domän |
 | `AccountUpn` | strängvärdet | Kontots huvud namn (UPN) |
 | `AccountSid` | strängvärdet | Kontots säkerhets identifierare (SID) |
-| `AccountObjectId` | strängvärdet | Unik identifierare för kontot i Azure AD |
+| `AccountObjectId` | strängvärdet | Unik identifierare för kontot i Azure Active Directory |
 | `AccountDisplayName` | strängvärdet | Namnet på kontot som visas i adress boken. Vanligt vis en kombination av ett visst eller förnamn, en mellan initiering och ett efter namn eller från gång. |
 | `DeviceName` | strängvärdet | Det fullständigt kvalificerade domän namnet (FQDN) för enheten |
 | `IPAddress` | strängvärdet | Den IP-adress som tilldelats enheten under kommunikationen |

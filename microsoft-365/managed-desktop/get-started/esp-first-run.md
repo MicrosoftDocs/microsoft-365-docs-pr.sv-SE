@@ -1,6 +1,6 @@
 ---
-title: Första körningen med autopilot och sidan registrerings status
-description: Distribuera ESP-upplevelsen, de inställningar som används och undantag
+title: Välkomstprogrammet med Autopilot och sidan Registreringsstatus
+description: Hur du distribuerar ESP-funktioner, vilka inställningar som används och konfigurations ändringar
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -10,14 +10,14 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 84656e2f0ae9d148c61c27af2a53e157cd44c171
-ms.sourcegitcommit: e6283e7c32ba9628fc45e9abc5cd4d21fb3f7ca9
+ms.openlocfilehash: 7337dd28f7940256d1753cd4c0b6309406fab2d1
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 09/29/2020
-ms.locfileid: "48299245"
+ms.locfileid: "48305276"
 ---
-# <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Första körningen med autopilot och sidan registrerings status
+# <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Välkomstprogrammet med Autopilot och sidan Registreringsstatus
 
 Microsoft Managed Desktop använder både [Windows autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) och Microsoft Intunes [registrerings status sida (ESP)](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) för att tillhandahålla den bästa möjliga upplevelsen för förstagångskörningen för användarna.
 
@@ -49,7 +49,7 @@ Microsoft Managed Desktop använder de här inställningarna i den autopilot-pro
 |Ange ett namn     | MMD-% SLUMP: 11%        |
 
 > [!NOTE]
-> När "vit Glove"-rovisioning är aktive rad för kunder med ESP aktiverat stöds den för närvarande inte i Microsoft Managed Desktop.
+> När "vit Glove"-etablering är aktive rad för kunder med ESP aktiverat stöds den för närvarande inte i Microsoft Managed Desktop.
 
 ## <a name="enrollment-status-page-settings"></a>Inställningar för status sidan för anmälan
 
@@ -89,15 +89,15 @@ Det här händer så här:
 
 Microsoft Managed Desktop stöder för närvarande inte "vit Glove" för Windows autopilot.
 
-## <a name="exceptions"></a>Undanta
+## <a name="change-to-autopilot-and-enrollment-status-page-settings"></a>Ändra inställningarna för statusen autopilot och status sidan för anmälan
 
-Om installations programmet som hanteras av Microsoft Managed Desktop inte exakt motsvarar dina behov kan du spara en begäran om ett undantag. Information om hur du gör detta finns i artikeln om att [begära ett undantag](../service-description/customizing.md#request-an-exception). Här är några exempel på vilka typer av undantag du kan behöva:
+Om installations programmet som hanteras av Microsoft Managed Desktop inte exakt motsvarar dina behov kan du arkivera ett support ärende via [administrations portalen](https://portal.azure.com/). Här är några exempel på de typer av konfigurationer som du kan behöva:
 
-### <a name="autopilot-exception"></a>Autopilot-undantag
+### <a name="autopilot-settings-change"></a>Ändring av inställningar för autopilot
 
 Du kanske vill begära en annan mall för enhets namn. Du kan inte ändra distributions läge, ansluta till Azure som, sekretess inställningar eller användar konto typen.
 
-### <a name="enrollment-status-page-exception"></a>Undantag för registrerings status sida
+### <a name="enrollment-status-page-settings-change"></a>Inställningar för registrerings status sidan ändras
 
 - Längre antal minuter för inställningen "Visa ett fel när installationen tar längre än angivet antal minuter".
 - Det fel meddelande som visas

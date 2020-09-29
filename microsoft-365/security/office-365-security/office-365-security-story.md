@@ -6,6 +6,7 @@ manager: dansimp
 ms.date: 08/13/2020
 audience: Admin
 ms.topic: overview
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -13,12 +14,12 @@ search.appverid:
 ms.collection:
 - microsoft-365-docs-pr
 description: Säkerhet i Office 365, från EOP till ATP-abonnemang 1 och 2, standard kontra strikta säkerhets konfigurationer och mer, så att du kan förstå vad du har och hur du skyddar dina egenskaper.
-ms.openlocfilehash: 66a83d99197b8af98ef191b348b1303a8233a990
-ms.sourcegitcommit: e6283e7c32ba9628fc45e9abc5cd4d21fb3f7ca9
+ms.openlocfilehash: 680066f58850f59523ae6fb8a8168459dd813fc1
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 09/29/2020
-ms.locfileid: "48299322"
+ms.locfileid: "48304852"
 ---
 # <a name="office-365-security-outline"></a>Säkerhets disposition för Office 365
 
@@ -50,7 +51,7 @@ Men i en arkitektur är det dags att tänka på varje del som en samlad säkerhe
 
 <!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic":::-->
 
-:::image type="content" source="../../media/tp_EOPandATPGraphic.png" alt-text="EOP och ATP och deras relationer till varandra med service betoning, inklusive en kommentar om e-postauktorisering.":::
+:::image type="content" source="../../media/tp_EOPandATPGraphic.png" alt-text="Placeholder graphic":::
 
 Även ***om alla*** de här tjänsterna betonar ett specifikt mål från skydda, upptäcka, undersöka och svarar, kan ***alla*** tjänster hantera, upptäcka, utreda och svara.
 
@@ -65,7 +66,7 @@ Om du har ett Office 365 E3 eller tidigare har du EOP, men du kan köpa friståe
 
 ## <a name="the-office-365-security-ladder-from-eop-to-atp"></a>Säkerhets steg för Office 365 från EOP till ATP
 
-:::image type="content" source="../../media/tp_EOPATPEmailAuth4.gif" alt-text="EOP och ATP samt deras specifika styrkor, som skyddar och identifierar för att undersöka och svara. Dessutom visas konfigurering av e-postkonfiguration för EOP.":::
+:::image type="content" source="../../media/tp_EOPATPEmailAuth4.gif" alt-text="Placeholder graphic":::
 
 > [!IMPORTANT]
 > Lär dig mer om dessa sidor: [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide)och [Avancerat skydd](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide).

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f01f76ac591b4c2be9873fa87ec416939158acd3
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
-ms.translationtype: HT
+ms.openlocfilehash: 51b764e660ae36ae3476809b5fe6dae1c4ca0891
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195509"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304968"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft Threat Protection förhandsgranska funktioner
 
@@ -42,7 +42,7 @@ Få information om de nya funktionerna i förhandsversionen av Microsoft Threat 
 Mer information om nya funktioner som är allmänt tillgängliga finns i [Nyheter i Microsoft Threat Protection](whats-new.md).
 
 ## <a name="turn-on-preview-features"></a>Aktivera förhandsgranskningsfunktioner
-Du får tillgång till kommande funktioner och kan lämna feedback om dem för att hjälpa till att förbättra den övergripande upplevelsen innan funktionerna blir allmänt tillgängliga.
+Du får till gång till kommande funktioner som du kan ge feedback om för att förbättra den övergripande upplevelsen innan funktionerna är allmänt tillgängliga.
 
 Aktivera inställningen för förhandsversionen och var bland de första att prova kommande funktioner.
 
@@ -61,7 +61,6 @@ Du vet att du har aktiverat förhandsgranskningsfunktionerna när kryssrutan **A
 Följande funktioner och förbättringar är för närvarande tillgängliga för förhandsgranskning:
 
 - **[Microsoft Threat Protection-API:er ](api-overview.md)** – Microsoft Threat Protection-API:erna på lop-nivå gör det möjligt för dig att automatisera arbetsflöden baserat på tabellerna för delade incidenter och avancerad jakt. 
-- **[Tabellen IdentityDirectoryEvents i avancerad jakt](advanced-hunting-identitydirectoryevents-table.md)** – Hitta händelser som involverar en lokal domänkontrollant genom att köra Active Directory (AD). I den här tabellen beskrivs ett område med identitetsrelaterade händelser samt systemhändelser på domänkontrollanten.
-- **[Vidta åtgärder i avancerad jakt](advanced-hunting-take-action.md)** – Avvärj hot snabbt eller hantera komprometterade tillgångar som du hittar genom [avancerad jakt](advanced-hunting-overview.md).
-- **[In-portalens schemareferens](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** – Få information om schematabeller för avancerad jakt direkt i säkerhetscentret. Utöver tabell- och kolumnbeskrivningar tillhandahåller den här praktiska referensen även information om händelsetyper som stöds (`ActionType` värden) samt exempelfrågor.
+- **[Vidta åtgärder i avancerad jakt](advanced-hunting-take-action.md)**– snabb till gångar som du hittar i en [Avancerad jakt](advanced-hunting-overview.md)snabbt.
+- **[Schema referens i portalen](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**– få information om avancerade tilläggs schema tabeller direkt i säkerhets Center. Förutom tabell-och kolumn beskrivningar innehåller den här referensen händelse typer ( `ActionType` värden) och exempel frågor.
 
