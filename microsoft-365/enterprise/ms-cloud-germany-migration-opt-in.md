@@ -19,22 +19,22 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Sammanställning '
-ms.openlocfilehash: a4252a357891fc978d8b40747c5ad5741786b290
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2e5e5053ff1539b3fa92175115c8c9db3abc81ce
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694291"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48309053"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Så här väljer du för migrering från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i de nya tyska Data Center-områdena
 
 >[!Note]
->Den här artikeln gäller endast för kvalificerade Microsoft Cloud Germany/Deutschland-kunder.
+>Den här artikeln gäller endast Microsoft Cloud Germany-kunder (Microsoft Cloud Deutschland).
 >
 
 ## <a name="how-to-request-migration"></a>Så här kan du begära migrering
 
-Berättigade kunder med service etablerad i Microsoft Cloud Tyskland kommer att se en sida i Microsoft 365 Admin Center som gör att en kund klient organisations administratör kan välja att migrera.
+Berättigade kunder med service etablerad i Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) kommer att se en sida i Microsoft 365 Admin Center som gör att en kund klient organisations administratör kan välja att migrera.
 
 För att komma åt sidan i administrations centret för Microsoft 365, expandera **Inställningar** i navigerings fönstret till vänster och klicka sedan på **organisations profil**.
 
@@ -54,7 +54,13 @@ När en administratör har valt för klient organisationens räkning kommer alla
 
 ## <a name="what-happens-after-opting-in-for-migration"></a>Vad händer efter vanligt för migrering?
 
-Migreringar förväntas äga rum i 2020 för organisationer som väljer Microsoft-drivna sätt.  Som ett resultat av migreringen flyttas grundläggande kund uppgifter och abonnemang till de nya tyska regionerna.  Microsoft skickar uppdateringar under hela migreringsprocessen i meddelande Center.
+Migreringar kommer att påbörjas i 2021 för organisationer som väljer Microsoft-drivna tillvägagångs sätt och kommer att slutföras innan Microsoft Cloud Germany (Microsoft Cloud Deutschland) pensions datum den 29 oktober 2021.  Som ett resultat av migreringen flyttas grundläggande kund uppgifter och abonnemang till de nya tyska regionerna.  Microsoft skickar uppdateringar under hela migreringsprocessen i meddelande Center.  Se artiklarna nedan för mer information.
+
+## <a name="what-happens-if-the-customer-tenant-administrator-does-not-opt-in-for-migration-in-admin-center"></a>Vad händer om administratören för kund innehavaren inte väljer att migrera i administrations centret?
+
+Villkoren för online tjänster har ändrats med villkor som gör att Microsoft kan migrera dina Microsoft 365-, Dynamics 365-och Power BI-data och-abonnemang från Microsoft Cloud Deutschland till ett nytt Data Center. Dessa villkor träder i kraft på alla Microsoft Cloud Germany-abonnemang (Microsoft Cloud Deutschland) som förnyades sedan den 1 maj 2020.  Klient organisationens administratör får ett meddelande i e-post och meddelande Center om att deltagande av migrering sker automatiskt för en Microsoft-assisterad migrering. Detta meddelande kommer att skickas till minst 30 dagar före det automatiska deltagandet.  Efter migrering väljer all kommunikation och status uppdateringar till kund klient organisationer i meddelande Center.
+
+Kund-och partner klient organisationer uppmanas att välja att delta i administrations Center så att migreringen kan börja så snart som möjligt.
 
 ## <a name="more-information"></a>Mer information
 

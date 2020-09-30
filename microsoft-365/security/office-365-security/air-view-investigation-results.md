@@ -15,12 +15,13 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Under och efter en automatiserad undersökning i Microsoft 365 kan du Visa resultaten och nyckeltalen.
-ms.openlocfilehash: 6137edf741dc2ef21ec4e046b1985dd3f85b5720
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.date: 09/29/2020
+ms.openlocfilehash: df0eaa54d8bc1c9cd6c91b6b36958e1eb0d2bfd6
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197697"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48309112"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Information och resultat från en automatiserad undersökning i Microsoft 365
 
@@ -144,10 +145,14 @@ Med den skir volymen av e-post som användare i en organisation skickar och tar 
 
 kan ta avsevärd tid. AIR automatiserar nu den här processen och sparar din organisations tid och arbets kraft.
 
-Två olika typer av e-postkluster kan identifieras under e-postanalys steg: likhets kluster och indikator kluster.
+Tre olika typer av e-postkluster kan identifieras under e-postanalys steg: likhets kluster (alla utredningar), indikator kluster (alla utredningar) och post låda/användar kluster.
 
 - Likhets kluster är e-postmeddelanden som identifieras av jakt efter e-post med liknande avsändare och innehållsfiler. Dessa kluster utvärderas efter skadligt innehåll baserat på de ursprungliga identifierings resultaten. E-postkluster som innehåller tillräckligt många skadliga e-postidentifieringar betraktas som skadliga.
-- Indikator kluster är e-postmeddelanden som identifieras av jakt mot samma indikator enhet (fil-hash eller URL) från det ursprungliga e-postmeddelandet. När den ursprungliga filen/URL-enheten identifieras som skadlig, används Verdict för hela klustret med e-postmeddelanden som innehåller den personen. En fil som identifieras som skadlig program vara innebär att det kluster med e-postmeddelanden som innehåller filen behandlas som e-postmeddelanden med skadlig program vara.
+- Indikator kluster är e-postmeddelanden som identifieras av jakt mot samma indikator enhet (fil-hash eller URL) från det ursprungliga e-postmeddelandet. När ouserriginal-filen/URL-enheten identifieras som skadlig används Verdict i hela klustret med e-postmeddelanden som innehåller den personen. En fil som identifieras som skadlig program vara innebär att det kluster med e-postmeddelanden som innehåller filen behandlas som e-postmeddelanden med skadlig program vara.
+- Post lådor/användar kluster är e-postmeddelanden relaterade till användaren som är involverad i en undersökning av en användare.  Observera att dessa e-postkluster kan analyseras av säkerhets åtgärds teamet och inte skapar åtgärd för e-postreparation.  Kompromissens Playbook-post låda/användar kluster granskar de e-postmeddelanden som skickas av användaren som analyseras för att förstå den potentiella effekten hos e-postmeddelanden som skickas från post lådan:
+    - Skadliga e-postmeddelanden som skickas från en post låda eller användare, vilka indikerar potentiella problem med post lådan eller kontot och visar andra användare/post lådor som möjligen påverkas av skadligt.
+    - Misstänkta e-postmeddelanden som skickas av post lådan/användaren och som visar eventuell spam/Mass utskick via e-post som skickas från post lådan.
+    - Rensa e-postmeddelanden som skickas av post lådan/användaren, som ger säkerhets åtgärds gruppen en vy över legitima e-postmeddelanden som skickas, men som kan inkludera exfiltration när e-postkontot är skadat.
 
 Målet med att klustra är att söka och hitta andra relaterade e-postmeddelanden som skickas av samma avsändare som en del av en attack eller en kampanj.  I vissa fall kan legitim e-post utlösa en undersökning (till exempel en användare rapporterar en marknadsförings-e-postadress).  I det här scenariot bör e-postklustringen identifiera att e-postkluster inte är skadliga – när det stämmer, det anger **inget** hot eller rekommenderar att du tar bort e-post.
 
@@ -155,7 +160,7 @@ På fliken **e-post** visas också e-postobjekt som är relaterade till undersö
 
 Antalet e-postmeddelanden som identifieras på fliken e-post representerar den summa summan av alla e-postmeddelanden som visas på fliken **e-post** . Eftersom e-postmeddelanden finns i flera kluster är det totala antalet e-postmeddelanden som identifieras (och som påverkas av reparations åtgärder) antalet unika e-postmeddelanden som finns i alla klustr och ursprungliga mottagares e-postmeddelanden.
 
-Både Explorer och AIR räknar e-postmeddelanden per mottagare, eftersom säkerhets verdicts, åtgärder och leverans platser kan variera per mottagare. Därför räknas ett ursprungligt e-postmeddelande till tre användare som totalt tre e-postmeddelanden i stället för ett e-postmeddelande. Obs! det kan finnas fall då ett e-postmeddelande räknas två eller fler gånger eftersom e-postmeddelandet kan ha flera åtgärder och det kan finnas flera kopior av e-postmeddelandet när alla åtgärder vidtas. Ett e-postmeddelande med skadlig kod som identifieras vid leverans kan till exempel resultera i att både blockerade e-postmeddelanden och ett ersatt e-postmeddelande (hot fil ersätts med en varnings fil) och sedan levereras till användarens post låda. Eftersom det finns två kopior av e-postmeddelandet i systemet, kan båda räknas i antal kluster.
+Både Utforskaren och AIR räknar e-postmeddelanden per mottagare, eftersom säkerhets verdicts, åtgärder och leverans platser kan variera per mottagare. Därför räknas ett ursprungligt e-postmeddelande till tre användare som totalt tre e-postmeddelanden i stället för ett e-postmeddelande. Det kan hända att ett e-postmeddelande räknas två eller fler gånger, till exempel när ett e-postmeddelande har flera åtgärder, eller när det finns flera kopior av e-postmeddelandet när alla åtgärder utförs. Ett e-postmeddelande med skadlig kod som identifieras vid leverans kan till exempel resultera i både ett blockerat e-postmeddelande och ett e-postmeddelande (hot-fil ersatt med en varnings fil). Eftersom det finns två kopior av e-postmeddelandet i systemet, kan båda räknas i antal kluster.
 
 Antal e-posträkningar beräknas vid tiden för undersökningen och vissa räknare beräknas om när du öppnar undersökningen flyouts (baserat på en underliggande fråga). E-postmeddelandena som visas för e-postkluster på fliken e-post och antalet e-postuppgifter som visas i utfällda kluster beräknas vid tiden för undersökningen och inte ändras. Antalet e-postkonton visas längst ned på fliken e-post i e-postklustret och antalet e-postmeddelanden som visas i Utforskaren visar de e-postmeddelanden som tagits emot efter den första analysen. Därför visar ett e-postkluster som visar en ursprunglig mängd om 10 e-postmeddelanden en total e-postlista med totalt 15 om fem fler e-postmeddelanden tas mellan undersökningen analys fas och när administratören granskar undersökningen.  Även gamla undersökningar kan börja få större räkning än vad Explorer frågar visar, eftersom ATP-data förfaller efter sju dagar för utvärdering och 30 dagar för betalda licenser.  Visar både historiska och aktuella räkningar i olika vyer för att ange e-posteffekten vid tiden för undersökningen och den aktuella påverkan fram till den tid då åtgärden körs.
 
@@ -232,7 +237,7 @@ Du kan:
 |Undersökning av DLP-överträdelser|Undersök eventuella överträdelser som upptäckts av [data förlust skydd](../../compliance/data-loss-prevention-policies.md) (DLP)|
 |Extrahering av e-postindikatorer|Extrahera indikatorer från rubriken, bröd texten och innehållet i ett e-postmeddelande för undersökning|
 |Fil-hash-rykte|Upptäcka avvikelser baserat på filhash-värden för användare och datorer i organisationen|
-|Identifiering av e-postkluster|Analys av e-postkluster baserat på sidhuvud, brödtext, innehåll och URL: er|
+|Identifiering av e-postkluster|Analys av e-postkluster baserat på sidhuvud, brödtext, innehåll, filer och URL: er|
 |Volym analys för e-postkluster|Analys av e-postkluster baserat på utgående e-postflöde|
 |Granskning av e-postdelegation|Undersök åtkomst till e-postombud för användar post lådor som är relaterade till den här undersökningen|
 |Undersöknings regler för e-post|Undersök eventuella regler för vidarebefordran av användar post lådor som är relaterade till den här undersökningen|

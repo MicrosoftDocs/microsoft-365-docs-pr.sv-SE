@@ -1,11 +1,12 @@
 ---
-title: Integrera Office 365 ATP med Microsoft Defender Avancerat skydd
+title: Använda Microsoft Defender för Office 365 tillsammans med Microsoft Defender för slut punkten
 f1.keywords:
 - NOCSH
+keywords: integrering, Microsoft Defender, ATP
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 07/08/2020
+ms.date: 09/29/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,30 +14,29 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
-ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
-description: Integrera Office 365 Avancerat skydd med Microsoft Defender Avancerat skydd för att visa mer detaljerad information om Threat Management.
+description: Använd Microsoft Defender för Office 365 tillsammans med Microsoft Defender Avancerat skydd för att få mer detaljerad information om hot mot dina enheter och e-postinnehåll.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0906b8b44922084a65999dd9ab10a09c827605c2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2c95e15c3cf16547843f9d2976dbf9df0d5747c0
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201977"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48309243"
 ---
-# <a name="integrate-office-365-advanced-threat-protection-with-microsoft-defender-advanced-threat-protection"></a>Integrera Office 365 Avancerat skydd med Microsoft Defender Avancerat skydd
+# <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-advanced-threat-protection"></a>Använda Microsoft Defender för Office 365 tillsammans med Microsoft Defender Avancerat skydd
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Office 365 Avancerat skydd](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) (Office 365 ATP) kan konfigureras så att det fungerar med [Microsoft Defender Avancerat skydd](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender ATP).
+[Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) kan konfigureras så att det fungerar med [Microsoft Defender för slut punkten](https://docs.microsoft.com/windows/security/threat-protection).
 
-Integrering av Office 365 ATP med Microsoft Defender ATP kan hjälpa din säkerhets åtgärds grupp övervakning och vidta åtgärder snabbt om användarnas enheter löper risk. När integrationen är aktive rad kan till exempel din säkerhets åtgärds grupp se vilka enheter som eventuellt påverkas av ett identifierat e-postmeddelande, samt hur många aviseringar om dessa enheter har i Microsoft Defender ATP. 
+Att integrera Microsoft Defender för Office 365 med Microsoft Defender för slut punkten kan hjälpa din säkerhets åtgärds grupp övervakning och vidta åtgärder snabbt om användarnas enheter löper risk. När integrationen är aktive rad kan till exempel din säkerhets åtgärds grupp se vilka enheter som eventuellt påverkas av ett identifierat e-postmeddelande, samt hur många senaste aviseringar som genererades för dessa enheter i Microsoft Defender för slut punkter. 
 
-Följande bild visar vad fliken **enheter** ser ut som har Microsoft Defender ATP-integrering aktive rad:
+I följande bild visas hur fliken **enheter** ser ut som har Microsoft Defender för slut punkts integrering aktiverat:
   
-![När Microsoft Defender ATP är aktiverat kan du se en lista med enheter med aviseringar.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
+![När Microsoft Defender för slut punkt är aktiverat kan du se en lista med enheter med aviseringar.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
   
 I det här exemplet kan du se att mottagarna av det identifierade e-postmeddelandet har fyra enheter och en har en avisering. Om du klickar på länken för en enhet öppnas den i Microsoft Defender säkerhets Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
 
@@ -45,15 +45,15 @@ I det här exemplet kan du se att mottagarna av det identifierade e-postmeddelan
   
 ## <a name="requirements"></a>Krav
 
-- Din organisation måste ha Office 365 ATP-abonnemang 2 (eller Office 365 E5) och Microsoft Defender ATP.
+- Din organisation måste ha Microsoft Defender för Office 365 (eller Office 365 E5) och Microsoft Defender för slut punkt.
     
 - Du måste vara global administratör eller ha en säkerhets administratörs roll (till exempel säkerhets administratör) som är tilldelad i [ &amp; Säkerhetscenter](https://protection.office.com). (Se [behörigheter i säkerhets &amp; kontroll Center](permissions-in-the-security-and-compliance-center.md))
     
 - Du måste ha till gång till både [Explorer (eller real tids identifieringar)](threat-explorer.md) i säkerhets & efterlevnaden för säkerhet och Microsoft Defender säkerhets Center.
     
-## <a name="to-integrate-office-365-atp-with-microsoft-defender-atp"></a>Integrera Office 365 ATP med Microsoft Defender ATP
+## <a name="to-integrate-microsoft-defender-for-office-365-with-microsoft-defender-for-endpoint"></a>Integrera Microsoft Defender för Office 365 med Microsoft Defender för slut punkt
 
-Integrering av Office 365 ATP med Microsoft Defender ATP konfigureras med hjälp av både säkerhets & och Microsoft Defender säkerhets Center.
+Att integrera Microsoft Defender för Office 365 med Microsoft Defender för slut punkten är inställt på både säkerhets & och Microsoft Defender säkerhets Center.
   
 1. Som global administratör eller säkerhets administratör går du till [https://protection.office.com](https://protection.office.com) och loggar in. (Du kommer till Office 365 Security & Compliance Center.)
     
@@ -61,7 +61,7 @@ Integrering av Office 365 ATP med Microsoft Defender ATP konfigureras med hjälp
     
 3. I det övre högra hörnet av skärmen väljer du **WDATP inställningar**.
     
-4. I dialog rutan Microsoft Defender ATP-anslutning aktiverar **du Anslut till Windows ATP**.<br>![Microsoft Defender ATP-anslutning](../../media/Explorer-WDATPConnection-dialog.png)<br>
+4. I dialog rutan Microsoft Defender för slut punkts anslutning aktiverar **du Anslut till Windows ATP**.<br>![Microsoft Defender för slut punkts anslutning](../../media/Explorer-WDATPConnection-dialog.png)<br>
     
 5. Gå till Microsoft Defender säkerhets Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
 
@@ -73,6 +73,6 @@ Integrering av Office 365 ATP med Microsoft Defender ATP konfigureras med hjälp
 
 [Hot-och svars funktioner i Office 365](office-365-ti.md)
   
-[Office 365 Avancerat skydd](office-365-atp.md)
+[Microsoft Defender för Office 365](office-365-atp.md)
   
-[Microsoft Defender Avancerat skydd](https://docs.microsoft.com/windows/security/threat-protection)
+[Microsoft Defender för slut punkt](https://docs.microsoft.com/windows/security/threat-protection)

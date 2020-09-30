@@ -8,27 +8,29 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
+ms.date: 09/29/2020
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Komma igång med automatiska undersökningar och svars funktioner i Office 365 Avancerat skydds plan 2.
-ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: adee64461d06b46f467682835a493a7eebe89aef
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Komma igång med automatiska undersökningar och svars funktioner i Microsoft Defender för Office 365.
+ms.custom:
+- air
+- seo-marvel-mar2020
+ms.openlocfilehash: b844e4817bc77d7f6f4e99df53fc4b14c7e7110c
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202657"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308893"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Komma igång med automatisk undersökning och svar (AIR) i Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
-[Office 365 Avancerat skydd](office-365-atp.md) (Office 365 ATP) plan 2 inkluderar kraftfulla automatiserade undersökningar och svar (Air) som kan spara tid och kraft för arbets uppgifter. När notifieringar utlöses är det upp till din säkerhets åtgärd för att granska, prioritera och svara på dessa aviseringar. Det är lätt att hålla kontakten med volymen av inkommande varningar. Att automatisera vissa av detta kan vara till hjälp. Med flyg kan din säkerhets åtgärds grupp fokusera på aktiviteter med högre prioritet utan att förlora varningar som utlöses.
+[Microsoft Defender för Office 365](office-365-atp.md) inkluderar kraftfulla automatiserade undersökningar och svars funktioner som kan spara tid och ansträngning för arbets uppgifter. När notifieringar utlöses är det upp till din säkerhets åtgärd för att granska, prioritera och svara på dessa aviseringar. Det är lätt att hålla kontakten med volymen av inkommande varningar. Att automatisera vissa av detta kan vara till hjälp. Med flyg kan din säkerhets åtgärds grupp fokusera på aktiviteter med högre prioritet utan att förlora varningar som utlöses.
 
 Den här artikeln innehåller:
 - LUFT [flödet](#the-overall-flow-of-air) .
@@ -73,7 +75,7 @@ Under och efter en automatiserad gransknings process kan säkerhets teamet göra
 
 ## <a name="how-to-get-air"></a>Så här kommer du till luften
 
-Office 365 AIR-funktioner ingår i [office 365, abonnemang 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2). Men [Office 365 ATP-principer bör konfigureras](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) så att de fungerar som de ska. Dessutom bör du kontrol lera att du har granskat och kanske konfigurerar organisationens [notifieringsregler](https://docs.microsoft.com/microsoft-365/compliance/alert-policies). 
+AIR-funktioner ingår i [Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2). Men dina [principer måste konfigureras](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) för att luften ska fungera som förväntat. Dessutom bör du kontrol lera att du har granskat och kanske konfigurerar organisationens [notifieringsregler](https://docs.microsoft.com/microsoft-365/compliance/alert-policies). 
 
 Microsoft 365 innehåller många inbyggda aviserings principer som hjälper dig att identifiera behörigheter för Exchange-administratörer om missbruk, skadlig program vara, potentiella externa och interna hot samt informations hanterings risker. Flera av [standard aviserings principerna](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) kan utlösa automatiserade utredningar. Bland annat följande:
 
@@ -100,12 +102,12 @@ Behörigheter beviljas via vissa roller, till exempel de som beskrivs i följand
 |Så här ställer du in AIR-funktioner |En av följande roller: <br/>-Global administratör<br/>-Säkerhets administratör <br/>Dessa roller kan tilldelas i [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) eller i [säkerhets & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). |
 |För att godkänna eller avvisa rekommenderade åtgärder|En av följande roller, tilldelad i [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) eller i [säkerhets & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)):<br/>-Global administratör <br/>-Säkerhets administratör<br/>-Säkerhets läsare <br/>---och---<br/>-Sök och Töm (den här rollen tilldelas endast i [säkerhets & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). Du kanske måste skapa en ny roll grupp och lägga till rollen Sök och rensa i den nya roll gruppen.
 
-[Office 365 ATP-abonnemang 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2) licenser ska tilldelas:
+Licenser [för Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2) ska tilldelas:
 - Säkerhets administratörer (inklusive globala administratörer)
 - Organisationens säkerhets åtgärds team (inklusive säkerhets läsare och de som har rollen Sök och rensa)
 - Slutanvändare:
 
-Dessutom måste [principer för Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) definieras och användas för att skydd ska kunna användas.
+Dessutom måste [principer för Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) definieras och användas för att skydd ska kunna användas.
 
 ## <a name="next-steps"></a>Nästa steg
 
@@ -115,6 +117,6 @@ Dessutom måste [principer för Office 365 ATP](https://docs.microsoft.com/micro
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Automatisk undersökning och reparation i Microsoft Defender Avancerat skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Automatisk undersökning och reparation i Microsoft Defender för slut punkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-- [Automatisk undersökning och svar i skydd mot Microsoft Threat](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Automatisk undersökning och svar i Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

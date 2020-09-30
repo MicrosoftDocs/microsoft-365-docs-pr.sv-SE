@@ -1,6 +1,6 @@
 ---
-title: Rapportera falsk positiv eller falskt negativ i Office 365 automatisk undersökning och svar
-description: Har något missats eller felaktigt upptäckts av Office 365 Avancerat skydd för hotet? Lär dig hur du skickar falska positiva eller falska negativa negativ till Microsoft för analys.
+title: Rapportera falsk positiv eller falskt negativ efter en automatiserad undersökning i Microsoft Defender för Office 365
+description: Har något missats eller felaktigt upptäckts av AIR i Microsoft Defender för Office 365? Lär dig hur du skickar falska positiva eller falska negativa negativ till Microsoft för analys.
 keywords: automatiserad, undersökning, avisering, utlösare, åtgärd, reparation, falskt positivt, falskt negativt
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -11,20 +11,21 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 05/15/2020
+ms.date: 09/29/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
-ms.custom: autoir
-ms.openlocfilehash: 66b81a474ff81df57c0b2a59672b17061f7235cb
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.custom:
+- autoir
+ms.openlocfilehash: fa6b4ae03a3cf62398a270d65a29e6b4c955173a
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196089"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308938"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Rapportera falskta positiva eller negativa negativ i den automatiska undersökningen och svars funktionerna
 
@@ -32,7 +33,7 @@ ms.locfileid: "48196089"
 
 
 **Gäller för:**
-- Office 365 Avancerat skydd
+- Microsoft Defender för Office 365
 
 Har [automatiserade undersökningar och svar (Air) i Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office) missats eller inte känner till något? Det finns några åtgärder du kan vidta för att åtgärda det. Du kan:
 - [Rapportera en falsk positiv/negativ till Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
@@ -43,7 +44,7 @@ Använd den här artikeln som en guide.
 
 ## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Rapportera en falsk positiv/negativ till Microsoft för analys
 
-Om Office 365 AIR missade ett e-postmeddelande, en e-postbilaga, en URL i ett e-postmeddelande eller en URL i en Office-fil kan du [Skicka misstänkt skräp post, Phish, URL: er och filer till Microsoft för Office 365-genomsökning](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission).
+Om luften i Microsoft Defender för Office 365 missade ett e-postmeddelande, en e-postbilaga, en URL i ett e-postmeddelande eller en URL i en Office-fil kan du [Skicka misstänkt skräp post, Phish, webb adresser och filer till Microsoft för Office 365-genomsökning](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission).
 
 Du kan också [skicka en fil till Microsoft för analys av skadlig program vara](https://www.microsoft.com/wdsi/filesubmission).
 
@@ -51,7 +52,7 @@ Du kan också [skicka en fil till Microsoft för analys av skadlig program vara]
 
 Om en avisering utlöses av en legitim användning eller om aviseringen inte stämmer kan du [Hantera aviseringar i Cloud App Security-portalen](https://docs.microsoft.com/cloud-app-security/managing-alerts).
 
-Om din organisation använder [Microsoft Defender Avancerat skydd](https://docs.microsoft.com/windows/security/threat-protection) utöver Office 365 och en fil, IP-adress, URL eller domän behandlas som skadlig program vara på en enhet, trots att det är säkert, kan du [skapa en egen indikator med en "Tillåt"-åtgärd för enheten](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
+Om din organisation använder [Microsoft Defender för slut punkt](https://docs.microsoft.com/windows/security/threat-protection) utöver Office 365 behandlas en fil, IP-adress, URL eller domän som skadlig program vara på en enhet, trots att det är säkert kan du [skapa en egen indikator med en "Tillåt"-åtgärd för enheten](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
 ## <a name="undo-a-remediation-action"></a>Ångra en åtgärd för reparation
 
@@ -90,6 +91,6 @@ I åtgärds Center kan du se åtgärds åtgärder som vidtogs och eventuellt ån
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Office 365 Avancerat skydd](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+[Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
 
-[Komma igång med automatisk undersökning och svar (AIR) i Office 365](office-365-air.md)
+[LUFT i Microsoft Defender för Office 365](office-365-air.md)
