@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Översikt över nätverks anslutningar i Microsoft 365 Admin Center (för hands version)
-ms.openlocfilehash: 52d1995572a3ae0220ac8529862ba69d5bca8cdb
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 91c931eba5c9f5bdb9f45185581019cc9c754ed2
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235544"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322205"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Nätverks anslutning i Microsoft 365 Admin Center (för hands version)
 
@@ -157,8 +157,8 @@ I CSV-filen visas en plats i kolumnen userEntered som Tom och en manuellt tillag
    1. **Adress** (obligatoriskt): Office fysiska adress
    1. **Latitude** (valfritt): ifyllt från Bing Maps Sök efter adressen om den är tom
    1. **Longitud** (valfritt): ifylld från Bing Maps Sök efter adressen om den är tom
-   1. **Utgående IP-adressintervall 1-5** (valfritt): Ange namnet på kretsen följt av en blankstegsavgränsad lista med giltiga IPv4-eller IPv6-CIDR-adresser för varje intervall. Dessa värden används för att skilja på flera Office-platser där du använder samma IP-adresser för LAN under nätet.
-   1. **LanIps** (obligatoriskt): Visa en lista över de LAN-undernät som används på denna Office-plats.
+   1. **Utgående IP-adressintervall 1-5** (valfritt): Ange namnet på kretsen följt av en blankstegsavgränsad lista med giltiga IPv4-eller IPv6-CIDR-adresser för varje intervall. Dessa värden används för att skilja på flera Office-platser där du använder samma IP-adresser för LAN under nätet. Utgående IP-adressintervall måste vara/24 nätverks storlek och/24 ingår inte i indata.
+   1. **LanIps** (obligatoriskt): Visa en lista över de LAN-undernät som används på denna Office-plats. ID för LAN-undernät måste ha en CIDR-nätverks storlek som ingår där nätverks storleken kan vara mellan/8 och/eller 29. Flera LAN-undernät kan avgränsas med kommatecken eller semikolon.
 1. När du har lagt till dina Office-platser och sparat filen klickar du på knappen **Bläddra** bredvid fältet **överför det ifyllda** och väljer den sparade CSV-filen.
 1. Filen val IDE ras automatiskt. Om det finns verifierings fel visas ett fel meddelande om att _det finns några fel i import filen. Granska felen, korrigera import filen och försök igen._ Klicka på **fel informationen** för länken öppna för att få en lista över specifika fält verifierings fel.
 

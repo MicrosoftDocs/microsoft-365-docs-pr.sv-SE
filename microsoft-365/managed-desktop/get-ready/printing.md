@@ -9,31 +9,31 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1588a2c91bcbe0bd381acb6be4f9bd5562810860
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 5198691a38b179a5491a36de95531edb9f32d691
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530253"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322229"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Förbereda skrivarresurser för Microsoft Hanterat skrivbord
 
-När du gör dig redo att registrera dig på Microsoft Managed Desktop bör du utvärdera utskriftskraven och bestämma rätt metod för din miljö. Du har tre alternativ:
+När du är redo att registrera dig på Microsoft Managed Desktop bör du bedöma utskrifts kraven och bestämma rätt metod för din miljö. Du har tre alternativ:
  
-- Distribuera utskriftslösningen för Microsoft Hybrid Cloud så att det är enkelt för Microsoft Managed Desktop-enheter att identifiera skrivare. Mer information finns i [Distribuera Windows Server Hybrid Cloud Print](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy).
-- Distribuera skrivare direkt med hjälp av ett anpassat PowerShell-skript. Gör så här i avsnittet [Konfigurera lokala skrivare.](#set-up-local-printers)
-- Använd en utskriftslösning från molnet som inte kommer från Microsoft som är kompatibel med Windows 10-enheter som är anslutna till en Azure Active Directory-domän. Lösningen måste uppfylla programvarukraven för Microsoft Managed Desktop. Mer information finns i [krav på Microsoft Managed Desktop-appen](../service-description/mmd-app-requirements.md).
+- Distribuera Microsofts universella utskrifts lösning för att göra det lättare för Microsoft-hanterade Station ära enheter att upptäcka skrivare. Mer information finns i [Vad är universell utskrift](https://docs.microsoft.com/universal-print/fundamentals/universal-print-whatis).
+- Distribuera skrivare direkt med ett anpassat PowerShell-skript. Gör det genom att följa anvisningarna i avsnittet [Konfigurera lokala skrivare](#set-up-local-printers) .
+- Använd en lösning som inte kommer från Microsoft och som är kompatibel med Windows 10-enheter som är anslutna till en Azure Active Directory-domän. Lösningen måste uppfylla program varu kraven för Microsoft Managed Desktop. Mer information finns i [Microsofts hanterade program krav](../service-description/mmd-app-requirements.md).
  
-I samtliga fall, om skrivardrivrutinerna inte är tillgängliga från Microsoft Update eller Microsoft Store, måste du skaffa dem själv och låta dem paketerade för distribution till dina Microsoft Hanterade stationära enheter med Microsoft Intune. Mer information finns [i Intune Standalone - Win32 app management](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management)
+Om skrivar driv rutinerna inte är tillgängliga från Microsoft Update eller Microsoft Store måste du i alla fall skaffa dem själv och få dem att paketera för distribution till Microsoft Managed Station ära datorer med Microsoft Intune. Mer information finns i den [fristående-Win32-program hanteringen i Intune](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management)
 
 ## <a name="set-up-local-printers"></a>Konfigurera lokala skrivare
 
-Om du har bestämt dig för att distribuera skrivare med ett anpassat PowerShell-skript och har förberett utskriftsresurserna gör du så här om du vill att delade skrivare ska distribueras:
+Om du har bestämt dig för att distribuera skrivare med ett anpassat PowerShell-skript och har för berett utskrifts resurserna följer du de här stegen för att distribuera delade skrivare:
 
-1.  Navigera till Microsoft Managed Desktop-portalen.
-2.  Skicka en begäran med etiketten *skrivardistribution* i avsnittet **Support > Support requests** i administrationsportalen, med följande information:
-    - Alla UNC-sökvägar till delade skrivarplatser som måste distribueras för Microsoft Managed Desktop-enheter
-    - Användargrupper som kräver åtkomst till dessa delade skrivare
-3.  Med hjälp av adminportalen meddelar vi dig när begäran har slutförts. Inledningsvis distribuerar vi bara konfigurationen till enheter i testdistributionsgruppen.
-4.  Du måste testa och bekräfta om konfigurationen fungerar som förväntat. Svara med hjälp av fliken **Diskussion** i supportbegäran för att meddela oss när du har slutfört testningen.
-5.  Vi distribuerar sedan konfigurationen till de andra distributionsgrupperna.
+1.  Gå till Microsofts hanterade Skriv bords Portal.
+2.  Skicka en begäran med etiketten *skrivar distribution* i avsnittet **support > supportfrågor** på administrations portalen och uppge följande uppgifter:
+    - Alla UNC-sökvägar till delade skrivar platser som måste distribueras för Microsoft-hanterade Station ära enheter
+    - Användar grupper som kräver åtkomst till dessa delade skrivare
+3.  Med administrations portalen meddelar vi dig när begäran har slutförts. Från början distribueras bara konfigurationen till enheter i test distributions gruppen.
+4.  Du måste testa och bekräfta om konfigurationen fungerar som förväntat. Svara genom att använda fliken **diskussion** i supportavdelningen för att berätta när du har testat.
+5.  Vi distribuerar sedan konfigurationen till de andra distributions grupperna.

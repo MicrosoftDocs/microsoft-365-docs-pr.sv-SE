@@ -1,4 +1,4 @@
-- name: Komma igång med innehålls förståelse
+- name: Komma igång med Microsoft SharePoint Syntex
   items:
     - name: Introduktion till Microsoft SharePoint Syntex
       href: microsoft-sharepoint-syntex-overview.md
@@ -16,7 +16,7 @@
       href: create-a-classifier.md
     - name: Skapa en Extractor
       href: create-an-extractor.md
-    - name: Översikt över förklarings typer
+    - name: Förklaringar
       href: explanation-types-overview.md
     - name: Använda en modell
       href: apply-a-model.md
@@ -26,9 +26,11 @@
       href: apply-a-retention-label-to-a-model.md
     - name: Modell för användnings analys
       href: model-usage-analytics.md
+    - name: Använda term lagrings taxonomi när du skapar en Extractor
+      href: leverage-term-store-taxonomy.md
 - name: Konfiguration och administration
   items:
-    - name: Konfigurera innehålls förståelse
+    - name: Ställa in innehållstolkning
       href: set-up-content-understanding.md
     - name: Bild markeringar
       href: image-tagging.md

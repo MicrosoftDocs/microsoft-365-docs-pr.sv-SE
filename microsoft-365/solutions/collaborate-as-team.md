@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Lär dig mer om de Microsoft 365-konfigurations steg som behövs för att konfigurera ett team för samarbete med gäster i Teams.
-ms.openlocfilehash: f22404ea412085ed697f76219509c1382318e7d4
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: e8d1c75c6172168fc2b0a4b351591289c893869a
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797776"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322183"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Samar beta med gäster i ett team
 
@@ -105,7 +105,7 @@ Om du vill tillåta fil-och mappdelning med oautentiserade personer väljer du *
 Så här anger du delnings inställningar för SharePoint-organisationnivå
 
 1. Klicka på **SharePoint**i det vänstra navigerings fältet **i administrations**centret för Microsoft 365.
-2. I navigeringsfönstret till vänster i administrationscentret för SharePoint klickar du på **Delning**.
+2. I det vänstra navigerings fältet i administrations centret för SharePoint expanderar du **principer** och klickar sedan på **delning**.
 3. Kontrol lera att extern delning för SharePoint är inställt på **vem som helst** eller **nya och befintliga gäster**.
 4. Om du har gjort ändringar klickar du på **Spara**.
 
