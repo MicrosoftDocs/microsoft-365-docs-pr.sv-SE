@@ -16,17 +16,16 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa om olika sätt att rapportera bra och dåliga meddelanden och filer till Microsoft för analys.
-ms.openlocfilehash: 040f998b09f280fc2b6bdfdac327313f9cc65c3c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: aeaf7a779ac9ba2d879a88dd72f4a457a26096ca
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203665"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318201"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Rapportera meddelanden och filer till Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 I Microsoft 365-organisationer med post lådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor finns det flera olika metoder för att rapportera e-postmeddelanden och filer till Microsoft.
 
@@ -43,6 +42,5 @@ I Microsoft 365-organisationer med post lådor i Exchange Online eller friståen
 |[Använd regler för e-postflöde för att se vad dina användare rapporterar till Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|Lär dig hur du skapar en regel för e-postflöde (kallas även transport regel) som meddelar dig när användare rapporterar meddelanden till Microsoft för analys.
 |||
 |[Skicka skadlig program vara och icke-malware till Microsoft för analys](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Använd webbplatsen Microsoft Security Intelligence för att skicka bilagor och andra filer.|
-|
 
 Om skräp post eller nätfiske-meddelanden sattes i stället för att levereras kan användarna rapportera meddelanden till Microsoft från karantäns portalen i säkerhets & Compliance Center. Mer information finns i [hitta och släppa meddelanden i karantän som en användare i Microsoft 365](find-and-release-quarantined-messages-as-a-user.md).

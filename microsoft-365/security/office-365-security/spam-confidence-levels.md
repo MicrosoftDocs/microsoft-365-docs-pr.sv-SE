@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om säkerhets nivån för skräp post (SCL) som tillämpas på meddelanden i Exchange Online Protection (EOP).
-ms.openlocfilehash: fbd892b0171cee71f516d7ca3b26b91da664af79
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 51d00b36ae826676f436c0a74617ddbbadf7a30a
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202239"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318246"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>Säkerhets nivån för skräp post (SCL) i EOP
 
@@ -50,6 +50,6 @@ Du kan använda regler för e-postflöde (kallas även transport regler) för at
 
 På samma sätt som i SCL (BCL) identifieras dåligt Mass utskick (kallas även _grå e-post_). En högre BCL anger att ett Mass utskick innebär att det är mer troligt att vi skapar klagomål (och är därför förmodligen mer sannolikt att få skräp post). Du konfigurerar tröskelvärdet för BCL i principer för skräp post. Mer information finns i [Konfigurera principer för skräp post i EOP](configure-your-spam-filter-policies.md), [bulk klagomål (BCL) i EOP)](bulk-complaint-level-values.md)och [Vad är skillnaden mellan skräp post och Mass utskick?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
-|<!-- -->|
-|---|
-|![Kort ikonen för LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **som är ny för Microsoft 365?** Upptäck kostnads fria video kurser för **Microsoft 365-administratörer och IT-proffs**, som du kommer åt via LinkedIn Learning.|
+****
+
+![Kort ikonen för LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **som är ny för Microsoft 365?** Upptäck kostnads fria video kurser för **Microsoft 365-administratörer och IT-proffs**, som du kommer åt via LinkedIn Learning.

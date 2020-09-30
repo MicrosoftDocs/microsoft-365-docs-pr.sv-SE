@@ -16,17 +16,16 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig mer om värden för BCL (Mass Utjämnings nivå) som används i Exchange Online Protection (EOP).
-ms.openlocfilehash: d59bb152de075bb807e3cae72839fe459d7da40f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 53d0ae5fb23fb68ef970a07b2b5d8c4220775de7
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203533"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318222"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>Bulk klagomål (BCL) i EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 I Microsoft 365-organisationer med post lådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor tilldelar EOP ett Mass kompatibelt (BCL) för inkommande meddelanden från andra Mass utskick. BCL läggs till i meddelandet i ett X-sidhuvud och liknar den [skräp nivå](spam-confidence-levels.md) som används för att identifiera meddelanden som skräp post. Ett högre BCL tyder på att ett Mass meddelande är mer sannolikt att skapa klagomål (och därför är det mer sannolikt att få skräp post). Microsoft använder både interna och tredje parts källor för att identifiera Mass utskick och fastställa lämpliga BCL.
 
@@ -42,6 +41,8 @@ Tröskelvärdena för BCL beskrivs i följande tabell.
 |:---:|---|
 |siffrorna|Meddelandet är inte från en Mass avsändare.|
 |1; 2; 3|Meddelandet kommer från en Mass avsändare som genererar några klagomål.|
-|4, 5, 6, 7|Meddelandet kommer från en Mass avsändare som genererar ett blandat antal klagomål.|
+|4, 5, 6, 7<sup>\*</sup>|Meddelandet kommer från en Mass avsändare som genererar ett blandat antal klagomål.|
 |8, 9|Meddelandet kommer från en Mass avsändare som genererar ett stort antal klagomål.|
 |
+
+<sup>\*</sup> Det här är standardvärdet som används för principer för skräp post.

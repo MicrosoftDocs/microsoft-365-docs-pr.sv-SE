@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära dig hur du konfigurerar anslutnings filtrering i Exchange Online Protection (EOP) för att tillåta eller blockera e-postservrar.
-ms.openlocfilehash: d69ec30c9d6d812bf3bbcc6dc5b6df332d9dd0b5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 95e178e34c944c13cd99e4d4a0e9f30ed083842c
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203377"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318258"
 ---
 # <a name="configure-connection-filtering"></a>Konfigurera anslutningsfiltrering
 
@@ -203,7 +203,6 @@ Om du stöter på något av dessa scenarion kan du skapa en regel för e-postfl�
 
 ## <a name="new-to-microsoft-365"></a>Nyheter i Microsoft 365?
 
-|<!-- a -->|
-|---|
-|![Kort ikonen för LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **som är ny för Microsoft 365?** Upptäck kostnads fria video kurser för **Administratörer och IT-proffs**, som kommer åt dig av LinkedIn Learning.|
-|
+****
+
+![Kort ikonen för LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **som är ny för Microsoft 365?** Upptäck kostnads fria video kurser för **Microsoft 365-administratörer och IT-proffs**, som du kommer åt via LinkedIn Learning.
