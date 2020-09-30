@@ -334,12 +334,14 @@
           href: during-and-after-your-data-move.md
         - name: Vanliga frågor och svar om dataflytt
           href: data-move-faq.md
-        - name: Microsoft Cloud Deutschland – Office 365-Migreringsverktyg
-          href: ms-cloud-germany-transition.md
-        - name: Microsoft Cloud Deutschland – Välja till migrering
-          href: ms-cloud-germany-migration-opt-in.md
         - name: Där kunddata lagras
           href: o365-data-locations.md
+        - name: Microsoft Cloud Deutschland
+          items:
+            - name: Översikt
+              href: ms-cloud-germany-transition.md
+            - name: Välj till migrering
+              href: ms-cloud-germany-migration-opt-in.md
 - name: Identitet
   items:
     - name: Översikt
