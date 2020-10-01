@@ -1,26 +1,23 @@
 ---
-title: Skapa en Extractor
+title: Skapa en extraktor
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Lär dig hur du skapar en Extractor i Microsoft SharePoint-Syntex.
-ms.openlocfilehash: 740df6769b3a1675e4e1691f84d164312b15567c
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Lär dig hur du skapar en extraktor i Microsoft SharePoint-Syntex.
+ms.openlocfilehash: d68cc8b8c337c1ae6740eb5775576a54279b8389
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295462"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321815"
 ---
-# <a name="create-an-extractor-preview"></a>Skapa en Extractor (för hands version)
+# <a name="create-an-extractor-preview"></a>Skapa en extraktor (Förhandsvisning)
 
-Innehållet i den här artikeln gäller för projekt cortex privat för hands version. [Lär dig mer om Project cortex](https://aka.ms/projectcortex).
 
 </br>
 
@@ -28,109 +25,106 @@ Innehållet i den här artikeln gäller för projekt cortex privat för hands ve
 
 </br> 
 
-Innan eller efter du skapar en klassificerings modell för att automatisera identifiering och klassificering av specifika dokument typer kan du välja att lägga till utdrag i din modell för att hämta specifik information från dessa dokument. Du kanske till exempel vill använda modellen för att identifiera alla *förnyelse* dokument som lagts till i dokument biblioteket, utan även för att visa *tjänstens start datum* för varje dokument som en kolumn i dokument biblioteket.
+Före eller efter det att du har skapat en klassificeringsmodell för att automatisera identifieringen och klassifikationen av specifika dokumenttyper kan du välja att lägga till extraktorer i din modell för att hämta specifik information från de här dokumenten. Du kanske, till exempel, vill att din modell inte bara ska identifiera alla *Kontraktförnyelse* dokument som lagts till i ditt dokumentbiblioteket, utan också för att visa *Tjänstens Startdatum* för varje dokument som ett kolumnvärde i dokumentbiblioteket.
 
-Du måste skapa en Extractor för varje enhet i dokumentet som du vill extrahera. I exemplet vill du extrahera *tjänstens start datum* för varje *kontrakt förnyelse* dokument som identifieras av modellen. Det här måste inträffa när du vill visa en vy i dokument biblioteket för alla *kontrakt förnyelse* dokument med en kolumn som visar värdet för tjänste start datum för varje dokument.
+Du behöver skapa en extraktor för varje enhet i det dokument som du vill extrahera. I vårt exempel vill vi extrahera **Tjänstens Startdatum** för varje **Kontraktförnyelse** dokument som identifieras av modellen. Vi vill kunna se en vy i dokumentbiblioteket för alla **Kontraktförnyelse** dokument med en kolumn som visar **Tjänstens Start**-datum värde för varje dokument. 
 
 > [!NOTE]
-> Innan du skapar en Extractor måste du [lägga till dina exempel filer](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier#add-your-example-files) för att träna modellen att identifiera informationen som du vill extrahera. Använd samma exempelfiler som du använde när du skapade klassificeraren.
+> För att skapa en extraktor använder du samma filer som du tidigare har laddat upp för att träna klassificeraren. 
 
-## <a name="name-your-extractor"></a>Ge din Extractor ett namn
+## <a name="name-your-extractor"></a>Namnge din extraktor
 
-1. Klicka på **träna Extractor**på panelen **skapa och träna extrakt** på modell start sidan.
-2. På sidan **ny enhets Extractor** skriver du namnet på din Extractor i fältet **ny Extractor-namn** . Om du till exempel vill extrahera tjänstens start datum från varje avtal för förnyelse av kontrakt namnger du Start datumet för **tjänsten** .
+1. Från modellens startsida, i **Skapa och träna extraktorer** panel och klicka på **Träna extraktor**.
+2. På skärmen **Ny enhet extraktor** skriv in namnet på din extraktor i fältet **Nytt extraktor-namn**. Om du, till exempel, namnge det **Tjänstens Startdatum** om du vill extrahera tjänstens startdatum från varje Kontraktförnyelse dokument. Du kan också välja att återanvända en tidigare skapad kolumn, (t. ex. en hanterad metadata kolumn).
 3. Klicka på **Skapa**.
 
 ## <a name="add-a-label"></a>Lägga till en etikett
 
-Nästa steg är att förse den information som du vill ha med i exempel utbildnings filerna.
+Nästa steget är att sätta en etikett på den enhet du vill extrahera i dina utbildnings exempelfiler.
 
-När du skapar Extractor öppnas sidan Extractor. Här visas en lista över dina exempelfiler med den första filen i listan som visas i visnings programmet.
+När du skapar extraktor öppnas extraktorsidan. Här visas en lista över dina exempelfiler, och den första filen i listan visas i visningsprogrammet.
 
-1. Markera de data som du vill extrahera från filerna i visnings programmet. Om du till exempel vill extrahera *Start tjänst datum*markerar du datumet i den första filen (*måndag 14 oktober 2019*). och klicka sedan på **Spara**.  Du bör se värde visningen från filen i listan med namngivna exempel under kolumnen **etikett** .
-2. Välj **nästa fil** om du vill spara automatiskt och öppna nästa fil i listan i visnings programmet. Eller Välj **Spara** och välj sedan en annan fil i listan med **Etiketter** .
-3. Upprepa steg 1 och 2 i visnings programmet och upprepa sedan tills du sparade etiketten i alla fem filer.
+1. Välj de data från visningsprogrammet som du vill extrahera från filerna. Om du, till exempel, vill extrahera *Tjänstens Startdatum*markerar du datumet i den första filen (*måndag 14 oktober 2019*). och klicka på **Spara**.  Du bör se värdet som visas från filen i listan med Etiketterade exempel under kolumnen **Etikett**.
+2. Välj **Nästa fil** för att spara automatiskt och öppna nästa fil i listan i visningsprogrammet. Eller välj **Spara** och sedan välj en annan fil från den**Etiketterade exempel** -listan.
+3. Upprepa steg 1 och 2 i visningsprogrammet och upprepa sedan tills du har sparat etiketten i alla fem filerna.
 
     ![Avancerade inställningar](../media/content-understanding/select-service-start-date.png) 
 
-### <a name="add-a-negative-example"></a>Lägga till ett negativt exempel
-
-På samma sätt som du lägger till en negativ exempel fil när du skapar en klassificerare måste du lägga till ett negativt prov för Extractor. Det bör vara en fil som inte innehåller ett datum värde för "tjänst start".
-
-1. Välj ett negativt exempel i listan med **Etiketter** .
-2. I visnings programmet högst upp i artikeln väljer du **ingen etikett presentation**.
-3. Klicka på **Spara**.
  
-När du har märkt fem filer visas ett meddelande som informerar dig om att flytta till utbildning. Du kan välja fler dokument eller gå vidare till utbildning. 
+När du har etiketterade fem filer visas en meddelandebanderoll som informerar dig om att flytta till utbildning. Du kan välja att etikettera fler dokument eller att gå vidare till utbildning. 
 
-## <a name="add-an-explanation"></a>Lägga till en förklaring
+## <a name="add-an-explanation"></a>Lägg till förklaring
 
-Du kan till exempel skapa en förklaring om själva enhets formatet och variationer i exempel dokumenten. Ett datum värde kan till exempel vara i ett antal olika format, som:
+I vårt exempel kommer vi att skapa en förklaring som ger en ledtråd om själva enhetsformatet och varianterna den kan ha i exempeldokumenten. Till exempel, ett datumvärde kan ha flera olika format, såsom:
 - 10/14/2019
 - 14 oktober 2019
-- Måndagen den 14 oktober 2019
+- Måndag, den 14 oktober 2019
  
 
-För att identifiera *tjänstens start datum* kan du skapa en mönster förklaring.
+För att identifiera *Tjänstens Startdatum* kan du skapa en förklaring av mönstret.
 
-1. I avsnittet förklaring väljer du **nytt** och skriver ett namn (till exempel *datum*).
-2. Välj **mönster lista**för typ.
-3. För värde anger du datum variationen så som den visas i exempelfilerna. Om du till exempel har datum format som visas som 0/00/0000, anger du de variationer som visas i dokumenten, som:
+1. I avsnittet Förklaringar välj **Ny** och skriv ett namn (t. ex. *Datum*).
+2. För Typ välj **Mönsterlista**.
+3. För Värde anger du datumvariationen så som de visas i exempelfilerna. Om du, till exempel, har datumformat som visas som 0/00/0000, kan du ange en variation som visas i dina dokument, till exempel:
     - 0/0/0000
     - 0/00/0000
     - 00/0/0000
     - 00/00/0000
 4. Välj **Spara**.
 
-### <a name="use-the-explanation-library"></a>Använda förklarings biblioteket
+> [!NOTE]
+> Mer information om olika förklaringstyper finns i [Förklaringstyper](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview).  
 
-När du skapar förklaringar för objekt, till exempel datum, är det enklare att använda förklarings biblioteket än att manuellt ange alla variationer. Förklarings biblioteket är en uppsättning fördefinierade fraser och mönster förklaringar. Biblioteket innehåller alla format för vanliga fras-och mönster listor, till exempel datum, telefonnummer, post nummer osv. 
 
-För test av *tjänstens start datum* är det mer effektivt att använda den färdiga förklaringen för *datum* i förklarings biblioteket:
+### <a name="use-the-explanation-library"></a>Använda Förklaringsbiblioteket
 
-1. I **avsnittet förklaring**väljer du **nytt**och väljer sedan **från förklarings bibliotek**.
-2. Välj **datum**i förklarings biblioteket. Du kan visa alla variationer av datum som känns igen.
+För att skapa förklaringar för objekt, t. ex. datum, är det enklare att [använda förklaringsbiblioteket](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-the-explanation-library) än att ange alla variationer manuellt. Förklaringsbiblioteket är en uppsättning fördefinierade fraser och mönsterförklaringar. Biblioteket försöker tillhandahålla alla format för vanliga fras- eller mönster listor, till exempel datum, telefonnummer, postnummer och många andra. 
+
+För *Tjänstens Startdatum* exempel är det mer effektivt att använda den fördefinierade förklaringen för *Datum* i förklaringsbiblioteket:
+
+1. I **Förklaringssektionen** välj **Ny** och välj sedan **From förklaringsbibliotek**.
+2. Välj **Datum** från förklaringsbiblioteket. Du kan visa alla datum variationer som är igenkända.
 3. Välj **Lägg till**.</br>
 
-    ![Förklarings bibliotek](../media/content-understanding/explanation-library.png) 
+    ![Förklaringsbiblioteket](../media/content-understanding/explanation-library.png) 
 
-4. På sidan **skapa en förklaring** fylls fälten automatiskt i med *datum* informationen från förklarings biblioteket. Välj **Spara**.</br>
+4. På sidan **Skapa en förklaring** kommer *Datum* informationen från förklaringensbiblioteket automatiskt fylla i fälten. Välj **Spara**.</br>
 
     ![Datum](../media/content-understanding/date-explanation-library.png) 
 
 ## <a name="train-the-model"></a>Träna modellen 
 
-När du sparar din förklaring är det bara att börja öva. Om din modell har tillräckligt med information för att extrahera data från dina namngivna exempelfiler visas varje fil med etiketten **matcha**.  
+Om du sparar förklaringen startar du utbildningen. Om din modell har tillräcklig information för att extrahera data från dina etiketterade exempelfiler, kommer du att se varje fil etiketterade med**Match**.  
 
-![Matcha](../media/content-understanding/match2.png) 
+![Match](../media/content-understanding/match2.png) 
 
-Om förklaringen inte innehåller tillräckligt med information för att hitta de data som du vill extrahera är varje fil märkt med **fel**. Du kan klicka på de **felmatchade** filerna för att se mer information om varför det fanns ett fel.
+Om förklaringen inte har tillräcklig information för att hitta de data du vill extrahera kommer alla filer etiketteras med **Matchningsfel**. För att se mer information om varför det fanns ett matchningsfel kan du klicka på de **Matchningsfel** filerna.
 
 
-## <a name="add-another-explanation"></a>Lägga till en förklaring
+## <a name="add-another-explanation"></a>Lägga till en till förklaring
 
-Ofta beror det på att den förklaring som vi tillhandahöll inte gav tillräckligt med information för att extrahera tjänstens start datum för att matcha våra etiketterade filer. Du kan behöva redigera den eller lägga till en annan förklaring.
+Matchningsfelet är ofta en indikation på att förklaringen vi tillhandahöll inte innehöll tillräcklig information för att extrahera tjänstens startdatum för att matcha vår etiketterade filer. Du kan behöva redigera den eller lägga till ytterligare en förklaring.
 
-Observera att text strängens *start datum* alltid föregår det faktiska värdet för provet. För att hjälpa till att identifiera tjänstens start datum måste du skapa en menings förklaring.
+I vårt exempel kan du se att textsträngen *Starta Tjänstedatumet för* föregår alltid det verkliga värdet. För att identifiera Tjänstens Startdatum behöver du skapa en förklaring av frasen.
 
-1. I avsnittet förklaring väljer du **nytt**och anger sedan ett namn (till exempel en *prefixlängd*).
-2. Välj **fras lista**för typen.
-3. Använd *tjänstens start datum* som värde.
+1. I Förklaringssektionen välj **Ny** och sedan skriv ett namn (t. ex. *Prefixsträng*).
+2. För Typ välj **Fraslista**.
+3. Använd *Tjänstens Startdatum* som värde.
 4. Välj **Spara**.
 
-    ![Prefixlängd](../media/content-understanding/prefix-string.png) 
+    ![Prefixsträng](../media/content-understanding/prefix-string.png) 
 
 ## <a name="train-the-model-again"></a>Träna modellen igen
 
-Om du sparar förklaringen startas utbildningen igen, den här gången med hjälp av båda förklaringarna i exemplet. Om din modell har tillräckligt med information för att extrahera data från de namngivna exempelfilerna kan du se varje fil med etiketten **matcha**. 
+Om du sparar förklaringen startar utbildningen igen, den här gången med hjälp av båda förklaringarna i exemplet. Om din modell har tillräcklig information för att extrahera data från dina etiketterade exempelfiler, kommer du att se varje fil etiketterade med**Match**. 
 
-Om du får ett fel meddelande om att dina etiketter **inte stämmer** överens måste du skapa en ny förklaring för att ge modellen mer information för att identifiera dokument typen eller överväga att ändra exempel modellen.
+Om du får en **Matchningsfel** igen på dina etiketterade filer behöver du antagligen skapa ytterligare en förklaring för att ge modellen mer information för att identifiera dokumenttypen, eller så kan du göra ändringar i dina befintliga.
 
-## <a name="test-your-model"></a>Testa modellen
+## <a name="test-your-model"></a>Testa din modell
 
-Om du får en träff på dina etiketterade exempelfiler kan du testa modellen på de återstående icke-märkta exempelfilerna.
+Om du får en matchning för dina etiketterade exempelfiler kan du nu testa din modell på de återstående omärkta exempelfilerna. Det här är ett användbar steg för att utvärdera "lämpligheten", eller beredskapen av modellen innan användning genom att testa den på filer som modellen inte har sett tidigare.
 
-1. Klicka på fliken **test** på modell start sidan.  Då körs modellen på dina namnlösa exempelfiler.
-2. I listan **testfiler** visas dina exempel filer för att visa om modellen kan extrahera den information du behöver. Använd den här informationen för att fastställa hur din klassificerarens effektivitet är för att identifiera dina dokument.
+1. Gå till start sidan för modellen och klicka på fliken **Test**.  Då körs modellen på dina omärkta exempelfiler.
+2. I **Testfil**-listan visas dina exempelfiler för att visa om modellen kan extrahera informationen som du behöver. Använd den här informationen för att ta reda på hur effektivt din klassificerare är för att identifiera dina dokument.
 
-    ![Testa dina filer](../media/content-understanding/test-filies-extractor.png) 
+    ![Testa din filer](../media/content-understanding/test-filies-extractor.png) 
