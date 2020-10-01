@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Under och efter en automatiserad undersökning i Microsoft 365 kan du Visa resultaten och nyckeltalen.
 ms.date: 09/29/2020
-ms.openlocfilehash: df0eaa54d8bc1c9cd6c91b6b36958e1eb0d2bfd6
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: 4be5f3814ed798a0e7fd42285ed2884a5cc29461
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48309112"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327705"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Information och resultat från en automatiserad undersökning i Microsoft 365
 
@@ -247,7 +247,7 @@ Du kan:
 |Avgående för utgående skadlig program vara och skräp post|Upptäck organisations-och utgående skadlig program vara, Phish eller skräp post som kommer från användare i organisationen|
 |Granskning av avsändare domän|Kontroll på begäran av domän rykte från [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) och externa hot Intelligence-källor|
 |Undersökning av avsändare| Kontroll av IP-rykte från [Microsoft Intelligent säkerhets diagram](https://www.microsoft.com/security/operations/intelligence) och externa hot Intelligence-källor|
-|URL: en klickar på undersökning| Undersök klickningar från användare skyddade av [Office 365 säkerhets Länkar för ATP](atp-safe-links.md) i din organisation|
+|URL: en klickar på undersökning| Undersök klickningar från användare som skyddas av [säkra länkar i Office 365 ATP](atp-safe-links.md) i din organisation|
 |URL-ryktes undersökning|Kontroll på begäran efter URL-rykte från [Microsoft Intelligent säkerhets diagram](https://www.microsoft.com/security/operations/intelligence) och externa hot Intelligence-källor|
 |Granskning av användar aktivitet|Analysera användares avvikelser i [Microsoft Cloud App-säkerhet](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|
 |Användare-rapporterade utdrag för e-postindikatorer|Extrahera indikatorer från rubriken, bröd texten och innehållet i en [användardefinierad e-post](enable-the-report-message-add-in.md) för undersökning|
@@ -271,6 +271,6 @@ Du kan:
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Granska och godkänna pågående åtgärder](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions?view=o365-worldwide#approve-or-reject-pending-actions)
+- [Granska och godkänna pågående åtgärder](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)
 
 - [Lär dig mer om automatisk undersökning och svar i skydd mot Microsoft Threat](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

@@ -1,5 +1,5 @@
 ---
-title: Översikt över Microsoft 365-nätverk
+title: Översikt för Microsoft 365 nätverksanslutning
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,19 +13,20 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- M365initiative-CoreDeploy
 f1.keywords:
 - NOCSH
 description: I artikeln beskrivs varför nätverks optimering är viktig för SaaS-tjänster, målet för Microsoft 365-nätverk och hur SaaS kräver olika nätverk från andra arbets belastningar.
-ms.openlocfilehash: 4fea7364dc79717583ebca8ce0dbe333ee818f1f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: acc55868e47ea89cd2357487838a88032dc8538d
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694498"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327491"
 ---
 # <a name="microsoft-365-network-connectivity-overview"></a>Översikt över Microsoft 365-nätverk
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 Microsoft 365 är ett distribuerat SaaS-moln (program som-as-service) som tillhandahåller produktivitets-och samarbets scenarier via en mängd olika Micro-tjänster och-applikationer. Klient komponenter i Microsoft 365, till exempel Outlook, Word och PowerPoint körs på användare och ansluter till andra komponenter i Microsoft 365 som körs i Microsoft Data Center. Den viktigaste faktorn som avgör kvaliteten på Microsoft 365-slutanvändarens upplevelse är nätverks tillförlitlighet och lång fördröjning mellan Microsoft 365-klienter och Microsoft 365-tjänst front dörrar.
 
@@ -35,7 +36,7 @@ I den här artikeln får du lära dig mer om målen för Microsoft 365-nätverk 
 
 Det ultimata målet för Microsoft 365-nätverk är att optimera slutanvändarens upplevelse genom att aktivera den minst begränsade åtkomsten mellan klienter och de närmaste Microsoft 365-slutpunkterna. Slutanvändarens kvalitet är direkt relaterad till prestanda och svars tid för det program som användaren använder. Till exempel är Microsoft Teams beroende av liten latens så att användare som ringer samtal, konferenser och delade skärmar är felfria och att Outlook är beroende av en bra nätverks anslutning för snabb söknings funktioner som utnyttjar indexerings-och AI-funktioner på Server sidan.
 
-Det primära målet i nätverks utformningen bör vara att minimera fördröjningen genom att minska tiden för cirkulering från klient maskiner till Microsofts globala nätverk, det offentliga nätverks stamnät som sammankopplar Microsoft-datacenters med låga svars tider, med data åtkomst punkter med hög tillgänglighet för att spridas över hela världen. Du kan läsa mer om Microsofts globala nätverk på [hur Microsoft bygger sitt snabba och pålitliga globala nätverk](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+Det primära målet i nätverks utformningen bör vara att minimera fördröjningen genom att minska tiden för cirkulering från klient maskiner till Microsofts globala nätverk, det offentliga nätverks stamnät som sammankopplar Microsoft-datacenters med låga svars tider, med data åtkomst punkter med hög tillgänglighet för att spridas över hela världen. Du kan läsa mer om Microsofts globala nätverk i [Hur Microsoft bygger sitt snabba och tillförlitliga globala nätverk](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
 Optimering av nätverks prestanda för Microsoft 365 behöver inte vara komplicerad. Du får bästa möjliga prestanda genom att följa några viktiga principer:
 
@@ -61,7 +62,7 @@ Vi gör det enklare att identifiera nätverks trafik för Microsoft 365 och gör
 
 ## <a name="securing-microsoft-365-connections"></a>Skydda Microsoft 365-anslutningar
 
-Målet med traditionell nätverks säkerhet är att härdning företagets nätverks gräns mot intrång och skadlighet. De flesta företags nätverk har nätverks säkerhet för Internet trafik med teknik som proxyservrar, brand väggar, SSL-avbrott och inspektion, djup paket granskning och system för skydd mot data förlust. Dessa tekniker ger viktig risk minskning för allmänna Internet-begäranden men kan avsevärt minska prestanda, skalbarhet och slutanvändarnas kvalitet när de används för Microsoft 365-slutpunkter.
+Syftet med den traditionella nätverkssäkerheten är att skärpa företagets nätverksgräns mot intrång och skadlig exploatering. De flesta företags nätverk har nätverks säkerhet för Internet trafik med teknik som proxyservrar, brand väggar, SSL-avbrott och inspektion, djup paket granskning och system för skydd mot data förlust. Dessa tekniker ger viktig riskreducering för allmänna internetförfrågningar, men kan drastiskt minska prestanda, skalbarhet och kvalitet på slutanvändarens upplevelse när den används på slutpunkter för Microsoft 365.
 
 Microsoft 365 hjälper till att möta organisationens behov av säkerhet och data användning med inbyggda säkerhets-och styrnings funktioner avsedda för Microsoft 365-funktioner och arbets belastning. Mer information om säkerhet och efterlevnad för Microsoft 365 finns i [säkerhets översikten för Office 365](https://docs.microsoft.com/office365/securitycompliance/security-roadmap). Mer information om Microsofts rekommendationer och support för avancerade nätverks lösningar som utför avancerade funktioner på Microsoft 365-trafik finns i [använda nätverks enheter eller-lösningar från tredje part i Office 365-trafik](https://support.microsoft.com/help/2690045).
 
@@ -75,18 +76,18 @@ Vissa vanliga prestanda problem skapas när Microsoft 365-trafik är föremål f
 - Utgående anslutningar från en central plats avgränsar funktionerna för dynamisk routning i Microsoft 365 globalt nätverk, att lägga till fördröjning och vänte tid för fördröjningar
 - Dekrypterar SSL-skyddad Microsoft 365-nätverks trafik och krypterar den igen kan orsaka protokoll fel och säkerhets risk
 
-Om du förminskar nätverks Sök vägen till Microsoft 365-startadresser genom att låta klient trafik utsättas så nära som möjligt till deras geografiska plats kan prestanda förbättras och slutanvändaren i Microsoft 365. Den kan också bidra till att minska påverkan av framtida ändringar av nätverks arkitekturen på Microsoft 365-prestanda och-pålitlighet. Den optimala anslutnings modellen är att alltid erbjuda att nätverket utsätts på användarens plats, oavsett om det gäller för företagets nätverk eller fjärrplatser, till exempel hem, hotell, kafé och flyg platser. Allmän Internet trafik och WAN-baserad nätverks trafik är separat routad och använder inte den lokala direkt utgångs modellen. Den här lokala direkt utgångs modellen representeras i diagrammet nedan.
+Om du förminskar nätverks Sök vägen till Microsoft 365-startadresser genom att låta klient trafik utsättas så nära som möjligt till deras geografiska plats kan prestanda förbättras och slutanvändaren i Microsoft 365. Den kan också bidra till att minska påverkan av framtida ändringar av nätverks arkitekturen på Microsoft 365-prestanda och-pålitlighet. Den optimala anslutnings modellen är att alltid erbjuda att nätverket utsätts på användarens plats, oavsett om det gäller för företagets nätverk eller fjärrplatser, till exempel hem, hotell, kafé och flyg platser. Allmän Internet trafik och WAN-baserad nätverks trafik är separat routad och använder inte den lokala direkt utgångs modellen. Den här lokala direkt utgångsmodellen visas i diagrammet nedan.
 
-![Lokal utgångs nät arkitektur](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
+![Lokal utgående nätverksarkitektur](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
 
 Den lokala utgångs arkitekturen har följande fördelar för Microsoft 365-nätverks trafik via den traditionella modellen:
   
-- Ger optimal Microsoft 365-prestanda genom att optimera vägens längd. Slutanvändarens anslutningar dirigeras dynamiskt till den närmaste Microsoft 365-startplatsen av Microsofts globala nätverks _front dörrs_ infrastruktur och trafik dirigeras internt till data-och tjänste slut punkter över Microsoft-fiber högkvalitativt hög tillgänglighet.
+- Ger optimal Microsoft 365-prestanda genom att optimera väglängden. Slutanvändarens anslutningar dirigeras dynamiskt till den närmaste Microsoft 365-startplatsen av Microsofts globala nätverks _front dörrs_ infrastruktur och trafik dirigeras internt till data-och tjänste slut punkter över Microsoft-fiber högkvalitativt hög tillgänglighet.
 - Minskar belastningen på företags infrastrukturen genom att tillåta lokal avslut för Microsoft 365-trafik, förbi proxyservrar och kontroll enheter för trafik.
 - Skyddar anslutningar för båda ändarna genom att utnyttja klientens slut punkter för säkerhet och moln, undvika att skydda dig mot redundanta nät verks teknik.
 
 > [!NOTE]
-> Infrastrukturen för _distribuerad tjänst front dörren_ är Microsofts globala nätverk med hög tillgänglighet och utbyggbar nätverks kant med geografiskt distribuerade platser. Slut användar anslutningar avbryts och det är effektivt att cirkulera dem inom Microsofts globala nätverk. Du kan läsa mer om Microsofts globala nätverk på [hur Microsoft bygger sitt snabba och pålitliga globala nätverk](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+> Infrastrukturen för _distribuerad tjänst front dörren_ är Microsofts globala nätverk med hög tillgänglighet och utbyggbar nätverks kant med geografiskt distribuerade platser. Slut användar anslutningar avbryts och det är effektivt att cirkulera dem inom Microsofts globala nätverk. Du kan läsa mer om Microsofts globala nätverk i [Hur Microsoft bygger sitt snabba och tillförlitliga globala nätverk](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
 Mer information om hur du använder principer för nätverks anslutningar för Microsoft 365 finns i [principer för nätverks åtkomst för 365](microsoft-365-network-connectivity-principles.md).
 
@@ -94,28 +95,28 @@ Mer information om hur du använder principer för nätverks anslutningar för M
 
 Att optimera prestanda för Microsoft 365-nätverk är ett bra sätt att ta bort onödiga hinder. Genom att behandla Microsoft 365-anslutningar som betrodd trafik kan du förhindra att fördröjning införts genom paket granskning och konkurrens för bandbredd. Om du tillåter lokala anslutningar mellan klient datorer och Office 365-slutpunkter aktive ras trafiken dynamiskt via globalt nätverk.
 
-## <a name="related-topics"></a>Närliggande ämnen
+## <a name="related-topics"></a>Relaterade ämnen
 
 [Principer för nätverks åtkomst för Microsoft 365](microsoft-365-network-connectivity-principles.md)
 
-[Hantera slut punkter för Office 365](managing-office-365-endpoints.md)
+[Hantera Office 365-slutpunkter](managing-office-365-endpoints.md)
 
 [URL-adresser och IP-adressintervall för Office 365](urls-and-ip-address-ranges.md)
 
-[IP-adress och URL för Office 365](microsoft-365-ip-web-service.md)
+[Office 365 IP-adress och URL webbtjänst](microsoft-365-ip-web-service.md)
 
-[Utvärderar Microsoft 365-nätverksanslutningar](assessing-network-connectivity.md)
+[Utvärdera Microsoft 365 nätverksanslutningar](assessing-network-connectivity.md)
 
-[Nätverks planering och prestanda justering för Microsoft 365](network-planning-and-performance.md)
+[Nätverksplanering och prestandajustering för Microsoft 365](network-planning-and-performance.md)
 
-[Prestanda justering för Office 365 med bas linjer och prestanda historik](performance-tuning-using-baselines-and-history.md)
+[Prestandajustering för Office 365 med baslinjer och prestandahistorik](performance-tuning-using-baselines-and-history.md)
 
-[Plan för prestanda fel sökning för Office 365](performance-troubleshooting-plan.md)
+[Plan för prestandafelsökning för Office 365](performance-troubleshooting-plan.md).
 
-[Nätverk för innehålls leverans](content-delivery-networks.md)
+[Nätverk för innehållsleverans (CDN)](content-delivery-networks.md)
 
-[Microsoft 365 anslutnings test](https://aka.ms/netonboard)
+[Microsoft 365 anslutningstest](https://aka.ms/netonboard)
 
-[Så här bygger Microsoft ett snabbt och tillförlitligt globalt nätverk](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+[Hur Microsoft bygger ett snabbt och tillförlitligt globalt nätverk](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 
-[Office 365-nätverks blogg](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
+[Office 365 Nätverksbloggen](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)

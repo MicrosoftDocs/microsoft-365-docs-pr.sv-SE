@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du hittar och använder e-postsäkerhets rapporter för organisationen. Säkerhets rapporter för e-post finns i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b26dd18754a96d1879a2f57ae9742ae1d1a36ce4
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 7e594f758e0fb08b0b8718248466ecbc46903b82
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295544"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327015"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visa rapporter om e-postsäkerhet i Säkerhets- och efterlevnadscenter
 
@@ -270,9 +270,9 @@ Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
 
 ## <a name="threat-protection-status-report"></a>Statusrapport för hotskydd
 
-Status rapporten för **hotets skydd** är tillgänglig i både EOP och Office 365 ATP; rapporterna innehåller emellertid olika data. EOP kunder kan till exempel Visa information om skadlig kod som upptäckts i e-post, men inte information om [skadliga filer som identifieras i SharePoint Online, OneDrive eller Microsoft Teams](atp-for-spo-odb-and-teams.md).
+Status rapporten för **hotets skydd** är tillgänglig i både EOP och Office 365 ATP; rapporterna innehåller emellertid olika data. EOP kunder kan till exempel Visa information om skadlig kod som upptäckts i e-post, men inte information om [skadliga filer som identifieras av ATP för SharePoint, OneDrive eller Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
-I rapporten får du räknat antalet e-postmeddelanden med skadligt innehåll, till exempel filer eller webbplats adresser (URL: er) som blockerades av motorn mot skadlig program vara, en [hel timmes autorensning (Zap)](zero-hour-auto-purge.md)och alla ATP-funktioner som [Safe ATP-länkar](atp-safe-links.md), [ATP-säkra bilagor](atp-safe-attachments.md)och [ATP-nätfiske](set-up-anti-phishing-policies.md). Du kan använda den här informationen för att identifiera trender eller för att avgöra om organisations principer behöver justeras. Det är viktigt att förstå att om ett meddelande skickas till fem mottagare räknas det som fem olika meddelanden och inte ett meddelande.
+I rapporten får du räknat antalet e-postmeddelanden med skadligt innehåll, till exempel filer eller webbplats adresser (URL: er) som blockerades av motorn mot skadlig program vara, [nollställning (Zap)](zero-hour-auto-purge.md)och ATP-funktioner som [säkra länkar](atp-safe-links.md), [säkra bilagor](atp-safe-attachments.md)och [ATP-nätfiske](set-up-anti-phishing-policies.md). Du kan använda den här informationen för att identifiera trender eller för att avgöra om organisations principer behöver justeras. Det är viktigt att förstå att om ett meddelande skickas till fem mottagare räknas det som fem olika meddelanden och inte ett meddelande.
 
 Om du vill visa rapporten öppnar du [säkerhets & efterlevnad](https://protection.office.com), går till **Reports** \> **instrument paneler** för rapporter och väljer **skydds status**. Om du vill gå direkt till rapporten öppnar du en av följande webb adresser:
 
@@ -366,7 +366,7 @@ Om du klickar på **filter**kan du ändra rapporten med följande filter:
 - **Start datum** och **slutdatum**
 - **Proxyidentifiering**
 - **Skyddas av**: **ATP** eller **EOP**
-- **Tagg**: Filtrera efter tagg för att returnera användare eller grupper som har en viss tagg. Mer information om användar flaggor finns i [User Tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Tagg**: Filtrera efter tagg för att returnera användare eller grupper som har en viss tagg. Mer information om användar flaggor finns i [User Tags](user-tags.md).
 - **Domain**
 
 > [!NOTE]
@@ -406,7 +406,7 @@ Om du klickar på **filter**kan du ändra rapporten med följande filter:
 - **Start datum** och **slutdatum**
 - **Proxyidentifiering**
 - **Skyddas av** (endast Office 365 ATP): **ATP** eller **EOP**
-- **Tagg**: Filtrera efter tagg för att returnera användare eller grupper som har en viss tagg. Mer information om användar flaggor finns i [User Tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Tagg**: Filtrera efter tagg för att returnera användare eller grupper som har en viss tagg. Mer information om användar flaggor finns i [User Tags](user-tags.md).
 - **Domain**
 - **Mottagare** (Observera att den här filter bara egenskapen är endast tillgänglig i vyn detaljerad tabell)
 

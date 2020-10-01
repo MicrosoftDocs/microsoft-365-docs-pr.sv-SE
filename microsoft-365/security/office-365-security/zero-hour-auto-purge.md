@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig hur nollställning av automatisk rensning (ZAP) kan flytta levererade meddelanden retroaktivt i en Exchange Online-postlåda till mappen skräp post eller karantän som kan vara skräp post eller nätfiske.
-ms.openlocfilehash: 66df614700dc5f9b9938200d384cc293a51e2f3c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 31e546ddf6e93ed0a265aef3737182cf30ae5a95
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202645"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327981"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Automatisk rensning av nollor (ZAP) i Exchange Online
 
@@ -83,7 +83,7 @@ Mer information om hur du konfigurerar verdicts för skräp post finns i [Konfig
 
 ### <a name="zap-considerations-for-office-365-advanced-threat-protection-office-365-atp"></a>ZAP-överväganden för Office 365 Avancerat skydd (Office 365 ATP)
 
-ZAP kommer inte att placera något meddelande i processen för [dynamisk leverans](dynamic-delivery-and-previewing.md) genomsökning, eller så att filtret för skadlig program vara redan har ersatt bilagan med **varnings meddelandet Text.txt** -filen. Om en Phish eller spam signal tas emot för dessa typer av meddelanden och filtrerings Verdict i principen mot skräp post är inställt på att få en åtgärd på meddelandet (flytta till skräp post, omdirigering, ta bort, karantän) och standardvärdet för "flytta till skräp post".
+ZAP kommer inte att placera något meddelande som bearbetas i processen för [dynamisk leverans](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) i den säkra bilage genomsökningen eller där EOP malware filter redan har ersatt bilagan med **varnings meddelandet Text.txt** -filen. Om en Phish eller spam signal tas emot för dessa typer av meddelanden och filtrerings Verdict i principen mot skräp post är inställt på att få en åtgärd på meddelandet (flytta till skräp post, omdirigering, ta bort eller karantän) så återställs den till åtgärden "flytta till skräp post".
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>Så här ser du om ZAP har flyttat ditt meddelande
 

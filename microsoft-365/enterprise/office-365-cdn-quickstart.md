@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+- M365initiative-CoreDeploy
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
@@ -18,12 +19,12 @@ search.appverid:
 - MET150
 - SPO160
 description: Office 365 innehålls leverans nätverk (CDN) snabb start
-ms.openlocfilehash: 8a8152c749306ed5247e92d4bc2c6a58e7a1c6cd
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e9975721b5cfaaed2c9ad7562c47f12c7a5a5bc3
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696666"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326895"
 ---
 # <a name="office-365-content-delivery-network-cdn-quickstart"></a>Office 365 innehålls leverans nätverk (CDN) snabb start
 
@@ -85,7 +86,7 @@ Utdata från dessa cmdletar bör se ut så här:
 
 [Använda Office 365-innehålls leverans nätverk (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md)
 
-[Nätverk för innehålls leverans](https://aka.ms/o365cdns)
+[Nätverk för innehållsleverans (CDN)](https://aka.ms/o365cdns)
 
 [Network planning and performance tuning for Office 365](https://aka.ms/tune)
 

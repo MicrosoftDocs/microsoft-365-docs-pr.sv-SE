@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa om hotets skydd i Microsoft 365 och konfigurera hur det ska användas för din organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ad74e9bdcd7b937873108d2ba049c16db8c235b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 624646461efe7131b2479e003b23a9e659e0a779
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202585"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326561"
 ---
 # <a name="protect-against-threats"></a>Skydda mot hot
 
@@ -54,7 +54,7 @@ Hot Protection-funktioner är inkluderade i *alla* Microsoft-eller Office 365-ab
 |Skydd mot skräppost|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Automatisk rensning av Tom timme (för e-post)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Skydda från skadliga URL-adresser och filer i e-post och Office-dokument (säkra länkar och säkra bifogade filer)|[Office 365 Avancerat skydd](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (**ATP**)|
-|Aktivera ATP för arbets belastning för SharePoint, OneDrive och Microsoft Teams| [LOVA](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide)|
+|Aktivera ATP för arbets belastning för SharePoint, OneDrive och Microsoft Teams|[LOVA](atp-for-spo-odb-and-teams.md)|
 |Avancerat skydd mot nätfiske|[LOVA](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Roller och behörigheter
@@ -150,90 +150,78 @@ Mer information om dina alternativ för skydd mot nätfiske finns i avsnittet [K
 
 Mer information om alternativen för att förhindra skräp post finns i [Konfigurera principer för skräp post i EOP](configure-your-spam-filter-policies.md).
 
-## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments"></a>Del 4 – skydda skadlig URL och filer (säkra länkar och säkra bifogade filer)
+## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-office-365-atp"></a>Del 4 – skydda skadlig URL-adress och filer (säkra länkar och säkra bifogade filer i Office 365 ATP)
 
-Skydd mot skadlig URL-adress och filer är tillgängligt i abonnemang som inkluderar [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP). Det är inställt med principer för säkra [bilagor via ATP](atp-safe-attachments.md) och [Safe Links för ATP](atp-safe-links.md) .
+Skydd mot skadlig URL-adress och filer är tillgängligt i abonnemang som innehåller [Office 365 Avancerat skydd](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP). Den är inställd genom principer för [säker bifogad fil](atp-safe-attachments.md) och [Safe Links](atp-safe-links.md) .
 
-### <a name="atp-safe-attachments-policies"></a>Principer för säkra bifogade filer via ATP
+### <a name="safe-attachments-policies-in-office-365-atp"></a>Principer för säkra bifogade filer i Office 365 ATP
 
-För att konfigurera [säkerhet för säkerhets](atp-safe-attachments.md)skull för ATP måste du definiera minst en policy för säker användning av ATP.
+Om du vill konfigurera [säkra bilagor](atp-safe-attachments.md)måste du skapa minst en princip för säkra länkar.
 
-1. Välj **Threat Management**policy [Security & Compliance Center](https://protection.office.com)  >  **Policy**  >  **Safe Attachments**i säkerhets & Compliance Center.
+1. I [säkerhets & Compliance Center](https://protection.office.com)väljer du **hot Management**  >  **policy**säkerhets meddelanden om säkerhet  >  ,**ATP**och klickar sedan på **skapa**.
 
-2. Välj alternativet **Aktivera ATP för SharePoint, OneDrive och Microsoft Teams**.
+2. Konfigurera följande inställningar i guiden **ny princip för säkra bifogade filer** som visas:
 
-3. Klicka på plus tecknet () i avsnittet **skydda e-postbilagor** **+** .
+   - Skriv i rutan **namn** `Block malware` och klicka sedan på **Nästa**.
 
-4. Ange följande inställningar:
+   - Konfigurera följande inställningar på sidan **Inställningar** :
+     - Välj **blockera**i avsnittet **säkra bifogade filer** .
+     - I avsnittet **omdirigera bilaga** väljer du alternativet **Aktivera omdirigering**. Ange e-postadressen för organisationens säkerhets administratör eller-ansvarig, som ska granska upptäckta filer.
 
-   - Skriv i rutan **namn** `Block malware` .
+     Klicka på **Nästa**.
 
-   - I avsnittet svar väljer du **blockera**.
+3. På sidan **används för klickar du** på **Lägg till ett villkor**, **väljer tillämpas om: mottagar domänen är**, klickar du på **Lägg till**, väljer din domän eller dina domäner **, klickar på Lägg till och** **klickar sedan**på **Nästa**.
 
-   - I avsnittet **omdirigera bilaga** väljer du alternativet **Aktivera omdirigering**. Ange e-postadressen för organisationens säkerhets administratör eller-ansvarig, som ska granska upptäckta filer.
+4. Granska inställningarna och klicka sedan på **Slutför**.
 
-   - I avsnittet **används för** väljer **du mottagaren**. Välj sedan din domän, Välj **Lägg till**och sedan **OK**.
+### <a name="safe-links-policies-in-office-365-atp"></a>Principer för säkra länkar i Office 365 ATP
 
-5. **Spara**.
+Om du vill konfigurera [säkra länkar](atp-safe-links.md)kan du läsa och redigera dina globala inställningar för säkra länkar och skapa minst en princip för säkra länkar.
 
-6. (**Rekommenderat steg**) Som global administratör eller SharePoint Online-administratör kör du cmdleten **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** med parametern **DisallowInfectedFileDownload** inställd på  *True* för din Microsoft 365-miljö. (Detta förhindrar att personer öppnar, flyttar, kopierar eller delar filer som identifieras som skadliga.)
+1. I [säkerhets & Compliance Center](https://protection.office.com)väljer du **Threat Management**  >  **policy**  >  **Safe Links**och klickar på **globala inställningar**och konfigurerar sedan följande inställningar:
 
-Mer information finns i [Konfigurera office 365-principer för säkra bifogade filer](set-up-atp-safe-attachments-policies.md) och [aktivera Office 365 ATP för SharePoint-, OneDrive-och Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
+   - Verifiera **Använd säkra länkar i: Office 365-program** är aktiverat: ![ slå på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Spåra inte när användare klickar på säkra länkar**: inaktivera den här inställningen för att spåra användare: Stäng ![ av ](../../media/scc-toggle-off.png) .
+   - **Tillåt inte att användare klickar via säkra länkar till ursprunglig URL**: kontrol lera att den här inställningen är aktive rad: ![ slå på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
 
-### <a name="atp-safe-links-policies"></a>Principer för säkraste säkerhets länkar
+   Klicka på **Spara** när du är klar.
 
-Om du vill ställa in [säkerhets Länkar för ATP](atp-safe-links.md)kan du läsa och redigera standard principen och lägga till en princip för specifika användare.
+2. Klicka på **skapa**på sidan huvud säkra länkar.
 
-1. Välj **Threat Management**policy säkerhets länkar i [säkerhets& efterlevnad](https://protection.office.com)  >  **Policy**  >  **ATP Safe Links**.
+3. Konfigurera följande inställningar i **princip guiden skapa säkra länkar** som visas:
 
-2. Dubbelklicka på **standard** policyn.
+   - Skriv ett namn i rutan **namn** , till exempel `Safe Links` och klicka sedan på **Nästa**.
 
-3. I avsnittet **Använd säkra länkar i** väljer du alternativet **Microsoft 365-appar för Enterprise, Office för iOS och Android**och klickar sedan på **Spara**.
-
-4. Klicka på plus tecknet () i avsnittet **principer som gäller för specifika mottagare** **+** .
-
-5. Ange följande inställningar:
-
-   - Skriv ett namn i rutan **namn** , till exempel `Safe Links` .
-
-   - I avsnittet **Välj åtgärd väljer du** **på**.
-
-   - Välj de här alternativen:
-
-     - **Använda säkra bifogade filer för att skanna nedladdnings Bart innehåll**
-
+   - Konfigurera följande inställningar på sidan **Inställningar** :
+     - **Välj åtgärd för okända URL-adresser i meddelanden**: Välj **på**.
+     - **Välj åtgärd för okända eller potentiellt skadliga webb adresser i Microsoft Teams**: Välj **på**.
      - **Använda säkra länkar till e-postmeddelanden som skickas inom organisationen**
+     - **Vänta på att URL-genomsökningen ska slutföras innan du levererar meddelandet**
+     - **Använda säkra länkar till e-postmeddelanden som skickas inom organisationen**
+     - **Tillåt inte att användare klickar genom till ursprunglig URL**
 
-     - **Tillåt inte att användare klickar genom säkra länkar till ursprunglig URL**
+     Klicka på **Nästa**
 
-   - I avsnittet **används för** väljer **du mottagaren**. Välj sedan din domän, Välj **Lägg till**och sedan **OK**.
+4. På sidan **används för klickar du** på **Lägg till ett villkor**, **väljer tillämpas om: mottagar domänen är**, klickar du på **Lägg till**, väljer din domän eller dina domäner **, klickar på Lägg till och** **klickar sedan**på **Nästa**.
 
-6. **Spara**.
+5. Granska inställningarna och klicka sedan på **Slutför**.
 
-Mer information finns i [Set up Office 365 ATP Safe Links policies](set-up-atp-safe-links-policies.md)(Konfigurera Office 365 ATP-principer för säkra länkar).
+Mer information finns i [Konfigurera principer för säkra länkar](set-up-atp-safe-links-policies.md).
 
-## <a name="part-5---turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams-workloads"></a>Del 5 – aktivera ATP för arbets belastning för SharePoint, OneDrive och Microsoft Teams
+## <a name="part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>Del 5 – kontrol lera ATP för SharePoint, OneDrive och Microsoft Teams
 
-Arbets belastningar som SharePoint, OneDrive och Teams är byggda för samarbete. Genom att använda ATP kan du blockera och upptäcka filer som identifieras som skadliga på grupp webbplatser och dokument bibliotek. Du kan läsa mer om hur det fungerar [här](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams?view=o365-worldwide).
+Arbets belastningar som SharePoint, OneDrive och Teams är byggda för samarbete. Genom att använda ATP kan du blockera och upptäcka filer som identifieras som skadliga på grupp webbplatser och dokument bibliotek. Du kan läsa mer om hur det fungerar [här](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams).
 
 > [!IMPORTANT]
 > **Innan du påbörjar den här proceduren bör du kontrol lera att gransknings loggning redan är aktiverat för din Microsoft 365-miljö**. Det gör du vanligt vis av någon som har rollen gransknings loggar som tilldelats i Exchange Online. Mer information finns i [Aktivera eller inaktivera gransknings loggs ökning](../../compliance/turn-audit-log-search-on-or-off.md)!
 
-1. Gå till <https://protection.office.com> och logga in med ditt arbets-eller skol konto.
+1. I [säkerhets & Compliance Center](https://protection.office.com)väljer du **hot Management**  >  **policy**  >  **säkerhets** **Inställningar**för fler spar ande bilagor
 
-2. I det vänstra navigerings **fältet under säkerhets**& Compliance Center väljer du **policy** \> **Safe Attachments**.
+2. Kontrol lera att växla mellan **ATP för SharePoint, OneDrive och Microsoft Teams** är till höger: ![ slå på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) och klicka sedan på **Spara**.
 
-   ![Välj Threat Management policy i Center för säkerhet & efterlevnad \>](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+3. Granska (och, om tillämpligt, redigera) organisationens principer för [säkert bifogade filer](set-up-atp-safe-attachments-policies.md) och [säkra länkar](set-up-atp-safe-links-policies.md).
 
-3. Välj **Aktivera ATP för SharePoint, OneDrive och Microsoft Teams**.
-
-   ![Aktivera avancerat skydd för SharePoint Online, OneDrive för företag och Microsoft Teams](../../media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
-
-4. **Spara**.
-
-5. Granska (och, om tillämpligt, redigera) organisationens principer för [säkert bifogade filer](set-up-atp-safe-attachments-policies.md) och [säkra länkar](set-up-atp-safe-links-policies.md).
-
-6. Lämpligt Som global administratör eller SharePoint Online-administratör kör du cmdleten **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** med parametern _DisallowInfectedFileDownload_ inställd på `$true` .
+4. Lämpligt Som global administratör eller SharePoint Online-administratör kör du cmdleten **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** med parametern _DisallowInfectedFileDownload_ inställd på `$true` .
 
    - `$true` blockerar alla åtgärder (förutom borttagning) för identifierade filer. Personer kan inte öppna, flytta, kopiera eller dela identifierade filer.
    - `$false` alla åtgärder förutom Delete och nedladdning blockeras. Andra kan välja att acceptera risken och hämta en identifierad fil.
@@ -241,7 +229,7 @@ Arbets belastningar som SharePoint, OneDrive och Teams är byggda för samarbete
    > [!TIP]
    > Mer information om hur du använder PowerShell med Microsoft 365 finns i [Hantera Microsoft 365 med PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell).
 
-7. Tillåt upp till 30 minuter för att ändringarna ska spridas till alla Microsoft 365-datacenter.
+5. Tillåt upp till 30 minuter för att ändringarna ska spridas till alla Microsoft 365-datacenter.
 
 ### <a name="now-set-up-alerts-for-detected-files"></a>Konfigurera aviseringar för identifierade filer
 
@@ -270,9 +258,10 @@ Om du vill veta mer om aviseringar läser [du skapa aktivitets aviseringar i avs
 > [!NOTE]
 > När du är klar med konfigurationen kan du använda de här länkarna för att starta arbets belastnings undersökningar:
 >
-> - [Visa information om skadliga filer som identifieras i SharePoint, OneDrive eller Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
-> - [Vad kan jag göra? när en skadlig fil hittas i SharePoint Online, OneDrive eller Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
-> - [Hantera meddelanden och filer i karantän som administratör i Microsoft 365](manage-quarantined-messages-and-files.md)
+>- [Statusrapport för hotskydd](view-email-security-reports.md#threat-protection-status-report)
+>- [Använda säkerhets & Compliance Center för att hantera filer i karantän](manage-quarantined-messages-and-files.md#atp-only-use-the-security--compliance-center-to-manage-quarantined-files)
+>- [Vad kan jag göra? när en skadlig fil hittas i SharePoint Online, OneDrive eller Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+>- [Hantera meddelanden och filer i karantän som administratör i Microsoft 365](manage-quarantined-messages-and-files.md)
 
 ## <a name="part-6---additional-settings-to-configure"></a>Del 6 – ytterligare inställningar att konfigurera
 
@@ -299,4 +288,4 @@ När du har konfigurerat hotets skydds funktioner ser du till att övervaka hur 
 |Se hur hot Protection-funktioner fungerar för din organisation genom att visa rapporter|[Säkerhets instrument panel](security-dashboard.md)<br/>[Säkerhets rapporter för e-post](view-email-security-reports.md)<br/>[Rapporter för Office 365 ATP](view-reports-for-atp.md)<br/>[Hotutforskaren](threat-explorer.md)|
 |Regelbundet granska och omarbeta dina skydds principer om det behövs|[Säkra Poäng](../mtp/microsoft-secure-score.md)<br/>[Smarta rapporter och insikter](reports-and-insights-in-security-and-compliance.md)<br/>[Microsoft 365 hot-och svars funktioner](keep-users-safe-with-office-365-ti.md)|
 |Titta efter nya funktioner och tjänste uppdateringar|[Standard-och riktade versions alternativ](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365)<br/>[Meddelandecentral](https://docs.microsoft.com/microsoft-365/admin/manage/message-center)<br/>[Översikt över Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[Tjänst beskrivningar](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
-|Lär dig mer om rekommenderade standard-och strikta säkerhetskonfigurationer för EOP och ATP | [Rekommenderade inställningar för EOP och Office 365 säkerhet för ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-worldwide) |
+|Lär dig mer om rekommenderade standard-och strikta säkerhetskonfigurationer för EOP och ATP|[Rekommenderade inställningar för EOP och Office 365 säkerhet för ATP](recommended-settings-for-eop-and-office365-atp.md)|

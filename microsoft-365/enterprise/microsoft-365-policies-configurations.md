@@ -6,7 +6,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 09/14/2020
+ms.date: 09/29/2020
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -17,22 +17,22 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: cef17142d90a15f10e82fd51c4c22202bf7ecf00
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: b6e961dc8e7de6bfaf16508fa6c70f8a90fa4080
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131584"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327444"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationer av identiteter och enhetsåtkomst
 
 Den moderna säkerhets omkretsen i din organisation utökas nu bortom ditt nätverk för att omfatta användare som har åtkomst till molnbaserade program från valfri plats med olika enheter. Din säkerhets infrastruktur måste avgöra om en viss åtkomstbegäran ska beviljas och under vilka omständigheter. 
 
-Denna bestämning bör baseras på användar kontot för inloggningen, den enhet som används, programmet som användaren använder för åtkomst, den plats där åtkomstbegäran görs och en bedömning av risken för begäran. Denna funktion säkerställer att endast godkända användare och enheter kan komma åt dina kritiska resurser.
+Denna bestämning bör baseras på användar kontot för inloggningen, den enhet som används, programmet som användaren använder för åtkomst, den plats där åtkomstbegäran görs och en bedömning av risken för begäran. Denna funktion hjälper till att säkerställa att endast godkända användare och enheter kan komma åt dina kritiska resurser.
 
 I den här artikeln beskrivs en uppsättning nödvändiga konfigurationer för identitets-och enhets åtkomst och en uppsättning villkorliga åtkomst tjänster för Azure Active Directory (Azure AD), Microsoft Intune och andra principer för att skydda åtkomst till Microsoft 365 för företags moln program och tjänster, andra SaaS-tjänster och lokala program som publicerats med Azure AD Application Proxy.
 
-Inställningar och principer för åtkomst till identiteter och enheter rekommenderas i tre nivåer: baseline-skydd, känsligt skydd och skydd för miljöer med mycket reglerade eller sekretessbelagda data. Dessa nivåer och deras motsvarande konfigurationer ger konsekventa skydds nivåer för dina data, identiteter och enheter.
+Inställningar och principer för åtkomst till identiteter och enheter rekommenderas i tre nivåer: baseline-skydd, känsligt skydd och skydd för miljöer med mycket reglerade eller sekretessbelagda data. Dessa nivåer och deras motsvarande konfigurationer ger konsekventa skyddsnivåer för dina data, identiteter och enheter.
 
 Dessa möjligheter och deras rekommendationer:
 
@@ -115,7 +115,7 @@ Azure AD tillhandahåller en full uppsättning funktioner för identitets hanter
 | [Enhets registrering](/azure/active-directory/devices/overview) | Du registrerar en enhet i Azure AD för att skapa en identitet för enheten. Denna identitet används för att autentisera enheten när en användare loggar in och för att tillämpa villkorsstyrda åtkomst principer som kräver domänanslutna eller kompatibla datorer. För den här vägledningen använder vi enhets registrering för att automatiskt registrera domänanslutna Windows-datorer. Enhets registrering är en förutsättning för att hantera enheter med Intune. | Microsoft 365 E3 eller E5 |
 | [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview) | Gör det möjligt att upptäcka potentiella säkerhets problem som påverkar organisationens identitet och konfigurera automatisk reparations princip för att Visa riskerna med låg, medelhög och stor inloggning och användare. Den här vägledningen är beroende av denna riskbedömning för att tillämpa principer för villkorsstyrd åtkomst för multifaktorautentisering. Den här vägledningen innehåller även en policy för villkorsstyrd åtkomst som kräver att användare ändrar sitt lösen ord om en aktivitet med hög risk identifieras för deras konto. | Microsoft 365 E5, Microsoft 365 E3 med tillägget identitets & hot Protection, EMS E5 eller Azure Premium P2-licenser |
 | [Självbetjäning för återställning av lösen ord (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks) | Tillåt att dina användare återställer sina lösen ord på ett säkert sätt och utan hjälp genom att kontrol lera flera autentiseringsmetoder som administratören kan kontrol lera. | Microsoft 365 E3 eller E5 |
-| [Lösen ords skydd i Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | Identifiera och blockera kända svaga lösen ord och deras varianter och ytterligare svaga termer som är specifika för din organisation. Standard listan över blockerade lösen ord tillämpas automatiskt på alla användare i en Azure AD-klient. Du kan definiera ytterligare poster i en anpassad lista över blockerade lösen ord. När användare ändrar eller återställer sina lösen ord är de här förbjudna lösen ords listorna markerade för att använda starka lösen ord. |  Microsoft 365 E3 eller E5 |
+| [Lösen ords skydd i Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | Identifiera och blockera kända svaga lösen ord och deras varianter och ytterligare svaga termer som är specifika för din organisation. Standard globala förbjudna lösenordslistor tillämpas automatiskt på alla användare i en Azure AD-klient. Du kan definiera ytterligare poster i en anpassad förbjuden lösenordslista. När användare ändrar eller återställer sina lösenord kontrolleras dessa förbjudna lösenordslistor för att använda starka lösenord. |  Microsoft 365 E3 eller E5 |
 ||||
 
 ![Komponenter i åtkomst till identiteter och enheter.](../media/microsoft-365-policies-configurations/identity-device-access-components.png)
@@ -162,6 +162,25 @@ I följande tabell sammanfattas våra rekommendationer för att använda de här
 Tabellen ovan visar trenden för många organisationer för att stödja en blandning av organisations ägda enheter, samt personligt och BYODs, för att möjliggöra mobil produktivitet. Intune-principer för appar säkerställer att e-post skyddas från exfiltrating av Outlook-mobilappen och andra Office-mobilappar, på både företagsägda enheter och BYODs.  
 
 Vi rekommenderar att organisations enheter hanteras av Intune eller domänbaserad domän för att tillämpa ytterligare skydd och kontroll. Beroende på data känslighet kan din organisation välja att inte tillåta BYODs för specifika användar populationer eller särskilda appar.
+
+## <a name="deployment-and-your-apps"></a>Distribution och dina appar
+
+Innan du konfigurerar och har konfigurerat identitets-och enhets åtkomst för Azure AD-integrerade appar måste du: 
+
+- Bestäm vilka program som ska användas i organisationen som du vill skydda. 
+- Analysera den här listan med program för att fastställa uppsättningar med principer som ger lämpliga skydds nivåer. 
+
+  Du bör inte skapa separata uppsättningar principer för program, eftersom hanteringen av dem kan bli besvärlig. Microsoft rekommenderar att du grupperar dina appar som har samma skydds krav för samma användare. 
+
+  Du kan till exempel ha en uppsättning principer som inkluderar alla Microsoft 365-appar för alla dina användare om original planens skydd och en andra uppsättning principer för alla känsliga appar, till exempel de som används av Human Resources eller ekonomi avdelningar, och tillämpa dem på dessa grupper. 
+
+När du har fastställt en uppsättning principer för de program som du vill säkra kan du lyfta bort principerna till användarna stegvist, adresserings problem på vägen.  
+
+Konfigurera till exempel de principer som ska användas för alla Microsoft 365-appar för bara Exchange Online med de ytterligare ändringarna för Exchange. Slå på dessa principer till användarna och arbeta igenom eventuella problem. Sedan lägger du till Teams och ändrar dem till dina användare. Lägg sedan till SharePoint med de ytterligare ändringarna. Fortsätt lägga till resten av dina program tills du säkert kan konfigurera dessa rikt linjer för alla Microsoft 365-appar. 
+
+För dina känsliga appar kan du till och med skapa en uppsättning principer och lägga till en app i taget och arbeta igenom eventuella problem tills de tas med i den känsliga program princip uppsättningen. 
+
+Microsoft rekommenderar att du inte skapar princip uppsättningar som gäller för alla program, eftersom det kan leda till vissa oavsiktliga konfigurationer. Principer som blockerar alla appar kan till exempel låsa dina administratörer från Azure-portalen och undantagen kan inte konfigureras för viktiga slut punkter som Microsoft Graph. 
 
 ## <a name="steps-in-the-process-of-configuring-identity-and-device-access"></a>Steg i processen med att konfigurera åtkomst för identitet och enhet
 

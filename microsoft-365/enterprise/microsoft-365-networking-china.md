@@ -12,16 +12,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
+- M365initiative-CoreDeploy
 search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: I den här artikeln finns vägledning för hur du optimerar nätverks prestanda för användare av globala Microsoft 365-klient organisationer.
-ms.openlocfilehash: 94de83a94bf6cdf5470b66970efb62094bdc4343
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1f5f51991c5950d46c9d835a98bea86bcb354366
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694456"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327515"
 ---
 # <a name="microsoft-365-global-tenant-performance-optimization-for-china-users"></a>Microsoft 365 global prestanda optimering för användare av Kina
 
@@ -70,11 +71,11 @@ Microsoft arbetar kontinuerligt med att förbättra Microsoft 365-användar uppl
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Nätverks planering och prestanda justering för Microsoft 365](https://aka.ms/tune)
+[Nätverksplanering och prestandajustering för Microsoft 365](https://aka.ms/tune)
 
-[Principer för nätverks åtkomst för Microsoft 365](microsoft-365-network-connectivity-principles.md)
+[Microsoft 365 principer för nätverksanslutningar](microsoft-365-network-connectivity-principles.md)
 
-[Hantera slut punkter för Office 365](managing-office-365-endpoints.md)
+[Hantera Office 365-slutpunkter](managing-office-365-endpoints.md)
 
 [URL-adresser och IP-adressintervall för Office 365](urls-and-ip-address-ranges.md)
 

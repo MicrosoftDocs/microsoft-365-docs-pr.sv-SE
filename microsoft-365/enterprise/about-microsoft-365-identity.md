@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
-ms.date: 06/09/2020
+ms.date: 09/30/2020
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -23,20 +23,22 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Lär dig hur du hanterar Azure AD User Identity-tjänsten i Microsoft 365 med moln-eller hybrid identitets modeller.
-ms.openlocfilehash: d91e14f678e487365805b024e4025e9a39db0c2c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 6b5b80584408671a1925e32df1fbf458b7c16139
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694900"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327957"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365-Identity-modeller och Azure Active Directory
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 Microsoft 365 använder Azure Active Directory (Azure AD), en molnbaserad användar identitets-och autentiseringstjänst som ingår i ditt Microsoft 365-abonnemang, för att hantera identiteter och inloggningsautentisering för Microsoft 365. Att få din identitets infrastruktur konfigurerad korrekt är viktig för att hantera Microsoft 365-användarnas åtkomst och behörigheter för din organisation.
 
 Innan du börjar kan du titta på den här videon för att få en översikt över identitets modeller och för Microsoft 365.
+
+<p> </p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
@@ -48,7 +50,7 @@ För att planera för användar konton måste du först förstå de två identit
 
 Här är de två typerna av identitet och deras bästa passning och fördelar.
 
-| Attribut | Moln-Only-identitet | Hybrididentitet |
+| Attribut | Identitet endast för molnet | Hybrididentitet |
 |:-------|:-----|:-----|
 | **Definition** | Användar kontot finns bara i Azure AD-innehavaren för ditt Microsoft 365-abonnemang. | Användar kontot finns i AD DS och en kopia finns också i Azure AD-innehavaren för ditt Microsoft 365-abonnemang. Användar kontot i Azure AD kan också innehålla en hash-version av det redan hashade lösen ordet för AD DS-användarkontot. |
 | **Hur Microsoft 365 verifierar användarautentiseringsuppgifter** | Azure AD-klientaren för din Microsoft 365-prenumeration utför autentiseringsprocessen med moln identitets kontot. | Azure AD-klientaren för din Microsoft 365-prenumeration hanterar antingen autentiseringsprocessen eller omdirigerar användaren till en annan identitets leverantör. |
@@ -56,9 +58,9 @@ Här är de två typerna av identitet och deras bästa passning och fördelar.
 | **Största fördelen** | Lätt att använda. Inga extra katalog verktyg eller servrar behövs. | Användare kan använda samma inloggnings uppgifter när de använder lokala eller molnbaserade resurser. |
 ||||
 
-## <a name="cloud-only-identity"></a>Moln-Only-identitet
+## <a name="cloud-only-identity"></a>Identitet endast för molnet
 
-En endast moln identitet använder användar konton som bara finns i Azure AD. Moln identitet används vanligt vis av små organisationer som inte har lokala servrar eller som inte använder AD DS för att hantera lokal identitet. 
+En endast moln identitet använder användar konton som bara finns i Azure AD. Moln-Only-identitet används vanligt vis av små organisationer som inte har lokala servrar eller som inte använder AD DS för att hantera lokal identitet. 
 
 Här är de grundläggande komponenterna i moln-Only-identitet.
  
@@ -67,7 +69,7 @@ Här är de grundläggande komponenterna i moln-Only-identitet.
 Både lokala och fjärranslutna användare använder sina Azure AD-användarkonton och lösen ord för att komma åt Microsoft 365-moln tjänster. Azure AD autentiserar användarautentiseringsuppgifter baserat på dess lagrade användar konton och lösen ord.
 
 ### <a name="administration"></a>Administration
-Eftersom användar konton bara lagras i Azure AD hanterar du moln identiteter med verktyg som [Microsoft 365 Admin Center](https://admin.microsoft.com) och [Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md). 
+Eftersom användar konton bara lagras i Azure AD hanterar du moln identiteter med verktyg som [Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/add-users/) och [Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md). 
 
 ## <a name="hybrid-identity"></a>Hybrididentitet
 
@@ -89,7 +91,7 @@ Azure AD-innehavaren har en kopia av AD DS-kontona. I den här konfigurationen v
 
 ### <a name="administration"></a>Administration
 
-Eftersom de ursprungliga och auktoritativa användar kontona lagras i den lokala AD DS hanterar du dina identiteter med samma verktyg som AD DS, till exempel verktyget Active Directory-användare och datorer. 
+Eftersom de ursprungliga och auktoritativa användar kontona lagras i den lokala AD DS hanterar du dina identiteter med samma verktyg som du hanterar din AD DS. 
 
 Du använder inte Microsoft 365 Admin Center eller PowerShell för Microsoft 365 för att hantera synkroniserade användar konton i Azure AD.
 

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du använder Threat Explorer och rapporten om identifiering av real tids rapporter för att undersöka och reagera på hot i säkerhets &amp; Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5500a7bff0766159384604e9973b5ad81b3dbc6f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1310baec402d9053e93b7166ca38cfcab11d73b2
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200113"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327003"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vyer i Threat Explorer och identifieringar i real tid
 
@@ -140,7 +140,7 @@ Om du klickar på **ATP-sprängor** i det här diagrammet visas en vy som här:
 
 ![Utforskaren är filtrerad för att endast visa resultat för ATP-Sprängor](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
-I den här vyn visar vi nu data för filer som har sprängts med [Office 365 ATP Safe Attachments](atp-safe-attachments.md). Under diagrammet kan vi se detaljerad information om specifika e-postmeddelanden med bifogade filer som har hittats av de bifogade filer för ATP.
+I den här vyn visar vi nu data för filer som har sprängts med [säkra bifogade](atp-safe-attachments.md)filer. Under diagrammet kan vi se information om specifika e-postmeddelanden med bifogade filer som upptäcktes av säkra bifogade filer.
 
 ![Specifik information om e-postmeddelanden med identifierade bilagor](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
 

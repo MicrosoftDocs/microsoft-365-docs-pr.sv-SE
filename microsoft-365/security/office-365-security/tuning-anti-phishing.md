@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Administratörer kan lära sig att identifiera varför och hur ett nät fiske meddelande gick igenom i Microsoft 365 och vad man bör göra för att förhindra fler nät fiske meddelanden i framtiden.
-ms.openlocfilehash: c62d09a1cf8b586b5c1d4393d7316d6d6d0cc96d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 813a9c263d9cc620606c7a5e272e47bdaf1ff7a7
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201681"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328065"
 ---
 # <a name="tune-anti-phishing-protection"></a>Finjustera skydd mot nätfiske
 
@@ -32,11 +32,11 @@ Om en mottagares konto har komprometterats som ett resultat av nät fiske meddel
 
 Om ditt abonnemang inkluderar Avancerat skydd (ATP) kan du använda [Office 365 Threat Intelligence](office-365-ti.md) för att identifiera andra användare som också har tagit emot nät fiske meddelandet. Du har ytterligare alternativ för att blockera nät fiske meddelanden:
 
-- [Säkra ATP-länkar](set-up-atp-safe-links-policies.md)
+- [Säkra länkar i Office 365 ATP](set-up-atp-safe-links-policies.md)
 
-- [Säkra filer för ATP](set-up-atp-safe-attachments-policies.md)
+- [Säkra bifogade filer i Office 365 ATP](set-up-atp-safe-attachments-policies.md)
 
-- [ATP anti-phishing-principer i Microsoft 365](configure-atp-anti-phishing-policies.md). Observera att du kan tillfälligt öka de **avancerade nät fiske trösklarna** i principen från **standard** till **aggressivt**, **mer aggressivt**eller **de flesta aggressivt**.
+- [AntiPhishing-principer i Office 365 ATP](configure-atp-anti-phishing-policies.md). Observera att du kan tillfälligt öka de **avancerade nät fiske trösklarna** i principen från **standard** till **aggressivt**, **mer aggressivt**eller **de flesta aggressivt**.
 
 Kontrol lera att dessa ATP-funktioner är aktiverade.
 

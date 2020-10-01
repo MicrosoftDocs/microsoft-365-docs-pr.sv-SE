@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/10/2020
+ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Översikt till identitet för Microsoft 365.
-ms.openlocfilehash: e268422fcd6cfba36b1a971629036d29827806f6
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: 997df19ca71b67d3fa579b9feaf3e1a61bc7a358
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775129"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327777"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Identitets översikt för Microsoft 365
 
 I Microsoft 365 för företag är en välplanerad och utförd identitets infrastruktur paves för bättre säkerhet, inklusive begränsning av åtkomst till din produktivitets arbets belastning och deras data till enbart autentiserade användare och enheter.
 
-En översikt över identitets modeller och-auktorisering för Microsoft 365 för företag finns i den här videon:
+En översikt över identitets modeller och-auktorisering för Microsoft 365 för företag finns i den här videon.
 
 <p> </p>
 
@@ -38,7 +38,7 @@ Information om de olika identitets funktionerna i varje Microsoft 365 för före
 
 Granska den här tvåsidiga affischen för att snabbt komma igång med identitets koncept och konfigurationer för Microsoft 365 för företag.
 
-Du kan också [Ladda ned den här affischen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf). Du kan skriva ut det i Letter-, Legal-och Tabloid-format (11 x 17).
+Du kan också [Ladda ned den här affischen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) och skriva ut den i Letter-, Legal-eller Tabloid-format (11 x 17).
 
 ## <a name="plan"></a>Planera
 
@@ -66,10 +66,14 @@ Microsoft tillhandahåller en uppsättning rekommendationer för [åtkomst till 
 
 ## <a name="manage"></a>Hantera
 
-För att hantera din identitets implementering:
+Information om hur du hanterar din Microsoft 365-identitets distribution finns i:
 
-- [Tilldela licenser och hantera användar konton](assign-licenses-to-user-accounts.md)
-- [Övervaka katalog synkronisering](view-directory-synchronization-status.md)
+- [Användarkonton](manage-microsoft-365-accounts.md)
+- [Licenser](assign-licenses-to-user-accounts.md)
+- [Angivna](manage-microsoft-365-passwords.md)
+- [Grupper](manage-microsoft-365-groups.md)
+- [Styrning](manage-microsoft-365-identity-governance.md)
+- [Katalogsynkronisering:](view-directory-synchronization-status.md)
 
 ## <a name="how-microsoft-does-identity-for-microsoft-365"></a>Så här fungerar Microsoft 365
 

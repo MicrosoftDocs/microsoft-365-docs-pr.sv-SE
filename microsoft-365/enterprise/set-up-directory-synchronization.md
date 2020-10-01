@@ -3,7 +3,7 @@ title: Konfigurera profilsynkronisering för Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -22,20 +22,20 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Lär dig hur du konfigurerar profilsynkronisering mellan Microsoft 365 och din lokala Active Directory.
-ms.openlocfilehash: 3a846a6c558f221c1869dce6da27e3d34680f75d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 308774dcdbaffc1096ab6ad144484e6920accdfa
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694377"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327099"
 ---
 # <a name="set-up-directory-synchronization-for-microsoft-365"></a>Konfigurera profilsynkronisering för Microsoft 365
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 I Microsoft 365 används en Azure Active Directory-klient (Azure AD) för att lagra och hantera identiteter för att få åtkomst till molnbaserade resurser. 
 
-Om du har en lokal Active Directory Domain Services (AD DS) kan du synkronisera dina AD DS-användarkonton, grupper och kontakter med Azure AD-klient organisationen för Microsoft 365-prenumerationen. Det här är hybrid identitet för Microsoft 365. Här är dess komponenter.
+Om du har en lokal AD DS-domän (Active Directory Domain Services) eller en skog kan du synkronisera dina AD DS-användarkonton, grupper och kontakter med Azure AD-klient organisationen för din Microsoft 365-prenumeration. Det här är hybrid identitet för Microsoft 365. Här är dess komponenter.
 
 ![Komponenter i Active Directory-synkronisering för Microsoft 365](../media/about-microsoft-365-identity/hybrid-identity.png)
 
@@ -51,7 +51,7 @@ Azure AD Connect körs på en lokal server och synkroniserar AD DS med Azure AD-
 
 - Federerad autentisering
 
-  Azure AD omdirigerar klient datorn begär att få kontakta en annan identitets leverantör.
+  Azure AD refererar den klient dator som begär klientautentisering till en annan identitets leverantör.
 
 Se [Hybrid identiteter](plan-for-directory-synchronization.md) för mer information.
   
@@ -99,4 +99,4 @@ Följ stegen i [Skapa DNS-poster för Microsoft 365 när du hanterar dina DNS-po
 
 ## <a name="next-step"></a>Nästa steg
 
-[Tilldela licenser till användar konton](assign-licenses-to-user-accounts.md)
+[Tilldela licenser till användarkonton](assign-licenses-to-user-accounts.md)

@@ -3,7 +3,7 @@ title: Förbereda för Active Directory-synkronisering till Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/25/2019
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Här beskrivs hur du förbereder användare till Microsoft 365 med hjälp av profilsynkronisering och de långsiktiga fördelarna med den här metoden.
-ms.openlocfilehash: c9d4368d1939b9c6feedf5146f9d168f18d5d5b1
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: a70f49dd5656da996912173690dc2b21b4288023
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269423"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327291"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Förbereda för Active Directory-synkronisering till Microsoft 365
 
@@ -43,9 +43,9 @@ Fördelarna med hybrid identitet och katalog synkronisering i din organisation i
 - Om du vill aktivera enkel inloggnings scenario
 - Automatisera konto ändringar i Microsoft 365
 
-Mer information om fördelarna med att använda katalog synkronisering finns i [Översikt över katalog synkronisering]( https://go.microsoft.com/fwlink/p/?LinkId=525398) och [hybrid identitet för Microsoft 365](plan-for-directory-synchronization.md).
+Mer information om fördelarna med att använda katalog-synkronisering finns i [hybrid identitet med Azure Active Directory (Azure AD)](https://go.microsoft.com/fwlink/p/?LinkId=525398) och [hybrid identitet för Microsoft 365](plan-for-directory-synchronization.md).
 
-För att katalog synkroniseringen ska fungera måste planering och förberedelse för att säkerställa att Active Directory Domain Services (AD DS) synkroniseras med Azure Active Directory (Azure AD)-klient organisationen för Microsoft 365-prenumerationen med minst fel.
+För att katalog synkroniseringen ska fungera måste planering och förberedelse för att säkerställa att Active Directory Domain Services (AD DS) synkroniseras med Azure AD-klient organisationen för Microsoft 365-prenumerationen med minst fel.
 
 Följ de här stegen för bästa resultat.
 
@@ -54,7 +54,7 @@ Följ de här stegen för bästa resultat.
 Innan du synkroniserar AD DS till din Azure AD-klient organisation måste du rensa AD DS.
 
 > [!IMPORTANT]
-> Om du inte utför AD DS-rensning innan du synkroniserar kan distributions processen vara en väsentlig negativ effekt. Det kan ta några dagar, eller till och med veckor, att gå igenom Active Directory-synkroniseringen, identifiera fel och synkronisera igen.
+> Om du inte utför AD DS-rensning innan du synkroniserar kan den leda till en betydande negativ påverkan på distributions processen. Det kan ta några dagar, eller till och med veckor, att gå igenom Active Directory-synkroniseringen, identifiera fel och synkronisera igen.
 
 I din AD DS utför du följande rensnings aktiviteter för varje användar konto som tilldelas en Microsoft 365-licens:
 

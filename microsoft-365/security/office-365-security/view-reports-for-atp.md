@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Hitta och använda rapporter för Office 365 Avancerat skydd för säkerhets &amp; Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90da02c8aa3d50f62bdf4be8c466962da828b23d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 16fef101f722a23b3a64d91c85c2f946c67036f0
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196603"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328041"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visa rapporter för Office 365 Avancerat skydd
 
@@ -36,7 +36,7 @@ Office 365 organisationer för avancerat skydd (ATP) (till exempel Microsoft 365
 
 ## <a name="advanced-threat-protection-file-types-report"></a>Filtypsrapporter för ATP
 
-I rapporten **avancerade skydds filtyper** visas den typ av filer som identifieras som skadligt för de [bifogade säkerhets ATP](atp-safe-attachments.md)-filerna.
+I rapporten **avancerade skydds filtyper** visas en typ av filer som identifieras som skadliga [bifogade filer](atp-safe-attachments.md).
 
  I den sammanställda vyn i rapporten kan du använda 90 dagar för att filtrera den, men i detaljvyn kan du bara tillåta 10 dagars filtrering.
 
@@ -62,7 +62,7 @@ Följande vyer är tillgängliga:
   - **Skadliga körbara filer**
   - **Gemensamma**
 
-  När du håller mus pekaren över en viss dag (data punkt) kan du se en uppdelning av skadliga filer som upptäcktes av [säkra bifogade filer för ATP](atp-safe-attachments.md) och [skydd mot skadlig program vara i EOP](anti-malware-protection.md).
+  När du håller mus pekaren över en viss dag (data punkt) kan du se en uppdelning av skadliga filer som identifieras av [säkra bifogade filer](atp-safe-attachments.md) och [skydd mot skadlig program vara i EOP](anti-malware-protection.md).
 
   ![Vyn fil i rapporten ATP-filtyper](../../media/atp-file-types-report-file-view.png)
 
@@ -76,7 +76,7 @@ Följande vyer är tillgängliga:
   - **Blockera åtkomst**
   - **Meddelanden ersatta**
   - **Meddelanden som övervakas**
-  - **Ersatt med dynamisk e-postleverans**: Mer information finns i [dynamisk leverans och förhands granskning med säkra filer för ATP](dynamic-delivery-and-previewing.md).
+  - **Ersatt med dynamisk e-postleverans**: Mer information finns i [dynamisk leverans i principer för säkra bifogade filer](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
   ![Vyn meddelande i rapporten typer av ATP-filer](../../media/atp-file-types-report-message-view.png)
 
@@ -138,7 +138,7 @@ Följande vyer är tillgängliga:
   - **Blockera åtkomst**
   - **Meddelanden ersatta**
   - **Meddelanden som övervakas**
-  - **Ersatt med dynamisk e-postleverans**: Mer information finns i [dynamisk leverans och förhands granskning med säkra filer för ATP](dynamic-delivery-and-previewing.md).
+  - **Ersatt med dynamisk e-postleverans**: Mer information finns i [dynamisk leverans i principer för säkra bifogade filer](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
   ![Vyn meddelande i rapporten typer av ATP-filer](../../media/atp-file-types-report-message-view.png)
 
@@ -158,7 +158,7 @@ Följande vyer är tillgängliga:
   - **Skadliga körbara filer**
   - **Gemensamma**
 
-  När du håller mus pekaren över en viss dag (data punkt) kan du se en uppdelning av skadliga filer som upptäcktes av [säkra bifogade filer för ATP](atp-safe-attachments.md) och [skydd mot skadlig program vara i EOP](anti-malware-protection.md).
+  När du håller mus pekaren över en viss dag (data punkt) kan du se en uppdelning av skadliga filer som identifieras av [säkra bifogade filer](atp-safe-attachments.md) och [skydd mot skadlig program vara i EOP](anti-malware-protection.md).
 
   ![Vyn fil i rapporten ATP-filtyper](../../media/atp-file-types-report-file-view.png)
 
@@ -206,7 +206,7 @@ Status rapporten för **hotets skydd** är en enkel vy som innehåller informati
 
 ## <a name="url-threat-protection-report"></a>Rapport om skydd mot URL-hotet
 
-**Rapporten skydd mot URL-hotet** innehåller sammanfattnings-och trenden för hot som upptäckts och åtgärder som vidtas på URL-adresser. [ATP Safe Links](atp-safe-links.md) Den här rapporten kommer inte att behöva klicka på data från användare där **principen för Safe** Links har Aktiver ATS.
+**Rapporten skydd mot URL-hotet** innehåller översikts-och trend lägen för hot som upptäcks och åtgärder som vidtas på URL-adresser till vissa [säkra länkar](atp-safe-links.md). Den här rapporten kommer inte att behöva klicka på data från användare där **principen för Safe** Links har Aktiver ATS.
 
 Om du vill visa rapporten öppnar du [säkerhets & Compliance Center](https://protection.office.com), går till **rapport** \> **instrument panelen** och väljer **URL-skydd**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=URLProtectionActionReport> .
 
@@ -234,7 +234,7 @@ Rapporten **skydd mot URL-hotet** har två aggregerade vyer som uppdateras en g�
 
   ![URL-adress klicka på skydds åtgärd i rapporten URL-skydd](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
-- **URL-adress klicka**här: visar antalet URL-musklick per program som stöder Office 365 ATP-säkra länkar:
+- **URL-adress klicka**här: visar antalet URL-musklick med program som stöder säkra länkar:
 
   - **E-postklient**
   - **PowerPoint**
@@ -275,7 +275,7 @@ Utöver de ATP-rapporter som beskrivs i det här avsnittet är flera andra rappo
 |**Explorer** (ATP-abonnemang 2) eller **real tids identifiering** (ATP-abonnemang 1)|[Hotutforskaren (och realtidsidentifieringar)](threat-explorer.md)|
 |**Säkerhets rapporter för e-post**, till exempel rapporten Top avsändare och mottagare, rapporten Spoof meddelanden och rapporten skräp identifiering.|[Visa säkerhets rapporter för e-post i säkerhets & efterlevnad](view-email-security-reports.md)|
 |**E-postflödes rapporter**, till exempel vidarebefordran, rapporten flödes schema och rapport om avsändare och mottagare.|[Visa rapporter om e-postflöden i säkerhets & Compliance Center](view-mail-flow-reports.md)|
-|**URL-spårning för säkra ATP-länkar** (endast PowerShell). Utdata från den här cmdleten visar resultaten av aktiviteter under de senaste sju dagarna.|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
+|**URL-spårning för säkra länkar** (endast PowerShell). Utdata från denna cmdlet visar resultaten av åtgärder för säkra länkar under de senaste sju dagarna.|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
 |**Resultat för e-posttrafik för EOP och ATP** (endast PowerShell). Utdata från den här cmdleten innehåller information om domäner, datum, händelse typ, riktning, åtgärd och antal meddelanden.|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
 |**E-postdetaljerad rapporter för EOP och ATP-identifiering** (endast PowerShell). Utdata från den här cmdleten innehåller information om skadliga filer och URL-adresser, nät fiske försök, personifiering och andra potentiella hot i e-post och filer.|[Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
 |
@@ -306,7 +306,7 @@ Mer information finns i följande resurser:
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Vad händer om rapporterna inte visar data?
 
-Om du inte ser data i dina ATP-rapporter kontrollerar du att dina principer är korrekt konfigurerade. Din organisation måste ha [principer för säkert](set-up-atp-safe-links-policies.md) skydd via ATP och [principer för säkra bifogade filer](set-up-atp-safe-attachments-policies.md) via ATP, definierade för att ATP-skyddet ska finnas. Se även [antiskräppost-och skydd mot skadlig program vara i Office 365](anti-spam-and-anti-malware-protection.md).
+Om du inte ser data i dina ATP-rapporter kontrollerar du att dina principer är korrekt konfigurerade. Din organisation måste ha principer för [säkra länkar](set-up-atp-safe-links-policies.md) och [principer för säkra bifogade filer](set-up-atp-safe-attachments-policies.md) har DEFINIERAts för att ATP-skydd ska finnas. Se även [antiskräppost-och skydd mot skadlig program vara](anti-spam-and-anti-malware-protection.md).
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

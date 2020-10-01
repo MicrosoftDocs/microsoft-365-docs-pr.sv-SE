@@ -16,17 +16,16 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Vilka är de bästa metoderna för säkerhets inställningar för Exchange Online Protection (EOP) och Avancerat skydd (ATP)? Vad är de senaste rekommendationerna för standard skydd? Vad ska användas om du vill veta mer? Och vilka extrafunktioner får du om du även använder avancerat skydd (ATP)?
-ms.openlocfilehash: 78dc1673d20affdfab9228883dbce3b08e8efbb5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 012bccb265f6b587176eec8f8bed94ce4bf4f211
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202717"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328036"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Rekommenderade inställningar för EOP och Office 365 säkerhet för ATP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 **Exchange Online Protection (EOP)** är den grundläggande säkerheten för Microsoft 365-prenumerationer och skyddar obehöriga e-postmeddelanden från att nå dina anställdas inkorgar. Men med nya, mer sofistikerade attacker är det ofta nödvändigt att förbättra skyddet varje dag. **Office 365 Avancerat skydd (ATP)** ATP-abonnemang 1 eller ATP-abonnemang 2 innehåller fler funktioner som ger administratörer större kontroll över säkerheten, kontrollen och undersökningen.
 
@@ -153,7 +152,7 @@ Office 365 ATP inkluderar principer för säkerhet för bifogade filer och säkr
 
 Om du har lagt till ett Office 365 ATP-abonnemang i din EOP ställer du in följande konfigurationer.
 
-### <a name="office-atp-anti-phishing-policy-settings"></a>Inställningar för Office ATP-Antivirus policy
+### <a name="atp-anti-phishing-policy-settings"></a>Inställningar för policy för Stöldskydd mot nätfiske
 
 EOP-kunder får grundläggande anti-nätfiske enligt beskrivningen ovan, men Office 365 ATP innehåller fler funktioner och kontroll för att förhindra, upptäcka och åtgärda attacker. Information om hur du skapar och konfigurerar de här principerna finns i [Konfigurera principer för ATP-Antivirus i Office 365](configure-atp-anti-phishing-policies.md).
 
@@ -203,27 +202,31 @@ Mer information om den här inställningen finns i [avancerade nät fiske trösk
 |---|---|---|---|
 |**Avancerade nät fiske trösklar** <br/><br/> _PhishThresholdLevel_|**2 – aggressivt** <br/><br/> `2`|**3 – mer aggressivt** <br/><br/> `3`||
 
-### <a name="atp-safe-links-policy-settings"></a>Princip inställningar för Safet ATP-länkar
+### <a name="safe-links-settings"></a>Inställningar för säkra länkar
 
-Information om hur du konfigurerar dessa inställningar finns i [Konfigurera Office 365-principer för säkra Länkar för ATP](set-up-atp-safe-links-policies.md).
+Säkra länkar i Office 365 ATP inkluderar globala inställningar som gäller för alla användare som är inkluderade i principer för aktiva säkra länkar och inställningar som är specifika för varje princip för säker länk. Mer information finns i [säkra länkar i Office 365 ATP](atp-safe-links.md).
 
-#### <a name="safe-links-policy-settings-in-the-default-policy-for-all-users"></a>Princip inställningar för säkra länkar i standard principen för alla användare
+#### <a name="global-settings-for-safe-links"></a>Globala inställningar för säkra länkar
 
-**Obs!** i PowerShell använder du cmdleten [set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) för de här inställningarna.
+Om du vill konfigurera de här inställningarna läser du [Konfigurera globala inställningar för säkra länkar i Office 365 ATP](configure-global-settings-for-safe-links.md).
+
+I PowerShell använder du cmdleten [set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) för dessa inställningar.
 
 ****
 
 |Säkerhetsfunktionens namn|Standard|Tillåts|Kommentar|
 |---|---|---|---|
-|**Använda säkra länkar i: Office 365-program** <br/><br/> _EnableSafeLinksForO365Clients_|På <br/><br/> `$true`|På <br/><br/> `$true`|Använd säkerhets Länkar för ATP i Office 365 Desktop-och Mobile-klienter (iOS och Android).|
-|**Använda säkra länkar i: Office Web Access-assistenter** <br/><br/> _EnableSafeLinksForWebAccessCompanion_|På <br/><br/> `$true`|På <br/><br/> `$true`|Använda säkra säkerhets Länkar för ATP i Office Web Apps. Observera att den här inställningen inte kan konfigureras.|
-|**Spåra inte när användare klickar på säkra länkar** <br/><br/> _TrackClicks_|Av <br/><br/> `$true`|Av <br/><br/> `$true`||
-|**Tillåt inte att användare klickar genom säkra länkar till ursprunglig URL** <br/><br/> _AllowClickThrough_|På <br/><br/> `$false`|På <br/><br/> `$false`||
+|**Använda säkra länkar i: Office 365-program** <br/><br/> _EnableSafeLinksForO365Clients_|På <br/><br/> `$true`|På <br/><br/> `$true`|Använda säkraste säkerhets länkar i Office 365 Desktop-och Mobile-appar (iOS och Android). Mer information finns i [Inställningar för säkra Länkar för Office 365-appar](atp-safe-links.md#safe-links-settings-for-office-365-apps).|
+|**Spåra inte när användare klickar på säkra länkar** <br/><br/> _TrackClicks_|Av <br/><br/> `$true`|Av <br/><br/> `$true`|Den här inställningen rör spårning av användare i Office 365-appar som stöds.|
+|**Tillåt inte att användare klickar genom säkra länkar till ursprunglig URL** <br/><br/> _AllowClickThrough_|På <br/><br/> `$false`|På <br/><br/> `$false`|Den här inställningen är relaterad till att klicka igenom i Office 365-appar som stöds.|
+|Använda säkra länkar i: Office Web Access-assistenter <br/><br/> _EnableSafeLinksForWebAccessCompanion_|På <br/><br/> `$true`|På <br/><br/> `$true`|Använda säkra länkar i Office Web Apps. Observera att den här inställningen inte kan konfigureras.|
 |
 
-#### <a name="safe-links-policy-settings-in-custom-policies-for-specific-users"></a>Princip inställningar för säkra länkar i anpassade principer för specifika användare
+#### <a name="safe-links-policy-settings"></a>Princip inställningar för säkra länkar
 
-**Obs!** i PowerShell använder du cmdleten [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) och [set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) för dessa inställningar.
+Information om hur du konfigurerar dessa inställningar finns i [Konfigurera principer för säkra länkar i Office 365 ATP](set-up-atp-safe-links-policies.md).
+
+I PowerShell använder du cmdleten [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) och [set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) för dessa inställningar.
 
 ****
 
@@ -238,13 +241,15 @@ Information om hur du konfigurerar dessa inställningar finns i [Konfigurera Off
 |**Tillåt inte att användare klickar genom säkra länkar till ursprunglig URL** <br/><br/> _DoNotAllowClickThrough_|På <br/><br/> `$true`|På <br/><br/> `$true`||
 |
 
-### <a name="atp-safe-attachments-policy-settings"></a>Principer för säkerhets inställningar för ATP-filer
+### <a name="safe-attachments-settings"></a>Inställningar för säkra bifogade filer
 
-Information om hur du konfigurerar dessa inställningar finns i [Konfigurera Office 365-principer för säkra bifogade filer](set-up-atp-safe-attachments-policies.md).
+Säkra bifogade filer i Office 365 ATP inkluderar globala inställningar som gäller för alla användare som ingår i Active Safeing Attachment-principer och inställningar som är specifika för varje princip för säker länk. Mer information finns i avsnitten [om säkra bifogade filer i Office 365 ATP](atp-safe-attachments.md).
 
-#### <a name="safe-attachments-policy-settings-in-the-default-policy-for-all-users"></a>Princip inställningar för säkra bifogade filer i standard principen för alla användare
+#### <a name="global-settings-for-safe-attachments"></a>Globala inställningar för säkra bifogade filer
 
-**Obs!** i PowerShell använder du cmdleten [set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) för de här inställningarna.
+Information om hur du konfigurerar de här inställningarna finns i [Aktivera ATP för SharePoint, OneDrive och Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md) och [Safe Documents in Microsoft 365 E5](safe-docs.md).
+
+I PowerShell använder du cmdleten [set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) för dessa inställningar.
 
 ****
 
@@ -252,12 +257,14 @@ Information om hur du konfigurerar dessa inställningar finns i [Konfigurera Off
 |---|---|---|---|
 |**Aktivera ATP för SharePoint, OneDrive och Microsoft Teams** <br/><br/> _EnableATPForSPOTeamsODB_|På <br/><br/> `$true`|På <br/><br/> `$true`||
 |**Aktivera säkra dokument för Office-klienter**<bt/><br/> _EnableSafeDocs_|På <br/><br/> `$true`|På <br/><br/> `$true`||Den här inställningen är bara tillgänglig med Microsoft 365 E5-eller Microsoft 365 E5-säkerhets licenser. Mer information finns i [fel säkert dokument i Office 365 Avancerat skydd](safe-docs.md).|
-|**Tillåt att personer klickar via skyddad vy även om säkra dokument har identifierat filen som skadlig**<bt/><br/> _AllowSafeDocsOpen_|Av <br/><br/> `$false`|Av <br/><br/> `$false`||
+|**Tillåt att personer klickar via skyddad vy även om säkra dokument har identifierat filen som skadlig**<bt/><br/> _AllowSafeDocsOpen_|Av <br/><br/> `$false`|Av <br/><br/> `$false`|Den här inställningen är relaterad till säkra dokument.|
 |
 
-#### <a name="safe-attachments-policy-settings-in-custom-policies-for-specific-users"></a>Princip inställningar för säkra bifogade filer i anpassade principer för specifika användare
+#### <a name="safe-attachments-policy-settings"></a>Princip inställningar för säkra bifogade filer
 
-**Obs!** i PowerShell använder du cmdleten [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) och [set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) för dessa inställningar.
+Information om hur du konfigurerar dessa inställningar finns i [Konfigurera principer för säkra bifogade filer i Office 365 ATP](set-up-atp-safe-attachments-policies.md).
+
+I PowerShell använder du cmdleten [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) och [set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) för dessa inställningar.
 
 ****
 

@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur du skapar, ändrar och tar bort de avancerade AntiPhishing-principer som är tillgängliga i organisationer med Office 365-tjänsten för avancerat skydd (Office 365 ATP).
-ms.openlocfilehash: a4b5dc5beac23e267f6b0e5070d91301b589ad4c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2986102b549b7302a7a4ac533f80846d832aeb41
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203389"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328077"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Konfigurera principer för ATP-skydd mot nätfiske
 
@@ -75,7 +75,7 @@ För att öka effektiviteten för skydd mot nätfiske kan du skapa anpassade pri
     - **Säkerhetsläsare** i [Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
     - **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- För våra rekommenderade inställningar för principer för ATP-nätfiske, se [Inställningar för Office ATP-Antivirus policy](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).
+- För våra rekommenderade inställningar för principer för ATP-nätfiske läser du [princip inställningar för ATP-nätfiske](recommended-settings-for-eop-and-office365-atp.md#atp-anti-phishing-policy-settings).
 
 - Tillåt upp till 30 minuter för att en ny eller uppdaterad princip ska tillämpas.
 

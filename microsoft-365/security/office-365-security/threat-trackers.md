@@ -16,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om hot Spårare, inklusive nya viktiga Spårare, för att hjälpa din organisation att hålla dig informerad om säkerhets problem.
-ms.openlocfilehash: e4e157e64da92cf3c9178af1223fbc6c85e3fd95
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c631a6d9ad56c2bd155a9aa24b3758eb30d10cf7
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201801"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327159"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Hot-Spårare-nya och intressanta
 
@@ -88,22 +88,20 @@ Och kom ihåg att du alltid kan skicka feedback till oss via den här eller andr
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>Spårare och Office 365 Avancerat skydd
 
-Med vårt Inaugural-språksäkra hot, har vi markerat avancerade hot mot skadlig program vara upptäckta av [Office 365 ATP-Safe Attachments](atp-safe-attachments.md). Om du är Office 365 Enterprise, E5-kund och du inte använder [office 365 Avancerat skydd](office-365-atp.md) (ATP) bör du vara-det ingår i ditt abonnemang. ATP ger ett värde även om du har andra säkerhets verktyg filtrerar e-postflöden till dina Office 365-tjänster. Anti-spam och [Office 365-Safe Links](atp-safe-links.md) -funktioner fungerar bäst när din primära e-postlösning är via Office 365. 
+Med vårt Inaugural, uppmärksammar vi att avancerade hot mot skadlig program vara identifieras av [säkra bifogade filer](atp-safe-attachments.md). Om du är Office 365 Enterprise, E5-kund och du inte använder [office 365 Avancerat skydd](office-365-atp.md) (ATP) bör du vara-det ingår i ditt abonnemang. ATP ger ett värde även om du har andra säkerhets verktyg filtrerar e-postflöden till dina Office 365-tjänster. Funktioner för skydd mot skräp post och [säkra länkar](atp-safe-links.md) fungerar bäst när din huvud säkerhets lösning för e-post är via Office 365.
   
 ![ATP i säkerhetsrelaterade &amp; Center](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   
-I dagens hot – riddled-världen är det bara att använda vanliga sökningar av skadlig program vara som innebär att du inte är tillräckligt väl skyddad mot attacker. Dagens mer sofistikerade attackerare använder vanliga verktyg för att skapa nya, Obfuscated eller fördröjda attacker som inte känns igen av traditionella antispionprogram. Det säkraste alternativet för e-postbilagor tar emot bifogade filer och spränger dem i en virtuell miljö för att avgöra om de är säkra. Denna sprängning öppnar varje fil i en virtuell dator miljö och visar vad som händer när filen har öppnats. Om det är en PDF-fil eller ett Office-dokument kan skadlig kod vara dold i en fil och aktive ras bara när den har öppnats på sin dator. Genom att spränga och analysera filen i e-postflödet hittar Office 365 ATP-kapaciteterna baserat på beteenden, fil rykte och ett antal heuristik-regler.
+I dagens hot – riddled-världen är det bara att använda vanliga sökningar av skadlig program vara som innebär att du inte är tillräckligt väl skyddad mot attacker. Dagens mer sofistikerade attackerare använder vanliga verktyg för att skapa nya, Obfuscated eller fördröjda attacker som inte känns igen av traditionella antispionprogram. Funktionen för de säkra bifogade filerna tar emot e-postbilagor och spränger dem i en virtuell miljö för att avgöra om de är säkra. Denna sprängning öppnar varje fil i en virtuell dator miljö och visar vad som händer när filen har öppnats. Om det är en PDF-fil eller ett Office-dokument kan skadlig kod vara dold i en fil och aktive ras bara när den har öppnats på sin dator. Genom att spränga och analysera filen i e-postflödet hittar Office 365 ATP-kapaciteterna baserat på beteenden, fil rykte och ett antal heuristik-regler.
   
-Det nya filtret för ett nytt hot-hotet markerar objekt som nyligen identifierats via säkra bilagor för ATP. Dessa identifieringar representerar objekt som är nya skadliga filer, som inte tidigare upptäckts av Microsoft 365 i ditt e-postflöde eller andra kunders e-postmeddelanden. Lär dig hur du åtgärdar objekten i den aktuella hotets Spårare, se vem som var riktade till dem och granska detaljerna för Sprängaren på fliken Avancerad analys (som du hittar genom att klicka på e-postmeddelandets ämne i Utforskaren). Obs! du hittar bara den här fliken i e-postmeddelanden som upptäckts med den aktuella bilage funktionen för ATP – den här observerade spårningen inkluderar filtret, men du kan även använda filtret för andra sökningar i Utforskaren.
+Det nya filtret för skyddad hotet markerar objekt som nyligen identifierats via säkra bifogade filer. Dessa identifieringar representerar objekt som är nya skadliga filer, som inte tidigare upptäckts av Microsoft 365 i ditt e-postflöde eller andra kunders e-postmeddelanden. Lär dig hur du åtgärdar objekten i den aktuella hotets Spårare, se vem som var riktade till dem och granska detaljerna för Sprängaren på fliken Avancerad analys (som du hittar genom att klicka på e-postmeddelandets ämne i Utforskaren). Obs! du hittar bara den här fliken i e-postmeddelanden som upptäckts av funktionen för säker bifogade filer – den här uppmärksammade spårningen inkluderar filtret, men du kan även använda filtret för andra sökningar i Utforskaren.
   
 ## <a name="next-steps"></a>Nästa steg
 
 - Om din organisation inte redan har de här Office 365 Threat-undersöknings-och svars funktionerna kan [du läsa hur du får svar på office 365 om hot-undersökningar och-reaktioner?](office-365-ti.md).
-    
-- Kontrol lera att din säkerhets grupp har rätt roller och behörigheter tilldelade. Du måste vara global administratör eller ha rollen säkerhets administratör eller sökning och rensning som är tilldelad i &amp; Säkerhetscenter. Se [behörigheter i säkerhetsrelaterade &amp; Center](permissions-in-the-security-and-compliance-center.md).
-    
-- Titta efter de nya spårningarna som visas i din Microsoft 365-miljö. När det är tillgängligt hittar du dina Spårare [här](https://protection.office.com/). Gå till hot **Management** \> **Threat-Spårare**.
-    
-- Om du inte redan har gjort det kan du läsa mer om och konfigurera [office 365 Avancerat skydd](office-365-atp.md) för din organisation, inklusive [Office 365 ATP-säkra länkar](atp-safe-links.md) och [Office 365 ATP-säkra bifogade filer](atp-safe-attachments.md).
-  
 
+- Kontrol lera att din säkerhets grupp har rätt roller och behörigheter tilldelade. Du måste vara global administratör eller ha rollen säkerhets administratör eller sökning och rensning som är tilldelad i &amp; Säkerhetscenter. Se [behörigheter i säkerhetsrelaterade &amp; Center](permissions-in-the-security-and-compliance-center.md).
+
+- Titta efter de nya spårningarna som visas i din Microsoft 365-miljö. När det är tillgängligt hittar du dina Spårare [här](https://protection.office.com/). Gå till hot **Management** \> **Threat-Spårare**.
+
+- Om du inte redan har gjort det kan du läsa mer om och konfigurera [Office 365 Avancerat skydd](office-365-atp.md) för din organisation, inklusive [säkra länkar](atp-safe-links.md) och [säkra bifogade filer](atp-safe-attachments.md).

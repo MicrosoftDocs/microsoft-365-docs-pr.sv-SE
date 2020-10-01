@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du använder Utforskaren och real tids identifiering i &amp; Center för säkerhets kontroll för att undersöka och reagera på hot effektivt och effektivt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f6df9ce21f29cdeaf4943ba930668420a24344ca
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 32ff9f2c8d009b4c9b05c12ba4e785e59cb182e7
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201871"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328089"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer och real tids identifiering
 
@@ -86,18 +86,18 @@ Du bör också läsa mer om produkten. Det totala antalet Sök resultat inom rut
 ### <a name="top-targeted-users"></a>Vanligaste riktade användare
 
 Idag står det för en lista över de vanligaste riktade användarna i vyn mot skadlig kod för e-postmeddelanden (i den övre delen av familjen med skadlig kod). Vi kommer att utöka den här vyn i Phish och alla e-postvyer, där du kan se de fem vanligaste användarna tillsammans med antalet försök för varje användare för motsvarande vy (till exempel för Phish-vy kan du se antalet Phish-försök).
-Du kan också exportera listan med riktade användare till en gräns på 3000 tillsammans med antalet försök för offline-analys för varje e-postvy. Det är bara att välja Nej. av försök (till exempel 13 försök nedan) öppnar en filtrerad vy i Threat Explorer så att du kan titta på mer information i alla e-postmeddelanden och hot för den användaren. 
+Du kan också exportera listan med riktade användare till en gräns på 3000 tillsammans med antalet försök för offline-analys för varje e-postvy. Det är bara att välja Nej. av försök (till exempel 13 försök nedan) öppnar en filtrerad vy i Threat Explorer så att du kan titta på mer information i alla e-postmeddelanden och hot för den användaren.
 
 ![Vanligaste riktade användare](../../media/Top_Targeted_Users.png)
 
 
 ### <a name="exchange-transport-rules"></a>Exchange Transport-regler
 Som en del av data berikning bör du även kunna se alla olika transport regler som används för ett meddelande. Den här informationen visas i vyn e-post-rutnät (om du vill visa det väljer du kolumn alternativ i rutnätet och Lägg till Exchange-transportläge från kolumn alternativen i rutnätet) samt information som visas i e-postmeddelandet.
-Du kan se både GUID och namnet på de transport regler som har lagts till i meddelandet. Dessutom kan du söka efter meddelanden med hjälp av namnet på transport regeln. Det här är en "innehåller"-sökning vilket innebär att du kan söka i vissa sökningar. 
+Du kan se både GUID och namnet på de transport regler som har lagts till i meddelandet. Dessutom kan du söka efter meddelanden med hjälp av namnet på transport regeln. Det här är en "innehåller"-sökning vilket innebär att du kan söka i vissa sökningar.
 
-#### <a name="important-note"></a>Viktigt Obs! 
-Exchange Sök-och namn tillgänglighet beror på vilken roll som har tilldelats dig. Du måste ha någon av följande roller/behörigheter för att kunna visa Exchange namn och sökning.  Om du inte har någon av följande roller kopplade till dig kan du inte se namnen på transport reglerna och söka efter meddelanden med hjälp av Exchange-namnen. Men du kan se Exchange etikett och GUID-information i e-postinformationen. Det går inte att visa poster i e-postrutnät, e-flyouts, filter och export påverkas inte. 
- 
+#### <a name="important-note"></a>Viktigt Obs!
+Exchange Sök-och namn tillgänglighet beror på vilken roll som har tilldelats dig. Du måste ha någon av följande roller/behörigheter för att kunna visa Exchange namn och sökning.  Om du inte har någon av följande roller kopplade till dig kan du inte se namnen på transport reglerna och söka efter meddelanden med hjälp av Exchange-namnen. Men du kan se Exchange etikett och GUID-information i e-postinformationen. Det går inte att visa poster i e-postrutnät, e-flyouts, filter och export påverkas inte.
+
 - Endast EXO – förhindra data förlust: alla
 - Endast EXO-O365SupportViewConfig: alla
 - AAD eller EXO-säkerhets administratör: alla
@@ -105,13 +105,15 @@ Exchange Sök-och namn tillgänglighet beror på vilken roll som har tilldelats 
 - Endast EXO – transport regler: alla
 - Endast EXO-endast visning-konfiguration: alla
 
-I e-postrutnätet, den utfällbara informationen och exporterad CSV-fil visas ETR med ett namn/GUID som visas nedan. 
+I e-postrutnätet, den utfällbara informationen och exporterad CSV-fil visas ETR med ett namn/GUID som visas nedan.
 
 ![Exchange Transport-regler](../../media/ETR_Details.png)
 
-### <a name="inbound-connectors"></a>Inkommande kopplingar 
+### <a name="inbound-connectors"></a>Inkommande kopplingar
 
-Kopplingar är en samling instruktioner som anpassar hur din e-post flödar till och från din Microsoft 365-eller Office 365-organisation, med möjligheten att tillämpa säkerhets begränsningar eller kontroller. I Threat Explorer kan du nu Visa kopplingarna som är relaterade till ett e-postmeddelande och söka efter e-postmeddelanden med hjälp av kopplings namnen. Sök efter anslutningar är "innehåller", vilket innebär att ofullständiga nyckelords sökningar också fungerar. I vyn huvud rutnät, den utfällbara informationen och den exporterade CSV-filen visas kopplingarna i namn/GUID-formatet enligt nedan: 
+Kopplingar är en samling instruktioner som anpassar hur din e-post flödar till och från din Microsoft 365-eller Office 365-organisation, med möjligheten att tillämpa säkerhets begränsningar eller kontroller. I Threat Explorer kan du nu Visa kopplingarna som är relaterade till ett e-postmeddelande och söka efter e-postmeddelanden med hjälp av kopplings namnen.
+Sök efter anslutningar är "innehåller", vilket innebär att ofullständiga nyckelords sökningar också fungerar.
+I vyn huvud rutnät, den utfällbara informationen och den exporterade CSV-filen visas kopplingarna i namn/GUID-formatet enligt nedan:
 
 ![Anslutnings information](../../media/Connector_Details.png)
 
@@ -185,7 +187,7 @@ Du kan komma till samma plats i rapporten för rapporter i real tid så här:
 > [!TIP]
 > Nätverks meddelande-ID mappar Klicka på tillbaka till specifika e-postmeddelanden när du söker via Utforskaren eller tillhör ande tredje parts verktyg via nätverks meddelande-ID. Om du söker igenom nätverks meddelande-ID: t får administratörer det specifika e-postmeddelandet som är associerat med ett Klicka Vid exporten blir samarbeten av ID för nätverks meddelande-ID för snabb och mer effektiv analys.
 
-![tp_ExportClickResultAndNetworkID.png](../../media/tp_ExportClickResultAndNetworkID.png)
+![Klickar på fliken i Utforskaren](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Se malware identifierat i e-post efter teknik
 
@@ -211,7 +213,7 @@ Rapporten uppdateras för att visa resultatet skadlig program vara som identifie
 
 ## <a name="view-data-about-phishing-urls-and-click-verdict"></a>Visa data om nät fiske adresser och klicka på Verdict
 
-Anta att du vill se nät fiske försök via URL: er via e-post, inklusive en lista med URL-adresser som tilläts, blockerades och åsidosatts. Om du vill konfigurera URL-adresser som har klickats måste du ha ett [ATP Safe Links](atp-safe-links.md) . Kontrol lera att du har ställt in [principer för Safet ATP-länkar](set-up-atp-safe-links-policies.md) för att kunna Klicka på skydd och loggning av Klicka Verdicts via säkra Länkar för ATP.
+Anta att du vill se nät fiske försök via URL: er via e-post, inklusive en lista med URL-adresser som tilläts, blockerades och åsidosatts. Om du vill konfigurera URL-adresser som har klickats kräver [säkra länkar](atp-safe-links.md) . Kontrol lera att du har angett [principer för säkra länkar](set-up-atp-safe-links-policies.md) för att klicka på skydd och loggning av Klicka på Verdicts efter Safe Links.
 
 Om du vill granska Phish URL-adresser i meddelanden och klickar på URL: er i Phish meddelanden använder du [e-post> Phish](threat-explorer-views.md#email--phish) vyn av Utforskaren (eller real tids identifieringar).
 
@@ -242,8 +244,7 @@ Om du vill granska Phish URL-adresser i meddelanden och klickar på URL: er i Ph
    > [!NOTE]
    > I dialog rutan URL-utfällbar text tas filtreringen av e-postmeddelanden bort så att du får fullständig vy över URL-vyns exponering i miljön. Med den här funktionen kan du filtrera ned e-postmeddelanden i Utforskaren till dem du är orolig för, hitta specifika URL-adresser som är potentiella hot och sedan utöka din förståelse av URL-exponeringen i din miljö (via dialog rutan URL-information) utan att behöva lägga till URL-filter i själva Utforskarvyn.
 
-
-**Tolkning av olika klick verdicts**
+### <a name="interpretation-of-different-click-verdicts"></a>Tolkning av olika klick verdicts
 
 I e-postmeddelandet eller URL-flyouts, de viktigaste tryckningarna samt i vår filter upplevelse ser du olika klick värden som en del av din jakt upplevelse. I det här avsnittet kan du välja Verdicts och deras tolkning:
 
@@ -254,7 +255,7 @@ I e-postmeddelandet eller URL-flyouts, de viktigaste tryckningarna samt i vår f
 - **Blockerad åsidosatt**: användaren hindrades från att gå till URL-adressen. användaren overrode dock att gå till URL-adressen.
 - **Väntande Verdict förbigåde**: användaren uppvisade sig med sidan detonation; användaren overrode till sidan för att gå till URL-adressen.
 - **Fel**: användaren uppvisade fel sidan. Det kan också betyda att det fanns ett fel när du hämtade Verdict.
-- **Fel**: ett okänt undantag uppstod när du hämtade Verdict. Användaren kanske har klickat via webb adressen. 
+- **Fel**: ett okänt undantag uppstod när du hämtade Verdict. Användaren kanske har klickat via webb adressen.
 
 ## <a name="review-email-messages-reported-by-users"></a>Granska e-postmeddelanden som rapporter ATS av användare
 
@@ -288,7 +289,7 @@ För mer information, se [exempel: en säkerhets administratör utlöser en unde
 Utöver de scenarier som beskrivs i den här artikeln finns det många fler rapporterings alternativ som är tillgängliga med Explorer (eller real tids identifieringar).
 
 - [Hitta och undersöka skadlig e-post som har levererats](investigate-malicious-email-that-was-delivered.md)
-- [Visa skadliga filer som identifieras i SharePoint Online, OneDrive och Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
+- [Statusrapport för hotskydd](view-email-security-reports.md#threat-protection-status-report)
 - [Få en översikt över vyerna i Threat Explorer (och identifieringar i real tid)](threat-explorer-views.md)
 - [Automatisk undersökning och svar i skydd mot Microsoft Threat](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
 

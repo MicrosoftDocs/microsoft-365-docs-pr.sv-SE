@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Integrera din organisations SIEM-server med Office 365 Avancerat skydd och relaterade hot händelser i Office 365 Activity Management API.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cfb76485fec8eca2f2b62da59fa2d18a56177bba
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 544093960570fe0e68ac47dc7bf9965fba2d30a1
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203661"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327171"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>SIEM integrering med avancerat skydd
 
@@ -46,7 +46,6 @@ Nyligen genomförda händelser från automatiserade undersökningar och svars fu
 
 SIEM-servern eller liknande system avsöker **granskningen. allmänna** arbets belastning för att få åtkomst till identifierings händelser. Mer information finns i [komma igång med Office 365 Management API: er](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). 
 
-
 ## <a name="enum-auditlogrecordtype---type-edmint32"></a>Enum: AuditLogRecordType-Type: EDM. Int32
 
 ### <a name="auditlogrecordtype"></a>AuditLogRecordType
@@ -56,7 +55,7 @@ I följande tabell sammanfattas de värden i **AuditLogRecordType** som är rele
 |Value|Medlems namn|Beskrivning|
 |---|---|---|
 |28|ThreatIntelligence|Phishing-och malware-händelser från Exchange Online Protection och Office 365 ATP.|
-|41|ThreatIntelligenceUrl|ATP-säkra länkar tidsstämpel och blockera händelser från Office 365 ATP.|
+|41|ThreatIntelligenceUrl|Säkra länkar tids-och Blocks händelser från Office 365 ATP.|
 |47|ThreatIntelligenceAtpContent|Phishing-och malware-händelser för filer i SharePoint Online, OneDrive för företag och Microsoft Teams från Office 365 ATP.|
 |64|Luftprövning|Automatiserade undersökningar och svars händelser, till exempel information om undersökningar och relevanta artefakter, från Office 365 ATP-abonnemang 2.|
 |

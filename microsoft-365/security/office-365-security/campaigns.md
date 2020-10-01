@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om kampanjmallar i Office 365 Avancerat skydd.
-ms.openlocfilehash: 881dcde1157877eb015d9700bcbcd08fd3336192
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: df3b3c7a0e8d8f614e5f743b445af07916f1dfd5
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203485"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326597"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Analysvyer i Office 365 ATP
 
@@ -137,7 +137,7 @@ De tillgängliga kampanj egenskaperna beskrivs i följande lista:
   - **Taggen**
   - **Systemåsidosättningar**
 
-- Tidigareläggas
+- Avancerat
 
   - **Internet meddelande-ID**: tillgängligt i fältet **meddelande-ID** i meddelande huvudet. Ett exempel värde är `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (Observera vinkelparenteser).
   
@@ -264,9 +264,9 @@ Om en användare klickar på nytto lastens URL i nät fiske meddelandet visas å
 
 - **Möjlighet**
 
-- **BlockPage**: mottagaren klickade på nytto lastens URL, men deras åtkomst till den illasinnade webbplatsen blockerades av principerna för [Safe Links för ATP](atp-safe-links.md) i din organisation.
+- **BlockPage**: mottagaren klickade på nytto lastens URL, men deras åtkomst till den illasinnade webbplatsen blockerades av en princip för [säkra länkar](atp-safe-links.md) i organisationen.
 
-- **BlockPageOverride**: mottagaren klickade på nytto lastens URL-adress i meddelandet, men de har kunnat åsidosätta det. Undersök dina [principer för säkra länkar](set-up-atp-safe-links-policies.md) för att se varför användare tillåts att åsidosätta Safe Links-Verdict och fortsätta till den illasinnade webbplatsen.
+- **BlockPageOverride**: mottagaren klickade på nytto lastens URL i meddelandet, men säkra länkar försökte stoppa dem, men de har kunnat åsidosätta blocket. Undersök dina [principer för säkra länkar](set-up-atp-safe-links-policies.md) för att se varför användare tillåts att åsidosätta Safe Links-Verdict och fortsätta till den illasinnade webbplatsen.
 
 - **PendingDetonationPage**: säkra bilagor i Office 365 ATP är att öppna och undersöka nytto lastens URL i en virtuell dator miljö.
 

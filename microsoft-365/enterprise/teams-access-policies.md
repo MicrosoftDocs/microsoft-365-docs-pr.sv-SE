@@ -8,7 +8,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.author: heidip
-ms.date: 09/18/2020
+ms.date: 09/30/2020
 ms.reviewer: anmorgan
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 570ef098a3989bf42d641b78e325414350b8e5a5
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: b9a9044a063c01724710679682e1edbe458dec0f
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132118"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327143"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Policy rekommendationer för att skydda Teams, grupper och filer
 
@@ -66,7 +66,6 @@ I den här tabellen visas de principer som måste återanvändas och länkar til
 |        |[Blockera klienter som inte har stöd för modern autentisering](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inkludera team och beroende tjänster i tilldelningen av Cloud-appar.|
 |        |[Användare med hög risk måste byta lösenord](identity-access-policies.md#high-risk-users-must-change-password)|Tvingar team användare att ändra sitt lösen ord när de loggar in om en högrisk aktivitet identifieras för sitt konto. Se till att team och beroende tjänster ingår i listan med program.|
 |        |[Tillämpa program data skydds policy](identity-access-policies.md#apply-app-data-protection-policies)|Se till att team och beroende tjänster ingår i listan med program. Uppdatera policyn för var och en av plattformarna (iOS, Android, Windows).|
-|        |[Kräv godkända appar och program skydd](identity-access-policies.md#require-approved-apps-and-app-protection)|Inkludera team och tjänster i den här policyn.|
 |        |[Definiera principer för efterlevnadsprinciper](identity-access-policies.md#define-device-compliance-policies)|Inkludera team och tjänster i den här policyn.|
 |        |[Kräv kompatibla PC-datorer](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Inkludera team och tjänster i den här policyn.|
 |**Känslig**|[Kräv MFA när en inloggnings risk är *låg*, *medium* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams har gäst åtkomst och regler för extern åtkomst att överväga och mer information om dessa längre fram i den här artikeln. Inkludera team och tjänster i den här policyn.|
