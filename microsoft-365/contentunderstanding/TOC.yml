@@ -28,6 +28,10 @@
       href: model-usage-analytics.md
     - name: Använda term lagrings taxonomi när du skapar en Extractor
       href: leverage-term-store-taxonomy.md
+- name: Man
+  items:
+    - name: Komma igång med antagandet
+      href: adoption-getstarted.md
 - name: Konfiguration och administration
   items:
     - name: Ställa in innehållstolkning
