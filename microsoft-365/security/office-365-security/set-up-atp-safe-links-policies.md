@@ -1,9 +1,9 @@
 ---
-title: Konfigurera principer för säkra Office 365 ATP-länkar
+title: Konfigurera principer för säkra länkar i Office 365 ATP
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: article
@@ -16,157 +16,460 @@ search.appverid:
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
-description: Konfigurera principer för säkra Länkar för att skydda din organisation från skadliga länkar i Word-, Excel-, PowerPoint-och Visio-filer samt i e-postmeddelanden.
-ms.openlocfilehash: 76d0aba026b96251a64163ef7d7f518fe0b1e1b1
-ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
+description: Administratörer kan läsa mer om hur du visar, skapar, ändrar och tar bort principer för säkra länkar och globala inställningar för säkra länkar i Office 365 Avancerat skydd (ATP).
+ms.openlocfilehash: 58088955a6909238c1fe5202688e0b8d1ab8e6c6
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48279579"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327231"
 ---
-# <a name="set-up-office-365-atp-safe-links-policies"></a><span data-ttu-id="273ec-103">Konfigurera principer för säkra Office 365 ATP-länkar</span><span class="sxs-lookup"><span data-stu-id="273ec-103">Set up Office 365 ATP Safe Links policies</span></span>
+# <a name="set-up-safe-links-policies-in-office-365-atp"></a><span data-ttu-id="0f87d-103">Konfigurera principer för säkra länkar i Office 365 ATP</span><span class="sxs-lookup"><span data-stu-id="0f87d-103">Set up Safe Links policies in Office 365 ATP</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> <span data-ttu-id="273ec-104">Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](office-365-atp.md).</span><span class="sxs-lookup"><span data-stu-id="273ec-104">This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md).</span></span> <span data-ttu-id="273ec-105">Om du är hem användare letar efter information om säkra länkar i Outlook kan du läsa mer i [avancerad Outlook.com säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).</span><span class="sxs-lookup"><span data-stu-id="273ec-105">If you are a home user looking for information about Safe Links in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).</span></span>
+> <span data-ttu-id="0f87d-104">Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](office-365-atp.md).</span><span class="sxs-lookup"><span data-stu-id="0f87d-104">This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md).</span></span> <span data-ttu-id="0f87d-105">Om du är hem användare letar efter information om Safelinks i Outlook kan du läsa mer i [avancerad Outlook.com-säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).</span><span class="sxs-lookup"><span data-stu-id="0f87d-105">If you are a home user looking for information about Safelinks in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).</span></span>
 
-<span data-ttu-id="273ec-106">[ATP-säkra länkar](atp-safe-links.md) är en funktion i [Office 365 Avancerat skydd](office-365-atp.md) (ATP) som kan skydda din organisation från skadliga länkar som används i nätfiske och andra attacker.</span><span class="sxs-lookup"><span data-stu-id="273ec-106">[ATP Safe Links](atp-safe-links.md) is a feature in [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) that can help protect your organization from malicious links used in phishing and other attacks.</span></span> <span data-ttu-id="273ec-107">Om du har nödvändig [behörighet för säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md)kan du konfigurera principer för säkraste säkerhets Länkar för att säkerställa att när personer klickar på webb adresser (URL: er) skyddas din organisation.</span><span class="sxs-lookup"><span data-stu-id="273ec-107">If you have the necessary [permissions for the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md), you can set up ATP Safe Links policies to help ensure that when people click web addresses (URLs), your organization is protected.</span></span> <span data-ttu-id="273ec-108">Dina principer för säker säkerhet för ATP kan konfigureras för genomsökning av URL-adresser i e-post och URL-adresser i Office-dokument</span><span class="sxs-lookup"><span data-stu-id="273ec-108">Your ATP Safe Links policies can be configured to scan URLs in email and URLs in Office documents.</span></span> <span data-ttu-id="273ec-109">De säkraste säkerhets sökningarna skannar inkommande e-post för kända illasinnade hyperlänkar och för bifogade filer som</span><span class="sxs-lookup"><span data-stu-id="273ec-109">ATP Safe Links scans incoming email for known malicious hyperlinks and for attachments containing malware.</span></span> <span data-ttu-id="273ec-110">Den här funktionen skriver skannade URL-adresser till Microsofts vanliga URL-standardprefix <https://nam01.safelinks.protection.outlook.com> .</span><span class="sxs-lookup"><span data-stu-id="273ec-110">This feature rewrites scanned URLs to Microsoft’s standard URL format prefix <https://nam01.safelinks.protection.outlook.com>.</span></span> <span data-ttu-id="273ec-111">När en länk har skrivits om analyseras den för potentiellt skadligt innehåll.</span><span class="sxs-lookup"><span data-stu-id="273ec-111">Once a link is rewritten, it is analyzed for any potential malicious content.</span></span> <span data-ttu-id="273ec-112">Med Safet ATP-länkar aktiverat, om en användare klickar på en länk i ett e-postmeddelande och URL-adressen har blockerats av organisationens anpassade blockerade URL-lista eller om URL: en är skadlig, öppnas en varnings sida.</span><span class="sxs-lookup"><span data-stu-id="273ec-112">With ATP Safe Links enabled, if a user clicks on a link in an email and the URL has been blocked by your organization's custom blocked URL list or if the URL is determined to be malicious, a warning page will open.</span></span>
+<span data-ttu-id="0f87d-106">Säkra länkar är en funktion i [Office 365 Avancerat skydd (ATP)](office-365-atp.md) som tillhandahåller URL-genomsökning av inkommande e-postmeddelanden i e-postflöde och när du klickar på verifiering av URL-adresser och länkar i e-postmeddelanden och på andra platser.</span><span class="sxs-lookup"><span data-stu-id="0f87d-106">Safe Links is a feature in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) that provides URL scanning of inbound email messages in mail flow, and time of click verification of URLs and links in email messages and in other locations.</span></span> <span data-ttu-id="0f87d-107">Mer information finns i [säkra länkar i Office 365 ATP](atp-safe-links.md).</span><span class="sxs-lookup"><span data-stu-id="0f87d-107">For more information, see [Safe Links in Office 365 ATP](atp-safe-links.md).</span></span>
 
-<span data-ttu-id="273ec-113">När ATP-Safe-länkar har skrivit om en URL-adress och meddelandet vidarebefordras eller besvaras kommer URL-adressen att fortsätta att skrivas över.</span><span class="sxs-lookup"><span data-stu-id="273ec-113">Once ATP Safe Links has rewritten a URL, if the message is forwarded or replied to, the URL will remain rewritten.</span></span> <span data-ttu-id="273ec-114">Ytterligare länkar som läggs till i meddelandet som besvaras eller vidarebefordras skrivs inte över.</span><span class="sxs-lookup"><span data-stu-id="273ec-114">Additional links added to the message being replied to or forwarded will not be rewritten.</span></span>
+<span data-ttu-id="0f87d-108">Det finns inga inbyggda eller standard principer för säkra länkar.</span><span class="sxs-lookup"><span data-stu-id="0f87d-108">There's no built-in or default Safe Links policy.</span></span> <span data-ttu-id="0f87d-109">För att få säker sökning efter URL-adresser måste du skapa en eller flera principer för säkra länkar enligt beskrivningen i den här artikeln.</span><span class="sxs-lookup"><span data-stu-id="0f87d-109">To get Safe Links scanning of URLs, you need to create one or more Safe Links policies as described in this article.</span></span>
 
-<span data-ttu-id="273ec-115">[Nya funktioner läggs hela tiden till för ATP](office-365-atp.md#new-features-in-office-365-atp).</span><span class="sxs-lookup"><span data-stu-id="273ec-115">[New features are continually being added to ATP](office-365-atp.md#new-features-in-office-365-atp).</span></span> <span data-ttu-id="273ec-116">När nya funktioner läggs till kan du behöva justera dina befintliga principer för säkerhet på ATP.</span><span class="sxs-lookup"><span data-stu-id="273ec-116">As new features are added, you may need to make adjustments to your existing ATP Safe Links policies.</span></span>
+<span data-ttu-id="0f87d-110">Du kan konfigurera principer för säkra länkar i säkerhets & efterlevnad eller i PowerShell (Exchange Online PowerShell för kvalificerade Microsoft 365-organisationer med post lådor i Exchange Online, fristående EOP PowerShell för organisationer utan Exchange Online-postlådor, men med Office 365 ATP-tilläggs prenumerationer).</span><span class="sxs-lookup"><span data-stu-id="0f87d-110">You can configure Safe Links policies in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for eligible Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes, but with Office 365 ATP add-on subscriptions).</span></span>
 
-## <a name="what-to-do"></a><span data-ttu-id="273ec-117">Vad kan jag göra?</span><span class="sxs-lookup"><span data-stu-id="273ec-117">What to do</span></span>
+<span data-ttu-id="0f87d-111">De grundläggande delarna i en policy för säkra länkar är:</span><span class="sxs-lookup"><span data-stu-id="0f87d-111">The basic elements of a Safe Links policy are:</span></span>
 
-1. <span data-ttu-id="273ec-118">Granska kraven.</span><span class="sxs-lookup"><span data-stu-id="273ec-118">Review the prerequisites.</span></span>
+- <span data-ttu-id="0f87d-112">**Principen för säkra länkar**: Aktivera skyddad länk skydd, aktivera URL-genomsökning i real tid, ange om du vill vänta på att genomsökning i real tid ska slutföras innan du levererar meddelandet, aktiverar skanning för interna meddelanden, anger om du vill spåra användare klickar på URL-adresser och ange om du vill tillåta användare att klicka på återträff till den ursprungliga URL-adressen.</span><span class="sxs-lookup"><span data-stu-id="0f87d-112">**The safe links policy**: Turn on Safe Links protection, turn on real-time URL scanning, specify whether to wait for real-time scanning to complete before delivering the message, turn on scanning for internal messages, specify whether to track user clicks on URLs, and specify whether to allow users to click trough to the original URL.</span></span>
+- <span data-ttu-id="0f87d-113">**Regeln för säkra länkar**: anger de prioritets-och mottagar filter (som principen gäller för).</span><span class="sxs-lookup"><span data-stu-id="0f87d-113">**The safe links rule**: Specifies the priority and recipient filters (who the policy applies to).</span></span>
 
-2. <span data-ttu-id="273ec-119">Granska och redigera den princip för standard säkra säkerhets säkerhet för ATP som gäller för alla.</span><span class="sxs-lookup"><span data-stu-id="273ec-119">Review and edit the default ATP Safe Links policy that applies to everyone.</span></span> <span data-ttu-id="273ec-120">Du kan till exempel [Konfigurera din anpassade lista över blockerade URL-adresser för säkra säkerhets](set-up-a-custom-blocked-urls-list-atp.md)-och ATP-länkar.</span><span class="sxs-lookup"><span data-stu-id="273ec-120">For example, you can [set up your custom blocked URLs list for ATP Safe Links](set-up-a-custom-blocked-urls-list-atp.md).</span></span>
+<span data-ttu-id="0f87d-114">Skillnaden mellan dessa två element är inte uppenbar när du hanterar Safe Links-principer i säkerhets & Compliance Center:</span><span class="sxs-lookup"><span data-stu-id="0f87d-114">The difference between these two elements isn't obvious when you manage Safe Links polices in the Security & Compliance Center:</span></span>
 
-3. <span data-ttu-id="273ec-121">Lägga till eller redigera principer för specifika e-postmottagare, inklusive [inställning av din anpassade webb adress lista "Skriv inte över" för att skapa nya ATP-länkar](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).</span><span class="sxs-lookup"><span data-stu-id="273ec-121">Add or edit policies for specific email recipients, including [setting up your custom "Do not rewrite" URLs list for ATP Safe Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).</span></span>
+- <span data-ttu-id="0f87d-115">När du skapar en policy för säkra länkar skapar du verkligen en regel för ett säkert länkar och den associerade principen för säkra länkar samtidigt med samma namn för båda.</span><span class="sxs-lookup"><span data-stu-id="0f87d-115">When you create a Safe Links policy, you're actually creating a safe links rule and the associated safe links policy at the same time using the same name for both.</span></span>
+- <span data-ttu-id="0f87d-116">När du ändrar en princip för ett säkert länkar kan inställningar som är relaterade till namn, prioritet, aktiverade eller inaktiverade och mottagar filter ändra regeln för säkra länkar.</span><span class="sxs-lookup"><span data-stu-id="0f87d-116">When you modify a Safe Links policy, settings related to the name, priority, enabled or disabled, and recipient filters modify the safe links rule.</span></span> <span data-ttu-id="0f87d-117">Alla andra inställningar ändrar policyn för associerade säkra länkar.</span><span class="sxs-lookup"><span data-stu-id="0f87d-117">All other settings modify the associated safe links policy.</span></span>
+- <span data-ttu-id="0f87d-118">När du tar bort en princip för ett säkert länkar tas reglerna för säkra länkar och den associerade principen för säkra länkar bort.</span><span class="sxs-lookup"><span data-stu-id="0f87d-118">When you remove a Safe Links policy, the safe links rule and the associated safe links policy are removed.</span></span>
 
-4. <span data-ttu-id="273ec-122">Läs mer om princip alternativ (i den här artikeln) för säkerhets ATP – inklusive inställningar för senaste ändringar.</span><span class="sxs-lookup"><span data-stu-id="273ec-122">Learn about ATP Safe Links policy options (in this article), including settings for recent changes.</span></span>
-
-## <a name="step-1-review-the-prerequisites"></a><span data-ttu-id="273ec-123">Steg 1: granska kraven</span><span class="sxs-lookup"><span data-stu-id="273ec-123">Step 1: Review the prerequisites</span></span>
-
-- <span data-ttu-id="273ec-124">Kontrol lera att din organisation har [Office 365 Avancerat skydd för hotet](office-365-atp.md).</span><span class="sxs-lookup"><span data-stu-id="273ec-124">Make sure that your organization has [Office 365 Advanced Threat Protection](office-365-atp.md).</span></span>
-
-- <span data-ttu-id="273ec-125">Se till att du har nödvändig behörighet.</span><span class="sxs-lookup"><span data-stu-id="273ec-125">Make sure that you have the necessary permissions.</span></span> <span data-ttu-id="273ec-126">Om du vill definiera (eller redigera) ATP-principer måste du ha en lämplig roll.</span><span class="sxs-lookup"><span data-stu-id="273ec-126">To define (or edit) ATP policies, you must be assigned an appropriate role.</span></span> <span data-ttu-id="273ec-127">Några exempel beskrivs i följande tabell:</span><span class="sxs-lookup"><span data-stu-id="273ec-127">Some examples are described in the following table:</span></span>
-
-    |<span data-ttu-id="273ec-128">Roll</span><span class="sxs-lookup"><span data-stu-id="273ec-128">Role</span></span>|<span data-ttu-id="273ec-129">Där/hur kopplat</span><span class="sxs-lookup"><span data-stu-id="273ec-129">Where/how assigned</span></span>|
-    |---|---|
-    |<span data-ttu-id="273ec-130">global administratör</span><span class="sxs-lookup"><span data-stu-id="273ec-130">global administrator</span></span>|<span data-ttu-id="273ec-131">Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard.</span><span class="sxs-lookup"><span data-stu-id="273ec-131">The person who signs up to buy Microsoft 365 is a global admin by default.</span></span> <span data-ttu-id="273ec-132">(Mer information finns i [om administratörs roller i Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)</span><span class="sxs-lookup"><span data-stu-id="273ec-132">(See [About Microsoft 365 admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) to learn more.)</span></span>|
-    |<span data-ttu-id="273ec-133">Säkerhets administratör</span><span class="sxs-lookup"><span data-stu-id="273ec-133">Security Administrator</span></span>|<span data-ttu-id="273ec-134">Azure Active Directory-administratörs Center ( <https://aad.portal.azure.com> )</span><span class="sxs-lookup"><span data-stu-id="273ec-134">Azure Active Directory admin center (<https://aad.portal.azure.com>)</span></span>|
-    |<span data-ttu-id="273ec-135">Organisations hantering i Exchange Online</span><span class="sxs-lookup"><span data-stu-id="273ec-135">Exchange Online Organization Management</span></span>|<span data-ttu-id="273ec-136">Administrations Center för Exchange ( <https://outlook.office365.com/ecp> )</span><span class="sxs-lookup"><span data-stu-id="273ec-136">Exchange admin center (<https://outlook.office365.com/ecp>)</span></span> <br><span data-ttu-id="273ec-137">eller</span><span class="sxs-lookup"><span data-stu-id="273ec-137">or</span></span> <br>  <span data-ttu-id="273ec-138">PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))</span><span class="sxs-lookup"><span data-stu-id="273ec-138">PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))</span></span>|
-
-    <span data-ttu-id="273ec-139">Mer information om roller och behörigheter finns i [behörigheter i säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span><span class="sxs-lookup"><span data-stu-id="273ec-139">To learn more about roles and permissions, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
-
-- <span data-ttu-id="273ec-140">Kontrol lera att Office-klienter är konfigurerade för att använda [modern](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016) säkerhet (det här gäller för säkerhet i Office-dokument).</span><span class="sxs-lookup"><span data-stu-id="273ec-140">Make sure that Office clients are configured to use [Modern Authentication](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016) (this is for ATP Safe Links protection in Office documents).</span></span>
-
-- <span data-ttu-id="273ec-141">[Läs mer om princip alternativ för säker användning för ATP](#step-4-learn-about-atp-safe-links-policy-options) (i den här artikeln).</span><span class="sxs-lookup"><span data-stu-id="273ec-141">[Learn about ATP Safe Links policy options](#step-4-learn-about-atp-safe-links-policy-options) (in this article).</span></span>
-
-- <span data-ttu-id="273ec-142">Tillåt upp till 30 minuter för att den nya eller uppdaterade principen ska spridas till alla Microsoft 365-datacenter.</span><span class="sxs-lookup"><span data-stu-id="273ec-142">Allow up to 30 minutes for your new or updated policy to spread to all Microsoft 365 datacenters.</span></span>
-
-## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a><span data-ttu-id="273ec-143">Steg 2: definiera (eller granska) policyn för Safet ATP-länkar som gäller för alla</span><span class="sxs-lookup"><span data-stu-id="273ec-143">Step 2: Define (or review) the ATP Safe Links policy that applies to everyone</span></span>
-
-<span data-ttu-id="273ec-144">När du har [Office 365 Avancerat skydd](office-365-atp.md)har du en standard princip för säkerhet för säkerhets ATP som gäller för alla i organisationen.</span><span class="sxs-lookup"><span data-stu-id="273ec-144">When you have [Office 365 Advanced Threat Protection](office-365-atp.md), you will have a default ATP Safe Links policy that applies to everyone in your organization.</span></span> <span data-ttu-id="273ec-145">Se till att granska och om det behövs redigerar du din standard princip.</span><span class="sxs-lookup"><span data-stu-id="273ec-145">Make sure to review, and if needed, edit your default policy.</span></span>
-
-1. <span data-ttu-id="273ec-146">Gå till <https://protection.office.com> och logga in med ditt arbets-eller skol konto.</span><span class="sxs-lookup"><span data-stu-id="273ec-146">Go to <https://protection.office.com> and sign in with your work or school account.</span></span>
-
-2. <span data-ttu-id="273ec-147">I det vänstra navigerings fältet, under **Threat Management**, väljer du \*\*policy \> \*\* **Safe Links**.</span><span class="sxs-lookup"><span data-stu-id="273ec-147">In the left navigation, under **Threat management**, choose **Policy \>** **Safe Links**.</span></span>
-
-3. <span data-ttu-id="273ec-148">I de **principer som gäller för hela avsnittet organisation** väljer du **standard**och sedan **Redigera** (knappen Redigera påminner om en penna).</span><span class="sxs-lookup"><span data-stu-id="273ec-148">In the **Policies that apply to the entire organization** section, select **Default**, and then choose **Edit** (the Edit button resembles a pencil).</span></span>
-
-   ![Klicka på Redigera om du vill redigera standard principen för skydd av säkra länkar](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
-
-4. <span data-ttu-id="273ec-150">I avsnittet **Blockera följande URL-adresser** anger du en eller flera URL: er som du inte vill att personer i organisationen ska kunna besöka.</span><span class="sxs-lookup"><span data-stu-id="273ec-150">In the **Block the following URLs** section, specify one or more URLs that you want to prevent people in your organization from visiting.</span></span> <span data-ttu-id="273ec-151">(Mer information finns i [Konfigurera en anpassad lista med blockerade URL-adresser](set-up-a-custom-blocked-urls-list-atp.md).)</span><span class="sxs-lookup"><span data-stu-id="273ec-151">(See [Set up a custom blocked URLs list using ATP Safe Links](set-up-a-custom-blocked-urls-list-atp.md).)</span></span>
-
-5. <span data-ttu-id="273ec-152">Välj (eller avmarkera) de alternativ som du vill använda i avsnittet **inställningar som gäller förutom e-postadress** .</span><span class="sxs-lookup"><span data-stu-id="273ec-152">In the **Settings that apply to content except email** section, select (or clear) the options you want to use.</span></span> <span data-ttu-id="273ec-153">(Vi rekommenderar att du markerar alla alternativ.)</span><span class="sxs-lookup"><span data-stu-id="273ec-153">(We recommend that you select all the options.)</span></span>
-
-6. <span data-ttu-id="273ec-154">Välj **Save**.</span><span class="sxs-lookup"><span data-stu-id="273ec-154">Choose **Save**.</span></span>
-    
-## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients"></a><span data-ttu-id="273ec-155">Steg 3: lägga till (eller redigera) principer för säkra anslutningar för ATP som gäller för alla eller vissa e-postmottagare</span><span class="sxs-lookup"><span data-stu-id="273ec-155">Step 3: Add (or edit) ATP Safe Links policies that apply to all or specific email recipients</span></span>
-
-<span data-ttu-id="273ec-156">När du har granskat (eller redigerat) standard policyn för Safet säkerhet för ATP som gäller för alla är nästa steg att definiera ytterligare principer som gäller för alla eller specifika e-postmottagare.</span><span class="sxs-lookup"><span data-stu-id="273ec-156">After you have reviewed (or edited) the default ATP Safe Links policy that applies to everyone, your next step is to define additional policies that would apply to all or specific email recipients.</span></span> <span data-ttu-id="273ec-157">Du kan till exempel ange undantag för standard principen genom att definiera en ytterligare princip eller skapa mer detaljerade begränsningar för alla anställda.</span><span class="sxs-lookup"><span data-stu-id="273ec-157">For example, you can specify exceptions to your default policy by defining an additional policy or create more granular restrictions for all employees.</span></span>
-  
-1. <span data-ttu-id="273ec-158">Gå till <https://protection.office.com> och logga in med ditt arbets-eller skol konto.</span><span class="sxs-lookup"><span data-stu-id="273ec-158">Go to <https://protection.office.com> and sign in with your work or school account.</span></span> 
-    
-2. <span data-ttu-id="273ec-159">I det vänstra navigerings fältet under **Threat Management**väljer du **policy**.</span><span class="sxs-lookup"><span data-stu-id="273ec-159">In the left navigation, under **Threat management**, choose **Policy**.</span></span>
-
-3. <span data-ttu-id="273ec-160">Välj **Safe Links**.</span><span class="sxs-lookup"><span data-stu-id="273ec-160">Choose **Safe Links**.</span></span>
-
-4. <span data-ttu-id="273ec-161">I avsnittet **principer som gäller för specifika mottagare** väljer du **nytt** (den nya knappen liknar ett plus tecken ( **+** )).</span><span class="sxs-lookup"><span data-stu-id="273ec-161">In the **Policies that apply to specific recipients** section, choose **New** (the New button resembles a plus sign ( **+**)).</span></span>
-
-   ![Välj nytt för att lägga till en policy för säkra Länkar för specifika e-postmottagare](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
-
-5. <span data-ttu-id="273ec-163">Ange namn, beskrivning och inställningar för din policy.</span><span class="sxs-lookup"><span data-stu-id="273ec-163">Specify the name, description, and settings for your policy.</span></span>
-
-   <span data-ttu-id="273ec-164">**Exempel:** Om du vill konfigurera en princip med namnet "ingen direkt klickning genom" som inte tillåter personer i en viss grupp i organisationen att klicka dig fram till en viss webbplats utan skydd för säkra länkar från ATP kan du ange följande rekommenderade inställningar:</span><span class="sxs-lookup"><span data-stu-id="273ec-164">**Example:** To set up a policy called "no direct click through" that does not allow people in a certain group in your organization to click through to a specific website without ATP Safe Links protection, you might specify the following recommended settings:</span></span>
-
-   - <span data-ttu-id="273ec-165">I rutan **namn** skriver du ingen direkt klickning genom.</span><span class="sxs-lookup"><span data-stu-id="273ec-165">In the **Name** box, type no direct click through.</span></span>
-
-   - <span data-ttu-id="273ec-166">I rutan **Beskrivning** skriver du en beskrivning, till exempel hindrar personer i vissa grupper från att klicka på till en webbplats utan verifiering med säkerhet per ATP.</span><span class="sxs-lookup"><span data-stu-id="273ec-166">In the **Description** box, type a description like, Prevents people in certain groups from clicking through to a website without ATP Safe Links verification.</span></span>
-
-   - <span data-ttu-id="273ec-167">I avsnittet **Välj åtgärd väljer du** **på**.</span><span class="sxs-lookup"><span data-stu-id="273ec-167">In the **Select the action** section, choose **On**.</span></span>
-
-   - <span data-ttu-id="273ec-168">Välj **Använd URL-genomsökning i real tid för att få misstänkta länkar och länkar som pekar på filer** om du vill aktivera URL-sprängning för misstänkta och filbaserade URL-adresser (rekommenderas).</span><span class="sxs-lookup"><span data-stu-id="273ec-168">Select **Apply real-time URL scanning for suspicious links and links that point to files** if you would like to enable URL detonation for suspicious and file-pointing URLs (recommended).</span></span> <span data-ttu-id="273ec-169">Och välj **vänta på att URL-genomsökningen ska slutföras innan du levererar meddelandet** om du endast vill få meddelanden efter att URL-adresserna har skannats helt.</span><span class="sxs-lookup"><span data-stu-id="273ec-169">And select **Wait for URL scanning to complete before delivering the message** if you wish to only have users receive messages after the URLs have been fully scanned.</span></span>
-
-   - <span data-ttu-id="273ec-170">Välj **Använd Safe Links för meddelanden som skickas inom organisationen** om du vill aktivera säkra Länkar för meddelanden som skickas mellan användare inom organisationen (rekommenderas).</span><span class="sxs-lookup"><span data-stu-id="273ec-170">Select **Apply Safe Links to messages sent within the organization** if you would like to enable Safe Links for messages sent between users within your organization (recommended).</span></span>
-
-   - <span data-ttu-id="273ec-171">Välj **Tillåt inte användare att klicka dig fram till original-URL:** en om du inte vill att de enskilda användarna ska åsidosätta en *pågående genomsökning* eller *URL-blockerade* aviserings sidor.</span><span class="sxs-lookup"><span data-stu-id="273ec-171">Select **Do not allow user to click through to original URL** if you do not wish the individual users to override a *scan in progress* or *URL blocked* notification pages.</span></span>
-
-   - <span data-ttu-id="273ec-172">(Det här är valfritt) Ange en eller flera URL-adresser som anses vara säkra för din organisation i avsnittet **gör inte om följande URL: er** .</span><span class="sxs-lookup"><span data-stu-id="273ec-172">(This is optional) In the **Do not rewrite the following URLs** section, specify one or more URLs that are considered to be safe for your organization.</span></span> <span data-ttu-id="273ec-173">(Mer information finns i [Konfigurera en egen URL-lista "Skriv inte över" med hjälp av säkerhet för ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md))</span><span class="sxs-lookup"><span data-stu-id="273ec-173">(See [Set up a custom "Do not rewrite" URLs list using ATP Safe Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md))</span></span>
-
-   - <span data-ttu-id="273ec-174">I avsnittet **används för** väljer du **mottagaren är medlem i**och väljer sedan de grupper som du vill ta med i policyn.</span><span class="sxs-lookup"><span data-stu-id="273ec-174">In the **Applied To** section, choose **The recipient is a member of**, and then choose the group(s) you want to include in your policy.</span></span> <span data-ttu-id="273ec-175">Välj **Lägg till**och sedan **OK**.</span><span class="sxs-lookup"><span data-stu-id="273ec-175">Choose **Add**, and then choose **OK**.</span></span>
-
-6. <span data-ttu-id="273ec-176">Välj **Save**.</span><span class="sxs-lookup"><span data-stu-id="273ec-176">Choose **Save**.</span></span>
+<span data-ttu-id="0f87d-119">I Exchange Online PowerShell eller fristående EOP PowerShell hanterar du policyn och regeln separat.</span><span class="sxs-lookup"><span data-stu-id="0f87d-119">In Exchange Online PowerShell or standalone EOP PowerShell, you manage the policy and the rule separately.</span></span> <span data-ttu-id="0f87d-120">Mer information finns i [använda Exchange Online PowerShell eller fristående EOP PowerShell för att konfigurera principer för Safe Links](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) i den här artikeln.</span><span class="sxs-lookup"><span data-stu-id="0f87d-120">For more information, see the [Use Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Links policies](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) section later in this article.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="273ec-177">Principer för Safet ATP-länkar med högre prioritet prioriteras.</span><span class="sxs-lookup"><span data-stu-id="273ec-177">ATP Safe Links policies with higher priority will take precedence.</span></span> <span data-ttu-id="273ec-178">Om en användare lyder i två eller fler principer kommer bara den högre prioritets principen att träda i kraft.</span><span class="sxs-lookup"><span data-stu-id="273ec-178">If a user is subject to two or more policies, only the higher priority policy will take effect.</span></span> <span data-ttu-id="273ec-179">Om du vill att kund policyn ska ha högre prioritet måste du höja prioriteten för policyn.</span><span class="sxs-lookup"><span data-stu-id="273ec-179">If you want the customer policy to take precedence, you need to raise the priority of the policy.</span></span>
+> <span data-ttu-id="0f87d-121">Du konfigurerar globala inställningar för skydd mot säkra länkar **utanför** principer för säkra länkar.</span><span class="sxs-lookup"><span data-stu-id="0f87d-121">You configure the global settings for Safe Links protection **outside** of Safe Links policies.</span></span> <span data-ttu-id="0f87d-122">Anvisningar finns i [Konfigurera globala inställningar för säkra länkar i Office 365 ATP](configure-global-settings-for-safe-links.md).</span><span class="sxs-lookup"><span data-stu-id="0f87d-122">For instructions, see [Configure global settings for Safe Links in Office 365 ATP](configure-global-settings-for-safe-links.md).</span></span>
 
-## <a name="step-4-learn-about-atp-safe-links-policy-options"></a><span data-ttu-id="273ec-180">Steg 4: Lär dig mer om princip alternativ för att skydda ATP</span><span class="sxs-lookup"><span data-stu-id="273ec-180">Step 4: Learn about ATP Safe Links policy options</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="0f87d-123">Vad behöver jag veta innan jag börjar?</span><span class="sxs-lookup"><span data-stu-id="0f87d-123">What do you need to know before you begin?</span></span>
 
-<span data-ttu-id="273ec-181">När du ställer in eller redigerar principer för säkrat ATP-länkar visas flera tillgängliga alternativ.</span><span class="sxs-lookup"><span data-stu-id="273ec-181">As you set up or edit your ATP Safe Links policies, will see several options available.</span></span> <span data-ttu-id="273ec-182">I händelse av att de här alternativen är uppfyllde beskrivs var och en av följande tabeller.</span><span class="sxs-lookup"><span data-stu-id="273ec-182">In case you are wondering what these options are, the following table describes each one and its effect.</span></span> <span data-ttu-id="273ec-183">Kom ihåg att det finns två huvudsakliga typer av principer för säkra anslutningar för ATP för att definiera och redigera:</span><span class="sxs-lookup"><span data-stu-id="273ec-183">Remember that there are two main kinds of ATP Safe Links policies to define or edit:</span></span>
+- <span data-ttu-id="0f87d-124">Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>.</span><span class="sxs-lookup"><span data-stu-id="0f87d-124">You open the Security & Compliance Center at <https://protection.office.com/>.</span></span> <span data-ttu-id="0f87d-125">Använd om du vill gå direkt till sidan **Safe Links för ATP** <https://protection.office.com/safelinksv2> .</span><span class="sxs-lookup"><span data-stu-id="0f87d-125">To go directly to the **ATP Safe Links** page, use <https://protection.office.com/safelinksv2>.</span></span>
 
-- <span data-ttu-id="273ec-184">en [standard policy](#default-policy-options) som gäller för alla. och</span><span class="sxs-lookup"><span data-stu-id="273ec-184">a [default policy](#default-policy-options) that applies to everyone; and</span></span>
-- <span data-ttu-id="273ec-185">ytterligare [principer för specifika mottagare](#policies-that-apply-to-specific-email-recipients)</span><span class="sxs-lookup"><span data-stu-id="273ec-185">additional [policies for specific recipients](#policies-that-apply-to-specific-email-recipients)</span></span>
+- <span data-ttu-id="0f87d-126">Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).</span><span class="sxs-lookup"><span data-stu-id="0f87d-126">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).</span></span> <span data-ttu-id="0f87d-127">Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).</span><span class="sxs-lookup"><span data-stu-id="0f87d-127">To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).</span></span>
 
-### <a name="default-policy-options"></a><span data-ttu-id="273ec-186">Standard princip alternativ</span><span class="sxs-lookup"><span data-stu-id="273ec-186">Default policy options</span></span>
+- <span data-ttu-id="0f87d-128">För att visa, skapa, ändra och ta bort principer för säkra länkar måste du vara medlem i någon av följande roll grupper:</span><span class="sxs-lookup"><span data-stu-id="0f87d-128">To view, create, modify, and delete Safe Links policies, you need to be a member of one of the following role groups:</span></span>
 
-<span data-ttu-id="273ec-187">Standard princip alternativ gäller för alla i organisationen.</span><span class="sxs-lookup"><span data-stu-id="273ec-187">Default policy options apply to everyone in your organization.</span></span>
+  - <span data-ttu-id="0f87d-129">**Organisationshantering** eller **Säkerhetsadministratör** i [Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).</span><span class="sxs-lookup"><span data-stu-id="0f87d-129">**Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+  - <span data-ttu-id="0f87d-130">**Organisations hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).</span><span class="sxs-lookup"><span data-stu-id="0f87d-130">**Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).</span></span>
 
-****
+- <span data-ttu-id="0f87d-131">För de rekommenderade inställningarna för principer för säkra länkar, se [princip inställningar för säkra länkar](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).</span><span class="sxs-lookup"><span data-stu-id="0f87d-131">For our recommended settings for Safe Links policies, see [Safe Links policy settings](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).</span></span>
 
-|<span data-ttu-id="273ec-188">Det här alternativet</span><span class="sxs-lookup"><span data-stu-id="273ec-188">This option</span></span>|<span data-ttu-id="273ec-189">Gör det här</span><span class="sxs-lookup"><span data-stu-id="273ec-189">Does this</span></span>|
-|---|---|
-|<span data-ttu-id="273ec-190">**Blockera följande URL: er**</span><span class="sxs-lookup"><span data-stu-id="273ec-190">**Block the following URLs**</span></span>|<span data-ttu-id="273ec-191">Gör det möjligt för organisationen att ha en anpassad lista med URL-adresser som automatiskt blockeras.</span><span class="sxs-lookup"><span data-stu-id="273ec-191">Enables your organization to have a custom list of URLs that are automatically blocked.</span></span> <span data-ttu-id="273ec-192">När användare klickar på en URL i den här listan kommer de till en [varnings sida](atp-safe-links-warning-pages.md) som förklarar varför URL-adressen blockeras.</span><span class="sxs-lookup"><span data-stu-id="273ec-192">When users click a URL in this list, they'll be taken to a [warning page](atp-safe-links-warning-pages.md) that explains why the URL is blocked.</span></span> <span data-ttu-id="273ec-193">Mer information finns i [Konfigurera en anpassad lista över blockerade URL-adresser med Office 365 ATP-Safe-länkar](set-up-a-custom-blocked-urls-list-atp.md).</span><span class="sxs-lookup"><span data-stu-id="273ec-193">To learn more, see [Set up a custom blocked URLs list using Office 365 ATP Safe Links](set-up-a-custom-blocked-urls-list-atp.md).</span></span>|
-|<span data-ttu-id="273ec-194">**Microsoft 365-appar för Enterprise, Office för iOS och Android**</span><span class="sxs-lookup"><span data-stu-id="273ec-194">**Microsoft 365 Apps for enterprise, Office for iOS and Android**</span></span>| <span data-ttu-id="273ec-195">När det här alternativet är markerat säkerhets säkra Länkar för ATP-säkerhet tillämpas på webb adresser i Word-, Excel-och PowerPoint-filer på Windows-eller Mac-datorer, e-postmeddelanden i Outlook, Office-dokument på iOS-eller Android-enheter, Visio 2016-filer i Windows och filer som är öppna i webb versioner av 365 Office-program</span><span class="sxs-lookup"><span data-stu-id="273ec-195">When this option is selected, ATP Safe Links protection is applied to URLs in Word, Excel, and PowerPoint files on Windows or Mac OS, email messages in Outlook, Office documents on iOS or Android devices, Visio 2016 files on Windows, and files open in the web versions of Office apps (Word, PowerPoint, Excel, Outlook, and OneNote), provided the user has signed in to Office 365.</span></span>|
-|<span data-ttu-id="273ec-196">**Spåra inte när användare klickar på säkra Länkar för ATP**</span><span class="sxs-lookup"><span data-stu-id="273ec-196">**Don't track when users click ATP Safe Links**</span></span>|<span data-ttu-id="273ec-197">När det här alternativet är markerat klickar du på data för URL: er i Word, Excel, PowerPoint, Visio-dokument och Outlook-e-postmeddelanden sparas inte.</span><span class="sxs-lookup"><span data-stu-id="273ec-197">When this option is selected, click data for URLs in Word, Excel, PowerPoint, Visio documents, and Outlook email messages is not stored.</span></span>|
-|<span data-ttu-id="273ec-198">**Låt inte användare klicka via säkra Länkar för ATP till ursprunglig URL**</span><span class="sxs-lookup"><span data-stu-id="273ec-198">**Don't let users click through ATP Safe Links to original URL**</span></span>|<span data-ttu-id="273ec-199">Om du väljer det här alternativet kan användarna inte gå förbi en [varnings sida](atp-safe-links-warning-pages.md) till en webb adress som bedöms vara skadlig.</span><span class="sxs-lookup"><span data-stu-id="273ec-199">When this option is selected, users cannot proceed past a [warning page](atp-safe-links-warning-pages.md) to a URL that is determined to be malicious.</span></span>|
-|
+- <span data-ttu-id="0f87d-132">Tillåt upp till 30 minuter för att en ny eller uppdaterad princip ska tillämpas.</span><span class="sxs-lookup"><span data-stu-id="0f87d-132">Allow up to 30 minutes for a new or updated policy to be applied.</span></span>
 
-### <a name="policies-that-apply-to-specific-email-recipients"></a><span data-ttu-id="273ec-200">Principer som gäller för specifika e-postmottagare</span><span class="sxs-lookup"><span data-stu-id="273ec-200">Policies that apply to specific email recipients</span></span>
+- <span data-ttu-id="0f87d-133">[Nya funktioner läggs hela tiden till för ATP](office-365-atp.md#new-features-in-office-365-atp).</span><span class="sxs-lookup"><span data-stu-id="0f87d-133">[New features are continually being added to ATP](office-365-atp.md#new-features-in-office-365-atp).</span></span> <span data-ttu-id="0f87d-134">När nya funktioner läggs till kan du behöva justera dina befintliga principer för säker länkar.</span><span class="sxs-lookup"><span data-stu-id="0f87d-134">As new features are added, you may need to make adjustments to your existing Safe Links policies.</span></span>
 
-****
+## <a name="use-the-security--compliance-center-to-create-safe-links-policies"></a><span data-ttu-id="0f87d-135">Skapa principer för säkra länkar med hjälp av säkerhets & efterlevnad</span><span class="sxs-lookup"><span data-stu-id="0f87d-135">Use the Security & Compliance Center to create Safe Links policies</span></span>
 
-|<span data-ttu-id="273ec-201">Det här alternativet</span><span class="sxs-lookup"><span data-stu-id="273ec-201">This option</span></span>|<span data-ttu-id="273ec-202">Gör det här</span><span class="sxs-lookup"><span data-stu-id="273ec-202">Does this</span></span>|
-|---|---|
-|<span data-ttu-id="273ec-203">**Av**</span><span class="sxs-lookup"><span data-stu-id="273ec-203">**Off**</span></span>|<span data-ttu-id="273ec-204">Skannar inte URL-adresser i e-postmeddelanden.</span><span class="sxs-lookup"><span data-stu-id="273ec-204">Does not scan URLs in email messages.</span></span>  <br/> <span data-ttu-id="273ec-205">Gör det möjligt att definiera en undantags regel, till exempel en regel som inte söker igenom URL-adresser i e-postmeddelanden för en viss grupp mottagare.</span><span class="sxs-lookup"><span data-stu-id="273ec-205">Enables you to define an exception rule, such as a rule that does not scan URLs in email messages for a specific group of recipients.</span></span>|
-|<span data-ttu-id="273ec-206">**På**</span><span class="sxs-lookup"><span data-stu-id="273ec-206">**On**</span></span>|<span data-ttu-id="273ec-207">Skriver om URL: er för att dirigera användare via skydd mot säkerhet för ATP när användare klickar på URL: er i e-postmeddelanden och aktiverar säkerhet för ATP i Outlook (C2R) i Windows.</span><span class="sxs-lookup"><span data-stu-id="273ec-207">Rewrites URLs to route users through ATP Safe Links protection when the users click URLs in email messages and enables ATP Safe Links within Outlook (C2R) on Windows.</span></span>  <br/> <span data-ttu-id="273ec-208">Kontrollerar en URL när någon klickar på en lista över blockerade eller skadliga URL: er och utlöser en sprängning av URL: en i bakgrunden asynkront om URL-adressen inte har ett giltigt rykte.</span><span class="sxs-lookup"><span data-stu-id="273ec-208">Checks a URL when clicked against a list of blocked or malicious URLs and triggers a detonation of the URL in the background asynchronously if the URL does not have a valid reputation.</span></span>|
-|<span data-ttu-id="273ec-209">**Använda URL-genomsökning i real tid för misstänkta länkar och länkar som pekar på filer**</span><span class="sxs-lookup"><span data-stu-id="273ec-209">**Apply real-time URL scanning for suspicious links and links that point to files**</span></span>|<span data-ttu-id="273ec-210">När det här alternativet är markerat skannas misstänkta URL: er och länkar som pekar på nedladdnings Bart innehåll.</span><span class="sxs-lookup"><span data-stu-id="273ec-210">When this option is selected, suspicious URLs and links that point to downloadable content are scanned.</span></span>|
-|<span data-ttu-id="273ec-211">**Vänta på att URL-genomsökningen ska slutföras innan du levererar meddelandet**</span><span class="sxs-lookup"><span data-stu-id="273ec-211">**Wait for URL scanning to complete before delivering the message**</span></span>|<span data-ttu-id="273ec-212">När du väljer det här alternativet hålls meddelanden som innehåller URL-adresser som ska genomsökas tills URL-adresserna har skannats och bekräftas vara säkra innan meddelanden levereras.</span><span class="sxs-lookup"><span data-stu-id="273ec-212">When this option is selected, messages that contain URLs to be scanned will be held until the URLs finish scanning and are confirmed to be safe before the messages are delivered.</span></span>|
-|<span data-ttu-id="273ec-213">**Använda säkra Länkar för meddelanden som skickas inom organisationen**</span><span class="sxs-lookup"><span data-stu-id="273ec-213">**Apply Safe Links to messages sent within the organization**</span></span> <br/> | <span data-ttu-id="273ec-214">När det här alternativet är tillgängligt och markerat används skydd för säkrade säkerhets samtal för e-postmeddelanden mellan personer i organisationen, förutsatt att e-postkonton finns i Office 365.</span><span class="sxs-lookup"><span data-stu-id="273ec-214">When this option is available and selected, ATP Safe Links protection is applied to email messages sent between people in your organization, provided the email accounts are hosted in Office 365.</span></span>|
-|<span data-ttu-id="273ec-215">**Spåra inte användar klickningar**</span><span class="sxs-lookup"><span data-stu-id="273ec-215">**Do not track user clicks**</span></span>|<span data-ttu-id="273ec-216">När det här alternativet är markerat klickar du på data för URL: er i e-post från externa avsändare lagras inte.</span><span class="sxs-lookup"><span data-stu-id="273ec-216">When this option is selected, click data for URLs in email from external senders is not stored.</span></span> <span data-ttu-id="273ec-217">URL-adress klicka på spårning för länkar i e-postmeddelanden som skickas inom organisationen stöds för närvarande inte.</span><span class="sxs-lookup"><span data-stu-id="273ec-217">URL click tracking for links within email messages sent within the organization is currently not supported.</span></span>|
-|<span data-ttu-id="273ec-218">**Tillåt inte att användare klickar genom till ursprunglig URL**</span><span class="sxs-lookup"><span data-stu-id="273ec-218">**Do not allow users to click through to original URL**</span></span>|<span data-ttu-id="273ec-219">Om du väljer det här alternativet kan användarna inte gå förbi en [varnings sida](atp-safe-links-warning-pages.md) till en webb adress som bedöms vara skadlig.</span><span class="sxs-lookup"><span data-stu-id="273ec-219">When this option is selected, users cannot proceed past a [warning page](atp-safe-links-warning-pages.md) to a URL that is determined to be malicious.</span></span>|
-|<span data-ttu-id="273ec-220">**Skriv inte om följande URL: er**</span><span class="sxs-lookup"><span data-stu-id="273ec-220">**Do not rewrite the following URLs**</span></span>|<span data-ttu-id="273ec-221">Lämnar URL-adresser som de är.</span><span class="sxs-lookup"><span data-stu-id="273ec-221">Leaves URLs as they are.</span></span> <span data-ttu-id="273ec-222">Behåller en anpassad lista över säkra URL: er som inte behöver söka efter en viss grupp e-postmottagare i organisationen.</span><span class="sxs-lookup"><span data-stu-id="273ec-222">Keeps a custom list of safe URLs that don't need scanning for a specific group of email recipients in your organization.</span></span> <span data-ttu-id="273ec-223">Se [Konfigurera en anpassad URL-lista "Skriv inte över"](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) för mer information, inklusive senaste ändringar av stöd för asterisker ( \* ).</span><span class="sxs-lookup"><span data-stu-id="273ec-223">See [Set up a custom "Do not rewrite" URLs list using ATP Safe Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) for more details, including recent changes to support for wildcard asterisks (\*).</span></span>|
-|
+<span data-ttu-id="0f87d-136">Om du skapar en anpassad princip för säkra länkar i säkerhets & Compliance Center skapas regeln för säkra länkar och den associerade principen för Safe Links samtidigt med samma namn för båda.</span><span class="sxs-lookup"><span data-stu-id="0f87d-136">Creating a custom Safe Links policy in the Security & Compliance Center creates the safe links rule and the associated safe links policy at the same time using the same name for both.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="273ec-224">Nästa steg</span><span class="sxs-lookup"><span data-stu-id="273ec-224">Next steps</span></span>
+1. <span data-ttu-id="0f87d-137">I säkerhets & Compliance Center går du till **Threat Management** \> **policy** - \> **säkra länkar**.</span><span class="sxs-lookup"><span data-stu-id="0f87d-137">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.</span></span>
 
-<span data-ttu-id="273ec-225">När dina principer för säker säkerhet för ATP är på plats kan du se hur ATP fungerar för organisationen genom att visa rapporter.</span><span class="sxs-lookup"><span data-stu-id="273ec-225">Once your ATP Safe Links policies are in place, you can see how ATP is working for your organization by viewing reports.</span></span> <span data-ttu-id="273ec-226">Mer information finns i följande resurser:</span><span class="sxs-lookup"><span data-stu-id="273ec-226">See the following resources to learn more:</span></span>
+2. <span data-ttu-id="0f87d-138">Klicka på **skapa**på sidan **Safe Links** .</span><span class="sxs-lookup"><span data-stu-id="0f87d-138">On the **Safe Links** page, click **Create**.</span></span>
 
-- [<span data-ttu-id="273ec-227">Visa rapporter för Office 365 Avancerat skydd</span><span class="sxs-lookup"><span data-stu-id="273ec-227">View reports for Office 365 Advanced Threat Protection</span></span>](view-reports-for-atp.md)
+3. <span data-ttu-id="0f87d-139">Guiden **ny princip för säkra länkar** öppnas.</span><span class="sxs-lookup"><span data-stu-id="0f87d-139">The **New Safe Links policy** wizard opens.</span></span> <span data-ttu-id="0f87d-140">På sidan **namnge din policy** konfigurerar du följande inställningar:</span><span class="sxs-lookup"><span data-stu-id="0f87d-140">On the **Name your policy** page, configure the following settings:</span></span>
 
-- [<span data-ttu-id="273ec-228">Använda Utforskaren i säkerhets & Compliance Center</span><span class="sxs-lookup"><span data-stu-id="273ec-228">Use Explorer in the Security & Compliance Center</span></span>](threat-explorer.md)
+   - <span data-ttu-id="0f87d-141">**Namn**: Ange ett unikt, beskrivande namn på principen.</span><span class="sxs-lookup"><span data-stu-id="0f87d-141">**Name**: Enter a unique, descriptive name for the policy.</span></span>
 
-<span data-ttu-id="273ec-229">Håll koll på nya funktioner som kommer till ATP.</span><span class="sxs-lookup"><span data-stu-id="273ec-229">Stay on top of new features coming to ATP.</span></span> <span data-ttu-id="273ec-230">Besök [Microsoft 365-översikten](https://www.microsoft.com/microsoft-365/roadmap?filters=O365).</span><span class="sxs-lookup"><span data-stu-id="273ec-230">visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365).</span></span>
+   - <span data-ttu-id="0f87d-142">**Beskrivning**: Ange en valfri beskrivning av principen.</span><span class="sxs-lookup"><span data-stu-id="0f87d-142">**Description**: Enter an optional description for the policy.</span></span>
+
+   <span data-ttu-id="0f87d-143">När du är klar klickar du på **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="0f87d-143">When you're finished, click **Next**.</span></span>
+
+4. <span data-ttu-id="0f87d-144">På sidan **Inställningar** som visas konfigurerar du följande inställningar:</span><span class="sxs-lookup"><span data-stu-id="0f87d-144">On the **Settings** page that appears, configure the following settings:</span></span>
+
+   - <span data-ttu-id="0f87d-145">**Välj åtgärd för okända URL-adresser i meddelanden**: Välj **på**.</span><span class="sxs-lookup"><span data-stu-id="0f87d-145">**Select the action for unknown potentially malicious URLs in messages**: Select **On**.</span></span>
+
+   - <span data-ttu-id="0f87d-146">**Välj åtgärd för okända URL-adresser i meddelanden**: **Välj eller låt** **standardvärdet** vara markerat.</span><span class="sxs-lookup"><span data-stu-id="0f87d-146">**Select the action for unknown potentially malicious URLs in messages**: Select **On** or leave the default value **Off** selected.</span></span>
+
+   - <span data-ttu-id="0f87d-147">**Använda URL-genomsökning i real tid för misstänkta länkar och länkar som pekar på filer**: Välj den här inställningen för att aktivera genomsökning i real tid med länkar i e-postmeddelanden.</span><span class="sxs-lookup"><span data-stu-id="0f87d-147">**Apply real-time URL scanning for suspicious links and links that point to files**: Select this setting to enable real-time scanning of links in email messages.</span></span>
+
+   - <span data-ttu-id="0f87d-148">**Vänta på att URL-genomsökningen ska slutföras innan du levererar meddelandet**: Välj den här inställningen för att vänta på att URL-genomsökning i real tid ska slutföras innan meddelandet levereras.</span><span class="sxs-lookup"><span data-stu-id="0f87d-148">**Wait for URL scanning to complete before delivering the message**: Select this setting to wait for real-time URL scanning to complete before delivering the message.</span></span>
+
+   - <span data-ttu-id="0f87d-149">**Använd Safe Links för e-postmeddelanden som skickas inom organisationen**: Välj den här inställningen om du vill tillämpa principen för säkra länkar i meddelanden mellan interna avsändare och interna mottagare.</span><span class="sxs-lookup"><span data-stu-id="0f87d-149">**Apply safe links to email messages sent within the organization**: Select this setting to apply the Safe Links policy to messages between internal senders and internal recipients.</span></span>
+
+   - <span data-ttu-id="0f87d-150">**Spåra inte användare**Klicka på: låt den här inställningen vara avmarkerad för att aktivera spårnings användaren på URL: er i e-postmeddelanden.</span><span class="sxs-lookup"><span data-stu-id="0f87d-150">**Do not track user clicks**: Leave this setting unselected to enable the tracking user clicks on URLs in email messages.</span></span>
+
+   - <span data-ttu-id="0f87d-151">**Tillåt inte att användare klickar genom till ursprunglig URL**: Välj den här inställningen för att hindra användare från att klicka dig fram till den ursprungliga URL-adressen i [varnings sidor](atp-safe-links.md#warning-pages-from-safe-links).</span><span class="sxs-lookup"><span data-stu-id="0f87d-151">**Do not allow users to click through to original URL**: Select this setting to block users from clicking through to the original URL in [warning pages](atp-safe-links.md#warning-pages-from-safe-links).</span></span>
+
+   - <span data-ttu-id="0f87d-152">**Skriv inte om följande webb adresser**: tillåter åtkomst till angivna URL-adresser som annars skulle blockeras av säkra länkar.</span><span class="sxs-lookup"><span data-stu-id="0f87d-152">**Do not rewrite the following URLs**: Allows access the specified URLs that would otherwise be blocked by Safe Links.</span></span>
+
+     <span data-ttu-id="0f87d-153">Skriv URL: en eller det värde du vill använda i rutan och klicka sedan på</span><span class="sxs-lookup"><span data-stu-id="0f87d-153">In the box, type the URL or value that you want, and then click</span></span> ![Ikonen Lägg till knapp](../../media/ITPro-EAC-AddIcon.png)<span data-ttu-id="0f87d-155">.</span><span class="sxs-lookup"><span data-stu-id="0f87d-155">.</span></span>
+
+     <span data-ttu-id="0f87d-156">Om du vill ta bort en befintlig post markerar du den och klickar sedan på</span><span class="sxs-lookup"><span data-stu-id="0f87d-156">To remove an existing entry, select it and then click</span></span> ![Ikonen Ta bort](../../media/ITPro-EAC-DeleteIcon.png)<span data-ttu-id="0f87d-158">.</span><span class="sxs-lookup"><span data-stu-id="0f87d-158">.</span></span>
+
+     <span data-ttu-id="0f87d-159">Syntaxen för inmatning finns i [syntaxen för listan "Skriv inte om följande URL: er"](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).</span><span class="sxs-lookup"><span data-stu-id="0f87d-159">For entry syntax, see [Entry syntax for the "Do not rewrite the following URLs" list](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).</span></span>
+
+   <span data-ttu-id="0f87d-160">Detaljerad information om dessa inställningar finns i [Inställningar för säkra Länkar för e-postmeddelanden](atp-safe-links.md#safe-links-settings-for-email-messages) och [Inställningar för säkra Länkar för Microsoft Teams](atp-safe-links.md#safe-links-settings-for-microsoft-teams).</span><span class="sxs-lookup"><span data-stu-id="0f87d-160">For detailed information about these settings, see [Safe Links settings for email messages](atp-safe-links.md#safe-links-settings-for-email-messages) and [Safe Links settings for Microsoft Teams](atp-safe-links.md#safe-links-settings-for-microsoft-teams).</span></span>
+
+   <span data-ttu-id="0f87d-161">Fler rekommenderade värden för standard-och strikta princip inställningar finns i [princip inställningar för säkra länkar](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).</span><span class="sxs-lookup"><span data-stu-id="0f87d-161">For more the recommended values for Standard and Strict policy settings, see [Safe Links policy settings](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).</span></span>
+
+   <span data-ttu-id="0f87d-162">När du är klar klickar du på **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="0f87d-162">When you're finished, click **Next**.</span></span>
+
+5. <span data-ttu-id="0f87d-163">**På sidan som** visas anger du vilka interna mottagare som principen gäller för.</span><span class="sxs-lookup"><span data-stu-id="0f87d-163">On the **Applied to** page that appears, identify the internal recipients that the policy applies to.</span></span>
+
+   <span data-ttu-id="0f87d-164">Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget.</span><span class="sxs-lookup"><span data-stu-id="0f87d-164">You can only use a condition or exception once, but you can specify multiple values for the condition or exception.</span></span> <span data-ttu-id="0f87d-165">Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_).</span><span class="sxs-lookup"><span data-stu-id="0f87d-165">Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_).</span></span> <span data-ttu-id="0f87d-166">Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_).</span><span class="sxs-lookup"><span data-stu-id="0f87d-166">Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).</span></span>
+
+   <span data-ttu-id="0f87d-167">Klicka på **Lägg till ett villkor**.</span><span class="sxs-lookup"><span data-stu-id="0f87d-167">Click **Add a condition**.</span></span> <span data-ttu-id="0f87d-168">I den nedrullningsbara List rutan som visas väljer du ett villkor under **används om**:</span><span class="sxs-lookup"><span data-stu-id="0f87d-168">In the dropdown that appears, select a condition under **Applied if**:</span></span>
+
+   - <span data-ttu-id="0f87d-169">**Mottagaren är**: anger en eller flera post lådor, e-postkonton eller e-postkontakter i din organisation.</span><span class="sxs-lookup"><span data-stu-id="0f87d-169">**The recipient is**: Specifies one or more mailboxes, mail users, or mail contacts in your organization.</span></span>
+   - <span data-ttu-id="0f87d-170">**Mottagaren är medlem i**: anger en eller flera grupper i din organisation.</span><span class="sxs-lookup"><span data-stu-id="0f87d-170">**The recipient is a member of**: Specifies one or more groups in your organization.</span></span>
+   - <span data-ttu-id="0f87d-171">**Mottagande domän är**: Anger mottagare i en eller flera av de godkända domänerna som har konfigurerats i din organisation.</span><span class="sxs-lookup"><span data-stu-id="0f87d-171">**The recipient domain is**: Specifies recipients in one or more of the configured accepted domains in your organization.</span></span>
+
+   <span data-ttu-id="0f87d-172">När du har valt villkoret visas en motsvarande listruta med en **av dessa** rutor.</span><span class="sxs-lookup"><span data-stu-id="0f87d-172">After you select the condition, a corresponding dropdown appears with an **Any of these** box.</span></span>
+
+   - <span data-ttu-id="0f87d-173">Klicka i rutan och bläddra igenom listan med värden att välja.</span><span class="sxs-lookup"><span data-stu-id="0f87d-173">Click in the box and scroll through the list of values to select.</span></span>
+   - <span data-ttu-id="0f87d-174">Klicka i rutan och börja skriva för att filtrera listan och välja ett värde.</span><span class="sxs-lookup"><span data-stu-id="0f87d-174">Click in the box and start typing to filter the list and select a value.</span></span>
+   - <span data-ttu-id="0f87d-175">Om du vill lägga till fler värden klickar du i ett tomt område i rutan.</span><span class="sxs-lookup"><span data-stu-id="0f87d-175">To add additional values, click in an empty area in the box.</span></span>
+   - <span data-ttu-id="0f87d-176">Om du vill ta bort enskilda poster klickar du på **ta bort** - ![ ikonen ](../../media/scc-remove-icon.png) för värdet.</span><span class="sxs-lookup"><span data-stu-id="0f87d-176">To remove individual entries, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the value.</span></span>
+   - <span data-ttu-id="0f87d-177">Om du vill ta bort hela villkoret klickar du på **ta bort** ![ ikonen Ta bort ](../../media/scc-remove-icon.png) .</span><span class="sxs-lookup"><span data-stu-id="0f87d-177">To remove the whole condition, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the condition.</span></span>
+
+   <span data-ttu-id="0f87d-178">Om du vill lägga till ytterligare villkor klickar du på **Lägg till ett villkor** och väljer ett återstående värde under **används om**.</span><span class="sxs-lookup"><span data-stu-id="0f87d-178">To add an additional condition, click **Add a condition** and select a remaining value under **Applied if**.</span></span>
+
+   <span data-ttu-id="0f87d-179">Om du vill lägga till undantag klickar du på **Lägg till ett villkor** och väljer ett undantag under **utom om**.</span><span class="sxs-lookup"><span data-stu-id="0f87d-179">To add exceptions, click **Add a condition** and select an exception under **Except if**.</span></span> <span data-ttu-id="0f87d-180">Inställningarna och beteendet är likadana som villkoren.</span><span class="sxs-lookup"><span data-stu-id="0f87d-180">The settings and behavior are exactly like the conditions.</span></span>
+
+   <span data-ttu-id="0f87d-181">När du är klar klickar du på **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="0f87d-181">When you're finished, click **Next**.</span></span>
+
+6. <span data-ttu-id="0f87d-182">Granska inställningarna på sidan **Granska inställningar** som visas.</span><span class="sxs-lookup"><span data-stu-id="0f87d-182">On the **Review your settings** page that appears, review your settings.</span></span> <span data-ttu-id="0f87d-183">Du kan klicka på **Redigera** på varje inställning för att ändra den.</span><span class="sxs-lookup"><span data-stu-id="0f87d-183">You can click **Edit** on each setting to modify it.</span></span>
+
+   <span data-ttu-id="0f87d-184">När du är klar klickar du på **Slutför**.</span><span class="sxs-lookup"><span data-stu-id="0f87d-184">When you're finished, click **Finish**.</span></span>
+
+## <a name="use-the-security--compliance-center-to-view-safe-links-policies"></a><span data-ttu-id="0f87d-185">Använda tjänsten säkerhets & efterlevnad för att visa principer för säkra länkar</span><span class="sxs-lookup"><span data-stu-id="0f87d-185">Use the Security & Compliance Center to view Safe Links policies</span></span>
+
+1. <span data-ttu-id="0f87d-186">I säkerhets & Compliance Center går du till **Threat Management** \> **policy** - \> **säkra länkar**.</span><span class="sxs-lookup"><span data-stu-id="0f87d-186">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.</span></span>
+
+2. <span data-ttu-id="0f87d-187">På sidan **Safe Links** väljer du en princip i listan och klickar på den (markerar inte kryss rutan).</span><span class="sxs-lookup"><span data-stu-id="0f87d-187">On the **Safe Links** page, select a policy from the list and click on it (don't select the check box).</span></span>
+
+   <span data-ttu-id="0f87d-188">Princip detaljerna visas i ett flyg utåt</span><span class="sxs-lookup"><span data-stu-id="0f87d-188">The policy details appear in a fly out</span></span>
+
+## <a name="use-the-security--compliance-center-to-modify-safe-links-policies"></a><span data-ttu-id="0f87d-189">Använda inställningarna för säkerhets & efterlevnad för att ändra principer för säkra länkar</span><span class="sxs-lookup"><span data-stu-id="0f87d-189">Use the Security & Compliance Center to modify Safe Links policies</span></span>
+
+1. <span data-ttu-id="0f87d-190">I säkerhets & Compliance Center går du till **Threat Management** \> **policy** - \> **säkra länkar**.</span><span class="sxs-lookup"><span data-stu-id="0f87d-190">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.</span></span>
+
+2. <span data-ttu-id="0f87d-191">På sidan **Safe Links** väljer du en princip i listan och klickar på den (markerar inte kryss rutan).</span><span class="sxs-lookup"><span data-stu-id="0f87d-191">On the **Safe Links** page, select a policy from the list and click on it (don't select the check box).</span></span>
+
+3. <span data-ttu-id="0f87d-192">I princip informationen som visas klickar du på **Redigera princip**.</span><span class="sxs-lookup"><span data-stu-id="0f87d-192">In the policy details fly out that appears, click **Edit policy**.</span></span>
+
+<span data-ttu-id="0f87d-193">Tillgängliga inställningar i rutan Lägg på och som visas är identiska med de som beskrivs i avsnittet [använda säkerhets & efterlevnad för att skapa principer för säkra länkar](#use-the-security--compliance-center-to-create-safe-links-policies) .</span><span class="sxs-lookup"><span data-stu-id="0f87d-193">The available settings in the fly out that appears are identical to those described in the [Use the Security & Compliance Center to create Safe Links policies](#use-the-security--compliance-center-to-create-safe-links-policies) section.</span></span>
+
+<span data-ttu-id="0f87d-194">Om du vill aktivera eller inaktivera en princip eller ange prioritetsordning för principer kan du läsa följande avsnitt.</span><span class="sxs-lookup"><span data-stu-id="0f87d-194">To enable or disable a policy or set the policy priority order, see the following sections.</span></span>
+
+### <a name="enable-or-disable-safe-links-policies"></a><span data-ttu-id="0f87d-195">Principer för att aktivera och inaktivera säkra länkar</span><span class="sxs-lookup"><span data-stu-id="0f87d-195">Enable or disable Safe Links policies</span></span>
+
+1. <span data-ttu-id="0f87d-196">I säkerhets & Compliance Center går du till **Threat Management** \> **policy** - \> **säkra länkar**.</span><span class="sxs-lookup"><span data-stu-id="0f87d-196">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.</span></span>
+
+2. <span data-ttu-id="0f87d-197">Observera värdet i kolumnen **status** :</span><span class="sxs-lookup"><span data-stu-id="0f87d-197">Notice the value in the **Status** column:</span></span>
+
+   - <span data-ttu-id="0f87d-198">Flytta växlingsknappen åt vänster om du vill inaktivera principen:</span><span class="sxs-lookup"><span data-stu-id="0f87d-198">Move the toggle to the left to disable the policy:</span></span> ![Inaktivera princip](../../media/scc-toggle-off.png)<span data-ttu-id="0f87d-200">.</span><span class="sxs-lookup"><span data-stu-id="0f87d-200">.</span></span>
+
+   - <span data-ttu-id="0f87d-201">Flytta växlingsknappen åt höger om du vill aktivera principen:</span><span class="sxs-lookup"><span data-stu-id="0f87d-201">Move the toggle to the right to enable the policy:</span></span> ![Aktivera princip](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)<span data-ttu-id="0f87d-203">.</span><span class="sxs-lookup"><span data-stu-id="0f87d-203">.</span></span>
+
+### <a name="set-the-priority-of-safe-links-policies"></a><span data-ttu-id="0f87d-204">Ange prioritet för principer för säkra länkar</span><span class="sxs-lookup"><span data-stu-id="0f87d-204">Set the priority of Safe Links policies</span></span>
+
+<span data-ttu-id="0f87d-205">Som standard ges principer för säkra länkar en prioritet som baseras på den ordning de skapades i (nyare policys är lägre prioritet än äldre principer).</span><span class="sxs-lookup"><span data-stu-id="0f87d-205">By default, Safe Links policies are given a priority that's based on the order they were created in (newer polices are lower priority than older policies).</span></span> <span data-ttu-id="0f87d-206">Ett lägre prioritetsnummer innebär att principen har högre prioritet (0 är det högsta), och principerna bearbetas i prioritetsordning (principer med högre prioritet bearbetas före principer med lägre prioritet).</span><span class="sxs-lookup"><span data-stu-id="0f87d-206">A lower priority number indicates a higher priority for the policy (0 is the highest), and policies are processed in priority order (higher priority policies are processed before lower priority policies).</span></span> <span data-ttu-id="0f87d-207">Inga två policyer kan ha samma prioritet, och policyhantering stannar efter att den första policyn har tillämpats.</span><span class="sxs-lookup"><span data-stu-id="0f87d-207">No two policies can have the same priority, and policy processing stops after the first policy is applied.</span></span>
+
+<span data-ttu-id="0f87d-208">För mer information om ordningsföljden och hur flera policyer utvärderas och tillämpas, se [Order och prioritet för e-postskydd](how-policies-and-protections-are-combined.md).</span><span class="sxs-lookup"><span data-stu-id="0f87d-208">For more information about the order of precedence and how multiple policies are evaluated and applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).</span></span>
+
+<span data-ttu-id="0f87d-209">Principer för säkra länkar visas i den ordning de behandlas (den första principen har **prioritet** svärdet 0).</span><span class="sxs-lookup"><span data-stu-id="0f87d-209">Safe Links policies are displayed in the order they're processed (the first policy has the **Priority** value 0).</span></span>
+
+<span data-ttu-id="0f87d-210">**Obs!** i säkerhets & Compliance Center kan du bara ändra prioriteten för principen för säkra länkar när du har skapat den.</span><span class="sxs-lookup"><span data-stu-id="0f87d-210">**Note**: In the Security & Compliance Center, you can only change the priority of the Safe Links policy after you create it.</span></span> <span data-ttu-id="0f87d-211">I PowerShell kan du åsidosätta standard prioriteten när du skapar regeln för säkra länkar (som kan påverka prioriteringen för befintliga regler).</span><span class="sxs-lookup"><span data-stu-id="0f87d-211">In PowerShell, you can override the default priority when you create the safe links rule (which can affect the priority of existing rules).</span></span>
+
+<span data-ttu-id="0f87d-212">Du ändrar prioriteten för en princip genom att flytta principen uppåt eller nedåt i listan (du kan inte ändra **prioritetsnumret** direkt i Säkerhets- och efterlevnadscenter).</span><span class="sxs-lookup"><span data-stu-id="0f87d-212">To change the priority of a policy, move the policy up or down in the list (you can't directly modify the **Priority** number in the Security & Compliance Center).</span></span>
+
+1. <span data-ttu-id="0f87d-213">I säkerhets & Compliance Center går du till **Threat Management** \> **policy** - \> **säkra länkar**.</span><span class="sxs-lookup"><span data-stu-id="0f87d-213">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.</span></span>
+
+2. <span data-ttu-id="0f87d-214">På sidan **Safe Links** väljer du en princip i listan och klickar på den (markerar inte kryss rutan).</span><span class="sxs-lookup"><span data-stu-id="0f87d-214">On the **Safe Links** page, select a policy from the list and click on it (don't select the check box).</span></span>
+
+3. <span data-ttu-id="0f87d-215">I princip detaljerna som visas klickar du på knappen tillgänglig prioritet:</span><span class="sxs-lookup"><span data-stu-id="0f87d-215">In the policy details fly out that appears, click the available priority button:</span></span>
+
+   - <span data-ttu-id="0f87d-216">Principen för säkra länkar med **prioritet** svärdet **0** har bara knappen **minska prioritet** tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="0f87d-216">The Safe Links policy with the **Priority** value **0** has only the **Decrease priority** button available.</span></span>
+
+   - <span data-ttu-id="0f87d-217">Principen för säkra länkar med det lägsta **prioritet** svärdet (till exempel **3**) har bara knappen **öka prioritet** tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="0f87d-217">The Safe Links policy with the lowest **Priority** value (for example, **3**) has only the **Increase priority** button available.</span></span>
+
+   - <span data-ttu-id="0f87d-218">Om du har tre eller fler Safe Link-principer har de principer som gäller för de högsta och lägsta värdena både knappen **öka prioritet** och knappen för att **minska prioriteten** tillgängliga.</span><span class="sxs-lookup"><span data-stu-id="0f87d-218">If you have three or more Safe Links policies, policies between the highest and lowest priority values have both the **Increase priority** and **Decrease priority** buttons available.</span></span>
+
+4. <span data-ttu-id="0f87d-219">Klicka på **öka prioritet** eller **minska prioritet** för att ändra **prioritet** svärdet.</span><span class="sxs-lookup"><span data-stu-id="0f87d-219">Click **Increase priority** or **Decrease priority** to change the **Priority** value.</span></span>
+
+5. <span data-ttu-id="0f87d-220">Klicka på **Stäng** när du är klar.</span><span class="sxs-lookup"><span data-stu-id="0f87d-220">When you're finished, click **Close**.</span></span>
+
+## <a name="use-the-security--compliance-center-to-remove-safe-links-policies"></a><span data-ttu-id="0f87d-221">Använda inställningarna för säkerhets & efterlevnad för att ta bort principer för säkra länkar</span><span class="sxs-lookup"><span data-stu-id="0f87d-221">Use the Security & Compliance Center to remove Safe Links policies</span></span>
+
+1. <span data-ttu-id="0f87d-222">I säkerhets & Compliance Center går du till **Threat Management** \> **policy** - \> **säkra länkar**.</span><span class="sxs-lookup"><span data-stu-id="0f87d-222">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.</span></span>
+
+2. <span data-ttu-id="0f87d-223">På sidan **Safe Links** väljer du en princip i listan och klickar på den (markerar inte kryss rutan).</span><span class="sxs-lookup"><span data-stu-id="0f87d-223">On the **Safe Links** page, select a policy from the list and click on it (don't select the check box).</span></span>
+
+3. <span data-ttu-id="0f87d-224">I princip detaljerna som visas klickar du på **ta bort princip**och sedan på **Ja** i varnings dialog rutan som visas.</span><span class="sxs-lookup"><span data-stu-id="0f87d-224">In the policy details fly out that appears, click **Delete policy**, and then click **Yes** in the warning dialog that appears.</span></span>
+
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies"></a><span data-ttu-id="0f87d-225">Använda Exchange Online PowerShell eller fristående EOP PowerShell för att konfigurera principer för säkra länkar</span><span class="sxs-lookup"><span data-stu-id="0f87d-225">Use Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Links policies</span></span>
+
+<span data-ttu-id="0f87d-226">Som du redan har beskrivit innehåller en policy för Safe Links en princip för säkra länkar och en regel för säkra länkar.</span><span class="sxs-lookup"><span data-stu-id="0f87d-226">As previously described, a Safe Links policy consists of a safe links policy and a safe links rule.</span></span>
+
+<span data-ttu-id="0f87d-227">I PowerShell är skillnaden mellan principer för säkra länkar och regler för säkra länkar uppenbar.</span><span class="sxs-lookup"><span data-stu-id="0f87d-227">In PowerShell, the difference between safe links policies and safe links rules is apparent.</span></span> <span data-ttu-id="0f87d-228">Du hanterar principer för säkra länkar genom att använda cmdletarna \*\* \* -SafeLinksPolicy\*\* och du hanterar reglerna för säkra länkar genom att använda cmdlet \*\* \* -SafeLinksRule\*\* .</span><span class="sxs-lookup"><span data-stu-id="0f87d-228">You manage safe links policies by using the **\*-SafeLinksPolicy** cmdlets, and you manage safe links rules by using the **\*-SafeLinksRule** cmdlets.</span></span>
+
+- <span data-ttu-id="0f87d-229">I PowerShell skapar du principen för säkra länkar först och skapar sedan regeln för säkra länkar som identifierar den princip som regeln gäller för.</span><span class="sxs-lookup"><span data-stu-id="0f87d-229">In PowerShell, you create the safe links policy first, then you create the safe links rule that identifies the policy that the rule applies to.</span></span>
+- <span data-ttu-id="0f87d-230">I PowerShell ändrar du inställningarna för principen för säkra länkar och regeln för säkra länkar var för sig.</span><span class="sxs-lookup"><span data-stu-id="0f87d-230">In PowerShell, you modify the settings in the safe links policy and the safe links rule separately.</span></span>
+- <span data-ttu-id="0f87d-231">När du tar bort en princip för säkra länkar från PowerShell tas inte den motsvarande regeln för Safe-länkar bort automatiskt och vice versa.</span><span class="sxs-lookup"><span data-stu-id="0f87d-231">When you remove a safe links policy from PowerShell, the corresponding safe links rule isn't automatically removed, and vice versa.</span></span>
+
+### <a name="use-powershell-to-create-safe-links-policies"></a><span data-ttu-id="0f87d-232">Använda PowerShell för att skapa principer för säkra länkar</span><span class="sxs-lookup"><span data-stu-id="0f87d-232">Use PowerShell to create Safe Links policies</span></span>
+
+<span data-ttu-id="0f87d-233">Att skapa en princip för säkra länkar i PowerShell är en process i två steg:</span><span class="sxs-lookup"><span data-stu-id="0f87d-233">Creating a Safe Links policy in PowerShell is a two-step process:</span></span>
+
+1. <span data-ttu-id="0f87d-234">Skapa principen för säkra länkar.</span><span class="sxs-lookup"><span data-stu-id="0f87d-234">Create the safe links policy.</span></span>
+2. <span data-ttu-id="0f87d-235">Skapa regeln för säkra länkar som anger principen för säkra länkar som regeln gäller för.</span><span class="sxs-lookup"><span data-stu-id="0f87d-235">Create the safe links rule that specifies the safe links policy that the rule applies to.</span></span>
+
+ <span data-ttu-id="0f87d-236">**Anmärkningar**:</span><span class="sxs-lookup"><span data-stu-id="0f87d-236">**Notes**:</span></span>
+
+- <span data-ttu-id="0f87d-237">Du kan skapa en ny regel för ett säkert länkar och koppla en befintlig princip för osäkra länkar till den.</span><span class="sxs-lookup"><span data-stu-id="0f87d-237">You can create a new safe links rule and assign an existing, unassociated safe links policy to it.</span></span> <span data-ttu-id="0f87d-238">En regel för säkert länkar kan inte kopplas till fler än en princip för säkra länkar.</span><span class="sxs-lookup"><span data-stu-id="0f87d-238">A safe links rule can't be associated with more than one safe links policy.</span></span>
+
+- <span data-ttu-id="0f87d-239">Du kan konfigurera följande inställningar på nya principer för säkra länkar i PowerShell som inte är tillgängliga i säkerhets & Compliance Center förrän du har skapat principen:</span><span class="sxs-lookup"><span data-stu-id="0f87d-239">You can configure the following settings on new safe links policies in PowerShell that aren't available in the Security & Compliance Center until after you create the policy:</span></span>
+
+  - <span data-ttu-id="0f87d-240">Skapa den nya principen som inaktive rad (_aktive rad_ `$false` på **New-SafeLinksRule-** cmdleten).</span><span class="sxs-lookup"><span data-stu-id="0f87d-240">Create the new policy as disabled (_Enabled_ `$false` on the **New-SafeLinksRule** cmdlet).</span></span>
+  - <span data-ttu-id="0f87d-241">Ange prioriteten för principen när den skapas (_prioritet_ _\<Number\>_ ) på den **nya SafeLinksRule-** cmdleten.</span><span class="sxs-lookup"><span data-stu-id="0f87d-241">Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-SafeLinksRule** cmdlet).</span></span>
+
+- <span data-ttu-id="0f87d-242">En ny princip för säkra länkar som du skapar i PowerShell visas inte i fönstret säkerhets & efterlevnad förrän du tilldelar principen en regel för ett säkert länkar.</span><span class="sxs-lookup"><span data-stu-id="0f87d-242">A new safe links policy that you create in PowerShell isn't visible in the Security & Compliance Center until you assign the policy to a safe links rule.</span></span>
+
+#### <a name="step-1-use-powershell-to-create-a-safe-links-policy"></a><span data-ttu-id="0f87d-243">Steg 1: använda PowerShell för att skapa en policy för säkra länkar</span><span class="sxs-lookup"><span data-stu-id="0f87d-243">Step 1: Use PowerShell to create a safe links policy</span></span>
+
+<span data-ttu-id="0f87d-244">Använd den här syntaxen om du vill skapa en princip för säkra länkar:</span><span class="sxs-lookup"><span data-stu-id="0f87d-244">To create a safe links policy, use this syntax:</span></span>
+
+```PowerShell
+New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEnabled <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-DoNotAllowClickThrough <$true | $false>] [-DoNotTrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
+```
+
+<span data-ttu-id="0f87d-245">**Anmärkningar**:</span><span class="sxs-lookup"><span data-stu-id="0f87d-245">**Notes**:</span></span>
+
+- <span data-ttu-id="0f87d-246">Mer information om syntaxen för _DoNotRewriteUrls_ finns i [syntaxen för listan "Skriv inte om följande URL-adresser"](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).</span><span class="sxs-lookup"><span data-stu-id="0f87d-246">For details about the entry syntax to use for the _DoNotRewriteUrls_ parameter, see [Entry syntax for the "Do not rewrite the following URLs" list](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).</span></span>
+
+- <span data-ttu-id="0f87d-247">Ytterligare syntax som du kan använda för _DoNotRewriteUrls_ -parametern när du ändrar befintliga principer för säkra länkar med hjälp av cmdleten **set-SafeLinksPolicy** finns i avsnittet [använda PowerShell för att ändra principer för Safe Links](#use-powershell-to-modify-safe-links-policies) senare i den här artikeln.</span><span class="sxs-lookup"><span data-stu-id="0f87d-247">For additional syntax that you can use for the _DoNotRewriteUrls_ parameter when you modify existing safe links policies by using the **Set-SafeLinksPolicy** cmdlet, see the [Use PowerShell to modify safe links policies](#use-powershell-to-modify-safe-links-policies) section later in this article.</span></span>
+
+<span data-ttu-id="0f87d-248">I det här exemplet skapas en princip för säkra länkar med namnet contoso alla med följande värden:</span><span class="sxs-lookup"><span data-stu-id="0f87d-248">This example creates a safe links policy named Contoso All with the following values:</span></span>
+
+- <span data-ttu-id="0f87d-249">Aktivera URL-genomsökning och omskrivning i e-postmeddelanden.</span><span class="sxs-lookup"><span data-stu-id="0f87d-249">Turn on URL scanning and rewriting in email messages.</span></span>
+- <span data-ttu-id="0f87d-250">Aktivera URL-genomsökning i Teams (tryck bara på för hands version).</span><span class="sxs-lookup"><span data-stu-id="0f87d-250">Turn on URL scanning in Teams (TAP Preview only).</span></span>
+- <span data-ttu-id="0f87d-251">Aktivera genomsökning i real tid med URL-adresser, inklusive klickade på länkar som pekar på filer.</span><span class="sxs-lookup"><span data-stu-id="0f87d-251">Turn on real-time scanning of clicked URLs, including clicked links that point to files.</span></span>
+- <span data-ttu-id="0f87d-252">Vänta på att URL-genomsökningen ska slutföras innan du levererar meddelandet.</span><span class="sxs-lookup"><span data-stu-id="0f87d-252">Wait for URL scanning to complete before delivering the message.</span></span>
+- <span data-ttu-id="0f87d-253">Aktivera URL-genomsökning och omskrivning för interna meddelanden.</span><span class="sxs-lookup"><span data-stu-id="0f87d-253">Turn on URL scanning and rewriting for internal messages.</span></span>
+- <span data-ttu-id="0f87d-254">Spåra användar klickningar relaterade till skydd mot säkra länkar (vi använder inte parametern _DoNotTrackUserClicks_ och standardvärdet är $false, vilket innebär att användare klickar på spåras).</span><span class="sxs-lookup"><span data-stu-id="0f87d-254">Track user clicks related to Safe Links protection (we aren't using the _DoNotTrackUserClicks_ parameter, and the default value is $false, which means user clicks are tracked).</span></span>
+- <span data-ttu-id="0f87d-255">Tillåt inte användare att klicka dig fram till original-URL: en.</span><span class="sxs-lookup"><span data-stu-id="0f87d-255">Do not allow users to click through to the original URL.</span></span>
+
+```PowerShell
+New-SafeLinksPolicy -Name "Contoso All" -IsEnabled $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -DoNotAllowClickThrough $true
+```
+
+<span data-ttu-id="0f87d-256">Detaljerad information om syntax och parametrar finns i [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy).</span><span class="sxs-lookup"><span data-stu-id="0f87d-256">For detailed syntax and parameter information, see [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy).</span></span>
+
+#### <a name="step-2-use-powershell-to-create-a-safe-links-rule"></a><span data-ttu-id="0f87d-257">Steg 2: använda PowerShell för att skapa en regel för säkra länkar</span><span class="sxs-lookup"><span data-stu-id="0f87d-257">Step 2: Use PowerShell to create a safe links rule</span></span>
+
+<span data-ttu-id="0f87d-258">Använd den här syntaxen om du vill skapa en regel för säkra länkar:</span><span class="sxs-lookup"><span data-stu-id="0f87d-258">To create a safe links rule, use this syntax:</span></span>
+
+```PowerShell
+New-SafeLinksRule -Name "<RuleName>" -SafeLinksPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"] [-Enabled <$true | $false>]
+```
+
+<span data-ttu-id="0f87d-259">I det här exemplet skapas en regel för säkra länkar som heter Contoso alla med följande villkor:</span><span class="sxs-lookup"><span data-stu-id="0f87d-259">This example creates a safe links rule named Contoso All with the following conditions:</span></span>
+
+- <span data-ttu-id="0f87d-260">Regeln kopplas till principen för säkra länkar med namnet contoso all.</span><span class="sxs-lookup"><span data-stu-id="0f87d-260">The rule is associated with the safe links policy named Contoso All.</span></span>
+- <span data-ttu-id="0f87d-261">Regeln gäller för alla mottagare i contoso.com-domänen.</span><span class="sxs-lookup"><span data-stu-id="0f87d-261">The rule applies to all recipients in the contoso.com domain.</span></span>
+- <span data-ttu-id="0f87d-262">Eftersom vi inte använder _prioritets_ parametern används standard prioriteten.</span><span class="sxs-lookup"><span data-stu-id="0f87d-262">Because we aren't using the _Priority_ parameter, the default priority is used.</span></span>
+- <span data-ttu-id="0f87d-263">Regeln är aktive rad (vi använder inte den _aktiverade_ parametern och standardvärdet är `$true` ).</span><span class="sxs-lookup"><span data-stu-id="0f87d-263">The rule is enabled (we aren't using the _Enabled_ parameter, and the default value is `$true`).</span></span>
+
+```powershell
+New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs contoso.com
+```
+
+<span data-ttu-id="0f87d-264">Detaljerad information om syntax och parametrar finns i [New-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/new-safelinksrule).</span><span class="sxs-lookup"><span data-stu-id="0f87d-264">For detailed syntax and parameter information, see [New-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/new-safelinksrule).</span></span>
+
+### <a name="use-powershell-to-view-safe-links-policies"></a><span data-ttu-id="0f87d-265">Använda PowerShell för att visa principer för säkra länkar</span><span class="sxs-lookup"><span data-stu-id="0f87d-265">Use PowerShell to view safe links policies</span></span>
+
+<span data-ttu-id="0f87d-266">Använd följande syntax för att visa befintliga principer för säkra länkar:</span><span class="sxs-lookup"><span data-stu-id="0f87d-266">To view existing safe links policies, use the following syntax:</span></span>
+
+```PowerShell
+Get-SafeLinksPolicy [-Identity "<PolicyIdentity>"] [| <Format-Table | Format-List> <Property1,Property2,...>]
+```
+
+<span data-ttu-id="0f87d-267">I det här exemplet returneras en sammanfattande lista över alla principer för säkra länkar.</span><span class="sxs-lookup"><span data-stu-id="0f87d-267">This example returns a summary list of all safe links policies.</span></span>
+
+```PowerShell
+Get-SafeLinksPolicy | Format-Table Name
+```
+
+<span data-ttu-id="0f87d-268">I det här exemplet returneras detaljerad information för principen för säkra länkar som heter Contoso-chefer.</span><span class="sxs-lookup"><span data-stu-id="0f87d-268">This example returns detailed information for the safe links policy named Contoso Executives.</span></span>
+
+```PowerShell
+Get-SafeLinksPolicy -Identity "Contoso Executives"
+```
+
+<span data-ttu-id="0f87d-269">Detaljerad information om syntax och parametrar finns i [Get-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/get-safelinkspolicy).</span><span class="sxs-lookup"><span data-stu-id="0f87d-269">For detailed syntax and parameter information, see [Get-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/get-safelinkspolicy).</span></span>
+
+### <a name="use-powershell-to-view-safe-links-rules"></a><span data-ttu-id="0f87d-270">Använda PowerShell för att visa regler för säkra länkar</span><span class="sxs-lookup"><span data-stu-id="0f87d-270">Use PowerShell to view safe links rules</span></span>
+
+<span data-ttu-id="0f87d-271">Använd följande syntax för att visa befintliga regler för säkra länkar:</span><span class="sxs-lookup"><span data-stu-id="0f87d-271">To view existing safe links rules, use the following syntax:</span></span>
+
+```PowerShell
+Get-SafeLinksRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled] [| <Format-Table | Format-List> <Property1,Property2,...>]
+```
+
+<span data-ttu-id="0f87d-272">I det här exemplet returneras en sammanfattande lista över alla regler för säker länk.</span><span class="sxs-lookup"><span data-stu-id="0f87d-272">This example returns a summary list of all safe links rules.</span></span>
+
+```PowerShell
+Get-SafeLinksRule | Format-Table Name,State
+```
+
+<span data-ttu-id="0f87d-273">Om du vill filtrera listan efter aktiverade eller inaktiverade regler kör du följande kommandon:</span><span class="sxs-lookup"><span data-stu-id="0f87d-273">To filter the list by enabled or disabled rules, run the following commands:</span></span>
+
+```PowerShell
+Get-SafeLinksRule -State Disabled
+```
+
+```PowerShell
+Get-SafeLinksRule -State Enabled
+```
+
+<span data-ttu-id="0f87d-274">I det här exemplet returneras detaljerad information för regeln för säkra länkar som heter Contoso-chefer.</span><span class="sxs-lookup"><span data-stu-id="0f87d-274">This example returns detailed information for the safe links rule named Contoso Executives.</span></span>
+
+```PowerShell
+Get-SafeLinksRule -Identity "Contoso Executives"
+```
+
+<span data-ttu-id="0f87d-275">Detaljerad information om syntax och parametrar finns i [Get-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/get-safelinksrule).</span><span class="sxs-lookup"><span data-stu-id="0f87d-275">For detailed syntax and parameter information, see [Get-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/get-safelinksrule).</span></span>
+
+### <a name="use-powershell-to-modify-safe-links-policies"></a><span data-ttu-id="0f87d-276">Använda PowerShell för att ändra principer för säkra länkar</span><span class="sxs-lookup"><span data-stu-id="0f87d-276">Use PowerShell to modify safe links policies</span></span>
+
+<span data-ttu-id="0f87d-277">Det går inte att byta namn på en policy för säkra länkar i PowerShell (cmdleten **set-SafeLinksPolicy** , saknar _namn_ parameter).</span><span class="sxs-lookup"><span data-stu-id="0f87d-277">You can't rename a safe links policy in PowerShell (the **Set-SafeLinksPolicy** cmdlet has no _Name_ parameter).</span></span> <span data-ttu-id="0f87d-278">När du byter namn på en policy för säkra länkar i säkerhets &s kontroll namn ändras inte _regeln_för säkra länkar.</span><span class="sxs-lookup"><span data-stu-id="0f87d-278">When you rename a Safe Links policy in the Security & Compliance Center, you're only renaming the safe links _rule_.</span></span>
+
+<span data-ttu-id="0f87d-279">Det enda alternativet för att ändra principer för säkra länkar i PowerShell är den tillgängliga syntaxen för parametern _DoNotRewriteUrls_ (alternativet ["Skriv inte om följande URL-adresser"](atp-safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)):</span><span class="sxs-lookup"><span data-stu-id="0f87d-279">The only additional consideration for modifying safe links policies in PowerShell is the available syntax for the _DoNotRewriteUrls_ parameter (the ["Do not rewrite the following URLs" list](atp-safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)):</span></span>
+
+- <span data-ttu-id="0f87d-280">Om du vill lägga till värden som ersätter befintliga poster kan du använda följande syntax: `"Entry1","Entry2,..."EntryN"` .</span><span class="sxs-lookup"><span data-stu-id="0f87d-280">To add values that will replace any existing entries, use the following syntax: `"Entry1","Entry2,..."EntryN"`.</span></span>
+- <span data-ttu-id="0f87d-281">Använd följande syntax för att lägga till eller ta bort värden utan att påverka andra befintliga poster: `@{Add="Entry1","Entry2"...; Remove="Entry3","Entry4"...}`</span><span class="sxs-lookup"><span data-stu-id="0f87d-281">To add or remove values without affecting other existing entries, use the following syntax: `@{Add="Entry1","Entry2"...; Remove="Entry3","Entry4"...}`</span></span>
+
+<span data-ttu-id="0f87d-282">I annat fall är samma inställningar tillgängliga när du skapar en princip för säkra länkar enligt beskrivningen i [steg 1: använda PowerShell för att skapa en princip för säkra länkar](#step-1-use-powershell-to-create-a-safe-links-policy) i den här artikeln.</span><span class="sxs-lookup"><span data-stu-id="0f87d-282">Otherwise, the same settings are available when you create a safe links policy as described in the [Step 1: Use PowerShell to create a safe links policy](#step-1-use-powershell-to-create-a-safe-links-policy) section earlier in this article.</span></span>
+
+<span data-ttu-id="0f87d-283">Använd den här syntaxen om du vill ändra en princip för ett säkert länkar:</span><span class="sxs-lookup"><span data-stu-id="0f87d-283">To modify a safe links policy, use this syntax:</span></span>
+
+```PowerShell
+Set-SafeLinksPolicy -Identity "<PolicyName>" <Settings>
+```
+
+<span data-ttu-id="0f87d-284">Detaljerad information om syntax och parametrar finns i [set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy).</span><span class="sxs-lookup"><span data-stu-id="0f87d-284">For detailed syntax and parameter information, see [Set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy).</span></span>
+
+### <a name="use-powershell-to-modify-safe-links-rules"></a><span data-ttu-id="0f87d-285">Använda PowerShell för att ändra regler för säkra länkar</span><span class="sxs-lookup"><span data-stu-id="0f87d-285">Use PowerShell to modify safe links rules</span></span>
+
+<span data-ttu-id="0f87d-286">Den enda inställning som inte är tillgänglig när du ändrar en regel för ett säkert länkar i PowerShell är den _aktiverade_ parametern som gör att du kan skapa en regel för inaktivitet.</span><span class="sxs-lookup"><span data-stu-id="0f87d-286">The only setting that's not available when you modify a safe links rule in PowerShell is the _Enabled_ parameter that allows you to create a disabled rule.</span></span> <span data-ttu-id="0f87d-287">Information om hur du aktiverar eller inaktiverar befintliga Safe Links-regler finns i nästa avsnitt.</span><span class="sxs-lookup"><span data-stu-id="0f87d-287">To enable or disable existing safe links rules, see the next section.</span></span>
+
+<span data-ttu-id="0f87d-288">I annat fall är samma inställningar tillgängliga när du skapar en regel enligt beskrivningen i [steg 2: använda PowerShell för att skapa en regel för ett säkert länkar](#step-2-use-powershell-to-create-a-safe-links-rule) i den här artikeln.</span><span class="sxs-lookup"><span data-stu-id="0f87d-288">Otherwise, the same settings are available when you create a rule as described in the [Step 2: Use PowerShell to create a safe links rule](#step-2-use-powershell-to-create-a-safe-links-rule) section earlier in this article.</span></span>
+
+<span data-ttu-id="0f87d-289">Om du vill ändra en regel för ett säkert länkar använder du följande syntax:</span><span class="sxs-lookup"><span data-stu-id="0f87d-289">To modify a safe links rule, use this syntax:</span></span>
+
+```PowerShell
+Set-SafeLinksRule -Identity "<RuleName>" <Settings>
+```
+
+<span data-ttu-id="0f87d-290">Detaljerad information om syntax och parametrar finns i [set-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule).</span><span class="sxs-lookup"><span data-stu-id="0f87d-290">For detailed syntax and parameter information, see [Set-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule).</span></span>
+
+### <a name="use-powershell-to-enable-or-disable-safe-links-rules"></a><span data-ttu-id="0f87d-291">Använda PowerShell för att aktivera eller inaktivera regler för säkra länkar</span><span class="sxs-lookup"><span data-stu-id="0f87d-291">Use PowerShell to enable or disable safe links rules</span></span>
+
+<span data-ttu-id="0f87d-292">När du aktiverar eller inaktiverar en regel för ett säkert länkar i PowerShell aktive ras eller inaktive ras hela principen för säkra länkar (reglerna för säkra länkar och tilldelnings principen för tilldelade säkra länkar).</span><span class="sxs-lookup"><span data-stu-id="0f87d-292">Enabling or disabling a safe links rule in PowerShell enables or disables the whole Safe Links policy (the safe links rule and the assigned safe links policy).</span></span>
+
+<span data-ttu-id="0f87d-293">Använd den här syntaxen om du vill aktivera eller inaktivera en regel för ett säkert länkar i PowerShell:</span><span class="sxs-lookup"><span data-stu-id="0f87d-293">To enable or disable a safe links rule in PowerShell, use this syntax:</span></span>
+
+```PowerShell
+<Enable-SafeLinksRule | Disable-SafeLinksRule> -Identity "<RuleName>"
+```
+
+<span data-ttu-id="0f87d-294">Det här exemplet inaktiverar regeln för säkra länkar som heter marknadsförings avdelningen.</span><span class="sxs-lookup"><span data-stu-id="0f87d-294">This example disables the safe links rule named Marketing Department.</span></span>
+
+```PowerShell
+Disable-SafeLinksRule -Identity "Marketing Department"
+```
+
+<span data-ttu-id="0f87d-295">I det här exemplet aktiveras samma regel.</span><span class="sxs-lookup"><span data-stu-id="0f87d-295">This example enables same rule.</span></span>
+
+```PowerShell
+Enable-SafeLinksRule -Identity "Marketing Department"
+```
+
+<span data-ttu-id="0f87d-296">Detaljerad information om syntax och parametrar finns i [Aktivera-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/enable-safelinksrule) och [disable-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/disable-safelinksrule).</span><span class="sxs-lookup"><span data-stu-id="0f87d-296">For detailed syntax and parameter information, see [Enable-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/enable-safelinksrule) and [Disable-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/disable-safelinksrule).</span></span>
+
+### <a name="use-powershell-to-set-the-priority-of-safe-links-rules"></a><span data-ttu-id="0f87d-297">Använda PowerShell för att ange prioritet för regler för säkra länkar</span><span class="sxs-lookup"><span data-stu-id="0f87d-297">Use PowerShell to set the priority of safe links rules</span></span>
+
+<span data-ttu-id="0f87d-298">Det högsta prioritetsvärde du kan ange för en regel är 0.</span><span class="sxs-lookup"><span data-stu-id="0f87d-298">The highest priority value you can set on a rule is 0.</span></span> <span data-ttu-id="0f87d-299">Det lägsta värde du kan ange beror på antalet regler.</span><span class="sxs-lookup"><span data-stu-id="0f87d-299">The lowest value you can set depends on the number of rules.</span></span> <span data-ttu-id="0f87d-300">Om du till exempel har fem regler kan du använda prioritetsvärden från 0 till 4.</span><span class="sxs-lookup"><span data-stu-id="0f87d-300">For example, if you have five rules, you can use the priority values 0 through 4.</span></span> <span data-ttu-id="0f87d-301">Om du ändrar prioriteten för en befintlig regel kan det ha en dominoeffekt på andra regler.</span><span class="sxs-lookup"><span data-stu-id="0f87d-301">Changing the priority of an existing rule can have a cascading effect on other rules.</span></span> <span data-ttu-id="0f87d-302">Om du till exempel har fem anpassade regler (prioriteterna 0 till 4) och du ändrar prioriteten för en regel till 2 ändras den befintliga regeln med prioritet 2 till prioritet 3, och regeln med prioritet 3 ändras till prioritet 4.</span><span class="sxs-lookup"><span data-stu-id="0f87d-302">For example, if you have five custom rules (priorities 0 through 4), and you change the priority of a rule to 2, the existing rule with priority 2 is changed to priority 3, and the rule with priority 3 is changed to priority 4.</span></span>
+
+<span data-ttu-id="0f87d-303">Använd följande syntax för att ange prioriteten för en regel för säkra länkar i PowerShell:</span><span class="sxs-lookup"><span data-stu-id="0f87d-303">To set the priority of a safe links rule in PowerShell, use the following syntax:</span></span>
+
+```PowerShell
+Set-SafeLinksRule -Identity "<RuleName>" -Priority <Number>
+```
+
+<span data-ttu-id="0f87d-304">I det här exemplet anges prioriteten för regeln med namnet Marketing Department till 2.</span><span class="sxs-lookup"><span data-stu-id="0f87d-304">This example sets the priority of the rule named Marketing Department to 2.</span></span> <span data-ttu-id="0f87d-305">Alla befintliga regler som har en prioritet som är mindre än eller lika med 2 minskas med 1 (deras prioritetsnummer ökas med 1).’</span><span class="sxs-lookup"><span data-stu-id="0f87d-305">All existing rules that have a priority less than or equal to 2 are decreased by 1 (their priority numbers are increased by 1).</span></span>
+
+```PowerShell
+Set-SafeLinksRule -Identity "Marketing Department" -Priority 2
+```
+
+<span data-ttu-id="0f87d-306">**Obs!** om du vill ange prioriteten för en ny regel när du skapar den kan du använda _prioritets_ parametern i **New-SafeLinksRule** cmdlet i stället.</span><span class="sxs-lookup"><span data-stu-id="0f87d-306">**Note**: To set the priority of a new rule when you create it, use the _Priority_ parameter on the **New-SafeLinksRule** cmdlet instead.</span></span>
+
+<span data-ttu-id="0f87d-307">Detaljerad information om syntax och parametrar finns i [set-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule).</span><span class="sxs-lookup"><span data-stu-id="0f87d-307">For detailed syntax and parameter information, see [Set-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule).</span></span>
+
+### <a name="use-powershell-to-remove-safe-links-policies"></a><span data-ttu-id="0f87d-308">Använda PowerShell för att ta bort principer för säkra länkar</span><span class="sxs-lookup"><span data-stu-id="0f87d-308">Use PowerShell to remove safe links policies</span></span>
+
+<span data-ttu-id="0f87d-309">När du använder PowerShell för att ta bort en princip för säkra länkar tas inte den motsvarande regeln för Safe Links bort.</span><span class="sxs-lookup"><span data-stu-id="0f87d-309">When you use PowerShell to remove a safe links policy, the corresponding safe links rule isn't removed.</span></span>
+
+<span data-ttu-id="0f87d-310">Använd den här syntaxen om du vill ta bort en princip för säkra länkar i PowerShell:</span><span class="sxs-lookup"><span data-stu-id="0f87d-310">To remove a safe links policy in PowerShell, use this syntax:</span></span>
+
+```PowerShell
+Remove-SafeLinksPolicy -Identity "<PolicyName>"
+```
+
+<span data-ttu-id="0f87d-311">Det här exemplet tar bort policyn för säkra länkar som heter marknadsförings avdelningen.</span><span class="sxs-lookup"><span data-stu-id="0f87d-311">This example removes the safe links policy named Marketing Department.</span></span>
+
+```PowerShell
+Remove-SafeLinksPolicy -Identity "Marketing Department"
+```
+
+<span data-ttu-id="0f87d-312">Detaljerad information om syntax och parametrar finns i [Remove-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-safelinkspolicy).</span><span class="sxs-lookup"><span data-stu-id="0f87d-312">For detailed syntax and parameter information, see [Remove-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-safelinkspolicy).</span></span>
+
+### <a name="use-powershell-to-remove-safe-links-rules"></a><span data-ttu-id="0f87d-313">Använda PowerShell för att ta bort regler för säkra länkar</span><span class="sxs-lookup"><span data-stu-id="0f87d-313">Use PowerShell to remove safe links rules</span></span>
+
+<span data-ttu-id="0f87d-314">När du använder PowerShell för att ta bort en regel för ett säkert länkar tas inte motsvarande principer för säkra länkar bort.</span><span class="sxs-lookup"><span data-stu-id="0f87d-314">When you use PowerShell to remove a safe links rule, the corresponding safe links policy isn't removed.</span></span>
+
+<span data-ttu-id="0f87d-315">Använd den här syntaxen om du vill ta bort en regel för säkra länkar i PowerShell:</span><span class="sxs-lookup"><span data-stu-id="0f87d-315">To remove a safe links rule in PowerShell, use this syntax:</span></span>
+
+```PowerShell
+Remove-SafeLinksRule -Identity "<PolicyName>"
+```
+
+<span data-ttu-id="0f87d-316">Det här exemplet tar bort regeln för säkra länkar som heter marknadsförings avdelningen.</span><span class="sxs-lookup"><span data-stu-id="0f87d-316">This example removes the safe links rule named Marketing Department.</span></span>
+
+```PowerShell
+Remove-SafeLinksRule -Identity "Marketing Department"
+```
+
+<span data-ttu-id="0f87d-317">Detaljerad information om syntax och parametrar finns i [Remove-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/remove-safelinksrule).</span><span class="sxs-lookup"><span data-stu-id="0f87d-317">For detailed syntax and parameter information, see [Remove-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/remove-safelinksrule).</span></span>
+
+<span data-ttu-id="0f87d-318">Om du vill kontrol lera att de säkra länkarna är att söka igenom meddelanden markerar du de tillgängliga avancerade skydds rapporterings rapporterna.</span><span class="sxs-lookup"><span data-stu-id="0f87d-318">To verify that Safe Links is scanning messages, check the available Advanced Threat Protection reports.</span></span> <span data-ttu-id="0f87d-319">Mer information finns i [Visa rapporter om Office 365 ATP](view-reports-for-atp.md) och [använda utforskaren i säkerhets & Compliance Center](threat-explorer.md).</span><span class="sxs-lookup"><span data-stu-id="0f87d-319">For more information, see [View reports for Office 365 ATP](view-reports-for-atp.md) and [Use Explorer in the Security & Compliance Center](threat-explorer.md).</span></span>
+
+## <a name="how-do-you-know-these-procedures-worked"></a><span data-ttu-id="0f87d-320">Hur vet jag att de här procedurerna fungerade?</span><span class="sxs-lookup"><span data-stu-id="0f87d-320">How do you know these procedures worked?</span></span>
+
+<span data-ttu-id="0f87d-321">Gör något av följande för att kontrol lera att du har skapat, ändrat eller tagit bort principer för säkra länkar:</span><span class="sxs-lookup"><span data-stu-id="0f87d-321">To verify that you've successfully created, modified, or removed Safe Links policies, do any of the following steps:</span></span>
+
+- <span data-ttu-id="0f87d-322">I säkerhets & Compliance Center går du till **Threat Management** \> **policy** - \> **säkra länkar**.</span><span class="sxs-lookup"><span data-stu-id="0f87d-322">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.</span></span> <span data-ttu-id="0f87d-323">Verifiera listan med principer, deras **status** värden och deras **prioriterade** värden.</span><span class="sxs-lookup"><span data-stu-id="0f87d-323">Verify the list of policies, their **Status** values, and their **Priority** values.</span></span> <span data-ttu-id="0f87d-324">Om du vill visa mer information väljer du den i listan och visar detaljerna i Lägg utåt.</span><span class="sxs-lookup"><span data-stu-id="0f87d-324">To view more details, select the policy from the list, and view the details in the fly out.</span></span>
+
+- <span data-ttu-id="0f87d-325">I Exchange Online PowerShell eller Exchange Online Protection PowerShell ersätter du \<Name\> med namnet på principen eller regeln, kör följande kommando och kontrollerar inställningarna:</span><span class="sxs-lookup"><span data-stu-id="0f87d-325">In Exchange Online PowerShell or Exchange Online Protection PowerShell, replace \<Name\> with the name of the policy or rule, run the following command, and verify the settings:</span></span>
+
+  ```PowerShell
+  Get-SafeLinksPolicy -Identity "<Name>"
+  ```
+
+  ```PowerShell
+  Get-SafeLinksRule -Identity "<Name>"
+  ```
