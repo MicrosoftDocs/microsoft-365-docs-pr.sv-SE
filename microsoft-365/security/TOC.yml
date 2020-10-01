@@ -439,8 +439,6 @@
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: Översikt över instrumentpanelen för säkerhet
               href: ./office-365-security/security-dashboard.md
-            - name: Visa information om skadliga filer
-              href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
         - name: Office 365 Avancerat skydd
           href: ./office-365-security/office-365-atp.md
           items:
@@ -452,19 +450,23 @@
               items:
                 - name: Konfigurationsuppgifter för global administratör
                   items:
-                    - name: Konfigurera ATP-principer för säkra länkar
-                      href: ./office-365-security/set-up-atp-safe-links-policies.md
-                    - name: Konfigurera ATP-principer för säkra bifogade filer
+                    - name: Konfigurera principer för säkra bifogade filer i Office 365 ATP
                       href: ./office-365-security/set-up-atp-safe-attachments-policies.md
-                    - name: Konfigurera en anpassad lista med URL-adresser som inte ska skrivas om
-                      href: ./office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md
-                    - name: Konfigurera en anpassad lista med blockerade URL-adresser
-                      href: ./office-365-security/set-up-a-custom-blocked-urls-list-atp.md
+                    - name: Konfigurera principer för säkra länkar i Office 365 ATP
+                      href: ./office-365-security/set-up-atp-safe-links-policies.md
+                    - name: Konfigurera globala inställningar för säkra länkar i Office 365 ATP
+                      href: ./office-365-security/configure-global-settings-for-safe-links.md
                 - name: Konfigurationsuppgifter för rolladministratör
                   items:
                     - name: 'Aktivera ATP för SharePoint, OneDrive och Microsoft Teams'
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
-            - name: Kampanjvyer
+            - name: Säkra bilagor i Office 365 ATP
+              href: ./office-365-security/atp-safe-attachments.md
+            - name: 'ATP för SharePoint, OneDrive och Microsoft Teams'
+              href: ./office-365-security/atp-for-spo-odb-and-teams.md
+            - name: Säkra länkar i Office 365 ATP
+              href: ./office-365-security/atp-safe-links.md
+            - name: Kampanjvyer i Office 365 ATP
               href: ./office-365-security/campaigns.md
             - name: Automatiska undersökningar och svar
               items:
@@ -490,8 +492,6 @@
               href: ./office-365-security/view-reports-for-atp.md
             - name: Förstå de senaste attackerna med hotanalys
               href: ./mtp/latest-attack-campaigns.md
-            - name: Information om vad varningssidorna för ATP – säkra länkar betyder
-              href: ./office-365-security/atp-safe-links-warning-pages.md
             - name: Använda hotspårare
               href: ./office-365-security/threat-trackers.md
             - name: Attacksimulatorn i Office 365 ATP
@@ -515,14 +515,6 @@
               items:
                 - name: Så fungerar automatiska undersökningar och svar
                   href: ./office-365-security/automated-investigation-response-office.md
-                - name: Så fungerar ATP – säkra länkar
-                  href: ./office-365-security/how-atp-safe-links-works.md
-                - name: Så fungerar ATP – säkra bifogade filer
-                  href: ./office-365-security/how-atp-safe-attachments-works.md
-                - name: Dynamisk leverans förhandsgranskning
-                  href: ./office-365-security/dynamic-delivery-and-previewing.md
-                - name: 'ATP för SharePoint, OneDrive och Microsoft Teams'
-                  href: ./office-365-security/atp-for-spo-odb-and-teams.md
                 - name: Så fungerar undersökning av hot och svar
                   href: ./office-365-security/office-365-ti.md
         - name: Hantering av säkerhetsincidenter
