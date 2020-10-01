@@ -14,17 +14,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur du skapar, ändrar och tar bort de avancerade AntiPhishing-principer som är tillgängliga i organisationer med Office 365-tjänsten för avancerat skydd (Office 365 ATP).
-ms.openlocfilehash: 2986102b549b7302a7a4ac533f80846d832aeb41
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c08046bdc9e72bc824dc28acdf2443c9071236a0
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328077"
+ms.locfileid: "48333552"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Konfigurera principer för ATP-skydd mot nätfiske
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 ATP anti-phishing-principer är en del av [Office 365 Avancerat skydd](office-365-atp.md). ATP anti-phishing-principer kan bidra till att skydda din organisation från illasinnade nätfiske-attacker och andra typer av nät fiske attacker. Mer information om skillnaderna mellan anti-nätfiske-principer i Exchange Online Protection (EOP) och ATP-nätfiske-regler finns i [skydd mot nätfiske](anti-phishing-protection.md).
 
@@ -63,7 +62,7 @@ För att öka effektiviteten för skydd mot nätfiske kan du skapa anpassade pri
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna för detta ämne:
+- Du måste tilldelas behörigheter innan du kan utföra åtgärderna i den här artikeln:
 
   - För att lägga till, ändra och ta bort ATP-Antivirus principer måste du vara medlem i någon av följande roll grupper:
 
@@ -176,6 +175,8 @@ Gör så här om du vill ändra ATP-Antivirus principer: en ny princip som du ha
 
      - **Inkludera automatiskt de domäner jag äger**: standardvärdet är **inaktiverat**. Aktivera den genom att dra den till **på**.
      - **Inkludera anpassade domäner**: standardvärdet är **inaktiverat**. Om du vill aktivera funktionen drar du växlings knappen till **på på**och anger sedan domän namnet (till exempel contoso.com) i rutan **Lägg till domäner** , trycker på RETUR och upprepar efter behov.
+
+       **Obs!** i området säkerhets & efterlevnad kan du ange maximalt 20 domäner. I Exchange Online PowerShell kan du ange högst 50 domäner.
 
    - **Åtgärder**: Klicka på **Redigera**
 

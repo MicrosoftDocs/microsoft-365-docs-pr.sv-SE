@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Data transporter är bakgrunds åtgärder som inträffar när Microsoft flyttar tjänster och tillhör ande data för din klient organisation till ett nytt Data Center geo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: acd2601d32617c56019ca8b4bf8688ce40f5d76a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d2e63dd046f62f07e367b3632f96bf7261b99c9c
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950278"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333706"
 ---
 # <a name="during-and-after-your-data-move"></a>Under och efter dataflytt
 
@@ -30,8 +30,7 @@ Data flyttas är en backend-åtgärd som påverkar slutanvändaren minimalt. Ing
 > [!NOTE]
 > Flyttningarna sker vid olika tillfällen för varje tjänst. Det innebär att du ser de reducerade funktionerna för varje tjänst samtidigt. 
   
-Titta på meddelande Center för Microsoft 365 för att bekräfta när det rör sig om för varje Exchange Online, SharePoint Online, teams och Skype för företag. Som du ser i tabellen nedan kan det ta upp till 24 månader efter det att registrerings perioden är slut för att slutföra alla begärda data för alla kunder i en viss geo. Om du får problem med klient organisationen efter flytten kontaktar du [support](https://go.microsoft.com/fwlink/p/?LinkID=522459) för att få hjälp. 
-  
+Se meddelande Center för Microsoft 365 för att bekräfta när det rör sig om för varje Exchange Online-, SharePoint Online-och Teams-chatt. Som du ser i tabellen nedan kan det ta upp till 24 månader efter det att registrerings perioden är slut för att komplettera alla grundläggande kunddata på rest till det nya data Center geo.   
 
 |**Kunder med anmälan land i**|**Alla flyttningar slutförda av**|
 |:-----|:-----|
@@ -46,7 +45,7 @@ Titta på meddelande Center för Microsoft 365 för att bekräfta när det rör 
 |Sydafrika  <br/> |Den 1 juli 2022  <br/> |
 |Schweiz, Liechtenstein  <br/> |Den 1 juli 2022  <br/> |
 |Norge  <br/> |Den 1 november 2022  <br/> |
-|Tyskland  <br/> |Disponera  <br/> |
+|Tyskland  <br/> |Den 1 april 2023  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -67,13 +66,9 @@ När SharePoint Online flyttas flyttas även data för följande tjänster:
   
 - En enhet för företag
     
-- Project Online
-    
-- Project för Microsoft 365
-    
 - Microsoft 365 Video-tjänster
     
-- Office i s webbläsare
+- Office i en webbläsare
     
 -  Microsoft 365 Apps för företag
     
@@ -109,7 +104,7 @@ Följande Sök funktioner påverkas:
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Utöver Exchange Online, SharePoint Online och OneDrive för företag migreras team data till det lokala data centret.
+Utöver Exchange Online, SharePoint Online och OneDrive för företag migreras automatiskt data från Teams chat till det lokala data centret.
 
 - Teams chattar meddelanden, inklusive privata meddelanden och kanal meddelanden.
 - Team-bilder som används i chattar.
@@ -118,20 +113,7 @@ Teams-filer lagras i SharePoint Online-och Teams-chatt-filer lagras i OneDrive f
 
 ## <a name="skype-for-business"></a>Skype för företag
 
-Skype för Business-flytt är tillgängligt för Australien, Japan, Indien, Kanada, Storbritannien och Sydkorea.
-
-Alla användare loggas ut från Skype för företag-klientens program vara under klipp-över. Automatisk inloggning kommer att återansluta användare inom två minuter.
-  
-|**Funktioner som fungerar under hela flytten**|**Funktioner som kan begränsas under en del av flytten**|
-|:-----|:-----|
-| Snabb meddelanden och röst samtal  <br/>  Användare kan lägga till kontakter, lägga till kontakt grupper, lägga till möten, ange plats och ändra "Vad händer idag".  <br/>  Inställningar för en ljud konferens leverantör (AVS) kopieras till mål Data Center geo. Om AVS-leverantören finns i mål data centret kommer den att fungera. Annars kommer den inte att visas.  <br/> | Klient organisationens administratörs TRPS (klient organisationens fjärrpowershell) är inte tillgängligt för administratörer att skapa sessioner.  <br/>  Klient organisationens administratörs LAC är inte tillgängliga för administratörer att logga in och ändra användar inställningar.  <br/> |
-   
-|**Efter flytten**|
-|:-----|
-| Mötes data (uppladdade presentationer etc.) flyttas inte och måste laddas upp på nytt.  <br/>  Äldre Lync-klienter, till exempel Lync 2010-klienten och Lync för Mac 2011-klienten, är kända för cachelagring av DNS-information till tjänsten som orsakar inloggnings problem. Det kan krävas en rensning av DNS-cachen om användaren inte är på den senaste Skype för företag-Windows-klienten. Se [fel sökning för DNS-konfiguration för Skype för företag – Online i Office 365](https://docs.microsoft.com/skypeforbusiness/troubleshoot/online-configuration/dns-configuration-issue). Användare av Lync för Mac-klienter bör följa [dessa instruktioner](https://support.microsoft.com/kb/2629861).  <br/> |
-   
-### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Skype för företag-flytt med en tredjeparts ljud konferens leverantör
-Tredjepartsleverantör av ljud konferens leverantörer för Skype för företag är inte tillgängliga för användare som är hemifrån i nya geo-specifika data Center.  Befintliga kunder som använder en tredjepartsleverantör för ljud konferenser bör inte begära en flytt till ett nytt geo-specifikt Data Center.  Nya kunder som distribueras till nya geo-specifika data centra måste begära en flytt till ett regionalt Data Center för att använda en tredjepartsleverantör för ljud konferenser.
+Flytt av Skype för företag är inte längre tillgängligt.  [Skype för företag – Online kommer att avvecklas](https://docs.microsoft.com/lifecycle/announcements/skype-for-business-online-retirement) den 31 juli 2021. Efter den tiden är tjänsten inte längre tillgänglig. 
   
 ## <a name="related-topics"></a>Relaterade ämnen 
  

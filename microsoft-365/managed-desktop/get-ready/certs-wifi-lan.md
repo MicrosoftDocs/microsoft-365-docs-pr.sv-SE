@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 7a0af5db4e18bc46436ace6f9fefefc18f0ccd68
-ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
+ms.openlocfilehash: bccfe9a6a6a0550f96ab33d5fd5142e4eaae7b51
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46608281"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333530"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Förbereda certifikat och nätverks profiler för Microsoft Hanterat skrivbord  
  
@@ -32,9 +32,6 @@ Innan du distribuerar SCEP-eller PKCS-certifikat till Microsoft Managed Desktop 
  
 - [PKCS-certifikatmall](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/PKCS-certificate-template.xlsx) 
 - [SCEP-certifikatmall](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/SCEP-certificate-template.xlsx)
-
->[!NOTE]
->För närvarande stöds endast SCEP certifikat profiler för distribution av trådlösa profiler till Microsoft Managed Desktop när du använder en EAP-typ. PKCS-certifikat profiler stöds inte. Se [lägga till WiFi-inställningar för Windows 10-enheter i Intune](https://docs.microsoft.com/intune/wi-fi-settings-windows) för referens.
 
   
 ## <a name="wi-fi-connectivity-requirements"></a>Krav för Wi-Fi-anslutning

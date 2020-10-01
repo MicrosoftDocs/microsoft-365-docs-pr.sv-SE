@@ -15,19 +15,19 @@ f1.keywords:
 - NOCSH
 description: Befintliga Office 365-kunder måste skicka in en begäran innan tids gränsen för sitt land för att deras Microsoft 365 Services-data flyttas till deras nya geo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f7ca333ca12faab84df54582ecd3212842d26e1a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 10c77fdde8583c9d791c9fed936f94aad8fc7264
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949804"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333890"
 ---
 # <a name="how-to-request-your-data-move"></a>Hur du begär din dataflytt
 
 > [!NOTE]
-> Informationen på den här sidan gäller endast kunder som hade befintliga Microsoft 365-klient organisationer innan de nya data centers i Geo-lanserandet. Överflyttnings behörighet beror också på det specifika belastnings företablerings datumet, så att klientens tillkomst datum inte alltid är det enda datum som är viktigt.
+> Informationen på den här sidan gäller endast kunder som hade befintliga Microsoft 365-klient organisationer innan nya data Center i deras datacenter-geo opened. Överflyttnings behörighet beror också på det specifika tjänste etablerings datumet.  Innehavarens uppläggnings datum kanske inte alltid är det enskilda datum som gäller.
   
-Befintliga Microsoft 365-kunder kan begära migrering för företagets viktigaste kund data på rest.  
+Berättigade Microsoft 365-kunder kan begära migrering för företagets viktigaste kund data på rest.  Programmet stöder förfrågningar för varje land under den tids period som beskrivs i tabellen och från kunder med ett berättigat registrerings land som är kopplat till deras Microsoft 365-klient.
   
 ## <a name="when-can-i-request-a-move"></a>När kan jag begära en flytt?
 
@@ -44,7 +44,7 @@ Befintliga Microsoft 365-kunder kan begära migrering för företagets viktigast
 |Sydafrika  <br/> |25 juli 2019  <br/> |30 juni 2020  <br/> |
 |Schweiz, Liechtenstein  <br/> |Den 10 december 2019  <br/> |30 juni 2020  <br/> |
 |Norge  <br/> |15 april 2020  <br/> |Den 31 oktober 2020  <br/> |
-|Tyskland  <br/> |Disponera  <br/> |Disponera  <br/> |
+|Tyskland  <br/> |Den 1 oktober 2020  <br/> |Den 31 mars 2021  <br/> |
 
 ## <a name="how-to-request-a-move"></a>Så här gör du för att begära en flytt
 
@@ -57,19 +57,17 @@ Du kommer inte att se det här avsnittet om klient organisationen inte är berä
   
 ![Skärmen för att välja Data Center](../media/dataresidencyflyoutae.jpg)
   
-Texten i avsnittet **data de** visas för att visa att **organisationen har begärt att flytta sina data** till rätt land och aktuellt datum. Du får också ett bekräftelse meddelande i ditt meddelande Center. Detta bekräftar att du har begärt en flytt. 
-
-
+Texten i avsnittet **data de** ändras för att visa att **organisationen har begärt att flytta sina data** till rätt land och datum. Du får också ett bekräftelse meddelande i ditt meddelande Center. Detta bekräftar att du har begärt en flytt. 
   
 ## <a name="what-happens-after-requesting-a-move"></a>Vad händer när du har begärt en flytt?
 
-Efter att du har begärt ett flytt abonnemang kommer vi att kunna flytta dig så snabbt som våra drift villkor tillåter. Det går inte att dela ett specifikt datum eller tidsintervall för flytterna på grund av oförutsägbarheten hos många villkor. Klient organisationens administratörer kommer att se ett meddelande i meddelande Center när flytten för varje tjänst har genomförts.
+När vi har begärt ett flytt abonnemang bör vi planera dina grundläggande kund data på rest för kvalificerade Microsoft 365-tjänster så snabbt som våra operativa begränsningar tillåter det. Det går inte att dela ett specifikt datum eller tidsintervall för flytterna på grund av oförutsägbarheten hos många villkor. Klient organisationens administratörer kommer att se ett meddelande i meddelande Center när flytten för varje tjänst har genomförts.
   
 Det kan ta upp till 24 månader innan tids gränsen för ditt land att slutföra.
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Från och med den 2020 januari kan kunder i stödberättigade Office 365-länder välja att migrera data från Microsoft Teams Chat-tjänsten.  Deltagande tids linjer har öppnats eller förlängts för alla godkända länder för att ge kunderna en möjlighet att betrakta migreringsarkivet med Microsoft Teams i omfattning. Kunder som tidigare valt att flytta data de har också team till sina lokala data Center, ingen ytterligare åtgärd krävs av dessa kunder.
+Från och med den 2020 januari kan kunder i stödberättigade Office 365-länder välja att migrera data från Microsoft Teams Chat-tjänsten.  Kunder som tidigare valt att flytta data de kommer också att ha Teams till sina lokala data Center.  Inga ytterligare åtgärder krävs av dessa kunder.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Lär dig mer om nya Office 365 Data Center-geos och hur du använder alternativet data de för att begära att dina grundläggande data flyttas till en ny geo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9c1c838f52627e0ff2eee5b7fdbeef7aee55b137
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 17b8d5c828a8c528aba180c260510345e77226d5
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694292"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333718"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Flytta grundläggande data till nya Microsoft 365 Data Center-geos
 
@@ -36,31 +36,26 @@ Befintliga kunder som har sina grundläggande kund uppgifter lagrade i ett befin
   
 |**Kunder med klient organisationens registrerings land i**|**Föregående Data Center geo**|**Nytt Data Center geo**|**Geo-tillgängligt sedan**|
 |:-----|:-----|:-----|:-----|
-|**Japan**| Asien/Stilla havet | Japan | December 2014 |
+|**Japan**| Asien/Stilla havet | Japan  | December 2014 |
 |**Australien, Nya Zeeland, Fidji**| Asien/Stilla havet | Australien | Mars 2015 |
 |**Indien**| Asien/Stilla havet | Indien | Oktober 2015 |
-|**Kanada**| Nordamerika | Kanada | Maj 2016 |
-|**Storbritannien**| Europa | Storbritannien | September 2016 |
+|**Kanada**| USA | Kanada | Maj 2016 |
+|**Storbritannien**| EU: s EU | Storbritannien | September 2016 |
 |**Sydkorea**| Asien/Stilla havet | Sydkorea | April 2017 |
-|**Frankrike**| Europa | Frankrike | Mars 2018 |
-|**Förenade Arabemiraten**| Europa | Förenade Arabemiraten | Juni 2019 |
-|**Sydafrika**| Europa | Sydafrika | Juli 2019 |
-|**Schweiz, Liechtenstein**| Europa | Schweiz | December 2019 |
-|**Tyskland**| Europa | Tyskland | December 2019 |
-|**Norge**| Europa | Norge | April 2020 |
-  
-Nya kunder eller Office 365-klient organisationer som har skapats efter tillgänglighet av den nya data Center geo kommer att ha grundläggande kund uppgifter lagrade på nya data Center-geo automatiskt.
+|**Frankrike**| EU: s EU | Frankrike | Mars 2018 |
+|**Förenade Arabemiraten**| EU: s EU | Förenade Arabemiraten | Juni 2019 |
+|**Sydafrika**| EU: s EU | Sydafrika | Juli 2019 |
+|**Schweiz, Liechtenstein**| EU: s EU | Schweiz | December 2019 |
+|**Tyskland**| EU: s EU | Tyskland | December 2019 |
+|**Norge**| EU: s EU | Norge | April 2020 |
 
+Från och med den 1 oktober är 2020 kunder med en Office 365 Education-prenumeration som ingår i klient organisationen inte kvalificerat för migrering.
 
->[!Note]
->Vi startade Tyskland Data Center i december 2019. Nya Microsoft 365-kunder med en tysk signup-adress som är kopplad till deras klient organisation kommer att ha sina grundläggande kund uppgifter lagrade i andra Tyskland. Vi planerar att bjuda in från Europa till Tyskland för tyska kunder i framtiden. Idag kan Microsoft Cloud Germany/Deutschland kunder begära migrering till Office 365-tjänster i de nya tyska Data Center-regionerna. Mer information finns i [så här väljer du för migrering från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster](https://aka.ms/office365germanymoveoptin) .
->
-  
 En fullständig lista över alla data Center geos, data Center och plats för kunddata på rest är tillgängliga som en del av de [interaktiva Data Center-kartorna](https://office.com/datamaps). 
   
 ## <a name="data-residency-option"></a>Alternativet de
 
-Vi tillhandahåller ett data de alternativ till befintliga Microsoft 365-kunder som omfattas av data Center geos som visas i tabellen ovan. Med det här alternativet kan kunder med data de-krav begära tidiga migration av organisationens viktigaste kund uppgifter till det nya data centret geo.  Microsoft kommer att erbjuda en tids gräns för alla berättigade kunder som kräver tidiga migration under registrerings fönstret.  Läs om [hur du kan begära en informations flyttnings](request-your-data-move.md) sida om du vill ha mer information om fönstret för din Geo och hur du kan registrera dig i programmet.  Data flyttningar kan ta upp till 24 månader efter en begäran om att slutföras.
+Vi tillhandahåller ett data de alternativ för kvalificerade Microsoft 365-kunder som omfattas av data Center geos som visas i tabellen ovan. Med det här alternativet kan berättigade kunder med data de krav begära att organisationens grundläggande kund uppgifter migreras till deras nya data Center.  Microsoft kommer att erbjuda en tids gräns för alla berättigade kunder som vill migrera under registrerings fönstret.  Läs om [hur du efterfrågar en data flyttnings](request-your-data-move.md) sida för att få mer information om fönstret för öppen registrering för ditt data Center Geo och hur du kan registrera dig i programmet.  Data flyttningar kan ta upp till 24 månader efter det att perioden är slut.
 
 Vi presenterar inga unika funktioner, funktioner och certifikat certifiering med det nya data centret geo.
     
@@ -72,9 +67,9 @@ Data flyttas till den nya data Center geoen utan kostnad till kunden.
     
 ## <a name="related-topics"></a>Relaterade ämnen 
  
-[Så här efterfrågar du data flytten](request-your-data-move.md)
+[Hur du begär din dataflytt](request-your-data-move.md)
     
-[Vanliga frågor om data förflyttning](data-move-faq.md)
+[Vanliga frågor och svar om dataflytt](data-move-faq.md)
   
 [Ny datacenter-geos för Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
