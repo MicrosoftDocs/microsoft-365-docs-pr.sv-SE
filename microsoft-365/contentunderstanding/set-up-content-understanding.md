@@ -1,117 +1,117 @@
 ---
-title: Konfigurera SharePoint-Syntex
+title: Konfigurera SharePoint Syntex
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Konfigurera innehålls förståelse i Project cortex
-ms.openlocfilehash: 31c6b6dd31b3f1bc47deb8424dd847cc0af6d429
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
-ms.translationtype: MT
+search.appverid: MET150
+localization_priority: Priority
+description: Konfigurera innehållstolkning i Project Cortex
+ms.openlocfilehash: 7fb5998729c9f11902f8fdfaffa62b160928077c
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304786"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321355"
 ---
-# <a name="set-up-sharepoint-syntex"></a>Konfigurera SharePoint-Syntex
+# <a name="set-up-sharepoint-syntex"></a>Konfigurera SharePoint Syntex
 
-Administratörer kan använda administrations centret för Microsoft 365 för att konfigurera och Microsoft SharePoint-Syntex. 
+Administratörer kan använda Administrationscenter för Microsoft 365 för att konfigurera [Microsoft SharePoint Syntex](document-understanding-overview.md). 
 
 Tänk på följande innan du börjar:
 
-- Vilka SharePoint-webbplatser aktiverar du formulär bearbetning? Alla, vissa eller utvalda webbplatser?
-- Vad heter du för innehålls Center och vem är den primära webbplats administratören?
+- På vilka SharePoint-webbplatser kommer du aktivera formulärbearbetning? Alla, vissa eller utvalda webbplatser?
+- Vad heter ditt standard innehållscenter?
 
-Du kan ändra inställningarna efter den första installationen i Microsoft 365 Admin Center.
+Du kan ändra inställningarna efter den första konfigurationen i Administrationscenter för Microsoft 365.
 
-Innehållet i den här artikeln gäller för projekt cortex privat för hands version. [Lär dig mer om Project cortex](https://aka.ms/projectcortex).
+Innehållet i den här artikeln gäller för Project Cortex privat förhandsgranskning. [Läs mer om Project Cortex](https://aka.ms/projectcortex).
 
-Innan du konfigurerar dig bör du planera för det bästa sättet att konfigurera och konfigurera innehålls förståelse i din miljö. Du måste till exempel tänka på följande:
+Innan konfigurationen ser du till att planera för det bästa sättet att ställa in och konfigurera innehållstolkning i din miljö. Till exempel behöver du överväga om följande namn av:
 
-- SharePoint-webbplatserna som du vill aktivera bearbetning av formulär för – alla, vissa eller markerade webbplatser
-- Ditt innehålls Center och namnet på den primära webbplats administratören
+- De SharePoint-webbplatser som du vill aktivera formulärbearbetning för – alla, vissa eller utvalda webbplatser
+- Ditt innehållscenter och namnet på den primära webbplatsadministratören
 
 ## <a name="requirements"></a>Krav 
 
 > [!NOTE]
-> Du måste ha global administratör eller administratörs behörighet för SharePoint för att kunna komma åt Microsoft 365 Admin Center och ställa in innehålls förståelse.
+> Du måste ha behörighet som global administratör eller SharePoint-administratör för att kunna komma åt Administrationscenter för Microsoft 365 och konfigurera innehållstolkning.
 
-Som administratör kan du också göra ändringar i dina valda inställningar när som helst efter installationen och i alla inställningar för innehålls förståelse i administrations centret för Microsoft 365.
+Som administratör kan du också göra ändringar i dina valda inställningar när som helst efter konfigurationen och under inställningarna för hantering av innehållstolkning i Administrationscenter för Microsoft 365.
 
-## <a name="to-set-up-sharepoint-syntex"></a>Så här konfigurerar du SharePoint-Syntex
+## <a name="to-set-up-sharepoint-syntex"></a>Att konfigurera SharePoint Syntex
 
-1. I administrations centret för Microsoft 365 väljer du **Konfigurera**och sedan avsnittet **organisations** information.
+1. I Administrationscenter för Microsoft 365 väljer du **Konfiguration** och visar sedan avsnittet **Organisationskunskap**.
 
-2. I avsnittet **organisationsinformation** väljer du **Automatisera innehålls förståelse**.<br/>
+2. I avsnittet **Organisationskunskap** väljer du **Automatisera innehållstolkning**.<br/>
 
-    ![Sidan för information om organisationens kunskap](../media/content-understanding/admin-org-knowledge-options.png)</br>
+    ![Konfigurationssida för organisationskunskaper](../media/content-understanding/admin-org-knowledge-options.png)</br>
 
-3. Gå igenom konfigurationen genom att klicka på **komma igång** på sidan **Automatisera SharePoint-Syntex** .<br/>
+3. På sidan **Automatisera innehållstolkning** klickar du på **Komma igång** för att gå igenom konfigurationsprocessen.<br/>
 
-    ![Starta installationen](../media/content-understanding/admin-content-understanding-get-started.png)</br>
+    ![Starta konfiguration](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. På sidan Aktivera bild taggning väljer du om du vill tillåta [bild märkning](image-tagging.md).
+4. På sidan Aktivera bildmärkning väljer du om du vill tillåta [bildmärkning](image-tagging.md).
 
-    ![Skärm bild av alternativ för bild markeringar](../media/content-understanding/admin-content-understanding-setup-image-tagging.png)</br>
+    ![Skärmbild på alternativ för bildmärkning](../media/content-understanding/admin-content-understanding-setup-image-tagging.png)</br>
 
-5. På sidan **Konfigurera formulär bearbetning** kan du välja om du vill låta användare kunna använda AI-verktyget för att skapa formulär bearbetnings modeller i specifika SharePoint-dokumentbibliotek. Ett meny alternativ är tillgängligt i menyfliksområdet dokument bibliotek för att **skapa en formulär bearbetnings modell** i SharePoint-dokumentbibliotek där den är aktive rad.
+5. På sidan **Konfigurera formulärbearbetning** kan du välja om du vill tillåta att användare kan skapa modeller för formulärbearbetning i vissa dokumentbibliotek i SharePoint. Ett menyalternativ kommer att vara tillgängligt i menyfliksområdet för dokumentbiblioteket för att **Skapa en modell för formulärbearbetning** i dokumentbibliotek i SharePoint där den är aktiverad.
  
-     För **vilka SharePoint-bibliotek bör visa alternativ för att skapa en modell för formulär bearbetning**kan du välja:</br>
-      - **Alla SharePoint-bibliotek** som gör det tillgängligt för alla SharePoint-bibliotek i organisationen.</br>
-      - **Endast bibliotek på valda webbplatser**och välj de webbplatser som du vill göra tillgänglig för.</br>
+     För **vilka SharePoint-bibliotek som ska visa alternativ för att skapa modell för formulärbearbetning** kan du välja:</br>
+      - **Alla SharePoint-bibliotek** för att göra det tillgängligt för alla SharePoint-bibliotek i organisationen.</br>
+      - **Bara bibliotek på utvalda webbplatser** och välj sedan de webbplatser där du vill göra det tillgängligt eller ladda upp en lista med upp till 50 webbplatser.</br>
+      - **Inga SharePoint-bibliotek** om du inte vill att det ska vara tillgängligt för några webbplatser (du kan ändra det när konfigurationen är slutförd).
 
-   ![Konfigurera formulär bearbetning](../media/content-understanding/admin-configforms.png)
+   ![Konfigurera formulärbearbetning](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
-   > Om du aktiverar den här inställningen i ett SharePoint-dokumentbibliotek påverkar det inte befintliga modeller som tillämpas på biblioteket eller möjligheten att tillämpa dokument förståelse på ett bibliotek. 
+   > Att ta bort en webbplats efter att den har inkluderats påverkar inte befintliga modeller som används i biblioteken på webbplatsen eller möjligheten att använda modeller för dokumenttolkning på ett bibliotek. 
     
-6. På sidan **skapa innehålls Center** kan du skapa en SharePoint-webbplats för innehålls Center där användarna kan skapa och hantera dokument förståelse modeller. </br>
-    a. För **webbplats namn**anger du det namn som du vill ge innehålls Center webbplatsen.</br>
-    b. **Webbplats adressen** visar URL-adressen för webbplatsen, baserat på vad du har valt för webbplats namnet. Om du vill ändra det klickar du på **Redigera**.</br>
+6. På sidan **Skapa innehållscenter** kan du skapa en SharePoint-webbplats för innehållscenter där dina användare kan skapa och hantera modeller för dokumenttolkning. </br>
+    a. För **Webbplatsnamn**skriver du namnet som du vill använda på webbplatsen för innehållscenter.</br>
+    b. **Webbplatsens adress** kommer att visa URL:en för din webbplats baserat på vad du valde som webbplatsnamn. Om du vill ändra det klickar du på **Redigera**.</br>
 
-      ![Skapa innehålls Center](../media/content-understanding/admin-cu-create-cc.png)</br>
+      ![Skapa innehållscenter](../media/content-understanding/admin-cu-create-cc.png)</br>
 
     Välj **Nästa**.
 
-7. På sidan **Granska och slutför** kan du titta på den valda inställningen och välja att göra ändringar. Om du är nöjd med dina val väljer du **Aktivera**.
+7. På sidan **Granska och slutför** kan du titta på vald inställning och välja att göra ändringar. Om du är nöjd med dina val väljer du **Aktivera**.
 
-8. På bekräftelse sidan klickar du på **klar**.
+8. På bekräftelsesidan klickar du på **Klar**.
 
-9. Du kommer att återföras till sidan **Automatisera innehålls förståelse** . Från den här sidan kan du välja **Hantera** för att ändra dina konfigurations inställningar. 
+9. Du kommer tillbaka till sidan **Automatisera innehållstolkning**. På den här sidan kan du välja **Hantera** om du vill göra ändringar i dina konfigurationsinställningar. 
 
 ## <a name="assign-licenses"></a>Tilldela licenser
 
-När du har konfigurerat en SharePoint-Syntex måste du tilldela licenser för de användare som ska använda formulär bearbetning och dokument förstå funktioner.
+När du har konfigurerat en SharePoint Syntex måste du tilldela licenser för de användare som kommer att använda SharePoint Syntex-funktioner.
 
-Så här tilldelar du licenser:
+För att tilldela licenser:
 
-1. Klicka på **aktiva användare**under **användare**i administrations centret för Microsoft 365.
+1. I Administrationscenter för Microsoft 365 klickar du på **Användare** > **Aktiva användare**.
 
-2. Välj de användare som du vill licensiera och klicka på **Hantera produkt licenser**.
+2. Välj de användare som du vill licensiera och klicka på **Hantera produktlicenser**.
 
-3. Välj **tilldela mer**.
+3. Välj **Tilldela fler**.
 
-4. Välj **intelligent Content Services**. Under **program**kontrollerar du att **gemensam data tjänst för intelligenta innehålls tjänster** och **intelligenta innehålls tjänster** är markerade.
+4. Välj **Intelligenta innehållstjänster**. Under **Appar**ser du till att **Gemensam datatjänst för Intelligenta innehållstjänster** och **Intelligenta innehållstjänster** båda är markerade.
 
-    ![SharePoint Syntex-licenser i administrations centret för Microsoft 365](../media/content-understanding/sharepoint-syntex-licenses.png)
+    ![SharePoint Syntex-licenser i Administrationscenter för Microsoft 365](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. Klicka på **Spara ändringar**.
 
-## <a name="ai-builder-credits"></a>Krediteringar för AI-byggare
+## <a name="ai-builder-credits"></a>AI Builder-krediter
 
-Om du har 300 eller fler SharePoint Syntex-licenser för SharePoint Syntex i organisationen tilldelas du 1 000 000 AI Builder-kredit. Om du har färre än 300 licenser måste du köpa AI Builder-kredit för att kunna använda formulär bearbetning.
+Om du har 300 eller fler SharePoint Syntex-licenser för SharePoint Syntex i din organisation allokeras en miljon AI Builder-krediter. Om du har färre än 300 licenser måste du köpa AI Builder-krediter för att kunna använda formulärbearbetning.
 
-Du kan uppskatta vilken AI Builder-kapacitet som passar dig med [AI Builder-kalkylatorn](https://powerapps.microsoft.com/ai-builder-calculator).
+Du kan beräkna den AI Builder-kapacitet som passar dig bäst med [Kalkylatorn för AI Builder](https://powerapps.microsoft.com/ai-builder-calculator).
 
-Gå till [administrations centret för Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) för att kontrol lera kredit och användning.
+Gå till [Administrationscenter för Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) om du vill kontrollera krediterna och användningen.
 
 ## <a name="see-also"></a>Se även
 
-[Översikt över formulär bearbetnings modellen](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
+[Översikt över modellen för formulärbearbetning](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
 
-[Steg-för-steg: hur du skapar en modell för dokument förståelse (video)](https://www.youtube.com/watch?v=DymSHObD-bg)
+[Steg för steg: Hur du skapar en modell för dokumenttolkning (video)](https://www.youtube.com/watch?v=DymSHObD-bg)
 
