@@ -1,117 +1,117 @@
 ---
-title: Konfigurera SharePoint-Syntex
+title: Konfigurera SharePoint Syntex
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Konfigurera innehålls förståelse i Project cortex
-ms.openlocfilehash: 31c6b6dd31b3f1bc47deb8424dd847cc0af6d429
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
-ms.translationtype: MT
+search.appverid: MET150
+localization_priority: Priority
+description: Konfigurera innehållstolkning i Project Cortex
+ms.openlocfilehash: 7fb5998729c9f11902f8fdfaffa62b160928077c
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304786"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321355"
 ---
-# <a name="set-up-sharepoint-syntex"></a><span data-ttu-id="6f280-103">Konfigurera SharePoint-Syntex</span><span class="sxs-lookup"><span data-stu-id="6f280-103">Set up SharePoint Syntex</span></span>
+# <a name="set-up-sharepoint-syntex"></a><span data-ttu-id="ac504-103">Konfigurera SharePoint Syntex</span><span class="sxs-lookup"><span data-stu-id="ac504-103">Set up SharePoint Syntex</span></span>
 
-<span data-ttu-id="6f280-104">Administratörer kan använda administrations centret för Microsoft 365 för att konfigurera och Microsoft SharePoint-Syntex.</span><span class="sxs-lookup"><span data-stu-id="6f280-104">Admins can use the Microsoft 365 admin center to set up and Microsoft SharePoint Syntex.</span></span> 
+<span data-ttu-id="ac504-104">Administratörer kan använda Administrationscenter för Microsoft 365 för att konfigurera [Microsoft SharePoint Syntex](document-understanding-overview.md).</span><span class="sxs-lookup"><span data-stu-id="ac504-104">Admins can use the Microsoft 365 admin center to set up [Microsoft SharePoint Syntex](document-understanding-overview.md).</span></span> 
 
-<span data-ttu-id="6f280-105">Tänk på följande innan du börjar:</span><span class="sxs-lookup"><span data-stu-id="6f280-105">Consider the following before you start:</span></span>
+<span data-ttu-id="ac504-105">Tänk på följande innan du börjar:</span><span class="sxs-lookup"><span data-stu-id="ac504-105">Consider the following before you start:</span></span>
 
-- <span data-ttu-id="6f280-106">Vilka SharePoint-webbplatser aktiverar du formulär bearbetning?</span><span class="sxs-lookup"><span data-stu-id="6f280-106">Which SharePoint sites will you enable form processing?</span></span> <span data-ttu-id="6f280-107">Alla, vissa eller utvalda webbplatser?</span><span class="sxs-lookup"><span data-stu-id="6f280-107">All of them, some, or select sites?</span></span>
-- <span data-ttu-id="6f280-108">Vad heter du för innehålls Center och vem är den primära webbplats administratören?</span><span class="sxs-lookup"><span data-stu-id="6f280-108">What will you name of your content center, and who is the primary site admin?</span></span>
+- <span data-ttu-id="ac504-106">På vilka SharePoint-webbplatser kommer du aktivera formulärbearbetning?</span><span class="sxs-lookup"><span data-stu-id="ac504-106">Which SharePoint sites will you enable form processing?</span></span> <span data-ttu-id="ac504-107">Alla, vissa eller utvalda webbplatser?</span><span class="sxs-lookup"><span data-stu-id="ac504-107">All of them, some, or select sites?</span></span>
+- <span data-ttu-id="ac504-108">Vad heter ditt standard innehållscenter?</span><span class="sxs-lookup"><span data-stu-id="ac504-108">What will you name of your default content center?</span></span>
 
-<span data-ttu-id="6f280-109">Du kan ändra inställningarna efter den första installationen i Microsoft 365 Admin Center.</span><span class="sxs-lookup"><span data-stu-id="6f280-109">You can change your settings after initial setup in the Microsoft 365 admin center.</span></span>
+<span data-ttu-id="ac504-109">Du kan ändra inställningarna efter den första konfigurationen i Administrationscenter för Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="ac504-109">You can change your settings after initial setup in the Microsoft 365 admin center.</span></span>
 
-<span data-ttu-id="6f280-110">Innehållet i den här artikeln gäller för projekt cortex privat för hands version.</span><span class="sxs-lookup"><span data-stu-id="6f280-110">The content in this article is for the Project Cortex Private Preview.</span></span> <span data-ttu-id="6f280-111">[Lär dig mer om Project cortex](https://aka.ms/projectcortex).</span><span class="sxs-lookup"><span data-stu-id="6f280-111">[Find out more about Project Cortex](https://aka.ms/projectcortex).</span></span>
+<span data-ttu-id="ac504-110">Innehållet i den här artikeln gäller för Project Cortex privat förhandsgranskning.</span><span class="sxs-lookup"><span data-stu-id="ac504-110">The content in this article is for the Project Cortex Private Preview.</span></span> <span data-ttu-id="ac504-111">[Läs mer om Project Cortex](https://aka.ms/projectcortex).</span><span class="sxs-lookup"><span data-stu-id="ac504-111">[Find out more about Project Cortex](https://aka.ms/projectcortex).</span></span>
 
-<span data-ttu-id="6f280-112">Innan du konfigurerar dig bör du planera för det bästa sättet att konfigurera och konfigurera innehålls förståelse i din miljö.</span><span class="sxs-lookup"><span data-stu-id="6f280-112">Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment.</span></span> <span data-ttu-id="6f280-113">Du måste till exempel tänka på följande:</span><span class="sxs-lookup"><span data-stu-id="6f280-113">For example, you need to make considerations about the following names of:</span></span>
+<span data-ttu-id="ac504-112">Innan konfigurationen ser du till att planera för det bästa sättet att ställa in och konfigurera innehållstolkning i din miljö.</span><span class="sxs-lookup"><span data-stu-id="ac504-112">Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment.</span></span> <span data-ttu-id="ac504-113">Till exempel behöver du överväga om följande namn av:</span><span class="sxs-lookup"><span data-stu-id="ac504-113">For example, you need to make considerations about the following names of:</span></span>
 
-- <span data-ttu-id="6f280-114">SharePoint-webbplatserna som du vill aktivera bearbetning av formulär för – alla, vissa eller markerade webbplatser</span><span class="sxs-lookup"><span data-stu-id="6f280-114">The SharePoint sites that you want to enable form processing - all of them, some, or selected sites</span></span>
-- <span data-ttu-id="6f280-115">Ditt innehålls Center och namnet på den primära webbplats administratören</span><span class="sxs-lookup"><span data-stu-id="6f280-115">Your content center and the name of the primary site admin</span></span>
+- <span data-ttu-id="ac504-114">De SharePoint-webbplatser som du vill aktivera formulärbearbetning för – alla, vissa eller utvalda webbplatser</span><span class="sxs-lookup"><span data-stu-id="ac504-114">The SharePoint sites that you want to enable form processing - all of them, some, or selected sites</span></span>
+- <span data-ttu-id="ac504-115">Ditt innehållscenter och namnet på den primära webbplatsadministratören</span><span class="sxs-lookup"><span data-stu-id="ac504-115">Your content center and the name of the primary site admin</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="6f280-116">Krav</span><span class="sxs-lookup"><span data-stu-id="6f280-116">Requirements</span></span> 
+## <a name="requirements"></a><span data-ttu-id="ac504-116">Krav</span><span class="sxs-lookup"><span data-stu-id="ac504-116">Requirements</span></span> 
 
 > [!NOTE]
-> <span data-ttu-id="6f280-117">Du måste ha global administratör eller administratörs behörighet för SharePoint för att kunna komma åt Microsoft 365 Admin Center och ställa in innehålls förståelse.</span><span class="sxs-lookup"><span data-stu-id="6f280-117">You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up content understanding.</span></span>
+> <span data-ttu-id="ac504-117">Du måste ha behörighet som global administratör eller SharePoint-administratör för att kunna komma åt Administrationscenter för Microsoft 365 och konfigurera innehållstolkning.</span><span class="sxs-lookup"><span data-stu-id="ac504-117">You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up content understanding.</span></span>
 
-<span data-ttu-id="6f280-118">Som administratör kan du också göra ändringar i dina valda inställningar när som helst efter installationen och i alla inställningar för innehålls förståelse i administrations centret för Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="6f280-118">As an admin, you can also make changes to your selected settings anytime after setup, and throughout the content understanding management settings in the Microsoft 365 Admin Center.</span></span>
+<span data-ttu-id="ac504-118">Som administratör kan du också göra ändringar i dina valda inställningar när som helst efter konfigurationen och under inställningarna för hantering av innehållstolkning i Administrationscenter för Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="ac504-118">As an admin, you can also make changes to your selected settings anytime after setup, and throughout the content understanding management settings in the Microsoft 365 Admin Center.</span></span>
 
-## <a name="to-set-up-sharepoint-syntex"></a><span data-ttu-id="6f280-119">Så här konfigurerar du SharePoint-Syntex</span><span class="sxs-lookup"><span data-stu-id="6f280-119">To set up SharePoint Syntex</span></span>
+## <a name="to-set-up-sharepoint-syntex"></a><span data-ttu-id="ac504-119">Att konfigurera SharePoint Syntex</span><span class="sxs-lookup"><span data-stu-id="ac504-119">To set up SharePoint Syntex</span></span>
 
-1. <span data-ttu-id="6f280-120">I administrations centret för Microsoft 365 väljer du **Konfigurera**och sedan avsnittet **organisations** information.</span><span class="sxs-lookup"><span data-stu-id="6f280-120">In the Microsoft 365 admin center, select **Setup**, and then view the **Organizational knowledge** section.</span></span>
+1. <span data-ttu-id="ac504-120">I Administrationscenter för Microsoft 365 väljer du **Konfiguration** och visar sedan avsnittet **Organisationskunskap**.</span><span class="sxs-lookup"><span data-stu-id="ac504-120">In the Microsoft 365 admin center, select **Setup**, and then view the **Organizational knowledge** section.</span></span>
 
-2. <span data-ttu-id="6f280-121">I avsnittet **organisationsinformation** väljer du **Automatisera innehålls förståelse**.</span><span class="sxs-lookup"><span data-stu-id="6f280-121">In the **Organizational knowledge** section, select **Automate content understanding**.</span></span><br/>
+2. <span data-ttu-id="ac504-121">I avsnittet **Organisationskunskap** väljer du **Automatisera innehållstolkning**.</span><span class="sxs-lookup"><span data-stu-id="ac504-121">In the **Organizational knowledge** section, select **Automate content understanding**.</span></span><br/>
 
-    ![Sidan för information om organisationens kunskap](../media/content-understanding/admin-org-knowledge-options.png)</br>
+    ![Konfigurationssida för organisationskunskaper](../media/content-understanding/admin-org-knowledge-options.png)</br>
 
-3. <span data-ttu-id="6f280-123">Gå igenom konfigurationen genom att klicka på **komma igång** på sidan **Automatisera SharePoint-Syntex** .</span><span class="sxs-lookup"><span data-stu-id="6f280-123">On the **Automate SharePoint Syntex** page, click **Get started** to walk through the setup process.</span></span><br/>
+3. <span data-ttu-id="ac504-123">På sidan **Automatisera innehållstolkning** klickar du på **Komma igång** för att gå igenom konfigurationsprocessen.</span><span class="sxs-lookup"><span data-stu-id="ac504-123">On the **Automate content understanding** page, click **Get started** to walk through the setup process.</span></span><br/>
 
-    ![Starta installationen](../media/content-understanding/admin-content-understanding-get-started.png)</br>
+    ![Starta konfiguration](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. <span data-ttu-id="6f280-125">På sidan Aktivera bild taggning väljer du om du vill tillåta [bild märkning](image-tagging.md).</span><span class="sxs-lookup"><span data-stu-id="6f280-125">On the Turn on image tagging page, choose if you want to allow [image tagging](image-tagging.md).</span></span>
+4. <span data-ttu-id="ac504-125">På sidan Aktivera bildmärkning väljer du om du vill tillåta [bildmärkning](image-tagging.md).</span><span class="sxs-lookup"><span data-stu-id="ac504-125">On the Turn on image tagging page, choose if you want to allow [image tagging](image-tagging.md).</span></span>
 
-    ![Skärm bild av alternativ för bild markeringar](../media/content-understanding/admin-content-understanding-setup-image-tagging.png)</br>
+    ![Skärmbild på alternativ för bildmärkning](../media/content-understanding/admin-content-understanding-setup-image-tagging.png)</br>
 
-5. <span data-ttu-id="6f280-127">På sidan **Konfigurera formulär bearbetning** kan du välja om du vill låta användare kunna använda AI-verktyget för att skapa formulär bearbetnings modeller i specifika SharePoint-dokumentbibliotek.</span><span class="sxs-lookup"><span data-stu-id="6f280-127">On the **Configure Form Processing** page, you can choose if you want to let users be able to use AI Builder to create form processing models in specific SharePoint document libraries.</span></span> <span data-ttu-id="6f280-128">Ett meny alternativ är tillgängligt i menyfliksområdet dokument bibliotek för att **skapa en formulär bearbetnings modell** i SharePoint-dokumentbibliotek där den är aktive rad.</span><span class="sxs-lookup"><span data-stu-id="6f280-128">A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.</span></span>
+5. <span data-ttu-id="ac504-127">På sidan **Konfigurera formulärbearbetning** kan du välja om du vill tillåta att användare kan skapa modeller för formulärbearbetning i vissa dokumentbibliotek i SharePoint.</span><span class="sxs-lookup"><span data-stu-id="ac504-127">On the **Configure Form Processing** page, you can choose if you want to let users be able to create form processing models in specific SharePoint document libraries.</span></span> <span data-ttu-id="ac504-128">Ett menyalternativ kommer att vara tillgängligt i menyfliksområdet för dokumentbiblioteket för att **Skapa en modell för formulärbearbetning** i dokumentbibliotek i SharePoint där den är aktiverad.</span><span class="sxs-lookup"><span data-stu-id="ac504-128">A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.</span></span>
  
-     <span data-ttu-id="6f280-129">För **vilka SharePoint-bibliotek bör visa alternativ för att skapa en modell för formulär bearbetning**kan du välja:</span><span class="sxs-lookup"><span data-stu-id="6f280-129">For **Which SharePoint libraries should show option to create a form processing model**, you can select:</span></span></br>
-      - <span data-ttu-id="6f280-130">**Alla SharePoint-bibliotek** som gör det tillgängligt för alla SharePoint-bibliotek i organisationen.</span><span class="sxs-lookup"><span data-stu-id="6f280-130">**All SharePoint libraries** to make it available to all SharePoint libraries in your organization.</span></span></br>
-      - <span data-ttu-id="6f280-131">**Endast bibliotek på valda webbplatser**och välj de webbplatser som du vill göra tillgänglig för.</span><span class="sxs-lookup"><span data-stu-id="6f280-131">**Only libraries in selected sites**, and then select the sites in which you want to make it available.</span></span></br>
+     <span data-ttu-id="ac504-129">För **vilka SharePoint-bibliotek som ska visa alternativ för att skapa modell för formulärbearbetning** kan du välja:</span><span class="sxs-lookup"><span data-stu-id="ac504-129">For **Which SharePoint libraries should show option to create a form processing model**, you can select:</span></span></br>
+      - <span data-ttu-id="ac504-130">**Alla SharePoint-bibliotek** för att göra det tillgängligt för alla SharePoint-bibliotek i organisationen.</span><span class="sxs-lookup"><span data-stu-id="ac504-130">**All SharePoint libraries** to make it available to all SharePoint libraries in your organization.</span></span></br>
+      - <span data-ttu-id="ac504-131">**Bara bibliotek på utvalda webbplatser** och välj sedan de webbplatser där du vill göra det tillgängligt eller ladda upp en lista med upp till 50 webbplatser.</span><span class="sxs-lookup"><span data-stu-id="ac504-131">**Only libraries in selected sites**, and then select the sites in which you want to make it available or upload a list of up to 50 sites.</span></span></br>
+      - <span data-ttu-id="ac504-132">**Inga SharePoint-bibliotek** om du inte vill att det ska vara tillgängligt för några webbplatser (du kan ändra det när konfigurationen är slutförd).</span><span class="sxs-lookup"><span data-stu-id="ac504-132">**No SharePoint libraries** if you don't want to make it available to any sites (you can change this after setup).</span></span>
 
-   ![Konfigurera formulär bearbetning](../media/content-understanding/admin-configforms.png)
+   ![Konfigurera formulärbearbetning](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
-   > <span data-ttu-id="6f280-133">Om du aktiverar den här inställningen i ett SharePoint-dokumentbibliotek påverkar det inte befintliga modeller som tillämpas på biblioteket eller möjligheten att tillämpa dokument förståelse på ett bibliotek.</span><span class="sxs-lookup"><span data-stu-id="6f280-133">Enabling this setting on a SharePoint document library does not affect existing models applied to the library or the ability to apply document understanding models to a library.</span></span> 
+   > <span data-ttu-id="ac504-134">Att ta bort en webbplats efter att den har inkluderats påverkar inte befintliga modeller som används i biblioteken på webbplatsen eller möjligheten att använda modeller för dokumenttolkning på ett bibliotek.</span><span class="sxs-lookup"><span data-stu-id="ac504-134">Removing a site after it has been included does not affect existing models applied to the libraries in that site or the ability to apply document understanding models to a library.</span></span> 
     
-6. <span data-ttu-id="6f280-134">På sidan **skapa innehålls Center** kan du skapa en SharePoint-webbplats för innehålls Center där användarna kan skapa och hantera dokument förståelse modeller.</span><span class="sxs-lookup"><span data-stu-id="6f280-134">On the **Create Content Center** page, you can create a SharePoint content center site on which your users can create and manage document understanding models.</span></span> </br>
-    <span data-ttu-id="6f280-135">a.</span><span class="sxs-lookup"><span data-stu-id="6f280-135">a.</span></span> <span data-ttu-id="6f280-136">För **webbplats namn**anger du det namn som du vill ge innehålls Center webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="6f280-136">For **Site name**, type the name you want to give your content center site.</span></span></br>
-    <span data-ttu-id="6f280-137">b.</span><span class="sxs-lookup"><span data-stu-id="6f280-137">b.</span></span> <span data-ttu-id="6f280-138">**Webbplats adressen** visar URL-adressen för webbplatsen, baserat på vad du har valt för webbplats namnet.</span><span class="sxs-lookup"><span data-stu-id="6f280-138">The **Site address** will show the URL for your site, based on what you selected for the site name.</span></span> <span data-ttu-id="6f280-139">Om du vill ändra det klickar du på **Redigera**.</span><span class="sxs-lookup"><span data-stu-id="6f280-139">If you want to change it, click **Edit**.</span></span></br>
+6. <span data-ttu-id="ac504-135">På sidan **Skapa innehållscenter** kan du skapa en SharePoint-webbplats för innehållscenter där dina användare kan skapa och hantera modeller för dokumenttolkning.</span><span class="sxs-lookup"><span data-stu-id="ac504-135">On the **Create Content Center** page, you can create a SharePoint content center site on which your users can create and manage document understanding models.</span></span> </br>
+    <span data-ttu-id="ac504-136">a.</span><span class="sxs-lookup"><span data-stu-id="ac504-136">a.</span></span> <span data-ttu-id="ac504-137">För **Webbplatsnamn**skriver du namnet som du vill använda på webbplatsen för innehållscenter.</span><span class="sxs-lookup"><span data-stu-id="ac504-137">For **Site name**, type the name you want to give your content center site.</span></span></br>
+    <span data-ttu-id="ac504-138">b.</span><span class="sxs-lookup"><span data-stu-id="ac504-138">b.</span></span> <span data-ttu-id="ac504-139">**Webbplatsens adress** kommer att visa URL:en för din webbplats baserat på vad du valde som webbplatsnamn.</span><span class="sxs-lookup"><span data-stu-id="ac504-139">The **Site address** will show the URL for your site, based on what you selected for the site name.</span></span> <span data-ttu-id="ac504-140">Om du vill ändra det klickar du på **Redigera**.</span><span class="sxs-lookup"><span data-stu-id="ac504-140">If you want to change it, click **Edit**.</span></span></br>
 
-      ![Skapa innehålls Center](../media/content-understanding/admin-cu-create-cc.png)</br>
+      ![Skapa innehållscenter](../media/content-understanding/admin-cu-create-cc.png)</br>
 
-    <span data-ttu-id="6f280-141">Välj **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="6f280-141">Select **Next**.</span></span>
+    <span data-ttu-id="ac504-142">Välj **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="ac504-142">Select **Next**.</span></span>
 
-7. <span data-ttu-id="6f280-142">På sidan **Granska och slutför** kan du titta på den valda inställningen och välja att göra ändringar.</span><span class="sxs-lookup"><span data-stu-id="6f280-142">On the **Review and finish** page, you can look at your selected setting and choose to make changes.</span></span> <span data-ttu-id="6f280-143">Om du är nöjd med dina val väljer du **Aktivera**.</span><span class="sxs-lookup"><span data-stu-id="6f280-143">If you are satisfied with your selections, select **Activate**.</span></span>
+7. <span data-ttu-id="ac504-143">På sidan **Granska och slutför** kan du titta på vald inställning och välja att göra ändringar.</span><span class="sxs-lookup"><span data-stu-id="ac504-143">On the **Review and finish** page, you can look at your selected setting and choose to make changes.</span></span> <span data-ttu-id="ac504-144">Om du är nöjd med dina val väljer du **Aktivera**.</span><span class="sxs-lookup"><span data-stu-id="ac504-144">If you are satisfied with your selections, select **Activate**.</span></span>
 
-8. <span data-ttu-id="6f280-144">På bekräftelse sidan klickar du på **klar**.</span><span class="sxs-lookup"><span data-stu-id="6f280-144">On the confirmation page, click **Done**.</span></span>
+8. <span data-ttu-id="ac504-145">På bekräftelsesidan klickar du på **Klar**.</span><span class="sxs-lookup"><span data-stu-id="ac504-145">On the confirmation page, click **Done**.</span></span>
 
-9. <span data-ttu-id="6f280-145">Du kommer att återföras till sidan **Automatisera innehålls förståelse** .</span><span class="sxs-lookup"><span data-stu-id="6f280-145">You'll be returned to your **Automate content understanding** page.</span></span> <span data-ttu-id="6f280-146">Från den här sidan kan du välja **Hantera** för att ändra dina konfigurations inställningar.</span><span class="sxs-lookup"><span data-stu-id="6f280-146">From this page, you can select **Manage** to make any changes to your configuration settings.</span></span> 
+9. <span data-ttu-id="ac504-146">Du kommer tillbaka till sidan **Automatisera innehållstolkning**.</span><span class="sxs-lookup"><span data-stu-id="ac504-146">You'll be returned to your **Automate content understanding** page.</span></span> <span data-ttu-id="ac504-147">På den här sidan kan du välja **Hantera** om du vill göra ändringar i dina konfigurationsinställningar.</span><span class="sxs-lookup"><span data-stu-id="ac504-147">From this page, you can select **Manage** to make any changes to your configuration settings.</span></span> 
 
-## <a name="assign-licenses"></a><span data-ttu-id="6f280-147">Tilldela licenser</span><span class="sxs-lookup"><span data-stu-id="6f280-147">Assign licenses</span></span>
+## <a name="assign-licenses"></a><span data-ttu-id="ac504-148">Tilldela licenser</span><span class="sxs-lookup"><span data-stu-id="ac504-148">Assign licenses</span></span>
 
-<span data-ttu-id="6f280-148">När du har konfigurerat en SharePoint-Syntex måste du tilldela licenser för de användare som ska använda formulär bearbetning och dokument förstå funktioner.</span><span class="sxs-lookup"><span data-stu-id="6f280-148">Once you have configured SharePoint Syntex, you must assign licenses for the users who will be using form processing and document understanding features.</span></span>
+<span data-ttu-id="ac504-149">När du har konfigurerat en SharePoint Syntex måste du tilldela licenser för de användare som kommer att använda SharePoint Syntex-funktioner.</span><span class="sxs-lookup"><span data-stu-id="ac504-149">Once you have configured SharePoint Syntex, you must assign licenses for the users who will be using any SharePoint Syntex features.</span></span>
 
-<span data-ttu-id="6f280-149">Så här tilldelar du licenser:</span><span class="sxs-lookup"><span data-stu-id="6f280-149">To assign licenses:</span></span>
+<span data-ttu-id="ac504-150">För att tilldela licenser:</span><span class="sxs-lookup"><span data-stu-id="ac504-150">To assign licenses:</span></span>
 
-1. <span data-ttu-id="6f280-150">Klicka på **aktiva användare**under **användare**i administrations centret för Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="6f280-150">In the Microsoft 365 admin center, under **Users**, click **Active users**.</span></span>
+1. <span data-ttu-id="ac504-151">I Administrationscenter för Microsoft 365 klickar du på **Användare** > **Aktiva användare**.</span><span class="sxs-lookup"><span data-stu-id="ac504-151">In the Microsoft 365 admin center, under **Users**, click **Active users**.</span></span>
 
-2. <span data-ttu-id="6f280-151">Välj de användare som du vill licensiera och klicka på **Hantera produkt licenser**.</span><span class="sxs-lookup"><span data-stu-id="6f280-151">Select the users that you want to license, and click **Manage product licenses**.</span></span>
+2. <span data-ttu-id="ac504-152">Välj de användare som du vill licensiera och klicka på **Hantera produktlicenser**.</span><span class="sxs-lookup"><span data-stu-id="ac504-152">Select the users that you want to license, and click **Manage product licenses**.</span></span>
 
-3. <span data-ttu-id="6f280-152">Välj **tilldela mer**.</span><span class="sxs-lookup"><span data-stu-id="6f280-152">Select **Assign more**.</span></span>
+3. <span data-ttu-id="ac504-153">Välj **Tilldela fler**.</span><span class="sxs-lookup"><span data-stu-id="ac504-153">Select **Assign more**.</span></span>
 
-4. <span data-ttu-id="6f280-153">Välj **intelligent Content Services**.</span><span class="sxs-lookup"><span data-stu-id="6f280-153">Select **Intelligent Content Services**.</span></span> <span data-ttu-id="6f280-154">Under **program**kontrollerar du att **gemensam data tjänst för intelligenta innehålls tjänster** och **intelligenta innehålls tjänster** är markerade.</span><span class="sxs-lookup"><span data-stu-id="6f280-154">Under **Apps**, make sure **Common Data Service for Intelligent Content Services** and **Intelligent Content Services** are both selected.</span></span>
+4. <span data-ttu-id="ac504-154">Välj **Intelligenta innehållstjänster**.</span><span class="sxs-lookup"><span data-stu-id="ac504-154">Select **Intelligent Content Services**.</span></span> <span data-ttu-id="ac504-155">Under **Appar**ser du till att **Gemensam datatjänst för Intelligenta innehållstjänster** och **Intelligenta innehållstjänster** båda är markerade.</span><span class="sxs-lookup"><span data-stu-id="ac504-155">Under **Apps**, make sure **Common Data Service for Intelligent Content Services** and **Intelligent Content Services** are both selected.</span></span>
 
-    ![SharePoint Syntex-licenser i administrations centret för Microsoft 365](../media/content-understanding/sharepoint-syntex-licenses.png)
+    ![SharePoint Syntex-licenser i Administrationscenter för Microsoft 365](../media/content-understanding/sharepoint-syntex-licenses.png)
 
-5. <span data-ttu-id="6f280-156">Klicka på **Spara ändringar**.</span><span class="sxs-lookup"><span data-stu-id="6f280-156">Click **Save changes**.</span></span>
+5. <span data-ttu-id="ac504-157">Klicka på **Spara ändringar**.</span><span class="sxs-lookup"><span data-stu-id="ac504-157">Click **Save changes**.</span></span>
 
-## <a name="ai-builder-credits"></a><span data-ttu-id="6f280-157">Krediteringar för AI-byggare</span><span class="sxs-lookup"><span data-stu-id="6f280-157">AI Builder credits</span></span>
+## <a name="ai-builder-credits"></a><span data-ttu-id="ac504-158">AI Builder-krediter</span><span class="sxs-lookup"><span data-stu-id="ac504-158">AI Builder credits</span></span>
 
-<span data-ttu-id="6f280-158">Om du har 300 eller fler SharePoint Syntex-licenser för SharePoint Syntex i organisationen tilldelas du 1 000 000 AI Builder-kredit.</span><span class="sxs-lookup"><span data-stu-id="6f280-158">If you have 300 or more SharePoint Syntex licenses for SharePoint Syntex in your organization, you will be allocated one million AI Builder credits.</span></span> <span data-ttu-id="6f280-159">Om du har färre än 300 licenser måste du köpa AI Builder-kredit för att kunna använda formulär bearbetning.</span><span class="sxs-lookup"><span data-stu-id="6f280-159">If you have fewer than 300 licenses, you must purchase AI Builder credits in order to use forms processing.</span></span>
+<span data-ttu-id="ac504-159">Om du har 300 eller fler SharePoint Syntex-licenser för SharePoint Syntex i din organisation allokeras en miljon AI Builder-krediter.</span><span class="sxs-lookup"><span data-stu-id="ac504-159">If you have 300 or more SharePoint Syntex licenses for SharePoint Syntex in your organization, you will be allocated one million AI Builder credits.</span></span> <span data-ttu-id="ac504-160">Om du har färre än 300 licenser måste du köpa AI Builder-krediter för att kunna använda formulärbearbetning.</span><span class="sxs-lookup"><span data-stu-id="ac504-160">If you have fewer than 300 licenses, you must purchase AI Builder credits in order to use forms processing.</span></span>
 
-<span data-ttu-id="6f280-160">Du kan uppskatta vilken AI Builder-kapacitet som passar dig med [AI Builder-kalkylatorn](https://powerapps.microsoft.com/ai-builder-calculator).</span><span class="sxs-lookup"><span data-stu-id="6f280-160">You can estimate the AI Builder capacity that’s right for you with the [AI Builder calculator](https://powerapps.microsoft.com/ai-builder-calculator).</span></span>
+<span data-ttu-id="ac504-161">Du kan beräkna den AI Builder-kapacitet som passar dig bäst med [Kalkylatorn för AI Builder](https://powerapps.microsoft.com/ai-builder-calculator).</span><span class="sxs-lookup"><span data-stu-id="ac504-161">You can estimate the AI Builder capacity that’s right for you with the [AI Builder calculator](https://powerapps.microsoft.com/ai-builder-calculator).</span></span>
 
-<span data-ttu-id="6f280-161">Gå till [administrations centret för Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) för att kontrol lera kredit och användning.</span><span class="sxs-lookup"><span data-stu-id="6f280-161">Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity) to check your credits and usage.</span></span>
+<span data-ttu-id="ac504-162">Gå till [Administrationscenter för Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) om du vill kontrollera krediterna och användningen.</span><span class="sxs-lookup"><span data-stu-id="ac504-162">Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity) to check your credits and usage.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="6f280-162">Se även</span><span class="sxs-lookup"><span data-stu-id="6f280-162">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ac504-163">Se även</span><span class="sxs-lookup"><span data-stu-id="ac504-163">See also</span></span>
 
-[<span data-ttu-id="6f280-163">Översikt över formulär bearbetnings modellen</span><span class="sxs-lookup"><span data-stu-id="6f280-163">Overview of the form processing model</span></span>](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
+[<span data-ttu-id="ac504-164">Översikt över modellen för formulärbearbetning</span><span class="sxs-lookup"><span data-stu-id="ac504-164">Overview of the form processing model</span></span>](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
 
-[<span data-ttu-id="6f280-164">Steg-för-steg: hur du skapar en modell för dokument förståelse (video)</span><span class="sxs-lookup"><span data-stu-id="6f280-164">Step-by-Step: How to Build a Document Understanding Model (video)</span></span>](https://www.youtube.com/watch?v=DymSHObD-bg)
+[<span data-ttu-id="ac504-165">Steg för steg: Hur du skapar en modell för dokumenttolkning (video)</span><span class="sxs-lookup"><span data-stu-id="ac504-165">Step-by-Step: How to Build a Document Understanding Model (video)</span></span>](https://www.youtube.com/watch?v=DymSHObD-bg)
 
