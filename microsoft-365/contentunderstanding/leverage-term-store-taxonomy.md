@@ -1,56 +1,61 @@
 ---
-title: Använda term lagrings taxonomi när du skapar en Extractor
+title: Använda termlagringstaxonomi vid skapande av extraktor
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Använda term lagrings platsen när du skapar en Extractor i dokumentet förstås i Microsoft SharePoint Syntex.
-ms.openlocfilehash: 94f7a0389d2f06e0f8c1a60a341a02e43dfb2071
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Använd en termlagringstaxonomi vid skapande av extraktor i modellen för dokumenttolkning i Microsoft SharePoint Syntex.
+ms.openlocfilehash: f7219f6facc1d29242f7bd52743da92e13de3b89
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296222"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337283"
 ---
-# <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>Använda term lagrings taxonomi när du skapar en Extractor
-
-
-</br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
+# <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>Använda termlagringstaxonomi vid skapande av extraktor
 
 </br>
 
-När du skapar en Extractor i din dokument kunskaps modell i SharePoint Syntex kan du utnyttja den här [termen för](https://docs.microsoft.com/sharepoint/managed-metadata#terms) att Visa önskade villkor för data som du extraherar.  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GpJJ]  
 
-Som exempel identifieras och klassificeras alla **kontrakts** dokument som laddas upp till dokument biblioteket.  Dessutom extraherar modellen också ett **kontrakts tjänst** värde från varje kontrakt och visas i en kolumn i vyn bibliotek. Bland de olika kontrakts tjänstens värden finns det flera äldre värden som företaget inte längre använder och har bytt namn. Till exempel ska alla referenser till *design*-, *grafik*-och *topografi* -tjänster nu vara *kreativa*. När din modell extraherar ett av de föråldrade villkoren från ett kontrakts dokument vill du att den ska visas i din Library-vy. I exemplet nedan, och utbildning för modellen ser vi att ett exempel dokument innehåller den inaktuella *designens layout*.
-
-   ![Term lagrings plats](../media/content-understanding/design.png)</br>
+</br>
 
 
-## <a name="term-set-synonyms"></a>Synonymer för term uppsättning 
+När du skapar en extraktor i modellen för dokumenttolkning i SharePoint-Syntex kan du dra nytta av termlagringstaxonomins [Hanterade metadatatjänster](https://docs.microsoft.com/sharepoint/managed-metadata#terms) för att visa rekommenderade termer för data som du extraherar.  
 
-Term uppsättningar konfigureras i term lagrings platsen för hanterade metadata i administrations centret för SharePoint. I exemplet nedan är [termen uppsättning](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) för *kontrakt tjänster* konfigurerat till att omfatta flera villkor, inklusive *Creative*.  Informationen för det visar att termen har tre synonymer (*design*, *grafik*och *topografi*) och synonymerna bör översättas till *kreativ*.
+Som exempel identifierar och klassificerar din modell alla **Kontrakt** som har laddats upp till dokumentbiblioteket.  Dessutom extraherar modellen också värdet **Kontraktstjänst** från varje kontrakt. Det visas i en kolumn i din biblioteksvy. Bland de olika värdena för kontraktstjänster i kontrakten finns det flera äldre värden som företaget inte längre använder och som har bytt namn. Exempel: alla hänvisningar till termernas *Design*, *Grafik* eller *Topografi* i kontraktstjänsterna ska nu kallas *Kreativa*. När din modell hämtar en inaktuell term från ett kontrakt vill du att det ska visa den aktuella termen – Kreativ – i din biblioteksvy. I exemplet nedan ser vi medan vi tränar modellen att ett exempeldokument innehåller inaktuella villkor för *Design*.
 
-   ![Term uppsättning](../media/content-understanding/term-store.png)</br>
-
-<Mike, här är jag osäker på hur du beskriver detta.  Vilken åtgärd visar modellen när jag skapar en kolumn för att extrahera och visa kolumnen kontrakt tjänster, hur är att kolumnen "märkt" används för att använda term uppsättningen hanterade metadata för Creative Services? >
-
-## <a name="configure-your-document-library-site-column-for-a-managed-metadata-field"></a>Konfigurera kolumnen webbplats för dokument bibliotek för ett fält med hanterade metadata
+   ![Termlagring](../media/content-understanding/design.png)</br>
 
 
-   ![Skapa hanterade metadata](../media/content-understanding/creative.png)</br>
+## <a name="use-a-managed-metadata-column-in-your-extractor"></a>Använda en kolumn med hanterade metadata i din extraktor
+
+Uppsättningar med termer konfigureras i hanterade metadatatjänstens termarkiv i administrationscenter för SharePoint. I exemplet nedan är *Kontraktstjänsters* [termuppsättning](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) konfigurerad att innehålla flera termer, bland annat *Kreativa*.  Informationen för den visar att termen har tre synonymer (*Design*, *Grafik*och *Topografi*) och att synonymerna ska översätta till *Kreativa*. 
+
+   ![Termuppsättning](../media/content-understanding/term-store.png)</br>
+
+Det kan finnas flera anledningar till att du vill använda en synonym i termuppsättningen. Det kan till exempel röra sig om föråldrade termer, termer som fått nya namn eller skillnader mellan företagets olika avdelningar.
+
+Om du vill att fältet för hanterade metadata ska vara tillgängligt att välja när du skapar din extraktor i modellen måste du [lägga till det som en webbplatskolumn med hanterade metadata](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f). När du har lagt till webbplatskolumnen blir den tillgänglig att välja när du skapar extraktorn för din modell.
+
+   ![Kontraktstjänst](../media/content-understanding/contract-services.png)</br>
+
+
+Efter att ha använt modellen på dokumentbiblioteket, när dokumenten är uppladda till biblioteket, kommer kolumnen *Kreativa tjänster* att visa föredragen term (*Kreativ*) när extraktorn hittar något av synonymvärdena (*Design*, *Grafik* och *Topografi*).
+
+   ![Kontraktstjänstkolumnen](../media/content-understanding/creative.png)</br>
+
 
 ## <a name="see-also"></a>Se även
-[Introduktion till hanterade metadata](https://docs.microsoft.com/sharepoint/managed-metadata#terms)</br>
-[Skapa en Extractor](create-an-extractor.md)</br>
-[Skapa en kolumn med hanterade metadata](https://support.microsoft.com/office/create-a-managed-metadata-column-8fad9e35-a618-4400-b3c7-46f02785d27f?redirectSourcePath=%252farticle%252fc2a06717-8105-4aea-890d-3082853ab7b7&ui=en-US&rs=en-US&ad=US)</br>
+[Introduktion till hanterad metadata](https://docs.microsoft.com/sharepoint/managed-metadata#terms)
+
+[Skapa en extraktor](create-an-extractor.md)
+
+[Skapa en kolumn med hanterade metadata](https://support.microsoft.com/office/create-a-managed-metadata-column-8fad9e35-a618-4400-b3c7-46f02785d27f?redirectSourcePath=%252farticle%252fc2a06717-8105-4aea-890d-3082853ab7b7&ui=en-US&rs=en-US&ad=US)
 
 
 

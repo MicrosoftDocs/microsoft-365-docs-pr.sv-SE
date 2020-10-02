@@ -1,75 +1,77 @@
 ---
-title: Använda en bevarande etikett på en dokument modell
+title: Använda kvarhållningsetiketter på modeller för dokumenttolkning
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: I den här artikeln beskrivs hur du använder en bevarande etikett på en dokument förståelse
-ms.openlocfilehash: 26ad64906c0e2a311d8b244e8e1596a8b975cc15
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Den här artikeln tar upp hur du använder kvarhållningsetiketter på modeller för dokumenttolkning
+ms.openlocfilehash: b6ace2a11a7205919fdcf767b888401a5c28db0c
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294940"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338631"
 ---
-# <a name="apply-a-retention-label-to-a-document-understanding-model"></a>Använda en bevarande etikett på en dokument modell
+# <a name="apply-a-retention-label-to-a-document-understanding-model"></a>Använda kvarhållningsetiketter på modeller för dokumenttolkning
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GydO]  
 
 </br>
 
-Du kan enkelt använda en [behållnings etikett](https://docs.microsoft.com/microsoft-365/compliance/retention) för att förstå en modell i Microsoft SharePoint-Syntex.
 
-Med behållnings etiketter kan du tillämpa inställningar för behållning för de dokument som ditt dokument förstår.  Om du till exempel vill att din modell inte bara ska identifiera några *försäkrings* dokument som laddas upp till dokument biblioteket, men om du även vill använda en affärsmall för ett *företag* , så att dessa dokument inte kan tas bort från dokument biblioteket för den angivna tids perioden (till exempel följande fem månader).
+Du kan enkelt använda en [kvarhållningsetikett](https://docs.microsoft.com/microsoft-365/compliance/retention) på en modell för dokumenttolkning i Microsoft SharePoint Syntex.
 
-Du kan använda en befintlig behållnings etikett till dokumentet förstå modellen via modell inställningarna på modellens start sida. 
+Med hjälp av kvarhållningsetiketter kan du använda kvarhållningsinställningar för dokument som modellen för dokumenttolkning förstår.  Du vill till exempel kanske att din modell inte bara ska identifiera *Försäkringar* som laddats upp till dokumentbiblioteket, utan även använda kvarhållningsetiketten *Företag* på dem så att dokumenten inte kan tas bort från dokumentbiblioteket under den angivna tidsperioden (till exempel de kommande fem månaderna).
+
+Du kan använda en befintlig kvarhållningsetikett på modellen för dokumenttolkning i modellinställningarna på modellens startsida. 
 
 > [!Important]
-> För att lagrings etiketterna ska vara tillgängliga för att tillämpas på din innehålls förståelses modell måste de [skapas och publiceras i Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
+> För att kvarhållningsetiketterna ska vara tillgängliga att använda på din modell för innehållstolkning måste de [skapas och publiceras i Microsoft 365 Efterlevnadscenter](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
 
-## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>Så här lägger du till en bevarande etikett i en dokument modell
+## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>Att använda kvarhållningsetiketter på modeller för dokumenttolkning
 
-1. Välj **modell inställningar**från start sidan för modellen.</br>
-2. I **modell inställningar**i avsnittet **säkerhet och efterlevnad** väljer du menyn **bevarande etikett** för att se en lista över behållnings etiketter som är tillgängliga för att tillämpas på modellen.</br>
- ![Menyn bevarande etikett](../media/content-understanding/retention-labels-menu.png)</br> 
-3. Välj den bevarande etikett som du vill använda för modellen och välj sedan **Spara**.</br>
+1. På modellens startsida väljer du **Modellinställningar**.</br>
+2. I **Modelinställningar**, i avsnittet **Säkerhet och efterlevnad**, väljer du menyn **Kvarhållningsetikett** för en lista över de kvarhållningsetiketter som finns tillgängliga att använda på modellen.</br>
+ ![Kvarhållningsetikettmenyn](../media/content-understanding/retention-labels-menu.png)</br> 
+3. Välj den kvarhållningsetikett som du vill använda för modellen och sedan **Spara**.</br>
 
-När du har använt den här etiketten i din modell kan du använda den på en:
-- Nytt dokument bibliotek
-- Dokument bibliotek som modellen redan används för
+När du har använt kvarhållningsetiketten på din modell kan du använda den på:
+- Ett nytt dokumentbibliotek
+- Ett dokumentbibliotek som modellen redan används för
  
-## <a name="apply-the-retention-label-to-a-document-library-to-which-the-model-is-already-applied"></a>Använda etiketten för att lägga till ett dokument bibliotek som modellen redan används för
+## <a name="apply-the-retention-label-to-a-document-library-to-which-the-model-is-already-applied"></a>Använd kvarhållningsetiketten på ett dokumentbibliotek som modellen redan används för
 
-Om du redan har använt en modell för dokument förståelse i ett dokument bibliotek kan du göra följande för att synkronisera uppdaterings etiketten så att den används i dokument biblioteket:</br>
+Om modellen för dokumenttolkning redan har använts på ett dokumentbibliotek kan du göra följande för att synkronisera din uppdatering av kvarhållningsetiketten så att den används på dokumentbiblioteket:</br>
 
-1. Välj det dokument bibliotek som du vill tillämpa etikett uppdateringen för i avsnittet **bibliotek med den här modellen** på modell start sidan. </br> 
+1. På modellens startsida, i avsnittet **Bibliotek med den här modellen** väljer du det dokumentbibliotek på vilket du vill använda uppdateringen av kvarhållningsetiketten. </br> 
 2. Välj **Synkronisera**. </br>
- ![Synkroniseringsklient](../media/content-understanding/sync-model.png)</br> 
+ ![Synkronisera modell](../media/content-understanding/sync-model.png)</br> 
 
 
-När du har tillämpat uppdateringen och synkroniserat den med modellen kan du bekräfta att den har tillämpats genom att göra följande:
+Efter tillämpning av uppdateringen och synkronisering med modellen kan du kontrollera att den har använts genom att göra följande:
 
-1. I innehålls centret, i avsnittet **bibliotek med den här modellen** , klickar du på det bibliotek där den uppdaterade modellen användes. </br>
-2. I vyn dokument bibliotek väljer du informations ikonen för att kontrol lera modell egenskaperna.</br>  
-3. I listan **aktiva modeller** väljer du den uppdaterade modellen.</br>
-4. I avsnittet **bevarande etikett** ser du namnet på den använda lagrings etiketten.</br>
-
-
-På modellens visnings sida i dokument biblioteket visas en ny kolumn för **bevarande etikett** .  När din modell klassificerar filer som identifieras som tillhör ande innehålls typ och visar dem i vyn Bibliotek, visas även namnet på den behållnings etikett som har lagts till i modellen med hjälp av mallen för kvarhållande.
+1. I innehållscentret går du till avsnittet **Bibliotek med den här modellen**. Klicka på det bibliotek där din uppdaterade modell används. </br>
+2. I vyn dokumentbibliotek väljer du informationsikonen för att kontrollera modellens egenskaper.</br>  
+3. I listan över **Aktiva modeller** väljer du den uppdaterade modellen.</br>
+4. I avsnittet **Kvarhållningsetikett** ser du namnet på den kvarhållningsetikett som används.</br>
 
 
-Till exempel, alla *meddelanden om försäkrings brev* som modellen identifierar kommer att ha etiketten för *affärs* innehåll som du använder för att förhindra att de tas bort från dokument biblioteket för fem månader. Om ett försök görs att ta bort filen från dokument biblioteket visas ett fel meddelande om att det inte är tillåtet på grund av den använda lagrings etiketten.
+På modellens visningssida i dokumentbiblioteket visas en ny kolumn för **Kvarhållningsetikett**.  Allt eftersom modellen klassificerar filer som tillhör dess innehållstyp och listar dem i biblioteksvyn visas också namnet på den kvarhållningsetikett som har använts på den genom modellen.
+
+
+Till exempel kommer alla *Försäkringar* som modellen identifierar att ha kvarhållningsetiketten *Företag* så att de inte kan tas bort från dokumentbiblioteket på fem månader. Om du försöker ta bort filen från dokumentbiblioteket visas ett felmeddelande om att det inte är tillåtet eftersom kvarhållningsetiketten används.
 
 ## <a name="see-also"></a>Se även
-[Skapa en klassificerare](create-a-classifier.md)</br>
-[Skapa en Extractor](create-an-extractor.md)</br>
-[Översikt över dokument förståelse](document-understanding-overview.md)</br>
-[Skapa en modell för formulär bearbetning](create-a-form-processing-model.md)  
+[Skapa en klassificerare](create-a-classifier.md)
+
+[Skapa en extraktor](create-an-extractor.md)
+
+[Översikt av dokumenttolkning](document-understanding-overview.md)
+
+

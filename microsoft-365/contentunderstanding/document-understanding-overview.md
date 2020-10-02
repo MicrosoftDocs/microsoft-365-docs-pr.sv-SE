@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Få en översikt av dokumenttolkning i Microsoft SharePoint Syntex.
-ms.openlocfilehash: 3f2c463d3713048ffff7c20f2fcf6220d55d6a32
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 1265dfa06db323e23d63a044a1a95a6b67c525cf
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321779"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333564"
 ---
 # <a name="document-understanding-overview"></a>Översikt av dokumenttolkning
 
@@ -26,6 +26,9 @@ ms.locfileid: "48321779"
 </br>
 
 Dokumenttolkning använder AI-modeller (artificiell intelligens) för att automatisera klassificeringen av filer och datautvinningen. Det fungerar bäst med ostrukturerade dokument, till exempel brev eller kontrakt. De här dokumenten måste innehålla text som kan identifieras utifrån fraser eller mönster. Med den identifierade texten anges både vilken typ av fil det är (klassificeringen) och vad du vill extrahera (dess extraherare).
+
+> [!NOTE]
+> Mer information om formulärbearbetning och scenarioexempel på dokumenttolkning finns i [Införande av SharePoint-Syntex: Kom igång-guide](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#document-understanding-scenario-example).
 
 Modeller för dokumenttolkning skapas och hanteras på en typ av SharePoint-webbplats som kallas *innehållscenter*. När den används i ett SharePoint-dokumentbibliotek kopplas modellen till en innehållstyp med kolumner för att lagra den information som extraheras. Innehållstypen som du skapar lagras i galleriet för innehållstyper i SharePoint. Du kan också välja befintliga innehållstyper för att använda deras schema.
 

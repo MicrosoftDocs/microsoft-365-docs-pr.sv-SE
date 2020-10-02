@@ -1,6 +1,6 @@
 ---
-title: Skicka innehålls typer till en hubb
-description: Lär dig hur du skickar innehålls typer till en hubb
+title: Skicka innehållstyper till en navplats
+description: Läs mer om att skicka innehållstyper till en navplats
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -8,38 +8,44 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a852207bfd1a2a7643ce8895a533371d194954cf
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 6adaef77f6989d541f8028252c5bb1ec7db7a6fc
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296238"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337199"
 ---
-# <a name="push-content-types-to-a-hub"></a>Skicka innehålls typer till en hubb
+# <a name="push-content-types-to-a-hub"></a>Skicka innehållstyper till en navplats
 
-För att göra viktiga innehålls typer mer konsekvent tillgängliga för SharePoint-bibliotek och-listor kan du flytta dem till de nav du väljer. Då läggs de automatiskt till i alla nya listor och bibliotek som skapas på de webbplatser som är kopplade till navet och till nya webbplatser som lagts till i navet.
+</br>
 
-För att den här funktionen ska fungera måste innehålls typerna som publiceras redan vara publicerade.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GyeV]  
 
-Så här skickar du innehålls typer till nav
+</br>
 
-1. Expandera **innehålls tjänster**i administrations centret för SharePoint och klicka sedan på **galleriet innehålls typ**.
 
-2. Klicka på den innehålls typ som du vill skicka till nav.
+Om du vill göra viktiga innehållstyper mer kontinuerligt tillgängliga för SharePoint-bibliotek och -listor kan du skicka dem till de navplatser du väljer. Det gör att de automatiskt läggs till i nya listor och bibliotek som skapas på de webbplatser som är kopplade till navet och till alla nya webbplatser som läggs till navet.
 
-3. Klicka på **Redigera** i kommando fältet.
+För att den här funktionen ska fungera måste innehållstyperna som publiceras redan vara publicerade.
+
+Att skicka innehållstyper till en hubb
+
+1. Öppna **Innehållstjänster** i administrationscenter för SharePoint och klicka sedan på **Galleri med innehållstyper**.
+
+2. Klicka på den innehållstyp som du vill skicka till navet.
+
+3. Klicka på **redigera** i kommandofältet.
  
-4. Klicka på **Välj nav webbplatser**.
+4. Klicka på **Välj navplatser**.
  
-5. Välj önskade nav webbplatser och klicka sedan på **OK**.
+5. Välj önskade navplatser och klicka sedan på **OK**.
  
 6. Klicka på **Spara**.
 
-När du försöker skicka en innehålls typ till ett befintligt nav & dess befintliga associerade webbplatser för första gången kan det ta upp till en timme från när navet eller de associerade platserna besöks för att uppdatera inställningarna på webbplatsen. Alla nya associationer till navet behöver inte vänta och få inställningarna att synas om några minuter. 
+När du skickar en innehållstyp till en befintlig hubb och dess befintliga kopplade webbplatser för första gången kan det ta upp till en timme från det att hubben eller tillhörande webbplatser besökts för inställningarna att uppdateras på webbplatsen. Alla nya associationer till hubben kräver inte dettautan där kommer inställningarna att återspeglas efter några minuter. 
 
-När det här är konfigurerat är innehålls typen med de här inställningarna tillgängliga på alla nyligen associerade webbplatser med navet inom några minuter. När du har gjort det får innehålls typen automatiskt lagts till för en ny lista eller ett nytt bibliotek med några minuters uppläggningar. En skickad innehålls typ läggs till i ett dokument bibliotek endast om den härleds direkt eller indirekt från dokument innehålls typen och en innehålls typ läggs till i en lista endast om den inte är härledd från dokument innehålls typen direkt eller indirekt.
+När detta har konfigurerats blir innehållstypen med de här inställningarna tillgänglig på alla nyligen kopplade webbplatser med hubben på några minuter. När en ny lista eller ett nytt bibliotek skapas kommer innehållstypen automatiskt, efter att ha gjorts tillgänglig, att läggas till på ett par minuter. En innehållstyp som skickas kommer bara att läggas till i ett dokumentbibliotek om den kommer direkt eller indirekt från dokumentets innehållstyp och en innehållstyp läggs endast till i en lista om den inte direkt eller indirekt kommer från dokumentets innehållstyp.
 
 ## <a name="see-also"></a>Se även
 

@@ -1,6 +1,6 @@
 ---
-title: Importera en term uppsättning med ett SKOSt format
-description: Lär dig hur du importerar en term uppsättning med ett SKOSt format
+title: Importera en termuppsättning med ett SKOS-baserat format
+description: Läs mer om att importera en termuppsättning med ett SKOS-baserat format
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,43 +9,42 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: aaed88463f690853672780b48a8ee3857a956847
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 318497b8b1815b281eff7d781820616c9be9d5ed
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296234"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321247"
 ---
-# <a name="import-a-term-set-using-a-skos-based-format"></a>Importera en term uppsättning med ett SKOSt format
+# <a name="import-a-term-set-using-a-skos-based-format"></a>Importera en termuppsättning med ett SKOS-baserat format
 
-Du kan importera en term uppsättning med ett SKOSt format. Mer information om formatet finns i [SharePoint-taxonomi för SKOS format](skos-format-reference.md).
+Du kan importera en termuppsättning med ett SKOS-baserat format. Mer information om formatet finns i [SKOS-formatreferens för SharePoint-taxonomi](skos-format-reference.md).
 
-Vi rekommenderar att du sparar dina import filer på färre än 20 000 villkor. Större filer kan öka tiden för validering och import.
+Vi rekommenderar att du endast importerar filer med färre än 20 000 termer. Större filer kan göra att verifiering och import tar längre tid.
 
-1. Expandera **innehålls tjänster**i administrations centret för SharePoint och klicka sedan på **term lagrings plats**.
+1. Öppna **Innehållstjänster** i administrationscenter för SharePoint och klicka sedan på **Termlagring**.
 
-2. Välj den term grupp där du vill importera term uppsättningen.
+2. Välj den termgrupp där du vill importera termuppsättningen.
 
-3. Klicka på **Importera term uppsättning**i kommando fältet.
+3. Klicka på **Importera termuppsättning**i kommandofältet.
  
-4.  Om du vill ladda ned en exempel fil som du vill använda som mall klickar du på **Sample-metadata. TTL** för att hämta en exempel fil som använder det SKOSbaserade formatet.
+4.  Om du vill ladda ned en exempelfil och använda den som en mall klickar du på **sample-metadata.ttl** för att hämta en exempelfil som använder det SKOS-baserade formatet.
  
-5.  Skapa import filen som innehåller term uppsättningarna & villkor som du vill importera.
+5.  Skapa importfilen innehållandes de termuppsättningar och termer du vill importera.
 
-6.  Under **fil format**väljer du **SKOS (*. TTL)**.
+6.  Under **Filformat** väljer du **SKOS (*.ttl)**.
 
-7.  Klicka på **Bläddra** och navigera till och Lägg till en import fil.
+7.  Klicka på **Bläddra**, leta upp och lägg till din importfil.
 
-8.  Klicka på **Importera**. Stäng inte panelen förrän importen är klar.
+8.  Klicka på **Importera**. Stäng inte panelen förrän importen har slutförts.
 
-När filen importeras visas ett meddelande om att det är klart och term lagrings platsen uppdateras och du kan navigera till de nya term uppsättningarna.
+Vid import av filen visas ett meddelande om att importen lyckades och termlagringsplatsen uppdateras. Du kan nu gå till de nyskapade termuppsättningarna.
 
 ## <a name="see-also"></a>Se även
 
 [Introduktion till hanterade metadata](https://docs.microsoft.com/sharepoint/managed-metadata)
 
-[Översikt över dokument förståelse](document-understanding-overview.md)
+[Översikt för dokumenttolkning](document-understanding-overview.md)
 
-[Importera term uppsättningar (webbplats nivå)](https://support.microsoft.com/office/168fbc86-7fce-4288-9a1f-b83fc3921c18)
+[Importera termuppsättningar (webbplatsnivå)](https://support.microsoft.com/office/168fbc86-7fce-4288-9a1f-b83fc3921c18)

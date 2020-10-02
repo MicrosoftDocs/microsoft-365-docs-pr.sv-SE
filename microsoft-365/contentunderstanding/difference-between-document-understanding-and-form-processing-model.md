@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Beskriver viktiga skillnader mellan modeller för dokumenttolkning och modeller för formulärbearbetning
-ms.openlocfilehash: 5fa9bd6b5873a11c00b19663226c4e3dd2b65825
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 71887aeeb66699b3d756317b33d52607f480aa7d
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321791"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333878"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Skillnader mellan modeller för dokumenttolkning och modeller för formulärbearbetning 
 
@@ -30,6 +30,8 @@ Det finns två modell typer som du kan använda:
 
 Båda modellerna används vanligtvis för samma syfte och de viktigaste skillnaderna som anges nedan påverkar vilka som du kan använda.
 
+> [!NOTE]
+> Mer information om formulärbearbetning och scenarioexempel på dokumenttolkning finns i [Införande av SharePoint Syntex: kom igång-guide](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#form-processing-scenario-example).
 
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Strukturerat jämfört med ostrukturerat och halvstrukturerat innehåll
