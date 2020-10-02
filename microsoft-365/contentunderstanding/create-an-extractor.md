@@ -9,14 +9,14 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Lär dig hur du skapar en extraktor i Microsoft SharePoint-Syntex.
-ms.openlocfilehash: d68cc8b8c337c1ae6740eb5775576a54279b8389
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 260486c128ce76c31fe5f4a0994b4e103687b829
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321815"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338655"
 ---
-# <a name="create-an-extractor-preview"></a>Skapa en extraktor (Förhandsvisning)
+# <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Skapa en extraktor i Microsoft SharePoint-Syntex.
 
 
 </br>
@@ -122,9 +122,20 @@ Om du får en **Matchningsfel** igen på dina etiketterade filer behöver du ant
 
 ## <a name="test-your-model"></a>Testa din modell
 
-Om du får en matchning för dina etiketterade exempelfiler kan du nu testa din modell på de återstående omärkta exempelfilerna. Det här är ett användbar steg för att utvärdera "lämpligheten", eller beredskapen av modellen innan användning genom att testa den på filer som modellen inte har sett tidigare.
+Om du får en matchning för dina etiketterade exempelfiler kan du nu testa din modell på de återstående omärkta exempelfilerna. Det här är valfri, men ett användbar steg för att utvärdera "lämpligheten", eller beredskapen av modellen innan användning genom att testa den på filer som modellen inte har sett tidigare.
 
 1. Gå till start sidan för modellen och klicka på fliken **Test**.  Då körs modellen på dina omärkta exempelfiler.
 2. I **Testfil**-listan visas dina exempelfiler för att visa om modellen kan extrahera informationen som du behöver. Använd den här informationen för att ta reda på hur effektivt din klassificerare är för att identifiera dina dokument.
 
     ![Testa din filer](../media/content-understanding/test-filies-extractor.png) 
+
+## <a name="see-also"></a>Se även
+[Skapa en klassificerare](create-a-classifier.md)
+
+[Förklaringstyper](explanation-types-overview.md)
+
+[Använd termlagringstaxonomi vid skapande av extraktor](leverage-term-store-taxonomy.md)
+
+[Översikt av dokumenttolkning](document-understanding-overview.md)
+
+[Använda en modell](apply-a-model.md) 
