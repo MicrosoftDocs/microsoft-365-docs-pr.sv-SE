@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Skapa en modell för formulärbearbetning i Microsoft SharePoint-Syntex.
-ms.openlocfilehash: df8a8bc5828c0235ecb18387fe753d77f0856eec
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 27e80a7b3626170e45ceaa55f1269e50d8fdab9e
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321827"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337271"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Skapa en modell för formulärbearbetning i Microsoft SharePoint-Syntex
 
@@ -30,6 +30,13 @@ Att skapa en modell för formulärbearbetning inbegriper följande:
  - Steg 6: Använd din modell
 
 ## <a name="requirements"></a>Krav
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhN]  
+
+</br>
+
 
 Du kan bara skapa en modell för formulärbearbetning i SharePoint-dokumentbibliotek för vilka den är aktiverad. Om formulärbearbetning är aktiverad kan du se **AI Builder** **"Skapa en modell för formulärbearbetning"** under **Automatisera** meny i ditt dokumentbiblioteket.  Om du behöver få bearbetning aktiverad i ditt dokumentbibliotek måste du kontakta din SharePoint-administratör.
 

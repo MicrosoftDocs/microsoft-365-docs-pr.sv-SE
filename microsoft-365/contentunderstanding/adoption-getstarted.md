@@ -11,22 +11,22 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 83da50b3772b6adcb7977425bfcaa1b437bc6a68
-ms.sourcegitcommit: bf21a4caae0c01d93281744838f0aa50e1fb2a22
+ms.openlocfilehash: f6bb4f5e09adcb1be6323a5d3d182cc3d1bc6017
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48324295"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337235"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex: komma igång
 
-Tänk på de intelligenta innehålls tjänsterna som är tillgängliga i Microsoft SharePoint-Syntex med tre delar:
+Tänk på de intelligenta innehålls tjänsterna som är tillgängliga i SharePoint-Syntex med tre delar:
 
 - **Innehålls förståelse:** skapa ej kodade AI-modeller för att klassificera och extrahera information från innehåll så att metadata kan identifieras och återanvändas automatiskt. Läs mer om [innehålls förståelse](document-understanding-overview.md).
 - **Innehålls bearbetning:** Automatisera insamling, intag och kategorisering av innehåll och strömlinjeforma innehållsbaserade processer genom att använda Power autoautomatisera. Läs mer om [innehålls bearbetning](form-processing-overview.md).
 - **Innehålls överensstämmelse:** Kontrol lera och hantera innehåll för att förbättra säkerheten och styrningen med integrering med Microsoft informations skydd.
 
-Med nya AI-tjänster och-kapaciteter kan du skapa program för innehålls förståelse och klassificering direkt i innehålls hanterings flödet med hjälp av Microsoft SharePoint Syntex:
+Med nya AI-tjänster och-kapaciteter kan du skapa program för innehålls förståelse och klassificering direkt i innehålls hanterings flödet med hjälp av SharePoint Syntex:
 
 |Manuell inmatning| Formulär bearbetning | Dokument förståelse |
 |:-------|:--------|:--------|
@@ -34,7 +34,7 @@ Med nya AI-tjänster och-kapaciteter kan du skapa program för innehålls först
 | Active   | Färdiga, automatiserade   | Anpassat, assisterande   | Anpassad, kompatibel |
 | Personer som gör jobbet | I ämnes experter (SMF). Fånga innehålls typer och metadata från kontrakt, Merit förteckningar, andra ostrukturerade dokument. | Små och medel stora företag är mindre inblandade. från inköps order, program, andra halv strukturerade och strukturerade dokument |
 
-I följande tabell förklaras vad du får när du använder Microsoft SharePoint-Syntex:
+I följande tabell förklaras vad du får när du använder SharePoint Syntex:
 
 | Formulär bearbetning | Dokument förståelse |
 |:-------|:-------|
@@ -46,14 +46,14 @@ Det finns två olika sätt att förstå innehållet. Vilken modell typ du använ
 
 | Formulär bearbetning | Dokument förståelse |
 |:-------|:-------|
-| Skapat från dokument bibliotek | Skapat i innehålls Center, som ingår i Microsoft SharePoint Syntex |
+| Skapat från dokument bibliotek | Skapat i innehålls Center, som ingår i SharePoint Syntex |
 | Modell skapad i AI Builder | Modell skapad i inbyggt gränssnitt |
 | Används för halv strukturerade fil format | Används för ostrukturerade fil format |
 | Uppställd klassificerare | Tågens klassificerare med valfria utdrag |
 | Begränsat till ett enda bibliotek | Kan tillämpas på flera bibliotek |
 | Träna på PDF, JPG, PNG-format, totalt 50 MB/500 sid | Utbilda dig på 5-10 PDF-, Office-och e-postfiler, inklusive negativa exempel |
 
-Microsoft SharePoint-Syntex integreras med funktioner i Microsoft 365 som:
+SharePoint-Syntex integreras med Microsoft 365-funktioner för kompatibilitet som:
 
 - Lagrings etiketter som definierar princip för Arkiv handlingar baserat på dokumentets ålder eller externa händelser.
 - Känslighets etiketter som anger principer för DLP, kryptering, delning och villkorsstyrd åtkomst.
@@ -62,12 +62,12 @@ Användarna kan använda etiketter eller de kan användas automatiskt av SharePo
 
 ## <a name="identify-pilot-business-scenarios-to-optimize"></a>Identifiera pilot företags scenarier att optimera
 
-För att förbereda dig för att använda Microsoft SharePoint-Syntex i din organisation måste du först förstå vilka scenarier de kommer att vara användbara. Anledningen hjälper dig att avgöra vilken modell som behövs och hur du strukturerar din organisation baserat på var modellen ska användas. Här är några scenarier där dokument förståelse kan hjälpa din organisation:
+För att förbereda dig för att använda SharePoint-Syntex i din organisation måste du först förstå vilka scenarier de kommer att vara användbara. Anledningen hjälper dig att avgöra vilken modell som behövs och hur du strukturerar din organisation baserat på var modellen ska användas. Här är några scenarier där dokument förståelse kan hjälpa din organisation:
 
 - Innehålls bearbetning: process kontrakt, arbets uppgifter och andra formulär-liknande dokument. Intag av formulären, träna modellen för att förstå och Mappa fälten och kör sedan formulären genom att automatiskt samla in data. Mer information finns i [Översikt över formulär bearbetning](form-processing-overview.md).
 - Faktura analys: hämta relevant information från dina fakturor och kontrol lera att de följer med policy eller behandlas på lämpligt sätt.
 
-Tänk på olika sätt som Microsoft SharePoint-Syntex kan hjälpa din organisation:
+Tänk på hur SharePoint Syntex kan hjälpa din organisation:
 
 - Automatisera affärs processer
 - Förbättra Sök precisionen
@@ -75,7 +75,7 @@ Tänk på olika sätt som Microsoft SharePoint-Syntex kan hjälpa din organisati
 
 ### <a name="form-processing-scenario-example"></a>Exempel på formulär bearbetnings scenario
 
-Du kan till exempel konfigurera en process med Microsoft SharePoint-Syntex och Power Autostart-funktioner för att spåra och övervaka fakturor.
+Du kan till exempel konfigurera en process med SharePoint Syntex och Power Autostart-funktioner för att spåra och övervaka fakturor.
 
 1. Skapa ett bibliotek för att lagra faktura dokumenten.
 1. Träna modellen att känna igen fält i dokumenten.
@@ -85,7 +85,7 @@ Du kan till exempel konfigurera en process med Microsoft SharePoint-Syntex och P
     - En faktura har passerat sin förfallo dag.
     - En faktura är för ett belopp som är större än det automatiska godkännande beloppet.
 
-![Spåra och kontrol lera fakturor med Microsoft SharePoint Syntex och Power autoautomatisera](../media/content-understanding/process-invoices-flow.png)
+![Spåra och kontrol lera fakturor med SharePoint Syntex och Power autoautomatisera](../media/content-understanding/process-invoices-flow.png)
 
 När du automatiserar detta scenario kan du:
 
@@ -102,7 +102,7 @@ Du kan också konfigurera en process för att identifiera vilka kontrakt som fö
 1. När modellen är färdig tillämpar du modellen på ett bibliotek där du kan ladda upp kontrakt.
 1. Använd en behållnings etikett till datum fältet, så att kontrakt bevaras i biblioteket Under den tid som organisationen kräver för kontrakt.
 
-![Spåra och övervaka kontrakt med Microsoft SharePoint-Syntex och bevarande etiketter](../media/content-understanding/process-contracts-flow.png)
+![Spåra och övervaka kontrakt med SharePoint-Syntex och bevarande etiketter](../media/content-understanding/process-contracts-flow.png)
 
 När du automatiserar detta scenario kan du:
 
@@ -127,7 +127,7 @@ Bestäm vem i organisationen som ska bygga och hantera modellerna? Följande rol
 | SharePoint/kunskaps administratör | Administratör för Power Platform | Kunskaps chef | Modell ägare |
 |:-------|:-------|:-------|:-------|
 | AAD-roll| Lägg till roll | AAD-roll | Representanter |
-| Konfigurera formulär bearbetning | Konfigurera gemensam data tjänst miljö för formulär bearbetning | Samla användnings fall | Samlat företags användnings fall |
+| Konfigurera formulärbearbetning | Konfigurera gemensam data tjänst miljö för formulär bearbetning | Samla användnings fall | Samlat företags användnings fall |
 | Hantera innehålls Center och behörigheter| Köp och tilldela AIB-kredit | Skapa bästa praxis och granska modell analyser | Skapa och använda modeller |
 
 Kunskaps chef, arbets process ägare och ägare av innehålls modell skapa exempel modeller och mästare som antagits i organisationen.
@@ -140,7 +140,7 @@ Var kommer de att bygga och tillämpa modellerna? Finns det befintliga processer
 
 ## <a name="strategic-positioning"></a>Strategisk placering
 
-Arbeta med intressenter för att säkerställa att de är justerade mot strategin för att använda Microsoft SharePoint-Syntex. Undersök och ange följande resurser för att hjälpa till med den här placeringen:
+Arbeta med intressenter för att säkerställa att de är justerade mot strategin för att använda SharePoint-Syntex. Undersök och ange följande resurser för att hjälpa till med den här placeringen:
 
 - Företags resultat:
   - Potentiella kvitto resultat
@@ -170,7 +170,7 @@ Identifiera intressenterna för projektet.
 
 ## <a name="readiness-checklist"></a>Check lista för beredskap
 
-För att du ska kunna implementera Microsoft SharePoint-Syntex (för hands version) måste du:
+För att du ska kunna implementera SharePoint-Syntex måste du:
 
 ![Beredskap för innehålls förståelse](../media/content-understanding/cu-adoption-readinesschecklist.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Arbeta med insikter
 description: ''
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6b19c5cd1766c07e106897cefeb495f1b98bb548
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: b3ed56dd3e669dbd5a2c3f09d87dfd87fe680aff
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104394"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337187"
 ---
 # <a name="work-with-insights"></a>Arbeta med insikter
 
@@ -31,9 +31,9 @@ Med dessa instrument paneler kan du hitta svaren på dessa:
 - Vilken är den aktuella statusen för säkerhets uppdateringar på enheter?
 - Hur lång tid tog det för 95% av enheterna att bli aktuell med den senaste säkerhets uppdateringen?
 
-För att komma åt de här vyerna från [Microsoft Endopint Manager](https://endpoint.microsoft.com/)nvaigate du till fliken Microsoft Managed Desktop på Start sidan och väljer **Visa information** i området **rapporter** :
+För att komma åt dessa vyer från [Microsoft slut punkts hanteraren](https://endpoint.microsoft.com/)navigerar du till fliken Microsoft Managed Desktop på Start sidan och väljer **Visa information** i området **rapporter** :
 
-<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->!
+<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->
 
 
 ## <a name="usage-insights"></a>Användningsinsikter
@@ -54,7 +54,6 @@ I den här vyn visas information om energi förbrukningen för appar och projekt
 Lär dig mer om [batteri insikter](battery-insights.md).
 
 ## <a name="windows-security-update-insights"></a>Insikter om Windows-säkerhetsuppdateringar
-
-I den här vyn visas information om statusen för säkerhets uppdateringar för Microsoft Managed Station ära datorer. Om du vill visa den här informationen väljer du fliken **Windows Security udates** .
+I den här vyn visas information om statusen för säkerhets uppdateringar för Microsoft Managed Station ära datorer. Om du vill visa den här informationen väljer du fliken **Windows säkerhets uppdateringar** .
 
 Läs mer om [säkerhets uppdaterings insikter](security-update-insights.md).

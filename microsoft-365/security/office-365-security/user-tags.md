@@ -1,5 +1,5 @@
 ---
-title: Användar flaggor
+title: Användartaggar i Office 365 ATP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,15 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan lära sig att identifiera specifika grupper med användare med User-Taggar i Oiffce 365 ATP 2. Filtrering av märkningar är tillgängligt för aviseringar, rapporter och undersökningar i Office 365 ATP för att snabbt identifiera taggade användare.
-ms.openlocfilehash: d47c5c00e3cf0362c44aebc18d11db4bba68a149
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+description: Administratörer kan lära sig att identifiera specifika grupper med användare med användar koder i Office 365 ATP-abonnemang 2. Filtrering av märkningar är tillgängligt för aviseringar, rapporter och undersökningar i Office 365 ATP för att snabbt identifiera taggade användare.
+ms.openlocfilehash: 9522499b3861f0f0e44fcbf09896a5c93feed95d
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48210036"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337259"
 ---
-# <a name="user-tags-in-the-microsoft-security-center"></a>Användar koder i Microsoft säkerhets Center
+# <a name="user-tags-in-office-365-atp"></a>Användartaggar i Office 365 ATP
 
 User-taggar är identifierare för specifika grupper med användare i [Office 365 Avancerat skydd (ATP)](office-365-atp.md). [Prioritets konton](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) är en typ av användar märkning. Om din organisation har Office 365 ATP-abonnemang 2 (ingår i ditt abonnemang eller som ett tillägg) kan du skapa anpassade användar flaggor förutom att använda taggen för prioritets konton.
 
@@ -33,11 +33,11 @@ När du har använt taggar för specifika användare kan du använda taggarna so
 - [Statusrapport för hotskydd](view-email-security-reports.md#threat-protection-status-report)
 - [Kampanjvyer](campaigns.md)
 
-I den här artikeln förklaras hur du konfigurerar användar koder i säkerhets Center.
+I den här artikeln förklaras hur du konfigurerar användar koder i fältet säkerhets & efterlevnad. Det finns inga cmdletar i säkerhets & kompatibilitetstillstånd för att hantera användar koder.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du öppnar säkerhets Center på <https://security.microsoft.com/> . Öppna för att gå direkt till sidan **User Tags** <https://security.microsoft.com/securitysettings/userTags> .
+- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Öppna för att gå direkt till sidan **User Tags** <https://protection.office.com/userTags> .
 
 - Om du vill skapa, ändra eller ta bort användar flaggor måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** i säkerhets & Compliance Center. Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
@@ -45,7 +45,7 @@ I den här artikeln förklaras hur du konfigurerar användar koder i säkerhets 
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>Använda säkerhets Center för att skapa användar flaggor
 
-1. I säkerhets Center går du till **Inställningar** \> **e-&** \> **användar märkning**för samarbete.
+1. Gå till användar märkning för **Threat Management** i säkerhets Center \> **User tags**.
 
 2. På sidan med **användar Taggar** som öppnas klickar du på **skapa tagg**.
 
@@ -79,7 +79,7 @@ I den här artikeln förklaras hur du konfigurerar användar koder i säkerhets 
 
 ## <a name="use-the-security-center-to-view-user-tags"></a>Använda säkerhets Center för att Visa användar flaggor
 
-1. I säkerhets Center går du till **Inställningar** \> **e-&** \> **användar märkning**för samarbete.
+1. Gå till användar märkning för **Threat Management** i säkerhets Center \> **User tags**.
 
 2. På sidan med **användar Taggar** som öppnas väljer du den användar tagg som du vill visa (Klicka inte på kryss rutan).
 
@@ -89,7 +89,7 @@ I den här artikeln förklaras hur du konfigurerar användar koder i säkerhets 
 
 ## <a name="use-the-security-center-to-modify-user-tags"></a>Använda säkerhets Center för att ändra användar flaggor
 
-1. I säkerhets Center går du till **Inställningar** \> **e-&** \> **användar märkning**för samarbete.
+1. Gå till användar märkning för **Threat Management** i säkerhets Center \> **User tags**.
 
 2. På sidan med **användar Taggar** som öppnas väljer du den användar tagg som du vill visa och klickar sedan på **Redigera tagg**.
 
@@ -101,6 +101,6 @@ I den här artikeln förklaras hur du konfigurerar användar koder i säkerhets 
 
 **Obs!** du kan inte ta bort den inbyggda **prioritets konto** typen.
 
-1. I säkerhets Center går du till **Inställningar** \> **e-&** \> **användar märkning**för samarbete.
+1. Gå till användar märkning för **Threat Management** i säkerhets Center \> **User tags**.
 
 2. På sidan med **användar Taggar** som öppnas väljer du den användar tagg som du vill ta bort, klickar på **ta bort flagga**och väljer sedan **Ja, ta bort** i varningen som visas.

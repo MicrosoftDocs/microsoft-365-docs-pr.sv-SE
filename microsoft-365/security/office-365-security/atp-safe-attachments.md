@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om funktionen för säkra bifogade filer i Office 365 Avancerat skydd (ATP).
-ms.openlocfilehash: 6ff356f34f3e44752b5ad7f5fa433a8c72cd5083
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c3dd64ce6f1d50cf30dfcc33f17021904791912c
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326537"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337211"
 ---
-# <a name="safe-attachments-in-office-365-atp"></a>Säkra bifogade filer i Office 365 ATP
+# <a name="safe-attachments-in-office-365-atp"></a>Säkra bilagor i Office 365 ATP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -108,9 +108,7 @@ Här är några saker att tänka på vid dynamisk leverans och vidarebefordrade 
 
 - Om den vidarebefordrade mottagaren inte är skyddad av en policy för säker bifogad fil levereras meddelandet och bifogade filer utan vissa plats hållare för att skanna eller bifogade filer.
 
-## <a name="scenarios-where-safe-attachments-doesnt-scan-messages"></a>Scenarier där säkra bifogade filer inte skannar meddelanden
-
-Det finns scenarier där säkra bifogade filer inte kan söka igenom meddelanden:
+Det finns scenarier där dynamisk leverans inte kan ersätta bifogade filer i meddelanden. Det här är bland annat:
 
 - Meddelanden i gemensamma mappar.
 
@@ -126,7 +124,7 @@ Det finns scenarier där säkra bifogade filer inte kan söka igenom meddelanden
 
 - [S/MIME)](s-mime-for-message-signing-and-encryption.md) krypterade meddelanden.
 
-- Du konfigurerade åtgärden för dynamisk leverans i en policy för säker bifogad fil, men mottagaren stöder inte dynamisk leverans (till exempel att mottagaren är en post låda i en lokal Exchange-organisation). Däremot kan de [säkra länkarna i office 365 ATP](set-up-atp-safe-links-policies.md) Skanna Office-bifogade filer som innehåller URL-adresser (beroende på hur de säkra länkarna är konfigurerade).
+- Du konfigurerade åtgärden för dynamisk leverans i en policy för säker bifogad fil, men mottagaren stöder inte dynamisk leverans (till exempel att mottagaren är en post låda i en lokal Exchange-organisation). Emellertid kan de [säkra länkarna i office 365 ATP](set-up-atp-safe-links-policies.md) Skanna Office-bifogade filer som innehåller URL-adresser (beroende på hur de [globala inställningarna för säkra länkar](configure-global-settings-for-safe-links.md) är konfigurerade).
 
 ## <a name="submitting-files-for-malware-analysis"></a>Skicka filer för analys av skadlig program vara
 

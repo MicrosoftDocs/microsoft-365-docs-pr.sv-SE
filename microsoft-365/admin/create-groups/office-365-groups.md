@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig mer om Microsoft 365-grupper.
-ms.openlocfilehash: 711ab7e7818b266d7cbdbe076e30355d29bc3eeb
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 5d85204687641e74f9a705162df01cebd7eeee26
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307271"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337175"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Översikt över Microsoft 365-grupper för administratörer
 
@@ -76,7 +76,7 @@ Följande begränsningar gäller för Microsoft 365-grupper:
 |Grupper som en användare kan skapa|250|
 |Grupper som en administratör kan skapa|Upp till standard klient organisations gräns på 500 000|
 |Antal medlemmar|Mer än 1 000, men endast 1 000 kan komma åt gruppkonversationer samtidigt. <br>Användarna kan märka fördröjningar när de ska använda kalendern och konversationer i stora grupper i Outlook.|
-|Antal grupper en användare kan vara medlem i|1 000|
+|Antal grupper en användare kan vara medlem i|7 000|
 |Fil lagring|1 terabyte + 10 GB per användare med abonnemang + eventuell ytterligare lagring. Du kan köpa ett obegränsat antal lagrings utrymme.|
 |Storlek på gruppens post låda|50 GB|
 
