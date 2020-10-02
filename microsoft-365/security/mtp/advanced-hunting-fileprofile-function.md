@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3fc563c762e7cd00888665b63e66159e4d3d9612
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6d627dcf3d6ec8ca1d2aa76eab484361c25b529e
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196983"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338423"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -30,7 +30,7 @@ ms.locfileid: "48196983"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft Threat Protection
 
 `FileProfile()`Funktionen är en mångsidig funktion i [Avancerad jakt](advanced-hunting-overview.md) som lägger till följande data i filer som hittas av frågan.
 
@@ -61,8 +61,8 @@ invoke FileProfile(x,y)
 
 ## <a name="arguments"></a>Argument
 
-- **x** — kolumnen fil-ID som ska användas: `SHA1` , `SHA256` `InitiatingProcessSHA1` eller `InitiatingProcessSHA256` ; funktionen används `SHA1` om ospecificerad
-- **y** – begränsa antalet poster som ska utökas, 1-1000; funktionen använder 100 om ospecificerad
+- **x**— kolumnen fil-ID som ska användas: `SHA1` , `SHA256` ,, `InitiatingProcessSHA1` eller `InitiatingProcessSHA256` ;-funktionen används `SHA1` om ospecificerad
+- **y**– begränsa antalet poster som ska utökas, 1-1000; funktionen använder 100 om ospecificerad
 
 ## <a name="examples"></a>Exempel
 

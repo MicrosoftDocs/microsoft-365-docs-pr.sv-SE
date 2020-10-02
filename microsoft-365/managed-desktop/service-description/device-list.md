@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e7d0b88542f9329d10d241e68864333ed1ec1730
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: bd621ec2b80d308ecd14c9bbbb782e371d3e460a
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321979"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338367"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft hanterade Station ära enheter 
 
@@ -50,31 +50,31 @@ Länkar till enheter här är endast för din referens. Om du vill beställa enh
 | **\*[Dell Latitude 7410](https://www.dell.com/en-us/work/shop/laptops/new-14-7410/spd/latitude-14-7410-2-in-1-laptop)** | 256 GB/Intel i5/8 GB RAM | IR-kamera krävs | 19 maj 2022  | 19 maj 2025  |
 | **\*[Dell Latitude 7410 2-i-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-7410-business-laptop-or-2-in-1/spd/latitude-14-7410-2-in-1-laptop)** | 256 GB/Intel i5/8 GB RAM | IR-kamera krävs | 19 maj 2022 | 19 maj 2025
 | **\*[Dell Latitude 9410 2-i-1](https://www.dell.com/en-us/work/shop/laptops/new-14-9410-2-in-1/spd/latitude-14-9410-2-in-1-laptop)** | 256 GB/Intel i5/8 GB RAM | IR-kamera krävs | 19 maj 2022  | 19 maj 2025  |
-| [Dell OptiPlex 3070](https://www.dell.com/en-us/work/shop/desktops-n-workstations/3070/spd/optiplex-3070-desktop) | 128 GB/Intel i3/8 GB RAM | Inga | Den 1 maj 2022  | Den 1 maj 2025  |
+| [Dell OptiPlex 3070](https://www.dell.com/en-us/work/shop/desktops-n-workstations/3070/spd/optiplex-3070-desktop) | 128 GB/Intel i3/8 GB RAM | Ingen | Den 1 maj 2022  | Den 1 maj 2025  |
 
 ### <a name="hp"></a>KLIENTANSLUTNINGAR
 
 | Modell    | Miniminormer  | Ytterligare krav   | Arkiv datum   | Pensions datum   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [HP EliteBook 830/840/850 G6 Notebook PC](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB/Intel i5/8 GB RAM | SKU med 5VS01AV, IR-kamera eller finger avtryck | November 2020 | November 2023 |
-| [HP EliteBook X360 830 G6 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB/Intel i5/8 GB RAM | SKU med 5VS01AV, IR-kamera eller finger avtryck | November 2020 | November 2023 |
+| [HP EliteBook 830/840/850 G7 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-830-g7-notebook-pc-customizable-8pv71av-mb) | 256 GB/Intel i5/8 GB RAM | SKU med 5VS01AV | November 2021 | November 2024 |
+| [HP EliteBook X360 830 G7 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g7-notebook-pc-p-1f6c0ut-aba-1) | 256 GB/Intel i5/8 GB RAM | SKU med 5VS01AV | November 2021 | November 2024 |
 | [HP Elite x2 G4-surfplatta](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1) | 256 GB/Intel i5/8 GB RAM | SKU med 5VS03AV | Den 31 juli 2021 | Den 31 juli 2024 |
-| [HP EliteBook X360 1030 G4 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g4-notebook-pc) | 256 GB/Intel i5/8 GB RAM | SKU med 5VS01AV | Den 28 februari 2021 | Den 28 februari 2024 |
-| [HP EliteBook X360 1040-G6](https://www.hp.com/go/elitebookx360-1040) | 256 GB/Intel i5/8 GB RAM | SKU med 5VS01AV| November 2020 | November 2023 |
-| [HP Elite DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html) | 256 GB/Intel i5/8 GB RAM | SKU med 9MZ21AV | Dec 31, 2020 | Dec 31, 2023 |
-| [HP Z2 mini G4 Workstation](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1) | 256 GB/Intel i5/8 GB RAM | SKU med 8QR48AV| 31 januari 2021 | 31 januari 2024 |
+| [HP EliteBook X360 1030 G7 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g7-notebook-pc-customizable-8vs68av-mb#!) | 256 GB/Intel i5/8 GB RAM | SKU med 5VS01AV | 2021 | 2024 |
+| [HP EliteBook X360 1040-G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1040-g7-notebook-pc-customizable-8wa57av-mb) | 256 GB/Intel i5/8 GB RAM | SKU med 5VS01AV| 2021 | 2024 |
+| [HP Elite DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html) | 256 GB/Intel i5/8 GB RAM | SKU med 9MZ21AV | Mar 31, 2021 | Mar 31, 2024 |
+| [HP Z2 mini G5 Workstation](https://store.hp.com/us/en/pdp/hp-z2-mini-g5-workstation-customizable-9jd39av-mb) | 256 GB/Intel i5/8 GB RAM | SKU med 8QR48AV| Dec 31, 2021 | Dec 31, 2024 |
 | [HP ZBook 14U/15U G6 mobil arbets Station](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB/Intel i5/8 GB RAM | SKU med 5VS02AV, IR-kamera krävs | November 2020 | November 2023 |
 
 ### <a name="microsoft"></a>Microsoft
 
 | Modell    | Miniminormer  | Ytterligare krav   | Arkiv datum   | Pensions datum   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| **\*[Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab)** | 256 GB/Intel i5/8 GB RAM | Inga | Maj 2022 | Maj 2027 |
-| **\*[Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab)** | 128 GB/Intel Core m3/8 GB RAM | Inga | Maj 2022 | Maj 2027 |
-| [Surface laptop 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB/Intel i5/8 GB RAM | Inga | Oktober 2020 | Oktober 2023 |
-| [Bärbar dator 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB/Intel i5/8 GB RAM | Inga | Oktober 22, 2021 | Oktober 22, 2024 |
-| [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel i5/8 GB RAM | Inga | Oktober 2020 | Oktober 2023 |
-| [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB/Intel i5/8 GB RAM | Inga | Oktober 22, 2021 | Oktober 22, 2024 |
+| **\*[Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab)** | 256 GB/Intel i5/8 GB RAM | Ingen | Maj 2022 | Maj 2027 |
+| **\*[Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab)** | 128 GB/Intel Core m3/8 GB RAM | Ingen | Maj 2022 | Maj 2027 |
+| [Surface laptop 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB/Intel i5/8 GB RAM | Ingen | Oktober 2020 | Oktober 2023 |
+| [Bärbar dator 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB/Intel i5/8 GB RAM | Ingen | Oktober 22, 2021 | Oktober 22, 2024 |
+| [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel i5/8 GB RAM | Ingen | Oktober 2020 | Oktober 2023 |
+| [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB/Intel i5/8 GB RAM | Ingen | Oktober 22, 2021 | Oktober 22, 2024 |
 
 Dessutom måste enheten också uppfylla följande kriterier:     
 

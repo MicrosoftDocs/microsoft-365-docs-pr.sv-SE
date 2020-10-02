@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 685132e3f5c303f21fde3702725a84e24383e679
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ea6b65e5e6d676c5efb2622193197bae5b9ba1b2
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198253"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338551"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -30,9 +30,9 @@ ms.locfileid: "48198253"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft Threat Protection
 
-Använd `AssignedIPAddresses()` funktionen för att snabbt få de senaste IP-adresserna som har tilldelats till en enhet. Om du anger ett timestamp-argument får den här funktionen de senaste IP-adresserna vid den angivna tiden. 
+Använd `AssignedIPAddresses()` funktionen i de [avancerade jakt](advanced-hunting-overview.md) frågorna för att snabbt få de senaste IP-adresserna som har tilldelats till en enhet. Om du anger ett timestamp-argument får den här funktionen de senaste IP-adresserna vid den angivna tiden. 
 
 Den här funktionen returnerar en tabell med följande kolumner:
 
