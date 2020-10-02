@@ -1,168 +1,164 @@
 ---
-title: Förklaringar
+title: Förklaringstyper
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Läs mer om förklarings typer i Microsoft SharePoint Syntex
-ms.openlocfilehash: f4f5dbc24bef57b1801f7df1b7e2fc7ef9b08116
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Mer information om olika typer av förklaringar i Microsoft SharePoint Syntex
+ms.openlocfilehash: 7d78337fd91bc7e5a71bccd4867f019ae663417a
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296218"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321803"
 ---
-# <a name="introduction-to-explanation-types"></a>Introduktion till förklarings typer
+# <a name="introduction-to-explanation-types"></a>Introduktion till förklaringstyper
 
-Använd förklaringar för att definiera informationen som du vill lägga till och extrahera i dokumentet förstå modellerna för Microsoft SharePoint Syntex. När du skapar en förklaring bör du välja en typ av förklaring. 
+Förklaringar används för att definiera den information som du vill använda för att ge etiketter och utdrag i dina modeller för dokumenttolkning i Microsoft SharePoint Syntex. När du skapar en förklaring måste du välja en förklaringstyp. I den här artikeln får du hjälp att lära dig mer för att bättre förstå olika förklaringstyper och hur de används. 
 
-Den här artikeln hjälper dig att förstå olika typer av förklaringar och hur de används.
-
-   ![Förklaringar](../media/content-understanding/explanation-types.png) 
+   ![Förklaringstyper](../media/content-understanding/explanation-types.png) 
    
-Följande förklaringar är tillgängliga:
+Följande förklaringstyper är tillgängliga:
 
-- **Fras lista**: lista över ord, fraser, tal eller andra tecken som du kan använda i dokumentet eller informationen som du extraherar. Text strängen som **refererar till läkare** är till exempel i alla medicinska hänvisnings dokument som du identifierar.</br>
+- **Fraslista**: lista med ord, fraser, siffror eller andra tecken som du kan använda i det dokument eller den information du extraherar. Exempel: textsträngen **Hänvisande läkare** finns i alla medicinska referensdokument som du identifierar.</br>
 
-- **Mönster lista**: lista med tecken mönster med siffror, bokstäver eller andra specialtecken som du kan använda för att identifiera informationen som du extraherar. Du kan till exempel extrahera **telefonnumret** från det dokument för medicinsk hänvisning som du identifierar.</br>
+- **Mönsterlista**: listar mönster med siffror, bokstäver eller andra tecken som du kan använda för att identifiera den information som du extraherar. Till exempel kan du extrahera den hänvisande läkarens **Telefonnumret** i alla medicinsk referensdokument som du identifierar.</br>
 
-- **Närhet**: beskriver hur nära förklaringar är till varandra. Till exempel kan en lista med *gatu nummer* mönster placeras direkt före *gatu namns* frasen, med inga tokens mellan (du lär dig mer om tokens längre fram i den här artikeln). 
+- **Närhet**: beskriver hur nära förklaringar är för varandra. Exempel: en mönsterlista för *gatunummer* ska ligga precis efter fraslistan för *gatunamn* utan tokens i mellan (du får lära dig mer om tokens senare i den här artikeln). Med närhetstypen måste du ha minst två förklaringar i modellen eller så är alternativet inaktiverat. 
  
-## <a name="phrase-list"></a>Fras lista
+## <a name="phrase-list"></a>Fraslista
 
-En förklarings typ för en fras lista används vanligt vis för att identifiera och klassificera ett dokument genom modellen. Enligt beskrivningen i exemplet *hänvisar* till exempel är det en sträng med ord, fraser, tal eller tecken som är konsekvent i de dokument som du identifierar.
+Förklaringstypen fraslista används vanligtvis för att identifiera och klassificera ett dokument via modellen. Så som det beskrivs i exemplet med etikett för *Hänvisande läkare* är det en sträng med ord, fraser, siffror eller tecken är konsekventa i de dokument som du identifierar.
 
-Men inte ett krav kan du få bättre framgång med din förklaring om den fras du hämtar finns på en konsekvent plats i dokumentet. Etiketten för den *refererande läkaren* kan till exempel finnas konsekvent i det första stycket i dokumentet.
+Även om det inte är obligatoriskt kan du få bättre framgång med din förklaring om frasen du hämtar finns på en konsekvent plats i dokumentet. Till exempel kan etiketten *Hänvisande läkare* konsekvent finnas i det första stycket i dokumentet.
 
-Om SKIFT läges känslighet är ett krav för att identifiera din etikett kan du använda fras listans typ för att ange den i din förklaring genom att markera kryss rutan **endast exakta versaler** .
+Om skifteslägeskänslighet är obligatorisk för att identifiera din etikett tillåter användning av fraslista dig att ange det i förklaringen genom att markera kryssrutan **Endast exakta versaler**.
 
-   ![Skift läges känslighet](../media/content-understanding/case-sensitivity.png) 
+   ![Skifteslägeskänslighet](../media/content-understanding/case-sensitivity.png) 
 
-## <a name="pattern-lists"></a>Mönster listor
+## <a name="pattern-lists"></a>Mönsterlistor
 
-En typ av en mönster lista är särskilt användbar när du skapar en förklaring som identifierar och hämtar information från ett dokument. Det visas normalt i olika format, till exempel datum, telefonnummer eller kreditkorts nummer. Ett datum kan till exempel visas i ett antal olika format (1/1/2020, 1-1-2020, 01/01/20, 01/01/2020, 1 januari 2020 osv.). Om du definierar en mönster lista blir din förklaring mer effektiv genom att fånga eventuella variationer i de data som du försöker identifiera och extrahera. 
+Typen mönsterlista är särskilt användbar när du skapar en förklaring som identifierar och hämtar information från ett dokument. Den visas vanligtvis i olika format, till exempel datum, telefonnummer eller kreditkortsnummer. Ett datum kan till exempel visas i flera olika format (1/1 2020, 2020-01-01, 1 januari 2020 osv.). Genom att definiera en mönsterlista blir förklaringen mer effektiv genom att fånga alla möjliga variationer i de data som du försöker identifiera och extrahera. 
 
-Extrahera **telefonnumret** för varje referent från alla dokument för medicinsk hänvisning som identifieras av modellen. När du skapar en förklaring väljer du typen av mönster lista för att tillåta de olika format som du kan förvänta dig att returneras.
+För exemplet **Telefonnummer** extraheras telefonnumret till varje hänvisande läkare från alla medicinska referensdokument som modellen identifierar. När du skapar förklaringen väljer du typen mönsterlista för att tillåta de olika format som du kan förvänta dig returneras.
 
-   ![Telefon nummer mönster lista](../media/content-understanding/pattern-list.png)
+   ![Mönsterlista för telefonnummer](../media/content-understanding/pattern-list.png)
 
-För det här exemplet markerar du kryss rutan **valfri siffra från 0-9** . Om du väljer det här alternativet tolkas varje "0"-värde som används i din mönster lista som valfri siffra mellan 0 och 9.
+I det här exemplet väljer du kryssrutan **Valfri siffra från 0-9**. Att välja det här alternativet känner igen varje "0"-värde som används i mönsterlistan som valfri siffra mellan 0 och 9.
 
-   ![Valfri siffra från 0-9](../media/content-understanding/digit-identity.png)
+   ![Alla siffror från 0-9](../media/content-understanding/digit-identity.png)
 
-Om du skapar en mönster lista som innehåller text tecken markerar du rutan **valfri bokstav från en-z** . Om du väljer det här alternativet tolkas varje "a"-tecken som används i listan mönster som ett tecken från "a" till "z".
+Om du skapar en mönsterlista som innehåller texttecken markerar du kryssrutan **Valfri bokstav från a-ö**. Om du väljer det här alternativet tolkas alla "a"-tecken som används i mönsterlistan som valfritt tecken från "a" till "ö".
 
-Om du till exempel skapar en **datum** mönster lista och vill vara säker på att ett datum format som *1 januari 2020* känns igen, måste du:
-- Lägg till *AAA 0, 0000* och *AAA 00, 0000* i din mönster lista.
-- Se till att **alla bokstäver från a-z** också är markerade.
+Om du till exempel skapar en mönsterlista för **Datum** och vill se till att ett datumformat som *1 januari 2020* känns igen måste du:
+- Lägga till *0 aaaaaaa 0000* och *00 aaaaaaa 0000* i din mönsterlista.
+- Kontrollera att **Valfri bokstav från a-ö** också är markerad.
 
-   ![Valfri bokstav från a-z](../media/content-understanding/any-letter.png)
+   ![Valfri bokstav från a till ö](../media/content-understanding/any-letter.png)
 
-Om du har behov av villkor i din Pattern-lista kan du välja att markera kryss rutan **endast exakta versaler** . Om du behöver den första bokstaven i månaden för att ange ett datum-exempel måste du göra följande:
+Om du även har krav på stor begynnelsebokstav i din mönsterlista kan du välja kryssrutan **Endast exakta versaler**. Om du kräver att den första bokstaven i månaden för datumexemplet har stor begynnelsebokstav behöver du:
 
-- Lägg till *AAA 0, 0000* och *AAA 00, 0000* i din mönster lista.
-- Kontrol lera att **endast exakta Skift läge** är markerat.
+- Lägga till *0 Aaaaaaa 0000* och *00 Aaaaaaa 0000* i din mönsterlista.
+- Kontrollera att **Endast exakta versaler** också är markerad.
 
    ![Endast exakta versaler](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> I stället för att manuellt skapa mönster listans förklaring kan du använda [förklaringen]() för att använda mallarna för färdiga mönster listor för vanliga mönster listor, till exempel *datum*, *telefonnummer*, *kreditkorts nummer*etc.. 
+> I stället för att manuellt skapa en förklaring för mönsterlista kan du använda [förklaringsbiblioteket]() för att använda färdiga mönsterlistmallar för vanliga mönsterlistor, till exempel *datum*, *telefonnummer*, *kreditkortsnummer*osv.. 
 
 ## <a name="proximity"></a>Närhet 
 
-Med hjälp av den här typen av förklaringar kan modellen identifiera data genom att definiera hur nära en annan del av data ska vara. I din modell har du till exempel två förklaringar som Märk både kundens *gatuadress* och *telefonnummer*. 
+Typen närhetsförklaring hjälper modellen att lättare identifiera data genom att definiera hur nära ett annat data kommer till den. I din modell har du till exempel två förklaringar som etiketterar både kundens *gatunummer* och *telefonnummer*. 
 
-Du märker också att kundernas telefonnummer alltid visas före gatuadress. 
+Du ser också att kundens telefonnummer alltid visas före gatunumret. 
 
 Alex Wilburn<br>
 555-555-5555<br>
 One Microsoft Way<br>
 Redmond, WA 98034<br>
 
-Använd närhets förklaringen för att definiera hur långt bort det aktuella telefonnumret är för att bättre identifiera gatuadressen i dina dokument.
+Använd närhetsförklaringen för att definiera hur långt bort det är för att bättre identifiera gatunumret i dina dokument.
 
-   ![Närhets förklaring](../media/content-understanding/proximity.png)</br>
+   ![Närhetsförklaring](../media/content-understanding/proximity.png)</br>
 
 #### <a name="what-are-tokens"></a>Vad är tokens?
 
-För att använda funktionen för närhets förklaringar kan du förstå vad en token är, eftersom antalet tokens är hur avståndet mellan två förklaringar mäter avstånd från en förklaring till en annan.  
+Om du vill använda förklaringstypen närhet måste du förstå vad en token är eftersom antalet tokens är hur närhetsförklaringen mäter avståndet från en förklaring till en annan.  
 
-Ett token är ett sammanhängande intervall (inga blank steg eller skiljetecken) av bokstäver och siffror. Ett blank steg är inte ett token. Varje skiljetecken är ett token. Följande tabell visar några exempel på hur du kan avgöra antalet tokens i en fras.
+En token är ett sammanhängande intervall (inga blanksteg eller skiljetecken) för bokstäver och siffror. Ett blanksteg är INTE en token. Varje skiljetecken är en token. I tabellen nedan visas några exempel på hur du kan ta reda på antalet tokens i en fras.
 
-|Verbfras|Antal token|Förklaring|
+|Fras|Antal tokens|Förklaring|
 |--|--|--|
-|`Dog`|9.1|Ett enstaka ord utan skiljetecken eller blank steg.|
-|`RMT33W`|9.1|Ett post nummer. Den kan ha siffror och bokstäver, men har inte skiljetecken.|
-|`425-555-5555`|T5|Ett telefonnummer. Varje skiljetecken är en enda token så  `425-555-5555` att den blir 5 tokens:<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555` |
-|`https://luis.ai`|borttagning|`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`<br>|
+|`Dog`|1|Ett enstaka ord utan skiljetecken eller blanksteg.|
+|`RMT33W`|1|Ett lokaliseringsnummer för posten. Det kan finnas siffror och bokstäver men inga skiljetecken.|
+|`425-555-5555`|5|Ett telefonnummer. Varje skiljetecken är ett enda token, så  `425-555-5555` blir 5 tokens:<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555` |
+|`https://luis.ai`|7|`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`<br>|
 
-#### <a name="configure-the-proximity-explanation-type"></a>Konfigurera typ av en närhet
+#### <a name="configure-the-proximity-explanation-type"></a>Konfigurera typen närhetsförklaring
 
-För det här exemplet ska du konfigurera inställningen för närhet så att vi kan definiera intervallet för antalet *tokens som kundens förklaring är* från rikt *nummer* förklaringen.
+Konfigurera inställningen närhet för urvalet så att vi kan definiera intervallet för antalet tokens som förklaringen för *telefonnummer* är från förklaringen *gatunummer*.
 
-Du bör se att det minsta intervallet är "0" eftersom det inte finns några tokens mellan telefonnumret och gatuadressen.
+Du bör se att det minsta intervallet är "0" eftersom det inte finns några tokens mellan telefonnumret och gatunumret.
 
-Men vissa telefonnummer i exempel dokumenten läggs till med *(mobil)*.
+För vissa telefonnummer i urvalsdokumenten läggs emellertid till *(mobil)*.
 
-Nestor Wilke<br>
+Viktor Magnusson<br>
 111-111-1111 (mobil)<br>
 One Microsoft Way<br>
 Redmond, WA 98034<br>
 
 Det finns tre tokens i *(mobil)*:
 
-|Verbfras|Antal token|
+|Fras|Antal tokens|
 |--|--|
-|(|9.1|
-|mobilvy|två|
-|)|amp;3D|
+|(|1|
+|mobil|2|
+|)|3|
 
-Konfigurera inställningen för närhet till att ha ett område på mellan 0 och 3.
+Konfigurera inställningen för närhet så att den har ett område med 0 till 3.
 
    ![Exempel på närhet](../media/content-understanding/proximity-example.png)</br>
 
-## <a name="use-the-explanation-library"></a>Använda förklarings biblioteket
+## <a name="use-explanation-templates"></a>Använda förklaringsmallar
 
-Du kan lägga till olika värden för dina förklaringar manuellt, det är mycket enklare att använda de färdiga mallarna som finns i förklarings biblioteket.
+Även om du kan lägga till olika mönsterlistvärden för dina förklaringar manuellt kan det vara mycket enklare att använda de färdiga mallar som har skapat år dig i förklaringsbiblioteket.
 
-I stället för att lägga till alla variationer för *datum*kan du använda mallen mönster lista för *datum*, som redan innehåller ett antal mönster listor:</br>
+I stället för att manuellt lägga till alla variationer för *datum* kan du använda mönsterlistmallen för *datum*, som redan har ett antal mönsterlistvärden:</br>
 
-   ![Förklarings bibliotek](../media/content-understanding/explanation-template.png)</br>
+   ![Förklaringsbiblioteket](../media/content-understanding/explanation-template.png)</br>
  
-I förklarings biblioteket finns många förklaringar som ofta används, bland annat:</br>
+I förklaringsbiblioteket finns flera vanliga förklaringar för mönsterlistor, t. ex.:</br>
 
 - Datum</br>
 - Datum (numeriskt)</br>
-- Tider</br>
-- Tal</br>
+- Tid</br>
+- Siffra</br>
 - Telefonnummer</br>
 - Postnummer</br>
-- Första ord med mening</br>
-- Kredit kort</br>
-- Person nummer</br>
+- Första ord i mening</br>
+- Kontokort</br>
+- Personnummer</br>
 
-Observera att förklarings biblioteket också innehåller mallar för förklarings listor, inklusive:
+Observera att förklaringsbiblioteket även innehåller mallar för frasllistförklaringar, t. ex.:
 - Slutet av meningen
 - Valuta
 
-#### <a name="to-use-a-template-from-the-explanation-library"></a>Så här använder du en mall från förklarings biblioteket
+#### <a name="to-use-a-template-from-the-explanation-library"></a>Använda en mall från förklaringsbiblioteket
 
-1. Välj **nytt**i avsnittet **förklaringar** på modellens **tåg** sida och välj sedan **från en mall**.</br>
+1. Välj **Ny** i avsnittet **Förklaringar** på modellens sida **Träna** och välj **Från en mall**.</br>
 
    ![Skapa från mall](../media/content-understanding/from-template.png)</br>
 
-2.  På sidan **förklaringar** väljer du den förklaring du vill använda och väljer sedan **Lägg till**.</br>
+2.  På sidan **Förklaringsmallar** väljer du den förklaring du vill använda och väljer sedan **Lägga till**.</br>
 
        ![Välj en mall](../media/content-understanding/phone-template.png)</br>
 
-3. Informationen för den mall som du valde visas på sidan **skapa en förklaring** . Om det behövs redigerar du förklarings namnet och lägger till eller tar bort objekt från listan med mönster. </br> 
+3. Informationen för den mall som du valde visas på sidan **Skapa en förklaring**. Om det behövs kan du redigera namnet på förklaringen och lägga till eller ta bort objekt från mönsterlistan. </br> 
 
    ![Redigera mall](../media/content-understanding/phone-template-live.png)</br>
 
-4. När du är klar väljer du **Spara**.
+4. Klicka på **Spara** när du är klar.
