@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 Avancerat skydd innehåller säkra bifogade filer, säkra länkar, avancerade verktyg för skydd mot nätfiske, rapporteringsverktyg och funktioner för hotinformation.
-ms.openlocfilehash: d8ac32436a0b825e6e649dd7a23e73cad9a17480
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: e156967ff6e594503868f979e9c7f18b6bee02e2
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202227"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327219"
 ---
 # <a name="office-365-advanced-threat-protection-atp"></a>Office 365 ATP
 
@@ -95,9 +95,9 @@ Med Office 365 ATP kan din organisations säkerhetsteam konfigurera skydd genom 
 
 Principerna som definieras för din organisation avgör beteendet och skyddsnivån för fördefinierade hot. Principalternativ är mycket flexibla. Din organisations säkerhetsgrupp kan t. ex. ge skydd mot detaljerade hot på användar-, organisations-, mottagar- och domännivå. Det är viktigt att granska dina principer regelbundet eftersom nya hot och utmaningar dyker upp dagligen.
 
-- **[Säkerhetskopior av ATP](atp-safe-attachments.md)**: tillhandahåller skydd mot dagnollhot för att skydda ditt meddelandesystem genom att kontrollera e-postbilagor för skadligt innehåll. Den dirigerar alla meddelanden och bifogade filer som inte har en signatur i en särskild miljö, och använder sedan maskininlärnings- och analystekniker för att upptäcka skadliga avsikter. Om det inte går att hitta någon misstänkt aktivitet överförs meddelandet till postlådan. Mer information finns i [Set up Office 365 ATP Safe Attachments policies ](set-up-atp-safe-attachments-policies.md)(Konfigurera Office 365 ATP-principer för säkra bifogade filer).
+- **[Säkra bifogade filer](atp-safe-attachments.md)**: Ger nolldagarsskydd för att skydda ditt meddelandesystem genom att kontrollera e-postbilagor för skadligt innehåll. Den dirigerar alla meddelanden och bifogade filer som inte har en signatur i en särskild miljö, och använder sedan maskininlärnings- och analystekniker för att upptäcka skadliga avsikter. Om det inte går att hitta någon misstänkt aktivitet överförs meddelandet till postlådan. Mer information finns i [konfigurera policyer för säkra bifogade filer](set-up-atp-safe-attachments-policies.md).
 
-- **[ATP – säkra länkar](atp-safe-links.md)**: tillhandahåller klickverifiering av URL:er, t. ex. i e-postmeddelanden och i Office-filer. Skyddet är pågående och används i alla dina meddelanden och din Office-miljö. Länkar söks igenom för varje klick: säkra länkar är tillgängliga och skadliga länkar blockeras dynamiskt. Mer information finns i [Set up Office 365 ATP Safe Links policies](set-up-atp-safe-links-policies.md)(Konfigurera Office 365 ATP-principer för säkra länkar).
+- **[Säkra länkar](atp-safe-links.md)**: Tillhandahåller klickverifiering av URL:er, till exempel i e-postmeddelanden och Office-filer. Skyddet är pågående och används i alla dina meddelanden och din Office-miljö. Länkar söks igenom för varje klick: säkra länkar är tillgängliga och skadliga länkar blockeras dynamiskt. Mer information finns i [Ställ in policyer för säkra länkar](set-up-atp-safe-links-policies.md).
 
 - **[ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md)**: skyddar din organisation när användare samarbetar och delar filer genom att identifiera och blockera skadliga filer på gruppwebbplatser och dokumentbibliotek. Mer information finns i [Aktivera Office 365 ATP för SharePoint, OneDrive och Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 

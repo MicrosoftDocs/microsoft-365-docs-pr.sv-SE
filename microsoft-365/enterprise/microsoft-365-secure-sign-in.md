@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/16/2020
+ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,24 +15,33 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Kräva att dina användare loggar in säkert med multifaktorautentisering (MFA) och andra funktioner.
-ms.openlocfilehash: 6c8f58e54ae21b4a5e1566dc72673e1d69152863
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 2e6c564e3179d0847710e2bef071dcc9e1cdbdaf
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132251"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327432"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Säkra användarinloggningar till din Microsoft 365-klient
 
 Så här ökar du säkerheten för användarinloggningar:
 
+- Använda Windows Hello för företag
 - Använd Azure Active Directory (Azure AD) lösenordsskydd
 - Använd multifaktorautentisering (MFA)
-- Distribuera identitets- och enhetsåtkomstpolicyer
+- Distribuera identitet och enhetsåtkomst konfigurationer
+- Skydda mot referens kompromiss med Azure AD Identity Protection
+
+## <a name="windows-hello-for-business"></a>Windows Hello för företag
+
+Windows Hello för företag i Windows 10 Enterprise ersätter lösenord med stark tvåfaktorsautentisering när du loggar in på en Windows-enhet. De två faktorerna är en ny typ av användaruppgifter som är kopplade till en enhet och ett biometriskt attribut eller en PIN-kod.
+
+Mer information finns i [Översikt över Windows Hello för företag](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview).
+
 
 ## <a name="azure-ad-password-protection"></a>Azure AD-lösenordsskydd
 
-Azure AD-lösenordsskydd upptäcker och blockerar kända svaga lösenord och deras varianter och kan också blockera ytterligare svaga termer som är specifika för din organisation. Standard globala förbjudna lösenordslistor tillämpas automatiskt på alla användare i en Azure AD-klient. Du kan definiera ytterligare poster i en anpassad förbjuden lösenordslista. När användare ändrar eller återställer sina lösenord kontrolleras dessa förbjudna lösenordslistor för att använda starka lösenord.
+Azure AD Password Protection upptäcker och blockerar kända svaga lösenord och deras varianter och kan också blockera ytterligare svaga termer som är specifika för din organisation. Standard globala förbjudna lösenordslistor tillämpas automatiskt på alla användare i en Azure AD-klient. Du kan definiera ytterligare poster i en anpassad förbjuden lösenordslista. När användare ändrar eller återställer sina lösenord kontrolleras dessa förbjudna lösenordslistor för att använda starka lösenord.
 
 Mer information finns i [Konfigurera Azure AD-lösenordsskydd](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad).
 
@@ -44,7 +53,7 @@ MFA kräver att användarinloggningar underkastas en ytterligare verifiering ut�
 
 Ditt första steg i att använda MFA är att ***kräva det för alla administratörskonton***, även kända som privilegierade konton.
 
-Utöver detta första steg rekommenderar Microsoft starkt MFA för alla användare.
+Utöver detta första steg rekommenderar Microsoft MFA för alla användare.
 
 Det finns tre sätt att kräva att dina administratörer eller användare använder MFA baserat på din Microsoft 365-plan.
 
@@ -63,7 +72,7 @@ Användare har 14 dagar på sig att registrera sig för MFA med Microsoft Authen
 
 Standardinställningar för säkerhet säkerställer att alla organisationer har en grundläggande säkerhetsnivå för användarinloggning som är aktiverad som standard. Du kan inaktivera standardinställningar för säkerhet till förmån för MFA med Principer för villkorsstyrd åtkomst eller för enskilda konton.
 
-Mer information finns i den här [översikten över standardinställningar för säkerhet](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
+Mer information finns i [översikt av säkerhetsstandarder](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
 ### <a name="conditional-access-policies"></a>Principer för villkorsstyrd åtkomst
 
@@ -77,7 +86,7 @@ Du kan också använda principer för villkorsstyrd åtkomst för mer avancerade
 
 Villkorsstyrd åtkomst kräver Azure Active Directory Premium P1-licens som ingår i Microsoft 365 E3 och E5.
 
-Mer information finns i den här [översikt av villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+Mer information finns i [översikt av villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
 ### <a name="using-these-methods-together"></a>Använda dessa metoder tillsammans
 
@@ -96,7 +105,7 @@ I den här tabellen visas resultatet av att aktivera MFA med standardinställnin
 | **Principer för villkorsstyrd åtkomst** | Om några är aktiverade kan du inte aktivera standardinställningar för säkerhet | Om alla är inaktiverade kan du aktivera standardinställningar för säkerhet  | Användare anger under MFA-registrering  |
 ||||
 
-## <a name="identity-and-device-access-policies"></a>Policyer för identitets- och enhetsåtkomst
+## <a name="identity-and-device-access-configurations"></a>Konfigurationer av identiteter och enhetsåtkomst
 
 Identitets- och enhetsåtkomstinställningar och policyer rekommenderas förutsättningsfunktioner och deras inställningar i kombination med villkorlig åtkomst, Intune och Azure AD Identity Protection-principer som avgör om en given åtkomstbegäran ska beviljas och under vilka villkor. Denna bestämning baseras på användarkontot för inloggningen, den enhet som används, appen som användaren använder för åtkomst, platsen från vilken begäran om åtkomst görs och en bedömning av risken för begäran. Denna funktion hjälper till att säkerställa att endast godkända användare och enheter kan komma åt dina kritiska resurser.
 
@@ -114,27 +123,22 @@ Dessa nivåer och deras motsvarande konfigurationer ger konsekventa skyddsnivåe
 
 Microsoft rekommenderar starkt att du konfigurerar och rullar ut policyer för identitets- och enhetsåtkomst i din organisation, inklusive specifika inställningar för Microsoft Teams, Exchange Online och SharePoint. Mer information finns i konfigurationer för [identitets- och enhetsåtkomst](microsoft-365-policies-configurations.md).
 
-<!--
+## <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-## Let your users reset their own passwords
+I det här avsnittet får du lära dig hur du konfigurerar principer som skyddar mot obehörig inloggning, där en angripare bestämmer en användares kontonamn och lösenord för att få åtkomst till organisationens molntjänster och data. Azure AD Identity Protection tillhandahåller ett antal olika sätt som förhindrar att en obehörig angripare kan kompromettera användarkontots inloggningsuppgifter.
 
-Self-Service Password Reset (SSPR) enables users to reset their own passwords without impacting IT staff. Users can quickly reset their passwords at any time and from any place. Watch [this video](https://go.microsoft.com/fwlink/?linkid=2128524) to set up SSPR.
+Med Azure AD Identity Protection kan du:
 
-## Sign in to SaaS apps with Azure AD
+|Funktion|Beskrivning|
+|:---------|:---------|
+| Fastställa och åtgärda potentiella säkerhetsproblem i organisationens identiteter | I Azure AD används maskininlärning för att identifiera avvikelser och misstänkt aktivitet, till exempel inloggningar och aktiviteter efter inloggning. Med dessa data genererar Azure AD Identity Protection rapporter och aviseringar som hjälper dig att utvärdera problem och vidta åtgärder.|
+|Identifiera misstänkta åtgärder som är relaterade till organisationens identitet och svara på dem automatiskt|Du kan konfigurera riskbaserade principer som automatiskt reagerar på problem som upptäcks när en viss risknivå har uppnåtts. Dessa principer, förutom andra kontroller för villkorsstyrd åtkomst i Azure AD och Microsoft Intune, kan antingen automatiskt blockera åtkomst eller utföra korrigeringsåtgärder, t.ex. återställning av lösenord och krav på multifaktorautentisering för efterföljande inloggningar. |
+| Undersök misstänkta händelser och åtgärda dem med administrativa åtgärder | Du kan undersöka riskhändelser med hjälp av information om säkerhetshändelsen. Enkla arbetsflöden är tillgängliga för att spåra undersökningar och initiera åtgärder för reparationer, som återställning av lösenord. |
+|||
 
-In addition to providing cloud authentication for users, Azure AD can also be your central way to secure all your apps, whether they’re on-premises, in Microsoft’s cloud, or in another cloud. By [integrating your apps into Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration), you can make it easy for your users to discover the applications they need and sign into them securely.
+Se [mer information om Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection).
 
-## Results of deployment of secure sign-ins
-
-After deployment of MFA, your users:
-
-- Are required to use MFA for sign-ins.
-- Have completed the MFA registration process and are using MFA for all sign-ins.
-- Can use SSPR to reset their own passwords.
-
-- [Plan an Azure AD self-service password reset deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)
-
---> 
+Se [stegen för att aktivera Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable).
 
 ## <a name="admin-technical-resources-for-mfa-and-secure-sign-ins"></a>Administrera tekniska resurser för MFA och säkra inloggningar
 
@@ -144,3 +148,6 @@ After deployment of MFA, your users:
 - [Tillämpa registreringspolicy för Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [Konfigurationer för identitets- och enhetsåtkomst](microsoft-365-policies-configurations.md)
 
+## <a name="next-step"></a>Nästa steg
+
+[Hantera dina användarkonton](manage-microsoft-365-accounts.md)

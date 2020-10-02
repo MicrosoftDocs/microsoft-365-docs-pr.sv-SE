@@ -6,29 +6,33 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
+search.appverid: MET150
 localization_priority: Priority
 description: Läs mer om bildtaggning i SharePoint Syntex
-ms.openlocfilehash: 38b9ad6823aa5f63a4ddec87bab7fec52a37f163
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 7b41422633934593de881bdb0c04f0a845a3fe5f
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296237"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321259"
 ---
 # <a name="image-tagging-in-sharepoint-syntex"></a>Bildtaggning i SharePoint Syntex
 
-Som standard är grundläggande bildtaggning aktiverat för SharePoint och OneDrive. Bilder som laddas upp till endera platsen skannas automatiskt och lämpliga taggar används, om de är tillgängliga, från en lista på 37 grundläggande taggar. Användare kan hitta bilder via sök genom att söka på bildtaggarna.
+Med bildtaggning i SharePoint Syntex kan användare hitta bilder genom sökning genom att söka på bildtaggar och skapa arbetsflöden baserat på bildtaggar.. Som standard är grundläggande bildtaggning aktiverat för SharePoint och OneDrive. Bilder som laddas upp till endera platsen skannas automatiskt och lämpliga taggar används, om de är tillgängliga, från en lista på 37 grundläggande taggar. Användare kan hitta bilder via sök genom att söka på bildtaggarna.
 
 När en användare laddar upp en bild körs taggningsprocessen automatiskt. Om en bild redigeras körs taggningsprocessen igen för att uppdatera taggarna.
 
-Användare som har behörigheter till bildfilen kan visa och redigera taggarna i filens informationspanel eller i sidan för sökresultatet. När en användare redigerar en bilds taggar kommer systemet inte längre tagga automatiskt på den bilden, även om den har redigerats.
+Användare som har behörigheter till bildfilen kan visa och redigera taggarna i filens informationspanel eller i sidan för sökresultatet. När en användare har redigerat en bilds taggar, märker inte systemet automatiskt bilden, även om den redigeras.
 
 Om du inaktiverar taggningen kommer bilderna inte längre att taggas automatiskt. Befintliga taggar tas inte bort.
 
+> [!NOTE]
+> Systemgenererade taggar kan ändras med uppdateringar av bilden eller vår tagg-teknik.
+
+
 ## <a name="configure-image-tagging"></a>Konfigurera bildtaggning
 
-Du kan konfigurera bildtaggning i Administrationscenter för Microsoft 365.  
+När du [konfigurera SharePoint Syntex](set-up-content-understanding.md) kan du konfigurera bildtaggning i Administrationscenter för Microsoft 365.  
 
 Aktivera eller inaktivera bildtaggning
 
@@ -45,7 +49,3 @@ Aktivera eller inaktivera bildtaggning
 6. Klicka på **Spara**.
 
     ![Skärmbild på bildtaggningskontrollen](../media/content-understanding/sharepoint-syntex-image-tagging-control.png)
-
-## <a name="see-also"></a>Se även
-
-[Ställa in innehållstolkning](set-up-content-understanding.md)

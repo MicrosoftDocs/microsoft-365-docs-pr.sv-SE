@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Ger en introduktion till komponenterna, planer och distributionssökvägar för Microsoft 365 för företag.
-ms.openlocfilehash: b5064d78a1681a3331248f3d17d389c46b1da314
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: fa076517b071efbe3a5002d6a48418a796e38ca4
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949922"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327479"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Översikt över Microsoft 365 för företag
 
@@ -32,7 +32,7 @@ Microsoft 365 för företag består av:
 
 |Tjänster|Beskrivning|
 |---|---|
-|Lokala och molnbaserade app och produktivitetstjänster|Innehåller både Microsoft 365-appar för företag, de senaste Office-app för PC-och Mac (till exempel Word, Excel, PowerPoint, Outlook och andra) samt en komplett uppsättning onlinetjänster för e-post, fillagring och samarbete, möten och mycket mer.|
+|Lokala appar och molnbaserade appar och produktivitetstjänster|Innehåller både Microsoft 365-appar för företag, de senaste Office-app för PC-och Mac (till exempel Word, Excel, PowerPoint, Outlook och andra) samt en komplett uppsättning onlinetjänster för e-post, fillagring och samarbete, möten och mycket mer.|
 |Windows 10 Enterprise|Möter kraven för både stora och medelstora organisationer. Det är den mest produktiva och säkra versionen av Windows för användare. För IT-tekniker tillhandahåller det även omfattande hantering av installationer, enheter och appar.|
 |Enhetshantering och avancerade säkerhetstjänster|Innehåller Microsoft Intune, som är en molnbaserad tjänst för Enterprise Mobility Management som gör det lättare för personalen att arbeta produktivt och skydda din organisationsdata.|
 |||

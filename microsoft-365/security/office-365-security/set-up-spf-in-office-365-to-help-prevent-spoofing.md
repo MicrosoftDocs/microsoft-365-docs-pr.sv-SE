@@ -18,17 +18,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du uppdaterar en DNS-post (Domain Name Service) för att använda en SPF-post (Sender Policy Framework) med din anpassade domän i Office 365.
-ms.openlocfilehash: 8beca879669657612b884462488a347d873f4bf2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: e53facc12ed8ad2b702d2d0514aebe0068c097b7
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197745"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318196"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Konfigurera SPF för att förhindra förfalskning
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
  **Sammanfattning:** I den här artikeln beskrivs hur du uppdaterar en DNS-post (Domain Name Service) så att du kan använda SPF (Sender Policy Framework) med din anpassade domän i Office 365. Med SPF kan du validera utgående e-post som skickas från din anpassade domän.
 
@@ -66,30 +65,34 @@ Samla in följande information:
 
    ****
 
-   |<!-- -->|Om du använder...|Vanligt för kunder?|Lägg till detta...|
+   |Element|Om du använder...|Vanligt för kunder?|Lägg till detta...|
    |---|---|---|---|
-   |1|Ett e-postsystem (obligatoriskt)|Vanligt. SPF-poster som startar med det här värdet.|v=spf1|
-   |2|Exchange Online|Vanligt|include:spf.protection.outlook.com|
-   |3|Endast dedikerad Exchange Online|Inte vanligt|ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com|
-   |4|Office 365 Germany, endast Microsoft Cloud Germany|Inte vanligt|include:spf.protection.outlook.de|
-   |5|E-postsystem från tredje part|Inte vanligt|include:\<domain name\>  <br/> Domännamnet är domännamnet för e-postsystemet från tredje part.|
-   |6|Lokalt e-postsystem. Till exempel Exchange Online Protection plus ett annat e-postsystem.|Inte vanligt| Använd något av följande för varje extra e-postsystem: <br> ip4:\<_IP address_\>  <br/>  ip6:\<_IP address_\>  <br/>  include:\<_domain name_\>  <br/>  Värdet för \<_IP address_\> representerar IP-adressen för det andra e-postsystemet och \<_domain name_\> är domännamnet för det andra e-postsystemet som skickar e-post för domänen.|
-   |7|Ett e-postsystem (obligatoriskt)|Vanligt. Alla SPF TXT-poster som slutar med det här värdet.|\<_enforcement rule_\>  <br/> Det här kan vara ett av flera värden. Vi rekommenderar att du använder **-all**.|
+   |1|Ett e-postsystem (obligatoriskt)|Vanligt. SPF-poster som startar med det här värdet.|`v=spf1`|
+   |2|Exchange Online|Vanligt|`include:spf.protection.outlook.com`|
+   |3|Endast dedikerad Exchange Online|Inte vanligt|`ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com`|
+   |4|Office 365 Germany, endast Microsoft Cloud Germany|Inte vanligt|`include:spf.protection.outlook.de`|
+   |5|E-postsystem från tredje part|Inte vanligt|`include:<domain_name>`  <br/> Där \<domain_name\> domännamnet är av tredje parts e-postsystem.|
+   |6|Lokalt e-postsystem. Till exempel Exchange Online Protection plus ett annat e-postsystem.|Inte vanligt|Använd något av följande för varje extra e-postsystem: <br> `ip4:<IP_address>` <br/> `ip6:<IP_address>` <br/> `include:<domain_name>` <br/> Där \<IP_address\> och \<domain_name\> motsvarar IP-adressen och domänen för det andra e-postsystemet som skickar e-post på din domän.|
+   |7|Ett e-postsystem (obligatoriskt)|Vanligt. Alla SPF TXT-poster som slutar med det här värdet.|`<enforcement rule>` <br/> Det här kan vara ett av flera värden. Vi rekommenderar värdet ``-alla''.|
    |
 
-2. Om du inte redan har gjort det kan du skapa en SPF TXT-post med hjälp av syntaxen i tabellen:
+2. Om du inte redan har gjort det, skapa din SPF TXT-post genom att använda syntaxen från tabellen.
 
    Om du till exempel bara använder Office 365 som värd, det vill säga att du inte har någon lokal e-postserver, skulle din SPF TXT-post innehålla raderna 1, 2 och 7 och se ut så här:
 
-   `v=spf1 include:spf.protection.outlook.com -all`
+   ```text
+   v=spf1 include:spf.protection.outlook.com -all
+   ```
 
    Det här är den vanligaste SPF TXT-posten. Den här posten fungerar för i stort sett alla, oavsett om ditt Microsoft-datacenter är i USA eller i Europa (inklusive Tyskland) eller på någon annan plats.
 
    Men om du har köpt Office 365 Germany, som ingår i Microsoft Cloud Germany, bör du använda instruktionen include från rad 4 i stället för rad 2. Om du till exempel bara använder Office 365 Germany som värd, det vill säga att du inte har några lokala e-postservrar, skulle din SPF TXT-post innehålla raderna 1, 4 och 7 och se ut så här:
 
-   `v=spf1 include:spf.protection.outlook.de -all`
+   ```text
+   v=spf1 include:spf.protection.outlook.de -all
+   ```
 
-   Om du redan har distribuerats i Office 365 och har konfigurerat dina SPF TXT-poster för din anpassade domän och migrerar till Office 365 Germany måste du uppdatera din SPF TXT-post. Det gör du genom att ändra **include:spf.protection.outlook.com** till **include:spf.protection.outlook.de**.
+   Om du redan har distribuerats i Office 365 och har konfigurerat dina SPF TXT-poster för din anpassade domän och migrerar till Office 365 Germany måste du uppdatera din SPF TXT-post. Det gör du genom att ändra `include:spf.protection.outlook.com` till `include:spf.protection.outlook.de`.
 
 3. När du har skapat din SPF TXT-post måste du uppdatera posten i DNS. Du kan bara ha en SPF TXT-post för en domän. Om det redan finns en SPF TXT-post ska du inte lägga till en ny post utan i stället uppdatera den befintliga posten. Gå till [Skapa DNS-poster för Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) och klicka på länken för din DNS-värd.
 
@@ -101,7 +104,7 @@ Det är viktigt att notera att du måste skapa en separat post för varje underd
 
 En ytterligare wildcard SPF-post (`*.`) krävs för varje domän och underdomän för att hindra angripare från att skicka e-post som påstår sig vara från icke-existerande domäner. Till exempel:
 
-```console
+```text
 *.subdomain.contoso.com. IN TXT "v=spf1 –all"
 ```
 
