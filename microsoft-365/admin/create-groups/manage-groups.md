@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Lär dig att hantera Microsoft 365-grupper, inklusive att lägga till, ta bort grupp medlemmar, redigera e-postadress, grupp namn eller beskrivning och anpassa hur gruppen fungerar.
-ms.openlocfilehash: 26c6c064e454351366c326e665bacdcc9bb855fb
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 29eaa762116498799d4156b58c8f9bf466f04073
+ms.sourcegitcommit: e87015bf29ad15688137c785d93f2c79ca3208f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307307"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48343277"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Hantera en grupp i administrations centret för Microsoft 365
 
@@ -196,10 +196,10 @@ Det här alternativet är bra om du vill ha en e-postadress till företaget, til
 
 [Hantera gäst åtkomst till Microsoft 365-grupper](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
-[Välj den domän som ska användas när du skapar Microsoft 365-grupper](choose-domain-to-create-groups.md)
+[Välj den domän som ska användas när du skapar Microsoft 365-grupper](../../solutions/choose-domain-to-create-groups.md)
 
-[Tillåta medlemmar att skicka som eller skicka för en Microsoft 365-grupp](allow-members-to-send-as-or-send-on-behalf-of-group.md)
+[Tillåta medlemmar att skicka som eller skicka för en Microsoft 365-grupp](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
 [Uppgradera distributions listor till Microsoft 365-grupper](../manage/upgrade-distribution-lists.md)
 
-[Hantera Microsoft 365-grupper med PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[Hantera Microsoft 365-grupper med PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
