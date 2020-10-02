@@ -1,26 +1,23 @@
 ---
-title: Skapa ett innehålls Center i Microsoft SharePoint Syntex
+title: Skapa ett innehållscenter i Microsoft SharePoint Syntex
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Lär dig hur du skapar ett innehålls Center.
-ms.openlocfilehash: 62977bc5a34b041e9e958ff46e0dbc010d6bd822
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Lär dig att skapa ett innehållscenter.
+ms.openlocfilehash: f65b542dfe9cbb945f347323053cee582deef25b
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295438"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321839"
 ---
-# <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a><span data-ttu-id="1db74-103">Skapa ett innehålls Center i Microsoft SharePoint Syntex</span><span class="sxs-lookup"><span data-stu-id="1db74-103">Create a content center in Microsoft SharePoint Syntex</span></span>
+# <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a><span data-ttu-id="5f80a-103">Skapa ett innehållscenter i Microsoft SharePoint Syntex</span><span class="sxs-lookup"><span data-stu-id="5f80a-103">Create a content center in Microsoft SharePoint Syntex</span></span>
 
-<span data-ttu-id="1db74-104">Innehållet i den här artikeln gäller för projekt cortex privat för hands version.</span><span class="sxs-lookup"><span data-stu-id="1db74-104">The content in this article is for the Project Cortex Private Preview.</span></span> <span data-ttu-id="1db74-105">[Lär dig mer om Project cortex](https://aka.ms/projectcortex).</span><span class="sxs-lookup"><span data-stu-id="1db74-105">[Find out more about Project Cortex](https://aka.ms/projectcortex).</span></span></br>
 
 </br>
 
@@ -28,37 +25,43 @@ ms.locfileid: "48295438"
 
 </br>
 
-<span data-ttu-id="1db74-106">För att skapa och hantera dokument förståelse modeller behöver du först ett innehålls Center.</span><span class="sxs-lookup"><span data-stu-id="1db74-106">To create and manage document understanding models, you first need a content center.</span></span> <span data-ttu-id="1db74-107">Innehålls centret är gränssnittet för skapande av modell och innehåller information om vilka dokument bibliotek som har publicerats till modeller.</span><span class="sxs-lookup"><span data-stu-id="1db74-107">The content center is the model creation interface and also contains information about which document libraries published models have been applied to.</span></span></br>
+<span data-ttu-id="5f80a-104">Om du vill skapa och hantera modeller för dokumenttolkning måste du först ha ett innehållscenter.</span><span class="sxs-lookup"><span data-stu-id="5f80a-104">To create and manage document understanding models, you first need a content center.</span></span> <span data-ttu-id="5f80a-105">Innehållscentret är gränssnittet för skapande av modeller och innehåller även information om vilka dokumentbibliotek som publicerade modeller använts på.</span><span class="sxs-lookup"><span data-stu-id="5f80a-105">The content center is the model creation interface and also contains information about which document libraries published models have been applied to.</span></span></br>
 
-   ![Välj ett dokument bibliotek](../media/content-understanding/content-center-page.png)</br>
+   ![Välj ett dokumentbibliotek](../media/content-understanding/content-center-page.png)</br>
 
-<span data-ttu-id="1db74-109">Du skapar ett första innehålls Center under [installationen](set-up-content-understanding.md).</span><span class="sxs-lookup"><span data-stu-id="1db74-109">You create an initial content center during [setup](set-up-content-understanding.md).</span></span> <span data-ttu-id="1db74-110">Men en SharePoint-administratör kan också välja att skapa ytterligare Center efter behov.</span><span class="sxs-lookup"><span data-stu-id="1db74-110">But a SharePoint admin can also choose to create additional centers as needed.</span></span> <span data-ttu-id="1db74-111">Det kan hända att ett enskilt innehålls Center fungerar bra för de miljöer som du vill samla in alla modell aktiviteter för och du kanske vill ha ytterligare Center för flera avdelningar i organisationen, som kan ha olika behov och krav för deras modeller.</span><span class="sxs-lookup"><span data-stu-id="1db74-111">While a single content center may be fine for environments for which you want a roll-up of all model activity, you may want to have additional centers for multiple departments within your organization, which may have different needs and requirements for their models.</span></span>
+<span data-ttu-id="5f80a-107">Du skapar ett standardinnehållscenter under [konfiguration](set-up-content-understanding.md).</span><span class="sxs-lookup"><span data-stu-id="5f80a-107">You create a default content center during [setup](set-up-content-understanding.md).</span></span> <span data-ttu-id="5f80a-108">Men en SharePoint-administratör kan också välja att skapa fler center efter behov.</span><span class="sxs-lookup"><span data-stu-id="5f80a-108">But a SharePoint admin can also choose to create additional centers as needed.</span></span> <span data-ttu-id="5f80a-109">Även om det kan vara bra att skapa ett enda innehållscenter för miljöer där du vill samla alla modellaktiviteter kanske du vill ha ytterligare center för olika avdelningar i organisationen, som kan ha olika behov och behörighetskrav för sina modeller.</span><span class="sxs-lookup"><span data-stu-id="5f80a-109">While a single content center may be fine for environments for which you want a roll-up of all model activity, you may want to have additional centers for multiple departments within your organization, which may have different needs and permission requirements for their models.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="1db74-112">En SharePoint-administratör kan skapa en innehålls Center-webbplats som de [skapar andra SharePoint-webbplatser](https://docs.microsoft.com/sharepoint/create-site-collection) med hjälp av en webbplatsmall.</span><span class="sxs-lookup"><span data-stu-id="1db74-112">A SharePoint admin can create a content center site like they would [create any other SharePoint site](https://docs.microsoft.com/sharepoint/create-site-collection) by using a site template.</span></span>
+> <span data-ttu-id="5f80a-110">En SharePoint-administratör kan skapa en webbplats för innehållscentret precis som de [skapar andra SharePoint-webbplatser](https://docs.microsoft.com/sharepoint/create-site-collection) via administrationscentrets panel för webbplatsetablering.</span><span class="sxs-lookup"><span data-stu-id="5f80a-110">A SharePoint admin can create a content center site like they would [create any other SharePoint site](https://docs.microsoft.com/sharepoint/create-site-collection) through the admin center site provisioning panel.</span></span>
 
-<span data-ttu-id="1db74-113">Så här skapar du ett nytt innehålls Center:</span><span class="sxs-lookup"><span data-stu-id="1db74-113">To create a new content center:</span></span>
+<span data-ttu-id="5f80a-111">För att skapa ett nytt innehållscenter:</span><span class="sxs-lookup"><span data-stu-id="5f80a-111">To create a new content center:</span></span>
 
-1. <span data-ttu-id="1db74-114">Gå till administrations centret för SharePoint i administrations centret för Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="1db74-114">From the Microsoft 365 admin center, go to the SharePoint admin center.</span></span>
-2. <span data-ttu-id="1db74-115">I administrations centret för SharePoint, under **webbplatser**, väljer du **aktiva webbplatser**.</span><span class="sxs-lookup"><span data-stu-id="1db74-115">In the SharePoint admin center, under **Sites**, select **Active Sites**.</span></span>
-3. <span data-ttu-id="1db74-116">På sidan **aktiva webbplatser** klickar du på **skapa**och väljer sedan **andra alternativ**.</span><span class="sxs-lookup"><span data-stu-id="1db74-116">On the **Active Sites** page, click **Create**, and then select **Other options**.</span></span>
-4. <span data-ttu-id="1db74-117">Gå till menyn **Välj en mall** och välj **innehålls Center**.</span><span class="sxs-lookup"><span data-stu-id="1db74-117">On the **Choose a template** menu, select **Content Center**.</span></span>
-5. <span data-ttu-id="1db74-118">Ange ett **namn**, en **primär administratör**och ett **språk**för den nya webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="1db74-118">For the new site, provide a **Site Name**, **Primary administrator**, and a **Language**.</span></span></br>
+1. <span data-ttu-id="5f80a-112">Gå till administrationscenter för SharePoint i administrationscenter för Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="5f80a-112">On the Microsoft 365 admin center, go to the SharePoint admin center.</span></span>
+2. <span data-ttu-id="5f80a-113">I administrationscentret för SharePoint, under **Webbplatser**, väljer du **Aktiva webbplatser**.</span><span class="sxs-lookup"><span data-stu-id="5f80a-113">On the SharePoint admin center, under **Sites**, select **Active Sites**.</span></span>
+3. <span data-ttu-id="5f80a-114">På sidan **Aktiva webbplatser** klickar du på **Skapa** och väljer **Andra alternativ**.</span><span class="sxs-lookup"><span data-stu-id="5f80a-114">On the **Active Sites** page, click **Create**, and then select **Other options**.</span></span>
+4. <span data-ttu-id="5f80a-115">Välj **Innehållscenter** i menyn **Välj en mall**.</span><span class="sxs-lookup"><span data-stu-id="5f80a-115">On the **Choose a template** menu, select **Content Center**.</span></span>
+5. <span data-ttu-id="5f80a-116">Ange **Webbplatsnamn**, **primär administratör** och **Språk** för den nya webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="5f80a-116">For the new site, provide a **Site Name**, **Primary administrator**, and a **Language**.</span></span></br>
 
 > [!NOTE] 
-> <span data-ttu-id="1db74-119">Du kan också välja en innehålls Center webbplats som ska återges på något av de tillgängliga språken.</span><span class="sxs-lookup"><span data-stu-id="1db74-119">You can optionally select a content center site to render in any of the available languages.</span></span> <span data-ttu-id="1db74-120">Endast aktuella modeller kan skapas för engelska filer.</span><span class="sxs-lookup"><span data-stu-id="1db74-120">Only current models can be created for English files.</span></span></br>
+> <span data-ttu-id="5f80a-117">Du kan välja en webbplats för innehållscenter i något av de tillgängliga språken, men observera att modeller för närvarande endast kan skapas för engelska filer.</span><span class="sxs-lookup"><span data-stu-id="5f80a-117">You can select a content center site to render in any of the available languages, but note that currently models can only be created for English files.</span></span> <span data-ttu-id="5f80a-118">Observera också att precis som med andra webbplatsmallar kan standardwebbplatsens språk inte redigeras när webbplatsen har skapats.</span><span class="sxs-lookup"><span data-stu-id="5f80a-118">Also note that like other site templates, the default site language isn't editable after the site is created.</span></span></br>
 
-6. <span data-ttu-id="1db74-121">Välj **avslutad**.</span><span class="sxs-lookup"><span data-stu-id="1db74-121">Select **Finished**.</span></span>
-
-### <a name="give-access-to-additional-users"></a><span data-ttu-id="1db74-122">Ge till gång till ytterligare användare</span><span class="sxs-lookup"><span data-stu-id="1db74-122">Give access to additional users</span></span>
+6. <span data-ttu-id="5f80a-119">Välj **Färdig**.</span><span class="sxs-lookup"><span data-stu-id="5f80a-119">Select **Finished**.</span></span>
  
-<span data-ttu-id="1db74-123">När du har skapat webbplatsen kan du ge ytterligare användare åtkomst till webbplatsen via standard [modell för SharePoint-webbplatsens behörigheter](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions).</span><span class="sxs-lookup"><span data-stu-id="1db74-123">After you create the site, you can give additional users access to the site through the standard [SharePoint site permissions model](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions).</span></span>
+<span data-ttu-id="5f80a-120">När du har skapat en webbplats för innehållscentret visas den på sidan **Aktiva webbplatser** i administrationscenter för SharePoint.</span><span class="sxs-lookup"><span data-stu-id="5f80a-120">After you create a content center site, you will see it listed on the **Active sites** page in the SharePoint admin center.</span></span> 
 
-## <a name="see-also"></a><span data-ttu-id="1db74-124">Se även</span><span class="sxs-lookup"><span data-stu-id="1db74-124">See Also</span></span>
-[<span data-ttu-id="1db74-125">Skapa en klassificerare</span><span class="sxs-lookup"><span data-stu-id="1db74-125">Create a classifier</span></span>](create-a-classifier.md)</br>
-[<span data-ttu-id="1db74-126">Skapa en Extractor</span><span class="sxs-lookup"><span data-stu-id="1db74-126">Create an extractor</span></span>](create-an-extractor.md)</br>
-<span data-ttu-id="1db74-127">[Skapa ett innehålls Center](create-a-content-center.md) 
- [Översikt över dokument förståelse](document-understanding-overview.md)</span><span class="sxs-lookup"><span data-stu-id="1db74-127">[Create a content center](create-a-content-center.md)
-[Document understanding overview](document-understanding-overview.md)</span></span></br>
-[<span data-ttu-id="1db74-128">Skapa en modell för formulär bearbetning</span><span class="sxs-lookup"><span data-stu-id="1db74-128">Create a form processing model</span></span>](create-a-form-processing-model.md)</br>
-[<span data-ttu-id="1db74-129">Använda en modell</span><span class="sxs-lookup"><span data-stu-id="1db74-129">Apply a model</span></span>](apply-a-model.md)    
+### <a name="give-access-to-additional-users"></a><span data-ttu-id="5f80a-121">Ge behörighet till ytterligare användare</span><span class="sxs-lookup"><span data-stu-id="5f80a-121">Give access to additional users</span></span>
+ 
+<span data-ttu-id="5f80a-122">När du har skapat webbplatsen kan du ge fler användare åtkomst till den via standard[modellen för SharePoint-webbplatsbehörigheter](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions).</span><span class="sxs-lookup"><span data-stu-id="5f80a-122">After you create the site, you can give additional users access to the site through the standard [SharePoint site permissions model](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions).</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="5f80a-123">Se även</span><span class="sxs-lookup"><span data-stu-id="5f80a-123">See Also</span></span>
+[<span data-ttu-id="5f80a-124">Skapa en klassificerare</span><span class="sxs-lookup"><span data-stu-id="5f80a-124">Create a classifier</span></span>](create-a-classifier.md)
+
+[<span data-ttu-id="5f80a-125">Skapa en extraktor</span><span class="sxs-lookup"><span data-stu-id="5f80a-125">Create an extractor</span></span>](create-an-extractor.md)
+
+[<span data-ttu-id="5f80a-126">Skapa ett innehållscenter</span><span class="sxs-lookup"><span data-stu-id="5f80a-126">Create a content center</span></span>](create-a-content-center.md)
+
+[<span data-ttu-id="5f80a-127">Översikt av dokumenttolkning</span><span class="sxs-lookup"><span data-stu-id="5f80a-127">Document understanding overview</span></span>](document-understanding-overview.md)
+
+[<span data-ttu-id="5f80a-128">Skapa en modell för formulärbearbetning</span><span class="sxs-lookup"><span data-stu-id="5f80a-128">Create a form processing model</span></span>](create-a-form-processing-model.md)
+
+[<span data-ttu-id="5f80a-129">Använda en modell</span><span class="sxs-lookup"><span data-stu-id="5f80a-129">Apply a model</span></span>](apply-a-model.md)    
