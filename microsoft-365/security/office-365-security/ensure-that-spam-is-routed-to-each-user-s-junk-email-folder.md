@@ -7,7 +7,7 @@ author: MSFTTracyP
 manager: chrisda
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur du dirigerar skräp post till e-postmappar för användare i Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4c01ad0e8efa4d28e1b5d1e72b3daa87bb01b619
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 76003f18009ebf9159f01d916cdaf38b50a213d1
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196599"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350345"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Konfigurera fristående EOP för att skicka skräp post till skräppostmappen i hybrid miljöer
 
@@ -51,7 +51,7 @@ I det här avsnittet beskrivs hur du skapar de här e-postflödena för Exchange
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du måste ha behörighet i den lokala Exchange-miljön innan du kan utföra dessa procedurer. Specifikt måste du ha tilldelats rollen **transport regler** , som tilldelats rollerna **organisations hantering**, **regelefterlevnad**och hantering av **Arkiv handlingar** . Mer information finns i [lägga till medlemmar i en roll grupp](https://docs.microsoft.com/Exchange/permissions/role-group-members?view=exchserver-2019#add-members-to-a-role-group).
+- Du måste ha behörighet i den lokala Exchange-miljön innan du kan utföra dessa procedurer. Specifikt måste du ha tilldelats rollen **transport regler** , som tilldelats rollerna **organisations hantering**, **regelefterlevnad**och hantering av **Arkiv handlingar** . Mer information finns i [lägga till medlemmar i en roll grupp](https://docs.microsoft.com/Exchange/permissions/role-group-members#add-members-to-a-role-group).
 
 - Om och när ett meddelande skickas till mappen skräp post i en lokal Exchange-organisation styrs av en kombination av följande inställningar:
 

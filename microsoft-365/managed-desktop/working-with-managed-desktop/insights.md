@@ -1,6 +1,6 @@
 ---
 title: Arbeta med insikter
-description: ''
+description: Översikt över insikter tillgängliga på Microsoft Managed Desktop
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b3ed56dd3e669dbd5a2c3f09d87dfd87fe680aff
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: ba91a33da9f4d2187938c27398d5ef7c1cacebcd
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337187"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350832"
 ---
 # <a name="work-with-insights"></a>Arbeta med insikter
 
@@ -31,9 +31,11 @@ Med dessa instrument paneler kan du hitta svaren på dessa:
 - Vilken är den aktuella statusen för säkerhets uppdateringar på enheter?
 - Hur lång tid tog det för 95% av enheterna att bli aktuell med den senaste säkerhets uppdateringen?
 
-För att komma åt dessa vyer från [Microsoft slut punkts hanteraren](https://endpoint.microsoft.com/)navigerar du till fliken Microsoft Managed Desktop på Start sidan och väljer **Visa information** i området **rapporter** :
 
-<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->
+För att komma åt de här vyerna från [Microsoft slut punkts hanteraren](https://endpoint.microsoft.com/)navigerar du till fliken Microsoft Managed Desktop på Start sidan och väljer **Visa information** i **rapporterings** området:
+
+
+![Huvud sida för administrations Center med rapport området längst ned till vänster och vyn detaljerad information](../../media/insights-main.png)
 
 
 ## <a name="usage-insights"></a>Användningsinsikter

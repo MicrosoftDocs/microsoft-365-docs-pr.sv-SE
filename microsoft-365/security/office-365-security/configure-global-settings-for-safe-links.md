@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,14 +17,14 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur du visar och konfigurerar globala inställningar (Blockera följande webb adresser lista och skydd för Office 365-appar) för säkra länkar i Office 365 Avancerat skydd (ATP).
-ms.openlocfilehash: 6ca18bfb555419a8f4a61b55715f328ed7da5e88
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 50bef8a1edad50540c7212eb4259e17e2368a56c
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328567"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350883"
 ---
-# <a name="configure-global-settings-for-safe-links-in-office-365-atp"></a>Konfigurera globala inställningar för säkra länkar i Office 365 ATP
+# <a name="configure-global-settings-for-safe-links-in-office-365-atp"></a>Konfigurera globala inställningar för Säkra Länkar i Office 365 ATP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
