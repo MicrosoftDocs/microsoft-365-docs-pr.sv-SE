@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Sammanfattning: Microsoft 365 data platser'
-ms.openlocfilehash: 125d58b0565bf0380a4b2578aea4db6b26596f14
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: 7a2fb85d0d7320770a1ab32efcd024a9e348795e
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269547"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337163"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -41,7 +41,7 @@ Hitta information om avtalade åtaganden för lagrings platsen för kunddata i r
 Om du använder Azure Active Directory-dataplatser går du till [AAD data Map](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
 
-På grund av de oöverträffade förhållandena kring COVID-19 och behovet av att hantera krav för online tjänster, om din organisation är en utbildnings institution i Europa, kan vi tillhandahålla din Office 365-klient organisation i, föra över dina data och lagra dina data i vila inom EU.  Om din organisation är en utbildnings institution i Indien kan vi tillhandahålla din Office 365-klient organisation i, överföra dina data till och lagra dina data på andra sidan i Indien, Europa och USA.  Om din organisation är en utbildnings institution i Sydafrika kan vi tillhandahålla din Office 365-klient organisation i, överföra dina data till och lagra dina data på andra håll i Sydafrika och Europa. Vårt engagemang för efterlevnad, sekretess och säkerhet förändras inte medan vi inför nödvändiga och ansvarsfulla åtgärder för att upprätthålla tjänstens tillgänglighet. Vi följer alla tillämpliga lagar med avseende på data överföringar.
+Om kundens faktureringsadress är utanför Europa och kunden har en utbildningsprenumeration på Office 365, utan hinder av avdelningen för kundens vilande kunddata för kärntjänster online i OST, kommer Microsoft att tillhandahålla kundens Office 365-klientorganisation i, överföra kunddata till och lagra vilande kunddata var som helst inom Europa och Nordamerika.  Om kundens faktureringsadress är i Europa och kunden har en utbildningsprenumeration på Office 365, utan hinder av avdelningen för kundens vilande kunddata för kärntjänster online i OST, kommer Microsoft att tillhandahålla kundens Office 365-klientorganisation i, överföra kunddata till och lagra vilande kunddata var som helst inom EU.
 
 
 
