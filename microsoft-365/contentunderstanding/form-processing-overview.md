@@ -1,50 +1,58 @@
 ---
-title: Översikt över formulär bearbetning
+title: Översikt av formulär bearbetning
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Lär dig mer om formulär bearbetning i Microsoft SharePoint Syntex
-ms.openlocfilehash: 518bc13017762bbe21420a81726e89c9c327834d
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Läs mer om formulärbearbetning i Microsoft SharePoint Syntex
+ms.openlocfilehash: 9b5b9b1c54220037e1c10f2722a641b526592f84
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295182"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338619"
 ---
-# <a name="form-processing-overview-preview"></a>Översikt över formulär bearbetning (för hands version)
+# <a name="form-processing-overview"></a>Översikt av formulär bearbetning
 
-Innehållet i den här artikeln gäller för projekt cortex privat för hands version. [Lär dig mer om Project cortex](https://aka.ms/projectcortex).
+ ![AI Builder](../media/content-understanding/ai-builder.png)</br>
 
-Project cortex använder Microsoft PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview) för att skapa modeller i SharePoint-dokumentbibliotek.
+I Microsoft SharePoint Syntex används formulärbearbetning i Microsoft PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview) för att skapa modeller i SharePoint-dokumentbibliotek.
 
-Du kan använda hjälp av AI Builder för att skapa AI-modeller som använder maskin Learning Technology för att identifiera och extrahera nyckelord och tabell data från strukturerade eller halv strukturerade dokument, till exempel formulär och fakturor.
+Du kan använda formulärbearbetning i AI Builder för att skapa AI-modeller där maskininlärning används för att identifiera och extrahera nyckelvärdepar och tabelldata från strukturerade eller delvis strukturerade dokument, som formulär och fakturor.
 
-Använd AI Builder-blanketten för att skapa AI-modeller som utnyttjar Machine Learning (ML)-teknik för att identifiera och extrahera nycklar och värde-par och tabell data från strukturerade eller halv strukturerade dokument, till exempel formulär och fakturor.
+Organisationer får ofta fakturor i stora kvantiteter från en mängd olika källor, t. ex. post, fax, e-post osv. Det kan ta lång tid att bearbeta dessa dokument och lägga till dem manuellt i en databas. Genom att använda AI för att extrahera text, nyckel/värdepar och tabeller från dina dokument utförs formulärbearbetningen automatiskt. 
 
-Organisationer tar ofta emot fakturor i stora mängder från en mängd olika källor, till exempel e-post, Fax, e-post, etc. Det kan ta en lång stund att bearbeta dessa dokument och ange dem manuellt i en databas. Genom att använda AI för att extrahera text, viktiga par och tabeller från dokumenten, bearbetar formulär bearbetningen den här processen. 
+> [!NOTE]
+> Mer information om formulärbearbetning och scenarioexempel finns i [Införande av SharePoint Syntex: Kom igång-guide](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#form-processing-scenario-example).
 
-Du kan till exempel skapa en modell för formulär bearbetning som identifierar alla inköps order dokument som laddas upp till dokument biblioteket. Från varje inköps order kan du extrahera och visa specifika data som är viktiga för dig, till exempel *inköps order nummer*, *datum*eller *Total kostnad*.
+Du kan till exempel skapa en modell för formulärbearbetning som identifierar alla inköpsordrar som har laddats upp till dokumentbiblioteket. Från varje inköpsorder kan du extrahera och visa vissa data som är viktiga för dig, t. ex. *PO-nummer*, *datum* eller *summa*.
 
-Du kan också använda exempelfiler för att träna modellen och ange vilken information som ska extraheras från formuläret. Layouten i dokumentet bevaras genom att öva på modellen. Du behöver minst fem formulär dokument för att komma igång. AI-byggnaden analyserar exempelfilerna efter par av nycklar och värden, och sedan identifieras de som inte har identifierats manuellt.  Med hjälp av AI-verktyget kan du testa korrektheten hos dina exempelfiler.
+![Dokumentbiblioteksvy](../media/content-understanding/doc-lib-done.png)</br>  
 
-När du har tränat och publicerat modellen kan du använda den för att skapa ett [energi](https://docs.microsoft.com/power-automate/getting-started) spår som körs efter att en fil har laddats upp till SharePoint-dokumentbiblioteket. Då extraheras data som har identifierats i modellen. Extraherade data visas i kolumner i modellens dokument bibliotek.
+Du kan också använda exempelfiler för att träna modellen och definiera vilken information som ska extraheras från formuläret. Dokumentets layout lärs in genom att modellen tränas och lär sig att extrahera data från liknande platser i dina formulär eftersom de har en liknande layout med liknande struktur. 
 
-Du använder exempelfiler för att träna modellen och ange vilken information som ska extraheras från formuläret. Layouten i dokumentet bevaras genom att öva på modellen. Du behöver bara fem formulär dokument för att komma igång. AI-verktyget analyserar exempelfilerna för par med nyckelord och du kan också manuellt identifiera dem som eventuellt inte har identifierats.  Med hjälp av AI-verktyget kan du testa korrektheten hos dina exempelfiler.
+Du behöver minst fem formulärdokument för att komma igång. AI Builder analyserar dina exempelfiler för nyckel-värdepar och identifierar sedan manuellt de som eventuellt inte har identifierats.  Med AI Builder kan du testa din modells precision mot dina exempelfiler.
 
-När du tränar och publicerar modellen kan du använda den för att skapa ett [energi](https://docs.microsoft.com/power-automate/getting-started)spår. Flödet körs när en fil laddas upp till SharePoint-dokumentbiblioteket och extraherar data som har identifierats i modellen. Extraherade data visas i kolumner i modellens dokument bibliotek.
+När du har tränat och publicerat modellen kan du använda den för att skapa ett [Power Automate-flöde](https://docs.microsoft.com/power-automate/getting-started) som körs när en fil laddats upp till dokumentbiblioteket i SharePoint. Därefter extraheras de data som har identifierats i modellen. Extraherade data visas i kolumner i modellens dokumentbiblioteksvy.
 
-En 365 Office-administratör måste [Aktivera formulär bearbetning](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding#to-set-up-content-understanding) för att användare ska kunna [skapa en modell för formulär bearbetning](create-a-form-processing-model.md) i SharePoint-dokumentbiblioteket.
+Du använder exempelfiler för att träna modellen och definiera vilken information som ska extraheras från formuläret. Dokumentets layout registreras genom att modellen tränas. Du behöver bara fem formulärdokument för att komma igång. AI Builder analyserar dina exempelfiler för nyckel-värdepar och du kan även manuellt identifiera de som eventuellt inte har upptäckts.  Med AI Builder kan du testa din modells precision mot dina exempelfiler.
+
+När du har tränat och publicerat modellen skapar modellen ett [Power Automate-flöde](https://docs.microsoft.com/power-automate/getting-started). Flödet körs när en fil överförs till dokumentbiblioteket i SharePoint och hämtar data som har identifierats av modellen. Extraherade data visas i kolumner i modellens dokumentbiblioteksvy.
+
+En Office 365-administratör måste [aktivera formulärbearbetning](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding#to-set-up-content-understanding) för SharePoint-dokumentbiblioteket för att användarna ska kunna [skapa en modell för formulärbearbetning](create-a-form-processing-model.md) i det. Du kan välja webbplatser under eller efter konfigurationen i dina hanteringsinställningar.
+
+
 
 ## <a name="see-also"></a>Se även
   
-[Automatiserad energi dokumentation](https://docs.microsoft.com/power-automate/)</br>
-[Skapa en modell för formulär bearbetning](create-a-form-processing-model.md)</br>
-[Översikt över dokument förståelse](document-understanding-overview.md)</br>
-[Utbildning: förbättra företags prestanda med hjälp av AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)</br>
+[Power Automate-dokumentation](https://docs.microsoft.com/power-automate/)
+
+[Skapa en modell för formulärbearbetning](create-a-form-processing-model.md)
+
+[Översikt av dokumenttolkning](document-understanding-overview.md)
+
+[Utbildning: Förbättra affärsprestanda med AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)

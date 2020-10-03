@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Lär dig att skapa en klassificerare
-ms.openlocfilehash: 1225a4e57969b507ddd2ca7260050605c0db955e
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 948ece1a19b7e6049167c373b3200efd316a60cd
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321863"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338643"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Skapa en klassificerare i Microsoft SharePoint Syntex
 
@@ -131,7 +131,7 @@ Om du får en **Matchningsfel** på de märkta filerna kan du behöva skapa en y
 
 ## <a name="test-your-model"></a>Testa din modell
 
-Om du får en matchning för dina etiketterade exempelfiler kan du nu testa din modell på de återstående omärkta exempelfilerna som modellen inte har sett innan.  Det här steget är valfritt.
+Om du får en matchning för dina etiketterade exempelfiler kan du nu testa din modell på de återstående omärkta exempelfilerna som modellen inte har sett tidigare.  Det här är valfritt, men ett användbart steg för att utvärdera "lämpligheten" eller beredskapen av modellen innan användning är genom att testa den på filer som modellen inte har sett tidigare.
 
 1. Från modellens startsida välj fliken **Test**.  Då körs modellen på dina omärkta exempelfiler.
 2. I listan **Testfiler**visas dina exempelfiler och visar om modellen har uppskattad de som positiva eller negativa. Använd den här informationen för att ta reda på hur effektivt din klassificerare är för att identifiera dina dokument.
@@ -141,8 +141,8 @@ Om du får en matchning för dina etiketterade exempelfiler kan du nu testa din 
 ## <a name="see-also"></a>Se även
 [Skapa en extraherare](create-an-extractor.md)
 
-[Dokumenttolkning översikt](document-understanding-overview.md)
+[Översikt av dokumenttolkning](document-understanding-overview.md)
 
-[Skapa en modell för formulärbearbetning](create-a-form-processing-model.md)
+[Förklaringstyper](explanation-types-overview.md)
 
 [Använda en modell](apply-a-model.md) 
