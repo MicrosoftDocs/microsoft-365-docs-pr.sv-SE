@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f462e6018f03080b41e46f45629dc4bfe44b3ef9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c9b495b70c8b61188b4db3175b54e406feb87fc8
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200023"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357848"
 ---
 # <a name="incidents-overview-in-microsoft-threat-protection"></a>Incidenter översikt i Microsoft Threat Protection
 
@@ -32,27 +32,30 @@ ms.locfileid: "48200023"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft Threat Protection
 
 
 
-Underlaget för alla händelser är aviseringar. Aviseringar skapas när en illvillig händelse eller aktivitet visas i nätverket. Enskilda meddelanden ger värdefulla LED trådar i vad som händer på enskilda händelser eller enheter. Däremot använder angrepp många olika typer av attacker för att genomföra en överträdelse. Piecing enskilda LED trådar kan vara en utmaning och tids krävande uppgifter. 
+Händelser är baserade på relaterade aviseringar. Aviseringar skapas när en illvillig händelse eller aktivitet visas i nätverket. Enskilda meddelanden ger värdefulla LED trådar om pågående attacker. Däremot använder angrepp olika vektorer och teknik för att genomföra en överträdelse. Piecing enskilda LED trådar kan vara utmanande och tids krävande.
 
-Microsoft Threat Protection ansluter punkterna på enskilda aviseringar. Illvilliga händelser för följande enheter är belägna i säkerhets Center för Microsoft 365:
-- Anordningar
-- Användare
-- Post lådor
+Den här korta videon ger en översikt över incidenter i Microsoft Threat Protection.
+<br>
 
-Misstänkta händelser som visar att egenskaper är en del av en större attack samlas in i en händelse. 
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-Du vet exakt var en attack startas och annan information som hjälper dig att se omfattningen av angreppet.
+En olycka är en samling med korrelerade aviseringar som utgör artikeln om en attack. Illvilliga och misstänkta händelser som finns i olika enheter, användare och post lådor i nätverket aggregeras automatiskt efter Microsoft Threat Protection. Om du grupprelaterade notifieringar till en olycka får säkerhets försvararna en omfattande översikt över en attack. 
 
-Plattformen ger säkerhets försvarare med rätt visualisering och data representationer för att förstå och adressera komplexa hot från kors enheter. 
+Säkerhets försvarare kan till exempel se var angreppet startade, vilken taktiker som användes och hur långt angreppet har gått till nätverket. De kan också se omfattningen av angreppet, till exempel hur många enheter, användare och post lådor som påverkades, hur allvarligt det var och andra detaljer om berörda enheter.
 
-Det är inte bara att du är synlig på omfattningen av en attack, men du kommer också att ha till gång till tjänster som gör att du kan ta en olycka med Tactical.
+Om den är aktive rad kan Microsoft Threat Protection automatiskt undersöka och lösa enskilda aviseringar via automatisering och artificiell intelligens. Säkerhets försvarare kan även utföra ytterligare åtgärder för att lösa angreppen direkt från vyn incidenter. 
+
+Incidenter från de senaste 30 dagarna visas i incident kön. Härifrån kan säkerhets försvarare se vilka händelser som ska prioriteras baserat på risk nivå och andra faktorer. 
+
+Säkerhets försvarare kan även byta namn på incidenter, tilldela dem enskilda analyser, klassificera och lägga till taggar i tillbud för att få en bättre och mer anpassningsbar upplevelse för problem hantering.
 
 
-## <a name="related-topics"></a>Relaterade ämnen
+
+## <a name="see-also"></a>Se även
 - [Prioritera incidenter](incident-queue.md)
 - [Undersöka incidenter](investigate-incidents.md)
 - [Hantera incidenter](manage-incidents.md)

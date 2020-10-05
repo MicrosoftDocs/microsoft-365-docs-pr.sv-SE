@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: Lär dig att visa, lista eller Visa dina Microsoft 365-användarkonton på olika sätt med PowerShell.
-ms.openlocfilehash: ea631d12a95ca813ebf9da3286e36d724d51a2f7
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 4dba05ce440ec0d395fda58a12df3e9f751bb469
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696765"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357904"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>Visa Microsoft 365-användarkonton med PowerShell
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 Även om du kan använda administrations centret för Microsoft 365 för att Visa kontona för din Microsoft 365-klient organisation kan du också använda PowerShell för Microsoft 365 och göra vissa saker som administrations centret inte kan.
   
@@ -100,6 +100,21 @@ Du kan till exempel kontrol lera den aktiverade statusen för ett visst använda
 Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayName,UserPrincipalName,AccountEnabled
 ```
 
+### <a name="view-account-synchronization-status"></a>Visa synkroniseringsstatus för kontot
+
+Användar konton har två källor; Windows Server Active Directory (AD) som är konton som synkroniserar från lokala annonser till molnet och Azure AD som är direkt skapade i molnet.
+
+```powershell
+Get-AzureADUser | Where {$_.DirSyncEnabled -eq $true}
+```
+Det här kommandot instruerar PowerShell att hämta alla användare som har attributet **DirSyncEnabled** angivet till true. Den kan användas för att hämta konton som synkroniseras från en lokal annons.
+
+
+```powershell
+Get-AzureADUser | Where {$_.DirSyncEnabled -ne $true}
+```
+Det här kommandot instruerar PowerShell att hämta alla användare som har attributet **DirSyncEnabled** angett till falskt. Den kan användas för att hämta moln konton.
+
 ### <a name="view-some-accounts-based-on-a-common-property"></a>Visa vissa konton baserat på en gemensam egenskap
 
 Om du vill veta mer om listan med konton som ska visas kan du använda **WHERE** -cmdleten tillsammans med cmdleten **Get-AzureADUser** . Om du vill kombinera de två cmdletarna använder vi "pipe"-tecknet "|", som talar för att Azure Active Directory PowerShell for Graph tar ett kommando och skickar det till nästa kommando. Här är ett exempel kommando som endast visar de användar konton som har en ospecificerad användnings plats:
@@ -143,7 +158,7 @@ Get-MsolUser
 ```
 
 >[!Note]
->PowerShell Core stöder inte Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen och cmdlets med **MSOL** . För att kunna fortsätta använda dessa cmdletar måste du köra dem från Windows PowerShell.
+>PowerShell Core stöder inte Microsoft Azure Active Directory-modul för Windows PowerShell-modulen och-cmdlets med **MSOL** i namnet. Om du vill fortsätta använda dessa cmdlets måste du köra dem från Windows PowerShell.
 >
 
 Här visas information som liknar den här:
@@ -304,5 +319,4 @@ Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipa
   
 [Hantera Microsoft 365 med PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Komma igång med PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-
+[Börja använda PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)

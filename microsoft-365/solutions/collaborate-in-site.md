@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Lär dig mer om de Microsoft 365-inställningar som behövs för att konfigurera en SharePoint-webbplats för samarbete med gäster.
-ms.openlocfilehash: cb3cfc52191be4bacfb9d84672131149082ee80e
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 4f4b87a02c3ff3a1a7997aee69e3e1e95e4b2ed5
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277574"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48358000"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Samar beta med gäster på en webbplats
 
@@ -146,3 +146,5 @@ Så här bjuder du in gäster till en grupp
 [Skapa en säker miljö för gästdelning](create-secure-guest-sharing-environment.md)
 
 [Skapa ett B2B-extranät med hanterade gäster](b2b-extranet.md)
+
+[SharePoint och OneDrive-integrering med Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)

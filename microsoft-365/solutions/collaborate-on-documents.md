@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: I den här artikeln får du lära dig hur du samarbetar med gäster i ett dokument i SharePoint och OneDrive.
-ms.openlocfilehash: 98eea8fe9c613aef3e24f9e4bb6746ddc9a527ab
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 1a7591915efa82f1995ce2789e181dc350cd3784
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798276"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357788"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Samar beta med gäster i ett dokument
 
@@ -117,3 +117,5 @@ Inställningar för gäst delning är nu konfigurerade så att användarna kan n
 [Metodtips för att dela filer och mappar med oautentiserade användare](best-practices-anonymous-sharing.md)
 
 [Begränsa oavsiktlig exponering för filer när de delas med gäster](share-limit-accidental-exposure.md)
+
+[SharePoint och OneDrive-integrering med Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)

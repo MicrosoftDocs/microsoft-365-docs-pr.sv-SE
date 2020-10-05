@@ -16,14 +16,15 @@ ms.collection:
 - remotework
 - m365solution-remotework
 - m365solution-overview
+- M365initiative-coredeploy
 ms.custom: ''
 description: Konfigurera säkerhets- och tjänstinfrastrukturen som gör att dina arbetare kan arbeta på distans på valfri plats och när som helst.
-ms.openlocfilehash: f5364103610fbac8efe47b9ae7e776d215fc0733
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c68e2e68ea6a5cc1204eda371cf67ca31f58d7cb
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327741"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357872"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Underlätta för distansarbetare med Microsoft 365
 

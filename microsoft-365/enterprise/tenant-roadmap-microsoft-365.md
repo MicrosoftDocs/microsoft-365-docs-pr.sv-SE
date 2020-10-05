@@ -10,15 +10,17 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: M365-subscription-management
+ms.collection:
+- M365-subscription-management
+- M365initiative-coredeploy
 ms.custom: it-pro
 description: Översikten för konfiguration av klient organisationer för Microsoft 365.
-ms.openlocfilehash: 7834e8b7f9ff8a1b33f2f2a7ccc4a499e4da7c69
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: e4b2af9143070caa1ebd8fd66ef9f367f85d3bb9
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775153"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357916"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Klient organisations översikt för Microsoft 365
 
@@ -34,7 +36,6 @@ Så här planerar du för klient implementering:
 
 - [Förstå abonnemang, licenser och Azure Active Directory (Azure AD)-klient organisationer](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [Förstå hur du använder SSL-certifikat från tredje part](plan-for-third-party-ssl-certificates.md)
-- [Installations guider för Access i administrations centret för Microsoft 365](setup-guides-for-microsoft-365.md)
 - [Förstå hur en Microsoft 365-klient är integrerad med Azure AD-tjänster](integrated-apps-and-azure-ads.md)
 - [Planera stöd för klient program](microsoft-365-client-support-certificate-based-authentication.md)
 - [Bestämma hur hybrid modern](hybrid-modern-auth-overview.md)
@@ -44,7 +45,7 @@ Så här planerar du för klient implementering:
 
 ## <a name="deploy"></a>Distribuera
 
-Om du vill distribuera din klient organisation [lägger du till DNS-domänerna](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) för organisationen.
+Om du vill distribuera din klient organisation [lägger du till DNS-domänerna](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) för organisationen och använder [installations guiderna i Microsoft 365 Admin Center](setup-guides-for-microsoft-365.md).
 
 ## <a name="tenants-with-multiple-geographic-locations"></a>Klient organisationer med flera geografiska platser
 
