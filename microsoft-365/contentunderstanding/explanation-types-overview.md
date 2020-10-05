@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Mer information om olika typer av förklaringar i Microsoft SharePoint Syntex
-ms.openlocfilehash: 7d78337fd91bc7e5a71bccd4867f019ae663417a
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 43272504912451e4690cb8b7fe351462371bb252
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321803"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350309"
 ---
 # <a name="introduction-to-explanation-types"></a>Introduktion till förklaringstyper
 
@@ -34,7 +34,7 @@ Följande förklaringstyper är tillgängliga:
 
 Förklaringstypen fraslista används vanligtvis för att identifiera och klassificera ett dokument via modellen. Så som det beskrivs i exemplet med etikett för *Hänvisande läkare* är det en sträng med ord, fraser, siffror eller tecken är konsekventa i de dokument som du identifierar.
 
-Även om det inte är obligatoriskt kan du få bättre framgång med din förklaring om frasen du hämtar finns på en konsekvent plats i dokumentet. Till exempel kan etiketten *Hänvisande läkare* konsekvent finnas i det första stycket i dokumentet.
+Även om det inte är obligatoriskt kan du få mer framgång med din förklaring om frasen du hämtar finns på en konsekvent plats i ditt dokument. Till exempel kan etiketten *Hänvisande läkare* konsekvent finnas i det första stycket i dokumentet.
 
 Om skifteslägeskänslighet är obligatorisk för att identifiera din etikett tillåter användning av fraslista dig att ange det i förklaringen genom att markera kryssrutan **Endast exakta versaler**.
 
@@ -68,7 +68,7 @@ Om du även har krav på stor begynnelsebokstav i din mönsterlista kan du välj
    ![Endast exakta versaler](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> I stället för att manuellt skapa en förklaring för mönsterlista kan du använda [förklaringsbiblioteket]() för att använda färdiga mönsterlistmallar för vanliga mönsterlistor, till exempel *datum*, *telefonnummer*, *kreditkortsnummer*osv.. 
+> I stället för att manuellt skapa en förklaring för mönsterlista kan du använda [förklaringsbiblioteket](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) för att använda färdiga mönsterlistmallar för vanliga mönsterlistor, till exempel *datum*, *telefonnummer*, *kreditkortsnummer*osv.. 
 
 ## <a name="proximity"></a>Närhet 
 
@@ -87,7 +87,7 @@ Använd närhetsförklaringen för att definiera hur långt bort det är för at
 
 #### <a name="what-are-tokens"></a>Vad är tokens?
 
-Om du vill använda förklaringstypen närhet måste du förstå vad en token är eftersom antalet tokens är hur närhetsförklaringen mäter avståndet från en förklaring till en annan.  
+Om du vill använda närhetsförklaringstypen behöver du förstå vad en token är eftersom antalet tokens är hur närhetsförklaringen mäter avståndet från en förklaring till en annan.  
 
 En token är ett sammanhängande intervall (inga blanksteg eller skiljetecken) för bokstäver och siffror. Ett blanksteg är INTE en token. Varje skiljetecken är en token. I tabellen nedan visas några exempel på hur du kan ta reda på antalet tokens i en fras.
 
