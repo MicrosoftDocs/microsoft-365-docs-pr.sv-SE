@@ -11,17 +11,17 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Översikt över Knowledge Management i Project cortex.
-ms.openlocfilehash: 80750ee94248b21b8ac7bd3869830a7986de34b9
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: c4f7ff7d65ec08740dc14f717712731d839bd903
+ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949378"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361957"
 ---
-# <a name="knowledge-management-0verview-preview"></a>0verview för kunskaps hantering (för hands version)
+# <a name="knowledge-management-overview-preview"></a>Översikt över kunskaps hantering (för hands version)
 
 > [!Note] 
-> Innehållet i den här artikeln gäller för projekt cortex privat för hands version. [Lär dig mer om Project cortex](https://aka.ms/projectcortex) 
+> Innehållet i den här artikeln gäller för projekt cortex privat för hands version. [Läs mer om Project Cortex](https://aka.ms/projectcortex).
 
 Kunskaps hantering använder Microsoft AI-teknologi, Microsoft 365, Delve, sökning och andra komponenter och tjänster för att bygga ett kunskaps nätverk i din Microsoft 365-miljö. 
 

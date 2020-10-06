@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/15/2020
+ms.date: 08/25/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: I den här artikeln får du lära dig om hybrid modern verifiering och förutsättningar för användning med lokala Skype för företag-och Exchange-servrar.
-ms.openlocfilehash: 1e0330bd62d9098f11a12b44b46e9ace30b59420
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 82cd4203e2e9dc53c6add542c5f0ba90530b6548
+ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546450"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361933"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Hybrid modern verifierings översikt och förutsättningar för att använda den med lokala Skype för företag-och Exchange-servrar
 
@@ -106,8 +106,8 @@ Kontrol lera och kontrol lera dessa objekt i listan innan du fortsätter:
   - En distribution av Skype för företag – Server 2019 med alla servrar som kör Skype för företag – Server 2019.
   - En distribution av Skype för företag – Server 2015 med alla servrar som kör Skype för företag – Server 2015.
   - En distribution med maximalt två olika Server versioner enligt nedan:
-    - Skype för företag – Server 2015
-    - Skype för företag – Server 2019
+    - Skype för företag 2015
+    - Skype för företag 2019
   - Alla Skype för företag-servrar måste ha de senaste kumulativa uppdateringarna installerade, se [uppdateringar för Skype för företag – Server](https://docs.microsoft.com/skypeforbusiness/sfb-server-updates) för att hitta och hantera alla tillgängliga uppdateringar.
   - Det finns inga Lync Server 2010 eller 2013 i hybrid miljön.
 
@@ -143,18 +143,22 @@ Kontrol lera och kontrol lera dessa objekt i listan innan du fortsätter:
   - Om du använder Exchange Server 2013, måste minst en server ha installerat server för post lådor och klient åtkomst. Det går att installera rollerna post låda och klient åtkomst på separata servrar, men vi rekommenderar starkt att du installerar båda rollerna på samma server för att ge ytterligare pålitlighet och bättre prestanda.
   - Om du använder Exchange Server 2016 eller senare version måste Server rollen för post lådan vara installerad på minst en server.
   - Det finns ingen Exchange Server 2007 eller 2010 i hybrid miljön.
-  - Alla Exchange-servrar måste ha de senaste kumulativa uppdateringarna installerade, se [Uppgradera Exchange till de senaste kumulativa uppdateringarna](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019) för att hitta och hantera alla tillgängliga uppdateringar.
+  - Alla Exchange-servrar måste ha de senaste kumulativa uppdateringarna installerade, se [Uppgradera Exchange till de senaste kumulativa uppdateringarna](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates) för att hitta och hantera alla tillgängliga uppdateringar.
 
 - **Krav för Exchange-klient och-protokoll**
 
-  - Följande klienter har stöd för modern inloggningsautentisering:
+    Tillgängligheten för modern verifikation bestäms av kombinationen av klienten, protokollet och konfigurationen. Om det inte finns något stöd för modern auktorisering av klienten, protokollet och/eller konfigurationen fortsätter klienten att använda äldre verifikation.
+  
+    Följande klienter och protokoll stöder modern lösenordsautentisering med lokalt Exchange när modern lösenordsautentisering är aktive rad i miljön:
 
   |**Förvirra**|**Primärt protokoll**|**Kommentarer**|
   |:-----|:-----|:-----|
-  |Outlook 2013 och Outlook 2016  <br/> |MAPI via HTTP  <br/> |MAPI via HTTP måste aktive ras i Exchange för att det ska vara en modern dator med dessa klienter (vanligt vis aktiverat eller sant för nya installationer av Exchange 2013 Service Pack 1 och senare); Mer information finns i [så här fungerar modern inloggningsautentisering för office 2013-och Office 2016-klient program](modern-auth-for-office-2013-and-2016.md).  <br/> Kontrol lera att du använder den minsta nödvändiga versionen av Outlook; Se de [senaste uppdateringarna för versioner av Outlook som använder Windows installations program (MSI)](https://docs.microsoft.com/officeupdates/outlook-updates-msi).  <br/> |
-  |Outlook 2016 för Mac  <br/> |Exchange-webbtjänster  <br/> |  <br/> |
-  |Outlook för iOS och Android  <br/> |  <br/> |Mer information finns i [använda hybrid modern med Outlook för iOS och Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) .  <br/> |
+  |Outlook 2013 och senare  <br/> |MAPI via HTTP  <br/> |MAPI via HTTP måste aktive ras i Exchange för att det ska vara en modern dator med dessa klienter (vanligt vis aktiverat eller sant för nya installationer av Exchange 2013 Service Pack 1 och senare); Mer information finns i [så här fungerar modern inloggningsautentisering för office 2013-och Office 2016-klient program](modern-auth-for-office-2013-and-2016.md).  <br/> Kontrol lera att du använder den minsta nödvändiga versionen av Outlook; Se de [senaste uppdateringarna för versioner av Outlook som använder Windows installations program (MSI)](https://docs.microsoft.com/officeupdates/outlook-updates-msi).  <br/> |
+  |Outlook 2016 för Mac och senare  <br/> |Exchange-webbtjänster  <br/> |  <br/> |
+  |Outlook för iOS och Android  <br/> | Microsoft Sync-teknik <br/> |Mer information finns i [använda hybrid modern med Outlook för iOS och Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) .  <br/> |
   |Exchange ActiveSync-klienter (till exempel iOS11 e-post)  <br/> |Exchange ActiveSync  <br/> |För Exchange ActiveSync-klienter som har stöd för modern inloggning måste du återskapa profilen för att kunna växla från grundläggande verifikation till modern.  <br/> |
+
+    Klienter och/eller protokoll som inte finns med i listan (till exempel POP3) stöder inte modern auktorisering med lokalt Exchange och fortsätter att använda äldre autentiseringsmekanismer även efter att modern aktive rad för miljön är aktiverat.
 
 - **Allmänna förutsättningar**
   - Om du använder AD FS bör du ha Windows 2012 R2 AD FS 3,0 och högre för federation.
