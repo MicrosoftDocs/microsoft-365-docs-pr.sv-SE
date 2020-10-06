@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: Säkerhet i Office 365, från EOP till ATP-abonnemang 1 och 2, standard kontra strikta säkerhets konfigurationer och mer, så att du kan förstå vad du har och hur du skyddar dina egenskaper.
-ms.openlocfilehash: bfce840aa05eaebecc1ec227c6c29bd11cb0a823
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+description: Säkerhet i Office 365, från EOP till ATP-abonnemang 1 och 2, standard kontra strikta säkerhetskonfigurationer. Förstå vad du har och hur du skyddar dina egenskaper.
+ms.openlocfilehash: c5b357dc7a08eeef099b25172169d04cdb81e8c4
+ms.sourcegitcommit: 5abd5ef8c2903b4c3bd875da68049fde26768dcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338754"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48359159"
 ---
 # <a name="office-365-security-overview"></a>Säkerhets översikt för Office 365
 
@@ -53,9 +53,9 @@ Men i en arkitektur är det dags att tänka på varje del som en samlad säkerhe
 
 :::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="Placeholder graphic":::
 
-Även ***om alla*** de här tjänsterna betonar ett specifikt mål från skydda, upptäcka, undersöka och svarar, kan ***alla*** tjänster hantera, upptäcka, utreda och svara.
+Även om alla de här tjänsterna betonar ett mål från skydda, upptäcka, undersöka och svarar, kan ***alla*** tjänster hantera, upptäcka, utreda ***any*** och svara.
 
-Kärnan i Office 365-säkerheten är EOP skydd. ATP P1 innehåller EOP. ATP P2 innehåller P1 och EOP. Strukturen är kumulativ. Därför ska du börja med EOP och arbeta i lagren genom att göra det när du konfigurerar ATP.
+Kärnan i Office 365-säkerheten är EOP skydd. ATP P1 innehåller EOP. ATP P2 innehåller P1 och EOP. Strukturen är kumulativ. Därför ska du börja med EOP och arbeta med ATP när du konfigurerar den här produkten.
 
 Även om konfigurationen av e-postkonfiguration sker i offentliga DNS är det viktigt att konfigurera den här funktionen för att skydda förfalskningar. *Om du har EOP* ***bör du [Konfigurera e-postauktorisering](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication)***.
 
@@ -83,7 +83,7 @@ Det kan vara svårt att lägga till ATP-abonnemang för att få en fördel med r
 startar med **Exchange Online Protection**:
 <p>
 
-|Förhindra/upptäcka  |Undersöka  |Komma  |
+|Förhindra/upptäcka  |Undersöka  |Svara  |
 |---------|---------|---------|
 | Tekniken inkluderar:<ul><li>skräppost</li><li>phish</li><li>program</li><li>Mass utskick</li><li>Spoof-intelligens</li><li>identifiering av personifiering</li><li>Administratörs karantän</li><li>Administratörs-och användar inlämningar av falska positiva och falska negativa negativ</li><li>Tillåt/blockera för URL-adresser och filer</li><li>Rapporter</li></u1>|<li>Gransknings loggs ökning</li><li>Meddelande spårning</li>|<li>Automatisk rensning av noll-timme (ZAP)</li><li>Förfining och testning av listor över tillåtna och blockera</li>|
 
@@ -94,7 +94,7 @@ Eftersom dessa produkter är kumulativa om du utvärderar ATP P1 och bestämmer 
 Vinster med **Avancerat skydd, abonnemang 1** (till datum):
 <p>
 
-|Förhindra/upptäcka  |Undersöka  |Komma  |
+|Förhindra/upptäcka  |Undersöka  |Svara  |
 |---------|---------|---------|
 | Teknologierna innehåller allt i EOP plus:<u1><li>Säkra bifogade filer</li><li>Säkra länkar<li>Skydd mot ATP för arbets belastning (t. ex. SharePoint Online, teams, OneDrive för företag)</li><li>Tidpunkt för att klicka på skydd i e-post, Office-klienter och team</li><li>Stöldskydd med ATP</li><li>Skydd mot användar-och domän personifiering</li><li>Aviseringar och SIEM integration API för aviseringar</li>|<li>SIEM integrerings-API för identifiering</li><li>**Verktyg för identifiering av real tid**</li><li>URL-spårning</li>|<li>Det</li></u1>
 
@@ -105,7 +105,7 @@ För ATP P1 läggs även **real tids identifiering** för utredningar. Det här 
 Vinster med **Avancerat skydd, abonnemang 2** (till datum):
 <p>
 
-|Förhindra/upptäcka  |Undersöka  |Komma  |
+|Förhindra/upptäcka  |Undersöka  |Svara  |
 |---------|---------|---------|
 | Teknologierna innehåller allt i EOP och ATP P1 plus:<u1><li>Det</li>|<li>**Hotutforskaren**</li><li>Hotspårare</li><li>Kampanjmallar</li>|<li>Automatisk undersökning och svar (luft)</li><li>FLYG från hot Explorer</li><li>LUFT för användare med kompromiss</li><li>SIEM integrerings-API för automatiserade utredningar</li>
 
@@ -138,11 +138,11 @@ Den här snabb referensen hjälper dig att förstå vilka funktioner som kommer 
 - Om ditt nuvarande abonnemang inte innehåller Office 365 ATP, [kontaktar du Sales för att starta en utvärderings version](https://go.microsoft.com/fwlink/p/?LinkId=518644)och tar reda på hur ATP fungerar för inom din organisation.
 
 > [!TIP]
-> ***Insider-tips***. Du kan använda innehålls förteckningen docs.microsoft.com för att lära dig mer om EOP och ATP. Navigera till [Office 365-säkerhets](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap) artiklar, så märker du att innehålls förtecknings organisationen börjar med utvärdering och distribution (inklusive migrering) och fortsätter sedan till förebyggande, identifiering, undersökning och svar. <p> Den här strukturen är uppdelad så att **säkerhets administrations** avsnitten följs av avsnitten om **säkerhets åtgärder** . Om du är en ny medlem i någon av jobb rollerna kan du använda länken i det här tipset och innehållet i innehålls förteckningen för att få reda på utrymmet. Kom ihåg att använda *feedback-länkar* och *betygs ätt artiklar* allteftersom. Feedback hjälper oss att förbättra vad vi ger dig.
+> ***Insider-tips***. Du kan använda innehålls förteckningen docs.microsoft.com för att lära dig mer om EOP och ATP. Navigera tillbaka till den här sidan, [Office 365-säkerhets översikt](https://docs.microsoft.com/microsoft-365/security/office-365-security/?view=o365-worldwide)och Lägg märke till att organisationen för innehålls förteckning är i sido fältet. Den börjar med distribution (inklusive migrering) och fortsätter sedan till förebyggande, identifiering, undersökning och svar. <p> Den här strukturen är uppdelad så att **säkerhets administrations** avsnitten följs av avsnitten om **säkerhets åtgärder** . Om du är en ny medlem i någon av jobb rollerna kan du använda länken i det här tipset och innehållet i innehålls förteckningen för att få reda på utrymmet. Kom ihåg att använda *feedback-länkar* och *betygs ätt artiklar* allteftersom. Feedback hjälper oss att förbättra vad vi ger dig.
 
 ## <a name="where-to-go-next"></a>Var du ska gå vidare
 
-Om du är en säkerhets administratör kan du behöva konfigurera DKIM eller DMARC för din e-post, sammanställa "strikta" säkerhets för inställningar för dina prioriterade användare, eller så kanske du letar efter nyheter i produkten. Om du har säkerhetskontot kanske du vill använda real tids identifiering eller hot Utforskare för att undersöka och svara eller utbilda slut användar avkänning med angrepps Simulator. Här är några ytterligare rekommendationer för vad du kan titta på härnäst.
+Om du är administratör kan du behöva konfigurera DKIM eller DMARC för din e-post. Du kanske vill visa "strikta" säkerhets för inställningar för dina prioriterade användare eller leta efter nyheter i produkten. Om du befinner dig med säkerhetsfunktionen kan det vara bra att använda upptäckter i real tid eller hot Utforskaren för att undersöka och svara eller utbilda slutanvändares identifiering med en angrepps Simulator. Här är några ytterligare rekommendationer för vad du kan titta på härnäst.
 
 [E-postauktorisering, inklusive SPF, DKIM och DMARC (med länkar till konfiguration av alla tre)](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication)
 
