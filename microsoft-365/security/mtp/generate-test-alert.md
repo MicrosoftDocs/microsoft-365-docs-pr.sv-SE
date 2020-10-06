@@ -15,30 +15,32 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: 389fc25abb6d3afbe4aac28f6f87ee1af31a1c14
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: be895138ff524fead6cbea903d978cef1cb49bde
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199399"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48368111"
 ---
-# <a name="generate-a-test-alert-in-your-microsoft-threat-protection-evaluation-lab"></a><span data-ttu-id="da1f2-104">Skapa en test avisering i utvärderings labb för Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="da1f2-104">Generate a test alert in your Microsoft Threat Protection evaluation lab</span></span>  
+# <a name="generate-a-test-alert-in-your-microsoft-threat-protection-evaluation-lab"></a><span data-ttu-id="1269c-104">Skapa en test avisering i utvärderings labb för Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="1269c-104">Generate a test alert in your Microsoft Threat Protection evaluation lab</span></span>  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="da1f2-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="da1f2-105">**Applies to:**</span></span>
-- <span data-ttu-id="da1f2-106">Microsoft Hotskydd</span><span class="sxs-lookup"><span data-stu-id="da1f2-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="1269c-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="1269c-105">**Applies to:**</span></span>
+- <span data-ttu-id="1269c-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="1269c-106">Microsoft Threat Protection</span></span>
 
-<span data-ttu-id="da1f2-107">Nu när du har slutfört konfigurering och konfiguration av Microsoft Threat Protection Evaluation Lab kan du köra en simulering av en hot attack för att få identifiering, varnings korrelation och själv återställnings funktioner i den integrerade säkerhets lösningen.</span><span class="sxs-lookup"><span data-stu-id="da1f2-107">Now that you've completed your Microsoft Threat Protection evaluation lab setup and configuration, you can run a threat attack simulation to experience the detection, alert correlation, and self-healing remediation capabilities of the integrated security solution.</span></span>  
+<span data-ttu-id="1269c-107">Nu när du har slutfört konfigurering och konfiguration av Microsoft Threat Protection Evaluation Lab kan du köra en simulering av en hot attack för att få identifiering, varnings korrelation och själv återställnings funktioner i den integrerade säkerhets lösningen.</span><span class="sxs-lookup"><span data-stu-id="1269c-107">Now that you've completed your Microsoft Threat Protection evaluation lab setup and configuration, you can run a threat attack simulation to experience the detection, alert correlation, and self-healing remediation capabilities of the integrated security solution.</span></span>  
 
-1. <span data-ttu-id="da1f2-108">Logga in på https://security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="da1f2-108">Log on to https://security.microsoft.com</span></span>
-2. <span data-ttu-id="da1f2-109">Leta reda på en panel med rubriker på Start **sidan.**</span><span class="sxs-lookup"><span data-stu-id="da1f2-109">On the Home page, look for a tile titled **Simulation**.</span></span>  <span data-ttu-id="da1f2-110">Läs igenom anvisningarna för att skapa en test incident i Microsoft Threat Protection.</span><span class="sxs-lookup"><span data-stu-id="da1f2-110">Review the walkthrough guide for steps to create a test incident in Microsoft Threat Protection.</span></span>
-<br><span data-ttu-id="da1f2-111">![Bild av simulerings kort i instrument panelen för Microsoft 365-säkerhet](../../media/mtp-eval-73.png)</span><span class="sxs-lookup"><span data-stu-id="da1f2-111">![Image of simulation card in the Microsoft 365 Security dashboard](../../media/mtp-eval-73.png)</span></span> <br>
+1. <span data-ttu-id="1269c-108">Logga in på https://security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="1269c-108">Log on to https://security.microsoft.com</span></span>
+2. <span data-ttu-id="1269c-109">Leta reda på en panel med rubriker på Start **sidan.**</span><span class="sxs-lookup"><span data-stu-id="1269c-109">On the Home page, look for a tile titled **Simulation**.</span></span>  <span data-ttu-id="1269c-110">Läs igenom anvisningarna för att skapa en test incident i Microsoft Threat Protection.</span><span class="sxs-lookup"><span data-stu-id="1269c-110">Review the walkthrough guide for steps to create a test incident in Microsoft Threat Protection.</span></span>
+<br><span data-ttu-id="1269c-111">![Bild av simulerings kort i instrument panelen för Microsoft 365-säkerhet](../../media/mtp-eval-73.png)</span><span class="sxs-lookup"><span data-stu-id="1269c-111">![Image of simulation card in the Microsoft 365 Security dashboard](../../media/mtp-eval-73.png)</span></span> <br>
 
-## <a name="next-steps"></a><span data-ttu-id="da1f2-112">Nästa steg</span><span class="sxs-lookup"><span data-stu-id="da1f2-112">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="1269c-112">Nästa steg</span><span class="sxs-lookup"><span data-stu-id="1269c-112">Next steps</span></span>
 
-<span data-ttu-id="da1f2-113">Bläddra igenom [Microsoft 365-lösning och-arkitektur Center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) för att förstå hur du utformar lösningen och arkitekturen som passar din organisation.</span><span class="sxs-lookup"><span data-stu-id="da1f2-113">Browse through the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) to understand how to design the solution and architecture that is right for your organization.</span></span>
+<span data-ttu-id="1269c-113">Bläddra igenom [Microsoft 365-lösning och-arkitektur Center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) för att förstå hur du utformar lösningen och arkitekturen som passar din organisation.</span><span class="sxs-lookup"><span data-stu-id="1269c-113">Browse through the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) to understand how to design the solution and architecture that is right for your organization.</span></span>
 
