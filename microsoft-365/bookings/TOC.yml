@@ -1,4 +1,4 @@
-- name: Microsoft-bokningar
+- name: Microsoft Bookings
   href: bookings-overview.md
   items:
     - name: Installation
@@ -9,6 +9,8 @@
           href: enter-business-information.md
         - name: Definiera dina tjänst möjligheter
           href: define-service-offerings.md
+        - name: Lägga till personal i bokningar
+          href: add-staff.md
         - name: Schemalägg företags stängning och ledighet
           href: schedule-closures-time-off-vacation.md
         - name: Ange schemaläggnings principer

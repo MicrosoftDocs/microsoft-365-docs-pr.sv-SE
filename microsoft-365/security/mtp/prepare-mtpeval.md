@@ -13,14 +13,16 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 97e75b07721c180fe6b4df56c2d9cc819b610802
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ac60415f38644c4630a181b1c8d696acced57ded
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195553"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48368007"
 ---
 # <a name="prepare-your-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>Förbereda ett utvärderings labb för Microsoft Threat Protection eller pilot miljö
 
@@ -28,7 +30,7 @@ ms.locfileid: "48195553"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft Threat Protection
 
 Att skapa ett utvärderings labb för Microsoft Threat-eller pilot miljö och distribuera det är en process i tre steg:
 

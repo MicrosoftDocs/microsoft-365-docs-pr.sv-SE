@@ -15,14 +15,16 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: 389fc25abb6d3afbe4aac28f6f87ee1af31a1c14
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: be895138ff524fead6cbea903d978cef1cb49bde
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199399"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48368111"
 ---
 # <a name="generate-a-test-alert-in-your-microsoft-threat-protection-evaluation-lab"></a>Skapa en test avisering i utvärderings labb för Microsoft Threat Protection  
 
@@ -30,7 +32,7 @@ ms.locfileid: "48199399"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft Threat Protection
 
 Nu när du har slutfört konfigurering och konfiguration av Microsoft Threat Protection Evaluation Lab kan du köra en simulering av en hot attack för att få identifiering, varnings korrelation och själv återställnings funktioner i den integrerade säkerhets lösningen.  
 
