@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: Konfigurera innehållstolkning i Project Cortex
-ms.openlocfilehash: 7fb5998729c9f11902f8fdfaffa62b160928077c
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 0d66076c93eb46ca11977cea12417c0816e0d11b
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321355"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48367937"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Konfigurera SharePoint Syntex
 
@@ -43,11 +43,9 @@ Som administratör kan du också göra ändringar i dina valda inställningar n�
 
 ## <a name="to-set-up-sharepoint-syntex"></a>Att konfigurera SharePoint Syntex
 
-1. I Administrationscenter för Microsoft 365 väljer du **Konfiguration** och visar sedan avsnittet **Organisationskunskap**.
+1. I Administrationscenter för Microsoft 365 välj **Konfiguration** och se sedan **Filer och innehåll** sektionen.
 
-2. I avsnittet **Organisationskunskap** väljer du **Automatisera innehållstolkning**.<br/>
-
-    ![Konfigurationssida för organisationskunskaper](../media/content-understanding/admin-org-knowledge-options.png)</br>
+2. I **Filer och innehåll** sektionen välj **Automatisera innehållstolkning**.<br/>
 
 3. På sidan **Automatisera innehållstolkning** klickar du på **Komma igång** för att gå igenom konfigurationsprocessen.<br/>
 

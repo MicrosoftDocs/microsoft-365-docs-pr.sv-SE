@@ -9,18 +9,18 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Lär dig hur du använder kvarhållningsetiketter på modeller för dokumenttolkning
-ms.openlocfilehash: 6f616dc3d2ebd87bcc70ee01c9f3a88db60b6f17
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: 052c137a419c0185010fbd152e73615a4bb093af
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337247"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48367959"
 ---
 # <a name="document-understanding-model-usage-analytics"></a>Användningsstatistik för modeller för dokumenttolkning
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GpJY]  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhX]  
 
 </br>
 
@@ -28,7 +28,7 @@ ms.locfileid: "48337247"
 I innehållscenter för Microsoft SharePoint Syntex finns användningsanalyser för modeller, för mer information om hur dina modeller som har publicerats från innehållscentret används. Den innehåller en samlad uppsättning av följande information:
 
 - Var modellerna används
-- Hur många filer som behandlas över tid
+- Hur många filer behandlas över tid
 
  ![Modellanalys](../media/content-understanding/model-analytics.png) </br>
 
