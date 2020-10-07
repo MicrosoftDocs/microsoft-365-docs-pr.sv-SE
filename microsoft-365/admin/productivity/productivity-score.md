@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Översikt över Microsoft produktivitets poäng.
-ms.openlocfilehash: 7c323d51bcd8a1bead28677e399891ccd0a22950
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 82dc26aea5c573b63bb66d087b332e3301e71409
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285196"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48376979"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft produktivitets Poäng (för hands version)
 
-Produktivitets poäng gör det lättare för organisationer att omvandla hur arbete görs med insikter om hur människor använder Microsoft 365 och de teknik funktioner som har stöd för dem. Poängen återspeglar organisationens prestanda i förhållande till anställda och teknik och jämför poängen med organisationer som dina egna.
+Produktivitets poäng gör det lättare för organisationer att omvandla hur arbete görs med insikter om hur människor använder Microsoft 365 och de teknik funktioner som har stöd för dem. Poängen reflekterar organisationens prestanda mot folk-och teknik upplevelser och jämför poängen med organisationer som ditt.
 
 Poängen inkluderar:
 
@@ -39,18 +39,18 @@ Poängen inkluderar:
 
 Vi tillhandahåller data, insikter och rekommendationer i två områden: 
 
-- **Personens upplevelse:** Vi mäter hur personer samarbetar med innehåll, hur de använder Microsoft 365-produkter för att kommunicera och om de använder Microsoft 365 på olika plattformar. 
+- **Personer upplever:** Vi mäter hur personer samarbetar med innehåll, hur de använder Microsoft 365-produkter för att kommunicera och om de använder Microsoft 365 på olika plattformar. 
 
     Vi tillhandahåller dessa insikter eftersom de när folk samarbetar online sparar tid. Med friheten att arbeta på alla enheter är det mer produktivt och uppfyllt. Kommunikation på ett flexibelt sätt gör det lättare för människor att effektivisera, bilda bättre relationer och organisationen är mer enhetlig. Mer information finns i [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Teknik upplevelse:** Produktiviteten beror på tillförlitlig och högpresterande teknologi samt användning av Microsoft 365. Vi tillhandahåller [slut punkts analys](https://aka.ms/endpointanalytics), som hjälper dig att förstå hur användarnas produktivitet kan påverkas av prestanda-och hälso problem med slut punktens maskin vara och program vara. Vi tillhandahåller också rekommenderade åtgärder för att åtgärda dem samt Microsoft 365 Network Connectivity Insights för din organisation.
+- **Teknik upplevelser:** Produktiviteten beror på tillförlitlig och högpresterande teknologi samt användning av Microsoft 365. Vi tillhandahåller [slut punkts analys](https://aka.ms/endpointanalytics), som hjälper dig att förstå hur användarnas produktivitet kan påverkas av prestanda-och hälso problem med slut punktens maskin vara och program vara. Vi tillhandahåller också rekommenderade åtgärder för att åtgärda dem samt Microsoft 365 Network Connectivity Insights för din organisation.
 
 Se [Vad är slut punkts analys](https://docs.microsoft.com/mem/analytics/overview) för en översikt och krav uppgifter. Om du vill veta mer om Microsoft 365 Network Connectivity kan du läsa [Översikt över nätverks anslutningen](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
 
 ## <a name="how-the-score-is-calculated"></a>Så här beräknas poängen
 
-Produktivitets poängen baseras på de kombinerade poängen från kategorierna för anställda och teknik. Varje kategori viktas lika, med totalt 100 poäng per kategori. De totala möjliga poängen för produktivitets Poäng är 500.
+Produktivitets poängen baseras på de kombinerade poängen från kategorierna kontakter och teknik. Varje kategori viktas lika, med totalt 100 poäng per kategori. De totala möjliga poängen för produktivitets Poäng är 500.
 
 ### <a name="score-categories"></a>Poäng kategorier 
 
@@ -72,7 +72,7 @@ Ditt resultat uppdateras dagligen och återspeglar användar åtgärderna som ha
 
 ## <a name="pre-requisites"></a>Förutsättningar 
 
-Du behöver ett Microsoft 365 för företag eller Office 365 för företags abonnemang för att få information om anställda och du måste använda flera klient organisationer. För att få slut punkts analys data för din klient organisation måste du lägga till Microsoft Intune i ditt abonnemang. Intune hjälper dig att skydda organisationens data genom att hantera enheter och appar.       När du har Intune kan du aktivera slut punkts analys i Intune-upplevelsen. Läs mer om Microsoft Intune. 
+Du behöver ett Microsoft 365 för företag eller Office 365 för Enterprise-abonnemang för att få folk att använda data, och du behöver ha flera klient organisationer. För att få slut punkts analys data för din klient organisation måste du lägga till Microsoft Intune i ditt abonnemang. Intune hjälper dig att skydda organisationens data genom att hantera enheter och appar.       När du har Intune kan du aktivera slut punkts analys i Intune-upplevelsen. Läs mer om Microsoft Intune. 
 
 Om du vill visa produktivitets poängen för din organisation måste du ha av någon av följande roller: 
 
@@ -94,17 +94,17 @@ På Start sidan för produktivitets Poäng visas ditt totala poäng-och Poäng h
 
 **Poängen** visas som ett procentuellt värde samt i punkter så att du kan se dina Points (täljare) och högsta möjliga poäng (nämnare).
 
-Med funktioner för **peer-prestandatest** kan du jämföra poängen med organisationer som dina egna. För kategorierna Employee Experience beräknas mått för peer-benchmark som medelvärdet av mått inom en uppsättning likartade organisationer. Uppsättningen består av organisationer i din region med ett liknande antal licensierade användare, typer av licenser, bransch och besittning med Microsoft 365. 
+Med funktioner för **peer-prestandatest** kan du jämföra poängen med organisationer som dina egna. För kategorierna personer som använder beräknas funktionen för peer-benchmark som medelvärdet av mått inom en uppsättning likartade organisationer. Uppsättningen består av organisationer i din region med ett liknande antal licensierade användare, typer av licenser, bransch och besittning med Microsoft 365. 
 
 Resurs benchmark för slut punkts analys inkluderar mål för start prestanda och Rekommenderad program konfiguration baserat på aggregerade median värden för alla klienter.
 
 För nätverks anslutning är det rekommenderade benchmark 80-poäng.
 
-I avsnittet **Poäng uppdelning** får du en uppdelning av produktivitets poängen med benchmarks i områdena anställda och teknik.
+I avsnittet **Poäng indelning** får du en uppdelning av din produktivitets poäng med benchmarks i områdena personer och teknik.
 
 Resultat historik visar hur poängen i varje kategori har ändrats under de senaste sex månaderna.
 
-Funktionerna för **personens upplevelse** och **teknik** innehåller de viktigaste insikterna för kategorierna i dessa områden. Du kan klicka på varje kategori för att se djupare insikter.
+**Folk upplevelse** och **teknik upplevelser** innehåller de primära insikterna för kategorierna i dessa områden. Du kan klicka på varje kategori för att se djupare insikter.
 
 ## <a name="category-details-pages"></a>Kategori informations sidor
 

@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Slutet av livs cykel alternativen för grupper, team och Yammer.
-ms.openlocfilehash: ab06f06cc65614ee313892a026c2f482d641791f
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 3720f63f99711a09d02675f10a7d639fe1bedc65
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662847"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377181"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Slutet av livs cykel alternativen för grupper, team och Yammer
 
@@ -32,7 +33,7 @@ I följande tabell visas de tjänster som är kopplade till grupper och team och
 |Tjänst|Innehålls typer|
 |:------|:---------------|
 |Teams|Kanal konversationer, filer i kanaler|
-|Formulärautentisering|Undersöknings struktur och resultat|
+|Formulär|Undersöknings struktur och resultat|
 |OneNote|Antecknings bok|
 |Outlook|E-post och kalender|
 |Planner|Information om projekt status och aktivitet|
@@ -58,7 +59,7 @@ Behöver innehållet bevaras när teamet inte längre fungerar eller saknas? Är
 
 De här frågorna måste tillfrågas innan något team arkiveras eller tas bort för att undvika förlust av data.
 
-**Uthyrning**
+**Tjänster**
 
 På innehållet i olika appar och tjänster måste de vara i sitt nuvarande arbets formulär? Om du till exempel vill att Power BI-rapporten ska vara tillgänglig, måste formulär resultaten vara tillgängliga i vyn visuell sammanfattning, är listorna i SharePoint länkad till eller inbäddat var som helst?
 
@@ -100,7 +101,7 @@ När gruppens kanal konversationer och SharePoint-webbplatsens innehåll är skr
 - Videoklipp kan fortfarande laddas upp, ändras och tas bort i ström
 - Flödet i Power autoautomatisera kan fortfarande skapas, ändras, tas bort och fortsätter att köras (de kommer inte att fungera om de behövs för att skicka ett meddelande till en kanal i det arkiverade teamet)
 
-## <a name="forms"></a>Formulärautentisering
+## <a name="forms"></a>Formulär
 
 Ett formulär kan flyttas från ett enskilt konto till en grupp, det går inte att flytta eller kopiera det från en grupp till en annan. Det finns tre tillgängliga alternativ för ett formulär när ett team tas bort.
 
@@ -192,7 +193,7 @@ Om rapporten måste bevaras i sitt funktions tillstånd bortom gruppens eller te
 
 Om rapporten inte längre behöver vara aktiv, men data måste bevaras kan de [exporteras till Excel](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data).
 
-## <a name="project"></a>Massanställningsprojektet
+## <a name="project"></a>Project
 
 Projekt och översikter som har skapats i Project på webben kan kopplas till Microsoft 365-grupper och ger råd för offboarding liknande Power BI.
 

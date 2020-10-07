@@ -12,16 +12,16 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+- m365solution-collabgovernance
 search.appverid:
 - MET150
 description: Lär dig mer om principer för förfallo datum för Microsoft 365 Groups.
-ms.openlocfilehash: 092fb22145741376eda895d48c512fd91544bb3b
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 8fc9c48d5a86c68eabd4139ad0a2d0dc1e83da0f
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662860"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377229"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Utgångs princip för Microsoft 365-gruppen
 

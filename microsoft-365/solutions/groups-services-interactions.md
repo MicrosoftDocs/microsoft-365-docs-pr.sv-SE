@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Interaktioner i grupper
-ms.openlocfilehash: 9632debf1bc6fdd2fce061a4c535906410700175
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 235a897314a784ba3bb1ac50fe8bdfe9986a70d3
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662875"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377635"
 ---
 # <a name="groups-services-interactions"></a>Interaktioner i grupper
 
@@ -112,7 +113,7 @@ Följande tabell innehåller en översikt över Microsoft 365-grupper interaktio
 |:---|:---|:---|:---|:---|
 |Azure AD|Medlemskap, grupp kontroller, gäster|Ja|Ja|Ja|
 |Exchange|Kalender, post låda|Ja|Ja|Ja|
-|Formulärautentisering|Omformning|Ja|Nej|Nej|
+|Formulär|Omformning|Ja|Nej|Nej|
 |OneNote|Antecknings bok|Ja|Nej|Nej|
 |Planner|Uppgifts tavla|Nej|Ja|Ja|
 |Power app-appen|Program|Ja|Nej|Nej|
@@ -136,7 +137,7 @@ Azure AD tillhandahåller de underliggande funktionerna för identitets hanterin
 
 - Grupp medlemskap
 - Namngivnings princip
-- Förfallo princip
+- Förfalloprincip
 - Gäst
 - Begränsning av grupp skapande
 
@@ -234,7 +235,7 @@ Nej, post lådan och kalendern kan inte ändras till en annan grupp. Innehållet
 
 Ja, om du tar bort post lådan i Exchange tas gruppen bort samt gruppassocierade tjänster och innehåll.
 
-## <a name="forms"></a>Formulärautentisering
+## <a name="forms"></a>Formulär
 
 Formulär ger webbaserade undersökningar och test.
 

@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Lär dig mer om inställnings interaktioner mellan Microsoft 365-grupper, team och SharePoint
-ms.openlocfilehash: 3ad5011c2d7b4579e054b014237d5771049b3c91
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 3a6d4e057f88410a8808ea133bf7e579d0041228
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662871"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377551"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-teams-and-sharepoint"></a>Inställningar för interaktioner mellan Microsoft 365-grupper, team och SharePoint
 
@@ -41,7 +42,7 @@ Vissa inställningar för Microsoft 365 Groups, Microsoft Teams och SharePoint i
 
 |Inställningar för Microsoft 365-grupper|Beskrivning|Effekt på Teams|Rekommendation|
 |:---------------------------|:----------|:--------------|:-------------|
-|Namngivnings principer|Anger prefix och suffix för grupp namn och blockerade ord för att skapa grupper|Principer tillämpas för användare som skapar Teams.||
+|Namngivningsprinciper|Anger prefix och suffix för grupp namn och blockerade ord för att skapa grupper|Principer tillämpas för användare som skapar Teams.||
 |Gruppgäst åtkomst|Anger om personer utanför organisationen kan läggas till i grupper.|Om inställningarna för gäst delning är inaktiverade kan teamet inte delas med gäster.|När du ändrar inställningar för gäst delning kontrollerar du inställningarna för team, grupper och SharePoint-webbplatsen som är kopplad till teamet.<br><br> Se [samar beta med gäster i ett team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team)|
 |Grupp skapande efter säkerhets grupp|Grupper kan bara skapas av medlemmar i en viss säkerhets grupp.|Användare som inte är medlemmar i säkerhets gruppen kan inte skapa ett team.|Kontrol lera att din process för att begära en grupp innehåller instruktioner för hur du begär ett team eller en SharePoint-webbplats.|
 |Policy för giltighets tid för grupp|Anger en tids period efter vilken grupper som inte aktive ras aktivt tas bort automatiskt.|När gruppen tas bort raderas teamet och tillhör ande SharePoint-webbplats också. Innehåll som skyddas av bevarande principer bevaras.|Använd principer för förfallo dag för att undvika sprawl oanvända team, grupper och webbplatser.|
@@ -50,4 +51,4 @@ Vissa inställningar för Microsoft 365 Groups, Microsoft Teams och SharePoint i
 
 [Samar beta med personer utanför organisationen](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)
 
-[Hantera skapande av webbplatser i SharePoint](https://docs.microsoft.com/sharepoint/manage-site-creation)
+[Hantera webbplatsskapande i SharePoint](https://docs.microsoft.com/sharepoint/manage-site-creation)

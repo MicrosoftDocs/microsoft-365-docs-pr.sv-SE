@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Lär dig mer om samarbets scenarier för kommunikationer.
-ms.openlocfilehash: 3d64733e14bb46230abda80ccd559fde492da12a
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 05644b5d86fc3ca83e7d140a73666a172937bd54
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662866"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377527"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>Kommunikation styrning för samarbets scenarier
 
@@ -27,7 +28,7 @@ Microsoft 365 erbjuder ett antal kontroller som hjälper dig att kontrol lera ko
 
 Följande tabell innehåller en snabb referens för de kommunikations kontroller som är tillgängliga i Microsoft 365. Mer information finns i följande avsnitt.
 
-|Kategori|Beskrivning|Entitetsreferens|
+|Kategori|Beskrivning|Referens|
 |:-------|:----------|:--------|
 |Meddelanden|||
 ||Hantera vad användarna kan göra när de skickar meddelanden i Teams.|[Hantera meddelande principer i Teams](https://docs.microsoft.com/microsoftteams/messaging-policies-in-teams)|

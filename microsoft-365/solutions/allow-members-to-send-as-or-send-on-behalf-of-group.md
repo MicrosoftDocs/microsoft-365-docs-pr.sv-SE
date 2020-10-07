@@ -12,17 +12,17 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+- m365solution-collabgovernance
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Lär dig hur du tillåter att medlemmar skickar e-post som en Microsoft 365-grupp eller skickar e-post åt en Microsoft 365-grupp.
-ms.openlocfilehash: b660131798e60182435a69f479411cdec948bc99
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 9ccaeff49914dd5b510beb80f40a3a3b790ce831
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662851"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377599"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Tillåta medlemmar att skicka som eller skicka för en grupp
 
@@ -50,7 +50,7 @@ I det här avsnittet förklaras hur du tillåter att användare skickar e-post s
     
 4. I avsnittet **Skicka som** väljer du **+** tecknet för att lägga till de användare som du vill skicka som grupp. 
     
-    ![Välj plus tecknet för att lägga till de användare som du vill skicka som Microsoft 365-gruppen](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![Skärm bild av dialog rutan Skicka som](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. Sök efter eller välj en användare i listan. Välj **OK** och **Spara**.
     
@@ -68,7 +68,7 @@ I det här avsnittet förklaras hur du tillåter att användare skickar e-post f
     
 4. I avsnittet Skicka för väljer du **+** tecknet för att lägga till de användare som du vill skicka som grupp. 
     
-    ![Välj plus tecknet för att lägga till de användare som du vill skicka som Microsoft 365-gruppen](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![Skärm bild av dialog rutan Skicka för](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. Sök efter eller välj en användare i listan. Välj **OK** och **Spara**.
     

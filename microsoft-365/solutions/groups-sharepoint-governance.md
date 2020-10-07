@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Lär dig mer om inställnings interaktioner mellan Microsoft 365-grupper och SharePoint
-ms.openlocfilehash: 0c9fdd69db82985039bae03768aa0c19f514c99f
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: e8d4189c2d945d5a6d2aa78bd7ea980a77360ce0
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662872"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377563"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-and-sharepoint"></a>Inställnings interaktioner mellan Microsoft 365-grupper och SharePoint
 
@@ -41,7 +42,7 @@ Vissa inställningar för Microsoft 365-grupper och SharePoint i Microsoft 365, 
 
 |Inställningar för Microsoft 365-grupper|Beskrivning|Effekt på SharePoint|Rekommendation|
 |:---------------------------|:----------|:-------------------|:-------------|
-|Namngivnings principer|Anger prefix och suffix för grupp namn och blockerade ord för att skapa grupper|Principer tillämpas för användare som skapar gruppbaserade grupp webbplatser, men inte kommunikations webbplatser eller webbplatser med andra mallar.|Skapa separata namn vägledning för kommunikations webbplatser om det behövs.|
+|Namngivningsprinciper|Anger prefix och suffix för grupp namn och blockerade ord för att skapa grupper|Principer tillämpas för användare som skapar gruppbaserade grupp webbplatser, men inte kommunikations webbplatser eller webbplatser med andra mallar.|Skapa separata namn vägledning för kommunikations webbplatser om det behövs.|
 |Gruppgäst åtkomst|Anger om personer utanför organisationen kan läggas till i grupper.|Om inställningarna för SharePoint och grupper inte stämmer överens kan gäster i gruppen blockeras från att komma åt webbplatsen, eller också kan den externa åtkomsten vara tillgänglig på webbplatsen, men inte i gruppen.|När du ändrar delnings inställningar kontrollerar du inställningar för både grupper och SharePoint-webbplats för gruppanslutna grupp webbplatser.<br><br>Se [samar beta med gäster på en webbplats](https://docs.microsoft.com/microsoft-365/solutions/collaborate-in-site)|
 |Grupp skapande efter säkerhets grupp|Grupper kan bara skapas av medlemmar i en viss säkerhets grupp.|Användare som inte är medlemmar i säkerhets gruppen kan inte skapa en gruppansluten grupp webbplats.|Kontrol lera att din process för att begära en grupp innehåller instruktioner för hur du begär en webbplats.|
 |Policy för giltighets tid för grupp|Anger en tids period efter vilken grupper som inte aktive ras aktivt tas bort automatiskt.|När gruppen tas bort raderas även den associerade SharePoint-webbplatsen. Innehåll som skyddas av bevarande principer bevaras.|Använd principer för förfallo dag för att undvika sprawl oanvända grupper och webbplatser.|
@@ -50,4 +51,4 @@ Vissa inställningar för Microsoft 365-grupper och SharePoint i Microsoft 365, 
 
 [Samar beta med personer utanför organisationen](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)
 
-[Hantera skapande av webbplatser i SharePoint](https://docs.microsoft.com/sharepoint/manage-site-creation)
+[Hantera webbplatsskapande i SharePoint](https://docs.microsoft.com/sharepoint/manage-site-creation)
