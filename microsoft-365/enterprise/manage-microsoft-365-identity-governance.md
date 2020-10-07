@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: Lär dig mer om hur du använder Microsoft 365 Identity styrelse-funktioner.
-ms.openlocfilehash: d5bcafb5b452e693bf3ff706c436a9986eeeae76
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: e4c537e7fa3ac099caf8b7dbc44327308751c8f5
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328544"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370352"
 ---
 # <a name="manage-microsoft-365-identity-governance"></a>Hantera Microsoft 365 Identity styrelse
 
@@ -46,8 +46,6 @@ Med granskning av Azure AD Access kan du granska en användares åtkomst för at
 Det här är särskilt viktigt om organisationen genomgår säkerhetsgranskningar för att avgöra om användarkonton har för mycket åtkomst, vilket kan resultera i böter om branschregler eller regionala föreskrifter överträds.
 
 Mer information finns i [Översikt över Access-granskningar](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview).
-
-Azure AD-privilegierad identitetshantering (PIM) tillhandahåller ytterligare kontroller som är anpassade för att skydda åtkomsträttigheter för resurser, på Azure AD, Azure och andra Microsoft-molntjänster. Med Azure AD PIM får du en omfattande uppsättning styrningskontroller som hjälper dig att skydda företagets resurser, till exempel Directory, Office 365 och Azure-resursroller. Precis som med andra former av åtkomst kan organisationer använda åtkomstgranskningar för att konfigurera återkommande åtkomst för alla användare i administratörsroller. Azure AD PIM finns bara i E5-versionen av Microsoft 365 Enterprise.
 
 I följande artiklar beskrivs hur olika typer av åtkomstgranskningar konfigureras:
 

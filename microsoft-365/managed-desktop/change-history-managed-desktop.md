@@ -13,16 +13,35 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: a483a03fc913a019f58e80fb2713bb0367a6db44
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 9dec293a26cbc3d239a597e46815d60d79b9ac20
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546276"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370418"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Ändringshistorik för dokumentationen om Microsoft Hanterat skrivbord
 
 I den här artikeln finns nya och uppdaterade artiklar i [Microsoft Managed Desktop](index.yml). "Uppdaterade" artiklar är de som har använt material tillägg eller korrigeringar – smärre korrigeringar som korrigering av skrivfel, format eller formateringsfel visas inte. Du kan alltid visa historiken för specifika skrivningar (inklusive uppgifter om eventuella ändringar) genom att gå in på [repo på GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+
+## <a name="september-2020"></a>September 2020
+Ny eller ändrad artikel | Beskrivning
+--- | ---
+[Integritets-och person uppgifter](service-description/privacy-personal-data.md) | Ny artikel
+[Förbereda mappade enheter för Microsoft Hanterat skrivbord](get-ready/mapped-drives.md) | Uppdaterad artikel
+[Få hjälp för användare](working-with-managed-desktop/end-user-support.md) | Uppdaterad artikel
+[Referens för konfigurerbara inställningar – Microsoft Managed Desktop](working-with-managed-desktop/config-setting-ref.md) | Uppdaterad artikel
+[Distribuera och spåra konfigurerbara inställningar – Microsoft Managed Desktop](working-with-managed-desktop/config-setting-deploy.md) | Uppdaterad artikel
+[Admin-support för Microsoft Hanterat skrivbord](working-with-managed-desktop/admin-support.md) | Uppdaterad artikel
+[Microsoft Teams](get-started/teams.md) | Ny artikel
+[Gå till administrations portalen](get-started/access-admin-portal.md) | Ny artikel
+[Förbereda skrivarresurser för Microsoft Hanterat skrivbord](get-ready/printing.md) | Uppdaterad artikel
+[Välkomstprogrammet med Autopilot och sidan Registreringsstatus](get-started/esp-first-run.md) | Uppdaterad artikel
+[Registrera nya enheter själv](get-started/register-devices-self.md) | Uppdaterad artikel
+[Förbereda certifikat och nätverks profiler för Microsoft Hanterat skrivbord](get-ready/certs-wifi-lan.md) | Uppdaterad artikel
+[Förutsättningar för Microsoft Hanterat skrivbord](get-ready/prerequisites.md) | Uppdaterad artikel
+[Arbeta med insikter](working-with-managed-desktop/insights.md) | Uppdaterad artikel
 
 ## <a name="august-2020"></a>Augusti 2020
 Ny eller ändrad artikel | Beskrivning
