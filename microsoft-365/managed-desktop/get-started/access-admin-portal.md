@@ -1,6 +1,6 @@
 ---
 title: Tillgång till administrationsportalen
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 ms.author: jaimeo
 author: jaimeo
@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: f57911276d74c6945027077404e1f83c2f5072fd
-ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
+ms.openlocfilehash: 5adf57c2397c4de3c5ea8622a2a9be7207ebf152
+ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48137041"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48379296"
 ---
 # <a name="access-the-admin-portal"></a>Gå till administrations portalen
 
@@ -34,12 +34,12 @@ Alla roller nedan kan tilldelas för att ge olika åtkomst nivåer:
 
 |Azure AD-roll  |Behörigheter för Microsoft Managed Desktop  |
 |---------|---------|
-|Global administratör     | Administratörer med den här rollen får **Läs-och Skriv behörighet** till alla funktioner på Microsoft Managed Desktop admin-portalen.         |
-|Global läsare     | Administratörer med den här rollen får **skrivskyddade behörigheter** till alla funktioner på Microsoft Managed Desktop admin-portalen.         |
-|Intune tjänst administratör     |  Administratörer med den här rollen får **Läs-och Skriv behörighet** till alla funktioner på Microsoft Managed Desktop admin-portalen. **Ändra:** Det går inte att komma åt säkerhetsfunktionerna i Microsoft Managed Station ära datorer för september 2020-administratörer med den här rollen.       |
-|Support administratör för tjänsten     | Administratörer med den här rollen får **Läs-och Skriv behörighet** till alla funktioner på Microsoft Managed Desktop admin-portalen. **Ändra:** Det går inte att komma åt säkerhetsfunktionerna i Microsoft Managed Station ära datorer för september 2020-administratörer med den här rollen.         |
-|Säkerhets administratör | **(I förhands granskning 2020)** Administratörer med den här rollen får skrivskyddade behörigheter till alla funktioner och skriv behörigheter för säkerhetsrelaterade funktioner i Microsoft Managed Desktop i administrations portalen. |
-|Säkerhets läsare | **(I förhands granskning 2020)**  Administratörer med den här rollen får skrivskyddade behörigheter till alla funktioner på Microsoft Managed Desktop admin-portalen.|
+|Global administratör     | Administratörer med den här rollen får **Läs-och Skriv behörighet till alla funktioner** på Microsoft Managed Desktop admin-portalen.         |
+|Global läsare     | Administratörer med den här rollen får **skrivskyddade behörigheter till alla funktioner** på Microsoft Managed Desktop admin-portalen.         |
+|Intune tjänst administratör     |  Administratörer med den här rollen får **Läs-och Skriv behörighet till funktioner som inte är relaterade till säkerhet** på Microsoft Managed Desktop admin-portalen.       |
+|Support administratör för tjänsten     | Administratörer med den här rollen får **Läs-och Skriv behörighet till funktioner som inte är relaterade till säkerhet** på Microsoft Managed Desktop admin-portalen.         |
+|Säkerhets administratör | Administratörer med den här rollen får **skrivskyddade behörigheter till alla funktioner** och **Skriv behörigheter för säkerhetsrelaterade funktioner** i Microsoft Managed Desktop i administrations portalen. |
+|Säkerhets läsare |Administratörer med den här rollen får **skrivskyddade behörigheter till alla funktioner** på Microsoft Managed Desktop admin-portalen.|
 
 > [!IMPORTANT]
 > Endast den globala administratörs rollen har den behörighet som krävs för att *Registrera* din organisation på Microsoft Managed Desktop. Observera att Azure Active Directory-roller ger behörigheter för användar konton i en mängd olika Microsoft-tjänster. När du har slutfört registreringen med Microsoft Managed Desktop bör du alltid använda rollen med *minst* nödvändiga privilegier för att utföra dina andra uppgifter.
@@ -47,9 +47,9 @@ Alla roller nedan kan tilldelas för att ge olika åtkomst nivåer:
  
 |Anpassad roll  |Behörigheter för Microsoft Managed Desktop  |
 |---------|---------|
-|Administratör för Microsoft Managed Desktop service  | **(I förhands granskning 2020)** När den här rollen kopplas till en användare får administratören **läs & Skriv behörigheter till funktioner som inte är relaterade till säkerhet** på Microsoft Managed Desktop admin-portalen.  |
-|Tjänst läsare för Microsoft Managed Desktop | **(I förhands granskning 2020)** När den här rollen kopplas till en användare får administratören **Läs behörighet för funktioner som inte är relaterade till säkerhet** på Microsoft Managed Desktop admin-portalen. |
-|Säkerhets hanteraren i Microsoft Managed Desktop | **(I förhands granskning 2020)** När den här rollen tilldelats till en användare får administratören **läs & bara Skriv behörighet för säkerhetsrelaterade funktioner** på Microsoft-administrerad administratör.   |
+|Administratör för Microsoft Managed Desktop service  | När den här rollen tilldelats till en användare ger den administratören **behörighet att läsa och skriva för funktioner som inte är relaterade till säkerhet** på Microsoft Managed Desktop admin-portalen.  |
+|Tjänst läsare för Microsoft Managed Desktop | När den här rollen är tilldelad till en användare ger den administratören **skrivskyddade behörigheter till funktioner som inte är relaterade till säkerhet** på Microsoft Managed Desktop admin-portalen. |
+|Säkerhets hanteraren i Microsoft Managed Desktop |När den här rollen har tilldelats till en användare får du **bara administratörs behörigheterna läsa och skriva för säkerhetsrelaterade funktioner** på administrations portalen för Microsoft Managed Desktop.   |
 
 > [!NOTE]
 > Säkerhetsfunktioner innehåller Säkerhetsrelaterad kommunikation, hantering av säkerhets kontakter, hantering av säkerhetsrelaterade support förfrågningar och åtkomst till säkerhetsrelaterade rapporter. 
