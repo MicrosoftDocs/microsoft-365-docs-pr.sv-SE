@@ -3,7 +3,6 @@ title: Installations guider för Microsoft 365 och Office 365-tjänster
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/15/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,22 +21,22 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Snabb planering och konfiguration av Microsoft 365 eller Office 365 med installations guider.
-ms.openlocfilehash: 106a659dd75ae14d38c393a9547b84630e458337
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 67e24ae41806b4dc112387526177cb4bd84d0779
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357988"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384913"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Installations guider för Microsoft 365 och Office 365-tjänster
 
-Installations guider för Microsoft 365 och Office 365 ger administratörer anpassade råd och resurser för att distribuera appar och tjänster. De här guiderna skapas med hjälp av samma metod tips som FastTrack inbyggda specialister delar i enskilda interaktioner, och de är tillgängliga för alla administratörer i Microsoft 365 Admin Center. De ger information om produkt inställningar, aktiverar säkerhetsfunktioner, distribuerar samarbets verktyg och ger skript för att snabba på avancerade distributioner.
+Installations guider för Microsoft 365 och Office 365 ger dig skräddarsydda vägledningar och resurser för planering och distribution av klient organisation, appar och tjänster. De här guiderna skapas med hjälp av de bästa metoderna för att [Microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) -specialister delar i enskilda interaktioner, och de är tillgängliga för alla administratörer i administrations centret för Microsoft 365. De ger information om produkt inställningar, aktiverar säkerhetsfunktioner, distribuerar samarbets verktyg och ger skript för att snabba på avancerade distributioner.
 
 ## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>Komma åt inställnings guider i administrations centret för Microsoft 365
 
 Installations guiderna är tillgängliga från sidan [konfigurations vägledning](https://aka.ms/setupguidance) i administrations centret för Microsoft 365. Du kan hålla reda på statusen för dina framsteg och välja att återvända när som helst för att slutföra en guide. Så här når du sidan **konfigurations vägledning** :
 
-1. Gå till **Start** sidan i [administrations centret](https://admin.microsoft.com/).
+1. Gå till **Start** sidan i [administrations centret för Microsoft 365](https://admin.microsoft.com/).
 
 2. Hitta kortet **utbildning & stöd linjer** . 
 
@@ -52,11 +51,11 @@ Installations guiderna är tillgängliga från sidan [konfigurations vägledning
 
 ## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>Hur fungerar inställnings guider i administrations centret för Microsoft 365?
 
-Varje guide innehåller steg-för-steg-instruktioner, resurser, artiklar och när så behövs, skript som du kan använda för att göra konfigurations ändringar. De här guiderna innehåller alternativ som återspeglar de särskilda behoven hos både små och stora organisationer. Dessutom ingår hjälp för både nya och mer erfarna administratörer.
+Varje guide innehåller steg-för-steg-instruktioner, resurser, artiklar och när så behövs, skript som du kan använda för att göra konfigurations ändringar. De här guiderna innehåller alternativ som återspeglar de särskilda behoven hos både små och stora organisationer. Dessutom innehåller vägledningen hjälp för både nya och mer erfarna administratörer.
 
 ![Exempel på en installations guide](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
 
-Du kan använda guiderna för att lära dig mer om specifika funktioner i Microsoft 365 och Office 365 under planerings fasen eller senare efter en distribution för att ändra en inställning.
+Du kan använda guiderna för att lära dig mer om specifika funktioner i Microsoft 365 och Office 365 under planerings fasen, under distribution och utgivning eller för att gå tillbaka till dem när du har slutfört en distribution för att ändra en inställning.
 
 ## <a name="guides-for-initial-setup"></a>Stöd linjer för första installationen
 
@@ -74,7 +73,7 @@ När du migrerar en Gmail-användares post låda till Microsoft 365 migreras e-p
 
 ### <a name="microsoft-365-deployment-advisor"></a>Microsoft 365 Deployment Advisor
 
-[Microsoft 365 Deployment Advisor](https://aka.ms/microsoft365setupguide) ger kommersiella kunder vägledning när du konfigurerar produktivitets verktyg, säkerhets principer och funktioner för enhets hantering. Med en Microsoft 365 Business Premium-eller Microsoft 365 Enterprise-prenumeration kan du använda denna rådgivare för att konfigurera och konfigurera organisationens enheter. 
+Med [Microsoft 365 Deployment Advisor](https://aka.ms/microsoft365setupguide) får du vägledning när du konfigurerar produktivitets verktyg, säkerhets principer och funktioner för enhets hantering. Med ett Microsoft 365 Business Premium-eller Microsoft 365-abonnemang för företag kan du använda denna rådgivare för att konfigurera och konfigurera organisationens enheter. 
 
 Du får vägledning och åtkomst till resurser för att aktivera dina moln tjänster, uppdatera enheter till den senaste versionen av Windows 10 och ansluta enheter till Azure Active Directory (Azure AD), allt på en central plats.
 
@@ -83,7 +82,7 @@ Du får vägledning och åtkomst till resurser för att aktivera dina moln tjän
 
 [Konfigurations guiden för Fjärrjobb](https://aka.ms/remoteworksetup) ger organisationer med tips och resurser som behövs för att säkerställa att användarna kan arbeta på ett säkert sätt, att dina data är säkra och att användarnas autentiseringsuppgifter skyddas. 
 
-Du får vägledning för att optimera fjär arbets tagarnas enhets trafik till båda Microsoft 365-resurserna i molnet och organisationens nätverk, vilket minskar belastningen på din VPN-infrastruktur. 
+Du får vägledning för att optimera fjär arbets tagarnas enhets trafik till båda Microsoft 365-resurserna i molnet och organisationens nätverk, vilket minskar belastningen på din VPN-infrastruktur för fjärråtkomst. 
 
 ### <a name="windows-virtual-desktop-setup-guide"></a>Installations guide för virtuellt skriv bord i Windows
 
@@ -97,15 +96,19 @@ Windows Virtual Desktop är en omfattande tjänst för dator-och program virtual
 
 [Konfigurations guiden för Azure AD](https://aka.ms/aadpguidance) tillhandahåller information för att säkerställa att organisationen har en stark säkerhets bas. I den här guiden ska du konfigurera inledande funktioner, till exempel Azure Role-baserad åtkomst kontroll (Azure RBAC) för administratörer, Azure AD Connect för den lokala katalogen och Azure AD Connect-hälsa, så att du kan övervaka din hybrid identitets hälsa under automatiserade synkroniseringar. 
 
-Det inkluderar också viktig information om att aktivera standard lösen ords återställning, villkorlig åtkomst och integrerad inloggning från tredje part inklusive valfritt Avancerat skydd för ID och användar etablering.
+Det inkluderar också viktig information om att aktivera standard lösen ords återställning, villkorlig åtkomst och integrerad inloggning från tredje part, inklusive valfritt Avancerat identitets skydd och användar konfiguration.
 
 ### <a name="plan-your-passwordless-deployment"></a>Planera din lösenordsskyddade distribution
 
-Uppgradera till en alternativ inloggnings metod som gör att användare kan få åtkomst till deras enheter på ett säkert sätt med något av följande lösenordsskyddade autentiseringsmetoder: Windows Hello för företag, Microsoft Authenticator-appen eller säkerhets nycklar. 
+Uppgradera till en alternativ inloggnings metod som gör att användare kan komma åt sina enheter på ett säkert sätt med någon av följande lösenordsskyddade autentiseringsmetoder: 
+
+- Windows Hello för företag
+- Microsoft Authenticator-appen
+- Säkerhets nycklar 
 
 Använd [guiden planera lösenordsskyddad distribution](https://aka.ms/passwordlesssetup) för att upptäcka de bästa autentiseringsmetoderna för lösen ords hantering för att använda och få vägledning om hur du distribuerar dem. 
 
-### <a name="plan-your-self-service-password-reset-deployment"></a>Planera distribution av lösen ords återställning
+### <a name="plan-your-self-service-password-reset-sspr-deployment"></a>Planera distribution av självbetjänings återställning (SSPR)
 
 Ge användarna möjligheten att ändra lösen ord oberoende av varandra, om deras konto är låst, eller om de glömmer bort sitt lösen ord utan att behöva kontakta supportavdelningen. 
 
@@ -187,4 +190,3 @@ Använd [guiden distribuera Office to Remote Users](https://aka.ms/officeremotei
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>Distribuera och uppdatera Microsoft 365-appar med Configuration Manager
 
 För organisationer som använder Configuration Manager kan du använda [distribuera och uppdatera Microsoft 365-appar med Configuration Manager Advisor](https://aka.ms/oppinstall) för att skapa ett skript som automatiskt konfigurerar din distribution av Microsoft 365-appar med de bästa metoderna som rekommenderas av FastTrack-tekniker. Använd den här guiden för att skapa distributions grupper, anpassa dina Office-appar och-funktioner, konfigurera dynamiska installationer eller anläggningar och sedan köra skriptet för att skapa program, automatiska distributions regler och enhets samlingar som du behöver för att kunna använda din distribution. 
-

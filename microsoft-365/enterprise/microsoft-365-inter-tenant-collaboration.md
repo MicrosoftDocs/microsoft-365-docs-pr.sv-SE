@@ -3,7 +3,6 @@ title: Samarbete mellan klient organisationer i Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/21/2020
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -20,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: Lär dig hur Microsoft 365 samarbetar mellan klienter och organisationer och gör att olika organisationer kan samar beta på ett säkert sätt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8064543f771927f539d09e3136663bb0df56d5be
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.openlocfilehash: 00eacfc21d3223b5b9a1ad420cd5d1d85bf4ea8e
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214805"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384834"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Samarbete mellan klient organisationer i Microsoft 365
 
@@ -78,7 +77,7 @@ Alternativen för samarbete mellan olika innehavare för Microsoft 365 inkludera
 |Dela mål|Administrativ åtgärd|Instruktions information|
 |:-----|:-----|:-----|
 |Samar beta i Teams med användare utanför organisationen | En global administratör för att bjuda in Microsoft 365-klient organisationen måste aktivera externt samarbete i Teams. Globala administratörer och team ägare kommer nu att kunna bjuda in alla som har en e-postadress att samar beta i Teams.  <br/> Administratörer kan även hantera och redigera gäster som redan finns i innehavaren. |  <ul><li> [Auktorisera gäst åtkomst](https://docs.microsoft.com/microsoftteams/teams-dependencies) </li><li> [Aktivera och inaktivera gäst åtkomst i Teams](https://docs.microsoft.com/microsoftteams/set-up-guests) </li><li> [Använda PowerShell för att styra gäst åtkomst](https://docs.microsoft.com/microsoftteams/guest-access-powershell) </li><li> [Check lista för gäst åtkomst](https://docs.microsoft.com/microsoftteams/guest-access-checklist) </li><li> [Visa gäst användare](https://docs.microsoft.com/microsoftteams/view-guests) </li><li> [Redigera gäst användar information](https://docs.microsoft.com/microsoftteams/edit-guests-information) </li></ul> |
-|Team ägare kan bjuda in och hantera hur gäster samarbetar i sina team.  </li><li> |Team ägare har ytterligare kontroller för vad gästerna kan göra inom sina team. |  <ul><li> [Lägg till gäster](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [Lägga till en gäst i ett team](https://docs.microsoft.com/microsoftteams/add-guests) </li><li> [Hantera gäst åtkomst i Teams](https://docs.microsoft.com/microsoftteams/manage-guests) </li><li> [Se vem som är med i ett team eller i en kanal](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
+|Team ägare kan bjuda in och hantera hur gäster samarbetar i sina team.  |Team ägare har ytterligare kontroller för vad gästerna kan göra inom sina team. |  <ul><li> [Lägg till gäster](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [Lägga till en gäst i ett team](https://docs.microsoft.com/microsoftteams/add-guests) </li><li> [Hantera gäst åtkomst i Teams](https://docs.microsoft.com/microsoftteams/manage-guests) </li><li> [Se vem som är med i ett team eller i en kanal](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
 |Gäster från andra klient organisationer kan visa innehåll i Teams och samar beta med andra medlemmar | Ingen. | [Åtkomst upplevelsen](https://docs.microsoft.com/microsoftteams/guest-experience)| 
 
 ## <a name="power-bi-collaboration-options"></a>Samarbets alternativ för Power BI
@@ -93,18 +92,18 @@ Alternativen för samarbete mellan olika innehavare för Microsoft 365 inkludera
 
 Varje organisation har sina egna användar konton, identiteter, säkerhets grupper, prenumerationer, licenser och lagring. Personer använder samarbets funktionerna i Microsoft 365 tillsammans med delnings principer och säkerhets inställningar för att ge till gång till nödvändig information när du behåller kontroll över företagets till gångar.
   
-- **Användar konton:** Konton kan inte delas och konton kan inte dubbleras mellan klient organisationer eller partitioner i lokala Active Directory-katalogtjänster. 
+- **Användar konton:** Konton kan inte delas eller dubbleras mellan klient organisationer eller partitioner i den lokala Active Directory Domain Services. 
     
 - **Licenser &amp; prenumerationer 365:** licenser från licens planer (kallas även SKU: er eller Microsoft 365-abonnemang) ger användarna åtkomst till de Microsoft 365-tjänster som är definierade för dessa abonnemang. 
     
-- **Lagring:** I Microsoft 365-abonnemang hanteras program varu gränser och begränsningar för SharePoint Online oberoende av lagrings gränser för post lådor. Lagrings gränser för post lådor konfigureras och hanteras med Exchange Online. I båda scenarier kan lagrings utrymmet inte delas mellan klienter. 
+- **Lagring:** I Microsoft 365-licensavtalet hanteras program varu begränsningar och begränsningar för SharePoint Online separat från gränserna för lagrings utrymme. Lagrings gränser för post lådor konfigureras och hanteras med Exchange Online. I båda fallen kan lagring inte delas mellan innehavare. 
     
 ### <a name="can-we-share-domain-namespaces-across-microsoft-365-tenants"></a>Kan vi dela domän namn områden över Microsoft 365-klient organisationer?
 
-Nej. Alternativa-domäner, till exempel fabrikam.com eller tailspintoys.com, kan bara associeras och användas med en klient organisation för tillfället. Varje klient organisation måste ha ett eget namn område. UPN-, SMTP-och SIP-namnområden kan inte delas mellan innehavare.
+Nej. Organisationens domän namn, till exempel fabrikam.com eller tailspintoys.com, kan bara associeras och användas med en enda Microsoft 365-klient. Varje klient organisation måste ha ett eget namn område. UPN-, SMTP-och SIP-namnområden kan inte delas mellan innehavare.
   
 ### <a name="what-about-hybrid-components-and-microsoft-365-inter-tenant-collaboration"></a>Vad händer med hybrid komponenter och Microsoft 365 samarbete mellan innehavare?
 
 Lokala hybrid komponenter, till exempel en Exchange-organisation och Azure AD Connect, kan inte delas upp på flera klient organisationer.
-  
+ 
 

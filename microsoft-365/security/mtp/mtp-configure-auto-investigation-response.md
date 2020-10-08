@@ -7,19 +7,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 09/17/2020
+ms.date: 10/07/2020
 ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: M365-security-compliance.
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: f7bcfa4f08bee51408de33964f1dfd1e1db3bd33
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f904512f9fd07e2065f3d27a5bd5adc56a3565d5
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199751"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384792"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>Konfigurera automatisk granskning och svars funktioner i Microsoft Threat Protection
 
@@ -52,8 +52,6 @@ Efter att du har ställt in allt kan du [Granska de pågående och slutförda å
 
 Om automatiska utredningar körs och om reparations åtgärder vidtas automatiskt eller bara vid godkännande av dina enheter beror på vissa inställningar, till exempel organisationens enhets grup principer. Granska den automatiserings nivå som är inställd för dina enhets grup principer.
 
-### <a name="to-review-or-change-your-device-group-policies"></a>Granska eller ändra dina grup principer för enheter
-
 1. Gå till Microsoft Defender säkerhets Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) och logga in.
 
 2. Gå till **Inställningar**för  >  **behörighets**  >  **enheter**. 
@@ -69,8 +67,6 @@ Om automatiska utredningar körs och om reparations åtgärder vidtas automatisk
 Microsoft tillhandahåller inbyggda [aviserings principer](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) som hjälper dig att identifiera vissa risker. Dessa risker inkluderar behörigheter för Exchange-administratörer missbruk, skadlig program vara, potentiella externa och interna hot samt informations styrnings risker. Vissa larm kan utlösa [Automatisk undersökning och svar i Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). Kontrol lera att dina Office 365-funktioner för [Avancerat skydd](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) är korrekt konfigurerade.
 
 Även om vissa larm och säkerhets principer kan utlösa automatiska utredningar vidtas inga reparations åtgärder automatiskt för e-post och innehåll. I stället väntar alla reparations åtgärder för e-post-och e-postinnehåll godkännande av din säkerhets åtgärds team i [Åtgärds centret](mtp-action-center.md).
-
-### <a name="to-view-or-change-your-security-and-alert-policies-in-office-365"></a>Så här visar eller ändrar du säkerhets-och aviserings principer i Office 365
 
 Säkerhets inställningar i Office 365 hjälper till att skydda e-post och innehåll. Om du vill visa eller ändra de här inställningarna följer du anvisningarna för att [skydda mot hot](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
 
@@ -88,13 +84,15 @@ Säkerhets inställningar i Office 365 hjälper till att skydda e-post och inneh
 
 5. Kontrol lera att [Rensa automatiskt för e-](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#zero-hour-auto-purge-for-email-in-eop) postskydd är aktivt. 
 
-8. (Det här är valfritt) Granska [aviserings principerna för Office 365](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) i Microsoft 365 Compliance Center ( [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) ). Flera standard aviserings principer är i kategorin Threat Management. Vissa av dessa aviseringar kan utlösa automatisk undersökning och svar. Mer information finns i avsnittet [standard larm principer](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?#default-alert-policies).
+8. (Det här är valfritt.) Granska [aviserings principerna för Office 365](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) i Microsoft 365 Compliance Center ( [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) ). Flera standard aviserings principer är i kategorin Threat Management. Vissa av dessa aviseringar kan utlösa automatisk undersökning och svar. Mer information finns i avsnittet [standard larm principer](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?#default-alert-policies).
  
 ## <a name="make-sure-microsoft-threat-protection-is-turned-on"></a>Kontrol lera att Microsoft Threat Protection är aktiverat
 
 1. Gå till Microsoft 365 säkerhets Center ( [https://security.microsoft.com](https://security.microsoft.com) ) och logga in.
 
-2. Leta efter **händelser**, **Åtgärds Center**och **jakt**i navigerings fönstret, som visas i följande bild:<br/> :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP den":::
+2. Leta efter **händelser**, **Åtgärds Center**och **jakt**i navigerings fönstret, som visas i följande bild:
+
+   :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP den":::
 
    - Om du ser **problem**, **Åtgärds Center**och **jakt**är Microsoft Threat Protection aktiverat. Gå vidare till nästa procedur, [Granska eller ändra automatiserings nivån för enhets grupper](#review-or-change-the-automation-level-for-device-groups).
 
