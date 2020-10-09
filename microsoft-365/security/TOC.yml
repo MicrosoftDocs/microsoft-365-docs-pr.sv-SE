@@ -9,20 +9,20 @@
         - name: Microsoft 365-säkerhet för beslutsfattare
           href: Microsoft-365-security-for-bdm.md
     - name: Konfigurationer av identiteter och enhetsåtkomst
-      href: ../enterprise/microsoft-365-policies-configurations.md
+      href: ./office-365-security/microsoft-365-policies-configurations.md
       items:
         - name: Nödvändigt förarbete
-          href: ../enterprise/identity-access-prerequisites.md
+          href: ./office-365-security/identity-access-prerequisites.md
         - name: Vanliga principer för identitets- och enhetsåtkomst
-          href: ../enterprise/identity-access-policies.md
+          href: ./office-365-security/identity-access-policies.md
         - name: Principer för gästanvändare och externa användare
-          href: ../enterprise/identity-access-policies-guest-access.md
+          href: ./office-365-security/identity-access-policies-guest-access.md
         - name: Rekommenderade åtkomstprinciper för Teams
-          href: ../enterprise/teams-access-policies.md
+          href: ./office-365-security/teams-access-policies.md
         - name: Rekommenderade åtkomstprinciper för Exchange Online
-          href: ../enterprise/secure-email-recommended-policies.md
+          href: ./office-365-security/secure-email-recommended-policies.md
         - name: Rekommenderade åtkomstprinciper för SharePoint Online
-          href: ../enterprise/sharepoint-file-access-policies.md
+          href: ./office-365-security/sharepoint-file-access-policies.md
     - name: Microsoft Secure Score
       items:
         - name: Översikt över Secure Score
@@ -422,6 +422,8 @@
               href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
             - name: Skapa gruppwebbplatser i en utvecklings-/testmiljö för en politisk kampanj
               href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
+            - name: Användartaggar i Office 365 ATP
+              href: ./office-365-security/user-tags.md
             - name: S/MIME
               href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
               items:
