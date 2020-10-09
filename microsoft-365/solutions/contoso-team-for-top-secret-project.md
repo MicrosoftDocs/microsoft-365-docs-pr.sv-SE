@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Sammanfattning: hur contoso använde ett team med säkerhets isolering för ett Top Secret för att utveckla en ny serie produkter och tjänster.'
-ms.openlocfilehash: ba9a66d2419e81aeb1eac026b16c0475ac6d0614
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 16d10f5d6e5b5939172c02746c9324eb20b6987e
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778604"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399495"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Isolerat team för ett hemligt projekt av Contoso Corporation
 
@@ -40,7 +40,7 @@ Contoso IT-personal använde ett [team med säkerhets isolering](secure-teams-se
 
 ## <a name="step-1-created-a-private-team"></a>Steg 1: skapa ett privat team
 
-För att skydda åtkomsten till den underliggande SharePoint-webbplatsen för gruppen är det bara att contoso IT-administratörer konfigurerade de [rekommenderade åtkomst principerna för SharePoint](../enterprise/sharepoint-file-access-policies.md).
+För att skydda åtkomsten till den underliggande SharePoint-webbplatsen för gruppen är det bara att contoso IT-administratörer konfigurerade de [rekommenderade åtkomst principerna för SharePoint](../security/office-365-security/sharepoint-file-access-policies.md).
 
 Sedan skapar en Contoso-administratör en ny privat grupp med Project 2X och La till användar kontona i Project 2X-personal som medlemmar. De har även konfigurerat gruppen så att bara Project 2X team-ägarna kan skapa privata kanaler.
 
@@ -51,7 +51,7 @@ Mer information finns i [skapa ett privat team](secure-teams-security-isolation.
 Contoso-administratörer har skapat en ny känslighets etikett med namnet **Project 2x** som:
 
 - Aktive rad kryptering.
-- Behörigheter för samtidig redigering för Project 2X Microsoft 365-gruppen.
+- Tillåtna Co-Author behörigheter för Project 2X Microsoft 365-gruppen.
 - Tillåtna visnings behörigheter för gruppen chef.
 - Blockerad åtkomst till ohanterade enheter.
 
@@ -64,7 +64,7 @@ Information om konfiguration finns i [skapa en känslighets etikett](secure-team
 
 ## <a name="step-3-configured-the-underlying-sharepoint-site"></a>Steg 3: Konfigurera den underliggande SharePoint-webbplatsen
 
-För att skydda åtkomsten till den underliggande SharePoint-webbplatsen för gruppen är det bara att contoso IT-administratörer konfigurerade de [rekommenderade åtkomst principerna för SharePoint](../enterprise/sharepoint-file-access-policies.md).
+För att skydda åtkomsten till den underliggande SharePoint-webbplatsen för gruppen är det bara att contoso IT-administratörer konfigurerade de [rekommenderade åtkomst principerna för SharePoint](../security/office-365-security/sharepoint-file-access-policies.md).
 
 Sedan har de konfigurerat ytterligare behörighets inställningar för webbplatsen:
 

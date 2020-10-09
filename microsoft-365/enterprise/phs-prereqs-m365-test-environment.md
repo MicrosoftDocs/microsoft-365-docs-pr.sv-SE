@@ -15,20 +15,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Skapa en Microsoft 365-miljö för att testa identitets- och enhetsåtkomst med kraven för autentisering av synkronisering av lösenordshash.
-ms.openlocfilehash: 6aa6b1cd1b8f9459b27e46fa67c62b35014b2d7e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 63f433d5297139fcc7f6eb8bd5383a6593c29388
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686256"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399449"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Krav för identitets- och enhetsåtkomst för synkronisering av lösenordshash i din Microsoft 365-testmiljö
 
 *Den här test laboratorie guiden kan endast användas för test miljöer med Microsoft 365 för företags nätverk.*
 
-[Konfigurationer för identitets-och enhets åtkomst](microsoft-365-policies-configurations.md) är en uppsättning konfigurationer och villkorsstyrda åtkomst principer för att skydda åtkomst till alla tjänster i Microsoft 365 för företag som är integrerade med Azure Active Directory (Azure AD).
+[Konfigurationer för identitets-och enhets åtkomst](../security/office-365-security/microsoft-365-policies-configurations.md) är en uppsättning konfigurationer och villkorsstyrda åtkomst principer för att skydda åtkomst till alla tjänster i Microsoft 365 för företag som är integrerade med Azure Active Directory (Azure AD).
 
-I den här artikeln beskrivs hur du kan konfigurera en Microsoft 365-testmiljö som uppfyller kraven för [konfiguration av Active Directory med förutsättningar för synkronisering av lösenordshash](identity-access-prerequisites.md#prerequisites) för identitets- och enhetsåtkomst.
+I den här artikeln beskrivs hur du kan konfigurera en Microsoft 365-testmiljö som uppfyller kraven för [konfiguration av Active Directory med förutsättningar för synkronisering av lösenordshash](../security/office-365-security/identity-access-prerequisites.md#prerequisites) för identitets- och enhetsåtkomst.
 
 Konfigurationen av testmiljön består av åtta faser:
 
@@ -110,7 +110,7 @@ För Skype för företag – Online:
   Get-CsOAuthConfiguration
   ```
 
-Resultatet är en testmiljö som uppfyller kraven för [konfiguration av Active Directory med förutsättningar för synkronisering av lösenordshash](identity-access-prerequisites.md#prerequisites) för identitets- och enhetsåtkomst. 
+Resultatet är en testmiljö som uppfyller kraven för [konfiguration av Active Directory med förutsättningar för synkronisering av lösenordshash](../security/office-365-security/identity-access-prerequisites.md#prerequisites) för identitets- och enhetsåtkomst. 
 
 ## <a name="next-step"></a>Nästa steg
 

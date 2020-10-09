@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Hur Contoso använder säkerhetsfunktionerna i Microsoft 365 för företag.
-ms.openlocfilehash: 2244f13f8e8f56edbadd40d1e85cb309d70f7744
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fbbf8dfc1de831c2ef949b71f1cbdf4e97a02baa
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686446"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399483"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Sammanfattning av Microsoft 365 för företags säkerhet för Contoso Corporation
 
@@ -73,7 +73,7 @@ I enlighet med säkerhets rekommendationerna och Microsoft 365 för företags di
 
 - Säkrare åtkomst till enheter och program med principer för villkorsstyrd åtkomst
 
-  Contoso använder [principer för villkorsstyrd åtkomst](microsoft-365-policies-configurations.md) för identiteter, enheter, Exchange Online och SharePoint. Principer för villkorsstyrd åtkomst för identiteter omfattar krav på lösenordsändringar för högriskanvändare och appblockering i klienter så att det bara går att använda appar som stöder modern autentisering. Enhetsprinciperna omfattar definiering av godkända appar och krav på kompatibla datorer och mobila enheter. Principer för villkorsstyrd åtkomst för Exchange Online omfattar blockering av ActiveSync-klienter och konfiguration av meddelandekryptering i Office 365. Principer för villkorsstyrd åtkomst för SharePoint omfattar ytterligare skydd för känsliga och strikt reglerade webbplatser.
+  Contoso använder [principer för villkorsstyrd åtkomst](../security/office-365-security/microsoft-365-policies-configurations.md) för identiteter, enheter, Exchange Online och SharePoint. Principer för villkorsstyrd åtkomst för identiteter omfattar krav på lösenordsändringar för högriskanvändare och appblockering i klienter så att det bara går att använda appar som stöder modern autentisering. Enhetsprinciperna omfattar definiering av godkända appar och krav på kompatibla datorer och mobila enheter. Principer för villkorsstyrd åtkomst för Exchange Online omfattar blockering av ActiveSync-klienter och konfiguration av meddelandekryptering i Office 365. Principer för villkorsstyrd åtkomst för SharePoint omfattar ytterligare skydd för känsliga och strikt reglerade webbplatser.
 
 - Windows Hello för företag
 

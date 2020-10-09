@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Gör det möjligt för användarna att vara produktiva med Teams, Exchange, SharePoint och andra Microsoft 365-tjänster.
-ms.openlocfilehash: a001bb748a9b6e0431c75c0a23637fd47e460a6e
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: a873c003537b98d10db5fc8a660b9d15ac0bcc23
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377623"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399307"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>Steg 5: Distribuera produktivitetsappar och tjänster för distansarbetare
 
@@ -66,7 +66,7 @@ Med appar och arbetsflöden blir distansarbetarna mer produktiva i Teams, genom 
 
 Med Outlook kan distansarbetare vara anslutna och organiserade med e-post, kalendrar, kontakter, uppgifter med mera, tillsammans på ett och samma ställe. Outlook hjälper dig att hålla reda på din dag baserat på vad som är relevant för dig. Med Outlook kan du dela bifogade filer direkt från OneDrive, planera och delta i Teams-möten, visa och dela kalendrar samt ge behörigheter till andra. Att veta vad som kommer härnäst för både arbete och personliga åtaganden och vad som behöver uppmärksamhet kan hjälpa distansarbetare att fokusera på vad som är viktigt. Outlook ger användbara sätt för hur distansarbetare kan hantera sin tid och enkelt hitta vad de behöver, inklusive filer, personer i organisationen och mer. 
 
-Se [den här artikeln](../enterprise/secure-email-recommended-policies.md) om du vill ha rekommenderad identitets- och enhetsåtkomst för att skydda organisationens e-post och e-postklienter som stöder modern autentisering och villkorlig åtkomst.
+Se [den här artikeln](../security/office-365-security/secure-email-recommended-policies.md) om du vill ha rekommenderad identitets- och enhetsåtkomst för att skydda organisationens e-post och e-postklienter som stöder modern autentisering och villkorlig åtkomst.
 
 ## <a name="store-and-collaborate-on-files-with-sharepoint-and-onedrive"></a>Lagra och samarbeta i filer med SharePoint och OneDrive
 
@@ -79,7 +79,7 @@ Du kan behöva migrera dina dokument till SharePoint eller OneDrive från:
 - [Filresurser](https://docs.microsoft.com/sharepointmigration/fileshare-to-odsp-migration-guide)
 - [Ruta](https://docs.microsoft.com/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
 
-Se [den här artikeln](../enterprise/sharepoint-file-access-policies.md) om du vill ha de rekommenderade principerna för identitets- och enhetsåtkomst för att skydda SharePoint och OneDrive.
+Se [den här artikeln](../security/office-365-security/sharepoint-file-access-policies.md) om du vill ha de rekommenderade principerna för identitets- och enhetsåtkomst för att skydda SharePoint och OneDrive.
 
 ## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>Skapa och samarbeta med innehåll med Microsoft 365-appar
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: ''
 description: Kräva att dina användare loggar in säkert med multifaktorautentisering (MFA) och andra funktioner.
-ms.openlocfilehash: f2302a6affa64db221916108003225f835799d5b
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 64b873a243d0ce86ee3700d5150076f88031a483
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357824"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399141"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Säkra användarinloggningar till din Microsoft 365-klient
 
@@ -62,7 +62,7 @@ Det finns tre sätt att kräva att dina administratörer eller användare använ
 |---------|---------|
 |Alla Microsoft 365-abonnemang (utan Azure Active Directory Premium P1- eller P2-licenser)     |[Aktivera standardinställningar för säkerhet i Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Standardinställningar för säkerhet i Azure AD inkluderar MFA för användare och administratörer.   |
 |Microsoft 365 E3 (inkluderar Azure Active Directory Premium P1-licenser)     | Använd [vanliga principer för villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) för att konfigurera följande principer: <br>- [Kräv MFA för administratörer](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Kräv MFA för alla användare](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Blockera äldre autentisering](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (inkluderar Azure Active Directory Premium P2-licenser)     | Dra nytta av Azure AD Identity Protection och börja implementera Microsofts [rekommenderade uppsättning av villkorsstyrd åtkomst och relaterade principer](../enterprise/identity-access-policies.md) genom att skapa de två principerna:<br> - [Kräv MFA när inloggningsrisker är medel eller hög](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Användare med hög risk måste byta lösenord](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 E5 (inkluderar Azure Active Directory Premium P2-licenser)     | Dra nytta av Azure AD Identity Protection och börja implementera Microsofts [rekommenderade uppsättning av villkorsstyrd åtkomst och relaterade principer](../security/office-365-security/identity-access-policies.md) genom att skapa de två principerna:<br> - [Kräv MFA när inloggningsrisker är medel eller hög](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Användare med hög risk måste byta lösenord](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ### <a name="security-defaults"></a>Standardinställningar för säkerhet
@@ -122,7 +122,7 @@ Policyer för identitets- och enhetsåtkomst definieras för att användas i tre
 
 Dessa nivåer och deras motsvarande konfigurationer ger konsekventa skyddsnivåer för dina data, identiteter och enheter.
 
-Microsoft rekommenderar starkt att du konfigurerar och rullar ut policyer för identitets- och enhetsåtkomst i din organisation, inklusive specifika inställningar för Microsoft Teams, Exchange Online och SharePoint. Mer information finns i konfigurationer för [identitets- och enhetsåtkomst](microsoft-365-policies-configurations.md).
+Microsoft rekommenderar starkt att du konfigurerar och rullar ut policyer för identitets- och enhetsåtkomst i din organisation, inklusive specifika inställningar för Microsoft Teams, Exchange Online och SharePoint. Mer information finns i konfigurationer för [identitets- och enhetsåtkomst](../security/office-365-security/microsoft-365-policies-configurations.md).
 
 ## <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
@@ -147,7 +147,7 @@ Se [stegen för att aktivera Azure AD Identity Protection](https://docs.microsof
 - [Identitets översikt för Microsoft 365](identity-roadmap-microsoft-365.md)
 - [Azure Academy Azure AD-utbildningsvideor](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 - [Tillämpa registreringspolicy för Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
-- [Konfigurationer för identitets- och enhetsåtkomst](microsoft-365-policies-configurations.md)
+- [Konfigurationer för identitets- och enhetsåtkomst](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 ## <a name="next-step"></a>Nästa steg
 

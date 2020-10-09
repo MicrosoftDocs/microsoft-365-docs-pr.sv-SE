@@ -16,12 +16,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: ''
 description: Översikt till identitet för Microsoft 365.
-ms.openlocfilehash: 82c2adc753a3446b9ca4f070d8655f526465de55
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 4daf673a35505652bdb8105f304dde8166512660
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357836"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398777"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Identitets översikt för Microsoft 365
 
@@ -60,10 +60,10 @@ Så här distribuerar du din identitets implementering:
 
 ### <a name="identity-and-device-access-recommendations"></a>Rekommendationer för identitets- och enhetsåtkomst
 
-Microsoft tillhandahåller en uppsättning rekommendationer för [åtkomst till identiteter och enheter](microsoft-365-policies-configurations.md)för att säkerställa en säker och produktiv arbets styrka. Använd rekommendationer och inställningar i de här artiklarna för identitet:
+Microsoft tillhandahåller en uppsättning rekommendationer för [åtkomst till identiteter och enheter](../security/office-365-security/microsoft-365-policies-configurations.md)för att säkerställa en säker och produktiv arbets styrka. Använd rekommendationer och inställningar i de här artiklarna för identitet:
 
-- [Krav](identity-access-prerequisites.md)
-- [Vanliga principer för identitets- och enhetsåtkomst](identity-access-policies.md)
+- [Krav](../security/office-365-security/identity-access-prerequisites.md)
+- [Vanliga principer för identitets- och enhetsåtkomst](../security/office-365-security/identity-access-policies.md)
 
 ## <a name="manage"></a>Hantera
 

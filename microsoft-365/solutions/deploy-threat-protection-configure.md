@@ -14,12 +14,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: c6e973e05f9a73736410c9bfedfa2ef73bb583ce
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 5183e6f60d825ff523db4da165d16752b3aa3cc8
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377407"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399355"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Konfigurera hot Protection-funktioner i Microsoft 365
 
@@ -40,13 +40,13 @@ Microsoft har testat och rekommenderar en specifik uppsättning villkors åtkoms
 
 ![Process för distribution av original plan för skydd](../media/solutions-architecture-center/deploy-threat-protection-identity-access-steps.png) 
 
-1. [Konfigurera förutsättningar, inklusive Azure Identity Protection](../enterprise/identity-access-prerequisites.md).
-2. [Konfigurera vanliga principer för identitets-och enhets åtkomst](../enterprise/identity-access-policies.md) för baseline-skyddet.
-3. Konfigurera principer för [gäst användare](../enterprise/identity-access-policies-guest-access.md), [Microsoft Teams](../enterprise/teams-access-policies.md), [Exchange Online](../enterprise/secure-email-recommended-policies.md)och [SharePoint Online och OneDrive](../enterprise/sharepoint-file-access-policies.md).
+1. [Konfigurera förutsättningar, inklusive Azure Identity Protection](../security/office-365-security/identity-access-prerequisites.md).
+2. [Konfigurera vanliga principer för identitets-och enhets åtkomst](../security/office-365-security/identity-access-policies.md) för baseline-skyddet.
+3. Konfigurera principer för [gäst användare](../security/office-365-security/identity-access-policies-guest-access.md), [Microsoft Teams](../security/office-365-security/teams-access-policies.md), [Exchange Online](../security/office-365-security/secure-email-recommended-policies.md)och [SharePoint Online och OneDrive](../security/office-365-security/sharepoint-file-access-policies.md).
 
 ### <a name="more-information-about-protecting-identities"></a>Mer information om hur du skyddar identiteter
 
-- [Konfigurationer för identitets- och enhetsåtkomst](../enterprise/microsoft-365-policies-configurations.md)
+- [Konfigurationer för identitets- och enhetsåtkomst](../security/office-365-security/microsoft-365-policies-configurations.md)
 - [Säkerhets vägledning för Azure MFA](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)
 
 ## <a name="step-2-configure-azure-advanced-threat-protection"></a>Steg 2: Konfigurera Avancerat skydd för Azure

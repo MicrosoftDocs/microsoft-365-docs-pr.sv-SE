@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du skapar ett team med en unik känslighetsetikett för säkerhet.
-ms.openlocfilehash: 544f62e4765388f90874c15504e6656820111ed4
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: fdebfcbfa4aad68f381db4ffb8c9b83a5100187c
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326501"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398721"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Konfigurera en team med säkerhetsisolering
 
@@ -51,8 +51,8 @@ Du kan också ladda ner den här affischen i [PDF](https://github.com/MicrosoftD
 ## <a name="initial-protections"></a>Initiala skydd
 
 Läs följande metodtips för att skydda åtkomst till teamet och dess underliggande SharePoint-webbplats:
-- [Principer för identitets- och enhetsåtkomst](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-policies)
-- [Åtkomstprinciper för SharePoint Online](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies).
+- [Principer för identitets- och enhetsåtkomst](../security/office-365-security/identity-access-policies.md)
+- [Åtkomstprinciper för SharePoint Online](../security/office-365-security/sharepoint-file-access-policies.md).
 - [Distribuera teams med grundläggande skydd](configure-teams-baseline-protection.md)
 
 ## <a name="guest-sharing"></a>Gästdelning

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Skydda dina företags meddelanden och data från cyberterrorism hot, inklusive utpressnings tro Jan, nätfiske och illvilliga filer.
-ms.openlocfilehash: 754f3eac884128e0707a02c15d4d3766f5fa4ca5
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c72090bebe92ea61d99772eccde041d011c05580
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327801"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398653"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>De 12 främsta aktiviteterna för säkerhets team för att stödja arbete hemifrån
 
@@ -72,7 +72,7 @@ Det tar bara några minuter att tillämpa dessa principer, men var för beredda 
 |---|---|
 |Microsoft 365-abonnemang (utan Azure AD P1 eller P2)|[Aktivera standardinställningar för säkerhet i Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Standardinställningar för säkerhet i Azure AD inkluderar MFA för användare och administratörer.|
 |Microsoft 365 E3 (med Azure AD P1)|Använd [vanliga principer för villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) för att konfigurera följande principer: <br/>- [Kräv MFA för administratörer](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [Kräv MFA för alla användare](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [Blockera äldre autentisering](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
-|Microsoft 365 E5 (med Azure AD P2)|Dra nytta av Azure AD Identity Protection och börja implementera Microsofts [rekommenderade uppsättning av villkorsstyrd åtkomst och relaterade principer](../enterprise/identity-access-policies.md) genom att skapa de två principerna:<br/> - [Kräv MFA när inloggningsrisker är medel eller hög](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [Blockera klienter som inte har stöd för modern autentisering](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br/>- [Användare med hög risk måste byta lösenord](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)|
+|Microsoft 365 E5 (med Azure AD P2)|Dra nytta av Azure AD Identity Protection och börja implementera Microsofts [rekommenderade uppsättning av villkorsstyrd åtkomst och relaterade principer](./office-365-security/identity-access-policies.md) genom att skapa de två principerna:<br/> - [Kräv MFA när inloggningsrisker är medel eller hög](./office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [Blockera klienter som inte har stöd för modern autentisering](./office-365-security/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br/>- [Användare med hög risk måste byta lösenord](./office-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
 |
 
 ## <a name="2-protect-against-threats"></a>2: skydda mot hot
@@ -139,10 +139,10 @@ Skydds principer för appar innehåller många inställningar. Du behöver inte 
 
 Ännu bättre, Microsoft samordnar detta program skydds ramverk med en uppsättning villkorsstyrd åtkomst och relaterade principer vi rekommenderar att alla organisationer använder sig av en utgångs punkt. Om du har implementerat MFA med hjälp av vägledningen i den här artikeln är det alldeles halva!
 
-Konfigurera mobilappen genom att använda vägledning i [vanliga principer för identitets-och enhets åtkomst](../enterprise/identity-access-policies.md):
+Konfigurera mobilappen genom att använda vägledning i [vanliga principer för identitets-och enhets åtkomst](./office-365-security/identity-access-policies.md):
 
- 1. Använd vägledning för användning av [data skydds principer](../enterprise/identity-access-policies.md#apply-app-data-protection-policies) för att skapa principer för iOS och Android. Nivå 2 (förbättrat data skydd) rekommenderas för baseline-skydd.
- 2. Skapa en regel för villkorsstyrd åtkomst för att [kräva godkända appar och program skydd](../enterprise/identity-access-policies.md#require-approved-apps-and-app-protection).
+ 1. Använd vägledning för användning av [data skydds principer](./office-365-security/identity-access-policies.md#apply-app-data-protection-policies) för att skapa principer för iOS och Android. Nivå 2 (förbättrat data skydd) rekommenderas för baseline-skydd.
+ 2. Skapa en regel för villkorsstyrd åtkomst för att [kräva godkända appar och program skydd](./office-365-security/identity-access-policies.md#require-approved-apps-and-app-protection).
 
 ## <a name="7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection"></a>7: Konfigurera MFA och villkorlig åtkomst för gäster, inklusive paket för NAP-mobilappen
 
@@ -153,7 +153,7 @@ Om du använder Microsoft 365 E5-abonnemanget och du utnyttjar Azure Identity Pr
 - Skapa en ny regel för villkorsstyrd åtkomst för att kräva MFA alltid för gäster och externa användare.
 - Uppdatera den riskfyllda regeln för villkorsstyrd åtkomst för MFA för att exkludera gäster och externa användare.
 
-Använd vägledningen i [Uppdatera vanliga principer för att tillåta och skydda gäst och extern åtkomst](../enterprise/identity-access-policies-guest-access.md) för att förstå hur gäst åtkomst fungerar med Azure AD och för att uppdatera de påverkade principerna.
+Använd vägledningen i [Uppdatera vanliga principer för att tillåta och skydda gäst och extern åtkomst](./office-365-security/identity-access-policies-guest-access.md) för att förstå hur gäst åtkomst fungerar med Azure AD och för att uppdatera de påverkade principerna.
 
 De program skydds principer för Intune som du skapade, tillsammans med regeln för villkorsstyrd åtkomst för att kräva godkända appar och program skydd, gäller för gäst konton och skyddar organisationens data.
 
@@ -171,12 +171,12 @@ Du kan också utnyttja dessa själv studie kurser:
 - [Använda autopilot för att registrera Windows-enheter i Intune](https://docs.microsoft.com/mem/intune/enrollment/tutorial-use-autopilot-enroll-devices)
 - [Använda Apple-funktioner för företags enheter i Apple Business Manager (ABM) för att registrera iOS/iPad-enheter i Intune](https://docs.microsoft.com/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
-När du har registrerat enheter kan du använda vägledningen i [vanliga principer för identitets-och enhets åtkomst](../enterprise/identity-access-policies.md) för att skapa dessa principer:
+När du har registrerat enheter kan du använda vägledningen i [vanliga principer för identitets-och enhets åtkomst](./office-365-security/identity-access-policies.md) för att skapa dessa principer:
 
-- [Definiera principer för enhets efterlevnad](../enterprise/identity-access-policies.md#define-device-compliance-policies) – de rekommenderade inställningarna för Windows 10 inkluderar krav på Antivirus skydd. Om du har Microsoft 365 E5 kan du använda Microsoft Defender Avancerat skydd för att övervaka människors enheters hälsa. Kontrol lera att efterlevnadsprinciper för andra operativ system inkluderar skydd mot virus skydd och program vara för slut punkter.
-- [Kräv kompatibla datorer](../enterprise/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) – det här är regeln för villkorsstyrd åtkomst i Azure AD som tillämpar principer för efterlevnadsprinciper.
+- [Definiera principer för enhets efterlevnad](./office-365-security/identity-access-policies.md#define-device-compliance-policies) – de rekommenderade inställningarna för Windows 10 inkluderar krav på Antivirus skydd. Om du har Microsoft 365 E5 kan du använda Microsoft Defender Avancerat skydd för att övervaka människors enheters hälsa. Kontrol lera att efterlevnadsprinciper för andra operativ system inkluderar skydd mot virus skydd och program vara för slut punkter.
+- [Kräv kompatibla datorer](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) – det här är regeln för villkorsstyrd åtkomst i Azure AD som tillämpar principer för efterlevnadsprinciper.
 
-Endast en organisation kan hantera en enhet, så se till att exkludera gäst konton från regeln för villkorsstyrd åtkomst i Azure AD. Om du inte utesluter gäst-och externa användare från principer som kräver att enheter efterlevs blockerar dessa användare. Mer information finns i [Uppdatera gemensamma principer för att tillåta och skydda gäst och extern åtkomst](../enterprise/identity-access-policies-guest-access.md).
+Endast en organisation kan hantera en enhet, så se till att exkludera gäst konton från regeln för villkorsstyrd åtkomst i Azure AD. Om du inte utesluter gäst-och externa användare från principer som kräver att enheter efterlevs blockerar dessa användare. Mer information finns i [Uppdatera gemensamma principer för att tillåta och skydda gäst och extern åtkomst](./office-365-security/identity-access-policies-guest-access.md).
 
 ## <a name="9-optimize-your-network-for-cloud-connectivity"></a>9: optimera nätverket för moln anslutningar
 

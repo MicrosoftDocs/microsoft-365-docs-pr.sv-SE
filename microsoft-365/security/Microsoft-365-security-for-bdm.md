@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: de vanligaste hot-och attack scenarierna för organisationer för sina Microsoft 365-miljöer och rekommenderade åtgärder för att minska riskerna.
-ms.openlocfilehash: 2f7de328edbd0220e5627612430fca24641ace11
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 4181feeed97313ec1e8d916df994cc880cbffdf1
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47548004"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399461"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365-säkerhet för företags besluts fattare (BDMs)
 
@@ -68,7 +68,7 @@ Kända hot inkluderar skadlig kod, kompromissade konton och nätfiske. Vissa sky
 
 |Rekommendation  |E3  |E5  |
 |---------|---------|---------|
-|**Ställ in multifaktorautentisering och Använd rekommenderade principer för villkorsstyrd åtkomst, inklusive principer för inloggnings risker**. Microsoft rekommenderar och har testat en uppsättning principer som samarbetar för att skydda alla molnappar, inklusive Office 365 och Microsoft 365 Services. Se [konfigurationer för identitets-och enhets åtkomst](../enterprise/microsoft-365-policies-configurations.md). | |![grön bock markering](../media/green-check-mark.png)|
+|**Ställ in multifaktorautentisering och Använd rekommenderade principer för villkorsstyrd åtkomst, inklusive principer för inloggnings risker**. Microsoft rekommenderar och har testat en uppsättning principer som samarbetar för att skydda alla molnappar, inklusive Office 365 och Microsoft 365 Services. Se [konfigurationer för identitets-och enhets åtkomst](./office-365-security/microsoft-365-policies-configurations.md). | |![grön bock markering](../media/green-check-mark.png)|
 |**Kräv multifaktorautentisering för alla användare**. Om du inte har den licens som krävs för att implementera rekommenderade principer för villkorsstyrd åtkomst, måste minst multifaktorautentisering användas för alla användare.|![grön bock markering](../media/green-check-mark.png)|![grön bock markering](../media/green-check-mark.png)|
 |**Höj skyddet mot skadlig program vara i e-post**. Din Office 365-eller Microsoft 365-miljö inkluderar skydd mot skadlig program vara, men du kan öka detta genom att blockera bifogade filer med filtyper som ofta används för skadlig program vara.|![grön bock markering](../media/green-check-mark.png)|![grön bock markering](../media/green-check-mark.png)|
 |**Skydda din e-post från riktade nät fiske attacker**. Om du har konfigurerat en eller flera egna domäner för Office 365 eller Microsoft 365-miljön kan du konfigurera riktat mot nätfiske-skydd. ATP-skydd mot nätfiske, en del av Office 365 Avancerat skydd mot obehöriga attacker och andra nät fiske attacker. Om du inte har konfigurerat en egen domän behöver du inte göra detta.| |![grön bock markering](../media/green-check-mark.png)|
@@ -114,7 +114,7 @@ Microsoft 365 informations skydds funktioner kan hjälpa dig att upptäcka vilke
 
 |Rekommendation |E3|E5 |
 |---------|---------|---------|
-|**Granska och optimera dina villkor för villkorsstyrd åtkomst och relaterade principer för att justera efter dina mål för ett betroende nätverk**. Att skydda mot kända hot är att implementera en uppsättning [rekommenderade principer](../enterprise/microsoft-365-policies-configurations.md). Granska din implementering av dessa principer för att säkerställa att du skyddar dina appar och data mot hackare som har fått åtkomst till nätverket. Observera att den rekommenderade policyn för Intune App för Windows 10 gör det möjligt för Windows informations skydd (Pia). Pia skyddar mot oavsiktliga läckage av organisationens data via appar och tjänster, som e-post, sociala medier och det offentliga molnet. |         |![grön bock markering](../media/green-check-mark.png)|
+|**Granska och optimera dina villkor för villkorsstyrd åtkomst och relaterade principer för att justera efter dina mål för ett betroende nätverk**. Att skydda mot kända hot är att implementera en uppsättning [rekommenderade principer](./office-365-security/microsoft-365-policies-configurations.md). Granska din implementering av dessa principer för att säkerställa att du skyddar dina appar och data mot hackare som har fått åtkomst till nätverket. Observera att den rekommenderade policyn för Intune App för Windows 10 gör det möjligt för Windows informations skydd (Pia). Pia skyddar mot oavsiktliga läckage av organisationens data via appar och tjänster, som e-post, sociala medier och det offentliga molnet. |         |![grön bock markering](../media/green-check-mark.png)|
 |**Inaktivera extern e-postvidarekoppling**. Hackare som får åtkomst till en användares post låda kan stjäla din e-post genom att ange brev lådan för automatisk vidarebefordran av e-post. Detta kan inträffa även om användarens kännedom inte är medvetenhet. Du kan förhindra detta genom att konfigurera en regel för e-postflöde.|![grön bock markering](../media/green-check-mark.png) |![grön bock markering](../media/green-check-mark.png)|
 |**Inaktivera anonym extern kalender delning**. Som standard tillåts extern anonym kalender delning. [Inaktivera kalender delning](https://docs.microsoft.com/exchange/sharing/sharing-policies/modify-a-sharing-policy) om du vill minska känslig information.|![grön bock markering](../media/green-check-mark.png) |![grön bock markering](../media/green-check-mark.png)|
 |**Konfigurera principer för skydd mot data förlust för känslig information**. Skapa en princip för skydd mot data förlust i &amp; Center för säkerhets kontroll för att upptäcka och skydda känslig information som kreditkorts nummer, person nummer och bankkonto nummer. Microsoft 365 innehåller många fördefinierade typer av känslig information som du kan använda för principer för skydd mot data förlust. Du kan också skapa egna känsliga informations typer för känsliga data som är anpassade för din miljö. |![grön bock markering](../media/green-check-mark.png)|![grön bock markering](../media/green-check-mark.png)|

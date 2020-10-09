@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå hur Contoso använder funktionerna för informations skydd i Microsoft 365 för företag för att skydda sina digitala till gångar i molnet.
-ms.openlocfilehash: 67404df9bb2056c226eeb9370190519fc0cc8f3b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1966fdec3de246ca54fd99ab018485b9ee817281
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686028"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399247"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Informationsskydd för Contoso Corporation
 
@@ -76,9 +76,9 @@ Med contoso följer du stegen nedan för att förbereda Microsoft 365 för före
 
 Förutom infrastrukturen för identitet och hantering av mobilenheter, och som en del av sin distribution av Exchange Online och SharePoint, konfigurerade Contoso följande uppsättning med principer för villkorlig åtkomst och använde dem i lämpliga grupper:
 
-- [Principer för hanterad och ohanterad programåtkomst på enheter](identity-access-policies.md)
-- [Principer för Exchange Online-åtkomst](secure-email-recommended-policies.md)
-- [Principer för SharePoint-åtkomst](sharepoint-file-access-policies.md)
+- [Principer för hanterad och ohanterad programåtkomst på enheter](../security/office-365-security/identity-access-policies.md)
+- [Principer för Exchange Online-åtkomst](../security/office-365-security/secure-email-recommended-policies.md)
+- [Principer för SharePoint-åtkomst](../security/office-365-security/sharepoint-file-access-policies.md)
 
 Här är Contosos resulterande uppsättning med principer för informationsskydd.
 

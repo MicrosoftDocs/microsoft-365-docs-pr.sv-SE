@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du distribuerar team med en grundläggande nivå av skydd.
-ms.openlocfilehash: 4a1843b687155cefd48bf3800be68c3e01abd7f5
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: ac6974b5625a4eff0fcd11a17c4607a7c2caf97f
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527866"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398871"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Konfigurera teams med grundläggande skydd
 
@@ -31,7 +31,7 @@ I den här artikeln tittar vi på hur du distribuerar team med en grundläggande
 
 ## <a name="initial-protections"></a>Initiala skydd
 
-Som ett första steg rekommenderar vi att du konfigurerar principer för grundläggande principer för identitets- och enhetsåtkomst. Mer information finns i [Principrekommendationer för att skydda Teams-chattar, grupper och filer](https://docs.microsoft.com/microsoft-365/enterprise/teams-access-policies).
+Som ett första steg rekommenderar vi att du konfigurerar principer för grundläggande principer för identitets- och enhetsåtkomst. Mer information finns i [Principrekommendationer för att skydda Teams-chattar, grupper och filer](../security/office-365-security/teams-access-policies.md).
 
 Vi rekommenderar även att du aktiverar grundläggande ATP-funktioner för att skydda mot skadlig programvara i dokument, bilagor och länkar. Vi rekommenderar att du aktiverar vart och ett av alternativen i tabellen nedan.
 

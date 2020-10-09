@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 8c66ee39d9c7f90142a564c61b13f68e6b4b481e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: de8a2c3d55d887a28500bb82a97e4453861aef46
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197779"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399223"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Lär dig mer om det avancerade frågespråket
 
@@ -30,9 +30,9 @@ ms.locfileid: "48197779"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft Threat Protection
 
-Avancerad jakt är baserat på [Kusto frågespråk](https://docs.microsoft.com/azure/kusto/query/). Du kan använda Kusto syntax och operatorer för att skapa frågor som visar information i det [schema](advanced-hunting-schema-tables.md) som är specifikt strukturerade för avancerad jakt. Kör den första frågan för att förstå de här begreppen bättre.
+Avancerad jakt är baserat på [Kusto frågespråk](https://docs.microsoft.com/azure/kusto/query/). Du kan använda Kusto syntax och operatorer för att skapa frågor som hittar information i ett specialiserat [schema](advanced-hunting-schema-tables.md). Kör den första frågan för att förstå de här begreppen bättre.
 
 ## <a name="try-your-first-query"></a>Prova den första frågan
 
@@ -58,24 +58,22 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-Så här kommer det att se ut i avancerad jakt.
-
-![Bild av en avancerad jakt fråga i Microsoft Threat Protection](../../media/advanced-hunting-query-example-2.png)
+**[Kör den här frågan i avancerad jakt](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2TW0sCURSF93PQfxh8Moisp956yYIgQtLoMaYczJpbzkkTpN_et_dcdPQkcpjbmrXXWftyetKTQG5lKqmMpeB9IJksJJKZDOWdZ8wKeP5wvcm3OLgZbMXmXCmIxjnYIfcAVgYvRi8w3TnfsXEDGAG47pCCZXyP5ViO4KeNbt-Up-hEuJmB6lvButnY8XSL-cDl0M2I-GwxVX8Fe2H5zMzHiKjEVB0eEsnBrszfBIWuXOLrxCJ7VqEBfM3DWUYTkNKrv1p5y3X0jwetemzOQ_NSVuuXZ1c6aNTKRaN8VvWhY9n7OS-o6J5r7mYeQypdEKc1m1qfiqpjCSuspsDntt2J61bEvTlXls5AgQfFl5bHM_gr_BhO2RF1rztoBv2tWahrso_TtzkL93KGMGZVr2pe7eWR-xeZl91f_113UOsx3nDR4Y9j5R6kaCq8ajr_YWfFeedsd27L7it-Z6dAZyxsJq1d9-2ZOSzK3y2NVd8-zUPjtZaJnYsIH4Md7AmdeAcd2Cl1XoURc5PzXlfU8U9P54WcswL6t_TW9Q__qX-xygQAAA&runQuery=true&timeRangeId=week)**
 
 ### <a name="describe-the-query-and-specify-the-tables-to-search"></a>Beskriv frågan och ange vilka tabeller som ska sökas igenom
-En kort kommentar har lagts till i början av frågan för att beskriva vad den är för. Det här hjälper om du senare bestämmer dig för att spara frågan och dela den med andra i din organisation. 
+En kort kommentar har lagts till i början av frågan för att beskriva vad den är för. Den här kommentaren hjälper dig om du senare bestämmer dig för att spara frågan och dela den med andra i organisationen. 
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
 ```
 
-Frågan börjar normalt med ett tabell namn följt av en serie element som startas av ett vertikalstreck ( `|` ). I det här exemplet börjar vi med att skapa en union av två tabeller  `DeviceProcessEvents` och `DeviceNetworkEvents` lägga till piped-element efter behov.
+Frågan börjar normalt med ett tabell namn följt av flera element som börjar med ett vertikalstreck ( `|` ). I det här exemplet börjar vi med att skapa en union av två tabeller  `DeviceProcessEvents` och `DeviceNetworkEvents` lägga till piped-element efter behov.
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
 ### <a name="set-the-time-range"></a>Ange tidsintervall
-Det första piped-elementet är ett tids filter som är begränsat till de föregående sju dagarna. Om du vill att tids området ska vara så smalt som möjligt ser du till att frågor fungerar bra, returnerar hanterbara resultat och inte tids gräns.
+Det första piped-elementet är ett tids filter som är begränsat till de föregående sju dagarna. Om du begränsar tidsintervallet ser du till att frågor fungerar bra, returnerar hanterbara resultat och inte tids gräns.
 
 ```kusto
 | where Timestamp > ago(7d)
@@ -105,7 +103,7 @@ Därefter söker frågan efter strängar i kommando rader som vanligt vis använ
 ```
 
 ### <a name="customize-result-columns-and-length"></a>Anpassa resultat kolumner och längd 
-Nu när frågan tydligt identifierar de data som du vill hitta kan du lägga till element som definierar hur resultatet ser ut. `project` Returnerar specifika kolumner och `top` begränsar antalet resultat. Dessa operatörer ser till att resultaten är välformaterade och rimligt stora och lätta att bearbeta.
+Nu när frågan tydligt identifierar de data som du vill hitta kan du ange hur resultatet ska se ut. `project` Returnerar specifika kolumner och `top` begränsar antalet resultat. Dessa operatörer ser till att resultaten är välformaterade och rimligt stora och lätta att bearbeta.
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -113,7 +111,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-Klicka på **Kör fråga** för att visa resultatet. Välj ikonen Expandera längst upp till höger i Frågeredigeraren för att fokusera på frågan och resultaten. 
+Välj **Kör fråga** för att visa resultatet. Använd ikonen Expandera längst upp till höger i Frågeredigeraren för att fokusera på frågan och resultaten. 
 
 ![Bild av kontrollen Expand i den avancerade Frågeredigeraren](../../media/advanced-hunting-expand.png)
 
@@ -122,7 +120,7 @@ Klicka på **Kör fråga** för att visa resultatet. Välj ikonen Expandera län
 
 ## <a name="learn-common-query-operators"></a>Lär dig vanliga frågor
 
-Nu när du har kört den första frågan och har en allmän uppfattning om dess komponenter är det dags att gå tillbaka lite bit och lära dig grunderna. Kusto Query-språk som används i Advanced jakt har stöd för en rad operatörer, bland annat följande.
+Du har precis kört den första frågan och har en allmän uppfattning om dess komponenter. Det är dags att gå tillbaka något och lära dig grunderna. Kusto Query-språk som används i Advanced jakt har stöd för en rad operatörer, bland annat följande.
 
 | Ansvaret | Beskrivning och användning |
 |--|--|
@@ -141,26 +139,26 @@ Om du vill se ett exempel på dessa operatörer kan du köra det från avsnittet
 
 ## <a name="understand-data-types"></a>Förstå data typer
 
-Data i de avancerade jakt tabellerna klassificeras normalt i följande data typer.
+Advanced jakt stöder Kusto-datatyper, inklusive följande vanliga typer:
 
 | Datatyp | Beskrivningar och frågor |
 |--|--|
-| `datetime` | Data-och tidsinformation som vanligt vis representerar tids stämplingar |
-| `string` | Tecken sträng |
-| `bool` | Sant eller falskt |
-| `int` | 32-bitars numeriskt värde  |
-| `long` | 64-bitars numeriskt värde |
+| `datetime` | Data-och tidsinformation representerar vanligt vis händelse tidsstämplar. [Se datetime-format som stöds](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
+| `string` | Tecken sträng i UTF-8 som omges av enkla citat tecken ( `'` ) eller dubbla citat tecken ( `"` ). [Läs mer om strängar](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/string) |
+| `bool` | Denna datatyp stöder `true` eller `false` lägen. [Se litteraler och operatorer som stöds](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/bool) |
+| `int` | 32-bitars heltal  |
+| `long` | 64-bitars heltal |
 
-Om du vill veta mer om de här data typerna och deras konsekvenser kan du [läsa mer om Kusto skalära data typer](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/).
+Mer information om de här data typerna finns i [om Kusto skalära data typer](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/).
 
 ## <a name="get-help-as-you-write-queries"></a>Få hjälp medan du skriver frågor
 Dra nytta av följande funktioner när du vill skriva frågor snabbare:
-- **Autoföreslå** – när du skriver frågor kan du med hjälp av en avancerad jakt förslag från IntelliSense. 
-- **Schema träd** – en schema representation som innehåller listan med tabeller och deras kolumner visas bredvid arbets ytan. För mer information, Hovra över ett objekt. Dubbelklicka på ett objekt om du vill infoga det i Frågeredigeraren.
-- **[Schema referens](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** – i-Portal referens med tabell-och kolumn beskrivningar samt de händelse typer som stöds `ActionType` och urvals frågor
+- **Autoföreslå**– när du skriver frågor kan du med hjälp av en avancerad jakt förslag från IntelliSense. 
+- **Schema träd**– en schema representation som innehåller listan med tabeller och deras kolumner visas bredvid arbets ytan. För mer information, Hovra över ett objekt. Dubbelklicka på ett objekt om du vill infoga det i Frågeredigeraren.
+- **[Schema referens](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**– i-Portal referens med tabell-och kolumn beskrivningar samt de händelse typer som stöds `ActionType` och urvals frågor
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>Arbeta med flera frågor i redigeraren
-Frågeredigeraren kan fungera som en borttagningsgest för att experimentera med flera frågor. Så här använder du flera frågor:
+Du kan använda Frågeredigeraren för att experimentera med flera frågor. Så här använder du flera frågor:
 
 - Avgränsa varje fråga med en tom rad.
 - Placera markören på en del av en fråga för att välja frågan innan den körs. Detta kommer bara att köra den valda frågan. Om du vill köra en ny fråga flyttar du markören i enlighet med den och väljer **Kör fråga**.
@@ -174,7 +172,7 @@ Avsnittet **komma igång** innehåller några enkla frågor med vanliga operator
 ![Bild av fönstret för avancerad jakt](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
->Förutom de grundläggande fråge exemplen kan du även komma åt [delade frågor](advanced-hunting-shared-queries.md) för speciella scenarier med hot. Utforska de delade frågorna på vänster sida av sidan eller i GitHub.
+>Förutom de grundläggande fråge exemplen kan du även komma åt [delade frågor](advanced-hunting-shared-queries.md) för speciella scenarier med hot. Utforska de delade frågorna på vänster sida av sidan eller i [GitHub](https://aka.ms/hunting-queries).
 
 ## <a name="access-query-language-documentation"></a>Dokumentation för Access-frågespråk
 

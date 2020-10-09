@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Använd den här test laboratorie guiden för att aktivera ytterligare Microsoft 365-säkerhets inställningar din Microsoft 365 för företags test miljö.
-ms.openlocfilehash: 06273bda00635a65ed9821b2bac23c3a3ee1366a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 09a613261bc173cd71e9cc2dd58a32a9547ece21
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686808"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398955"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Ökad Microsoft 365-säkerhet för test miljön av Microsoft 365 för företag
 
@@ -47,7 +47,7 @@ I den här fasen aktiverar du ökad Microsoft 365-säkerhet för din test miljö
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>Konfigurera SharePoint Online för att blockera appar som inte stöder modern
 
-Appar som inte stöder modern lösenordsautentisering kan inte ha [identitets-och enhets åtkomst inställningar](microsoft-365-policies-configurations.md) kopplade till dem, vilket är ett viktigt element för att skydda ditt Microsoft 365-abonnemang och dess digitala till gångar. 
+Appar som inte stöder modern lösenordsautentisering kan inte ha [identitets-och enhets åtkomst inställningar](../security/office-365-security/microsoft-365-policies-configurations.md) kopplade till dem, vilket är ett viktigt element för att skydda ditt Microsoft 365-abonnemang och dess digitala till gångar. 
 
 1. Gå till administrations centret för Microsoft 365 [https://portal.microsoft.com](https://portal.microsoft.com) och logga in på ditt microsoft 365 test laboratorie abonnemang med ditt globala administratörs konto.
     

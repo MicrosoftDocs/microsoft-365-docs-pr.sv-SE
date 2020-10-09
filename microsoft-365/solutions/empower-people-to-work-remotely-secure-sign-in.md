@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Kräv att dina distansarbetare loggar in med multi-factor authentication (MFA).
-ms.openlocfilehash: 192c26a42c15c0c8f7da15c992d7d564a312e6a9
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: a5977c1f4b5189f39623399f0b45a31e6edd4de7
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377467"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399319"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Steg 1. Öka inloggningssäkerheten för distansarbetare med MFA
 
@@ -39,7 +39,7 @@ Det finns tre sätt till att kräva att dina användare ska använda MFA baserat
 |---------|---------|
 |Alla Microsoft 365-abonnemang (utan Azure Active Directory Premium P1- eller P2-licenser)     |[Aktivera standardinställningar för säkerhet i Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Standardinställningar för säkerhet i Azure AD inkluderar MFA för användare och administratörer.   |
 |Microsoft 365 E3 (inkluderar Azure Active Directory Premium P1-licenser)     | Använd [vanliga principer för villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) för att konfigurera följande principer: <br>- [Kräv MFA för administratörer](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Kräv MFA för alla användare](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Blockera äldre autentisering](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (inkluderar Azure Active Directory Premium P2-licenser)     | Dra nytta av Azure AD Identity Protection och börja implementera Microsofts [rekommenderade uppsättning av villkorsstyrd åtkomst och relaterade principer](../enterprise/identity-access-policies.md) genom att skapa de två principerna:<br> - [Kräv MFA när inloggningsrisker är medel eller hög](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Blockera klienter som inte har stöd för modern autentisering](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Användare med hög risk måste byta lösenord](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 E5 (inkluderar Azure Active Directory Premium P2-licenser)     | Dra nytta av Azure AD Identity Protection och börja implementera Microsofts [rekommenderade uppsättning av villkorsstyrd åtkomst och relaterade principer](../security/office-365-security/identity-access-policies.md) genom att skapa de två principerna:<br> - [Kräv MFA när inloggningsrisker är medel eller hög](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Blockera klienter som inte har stöd för modern autentisering](../security/office-365-security/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Användare med hög risk måste byta lösenord](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ## <a name="security-defaults"></a>Standardinställningar för säkerhet

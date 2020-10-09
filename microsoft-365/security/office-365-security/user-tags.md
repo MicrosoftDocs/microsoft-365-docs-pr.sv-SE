@@ -15,18 +15,23 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig att identifiera specifika grupper med användare med användar koder i Office 365 ATP-abonnemang 2. Filtrering av märkningar är tillgängligt för aviseringar, rapporter och undersökningar i Office 365 ATP för att snabbt identifiera taggade användare.
-ms.openlocfilehash: 9522499b3861f0f0e44fcbf09896a5c93feed95d
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: 16e756b95e16e40f4df738e825e842681c67e22c
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337259"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399391"
 ---
 # <a name="user-tags-in-office-365-atp"></a>Användartaggar i Office 365 ATP
 
-User-taggar är identifierare för specifika grupper med användare i [Office 365 Avancerat skydd (ATP)](office-365-atp.md). [Prioritets konton](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) är en typ av användar märkning. Om din organisation har Office 365 ATP-abonnemang 2 (ingår i ditt abonnemang eller som ett tillägg) kan du skapa anpassade användar flaggor förutom att använda taggen för prioritets konton.
+User-taggar är identifierare för specifika grupper med användare i [Office 365 Avancerat skydd (ATP)](office-365-atp.md). Det finns två typer av användar flaggor:
 
-När du har använt taggar för specifika användare kan du använda taggarna som filter i aviseringar, rapporter och undersökningar:
+- **System märkning**: [prioritets konton](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) är för närvarande den enda typen av system märkning.
+- **Anpassade taggar**: du skapar dem själv.
+
+Om din organisation har Office 365 ATP-abonnemang 2 (ingår i ditt abonnemang eller som ett tillägg) kan du skapa anpassade användar flaggor förutom att använda taggen för prioritets konton.
+
+När du har använt system koder eller anpassade taggar för användare kan du använda taggarna som filter i aviseringar, rapporter och undersökningar:
 
 - [Aviseringar i säkerhets & efterlevnad](alerts.md)
 - [Threat Explorer och real tids identifiering](threat-explorer.md)
@@ -39,9 +44,11 @@ I den här artikeln förklaras hur du konfigurerar användar koder i fältet sä
 
 - Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Öppna för att gå direkt till sidan **User Tags** <https://protection.office.com/userTags> .
 
-- Om du vill skapa, ändra eller ta bort användar flaggor måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** i säkerhets & Compliance Center. Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
+- För att skapa, ändra eller ta bort **anpassade användar flaggor**måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** i säkerhets & Compliance Center. Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
-- Du kan också hantera och övervaka prioriterade konton i administrations centret för Microsoft 365. Anvisningar finns i [Hantera och övervaka prioritets konton](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
+- Du måste vara [Global administratör](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) eller [Exchange-administratör](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)för att kunna konfigurera prioritets konton (systemtaggar).
+
+  Du kan också hantera och övervaka prioriterade konton i administrations centret för Microsoft 365. Anvisningar finns i [Hantera och övervaka prioritets konton](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>Använda säkerhets Center för att skapa användar flaggor
 

@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Så här kommer du till resurserna som motsvarar det föråldrade Desktop Deployment Center.
-ms.openlocfilehash: 0dc5816959c5284739de4dee31dde7cc520bde55
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 1b930bae76c510108556947977aa1393ae9bd86b
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898022"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398837"
 ---
 # <a name="desktop-deployment-center-deprecated"></a>Desktop Deployment Center (inaktuellt)
 
@@ -27,9 +27,9 @@ Bröd texten för innehållet som utgör Desktop Deployment Center är inaktuell
 Använd dessa resurser för att distribuera moderna datorer:
 
 - [Windows 10-distribution](https://docs.microsoft.com/windows/deployment/)
-- [Distribuera Microsoft 365-appar](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
+- [Distribuera Microsoft 365-applikationer](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 - [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
-- [Principer för identitets- och enhetsåtkomst](microsoft-365-policies-configurations.md)
+- [Principer för identitets- och enhetsåtkomst](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 Du kan också titta på [videoklipp från Microsoft Mechanics](https://www.aka.ms/watchhowtoshift).
 
