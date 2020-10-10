@@ -15,14 +15,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig att identifiera specifika grupper med användare med användar koder i Office 365 ATP-abonnemang 2. Filtrering av märkningar är tillgängligt för aviseringar, rapporter och undersökningar i Office 365 ATP för att snabbt identifiera taggade användare.
-ms.openlocfilehash: 16e756b95e16e40f4df738e825e842681c67e22c
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 475bf976a71fb688df8db9ac25f3b397c078d79a
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399391"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417273"
 ---
 # <a name="user-tags-in-office-365-atp"></a>Användartaggar i Office 365 ATP
+
+> [!NOTE]
+> Funktionen användar koder är i förhands granskning, inte tillgänglig för alla och kan komma att ändras. Information om versions schema finns i [Microsoft 365-översikten](https://www.microsoft.com/microsoft-365/roadmap).
 
 User-taggar är identifierare för specifika grupper med användare i [Office 365 Avancerat skydd (ATP)](office-365-atp.md). Det finns två typer av användar flaggor:
 

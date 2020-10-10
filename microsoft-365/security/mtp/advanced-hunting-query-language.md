@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: ffa5e6abf7fb1cb0f93fe1c233ef7e3f0b023faf
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 35de1504d4d7ddd3512b6cc3e478b138c1f43c29
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412628"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418127"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Lär dig mer om det avancerade frågespråket
 
@@ -34,7 +34,7 @@ ms.locfileid: "48412628"
 **Gäller för:**
 - Microsoft Threat Protection
 
-Avancerad jakt är baserat på [Kusto frågespråk](https://docs.microsoft.com/azure/kusto/query/). Du kan använda Kusto syntax och operatorer för att skapa frågor som hittar information i ett specialiserat [schema](advanced-hunting-schema-tables.md). Kör den första frågan för att förstå de här begreppen bättre.
+Avancerad jakt är baserat på [Kusto frågespråk](https://docs.microsoft.com/azure/kusto/query/). Du kan använda Kusto-operatorer och-uttryck för att skapa frågor som visar information i ett specialiserat [schema](advanced-hunting-schema-tables.md). Kör den första frågan för att förstå de här begreppen bättre.
 
 ## <a name="try-your-first-query"></a>Prova den första frågan
 

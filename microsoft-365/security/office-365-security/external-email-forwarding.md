@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: f729aa816caf8fb07499037ee27fbfc37b7205b3
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c0a3849d330b508630eb60c7ee24cd8b498a32b8
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202885"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417229"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>Konfigurera extern vidarebefordran av e-post i Office 365
 
@@ -28,7 +28,7 @@ ms.locfileid: "48202885"
 
 Extern vidarebefordran styrs av *principen för utgående skräp post* och omfattning för användare baserat på den konfigurerade inställningen. För närvarande finns det stöd för tre inställningar:
 
-- **Automatiskt** – i det här läget är systemet ansvarigt för att bestämma om ett vidarebefordrat meddelande tillåts eller inte.  Det här är standard läget och i det här läget blockerar systemet automatisk extern vidarebefordran.
+- **Automatisk** – det här är systemstyrt: utgående skräp post filtrering för automatisk överföring av externa e-postmeddelanden. Detta är standardinställningen.
 
 - **På** – automatisk extern vidarebefordran är tillåten och inte begränsad.
 
@@ -37,7 +37,7 @@ Extern vidarebefordran styrs av *principen för utgående skräp post* och omfat
 Mer information om hur du konfigurerar dessa inställningar finns i [Konfigurera filtrering för utgående e-post i EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true) .
 
 > [!NOTE]
-> Inaktive ring av automatisk vidarebefordran kommer också att dsable som dirigerar meddelanden till externa adresser.
+> Om du inaktiverar automatisk vidarebefordran inaktive ras även regler för Inkorgen som omdirigerar meddelanden till externa adresser.
 
 ## <a name="controlling-external-email-forwarding"></a>Styra extern e-postvidarebefordran
 

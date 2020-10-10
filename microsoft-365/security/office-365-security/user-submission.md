@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-office365
 description: Administratörer kan läsa hur du konfigurerar en post låda för att samla in skräp post och nätfiske som rapporteras av användare.
-ms.openlocfilehash: 8347463a4c3f41b6b6333d35c5b4207d1b94aabe
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab7f25c456a9321977721113c1e98d67d1529feb
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412568"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417240"
 ---
 # <a name="user-submissions-policies"></a>Principer för användarrapporteringar
 
@@ -47,17 +47,17 @@ Om du levererar rapporter till en egen post låda i stället för direkt till Mi
 
 Använd följande artiklar för att konfigurera förutsättningarna för att användare ska kunna rapportera meddelanden till din egen post låda:
 
-- Hoppa över skräp post filtrering genom att skapa en regel för e-postflöde för att ange nivån för skräp post säkerhet. Se [använda UK för att skapa en regel för e-postflöde som anger SCL för ett meddelande](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages?view=o365-worldwide#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) för att ange SCL till **-1**.
+- Hoppa över skräp post filtrering på den anpassade post lådan genom att skapa en regel för Exchange-flödesschema för att ange säkerhets nivån för skräp post. Se [använda UK för att skapa en regel för e-postflöde som anger SCL för ett meddelande](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) för att ange SCL till **-1**.
 
-- Inaktivera genomsökning av bifogade filer för skadlig program vara. Använd [Konfigurera (eller redigera) en policy för säker](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-worldwide#step-2-set-up-or-edit-an-atp-safe-attachments-policy) användning av ATP för att skapa en policy för säker bifogad fil med inställningen **för att stänga av denna sökning genomsöks inte efter skadlig program** vara.
+- Inaktivera genomsökning av bifogade filer för skadlig program vara i den anpassade post lådan. Använda inställningar för [principer för säker bifogad fil i Office 365 ATP](set-up-atp-safe-attachments-policies.md) för att skapa en policy för säker bifogad fil med inställningen **av** för **säkert bifogad fil med skadlig program vara**.
 
-- Inaktivera URL-genomsökning för meddelanden. Använd [Lägg till (eller redigera) principer för Safet ATP-länkar som gäller för alla eller specifika e-postmottagare](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-worldwide#step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients) för att skapa en princip för säkra länkar med **Välj åtgärd för okända URL-adresser i meddelanden** som är inställt på **av**.
+- Inaktivera URL-genomsökning för meddelanden i den anpassade post lådan. Använd [principer för säkra länkar i Office 365 ATP](set-up-atp-safe-links-policies.md) för att skapa en princip för säkra länkar med inställningen **av** för **Val av åtgärd för okända URL-adresser i meddelanden**.
 
-- Skapa en princip för mot skadlig program vara för att inaktivera automatisk rensning av skadlig program vara. Se [använda säkerhets & Compliance Center för att skapa principer mot skadlig program](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies) vara för att **Aktivera** **Automatisk borttagning av skadlig program vara** .
+- Skapa en princip för mot skadlig program vara för att inaktivera automatisk rensning av skadlig program vara. Se [använda säkerhets & Compliance Center för att skapa principer mot skadlig program](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) vara för att **Aktivera** **Automatisk borttagning av skadlig program vara** .
 
-- Skapa en filter policy för skräp post för att avaktivera automatisk rensning (ZAP) för skräp post och Phish ZAP. Mer information finns i [använda säkerhets & Compliance Center för att skapa principer för skräp post](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies) och avmarkera **kryss rutorna** för skräp post ZAP och Phish ZAP.
+- Skapa en filter policy för skräp post för att avaktivera automatisk rensning (ZAP) för skräp post och nätfiske i den anpassade post lådan. Mer information finns i [använda säkerhets & Compliance Center för att skapa principer för skräp post](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) och avmarkera **kryss rutorna** för **skräp post ZAP** och **Phish ZAP**.
 
-- Inaktivera skräp post regeln. Använd [Konfigurera inställningar för skräp post i Exchange Online-postlådor](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes?view=o365-worldwide) för att inaktivera skräp post regeln. När det är inaktiverat kan EOP inte flytta meddelanden till mappen skräp post baserat på åtgärd för skräp post filtrering Verdict **flyttas meddelandet till mappen skräp post** eller säker lista-samlingen i post lådan.
+- Inaktivera skräp post regeln i den anpassade post lådan. Använd [Konfigurera inställningar för skräp post i Exchange Online-postlådor](configure-junk-email-settings-on-exo-mailboxes.md) för att inaktivera skräp post regeln. När det är inaktiverat kan EOP inte flytta meddelanden till mappen skräp post baserat på åtgärd för skräp post filtrering Verdict **flyttas meddelandet till mappen skräp post** eller säker lista-samlingen i post lådan.
 
 När du har verifierat att post lådan uppfyller alla tillämpliga förutsättningar använder du [säkerhets & Compliance Center för att konfigurera post lådan för användar överföringar](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) (i den här artikeln).
 
@@ -118,7 +118,7 @@ Meddelanden som skickas till anpassade post lådor måste följa ett visst e-pos
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
-var SafetyAPIAction är ett av följande heltals värden:
+där SafetyAPIAction är ett av följande heltals värden:
 
 - 1: skräp post
 - 2: NotJunk

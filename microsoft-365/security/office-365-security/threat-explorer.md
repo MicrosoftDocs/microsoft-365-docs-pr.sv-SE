@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-office365
 description: Lär dig hur du använder Utforskaren och real tids identifiering i &amp; Center för säkerhets kontroll för att undersöka och reagera på hot effektivt och effektivt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 20b13e177a69d981a4c6793d4810256e33158a35
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab691e88c8450e4f1ab898fe6a9d75d6682370a5
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414268"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417345"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer och real tids identifiering
 
@@ -48,6 +48,101 @@ Med den här rapporten kan du:
 - [Starta en automatiserad undersökning och svars process från en vy i Utforskaren](#start-automated-investigation-and-response) (endast ATP-abonnemang 2)
 - ... [Undersök skadlig e-post och mycket mer](#more-ways-to-use-explorer-or-real-time-detections).
 
+## <a name="improvements-to-threat-hunting-experience-upcoming"></a>Förbättringar av hot mot hotet (kommande)
+
+### <a name="updated-threat-information-for-emails"></a>Uppdaterad Hot information för e-post
+
+Vi har fokuserat på förbättringar av plattform och data kvalitet för att öka dataens exakthet och konsekvens för e-post. De här uppdateringarna inkluderar konsolidering av information om för leverans och efter leverans (exempel åtgärd som utförs på ett e-postmeddelande som en del av ZAP-process) till en enda post tillsammans med Richness som skräp post Verdict, hot på enhets nivå (till exempel vilken URL-adress som är skadlig) och de senaste leverans platserna. 
+
+Efter de här uppdateringarna visas en enda post för varje meddelande, oavsett vilka händelser för inlägg som har utförts. Åtgärder kan inkludera ZAP, manuell reparation (vilket betyder administratörs åtgärd), dynamisk leverans o.s.v. 
+
+Förutom att Visa skadlig kod och Phish hot kan du nu se skräp post Verdict associerad med ett e-postmeddelande. I e-postmeddelandet kan du se alla hot som är kopplade till e-postmeddelandet tillsammans med motsvarande identifierings teknik. Alla e-postmeddelanden kan ha 0, 1 eller flera hot. De aktuella hoten visas i avsnittet information i den utfällbara e-postadressen. För att få flera hot (t. ex. ett e-postmeddelande med både skadlig kod och Phish) skulle detta ge den Threat-Detection mappningen, vilket innebär vilken identifierings teknik som ledde till identifieringen av hotet.
+
+Uppsättningen av identifierings teknologier har uppdaterats till att omfatta nya identifierings metoder, samt funktioner för skräp identifiering och Aross alla olika e-postvyer (skadlig program vara, Phish, all e-post). 
+
+**Obs!** Verdict analys kanske inte nödvändigt vis är knuten till enheter. Som ett exempel kan ett e-postmeddelande klassificeras som Phish eller spam, men det finns inga URL-adresser som har Phish/spam Verdict. Detta beror på att våra filter också utvärdera innehåll och annan information för ett e-postmeddelande innan de tilldelas en Verdict. 
+ 
+#### <a name="threats-in-urls"></a>Hot i URL: er
+
+Med utfällbar e-post-fliken > information kan du nu se det speciella hotet för en URL (hotet för en URL kan vara skadlig, Phish, spam eller ingen alls)
+
+![URL-hot](../../media/URL_Threats.png)
+
+### <a name="updated-timeline-view-upcoming"></a>Uppdaterad tidslinjevy (kommande)
+
+![Uppdaterad vyn tids linje](../../media/Email_Timeline.png)
+
+Förutom att identifiera alla leverans-och efter leverans händelser ger vyn tids linje också information om det hot som identifieras vid den tidpunkten för en delmängd av dessa händelser. Här får du mer information om ytterligare åtgärder (till exempel ZAP, manuell reparation) tillsammans med resultatet av den åtgärden. Vyn tids linje innehåller information om den ursprungliga leveransen och därefter eventuella efter leverans händelser utförda på ett e-postmeddelande.
+
+-   Källa: det kan vara administratören/systemet/användaren baserat på vad som var händelsen.
+-   Händelse: Detta inkluderar händelser på översta nivån som ursprunglig leverans, manuell justering, ZAP, inlämning och dynamisk leverans.
+-   Åtgärd: det här gäller för den åtgärd som gjorts antingen som en del av en ZAP-eller administratörs åtgärd (t. ex. mjuk borttagning).
+-   Hot: omfattar hoten (skadlig program vara, Phish, spam) som identifieras vid den tidpunkten.
+-   Resultat/Detaljer: Här finns mer information om resultatet av åtgärden, om det utfördes som en del av ZAP/administratörs åtgärd.
+
+### <a name="original-and-latest-delivery-location"></a>Ursprunglig och senaste leverans plats
+
+I dag skickar vi Surface leverans plats i e-postrutnät och utfällbar e-post. Framåt, fältet leverans plats ändras till ursprunglig leverans plats. Dessutom introducerar vi också ett annat fält som heter senaste leverans plats. 
+
+Den ursprungliga leverans platsen skulle ge mer information om var e-postmeddelandet levererades. Den senaste leverans platsen innehåller plats där ett e-postmeddelande kan ha landats efter att system åtgärder som ZAP eller administratörs åtgärder som **Flytta till borttagna objekt**. Den senaste leverans platsen är avsedd att informera administratörer om meddelandets senast kända plats efter leverans och alla system-och administratörs åtgärder. I design ingår inga åtgärder för slutanvändare på e-postmeddelandet. Till exempel: om en användare tar bort ett meddelande eller flyttar meddelandet till Arkiv/PST uppdateras inte meddelandets leverans plats. Om en system åtgärd har uppdaterat platsen (till exempel en ZAP som resulterade i ett e-postmeddelande som flyttas till karantänen) ser du den senaste leverans platsen som karantän. 
+
+![Uppdaterade leverans platser](../../media/Updated_Delivery_Location.png)
+
+**Obs!** det finns några fall där leverans plats och leverans åtgärd kan Visa "okänt" som värde:
+
+- Leverans platsen kan visas som levererad och leverans platsen som okänd. Det här inträffar när meddelandet levererades, men en regel för Inkorgen flyttade meddelandet till en standardmapp (utkast, arkiv osv.) i stället för Inkorgen eller mappen skräp post. 
+
+- Den senaste leverans platsen kan vara okänd om en administratör/system åtgärd (till exempel, ZAP, administratörs åtgärd) har prövats men meddelandet inte hittas. Vanligt vis utförs åtgärden efter att användaren har flyttat eller tagit bort meddelandet. I sådana fall ska du kontrol lera kolumnen resultat/information i vyn tids linje. Leta efter meddelandet: meddelandet har flyttats eller tagits bort av användaren.
+
+![Leverans ställen för tids linje](../../media/Updated_Timeline_Delivery_Location.png)
+
+### <a name="additional-actions"></a>Ytterligare åtgärder 
+
+Ytterligare åtgärder består av de åtgärder som har tillämpats anslå leveransen av e-postmeddelandet, och kan innehålla ZAP, manuell reparation (åtgärd som utförs av en admi, n, t. ex en mjuk borttagning), dynamisk leverans och ombearbetning (ett e-postmeddelande identifierades retroaktivt). 
+
+> [!NOTE]
+>
+> - Som en del av den här ändringen tas värdet borttaget med ZAP i filtret leverans åtgärd bort. Du kan söka efter all e-post med ZAP-försök via ytterligare åtgärder.
+>
+> -Det kommer att finnas nya fält och värden för identifierings teknologier och ytterligare åtgärder (särskilt för ZAP-scenarier). Utvärdera dina befintliga sparade frågor och spårade frågor för att kontrol lera att de fungerar med de nya värdena. 
+
+![Additional_Actions](../../media/Additional_Actions.png)
+
+### <a name="system-overrides"></a>Systemåsidosättningar 
+
+Systemåsidosättningar är en metod för att skapa undantag till den avsedda leverans platsen för ett meddelande genom att åsidosätta den leverans plats som tillhandahålls av systemet (baserat på hoten och andra upptäckter som identifieras av vår filtrerings stack). Systemåsidosättningar kan anges via klient organisation eller användar princip för att leverera meddelandet enligt policyn. Åsidosättningar är användbara för att identifiera eventuell oavsiktlig leverans av skadliga meddelanden på grund av konfigurations luckor (till exempel en mycket omfattande policy för säker avsändare som har ställts in av en användare). Dessa värden kan vara:
+
+- Tillåts av en användar princip: det här är när en användare tillåter domäner eller avsändare genom att skapa principer på post lådans nivå.
+- Blockerad av en användar princip: det är när en användare spärrar domäner eller avsändare genom att skapa principer på post lådans nivå.
+- Tillåtet enligt organisations princip: det här är när organisationens säkerhets team anger principer eller Exchange mail flöde-regler (kallas även transport regler) för att tillåta avsändare och domäner för användare i organisationen. Detta kan vara för en uppsättning användare eller hela organisationen.
+- Blockerat av en organisations princip: det här är när organisationens säkerhets team anger principer eller regler för e-postflöde för att blockera avsändare, domäner, meddelande språk eller käll-IP för användare i organisationen. Det kan också vara för en uppsättning användare eller hela organisationen.
+- Fil tillägget blockerat av en organisations princip: det här är när ett fil namns tillägg blockeras av en organisations säkerhets team via princip inställningarna mot skadlig program vara. Dessa värden visas nu i e-postinformation för att hjälpa till med undersökningar. Secops Teams kan också filtrera på blockerade fil namns tillägg med hjälp av funktionen för RTF-filtrering.
+
+![System_Overrides](../../media/System_Overrides.png)
+
+![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+
+### <a name="improvements-around-url-and-clicks-experience"></a>Förbättringar kring URL-och klicknings upplevelser
+
+Den uppsättning förbättringar som fokuserats på URL och URL klickar på data inkluderar:
+
+-   Visar fullständig URL-adress (inklusive frågeparametrar som är en del av URL) i avsnittet klickningar i URL-utfällbar. För närvarande visar vi URL-domänen och sökvägen i namn listen. Vi förlänger den informationen för att visa hela webb adressen.
+-   Korrigeringar via URL-filter (URL kontra URL-domän kontra URL-domän): vi har gjort uppdateringar för att söka efter meddelanden som innehåller en URL-adress/klicka på Verdict. Som en del av det har vi aktiverat stöd för sökning av protokoll oberoende (vilket betyder att du kan söka efter en URL utan http). Som standard mappas URL-sökning till http, om inget annat anges. Till exempel:
+
+  a.    Sök med och utan `http://` prefix i "URL", "URL Domain" och "URL Domain and Path", filter fält. Det här är konsekvent och bör visa samma resultat.
+  b.    Sök efter `https://` prefixet i "URL". När det inte `http://` anges används prefixet.
+  c.     `/` i början och slutet av "URL-sökväg", "URL-domän", "URL-domän och sökväg" ignoreras. `/` i slutet av fältet "URL" ignoreras. 
+
+### <a name="phish-confidence-level"></a>Phish konfidensnivå
+
+Phish konfidensnivå hjälper dig att identifiera graden av förtroende, med vilken ett e-postmeddelande kategoriserats som Phish. De två möjliga värdena är hög och normal. I de inledande faserna är det här filtret bara tillgängligt i den Phish vyn av Threat Explorer.
+
+![Phish_Confidence_Level](../../media/Phish_Confidence_Level.png)
+
+### <a name="zap-url-signal"></a>ZAP URL-signal 
+
+Används vanligt vis för Phish varnings scenarier där en e-postadress identifierades som Phish och togs bort efter leverans. Detta används för att koppla aviseringen med motsvarande resultat i Utforskaren. Det är en av IOCs för aviseringen. 
+
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Upplev förbättringar av Threat Explorer och Real-Time identifieringar
 
 Som en del av att förbättra jakt processen har vi gjort några uppdateringar för Threat Explorer och Real-Time identifieringar. Det här är en "Experience" förbättringar, med fokus på att göra jakt upplevelsen mer enhetlig. Dessa ändringar beskrivs nedan:
@@ -59,13 +154,14 @@ Som en del av att förbättra jakt processen har vi gjort några uppdateringar f
 
 ### <a name="timezone-improvements"></a>Förbättringar av tidszon
 
-Vi kommer att Visa tids zonen för e-postmeddelandena i portalen samt för exporterade data. Tids zonen visas i upplevelser som e-postrutnät, information utfällbar, e-posttids linje och liknande e-postmeddelanden, så att tids zonen för resultat uppsättningen är klar för användaren.
+Du kommer att se tids zonen för e-postmeddelandena i portalen samt för exporterade data. Tids zonen visas i upplevelser som e-postrutnät, information utfällbar, e-posttids linje och liknande e-postmeddelanden, så att tids zonen för resultat uppsättningen är klar för användaren.
 
 ![Visa tids zonen i Utforskaren](../../media/TimezoneImprovements.png)
 
 ### <a name="update-in-the-refresh-process"></a>Uppdatera i uppdaterings processen
 
 Vi har hört att få feedback kring förvirring med automatisk uppdatering (t. ex. för datum så fort du ändrar datumet kommer sidan att uppdateras) och manuell uppdatering (för andra filter). På samma sätt kan borttagning av filter leda till automatisk uppdatering, vilket gör att situationer där det går att ändra de olika filtren när du ändrar frågan är inkonsekventa Sök upplevelser. För att lösa det här flyttar vi till en manuell filtrerings funktion.
+
 Från en miljö synpunkt kan användaren tillämpa och ta bort det olika intervallet med filter (från filter uppsättning och datum) och klicka på knappen Uppdatera för att filtrera resultaten när de har definierats. Knappen Uppdatera har också uppdaterats så att den visas tydligt på skärmen. Vi har också uppdaterat beskrivningar och dokumentation i produkten kring den här ändringen.
 
 ![Klicka på Uppdatera för att filtrera resultat](../../media/ManualRefresh.png)

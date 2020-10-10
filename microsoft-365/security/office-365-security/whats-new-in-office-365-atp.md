@@ -17,15 +17,15 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-office365
 ms.topic: conceptual
-ms.date: 09/10/2020
+ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 5bbbda8b2fb13351d0b86d1670910cbaa52ad8cb
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab987652082c93a82fa5bcbd4667f26291c6e9d7
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413264"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417292"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nyheter i Office 365 ATP
 
@@ -47,7 +47,8 @@ Den här artikeln innehåller de nya funktionerna i den senaste versionen av Off
 - [Åsidosätt filter manuellt verdicts med listan Tillåt/blockera klient organisation](tenant-allow-block-list.md)
 - [Utökade funktioner i Threat Explorer, inklusive Top riktade användare, transport regler och anslutningar](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP-abonnemang 2)
 - Visa åsidosätter information i [Threat Explorer](threat-explorer.md) (e-post tillåts/blockerades av innehavaren/användar policyn)
-- Visa URL-hot i [Threat Explorer](threat-explorer.md) (skadlig program vara, Phish, spam eller ingen) 
+- Visa URL-hot i [Threat Explorer](threat-explorer.md#threats-in-urls) (skadlig program vara, Phish, spam eller ingen) 
+- [Förbättringar av problem med att](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) läsa en Threat-upplevelse med uppdateringar kring hot, ytterligare åtgärder, leverans ställen och uppdaterad tidslinjevy
 
 ## <a name="julyaugust-2020"></a>Juli 2020 
 

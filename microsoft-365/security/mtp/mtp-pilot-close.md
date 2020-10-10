@@ -17,14 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-scenario
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: ec8e630c3669b3eb7af8cb012a0ca361f8c77f1e
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: 1a7b87432ce1eb16c29f462fb4865bfa5c5e2201
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368019"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418103"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>Stänga och sammanfatta ditt Microsoft Threat Protection pilot  
 
@@ -76,7 +77,7 @@ ms.locfileid: "48368019"
 
 Du befinner dig i steget avsluta och summera.
 
-Du har precis simulerat ett avancerat minnes angrepp som kördes med kod på en domänkontrollant. Du har sett att Microsoft Defender ATP och Azure ATP upptäcker och varnar för stealthy uppsåtlig aktivitet. Du har också sett hur aviseringar från olika källor levereras tillsammans med annan kontextuell information till en enda händelse i Microsoft 365 Security Center-portalen, så att SOC-analytiker kan undersöka och vidta nödvändiga åtgärder. Du har också skapat en avancerad jakt fråga som identifierar inkommande e-postmeddelanden där användaren öppnade eller sparade den bifogade filen och skapade identifiering som baseras på den frågan.
+Du har precis kört en avancerad simulering av minnes attacker som kördes på en fjärrdator på en domänkontrollant. Du har sett hur Microsoft Defender ATP och Azure ATP identifierar och skapar aviseringar för stealthy uppsåtlig aktivitet. Du har också sett hur aviseringar från olika källor levereras tillsammans med annan kontextuell information till en enda olycka i Microsoft 365 Security Center-portalen. Tack vare denna integrering kan SOC analytiker undersöka och vidta nödvändiga åtgärder. Du har också skapat en avancerad jakt fråga som identifierar inkommande e-postmeddelanden där användaren öppnade eller sparade den bifogade filen och skapade identifiering som baseras på den frågan.
 
 Du har nått slutet av processen efter att alla tester har genomförts.
 
@@ -86,9 +87,9 @@ De slutliga resultaten ska vara:
 - En detaljerad rapport om resultatet av piloten
 - Ett beslut om hur du flyttar framåt
 
-Denna information bör presenteras för både interna intressenter (som du har identifierat under [förberedelse](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) fasen) och Microsoft-kontakter. Detta garanterar att all feedback kan användas för att förbättra produkter och dokumentation.
+Presentera rapporterna från dina slutliga utdata både för interna intressenter (som du har identifierat under [förberedelse](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) fasen) och Microsoft-kontakter. Sådant arbete garanterar att all feedback kan användas för att förbättra produkter och dokumentation.
 
-Vi hoppas du gillade den här simuleringen och uppmuntrar att börja implementera det du har lärt dig.
+Vi hoppas du gillade den här simuleringen. Börja implementera det du har lärt dig på en större skala för att få ut mesta möjliga av den integrerade säkerhets lösningen.
 
 ## <a name="next-step"></a>Nästa steg
 Läs mer om Microsoft Threat Protectionspel genom följande interaktiva stöd linjer:

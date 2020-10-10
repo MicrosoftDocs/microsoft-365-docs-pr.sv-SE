@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig att visa och hantera meddelanden i karantän för alla användare i Exchange Online Protection (EOP). Administratörer i organisationer med Office 365 Avancerat skydd (Office 365 ATP) kan även hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams.
-ms.openlocfilehash: 1969a282d5d083886b9ad5a8aae54896ea9b1fc1
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 7e9b49e7e7a90f5271a65bb26cecdd1a7ce2ab84
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202429"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417217"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Hantera meddelanden och filer i karantän som administratör i EOP
 
@@ -65,25 +65,15 @@ Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav 
 3. Du kan sortera resultaten genom att klicka på en tillgänglig kolumnrubrik. Klicka på **Ändra kolumner** för att visa högst sju kolumner. Standardvärdena är markerade med en asterisk (<sup>\*</sup>):
 
    - **Mottaget**<sup>\*</sup>
-
    - **Avsändare**<sup>\*</sup>
-
    - **Ämne**<sup>\*</sup>
-
    - **Orsak till karantän**<sup>\*</sup>
-
    - **Släppt?**<sup>\*</sup>
-
    - **Principtyp**<sup>\*</sup>
-
    - **Mottagare**
-
    - **Meddelande-ID**
-
    - **Principnamn**
-
    - **Storlek**
-
    - **Riktning**
 
    Klicka på **Spara** eller på **Ställ in på standard** när du är klar.
@@ -91,29 +81,19 @@ Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav 
 4. Om du vill filtrera resultaten klickar du på **Filter**. Följande filter är tillgängliga:
 
    - **Upphör att gälla**: Filtrera meddelanden efter när de kommer att upphöra från karantänen:
-
      - **I dag**
-
      - **Kommande 2 dagarna**
-
      - **Kommande 7 dagarna**
-
      - **Anpassad**: Ange ett **Startdatum** och **Slutdatum**.
 
    - **Togs emot**: Ange ett **Startdatum** och **Slutdatum**.
 
    - **Orsak till karantän**:
-
      - **Princip**: meddelandet överensstämde med villkoren i en regel för e-postflöde (kallas även för transport regel).
-
      - **Bulk** (Massutskick)
-
-     - **Nätfiske**
-
+     - **Phish**: skräp post filtret Verdict var ett **nät fiske** meddelande eller skydd mot nätfiske ([Spoof inställningar](set-up-anti-phishing-policies.md#spoof-settings) eller [personifieringstoken](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)).
      - **Program**
-
      - **Skräppost**
-
      - **Hög exakthet Phish**
 
    - **E-postmottagare**: alla användare eller bara meddelanden som skickas till dig. Slutanvändare kan bara hantera skickade meddelanden till dem.
@@ -175,11 +155,8 @@ När du har valt ett meddelande har du flera alternativ för vad du kan göra me
   - **Rapportera meddelanden till Microsoft för analys**: det här är markerat som standard och rapporterar det felaktiga meddelandet till Microsoft som ett falskt positivt tal. Om meddelandet sattes i karantän som skräp post, bulk, nätfiske eller innehåller skadlig program vara, rapporteras meddelandet också till Microsoft spam-gruppen. Beroende på vilken analys de har, kan de globala skräp post filter reglerna justeras så att de tillåter meddelandet.
 
   - Välj något av följande alternativ:
-
     - **Släpp meddelanden till alla mottagare**
-
     - **Släpp meddelanden till specifika mottagare**
-
     - **Släppa meddelanden till andra personer**
 
   Klicka på **Släpp meddelandet** när du är klar.
@@ -195,7 +172,6 @@ När du har valt ett meddelande har du flera alternativ för vad du kan göra me
 - **Förhandsgranska meddelandet**: Välj något av följande alternativ i den utfällbara rutan som visas:
 
   - **Källvy**: Visar HTML-versionen av meddelandetexten med alla länkar inaktiverade.
-  
   - **Textvy**: Visar meddelandetexten som oformaterad text.
 
 - **Ta bort från karantän**: när du klickar på **Ja** i den varning som visas, tas meddelandet omedelbart bort utan att skickas till de ursprungliga mottagarna.
@@ -245,37 +221,23 @@ I organisationer med ATP kan administratörer hantera filer i karantän i ShareP
 3. Du kan sortera resultaten genom att klicka på en tillgänglig kolumnrubrik. Klicka på **Ändra kolumner** för att visa högst sju kolumner. Standard kolumnerna är markerade med en asterisk ( <sup>\*</sup> ):
 
    - **Användarläge**<sup>\*</sup>
-
    - **Plats**<sup>\*</sup>
-
    - **Fil namn**<sup>\*</sup>
-
    - **Fil-URL**<sup>\*</sup>
-
    - **Fil storlek**<sup>\*</sup>
-
    - **Upphör**<sup>\*</sup>
-
    - **Släppt?**<sup>\*</sup>
-
    - **Identifieras av**
-
    - **Ändrad efter tid**
 
 4. Om du vill filtrera resultaten klickar du på **Filter**. Följande filter är tillgängliga:
 
    - **Upphör att gälla**: Filtrera meddelanden efter när de kommer att upphöra från karantänen:
-
      - **I dag**
-
      - **Kommande 2 dagarna**
-
      - **Kommande 7 dagarna**
-
      - Ett anpassat datum-och tidsintervall.
-
    - **Mottaget**
-
    - **Karantän orsak**: det enda tillgängliga värdet är **skadlig program vara**.
 
 När du har hittat en viss fil i karantän väljer du filen för att visa information om den och för att utföra en åtgärd på den (till exempel Visa, släppa, ladda ned eller ta bort meddelandet).
@@ -293,29 +255,17 @@ När du har hittat en viss fil i karantän väljer du filen för att visa inform
 När du väljer en fil i listan visas följande fil information i fönstret **detaljerad information** :
 
 - **Fil namn**
-
 - **URL: URL**som definierar filens plats (till exempel i SharePoint Online).
-
 - **Skadligt innehåll upptäcktes på** Det datum/den tid då filen sattes i karantän.
-
 - **Upphör**: det datum då filen ska tas bort från karantänen.
-
 - **Identifierat av**: ATP (avancerat skydd) eller Microsoft-programmet mot skadlig program vara.
-
 - **Släppt?**
-
 - **Namn på skadlig kod**
-
 - **Dokument-ID**: ett unikt ID för dokumentet.
-
 - **Fil storlek**: i KILOBYTE (KB).
-
 - **Organisation** Organisationens unika ID.
-
 - **Senast ändrad**
-
 - **Ändrad av**: den användare som senast ändrade filen.
-
 - **Secure Hash Algorithm 256-bit (SHA-256) värde**: du kan använda det här hashvärdet för att identifiera filen i andra ryktes butiker eller på andra platser i miljön.
 
 ### <a name="take-action-on-quarantined-files"></a>Vidta en åtgärd för filer i karantän
@@ -323,9 +273,7 @@ När du väljer en fil i listan visas följande fil information i fönstret **de
 När du väljer en fil i listan kan du utföra följande åtgärder på filen i fönstret **detaljerad information** :
 
 - **Släpp filer**: Välj (standard) eller avmarkera **rapportera filer till Microsoft för analys**och klicka sedan på **släpp filer**.
-
 - **Ladda ner fil**
-
 - **Ta bort fil från karantän**
 
 Om du inte släpper eller tar bort filerna tas de bort när standard perioden för karantän lagring upphör.
@@ -335,7 +283,6 @@ Om du inte släpper eller tar bort filerna tas de bort när standard perioden f�
 När du markerar flera filer i karantän i listan (upp till 100) visas utfällda **Mass åtgärder** -fönstret där du kan vidta följande åtgärder:
 
 - **Släpp filer**
-
 - **Ta bort filer**: när du har klickat på **Ja** i varningen som visas tas filerna bort omedelbart.
 
 1. Använd ett arbets-eller skol konto som har global administratörs behörighet (eller lämpliga roller för säkerhets & efterlevnadsprinciper) i din organisation, logga in och [gå till säkerhets & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).

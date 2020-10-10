@@ -17,14 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-overview
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 3d7156dfe65e9479f2505d196790800c6afd1f2a
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: af47f45ca4f3d14e835a39a334a9400002ac8560
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367971"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418079"
 ---
 # <a name="run-your-pilot-microsoft-threat-protection-project"></a>Kör ditt pilot Microsoft Threat Protection Project 
 
@@ -39,7 +40,7 @@ För att effektivt fastställa fördelarna och antagandet av Microsoft Threat Pr
 
 ## <a name="how-to-use-this-pilot-playbook"></a>Så här använder du pilot Playbook
 
-I den här guiden får du en översikt över Microsoft Threat Protection och steg-för-steg-instruktioner om hur du konfigurerar pilot projektet. 
+I den här guiden får du en översikt över Microsoft Threat Protection och stegvisa instruktioner om hur du konfigurerar pilot projektet. 
 
 ![Faser i en Microsoft Threat Protection pilot](../../media/pilotphases.png)
 

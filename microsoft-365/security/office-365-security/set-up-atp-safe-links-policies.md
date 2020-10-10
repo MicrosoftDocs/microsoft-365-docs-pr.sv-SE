@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur du visar, skapar, ändrar och tar bort principer för säkra länkar och globala inställningar för säkra länkar i Office 365 Avancerat skydd (ATP).
-ms.openlocfilehash: b6b013364fc763450ac8bef0d06bd2fad8d55daa
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: cf60820297401de92781a48f22f70d1f503e3097
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350725"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417259"
 ---
 # <a name="set-up-safe-links-policies-in-office-365-atp"></a>Konfigurera principer för säkra länkar i Office 365 ATP
 
@@ -88,9 +88,9 @@ Om du skapar en anpassad princip för säkra länkar i säkerhets & Compliance C
 
 4. På sidan **Inställningar** som visas konfigurerar du följande inställningar:
 
-   - **Välj åtgärd för okända URL-adresser i meddelanden**: Välj **på**.
+   - **Välj åtgärd för okända URL-adresser i meddelanden**: Välj **på** för att aktivera skydda Länkar för länkar i e-postmeddelanden.
 
-   - **Välj åtgärd för okända URL-adresser i meddelanden**: **Välj eller låt** **standardvärdet** vara markerat.
+   - **Välj åtgärd för okända eller potentiellt skadliga URL-adresser i Microsoft Teams**: Välj **på** för att aktivera skydd mot säkra Länkar för länkar i team.
 
    - **Använda URL-genomsökning i real tid för misstänkta länkar och länkar som pekar på filer**: Välj den här inställningen för att aktivera genomsökning i real tid med länkar i e-postmeddelanden.
 

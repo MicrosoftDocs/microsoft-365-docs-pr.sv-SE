@@ -17,14 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-scenario
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 7d1870d1b8972009bed657f476810ca011dc2621
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: e62b4ec0ee6c9d05321accf269406e8127019f5b
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367983"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418115"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>Planera pilotmaterial Microsoft Threat Protection Project 
 
@@ -119,7 +120,7 @@ Villkoren för framgång är i sista hand för att mäta det du testar. Oavsett 
 
 Ett sätt att samla ihop alla element i planen är att skapa ett styrkort. Visa ett exempel på ett styrkort nedan:
 
-|**Användnings fall**|**Krav**|**Konfigurations krav**|**Test plan**|**Förväntat resultat**|**Test status**|**Poäng**|**Kommentarer**|
+| Användnings fall | Krav | Konfigurations krav | Test plan | Förväntat resultat | Test status | Poäng | Kommentarer |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |Ärende hantering|-Skydd mot Microsoft Threat </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Säkerhet för Microsoft Cloud App (valfritt)|Se [förutsättningarna](https://aka.ms/mtp-trial-lab) för förberedelse, konfigurering och konfiguration för information |[Simulera attack](mtp-pilot-simulate.md) <br></br>[Undersök problemet](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |Prövare kan förstå omfattningen och konsekvenserna av incidenten och hantera händelsen||||
 |AutoIR|-Skydd mot Microsoft Threat </br></br>-Azure ATP </br></br>-Microsoft Defender ATP |Se [förutsättningarna](https://aka.ms/mtp-trial-lab) för förberedelse, konfigurering och konfiguration för information <br>Aktivera AutoIR  |[Simulera attack](mtp-pilot-simulate.md) <br></br>[Automatisk undersökning](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Aviseringar och händelser åtgärdas automatiskt av skydd mot Microsoft Threat||||

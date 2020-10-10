@@ -26,12 +26,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: I den här artikeln kan administratörer lära sig skydda länkar i Office 365 Avancerat skydd (ATP) för att skydda sin organisation från nätfiske och andra attacker som använder skadlig URL.
-ms.openlocfilehash: c933ce48483f0263650d0af2994023dfcb24fadf
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 7b10a941d63fd654a61c6d6ec78869f4bafb3edd
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414124"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417261"
 ---
 # <a name="safe-links-in-office-365-atp"></a>Säkra länkar i Office 365 ATP
 
@@ -150,7 +150,7 @@ På en hög nivå finns här hur säkra länkar skyddar sig på URL-adresser i e
 ## <a name="safe-links-settings-for-microsoft-teams"></a>Inställningar för säkra Länkar för Microsoft Teams
 
 > [!IMPORTANT]
-> Från och med mars 2020 är den här funktionen i förhands granskning och är endast tillgänglig för medlemmar i Microsoft Teams-programmet (KNACKa).
+> Från och med mars 2020 är den här funktionen i förhands granskning och är endast tillgänglig för medlemmar i Microsoft Teams-programmet (KNACKa). Information om versions schema finns i [Microsoft 365-översikten](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams).
 
 Du aktiverar eller inaktiverar skydd för säkra Länkar för Microsoft Teams i principer för säkra länkar. Du använder specifikt **åtgärden Välj åtgärd för okända eller potentiellt skadliga URL-adresser i Microsoft Teams** . Det rekommenderade värdet är **på**.
 
