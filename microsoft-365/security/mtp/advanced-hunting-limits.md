@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: aaba01f5970c9abf55f5fae760d1ba1fed8ba914
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ad21b4241d7cbbcc85639a0a10b47971e5fcebcb
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199883"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412700"
 ---
 # <a name="advanced-hunting-service-limits"></a>Begränsningar för avancerad jakt tjänst
 
@@ -30,7 +32,7 @@ ms.locfileid: "48199883"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft Threat Protection
 
 För att hålla tjänsten igång och svarar kan avancerade jakt uppsättningar olika gränser för frågor som körs manuellt och enligt [anpassade identifierings regler](custom-detection-rules.md). Se tabellen nedan för att förstå dessa gränser.
 

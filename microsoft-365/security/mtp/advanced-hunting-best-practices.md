@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: af9579b94314375aa786782ea477bb11b0cd9c0b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 522f4900bb9d2746c16eaf2172d756e2517e75c3
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198219"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412256"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Metod tips för avancerad jakt frågor
 
@@ -30,7 +32,7 @@ ms.locfileid: "48198219"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft Threat Protection
 
 Använd dessa rekommendationer för att få snabbare resultat och undvika tids gränser när komplexa frågor körs. För mer information om hur du förbättrar frågeresultatet kan du läsa [Kusto metod tips](https://docs.microsoft.com/azure/kusto/query/best-practices).
 

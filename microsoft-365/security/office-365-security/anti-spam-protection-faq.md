@@ -1,5 +1,5 @@
 ---
-title: Vanliga frågor om skydd mot skräppost
+title: Vanliga frågor och svar om skydd mot skräppost
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,17 +14,18 @@ search.appverid:
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
+- m365-initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan se vanliga frågor och svar om skydd mot skräp post i Exchange Online Protection (EOP).
-ms.openlocfilehash: d114c20a3a246eb0cd925b6783b10071d056443d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c6ad0bf903ef7283415035581ed11ecb6e4336bd
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198613"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48411860"
 ---
-# <a name="anti-spam-protection-faq"></a>Vanliga frågor om skydd mot skräppost
+# <a name="anti-spam-protection-faq"></a>Vanliga frågor och svar om skydd mot skräppost
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 

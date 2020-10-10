@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6922f50906013cfbfa3bd63c69fff3e89ed46cd5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 94afa9e36ca75491511338297f02e8031333e53f
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196831"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412748"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -30,7 +32,7 @@ ms.locfileid: "48196831"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft Threat Protection
 
 `IdentityInfo`Tabellen i det [avancerade jakt](advanced-hunting-overview.md) -schemat innehåller information om användar konton som hämtas från olika tjänster, inklusive Azure Active Directory. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 

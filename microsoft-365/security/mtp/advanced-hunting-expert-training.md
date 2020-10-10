@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 7db1854534964928b622a7c2f47d07654472f048
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f06cb4190f8932f3a472356ba45adcc3bc35423c
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197971"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413324"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Få expert utbildning om avancerad jakt
 
@@ -30,7 +32,7 @@ ms.locfileid: "48197971"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft Threat Protection
 
 Öka dina kunskaper om Avancerat jakt snabbt med _spårning av adversary_, en webb sändnings serie för nya säkerhets analyser och hotade hot Hunters. Serien vägleder dig genom grunderna för att skapa dina egna avancerade frågor. Börja med den första videon på grunderna eller gå till mer avancerade videor som passar din upplevelse.
 

@@ -16,16 +16,17 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
 ms.date: 09/16/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 2131af5e35aa0cf9f236940d2b4aaa2bed85190a
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ee5616f79df35ebff2713538bae7fb42fd755287
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199787"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413584"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-threat-protection"></a>Automatisk undersökning och svar i skydd mot Microsoft Threat
 
@@ -33,7 +34,7 @@ ms.locfileid: "48199787"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft Threat Protection
 
 När säkerhets varningar utlöses är det upp till din säkerhets åtgärds grupp för att titta på dessa meddelanden och vidta åtgärder för att skydda din organisation. Det kan ta väldigt lång tid att prioritera och undersöka aviseringar, särskilt när nya meddelanden fortsätter när en undersökning pågår. Säkerhets Operations team kan känna av sig som skir volymen av de hot som de måste övervaka och skydda mot. Automatiserade undersökningar och svars funktioner, med själv återställning, kan hjälpa dig.
 

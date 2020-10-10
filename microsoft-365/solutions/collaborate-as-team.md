@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Lär dig mer om de Microsoft 365-konfigurations steg som behövs för att konfigurera ett team för samarbete med gäster i Teams.
-ms.openlocfilehash: e92397c7b8d4a4192fb36a52a76679269be53b3b
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 7a2259358d6976184d393980b2b7c0320c3bb171
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357800"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48409054"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Samar beta med gäster i ett team
 
@@ -37,7 +37,7 @@ I den här videon visas de konfigurations steg som beskrivs i det här dokumente
 
 ## <a name="azure-organizational-relationships-settings"></a>Inställningar för Azure organisations relationer
 
-Delning i Microsoft 365 regleras på högsta nivå av [organisations Relations inställningarna i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Om gäst delning är inaktiverat eller begränsat i Azure AD åsidosätter detta eventuella delnings inställningar som du konfigurerar i Microsoft 365.
+Delning i Microsoft 365 regleras på högsta nivå av [organisations Relations inställningarna i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Om gäst delning är inaktiverat eller begränsat i Azure AD åsidosätter den här inställningen eventuella delnings inställningar som du konfigurerar i Microsoft 365.
 
 Kontrol lera inställningarna för organisations relationer för att säkerställa att delning med gäster inte blockeras.
 
@@ -45,10 +45,10 @@ Kontrol lera inställningarna för organisations relationer för att säkerstäl
 
 Så här anger du inställningar för organisations relationer
 
-1. Logga in på Microsoft Azure på [https://portal.azure.com](https://portal.azure.com) .
-2. I det vänstra navigerings fältet klickar du på **Azure Active Directory**.
-3. I fönstret **Översikt** klickar du på **externa identiteter**.
-4. Klicka på **Inställningar för extern samarbete**i fönstret **organisationens identiteter** .
+1. Logga in på Azure Active Directory på [https://aad.portal.azure.com](https://aad.portal.azure.com) .
+2. I det vänstra navigerings fönstret klickar du på **Azure Active Directory**.
+3. Klicka på **externa identiteter**.
+4. Klicka på **Inställningar för extern samarbete**i det vänstra navigerings fönstret på skärmen **Kom igång** .
 5. Kontrol lera att **Administratörer och användare i rollen för att bjuda in gäst kan bjuda** in och **medlemmar kan bjuda** in till **Ja**.
 6. Om du har gjort ändringar klickar du på **Spara**.
 
@@ -67,14 +67,14 @@ Kontrol lera att gäst åtkomst är aktive rad i Teams och gör eventuella juste
 Att ange inställningar för gäståtkomst i Teams
 
 1. Logga in på Administrationscenter för Microsoft 365 på [https://admin.microsoft.com](https://admin.microsoft.com).
-2. Klicka på **Visa alla** i det vänstra navigeringsfönstret.
+2. I det vänstra navigerings fönstret klickar du på **Visa alla**.
 3. Under **Administrationscenter**klickar du på **Teams**.
-4. Expandera **Inställningar för hela organisationen** och klicka på **Gäståtkomst** i Teams Administrationscenter i vänstra navigeringsfönstret.
+4. I administrations centret för Teams, i det vänstra navigerings fönstret, expanderar du **Inställningar för hela organisationen** och klickar på **gäst åtkomst**.
 5. Kontrollera att **Tillåt gäståtkomst i Teams** är inställt på **På**.
 6. Gör önskade ändringar i de ytterligare gästinställningarna och klicka sedan på **Spara**.
 
 > [!NOTE]
-> Det kan ta upp till 24 timmar för gästinställningar i Teams att bli aktiva när du har aktiverat det.
+> Det kan ta upp till 24 timmar innan gäst inställningarna blir aktiva när du har aktiverat det.
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Inställningar för Microsoft 365-grupper
 
@@ -84,10 +84,10 @@ Teams använder Microsoft 365 Groups för grupp medlemskap. Inställningarna fö
 
 Ange inställningar för Microsoft 365-grupper
 
-1. I det vänstra navigerings fältet i administrations centret för Microsoft 365 expanderar du **Inställningar**.
+1. Expandera **Inställningar**i det vänstra navigerings fönstret i administrations centret för Microsoft 365.
 2. Klicka på **org Settings**.
 3. I listan klickar du på **Microsoft 365 Groups**.
-4. Kontrol lera att **grupp medlemmarna utanför din organisation får grupp innehållet** och **låta grupp ägarna lägga till personer utanför organisationen för grupper** markerar båda kryss rutorna.
+4. Kontrol lera att **gruppen låt grupp ägarna lägger till personer utanför organisationen till Microsoft 365-grupper som gäster** och **Låt grupp medlemmarna i gruppen för gäst grupps medlemmar** vara markerade.
 5. Om du har gjort ändringarna klickar du på **Spara ändringar**.
 
 
@@ -102,21 +102,21 @@ Om du vill tillåta fil-och mappdelning med oautentiserade personer väljer du *
 ![Skärmbild av delningsinställningar för SharePoint på organisationsnivå](../media/sharepoint-organization-external-sharing-controls.png)
 
 
-Så här anger du delnings inställningar för SharePoint-organisationnivå
+Så här anger du delnings inställningar för SharePoint på organisations nivå
 
 1. Klicka på **SharePoint**i det vänstra navigerings fältet **i administrations**centret för Microsoft 365.
-2. I det vänstra navigerings fältet i administrations centret för SharePoint expanderar du **principer** och klickar sedan på **delning**.
+2. Expandera **principer** i det vänstra navigerings fönstret i administrations centret för SharePoint och klicka sedan på **delning**.
 3. Kontrol lera att extern delning för SharePoint är inställt på **vem som helst** eller **nya och befintliga gäster**.
 4. Om du har gjort ändringar klickar du på **Spara**.
 
 
-## <a name="sharepoint-organization-level-default-link-settings"></a>Standardinställningar för inställningar för SharePoint-organisations nivå
+## <a name="sharepoint-organization-level-default-link-settings"></a>Inställningar för SharePoint-standardinställningar på organisations nivå
 
-Standardinställningen för fil-och mappikonen bestämmer vilken länk som visas som standard för användaren när de delar en fil eller mapp. Användare kan ändra länktyp till något av de andra alternativen innan de delas om så önskas.
+Standardinställningen för fil-och mappikonen styr det länk alternativ som visas för användarna som standard när de delar en fil eller mapp. Användare kan ändra länktyp till något av de andra alternativen innan de delas, om så önskas.
 
 Tänk på att den här inställningen påverkar alla team och SharePoint-webbplatser i organisationen.
 
-Välj den typ av länk som är markerad som standard när användarna delar filer och mappar:
+Välj någon av följande länk typer som visas som standard när användare delar filer och mappar:
 
 - **Vem som helst med länken** – Välj det här alternativet om du förväntar dig att göra en massa delning av filer och mappar. Om du vill tillåta *alla* länkar, men är bekymrad över oavsiktlig autentisering, bör du överväga något av de andra alternativen som standard. Den här länk typen är bara tillgänglig om du har aktiverat **någon** delning.
 - **Endast personer i organisationen** – Välj det här alternativet om du tror att de flesta fil-och mappdelning är med i din organisation.
@@ -125,7 +125,7 @@ Välj den typ av länk som är markerad som standard när användarna delar file
 ![Skärmbild av delningsinställningar för filer och mappar för SharePoint på organisationsnivå](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
-Så här anger du inställningar för standardinställningar för SharePoint-organisations nivå
+Så här anger du inställningar för standard länken för SharePoint på organisations nivå
 
 1. Gå till sidan delning i administrations centret för SharePoint.
 2. Under **fil-och mappaktiviteter**väljer du den standard delnings länk som du vill använda.
@@ -145,7 +145,7 @@ Skapa ett team
 
 Vi bjuder in användare senare. Sedan är det viktigt att kontrol lera delnings inställningarna på webbplats nivå för SharePoint-webbplatsen som är kopplad till gruppen.
 
-## <a name="sharepoint-site-level-sharing-settings"></a>Delnings inställningar för SharePoint-webbplats nivå
+## <a name="sharepoint-site-level-sharing-settings"></a>Delnings inställningar på SharePoint-webbplats nivå
 
 Kontrol lera inställningarna för delning av webbplats nivå för att se till att de tillåter åtkomst typen för det här teamet. Om du till exempel ställer in inställningar på organisations nivå till **vem som helst**, men vill att alla gäster ska autentiseras för det här teamet, kontrollerar du att inställningarna för delning av webbplats nivå är inställda på **nya och befintliga gäster**.
 
@@ -153,9 +153,9 @@ Kontrol lera inställningarna för delning av webbplats nivå för att se till a
 
 
 Ange delnings inställningar på webbplats nivå
-1. I navigeringsfönstret till vänster i administrationscentret för SharePoint expanderar du **Webbplatser** och klickar på **Aktiva webbplatser**.
+1. I administrations centret för SharePoint, i det vänstra navigerings fönstret, expanderar du **webbplatser** och klickar på **aktiva webbplatser**.
 2. Välj webbplatsen för det team som du just har skapat.
-3. Klicka på **Delning** i menyfliksområdet.
+3. Klicka på... och välj **dela**.
 4. Kontrol lera att delning är inställt på **vem som helst** eller **nya och befintliga gäster**.
 5. Om du har gjort ändringar klickar du på **Spara**.
 

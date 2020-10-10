@@ -2,9 +2,9 @@
   items:
     - name: Introduktion till SharePoint Syntex
       href: index.md
-    - name: Översikt över dokument förståelse
+    - name: Översikt av dokumenttolkning
       href: document-understanding-overview.md
-    - name: Översikt över formulär bearbetning
+    - name: Översikt av formulär bearbetning
       href: form-processing-overview.md
     - name: Skillnader mellan modeller för dokumenttolkning och modeller för formulärbearbetning
       href: difference-between-document-understanding-and-form-processing-model.md
@@ -12,13 +12,13 @@
   items:
     - name: Lär dig mer om modeller genom exempel modellen
       href: learn-about-document-understanding-models-through-the-sample-model.md
-    - name: Skapa ett innehålls Center
+    - name: Skapa ett innehållscenter
       href: create-a-content-center.md
     - name: Skapa en klassificerare
       href: create-a-classifier.md
     - name: Skapa en extraktor
       href: create-an-extractor.md
-    - name: Förklaringar
+    - name: Förklaringstyper
       href: explanation-types-overview.md
     - name: Använda en modell
       href: apply-a-model.md
@@ -26,11 +26,11 @@
       href: create-a-form-processing-model.md
     - name: Använda en bevarande etikett
       href: apply-a-retention-label-to-a-model.md
-    - name: Modell för användnings analys
+    - name: Modell för användningsanalys
       href: model-usage-analytics.md
-    - name: Använda term lagrings taxonomi när du skapar en Extractor
+    - name: Använda termlagringstaxonomi vid skapande av extraktor
       href: leverage-term-store-taxonomy.md
-- name: Man
+- name: Integrering
   items:
     - name: Komma igång med antagandet
       href: adoption-getstarted.md
@@ -38,8 +38,6 @@
   items:
     - name: Ställa in innehållstolkning
       href: set-up-content-understanding.md
-    - name: Bild markeringar
-      href: image-tagging.md
 - name: Innehålls tjänster
   items:
     - name: Importera med SKOS

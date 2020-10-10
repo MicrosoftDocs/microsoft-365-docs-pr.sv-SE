@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: cb838e81752abddc9b8cc08bb9bd6f6c33e2beb0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 17a7e2ed8e2124bc3ca820cedee7c4f89403d717
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198043"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413144"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -30,7 +32,7 @@ ms.locfileid: "48198043"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft Threat Protection
 
 
 
@@ -47,9 +49,9 @@ Information om andra tabeller i det avancerade jakt schema [finns i referens fö
 | `EmailId` | strängvärdet | Unikt ID för e-post och mottagare |
 | `NetworkMessageId` | strängvärdet | Unik identifierare för e-postmeddelandet, genererat av Microsoft 365 |
 | `InternetMessageId` | strängvärdet | Public-Facing ID för e-postmeddelandet som anges i det sändande e-postsystemet |
-| `SenderMailFromAddress` | strängvärdet | Avsändarens e-postadress i e-postmeddelandet från huvudet, som kallas avsändare eller avsändar adress |
+| `SenderMailFromAddress` | strängvärdet | Avsändarens e-postadress i e-postmeddelandet från huvudet, även kallat kuvert avsändare eller Return-Path adress |
 | `SenderFromAddress` | strängvärdet | Avsändarens e-postadress i formuläret från som visas för e-postmottagare på sina e-postklienter |
-| `SenderMailFromDomain` | strängvärdet | Avsändarens domän i e-post från huvudet, som även kallas kuvert avsändare eller avsändar adress |
+| `SenderMailFromDomain` | strängvärdet | Avsändarens domän i e-post från huvudet, kallas även för kuvert avsändaren eller Return-Path adress |
 | `SenderFromDomain` | strängvärdet | Avsändarens domän i formuläret från som visas för e-postmottagare på sina e-postklienter |
 | `SenderIPv4` | strängvärdet | IPv4-adress för den senast identifierade e-postservern som vidarebefordrade meddelandet |
 | `SenderIPv6` | strängvärdet | IPv6-adress för den senast identifierade e-postservern som vidarebefordrade meddelandet |

@@ -13,20 +13,21 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 description: Säkerhet i Office 365, från EOP till ATP-abonnemang 1 och 2, standard kontra strikta säkerhetskonfigurationer. Förstå vad du har och hur du skyddar dina egenskaper.
-ms.openlocfilehash: c5b357dc7a08eeef099b25172169d04cdb81e8c4
-ms.sourcegitcommit: 5abd5ef8c2903b4c3bd875da68049fde26768dcf
+ms.openlocfilehash: d650a02faa21ac6ade39506d2c423dd319951bef
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48359159"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413060"
 ---
 # <a name="office-365-security-overview"></a>Säkerhets översikt för Office 365
 
 I den här artikeln får du en introduktion till dina nya säkerhets egenskaper i molnet. Vare sig du är en del av ett säkerhets åtgärds Center är du en säkerhets administratör som är ny för utrymmet, eller så vill du att en uppdaterare kommer att komma igång.
 
 > [!CAUTION]
-> Hej. Om du använder **Outlook.com**, **Microsoft 365**eller **Microsoft 365 personal**och behöver *säkra länkar* eller information om *säkra bifogade filer* klickar du ***på den här länken***: [avancerad Outlook.com säkerhet för Microsoft 365-prenumeranter](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2). Tack!
+> Om du använder **Outlook.com**, **Microsoft 365**eller **Microsoft 365 personal**och behöver *säkra länkar* eller information om *säkra bifogade filer* klickar du ***på den här länken***: [avancerad Outlook.com säkerhet för Microsoft 365-prenumeranter](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 ## <a name="office-365-security-spelled-out"></a>Office 365-säkerheten har stavats bort
 

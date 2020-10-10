@@ -1,6 +1,6 @@
 ---
-title: Microsoft Hanterade skrivbord arkiverade enheter
-description: Enheter närmar pensionering som du fortfarande kan registrera men kommer att ha en förkortad livslängd
+title: Microsoft Managed Desktop-arkiverade enheter
+description: Enheter som är nära förtids pension som du fortfarande kan registrera men som kommer att ha kortare support tid
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -11,60 +11,64 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: acdca0a70fb28b10f053da8f79b4e37c9c7632f5
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 4bfda869972c5650a99395a5fd16c6ad7ddb4f11
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529929"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48409030"
 ---
-# <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft Hanterade skrivbord arkiverade enheter
+# <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft Managed Desktop-arkiverade enheter
 
-För att säkerställa bästa möjliga användarupplevelse drar Microsoft Managed Desktop tillbaka stöd för enheter vid en viss tidpunkt. Det här avsnittet listar enheter som närmar sig pension under de närmaste åren, som vi kallar "arkiverade". Om du kommer igång med Microsoft Managed Desktop med hjälp av enheter som du redan har bör du kontrollera listan noggrant.
+För att det ska fungera så bra som möjligt är det möjligt att hantera Microsoft Managed Station ära datorer för enheter på en viss plats. I det här avsnittet hittar du enheter som närmar sig till pension under de närmaste åren, som vi kallar "Arkiverad". Om du kommer igång med Microsoft Managed Desktop med enheter som du redan har, bör du kontrol lera listan noga.
 
 >[!IMPORTANT]
->Du kan fortfarande registrera dessa enheter idag, men de kommer att ha en kortare livslängd med Microsoft Managed Desktop. Om du köper nya enheter bör du använda modeller från [listan över aktiva enheter](./device-list.md).
+>Du kan fortfarande registrera dessa enheter i dag, men de har kortare livs längd med Microsoft Managed Desktop. Om du köper nya enheter bör du använda modeller från [listan med aktiva enheter](./device-list.md).
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-För att vara registrerad i Microsoft Managed Desktop måste en enhet vara en av följande modeller och uppfylla eller överskrida de angivna specifikationerna för RAM, processorfamilj och diskutrymme. Ingen annan anpassning stöds.
+För att vara registrerade på Microsoft Managed Desktop en enhet måste vara en av följande modeller och uppfylla eller överträffa specifikationerna för RAM-, processor familj och disk utrymme. Ingen annan anpassning stöds.
 
 
 
 >[!NOTE]
->I den här tabellen är "återlösensdatum" det datum då den här modellen inte längre kommer att stödjas av Microsoft Managed Desktop alls. Det datumet tas alla registrerade enheter i den här modellen bort från Microsoft Managed Desktop, oavsett när de registrerades.
+>I den här tabellen är "pensions datum" det datum då modellen inte längre stöds av Microsoft Managed Desktop alls. På det datumet tas alla registrerade enheter i den här modellen bort från Microsoft Managed Desktop, oavsett var de registrerade sig.
 
-#### <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft Hanterade skrivbord arkiverade enheter
+#### <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft Managed Desktop-arkiverade enheter
 
-| Modell  | Minsta specifikationer  | Ytterligare krav  | Pensioneringsdatum |
+| Modell  | Miniminormer  | Ytterligare krav  | Pensions datum |
 |---------|---------|---------|---------|
-| Dell Precision 3530| 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | **den 22 maj 2023** |
-| Dell Latitude 5490| 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | **den 9 januari 2023** |
-| Dell Latitude 7390 7390 2-i-1 /7490 | 256 GB / Intel i5 / 8 GB RAM   | IR-kamera krävs | **den 9 januari 2023** |
-|HP EliteBook 830 / 840 / 850 G5| 128 GB / Intel i5 / 8 GB RAM | SKU med 5VS01AV, IR-kamera eller fingeravtryckssensor krävs  | **Den 15 februari 2023** |
-|HP Elite x2 1013 G3| 256 GB / Intel i5 / 8 GB RAM | SKU med 5VS03AV, IR-kamera krävs |**Den 14 maj 2023** |
-|HP EliteBook x360 1030 G3| 256 GB / Intel i5 / 8 GB RAM | SKU med 5VS01AV, IR-kamera krävs |**Den 14 maj 2023** |
-|HP EliteBook x360 1040 G5| 256 GB / Intel i5 / 8 GB RAM | SKU med 5VS01AV, IR-kamera krävs | **den 23 oktober 2023** |
-|HP ProBook x360 440 G1| 128 GB / Intel i3 / 8 GB RAM | SKU med 5VS04AV, IR-kamera eller fingeravtrycksläsare krävs | **den 6 juni 2023** |
-|HP EliteDesk 800 G4 DM | 128 GB / Intel i3 / 8 GB RAM | SKU med 5VS04AV | **den 18 juli 2023** |
-|HP EliteDesk 800 G4 SFF | 128 GB / Intel i3 / 8 GB RAM | SKU med 5VS04AV | **den 18 juli 2023** |
-|HP EliteOne 800 G4 23.8in AIO |128 GB / Intel i3 / 8 GB RAM |SKU med 5VS04AV| **den 18 juli 2023** |
-|Surface Bok 2| 256 GB / Intel i5 / 8 GB RAM | Inga | **Den 16 november 2022** |
-|Yta gå| 128 GB / Intel 4415Y / 8GB RAM | Inga | **Den 2 augusti 2023** |
-|Surface Laptop| 256 GB / Intel i5 / 8 GB RAM | Inga | **den 20 maj 2022** |
-|Surface Pro| 256 GB / Intel i5 / 8 GB RAM | Inga | **den 15 juni 2022** |
+| Dell Precision 3530| 256 GB/Intel i5/8 GB RAM | IR-kamera krävs | **Den 22 maj 2023** |
+| Dell Latitude 5490| 256 GB/Intel i5/8 GB RAM | IR-kamera krävs | **Den 9 januari 2023** |
+| Dell Latitude 7390 7390 2-i-1/7490 | 256 GB/Intel i5/8 GB RAM   | IR-kamera krävs | **Den 9 januari 2023** |
+|HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB RAM | SKU med 5VS01AV, IR-kamera eller finger avtryck  | **2023 februari** |
+|HP EliteBook 830/840/850 G6| 128 GB/Intel i5/8 GB RAM | SKU med 5VS01AV, IR-kamera eller finger avtryck  | **November 2023** |
+|HP Elite x2 1013 G3| 256 GB/Intel i5/8 GB RAM | SKU med 5VS03AV, IR-kamera krävs |**14 maj 2023** |
+|HP EliteBook X360 1030 G5| 256 GB/Intel i5/8 GB RAM | SKU med 5VS01AV, IR-kamera krävs |**14 maj 2023** |
+|HP EliteBook X360 1030-G6| 256 GB/Intel i5/8 GB RAM | SKU med 5VS01AV, IR-kamera krävs |**November 2023** |
+|HP EliteBook X360 1040 G5| 256 GB/Intel i5/8 GB RAM | SKU med 5VS01AV, IR-kamera krävs | **Oktober 23, 2023** |
+|HP EliteBook X360 1040-G6| 256 GB/Intel i5/8 GB RAM | SKU med 5VS01AV, IR-kamera krävs | **November 2023** |
+|HP ProBook X360 440 G1| 128 GB/Intel i3/8 GB RAM | SKU med 5VS04AV, IR-kamera eller finger avtrycks läsare krävs | **Jun 6, 2023** |
+|HP EliteDesk 800 G4 DM | 128 GB/Intel i3/8 GB RAM | SKU med 5VS04AV | **Jul 18, 2023** |
+|HP EliteDesk 800 G4 SFF | 128 GB/Intel i3/8 GB RAM | SKU med 5VS04AV | **Jul 18, 2023** |
+|HP EliteOne 800 G4 23.8 i AIO |128 GB/Intel i3/8 GB RAM |SKU med 5VS04AV| **Jul 18, 2023** |
+|HP ZBook 14U/15U G6 mobil arbets Station |256 GB/Intel i5/8 GB RAM |SKU med 5VS04AV, IR-kamera krävs| **November 2023** |
+|Surface Book 2| 256 GB/Intel i5/8 GB RAM | Ingen | **November 2022** |
+|Surface go| 128 GB/Intel 4415Y/8 GB RAM | Ingen | **Aug 2, 2023** |
+|Surface laptop| 256 GB/Intel i5/8 GB RAM | Ingen | **Maj 2022** |
+|Surface Pro| 256 GB/Intel i5/8 GB RAM | Ingen | **Jun 15, 2022** |
 
 
 Dessutom måste enheten också:
 
-- Få en avbildning godkänd av Microsoft Managed Desktop. När du beställer enheter kontrollerar du att de används med Microsoft Managed Desktop.
-- Windows har inte slutförts.
-- Registreras på Microsoft Managed Desktop med funktionen [Enhetsregistrering](https://aka.ms/mmddrhelp)
+- Ha en bild godkänd av Microsoft Managed Desktop. När du beställer enheter bör du kontrol lera att de används med Microsoft Managed Desktop.
+- Inte slutfört första körningen av Windows.
+- Vara registrerad med Microsoft Managed Desktop med funktionen för [enhets registrering](https://aka.ms/mmddrhelp)
 
 #### <a name="additional-help"></a>Ytterligare hjälp
 
-De här resurserna kan hjälpa dig att svara på frågor som du kan ha om specifika enheter:
+De här resurserna kan hjälpa till att besvara frågor som du kan ha om specifika enheter:
 
-- Om du vill ha fler frågor om Dell-enheter kontaktar [du MMD_at_dell@dell.com](mailto:MMD_at_dell@dell.com).
+- För fler frågor på Dell-enheter kontaktar du [MMD_at_dell@dell.com](mailto:MMD_at_dell@dell.com).
 
-- För mer frågor om HP-enheter kontakta: Americas ([mmd-americas@hp.com](mailto:mmd-americas@hp.com)); Europa/Mellanöstern/Afrika ([mmd-emea@hp.com](mailto:mmd-emea@hp.com)). Asien och Stillahavsområdet/Japan ([mmd-apj@hp.com).](mailto:mmd-apj@hp.com) Globalt ([mmd@hp.com](mailto:mmd@hp.com))
+- För fler frågor om HP-enheter kontaktar du Amerika ([MMD-Americas@hp.com](mailto:mmd-americas@hp.com)); Europe/Mellanöstern/Afrika ([MMD-EMEA@hp.com](mailto:mmd-emea@hp.com)); Asien Stilla havet/Japan ([MMD-APJ@hp.com](mailto:mmd-apj@hp.com)); Global ([MMD@hp.com](mailto:mmd@hp.com))

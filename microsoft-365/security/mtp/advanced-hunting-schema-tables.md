@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: f22a046dc5289405aaf59086ed535016cc46bae9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 916f86cf9536101bdbb2650bf7381682203d343f
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197673"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412436"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Förstå det avancerade jakt schema
 
@@ -30,7 +32,7 @@ ms.locfileid: "48197673"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft Threat Protection
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -75,7 +77,7 @@ I följande referens visas alla tabeller i schemat. Varje tabell namn länkar ti
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365-e-posthändelser, inklusive händelser för e-postleverans och blockering |
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Säkerhets händelser som inträffar efter leverans efter att Microsoft 365 har levererat e-postmeddelandet till mottagar post lådan |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Information om URL: er för e-postmeddelanden |
-| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | Händelser som berör en lokal domänkontrollant som kör Active Directory (AD). Den här tabellen innehåller flera identitetsbaserade händelser samt system händelser på domänkontrollanten. |
+| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | Händelser som berör en lokal domänkontrollant som kör Active Directory (AD). I den här tabellen beskrivs ett område med identitetsrelaterade händelser samt systemhändelser på domänkontrollanten. |
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Konto information från olika källor, inklusive Azure Active Directory |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Autentiseringsproblem för Active Directory och Microsoft Online-tjänster |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Fråge aktiviteter utförs mot Active Directory-objekt, till exempel användare, grupper, enheter och domäner |
