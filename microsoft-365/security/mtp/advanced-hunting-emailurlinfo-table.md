@@ -15,38 +15,40 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 096cddac5f2e8db74cbe6ef84e0be3094a7a1d57
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 72e7a52da21cfeb923d5bca46b0f8ff0604723cb
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197995"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413120"
 ---
-# <a name="emailurlinfo"></a><span data-ttu-id="084bb-104">EmailUrlInfo</span><span class="sxs-lookup"><span data-stu-id="084bb-104">EmailUrlInfo</span></span>
+# <a name="emailurlinfo"></a><span data-ttu-id="3d698-104">EmailUrlInfo</span><span class="sxs-lookup"><span data-stu-id="3d698-104">EmailUrlInfo</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="084bb-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="084bb-105">**Applies to:**</span></span>
-- <span data-ttu-id="084bb-106">Microsoft Hotskydd</span><span class="sxs-lookup"><span data-stu-id="084bb-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="3d698-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="3d698-105">**Applies to:**</span></span>
+- <span data-ttu-id="3d698-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="3d698-106">Microsoft Threat Protection</span></span>
 
-<span data-ttu-id="084bb-107">`EmailUrlInfo`Tabellen i det [avancerade jakt](advanced-hunting-overview.md) -schemat innehåller information om URL: er för e-postmeddelanden och bifogade filer som bearbetas av Office 365 ATP.</span><span class="sxs-lookup"><span data-stu-id="084bb-107">The `EmailUrlInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about URLs on emails and attachments processed by Office 365 ATP.</span></span> <span data-ttu-id="084bb-108">Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.</span><span class="sxs-lookup"><span data-stu-id="084bb-108">Use this reference to construct queries that return information from this table.</span></span>
+<span data-ttu-id="3d698-107">`EmailUrlInfo`Tabellen i det [avancerade jakt](advanced-hunting-overview.md) -schemat innehåller information om URL: er för e-postmeddelanden och bifogade filer som bearbetas av Office 365 ATP.</span><span class="sxs-lookup"><span data-stu-id="3d698-107">The `EmailUrlInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about URLs on emails and attachments processed by Office 365 ATP.</span></span> <span data-ttu-id="3d698-108">Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.</span><span class="sxs-lookup"><span data-stu-id="3d698-108">Use this reference to construct queries that return information from this table.</span></span>
 
-<span data-ttu-id="084bb-109">Information om andra tabeller i det avancerade jakt schema [finns i referens för avancerad jakt](advanced-hunting-schema-tables.md).</span><span class="sxs-lookup"><span data-stu-id="084bb-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+<span data-ttu-id="3d698-109">Information om andra tabeller i det avancerade jakt schema [finns i referens för avancerad jakt](advanced-hunting-schema-tables.md).</span><span class="sxs-lookup"><span data-stu-id="3d698-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
 
-| <span data-ttu-id="084bb-110">Kolumnnamn</span><span class="sxs-lookup"><span data-stu-id="084bb-110">Column name</span></span> | <span data-ttu-id="084bb-111">Datatyp</span><span class="sxs-lookup"><span data-stu-id="084bb-111">Data type</span></span> | <span data-ttu-id="084bb-112">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="084bb-112">Description</span></span> |
+| <span data-ttu-id="3d698-110">Kolumnnamn</span><span class="sxs-lookup"><span data-stu-id="3d698-110">Column name</span></span> | <span data-ttu-id="3d698-111">Datatyp</span><span class="sxs-lookup"><span data-stu-id="3d698-111">Data type</span></span> | <span data-ttu-id="3d698-112">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="3d698-112">Description</span></span> |
 |-------------|-----------|-------------|
-| `Timestamp` | <span data-ttu-id="084bb-113">datetime</span><span class="sxs-lookup"><span data-stu-id="084bb-113">datetime</span></span> | <span data-ttu-id="084bb-114">Datum och tid när händelsen registrerades</span><span class="sxs-lookup"><span data-stu-id="084bb-114">Date and time when the event was recorded</span></span> |
-| `UrlId` | <span data-ttu-id="084bb-115">strängvärdet</span><span class="sxs-lookup"><span data-stu-id="084bb-115">string</span></span> | <span data-ttu-id="084bb-116">Unik identifierare för URL: en i e-postämnet, bröd texten eller bilagan</span><span class="sxs-lookup"><span data-stu-id="084bb-116">Unique identifier for the URL in the email subject, body, or attachment</span></span> |
-| `NetworkMessageId` | <span data-ttu-id="084bb-117">strängvärdet</span><span class="sxs-lookup"><span data-stu-id="084bb-117">string</span></span> | <span data-ttu-id="084bb-118">Unik identifierare för e-postmeddelandet, genererat av Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="084bb-118">Unique identifier for the email, generated by Microsoft 365</span></span> |
-| `Url` | <span data-ttu-id="084bb-119">strängvärdet</span><span class="sxs-lookup"><span data-stu-id="084bb-119">string</span></span> | <span data-ttu-id="084bb-120">Fullständig URL i e-postämnet, bröd texten eller bilagan</span><span class="sxs-lookup"><span data-stu-id="084bb-120">Full URL in the email subject, body, or attachment</span></span> |
+| `Timestamp` | <span data-ttu-id="3d698-113">datetime</span><span class="sxs-lookup"><span data-stu-id="3d698-113">datetime</span></span> | <span data-ttu-id="3d698-114">Datum och tid när händelsen registrerades</span><span class="sxs-lookup"><span data-stu-id="3d698-114">Date and time when the event was recorded</span></span> |
+| `UrlId` | <span data-ttu-id="3d698-115">strängvärdet</span><span class="sxs-lookup"><span data-stu-id="3d698-115">string</span></span> | <span data-ttu-id="3d698-116">Unik identifierare för URL: en i e-postämnet, bröd texten eller bilagan</span><span class="sxs-lookup"><span data-stu-id="3d698-116">Unique identifier for the URL in the email subject, body, or attachment</span></span> |
+| `NetworkMessageId` | <span data-ttu-id="3d698-117">strängvärdet</span><span class="sxs-lookup"><span data-stu-id="3d698-117">string</span></span> | <span data-ttu-id="3d698-118">Unik identifierare för e-postmeddelandet, genererat av Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="3d698-118">Unique identifier for the email, generated by Microsoft 365</span></span> |
+| `Url` | <span data-ttu-id="3d698-119">strängvärdet</span><span class="sxs-lookup"><span data-stu-id="3d698-119">string</span></span> | <span data-ttu-id="3d698-120">Fullständig URL i e-postämnet, bröd texten eller bilagan</span><span class="sxs-lookup"><span data-stu-id="3d698-120">Full URL in the email subject, body, or attachment</span></span> |
 
-## <a name="related-topics"></a><span data-ttu-id="084bb-121">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="084bb-121">Related topics</span></span>
-- [<span data-ttu-id="084bb-122">Översikt över avancerad jakt</span><span class="sxs-lookup"><span data-stu-id="084bb-122">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="084bb-123">Lär dig frågespråket</span><span class="sxs-lookup"><span data-stu-id="084bb-123">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="084bb-124">Använda delade frågor</span><span class="sxs-lookup"><span data-stu-id="084bb-124">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="084bb-125">Jaga över olika enheter, e-postmeddelanden, appar och identiteter</span><span class="sxs-lookup"><span data-stu-id="084bb-125">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="084bb-126">Förstå schemat</span><span class="sxs-lookup"><span data-stu-id="084bb-126">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="084bb-127">Använda metodtips för frågor</span><span class="sxs-lookup"><span data-stu-id="084bb-127">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+## <a name="related-topics"></a><span data-ttu-id="3d698-121">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="3d698-121">Related topics</span></span>
+- [<span data-ttu-id="3d698-122">Översikt över avancerad jakt</span><span class="sxs-lookup"><span data-stu-id="3d698-122">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="3d698-123">Lär dig frågespråket</span><span class="sxs-lookup"><span data-stu-id="3d698-123">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="3d698-124">Använda delade frågor</span><span class="sxs-lookup"><span data-stu-id="3d698-124">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="3d698-125">Jaga över olika enheter, e-postmeddelanden, appar och identiteter</span><span class="sxs-lookup"><span data-stu-id="3d698-125">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="3d698-126">Förstå schemat</span><span class="sxs-lookup"><span data-stu-id="3d698-126">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="3d698-127">Använda metodtips för frågor</span><span class="sxs-lookup"><span data-stu-id="3d698-127">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
