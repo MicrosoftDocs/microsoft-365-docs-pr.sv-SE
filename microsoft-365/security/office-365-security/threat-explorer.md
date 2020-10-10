@@ -15,14 +15,15 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
+- m365-initiative-defender-office365
 description: Lär dig hur du använder Utforskaren och real tids identifiering i &amp; Center för säkerhets kontroll för att undersöka och reagera på hot effektivt och effektivt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 32ff9f2c8d009b4c9b05c12ba4e785e59cb182e7
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 20b13e177a69d981a4c6793d4810256e33158a35
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328089"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48414268"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer och real tids identifiering
 
@@ -47,9 +48,9 @@ Med den här rapporten kan du:
 - [Starta en automatiserad undersökning och svars process från en vy i Utforskaren](#start-automated-investigation-and-response) (endast ATP-abonnemang 2)
 - ... [Undersök skadlig e-post och mycket mer](#more-ways-to-use-explorer-or-real-time-detections).
 
-## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Upplev förbättringar av Threat Explorer och identifiering i real tid
+## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Upplev förbättringar av Threat Explorer och Real-Time identifieringar
 
-Som en del av att förbättra jakt processen har vi gjort några uppdateringar för Threat Explorer och identifiering av real tid. Det här är en "Experience" förbättringar, med fokus på att göra jakt upplevelsen mer enhetlig. Dessa ändringar beskrivs nedan:
+Som en del av att förbättra jakt processen har vi gjort några uppdateringar för Threat Explorer och Real-Time identifieringar. Det här är en "Experience" förbättringar, med fokus på att göra jakt upplevelsen mer enhetlig. Dessa ändringar beskrivs nedan:
 
 - [Förbättringar av tidszon](#timezone-improvements)
 - [Uppdatera i uppdaterings processen](#update-in-the-refresh-process)
@@ -103,7 +104,7 @@ Exchange Sök-och namn tillgänglighet beror på vilken roll som har tilldelats 
 - AAD eller EXO-säkerhets administratör: alla
 - AAD eller EXO – säkerhets läsare: alla
 - Endast EXO – transport regler: alla
-- Endast EXO-endast visning-konfiguration: alla
+- Endast EXO-View-Only konfiguration: alla
 
 I e-postrutnätet, den utfällbara informationen och exporterad CSV-fil visas ETR med ett namn/GUID som visas nedan.
 
@@ -313,7 +314,7 @@ Om du vill visa och använda Explorer-eller real tids identifiering måste du ha
 
   - Organisationshantering
   - Organisations hantering för endast visning
-  - Rollen skrivskyddade mottagare
+  - Roll för View-Only mottagare
   - Hantering av efterlevnad
 
 Mer information om roller och behörigheter finns i följande resurser:

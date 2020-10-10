@@ -5,19 +5,18 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Följ de här rekommendationerna för en fristående Exchange Online Protection (EOP) för att ställa in dig själv och undvika vanliga konfigurations fel.
-ms.openlocfilehash: cb3aa36720a6a46932d69341394304937bb1a296
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: b734fe87b82c243531944bbd9cf53d22d5b42f53
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203569"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48414040"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Metod tips för att konfigurera fristående EOP
 

@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: Konfigurera innehållstolkning i Project Cortex
-ms.openlocfilehash: 0d66076c93eb46ca11977cea12417c0816e0d11b
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: 8217630d66a097fcc714be80bd4d3dcceb623370
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367937"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413716"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Konfigurera SharePoint Syntex
 
@@ -51,11 +51,7 @@ Som administratör kan du också göra ändringar i dina valda inställningar n�
 
     ![Starta konfiguration](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. På sidan Aktivera bildmärkning väljer du om du vill tillåta [bildmärkning](image-tagging.md).
-
-    ![Skärmbild på alternativ för bildmärkning](../media/content-understanding/admin-content-understanding-setup-image-tagging.png)</br>
-
-5. På sidan **Konfigurera formulärbearbetning** kan du välja om du vill tillåta att användare kan skapa modeller för formulärbearbetning i vissa dokumentbibliotek i SharePoint. Ett menyalternativ kommer att vara tillgängligt i menyfliksområdet för dokumentbiblioteket för att **Skapa en modell för formulärbearbetning** i dokumentbibliotek i SharePoint där den är aktiverad.
+4. På sidan **Konfigurera formulärbearbetning** kan du välja om du vill tillåta att användare kan skapa modeller för formulärbearbetning i vissa dokumentbibliotek i SharePoint. Ett menyalternativ kommer att vara tillgängligt i menyfliksområdet för dokumentbiblioteket för att **Skapa en modell för formulärbearbetning** i dokumentbibliotek i SharePoint där den är aktiverad.
  
      För **vilka SharePoint-bibliotek som ska visa alternativ för att skapa modell för formulärbearbetning** kan du välja:</br>
       - **Alla SharePoint-bibliotek** för att göra det tillgängligt för alla SharePoint-bibliotek i organisationen.</br>
@@ -67,7 +63,7 @@ Som administratör kan du också göra ändringar i dina valda inställningar n�
    > [!Note]
    > Att ta bort en webbplats efter att den har inkluderats påverkar inte befintliga modeller som används i biblioteken på webbplatsen eller möjligheten att använda modeller för dokumenttolkning på ett bibliotek. 
     
-6. På sidan **Skapa innehållscenter** kan du skapa en SharePoint-webbplats för innehållscenter där dina användare kan skapa och hantera modeller för dokumenttolkning. </br>
+5. På sidan **Skapa innehållscenter** kan du skapa en SharePoint-webbplats för innehållscenter där dina användare kan skapa och hantera modeller för dokumenttolkning. </br>
     a. För **Webbplatsnamn**skriver du namnet som du vill använda på webbplatsen för innehållscenter.</br>
     b. **Webbplatsens adress** kommer att visa URL:en för din webbplats baserat på vad du valde som webbplatsnamn. Om du vill ändra det klickar du på **Redigera**.</br>
 
@@ -75,11 +71,11 @@ Som administratör kan du också göra ändringar i dina valda inställningar n�
 
     Välj **Nästa**.
 
-7. På sidan **Granska och slutför** kan du titta på vald inställning och välja att göra ändringar. Om du är nöjd med dina val väljer du **Aktivera**.
+6. På sidan **Granska och slutför** kan du titta på vald inställning och välja att göra ändringar. Om du är nöjd med dina val väljer du **Aktivera**.
 
-8. På bekräftelsesidan klickar du på **Klar**.
+7. På bekräftelsesidan klickar du på **Klar**.
 
-9. Du kommer tillbaka till sidan **Automatisera innehållstolkning**. På den här sidan kan du välja **Hantera** om du vill göra ändringar i dina konfigurationsinställningar. 
+8. Du kommer tillbaka till sidan **Automatisera innehållstolkning**. På den här sidan kan du välja **Hantera** om du vill göra ändringar i dina konfigurationsinställningar. 
 
 ## <a name="assign-licenses"></a>Tilldela licenser
 

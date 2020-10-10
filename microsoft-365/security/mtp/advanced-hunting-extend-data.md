@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 66e978b28f03e30cc2157aae2508874b73b01a40
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 39beff1ea5e983af53cdb954783c11f13569a022
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197983"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413956"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>Förläng avancerad jakt täckning med rätt inställningar
 
@@ -30,7 +32,7 @@ ms.locfileid: "48197983"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft Threat Protection
 
 [Avancerad jakt](advanced-hunting-overview.md) bygger på data från olika källor, inklusive dina enheter, dina Office 365-arbetsytor, Azure AD och Azure ATP. För att få den mest omfattande informationen möjlig, se till att du har rätt inställningar i motsvarande data källor.
 

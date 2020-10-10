@@ -16,16 +16,17 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 09/16/2020
-ms.openlocfilehash: 6d3ffd9f9e28bc190093c19ce9013f9aca12d60e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 96fa036d3154b15499303623efe027e4d340c98a
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198867"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413632"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Uppgifter och resultat från en automatiserad undersökning
 
@@ -33,7 +34,7 @@ ms.locfileid: "48198867"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft Threat Protection
 
 När en automatisk undersökning görs med Microsoft Threat Protection är information om den undersökningen tillgängliga under och efter den automatiska gransknings processen. Om du har [nödvändig behörighet](mtp-action-center.md#required-permissions-for-action-center-tasks)kan du Visa den informationen i vyn granska information. I vyn undersöknings Detaljer får du uppdaterade status och möjlighet att godkänna väntande åtgärder. 
 

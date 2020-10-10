@@ -16,16 +16,17 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 09/16/2020
-ms.openlocfilehash: 5dc752591faf1a89e63632bce290e03b2c00f777
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 651beeff6326e6cab898c4297bcd50edc241a9d4
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198661"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413692"
 ---
 # <a name="the-action-center"></a>Åtgärdscentret
 
@@ -33,7 +34,7 @@ ms.locfileid: "48198661"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft Threat Protection
 
 Använd åtgärds centret för att se resultatet av aktuella och tidigare undersökningar i organisationens enheter och post lådor. Beroende på typen av hot och resulterande Verdict inträffar [reparations åtgärder](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) automatiskt eller efter godkännande av organisationens säkerhets åtgärds team. Alla reparations åtgärder, oavsett om de väntar på godkännande eller redan har godkänts, konsol IDE ras i åtgärds centret. 
 

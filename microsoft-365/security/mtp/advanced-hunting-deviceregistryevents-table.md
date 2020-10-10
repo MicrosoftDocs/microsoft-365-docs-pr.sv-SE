@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 8cc9cbabe481826e2f67c1734c2bb4611297dfcb
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f4aa8e1a3908a9433fb6c4f0b4a49f1f2135b02a
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197031"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48414280"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 
@@ -30,7 +32,7 @@ ms.locfileid: "48197031"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft Threat Protection
 
 `DeviceRegistryEvents`Tabellen i det [avancerade jakt](advanced-hunting-overview.md) -schemat innehåller information om hur du skapar och ändrar register poster. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 

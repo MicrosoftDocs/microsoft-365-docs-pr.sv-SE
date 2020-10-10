@@ -16,14 +16,15 @@ search.appverid:
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 description: Administratörer kan läsa om hotets skydd i Microsoft 365 och konfigurera hur det ska användas för din organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 624646461efe7131b2479e003b23a9e659e0a779
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: bb28decf459035c238c61b12f65abf45128e527c
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326561"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413596"
 ---
 # <a name="protect-against-threats"></a>Skydda mot hot
 
@@ -206,7 +207,7 @@ Om du vill konfigurera [säkra länkar](atp-safe-links.md)kan du läsa och redig
 
 5. Granska inställningarna och klicka sedan på **Slutför**.
 
-Mer information finns i [Konfigurera principer för säkra länkar](set-up-atp-safe-links-policies.md).
+Mer information finns i [Ställ in policyer för säkra länkar](set-up-atp-safe-links-policies.md).
 
 ## <a name="part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>Del 5 – kontrol lera ATP för SharePoint, OneDrive och Microsoft Teams
 

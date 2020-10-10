@@ -17,15 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 84d2a71f715c31560f6376464bf9da25cc8d58b1
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f8d741cbc7215c18d096573fe6555dfe7709c58b
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198637"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413644"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Hantera felaktiga positiva/negativa negativ i automatiserade undersökningar och svars funktioner
 
@@ -33,7 +34,7 @@ ms.locfileid: "48198637"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft Threat Protection
 
 Lyckades en [Automatisk undersökning och svars funktion](mtp-autoir.md) i Microsoft Threat Protection missar något? Det finns några åtgärder du kan vidta för att åtgärda det. Du kan:
 
