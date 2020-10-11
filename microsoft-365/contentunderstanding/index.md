@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Lär dig hur du hittar resurser för Microsoft SharePoint Syntex.
-ms.openlocfilehash: 5d375b27fe3cd58069851f12c459460ac605da83
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 9580a2db62fc8ddef16e79817498eebe9feef6bb
+ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350779"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48390125"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Introduktion till Microsoft SharePoint-Syntex
 
@@ -26,6 +26,12 @@ Microsoft SharePoint-Syntex är en Office 365-tjänst som hjälper organisatione
 - Transformera innehåll till kunskap
 
 Resurserna på den här sidan är utformade för att komma igång med att lära sig mer om och använda SharePoint-Syntex i din organisation.
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GJXS] 
+
+</br>
 
 ## <a name="get-started"></a>Komma igång
 
@@ -64,7 +70,7 @@ Resurserna i det här avsnittet hjälper dina användare att lära sig skapa och
 | Om du letar efter den här informationen: | Gå till den här resursen: |
 |:-----|:-----|
 |Lär dig att arbeta med modeller|[Skapa ett innehållscenter](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-content-center)<br><br>[Skapa en klassificerare](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier)<br><br>[Skapa en extraherare](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor)<br><br>[Skapa en modell för formulärbearbetning](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model)<br><br>[Förklaringstyper](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)<br><br>[Använda en modell för dokumenttolkning](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-model)<br><br>[Läs mer om modeller för dokumenttolkning genom exempel modellen](https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model)<br><br>|
-|Applicera en kvarhållningsetikett för din modell|[Skillnad mellan modeller för dokumenttolkning och formulärbearbetning](https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
+|Applicera en kvarhållningsetikett för din modell|[Använda kvarhållningsetiketter på modeller för dokumenttolkning](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)|
 |Använd Hanterade Metadata-tjänster för termlagringstaxonomi vid skapande av en extraherare|[Använd termlagringstaxonomi vid skapande av extraherare](https://docs.microsoft.com/microsoft-365/contentunderstanding/leverage-term-store-taxonomy)|
 |Lär dig hur du kan se data om dina modeller|[Modell för användningsanalys](https://docs.microsoft.com/microsoft-365/contentunderstanding/model-usage-analytics)|
 
