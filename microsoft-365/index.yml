@@ -245,10 +245,10 @@ additionalContent:
       summary: Hitta handledning, referenser och andra resurser för utvecklare i Microsoft 365 dev Center.
       url: https://developer.microsoft.com/microsoft-365
     - title: 'Slutanvändare:'
-      summary: Hitta utbildning, instruktioner och hjälpinnehåll för användare av Microsoft 365 på support.microsoft.com.
+      summary: Hitta utbildning, instruktioner och hjälpinnehåll för Microsoft 365-användare på support.microsoft.com.
       url: https://support.microsoft.com/microsoft-365
     - title: Education IT
-      summary: Lär dig hur du låser upp kreativitet, främjar lagarbete och har en säker och enkel upplevelse med Microsoft 365 Education.
+      summary: Läs om hur du möjliggör kreativitet, främjar lagarbete och skapar en säker och smidig upplevelse med Microsoft 365 Education.
       url: /education
     - title: Lärare
       summary: Hitta utbildningar, instruktioner och hjälpinnehåll för lärare med Microsoft 365 Education.
