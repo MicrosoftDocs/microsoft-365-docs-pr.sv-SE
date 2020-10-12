@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Bestäm var dina Microsoft 365 kunddata lagras globalt
-ms.openlocfilehash: 9f651cf2bf042a59efcfc9b76fd4349c839e7423
-ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
+ms.openlocfilehash: da58b5e322190e61d72dc30ac6e1ea075e8f48b4
+ms.sourcegitcommit: 39af527404cb06e05c5aa4550dbec39aec133016
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48384763"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "48422635"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -29,11 +29,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Var dina Microsoft 365 kunddata lagras
 
->[!Note]
->Uppdateringar av den här artikeln kontrolleras noga av Microsoft. Direktredigeringar kommer inte att publiceras. Om du har ändringar att föreslå ska du skicka dem som feedback i slutet av artikeln.
->
-
-Tabellen nedan visar var kunddata lagras i vila för Microsoft 365-tjänster i alla Microsofts globala molnplatser. Utöka platsen för ditt fakturerings adress land för att ta reda på var kunddata för varje tjänst ska lagras.
+Tabellen nedan visar var kunddata lagras i vila för Microsoft 365-tjänster i alla Microsofts globala moln platser. Utöka platsen för ditt fakturerings adress land för att ta reda på var kunddata för varje tjänst ska lagras.
 
 Kunderna ska visa information om klientplats för särskild dataplats i administrationscentret för Microsoft 365 i **Inställningar | Organisationens inställningar | Organisations profil | Dataplats**.
 
@@ -108,11 +104,7 @@ Microsoft lagrar inte kundens kund data utanför angiven geo. Förutom om:
    
   - För hands versionen, Beta versionen eller någon annan för hands version, som vanligt vis lagrar Kunddata i USA, men kan lagra den globalt.
 
-Oavsett, Microsoft kan inte kontrollera eller begränsa den Geo från vilken kunder eller deras slutanvändare får åtkomst till kunddata. 
-
-### <a name="can-i-edit-the-information-in-this-article"></a>Kan jag redigera informationen i den här artikeln?
-
-Nej. Uppdateringar av den här artikeln kontrolleras noga av Microsoft. Direktredigeringar kommer inte att publiceras. Om du har ändringar att föreslå ska du skicka dem som feedback i slutet av artikeln.
+Oavsett, kan Microsoft inte styra eller begränsa den Geo från vilken kunder eller deras slutanvändare får åtkomst till kunddata. 
 
 ## <a name="data-center-locations"></a>Platser för data Center
 
@@ -1967,7 +1959,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
-| Yammer | EU  |
+| Yammer | EU: s EU  |
 | OneNote-tjänster | EU: s EU |
 | Strömma | EU: s EU |
 | Whiteboard | EU: s EU |
@@ -4177,7 +4169,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
-| Strömma | Global Geography 2 – Asien och Stillahavsområdet |
+| Strömma | Global geography 2 – Pacific, Stilla havs området |
 | Whiteboard | USA |
 | Formulär | USA |
 | Workplace Analytics | USA |
@@ -5127,7 +5119,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | Exchange Online | EU: s EU |
 | OneDrive för företag | EU: s EU |
 | SharePoint Online | EU: s EU |
-| Skype för företag | EU |
+| Skype för företag | EU: s EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
 | EOP | EU: s EU |
@@ -5442,7 +5434,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
 | Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
-| EOP | Global Geography 2 – Asien och Stillahavsområdet |
+| EOP | Global geography 2 – Pacific, Stilla havs området |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
 | Planner | Global geography 2 – Pacific, Stilla havs området |
