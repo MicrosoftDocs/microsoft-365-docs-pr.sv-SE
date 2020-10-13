@@ -12,15 +12,15 @@ localization_priority: Normal
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 - MET150
 description: Administratörer kan lära sig att identifiera varför och hur ett nät fiske meddelande gick igenom i Microsoft 365 och vad man bör göra för att förhindra fler nät fiske meddelanden i framtiden.
-ms.openlocfilehash: ca1030141dd18797c7672b95ccae60b86fe9b7f2
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab7087355ce8ee41616f63a7b466a0d5d0fc7b0f
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414160"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446471"
 ---
 # <a name="tune-anti-phishing-protection"></a>Finjustera skydd mot nätfiske
 

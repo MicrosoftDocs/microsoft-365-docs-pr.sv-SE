@@ -2,9 +2,9 @@
 title: Lösa problem med delade postlådor
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: sharik
+author: SKjerland
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,34 +20,34 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Prova de här lösningarna om du får problem med delade postlådor.
-ms.openlocfilehash: 5d6de9ac66b11f0e50b259cdca0b1bb50b8326ee
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Prova de här lösningarna om du får problem med delade post lådor.
+ms.openlocfilehash: c889d3aa2fab8c2dce4cc2a8a00ef49a905363a1
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400022"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445513"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Lösa problem med delade postlådor
 
-Om felmeddelanden visas när du skapar eller använder en delad postlåda kan du prova de här möjliga lösningarna. 
+Om du ser fel meddelanden när du skapar eller använder en delad post låda kan du försöka med följande. 
 
-## <a name="error-when-creating-shared-mailboxes"></a>Fel vid skapande av delade postlådor
+## <a name="error-when-creating-shared-mailboxes"></a>Fel när delade post lådor skapades
 <a name="bkmk_Fix"> </a>
 
-Om felmeddelandet visas **används proxyadressen "smtp:<delat postlådenamn \> " redan av proxyadresserna eller LegacyExchangeDN för " \<name> ". Välj en annan proxyadress**betyder det att du försöker ge den delade postlådan ett namn som redan används. Anta att du vill ha delade postlådor med namnen info@domän1 och info@domän2. Du kan göra det på två sätt:
+Om du får fel meddelandet " **" SMTP: <delade post lådans namn \> "används redan av proxyadresser eller LegacyExchangeDN av" \<name> ". Välj en annan proxyadress**, det innebär att du försöker ge den delade post lådan ett namn som redan används. Anta att du vill ha delade postlådor med namnen info@domän1 och info@domän2. Du kan göra det på två sätt:
 
-  - Använd Windows PowerShell. Se det här blogginlägget för instruktioner: [Skapa delade postlådor med samma alias på olika domäner](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+  - Använd Windows PowerShell. Anvisningar finns i det här blogg inlägget: [skapa delade post lådor med samma alias på olika domäner](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     
-  - Ge den andra delade postlådan namnet något annat än början för att komma runt felet. Byt sedan namn på den delade postlådan till det du vill att den ska vara i administrationscentret.
+  - Ge den andra delade post lådan något annat från början för att få veta mer om felet. I Admin Center byter du namn på den delade post lådan till det du vill ha.
 
-## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>Fel om att inte ha skicka behörigheter när du använder en delad postlåda
+## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>Fel om att inte ha behörighet att skicka när du använder en delad post låda
 
-Om du har skapat en delad postlåda och sedan försöker skicka ett meddelande från den kan du få följande:
+Om du har skapat en delad post låda och sedan försöker skicka ett meddelande från den kan du få följande:
 
-**Det gick inte att skicka det här meddelandet. Du har inte behörighet att skicka meddelandet för den angivna användarens räkning.**
+**Det gick inte att skicka meddelandet. Du har inte behörighet att skicka meddelandet å angiven användares vägnar.**
 
-Det här meddelandet visas när Microsoft 365 har ett replikeringsfördröjningsproblem. Det bör försvinna inom en timme eller så, när informationen om din nya delade postlåda (eller tillagd användare) replikeras över alla våra datacenter. Vänta en timme och försök sedan igen för att skicka ett meddelande.
+Det här meddelandet visas när Microsoft 365 drabbas av ett problem med replikeringsfördröjning. Det ska gå längre tid än en timme, eller så när informationen om den nya delade post lådan (eller tillagd användare) replikeras i alla data Center. Vänta en timme och försök sedan igen för att skicka ett meddelande.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 502ceb47a110dd7cd743281d518e542451413672
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: e07c1455cc2799481bc31871d2c3ee07b10492b9
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399752"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446189"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationer av identiteter och enhetsåtkomst
 
@@ -118,7 +118,9 @@ Azure AD tillhandahåller en full uppsättning funktioner för identitets hanter
 | [Lösen ords skydd i Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | Identifiera och blockera kända svaga lösen ord och deras varianter och ytterligare svaga termer som är specifika för din organisation. Standard globala förbjudna lösenordslistor tillämpas automatiskt på alla användare i en Azure AD-klient. Du kan definiera ytterligare poster i en anpassad förbjuden lösenordslista. När användare ändrar eller återställer sina lösenord kontrolleras dessa förbjudna lösenordslistor för att använda starka lösenord. |  Microsoft 365 E3 eller E5 |
 ||||
 
-![Komponenter i åtkomst till identiteter och enheter.](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
+Här är komponenterna i identitets-och enhets åtkomst, inklusive Intune och Azure AD-objekt, inställningar och under tjänster.
+
+![Komponenter i åtkomst till identiteter och enheter](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 

@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Följ den här check listan för att ta bort en anställd från Microsoft 365 och skydda data. '
-ms.openlocfilehash: 252442c36fd29b816626adb71b3ae38ae66f1f64
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: e8f0b61fae3656b7d700857e3cc7167cc121a77f
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324530"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445525"
 ---
 # <a name="remove-or-delete-a-former-employee"></a>Ta bort eller ta bort en tidigare anställd
 
@@ -127,7 +127,7 @@ Det finns två sätt du kan spara innehållet i den tidigare anställdas postlå
 
 2. Aktivera Bevarande av juridiska skäl eller Lokalt bevarande för postlådan innan du tar bort användarkontot. Det här är mycket mer komplicerat än det första alternativet, men värt att välja om: företagsabonnemanget omfattar arkivering och bevarande av juridiska skäl, det finns risk för tvister och du har en tekniskt stark IT-avdelning.
 
-    När du har konverterat post lådan till en "inaktive rad post låda" kan administratörer, efterföljare tjänstemän eller Arkiv handlingar använda på plats eDiscovery-verktyg i Exchange Online för att komma åt och söka i innehållet.
+    När du har konverterat post lådan till en "inaktive rad post låda" kan administratörer, efterföljare eller Arkiv handlingar använda In-Place eDiscovery-verktyg i Exchange Online för att komma åt och söka i innehållet.
 
     Inaktiva postlådor kan inte ta emot e-post och visas inte i organisationens delade adressbok och andra listor.
 
@@ -140,7 +140,6 @@ I det här steget tilldelar du den tidigare anställdas e-postadress till en ann
 - Att skapa en delad postlåda är det billigaste alternativet eftersom du inte behöver betala för en licens **så länge postlådan är mindre än 50 GB**. Över 50 GB så måste du tilldela en licens till den.
 - Om du konverterar postlådan till en delad postlåda blir även gamla e-postmeddelanden tillgängliga. Det kan ta upp mycket utrymme.
 - Om du vidarebefordrar e-postmeddelanden kommer bara  *nya*  e-postmeddelanden som skickas till den tidigare anställda att skickas till nuvarande anställda.
-- Vidarebefordran av e-post kräver att den tidigare anställdas konto har en licens.
 
  > [!IMPORTANT]
  > Om du konfigurerar e-postvidarebefordran eller en delad post låda, tar du inte bort den tidigare anställdes konto. Kontot måste finnas där för att förankra vidarebefordran av e-post eller den delade postlådan.
@@ -150,7 +149,7 @@ I det här steget tilldelar du den tidigare anställdas e-postadress till en ann
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
 2. Välj namnet på den anställde som du vill blockera och välj sedan fliken **e-post** .
 3. Under **e-postvidarekoppling**väljer du **Hantera e-postvidarekoppling**.
-4. Aktivera **Vidarebefordra all e-post som skickats till den här postlådan**. I rutan **Adress för vidarebefordran** skriver du e-postadressen till den aktuella medarbetaren (eller den delade postlådan) dit e-posten ska skickas.
+4. Aktivera **Vidarebefordra all e-post som skickats till den här postlådan**. I rutan **vidarebefordrings adress** skriver du e-postadressen för den aktuella anställde som ska få e-postmeddelandet.
 5. Välj **Spara**.
 6. Kom ihåg att inte ta bort den tidigare anställdas konto.
 

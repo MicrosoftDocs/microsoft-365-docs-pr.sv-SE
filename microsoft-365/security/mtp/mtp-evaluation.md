@@ -1,6 +1,6 @@
 ---
 title: Utvärdera Microsoft Hotskydd
-description: Ställ in ett utvärderings labb för Microsoft Threat-skydd eller pilot miljö för att testa hur den koordinerade hotets skydds lösningen som är avsedd att skydda enheter, identiteter, data och program kan hjälpa din organisation
+description: Ställ in ett utvärderings labb för Microsoft Threat-skydd eller pilot miljö för att pröva och upplev säkerhets lösningen för att skydda enheter, identiteter, data och program i din organisation.
 keywords: Utvärderings version av Microsoft Threat Protection, prova Microsoft Threat Protection, utvärdera Microsoft Threat Protection, Microsoft Threat Protection Evaluation Lab, Microsoft Threat Protection pilot, cyberterrorism Security, Avancerat, beständigt hot, företags säkerhet, enheter, enhet, identitet, användare, data, program, händelser, automatiserad undersökning och reparation, avancerad jakt
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: 489ce48be4d995d7e91e2559311d7e619530ba4c
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: d3f63c8ac4ba82a80c365dce564bbd8d3dd4da4b
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418091"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48447125"
 ---
 # <a name="create-a-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>Skapa ett test labb eller pilot miljö för Microsoft Threat Protection 
 
@@ -35,9 +35,9 @@ ms.locfileid: "48418091"
 **Gäller för:**
 - Microsoft Threat Protection
 
-Syftet med att skapa utvärderings laboratoriet eller pilot miljön är att illustrera de omfattande, integrerade och intelligenta funktionerna i Microsoft Threat Protection i identifiering, förebyggande åtgärder och svar som du kan använda i din organisation. 
+Syftet med att skapa den här test laboratoriet eller pilot miljön är att illustrera de omfattande och integrerade hot Protection funktionerna i Microsoft. Upplev hur den här intelligenta säkerhets lösningen identifierar, hindrar, automatiskt undersöker och svarar på avancerade hot som din organisation har. 
 
-Den här guiden leder dig genom stegen för att starta utvärderings versionen av Microsoft Threat med de rekommenderade distributions vägarna. Målet är att hjälpa dig att konfigurera den integrerade hot skydds tjänsten i en labb miljö när du använder ett utvärderings konto eller i en pilot miljö i produktionen när du använder en fullständig licens. Vilka resultat som kommer att vara användbara när det gäller säkerhets åtgärds användnings fall för besluts fattarna om säkerhets lösning i organisationen. När du är klar med dina antecknings simuleringar och är nöjd med resultatet kan du distribuera och operationalize dem i organisationen med hjälp av Microsofts tekniska Sälj experter eller experter i din organisation. 
+Den här guiden leder dig genom stegen för att starta utvärderings versionen av Microsoft Threat med de rekommenderade distributions vägarna. Målet är att hjälpa dig att konfigurera säkerhets lösningen antingen i en labb miljö med ett utvärderings konto eller i en pilot miljö i en produktion med fullständig licens. Att förbereda utvärderings labbet eller pilot miljön hjälper dig att presentera ärenden för besluts fattare i organisationen. När du är klar med dina antecknings simuleringar och är nöjd med resultatet kan du distribuera och operationalize dem i organisationen med hjälp av Microsofts tekniska Sälj experter eller experter i din organisation. 
 
 Den här guiden hjälper dig:
 - Konfigurera labb Server och datorer

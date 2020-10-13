@@ -15,14 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: ac60415f38644c4630a181b1c8d696acced57ded
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: 79e30ee6fd68148543a63377d89fe2955f276f24
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368007"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446737"
 ---
 # <a name="prepare-your-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>Förbereda ett utvärderings labb för Microsoft Threat Protection eller pilot miljö
 
@@ -75,7 +76,7 @@ Förberedelsen är viktig för eventuell distribution. I det här avsnittet får
 Läs mer om licensierings-, maskinvaru-och program varu krav och andra konfigurations inställningar för att tillhandahålla och använda skydd mot Microsoft Threat. Se minimi kraven för [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites), [Microsoft Defender atp](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements), [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites), [Microsoft Cloud App Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites).
 
 ## <a name="stakeholders-and-sign-off"></a>Intressenter och utloggning
-I följande avsnitt finns information om hur du identifierar alla intressenter som är involverade i projektet och vilka som kan behöva logga ut, granska eller hålla dig informerad, till exempel för utvärdering eller drift av en pilot.
+Identifiera alla intressenter som är involverade i projektet och som kan behöva logga ut, granska eller hålla dig informerad, till exempel för utvärdering eller körning av ett pilot projekt.
 
 >[!NOTE]
 >Alla organisationer kanske inte har säkerhets organisationen förfallit att ha sådana roller. I sådant fall kan du kontakta ditt ledarskap på kontroll-och godkännande Accountabilities.
@@ -94,7 +95,7 @@ Lägg till intressenter i tabellen nedan enligt din organisation.
 | Ange namn och e-postadress | **Huvudet på cyberterrorism försvar åtgärds Center (CDOC)** *ett ombud från CDOC-teamet som ansvarar för att bestämma hur ändringen ska justeras med processerna i säkerhets åtgärds gruppen kunder.*       | DÅ     |
 | Ange namn och e-postadress | **Säkerhets arkitekt** *en representant från säkerhets teamet som ansvarar för att definiera hur ändringen justeras mot organisationens grundläggande säkerhets arkitektur.*                         | F      |
 | Ange namn och e-postadress | **Workplace Architect** Skapa *en representant från IT-teamet som ansvarar för att bestämma hur ändringen ska justeras med den grundläggande arbets plats arkitekturen i organisationen.*                             | F      |
-| Ange namn och e-postadress | **Säkerhetsanalytiker** är *ett ombud från CDOC-teamet som kan tillhandahålla inmatningar om identifierings funktionerna, användar upplevelsen och totalheten av den här ändringen från ett säkerhets åtgärds perspektiv.* | I      |
+| Ange namn och e-postadress | **Säkerhetsanalytiker** är *ett ombud från CDOC-teamet som kan ge feedback om identifierings funktionerna, användar upplevelsen och totalheten i den här ändringen från ett säkerhets åtgärds perspektiv.* | I      |
 
 ## <a name="prepare-your-azure-active-directory"></a>Förbereda din Azure Active Directory
 Hoppa över det här steget om du redan har aktiverat synkronisering mellan Active Directory och Azure Active Directory lokalt. Läs mer i dokumentationen om metod tips från Azure Active Directory. Följande steg är optimerade för att utvärdera eller köra ett pilotprogram för Microsoft Threat Protection.
@@ -127,7 +128,7 @@ Du kan [lägga till användare och grupper i Active Directory](https://docs.micr
 
 
 ## <a name="configuration-order"></a>Konfigurations ordning
-Tabellen nedan visar vilken beställning Microsoft rekommenderar för att konfigurera Microsoft Threat Protection-komponenterna för utvärderings labbet eller pilot miljö distributionen.
+Följande tabell visar vilken ordning Microsoft rekommenderar för att konfigurera Microsoft Threat Protection-komponenterna för utvärderings labbet eller pilot miljö distributionen.
 
 | Komponent                               | Beskrivning                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Konfigurations ordning |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|

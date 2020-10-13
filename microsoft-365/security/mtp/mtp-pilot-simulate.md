@@ -1,6 +1,6 @@
 ---
 title: Kör dina simuleringar av angrepps skydd för Microsoft Threats
-description: Kör angrepps simuleringar för ditt Microsoft Threat Protection Pilot projekt för att se hur det avkortas och snabbt åtgärdas.
+description: Kör en simulering av attacker för ditt Microsoft Threat Protection Pilot projekt för att se hur det är avkortat och snabbt åtgärdat.
 keywords: Microsoft Threat Protection pilot-attack, kör Microsoft Threat Protection pilot attack simulering, simulera attack mot Microsoft Threat Protection, Microsoft Threat Protection Pilot-projekt, cyberterrorism-säkerhet, Avancerat, beständigt hot, företags säkerhet, enheter, enhet, identitet, användare, data, program, tillbud, automatisk undersökning och reparation, avancerad jakt
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: f165a34d5e9df2f3502a9d9c6230fed9b73b758b
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: 50b74cf46999c3ad52f536ba0dfe07508c993a39
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418151"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48447089"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>Kör dina simuleringar av angrepps skydd för Microsoft Threats  
 
@@ -82,7 +82,7 @@ I den här simuleringen börjar vårt exempel scenario med ett PowerShell-skript
 
 ![Reconnaisance PowerShell-attack med process inmatning och SMB-](../../media/mtp/mtpdiydiagram.png)
 
-Under simuleringen injicerar angreppet shellcode i en Innocent process. I det här scenariot ska vi använda notepad.exe. Vi valde den här processen för simuleringen, men angripare kommer att få mer sannolika en lång tids krävande system process, till exempel svchost.exe. Shellcode väljer sedan för att kontakta angriparens kommando-och-kontroll (C2)-Server för att få anvisningar om hur du ska fortsätta. Dessutom försöker skriptet att köra Reconnaissance frågor mot domän kontrol Lanterna (DC). Då kan en angripare få information om de senaste inloggnings uppgifterna. När angriparen har den här informationen kan de vid ett senare tillfälle gå vidare till ett specifikt känsligt konto
+Under simuleringen injicerar angreppet shellcode i en Innocent process. Scenariot kräver användning av notepad.exe. Vi valde den här processen för simuleringen, men angriparen skulle förmodligen ha troligt vis en lång tids krävande system process, till exempel svchost.exe. Shellcode väljer sedan för att kontakta angriparens kommando-och-kontroll (C2)-Server för att få anvisningar om hur du ska fortsätta. Skriptet försöker köra Reconnaissance frågor mot domän kontrol Lanterna (DC). Med Reconnaissance kan en angripare få information om de senaste inloggnings uppgifterna. När angriparen har den här informationen kan de vid ett senare tillfälle gå vidare till ett specifikt känsligt konto
 
 >[!IMPORTANT]
 >För optimalt resultat följer du anvisningarna för att simulera angrepp så nära som möjligt.
@@ -144,13 +144,13 @@ Så här kör du en simulering av angrepps scenario:
 
 Den simulerade angreppet försöker kommunicera med en extern IP-adress (som simulerar C2-servern) och sedan försöker Reconnaissance mot domänkontrollanten via SMB.
 
-Du kommer att se ett meddelande som visas på PowerShell-konsolen när det här skriptet är klart.
+Du ser ett meddelande som visas på PowerShell-konsolen när det här skriptet är klart.
 
 ```console
 ran NetSessionEnum against [DC Name] with return code result 0      
 ```
 
-Om du vill se funktionen automatisk incident och svar håller du notepad.exe processen öppen. Du kommer att se automatisk incident och avsluta Anteckningar-processen.
+Om du vill se funktionen automatisk incident och svar håller du notepad.exe processen öppen. Du ser automatiskt samtal och svar stoppa antecknings processen.
 
 
 ## <a name="investigate-an-incident"></a>Undersök en olycka
@@ -189,11 +189,11 @@ Så här visar du felet:
 
     ![Skärm bild av sidan incidenter där genererade aviseringar aggregeras under simuleringen](../../media/mtp/fig4.png)
 
-    Aviseringarna som visas i instrument panelen kan filtreras baserat på tjänst resurser: Azure ATP, Microsoft Cloud App Security, Microsoft Defender ATP, Microsoft Threat Protection och Office ATP.  
+    De aviseringar som visas i instrument panelen kan filtreras baserat på tjänst resurser: Azure ATP, Microsoft Cloud App Security, Microsoft Defender ATP, Microsoft Threat Protection och Office ATP.  
 
 3.  Välj **Öppna sidan incident** för att få mer information om felet.
 
-    På sidan **incident** kan du se alla aviseringar och information som rör händelsen. Detta inkluderar de enheter och till gångar som ingår i aviseringen, identifierings källan för aviseringarna (Azure ATP, EDR) och anledningen till att de har länkats samman. Om du granskar samtals listan visas meddelandets förlopp. I den här vyn kan du se och undersöka de enskilda varningarna.
+    På sidan **incident** kan du se alla aviseringar och information som rör händelsen. Informationen inkluderar de enheter och till gångar som ingår i aviseringen, identifierings källan för aviseringarna (Azure ATP, EDR) och anledningen till att de har länkats samman. Om du granskar samtals listan visas meddelandets förlopp. I den här vyn kan du se och undersöka de enskilda varningarna.
 
     Du kan också klicka på **Hantera incident** från den högra menyn för att tagga händelsen, tilldela den till dig själv och lägga till kommentarer.
 
@@ -221,11 +221,11 @@ För att SOC-analytikerna ska kunna fånga de här avancerade angreppen ger djup
 ![Skärm bild av aviseringen för inmatning av potentiellt skadlig kod](../../media/mtp/fig7.png) 
 
 
-**Avisering: oväntat beteende som observerats av en process som körs med inga kommando rads argument (Källa: Microsoft Defender ATP EDR)**
+**Avisering: oväntat beteende som observerats av en process som körs utan kommando rads argument (Source: Microsoft Defender ATP EDR)**
 
-Microsoft Defender ATP-identifieringar riktar sig ofta till det vanligaste attributet för en attack teknik. Detta säkerställer hållbarheten och höjer fältet för att angriparen ska kunna växla till nyare taktiker.
+Microsoft Defender ATP-identifieringar riktar sig ofta till det vanligaste attributet för en attack teknik. Den här metoden säkerställer hållbarheten och gör att angriparen kan växla till nyare taktiker.
 
-Vi använder storskaliga utbildningsinteraktioner för att fastställa normal beteende för vanliga processer i en organisation och över hela världen och titta efter när dessa processer uppvisar avvikelser. Dessa avvikande beteenden indikerar ofta att den extra koden införts och att den körs i en betrodd process.
+Vi använder storskaliga Learning-algoritmer för att fastställa normal beteende för vanliga processer i en organisation och över hela världen och titta efter när dessa processer visar avvikande beteenden. Dessa avvikande beteenden indikerar ofta att den extra koden införts och att den körs i en betrodd process.
 
 I det här scenariot uppvisar process <i>notepad.exe</i> onormalt beteende, med kommunikation med en extern plats. Resultatet är oberoende av den specifika metod som används för att introducera och exekvera skadlig kod.
 
@@ -234,7 +234,7 @@ I det här scenariot uppvisar process <i>notepad.exe</i> onormalt beteende, med 
 
 Observera att aviserings informationen inkluderar den externa IP-adressen – en indikator som du kan använda för att utöka undersökningen.
 
-Klicka på IP-adressen i rutan aviserings process för att visa sidan med information om IP-adress.
+Välj IP-adressen i aviserings process trädet för att visa sidan IP-adress information.
 
 ![Skärm bild av aviseringen om en process inte fungerar utan kommando rads argument](../../media/mtp/fig8.png) 
 
@@ -252,25 +252,25 @@ I den här identifieringen utlöses en avisering när uppräkning av SMB-session
 
 
 ### <a name="review-the-device-timeline-microsoft-defender-atp"></a>Granska enhetens tids linje [Microsoft Defender ATP]
-När du har utforskat de olika varningarna i denna olycka navigerar du tillbaka till sidan där du undersökte dig tidigare. Klicka på fliken **enheter** på sidan incident för att granska de enheter som ingår i denna incident enligt rapport från Microsoft Defender ATP och Azure ATP.
+När du har utforskat de olika varningarna i denna olycka navigerar du tillbaka till sidan där du undersökte dig tidigare. Välj fliken **enheter** på sidan incident för att granska de enheter som ingår i denna incident enligt rapport från Microsoft Defender ATP och Azure ATP.
 
-Klicka på namnet på den enhet där angreppet gjordes för att öppna enhets sidan för den specifika enheten. På den sidan kan du se aviseringar som utlöstes och relaterade händelser.
+Välj namnet på den enhet där angreppet gjordes för att öppna enhets sidan för den specifika enheten. På den sidan kan du se aviseringar som utlöstes och relaterade händelser.
 
-Klicka på fliken **tids linje** för att öppna enhetens tids linje och Visa alla händelser och beteenden som observerats på enheten i kronologisk ordning, och blanda med aviseringar.
+Välj fliken **tids linje** för att öppna enhets tids linjen och Visa alla händelser och beteenden som observerats på enheten i kronologisk ordning, bland de notifieringar som visas.
 
 ![Skärm bild av enhets tids linjen med beteenden](../../media/mtp/fig11.png) 
 
 Om du expanderar några av de mer intressanta funktionerna kan du använda viktiga uppgifter, till exempel process träd.
 
-Bläddra ned till exempel tills du hittar varnings händelsen **misstänkt process inmatning**. Klicka på **powershell.exe som du vill använda för att notepad.exe process** under den för att visa hela process trädet för det här beteendet under diagrammet **Event entities** i sidofönstret. Använd Sök fältet för filtrering om det behövs.
+Bläddra ned till exempel tills du hittar varnings händelsen **misstänkt process inmatning**. Välj **powershell.exe inmatat till notepad.exe process** under den för att visa det fullständiga process trädet för det här beteendet under diagrammet **händelse enheter** i sidofönstret. Använd Sök fältet för filtrering om det behövs.
 
 ![Skärm bild av process trädet för den valda funktionen för att skapa PowerShell-filer](../../media/mtp/fig12.png)
 
 ### <a name="review-the-user-information-microsoft-cloud-app-security"></a>Granska användar informationen [Microsoft Cloud App Security]
 
-Klicka på fliken **användare** på sidan incident för att visa listan över användare som är involverade i angreppet. Tabellen innehåller ytterligare information om varje användare, inklusive varje användares **gransknings prioritets** poäng.
+På sidan incident väljer du fliken **användare** för att visa listan över användare som är involverade i angreppet. Tabellen innehåller ytterligare information om varje användare, inklusive varje användares **gransknings prioritets** poäng.
 
-Klicka på användar namnet för att öppna användarens profil sida där ytterligare undersökningar kan genomföras. [Läs mer om att pröva riskfyllda användare](https://docs.microsoft.com/cloud-app-security/tutorial-ueba#identify).
+Välj användar namnet för att öppna användarens profil sida där ytterligare undersökningar kan genomföras. [Läs mer om att pröva riskfyllda användare](https://docs.microsoft.com/cloud-app-security/tutorial-ueba#identify).
 <br>
 ![Skärm bild av sidan säkerhets användare för Cloud App](../../media/mtp/fig13.png)
 
@@ -281,11 +281,11 @@ Klicka på användar namnet för att öppna användarens profil sida där ytterl
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-Navigera tillbaka till incidenten i Microsoft 365 Security Center-portalen. På fliken **undersökningar** på sidan **incident** visas de automatiska utredningar som utlöstes av Azure ATP och Microsoft Defender ATP. Skärm bilden nedan visar endast den automatiska undersökningen som utlöstes av Microsoft Defender ATP. Som standard åtgärdar Microsoft Defender ATP automatiskt de artefakter som finns i den kö som kräver reparation.
+Navigera tillbaka till incidenten i Microsoft 365 Security Center-portalen. På fliken **undersökningar** på sidan **incident** visas de automatiska utredningar som utlöstes av Azure ATP och Microsoft Defender ATP. Skärm bilden nedan visar endast den automatiska undersökningen som utlöstes av Microsoft Defender ATP. Som standard åtgärdar Microsoft Defender ATP automatiskt de artefakter som finns i kön, vilket kräver reparation.
 
 ![Skärm bild av automatiska utredningar relaterade till händelsen](../../media/mtp/fig14.png)
 
-Klicka på aviseringen som utlöste en undersökning för att öppna sidan med **utrednings information** . Du kommer att se följande:
+Välj den avisering som utlöste en undersökning för att öppna sidan med **utrednings information** . Följande information visas:
 - Larm som utlöste den automatiserade undersökningen.
 - Påverkade användare och enheter. Om indikatorer hittas på ytterligare enheter visas dessa ytterligare enheter också.
 - Lista över bevis. Entiteterna Funna och analyserade, till exempel filer, processer, tjänster, driv rutiner och nätverks adresser. Dessa enheter analyseras för möjliga relationer till aviseringen och bedöms som ofarligt eller skadligt.
@@ -304,14 +304,14 @@ Du kan se <i>notepad.exe</i> försvinner från listan med aktiva processer på t
 
 När undersökningen är fullständig och bekräftad kan du stänga den.
 
-Klicka på **Hantera incident**. Ställ in statusen för att **lösa problemet** och välj relevant klassificering.
+Välj **Hantera incident**. Ställ in statusen för att **lösa problemet** och välj relevant klassificering.
 
-När incidenten har åtgärd ATS stänger den alla tillhör ande aviseringar i Microsoft 365 säkerhets Center och i de relaterade portalerna.
+När händelsen är löst stänger den alla tillhör ande aviseringar i Microsoft 365 säkerhets Center och i de relaterade portalerna.
 
 ![Skärm bild av sidan incidenter med panelen öppna hantera incident där du kan klicka på växeln för att lösa problemet](../../media/mtp/fig16.png) 
 
 <br>
-Då avbryter du ansöknings simuleringen för samtals hantering och automatisk utredning och scenario. Nästa simulering tar dig via proaktiv hotet mot obehöriga filer. 
+Då avbryter du ansöknings simuleringen för samtals hantering och automatisk utredning och scenario. Nästa simulering tar dig via proaktiv hotet mot eventuella skadliga filer. 
 
 ## <a name="advanced-hunting-scenario"></a>Avancerat jakt scenario
 
@@ -321,7 +321,7 @@ Då avbryter du ansöknings simuleringen för samtals hantering och automatisk u
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
 ### <a name="hunting-environment-requirements"></a>Krav för jakt miljön
-Det finns en enda intern post låda och enhet för det här scenariot. Du behöver också ett externt e-postkonto för att skicka test meddelandet.
+Det krävs en enda intern post låda och enhet för det här scenariot. Du behöver också ett externt e-postkonto för att skicka test meddelandet.
 
 1.  Kontrol lera att din klient organisation har [aktiverat Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service).
 2.  Identifiera en måldator som ska användas för att ta emot e-post.
@@ -369,9 +369,9 @@ Det finns en enda intern post låda och enhet för det här scenariot. Du behöv
 
     1.  Titta på resultaten och se om du kan identifiera det e-postmeddelande som du har öppnat.  Det kan ta upp till två timmar innan meddelandet visas i en avancerad jakt. Om e-postmiljöen är stor och det finns många resultat kanske du vill använda **alternativet Visa filter** för att hitta meddelandet. 
 
-        I exemplet skickades e-postmeddelandet från ett Yahoo-konto. Klicka på **+** ikonen bredvid **yahoo.com** under avsnittet SenderFromDomain och klicka sedan på **Använd** för att lägga till den markerade domänen i frågan.  Du bör använda den domän eller det e-postkonto som användes för att skicka test meddelandet i steg 1 av kör simuleringen för att filtrera resultaten.  Kör frågan igen för att få en mindre resultat uppsättning för att kontrol lera att meddelandet från simuleringen visas.
+   I exemplet skickades e-postmeddelandet från ett Yahoo-konto. Klicka på **+** ikonen bredvid **yahoo.com** under avsnittet SenderFromDomain och klicka sedan på **Använd** för att lägga till den markerade domänen i frågan.  Använd den domän eller det e-postkonto som användes för att skicka test meddelandet i steg 1 av kör simuleringen för att filtrera resultaten.  Kör frågan igen för att få en mindre resultat uppsättning för att kontrol lera att meddelandet från simuleringen visas.
    
-        ![Skärm bild av filtren. Använd filter för att begränsa sökningen och hitta det du letar efter.](../../media/mtp/fig20.png) 
+        ![Screenshot of the filters. Use filters to narrow down the search, and find what you’re looking for faster.](../../media/mtp/fig20.png) 
 
         ```console
         EmailEvents 
@@ -394,7 +394,7 @@ Det finns en enda intern post låda och enhet för det här scenariot. Du behöv
 
 5.  Ta sedan med informationen om den bifogade filen (till exempel: fil namn, hash-värden) till din resultat uppsättning. För att göra det, gå med i **EmailAttachmentInfo** -tabellen. De vanligaste fälten som används för att ansluta i det här fallet är **NetworkMessageId** och **RecipientObjectId**.
 
-    Följande fråga inkluderar också ytterligare en rad "| **Project – Byt namn på EmailTimestamp = tidsstämpel**"som hjälper dig att identifiera vilken tidsstämpel som hör till e-postmeddelandet jämfört med tidsstämplar relaterade till fil åtgärder som du lägger till i nästa steg.
+Följande fråga inkluderar också ytterligare en rad "| **Project – Byt namn på EmailTimestamp = tidsstämpel**"som hjälper dig att identifiera vilken tidstämpel som hör till e-postmeddelandet jämfört med tidsstämplar för de fil åtgärder som du ska lägga till i nästa steg.
 
     ```console
     EmailEvents 
@@ -416,9 +416,9 @@ Det finns en enda intern post låda och enhet för det här scenariot. Du behöv
     | where ActionType == "FileCreated"
     ```
 
-    Nu har du skapat en fråga som identifierar alla inkommande e-postmeddelanden där användaren öppnade eller sparade den bifogade filen. Du kan också förfina den här frågan och filtrera efter specifika avsändare, fil storlekar, filtyper och så vidare.
+Nu har du skapat en fråga som identifierar alla inkommande e-postmeddelanden där användaren öppnade eller sparade den bifogade filen. Du kan också förfina den här frågan och filtrera efter specifika avsändare, fil storlekar, filtyper och så vidare.
 
-7.  Funktioner är en särskild typ av koppling som gör att du kan hämta mer TI-information om en fil, som dess för-och inloggnings uppgifter, information om undertecknare, uppgifter och mottagare.  Om du vill ha mer information om filen använder du funktionen **FileProfile ()** .
+7.  Funktioner är en särskild typ av koppling, som gör att du kan hämta mer TI-information om en fil, som dess prevalen-, undertecknare-och inloggnings information, osv.  Om du vill ha mer information om filen använder du funktionen **FileProfile ()** .
 
     ```console
     EmailEvents 
@@ -473,9 +473,9 @@ Anpassade identifieringar kör frågan utifrån den frekvens som du anger och re
 
     ![Skärm bild av sidan identifierings regler som visar information om regler och körningar](../../media/mtp/fig27b.png) 
 
-    Från den här sidan kan du välja ett identifierings uttryck som öppnar en informations sida. 
+Från den här sidan kan du välja identifierings regeln, som öppnar en informations sida. 
 
-    ![Skärm bild av sidan med e-postbilagor där du kan se status för regel körning, utlösnings aviseringar och åtgärder, redigera identifieringen och så vidare](../../media/mtp/fig28.png) 
+    ![Screenshot of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp/fig28.png) 
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>Ytterligare avancerade övningar
 

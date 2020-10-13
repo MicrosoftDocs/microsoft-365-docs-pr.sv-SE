@@ -15,15 +15,15 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 description: Lär dig hur du använder Utforskaren och real tids identifiering i &amp; Center för säkerhets kontroll för att undersöka och reagera på hot effektivt och effektivt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ab691e88c8450e4f1ab898fe6a9d75d6682370a5
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+ms.openlocfilehash: bd437141f80b80370abeec7585596892f2434655
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417345"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446576"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer och real tids identifiering
 

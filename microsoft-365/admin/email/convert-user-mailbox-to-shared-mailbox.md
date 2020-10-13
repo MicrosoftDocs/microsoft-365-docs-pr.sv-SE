@@ -2,9 +2,9 @@
 title: Konvertera en användarpostlåda till en delad postlåda
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: sharik
+author: SKjerland
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Lär dig hur du konverterar en privat post låda till en delad post låda som kan användas av flera användare. '
-ms.openlocfilehash: 027236afb5a77e950083f254a154c491d6abc6ac
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: bc867c9b43656e40149eb7cd7a7e5ce186c10798
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341198"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445693"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Konvertera en användarpostlåda till en delad postlåda
 
@@ -57,7 +57,7 @@ När du konverterar en användares postlåda till en delad postlåda sparas alla
 Om du behöver veta mer om delade post lådor läser du [om delade post lådor](about-shared-mailboxes.md) och [skapar en delad post låda](create-a-shared-mailbox.md).
 
 > [!NOTE]
-> Inga separata licenser krävs för delade post lådor. Om du däremot vill aktivera Arkiv på plats eller lägga in en lokal eller en beställnings bara plats på en delad post låda måste du tilldela en Exchange Online-prenumeration 1 med Exchange Online-arkivering eller Exchange Online abonnemang 2-licens till post lådan.
+> Inga separata licenser krävs för delade post lådor. Om du däremot vill aktivera In-Place arkiv eller skicka ett In-Place undantag eller en tvist i en delad post låda måste du tilldela en Exchange Online-prenumeration 1 med Exchange Online-arkivering eller Exchange Online abonnemang 2-licens till post lådan.
 
 
 ## <a name="convert-the-mailbox-of-a-deleted-user"></a>Konvertera en borttagen användares postlåda

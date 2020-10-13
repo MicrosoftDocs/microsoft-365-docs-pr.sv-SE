@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 description: Under och efter en automatiserad undersökning i Microsoft 365 kan du Visa resultaten och nyckeltalen.
 ms.date: 09/29/2020
-ms.openlocfilehash: f3070cb0760cfa4405a7f6a7e20680c3e304275d
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 18da168615ce7e570bcdc9149ac14fe72b8eda4f
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412016"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48447065"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Information och resultat från en automatiserad undersökning i Microsoft 365
 

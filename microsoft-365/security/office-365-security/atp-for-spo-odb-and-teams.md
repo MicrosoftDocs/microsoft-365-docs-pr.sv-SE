@@ -17,17 +17,17 @@ ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Lär dig mer om Office 365 Avancerat skydd för filer i SharePoint Online, OneDrive för företag och Microsoft Teams.
-ms.openlocfilehash: e36efba37ae21ee1e2044d8b631cb14b17fcca55
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: e536809c74abbe87e1250acda3f3922180cfae97
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48411764"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446269"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>ATP för SharePoint, OneDrive och Microsoft Teams
 

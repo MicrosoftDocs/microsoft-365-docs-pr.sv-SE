@@ -9,16 +9,16 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: Konfigurera innehållstolkning i Project Cortex
-ms.openlocfilehash: 8217630d66a097fcc714be80bd4d3dcceb623370
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 410dd9550974ec7b5c1c5b4ae151bc92bf376544
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413716"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446329"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Konfigurera SharePoint Syntex
 
-Administratörer kan använda Administrationscenter för Microsoft 365 för att konfigurera [Microsoft SharePoint Syntex](document-understanding-overview.md). 
+Administratörer kan använda Administrationscenter för Microsoft 365 för att konfigurera [Microsoft SharePoint Syntex](index.md). 
 
 Tänk på följande innan du börjar:
 
@@ -26,8 +26,6 @@ Tänk på följande innan du börjar:
 - Vad heter ditt standard innehållscenter?
 
 Du kan ändra inställningarna efter den första konfigurationen i Administrationscenter för Microsoft 365.
-
-Innehållet i den här artikeln gäller för Project Cortex privat förhandsgranskning. [Läs mer om Project Cortex](https://aka.ms/projectcortex).
 
 Innan konfigurationen ser du till att planera för det bästa sättet att ställa in och konfigurera innehållstolkning i din miljö. Till exempel behöver du överväga om följande namn av:
 

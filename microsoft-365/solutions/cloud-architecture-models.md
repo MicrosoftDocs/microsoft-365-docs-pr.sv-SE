@@ -12,12 +12,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 08b899582e6401c0950a1c7349b73130ee62acb4
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 355d933c98bba284302c94e0dc9f54ba7ca52762
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308213"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446517"
 ---
 # <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>Illustrationer för Microsoft moln för företagsarkitektur
 
@@ -64,16 +64,23 @@ I denna serie avsnitt visas flera olika arkitektur funktioner för fusioner, fö
 <a name="security"></a>
 ### <a name="microsoft-cloud-security-for-enterprise-architects"></a>Microsoft Cloud Security för Enterprise Architects
 
-Vad IT-arkitekten behöver veta om säkerhet i Microsofts moln tjänster och plattformar.
+>[!Note]
+>Den här modellen revideras. Kontrol lera den här artikeln i framtiden för den uppdaterade versionen.
+>
+
+<!--
+
+What IT architects need to know about security in Microsoft cloud services and platforms.
   
-|**Objekt**|**Beskrivning**|
+|**Item**|**Description**|
 |:-----|:-----|
-|[![Bild av knapp](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=48121) <br/>Uppdaterat 2018 | Den här modellen innehåller: <ul><li>Microsoft-rollen för att erbjuda säkra tjänster och plattformar</li><li>Kund ansvar för att minska säkerhets riskerna</li><li>Högsta säkerhets certifiering </li><li>Säkerhets erbjudanden som tillhandahålls av Microsoft Consulting Services </ul><br/>|
+|[![Thumb image for Microsoft cloud security model](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=48121) <br/>Updated December 2018 | This model contains: <ul><li>Microsoft's role in providing secure services and platforms</li><li>Customer responsibilities to mitigate security risks</li><li>Top security certifications </li><li>Security offerings provided by Microsoft consulting services </ul><br/>|
+
+--> 
 
 
 <a name="attacks"></a>
-### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Vanliga attacker och Microsoft-funktioner som skyddar din organisation
-Lär dig mer om de vanligaste cyberterrorism-attackerna och hur Microsoft kan hjälpa din organisation i varje steg. 
+### Vanliga attacker och Microsoft-funktioner som skyddar din organisation lär dig mer om de vanligaste cyberterrorism-attackerna och hur Microsoft kan hjälpa din organisation i alla stadier av en attack. 
 
 |**Objekt**|**Beskrivning**|
 |:-----|:-----|

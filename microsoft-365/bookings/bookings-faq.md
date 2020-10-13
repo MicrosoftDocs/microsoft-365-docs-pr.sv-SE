@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Vanliga frågor och svar om Microsoft-bokningar.
-ms.openlocfilehash: ee0de2d1412aa5ec38759a3a2512de05b9e02621
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 40605cfc7e5d30e12cd34a463a76e8d9c324efc7
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545722"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445457"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Vanliga frågor och svar om Microsoft-bokningar
 
@@ -21,7 +21,7 @@ ms.locfileid: "47545722"
 
 ### <a name="what-is-microsoft-bookings"></a>Vad är Microsoft-bokningar?
 
-Microsoft-bokningar är en Microsoft 365-app som gör det enkelt att schemalägga och hantera avtalade tider. Bokningar incudes en webbaserad boknings kalender och integreras med Outlook för att optimera personalens kalender, vilket ger kunderna flexibilitet att boka en tid som passar dem bäst. Automatiska e-postaviseringar minskar inga-program och organisationer sparar tid med minskad återkommande schemaläggning. Med hjälp av bokningar kan du enkelt hålla avtalade tider via Skype eller Microsoft Teams och det hjälper dig att hantera daglig schemaläggning via programmet program i Teams. Med inbyggd möjlighet att anpassa är bokningarna utformad för att möta behoven hos flera delar av organisationen.
+Microsoft-bokningar är en Microsoft 365-app som gör det enkelt att schemalägga och hantera avtalade tider. Bokningarna innehåller en webbaserad boknings kalender och integreras med Outlook för att optimera personalens kalender, vilket ger kunderna flexibilitet att boka en tid som passar dem bäst. Automatiska e-postaviseringar minskar inga-program och organisationer sparar tid med minskad återkommande schemaläggning. Med hjälp av bokningar kan du enkelt hålla avtalade tider via Skype eller Microsoft Teams och det hjälper dig att hantera daglig schemaläggning via programmet program i Teams. Med inbyggd möjlighet att anpassa är bokningarna utformad för att möta behoven hos flera delar av organisationen.
 
 ### <a name="how-do-i-use-microsoft-bookings"></a>Hur använder jag Microsoft-bokningar?
 
@@ -174,7 +174,7 @@ En inställning som kallas för **maximal ledtid** bestämmer det längstaste i 
 
 Alla tider är i arbets tids zonen (din lokala tidszon) som standard. Det innebär att alla inställningar du konfigurerar för en kalender, till exempel arbets tid, visas i den här tids zonen. Självbetjänings sidan har möjlighet att visa alla tider för avtalade tider i tids zonen för slutanvändare, som kan stängas av om du vill.Om **Visa inte tids luckor i affärs tids zonen** är avmarkerad på fliken sida med flikar visas tids luckor i sina egna lokala tids zoner.
 
-:::image type="content" source="media/bookings-faq-region.png" alt-text="Inställningar för region och tidszon":::
+:::image type="content" source="media/bookings-faq-region.png" alt-text="Schemaläggning i bokningar":::
 
 Det finns ingen möjlighet att ställa in tidszon för personal i bokningar. Tids zonen för personalen och därmed kontors tid är i affärs tids zonen.
 
@@ -202,7 +202,7 @@ Ja, vi har en grupp funktioner som gör att flera personer kan boka samma avtala
 
 Ja. Det finns en kryss ruta på fliken boknings sida i webb programmet: **Kräv ett Microsoft 365-eller Office 365-konto från min organisation till bok**. Om du markerar den här kryss rutan begränsas åtkomst för självbetjäning till bara de som är inom din klient organisation. Det går bara att få åtkomst till de personer som har lagts till som personal på sidan med administratörs-eller visnings roller.
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Åtkomst kontroll för boknings sida i bokningar":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Schemaläggning i bokningar":::
 
 ### <a name="how-frequently-does-the-home-page-update"></a>Hur ofta uppdateras start sidan?
 
@@ -214,7 +214,7 @@ Inspelning av ledig tid i webb programmet i bokningar kommer alltid att utlösa 
 
 ### <a name="can-bookings-calendars-be-cloned-or-duplicated-and-can-they-be-templatized-for-easy-scaling"></a>Kan kalendrarna klonas eller dubbleras och de kan vara templatized för enkel skalning?
 
-Det går för närvarande att duplicera sidor med hjälp av PowerShell. Processen ska använda Graph API för att få information om post lådan och sedan använda dessa uppgifter för att skapa en ny post låda. API-dokumentation finns [här](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta).
+Processen ska använda Graph API för att få information om post lådan och sedan använda dessa uppgifter för att skapa en ny post låda. API-dokumentation finns [här](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta).
 
 ### <a name="what-reporting-is-available-in-bookings"></a>Vilken rapportering är tillgänglig i bokningar?
 
@@ -250,7 +250,7 @@ Varje boknings kalender underhålls oberoende. Det finns ingen övrig annan vy �
 
 Till gång till webb programmet bokningar inbegriper att verifiera via den vanliga Azure Active Directory-autentiseringsprocessen (AAD). Självbetjänings sidan kan göras tillgänglig för alla som har länken webb sida. Men när alternativet **Kräv att ett Microsoft 365-eller Office 365-konto från min organisation** till bok inställning är markerat är sidan begränsat för användning inom Microsoft 365-klient organisationen (med hjälp av AAD-identifiering).
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Åtkomst kontroll för boknings sida i bokningar":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Schemaläggning i bokningar":::
 
 ### <a name="does-customer-data-leave-the-production-system-for-any-reason"></a>Lämnar kunddata av produktions systemet någon anledning?
 
@@ -316,7 +316,7 @@ För att anteckningarna ska synkroniseras korrekt med personalens kalendrar mås
 
    ![Bild av fönstret för kalender delning med kan visa när jag är upptagen](../media/bookings-view-busy.png)
 
-1. Välj **klar**.
+1. Välj **Klar**.
 
 ### <a name="we-cant-find-a-staff-member-in-our-organization"></a>Vi kan inte hitta personal medlemmar i vår organisation
 
