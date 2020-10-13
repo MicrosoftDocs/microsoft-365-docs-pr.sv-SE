@@ -13,38 +13,38 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 922ffa3add41dba9896a406dc5705825d2d27aab
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: e434f6088fa1cd08e6b14e3808007e89f32b83a3
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413680"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48431045"
 ---
-# <a name="monitor-and-view-reports-in-the-microsoft-365-security-center"></a><span data-ttu-id="3c6a6-104">Övervaka och Visa rapporter i Microsoft 365 säkerhets Center</span><span class="sxs-lookup"><span data-stu-id="3c6a6-104">Monitor and view reports in the Microsoft 365 security center</span></span>
+# <a name="monitor-and-view-reports-in-the-microsoft-365-security-center"></a><span data-ttu-id="86be0-104">Övervaka och Visa rapporter i Microsoft 365 säkerhets Center</span><span class="sxs-lookup"><span data-stu-id="86be0-104">Monitor and view reports in the Microsoft 365 security center</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="3c6a6-105">I säkerhets Center för Microsoft 365 finns en sammanfattning av skydds-och säkerhets status i Microsoft 365-miljön.</span><span class="sxs-lookup"><span data-stu-id="3c6a6-105">The Microsoft 365 security center provides a summary of protection and security statuses across your Microsoft 365 environment.</span></span>
+<span data-ttu-id="86be0-105">I säkerhets Center för Microsoft 365 finns en sammanfattning av skydds-och säkerhets status i Microsoft 365-miljön.</span><span class="sxs-lookup"><span data-stu-id="86be0-105">The Microsoft 365 security center provides a summary of protection and security statuses across your Microsoft 365 environment.</span></span>
 
-<span data-ttu-id="3c6a6-106">Säkerhets Center innehåller avsnittet **rapporter** som är en värd för kort som omfattar en mängd olika områden.</span><span class="sxs-lookup"><span data-stu-id="3c6a6-106">The security center includes a **Reports** section which features a host of cards covering a variety of areas.</span></span> <span data-ttu-id="3c6a6-107">Säkerhets analyser och administratörer kan spåra korten som en del av deras dagliga operationer.</span><span class="sxs-lookup"><span data-stu-id="3c6a6-107">Security analysts and administrators can track the cards as part of their day-to-day operations.</span></span> <span data-ttu-id="3c6a6-108">För att detaljgranska kan kort tillhandahålla detaljerade rapporter och, i vissa fall, hanterings alternativ.</span><span class="sxs-lookup"><span data-stu-id="3c6a6-108">On drill-down, cards provide detailed reports and, in some cases, management options.</span></span>
+<span data-ttu-id="86be0-106">Säkerhets Center innehåller avsnittet **rapporter** som är en värd för kort som omfattar en mängd olika områden.</span><span class="sxs-lookup"><span data-stu-id="86be0-106">The security center includes a **Reports** section which features a host of cards covering a variety of areas.</span></span> <span data-ttu-id="86be0-107">Säkerhets analyser och administratörer kan spåra korten som en del av deras dagliga operationer.</span><span class="sxs-lookup"><span data-stu-id="86be0-107">Security analysts and administrators can track the cards as part of their day-to-day operations.</span></span> <span data-ttu-id="86be0-108">För att detaljgranska kan kort tillhandahålla detaljerade rapporter och, i vissa fall, hanterings alternativ.</span><span class="sxs-lookup"><span data-stu-id="86be0-108">On drill-down, cards provide detailed reports and, in some cases, management options.</span></span>
 
-## <a name="customize-views"></a><span data-ttu-id="3c6a6-109">Anpassa vyer</span><span class="sxs-lookup"><span data-stu-id="3c6a6-109">Customize views</span></span>
+## <a name="customize-views"></a><span data-ttu-id="86be0-109">Anpassa vyer</span><span class="sxs-lookup"><span data-stu-id="86be0-109">Customize views</span></span>
 
-<span data-ttu-id="3c6a6-110">Som standard grupperas korten i dessa kategorier:</span><span class="sxs-lookup"><span data-stu-id="3c6a6-110">By default, cards are grouped into these categories:</span></span>
+<span data-ttu-id="86be0-110">Som standard grupperas korten i dessa kategorier:</span><span class="sxs-lookup"><span data-stu-id="86be0-110">By default, cards are grouped into these categories:</span></span>
   
-* <span data-ttu-id="3c6a6-111">[Identiteter](monitor-and-report-identities.md) – användar konton och autentiseringsuppgifter</span><span class="sxs-lookup"><span data-stu-id="3c6a6-111">[Identities](monitor-and-report-identities.md) - user accounts and credentials</span></span>
-* <span data-ttu-id="3c6a6-112">[Data](monitor-data.md) – e-post och dokument innehåll</span><span class="sxs-lookup"><span data-stu-id="3c6a6-112">[Data](monitor-data.md) - email and document contents</span></span>
-* <span data-ttu-id="3c6a6-113">[Enheter](monitor-devices.md) – datorer, mobil telefoner och andra enheter</span><span class="sxs-lookup"><span data-stu-id="3c6a6-113">[Devices](monitor-devices.md) - computers, mobile phones, and other devices</span></span>
-* <span data-ttu-id="3c6a6-114">[Appar](monitor-apps.md) – program och anslutna online tjänster</span><span class="sxs-lookup"><span data-stu-id="3c6a6-114">[Apps](monitor-apps.md) - programs and attached online services</span></span>
+* <span data-ttu-id="86be0-111">[Identiteter](monitor-and-report-identities.md) – användar konton och autentiseringsuppgifter</span><span class="sxs-lookup"><span data-stu-id="86be0-111">[Identities](monitor-and-report-identities.md) - user accounts and credentials</span></span>
+* <span data-ttu-id="86be0-112">[Data](monitor-data.md) – e-post och dokument innehåll</span><span class="sxs-lookup"><span data-stu-id="86be0-112">[Data](monitor-data.md) - email and document contents</span></span>
+* <span data-ttu-id="86be0-113">[Enheter](monitor-devices.md) – datorer, mobil telefoner och andra enheter</span><span class="sxs-lookup"><span data-stu-id="86be0-113">[Devices](monitor-devices.md) - computers, mobile phones, and other devices</span></span>
+* <span data-ttu-id="86be0-114">[Appar](monitor-apps.md) – program och anslutna online tjänster</span><span class="sxs-lookup"><span data-stu-id="86be0-114">[Apps](monitor-apps.md) - programs and attached online services</span></span>
 
-<span data-ttu-id="3c6a6-115">Växla till **Gruppera efter ämne**för att ordna om korten och gruppera dem i följande avsnitt:</span><span class="sxs-lookup"><span data-stu-id="3c6a6-115">Switch to **Group by topic**, to rearrange the cards and group them into the following topics:</span></span>
+<span data-ttu-id="86be0-115">Växla till **Gruppera efter ämne**för att ordna om korten och gruppera dem i följande avsnitt:</span><span class="sxs-lookup"><span data-stu-id="86be0-115">Switch to **Group by topic**, to rearrange the cards and group them into the following topics:</span></span>
 
-* <span data-ttu-id="3c6a6-116">**Risk** -kort som framhäver enheter, till exempel konton och enheter, som kan vara utsatta för risk.</span><span class="sxs-lookup"><span data-stu-id="3c6a6-116">**Risk** - cards that highlight entities, such as accounts and devices, that might be at risk.</span></span> <span data-ttu-id="3c6a6-117">Dessa kort kan också framhäva potentiella risk källor, till exempel nya hot-kampanjer och behöriga molnappar</span><span class="sxs-lookup"><span data-stu-id="3c6a6-117">These cards also highlight possible sources of risk, such as new threat campaigns and privileged cloud apps</span></span>  
-* <span data-ttu-id="3c6a6-118">**Identifierings trender** -kort som markerar nya hot identifieringar, avvikelser och policy överträdelser</span><span class="sxs-lookup"><span data-stu-id="3c6a6-118">**Detection trends** - cards that highlight new threat detections, anomalies, and policy violations</span></span>
-* <span data-ttu-id="3c6a6-119">**Konfiguration och hälsa** -kort som täcker konfiguration och distribution av säkerhets kontroller, inklusive enhetens registrerings tillstånd för Management Services</span><span class="sxs-lookup"><span data-stu-id="3c6a6-119">**Configuration and health** - cards that cover the configuration and deployment of security controls, including device onboarding states to management services</span></span>
-* <span data-ttu-id="3c6a6-120">**Övrigt** – alla andra kort kategoriseras inte under andra ämnen</span><span class="sxs-lookup"><span data-stu-id="3c6a6-120">**Other** - all other cards not categorized under other topics</span></span>
+* <span data-ttu-id="86be0-116">**Risk** -kort som framhäver enheter, till exempel konton och enheter, som kan vara utsatta för risk.</span><span class="sxs-lookup"><span data-stu-id="86be0-116">**Risk** - cards that highlight entities, such as accounts and devices, that might be at risk.</span></span> <span data-ttu-id="86be0-117">Dessa kort kan också framhäva potentiella risk källor, till exempel nya hot-kampanjer och behöriga molnappar</span><span class="sxs-lookup"><span data-stu-id="86be0-117">These cards also highlight possible sources of risk, such as new threat campaigns and privileged cloud apps</span></span>  
+* <span data-ttu-id="86be0-118">**Identifierings trender** -kort som markerar nya hot identifieringar, avvikelser och policy överträdelser</span><span class="sxs-lookup"><span data-stu-id="86be0-118">**Detection trends** - cards that highlight new threat detections, anomalies, and policy violations</span></span>
+* <span data-ttu-id="86be0-119">**Konfiguration och hälsa** -kort som täcker konfiguration och distribution av säkerhets kontroller, inklusive enhetens registrerings tillstånd för Management Services</span><span class="sxs-lookup"><span data-stu-id="86be0-119">**Configuration and health** - cards that cover the configuration and deployment of security controls, including device onboarding states to management services</span></span>
+* <span data-ttu-id="86be0-120">**Övrigt** – alla andra kort kategoriseras inte under andra ämnen</span><span class="sxs-lookup"><span data-stu-id="86be0-120">**Other** - all other cards not categorized under other topics</span></span>
