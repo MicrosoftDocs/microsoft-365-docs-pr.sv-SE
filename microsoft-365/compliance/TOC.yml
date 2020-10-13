@@ -250,6 +250,8 @@
           href: how-dlp-works-between-admin-centers.md
         - name: Använda känslighetsetiketter som villkor i DLP-principer (förhandsversion)
           href: dlp-sensitivity-label-as-condition.md
+        - name: Använda principer för skydd mot dataförlust för appar som inte kommer från Microsoft-molnet
+          href: dlp-use-policies-non-microsoft-cloud-apps.md
 - name: Hantera informationsstyrning
   items:
     - name: Styr dina data
