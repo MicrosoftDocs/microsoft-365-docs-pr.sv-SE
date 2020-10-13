@@ -15,16 +15,16 @@ search.appverid:
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig att använda en angrepps Simulator för att köra simulerade nätfiske och lösen ords attacker i sina Microsoft 365 E5-eller ATP-abonnemang 2-organisationer.
-ms.openlocfilehash: 76ba6fb68bbf8dd22f96d2be56136e74b0057619
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 2c837df1abc344186168c88ce0db94dd9d1d2b4a
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414016"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430793"
 ---
 # <a name="attack-simulator-in-atp"></a>Attack Simulator i ATP
 

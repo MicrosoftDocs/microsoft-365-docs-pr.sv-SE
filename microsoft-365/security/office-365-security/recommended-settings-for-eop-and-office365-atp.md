@@ -15,14 +15,14 @@ search.appverid:
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 description: Vilka är de bästa metoderna för säkerhets inställningar för Exchange Online Protection (EOP) och Avancerat skydd (ATP)? Vad är de senaste rekommendationerna för standard skydd? Vad ska användas om du vill veta mer? Och vilka extrafunktioner får du om du även använder avancerat skydd (ATP)?
-ms.openlocfilehash: f12610d2f5517461deb828f1b364b30ce3d5202a
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: fd2d680e093289aa5fc2dbcac127e35caf50098b
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413872"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430663"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Rekommenderade inställningar för EOP och Office 365 säkerhet för ATP
 

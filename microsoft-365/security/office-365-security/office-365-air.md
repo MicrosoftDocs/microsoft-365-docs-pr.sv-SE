@@ -16,17 +16,17 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 description: Komma igång med automatiska undersökningar och svars funktioner i Microsoft Defender för Office 365.
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: c2ce99a2a7033c7cdcf435e237b46438259f37e4
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 340fc4851043ff917eaff6f237c3ad7d5810a4cb
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412964"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430925"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Komma igång med automatisk undersökning och svar (AIR) i Office 365
 
