@@ -16,16 +16,16 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: Lär dig hur du använder PowerShell för att utföra en IMAP-migrering (Internet Mail Access Protocol) till Microsoft 365.
-ms.openlocfilehash: 6eb422455d0bdf31fa1859bd0231b68e5568748c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 67621ecfca7ec323a73b91a530f848dd7571f9b2
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694738"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464450"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>Använda PowerShell för att utföra en IMAP-migrering till Microsoft 365
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 Som en del av processen med att distribuera Microsoft 365 kan du välja att migrera innehållet i användar post lådor från en e-posttjänst via IMAP (Internet Mail Access Protocol) till Microsoft 365. I den här artikeln får du stegvisa instruktioner för ett e-postmeddelande med IMAP-migrering genom att använda Exchange Online PowerShell. 
   
@@ -103,7 +103,7 @@ För attributet **username** kan du förutom användar namnet använda autentise
   
  **Microsoft Exchange:**
   
-Om du migrerar e-post från IMAP-implementeringen för Microsoft Exchange använder du formatet **Domain/Admin_UserName/User_UserName** för attributet **UserName** i CSV-filen. Säg att du migrerar e-post från Exchange för Terry Adams, Ann Beebe och Paul Cannon. Du har ett e-postadministratörs konto med användar namnet **administratör** och lösen ordet är **P@ssw0rd**. Så här skulle CSV-filen se ut:
+Om du migrerar e-post från IMAP-implementeringen för Microsoft Exchange använder du formatet **Domain/Admin_UserName/User_UserName** för attributet **UserName** i CSV-filen. Säg att du migrerar e-post från Exchange för Terry Adams, Ann Beebe och Paul Cannon. Du har ett e-postadministratörs konto med användar namnet **administratör** och lösen ordet är **P \@ Ssw0Rd**. Så här skulle CSV-filen se ut:
   
 ```powershell
 EmailAddress,UserName,Password
@@ -114,7 +114,7 @@ paulc@contoso.edu,contoso-students/mailadmin/paul.cannon,P@ssw0rd
 
  **Dovecot:**
   
-För IMAP-servrar som stöder enkel inloggningsautentisering och säkerhets skikt (SASL), till exempel en Dovecot IMAP-server, använder du formatet **User_UserName * Admin_UserName**, där asterisken (*) är ett konfigurerbart avgränsnings tecken. Låt oss säga att du migrerar samma användares e-post från en Dovecot IMAP-server med **Administratörs** behörighet för administratörer och **P@ssw0rd**. Så här skulle CSV-filen se ut:
+För IMAP-servrar som stöder enkel inloggningsautentisering och säkerhets skikt (SASL), till exempel en Dovecot IMAP-server, använder du formatet **User_UserName * Admin_UserName**, där asterisken (*) är ett konfigurerbart avgränsnings tecken. Låt oss säga att du migrerar samma användares e-post från en Dovecot IMAP-server med administratörs behörigheterna mail **admin** och **P \@ Ssw0Rd**. Så här skulle CSV-filen se ut:
   
 ```powershell
 EmailAddress,UserName,Password
@@ -125,7 +125,7 @@ paulc@contoso.edu,paul.cannon*mailadmin,P@ssw0rd
 
  **Mirapoint**
   
-Om du migrerar e-post från Mirapoint Message Server använder du formatet **#user@domain#Admin_UserName#** för administratörsautentiseringsuppgifterna. Om du vill migrera e-post från Mirapoint **med administratörs-och** **P@ssw0rd**för administratörer kan CSV-filen se ut så här:
+Om du migrerar e-post från Mirapoint Message Server använder du formatet **#user \@ domain # Admin_UserName #** för administratörs uppgifterna. För att migrera e-post från Mirapoint med **administratörs-och** **P- \@ SSW0RD**för administratörer ser CSV-filen ut så här:
   
 ```powershell
 EmailAddress,UserName,Password

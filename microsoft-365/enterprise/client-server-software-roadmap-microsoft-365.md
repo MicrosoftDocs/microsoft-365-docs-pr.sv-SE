@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Översikten för konfiguration av klient-och serverprogram för Microsoft 365.
-ms.openlocfilehash: 898464222b8296cee3ab12fe7351295f39a23736
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d3401baa09d27ff9753f9a45ecb537c67701c0e9
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950574"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464414"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Klient-och Server program översikt för Microsoft 365
 
@@ -60,7 +60,7 @@ Microsoft 365-applikationer för företag installerar uppdateringar automatiskt 
 
 ### <a name="office-2010"></a>Office 2010
 
-För Office 2010-versioner upphör supporten **13 oktober 2020**. Mer information finns i [Supporten för Office 2010 upphör](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
+För Office-versioner i Office 2010-versionen slutade supporten den **13 oktober 2020**. Mer information finns i [Supporten för Office 2010 upphör](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
 
 I stället för att uppgradera datorerna som kör Office 2010 med Office 2013 eller Office 2016, där båda måste uppdateras manuellt, kan du:
 
@@ -117,7 +117,7 @@ I stället för att uppgradera dina serverprodukter i Office 2007-versionen med 
 
 ### <a name="office-server-2010"></a>Office-server 2010
 
-Upphörande av support för [Exchange Server 2010](exchange-2010-end-of-support.md) är **13 oktober 2020**.
+Stöd för [Exchange Server 2010](exchange-2010-end-of-support.md) upphörde den **13 oktober 2020**.
 
 Upphörande av support för [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) är **13 april 2021**.
 

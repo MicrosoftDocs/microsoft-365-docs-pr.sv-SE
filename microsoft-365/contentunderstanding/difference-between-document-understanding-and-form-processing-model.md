@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Beskriver viktiga skillnader mellan modeller för dokumenttolkning och modeller för formulärbearbetning
-ms.openlocfilehash: c5d60753e84cb55dc088b79f90fe841b50da1836
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 98d5e9463dedda96c02ed7c3ed80576638941816
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338606"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464234"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Skillnader mellan modeller för dokumenttolkning och modeller för formulärbearbetning 
 
@@ -54,8 +54,6 @@ Modeller för dokumenttolkning skapas och hanteras på en SharePoint-webbplats f
 Modeller för formulärbearbetning skapas i PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview), men skapandet startas direkt från ett dokumentbibliotek i SharePoint. Skapande av modell för formulärbearbetning måste aktiveras för ditt dokumentbibliotek för att en användare ska kunna skapa en modell för formulärbearbetning för den och en administratör kan göra detta i administratörsinställningar för innehållstolkningn. Modeller för formulärbearbetning använder PowerAutomate-flöden för att bearbeta filer när de överförs till dokumentbiblioteket.
 
 När du skapar en modell för dokumenttolkning skapar du en ny [innehållstyp för SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) som sparas i galleriet för innehållstyper i SharePoint. Du kan också använda befintliga innehållstyper för att definiera din modell om det behövs.
-
-Modeller för formulärbearbetning skapas i PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview), men skapandet startas direkt från ett dokumentbibliotek i SharePoint. Skapande av modellen för formulärbearbetning måste aktiveras i dokumentbiblioteket för att en användare ska kunna skapa en modell för formulärbearbetning för den. Eller så kan en administratör göra detta i administratörsinställningar för innehållstolkning. Modeller för formulärbearbetning använder PowerAutomate-flöden för att bearbeta filer när de överförs till dokumentbiblioteket.
 
 Modeller för formulärbearbetning skapar också nya [innehållstyper för SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) och lagras även i galleriet för innehållstyper i SharePoint.
 

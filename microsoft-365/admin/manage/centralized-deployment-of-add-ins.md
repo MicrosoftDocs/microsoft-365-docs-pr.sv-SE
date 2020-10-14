@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Ta reda på om din klient organisation och användare uppfyller kraven och Använd centraliserad distribution för att distribuera Office-tillägg.
-ms.openlocfilehash: c3e306789f5b1c09e835d8d2c5ebea668bf14874
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: c89cb801a5b2fcad87227feaf4228b0dcabcf609
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235424"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464056"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Avgöra om centraliserad distribution av tillägg fungerar för din organisation
 
@@ -46,7 +46,7 @@ Det kan ta upp till 24 timmar för ett tillägg att visas för klienten och alla
 ## <a name="requirements"></a>Krav
 
 Centraliserad distribution av tillägg kräver att användarna använder Microsoft 365-appar för Enterprise eller Microsoft 365 Business Premium (och är inloggade på Office med deras organisations-ID) och har Exchange Online och aktiva Exchange Online-postlådor. Abonnemangs katalogen måste antingen vara i eller sammankopplad till Azure Active Directory.
-Du kan se specifika krav för Office och Exchange nedan eller använda kompatibilitetskontrollen för[centraliserad distribution](#centralized-deployment-compatibility-checker).
+Du kan se specifika krav för Office och Exchange nedan eller använda kompatibilitetskontrollen för [centraliserad distribution](#centralized-deployment-compatibility-checker).
 
 Centraliserad distribution stöder inte följande:
   
@@ -134,7 +134,8 @@ När verktyget körts klart har en utdatafil i kommaavgränsat format (.csv) gen
     
 - Postlåda som stöds - om de finns på en OAuth-aktiverad postlåda
 
-
+> [!NOTE]
+> Multifaktorautentisering stöds inte när du använder PowerShell-modulen för central distribution.
   
 ## <a name="user-and-group-assignments"></a>Användar- och grupptilldelningar
 
@@ -171,4 +172,3 @@ Om du eller användarna drabbas av problem med att ladda tillägget när du anv�
 |Office  <br/> | Charles-/Fiddler-loggar  <br/>  Klientorganisationens id ( [så här gör du](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id.aspx))  <br/>  CorrelationID. Visa källan för en av Office-sidorna och leta efter Correlation-ID-värdet och skicka det till stöd:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |RTF-klienter (Windows, Mac)  <br/> | Charles-/Fiddler-loggar  <br/>  Build-nummer för klient programmet (helst som en skärm bild från **fil/konto**)  <br/> |
    
-

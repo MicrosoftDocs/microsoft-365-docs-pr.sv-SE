@@ -3,7 +3,6 @@ title: Stöd översikt för Exchange 2010
 ms.author: dstrome
 author: dstrome
 manager: laurawi
-ms.date: 09/16/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,22 +12,22 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 närmar sig Supportens slut. Använd den här planerings översikten som vägledning för att förbereda uppgraderingen till Exchange Online eller en nyare version av Exchange Server lokalt.
-ms.openlocfilehash: 128abd1e98c3e9d1ec4dd8a58683ee0ab019af18
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: dbae3fba3ddbff016e0e9434db4af6ca0a046b0d
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950826"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464258"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Stöd översikt för Exchange 2010
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Den **13 oktober 2020**har Exchange Server 2010 slut på support. Om du inte redan har börjat migrera från Exchange 2010 till Microsoft 365, Office 365 eller Exchange 2016 är det dags att börja planera.
+Exchange Server 2010 har nått Supportens slut den **13 oktober 2020**. Om du inte redan har börjat migrera från Exchange 2010 till Microsoft 365, Office 365 eller Exchange 2016 är det dags att börja planera.
 
 ## <a name="what-does-end-of-support-mean"></a>Vad innebär slut på support?
 
-Exchange Server, till exempel nästan alla Microsoft-produkter, har en support livs cykel under vilken vi tillhandahåller nya funktioner, korrigeringar, säkerhets korrigeringar och så vidare. Denna livs cykel räcker normalt i 10 år från datumet för produktens första utgivning och slutet av den här livs cykeln kallas produkt Supportens slut. När Exchange 2010 når Supportens slut den 13 oktober 2020 kommer Microsoft inte längre att tillhandahålla:
+Exchange Server, till exempel nästan alla Microsoft-produkter, har en support livs cykel under vilken vi tillhandahåller nya funktioner, korrigeringar, säkerhets korrigeringar och så vidare. Denna livs cykel räcker normalt i 10 år från datumet för produktens första utgivning och slutet av den här livs cykeln kallas produkt Supportens slut. Eftersom Exchange 2010 nådde Supportens slut den 13 oktober 2020, ger Microsoft inte längre ut:
 
 - Teknisk support för problem som kan uppstå.
 - Program korrigeringar för problem som upptäcks och som kan påverka serverns stabilitet och användbarhet.
@@ -50,7 +49,7 @@ Med Exchange 2010 med att nå Supportens slut är det bra att utforska dina alte
 > Om din organisation väljer att migrera post lådor till Microsoft 365, men om du vill fortsätta att ha DirSync eller Azure AD Connect-ansluta på plats för att hantera användar konton från lokala Active Directory måste du ha minst en Exchange-Server lokalt. Om den senaste Exchange-servern tas bort kan du inte ändra Exchange-mottagarna i Exchange Online. Detta beror på att källan till auktoritet kvarstår i din lokala Active Directory och ändringar måste göras där. I det här scenariot har du följande alternativ:
 
 - (**Rekommenderas**) Om du kan migrera dina post lådor till Microsoft 365 och uppgradera dina servrar senast den 13 oktober 2020 kan du använda Exchange 2010 för att ansluta till Microsoft 365 och migrera post lådor. Migrera sedan Exchange 2010 till Exchange 2016 och inaktivera alla återstående Exchange 2010-servrar.
-- Om du inte kan slutföra migrering av post lådor och lokal server uppgradering senast den 13 oktober 2020 uppgraderar du först den lokala Exchange 2010-servern till Exchange 2016 och sedan använder du Exchange 2016 för att ansluta till Microsoft 365 och migrera post lådor.
+- Om du inte kunde slutföra migrering av post lådor och lokal server uppgradering senast den 13 oktober 2020 uppgraderar du först den lokala Exchange 2010-servern till Exchange 2016 och sedan använder du Exchange 2016 för att ansluta till Microsoft 365 och migrera post lådor.
 
 > [!NOTE]
 > Men lite mer komplicerat kan du även migrera post lådor till Microsoft 365 när du migrerar dina lokala Exchange 2010-servrar till Exchange 2016.
@@ -65,7 +64,7 @@ I följande avsnitt förklaras alla alternativ i detalj.
 
 Migrering av e-post till Microsoft 365 är ditt bästa och enklaste alternativ för att hjälpa dig att ta bort din Exchange 2010-distribution. Med en migrering till Microsoft 365 kan du skapa ett enkelt hopp från gammal teknik till de här funktionerna, till exempel:
 
-- Funktioner för efterlevnad, till exempel bevarande principer, lokal och beställnings princip undantag, pågående eDiscovery och mycket mer.
+- Funktioner för efterlevnad, som bevarande principer, In-Place och rättsliga undantag, pågående eDiscovery och mycket mer.
 - Microsoft Teams
 - Power BI
 - Prioriterad inkorg

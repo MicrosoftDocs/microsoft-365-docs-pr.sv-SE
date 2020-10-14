@@ -12,12 +12,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 355d933c98bba284302c94e0dc9f54ba7ca52762
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 9988a822880db43feebb6ef007c39bd59c5ce6c7
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446517"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464462"
 ---
 # <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>Illustrationer för Microsoft moln för företagsarkitektur
 
@@ -59,7 +59,7 @@ I denna serie avsnitt visas flera olika arkitektur funktioner för fusioner, fö
 
 |**Objekt**|**Beskrivning**|
 |:-----|:-----|
-|[![Miniatyrbild av affischen för Teams logiska arkitektur](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx) <br>Uppdaterat 2019    |Den här modellen innehåller: <ul><li>En mappning av affärs scenarier till arkitektur metoder</li><li>Utformning</li><li>Migreringsjobb för enskild händelse</li><li>Fasat migreringsarkiv</li><li>Innehavarens flytt-eller flödes schema</li></ul>|
+|[![Miniatyrbild av affischen för Teams logiska arkitektur](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx) <br>Uppdaterat 2020    |Den här modellen innehåller: <ul><li>En mappning av affärs scenarier till arkitektur metoder</li><li>Utformning</li><li>Exempel på migrering av enstaka händelse</li><li>Exempel på stegat migrering</li><li>Exempel på flytt av klient organisation eller flödes schema</li></ul>|
 
 <a name="security"></a>
 ### <a name="microsoft-cloud-security-for-enterprise-architects"></a>Microsoft Cloud Security för Enterprise Architects

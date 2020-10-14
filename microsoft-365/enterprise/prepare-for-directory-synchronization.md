@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Här beskrivs hur du förbereder användare till Microsoft 365 med hjälp av profilsynkronisering och de långsiktiga fördelarna med den här metoden.
-ms.openlocfilehash: 79d2a7932867531849ce75f8452b91e8c7ddd7b1
-ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
+ms.openlocfilehash: 41c2ff08c8e2ae11079e82d378110d10bd7cab3e
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48390179"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464246"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Förbereda för Active Directory-synkronisering till Microsoft 365
 
@@ -159,7 +159,7 @@ De attribut som du måste förbereda finns här:
   - Maximalt antal tecken för domän namnet efter snabel-a (@): 48
   - Ogiltiga tecken: \% &amp; \* +/=? { } | \< \> ( ) ; : , [ ] " '
   - Tillåtna tecken: A – Z, A-Z, 0 – 9, ". - _ ! # ^ ~
-  - En omljud är också ett ogiltigt tecken.
+  - Bokstäver med dia kritiska tecken, till exempel umlauts, accenter och Tilde, är ogiltiga.
   - Tecknet @ är obligatoriskt i varje **userPrincipalName** -värde.
   - Tecknet @ får inte vara det första tecknet i varje **userPrincipalName** -värde.
   - Användar namnet får inte avslutas med en punkt (.), ett et-tecken ( &amp; ), ett blank steg eller ett snabel-a (@).

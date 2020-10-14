@@ -16,12 +16,14 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 1ad8f643741626c4cbb8534b4ed5ed7591010fe0
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+- m365solution-identitydevice
+- m365solution-scenario
+ms.openlocfilehash: 28d4fc196e75a1a7a27cbe2a0f6804646002354f
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399740"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464080"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Vanliga principer för identitets- och enhetsåtkomst
 
@@ -180,7 +182,7 @@ Logga in på [Microsoft Azure-portalen ( https://portal.azure.com) ](https://por
 
 I avsnittet **uppgifter** :
 
-|Type (Typ)|Fjärråtkomstsegenskaper|Värden|Fattning|
+|Skriv|Fjärråtkomstsegenskaper|Värden|Fattning|
 |:---|:---------|:-----|:----|
 |Användare|Inkludera|**Alla användare**|Använda|
 |Risk för användare| **Högsta**||Använda|
@@ -188,7 +190,7 @@ I avsnittet **uppgifter** :
 
 I avsnittet andra **uppgifter** :
 
-| Type (Typ) | Fjärråtkomstsegenskaper | Värden                  | Fattning |
+| Skriv | Fjärråtkomstsegenskaper | Värden                  | Fattning |
 |:-----|:-----------|:------------------------|:------|
 | Åtkomst | **Tillåt åtkomst** |  | Använda  |
 |      |     | **Kräv lösen ords ändring** | Check  |
@@ -284,7 +286,7 @@ Följande inställningar rekommenderas för datorer med Windows 10 och senare, e
 
 Information om **utvärderings regler för tjänsten för Hälsoattestering för Windows >** i den här tabellen.
 
-|Fjärråtkomstsegenskaper|Value|Fattning|
+|Fjärråtkomstsegenskaper|Värde|Fattning|
 |:---------|:-----|:----|
 |Kräv BitLocker|Nödvändig| Använda |
 |Kräv säker start för att vara aktive rad på enheten|Nödvändig| Använda |
@@ -297,29 +299,29 @@ För **Configuration Manager-efterlevnad**väljer du **Kräv**.
 
 Information om **säkerhet**finns i den här tabellen.
 
-|Type (Typ)|Fjärråtkomstsegenskaper|Value|Fattning|
+|Skriv|Fjärråtkomstsegenskaper|Värde|Fattning|
 |:---|:---------|:-----|:----|
 |Lösenord|Kräv lösen ord för att låsa upp mobila enheter|Nödvändig| Använda |
 ||Enkla lösen ord|Blockera|Använda|
 ||Lösen ords typ|Enhetens standard|Använda|
-||Minsta längd på lösen ord|18.6|Type (Typ)|
-||Maximalt antal minuter av inaktivitet innan lösen ord krävs|0,15|Type (Typ) <br>Den här inställningen stöds för Android-versionerna 4,0 och senare eller KNOX 4,0 och senare. För iOS-enheter stöds det för iOS 8,0 och senare.|
-||Lösen ordet upphör (dagar)|41|Type (Typ)|
-||Antal tidigare lösen ord för att förhindra åter användning|T5|Type (Typ)|
+||Minsta längd på lösen ord|18.6|Skriv|
+||Maximalt antal minuter av inaktivitet innan lösen ord krävs|0,15|Skriv <br>Den här inställningen stöds för Android-versionerna 4,0 och senare eller KNOX 4,0 och senare. För iOS-enheter stöds det för iOS 8,0 och senare.|
+||Lösen ordet upphör (dagar)|41|Skriv|
+||Antal tidigare lösen ord för att förhindra åter användning|T5|Skriv|
 ||Kräv lösen ord när enheten återgår från Idle-tillstånd (mobil och Holographic)|Nödvändig|Tillgängligt för Windows 10 och senare|
 |Kryptering|Kryptering av data lagring på enhet|Nödvändig|Använda|
 |Enhets säkerhet|Vägg|Nödvändig|Använda|
 ||Viktigt|Nödvändig|Använda|
 ||Antispionprogram|Nödvändig|Använda <br> För den här inställningen krävs en antispionprograms lösning registrerade i Windows säkerhets Center.|
 |Defender|Microsoft Defender antimalware|Nödvändig|Använda|
-||Microsoft Defender antimalware-version||Type (Typ) <br> Stöds endast för Windows 10-skrivbordet. Microsoft rekommenderar att versions nummer inte överstiger fem gånger från den senaste versionen.|
+||Microsoft Defender antimalware-version||Skriv <br> Stöds endast för Windows 10-skrivbordet. Microsoft rekommenderar att versions nummer inte överstiger fem gånger från den senaste versionen.|
 ||Microsoft Defender antimalware-signatur uppdaterad|Nödvändig|Använda|
 ||Real tids skydd|Nödvändig|Använda <br>Stöds endast för Windows 10-skrivbordet|
 |||||
 
 **Microsoft Defender Avancerat skydd**
 
-|Type (Typ)|Fjärråtkomstsegenskaper|Value|Fattning|
+|Skriv|Fjärråtkomstsegenskaper|Värde|Fattning|
 |:---|:---------|:-----|:----|
 |Microsoft Defender-regler för avancerat skydd|Kräv att enheten bevaras på eller under maskin risk poängen|Risk|Använda|
 |||||

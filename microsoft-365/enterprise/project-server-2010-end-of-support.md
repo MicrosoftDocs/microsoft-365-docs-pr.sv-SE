@@ -18,18 +18,18 @@ search.appverid:
 - PJU120
 - PJW120
 description: Support för Project Server 2010 upphör 13 april 2021. Använd den här artikeln som en guide för att uppgradera till Project Online eller en nyare version av Project Server lokalt.
-ms.openlocfilehash: 0b2e6b930f52ab0497dc93905b66dd9162b65b65
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 2cf18c5e91c095c92230a33f1b8a19fa26840777
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948226"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464330"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 slut på support översikt
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Project Server 2010 når supporten den **13 April 2021**. Detta datum har förlängts från föregående sista support datum den 13 oktober 2020. Om du för närvarande använder Project Server 2010 ska du tänka på att dessa andra relaterade produkter har följande slut på support datum:
+Project Server 2010 når supporten den **13 April 2021**. Detta datum har förlängts från föregående slut av support dagen den 13 oktober 2020. Om du för närvarande använder Project Server 2010 ska du tänka på att dessa andra relaterade produkter har följande slut på support datum:
 
 |Produkt |Slut på support datumet|
 |---|---|
