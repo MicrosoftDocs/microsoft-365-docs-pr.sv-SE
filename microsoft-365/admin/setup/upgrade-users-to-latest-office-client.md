@@ -20,18 +20,18 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Lär dig hur du uppgraderar användarna till den senaste Office-klienten.
-ms.openlocfilehash: 7cddf1554a5892ddac510fc77238529194c1a2a0
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 40160dc5590144a1132971368da70c6f36ed460c
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545734"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456343"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Uppgradera dina Microsoft 365 för företag-användare till den senaste Office-klienten
 
 ## <a name="office-2010-reaches-end-of-support"></a>Office 2010 har slut på support
 
-Office 2010 kommer att nå Supportens slut den 13 oktober 2020. När Office 2010 når Supportens slut kommer Microsoft inte längre att tillhandahålla följande:
+Office 2010 nådde Supportens slut den 13 oktober 2020. Microsoft tillhandahåller inte längre följande:
 
 - Teknisk support för problem
 
@@ -39,7 +39,7 @@ Office 2010 kommer att nå Supportens slut den 13 oktober 2020. När Office 2010
 
 - Säkerhets korrigeringar för säkerhets problem som upptäcks
 
-Se [Office 2010-översikten](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap) för att få mer information.
+Se [Office 2010-översikten](https://docs.microsoft.com/deployoffice/endofsupport/office-2010-end-support-roadmap) för att få mer information.
 
  **Är det här rätt avsnitt för dig?**
   
@@ -57,7 +57,7 @@ Stegen nedan vägleder dig genom processen att uppgradera användarna till den s
   
 ## <a name="step-1---check-system-requirements"></a>Steg 1 - Kontrollera systemkrav
 
-[Kontrol lera system kraven](https://products.office.com/office-system-requirements) för Office för att se till att dina enheter är kompatibla med den senaste versionen av Office. Nyare versioner av Office kan till exempel inte installeras på datorer med Windows XP eller Windows Vista.
+[Kontrol lera system kraven](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) för Office för att se till att dina enheter är kompatibla med den senaste versionen av Office. Nyare versioner av Office kan till exempel inte installeras på datorer med Windows XP eller Windows Vista.
   
 > [!TIP]
 > Om du har användare i din organisation som kör en äldre version av Windows på sina datorer eller bärbara datorer rekommenderar vi att du uppgraderar till Windows 10. Windows 7 har nått Supportens slut. Läs [Support för Windows 7 upphör i januari 2020](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1) för mer information.

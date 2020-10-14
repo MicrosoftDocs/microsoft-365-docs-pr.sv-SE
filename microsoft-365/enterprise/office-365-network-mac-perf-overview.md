@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-- M365initiative-CoreDeploy
+- m365initiative-coredeploy
 description: Översikt över nätverks anslutningar i Microsoft 365 Admin Center (för hands version)
-ms.openlocfilehash: d3ca55a4d8357d10b79bd8e87ddc3350efa2845e
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: fcc70f7c76b92ecf113158cdac8eecdfb9852351
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326883"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456429"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Nätverks anslutning i Microsoft 365 Admin Center (för hands version)
 
@@ -53,13 +53,13 @@ Windows plats tjänst måste skickas på maskiner. Du kan testa detta genom att 
 
 Du behöver inte lägga till platser i administrations centret med den här metoden eftersom de automatiskt identifieras i plats upplösningen. Du kan inte Visa flera Office-platser i en stad med hjälp av Windows Location Services. Plats information avrundas också till närmaste 300-mätare med 300 meter innan de laddas upp så att mer exakta plats information inte är möjlig för åtkomst.
 
-Datorerna bör ha Wi-Fi-nätverk i stället för en Ethernet-kabel. Maskiner med en Ethernet-kabel har inte rätt plats information.
+Datorerna bör ha Wi-Fi nätverk i stället för en Ethernet-kabel. Maskiner med en Ethernet-kabel har inte rätt plats information.
 
 Mät exempel och Office-platser bör komma att visas i 24 timmar efter att dessa förutsättningar uppfylls.
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. Lägg till platser och ange information om LAN-adressundernät
 
-För det här alternativet krävs varken Windows-Platstjänster eller Wi-Fi. Du behöver OneDrive för Windows version **20,161** eller senare installerat på varje dator på platsen.
+För det här alternativet krävs varken Windows plats tjänster eller Wi-Fi. Du behöver OneDrive för Windows version **20,161** eller senare installerat på varje dator på platsen.
 
 Du måste också lägga till platser på sidan Nätverks anslutning för administrations Center eller importera dem från en CSV-fil. Platserna som läggs till måste innehålla information om din Office LAN-undernät.
 

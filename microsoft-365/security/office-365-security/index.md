@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Säkerhet i Office 365, från EOP till ATP-abonnemang 1 och 2, standard kontra strikta säkerhetskonfigurationer. Förstå vad du har och hur du skyddar dina egenskaper.
-ms.openlocfilehash: 94fce99d029d21524bc60af4622fda7ee38980e7
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 256a24a7816a40e1bd60c687a875f84e605f5208
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430698"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456477"
 ---
 # <a name="office-365-security-overview"></a>Säkerhets översikt för Office 365
 
@@ -88,7 +88,7 @@ startar med **Exchange Online Protection**:
 |---------|---------|---------|
 | Tekniken inkluderar:<ul><li>skräppost</li><li>phish</li><li>program</li><li>Mass utskick</li><li>Spoof-intelligens</li><li>identifiering av personifiering</li><li>Administratörs karantän</li><li>Administratörs-och användar inlämningar av falska positiva och falska negativa negativ</li><li>Tillåt/blockera för URL-adresser och filer</li><li>Rapporter</li></u1>|<li>Gransknings loggs ökning</li><li>Meddelande spårning</li>|<li>Automatisk rensning av noll-timme (ZAP)</li><li>Förfining och testning av listor över tillåtna och blockera</li>|
 
-Om du vill ha en EOP går **[du till den här artikeln](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-21vianet&branch=tp_EOPOverview)**.
+Om du vill ha en EOP går **[du till den här artikeln](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide#:~:text=Exchange%20Online%20Protection%20%28EOP%29%20is%20the%20cloud-based%20filtering,is%20also%20available%20in%20the%20following%20on-premises%20scenarios%3A)**.
 
 Eftersom dessa produkter är kumulativa om du utvärderar ATP P1 och bestämmer dig för att prenumerera på den, kan du lägga till dessa förmågor.
 
