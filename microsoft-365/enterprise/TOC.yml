@@ -277,6 +277,8 @@
           href: microsoft-365-inter-tenant-collaboration.md
         - name: Migrering av postlådor mellan klientorganisationer
           href: cross-tenant-mailbox-migration.md
+        - name: Migrering mellan klientorganisationer
+          href: microsoft-365-tenant-to-tenant-migrations.md
     - name: Multi-geo
       items:
         - name: Microsoft 365 Multi-Geo

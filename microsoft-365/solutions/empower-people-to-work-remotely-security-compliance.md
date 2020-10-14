@@ -5,7 +5,6 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 07/23/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Använd säkerhets- och efterlevnadstjänsterna i Microsoft 365 för att skydda appar, data och enheter för distansarbetare.
-ms.openlocfilehash: 1f59b83760c3df042bb3936becbd80e04f0db06e
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 36abe8b8dbd84a883d829308fc970258e7551f2e
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377217"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445891"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Steg 3: Distribuera säkerhet och efterlevnad för distansarbetare
 
@@ -89,5 +88,7 @@ För distansarbetarna har du implementerat:
   - Iakttagande av regionala dataföreskrifter
 
 ## <a name="next-step"></a>Nästa steg
+
+[![Steg 4: Hantera enheter, datorer och andra slutpunkter](../media/empower-people-to-work-remotely/remote-workers-step-grid-4.png)](empower-people-to-work-remotely-manage-endpoints.md)
 
 Fortsätt med [Steg 4](empower-people-to-work-remotely-manage-endpoints.md) för att hantera enheter, datorer och andra slutpunkter.

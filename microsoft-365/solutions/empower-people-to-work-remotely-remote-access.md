@@ -5,7 +5,6 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/27/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Kontrollera att dina distansarbetare kan komma åt lokala resurser samtidigt som du optimerar åtkomst till Microsoft 365-molntjänster.
-ms.openlocfilehash: 52a338822c28f6ae044f13f60664d66816d6ce5c
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 0e44dad5172672cbe06c0690bcfee27ea153c6c3
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377253"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445995"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Steg 2. Tillhandahålla fjärråtkomst till lokala appar och tjänster
 
@@ -61,7 +60,7 @@ Om du vill optimera åtkomst till Microsoft 365 molnresurser konfigurerar du VPN
 
 Detta gör att VPN-klienten kan skicka och ta emot viktig trafik i Microsoft 365 molntjänster direkt via Internet och till närmaste startpunkt i Microsoft-nätverket.
 
-Detaljerad information finn i [Optimera Office 365-anslutning för fjärranvändare med delad VPN-tunnel](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel?).
+Detaljerad information finn i [Optimera Office 365-anslutning för fjärranvändare med delad VPN-tunnel](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel??).
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>Distribuera fjärråtkomst när alla dina appar är webbprogram och du har en hybrididentitet
 
@@ -117,7 +116,7 @@ Mer information finns i [den här artikeln](https://www.microsoft.com/security/b
 ## <a name="admin-technical-resources-for-remote-access"></a>Tekniska administrationsresurser för fjärråtkomst
 
 - [Så här kan du snabbt optimera Office 365-trafik för fjärransluten personal och minska belastningen på infrastrukturen](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571)
-- [Optimera Office 365-anslutningen för fjärranvändare med uppdelad VPN-tunnel](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel)
+- [Optimera Office 365-anslutningen för fjärranvändare med uppdelad VPN-tunnel](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel?)
 
 ## <a name="results-of-step-2"></a>Resultat av steg 2
 
@@ -134,4 +133,7 @@ Efter distribution av en lösning för fjärråtkomst för dina distansarbetare:
 
 ## <a name="next-step"></a>Nästa steg
 
+[![Steg 3: Distribuera säkerhets- och efterlevnadstjänster med Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid-3.png)](empower-people-to-work-remotely-security-compliance.md)
+
 Fortsätt med [Steg 3](empower-people-to-work-remotely-security-compliance.md) om du vill distribuera Microsoft 365 säkerhets och efterlevnadstjänster för att skydda appar, data och enheter.
+

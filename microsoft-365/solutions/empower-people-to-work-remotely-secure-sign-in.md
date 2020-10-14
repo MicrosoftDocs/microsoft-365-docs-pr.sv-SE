@@ -5,7 +5,6 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Kräv att dina distansarbetare loggar in med multi-factor authentication (MFA).
-ms.openlocfilehash: a5977c1f4b5189f39623399f0b45a31e6edd4de7
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 7f24402dcedd4b544c5e6d8af2a0e18d3b62da27
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399319"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445926"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Steg 1. Öka inloggningssäkerheten för distansarbetare med MFA
 
@@ -119,5 +118,7 @@ När du har distribuerat MFA måste dina användare:
 - Kan använda SSPR för att återställa sina egna lösenord.
 
 ## <a name="next-step"></a>Nästa steg
+
+[![Steg 2: Ge fjärråtkomst till lokala appar och tjänster](../media/empower-people-to-work-remotely/remote-workers-step-grid-2.png)](empower-people-to-work-remotely-remote-access.md)
 
 Fortsätt med [Steg 2](empower-people-to-work-remotely-remote-access.md) om du vill tillhandahålla fjärråtkomst till lokala appar och tjänster.

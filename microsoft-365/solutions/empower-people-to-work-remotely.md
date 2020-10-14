@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 09/02/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -19,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: ''
 description: Konfigurera säkerhets- och tjänstinfrastrukturen som gör att dina arbetare kan arbeta på distans på valfri plats och när som helst.
-ms.openlocfilehash: c68e2e68ea6a5cc1204eda371cf67ca31f58d7cb
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 122df0f81200462f85d52985ccf3e42ce5d925f7
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357872"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446829"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Underlätta för distansarbetare med Microsoft 365
 
@@ -107,6 +106,6 @@ Följ dessa steg för att skydda och optimera åtkomsten till organisationens se
 5. [Distribuera produktivitetsappar och tjänster för distansarbetare](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [Träna distansarbetare och få feedback om användningen](empower-people-to-work-remotely-train-monitor-usage.md)
 
-![Stegen för att underlätta för distansarbetare med Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)
+[![Stegen för att underlätta för distansarbetare med Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
 Om du vill ha den senaste informationen från Microsoft om support för distansarbetare går du till [Tech Communityn för att möjliggöra distansarbete](https://resources.techcommunity.microsoft.com/enabling-remote-work/).

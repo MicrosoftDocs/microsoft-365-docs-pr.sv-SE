@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratörsroller mappar till affärsfunktioner och ger behörighet att utföra särskilda uppgifter i administrationscentret. Tjänsteadministratören kan till exempel öppna supportbiljetter via administratörscentret.
-ms.openlocfilehash: 35fee24a2e9de6c00f37e93c59851b7e760baa19
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 5ee8f5732d67ee3913ac7de5bcb7328065b0c8ba
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131788"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445469"
 ---
 # <a name="about-admin-roles"></a>Om administratörsroller
 
@@ -77,7 +77,7 @@ Du behöver antagligen bara tilldela följande roller i organisationen. Som stan
 |Grupper-administratör     |   Tilldelar gruppadministratörsrollen till användare som behöver hantera alla gruppinställningar i olika administrationscenter, inklusive administrationscentret för Microsoft 365 och Azure Active Directory-portalen. <br><br> Grupper-administratörer kan:<br> – Skapa, redigera, ta bort och återställa Microsoft 365-grupper <br> – Skapa och uppdatera skapande, upphörande och namngivningsprinciper för grupper <br> – Skapa, redigera, ta bort och återställa Azure Active Directory-säkerhetsgrupper| 
 |Supportadministratör     |   Tilldela rollen som supportadministratör till användare som behöver göra följande:<br> – Återställa lösenord <br> – Tvinga att användare loggar ut <br> – Hantera tjänsteförfrågningar <br> – Övervaka tjänstens status <br> <br> **Obs**! Supportadministratören kan bara hjälpa användare som inte är administratörer och användare som tilldelats följande roller: katalogläsare, gästinbjudare, supportadministratör, meddelandecenter-administratör och rapportläsare.      |
 |Administratör för Office-program    |   Tilldela rollen som administratör för Office-program till användare som behöver göra följande: <br> – Använda tjänsten för molnprinciper i Office för att skapa och hantera molnbaserade principer för Office <br> – Skapa och hantera tjänsteförfrågningar <br> – Hantera nyhetsinnehållet som användarna ser i sina Office-program   <br> – Övervaka tjänstens status  |
-|Tjänstadministratör    |   Tilldela tjänstadministratörsrollen som en ytterligare roll för administratörer och användare vars roll inte inkluderar följande, men som ändå måste göra följande: <br> – Öppna och hantera tjänsteförfrågningar <br> – Visa och dela inlägg från meddelandecenter   |
+|Supportadministratör för tjänst   |   Tilldela supportadministratörsrollen för tjänster som en ytterligare roll för administratörer och användare vars roll inte inkluderar följande, men som ändå måste göra följande: <br> – Öppna och hantera tjänsteförfrågningar <br> – Visa och dela inlägg från meddelandecenter   |
 |SharePoint-administratör    |   Tilldela SharePoint-administratörsrollen till användare som behöver åtkomst till och behöver hantera administrationscentret för SharePoint Online. <br><br>SharePoint-administratörer kan även: <br> – Skapa och ta bort webbplatser <br> – Hantera webbplatssamlingar och globala SharePoint-inställningar   |
 |Teams-tjänstadministratör    |   Tilldela Teams-tjänstadministratörsrollen till användare som behöver åtkomst till och behöver hantera administrationscentret för Teams. <br><br>Teams-tjänstadministratörer kan också: <br> – Hantera möten <br> – Hantera konferensbryggor <br> – Hantera alla organisationsomfattande inställningar, inklusive inställningar för federation, team-uppgradering och team-klienter   |
 |Användaradministratör     |    Tilldela rollen som användaradministratör till användare som behöver göra följande för alla användare: <br> – Lägga till användare och grupper <br> – Tilldela licenser <br> – Hantera de flesta användaregenskaper <br> – Skapa och hantera användarvyer <br> – Uppdatera giltighetsprinciper för lösenord <br> – Hantera tjänsteförfrågningar <br> – Övervaka tjänstens status <br><br>  Användaradministratören kan också utföra följande åtgärder för användare som inte är administratörer och för användare som har tilldelats följande roller: katalogläsare, gästinbjudare, supportadministratör, meddelandecenter-administratör, rapportläsare: <br> – Hantera användarnamn<br> – Ta bort och återställa användare<br> – Återställa lösenord <br> – Tvinga att användare loggar ut <br> – Uppdatera enhetsnycklar (FIDO)   |

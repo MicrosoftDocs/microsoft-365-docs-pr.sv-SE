@@ -5,7 +5,6 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 06/03/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Använd Microsoft Endpoint Manager för att hantera dina hanteringsenheter, datorer och andra slutpunkter.
-ms.openlocfilehash: 5c6e433918709a55f03d786891ec0fd7ac62a26b
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: b50279166b313742dbfbe8e75dd9788aac6b1daa
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377241"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445971"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Steg 4. Distribuera slutpunktshantering för enheter, datorer och andra slutpunkter
 
@@ -95,5 +94,7 @@ Mer information finns i den här [översikt över Windows Autopilot](https://doc
 Du använder paketet med Endpoint Manager-funktioner och -förmågor för att hantera mobila enheter, stationära datorer, virtuella datorer, inbäddade enheter och servrar.
 
 ## <a name="next-step"></a>Nästa steg
+
+[![Steg 5: Distribuera produktivitetsappar och tjänster för distansarbetare](../media/empower-people-to-work-remotely/remote-workers-step-grid-5.png)](empower-people-to-work-remotely-teams-productivity-apps.md)
 
 Fortsätt med [Steg 5](empower-people-to-work-remotely-teams-productivity-apps.md) för att få dina distansmedarbetare att använda Microsoft 365 produktivitetsappar som Microsoft Teams.
