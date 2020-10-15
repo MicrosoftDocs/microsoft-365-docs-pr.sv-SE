@@ -19,16 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Lär dig att hantera Microsoft 365-grupper, inklusive att lägga till, ta bort grupp medlemmar, redigera e-postadress, grupp namn eller beskrivning och anpassa hur gruppen fungerar.
-ms.openlocfilehash: 29eaa762116498799d4156b58c8f9bf466f04073
-ms.sourcegitcommit: e87015bf29ad15688137c785d93f2c79ca3208f4
+ms.openlocfilehash: 7cc9bc6eb79b305c7d20d8075b6dc287e4f8b5d7
+ms.sourcegitcommit: 88c2461b14cd16f74979f4bcd0a9ad18e4422cb3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48343277"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48469715"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Hantera en grupp i administrations centret för Microsoft 365
 
-När du har [skapat en Microsoft 365-grupp](create-groups.md) och lagt till grupp medlemmar kan du konfigurera gruppen. Du kan redigera grupp namnet eller beskrivningen, hantera ägare eller medlemmar och ange om externa avsändare ska kunna skicka e-post till medlemmarna. 
+När du har [skapat en Microsoft 365-grupp](create-groups.md) och lagt till grupp medlemmar kan du konfigurera gruppen. Du kan redigera grupp namnet eller beskrivningen, hantera ägare eller medlemmar och ange om externa avsändare ska kunna skicka e-post till medlemmarna.
+
+Gå till administrations centret för Microsoft 365 på [https://admin.microsoft.com](https://admin.microsoft.com) .
 
 ## <a name="edit-the-group-name-or-description"></a>Redigera gruppens namn eller beskrivning
 
