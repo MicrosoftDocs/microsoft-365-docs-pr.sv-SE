@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: Använd PowerShell för Microsoft 365 om du vill hantera principer för Skype för företag – Online, principer för användare och mötesinställningar.
-ms.openlocfilehash: d50f35d7d5e81622eb8dfc3bbf8328a8c43e9676
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: ff35463dc0c2e16106432c393b10e31e6bf0a5d2
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430040"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477107"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>Hantera Skype för företag – Online med PowerShell
 
@@ -29,21 +29,24 @@ Administratörer av Skype för företag – Online ansvarar för hantering av pr
 
 ## <a name="before-you-start"></a>Innan du börjar
 
-Ladda ned och installera [ Windows PowerShellmodulen för Skype för företag – Online](https://www.microsoft.com/download/details.aspx?id=39366)och starta om datorn.
+  > [!Note]
+   > Skype för företag – Online-Connector är för närvarande en del av den senaste versionen av Teams PowerShell-modul. Om du använder den senaste versionen av Teams PowerShell, behöver du inte installera Skype för företag – Online-Connector.
+   
+Installera [Teams PowerShell-modul](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
 
 
-## <a name="connect-using-skype-for-business-online-admin-credentials"></a>Ansluta med inloggningsuppgifter för Skype för företag – Online
+## <a name="connect-using-admin-credentials"></a>Anslut med administratörsuppgifter.
 
 1. Öppna en Windows PowerShell kommandotolk och kör följande kommandon:
     
    ```powershell
-   Import-Module SkypeOnlineConnector
+   Import-Module MicrosoftTeams
    $userCredential = Get-Credential
    $sfbSession = New-CsOnlineSession -Credential $userCredential
    Import-PSSession $sfbSession
    ```
 
-2. I dialogrutan **Begäran om autentiseringsuppgifter för Windows PowerShell** anger du användarnamnet och lösenordet för ditt administratörskonto för Skype för företag – Online och välj **OK**.
+2. I dialogrutan **Begäran om autentiseringsuppgifter för Windows PowerShell** anger du användarnamnet och lösenordet för ditt administratörskonto och välj **OK**.
 
 
 ## <a name="connect-using-an-admin-account-with-multi-factor-authentication"></a>Ansluta med ett administratörskonto med multifaktorautentisering
@@ -51,7 +54,7 @@ Ladda ned och installera [ Windows PowerShellmodulen för Skype för företag �
 1. Öppna en Windows PowerShell kommandotolk och kör följande kommandon:
 
    ```powershell
-   Import-Module SkypeOnlineConnector
+   Import-Module MicrosoftTeams
    $sfbSession = New-CsOnlineSession
    Import-PSSession $sfbSession
    ```

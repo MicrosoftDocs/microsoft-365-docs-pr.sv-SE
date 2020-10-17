@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du skapar ett team med en unik känslighetsetikett för säkerhet.
-ms.openlocfilehash: fdebfcbfa4aad68f381db4ffb8c9b83a5100187c
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 46bc63bab52bf75dc7c215510d49b4d985ff07c3
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398721"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487488"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Konfigurera en team med säkerhetsisolering
 
@@ -42,11 +42,15 @@ Komponenterna i konfigurationen för en grupp med säkerhets isolering är:
 > [!IMPORTANT]
 > Kontrollera att du har aktiverat [känslighetsetiketter för att skydda innehåll i Microsoft Teams, Office 365-grupper och SharePoint-webbplatser](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) innan du fortsätter med stegen i den här artikeln.
 
+Titta på den här videon för att få en översikt över distributionsprocessen.
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
+
 <a name="poster"></a> En sammanfattning av 2 sidor av det här scenariot finns i [Microsoft Teams med säkerhets isolering med affisch](../downloads/team-security-isolation-poster.pdf).
 
 [![Microsoft Teams med säkerhets isolering, affisch](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
-Du kan också ladda ner den här affischen i [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) och skriva ut den på brev, legal eller tabloid papper i storlek (11 x 17).
+Du kan också ladda ner den här affischen i [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)-format och skriva ut den på brev, legal eller tabloid papper i storlek (11 x 17).
 
 ## <a name="initial-protections"></a>Initiala skydd
 
