@@ -15,32 +15,33 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Använd de här stegen för att skydda globala administratörs konton i test miljön för Microsoft 365 för företag.
-ms.openlocfilehash: fff09ca41ff0b648d46b5c33f753affc01242264
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1ae04e4761ed86e087e647464ad522466ed6abef
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695188"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487642"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>Skydda globala administratörs konton i test miljön för Microsoft 365 för företag
 
 *Den här test laboratorie guiden kan endast användas för test miljöer med Microsoft 365 för företags nätverk.*
 
-Du kan förhindra digitala attacker på din organisation genom att se till att dina administratörs konton är så säkra som möjligt. I den här artikeln beskrivs hur du använder principer för villkorsstyrd åtkomst i Azure Active Directory (Azure AD) för att skydda globala administratörs konton.
+Du kan förhindra digitala attacker på din organisation genom att se till att dina administratörs konton är så säkra som möjligt. 
 
-Det finns två faser för att skydda globala administratörs konton i test miljön för Microsoft 365 för företag:
+I den här artikeln beskrivs hur du använder principer för villkorsstyrd åtkomst i Azure Active Directory (Azure AD) för att skydda globala administratörs konton.
 
-1.  Skapa test miljön för Microsoft 365 för företag.
-2.  Skydda ditt globala administratörs konto.
+Att skydda globala administratörs konton i test miljön för Microsoft 365 för företag inbegriper två faser:
+- [Fas 1: bygga ut test miljön för Microsoft 365 för företag](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Fas 2: konfigurera principer för villkorsstyrd åtkomst](#phase-2-configure-conditional-access-policies)
 
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Klicka [här](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med testlabbguider för Microsoft 365 för företag.
+> Om du vill visa en visuell karta till alla artiklar i gruppen Microsoft 365 för Enterprise-testlabbet går du till [Microsoft 365 för Enterprise Test Lab-guide](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 ## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fas 1: bygga ut test miljön för Microsoft 365 för företag
 
-Om du bara vill testa globalt administratörs konto skydd på ett enkelt sätt med minimi kraven följer du anvisningarna i [Lightweight Base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
+Om du vill testa det globala administratörs konto skyddet på ett billigt sätt med minimi kraven följer du anvisningarna i [Lightweight Base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
 Om du vill testa det globala administratörs konto skyddet i ett simulerat företag följer du anvisningarna i [vidarekoppling](pass-through-auth-m365-ent-test-environment.md).
   
@@ -52,46 +53,46 @@ Om du vill testa det globala administratörs konto skyddet i ett simulerat före
 Först skapar du ett nytt användar konto som global administratör.
 
 1. Öppna [administrations centret för Microsoft 365](https://admin.microsoft.com/)på en separat flik.
-2. Klicka på **användare > aktiva användare**och klicka sedan på **Lägg till en användare**.
-3. I fönstret **Lägg till användare** skriver du **DedicatedAdmin** i **förnamn**, **visnings namn**och **användar namn**.
-4. Klicka på **lösen ord**, klicka på **Låt mig skapa lösen ordet**och skriv sedan ett starkt lösen ord. Spela in lösen ordet för det nya kontot på en säker plats.
-5. Klicka på **Nästa**.
-6. I fönstret **tilldela produkt licenser** väljer du **Microsoft 365 E5**och klickar sedan på **Nästa**.
-7. I fönstret **valfria inställningar** klickar du på **roller**och väljer sedan **Administratörs Center åtkomst** och **Global administratör**. Klicka på **Nästa**.
-8. I fönstret **du är nästan klar klickar du** på **Lägg till**och sedan på **Stäng**.
+2. Välj **användare**  >  **aktiva användare**och välj sedan **Lägg till en användare**.
+3. I fönstret **Lägg till användare** anger du **DedicatedAdmin** i rutorna **förnamn**, **visnings namn**och **användar namn** .
+4. Välj **lösen ord**, Välj **Låt mig skapa lösen ordet**och ange sedan ett starkt lösen ord. Spela in lösen ordet för det nya kontot på en säker plats.
+5. Välj **Nästa**.
+6. I fönstret **tilldela produkt licenser** väljer du **Microsoft 365 E5**och sedan **Nästa**.
+7. I fönstret **valfria inställningar** väljer du den **Roles**  >  **Admin center access**  >  **globala administratörs**rollen för administratörer  >  **Nästa**.
+8. I fönstret **du är nästan klar väljer du** **Lägg till**och sedan **Stäng**.
 
 Skapa sedan en ny grupp med namnet GlobalAdmins och Lägg till DedicatedAdmin-kontot i den.
 
-1. Klicka på **grupper** i det vänstra navigerings fältet på fliken **administrations center för Microsoft 365** och klicka sedan på **grupper**.
-2. Klicka på **Lägg till en grupp**.
+1. Gå till fliken **administrations Center för Microsoft 365** , Välj **grupper** i det vänstra navigerings fältet och välj sedan **grupper**.
+2. Välj **Lägg till en grupp**.
 3. I fönstret **Välj en grupptyp** väljer du **säkerhet**och sedan **Nästa**.
-4. Klicka på **Skapa grupp**i fönstret **Konfigurera grunderna** och klicka sedan på **Stäng**.
-5. Skriv **GlobalAdmins**i fönstret **Granska och slutför tillägg** och klicka sedan på **Nästa**.
-7. I listan med grupper klickar du på gruppen **GlobalAdmins** .
-8. I fönstret **GlobalAdmins** klickar du på **medlemmar**och sedan på **Visa alla och hantera medlemmar**.
-9. I fönstret **GlobalAdmins** klickar du på **Lägg till medlemmar**, väljer **DedicatedAdmin** -konto och ditt globala administratörs konto och klickar sedan på **Spara > Stäng > Stäng**.
+4. I fönstret **Konfigurera grunderna väljer du** **Skapa grupp**och sedan **Stäng**.
+5. Ange **GlobalAdmins**i fönstret **Granska och slutför** och välj sedan **Nästa**.
+7. I listan med grupper väljer du gruppen **GlobalAdmins** .
+8. I fönstret **GlobalAdmins** väljer du **medlemmar**och sedan **Visa alla och hantera medlemmar**.
+9. I fönstret **GlobalAdmins** väljer du **Lägg till medlemmar**, väljer **DedicatedAdmin** -konto och ditt globala administratörs konto och väljer sedan **Spara**  >  **Close**  >  **Close**.
 
 Skapa sedan principer för villkorsstyrd åtkomst för att kräva multifaktorautentisering för globala administratörs konton och för att neka identifiering om inloggnings risken är medel eller hög.
 
 Den första principen kräver att MFA används för alla globala administratörs konton.
 
 1. Gå till på en ny flik i webbläsaren [https://portal.azure.com](https://portal.azure.com) .
-2. Klicka på **> säkerhets > villkorlig åtkomst för Azure Active Directory**.
-3. I fönstret **villkorlig åtkomst – principer** klickar du på **bas linje princip: Kräv MFA för administratörer (för hands version)**.
-4. I fönstret **rikt linje** klickar du på **använd princip omedelbart > Spara**.
+2. Klicka på villkorlig åtkomst för **Azure Active Directory**-  >  **säkerhet**  >  **Conditional Access**.
+3. I fönstret **villkorlig åtkomst – principer** väljer du **original princip: Kräv MFA för administratörer (för hands version)**.
+4. I fönstret **rikt linje** väljer du **använd policy omedelbart > Spara**.
 
 Denna andra princip blockerar åtkomst till global administratörs konto identifiering när inloggnings risken är medel eller hög.
 
-1. Klicka på **ny princip**i fönstret **villkorlig åtkomst – policys** .
-2. I fönstret **ny** skriver du **globala administratörer** i **namn**.
-3. Klicka på **användare och grupper**i avsnittet **uppgifter** .
-4. På fliken **Inkludera** i fönstret **användare och grupper** klickar du på **Välj användare och grupper > användare och grupper > välja**.
-5. Klicka på gruppen **GlobalAdmins** i fönstret **Välj** och klicka sedan på **Välj > klar**.
-6. Klicka på **villkor**i avsnittet **uppgifter** .
-7. Klicka på **inloggnings risk**i fönstret **villkor** , klicka på **Ja** för att **Konfigurera**, klicka på **hög** och **medium**och klicka sedan på **Välj** och **klar**.
-8. Klicka på **Tillåt**i avsnittet **Access-kontroller** i fönstret **nytt** .
-9. I fönstret **bidrag** klickar du på **blockera åtkomst**och sedan på **Välj**.
-10. I fönstret **ny** klickar du **på** för att **aktivera principer**och klickar sedan på **skapa**.
+1. I fönstret **villkorlig åtkomst – principer** väljer du **ny princip**.
+2. Ange **globala administratörer** i **namn**i fönstret **nytt** .
+3. Välj **användare och grupper**i avsnittet **uppgifter** .
+4. På fliken **Inkludera** i fönstret **användare och grupper** väljer du **Välj användare och grupper**som  >  **användare och grupper**  >  **väljer**.
+5. I fönstret **Välj** väljer du gruppen **GlobalAdmins** och väljer sedan **Välj**  >  **klar**.
+6. Välj **villkor**i avsnittet **uppgifter** .
+7. I fönstret **villkor** väljer du **inloggnings risker**, väljer **Ja** för **konfigurering**, väljer **hög** och **medium**och väljer sedan **Välj** och **klar**.
+8. I avsnittet **Access Controls** i fönstret **ny** väljer du **Grant**.
+9. I fönstret **bidrag** väljer du **blockera åtkomst**och väljer sedan **Välj**.
+10. I fönstret **nytt** väljer du **på** för **att aktivera principer**och väljer sedan **skapa**.
 11. Stäng flikarna **Azure Portal** och **Microsoft 365 administrations Center** .
 
 Om du vill testa den första principen loggar du ut och loggar in med DedicatedAdmin-kontot. Du bör uppmanas att konfigurera MFA. Det visar att den första principen tillämpas.

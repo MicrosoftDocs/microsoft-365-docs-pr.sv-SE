@@ -1,5 +1,5 @@
 ---
-title: Hantera principer för Skype för företag – Online med PowerShell
+title: Hantera Skype för företag – Onlineprinciper med PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,35 +14,38 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Sammanfattning: Använd PowerShell för att hantera dina användar konto egenskaper för Skype för företag – Online med principer.'
-ms.openlocfilehash: 7657dae6fa1b27299e4cbc0cf6a311380cb90e9e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 20a75fa1c131f693fcf30d20477af5c9ee7aed35
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694774"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477047"
 ---
-# <a name="manage-skype-for-business-online-policies-with-powershell"></a>Hantera principer för Skype för företag – Online med PowerShell
+# <a name="manage-skype-for-business-online-policies-with-powershell"></a>Hantera Skype för företag – Onlineprinciper med PowerShell
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 För att hantera många egenskaper för användar konto för Skype för företag – Online måste du ange dem som egenskaper för principer med PowerShell för Microsoft 365.
   
 ## <a name="before-you-begin"></a>Innan du börjar
 
 Använd dessa instruktioner för att komma igång med kommandona (hoppa över stegen som du redan har slutfört):
-  
-1. Ladda ned och installera [kopplingen för Skype för företag – Online](https://www.microsoft.com/download/details.aspx?id=39366).
-    
-2. Öppna en Windows PowerShell-kommandotolk och kör följande kommandon: 
-    
-```powershell
-Import-Module SkypeOnlineConnector
-$userCredential = Get-Credential
-$sfbSession = New-CsOnlineSession -Credential $userCredential
-Import-PSSession $sfbSession
-  ```
 
-Skriv in namnet och lösen ordet för Skype för företag – Online när du uppmanas till det.
+  > [!Note]
+  > Connector för Skype för företag – Online är nu en del av den senaste Teams PowerShell-modulen. Om du använder den senaste Teams-versionen för att använda det här alternativet behöver du inte installera Skype för företag – Online-anslutaren.
+
+1. Installera [modulen för moduler i PowerShell](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
+    
+2. Öppna en Windows PowerShell kommandotolk och kör följande kommandon: 
+
+   ```powershell
+   Import-Module MicrosoftTeams
+   $userCredential = Get-Credential
+   $sfbSession = New-CsOnlineSession -Credential $userCredential
+   Import-PSSession $sfbSession
+   ```
+
+   Skriv in namnet och lösen ordet för Skype för företag – Online när du uppmanas till det.
     
 ## <a name="manage-user-account-policies"></a>Hantera principer för användar konton
 
@@ -128,5 +131,5 @@ Get-CsClientPolicy -Identity "Global"
   
 [Hantera Microsoft 365 med PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Komma igång med PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Börja använda PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
 

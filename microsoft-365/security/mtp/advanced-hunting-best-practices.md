@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: f18a98b19b6a1920d1e4d2094ba0bab74f10035e
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: e3b29a8182e38fa05e5f791478157c978632fb13
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430145"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477011"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Metod tips för avancerad jakt frågor
 
@@ -56,7 +56,7 @@ Kunder som kör flera frågor regelbundet bör spåra förbrukningen och använd
 
 - **Har taktslag innehåller**– för att undvika att under strängar under vissa ord visas kan du använda `has` operatorn i stället för `contains` . [Läs mer om sträng operatorer](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
 - **Leta i specifika kolumner**– titta i en viss kolumn i stället för att köra fullständig text ökning i alla kolumner. Använd inte `*` för att markera alla kolumner.
-- **SKIFT läges känslig för snabb**sökningar är mer specifika och generellt sett mer. Namn på SKIFT läges känsliga [sträng operatorer](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators), till exempel `has_cs` och `contains_cs` , vanligt vis slutar med `_cs` . Du kan också använda en Skift läges känslig operator `==` i stället för `~=` .
+- **SKIFT läges känslig för snabb**sökningar är mer specifika och generellt sett mer. Namn på SKIFT läges känsliga [sträng operatorer](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators), till exempel `has_cs` och `contains_cs` , vanligt vis slutar med `_cs` . Du kan också använda en Skift läges känslig operator `==` i stället för `=~` .
 - **Tolka, extrahera inte**– när det är möjligt kan du använda [operatorn parse](https://docs.microsoft.com/azure/data-explorer/kusto/query/parseoperator) eller en analys funktion som [parse_json ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). Undvik `matches regex` operatorn sträng eller [extrahera ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction), som båda använder reguljära uttryck. Reservera användning av reguljära uttryck för mer komplexa scenarier. [Läs mer om att analysera funktioner](#parse-strings)
 - **Filtrera tabeller som inte är uttryck**– filtrera inte efter beräknade kolumner om du kan filtrera efter en tabell kolumn.
 - **Inga termer med tre tecken**– Undvik jämförelse eller filtrering med hjälp av termer med tre tecken eller färre. Dessa villkor är inte indexerade och matchar dem kräver fler resurser.

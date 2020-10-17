@@ -14,32 +14,36 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Använd den här test laboratorie guiden för att lägga till principer för efterlevnadsprinciper i din Microsoft 365 för företags test miljö.
-ms.openlocfilehash: 3c77a7ea8ddc5120a2ce53fa0834dab213502657
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: c1de822e5a97416bd0c672d88f2902d8986638c8
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686760"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487418"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>Principer för enhetskompatibilitet för test miljön av Microsoft 365 för företag
 
 *Den här test laboratorie guiden kan endast användas för test miljöer med Microsoft 365 för företags nätverk.*
 
-Med instruktionerna i den här artikeln kan du lägga till en policy för principer för en Intune-enhet för Windows 10-enheter och Microsoft 365-appar för företag till din test miljö för Microsoft 365 för företag.
+I den här artikeln beskrivs hur du lägger till en policy för principer för en Intune-enhet för Windows 10-enheter och Microsoft 365-appar för företag till din test miljö för Microsoft 365 för företag.
+
+Du lägger till en policy för en Intune-enhet i två faser:
+- [Fas 1: bygga ut test miljön för Microsoft 365 för företag](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Fas 2: skapa en policy för enhetskompatibilitet för Windows 10-enheter](#phase-2-create-a-device-compliance-policy-for-windows-10-devices)
 
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Klicka [här](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med testlabbguider för Microsoft 365 för företag.
+> Om du vill visa en visuell karta till alla artiklar i gruppen Microsoft 365 för Enterprise-testlabbet går du till [Microsoft 365 för Enterprise Test Lab-guide](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 ## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fas 1: bygga ut test miljön för Microsoft 365 för företag
 
-Om du bara vill konfigurera MAM-principer på ett enkelt sätt med minimi kraven följer du anvisningarna i [Lightweight Base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
+Om du vill konfigurera MAM-principer på ett enkelt sätt med minimi kraven följer du anvisningarna i [Lightweight Base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
 Om du vill konfigurera MAM-principer i ett simulerat företag följer du anvisningarna i [vidarekoppling](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> För testning av automatiserade licensierings-och grupp medlemskap krävs inte den simulerade företags test miljön, som innehåller ett simulerat intranät som är kopplat till Internet och Directory-synkronisering för en AD DS-skog (Active Directory Domain Services). Det tillhandahålls här som ett alternativ så att du kan testa automatiserad licensiering och grupp medlemskap och experimentera med den i en miljö som representerar en typisk organisation. 
+> För testning av automatiserade licensierings-och grupp medlemskap krävs inte den simulerade företags test miljön, som innehåller ett simulerat intranät som är kopplat till Internet och Directory-synkronisering för en AD DS-skog (Active Directory Domain Services). Det finns här som ett alternativ så att du kan testa automatiserad licensiering och grupp medlemskap och experimentera med den i en miljö som representerar en typisk organisation.
 >  
 
 ## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>Fas 2: skapa en policy för enhetskompatibilitet för Windows 10-enheter
@@ -47,51 +51,31 @@ Om du vill konfigurera MAM-principer i ett simulerat företag följer du anvisni
 I den här fasen skapar du en princip för enhetskompatibilitet för Windows 10-enheter.
   
 1. Gå till [administrations centret för microsoft 365](https://admin.microsoft.com) och logga in på ditt Microsoft 365 test laboratorie abonnemang med ditt globala administratörs konto.
-    
-2. Öppna Azure-portalen på på en ny flik i webbläsaren [https://portal.azure.com](https://portal.azure.com) .
+1. Öppna Azure-portalen på på en ny flik i webbläsaren [https://portal.azure.com](https://portal.azure.com) .
+1. I sökrutan för Azure-portalen anger du **Intune**och sedan **Intune**.
+1. Om du ser ett meddelande om **att du inte har aktiverat enhets hantering ännu** i fönstret **Microsoft Intune** väljer du det. I fönstret **hantering av mobila enheter** väljer du **Intune MDM**och väljer sedan **Välj**.
+1. Uppdatera din webbläsare.
+1. I det vänstra navigerings fönstret väljer du **grupper**.
+1. I fönstret **grupper – alla grupper** väljer du **+ ny grupp**.
+1. I fönstret **grupp** väljer du **Microsoft 365** eller **säkerhet** för **grupptyp?**, anger **hanterade Windows 10-användare** i **namn**, Välj **tilldelat** i **medlemskaps typ**och välj sedan **skapa**.
+1. Välj **Microsoft Intune**.
+1. I listan **snabb uppgifter** i fönstret **Microsoft Intune** väljer du **skapa en policy för efterlevnad**.
+1. I fönstret **policy profiler för efterlevnad** väljer du **Skapa princip**.
+1. Ange **Windows 10**i **namn**i fönstret **Skapa princip** . I **Platform**väljer du **Windows 10 och senare**, väljer **OK** i fönstret **policyn för Windows 10-efterlevnad** och väljer sedan **skapa**.
+1. Välj **profiler för efterlevnadsprinciper**och välj sedan **Windows 10** -princip namnet.
+1. I fönstret **Windows 10** väljer du **uppgifter**och väljer sedan **Välj grupper som ska ingå**.
+1. I fönstret **Välj grupper som ska inkluderas** väljer du gruppen **hanterade Windows 10-enheter** och väljer sedan **Välj**.
+1. Välj **Spara**, Välj **Microsoft Intune-översikt**och välj sedan **klient program** i det vänstra navigerings fältet.
+1. Välj **appar**i fönstret **klient program** och välj sedan **Lägg till**.
+1. Välj **program typ**i fönstret **Lägg till app** och välj sedan **Windows 10** under **Microsoft 365 Suite**.
+1. I fönstret **Lägg till app** väljer du **information för programpaket**.
+1. I fönstret **Programsvits information** anger du **Microsoft 365-appar för företag** i både **Suite-namn** och **programbeskrivning**och väljer sedan **OK**.
+1. I fönstret **Lägg till app** väljer du **Konfigurera programsvit**och sedan **OK**.
+1. I fönstret **Lägg till app** väljer du **Inställningar för programpaket**.
+1. För **Uppdatera kanal**, Välj **halvårs företag**och välj sedan **OK**.
+1. I fönstret **Lägg till app** väljer du **Lägg till**.
 
-3. På fliken Azure Portal i webbläsaren skriver du **Intune** i sökrutan och klickar sedan på **Intune**.
-    
-4. Om du ser ett meddelande om **att du inte har aktiverat enhets hantering** i **Microsoft Intune** -fönstret klickar du på det. Klicka på **INTUNE MDM-auktoritet**i fönstret **hantering av mobila enheter** och klicka sedan på **Välj**. Uppdatera din webbläsare.
-    
-5. Klicka på **grupper**i det vänstra navigerings fönstret.
-    
-6. I fönstret **grupper – alla grupper** klickar du på **+ ny grupp**.
-    
-7. I fönstret **grupp** väljer du **Microsoft 365** eller **säkerhet** för **grupptyp?**, Skriv **hanterade Windows 10-enheter-användare** i **namn**, Välj **tilldelat** i **medlemskaps typ**och klicka sedan på **skapa**. 
-    
-8. Klicka på **Microsoft Intune**. Klicka på **skapa en policy för efterlevnad**i listan **snabb uppgifter** i fönstret **Microsoft Intune** .
-    
-9. Klicka på **Skapa princip**i fönstret **policy profiler för efterlevnad** .
-    
-10. I fönstret **Skapa princip** skriver du **Windows 10**i **namn**. I **Platform**väljer du **Windows 10 och senare**klickar du på **OK** i fönstret **efterlevnad för Windows 10** och klickar sedan på **skapa**. 
-    
-11. Klicka på **profiler för efterlevnadsprinciper**och klicka sedan på princip namnet för **Windows 10** .
-    
-12. I fönstret **Windows 10** klickar du på **uppgifter**och sedan på **Välj grupper som ska ingå**.
-    
-13. Klicka på gruppen **hanterade användare av Windows 10-enhet** i fönstret **Välj grupper som ska inkluderas** och klicka sedan på **Välj**.
-    
-14. Klicka på **Spara**, klicka på **Microsoft Intune-översikt**och klicka sedan på **klient program** i det vänstra navigerings fältet.
-    
-15. I fönstret **klient program** klickar du på **appar**och sedan på **Lägg till**. 
-
-16. Välj **program typ**i fönstret **Lägg till app** och välj sedan **Windows 10** under **Microsoft 365 Suite**.
-
-17. I fönstret **Lägg till app** väljer du **information för programpaket**.
- 
-18. I fönstret **information om programsviten** skriver du **Microsoft 365-appar för företag** i både **serie namn** och **programbeskrivning**.
-Klicka på OK.
-
-19. I fönstret **Lägg till app** väljer du **Konfigurera programsvit**och klickar sedan på **OK**.
-
-20. I fönstret **Lägg till app** väljer du **Inställningar för programpaket**.
-
-21. För **Uppdatera kanal**väljer du **halvår för företag**och klickar sedan på **OK**.
-
-22. Klicka på **Lägg till**i fönstret **Lägg till app** .
-
-Du har nu en policy för enhetskompatibilitet för att testa de valda programmen i policyn för **Windows 10** -enheter och för medlemmar i gruppen **användare av hanterade Windows 10-enheter** . Observera att om du väljer Microsoft 365 som grupptyp skapas ytterligare resurser. 
+Du har nu en policy för enhetskompatibilitet för att testa de valda programmen i policyn för **Windows 10** -enheter och för medlemmar i gruppen **användare av hanterade Windows 10-enheter** . Observera att om du väljer **Microsoft 365** skapas ytterligare resurser med grupp typen.
   
 ## <a name="next-step"></a>Nästa steg
 

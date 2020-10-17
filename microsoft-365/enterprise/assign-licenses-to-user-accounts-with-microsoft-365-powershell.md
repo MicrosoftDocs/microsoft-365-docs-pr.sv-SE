@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: I den här artikeln lär du dig hur du använder PowerShell till att tilldela en Microsoft 365-licens till olicensierade användare.
-ms.openlocfilehash: f042f8109bf9ac9b634bc66509c60a5181fb1af6
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 8c3165b99477afa14e6d2b0da927b5f64c416ef1
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235624"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580946"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Tilldela Microsoft 365-licenser till användar konton med PowerShell
 
@@ -34,9 +34,13 @@ ms.locfileid: "48235624"
 
 Användare kan inte använda några Microsoft 365-tjänster förrän deras konto har tilldelats en licens från en licens plan. Du kan använda PowerShell för att snabbt tilldela licenser till olicensierade konton. 
 
->[!Note]
->Användar konton måste tilldelas en plats. Du kan göra detta från egenskaperna för ett användar konto i Microsoft 365 Admin Center eller från PowerShell.
->
+Användar konton måste först tilldelas en plats. Att ange en plats är en nödvändig del av att skapa ett nytt användar konto i [Microsoft 365 Admin Center](../admin/add-users/add-users.md). 
+
+Konton som synkroniseras från lokala Active Directory Domain Services har ingen angiven plats som standard. Du kan konfigurera en plats för dessa konton från:
+
+- Administrationscentret för Microsoft 365
+ - [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
+ - [Azure-portalen](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active Directory**-  >  **användare** > användar konto > **profil**för  >  **kontakt information**  >  **land eller region**).
 
 >[!Note]
 >[Lär dig hur du tilldelar licenser till användar konton](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) med Microsoft 365 Admin Center. En lista över ytterligare resurser finns i [Hantera användare och grupper](https://docs.microsoft.com/microsoft-365/admin/add-users/).
@@ -111,7 +115,7 @@ Om du vill ange **UsageLocation** -värdet för ett konto kör du det här komma
 Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>
 ```
 
-Till exempel:
+Ett exempel:
 
 ```powershell
 Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US

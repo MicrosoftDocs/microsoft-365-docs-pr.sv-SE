@@ -3,7 +3,6 @@ title: Konfigurera egenskaper för Microsoft 365-användarkonto med PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,22 +18,22 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 'Sammanfattning: Använd PowerShell för Microsoft 365 för att konfigurera egenskaper för enskilda eller flera användar konton i din Microsoft 365-klient organisation.'
-ms.openlocfilehash: 6a435b3981efa8d8c2be7f6d983a1d062237f0db
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ae797d67b47c637dc95176b92fad8090f8a7ab37
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694282"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580934"
 ---
 # <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>Konfigurera egenskaper för Microsoft 365-användarkonto med PowerShell
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 Även om du kan använda administrations centret för Microsoft 365 för att konfigurera egenskaper för användar kontona för din Microsoft 365-klient organisation, kan du också använda PowerShell och göra något av följande i administrations centret för Microsoft 365.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för diagramvyn
 
-Om du vill konfigurera egenskaper för användar konton med Azure Active Directory PowerShell för Graph kan du använda cmdleten [set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) och ange egenskaper för att ställa in eller ändra. 
+Om du vill konfigurera egenskaper för användar konton med Azure Active Directory PowerShell för Graph kan du använda cmdleten [set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser) och ange egenskaper för att ställa in eller ändra. 
 
 Börja [med att ansluta till din Microsoft 365-klient organisation](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
    
@@ -74,8 +73,11 @@ Du identifierar kontot med parametern **-ObjectID** och anger eller ändrar spec
     
     Det här är ISO 3166-1 alpha-2 (a2) lands-eller rikt nummer.
     
-Se [set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) för ytterligare parametrar.
+Se [set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser) för ytterligare parametrar.
 
+>[!Note]
+>Innan du kan tilldela licenser till ett användar konto måste du tilldela en användnings plats.
+>
 
 Om du vill visa användar kontots huvud namn kör du följande kommando.
   
@@ -152,7 +154,7 @@ Om du vill konfigurera egenskaper för användar konton med Microsoft Azure Acti
 Börja [med att ansluta till din Microsoft 365-klient organisation](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
   
 >[!Note]
->PowerShell Core stöder inte Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen och cmdlets med **MSOL** . För att kunna fortsätta använda dessa cmdletar måste du köra dem från Windows PowerShell.
+>PowerShell Core stöder inte Microsoft Azure Active Directory-modul för Windows PowerShell-modulen och-cmdlets med **MSOL** i namnet. Om du vill fortsätta använda dessa cmdlets måste du köra dem från Windows PowerShell.
 >
 
 ### <a name="change-properties-for-a-specific-user-account"></a>Ändra egenskaper för ett visst användar konto
@@ -264,7 +266,7 @@ Det här kommandot instruerar PowerShell till att:
 - Hitta alla användar konton som har egenskapen avdelning inställd på "redovisning" (**där {$ _. Department-EQ "Accounting"}**) och skicka den resulterande informationen till nästa kommando ( **|** ).
     
 - Ange användarens plats till Frankrike (**set-MsolUser-UsageLocation "fr"**).
-    
+
 
 ## <a name="see-also"></a>Se även
 
@@ -272,4 +274,4 @@ Det här kommandot instruerar PowerShell till att:
   
 [Hantera Microsoft 365 med PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Komma igång med PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Börja använda PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)

@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 08/25/2020
+ms.date: 10/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: I den här artikeln får du lära dig om hybrid modern verifiering och förutsättningar för användning med lokala Skype för företag-och Exchange-servrar.
-ms.openlocfilehash: 82cd4203e2e9dc53c6add542c5f0ba90530b6548
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: dbd108d9b04445838ce8e88a921af717ebd763be
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361933"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487726"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Hybrid modern verifierings översikt och förutsättningar för att använda den med lokala Skype för företag-och Exchange-servrar
 
@@ -80,7 +80,7 @@ Get-OrganizationConfig | ft OAuth*
 
 Om värdet för egenskapen _OAuth2ClientProfileEnabled_ är **false**är modern verifikation inaktive rad.
 
-Mer information om cmdleten Get-OrganizationConfig finns i [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/get-organizationconfig).
+Mer information om Get-OrganizationConfig cmdlet finns i [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/get-organizationconfig).
 
 Du kan kontrol lera dina Skype för företag-servrar genom att köra följande PowerShell-kommando:
 
@@ -90,7 +90,7 @@ Get-CSOAuthConfiguration
 
 Om kommandot returnerar en tom _OAuthServers_ -egenskap, eller om värdet för egenskapen _ClientADALAuthOverride_ inte **tillåts**, är modern verifikation inaktive rad.
 
-Mer information om cmdleten Get-CsOAuthConfiguration finns i [Get-CsOAuthConfiguration](https://docs.microsoft.com/powershell/module/skype/get-csoauthconfiguration).
+Mer information om Get-CsOAuthConfiguration cmdlet finns i [Get-CsOAuthConfiguration](https://docs.microsoft.com/powershell/module/skype/get-csoauthconfiguration).
 
 ## <a name="do-you-meet-modern-authentication-prerequisites"></a>Möter du moderna verifierings krav?
 
@@ -161,6 +161,7 @@ Kontrol lera och kontrol lera dessa objekt i listan innan du fortsätter:
     Klienter och/eller protokoll som inte finns med i listan (till exempel POP3) stöder inte modern auktorisering med lokalt Exchange och fortsätter att använda äldre autentiseringsmekanismer även efter att modern aktive rad för miljön är aktiverat.
 
 - **Allmänna förutsättningar**
+  - Scenarion för resurs skogar kräver ett dubbelriktat förtroende med konto skogen för att se till att rätt SID-sökningar utförs under hybrid moderna autentiseringsbegäranden. 
   - Om du använder AD FS bör du ha Windows 2012 R2 AD FS 3,0 och högre för federation.
   - Dina identitets konfigurationer är en av de typer som stöds av Azure AD Connect, till exempel lösen ord för hash-synkronisering, vidarekoppling och lokal STS som stöds av Office 365.
   - Du har konfigurerat Azure AD Connect och fungerar för användarautentisering och synkronisering.

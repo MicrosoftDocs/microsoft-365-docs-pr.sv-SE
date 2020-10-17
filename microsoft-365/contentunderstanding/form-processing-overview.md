@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Läs mer om formulärbearbetning i Microsoft SharePoint Syntex
-ms.openlocfilehash: 9b5b9b1c54220037e1c10f2722a641b526592f84
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 7340e0c78db71fbb0acc05c2985b60f6bafbba80
+ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338619"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48493679"
 ---
 # <a name="form-processing-overview"></a>Översikt av formulär bearbetning
 
@@ -33,13 +33,9 @@ Du kan till exempel skapa en modell för formulärbearbetning som identifierar a
 
 ![Dokumentbiblioteksvy](../media/content-understanding/doc-lib-done.png)</br>  
 
-Du kan också använda exempelfiler för att träna modellen och definiera vilken information som ska extraheras från formuläret. Dokumentets layout lärs in genom att modellen tränas och lär sig att extrahera data från liknande platser i dina formulär eftersom de har en liknande layout med liknande struktur. 
+Du använder exempelfiler för att träna modellen och definiera vilken information som ska extraheras från formuläret. Dokumentets layout registreras genom att modellen tränas. Du behöver bara fem formulärdokument för att komma igång. AI Builder analyserar dina exempelfiler för nyckel-värdepar och du kan även manuellt identifiera de som eventuellt inte har upptäckts.  Med AI Builder kan du testa din modells precision mot dina exempelfiler.
 
 Du behöver minst fem formulärdokument för att komma igång. AI Builder analyserar dina exempelfiler för nyckel-värdepar och identifierar sedan manuellt de som eventuellt inte har identifierats.  Med AI Builder kan du testa din modells precision mot dina exempelfiler.
-
-När du har tränat och publicerat modellen kan du använda den för att skapa ett [Power Automate-flöde](https://docs.microsoft.com/power-automate/getting-started) som körs när en fil laddats upp till dokumentbiblioteket i SharePoint. Därefter extraheras de data som har identifierats i modellen. Extraherade data visas i kolumner i modellens dokumentbiblioteksvy.
-
-Du använder exempelfiler för att träna modellen och definiera vilken information som ska extraheras från formuläret. Dokumentets layout registreras genom att modellen tränas. Du behöver bara fem formulärdokument för att komma igång. AI Builder analyserar dina exempelfiler för nyckel-värdepar och du kan även manuellt identifiera de som eventuellt inte har upptäckts.  Med AI Builder kan du testa din modells precision mot dina exempelfiler.
 
 När du har tränat och publicerat modellen skapar modellen ett [Power Automate-flöde](https://docs.microsoft.com/power-automate/getting-started). Flödet körs när en fil överförs till dokumentbiblioteket i SharePoint och hämtar data som har identifierats av modellen. Extraherade data visas i kolumner i modellens dokumentbiblioteksvy.
 

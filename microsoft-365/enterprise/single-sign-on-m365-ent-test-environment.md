@@ -18,86 +18,87 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Sammanfattning: Konfigurera och testa sömlös enkel inloggning med Azure AD för din Microsoft 365-testmiljö.'
-ms.openlocfilehash: 3ba229a62f66cad715f604bab91cd12032da7be8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f98f82de50feb2a9f92d1ecc4775c5307b314a72
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685778"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487612"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Sömlös enkel inloggning med Azure AD för din Microsoft 365-testmiljö
 
 *Den här test laboratorie guiden kan användas för både Microsoft 365 för företags-och Office 365 företags test miljöer.*
 
-Med Azure AD sömlös enkel inloggning (SSO) kan du automatiskt logga in användare när de använder sina datorer eller enheter som är anslutna till organisationens nätverk. Sömlös SSO med Azure AD ger användare enkelt åtkomst till molnbaserade program utan att några ytterligare lokala komponenter behövs.
+Azure AD-sömlös enda Sign-On (sömlös SSO) loggar automatiskt in användare när de använder sina datorer eller enheter som är anslutna till deras organisations nätverk. Sömlös SSO med Azure AD ger användare enkelt åtkomst till molnbaserade program utan att några ytterligare lokala komponenter behövs.
 
-I den här artikeln beskrivs hur du kan konfigurera Microsoft 365-testmiljön för sömlös SSO med Azure AD.
+I den här artikeln beskrivs hur du konfigurerar din Microsoft 365 test miljö för Azure AD sömlös SSO.
 
-Det finns två faser för att konfigurera detta:
-
-1.    Skapa Microsoft 365-testmiljön för det simulerade företaget med synkronisering av lösenordshash.
-2.    Konfigurera Azure AD Connect på APP1 för sömlös SSO med Azure AD.
-    
+Installation av Azure AD sömlös SSO handlar om två faser:
+- [Fas 1: Konfigurera synkronisering av lösenordshash för Microsoft 365-testmiljön](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
+- [Fas 2: Konfigurera Azure AD Connect på APP1 för sömlös SSO med Azure AD](#phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso)
+   
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Klicka [här](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med testlabbguider för Microsoft 365 för företag.
+> Om du vill visa en visuell karta till alla artiklar i gruppen Microsoft 365 för Enterprise-testlabbet går du till [Microsoft 365 för Enterprise Test Lab-guide](../downloads/Microsoft365EnterpriseTLGStack.pdf).
   
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fas 1: Konfigurera synkronisering av lösenordshash för Microsoft 365-testmiljön
 
-Följ anvisningarna i [synkronisering av lösenordshash för Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Här är konfigurationsresultatet.
+Följ anvisningarna i [synkronisering av lösenordshash för Microsoft 365](password-hash-sync-m365-ent-test-environment.md). 
+
+Den resulterande konfigurationen ser ut så här:
   
 ![Det simulerade företaget med testmiljö för synkronisering av lösenordshash](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
-Konfigurationen består av: 
+Konfigurationen består av:
   
 - En utvärderingsprenumeration eller betald prenumeration på Microsoft 365 E5.
-- Ett förenklat företagsintranät anslutet till Internet som består av de virtuella datorerna DC1, APP1 och CLIENT1 i ett undernät i ett virtuellt Azure-nätverk. 
-- Azure AD Connect körs på APP1 så att TESTLAB AD DS-domänen (Active Directory Domain Services) synkroniseras med Azure AD-klientorganisationen för dina Microsoft 365-prenumerationer med jämna mellanrum.
+- En förenklad organisations intranät som är ansluten till Internet, bestående av de virtuella datorerna DC1, APP1 och KLIENT1 i ett undernät för ett Azure Virtual Network.
+- Azure AD Connect körs på APP1 för att synkronisera TESTLAB AD DS-domän (Active Directory Domain Services) regelbundet till Azure AD-klient organisationen för din Microsoft 365-prenumeration.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso"></a>Fas 2: Konfigurera Azure AD Connect på APP1 för sömlös SSO med Azure AD
 
-I den här fasen konfigurerar du Azure AD Connect på APP1 för sömlös SSO med Azure AD och kontrollerar sedan att det fungerar.
+I den här fasen konfigurerar du Azure AD Connect på APP1 för Azure AD sömlös SSO och kontrollerar sedan att det fungerar.
 
 ### <a name="configure-azure-ad-connect-on-app1"></a>Konfigurera Azure AD Connect på APP1
 
 1. Logga in på [Azure-portalen](https://portal.azure.com) med ditt globala administratörskonto och anslut sedan till APP1 med kontot TESTLAB\User1.
 
-2. Kör Azure AD Connect på skrivbordet för APP1.
+2. Kör Azure AD Connect från APP1 skriv bord.
 
-3. På **välkomstsidan** klickar du på **Konfigurera**.
+3. På **Välkomst sidan**väljer du **Konfigurera**.
 
-4. På sidan **Ytterligare aktiviteter** klickar du på **Ändra användarinloggning** och sedan på **Nästa**.
+4. På sidan **Ytterligare aktiviteter** väljer du **ändra användar inloggning**och sedan **Nästa**.
 
-5. På sidan **Anslut till Azure AD** skriver du autentiseringsuppgifterna för ditt globala administratörskonto. Klicka sedan på **Nästa**.
+5. På sidan **Anslut till Azure AD** anger du dina globala administratörs konto uppgifter och väljer sedan **Nästa**.
 
-6. På sidan **Användarinloggning** väljer du **Aktivera enkel inloggning** och klickar sedan på **Nästa**.
+6. På **inloggnings** sidan för användare väljer du **aktivera enkel inloggning**och sedan **Nästa**.
 
-7. På sidan **Aktivera enkel inloggning** klickar du på **Ange autentiseringsuppgifter**.
+7. På sidan **aktivera enkel inloggning** väljer du **ange autentiseringsuppgifter**.
 
-8. I dialogrutan **Windows-säkerhet** skriver du **user1** och lösenordet för user1-kontot. Klicka sedan på **OK**. Klicka på **Nästa**.
+8. I dialog rutan **Windows-säkerhet** anger du **Användare1** och lösen ordet för user1-kontot, väljer **OK**och sedan **Nästa**.
 
-9. På sidan **Klart att konfigurera** klickar du på **Konfigurera**.
+9. På sidan **redo att konfigurera** väljer du **Konfigurera**.
 
-10. På sidan **Konfigurationen är klar** klickar du på **Avsluta**.
+10. På sidan **slutförd konfigurering** väljer du **Avsluta**.
 
-11. Gå till den vänstra rutan i Azure-portalen och klicka på **Azure Active Directory > Azure AD Connect**. Kontrollera att funktionen **Sömlös enkel inloggning** visas som **Aktiverad**.
+11. I det vänstra fönstret i Azure-portalen väljer du **Azure Active Directory**  >  **Azure AD Connect**. Kontrollera att funktionen **Sömlös enkel inloggning** visas som **Aktiverad**.
 
-Prova sedan att logga in på ditt abonnemang med <strong>user1@testlab.</strong>\<your public domain> användarnamn för Användare1-kontot.
+Prova sedan att logga in på ditt abonnemang med <strong>user1@testlab.</strong>\<*your public domain*> användarnamn för Användare1-kontot.
 
-1. Från Internet Explorer på APP1 klickar du på ikonen för inställningar och sedan på **Internetalternativ**.
+1. I Internet Explorer på APP1 väljer du ikonen Inställningar och sedan **Internet-alternativ**.
  
-2. I **Internetalternativ** klickar du på fliken **Säkerhet**.
+2. I **Internet alternativ**väljer du fliken **säkerhet** .
 
-3. Klicka på **Lokalt intranät** och sedan på **Webbplatser**.
+3. Välj **Lokalt intranät**och välj sedan **webbplatser**.
 
-4. I **Lokalt intranät** klickar du på **Avancerat**.
+4. I **Lokalt intranät**väljer du **Avancerat**.
 
-5. I **Lägg till följande webbplats i zonen** skriver du **https<span>://</span>autologon.microsoftazuread-sso.com** och klickar på **Lägg till > Stäng > OK > OK**.
+5. I **Lägg till den här webbplatsen i zonen**anger du **https<span>://</span>AutoLogon.microsoftazuread-SSO.com**väljer du **Add**  >  **Close**  >  **OK**  >  **OK**.
 
 6. Logga ut och logga sedan in igen. Den här gången med ett annat konto.
 
-7. När du uppmanas att logga in anger du <strong>user1@testlab.</strong>\<your public domain> och klicka sedan på **Nästa**. Du bör kunna logga in som User1 utan att behöva ange ett lösenord. Detta bekräftar att sömlös enkel inloggning med Azure AD fungerar.
+7. När du uppmanas att logga in anger du <strong>user1@testlab.</strong>\<*your public domain*> och välj sedan **Nästa**. Du bör kunna logga in som User1 utan att behöva ange ett lösenord. Detta bekräftar att sömlös enkel inloggning med Azure AD fungerar.
 
 Observera att User1 visserligen har domänadministratörsbehörighet för TESTLAB AD DS-domänen, men är inte global administratör för Azure AD. Därför visas inte **administratörsikonen** som ett alternativ.
 
@@ -105,13 +106,12 @@ Här är konfigurationsresultatet:
 
 ![Det simulerade företaget med en testmiljö med direktautentisering](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
 
- 
 Konfigurationen består av:
 
-- En utvärderings version av Microsoft 365 E5 eller betalda abonnemang med DNS-testlab.\<your domain name> registrerat.
-- Ett förenklat företagsintranät anslutet till Internet som består av de virtuella datorerna DC1, APP1 och CLIENT1 i ett undernät i ett virtuellt Azure-nätverk. 
-- Azure AD Connect körs på APP1 så att listan med konton och grupper synkroniseras från Azure AD-klientorganisationen för dina Microsoft 365-prenumerationer till TESTLAB AD DS-domänen. 
-- Sömlös enkel inloggning med Azure AD är aktiverat så att datorer i det simulerade intranätet kan logga in i Microsoft 365-molnresurser utan att ange ett lösenord för användarkontot.
+- En utvärderings version av Microsoft 365 E5 eller betalda abonnemang med DNS-testlab.\<*your domain name*> registrerat.
+- En förenklad organisations intranät som är ansluten till Internet, bestående av de virtuella datorerna DC1, APP1 och KLIENT1 i ett undernät för ett Azure Virtual Network.
+- Azure AD Connect körs på APP1 för att synkronisera listan med konton och grupper från Azure AD-klientorganisationen för din Microsoft 365-prenumeration till TESTLAB AD DS-domänen.
+- Azure AD sömlös SSO är aktiverat så att datorer i det simulerade intranätet kan logga in på Microsoft 365-moln resurser utan att ange ett lösen ord för kontot.
 
 ## <a name="next-step"></a>Nästa steg
 
@@ -124,5 +124,3 @@ Utforska ytterligare [identitetsfunktioner](m365-enterprise-test-lab-guides.md#i
 [Översikt över Microsoft 365 för företag](microsoft-365-overview.md)
 
 [Microsoft 365 för företags dokumentation](https://docs.microsoft.com/microsoft-365-enterprise/)
-
-

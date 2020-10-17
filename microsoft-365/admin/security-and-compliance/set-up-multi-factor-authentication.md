@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Lär dig hur du konfigurerar multifaktorautentisering för din organisation.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 34133f4204c1ee305b0a249a0ff8e0e9edaf5599
-ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
+ms.openlocfilehash: 320c66e6c9db7827c22cab67df57d75375f009d4
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45153683"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464020"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Konfigurera multifaktorautentisering
   
@@ -76,7 +76,7 @@ Om din organisation har mer detaljerade säkerhetsbehov kan villkorsstyrd åtkom
 
 Villkorsstyrd åtkomst är tillgänglig för kunder som har köpt Azure AD Premium P1, och licenser som inkluderar detta, t. ex. Microsoft 365 Business Premium och Microsoft 365 E3. Mer information finns i [skapa en princip för villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa).
 
-Riskbaserad villkorsstyrd åtkomst är tillgänglig via Azure AD Premium P2-licensen eller licenserna som inkluderar detta, t. ex. Microsoft 365 E5. Mer information finns i [Riskbaserad villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
+Riskbaserad villkorlig åtkomst är tillgänglig via Azure AD Premium P2-licens eller licenser som inkluderar detta, till exempel Microsoft 365 E5. Mer information finns i [Riskbaserad villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
 
 Mer information om Azure AD P1 och P2 finns i [Azure Active Directory-priserna](https://azure.microsoft.com/pricing/details/active-directory/).
 
@@ -96,12 +96,11 @@ Om du tidigare har aktiverat MFA måste du inaktivera det innan du aktiverar sta
 1. På sidan multifaktorautentisering väljer du varje användare och konfigurerar deras multifaktorstatus till **Inaktiverad**.
 
 ## <a name="next-steps"></a>Nästa steg
-
 - [Så här registrerar du dig för den extra autentiseringsmetoden](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+- [Vad är: multifaktorautentisering](https://support.microsoft.com/help/4577374/what-is-multifactor-authentication)
 - [Så här loggar du in efter registrering](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 - [Så här ändrar du den extra autentiseringsmetoden](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
-- [Så här hanterar du situationer som exempelvis en ny smartphone](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
-- [Felsöka MFA-inloggningar](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
+
 
 
 

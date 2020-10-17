@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Snabb planering och konfiguration av Microsoft 365 eller Office 365 med installations guider.
-ms.openlocfilehash: fd9d9a3b65f3a4e47604299c47a85d8c5e551149
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 215f51af1fc553ef0710565af0a7c25111de8328
+ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446945"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48493703"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Installations guider för Microsoft 365 och Office 365-tjänster
 
@@ -90,6 +90,17 @@ Windows Virtual Desktop är en omfattande tjänst för dator-och program virtual
 
 [Installations guiden för Windows Virtual Desktop](https://aka.ms/wvdsetupguide) innehåller administratörer med planerings resurser och förutsättningar för distribution, konfigurations vägledning och ytterligare resurser. 
 
+### <a name="microsoft-edge-deployment-advisor"></a>Microsoft Edge Deployment Advisor
+
+Microsoft Edge har återskapats från grunden för att ge dig världs klassens kompatibilitet och prestanda, den säkerhet och den integritet du förtjänar och nya funktioner som är utformade för att ge dig det bästa med Internet.
+
+Med [Microsoft Edge Deployment Advisor](https://aka.ms/edgeadvisor) kan du konfigurera identifiering av företags webbplatser så att du kan se vilka webbplatser som har öppnats i din organisation som måste behöva använda IE-läge, granska och konfigurera viktiga säkerhetsfunktioner, konfigurera integritets policy och ytterligare principer för att uppfylla organisationens krav och hantera Internet åtkomst på dina enheter. Du kan ladda ned Microsoft Edge till enskilda enheter, eller så visar vi dig hur du distribuerar till flera användare i organisationen med Configuration Manager eller Microsoft Intune.
+Windows Virtual Desktop är en omfattande tjänst för dator-och program virtualisering som körs i molnet. Det är den enda virtuella Skriv bords infrastrukturen (VDI) som ger förenklad hantering, multi-session Windows 10, optimeringar för Microsoft 365-appar och stöd för fjärr skrivbords tjänster (RDS). Distribuera och skala dina Windows-datorer och appar till Azure i minuter och få inbyggda funktioner för säkerhet och efterlevnad. 
+
+### <a name="intune-configuration-manager-co-management-setup-guide"></a>Installations guide för co-Management för Intune Configuration Manager
+
+Använd [konfigurations guiden för installation av Intune-konfigurationsverktyget](https://aka.ms/comanagementsetup) för befintliga Configuration Manager-klienttjänster och nya Internetbaserade enheter som din organisation vill använda både Microsoft Intune och Configuration Manager. Med den här distributions guiden för samtidig hantering kan du hantera Windows 10-enheter och lägga till nya funktioner i organisationens enheter och få fördelarna med båda lösningarna.
+
 ## <a name="guides-for-authentication-and-access"></a>Stöd linjer för inloggningsautentisering och åtkomst
 
 ### <a name="azure-ad-setup-guide"></a>Konfigurations guide för Azure AD
@@ -97,6 +108,10 @@ Windows Virtual Desktop är en omfattande tjänst för dator-och program virtual
 [Konfigurations guiden för Azure AD](https://aka.ms/aadpguidance) tillhandahåller information för att säkerställa att organisationen har en stark säkerhets bas. I den här guiden ska du konfigurera inledande funktioner, till exempel Azure Role-baserad åtkomst kontroll (Azure RBAC) för administratörer, Azure AD Connect för den lokala katalogen och Azure AD Connect-hälsa, så att du kan övervaka din hybrid identitets hälsa under automatiserade synkroniseringar. 
 
 Det inkluderar också viktig information om att aktivera standard lösen ords återställning, villkorlig åtkomst och integrerad inloggning från tredje part, inklusive valfritt Avancerat identitets skydd och användar konfiguration.
+
+### <a name="sync-users-from-your-orgs-directory"></a>Synkronisera användare från organisationens katalog
+
+[Sync-användarna från organisationens katalog guide](https://aka.ms/directorysyncsetup) hjälper dig med att aktivera Active Directory-synkronisering. Då får dina lokala och moln identiteter tillsammans för lättare åtkomst och förenklad hantering. Lås upp nya funktioner, till exempel enkel inloggning, självbetjänings alternativ, automatisk konto tilldelning, villkorliga åtkomst kontroller och efterlevnadsprinciper. Detta garanterar att användarna har till gång till de resurser de behöver var de än är.
 
 ### <a name="plan-your-passwordless-deployment"></a>Planera din lösenordsskyddade distribution
 

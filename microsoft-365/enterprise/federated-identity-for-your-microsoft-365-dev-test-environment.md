@@ -20,12 +20,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Sammanfattning: Konfigurera federerad autentisering för Microsoft 365-testmiljön.'
-ms.openlocfilehash: c7ff838522c0bd97da4ffff5122454b128f97bf2
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0fb8c55f5b7291cdc6bcec636981a9d31015e723
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694859"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487690"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Federerade identiteter i testmiljön för Microsoft 365
 
@@ -33,41 +33,36 @@ ms.locfileid: "46694859"
 
 Microsoft 365 stöder federerade identiteter. Det innebär att i stället för att Microsoft 365 validerar autentiseringsuppgifterna själv, hänvisas användaren som ansluter till en federerad autentiseringsserver som är betrodd av Microsoft 365. Om användarens autentiseringsuppgifter är korrekta utfärdar den federerade autentiseringsservern en säkerhetstoken som klienten sedan skickar till Microsoft 365 som autentiseringsbevis. Federerade identiteter möjliggör avlastning och uppskalning av autentiseringen i en Microsoft 365-prenumeration, samt avancerade autentiserings- och säkerhetsscenarier.
   
-I den här artikeln beskrivs hur du kan konfigurera federerad inloggningsautentisering för test miljön för Microsoft 365, vilket leder till följande:
+I den här artikeln beskrivs hur du konfigurerar federerad inloggning för test miljön för Microsoft 365:
 
 ![Den federerade autentiseringen för Microsoft 365-testmiljön](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
   
-Konfigurationen består av: 
+Konfigurationen består av:
   
 - En utvärderings version av Microsoft 365 E5 eller Product.
     
-- Ett förenklat företagsintranät som är anslutet till Internet. Det består av fem virtuella datorer i ett undernät i ett virtuellt Azure-nätverk (DC1, APP1, CLIENT1, ADFS1 och PROXY1). Azure AD Connect körs på APP1 för att synkronisera listan över konton i Active Directory Domain Services-domänen till Microsoft 365. PROXY1 tar emot inkommande autentiseringsbegäranden. ADFS1 validerar autentiseringsuppgifter med DC1 och utfärdar säkerhetstoken.
+- En förenklad organisations intranät som är ansluten till Internet, bestående av fem virtuella datorer i ett undernät för ett Azure-virtuellt nätverk (DC1, APP1, KLIENT1, ADFS1 och PROXY1). Azure AD Connect körs på APP1 för att synkronisera listan över konton i Active Directory Domain Services-domänen till Microsoft 365. PROXY1 tar emot inkommande autentiseringsbegäranden. ADFS1 validerar autentiseringsuppgifter med DC1 och utfärdar säkerhetstoken.
     
-Konfigurationen av testmiljön består av fem faser:
-  
-1. Skapa testmiljön för det simulerade företaget med synkronisering av lösenordshash.
-    
-2. Skapa en AD FS-server (ADFS1).
-    
-3. Skapa webbproxyservern (PROXY1).
-    
-4. Skapa ett självsignerat certifikat och konfigurera ADFS1 och PROXY1.
-    
-5. Konfigurera Microsoft 365 för federerade identiteter.
+Att konfigurera den här test miljön inkluderar fem faser:
+- [Fas 1: Konfigurera synkronisering av lösenordshash för Microsoft 365-testmiljön](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
+- [Fas 2: Skapa AD FS-servern](#phase-2-create-the-ad-fs-server)
+- [Fas 3: Skapa webbproxyservern](#phase-3-create-the-web-proxy-server)
+- [Fas 4: Skapa ett självsignerat certifikat och konfigurera ADFS1 och PROXY1.](#phase-4-create-a-self-signed-certificate-and-configure-adfs1-and-proxy1)
+- [Fas 5: Konfigurera Microsoft 365 för federerade identiteter](#phase-5-configure-microsoft-365-for-federated-identity)
     
 > [!NOTE]
-> Du kan inte konfigurera testmiljön med en Azure-utvärderingsprenumeration. 
+> Du kan inte konfigurera den här test miljön med en Azure-testprenumeration.
   
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fas 1: Konfigurera synkronisering av lösenordshash för Microsoft 365-testmiljön
 
-Följ anvisningarna i [synkronisering av lösenordshash för Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Här är konfigurationsresultatet.
+Följ anvisningarna i [synkronisering av lösenordshash för Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Den resulterande konfigurationen ser ut så här:
   
 ![Det simulerade företaget med testmiljö för synkronisering av lösenordshash](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase1.png)
   
-Konfigurationen består av: 
+Konfigurationen består av:
   
 - En utvärderings version av Microsoft 365 E5 eller betalda prenumerationer.
-- Ett förenklat företagsintranät anslutet till Internet som består av de virtuella datorerna DC1, APP1 och CLIENT1 i ett undernät i ett virtuellt Azure-nätverk. Azure AD Connect körs på APP1 för att synkronisera TESTLAB AD DS-domänen med Azure AD-klientorganisationen för dina Microsoft 365-prenumerationer regelbundet.
+- En förenklad organisations intranät som är ansluten till Internet, bestående av de virtuella datorerna DC1, APP1 och KLIENT1 i ett undernät för ett Azure Virtual Network. Azure AD Connect körs på APP1 för att synkronisera TESTLAB-domänen (Active Directory Domain Services) till Azure AD-klient organisationen för dina Microsoft 365-abonnemang med jämna mellanrum.
 
 ## <a name="phase-2-create-the-ad-fs-server"></a>Fas 2: Skapa AD FS-servern
 
@@ -109,7 +104,7 @@ Add-Computer -DomainName corp.contoso.com -Credential $cred
 Restart-Computer
 ```
 
-Här är konfigurationsresultatet.
+Den resulterande konfigurationen ser ut så här:
   
 ![AD FS-servern har lagts till i DirSync för Microsoft 365-testmiljön](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase2.png)
   
@@ -139,9 +134,9 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> PROXY1 tilldelas en statisk offentlig IP-adress eftersom du skapar en offentlig DNS-post som pekar på den. Denna får inte ändras när du startar om den virtuella PROXY1-datorn. 
+> PROXY1 tilldelas en statisk offentlig IP-adress eftersom du skapar en offentlig DNS-post som pekar på den. Denna får inte ändras när du startar om den virtuella PROXY1-datorn.
   
-Lägg sedan till en regel i nätverkssäkerhetsgruppen för CorpNet-undernätet som tillåter oombedd inkommande trafik från Internet till den privata IP-adressen och TCP-porten 443 i PROXY1. Kör dessa kommandon i Azure PowerShell-kommandotolken på din lokala dator.
+Lägg sedan till en regel i nätverks säkerhets gruppen för CorpNet-under nätet för att tillåta oombedd inkommande trafik från Internet till PROXY1's privat IP-adress och TCP-port 443. Kör dessa kommandon i Azure PowerShell-kommandotolken på din lokala dator.
   
 ```powershell
 $rgName="<the resource group name of your Base Configuration>"
@@ -160,13 +155,13 @@ Add-Computer -DomainName corp.contoso.com -Credential $cred
 Restart-Computer
 ```
 
-Visa den offentliga IP-adressen för PROXY1 med följande Azure PowerShell-kommandon på din lokala dator:
+Visa den offentliga IP-adressen för PROXY1 med dessa Azure PowerShell-kommandon på din lokala dator.
   
 ```powershell
 Write-Host (Get-AzPublicIpaddress -Name "PROXY1-PIP" -ResourceGroup $rgName).IPAddress
 ```
 
-Arbeta sedan med din offentliga DNS-leverantör och skapa en ny offentlig DNS A-post för **fs.testlab.**\<your DNS domain name> det löser att IP-adressen visas av kommandot **Write-Host**. **fs.testlab.**\<your DNS domain name> kallas i fortsättningen för *federationstjänstens FQDN*.
+Arbeta sedan med din offentliga DNS-leverantör och skapa en ny offentlig DNS A-post för **fs.testlab.**\<*your DNS domain name*> det löser att IP-adressen visas av kommandot **Write-Host**. **fs.testlab.**\<*your DNS domain name*> kallas i fortsättningen för *federationstjänstens FQDN*.
   
 Använd sedan [Azure-portalen](https://portal.azure.com) för att ansluta till den virtuella DC1-datorn med hjälp av CORP\\User1-autentiseringsuppgifter och kör följande kommandon i en Windows PowerShell-kommandotolk på administratörsnivå:
   
@@ -174,9 +169,9 @@ Använd sedan [Azure-portalen](https://portal.azure.com) för att ansluta till d
 Add-DnsServerPrimaryZone -Name corp.contoso.com -ZoneFile corp.contoso.com.dns
 Add-DnsServerResourceRecordA -Name "fs" -ZoneName corp.contoso.com -AllowUpdateAny -IPv4Address "10.0.0.100" -TimeToLive 01:00:00
 ```
-Med dessa kommandon skapar du en intern DNS-post för att virtuella datorer i det virtuella Azure-nätverket ska kunna matcha den interna federationens FQDN med den privata IP-adressen i ADFS1.
+De här kommandona skapar en intern DNS-post så att virtuella datorer i Azure Virtual Network kan matcha den interna Federations tjänstens FQDN till ADFS1's privata IP-adress.
   
-Här är konfigurationsresultatet.
+Den resulterande konfigurationen ser ut så här:
   
 ![Webbprogrammets proxyserver har lagts till i DirSync för Microsoft 365-testmiljön](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
   
@@ -186,12 +181,12 @@ I den här fasen skapar du ett självsignerat digitalt certifikat för federatio
   
 Först använder du [Azure-portalen](https://portal.azure.com) för att ansluta till den virtuella DC1-datorn med hjälp av CORP\\User1-autentiseringsuppgifterna och sedan öppnar du en Windows PowerShell-kommandotolk på administratörsnivå.
   
-Skapa sedan AD FS-tjänstkontot med detta kommando i Windows PowerShell-kommandotolken på DC1:
+Skapa sedan ett AD FS-tjänstkonto med det här kommandot i kommando tolken för Windows PowerShell på DC1:
   
 ```powershell
 New-ADUser -SamAccountName ADFS-Service -AccountPassword (read-host "Set user password" -assecurestring) -name "ADFS-Service" -enabled $true -PasswordNeverExpires $true -ChangePasswordAtLogon $false
 ```
-Observera att du uppmanas att ange lösenordet för kontot med detta kommando. Välj ett starkt lösenord och spara det på en säker plats. Du behöver det i den här fasen och i fas 5.
+Observera att du uppmanas att ange lösenordet för kontot med detta kommando. Välj ett starkt lösenord och spara det på en säker plats. Du behöver den för den här fasen och för steg 5.
   
 Använd [Azure-portalen](https://portal.azure.com) för att ansluta till den virtuella ADFS1-datorn med hjälp av CORP\\User1-autentiseringsuppgifterna. Öppna en Windows PowerShell-kommandotolk på administratörsnivå i ADFS1, fyll i FQDN för federationstjänsten och kör sedan följande kommandon för att skapa ett självsignerat certifikat:
   
@@ -204,33 +199,33 @@ New-SmbShare -name Certs -path c:\Certs -changeaccess CORP\User1
 
 Följ sedan de här anvisningarna för att spara det nya självsignerade certifikatet som en fil.
   
-1. Klicka på **Start**, skriv **mmc.exe** och tryck på **Retur**.
+1. Välj **Start**, Skriv **mmc.exe**och tryck sedan på **RETUR**.
     
-2. Klicka på **Arkiv > Lägg till/ta bort snapin-modul**.
+2. Välj **File**  >  **Lägg till/ta bort snapin-modul**.
     
-3. I **Lägg till eller ta bort snapin-moduler** dubbelklickar du på **Certifikat** i listan med tillgängliga snapin-moduler. Klicka på **Datorkonto** och sedan på **Nästa**.
+3. I **Lägg till eller ta bort snapin-moduler**dubbelklickar du på **certifikat** i listan över tillgängliga snapin-moduler, väljer **dator konto**och sedan **Nästa**.
     
-4. I **Välj dator** klickar du på **Slutför** och sedan på **OK**.
+4. I **Välj dator**väljer du **Slutför**och sedan **OK**.
     
 5. Öppna **Certifikat (lokal dator) > Personlig > Certifikat** i mapplistan.
     
-6. Högerklicka på certifikatet med federationstjänstens FQDN, klicka på **Alla uppgifter** och sedan på **Exportera**.
+6. Markera och håll (eller högerklicka på certifikatet med Federations tjänstens FQDN-namn) och **Välj sedan** **Exportera**.
     
-7. På sidan **Välkommen** klickar du på **Nästa**.
+7. Välj **Nästa**på **välkomst** sidan.
     
-8. Klicka på **Ja** på sidan **Exportera privat nyckel** och klicka sedan på **Nästa**.
+8. På sidan **Exportera privat** sida väljer du **Ja**och sedan **Nästa**.
     
-9. Klicka på **Exportera alla utökade egenskaper** och sedan på **Nästa** på sidan **Exportera filformat**.
+9. På sidan **Exportera fil format** väljer du **Exportera alla utökade egenskaper**och väljer sedan **Nästa**.
     
-10. På sidan **Säkerhet** klickar du på **Lösenord** och anger ett lösenord i **Lösenord** och **Bekräfta lösenordet.**
+10. Välj **lösen** ord på sidan **säkerhet** och ange lösen ord i **lösen** ord och **Bekräfta lösen ord.**
     
-11. På sidan **Fil att exportera** klickar du på **Bläddra**.
+11. På sidan **fil att exportera väljer du** **Bläddra**.
     
-12. Bläddra till mappen **C:\\Certs**, skriv **SSL** i **Filnamn** och klicka sedan på **Spara.**
+12. Bläddra till mappen **C: \\ certifikat** , ange **SSL** i **fil namn**och välj sedan **Spara.**
     
-13. På sidan **Fil att exportera** klickar du på **Nästa**.
+13. På sidan **fil att exportera väljer du** **Nästa**.
     
-14. Klicka på **Slutför** på sidan **Slutför guiden Exportera certifikat**. Klicka på **OK** när du uppmanas att göra det.
+14. På sidan för att **Exportera certifikat** klickar du på **Slutför**. Välj **OK**när du uppmanas att göra det.
     
 Installera sedan AD FS-tjänsten med detta kommando i Windows PowerShell-kommandotolken på ADFS1:
   
@@ -242,77 +237,77 @@ Vänta på att installationen slutförs.
   
 Konfigurera sedan AD FS-tjänsten med följande steg:
   
-1. Klicka på **Start** och sedan på ikonen **Serverhanteraren**.
+1. Välj **Start**och välj sedan **Server hanteraren** .
     
-2. I mapplistan i Serverhanteraren klickar du på **AD FS**.
+2. I träd fönstret i Server hanteraren väljer du **AD FS**.
     
-3. I verktygsfältet högst upp klickar du på den orange varningssymbolen och sedan på **Konfigurera federationstjänsten på den här servern**.
+3. I verktygsfältet högst upp väljer du den orange varnings symbolen och väljer sedan **Konfigurera Federations tjänsten på den här servern**.
     
-4. På sidan **Välkommen** i konfigurationsguiden för Active Directory Federation Services klickar du på **Nästa**.
+4. Välj **Nästa**på **välkomst** sidan i konfigurations guiden för Active Directory Federation Services.
     
-5. På sidan **Anslut till AD DS** klickar du på **Nästa**.
+5. På sidan **Anslut till AD DS** väljer du **Nästa**.
     
 6. På sidan **Ange egenskaper för tjänst**:
     
-  - Om du vill använda **SSL-certifikat** klickar du på nedåtpilen och sedan på certifikatet med namnet på federationstjänstens FQDN.
+  - För **SSL-certifikat**väljer du nedpilen och väljer sedan certifikatet med namnet på ditt FQDN för Federations tjänsten.
     
-  - I **Federationstjänstens visningsnamn** skriver du namnet på din fiktiva organisation.
+  - Ange namnet på din fiktiva organisation i **visnings namn för Federations tjänsten**.
     
-  - Klicka på **Nästa**.
+  - Välj **Nästa**.
     
-7. På sidan **Ange tjänstkonto** klickar du på **Välj** för **Kontonamn**.
+7. På sidan **Ange tjänst konto** väljer du **Välj** för **konto namn**.
     
-8. I **Välj användar- eller tjänstkonto** skriver du **ADFS-Service**, klickar på **Kontrollera namn** och sedan på **OK**.
+8. I **Select User or service account**anger du **ADFS-service**, väljer **kontrol lera namn**och sedan **OK**.
     
-9. I **Kontolösenord** skriver du lösenordet för kontot ADFS-Service och klickar sedan på **Nästa**.
+9. Ange lösen ordet för ADFS-Service kontot i **konto lösen ord**och välj sedan **Nästa**.
     
-10. På sidan **Ange konfigurationsdatabas** klickar du på **Nästa**.
+10. På sidan **Ange konfigurations databas** väljer du **Nästa**.
     
-11. På sidan **Granskningsalternativ** klickar du på **Nästa**.
+11. På sidan **gransknings alternativ** väljer du **Nästa**.
     
-12. På sidan **Kravkontroller** klickar du på **Konfigurera**.
+12. På sidan **nödvändiga kontroller** väljer du **Konfigurera**.
+
+13. På sidan **resultat** väljer du **Stäng**.
     
-13. På sidan **Resultat** klickar du på **Stäng**.
-    
-14. Klicka på **Start**, klicka på strömbrytarikonen, klicka på **Starta om** och klicka sedan på **Fortsätt**.
+14. Välj **Start**, Välj Power Icon, Välj **restart**och välj sedan **Continue**.
     
 I [Azure-portalen](https://portal.azure.com) kan du ansluta till PROXY1 med autentiseringsuppgifterna för CORP\\User1-kontot.
   
 Följ sedan de här anvisningarna för att installera det självsignerade certifikatet på **både PROXY1 och APP1**.
   
-1. Klicka på **Start**, skriv **mmc.exe** och tryck på **Retur**.
+1. Välj **Start**, Skriv **mmc.exe**och tryck sedan på **RETUR**.
     
-2. Klicka på **Arkiv > Lägg till/ta bort snapin-modul**.
+2. Välj **arkiv > Lägg till/ta bort snapin-modul**.
     
-3. I **Lägg till eller ta bort snapin-moduler** dubbelklickar du på **Certifikat** i listan med tillgängliga snapin-moduler. Klicka på **Datorkonto** och sedan på **Nästa**.
+3. I **Lägg till eller ta bort snapin-moduler**dubbelklickar du på **certifikat** i listan över tillgängliga snapin-moduler, väljer **dator konto**och sedan **Nästa**.
     
-4. I **Välj dator** klickar du på **Slutför** och sedan på **OK**.
+4. I **Välj dator**väljer du **Slutför**och sedan **OK**.
     
-5. Öppna **Certifikat (lokal dator) > Personlig > Certifikat** i mapplistan.
+5. Öppna **certifikat (lokal dator)** i träd fönstret  >  **Personal**  >  **Certificates**.
     
-6. Högerklicka på **Personlig**, klicka på **Alla uppgifter** och klicka sedan på **Importera**.
+6. Markera och håll ned (eller högerklicka på) **personligt**, Välj **alla uppgifter**och välj sedan **Importera**.
     
-7. På sidan **Välkommen** klickar du på **Nästa**.
+7. Välj **Nästa**på **välkomst** sidan.
     
-8. På sidan **Fil att importera** skriver du **\\\\adfs1\\certs\\ssl.pfx** och klickar sedan på **Nästa**.
+8. På sidan **fil som ska importeras** anger du ** \\ \\ ADFS1- \\ certifikat för \\ SSL. pfx**och väljer sedan **Nästa**.
     
-9. På sidan **Skydd av privat nyckel** anger du lösenordet för certifikatet i **Lösenord** och klickar sedan på **Nästa.**
+9. Ange lösen ordet för certifikatet i **lösen ord**på sidan skydd mot den **privata knappen** och välj sedan **Nästa.**
     
-10. På sidan **Certifikatarkiv** klickar du på **Nästa.**
+10. På sidan **certifikat lagring** väljer du **Nästa.**
     
-11. Klicka på **Slutför** på sidan **Slutför**.
+11. På sidan **Slutför** väljer du **Slutför**.
     
-12. På sidan **Certifikatarkiv** klickar du på **Nästa**.
+12. På sidan **certifikat lagring** väljer du **Nästa**.
     
-13. Klicka på **OK** när du uppmanas att göra det.
+13. Välj **OK**när du uppmanas att göra det.
     
-14. Klicka på **Certifikat** i mapplistan.
+14. Välj **certifikat**i träd fönstret.
     
-15. Högerklicka på certifikatet och klicka sedan på **Kopiera**.
+15. Markera och håll ned (eller högerklicka på) certifikatet och välj sedan **Kopiera**.
     
-16. I mapplistan öppnar du **Betrodda rotcertifikatutfärdare > Certifikat**.
+16. Öppna certifikat för **betrodda rot certifikat utfärdare**i träd fönstret  >  **Certificates**.
     
-17. Flytta muspekaren nedanför listan med installerade certifikat, högerklicka och klicka sedan på **Klistra in**.
+17. Placera mus pekaren nedanför listan över installerade certifikat, markera och håll (eller högerklicka) och välj sedan **Klistra in**.
     
 Öppna en PowerShell-kommandotolk på administratörsnivå och kör följande kommando:
   
@@ -324,30 +319,29 @@ Vänta på att installationen slutförs.
   
 Använd följande steg för att konfigurera att tjänsten Webbprogramproxy ska använda ADFS1 som federationsserver:
   
-1. Klicka på **Start** och sedan på **Serverhanteraren**.
+1. Välj **Start**och välj sedan **Server Manager**.
     
-2. I mapplistan klickar du på **Fjärråtkomst**.
+2. I träd fönstret väljer du **fjärråtkomst**.
     
-3. I verktygsfältet högst upp klickar du på den orange varningssymbolen och sedan på **Öppna guiden Webbprogramproxy**.
+3. I verktygsfältet högst upp väljer du den orange varnings symbolen och väljer sedan **Öppna guiden**webbprogramproxy.
     
-4. På sidan **Välkommen** i guiden Webbprogramproxy klickar du på **Nästa**.
+4. På **välkomst** sidan i guiden Konfiguration av Webbprogramproxy väljer du **Nästa**.
     
 5. På sidan **Federationsserver**:
     
-  - Skriv in federationstjänstens FQDN i **Federationstjänstens namn**.
+  - Ange ditt Federations tjänst-FQDN i rutan **namn på Federations tjänst** .
     
-  - Skriv **CORP\\User1** i **Användarnamn**.
+  - I rutan **användar namn** anger du **Corp \\ Användare1**.
     
-  - Skriv in lösenordet för User1-kontot i **Lösenord**.
+  - I rutan **lösen ord** anger du lösen ordet för user1-kontot.
     
-  - Klicka på **Nästa**.
+  - Välj **Nästa**.
     
-6. På sidan **AD FS-proxycertifikat** klickar du på nedåtpilen och sedan på certifikatet med federationstjänstens FQDN. Klicka sedan på **Nästa**.
+6. På sidan **AD FS-proxyskript** väljer du nedåtpilen, väljer certifikatet med FQDN-namnet på Federations tjänsten och väljer sedan **Nästa**.
     
-7. På sidan **Bekräftelse** klickar du på **Konfigurera**.
+7. På **bekräftelse** sidan väljer du **Konfigurera**.
     
-8. På sidan **Resultat** klickar du på **Stäng**.
-
+8. På sidan **resultat** väljer du **Stäng**.
     
 ## <a name="phase-5-configure-microsoft-365-for-federated-identity"></a>Fas 5: Konfigurera Microsoft 365 för federerade identiteter
 
@@ -357,43 +351,43 @@ Använd följande steg för att konfigurera Azure AD Connect och din Microsoft 3
   
 1. Dubbelklicka på **Azure AD Connect** på skrivbordet.
     
-2. På sidan **Välkommen till Azure AD Connect** klickar du på **Konfigurera**.
+2. På sidan **Välkommen till Azure AD Connect** väljer du **Configure**.
     
-3. På sidan **Ytterligare aktiviteter** klickar du på **Ändra användarinloggning** och sedan på **Nästa**.
+3. På sidan **Ytterligare aktiviteter** väljer du **ändra användar inloggning**och sedan **Nästa**.
     
-4. På sidan **Anslut till Azure AD** skriver du kontonamn och lösenord för en global administratör. Klicka sedan på **Nästa**.
+4. På sidan **Anslut till Azure AD** anger du ditt globala administratörs konto namn och lösen ord och väljer sedan **Nästa**.
     
-5. På sidan **Användarinloggning** klickar du på **Federation med AD FS** och sedan på **Nästa**.
+5. På **inloggnings** sidan för användare väljer du **Federation med AD FS**och väljer sedan **Nästa**.
     
-6. På sidan **AD FS-servergrupp** klickar du på **Använd en befintlig AD FS-servergrupp**. Skriv **ADFS1** i **Servernamn** och klicka sedan på **Nästa**.
+6. Välj **Använd en befintlig AD FS-servergrupp**på sidan **AD FS-servergrupp** och ange **ADFS1** i rutan **Server namn** och välj sedan **Nästa**.
     
-7. När du uppmanas att ange autentiseringsuppgifter för server anger du autentiseringsuppgifterna för kontot CORP\\User1. Klicka sedan på **OK**.
+7. När du uppmanas att ange autentiseringsuppgifter för servern anger du autentiseringsuppgifterna för företags \\ -Användare1 user1-kontot och väljer sedan **OK**.
     
-8. På sidan med autentiseringsuppgifter för **Domänadministratör** skriver du **CORP\\User1** i **Användarnamn** och lösenordet för kontot i **Lösenord**. Klicka sedan på **Nästa**.
+8. Ange lösen ordet i rutan **lösen ord** i **rutan \\ ** **användar namn** på sidan **domän administratörs** inloggningar och välj sedan **Nästa**.
     
-9. På sidan **AD FS-tjänstekonto** skriver du **CORP\\ADFS-Service** i **Domänanvändarnamn** och lösenordet för kontot i **Lösenord för domänanvändare**. Klicka sedan på **Nästa**.
+9. På sidan **AD FS** -tjänstkonto anger du **Corp \\ ADFS-service** i rutan **domain username** , anger lösen ordet i rutan **Domain User Password** och väljer sedan **Next**.
     
-10. På sidan **Azure AD-domän** i **Domän** väljer du namnet på den domän som du tidigare skapade och lade till i din prenumeration i fas 1. Klicka sedan på **Nästa**.
+10. På sidan **Azure AD-domän** i **domän**väljer du namnet på den domän som du har skapat och lagt till i din prenumeration i steg 1 och väljer sedan **Nästa**.
     
-11. Klicka på **Konfigurera** på sidan **Klart att konfigurera**.
+11. På sidan **redo att konfigurera** väljer du **Konfigurera**.
     
-12. På sidan **Installationen är slutförd** klickar du på **Verifiera**.
+12. Välj **Verifiera**på sidan **installationen är klar** .
     
-    Du bör se meddelanden som anger att konfigurationen av både intranät och Internet har verifierats.
+    Du bör se meddelanden som indikerar att både intranät-och Internet konfigurationen verifierades.
     
-13. På sidan **Installationen är slutförd** klickar du på **Avsluta**.
+13. På sidan **installationen är klar** väljer du **Avsluta**.
     
 Visa att den federerade autentiseringen fungerar:
   
 1. Öppna en ny privat instans av webbläsaren på din lokala dator och gå till [https://admin.microsoft.com](https://admin.microsoft.com).
     
-2. För inloggningsuppgifterna skriver du **user1@**\<the domain created in Phase 1>. 
+2. Ange **user1@** för inloggnings uppgifterna \<*the domain created in Phase 1*> .
     
-    Om din testdomän exempelvis är **testlab.contoso.com**skriver du ”user1@testlab.contoso.com”. Tryck på TABB-tangenten eller tillåt att Microsoft 365 omdirigerar dig automatiskt.
+    Om test domänen är **testlab.contoso.com**skriver du till exempel "user1@testlab.contoso.com". Tryck på **TABB** -tangenten eller låt Microsoft 365 automatiskt omdirigera dig.
     
-    Nu bör du se sidan **Din anslutning är inte privat**. Den visas eftersom du har installerat ett självsignerat certifikat på ADFS1 som din stationära dator inte kan verifiera. I en produktionsdistribution av federerad autentisering använder du ett certifikat från en betrodd certifikatutfärdare för att dina användare inte ska se den här sidan.
+    Nu bör du se sidan **Din anslutning är inte privat**. Du ser det här eftersom du har installerat ett självsignerat certifikat på ADFS1 att din station ära dator inte kan verifiera. I en produktionsdistribution av federerad autentisering använder du ett certifikat från en betrodd certifikatutfärdare för att dina användare inte ska se den här sidan.
     
-3. På sidan **Din anslutning inte är privat** klickar du på **Avancerat** och sedan på **Fortsätt till \<your federation service FQDN>**. 
+3. På sidan **anslutningen är inte privat** väljer du **Avancerat**och väljer sedan **gå vidare till \<*your federation service FQDN*> **. 
     
 4. Logga in med följande på sidan med namnet på din fiktiva organisation:
     

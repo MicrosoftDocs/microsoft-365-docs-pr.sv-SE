@@ -18,41 +18,40 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Sammanfattning: Konfigurera tillbakaskrivning av lösenord i testmiljön för Microsoft 365.'
-ms.openlocfilehash: b8c89ca7ef967c423b89db4559ef04f715a5f869
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: b999d50b0e98b11638199327bd7ffe7269b261ce
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686232"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487134"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Tillbakaskrivning av lösenord i testmiljön för Microsoft 365
 
 *Den här test laboratorie guiden kan endast användas för test miljöer med Microsoft 365 för företags nätverk.*
 
-Med tillbakaskrivning av lösenord kan användare uppdatera sina lösenord via Azure Active Directory (Azure AD), som sedan replikeras till din lokala Active Directory Domain Services (AD DS). Med funktionen för tillbakaskrivning av lösenord behöver användarna inte uppdatera sina lösenord via den lokala AD DS där de ursprungliga användarkontona lagras. Det här underlättar vid nätverksväxling och för fjärranvändare som inte har en fjärråtkomstanslutning till det lokala nätverket.
+Användare kan använda Lösenordssynkronisering för att uppdatera sina lösen ord via Azure Active Directory (Azure AD), som sedan replikeras till din lokala Active Directory Domain Services (AD DS). Med lösen ords tillbakaskrivning behöver användarna inte uppdatera sina lösen ord via den lokala AD DS där deras ursprungliga användar konton lagras. Det gör att roaming-eller fjärran vändare som inte har en fjärråtkomstanslutning kan ansluta till deras lokala nätverk.
 
-I den här artikeln beskrivs hur du kan konfigurera Microsoft 365-testmiljön för tillbakaskrivning av lösenord.
+I den här artikeln beskrivs hur du konfigurerar din Microsoft 365 test miljö för tillbakaskrivning av lösen ord.
 
-Det finns två faser för att konfigurera detta:
-
-1.    Skapa Microsoft 365-testmiljön för det simulerade företaget med synkronisering av lösenordshash.
-2.    Aktivera tillbakaskrivning av lösenord för TESTLAB AD DS-domänen.
-    
+När du konfigurerar test miljön för lösen ords ändring görs två faser:
+- [Fas 1: Konfigurera synkronisering av lösenordshash för Microsoft 365-testmiljön](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
+- [Fas 2: Aktivera tillbakaskrivning av lösenord för TESTLAB AD DS-domänen](#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain)
+  
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Klicka [här](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med testlabbguider för Microsoft 365 för företag.
-  
+> Om du vill visa en visuell karta till alla artiklar i gruppen Microsoft 365 för Enterprise-testlabbet går du till [Microsoft 365 för Enterprise Test Lab-guide](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fas 1: Konfigurera synkronisering av lösenordshash för Microsoft 365-testmiljön
 
-Följ först anvisningarna i [Synkronisering av lösenordshash](password-hash-sync-m365-ent-test-environment.md). Här är konfigurationsresultatet.
+Följ först anvisningarna i [Synkronisering av lösenordshash](password-hash-sync-m365-ent-test-environment.md). Den resulterande konfigurationen ser ut så här:
   
 ![Det simulerade företaget med testmiljö för synkronisering av lösenordshash](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
-Konfigurationen består av: 
+Konfigurationen består av:
   
 - En utvärderingsprenumeration eller betald prenumeration på Microsoft 365 E5.
-- Ett förenklat företagsintranät anslutet till Internet som består av de virtuella datorerna DC1, APP1 och CLIENT1 i ett undernät i ett virtuellt Azure-nätverk. 
+- En förenklad organisations intranät som är ansluten till Internet, bestående av de virtuella datorerna DC1, APP1 och KLIENT1 i ett undernät för ett Azure Virtual Network.
 - Azure AD Connect körs på APP1 för att synkronisera TESTLAB AD DS-domänen med Azure AD-klientorganisationen för din Microsoft 365-prenumeration.
 
 ## <a name="phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain"></a>Fas 2: Aktivera tillbakaskrivning av lösenord för TESTLAB AD DS-domänen
@@ -61,42 +60,42 @@ Börja med att konfigurera kontot för användare 1 med rollen global administra
 
 1. Logga in med ditt globala administratörskonto från [administrationscentret för Microsoft 365](https://portal.microsoft.com).
 
-2. Klicka på **Aktiva användare**.
+2. Välj **aktiva användare**.
  
-3. På sidan **Aktiva användare** klickar du på kontot **user1**.
+3. På sidan **aktiva användare** väljer du **Användare1** -kontot
 
-4. I fönstret **user1** klickar du på **Redigera** bredvid **Roller**.
+4. I fönstret **Användare1** väljer du **Redigera** bredvid **roller**.
 
-5. Gå till fönstret **Redigera användarroller** för user1 och klicka på **Global administrator**. Klicka på **Spara** och sedan på **Stäng**.
+5. I fönstret **Redigera användar roller** för Användare1 väljer du **Global administratör**, väljer **Spara**och sedan **Stäng**.
 
 Konfigurera därefter kontot User 1 med säkerhetsinställningarna som gör det möjligt att ändra lösenord för andra användares räkning i TESTLAB AD DS-domänen.
 
 1. Logga in på [Azure-portalen](https://portal.azure.com) med ditt globala administratörskonto och anslut sedan till APP1 med kontot TESTLAB\User1.
 
-2.  Klicka på **Start** på skrivbordet för APP1. Skriv **active**och klicka sedan på **Active Directory – användare och datorer**.
+2. I Skriv bords versionen av APP1 väljer du **Start**, anger **Active**och sedan **Active Directory-användare och datorer**.
 
-3. Klicka på **Visa** i menyraden. Om **Avancerade funktioner** inte har aktiverats, aktiverar du det genom att klicka på det.
+3. På Meny raden väljer du **Visa**. Om **avancerade funktioner** inte är aktiverade väljer du det för att aktivera det.
 
-4. Högerklicka på din domän i trädfönstret, klicka på **Egenskaper** och klicka sedan på fliken **Säkerhet**.
+4. Markera och håll ned (eller högerklicka) på din domän i träd fönstret, Välj **Egenskaper**och välj sedan fliken **säkerhet** .
 
-5. Klicka på **Avancerat**.
+5. Välj **Avancerat**.
 
-6. På fliken **Behörigheter** klickar du på **Lägg till**.
+6. Välj **Lägg till**på fliken **behörigheter** .
 
-7. Klicka på **Välj ett huvudkonto**, skriv **User1** och klicka sedan på **OK**.
+7. Välj **Markera ett huvud konto**, ange **user1**och välj sedan **OK**.
 
 8. I **Gäller för** väljer du **Underordnade användarobjekt**.
 
 9. Under **Behörigheter** väljer du följande:
 
-    - Ändra lösenord
-    - Återställa lösenord
+    - **Ändra lösenord**
+    - **Återställa lösenord**
 
 10. Under **Egenskaper** väljer du följande:
-    - Skriv lockoutTime
-    - Skriv pwdLastSet
+    - **Skriv lockoutTime**
+    - **Skriv pwdLastSet**
 
-11. Klicka på **OK** tre gånger för att spara ändringarna.
+11. Spara ändringarna genom att välja **OK** tre gånger.
 
 12. Stäng **Active Directory – användare och datorer**.
 
@@ -106,31 +105,31 @@ Konfigurera därefter Azure AD Connect på APP1 för tillbakaskrivning av lösen
 
 2. Dubbelklicka på **Azure AD Connect** på APP1-skrivbordet.
 
-3. På **välkomstsidan** klickar du på **Konfigurera**.
+3. På **Välkomst sidan**väljer du **Konfigurera**.
 
-4. På sidan **Ytterligare uppgifter** klickar du på **Anpassa synkroniseringsalternativ** och sedan på **Nästa**.
+4. På sidan **Ytterligare aktiviteter** väljer du **Anpassa synkroniseringsalternativ**och sedan **Nästa**.
 
-5. På sidan **Anslut till Azure AD** skriver du dina globala administratörsautentiseringsuppgifter. Klicka sedan på **Nästa**.
+5. På sidan **Anslut till Azure AD** anger du dina globala administratörs konto uppgifter och väljer sedan **Nästa**.
 
-6. På sidorna **Anslut kataloger** och **Domän-/OU-filtrering** klickar du på **Nästa**.
+6. På sidorna **Anslut kataloger** och **domän/ou-filtrering** väljer du **Nästa**.
 
-7. På sidan **Valfria funktioner** väljer du **Tillbakaskrivning av lösenord** och klickar på **Nästa**. 
+7. Välj **tillbakaskrivning för lösen ordet**på sidan **valfria funktioner** och välj sedan **Nästa**.
 
-8. På sidan **Redo att konfigurera** klickar du på **Konfigurera** och väntar tills processen har slutförts.
+8. På sidan **redo att konfigurera** väljer du **Konfigurera** och vänta för att slutföra processen.
 
-9. När konfigurationen är klar klickar du på **Avsluta**.
+9. När konfigurationen är klar väljer du **Avsluta**.
 
-Du är nu redo att testa tillbakaskrivning av lösenord för användare på datorer som inte är anslutna till det virtuella nätverket i det simulerade intranätet.
+Du är nu redo att testa tillbakaskrivning för lösen ord för användare på datorer som inte är anslutna till det virtuella nätverket i det simulerade intranätet.
 
-Här är konfigurationsresultatet:
+Den resulterande konfigurationen ser ut så här:
 
 ![Det simulerade företaget med en testmiljö med direktautentisering](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
 
 Konfigurationen består av:
 
-- En utvärderings version av Microsoft 365 E5 eller betalda abonnemang med DNS-TESTLAB.\<your domain name> registrerat.
-- Ett förenklat företagsintranät anslutet till Internet som består av de virtuella datorerna DC1, APP1 och CLIENT1 i ett undernät i ett virtuellt Azure-nätverk. 
-- Azure AD Connect körs på APP1 för att synkronisera listan med konton och grupper från Azure AD-klientorganisationen för din Microsoft 365-prenumeration till TESTLAB AD DS-domänen. 
+- En utvärderings version av Microsoft 365 E5 eller betalda abonnemang med DNS-TESTLAB.\<*your domain name*> registrerat.
+- En förenklad organisations intranät som är ansluten till Internet, bestående av de virtuella datorerna DC1, APP1 och KLIENT1 i ett undernät för ett Azure Virtual Network.
+- Azure AD Connect körs på APP1 för att synkronisera listan med konton och grupper från Azure AD-klientorganisationen för din Microsoft 365-prenumeration till TESTLAB AD DS-domänen.
 - Tillbakaskrivning av lösenord är aktiverat så att användare kan ändra sina lösenord i Azure AD utan att behöva ansluta till det förenklade intranätet.
 
 ## <a name="next-step"></a>Nästa steg

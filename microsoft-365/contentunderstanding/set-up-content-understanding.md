@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: Konfigurera innehållstolkning i Project Cortex
-ms.openlocfilehash: 43ce7809237d32fb9d2da73e9e00bed9b9a8193e
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 6078b41f8911301d343925c5bf895e881abddffe
+ms.sourcegitcommit: 88c2461b14cd16f74979f4bcd0a9ad18e4422cb3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464068"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48469727"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Konfigurera SharePoint Syntex
 
@@ -41,13 +41,14 @@ Som administratör kan du också göra ändringar i dina valda inställningar n�
 
 ## <a name="to-set-up-sharepoint-syntex"></a>Att konfigurera SharePoint Syntex
 
-1. I Administrationscenter för Microsoft 365 väljer du **Konfiguration** och visar sedan avsnittet **Organisationskunskap**.
+1. I Administrationscenter för Microsoft 365 välj **Konfiguration** och se sedan **Filer och innehåll** sektionen.
 
 2. I **Filer och innehåll** sektionen välj **Automatisera innehållstolkning**.<br/>
 
 3. På sidan **Automatisera innehållstolkning** klickar du på **Komma igång** för att gå igenom konfigurationsprocessen.<br/>
 
-    ![Starta konfiguration](../media/content-understanding/admin-content-understanding-get-started.png)</br>
+    > [!div class="mx-imgBorder"]
+    > ![Starta konfiguration](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
 4. På sidan **Konfigurera formulärbearbetning** kan du välja om du vill tillåta att användare kan skapa modeller för formulärbearbetning i vissa dokumentbibliotek i SharePoint. Ett menyalternativ kommer att vara tillgängligt i menyfliksområdet för dokumentbiblioteket för att **Skapa en modell för formulärbearbetning** i dokumentbibliotek i SharePoint där den är aktiverad.
  
@@ -56,18 +57,22 @@ Som administratör kan du också göra ändringar i dina valda inställningar n�
       - **Bara bibliotek på utvalda webbplatser** och välj sedan de webbplatser där du vill göra det tillgängligt eller ladda upp en lista med upp till 50 webbplatser.</br>
       - **Inga SharePoint-bibliotek** om du inte vill att det ska vara tillgängligt för några webbplatser (du kan ändra det när konfigurationen är slutförd).
 
-   ![Konfigurera formulärbearbetning](../media/content-understanding/admin-configforms.png)
+   > [!div class="mx-imgBorder"]
+   > ![Konfigurera formulärbearbetning](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
    > Att ta bort en webbplats efter att den har inkluderats påverkar inte befintliga modeller som används i biblioteken på webbplatsen eller möjligheten att använda modeller för dokumenttolkning på ett bibliotek. 
     
-5. På sidan **Skapa innehållscenter** kan du skapa en SharePoint-webbplats för innehållscenter där dina användare kan skapa och hantera modeller för dokumenttolkning. </br>
-    a. För **Webbplatsnamn**skriver du namnet som du vill använda på webbplatsen för innehållscenter.</br>
-    b. **Webbplatsens adress** kommer att visa URL:en för din webbplats baserat på vad du valde som webbplatsnamn. Om du vill ändra det klickar du på **Redigera**.</br>
+5. På sidan **Skapa innehållscenter** kan du skapa en SharePoint-webbplats för innehållscenter där dina användare kan skapa och hantera modeller för dokumenttolkning.
 
-      ![Skapa innehållscenter](../media/content-understanding/admin-cu-create-cc.png)</br>
+    1. För **Webbplatsnamn**skriver du namnet som du vill använda på webbplatsen för innehållscenter.
+    
+    1. **Webbplatsens adress** kommer att visa URL:en för din webbplats baserat på vad du valde som webbplatsnamn. Om du vill ändra det klickar du på **Redigera**.
 
-    Välj **Nästa**.
+       > [!div class="mx-imgBorder"]
+       > ![Skapa innehållscenter](../media/content-understanding/admin-cu-create-cc.png)</br>
+
+       Välj **Nästa**.
 
 6. På sidan **Granska och slutför** kan du titta på vald inställning och välja att göra ändringar. Om du är nöjd med dina val väljer du **Aktivera**.
 
@@ -89,7 +94,8 @@ För att tilldela licenser:
 
 4. Välj **Intelligenta innehållstjänster**. Under **Appar**ser du till att **Gemensam datatjänst för Intelligenta innehållstjänster** och **Intelligenta innehållstjänster** båda är markerade.
 
-    ![SharePoint Syntex-licenser i Administrationscenter för Microsoft 365](../media/content-understanding/sharepoint-syntex-licenses.png)
+    > [!div class="mx-imgBorder"]
+    > ![SharePoint Syntex licenser i Administrationscenter för Microsoft 365](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. Klicka på **Spara ändringar**.
 

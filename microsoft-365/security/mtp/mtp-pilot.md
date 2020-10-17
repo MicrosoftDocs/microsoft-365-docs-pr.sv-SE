@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 4ec46891248c09f580b19d888573544ad2b4930f
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: f49f1afe5461a4f2eff0a3049f1d14d1892f70ce
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446873"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477032"
 ---
 # <a name="run-your-pilot-microsoft-threat-protection-project"></a>Kör ditt pilot Microsoft Threat Protection Project 
 
@@ -41,6 +41,16 @@ För att effektivt fastställa fördelarna och antagandet av Microsoft Threat Pr
 ## <a name="how-to-use-this-pilot-playbook"></a>Så här använder du pilot Playbook
 
 I den här guiden får du en översikt över Microsoft Threat Protection och stegvisa instruktioner om hur du konfigurerar pilot projektet. 
+
+Skydd mot Microsoft Threat är ett enhetligt för hands versions paket med för-och efter intrång som enhetligt koordinerar skydd, identifiering, förebyggande, undersökning och svar för slut punkter, identiteter, e-postmeddelanden och program för att erbjuda ett integrerat skydd mot sofistikerade attacker. Det gör det genom att kombinera och dirigera följande funktioner till en enda säkerhets lösning:
+  - Microsoft Defender för slut punkt, det nya namnet på Microsoft Defender Avancerat skydd (slut punkter)
+  - Microsoft Defender för Office 365, det nya namnet på Office 365 ATP (e-post) 
+  - Microsoft Defender för identitet, det nya namnet på Azure ATP (identitet) 
+  - Säkerhet för Microsoft Cloud App (appar)
+
+![Of_Microsoft hot skydds lösning för användare, Azure Avancerat skydd för slut punkter Microsoft Defender Avancerat skydd, för Cloud-appar, Microsoft Cloud App-säkerhet och för data, Office 365 Avancerat skydd  ](../../media/mtp/m365pillars.png)
+
+Med den integrerade Microsoft Threat Protection-lösningen kan säkerhets experter samla ihop hot signalerna som Microsoft Defender Avancerat skyddar, Office 365 ATP, Azure ATP och Microsoft Cloud App Security och fastställa det fulla omfattningen och effekten av hotet, hur det kommer att påverkas och hur det används för närvarande. Microsoft Threat Protection vidtar automatisk åtgärd för att förhindra eller stoppa angreppet och själv åtgärdade post lådor, slut punkter och användar identiteter. Mer information finns i [Microsoft Threat Protection-översikten](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) .
 
 ![Faser i en Microsoft Threat Protection pilot](../../media/pilotphases.png)
 

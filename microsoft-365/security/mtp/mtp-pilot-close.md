@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 1a7b87432ce1eb16c29f462fb4865bfa5c5e2201
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: e56ba8933947c37db3e558ef36dd6d305915040f
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418103"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487630"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>Stänga och sammanfatta ditt Microsoft Threat Protection pilot  
 
@@ -87,7 +87,7 @@ De slutliga resultaten ska vara:
 - En detaljerad rapport om resultatet av piloten
 - Ett beslut om hur du flyttar framåt
 
-Presentera rapporterna från dina slutliga utdata både för interna intressenter (som du har identifierat under [förberedelse](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) fasen) och Microsoft-kontakter. Sådant arbete garanterar att all feedback kan användas för att förbättra produkter och dokumentation.
+Presentera rapporterna från dina slutliga utdata till interna intressenter (som du har identifierat under [förberedelse](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) fasen) och Microsoft-kontakter. Sådant arbete garanterar att all feedback kan användas för att förbättra produkter och dokumentation.
 
 Vi hoppas du gillade den här simuleringen. Börja implementera det du har lärt dig på en större skala för att få ut mesta möjliga av den integrerade säkerhets lösningen.
 
