@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du hittar och använder e-postsäkerhets rapporter för organisationen. Säkerhets rapporter för e-post finns i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7e594f758e0fb08b0b8718248466ecbc46903b82
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 7d83e86c77eb148c4c55be3f363966ac3c756e87
+ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327015"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48594891"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visa rapporter om e-postsäkerhet i Säkerhets- och efterlevnadscenter
 
@@ -67,7 +67,7 @@ Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
 
 ## <a name="encryption-report"></a>Krypterings rapport
 
-**Krypterings rapporten** är tillgänglig i EOP (abonnemang med post lådor i Exchange Online eller fristående EOP utan Exchange Online-postlådor). Din organisations säkerhets team kan använda informationen i den här rapporten för att identifiera mönster och proaktivt tillämpa eller justera principer för känsliga e-postmeddelanden. Till exempel:
+**Krypterings rapporten** är tillgänglig i EOP (abonnemang med post lådor i Exchange Online eller fristående EOP utan Exchange Online-postlådor). Din organisations säkerhets team kan använda informationen i den här rapporten för att identifiera mönster och proaktivt tillämpa eller justera principer för känsliga e-postmeddelanden. Ett exempel:
 
 - Om du ser ett stort antal e-postmeddelanden som har krypterats av användarna kanske du vill lägga till en krypterings princip för att automatisera kryptering för vissa användnings fall. Mer information finns i [definiera regler för e-postflöde för att kryptera e-postmeddelanden i Microsoft 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).
 
@@ -276,8 +276,8 @@ I rapporten får du räknat antalet e-postmeddelanden med skadligt innehåll, ti
 
 Om du vill visa rapporten öppnar du [säkerhets & efterlevnad](https://protection.office.com), går till **Reports** \> **instrument paneler** för rapporter och väljer **skydds status**. Om du vill gå direkt till rapporten öppnar du en av följande webb adresser:
 
-- Office 365 ATP: <https://protection.office.com/reportv2?id=ATPV2AggregateReport> .
-- EOP <https://protection.office.com/reportv2?id=ATPAggregateLightReport>
+- Office 365 ATP: <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
+- EOP <https://protection.office.com/reportv2?id=TPSAggregateReport>
 
 ![Widgeten skydds status i rapport instrument panelen](../../media/threat-protection-status-report-widget.png)
 
@@ -301,6 +301,20 @@ Följande vyer är tillgängliga:
   - **Fil sprängning**
 
   ![Vyn skadlig program vara i rapporten skydds status](../../media/threat-protection-status-report-content-malware-view.png)
+
+- **Visa data via: åsidosättning av meddelande**: följande information om att åsidosätta orsaken visas:
+
+  - **Lokal hoppning**
+  - **IP-Tillåt**
+  - **Regel för e-postflöde**
+  - **Tillåt avsändare**
+  - **Tillåt domän**
+  - **ZAP är inte aktiverat**
+  - **Mappen skräp post är inte aktive rad**
+  - **Användarens säkra avsändare**
+  - **Användarens säkra domän**
+
+  ![Vyn Åsidosätt meddelande i rapporten skydds status](../../media/threat-protection-status-report-message-override-view.png)
 
 - **Bryta ned efter: identifierings teknologi** och **Visa data via: e- \> Phish**: följande information visas:
 
@@ -361,16 +375,24 @@ Följande vyer är tillgängliga:
 
 <sup>2</sup> noll-timmars autorensning (Zap) är inte tillgängligt i fristående EOP (den fungerar bara i Exchange Online-postlådor).
 
-Om du klickar på **filter**kan du ändra rapporten med följande filter:
+Om du klickar på **filter**, beror de tillgängliga filtren på diagrammet du tittade på:
+
+För **innehålls \> skadliga program**kan du ändra rapporten genom att **Starta datum** och **slutdatum**samt **identifiering** svärdet.
+
+För **åsidosättning av meddelanden**kan du ändra rapporten med följande filter:
+
+- **Start datum** och **slutdatum**
+- **Åsidosätt orsak**
+- **Tagg**: Filtrera efter tagg för att returnera användare eller grupper som har en viss tagg. Mer information om användar flaggor finns i [User Tags](user-tags.md).
+- **Domain**
+
+För alla andra vyer kan du ändra rapporten med följande filter:
 
 - **Start datum** och **slutdatum**
 - **Proxyidentifiering**
 - **Skyddas av**: **ATP** eller **EOP**
 - **Tagg**: Filtrera efter tagg för att returnera användare eller grupper som har en viss tagg. Mer information om användar flaggor finns i [User Tags](user-tags.md).
 - **Domain**
-
-> [!NOTE]
-> **Skyddas av**, **tagg** och **Domain** är endast Office 365 ATP. De här filter bara egenskaperna är inte tillgängliga i **Visa data genom: \> skadlig program vara**.
 
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>Vyn detaljerad tabell för status rapport för hotet skydd
 
@@ -383,10 +405,26 @@ Om du klickar på **Visa informations tabell**beror informationen som visas på 
   - **Omkopplad av**
   - **Namn på skadlig kod**
 
+Om du klickar på **filter** i den här vyn kan du ändra rapporten genom **start datum** och **slutdatum**samt **identifiering** svärdet.
+
+- **Visa data via: åsidosättning av meddelande**:
+
+  - **Datum**
+  - **Ämne**
+  - **Avsändare**
+  - **Mottagarna**
+  - **Identifieras av**
+  - **Åsidosätt orsak**
+  - **Kompromiss källa**
+  - **Taggen**
+
 Om du klickar på **filter** i den här vyn kan du ändra rapporten med följande filter:
 
 - **Start datum** och **slutdatum**
-- **Proxyidentifiering**
+- **Åsidosätt orsak**
+- **Tagg**: Filtrera efter tagg för att returnera användare eller grupper som har en viss tagg. Mer information om användar flaggor finns i [User Tags](user-tags.md).
+- **Domain**
+- **Mottagare** (Observera att den här filter bara egenskapen är endast tillgänglig i vyn detaljerad tabell)
 
 **Visa data efter: översikt**: knappen för **tabell information** är tillgänglig.
 
@@ -439,7 +477,7 @@ I rapporten **rapporterad meddelanden** visas information om e-postmeddelanden s
 
 Information är tillgänglig för varje meddelande, inklusive leverans orsaken, sådant undantag för skräp post eller regel för e-postflöde som har kon figurer ATS för din organisation. Om du vill visa information väljer du ett objekt i listan med användar rapporter och visar sedan informationen på flikarna **Sammanfattning** och **information** .
 
-![I rapporten rapporterade meddelanden visas meddelanden som användare märkt som skräp post, inte skräp post eller nätfiske-försök.](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
+![I rapporten User-Reported meddelanden visas de meddelanden som användare märkt som skräp post, inte skräp post eller nätfiske-försök.](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
 
 Om du vill visa den här rapporten gör du något av följande i avsnittet [säkerhet & regelefterlevnad](https://protection.office.com):
 

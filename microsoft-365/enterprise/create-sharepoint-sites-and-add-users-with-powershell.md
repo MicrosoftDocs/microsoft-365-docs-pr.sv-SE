@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Sammanfattning: skapa nya SharePoint Online-webbplatser med hjälp av PowerShell och Lägg sedan till användare och grupper på dessa webbplatser.'
-ms.openlocfilehash: 4c4edbd68343f0eaf3a25a8c60a2af1e83b058b6
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 28a51cc39fe838f6c7f9c50e9d750d28e5d830c4
+ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694473"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48594924"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>Skapa SharePoint Online-webbplatser och lägga till användare med PowerShell
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 När du använder PowerShell för Microsoft 365 för att skapa SharePoint Online-webbplatser och lägga till användare kan du snabbt och enkelt utföra uppgifter snabbare än i administrations centret för Microsoft 365. Du kan också utföra uppgifter som inte kan utföras i administrations centret för Microsoft 365. 
 
@@ -43,6 +43,9 @@ Skapa flera webbplatser med hjälp av PowerShell och en. csv-fil som du skapar m
 PowerShell-cmdleten importerar. csv-filen och rör den till en loop inuti klammerparenteserna som läser den första raden i filen som kolumn rubriker. PowerShell-cmdleten upprepas sedan genom de återstående posterna, skapar en ny webbplats samling för varje post och tilldelar webbplats Samlingens egenskaper enligt kolumn rubrikerna.
 
 ### <a name="create-a-csv-file"></a>Skapa en. csv-fil
+
+> [!NOTE]
+> Parametern resurs kvot fungerar bara på klassiska webbplatser. Om du använder den här parametern på en modern webbplats kan du få ett varnings meddelande om att den har blivit föråldrad. 
 
 1. Öppna Anteckningar och klistra in följande textblock i det:<br/>
 
@@ -163,5 +166,4 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 [Hantera Microsoft 365 med PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Komma igång med PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-
+[Börja använda PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
