@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 10/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Ger en introduktion till komponenterna, planer och distributionssökvägar för Microsoft 365 för företag.
-ms.openlocfilehash: 53cc91a2b5e756fcf4ec8fcc5371795bcfb8342c
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: d34ddd9b577f4baff4ebb77f84f48bf2b779c93c
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464354"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487158"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Översikt över Microsoft 365 för företag
 
@@ -104,21 +104,21 @@ Du kan också [ladda ner denna affisch](https://github.com/MicrosoftDocs/microso
 
 ## <a name="plan-for-and-deploy"></a>Planera och distribuera
 
-Det finns tre sätt att distribuera produkter, funktioner och komponenter i Microsoft 365 för företag:
+Det finns tre sätt att planera och distribuera produkter, funktioner och komponenter i Microsoft 365 för företag:
 
-- I samarbete med FastTrack:
+- I samarbete med FastTrack
 
    Med FastTrack hjälper Microsoft-tekniker dig att flytta till molnet i din egen takt. Se [FastTrack för Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
-- Med hjälp av Microsoft Consulting Services eller en [Microsoft-partner](https://partner.microsoft.com/):
+- Med hjälp av Microsoft Consulting Services eller en [Microsoft-partner](https://partner.microsoft.com/)
 
    Konsulter kan analysera din nuvarande infrastruktur och hjälpa dig att utveckla en plan för att införliva all programvara och alla tjänster från Microsoft 365 för företag..
 
-- Gör det själv:
+- Gör det själv
 
-   Börja med [nätverksöversikt](networking-roadmap-microsoft-365.md)för att bygga ut infrastruktur- och produktivitetsarbetsbelastningar.
+   Kom igång med [nätverksöversikt](networking-roadmap-microsoft-365.md) för att bygga ut eller verifiera din befintliga infrastruktur och produktivitetsbelastningar.
 
-En fiktiv men representativ multinationell organisation, har distribuerat Microsoft 365 för företag., se [Contoso Corporation](contoso-overview.md).
+För ett exempel på hur en fiktiv men representativ multinationella organisation har distribuerat Microsoft 365 för företag, finns i [fallstudien Contoso Corporation](contoso-overview.md).
 
 ## <a name="additional-microsoft-365-products"></a>Ytterligare Microsoft 365-produkter
 
