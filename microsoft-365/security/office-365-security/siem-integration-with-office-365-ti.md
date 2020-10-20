@@ -18,19 +18,19 @@ ms.collection:
 - M365-security-compliance
 description: Integrera din organisations SIEM-server med Office 365 Avancerat skydd och relaterade hot händelser i Office 365 Activity Management API.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 544093960570fe0e68ac47dc7bf9965fba2d30a1
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c4c92fc45546d3d8022a3925baa9c10f9bd0090b
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327171"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600559"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>SIEM integrering med avancerat skydd
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Om din organisation använder en säkerhets tillbud och en SIEM Server (Event Management) kan du integrera Office 365 Avancerat skydd (Office 365 ATP) med SIEM Server. Du kan ställa in denna integrering genom att använda [API för aktivitets hantering i Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
+Om din organisation använder en säkerhets information och en server för Event Management (SIEM) kan du integrera Office 365 Avancerat skydd (Office 365 ATP) med din SIEM-Server. Du kan ställa in denna integrering genom att använda [API för aktivitets hantering i Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
 
 SIEM integrering gör att du kan visa information, till exempel skadlig program vara eller Phish som identifieras av Office 365 ATP, i SIEM Server-rapporter. 
 
@@ -52,7 +52,7 @@ SIEM-servern eller liknande system avsöker **granskningen. allmänna** arbets b
 
 I följande tabell sammanfattas de värden i **AuditLogRecordType** som är relevanta för Office 365 ATP-händelser:
 
-|Value|Medlems namn|Beskrivning|
+|Värde|Medlems namn|Beskrivning|
 |---|---|---|
 |28|ThreatIntelligence|Phishing-och malware-händelser från Exchange Online Protection och Office 365 ATP.|
 |41|ThreatIntelligenceUrl|Säkra länkar tids-och Blocks händelser från Office 365 ATP.|
@@ -68,5 +68,4 @@ I följande tabell sammanfattas de värden i **AuditLogRecordType** som är rele
 [Office 365 undersökning av hot och svar](office-365-ti.md)
 
 [Automatisk undersökning och svar (AIR) i Office 365](automated-investigation-response-office.md)
-
 

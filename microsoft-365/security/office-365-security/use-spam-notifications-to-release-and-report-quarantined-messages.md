@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig om skräp post meddelanden för meddelanden i karantän i Exchange Online Protection (EOP).
-ms.openlocfilehash: 9d1da6c4db245ecb065a5a076f2bc6a9c275c494
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0440056e8e31d24e659f9d0ff6662f86f31a6189
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195825"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600303"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Använda skräp post meddelanden för att frigöra och rapportera översatta meddelanden
 
@@ -58,3 +58,6 @@ Ett skräp post meddelande för slutanvändare innehåller följande information
 - **Granska**: Klicka på den här länken om du vill gå till karantän i säkerhets & Compliance Center, där du kan (beroende på varför meddelandet satts i karantän), släpp, ta bort eller rapportera dina meddelanden i karantän. Mer information finns i [hitta och släppa meddelanden i karantän som en användare i EOP](find-and-release-quarantined-messages-as-a-user.md).
 
 ![Exempel på påminnelse om slutanvändare](../../media/end-user-spam-notification.png)
+
+> [!NOTE]
+> En blockerad avsändare kan fortfarande skicka e-post. Alla meddelanden från denna avsändare som gör det till post lådan flyttas omedelbart till mappen skräp post. Framtida meddelanden från den här avsändaren skickas till mappen skräp post eller till slutanvändarnas karantän. Om du vill ta bort dessa meddelanden när de anländer i stället för quarantining kan du använda [e-postflödes regler](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (kallas även transport regler) för att ta bort meddelanden när de anländer.

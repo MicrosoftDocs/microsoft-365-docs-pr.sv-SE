@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: c0a3849d330b508630eb60c7ee24cd8b498a32b8
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+ms.openlocfilehash: 78ba5183667f4e5c6f713182969338f3ef2e7262
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417229"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600535"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>Konfigurera extern vidarebefordran av e-post i Office 365
 
@@ -28,7 +28,7 @@ ms.locfileid: "48417229"
 
 Extern vidarebefordran styrs av *principen för utgående skräp post* och omfattning för användare baserat på den konfigurerade inställningen. För närvarande finns det stöd för tre inställningar:
 
-- **Automatisk** – det här är systemstyrt: utgående skräp post filtrering för automatisk överföring av externa e-postmeddelanden. Detta är standardinställningen.
+- **Automatisk** – automatisk extern vidarebefordran blockeras. Intern automatisk vidarebefordran av meddelanden fortsätter att fungera. Detta är standardinställningen.
 
 - **På** – automatisk extern vidarebefordran är tillåten och inte begränsad.
 

@@ -1,5 +1,5 @@
 ---
-title: Principer för användarrapporteringar
+title: Policy för användar inlägg
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Administratörer kan läsa hur du konfigurerar en post låda för att samla in skräp post och nätfiske som rapporteras av användare.
-ms.openlocfilehash: c8dec927442cc83752f7c3497f295008fae85377
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: c4792958d1e59cefd8b56c05b5e159f50be80c8b
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446933"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600487"
 ---
-# <a name="user-submissions-policies"></a>Principer för användarrapporteringar
+# <a name="user-submissions-policy"></a>Policy för användar inlägg
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -76,7 +76,7 @@ När du har verifierat att post lådan uppfyller alla tillämpliga förutsättni
 
 2. På sidan **användar inlägg** som visas väljer du något av följande alternativ:
 
-   a. **Aktivera funktionen rapport meddelande för Outlook (rekommenderas)**: Välj det här alternativet om du använder tillägget rapportera meddelande eller inbyggd rapportering i Outlook på webben och konfigurera sedan följande inställningar:
+   1. **Aktivera funktionen rapport meddelande för Outlook (rekommenderas)**: Välj det här alternativet om du använder tillägget rapportera meddelande eller inbyggd rapportering i Outlook på webben och konfigurera sedan följande inställningar:
 
       - **Anpassa slutanvändarens bekräftelse meddelande**: Klicka på den här länken. Konfigurera följande inställningar i den utfällda **bekräftelse meddelandet** som visas:
 

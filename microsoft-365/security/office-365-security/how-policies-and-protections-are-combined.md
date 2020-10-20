@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om program ordningen för skydd i Exchange Online Protection (EOP) och hur prioritet svärdet i skydds principer bestämmer vilken princip som tillämpas.
-ms.openlocfilehash: e2da22bfbe0e7df70cf8d8b0d8cfd09eaf6e2ee3
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6b17a524fb9dfbf5e33604c2ec26a678befc8834
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196053"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600291"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Prioritetsordning för e-postskydd
 
@@ -44,10 +44,10 @@ Det finns två huvud faktorer som avgör vilken princip som tillämpas på ett m
   |två|Fiske|KAT: PHSH|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
   |amp;3D|Skräppost med hög konfidens|KAT: HSPM|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
   |9.4|Förfalskning|KAT: FALSKA IDENTITETER|[Konfigurera förfalsknings information i EOP](learn-about-spoof-intelligence.md)|
-  |T5|Skräppost|KAT: SPM|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
-  |18.6|Massutskick|KAT: BULK|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
-  |borttagning<sup>\*</sup>|Domän personifiering (skyddade användare)|DIMP|[Konfigurera principer för ATP-skydd mot nätfiske](configure-atp-anti-phishing-policies.md)|
-  |8.2<sup>\*</sup>|Användarens personifiering (skyddade domäner)|UIMP|[Konfigurera principer för ATP-skydd mot nätfiske](configure-atp-anti-phishing-policies.md)|
+  |T5<sup>\*</sup>|Användarens personifiering (skyddade domäner)|UIMP|[Konfigurera principer för ATP-skydd mot nätfiske](configure-atp-anti-phishing-policies.md)|
+  |18.6<sup>\*</sup>|Domän personifiering (skyddade användare)|DIMP|[Konfigurera principer för ATP-skydd mot nätfiske](configure-atp-anti-phishing-policies.md)|
+  |borttagning|Skräppost|KAT: SPM|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
+  |8.2|Massutskick|KAT: BULK|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
   |
 
   <sup>\*</sup> Dessa funktioner är endast tillgängliga i principer för Stöldskydd mot ATP.

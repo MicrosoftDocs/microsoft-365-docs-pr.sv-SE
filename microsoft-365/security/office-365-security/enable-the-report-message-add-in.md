@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Lär dig hur du aktiverar rapport tillägget för Outlook och Outlook på webben, för enskilda användare eller hela organisationen.
-ms.openlocfilehash: 601e3850bf046f3a0c807976fd173a6e0ec7ce2a
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: b061d9db44b08a65b59481035c055a1b75eb6e3c
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350629"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600375"
 ---
 # <a name="enable-the-report-message-add-in"></a>Aktivera tillägget för att rapportera meddelande
 
@@ -41,7 +41,7 @@ Administratörer kan aktivera tillägget rapportera till organisationen, och ens
 
 Om du är en enskild användare kan du [Aktivera tilläggs tillägget för rapportering](#get-the-report-message-add-in-for-yourself).
 
-Om du är global administratör eller Exchange Online-administratör och Exchange är konfigurerat för att använda OAuth-autentisering kan du [aktivera tillägget rapportera till din organisation](#get-and-enable-the-report-message-add-in-for-your-organization). Tillägget för rapport meddelanden är nu tillgängligt via [centraliserad distribution](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
+Om du är global administratör eller Exchange Online-administratör och Exchange är konfigurerat för att använda OAuth-autentisering kan du [aktivera tillägget rapportera till din organisation](#get-and-enable-the-report-message-add-in-for-your-organization). Rapport meddelande Add-In är nu tillgängligt via [centraliserad distribution](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
@@ -91,7 +91,7 @@ Information om hur du använder tillägget finns i [använda tillägget rapporte
 > [!NOTE]
 > Det kan ta upp till 12 timmar innan tillägget visas i din organisation.
 
-1. I administrations centret för Microsoft 365 går du till sidan **tjänster & tillägg** på <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> och klickar sedan på **distribuera tillägg**.
+1. I administrations centret för Microsoft 365 går du till sidan **Inställningar, integrerade appar & tillägg** på <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> och klickar sedan på **distribuera tillägg**.
 
    ![Sidan tjänster och tillägg i administrations centret för Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
@@ -151,7 +151,7 @@ När du meddelar användare om tillägget för rapport meddelanden infogar du en
 
 1. Gå till sidan **tjänster & tillägg** i administrations centret för Microsoft 365 <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> .
 
-   ![Sidan tjänster och tillägg i det nya administrations centret för Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Tjänster och Add-Ins sida i det nya administrations centret för Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 2. Hitta och välj tillägget **rapportera meddelanden** .
 

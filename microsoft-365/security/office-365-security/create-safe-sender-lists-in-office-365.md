@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa om tillgängliga och önskade alternativ för att tillåta inkommande meddelanden i Exchange Online Protection (EOP).
-ms.openlocfilehash: b1eda98e081338a981be1d1f5991578b49c574fd
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4009dcd506921b473e938828e5bdc10411c06ce2
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203173"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600327"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Skapa listor med säkra avsändare i EOP
 
@@ -71,7 +71,7 @@ I följande exempel förutsätts att du behöver e-post från contoso.com för a
 
    > [!IMPORTANT]
    >
-   > - Konfigurera aldrig Konfigurera regler för e-postflöden med *endast* avsändarens domän som villkor för att hoppa över filtrering av skräp post. Om du gör *det ökar* sannolikheten för att angripare kan falska den sändande domänen (eller personifiera den fullständiga e-postadressen), hoppa över alla skräp post filter och hoppa över avsändare av verifikations kontroll så att meddelandet kommer till mottagarens inkorg.
+   > - Konfigurera aldrig regler för e-postflöden med *endast* avsändarens domän som villkor för att hoppa över filtrering av skräp post. Om du gör *det ökar* sannolikheten för att angripare kan falska den sändande domänen (eller personifiera den fullständiga e-postadressen), hoppa över alla skräp post filter och hoppa över avsändare av verifikations kontroll så att meddelandet kommer till mottagarens inkorg.
    >
    > - Använd inte domäner som du äger (kallas även godkända domäner) eller vanliga domäner (till exempel microsoft.com) som villkor i regler för e-postflöde. Det betraktas som en hög risk eftersom det skapar möjligheter för angripare att skicka e-post som annars skulle filtreras.
    >
@@ -97,7 +97,7 @@ I följande exempel förutsätts att du behöver e-post från contoso.com för a
 
 ## <a name="use-outlook-safe-senders"></a>Använda betrodda avsändare i Outlook
 
-I stället för en organisations inställning kan användare eller administratörer lägga till avsändarens e-postadresser i listan Betrodda avsändare i post lådan. Anvisningar finns i [Konfigurera inställningar för skräp post i Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Detta är inte önskvärt i de flesta fall eftersom avsändare kringgår delar av filtrerings stacken. Trots att du litar på avsändaren är avsändarenas burkarna fortfarande komprometterade och kan skicka skadligt innehåll. Det är bäst att låta våra filter göra vad som behövs för att kontrol lera alla meddelanden och sedan [rapportera falskt positiv/negativ till Microsoft](report-junk-email-messages-to-microsoft.md) om våra filter har fel. Om du kringgår filtrerings stacken påverkas också inte med [ZAP](zero-hour-auto-purge.md).
+I stället för en organisations inställning kan användare eller administratörer lägga till avsändarens e-postadresser i listan Betrodda avsändare i post lådan. Anvisningar finns i [Konfigurera inställningar för skräp post i Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Detta är inte önskvärt i de flesta fall eftersom avsändare kringgår delar av filtrerings stacken. Trots att du litar på avsändaren kan avsändaren ändå vara angripen och skicka skadligt innehåll. Det är bäst att låta våra filter göra vad som behövs för att kontrol lera alla meddelanden och sedan [rapportera falskt positiv/negativ till Microsoft](report-junk-email-messages-to-microsoft.md) om våra filter har fel. Om du kringgår filtrerings stacken påverkas också inte med [ZAP](zero-hour-auto-purge.md).
 
 När meddelanden hoppar över filtrering av skräp post på grund av en användares lista med betrodda avsändare kommer fältet **X-antispam – rapport** huvud att innehålla värdet `SFV:SFE` , vilket anger att skräp post, förfalskning och Phish filtrering har hoppats över.
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du hittar och använder e-postsäkerhets rapporter för organisationen. Säkerhets rapporter för e-post finns i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d83e86c77eb148c4c55be3f363966ac3c756e87
-ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
+ms.openlocfilehash: 58c29d37d4f7deab17b2c24bfd7fb74e5ba9cb45
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "48594891"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600571"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visa rapporter om e-postsäkerhet i Säkerhets- och efterlevnadscenter
 
@@ -297,8 +297,8 @@ Följande vyer är tillgängliga:
 
 - **Visa data efter: innehåll \> Malware**<sup>1</sup>: följande information visas för Office 365 ATP-organisationer:
 
-  - **Skydd mot skadlig program vara**
-  - **Fil sprängning**
+  - **Skydd mot skadlig program vara**fångar upp skadliga filer i SharePoint Online, OneDrive och Teams efter skadlig program vara.
+  - **Fil sprängning**: sprängan av skadliga filer i SharePoint Online, OneDrive och Teams efter säkra bifogade filer.
 
   ![Vyn skadlig program vara i rapporten skydds status](../../media/threat-protection-status-report-content-malware-view.png)
 
@@ -318,28 +318,28 @@ Följande vyer är tillgängliga:
 
 - **Bryta ned efter: identifierings teknologi** och **Visa data via: e- \> Phish**: följande information visas:
 
-  - **ATP – genererad URL-rykte**<sup>1</sup>
-  - **Avancerat Phish-filter**
-  - **Anti-förfalskningar: DMARC-fel**
-  - **Anti-förfalskningar: inom organisationen**
-  - **Skydd mot förfalskning: extern domän**
-  - **Varumärkes-personifiering**
-  - **Domän person**<sup>1</sup>
-  - **EOP URL-rykte**
-  - **Allmänt Phish-filter**
+  - **ATP-genererad URL-rykte**<sup>1</sup>: skadlig URL-rykte genererat från ATP-SPRÄNGor i andra ATP-kunder.
+  - **Avancerat Phish filter**: phishing-signaler baserade på dator inlärning.
+  - **Skydd mot förfalskning – DMARC**: DMARC misslyckades för meddelanden.
+  - **Skydd mot förfalskning**: avsändaren försöker skicka falska till mottagar domänen.
+  - **Skydd mot förfalskning-extern domän**: avsändaren försöker använda en annan domän.
+  - **Varumärkes-personifiering**: personifiering av välkända varumärken baserat på avsändare.
+  - **Domän person**<sup>1</sup>: personifiering av domäner som kunden äger eller definierar.
+  - **EOP URL rykte**: skadlig URL-rykte.
+  - **Allmänt Phish-filter**: nät fiske signaler baserade på analytiker regler. 
   - **Gemensamma**
-  - **PHISH ZAP**<sup>2</sup>
+  - **PHISH ZAP**<sup>2</sup>: Tom timme för automatisk rensning av nät fiske meddelanden.
   - **URL-sprängare**<sup>1</sup>
-  - **Användarens personifiering**<sup>1</sup>
+  - **User personifieringstoken**<sup>1</sup>: personifiering av användare som definierats av administratören eller lärts via post låda.
 
   ![Identifierings teknologi vy för nät fiske-e-post i status rapport för hotet skydd](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
 - **Bryta ned efter: identifierings teknologi** och **Visa data via: e- \> postskadlig program vara**: följande information visas:
 
-  - **ATP – genererad fil rykte**<sup>1</sup>
-  - **Skydd mot skadlig program vara**<sup>1</sup>
-  - **Fil typs block för principer mot skadlig program vara**
-  - **Fil Spräng**<sup>1</sup>
+  - **ATP – genererad fil rykte**<sup>1</sup>: alla skadliga filer som orsakas av ATP-sprängor.
+  - **Skydd mot skadlig program vara**<sup>: identifiering</sup>från motorer med skadlig program vara.
+  - **Fil typs block för principer mot skadlig program vara**: dessa e-postmeddelanden filtreras på grund av den typ av skadlig fil som identifieras i meddelandet.
+  - **Fil sprängare**<sup>1</sup>: fil sprängning fångar av säkra bifogade filer.  
   - **Fil rykte**
   - **Malware, ZAP**<sup>2</sup>
   - **Gemensamma**

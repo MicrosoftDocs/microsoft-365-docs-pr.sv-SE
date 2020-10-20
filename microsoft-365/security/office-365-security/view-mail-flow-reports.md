@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa om vilka e-postflödes rapporter som är tillgängliga på instrument panelen för rapporter i säkerhets & efterlevnad.
 ms.custom: ''
-ms.openlocfilehash: d33bd62e9a06385bf3448b7744031ae030dbe3ca
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 801463877db2e022ab84c3187367587c61f71090
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195849"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600607"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Visa rapporter om e-postflöden i instrument panelen för säkerhet &
 
@@ -320,13 +320,23 @@ Data tabellen innehåller följande information, som visas i fallande ordning:
 
 - **Datum**
 - **Totalt e-postmeddelande**
-- **Edge Protection**
-- **Skadlig program vara, fil rykte, fil typs block**
-- **Anti-Phish, URL-rykte, varumärkes-och programförfalskning**
-- **Skydd mot skräp post, Mass utskick**
-- **Användar-och domän personifiering (ATP)**
-- **Fil-och URL-sprängning (ATP)**
-- **Efter leverans skydd och ZAP (ATP) eller ZAP (EOP)**
+- **Edge Protection** 
+- **Skadlig program vara, fil rykte, fil typs block**:
+  - **Fil rykte**: meddelanden som filtrerats på grund av identifiering av en bifogad fil av andra Microsoft-kunder.
+  - **Fil typs block**: meddelanden som filtrerats på grund av den typ av skadlig fil som identifieras i meddelandet.      
+- **Anti-Phish, URL-rykte, varumärkes-och programförfalskning**:
+  - **URL-rykte**: meddelanden som filtrerats på grund av URL-adressen till andra Microsoft-kunder.
+  - **Varumärkes-personifiering**: meddelanden som filtrerats på grund av att meddelandet kommer från välbekant varumärkes som imiterar avsändare.
+  - **Stöldskydd**: meddelanden som filtrerats på grund av meddelandet försöker att skicka falska en domän som mottagaren tillhör, eller en domän som meddelande avsändaren inte äger.  
+- **Skräp post filtrering**:
+  - **Mass utskick av e-post**: meddelanden som filtrerats på grund av ett försök att skicka mass utskick till mottagarna. 
+- **Användar-och domän personifiering (ATP)**:
+  - **Användarens personifiering**: meddelanden som filtrerats på grund av ett försök att personifiera en användare (meddelande avsändare) som har definierats i inställningarna för personifieringsnivå för en skydds policy.
+  - **Domän**användning: meddelanden som filtrerats på grund av ett försök att personifiera en domän som är definierad i inställningarna för personifieringsnivå för en skydds policy. 
+- **Fil-och URL-sprängning (ATP)**:
+  - **Fil sprängare**: meddelanden som filtrerats med en princip för bifogade filer.
+  - **URL-sprängning**: meddelande filtrerat med en princip för säkra länkar.  
+- **Efter leverans skydd och ZAP (ATP) eller ZAP (EOP)**: ZAP indikerar nollställning för automatisk rensning.
 
 Om du markerar en rad i data tabellen visas en uppdelning av antalet e-postmeddelanden.
 
@@ -378,8 +388,10 @@ Data tabellen innehåller följande information, som visas i fallande ordning:
 - **Datum**
 - **Totalt e-postmeddelande**
 - **Filtrerad**
-- **Skydd mot skadlig program vara, säkra bilagor, regel filtrerat**
-- **DMARC, Phish, filtrerat**
+- **Skydd mot skadlig program vara, säkra bilagor, regel filtrerat**:
+  - **Regel filtrerad**: meddelanden som filtrerats på grund av regler för e-postflöde (kallas även transport regler).
+- **DMARC, Phish, filtrerat**:
+  - **DMARC**: meddelanden som filtrerats på grund av meddelandet Det gick inte att kontrol lera DMARC. 
 - **Identifiering av URL-sprängning**
 - **Skräp post filter**
 - **ZAP borttagen**

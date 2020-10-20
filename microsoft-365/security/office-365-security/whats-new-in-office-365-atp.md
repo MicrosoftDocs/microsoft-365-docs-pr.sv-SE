@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 85813659d952fe936c8e8b41f2dc103a60116641
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 55a5ec4a2bfd562b581be9565022483d227f68be
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447077"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600511"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nyheter i Office 365 ATP
 
@@ -46,9 +46,9 @@ Den här artikeln innehåller de nya funktionerna i den senaste versionen av Off
 - [Kontrol lera dina policyer med hjälp av Configuration Analyzer](configuration-analyzer-for-security-policies.md)
 - [Åsidosätt filter manuellt verdicts med listan Tillåt/blockera klient organisation](tenant-allow-block-list.md)
 - [Utökade funktioner i Threat Explorer, inklusive Top riktade användare, transport regler och anslutningar](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP-abonnemang 2)
-- Visa åsidosätter information i [Threat Explorer](threat-explorer.md) (e-post tillåts/blockerades av innehavaren/användar policyn)
-- Visa URL-hot i [Threat Explorer](threat-explorer.md#threats-in-urls) (skadlig program vara, Phish, spam eller ingen) 
-- [Förbättringar av problem med att](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) läsa en Threat-upplevelse med uppdateringar kring hot, ytterligare åtgärder, leverans ställen och uppdaterad tidslinjevy
+- Visa åsidosätter information i [Threat Explorer](threat-explorer.md) (e-post tillåts/blockerades av klient organisation/användar princip) (Office 365 ATP-abonnemang 2)
+- Visa URL-hot i [Threat Explorer](threat-explorer.md#threats-in-urls) (skadlig program vara, Phish, spam eller ingen) (Office 365 ATP-abonnemang 2)
+- [Förbättringar av skydds Utforskaren för jakt](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) och uppdatering kring hot, ytterligare åtgärder, leverans ställen och uppdaterad tidslinjevy (Office 365 ATP-abonnemang 2)
 
 ## <a name="julyaugust-2020"></a>Juli 2020 
 
@@ -111,4 +111,3 @@ Visste du att Office 365 ATP är tillgängligt på två olika sätt? [Lär dig m
 [Microsoft 365-översikt](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Office 365 ATP-tjänst Beskrivning](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
-

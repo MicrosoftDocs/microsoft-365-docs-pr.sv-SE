@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig att visa och hantera meddelanden i karantän för alla användare i Exchange Online Protection (EOP). Administratörer i organisationer med Office 365 Avancerat skydd (Office 365 ATP) kan även hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams.
-ms.openlocfilehash: 7e9b49e7e7a90f5271a65bb26cecdd1a7ce2ab84
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+ms.openlocfilehash: 5e1115157ef7d67bc7a3f626eb61d01ecc0986cb
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417217"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600547"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Hantera meddelanden och filer i karantän som administratör i EOP
 
@@ -95,6 +95,13 @@ Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav 
      - **Program**
      - **Skräppost**
      - **Hög exakthet Phish**
+     
+   - **Princip typ**: filtrera meddelanden efter princip typ:
+     - **Policy för mot skadlig program vara**
+     - **Principer för säkra bifogade filer**
+     - **Policy för Phish**
+     - **Princip för innehålls filter värd**
+     - **Transport regel**
 
    - **E-postmottagare**: alla användare eller bara meddelanden som skickas till dig. Slutanvändare kan bara hantera skickade meddelanden till dem.
 
@@ -107,6 +114,8 @@ Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav 
      Du använde exempelvis [meddelande spårning](message-trace-scc.md) för att leta efter ett meddelande som skickades till en användare i din organisation, och du fastställer att meddelandet satts i stället för att levereras. Se till att du inkluderar fullständigt meddelande-ID, som kan innehålla vinkelparenteser ( \<\> ). Till exempel: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>` .
 
    - **Avsändarens e-postadress**: En enskild avsändarens e-postadress.
+
+   - **Princip namn**: Använd hela meddelandets princip namn. Sökningen är inte skiftlägeskänslig.
 
    - **Mottagarens e-postadress**: En enskild mottagares e-postadress.
 
