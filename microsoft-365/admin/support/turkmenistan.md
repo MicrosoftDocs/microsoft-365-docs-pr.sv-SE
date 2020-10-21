@@ -4,40 +4,40 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om hur du kontaktar supporten för ditt land eller din region.
+description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d74f3d568e31a04a7f71cedcd461459ab4566e5b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 456b96e21a4f18f882d8fd3d3bb4c2a5da679373
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401828"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638921"
 ---
-# <a name="contact-support-for-turkmenistan"></a>Kontakta support för Turkmenistan
+# <a name="contact-support-for-turkmenistan"></a>Kontakta supporten för Turkmenistan
 
-[Hitta ett annat land eller en annan region](../contact-support-for-business-products.md).
+[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
-+7 499 922 86 23
++ 7 499 922 86 23
 
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Ryska: mån-fre 10:00-19:00 Moskva
+Ryska: Mon-Fri 10 FM-7 PM Moskva
 
-Engelska: mån-fre 09.00-17.00 London
+Engelska: Mon-Fri 09.00 – 17.00 London
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Ryska: mån-fre 07:00-20:00 Moskva
+Ryska: Mon-Fri 7 AM – 8 PM Moskva
 
-Engelska: 24 timmar om dygnet, 7 dagar i veckan
+Engelska: mån–sön, dygnet runt
 
-Avgifter för internationella samtal tillkommer
+Internationella samtals avgifter gäller
