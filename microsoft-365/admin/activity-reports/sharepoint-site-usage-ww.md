@@ -1,0 +1,67 @@
+---
+title: Microsoft 365-rapporter i administrations centret – SharePoint-webbplatsens användning
+f1.keywords:
+- NOCSH
+ms.author: sirkkuw
+author: Sirkkuw
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_NonTOC
+ms.custom: AdminSurgePortfolio
+ROBOTS: NOINDEX, NOFOLLOW
+search.appverid:
+- BCS160
+- MST160
+- MET150
+- MOE150
+description: Hämta rapporten om användning av SharePoint-webbplatser för att få veta hur många filer användarna lagrar på SharePoint-webbplatser, hur många som används aktivt och hur mycket lagrings utrymme som förbrukas.
+ms.openlocfilehash: bc9345a5e281f1e7343bf62a2dc6832587d0786e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649877"
+---
+# <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a><span data-ttu-id="6bcec-103">Microsoft 365-rapporter i administrations centret – SharePoint-webbplatsens användning</span><span class="sxs-lookup"><span data-stu-id="6bcec-103">Microsoft 365 Reports in the admin center - SharePoint site usage</span></span>
+
+<span data-ttu-id="6bcec-104">Som Microsoft 365-administratör visar instrument panelen **rapporter** dig översikten över olika produkter i organisationen.</span><span class="sxs-lookup"><span data-stu-id="6bcec-104">As a Microsoft 365 admin, the **Reports** dashboard shows you the activity overview across various products in your organization.</span></span> <span data-ttu-id="6bcec-105">Där kan du öka detaljnivån för att få bättre inblick i de aktiviteter som är specifika för varje produkt.</span><span class="sxs-lookup"><span data-stu-id="6bcec-105">It enables you to drill in to get more granular insight about the activities specific to each product.</span></span> <span data-ttu-id="6bcec-106">Du kan till exempel få en överblick på hög nivå av det värde som du får från SharePoint som det totala antalet filer som användare lagrar på SharePoint-webbplatser, hur många filer som används aktivt och hur mycket lagring som används på alla dessa webbplatser.</span><span class="sxs-lookup"><span data-stu-id="6bcec-106">For example, you can get a high level view of the value you are getting from SharePoint in terms of the total number of files that users store in SharePoint sites, how many files are actively being used, and the storage consumed across all these sites.</span></span> <span data-ttu-id="6bcec-107">Du kan sedan öka detaljnivån på rapporten om SharePoint-webbplatsanvändningen för att förstå trenderna och information per webbplatsnivå för alla webbplatser.</span><span class="sxs-lookup"><span data-stu-id="6bcec-107">Then, you can drill into the SharePoint site usage report to understand the trends and per site level details for all sites.</span></span> 
+  
+> [!NOTE]
+> <span data-ttu-id="6bcec-108">Du måste vara global administratör, global läsare eller rapport läsare i Microsoft 365 eller en Exchange-, SharePoint-, teams-tjänst, grupp kommunikation eller Skype för företag-administratör för att se rapporter.</span><span class="sxs-lookup"><span data-stu-id="6bcec-108">You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, Teams Service, Teams Communications, or Skype for Business administrator to see reports.</span></span>
+<span data-ttu-id="6bcec-109">Microsoft 365-rapporter i administrations centret stöds inte för GCC-och DoD-klienter.</span><span class="sxs-lookup"><span data-stu-id="6bcec-109">Microsoft 365 Reports in the admin center is not supported for GCC High and DoD tenants.</span></span>
+ 
+## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a><span data-ttu-id="6bcec-110">Så här kommer du till rapporten om SharePoint-webbplatsanvändning</span><span class="sxs-lookup"><span data-stu-id="6bcec-110">How to get to the SharePoint site usage report</span></span>
+
+1. <span data-ttu-id="6bcec-111">I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>.</span><span class="sxs-lookup"><span data-stu-id="6bcec-111">In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.</span></span> 
+2. <span data-ttu-id="6bcec-112">Från instrument panelens start sida klickar du på knappen **Visa mer** på SharePoint-kortet.</span><span class="sxs-lookup"><span data-stu-id="6bcec-112">From the dashboard homepage, click on the **View more** button on the SharePoint card.</span></span>
+  
+## <a name="interpret-the-sharepoint-site-usage-report"></a><span data-ttu-id="6bcec-113">Tolka rapport om SharePoint-webbplatsens användning</span><span class="sxs-lookup"><span data-stu-id="6bcec-113">Interpret the SharePoint site usage report</span></span>
+
+<span data-ttu-id="6bcec-114">Du kan visa webbplats användningen i SharePoint-rapporten genom att välja fliken **webbplats användning** .</span><span class="sxs-lookup"><span data-stu-id="6bcec-114">You can view the site usage in the SharePoint report by choosing the **Site usage** tab.</span></span><br/><span data-ttu-id="6bcec-115">![Microsoft 365-rapporter – rapport om Microsoft SharePoint-webbplats.](../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png)</span><span class="sxs-lookup"><span data-stu-id="6bcec-115">![Microsoft 365 reports - Microsoft SharePoint site usage report.](../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png)</span></span>
+
+<span data-ttu-id="6bcec-116">Välj **Välj kolumner** för att lägga till eller ta bort kolumner i rapporten.</span><span class="sxs-lookup"><span data-stu-id="6bcec-116">Select **Choose columns** to add or remove columns from the report.</span></span>  <br/> <span data-ttu-id="6bcec-117">![Rapport över användning av SharePoint-webbplats – Välj kolumner](../../media/639f3cfd-6725-4318-a225-6d5c2f01770c.png)</span><span class="sxs-lookup"><span data-stu-id="6bcec-117">![SharePoint site usage report - choose columns](../../media/639f3cfd-6725-4318-a225-6d5c2f01770c.png)</span></span>
+
+<span data-ttu-id="6bcec-118">Du kan också exportera rapport data till en Excel. csv-fil genom att välja **Exportera** -länken.</span><span class="sxs-lookup"><span data-stu-id="6bcec-118">You can also export the report data into an Excel .csv file by selecting the **Export** link.</span></span> <span data-ttu-id="6bcec-119">Då exporteras data för alla användare och du kan göra enkel sortering och filtrering för vidare analys.</span><span class="sxs-lookup"><span data-stu-id="6bcec-119">This exports data of all users and enables you to do simple sorting and filtering for further analysis.</span></span> <span data-ttu-id="6bcec-120">Om du har mindre än 2 000 användare kan du sortera och filtrera i tabellen i själva rapporten.</span><span class="sxs-lookup"><span data-stu-id="6bcec-120">If you have less than 2000 users, you can sort and filter within the table in the report itself.</span></span> <span data-ttu-id="6bcec-121">Om du har fler än 2 000 användare måste du exportera data för att kunna filtrera och sortera.</span><span class="sxs-lookup"><span data-stu-id="6bcec-121">If you have more than 2000 users, in order to filter and sort, you will need to export the data.</span></span> 
+  
+|<span data-ttu-id="6bcec-122">Objekt</span><span class="sxs-lookup"><span data-stu-id="6bcec-122">Item</span></span>|<span data-ttu-id="6bcec-123">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="6bcec-123">Description</span></span>|
+|:-----|:-----|
+|<span data-ttu-id="6bcec-124">**Mät**</span><span class="sxs-lookup"><span data-stu-id="6bcec-124">**Metric**</span></span>|<span data-ttu-id="6bcec-125">**Definition**</span><span class="sxs-lookup"><span data-stu-id="6bcec-125">**Definition**</span></span>|
+|<span data-ttu-id="6bcec-126">Webbplatsens URL</span><span class="sxs-lookup"><span data-stu-id="6bcec-126">Site URL</span></span>  <br/> |<span data-ttu-id="6bcec-127">Den fullständiga URL-adressen för webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="6bcec-127">The full URL of the site.</span></span> <br/> |
+|<span data-ttu-id="6bcec-128">Deleted</span><span class="sxs-lookup"><span data-stu-id="6bcec-128">Deleted</span></span>  <br/> |<span data-ttu-id="6bcec-129">Borttagnings status för webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="6bcec-129">The deletion status of the site.</span></span> <span data-ttu-id="6bcec-130">Det tar minst 7 dagar för webbplatser att markeras som borttagna.</span><span class="sxs-lookup"><span data-stu-id="6bcec-130">It takes at least 7 days for sites to be marked as deleted.</span></span>  <br/> |
+|<span data-ttu-id="6bcec-131">Webbplats ägare</span><span class="sxs-lookup"><span data-stu-id="6bcec-131">Site owner</span></span>  <br/> |<span data-ttu-id="6bcec-132">Användar namnet på den primära ägaren av webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="6bcec-132">The username of the primary owner of the site.</span></span>   <br/> |
+|<span data-ttu-id="6bcec-133">Huvud namn för webbplats ägare</span><span class="sxs-lookup"><span data-stu-id="6bcec-133">Site owner principal name</span></span>  <br/> |<span data-ttu-id="6bcec-134">E-postadressen till ägaren till webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="6bcec-134">The email address of the owner of the site.</span></span> <br/> |
+|<span data-ttu-id="6bcec-135">Datum för senaste aktivitet (UTC)</span><span class="sxs-lookup"><span data-stu-id="6bcec-135">Last activity date (UTC)</span></span>  <br/> | <span data-ttu-id="6bcec-136">Datumet för den senaste tids aktiviteten upptäcktes eller en sida visades på webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="6bcec-136">The date of the last time file activity was detected or a page was viewed on the site.</span></span>  <br/> |
+|<span data-ttu-id="6bcec-137">Hjälpfiler</span><span class="sxs-lookup"><span data-stu-id="6bcec-137">Files</span></span>  <br/> |<span data-ttu-id="6bcec-138">Antalet filer på webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="6bcec-138">The number of files on the site.</span></span> <br/>|
+|<span data-ttu-id="6bcec-139">Aktiva filer</span><span class="sxs-lookup"><span data-stu-id="6bcec-139">Active files</span></span>  <br/> | <span data-ttu-id="6bcec-140">Antalet aktiva filer på webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="6bcec-140">The number of active files on the site.</span></span><br/> <span data-ttu-id="6bcec-141">OBS! om filer togs bort under den angivna tids perioden för rapporten kan antalet aktiva filer som visas i rapporten vara större än det aktuella antalet filer på webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="6bcec-141">NOTE: If files were removed during the specified time period for the report, the number of active files shown in the report may be larger than the current number of files on the site.</span></span>  <br/> |
+|<span data-ttu-id="6bcec-142">Använt lagrings utrymme (MB)</span><span class="sxs-lookup"><span data-stu-id="6bcec-142">Storage used (MB)</span></span>  <br/> |<span data-ttu-id="6bcec-143">Mängden lagrings utrymme som används på webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="6bcec-143">The amount of storage currently being used on the site.</span></span>  <br/>|
+|<span data-ttu-id="6bcec-144">Allokerat lagrings utrymme (MB)</span><span class="sxs-lookup"><span data-stu-id="6bcec-144">Storage allocated (MB)</span></span>  <br/> |<span data-ttu-id="6bcec-145">Det högsta tillåtna lagrings utrymmet för webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="6bcec-145">The maximum amount of storage allocated for the site.</span></span>  <br/>|
+|<span data-ttu-id="6bcec-146">Sidvyer</span><span class="sxs-lookup"><span data-stu-id="6bcec-146">Page views</span></span>  <br/> |<span data-ttu-id="6bcec-147">Antalet gånger som sidor visades på webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="6bcec-147">The number of times pages were viewed on the site.</span></span>  <br/>|
+|<span data-ttu-id="6bcec-148">Besökta sidor</span><span class="sxs-lookup"><span data-stu-id="6bcec-148">Pages visited</span></span>  <br/> |<span data-ttu-id="6bcec-149">Antalet unika sidor som besökts på webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="6bcec-149">The number of unique pages that were visited on the site.</span></span>  <br/>|
+|<span data-ttu-id="6bcec-150">Rotmapp med rot</span><span class="sxs-lookup"><span data-stu-id="6bcec-150">Root Web Template</span></span>  <br/> |<span data-ttu-id="6bcec-151">Den mall som används för att skapa webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="6bcec-151">The template used for creating the site.</span></span>  <br/> <span data-ttu-id="6bcec-152">Obs! Om du vill filtrera data efter olika webbplats typer exporterar du dem och använder kolumnen rotmapp.</span><span class="sxs-lookup"><span data-stu-id="6bcec-152">NOTE: If you want to filter the data by different site types, then export the data and use the Root Web Template column.</span></span> |
+|||
