@@ -1,10 +1,10 @@
 ---
-title: Samla in den information du behöver för att skapa DNS-poster
+title: Samla den information du behöver för att skapa DNS-poster
 f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,67 +23,67 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
-description: 'Lär dig att hitta de värden/den information du behöver för att skapa DNS-poster för Microsoft 365. '
-ms.openlocfilehash: fddd1180f2dd80ffeec2aeec49ed821055dd5f15
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 'Lär dig hur du hittar de värden du behöver för att skapa DNS-poster för Microsoft 365. '
+ms.openlocfilehash: eca9dbe4e40193f76538b639624b827177ff7772
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399914"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645317"
 ---
-# <a name="gather-the-information-you-need-to-create-dns-records"></a>Samla in den information du behöver för att skapa DNS-poster
+# <a name="gather-the-information-you-need-to-create-dns-records"></a>Samla den information du behöver för att skapa DNS-poster
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
   
-### <a name="step-1-find-the-txt-record-value-and-verify"></a>Steg 1: Hitta TXT-postvärdet och verifiera
+### <a name="step-1-find-the-txt-record-value-and-verify"></a>Steg 1: Sök efter TXT-Postens värde och bekräfta
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Installationsdomäner i administrationscentret</a> för Microsoft 365.
+1. Gå till sidan **konfigurations** domäner i administrations centret för Microsoft 365 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Installationsdomäner</a> i administrationscentret.
+1. Gå till sidan **Konfigurera** domäner i administrations centret > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Installationsdomäner</a> i administrationscentret.
+1. Gå till sidan **Konfigurera** domäner i administrations centret > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> .
 
 ::: moniker-end
     
-2. På sidan **Domäner** väljer du din domän och väljer sedan **Starta installation**. Du går tillbaka till domäninstallationsguiden för att se det specifika värde som du måste lägga till.
+2. På sidan **domäner** väljer du din domän och sedan **starta installationen**. Du går tillbaka till domäninstallationsguiden för att se det specifika värde som du måste lägga till.
     
-3. På sidan **Verifiera domän** väljer du Lägg till **en TXT-post i stället**och väljer sedan **Nästa**.
+3. På sidan **Verifiera domän** väljer du **Lägg till en TXT-post i stället**och sedan **Nästa**.
     
-4. Kopiera **TXT-värdet** som visas. Det ser ut så här: **MS=msXXXXXXXX**. 
+4. Kopiera det **txt-värde** som visas. Det ser ut så här: **MS = msXXXXXXXX**. 
     
-5. Gå till [Skapa DNS-poster hos alla DNS-värdleverantörer](create-dns-records-at-any-dns-hosting-provider.md)och välj din DNS-värd i listan över registratorer för att se steg-för-steg-instruktioner.
+5. Gå till [Skapa DNS-poster hos en DNS-värd](create-dns-records-at-any-dns-hosting-provider.md)och välj din DNS-värd i listan med registratorer för att se steg-för-steg-instruktionerna.
     
-6. Följ stegen för att skapa TXT-posten (eller MX-posten) på DNS-värden och verifiera sedan domänen i Microsoft 365.
+6. Följ stegen för att skapa TXT-posten (eller MX-posten) hos din DNS-värd och verifiera sedan domänen i Microsoft 365.
 
 7. Ta bort TXT-posten (eller MX-posten) från DNS-värden när domänen har verifierats i Microsoft 365.
     
-### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>Steg 2: Hitta MX-postvärdet för e-post med mera
+### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>Steg 2: hitta MX-postvärdet för e-post och mer
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Installationsdomäner i administrationscentret</a> för Microsoft 365.
+1. Gå till sidan **konfigurations** domäner i administrations centret för Microsoft 365 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> .
 
 ::: moniker-end
     
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Installationsdomäner</a> i administrationscentret.
+1. Gå till sidan **Konfigurera** domäner i administrations centret > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Installationsdomäner</a> i administrationscentret.
+1. Gå till sidan **Konfigurera** domäner i administrations centret > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> .
 
 ::: moniker-end
     
@@ -95,6 +95,6 @@ ms.locfileid: "44399914"
     
     Grupperna av DNS-poster som visas på sidan är beroende av dina val som visas under **Domänsyfte**.
     
-4. Gå till [Skapa DNS-poster hos valfri DNS-värd](create-dns-records-at-any-dns-hosting-provider.md)och välj sedan din DNS-värd från listan över registratorer för att se steg-för-steg-instruktioner för att lägga till poster på DNS-värdens webbplats.
+4. Gå till [Skapa DNS-poster hos en DNS-värd](create-dns-records-at-any-dns-hosting-provider.md)och välj sedan din DNS-värd i listan över registratorer för att Visa stegvisa instruktioner för hur du lägger till poster på DNS-värdens webbplats.
     
 5. Följ stegen för att skapa posterna hos din DNS-värd.

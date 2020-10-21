@@ -1,10 +1,10 @@
 ---
-title: Ändra namnservrar för att konfigurera Microsoft med Google Domäner
+title: Ändra namnservrar för att konfigurera Microsoft med Google Domains
 f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 68a08e94-26c2-4df2-9216-026b8ec907ca
-description: Lär dig hur du kan konfigurera Microsoft för att hantera DNS-posterna för din anpassade domän på Google Domains.
-ms.openlocfilehash: 65649632b5e28e97909d91ca3e04355375afe3ac
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Lär dig hur du kan konfigurera Microsoft för att hantera DNS-posterna för din anpassade domän på Google-domäner.
+ms.openlocfilehash: 05d77ef4cb78351727870a384f4a28c6e4acc4b0
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400659"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646433"
 ---
-# <a name="change-nameservers-to-set-up-microsoft-with-google-domains"></a>Ändra namnservrar för att konfigurera Microsoft med Google Domäner
+# <a name="change-nameservers-to-set-up-microsoft-with-google-domains"></a>Ändra namnservrar för att konfigurera Microsoft med Google Domains
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
   
-Följ dessa instruktioner om du vill att Microsoft ska hantera dina DNS-poster åt dig. (Om du vill kan du [hantera alla DNS-poster på Google Domains](create-dns-records-at-google-domains.md).)
+Följ de här anvisningarna om du vill att Microsoft ska hantera dina DNS-poster åt dig. (Om du vill kan du [hantera alla dina DNS-poster på Google Domains](create-dns-records-at-google-domains.md).)
   
     
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
@@ -42,13 +42,13 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
 > [!NOTE]
 >  Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
   
-1. För att komma igång, gå till din domänsida på Google Domains via [denna länk](https://domains.google.com/registrar). Du uppmanas att logga in. Gör så här:
+1. Gå till sidan Domains på Google Domains via [den här länken](https://domains.google.com/registrar)för att komma igång. Du uppmanas att logga in. Gör så här:
     
 1. Välj **Logga in**.
     
-2. Ange dina inloggningsuppgifter och välj **logga in igen**.
+2. Ange dina inloggnings uppgifter och välj **Logga**in igen.
     
-2. På sidan **Domäner** i avsnittet **Domän** väljer du **Konfigurera DNS** för den domän som du vill redigera. 
+2. Välj **Konfigurera DNS** för den domän som du vill redigera i avsnittet **Domain** **på sidan** domains. 
     
 3. Gå till avsnittet **Custom resource records**. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell. 
     
@@ -59,13 +59,13 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
 |||||
 |:-----|:-----|:-----|:-----|
 |**Name** <br/> |**Type (typ)** <br/> |**TTL** <br/> |**Data** <br/> |
-|@  <br/> |TXT  <br/> |1H (1H)  <br/> |MS=ms *XXXXXXXX* <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)       <br/>  |
+|@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX* <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)       <br/>  |
    
 4. Välj **Lägg till**.
     
 5. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorerns webbplats går du tillbaka till Microsoft och begär en sökning efter posten.
+Nu när du har lagt till posten på domän registratorns webbplats kan du gå tillbaka till Microsoft och begära en sökning efter posten.
   
 När Microsoft hittar rätt TXT-post är din domän verifierad.
   
@@ -83,10 +83,10 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>Ändra domänens namnserverposter (NS)
 
-Om du vill slutföra inrättandet av domänen med Microsoft ändrar du domänens NS-poster på domänregistraren så att de pekar på Microsofts primära och sekundära namnservrar. Detta ställer in Microsoft för att uppdatera domänens DNS-poster åt dig. Vi lägger till alla poster så att e-post, Skype för företag - Online och den offentliga webbplatsen fungerar med domänen så att du kan börja.
+För att slutföra konfigurationen av din domän med Microsoft ändrar du domänens NS-poster hos domän registratorn så att de pekar på Microsofts primära och sekundära namnservrar. Detta konfigurerar Microsoft för att uppdatera domänens DNS-poster åt dig. Vi lägger till alla poster så att e-post, Skype för företag - Online och den offentliga webbplatsen fungerar med domänen så att du kan börja.
   
 > [!CAUTION]
-> När du ändrar domänens NS-poster så att de pekar på Microsofts namnservrar påverkas alla tjänster som för närvarande är associerade med domänen. Till exempel alla e-postmeddelanden som skickas till din domän (t.ex. *rob@ your_domain.*  com) börjar komma till Microsoft när du har gjort den här ändringen. 
+> När du ändrar domänens NS-poster så att de pekar på Microsoft Name Server påverkas alla tjänster som är associerade till din domän. Till exempel, alla e-postmeddelanden som skickas till din domän (som rob@ *your_domain.*  com) kommer att komma till Microsoft när du har gjort den här ändringen. 
   
 > [!IMPORTANT]
 > Följande procedur visar hur du tar bort andra, oönskade namnservrar från listan, och hur du lägger till korrekta namnservrar om de inte redan finns i listan. > När du har utfört stegen i det här avsnittet är de enda namnservrarna som bör finnas i listan dessa fyra: 
@@ -95,9 +95,9 @@ Om du vill slutföra inrättandet av domänen med Microsoft ändrar du domänens
     
 1. Välj **Logga in**.
     
-2. Ange dina inloggningsuppgifter och välj sedan **logga in**igen .
+2. Ange dina inloggnings uppgifter och välj sedan **Logga**in igen.
     
-2. På sidan **Domäner** i avsnittet **Domän** väljer du **Konfigurera DNS** för den domän som du vill redigera. 
+2. Välj **Konfigurera DNS** för den domän som du vill redigera i avsnittet **Domain** **på sidan** domains. 
     
 3. Välj **Use custom name servers** (använd anpassade namnservrar) i området **Name servers** (namnservrar) på sidan **Domains** (domäner).
     
@@ -122,15 +122,15 @@ Om du vill slutföra inrättandet av domänen med Microsoft ändrar du domänens
 |**Tredje namnservern** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Fjärde namnservern** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Google-Domäner-BP-Redelegate-1-2](../../media/6d14544d-7783-4ed4-b4dd-691624af7172.png)
+   ![Google-Domains-BP-Redelegate-1-2](../../media/6d14544d-7783-4ed4-b4dd-691624af7172.png)
   
-2. Markera kontrollen **+ (lägg till)** om du vill skapa en tom rad. 
+2. Välj **+ (Lägg till)** för att skapa en tom rad. 
     
     ![Google-Domains-BP-Redelegate-1-3](../../media/ea23e5fc-07e1-4ffc-b8cf-8526867b752d.png)
   
 3. Lägg till de andra tre namnserverposterna.
     
-    Skapa en post i avsnittet **Använd anpassade namnservrar** med hjälp av värdena från nästa rad i tabellen och välj sedan kontrollen **+ (lägg till)** för att lägga till en annan rad. 
+    I avsnittet **Använd anpassade namnservrar** skapar du en post med värdena från nästa rad i tabellen och väljer sedan **+ (Lägg till)** för att lägga till ytterligare en rad. 
     
     Upprepa proceduren tills du har skapat alla fyra namnserverposterna.
     
@@ -139,14 +139,14 @@ Om du vill slutföra inrättandet av domänen med Microsoft ändrar du domänens
     ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   
 > [!NOTE]
-> Det kan ta flera timmar innan ändringarna har uppdaterats genom hela DNS-systemet på Internet. Då kommer din Microsoft-e-post och andra tjänster att vara inställda på att fungera med din domän. 
+> Det kan ta flera timmar innan ändringarna har uppdaterats genom hela DNS-systemet på Internet. Sedan är din Microsoft-e-post och andra tjänster inställda för att fungera med din domän. 
   
 ### <a name="if-there-are-nameservers-already-listed"></a>Om det redan FINNS namnservrar listade
 
-1. Om det finns några andra namnservrar i listan väljer du **Redigera**.
+1. Om det finns andra namnservrar i listan väljer du **Redigera**.
     
     > [!CAUTION]
-    > Följ bara dessa steg om du har andra befintliga namnservrar än de fyra korrekta namnservrarna. (Det vill an, ta bara bort alla aktuella namnservrar som *inte* namnges **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**eller **ns4.bdm.microsoftonline.com**.) 
+    > Följ de här stegen endast om du har andra befintliga namnservrar än de fyra korrekta namnservrar. (Det är bara att ta bort alla aktuella namnservrar som  *inte*  heter **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **NS3.bdm.microsoftonline.com**eller **NS4.bdm.microsoftonline.com**.) 
   
     ![Google-Domains-BP-Redelegate-1-6-1](../../media/fb45d120-55ab-42c2-bdb6-19b130c3c7db.png)
   
@@ -163,15 +163,15 @@ Om du vill slutföra inrättandet av domänen med Microsoft ändrar du domänens
 |**Tredje namnservern** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Fjärde namnservern** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Google-Domäner-BP-Redelegate-1-7](../../media/e008dccb-d789-4f52-8ecc-02831b7c6fb2.png)
+   ![Google-Domains-BP-Redelegate-1-7](../../media/e008dccb-d789-4f52-8ecc-02831b7c6fb2.png)
   
-4. Markera kontrollen **+(add)** om du vill skapa en tom rad. 
+4. Välj **+ (Lägg till)** för att skapa en tom rad. 
     
     ![Google-Domains-BP-Redelegate-1-8](../../media/6ce40b1e-8464-443f-a64a-825dc8764590.png)
   
 5. Lägg till de andra två namnserverposterna.
     
-    Skapa en post i avsnittet **Använd anpassade namnservrar** med hjälp av värdena från nästa rad i tabellen och välj sedan kontrollen **+(add)** för att lägga till en annan rad. 
+    I avsnittet **Använd anpassade namnservrar** skapar du en post med värdena från nästa rad i tabellen och väljer sedan **+ (Lägg till)** för att lägga till ytterligare en rad. 
     
     Upprepa proceduren tills du har skapat alla fyra namnserverposterna.
     
@@ -180,5 +180,5 @@ Om du vill slutföra inrättandet av domänen med Microsoft ändrar du domänens
     ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   
 > [!NOTE]
-> Det kan ta flera timmar innan ändringarna har uppdaterats genom hela DNS-systemet på Internet. Då kommer din Microsoft-e-post och andra tjänster att vara inställda på att fungera med din domän. 
+> Det kan ta flera timmar innan ändringarna har uppdaterats genom hela DNS-systemet på Internet. Sedan är din Microsoft-e-post och andra tjänster inställda för att fungera med din domän. 
   

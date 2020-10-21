@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Amazon Web Services (AWS) för Microsoft.
-ms.openlocfilehash: dbbf82c9c776108c4d5e34e2eb639f9c36e9f28b
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 6fa791db7b1782b14092769c5d9ef911474d63eb
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307073"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646373"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>Skapa DNS-poster på Amazon Web Services (AWS) för Microsoft
 
@@ -69,7 +69,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     |**Name** <br/> |**Type (Typ)** <br/> |**Alias** <br/> |**TTL (sekunder)** <br/> |**Värde** <br/> |**Routing Policy (Routningsprincip)** <br/> |
     |(Lämna det här fältet tomt.)  <br/> |TXT - text  <br/> |Nej  <br/> |300  <br/> |MS=ms *XXXXXXXX*  <br/>**Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Microsoft 365. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |Enkelt  <br/> |
    
-6. Välj **skapa**.
+6. Välj **Skapa**.
     
 7. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
@@ -110,7 +110,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
        
     ![AWS-BP-Configure-2-1](../../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
   
-6. Välj **skapa**.
+6. Välj **Skapa**.
     
     ![AWS-BP-Configure-2-2](../../media/1c050c72-c04f-48d5-a8e9-44cd83ddd33e.png)
   
@@ -158,7 +158,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
    
     ![AWS-BP-Configure-3-1](../../media/895c71bd-0e3a-425e-9681-98c1c67e714b.png)
   
-6. Välj **skapa**.
+6. Välj **Skapa**.
     
     ![AWS-BP-Configure-3-2](../../media/33964846-5282-44a4-b241-62ce02b96735.png)
   
@@ -215,12 +215,12 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     |**Name (Namn)**|**Type (Typ)**|**Alias**|**TTL (sekunder)**|**Värde**|**Routing Policy (Routningsprincip)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip. _tls|SRV - Service locator|No|300|100 1 443 sipdir.online.lync.com. **Det här värdet måste sluta med en punkt (.)**><br> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |Enkelt|
-    |_sipfederationtls. _tcp|SRV - Service locator|No|300|100 1 5061 sipfed.online.lync.com. **Värdet MÅSTE sluta med en punkt (.)**<br> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |Enkelt|
+    |_sip _sip._tls|SRV - Service locator|No|300|100 1 443 sipdir.online.lync.com. **Det här värdet måste sluta med en punkt (.)**><br> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |Enkelt|
+    |_sipfederationtls _sipfederationtls._tcp|SRV - Service locator|No|300|100 1 5061 sipfed.online.lync.com. **Värdet MÅSTE sluta med en punkt (.)**<br> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |Enkelt|
    
     ![AWS-BP-Configure-5-1](../../media/c3f841d3-6076-428f-bb04-e71cc5f392fa.png)
   
-6. Välj **skapa**.
+6. Välj **Skapa**.
     
     ![AWS-BP-Configure-5-2](../../media/1bf5dc58-a46b-47a5-bd69-7c2147dd4e50.png)
   

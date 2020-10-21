@@ -1,10 +1,10 @@
 ---
-title: Så här får du hjälp i administrationscentret för Microsoft 365
+title: Få hjälp i administrations centret för Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,42 +20,42 @@ search.appverid:
 - BEA160
 - GEA150
 ROBOTS: NOINDEX
-description: Läs mer om alla sätt du kan få hjälp med administrationscentret för Microsoft 365.
-ms.openlocfilehash: b10eb75e1a7d02c384c915ad814dddc9f3c6954f
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+description: Lär dig mer om de olika sätten att få hjälp med Microsoft 365 Admin Center.
+ms.openlocfilehash: 23c325aa4a9a0fbf5ec8bfd16bd329540fcd4606
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844722"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646517"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
-# <a name="how-to-get-help-in-the-microsoft-365-admin-center"></a>Så här får du hjälp i administrationscentret för Microsoft 365
+# <a name="how-to-get-help-in-the-microsoft-365-admin-center"></a>Få hjälp i administrations centret för Microsoft 365
 
-Om du är administratör är [admin.microsoft.com](https://admin.microsoft.com) din go-to-plats för att hantera och få ut det mesta av din Microsoft 365-prenumeration. Ibland kanske du inte hittar rätt uppgift, behöver mer sammanhang innan du påbörjar ett aktivitetsflöde, eller helt enkelt kanske inte är säker på omfattningen och effekten av dina åtgärder som administratör. För att täcka dessa situationer erbjuder vi modern hjälp och intelligent hjälp i hela Microsoft 365 admin center på följande sätt:
+Om du är administratör är [admin.Microsoft.com](https://admin.microsoft.com) ditt sätt att hantera och få ut mesta möjliga av ditt Microsoft 365-abonnemang. Ibland kanske du inte hittar rätt uppgift, behöver mer kontext innan du får ett aktivitets flöde, eller om du är osäker på omfattningen och konsekvenserna av dina åtgärder som administratör. För att omfatta dessa situationer tillhandahåller vi moderna hjälp och intelligent hjälp i Microsoft 365 Admin Center på följande sätt:
 
-* **Integrerad hjälp** - hjälp i administrationscentret
+* **Integrerad hjälp** -hjälp i administrations centret
 
-* **Intelligent hjälp** - självhjälp som drivs av AI
+* **Intelligent hjälp** -självhjälp som drivs av AI
 
-* **Guider och artiklar** - omfattande innehåll på webben
+* **Stöd linjer och artiklar** – omfattande innehåll på webben
 
 ## <a name="integrated-help"></a>Integrerad hjälp
 
-Hjälpen är integrerad i hela administrationscentret, så den finns precis där när du behöver den. Högst upp på många sidor hittar du hjälptext i infogade dokument som ger en informativ översikt över den aktuella uppgiften, samt länkar till artiklar som gör att du snabbt kan hitta officiell dokumentation för mer djupgående inlärning.
+Hjälpen är integrerad i hela administrations centret så att den passar när du behöver den. Högst upp på många sidor hittar du infogad hjälp text som innehåller en informations översikt över uppgiften, samt länkar till artiklar som gör att du snabbt hittar statsstöd för att få mer ingående inlärning.
 
-![Sidan Grupper som visar infogad hjälp och länkar till artiklar](../../media/integrated-help.png)
+![Sidan grupper med infogad hjälp och länkar till artiklar](../../media/integrated-help.png)
 
-## <a name="modern-self-help-powered-by-ai"></a>Modern självhjälp som drivs av AI
+## <a name="modern-self-help-powered-by-ai"></a>Modern själv-hjälp med AI
 
-Om du vill öppna vår moderna självhjälpsupplevelse som drivs av artificiell intelligens väljer du knappen **Hjälp för behov** i microsoft 365-administrationscentret. Om du till exempel söker efter "verifiera min domän" får du stegen plus några artiklar som vi tror hjälper dig. Vi använder maskininlärning för att visa den närmaste lösningen som har hjälpt andra administratörer som har angett liknande frågor.
+För att öppna vår moderna själv hjälp upplevelse som drivs av artificiell intelligens väljer du knappen för **att få hjälp** i administrations centret för Microsoft 365. Om du till exempel söker efter "verifiera min domän" får du stegen plus några artiklar som vi tänker hjälpa dig med. Vi använder maskin inlärning för att ringa fram den närmaste lösningen som har hjälpt andra administratörer som har angett liknande frågor.
 
-Eller, för de tillfällen då du inte riktigt vet hur man får något gjort i din specifika situation, använd supportassistenten. För närvarande är denna erfarenhet endast tillgänglig på engelska. Om du vill aktivera Supportassistenten använder du bara växlingsknappen högst upp i hjälpfönstret **Behöver du.** Supportassistenten tillhandahåller ett konversationsgränssnitt som hjälper dig. När du har angett din fråga ställer chatboten klargörande frågor för att få dig till rätt svar för din specifika situation. Se det som din virtuella hjälpare att upptäcka lösningar och slutföra uppgifter.
+Om du inte vet hur du kan få något gjort i din specifika situation kan du använda support assistenten. För närvarande är denna upplevelse endast tillgänglig på engelska. Aktivera support assistenten genom att använda växlings knappen högst upp i fönstret med **Hjälp** . Support assistenten tillhandahåller ett samtals gränssnitt som hjälper dig. När du har angett frågan ber chatbot dig att förlägga frågor för att komma till rätt svar för din specifika situation. Tänk på det som Virtual Helper för att hitta lösningar och slutföra uppgifter.
 
-![Modern självhjälp](../../media/help-options.png)
+![Modern själv-hjälp](../../media/help-options.png)
 
-Naturligtvis besvaras ibland frågor bäst av människor. Om vår moderna självhjälp inte har svaret har du alltid möjlighet att kontakta våra supportagenter.
+Dessutom är frågorna bäst besvarade av människa. Om vår moderna självhjälp inte har svaret kan du alltid kontakta våra support personal.
 
-## <a name="guides-and-articles"></a>Guider och artiklar
+## <a name="guides-and-articles"></a>Stöd linjer och artiklar
 
-Om du letar efter omfattande distributionsguider, snabba steg-för-steg-procedurer eller PowerShell-cmdlets, slå oss upp på webben. Vi uppdaterar innehåll ofta och försöker ge dig den senaste informationen. Kolla in våra artiklar och guider på Microsoft [365 Documentation](https://docs.microsoft.com/microsoft-365/) webbplats.
+Om du letar efter omfattande distributions guider kan du också använda snabb steg-för-steg-instruktioner eller PowerShell-cmdletar. Vi uppdaterar innehållet ofta och försöker ge dig den senaste informationen. Kolla våra artiklar och guider på webbplatsen [Microsoft 365 documentation](https://docs.microsoft.com/microsoft-365/) .

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
-description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Network Solutions för Microsoft.
-ms.openlocfilehash: 25e85bf30527b49ada711af9ba5c418409acd24c
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster i Network Solutions for Microsoft.
+ms.openlocfilehash: f488ad3511c9901eae70691f616dcff52036c71d
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780343"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645953"
 ---
 # <a name="create-dns-records-at-network-solutions-for-microsoft"></a>Skapa DNS-poster på Network Solutions för Microsoft
 
@@ -46,7 +46,7 @@ Det här är de viktigaste posterna att lägga till. Följ stegen nedan eller [t
     
 - [Lägga till de två SRV-posterna som krävs för Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-När du har lagt till dessa poster på Network Solutions konfigureras domänen så att den fungerar med Microsoft-tjänster.
+När du har lagt till dessa poster på Network Solutions är din domän konfigurerad för att fungera med Microsoft-tjänster.
   
 
   
@@ -66,7 +66,7 @@ Följ stegen nedan eller [titta på videon (börja vid 0:47)](https://support.mi
 1. Kom igång genom att gå till domänsidan på Network Solutions med [den här länken](https://www.networksolutions.com/manage-it). Du uppmanas att logga in.
     
     > [!IMPORTANT]
-    > Innan du väljer **knappen Logga in** väljer du först Hantera mina **domännamn** i **listrutan Logga in på:** . 
+    > Innan du väljer knappen **Logga** in väljer du **hantera mina domän namn** i list rutan **log in to:** . 
   
     ![Välj Hantera mina domännamn och logga in på Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -74,9 +74,9 @@ Följ stegen nedan eller [titta på videon (börja vid 0:47)](https://support.mi
     
     ![Markera kryssrutan för din domän](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Välj **Redigera DNS**.
+3. Välj **Edit DNS**.
     
-    ![Välj Redigera DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Välj Edit DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
 4. Välj **Hantera avancerade DNS-poster**.
     
@@ -84,9 +84,9 @@ Följ stegen nedan eller [titta på videon (börja vid 0:47)](https://support.mi
     
     ![Välj Hantera avancerade DNS-poster](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Bläddra ned till avsnittet **Text (TXT Records)** och välj sedan **Redigera TXT-poster**.
+5. Rulla ned till avsnittet **text (TXT Records)** och välj sedan **Edit TXT Records**.
     
-    ![Välj Redigera TXT-poster](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
+    ![Välja Edit TXT-poster](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
   
 6. I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena i följande tabell.
     
@@ -135,7 +135,7 @@ Följ stegen nedan eller [titta på videon (börja vid 3:51)](https://support.mi
 1. Kom igång genom att gå till domänsidan på Network Solutions med [den här länken](https://www.networksolutions.com/manage-it). Du uppmanas att logga in.
     
     > [!IMPORTANT]
-    > Innan du väljer **knappen Logga in** väljer du först Hantera mina **domännamn** i **listrutan Logga in på:** . 
+    > Innan du väljer knappen **Logga** in väljer du **hantera mina domän namn** i list rutan **log in to:** . 
   
     ![Välj Hantera mina domännamn och logga in på Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -143,9 +143,9 @@ Följ stegen nedan eller [titta på videon (börja vid 3:51)](https://support.mi
     
     ![Markera kryssrutan för din domän](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Välj **Redigera DNS**.
+3. Välj **Edit DNS**.
     
-    ![Välj Redigera DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Välj Edit DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
 4. Välj **Hantera avancerade DNS-poster**.
     
@@ -153,15 +153,15 @@ Följ stegen nedan eller [titta på videon (börja vid 3:51)](https://support.mi
     
     ![Välj Hantera avancerade DNS-poster](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Bläddra ned till avsnittet **E-postservrar (MX Records)** och välj sedan **Redigera MX-poster**.
+5. Rulla ned till avsnittet **Mail Servers (MX Records)** och välj sedan **Edit MX Records**.
     
     ![Välj Redigera MX-poster](../../media/74b4e412-9073-4d2d-8710-fe340b223798.png)
   
 6. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
     
-    |**Prioritet**|**TTL**|**Mail Server**|
+    |**Priority**|**TTL**|**Mail Server**|
     |:-----|:-----|:-----|
-    |10  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |3600  <br/> | *\<domain-key\>*.mail.protection.outlook.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> **Obs:** Hämta ditt *\<domain-key\>* från ditt Microsoft-konto. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
+    |10.3  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |3600  <br/> | *\<domain-key\>*  . mail.protection.outlook.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> **Obs!** Hämta ditt  *\<domain-key\>*  från ditt Microsoft-konto. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![Skriva eller klistra in värden i rutorna för den nya posten](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   
@@ -193,7 +193,7 @@ Följ stegen nedan eller [titta på videon (börja vid 4:43)](https://support.mi
 1. Kom igång genom att gå till domänsidan på Network Solutions med [den här länken](https://www.networksolutions.com/manage-it). Du uppmanas att logga in.
     
     > [!IMPORTANT]
-    > Innan du väljer **knappen Logga in** väljer du först Hantera mina **domännamn** i **listrutan Logga in på:** . 
+    > Innan du väljer knappen **Logga** in väljer du **hantera mina domän namn** i list rutan **log in to:** . 
   
     ![Välj Hantera mina domännamn och logga in på Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -201,9 +201,9 @@ Följ stegen nedan eller [titta på videon (börja vid 4:43)](https://support.mi
     
     ![Markera kryssrutan för din domän](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Välj **Redigera DNS**.
+3. Välj **Edit DNS**.
     
-    ![Välj Redigera DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Välj Edit DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
 4. Välj **Hantera avancerade DNS-poster**.
     
@@ -211,9 +211,9 @@ Följ stegen nedan eller [titta på videon (börja vid 4:43)](https://support.mi
     
     ![Välj Hantera avancerade DNS-poster](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Bläddra ned till avsnittet **Värdalias (CNAME Records)** och välj sedan **Redigera CNAME-poster**.
+5. Rulla ned till avsnittet **Host aliases (CNAME Records)** och välj sedan **Edit CNAME Records**.
     
-    ![Välj Redigera CNAME-poster under värdalias](../../media/2d0a4666-8d40-48f4-886c-64a5157baaf5.png)
+    ![Välj Redigera CNAME-poster under värden alias](../../media/2d0a4666-8d40-48f4-886c-64a5157baaf5.png)
   
 6. I rutorna för de fyra nya posterna skriver du, eller kopierar och klistrar in, värdena från följande tabell.
     
@@ -225,9 +225,9 @@ Följ stegen nedan eller [titta på videon (börja vid 4:43)](https://support.mi
     |enterpriseregistration  <br/> |3600  <br/> |(Ingen inställning)  <br/> |enterpriseregistration.windows.net  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |
     |enterpriseenrollment  <br/> |3600  <br/> |(Ingen inställning)  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |
     
-    ![Skriva eller klistra in värden för de nya posterna](../../media/5ce0b30c-b46c-4778-aa5a-fb5e2f0961c1.png)
+    ![Ange eller klistra in värden för de nya posterna](../../media/5ce0b30c-b46c-4778-aa5a-fb5e2f0961c1.png)
   
-7. När du har lagt till alla CNAME-poster som du behöver väljer du **Fortsätt**.
+7. När du har lagt till alla CNAME-poster du behöver väljer du **Fortsätt**.
     
     ![Välj Fortsätt](../../media/4978bd8b-f6a6-458d-9522-ad612b301c4a.png)
   
@@ -239,14 +239,14 @@ Följ stegen nedan eller [titta på videon (börja vid 4:43)](https://support.mi
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg i stället till de nödvändiga Microsoft-värdena i den aktuella posten så att du har en *enda* SPF-post som innehåller båda uppsättningarna värden. 
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. I stället kan du lägga till de Microsoft-värden som krävs i den aktuella posten så att du har en  *enda*  SPF-post som innehåller båda uppsättningar med värden. 
   
 Följ stegen nedan eller [titta på videon (börja vid 5:35)](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099).
   
 1. Kom igång genom att gå till domänsidan på Network Solutions med [den här länken](https://www.networksolutions.com/manage-it). Du uppmanas att logga in.
     
     > [!IMPORTANT]
-    > Innan du väljer **knappen Logga in** väljer du först Hantera mina **domännamn** i **listrutan Logga in på:** . 
+    > Innan du väljer knappen **Logga** in väljer du **hantera mina domän namn** i list rutan **log in to:** . 
   
     ![Välj Hantera mina domännamn och logga in på Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -254,9 +254,9 @@ Följ stegen nedan eller [titta på videon (börja vid 5:35)](https://support.mi
     
     ![Markera kryssrutan för din domän](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Välj **Redigera DNS**.
+3. Välj **Edit DNS**.
     
-    ![Välj Redigera DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Välj Edit DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
 4. Välj **Hantera avancerade DNS-poster**.
     
@@ -264,7 +264,7 @@ Följ stegen nedan eller [titta på videon (börja vid 5:35)](https://support.mi
     
     ![Välj Hantera avancerade DNS-poster](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Bläddra ned till avsnittet **Text (TXT Records)** och välj sedan **Redigera TXT-poster**.
+5. Rulla ned till avsnittet **text (TXT Records)** och välj sedan **Edit TXT Records**.
     
     ![Välj Redigera TXT-poster under text](../../media/a69a2631-6da2-4e81-99ab-9a9ab9b30b07.png)
   
@@ -274,7 +274,7 @@ Följ stegen nedan eller [titta på videon (börja vid 5:35)](https://support.mi
     |:-----|:-----|:-----|
     |@  <br/> (Värdet ändras till **@ (None)** när du sparar posten.)  <br/> |3600  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.     |
        
-    ![Skriva eller klistra in värden för den nya posten](../../media/11564eca-e2ee-4f17-af2b-a00eb7c157db.png)
+    ![Ange eller klistra in värden för den nya posten](../../media/11564eca-e2ee-4f17-af2b-a00eb7c157db.png)
   
 7. Välj **Fortsätt**.
     
@@ -292,7 +292,7 @@ Följ stegen nedan eller [titta på videon (börja vid 6:18)](https://support.mi
 1. Kom igång genom att gå till domänsidan på Network Solutions med [den här länken](https://www.networksolutions.com/manage-it). Du uppmanas att logga in.
     
     > [!IMPORTANT]
-    > Innan du väljer **knappen Logga in** väljer du först Hantera mina **domännamn** i **listrutan Logga in på:** . 
+    > Innan du väljer knappen **Logga** in väljer du **hantera mina domän namn** i list rutan **log in to:** . 
   
     ![Välj Hantera mina domännamn och logga in på Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -300,9 +300,9 @@ Följ stegen nedan eller [titta på videon (börja vid 6:18)](https://support.mi
     
     ![Markera kryssrutan för din domän](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Välj **Redigera DNS**.
+3. Välj **Edit DNS**.
     
-    ![Välj Redigera DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Välj Edit DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
 4. Välj **Hantera avancerade DNS-poster**.
     
@@ -310,9 +310,9 @@ Följ stegen nedan eller [titta på videon (börja vid 6:18)](https://support.mi
     
     ![Välj Hantera avancerade DNS-poster](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Bläddra ned till avsnittet **Service (SRV Records)** och välj sedan **Redigera SRV-poster**.
+5. Bläddra ned till avsnittet **Service (SRV Records)** och välj sedan **Edit SRV Records**.
     
-    ![Välj Redigera SRV-poster under Tjänst](../../media/9a9248ea-5de5-4e16-9364-f7600fa371f5.png)
+    ![Välj Edit SRV Records under tjänst](../../media/9a9248ea-5de5-4e16-9364-f7600fa371f5.png)
   
 6. I rutorna för de två nya posterna skriver du, eller kopierar och klistrar in, värdena från följande tabell.
     
@@ -320,10 +320,10 @@ Följ stegen nedan eller [titta på videon (börja vid 6:18)](https://support.mi
     
     |**Service**|**Protocol**|**TTL**|**Prioritet**|**Vikt**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |
+    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |9.1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |9.1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |
        
-    ![Skriva eller klistra in värden för de nya posterna](../../media/86968d1c-8e43-4e61-aeaa-37fc7d7ef7a7.png)
+    ![Ange eller klistra in värden för de nya posterna](../../media/86968d1c-8e43-4e61-aeaa-37fc7d7ef7a7.png)
   
 7. Välj **Fortsätt**.
     

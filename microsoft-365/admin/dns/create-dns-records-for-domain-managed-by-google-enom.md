@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,35 +20,35 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3c490fbf-7833-4e43-be34-ed0dc3cce5e3
-description: Lär dig att komma åt eNom och skapa DNS via sidan Google Domains.
-ms.openlocfilehash: 6c6698f3d11f42cd0298bdb66710ec3c62bac5ca
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Lär dig hur du kommer åt eNom och skapar DNS via sidan Google domains.
+ms.openlocfilehash: 37fa8836b7511d51ef2dcb137f36d62eebc36443
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400262"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645617"
 ---
 # <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>Skapa DNS-poster när din domän hanteras av Google (eNom)
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
   
-Om du vill migrera dina e-postkonton till Microsoft måste du skapa en DNS-post hos domänregistraren.
+För att migrera dina e-postkonton till Microsoft måste du skapa en DNS-post hos din domän registrator.
   
-Om du köpte domänen via Google när du registrerade dig för ditt **Google Apps for Work-konto** hanteras dina DNS-poster av Google men registreras hos eNom. 
+Om du har köpt din domän via Google när du registrerade dina **Google Apps för arbets** konton hanteras dina DNS-poster av Google men vara registrerad hos eNom. 
   
-Du kan komma åt eNom och skapa DNS via sidan Google **Domäner.** Följ bara anvisningarna i den här artikeln. 
+Du kan komma åt eNom och skapa DNS via sidan Google **Domains** . Följ bara anvisningarna i den här artikeln. 
   
 ## <a name="create-the-dns-record"></a>Skapa DNS-posten
 
-1. På [Google Admin-konsolen](https://www.google.com/work/apps/business)väljer du **Logga in**.
+1. I [Google Admin Console](https://www.google.com/work/apps/business)väljer du **Logga**in.
     
     ![Google-Apps-Configure-1-1-0](../../media/37a6e9f6-319e-4c02-aa18-d8d06df7953d.png)
   
-2. Ange ditt domännamn och välj sedan **Gå**.
+2. Ange ditt domän namn och välj sedan **Sök**.
     
     ![Google Apps - Konfigurera-1-1-1](../../media/2caf8dcb-4d40-4cfa-bc40-d634e454e699.png)
   
-3. Längst ned på sidan väljer du **Fler kontroller**.
+3. Välj **fler kontroller**längst ned på sidan.
     
     ![Google-Apps-Configure-1-2-0](../../media/1518ff78-035b-423e-85a3-c16d7faa0968.png)
   
@@ -56,32 +56,32 @@ Du kan komma åt eNom och skapa DNS via sidan Google **Domäner.** Följ bara an
     
     ![Google Apps - Konfigurera-1-2-1](../../media/c2972c06-9bca-43bd-9876-2cee63043bf1.png)
   
-5. På sidan **Domäner** väljer du **Lägg till/ta bort domäner**.
+5. På sidan **domäner** väljer du **Lägg till/ta bort domäner**.
     
     ![Google Apps - Konfigurera-1-2-2](../../media/07b8068f-9a05-40aa-a041-fc495c729a18.png)
   
-6. Välj **Avancerade DNS-inställningar på**sidan **Domäner** .
+6. Välj **Advanced DNS Settings**på sidan **Domains** .
     
     > [!NOTE]
-    > Om du inte köpte ett domännamn via Google när du registrerade ditt **Google Apps for Work** -konto visas inte **Advanced DNS settings** på sidan **Domains**. Då måste du i stället gå direkt till domänvärdens webbplats för att komma åt DNS-inställningarna och följa de här anvisningarna. Mer information finns i [Komma åt domäninställningarna](https://support.google.com/a/answer/54693?hl=en) för G Suite. 
+    > Om du inte köpte ett domännamn via Google när du registrerade ditt **Google Apps for Work** -konto visas inte **Advanced DNS settings** på sidan **Domains**. Då måste du i stället gå direkt till domänvärdens webbplats för att komma åt DNS-inställningarna och följa de här anvisningarna. Se [komma åt dina domän inställningar för G Suite](https://support.google.com/a/answer/54693?hl=en) för mer information. 
   
-    ![Google-Apps-eNom-Konfigurera-1-3](../../media/b244b29c-e479-40be-b380-4ffa0f74b421.png)
+    ![Google-Apps – eNom-Configure-1-3](../../media/b244b29c-e479-40be-b380-4ffa0f74b421.png)
   
-7. På sidan **Avancerade DNS-inställningar** väljer du **Logga in på DNS-konsolen**. Skriv ned **inloggningsnamnet** och **lösenord**sinformationen. Du behöver det i nästa steg. 
+7. På sidan **Advanced DNS Settings** väljer **du logga in på DNS Console**. Skriv ned **inloggningsnamnet** och **lösenord**sinformationen. Du behöver det i nästa steg. 
     
-    ![Google-Apps-eNom-Konfigurera-1-4](../../media/056a2767-462f-4847-acee-d01e3f773add.png)
+    ![Google-Apps – eNom-Configure-1-4](../../media/056a2767-462f-4847-acee-d01e3f773add.png)
   
 8. Logga in på Google **Domain Manager** med **inloggningsnamnet** och **lösenordet** fån sidan **Advanced DNS settings**. 
     
-    ![Google-Apps-eNom-Konfigurera-1-5](../../media/08b74652-8cdb-4560-a5fd-0899f86deee8.png)
+    ![Google-Apps – eNom-Configure-1-5](../../media/08b74652-8cdb-4560-a5fd-0899f86deee8.png)
   
-9. Välj **Redigera**i avsnittet **Värdposter** på sidan ***domain_name*** .
+9. På sidan ** _domain_name_*_, i avsnittet _* Host Records** väljer du **Edit**.
     
-    ![Google-Apps-eNom-Konfigurera-1-6](../../media/d54fec18-b9d1-4796-8397-0393c964eade.png)
+    ![Google-Apps – eNom-Configure-1-6](../../media/d54fec18-b9d1-4796-8397-0393c964eade.png)
   
-10. Välj **Lägg till ny**i avsnittet **Värdposter** .
+10. Välj **Add New**i avsnittet **Host Records** .
     
-    ![Google-Apps-eNom-Konfigurera-1-7](../../media/3562806a-4328-4e60-a717-0566841204cf.png)
+    ![Google-Apps – eNom-Configure-1-7](../../media/3562806a-4328-4e60-a717-0566841204cf.png)
   
 11. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
     
@@ -90,13 +90,13 @@ Du kan komma åt eNom och skapa DNS via sidan Google **Domäner.** Följ bara an
     |@  <br/> ||TXT  <br/> |
 
     > [!NOTE]
-    > Detta är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen. 
+    > Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen. 
   
     [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)
   
 12. Välj **Spara**.
     
-    ![Google-Apps-eNom-Configure-1-9](../../media/7a6f7b45-8f79-487b-afe4-05949c2c04e8.png)
+    ![Google-Apps – eNom-Configure-1-9](../../media/7a6f7b45-8f79-487b-afe4-05949c2c04e8.png)
   
 13. Välj **Spara ändringar**.
     

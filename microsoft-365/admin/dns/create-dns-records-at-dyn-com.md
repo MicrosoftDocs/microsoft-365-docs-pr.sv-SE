@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 34e57a00-2a7d-469c-beec-089423f18369
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Dyn.com för Microsoft.
-ms.openlocfilehash: 91ac642a43ba48845ec79d7d13d4bce6afbb716d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 91dbd3fbde8417764a01eb285b267f3981b2f139
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400503"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646145"
 ---
 # <a name="create-dns-records-at-dyncom-for-microsoft"></a>Skapa DNS-poster på Dyn.com för Microsoft
 
@@ -46,11 +46,11 @@ Om Dyn.com är din DNS-värd följer du stegen i den här artikeln för att veri
     
     ![Dyn-BP-Configure-1-1](../../media/77597d44-9b04-43b1-8e23-d4fad238def2.png)
   
-2. På sidan **Zonnivåtjänster** väljer du **Dyn Standard DNS-tjänst** för den domän som du vill redigera. 
+2. Gå till sidan **Zone Level Services** och välj **dyn standard DNS service** för den domän som du vill redigera. 
     
-3. Välj **Inställningar**på **DNS-sidan** för domänen .
+3. På sidan **DNS** för domänen väljer du **Inställningar**.
     
-4. Välj **Aktivera expertgränssnitt**.
+4. Välj **Enable expert Interface**.
     
 5. Gå till avsnittet **Add DNS Record**. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell. 
     
@@ -60,9 +60,9 @@ Om Dyn.com är din DNS-värd följer du stegen i den här artikeln för att veri
     |:-----|:-----|:-----|:-----|
     |(Lämna det här fältet tomt.)  <br/> |600  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
        
-   ![Dyn-BP-Verifiera-1-1](../../media/b3730b15-a313-4b4c-b91e-646eebb649e8.png)
+   ![Dyn-BP-verify-1-1](../../media/b3730b15-a313-4b4c-b91e-646eebb649e8.png)
   
-6. Välj **Skapa post**.
+6. Välj **skapa post**.
     
     ![Dyn-BP-Verify-1-2](../../media/8b63b4ee-dbd7-44a7-b1e6-c6892b02f13e.png)
   
@@ -97,11 +97,11 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Dyn-BP-Configure-1-1](../../media/77597d44-9b04-43b1-8e23-d4fad238def2.png)
   
-2. På sidan **Zonnivåtjänster** väljer du **Dyn Standard DNS-tjänst** för den domän som du vill redigera. 
+2. Gå till sidan **Zone Level Services** och välj **dyn standard DNS service** för den domän som du vill redigera. 
     
-3. Välj **Inställningar**på DNS-sidan för domänen .
+3. På sidan DNS för domänen väljer du **Inställningar**.
     
-4. Välj **Aktivera expertgränssnitt**.
+4. Välj **Enable expert Interface**.
     
 5. Gå till avsnittet **Add DNS Record**. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell. 
     
@@ -109,11 +109,11 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     |**Host**|**TTL**|**Type**|**Data**|
     |:-----|:-----|:-----|:-----|
-    |(Lämna det här fältet tomt.)  <br/> |600  <br/> |MX  <br/> |*\<domain-key\>* 10.mail.protection.outlook.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> **10** motsvarar MX-prioritetsvärdet. Skriv 10 i början av MX-värdet och infoga ett blanksteg före resten av värdet.  <br/> **Anm.:** Hämta ditt *\<domain-key\>* från ditt Microsoft-konto.           [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)      <br>    [Mer information om prioritet finns i ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)Vad är MX-prioritet? <br/> |
+    |(Lämna det här fältet tomt.)  <br/> |600  <br/> |MX  <br/> |10  *\<domain-key\>*  . mail.Protection.Outlook.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> **10** motsvarar MX-prioritetsvärdet. Skriv 10 i början av MX-värdet och infoga ett blanksteg före resten av värdet.  <br/> **Obs!** Hämta ditt  *\<domain-key\>*  från ditt Microsoft-konto.           [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)      <br>    [Mer information om prioritet finns i ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)Vad är MX-prioritet? <br/> |
    
-    ![Dyn-BP-Konfigurera-2-1](../../media/62ac77b7-c84d-426d-9ec4-a28d6479ad04.png)
+    ![Dyn-BP-Configure-2-1](../../media/62ac77b7-c84d-426d-9ec4-a28d6479ad04.png)
   
-6. Välj **Skapa post**.
+6. Välj **skapa post**.
     
     ![Dyn-BP - Konfigurera-2-2](../../media/e84e2cca-75e3-4584-8a98-f2f89cb71bd3.png)
   
@@ -121,22 +121,22 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Dyn-BP - Konfigurera-2-3](../../media/f24f02cc-c0b7-42cf-a2ff-4d0fc203e4de.png)
   
-8. Välj **Använd ändringar**.
+8. Välj **Apply Changes**.
     
     ![Dyn-BP - Konfigurera-2-4](../../media/0cc23c2b-b6f2-4f58-af20-4c6506de7b43.png)
   
-## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Lägga till de sex CNAME-poster som krävs för Microsoft
+## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Lägga till de sex CNAME-posterna som krävs för Microsoft
 <a name="BKMK_add_CNAME"> </a>
 
 1. Kom igång genom att gå till domänsidan på Dyn.com genom att klicka på [den här länken](https://account.dyn.com/dns/). Du uppmanas att logga in först.
     
     ![Dyn-BP-Configure-1-1](../../media/77597d44-9b04-43b1-8e23-d4fad238def2.png)
   
-2. På sidan **Zonnivåtjänster** väljer du **Dyn Standard DNS-tjänst** för den domän som du vill redigera. 
+2. Gå till sidan **Zone Level Services** och välj **dyn standard DNS service** för den domän som du vill redigera. 
     
-3. Välj **Inställningar**på **DNS-sidan** för domänen .
+3. På sidan **DNS** för domänen väljer du **Inställningar**.
     
-4. Välj **Aktivera expertgränssnitt**.
+4. Välj **Enable expert Interface**.
     
 5. Lägg till den första av de sex CNAME-posterna.
     
@@ -152,15 +152,15 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     |enterpriseregistration  <br/> |600  <br/> |CNAME  <br/> |enterpriseregistration.windows.net.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |
     |enterpriseenrollment  <br/> |600  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |
    
-    ![Dyn-BP-Konfigurera-3-1](../../media/1fd80695-d3d7-4298-9ebe-97a69f46f1b2.png)
+    ![Dyn-BP-Configure-3-1](../../media/1fd80695-d3d7-4298-9ebe-97a69f46f1b2.png)
   
-6. Välj **Skapa post**.
+6. Välj **skapa post**.
     
     ![Dyn-BP - Konfigurera-3-2](../../media/89551495-3fa5-44ab-96b2-855f70be0880.png)
   
 7. Lägg till de återstående fem CNAME-posterna.
     
-    Skapa en post i avsnittet **Lägg till DNS-post** med hjälp av värdena från nästa rad i tabellen och välj sedan **skapa post** igen för att slutföra posten. 
+    I avsnittet **Add DNS Record** skapar du en post med värdena från nästa rad i tabellen och väljer sedan **create Record** igen för att slutföra posten. 
     
     Upprepa proceduren tills du har skapat alla sex CNAME-posterna.
     
@@ -168,17 +168,17 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg i stället till de nödvändiga Microsoft-värdena i den aktuella posten så att du har en *enda* SPF-post som innehåller båda uppsättningarna värden.
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. I stället kan du lägga till de Microsoft-värden som krävs i den aktuella posten så att du har en  *enda*  SPF-post som innehåller båda uppsättningar med värden.
   
 1. Kom igång genom att gå till domänsidan på Dyn.com genom att klicka på [den här länken](https://account.dyn.com/dns/). Du uppmanas att logga in först.
     
     ![Dyn-BP-Configure-1-1](../../media/77597d44-9b04-43b1-8e23-d4fad238def2.png)
   
-2. På sidan **Zonnivåtjänster** väljer du **Dyn Standard DNS-tjänst** för den domän som du vill redigera. 
+2. Gå till sidan **Zone Level Services** och välj **dyn standard DNS service** för den domän som du vill redigera. 
     
-3. Välj **Inställningar**på **DNS-sidan** för domänen .
+3. På sidan **DNS** för domänen väljer du **Inställningar**.
     
-4. Välj **Aktivera expertgränssnitt**.
+4. Välj **Enable expert Interface**.
     
 5. Gå till avsnittet **Add DNS Record**. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell. 
     
@@ -188,9 +188,9 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     |:-----|:-----|:-----|:-----|
     |(Lämna det här fältet tomt.)  <br/> |600  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |
    
-    ![Dyn-BP-Konfigurera-4-1](../../media/f8511349-3ea2-40c3-9853-98e1a58a91b5.png)
+    ![Dyn-BP-Configure-4-1](../../media/f8511349-3ea2-40c3-9853-98e1a58a91b5.png)
   
-6. Välj **Skapa post**.
+6. Välj **skapa post**.
     
     ![Dyn-BP - Konfigurera-4-2](../../media/bbe04835-d3c0-4146-8123-9781bb9eca51.png)
   
@@ -201,11 +201,11 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Dyn-BP-Configure-1-1](../../media/77597d44-9b04-43b1-8e23-d4fad238def2.png)
   
-2. På sidan **Zonnivåtjänster** väljer du **Dyn Standard DNS-tjänst** för den domän som du vill redigera. 
+2. Gå till sidan **Zone Level Services** och välj **dyn standard DNS service** för den domän som du vill redigera. 
     
-3. Välj **Inställningar**på **DNS-sidan** för domänen .
+3. På sidan **DNS** för domänen väljer du **Inställningar**.
     
-4. Välj **Aktivera expertgränssnitt**.
+4. Välj **Enable expert Interface**.
     
 5. Lägg till den första av de två SRV-posterna.
     
@@ -215,18 +215,18 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     |**Host**|**TTL**|**Type**|**Data**|
     |:-----|:-----|:-----|:-----|
-    |_sip._tls|600|SRV|100 1 443 sipdir.online.lync.com. **Värdet MÅSTE sluta med en punkt (.)**<br>**Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |
-    |_sipfederationtls._tcp|600|SRV|100 1 5061 sipfed.online.lync.com. **Värdet MÅSTE sluta med en punkt (.)**<br> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |
+    |_sip _sip._tls|600|SRV|100 1 443 sipdir.online.lync.com. **Värdet MÅSTE sluta med en punkt (.)**<br>**Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |
+    |_sipfederationtls _sipfederationtls._tcp|600|SRV|100 1 5061 sipfed.online.lync.com. **Värdet MÅSTE sluta med en punkt (.)**<br> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |
    
-    ![Dyn-BP-Konfigurera-5-1](../../media/a6873411-f4ce-4327-9145-02d435930976.png)
+    ![Dyn-BP-Configure-5-1](../../media/a6873411-f4ce-4327-9145-02d435930976.png)
   
-6. Välj **Skapa post**.
+6. Välj **skapa post**.
     
     ![Dyn-BP - Konfigurera-5-2](../../media/e6f33452-e527-473b-a645-b31ed70b0d43.png)
   
 7. Lägg till den andra SRV-posten.
     
-    Skapa en post i avsnittet **Lägg till DNS-post** med hjälp av värdena från den andra raden i tabellen och välj sedan **skapa post** igen för att slutföra posten. 
+    I avsnittet **Add DNS Record** skapar du en post med värdena från den andra raden i tabellen och väljer sedan **create Record** igen för att slutföra posten. 
     
 > [!NOTE]
 >  Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 

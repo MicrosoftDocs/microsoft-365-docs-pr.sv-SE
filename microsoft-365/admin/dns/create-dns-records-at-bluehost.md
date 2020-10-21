@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Bluehost för Microsoft.
-ms.openlocfilehash: c0db0a00b48e6a460b8e21c95b8d8852914ab87b
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: c0ba1b876c939632bc6c43a6e0004fbbe23a7723
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307049"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646241"
 ---
 # <a name="create-dns-records-at-bluehost-for-microsoft"></a>Skapa DNS-poster på Bluehost för Microsoft
 
@@ -53,7 +53,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
     (Du kan behöva rulla nedåt.)
     
-3. I området ***domain_name*** på raden **DNS Zone Editor** väljer du **Manage DNS Records**.
+3. I området ** _domain_name_*_ väljer du*** **Manage DNS Records**på raden _ DNS Zone Editor.
     
 4. Gå till sidan **DNS Zone Editor** och området **Add DNS Record**. I den nya postens rutor skriver du in, eller kopierar och klistrar in värdena från följande tabell. 
     
@@ -93,7 +93,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     (Du kan behöva rulla nedåt.)
     
-3. I området ***domain_name*** på raden **DNS Zone Editor** väljer du **Manage DNS Records**.
+3. I området ** _domain_name_*_ väljer du*** **Manage DNS Records**på raden _ DNS Zone Editor.
     
 4. Gå till sidan **DNS Zone Editor** och området **Add DNS Record**. I den nya postens rutor skriver du in, eller kopierar och klistrar in värdena från följande tabell. 
     
@@ -130,7 +130,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     (Du kan behöva rulla nedåt.)
     
-3. I området ***domain_name*** på raden **DNS Zone Editor** väljer du **Manage DNS Records**.
+3. I området ** _domain_name_*_ väljer du*** **Manage DNS Records**på raden _ DNS Zone Editor.
     
 4. Leta reda på raden för posten **Autodiscover** i avsnittet **a (hosts)** Records och välj **ta bort** för den raden. 
     
@@ -181,7 +181,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     (Du kan behöva rulla nedåt.)
     
-3. I området ***domain_name*** på raden **DNS Zone Editor** väljer du **Manage DNS Records**.
+3. I området ** _domain_name_*_ väljer du*** **Manage DNS Records**på raden _ DNS Zone Editor.
     
 4. Gå till sidan **DNS Zone Editor** och området **Add DNS Record**. I den nya postens rutor skriver du in, eller kopierar och klistrar in värdena från följande tabell. 
     
@@ -206,7 +206,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     (Du kan behöva rulla nedåt.)
     
-3. I området ***domain_name*** på raden **DNS Zone Editor** väljer du **Manage DNS Records**.
+3. I området ** _domain_name_*_ väljer du*** **Manage DNS Records**på raden _ DNS Zone Editor.
     
 4. Skapa den första av de två SRV-posterna.
     

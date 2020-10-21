@@ -1,10 +1,10 @@
 ---
-title: ICANN Verifiering av kontaktuppgifter
+title: ICANN verifiering av kontakt information
 f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,24 +19,24 @@ search.appverid:
 - MOE150
 ms.assetid: 0413dcce-26be-4b8c-b3fa-73ac1ac4fb35
 ROBOTS: NOINDEX
-description: Läs om hur du validerar dina kontaktuppgifter för att följa ICANN:s regler.
-ms.openlocfilehash: e96ae69af282af84595283a431ccb73f869f1454
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Lär dig hur du verifierar din kontakt information så att den följer ICANN bestämmelser.
+ms.openlocfilehash: cddde025fb020347c52de49841e35e2e1aed90ca
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399356"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645053"
 ---
-# <a name="icann-verification-of-contact-information"></a>ICANN Verifiering av kontaktuppgifter
+# <a name="icann-verification-of-contact-information"></a>ICANN verifiering av kontakt information
 
-När du köper en domän eller gör ändringar i kontaktinformationen för en domän måste registratorn validera dina kontaktuppgifter för att följa ICANN:s regler.
+När du köper en domän eller gör ändringar i kontakt informationen för en domän måste registratorn verifiera din kontakt information för att följa ICANN bestämmelser.
 
-För validering skickas ett e-postmeddelande till registrantens adress.
+För verifiering skickas ett e-postmeddelande till registrant adress.
 
- **Om du vill verifiera din kontaktinformation väljer du länken i verifieringsmeddelandet.** Om domänägarna inte verifierar e-postadressen stängs domänen av. Gå sedan till sidan Domäner i [administrationscentret](https://admin.microsoft.com/adminportal/home?ref=Domains) och kontrollera domänstatusen.
+ **Verifiera din kontakt information genom att klicka på länken i e-postbekräftelsen.** Om domän ägarna inte verifierar e-postadressen kommer domänen att avaktiveras. Gå sedan till [sidan domäner](https://admin.microsoft.com/adminportal/home?ref=Domains) i administrations centret och kontrol lera domän statusen.
 
-E-postmeddelandet kommer att se ut så här:
+E-postmeddelandet ser ut så här:
 
-![Exempel på e-post](../../media/8bf27c08-510c-4d49-b152-8d047d038f1f.jpg)
+![E-postexempel](../../media/8bf27c08-510c-4d49-b152-8d047d038f1f.jpg)
 
 

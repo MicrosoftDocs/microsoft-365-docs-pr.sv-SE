@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 004030b4-10ad-4026-96e7-011b6afc7e73
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Register365 för Microsoft.
-ms.openlocfilehash: e580779ce674375564c1b3ab6123ef1b19f50be0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a4c66a4c16960332150a51779207defb00df3044
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400322"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645773"
 ---
 # <a name="create-dns-records-at-register365-for-microsoft"></a>Skapa DNS-poster på Register365 för Microsoft
 
@@ -40,13 +40,13 @@ Det här är de viktigaste posterna att lägga till.
     
 - [Lägga till en MX-post så att e-post för din domän kommer till Microsoft.](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
     
-- [Lägga till de sex CNAME-poster som krävs för Microsoft](#add-the-six-cname-records-that-are-required-for-microsoft)
+- [Lägga till de sex CNAME-posterna som krävs för Microsoft](#add-the-six-cname-records-that-are-required-for-microsoft)
     
 - [Lägga till en TXT-post för SPF för att förhindra skräppost](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
 - [Lägga till de två SRV-posterna som krävs för Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-När du har lagt till dessa poster på Microsoft konfigureras domänen så att den fungerar med Microsoft-tjänster.
+När du har lagt till dessa poster på Microsoft är din domän konfigurerad för att fungera med Microsoft-tjänster.
   
 > [!NOTE]
 >  Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
@@ -73,15 +73,15 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
     (Välj värdet för **Type** i listrutan.) 
     
-    (Om du behöver lägga till en rad väljer du **LÄGG TILL A/CNAME-POSTER (+)**.)
+    (Om du behöver lägga till en rad väljer du **Lägg till a/CNAME-poster (+)**.)
     
     (Du kan behöva rulla nedåt.)
     
-    |**Värdnamn**|**Typ**|**Resultat**|
+    |**Värdnamn**|**Typ**|**Result**|
     |:-----|:-----|:-----|
     |(Lämna det här fältet tomt.)  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![Ange värden på sidan Lägg till/ändra DNS-zon](../../media/22326005-de95-464d-8e33-08ea31a89b2d.png)
+    ![Ange värden på sidan lägga till/ändra DNS-zon](../../media/22326005-de95-464d-8e33-08ea31a89b2d.png)
   
 4. Välj **Spara**.
     
@@ -129,11 +129,11 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     (Du kan behöva rulla nedåt.)
     
-    |**Värdnamn**|**Priority**|**Resultat**|
+    |**Värdnamn**|**Priority**|**Result**|
     |:-----|:-----|:-----|
-    |(Lämna det här fältet tomt.)  <br/> |1  <br/> [Mer information om prioritet finns i ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)Vad är MX-prioritet? <br/> | *\<domain-key\>*.mail.protection.outlook.com  <br/> **Anm.:** Hämta ditt *\<domain-key\>* från ditt Microsoft-konto.  [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)     |
+    |(Lämna det här fältet tomt.)  <br/> |9.1  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Obs!** Hämta ditt  *\<domain-key\>*  från ditt Microsoft-konto.  [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)     |
    
-    ![Ange värden på sidan Lägg till/ändra DNS-zon](../../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
+    ![Ange värden på sidan lägga till/ändra DNS-zon](../../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
   
 4. Välj **Spara**.
     
@@ -151,7 +151,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Välj Spara](../../media/1fb69bb5-b5df-4060-adf1-eb26cfaa6c4f.png)
   
-## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Lägga till de sex CNAME-poster som krävs för Microsoft
+## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Lägga till de sex CNAME-posterna som krävs för Microsoft
 <a name="BKMK_add_CNAME"> </a>
 
 1. Kom igång genom att gå till domänsidan på Register365 genom att klicka på [den här länken](https://admin.register365.com/dns/). Du uppmanas att logga in först.
@@ -168,7 +168,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     (Välj värdet för **Type** i listrutan.) 
     
-    (Om du behöver lägga till en rad väljer du **LÄGG TILL A/CNAME-POSTER (+)**.)
+    (Om du behöver lägga till en rad väljer du **Lägg till a/CNAME-poster (+)**.)
     
     (Du kan behöva rulla nedåt.)
     
@@ -180,7 +180,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net  <br/> |
     |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
-    ![Ange värden på sidan Lägg till/ändra DNS-zon](../../media/3b79f0de-9cab-4c98-8fa8-c92b35241e8b.png)
+    ![Ange värden på sidan lägga till/ändra DNS-zon](../../media/3b79f0de-9cab-4c98-8fa8-c92b35241e8b.png)
   
 4. Välj **Spara**.
     
@@ -190,7 +190,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg i stället till de nödvändiga Microsoft-värdena i den aktuella posten så att du har en *enda* SPF-post som innehåller båda uppsättningarna värden. 
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. I stället kan du lägga till de Microsoft-värden som krävs i den aktuella posten så att du har en  *enda*  SPF-post som innehåller båda uppsättningar med värden. 
   
 1. Kom igång genom att gå till domänsidan på Register365 genom att klicka på [den här länken](https://admin.register365.com/dns/). Du uppmanas att logga in först.
     
@@ -206,15 +206,15 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     (Välj värdet för **Type** i listrutan.) 
     
-    (Om du behöver lägga till en rad väljer du **LÄGG TILL A/CNAME-POSTER (+)**.)
+    (Om du behöver lägga till en rad väljer du **Lägg till a/CNAME-poster (+)**.)
     
     (Du kan behöva rulla nedåt.)
     
-    |**Värdnamn**|**Typ**|**Resultat**|
+    |**Värdnamn**|**Typ**|**Result**|
     |:-----|:-----|:-----|
     |(Lämna det här fältet tomt.)  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |
    
-    ![Ange värden på sidan Lägg till/ändra DNS-zon](../../media/33976398-da8a-439b-8e3d-534503b20ee0.png)
+    ![Ange värden på sidan lägga till/ändra DNS-zon](../../media/33976398-da8a-439b-8e3d-534503b20ee0.png)
   
 4. Välj **Spara**.
     
@@ -241,10 +241,10 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     |**Name**|**Prioritet**|**Vikt**|**Port**|**Result**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip _sip._tls  <br/> |100  <br/> |9.1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls _sipfederationtls._tcp  <br/> |100  <br/> |9.1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
-    ![Ange värden i avsnittet Serviceposter](../../media/56bb1813-90e2-40c8-98bf-750e2dc3f8b6.png)
+    ![Ange värden i avsnittet service Records](../../media/56bb1813-90e2-40c8-98bf-750e2dc3f8b6.png)
   
 4. Välj **Spara**.
     

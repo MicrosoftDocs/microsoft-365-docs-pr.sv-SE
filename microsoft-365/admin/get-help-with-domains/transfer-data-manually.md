@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Få reda på hur du överför data manuellt mellan två Microsoft 365-konton när du ändrade plan-eller företags namnet eller kombinerar flera abonnemang till ett.
-ms.openlocfilehash: 1297e2d55692262be55b166dacc56cb89cc6c8a0
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b7b0bb9c9b95b31d98040ae90632ef87a7fb0e3b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948730"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645149"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Överföra data manuellt mellan två konton
 

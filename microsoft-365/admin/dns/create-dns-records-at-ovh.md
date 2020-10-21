@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på OVH för Microsoft.
-ms.openlocfilehash: b462979a3ab1bcf769c78d15d9fd3ad03f307ef0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 87a2a731a253fdc0593a1aae8020e615dca63c4a
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400346"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645821"
 ---
 # <a name="create-dns-records-at-ovh-for-microsoft"></a>Skapa DNS-poster på OVH för Microsoft
 
@@ -46,7 +46,7 @@ Det här är de viktigaste posterna att lägga till.
     
 - [Lägga till de två SRV-posterna som krävs för Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-När du har lagt till dessa poster på OVH konfigureras domänen så att den fungerar med Microsoft-tjänster.
+När du har lagt till dessa poster på OVH är din domän konfigurerad för att fungera med Microsoft-tjänster.
 
   
 > [!NOTE]
@@ -64,11 +64,11 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. Under **Domäner**väljer du namnet på den domän som du vill redigera.
+2. Under **domäner**väljer du namnet på den domän som du vill redigera.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Välj **DNS-zon**.
+3. Välj **DNS Zone**.
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
@@ -76,13 +76,13 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
-5. Välj **TXT**
+5. Välj **txt**
     
-    ![OVH välj TXT-post](../../media/3aaa9dae-0b1d-436b-a980-b67a970f31a9.png)
+    ![OVH Select TXT-post](../../media/3aaa9dae-0b1d-436b-a980-b67a970f31a9.png)
   
-6. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell. Om du vill tilldela ett TTL-värde väljer du **Anpassad** i listrutan och skriver sedan värdet i textrutan. 
+6. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell. Om du vill tilldela ett TTL-värde väljer du **personligt** i list rutan och skriver sedan in värdet i text rutan. 
     
-    |**Record type**|**Underdomän**|**TTL**|**Värde**|
+    |**Record type**|**Sub-domain (Underdomän)**|**TTL**|**Värde**|
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |(lämna tomt)  <br/> |3600 (sekunder)  <br/> |MS=msxxxxxxxx  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
@@ -120,11 +120,11 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. Under **Domäner**väljer du namnet på den domän som du vill redigera.
+2. Under **domäner**väljer du namnet på den domän som du vill redigera.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Välj **DNS-zon**.
+3. Välj **DNS Zone**.
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
@@ -136,16 +136,16 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![OVH MX record type](../../media/29b5e54e-440a-41f2-9eb9-3de573922ddf.png)
   
-6. I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell. Om du vill tilldela ett TTL-värde väljer du **Anpassad** i listrutan och skriver sedan värdet i textrutan. 
+6. I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell. Om du vill tilldela ett TTL-värde väljer du **personligt** i list rutan och skriver sedan in värdet i text rutan. 
     
     > [!NOTE]
-    > Som standard använder OVH relativ notation för målet, som lägger till domännamnet i slutet av målposten. Lägg till en punkt i målposten, som visas i tabellen nedan, om du vill använda absolut notation i stället. 
+    > Som standard använder OVH relativ notation för målet, som lägger till domän namnet i slutet av mål posten. Lägg till en punkt i målposten, som visas i tabellen nedan, om du vill använda absolut notation i stället. 
   
-    |**Record type**|**Underdomän**|**TTL**|**Priority**|**Target**|
+    |**Record type**|**Sub-domain (Underdomän)**|**TTL**|**Priority**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(lämna tomt)  <br/> |3600 (sekunder)  <br/> |10  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |\<domain-key\>.mail.protection.outlook.com.  <br/> **Anm.:** Hämta ditt *\<domain-key\>* från ditt Microsoft-konto.  [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |(lämna tomt)  <br/> |3600 (sekunder)  <br/> |10.3  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |\<domain-key\>. mail.protection.outlook.com.  <br/> **Obs!** Hämta ditt  *\<domain-key\>*  från ditt Microsoft-konto.  [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)  |
    
-    ![OVH MX rekord för post](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
+    ![OVH MX-post för e-post](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
 7. Välj **Nästa**.
     
@@ -155,7 +155,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![OVH MX record select Confirm](../../media/090bfb11-a753-4af0-8982-582a4069a169.png)
   
-9. Om det finns andra MX-poster kan du ta bort alla i listan på sidan **DNS Zone**. Markera varje post och välj sedan ikonen Papperskorgen **Ta bort** i kolumnen **Åtgärder.** 
+9. Om det finns andra MX-poster kan du ta bort alla i listan på sidan **DNS Zone**. Välj varje post och sedan, i kolumnen **Actions** , väljer du ikonen pappers korg – kan **ta bort** . 
     
     ![OVH delete MX record](../../media/892b328b-7057-4828-b8c5-fe26284dc8c2.png)
   
@@ -168,11 +168,11 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. Under **Domäner**väljer du namnet på den domän som du vill redigera.
+2. Under **domäner**väljer du namnet på den domän som du vill redigera.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Välj **DNS-zon**.
+3. Välj **DNS Zone**.
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
@@ -186,9 +186,9 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 6. Skapa den första CNAME-posten.
     
-    I rutorna för den nya posten anger du eller kopierar och klistrar in värdena från den första raden i följande tabell. Om du vill tilldela ett TTL-värde väljer du **Anpassad** i listrutan och skriver sedan värdet i textrutan. 
+    I rutorna för den nya posten anger du eller kopierar och klistrar in värdena från den första raden i följande tabell. Om du vill tilldela ett TTL-värde väljer du **personligt** i list rutan och skriver sedan in värdet i text rutan. 
     
-    |**Record type**|**Sub-domain (Underdomän)**|**Target (mål)**|**TTL**|
+    |**Record type**|**Sub-domain (Underdomän)**|**Target**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com.  <br/> |3600 sekunder  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> |3600 sekunder  <br/> |
@@ -212,17 +212,17 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg i stället till de nödvändiga Microsoft-värdena i den aktuella posten så att du har en *enda* SPF-post som innehåller båda uppsättningarna värden. 
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. I stället kan du lägga till de Microsoft-värden som krävs i den aktuella posten så att du har en  *enda*  SPF-post som innehåller båda uppsättningar med värden. 
   
 1. Kom igång genom att gå till domänsidan på OVH med [den här länken](https://www.ovh.com/manager/). Du uppmanas att logga in först.
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. Under **Domäner**väljer du namnet på den domän som du vill redigera.
+2. Under **domäner**väljer du namnet på den domän som du vill redigera.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Välj **DNS-zon**.
+3. Välj **DNS Zone**.
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
@@ -230,15 +230,15 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
-5. Välj **TXT**.
+5. Välj **txt**.
     
 6. I rutorna för den nya posten skriver du in eller kopierar och klistrar in följande värden.
     
-    |**Record type**|**Underdomän**|**TTL**|**TXT Value**|
+    |**Record type**|**Sub-domain (Underdomän)**|**TTL**|**TXT Value**|
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |(lämna tomt)  <br/> |3600 (sekunder)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |
    
-    ![OVH Lägg till TXT-post för SPF](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)
+    ![OVH lägga till TXT-post för SPF](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)
   
 7. Välj **Nästa**.
     
@@ -255,11 +255,11 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. Under **Domäner**väljer du namnet på den domän som du vill redigera.
+2. Under **domäner**väljer du namnet på den domän som du vill redigera.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Välj **DNS-zon**.
+3. Välj **DNS Zone**.
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
@@ -273,14 +273,14 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 6. Skapa den första SRV-posten.
     
-    I rutorna för den nya posten anger du eller kopierar och klistrar in värdena från den första raden i följande tabell. Om du vill tilldela ett TTL-värde väljer du **Anpassad** i listrutan och skriver sedan värdet i textrutan. 
+    I rutorna för den nya posten anger du eller kopierar och klistrar in värdena från den första raden i följande tabell. Om du vill tilldela ett TTL-värde väljer du **personligt** i list rutan och skriver sedan in värdet i text rutan. 
     
     |**Record type**|**Sub-domain (Underdomän)**|**Prioritet**|**Vikt**|**Port**|**TTL**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Service)  <br/> |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |3600 (sekunder)  <br/> |sipdir.online.lync.com.  <br/> |
-    |SRV (Service)  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |3600 (sekunder)  <br/> |sipfed.online.lync.com.  <br/> |
+    |SRV (Service)  <br/> |_sip _sip._tls  <br/> |100  <br/> |9.1  <br/> |443  <br/> |3600 (sekunder)  <br/> |sipdir.online.lync.com.  <br/> |
+    |SRV (Service)  <br/> |_sipfederationtls _sipfederationtls._tcp  <br/> |100  <br/> |9.1  <br/> |5061  <br/> |3600 (sekunder)  <br/> |sipfed.online.lync.com.  <br/> |
        
-    ![OVH SRV-rekord](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
+    ![OVH SRV-post](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
   
 7. Välj **Nästa**.
     

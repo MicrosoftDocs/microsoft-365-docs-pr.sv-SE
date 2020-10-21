@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på WIX för Microsoft.
-ms.openlocfilehash: fcc0f8e8187e22dde68149e0f2a80073312bff7f
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+ms.openlocfilehash: ee236a9178092bb8fd14a9615c2ac5911b1ecc87
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814450"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645665"
 ---
 # <a name="create-dns-records-at-wix-for-microsoft"></a>Skapa DNS-poster på WIX för Microsoft
 
@@ -109,7 +109,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
 5. I rutorna för den nya posten skriver du in eller kopierar värdena från följande tabell:
     
-   | Värdnamn | Pekar på | Ordningen | TTL |
+   | Värdnamn | Pekar på | Priority | TTL |
    |:-----|:-----|:-----|:-----|
    |Fylls i automatiskt <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Obs!** Hämta ditt  *\<domain-key\>*  från ditt Microsoft-konto.   [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md) |siffrorna  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) | 1 timme|
    
@@ -178,7 +178,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
 4. I rutorna för den nya posten skriver du in eller kopierar värdena från följande tabell:
     
-   | Tjänst | Protokoll | Namn | Väga | Port | Mål | Ordningen | TTL |
+   | Tjänst | Protokoll | Namn | Väga | Port | Mål | Priority | TTL |
    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
    |sip  |tls  |Fylls i automatiskt |9.1  |443   |sipdir.online.lync.com |100 |1 timme |
    |sipfed|tcp |Fylls i automatiskt|9.1 |5061 |sipfed.online.lync.com|100 | 1 timme |

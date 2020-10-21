@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på web.com för Microsoft.
-ms.openlocfilehash: 2a9162c1ca6fc6a00e564e8f004768fac49bd3e3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 25df88e05e96e2394628bf89c8cc07af2d0eac1e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400310"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645761"
 ---
 # <a name="create-dns-records-at-webcom-for-microsoft"></a>Skapa DNS-poster på web.com för Microsoft
 
@@ -34,7 +34,7 @@ ms.locfileid: "44400310"
   
 Om web.com är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och så vidare.
   
-När du har lagt till dessa poster i web.com konfigureras domänen så att den fungerar med Microsoft-tjänster.
+När du har lagt till dessa poster på web.com är din domän konfigurerad för att fungera med Microsoft-tjänster.
 
   
 > [!NOTE]
@@ -46,9 +46,9 @@ När du har lagt till dessa poster i web.com konfigureras domänen så att den f
 > [!IMPORTANT]
 > Du måste genomföra anvisningarna hos den domänregistrator där du köpte och registrerade domänen. 
   
-När du registrerade dig för web.com har du lagt till en domän med hjälp av web.com **installationsprogrammet.** 
+När du registrerade dig för web.com har du lagt till en domän med web.com **konfigurations** process. 
   
-Om du vill verifiera och skapa DNS-poster för din domän i Microsoft måste du först ändra namnservrarna på domänregistraren så att de använder web.coms namnservrar.
+Om du vill verifiera och skapa DNS-poster för din domän i Microsoft måste du först ändra namnservrar hos domän registratorn så att de använder Web. com-namnservrar.
   
 Gör så här om du själv vill ändra domänens namnservrar på din domänregistrators webbplats:
   
@@ -58,16 +58,16 @@ Gör så här om du själv vill ändra domänens namnservrar på din domänregis
     
     |||
     |:-----|:-----|
-    |Första namnservern  <br/> |Använd namnservervärdet som anges av web.com.  <br/> |
-    |Andra namnservern  <br/> |Använd namnservervärdet som anges av web.com.  <br/> |
+    |Första namnservern  <br/> |Använd det namnserver-värde som tillhandahålls av web.com.  <br/> |
+    |Andra namnservern  <br/> |Använd det namnserver-värde som tillhandahålls av web.com.  <br/> |
    
     > [!TIP]
-    > Du bör använda minst två namnserverposter. Om det finns några andra namnservrar i listan bör du ta bort dem. 
+    > Du bör använda minst två namnserver poster. Om det finns andra namnservrar angivna ska du ta bort dem. 
   
 3. Spara ändringarna.
     
 > [!NOTE]
-> Det kan ta flera timmar innan ändringarna har uppdaterats genom hela DNS-systemet på Internet. Då kommer din Microsoft-e-post och andra tjänster att vara inställda på att fungera med din domän. 
+> Det kan ta flera timmar innan ändringarna har uppdaterats genom hela DNS-systemet på Internet. Sedan är din Microsoft-e-post och andra tjänster inställda för att fungera med din domän. 
   
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 <a name="BKMK_verify"> </a>
@@ -77,14 +77,14 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
   
-1. Kom igång genom att gå till domänsidan på web.com med hjälp av [den här länken](https://checkout.web.com/manage-it/index.jsp). Logga in först.
+1. Kom igång genom att gå till sidan Domains på web.com med hjälp av [den här länken](https://checkout.web.com/manage-it/index.jsp). Logga in först.
   
-2. Välj **Mina domännamn på**sidan **Kontohanteraren** . 
+2. På sidan **konto hanteraren** väljer du **Mina domän namn**. 
   
-3. Under **Hantera *min domän***väljer du **Redigera avancerade DNS-poster**.
+3. Under * * Hantera * min domän * * * väljer du **Redigera avancerade DNS-poster**.
 
   
-4. Klicka på **Redigera TXT-poster**under **Text (TXT-poster)** på sidan **Domännamn** och välj sedan värdena i följande tabell. 
+4. Klicka på **Edit TXT Records**under **text (TXT-poster)** på sidan **Domain Names** och välj sedan värdena från följande tabell. 
     
     |**Host**|**TTL**|**Text**|
     |:-----|:-----|:----|
@@ -94,7 +94,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
 5. Välj **Fortsätt**.
   
   
-6. Vänta några minuter innan du verifierar den nya TXT-posten, så att posten du just skapade kan uppdateras över Internet.
+6. Vänta några minuter innan du verifierar en ny TXT-post så att den post som du just skapade kan uppdateras på Internet.
     
 Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Microsoft och begär posten.
   
@@ -121,48 +121,48 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Lägga till en MX-post så att e-post för din domän kommer till Microsoft.
 <a name="BKMK_add_MX"> </a>
 
-1. Kom igång genom att gå till domänsidan på web.com med hjälp av [den här länken](https://checkout.web.com/manage-it/index.jsp). Logga in först.
+1. Kom igång genom att gå till sidan Domains på web.com med hjälp av [den här länken](https://checkout.web.com/manage-it/index.jsp). Logga in först.
   
-2. Välj **Mina domännamn på**sidan **Kontohanteraren** . 
+2. På sidan **konto hanteraren** väljer du **Mina domän namn**. 
   
-3. Under **Hantera *min domän***väljer du **Redigera avancerade DNS-poster**.
+3. Under * * Hantera * min domän * * * väljer du **Redigera avancerade DNS-poster**.
 
-4. Klicka på **Redigera MX-poster**under **E-postservrar (MX-poster)** och välj sedan värdena i följande tabell. 
+4. Under **e-postservrar (MX-poster)** klickar du på **Edit MX Records**och väljer sedan värdena från följande tabell. 
     
     |**Prioritet**|**TTL**|**Mail server (postserver)**|
     |:-----|:-----|:-----|
-    |1  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |3600  <br/> |*\<domain-key\>*.mail.protection.outlook.com  <br/> **Anm.:** Hämta ditt *\<domain-key\>* från ditt Microsoft-konto.   [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md) |
+    |9.1  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |3600  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Obs!** Hämta ditt  *\<domain-key\>*  från ditt Microsoft-konto.   [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md) |
    
 
 5. Välj **Spara**.
   
-6. Om det finns andra MX-poster i avsnittet **MX-poster** markerar du kryssrutan bredvid posten under **Ta bort**och väljer **Spara**. 
+6. Om det finns andra MX-poster i avsnittet **MX Records** markerar du kryss rutan bredvid posten under **ta bort**och väljer **Spara**. 
   
-7. Välj **Spara ändringar**på bekräftelseskärmen . 
+7. På bekräftelse sidan väljer du **Spara ändringar**. 
 
   
-## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Lägga till de sex CNAME-poster som krävs för Microsoft
+## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Lägga till de sex CNAME-posterna som krävs för Microsoft
 <a name="BKMK_add_CNAME"> </a>
 
-1. Kom igång genom att gå till domänsidan på web.com med hjälp av [den här länken](https://checkout.web.com/manage-it/index.jsp). Du uppmanas att logga in först.
+1. Kom igång genom att gå till sidan Domains på web.com med hjälp av [den här länken](https://checkout.web.com/manage-it/index.jsp). Du uppmanas att logga in först.
      
-2. Välj **Mina domännamn på**sidan **Kontohanteraren** . 
+2. På sidan **konto hanteraren** väljer du **Mina domän namn**. 
   
-3. Under **Hantera *min domän***väljer du **Redigera avancerade DNS-poster**.
+3. Under * * Hantera * min domän * * * väljer du **Redigera avancerade DNS-poster**.
 
 4. Lägg till den första av de sex CNAME-posterna.
     
-    Klicka på **Redigera CNAME-poster** **under Värdalias (CNAME Records)** och välj sedan värdena i följande tabell.
+    Under **Host aliases (CNAME-poster)** klickar du på **Redigera CNAME-poster**och väljer sedan värdena från följande tabell.
     
     
     |**Alias**|**TTL**|**Refers to Host Name**|**Annan värd**|
     |:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |3600  <br/> |@ (ingen)  <br/> |autodiscover.outlook.com  <br/> |
-    |sip  <br/> |3600  <br/> |@ (ingen)  <br/> |sipdir.online.lync.com  <br/> |
-    |lyncdiscover  <br/> |3600  <br/> |@ (ingen)  <br/> | webdir.online.lync.com  <br/> |
-    |enterpriseregistration  <br/> |3600  <br/> |@ (ingen)  <br/> |enterpriseregistration.windows.net  <br/> |
-    |enterpriseenrollment  <br/> |3600  <br/> |@ (ingen)  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
-    |msoid  <br/> |3600  <br/> |@ (ingen)  <br/> |clientconfig.microsoftonline-p.net  <br/> |
+    |autodiscover  <br/> |3600  <br/> |@ (inget)  <br/> |autodiscover.outlook.com  <br/> |
+    |sip  <br/> |3600  <br/> |@ (inget)  <br/> |sipdir.online.lync.com  <br/> |
+    |lyncdiscover  <br/> |3600  <br/> |@ (inget)  <br/> | webdir.online.lync.com  <br/> |
+    |enterpriseregistration  <br/> |3600  <br/> |@ (inget)  <br/> |enterpriseregistration.windows.net  <br/> |
+    |enterpriseenrollment  <br/> |3600  <br/> |@ (inget)  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
+    |msoid  <br/> |3600  <br/> |@ (inget)  <br/> |clientconfig.microsoftonline-p.net  <br/> |
     
   
 5. Välj **Fortsätt**.
@@ -174,17 +174,17 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg i stället till de nödvändiga Microsoft-värdena i den aktuella posten så att du har en *enda* SPF-post som innehåller båda uppsättningarna värden. 
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. I stället kan du lägga till de Microsoft-värden som krävs i den aktuella posten så att du har en  *enda*  SPF-post som innehåller båda uppsättningar med värden. 
   
-1. Kom igång genom att gå till domänsidan på web.com med hjälp av [den här länken](https://checkout.web.com/manage-it/index.jsp). Logga in först.
+1. Kom igång genom att gå till sidan Domains på web.com med hjälp av [den här länken](https://checkout.web.com/manage-it/index.jsp). Logga in först.
     
   
-2. Välj **Mina domännamn på**sidan **Kontohanteraren** . 
+2. På sidan **konto hanteraren** väljer du **Mina domän namn**. 
   
-3. Under **Hantera *min domän***väljer du **Redigera avancerade DNS-poster**.
+3. Under * * Hantera * min domän * * * väljer du **Redigera avancerade DNS-poster**.
 
   
-4. Klicka på **Redigera TXT-poster**under **Text (TXT-poster)** på sidan **Domännamn** och välj sedan värdena i följande tabell.   
+4. Klicka på **Edit TXT Records**under **text (TXT-poster)** på sidan **Domain Names** och välj sedan värdena från följande tabell.   
     
     |**Host**|**TTL**|**Text**|
     |:-----|:-----|:-----|
@@ -201,22 +201,22 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 <a name="BKMK_add_SRV"> </a>
 
 > [!IMPORTANT]
-> Tänk på att web.com är ansvarig för att göra den här funktionen tillgänglig. Om du ser avvikelser mellan stegen nedan och den aktuella web.com GUI (Grafiskt användargränssnitt), vänligen utnyttja [web.com community](https://community.web.com.com/). 
+> Kom ihåg att web.com är ansvarigt för att göra denna funktion tillgänglig. Om du inte ser avvikelser mellan stegen nedan och det aktuella web.com GUI (grafiskt användar gränssnitt) bör du använda [Web.com community](https://community.web.com.com/). 
 
-1. Kom igång genom att gå till domänsidan på web.com med hjälp av [den här länken](https://checkout.web.com/manage-it/index.jsp). Logga in först.
+1. Kom igång genom att gå till sidan Domains på web.com med hjälp av [den här länken](https://checkout.web.com/manage-it/index.jsp). Logga in först.
       
-2. Välj **Mina domännamn på**sidan **Kontohanteraren** . 
+2. På sidan **konto hanteraren** väljer du **Mina domän namn**. 
   
-3. Under **Hantera *min domän***väljer du **Redigera avancerade DNS-poster**.
+3. Under * * Hantera * min domän * * * väljer du **Redigera avancerade DNS-poster**.
   
 4. Lägg till den första av de två SRV-posterna.
 
-    Klicka på **Redigera SRV-poster** **under Service (SRV Records)** och välj sedan värdena i följande tabell. 
+    Under **tjänst (SRV-poster)** klickar du på **Redigera SRV-poster**och väljer sedan värdena från följande tabell. 
         
     |**Service**|**Protocol**|**TTL**|**Prioritet**|**Vikt**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip |_tls |3600 | 100|1 |443 |sipfed.online.lync.com  |
-    |_sipfederationtls |_tcp |3600 |100 |1 |5061 | sipfed.online.lync.com |
+    |_sip |_tls |3600 | 100|9.1 |443 |sipfed.online.lync.com  |
+    |_sipfederationtls |_tcp |3600 |100 |9.1 |5061 | sipfed.online.lync.com |
 
   
 5. Lägg till den andra SRV-posten genom att välja värdena från den andra raden i tabellen. 

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0db29490-2612-48bc-9b77-1862e7a41a8c
 description: Läs mer om att verifiera din domän och konfigurera DNS-poster för e-post, Lync och andra tjänster på Google Domains för Microsoft.
-ms.openlocfilehash: 23f3a332b46e53946139869754d610733c89e4a9
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 417fe89bd408eba4d3b14ecb3e38af6beed196cf
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307121"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646097"
 ---
 # <a name="create-dns-records-at-google-domains-for-microsoft"></a>Skapa DNS-poster på Google Domains för Microsoft
 
@@ -240,8 +240,8 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     |**Name**|**Type (typ)**|**TTL**|**Data**|
     |:-----|:-----|:-----|:-----|
-    |_sip. _tls|SRV|1H|100 1 443 sipdir.online.lync.com. **Det här värdet måste sluta med en punkt (.)** **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.           |
-    |_sipfederationtls. _tcp|SRV|1H|100 1 5061 sipfed.online.lync.com. **Värdet MÅSTE sluta med en punkt (.)**
+    |_sip _sip._tls|SRV|1H|100 1 443 sipdir.online.lync.com. **Det här värdet måste sluta med en punkt (.)** **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.           |
+    |_sipfederationtls _sipfederationtls._tcp|SRV|1H|100 1 5061 sipfed.online.lync.com. **Värdet MÅSTE sluta med en punkt (.)**
 
     Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.       
    

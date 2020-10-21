@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,40 +20,40 @@ search.appverid:
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på easyDNS för Microsoft.
-ms.openlocfilehash: 24f477d240af936975141c53d382e114a24c0ac5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4909a02ec56fc9720a2636e822da0339e89bccf8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400238"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645557"
 ---
 # <a name="create-dns-records-at-easydns-for-microsoft"></a>Skapa DNS-poster på easyDNS för Microsoft
 
 [Läs frågor och svar om domäner ](../setup/domains-faq.md) om du inte hittar det du letar efter. 
   
-Du måste lägga till alla följande DNS-poster på registratorns webbplats för att dirigera e-post till Microsoft, använda domänen för Teams och Skype för företag och så vidare.
+Du måste lägga till följande DNS-poster på din registrators webbplats för att dirigera e-post till Microsoft, använda din domän för Teams och Skype för företag, och så vidare.
   
-SRV-poster är för närvarande INTE tillgängliga under alla easyDNS-servicepaket. Du kan behöva uppgradera till en högre servicenivå med easyDNS för att lägga till SRV-poster som krävs för Skype för företag.
+Obs! SRV-poster är för närvarande inte tillgängliga under alla easyDNS-tjänste paket. Du kan behöva uppgradera till en högre tjänst nivå med easyDNS för att lägga till SRV-poster som krävs för Skype för företag.
   
-## <a name="verify-that-you-own-the-domain-with-a-txt-record"></a>Kontrollera att du äger domänen med en TXT-post
+## <a name="verify-that-you-own-the-domain-with-a-txt-record"></a>Verifiera att du äger domänen med en TXT-post
 
-1. Gå till [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) och logga in med dina autentiseringsuppgifter. 
+1. Gå till [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) och logga in med dina inloggnings uppgifter. 
     
-2. Välj dns under rubriken **alla domäner.** **dns.**
+2. Under rubriken **alla domäner** väljer du **DNS.**
     
-3. Under rubriken **TXT-poster** väljer du redigeringsknappen (skiftnyckelikonen). 
+3. Under rubriken **TXT Records** väljer du knappen Redigera (Skift nyckel ikonen). 
     
 4. Ange följande poster i textfälten:
     
     |**Värd**|**Text**|
     |:-----|:-----|
-    |@  <br/> |MS=msXXXXXXXX (Använd det värde som du har angett på sidan Domäner för administrationscenter)  <br/> |
+    |@  <br/> |MS = msXXXXXXXX (Använd det värde du gav på sidan Domains Center-domäner)  <br/> |
    
-5. Välj **NÄSTA**. 
+5. Välj **Nästa**. 
     
-6. Kontrollera att posten är korrekt och välj sedan **BEKRÄFTA**. 
+6. Kontrol lera att posten är korrekt och välj sedan **Bekräfta**. 
     
-7. Vänta några minuter innan du fortsätter, så att posten du just skapade kan spridas över Internet och identifieras av Microsoft.
+7. Vänta några minuter innan du fortsätter, så att den post som du just skapade kan spridas via Internet och identifieras av Microsoft.
     
 8. Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Microsoft och begär posten.
     
@@ -61,42 +61,42 @@ SRV-poster är för närvarande INTE tillgängliga under alla easyDNS-servicepak
     
 10. På sidan **Domains** väljer du den domän du verifierar. 
     
-11. Välj **Starta inställningar** på sidan **Installationsprogrammet.**
+11. På sidan **Setup** väljer du **Start setup.**
     
 12. På sidan **Verify domain** väljer du **Verify**. 
     
 ## <a name="add-an-mx-record-to-route-email-to-microsoft"></a>Lägga till en MX-post för att dirigera e-post till Microsoft
 
-1. Gå till [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) och logga in med dina autentiseringsuppgifter. 
+1. Gå till [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) och logga in med dina inloggnings uppgifter. 
     
-2. Välj dns under rubriken **alla domäner.** **dns.**
+2. Under rubriken **alla domäner** väljer du **DNS.**
     
-3. Under rubriken **MX-poster** väljer du redigeringsknappen (skiftnyckelikonen). 
+3. Under rubriken **MX Records** väljer du knappen Redigera (Skift nyckel ikonen). 
     
 4. Ange följande poster i textfälten:
     
-    |**POST FÖR ZON**|**E-POSTSERVER**|**Pref**|
+    |**E-POST FÖR ZONEN**|**E-POSTSERVER**|**PREF**|
     |:-----|:-----|:-----|
-    |@  <br/> |\<domain-key\>.mail.protection.outlook.com (Hämta ditt \<domain-key\> värde från sidan Domäner för administrationscenter)  <br/> |0  <br/> |
+    |@  <br/> |\<domain-key\>. mail.protection.outlook.com (Hämta \<domain-key\> värdet från sidan Domains för administrations centret)  <br/> |siffrorna  <br/> |
    
-2. Om du vill spara dina andra MX-poster för säkerhetskopiering kan du kopiera dem någonstans. Innan du går vidare tar du bort alla andra MX-poster här.
+2. Om du vill spara dina andra MX-poster för säkerhets kopiering kan du kopiera dem till en annan plats. Innan du fortsätter tar du bort alla andra MX-poster här.
     
-5. Välj **NÄSTA**. 
+5. Välj **Nästa**. 
     
-6. Kontrollera att posten är korrekt och välj sedan **BEKRÄFTA**. 
+6. Kontrol lera att posten är korrekt och välj sedan **Bekräfta**. 
     
 ## <a name="add-the-required-cname-records"></a>Lägga till de CNAME-poster som krävs
 
-1. Gå till [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) och logga in med dina autentiseringsuppgifter. 
+1. Gå till [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) och logga in med dina inloggnings uppgifter. 
     
-2. Välj dns under rubriken **alla domäner.** **dns.**
+2. Under rubriken **alla domäner** väljer du **DNS.**
     
-3. Under rubriken **CNAME/Alias-poster** väljer du redigeringsknappen (skiftnyckelikonen). 
+3. Under rubriken **CNAME/Ali-poster** väljer du knappen Redigera (Skift nyckel ikonen). 
     
 4. Ange följande poster i textfälten:
 
 
-    |**HOST (värd)**|**Adress (Måste sluta med ett ".")**|
+    |**HOST (värd)**|**Adress (måste sluta med ".")**|
     |:-----|:-----|
     |autodiscover  <br/> |autodiscover.outlook.com.  <br/> |
     |sip  <br/> |sipdir.online.lync.com.  <br/> |
@@ -104,17 +104,17 @@ SRV-poster är för närvarande INTE tillgängliga under alla easyDNS-servicepak
     |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> |
     |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> |
    
-5. Välj **NÄSTA**. 
+5. Välj **Nästa**. 
     
-6. Kontrollera att posten är korrekt och välj sedan **BEKRÄFTA**. 
+6. Kontrol lera att posten är korrekt och välj sedan **Bekräfta**. 
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Lägga till en TXT-post för SPF för att förhindra skräppost
 
-1. Gå till [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) och logga in med dina autentiseringsuppgifter. 
+1. Gå till [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) och logga in med dina inloggnings uppgifter. 
     
-2. Välj dns under rubriken **alla domäner.** **dns.**
+2. Under rubriken **alla domäner** väljer du **DNS.**
     
-3. Under rubriken **TXT-poster** väljer du redigeringsknappen (skiftnyckelikonen). 
+3. Under rubriken **TXT Records** väljer du knappen Redigera (Skift nyckel ikonen). 
     
 4. Ange följande poster i textfälten:
     
@@ -122,29 +122,29 @@ SRV-poster är för närvarande INTE tillgängliga under alla easyDNS-servicepak
     |:-----|:-----|
     |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> |
    
-5. Välj **NÄSTA**. 
+5. Välj **Nästa**. 
     
-6. Kontrollera att posten är korrekt och välj sedan **BEKRÄFTA**. 
+6. Kontrol lera att posten är korrekt och välj sedan **Bekräfta**. 
     
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Lägga till de två SRV-posterna som krävs för Microsoft
 
-SRV-poster är för närvarande INTE tillgängliga under easyDNS Domain Plus-tjänstnivå. Du kan behöva uppgradera till en högre servicenivå med easyDNS för att lägga till SRV-poster 
+Obs! SRV-poster är för närvarande inte tillgängliga under easyDNS ' Domain plus Service Level. Du kan behöva uppgradera till en högre service nivå med easyDNS för att lägga till SRV-poster 
   
-1. Gå till [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) och logga in med dina autentiseringsuppgifter. 
+1. Gå till [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) och logga in med dina inloggnings uppgifter. 
     
-2. Välj dns under rubriken **alla domäner.** **dns.**
+2. Under rubriken **alla domäner** väljer du **DNS.**
     
-3. Under rubriken **SRV-poster** väljer du redigeringsknappen (skiftnyckelikonen). 
+3. Under rubriken **SRV Records** väljer du knappen Redigera (Skift nyckel ikonen). 
     
 4. Ange följande poster i textfälten:
     
-    |**SERVICE (tjänst)**|**Proto**|**HOST (värd)**|**Pri**|**Wgt**|**PORT**|**TARGET(Måste sluta med ett ".")**|**TTL**|
+    |**SERVICE (tjänst)**|**PROTO**|**HOST (värd)**|**PRI**|**WGT**|**PORT**|**MÅL (måste sluta med ".")**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> |1800  <br/> |
-    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> |1800  <br/> |
+    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |9.1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> |1800  <br/> |
+    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |9.1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> |1800  <br/> |
    
-5. Välj **NÄSTA**. 
+5. Välj **Nästa**. 
     
-6. Kontrollera att posten är korrekt och välj sedan **BEKRÄFTA**. 
+6. Kontrol lera att posten är korrekt och välj sedan **Bekräfta**. 
     
 
