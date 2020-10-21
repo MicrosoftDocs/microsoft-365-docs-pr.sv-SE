@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig att visa och hantera meddelanden i karantän för alla användare i Exchange Online Protection (EOP). Administratörer i organisationer med Office 365 Avancerat skydd (Office 365 ATP) kan även hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams.
-ms.openlocfilehash: 5e1115157ef7d67bc7a3f626eb61d01ecc0986cb
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 65cf0a116dbed3dce93db8e34fa96d6ab68a9c9e
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600547"
+ms.locfileid: "48626173"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Hantera meddelanden och filer i karantän som administratör i EOP
 
@@ -70,6 +70,7 @@ Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav 
    - **Orsak till karantän**<sup>\*</sup>
    - **Släppt?**<sup>\*</sup>
    - **Principtyp**<sup>\*</sup>
+   - **Upphör**
    - **Mottagare**
    - **Meddelande-ID**
    - **Principnamn**
@@ -95,12 +96,12 @@ Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav 
      - **Program**
      - **Skräppost**
      - **Hög exakthet Phish**
-     
+
    - **Princip typ**: filtrera meddelanden efter princip typ:
      - **Policy för mot skadlig program vara**
      - **Principer för säkra bifogade filer**
      - **Policy för Phish**
-     - **Princip för innehålls filter värd**
+     - **Principer för värd innehålls filter** (policy för skräp post)
      - **Transport regel**
 
    - **E-postmottagare**: alla användare eller bara meddelanden som skickas till dig. Slutanvändare kan bara hantera skickade meddelanden till dem.
@@ -120,6 +121,8 @@ Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav 
    - **Mottagarens e-postadress**: En enskild mottagares e-postadress.
 
    - **Ämne**: Använd meddelandets hela ämne. Sökningen är inte skiftlägeskänslig.
+  
+   - **Princip namn**: namnet på den policy som var ansvarig för quarantining meddelandet.
 
    När du har angett sökvillkor klickar du på ![knappen Uppdatera](../../media/scc-quarantine-refresh.png) **Uppdatera**, så filtreras resultatet.
 
@@ -147,6 +150,8 @@ När du väljer ett e-postmeddelande i listan visas följande meddelandeinformat
 
 - **Karantän orsak**: visar om ett meddelande har identifierats som **skräp post**, **bulk**, **Phish**, matchade en e-postregel (**Transport regel**) eller som innehåller **skadlig program vara**.
 
+- **Antal mottagare**
+
 - **Mottagare**: Om meddelandet innehåller flera mottagare måste du klicka på **Förhandsgranska meddelandet** eller **Visa meddelandehuvud** för att se den fullständiga listan över mottagare.
 
 - **Upphör**: Datumet/tiden då meddelandet tas bort automatiskt och permanent från karantänen.
@@ -173,7 +178,6 @@ När du har valt ett meddelande har du flera alternativ för vad du kan göra me
   Anmärkningar om att frigöra meddelanden:
 
   - Du kan inte frigöra ett meddelande till samma mottagare flera gånger.
-
   - Endast mottagare som inte har fått meddelandet visas i listan över potentiella mottagare.
 
 - **Visa meddelandehuvud**: Välj den här länken om du vill visa meddelandehuvudets text. Om du vill analysera fälten och värden för huvuden mer ingående kopierar du meddelandehuvudets text till Urklipp och väljer sedan **Microsofts analysverktyg för meddelanderubrik** för att gå till analysverktyget för fjärranslutning (högerklicka och välj **Öppna i ny flik** om du inte vill lämna Microsoft 365 för att slutföra den här uppgiften). Klistra in meddelandehuvudet på sidan i analysverktyget för meddelanderubrik. Välj **Analyze headers** (Analysera rubriker):
@@ -219,13 +223,13 @@ Klicka på **Stäng** när du är klar.
 > [!NOTE]
 > Procedurerna för filer i karantän i det här avsnittet är bara tillgängliga för ATP-abonnemang 1 och abonnemang 2.
 
-I organisationer med ATP kan administratörer hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams.
+I organisationer med ATP kan administratörer hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams. Information om hur du aktiverar skyddet för dessa filer finns i [Aktivera ATP för SharePoint, OneDrive och Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
 ### <a name="view-quarantined-files"></a>Visa filer i karantän
 
 1. I Säkerhets- och efterlevnadscentret går du till **Hothantering** \> **Granska** \> **Karantän**.
 
-2. Ändra **vyn i karantän** till standardvärdena **.** Du kan sortera efter ett fält genom att klicka på en tillgänglig kolumn rubrik.
+2. Ändra **vy i karantän** **till Values**. Du kan sortera efter ett fält genom att klicka på en tillgänglig kolumn rubrik.
 
 3. Du kan sortera resultaten genom att klicka på en tillgänglig kolumnrubrik. Klicka på **Ändra kolumner** för att visa högst sju kolumner. Standard kolumnerna är markerade med en asterisk ( <sup>\*</sup> ):
 
@@ -248,6 +252,7 @@ I organisationer med ATP kan administratörer hantera filer i karantän i ShareP
      - Ett anpassat datum-och tidsintervall.
    - **Mottaget**
    - **Karantän orsak**: det enda tillgängliga värdet är **skadlig program vara**.
+   - **Principtyp**
 
 När du har hittat en viss fil i karantän väljer du filen för att visa information om den och för att utföra en åtgärd på den (till exempel Visa, släppa, ladda ned eller ta bort meddelandet).
 
@@ -293,8 +298,6 @@ När du markerar flera filer i karantän i listan (upp till 100) visas utfällda
 
 - **Släpp filer**
 - **Ta bort filer**: när du har klickat på **Ja** i varningen som visas tas filerna bort omedelbart.
-
-1. Använd ett arbets-eller skol konto som har global administratörs behörighet (eller lämpliga roller för säkerhets & efterlevnadsprinciper) i din organisation, logga in och [gå till säkerhets & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>Använda Exchange Online PowerShell eller fristående EOP PowerShell för att visa och hantera meddelanden och filer i karantänen
 

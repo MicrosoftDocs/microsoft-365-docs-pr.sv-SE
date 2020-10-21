@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du ställer in kraven på starka lösen ord för användarna med Windows PowerShell.
-ms.openlocfilehash: 1230ff4b4235ac5acbc28aa823506dfa5af26c2d
-ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
+ms.openlocfilehash: 1634e2f0de2cdd2cac5e1928adbef54457e50716
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581030"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48626149"
 ---
 # <a name="set-strong-password-requirement-for-users"></a>Ange krav för starkt lösen ord för användare
 
@@ -42,10 +42,15 @@ Du måste också ansluta till Microsoft 365 med PowerShell.
 
 1. [Anslut till Microsoft 365 med PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-2. Med PowerShell kan du inaktivera starka lösen ord för vissa användare med det här kommandot:
+2. Med PowerShell kan du aktivera krav för starka lösen ord för alla användare med följande kommando:
 
     ```powershell
-    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false
+    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $true
+
+3. You can turn on strong password requirements for specific users with this command:
+
+    ```powershell
+    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $true
     ```
 
 > [!NOTE]

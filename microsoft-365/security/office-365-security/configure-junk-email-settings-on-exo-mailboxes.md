@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur du konfigurerar inställningar för skräp post i Exchange Online-postlådor. Många av de här inställningarna är tillgängliga för användare i Outlook eller Outlook på webben.
-ms.openlocfilehash: 632c6f37b80cdc38b513f66ad42e4a5c25b41f25
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ed1513dc16caa25edfe0acd62db59304d90e76c5
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203353"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48626161"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurera inställningar för skräppost i Exchange Online-postlådor
 
@@ -42,7 +42,7 @@ När skräp post regeln är aktive rad på post lådan kan EOP flytta meddelande
 
  När skräp post regeln är inaktive rad på post lådan kan EOP inte flytta meddelanden till mappen skräp post baserat på åtgärd för skräp post filtrering Verdict **Flytta meddelandet till mappen skräp post** eller säker lista samlingen i post lådan.
 
-Administratörer kan använda Exchange Online PowerShell för att inaktivera, aktivera och Visa status för skräp post regeln i post lådor. Administratörer kan även använda Exchange Online PowerShell för att konfigurera poster i säker lista-samlingen på post lådor (listan Betrodda avsändare, listan Betrodda mottagare och listan med spärrade avsändare).
+Administratörer kan använda Exchange Online PowerShell för att inaktivera, aktivera och Visa status för skräp post regeln i post lådor. Administratörer kan även använda Exchange Online PowerShell för att konfigurera poster i säker lista-samlingen på post lådor (listan Betrodda avsändare, listan Betrodda mottagare och listan Spärrade avsändare).
 
 > [!NOTE]
 > Meddelanden från avsändare som användare har lagt till i sina egna listor för betrodda avsändare kommer att hoppa över filtrering för EOP (SCL är-1). Om du inte vill att användarna ska kunna lägga till poster i listan Betrodda avsändare i Outlook kan du använda grup princip som nämns i  [om inställningar för skräp post i Outlook](#about-junk-email-settings-in-outlook) avsnitt längre ned i det här avsnittet. Princip filtrering, innehålls filtrering och kontroll av avancerat skydd (ATP) tillämpas fortfarande på meddelanden.
@@ -104,7 +104,7 @@ Säker lista-samlingen i en post låda inkluderar listan Betrodda avsändare, li
 
 ****
 
-|Parameter på set-MailboxJunkEmailConfiguration|Outlook på webben|
+|Parameter på Set-MailboxJunkEmailConfiguration|Outlook på webben|
 |---|---|
 |_BlockedSendersAndDomains_|**Flytta e-post från dessa avsändare eller domäner till mappen skräp post**|
 |_ContactsTrusted_|**Lita på e-post från mina kontakter**|
