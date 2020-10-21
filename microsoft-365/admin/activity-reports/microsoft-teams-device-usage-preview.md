@@ -1,5 +1,5 @@
 ---
-title: Enhetsanvändning för Microsoft Teams
+title: Microsoft 365-rapporter i administrations Center – användning av Microsoft Teams-enheter
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Få insikter i de Microsoft Teams-appar som används i din organisation genom att hämta rapporten Microsoft Teams-programmet användning från Microsoft 365-rapporter.
-ms.openlocfilehash: 98b8d6241b94445c9cb47d2c464d47c5609efdfe
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: deda550b3ffc4209f718d36a3010605edbc1102b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949096"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636979"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 365-rapporter i administrations Center – användning av Microsoft Teams-enheter
 
@@ -51,7 +51,7 @@ Du kan också exportera rapport data till en Excel. csv-fil genom att välja **E
 |Objekt|Beskrivning|
 |:-----|:-----|
 |**Mät**|**Definition**|
-|Användar namn  <br/> |Användarens visnings namn. Du kan klicka på visnings namnet för att gå till användarens inställnings sida i administrations centret för Microsoft Teams.  <br/> |
+|Användar namn  <br/> |Användarens visnings namn.  <br/> |
 |Windows  <br/> |Markerad om användaren varit aktiv i Teams-klienten på en Windows-baserad dator.  <br/> |
 |Mac  <br/> |Markerad om användaren varit aktiv i Teams-klienten på en Mac-dator.  <br/> |
 |iOS  <br/> |Markerad om användaren varit aktiv i Teams Mobile-klienten för iOS.  <br/> |
@@ -61,4 +61,5 @@ Du kan också exportera rapport data till en Excel. csv-fil genom att välja **E
 |Webb  <br/> |Markerad om användaren varit aktiv i Teams-webbklienten på enheter.|
 |Datum för senaste aktivitet (UTC)  <br/> |Det sista datum (UTC) som användaren deltog i en team aktivitet.  <br/> |
 |Är licensierad|Markerad om användaren är licensierad för att använda Teams.|
+|Aktivitet i gruppen totalt|Totalt antal team aktiviteter under den valda tids perioden. |
 |||

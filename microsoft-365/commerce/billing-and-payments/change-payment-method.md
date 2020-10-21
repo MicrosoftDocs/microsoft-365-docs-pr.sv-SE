@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,35 +26,35 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
-description: Läs om hur du ändrar betalningsmetoden för din företagsprenumeration.
-ms.openlocfilehash: 41cf16397c4b3d2341721e741c6b293005971909
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+description: Lär dig hur du ändrar betalnings metod för ditt företags abonnemang.
+ms.openlocfilehash: 0c739597253db8b54b12cacfbaf55fce9cb36dd2
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432421"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638609"
 ---
 # <a name="change-your-payment-method"></a>Ändra betalningsmetod
 
 ::: moniker range="o365-worldwide"
 
-När du köper en prenumeration väljer du att betala med kreditkort eller bankkonto eller att betala med faktura. Du kan när som helst växla mellan att betala med kreditkort eller bankkonto och betala med faktura under prenumerationen.
+När du köper ett abonnemang väljer du att betala med kredit kort eller bank konto, eller för att betala via faktura. Du kan ändra mellan att betala med kredit kort eller bank konto och betala med faktura när som helst under abonnemanget.
   
 > [!IMPORTANT]
-> Att betala med ett bankkonto är inte tillgängligt i vissa länder eller regioner.
+> Betalning med bank konto är inte tillgängligt i vissa länder eller regioner.
 
- **Vill du bara ändra din kreditkorts- eller bankkontoinformation?** Se [Hantera betalningsmetoder](manage-payment-methods.md).
+ **Vill du bara ändra din kreditkorts- eller bankkontoinformation?** Se [Hantera betalnings metoder](manage-payment-methods.md).
 
- **Vill du bara ändra hur ofta du faktureras?** Se [Ändra betalningsfrekvens](change-payment-frequency.md).
+ **Vill du bara ändra hur ofta du faktureras?** Se [ändra din betalnings frekvens](change-payment-frequency.md).
   
  **Vad händer om jag har ett utestående saldo?**
   
-Om du byter från faktura till kreditkort eller bankkonto överförs inte dina aktuella fakturaavgifter till ditt kreditkort eller bankkonto. Var noga med att betala eventuella utestående fakturasaldon via banköverföring. I vissa regioner kan du också betala ditt utestående saldo med en check. Mer information om hur du betalar utestående saldo finns i fakturan.
+Om du ändrar från faktura till kredit kort eller bank konto överförs inte dina nuvarande faktura avgifter till ditt kredit kort eller bank konto. Se till att betala eventuell utestående faktura sal Don per överföring. I vissa regioner kan du också betala ditt utestående saldo med en check. Mer information om hur du betalar det utestående saldot finns i fakturan.
   
-Om du byter från kreditkort eller bankkonto till faktura överförs eventuellt utestående saldo till nästa faktura.
+Om du byter från kredit kort eller bank konto till faktura överförs eventuell utestående saldo till din nästa faktura.
   
 > [!NOTE]
-> Om du betalar med kreditkort och ditt kreditkort avvisas får du ett e-postmeddelande som gör att du vet att vi inte kunde behandla betalningen. Du kan uppdatera dina kreditkortsuppgifter och omedelbart skicka betalningen med hjälp av länken **Kvitta saldo** på sidan **Dina produkter.** Mer information finns i [Vad händer om mitt kreditkort avvisades och min betalning förfaller till betalning?](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due) 
+> Om du betalar med kredit kort och ditt kredit kort nekas får du ett e-postmeddelande om att vi inte kunde hantera betalningen. Du kan uppdatera din kreditkorts information och omedelbart skicka in betalningen med hjälp av länken **likvidera** på sidan **produkter** . Om du vill ha mer information kan du läsa [om mitt kredit kort nekades och min betalning förfaller.](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due) 
   
 ::: moniker-end
 
@@ -65,18 +65,18 @@ När du köper Office 365 för företag väljer du mellan att betala med kreditk
 > [!NOTE]
 > När du byter betalningssätt fortsätter dina användare ha samma licenstilldelningar som tidigare.
   
- **Vill du ändra betalningsfrekvens?** Om du vill ändra hur ofta du betalar för din prenumeration, antingen från år till månad eller månad till år, måste du [ringa Microsoft-supporten](../../admin/contact-support-for-business-products.md) för att få hjälp.
+ **Vill du ändra betalningsfrekvens?** Om du vill ändra hur ofta du betalar för ditt abonnemang, antingen från årlig till månatlig eller månatlig till årlig, måste du [ringa Microsoft Support](../../admin/contact-support-for-business-products.md) för att få hjälp.
   
- **Vill du bara ändra din kreditkorts- eller bankkontoinformation?** Se [Hantera betalningsmetoder](manage-payment-methods.md).
+ **Vill du bara ändra din kreditkorts- eller bankkontoinformation?** Se [Hantera betalnings metoder](manage-payment-methods.md).
   
  **Vad händer om jag har ett utestående saldo?**
   
-Om du flyttar från *faktura till kreditkort eller bankkonto*överförs inte dina befintliga fakturaavgifter till ditt kreditkort eller bankkonto, så se till att betala eventuellt utestående fakturasaldo via banköverföring. I vissa regioner kan du också betala ditt utestående saldo med check. Se din faktura för mer information om hur du betalar utestående saldo.
+Om du flyttar från *faktura till kredit kort eller bank konto*kommer dina befintliga faktura avgifter inte att överföras till ditt kredit kort eller bank konto, så se till att betala eventuell utestående faktura sal Don per överföring. I vissa regioner kan du också betala ditt utestående saldo genom att checka ut. Se din faktura för mer information om hur du betalar ditt utestående saldo.
   
-Om du flyttar från *kreditkort eller bankkonto till faktura*överförs eventuellt utestående saldo till nästa faktura.
+Om du flyttar från *kredit kort eller bank konto till faktura*överförs eventuell utestående saldo till din nästa faktura.
   
 > [!NOTE]
-> Om du betalar med kreditkort och kreditkortet nekas får du ett e-postmeddelande med information om att vi inte har kunnat bearbeta betalningen. Du kan uppdatera dina kreditkortsuppgifter och omedelbart skicka betalningen genom att använda knappen **Betala nu** på sidan **Prenumerationer.** Mer information finns i [Vad händer om mitt kreditkort avvisades och min betalning förfaller till betalning?](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due) 
+> Om du betalar med kreditkort och kreditkortet nekas får du ett e-postmeddelande med information om att vi inte har kunnat bearbeta betalningen. Du kan uppdatera din kreditkorts information och omedelbart skicka in betalningen via knappen **betala nu** på sidan **prenumerationer** . Om du vill ha mer information kan du läsa [om mitt kredit kort nekades och min betalning förfaller.](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due) 
   
 ::: moniker-end
 
@@ -89,19 +89,19 @@ Om du flyttar från *kreditkort eller bankkonto till faktura*överförs eventuel
   
 När du ändrar från betalning via faktura till att betala med kreditkort skapas automatiskt en ny prenumeration åt dig. Dina användare flyttas till den nya prenumerationen och sedan inaktiveras den gamla prenumerationen. Du behöver inte oroa dig – dina användare får inga störningar i tjänsten och deras information blir tillgänglig genom den nya prenumerationen.
 
-1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret.
+1. Gå till sidan fakturering i administrations centret **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> .
 
-2. Om du är i **tabellvyn** väljer du **Kort**.
+2. Om du är i **tabellvy** väljer du **kort**.
 
-3. Leta reda på den prenumeration som du vill ändra. Välj **Billing** **Redigera**bredvid betalningsmetoden.
+3. Leta upp den prenumeration som du vill ändra. Välj **Redigera**under **fakturering**vid betalnings metod.
   
-4. Välj Ändra **bredvid**din befintliga betalningsmetod .
+4. Välj **ändra**bredvid din befintliga betalnings metod.
   
-5. Välj en annan betalningsmetod på den nedrullningsbara menyn eller välj att lägga till en ny.
+5. I den nedrullningsbara menyn väljer du en annan betalnings metod eller väljer att lägga till en ny.
 
-6. Om du lägger till en betalningsmetod anger du kort- eller kontouppgifterna och väljer sedan **Spara**.
+6. Om du lägger till en betalnings metod anger du kort-eller konto informationen och väljer sedan **Spara**.
   
-7. Kontrollera att den valda betalningsmetoden är korrekt och välj sedan **Spara**.
+7. Kontrol lera att den valda betalnings metoden stämmer och välj sedan **Spara**.
 
 ::: moniker-end
 
@@ -114,23 +114,23 @@ När du ändrar från betalning via faktura till att betala med kreditkort skapa
   
 När du ändrar från betalning via faktura till kreditkort eller bankkonto skapas automatiskt en ny prenumeration åt dig. Dina användare flyttas till den nya prenumerationen och sedan inaktiveras den gamla prenumerationen. Du behöver inte oroa dig - dina användare får inga störningar i tjänsten och all deras information blir tillgänglig genom den nya prenumerationen.
 
-1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Faktureringsprenumerationer</a> i administrationscentret.
+1. Gå till sidan **faktura** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">prenumerationer</a> i administrations centret.
 
-2. Leta reda på den prenumeration som du vill ändra. I avsnittet **Betalningsinformation** väljer du **Ändra betalningsinformation**.
+2. Leta upp den prenumeration som du vill ändra. I avsnittet **betalnings information** väljer du **ändra betalnings information**.
   
-3. Välj **Ändra betalningsmetod**i fönstret **Ändra betalningsinformation** .
+3. I fönstret **ändra betalnings information** väljer **du ändra betalnings metod**.
   
-4. Välj **Fortsätt**i dialogrutan **Ändra betalningsmetod** .
+4. I dialog rutan **ändra betalnings metod väljer du** **Fortsätt**.
   
-5. På sidan **Hur ser det ut?** Om du vill fortsätta väljer du **Nästa**.
+5. På sidan **Hur ser det ut?** om du vill kan du också öka antalet användar licenser som du vill använda för abonnemanget. Fortsätt genom att välja **Nästa**.
 
 6. För vissa prenumerationer går det att välja månatligt eller årligt åtagande. Om du kan välja mellan att betala per år eller per månad på sidan **Hur vill du betala?** väljer du hur ofta du vill betala.
   
-7. I listan **Betalningsmetod** väljer du **Befintligt kort,** **Nytt kreditkort**eller Nytt **bankkonto**.
+7. I listan **betalnings metod** väljer du **befintligt kort**, **nytt kredit kort**eller **nytt bank konto**.
   
 8. Om du valt alternativet **Nytt kreditkort** eller **Nytt bankkonto** i steg 9 fyller du i resten av din betalningsinformation.
 
-9. När du är klar med att fylla i formuläret väljer du **Beställ**.
+9. När du har fyllt i formuläret väljer du **Lägg order**.
 
 När du kommer tillbaka till sidan **Prenumerationer** ser du den gamla prenumerationen markerad som **Inaktiverad** och den nya markerad som **Aktiv**. Du kan låta den gamla prenumerationen upphöra.
   
@@ -142,32 +142,32 @@ När du kommer tillbaka till sidan **Prenumerationer** ser du den gamla prenumer
 
 Du kan endast ändra till att betala med faktura om din beställning är över ett visst antal. Om du inte uppfyller kraven ser du meddelandet "orderkvantiteten är inte tillräckligt stor för att kvalificera för faktura.”
 
-Om din orderkvantitet är för hög kan en kreditkontroll krävas. Om så är fallet ser du meddelandet "Inte berättigad till att byta till faktura. Din beställning kräver en kreditkontroll. " I detta fall ändrar du till att betala med faktura manuellt. Följ följande steg för att slutföra den manuella ändringen.
+Om din orderkvantitet är för hög kan en kreditkontroll krävas. Om så är fallet ser du meddelandet "Inte berättigad till att byta till faktura. Din beställning kräver en kreditkontroll. " I detta fall ändrar du till att betala med faktura manuellt. Följ stegen nedan för att slutföra den manuella ändringen.
 
-1. Gå till <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a> och köp samma prenumeration som den du har för närvarande. Vid utcheckningen väljer du alternativet att betala med faktura.
+1. Gå till <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a> och Köp samma prenumeration som det som du har för närvarande. Vid utcheckning väljer du alternativet för betalning via faktura.
 
     > [!IMPORTANT]
-    > Du kan inte använda sidan **Dina produkter** i administrationscentret för att köpa prenumerationen. Du måste använda <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a>.
+    > Du kan inte använda sidan **produkter** i administrations centret för att köpa abonnemanget. Du måste använda  <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a>.
 
-2. När köpet är klart avbryter du den ursprungliga prenumerationen. Användarna flyttas automatiskt till den nya prenumerationen.
+2. När köpet är klart avbryter du det ursprungliga abonnemanget. Användarna flyttas automatiskt till det nya abonnemanget.
 
-Om ingen kreditkontroll krävs, använd följande steg för att ändra till betalning med faktura.
+Om ingen kredit kontroll behövs kan du göra följande för att ändra till betala via faktura.
 
-1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret.
+1. Gå till sidan fakturering i administrations centret **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> .
 
-2. Om du är i **tabellvyn** väljer du **Kort**.
+2. Om du är i **tabellvy** väljer du **kort**.
 
-3. Leta reda på den prenumeration som du vill ändra. Välj **Billing** **Redigera**bredvid betalningsmetoden.
+3. Leta upp den prenumeration som du vill ändra. Välj **Redigera**under **fakturering**vid betalnings metod.
   
-4. Välj Ändra **bredvid**din befintliga betalningsmetod .
+4. Välj **ändra**bredvid din befintliga betalnings metod.
   
-5. Välj **Faktura eller banköverföring**på den nedrullningsbara menyn.
+5. I den nedrullningsbara menyn väljer du **faktura eller tråd överföring**.
 
-6. Ange namn, adress och telefonnummer. Du kan också lägga till ett inköpsordernummer som visas på fakturan.
+6. Ange namn, adress och telefonnummer. Du kan också lägga till ett inköps order nummer för att visa på fakturan.
   
 7. När du är klar väljer du **Spara**.
 
-8. Kontrollera att den valda betalningsmetoden är korrekt och välj sedan **Spara**.
+8. Kontrol lera att den valda betalnings metoden stämmer och välj sedan **Spara**.
 
 ::: moniker-end
 
@@ -176,20 +176,20 @@ Om ingen kreditkontroll krävs, använd följande steg för att ändra till beta
 ## <a name="change-from-credit-card-or-bank-account-to-invoice"></a>Ändra från kreditkort eller bankkonto till faktura
 
 > [!NOTE]
-> Alternativet att betala med faktura är endast tillgängligt om din prenumeration kostar över ett visst belopp (som varierar beroende på serviceplats). En kreditkontroll kan behövas för större fakturabetalningar. Mer information finns i [Betala för din prenumeration](pay-for-your-subscription.md).
+> Alternativet att betala via faktura är bara tillgängligt om abonnemangs kostnaderna under ett visst belopp (beroende på tjänst plats). En kreditkontroll kan behövas för större fakturabetalningar. Mer information finns i [betala för din prenumeration](pay-for-your-subscription.md).
 
-1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Faktureringsprenumerationer</a> i administrationscentret.
+1. Gå till sidan **faktura** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">prenumerationer</a> i administrations centret.
 
-2. Leta reda på den prenumeration som du vill ändra. Välj **Ändra betalningsinformation**i avsnittet **Betalningsmetod** .
+2. Leta upp den prenumeration som du vill ändra. I avsnittet **betalnings metod** väljer du **ändra betalnings information**.
   
-3. Välj **Ändra betalningsmetod**i fönstret **Ändra betalningsinformation** .
+3. I fönstret **ändra betalnings information** väljer **du ändra betalnings metod**.
 
     > [!TIP]
     > Om länken **Ändra betalningsmetod** inte visas betyder det att du inte kan byta från kreditkort eller bankkonto till faktura för prenumerationen eftersom prenumerationen inte uppfyller det minsta kostnadsbeloppet för betalning via faktura. Minimibeloppet som krävs för betalning via faktura skiljer sig för olika geografiska områden.
   
-4. Välj **Fortsätt**i dialogrutan **Ändra betalningsmetod** .
+4. I dialog rutan **ändra betalnings metod väljer du** **Fortsätt**.
 
-5. Välj **OK** om du vill gå tillbaka till administrationscentret.
+5. Välj **OK** för att återgå till administrations centret.
 
 ::: moniker-end
 
@@ -199,9 +199,9 @@ Om ingen kreditkontroll krävs, använd följande steg för att ändra till beta
 
 Du kan med hjälp av följande anvisningar när som helst verifiera betalningsmetoden som har konfigurerats för en prenumeration.
 
-1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret.
+1. Gå till sidan fakturering i administrations centret **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> .
 
-2. Leta reda på den prenumeration som du vill verifiera. Betalningsmetoden som har konfigurerats för prenumerationen visas i avsnittet **Fakturering.**
+2. Leta upp den prenumeration som du vill verifiera. Betalnings metoden som har kon figurer ATS för abonnemanget visas i avsnittet **fakturering** .
 
 ::: moniker-end
 
@@ -211,9 +211,9 @@ Du kan med hjälp av följande anvisningar när som helst verifiera betalningsme
 
 Du kan med hjälp av följande anvisningar när som helst verifiera betalningsmetoden som har konfigurerats för en prenumeration.
 
-1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Faktureringsprenumerationer</a> i administrationscentret.
+1. Gå till sidan **faktura** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">prenumerationer</a> i administrations centret.
 
-2. Leta reda på den prenumeration som du vill verifiera. Betalningsmetoden som har konfigurerats för prenumerationen visas under **Betalningsmetod**.
+2. Leta upp den prenumeration som du vill verifiera. Betalnings metoden som har kon figurer ATS för abonnemanget visas under **betalnings metod**.
 
 ::: moniker-end
 
@@ -222,7 +222,7 @@ Du kan med hjälp av följande anvisningar när som helst verifiera betalningsme
 Om du köper Office 365 med 21Vianet i Kina kan du välja att betala med faktura eller onlinebetalning med Alipay eller China UnionPay. Du kan ändra din betalningsmetod senare genom att ringa supporten och gå igenom inköpsprocessen igen.
   
 > [!NOTE]
-> Om din prenumeration kostar under en viss summa pengar (det här beloppet varierar beroende på serviceplats) är fakturabetalningsmetoden inte tillgänglig som ett alternativ. Om dina prenumerationskostnader är över ett visst belopp kan du välja att betala med faktura. En kreditkontroll kan krävas för större fakturabetalningar.
+> Om abonnemangs kostnaderna under en viss mängd pengar (det här beloppet varierar med service plats), är inte alternativet faktura betalnings metod tillgängligt som ett alternativ. Om dina prenumerationskostnader är över ett visst belopp kan du välja att betala med faktura. En kreditkontroll kan krävas för större fakturabetalningar.
   
 1. Ring [21Vianets supportteam](../../admin/contact-support-for-business-products.md).
 

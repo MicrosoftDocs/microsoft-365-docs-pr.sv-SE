@@ -1,10 +1,10 @@
 ---
-title: Hantera appar för programvara som en tjänst för din organisation
+title: Hantera program vara som-as-service-program för din organisation
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,17 +13,17 @@ ms.collection:
 - commerce
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
-description: Lär dig hur du aktiverar och hanterar appar från tredje part i Microsoft 365 administrationscenter.
-ms.openlocfilehash: c8d2764dfa7795707712cbd9ce212f78c4d43d45
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+description: Lär dig hur du aktiverar och hanterar program från tredje part i administrations centret för Microsoft 365.
+ms.openlocfilehash: c1565f0edb2f78302c0186aa3bd89d1ff5a51e5c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45429996"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638177"
 ---
-# <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Hantera appprenumerationer från tredje part för din organisation
+# <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Hantera program abonnemang från tredje part för din organisation
 
-Du kan hantera licenser och fakturering för appar från tredje part i det nya administrationscentret för Microsoft 365. Uppdaterade funktioner inkluderar förbättrad prenumerationshantering, förbättrad åtkomst till faktureringsinformation och förbättrad flexibilitet för att hantera räkningar. Prenumerationshanteringen baseras på Microsofts uppdaterade handelsplattform. Detta gäller appar som kunder köper direkt eller från en tredjepartsleverantör.
+Du kan hantera licenser och fakturering för program från tredje part i det nya administrations centret för Microsoft 365. Uppdaterade funktioner omfattar förbättrad abonnemangs hantering, förbättrad åtkomst till fakturerings information och förbättrad flexibilitet för att hantera räkningar. Abonnemangs hanteringen baseras på Microsofts uppdaterade Commerce-plattform. Detta gäller program vara-as-service-program som kunder köper direkt eller från en tredjepartsleverantör.
 
 ::: moniker range="o365-21vianet"
 
@@ -32,27 +32,27 @@ Du kan hantera licenser och fakturering för appar från tredje part i det nya a
 
 ::: moniker-end
 
-Du kan hantera licenser och fakturering för appar från tredje part i Microsoft 365-administrationscentret med förhandsgranskningsläge aktiverat. Uppdaterade funktioner inkluderar förbättrad prenumerationshantering, förbättrad åtkomst till faktureringsinformation och förbättrad flexibilitet för att hantera räkningar. Prenumerationshanteringen baseras på Microsofts uppdaterade handelsplattform. Detta gäller för appar som en tjänst som kunder köper direkt eller från tredjepartsleverantörer.
+Du kan hantera licenser och fakturering för program från tredje part i Microsoft 365 Admin Center med förhands gransknings läge aktiverat. Uppdaterade funktioner omfattar förbättrad abonnemangs hantering, förbättrad åtkomst till fakturerings information och förbättrad flexibilitet för att hantera räkningar. Abonnemangs hanteringen baseras på Microsofts uppdaterade Commerce-plattform. Det här gäller program vara-as-service-program som kunder köper direkt eller från tredje parts leverantör.
 
 
-## <a name="how-to-get-software-as-a-service-apps"></a>Så här skaffar du appar för programvara som en tjänst
+## <a name="how-to-get-software-as-a-service-apps"></a>Skaffa program vara-as-service-appar
 
-Det finns några sätt att köpa appar från tredje part.
+Det finns några sätt att köpa tredjepartsprogram.
 
-- **Direktköp** – Kunder kan direkt köpa prenumerationer från [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)eller [AppSource](https://www.appsource.com/).
-- **Partnerköp** – Arbeta med en partner via Partner Center för att köpa prenumerationer.
-- **Microsoft-förslag** – Svara på ett förslag från Microsoft Sales som innehåller appar från tredje part.
+- **Direkt inköp** – kunderna kan köpa abonnemang direkt från [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)eller [AppSource](https://www.appsource.com/).
+- **Partner köp** – arbeta med en partner via partner Center för att köpa prenumerationer.
+- **Microsoft-förslag** – svara på ett förslag från Microsoft Sales som innehåller appar från tredje part.
 
-När kunderna har köpt apparna och accepterat Microsofts kundavtal kan de hantera dem i Microsoft 365-administrationscentret eller Microsoft Store för företag.
+När kunderna köper programmen och accepterar Microsofts kund avtal kan de hantera dem i Microsoft 365 Admin Center eller Microsoft Store för företag.
 
-Appleverantörer säljer sina appar antingen till ett schablonbelopp eller genom att köpa licenser för användare.
+Program leverantörer säljer sina appar antingen till en fast taxa eller genom att köpa licenser för användare.
 
-- **Schablonbelopp** – Även kallad webbplatsbaserad prissättning, appar är prissatta med ett månads- eller årspris. På appsidan visas licenskvantitet på Unlimited.
-- **Licenser** – Appar prissätts efter licens. Kunder tilldelar licenser till varje användare i organisationen
+- **Fast ränta** – kallas även för platskod, och är pris värda med ett månatligt eller årligt pris. På sidan app visas antalet licenser till obegränsat.
+- **Licenser** – appar är pris per licens. Kunder tilldelar alla användare licenser till sina organisationer
 
 ## <a name="supported-regions"></a>Regioner som stöds
 
-Stöd för appar från tredje part är tillgängligt i följande regioner:
+Stöd för tredjepartsprogram i de här regionerna:
 
 - Argentina
 - Australien
@@ -67,66 +67,66 @@ Stöd för appar från tredje part är tillgängligt i följande regioner:
 - USA
 - Västeuropa
 
-## <a name="activate-third-party-apps"></a>Aktivera appar från tredje part
+## <a name="activate-third-party-apps"></a>Aktivera tredjepartsprogram
 
-Administratörer måste aktivera appar från tredje part innan de tilldelas användare. Dessa appar aktiveras i tredjepartsutgivarens portal.
+Administratörer måste aktivera tredjepartsprogram innan de tilldelar dem till användarna. Dessa appar är aktiverade i den tredje partens Portal.
 
-1. Gå till sidan **Billing**  >  **Faktureringsappar**i administrationscentret.  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a>
-2. Hitta och välj den app du vill hantera.
-3. Under **Inställningar & åtgärder**väljer du Hantera i **utgivarens portal**.
+1. Gå till sidan för **fakturering**av  >  **dina produkter**i administrations centret  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> .
+2. Leta reda på och välj det program du vill hantera.
+3. Under **inställningar & åtgärder**väljer du **Hantera i Publisher-portalen**.
 
-Du dirigeras till apputgivarens webbplats där du kan aktivera appen.
+Du dirigeras till program utgivarens webbplats där du kan aktivera appen.
 
 ## <a name="manage-third-party-apps"></a>Hantera appar från tredje part
 
-Administratörer hanterar appar från tredje part på två platser: Microsoft 365 admincenter och tredjepartsappleverantörens portal.
+Administratörer hanterar tredjepartsprogram på två platser: Microsoft 365 Admin Center och tredjepartsprogram från tredje part.
 
-Det här kan du göra i varje portal.
+Det här kan du göra på varje Portal.
 
-| Administrationscenter för Microsoft 365 | Portal för apputgivare |
+| Administrationscenter för Microsoft 365 | App Publisher-Portal |
 | --- | --- |
-| Ändra licenskvantitet <br> Hantera hur du betalar din faktura <br> Hantera hur du betalar din faktura <br> Ändra betalningsmetod (kreditkort) <br> Visa faktura <br> Avbryt appprenumeration | Konfigurera app (en gång för varje app) <br> Tilldela licenser till användare <br> Teknisk support |
+| Ändra antal licenser <br> Hantera hur du betalar din faktura <br> Hantera hur du betalar din faktura <br> Ändra betalnings metod (kredit kort) <br> Visa faktura <br> Avbryt program abonnemang | Konfigurera program (en gång för varje app) <br> Tilldela licenser till användare <br> Teknisk support |
 
-När appen har aktiverats förblir den aktiv om den inte har avbrutits, upphör att gälla eller om betalningen inte hålls aktuell. Dessa händelser ändrar appstatusen till inaktiverad. När en app har inaktiverats kan den inte återaktiveras. Om du vill fortsätta använda appen köper du en annan kopia av den.
+När appen är aktive rad är den aktiv om den inte har annullerats, går ut eller om betalningen inte hålls aktuell. Dessa händelser ändrar appens status till inaktive rad. När ett program är inaktiverat går det inte att återaktivera det. För att fortsätta använda appen kan du köpa en kopia av den.
 
 ## <a name="assign-licenses"></a>Tilldela licenser
 
-Administratörer måste aktivera appar från tredje part innan de tilldelas användarna. De aktiveras i tredjepartsutgivarens portal. Välj länken för att tilldela licenser under **Inställningar & åtgärder**på appsidan.
+Administratörer måste aktivera tredjepartsprogram innan de tilldelar dem till användarna. De aktive ras i den tredje partens Portal. På sidan app, under **inställningar & åtgärder**, väljer du länken för att tilldela licenser.
 
-1. Gå till sidan **Billing**  >  **Faktureringsappar**i administrationscentret.  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a>
-2. Hitta och välj den app du vill hantera.
-3. Under **Inställningar & åtgärder**väljer du länken till Hantera i **utgivarens portal**.
+1. Gå till sidan för **fakturering**av  >  **dina produkter**i administrations centret  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> .
+2. Leta reda på och välj det program du vill hantera.
+3. Under **inställningar & åtgärder**väljer du länken som ska **hanteras i Publisher-portalen**.
 
-## <a name="change-license-quantity"></a>Ändra licenskvantitet
+## <a name="change-license-quantity"></a>Ändra antal licenser
 
-Administratörer kan ändra antalet licenser som ägs av organisationen. Detta gäller endast appar som köpts med platsbaserad prissättning.
+Administratörer kan ändra antalet licenser som ägs av organisationen. Detta gäller endast för appar som köpts med webbaserad prissättning.
 
-1. Gå till sidan **Billing**  >  **Faktureringsappar**i administrationscentret.  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a>
-2. Hitta och välj den app du vill hantera.
-3. Välj **Ändra licenskvantitet**.
+1. Gå till sidan för **fakturering**av  >  **dina produkter**i administrations centret  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> .
+2. Leta reda på och välj det program du vill hantera.
+3. Välj **ändra antal licenser**.
 
 ## <a name="manage-payment-methods"></a>Hantera betalningsmetoder
 
-Appar för programvara som en tjänst har var sin faktureringsprofil tilldelad. Med faktureringsprofiler kan du anpassa vilka produkter som ingår i fakturan och hur du betalar dina fakturor. De omfattar:
+Program vara-as-service-appar har tilldelats en fakturerings profil. Med fakturerings profiler kan du anpassa vilka produkter som ingår i din faktura och hur du betalar dina fakturor. De inkluderar:
 
-- **Betalningsmetoder** – Kreditkort eller check/banköverföring
-- **Kontaktuppgifter** – Faktureringsadress och kontaktnamn
-- **Roller** – Roller som gör att du kan ändra faktureringsprofilen, betala räkningar eller använda betalningsmetoden i faktureringsprofilen för att göra inköp.
+- **Betalnings sätt** – kredit kort eller kontroll/överföring
+- **Kontakt information** – fakturerings adress och ett kontakt namn
+- **Roller** – roller som gör att du kan ändra fakturerings profil, betala räkningar eller använda betalnings metoden i fakturerings profilen för att köpa.
 
-Mer information om faktureringsprofiler finns i [Förstå faktureringsprofiler](https://docs.microsoft.com/microsoft-store/billing-profile).
+Mer information om fakturerings profiler finns i [förstå fakturerings profiler](https://docs.microsoft.com/microsoft-store/billing-profile).
 
-### <a name="change-the-billing-profile-on-a-software-as-a-service-app-subscription"></a>Ändra faktureringsprofilen för en appprenumeration för programvara som en tjänst
+### <a name="change-the-billing-profile-on-a-software-as-a-service-app-subscription"></a>Ändra fakturerings profil för ett program-as-service-program
 
-1. Gå till sidan **Billing**  >  **Faktureringsappar**i administrationscentret.  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a>
-2. Hitta och välj den app du vill hantera.
-3. Välj Redigera **bredvid faktureringsprofil** **.**
+1. Gå till sidan för **fakturering**av  >  **dina produkter**i administrations centret  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> .
+2. Leta reda på och välj det program du vill hantera.
+3. Välj **Redigera**bredvid **fakturerings profil**.
 
-Mer information om fakturor finns i [Förstå din faktura eller faktura](billing-and-payments/understand-your-invoice.md).
+Mer information om fakturor finns i [förstå din faktura](billing-and-payments/understand-your-invoice.md).
 
-## <a name="cancel-a-software-as-a-service-app-subscription"></a>Avbryta en prenumeration på app för programvara som en tjänst
+## <a name="cancel-a-software-as-a-service-app-subscription"></a>Avbryta ett abonnemang på en program-as-service-app
 
-Du kan avbryta en app som en tjänst från appsidan.
+Du kan avbryta en program-och-service-app från program sidan.
 
-1. Gå till sidan **Billing**  >  **Faktureringsappar**i administrationscentret.  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a>
-2. Hitta och välj den app du vill hantera.
-3. Under **Inställningar & åtgärder**väljer du Avbryt **prenumeration**.
+1. Gå till sidan för **fakturering**av  >  **dina produkter**i administrations centret  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> .
+2. Leta reda på och välj det program du vill hantera.
+3. Under **inställningar & åtgärder**väljer du **Avbryt prenumeration**.

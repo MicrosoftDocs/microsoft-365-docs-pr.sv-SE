@@ -1,5 +1,5 @@
 ---
-title: Contosos IT-infrastruktur och affärsbehov
+title: Skype IT-infrastruktur och företags behov
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -14,31 +14,31 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Förstå den grundläggande strukturen i den lokala IT-infrastrukturen och hur företags behoven uppfylls av Microsoft 365 för företag.
-ms.openlocfilehash: 3dd744a8d936307c61303bf8ba0f2f198af59d91
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Förstå den grundläggande strukturen i den lokala IT-infrastrukturen för Contoso och hur företagets företags behov uppfylls av Microsoft 365 för företag.
+ms.openlocfilehash: bc2b34254da01a3d49085082ab8ee8632df2d434
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685836"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637181"
 ---
-# <a name="contosos-it-infrastructure-and-business-needs"></a>Contosos IT-infrastruktur och affärsbehov
+# <a name="contoso-it-infrastructure-and-business-needs"></a>Skype IT-infrastruktur och företags behov
 
-Contoso har övergått från en lokal, centraliserad IT-infrastruktur till molnbaserade personliga arbetsbelastningar och program.
+Contoso övergår från en lokal, centraliserad IT-infrastruktur till en molnbaserade konfiguration som innehåller molnbaserade privat arbets belastning och applikationer.
 
-## <a name="contosos-existing-it-infrastructure"></a>Contosos befintliga IT-infrastruktur
+## <a name="existing-contoso-it-infrastructure"></a>Befintlig infrastruktur för Contoso-IT
 
 Contoso använder främst centraliserad IT-infrastruktur med datacenter i huvudkontoret i Paris.
 
-Bild 1 visar ett huvudkontor med datacenter, en DMZ och Internet.
+Bild 1 visar huvud kontoret med program Data Center, en DMZ och Internet.
 
-![Contosos befintliga IT-infrastruktur](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
+![Befintlig infrastruktur för Contoso-IT](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
-**Bild 1: Contosos befintliga IT-infrastruktur**
+**Bild 1: befintlig contoso IT-infrastruktur**
  
 Det lokala programdatacentret är värd för: 
 
-- Egna affärsprogram som använder SQL Server- och andra Linux-databaser.
+- Anpassade affärs program som använder SQL Server och andra Linux-databaser.
 - En uppsättning äldre SharePoint-servrar.
 - Servar på organisations- och teamnivå för fillagring.
 
@@ -46,33 +46,33 @@ Dessutom har varje regionalt navkontor stöd för en uppsättning servrar med en
 
 Sökbarheten i alla program och data i sådana separata flerspråkiga datacenter fortsätter att vara en utmaning.
 
-I Contosos huvudkvarters DMZ kan du använda olika uppsättningar av servrar:
+I DMZ med contoso Headquarters kan du göra följande:
 
-- Värd för den offentliga Contoso-webbplatsen, där kunderna kan beställa produkter, delar, materiel och tjänster.
+- Värd för den offentliga contoso-webbplatsen, där kunder kan beställa produkter, delar, tillbehör och tjänster.
 - Värd för Contoso-partners extranät för kommunikation och samarbete mellan partner.
 - VPN-baserad (virtuellt privat nätverk) fjärråtkomst till Contosos intranät och webbproxyn för medarbetare på Paris-huvudkontoret.
 
-## <a name="contosos-business-needs"></a>Contosos affärsbehov
+## <a name="contoso-business-needs"></a>Contoso företags behov
 
-Organisationens affärsbehov delas in i fem huvudkategorier.
+Contoso företags behov tillhör fem kategorier:
 
-Produktivitet:
+**Produktivitet**
 
 - Förenkla samarbetet
 
-  Ersätt e-post och dela dokument med hjälp av en onlinemodell som möjliggör ändringar i realtid i dokument, enklare onlinemöten och hämtade konversationstrådar.
+  Byt ut samarbete via e-post och fildelning med en online-modell som möjliggör ändringar i real tid i dokument, enklare onlinemöten och fångade konversations trådar.
 - Förbättra produktiviteten för distans- och mobila arbetare
 
-  Med många medarbetare som arbetar från hemmet eller ute på fältet ersätter du VPN-lösningens flaskhals med omfattande åtkomst till Contoso-data och -resurser i molnet.
+  Med många anställda som arbetar hemifrån eller i fältet ersätter du den Flask halsbaserade VPN-lösningen med åtkomst till contoso-data och resurser i molnet.
 - Öka kreativiteten och innovationen
 
   Dra nytta av de senaste utvecklingsmetoderna för visuell inlärning och idé,er t. ex. pennanteckningar och 3D-visualisering.
 
-Säkerhet:
+**Säkerhet**
 
 - Identitets- och åtkomsthantering
 
-  Använd multifaktorautentisering och andra typer av autentisering och skydda användar- och administratörskontouppgifter.
+  Tvinga högfaktaare och andra former av autentisering samt skydda användar-och administratörs konto uppgifter.
 
 - Skydd mot hot
 
@@ -84,37 +84,37 @@ Säkerhet:
 
 - Säkerhetshantering
 
-  Övervaka säkerheten så att du kan upptäcka och reagera på hot i realtid.
+  Övervaka säkerhets Posture och upptäcka och svara på hot i real tid.
 
-Fjärr- och mobilåtkomst för affärspartner:
+**Fjärr- och mobilåtkomst för affärspartner**
 
-- Högre säkerhet för arbetare och distansarbetare
+- Förbättra säkerheten för fjärranslutna och mobila användare
 
-  Upprätta BYOD (Bring Your Own Device) och företagsägd enhetshantering för att säkerställa skyddad åtkomst, korrekta programbeteenden och skydd av företagsdata.
+  Implementera skaffa din egen enhet (BYOD) och företagets enhets hantering för att säkerställa skyddad åtkomst, korrekta program beteenden och företagets data skydd.
 
 - Minska infrastrukturen för fjärråtkomst för medarbetare
 
-  Minska kostnader för underhåll och support och förbättra prestanda för lösningen för fjärråtkomst genom att flytta vanligt förekommande resurser till molnet.
+  Reducera underhålls-och support kostnader och förbättra prestandan för fjärråtkomst genom att flytta vanliga resurser till molnet.
 
-- Ge bättre anslutningsbarhet och lägre kostnad för B2B-transaktioner (företag till företag)
+- Ge bättre anslutning och lägre omkostnader för B2B-transaktioner (Business-to-susiness)
 
-  Ersätt föråldrade och dyra partnerextranät med en molnbaserad lösning som använder federerad autentisering.
+  Ersätt en ålders fördelning och dyra partner nät med en molnbaserad lösning som använder federerad användning.
 
-Efterlevnad:
+**Efterlevnad**
 
 - Följa regionala efterlevnadskrav
 
-  Bli och fortsätt att vara kompatibla med branscher och regionala föreskrifter för datalagring, kryptering, datasekretess och föreskrifter för personliga data, t.ex. GDPR (allmän dataskyddsförordning) för EU.
+  Säkerställa efterlevnad av bransch-och regionala regler för data lagring, kryptering, data integritet och personliga data regler, till exempel GDPR (General Data Protection reglemente) för Europa unionen.
 
-Hantering:
+**Hantering**
 
-- Minska IT-omkostnaderna för hantering av programvara som körs på klientdatorer och -enheter
+- Minska IT-kostnaderna för att hantera program vara som körs på klient datorer och enheter
 
-  Automatisera installationen av uppdateringar av Windows-operativsystemet och Microsoft 365-applikationer för företag i hela organisationen.
+  Automatisera installationen av uppdateringar av Windows operativ system och Microsoft 365-appar för företag i hela organisationen.
 
-## <a name="mapping-contosos-business-needs-to-microsoft-365-for-enterprise"></a>Mappa Contosos företags behov till Microsoft 365 för företag
+## <a name="mapping-contoso-business-needs-to-microsoft-365-for-enterprise"></a>Mappa contoso företags behov till Microsoft 365 för företag
 
-Contosos IT-avdelning fastställde följande affärsbehov för Microsoft 365 E5 före distributionen:
+Contosos IT-avdelning har fastställt följande mappning av företags behov till Microsoft 365 E5-funktioner innan distribution:
 
 
 | Kategori | Affärsbehov | Microsoft 365 för företags produkter eller funktioner |
@@ -124,23 +124,23 @@ Contosos IT-avdelning fastställde följande affärsbehov för Microsoft 365 E5 
 |  | Förbättra produktiviteten för distans- och mobila arbetare | Microsoft 365-arbetsbelastningar och molnbaserade data |
 |  | Öka kreativiteten och innovationen | Windows Ink, Cortana at Work, PowerPoint |
 | Säkerhet |  |  |
-|  | Identitets- och åtkomsthantering | Dedikerade globala administratörskonton med Azure Multi-Factor Authentication (MFA) och Azure AD Privileged Identity Management (PIM) <BR> MFA för alla användarkonton <BR> Med villkorsstyrd åtkomst <BR> Windows Hello <BR> Windows Credential Guard |
+|  | Identitets- och åtkomsthantering | Dedikerade globala administratörs konton med Azure Multi-Factority (MFA) och Azure Active Directory-privilegierad identitets hantering (PIM) <BR> MFA för alla användarkonton <BR> Med villkorsstyrd åtkomst <BR> Windows Hello <BR> Windows Credential Guard |
 |  | Skydd mot hot | Advanced Threat Analytics <BR> Windows Defender <BR> Avancerat skydd <BR> Office 365 Avancerat skydd <BR> Microsoft 365 hot undersökningar och svar <BR> |
 |  | Informationsskydd | Azure Information Protection <BR> Skydd mot dataförlust (DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | Säkerhetshantering | Azure Security Center  <BR> Windows Defender Säkerhetscenter |
 | Fjärr- och mobilåtkomst för affärspartner |  |  |
 |  | Högre säkerhet för arbetare och distansarbetare | Microsoft Intune |
 |  | Minska infrastrukturen för fjärråtkomst för medarbetare | Microsoft 365-arbetsbelastningar och molnbaserade data |
-|  | Ge bättre anslutningsbarhet och lägre kostnad för B2B-transaktioner | Federerad autentisering och molnbaserade resurser |
+|  | Förbättra anslutningen och lägre omkostnader för B2B-transaktioner | Federerad autentisering och molnbaserade resurser |
 | Efterlevnad |  |  |
 |  | Följa regionala efterlevnadskrav | GDPR funktioner i Microsoft 365 |
 | Hantering |  |  |
-|  | Minska IT-omkostnaderna för installation av klientuppdateringar | Distributionsringar <BR> Windows 10 Enterprise-uppdateringar <BR> Microsoft 365-applikationer för företag uppdateringar |
+|  | Minska IT-omkostnader för installation av klient uppdateringar | Distributionsringar <BR> Windows 10 Enterprise-uppdateringar <BR> Microsoft 365-applikationer för företag uppdateringar |
 ||||
 
 ## <a name="next-step"></a>Nästa steg
 
-[Läs](contoso-networking.md) om Contoso Corporations lokala nätverk och hur det optimerades för åtkomst och svarstider för molnbaserade resurser i Microsoft 365.
+[Lär dig mer](contoso-networking.md) om det lokala nätverket Contoso Corporation och hur det optimerades för åtkomst och svars tider till Microsoft 365-molnbaserade resurser.
 
 ## <a name="see-also"></a>Se även
 

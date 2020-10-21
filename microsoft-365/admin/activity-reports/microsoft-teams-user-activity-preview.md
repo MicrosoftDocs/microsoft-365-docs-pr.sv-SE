@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du hämtar användar aktivitets rapporten för Microsoft Teams och få insikter om Teams-aktiviteten i din organisation.
-ms.openlocfilehash: 32252ed89dd9447b5df59ee733088349c559a320
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 8ce29b43e6238883470d1159ad1d22fefca88792
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104516"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637073"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 365-rapporter i administrations Center – användar aktivitet för Microsoft Teams
 
@@ -37,14 +37,14 @@ Instrument panelen för Microsoft 365- **rapporter** visar en översikt över pr
 
 1. I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>.
 2. Från instrument panelens start sida klickar du på knappen **Visa mer** på aktivitets kortet för Microsoft Teams.
-  
+
 ## <a name="interpret-the-microsoft-teams-user-activity-report"></a>Tolka användaraktivitetsrapporten för Microsoft Teams
 
 Du kan visa användar aktiviteten i Teams-rapporten genom att välja fliken **användar aktivitet** . <br/>![Microsoft 365-rapporter – användar aktivitet för Microsoft Teams.](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
 
 Välj **Välj kolumner** för att lägga till eller ta bort kolumner i rapporten.  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
 
-Du kan också exportera rapport data till en Excel. csv-fil genom att välja **Exportera** -länken. Då exporteras data för alla användare och du kan göra enkel sortering och filtrering för vidare analys. Om du har mindre än 2 000 användare kan du sortera och filtrera i tabellen i själva rapporten. Om du har fler än 2 000 användare måste du exportera data för att kunna filtrera och sortera. Det exporterade formatet för **ljud tids**-, **video** -och **skärm delnings tid** följer iso8601 datum format.
+Du kan också exportera rapport data till en Excel. csv-fil genom att välja **Exportera** -länken. Då exporteras data för alla användare och du kan göra enkel sortering och filtrering för vidare analys. Om du har mindre än 2 000 användare kan du sortera och filtrera i tabellen i själva rapporten. Om du har fler än 2 000 användare måste du exportera data för att kunna filtrera och sortera. Det exporterade formatet för **ljud tids**-, **video** -och **skärm delnings tid** följer iso8601.
 
 |Objekt|Beskrivning|
 |:-----|:-----|

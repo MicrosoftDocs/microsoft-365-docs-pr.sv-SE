@@ -1,10 +1,10 @@
 ---
-title: Grunderna i tilldelning
+title: Grunderna i avrop
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,40 +13,40 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - commerce
 ms.custom: AdminSurgePortfolio
-description: Läs mer om den nya kolonilotter funktionen.
-ms.openlocfilehash: c8c472fbf30bb898f9a10eca778ee7c668c8c388
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Lär dig mer om funktionen nya avrop.
+ms.openlocfilehash: 2ab8efd637bb278faf6065559cab26cb7016975b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402420"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638237"
 ---
-# <a name="allotment-basics"></a>Grunderna i tilldelning
+# <a name="allotment-basics"></a>Grunderna i avrop
 
-Med licenstilldelningar kan du ange licensgränser och delegera hanteringen av licenstilldelning till endast de produkter och licensgränser som du väljer.
+Med licens avrop kan du ange licens begränsningar och delegera hanteringen av licens tilldelningen till enbart de produkter och licens gränser som du väljer.
 
-Avrop använder gruppbaserad licensiering för att tilldela licenser till dina användare. Licensgränser ger ytterligare kontroll över hur många licenser som tilldelas användarna i dina grupper. Så även när antalet användare i dina grupper ökar, kan du se till att du håller dig inom licensgränsen som du har angett för din tilldelning.
+Avrop använder gruppbaserad licensiering för att tilldela licenser till användarna. Licens gränser ger ökad kontroll över hur många licenser som är tilldelade användarna i din grupp. Så även när antalet användare i gruppen ökar, kan du se till att du bevaras inom licens gränsen som du har angett för avropet.
 
-Du kan också delegera hanteringen av dina tilldelningar. Delegerade tilldelningsägare får tillgång till administrationscentret, men kan bara se och hantera licenserna i de kolonilotter de äger. Detta ger mer detaljerad delegering av licenshantering inom organisationen.
+Du kan också delegera hanteringen av dina avrop. Delegerade tilldelnings ägare får till gång till administrations centret men kan bara se och hantera licenser i de avrop de äger. Detta ger mer detaljerad delegering av licens hantering inom organisationen.
 
-## <a name="prerequisites"></a>Förutsättningar
+## <a name="prerequisites"></a>Krav
 
-Du måste uppfylla licenskraven för [gruppbaserad licensiering](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements).
+Du måste uppfylla licensierings kraven för [gruppbaserad licensiering](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements).
 
-Du kan använda avrop med valfri produkt som är tillgänglig för användare:
+Du kan använda avrop med vilken produkt som helst som är tillgänglig för användarna:
 
 - Office-paket och fristående produkter
-- Produkter för företag och mobilitet
+- Företags-och mobilitets produkter
 - Dynamics 365-produkter
 
-Följande produkter kan inte användas med tilldelningar:
+Följande produkter kan inte användas med avrop:
 
 - Microsoft Store-appar
-- Evig programvara eller programvara som är direkt tilldelad en användare om det inte finns någon licens inblandad.
+- Beständig program vara eller program vara som tilldelats direkt till en användare om det inte finns någon licens.
 - Azure-resurser
 
-Du måste vara global administratör eller licensadministratör för att komma igång med en tilldelning.
+Du måste vara global eller licens administratör för att komma igång med en avrop.
 
 ## <a name="getting-started"></a>Komma igång
 
-Tilldelningsfunktionen är tillgänglig i en privat förhandsversion för endast ett litet antal kunder. Om du är intresserad av att gå med, fyll i det här formuläret: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup) .
+Funktionen avrop är tillgänglig endast för ett fåtal kunder i en privat förhands granskning. Om du är intresse rad av att gå med kan du fylla i det här formuläret: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup) .

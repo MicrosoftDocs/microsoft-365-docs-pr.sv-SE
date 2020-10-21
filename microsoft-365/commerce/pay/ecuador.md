@@ -1,35 +1,35 @@
 ---
-title: Betalningsinformation för Ecuador
+title: Betalnings information för Ecuador
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om var du skickar betalningen för din prenumeration.
+description: Lär dig hur du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6a0bc0bdeee3029ff1ec7b563167ea0c0d531789
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b5f7734c338754224ab8ab784df89811726e1d0e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404268"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636799"
 ---
-# <a name="payment-information-for-ecuador"></a>Betalningsinformation för Ecuador
+# <a name="payment-information-for-ecuador"></a>Betalnings information för Ecuador
 
-[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
 
-Betala endast i USD och referensfakturanummer på din betalningsöverföring.
+Betala endast i USD och ange faktura numret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
-**Bank:** Bank of America  
+**Bank:** Bank i Amerika  
 **Gren:** Dallas  
 **SWIFT-kod:** BOFAUS3N  
-**Kontonummer:** 4426587954  
-**Kontonamn:** Microsoft  
+**Konto nummer:** 4426587954  
+**Konto namn:** Microsoft  

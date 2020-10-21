@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,14 +16,14 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Läs om hur faktureringsprofiler stöder fakturor.
-keywords: faktureringsprofil, fakturor, avgifter, hanterade avgifter
-ms.openlocfilehash: 2979909e3b916cc4bc8704f32a821b13fa6090e0
-ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
+description: Lär dig hur fakturerings profiler stöder fakturor.
+keywords: fakturerings profil, fakturor, avgifter, hanterade avgifter
+ms.openlocfilehash: de6d6cd65d9e83e7211bcdc33f1774aaec3d1729
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44741708"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638453"
 ---
 # <a name="manage-billing-profiles"></a>Hantera faktureringsprofiler
 
@@ -34,50 +34,50 @@ ms.locfileid: "44741708"
 
 ::: moniker-end
 
-För kommersiella kunder som köper produkter och tjänster från Microsoft kan du med faktureringsprofiler anpassa vilka artiklar som ingår på fakturan och hur du betalar dina fakturor.
+För kommersiella kunder som köper produkter och tjänster från Microsoft kan du med hjälp av fakturerings profiler anpassa vilka objekt som ska ingå på din faktura och hur du betalar dina fakturor.
 
-Faktureringsprofiler innehåller följande information:
+Fakturerings profiler innehåller följande information:
 
-- **Faktureringskonto** &ndash; Namnet på det faktureringskonto som profilen är relaterad till
-- **Betalningsmetoder** &ndash; Kredit- eller betalkort, bankkonton, check eller banköverföring
-- **Kontaktuppgifter** &ndash; Faktureringsadress och ett kontaktnamn
-- **Inställningar för** &ndash; faktura Valuta baserat på faktureringskontots land, ett valfritt inköpsordernummer och möjlighet att ta emot fakturor som e-postbilagor
-- **Behörigheter** &ndash; Behörigheter som gör att du kan ändra faktureringsprofilen, betala räkningar eller använda betalningsmetoden i faktureringsprofilen för att göra inköp
+- **Fakturerings konto** &ndash; Namnet på kontot som profilen är relaterad till
+- **Betalnings metoder** &ndash; Kredit-eller betalkort, bank konton, check eller överföring
+- **Kontakt information** &ndash; Fakturerings adress och ett kontakt namn
+- **Faktura inställningar** &ndash; Valuta baserat på fakturerings kontots land, ett valfritt inköps order nummer och alternativet att ta emot fakturor som e-postbilagor
+- **Behörigheter** &ndash; för Behörigheter som gör att du kan ändra fakturerings profil, betala räkningar eller använda betalnings metoden i fakturerings profilen för att göra inköp
 
-Använd faktureringsprofiler för att styra dina inköp och anpassa fakturan. En månadsfaktura genereras för de produkter som köpts med faktureringsprofilen. Du kan anpassa fakturan, till exempel uppdatera inköpsordernumret och e-fakturainställningarna.
+Använd betalnings profiler för att kontrol lera dina inköp och anpassa din faktura. En månads faktura genereras för de produkter som köpts med fakturerings profilen. Du kan anpassa fakturan, till exempel uppdatera inköps order numret och preferensen för e-post.
 
-En faktureringsprofil skapas automatiskt för ditt faktureringskonto under ditt första köp. Du kan skapa faktureringsprofiler på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Faktureringsprofiler</a> för att ställa in fler fakturor. Du kan till exempel använda olika faktureringsprofiler när du gör inköp för varje avdelning i organisationen. På nästa faktureringsdatum får du en faktura för varje faktureringsprofil.
+En fakturerings profil skapas automatiskt för ditt fakturerings konto under ditt första inköp. Du kan skapa fakturerings profiler på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">faktura profiler</a> för att registrera fler fakturor. Du kan till exempel använda olika fakturerings profiler när du gör inköp för varje avdelning i organisationen. Vid nästa fakturerings datum får du en faktura för varje fakturerings profil.
 
-## <a name="billing-profile-roles"></a>Faktureringsprofilroller
+## <a name="billing-profile-roles"></a>Roller för fakturerings profiler
 
-Roller på faktureringsprofiler har behörighet att styra inköp och visa och hantera fakturor. Tilldela dessa roller till användare som spårar, organiserar och betalar fakturor, till exempel medlemmar i anskaffningsteamet i organisationen.
+Roller i fakturerings profiler har behörighet att kontrol lera inköp samt Visa och hantera fakturor. Tilldela dessa roller till användare som spårar, strukturerar och betalar fakturor, till exempel medlemmar i anskaffnings gruppen i din organisation.
 
 | Roll                          | Beskrivning                                                                       |
 |-----------------------------  |---------------------------------------------------------------------------------  |
-| Ägare av faktureringsprofil         | Hantera allt för en faktureringsprofil                                           |
-| Deltagare i faktureringsprofil   | Hantera allt utom behörigheter i en faktureringsprofil                         |
-| Läsare av faktureringsprofil        | Skrivskyddad vy av allt i en faktureringsprofil                                 |
-| Fakturaansvarig               | Visa och betala räkningar och har en skrivskyddad vy över allt i en faktureringsprofil   |
+| Ägare till fakturerings profil         | Hantera allt för en fakturerings profil                                           |
+| Deltagare i fakturerings profil   | Hantera allt utom behörigheter i en fakturerings profil                         |
+| Profil läsare        | Skrivskyddad vy av allt i en fakturerings profil                                 |
+| Faktura chef               | Visa och betala räkningar och har en skrivskyddad vy av allt i en fakturerings profil   |
 
-## <a name="view-billing-profiles"></a>Visa faktureringsprofiler
+## <a name="view-billing-profiles"></a>Visa fakturerings profiler
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fakturor och betalningar</a>.
 
-2. Välj **Faktureringsprofiler**och välj sedan en faktureringsprofil i listan.
+2. Välj **betalnings profiler**och välj sedan en fakturerings profil i listan.
 
-    - På fliken **Översikt** kan du redigera faktureringsprofilinformation och aktivera eller inaktivera att skicka en faktura via e-post.
+    - På fliken **Översikt** kan du redigera information om fakturerings profiler och aktivera eller inaktivera en faktura via e-post.
 
-    - På fliken **Behörigheter** kan du tilldela användare roller att betala fakturor.
+    - På fliken **behörigheter** kan du tilldela roller till användare för att betala fakturor.
 
-    - På fliken **Azure-kreditsaldo** kan Azure-kunder se transaktionssaldohistorik för De Azure-krediter som används av faktureringsprofilen.
+    - På fliken för **Azure-saldot** kan Azure-kunder se historik för transaktions sal Don för de Azure-tillgodohavanden som används av den betalnings profilen.
 
-    - På fliken **Azure-krediter** kan Azure-kunder se en lista över Azure-krediter som är associerade med faktureringsprofilen och deras utgångsdatum.
+    - På fliken **Azure-kredit** kan Azure-kunderna se en lista över de Azure-tillgodohavanden som är kopplade till fakturerings profilen och deras utgångs datum.
 
     > [!NOTE]
-    > Om du inte har några Azure-krediter visas inte **flikarna Azure-kreditsaldo** eller **Azure-krediter.**
+    > Om du inte har något Azure-tillgodohavande visas inte flikarna för **Azure-saldo** eller **Azure** -kredit.
 
 ## <a name="need-help-contact-support"></a>Behöver du hjälp? Kontakta supporten.
 
-Om du har frågor eller behöver hjälp med dina Azure-avgifter <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">skapar du en supportbegäran med Azure-support</a>.
+Om du har frågor eller behöver hjälp med dina Azure-avgifter kan du <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">skapa en supportbegäran med Azure-support</a>.
 
-Om du har frågor eller behöver hjälp med din faktureringsprofil i Microsoft 365-administrationscentret [kontaktar du supporten för företagsprodukter](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Om du har frågor eller behöver hjälp med din fakturerings profil i Microsoft 365 Admin Center kan du [kontakta supporten för företags produkter](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).

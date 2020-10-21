@@ -1,36 +1,36 @@
 ---
-title: Betalningsinformation för Colombia
+title: Betalnings information för Colombia
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om var du skickar betalningen för din prenumeration.
+description: Lär dig hur du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a2291eb2bae4083ad185e96feecd8cd62058acb6
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: eea4dfce0bf0bb7d6dafc629c28d702f3f2a7586
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404316"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637457"
 ---
-# <a name="payment-information-for-colombia"></a>Betalningsinformation för Colombia
+# <a name="payment-information-for-colombia"></a>Betalnings information för Colombia
 
-[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
 
-Vänligen betala endast i colombianska Pesos. För att betalningen ska kunna behandlas måste ditt företagsnamn och fakturanummer anges på remissarådgivning.
+Betala endast i Landsbygdsa peso. För att betalningen ska kunna behandlas måste ditt företags namn och faktura nummer finnas på remissa-tips.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
-**Bank:** Citibank, Bogota;  
-**Bankkod:** 09  
-**SWIFT-kod:** CITICOBB (AVIGBB)  
-**NIT:** 800.198.591-3  
-**Kontonummer:** 0060534055  
-**Kontonamn:** Filial till Microsoft Colombia Inc.   
+**Bank:** Citibank, Bogotá0;  
+**Bank kod:** 09  
+**SWIFT-kod:** CITICOBB  
+**Nden:** 800.198.591 – 3  
+**Konto nummer:** 0060534055  
+**Konto namn:** Gren av Microsoft Colombia Inc.   

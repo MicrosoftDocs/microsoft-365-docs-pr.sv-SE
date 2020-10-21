@@ -13,16 +13,18 @@ ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 ms.collection: Strat_SP_gtc
 description: Lär dig hur du använder parametern region för att konfigurera eDiscovery för användning på satellit platser i Microsoft 365 multi-geo.
-ms.openlocfilehash: 216012791473776395d27821293e8fc565568c2c
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: d1d66a9e7953b540e318c8364bdcb8d72654b482
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547956"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636811"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 multi-geo eDiscovery-konfiguration
 
-Som standard kan en eDiscovery-chef eller administratör för en multi-geo-klient leda en eDiscovery endast på den centrala platsen för denna klient organisation. För att stöda möjligheten att genomföra eDiscovery för satellit platser är en ny parameter för reglerad säkerhets filter med namnet "region" tillgänglig via PowerShell.
+[Avancerade eDiscovery-funktioner](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20) tillåter en multi-geo eDiscovery-administratör för att söka i alla geos utan att behöva använda ett "region"-säkerhets filter. Data exporteras till Azure-instansen av den centrala platsen för multi-geo-klienten. 
+
+Utan avancerade eDiscovery-funktioner kan en eDiscovery Manager eller administratör av en multi-geo-klient leda en eDiscovery endast på den centrala platsen för denna klient organisation. För att stödja möjligheten att genomföra eDiscovery för satellit platser är en ny parameter för säkerhets filter med namnet "region" tillgänglig via PowerShell. Denna parameter kan användas av klient organisationer vars centrala plats är i Nord Amerika, Europa eller Asien Stilla havet. Avancerad eDiscovery rekommenderas för innehavare vars centrala plats inte är i Nord Amerika, Europa eller Asien och som måste genomföra en eDiscovery-geo-platser. 
 
 Den globala administratören för Microsoft 365 måste tilldela eDiscovery Manager-behörigheter för att tillåta att andra utför eDiscovery och tilldela en "region"-parameter i sitt tillämpliga säkerhets filter för efterlevnad för att ange regionen för att genomföra eDiscovery som satellit plats, annars utförs ingen eDiscovery för satellit platsen.
 

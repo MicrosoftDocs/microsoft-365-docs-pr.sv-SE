@@ -15,69 +15,69 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Hur Contoso använder sig av IDaaS (identitet som tjänst) och tillhandahåller molnbaserad autentisering för anställda och federerad autentisering för partner och kunder.
-ms.openlocfilehash: 795fb7dcb886c792c80d3bb251c9cb5774f1bf97
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 10db0a35024595c4dba9a33ad83ae75bcad3870c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686040"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637253"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>ID för Contoso Corporation
 
-Microsoft tillhandahåller IDaaS (identitet som tjänst) i molnet med Azure Active Directory (Azure AD). För att kunna använda Microsoft 365 för Enterprise, måste Contosos IDaaS-lösning utnyttja sin lokala identitets leverantör och ändå inkludera federerad identitet med sina befintliga betrodda tredjepartsleverantörer.
+Microsoft tillhandahåller identitets tjänst (IDaaS) över dess moln tjänster via Azure Active Directory (Azure AD). För att kunna använda Microsoft 365 för företag måste lösningen contoso IDaaS ha använt sin lokala identitets leverantör och inkludera federerad identitet med sina befintliga betrodda tredjepartsleverantörer.
 
-## <a name="contosos-active-directory-domain-services-forest"></a>Contosos Active Directory Domain Services-skog
+## <a name="the-contoso-active-directory-domain-services-forest"></a>Contoso Active Directory Domain Services-skogen
 
-Contoso använder en enda AD DS-skog (Active Directory Domain Services) för contoso.com med sju underdomäner, en för varje region i världen. Huvudkontoret, regionala navkontor och satellitkontor innehåller domänkontrollanter för lokal autentisering och verifiering.
+Contoso använder en enda AD DS-skog (Active Directory Domain Services) för Contoso \. com med sju under domäner, en för varje region i världen. Huvudkontoret, regionala navkontor och satellitkontor innehåller domänkontrollanter för lokal autentisering och verifiering.
 
-Här är Contoso-skogen med regionala domäner för de olika delar av världen som innehåller regionala nav.
+Här är contoso-skogen med regionala domäner för de olika delar av världen som innehåller regionala hubbar.
 
 ![Contosos skogar och domäner över hela världen](../media/contoso-identity/contoso-identity-fig1.png)
  
-Contoso ville använda konton och grupper i contoso.com-skogen för autentisering och auktorisering för sina Microsoft 365-arbetsbelastningar och -tjänster.
+Contoso bestämde sig för att använda kontona och grupperna i Contoso \. com-skog för autentisering och godkännande för dess Microsoft 365-arbets belastning och tjänster.
 
-## <a name="contosos-federated-authentication-infrastructure"></a>Contosos infrastruktur för federerad autentisering
+## <a name="the-contoso-federated-authentication-infrastructure"></a>Infrastrukturen contoso federerad Infrastructure
 
 Med contoso kan:
 
-- Kunder använda Microsoft, Facebook eller Google Mail för att logga in på sina offentliga webbplatser.
-- Leverantörer och partner använda sina LinkedIn-, Salesforce- eller Google Mail-konton för att logga in på partnerextranätet.
+- Kunderna kan använda sina Microsoft-, Facebook-eller Google Mail-konton för att logga in på företagets offentliga webbplats.
+- Leverantörer och partners för att kunna använda sina LinkedIn-, Salesforce-eller Google Mail-konton för att logga in på företagets extra nät för partner.
 
-Här är Contosos DMZ som innehåller en offentlig webbplats, ett partnerextranät och en uppsättning AD FS-servrar (Active Directory Federation Services). DMZ är ansluten till Internet som innehåller tjänster för kunder, partner och Internet.
+Här är contoso-DMZ som innehåller en offentlig webbplats, ett partner nät och en uppsättning AD FS-servrar. DMZ är ansluten till Internet som innehåller kunder, partners och Internet tjänster.
 
-![Contoso-support för federerad autentisering för kunder och partner](../media/contoso-identity/contoso-identity-fig2.png)
+![Contoso-support för extern inloggningsautentisering för kunder och partners](../media/contoso-identity/contoso-identity-fig2.png)
  
-AD FS-servrar i DMZ underlättar autentiseringen av kundens identitetsuppgifter via identitetsleverantörerna för åtkomst till den offentliga webbplatsen och partneruppgifter för åtkomst till partnerextranätet.
+AD FS-servrar i DMZ underlättar autentisering av kund uppgifter genom sin identitets leverantör för åtkomst till den offentliga webbplatsen och partner uppgifterna för åtkomst till partner nätet.
 
-Contoso bestämde sig för att behålla denna infrastruktur och dedikera den till kund- och partnerautentiseringar. Contosos identitetsarkitekter undersöker konverteringen av den här infrastrukturen till Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations)- och [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles)-lösningar.
+Contoso bestämde sig för att behålla denna infrastruktur och tilldela den till kund-och partner-inloggningsautentisering. Contosos identitetsarkitekter undersöker konverteringen av den här infrastrukturen till Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations)- och [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles)-lösningar.
 
 ## <a name="hybrid-identity-with-password-hash-synchronization-for-cloud-based-authentication"></a>Hybrididentitet med synkronisering av lösenordshash för molnbaserad autentisering
 
-Contoso ville använda sin lokala AD DS-skog för autentisering för Microsoft 365-molnresurser. De bestämde sig för synkronisering av lösenordshash (PHS).
+Contoso ville använda sin lokala AD DS-skog för att verifiera till Microsoft 365 Cloud Resources. Det beslutade att använda Lösenordssynkronisering (PHS).
 
-PHS synkroniserar den lokala AD DS-skogen med Azure AD-innehavaren av sitt Microsoft 365 för företags prenumeration, kopierar användare och grupp konton och en hash-version av användar konto lösen ord. 
+PHS synkroniserar den lokala AD DS-skogen med Azure AD-innehavaren av sitt Microsoft 365 för företags prenumeration, kopierar användare och grupp konton och en hash-version av användar konto lösen ord.
 
-För att utföra en pågående katalogsynkronisering har Contoso distribuerat Azure AD Connect-verktyget på en server i sitt datacenter i Paris. 
+Om du vill göra en katalog-synkronisering distribuerar contoso verktyget Azure AD Connect på en server i Paris data centret.
 
-Här är den server som kör Azure AD Connect-omröstningen för Contoso AD DS-skogen när det gäller ändringar och sedan synkroniserar ändringarna med Azure AD-klienten.
+Här är den server som kör Azure AD Connect-avsökning av contoso AD DS-skogen för ändringar och sedan synkroniserar dessa ändringar med Azure AD-klienten.
 
-![Contosos infrastruktur för PHS-katalogsynkronisering](../media/contoso-identity/contoso-identity-fig4.png)
+![Infrastrukturen för Contoso PHS Directory-synkronisering](../media/contoso-identity/contoso-identity-fig4.png)
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>Principer för villkorlig åtkomst för identitets- och enhetsåtkomst
 
 Contoso skapade en uppsättning [principer för villkorlig åtkomst](identity-access-policies.md) för Azure AD och Intune för tre skyddsnivåer:
 
-- **Grundskydd** gäller för alla användarkonton
-- **Känsliga** skydd gäller cheferna och ledningen
-- **Strikt reglerat** skydd med gäller för vissa användare på ekonomi-, juridik- och forskningsavdelningarna som har tillgång till data som är mycket strikta
+- *Grundläggande* skydd gäller för alla användar konton.
+- *Känsliga* skydd gäller för chefens ledarskap och direktör.
+- *Starkt reglerade* skydd gäller för specifika användare i ekonomi-, juridik-och forsknings avdelningar som har till gång till högreglerade data.
 
-Här är Contosos resulterande uppsättning principer för villkorsstyrd åtkomst av identitets- och enhetsprinciper.
+Här är den resulterande uppsättningen med principer för villkorsstyrd åtkomst via contoso och Device.
 
 ![Contosos principer för villkorlig åtkomst för identitet och enheterer](../media/contoso-identity/contoso-identity-fig5.png)
  
 ## <a name="next-step"></a>Nästa steg
 
-[Ta reda på mer](contoso-win10.md) om hur Contoso använder sin Microsoft Endpoint Configuration Manager-infrastruktur för att distribuera och hålla Windows 10 Enterprise uppdaterat i organisationen.
+[Lär dig](contoso-win10.md) hur Contoso använder sin Microsoft Endpoint Configuration Manager-infrastruktur för att distribuera och hålla nuvarande Windows 10-företag i sin organisation.
 
 ## <a name="see-also"></a>Snabbreferens
 

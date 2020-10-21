@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,53 +20,53 @@ search.appverid:
 - MOE150
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
-description: Läs mer om e-fakturan för Microsoft 365 för företag för Taiwan.
-ms.openlocfilehash: 1ea9ff21e25229924cd6815999b9c0868173026f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Lär dig mer om Microsoft 365 för Business e-faktura för Taiwan.
+ms.openlocfilehash: 2cdc3f6fe4b87f92b16355f10416fa99712c6fcb
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401792"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638477"
 ---
 # <a name="understand-your-e-invoice-for-microsoft-365-for-business-taiwan"></a>Förstå din e-faktura för Microsoft 365 för företag (Taiwan)
 
-e-faktura är elektronisk faktura utfärdad av säljaren efter köpköp i enlighet med Taiwan Skatteverkets krav på e-faktura. Informationen överförs till Taiwan Skatteverkets elektroniska fakturamoln för registrering. För information om e-faktura i Taiwan, se <a href="https://www.einvoice.nat.gov.tw/" target="_blank">här:</a>中ンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンン
+e-faktura är en elektronisk faktura utfärdad av säljaren efter köp köp i enlighet med den andra personens faktura krav för Taiwan. Informationen överförs till den andra organisationens elektroniskt faktura-moln för Arkiv hållning. För information om en Taiwans e-faktura, se: <a href="https://www.einvoice.nat.gov.tw/" target="_blank">財政部電子發票整合服務平台</a>
   
-Här ingår en exempelkopia av e-faktura:
+Ett exempel på en kopia av e-fakturan finns här:
   
-![Taiwans e-faktura.](../../media/01a275ad-54a9-4b76-ac03-4b288508b161.png)
+![E-fakturan för Taiwan.](../../media/01a275ad-54a9-4b76-ac03-4b288508b161.png)
   
-## <a name="what-is-my-tax-rate"></a>Vad är min skattesats?
+## <a name="what-is-my-tax-rate"></a>Vad är min moms avgift?
 
-För kommersiella inköp tillämpar vi skatter utöver det noterade priset på våra prenumerationer till en kurs som föreskrivs av Taiwan Tax Authority. För skatterelaterade frågor eller planering, vänligen arbeta med din skatterådgivare.
+För kommersiella köp gäller det moms utöver det offererade priset för våra abonnemang enligt en avgift som föreskrivs av Taiwans skattemyndighet. För eventuella skatte relaterade frågor eller planering kan du arbeta med din moms rådgivare.
   
-## <a name="when-will-e-invoice-start-for-my-microsoft-365-services"></a>När startar e-faktura för mina Microsoft 365-tjänster?
+## <a name="when-will-e-invoice-start-for-my-microsoft-365-services"></a>När skickas e-fakturan till Microsoft 365-tjänsterna?
 
-Microsoft kommer att ersätta aktuell datoriserad faktura med e-faktura den **15 september**. För fakturering före den 15 september skickas papperskopieringsskattefakturor direkt till kunder. Efter den 15 september erbjuds e-faktura i ditt microsoft 365-administrationscenter för visning, nedladdning och utskrift och skickas inte längre direkt till dig. 
+Microsoft ersätter den aktuella datoriserade fakturan med e-faktura den **15 september**. För betalning före den 15 september kan du skicka meddelanden direkt till kunder med pappers kopior. Efter den 15 september erbjuds e-fakturan till Microsoft 365 Admin Center för visning, nedladdning och utskrift, och kommer inte längre att skickas direkt till dig. 
   
 ## <a name="where-can-i-find-my-e-invoice"></a>Var hittar jag min e-faktura?
 
-Du kan visa, ladda ned och skriva ut din e-faktura dagen efter att fakturan är klar, via ditt administrationscenter, tillsammans med din månatliga faktura. [Visa din faktura](view-your-bill-or-invoice.md).
+Du kan visa, hämta och skriva ut din e-faktura dagen efter att fakturan är klar, via administrations centret, tillsammans med din månatliga räkning. [Visa din faktura](view-your-bill-or-invoice.md).
   
 ## <a name="how-do-i-update-my-vat-id"></a>Hur uppdaterar jag mitt moms-ID?
 
-Du kan uppdatera ditt moms-ID när du är ombord eller via administrationscentret efter att du har installerat det.
+Du kan uppdatera moms-ID: t vid inregistrering, eller via administrations centret efter att du har inbyggt.
   
-När du skapar kontot, i **steg 1**, Välkommen, Låt oss lära känna dig, **sidan 2**, Var kommer du att använda detta?, under **Service Recipient Address** information, kan du lägga till ditt 8-siffriga **moms-ID**. Om du inte har ett moms-ID anger du "00000000".
+När du skapar ett konto går du till **steg 1**, Välkommen och ser till att du får veta det, **sida 2**, var kommer du att använda den här?, under **tjänst mottagarens adress** uppgifter kan du lägga till ditt åttasiffriga **moms-ID**. Om du inte har något moms-ID, ange "00000000".
   
-När du har skapat ditt konto kan du uppdatera ditt moms-ID via administrationscentret genom att följa dessa steg:
+När du har skapat ditt konto kan du uppdatera moms-ID via administrations centret genom att följa de här stegen:
   
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
     
-2. Välj en prenumeration och välj sedan **Fler åtgärder**.
+2. Välj ett abonnemang och välj sedan **fler åtgärder**.
     
-3. Välj **Uppdatera tjänstmottagaradress**och uppdatera **moms-ID-information.** 
+3. Välj **uppdaterings adress för tjänste mottagare**och uppdatera information om **skatte-ID** . 
     
-## <a name="how-do-i-request-an-e-invoice-paper-copy"></a>Hur begär jag en papperskopia för e-faktura?
+## <a name="how-do-i-request-an-e-invoice-paper-copy"></a>Hur efterfrågar jag en kopia av en e-faktura?
 
-Om ditt kvitto vann Lucky Draw (endast tillgängligt för kunder utan moms-ID) skickar vi en papperskopia direkt till de adresser som registrerats via rekommenderat brev.
+Om ditt kvitto vann Lucky draw (endast tillgängligt för kunder utan moms-ID) skickar vi en pappers kopia direkt till adresserna på filen via e-post.
   
-Annars, om du behöver den officiella papperskopian av din e-faktura, [vänligen kontakta supporten](../../admin/contact-support-for-business-products.md). När vi har fått din förfrågan skickar vi papperskopian av e-fakturan till den registrerade adressen.
+Om du behöver en officiell kopia av e-fakturan kan du [kontakta supporten](../../admin/contact-support-for-business-products.md). När vi får din begäran kommer vi att skicka en kopia av e-fakturan till adressen i filen.
   
 ## <a name="more-questions"></a>Fler frågor?
 
