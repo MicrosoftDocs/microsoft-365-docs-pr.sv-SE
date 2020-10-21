@@ -1,10 +1,10 @@
 ---
-title: Varför kan jag inte byta Microsoft 365 för affärsplaner?
+title: Varför kan jag inte byta Microsoft 365 för företag-abonnemang?
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,37 +23,37 @@ search.appverid:
 - GEA150
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
-description: Förstå varför det ibland måste göras att byta abonnemang manuellt eller genom att ringa support.
-ms.openlocfilehash: 9f48ed56f230802ebd305d9b79e8ad694fadcc4c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Förstå varför du kan behöva byta abonnemang manuellt eller kontakta supporten.
+ms.openlocfilehash: 8e217ad59e6436641af3b2f0151a760da5239839
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403156"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646757"
 ---
-# <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>Varför kan jag inte byta Microsoft 365 för affärsplaner?
+# <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>Varför kan jag inte byta Microsoft 365 för företag-abonnemang?
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]
-> Den här artikeln gäller det gamla administrationscentret. Information om hur du visar artikeln om administrationscentret (förhandsversion) finns i [Varför kan jag inte uppgradera planer?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans). Förhandsgranskningen är tillgänglig för alla Microsoft 365-administratörer, du kan anmäla dig genom att välja **Prova förhandsgranskningsväxlingen** högst upp på startsidan. Mer information finns i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
+> Den här artikeln gäller det gamla administrations centret. Information om administrations centret (för hands version) finns i [Varför kan jag inte uppgradera abonnemang?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans). För hands versionen är tillgänglig för alla Microsoft 365-administratörer, du kan välja att aktivera **knappen för förhands granskning** högst upp på Start sidan. Mer information finns i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
 ::: moniker-end
 
-Om knappen **Byt abonnemang** inte visas kan ditt abonnemang inte bytas automatiskt. I vissa fall kan du kanske lösa problemet så att du kan använda knappen **Byt abonnemang**, eller så kanske du kan [byta abonnemang manuellt](switch-plans-manually.md) i stället. Placera muspekaren över informationsikonen för att visa ett meddelande som förklarar varför knappen **Byt abonnemang** inte är tillgänglig. Använd informationen i den här artikeln för att lösa problemet.
+Om du inte ser knappen **byta abonnemang** kan det inte ändras automatiskt. I vissa fall kan du kanske lösa problemet så att du kan använda knappen **Byt abonnemang**, eller så kanske du kan [byta abonnemang manuellt](switch-plans-manually.md) i stället. Placera muspekaren över informationsikonen för att visa ett meddelande som förklarar varför knappen **Byt abonnemang** inte är tillgänglig. Använd informationen i den här artikeln för att lösa problemet.
   
 ::: moniker range="o365-worldwide"
 
- **Behöver du något annat?** [Köp en annan prenumeration](../buy-another-subscription.md)  |  [Avbryt prenumerationen](cancel-your-subscription.md)  |  [Prenumerationer och fakturering](../index.yml)  |  [Ring support](../../admin/contact-support-for-business-products.md)
+ **Behöver du något annat?** [Köp ytterligare ett abonnemang](../buy-another-subscription.md)  |  [Avbryta ditt abonnemang](cancel-your-subscription.md)  |  [Abonnemang och fakturering](../index.yml)  |  [Ring support](../../admin/contact-support-for-business-products.md)
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **Behöver du något annat?** [Köp en annan prenumeration](../buy-another-subscription.md)  |  [Avbryt prenumerationen](cancel-your-subscription.md)  |  [Prenumerationer och fakturering](../index.yml)  |  [Ring support](../../admin/contact-support-for-business-products.md)
+ **Behöver du något annat?** [Köp ytterligare ett abonnemang](../buy-another-subscription.md)  |  [Avbryta ditt abonnemang](cancel-your-subscription.md)  |  [Abonnemang och fakturering](../index.yml)  |  [Ring support](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- **Behöver du något annat?** [Köp eller prova prenumerationer för Office 365 som drivs av 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md)  |  [Avbryt prenumerationen](cancel-your-subscription.md)  |  [Ring support](../../admin/contact-support-for-business-products.md)
+ **Behöver du något annat?** [Köp eller prova abonnemang för Office 365 som drivs av 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md)  |  [Avbryta ditt abonnemang](cancel-your-subscription.md)  |  [Ring support](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
@@ -84,23 +84,23 @@ Om du ska kunna använda knappen **Byt abonnemang** för att byta abonnemang aut
 
 ::: moniker range="o365-worldwide"
 
-Om du vill se om det finns etablerings- eller servicehälsoproblem går du till hälsosidan <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">för Tjänsten</a> i administrationscentret eller väljer **Health** \> **Hälsotillstånd**.
+Om du vill se om det finns problem med etablering eller tjänster går du till administrations centret, går till sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">tjänstens hälsa</a> **eller väljer hälso** \> **tjänstens hälsa**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Om du vill se om det finns etablerings- eller tjänsthälsoproblem går du till sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank">Tjänsthälsa</a> i Microsoft 365 eller väljer **Hälsotillstånd** för \> **hälsotjänsten**.
+Om du vill se om det finns problem med etableringen eller tjänsten går du till administrations centret för Microsoft 365, går till sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank">tjänstens hälsa</a> eller **väljer hälso** \> **tjänstens status**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Om du vill se om det finns etablerings- eller tjänsthälsoproblem går du till sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=850629" target="_blank">Tjänsthälsa</a> i Microsoft 365 eller väljer **Hälsotillstånd** för \> **hälsotjänsten**.
+Om du vill se om det finns problem med etableringen eller tjänsten går du till administrations centret för Microsoft 365, går till sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=850629" target="_blank">tjänstens hälsa</a> eller **väljer hälso** \> **tjänstens status**.
 
 ::: moniker-end
 
-Om du upptäcker att en tjänst inte är helt etablerad, eller om du har ett servicehälsoproblem, väntar du några timmar på att tjänsten ska bli tillgänglig och försök igen. Om du fortfarande har problem, [ring supporten](../../admin/contact-support-for-business-products.md).
+Om du upptäcker att en tjänst inte är fullständigt etablerad, eller om du har ett tjänst problem, vänta några timmar innan tjänsten blir tillgänglig och försök igen. Om du fortfarande har problem kan du [ringa supporten](../../admin/contact-support-for-business-products.md).
   
 ### <a name="you-cant-switch-plans-because-another-plan-is-in-the-process-of-being-switched-and-is-pending-a-credit-check"></a>Du kan inte byta abonnemang eftersom ett annat abonnemang håller på att bytas och väntar på kreditkontroll.
 
@@ -120,15 +120,15 @@ Du kan [byta abonnemang manuellt](switch-plans-manually.md) eller [ringa support
 
 Om du har betalat för abonnemanget i förväg kan du kanske [byta abonnemang manuellt](switch-plans-manually.md). Men du får ingen kredit för outnyttjad tid som finns kvar av det nuvarande abonnemanget om du byter abonnemang innan det går ut.
   
-Du kan också [ringa support](../../admin/contact-support-for-business-products.md) för att få hjälp.
+Du kan även [ringa support](../../admin/contact-support-for-business-products.md) för hjälp.
   
 ### <a name="you-have-a-government-or-non-profit-plan"></a>Du har ett abonnemang för myndigheter eller ideell verksamhet
 
-Om du har en statligt eller ideell plan kan du [byta abonnemang manuellt](switch-plans-manually.md) eller [ringa support](../../admin/contact-support-for-business-products.md) för att få hjälp.
+Om du har ett abonnemang för myndigheter eller ideell verksamhet kan du [byta abonnemang manuellt](switch-plans-manually.md) eller [ringa supporten](../../admin/contact-support-for-business-products.md) för att få hjälp.
   
 ### <a name="3000-or-more-licenses-have-been-purchased-and-assigned-for-the-subscription"></a>3 000 eller fler licenser har köpts och tilldelats för prenumerationen
 
-Knappen **Byt abonnemang** är inte tillgänglig för prenumerationer som har 3 000 eller fler tilldelade licenser för användare. Du kan dock kanske [byta abonnemang manuellt](switch-plans-manually.md). Du kan också [ringa support](../../admin/contact-support-for-business-products.md) för att få hjälp.
+Knappen **Byt abonnemang** är inte tillgänglig för prenumerationer som har 3 000 eller fler tilldelade licenser för användare. Du kan dock kanske [byta abonnemang manuellt](switch-plans-manually.md). Du kan även [ringa support](../../admin/contact-support-for-business-products.md) för hjälp.
   
 ### <a name="the-subscription-that-you-want-to-switch-from-has-a-temporary-issue"></a>Det har uppstått ett tillfälligt fel med prenumerationen som du vill byta från
 
@@ -138,7 +138,7 @@ Knappen **Byt abonnemang** kan tillfälligt bli otillgänglig då en stor mängd
 
 När du byter abonnemang visas de abonnemang som du kan byta till baserat på tjänsterna i ditt nuvarande abonnemang. Du kan bara byta till ett abonnemang med samma datarelaterade tjänster, till exempel Exchange Online eller SharePoint Online, eller till en högre version av dem. Detta garanterar att användarna inte förlorar data i samband med dessa tjänster vid bytet.
   
-Om abonnemanget inte är berättigat till automatiskt byte av abonnemang kan du kanske [byta abonnemang manuellt](switch-plans-manually.md) i stället. Du kan också [ringa support](../../admin/contact-support-for-business-products.md) för att få hjälp.
+Om abonnemanget inte är berättigat till automatiskt byte av abonnemang kan du kanske [byta abonnemang manuellt](switch-plans-manually.md) i stället. Du kan även [ringa support](../../admin/contact-support-for-business-products.md) för hjälp.
   
 > [!NOTE]
 > Det går inte att manuellt byta från ett Office 365 Small Business-, Office 365 Small Business Premium- eller Office 365 Midsize Business-abonnemang.

@@ -4,25 +4,25 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om hur du kontaktar supporten för ditt land eller din region.
+description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5649cca563d4b69a4bc86a424c4f3a969e78f6ed
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8a815c4605094b10d210e35ab5eabb4b7f7fd9ca
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44395904"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48640865"
 ---
-# <a name="contact-support-for-morocco"></a>Kontakta support för Marocko
+# <a name="contact-support-for-morocco"></a>Kontakta supporten för Marocko
 
-[Hitta ett annat land eller en annan region](../contact-support-for-business-products.md).
+[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 0801 000 809
@@ -34,18 +34,18 @@ Ange kod 7700
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Arabiska: sön-tor 08:00-16:00
+Arabiska: Sun-Thu 8 FM-4 EM
 
-Franska: mån-fre 08.00-16.00
+Franska: Mon-Fri 8 FM-4 EM
 
-Engelska: mån-fre 08.00-16.00
+Engelska: Mon-Fri 8 FM-4 EM
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Arabiska: sön-tor 08:00-16:00
+Arabiska: Sun-Thu 8 FM-4 EM
 
-Franska: mån-fre 07.00-20.00
+Franska: Mon-Fri 7 AM – 15:00
 
-Engelska: 24 timmar om dygnet, 7 dagar i veckan
+Engelska: mån–sön, dygnet runt
 
-Avgifter för lokalsamtal tillkommer
+Lokala samtals avgifter gäller

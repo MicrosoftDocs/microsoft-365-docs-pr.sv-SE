@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: Lär dig hur du återställer borttagna användarkonton och alla associerade data.
-ms.openlocfilehash: 27b3f4a0077b5ef0dcfaef1dbe5019a5d69652f2
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Lär dig hur du återställer borttagna användar konton och alla associerade data.
+ms.openlocfilehash: 905113c40f49f433a3d84810e04abc5f26724ecb
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387011"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646673"
 ---
 # <a name="restore-a-user"></a>Återställa en användare
 
@@ -43,41 +43,41 @@ Om du återställer ett användarkonto inom 30 dagar från det att det togs bort
   
 Här är några tips:
   
-- Kontrollera att licenser är tillgängliga för att tilldela kontot.
+- Kontrol lera att det finns licenser som kan kopplas till kontot.
     
 - Om ditt företag använder Active Directory, se [Felsökning av borttagna konton i Office 365](https://support.microsoft.com/kb/2619308) för instruktioner om återställning av användarkonton. 
     
 ## <a name="restore-one-or-more-user-accounts"></a>Återställa ett eller flera användarkonton
 
-Du måste vara global administratör för Microsoft 365 eller användarhantering för att kunna utföra dessa steg. 
+Du måste vara 365 en global administratör eller administratör för användar hantering för att utföra de här stegen. 
   
  
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan Användare **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">borttagna användare</a> i administrationscentret.
+1. Gå till sidan **användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">borttagna</a> användare i administrations centret.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Gå till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=848041)och välj sedan **Användare** \> **borttagna användare**.
+1. Gå till [administrations centret](https://go.microsoft.com/fwlink/p/?linkid=848041)och välj **användare** \> **borttagna användare**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=850627)och välj sedan **Användare** \> **borttagna användare**.
+1. Gå till [administrations centret](https://go.microsoft.com/fwlink/p/?linkid=850627)och välj **användare** \> **borttagna användare**.
 
 ::: moniker-end
 
-2. På sidan **Borttagna användare** väljer du namnen på de användare som du vill återställa och väljer sedan **Återställ**.
+2. På sidan **borttagna användare** väljer du namnen på de användare som du vill återställa och väljer sedan **Återställ**.
     
  
-3. Följ anvisningarna för att ange deras lösenord och välj sedan **Återställ**.
+3. Följ anvisningarna för att ange lösen ordet och välj sedan **Återställ**.
     
-4. Om användaren har återställts väljer du **Skicka e-post och stäng**. Om det uppstår en namnkonflikt eller en proxyadresskonflikt kan du läsa instruktionerna nedan om återställning av dessa konton.
+4. Om användaren återställs klickar du på **skicka e-post och Stäng**. Om det uppstår en namnkonflikt eller en proxyadresskonflikt kan du läsa instruktionerna nedan om återställning av dessa konton.
     
-När du har återställt en användare kontrollerar du att du meddelar dem att deras lösenord har ändrats och att du följer upp med dem.
+När du har återställt en användare ska du se till att deras lösen ord ändras och att du följer upp det.
   
 ## <a name="restore-a-user-that-has-a-user-name-conflict"></a>Återställa en användare som har en användarnamnskonflikt
 <a name="RestoreUserNameConflict"> </a>
@@ -89,35 +89,35 @@ Om du vill lösa detta ersätter du det aktiva användarkontot med det konto som
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan Användare **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">borttagna användare</a> i administrationscentret.
+1. Gå till sidan **användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">borttagna</a> användare i administrations centret.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Gå till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=848041)och välj sedan **Användare** \> **borttagna användare**.
+1. Gå till [administrations centret](https://go.microsoft.com/fwlink/p/?linkid=848041)och välj **användare** \> **borttagna användare**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=850627)och välj sedan **Användare** \> **borttagna användare**.
+1. Gå till [administrations centret](https://go.microsoft.com/fwlink/p/?linkid=850627)och välj **användare** \> **borttagna användare**.
 
 ::: moniker-end
 
   
-2. På sidan **Borttagna användare** markerar du namnen på de användare som du vill återställa och väljer sedan **Återställ**.
+2. På sidan **borttagna användare** väljer du namnen på de användare som du vill återställa och väljer sedan **Återställ**.
     
     > [!NOTE]
     > Om återställandet av två eller fler användare misslyckas visas ett felmeddelande som informerar dig om att återställningsåtgärden misslyckades för vissa användare. Ta fram loggen och kontrollera vilka användare som inte återställdes. Dessa konton måste du återställa ett åt gången. 
   
-3. Följ anvisningarna för att ange lösenordet och välj **Återställ**.
+3. Följ anvisningarna för att ange lösen ordet och välj **Återställ**.
     
 4. Ett meddelande dyker upp där det står att det inte gick att återställa kontot. Gör något av följande:
     
   - Avbryt återställningen och byt namn på den aktiva användaren. Försök sedan återställa igen.
     
-  - ELLER skriver du en ny primär e-postadress för användaren och väljer **Återställ**.
+  - ELLER Skriv en ny primär e-postadress för användaren och välj **Återställ**.
     
 5. Granska resultaten och välj sedan **Stäng**.
     
@@ -125,30 +125,30 @@ Om du vill lösa detta ersätter du det aktiva användarkontot med det konto som
 
 En proxyadresskonflikt inträffar när du tar bort ett användarkonto som innehåller en proxyadress, tilldelar ett annat konto samma proxyadress och sedan försöker återställa det borttagna kontot. Så här löser du problemet:
   
-Du måste ha [administratörsbehörighet](about-admin-roles.md) i Microsoft 365 för att kunna göra detta. 
+Du måste ha [Administratörs behörigheter](about-admin-roles.md) i Microsoft 365 för att göra detta. 
   
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan Användare **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">borttagna användare</a> i administrationscentret.
+1. Gå till sidan **användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">borttagna</a> användare i administrations centret.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Gå till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=848041)och välj sedan **Användare** \> **borttagna användare**.
+Gå till [administrations centret](https://go.microsoft.com/fwlink/p/?linkid=848041)och välj **användare** \> **borttagna användare**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=850627)och välj sedan **Användare** \> **borttagna användare**.
+1. Gå till [administrations centret](https://go.microsoft.com/fwlink/p/?linkid=850627)och välj **användare** \> **borttagna användare**.
 
 ::: moniker-end
 
 2. Markera användaren som ska återställas på sidan **Borttagna användare** och välj sedan **Återställ**. 
     
-3. På sidan **Återställ** följer du instruktionerna för att ange lösenordet och väljer **Återställ**. Proxyadresser med konflikter tas automatiskt bort från användaren som du återställer.
+3. Följ instruktionerna på sidan **Återställ** för att ange lösen ordet och välj **Återställ**. Proxyadresser med konflikter tas automatiskt bort från användaren som du återställer.
     
 4. Granska resultaten och välj sedan **Stäng**.
 

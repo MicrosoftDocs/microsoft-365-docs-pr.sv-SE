@@ -4,36 +4,36 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om hur du kontaktar supporten för ditt land eller din region.
+description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3b171a7d6ce5659312d071ae463d7d3e8ace839e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 935b6181336de2afc8341cb1daf7200ba0234d9e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397232"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48641405"
 ---
-# <a name="contact-support-for-malawi"></a>Kontakta support för Malawi
+# <a name="contact-support-for-malawi"></a>Kontakta supporten för Malawi
 
-[Hitta ett annat land eller en annan region](../contact-support-for-business-products.md).
+[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
-+1 312 843 5151
++ 1 312 843 5151
 
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Engelska: mån-fre 11.00-19.00
+Engelska: Mon-Fri 11 FM-7 EM
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Engelska: 24 timmar om dygnet, 7 dagar i veckan
+Engelska: mån–sön, dygnet runt
 
-Avgifter för internationella samtal tillkommer
+Internationella samtals avgifter gäller

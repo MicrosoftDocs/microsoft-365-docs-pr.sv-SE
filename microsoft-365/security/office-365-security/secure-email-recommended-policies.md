@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 5e7156a884093ca12fff7020bb045da30882547d
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: c8a1609bed124789229c6ae6d1f80b7d9c70bb66
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464342"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646817"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Policy rekommendationer för att skydda e-post
 
@@ -33,7 +33,7 @@ Dessa rekommendationer är baserade på tre olika nivåer av säkerhet och skydd
 
 Dessa rekommendationer kräver att användarna använder moderna e-postklienter, inklusive Outlook för iOS och Android på mobila enheter. Outlook för iOS och Android tillhandahåller stöd för de bästa funktionerna i Office 365. Dessa mobila Outlook-appar är också utformad med säkerhets funktioner som har stöd för mobil användning och arbetar tillsammans med andra säkerhets funktioner för Microsoft Cloud. Mer information finns i [vanliga frågor om Outlook för iOS och Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq).
 
-## <a name="updating-common-policies-to-include-email"></a>Uppdatera gemensamma principer för att inkludera e-post
+## <a name="update-common-policies-to-include-email"></a>Uppdatera gemensamma principer för att inkludera e-post
 
 För att skydda e-post visar följande diagram vilka principer som ska uppdateras från den vanliga policyn för identitets-och enhets åtkomst.
 
@@ -64,6 +64,41 @@ Den här principen hindrar ActiveSync-klienter från att kringgå andra principe
 - Följ anvisningarna i "steg 2: Konfigurera en princip för villkorsstyrd åtkomst för Azure AD för Exchange Online med ActiveSync (EAS)" i [Scenario 1: Office 365-appar kräver godkända appar med program skydds principer](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), som hindrar Exchange ActiveSync-klienterna från att ansluta till Exchange Online.
 
 Du kan också använda autentiseringsprinciper för att [Inaktivera grundläggande](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)åtkomst, vilket tvingar alla klient åtkomst förfrågningar att använda modern verifikation.
+
+## <a name="limit-access-to-exchange-online-from-outlook-on-the-web"></a>Begränsa åtkomsten till Exchange Online från Outlook på webben
+
+Du kan begränsa möjligheten för användare att ladda ned bifogade filer från Outlook på webben på umnanaged-enheter. Användare på dessa enheter kan visa och redigera de här filerna med Office Online utan att läcka och lagra filerna på enheten. Du kan också hindra användare från att se bilagor på en enhet som inte hanteras.
+
+Här är stegen:
+
+1. [Ansluta till en Exchange Online-Fjärrpowershell-session](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+2. Om du inte redan har en princip för OWA-postlådan skapar du en med cmdleten [New-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/new-owamailboxpolicy) .
+3. Om du vill tillåta visning av bifogade filer men inte nedladdning använder du det här kommandot:
+
+   ```powershell
+   Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnly
+   ```
+
+4. Om du vill blockera bifogade filer använder du det här kommandot:
+
+   ```powershell
+   Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnlyPlusAttachmentsBlocked
+   ```
+
+4. I Azure-portalen skapar du en ny princip för villkorsstyrd åtkomst med följande inställningar:
+
+   **Uppgifter > användare och grupper**: Välj lämpliga användare och grupper att inkludera och exkludera.
+
+   **Uppgifter > molnappar eller åtgärder > moln program > > Välj appar**: välj **Office 365 Exchange Online**
+
+   **Åtkomst kontroller > session**: Välj **Använd program begränsningar**
+
+## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>Kräv att iOS-och Android-enheter måste använda Outlook
+
+För att säkerställa att användare av iOS-och Android-enheter endast kan komma åt arbets-eller skol innehåll med Outlook för iOS och Android behöver du en princip för villkorsstyrd åtkomst som är avsedd för de potentiella användarna.
+
+Se anvisningarna för att konfigurera den här principen i [Hantera åtkomst till samarbeten med hjälp av Outlook för iOS och Android]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access).
+
 
 ## <a name="set-up-message-encryption"></a>Konfigurera meddelande kryptering
 

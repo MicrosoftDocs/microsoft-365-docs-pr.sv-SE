@@ -21,20 +21,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du ställer in kraven på starka lösen ord för användarna med Windows PowerShell.
-ms.openlocfilehash: 1634e2f0de2cdd2cac5e1928adbef54457e50716
-ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
+ms.openlocfilehash: 9f6fd61396d99245ffeabf757d3cb65c5d5cb85e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48626149"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646625"
 ---
 # <a name="set-strong-password-requirement-for-users"></a>Ange krav för starkt lösen ord för användare
 
-I den här artikeln förklaras hur du anger krav för starka lösen ord för användarna. Du måste utföra de här stegen med PowerShell.
+I den här artikeln förklaras hur du inaktiverar kraven på starka lösen ord för användarna. Krav för starka lösen ord är aktiverade som standard i Microsoft 365 för företag-organisationen. Din organisation kan ha behov att inaktivera starka lösen ord. Följ stegen nedan om du vill inaktivera kraven för starka lösen ord. Du måste utföra de här stegen med PowerShell.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Den här artikeln är till för personer som hanterar lösen ords principer för ett företag, en skola eller en ideellt område. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörskonto?](../admin-overview/admin-overview.md). Du måste vara [Global administratör eller lösen ords administratör](about-admin-roles.md) för att utföra de här stegen.
+Den här artikeln är till för personer som hanterar lösen ords principer för ett företag, en skola eller en ideellt område. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörs konto?](../admin-overview/admin-overview.md) Du måste vara [Global administratör eller lösen ords administratör](about-admin-roles.md) för att utföra de här stegen.
 
 Du måste också ansluta till Microsoft 365 med PowerShell.
 
@@ -42,15 +42,15 @@ Du måste också ansluta till Microsoft 365 med PowerShell.
 
 1. [Anslut till Microsoft 365 med PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-2. Med PowerShell kan du aktivera krav för starka lösen ord för alla användare med följande kommando:
+2. Med PowerShell kan du stänga av kraven på starka lösen ord för alla användare med följande kommando:
 
     ```powershell
-    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $true
+    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
 
-3. You can turn on strong password requirements for specific users with this command:
+3. You can turn of strong password requirements for specific users with this command:
 
     ```powershell
-    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $true
+    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false
     ```
 
 > [!NOTE]
