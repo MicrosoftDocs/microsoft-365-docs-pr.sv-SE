@@ -1,36 +1,36 @@
 ---
-title: Betalningsinformation för Sverige
+title: Betalnings information för Sverige
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om var du skickar betalningen för din prenumeration.
+description: Lär dig hur du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e17a1a3daff69152222cb370ec7205e07e8bed25
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d654d3797340876d359bccc8279e2021a1f2a6be
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404244"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48648437"
 ---
-# <a name="payment-information-for-sweden"></a>Betalningsinformation för Sverige
+# <a name="payment-information-for-sweden"></a>Betalnings information för Sverige
 
-[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
 
-Betala endast i SEK och referensfakturanummer på din betalningsförändelser.
+Betala endast i SEK och ange faktura numret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
 **Bank:** Citibank, London  
-**SWIFT-kod/BIC:** CITIGB2L (AV)  
+**SWIFT-kod/BIC:** CITIGB2L  
 **IBAN:** GB22CITI18500812207656  
-**SORTERAR KODAR:** 185008  
-**Kontonummer:** 12207656  
-**Kontonamn:** Microsoft 
+**Sorterings kod:** 185008  
+**Konto nummer:** 12207656  
+**Konto namn:** MICROSOFT 

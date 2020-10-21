@@ -1,36 +1,36 @@
 ---
-title: Betalningsinformation för Spanien
+title: Betalnings information för Spanien
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om var du skickar betalningen för din prenumeration.
+description: Lär dig hur du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 728e23789eb74242f3f7d7cfcbe2d52017671d07
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8f45a395717dbef0d4d215877762c10b2e00f5a4
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386527"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48648557"
 ---
-# <a name="payment-information-for-spain"></a>Betalningsinformation för Spanien
+# <a name="payment-information-for-spain"></a>Betalnings information för Spanien
 
-[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
 
-Betala endast i EUR och referensfakturanummer på din betalningsförändelser.
+Betala endast i EUR och ange faktura numret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
 **Bank:** Citibank, London  
-**SWIFT-kod/BIC:** CITIGB2L (AV)  
+**SWIFT-kod/BIC:** CITIGB2L  
 **IBAN:** GB31CITI18500812207591  
-**SORTERAR KODAR:** 185008  
-**Kontonummer:** 12207591  
-**Kontonamn:** Microsoft
+**Sorterings kod:** 185008  
+**Konto nummer:** 12207591  
+**Konto namn:** MICROSOFT

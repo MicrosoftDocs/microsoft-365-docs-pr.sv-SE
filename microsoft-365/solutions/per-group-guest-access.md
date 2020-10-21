@@ -1,5 +1,5 @@
 ---
-title: Blockera gäst användare i en viss grupp
+title: Hindra gäst användare från att läggas till i en viss grupp
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,21 +14,23 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Blockera gäst användare i en viss grupp
-ms.openlocfilehash: 17e5f8f9ab4107a12a0607dca3795d54b7be012c
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+description: Lär dig hur du hindrar gäst användare från att läggas till i en viss grupp
+ms.openlocfilehash: 91c7560186fb0b954075e9ff9c997b34121951cd
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377318"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651356"
 ---
-# <a name="block-guest-users-from-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Blockera gäst användare från en specifik Microsoft 365-grupp eller Microsoft Teams-team
+# <a name="prevent-guest-users-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Hindra gäst användare från att läggas till i en viss Microsoft 365-grupp eller Microsoft Teams-team
 
-Om du vill tillåta gäst åtkomst till de flesta grupper och team, men om du vill förhindra gäst åtkomst kan du blockera gäst åtkomst för enskilda grupper och team. (Blockering av gäst åtkomst till ett team utförs genom att blockera gäst åtkomst till den associerade gruppen.)
+Om du vill tillåta gäst åtkomst till de flesta grupper och team, men om du vill förhindra gäst åtkomst kan du blockera gäst åtkomst för enskilda grupper och team. (Blockering av gäst åtkomst till ett team utförs genom att blockera gäst åtkomst till den associerade gruppen.) Detta förhindrar att nya gäster läggs till, men inga gäster som redan finns i gruppen eller teamet tas bort.
 
 Om du använder känslighets etiketter i organisationen rekommenderar vi att du använder dem för att kontrol lera gäst åtkomst per grupp. Information om hur du gör detta finns [i känslighets etiketter för att skydda innehåll i Microsoft Teams, microsoft 365-grupper och SharePoint-webbplatser](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites). Det här är den metod som rekommenderas.
 
-Du kan också blockera gäst åtkomst till enskilda grupper med hjälp av Microsoft PowerShell.
+## <a name="change-group-settings-using-microsoft-powershell"></a>Ändra grupp inställningar med hjälp av Microsoft PowerShell
+
+Du kan också förhindra att nya gäster läggs till enskilda grupper med PowerShell.
 
 Du måste använda för hands versionen av [Azure Active Directory PowerShell för graf](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (modul name **AzureADPreview**) för att ändra inställningen för gäst åtkomst på grupp nivå:
 

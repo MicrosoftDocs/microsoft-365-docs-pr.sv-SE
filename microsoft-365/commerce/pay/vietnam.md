@@ -1,34 +1,34 @@
 ---
-title: Betalningsinformation för Vietnam
+title: Betalnings information för Vietnam
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om var du skickar betalningen för din prenumeration.
+description: Lär dig hur du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bc060f591b1c889e76fca78b5594abca116566fe
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 98212cf98051023ff6afb5612850414fd251d084
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404664"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48648041"
 ---
-# <a name="payment-information-for-vietnam"></a>Betalningsinformation för Vietnam
+# <a name="payment-information-for-vietnam"></a>Betalnings information för Vietnam
 
-[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
 
-Betala endast i USD och ange fakturanummer på fakturaöverföringen.
+Betala endast i USD och ange faktura numret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
 **Bank:** Citibank, Singapore  
-**SWIFT-KOD:** CITISGSG (AVIGGSG)  
-**Kontonummer:** 0-817543-138  
-**Kontonamn:** MICROSOFT REGIONAL SALES CORP  
+**SWIFT-kod:** CITISGSG  
+**Konto nummer:** 0-817543-138  
+**Konto namn:** MICROSOFT REGIONAL SALES CORP  

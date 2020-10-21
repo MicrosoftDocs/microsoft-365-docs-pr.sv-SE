@@ -1,35 +1,35 @@
 ---
-title: Betalningsinformation för Trinidad och Tobago
+title: Betalnings information för Trinidad och Tobago
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om var du skickar betalningen för din prenumeration.
+description: Lär dig hur du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c9ee373b77d8b653ef514f3f7a531c69217ea108
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4ae8e1163cd559f40984617243cf334a922ce504
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400816"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48648317"
 ---
-# <a name="payment-information-for-trinidad-and-tobago"></a>Betalningsinformation för Trinidad och Tobago
+# <a name="payment-information-for-trinidad-and-tobago"></a>Betalnings information för Trinidad och Tobago
 
-[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
 
-Betala endast i USD och referensfakturanummer på din betalningsöverföring.
+Betala endast i USD och ange faktura numret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
 **Bank:** Citibank, London  
-**SWIFT-kod:** CITIGB2L (AV)  
+**SWIFT-kod:** CITIGB2L  
 **IBAN:** GB95CITI18500812510049  
-**Kontonummer:** 12510049  
-**Kontonamn:** Microsoft  
+**Konto nummer:** 12510049  
+**Konto namn:** MICROSOFT  

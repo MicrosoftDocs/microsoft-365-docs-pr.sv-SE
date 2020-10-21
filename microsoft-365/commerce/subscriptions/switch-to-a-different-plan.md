@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,29 +24,29 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
-description: Läs om hur du byter till en ny Prenumeration på Microsoft 365 för företag.
-ms.openlocfilehash: 299de3618046d7bbf4f9e852f9c623bc02638715
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Lär dig hur du byter till en ny Microsoft 365 för företag-prenumeration.
+ms.openlocfilehash: 1cbdcafc2ef337546f31d2d8f8fc9ef0bf7722f8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818641"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647753"
 ---
 # <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>Byta till ett annat Microsoft 365 för företag-abonnemang
 
-När ditt företag ändras, eller om du behöver fler funktioner, kan du byta abonnemang.  
+När ditt företag förändras eller du behöver fler funktioner kan du byta abonnemang.  
 
-Det enklaste sättet att byta abonnemang är att använda knappen **Byt abonnemang** i administrationscentret. Det går dock inte att använda knappen **Byt abonnemang** i alla situationer. I vissa fall kanske du kan byta abonnemang manuellt.
+Det enklaste sättet att byta abonnemang är att använda knappen **Byt abonnemang** i administrationscentret. Men det går inte att använda knappen **byta abonnemang** i alla situationer. I vissa fall kanske du kan byta abonnemang manuellt.
 
 
 **Behöver du något annat?**
 - [Avbryt prenumerationen](cancel-your-subscription.md)
-- [Uppgradera Microsoft 365-familjen till en företagsprenumeration](https://support.microsoft.com/office/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
-- [Ring Microsoft-support](../../admin/contact-support-for-business-products.md)
+- [Uppgradera Microsoft 365-familjen till en företags prenumeration](https://support.microsoft.com/office/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
+- [Ring Microsoft Support](../../admin/contact-support-for-business-products.md)
 
-## <a name="use-the-switch-plans-button"></a>Använd knappen Växla abonnemang
+## <a name="use-the-switch-plans-button"></a>Använda knappen byta abonnemang
 
-När du använder knappen **Byt abonnemang** leds du genom processen att köpa ett nytt abonnemang som du kan byta ditt nuvarande abonnemang till, alla användare tilldelas automatiskt licenser i det nya abonnemanget och din gamla plan avbryts åt dig.
+När du använder knappen **byta abonnemang** börjar du med att köpa ett nytt abonnemang som du kan byta till, alla användare tilldelas automatiskt licenser i den nya planen och ditt gamla abonnemang annulleras för dig.
 
 ::: moniker range="o365-worldwide"
 
@@ -66,41 +66,41 @@ När du använder knappen **Byt abonnemang** leds du genom processen att köpa e
 
 ::: moniker-end
 
-2. Välj **Växla abonnemang** om du vill visa listan över nya abonnemang som är tillgängliga.
+2. Välj **Byt abonnemang** för att visa listan med nya abonnemang som är tillgängliga.
 
-    [Knappen Byt abonnemang finns inte där](#the-switch-plans-button-isnt-there)  |  [Jag ser inte planen jag vill ha.](#i-dont-see-the-plan-i-want)
+    [Knappen byta abonnemang finns inte](#the-switch-plans-button-isnt-there)  |  [Jag ser inte det abonnemang Jag vill ha](#i-dont-see-the-plan-i-want)
 
-3. Välj en plan för att se den nya totala kostnaden per månad. Var noga med att läsa **viktig information**och välj sedan **Nästa** för att checka ut.
+3. Välj en plan för att se den nya totala kostnaden per månad. Läs **viktig information**och välj sedan **Nästa** för att checka ut.
 
     [Hjälp mig att välja en ny plan](https://go.microsoft.com/fwlink/p/?linkid=842056).
 
-4. Välj **Chatta nu** på **kassasidan** om du behöver hjälp.
+4. Välj **Chatta nu** på sidan **kassa** om du behöver hjälp.
 
-    När du är klar med kassan tar det några minuter att slutföra växeln i Microsoft 365. Du kan börja använda din nya prenumeration direkt.
+    När du är klar med utcheckningen tar det några minuter för Microsoft 365 att slutföra omställningen. Du kan börja använda ditt nya abonnemang direkt.
 
-## <a name="the-switch-plans-button-isnt-there"></a>Knappen Byt abonnemang finns inte där
+## <a name="the-switch-plans-button-isnt-there"></a>Knappen byta abonnemang finns inte
 
 Om knappen **Byt abonnemang** inte är tillgänglig kan du försöka [byta abonnemang manuellt](switch-plans-manually.md) eller [ringa support](../../admin/contact-support-for-business-products.md). Mer information finns i [Varför kan jag inte byta abonnemang?](why-can-t-i-switch-plans.md)
   
-Här är varför detta kan hända:
+Det här kan du göra:
   
-- Du använder mer än ett Microsoft 365-abonnemang. Du kan bara använda knappen **Byt abonnemang** om alla användare prenumererar på samma abonnemang.
+- Du använder mer än ett Microsoft 365-abonnemang. Du kan bara använda knappen **byta abonnemang** om alla användare abonnerar på samma abonnemang.
 
 - Du använder redan Office 365 Enterprise E5, så du har redan alla funktioner som är tillgängliga i Office 365.
 
-## <a name="i-dont-see-the-plan-i-want"></a>Jag ser inte planen jag vill ha.
+## <a name="i-dont-see-the-plan-i-want"></a>Jag ser inte det abonnemang Jag vill ha
 
-När du använder knappen **Byt abonnemang** visas de planer som du kan växla till baserat på tjänsterna i ditt aktuella abonnemang. Du kan bara använda knappen **Byt abonnemang** för att växla till ett abonnemang som har samma datarelaterade tjänster eller till en högre version. Detta garanterar att användarna inte förlorar data i samband med dessa tjänster vid bytet.
+När du använder knappen **byta abonnemang** visas de abonnemang som du kan växla till baserat på tjänsterna i det aktuella abonnemanget. Du kan bara använda knappen **byta abonnemang** för att byta till ett abonnemang som har samma data-relaterade tjänster eller till en högre version. Detta garanterar att användarna inte förlorar data i samband med dessa tjänster vid bytet.
   
-Om du vill jämföra planer innan du byter finns på sidan [Microsoft 365 för företag produktjämförelse.](https://go.microsoft.com/fwlink/p/?linkid=842056) Tekniska specifikationer finns i [Microsoft 365 Service Descriptions](https://go.microsoft.com/fwlink/p/?linkid=842275).
+Om du vill jämföra abonnemang före bytet läser du [produkt jämförelse sidan för Microsoft 365 för företag](https://go.microsoft.com/fwlink/p/?linkid=842056) . Tekniska specifikationer finns i [Microsoft 365 tjänste beskrivningar](https://go.microsoft.com/fwlink/p/?linkid=842275).
   
-Om du vill byta till ett abonnemang med färre tjänster kan du [byta abonnemang manuellt](switch-plans-manually.md)eller [Ringa Microsoft Support](../../admin/contact-support-for-business-products.md) för hjälp.
+Om du vill byta till en plan med färre tjänster kan du [byta abonnemang manuellt](switch-plans-manually.md)eller [ringa Microsoft Support](../../admin/contact-support-for-business-products.md) för att få hjälp.
   
 ## <a name="why-some-switches-take-longer"></a>Varför vissa växlar tar längre tid
 
- **Kreditkontroller vid byte**av abonnemang : Om du betalar med faktura eller når en viss kostnadsnivå kan en kreditkontroll krävas. En kreditkontroll kan ta upp till två arbetsdagar. Användarna har full tillgång till sin nuvarande plan tills du byter dem till den nya.
+ **Kredit kontroller vid byte av abonnemang**: om du betalar med faktura, eller om du har en viss kostnads nivå, kanske det krävs en kredit kontroll. En kredit kontroll kan ta upp till två arbets dagar. Användarna får fullständig åtkomst till deras nuvarande plan tills du byter dem till det nya.
   
- **Verifiering av ideell status**: Det tar normalt 30 dagar att slutföra verifieringsprocessen för din ideella status. Om det har gått mer än 30 dagar, vänligen kontakta supporten.
+ **Kontroll av brist vinst status**: det tar vanligt vis 30 dagar att slutföra verifierings processen för status som inte vinst. Kontakta support om det har gått mer än 30 dagar.
   
 ## <a name="call-support-to-help-you-switch-plans"></a>Ring supporten som hjälper dig att byta abonnemang
 

@@ -1,10 +1,10 @@
 ---
-title: Hantera registreringsprenumerationer för självbetjäning
+title: Hantera abonnemang för självbetjäning
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,37 +17,37 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Läs om hur du hanterar kostnadsfria registreringsprenumerationer för självbetjäning för din organisation.
-ms.openlocfilehash: 81c67292a394c62d6057022babb88aa8796b9b3d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Lär dig hur du hanterar kostnads fria abonnemang för självbetjäning för din organisation.
+ms.openlocfilehash: fb70d0c40d4358abc227c8f6ff4a0e0dce1a7265
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403252"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647837"
 ---
-# <a name="manage-self-service-sign-up-subscriptions"></a>Hantera registreringsprenumerationer för självbetjäning
+# <a name="manage-self-service-sign-up-subscriptions"></a>Hantera abonnemang för självbetjäning
 
-## <a name="what-are-self-service-sign-up-subscriptions"></a>Vad är självbetjäningsprenumerationer?
+## <a name="what-are-self-service-sign-up-subscriptions"></a>Vad är självbetjänings abonnemang?
 
-Det finns ett begränsat antal kostnadsfria registreringsprenumerationer för självbetjäning som användare i organisationen kan registrera sig för. En användare kan bara registrera sig för och använda en självbetjäningsprenumeration för sig själva. Dessa prenumerationer visas på sidan **Dina produkter,** markeras som **Kostnadsfria**och har en anteckning som säger: "Det här är en kostnadsfri prenumeration som aktiveras av användare i företaget." Du kan hantera självbetjäningsprenumerationer genom att blockera användare från att registrera sig och genom att ta bort kostnadsfria prenumerationer som användarna har registrerat sig för. Mer information om självbetjäningsanmäla och tillgängliga prenumerationer finns [i Använda självbetjäningsanmäla i organisationen](../../admin/misc/self-service-sign-up.md).
+Det finns ett begränsat antal kostnads fria registrerings abonnemang för självbetjäning som användare i organisationen kan registrera sig för. En användare kan bara registrera sig för och använda ett själv registrerings abonnemang för sig själva. Dessa abonnemang visas på sidan **produkter** , markeras som **ledigt**och har en kommentar om att "det här är ett kostnads fritt abonnemang som har Aktiver ATS av användare i företaget." Du kan hantera självbetjänings abonnemang genom att hindra användare från att registrera sig och genom att ta bort kostnads fria abonnemang som användare har registrerat sig för. Mer information om själv registrering och tillgängliga prenumerationer finns i [använda självbetjänings registrering i din organisation](../../admin/misc/self-service-sign-up.md).
 
-## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>Hur skiljer sig dessa prenumerationer från självbetjäningsköpsprenumerationer?
+## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>Hur skiljer sig abonnemangen från självbetjänings abonnemanget?
 
-Självbetjäningsprenumerationer är kostnadsfria och är tillgängliga för en större lista över produkter än självbetjäningsköpsprenumerationer. När en användare registrerar sig för en prenumeration på självbetjäningsköp ansvarar de för att betala för den. Prenumerationer på självbetjäningsköp är också endast tillgängliga för Power Platform-produkter (Power BI, Power Apps och Power Automate). Mer information finns i [Vanliga frågor och svar om självbetjäningsköp](self-service-purchase-faq.md).
+Självbetjänings prenumerationer är gratis och finns tillgängliga i en större lista över produkter än abonnemang för egen service. När en användare registrerar sig för ett abonnemang för självbetjänings köp är de ansvarig för att betala för det. Dessutom är självbetjänings-och inköps abonnemang endast tillgängliga för Power Platform-produkter (Power BI, Power app och Power automatiserat). Mer information finns i [vanliga frågor och svar om inköp](self-service-purchase-faq.md).
 
 ## <a name="block-users-from-signing-up"></a>Blockera användare från att registrera sig
 
-Du använder cmdleten [**Set-MsolCompanySettings**](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) med parametern **AllowAdHocSubscriptions** för att styra om användare kan registrera sig för självbetjäningsanteckningsprenumerationer. Mer information finns i [Hur kontrollerar jag självbetjäningsinställningarna?](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
+Du använder cmdleten [**set-MsolCompanySettings**](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) med parametern **AllowAdHocSubscriptions** för att kontrol lera om användare ska kunna registrera sig för självbetjänings inloggnings prenumerationer. Mer information finns i [Hur styr jag självbetjänings inställningar?](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
 
-## <a name="delete-a-self-service-sign-up-subscription"></a>Ta bort en prenumeration på självbetjäningsanmälning
+## <a name="delete-a-self-service-sign-up-subscription"></a>Ta bort ett själv registrerings abonnemang
 
 > [!IMPORTANT]
-> När du tar bort en prenumeration för självbetjäningsanmälning blockerar du alla användare från att komma åt deras data och e-post och ta bort alla data och e-postmeddelanden.
+> När du tar bort ett själv registrerings abonnemang hindrar du alla användare från att komma åt sina data och e-postmeddelanden och ta bort alla data och e-postmeddelanden.
 
-1. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret.
-2. Hitta den självbetjäningsprenumeration som du vill ta bort. Välj **Ta bort prenumeration**i avsnittet Inställningar & **Åtgärder** .
-3. Markera kryssrutan i fönstret **Ta bort prenumeration** och välj sedan Ta bort **prenumeration**.
+1. Gå till sidan fakturering i administrations centret **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> .
+2. Hitta själv registrerings prenumerationen som du vill ta bort. Välj **ta bort prenumeration**i avsnittet **Settings & Actions** .
+3. Markera kryss rutan i fönstret **ta bort prenumeration** och välj sedan **ta bort abonnemang**.
 
-## <a name="i-have-a-self-service-sign-up-subscription-that-blocks-directory-deletion"></a>Jag har en självbetjäningsprenumeration som blockerar borttagning av katalog
+## <a name="i-have-a-self-service-sign-up-subscription-that-blocks-directory-deletion"></a>Jag har ett självbetjänings abonnemang som hindrar borttagning av kataloger
 
-De självbetjäningsannonsprodukter som enskilda användare kan registrera sig för skapar också en gästanvändare för autentisering i din Azure AD-katalog. För att undvika dataförlust blockerar dessa självbetjäningsprodukter katalogborttagningar tills de tas bort helt från katalogen. De kan bara tas bort av Azure AD-administratören. Mer information finns [i Ta bort en katalog i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-delete-howto).
+Självbetjänings-och registrerings produkter som enskilda användare kan registrera sig för och skapa en gäst användare för att verifiera i din Azure AD-katalog. För att undvika data förlust tar du bort de här själv tjänst produkterna tills de tas bort helt från katalogen. De kan bara tas bort av Azure AD-administratören. Mer information finns i [ta bort en katalog i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-delete-howto).

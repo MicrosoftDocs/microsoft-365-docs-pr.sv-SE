@@ -1,35 +1,35 @@
 ---
-title: Betalningsinformation för Jungfruöarna, USA
+title: Betalnings information för amerikanska jungfru öarna
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om var du skickar betalningen för din prenumeration.
+description: Lär dig hur du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cbf6d6bcccc26d4b43b9e23b0a577b3878faad00
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 62ae33afde81d2beccabc9836c3ad94182705d6e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401900"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48648017"
 ---
-# <a name="payment-information-for-virgin-islands-us"></a>Betalningsinformation för Jungfruöarna, USA
+# <a name="payment-information-for-virgin-islands-us"></a>Betalnings information för amerikanska jungfru öarna
 
-[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
 
-Betala endast i USD och referensfakturanummer på din betalningsöverföring.
+Betala endast i USD och ange faktura numret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
-**Bank:** Bank of America  
+**Bank:** Bank i Amerika  
 **Gren:** Dallas  
 **SWIFT-kod:** BOFAUS3N  
-**Kontonummer:** 4426587954  
-**Kontonamn:** Microsoft  
+**Konto nummer:** 4426587954  
+**Konto namn:** Microsoft  

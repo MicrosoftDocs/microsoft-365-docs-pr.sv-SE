@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: I den här artikeln förklarar vi hur du använder PowerShell för att Visa licensierade och olicensierade Microsoft 365-användarkonton.
-ms.openlocfilehash: 8a99ba2a80f1d814ec5268c4f8f479837eb54dc0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: b38ee7674abaea6b63d0661ba79a9814f8c54229
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694496"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651390"
 ---
 # <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>Visa licensierade och olicensierade Microsoft 365-användare med PowerShell
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 Användar konton i din Microsoft 365-organisation kan ha vissa, alla eller inga av de tillgängliga licenserna tilldelade till dem från de licens planer som är tillgängliga i din organisation. Du kan använda PowerShell för Microsoft 365 för att snabbt hitta licensierade och olicensierade användare i organisationen.
 
@@ -46,7 +46,7 @@ Get-AzureAdUser | ForEach{ $licensed=$False ; For ($i=0; $i -le ($_.AssignedLice
 Om du vill visa en lista över alla användar konton i organisationen som har tilldelats alla dina licens planer (licensierade användare) kör du följande kommando:
   
 ```powershell
-Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} }
+Get-AzureAdUser | ForEach { $licensed=$True ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} }
 ```
 
 >[!Note]
@@ -64,7 +64,7 @@ Get-MsolUser -All
 ```
 
 >[!Note]
->PowerShell Core stöder inte Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen och cmdlets med **MSOL** . För att kunna fortsätta använda dessa cmdletar måste du köra dem från Windows PowerShell.
+>PowerShell Core stöder inte Microsoft Azure Active Directory-modul för Windows PowerShell-modulen och-cmdlets med **MSOL** i namnet. Om du vill fortsätta använda dessa cmdlets måste du köra dem från Windows PowerShell.
 >
 
 Om du vill visa listan över alla olicensierade användar konton i organisationen kör du följande kommando:
@@ -85,4 +85,4 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true}
   
 [Hantera Microsoft 365 med PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Komma igång med PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Börja använda PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
