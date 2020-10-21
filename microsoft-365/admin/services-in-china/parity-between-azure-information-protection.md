@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: skjerland
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: Läs mer om Azure information Protection för Office 365 som drivs av 21Vianet och hur du konfigurerar den för kunder i Kina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: ca30811e77f686b92b8cdd13d624182eb0d3039e
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: ad3420483701c83ffef65994996047de56a7085c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445585"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644669"
 ---
 # <a name="parity-between-azure-information-protection-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>Paritet mellan Azure information Protection för Office 365 som drivs av 21Vianet och kommersiella offerter
 
@@ -55,12 +55,12 @@ För att krypteringen ska fungera korrekt måste RMS vara aktiverat för innehav
 
 - Kontrol lera om RMS är aktiverat:
   1. Starta PowerShell som administratör.
-  2. Om AIPService-modulen inte är installerad kör du  `Install-Module AipService` .
+  2. Om AIPService-modulen inte är installerad kör du `Install-Module AipService` .
   3. Importera modulen med `Import-Module AipService` .
-  4. Anslut till tjänsten med  `Connect-AipService -environmentname azurechinacloud` .
-  5. Kör  `(Get-AipServiceConfiguration).FunctionalState`   och kontrol lera om tillståndet är  `Enabled` .
+  4. Anslut till tjänsten med `Connect-AipService -environmentname azurechinacloud` .
+  5. Kör `(Get-AipServiceConfiguration).FunctionalState` och kontrol lera om tillståndet är `Enabled` .
 
-- Kör om det funktionella läget är  `Disabled`  `Enable-AipService` .
+- Kör om det funktionella läget är `Disabled` `Enable-AipService` .
 
 ### <a name="dns-configuration-for-encryption-windows"></a>DNS-konfiguration för kryptering (Windows)
 
@@ -70,27 +70,27 @@ Dessutom är antagandet att användare loggar in med ett användar namn som base
 
 - Hämta RMS-ID:
   1. Starta PowerShell som administratör.
-  2. Om AIPService-modulen inte är installerad kör du  `Install-Module AipService` .
-  3. Anslut till tjänsten med  `Connect-AipService -environmentname azurechinacloud` .
-  4. Kör  `(Get-AipServiceConfiguration).RightsManagementServiceId`   för att hämta RMS-ID.
+  2. Om AIPService-modulen inte är installerad kör du `Install-Module AipService` .
+  3. Anslut till tjänsten med `Connect-AipService -environmentname azurechinacloud` .
+  4. Kör `(Get-AipServiceConfiguration).RightsManagementServiceId` för att hämta RMS-ID.
 
 - Logga in på din DNS-leverantör, gå till DNS-inställningarna för domänen och Lägg sedan till en ny SRV-post.
-  - Tjänst = `_rmsredir`
-  - Protokoll = `_http`
-  - Namn = `_tcp`
-  - Target =  `[GUID].rms.aadrm.cn`   (där GUID är ett RMS-ID)
+  - Tjänst = `_rmsredir`
+  - Protokoll = `_http`
+  - Namn = `_tcp`
+  - Target = `[GUID].rms.aadrm.cn` (där GUID är ett RMS-ID)
   - Prioritet, vikt, sekunder, TTL = standardvärden
 
-- Koppla den anpassade domänen till klient organisationen i [Azure-portalen](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains). Detta lägger till en post i DNS som kan ta flera minuter att verifiera när du har lagt till värdet i DNS-inställningarna.
+- Koppla den anpassade domänen till klient organisationen i [Azure-portalen](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains). Detta lägger till en post i DNS som kan ta flera minuter att verifiera när du har lagt till värdet i DNS-inställningarna.
 
 - Logga in i administrations centret för Microsoft 365 med motsvarande globala administratörs behörighet och Lägg till domänen (till exempel `contoso.cn` ) för att skapa användare. I verifierings processen kanske ytterligare DNS-ändringar krävs. När verifieringen är klar kan du skapa användare.
 
 ### <a name="dns-configuration-for-encryption-mac-ios-android"></a>DNS-konfiguration för kryptering (Mac, iOS, Android)
 
 - Logga in på din DNS-leverantör, gå till DNS-inställningarna för domänen och Lägg sedan till en ny SRV-post.
-  - Tjänst = `_rmsdisco`
-  - Protokoll = `_http`
-  - Namn = `_tcp`
-  - Target = `api.aadrm.cn`
-  - Port = `80`
+  - Tjänst = `_rmsdisco`
+  - Protokoll = `_http`
+  - Namn = `_tcp`
+  - Target = `api.aadrm.cn`
+  - Port = `80`
   - Prioritet, vikt, sekunder, TTL = standardvärden

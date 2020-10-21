@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Lär dig mer om domäner genom att hitta svar på vanliga frågor.
-ms.openlocfilehash: fe602c45059be1b273b7ebe3a11cd91adf89a479
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: b51b5fe56bbae56dd473dd831ec91e629d9233f3
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845850"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644590"
 ---
 # <a name="domains-faq"></a>Vanliga frågor och svar om domäner
 

@@ -1,41 +1,41 @@
 ---
-title: Stödinformation för Angola
+title: Supportinformation för Angola
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om hur du kontaktar supporten för ditt land eller din region.
+description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d3d3ad8fb135006fc07e9195a90996958d4abb6b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 60709209f3d1d2686d5ef0b5e357fd4dca366a3e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398732"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644345"
 ---
-# <a name="contact-support-for-angola"></a>Kontakta support för Angola
+# <a name="contact-support-for-angola"></a>Kontakta supporten för Angola
 
-[Hitta ett annat land eller en annan region](../contact-support-for-business-products.md).
+[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
-+351 21 366 5030
++ 351 21 366 5030
 
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Engelska: mån-fre 09.00-17.00
+Engelska: Mon-Fri 09.00 – 17.00
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Portugisiska: mån-fre 09.00-22.00
+Portugisiska: Mon-Fri 09.00 – 10 PM
 
-Engelska: 24 timmar om dygnet, 7 dagar i veckan
+Engelska: mån–sön, dygnet runt
 
-Avgifter för internationella samtal tillkommer
+Internationella samtals avgifter gäller

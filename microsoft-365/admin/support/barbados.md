@@ -1,28 +1,28 @@
 ---
-title: Supportinformation för Barbados
+title: Supportinformation för Barbados0
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: ''
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om hur du kontaktar supporten för ditt land eller din region.
+description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1d705d7ffd85874aa90f99f4741b46e38aadb38e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 316bb320a82bfeee2aaac177ae6f07346725608c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398576"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48643949"
 ---
-# <a name="contact-support-for-barbados"></a>Kontakta support för Barbados
+# <a name="contact-support-for-barbados"></a>Kontakta supporten för Barbados0
 
-[Hitta ett annat land eller en annan region](../contact-support-for-business-products.md).
+[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 1 877 639 0597
@@ -30,8 +30,8 @@ ms.locfileid: "44398576"
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Engelska: mån-fre 09.00-17.00
+Engelska: Mon-Fri 09.00 – 17.00
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Engelska: 24 timmar om dygnet, 7 dagar i veckan
+Engelska: mån–sön, dygnet runt

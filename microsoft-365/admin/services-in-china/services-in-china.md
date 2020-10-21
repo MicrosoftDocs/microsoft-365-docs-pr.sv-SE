@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: skjerland
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -20,218 +20,218 @@ search.appverid:
 - GEU150
 - GEA150
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
-description: Läs mer om Office 365 som drivs av 21Vianet och som är utformat för att uppfylla behoven av säkra, tillförlitliga och skalbara molntjänster i Kina.
+description: Lär dig mer om Office 365 som drivs av 21Vianet och är utformat för att möta behoven hos säkra, pålitliga och utbyggbara moln tjänster i Kina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 133df44635927d185e72c7981953e07162d458a9
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 5906bf961e246f1d707b030ffb4c788da353200c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079743"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644657"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 med 21Vianet
 
-Office 365 som drivs av 21Vianet är utformat för att uppfylla behoven av säkra, tillförlitliga och skalbara molntjänster i Kina. Den här tjänsten drivs av teknik som Microsoft har licensierat till 21Vianet.
+Office 365 som drivs av 21Vianet är utformat för att möta behoven hos säkra, tillförlitliga och utbyggbara moln tjänster i Kina. Denna tjänst drivs av teknik som Microsoft har licensierat till 21Vianet.
   
-Microsoft använder inte själva tjänsten. 21Vianet driver, tillhandahåller och hanterar leverans av tjänsten. 21Vianet är den största carrier-neutrala Internet datacentertjänster leverantör i Kina, som tillhandahåller hosting, hanterade nätverkstjänster och cloud computing infrastrukturtjänster. Genom att licensiera Microsoft-teknik driver 21Vianet lokala Office 365-datacenter för att ge dig möjlighet att använda Office 365-tjänster samtidigt som du behåller dina data i Kina. 21Vianet tillhandahåller även dina prenumerations- och faktureringstjänster samt support.
+Microsoft driver inte själva tjänsten. 21Vianet fungerar, tillhandahåller och hanterar leverans av tjänsten. 21Vianet är den största leverantörs oberoende Internet data centertjänster-tjänsten i Kina, som tillhandahåller värd, hanterade nätverks tjänster och Cloud Computing Infrastructure Services. Genom licensiering av Microsoft Technologies fungerar 21Vianet lokala Office 365-datacentrer för att du ska kunna använda Office 365-tjänster samtidigt som du håller dina data i Kina. 21Vianet tillhandahåller också abonnemangs-och fakturerings tjänster samt support.
   
 > [!NOTE]
-> Dessa tjänster omfattas av kinesiska lagar. 
+> Dessa tjänster lyder under kinesiska lagar. 
   
  **Följ oss på WeChat**
   
 Skanna den här QR-koden om du vill följa oss på WeChat och få de senaste uppdateringarna för Office 365 som drivs av 21Vianet.
   
-![Skanna denna QR-kod för att följa oss på WeChat](../../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
+![Skanna den här QR-koden för att följa oss på WeChat](../../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
   
  **Om tjänster i Office 365 som drivs av 21Vianet**
   
-I avsnitten nedan beskrivs en del av de skillnader som gäller för de olika tjänsterna. I slutändan är vårt mål att uppnå paritet med globala tjänster. Men på grund av den unika karaktären hos Kina-tjänsterna - som drivs av en partner från datacenter i Kina - finns det vissa funktioner som ännu inte har aktiverats. Kunderna kommer att se tjänsterna komma närmare full funktionsparitet över tiden. En mer detaljerad översikt över tjänster som är tillgängliga för varje Office 365-abonnemang som drivs av 21Vianet finns i [servicebeskrivningen för Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
+I avsnitten nedan beskrivs en del av de skillnader som gäller för de olika tjänsterna. Slutligen är det riktigt att nå paritet med globala tjänster. På grund av den unika arten av de Kina-tjänster som drivs av en partner från data Center i Kina finns det emellertid vissa funktioner som ännu inte har Aktiver ATS. Kunderna ser att tjänsterna närmar sig de fulla funktionerna paritet över tid. En mer detaljerad titt på tillgängliga tjänster för varje Office 365-abonnemang som drivs av 21Vianet finns i [Beskrivning av Office 365-tjänsten](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
   
     
-Om du vill lära dig hur du kommer igång med allmänna Office 365-tjänster läser [du Komma igång](../admin-overview/get-started-with-office-365.md).
+Om du vill lära dig hur du kommer igång med allmänna Office 365-tjänster läser du [komma igång](../admin-overview/get-started-with-office-365.md).
   
 ## <a name="office-365-suite"></a>Office 365 Suite
 
 |||
 |:-----|:-----|
-|Anpassade domäner  <br/> |Administratörer kan skapa och/eller använda anpassade domäner som registrerats via kinesiska domänleverantörer. Om du inte har en anpassad domän kan du [köpa ett domännamn](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name) från en domännamnsregistratorer. Om du redan har en, [Hitta din domänregistratorer eller DNS-värd](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar).  <br/> Om du skapar en offentlig webbplats med office 365 SharePoint Online-tjänsten kräver Kinas internetefterlevnadspolicy att du får ett ICP-nummer (Internet Content Provider).  **Obs:** Automatisk validering för otillåtna ord i anpassade domännamn är inte tillgänglig.           |
-|Prenumerationer, fakturering och teknisk support  <br/> |Tillhandahålls av 21Vianet. Information om hur du kontaktar supporten finns i [Kontakta Support för Office 365 för företag](../contact-support-for-business-products.md).  <br/> |
-|Självbetjäning för återställning av lösenord  <br/> |Endast tillgängligt för administratörer. Mer information finns [i Ändra eller återställa ditt lösenord i Office 365 som drivs av 21Vianet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
-|Säkerhet, sekretess, efterlevnad och information om supportnivåer  <br/> |Tillhandahålls av 21Vianet.  <br/> |
-|Konfigurera Office-skrivbordet  <br/> |Office-skrivbordskonfiguration är inte tillgänglig för Office 2010 och Office 2007. Administratörer kan dock [konfigurera aktuella Office-skrivbordsprogram så att de fungerar med Office 365](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e).  <br/> |
-|Stöd för mobil och enhet\*  <br/> | Kommer snart är följande mobila funktioner:  <br/>  Hantering av mobila enheter (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) är inte tillgänglig, men du kan använda Exchange ActiveSync-enheter eller ett erbjudande från Research in Motion (RIM, BlackBerry trådlös e-postlösning) för att köra Blackberry Enterprise Server (BES).  <br/>  Mer information om mobilsupport finns i [Konfigurera och hantera mobil åtkomst för användarna](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802).  <br/> |
+|Anpassade domäner  <br/> |Administratörer kan skapa och/eller använda anpassade domäner registrerade via kinesiska specifika domän leverantörer. Om du inte har en egen domän kan du [köpa ett domän namn](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name) från en domän namns registrator. Om du redan har en, [hitta din domän registrator eller DNS-värd](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar).  <br/> Om du skapar en offentlig webbplats med hjälp av Office 365 SharePoint Online-tjänsten måste Kina för Internet-efterlevnad vara ett ICP-nummer (Internet Content leverantör).  **Obs!** Automatisk verifiering för icke tillåtna ord i anpassade domän namn är inte tillgänglig.           |
+|Prenumerationer, fakturering och teknisk support  <br/> |Tillhandahålls av 21Vianet. Information om hur du kontaktar support finns i [kontakta supporten för Office 365 för företag](../contact-support-for-business-products.md).  <br/> |
+|Självbetjäning för återställning av lösenord  <br/> |Endast tillgängligt för administratörer. Mer information finns i [ändra eller återställa ditt lösen ord i Office 365 som drivs av 21Vianet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
+|Säkerhet, sekretess, efterlevnad och information om support nivåer  <br/> |Tillhandahålls av 21Vianet.  <br/> |
+|Konfigurera Office-skrivbordet  <br/> |Installations programmet för Office är inte tillgängligt för Office 2010 och Office 2007. Men administratörer kan [Konfigurera nuvarande Office-program så att de fungerar med office 365](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e).  <br/> |
+|Stöd för mobiler och enheter\*  <br/> | Här är de här mobila funktionerna:  <br/>  Hantering av mobila enheter (MDM)  <br/>  Black Berry Business Cloud Services (BBCS) är inte tillgängligt, men du kan använda Exchange ActiveSync-enheter eller ett erbjudande från Research in Motion (RIM, Black Berry Wireless e-mail Solution) för att köra Black Berry Enterprise Server (BES).  <br/>  Mer information om stöd för mobila enheter finns i [Konfigurera och hantera mobil åtkomst för dina användare](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802).  <br/> |
 |Office Lens  <br/> |Inte tillgängligt.  <br/> |
-|Microsoft-planerare  <br/> |Kommer snart.  <br/> |
+|Microsoft Planner  <br/> |Kommer snart.  <br/> |
 |Microsoft Teams  <br/> |Inte tillgängligt.  <br/> |
 |Sway  <br/> |Kommer snart.  <br/> |
-|Hjälp på flera språk  <br/> |Hjälpen är endast tillgänglig på förenklad kinesiska och engelska.  <br/> |
-|Hjälp som tillhandahålls av gemenskapen  <br/> |Hjälp som tillhandahålls av communityn är inte tillgänglig ännu, men du kan välja hjälpknappen ( **?** ) i det övre högra hörnet av portalen för att se hjälpartiklar.  <br/> |
+|Hjälp på flera språk  <br/> |Hjälpen är endast tillgänglig på kinesiska (förenklad) och på engelska.  <br/> |
+|Hjälp om community  <br/> |Hjälp för communityn är ännu inte tillgängligt, men du kan välja knappen Hjälp ( **?** ) i det övre högra hörnet av portalen för att visa hjälp artiklar.  <br/> |
    
-\*Valfria tjänster som tillhandahålls direkt av Microsoft och omfattas av Microsofts användarvillkor och sekretesspolicyer.
+\*Valfria tjänster tillhandahålls direkt av Microsoft och lyder under Microsofts villkor avseende tjänster och integritets policy.
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 
 |||
 |:-----|:-----|
-|Dela ett dokument, bibliotek eller en webbplats via e-post med någon utanför organisationen  <br/> |Den här funktionen är tillgänglig, men av som standard eftersom den använder den kan filer delas tillgängliga utanför ditt land. Administratörer har möjlighet att aktivera den, men får ett varningsmeddelande som anger att det kan göra filer som delas tillgängliga utanför ditt land. Användare som försöker dela med någon utanför organisationen får också en varning. Mer information finns i [Share SharePoint-filer eller -mappar i Office 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).  <br/> |
-|Få tillgång till tjänster  <br/> |Access 2013 stöds, men det kanske inte är tillgängligt att lägga till nya Access-appar eftersom den här funktionen dras tillbaka från Office 365 och SharePoint Online. Skapandet av nya Access-baserade webbappar och Access-webbdatabaser i Office 365 och SharePoint Online slutar från och med juni 2017 och eventuella återstående webbappar och webbdatabaser senast i april 2018. Dessutom stöds inte Access 2010-funktioner, och om du försöker använda en Access 2010-databas kan du skapa fel och möjliga dataförluster.  <br/> |
+|Dela ett dokument, ett bibliotek eller en webbplats via e-post med någon utanför organisationen  <br/> |Den här funktionen är tillgänglig men inaktive rad som standard är det möjligt att använda filer som delas utanför ditt land. Administratörer har möjlighet att aktivera den, men får ett varnings meddelande som anger att det kan göra filer som delas av ditt land tillgängliga. Användare som försöker dela med någon utanför organisationen får också ett varnings meddelande. Mer information finns i [dela SharePoint-filer eller-mappar i Office 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).  <br/> |
+|Access Services  <br/> |Access 2013 stöds men att lägga till nya Access-program kanske inte är tillgängligt eftersom den här funktionen kommer att dras tillbaka från Office 365 och SharePoint Online. Det går inte att skapa nya Access-baserade webb program och Access-webbdatabaser i Office 365 och SharePoint Online från och med april 2018 i juni 2017. Dessutom stöds inte Access 2010-funktioner, och om du försöker använda en Access 2010-databas kommer fel och möjlig data förlust att uppstå.  <br/> |
 |Microsoft PowerApps  <br/> |Kommer snart.  <br/> |
-|IRM (Information Rights Management)  <br/> |Möjligheten att ställa in IRM-funktioner till SharePoint för din organisation kommer snart.  <br/> |
-|Möjlighet att översätta text eller sidor  <br/> |Tillgänglig, men inaktiverad som standard. Klientadministratörer kan aktivera den här möjligheten, men översättningsmolntjänsten kan finnas utanför ditt land. Om du inte vill att användarna ska skicka innehåll till en molntjänst för översättning kan du hålla dessa funktioner inaktiverade.  <br/> |
-|Offentlig icp-registrering på webbplatsen  <br/> |Kina Internet efterlevnad politik kräver att du får ett Internet Content Provider (ICP) nummer för din offentliga webbplats.  |
-|Funktioner för offentliga webbplatser  <br/> |Offentliga webbplatser är bara tillgängliga om du köpte Office 365 före den 9 mars 2015. Bing-kartor, extern delning och kommentarer är dock inte tillgängliga på en offentlig webbplats eftersom dessa funktioner kan skicka data utanför ditt land.  <br/> |
-|Nyhetsfeed och Yammer (sociala nätverk för företag)  <br/> |Nyhetsfeed (det sociala navet där du ser uppdateringar från personer, dokument, webbplatser och taggar du följer) är tillgängligt. Yammer är inte tillgängligt.  <br/> |
-|Appar med autohosted  <br/> |Du kan distribuera en providerbaserad app som använder SharePoint och SQL Azure. Mer information finns i [Skapa en grundläggande leverantör värd app för SharePoint](https://msdn.microsoft.com/library/office/apps/fp142381.aspx). Kommer snart är möjligheten för utvecklare att distribuera en app som använder en autohosted webbplats.  <br/> |
-|Infopath  <br/> |Inte tillgängligt.  <br/> |
-|SharePoint Store  <br/> |Office- och SharePoint App Stores är valfria tjänster som drivs av Microsoft Corporation eller dess dotterbolag från någon av Microsofts globala anläggningar. Apparna som är tillgängliga i Store tillhandahålls av olika apputgivare och omfattas av apputgivarens villkor och sekretesspolicy. Din användning av någon av dessa appar kan leda till att dina data överförs till, lagras eller bearbetas i något land där apputgivaren, dess dotterbolag eller tjänsteleverantörer har anläggningar. Läs igenom apputgivarens villkor och sekretesspolicy noggrant innan du hämtar och använder sådana appar.  <br/> |
-|Webbplats för Office 365-utvecklare: Publicera i SharePoint Store med hjälp av översiktsinstrumentpanelen för säljare\*  <br/> |Lär dig mer om [kraven för att skicka in appar för SharePoint](https://go.microsoft.com/fwlink/?LinkId=518102) för distribution till användare av Office 365 som drivs av 21Vianet.  <br/> |
+|IRM (Information Rights Management)  <br/> |Möjligheten att ange IRM-funktioner till SharePoint för din organisation kommer snart.  <br/> |
+|Möjlighet att översätta text eller sidor  <br/> |Tillgängligt, men inaktiverat som standard. Klient organisationens administratörer kan aktivera den här funktionen, men översättnings moln tjänsten kan finnas utanför ditt land. Om du inte vill att användarna ska kunna skicka innehåll till en översättnings moln tjänst kan de här funktionerna vara inaktiverade.  <br/> |
+|Den offentliga webbplatsen för ICP-registrering  <br/> |För Kina måste du skaffa ett ICP-nummer (Internet Content Provider) för din offentliga webbplats.  |
+|Offentliga webbplats funktioner  <br/> |Offentliga webbplatser är bara tillgängliga om du har köpt Office 365 före 9 mars 2015. Bing-kartor, extern delning och kommentarer är inte tillgängliga på en offentlig webbplats eftersom dessa funktioner kan skicka data utanför ditt land.  <br/> |
+|Nyhetsfeed och Yammer (företags sociala nätverk)  <br/> |Nyhetsfeed (det sociala navet där du ser uppdateringar från personer, dokument, webbplatser och taggar som du följer) är tillgängliga. Yammer är inte tillgängligt.  <br/> |
+|Appar med en värd  <br/> |Du kan distribuera en program värd som använder SharePoint och SQL Azure. Mer information finns i [skapa en grundläggande leverantörs program för SharePoint](https://msdn.microsoft.com/library/office/apps/fp142381.aspx). Det kommer snart att utvecklare kan distribuera en app som använder en webbplats med en värd.  <br/> |
+|Formulärmall  <br/> |Inte tillgängligt.  <br/> |
+|SharePoint Store  <br/> |Office-och SharePoint-apparna är valfria tjänster som drivs av Microsoft Corporation eller dess dotter bolag från alla länder i världen. De program som är tillgängliga i butiken tillhandahålls av olika program utgivare och lyder under programmets villkor och sekretess policyn. Din användning av dessa program kan leda till att dina data överförs till, lagras eller bearbetas i alla länder där program utgivaren, dess dotter bolag eller tjänste leverantörer har lokaler. Kontrol lera program utgivarens villkor och sekretess policyer innan du laddar ner och använder sådana appar.  <br/> |
+|Webbplatsen Office 365-utvecklare: publicera till SharePoint Store med hjälp av säljar instrument panelen\*  <br/> |Läs mer om [kraven för att skicka program för SharePoint](https://go.microsoft.com/fwlink/?LinkId=518102) för distribution till användare av Office 365 som drivs av 21Vianet.  <br/> |
    
-\*Valfria tjänster som tillhandahålls direkt av Microsoft och omfattas av Microsofts användarvillkor och sekretesspolicyer.
+\*Valfria tjänster tillhandahålls direkt av Microsoft och lyder under Microsofts villkor avseende tjänster och integritets policy.
   
 ## <a name="outlook-web-app"></a>Outlook-webbprogrammet
 
 |||
 |:-----|:-----|
-|Blackberry Business molntjänster (BBCS)  <br/> |Inte tillgänglig, men du kan använda Exchange ActiveSync-enheter eller ett erbjudande från Research in Motion (RIM, BlackBerry trådlös e-postlösning) för att köra Blackberry Enterprise Server (BES).  <br/> |
+|Black Berry Business Cloud Services (BBCS)  <br/> |Inte tillgängligt, men du kan använda Exchange ActiveSync-enheter eller ett erbjudande från Research i rörelse (RIM, Black Berry Wireless e-postlösningen) för att köra Black Berry Enterprise Server (BES).  <br/> |
 |Information Rights Management  <br/> |Kommer snart.  <br/> |
-|Information om lediga/upptagna  <br/> |Ledig/upptagen-information mellan lokala postlådor och Exchange Online-postlådor är tillgänglig.  <br/> |
-|Dela din kalender  <br/> |Kalenderdelning mellan lokala postlådor och Exchange Online-postlådor är tillgängliga.  <br/> |
+|Ledig/upptagen-information  <br/> |Det finns ledig/upptagen-information mellan lokala och Exchange Online-postlådor.  <br/> |
+|Dela din kalender  <br/> |Kalender delning mellan lokala och Exchange Online-postlådor är tillgänglig.  <br/> |
 |Dela kontakter  <br/> |Kommer snart.  <br/> |
-|Spårning av meddelanden  <br/> |Kommer snart.  <br/> |
-|Apps  <br/> |Kommer snart.  <br/> |
-|Funktionen Platser  <br/> |Den här funktionen visar kartor över adresser i e-post. eftersom det kan tillåta data utanför ditt land, är den inte tillgänglig.  <br/> |
-|Anslutna konton  <br/> |Ansluter till andra konton som Hotmail (Outlook.com) kommer snart.  <br/> |
+|Meddelande uppföljning  <br/> |Kommer snart.  <br/> |
+|Appar  <br/> |Kommer snart.  <br/> |
+|Funktionen antal_siffror  <br/> |Den här funktionen visar kartor med adresser i e-post; eftersom den kan tillåta data utanför ditt land är den inte tillgänglig.  <br/> |
+|Anslutna konton  <br/> |Anslutning till andra konton som Hotmail (Outlook.com) kommer snart.  <br/> |
    
 ## <a name="exchange"></a>Exchange
 
- Nytt med kumulativ uppdatering 5 för Exchange 2013 (CU5) stöds nu fullfjädrade hybriddistributioner mellan lokala Exchange 2013-organisationer och Office 365-tjänster. Genom att utnyttja nya förbättringar i hybridkonfigurationsguiden stöder Exchange 2013 CU5 följande hybridfunktioner mellan lokala organisationer och Exchange Online-organisationer:  
+ Nyheter med den kumulativa uppdateringen för Exchange 2013 (CU5), fullständiga hybrid installationer mellan lokala Exchange 2013-organisationer och Office 365-tjänster stöds nu. Genom att använda nya förbättringar i hybrid konfigurations guiden har Exchange 2013 CU5 stöd för följande Hybrid funktioner mellan dina lokala och Exchange Online-organisationer:  
 
-- Säker e-postroutning mellan lokala organisationer och Exchange Online-organisationer. 
-- E-postroutning med ett delat domännamnområde. Både lokala organisationer och Exchange Online-organisationer använder till exempel domänen @contoso.com SMTP. 
-- En enhetlig global adresslista (GAL), även kallad en "delad adressbok".  
-- Ledig/upptagen- och kalenderdelning mellan lokala organisationer och Exchange Online-organisationer.  
-- Centraliserad kontroll av inkommande och utgående e-postflöde. Du kan konfigurera alla inkommande och utgående Exchange Online-meddelanden som ska dirigeras via den lokala Exchange-organisationen. 
-- En url för Ett enda Office Outlook Web App för både lokala organisationer och Exchange Online-organisationer.  
-- Möjligheten att flytta befintliga lokala postlådor till Exchange Online-organisationen. Exchange Online-postlådor kan också flyttas tillbaka till den lokala organisationen om det behövs.  
-- Centraliserad postlådehantering med hjälp av det lokala administrationscentret för Exchange (EAC).  
-- E-posttips, stöd för HD-foton för Outlook-kontakter och sökning i flera postlådor mellan lokala organisationer och Exchange Online-organisationer. 
-- Molnbaserad meddelandearkivering för lokala Exchange-postlådor. 
+- Säker e-postdirigering mellan lokala och Exchange Online-organisationer. 
+- E-postdirigering med en delad domän namn rymd. Till exempel använder både lokala och Exchange Online-organisationer @contoso. com SMTP-domänen. 
+- En enhetlig global adress lista (GAL), som även kallas "delad adress bok".  
+- Ledig/upptagen och kalender delning mellan lokala och Exchange Online-organisationer.  
+- Centraliserad kontroll av inkommande och utgående e-postflöde. Du kan konfigurera alla inkommande och utgående Exchange Online-meddelanden så att de routas genom den lokala Exchange-organisationen. 
+- En enda URL-adress för Office Outlook Web App för både lokala och Exchange Online-organisationer.  
+- Möjlighet att flytta befintliga lokala post lådor till Exchange Online-organisationen. Exchange Online-postlådor kan även flyttas tillbaka till den lokala organisationen om det behövs.  
+- Centraliserad hantering av post lådor med hjälp av administrations Center för lokala Exchange (UK).  
+- E-posttips, HD-fotostöd för Outlook-kontakter och sökning med flera post lådor mellan lokala och Exchange Online-organisationer. 
+- Cloud-baserad meddelande arkivering för lokala Exchange-postlådor. 
 
-För organisationer som kör äldre eller blandade versioner av Exchange Server stöds vissa hybridfunktioner inte fullt ut för Office 365-klienter som finns hos 21Vianet. Använd följande tabell om du vill veta mer om hybridfunktionsstöd i olika Exchange-distributionsscenarier:  <br/> 
+Vissa Hybrid funktioner stöds inte fullt ut av Office 365-klient organisationer som drivs av 21Vianet och är till för företag med äldre versioner av Exchange Server. Använd följande tabell för att få mer information om stöd för Hybrid funktioner i olika scenarier för distribution av Exchange:  <br/> 
 
 
-|**Lokal exchange-version**|**Exchange Hybrid Server-version**|**Guiden Hybridkonfiguration stöds?**|**Hybridfunktioner som stöds**|
+|**Lokal Exchange-version**|**Exchange hybrid Server-version**|**Finns det stöd för Hybrid konfigurations guiden?**|**Hybrid funktioner som stöds**|
 |:-----|:-----|:-----|:-----|
-| 2016  <br/> | EJ TILLÄMPLIGT  <br/> | Ja  <br/> | Alla  <br/> |
-| 2013 CU5  <br/> | EJ TILLÄMPLIGT  <br/> | Ja  <br/> | Alla  <br/> |
+| 2016  <br/> | Saknas  <br/> | Ja  <br/> | Alla  <br/> |
+| 2013 CU5  <br/> | Saknas  <br/> | Ja  <br/> | Alla  <br/> |
 | 2013 SP1  <br/> | 2013 CU5  <br/> | Ja  <br/> | Alla  <br/> |
 | 2013 SP1  <br/> | 2013 SP1  <br/> | Ja  <br/> | Alla  <br/> |
-| Blandade 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | Ja  <br/> | Alla utom eDiscovery/Archiving på plats, OWA-åtkomst (se tabellen nedan)  <br/> |
-| Blandade 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | Ja  <br/> | Endast manuellt konfigurerad ledig/upptagen  <br/> |
+| Blandad 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | Ja  <br/> | Alla, förutom eDiscovery/arkivering via lokal plats (se tabellen nedan)  <br/> |
+| Blandad 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | Ja  <br/> | Endast manuellt konfigurerade ledig/upptagen  <br/> |
 | 2010 SP3  <br/> | 2010 SP3  <br/> | Nej  <br/> | Ingen  <br/> |
 | 2007  <br/> | 2013 CU5  <br/> | Ja  <br/> | Endast ledig/upptagen  <br/> |
-| 2007  <br/> | 2013 SP1 eller 2010 SP3No  <br/> | EJ TILLÄMPLIGT  <br/> | Stöds inte  <br/> |
-| 2003  <br/> | 2013 SP1/CU5  <br/> | EJ TILLÄMPLIGT  <br/> | Stöds inte  <br/> |
+| 2007  <br/> | 2013 SP1 eller 2010 SP3No  <br/> | Saknas  <br/> | Stöds inte  <br/> |
+| 2003  <br/> | 2013 SP1/CU5  <br/> | Saknas  <br/> | Stöds inte  <br/> |
 | 2003  <br/> | 2010 SP3  <br/> | Nej  <br/> | Ingen  <br/> |
 
    
 > [!IMPORTANT]
->  Delegera kalenderåtkomst när en användare eller uppsättning användare får åtkomst till en annan användares kalender stöds inte i hybriddistributioner med Office 365-klienter som finns hos 21Vianet. 
+>  Åtkomst till kalender för ombud när en användare eller en uppsättning användare tillhandahålls åtkomst till en annan användares kalender, stöds inte i hybrid distributioner med Office 365-klient organisationer som drivs av 21Vianet. 
   
- Dessutom stöds inte vissa Exchange-meddelandeprinciper och efterlevnadsfunktioner fullt ut i hybriddistributioner med Office 365-klienter som finns hos 21Vianet. Dessa funktioner inkluderar:
+ Dessutom stöds inte vissa principer för Exchange-meddelanden och efterföljandekrav i hybrid distributioner med Office 365-klient organisationer som drivs av 21Vianet. Dessa funktioner inkluderar:
 
-- [Hantering av meddelandehandlingar (MRM)](https://go.microsoft.com/fwlink/?LinkId=506754) 
-- [På plats eDiscovery](https://go.microsoft.com/fwlink/?LinkID=506755) 
+- [Hantering av Messaging-poster (MRM)](https://go.microsoft.com/fwlink/?LinkId=506754) 
+- [EDiscovery på plats](https://go.microsoft.com/fwlink/?LinkID=506755) 
 - [Håll på plats](https://go.microsoft.com/fwlink/?LinkId=506758) 
 - [Arkivering på plats](https://go.microsoft.com/fwlink/?LinkId=506759)
 - [Postlådegranskning](https://go.microsoft.com/fwlink/?LinkId=506760)
-- Komma åt onlinearkiv med [Outlook Web App (OWA)](https://go.microsoft.com/fwlink/?LinkId=506762) 
+- Komma åt onlinebutiker med [Outlook Web App (OWA)](https://go.microsoft.com/fwlink/?LinkId=506762) 
 
-Använd följande tabell om du vill veta mer om funktionsstöd i olika Exchange-distributionsscenarier: 
+Använd följande tabell för att få mer information om stöd för funktioner i olika scenarier för distribution av Exchange: 
 
-|**Lokal exchange-version**|**MRM (delat arkiv)**|**OWA-åtkomst (delat arkiv)**|**På plats eDiscovery**|**Granskning av postlåda**|**Håll/arkivera på plats**|
+|**Lokal Exchange-version**|**MRM (delat Arkiv)**|**OWA Access (delat Arkiv)**|**EDiscovery på plats**|**Granskning av post låda**|**Hålla på plats/arkivering**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-| Alla 2013 CU5  <br/> | Stöds <br/>  | Stöds inte <br/>  | Stöds <br/>  | Stöds  <br/> | Stöds <br/> |
-| Alla 2010 SP3 <br/>  | Stöds inte <br/>  | Stöds inte <br/>  | Stöds<sup>1</sup> <br/> | Stöds  <br/> | Stöds <br/>  |
-| Minst en CU5-server före 2013  <br/> | Stöds<sup>2</sup> <br/> | Stöds inte  <br/> | Stöds inte <br/> | Stöds  <br/> | Stöds <br/> |
+| Alla 2013-CU5  <br/> | Stöds <br/>  | Stöds inte <br/>  | Stöds <br/>  | Stöds  <br/> | Stöds <br/> |
+| Alla 2010 SP3 <br/>  | Stöds inte <br/>  | Stöds inte <br/>  | <sup>1</sup> <br/> | Stöds  <br/> | Stöds <br/>  |
+| Minst en server för 2013-CU5  <br/> | Stöd för<sup>2</sup> <br/> | Stöds inte  <br/> | Stöds inte <br/> | Stöds  <br/> | Stöds <br/> |
 |||
 
-<sup>1</sup> Separata sökningar krävs för lokala och Exchange Online-postlådor.  <br/> <sup>2</sup> MRM-principer för flytt till arkiv kan användas för postlådor som finns på en Exchange 2013 CU5 eller större server. 
+<sup>1</sup> separata sökningar krävs för lokala och Exchange Online-postlådor.  <br/> <sup>2</sup> MRM principer för att flytta till Arkiv kan användas för post lådor som finns på en Exchange 2013-CU5 eller en större Server. 
 
-Mer information om hur du konfigurerar en hybriddistribution med Office 365-klienter som finns hos 21Vianet finns i följande avsnitt: 
-- [Förutsättningar för hybriddistribution](https://go.microsoft.com/fwlink/?LinkId=506764)
-- [Certifikatkrav för hybriddistributioner](https://go.microsoft.com/fwlink/?LinkId=506766) 
-- [Skapa en hybriddistribution med guiden Hybridkonfiguration](https://go.microsoft.com/fwlink/?LinkId=506767)
+Om du vill veta mer om hur du konfigurerar en hybrid distribution med Office 365-klient organisationer som drivs av 21Vianet kan du läsa följande avsnitt: 
+- [Förutsättningar för hybrid distribution](https://go.microsoft.com/fwlink/?LinkId=506764)
+- [Certifikat krav för Hybrid distributioner](https://go.microsoft.com/fwlink/?LinkId=506766) 
+- [Skapa en hybrid distribution med hybrid konfigurations guiden](https://go.microsoft.com/fwlink/?LinkId=506767)
 
 > [!IMPORTANT]
->  [Distributionsassistenten för Exchange Server](https://go.microsoft.com/fwlink/?LinkId=506768) är ett kostnadsfritt webbaserat verktyg som hjälper dig att konfigurera en hybriddistribution mellan den lokala organisationen och Office 365, eller att migrera helt till Office 365. Verktyget frågar dig en liten uppsättning enkla frågor och skapar sedan, baserat på dina svar, en anpassad checklista med instruktioner för att konfigurera hybriddistributionen. Vi rekommenderar starkt att du använder Distributionsassistenten för att konfigurera en hybriddistribution. > För organisationer som inte vill uppgradera till eller lägga till Exchange 2013 CU5-servrar kan Exchange 2013 SP1-organisationer konfigurera delad kalender ledig/upptagen delning mellan sina lokala och Exchange Online-organisationer. Om du vill konfigurera den här hybriddistributionsfunktionen finns i [Konfigurera Exchange-hybriddistributionsfunktioner med Office 365 som drivs av 21Vianet](https://support.microsoft.com/office/26e7cc26-c980-4cc5-a082-c333de544b6d). 
+>  [Distributions assistenten för Exchange Server](https://go.microsoft.com/fwlink/?LinkId=506768) är ett gratis webbaserat verktyg som hjälper dig att konfigurera en hybrid distribution mellan din lokala organisation och Office 365 eller för att migrera helt till Office 365. Med verktyget får du en kort uppsättning enkla frågor och sedan, utifrån dina svar, skapar en anpassad check lista med instruktioner för hur du konfigurerar hybrid distribution. Vi rekommenderar starkt att du använder distributions assistenten för att konfigurera en hybrid distribution. > för organisationer som inte vill uppgradera till eller lägga till Exchange 2013-CU5 servrar kan Exchange 2013 SP1-organisationer konfigurera delning av ledig/upptagen-kalender mellan sina lokala och Exchange Online-organisationer. Om du vill konfigurera den här hybrid distributions funktionen läser du [Konfigurera funktioner för Exchange hybrid distribution med Office 365 som drivs av 21Vianet](https://support.microsoft.com/office/26e7cc26-c980-4cc5-a082-c333de544b6d). 
 
 |||  
 |---|---|
-|Samexistens och ledig/upptagen-delning|Det går inte att dela ledig/upptagen-information mellan två eller flera lokala Exchange-organisationer eller dela mellan två 21Vianet Office 365-klienter. Denna funktion kommer snart! | 
-|Kalenderdelning|Exchange 2013 SP1 och större stöder manuellt konfigurera Internetkalenderdelning med andra lokala Exchange- eller Exchange Online-organisationer. Mer information om hur du konfigurerar den här funktionen manuellt finns i [Aktivera InternetKalenderpublicering](https://go.microsoft.com/fwlink/?LinkId=506769). | 
-Dela Exchange-kontaktdata på Apples mobila enheter till Apple iCloud. |Den här inställningen/funktionen är aktiverad som standard. Administratörer bör inaktivera den här funktionen för att förhindra att användare delar Exchange-data utanför organisationen. |
-|Exchange värdad e-postkryptering  |Inte tillgängligt.  |
-|Kryptering av Office 365-meddelanden  |Kommer snart.  |
+|Samtidig existens och ledig/upptagen-delning|Det går inte att dela med dig av ledig/upptagen-information mellan två eller flera lokala Exchange-organisationer eller delning mellan två 21Vianet-Office 365-innehavare. Den här funktionen kommer snart! | 
+|Kalender delning|Exchange 2013 SP1 och senare stöd för manuell konfigurering av Internet kalender delning med andra lokala Exchange-eller Exchange Online-organisationer. Mer information om hur du konfigurerar den här funktionen finns i [aktivera publicering av Internet kalender](https://go.microsoft.com/fwlink/?LinkId=506769). | 
+Dela Exchange-kontakt data på Apple Mobile-enheter till Apple iCloud. |Den här inställningen/funktionen är aktive rad som standard. Administratörer bör inaktivera den här funktionen för att förhindra att användare delar Exchange-data utanför organisationen. |
+|E-postkryptering med Exchange  |Inte tillgängligt.  |
+|Office 365 meddelande kryptering  |Kommer snart.  |
    
 ## <a name="office"></a>Office
 
 |||
 |:-----|:-----|
-|Öppna ett Office-program från **Filen** \> **Öppna i**... Knappen  <br/> |Tillgängliga. Möjligheten att göra det medan roaming kommer snart.  <br/> |
-|Spara på OneDrive för företag när du är inloggad med ett Microsoft-konto  <br/> |Om du vill behålla dina data i ditt land kan du inte spara ett dokument på din organisationswebbplats (OneDrive för företag) när du är inloggad på Office med ett Microsoft-konto.  <br/> |
-|Möjlighet att översätta text eller sidor  <br/> |Den här funktionen är tillgänglig, men av som standard. Administratörer har möjlighet att aktivera den, men får ett varningsmeddelande som anger att det kan göra data tillgängliga utanför ditt land.  <br/> |
+|Öppna ett Office-program från **filen** \> **öppen i**... Stäng  <br/> |Användas. Möjligheten att göra det när roaming kommer snart.  <br/> |
+|Spara till OneDrive för företag när du är inloggad med ett Microsoft-konto  <br/> |Om du vill behålla dina data i ditt land kan du inte spara ett dokument på organisationens webbplats (OneDrive för företag) när du är inloggad på Office med ett Microsoft-konto.  <br/> |
+|Möjlighet att översätta text eller sidor  <br/> |Den här funktionen är tillgänglig men inaktive rad som standard. Administratörer kan aktivera den, men får ett varnings meddelande som anger att det kan göra data tillgängliga utanför ditt land.  <br/> |
    
 ## <a name="office-client"></a>Office-klient
 
 |||
 |:-----|:-----|
-|Hantera konto (inifrån Office-klienten)  <br/> |Den här funktionen och andra liknande som är avsedda att gå till din Office 365-portal pekar för närvarande på den globala Office 365-portalen och du kan inte logga in med ditt Office 365 som drivs av 21Vianet-kontot. Detta är ett känt problem som åtgärdas. Under tiden kan du använda webbadressen https://portal.partner.microsoftonline.cn/ för att logga in på ditt konto och hantera inställningar därifrån. Mer information finns i [Hantera ditt Microsoft 365-program för företagskonto för Office 365 som drivs av 21Vianet](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8).  <br/> |
+|Hantera konto (från Office-klienten)  <br/> |Den här funktionen och andra som är avsedd att gå till Office 365-portalen pekar för närvarande på Office 365-portalen och du kan inte logga in med ditt Office-365 som drivs av 21Vianet-konto. Detta är ett känt problem som åtgärdas. Under tiden kan du använda URL-adressen https://portal.partner.microsoftonline.cn/ för att logga in på ditt konto och hantera inställningar därifrån. Mer information finns i [Hantera dina Microsoft 365-appar för företags konto för Office 365 som drivs av 21Vianet](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8).  <br/> |
    
 ## <a name="onenote"></a>OneNote
 
 |||
 |:-----|:-----|
-|Infoga och spela upp onlinevideo  <br/> |Inte tillgängligt.  <br/> |
-|Integrering av forskningsfönster till Bing-tjänster  <br/> |Inte tillgängligt.  <br/> |
-|Kontroll av hjälpmedel  <br/> |Inte tillgängligt.  <br/> |
-|Anteckningsbok för klassen  <br/> |Inte tillgängligt.  <br/> |
-|Former  <br/> |Inte tillgängligt.  <br/> |
-|Uppslukande läsare  <br/> |Inte tillgängligt.  <br/> |
-|Infoga onlinebild  <br/> |Inte tillgängligt.  <br/> |
-|Information om mötet  <br/> |Inte tillgängligt.  <br/> |
+|Infoga och spela upp online-video  <br/> |Inte tillgängligt.  <br/> |
+|Integrering med forsknings fönstret i Bing-tjänster  <br/> |Inte tillgängligt.  <br/> |
+|Tillgänglighets kontroll  <br/> |Inte tillgängligt.  <br/> |
+|Antecknings bok för klassen  <br/> |Inte tillgängligt.  <br/> |
+|Formulär  <br/> |Inte tillgängligt.  <br/> |
+|Avancerad läsare  <br/> |Inte tillgängligt.  <br/> |
+|Infoga en bild online  <br/> |Inte tillgängligt.  <br/> |
+|Mötes information  <br/> |Inte tillgängligt.  <br/> |
 |Researcher  <br/> |Inte tillgängligt.  <br/> |
-|Klistermärken  <br/> |Inte tillgängligt.  <br/> |
-|Live Search (möjlighet att söka i online-anteckningsböcker som inte öppnas i klienten)  <br/> |Inte tillgängligt.  <br/> |
-|Integrering med Mac och iOS-plattform smart slå upp tjänsten  <br/> |Inte tillgängligt.  <br/> |
-|Dela anteckningsboksupplevelse och delningsmeddelanden  <br/> |Inte tillgängligt.  <br/> |
+|Dekaler  <br/> |Inte tillgängligt.  <br/> |
+|Live Search (möjlighet att söka i antecknings böcker online som inte är öppna på klienten)  <br/> |Inte tillgängligt.  <br/> |
+|Integrering med den smarta Sök tjänsten för Mac och iOS-plattform  <br/> |Inte tillgängligt.  <br/> |
+|Dela med dig av antecknings boken och delnings avisering  <br/> |Inte tillgängligt.  <br/> |
    
 ## <a name="skype-for-business"></a>Skype för företag
 
 |||
 |:-----|:-----|
-|Domänleverantörer som stöder Skype för företag  <br/> |Du måste registrera din domän hos en kinesisk-specifik domänleverantör som stöder SRV-poster. Mer information om hur du registrerar domäner finns i [Hitta din domänregistratorer eller DNS-värd](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar).  <br/> |
-|Konferens med uppringning (möjligheten att lägga till telefonåtkomst till möten för användare som inte kan komma åt en dator)  <br/> |Du kan se alternativ i Skype för företag och i Administrationscenter för Uppringning för konferens med uppringning och leverantörer, men dessa funktioner är ännu inte tillgängliga. De kommer snart.  <br/> |
-|Hjälp för Skype för företag-skrivbordet  <br/> |Du kan få hjälp med Skype för företag-skrivbordet [här](https://support.microsoft.com/office/6ae5853c-f0fd-4710-aecf-f46def8377ad). Skrivbordshjälpen är dock inte tillgänglig från produkten om du inte använder Office Klicka-och-kör.  <br/> |
+|Domain providers för att stödja Skype för företag  <br/> |Du måste registrera din domän med en kinesisk specifik domän leverantör som stöder SRV-poster. Mer information om hur du registrerar domäner finns i [hitta din domän registrator eller DNS-värd](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar).  <br/> |
+|Konferens med uppringning (möjlighet att lägga till telefon åtkomst till möten för användare som inte kan komma igång med en dator)  <br/> |Du kan se alternativ i Skype för företag och i administrations centret för Skype för företag för konferens med uppringning, men de här funktionerna är ännu inte tillgängliga. De kommer snart.  <br/> |
+|Hjälp om Skype för företag – Skriv bordet  <br/> |[Här](https://support.microsoft.com/office/6ae5853c-f0fd-4710-aecf-f46def8377ad)finns hjälp för Skype för företag – Skriv bords versionen. Skriv bords hjälpen är inte tillgänglig för produkten såvida du inte använder Office Klicka-och-kör.  <br/> |
 |Lync 2010  <br/> |Inte tillgängligt.  <br/> |
-|Möjlighet att ansluta till ett möte från kalendern när du använder en Samsung-baserad enhet med Google Chrome  <br/> |Kommer snart. Under tiden kan du öppna Skype för företag, gå till vyn Möten och delta i mötet därifrån.  <br/> |
-|Skrivbord telefonenheter som Polycom, Ares och Tanjay  <br/> |Inte tillgängligt.  <br/> |
-|Syndikeringspartner  <br/> |Inte tillgängligt.  <br/> |
-|Röstfunktioner, till exempel röstbrevlåda, möjlighet att ringa och ta emot samtal från PSTN-nummer, samtalsöverföring, vidarekoppling av samtal  <br/> |Inte tillgängligt. Dessa funktioner kräver syndikeringspartner.  <br/> |
-|Arkivering eller möjlighet att tagga en användare och arkivera användarens e-postmeddelanden och snabbmeddelanden i Exchange  <br/> |Inte tillgängligt.  <br/> |
-|Webbläsarstöd för Skype för företag-webbklient (LWA) för Firefox 29  <br/> |Inte tillgänglig, men du kan använda en äldre version av Firefox.  <br/> |
-|Unified Contact Store (UCS)  <br/> |Möjligheten för användare att behålla all kontaktinformation om Skype för företag i Microsoft Exchange Server 2013 är inaktiverad.  <br/> |
-| Konferensenheter:  <br/>  Polycom CX5100 enhetlig konferensstation  <br/>  Logitech ConferenceCam CC3000e  <br/>  Polycom CX7000  <br/>  Polycom CX3000  <br/>  Logitech BCC950 ConferenceCam  <br/>  Polycom CX5000 HD  <br/> |Inte tillgängligt.  <br/> |
+|Möjlighet att ansluta till ett möte från din kalender när du använder en Samsung-baserad enhet med Google Chrome  <br/> |Kommer snart. Under tiden kan du öppna Skype för företag, gå till vyn möten och ansluta till mötet därifrån.  <br/> |
+|Skriv bords telefon enheter som Polycom, ar och Tanjay  <br/> |Inte tillgängligt.  <br/> |
+|Syndikerings partners  <br/> |Inte tillgängligt.  <br/> |
+|Röst funktioner, som röst brev låda, möjlighet att ringa och ta emot samtal från PSTN-nummer, samtals överföring, vidarekoppling av samtal  <br/> |Inte tillgängligt. Dessa funktioner kräver syndikerings partner.  <br/> |
+|Arkivering eller möjlighet att tagga en användare och arkivera användarens e-post och snabb meddelanden i Exchange  <br/> |Inte tillgängligt.  <br/> |
+|Stöd för Skype för företag – webb klient (LWA) för Firefox 29  <br/> |Inte tillgängligt, men du kan använda en äldre version av Firefox.  <br/> |
+|Enhetligt kontakt arkiv (UCS)  <br/> |Möjligheten för användarna att behålla all kontakt information i Skype för företag i Microsoft Exchange Server 2013 är inaktive rad.  <br/> |
+| Konferens enheter:  <br/>  Polycom CX5100-enhetliga konferens Station  <br/>  Logitech ConferenceCam CC3000e  <br/>  Polycom CX7000  <br/>  Polycom CX3000  <br/>  Logitech BCC950 ConferenceCam  <br/>  Polycom CX5000 HD  <br/> |Inte tillgängligt.  <br/> |
    
-## <a name="data-subject-requests-for-gdpr"></a>Registrerade förfrågningar om GDPR
+## <a name="data-subject-requests-for-gdpr"></a>Begäran om registrerade data för GDPR
 
-GDPR ger individer (eller registrerade) vissa rättigheter i samband med behandlingen av deras personuppgifter, inklusive rätten att korrigera felaktiga uppgifter, radera data eller begränsa behandlingen, ta emot deras uppgifter och uppfylla en begäran om att överföra sina uppgifter till en annan registeransvarig. Rollen Klientadministratör för Office 365 som drivs av 21Vianet kan begära data för en registrerads räkning på följande sätt:
+GDPR ger individer (eller data ämnen) vissa rättigheter i samband med behandlingen av sina person uppgifter, inklusive rätten att korrigera felaktiga data, ta bort data eller begränsa dess bearbetning, ta emot sina data och utföra en begäran om att överföra sina data till en annan enhet. Rollen klient organisations administratör för Office 365 som drivs av 21Vianet kan begära data på uppdrag av data på följande sätt:
   
-- Med hjälp av Azure Active Directory Admin Center kan en klientadministratör permanent ta bort en registrerad från Azure Active Directory och relaterade tjänster.
+- Med administratörs Center för Azure Active Directory kan en klient organisation Permanent ta bort data från Azure Active Directory och relaterade tjänster.
     
-- Systemgenererade loggar för Microsoft-tjänster som drivs av 21Vianet kan exporteras av klientadministratörer med hjälp av dataloggexport.
+- System-genererade loggar för Microsoft-tjänster som drivs av 21Vianet kan exporteras av klient organisationer som använder data loggnings exporten.
     
-Mer information och instruktioner finns i [DataPersonförfrågningar (DSR) för GDPR](https://www.trustcenter.cn/privacy/gdpr-office365.mdl).
+Mer information och instruktioner finns i [data subject requests (DSR) för GDPR](https://www.trustcenter.cn/privacy/gdpr-office365.mdl).
   
 

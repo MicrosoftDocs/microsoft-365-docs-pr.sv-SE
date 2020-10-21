@@ -1,28 +1,28 @@
 ---
-title: Supportinformation för Dominikanska republiken
+title: Supportinformation för Dominikanska Republiken
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om hur du kontaktar supporten för ditt land eller din region.
+description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a60d588d638d1389366a6883f4b8f3fd20e189e8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f7708c64c4be2578ef35b85bcbc1cc6ea1bd183b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398060"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48642941"
 ---
-# <a name="contact-support-for-dominican-republic"></a>Kontakta support för Dominikanska republiken
+# <a name="contact-support-for-dominican-republic"></a>Kontakta supporten för Dominikanska Republiken
 
-[Hitta ett annat land eller en annan region](../contact-support-for-business-products.md).
+[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 1 800 751 3455
@@ -34,12 +34,12 @@ Ange kod 7007
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Spanska: mån-fre 09.00-17.00
+Spanska: Mon-Fri 09.00 – 17.00
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Spanska: 24 timmar om dygnet, 7 dagar i veckan
+Spanska: dygnet runt, alla dagar i veckan
 
 Alternativt telefonnummer: 1 809 200 8794
 
-(Mobil avgiftsfritt)
+(Mobil telefon-gratis)

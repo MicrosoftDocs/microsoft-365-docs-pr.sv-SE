@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: Övervakar misslyckade och fördröjda meddelanden som skickas till eller från konton som har stor rörelse påverkan.
-ms.openlocfilehash: 053246da7f57c46045bfc777bc4de981ce51c6e5
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: ce78316290f18f06337adc0e78a1b8992be7b425
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794213"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644597"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>Hantera och övervaka prioriterade konton
 
@@ -69,7 +69,7 @@ Du kan övervaka e-poststatusen för dina prioriterade konton i administrations 
 
 ## <a name="email-issues-for-priority-accounts"></a>E-postproblem för prioriterade konton
 
-Du kan spåra e-postproblem för prioriterade konton genom att gå till rapporten **om e-postproblem för prioriterade konton** i administrations centret för Exchange. Mer information finns i [e-postproblem för prioriterade konton](https://review.docs.microsoft.com/en-us/Exchange/mail-flow-best-practices/mail-flow-insights/mfi-email-issues-for-priority-accounts?branch=Priority-chrisda).
+Du kan spåra e-postproblem för prioriterade konton genom att gå till rapporten **om e-postproblem för prioriterade konton** i administrations centret för Exchange. Mer information finns i [e-postproblem för prioriterade konton](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).
 
 ## <a name="remove-a-user-from-the-priority-accounts-list"></a>Ta bort en användare från listan med prioriterade konton
 

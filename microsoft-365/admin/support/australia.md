@@ -4,25 +4,25 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om hur du kontaktar supporten för ditt land eller din region.
+description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1a55105d7976ce94d20cde23dc116a8c9a937ff4
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2338e2b0bab5e5bc95df6ef0274da4854b8048a3
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398648"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644153"
 ---
-# <a name="contact-support-for-australia"></a>Kontakta support för Australien
+# <a name="contact-support-for-australia"></a>Kontakta supporten för Australien
 
-[Hitta ett annat land eller en annan region](../contact-support-for-business-products.md).
+[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 1800 197 503
@@ -30,12 +30,12 @@ ms.locfileid: "44398648"
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Engelska: mån-fre 09.00-18.00
+Engelska: Mon-Fri 09:00-6 PM
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Engelska: 24 timmar om dygnet, 7 dagar i veckan
+Engelska: mån–sön, dygnet runt
 
 Alternativt telefonnummer: 02 8223 9959
 
-Avgifter för lokalsamtal tillkommer
+Lokala samtals avgifter gäller

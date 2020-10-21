@@ -4,38 +4,38 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om hur du kontaktar supporten för ditt land eller din region.
+description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 486410b86fc0ccdcfe7cef43bd224008eab62429
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ede29638d9af979a481701a424500c136c6b01ea
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398216"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48643229"
 ---
-# <a name="contact-support-for-comoros"></a>Kontakta support för Komorerna
+# <a name="contact-support-for-comoros"></a>Kontakta stöd för Komorerna
 
-[Hitta ett annat land eller en annan region](../contact-support-for-business-products.md).
+[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
-+1 312 843 5147
++ 1 312 843 5147
 
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Franska: mån-fre 11.00-19.00
+Franska: Mon-Fri 11 FM-7 EM
 
-Engelska: mån-fre 11.00-19.00
+Engelska: Mon-Fri 11 FM-7 EM
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Franska: mån-fre 10.00-23.00
+Franska: Mon-Fri 10 AM-11 PM
 
-Engelska: 24 timmar om dygnet, 7 dagar i veckan
+Engelska: mån–sön, dygnet runt

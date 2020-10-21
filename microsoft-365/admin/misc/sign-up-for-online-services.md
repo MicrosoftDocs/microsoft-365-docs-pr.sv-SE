@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4f374dc7-b96c-49c7-80ed-554716ba0138
-description: 'Lär dig att använda e-post på jobbet eller i skolan för att registrera dig för Microsofts onlinetjänster utan att involvera it-avdelningen. '
-ms.openlocfilehash: c602ba52e3cca1b031e2e772355a84c06b779b5d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 'Lär dig hur du använder e-post eller School för att registrera dig för Microsoft Online-tjänster utan att ta med deras IT-avdelning. '
+ms.openlocfilehash: ad46d698398da32d88d0c1617499b326e8fcb163
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399272"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644873"
 ---
-# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>Din domän kan användas om någon annan har registrerat sig med den
+# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>Din domän kanske används om någon annan har registrerat sig för den
 
 Användare med ett e-postkonto för jobb eller skola kan [registrera sig för vissa Microsoft-onlinetjänster](self-service-sign-up.md) utan hjälp från IT-avdelningen. Det gäller bland annat Office 365, Power BI och Rights Management Services. Genom registrering med självbetjäning kan användarna registrera sig själva genom att ange e-postadress för jobb eller skola. De får då åtkomst till funktioner i tjänsten, men kan inte administrera tjänsten (lägga till användare, lägga till licenser, hantera domänen osv.). 
   

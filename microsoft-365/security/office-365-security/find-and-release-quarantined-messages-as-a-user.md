@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Användare kan läsa mer om hur de visar och hanterar meddelanden i karantän i Exchange Online Protection (EOP) som borde ha levererats till dem.
-ms.openlocfilehash: 03bcb0518b75d9a35aae1b6664b410b521adf940
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2a8e37dc430af5b3d3c47179c721d83832f01184
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202849"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600351"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Hitta och släppa meddelanden i karantän som användare i EOP
 
@@ -100,6 +100,11 @@ Som användare kan du visa, släppa och ta bort meddelanden i karantän där du 
      - **Skräppost**
 
      - **Nätfiske**
+     
+   - **Principtyp**: filtrera meddelanden efter principtyp:
+     - **Princip för skydd mot nätfiske**
+     - **Värdbaserad princip för innehållsfilter**
+     
 
    Tryck på **Rensa** om du vill ta bort filtret. Klicka på **Filter** igen om du vill dölja den utfällbara filterrutan.
 
@@ -108,6 +113,8 @@ Som användare kan du visa, släppa och ta bort meddelanden i karantän där du 
    - **Meddelande-ID**: Meddelandets globalt unika identifierare. Om du väljer ett meddelande i listan visas värdet för **Meddelande-ID** i den utfällbara rutan **Information** som visas. Administratörer kan använda [meddelandespårning](message-trace-scc.md) för att söka efter meddelanden med motsvarande värden för meddelande-ID.
 
    - **Avsändarens e-postadress**: En enskild avsändarens e-postadress.
+   
+   - **Principnamn**: använd meddelandets hela principnamn. Sökningen är inte skiftlägeskänslig.
 
    - **Mottagarens e-postadress**: En enskild mottagares e-postadress.
 
