@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,224 +21,224 @@ search.appverid:
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på eNomCentral för Microsoft.
-ms.openlocfilehash: 94b0648e03d756f429094a6d35f03d5596a272f4
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: c60c33f4be94e2f7719fdfc583500c6d1164991d
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434197"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646169"
 ---
-# <a name="create-dns-records-at-enomcentral-for-microsoft"></a><span data-ttu-id="37bb0-103">Skapa DNS-poster på eNomCentral för Microsoft</span><span class="sxs-lookup"><span data-stu-id="37bb0-103">Create DNS records at eNomCentral for Microsoft</span></span>
+# <a name="create-dns-records-at-enomcentral-for-microsoft"></a><span data-ttu-id="ec472-103">Skapa DNS-poster på eNomCentral för Microsoft</span><span class="sxs-lookup"><span data-stu-id="ec472-103">Create DNS records at eNomCentral for Microsoft</span></span>
 
- <span data-ttu-id="37bb0-104">**[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter.</span><span class="sxs-lookup"><span data-stu-id="37bb0-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span>
+ <span data-ttu-id="ec472-104">**[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter.</span><span class="sxs-lookup"><span data-stu-id="ec472-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span>
 
-<span data-ttu-id="37bb0-105">Om eNomCentral är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag - Online och så vidare.</span><span class="sxs-lookup"><span data-stu-id="37bb0-105">If eNomCentral is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.</span></span>
+<span data-ttu-id="ec472-105">Om eNomCentral är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag - Online och så vidare.</span><span class="sxs-lookup"><span data-stu-id="ec472-105">If eNomCentral is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.</span></span>
 
-<span data-ttu-id="37bb0-106">När du har lagt till dessa poster på eNomCentral konfigureras domänen så att den fungerar med Microsoft-tjänster.</span><span class="sxs-lookup"><span data-stu-id="37bb0-106">After you add these records at eNomCentral, your domain will be set up to work with Microsoft services.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="37bb0-p101">Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md).</span><span class="sxs-lookup"><span data-stu-id="37bb0-p101">Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).</span></span>
-
-## <a name="add-a-txt-record-for-verification"></a><span data-ttu-id="37bb0-110">Lägga till en TXT-post för verifiering</span><span class="sxs-lookup"><span data-stu-id="37bb0-110">Add a TXT record for verification</span></span>
-<span data-ttu-id="37bb0-111"><a name="BKMK_verify"> </a></span><span class="sxs-lookup"><span data-stu-id="37bb0-111"><a name="BKMK_verify"> </a></span></span>
-
-<span data-ttu-id="37bb0-p102">Innan du använder din domän med Microsoft, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Microsoft att du äger domänen.</span><span class="sxs-lookup"><span data-stu-id="37bb0-p102">Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.</span></span>
+<span data-ttu-id="ec472-106">När du har lagt till dessa poster på eNomCentral är din domän konfigurerad för att fungera med Microsoft-tjänster.</span><span class="sxs-lookup"><span data-stu-id="ec472-106">After you add these records at eNomCentral, your domain will be set up to work with Microsoft services.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="37bb0-p103">Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill.</span><span class="sxs-lookup"><span data-stu-id="37bb0-p103">This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.</span></span>
+> <span data-ttu-id="ec472-p101">Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md).</span><span class="sxs-lookup"><span data-stu-id="ec472-p101">Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).</span></span>
 
-<span data-ttu-id="37bb0-116">Följ stegen nedan eller [titta på videon (börja vid 0:46)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).</span><span class="sxs-lookup"><span data-stu-id="37bb0-116">Follow the steps below or [watch the video (start at 0:46)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).</span></span>
+## <a name="add-a-txt-record-for-verification"></a><span data-ttu-id="ec472-110">Lägga till en TXT-post för verifiering</span><span class="sxs-lookup"><span data-stu-id="ec472-110">Add a TXT record for verification</span></span>
+<span data-ttu-id="ec472-111"><a name="BKMK_verify"> </a></span><span class="sxs-lookup"><span data-stu-id="ec472-111"><a name="BKMK_verify"> </a></span></span>
 
-1. <span data-ttu-id="37bb0-p104">Kom igång genom att gå till domänsidan på eNom Central med [den här länken](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). Du uppmanas att logga in först.</span><span class="sxs-lookup"><span data-stu-id="37bb0-p104">To get started, go to your domains page at eNom Central by using [this link](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). You'll be prompted to login.</span></span>
-
-   ![eNom-BP-Konfigurera-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
-
-2. <span data-ttu-id="37bb0-120">Under **mina domäner**väljer du namnet på den domän som du vill redigera.</span><span class="sxs-lookup"><span data-stu-id="37bb0-120">Under **my domains**, select the name of the domain that you want to edit.</span></span>
-
-   ![eNom-BP-Konfigurera-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
-
-3. <span data-ttu-id="37bb0-122">I listrutan **Manage Domain** väljer du **Host Records**.</span><span class="sxs-lookup"><span data-stu-id="37bb0-122">On the **Manage Domain** drop-down list, choose **Host Records**.</span></span>
-
-   ![eNom-BP-Verifiera-1-1](../../media/6e4184a1-9525-47a6-8a8a-9600126c0db4.png)
-
-4. <span data-ttu-id="37bb0-124">I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell.</span><span class="sxs-lookup"><span data-stu-id="37bb0-124">In the boxes for the new record, type or copy and paste the values from the following table.</span></span>
-
-   <span data-ttu-id="37bb0-125">Välj värdet **Posttyp** i listrutan.</span><span class="sxs-lookup"><span data-stu-id="37bb0-125">Choose the **Record Type** value from the drop-down list.</span></span>
-
-   |<span data-ttu-id="37bb0-126">Värdnamn</span><span class="sxs-lookup"><span data-stu-id="37bb0-126">Host Name</span></span>|<span data-ttu-id="37bb0-127">Record Type</span><span class="sxs-lookup"><span data-stu-id="37bb0-127">Record Type</span></span>|<span data-ttu-id="37bb0-128">Adress</span><span class="sxs-lookup"><span data-stu-id="37bb0-128">Address</span></span>|
-   |---|---|---|
-   |@|<span data-ttu-id="37bb0-129">TXT</span><span class="sxs-lookup"><span data-stu-id="37bb0-129">TXT</span></span>|<span data-ttu-id="37bb0-130">MS=ms *XXXXXXXX*</span><span class="sxs-lookup"><span data-stu-id="37bb0-130">MS=ms *XXXXXXXX*</span></span>  <br/> <span data-ttu-id="37bb0-131">**Obs!** Det här är ett exempel.</span><span class="sxs-lookup"><span data-stu-id="37bb0-131">**Note:** This is an example.</span></span> <span data-ttu-id="37bb0-132">Använd ditt specifika \*\*Mål eller pekar på adress \*\* värde här, från tabellen.</span><span class="sxs-lookup"><span data-stu-id="37bb0-132">Use your specific **Destination or Points to Address** value here, from the table.</span></span> [<span data-ttu-id="37bb0-133">Hur hittar jag det här?</span><span class="sxs-lookup"><span data-stu-id="37bb0-133">How do I find this?</span></span>](../get-help-with-domains/information-for-dns-records.md)|
-
-   ![eNom-BP-Verifiera-1-2](../../media/e1f95529-46a6-40f9-9709-9fe66f373bcf.png)
-
-5. <span data-ttu-id="37bb0-135">Välj **spara**.</span><span class="sxs-lookup"><span data-stu-id="37bb0-135">Select **save**.</span></span>
-
-   ![eNom-BP-Verifiera-1-3](../../media/d6277ab0-5d03-44e0-968f-fd5de1905423.png)
-
-6. <span data-ttu-id="37bb0-137">Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.</span><span class="sxs-lookup"><span data-stu-id="37bb0-137">Wait a few minutes before you continue, so that the record you just created can update across the Internet.</span></span>
-
-<span data-ttu-id="37bb0-138">Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Microsoft 365 och begär att Microsoft 365 letar efter posten.</span><span class="sxs-lookup"><span data-stu-id="37bb0-138">Now that you've added the record at your domain registrar's site, you'll go back to Microsoft 365 and request Microsoft 365 to look for the record.</span></span>
-
-<span data-ttu-id="37bb0-139">När Microsoft hittar rätt TXT-post är din domän verifierad.</span><span class="sxs-lookup"><span data-stu-id="37bb0-139">When Microsoft finds the correct TXT record, your domain is verified.</span></span>
-
-1. <span data-ttu-id="37bb0-140">I Microsoft-administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domäner</a>.</span><span class="sxs-lookup"><span data-stu-id="37bb0-140">In the Microsoft admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
-
-2. <span data-ttu-id="37bb0-141">På sidan **Domains** väljer du den domän du verifierar.</span><span class="sxs-lookup"><span data-stu-id="37bb0-141">On the **Domains** page, select the domain that you are verifying.</span></span>
-
-3. <span data-ttu-id="37bb0-142">På sidan **Setup** väljer du **Start setup**.</span><span class="sxs-lookup"><span data-stu-id="37bb0-142">On the **Setup** page, select **Start setup**.</span></span>
-
-4. <span data-ttu-id="37bb0-143">På sidan **Verify domain** väljer du **Verify**.</span><span class="sxs-lookup"><span data-stu-id="37bb0-143">On the **Verify domain** page, select **Verify**.</span></span>
+<span data-ttu-id="ec472-p102">Innan du använder din domän med Microsoft, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Microsoft att du äger domänen.</span><span class="sxs-lookup"><span data-stu-id="ec472-p102">Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="37bb0-p106">Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md).</span><span class="sxs-lookup"><span data-stu-id="37bb0-p106">Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).</span></span>
+> <span data-ttu-id="ec472-p103">Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill.</span><span class="sxs-lookup"><span data-stu-id="ec472-p103">This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.</span></span>
 
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a><span data-ttu-id="37bb0-147">Lägga till en MX-post så att e-post för din domän kommer till Microsoft.</span><span class="sxs-lookup"><span data-stu-id="37bb0-147">Add an MX record so email for your domain will come to Microsoft</span></span>
-<span data-ttu-id="37bb0-148"><a name="BKMK_add_MX"> </a></span><span class="sxs-lookup"><span data-stu-id="37bb0-148"><a name="BKMK_add_MX"> </a></span></span>
+<span data-ttu-id="ec472-116">Följ stegen nedan eller [titta på videon (börja vid 0:46)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).</span><span class="sxs-lookup"><span data-stu-id="ec472-116">Follow the steps below or [watch the video (start at 0:46)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).</span></span>
 
-<span data-ttu-id="37bb0-149">Följ stegen nedan eller [titta på videon (börja vid 3:40)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).</span><span class="sxs-lookup"><span data-stu-id="37bb0-149">Follow the steps below or [watch the video (start at 3:40)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).</span></span>
+1. <span data-ttu-id="ec472-p104">Kom igång genom att gå till domänsidan på eNom Central med [den här länken](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). Du uppmanas att logga in först.</span><span class="sxs-lookup"><span data-stu-id="ec472-p104">To get started, go to your domains page at eNom Central by using [this link](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). You'll be prompted to login.</span></span>
 
-1. <span data-ttu-id="37bb0-p107">Kom igång genom att gå till domänsidan på eNom Central med [den här länken](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). Du uppmanas att logga in först.</span><span class="sxs-lookup"><span data-stu-id="37bb0-p107">To get started, go to your domains page at eNom Central by using [this link](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). You'll be prompted to login.</span></span>
+   ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-   ![eNom-BP-Konfigurera-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
+2. <span data-ttu-id="ec472-120">Under **My Domains**väljer du namnet på den domän som du vill redigera.</span><span class="sxs-lookup"><span data-stu-id="ec472-120">Under **my domains**, select the name of the domain that you want to edit.</span></span>
 
-2. <span data-ttu-id="37bb0-153">Under **mina domäner**väljer du namnet på den domän som du vill redigera.</span><span class="sxs-lookup"><span data-stu-id="37bb0-153">Under **my domains**, select the name of the domain that you want to edit.</span></span>
+   ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
-   ![eNom-BP-Konfigurera-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
+3. <span data-ttu-id="ec472-122">I listrutan **Manage Domain** väljer du **Host Records**.</span><span class="sxs-lookup"><span data-stu-id="ec472-122">On the **Manage Domain** drop-down list, choose **Host Records**.</span></span>
 
-3. <span data-ttu-id="37bb0-155">I listrutan **Manage Domain** väljer du **Email Settings**.</span><span class="sxs-lookup"><span data-stu-id="37bb0-155">On the **Manage Domain** drop-down list, choose **Email Settings**.</span></span>
+   ![eNom-BP-verify-1-1](../../media/6e4184a1-9525-47a6-8a8a-9600126c0db4.png)
 
-   ![eNom-BP-Konfigurera-1-3](../../media/4b438629-afdf-4a47-ab11-56644cdb6158.png)
+4. <span data-ttu-id="ec472-124">I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell.</span><span class="sxs-lookup"><span data-stu-id="ec472-124">In the boxes for the new record, type or copy and paste the values from the following table.</span></span>
 
-4. <span data-ttu-id="37bb0-157">I listrutan **Service Selection** väljer du **User (MX)**.</span><span class="sxs-lookup"><span data-stu-id="37bb0-157">On the **Service Selection** drop-down list, choose **User (MX)**.</span></span>
+   <span data-ttu-id="ec472-125">Välj värdet **Record Type** i list rutan.</span><span class="sxs-lookup"><span data-stu-id="ec472-125">Choose the **Record Type** value from the drop-down list.</span></span>
 
-   ![eNom-BP-Konfigurera-1-4](../../media/7680ab48-b8d1-4573-b20f-4745a5d7c079.png)
-
-5. <span data-ttu-id="37bb0-159">I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell.</span><span class="sxs-lookup"><span data-stu-id="37bb0-159">In the boxes for the new record, type or copy and paste the values from the following table.</span></span>
-
-   |<span data-ttu-id="37bb0-160">Värdnamn</span><span class="sxs-lookup"><span data-stu-id="37bb0-160">Host Name</span></span>|<span data-ttu-id="37bb0-161">Adress</span><span class="sxs-lookup"><span data-stu-id="37bb0-161">Address</span></span>|<span data-ttu-id="37bb0-162">Pref</span><span class="sxs-lookup"><span data-stu-id="37bb0-162">Pref</span></span>|
+   |<span data-ttu-id="ec472-126">Värdnamn</span><span class="sxs-lookup"><span data-stu-id="ec472-126">Host Name</span></span>|<span data-ttu-id="ec472-127">Record Type</span><span class="sxs-lookup"><span data-stu-id="ec472-127">Record Type</span></span>|<span data-ttu-id="ec472-128">Adress</span><span class="sxs-lookup"><span data-stu-id="ec472-128">Address</span></span>|
    |---|---|---|
-   |@| <span data-ttu-id="37bb0-163">*\<domain-key\>*.mail.protection.outlook.com.</span><span class="sxs-lookup"><span data-stu-id="37bb0-163">*\<domain-key\>*  .mail.protection.outlook.com.</span></span>  <br/> <span data-ttu-id="37bb0-164">**Värdet MÅSTE sluta med en punkt (.)**</span><span class="sxs-lookup"><span data-stu-id="37bb0-164">**This value MUST end with a period (.)**</span></span> <br/> <span data-ttu-id="37bb0-165">**Obs:** Hämta ditt *\<domain-key\>* från ditt Microsoft-konto.</span><span class="sxs-lookup"><span data-stu-id="37bb0-165">**Note:** Get your  *\<domain-key\>*  from your Microsoft account.</span></span> [<span data-ttu-id="37bb0-166">Hur hittar jag det?</span><span class="sxs-lookup"><span data-stu-id="37bb0-166">How do I find this?</span></span>](../get-help-with-domains/information-for-dns-records.md)|<span data-ttu-id="37bb0-167">10</span><span class="sxs-lookup"><span data-stu-id="37bb0-167">10</span></span>  <br/> <span data-ttu-id="37bb0-168">Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)</span><span class="sxs-lookup"><span data-stu-id="37bb0-168">For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)</span></span>|
+   |@|<span data-ttu-id="ec472-129">TXT</span><span class="sxs-lookup"><span data-stu-id="ec472-129">TXT</span></span>|<span data-ttu-id="ec472-130">MS=ms *XXXXXXXX*</span><span class="sxs-lookup"><span data-stu-id="ec472-130">MS=ms *XXXXXXXX*</span></span>  <br/> <span data-ttu-id="ec472-131">**Obs!** Det här är ett exempel.</span><span class="sxs-lookup"><span data-stu-id="ec472-131">**Note:** This is an example.</span></span> <span data-ttu-id="ec472-132">Använd ditt specifika \*\*Mål eller pekar på adress \*\* värde här, från tabellen.</span><span class="sxs-lookup"><span data-stu-id="ec472-132">Use your specific **Destination or Points to Address** value here, from the table.</span></span> [<span data-ttu-id="ec472-133">Hur hittar jag det här?</span><span class="sxs-lookup"><span data-stu-id="ec472-133">How do I find this?</span></span>](../get-help-with-domains/information-for-dns-records.md)|
 
-   ![eNom-BP-Konfigurera-2-1](../../media/c32e8954-8209-4f77-a3a8-4b7aeea325d5.png)
+   ![eNom-BP-verify-1-2](../../media/e1f95529-46a6-40f9-9709-9fe66f373bcf.png)
 
-6. <span data-ttu-id="37bb0-170">Välj **spara**.</span><span class="sxs-lookup"><span data-stu-id="37bb0-170">Select **save**.</span></span>
+5. <span data-ttu-id="ec472-135">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="ec472-135">Select **save**.</span></span>
 
-   ![eNom-BP-Konfigurera-2-2](../../media/cf3058ea-9d30-4747-8cf0-2bc13d5ec6be.png)
+   ![eNom-BP-verify-1-3](../../media/d6277ab0-5d03-44e0-968f-fd5de1905423.png)
 
-7. <span data-ttu-id="37bb0-172">Om det finns andra befintliga MX-poster väljer du dem genom att markera kryssrutorna för posterna.</span><span class="sxs-lookup"><span data-stu-id="37bb0-172">If there are any other existing MX records, select the check boxes for those records to select them.</span></span>
+6. <span data-ttu-id="ec472-137">Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.</span><span class="sxs-lookup"><span data-stu-id="ec472-137">Wait a few minutes before you continue, so that the record you just created can update across the Internet.</span></span>
 
-   ![eNom-BP-Konfigurera-2-3](../../media/5017ed03-ca76-4c5c-93a7-84ffe24125dc.png)
+<span data-ttu-id="ec472-138">Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Microsoft 365 och begär att Microsoft 365 letar efter posten.</span><span class="sxs-lookup"><span data-stu-id="ec472-138">Now that you've added the record at your domain registrar's site, you'll go back to Microsoft 365 and request Microsoft 365 to look for the record.</span></span>
 
-8. <span data-ttu-id="37bb0-174">Markera **ta bort markerat**.</span><span class="sxs-lookup"><span data-stu-id="37bb0-174">Select **delete checked**.</span></span>
+<span data-ttu-id="ec472-139">När Microsoft hittar rätt TXT-post är din domän verifierad.</span><span class="sxs-lookup"><span data-stu-id="ec472-139">When Microsoft finds the correct TXT record, your domain is verified.</span></span>
 
-   ![eNom-BP-Konfigurera-2-4](../../media/072dc039-bddb-4c1f-bb44-5660e77f14b0.png)
+1. <span data-ttu-id="ec472-140">I Microsoft-administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domäner</a>.</span><span class="sxs-lookup"><span data-stu-id="ec472-140">In the Microsoft admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
 
-## <a name="add-the-cname-records-that-are-required-for-microsoft"></a><span data-ttu-id="37bb0-176">Lägga till CNAME-posterna som krävs för Microsoft</span><span class="sxs-lookup"><span data-stu-id="37bb0-176">Add the CNAME records that are required for Microsoft</span></span>
-<span data-ttu-id="37bb0-177"><a name="BKMK_add_CNAME"> </a></span><span class="sxs-lookup"><span data-stu-id="37bb0-177"><a name="BKMK_add_CNAME"> </a></span></span>
+2. <span data-ttu-id="ec472-141">På sidan **Domains** väljer du den domän du verifierar.</span><span class="sxs-lookup"><span data-stu-id="ec472-141">On the **Domains** page, select the domain that you are verifying.</span></span>
 
-<span data-ttu-id="37bb0-178">Följ stegen nedan eller [titta på videon (börja vid 4:24)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).</span><span class="sxs-lookup"><span data-stu-id="37bb0-178">Follow the steps below or [watch the video (start at 4:24)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).</span></span>
+3. <span data-ttu-id="ec472-142">På sidan **Setup** väljer du **Start setup**.</span><span class="sxs-lookup"><span data-stu-id="ec472-142">On the **Setup** page, select **Start setup**.</span></span>
 
-1. <span data-ttu-id="37bb0-p109">Kom igång genom att gå till domänsidan på eNom Central med [den här länken](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). Du uppmanas att logga in först.</span><span class="sxs-lookup"><span data-stu-id="37bb0-p109">To get started, go to your domains page at eNom Central by using [this link](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). You'll be prompted to login.</span></span>
+4. <span data-ttu-id="ec472-143">På sidan **Verify domain** väljer du **Verify**.</span><span class="sxs-lookup"><span data-stu-id="ec472-143">On the **Verify domain** page, select **Verify**.</span></span>
 
-   ![eNom-BP-Konfigurera-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
+> [!NOTE]
+> <span data-ttu-id="ec472-p106">Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md).</span><span class="sxs-lookup"><span data-stu-id="ec472-p106">Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).</span></span>
 
-2. <span data-ttu-id="37bb0-182">Under **mina domäner**väljer du namnet på den domän som du vill redigera.</span><span class="sxs-lookup"><span data-stu-id="37bb0-182">Under **my domains**, select the name of the domain that you want to edit.</span></span>
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a><span data-ttu-id="ec472-147">Lägga till en MX-post så att e-post för din domän kommer till Microsoft.</span><span class="sxs-lookup"><span data-stu-id="ec472-147">Add an MX record so email for your domain will come to Microsoft</span></span>
+<span data-ttu-id="ec472-148"><a name="BKMK_add_MX"> </a></span><span class="sxs-lookup"><span data-stu-id="ec472-148"><a name="BKMK_add_MX"> </a></span></span>
 
-   ![eNom-BP-Konfigurera-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
+<span data-ttu-id="ec472-149">Följ stegen nedan eller [titta på videon (börja vid 3:40)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).</span><span class="sxs-lookup"><span data-stu-id="ec472-149">Follow the steps below or [watch the video (start at 3:40)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).</span></span>
 
-3. <span data-ttu-id="37bb0-184">I listrutan **Manage Domain** väljer du **Host Records**.</span><span class="sxs-lookup"><span data-stu-id="37bb0-184">On the **Manage Domain** drop-down list, choose **Host Records**.</span></span>
+1. <span data-ttu-id="ec472-p107">Kom igång genom att gå till domänsidan på eNom Central med [den här länken](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). Du uppmanas att logga in först.</span><span class="sxs-lookup"><span data-stu-id="ec472-p107">To get started, go to your domains page at eNom Central by using [this link](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). You'll be prompted to login.</span></span>
 
-   ![eNom-BP-Konfigurera-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
+   ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-4. <span data-ttu-id="37bb0-186">Välj **ny rad**.</span><span class="sxs-lookup"><span data-stu-id="37bb0-186">Select **new row**.</span></span>
+2. <span data-ttu-id="ec472-153">Under **My Domains**väljer du namnet på den domän som du vill redigera.</span><span class="sxs-lookup"><span data-stu-id="ec472-153">Under **my domains**, select the name of the domain that you want to edit.</span></span>
 
-   ![eNom-BP-Konfigurera-3-1](../../media/a30f0a88-7b09-411e-9133-e7965bcf1de0.png)
+   ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
-5. <span data-ttu-id="37bb0-188">I rutorna för de sex nya posterna skriver du in, eller kopierar och klistrar in, följande värden.</span><span class="sxs-lookup"><span data-stu-id="37bb0-188">In the boxes for the six new records, type or copy and paste the following values.</span></span>
+3. <span data-ttu-id="ec472-155">I listrutan **Manage Domain** väljer du **Email Settings**.</span><span class="sxs-lookup"><span data-stu-id="ec472-155">On the **Manage Domain** drop-down list, choose **Email Settings**.</span></span>
 
-   <span data-ttu-id="37bb0-189">Välj värdet **Posttyp** i listrutan.</span><span class="sxs-lookup"><span data-stu-id="37bb0-189">Choose the **Record Type** value from the drop-down list.</span></span>
+   ![eNom-BP-Configure-1-3](../../media/4b438629-afdf-4a47-ab11-56644cdb6158.png)
 
-   |<span data-ttu-id="37bb0-190">Värdnamn</span><span class="sxs-lookup"><span data-stu-id="37bb0-190">Host Name</span></span>|<span data-ttu-id="37bb0-191">Record Type</span><span class="sxs-lookup"><span data-stu-id="37bb0-191">Record Type</span></span>|<span data-ttu-id="37bb0-192">Adress</span><span class="sxs-lookup"><span data-stu-id="37bb0-192">Address</span></span>|
+4. <span data-ttu-id="ec472-157">I listrutan **Service Selection** väljer du **User (MX)**.</span><span class="sxs-lookup"><span data-stu-id="ec472-157">On the **Service Selection** drop-down list, choose **User (MX)**.</span></span>
+
+   ![eNom-BP-Configure-1-4](../../media/7680ab48-b8d1-4573-b20f-4745a5d7c079.png)
+
+5. <span data-ttu-id="ec472-159">I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell.</span><span class="sxs-lookup"><span data-stu-id="ec472-159">In the boxes for the new record, type or copy and paste the values from the following table.</span></span>
+
+   |<span data-ttu-id="ec472-160">Värdnamn</span><span class="sxs-lookup"><span data-stu-id="ec472-160">Host Name</span></span>|<span data-ttu-id="ec472-161">Adress</span><span class="sxs-lookup"><span data-stu-id="ec472-161">Address</span></span>|<span data-ttu-id="ec472-162">Pref</span><span class="sxs-lookup"><span data-stu-id="ec472-162">Pref</span></span>|
    |---|---|---|
-   |<span data-ttu-id="37bb0-193">autodiscover</span><span class="sxs-lookup"><span data-stu-id="37bb0-193">autodiscover</span></span>|<span data-ttu-id="37bb0-194">CNAME (Alias)</span><span class="sxs-lookup"><span data-stu-id="37bb0-194">CNAME (Alias)</span></span>|<span data-ttu-id="37bb0-195">autodiscover.outlook.com.</span><span class="sxs-lookup"><span data-stu-id="37bb0-195">autodiscover.outlook.com.</span></span>  <br/> <span data-ttu-id="37bb0-196">**Värdet MÅSTE sluta med en punkt (.)**</span><span class="sxs-lookup"><span data-stu-id="37bb0-196">**This value MUST end with a period (.)**</span></span>|
-   |<span data-ttu-id="37bb0-197">sip</span><span class="sxs-lookup"><span data-stu-id="37bb0-197">sip</span></span>|<span data-ttu-id="37bb0-198">CNAME (Alias)</span><span class="sxs-lookup"><span data-stu-id="37bb0-198">CNAME (Alias)</span></span>|<span data-ttu-id="37bb0-199">sipdir.online.lync.com.</span><span class="sxs-lookup"><span data-stu-id="37bb0-199">sipdir.online.lync.com.</span></span>  <br/> <span data-ttu-id="37bb0-200">**Värdet MÅSTE sluta med en punkt (.)**</span><span class="sxs-lookup"><span data-stu-id="37bb0-200">**This value MUST end with a period (.)**</span></span>|
-   |<span data-ttu-id="37bb0-201">lyncdiscover</span><span class="sxs-lookup"><span data-stu-id="37bb0-201">lyncdiscover</span></span>|<span data-ttu-id="37bb0-202">CNAME (Alias)</span><span class="sxs-lookup"><span data-stu-id="37bb0-202">CNAME (Alias)</span></span>|<span data-ttu-id="37bb0-203">webdir.online.lync.com.</span><span class="sxs-lookup"><span data-stu-id="37bb0-203">webdir.online.lync.com.</span></span>  <br/> <span data-ttu-id="37bb0-204">**Värdet MÅSTE sluta med en punkt (.)**</span><span class="sxs-lookup"><span data-stu-id="37bb0-204">**This value MUST end with a period (.)**</span></span>|
-   |<span data-ttu-id="37bb0-205">enterpriseregistration</span><span class="sxs-lookup"><span data-stu-id="37bb0-205">enterpriseregistration</span></span>|<span data-ttu-id="37bb0-206">CNAME (Alias)</span><span class="sxs-lookup"><span data-stu-id="37bb0-206">CNAME (Alias)</span></span>|<span data-ttu-id="37bb0-207">enterpriseregistration.windows.net.</span><span class="sxs-lookup"><span data-stu-id="37bb0-207">enterpriseregistration.windows.net.</span></span>  <br/> <span data-ttu-id="37bb0-208">**Värdet MÅSTE sluta med en punkt (.)**</span><span class="sxs-lookup"><span data-stu-id="37bb0-208">**This value MUST end with a period (.)**</span></span>|
-   |<span data-ttu-id="37bb0-209">enterpriseenrollment</span><span class="sxs-lookup"><span data-stu-id="37bb0-209">enterpriseenrollment</span></span>|<span data-ttu-id="37bb0-210">CNAME (Alias)</span><span class="sxs-lookup"><span data-stu-id="37bb0-210">CNAME (Alias)</span></span>|<span data-ttu-id="37bb0-211">enterpriseenrollment-s.manage.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="37bb0-211">enterpriseenrollment-s.manage.microsoft.com.</span></span>  <br/> <span data-ttu-id="37bb0-212">**Värdet MÅSTE sluta med en punkt (.)**</span><span class="sxs-lookup"><span data-stu-id="37bb0-212">**This value MUST end with a period (.)**</span></span>|
+   |@| <span data-ttu-id="ec472-163">*\<domain-key\>*  . mail.protection.outlook.com.</span><span class="sxs-lookup"><span data-stu-id="ec472-163">*\<domain-key\>*  .mail.protection.outlook.com.</span></span>  <br/> <span data-ttu-id="ec472-164">**Värdet MÅSTE sluta med en punkt (.)**</span><span class="sxs-lookup"><span data-stu-id="ec472-164">**This value MUST end with a period (.)**</span></span> <br/> <span data-ttu-id="ec472-165">**Obs!** Hämta ditt  *\<domain-key\>*  från ditt Microsoft-konto.</span><span class="sxs-lookup"><span data-stu-id="ec472-165">**Note:** Get your  *\<domain-key\>*  from your Microsoft account.</span></span> [<span data-ttu-id="ec472-166">Hur hittar jag det?</span><span class="sxs-lookup"><span data-stu-id="ec472-166">How do I find this?</span></span>](../get-help-with-domains/information-for-dns-records.md)|<span data-ttu-id="ec472-167">10.3</span><span class="sxs-lookup"><span data-stu-id="ec472-167">10</span></span>  <br/> <span data-ttu-id="ec472-168">Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)</span><span class="sxs-lookup"><span data-stu-id="ec472-168">For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)</span></span>|
 
-   ![eNom-BP-Konfigurera-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
+   ![eNom-BP-Configure-2-1](../../media/c32e8954-8209-4f77-a3a8-4b7aeea325d5.png)
 
-6. <span data-ttu-id="37bb0-214">Välj **spara**.</span><span class="sxs-lookup"><span data-stu-id="37bb0-214">Select **save**.</span></span>
+6. <span data-ttu-id="ec472-170">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="ec472-170">Select **save**.</span></span>
 
-   ![eNom-BP-Konfigurera-3-3](../../media/027b57ce-5699-408b-993b-e46a9ac31090.png)
+   ![eNom-BP-Configure-2-2](../../media/cf3058ea-9d30-4747-8cf0-2bc13d5ec6be.png)
 
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a><span data-ttu-id="37bb0-216">Lägga till en TXT-post för SPF för att förhindra skräppost</span><span class="sxs-lookup"><span data-stu-id="37bb0-216">Add a TXT record for SPF to help prevent email spam</span></span>
-<span data-ttu-id="37bb0-217"><a name="BKMK_add_TXT"> </a></span><span class="sxs-lookup"><span data-stu-id="37bb0-217"><a name="BKMK_add_TXT"> </a></span></span>
+7. <span data-ttu-id="ec472-172">Om det finns andra befintliga MX-poster väljer du dem genom att markera kryssrutorna för posterna.</span><span class="sxs-lookup"><span data-stu-id="ec472-172">If there are any other existing MX records, select the check boxes for those records to select them.</span></span>
+
+   ![eNom-BP-Configure-2-3](../../media/5017ed03-ca76-4c5c-93a7-84ffe24125dc.png)
+
+8. <span data-ttu-id="ec472-174">Välj **ta bort markerad**.</span><span class="sxs-lookup"><span data-stu-id="ec472-174">Select **delete checked**.</span></span>
+
+   ![eNom-BP-Configure-2-4](../../media/072dc039-bddb-4c1f-bb44-5660e77f14b0.png)
+
+## <a name="add-the-cname-records-that-are-required-for-microsoft"></a><span data-ttu-id="ec472-176">Lägga till CNAME-posterna som krävs för Microsoft</span><span class="sxs-lookup"><span data-stu-id="ec472-176">Add the CNAME records that are required for Microsoft</span></span>
+<span data-ttu-id="ec472-177"><a name="BKMK_add_CNAME"> </a></span><span class="sxs-lookup"><span data-stu-id="ec472-177"><a name="BKMK_add_CNAME"> </a></span></span>
+
+<span data-ttu-id="ec472-178">Följ stegen nedan eller [titta på videon (börja vid 4:24)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).</span><span class="sxs-lookup"><span data-stu-id="ec472-178">Follow the steps below or [watch the video (start at 4:24)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).</span></span>
+
+1. <span data-ttu-id="ec472-p109">Kom igång genom att gå till domänsidan på eNom Central med [den här länken](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). Du uppmanas att logga in först.</span><span class="sxs-lookup"><span data-stu-id="ec472-p109">To get started, go to your domains page at eNom Central by using [this link](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). You'll be prompted to login.</span></span>
+
+   ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
+
+2. <span data-ttu-id="ec472-182">Under **My Domains**väljer du namnet på den domän som du vill redigera.</span><span class="sxs-lookup"><span data-stu-id="ec472-182">Under **my domains**, select the name of the domain that you want to edit.</span></span>
+
+   ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
+
+3. <span data-ttu-id="ec472-184">I listrutan **Manage Domain** väljer du **Host Records**.</span><span class="sxs-lookup"><span data-stu-id="ec472-184">On the **Manage Domain** drop-down list, choose **Host Records**.</span></span>
+
+   ![eNom-BP-Configure-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
+
+4. <span data-ttu-id="ec472-186">Välj **ny rad**.</span><span class="sxs-lookup"><span data-stu-id="ec472-186">Select **new row**.</span></span>
+
+   ![eNom-BP-Configure-3-1](../../media/a30f0a88-7b09-411e-9133-e7965bcf1de0.png)
+
+5. <span data-ttu-id="ec472-188">I rutorna för de sex nya posterna skriver du in, eller kopierar och klistrar in, följande värden.</span><span class="sxs-lookup"><span data-stu-id="ec472-188">In the boxes for the six new records, type or copy and paste the following values.</span></span>
+
+   <span data-ttu-id="ec472-189">Välj värdet **Record Type** i list rutan.</span><span class="sxs-lookup"><span data-stu-id="ec472-189">Choose the **Record Type** value from the drop-down list.</span></span>
+
+   |<span data-ttu-id="ec472-190">Värdnamn</span><span class="sxs-lookup"><span data-stu-id="ec472-190">Host Name</span></span>|<span data-ttu-id="ec472-191">Record Type</span><span class="sxs-lookup"><span data-stu-id="ec472-191">Record Type</span></span>|<span data-ttu-id="ec472-192">Adress</span><span class="sxs-lookup"><span data-stu-id="ec472-192">Address</span></span>|
+   |---|---|---|
+   |<span data-ttu-id="ec472-193">autodiscover</span><span class="sxs-lookup"><span data-stu-id="ec472-193">autodiscover</span></span>|<span data-ttu-id="ec472-194">CNAME (Alias)</span><span class="sxs-lookup"><span data-stu-id="ec472-194">CNAME (Alias)</span></span>|<span data-ttu-id="ec472-195">autodiscover.outlook.com.</span><span class="sxs-lookup"><span data-stu-id="ec472-195">autodiscover.outlook.com.</span></span>  <br/> <span data-ttu-id="ec472-196">**Värdet MÅSTE sluta med en punkt (.)**</span><span class="sxs-lookup"><span data-stu-id="ec472-196">**This value MUST end with a period (.)**</span></span>|
+   |<span data-ttu-id="ec472-197">sip</span><span class="sxs-lookup"><span data-stu-id="ec472-197">sip</span></span>|<span data-ttu-id="ec472-198">CNAME (Alias)</span><span class="sxs-lookup"><span data-stu-id="ec472-198">CNAME (Alias)</span></span>|<span data-ttu-id="ec472-199">sipdir.online.lync.com.</span><span class="sxs-lookup"><span data-stu-id="ec472-199">sipdir.online.lync.com.</span></span>  <br/> <span data-ttu-id="ec472-200">**Värdet MÅSTE sluta med en punkt (.)**</span><span class="sxs-lookup"><span data-stu-id="ec472-200">**This value MUST end with a period (.)**</span></span>|
+   |<span data-ttu-id="ec472-201">lyncdiscover</span><span class="sxs-lookup"><span data-stu-id="ec472-201">lyncdiscover</span></span>|<span data-ttu-id="ec472-202">CNAME (Alias)</span><span class="sxs-lookup"><span data-stu-id="ec472-202">CNAME (Alias)</span></span>|<span data-ttu-id="ec472-203">webdir.online.lync.com.</span><span class="sxs-lookup"><span data-stu-id="ec472-203">webdir.online.lync.com.</span></span>  <br/> <span data-ttu-id="ec472-204">**Värdet MÅSTE sluta med en punkt (.)**</span><span class="sxs-lookup"><span data-stu-id="ec472-204">**This value MUST end with a period (.)**</span></span>|
+   |<span data-ttu-id="ec472-205">enterpriseregistration</span><span class="sxs-lookup"><span data-stu-id="ec472-205">enterpriseregistration</span></span>|<span data-ttu-id="ec472-206">CNAME (Alias)</span><span class="sxs-lookup"><span data-stu-id="ec472-206">CNAME (Alias)</span></span>|<span data-ttu-id="ec472-207">enterpriseregistration.windows.net.</span><span class="sxs-lookup"><span data-stu-id="ec472-207">enterpriseregistration.windows.net.</span></span>  <br/> <span data-ttu-id="ec472-208">**Värdet MÅSTE sluta med en punkt (.)**</span><span class="sxs-lookup"><span data-stu-id="ec472-208">**This value MUST end with a period (.)**</span></span>|
+   |<span data-ttu-id="ec472-209">enterpriseenrollment</span><span class="sxs-lookup"><span data-stu-id="ec472-209">enterpriseenrollment</span></span>|<span data-ttu-id="ec472-210">CNAME (Alias)</span><span class="sxs-lookup"><span data-stu-id="ec472-210">CNAME (Alias)</span></span>|<span data-ttu-id="ec472-211">enterpriseenrollment-s.manage.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="ec472-211">enterpriseenrollment-s.manage.microsoft.com.</span></span>  <br/> <span data-ttu-id="ec472-212">**Värdet MÅSTE sluta med en punkt (.)**</span><span class="sxs-lookup"><span data-stu-id="ec472-212">**This value MUST end with a period (.)**</span></span>|
+
+   ![eNom-BP-Configure-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
+
+6. <span data-ttu-id="ec472-214">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="ec472-214">Select **save**.</span></span>
+
+   ![eNom-BP-Configure-3-3](../../media/027b57ce-5699-408b-993b-e46a9ac31090.png)
+
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a><span data-ttu-id="ec472-216">Lägga till en TXT-post för SPF för att förhindra skräppost</span><span class="sxs-lookup"><span data-stu-id="ec472-216">Add a TXT record for SPF to help prevent email spam</span></span>
+<span data-ttu-id="ec472-217"><a name="BKMK_add_TXT"> </a></span><span class="sxs-lookup"><span data-stu-id="ec472-217"><a name="BKMK_add_TXT"> </a></span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="37bb0-218">Du kan inte ha fler än en TXT-post för SPF för en domän.</span><span class="sxs-lookup"><span data-stu-id="37bb0-218">You cannot have more than one TXT record for SPF for a domain.</span></span> <span data-ttu-id="37bb0-219">Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering.</span><span class="sxs-lookup"><span data-stu-id="37bb0-219">If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues.</span></span> <span data-ttu-id="37bb0-220">Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft.</span><span class="sxs-lookup"><span data-stu-id="37bb0-220">If you already have an SPF record for your domain, don't create a new one for Microsoft.</span></span> <span data-ttu-id="37bb0-221">Lägg i stället till de nödvändiga Microsoft-värdena i den aktuella posten så att du har en *enda* SPF-post som innehåller båda uppsättningarna värden.</span><span class="sxs-lookup"><span data-stu-id="37bb0-221">Instead, add the required Microsoft values to the current record so that you have a  *single*  SPF record that includes both sets of values.</span></span>
+> <span data-ttu-id="ec472-218">Du kan inte ha fler än en TXT-post för SPF för en domän.</span><span class="sxs-lookup"><span data-stu-id="ec472-218">You cannot have more than one TXT record for SPF for a domain.</span></span> <span data-ttu-id="ec472-219">Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering.</span><span class="sxs-lookup"><span data-stu-id="ec472-219">If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues.</span></span> <span data-ttu-id="ec472-220">Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft.</span><span class="sxs-lookup"><span data-stu-id="ec472-220">If you already have an SPF record for your domain, don't create a new one for Microsoft.</span></span> <span data-ttu-id="ec472-221">I stället kan du lägga till de Microsoft-värden som krävs i den aktuella posten så att du har en  *enda*  SPF-post som innehåller båda uppsättningar med värden.</span><span class="sxs-lookup"><span data-stu-id="ec472-221">Instead, add the required Microsoft values to the current record so that you have a  *single*  SPF record that includes both sets of values.</span></span>
 
-<span data-ttu-id="37bb0-222">Följ stegen nedan eller [titta på videon (börja vid 5:12)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).</span><span class="sxs-lookup"><span data-stu-id="37bb0-222">Follow the steps below or [watch the video (start at 5:12)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).</span></span>
+<span data-ttu-id="ec472-222">Följ stegen nedan eller [titta på videon (börja vid 5:12)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).</span><span class="sxs-lookup"><span data-stu-id="ec472-222">Follow the steps below or [watch the video (start at 5:12)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).</span></span>
 
-1. <span data-ttu-id="37bb0-p111">Kom igång genom att gå till domänsidan på eNom Central med [den här länken](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). Du uppmanas att logga in först.</span><span class="sxs-lookup"><span data-stu-id="37bb0-p111">To get started, go to your domains page at eNom Central by using [this link](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). You'll be prompted to login.</span></span>
+1. <span data-ttu-id="ec472-p111">Kom igång genom att gå till domänsidan på eNom Central med [den här länken](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). Du uppmanas att logga in först.</span><span class="sxs-lookup"><span data-stu-id="ec472-p111">To get started, go to your domains page at eNom Central by using [this link](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). You'll be prompted to login.</span></span>
 
-   ![eNom-BP-Konfigurera-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
+   ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. <span data-ttu-id="37bb0-226">Under **mina domäner**väljer du namnet på den domän som du vill redigera.</span><span class="sxs-lookup"><span data-stu-id="37bb0-226">Under **my domains**, select the name of the domain that you want to edit.</span></span>
+2. <span data-ttu-id="ec472-226">Under **My Domains**väljer du namnet på den domän som du vill redigera.</span><span class="sxs-lookup"><span data-stu-id="ec472-226">Under **my domains**, select the name of the domain that you want to edit.</span></span>
 
-   ![eNom-BP-Konfigurera-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
+   ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
-3. <span data-ttu-id="37bb0-228">I listrutan **Manage Domain** väljer du **Host Records**.</span><span class="sxs-lookup"><span data-stu-id="37bb0-228">On the **Manage Domain** drop-down list, choose **Host Records**.</span></span>
+3. <span data-ttu-id="ec472-228">I listrutan **Manage Domain** väljer du **Host Records**.</span><span class="sxs-lookup"><span data-stu-id="ec472-228">On the **Manage Domain** drop-down list, choose **Host Records**.</span></span>
 
-   ![eNom-BP-Konfigurera-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
+   ![eNom-BP-Configure-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
 
-4. <span data-ttu-id="37bb0-230">I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell.</span><span class="sxs-lookup"><span data-stu-id="37bb0-230">In the boxes for the new record, type or copy and paste the values from the following table.</span></span>
+4. <span data-ttu-id="ec472-230">I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell.</span><span class="sxs-lookup"><span data-stu-id="ec472-230">In the boxes for the new record, type or copy and paste the values from the following table.</span></span>
 
-   <span data-ttu-id="37bb0-231">Välj värdet **Posttyp** i listrutan.</span><span class="sxs-lookup"><span data-stu-id="37bb0-231">Choose the **Record Type** value from the drop-down list.</span></span>
+   <span data-ttu-id="ec472-231">Välj värdet **Record Type** i list rutan.</span><span class="sxs-lookup"><span data-stu-id="ec472-231">Choose the **Record Type** value from the drop-down list.</span></span>
 
-   |<span data-ttu-id="37bb0-232">Värdnamn</span><span class="sxs-lookup"><span data-stu-id="37bb0-232">Host Name</span></span>|<span data-ttu-id="37bb0-233">Record Type</span><span class="sxs-lookup"><span data-stu-id="37bb0-233">Record Type</span></span>|<span data-ttu-id="37bb0-234">Adress</span><span class="sxs-lookup"><span data-stu-id="37bb0-234">Address</span></span>|
+   |<span data-ttu-id="ec472-232">Värdnamn</span><span class="sxs-lookup"><span data-stu-id="ec472-232">Host Name</span></span>|<span data-ttu-id="ec472-233">Record Type</span><span class="sxs-lookup"><span data-stu-id="ec472-233">Record Type</span></span>|<span data-ttu-id="ec472-234">Adress</span><span class="sxs-lookup"><span data-stu-id="ec472-234">Address</span></span>|
    |---|---|---|
-   |@|<span data-ttu-id="37bb0-235">TXT</span><span class="sxs-lookup"><span data-stu-id="37bb0-235">TXT</span></span>|<span data-ttu-id="37bb0-236">v=spf1 include:spf.protection.outlook.com -all</span><span class="sxs-lookup"><span data-stu-id="37bb0-236">v=spf1 include:spf.protection.outlook.com -all</span></span>  <br/><span data-ttu-id="37bb0-237">**Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.    </span><span class="sxs-lookup"><span data-stu-id="37bb0-237">**Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.</span></span>|
+   |@|<span data-ttu-id="ec472-235">TXT</span><span class="sxs-lookup"><span data-stu-id="ec472-235">TXT</span></span>|<span data-ttu-id="ec472-236">v=spf1 include:spf.protection.outlook.com -all</span><span class="sxs-lookup"><span data-stu-id="ec472-236">v=spf1 include:spf.protection.outlook.com -all</span></span>  <br/><span data-ttu-id="ec472-237">**Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.    </span><span class="sxs-lookup"><span data-stu-id="ec472-237">**Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.</span></span>|
 
-   ![eNom-BP-Konfigurera-4-1](../../media/64c68697-258d-4044-84b1-c28f4a402e3b.png)
+   ![eNom-BP-Configure-4-1](../../media/64c68697-258d-4044-84b1-c28f4a402e3b.png)
 
-5. <span data-ttu-id="37bb0-239">Välj **spara**.</span><span class="sxs-lookup"><span data-stu-id="37bb0-239">Select **save**.</span></span>
+5. <span data-ttu-id="ec472-239">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="ec472-239">Select **save**.</span></span>
 
-   ![eNom-BP-Konfigurera-4-2](../../media/89f4effa-349e-4734-96a5-cd80b0cecd60.png)
+   ![eNom-BP-Configure-4-2](../../media/89f4effa-349e-4734-96a5-cd80b0cecd60.png)
 
-## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a><span data-ttu-id="37bb0-241">Lägga till de två SRV-posterna som krävs för Microsoft</span><span class="sxs-lookup"><span data-stu-id="37bb0-241">Add the two SRV records that are required for Microsoft</span></span>
-<span data-ttu-id="37bb0-242"><a name="BKMK_add_SRV"> </a></span><span class="sxs-lookup"><span data-stu-id="37bb0-242"><a name="BKMK_add_SRV"> </a></span></span>
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a><span data-ttu-id="ec472-241">Lägga till de två SRV-posterna som krävs för Microsoft</span><span class="sxs-lookup"><span data-stu-id="ec472-241">Add the two SRV records that are required for Microsoft</span></span>
+<span data-ttu-id="ec472-242"><a name="BKMK_add_SRV"> </a></span><span class="sxs-lookup"><span data-stu-id="ec472-242"><a name="BKMK_add_SRV"> </a></span></span>
 
-<span data-ttu-id="37bb0-243">Följ stegen nedan eller [titta på videon (börja vid 5:50)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).</span><span class="sxs-lookup"><span data-stu-id="37bb0-243">Follow the steps below or [watch the video (start at 5:50)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).</span></span>
+<span data-ttu-id="ec472-243">Följ stegen nedan eller [titta på videon (börja vid 5:50)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).</span><span class="sxs-lookup"><span data-stu-id="ec472-243">Follow the steps below or [watch the video (start at 5:50)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).</span></span>
 
-1. <span data-ttu-id="37bb0-p112">Kom igång genom att gå till domänsidan på eNom Central med [den här länken](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). Du uppmanas att logga in först.</span><span class="sxs-lookup"><span data-stu-id="37bb0-p112">To get started, go to your domains page at eNom Central by using [this link](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). You'll be prompted to login.</span></span>
+1. <span data-ttu-id="ec472-p112">Kom igång genom att gå till domänsidan på eNom Central med [den här länken](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). Du uppmanas att logga in först.</span><span class="sxs-lookup"><span data-stu-id="ec472-p112">To get started, go to your domains page at eNom Central by using [this link](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). You'll be prompted to login.</span></span>
 
-   ![eNom-BP-Konfigurera-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
+   ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. <span data-ttu-id="37bb0-247">Under **mina domäner**väljer du namnet på den domän som du vill redigera.</span><span class="sxs-lookup"><span data-stu-id="37bb0-247">Under **my domains**, select the name of the domain that you want to edit.</span></span>
+2. <span data-ttu-id="ec472-247">Under **My Domains**väljer du namnet på den domän som du vill redigera.</span><span class="sxs-lookup"><span data-stu-id="ec472-247">Under **my domains**, select the name of the domain that you want to edit.</span></span>
 
-   ![eNom-BP-Konfigurera-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
+   ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
-3. <span data-ttu-id="37bb0-249">I listrutan **Manage Domain** väljer du **Host Records**.</span><span class="sxs-lookup"><span data-stu-id="37bb0-249">On the **Manage Domain** drop-down list, choose **Host Records**.</span></span>
+3. <span data-ttu-id="ec472-249">I listrutan **Manage Domain** väljer du **Host Records**.</span><span class="sxs-lookup"><span data-stu-id="ec472-249">On the **Manage Domain** drop-down list, choose **Host Records**.</span></span>
 
-   ![eNom-BP-Konfigurera-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
+   ![eNom-BP-Configure-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
 
-4. <span data-ttu-id="37bb0-251">Till höger om **den nya raden**väljer du lägg till **SRV- eller SPF-post**.</span><span class="sxs-lookup"><span data-stu-id="37bb0-251">To the right of **new row**, select **add SRV or SPF record**.</span></span>
+4. <span data-ttu-id="ec472-251">Till höger om **ny rad**väljer du **Add SRV or SPF record**.</span><span class="sxs-lookup"><span data-stu-id="ec472-251">To the right of **new row**, select **add SRV or SPF record**.</span></span>
 
-   ![eNom-BP-Konfigurera-5-1](../../media/c73c154d-5aa0-41ef-be25-f43129eb178c.png)
+   ![eNom-BP-Configure-5-1](../../media/c73c154d-5aa0-41ef-be25-f43129eb178c.png)
 
-5. <span data-ttu-id="37bb0-253">I rutorna för de två nya posterna skriver du, eller kopierar och klistrar in, värdena från följande tabell.</span><span class="sxs-lookup"><span data-stu-id="37bb0-253">In the boxes for the two new records, type or copy and paste the values from the following table.</span></span>
+5. <span data-ttu-id="ec472-253">I rutorna för de två nya posterna skriver du, eller kopierar och klistrar in, värdena från följande tabell.</span><span class="sxs-lookup"><span data-stu-id="ec472-253">In the boxes for the two new records, type or copy and paste the values from the following table.</span></span>
 
-   |<span data-ttu-id="37bb0-254">Tjänst</span><span class="sxs-lookup"><span data-stu-id="37bb0-254">Service</span></span>|<span data-ttu-id="37bb0-255">Protokoll</span><span class="sxs-lookup"><span data-stu-id="37bb0-255">Protocol</span></span>|<span data-ttu-id="37bb0-256">Prioritet</span><span class="sxs-lookup"><span data-stu-id="37bb0-256">Priority</span></span>|<span data-ttu-id="37bb0-257">Vikt</span><span class="sxs-lookup"><span data-stu-id="37bb0-257">Weight</span></span>|<span data-ttu-id="37bb0-258">Port</span><span class="sxs-lookup"><span data-stu-id="37bb0-258">Port</span></span>|<span data-ttu-id="37bb0-259">Mål (värdnamn)</span><span class="sxs-lookup"><span data-stu-id="37bb0-259">Target (Hostname)</span></span>|
+   |<span data-ttu-id="ec472-254">Tjänst</span><span class="sxs-lookup"><span data-stu-id="ec472-254">Service</span></span>|<span data-ttu-id="ec472-255">Protokoll</span><span class="sxs-lookup"><span data-stu-id="ec472-255">Protocol</span></span>|<span data-ttu-id="ec472-256">Priority</span><span class="sxs-lookup"><span data-stu-id="ec472-256">Priority</span></span>|<span data-ttu-id="ec472-257">Väga</span><span class="sxs-lookup"><span data-stu-id="ec472-257">Weight</span></span>|<span data-ttu-id="ec472-258">Port</span><span class="sxs-lookup"><span data-stu-id="ec472-258">Port</span></span>|<span data-ttu-id="ec472-259">Mål (värdnamn)</span><span class="sxs-lookup"><span data-stu-id="ec472-259">Target (Hostname)</span></span>|
    |---|---|---|---|---|---|
-   |<span data-ttu-id="37bb0-260">_sip</span><span class="sxs-lookup"><span data-stu-id="37bb0-260">_sip</span></span>|<span data-ttu-id="37bb0-261">_tls</span><span class="sxs-lookup"><span data-stu-id="37bb0-261">_tls</span></span>|<span data-ttu-id="37bb0-262">100</span><span class="sxs-lookup"><span data-stu-id="37bb0-262">100</span></span>|<span data-ttu-id="37bb0-263">1</span><span class="sxs-lookup"><span data-stu-id="37bb0-263">1</span></span>|<span data-ttu-id="37bb0-264">443</span><span class="sxs-lookup"><span data-stu-id="37bb0-264">443</span></span>|<span data-ttu-id="37bb0-265">sipdir.online.lync.com.</span><span class="sxs-lookup"><span data-stu-id="37bb0-265">sipdir.online.lync.com.</span></span>  <br/> <span data-ttu-id="37bb0-266">**Värdet MÅSTE sluta med en punkt (.)**</span><span class="sxs-lookup"><span data-stu-id="37bb0-266">**This value MUST end with a period (.)**</span></span>|
-   |<span data-ttu-id="37bb0-267">_sipfederationtls</span><span class="sxs-lookup"><span data-stu-id="37bb0-267">_sipfederationtls</span></span>|<span data-ttu-id="37bb0-268">_tcp</span><span class="sxs-lookup"><span data-stu-id="37bb0-268">_tcp</span></span>|<span data-ttu-id="37bb0-269">100</span><span class="sxs-lookup"><span data-stu-id="37bb0-269">100</span></span>|<span data-ttu-id="37bb0-270">1</span><span class="sxs-lookup"><span data-stu-id="37bb0-270">1</span></span>|<span data-ttu-id="37bb0-271">5061</span><span class="sxs-lookup"><span data-stu-id="37bb0-271">5061</span></span>|<span data-ttu-id="37bb0-272">sipfed.online.lync.com.</span><span class="sxs-lookup"><span data-stu-id="37bb0-272">sipfed.online.lync.com.</span></span>  <br/> <span data-ttu-id="37bb0-273">**Värdet MÅSTE sluta med en punkt (.)**</span><span class="sxs-lookup"><span data-stu-id="37bb0-273">**This value MUST end with a period (.)**</span></span>|
+   |<span data-ttu-id="ec472-260">_sip</span><span class="sxs-lookup"><span data-stu-id="ec472-260">_sip</span></span>|<span data-ttu-id="ec472-261">_tls</span><span class="sxs-lookup"><span data-stu-id="ec472-261">_tls</span></span>|<span data-ttu-id="ec472-262">100</span><span class="sxs-lookup"><span data-stu-id="ec472-262">100</span></span>|<span data-ttu-id="ec472-263">9.1</span><span class="sxs-lookup"><span data-stu-id="ec472-263">1</span></span>|<span data-ttu-id="ec472-264">443</span><span class="sxs-lookup"><span data-stu-id="ec472-264">443</span></span>|<span data-ttu-id="ec472-265">sipdir.online.lync.com.</span><span class="sxs-lookup"><span data-stu-id="ec472-265">sipdir.online.lync.com.</span></span>  <br/> <span data-ttu-id="ec472-266">**Värdet MÅSTE sluta med en punkt (.)**</span><span class="sxs-lookup"><span data-stu-id="ec472-266">**This value MUST end with a period (.)**</span></span>|
+   |<span data-ttu-id="ec472-267">_sipfederationtls</span><span class="sxs-lookup"><span data-stu-id="ec472-267">_sipfederationtls</span></span>|<span data-ttu-id="ec472-268">_tcp</span><span class="sxs-lookup"><span data-stu-id="ec472-268">_tcp</span></span>|<span data-ttu-id="ec472-269">100</span><span class="sxs-lookup"><span data-stu-id="ec472-269">100</span></span>|<span data-ttu-id="ec472-270">9.1</span><span class="sxs-lookup"><span data-stu-id="ec472-270">1</span></span>|<span data-ttu-id="ec472-271">5061</span><span class="sxs-lookup"><span data-stu-id="ec472-271">5061</span></span>|<span data-ttu-id="ec472-272">sipfed.online.lync.com.</span><span class="sxs-lookup"><span data-stu-id="ec472-272">sipfed.online.lync.com.</span></span>  <br/> <span data-ttu-id="ec472-273">**Värdet MÅSTE sluta med en punkt (.)**</span><span class="sxs-lookup"><span data-stu-id="ec472-273">**This value MUST end with a period (.)**</span></span>|
 
-   ![eNom-BP-Konfigurera-5-2](../../media/4d478f40-780f-43b9-940b-712b09da8c63.png)
+   ![eNom-BP-Configure-5-2](../../media/4d478f40-780f-43b9-940b-712b09da8c63.png)
 
-6. <span data-ttu-id="37bb0-275">Välj **spara**</span><span class="sxs-lookup"><span data-stu-id="37bb0-275">Select **save**</span></span>
+6. <span data-ttu-id="ec472-275">Välj **Spara**</span><span class="sxs-lookup"><span data-stu-id="ec472-275">Select **save**</span></span>
 
-   ![eNom-BP-Konfigurera-5-3](../../media/d03b6f75-49f2-471d-978d-d32c47cd6aa7.png)
+   ![eNom-BP-Configure-5-3](../../media/d03b6f75-49f2-471d-978d-d32c47cd6aa7.png)
 
 > [!NOTE]
-> <span data-ttu-id="37bb0-p113">Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md).</span><span class="sxs-lookup"><span data-stu-id="37bb0-p113">Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).</span></span>
+> <span data-ttu-id="ec472-p113">Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md).</span><span class="sxs-lookup"><span data-stu-id="ec472-p113">Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).</span></span>
