@@ -1,34 +1,34 @@
 ---
-title: Betalningsinformation för Malaysia
+title: Betalnings information för Malaysia
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om var du skickar betalningen för din prenumeration.
+description: Lär dig hur du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e98696a276891b98d412a2a4d08d1e80131e6a85
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: defdf1d26bba8b6fef67b84683ccea8f3b16d7d7
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404112"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649325"
 ---
-# <a name="payment-information-for-malaysia"></a>Betalningsinformation för Malaysia
+# <a name="payment-information-for-malaysia"></a>Betalnings information för Malaysia
 
-[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
 
-Betala endast i MYR och referensfakturanummer på din betalningsöverföring.
+Betala endast i MYR och ange faktura numret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
 **Bank:** Citibank, Singapore  
-**SWIFT-kod:** CITISGSG (AVIGGSG)  
-**Kontonummer:** 0-817543-138  
-**Kontonamn:** MICROSOFT REGIONAL SALES CORP  
+**SWIFT-kod:** CITISGSG  
+**Konto nummer:** 0-817543-138  
+**Konto namn:** MICROSOFT REGIONAL SALES CORP  

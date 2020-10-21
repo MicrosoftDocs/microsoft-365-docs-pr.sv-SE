@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e3b29a8182e38fa05e5f791478157c978632fb13
-ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
+ms.openlocfilehash: 29e5eb64445c6c5c45b8e1fd1633c030b5f32b86
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48477011"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649673"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Metod tips för avancerad jakt frågor
 
@@ -36,10 +36,10 @@ ms.locfileid: "48477011"
 
 Använd dessa rekommendationer för att få snabbare resultat och undvika tids gränser när komplexa frågor körs. För mer information om hur du förbättrar frågeresultatet kan du läsa [Kusto metod tips](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
-## <a name="understand-cpu-resource-limits"></a>Förstå gräns värden för processor resurser
-Beroende på dess storlek har alla innehavare till gång till en mängd tilldelade CPU-resurser för att köra avancerade jakt frågor. Få reda på mer om olika tjänst gränser i [om begränsningar för avancerat jakt](advanced-hunting-limits.md).
+## <a name="understand-cpu-resource-quotas"></a>Förstå processor resurs kvoter
+Beroende på dess storlek har alla innehavare till gång till en mängd tilldelade CPU-resurser för att köra avancerade jakt frågor. Detaljerad information om olika tjänst gränser finns i [om avancerade jakt kvoter och användnings parametrar](advanced-hunting-limits.md).
 
-Kunder som kör flera frågor regelbundet bör spåra förbrukningen och använda optimerings vägledningen i den här artikeln för att minimera störningar som orsakas av gräns värden.
+Kunder som kör flera frågor regelbundet bör spåra förbrukningen och använda optimerings vägledningen i den här artikeln för att minimera störningar som orsakas av kvot-eller användnings parametrar.
 
 ## <a name="general-optimization-tips"></a>Allmänna optimerings tips
 
@@ -265,7 +265,7 @@ Om du vill veta mer om alla analys funktioner som stöds [läser du Kusto strän
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Dokumentation för Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
-- [Tjänstbegränsningar](advanced-hunting-limits.md)
+- [Kvoter och användnings parametrar](advanced-hunting-limits.md)
 - [Hantera avancerade jakt fel](advanced-hunting-errors.md)
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)

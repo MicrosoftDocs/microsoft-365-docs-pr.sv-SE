@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 757da7f0fb3089c358333ac5f49140d965476945
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: e7f850fb7796d72649c1bbe8d61e9fb78be08910
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235412"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48641981"
 ---
 # <a name="contact-support-for-india"></a>Kontakta supporten för Indien
 
@@ -32,7 +32,7 @@ Lokal avgiftsfritt
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Engelska: mån – fre 9 FM-6 EM
+Engelska: Mon-Fri 09:00-6 PM
 
 ### <a name="technical-support"></a>Teknisk support:
 

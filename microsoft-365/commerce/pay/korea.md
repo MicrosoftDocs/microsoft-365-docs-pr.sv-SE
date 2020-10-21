@@ -1,35 +1,35 @@
 ---
-title: Betalningsinformation för Korea
+title: Betalnings information för Sydkorea
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om var du skickar betalningen för din prenumeration.
+description: Lär dig hur du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6c763a28e8ddcc7405fd818a538ed54dbd889d10
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1a85331a7761241966988428e243c8c20bb2f73e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402396"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649571"
 ---
-# <a name="payment-information-for-korea"></a>Betalningsinformation för Korea
+# <a name="payment-information-for-korea"></a>Betalnings information för Sydkorea
 
-[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
 
-Betala endast i KRW och referensfakturanummer på din betalningsförändelser.
+Betala endast i won och ange faktura numret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
 **Bank:** Citibank  
-**Gren:** 89-29 Shinmunro-2ka Chongro-gu Seoul, Korea 110-062  
-**SWIFT-kod:** CITIKRSX (AV)  
-**Kontonummer:** 5001296088  
-**Kontonamn:** MICROSOFT KOREA  
+**Gren:** 89-29 Shinmunro-2ka Chongro-Gu Seoul, Korea 110-062  
+**SWIFT-kod:** CITIKRSX  
+**Konto nummer:** 5001296088  
+**Konto namn:** MICROSOFT KOREA  

@@ -15,61 +15,61 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Hur Contoso använder säkerhetsfunktionerna i Microsoft 365 för företag.
-ms.openlocfilehash: fbbf8dfc1de831c2ef949b71f1cbdf4e97a02baa
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 635336b70318acdd4ed013a2705691d160926e84
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399483"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649707"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Sammanfattning av Microsoft 365 för företags säkerhet för Contoso Corporation
 
-En grundlig säkerhets granskning utfördes för att få en genom gång av hur distributionen av Microsoft 365 för IT-avdelningen får logga ut. Här är Contosos säkerhetskrav för molnet:
+För att få godkännande för att distribuera Microsoft 365 för företag har den contoso IT-säkerhetsavdelningen en grundlig säkerhets recension. De har identifierat följande säkerhets krav för molnet:
 
-- De starkaste autentiseringsmetoderna ska användas för medarbetarnas åtkomst till molnresurser
-- Datorer och mobila enheten måste kunna ansluta till och komma åt programmen på ett säkert sätt
-- Datorer och e-post ska skyddas mot skadlig kod
-- Behörigheterna för molnbaserade digitala tillgångar ska definiera vem som har åtkomst till vad och vad de kan göra, och tilldelningen av behörigheterna ska följa principen om minsta möjliga behörighet
-- Känsliga och strikt reglerade digitala tillgångar ska etiketteras, krypteras och lagras på säkra platser
-- Strikt reglerade digitala tillgångar ska skyddas med ytterligare kryptering och behörigheter
-- IT-säkerhetspersonal ska kunna övervaka aktuell säkerhetsstatus från centrala instrumentpaneler och få meddelanden om säkerhetshändelser så att de snabbt kan åtgärda brister och hot
+- Använd de starkaste autentiseringsmetoderna för åtkomst till moln resurser för anställda.
+- Se till att datorer och mobila enheter ansluter och kommer åt program på säkra sätt.
+- Skydda datorer och e-post från skadlig program vara.
+- Behörigheter för molnbaserade digital till gångar definierar vem som kan komma åt vad och vad de kan göra, och det är utformat för åtkomst med tillstånd för användare med tillstånd
+- Känslig och högreglerade digitala till gångar kallas, är krypterade och lagras på säkra platser.
+- Högreglerade digital till gångar skyddas med ytterligare kryptering och behörigheter.
+- IT-säkerhetspersonalen kan övervaka den aktuella säkerhets Posture från Central instrument paneler och få meddelanden om säkerhets händelser för snabba svar och mildrande åtgärder.
 
-## <a name="contosos-path-to-microsoft-365-security-readiness"></a>Contosos väg till säkerhetsberedskap för Microsoft 365
+## <a name="the-contoso-path-to-microsoft-365-security-readiness"></a>Contoso-sökvägen till Microsoft 365-säkerhets beredskap
 
-Contoso har följande steg för att klara deras säkerhet vid distribution av Microsoft 365 för företag:
+Contoso följer de här stegen för att förbereda sin säkerhet för distribution av Microsoft 365 för företag:
 
-1. Begränsade administratörskonton för molnet
+1. Begränsa administratörs konton för molnet
 
-   Contoso gjorde en omfattande översyn av AD DS-administratörskonton (Active Directory Domain Services) och konfigurerade en serie dedikerade molnadministratörskonton och grupper.
+   Contoso gjorde en omfattande recension av sina befintliga Active Directory Domain Services (AD DS)-administratörs konton och konfigurera en serie med dedikerade moln administratörs konton och grupper.
 
-2. Dataklassificeringsanalyser utfördes på tre nivåer
+2. Klassificera data i tre säkerhets nivåer
 
-   Contoso har gjort en noggrann recension och fastställt de tre nivåerna, som användes för att fastställa Microsoft 365 för Enterprise-funktioner för att skydda Contosos viktigaste data.
+   Contoso gjorde en noggrann recension och fastställde de tre nivåerna, som användes för att identifiera Microsoft 365 för Enterprise-funktioner för att skydda den mest värdefulla informationen.
 
-3. Principer för åtkomst, bevarande och informationsskydd fastställdes som datanivåer
+3. Bestämma åtkomst, bevarande och informations skydds principer för data nivåer
 
-   Baserat på datanivåerna ställde Contoso upp detaljerade krav för att kvalificera framtida IT-arbetsbelastningar som flyttas till molnet.
+   Baserat på data nivåerna fastställdes contoso detaljerade krav för att kvalificera framtida IT-arbetsbelastningar som flyttas till molnet.
 
-I enlighet med säkerhets rekommendationerna och Microsoft 365 för företags distributions krav har Contosos säkerhets administratörer och IT-avdelningen distribuerat många säkerhetsfunktioner och funktioner enligt beskrivningen i följande avsnitt.
+Om du vill följa säkerhets praxis och Microsoft 365 för företags distributions krav kan Contosos säkerhets administratörer och IT-avdelningen distribuera många säkerhetsfunktioner och funktioner enligt beskrivningen i följande avsnitt.
 
-## <a name="identity--access-management"></a>Identitets- och åtkomsthantering 
+## <a name="identity-and-access-management"></a>Identitets- och åtkomsthantering 
 
 - Dedikerade globala administratörskonton med MFA och PIM
 
-  I stället för att tilldela den globala administratörsrollen till de vanliga användarkontona skapade Contoso tre dedikerade globala administratörskonton med starka lösenord och skyddade dem med Azure Multi-Factor Authentication (MFA) och Azure Active Directory (Azure AD) Privileged Identity Management (PIM). PIM är endast tillgängligt med Microsoft 365 E5.
+  I stället för att tilldela rollen global administratör till vardagliga användar konton, har contoso tre dedikerade globala administratörs konton med starka lösen ord. Kontona skyddas av Azure Multi-Factority (MFA) och Azure Active Directory (Azure AD) privilegierad identitets hantering (PIM). *PIM är endast tillgängligt med Microsoft 365 E5.*
 
-  Inloggning med ett globalt administratörskonto görs endast för specifika administrativa uppgifter, lösenorden är endast kända för utsedd personal och kan endast användas inom den tidsram som angetts med Azure AD PIM. 
+  Det är bara att logga in med ett globalt administratörs konto för specifika administrativa uppgifter. Lösen orden är bara kända för den avsedda personalen och kan endast användas inom en tids period som är konfigurerad i Azure AD PIM.
 
-  Contosos säkerhetsadministratörer har tilldelat administratörsroller med lägre behörighet för konton utifrån IT-medarbetarens jobbfunktion och ansvarsområden.
+  Contoso-säkerhetsadministratörer har tilldelat färre administratörs roller till konton som är lämpliga för arbets uppgiftens jobb funktion.
 
   Mer information finns i [Om Microsoft 365-administratörsroller](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
 - MFA för alla användarkonton
 
-  MFA ger ett extra skyddslager för inloggningsprocessen i och med att användarna måste bekräfta ett telefonsamtal, sms eller en avisering via app på sin telefon efter att de angett korrekt lösenord. Med MFA skyddas Azure AD-användarkonton mot obehörig inloggning även om lösenordet för ett konto skulle komprometteras.
+  MFA lägger till ytterligare ett skydds lager för inloggnings processen. För att användare ska kunna bekräfta ett telefonsamtal, SMS eller ett program meddelande på deras mobil telefon när du har angett lösen ordet korrekt. Med MFA skyddas Azure AD-användarkonton mot obehörig inloggning, även om ett konto lösen ord äventyras.
 
-   - För att skydda Microsoft 365-prenumerationen mot obehöriga kräver Contoso att MFA tillämpas för alla globala administratörskonton.
-   - För att skydda mot nätfiskeattacker (där angriparen försöker komma över autentiseringsuppgifterna för en betrodd person i organisationen och sedan skickar skadliga e-postmeddelanden) har Contoso aktiverat MFA för alla användarkonton, inklusive chefernas och ledningens konton. 
+   - Contoso kräver MFA för alla globala administratörs konton för att skydda mot problem med Microsoft 365-prenumerationen.
+   - För att skydda mot nätfiskeattacker (där angriparen försöker komma över autentiseringsuppgifterna för en betrodd person i organisationen och sedan skickar skadliga e-postmeddelanden) har Contoso aktiverat MFA för alla användarkonton, inklusive chefernas och ledningens konton.
 
 - Säkrare åtkomst till enheter och program med principer för villkorsstyrd åtkomst
 
@@ -77,11 +77,11 @@ I enlighet med säkerhets rekommendationerna och Microsoft 365 för företags di
 
 - Windows Hello för företag
 
-  Contoso har distribuerats och kräver [Windows Hello för företag](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) för att ersätta användningen av lösenord med stark tvåfaktorautentisering på datorer och mobila enheter med Windows 10 Enterprise.
+  Contoso distribuerade [Windows Hello för företag](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) för att eliminera behovet av lösen ord via starkt tvåfaktorautentisering på datorer och mobila enheter som kör Windows 10 Enterprise.
 
 - Windows Defender Credential Guard
 
-  För att förhindra att riktade attacker och skadlig kod kan köras med administratörsbehörighet i operativsystemet har Contoso aktiverat [Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) via AD DS-grupprincip.
+  För att blockera riktade attacker och skadlig program vara som körs i operativ systemet med administratörs behörighet, contoso-aktiverad [Windows Defender-Autentiseringshanteraren](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) genom AD DS-Grupprincip.
 
 ## <a name="threat-protection"></a>Skydd mot hot
 
@@ -91,35 +91,35 @@ I enlighet med säkerhets rekommendationerna och Microsoft 365 för företags di
 
 - Säkert e-postflöde och loggning av postlådegranskning med Office 365 Avancerat skydd 
 
-  Contoso använder Exchange Online Protection och [Office](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) 365 Avancerat skydd som skydd mot okänd skadlig kod, virus och skadliga URL:er som skickas via e-post. 
+  Contoso använder Exchange Online Protection och [Office](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) 365 Avancerat skydd som skydd mot okänd skadlig kod, virus och skadliga URL:er som skickas via e-post.
 
-  Contoso har även aktiverat loggning av postlådegranskning för att ta reda på vem som loggar in i användarnas postlådor, skickar meddelanden och utför andra aktiviteter som postlådans ägare, delegerad användare eller administratör.
+  Contoso har också aktiverat gransknings loggning för post lådor för att identifiera vem som loggar in i en användares post låda, skickar meddelanden och andra aktiviteter som utförs av post lådans ägare, en delegerad användare eller administratör.
 
 - Övervakning och förebyggande av angrepp med undersökning av hot och åtgärder i Office 365 
 
-  Contoso skyddar sina användare med [undersökning av hot och svar i Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-ti). På så sätt kan de enkelt identifiera och åtgärda attacker och förhindra framtida attacker.
+  Contoso använder [Office 365 hot-undersökning och-svar](https://docs.microsoft.com/office365/securitycompliance/office-365-ti) för att skydda användare genom att göra det lätt att identifiera och rikta mot attacker och förhindra framtida attacker.
 
 - Skydd mot avancerade attacker med Advanced Threat Analytics
 
-  Contoso använder [Advanced Threat Analytics (ATA)](https://docs.microsoft.com/advanced-threat-analytics/what-is-ata) för att skydda sig mot avancerade riktade attacker.  ATA identifierar, analyserar och lär sig normalt och onormalt beteende för entiteter (användare, enheter och resurser). 
+  Contoso använder [Advanced Threat Analytics (ATA)](https://docs.microsoft.com/advanced-threat-analytics/what-is-ata) för att skydda sig mot avancerade riktade attacker.  ATA identifierar, analyserar och lär sig normalt och onormalt beteende för entiteter (användare, enheter och resurser).
 
 ## <a name="information-protection"></a>Informationsskydd
 
 - Skydda känsliga och strikt reglerade digitala tillgångar med Azure Information Protection-etiketter
 
-  Contoso fastställde tre nivåer av dataskydd och distribuerade [Microsoft 365-känslighetsetiketter](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) som användarna använder för digitala tillgångar. När det gäller affärshemligheter och andra immateriella egendomar använder Contoso underetiketter för känslighet för strikt reglerade data som krypterar innehåll och begränsar åtkomsten till specifika användarkonton och grupper.
+  Contoso fastställde tre nivåer av dataskydd och distribuerade [Microsoft 365-känslighetsetiketter](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) som användarna använder för digitala tillgångar. För dess affärs hemligheter och andra immateriella rättigheter använder contoso känslighets under etiketter för data med hög reglering. Den här processen krypterar innehåll och begränsar åtkomsten till specifika användar konton och grupper.
 
 - Förhindra dataläckor i intranätet med dataförlustskydd
 
-  Contoso har konfigurerat principer för [dataförlustskydd](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) för Exchange Online, SharePoint och OneDrive för företag för att hindra användare från att oavsiktligt eller avsiktligt dela känsliga data.
+  Contoso-konfigurerade principer för [skydd mot data förlust](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) för Exchange Online, SharePoint och OneDrive för företag för att förhindra att användare oavsiktligt eller avsiktligt delar känslig information.
 
 - Förhindra dataläckor på enheter med Windows Information Protection
 
-  Contoso använder [Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) som skydd mot dataläckage via Internetbaserade appar och tjänster och via företagsprogram och data på de enheter som företaget äger och de privata enheter som medarbetarna tar med till jobbet.
+  Contoso använder [Windows informations skydd (RIA)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) för att skydda mot data läckage via Internet-baserade appar och tjänster och företags program och data på företagsägda enheter och personliga enheter som de anställda kan arbeta med.
 
 - Molnövervakning med Microsoft Cloud App Security
 
-  Contoso använder [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) för att kartlägga molnmiljön, övervaka dess användning och identifiera säkerhetshändelser och incidenter. Microsoft Cloud App Security är endast tillgängligt med Microsoft 365 E5.
+  Contoso använder [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) för att kartlägga molnmiljön, övervaka dess användning och identifiera säkerhetshändelser och incidenter. *Microsoft Cloud App Security är endast tillgängligt med Microsoft 365 E5.*
 
 - Enhetshantering med Microsoft Intune
 
@@ -129,9 +129,8 @@ I enlighet med säkerhets rekommendationerna och Microsoft 365 för företags di
 
 - Central säkerhetsinstrumentpanel för IT med Azure Security Center
 
-  Contoso använder [Azure Security Center](https://azure.microsoft.com/services/security-center/) för att hantera säkerhet och skydd mot hot, för att hantera säkerhetsprinciper för olika arbetsbelastningar och för att svara på cyberattacker.
+  Contoso använder [Azure Security Center](https://azure.microsoft.com/services/security-center/) för att presentera en enhetlig vy över säkerhets-och hot skydd, för att hantera säkerhets principer för dess arbets belastningar och för att svara på cyberattacks.
 
 - Central säkerhetsinstrumentpanel för användare med Windows Defender Säkerhetscenter
 
-  Contoso har distribuerat [appen Windows-säkerhet](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) till de datorer och enheter som kör Windows 10 Enterprise, så att användarna snabbt kan se deras säkerhetsstatus och vidta åtgärder.
-
+  Contoso distribuerade [säkerhets programmet Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) till sina datorer och enheter som kör Windows 10 Enterprise så att användarna kan se deras säkerhets Posture snabbt och enkelt vidta åtgärder.

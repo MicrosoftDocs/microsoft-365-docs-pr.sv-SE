@@ -1,35 +1,35 @@
 ---
-title: Betalningsinformation för Nigeria
+title: Betalnings information för Nigeria
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om var du skickar betalningen för din prenumeration.
+description: Lär dig hur du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7eb078eb4213d8d15c301f2f2ada26448228e992
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e83e40d7eb2ccb7c9751d2211fa692807b5ee43d
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403992"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649001"
 ---
-# <a name="payment-information-for-nigeria"></a>Betalningsinformation för Nigeria
+# <a name="payment-information-for-nigeria"></a>Betalnings information för Nigeria
 
-[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
 
-Betala endast i USD och ange fakturanummer på fakturaöverföringen.
+Betala endast i USD och ange faktura numret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
 **Bank:** Citibank, London  
-**SWIFT-kod:** CITIGB2L (AV)  
+**SWIFT-kod:** CITIGB2L  
 **IBAN:** GB95CITI18500812510049  
-**Kontonummer:** 12510049  
-**Kontonamn:** Microsoft  
+**Konto nummer:** 12510049  
+**Konto namn:** MICROSOFT  
