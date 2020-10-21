@@ -4,42 +4,42 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om hur du kontaktar supporten för ditt land eller din region.
+description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c6c918f552f0eb5300d6d082fecf265140cb2363
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6d5dac2a5796c1c342aead0d4b8433d1eb2d5bc7
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44391387"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48640313"
 ---
-# <a name="contact-support-for-poland"></a><span data-ttu-id="a8926-103">Kontakta support för Polen</span><span class="sxs-lookup"><span data-stu-id="a8926-103">Contact support for Poland</span></span>
+# <a name="contact-support-for-poland"></a><span data-ttu-id="30650-103">Kontakta supporten för Polen</span><span class="sxs-lookup"><span data-stu-id="30650-103">Contact support for Poland</span></span>
 
-<span data-ttu-id="a8926-104">[Hitta ett annat land eller en annan region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="a8926-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="30650-104">[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="30650-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="a8926-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="a8926-105">Phone number</span></span>
-<span data-ttu-id="a8926-106">800 70 23 20</span><span class="sxs-lookup"><span data-stu-id="a8926-106">800 70 23 20</span></span>
+## <a name="phone-number"></a><span data-ttu-id="30650-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="30650-105">Phone number</span></span>
+<span data-ttu-id="30650-106">800 70 23 20</span><span class="sxs-lookup"><span data-stu-id="30650-106">800 70 23 20</span></span>
 
-## <a name="hours"></a><span data-ttu-id="a8926-107">Tider</span><span class="sxs-lookup"><span data-stu-id="a8926-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="a8926-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="a8926-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="30650-107">Tider</span><span class="sxs-lookup"><span data-stu-id="30650-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="30650-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="30650-108">Billing Support:</span></span>
 
-<span data-ttu-id="a8926-109">Polska: mån-fre 08.00-18.00</span><span class="sxs-lookup"><span data-stu-id="a8926-109">Polish: Mon-Fri 8 AM-6 PM</span></span>
+<span data-ttu-id="30650-109">Polska: Mon-Fri 8 FM-6 EM</span><span class="sxs-lookup"><span data-stu-id="30650-109">Polish: Mon-Fri 8 AM-6 PM</span></span>
 
-<span data-ttu-id="a8926-110">Engelska: mån-fre 08.00-18.00</span><span class="sxs-lookup"><span data-stu-id="a8926-110">English: Mon-Fri 8 AM-6 PM</span></span>
+<span data-ttu-id="30650-110">Engelska: Mon-Fri 8 FM-6 EM</span><span class="sxs-lookup"><span data-stu-id="30650-110">English: Mon-Fri 8 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="a8926-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="a8926-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="30650-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="30650-111">Technical Support:</span></span>
 
-<span data-ttu-id="a8926-112">Polska: mån-fre 08.00-18.00</span><span class="sxs-lookup"><span data-stu-id="a8926-112">Polish: Mon-Fri 8 AM-6 PM</span></span>
+<span data-ttu-id="30650-112">Polska: Mon-Fri 8 FM-6 EM</span><span class="sxs-lookup"><span data-stu-id="30650-112">Polish: Mon-Fri 8 AM-6 PM</span></span>
 
-<span data-ttu-id="a8926-113">Engelska: 24 timmar om dygnet, 7 dagar i veckan</span><span class="sxs-lookup"><span data-stu-id="a8926-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="30650-113">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="30650-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="a8926-114">Alternativt telefonnummer: 022 306 05 17</span><span class="sxs-lookup"><span data-stu-id="a8926-114">Alternative Phone Number: 022 306 05 17</span></span>
+<span data-ttu-id="30650-114">Alternativt telefonnummer: 022 306 05 17</span><span class="sxs-lookup"><span data-stu-id="30650-114">Alternative Phone Number: 022 306 05 17</span></span>
 
-<span data-ttu-id="a8926-115">Avgifter för lokalsamtal tillkommer</span><span class="sxs-lookup"><span data-stu-id="a8926-115">Local call charges apply</span></span>
+<span data-ttu-id="30650-115">Lokala samtals avgifter gäller</span><span class="sxs-lookup"><span data-stu-id="30650-115">Local call charges apply</span></span>

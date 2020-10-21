@@ -1,39 +1,39 @@
 ---
-title: Supportinformation för St Helena
+title: Supportinformation för S:t Helena
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om hur du kontaktar supporten för ditt land eller din region.
+description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 63813b31a8aa1b6b823f751c30c076f9213219c9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 09e07437b029de928360d410c2301c1a33f3b5ed
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401184"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48639449"
 ---
-# <a name="contact-support-for-st-helena"></a><span data-ttu-id="1dcdd-103">Kontakta support för St Helena</span><span class="sxs-lookup"><span data-stu-id="1dcdd-103">Contact support for St Helena</span></span>
+# <a name="contact-support-for-st-helena"></a><span data-ttu-id="0192f-103">Kontakta supporten för S:t Helena</span><span class="sxs-lookup"><span data-stu-id="0192f-103">Contact support for St Helena</span></span>
 
-<span data-ttu-id="1dcdd-104">[Hitta ett annat land eller en annan region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="1dcdd-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="0192f-104">[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="0192f-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="1dcdd-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="1dcdd-105">Phone number</span></span>
-<span data-ttu-id="1dcdd-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="1dcdd-106">+1 312 843 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="0192f-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="0192f-105">Phone number</span></span>
+<span data-ttu-id="0192f-106">+ 1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="0192f-106">+1 312 843 5151</span></span>
 
-## <a name="hours"></a><span data-ttu-id="1dcdd-107">Tider</span><span class="sxs-lookup"><span data-stu-id="1dcdd-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="1dcdd-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="1dcdd-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="0192f-107">Tider</span><span class="sxs-lookup"><span data-stu-id="0192f-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="0192f-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="0192f-108">Billing Support:</span></span>
 
-<span data-ttu-id="1dcdd-109">Engelska: mån-fre 09.00-17.00</span><span class="sxs-lookup"><span data-stu-id="1dcdd-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="0192f-109">Engelska: Mon-Fri 09.00 – 17.00</span><span class="sxs-lookup"><span data-stu-id="0192f-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="1dcdd-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="1dcdd-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="0192f-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="0192f-110">Technical Support:</span></span>
 
-<span data-ttu-id="1dcdd-111">Engelska: 24 timmar om dygnet, 7 dagar i veckan</span><span class="sxs-lookup"><span data-stu-id="1dcdd-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="0192f-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="0192f-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="1dcdd-112">Avgifter för internationella samtal tillkommer</span><span class="sxs-lookup"><span data-stu-id="1dcdd-112">International call charges apply</span></span>
+<span data-ttu-id="0192f-112">Internationella samtals avgifter gäller</span><span class="sxs-lookup"><span data-stu-id="0192f-112">International call charges apply</span></span>
