@@ -1,5 +1,5 @@
 ---
-title: Ange krav för starkt lösen ord för användare
+title: Inaktivera krav för starka lösen ord för användare
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du ställer in kraven på starka lösen ord för användarna med Windows PowerShell.
-ms.openlocfilehash: 9f6fd61396d99245ffeabf757d3cb65c5d5cb85e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f9a0b76d024cc18552657144e4ccf8de8a72f0d9
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646625"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655741"
 ---
-# <a name="set-strong-password-requirement-for-users"></a>Ange krav för starkt lösen ord för användare
+# <a name="turn-off-strong-password-requirements-for-users"></a>Inaktivera krav för starka lösen ord för användare
 
 I den här artikeln förklaras hur du inaktiverar kraven på starka lösen ord för användarna. Krav för starka lösen ord är aktiverade som standard i Microsoft 365 för företag-organisationen. Din organisation kan ha behov att inaktivera starka lösen ord. Följ stegen nedan om du vill inaktivera kraven för starka lösen ord. Du måste utföra de här stegen med PowerShell.
 

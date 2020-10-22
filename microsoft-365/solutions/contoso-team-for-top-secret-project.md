@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Sammanfattning: hur contoso använde ett team med säkerhets isolering för ett Top Secret för att utveckla en ny serie produkter och tjänster.'
-ms.openlocfilehash: 16d10f5d6e5b5939172c02746c9324eb20b6987e
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: b8794502afcb77a8e597a1b05dfc92acd093f23a
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399495"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48656089"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Isolerat team för ett hemligt projekt av Contoso Corporation
 
@@ -77,7 +77,7 @@ Eftersom privata kanaler för Project 2X skapades inaktiverades gäst delningen 
 
 Här är den resulterande konfigurationen för Project 2X-teamet med säkerhets isolering.
 
-![Den resulterande konfigurationen för Project 2X-teamet](../media/contoso-team-for-top-secret-project/contoso-team-for-top-secret-project.png)
+![Den resulterande konfigurationen för Project 2X-teamet](../media/contoso-team-for-top-secret-project.png)
 
  ## <a name="step-4-trained-project-2x-team-members"></a>Steg 4: utbildad Project 2X-grupp medlemmar
 
@@ -92,7 +92,7 @@ Slut resultatet var en säker miljö där grupp medlemmarna i Project 2X samarbe
 
 Här är ett exempel på en fil som är lagrad i den underliggande Project 2X-webbplatsen med etiketten dubbel känslighet för Project.
 
-![Ett exempel på en fil som lagras i den underliggande projektets dubbel webbplats](../media/contoso-team-for-top-secret-project/contoso-team-for-top-secret-project-example.png)
+![Ett exempel på en fil som lagras i den underliggande projektets dubbel webbplats](../media/contoso-team-for-top-secret-project-example.png)
 
 I ett par fall har Project 2X team medlemmar laddat ned filer som skyddas av Project 2X till en lokal enhet för offlinearbete. 
 

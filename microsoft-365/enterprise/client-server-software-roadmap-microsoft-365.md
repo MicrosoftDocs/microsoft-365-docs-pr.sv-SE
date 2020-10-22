@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Översikten för konfiguration av klient-och serverprogram för Microsoft 365.
-ms.openlocfilehash: d3401baa09d27ff9753f9a45ecb537c67701c0e9
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 94412ca4a7665807368ae33a0e50dc928445c8b7
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464414"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655967"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Klient-och Server program översikt för Microsoft 365
 
@@ -161,13 +161,11 @@ Du kan också [ladda ner denna affisch](https://github.com/MicrosoftDocs/microso
 
 ## <a name="transition-your-entire-organization"></a>En övergång för hela organisationen
 
-Om du vill få en bättre bild av hur du kan flytta hela organisationen till produkterna och tjänsterna i Microsoft 365 för företag kan du studera [övergångsaffischen](../downloads/transition-org-to-m365.pdf).
+För att få en bättre bild av hur du flyttar hela organisationen till produkterna och tjänsterna i Microsoft 365 för företag kan du ladda ned och visa [över gången](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf).
 
-[![Bild på affischen för övergång till Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
+[![Bild på affischen för övergång till Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
 Med den här affischen på två sidor kan du snabbt inventera din befintliga infrastruktur och få vägledning i hur du flyttar till motsvarande produkt eller tjänst i Microsoft 365 för företag. Den innehåller Windows- och Office-produkter samt andra infrastruktur- och säkerhetselement, som exempelvis enhetshantering, identitet, information och skydd mot hot.
-
-Du kan också [ladda ner denna affisch](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/transition-org-to-m365.pdf) och skriva ut den i formaten Letter, Legal och Tabloid (11 x 17).
 
 ## <a name="how-microsoft-does-microsoft-365-for-enterprise"></a>Så här fungerar Microsoft 365 för företag
 

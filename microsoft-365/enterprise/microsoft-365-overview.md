@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Ger en introduktion till komponenterna, planer och distributionssökvägar för Microsoft 365 för företag.
-ms.openlocfilehash: d34ddd9b577f4baff4ebb77f84f48bf2b779c93c
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 0cee9752ae21e08831b6a3df856452a7ca6aec71
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487158"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655977"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Översikt över Microsoft 365 för företag
 
@@ -75,13 +75,11 @@ Du kan också [ladda ned en kopia av affischen](https://github.com/MicrosoftDocs
 
 ## <a name="transition-your-entire-organization"></a>En övergång för hela organisationen
 
-Om du vill få en bättre bild av hur du kan flytta hela organisationen till produkterna och tjänsterna i Microsoft 365 för företag kan du studera [övergångsaffischen](../downloads/transition-org-to-m365.pdf).
+Om du vill få en bättre bild av hur du kan flytta hela organisationen till produkterna och tjänsterna i Microsoft 365 för företag kan du studera [övergångsaffischen](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf).
 
-[![Bild på affischen för övergång till Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
+[![Bild på affischen för övergång till Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
 Med den här affischen på två sidor kan du snabbt inventera din befintliga infrastruktur. Det hjälper dig att hitta vägledning och att gå till motsvarande produkt eller tjänst i Microsoft 365 för företag. Den innehåller Windows- och Office-produkter samt andra infrastruktur- och säkerhetselement, som exempelvis enhetshantering, identitet, information och skydd mot hot.
-
-Du kan också [ladda ner denna affisch](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/transition-org-to-m365.pdf) och skriva ut den i formaten Letter, Legal och tabloid (11 x 17).
 
 ## <a name="end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Windows 7 support och Office 2010-klienter och -servrar upphör
 

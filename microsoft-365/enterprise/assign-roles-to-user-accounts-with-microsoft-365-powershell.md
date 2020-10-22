@@ -19,22 +19,22 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: I den här artikeln lär du dig hur snabbt och enkelt kan använda PowerShell för Microsoft 365 för att tilldela roller till användar konton.
-ms.openlocfilehash: 9df1b018cf3e89e0afbd5265fdd1ec9f92b34aec
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+description: I den här artikeln lär du dig hur snabbt och enkelt använder PowerShell för Microsoft 365 för att tilldela administratörs roller till användar konton.
+ms.openlocfilehash: 1486c86172cd34e6e88f8cd02d003967518bcdb7
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235436"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655953"
 ---
-# <a name="assign-roles-to-microsoft-365-user-accounts-with-powershell"></a>Tilldela roller till Microsoft 365-användarkonton med PowerShell
+# <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>Tilldela administratörs roller till Microsoft 365-användarkonton med PowerShell
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Du kan snabbt och enkelt tilldela roller till användar konton med PowerShell för Microsoft 365.
+Du kan snabbt och enkelt tilldela administratörs roller till användar konton med PowerShell för Microsoft 365.
 
 >[!Note]
->[Lär dig hur du tilldelar roller till användar konton](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) med administrations centret för Microsoft 365. En lista över ytterligare resurser finns i [Hantera användare och grupper](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+>[Lär dig hur du tilldelar administratörs roller till användar konton](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) med Microsoft 365 Admin Center. En lista över ytterligare resurser finns i [Hantera användare och grupper](https://docs.microsoft.com/microsoft-365/admin/add-users/).
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för diagramvyn
@@ -43,7 +43,7 @@ Först [ansluter du till din Microsoft 365-klient](connect-to-microsoft-365-powe
   
 Därefter bestämmer du inloggnings namnet för det användar konto som du vill lägga till i en roll (till exempel: fredsm@contoso.com). Detta kallas även användarens huvud namn (UPN).
 
-Därefter bestämmer du namnet på rollen. Använd den här [listan över behörigheter för administratörs roller i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+Därefter bestämmer du namnet på administratörs rollen. Använd den här [listan över behörigheter för administratörs roller i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 >[!Note]
 >Var uppmärksam på anteckningarna i den här artikeln. Vissa rollnamn är olika för Azure AD PowerShell. Rollen "SharePoint-administratör" i administrations centret för Microsoft 365 heter till exempel "SharePoint service Administrator" för Azure AD PowerShell.
@@ -53,7 +53,7 @@ Fyll i inloggnings-och rollnamn och kör dessa kommandon.
   
 ```powershell
 $userName="<sign-in name of the account>"
-$roleName="<role name>"
+$roleName="<admin role name>"
 $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 if ($role -eq $null) {
 $roleTemplate = Get-AzureADDirectoryRoleTemplate | Where {$_.displayName -eq $roleName}
@@ -63,7 +63,7 @@ $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-Här är ett exempel på en färdigställd kommando uppsättning som tilldelar rollen som administratör för SharePoint-belindan@contoso.com till kontot konto:
+Här är ett exempel på en färdigställd kommando uppsättning som tilldelar administratören för administratör för SharePoint-belindan@contoso.com till kontot.
   
 ```powershell
 $userName="belindan@contoso.com"
@@ -77,7 +77,7 @@ $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-Använd dessa kommandon för att visa listan över användar namn för en viss roll.
+Använd dessa kommandon för att visa listan över användar namn för en viss administratörs roll.
 
 ```powershell
 $roleName="<role name>"
@@ -118,17 +118,17 @@ Om du använder för att arbeta med användar kontonas visnings namn bestämmer 
     
 - Den roll du vill tilldela.
     
-    Använd det här kommandot för att visa listan över tillgängliga roller som du kan tilldela till användar konton:
+    Använd det här kommandot för att visa listan över tillgängliga administratörs roller som du kan tilldela till användar konton:
     
   ```powershell
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-När du har bestämt visnings namnet på kontot och namnet på rollen använder du dessa kommandon för att tilldela rollen till kontot:
+När du har bestämt visnings namnet på kontot och namnet på administratörs rollen använder du dessa kommandon för att tilldela rollen till kontot:
   
 ```powershell
 $dispName="<The Display Name of the account>"
-$roleName="<The role name you want to assign to the account>"
+$roleName="<The admin role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
