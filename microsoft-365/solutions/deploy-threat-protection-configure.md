@@ -14,12 +14,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 5183e6f60d825ff523db4da165d16752b3aa3cc8
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 7699b31052ecc1bda33630fcf97e9d43875f4ae3
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399355"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681596"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Konfigurera hot Protection-funktioner i Microsoft 365
 
@@ -194,5 +194,5 @@ Utöver den här vägledningen rekommenderar Microsoft att användarna vidtar å
 - Aktivera säkerhetsfunktioner på Windows 10-och Mac-datorer (för ohanterade enheter)
     
 Microsoft rekommenderar också att användare skyddar sina privata e-postkonton genom att vidta åtgärder som rekommenderas i följande artiklar:
-- [Skydda ditt Outlook.com-e-postkonto](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+- [Skydda ditt Outlook.com-e-postkonto](https://support.microsoft.com/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 - [Skydda ditt Gmail-konto med tvåstegsverifiering](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)

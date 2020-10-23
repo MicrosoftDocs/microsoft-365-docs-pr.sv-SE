@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om de anti-nätfiske-principer som är tillgängliga i Exchange Online Protection (EOP) och Office 365 Avancerat skydd (Office 365 ATP).
-ms.openlocfilehash: 1aeff889f5ced6429e7721518527e6f6725bb18b
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: f8e00c6162a40d6d81a0ef72f0ec655a4234a588
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399211"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681674"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-nätfiske-principer i Microsoft 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "48399211"
 
 Principer för att konfigurera inställningar för skydd mot nätfiske är tillgängliga i Microsoft 365-organisationer med Exchange Online-postlådor, fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor och Office 365 Avancerat skydd (Office 365 ATP)-organisationer.
 
-ATP anti-phishing-principer är bara tillgängliga i organisationer som har Office 365 ATP. Till exempel:
+ATP anti-phishing-principer är bara tillgängliga i organisationer som har Office 365 ATP. Ett exempel:
 
 - Microsoft 365 Enterprise, E5, Microsoft 365 Education A5, etc.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -164,6 +164,9 @@ Följande inställningar för personifiering är bara tillgängliga i principer 
   När du lägger till interna eller externa e-postadresser i listan **användare att skydda** lista, är meddelanden från dessa **avsändare** föremål för kontroll av integritets skydd. Meddelandet kontrol leras för personifiering **om** meddelandet skickas till en **mottagare** som policyn gäller för (alla mottagare för standard principen; **Tillämpas på** mottagare i anpassade principer). Om personifiering upptäcks i avsändarens e-postadress tillämpas åtgärdens skydds åtgärder för användare i meddelandet (vad du kan göra med meddelandet om du vill visa personifierade användares säkerhets tips osv.).
 
 - **Domäner att skydda**: förhindrar att de angivna domänerna personifieras **i meddelandets avsändares domän**. Till exempel alla domäner som du äger ([godkända domäner](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) eller specifika domäner (domäner som du äger eller partner domäner). Den här listan över **avsändare** som skyddas mot personifiering skiljer sig från listan över **mottagare** som principen gäller för (alla mottagare av standard principen, specifika mottagare **enligt inställningarna i avsnittet** [princip inställningar](#policy-settings) ).
+
+  > [!NOTE]
+  > Det maximala antalet skyddade domäner som du kan definiera i alla anti-nätfiske-principer är 50. Med andra ord kan du ha 50 skyddade domäner i en princip, 10 skyddade domäner i 5 principer osv.
 
   Som standard är inga avsändare konfigurerade för personifierings skydd i **domäner att skydda**. Därför täcks inte heller inga avsändare via personifiering, antingen i standard principen eller i anpassade principer.
 
