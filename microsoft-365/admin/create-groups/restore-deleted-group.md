@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Lär dig hur du återställer en borttagen Microsoft 365-grupp.
-ms.openlocfilehash: 8fb2cb3afdf390efae7854a040bb56df731cceaf
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 30e267a149bc18c2425d4ea38423b887116794c6
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307193"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681652"
 ---
 # <a name="restore-a-deleted-group"></a>Återställa en borttagen grupp
 
@@ -35,6 +35,9 @@ ms.locfileid: "47307193"
 > Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
+
+> [!NOTE]
+> I den här artikeln beskrivs hur du återställer bara Microsoft 365-grupper. Alla andra grupper kan inte återställas när de har tagits bort.
 
 Om du har tagit bort en grupp sparas den i 30 dagar som standard. Denna 30-dagars period anses vara "mjuk borttagning" eftersom du fortfarande kan återställa gruppen. Efter 30 dagar tas gruppen och dess tillhör ande innehåll bort permanent och kan inte återställas.
 
