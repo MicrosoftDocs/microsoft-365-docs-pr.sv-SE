@@ -20,20 +20,20 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48642262"
 ---
-# <a name="contact-support-for-heard-island-and-mcdonald-islands"></a><span data-ttu-id="d6899-103">Kontakta supporten för Heard-och McDonaldöarna</span><span class="sxs-lookup"><span data-stu-id="d6899-103">Contact support for Heard Island and McDonald Islands</span></span>
+# <a name="contact-support-for-heard-island-and-mcdonald-islands"></a><span data-ttu-id="64254-103">Kontakta supporten för Heard-och McDonaldöarna</span><span class="sxs-lookup"><span data-stu-id="64254-103">Contact support for Heard Island and McDonald Islands</span></span>
 
-<span data-ttu-id="d6899-104">[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="d6899-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="64254-104">[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="64254-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="d6899-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="d6899-105">Phone number</span></span>
-<span data-ttu-id="d6899-106">+ 1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="d6899-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="64254-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="64254-105">Phone number</span></span>
+<span data-ttu-id="64254-106">+ 1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="64254-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="d6899-107">Tider</span><span class="sxs-lookup"><span data-stu-id="d6899-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="d6899-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="d6899-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="64254-107">Tider</span><span class="sxs-lookup"><span data-stu-id="64254-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="64254-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="64254-108">Billing Support:</span></span>
 
-<span data-ttu-id="d6899-109">Engelska: Mon-Fri 09.00 – 17.00</span><span class="sxs-lookup"><span data-stu-id="d6899-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="64254-109">Engelska: Mon-Fri 09.00 – 17.00</span><span class="sxs-lookup"><span data-stu-id="64254-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="d6899-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="d6899-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="64254-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="64254-110">Technical Support:</span></span>
 
-<span data-ttu-id="d6899-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="d6899-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="64254-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="64254-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="d6899-112">Internationella samtals avgifter gäller</span><span class="sxs-lookup"><span data-stu-id="d6899-112">International call charges apply</span></span>
+<span data-ttu-id="64254-112">Internationella samtals avgifter gäller</span><span class="sxs-lookup"><span data-stu-id="64254-112">International call charges apply</span></span>

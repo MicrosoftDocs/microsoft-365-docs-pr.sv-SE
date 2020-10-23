@@ -20,24 +20,24 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48642917"
 ---
-# <a name="contact-support-for-equatorial-guinea"></a><span data-ttu-id="d5db0-103">Kontakta supporten för Ekvatorialguinea</span><span class="sxs-lookup"><span data-stu-id="d5db0-103">Contact support for Equatorial Guinea</span></span>
+# <a name="contact-support-for-equatorial-guinea"></a><span data-ttu-id="0e7fc-103">Kontakta supporten för Ekvatorialguinea</span><span class="sxs-lookup"><span data-stu-id="0e7fc-103">Contact support for Equatorial Guinea</span></span>
 
-<span data-ttu-id="d5db0-104">[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="d5db0-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="0e7fc-104">[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="0e7fc-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="d5db0-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="d5db0-105">Phone number</span></span>
-<span data-ttu-id="d5db0-106">+ 1 312 843 5144</span><span class="sxs-lookup"><span data-stu-id="d5db0-106">+1 312 843 5144</span></span>
+## <a name="phone-number"></a><span data-ttu-id="0e7fc-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="0e7fc-105">Phone number</span></span>
+<span data-ttu-id="0e7fc-106">+ 1 312 843 5144</span><span class="sxs-lookup"><span data-stu-id="0e7fc-106">+1 312 843 5144</span></span>
 
-## <a name="hours"></a><span data-ttu-id="d5db0-107">Tider</span><span class="sxs-lookup"><span data-stu-id="d5db0-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="d5db0-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="d5db0-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="0e7fc-107">Tider</span><span class="sxs-lookup"><span data-stu-id="0e7fc-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="0e7fc-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="0e7fc-108">Billing Support:</span></span>
 
-<span data-ttu-id="d5db0-109">Spanska: Mon-Fri 09.00 – 17.00</span><span class="sxs-lookup"><span data-stu-id="d5db0-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="0e7fc-109">Spanska: Mon-Fri 09.00 – 17.00</span><span class="sxs-lookup"><span data-stu-id="0e7fc-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="d5db0-110">Engelska: Mon-Fri 09.00 – 17.00</span><span class="sxs-lookup"><span data-stu-id="d5db0-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="0e7fc-110">Engelska: Mon-Fri 09.00 – 17.00</span><span class="sxs-lookup"><span data-stu-id="0e7fc-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="d5db0-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="d5db0-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="0e7fc-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="0e7fc-111">Technical Support:</span></span>
 
-<span data-ttu-id="d5db0-112">Spanska: Mon-Fri 8 AM – 9,5</span><span class="sxs-lookup"><span data-stu-id="d5db0-112">Spanish: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="0e7fc-112">Spanska: Mon-Fri 8 AM – 9,5</span><span class="sxs-lookup"><span data-stu-id="0e7fc-112">Spanish: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="d5db0-113">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="d5db0-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="0e7fc-113">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="0e7fc-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="d5db0-114">Internationella samtals avgifter gäller</span><span class="sxs-lookup"><span data-stu-id="d5db0-114">International call charges apply</span></span>
+<span data-ttu-id="0e7fc-114">Internationella samtals avgifter gäller</span><span class="sxs-lookup"><span data-stu-id="0e7fc-114">International call charges apply</span></span>
