@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå nätverks infrastrukturen contoso och hur företaget använder sin SD-WAN-teknik för optimal nätverks prestanda till Microsoft 365 för företags moln tjänster.
-ms.openlocfilehash: ca673e6dcbf0f3db4bde33d388598e5f4ffac914
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d5f3581b81d33bdc200321692b82d57a96d09298
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637193"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754020"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Nätverk för Contoso Corporation
 
@@ -117,7 +116,7 @@ Om du har godkänt Microsoft 365 för företags tjänster av Skype-användare be
 
 ## <a name="next-step"></a>Nästa steg
 
-[Läs om](contoso-identity.md) hur Contoso drar nytta av sina lokala Active Directory-domäntjänster i molnet för sina medarbetare och federerar autentisering för kunder och affärspartner.
+Lär dig hur Contoso använder [sin lokala Active Directory Domain Services i molnet](contoso-identity.md) för anställda och federering för kunder och affärs partners.
 
 ## <a name="see-also"></a>Se även
 

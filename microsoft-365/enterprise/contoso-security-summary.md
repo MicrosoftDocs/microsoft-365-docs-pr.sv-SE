@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Hur Contoso använder säkerhetsfunktionerna i Microsoft 365 för företag.
-ms.openlocfilehash: 635336b70318acdd4ed013a2705691d160926e84
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d84b1423497a6a4358142902c4e159cc54b3500b
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649707"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754238"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Sammanfattning av Microsoft 365 för företags säkerhet för Contoso Corporation
 
@@ -40,7 +40,7 @@ Contoso följer de här stegen för att förbereda sin säkerhet för distributi
 
 1. Begränsa administratörs konton för molnet
 
-   Contoso gjorde en omfattande recension av sina befintliga Active Directory Domain Services (AD DS)-administratörs konton och konfigurera en serie med dedikerade moln administratörs konton och grupper.
+   Contoso gjorde en omfattande recension av sina befintliga Active Directory Domain Services (AD DS)-administratörs konton och har konfigurerat en serie med dedikerade moln administratörs konton och grupper.
 
 2. Klassificera data i tre säkerhets nivåer
 

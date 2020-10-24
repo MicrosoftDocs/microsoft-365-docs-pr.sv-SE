@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: e518f91b264680e3d356b1e6158f4b9740ed52a2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d2973bd3cc2da909d7129192f2b9f9a29226de34
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196101"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754498"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Bästa poängen vid bransch test
 
@@ -50,13 +50,15 @@ Microsoft Defender Antivirus är [Nästa generations skydds](https://www.youtube
 
 ### <a name="av-test-protection-score-of-6060-in-the-latest-test"></a>AV-TEST: skydds poängen för 6.0/6.0 i det senaste testet
 
-Test av produkt granskning och certifierings rapporter i tre kategorier: skydd, prestanda och användbarhet. Följande Poäng är till skydds kategorin med två Poäng: testning av Real-världen och AV-TEST-referens uppsättningen (kallas vanliga skadliga program).
+Test av produkt granskning och certifierings rapporter i tre kategorier: skydd, prestanda och användbarhet. Följande Poäng är för skydds kategorin med två Poäng: Real-World testning och referens uppsättning AV AV-TEST (kallas vanliga malware).
 
-**Ladda ned den senaste genomskinlighets rapporten: [Granska av-test resultat, januari-2020 februari](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)**
+**Ladda ned den senaste genomskinlighets rapporten: [Granska av-test resultat January-February 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)**
 
-- Maj — företags användarens juni 2020 AV-TEST: [skydds Poäng 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/) <sup>**senaste**</sup>
+- Juli – test AV företags användare i augusti 2020: [skydds Poäng 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2020/microsoft-defender-antivirus-4.18-203215/) <sup>**senaste**</sup>
 
-    Microsoft Defender Antivirus har uppnått ett perfekt skydd för 6.0/6.0 med 100% i maj och juni. 22 190 program mot skadlig kod användes.
+    Microsoft Defender Antivirus har uppnått ett perfekt skydd av 6.0/6.0 med 100% i juli och augusti. 13 941 program mot skadlig kod användes.
+
+- Maj – företags användarens juni 2020 AV-TEST: [skydds Poäng 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/)
 
 - Mars-april 2020 AV-TEST Business User test: [skydds Poäng 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)
 
@@ -68,19 +70,15 @@ Test av produkt granskning och certifierings rapporter i tre kategorier: skydd, 
 
 - Juli – test av företags användare i augusti 2019: [skydds Poäng 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2019/microsoft-windows-defender-antivirus-4.18-193215/)  |  [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
 
-- Maj [: företags](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2019/microsoft-windows-defender-antivirus-4.18-192415/)användare test för 2019 juni-test  |  [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
-
 ### <a name="av-comparatives-protection-rating-of-997-in-the-latest-test"></a>AV-jämförelser: skydds betyg för 99,7% i det senaste testet
 
-Säkerhets test för företag består av tre huvud delar: det riktiga skydds testet som imiterar attacker mot skadlig program vara, test av skadlig program vara där den skadliga program varan kommer från en annan dator utanför Internet (till exempel USB) och prestandatest som påverkar påverkan på systemets prestanda.
+Säkerhets test för företag består av tre huvud delar: Real-World skydd test som imiterar attacker mot skadlig program vara, test av skadlig program vara där den skadliga program varan kommer från en annan dator utanför Internet (till exempel USB) och prestandatest som påverkar påverkan på systemets prestanda.
 
 - Business Security test 2020 (mars – juni): [verklig skydds taxa 99,7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/) <sup>**senaste**</sup>
 
-    Microsoft Defender Antivirus har lyckats med alla priser i verkligheten under det föregående året med 99,7% i det senaste testet.
+    Microsoft Defender Antivirus har lyckats med höga Real-World skydds avgifter under det gångna året, med 99,7% i det senaste testet.
 
 - Business Security test 2019 (augusti – november): [verklig skydds skatt 99,6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
-
-- Business Security test 2019 FACTSHEET (augusti – september): [verklig skydds skatt 99,9%](https://www.av-comparatives.org/tests/business-security-test-august-september-2019-factsheet/)  |  [analys](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
 
 - Business Security test 2019 (mars – juni): [verklig skydds skatt 99,9%](https://www.av-comparatives.org/tests/business-security-test-2019-march-june/)  |  [analys](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
@@ -88,11 +86,13 @@ Säkerhets test för företag består av tre huvud delar: det riktiga skydds tes
 
 SE-labb testar en rad lösningar som används av produkter och tjänster för att upptäcka och/eller skydda mot attacker. Det inkluderar slut punkts program, nätverks apparater och moln tjänster.
 
-**Ladda ned den senaste genomskinlighets rapporten: [undersöker se test resultat för Labs, januari 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)**
+**Ladda ned den senaste genomskinlighets rapporten: [undersöker se test resultat för Labs January-March 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)**
+
+- Enterprise Endpoint Protection juli – september 2020: [AAA Award](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/) <sup>**senaste**</sup>
+
+    Microsofts nästa generations skydds produkt har stoppat alla riktade attacker men missade en fåtal av offentliga hot.
 
 - Enterprise Endpoint Protection april – juni 2020: [AAA Award](https://selabs.uk/reports/epp-ent-20q2-security-testing/)
-
-    Microsofts nästa generations skydd hette en av de ledande produkterna, vilket skyddar mot alla offentliga och riktade attacker. Microsoft Defender Antivirus har uppnått ett bra resultat och kan blockera skadlig URL-adresser, hantera utnyttjanden och korrekt klassificera legitima program och webbplatser.
 
 - Enterprise Endpoint Protection januari — mars 2020: [AAA Award](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) av <sup>**PDF-**</sup>  |  [analys](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
 
@@ -100,9 +100,6 @@ SE-labb testar en rad lösningar som används av produkter och tjänster för at
 
 - Enterprise Endpoint Protection juli – september 2019: [AAA Award](https://selabs.uk/download/enterprise/epp/2019/jul-sep-2019-enterprise.pdf) för <sup>**PDF-**</sup>  |  [analys](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
 
-- Enterprise Endpoint Protection april – juni 2019: [AAA Award](https://selabs.uk/download/enterprise/epp/2019/apr-jun-2019-enterprise.pdf) av <sup>**PDF-**</sup>  |  [analys](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
-
-- Enterprise Endpoint Protection januari — mars 2019: [AAA Award](https://selabs.uk/download/enterprise/epp/2019/jan-mar-2019-enterprise.pdf) av <sup>**PDF-**</sup>  |  [analys](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
 ## <a name="endpoint-detection--response"></a>Slut punkts identifiering &
 

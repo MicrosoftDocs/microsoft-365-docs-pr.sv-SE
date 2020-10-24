@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå hur Contoso använder funktionerna för informations skydd i Microsoft 365 för företag för att skydda sina digitala till gångar i molnet.
-ms.openlocfilehash: 51740db9a0bb2e770e959fe8d9dcde15c042f5b8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a1aa08a20d284d3a003f4a406c37f2107ce19bd1
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637241"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754611"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Informationsskydd för Contoso Corporation
 
@@ -54,7 +54,7 @@ Contoso Följ de här stegen för att förbereda Microsoft 365 för företag eft
 
 1. Identifiera vilken information som ska skyddas
 
-   Contoso gjorde en omfattande recension av sina befintliga digitala till gångar på lokala SharePoint-webbplatser och fildelning och klassificerade varje resurs.
+   Contoso gjorde en omfattande recension av sina befintliga digitala till gångar på lokala SharePoint-webbplatser och fildelning och klassificerade varje gång.
 
 2. Bestämma åtkomst, bevarande och informations skydds principer för data nivåer
 
@@ -113,7 +113,7 @@ Här är den resulterande contoso-säkerhetskonfigurationen.
 
 ## <a name="next-step"></a>Nästa steg
 
-[Se](contoso-security-summary.md) hur Contoso använder säkerhetsfunktionerna i Microsoft 365 för företag för identitets-och åtkomst hantering, Hot skydd, informations skydd och säkerhets hantering.
+Lär dig hur Contoso använder [säkerhetsfunktionerna i Microsoft 365 för företag](contoso-security-summary.md) för identitets-och åtkomst hantering, Hot skydd, informations skydd och säkerhets hantering.
 
 ## <a name="see-also"></a>Se även
 

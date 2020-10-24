@@ -16,28 +16,25 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 'Sammanfattning: Använd PowerShell för Microsoft 365 för att skapa rapporter som inte kan visas i administrations centret för Microsoft 365.'
-ms.openlocfilehash: 99aa86b1b58b15c63803e1b71d071cbde5c38492
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 10000f62b1d6a747cf0373623c6038b080666e1a
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694644"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753984"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>Använda PowerShell för att skapa rapporter för Microsoft 365
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Det finns många olika rapporter i administrations centret för Microsoft 365. Rapporterna ger emellertid bara så mycket information och ibland behövs det. Det är när du behöver PowerShell för Microsoft 365
+Många olika rapporter är tillgängliga i administrations centret för Microsoft 365. Men dessa rapporter ger bara så mycket information och ibland behövs det. Det är när du behöver PowerShell för Microsoft 365.
   
-I de här artiklarna beskrivs hur du använder PowerShell för Microsoft 365 för att få information från din Microsoft 365-klient organisation:
+I de här artiklarna beskrivs hur du använder PowerShell för Microsoft 365 för att hämta information från din Microsoft 365-klient organisation:
   
 - Komma igång med rapportering med PowerShell för Microsoft 365:
     
-  - [PowerShell för Microsoft 365 kan visa ytterligare information som inte kan visas i administrations centret](https://technet.microsoft.com/library/dn568034.aspx#reveal)
+  - [Därför måste du använda PowerShell för Microsoft 365](https://technet.microsoft.com/library/dn568034.aspx#reveal)
     
-  - [PowerShell för Microsoft 365 är ett bra sätt att filtrera data](https://technet.microsoft.com/library/dn568034.aspx#filter)
-    
-  - [Med PowerShell för Microsoft 365 blir det enkelt att skriva ut eller spara data](https://technet.microsoft.com/library/dn568034.aspx#printsave)
     
 - Rapporter för användar konton och licenser:
     
@@ -53,21 +50,20 @@ I de här artiklarna beskrivs hur du använder PowerShell för Microsoft 365 fö
     
   - [Komma igång med SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
     
-  - [Hantera webbplats grupper för SharePoint Online med PowerShell](https://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
+  - [Get-SPOSiteGroup – hämtar alla grupper på en viss webbplats samling](https://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
     
 - Rapporter för Exchange Online:
     
-  - [Visa information om Exchange Online-postlådor med PowerShell](https://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)
+  - [Använd Exchange Online PowerShell för att visa post lådan](https://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)
     
-  - [Visa Exchange Online-rapporter med PowerShell](https://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
     
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-articlesl"></a>Relaterade artiklar
 
 [Hantera Microsoft 365 med PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Komma igång med PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Börja använda PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
   
-[Hantera SharePoint Online med PowerShell](manage-sharepoint-online-with-microsoft-365-powershell.md)
+[Hantera SharePoint med PowerShell](manage-sharepoint-online-with-microsoft-365-powershell.md)
   
 [Hantera Microsoft 365-användarkonton,-licenser och-grupper med PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

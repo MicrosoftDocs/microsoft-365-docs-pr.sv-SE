@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå hur Contoso använder Microsoft Endpoint Configuration Manager för att distribuera på plats-uppgraderingar av Windows 10 Enterprise.
-ms.openlocfilehash: a100eb07408053fd270c26f388265696549fff9f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0543f24665048d0679bc1b099fdd0a2d431c1e54
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686424"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754257"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Windows 10 Enterprise-driftsättning för Contoso
 
@@ -55,15 +54,7 @@ Contoso har en befintlig infrastruktur för Configuration Manager (Current Branc
 
 ## <a name="planning-process"></a>Planeringsprocessen
 
-Före distributionen definierade Contoso följande ringar:
-
-- Tre ringar för mellanlagring av verifiering och distribution 
-  - En för förhandsversioner 
-  - En för nya versioner
-  - En för tidigare versioner 
-- En enda ring för bred distribution av Windows 10 Enterprise baserat på data från verifieringsringarna
-
-Contoso använde även uppgraderingsberedskap för Windows Analytics för att avgöra vilka appar som är installerade och deras kompatibilitet med Windows 10 Enterprise.
+Contoso använde uppgraderings beredskap i Windows Analytics för att fastställa uppsättningen installerade appar och deras kompatibilitet med Windows 10 Enterprise.
 
 ## <a name="deployment-process"></a>Distributionsprocess
 
@@ -71,11 +62,11 @@ För att slutföra distributionen av på plats-uppgradering av Windows 10 Enterp
 
 1. Aktiverad peer-cachelagring för Configuration Manager.
 2. Anpassade Windows-paket som skapats utifrån avbildningarna från Volume Licensing Service Center.
-3. Använde Configuration Manager för distribution av Windows-paket till distributionsplatser via nätverket och distribuerade versioner till de tre ringar för mellanlagring av verifiering och distribution.
+3. Använde Configuration Manager för att distribuera Windows-paketen till distributions platser via nätverket och distribuerade versioner till de tre mellanliggande validerings-och distributions grupperna.
 4. Genomförde bedömning av framgång för datorer och enheter i de tre ringarna för mellanlagring av verifiering och distribution med hjälp av enhetshälsotillstånd och lösningar för uppdateringsefterlevnad för Windows Analytics.
-5. Baserat på Windows Analytics-information fastställde Contoso versionen av Windows 10 Enterprise för distribution till den breda distributionsringen.
-6. Körde Configuration Manager-aktivitetssekvenser för distribution för att distribuera det valda Windows-paketet till den breda distributionsringen.
-7. Övervakade datorer och enheter i den breda distributionsringen som använder lösningar för enhetens hälsotillstånd och uppdateringsefterlevnad för att lösa problem.
+5. Baserat på Windows Analytics-informationen fastställde contoso vilken version av Windows 10 Enterprise som ska distribueras till hela distributions gruppen.
+6. Körde Configuration Manager-aktivitetssekvensdistributioner för distribution av det valda Windows-paketet till den breda distributions gruppen.
+7. Övervakade datorer och enheter i gruppen omfattande distributioner med hjälp av enhetens hälso-och uppdaterings lösningar för att åtgärda problem.
 
 Det här är Contosos på plats-uppgradering och pågående uppdateringars distributionsarkitektur.
 
@@ -87,11 +78,11 @@ Infrastrukturen består av:
   - Hämtar avbildningar av Windows 10 Enterprise-paket från Microsoft Volume Licensing Center i Microsoft-nätverket.
   - Är den centrala administrationsplatsen för distributionspaket.
 - Regionala distributionsplatser som vanligtvis finns i Contosos regionala navkontor.
-- Windows-datorer och -enheter på olika platser som tar emot och installerar distributionspaket för på plats-uppgraderingar eller pågående uppdateringar baserat på ringtillhörighet.
+- Windows-datorer och enheter på olika platser som tar emot och installerar distributions paket för uppgradering på plats eller fort löp ande uppdateringar baserat på grupp medlemskap.
 
 ## <a name="next-step"></a>Nästa steg
 
-[Läs mer](contoso-o365pp.md) om hur Contoso använder sin Configuration Manager-infrastruktur till att distribuera och hålla Microsoft 365 Apps uppdaterat i organisationen. 
+Lär dig hur contoso utnyttjar sin Configuration Manager-infrastruktur för att [distribuera och hålla nuvarande Microsoft 365-appar för företag](contoso-o365pp.md) i hela organisationen. 
 
 ## <a name="see-also"></a>Se även
 

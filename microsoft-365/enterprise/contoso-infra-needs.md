@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå den grundläggande strukturen i den lokala IT-infrastrukturen för Contoso och hur företagets företags behov uppfylls av Microsoft 365 för företag.
-ms.openlocfilehash: bc2b34254da01a3d49085082ab8ee8632df2d434
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 767374097efa116f116cff6f6ddf96d075eb71ed
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637181"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754592"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Skype IT-infrastruktur och företags behov
 
@@ -30,12 +29,10 @@ Contoso övergår från en lokal, centraliserad IT-infrastruktur till en molnbas
 
 Contoso använder främst centraliserad IT-infrastruktur med datacenter i huvudkontoret i Paris.
 
-Bild 1 visar huvud kontoret med program Data Center, en DMZ och Internet.
+Här är huvud kontoret för program Data Center, en DMZ och Internet.
 
 ![Befintlig infrastruktur för Contoso-IT](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
-**Bild 1: befintlig contoso IT-infrastruktur**
- 
 Det lokala programdatacentret är värd för: 
 
 - Anpassade affärs program som använder SQL Server och andra Linux-databaser.
@@ -135,12 +132,12 @@ Contosos IT-avdelning har fastställt följande mappning av företags behov till
 | Efterlevnad |  |  |
 |  | Följa regionala efterlevnadskrav | GDPR funktioner i Microsoft 365 |
 | Hantering |  |  |
-|  | Minska IT-omkostnader för installation av klient uppdateringar | Distributionsringar <BR> Windows 10 Enterprise-uppdateringar <BR> Microsoft 365-applikationer för företag uppdateringar |
+|  | Minska IT-omkostnader för installation av klient uppdateringar | Windows 10 Enterprise-uppdateringar <BR> Microsoft 365-applikationer för företag uppdateringar |
 ||||
 
 ## <a name="next-step"></a>Nästa steg
 
-[Lär dig mer](contoso-networking.md) om det lokala nätverket Contoso Corporation och hur det optimerades för åtkomst och svars tider till Microsoft 365-molnbaserade resurser.
+Lär dig mer om det [lokala nätverket](contoso-networking.md) Contoso Corporation och hur det optimerades för åtkomst och svars tider till Microsoft 365-molnbaserade resurser.
 
 ## <a name="see-also"></a>Se även
 

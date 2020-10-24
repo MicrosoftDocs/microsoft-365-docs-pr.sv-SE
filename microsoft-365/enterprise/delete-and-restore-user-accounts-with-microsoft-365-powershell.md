@@ -19,20 +19,22 @@ ms.custom:
 - O365ITProTrain
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: I den här artikeln lär du dig hur du använder olika moduler i PowerShell för att ta bort Microsoft 365-användarkonton.
-ms.openlocfilehash: 0c13b57c13fb3d01d648438a5d6973fea8b9db67
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+description: Lär dig hur du använder olika moduler i PowerShell för att ta bort Microsoft 365-användarkonton.
+ms.openlocfilehash: 39bf57fe7e7aad1bdc9915e503107ad799515030
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235448"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754546"
 ---
 # <a name="delete-microsoft-365-user-accounts-with-powershell"></a>Ta bort Microsoft 365-användarkonton med PowerShell
 
-Du kan använda PowerShell för Microsoft 365 för att ta bort och återställa ett användar konto.
+Du kan använda PowerShell för Microsoft 365 för att ta bort och återställa användar konton.
 
 >[!Note]
->[Lär dig hur du återställer ett användar konto](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user) med administrations centret för Microsoft 365. En lista över ytterligare resurser finns i [Hantera användare och grupper](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+>Lär dig hur du [återställer ett användar konto](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user) med hjälp av administrations centret för Microsoft 365.
+>
+>En lista över ytterligare resurser finns i [Hantera användare och grupper](https://docs.microsoft.com/microsoft-365/admin/add-users/).
 >   
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för diagramvyn
@@ -45,14 +47,14 @@ När du har anslutit kan du använda följande syntax för att ta bort ett enski
 Remove-AzureADUser -ObjectID <sign-in name>
 ```
 
-Det här exemplet tar bort användar kontots fabricec@litwareinc.com.
+Det här exemplet tar bort användar kontot *fabricec \@ litwareinc.com*.
   
 ```powershell
 Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
 > [!NOTE]
-> Parametern **-ObjectID** i cmdleten **Remove-AzureADUser** accepterar antingen kontots inloggnings namn, kallas även för användarens huvud namn, eller kontots objekt-ID.
+> Parametern *-ObjectID* i cmdleten **Remove-AzureADUser** accepterar antingen kontots inloggnings namn, som även kallas användar huvud namnet eller kontots objekt-ID.
   
 Använd följande kommandon för att Visa konto namnet baserat på användarens namn:
   
@@ -61,7 +63,7 @@ $userName="<User name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-I det här exemplet visas konto namnet för den användare som heter Caleb brädor.
+I det här exemplet visas konto namnet för användaren *Caleb brädor*.
   
 ```powershell
 $userName="Caleb Sills"
@@ -77,7 +79,7 @@ Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userN
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Använda Microsoft Azure Active Directory-modulen för Windows PowerShell
 
-När du tar bort ett användar konto med Microsoft Azure Active Directory-modulen för Windows PowerShell tas kontot inte bort permanent. Du kan återställa det borttagna användar kontot inom 30 dagar.
+När du tar bort ett användar konto via Microsoft Azure Active Directory-modulen för Windows PowerShell, tas kontot inte bort permanent. Du kan återställa det borttagna användar kontot inom 30 dagar.
 
 Börja [med att ansluta till din Microsoft 365-klient organisation](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
@@ -88,10 +90,10 @@ Remove-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 >[!Note]
->PowerShell Core stöder inte Microsoft Azure Active Directory-modul för Windows PowerShell-modulen och-cmdlets med **MSOL** i namnet. Om du vill fortsätta använda dessa cmdlets måste du köra dem från Windows PowerShell.
+>PowerShell Core stöder inte Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen och cmdlets med *MSOL* . Kör dessa cmdletar från Windows PowerShell.
 >
 
-Det här exemplet tar bort användar kontots BelindaN@litwareinc.com.
+Det här exemplet tar bort användar kontots *BelindaN@litwareinc.com*.
   
 ```powershell
 Remove-MsolUser -UserPrincipalName belindan@litwareinc.com
@@ -103,21 +105,20 @@ Om du vill återställa ett borttaget användar konto inom 30 dagar kan du anvä
 Restore-MsolUser -UserPrincipalName <sign-in name>
 ```
 
-Det här exemplet återställer det borttagna kontot BelindaN@litwareinc.com.
+I det här exemplet återställs det borttagna kontot * \@ litwareinc.com*.
   
 ```powershell
 Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 ```
 
- **Kommentarer:**
-  
-- Om du vill visa listan med borttagna användare som kan återställas kör du följande kommando:
-    
-  ```powershell
-  Get-MsolUser -All -ReturnDeletedUsers
-  ```
-
-- Om användar kontots ursprungliga användar namn används av ett annat konto kan du använda parametern _NewUserPrincipalName_ i stället för _userPrincipalName_ för att ange ett annat huvud namn när du återställer användar kontot.
+>[!Note]
+> Om du vill visa listan med borttagna användare som kan återställas kör du följande kommando:
+>    
+> ```powershell
+> Get-MsolUser -All -ReturnDeletedUsers
+> ```
+>
+> Om användar kontots ursprungliga användar namn används av ett annat konto kan du använda parametern _NewUserPrincipalName_ i stället för _userPrincipalName_ för att ange ett annat huvud namn när du återställer användar kontot.
 
 
 ## <a name="see-also"></a>Se även

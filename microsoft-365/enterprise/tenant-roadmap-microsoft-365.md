@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,27 +14,26 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: Översikten för konfiguration av klient organisationer för Microsoft 365.
-ms.openlocfilehash: db0f9552fce460ca6d25ee74ea2031bea388b8dc
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 038d9b0d94b84d184f0d9d9b250d0ee4d2c19de9
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656013"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753972"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Klient organisations översikt för Microsoft 365
 
-Din Microsoft 365-klient är den uppsättning tjänster som är tilldelade till din organisation. Den här innehavaren är normalt kopplad till ett eller flera av dina DNS-domännamn och fungerar som en central behållare för olika prenumerationer och de licenser som du tilldelar användar konton. Mer information finns i [prenumerationer, licenser, konton och innehavare för Microsofts moln tjänster](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
+Din Microsoft 365-klient är den uppsättning tjänster som är tilldelade till din organisation. Vanligt vis är denna klient organisation kopplad till ett eller flera av dina offentliga DNS-domännamn och fungerar som en central och isolerad behållare för olika prenumerationer och de licenser som du tilldelar användar konton. Mer information finns i [prenumerationer, licenser, konton och innehavare för Microsofts moln tjänster](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
 
 När du skapar en Microsoft 365-klient organisation tilldelar du den till en specifik geografisk plats. Du kan också ha en innehavare med flera geografiska platser och flytta klient organisationen från en plats till en annan.
 
-För att förbereda klient organisationen redo för identitet är det viktigt att noggrant planera och utföra konfigurationen av klient organisationen.
-
+För att förbereda klient organisationen för användare, grupper, licenser och Cloud-appar är det viktigt att noggrant planera och köra klient konfigurationen.
 
 ## <a name="set-up-your-microsoft-365-tenant"></a>Konfigurera din Microsoft 365-klient organisation
 
 När du har kontrollerat att nätverket är optimerat för åtkomst till Microsoft 365 för både lokala och fjärranställda, kan dina kommande stora uppgifter planera för och sedan konfigurera din Microsoft 365-klient för DNS Domain Names, common Services och för den identitets infrastrukturen som stöder säker inloggning.
 
-## <a name="plan"></a>Planera
+### <a name="plan"></a>Planera
 
 Så här planerar du för klient implementering:
 
@@ -46,7 +44,6 @@ Så här planerar du för klient implementering:
 - [Bestämma hur hybrid modern](hybrid-modern-auth-overview.md)
 - [Planera för Office 2007-och Office 2010-uppgraderingar](plan-upgrade-previous-versions-office.md)
 - [Förstå klient isolering](microsoft-365-tenant-isolation-overview.md)
-- [Få information om Microsoft 365-tjänsten](microsoft-365-administrative-access-controls-overview.md)
 
 ### <a name="deploy"></a>Distribuera
 
@@ -69,16 +66,15 @@ Med Microsoft 365 multi-geo kan din organisation utöka sin Microsoft 365-närva
 
 Mer information finns i [Microsoft 365 multi-geo](microsoft-365-multi-geo.md).
 
-## <a name="manage-multiple-microsoft-365-tenancies"></a>Hantera flera Microsoft 365-innehav 
+## <a name="manage-multiple-microsoft-365-tenant"></a>Hantera flera Microsoft 365-klient organisationer 
 
-Trots att en enda klient organisation för din oganization är idealisk kan du vara en av många organisationer som har flera innehavare. Anledningen till att flera innehavare kan inkludera fusioner och förvärv, du vill ha en administrativ isolering eller att du har ett avcentraliserat.
+Trots att en enda klient organisation för din oganization är idealisk kan du vara en av många organisationer som har flera innehavare. Det kan vara bra att inkludera fusioner och förvärv, du vill ha en administrativ isolering eller ett avcentraliserat.
 
-Om du har flera Microsoft 365-innehavare kan du läsa de här artiklarna om du vill ha mer information om:
+Om du har flera Microsoft 365-klient organisationer kan du läsa de här artiklarna om du vill ha mer information om:
 
 - [Samarbete mellan klientorganisationer](microsoft-365-inter-tenant-collaboration.md)
 - [Migrering av postlådor mellan klientorganisationer](cross-tenant-mailbox-migration.md)
 - [Migrering mellan klientorganisationer](microsoft-365-tenant-to-tenant-migrations.md)
-
 
 ## <a name="next-step"></a>Nästa steg
 

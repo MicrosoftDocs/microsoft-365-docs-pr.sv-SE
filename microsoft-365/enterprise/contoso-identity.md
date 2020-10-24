@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Hur Contoso använder sig av IDaaS (identitet som tjänst) och tillhandahåller molnbaserad autentisering för anställda och federerad autentisering för partner och kunder.
-ms.openlocfilehash: 10db0a35024595c4dba9a33ad83ae75bcad3870c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dea0f53ef1c3fdc2ea32256303c6120c614c904d
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637253"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754658"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>ID för Contoso Corporation
 
@@ -43,7 +42,7 @@ Med contoso kan:
 - Kunderna kan använda sina Microsoft-, Facebook-eller Google Mail-konton för att logga in på företagets offentliga webbplats.
 - Leverantörer och partners för att kunna använda sina LinkedIn-, Salesforce-eller Google Mail-konton för att logga in på företagets extra nät för partner.
 
-Här är contoso-DMZ som innehåller en offentlig webbplats, ett partner nät och en uppsättning AD FS-servrar. DMZ är ansluten till Internet som innehåller kunder, partners och Internet tjänster.
+Här är contoso-DMZ som innehåller en offentlig webbplats, ett extra nät för partner och en uppsättning AD FS-servrar (Active Directory Federation Services). DMZ är ansluten till Internet som innehåller kunder, partners och Internet tjänster.
 
 ![Contoso-support för extern inloggningsautentisering för kunder och partners](../media/contoso-identity/contoso-identity-fig2.png)
  
@@ -77,7 +76,7 @@ Här är den resulterande uppsättningen med principer för villkorsstyrd åtkom
  
 ## <a name="next-step"></a>Nästa steg
 
-[Lär dig](contoso-win10.md) hur Contoso använder sin Microsoft Endpoint Configuration Manager-infrastruktur för att distribuera och hålla nuvarande Windows 10-företag i sin organisation.
+Lär dig hur Contoso använder sin Microsoft Endpoint Configuration Manager-infrastruktur för att [distribuera och hålla nuvarande Windows 10-företag](contoso-win10.md) i sin organisation.
 
 ## <a name="see-also"></a>Snabbreferens
 

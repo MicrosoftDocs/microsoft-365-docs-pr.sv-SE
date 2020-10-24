@@ -1,5 +1,5 @@
 ---
-title: Komma igång med PowerShell för Microsoft 365
+title: Börja använda PowerShell för Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,19 +16,19 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
-description: 'Sammanfattning: förstå värdet för PowerShell för Microsoft 365, Anslut till din Microsoft 365-klient organisation och få hjälp.'
-ms.openlocfilehash: 3a57e5188dd4161442ee722a14c2546ef28ccb01
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+description: 'Sammanfattning: förstå värdet för PowerShell för Microsoft 365, hur du ansluter till din Microsoft 365-klient organisation och var du kan få hjälp.'
+ms.openlocfilehash: 850d3eea1aa23937bf30795784405119ef6c167c
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429980"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754462"
 ---
-# <a name="get-started-with-powershell-for-microsoft-365"></a>Komma igång med PowerShell för Microsoft 365
+# <a name="get-started-with-powershell-for-microsoft-365"></a>Börja använda PowerShell för Microsoft 365
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Du kan använda kommandon och skript i PowerShell för Microsoft 365 för att hantera Microsoft 365 och strömlinjeforma ditt dagliga arbete. Lär dig varför PowerShell för Microsoft 365 är viktigt för att hantera Microsoft 365, hur du ansluter till ditt Microsoft 365-abonnemang och skapar rapporter och var du kan få mer information och hjälp från Microsoft 365 Community.
+Du kan använda kommandon och skript i PowerShell för Microsoft 365 för att hantera Microsoft 365 och strömlinjeforma ditt dagliga arbete. Använd följande information för att ta reda på varför PowerShell för Microsoft 365 är viktigt för att hantera Microsoft 365, hur du ansluter till Microsoft 365-prenumerationen och skapar rapporter och var du kan få mer information från Microsoft 365 Community.
   
 Välj något av följande:
   
@@ -54,7 +54,7 @@ Välj något av följande:
     
 - [**Microsoft 365 Community-resurser för PowerShell**](microsoft-365-powershell-community-resources.md)
     
-    Börja här för att ansluta till PowerShell-gemenskapen och få hjälp eller mer information om hur du använder PowerShell för Microsoft 365.
+    Börja här för att ansluta till PowerShell-gemenskapen och få mer information om hur du använder PowerShell för Microsoft 365.
     
 ## <a name="related-topics"></a>Relaterade ämnen
 

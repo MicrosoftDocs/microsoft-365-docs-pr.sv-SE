@@ -18,19 +18,19 @@ ms.custom:
 - PowerShell
 - seo-marvel-apr2020
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: I den här artikeln förklarar vi hur du använder PowerShell till att blockera och avblockera åtkomst till Microsoft 365-konton.
-ms.openlocfilehash: a9ade2f41fb601da00ca1c2d1905ca0cb003dcb3
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Använda PowerShell för att blockera och avblockera åtkomst till Microsoft 365-konton.
+ms.openlocfilehash: c1a79d925965fafd796033182098e68e26a81473
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694561"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754686"
 ---
 # <a name="block-microsoft-365-user-accounts-with-powershell"></a>Blockera Microsoft 365-användarkonton med PowerShell
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Om du blockerar åtkomst till ett Microsoft 365-konto kan ingen använda kontot för att logga in och komma åt tjänsterna och informationen i din Microsoft 365-organisation. Du kan använda PowerShell för att blockera åtkomst till enskilda och flera användar konton.
+När du blockerar åtkomst till ett Microsoft 365-konto kan du hindra andra från att använda kontot för att logga in och komma åt tjänsterna och informationen i din Microsoft 365-organisation. Du kan använda PowerShell för att blockera åtkomst till enskilda eller flera användar konton.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för diagramvyn
 
@@ -45,9 +45,9 @@ Set-AzureADUser -ObjectID <sign-in name of the user account> -AccountEnabled $fa
 ```
 
 > [!NOTE]
-> Parametern-ObjectID i cmdleten Set-AzureAD accepterar antingen konto inloggnings namnet, även kallat användarens huvud namn, eller kontots objekt-ID. 
+> Parametern *-ObjectID* i cmdleten **set-AzureAD** accepterar antingen konto inloggnings namnet, även kallat användarens huvud namn, eller kontots objekt-ID.
   
-Det här exemplet blockerar åtkomst till användar kontots fabricec@litwareinc.com.
+Det här exemplet blockerar åtkomst till användar kontots *fabricec@litwareinc.com*.
   
 ```powershell
 Set-AzureADUser -ObjectID fabricec@litwareinc.com -AccountEnabled $false
@@ -67,7 +67,7 @@ Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipa
 
 ```
 
-I det här exemplet visas UPN för användar kontot för den användare som heter Caleb brädor.
+I det här exemplet visas UPN för användar kontot för användaren  *Caleb brädor*.
   
 ```powershell
 $userName="Caleb Sills"
@@ -82,15 +82,15 @@ Set-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName
 
 ```
 
-Du kan när som helst kontrol lera den spärrade statusen för ett användar konto med följande kommando:
+Använd följande kommando för att kontrol lera den spärrade statusen för ett användar konto:
   
 ```powershell
 Get-AzureADUser -UserPrincipalName <UPN of user account> | Select DisplayName,AccountEnabled
 ```
 
-### <a name="block-access-to-multiple-user-accounts"></a>Blockera åtkomst till flera användar konton
+### <a name="block-multiple-user-accounts"></a>Blockera flera användar konton
 
-Om du vill blockera åtkomst till flera användar konton skapar du en textfil som innehåller ett inloggnings namn för konto på varje rad, så här:
+Om du vill blockera åtkomst för flera användar konton skapar du en textfil som innehåller ett inloggnings namn för konto på varje rad, så här:
     
   ```powershell
 akol@contoso.com
@@ -98,7 +98,7 @@ tjohnston@contoso.com
 kakers@contoso.com
   ```
 
-I följande kommandon är exempel text filen C:\Mina Documents\Accounts.txt. Ersätt det med sökvägen och fil namnet för text filen.
+I följande kommandon är exempel text filen *c:\mina Documents\Accounts.txt*. Ersätt fil namnet med text filens sökväg och fil namn.
   
 Om du vill blockera åtkomst till kontona i text filen kör du följande kommando:
     
@@ -106,7 +106,7 @@ Om du vill blockera åtkomst till kontona i text filen kör du följande kommand
 Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $false }
 ```
 
-Om du vill häva blockeringen för kontona i text filen kör du följande kommando:
+Om du vill häva blockeringen för de konton som visas i text filen kör du följande kommando:
     
 ```powershell
 Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $true }
@@ -116,19 +116,18 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID
 
 Börja [med att ansluta till din Microsoft 365-klient organisation](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
     
-### <a name="block-access-to-individual-user-accounts"></a>Blockera åtkomst till enskilda användar konton
+### <a name="block-individual-user-accounts"></a>Blockera enskilda användar konton
 
-Använd följande syntax för att blockera åtkomst till ett enskilt användar konto:
+Använd följande syntax för att blockera åtkomst för ett enskilt användar konto:
   
 ```powershell
 Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential $true
 ```
 
 >[!Note]
->PowerShell Core stöder inte Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen och cmdlets med **MSOL** . För att kunna fortsätta använda dessa cmdletar måste du köra dem från Windows PowerShell.
->
+>PowerShell Core stöder inte Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen och cmdlets som har *MSOL* i sitt namn. Du måste köra de här cmdletarna från Windows PowerShell.
 
-Det här exemplet blockerar åtkomst till användar kontots fabricec@litwareinc.com.
+I det här exemplet blockeras åtkomst till användar kontot *fabricec \@ litwareinc.com*.
   
 ```powershell
 Set-MsolUser -UserPrincipalName fabricec@litwareinc.com -BlockCredential $true
@@ -140,13 +139,13 @@ Om du vill häva blockeringen för användar kontot kör du följande kommando:
 Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential $false
 ```
 
-Du kan när som helst kontrol lera den spärrade statusen för ett användar konto med följande kommando:
+Kör följande kommando för att kontrol lera den spärrade statusen för ett användar konto:
   
 ```powershell
 Get-MsolUser -UserPrincipalName <sign-in name of user account> | Select DisplayName,BlockCredential
 ```
 
-### <a name="block-access-to-multiple-user-accounts"></a>Blockera åtkomst till flera användar konton
+### <a name="block-access-for-multiple-user-accounts"></a>Blockera åtkomst för flera användar konton
 
 Börja med att skapa en textfil som innehåller ett konto på varje rad, så här:
     
@@ -156,9 +155,9 @@ tjohnston@contoso.com
 kakers@contoso.com
 ```
 
-I följande kommandon är exempel text filen C:\Mina Documents\Accounts.txt. Ersätt det med sökvägen och fil namnet för text filen.
+I följande kommandon är exempel text filen *c:\mina Documents\Accounts.txt*. Ersätt fil namnet med text filens sökväg och fil namn.
     
-Om du vill blockera åtkomst till kontona i text filen kör du följande kommando:
+Om du vill blockera åtkomst för de konton som visas i text filen kör du följande kommando:
     
   ```powershell
   Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUser -UserPrincipalName $_ -BlockCredential $true }
@@ -175,4 +174,4 @@ Om du vill häva blockeringen för kontona i text filen kör du följande komman
   
 [Hantera Microsoft 365 med PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Komma igång med PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Börja använda PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)

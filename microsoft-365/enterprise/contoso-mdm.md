@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå hur Contoso använder Microsoft Intune i Microsoft 365 för företag för att hantera dess enheter och programmen som körs på dem.
-ms.openlocfilehash: d3f973827a9b05a415efe9225a2bdb3d83ccaf38
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 6d7783e8c2d9b78b63bf9eefe761fbc52d0b280f
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649651"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754003"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Hantering av mobila enheter på Contoso
 
@@ -71,7 +70,7 @@ Här är distributions arkitekturen contoso Mobile Device Management.
 
 ## <a name="next-step"></a>Nästa steg
 
-[Lär dig](contoso-info-protect.md) hur Contoso använder informations skydds funktionerna i Microsoft 365 för företag för att klassificera, identifiera och skydda viktiga digitala till gångar i sin organisation.
+Lär dig hur Contoso använder [informations skydds funktionerna](contoso-info-protect.md) i Microsoft 365 för företag för att klassificera, identifiera och skydda viktiga digitala till gångar i sin organisation.
 
 ## <a name="see-also"></a>Se även
 

@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,14 +14,14 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Hur en fiktiv men representativ global organisation antog Microsoft 365 för företag.
-ms.openlocfilehash: 87dd725612ad3dfe422293b28d9643a50f9b1e05
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 980146a2a9c2a909d0b65c20e460841dce9fecee
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637229"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754674"
 ---
-# <a name="microsoft-365-for-enterprise-for-contoso-corporation"></a>Microsoft 365 för företag för Contoso Corporation
+# <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 för företag för Contoso Corporation
 
 Microsoft 365 för företag är Microsofts Premier-molntjänster som kombinerar lokala och molnbaserade produktivitets program och-tjänster med Windows 10 Enterprise och avancerade säkerhetsfunktioner. Det är en komplett, intelligent lösning som gör att alla kan samar beta och på ett säkert sätt.
 
@@ -36,7 +35,9 @@ Mer information finns i följande artiklar:
 
   Contoso är en global tillverknings-, försäljnings-och support organisation med mer än 100 000 produkter.
 
-- [Contoso IT-infrastruktur och behov](contoso-infra-needs.md) Contoso övergår från en lokal, centraliserad IT-infrastruktur till en molnbaserade konfiguration som innehåller molnbaserade privat arbets belastningar, program och hybrid scenarier
+- [Contosos IT-infrastruktur och behov](contoso-infra-needs.md)
+
+  Contoso övergår från en lokal, centraliserad IT-infrastruktur till en molnbaserade konfiguration som innehåller molnbaserade privat arbets belastningar, program och hybrid scenarier.
 
 - [Nätverk](contoso-networking.md)
 
@@ -48,11 +49,11 @@ Mer information finns i följande artiklar:
 
 - [Windows 10 Enterprise](contoso-win10.md)
 
-  Företags infrastrukturen för Contoso Windows 10 Enterprise distribuerar och installerar automatiskt uppdateringar för enheter som kör företagets primära dator-och enhets operativ system.
+  Contoso-infrastrukturen för företags distributioner i Windows 10 och installerar automatiskt uppdateringar för enheter som kör företagets primära dator och enhets operativ system.
 
 - [Microsoft 365 Apps för företag](contoso-o365pp.md)
 
-  Infrastrukturen för Contoso Microsoft 365-appar för företags distributioner och installerar automatiskt uppdateringar för Microsoft Office-sviten med produktivitets program.
+  Contosos infrastruktur för Microsoft 365-appar för företags distributioner och installerar automatiskt uppdateringar för Microsoft Office-sviten med produktivitets program.
 
 - [Hantering av mobila enheter](contoso-mdm.md)
 
@@ -76,7 +77,7 @@ Mer information finns i följande artiklar:
 
 ## <a name="next-step"></a>Nästa steg
 
-[Lär dig mer](contoso-overview.md) om Contoso Corporation och de design överväganden som har åtgärd ATS när de distribuerade Microsoft 365 för företag.
+Lär dig mer [om Contoso Corporation](contoso-overview.md) och de design överväganden som har åtgärd ATS när de distribuerade Microsoft 365 för företag.
 
 
 ## <a name="see-also"></a>Se även

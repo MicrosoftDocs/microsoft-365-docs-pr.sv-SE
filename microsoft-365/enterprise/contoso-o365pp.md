@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå hur Contoso använder Microsoft Endpoint Configuration Manager för att distribuera Microsoft 365-applikationer för företag.
-ms.openlocfilehash: 63993a27f23843fd2d75ef9bf08ae064ec46dc77
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2c02c28ddba7c24592ce09d87bf6f5c9df700a2a
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637169"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754354"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Microsoft 365-applikationer för företagsdistribution av Contoso
 
@@ -40,7 +39,7 @@ Baserat på deras krav väljer contoso att distribuera Windows 10 Enterprise och
 - Intelligent språk paket distribution, inklusive automatisk distribution av samma språk som operativ systemet.
 - En fullständigt och lättanvänd metod för att ta bort befintliga versioner av Office från en klient under distribution.
 
-Utöver Configuration Manager använde contoso [readiness Toolkit för Office-tillägget och VBA](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps)ett kostnads fritt verktyg från Microsoft för att utvärdera kompatibilitetsproblem med deras Office-makron och tillägg.
+Utöver Configuration Manager använde contoso [readiness Toolkit för Office-tillägg och VBA](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps), ett kostnads fritt verktyg från Microsoft, för att utvärdera kompatibilitetsproblem med deras Office-makron och-tillägg.
 
 ## <a name="managing-deployment-and-updates"></a>Hantera distribution och uppdateringar
 
@@ -79,7 +78,7 @@ Här är de contoso Microsoft 365-apparna för företags installation och pågå
  
 ## <a name="next-step"></a>Nästa steg
 
-[Lär dig](contoso-mdm.md) hur Contoso använder Microsoft Intune i Microsoft 365 för att hantera dess enheter och vilka program de kör i organisationen.
+Lär dig hur contoso [använder Microsoft Intune](contoso-mdm.md) i Microsoft 365 för att hantera dess enheter och vilka program de kör i organisationen.
 
 ## <a name="see-also"></a>Se även
 
