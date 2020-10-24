@@ -82,7 +82,7 @@
           href: services-in-china/apply-for-a-fapiao.md
         - name: Paritet för Azure Information Protection
           href: services-in-china/parity-between-azure-information-protection.md
-    - name: Hantera användare och grupper
+    - name: 'Hantera användare, grupper och lösenord'
       href: add-users/index.yml
       items:
         - name: Användare
@@ -109,14 +109,6 @@
               href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
             - name: Återställa en användare
               href: add-users/restore-user.md
-            - name: Återställ lösenord
-              href: add-users/reset-passwords.md
-            - name: Konfigurera lösenord med obegränsad giltighetstid
-              href: add-users/set-password-to-never-expire.md
-            - name: Låta användare återställa lösenord
-              href: add-users/let-users-reset-passwords.md
-            - name: Skicka användarlösenord igen
-              href: add-users/resend-user-password.md
             - name: Skapa en mall för att lägga till användare
               href: add-users/create-and-use-a-template-to-add-users.md
             - name: Uppgradera användare till de senaste apparna
@@ -137,6 +129,20 @@
               href: create-groups/restore-deleted-group.md
             - name: Hantera gäståtkomst till grupper
               href: create-groups/manage-guest-access-in-groups.md
+        - name: Lösenord
+          items:
+            - name: Återställ lösenord
+              href: add-users/reset-passwords.md
+            - name: Låta användare återställa lösenord
+              href: add-users/let-users-reset-passwords.md
+            - name: Konfigurera lösenord med obegränsad giltighetstid
+              href: add-users/set-password-to-never-expire.md
+            - name: Skicka användarlösenord igen
+              href: add-users/resend-user-password.md
+            - name: Inaktivera starka lösenord
+              href: add-users/strong-password.md
+            - name: Ange förfalloprincip för lösenordet
+              href: manage/set-password-expiration-policy.md
     - name: Hantera e-post och kalendrar
       href: email/index.yml
       items:
