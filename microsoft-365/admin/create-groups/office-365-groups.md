@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig mer om Microsoft 365-grupper.
-ms.openlocfilehash: 5d85204687641e74f9a705162df01cebd7eeee26
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: f3114fdd6eefae0fe226e25907716101dcb6a51f
+ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337175"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753271"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Översikt över Microsoft 365-grupper för administratörer
 
@@ -70,7 +70,7 @@ Om du har många användare, till exempel i ett stort företag eller i ett före
 
 Följande begränsningar gäller för Microsoft 365-grupper:
 
-|Maximalt...|Value|
+|Maximalt...|Värde|
 |:---------|:----|
 |Ägare per grupp|100|
 |Grupper som en användare kan skapa|250|
@@ -108,7 +108,7 @@ Alla Microsoft 365-abonnemang som har Exchange Online och SharePoint Online har 
 
 Om du har ett abonnemang med bara en Exchange-prenumeration kan du fortfarande få till gång till delade inkorg och delade kalender funktioner för grupper i Outlook, men du får inte dokument biblioteket, Planner eller någon av de andra funktionerna.
 
-Microsoft 365-grupper fungerar med Azure Active Directory (AAD). Vilka grupp funktioner du får beror på vilken Azure Active Directory-prenumeration du har och vilka licenser som har tilldelats gruppen.
+Microsoft 365-grupper fungerar med Azure Active Directory. Vilka grupp funktioner du får beror på vilken Azure Active Directory-prenumeration du har och vilka licenser som har tilldelats gruppen.
 
 > [!IMPORTANT]
 > Om du har ett Azure AD Premium-abonnemang för alla grupper kan användarna gå med i gruppen oavsett om de har en AAD-licens tilldelad till sig eller inte. Licensiering är inte tvingande.

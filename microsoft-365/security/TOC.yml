@@ -151,7 +151,7 @@
                       href: mtp/advanced-hunting-best-practices.md
                     - name: Hantera fel
                       href: mtp/advanced-hunting-errors.md
-                    - name: Tjänstbegränsningar
+                    - name: Kvoter och användningsparametrar
                       href: mtp/advanced-hunting-limits.md
                 - name: Utöka datatäckning
                   href: mtp/advanced-hunting-extend-data.md

@@ -1,10 +1,10 @@
 ---
-title: Återställa en borttagen grupp
+title: Återställa en borttagen Microsoft 365-grupp
 ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,24 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Lär dig hur du återställer en borttagen Microsoft 365-grupp.
-ms.openlocfilehash: 30e267a149bc18c2425d4ea38423b887116794c6
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 091697be54b1127a5cb336179733d51519947e14
+ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681652"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753249"
 ---
-# <a name="restore-a-deleted-group"></a>Återställa en borttagen grupp
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
-
-> [!NOTE]
-> I den här artikeln beskrivs hur du återställer bara Microsoft 365-grupper. Alla andra grupper kan inte återställas när de har tagits bort.
+# <a name="restore-a-deleted-microsoft-365-group"></a>Återställa en borttagen Microsoft 365-grupp
 
 Om du har tagit bort en grupp sparas den i 30 dagar som standard. Denna 30-dagars period anses vara "mjuk borttagning" eftersom du fortfarande kan återställa gruppen. Efter 30 dagar tas gruppen och dess tillhör ande innehåll bort permanent och kan inte återställas.
 
@@ -59,7 +49,12 @@ När du återställer en grupp återställs följande innehåll:
 
 - Grupp-och grupp innehåll i Yammer (om Microsoft 365-gruppen skapades från Yammer)
 
-## <a name="restore-a-group-that-you-own-by-using-outlook-on-the-web"></a>Återställa en grupp som du äger med hjälp av Outlook på webben
+> [!NOTE]
+> I den här artikeln beskrivs hur du återställer bara Microsoft 365-grupper. Alla andra grupper kan inte återställas när de har tagits bort.
+
+## <a name="restore-a-group"></a>Återställa en grupp
+
+# <a name="outlook"></a>[Outlook](#tab/outlook)
 
 Om du är ägare till en Microsoft 365-grupp kan du återställa gruppen själv i Outlook på webben genom att följa de här stegen:
 
@@ -69,7 +64,7 @@ Om du är ägare till en Microsoft 365-grupp kan du återställa gruppen själv 
 
 Om den borttagna gruppen inte visas här kan du kontakta en administratör.
 
-## <a name="restore-a-group-in-the-microsoft-365-admin-center"></a>Återställa en grupp i administrations centret för Microsoft 365
+# <a name="admin-center"></a>[Administrations Center](#tab/admin-center)
 
 Om du är global administratör eller administratör för administratörer kan du återställa en borttagen grupp i administrations centret för Microsoft 365:
 
@@ -79,28 +74,9 @@ Om du är global administratör eller administratör för administratörer kan d
 
 > [!NOTE]
 > I vissa fall kan det ta så lång tid som 24 timmar för gruppen och alla dess data att återställas. 
-  
-## <a name="permanently-delete-a-microsoft-365-group"></a>Ta bort en Microsoft 365-grupp permanent
 
-Ibland kanske du vill ta bort en grupp permanent utan att vänta på att den 30 dagars borttagnings perioden upphör att gälla. Starta PowerShell och kör det här kommandot för att ta fram gruppens objekt-ID
-  
-```
-Get-AzureADMSDeletedGroup
-```
+---
 
-Anteckna objekt-ID: t för gruppen som du vill ta bort permanent.
-  
-> [!CAUTION]
-> Borttagningen av gruppen raderar gruppen och allt innehåll för alltid. 
-  
-Om du vill ta bort gruppen kör du det här kommandot i PowerShell
-  
-```
-Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
-```
-
-För att kontrollera att gruppen har tagits bort kör du cmdleten  *Get- AzureADMSDeletedGroup*  en gång till för att bekräfta att gruppen inte längre visas i listan över mjukt borttagna grupper. I vissa fall kan det ta upp till ett dygn för gruppen och allt innehåll att tas bort permanent. 
-  
 ## <a name="got-questions-about-microsoft-365-groups"></a>Har du frågor om Microsoft 365-grupper?
 
 Besök [Microsofts Tech-community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) för att publicera frågor och delta i konversationer om Microsoft 365-grupper. 

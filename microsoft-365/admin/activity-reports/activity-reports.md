@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Få regelbundna rapporter om hur personer i organisationen använder Microsoft 365-tjänster. Med instrumentpanelen för översikt över användning kan du granska varje diagram för fler insikter.
-ms.openlocfilehash: e1748cf25fd36787727b0f00f6ddf6553bd454ab
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 4356b287afa56201da7cb644a4056d4c975964e5
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104461"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637013"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365-rapporter i administrationscentret
 
@@ -102,15 +102,23 @@ De här rapporterna är tillgängliga, beroende på din prenumeration.
   
 - [Microsoft 365-grupper](office-365-groups.md)
   
-- [Användaraktivitet i OneDrive för företag](onedrive-for-business-activity.md)
-  
-- [OneDrive för företag-användning](onedrive-for-business-usage.md)
+- [Användaraktivitet i OneDrive för företag](onedrive-for-business-activity-ww.md)
+
+- [Användaraktivitet i OneDrive för företag för US Government](onedrive-for-business-activity.md)
+
+- [OneDrive för företag-användning](onedrive-for-business-usage-ww.md)
+
+- [OneDrive för företag-användning för US Government](onedrive-for-business-usage.md)
 
 - [Användning av Microsoft 365-appar](microsoft365-apps-usage.md)
   
-- [SharePoint-webbplatsanvändning](sharepoint-site-usage.md)
+- [SharePoint-webbplatsanvändning](sharepoint-site-usage-ww.md)
+
+- [SharePoint-webbplatsanvändning för US Government](sharepoint-site-usage.md)
   
-- [SharePoint-aktivitet](sharepoint-activity.md)
+- [SharePoint-aktivitet](sharepoint-activity-ww.md)
+
+- [SharePoint-aktivitet för US Government](sharepoint-activity.md)
   
 - [Aktivitet i Skype för företag – Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   

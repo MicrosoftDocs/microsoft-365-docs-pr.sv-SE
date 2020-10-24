@@ -18,12 +18,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Lär dig mer om olika alternativ för att begränsa eller inaktivera delning i Microsoft 365.
-ms.openlocfilehash: 7397078b6f347858e4ca91a0deeb9a1cf2fb6911
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: 7ed9cc499e16de835c6ba96eb19bcc28a144b68b
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361911"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651424"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Begränsa delning i Microsoft 365
 
@@ -64,7 +64,7 @@ Inaktivera gästdelning för Teams
 Om du vill förhindra gäståtkomst i Microsoft 365-grupper kan du inaktivera inställningarna för gäståtkomst för grupper i administrationscentret för Microsoft 365.
 
 Inaktivera gästdelning i Microsoft 365-grupper
-1. I administrationscentret för Microsoft 365 klickar du på **Inställningar** och klickar sedan på **Inställningar**.
+1. I administrationscentret för Microsoft 365 klickar du på **Inställningar** och klickar sedan på **Organisationsinställningar**.
 2. På fliken **Tjänster** klickar du på **Microsoft 365-grupper**.
 3. Avmarkera kryssrutorna **Låt gruppmedlemmar utanför organisationen få åtkomst till gruppinnehåll** och **Låt gruppägare lägga till personer utanför organisationen i grupper**.
 4. Klicka på **Spara ändringar**.

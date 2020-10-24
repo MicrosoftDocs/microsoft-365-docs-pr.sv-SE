@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sirkkuw
 author: sirkkuw
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Lär dig hur du konfigurerar din Microsoft 365 Business Standard-abonnemang.
-ms.openlocfilehash: cfc198c749cfcaa76bc3fa6323e1dba8a46e7388
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: e69a3c75d77a8b4721558e72526a068df643f284
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324452"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644561"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Konfigurera Microsoft Business Standard
 
@@ -40,7 +40,7 @@ Titta på en kort video om hur du konfigurerar Microsoft 365 Business Standard.<
 
 Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
   
- *De här stegen gäller för företag och [ideella organisationer](https://go.microsoft.com/fwlink/p/?LinkId=627221) som har **[Microsoft 365 Business Standard-abonnemang.](https://go.microsoft.com/fwlink/p/?LinkId=627220)***
+ De här stegen gäller för företag och [ideella organisationer](https://go.microsoft.com/fwlink/p/?LinkId=627221) som har**[Microsoft 365 Business Standard-abonnemang.](https://go.microsoft.com/fwlink/p/?LinkId=627220)**_
 
 Titta på en kort video om hur du konfigurerar Microsoft 365 Business Standard (tidigare Office 365 Business Premium).<br><br>
 
@@ -56,7 +56,7 @@ När du köper Microsoft 365 Business Standard får du möjlighet att använda e
 
 1. Logga in på [Administrationscenter för Microsoft 365](https://admin.microsoft.com) som global administratör. 
 
-2. Starta guiden genom att välja **Gå till inställningar**.
+2. Starta guiden genom att välja _*Gå till inställningar*.
 
 3. På sidan **Installera Office-apparna** kan du välja att installera apparna på din egen dator.
     
