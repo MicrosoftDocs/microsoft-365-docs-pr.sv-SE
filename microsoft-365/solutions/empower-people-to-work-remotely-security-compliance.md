@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Använd säkerhets- och efterlevnadstjänsterna i Microsoft 365 för att skydda appar, data och enheter för distansarbetare.
-ms.openlocfilehash: 36abe8b8dbd84a883d829308fc970258e7551f2e
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 7607f3945d2e3c4e057162296df94dce4c611dbe
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445891"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681474"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Steg 3: Distribuera säkerhet och efterlevnad för distansarbetare
 
@@ -39,6 +39,8 @@ För distansarbetare krävs följande säkerhets- och efterlevnadselement:
 - Förhindrande av dataläckage
 - Iakttagande av regionala dataföreskrifter
 
+Här är de funktioner i Microsoft 365 som tillhandahåller säkerhets- och efterlevnadstjänster för distansarbetare.
+
 ![Använd dessa Microsoft 365-tjänster för att hålla dig säker och uppfylla efterlevnaden](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
 
 ## <a name="security"></a>Säkerhet
@@ -54,7 +56,7 @@ Skydda dina program och data med de här säkerhetsfunktionerna i Microsoft 365.
 | Azure AD Identity Protection  | Automatisera identifiering och åtgärder för identitetsbaserade risker. <br><br>Skapa riskbaserade principer för villkorsstyrd åtkomst för att kräva multifaktorautentisering (MFA) för riskfyllda inloggningar. | Microsoft 365 E5 eller E3 med Azure AD Premium P2-licenser |
 ||||
 
-Mer information finns i artikeln om [snabbuppgifter för att komma igång med Microsoft 365-efterlevnad](../compliance/compliance-quick-tasks.md).
+Mer information finns i artikeln om [de 12 viktigaste åtgärderna för säkerhetsteam för att stödja arbete hemifrån](../security/top-security-tasks-for-remote-work.md).
 
 ## <a name="compliance"></a>Efterlevnad
 
@@ -73,16 +75,16 @@ Uppfyll de interna principerna eller regelkraven med dessa efterlevnadsfunktione
 | Hantering av insiderrisk |  Identifiera, undersöka och åtgärda skadliga och oavsiktliga risker i organisationen. Microsoft 365 kan upptäcka sådana typer av risker även om en arbetstagare använder en ohanterad enhet. | Microsoft 365 E5 eller Microsoft 365 E3 med tilläggen för efterlevnad och Insider-riskhantering |
 ||||
 
-Mer information finns i artikeln om [de 12 viktigaste åtgärderna för säkerhetsteam för att stödja arbete hemifrån](../security/top-security-tasks-for-remote-work.md).
+Mer information finns i artikeln om [snabbuppgifter för att komma igång med Microsoft 365-efterlevnad](../compliance/compliance-quick-tasks.md).
 
 ## <a name="results-of-step-3"></a>Resultat av steg 3
 
 För distansarbetarna har du implementerat:
 
-- Säkerhet:
+- Säkerhet
   - Kontrollerad åtkomst till appar och data som distansarbetarna använder för att kommunicera och samarbeta
   - Skydd mot skadlig programvara för molntjänstdata, e-post och Windows 10-enheter 
-- Efterlevnad:
+- Efterlevnad
   - Konsekvent etikettering för känslighets- och skyddsnivåer
   - Principer för att förhindra dataläckage
   - Iakttagande av regionala dataföreskrifter

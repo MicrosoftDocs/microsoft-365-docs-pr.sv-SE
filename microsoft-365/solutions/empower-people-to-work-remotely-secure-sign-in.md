@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Kräv att dina distansarbetare loggar in med multi-factor authentication (MFA).
-ms.openlocfilehash: 7f24402dcedd4b544c5e6d8af2a0e18d3b62da27
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: aa9b122ca18c4d8a8123914ee2d29d41c9ec789e
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445926"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681462"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Steg 1. Öka inloggningssäkerheten för distansarbetare med MFA
 
@@ -38,12 +38,12 @@ Det finns tre sätt till att kräva att dina användare ska använda MFA baserat
 |---------|---------|
 |Alla Microsoft 365-abonnemang (utan Azure Active Directory Premium P1- eller P2-licenser)     |[Aktivera standardinställningar för säkerhet i Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Standardinställningar för säkerhet i Azure AD inkluderar MFA för användare och administratörer.   |
 |Microsoft 365 E3 (inkluderar Azure Active Directory Premium P1-licenser)     | Använd [vanliga principer för villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) för att konfigurera följande principer: <br>- [Kräv MFA för administratörer](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Kräv MFA för alla användare](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Blockera äldre autentisering](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (inkluderar Azure Active Directory Premium P2-licenser)     | Dra nytta av Azure AD Identity Protection och börja implementera Microsofts [rekommenderade uppsättning av villkorsstyrd åtkomst och relaterade principer](../security/office-365-security/identity-access-policies.md) genom att skapa de två principerna:<br> - [Kräv MFA när inloggningsrisker är medel eller hög](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Blockera klienter som inte har stöd för modern autentisering](../security/office-365-security/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Användare med hög risk måste byta lösenord](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 E5 (inkluderar Azure Active Directory Premium P2-licenser)     | Dra nytta av Azure AD Identity Protection och börja implementera Microsofts [rekommenderade uppsättning av principer för villkorsstyrd åtkomst och relaterade principer](../security/office-365-security/identity-access-policies.md) genom att skapa dessa principer:<br> - [Kräv MFA när inloggningsrisker är medel eller hög](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Blockera klienter som inte har stöd för modern autentisering](../security/office-365-security/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Användare med hög risk måste byta lösenord](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ## <a name="security-defaults"></a>Standardinställningar för säkerhet
 
-Standardinställningar för säkerhet är en ny funktion för Microsoft 365 och Office 365, betalade eller utvärderingsprenumerationer skapade efter den 21 oktober 2019. De här prenumerationerna har aktiverat standardinställningar för säkerhet som ***kräver att alla dina användare ska använda MFA med programmet Microsoft Authenticator-appen***.
+Standardinställningar för säkerhet är en ny funktion för Microsoft 365 och Office 365, betalade eller utvärderingsprenumerationer skapade efter den 21 oktober 2019. De här prenumerationerna har aktiverat standardinställningar för säkerhet som ***kräver att alla dina användare ska använda MFA med programmet Microsoft Authenticator-appen**_.
  
 Användare har 14 dagar på sig att registrera sig för MFA med Microsoft Authenticator-appen från sina smartphones, som börjar från första gången de loggar in efter att standardinställningar för säkerhet har aktiverats. Efter 14 dagar kommer användaren inte att kunna logga in förrän MFA-registreringen är klar.
 
@@ -75,6 +75,9 @@ För Azure Active Directory Identity Protection krävs Azure Active Directory Pr
 
 Mer information finns i [Riskbaserad villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users).
 
+Med Azure AD Identity Protection kan du också skapa en princip som kräver att dina användare registrerar sig för MFA. Mer information finns i [Konfigurera registreringspolicy för Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
+
+
 ## <a name="using-these-methods-together"></a>Använda dessa metoder tillsammans
 
 Tänk på följande:
@@ -88,13 +91,13 @@ I den här tabellen visas resultatet av att aktivera MFA med standardinställnin
 
 | Metod | Aktiverad | Inaktiverad | Ytterligare autentiseringsmetod |
 |:-------|:-----|:-------|:-------|
-| **Standardinställningar för säkerhet**  | Det går inte att använda principer för villkorsstyrd åtkomst | Det går att använda principer för villkorsstyrd åtkomst | Microsoft Authenticator-appen |
+| _*Standardinställningar för säkerhet**  | Det går inte att använda principer för villkorsstyrd åtkomst | Det går att använda principer för villkorsstyrd åtkomst | Microsoft Authenticator-appen |
 | **Principer för villkorsstyrd åtkomst** | Om några är aktiverade kan du inte aktivera standardinställningar för säkerhet | Om alla är inaktiverade kan du aktivera standardinställningar för säkerhet  | Användare anger under MFA-registrering  |
 ||||
 
 ## <a name="let-your-users-reset-their-own-passwords"></a>Tillåt användarna att återställa sina egna lösenord
 
-Med självbetjäning för återställning av lösenord (SSPR) kan användarna återställa sina egna lösenord utan att det påverkar IT-personal. Användarna kan snabbt återställa lösenorden när som helst och från vilken plats som helst. Titta på [den här video](https://go.microsoft.com/fwlink/?linkid=2128524) för att konfigurera SSPR.
+Med självbetjäning för återställning av lösenord (SSPR) kan användarna återställa sina egna lösenord utan att det påverkar IT-personal. Användarna kan snabbt återställa lösenorden när som helst och från vilken plats som helst. Mer information finns i [Planera distribution av självbetjäning för återställning av lösenord i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
 
 ## <a name="sign-in-to-saas-apps-with-azure-ad"></a>Logga in i SaaS-appar med Azure AD
 
@@ -102,12 +105,9 @@ Förutom att tillhandahålla molnverifiering för användare kan även Azure AD 
 
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>Tekniska resurser för administratörer om MFA och identitet
 
-- [MFA för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365)
 - [De 5 bästa sätten på vilka Azure AD kan hjälpa dig att aktivera distansarbete](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/top-5-ways-your-azure-ad-can-help-you-enable-remote-work/ba-p/1144691)
 - [Identitets översikt för Microsoft 365](../enterprise/identity-roadmap-microsoft-365.md)
 - [Azure Academy Azure AD-utbildningsvideor](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
-- [Tillämpa registreringspolicy för Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
-- [Planera distribution av självbetjäning för återställning av lösenord i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)
 
 ## <a name="results-of-step-1"></a>Resultat i steg 1
 

@@ -17,20 +17,20 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Använd Microsoft Endpoint Manager för att hantera dina hanteringsenheter, datorer och andra slutpunkter.
-ms.openlocfilehash: b50279166b313742dbfbe8e75dd9788aac6b1daa
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 72aa26c50f5d3c20409382f19d8beabb5d290023
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445971"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681486"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Steg 4. Distribuera slutpunktshantering för enheter, datorer och andra slutpunkter
 
 Med distansarbetare måste du ha stöd för ett ökande antal personliga enheter. Slutpunktshantering är en principbaserad metod för säkerhet som kräver att enheter följer specifika villkor innan de beviljas åtkomst till resurser. Microsoft Endpoint Manager tillhandahåller moderna hanteringsfunktioner för att skydda dina data i molnet och lokalt. 
 
-Microsoft Endpoint Manager tillhandhåller tjänster och verktyg för hantering av mobila enheter, stationära datorer, virtuella datorer, inbäddade enheter och servrar genom att kombinera följande tjänster som du kanske redan känner till och använder.
+[Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) tillhandhåller tjänster och verktyg för hantering av mobila enheter, stationära datorer, virtuella datorer, inbäddade enheter och servrar genom att kombinera följande tjänster som du kanske redan känner till och använder.
 
-![Komponenter för slutpunktshantering](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
+![Komponenterna i slutpunktshantering för Microsoft 365](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -58,7 +58,7 @@ Mer information finns i den här [översikt över samhantering](https://docs.mic
 
 ## <a name="desktop-analytics"></a>Desktop Analytics
 
-Desktop Analytics är en molnbaserad tjänst som integreras med Configuration Manager och ger dig insyn och intelligens så att du kan fatta välgrundade beslut om dina Windows-klienter. Den kombinerar data från din organisation med data aggregerade från miljontals enheter som är anslutna till Microsofts molntjänster. 
+Desktop Analytics är en molnbaserad tjänst som integreras med Configuration Manager och ger dig insyn och intelligens så att du kan fatta välgrundade beslut om dina Windows-klienter. Den kombinerar data från din organisation med data aggregerade från miljontals andra enheter som är anslutna till Microsofts molntjänster. 
 
 Med Desktop Analytics kan du:
 
@@ -83,9 +83,7 @@ Mer information finns i den här [översikt över Windows Autopilot](https://doc
 
 ## <a name="admin-technical-resources-for-endpoint-management"></a>Tekniska IT-resurser för slutpunktshantering
 
-- [Del 3-video om hur man hanterar Windows 10-enheter vid distansarbete](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
-- [Del 5-video om hur man hanterar användares skrivbord och webbläsare vid distansarbete](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
-- [Distribuera en infrastruktur för rörlighet med Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)
+- [Översikt över enhetshantering för Microsoft 365](../enterprise/device-management-roadmap-microsoft-365.md)
 - [Registrera olika typer av enheter för hantering av mobila enheter](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 - [Hur du utbildar dina slutanvändare om Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
  

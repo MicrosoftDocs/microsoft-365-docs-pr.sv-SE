@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: ''
 description: Konfigurera säkerhets- och tjänstinfrastrukturen som gör att dina arbetare kan arbeta på distans på valfri plats och när som helst.
-ms.openlocfilehash: ca5774c027eebaedd42bcca23292b89d92f1e102
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 60467f0ed3cf7aa75481cb3bb49f954c32bf2e7d
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487750"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681402"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Underlätta för distansarbetare med Microsoft 365
 
@@ -48,6 +48,7 @@ Den här lösningen har de här nyckelfunktionerna.
   Oavsett tid och plats kan distansarbetare komma åt: 
 
   - Molnbaserade tjänster och data i din Microsoft 365-prenumeration. 
+
   - Organisationsresurser av samma slag som finns att tillgå med programdatacentraler på plats.
 
 - Säker
@@ -61,15 +62,18 @@ Den här lösningen har de här nyckelfunktionerna.
 - Samarbetsvilliga och produktiva
 
   Dina distansarbetare kan vara lika produktiva som på plats på ett mycket samarbetande sätt med:
+
   - Onlinemöten och chattsessioner med Teams. 
+
   - Delade arbetsytor för molnbaserad fillagring med global tillgänglighet och samarbete i realtid med SharePoint och OneDrive.
+
   - Delade uppgifter och arbetsflöden för att dela upp arbetet och få saker gjorda. 
 
 För smidig inloggning lokalt bör dina användarkonton i Active Directory Domain Services (AD DS) synkroniseras med Azure Active Directory (Azure AD). För att skydda dina Windows 10-enheter bör de registreras i Intune. Här är en övergripande vy över infrastrukturen.
 
 ![Grundläggande infrastruktur för distansarbetare som använder Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
-Använd dessa Microsoft 365-funktioner för att uppfylla de här kriterierna för distansarbete.
+Använd de här Microsoft 365-funktionerna om du vill aktivera funktionerna i Microsoft 365 för dina distansarbetare.
 
 | Resurs eller funktion | Beskrivning | Licensiering |
 |:-------|:-----|:-------|
@@ -86,7 +90,7 @@ Använd dessa Microsoft 365-funktioner för att uppfylla de här kriterierna fö
 | Konfigurationshanteraren | Hantera programvaruinstallationer, uppdateringar och inställningar på dina enheter | För detta krävs separata licenser för Konfigurationshanteraren |
 | Desktop Analytics | Avgör uppdateringsberedskapen hos dina Windows-klienter.   | För detta krävs separata licenser för Konfigurationshanteraren |
 | Windows Autopilot | Förinstallera och konfigurera nya Windows 10-enheter för effektiv användning.   | Microsoft 365 E3 eller E5 |
-| Microsoft Teams, Exchange Online, SharePoint Online och OneDrive, Microsoft 365 Apps, Microsoft Power Platform, Yammer, Power Apps | Skapa, kommunicera och samarbeta. | Microsoft 365 E3 eller E5 |
+| Microsoft Teams, Exchange Online, SharePoint Online och OneDrive, Microsoft 365-applikationer, Microsoft Power Platform och Yammer | Skapa, kommunicera och samarbeta. | Microsoft 365 E3 eller E5 |
 ||||
 
 För kriterier för säkerhet och efterlevnad, se [Distribuera säkerhet och efterlevnad för fjärrarbetare](empower-people-to-work-remotely-security-compliance.md).
@@ -97,7 +101,7 @@ För kriterier för säkerhet och efterlevnad, se [Distribuera säkerhet och eft
 
 Du kan också ladda ner den här affischen i [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) och skriva ut den på brev, legal eller tabloid papper i storlek (11 x 17).
 
-Följ dessa steg för att skydda och optimera åtkomsten till organisationens servrar, data och molntjänster och för att maximera produktiviteten för medarbetarna.
+Följ dessa steg för att skydda och optimera åtkomsten till organisationens servrar och molntjänster och maximera produktiviteten för distansarbetarna.
 
 1. [Öka inloggningssäkerheten med MFA](empower-people-to-work-remotely-secure-sign-in.md)
 2. [Ge fjärråtkomst till lokala appar och tjänster](empower-people-to-work-remotely-remote-access.md)
@@ -108,4 +112,4 @@ Följ dessa steg för att skydda och optimera åtkomsten till organisationens se
 
 [![Stegen för att underlätta för distansarbetare med Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-Om du vill ha den senaste informationen från Microsoft om support för distansarbetare går du till [Tech Communityn för att möjliggöra distansarbete](https://resources.techcommunity.microsoft.com/enabling-remote-work/).
+Om du vill ha den senaste informationen från Microsoft om support för distansarbetare går du till [Aktivera hybridarbete med Microsoft Teams-webbplatsen](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).

@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: I den här artikeln får du lära dig mer om vilka alternativ som finns för att skapa en säker gästdelningsmiljö i Microsoft 365.
-ms.openlocfilehash: 227c609329ae3cca4cc38e65984f1036bfe41068
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: d80dd00369b851768849e846449799ff443957f3
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527936"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681568"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Skapa en säker miljö för gästdelning
 
@@ -165,7 +165,7 @@ Begränsa gäståtkomsten till endast webben
 9. På bladet **Molnappar och åtgärder** klickar du på **Klar**.
 10. Under **Tilldelningar** klickar du på **Villkor**.
 11. På bladet **Villkor** klickar du på **Klientappar**.
-12. På bladet **Klientappar** klickar du på **Ja** för **Konfigurera** och väljer sedan inställningarna **Mobila appar och skrivbordsklienter** och **Moderna autentiseringsklienter**.</br>
+12. På bladet **Klientappar** klickar du på **Ja** för **Konfigurera** och väljer sedan inställningen **Mobila appar och skrivbordsklienter**.</br>
     ![Skärmbild av inställningar för villkorlig åtkomst till klientappar i Azure AD](../media/azure-ad-conditional-access-client-mobile.png)
 13. Klicka på **Klar**, och därefter på bladet **Villkor** klickar du på **Klar** igen.
 14. Under **Åtkomstkontroller** klickar du på **Bevilja**.

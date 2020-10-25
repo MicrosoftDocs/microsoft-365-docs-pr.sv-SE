@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Gör det möjligt för användarna att vara produktiva med Teams, Exchange, SharePoint och andra Microsoft 365-tjänster.
-ms.openlocfilehash: 879df16b379a82fcdc9478f8b3a787dd74384171
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 57e862769533b8c076513874e7f6daafdbe836da
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445832"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681414"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>Steg 5: Distribuera produktivitetsappar och tjänster för distansarbetare
 
@@ -39,9 +39,9 @@ För att kunna vara produktiva måste personer kommunicera och samarbeta med var
 
 Med Teams kan ni chatta, träffas, ringa och samarbeta på en och samma plats. Miljontals användare får jobbet gjort i Teams varje dag eftersom det sammanställer allt du behöver arbeta med i ett samarbetsnav. 
 
-Använd [den här artikeln](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams) om du vill ha hjälp med hur du ska hjälpa dina distansarbetare med Teams. 
+Detaljerade anvisningar finns i [Ge stöd till distansarbetare med Microsoft Teams](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams). 
 
-Mer information och demonstrationer om hur du använder Teams för distansarbete finns i [del 1-video](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity).
+Titta på [Aktivera hybridarbete med Microsoft Teams-webbsändningar](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/) för vägledning och demonstrationer om hur du använder Teams för distansarbete.
 
 ### <a name="chat-and-conversations"></a>Chatt och konversationer
 
@@ -82,14 +82,14 @@ Se [den här artikeln](../security/office-365-security/sharepoint-file-access-po
 
 ## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>Skapa och samarbeta med innehåll med Microsoft 365-appar
 
-Microsoft 365-appar är den mest produktiva och säkraste Office-upplevelsen för företag, de låter personer kan samarbeta smidigt, var som helst, när som helst. Distansarbetare kan samarbeta på ett dokument med flera personer samtidigt, se redigeringar och förändringar i realtid och samredigera med andra på vilken bärbar dator, dator eller mobil enhet som helst.
+Microsoft 365-applikationer är den mest produktiva och säkraste Office-upplevelsen för företag, som gör att personer kan samarbeta smidigt, var som helst, när som helst. Distansarbetare kan samarbeta på ett dokument med flera personer samtidigt, se redigeringar och förändringar i realtid och samredigera med andra på vilken bärbar dator, dator eller mobil enhet som helst.
 
-Se [den här artikeln](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps) för att planera, distribuera och hantera Microsoft 365 Apps i din företagsmiljö.
+Mer information finns i [distributionsguiden för Microsoft 365-applikationer](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
 
 ## <a name="admin-technical-resources-for-productivity-apps-and-services"></a>Teknisk administration för produktivitetsprogram och-tjänster
 
 - [Ge stöd till distansarbetare med Microsoft Teams](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)
-- [Del 1 video om Teams för distansarbetare](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)
+- [Aktivera hybridarbete med Microsoft Teams-webbsändningar](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)
 - [Nedladdning av Teams Customer Success Kit](https://www.microsoft.com/download/details.aspx?id=54244)
 - [Verktyg för att driva på användning av Teams](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
 - [Skapa en strategi för ändringshantering för Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)
