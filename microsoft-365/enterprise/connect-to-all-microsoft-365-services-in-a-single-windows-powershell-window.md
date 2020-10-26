@@ -18,28 +18,27 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Sammanfattning: Ansluta till alla Microsoft 365-tjänster i ett enda PowerShell-fönster.'
-ms.openlocfilehash: 36b16b491aa97e7329e440e2c1fb01b8a221a2b6
-ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
+ms.openlocfilehash: 04be916f745e2bde70554045340fc8ec03f87413
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48477059"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754322"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Ansluta till alla Microsoft 365-tjänster i ett enda PowerShell-fönster
 
-När du använder PowerShell för att hantera Microsoft 365 går det att ha flera olika PowerShell-sessioner öppna samtidigt i olika PowerShell-fönster som hör till hanterade användarkonton, SharePoint Online, Exchange Online, Skype för företag – Online, Microsoft Teams och Säkerhets- &amp; efterlevnadscenter. 
+När du använder PowerShell för att hantera Microsoft 365 kan du ha flera PowerShell-sessioner öppna samtidigt. Du kanske har olika PowerShell-fönster för att hantera användarkonton, SharePoint Online, Exchange Online, Skype för företag – Online, Microsoft Teams och Säkerhets- och &amp; efterlevnadscentret.
   
-Du kan inte använda det här alternativet för att hantera Microsoft 365 eftersom du inte kan utbyta data mellan fönstren för hantering av flera tjänster. I den här artikeln beskrivs hur du använder en enda instans av PowerShell, som du kan använda för att hantera Microsoft 365-konton, Skype för företag – Online, Exchange Online, SharePoint Online, Microsoft Teams och Säkerhets- &amp; efterlevnadscenter.
+Det här scenariot är inte optimalt för att hantera Microsoft 365 eftersom du inte kan utbyta data mellan fönstren för hantering av flera tjänster. Den här artikeln beskriver hur du använder en enda instans av PowerShell för att hantera Microsoft 365-konton, Skype för Företag – Online, Exchange Online, SharePoint Online, Microsoft Teams och Säkerhets- och &amp; efterlevnadscentret.
 
 >[!Note]
->I den här artikeln finns för närvarande bara kommandon för att ansluta till molnet över hela världen (+GCC). I kommentarerna finns länkar till artiklar med information om hur du ansluter till andra Microsoft 365-moln.
->
+>Den här artikeln innehåller för närvarande bara kommandon för att ansluta till det världsomfattande (+GCC) molnet. I kommentarerna finns länkar till artiklar om anslutning till andra Microsoft 365-moln.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
 Innan du kan hantera hela Microsoft 365 från en enda instans av PowerShell måste följande förutsättningar vara uppfyllda:
   
-- Det Microsoft 365-konto för arbete eller skola som du använder för de här procedurerna måste vara medlem i en administratörsroll för Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles). Det här är ett krav för PowerShell för Microsoft 365, inte nödvändigtvis för alla andra Microsoft 365-tjänster.
+- Det Microsoft 365-kontot för arbete eller skola som du använder måste vara en medlem i en administratörsroll för Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles). Det här är ett krav för PowerShell för Microsoft 365, men inte nödvändigtvis för alla andra Microsoft 365-tjänster.
     
 - Du kan använda följande 64-bitars versioner av Windows:
     
@@ -57,7 +56,7 @@ Innan du kan hantera hela Microsoft 365 från en enda instans av PowerShell mås
     
   - Windows Server 2008 R2 SP1*
     
-    \* Du måste installera Microsoft .NET Framework 4.5.*x* och sedan antingen Windows Management Framework 3.0 eller Windows Management Framework 4.0. Mer information finns i [installera .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868) och [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757) eller [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344).
+    \* Du måste installera Microsoft .NET Framework 4,5. *x* och sedan Windows Management Framework 3,0 eller 4,0. Mer information finns i [Windows Management Framework](https://docs.microsoft.com/powershell/scripting/windows-powershell/wmf/overview?view=powershell-7).
     
     Du måste använda en 64-bitars version av Windows på grund av kraven för Skype för företag – Online-modulen och en av Microsoft 365-modulerna.
     
@@ -69,19 +68,17 @@ Innan du kan hantera hela Microsoft 365 från en enda instans av PowerShell mås
   - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
   - [Teams PowerShell översikt](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
     
--  PowerShell måste konfigureras för körning av signerade skript för Skype för företag – Online och Säkerhets- &amp; efterlevnadscenter. Det gör du genom att köra följande kommando i en upphöjd PowerShell-session (ett PowerShell-fönster som du öppnar genom att välja **Kör som administratör**).
+-  PowerShell måste konfigureras för körning av signerade skript för Skype för Företag – Online och Säkerhets- och &amp; efterlevnadscentret. Kör följande kommando i en upphöjd PowerShell-session (ett PowerShell-fönster som du **Kör som administratör** ).
     
    ```powershell
    Set-ExecutionPolicy RemoteSigned
    ```
 
-## <a name="exchange-online-and-security-amp-compliance-center-with-the-exchange-online-powershell-v2-module"></a>Exchange Online och Säkerhets &amp; Efterlevnadscenter med modulen Exchange Online PowerShell V2
+## <a name="exchange-online-and-security-amp-compliance-center-with-the-exchange-online-powershell-v2-module"></a>Exchange Online och Säkerhets- och &amp; Efterlevnadscenter med modulen Exchange Online PowerShell V2
 
-I den här artikeln används Exchange Online PowerShell V2-modulen för att ansluta till både Exchange Online och Säkerhets &amp; Efterlevnadscenter. Men för närvarande går det inte att ansluta till både Exchange Online och Säkerhets &amp; Efterlevnadscenter **i samma PowerShell-fönster**.
+Procedurerna i den här artikeln använder Exchange Online PowerShell V2-modulen för att ansluta till både Exchange Online och Säkerhets- och &amp; efterlevnadscentret. Men för närvarande kan du inte ansluta till båda *i samma PowerShell-fönster* . Så du måste välja att ansluta till den ena eller den andra när du konfigurerar ett PowerShell-fönster för flera Microsoft 365-tjänster.
 
-Därför måste du välja en anslutning med endera Exchange Online *eller* Säkerhets &amp; Efterlevnadscenter när du konfigurerar ett PowerShell-fönster för flera Microsoft 365-tjänster.
-
-## <a name="connection-steps-when-using-just-a-password"></a>Anslutningssteg när du bara använder ett lösenord
+## <a name="connection-steps-when-using-just-a-password"></a>Anslutningssteg vid användning av bara ett lösenord
 
 Här är några steg för att ansluta till alla tjänster i ett enda PowerShell-fönster när du bara använder ett lösenord för inloggning.
   
@@ -99,23 +96,23 @@ Här är några steg för att ansluta till alla tjänster i ett enda PowerShell-
    Connect-AzureAD -Credential $credential
    ```
   
-   Om du använder modulen Microsoft Azure Active Directory-modul för Windows PowerShell kör du det här kommandot.
+   Om du använder Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen, kör det här kommandot.
       
    ```powershell
    Connect-MsolService -Credential $credential
    ```
 
    > [!Note]
-   > PowerShell Core stöder inte Microsoft Azure Active Directory-modul för Windows PowerShell-modulen och-cmdlets med **MSOL** i namnet. Om du vill fortsätta använda dessa cmdlets måste du köra dem från PowerShell.
+   > PowerShell Core stöder inte Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen och cmdlets med *MSOL* i deras namn. Du måste köra dessa cmdlets från PowerShell.
 
-4. Kör dessa kommandon för att ansluta till SharePoint Online. Ange organisationsnamnet för din domän. Till exempel, för "litwareinc.onmicrosoft.com" är organisationensnamnet "litwareinc".
+4. Kör dessa kommandon för att ansluta till SharePoint Online. Ange organisationsnamnet för din domän. Till exempel, för "litwareinc\.onmicrosoft.com" är organisationens namnvärdet "litwareinc".
     
    ```powershell
    $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
    Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userCredential
    ```
 
-5. Kör dessa kommandon för att ansluta till Skype för företag – Online. Ett varningsmeddelande om att öka `WSMan NetworkDelayms` värdet förväntas första gången du ansluter och ska ignoreras.
+5. Kör dessa kommandon för att ansluta till Skype för Företag – Online. En varning om att öka `WSMan NetworkDelayms` värdet visas första gången du ansluter. Ignorera det.
      
    > [!Note]
    > Skype för företag – Online-Connector är för närvarande en del av den senaste versionen av Teams PowerShell-modul. Om du använder den senaste versionen av Teams PowerShell, behöver du inte installera Skype för företag – Online-Connector.
@@ -136,7 +133,7 @@ Här är några steg för att ansluta till alla tjänster i ett enda PowerShell-
    > [!Note]
    > Om du vill ansluta till Exchange Online för Microsoft 365-moln som inte är världsomspännande se [-Ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-7. Kör dessa kommandon för att ansluta till Säkerhets &amp; Efterlevnadscenter.
+   Alternativt, kör dessa kommandon för att ansluta till Säkerhets- och &amp; efterlevnadscentret.
     
    ```powershell
    $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -147,7 +144,7 @@ Här är några steg för att ansluta till alla tjänster i ett enda PowerShell-
    > [!Note]
    > Om du vill ansluta till &amp; säkerhet- och efterlevnadscenter för Microsoft 365-moln, annat än världsomspännande läser du [Ansluta till Säkerhets- och efterlevnadscenter PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
-8. Kör dessa kommandon för att ansluta till Teams PowerShell.
+   Kör dessa kommandon för att ansluta till Teams PowerShell.
     
    ```powershell
    Import-Module MicrosoftTeams
@@ -155,12 +152,12 @@ Här är några steg för att ansluta till alla tjänster i ett enda PowerShell-
    ```
   
    > [!Note]
-   > Om du vill ansluta till Microsoft Teams-moln som inte är världsomspännande läser du [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams).
+   > För att ansluta till Microsoft Teams-moln som inte är *världsomspännande* , se [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams).
 
 
-### <a name="azure-active-directory-powershell-for-graph-module"></a>Azure Active Directory PowerShell för modulen Graph
+### <a name="azure-active-directory-powershell-for-graph-module"></a>Azure Active Directory PowerShell för Graph-modulen
 
-Här följer kommandon för alla tjänster *, förutom Säkerhets &amp; Efterlevnadscenter* i ett enda block med hjälp av modulen Azure Active Directory PowerShell för modulen Graph. Ange namnet på domänvärden och kör alla samtidigt.
+Här följer kommandon för alla tjänster *förutom Säkerhets- och &amp; efterlevnadscentret* i ett enda block när du använder Azure Active Directory PowerShell för Graph-modulen. Ange namnet på din domänvärd och kör alla samtidigt.
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -177,7 +174,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-Här följer kommandon för alla tjänster *, förutom Exchange Online * i ett enda block med hjälp av modulen Azure Active Directory PowerShell för modulen Graph. Ange namnet på domänvärden och UPN på din inloggning och kör alla samtidigt.
+Här följer kommandon för alla tjänster *förutom Exchange Online* i ett enda block när du använder Azure Active Directory PowerShell för Graph-modulen. Ange namnet på din domänvärd och UPN på inloggning och kör alla samtidigt.
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -195,9 +192,9 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-### <a name="microsoft-azure-active-directory-module-for-windows-powershell-module"></a>Microsoft Azure Active Directory-modulen för modulen Windows PowerShell
+### <a name="microsoft-azure-active-directory-module-for-windows-powershell-module"></a>Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen
 
-Här följer kommandon för alla tjänster *, förutom Säkerhets &amp; Efterlevnadscenter* i ett enda block med hjälp av modulen Microsoft Azure Active Directory för modulen PowerShell. Ange namnet på domänvärden och kör alla samtidigt.
+Här följer kommandon för alla tjänster *förutom Säkerhets- och &amp; efterlevnadscentret* i ett enda block när du använder Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen. Ange namnet på din domänvärd och kör alla samtidigt.
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -214,7 +211,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-Här följer kommandon för alla tjänster *, förutom Exchange Online* i ett enda block med hjälp av modulen Microsoft Azure Active Directory för modulen Windows PowerShell. Ange namnet på domänvärden och UPN på din inloggning och kör alla samtidigt.
+Här följer kommandon för alla tjänster *förutom Exchange Online* i ett enda block när du använder Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen. Ange namnet på din domänvärd och UPN för din inloggning och kör alla samtidigt.
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -235,7 +232,7 @@ Connect-MicrosoftTeams -Credential $credential
 
 ### <a name="azure-active-directory-powershell-for-graph-module"></a>Azure Active Directory PowerShell för modulen Graph
 
-Här är alla kommandon i ett enda block för att ansluta till flera Microsoft 365-tjänster *förutom Säkerhets &amp; Efterlevnadscenter * med multifaktorautentisering med hjälp av Azure Active Directory PowerShell för modulen Graph.
+Här är alla kommandon i ett enda block för att ansluta till flera Microsoft 365-tjänster *förutom Säkerhets- och &amp; efterlevnadscentret* när du använder multifaktorautentisering med Azure Active Directory PowerShell för Graph-modulen.
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -255,7 +252,7 @@ Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
-Här är alla kommandon i ett enda block för att ansluta till flera Microsoft 365-tjänster *förutom Exchange Online * med multifaktorautentisering med hjälp av Azure Active Directory PowerShell för modulen Graph.
+Här är alla kommandon i ett enda block för att ansluta till flera Microsoft 365-tjänster *förutom Exchange Online* med multifaktorautentisering när du använder Azure Active Directory PowerShell för Graph-modulen.
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -275,9 +272,9 @@ Connect-IPPSSession -UserPrincipalName $acctName
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
-### <a name="microsoft-azure-active-directory-module-for-windows-powershell-module"></a>Microsoft Azure Active Directory-modulen för modulen Windows PowerShell
+### <a name="microsoft-azure-active-directory-module-for-windows-powershell-module"></a>Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen
 
-Här är alla kommandon i ett enda block för att ansluta till flera Microsoft 365-tjänster *förutom Säkerhets &amp; Efterlevnadscenter* med multifaktorautentisering med hjälp av modulen Microsoft Azure Active Directory för modulen Windows PowerShell..
+Här är alla kommandon i ett enda block för att ansluta till flera Microsoft 365-tjänster *förutom Säkerhets- och &amp; efterlevnadscentret* när du använder multifaktorautentisering med Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen.
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -297,7 +294,7 @@ Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
-Här är alla kommandon i ett enda block för att ansluta till flera Microsoft 365-tjänster *förutom Exchange Online * med multifaktorautentisering med hjälp av modulen Microsoft Azure Active Directory för modulen Windows PowerShell.
+Här är alla kommandon i ett enda block för att ansluta till flera Microsoft 365-tjänster *förutom Exchange Online* när du använder multifaktorautentisering med Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen.
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -320,12 +317,11 @@ Connect-MicrosoftTeams
 
 ## <a name="close-the-powershell-window"></a>Stäng PowerShell-fönstret.
 
-När du är redo att stänga PowerShell-fönstret kör du det här kommandot för att ta bort aktiva sessioner till Skype för företag – Online, SharePoint Online och Teams:
+När du är redo att stänga ner PowerShell-fönstret kör du det här kommandot för att ta bort aktiva sessioner på Skype för Företag – Online, SharePoint Online och Teams:
   
 ```powershell
 Remove-PSSession $sfboSession ; Disconnect-SPOService ; Disconnect-MicrosoftTeams 
 ```
-
 
 ## <a name="see-also"></a>Se även
 
