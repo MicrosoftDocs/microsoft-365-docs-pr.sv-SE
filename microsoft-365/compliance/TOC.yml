@@ -634,6 +634,8 @@
               href: attorney-privilege-detection.md
             - name: Granskningsuppsättningar för konversationer
               href: conversation-review-sets.md
+            - name: Språkstöd för CJK
+              href: ediscovery-cjk-support.md
             - name: Tilldela eDiscovery-behörigheter
               href: assign-ediscovery-permissions.md
             - name: Nyckelordsfrågor och sökvillkor
