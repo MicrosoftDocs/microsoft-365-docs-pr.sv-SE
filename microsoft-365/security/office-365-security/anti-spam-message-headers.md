@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Administratörer kan lära sig mer om de fält som läggs till i meddelanden av Exchange Online Protection (EOP). De här huvudfälten innehåller information om meddelandet och hur det behandlades.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cc174b572f1ba45455cac84ff34bbc962650c988
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 5617353d291b6c7a98999c831107d8964dba6318
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445801"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754474"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Meddelandehuvuden för antiskräppost i Microsoft 365
 
@@ -72,7 +72,7 @@ De enskilda fälten och värdena beskrivs i följande tabell.
 |`SFTY`|Meddelandet identifierades som phishing och kommer att markeras med något av följande värden: <ul><li>9.1: Standardvärde. Meddelandet innehåller några eller alla av följande element: en nät fiske webb adress, ett annat phishing-innehåll eller har marker ATS som nätfiske via lokalt Exchange.</li><li>9.11: [intra-org eller inom organisationen](anti-spoofing-protection.md#different-types-of-spoofing). Säkerhetstipset för förfalskningar inom organisationen läggs till i meddelandet.</li><li>9.19: Domänimitation. Den sändande domänen försöker [imitera en skyddad domän](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies). Säkerhetstipset för domänskydd läggs till i meddelandet (om det är aktiverat).</li><li>9.20: Användarimitation. Den sändande användaren försöker imitera en användare i mottagarens organisation eller en skyddad användare som anges i en ATP-skyddsprincip. Säkerhetstipset för användarefersonlighet läggs till i meddelandet (om det är aktiverat).</li><li>9.21: [Förfalskning mellan domäner](anti-spoofing-protection.md#different-types-of-spoofing). Meddelandet misslyckade skydd mot förfalskning. Avsändarens e-postdomän i från-huvudet verifierar inte och är en extern domän. Används i kombination med [sammansatt autentisering](#authentication-results-message-header-fields).</li><li>9.22: Samma som 9.21, förutom att användaren har en säker avsändare som har åsidosatts.</li><li>9.23: Samma som 9.22, förutom att organisationen har en betrodd användare eller domän som har åsidosatts.</li><li>9.24: Samma som 9.23, förutom att användaren har en Exchange-dataflödesregel (även känt som en transportregel) som har åsidosatts.</li></ul>|
 |`SFV:BLK`|Filtreringen hoppades över och meddelandet blockerades eftersom det skickades från en adress i en användares lista med spärrade avsändare.<br/></br> Mer information om hur administratörer kan hantera användarens lista med blockerade avsändare finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor](configure-junk-email-settings-on-exo-mailboxes.md).|
 |`SFV:NSPM`|Meddelandet har markerats som icke skräppost av skräppostfiltret och det har skickats till avsedda mottagare.|
-|`SFV:SFE`Filtreringen hoppades över och meddelandet tilläts eftersom det skickades från en adress i användarens lista över betrodda avsändare.<br/></br> Mer information om hur administratörer kan hantera användarens lista med säkra avsändare finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor](configure-junk-email-settings-on-exo-mailboxes.md).|
+|`SFV:SFE`|Filtreringen hoppades över och meddelandet tilläts eftersom det skickades från en adress i en användares listan Betrodda avsändare.<br/></br> Mer information om hur administratörer kan hantera användarens lista med säkra avsändare finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor](configure-junk-email-settings-on-exo-mailboxes.md).|
 |`SFV:SKA`|Meddelandet hoppades över skräp post filtreringen och skickades till Inkorgen eftersom avsändaren fanns i listan med tillåtna avsändare eller listan över tillåtna domäner i en princip för skräp post skydd. Mer information finns i [Konfigurera principer för skräppostskydd](configure-your-spam-filter-policies.md).|
 |`SFV:SKB`|Meddelandet markeras som skräp post eftersom det matchade en avsändare i listan med spärrade avsändare eller listan över blockerade domäner i en princip för skräp post skydd. Mer information finns i [Konfigurera principer för skräppostskydd](configure-your-spam-filter-policies.md).|
 |`SFV:SKI`|I likhet med SFV: SKN hoppade skräp post filter av en annan anledning (till exempel en inomeuropeisk e-post i en klient organisation).|
