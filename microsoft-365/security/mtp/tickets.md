@@ -19,19 +19,20 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: ca13234a93ffcc226be45d337880692a3a39c28b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a2650efbac0966b84e6fbfd6ce78cb732f4933b3
+ms.sourcegitcommit: bd36c88e731e3fee2a3a5cb3564fdc94f11bab94
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196125"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769659"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Integrera ServiceNow biljetter i säkerhets Center och Compliance Center för Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
-[!include[Prerelease information](../includes/prerelease.md)]
+>[!CAUTION]
+>**Förhands gransknings perioden för ServiceNow-kopplingen slutar**<br>
+>Denna funktion kommer inte längre att vara tillgänglig i slutet av november 2020. Tack för din feedback och fortsatta support medan vi bestämmer nästa steg.
 
 ServiceNow är en populär plattform för moln datorer som hjälper företag att hantera digitala arbets flöden för företag. Deras plattform har arbets flöden, arbets flöden och kund arbets flöden. [Lär dig mer om ServiceNow](https://www.servicenow.com/)
 
@@ -40,7 +41,7 @@ Microsoft samarbetar med ServiceNow för att göra det lättare för IT-administ
 - [**Hantera ServiceNow biljetter i säkerhets Center**](tickets-security-center.md)
 - **Hantera ServiceNow biljetter i överensstämmelse Center** (kommer snart)
 
-## <a name="prerequisites"></a>Förutsättningar
+## <a name="prerequisites"></a>Krav
 
 Åtkomst till Microsoft 365 säkerhets Center eller Compliance Center och en ServiceNow-instans med:  
 
@@ -77,7 +78,7 @@ Gå till [skapa och spåra ServiceNow biljetter i Microsoft 365 säkerhets Cente
 
 ### <a name="you-receive-an-error-in-the-first-step-of-the-installation-checklist-oauth-creation"></a>Du får ett fel meddelande i det första steget i installations check listan (OAuth-skapande)
 
-**Fel meddelande**: Läs åtgärd mot ' oauth_entity ' från omfattning ' x_mioms_m365ticket ' har nekats på grund av tabellens åtkomst policy för kors omfånget
+**Fel meddelande** : Läs åtgärd mot ' oauth_entity ' från omfattning ' x_mioms_m365ticket ' har nekats på grund av tabellens åtkomst policy för kors omfånget
 
 Programmet förutsätter att en administratör på ServiceNow-instansen kan skapa och läsa OAuth-enheter. Det här felet kan orsakas av en anpassning i din instans av ServiceNow som begränsar vem som kan skapa eller läsa OAuth-enheter.
 
@@ -92,7 +93,7 @@ Ange konfigureringen av tabellen "program register" till standard:
 
 ### <a name="how-to-validate-the-oauth-entity-created-for-microsoft-365-security--compliance-connector"></a>Verifiera den OAuth-enhet som har skapats för Microsoft 365 Security & Compliance Connector
 
-Gå till tabellen program register (**meny > systemet OAuth > program register**) i ServiceNow. Hitta den OAuth-enhet som skapades av dig, med det namn som du har tilldelat den.
+Gå till tabellen program register ( **meny > systemet OAuth > program register** ) i ServiceNow. Hitta den OAuth-enhet som skapades av dig, med det namn som du har tilldelat den.
 
 ### <a name="signing-in-as-the-integration-user"></a>Logga in som integrations användare
 
@@ -106,7 +107,7 @@ Innan du godkänner anslutningen mellan Microsoft 365 säkerhets Center och Serv
 
 ### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>Så här verifierar du integrations användaren som har skapats med check lista för installation för Microsoft 365 Security & Compliance Connector
 
-Gå till tabellen användare **(meny > användar Administration > användare**) i ServiceNow och leta reda på den integrations användare som du har skapat, med det namn som du har tilldelat.
+Gå till tabellen användare **(meny > användar Administration > användare** ) i ServiceNow och leta reda på den integrations användare som du har skapat, med det namn som du har tilldelat.
 
 ### <a name="your-company-has-single-sign-on-enabled-which-prevents-you-from-connecting-to-servicenow-through-the-microsoft-365-security-center"></a>Ditt företag har en enkel inloggning som hindrar dig från att ansluta till ServiceNow via Microsoft 365 säkerhets Center
 

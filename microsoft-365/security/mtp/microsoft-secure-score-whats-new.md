@@ -20,58 +20,24 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 964724ad92c1ae29095b7368167b771b1632b003
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 71316d6c53862b80178d06726f7c249a2491d659
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295076"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769036"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nyheter i Microsofts säkra Poäng
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 Vi har gjort några ändringar för att göra Microsoft säkert poäng en bättre representant för dina säkerhets Posture. Om du vill veta mer om planerade ändringar kan du läsa [vad som kommer i Microsofts säkra Poäng?](microsoft-secure-score-whats-coming.md).
 
 ## <a name="august-2020"></a>Augusti 2020
 
-### <a name="update-improvement-action-for-azure-active-directory"></a>Uppdaterings åtgärd för Azure Active Directory
+### <a name="updated-improvement-action-for-azure-active-directory"></a>Uppdaterad förbättrings åtgärd för Azure Active Directory
 
 - Aktivera princip för blockering av bakåtkompatibel-verifikation
-
-## <a name="july-2020"></a>Juli 2020
-
-### <a name="adding-improvement-actions-for-azure-advanced-threat-protection"></a>Lägga till förbättrings åtgärder för avancerat Azure-skydd
-
-- Sido rörelse banor
-- Oskyddade objektattribut
-- Aktivera säkerhetsfunktioner för Active Directory-förtroenden
-- Ta bort attribut för osäkra SID-historik från enheter
-
-## <a name="june-2020"></a>Juni 2020
-
-### <a name="removed-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Åtgärd för förbättring av Microsoft Defender Avancerat skydd
-
-* Aktivera regler för reducering av attack ytan
-
-### <a name="added-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Förbättrade förbättrings åtgärder för Microsoft Defender Avancerat skydd
-
-* Blockera Adobe Reader från att skapa underordnade processer
-* Använd avancerat skydd mot utpressnings tro Jan
-* Blockera alla Office-program från att skapa underordnade processer
-* Blockera Office-program från att skapa körbart innehåll
-* Blockera java script eller VBScript från att starta hämtat körbart innehåll
-* Blockera körning av potentiellt Obfuscated-skript
-* Blockera körbart innehåll från e-postklient och WebPost
-* Blockera Office-kommunikationsprogram från att skapa underordnade processer
-* Blockera icke-betrodda och osignerade processer som körs från USB
-* Blockera beständighet via WMI-prenumeration
-* Blockera Office-program från att injicera kod i andra processer
-* Blockera körbara filer från att köras såvida de inte uppfyller villkoren för ett förekomst-, ålder eller betrott lista
-* Blockera skapande av processer från PSExec-och WMI-kommandon
-* Blockera autentiseringsuppgifter som stjäls från Windows Local Security Authority Subsystem (lsass.exe)
-* Blockera Win32 API-samtal från Office-makron
 
 ## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>Inkompatibilitet med identitets säkra poäng-och diagram-API
 

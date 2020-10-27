@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4f5d0a59372fb32b2802a094c247e45740ba3946
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 4dfe1c9595db869a59474a030a5dd8673cf7db24
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295256"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769250"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Spåra din Microsoft säkra Poäng historik och uppfylla målen
 
@@ -60,17 +60,36 @@ På fliken **mått & trender** finns det flera diagram för att du ska få mer i
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>Jämför poängen med dina organisationer som dina
 
-Det finns två platser för att se hur poängen jämförs med organisationer som liknar dig.
+Det finns två platser för att se hur poängen jämförs med organisationer som liknar dig. I båda diagrammen kan du välja **Hantera jämförelser** för att visa och redigera din organisations information. Du kan också skapa en anpassad jämförelse utifrån bransch, organisationens storlek, licenser och regioner.
 
-Den första placeringen är på fliken **Översikt** , där du kan se ett stapeldiagram för jämförelse. Hovra över diagrammet för att Visa poängen och poängen.
+#### <a name="comparison-bar-chart"></a>Jämförelse stapeldiagram
+
+Jämförelse fönstret är fliken **Översikt** . Hovra över diagrammet för att Visa poängen och poängen. Jämförelse data är anonymiserad så vi vet inte exakt vilka andra som har en kombination.
 
 ![Stapeldiagram med likartad Poäng](../../media/secure-score/secure-score-comparison-bar.png)
 
-Den andra platsen finns på fliken **mått & trender** , där du kan se hur organisationens säkra Poäng jämförs med andras över tid.
+- **Organisationer** som du kan ge dig medelvärdet av andra innehavare (förutsatt att minst 5 klienter kan jämföras) som uppfyller följande kriterier:
+    1. Samma bransch
+    2. Samma organisations storlek
+    3. Alla regioner
+    4. Microsoft-produkter som används är 80% liknande
+    5. Affärs möjlighet (högsta poäng som kan uppnås genom aktuell licens) inom 20% från klient organisationen
+
+- **Anpassad jämförelse** : måste konfigureras först genom att välja **Hantera jämförelse** (endast om vi hittar fem eller fler klient organisationer) baserat på följande kriterier:
+    1. Valda branscher
+    2. Vald organisations storlek
+    3. Markerade regioner
+    4. Valda licenser
+    5. Microsoft-produkter som används är 80% liknande
+    6. Affärs möjlighet (högsta poäng som kan uppnås genom aktuell licens) inom 20% från klient organisationen
+
+Om du inte har gjort en markering för att få färre än fem andra innehavare som vi kan jämföra med visas "inte tillgänglig på grund av begränsade data".
+
+#### <a name="comparison-trend"></a>Jämförelse trend
+
+På fliken **mått & trender** kan du se hur organisationens säkra Poäng jämförs med andra med över tiden.
 
 ![Linje diagram med en liknande organisations resultat över tid](../../media/secure-score/secure-score-comparison-trend.png)
-
-I båda diagrammen kan du välja **Hantera jämförelser** för att visa och redigera din organisations information. Du kan också skapa en anpassad jämförelse utifrån bransch, organisationens storlek, licenser och regioner.
 
 ## <a name="we-want-to-hear-from-you"></a>Vi vill höra från dig
 
@@ -81,4 +100,4 @@ Om du har några problem kan du meddela oss genom att publicera det i [säkerhet
 - [Översikt över Microsofts säkra Poäng](microsoft-secure-score.md)
 - [Utvärdera säkerhets genom övergå molnet](microsoft-secure-score-improvement-actions.md)
 - [Kommer snart](microsoft-secure-score-whats-coming.md)
-- [Nyheter](microsoft-secure-score-whats-new.md)
+- [Vad är nytt](microsoft-secure-score-whats-new.md)

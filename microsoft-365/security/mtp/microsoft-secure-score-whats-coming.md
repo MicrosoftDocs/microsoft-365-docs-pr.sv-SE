@@ -17,25 +17,31 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e4a9e5f1606b91e4cd41f29b37db2707f4c7df17
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 5465d1a6dc806cb4f76a34801dee2feb87146ad3
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295088"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769274"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Det här kommer att komma till Microsofts säkra Poäng
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 Vi håller på att göra några ändringar i närmaste framtid och gör [Microsoft säkert Poäng](microsoft-secure-score.md) en bättre representant för din säkerhets Posture och bättre användbarhet. Ditt Poäng och högsta möjliga poäng kan förändras.
 
 ## <a name="proposed-changes"></a>Föreslagna ändringar
 
+### <a name="november-2020"></a>November 2020
+
+Ta bort möjligheten att skapa ServiceNow biljetter genom säkra poäng genom att gå till dela > ServiceNow.
+
+- För hands perioden för ServiceNow-kopplingen är slut. Den här funktionen kommer inte längre att vara tillgänglig i slutet av 2020. Tack för din feedback och fortsatta support medan vi bestämmer nästa steg.
+
 ### <a name="october-2020"></a>Oktober 2020
 
-#### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Ta bort förbättrings åtgärd för Microsoft Defender Avancerat skydd
+Ta bort förbättrings åtgärd för Microsoft Defender Avancerat skydd:
+
 - Ange webb innehålls kontroll för Windows Store-appen för Microsoft Defender SmartScreen
 
 ## <a name="related-resources"></a>Relaterade resurser
@@ -43,4 +49,4 @@ Vi håller på att göra några ändringar i närmaste framtid och gör [Microso
 - [Översikt över Microsofts säkra Poäng](microsoft-secure-score.md)
 - [Utvärdera säkerhets genom övergå molnet](microsoft-secure-score-improvement-actions.md)
 - [Spåra din Microsoft säkra Poäng historik och uppfylla målen](microsoft-secure-score-history-metrics-trends.md)
-- [Nyheter](microsoft-secure-score-whats-new.md)
+- [Vad är nytt](microsoft-secure-score-whats-new.md)

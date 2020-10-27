@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Administratörer kan läsa mer om insikter och rapporter som är tillgängliga i instrument panelen för e-postflöde i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 089c6351485712d841691d5b856b1ba28dfe4fc4
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f9ac8b8b0d346d78af252a9e427d0ef2b1a4c4ea
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198487"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769024"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>E-postflödesinsikter i Säkerhets- och efterlevnadscenter
 
@@ -60,11 +60,11 @@ Tillgängliga insikter är:
 
 ## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>Behörigheter som krävs för att visa instrument panelen för e-postflöde
 
-Instrument panelen för e-postflöde är tillgänglig för medlemmar i följande väg grupper:
+Instrument panelen för e-postflöde är tillgänglig för medlemmar i följande roll grupper:
 
 - **Organisations hantering** i säkerhets & efterlevnad (globala administratörer).
 
-- **[Exchange-administratör](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** i Azure AD.
+- **[Exchange-administratör](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** i Azure Active Directory.
 
 - **Flödes administratör** i säkerhets & regelefterlevnad: om en medlem i den här roll gruppen inte är medlem i roll grupperna global administratör eller Exchange-administratör bör du tänka på följande:
 
@@ -76,6 +76,6 @@ Mer information om behörigheter i säkerhets & Compliance Center finns i [behö
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Här hittar du instrument panelen för e-postflöde
 
-Öppna säkerhets & Compliance Center <https://protection.office.com> , expandera **e-postflöde**och välj **instrument panel**.
+Öppna säkerhets & Compliance Center <https://protection.office.com> , expandera **e-postflöde** och välj **instrument panel** .
 
 Öppna för att gå direkt till instrument panelen för e-postflöde <https://protection.office.com/mailflow/dashboard> .

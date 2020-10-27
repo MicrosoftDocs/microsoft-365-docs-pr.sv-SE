@@ -19,24 +19,27 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: f57fc83f9102e5eeea61deaaadc17203bad030ac
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8992efdd79295b6b56b8f033bd97b10f59a7a4d5
+ms.sourcegitcommit: bd36c88e731e3fee2a3a5cb3564fdc94f11bab94
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195541"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769681"
 ---
 # <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a>Skapa och spåra ServiceNow biljetter i säkerhets Center för Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+>[!CAUTION]
+>**Förhands gransknings perioden för ServiceNow-kopplingen slutar**<br>
+>Denna funktion kommer inte längre att vara tillgänglig i slutet av november 2020. Tack för din feedback och fortsatta support medan vi bestämmer nästa steg.
 
 [Säkerhets Center för Microsoft 365](overview-security-center.md) har förbättrats med möjligheten att skapa och spåra biljetter i ServiceNow. [Lär dig mer om ServiceNow](https://www.servicenow.com/)
 
 I säkerhets Center kan säkerhets administratörer skicka en åtgärd för [säker Poäng](microsoft-secure-score.md) förbättring direkt till ServiceNow och skapa en biljett. Både hantering av problem och hantering av ändringar kan skapas. Spåra biljetter i säkerhets centrets start sida och ServiceNow.
 
 - [**Läs mer om förutsättningar, data utbyte och fel sökning**](tickets.md)
-- **Hantera ServiceNow biljetter i överensstämmelse Center** (kommer snart)
+- **Hantera ServiceNow biljetter i överensstämmelse Center** (ej tillgängligt)
 
 ## <a name="connect-microsoft-365-security-center-to-servicenow"></a>Ansluta Microsoft 365 säkerhets Center till ServiceNow
 
@@ -57,7 +60,7 @@ Lär dig mer om vanliga fel som kan komma att visas i anslutnings processen och 
 
 ## <a name="create-a-task-and-share-it-to-servicenow"></a>Skapa en uppgift och dela den med ServiceNow
 
-När integrationen är aktive rad kan du skapa ServiceNow uppgifter baserat på specifika åtgärder för [säker Poäng](microsoft-secure-score.md) förbättring. Gå till alla åtgärder för säker Poäng förbättring i säkerhets Center för Microsoft 365 och välj **dela**. Ett av de nedrullningsbara alternativen är ServiceNow.
+När integrationen är aktive rad kan du skapa ServiceNow uppgifter baserat på specifika åtgärder för [säker Poäng](microsoft-secure-score.md) förbättring. Gå till alla åtgärder för säker Poäng förbättring i säkerhets Center för Microsoft 365 och välj **dela** . Ett av de nedrullningsbara alternativen är ServiceNow.
 
 En aktivitet skapas där du kan ange prioritet och redigera namn, beskrivning eller förfallo datum. När alla obligatoriska fält är ifyllda skickar du uppgiften till ServiceNow.
 

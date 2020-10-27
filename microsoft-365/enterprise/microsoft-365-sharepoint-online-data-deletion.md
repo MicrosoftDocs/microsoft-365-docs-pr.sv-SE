@@ -17,16 +17,16 @@ f1.keywords:
 - NOCSH
 description: Lär dig hur data borttagning fungerar i SharePoint Online, till exempel var borttagna innehåll lagras och hur länge.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e914e84f3679483e5030b7f2a06913cb052e5411
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 888ee807e6cd4ddc435c1df86a63502a617d6cb8
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332730"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769048"
 ---
 # <a name="sharepoint-online-data-deletion-in-microsoft-365"></a>SharePoint Online-Databorttagning i Microsoft 365
 
-SharePoint Online lagrar objekt som en upplagrad kod i program databaser. När en användare laddar upp en fil till SharePoint Online assembleras den och omvandlas till program kod och lagras i flera tabeller i flera databaser. I SharePoint Online delas allt innehåll som en kund uppladdning till i bitar, krypterat (kan med flera AES 256-bitars nycklar) och distribueras i data centret. Specifik information om delnings-och krypterings processen finns i [kryptering i Microsofts moln](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview). 
+SharePoint Online lagrar objekt som en upplagrad kod i program databaser. När en användare laddar upp en fil till SharePoint Online assembleras den och omvandlas till program kod och lagras i flera tabeller i flera databaser. I SharePoint Online delas allt innehåll som en kund överföring till delar upp i segment, krypterat (med en eller flera AES 256-bitars nycklar) och fördelas i data centret. 
 
 I SharePoint Online bevaras objekt i 93 dagar från den tid du tar bort dem från den ursprungliga platsen. De stannar i webbplatsens pappers korg hela tiden, såvida inte någon tar bort dem från där eller tömmer pappers korgen. I så fall går objekten till pappers korgen för webbplats samlingen, där de kvarstår för resten av 93 dagar. Information om hur du återställer borttagna objekt finns i [återställa objekt i pappers korgen på en SharePoint-webbplats](https://support.office.com/article/6df466b6-55f2-4898-8d6e-c0dff851a0be#ID0EAADAAA=Online
 ) och [återställa borttagna objekt från webbplats samlingens pappers korg](https://support.office.com/article/5fa924ee-16d7-487b-9a0a-021b9062d14b). Bevarande tiden för pappers korgen kan inte konfigureras i SharePoint Online.
