@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: ae4a8b51111c53c2245005a5d863354737335ae2
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 01ee05c69a9b649ce3f0c3b93cbdb68bb7a87c69
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546197"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48774132"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Produktivitetsillustrationer för Microsoft 365
 
@@ -64,7 +64,16 @@ Rekommenderade funktioner för att skydda identiteter och enheter som kommer åt
 |**Objekt**|**Beskrivning**|
 |:-----|:-----|
 |[![Modell affisch: identitet och enhets skydd för Microsoft 365](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [Visa som en PDF-fil](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Ladda ned som PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Ladda ned som Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> Uppdaterat 2020 september|Det är viktigt att använda konsekventa skyddsnivåer för dina data, identiteter och enheter. Den här modellen visar vilka funktioner som är jämförbara med mer information om funktioner för att skydda identiteter och enheter.  <br/> |
-   
+ 
+<a name="BKMK_ediscovery"></a>
+### <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Avancerad eDiscovery-arkitektur i Microsoft 365
+
+Avancerat arbets flöde från slut punkt till slut punkt för Avancerad eDiscovery, inklusive i Microsoft 365 multi-geo-miljöer. 
+
+|**Objekt**|**Beskrivning**|
+|:-----|:-----|
+|[![Modell affisch: Avancerad eDiscovery-arkitektur i Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Visa som en bild](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Ladda ned som PDF](https:download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \| [Ladda ned som Visio](https:download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Uppdaterat 2020|Beskrivs <ul><li>  Arbets flödet från slut punkt till slut punkt i en enda miljö</li><li>Arbets flöde från slut punkt till slut punkt i en Microsoft 365 multi-geo-miljö </li><li>Data flöde från slut punkt till slut punkt som stöder EDRM-arbetsflödet</li> |
+  
 <!--
 
 <a name="BKMK_O365fileprotect"></a>

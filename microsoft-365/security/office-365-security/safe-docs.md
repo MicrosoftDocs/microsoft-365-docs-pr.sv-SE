@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om Safe-dokument i Microsoft 365 E5 eller Microsoft 365 E5 Security.
-ms.openlocfilehash: cc63143d61065bc9528677ff4aec7d3433236ce0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: baa04f74388b702b42a0bdb83a7f0797ace09883
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195337"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48773955"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Säkra dokument i Microsoft 365 E5
 
@@ -32,6 +32,8 @@ Säkra dokument är en funktion i Microsoft 365 E5-eller Microsoft 365 E5-säker
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
 - Säkra dokument är endast tillgängligt för användare med *microsoft 365 E5* -eller *Microsoft 365 E5-säkerhets* licenser. Dessa licenser ingår inte i Office 365-abonnemang för avancerat skydd (ATP).
+
+- Säkra dokument stöds i Microsoft 365-appar för företag (tidigare Office 365 ProPlus) version 2004 eller senare.
 
 - Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com>. Om du vill gå direkt till sidan **betrodda säkerhets** meddelanden via ATP öppnar du <https://protection.office.com/safeattachmentv2> .
 
@@ -47,13 +49,13 @@ Filer som skickas av säkra dokument behålls inte i Defender utöver den tid so
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Använda säkerhets & Compliance Center för att konfigurera betrodda dokument
 
-1. I säkerhets & Compliance Center kan du gå till **Threat Management** \> **policy** , \> **mottagna**och sedan klicka på **globala inställningar**.
+1. I säkerhets & Compliance Center kan du gå till **Threat Management** \> **policy** , \> **mottagna** och sedan klicka på **globala inställningar** .
 
 2. I de **globala inställningarna** som visas konfigurerar du följande inställningar:
 
-   - **Aktivera säkra dokument för Office-klienter**: flytta växlings knappen till höger för att aktivera funktionen: ![ slå på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Aktivera säkra dokument för Office-klienter** : flytta växlings knappen till höger för att aktivera funktionen: ![ slå på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
 
-   - **Tillåt att personer klickar via skyddad vy även om säkra dokument identifierar filen som skadlig**: Vi rekommenderar att du låter det här alternativet vara avstängt (Stäng av växlings knappen till vänster: ![ Växla av ](../../media/scc-toggle-off.png) ).
+   - **Tillåt att personer klickar via skyddad vy även om säkra dokument identifierar filen som skadlig** : Vi rekommenderar att du låter det här alternativet vara avstängt (Stäng av växlings knappen till vänster: ![ Växla av ](../../media/scc-toggle-off.png) ).
 
    Klicka på **Spara** när du är klar.
 
@@ -82,7 +84,7 @@ Detaljerad information om syntax och parametrar finns i [set-AtpPolicyForO365](h
 
 Gör något av följande om du vill kontrol lera att du har aktiverat och konfigurerat säkra dokument:
 
-- I säkerhets & Compliance Center går du till **Threat Management** \> **policy** för inkommande \> **bifogade filer**, klickar på **globala inställningar**och verifierar alternativet **Aktivera säkra dokument för Office-klienter** och **tillåter att personer klickar via skyddad vy även om säkra dokument identifierar filen som skadlig** inställningar.
+- I säkerhets & Compliance Center går du till **Threat Management** \> **policy** för inkommande \> **bifogade filer** , klickar på **globala inställningar** och verifierar alternativet **Aktivera säkra dokument för Office-klienter** och **tillåter att personer klickar via skyddad vy även om säkra dokument identifierar filen som skadlig** inställningar.
 
 - Kör följande kommando i Exchange Online PowerShell och kontrol lera egenskapsvärdena:
 
