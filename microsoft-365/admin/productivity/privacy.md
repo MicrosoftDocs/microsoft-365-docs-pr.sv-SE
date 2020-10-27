@@ -20,28 +20,30 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Hur integritet skyddas med produktivitets poängen.
-ms.openlocfilehash: 799d532ca1f0abd5fa6234052d4875a79d629601
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 1af2553e67b4f14e9783c23d679a7ac96443512a
+ms.sourcegitcommit: e8b3855302fc34d09b6df6c737033a2f326d6eee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48287332"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48770053"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Integritets inställningar för produktivitets Poäng
 
-Produktivitets poäng gör det lättare för organisationer att omvandla hur arbete görs med insikter om hur människor använder Microsoft 365 och de teknik funktioner som har stöd för dem. Poängen reflekterar din organisation&#39;s prestanda i förhållande till anställda och teknik och jämför poängen med organisationer som du vill. Mer information finns i avsnittet om [produktivitets Poäng](productivity-score.md) .
+Produktivitets Poäng hjälper organisationer att omvandla hur arbete görs med mät värden som hjälper dig att mäta och förbättra folk-och teknik upplevelsen. Det hjälper dig att få en överblick över hur organisationen fungerar, ger dig Mät värden som hjälper dig att fokusera på att aktivera förbättrade funktioner.  Du kan också ansluta måtten till åtgärder för att hjälpa dig att uppdatera färdigheter och system så att alla kan göra sitt bästa arbete. Poängen återspeglar organisationens prestanda och gör det också möjligt för dig att på ett säkert sätt jämföra poängen med andra organisationer som du själv.  Mer information finns i [Översikt över produktivitets Poäng](productivity-score.md).
 
-Din integritet är viktig för oss och du kan läsa Microsofts sekretess policy [här](https://privacy.microsoft.com/privacystatement). I produktivitets Poäng finns viktig information som vi tillhandahåller för hur personer i din organisation jobbar. Därför strävar vi också efter att kontrol lera att uppgifterna är åtgärdade på ett meningsfullt sätt utan att kompromissa med förtroendet som du lägger in i USA.
+Din integritet är viktig för oss. Information om hur vi skyddar din integritet finns i [Microsofts sekretess policy](https://privacy.microsoft.com/privacystatement). Produktivitets poäng ger viktig information om hur personer i din organisation samarbetar tillsammans med kontroller för att kontrol lera att informationen är åtgärdad utan att det bevaras i Microsoft.
 
-Vi tillhandahåller följande kontroller för att möjliggöra säkrare hantering av data:
+I området personer kan du använda mått på organisations nivå och alla användare i din Microsoft 365-klient. Det här området visar hur personer använder Microsoft 365 genom att titta på kategorier av innehålls samarbete, mobilitet, möten, samarbete och kommunikation. För att hjälpa dig att öka utbildning och medvetenhet till rätt uppsättning personer som kan behöva support med våra produkter finns det också information på individuell nivå. Även om vi tillhandahåller den här genomskinlighets nivån kan vi också göra det möjligt för dig att möta dina interna integritets policy behov.
+Följande kontroller ger dig:
 
 - Flexibla administratörs roller för att kontrol lera vem som kan se informationen i produktivitets poängen.
-- Anonymisering på användar nivå mått.
-- Möjlighet att välja bort en persons upplevelse.
+- Möjlighet att identifiera mått på användar nivå.
+- Möjlighet att avanmäla folk upplevelsen.
+- Möjligheten att välja bort området personer
 
 ## <a name="flexible-admin-roles-to-control-who-can-see-the-information-in-productivity-score"></a>Flexibla administratörs roller för att styra vem som kan se informationen i produktivitets poängen
 
-För att se hela produktivitets poängen med en administratörs roll, inklusive uppgifter om klient organisations nivå och per användares nivå, bör din roll vara något av följande:
+För att visa hela produktivitets poängen, inklusive uppgifter om klient organisations nivå och per användare, bör din roll vara en av följande administratörs roller:
 
 - Global administratör
 - Exchange-administratörer
@@ -51,28 +53,28 @@ För att se hela produktivitets poängen med en administratörs roll, inklusive 
 - Global läsare
 - Rapport läsare
 
-Om du vill bjuda in personer som är ansvariga för ändrings hantering och antagande, men inte är IT-administratörer i upplevelsen, samtidigt som du ger dem till gång till den fullständiga versionen av klient nivåer och användar nivå, kan du ge dem rapporterings läsarens roll.
+Koppla rollen rapport läsare till vem som är ansvarig för ändrings hantering och antagande. Den här rollen ger dem till gång till den fullständiga upplevelsen, inklusive nivå mått för klient nivå och uppgifter per användare.
 
-I den anställdes upplevelse tillhandahåller vi aktivitets information per användare i rutnäts format för varje kategori informations sida. Eftersom den här detalj nivån inte är lämplig för alla potentiella besökare av produktivitets poängen har vi skapat en anpassad roll i Azure AD – översikt över användnings sammandrag – för att ge till gång till en bredare uppsättning besökare inom din organisation till endast aggregerade mått och ingen information per nivå.
+Rapporten personer upplever innehåller aktivitets information per användare för varje kategori detalj sida. Skapa en anpassad roll som kallas användnings översikt rapporter (som är tillgänglig från och med början 29 oktober 2020) för att tillåta åtkomst till personernas samlade mått.
 
 :::image type="content" source="../../media/communicationspage.jpg" alt-text="Sidan kommunikation i produktivitets rapporterna.":::
 
-## <a name="anonymization-of-user-level-metrics"></a>Anonymisering på användar nivå mått
+## <a name="de-identification-of-user-level-metrics"></a>Avidentifiering av mått på användar nivå
 
-Du måste vara global administratör för att data ska samlas in för anonyma rapporter. Då döljs identifierbar information som användare, grupper och webbplats namn i alla rapporter – inklusive produktivitets Poäng och Microsoft 365-användning.
+Du måste vara global administratör för att data ska samlas in för anonyma rapporter. Den här åtgärden kommer att dölja identifierbar information som användare, grupper och webbplats namn i alla rapporter – inklusive produktivitets Poäng och Microsoft 365-användning.
 
-1. Gå till **Inställningar**i administrations centret   >   **Org Settings** och välj **rapporter**på fliken **tjänster** .
-2. Välj  **rapporter** och välj sedan om du vill  **Visa anonyma identifierare för användare, grupp och webbplats namn i produktivitets-och användnings rapporter**. Denna inställning tillämpas både på användnings rapporterna och i programmet.
-3. Välj  **Spara ändringar**.
+1. Gå till **Inställningar** i administrations centret   >   **Org Settings** och välj **rapporter** på fliken **tjänster** .
+2. Välj  **rapporter** och välj sedan om du vill  **Visa anonyma identifierare för användare, grupp och webbplats namn i produktivitets-och användnings rapporter** . Den här inställningen tillämpas både på användnings rapporterna och i programmet.
+3. Välj  **Spara ändringar** .
 
-:::image type="content" source="../../media/orgsettings_anonymous.jpg" alt-text="Gör användar informationen anonym för rapporter.":::
+:::image type="content" source="../../media/orgsettings_anonymous.jpg" alt-text="Sidan kommunikation i produktivitets rapporterna.":::
 
-## <a name="capability-to-opt-out-of-employee-experience"></a>Möjlighet att välja ut en persons upplevelse
+## <a name="capability-to-opt-out-of-people-experiences"></a>Möjlighet att avanmäla folk upplevelsen
 
-Vi kommer även att få möjlighet att välja ut den anställdas erfarenhet av produktivitets poäng till allmän tillgänglighet. Om du aktiverar den här inställningen för att förhindra att någon från din organisation kan visa dessa mått och ta bort din organisation från alla typer av kommunikation, möten, samarbete, innehålls samarbete och rörlighet.
+När produktivitets poängen är allmänt tillgänglig kan du även välja att gå ur området personer med produktivitets poäng. Om du avmarkerar kan ingen från organisationen Visa dessa mått och din organisation tas bort från alla beräkningar som berör kommunikation, möten, samarbete, innehålls samarbete och mobilitet.
 
-1. Gå till **Inställningar**i administrations centret   >   **Org Settings** och välj **rapporter**på fliken **tjänster** .
-2. Välj  **rapporter** och sedan avmarkerar du kryss rutan  **dela organisationens&#39;s-data med produktivitets Poäng för anställda**. Om du vill förstå hur du ändrar inställningar för data delning för slut punkts analys i Intune Configuration Manager klickar du på **Mer information**.
-3. Välj  **Spara ändringar**.
+1. Gå till **Inställningar** i administrations centret   >   **Org Settings** och välj **rapporter** på fliken **tjänster** .
+2. Välj **rapporter** och avmarkera sedan kryss rutan **för att visa att Microsoft 365-användnings data ska användas för folk upplevelsen.** Om du vill förstå hur du ändrar inställningar för data delning för slut punkts analys i Intune Configuration Manager klickar du på **Mer information** .
+3. Välj  **Spara ändringar** .
 
-:::image type="content" source="../../media/orgsettingspageoptout.jpg" alt-text="Sidan organisations inställningar där du kan välja mellan en persons upplevelse.":::
+:::image type="content" source="../../media/orgsettingspageoptout.jpg" alt-text="Sidan kommunikation i produktivitets rapporterna.":::
