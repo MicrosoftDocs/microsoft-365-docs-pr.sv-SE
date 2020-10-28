@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: c1a7cd4d8f00c9e2433601903efd1fba7bb587f9
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: dff2ea4e144f8f8fcc0f42732141e110effe7e9e
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681738"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48774099"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Kontrol lera automatisk extern e-postvidarebefordran i Microsoft 365
 
@@ -35,30 +35,34 @@ Följande typer av automatisk vidarebefordran är tillgängliga i Microsoft 365:
 
 Du kan använda filter principer för utgående e-post för att styra automatisk vidarebefordran till externa mottagare. Tre inställningar är tillgängliga:
 
-- **Automatisk**: Automatisk extern vidarebefordran är blockerad. Intern automatisk vidarebefordran av meddelanden fortsätter att fungera. Detta är standardinställningen.
-- **Den**: Automatisk extern vidarebefordran är tillåten och inte begränsad.
-- **Av**: Automatisk extern vidarebefordran är inaktiverat och resulterar i en rapport om utebliven leverans (kallas även för ett NDR-eller studs meddelande) för avsändaren.
+- **Automatisk** : Automatisk extern vidarebefordran är blockerad. Intern automatisk vidarebefordran av meddelanden fortsätter att fungera. Detta är standardinställningen.
+
+- **Den** : Automatisk extern vidarebefordran är tillåten och inte begränsad.
+
+- **Av** : Automatisk extern vidarebefordran är inaktiverat och resulterar i en rapport om utebliven leverans (kallas även för ett NDR-eller studs meddelande) för avsändaren.
 
 Anvisningar om hur du konfigurerar dessa inställningar finns i [Konfigurera utgående skräp post filtrering i EOP](configure-the-outbound-spam-policy.md).
 
-**Anmärkningar**:
-
-- Om du inaktiverar automatisk vidarebefordran inaktive ras även regler för Inkorgen som omdirigerar meddelanden till externa adresser.
-
-- Automatisk vidarebefordran av meddelanden mellan interna användare påverkas inte av inställningarna i principer för skräp post filter.
-
-- Du kan se information om användare som automatiskt vidarebefordrar meddelanden till externa mottagare i [rapporten för automatiskt vidarebefordrade meddelanden](mfi-auto-forwarded-messages-report.md).
+> [!NOTE]
+> 
+> - Om du inaktiverar automatisk vidarebefordran inaktive ras även regler för Inkorgen som omdirigerar meddelanden till externa adresser.
+> 
+>   Office 365 tillåter inte automatisk extern vidarebefordran av antingen Inkorgshanteraren eller post lådans konfiguration, vilket ger en säker standard princip. Administratören kan dock ändra dessa inställningar för alla eller vissa användare i organisationen. Skapa [regler för utgående skräp post](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true#use-the-security--compliance-center-to-create-outbound-spam-policies) och ändra avsnittet för automatisk vidarebefordran för att styra automatisk vidarebefordran av e-post till externa avsändare. Detta kan senare tillämpas på de interna avsändarna som policyn gäller för. Vidarebefordrade meddelanden mellan interna användare påverkas inte av en sådan modifiering.
+> 
+> - Du kan se information om användare som automatiskt vidarebefordrar meddelanden till externa mottagare i [rapporten för automatiskt vidarebefordrade meddelanden](mfi-auto-forwarded-messages-report.md).
 
 ## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>Så fungerar princip inställningarna för utgående skräp post med andra kontroller för automatisk e-postvidarekoppling
 
-Som administratör kan du ha konfigurerat andra kontroller för att tillåta eller blockera automatisk vidarebefordran av e-post. Ett exempel:
+Som administratör kan du ha konfigurerat andra kontroller för att tillåta eller blockera automatisk vidarebefordran av e-post. Till exempel:
 
 - [Fjärrdomäner](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains) för att tillåta eller blockera automatisk vidarebefordran av e-post till vissa eller alla externa domäner.
+
 - Villkor och åtgärder i regler för Exchange [-postflöde](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (kallas även transport regler) för att identifiera och blockera automatiskt vidarebefordrade meddelanden till externa mottagare.
 
-Inställningar för fjärrdomäner och e-postflöde är oberoende av inställningarna i principer för skräp post filter. Ett exempel:
+Inställningar för fjärrdomäner och e-postflöde är oberoende av inställningarna i principer för skräp post filter. Till exempel:
 
 - Du tillåter automatisk vidarebefordring för en fjärran sluten domän, men du blockerar automatisk vidarebefordran i filter principer för utgående e-post. I det här exemplet blockeras automatiskt vidarebefordrade meddelanden.
+
 - Du tillåter automatisk vidarebefordran i principer för skräp post filter, men du använder regler för e-post och domän inställningar för att blockera automatiskt vidarebefordrade e-postmeddelanden. I det här exemplet blockerar inställningarna för e-postflöden eller fjärrdomäner automatiskt vidarebefordrade meddelanden.
 
 Med den här funktionen kan du (till exempel) tillåta automatisk vidarebefordran i filter principer för utgående e-post, men Använd fjärrdomäner för att styra vilka externa domäner användarna kan vidarekoppla meddelanden till.

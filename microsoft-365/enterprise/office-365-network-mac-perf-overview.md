@@ -15,22 +15,24 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Översikt över nätverks anslutningar i Microsoft 365 Admin Center (för hands version)
-ms.openlocfilehash: fcc70f7c76b92ecf113158cdac8eecdfb9852351
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: d7ccbad83bbe0b6c3b88001c285db370afcb8510
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456429"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48774087"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Nätverks anslutning i Microsoft 365 Admin Center (för hands version)
 
 Administrations centret för Microsoft 365 inkluderar nu sammansatta nätverks anslutnings mått som samlas in från din Microsoft 365-klient organisation och som bara kan visas av administrativa användare i din klient organisation.
 
-![Test verktyg för nätverks anslutning](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
+> [!div class="mx-imgBorder"]
+> ![Test verktyg för nätverks anslutning](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
-**Nätverks utvärderingar** och **nätverks insikter** visas i administrations centret för Microsoft 365 under **hälsa |. Anslutning**.
+**Nätverks utvärderingar** och **nätverks insikter** visas i administrations centret för Microsoft 365 under **hälsa |. Anslutning** .
 
-![Sidan nätverks prestanda](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
+> [!div class="mx-imgBorder"]
+> ![Sidan nätverks prestanda](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
 >[!NOTE]
 >Nätverks anslutnings verktyget har stöd för innehavare i WW kommersiell och Tyskland, men inte GCC måttlig, GCC hög, DoD eller Kina.
@@ -49,7 +51,7 @@ Medan nätverks anslutningen kan utvärderas i hela organisationen måste alla f
 
 För det här alternativet måste du ha minst två datorer som körs på varje Office-plats som stöder kraven. OneDrive för Windows version **19,232** eller senare måste vara installerat på varje dator. Mer information om OneDrive-versioner finns i [versions anteckningar för OneDrive](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Nätverks mått planeras för att läggas till i andra Office 365-klientprogram i nära framtid.
 
-Windows plats tjänst måste skickas på maskiner. Du kan testa detta genom att köra programmet **kartor** och hitta dig själv. Den kan aktive ras på en enskild dator med **Inställningar | Integritet | Plats** där inställningen _Låt appar få åtkomst till din plats_ måste vara aktive rad. Windows plats tjänst medgivande kan distribueras till datorer som använder MDM eller grup princip med inställningen _LetAppsAccessLocation_.
+Windows plats tjänst måste skickas på maskiner. Du kan testa detta genom att köra programmet **kartor** och hitta dig själv. Den kan aktive ras på en enskild dator med **Inställningar | Integritet | Plats** där inställningen _Låt appar få åtkomst till din plats_ måste vara aktive rad. Windows plats tjänst medgivande kan distribueras till datorer som använder MDM eller grup princip med inställningen _LetAppsAccessLocation_ .
 
 Du behöver inte lägga till platser i administrations centret med den här metoden eftersom de automatiskt identifieras i plats upplösningen. Du kan inte Visa flera Office-platser i en stad med hjälp av Windows Location Services. Plats information avrundas också till närmaste 300-mätare med 300 meter innan de laddas upp så att mer exakta plats information inte är möjlig för åtkomst.
 
@@ -65,11 +67,11 @@ Du måste också lägga till platser på sidan Nätverks anslutning för adminis
 
 Eftersom du lägger till platserna kan du ha flera kontor definierade i en stad.
 
-Mät exempel och Office-platser bör komma att visas i 24 timmar efter att dessa förutsättningar uppfylls.
+Alla test mått från klient datorer inkluderar informationen om LAN-undernätet, som är korrelerad med de Office-plats uppgifter som du har angett. Mät exempel och Office-platser bör komma att visas i 24 timmar efter att dessa förutsättningar uppfylls.
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. samla in test rapporter manuellt med testverktyget Microsoft 365 Network Connectivity
 
-För det här alternativet måste du identifiera en person på varje plats. Be dem gå till [Microsoft 365-nätverks anslutnings test](https://connectivity.office.com) på en Windows-dator där de har administratörs behörighet. På webbplatsen måste de logga in på sitt Office 365-konto för samma organisation som du vill visa resultatet. Då ska de klicka på **Kör test**. Under testet finns ett hämtat anslutnings test-EXE. De måste öppna och köra det också. När testerna är klara laddas test resultatet till Office 365.
+För det här alternativet måste du identifiera en person på varje plats. Be dem gå till [Microsoft 365-nätverks anslutnings test](https://connectivity.office.com) på en Windows-dator där de har administratörs behörighet. På webbplatsen måste de logga in på sitt Office 365-konto för samma organisation som du vill visa resultatet. Då ska de klicka på **Kör test** . Under testet finns ett hämtat anslutnings test-EXE. De måste öppna och köra det också. När testerna är klara laddas test resultatet till Office 365.
 
 Test rapporter länkas till en plats om den har lagts till med informationen i LAN-undernätet, annars visas de endast på ort platsen.
 
@@ -77,7 +79,7 @@ Mät exempel och Office-platser bör börja visas 2-3 minuter när en test rappo
 
 ## <a name="how-do-i-use-this-information"></a>Hur använder jag den här informationen?
 
-**Nätverks insikter**, deras relaterade prestanda rekommendationer och nätverks utvärderingar är avsedda att hjälpa dig att utforma nätverks gränser för dina Office-platser. Varje Insight innehåller information om prestanda egenskaper för ett specifikt gemensamt problem för varje geografisk plats där användare kan komma åt din klient organisation. **Prestanda rekommendationer** för varje nät i nätverket du kan göra ändringar i nätverks arkitektur för att förbättra användar upplevelsen för Microsoft 365-nätverksanslutningar. Nätverks utvärderingen visar hur nätverks anslutningen påverkar användar upplevelsen och möjliggör jämförelse av olika användares nätverks anslutningar.
+**Nätverks insikter** , deras relaterade prestanda rekommendationer och nätverks utvärderingar är avsedda att hjälpa dig att utforma nätverks gränser för dina Office-platser. Varje Insight innehåller information om prestanda egenskaper för ett specifikt gemensamt problem för varje geografisk plats där användare kan komma åt din klient organisation. **Prestanda rekommendationer** för varje nät i nätverket du kan göra ändringar i nätverks arkitektur för att förbättra användar upplevelsen för Microsoft 365-nätverksanslutningar. Nätverks utvärderingen visar hur nätverks anslutningen påverkar användar upplevelsen och möjliggör jämförelse av olika användares nätverks anslutningar.
 
 **Nätverks utvärderingar** destillerar en mängd av många nätverks prestanda mått till en ögonblicks bild av företagets nätverks hälsa, som representeras av ett Points-värde från 0-100. Nätverks utvärderingar bevaras till både hela klient organisationen och för varje geografisk plats där användare ansluter till din klient organisation och ger Microsoft 365-administratörer ett enkelt sätt att omedelbart förstå en gestalt av företagets nätverks tillstånd och snabbt öka detalj nivån till en detaljerad rapport för alla globala Office-platser.
 
@@ -88,7 +90,8 @@ Komplexa företag med flera Office-platser och icke-trivial nätverks-arkitektur
 
 ## <a name="enterprise-network-connectivity-challenges"></a>Problem med nätverks anslutning för företag
 
-![Kund nätverk till molnet](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
+> [!div class="mx-imgBorder"]
+> ![Kund nätverk till molnet](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
 
 Många företag har nätverks-och konfigurations-konfigurationer som har vuxit över tiden och är främst utformade för att hantera Internet åtkomst på webb sidor där de flesta webbplatserna inte är kända och inte är betrodda. Den rådande och nödvändiga fokus är att undvika skadlighet och fiske attacker från dessa okända webbplatser. Den här strategin för nätverks konfiguration, och användbar i säkerhets syfte, kan leda till försämring av Microsoft 365-användarnas prestanda och användar miljö.
 
@@ -98,7 +101,7 @@ Företag kan förbättra allmän användar upplevelsen och skydda sin miljö gen
 
 Microsoft har ibland bett om att undersöka problem med nätverkets prestanda med Microsoft 365 för stora företags kunder och dessa har en rotorsak som är relaterad till kundernas nätverks gräns infrastruktur. När en gemensam rotorsak av en kunds nätverks gräns upptäcks hittas vi för att identifiera enkla test mått som identifierar det. Ett test med en mätnings tröskel som identifierar ett specifikt problem är värdefullt, eftersom vi kan testa samma mått när som helst, ta reda på om den här rotor saken finns där och dela den som ett nätverk med administratörs behörighet.
 
-Vissa nätverks insikter tyder bara på ett problem som behöver undersökas. Ett nätverk där vi har tillräckligt många test för att visa en särskild reparations åtgärd för att åtgärda orsaken till att rotor Saks uppdateringen visas som en **Rekommenderad åtgärd**. De här rekommendationerna, baserat på Live-mått som visar värden som ligger utanför en förutbestämd tröskel, är mycket mer värdefulla än den allmänna bästa metod rådgivningen eftersom de är specifika för din miljö och visar den faktiska förbättringen när de rekommenderade ändringarna har gjorts.
+Vissa nätverks insikter tyder bara på ett problem som behöver undersökas. Ett nätverk där vi har tillräckligt många test för att visa en särskild reparations åtgärd för att åtgärda orsaken till att rotor Saks uppdateringen visas som en **Rekommenderad åtgärd** . De här rekommendationerna, baserat på Live-mått som visar värden som ligger utanför en förutbestämd tröskel, är mycket mer värdefulla än den allmänna bästa metod rådgivningen eftersom de är specifika för din miljö och visar den faktiska förbättringen när de rekommenderade ändringarna har gjorts.
 
 ## <a name="network-connectivity-overview-in-the-microsoft-365-admin-center"></a>Översikt över nätverks anslutningen i administrations centret för Microsoft 365
 
@@ -106,21 +109,25 @@ Microsoft har befintliga nätverks mått från flera Office-och webb klienter so
 
 Som standard identifierar ungefärlig plats information som är associerad med nätverks måtten den ort där klient enheter finns. Nätverks utvärderingen vid varje plats visas med färg och det relativa antalet användare på varje plats representeras av storleken på cirkeln.
 
-![Kart karta för nätverks översikt](../media/m365-mac-perf/m365-mac-perf-overview-map.png)
+> [!div class="mx-imgBorder"]
+> ![Kart karta för nätverks översikt](../media/m365-mac-perf/m365-mac-perf-overview-map.png)
 
 Översikts sidan visar även nätverks utvärdering för kunden som ett vägt medelvärde på alla Office-platser.
 
-![Nätverks utvärdering](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
+> [!div class="mx-imgBorder"]
+> ![Nätverks utvärdering](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
 Du kan visa en tabellvy över de platser där de kan filtreras, sorteras och redige ras på fliken platser. Platser med specifika rekommendationer kan även omfatta en uppskattad möjlig tids fördröjning. Detta beräknas genom att ta median fördröjningen för dina organisations användare på platsen och subtrahera median svars tiden för alla organisationer i samma stad.
 
-![Platser för nätverks information](../media/m365-mac-perf/m365-mac-perf-locations.png)
+> [!div class="mx-imgBorder"]
+> ![Platser för nätverks information](../media/m365-mac-perf/m365-mac-perf-locations.png)
 
 ## <a name="specific-office-location-network-performance-summary-and-insights"></a>Sammanfattning och insikter om nätverks prestanda för Office-plats
 
 När du väljer en Office-plats öppnas en plats-specifik sammanfattnings sida med information om nätverks utgången som har identifierats från måtten för den platsen.
 
-![Information om nätverks insikter per plats](../media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
+> [!div class="mx-imgBorder"]
+> ![Information om nätverks insikter per plats](../media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
 
 En karta över perimeternätverket för organisationens användare på platsen visas med vissa eller alla av följande element:
 
@@ -139,7 +146,8 @@ Jämförelser mellan kunder i samma stad baseras på förväntad användning av 
 
 Fliken information på sidan Office-plats visar de specifika Mät resultaten som användes för att komma igång med eventuella insikter, rekommendationer och nätverks utvärdering. Det här är ett sådant sådant att nätverks ingenjörer kan verifiera rekommendationerna och faktorn i alla begränsningar eller i deras miljö.
 
-![Plats-specifika uppgifter](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
+> [!div class="mx-imgBorder"]
+> ![Plats-specifika uppgifter](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
 
 ## <a name="csv-import-for-lan-subnet-office-locations"></a>CSV-import för LAN-undertjänster Office-platser
 
@@ -148,26 +156,34 @@ För identifiering av ett Office-kontor måste du lägga till varje plats i för
 I CSV-filen visas en plats i kolumnen userEntered som Tom och en manuellt tillagd Office-plats visas som 1.
 
 1. I huvud _anslutningen till Microsoft 365_ -fönstret klickar du på fliken **platser** .
+
 1. Klicka på knappen **Importera** precis ovanför plats listan. Den utfällbara **Office-platsen** visas.
 
-   ![CSV-import](../media/m365-mac-perf/m365-mac-perf-import.png)
+   > [!div class="mx-imgBorder"]
+   > ![CSV-import](../media/m365-mac-perf/m365-mac-perf-import.png)
 
 1. Klicka på länken **Hämta aktuella Office-platser (. csv)** för att exportera den aktuella plats listan till en CSV-fil och spara den på din lokala hård disk. Då får du en korrekt formaterad CSV med kolumn rubriker som du kan lägga till platser i. Du kan lämna de befintliga exporterade platserna som de är. de dupliceras inte när du importerar den uppdaterade CSV-filen. Om du vill ändra adressen för en befintlig plats uppdateras den när du importerar CSV-filen. Du kan inte ändra adressen för en hittad stad.
+
 1. Öppna CSV-filen och Lägg till platserna genom att fylla i följande fält på en ny rad för varje plats som du vill lägga till. Lämna alla andra fält tomma; värden som du anger i andra fält kommer att ignoreras.
+
    1. **userEntered** (obligatoriskt): måste vara 1 för en ny LAN-plats för kontoret
    1. **Adress** (obligatoriskt): Office fysiska adress
    1. **Latitude** (valfritt): ifyllt från Bing Maps Sök efter adressen om den är tom
    1. **Longitud** (valfritt): ifylld från Bing Maps Sök efter adressen om den är tom
    1. **Utgående IP-adressintervall 1-5** (valfritt): Ange namnet på kretsen följt av en blankstegsavgränsad lista med giltiga IPv4-eller IPv6-CIDR-adresser för varje intervall. Dessa värden används för att skilja på flera Office-platser där du använder samma IP-adresser för LAN under nätet. Utgående IP-adressintervall måste vara/24 nätverks storlek och/24 ingår inte i indata.
    1. **LanIps** (obligatoriskt): Visa en lista över de LAN-undernät som används på denna Office-plats. ID för LAN-undernät måste ha en CIDR-nätverks storlek som ingår där nätverks storleken kan vara mellan/8 och/eller 29. Flera LAN-undernät kan avgränsas med kommatecken eller semikolon.
+   
 1. När du har lagt till dina Office-platser och sparat filen klickar du på knappen **Bläddra** bredvid fältet **överför det ifyllda** och väljer den sparade CSV-filen.
+
 1. Filen val IDE ras automatiskt. Om det finns verifierings fel visas ett fel meddelande om att _det finns några fel i import filen. Granska felen, korrigera import filen och försök igen._ Klicka på **fel informationen** för länken öppna för att få en lista över specifika fält verifierings fel.
 
-   ![Fel meddelande i CSV-import](../media/m365-mac-perf/m365-mac-perf-import-error.png)
+   > [!div class="mx-imgBorder"]
+   > ![Fel meddelande i CSV-import](../media/m365-mac-perf/m365-mac-perf-import-error.png)
 
 1. Om det inte finns några fel i filen visas meddelandet _rapporten är klar. X platser att lägga till och x-platser att uppdatera._ Klicka på knappen **Importera** för att överföra CSV-filen.
 
-   ![CSV import klar meddelande](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
+   > [!div class="mx-imgBorder"]
+   > ![CSV import klar meddelande](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
 ## <a name="faq"></a>Vanliga frågor och svar
 
