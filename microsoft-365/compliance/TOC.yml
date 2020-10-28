@@ -238,6 +238,8 @@
           href: create-test-tune-dlp-policy.md
         - name: Använda aviseringar och principtips i DLP-principer
           href: use-notifications-and-policy-tips.md
+        - name: Konfigurera och visa varningar för DLP-principer (förhandsversion)
+          href: dlp-configure-view-alerts-policies.md
         - name: Det här innehåller DLP-principmallarna
           href: what-the-dlp-policy-templates-include.md
         - name: Skapa en DLP-princip för att skydda dokument med FCI eller andra egenskaper
