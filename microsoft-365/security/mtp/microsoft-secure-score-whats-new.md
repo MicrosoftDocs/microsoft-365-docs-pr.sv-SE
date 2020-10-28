@@ -20,18 +20,24 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 71316d6c53862b80178d06726f7c249a2491d659
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: a7d79684a085072e1af113bc0466ab26574ab904
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769036"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779238"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nyheter i Microsofts säkra Poäng
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 Vi har gjort några ändringar för att göra Microsoft säkert poäng en bättre representant för dina säkerhets Posture. Om du vill veta mer om planerade ändringar kan du läsa [vad som kommer i Microsofts säkra Poäng?](microsoft-secure-score-whats-coming.md).
+
+## <a name="october-2020"></a>Oktober 2020
+
+### <a name="remove-improvement-action-related-to-microsoft-defender-advanced-threat-protection"></a>Ta bort förbättrings åtgärd för Microsoft Defender Avancerat skydd
+
+- Ange webb innehålls kontroll för Windows Store-appen för Microsoft Defender SmartScreen
 
 ## <a name="august-2020"></a>Augusti 2020
 

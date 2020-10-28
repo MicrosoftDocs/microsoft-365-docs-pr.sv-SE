@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 5465d1a6dc806cb4f76a34801dee2feb87146ad3
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: 82ec67cae86525c055b2232667cccb603830d15f
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769274"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779254"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Det här kommer att komma till Microsofts säkra Poäng
 
@@ -34,15 +34,33 @@ Vi håller på att göra några ändringar i närmaste framtid och gör [Microso
 
 ### <a name="november-2020"></a>November 2020
 
-Ta bort möjligheten att skapa ServiceNow biljetter genom säkra poäng genom att gå till dela > ServiceNow.
+Ta bort möjligheten att skapa ServiceNow biljetter genom säkra poäng genom att gå till **dela > ServiceNow** .
 
 - För hands perioden för ServiceNow-kopplingen är slut. Den här funktionen kommer inte längre att vara tillgänglig i slutet av 2020. Tack för din feedback och fortsatta support medan vi bestämmer nästa steg.
 
-### <a name="october-2020"></a>Oktober 2020
+Lägga till 18 förbättrings åtgärder relaterade till Microsoft Defender för slut punkt (tidigare Microsoft Defender ATP):
 
-Ta bort förbättrings åtgärd för Microsoft Defender Avancerat skydd:
+Rekommenderade problem med attack ytan (ASR):
+- Blockera körbart innehåll från e-postklient och WebPost
+- Blockera alla Office-program från att skapa underordnade processer
+- Blockera Office-program från att skapa körbart innehåll
+- Blockera Office-program från att injicera kod i andra processer
+- Blockera java script eller VBScript från att starta hämtat körbart innehåll
+- Blockera körning av potentiellt Obfuscated-skript
+- Blockera Win32 API-samtal från Office-makron
+- Blockera körbara filer från att köras såvida de inte uppfyller villkoren för ett förekomst-, ålder eller betrott lista
+- Använd avancerat skydd mot utpressnings tro Jan
+- Blockera autentiseringsuppgifter som stjäls från Windows Local Security Authority Subsystem (lsass.exe)
+- Blockera skapande av processer från PSExec-och WMI-kommandon
+- Blockera icke-betrodda och osignerade processer som körs från USB
+- Blockera Office-kommunikationsprogram från att skapa underordnade processer
+- Blockera Adobe Reader från att skapa underordnade processer
+- Blockera beständighet via WMI-prenumeration
 
-- Ange webb innehålls kontroll för Windows Store-appen för Microsoft Defender SmartScreen
+Service rekommendationer:
+- Åtgärda den icke-citerade tjänst Sök vägen för Windows-tjänster
+- Ändra sökvägen till den körbara filen till en gemensam skyddad plats
+- Ändra tjänst konto för att undvika cachelagrat lösen ord i Windows-registret
 
 ## <a name="related-resources"></a>Relaterade resurser
 
