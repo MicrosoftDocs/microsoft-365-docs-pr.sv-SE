@@ -21,19 +21,19 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Lär dig hur du anger en förfalloprincip för lösenord i organisationen i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 59e9f4e36843d7c5d977a49d42ae0a11e9a2db25
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 39726846d591b2d1f72a89a7dc59038c726a8e80
+ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362115"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48787528"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Ange förfalloprincip för lösenord i organisationen
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-worldwide).
 
 ::: moniker-end
 
@@ -56,28 +56,24 @@ Följ anvisningarna nedan om du vill ställa in så att användarlösenorden ska
 > [!IMPORTANT]
 > Endast [globala administratörer](../add-users/about-admin-roles.md) kan utföra de här stegen.
   
-1. I administrationscentret för går du till fliken **inställningar** \> **organisationsinställningar**.
+1. I administrationscentret för går du till fliken **inställningar** \> **organisationsinställningar** .
 
 2. Gå till sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Säkerhet och sekretess</a>.
  Om du inte är global administratör visas inte alternativet Säkerhet och sekretess.
   
-3. Välj **Förfalloprincip för lösenordet**.
+3. Välj **Förfalloprincip för lösenordet** .
   
-4. Om du inte vill att användarna ska behöva ändra lösenord markerar du kryssrutan bredvid **Ställ in så att användarlösenord upphör att gälla efter ett visst antal dagar**.
+4. Om du inte vill att användarna ska behöva ändra lösenord markerar du kryssrutan bredvid **Ställ in så att användarlösenord upphör att gälla efter ett visst antal dagar** .
   
 5. Ange hur ofta lösenord ska upphöra. Välj ett antal dagar mellan 14 och 730.
   
-6. I den andra rutan anger du när användarna underrättas om att deras lösenord upphör att gälla och väljer sedan **Spara**. Du kan välja ett antal dagar mellan 1 och 30.
+6. I den andra rutan anger du när användarna underrättas om att deras lösenord upphör att gälla och väljer sedan **Spara** . Du kan välja ett antal dagar mellan 1 och 30.
 
 7. När användarens lösenord slutar gälla, visas ett meddelande om detta i det nedre högra hörnet på skärmen.
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>Viktiga saker du behöver veta om funktionen för lösenords giltighetstid
-
-Här är några saker som kan vara bra att känna till om hur denna funktion fungerar från och med januari 2018:
   
 - Personer som endast använder Outlook-appen tvingas inte återställa lösenordet för Microsoft 365 förrän det slutar gälla i cachen. Det kan dröja flera dagar från det faktiska utgångsdatumet. Det finns ingen lösning på det här felet på administratörsnivå.
-
-- Användarna får inget e-postmeddelande om att lösenordet slutar gälla om X dagar. Vill du ha den här funktionen? **[Rösta här!](https://office365.uservoice.com/forums/273493-office-365-admin/suggestions/15028344-office-365-password-email-notification)**
 
 ## <a name="prevent-last-password-from-being-used-again"></a>Förhindra att det senaste lösenordet används igen
 
