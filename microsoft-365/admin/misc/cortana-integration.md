@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 'När du är inloggad med giltiga arbets-eller skol konton kan användarna få molnbaserade stöd tjänster med Cortana i Microsoft 365-upplevelser som uppfyller Office 365: s sekretess, säkerhet och efterlevnad.'
-ms.openlocfilehash: e7464525774e15d5b54f1b2321948aef5d998558
-ms.sourcegitcommit: c692bdc186fb29499816e8bb2addcddef34d23d3
+ms.openlocfilehash: aaef43f33bb06bf43d5e68fbc2509686fc8dd371
+ms.sourcegitcommit: 16cbac5eacadd7b30cbca1fd2435ba9098de5e1c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46818307"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48785544"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana i Microsoft 365
 
@@ -83,25 +83,25 @@ Från och med Windows 10, version 2004, Cortana är en UWP-app (Universal Window
 
 ### <a name="cortana-voice-assistance-in-teams"></a>Hjälp för Cortana-röst i Teams
 
-Med Cortana-hjälpen i Teams-mobilappen kan Microsoft 365 Enterprise-användare effektivisera kommunikation-, samarbets-och mötes uppgifter med talade naturligt språk. Användare kan prata med Cortana genom att klicka på mikrofon knappen i det övre högra hörnet i Teams-mobilappen. De kan ansluta till någon när du är på språng genom att göra en röst fråga som "Ring Megan" eller "Skicka ett meddelande till nästa möte". Användare kan också ansluta till möten genom att säga "delta i nästa möte" och använda röst hjälp för att dela filer, kontrol lera deras kalender och mycket mer. De här hjälp funktionerna för röst assistans levereras med Cortana-tjänster i företags klass som fullständigt uppfyller Office 365: s sekretess, säkerhet och efterlevnad av [villkoren i Online Services (ost)](https://www.microsoft.com/licensing/product-licensing/products).
+Cortana-Hjälp i team-mobilappen och på visnings enheter för Microsoft Teams gör det möjligt för Microsoft 365 Enterprise-användare att effektivisera kommunikation, samarbete och mötesrelaterade uppgifter med talade naturligt språk. Användare kan prata med Cortana genom att välja mikrofon knappen i det övre högra hörnet i Teams-mobilappen, eller genom att ange &#8220;Cortana&#8221; i Microsoft Teams-visningen. För att snabbt kunna ansluta till deras grupp hands-gratis och när du är på resande fot kan användarna säga frågor som &#8220;Call Megan&#8221; eller &#8220;skicka ett meddelande till nästa möte&#8221;. Användare kan också ansluta till möten genom att säga &#8220;Anslut till nästa möte&#8221; och Använd röst hjälp för att dela filer, kontrol lera deras kalender och mycket mer. De här hjälp funktionerna för röst assistans levereras med Cortana-tjänster i företags klass som fullständigt uppfyller Office 365: s sekretess, säkerhet och efterlevnad av [villkoren i Online Services (ost)](https://www.microsoft.com/licensing/product-licensing/products).
 
 **Administratörs kontroll**
 
-Cortana-röst assistans är aktive rad som standard för klient organisationer. Administratörer kan styra vem i sin klient organisation som kan använda Cortana röst assistans i Teams via en princip (TeamsCortanaPolicy). Denna princip kan ställas in på antingen användar konto nivå eller klient organisations nivå. Administratörer kan även använda CortanaVoiceInvocationMode-fältet i den här princip kontrollen för att avgöra om Cortana är inaktiverat, aktiverat för endast push-knapp, eller aktiverat med inaktive ring av Avaktiverande av ord. Observera att vid den första versionen av Microsoft 365 Enterprise-användare i USA på engelska är det inte stöd för Teams-mobilappen, men det kommer att stödjas i framtiden.
+Cortana-röst assistans är aktive rad som standard för klient organisationer. Administratörer kan styra vem i sin klient organisation som kan använda Cortana röst assistans i Teams via en princip (TeamsCortanaPolicy). Denna princip kan ställas in på antingen användar konto nivå eller klient organisations nivå. Administratörer kan även använda CortanaVoiceInvocationMode-fältet i den här princip kontrollen för att avgöra om Cortana är inaktiverat, aktiverat för endast push-knapp, eller aktiverat med inaktive ring av Microsoft Teams. Observera att vid den första versionen av Microsoft 365 Enterprise-användare i USA på engelska är det inte stöd för Teams-mobilappen, men det kommer att stödjas i framtiden.
 
 **Användar kontroll**
 
-Enskilda användare kan testa Cortana-hjälpen i Teams-mobilappen genom att klicka på mikrofon knappen. De kan också kontrol lera om Cortana i Teams har Aktiver ATS för enheten via en inställning i Teams-mobilappen: 
+Enskilda användare kan testa Cortana-hjälpen i Teams-mobilappen genom att klicka på mikrofon knappen. De kan pröva Cortana röst assistans på Microsoft Teams-bildskärms enheter genom att säga &#8220;Cortana. &#8221; de kan också kontrol lera om Cortana i Teams är aktive rad för enheten via en inställning i Teams-mobilappen eller på Microsoft Teams display: 
 
-1. Öppna mobilappen för Teams.
+1. Öppna mobilappen för Teams eller gå till den omgivande skärmen (start) i Microsoft Teams display.
 
-2. Gå till **Inställningar**.
+2. I Teams-mobilappen går du till **Inställningar** . Välj användare i Microsoft Teams-visningen och välj sedan inställningar. Om Cortana är aktiverat, säg &#8220;Cortana, gå till inställningar. &#8221;
 
-3. Välj **Cortana**.
+3. Välj **Cortana** .
 
-4. Flytta växlings knappen till på eller av, beroende på om du vill ha Cortana-Hjälp på den här enheten.
+4. Flytta växlings knappen till **på** eller **av** , beroende på om du vill ha Cortana-Hjälp på enheten.
 
-[Läs mer om Cortana-assistans i Teams](https://support.microsoft.com/en-us/office/using-cortana-voice-assistance-in-teams-274bb2f0-d962-4182-b45d-307435cea256?ui=en-us&rs=en-us&ad=us)
+[Läs mer om Cortana-assistans i Teams](https://docs.microsoft.com/microsoftteams/cortana-in-teams)
 
 ### <a name="play-my-emails"></a>Spela upp mina e-postmeddelanden
 
@@ -115,9 +115,9 @@ Det går att avanmäla mina e-postmeddelanden med hjälp av följande anvisninga
 
 1. Öppna Outlook Mobile.
 
-2. Gå till **Inställningar**.
+2. Gå till **Inställningar** .
   
-3. Välj **spela upp mina e-postmeddelanden**.
+3. Välj **spela upp mina e-postmeddelanden** .
 
 4. Flytta reglaget till av på de konton som du vill inaktivera.
 
@@ -141,7 +141,7 @@ Vi fortsätter att introducera fler upplevelser som ovan för att öka organisat
 
 Här är de två olika sätten att se hur Cortana fungerar i ditt företag:
 
-**Nya upplevelser för organisationer med Cortana Enterprise-tjänster**: Cortana företags tjänster är utformade för att uppfylla kraven på säkerhet och efterlevnad hos organisationer: 
+**Nya upplevelser för organisationer med Cortana Enterprise-tjänster** : Cortana företags tjänster är utformade för att uppfylla kraven på säkerhet och efterlevnad hos organisationer: 
 
 1. Det här är en ny tjänst som diskuteras här i det här dokumentet.
 
@@ -151,7 +151,7 @@ Här är de två olika sätten att se hur Cortana fungerar i ditt företag:
 
 4. IT-administratörer har alltid kontroller för valfri ansluten upplevelse för Cortana, ungefär som valfri ansluten upplevelse med Office ProPlus-program.  
 
-**Befintliga tjänster för konsumenter**: Cortana valfria anslutna tjänster är främst avsedda för klient upplevelser och levereras för närvarande i Windows 10 (version 1909 och tidigare) och Cortana-appen på iOS och Android.
+**Befintliga tjänster för konsumenter** : Cortana valfria anslutna tjänster är främst avsedda för klient upplevelser och levereras för närvarande i Windows 10 (version 1909 och tidigare) och Cortana-appen på iOS och Android.
 
 1. Dessa upplevelser möjliggör funktioner som väder, nyheter och trafik.
 
@@ -159,10 +159,10 @@ Här är de två olika sätten att se hur Cortana fungerar i ditt företag:
 
 Inaktivera Cortana-åtkomst till organisationens Microsoft-värdbaserade data
 
-1. I administrations centret för Microsoft 365 väljer du **Inställningar**  >  **organisations inställningar** och väljer **Cortana**.
+1. I administrations centret för Microsoft 365 väljer du **Inställningar**  >  **organisations inställningar** och väljer **Cortana** .
 
 2. Avmarkera kryss rutan för **Tillåt Cortana i Windows 10 (version 1909 och tidigare) och Cortana-appen på iOS och Android för att få åtkomst till Microsoft-värd uppgifter för personer i organisationen** för att inaktivera Cortana-anslutna upplevelser.
 
-3. Välj **Spara ändringar**.
+3. Välj **Spara ändringar** .
 
 För tjänster som lyder under [Microsofts tjänste avtal](https://go.microsoft.com/fwlink/p/?LinkId=2109174) och [Microsofts sekretess policy](https://privacy.microsoft.com/privacystatement)är Microsoft datakontrollanten. Som data kontroll använder Microsoft data för att förbättra produkter och tjänster i enlighet med [Microsofts sekretess policy](https://privacy.microsoft.com/privacystatement).
