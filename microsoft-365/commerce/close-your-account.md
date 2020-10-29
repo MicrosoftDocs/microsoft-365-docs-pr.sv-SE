@@ -17,12 +17,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Lär dig hur du avslutar ditt konto hos Microsoft.
-ms.openlocfilehash: 9545c43ee27fb000149776527030b04b5e807a5c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 0fed7df54a21b3696e81915af78e377e855bfd12
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638381"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794903"
 ---
 # <a name="close-your-account"></a>Avsluta ditt konto
 
@@ -51,9 +51,9 @@ Om din organisation använder Active Directory som synkroniserar med Azure AD ka
 
 1. Gå till sidan fakturering i administrations centret **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> .
 
-2. Om abonnemangs listan är i **tabellvy** väljer du **kort**till höger.
+2. Om abonnemangs listan är i **tabellvy** väljer du **kort** till höger.
 
-3. Sök efter en aktiv prenumeration och välj **Avbryt prenumeration**i avsnittet **Inställningar & åtgärder** .
+3. Sök efter en aktiv prenumeration och välj **Avbryt prenumeration** i avsnittet **Inställningar & åtgärder** .
 
 4. Följ anvisningarna för att slutföra processen.
 
@@ -63,13 +63,13 @@ Om din organisation använder Active Directory som synkroniserar med Azure AD ka
 
 1. Gå till sidan fakturering i administrations centret **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> .
 
-2. Om abonnemangs listan är i **tabellvy** väljer du **kort**till höger.
+2. Om abonnemangs listan är i **tabellvy** väljer du **kort** till höger.
 
-3. Bredvid **prenumerations status**väljer du **inaktive rad**.
+3. Bredvid **prenumerations status** väljer du **inaktive rad** .
 
-4. Hitta en inaktive rad prenumeration och välj **ta bort**i avsnittet **Inställningar & åtgärder** .
+4. Hitta en inaktive rad prenumeration och välj **ta bort** i avsnittet **Inställningar & åtgärder** .
 
-5. I dialog rutan **ta bort prenumeration** markerar du kryss rutan **Jag förstår effekt** och väljer sedan **ta bort abonnemang**.
+5. I dialog rutan **ta bort prenumeration** markerar du kryss rutan **Jag förstår effekt** och väljer sedan **ta bort abonnemang** .
 
 6. Upprepa steg 4 och 5 för varje inaktive rad prenumeration tills alla abonnemang har tagits bort.
 
@@ -77,7 +77,7 @@ Om din organisation använder Active Directory som synkroniserar med Azure AD ka
 
 1. Gå till sidan **användare**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">aktiva användare</a> i administrations centret.
 
-2. Välj **multifaktorautentisering**.
+2. Välj **multifaktorautentisering** .
 
 3. På sidan multifaktorautentisering avaktiverar du alla konton förutom det globala administratörs konto som du använder för närvarande.
 
@@ -87,12 +87,12 @@ Du kan också <a href="https://docs.microsoft.com/azure/active-directory/authent
 
 1. Logga in på <a href="https://aad.portal.azure.com/" target="_blank">administrations centret för Azure AD</a> med ett globalt administratörs konto.
 
-2. Välj **Azure Active Directory**.
+2. Välj **Azure Active Directory** .
 
-3. Växla till den katalog som du vill ta bort.
+3. Växla till den organisation som du vill ta bort.
 
-4. Välj **ta bort katalog**.
+4. Välj **ta bort klient organisation** .
 
-5. Om din katalog inte fungerar på en eller flera kontroller visas en länk till mer information om hur du överför checkarna. När du har överfört alla kontrollerna väljer du **ta bort** för att slutföra processen.
+5. Om din organisation inte klarar en eller flera kontroller ser du en länk till mer information om hur du överför checkarna. När du har överfört alla kontrollerna väljer du **ta bort** för att slutföra processen.
 
 När du är klar med det här steget stängs och raderas ditt konto med Microsoft.

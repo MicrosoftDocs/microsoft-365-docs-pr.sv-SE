@@ -13,21 +13,23 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cd7790e51ae5c110b00739f608e7dd3e1bc560b2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 08f49d491de8079c9ea3373861f22ed6c4825db3
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641069"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794995"
 ---
 # <a name="contact-support-for-mexico"></a>Kontakta supporten för Mexiko
 
 [Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
-01 800 563 0605
+
+800 563 0605
 
 ## <a name="hours"></a>Tider
+
 ### <a name="billing-support"></a>Faktureringssupport:
 
 Spanska: Mon-Fri 09.00 – 17.00
@@ -36,6 +38,6 @@ Spanska: Mon-Fri 09.00 – 17.00
 
 Spanska: dygnet runt, alla dagar i veckan
 
-Alternativt telefonnummer: 01 55 4738 6567
+Alternativt telefonnummer: 55 4738 6567
 
 Lokala samtals avgifter gäller

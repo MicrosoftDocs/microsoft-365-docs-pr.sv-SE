@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2c9638dc7b8c6d095b87cf81114f3812c8362597
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: a6dec9473ee632b74bb79e50156cedff53a3cba3
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656157"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48795123"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Åtgärda problem som upptäckts av verktyget för bedömning av beredskap
 
-För varje kontroll rapporteras ett av tre möjliga resultat:
+För varje kontroll rapporteras ett av fyra möjliga resultat:
 
 
 |Resultat  |Betydelse  |
@@ -26,6 +26,7 @@ För varje kontroll rapporteras ett av tre möjliga resultat:
 |Förbereder     | Ingen åtgärd krävs innan du slutför registreringen.        |
 |Rådgivare    | Följ stegen i verktyget eller den här artikeln för att få bästa möjliga upplevelse av registrering och användare. Du *kan* slutföra registreringen, men du måste åtgärda dessa problem innan du distribuerar den första enheten.        |
 |Inte klart | *Registreringen Miss lyckas om du inte åtgärdar dessa problem.* Följ stegen i verktyget eller den här artikeln för att åtgärda dem.        |
+|Fel | Azure Active Director (AD)-rollen som du använder har inte tillräcklig behörighet för att köra den här kontrollen. |
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune-inställningar
 
@@ -72,6 +73,16 @@ Du har minst en princip för villkorsstyrd åtkomst som är riktad till alla anv
 
 Se till att alla principer för villkorsstyrd åtkomst du har exkluderar den **moderna arbets plats tjänstens konton** Azure AD-grupp. Anvisningar finns i [Justera villkorlig åtkomst](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access). Den **moderna arbets plats tjänsten** är en dynamisk grupp som vi skapar för tjänsten när du registrerar dig. Du måste komma tillbaka för att utesluta den här gruppen efter registreringen. Mer information om dessa tjänst konton finns i [vanliga rutiner](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
+**Fel**
+
+Rollen Intune-administratör har inte tillräcklig behörighet för den här kontrollen. Du behöver också några av de här Azure AD-rollerna för att köra den här kontrollen:
+
+- Säkerhets läsare
+- Säkerhets administratör
+- Administratör för villkorsstyrd åtkomst
+- Global läsare
+- Enheter-administratör
+
 
 ### <a name="device-compliance-policies"></a>Principer för enhetskompatibilitet
 
@@ -107,7 +118,7 @@ Microsoft Managed Station ära datorer måste tillåtas att registrera i Intune.
 
 **Inte klart**
 
-Följ stegen i [Ange registrerings begränsningar](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) för att ändra inställningen till **Tillåt**.
+Följ stegen i [Ange registrerings begränsningar](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) för att ändra inställningen till **Tillåt** .
 
 
 ### <a name="enrollment-status-page"></a>Sidan registrerings status
@@ -116,7 +127,7 @@ Du har för närvarande sidan registrerings status (ESP) aktive rad. Om du delta
 
 **Inte klart**
 
-Du har aktiverat ESP-standardprofilen för att **Visa konfigurations förlopp för appar och profiler**. Inaktivera den här inställningen genom att följa anvisningarna i [Konfigurera sidan registrerings status](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
+Du har aktiverat ESP-standardprofilen för att **Visa konfigurations förlopp för appar och profiler** . Inaktivera den här inställningen genom att följa anvisningarna i [Konfigurera sidan registrerings status](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
 
 **Rådgivare**
 
@@ -128,7 +139,7 @@ Windows 10-enheter i din Azure AD-organisation måste registreras automatiskt i 
 
 **Inte klart**
 
-Användare i din Azure AD-organisation registreras inte automatiskt i Microsoft Intune. Ändra omfattningen för MDM-användare till **vissa** eller **alla**. Om du väljer. Lite * *, kom tillbaka efter registreringen och välj den **moderna arbets platsen – alla** Azure AD-grupper för **grupper**.
+Användare i din Azure AD-organisation registreras inte automatiskt i Microsoft Intune. Ändra omfattningen för MDM-användare till **vissa** eller **alla** . Om du väljer **lite** , kom tillbaka efter registreringen och väljer den **moderna arbets platsen – alla** Azure AD-grupper för **grupper** .
 
 
 ### <a name="microsoft-store-for-business"></a>Microsoft Store för företag
@@ -152,6 +163,15 @@ Du har vissa principer för multifaktorautentisering (MFA) inställda som "oblig
 
 Se till att alla villkorsstyrda åtkomst principer som kräver MFA exkluderar den **moderna arbets platsen – alla** Azure AD-grupper. Mer information finns i [principer för villkorsstyrd åtkomst](#conditional-access-policies) och [villkorsstyrd åtkomst: Kräv MFA för alla användare](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). Den **moderna arbets platsen – alla** Azure AD-grupper är en dynamisk grupp som vi skapar när du registrerar dig på Microsoft Managed Desktop, så att du måste komma tillbaka till den här gruppen efter registrering.
 
+**Fel**
+
+Rollen Intune-administratör har inte tillräcklig behörighet för den här kontrollen. Du behöver också några av de här Azure AD-rollerna för att köra den här kontrollen:
+
+- Säkerhets läsare
+- Säkerhets administratör
+- Administratör för villkorsstyrd åtkomst
+- Global läsare
+- Enheter-administratör
 
 
 ### <a name="powershell-scripts"></a>PowerShell-skript
@@ -234,7 +254,7 @@ Här beskrivs hur du kontrollerar en inställning som (om värdet är "falskt") 
 
 **Rådgivare**
 
-Kontrol lera att **AllowAdHocSubscriptions** är inställt på **True**. I annat fall kanske företags statusen roaming inte fungerar. Mer information finns i [set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
+Kontrol lera att **AllowAdHocSubscriptions** är inställt på **True** . I annat fall kanske företags statusen roaming inte fungerar. Mer information finns i [set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
 
 
 ### <a name="enterprise-state-roaming"></a>Enterprise State Roaming
@@ -298,6 +318,11 @@ SSPR måste vara aktiverat för alla användare. Om det inte är det kan inte Mi
 
 Kontrol lera att SSPR **valda** inställningar innehåller Microsoft Managed Station ära datorer.
 
+**Fel**
+
+Rollen Intune-administratör har inte tillräcklig behörighet för den här kontrollen. Du behöver också ha den rapport läsare i Azure AD-rollen som tilldelats för att köra den här kontrollen.
+
+
 ### <a name="standard-user-role"></a>Standard användar roll
 
 Microsoft Managed Desktop-användare ska vara vanliga användare utan lokala administratörs behörigheter. De tilldelas en standard användar roll när de startar sin Microsoft-hanterade Station.
@@ -306,7 +331,7 @@ Microsoft Managed Desktop-användare ska vara vanliga användare utan lokala adm
 
 Microsoft Managed Station ära datorer bör inte ha lokala administratörs behörigheter innan de registreras.
 
-## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365-appar för företag
+## <a name="microsoft-365-apps-for-enterprise"></a> Microsoft 365 Apps för företag
 
 ### <a name="onedrive-for-business"></a>OneDrive för företag
 

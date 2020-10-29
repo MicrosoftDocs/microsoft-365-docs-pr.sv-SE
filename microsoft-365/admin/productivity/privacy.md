@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Hur integritet skyddas med produktivitets poängen.
-ms.openlocfilehash: 1af2553e67b4f14e9783c23d679a7ac96443512a
-ms.sourcegitcommit: e8b3855302fc34d09b6df6c737033a2f326d6eee
+ms.openlocfilehash: 62ff3a9f0434421cbe1115f13376e92bd9f3cac9
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48770053"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794983"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Integritets inställningar för produktivitets Poäng
 
@@ -55,7 +55,21 @@ För att visa hela produktivitets poängen, inklusive uppgifter om klient organi
 
 Koppla rollen rapport läsare till vem som är ansvarig för ändrings hantering och antagande. Den här rollen ger dem till gång till den fullständiga upplevelsen, inklusive nivå mått för klient nivå och uppgifter per användare.
 
-Rapporten personer upplever innehåller aktivitets information per användare för varje kategori detalj sida. Skapa en anpassad roll som kallas användnings översikt rapporter (som är tillgänglig från och med början 29 oktober 2020) för att tillåta åtkomst till personernas samlade mått.
+Rapporten personer upplever innehåller aktivitets information per användare för varje kategori detalj sida. Skapa en anpassad roll som kallas användnings översikt rapporter (som är tillgänglig från och med början 29 oktober 2020) för att tillåta åtkomst till personernas samlade mått. Den här rollen måste tilldelas genom PowerShell-cmdletar tills den blir tillgänglig från Microsoft Admin Center på 11/15/2020.
+
+Så här tilldelar du rollen användnings översikts rapporter med PowerShell:
+
+- Kör följande PowerShell:
+
+```powershell
+Connect-AzureAD
+$role=Get-AzureADDirectoryRole -Filter "roleTemplateId eq '75934031-6c7e-415a-99d7-48dbd49e875e'"
+Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId
+$u=Get-AzureADUser -ObjectId <user upn>
+Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
+```
+
+</br>
 
 :::image type="content" source="../../media/communicationspage.jpg" alt-text="Sidan kommunikation i produktivitets rapporterna.":::
 
