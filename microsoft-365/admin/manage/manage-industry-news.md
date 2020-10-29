@@ -15,28 +15,26 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Ge användarna uppdaterade nyhets rubriker om din bransch och information från din organisation, Använd nyhets tjänsten för att aktivera ett anpassat nyhets flöde för din organisation.
-ms.openlocfilehash: 718e48c9db90ff7e598dd56c0228bb894b7a3a4d
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: c0758c3a762c39534629095345d935456cb938e9
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779184"
+ms.locfileid: "48791828"
 ---
 # <a name="manage-industry-news"></a>Hantera bransch nyheter
 
 Om du vill ge användarna uppdaterade nyhets rubriker om din bransch och information från organisationen kan du använda [nyhets](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) tjänsten för att aktivera ett anpassat nyhets flöde för din organisation.Du kan också hantera inställningar för Bing-hemsida och sidan ny flik i Microsoft Edge (från versionen av Edge 87).
 
 ## <a name="what-your-users-will-see"></a>Vad användarna ser
-
-:::image type="content" source="../../media/manage-industry-news-1.png" alt-text="Uppdateringar av Microsoft sökmotorer lyfts upp":::
  
 Inloggade användare som kommer till Bing-startsidan kommer att se dina nyhets flöden under den anpassade informationen från din organisation.
 
-:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Uppdateringar av Microsoft sökmotorer lyfts upp":::
+:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Skärm bild av bild karusell med bransch nyheter från webben":::
 
 De kan också se företags-, bransch-och intern nyheter eller anpassade arbets uppgifter på Microsoft Edge-sidan ny flik. 
 
-:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Uppdateringar av Microsoft sökmotorer lyfts upp":::
+:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Skärm bild av bild karusell med bransch nyheter från webben":::
 
 ## <a name="news-settings"></a>Nyheter
 
