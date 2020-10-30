@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Information om innehålls samarbete-människor upplever produktivitets poäng.
-ms.openlocfilehash: 6e8f3113d2f35e6af268e4a8088bef34f529a676
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 87f89af527e2a1b843a9b70fbef590b69d920f7d
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795530"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804603"
 ---
 # <a name="content-collaboration--people-experiences"></a>Innehålls samarbete – folk upplevelse
 
@@ -202,4 +201,13 @@ Följande kolumner visas i tabellen på användar nivå:
 - **Filer som delas externt:** Antalet online-filer på OneDrive eller SharePoint som delas med andra personer utanför organisationen under de senaste 28 dagarna.
 - **Bifogade filer via e-post:** Booleskt värde som anger om personen skickade e-post med filer (inte på OneDrive eller SharePoint) som bifogade filer under de senaste 28 dagarna.
 - **Bifogade filer online via e-post:** Booleskt värde som anger om personen skickade e-post med länkar till online-filer (på OneDrive eller SharePoint) som bifogade filer under de senaste 28 dagarna.
-- **Bädda in länk till online-fil:** Booleskt värde som anger om personen skickade e-post med länkar till online-filer (på OneDrive eller SharePoint) inbäddat i e-postmeddelandet under de senaste 28 dagarna
+- **Bädda in länk till online-fil:** Booleskt värde som anger om personen skickade e-post med länkar till online-filer (på OneDrive eller SharePoint) inbäddat i e-postmeddelandet under de senaste 28 dagarna.
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Microsoft 365-appar hälsa – teknik upplevelser](apps-health.md) (artikel) \
+[Kommunikation – människor upplever](communication.md) (artikel) \
+[Möten – människor upplever](meetings.md) (artikel) \
+[Rörlighet – människor upplever](mobility.md) (artikel) \
+[Integritets inställningar för produktivitets Poäng](privacy.md) (artikel) \
+[Samarbete – människor upplever](teamwork.md) (artikel)

@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Information om kommunikationen-människor upplever produktivitets poäng.
-ms.openlocfilehash: 071621759a922e6dda28a5a18f531a0f01d2f88f
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 6f79a636c24548586048adf0151ac5eefb98fffe
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795070"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804661"
 ---
 # <a name="communication--people-experiences"></a>Kommunikation – folk upplevelse
 
@@ -160,3 +159,12 @@ Det här avsnittet innehåller information om användar nivå för aktiviteter s
 - **Dagar som används @mention i e-post:** Antalet dagar som användaren skickade ett e-postmeddelande som innehåller en @mention de senaste 28 dagarna.
 
 Du kan också exportera rapport data till en Excel. csv-fil genom att välja länken exportera **Exportera** . Observera att du kan anpassa uppsättningen kolumner i vyn genom att markera kolumnerna som krävs efter att du klickat på **Välj kolumner** .
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Microsoft 365-appar hälsa – teknik upplevelser](apps-health.md) (artikel) \
+[Innehålls samarbete – folk upplevelse](content-collaboration.md) (artikel) \
+[Möten – människor upplever](meetings.md) (artikel) \
+[Rörlighet – människor upplever](mobility.md) (artikel) \
+[Integritets inställningar för produktivitets Poäng](privacy.md) (artikel) \
+[Samarbete – människor upplever](teamwork.md) (artikel)

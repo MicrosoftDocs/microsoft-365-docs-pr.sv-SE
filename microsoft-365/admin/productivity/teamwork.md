@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Detaljerad information om hur du får poäng med samarbete.
-ms.openlocfilehash: d76447a187003aa3d3e87ec293cf4550ced2fc74
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: d7edd5685c8e818e08faf4ac227f3eb1a416c94c
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795471"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804799"
 ---
 # <a name="teamwork--people-experiences"></a>Samarbete – folk upplevelse
 
@@ -193,3 +192,12 @@ Följande kolumner visas i tabellen på arbets ytans nivå:
 - Samarbete mäter engagemang för personer i organisationen. Den har&#39;till att fånga aktivitet för externa medlemmar.
 - Kanal meddelanden i lag arbete inkluderar inte meddelanden som skickas via Microsoft Teams Mobile-klienten.
 - Det kan finnas små skillnader mellan e-poststatistik och kanal meddelanden mellan kommunikations-och lag kategorierna som vi jobbar att lösa.
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Microsoft 365-appar hälsa – teknik upplevelser](apps-health.md) (artikel) \
+[Kommunikation – människor upplever](communication.md) (artikel) \
+[Innehålls samarbete – folk upplevelse](content-collaboration.md) (artikel) \
+[Möten – människor upplever](meetings.md) (artikel) \
+[Rörlighet – människor upplever](mobility.md) (artikel) \
+[Integritets inställningar för produktivitets Poäng](privacy.md) (artikel)

@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Information om möten-människor upplever produktivitets poäng.
-ms.openlocfilehash: 09869d92b093304e070d669db7d0e7dea825441f
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: cdb83000e176fb2a88d848a1b7f114499362672a
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795533"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804591"
 ---
 # <a name="meetings--people-experiences"></a>Möten – folk upplevelse
 
@@ -166,3 +165,12 @@ Följande kolumner visas i tabellen på användar nivå:
 - Endast personer som har till gång till Microsoft Teams beaktas för utvärdering.
 - Vi utesluter broadcast-händelser och vissa händelser som inte är taggade som ett möte eller ett samtal.
 - Händelser som börjar med skärm delning mellan deltagare är antingen kategoriserade som 1:1-samtal (med två deltagare) eller grupp samtal (3 eller fler deltagare).
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Microsoft 365-appar hälsa – teknik upplevelser](apps-health.md) (artikel) \
+[Kommunikation – människor upplever](communication.md) (artikel) \
+[Innehålls samarbete – folk upplevelse](content-collaboration.md) (artikel) \
+[Rörlighet – människor upplever](mobility.md) (artikel) \
+[Integritets inställningar för produktivitets Poäng](privacy.md) (artikel) \
+[Samarbete – människor upplever](teamwork.md) (artikel)

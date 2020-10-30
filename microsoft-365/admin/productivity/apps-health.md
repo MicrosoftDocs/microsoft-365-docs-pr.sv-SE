@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Information om hälso upplevelsen för Microsoft 365-apparna.
-ms.openlocfilehash: bb6454b336caa9ac1e7b8f6049ea46c681c8bd77
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 4242a9b665bc7292232cc15ee0f1ec37915fb1ac
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795460"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804775"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365-appar hälsa – teknik upplevelse
 
@@ -112,3 +111,12 @@ Följande kolumner visas i tabellen på användar nivå:
 - **Status:**   Microsoft 365-program-support för enheter som baseras på aktuell kanal och version.
 - **Versioner:**   Aktuella versioner av Microsoft 365-apparna på enheterna.
 - **antal enheter:**  Antal enheter.
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Kommunikation – människor upplever](communication.md) (artikel) \
+[Innehålls samarbete – folk upplevelse](content-collaboration.md) (artikel) \
+[Möten – människor upplever](meetings.md) (artikel) \
+[Rörlighet – människor upplever](mobility.md) (artikel) \
+[Integritets inställningar för produktivitets Poäng](privacy.md) (artikel) \
+[Samarbete – människor upplever](teamwork.md) (artikel)

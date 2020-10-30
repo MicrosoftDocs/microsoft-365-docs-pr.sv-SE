@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Information om mobilitet-människor upplever produktivitets poäng.
-ms.openlocfilehash: 0d67cae7421b7b27e39420f691d72abd57a63a32
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: f40984b3c053dcb976c901830bf796e3b7297f2d
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795554"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804787"
 ---
 # <a name="mobility--people-experiences"></a>Rörlighet – människor upplever
 
@@ -172,3 +171,12 @@ Följande mått baseras på de föregående 28 dagarna:
 - **Dagar i Skype (skriv bord):** Antalet dagar som personen varit aktiv på Skype in the desktop Platform.
 - **Dagar i Skype (webb):** Antalet dagar som personen varit aktiv på Skype in the web platform.
 - **Dagar i Skype (mobilt):** Antalet dagar som personen varit aktiv på Skype in The Mobile Platform.
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Microsoft 365-appar hälsa – teknik upplevelser](apps-health.md) (artikel) \
+[Kommunikation – människor upplever](communication.md) (artikel) \
+[Innehålls samarbete – folk upplevelse](content-collaboration.md) (artikel) \
+[Möten – människor upplever](meetings.md) (artikel) \
+[Integritets inställningar för produktivitets Poäng](privacy.md) (artikel) \
+[Samarbete – människor upplever](teamwork.md) (artikel)
