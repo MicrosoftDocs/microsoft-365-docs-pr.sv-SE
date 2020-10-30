@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Vilka är de bästa metoderna för säkerhets inställningar för Exchange Online Protection (EOP) och Avancerat skydd (ATP)? Vad är de senaste rekommendationerna för standard skydd? Vad ska användas om du vill veta mer? Och vilka extrafunktioner får du om du även använder avancerat skydd (ATP)?
-ms.openlocfilehash: fd2d680e093289aa5fc2dbcac127e35caf50098b
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 4afd662be28c047d5f738dc0f70f0254e7a7a83f
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430663"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806778"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Rekommenderade inställningar för EOP och Office 365 säkerhet för ATP
 
@@ -30,11 +30,12 @@ ms.locfileid: "48430663"
 
 **Exchange Online Protection (EOP)** är den grundläggande säkerheten för Microsoft 365-prenumerationer och skyddar obehöriga e-postmeddelanden från att nå dina anställdas inkorgar. Men med nya, mer sofistikerade attacker är det ofta nödvändigt att förbättra skyddet varje dag. **Office 365 Avancerat skydd (ATP)** ATP-abonnemang 1 eller ATP-abonnemang 2 innehåller fler funktioner som ger administratörer större kontroll över säkerheten, kontrollen och undersökningen.
 
-Även om vi stärker säkerhets administratören för att anpassa sina säkerhets inställningar finns det två säkerhets nivåer i EOP och Office 365 ATP som vi rekommenderar: **standard** och **strict**. Varje kunds miljö och behov är olika, men vi tror att de här filtrerings nivåerna hindrar oönskad e-post från att nå dina anställdas inkorg i de flesta fall.
+Även om vi stärker säkerhets administratören för att anpassa sina säkerhets inställningar finns det två säkerhets nivåer i EOP och Office 365 ATP som vi rekommenderar: **standard** och **strict** . Varje kunds miljö och behov är olika, men vi tror att de här filtrerings nivåerna hindrar oönskad e-post från att nå dina anställdas inkorg i de flesta fall.
 
 Om du automatiskt vill använda standardinställningarna eller strikta inställningar för användare kan du läsa [förvalda säkerhets principer i EOP och Office 365 ATP](preset-security-policies.md).
 
-**Obs!** skräp post regeln måste aktive ras på post lådor för att filtreringen ska fungera korrekt. Det är aktiverat som standard, men du bör kontrol lera om det inte verkar fungera. Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+> [!NOTE]
+> Skräp post regeln måste aktive ras på post lådor för att filtreringen ska fungera korrekt. Det är aktiverat som standard, men du bör kontrol lera om det inte verkar fungera. Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 I den här artikeln beskrivs standardinställningarna och rekommenderade standardinställningar och strikta inställningar för att skydda användarna.
 
@@ -62,7 +63,7 @@ Information om hur du skapar och konfigurerar principer för skräp post hanteri
 |Karantän period <br/><br/> _QuarantineRetentionPeriod_|15 dagar|30 dagar|30 dagar||
 |**Säkerhets tips** <br/><br/> _InlineSafetyTipsEnabled_|På <br/><br/> `$true`|På <br/><br/> `$true`|På <br/><br/> `$true`||
 |Tillåtna avsändare <br/><br/> _AllowedSenders_|Inga|Inga|Inga||
-|Tillåtna avsändare-domäner <br/><br/> _AllowedSenderDomains_|Inga|Inga|Inga|Det är mycket dåligt att lägga till domäner som du äger (_godkända domäner_) i listan med tillåtna avsändare. Angripare kan skicka e-post som annars skulle filtreras bort. <br/><br/> Använd [förfalsknings intelligens](learn-about-spoof-intelligence.md) i säkerhets & Compliance Center på sidan **Inställningar för skräp post** för att granska alla avsändare som har falska e-postadresser i organisationens e-postdomäner eller som falska e-postadresser för avsändare i externa domäner.|
+|Tillåtna avsändare-domäner <br/><br/> _AllowedSenderDomains_|Inga|Inga|Inga|Det är mycket dåligt att lägga till domäner i listan Tillåtna avsändare. Angripare kan skicka e-post som annars skulle filtreras bort. <br/><br/> Använd [förfalsknings intelligens](learn-about-spoof-intelligence.md) i säkerhets & Compliance Center på sidan **Inställningar för skräp post** för att granska alla avsändare som har falska e-postadresser i organisationens e-postdomäner eller som falska e-postadresser för avsändare i externa domäner.|
 |Spärrade avsändare <br/><br/> _BlockedSenders_|Inga|Inga|Inga||
 |Blockerade avsändare <br/><br/> _BlockedSenderDomains_|Inga|Inga|Inga||
 |**Aktivera skräp post meddelanden för slutanvändare** <br/><br/> _EnableEndUserSpamNotifications_|Inaktiverad <br/><br/> `$false`|Aktiverad <br/><br/> `$true`|Aktiverad <br/><br/> `$true`||
@@ -80,21 +81,21 @@ Vi rekommenderar att **du inaktiverar dessa ASF-inställningar för** både **st
 
 |Säkerhetsfunktionens namn|Kommentar|
 |---|---|
-|**Bild länkar till fjärranslutna webbplatser** (_IncreaseScoreWithImageLinks_)||
-|**Numerisk IP-adress i URL** (_IncreaseScoreWithNumericIps_)||
-|**Gruppomdirigera till annan port** (_IncreaseScoreWithRedirectToOtherPort_)||
-|**URL till. B2B argumentssida eller. info webbplatser** (_IncreaseScoreWithBizOrInfoUrls_)||
-|**Tomma meddelanden** (_MarkAsSpamEmptyMessages_)||
-|**Java script eller VBScript i HTML** (_MarkAsSpamJavaScriptInHtml_)||
-|**Ram-eller iframe-taggar i HTML** (_MarkAsSpamFramesInHtml_)||
-|**Objekt-Taggar i HTML** (_MarkAsSpamObjectTagsInHtml_)||
-|**Bädda in Taggar i HTML** (_MarkAsSpamEmbedTagsInHtml_)||
-|**Formulär koder i HTML** (_MarkAsSpamFormTagsInHtml_)||
-|**Webb program fel i HTML** (_MarkAsSpamWebBugsInHtml_)||
-|**Använda känslig ord lista** (_MarkAsSpamSensitiveWordList_)||
-|**SPF-post: hårda fel** (_MarkAsSpamSpfRecordHardFail_)||
-|**ID för villkorsstyrd avsändare: hårda fel** (_MarkAsSpamFromAddressAuthFail_)||
-|_AutoMarkAsSpamNdrBackscatter_( **NDR** )||
+|**Bild länkar till fjärranslutna webbplatser** ( _IncreaseScoreWithImageLinks_ )||
+|**Numerisk IP-adress i URL** ( _IncreaseScoreWithNumericIps_ )||
+|**Gruppomdirigera till annan port** ( _IncreaseScoreWithRedirectToOtherPort_ )||
+|**URL till. B2B argumentssida eller. info webbplatser** ( _IncreaseScoreWithBizOrInfoUrls_ )||
+|**Tomma meddelanden** ( _MarkAsSpamEmptyMessages_ )||
+|**Java script eller VBScript i HTML** ( _MarkAsSpamJavaScriptInHtml_ )||
+|**Ram-eller iframe-taggar i HTML** ( _MarkAsSpamFramesInHtml_ )||
+|**Objekt-Taggar i HTML** ( _MarkAsSpamObjectTagsInHtml_ )||
+|**Bädda in Taggar i HTML** ( _MarkAsSpamEmbedTagsInHtml_ )||
+|**Formulär koder i HTML** ( _MarkAsSpamFormTagsInHtml_ )||
+|**Webb program fel i HTML** ( _MarkAsSpamWebBugsInHtml_ )||
+|**Använda känslig ord lista** ( _MarkAsSpamSensitiveWordList_ )||
+|**SPF-post: hårda fel** ( _MarkAsSpamSpfRecordHardFail_ )||
+|**ID för villkorsstyrd avsändare: hårda fel** ( _MarkAsSpamFromAddressAuthFail_ )||
+|_AutoMarkAsSpamNdrBackscatter_ ( **NDR** )||
 |
 
 #### <a name="eop-outbound-spam-policy-settings"></a>EOP utgående princip inställningar för skräp post
@@ -231,7 +232,8 @@ Information om hur du konfigurerar dessa inställningar finns i [Konfigurera pri
 
 I PowerShell använder du cmdleten [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) och [set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) för dessa inställningar.
 
-**Obs!** enligt beskrivningen ovan finns ingen standard princip för säkra länkar. Värdena i standard kolumnen är standardvärden i principer för nya säkra länkar som du skapar.
+> [!NOTE]
+> Enligt beskrivningen ovan finns ingen standard princip för säkra länkar. Värdena i standard kolumnen är standardvärden i principer för nya säkra länkar som du skapar.
 
 ****
 
@@ -271,7 +273,8 @@ Information om hur du konfigurerar dessa inställningar finns i [Konfigurera pri
 
 I PowerShell använder du cmdleten [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) och [set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) för dessa inställningar.
 
-**Obs!** enligt beskrivningen ovan finns ingen standard princip för säkra bifogade filer. Värdena i standard kolumnen är standardvärden i nya principer för säkra bifogade filer som du skapar.
+> [!NOTE]
+> Enligt beskrivningen ovan finns ingen standard princip för säkra bifogade filer. Värdena i standard kolumnen är standardvärden i nya principer för säkra bifogade filer som du skapar.
 
 ****
 
@@ -284,10 +287,10 @@ I PowerShell använder du cmdleten [New-SafeAttachmentPolicy](https://docs.micro
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- Letar du efter rekommendationer för regler för **Exchange-flöden (kallas även transport regler**)? Se [metod tips för hur du konfigurerar regler för e-postflöden i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
+- Letar du efter rekommendationer för regler för **Exchange-flöden (kallas även transport regler** )? Se [metod tips för hur du konfigurerar regler för e-postflöden i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
 
 - Administratörer och användare kan skicka falska positiva (bra e-postmeddelanden) och falska negativ (dålig e-post) till Microsoft för analys. Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
 - Använd de här länkarna om du vill veta mer om hur du **ställer in** din [EOP-tjänst](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)och **konfigurerar** [Office 365 Avancerat skydd för hot](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp). Glöm inte de användbara anvisningarna för att[skydda mot hot i Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
 
-- **Säkerhets bas linjer för Windows** finns [här](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) för grup princip objekt och lokala inställningar och [här](https://docs.microsoft.com/intune/protect/security-baselines) för Intune-baserad säkerhet. Slutligen är jämförelsen mellan säkerhets bas linjer för Microsoft Defender Avancerat skydd (ATP) och Microsoft Intune [– tillgängliga.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)
+- **Säkerhets bas linjer för Windows** hittar du här: [var kan jag hämta säkerhets bas linjerna?](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) för GPO/lokala alternativ och [använda säkerhets bas linjer för att konfigurera Windows 10-enheter i Intune](https://docs.microsoft.com/intune/protect/security-baselines) för Intune-baserad säkerhet. Slutligen är jämförelsen mellan säkerhets bas linjer för Microsoft Defender Avancerat skydd (ATP) och Microsoft Intune-säkerhetsfunktioner tillgängliga i [Jämför säkerhets bas linjerna för Microsoft Defender ATP och Windows Intune](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines).

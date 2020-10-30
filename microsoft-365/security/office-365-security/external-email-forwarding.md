@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: dff2ea4e144f8f8fcc0f42732141e110effe7e9e
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 59e2c938c70dd8e3060fd85d084acbe8f79856ad
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774099"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806640"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Kontrol lera automatisk extern e-postvidarebefordran i Microsoft 365
 
@@ -31,7 +31,7 @@ Följande typer av automatisk vidarebefordran är tillgängliga i Microsoft 365:
 
 - Användare kan konfigurera [regler för Inkorgen](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) för att automatiskt vidarebefordra meddelanden till externa avsändare (avsiktligt eller som ett resultat av ett komprometterat konto).
 
-- Administratörer kan konfigurera [vidarebefordran av post lådor](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (kallas även för SMTP-vidarekoppling) för att automatiskt vidarebefordra meddelanden till externa mottagare.
+- Administratörer kan konfigurera [vidarebefordran av post lådor](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (kallas även för _SMTP-vidarekoppling_ ) för att automatiskt vidarebefordra meddelanden till externa mottagare.
 
 Du kan använda filter principer för utgående e-post för att styra automatisk vidarebefordran till externa mottagare. Tre inställningar är tillgängliga:
 
@@ -45,9 +45,9 @@ Anvisningar om hur du konfigurerar dessa inställningar finns i [Konfigurera utg
 
 > [!NOTE]
 > 
-> - Om du inaktiverar automatisk vidarebefordran inaktive ras även regler för Inkorgen som omdirigerar meddelanden till externa adresser.
+> - Om du inaktiverar automatisk vidarebefordring inaktive ras eventuella regler för Inkorgen (användare) eller vidarebefordran av post lådor som omdirigerar meddelanden till externa adresser.
 > 
->   Office 365 tillåter inte automatisk extern vidarebefordran av antingen Inkorgshanteraren eller post lådans konfiguration, vilket ger en säker standard princip. Administratören kan dock ändra dessa inställningar för alla eller vissa användare i organisationen. Skapa [regler för utgående skräp post](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true#use-the-security--compliance-center-to-create-outbound-spam-policies) och ändra avsnittet för automatisk vidarebefordran för att styra automatisk vidarebefordran av e-post till externa avsändare. Detta kan senare tillämpas på de interna avsändarna som policyn gäller för. Vidarebefordrade meddelanden mellan interna användare påverkas inte av en sådan modifiering.
+> - Automatisk vidarebefordran av meddelanden mellan interna användare påverkas inte av inställningarna i principer för skräp post filter.
 > 
 > - Du kan se information om användare som automatiskt vidarebefordrar meddelanden till externa mottagare i [rapporten för automatiskt vidarebefordrade meddelanden](mfi-auto-forwarded-messages-report.md).
 
