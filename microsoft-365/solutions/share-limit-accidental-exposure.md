@@ -85,7 +85,7 @@ Om du vill begränsa delningen per domän på en högre nivå än SharePoint och
 Du kan begränsa delning av filer, mappar och webbplatser med personer utanför organisationen till medlemmar i en specifik säkerhetsgrupp. Det här är användbart om du vill aktivera extern delning, men med ett arbetsflöde för godkännande eller en process för begäran. Du kan även kräva att användarna ska genomgå en utbildning innan de läggs till i säkerhetsgruppen och får dela externt.
 
 Begränsa extern delning till medlemmar i en säkerhetsgrupp
-1. I navigeringsfönstret till vänster i [administrationscentret för SharePoint](https://admin.microsoft.com/sharepoint) går du till **Policyer** och klickar på **Delning** .
+1. I navigeringsfönstret till vänster i [administrationscentret för SharePoint](https://admin.microsoft.com/sharepoint) går du till **Principer** och klickar på **Delning** .
 2. Under **Extern delning** väljer du **Fler inställningar för extern delning** .
 
 3. Välj **Tillåt endast användare i vissa säkerhetsgrupper att dela externt** och därefter **Hantera säkerhetsgrupper** .
