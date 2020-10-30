@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Få regelbundna rapporter om hur personer i organisationen använder Microsoft 365-tjänster. Med instrumentpanelen för översikt över användning kan du granska varje diagram för fler insikter.
-ms.openlocfilehash: 4356b287afa56201da7cb644a4056d4c975964e5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dee0f3e586c49c25daafe999d065e743babf020e
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637013"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779126"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365-rapporter i administrationscentret
 
@@ -48,17 +48,17 @@ I den här videon finns information om hur du kan använda rapporterna:
 
 ::: moniker range="o365-germany"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a> går du till sidan **Rapporter** \> **Användning**.
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a> går du till sidan **Rapporter** \> **Användning** .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a> går du till sidan **Rapporter** \> **Användning**.
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a> går du till sidan **Rapporter** \> **Användning** .
 
 ::: moniker-end
 
-2. Klicka på **Visa mer**-knappen från aktivitetskortet för en tjänst (till exempel e-post eller OneDrive) för att se rapportdetaljsidan. Där finns olika rapporter för tjänsten i flikar. <br/>![Instrumentpanelen Användning](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+2. Klicka på **Visa mer** -knappen från aktivitetskortet för en tjänst (till exempel e-post eller OneDrive) för att se rapportdetaljsidan. Där finns olika rapporter för tjänsten i flikar. <br/>![Instrumentpanelen Användning](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
 
 ## <a name="who-can-see-reports"></a>Vem kan se rapporter
 
@@ -130,19 +130,37 @@ De här rapporterna är tillgängliga, beroende på din prenumeration.
   
 ::: moniker range="o365-worldwide"
 
-- [Yammer-aktivitet](yammer-activity-report.md)
+- [Yammer-aktivitet](yammer-activity-report-ww.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Användning av Yammer-enheter](yammer-device-usage-report.md)
+- [Yammer-aktivitet för US Government](yammer-activity-report.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Rapporten Aktivitet i Yammer-grupper](yammer-groups-activity-report.md)
+- [Användning av Yammer-enheter](yammer-device-usage-report-ww.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Yammer enhetsanvändning för USA: s regering](yammer-device-usage-report.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Rapporten Aktivitet i Yammer-grupper](yammer-groups-activity-report-ww.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Rapporten Aktivitet i Yammer-grupper för USA: s regering](yammer-groups-activity-report.md)
 
 ::: moniker-end
 
@@ -188,7 +206,7 @@ Du kan snabbt göra en ändring i administrationscentret om du vill dölja infor
   
 1. I administrationscentret går du till sidan **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Tjänster och tillägg</a>.
 
-2. Välj **Rapporter**. 
+2. Välj **Rapporter** . 
   
 3. Välj de alternativ du vill använda i fönstret **Rapporter** och spara sedan ändringarna.
   
