@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Administratörer kan lära sig att använda karantän koder för att kontrol lera vad användarna kan göra i sina karantän meddelanden.
-ms.openlocfilehash: 557a6832807c1768f482e76c76c0e92b027e49a7
-ms.sourcegitcommit: 2810d1347e5016412074b2dd18e654aee7e593de
+ms.openlocfilehash: 89f03795d8f12b3df3e5090648c5a6c8b64c322a
+ms.sourcegitcommit: 676479f1e65492b44c4d0316a765f55ae9fae374
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819265"
+ms.locfileid: "48819746"
 ---
 # <a name="quarantine-tags"></a>Karantän koder
 
@@ -477,7 +477,7 @@ Alternativet **Tillåt avsändare** kontrollerar åtkomsten till knappen som gö
 
 Om du vill ha mer information om listan Betrodda avsändare kan du läsa förhindra att betrodda avsändare [blockeras](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) och [använda Exchange Online PowerShell för att konfigurera säker lista-samlingen på en post låda](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
-### <a name="block-sender-permission"></a>Förhindra avsändare
+#### <a name="block-sender-permission"></a>Förhindra avsändare
 
 Behörigheten **Blockera avsändare** ( _PermissionToBlockSender_ ) styr åtkomsten till knappen som gör att användare enkelt kan lägga till avsändaren för meddelande i listan över spärrade avsändare.
 
@@ -491,7 +491,7 @@ Behörigheten **Blockera avsändare** ( _PermissionToBlockSender_ ) styr åtkoms
 
 Mer information om listan Spärrade avsändare finns i [blockera meddelanden från någon](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) och [använda Exchange Online PowerShell för att konfigurera säker lista-samlingen i en post låda](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
-### <a name="delete-permission"></a>Ta bort behörighet
+#### <a name="delete-permission"></a>Ta bort behörighet
 
 Behörigheten **ta bort** ( _PermissionToDelete_ ) styr möjligheten för användare att ta bort sina meddelanden (meddelanden där användaren är en mottagare) från karantän.
 
@@ -501,7 +501,7 @@ Behörigheten **ta bort** ( _PermissionToDelete_ ) styr möjligheten för använ
 
 - **Meddelanden om avanmälan till slutanvändare** : ingen effekt.
 
-### <a name="preview-permission"></a>För hands version
+#### <a name="preview-permission"></a>För hands version
 
 Med funktionen för **förhands granskning** ( _PermissionToPreview_ ) kan användarna förhandsgranska sina meddelanden i karantänen.
 
