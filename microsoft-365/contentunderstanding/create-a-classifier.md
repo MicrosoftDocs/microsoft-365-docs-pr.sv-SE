@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Lär dig att skapa en klassificerare
-ms.openlocfilehash: 948ece1a19b7e6049167c373b3200efd316a60cd
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 97a7b28d45499a46d72029d47b422d2c32696a54
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338643"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804821"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Skapa en klassificerare i Microsoft SharePoint Syntex
 
@@ -49,13 +49,13 @@ För att skapa en klassificerare behöver du:
 
 Första steget för att skapa din modell är att ge den ett namn:
 
-1. I Innehållscentret välj **Ny**och sedan **Skapa en modell**.
-2. I **Ny modell för dokumenttolkning** fönstret, i **Namn** fältet, skrev namnet på modellen. Om du, till exempel, vill identifiera kontraktförnyelse dokument, skulle du kunna get modellen namnet *Kontraktförnyelse*.
-3. Välj **Skapa**. Då skapas en startsida för modellen.</br>
+1. I Innehållscentret välj **Ny** och sedan **Skapa en modell** .
+2. I **Ny modell för dokumenttolkning** fönstret, i **Namn** fältet, skrev namnet på modellen. Om du, till exempel, vill identifiera kontraktförnyelse dokument, skulle du kunna get modellen namnet *Kontraktförnyelse* .
+3. Välj **Skapa** . Då skapas en startsida för modellen.</br>
 
     ![Startsidan för Klassificeringsmodellen](../media/content-understanding/model-home.png)
 
-När du skapar en modell skapar du också en ny typ av webbplatsinnehåll. En innehållstyp representerar en kategori med dokument som har gemensamma egenskaper och delar en samling kolumner eller metadata för det specifika innehåll. SharePoint Innehållstyper hanteras via [Innehållstyper galleri](https://support.microsoft.com/office/create-or-customize-a-site-content-type-27eb6551-9867-4201-a819-620c5658a60f). I det här exemplet när du skapar modellen skapar du en ny*Kontraktförnyelse* innehållstyp.
+När du skapar en modell skapar du också en ny typ av webbplatsinnehåll. En innehållstyp representerar en kategori med dokument som har gemensamma egenskaper och delar en samling kolumner eller metadata för det specifika innehåll. SharePoint Innehållstyper hanteras via [Innehållstyper galleri](https://support.microsoft.com/office/create-or-customize-a-site-content-type-27eb6551-9867-4201-a819-620c5658a60f). I det här exemplet när du skapar modellen skapar du en ny *Kontraktförnyelse* innehållstyp.
 
 Välj **Avancerade inställningar** om du vill mappa denna modell till en befintlig företagsinnehållstyp i SharePoint Innehållstyp galleriet för att använda dess schema. Företagsinnehållstyper lagras i Innehållstypsnav i SharePoint administrationscentret och syndikeras till alla webbplatser i klientorganisationen. Notera att när du kan använda en befintlig innehållstyp för att använda sitt schema för att hjälpa till med identifiering och klassificering behöver du ändå träna din modell för att extrahera information från filerna som identifieras.</br>
 
@@ -81,9 +81,9 @@ Se till att använda minst fem positiva exempel och minst ett negativt exempel f
 
 Lägg till exempelfiler:
 
-1. På modellens startsida, i **Lägg till exempel filer**panelen klicka **Lägg till filer**.
+1. På modellens startsida, i **Lägg till exempel filer** panelen klicka **Lägg till filer** .
 2. På sidan **Välj exempelfiler för din modell** välj dina exempelfiler från biblioteket för utbildningsfiler i innehållscentret. Om du inte redan har laddat upp dem där, välj att ladda upp dem nu genom att klicka på **Ladda upp** för att kopiera dem till biblioteket för utbildningsfiler.
-3. När du har valt dina exempel-filer som ska användas för att träna modellen klicka på **Lägg till**.
+3. När du har valt dina exempel-filer som ska användas för att träna modellen klicka på **Lägg till** .
 
     ![Välj exempelfiler](../media/content-understanding/select-sample.png) 
 
@@ -91,9 +91,9 @@ Lägg till exempelfiler:
 
 När du har lagt till dina exempelfiler behöver du ge dem etiketter som positiva eller negativa exempel.
 
-1. Gå till modellens startsida och på den **Klassificera filer och kör utbildningen** panel, klicka på **Träna Klassificerare**.
+1. Gå till modellens startsida och på den **Klassificera filer och kör utbildningen** panel, klicka på **Träna Klassificerare** .
    Etikett sidan visas med en lista över dina exempelfiler, med den första filen synlig i visningsprogrammet.
-2. I visnings programmet längst upp i den första exempelfilen bör du se text som frågar om filen är ett exempel på modellen du just skapade. Om det är ett positivt exempel välj **Ja**. Om det är ett positivt exempel välj **Nej**.
+2. I visnings programmet längst upp i den första exempelfilen bör du se text som frågar om filen är ett exempel på modellen du just skapade. Om det är ett positivt exempel välj **Ja** . Om det är ett positivt exempel välj **Nej** .
 3. I **Märkta exempel** listan till vänster välj ytterligare filer som du vill använda som exempel och märk dem. 
 
     ![Startsida för Klassificerare](../media/content-understanding/classifier-home-page.png) 
@@ -113,17 +113,16 @@ För att skapa en förklaring:
 
 1. På modellens startsida välj fliken **Träna** för att gå till Träningssidan.
 2. På Träningssidan, i sektionen **Tränade filer** bör du se en lista över de exempelfiler som du tidigare har märkt. Välj en av de positiva filerna i listan och den visas i visningsprogrammet.
-3. I Förklaringssektionen välj **Ny** och sedan**Blank**.
-4. På sidan för **Skapa en förklaring**:</br>
+3. I Förklaringssektionen välj **Ny** och sedan **Blank** .
+4. På sidan för **Skapa en förklaring** :</br>
     a. Skriv **Namnet** (till exempel "Avslöjande Block").</br>
-    b. Välj **Typ**. I exemplet välj **Fraslista**eftersom du lägger till en textsträng.</br>
+    b. Välj **Typ** . I exemplet välj **Fraslista** eftersom du lägger till en textsträng.</br>
     c. I rutan **Skriv här** skriver du strängen. För exemplet, lägg till "Begäran om ytterligare avslöjande". Du kan välja **Skiftlägeskänsliga** om strängen behöver vara skiftlägeskänslig.</br>
-    d. Klicka på **Spara**.
+    d. Klicka på **Spara** .
 
     ![Skapa förklaring](../media/content-understanding/explanation.png) 
     
- 
-5. Nu kontrolleras modellen för att se om förklaringen du skapade var tillräckligt bra för att identifiera de återstående märkta exempelfilerna korrekt, som positiva och negativa exempel. I sektionen för Tränade filer, märk kolumnen**Utvärdering** när träningen har slutförts för att se resultatet. Filerna visar ett värde för **Matchning**, om förklaringarna du skapade är tillräckliga för att matcha det som du har märkt som positivt eller negativt.
+5. Nu kontrolleras Innehållscentret för att se om förklaringen du skapade var tillräckligt komplett för att identifiera de återstående märkta exempelfilerna korrekt, som positiva och negativa exempel. I sektionen för Tränade filer, märk kolumnen **Utvärdering** när träningen har slutförts för att se resultatet. Filerna visar ett värde för **Matchning** , om förklaringarna du skapade är tillräckliga för att matcha det som du har märkt som positivt eller negativt.
 
     ![Matchningsvärde](../media/content-understanding/match.png) 
 
@@ -133,8 +132,8 @@ Om du får en **Matchningsfel** på de märkta filerna kan du behöva skapa en y
 
 Om du får en matchning för dina etiketterade exempelfiler kan du nu testa din modell på de återstående omärkta exempelfilerna som modellen inte har sett tidigare.  Det här är valfritt, men ett användbart steg för att utvärdera "lämpligheten" eller beredskapen av modellen innan användning är genom att testa den på filer som modellen inte har sett tidigare.
 
-1. Från modellens startsida välj fliken **Test**.  Då körs modellen på dina omärkta exempelfiler.
-2. I listan **Testfiler**visas dina exempelfiler och visar om modellen har uppskattad de som positiva eller negativa. Använd den här informationen för att ta reda på hur effektivt din klassificerare är för att identifiera dina dokument.
+1. Från modellens startsida välj fliken **Test** .  Då körs modellen på dina omärkta exempelfiler.
+2. I listan **Testfiler** visas dina exempelfiler och visar om modellen har uppskattad de som positiva eller negativa. Använd den här informationen för att ta reda på hur effektivt din klassificerare är för att identifiera dina dokument.
 
     ![Test av omärkta filer](../media/content-understanding/test-on-files.png) 
 
