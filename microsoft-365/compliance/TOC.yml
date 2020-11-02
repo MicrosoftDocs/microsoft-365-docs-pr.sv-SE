@@ -89,8 +89,6 @@
           href: sensitive-information-type-entity-definitions.md
         - name: Vad DLP-funktionerna letar efter
           href: what-the-dlp-functions-look-for.md
-        - name: Titta på en utökad översikt av anpassning av DLP
-          href: 'https://go.microsoft.com/fwlink/?linkid=852306'
         - name: Anpassa en inbyggd typ av känslig information
           href: customize-a-built-in-sensitive-information-type.md
         - name: Anpassade typer av känslig information
@@ -157,17 +155,17 @@
           href: double-key-encryption-overview.md
         - name: Tjänstkryptering i Office 365
           href: office-365-service-encryption.md
-        - name: Customer Key
+        - name: Kundnyckel
           items:
-            - name: Tjänstkryptering med Kundnyckel i Office 365
+            - name: Tjänstkryptering med kundnyckel i Office 365
               href: customer-key-overview.md
-            - name: Konfigurera Customer Key för Office 365
+            - name: Konfigurera kundnyckeln för Office 365
               href: customer-key-set-up.md
-            - name: Hantera Customer Key för Office 365
+            - name: Hantera kundnyckeln för Office 365
               href: customer-key-manage.md
-            - name: Rulla eller rotera Customer Key eller en tillgänglighetsnyckel
+            - name: Rulla eller rotera kundnyckeln eller en tillgänglighetsnyckel
               href: customer-key-availability-key-roll.md
-            - name: Lär dig mer om tillgänglighetsnyckeln för Customer Key
+            - name: Lär dig mer om tillgänglighetsnyckeln för kundnyckel
               href: customer-key-availability-key-understand.md
         - name: E-postkryptering
           href: email-encryption.md
@@ -182,7 +180,7 @@
               href: add-your-organization-brand-to-encrypted-messages.md
             - name: Skapa en princip för typ av känslig information för organisationen med meddelandekryptering i Office 365
               href: ome-sensitive-info-types.md
-            - name: Hantera Meddelandekryptering i Office 365
+            - name: Hantera meddelandekryptering i Office 365
               href: manage-office-365-message-encryption.md
             - name: Office 365 Advanced Message Encryption
               href: ome-advanced-message-encryption.md
@@ -222,12 +220,26 @@
           href: data-loss-prevention-policies.md
         - name: DLP och Microsoft Teams
           href: dlp-microsoft-teams.md
-        - name: Mer information om skydd mot Endpoint data förlust (förhandsversion)
+        - name: Mer information om skydd mot Endpoint data förlust
           href: endpoint-dlp-learn-about.md
-        - name: Komma igång med data förlust skydd för Endpoint (förhandsversion)
+        - name: Komma igång med data förlust skydd för Endpoint
           href: endpoint-dlp-getting-started.md
-        - name: Använda skydd mot Endpoint data förlust (förhandsversion)
+        - name: Använda skydd mot Endpoint data förlust
           href: endpoint-dlp-using.md
+        - name: Endpoint DLP Registreringsverktyg och -metoder för Windows 10-enheter
+          items:
+            - name: Registreringsverktyg och -metoder för Windows 10-enheter
+              href: dlp-configure-endpoints.md
+            - name: Registrera Windows 10-enheter via grupprincip
+              href: dlp-configure-endpoints-gp.md
+            - name: Registrera Windows 10-enheter med hanteringsverktyg för mobila enheter
+              href: dlp-configure-endpoints-mdm.md
+            - name: Registrera Windows 10-enheter med konfigurationshanteraren
+              href: dlp-configure-endpoints-sccm.md
+            - name: Registrera Windows 10-enheter med ett lokalt skript
+              href: dlp-configure-endpoints-script.md
+            - name: Registrera icke beständiga enheter för virtual desktop infrastructure (VDI)
+              href: dlp-configure-endpoints-vdi.md
         - name: Kom igång med DLP-principrekommendationer
           href: get-started-with-dlp-policy-recommendations.md
         - name: Kom igång med DLP-standardprincipen
@@ -268,7 +280,7 @@
               href: retention-policies-sharepoint.md
             - name: Kvarhållning för Microsoft Teams
               href: retention-policies-teams.md
-            - name: Retention för Yammer
+            - name: Kvarhållning för Yammer
               href: retention-policies-yammer.md
             - name: Kvarhållning för Exchange
               href: retention-policies-exchange.md
@@ -396,7 +408,7 @@
           href: create-and-manage-inactive-mailboxes.md
         - name: Ändra kvarhållningstiden för en inaktiv postlåda
           href: change-the-hold-duration-for-an-inactive-mailbox.md
-        - name: Återställa en inaktiv postlåda
+        - name: Återskapa en inaktiv postlåda
           href: recover-an-inactive-mailbox.md
         - name: Återställa en inaktiv postlåda
           href: restore-an-inactive-mailbox.md
@@ -850,13 +862,13 @@
               href: 'https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api'
     - name: Postlådegranskning
       href: enable-mailbox-auditing.md
-    - name: Advanced Audit
+    - name: Advanced granskning
       items:
         - name: Översikt över Advanced Audit
           href: advanced-audit.md
         - name: Hantera kvarhållningsprinciper för granskningsloggar
           href: audit-log-retention-policies.md
-        - name: Undersöka komprometterade konton med hjälp av Advanced Audit
+        - name: Undersöka komprometterade konton med hjälp av Advanced granskning
           href: mailitemsaccessed-forensics-investigations.md
     - name: Aviseringsprinciper
       href: alert-policies.md
