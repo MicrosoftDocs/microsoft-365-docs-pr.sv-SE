@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: I den här artikeln lär du dig hur du utför vanliga hanterings uppgifter för Microsoft 365-grupper i PowerShell.
-ms.openlocfilehash: c1aa551597644b7f41c3445a791ea27579464f7b
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 1cad2aa39a6b106cbb4dbfbafa995899b2442ed1
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277480"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830621"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>Hantera Microsoft 365-grupper med PowerShell
 
@@ -114,7 +114,7 @@ När de här inställningarna är aktiverade kan gruppens ägare välja en klass
 ## <a name="hide-microsoft-365-groups-from-the-global-address-list"></a>Dölj Microsoft 365-grupper från den globala adress listan.
 <a name="BKMK_CreateClassification"> </a>
 
-Du kan ange om en Microsoft 365-grupp visas i den globala adress listan (GAL) och andra listor i organisationen. Om du till exempel har en juridisk avdelnings grupp som du inte vill visa i adress listan kan du stoppa gruppen från att visas i GAL. Kör cmdleten Set-Ungroup för att dölja gruppen från adress listan så här:
+Du kan ange om en Microsoft 365-grupp visas i den globala adress listan (GAL) och andra listor i organisationen. Om du till exempel har en juridisk avdelnings grupp som du inte vill visa i adress listan kan du stoppa gruppen från att visas i GAL. Kör cmdleten Set-Unified Group för att dölja gruppen från adress listan så här:
 
 ```powershell
 Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $true
@@ -125,7 +125,7 @@ Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $tr
 
 Om du inte vill att användare från andra organisationer ska kunna skicka e-post till en Microsoft 365-grupp kan du ändra inställningarna för gruppen. Den tillåter bara interna användare att skicka ett e-postmeddelande till din grupp. Om en extern användare försöker skicka ett meddelande till gruppen kommer den att nekas.
 
-Kör cmdleten Set-Unifiedgrouphttps för att uppdatera den här inställningen:
+Kör cmdleten Set-UnifiedGroup för att uppdatera inställningen, så här:
 
 ```powershell
 Set-UnifiedGroup -Identity "Internal senders only" -RequireSenderAuthenticationEnabled $true
@@ -136,7 +136,7 @@ Set-UnifiedGroup -Identity "Internal senders only" -RequireSenderAuthenticationE
 
 När en avsändare försöker skicka ett e-postmeddelande till en Microsoft 365-grupp kan en posttips visas för dem.
 
-Kör cmdleten Set-Ungroup för att lägga till en posttips i gruppen:
+Kör cmdleten Set-Unified Group för att lägga till en posttips i gruppen:
 
 ```powershell
 Set-UnifiedGroup -Identity "MailTip Group" -MailTip "This group has a MailTip"
@@ -150,7 +150,7 @@ Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" 
 
 ## <a name="change-the-display-name-of-the-microsoft-365-group"></a>Ändra visnings namnet för Microsoft 365-gruppen
 
-Visnings namnet anger namnet på Microsoft 365-gruppen. Du kan se detta namn i administrations centret för Exchange eller Microsoft 365 Admin Center. Du kan redigera gruppens visnings namn eller tilldela ett visnings namn till en befintlig Microsoft 365-grupp genom att köra kommandot Set-Unifiedgrouphttps:
+Visnings namnet anger namnet på Microsoft 365-gruppen. Du kan se detta namn i administrations centret för Exchange eller Microsoft 365 Admin Center. Du kan redigera gruppens visnings namn eller tilldela ett visnings namn till en befintlig Microsoft 365-grupp genom att köra kommandot Set-UnifiedGroup:
 
 ```powershell
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
@@ -181,10 +181,10 @@ Följande cmdletar kan användas med Microsoft 365 Groups.
 |:-----|:-----|
 |[Get-Unifiedgrouphttps](https://go.microsoft.com/fwlink/p/?LinkId=616182) <br/> |Använd denna cmdlet för att slå upp befintliga Microsoft 365-grupper och för att visa egenskaperna för gruppobjektet  <br/> |
 |[Set-Unifiedgrouphttps](https://go.microsoft.com/fwlink/p/?LinkId=616189) <br/> |Uppdatera egenskaperna för en viss Microsoft 365-grupp  <br/> |
-|[New-Unifiedgrouphttps](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |Skapa en ny Microsoft 365-grupp. Denna cmdlet ger en minimal uppsättning parametrar. Om du vill ange värden för utökade egenskaper använder du Set-Unifiedgrouphttps när du har skapat den nya gruppen  <br/> |
+|[New-Unifiedgrouphttps](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |Skapa en ny Microsoft 365-grupp. Denna cmdlet ger en minimal uppsättning parametrar. Om du vill ange värden för utökade egenskaper kan du använda Set-UnifiedGroup när du har skapat den nya gruppen  <br/> |
 |[Remove-Unifiedgrouphttps](https://go.microsoft.com/fwlink/p/?LinkId=616186) <br/> |Ta bort en befintlig Microsoft 365-grupp  <br/> |
 |[Get-Unifiedgrouplinkshttps](https://go.microsoft.com/fwlink/p/?LinkId=616194) <br/> |Hämta information om medlemskap och ägare för en Microsoft 365-grupp  <br/> |
-|[Add-Unifiedgrouplinkshttps](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |Lägga till hundratals eller tusentals användare, eller nya ägare, i en befintlig Microsoft 365-grupp  <br/> |
+|[Add-Unifiedgrouplinkshttps](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |Lägga till medlemmar, ägare och abonnenter i en befintlig Microsoft 365-grupp <br/> |
 |[Remove-Unifiedgrouplinkshttps](https://go.microsoft.com/fwlink/p/?LinkId=616195) <br/> |Ta bort ägare och medlemmar från en befintlig Microsoft 365-grupp  <br/> |
 |[Get-UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536510) <br/> |Används för att visa information om användar fotot som är kopplat till ett konto. Användar foton lagras i Active Directory  <br/> |
 |[Set-UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536511) <br/> |Används för att koppla en användar bild till ett konto. Användar foton lagras i Active Directory  <br/> |
@@ -194,7 +194,7 @@ Följande cmdletar kan användas med Microsoft 365 Groups.
 
 [Uppgradera distributions listor till Microsoft 365-grupper](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 
-[Hantera vilka som kan skapa Microsoft 365-grupper](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups)
+[Hantera vilka som kan skapa Microsoft 365 Grupper](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups)
 
 [Hantera gäst åtkomst till Microsoft 365-grupper](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 

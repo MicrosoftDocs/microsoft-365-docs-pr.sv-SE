@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Lär dig att distribuera tillägg till användare och grupper i organisationen med hjälp av centraliserad distribution i administrations centret.
-ms.openlocfilehash: 20ebdfd2072c49fabadcbaf66dead54e75f9becd
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 9708ec9877c4d07b0cf93ea9d6815303236eff4b
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304798"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830643"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Distribuera tillägg i administrationscentret
 
@@ -63,33 +63,33 @@ Innan du börjar läser du [kontrol lera om centraliserad distribution av tillä
   
 1. Gå till sidan tillägg i administrations centret **Settings** \> **Add-ins** . Om du inte kan se **tilläggs** sidan går du till sidan Inställningar för **Settings** \> **integrerade appar** \> **Add-ins** .
     
-2. Välj **distribuera tillägg** högst upp på sidan och välj sedan **Nästa**.
+2. Välj **distribuera tillägg** högst upp på sidan och välj sedan **Nästa** .
  
     > [!NOTE]
-    > Administrations centret uppdateras till distributions miljön med integrerade appar. Om du inte ser ovanstående steg går du till avsnittet centraliserad distribution genom att gå till **Inställningar**för  >  **integrerade appar**. **Välj tillägg**högst upp på sidan för **integrerade appar** .
+    > Administrations centret uppdateras till distributions miljön med integrerade appar. Om du inte ser ovanstående steg går du till avsnittet centraliserad distribution genom att gå till **Inställningar** för  >  **integrerade appar** . **Välj tillägg** högst upp på sidan för **integrerade appar** .
     
 3. Välj ett alternativ och följ instruktionerna.
   
 4. Om du valde alternativet att lägga till ett tillägg från Office Store gör du tillägget. </br>
 
-    Du kan visa tillgängliga tillägg efter kategorier: **föreslaget för dig**, **betyg**eller **namn**. Det finns bara kostnads fria tillägg från Office Store. Betalda tillägg stöds för närvarande inte. När du har valt ett tillägg accepterar du villkoren och villkoren för att fortsätta. <br/> 
+    Du kan visa tillgängliga tillägg efter kategorier: **föreslaget för dig** , **betyg** eller **namn** . Det finns bara kostnads fria tillägg från Office Store. Betalda tillägg stöds för närvarande inte. När du har valt ett tillägg accepterar du villkoren och villkoren för att fortsätta. <br/> 
 
     > [!NOTE] 
-    > Med Office Store-alternativet uppdateras uppdateringar och förbättringar automatiskt till användarna.
+    > Med Office Store-alternativet distribueras uppdateringar och förbättringar automatiskt till användarna.
 
-5. På nästa sida väljer du **alla**, **specifika användare/grupper**eller **bara jag** för att ange vem tillägget distribueras till. Använd sökrutan för att hitta specifika användare eller grupper. <br/>
+5. På nästa sida väljer du **alla** , **specifika användare/grupper** eller **bara jag** för att ange vem tillägget distribueras till. Använd sökrutan för att hitta specifika användare eller grupper. <br/>
 
     > [!NOTE] 
     > Om du vill veta mer om andra tillstånd som gäller för ett tillägg läser du [i tillägget](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center.md).
   
-6. Välj **distribuera**.
+6. Välj **distribuera** .
   
 7. En grön markering visas när tillägget distribueras. Följ instruktionerna på sidan för att testa tillägget.
 
     > [!NOTE]
     > Användare kan behöva starta om Office för att Visa tilläggs ikonen i menyfliksområdet app. Outlook-tillägg kan ta upp till 24 timmar att visas på menyfliksområdet i appen.
     
-8. När du är klar väljer du **Nästa**. Om du har distribuerat dig själv kan du välja **ändra vem som har åtkomst till tillägget** för att distribueras till fler användare.
+8. När du är klar väljer du **Nästa** . Om du har distribuerat dig själv kan du välja **ändra vem som har åtkomst till tillägget** för att distribueras till fler användare.
 
     Om du har distribuerat tillägget till andra medlemmar i organisationen följer du anvisningarna för att meddela distributionen av tillägget. <br/>
   
