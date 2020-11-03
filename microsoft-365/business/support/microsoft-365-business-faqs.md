@@ -1,6 +1,6 @@
 ---
-title: Vanliga frågor och svar för Microsoft 365 Business Premium 
-description: Få svar på de vanligaste frågorna om Microsoft 365 Business, en ny lösning som är utformad för små och medelstora företag (SMB). 
+title: Vanliga frågor och svar för Microsoft 365 Business Premium
+description: Få svar på de vanligaste frågorna om Microsoft 365 Business, en ny lösning som är utformad för små och medelstora företag (SMB).
 author: Sirkkuw
 f1.keywords:
 - NOCSH
@@ -10,15 +10,15 @@ ms.prod: microsoft-365-business
 ms.collection: M365-subscription-management
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-audience: microsoft-business 
+audience: microsoft-business
 keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, vanliga frågor och svar, vanliga frågor och svar, svar, affärer
 ms.date: 07/21/2020
-ms.openlocfilehash: a8547240a2733a10730d0f8fb62fe8e8c7ef971c
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b117f0aecb76dc3b30a30e067c37328865eb0fdf
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948577"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842119"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Vanliga frågor och svar för Microsoft 365 Business Premium
 
@@ -27,15 +27,15 @@ ms.locfileid: "47948577"
 ### <a name="what-is-microsoft-365-business-premium"></a>Vad är Microsoft 365 Business Premium?
 Microsoft 365 är en integrerad lösning som ger dig tillgång till produktivitetsverktyg, säkerhets- och enhetshanteringsfunktioner som passar bäst för små och medelstora företag. Det innehåller:
 
-**En uppsättning verktyg för företags produktivitet och-samarbete**:
+**En uppsättning verktyg för företags produktivitet och-samarbete** :
 
 - Word, Excel, PowerPoint, Outlook, OneNote, Publisher och Access
 - Exchange, OneDrive, Skype för företag, Microsoft Teams och SharePoint.
 - Affärsprogram från Office (Bookings, MileIQ<sup>[1](#footnote1)</sup>).
 
-**Hanterings-och säkerhets funktioner i företags enheter**:
+**Hanterings-och säkerhets funktioner i företags enheter** :
 
-- Skyddar dig mot externa hot som nätfiske och avancerad skadlig program vara med Office 365 Advanced Threat Protection Plan 1 och Microsoft Defender sårbarhets Guard.
+- Skyddar mot externa hot som nätfiske och avancerad skadlig program vara med Microsoft Defender för Office 365 abonnemang 1 och Microsoft Defender skadligt.
 - Hjälper dig att kontrollera och hantera hur känslig information används och överförs med principerna för skydd mot dataförlust och Microsoft Azure Information Protection abonnemang 1.
 - Skyddar, bevarar och säkerhetskopierar dina data med Exchange Online – arkivering.
 - Programskydd för Office och andra mobilappar med Intune App Protection.
@@ -43,14 +43,14 @@ Microsoft 365 är en integrerad lösning som ger dig tillgång till produktivite
 - Identitetsskydd med multi-faktor autentisering, självbetjäning för återställning av lösenord och villkorsstyrd åtkomst.
 - Konsekvent säkerhets konfiguration mellan enheter &mdash; skyddar företags data på olika enheter; Microsoft Defender Antivirus, som alltid är aktiverat och uppdaterat.
 
-**Förenklad installation av enheter och användar inställningar**:
+**Förenklad installation av enheter och användar inställningar** :
 
 - Enkel administratörskonsol för att konfigurera och hantera användare och enheter
 - Automatisk installation av Office-program på Windows 10-datorer.
 - Alltid uppdaterad Office + Windows 10.
 - Strömlinjeformad distribution av datorer med Windows autopilot.
 
-**Andra rättigheter**:
+**Andra rättigheter** :
 
 - Microsoft 365 Business Premium-kunder har även tillgång till funktioner för Windows Virtual Desktop och aktivering av delade datorer för Office. Läs [Microsoft 365 Business Premium-bloggen](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) för att få mer information. Se även [Microsoft 365 för företag-tjänsten](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
 
@@ -156,7 +156,7 @@ Den mest direkta vägen till en framgångsrik Microsoft 365 Business Premium-dis
 
 ### <a name="does-microsoft-365-business-premium-include-the-full-capabilities-of-microsoft-intune"></a>Innehåller Microsoft 365 Business Premium fullständiga funktioner i Microsoft Intune?
 
-Ja, Microsoft 365 Business Premium-prenumeranter är licensierad för att använda fullständiga Intune-funktioner för iOS, Android, macOS och andra plattforms hanterings enheter. Funktioner som inte är tillgängliga i den förenklade hanterings konsolen i Microsoft 365 Business Premium, som program hantering från tredje part, konfiguration av WiFi-profiler och VPN-certifikat, kan hanteras i fullständig Intune-konsol.
+Ja, Microsoft 365 Business Premium-prenumeranter är licensierad för att använda fullständiga Intune-funktioner för iOS, Android, macOS och andra plattforms hanterings enheter. Funktioner som inte är tillgängliga i den förenklade hanterings konsolen i Microsoft 365 Business Premium, som program hantering från tredje part, konfiguration av Wi-Fi-profiler och VPN-certifikat, kan hanteras i fullständig Intune-konsol.
 
 ### <a name="does-azure-active-directory-azure-ad-premium-p1-come-with-microsoft-365-business-premium"></a>Levereras Azure Active Directory (Azure AD) Premium P1 med Microsoft 365 Business Premium?
 
@@ -180,9 +180,9 @@ Alla tilläggsprogram som kan läggas till i Microsoft 365 Business Standard kan
 
 Ja, du kan köpa ett Business-abonnemang. [Business Voice](https://docs.microsoft.com/microsoftteams/business-voice/whats-business-voice) är en telefoni lösning som är utformad för små och medel stora företag med upp till 300 användare som sammanfaller telefon system, ljud konferens, ett inrikes samtals abonnemang och mycket annat. Telefon system funktioner som du får med röst brev låda, nummer presentation, samtals Park, vidarekoppling, automatisk dirigeringar och samtals köer. <br> För att ta reda på om Business Voice är tillgänglig i ditt land eller din region, se tillgängliga [länder och regioner för Business Voice](https://docs.microsoft.com/microsoftteams/business-voice/country-region-availability). Information om priser finns i avsnittet [prissättning för företag](https://go.microsoft.com/fwlink/?linkid=2127221).
 
-### <a name="can-microsoft-365-business-premium-customers-use--microsoft-defender-advanced-threat-protection"></a>Kan Microsoft 365 Business Premium-kunder använda Microsoft Defender Avancerat skydd?
+### <a name="can-microsoft-365-business-premium-customers-use-microsoft-defender-for-endpoint"></a>Kan Microsoft 365 Business Premium-kunder använda Microsoft Defender för slut punkter?
 
-Ja, Microsoft Defender Avancerat skydd är tillgängligt som ett tillägg till Microsoft 365 Business Premium när det köps från en [Microsoft Cloud Solution-leverantör](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider).
+Ja, Microsoft Defender för slut punkt är tillgängligt som ett tillägg till Microsoft 365 Business Premium när det köps från en [Microsoft Cloud Solution-leverantör](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider).
 
 ## <a name="partner-opportunity"></a>Partner-möjligheter
 
@@ -224,7 +224,7 @@ Microsoft 365 Business Premium gör inte någon annan oäkta Windows-version, ä
 
 ### <a name="what-is-the-gdpr-and-how-does-microsoft-365-business-premium-help-customers-with-their-compliance-obligations"></a>Vad är GDPR och hur hjälper Microsoft 365 Business Premium till att hjälpa kunderna att uppfylla sina skyldigheter?
 
-Förordningen om allmänt dataskydd (GDPR) är en omfattande ny sekretesslagstiftning som ger boende i Europeiska unionen (EU) bättre kontroll över sina personliga data och kräver att organisationer upprätthåller integriteten för personliga data. GDPR kräver organisationer som kontrollerar eller behandlar personuppgifter som är kopplade till EU-medborgare för att bara använda dataprocessorer från tredje part som uppfyller kraven för GDPR för personuppgifter. I mars 2017 gjorde Microsoft tillgängliga avtalsgarantier som ger dessa garantier. Kunder som har frågor om hur Microsoft kan hjälpa dem att uppfylla sina ytterligare GDPR-skyldigheter ska läsa mer om de avancerade efterlevnads- och säkerhetsfunktionerna som finns i Microsoft 365 Business Premium (till exempel Azure Information Protection, skydd mot dataförlust, Avancerat skydd osv.) och i andra paket (till exempel Microsoft 365 Enterprise, E5). Mer information finns i [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr).
+Förordningen om allmänt dataskydd (GDPR) är en omfattande ny sekretesslagstiftning som ger boende i Europeiska unionen (EU) bättre kontroll över sina personliga data och kräver att organisationer upprätthåller integriteten för personliga data. GDPR kräver organisationer som kontrollerar eller behandlar personuppgifter som är kopplade till EU-medborgare för att bara använda dataprocessorer från tredje part som uppfyller kraven för GDPR för personuppgifter. I mars 2017 gjorde Microsoft tillgängliga avtalsgarantier som ger dessa garantier. Kunder som har frågor om hur Microsoft kan hjälpa dem att uppfylla sina ytterligare GDPR-skyldigheter bör få veta mer om de avancerade funktionerna för efterlevnad och säkerhet som är tillgängliga i Microsoft 365 Business Premium (till exempel Azure information Protection, förhindrande av data förlust, Defender för Office 365 och så vidare) och i andra paket (till exempel Microsoft 365 Enterprise, E5). Mer information finns i [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr).
 
 ## <a name="footnotes"></a>Fotnoter
 

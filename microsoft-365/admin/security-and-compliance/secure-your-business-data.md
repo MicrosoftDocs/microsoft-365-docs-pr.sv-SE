@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Skydda dina företags meddelanden och data från cyberterrorism hot, inklusive utpressnings tro Jan, nätfiske och illvilliga filer. '
-ms.openlocfilehash: c78e65e9a466fe8b95e83fa1791dd8f09fa0c541
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: c74b8a096afe1dbdd0e0d0cdc7ca5ce3fe8f9ea8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948742"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843324"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>De 10 bästa sätten att skydda Microsoft 365 för företag-abonnemang
 
@@ -51,8 +51,8 @@ Microsoft rekommenderar att du utför de uppgifter som visas i följande tabell 
 |18.6|[Stoppa automatisk vidarebefordring för e-post](secure-your-business-data.md#forwarding)|![Förts](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Förts](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |borttagning|[Använda Office meddelande kryptering](secure-your-business-data.md#encryption)||![Förts](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8.2|[Skydda din e-post från nätfiske-attacker](secure-your-business-data.md#phishing)||![Förts](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|9|[Skydda mot skadlig bifogad fil och filer med säkra filer för ATP](secure-your-business-data.md#atp)||![Förts](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10.3|[Skydda mot nätfiske-attacker med säkra ATP-länkar](secure-your-business-data.md#phishingatp)||![Förts](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|9|[Skydda mot skadliga bifogade filer och filer med säkra bifogade filer](secure-your-business-data.md#atp)||![Förts](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10.3|[Skydda mot nätfiske-attacker med säkra länkar](secure-your-business-data.md#phishingatp)||![Förts](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 Innan du börjar bör du kontrol lera din [microsoft 365 säkra Poäng](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) i Microsoft 365 säkerhets Center. Från en central instrument panel kan du övervaka och förbättra säkerheten för dina Microsoft 365-identiteter, data, appar, enheter och infrastruktur. Du får poäng för att konfigurera rekommenderade säkerhetsfunktioner, utföra säkerhetsrelaterade uppgifter (som att visa rapporter) eller adress rekommendationer med en tredje parts program eller program vara. Med ytterligare insikter och mer insyn i en bredare uppsättning Microsoft-produkter och-tjänster kan du känna dig säker på hur din organisations säkerhets tillstånd fungerar.
 
@@ -75,7 +75,7 @@ Om prenumerationen är ny kan standardinställningar för säkerhet redan vara a
 Du aktiverar eller inaktiverar säkerhetsinställningar för Azure Active Directory (Azure AD) i Microsoft Azure-portalen från fönstret **Egenskaper**.
 
 1. Logga in som global administratör på [Administrationscenter för Microsoft 365](https://admin.microsoft.com).
-2. I det vänstra navigeringsfältet väljer du **Visa alla** och under **Administratörscenter**väljer du **Azure Active Directory**.
+2. I det vänstra navigeringsfältet väljer du **Visa alla** och under **Administratörscenter** väljer du **Azure Active Directory**.
 3. I **Azure Active Directory administratörscenter** väljer du **Azure Active Directory** > **Egenskaper**.
 4. Längst ner på sidan väljer du **Hantera standardinställningar för säkerhet**.
 5. Välj **Ja** för att aktivera standardinställningar för säkerhet eller **Nej** för att inaktivera dem och välj sedan **Spara**.
@@ -121,13 +121,13 @@ Din Microsoft 365-miljö har skydd mot skadlig program vara, men du kan öka sky
 
 1. Gå till <https://protection.office.com> och logga in med dina inloggnings uppgifter för ditt administratörs konto.
 
-2. Välj **policy** **Threat management** \> **anti-malware**under Threat Management i navigerings fönstret för säkerhets &.
+2. Välj **policy** **Threat management** \> **anti-malware** under Threat Management i navigerings fönstret för säkerhets &.
 
 3. Dubbelklicka på standard principen för att redigera företagets policy.
 
 4. Välj **Inställningar**.
 
-5. Välj **på**under **vanliga typer av bifogade filer**. De filtyper som blockeras visas i fönstret direkt under den här kontrollen. Du kan lägga till och ta bort filtyper senare om det behövs.
+5. Välj **på** under **vanliga typer av bifogade filer**. De filtyper som blockeras visas i fönstret direkt under den här kontrollen. Du kan lägga till och ta bort filtyper senare om det behövs.
 
 6. Välj **Spara.**
 
@@ -148,7 +148,7 @@ Om du vill skapa en regel för e-posttransport kan du titta på en [kort utbildn
 
 1. Gå till [administrationscentret för Exchange](https://go.microsoft.com/fwlink/p/?linkid=2059104).
 
-2. Välj **regler**i kategorin **e-postflöde** .
+2. Välj **regler** i kategorin **e-postflöde** .
 
 3. Välj **+** och skapa sedan **en ny regel**.
 
@@ -184,7 +184,7 @@ Så här skapar du en e-posttransport regel:
 
 1. Gå till [administrationscentret för Exchange](https://go.microsoft.com/fwlink/p/?linkid=2059104).
 
-2. Välj **regler**i kategorin **e-postflöde** .
+2. Välj **regler** i kategorin **e-postflöde** .
 
 3. Välj **+** och skapa sedan **en ny regel**.
 
@@ -237,25 +237,25 @@ Mer information finns i [skicka, Visa och svara på krypterade meddelanden i Out
 ## <a name="8-protect-your-email-from-phishing-attacks"></a>8. skydda din e-post från nätfiske-attacker
 <a name="phishing"> </a>
 
-Om du har konfigurerat en eller flera egna domäner för Microsoft 365-miljön kan du konfigurera riktat mot nätfiske-skydd. ATP-skydd mot nätfiske, en del av Office 365 Avancerat skydd mot obehöriga attacker och andra nät fiske attacker. Om du inte har konfigurerat en egen domän behöver du inte göra detta.
+Om du har konfigurerat en eller flera egna domäner för Microsoft 365-miljön kan du konfigurera riktat mot nätfiske-skydd. Skydd mot nätfiske, en del av Microsoft Defender för Office 365, skyddar din organisation från illasinnade nätfiske-attacker och andra nät fiske attacker. Om du inte har konfigurerat en egen domän behöver du inte göra detta.
 
 Vi rekommenderar att du kommer igång med detta skydd genom att skapa en princip för att skydda de viktigaste användarna och din egen domän.
 
-![Skapa en policy för Stöldskydd mot nätfiske](../../media/security-and-compliance-center.png)
+![Skapa en Antivirus policy i Microsoft Defender för Office 365](../../media/security-and-compliance-center.png)
 
-Om du vill skapa en Antivirus policy för ATP kan du titta på en [kort utbildnings video](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)eller göra följande:
+Om du vill skapa en AntiPhishing-princip i Defender för Office 365 visar du en [kort utbildnings video](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)eller gör så här:
 
 1. Gå till <https://protection.office.com>.
 
-2. Välj **princip**i det vänstra navigerings **fönstret under säkerhets & efterlevnad.**
+2. Välj **princip** i det vänstra navigerings **fönstret under säkerhets & efterlevnad.**
 
-3. Välj **ATP-nätfiske**på sidan policy.
+3. Välj **anti-nätfiske** på sidan policy.
 
 4. På sidan för nätfiske väljer du **+ skapa**. En guide öppnas med instruktioner för hur du definierar din skydds policy för nätfiske.
 
-5. Ange namn, beskrivning och inställningar för principen enligt rekommendationer i diagrammet nedan. Läs mer om att få mer information om alternativ för att läsa mer [om ATP-alternativen](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) .
+5. Ange namn, beskrivning och inställningar för principen enligt rekommendationer i diagrammet nedan. Mer information finns i [Läs mer om anti-nätfiske-principer i Microsoft Defender för Office 365-alternativ](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) .
 
-6. När du har granskat dina inställningar väljer du **skapa den här principen** eller **Spara**på lämpligt sätt.
+6. När du har granskat dina inställningar väljer du **skapa den här principen** eller **Spara** på lämpligt sätt.
 
 |Inställning eller alternativ|Rekommenderad inställning|
 |---|---|
@@ -263,26 +263,26 @@ Om du vill skapa en Antivirus policy för ATP kan du titta på en [kort utbildni
 |Beskrivning|Se till att du har den viktigaste personalen och att domänen inte personifieras.|
 |Lägga till användare att skydda|Välj **+ Add a Condition, mottagaren är**. Skriv användar namn eller ange e-postadress för kandidat-, kampanj ansvarig och andra viktiga medlemmar i personalen. Du kan lägga till upp till 20 interna och externa adresser som du vill skydda från personifiering.|
 |Lägga till domäner att skydda|Välj **+ Add a Condition, mottagar domänen är**. Ange den anpassade domän som är kopplad till Microsoft 365-prenumerationen om du har definierat en. Du kan ange fler än en domän.|
-|Välj åtgärder|Om e-post skickas av en personifierad användare: Välj **omdirigera meddelande till en annan e-postadress**och ange sedan e-postadressen för säkerhets administratören. till exempel securityadmin@contoso.com. <br/> Om e-post skickas av en domänkontrollant: Välj **karantän meddelande**.|
+|Välj åtgärder|Om e-post skickas av en personifierad användare: Välj **omdirigera meddelande till en annan e-postadress** och ange sedan e-postadressen för säkerhets administratören. till exempel securityadmin@contoso.com. <br/> Om e-post skickas av en domänkontrollant: Välj **karantän meddelande**.|
 |Post lådans intelligens|Som standard väljs post lådans intelligens när du skapar en ny skydds policy. Lämna den här **inställningen för** bästa resultat.|
 |Lägga till betrodda avsändare och domäner|I det här exemplet definierar du inte några åsidosättningar.|
-|Tillämpas på|Välj **mottagar domänen**. Välj **Välj**under **något av dessa**. Välj **+ Lägg till**. Markera kryss rutan bredvid domän namnet, till exempel contoso.com, i listan och välj sedan **Lägg till**. Välj **klar**.|
+|Tillämpas på|Välj **mottagar domänen**. Välj **Välj** under **något av dessa**. Välj **+ Lägg till**. Markera kryss rutan bredvid domän namnet, till exempel contoso.com, i listan och välj sedan **Lägg till**. Välj **Klar**.|
 |
 
-Mer information finns i [Konfigurera Office 365 ATP-Antivirus principer](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
+Mer information finns i [Konfigurera anti-nätfiske-principer i Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
 
-## <a name="9-protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>9: skydda mot skadliga bifogade filer och filer med säkra filer för ATP
+## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9: skydda mot skadliga bifogade filer och filer med säkra bifogade filer
 <a name="atp"> </a>
 
-Personer skickar, tar emot och delar ut bifogade filer regelbundet, till exempel dokument, presentationer, kalkyl blad och annat. Det är inte alltid enkelt att berätta om en bifogad fil är säker eller skadlig genom att titta i ett e-postmeddelande. Office 365 Avancerat skydd för säkert bilagor, men detta skydd är inte aktiverat som standard. Vi rekommenderar att du skapar en ny regel för att börja använda detta skydd. Det här tillägget gäller för filer i SharePoint, OneDrive och Microsoft Teams.
+Personer skickar, tar emot och delar ut bifogade filer regelbundet, till exempel dokument, presentationer, kalkyl blad och annat. Det är inte alltid enkelt att berätta om en bifogad fil är säker eller skadlig genom att titta i ett e-postmeddelande. Microsoft Defender för Office 365 innehåller skyddad bilagor, men detta skydd är inte aktiverat som standard. Vi rekommenderar att du skapar en ny regel för att börja använda detta skydd. Det här tillägget gäller för filer i SharePoint, OneDrive och Microsoft Teams.
 
-Om du vill skapa en policy för säker bilaga med ATP kan du titta på en [kort utbildnings video](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)eller göra följande:
+Om du vill skapa en policy för säker bifogad fil kan du titta på en [kort utbildnings video](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)eller göra följande:
 
 1. Gå till <https://protection.office.com> och logga in med ditt administratörs konto.
 
-2. Välj **princip**i det vänstra navigerings **fönstret under säkerhets & efterlevnad.**
+2. Välj **princip** i det vänstra navigerings **fönstret under säkerhets & efterlevnad.**
 
-3. Markera **säkra bifogade filer för ATP**på sidan policy.
+3. På princip sidan väljer du **säkra bifogade filer**.
 
 4. På sidan betrodda bifogade filer tillämpar du det här skyddet brett genom att markera kryss rutan **Aktivera ATP för SharePoint, OneDrive och Microsoft Teams** .
 
@@ -290,7 +290,7 @@ Om du vill skapa en policy för säker bilaga med ATP kan du titta på en [kort 
 
 6. Använd inställningarna i följande tabell.
 
-7. När du har granskat dina inställningar väljer du **skapa den här principen** eller **Spara**på lämpligt sätt.
+7. När du har granskat dina inställningar väljer du **skapa den här principen** eller **Spara** på lämpligt sätt.
 
 |Inställning eller alternativ|Rekommenderad inställning|
 |---|---|
@@ -301,12 +301,12 @@ Om du vill skapa en policy för säker bilaga med ATP kan du titta på en [kort 
 |Tillämpas på|Mottagar domänen är. . . Välj din domän.|
 |
 
-Mer information finns i [Konfigurera Office 365 ATP-Antivirus principer](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
+Mer information finns i [Konfigurera anti-nätfiske-principer i Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
 
-## <a name="10-protect-against-phishing-attacks-with-atp-safe-links"></a>10: skydda mot nätfiske-attacker med säkra ATP-länkar
+## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10: skydda mot nätfiske-attacker med säkra länkar
 <a name="phishingatp"> </a>
 
-Hackare döljer ibland skadliga webbplatser i länkar i e-post eller andra filer. Office 365-säkra länkar (ATP), en del av det avancerade hotets skyddet för Office 365, kan skydda din organisation genom att ange inloggnings kontroll för webb adresser (URL: er) i e-postmeddelanden och Office-dokument. Skydd definieras genom principer för säkra Länkar för ATP.
+Hackare döljer ibland skadliga webbplatser i länkar i e-post eller andra filer. Säkra länkar, en del av Microsoft Defender för Office 365, kan skydda din organisation genom att ange inloggnings kontroll för webb adresser (URL: er) i e-postmeddelanden och Office-dokument. Skydd definieras genom principer för säkra länkar.
 
 Vi rekommenderar att du gör följande:
 
@@ -314,27 +314,27 @@ Vi rekommenderar att du gör följande:
 
 - Lägg till en ny princip riktade till alla mottagare i domänen.
 
-För att komma åt säkra anslutningar via ATP kan du titta på en [kort utbildnings video](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)eller göra följande:
+För att komma till säkra länkar kan du titta på en [kort utbildnings video](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)eller göra följande:
 
 1. Gå till <https://protection.office.com> och logga in med ditt administratörs konto.
 
-2. Välj **princip**i det vänstra navigerings **fönstret under säkerhets & efterlevnad.**
+2. Välj **princip** i det vänstra navigerings **fönstret under säkerhets & efterlevnad.**
 
-3. På sidan policy väljer du **säkerhets Länkar för ATP**.
+3. Välj **Safe Links** på princip sidan.
 
 Så här ändrar du standard principen:
 
 1. Dubbelklicka på **standard** principen på sidan Safe Links under **principer som gäller för hela organisationen**.
 
-2. Ange en URL som ska blockeras, till exempel _example.com_, under **inställningar som gäller för innehåll i Office 365**och välj **+** .
+2. Ange en URL som ska blockeras, till exempel _example.com_ , under **inställningar som gäller för innehåll i Office 365** och välj **+** .
 
-3. Välj **Office 365-program**under **inställningar som gäller för innehåll utom e-post**, **Spåra inte när användare klickar på säkra länkar**och låter **inte användare klicka genom säkra länkar till original-URL: en**.
+3. Välj **Office 365-program** under **inställningar som gäller för innehåll utom e-post** , **Spåra inte när användare klickar på säkra länkar** och låter **inte användare klicka genom säkra länkar till original-URL: en**.
 
 4. Välj **Spara**.
 
 Så här skapar du en ny princip för alla mottagare i domänen:
 
-1. På sidan Safe Links, under **principer som gäller för specifika mottagare**, väljer **+** du för att skapa en ny princip.
+1. På sidan Safe Links, under **principer som gäller för specifika mottagare** , väljer **+** du för att skapa en ny princip.
 
 2. Använd inställningarna i följande tabell.
 
@@ -348,4 +348,4 @@ Så här skapar du en ny princip för alla mottagare i domänen:
 |Tillämpas på|Mottagar domänen är. . . Välj din domän.|
 |
 
-Mer information finns i [säkra länkar i Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links).
+Mer information finns i [säkra länkar i Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links).

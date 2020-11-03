@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Få det senaste inom maskinvarubaserad isolering. Förhindra nuvarande och framväxande attacker som att utnyttja och sabotera inte fungerar för att störa företagets produktivitet och företags säkerhet.
-ms.openlocfilehash: 3a20649338bbcd58ad86f70142c2bd9f1c2fd948
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3b31ef639667c7ef761d1d5fa0295f5d767e0c48
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197579"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843012"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>Application Guard för Office (offentlig för hands version) för administratörer
 
@@ -36,19 +36,19 @@ ms.locfileid: "48197579"
 
 Microsoft Defender Application Guard för Office (Application Guard för Office) hindrar icke betrodda filer från att komma åt betrodda resurser, så att ditt företag är säkert mot nya och framväxande attacker. I den här artikeln får administratörer hjälp med att konfigurera enheter för förhands granskning av Application Guard för Office. Den innehåller information om system krav och installations anvisningar för att aktivera Application Guard för Office på en enhet.
 
-## <a name="prerequisites"></a>Förutsättningar
+## <a name="prerequisites"></a>Krav
 
 ### <a name="minimum-hardware-requirements"></a>Minsta maskin varu krav
 
-* **CPU**: 64-bitar, 4 kärnor (fysiskt eller virtuellt), virtualiseringslösningar (Intel VT-x eller AMD-V), bas i5 motsvarande eller högre rekommenderas
-* **Fysiskt minne**: 8 GB RAM-minne
-* **Hård disk**: 10 GB ledigt utrymme på system enheten (SSD rekommenderas)
+* **CPU** : 64-bitar, 4 kärnor (fysiskt eller virtuellt), virtualiseringslösningar (Intel VT-x eller AMD-V), bas i5 motsvarande eller högre rekommenderas
+* **Fysiskt minne** : 8 GB RAM-minne
+* **Hård disk** : 10 GB ledigt utrymme på system enheten (SSD rekommenderas)
 
 ### <a name="minimum-software-requirements"></a>Minsta program varu krav
 
-* **Windows 10**: Windows 10 Enterprise Edition, Client version 2004 (20H1) build 19041
-* **Office**: Office beta Channel version 2008 16.0.13212 eller senare
-* **Uppdaterings paket**: Windows 10 kumulativa [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) säkerhets uppdateringar 
+* **Windows 10** : Windows 10 Enterprise Edition, Client version 2004 (20H1) build 19041
+* **Office** : Office beta Channel version 2008 16.0.13212 eller senare
+* **Uppdaterings paket** : Windows 10 kumulativa [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) säkerhets uppdateringar 
 
 Detaljerade system krav finns i [system krav för Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Mer information om för hands versionen av Office Insider finns i [komma igång med distribution av Office Insider-versioner](https://insider.office.com/business/deploy).
 
@@ -92,7 +92,7 @@ Det här steget ser till att de uppgifter som behövs för att identifiera och �
 
     ![Start-menyn](../../media/ag05-diagnostic.png)
 
-2.  I **Windows-inställningar**väljer du **Sekretess**.
+2.  I **Windows-inställningar** väljer du **Sekretess**.
 
     ![Windows-menyn Inställningar](../../media/ag06-diagnostic.png)
 
@@ -160,9 +160,9 @@ Om du stöter på problem när du startar Application Guard för Office uppmanas
 
 4.  Fyll i rutan **förklara i mer information** med en detaljerad beskrivning av det problem du fick och vilka steg du vidtog och välj sedan **Nästa**.
 
-5.  Välj bubblan bredvid problemet. Kontrol lera att den valda kategorin är **säkerhet och sekretess \> Microsoft Defender Application Guard – Office**och välj sedan **Nästa**.
+5.  Välj bubblan bredvid problemet. Kontrol lera att den valda kategorin är **säkerhet och sekretess \> Microsoft Defender Application Guard – Office** och välj sedan **Nästa**.
 
-6.  Välj **ny feedback**och sedan **Nästa**.
+6.  Välj **ny feedback** och sedan **Nästa**.
 
 7.  Samla in spår om problemet:
 
@@ -188,13 +188,13 @@ Om du stöter på problem när du startar Application Guard för Office uppmanas
 
 Du kan också skicka feedback från Office om problemet inträffar när Office-dokument öppnas i Application Guard. Se [Office Insider-handboken](https://insider.office.com/handbook) för att skicka feedback.
 
-## <a name="integration-with-microsoft-defender-atp-and-office-atp"></a>Integrering med Microsoft Defender ATP och Office ATP
+## <a name="integration-with-microsoft-defender-for-endpoint-and-microsoft-defender-for-office-365"></a>Integrering med Microsoft Defender för slut punkt och Microsoft Defender för Office 365
 
-Application Guard för Office är integrerat med Microsoft Defender skydd (ATP) för att tillhandahålla övervakning och varning om skadlig aktivitet i den isolerade miljön.
+Application Guard för Office är integrerat med Microsoft Defender för slut punkt för att tillhandahålla övervakning och avisering vid skadlig aktivitet i den isolerade miljön.
 
-Microsoft Defender ATP är en säkerhets plattform som utformats för att hjälpa företags nätverk att förhindra, upptäcka, undersöka och reagera på avancerade hot. Om du vill ha mer information om den här plattformen går du till sidan [Microsoft Defender Avancerat skydd](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) . Läs mer om inbyggda enheter till den här plattformen på [inbyggda enheter till Microsoft Defender ATP-tjänsten](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure).
+Microsoft Defender för slut punkten är en säkerhets plattform som utformats för att hjälpa företags nätverk att förhindra, upptäcka, undersöka och reagera på avancerade hot. Mer information om den här plattformen finns på sidan [Microsoft Defender för slut punkt](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) . Läs mer om inbyggda enheter till den här plattformen på [inbyggda enheter till Microsoft Defender för slut punkts tjänsten](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure).
 
-Du kan också konfigurera Office 365 ATP så att det fungerar med Microsoft Defender ATP. Läs om hur du [integrerar Office 365 ATP med Microsoft Defender ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp?view=o365-worldwide).
+Du kan också konfigurera Microsoft Defender för Office 365 så att det fungerar med Defender för slut punkten. Se [integrera Defender för Office 365 med Microsoft Defender för slut punkt](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp?view=o365-worldwide).
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 

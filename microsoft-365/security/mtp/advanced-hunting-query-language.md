@@ -1,5 +1,5 @@
 ---
-title: Lär dig mer om det avancerade frågespråket för jakt i Microsoft Threat Protection
+title: Lär dig mer om det avancerade frågespråket i Microsoft 365 Defender
 description: Skapa din första hot-fråga och lär dig mer om vanliga operatörer och andra aspekter av det avancerade frågespråket
 keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, språk, lära sig, första frågan, telemetri, händelser, telemetri, anpassade identifieringar, schema, kusto, operatorer, data typer, PowerShell-nedladdning, exempel på frågor
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 09f0a5437c3ae3b54fa086d93e475e4881c2d4bf
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: bb3caff642e752cb6d3941b697820fbad69ae23c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431057"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841987"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Lär dig mer om det avancerade frågespråket
 
@@ -32,7 +32,7 @@ ms.locfileid: "48431057"
 
 
 **Gäller för:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 Avancerad jakt är baserat på [Kusto frågespråk](https://docs.microsoft.com/azure/kusto/query/). Du kan använda Kusto-operatorer och-uttryck för att skapa frågor som visar information i ett specialiserat [schema](advanced-hunting-schema-tables.md). Kör den första frågan för att förstå de här begreppen bättre.
 
@@ -155,9 +155,9 @@ Mer information om de här data typerna finns i [om Kusto skalära data typer](h
 
 ## <a name="get-help-as-you-write-queries"></a>Få hjälp medan du skriver frågor
 Dra nytta av följande funktioner när du vill skriva frågor snabbare:
-- **Autoföreslå**– när du skriver frågor kan du med hjälp av en avancerad jakt förslag från IntelliSense. 
-- **Schema träd**– en schema representation som innehåller listan med tabeller och deras kolumner visas bredvid arbets ytan. För mer information, Hovra över ett objekt. Dubbelklicka på ett objekt om du vill infoga det i Frågeredigeraren.
-- **[Schema referens](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**– i-Portal referens med tabell-och kolumn beskrivningar samt de händelse typer som stöds `ActionType` och urvals frågor
+- **Autoföreslå** – när du skriver frågor kan du med hjälp av en avancerad jakt förslag från IntelliSense. 
+- **Schema träd** – en schema representation som innehåller listan med tabeller och deras kolumner visas bredvid arbets ytan. För mer information, Hovra över ett objekt. Dubbelklicka på ett objekt om du vill infoga det i Frågeredigeraren.
+- **[Schema referens](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** – i-Portal referens med tabell-och kolumn beskrivningar samt de händelse typer som stöds `ActionType` och urvals frågor
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>Arbeta med flera frågor i redigeraren
 Du kan använda Frågeredigeraren för att experimentera med flera frågor. Så här använder du flera frågor:

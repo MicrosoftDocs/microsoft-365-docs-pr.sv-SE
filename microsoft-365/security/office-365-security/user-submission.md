@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Administratörer kan läsa hur du konfigurerar en post låda för att samla in skräp post och nätfiske som rapporteras av användare.
-ms.openlocfilehash: c4792958d1e59cefd8b56c05b5e159f50be80c8b
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: d39614c2cafd3469625c4a01bdc63a1e60fead85
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600487"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842910"
 ---
 # <a name="user-submissions-policy"></a>Policy för användar inlägg
 
@@ -49,9 +49,9 @@ Använd följande artiklar för att konfigurera förutsättningarna för att anv
 
 - Hoppa över skräp post filtrering på den anpassade post lådan genom att skapa en regel för Exchange-flödesschema för att ange säkerhets nivån för skräp post. Se [använda UK för att skapa en regel för e-postflöde som anger SCL för ett meddelande](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) för att ange SCL till **-1**.
 
-- Inaktivera genomsökning av bifogade filer för skadlig program vara i den anpassade post lådan. Använda inställningar för [principer för säker bifogad fil i Office 365 ATP](set-up-atp-safe-attachments-policies.md) för att skapa en policy för säker bifogad fil med inställningen **av** för **säkert bifogad fil med skadlig program vara**.
+- Inaktivera genomsökning av bifogade filer för skadlig program vara i den anpassade post lådan. Använd [Konfigurera principer för säkra bifogade filer i Defender för Office 365](set-up-atp-safe-attachments-policies.md) för att skapa en policy för säker bifogade filer med inställningen **av** för **säkert bifogade filer med skadlig program vara**.
 
-- Inaktivera URL-genomsökning för meddelanden i den anpassade post lådan. Använd [principer för säkra länkar i Office 365 ATP](set-up-atp-safe-links-policies.md) för att skapa en princip för säkra länkar med inställningen **av** för **Val av åtgärd för okända URL-adresser i meddelanden**.
+- Inaktivera URL-genomsökning för meddelanden i den anpassade post lådan. Använd [Konfigurera principer för säkra länkar i Defender för Office 365](set-up-atp-safe-links-policies.md) för att skapa en princip för säkra länkar med inställningen **av** för **Val av åtgärd för okända URL-adresser i meddelanden**.
 
 - Skapa en princip för mot skadlig program vara för att inaktivera automatisk rensning av skadlig program vara. Se [använda säkerhets & Compliance Center för att skapa principer mot skadlig program](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) vara för att **Aktivera** **Automatisk borttagning av skadlig program vara** .
 
@@ -76,27 +76,27 @@ När du har verifierat att post lådan uppfyller alla tillämpliga förutsättni
 
 2. På sidan **användar inlägg** som visas väljer du något av följande alternativ:
 
-   1. **Aktivera funktionen rapport meddelande för Outlook (rekommenderas)**: Välj det här alternativet om du använder tillägget rapportera meddelande eller inbyggd rapportering i Outlook på webben och konfigurera sedan följande inställningar:
+   1. **Aktivera funktionen rapport meddelande för Outlook (rekommenderas)** : Välj det här alternativet om du använder tillägget rapportera meddelande eller inbyggd rapportering i Outlook på webben och konfigurera sedan följande inställningar:
 
-      - **Anpassa slutanvändarens bekräftelse meddelande**: Klicka på den här länken. Konfigurera följande inställningar i den utfällda **bekräftelse meddelandet** som visas:
+      - **Anpassa slutanvändarens bekräftelse meddelande** : Klicka på den här länken. Konfigurera följande inställningar i den utfällda **bekräftelse meddelandet** som visas:
 
-      - **Före inlämning**: Ange den beskrivande text som användarna ser innan de rapporterar ett meddelande med hjälp av tillägget rapport meddelande i rutorna **rubrik** och **bekräftelse meddelande** . Du kan använda variabeln% Type% för att inkludera sändnings typen (skräp, inte skräp post, Phish, osv.).
+      - **Före inlämning** : Ange den beskrivande text som användarna ser innan de rapporterar ett meddelande med hjälp av tillägget rapport meddelande i rutorna **rubrik** och **bekräftelse meddelande** . Du kan använda variabeln% Type% för att inkludera sändnings typen (skräp, inte skräp post, Phish, osv.).
 
         Om du väljer ett alternativ som skickar det rapporterade meddelandet till Microsoft läggs även följande text till i meddelandet:
 
         > Din e-post skickas till Microsoft för analys. Vissa e-postmeddelanden kan innehålla personlig eller känslig information.
 
-      - **Efter sändning**: Klicka på ![ ikonen Expandera ](../../media/scc-expand-icon.png) . Ange den **Title** beskrivande text som användarna ser efter att de har rapporterat ett meddelande med hjälp av rapport tillägget. **Confirmation message** Du kan använda variabel% Type% för att inkludera överförings typen.
+      - **Efter sändning** : Klicka på ![ ikonen Expandera ](../../media/scc-expand-icon.png) . Ange den **Title** beskrivande text som användarna ser efter att de har rapporterat ett meddelande med hjälp av rapport tillägget. **Confirmation message** Du kan använda variabel% Type% för att inkludera överförings typen.
 
       Klicka på **Spara** när du är klar. Om du vill rensa de här värdena klickar du på **Återställ** bakåt på sidan **användar inlägg** .
 
-      - **Skicka rapporterade meddelanden till**: gör något av följande:
+      - **Skicka rapporterade meddelanden till** : gör något av följande:
 
-        - **Microsoft (rekommenderas)**: post lådan användar meddelanden används inte (alla rapporterade meddelanden skickas till Microsoft).
+        - **Microsoft (rekommenderas)** : post lådan användar meddelanden används inte (alla rapporterade meddelanden skickas till Microsoft).
 
-        - **Microsoft och en anpassad post låda**: i rutan som visas anger du e-postadressen för en befintlig Exchange Online-postlåda. Distributions grupper är inte tillåtet. Användar inlämningar kommer att gå till både Microsoft för analys och den anpassade post lådan för din administratör eller säkerhets åtgärd för att analysera.
+        - **Microsoft och en anpassad post låda** : i rutan som visas anger du e-postadressen för en befintlig Exchange Online-postlåda. Distributions grupper är inte tillåtet. Användar inlämningar kommer att gå till både Microsoft för analys och den anpassade post lådan för din administratör eller säkerhets åtgärd för att analysera.
 
-        - **Anpassad post låda**: i rutan som visas anger du e-postadressen för en befintlig Exchange Online-postlåda. Distributions grupper är inte tillåtet. Använd det här alternativet om du vill att meddelandet endast ska skickas till en administratör eller säkerhets åtgärds teamet för analys. Meddelanden går inte till Microsoft såvida inte administratören vidarebefordrar det själva.
+        - **Anpassad post låda** : i rutan som visas anger du e-postadressen för en befintlig Exchange Online-postlåda. Distributions grupper är inte tillåtet. Använd det här alternativet om du vill att meddelandet endast ska skickas till en administratör eller säkerhets åtgärds teamet för analys. Meddelanden går inte till Microsoft såvida inte administratören vidarebefordrar det själva.
 
         > [!NOTE]
         > Amerikanska statliga organisationer (GCC, GCC-H och DoD) kan endast konfigurera **anpassade post lådor**. De två andra alternativen är inaktiverade. 
@@ -106,7 +106,7 @@ När du har verifierat att post lådan uppfyller alla tillämpliga förutsättni
       > [!CAUTION]
       > Om du har [inaktiverat skräp post rapportering i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) med hjälp av Outlook på principer för Internet-postlådor, men du konfigurerar något av de föregående inställningarna för att rapportera meddelanden till Microsoft, kan användarna rapportera meddelanden till Microsoft i Outlook på webben med hjälp av rapport tillägget.
 
-   - **Inaktivera funktionen rapport meddelande för Outlook**: Välj det här alternativet om du använder rapporterings verktyg från tredje part i stället för rapport tillägget eller den inbyggda rapporteringen i Outlook på webben och konfigurera sedan följande inställningar:
+   - **Inaktivera funktionen rapport meddelande för Outlook** : Välj det här alternativet om du använder rapporterings verktyg från tredje part i stället för rapport tillägget eller den inbyggda rapporteringen i Outlook på webben och konfigurera sedan följande inställningar:
 
       Välj **Använd den här anpassade post lådan för att ta emot inlämning av användare**. I rutan som visas anger du e-postadressen för en befintlig post låda som redan finns i Office 365. Detta måste vara en befintlig post låda i Exchange Online som kan ta emot e-post.
 

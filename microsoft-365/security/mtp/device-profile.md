@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f6b79d3252084b298f94e01b18ebe3505f83b480
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3840a6beae3b586fc90420f7813ff6e9d3cc6c60
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196863"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843858"
 ---
 # <a name="device-profile-page"></a>Sidan enhets profil
 
@@ -27,9 +27,9 @@ ms.locfileid: "48196863"
 Med Microsoft 365-säkerhetsportalen får du en enhets profil sida så att du snabbt kan bedöma hälsa och status för enheter i nätverket.
 
 > [!IMPORTANT]
-> Enhets profil sidan kan verka lite annorlunda, beroende på om enheten är registrerad i Microsoft Defender ATP, Azure ATP eller båda.
+> Enhets profil sidan kan verka lite annorlunda, beroende på om enheten är registrerad i Microsoft Defender för slut punkt, Microsoft Defender för identitet eller både och.
 
-Om enheten är registrerad i Microsoft Defender ATP kan du också använda sidan enhets profil för att utföra vanliga säkerhets uppgifter.
+Om enheten är registrerad i Microsoft Defender för slut punkten kan du också använda sidan enhets profil för att utföra vanliga säkerhets uppgifter.
 
 ## <a name="navigating-the-device-profile-page"></a>Gå till sidan enhets profil
 
@@ -41,7 +41,7 @@ Marginal listen (1) visar grundläggande information om enheten.
 
 Huvud innehålls området (2) innehåller flikar som du kan växla mellan för att visa olika typer av information om enheten.
 
-Om enheten är registrerad i Microsoft Defender ATP visas även en lista med svars åtgärder (3). Med svars åtgärder kan du utföra vanliga säkerhetsrelaterade uppgifter.
+Om enheten är registrerad i Microsoft Defender för slut punkt visas även en lista med svars åtgärder (3). Med svars åtgärder kan du utföra vanliga säkerhetsrelaterade uppgifter.
 
 ## <a name="sidebar"></a>Sido fältet
 
@@ -51,15 +51,15 @@ Bredvid huvud innehålls området på sidan enhets profil visas marginal listen.
 
 I list rutan visas enhetens fullständiga namn och exponerings nivå. Den innehåller också viktig grundläggande information i små underavsnitt som kan växlas öppen eller stängd, till exempel:
 
-* **Taggar** -alla Microsoft Defender ATP-, Azure ATP-och anpassade taggar som är associerade med enheten. Taggar från Azure ATP är inte redigerbara.
-* **Säkerhets information** – öppna incidenter och aktiva aviseringar. Enheter som är registrerade i Microsoft Defender ATP visar även exponerings nivå och risk nivå.
+* **Taggar** – alla Microsoft Defender för slut punkter, Microsoft Defender för identiteter och anpassade taggar som är associerade med enheten. Taggar från Microsoft Defender för identitet är inte redigerbara.
+* **Säkerhets information** – öppna incidenter och aktiva aviseringar. Enheter som är registrerade i Microsoft Defender för slut punkter visar även exponerings nivå och risk nivå.
 
 > [!TIP]
 > Exponerings nivå handlar om hur mycket enheten uppfyller säkerhets rekommendationerna, samtidigt som risk nivån beräknas baserat på ett antal faktorer, bland annat typer och allvarlighets grad för aktiva varningar.
 
-* **Enhets uppgifter** – domän, OS, tidsstämpel för när enheten först visades, IP-adresser, resurser. Enheter som är registrerade i Microsoft Defender ATP visar också hälso tillstånd. Enheter som är registrerade i Azure ATP visar SAM-namn och en tidstämpel för när enheten först skapades.
+* **Enhets uppgifter** – domän, OS, tidsstämpel för när enheten först visades, IP-adresser, resurser. Enheter som är registrerade i Microsoft Defender för slut punkter visar också hälso tillstånd. Enheter som är registrerade i Microsoft Defender för identitet visar SAM-namn och en tidstämpel för när enheten först skapades.
 * **Nätverks aktivitet** -tidsstämplar för första gången och när enheten senast visades i nätverket.
-* **Katalog data** (*endast för enheter som är registrerade i Azure ATP*) – [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) -flaggor, [SPN](https://docs.microsoft.com/windows/win32/ad/service-principal-names)-objekt och grupp medlemskap.
+* **Katalog data** ( *endast för enheter som är registrerade i Microsoft Defender för identitet* )- [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) -flaggor, [SPN](https://docs.microsoft.com/windows/win32/ad/service-principal-names)och grupp medlemskap.
 
 ## <a name="response-actions"></a>Svars åtgärder
 
@@ -68,13 +68,13 @@ Svars åtgärder är ett snabbt sätt att försvara sig mot och analysera hot.
 ![Bild av åtgärds fältet för enhets profil](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
 
 > [!IMPORTANT]
-> * [Svars åtgärder](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) är bara tillgängliga om enheten är registrerad i Microsoft Defender ATP.
-> * Enheter som är registrerade i Microsoft Defender ATP kan visa olika antal svars åtgärder baserat på enhetens operativ system och versions nummer.
+> * [Svars åtgärder](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) är bara tillgängliga om enheten är registrerad i Microsoft Defender för slut punkten.
+> * Enheter som är registrerade i Microsoft Defender för slut punkter kan visa olika antal svars åtgärder baserat på enhetens operativ system och versions nummer.
 
 Tillgängliga åtgärder på enhets profil sidan är bland annat:
 
 * **Hantera Taggar** – uppdaterar anpassade taggar som du har använt på den här enheten.
-* **Isolera enhet** -isolerar enheten från organisationens nätverk samtidigt som den låter den vara ansluten till Microsoft Defender Avancerat skydd. Du kan välja att tillåta att Outlook, teams och Skype för företag körs medan enheten är isolerad, i syfte att kommunicera.
+* **Isolera enhet** -isolerar enheten från organisationens nätverk samtidigt som den hålls ansluten till Microsoft Defender för slut punkten. Du kan välja att tillåta att Outlook, teams och Skype för företag körs medan enheten är isolerad, i syfte att kommunicera.
 * **Åtgärds Center** – Visa statusen för skickade åtgärder. Endast tillgängligt om en annan åtgärd redan har valts.
 * **Begränsa program körning** -förhindrar att program som inte är signerade av Microsoft körs.
 * **Kör antivirus genomsökning** -uppdatera definitioner för Windows Defender Antivirus och kör en virus genomsökning omedelbart. Välj mellan snabb sökning eller fullständig sökning.
@@ -87,7 +87,7 @@ Tillgängliga åtgärder på enhets profil sidan är bland annat:
 
 Med flikarna för enhets profil kan du växla via en översikt över säkerhets information om enheten och tabeller som innehåller en lista med aviseringar.
 
-Enheter som är registrerade i Microsoft Defender ATP visar även flikar som innehåller en tids linje, en lista över säkerhets rekommendationer, en program inventering, en lista över upptäckta säkerhets problem och saknade KBs (säkerhets uppdateringar).
+Enheter som är registrerade i Microsoft Defender för slut punkter visar även flikar som innehåller en tids linje, en lista över säkerhets rekommendationer, en program inventering, en lista över upptäckta säkerhets problem och saknade KBs (säkerhets uppdateringar).
 
 ### <a name="overview-tab"></a>Fliken Översikt
 
@@ -97,11 +97,11 @@ Standard-fliken är **Översikt**. Det ger en snabb överblick över de viktigas
 
 Här kan du få en snabb överblick över enhetens aktiva aviseringar och alla användare som är inloggade.
 
-Om enheten är registrerad i Microsoft Defender ATP kan du även se enhetens risk nivå och alla tillgängliga data om säkerhets utvärderingar. Säkerhets utvärderingarna beskriver enhetens exponerings nivå, tillhandahåller säkerhets rekommendationer och visar en lista över program vara och upptäckta säkerhets problem.
+Om enheten är registrerad i Microsoft Defender för slut punkten kan du även se enhetens risk nivå och alla tillgängliga data om säkerhets utvärderingar. Säkerhets utvärderingarna beskriver enhetens exponerings nivå, tillhandahåller säkerhets rekommendationer och visar en lista över program vara och upptäckta säkerhets problem.
 
 ### <a name="alerts-tab"></a>Fliken aviseringar
 
-Fliken **aviseringar** innehåller en lista med aviseringar som har upphöjts till enheten från både Azure ATP och Microsoft Defender ATP.
+Fliken **aviseringar** innehåller en lista med aviseringar som har upphöjts till enheten från både Microsoft Defender för identitet och Microsoft Defender för slut punkten.
 
 ![Bild av fliken aviseringar för enhets profil](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
 
@@ -179,7 +179,7 @@ Om du markerar ett objekt öppnas en utfällbar länk till uppdateringen.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-* [Microsoft Threat Protection-översikt](microsoft-threat-protection.md)
-* [Aktivera Microsoft Hotskydd](mtp-enable.md)
+* [Översikt över Microsoft 365 Defender](microsoft-threat-protection.md)
+* [Aktivera Microsoft 365 Defender](mtp-enable.md)
 * [Undersök enheter på enheter, med Live Response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
 * [Automatisk undersökning och svar (AIR) i Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)

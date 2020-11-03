@@ -14,12 +14,12 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur Exchange Online Protection (EOP) hjälper till att skydda din lokala e-postorganisation i fristående och hybrid miljöer.
-ms.openlocfilehash: f99954ec280eeb8c84e6183cea9ad0b9fee63507
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a8b30a475e6865916c74f08c4d927662f658a096
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202909"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842410"
 ---
 # <a name="exchange-online-protection-overview"></a>Översikt över Exchange Online Protection
 
@@ -28,9 +28,9 @@ ms.locfileid: "48202909"
 
 Exchange Online Protection (EOP) är den molnbaserade filter tjänsten som hjälper dig att skydda din organisation mot skräp post och skadlig program vara. EOP ingår i alla Microsoft 365-organisationer med Exchange Online-postlådor. EOP är också tillgängligt i följande lokala scenarier:
 
-- **I ett fristående scenario**: EOP tillhandahåller Cloud-baserad e-postskydd för din lokala Exchange-organisation eller för någon annan lokal SMTP-e-postlösning.
+- **I ett fristående scenario** : EOP tillhandahåller Cloud-baserad e-postskydd för din lokala Exchange-organisation eller för någon annan lokal SMTP-e-postlösning.
 
-- **I en hybrid distribution**: EOP kan konfigureras för att skydda din e-postmiljö och styra e-postdirigering när du har en blandning av lokala och Cloud-postlådor.
+- **I en hybrid distribution** : EOP kan konfigureras för att skydda din e-postmiljö och styra e-postdirigering när du har en blandning av lokala och Cloud-postlådor.
 
 I dessa scenarion kan EOP förenkla hanteringen av din e-postmiljö och för att minska antalet arbets bördar som medföljer underhåll av lokal maskin vara och program vara.
 
@@ -58,11 +58,11 @@ Mer information finns i [order och prioriteringsordning för e-postskydd](how-po
 
 De tillgängliga EOP-abonnemangen är:
 
-- **Fristående EOP**: du registrerar dig i EOP för att skydda din lokala e-postorganisation.
+- **Fristående EOP** : du registrerar dig i EOP för att skydda din lokala e-postorganisation.
 
-- **EOP funktioner i Exchange Online**: alla abonnemang som innehåller Exchange Online (fristående eller som en del av Microsoft 365) använder EOP för att skydda dina Exchange Online-postlådor.
+- **EOP funktioner i Exchange Online** : alla abonnemang som innehåller Exchange Online (fristående eller som en del av Microsoft 365) använder EOP för att skydda dina Exchange Online-postlådor.
 
-- **Exchange Enterprise-klientåtkomstlicens med tjänster**: om du har en lokal Exchange-organisation där du har köpt ytterligare Exchange-klientåtkomstlicens för företag med tjänste licenser är EOP en del av de tjänster som ingår.
+- **Exchange Enterprise-klientåtkomstlicens med tjänster** : om du har en lokal Exchange-organisation där du har köpt ytterligare Exchange-klientåtkomstlicens för företag med tjänste licenser är EOP en del av de tjänster som ingår.
 
 Information om krav, viktiga begränsningar och tillgängligheten för alla EOP-abonnemang finns i [beskrivningen av Exchange Online Protection Service](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
@@ -80,7 +80,7 @@ EOP utför belastnings fördelning mellan data centers men bara inom en region. 
 
 - I Europa, Mellanöstern och Afrika (EMEA) finns alla Exchange Online-postlådor i EMEA-Data Center och alla meddelanden routas genom EMEA-data för EOP filtrering.
 
-- I Asien-Pacific (APAC) finns alla Exchange Online-postlådor i APAC data centers och meddelanden dirigeras till i APAC data centers för EOP-filtrering.
+- I Asia-Pacific (APAC) kommer alla Exchange Online-postlådor att finnas i APAC Data Center och meddelanden dirigeras för närvarande i APAC data centers för EOP-filtrering.
 
 - I Amerika distribueras tjänsterna på följande platser:
 
@@ -96,7 +96,7 @@ EOP utför belastnings fördelning mellan data centers men bara inom en region. 
 
 Hjälp innehållet för EOP-administratörer består av följande kategorier:
 
-- [Konfigurera EOP, dag 1, för Office 365 ATP-administratörer](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide): Konfigurera EOP skydds-och identifierings verktyg på grund av Office 365 Avancerat skydd.
+- [Konfigurera EOP, dag 1, för Microsoft Defender för Office 365-administratörer](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide): Konfigurera EOP skydds-och identifierings verktyg i kärnan i Microsoft Defender för Office 365.
 
 - [EOP funktioner](eop-features.md): innehåller en lista med funktioner som är tillgängliga i EOP.
 

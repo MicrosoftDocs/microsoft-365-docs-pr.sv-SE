@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 563972c458e77d96cf075f048dcee027bf29bc95
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 9a1a0204f1c79ad1eab7d62adf45022d1d5bc035
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399403"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842804"
 ---
 # <a name="security-hurdles-you-can-sail-over--one-architects-viewpoint"></a>Säkerhets avresedagen du kan Vinga – en arkitekts synvinklar
 
@@ -55,7 +55,7 @@ Om du vill ha en rekommenderad konfiguration läser du [konfigurationer för ide
 
 Många säkerhets team använder fortfarande traditionell säkerhets metod som är byggd för en lokal värld, inklusive underhåll av en "nätverk för perimeter" och försöker "tvinga fram" säkerhets verktyg och-kontroller på lokala för moln lösningar. Sådana kontroller har inte utformats för molnet, är ineffektiva och hindrar införandet av moderna moln funktioner. Processer och verktyg som fungerar för en säkerhets metod för nätverks perimeter har visat sig vara ineffektivt, kan kringgå moln kapacitet och tillåter inte utnyttja moderna och automatiserade säkerhetsfunktioner.
 
-Du kan använda Hurdle genom att ändra försvars strategierna till molnbaserade skydd, automatiserad undersökning och reparation, automatiserad penna – testning, Avancerat skydd för hot och samtals analyser. Kunder som använder moderna enhets hanterings lösningar har implementerat automatiserad hantering, standard korrigering, antivirus, principbaserad och program skydd på alla enheter (oavsett om det är en smartphone, persondator, bärbar dator eller surfplatta). Detta eliminerar behovet av en VPN-, Microsoft System Center Configuration Manager (SCCM) och Active Directory-grupprinciper. Det här kombinerat med principer för villkorsstyrd åtkomst ger till gång till effektiv kontroll och synlighet samt smidig åtkomst till resurser oavsett var deras användare arbetar.
+Du kan använda den här hurdle genom att byta försvar till moln skydd, automatiserad undersökning och reparation, automatiserad penna – testning, Defender för Office 365 och incident analys. Kunder som använder moderna enhets hanterings lösningar har implementerat automatiserad hantering, standard korrigering, antivirus, principbaserad och program skydd på alla enheter (oavsett om det är en smartphone, persondator, bärbar dator eller surfplatta). Detta eliminerar behovet av en VPN-, Microsoft System Center Configuration Manager (SCCM) och Active Directory-grupprinciper. Det här kombinerat med principer för villkorsstyrd åtkomst ger till gång till effektiv kontroll och synlighet samt smidig åtkomst till resurser oavsett var deras användare arbetar.
 
 ## <a name="strive-for-best-together-security-tools"></a>Sträva efter ' Best interarbete '-säkerhets verktyg
 

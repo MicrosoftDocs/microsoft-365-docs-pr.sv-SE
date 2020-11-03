@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 966f329d1d3ce374cc3eed9eccb6c337071f4ee1
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 1bb48b4332bc9d60de15bb513f04a503d6a6913b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430085"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842720"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -32,7 +32,7 @@ ms.locfileid: "48430085"
 
 
 **Gäller för:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 
@@ -46,7 +46,7 @@ Information om andra tabeller i det avancerade jakt schema [finns i referens fö
 | `DeviceId` | strängvärdet | Unik identifierare för datorn i tjänsten |
 | `DeviceName` | strängvärdet | Det fullständigt kvalificerade domän namnet (FQDN) för datorn |
 | `ClientVersion` | strängvärdet | Version av slut punkts agenten eller sensorn som körs på datorn |
-| `PublicIP` | strängvärdet | Offentlig IP-adress som används av den inbyggda datorn för att ansluta till Microsoft Defender ATP-tjänsten. Det här kan vara IP-adressen till själva datorn, en NAT-enhet eller en proxy |
+| `PublicIP` | strängvärdet | Offentlig IP-adress som används av den inbyggda datorn för att ansluta till Microsoft Defender för slut punkts tjänsten. Det här kan vara IP-adressen till själva datorn, en NAT-enhet eller en proxy |
 | `OSArchitecture` | strängvärdet | Arkitekturen för operativ systemet som körs på datorn |
 | `OSPlatform` | strängvärdet | Plattformen för det operativ system som körs på datorn. Detta indikerar specifika operativ system, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7 |
 | `OSBuild` | strängvärdet | Version av operativ systemet som körs på datorn |

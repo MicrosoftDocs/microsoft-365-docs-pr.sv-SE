@@ -1,5 +1,5 @@
 ---
-title: Data tabeller i det avancerade Antivirus schemat för Microsoft Threat Protection
+title: Data tabeller i Microsoft 365 Defender Advanced jakt-schemat
 description: Lär dig mer om tabellerna i det avancerade jakt-schemat för att förstå de data du kan använda för att få frågor mot jakt efter
 keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, data
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: c23637f2a26f62e3fa1ca50e9f8c75edb7c2b50a
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: d267219cfa36987c7372a42572d00f4441ccd0cd
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429662"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842494"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Förstå det avancerade jakt schema
 
@@ -32,7 +32,7 @@ ms.locfileid: "48429662"
 
 
 **Gäller för:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -57,7 +57,7 @@ I följande referens visas alla tabeller i schemat. Varje tabell namn länkar ti
 | Tabellnamn | Beskrivning |
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Filer, IP-adresser, URL: er, användare eller enheter associerade med aviseringar |
-| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Aviseringar från Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security och Azure ATP, inklusive allvarlighets grad information och kategorisering av hotet  |
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Aviseringar från Microsoft Defender för slut punkt, Microsoft Defender för Office 365, Microsoft Cloud App Security och Microsoft Defender för identitet, inklusive allvarlighets information och kategorisering av hotet  |
 | **[AppFileEvents](advanced-hunting-appfileevents-table.md)** | Filrelaterade aktiviteter i moln program och-tjänster |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Flera händelse typer, inklusive händelser som utlöses av säkerhets kontroller som Windows Defender Antivirus och sårbarhets skydd |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | Certifikat information för signerade filer som hämtats från certifikat verifierings händelser för slut punkter |

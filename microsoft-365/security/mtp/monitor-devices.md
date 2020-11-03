@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9b84ca774e1b9bd0bca51b8ee21f6a06f2fde5b4
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 92760ef14fb1192e4462bab656e22f3595f9b449
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430627"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843870"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Enhets övervakning och rapportering i säkerhets Center för Microsoft 365
 
@@ -33,11 +33,11 @@ Håll enheterna säkra, uppdaterade och håll potentiella hot i Microsoft 365 Se
 
 ## <a name="view-device-alerts"></a>Visa enhets aviseringar
 
-Få uppdaterade meddelanden om intrång och andra hot på dina enheter från Microsoft Defender ATP (tillgängligt med en E5-licens). I Microsoft 365 säkerhets Center övervakas de här aviseringarna på en hög nivå med önskat arbets flöde.
+Få uppdaterade meddelanden om intrång och andra hot på dina enheter från Microsoft Defender för slut punkten (finns med en E5-licens). I Microsoft 365 säkerhets Center övervakas de här aviseringarna på en hög nivå med önskat arbets flöde.
 
 ### <a name="monitor-high-impact-alerts"></a>Övervaka varnings aviseringar
 
-Varje Microsoft Defender ATP-varning har en motsvarande allvarlighets grad (hög, medium, Low eller information). Det här är en potentiell påverkan på nätverket om det inte finns någon.  
+Alla Microsoft Defender för slut punkts aviseringar har en motsvarande allvarlighets grad (hög, medel, Low eller information). Det här är en potentiell påverkan på nätverket om det inte finns någon.  
 
 Använd kortet med **allvarlighets grad för enhet** för att fokusera specifikt på meddelanden som är mer svåra och kan behöva svar direkt. Från det här kortet kan du läsa mer i Microsoft Defender Security Center-portalen.
 
@@ -45,7 +45,7 @@ Använd kortet med **allvarlighets grad för enhet** för att fokusera specifikt
 
 ### <a name="understand-sources-of-alerts"></a>Förstå aviserings källor
 
-Microsoft Defender ATP utnyttjar data från ett brett utbud av säkerhets sensorer och informations källor för att generera aviseringar. Den kan till exempel använda identifierings information från Microsoft Defender Antivirus och oberoende virus kontroll från tredje part. Den kan även använda din egen anpassade Threat-information via webb tjänstens API.
+Microsoft Defender för slut punkten utnyttjar data från ett brett utbud av säkerhets sensorer och informations källor för att generera aviseringar. Den kan till exempel använda identifierings information från Microsoft Defender Antivirus och oberoende virus kontroll från tredje part. Den kan även använda din egen anpassade Threat-information via webb tjänstens API.
 
 Kortet för **identifiering av enhets aviseringar** visar distributionen av aviseringar per källa. Spåra aktivitet relaterade till vissa källor, särskilt dina anpassade källor. Du kan också använda kortet för att fokusera på aviseringar som kommer från sensorer som inte är konfigurerade för automatisk blockering av skadlig aktivitet eller komponenter.
 
@@ -55,7 +55,7 @@ Från det här kortet kan du läsa mer i Microsoft Defender Security Center-port
 
 ### <a name="understand-the-types-of-threats-that-trigger-alerts"></a>Förstå vilka typer av hot som utlöser aviseringar
 
-Microsoft Defender ATP sorterar varje varning i en kategori som representerar ett visst Stadium i angrepps kedjan eller typen av hot komponent. En upptäckt hot-aktivitet kan till exempel kategoriseras som "sido rörelse" för att indikera att det fanns ett försök att nå andra enheter i nätverket. Aktiviteten har troligt vis uppstått efter att angriparen fått ett inledande foothold. När en hot komponent identifieras kan den klassificeras brett som skadlig program vara eller specifikt som en viss hot-typ. Vissa specifika uppgifter är utpressnings tro Jan, autentiseringsuppgiften stjäla eller andra typer av skadlig eller oönskad program vara.
+Microsoft Defender för slut punkt sorterar varje avisering i en kategori som representerar ett visst Stadium i angrepps kedjan eller typen av hot komponent. En upptäckt hot-aktivitet kan till exempel kategoriseras som "sido rörelse" för att indikera att det fanns ett försök att nå andra enheter i nätverket. Aktiviteten har troligt vis uppstått efter att angriparen fått ett inledande foothold. När en hot komponent identifieras kan den klassificeras brett som skadlig program vara eller specifikt som en viss hot-typ. Vissa specifika uppgifter är utpressnings tro Jan, autentiseringsuppgiften stjäla eller andra typer av skadlig eller oönskad program vara.
 
 Kortet **enhets hot kategori** visar fördelningen av aviseringar i dessa kategorier. Använd den här informationen för att identifiera hot aktivitet, till exempel försök att stjäla autentiseringsuppgiften, som vanligt vis har högre påverkan än sociala teknik försök. Du kan också övervaka för potentiellt destruktiva hot som utpressnings tro Jan program vara.
 
@@ -69,7 +69,7 @@ Status kortet för **enhets aviseringar** anger antalet aviseringar som inte har
 
 ### <a name="monitor-classification-of-resolved-alerts"></a>Övervaka klassificering av lösta varningar
 
-När du löser en Microsoft Defender ATP-avisering kan din säkerhets personal ange om en avisering har verifierats som:
+När du löser en Microsoft Defender för slut punkts avisering kan din säkerhets personal ange om en avisering har verifierats som:
 
 * En verklig avisering som identifierar faktiska brott mot aktivitets-eller hot komponenter
 * En falsk varning som felaktigt upptäckte normal aktivitet
@@ -86,12 +86,12 @@ Tillsammans med klassificering av om en avisering är sann eller falsk under upp
 
 **Enhetens** uppställnings kort visar vilken bestämning som tillhandahålls för varje avisering.
 
-* **Apt**: Avancerat, beständiga hot, som indikerar att den identifierade aktivitetens eller hot komponentens komponenter är en del av ett avancerat brott som är utformat för att få en foothold i det berörda nätverket  
-* **Skadlig program vara**: skadlig fil eller kod
-* **Säkerhets personal**: normal aktivitet genomförd av säkerhets personal
-* **Säkerhets testning**: aktivitet eller komponenter som utformats för att simulera faktiska hot och förväntas utlösa säkerhets sensorer och generera aviseringar
-* **Oönskad program vara**: appar och annan program vara som inte betraktas som skadlig, men på annat sätt strider mot policy eller acceptabla användnings standarder
-* **Andra**: alla andra bestämningar som inte faller under de tillhandahållna typerna
+* **Apt** : Avancerat, beständiga hot, som indikerar att den identifierade aktivitetens eller hot komponentens komponenter är en del av ett avancerat brott som är utformat för att få en foothold i det berörda nätverket  
+* **Skadlig program vara** : skadlig fil eller kod
+* **Säkerhets personal** : normal aktivitet genomförd av säkerhets personal
+* **Säkerhets testning** : aktivitet eller komponenter som utformats för att simulera faktiska hot och förväntas utlösa säkerhets sensorer och generera aviseringar
+* **Oönskad program vara** : appar och annan program vara som inte betraktas som skadlig, men på annat sätt strider mot policy eller acceptabla användnings standarder
+* **Andra** : alla andra bestämningar som inte faller under de tillhandahållna typerna
 
 Från det här kortet kan du läsa mer i Microsoft Defender säkerhets Center.
 
@@ -162,9 +162,9 @@ Ett kort med **regler för reducering av attack ytan** ger en översikt över dr
 
 I det övre fältet på kortet visas det totala antalet enheter i följande distributions lägen:
 
-* **Blockeringsregler**: enheter med minst en regel konfigurerad för att blockera upptäckta aktiviteter
-* **Gransknings läge**: enheter utan regler som ställts in på blockera upptäckta aktiviteter, men har minst en regel inställd på att granska upptäckta aktiviteter  
-* **Av**: enheter där alla ASR-regler är inaktiverade
+* **Blockeringsregler** : enheter med minst en regel konfigurerad för att blockera upptäckta aktiviteter
+* **Gransknings läge** : enheter utan regler som ställts in på blockera upptäckta aktiviteter, men har minst en regel inställd på att granska upptäckta aktiviteter  
+* **Av** : enheter där alla ASR-regler är inaktiverade
 
 I den nedre delen av det här kortet visas inställningar efter linje på dina enheter. Varje stapel visar antalet enheter som är inställda på att blockera, granska identifiering eller låta regeln vara avaktiverad.
 
@@ -176,10 +176,10 @@ Om du vill visa detaljerad information om identifieringar av ASR-regler i nätve
 
 Diagrammet högst upp på sidan visar identifieringar som antingen blockerades eller granskats. Tabellen längst ned visar de senaste identifieringarna. Använd följande information om tabellen för att förstå vad identifieringarna är:
 
-* **Identifierad fil**: filen, vanligt vis ett skript eller dokument, vars innehåll utlöste den misstänkta angrepps aktiviteten
-* **Regel**: namn som beskriver de angrepps aktiviteter som regeln har utformats för att fånga. Läsa om befintliga ASR-regler
-* **Käll program**: programmet som läste in eller utförde innehåll utlöste den misstänkta angrepps aktiviteten. Det kan vara ett legitimt program, till exempel en webbläsare, ett Office-program eller ett system verktyg som PowerShell
-* **Utgivare**: den leverantör som släppte källmappen
+* **Identifierad fil** : filen, vanligt vis ett skript eller dokument, vars innehåll utlöste den misstänkta angrepps aktiviteten
+* **Regel** : namn som beskriver de angrepps aktiviteter som regeln har utformats för att fånga. Läsa om befintliga ASR-regler
+* **Käll program** : programmet som läste in eller utförde innehåll utlöste den misstänkta angrepps aktiviteten. Det kan vara ett legitimt program, till exempel en webbläsare, ett Office-program eller ett system verktyg som PowerShell
+* **Utgivare** : den leverantör som släppte källmappen
 
 ### <a name="review-device-asr-rule-settings"></a>Granska inställningar för enhet i ASR-regler
 
@@ -207,7 +207,7 @@ I tabellen visas alla fil namn som identifieras av reglerna för reducering av a
 
 Om du vill ha en lista över de markerade filerna med deras fullständiga sökvägar, väljer du **Hämta undantags Sök vägar**.
 
-Loggar för automatisk uppdatering av ASR **-regel blocket som stjälas från Windows lokala säkerhets auktoritets under system (lsass.exe)** Hämta käll programmet **lsass.exe**. Det är en normal system fil, men den identifieras som den upptäckta filen. Det innebär att den genererade listan med undantags Sök vägar inkluderar den här filen. Om du vill utesluta filen som utlöste den här regeln i stället för **lsass.exe**använder du sökvägen till käll programmet i stället för den identifierade filen.
+Loggar för automatisk uppdatering av ASR **-regel blocket som stjälas från Windows lokala säkerhets auktoritets under system (lsass.exe)** Hämta käll programmet **lsass.exe**. Det är en normal system fil, men den identifieras som den upptäckta filen. Det innebär att den genererade listan med undantags Sök vägar inkluderar den här filen. Om du vill utesluta filen som utlöste den här regeln i stället för **lsass.exe** använder du sökvägen till käll programmet i stället för den identifierade filen.
 
 Om du vill leta reda på käll programmet kör du följande frågor för den här [frågan](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting) (identifieras enligt regel-ID 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2):
 

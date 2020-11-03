@@ -1,5 +1,5 @@
 ---
-title: Vidta åtgärder för frågor om avancerad jakt fråga i Microsoft Threat Protection
+title: Vidta åtgärder för avancerade frågor i jakt i Microsoft 365 Defender
 description: Adressera hot och berörda till gångar snabbt och påverkas av dina frågor
 keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, åtgärd
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 7250feffa69cc1a6cc37908a599dff0fab6c5e6c
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 506af82ec08ad6cd8dbeece5c1c2741e09e4817a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429665"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842470"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Vidta åtgärder för avancerade frågor
 
@@ -32,7 +32,7 @@ ms.locfileid: "48429665"
 
 
 **Gäller för:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -42,7 +42,7 @@ Du kan snabbt ta med hot eller adresser som äventyrade till gångar som du hitt
 - Quarantine-filer
 
 ## <a name="required-permissions"></a>Nödvändiga behörigheter
-För att kunna vidta åtgärder genom avancerad jakt måste du ha en roll i Microsoft Defender ATP med [behörigheter för att skicka reparations åtgärder på enheter](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). Om du inte kan vidta en åtgärd kontaktar du en global administratör för att få följande behörighet:
+För att kunna vidta åtgärder genom avancerad jakt måste du ha en roll i Microsoft Defender för att få en slut punkt med [behörigheter att skicka reparations åtgärder på enheter](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). Om du inte kan vidta en åtgärd kontaktar du en global administratör för att få följande behörighet:
 
 *Aktiva reparations åtgärder > hot och sårbarhet hantering – reparations hantering*
 
@@ -55,7 +55,7 @@ Du kan utföra följande åtgärder på enheter som identifieras av `DeviceId` k
 - Starta en automatiserad undersökning för att kontrol lera och åtgärda hot på enheten och möjligen andra berörda enheter
 - Begränsa program körning till endast Microsoft-signerade körbara filer, förhindra efterföljande hot-aktiviteter genom att använda skadlig program vara eller andra obetrodda program
 
-Om du vill veta mer om hur dessa svars åtgärder utförs via Microsoft Defender ATP [läser du om svars åtgärder på enheter](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).
+Om du vill veta mer om hur de här svars åtgärderna utförs via Microsoft Defender för slut punkter [läser du om svars åtgärder på enheter](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).
    
 ## <a name="quarantine-files"></a>Quarantine-filer
 Du kan distribuera *karantän* åtgärden på filer så att de automatiskt satts i karantän när de påträffas. När du väljer den här åtgärden kan du välja mellan följande kolumner för att identifiera vilka filer i frågeresultatet som ska visas:
@@ -76,7 +76,7 @@ Om du vill använda någon av de beskrivna åtgärderna markerar du en eller fle
 ![Bild av den valda posten med panelen för kontroll av posten](../../media/mtp-ah/ah-take-actions.png)
 
 ## <a name="review-actions-taken"></a>Gransknings åtgärder som utförs
-Varje åtgärd registreras individuellt i [Åtgärds centret](mtp-action-center.md) under **Åtgärds Center**  >  **Historik** ([Security.Microsoft.com/Action-Center/History](https://security.microsoft.com/action-center/history)). Gå till åtgärds centret för att kontrol lera status för varje åtgärd.
+Varje åtgärd registreras individuellt i [Åtgärds centret](mtp-action-center.md) under **Åtgärds Center**  >  **Historik** ( [Security.Microsoft.com/Action-Center/History](https://security.microsoft.com/action-center/history)). Gå till åtgärds centret för att kontrol lera status för varje åtgärd.
  
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

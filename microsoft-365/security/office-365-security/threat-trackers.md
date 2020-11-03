@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Lär dig mer om hot Spårare, inklusive nya viktiga Spårare, för att hjälpa din organisation att hålla dig informerad om säkerhets problem.
-ms.openlocfilehash: a810dca8dd556d91196d48f387c799bbf89ef869
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: df544da7bfc5abebd45b0861c29f9e49632cdcd8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446495"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842326"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Hot-Spårare-nya och intressanta
 
@@ -32,7 +32,7 @@ ms.locfileid: "48446495"
 [Office 365 hot undersökningar och svars](office-365-ti.md) funktioner gör att organisationens säkerhets team kan upptäcka och vidta åtgärder mot Cybersecurity hot. Office 365 hot undersökningar och svars funktioner innehåller funktioner för Threat Spårare, inklusive intressanta spårare. Läs den här artikeln för att få en översikt över de här nya funktionerna och nästa steg. 
 
 > [!IMPORTANT]
-> Office 365 Threat Intelligence är nu Office 365-skydds plan 2 för avancerade hot och skydds funktioner. Mer information finns i [Office 365-abonnemang och priser](https://products.office.com/exchange/advance-threat-protection) för avancerat skydd för office [-365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+> Office 365 Threat Intelligence är nu Microsoft Defender för Office 365 abonnemang 2, tillsammans med ytterligare skydds funktioner för hotet. Mer information finns i [Microsoft Defender för office 365-abonnemang och-priser](https://products.office.com/exchange/advance-threat-protection) och [beskrivningen av Microsoft defender för Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="what-are-threat-trackers"></a>Vad är Threat-Spårare?
 
@@ -44,7 +44,7 @@ De flesta Spårare-sidor innehåller trend nummer som uppdateras regelbundet, wi
   
 ![Exempel på kampanj information i Utforskaren](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
-Spårare är bara några av de många fantastiska funktioner som du får med [Office 365 Avancerat skydds abonnemang 2](office-365-ti.md). Threat-Spårare inkluderar [Noteworth-Spårare](#noteworthy-trackers), [trender för Spårare](#trending-trackers), [spårade frågor](#tracked-queries)och [sparade frågor](#saved-queries).
+Spårare är bara några av de många fantastiska funktioner som du får med [Microsoft Defender för Office 365 abonnemang 2](office-365-ti.md). Threat-Spårare inkluderar [Noteworth-Spårare](#noteworthy-trackers), [trender för Spårare](#trending-trackers), [spårade frågor](#tracked-queries)och [sparade frågor](#saved-queries).
   
 Om du vill visa och använda dina Threat-Spårare för organisationen går du till säkerhets &amp; kontroll Center ( [https://protection.office.com](https://protection.office.com) ) och väljer hot **Management** \> **Threat-Spårare**.
   
@@ -87,13 +87,13 @@ Och kom ihåg att du alltid kan skicka feedback till oss via den här eller andr
   
 ![Center för säkerhetsfunktioner &amp;](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
   
-## <a name="trackers-and-office-365-advanced-threat-protection"></a>Spårare och Office 365 Avancerat skydd
+## <a name="trackers-and-microsoft-defender-for-office-365"></a>Spårare och Microsoft Defender för Office 365
 
-Med vårt Inaugural, uppmärksammar vi att avancerade hot mot skadlig program vara identifieras av [säkra bifogade filer](atp-safe-attachments.md). Om du är Office 365 Enterprise, E5-kund och du inte använder [office 365 Avancerat skydd](office-365-atp.md) (ATP) bör du vara-det ingår i ditt abonnemang. ATP ger ett värde även om du har andra säkerhets verktyg filtrerar e-postflöden till dina Office 365-tjänster. Funktioner för skydd mot skräp post och [säkra länkar](atp-safe-links.md) fungerar bäst när din huvud säkerhets lösning för e-post är via Office 365.
+Med vårt Inaugural, uppmärksammar vi att avancerade hot mot skadlig program vara identifieras av [säkra bifogade filer](atp-safe-attachments.md). Om du är Office 365 Enterprise, E5-kund och du inte använder [Microsoft Defender för Office 365](office-365-atp.md), ska du vara-det ingår i ditt abonnemang. Defender för Office 365 ger värde även om du har andra säkerhets verktyg filtrerar e-postflöden till dina Office 365-tjänster. Funktioner för skydd mot skräp post och [säkra länkar](atp-safe-links.md) fungerar bäst när din huvud säkerhets lösning för e-post är via Office 365.
   
-![ATP i säkerhetsrelaterade &amp; Center](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
+![Microsoft Defender för Office 365 i säkerhetsrelaterade &amp; Center](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   
-I dagens hot – riddled-världen är det bara att använda vanliga sökningar av skadlig program vara som innebär att du inte är tillräckligt väl skyddad mot attacker. Dagens mer sofistikerade attackerare använder vanliga verktyg för att skapa nya, Obfuscated eller fördröjda attacker som inte känns igen av traditionella antispionprogram. Funktionen för de säkra bifogade filerna tar emot e-postbilagor och spränger dem i en virtuell miljö för att avgöra om de är säkra. Denna sprängning öppnar varje fil i en virtuell dator miljö och visar vad som händer när filen har öppnats. Om det är en PDF-fil eller ett Office-dokument kan skadlig kod vara dold i en fil och aktive ras bara när den har öppnats på sin dator. Genom att spränga och analysera filen i e-postflödet hittar Office 365 ATP-kapaciteterna baserat på beteenden, fil rykte och ett antal heuristik-regler.
+I dagens hot – riddled-världen är det bara att använda vanliga sökningar av skadlig program vara som innebär att du inte är tillräckligt väl skyddad mot attacker. Dagens mer sofistikerade attackerare använder vanliga verktyg för att skapa nya, Obfuscated eller fördröjda attacker som inte känns igen av traditionella antispionprogram. Funktionen för de säkra bifogade filerna tar emot e-postbilagor och spränger dem i en virtuell miljö för att avgöra om de är säkra. Denna sprängning öppnar varje fil i en virtuell dator miljö och visar vad som händer när filen har öppnats. Om det är en PDF-fil eller ett Office-dokument kan skadlig kod vara dold i en fil och aktive ras bara när den har öppnats på sin dator. Genom att spränga och analysera filen i e-postflödet hittar Defender för Office 365-funktioner de här hoten utifrån beteenden, fil rykte och ett antal heuristiska regler.
   
 Det nya filtret för skyddad hotet markerar objekt som nyligen identifierats via säkra bifogade filer. Dessa identifieringar representerar objekt som är nya skadliga filer, som inte tidigare upptäckts av Microsoft 365 i ditt e-postflöde eller andra kunders e-postmeddelanden. Lär dig hur du åtgärdar objekten i den aktuella hotets Spårare, se vem som var riktade till dem och granska detaljerna för Sprängaren på fliken Avancerad analys (som du hittar genom att klicka på e-postmeddelandets ämne i Utforskaren). Obs! du hittar bara den här fliken i e-postmeddelanden som upptäckts av funktionen för säker bifogade filer – den här uppmärksammade spårningen inkluderar filtret, men du kan även använda filtret för andra sökningar i Utforskaren.
   
@@ -105,4 +105,4 @@ Det nya filtret för skyddad hotet markerar objekt som nyligen identifierats via
 
 - Titta efter de nya spårningarna som visas i din Microsoft 365-miljö. När det är tillgängligt hittar du dina Spårare [här](https://protection.office.com/). Gå till hot **Management** \> **Threat-Spårare**.
 
-- Om du inte redan har gjort det kan du läsa mer om och konfigurera [Office 365 Avancerat skydd](office-365-atp.md) för din organisation, inklusive [säkra länkar](atp-safe-links.md) och [säkra bifogade filer](atp-safe-attachments.md).
+- Om du inte redan har gjort det kan du läsa mer om och konfigurera [Microsoft Defender för Office 365](office-365-atp.md) för din organisation, inklusive [säkra länkar](atp-safe-links.md) och [säkra bifogade filer](atp-safe-attachments.md).

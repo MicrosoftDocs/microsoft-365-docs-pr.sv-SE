@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Lär dig hur du flyttar ditt företag till Microsoft 365 Business Premium från Office 365 E3.
-ms.openlocfilehash: f3f3894a2a5cb69f9f91825d89db4f4b857fac5c
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: b8aa58f1f050ec6247479ed02e142507a2df45fc
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295299"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842169"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrera från Office 365 E3 till Microsoft 365 Business Premium 
 
@@ -51,7 +51,7 @@ I den här tabellen visas skillnaderna mellan Microsoft 365 Business Premium och
 | StaffHub    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Office 365 E3](../media/check-mark.png) | 
 | Kund ansvarig för Outlook, MileIQ    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | | 
 | **Skydd för hotet**        | | | 
-| Office 365 Avancerat skydd (ATP) abonnemang 1 | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | Ingår inte, men kan läggas till på | 
+| Defender för Office 365 abonnemang 1 | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | Ingår inte, men kan läggas till på | 
 | **Identitets hantering**        | | | 
 | Self-Service lösen ords återställning för Hybrid Azure Active Directory-konton (Azure AD), Azure Multi-factority (MFA), villkorsstyrd åtkomst, tillbakaskrivning för lösen ord för lokala identiteter|     ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    |  | 
 | **Hantera enheter och appar**        | | |
@@ -122,7 +122,7 @@ Microsoft 365 Business Premium har en lagrings gräns på 50 GB eftersom den anv
 
 ### <a name="threat-protection"></a>Skydd mot hot
 
-När du har migrerat till Microsoft 365 Business Premium har du Office 365 ATP. Se [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) för en översikt. Om du vill konfigurera läser du [Konfigurera säkra säkerhets](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)meddelanden för ATP, [Konfigurera säkerhet för säkert säkerhets](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)läge för ATP och [Konfigurera anti-nätfiske](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
+När du har migrerat till Microsoft 365 Business Premium har du Defender för Office 365. Se [Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) för en översikt. Om du vill konfigurera läser du [Konfigurera](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa) [säkra bilagor](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)och konfigurera [anti-nätfiske i Defender för Office 365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
 
 ### <a name="sensitivity-labels"></a>Känslighetsetiketter
 

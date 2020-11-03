@@ -1,5 +1,5 @@
 ---
-title: Konfigurera globala inställningar för inställningar för säkra länkar i Office 365 ATP
+title: Konfigurera globala inställningar för inställningar för säkra länkar i Defender för Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,37 +16,37 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan läsa mer om hur du visar och konfigurerar globala inställningar (Blockera följande webb adresser lista och skydd för Office 365-appar) för säkra länkar i Office 365 Avancerat skydd (ATP).
-ms.openlocfilehash: 50bef8a1edad50540c7212eb4259e17e2368a56c
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+description: Administratörer kan läsa mer om hur du visar och konfigurerar globala inställningar (Blockera följande webb adresser lista och skydd för Office 365-appar) för säkra länkar i Microsoft Defender för Office 365.
+ms.openlocfilehash: 655fba35bf3675bfd571c8e4923a00fbeba85304
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350883"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842434"
 ---
-# <a name="configure-global-settings-for-safe-links-in-office-365-atp"></a>Konfigurera globala inställningar för Säkra Länkar i Office 365 ATP
+# <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Konfigurera globala inställningar för säkra länkar i Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](office-365-atp.md). Om du är hem användare letar efter information om Safelinks i Outlook kan du läsa mer i [avancerad Outlook.com-säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Den här artikeln är avsedd för företags kunder som har [Microsoft Defender för Office 365](office-365-atp.md). Om du är hem användare letar efter information om Safelinks i Outlook kan du läsa mer i [avancerad Outlook.com-säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Säkra länkar är en funktion i [Office 365 Avancerat skydd (ATP)](office-365-atp.md) som tillhandahåller URL-genomsökning av inkommande e-postmeddelanden i e-postflöde och när du klickar på verifiering av URL-adresser och länkar i e-postmeddelanden och på andra platser. Mer information finns i [säkra länkar i Office 365 ATP](atp-safe-links.md).
+Säkra länkar är en funktion i [Microsoft Defender för Office 365](office-365-atp.md) som tillhandahåller URL-genomsökning av inkommande e-postmeddelanden i e-postflöde och när du klickar på verifiering av URL-adresser och länkar i e-postmeddelanden och på andra platser. Mer information finns i [säkra länkar i Microsoft Defender för Office 365](atp-safe-links.md).
 
-Du konfigurerar de flesta säkra länkar-inställningar i principer för säkra länkar. Anvisningar finns i [Konfigurera principer för säkra länkar i Office 365 ATP](set-up-atp-safe-links-policies.md).
+Du konfigurerar de flesta säkra länkar-inställningar i principer för säkra länkar. Anvisningar finns i [Konfigurera principer för säkra länkar i Microsoft Defender för Office 365](set-up-atp-safe-links-policies.md).
 
 Men, säkra länkar använder dessutom globala inställningar som gäller för alla användare som ingår i alla aktiva principer för säker länkar. Följande globala inställningar:
 
 - Listan **Blockera följande URL: er** . Mer information finns i ["Blockera följande URL-adresser" för säkra länkar](atp-safe-links.md#block-the-following-urls-list-for-safe-links)
 - Säkra länkar skyddar mot Office 365-appar. Mer information finns i [Inställningar för säkra Länkar för Office 365-appar](atp-safe-links.md#safe-links-settings-for-office-365-apps).
 
-Du kan konfigurera inställningarna för global Safe Links i säkerhets & Compliance Center eller i PowerShell (Exchange Online PowerShell för kvalificerade Microsoft 365-organisationer med post lådor i Exchange Online, fristående EOP PowerShell för organisationer utan Exchange Online-postlådor, men med Office 365 ATP-tilläggs prenumerationer).
+Du kan konfigurera inställningarna för global Safe Links i säkerhets & Compliance Center eller i PowerShell (Exchange Online PowerShell för kvalificerade Microsoft 365-organisationer med post lådor i Exchange Online, fristående EOP PowerShell för organisationer utan Exchange Online-postlådor, men med Microsoft Defender för Office 365 tilläggs prenumerationer).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- De funktioner som tillhandahålls av globala inställningar för säkra länkar tillämpas bara på användare som ingår i principer för aktiva säkra länkar. Det finns inga inbyggda eller standard principer för säkra länkar, så du behöver skapa minst en princip för säkra Länkar för att dessa globala inställningar ska vara aktiva. Anvisningar finns i [Konfigurera principer för säkra länkar i Office 365 ATP](set-up-atp-safe-links-policies.md).
+- De funktioner som tillhandahålls av globala inställningar för säkra länkar tillämpas bara på användare som ingår i principer för aktiva säkra länkar. Det finns inga inbyggda eller standard principer för säkra länkar, så du behöver skapa minst en princip för säkra Länkar för att dessa globala inställningar ska vara aktiva. Anvisningar finns i [Konfigurera principer för säkra länkar i Microsoft Defender för Office 365](set-up-atp-safe-links-policies.md).
 
-- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Använd om du vill gå direkt till sidan **Safe Links för ATP** <https://protection.office.com/safelinksv2> .
+- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till sidan **Safe Links** använder du <https://protection.office.com/safelinksv2> .
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -59,13 +59,13 @@ Du kan konfigurera inställningarna för global Safe Links i säkerhets & Compli
 
 - Tillåt upp till 30 minuter för att en ny eller uppdaterad princip ska tillämpas.
 
-- [Nya funktioner läggs hela tiden till för ATP](office-365-atp.md#new-features-in-office-365-atp). När nya funktioner läggs till kan du behöva justera dina befintliga principer för säker länkar.
+- [Nya funktioner läggs hela tiden till i Microsoft Defender för Office 365](office-365-atp.md#new-features-in-microsoft-defender-for-office-365). När nya funktioner läggs till kan du behöva justera dina befintliga principer för säker länkar.
 
 ## <a name="configure-the-block-the-following-urls-list-in-the-security--compliance-center"></a>Konfigurera listan "Blockera följande URL-adresser" i säkerhets & Compliance Center
 
 I rutan **Blockera följande URL: er** visas länkar som alltid ska blockeras av sökning efter säkra länkar i program som stöds. Mer information finns i ["Blockera följande URL-adresser" för säkra länkar](atp-safe-links.md#block-the-following-urls-list-for-safe-links).
 
-1. I säkerhets & Compliance Center går du till **Threat Management** \> **policy** \> **ATP Safe Links**och klickar sedan på **globala inställningar**.
+1. I säkerhets & Compliance Center går du till **Threat Management** \> **policy** \> **ATP Safe Links** och klickar sedan på **globala inställningar**.
 
 2. I **principen Safe Links för din organisation** flyger ut som visas går du till rutan **Blockera följande URL: er** .
 
@@ -110,15 +110,15 @@ Du kan använda cmdleten **Get-AtpPolicyForO365** för att visa befintliga poste
 
 Säkra länkar skydd för Office 365-appar gäller för dokument i Office-skrivbord, mobiler och webb program som stöds. Mer information finns i [Inställningar för säkra Länkar för Office 365-appar](atp-safe-links.md#safe-links-settings-for-office-365-apps).
 
-1. I säkerhets & Compliance Center går du till **Threat Management** \> **policy** \> **ATP Safe Links**och klickar sedan på **globala inställningar**.
+1. I säkerhets & Compliance Center går du till **Threat Management** \> **policy** \> **ATP Safe Links** och klickar sedan på **globala inställningar**.
 
 2. I **principen Safe Links för din organisation** flyger ut som visas konfigurerar du följande inställningar i inställningarna för **innehåll utom e-post** :
 
-   - **Office 365-program**: kontrol lera att växlings knappen är till höger för att aktivera säkra Länkar för Office 365-appar som stöds: ![ slå på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Office 365-program** : kontrol lera att växlings knappen är till höger för att aktivera säkra Länkar för Office 365-appar som stöds: ![ slå på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
 
-   - **Spåra inte när användare klickar på säkra länkar**: flytta växlings knappen till vänster för att hålla reda på användare klickar på relaterade till blockerade URL: er i Office 365-appar som stöds ![ ](../../media/scc-toggle-off.png) .
+   - **Spåra inte när användare klickar på säkra länkar** : flytta växlings knappen till vänster för att hålla reda på användare klickar på relaterade till blockerade URL: er i Office 365-appar som stöds ![ ](../../media/scc-toggle-off.png) .
 
-   - **Tillåt inte att användare klickar via säkra länkar till den ursprungliga webb adressen**: kontrol lera att växlings knappen är till höger för att förhindra användare från att klicka dig fram till den ursprungliga blockerade webb adressen i Office 365-appar som stöds och ![ aktivera ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Tillåt inte att användare klickar via säkra länkar till den ursprungliga webb adressen** : kontrol lera att växlings knappen är till höger för att förhindra användare från att klicka dig fram till den ursprungliga blockerade webb adressen i Office 365-appar som stöds och ![ aktivera ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
 
    Klicka på **Spara** när du är klar.
 
@@ -146,7 +146,7 @@ Detaljerad information om syntax och parametrar finns i [set-AtpPolicyForO365](h
 
 Gör något av följande för att kontrol lera att du har konfigurerat de globala inställningarna för säkra länkar ( **Blockera följande webb adress** lista och Office 365 App Protection-inställningar):
 
-- I säkerhets & Compliance Center går du till **Threat Management** \> **policy** \> - **säkra länkar**, klickar på **globala inställningar**och kontrollerar inställningarna i rutan Lägg på.
+- I säkerhets & Compliance Center går du till **Threat Management** \> **policy** \> - **säkra länkar** , klickar på **globala inställningar** och kontrollerar inställningarna i rutan Lägg på.
 
 - Kör följande kommando i Exchange Online PowerShell eller Exchange Online Protection PowerShell och kontrol lera inställningarna:
 

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Lär dig hur du flyttar ditt företag från Microsoft 365 Business Premium till Microsoft 365 E3.
-ms.openlocfilehash: fbd5c0710bffa92cfc17447094bb9b2683641d5f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 874da0d35759c8af4c3ee2ca4a1bdfa90a91627c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195528"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842209"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Migrera från Microsoft 365 Business Premium till Microsoft 365 E3
 
@@ -40,7 +40,7 @@ Eller så behöver företaget företags funktioner, till exempel Microsoft 365-a
 Det är enkelt att uppgradera: du kan starta uppgraderingen [från administrations centret](../commerce/subscriptions/upgrade-to-different-plan.md). Alla dina data och din konfiguration i ditt nuvarande abonnemang underhålls. Det finns inget som du kan göra för att förbereda för migreringen och ingenting gör efteråt, förutom de nya funktionerna.
 
 >[!Note]
->Du kan också använda ett Microsoft 365 Business Premium-abonnemang för upp till 300-platser och skaffa ett Microsoft 365 E3-abonnemang för fler än 300 platser. Men Office 365 ATP ingår inte i Microsoft 365 E3. För fortsatta hot skydd bör du lägga till ytterligare Office 365 ATP-licenser så att alla användare i omfattningen av dina Office 365 ATP-principer är licensierade.
+>Du kan också använda ett Microsoft 365 Business Premium-abonnemang för upp till 300-platser och skaffa ett Microsoft 365 E3-abonnemang för fler än 300 platser. Men Microsoft Defender för Office 365 ingår inte i Microsoft 365 E3. För fortsatt skydd av hotet bör du lägga till ytterligare Defender för Office 365-licenser så att alla användare i omfattningen av dina Defender för Office 365-principer är licensierade.
 >
 
 ## <a name="differences-between-microsoft-365-business-premium-and-microsoft-365-enterprise"></a>Skillnader mellan Microsoft 365 Business Premium och Microsoft 365 Enterprise
@@ -60,12 +60,12 @@ I den här tabellen visas skillnaderna mellan Microsoft 365 Business Premium och
 | Kund ansvarig för Outlook, MileIQ    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | | 
 | **Skydd för hotet**        | | | 
 | Reducerings kapacitet för attack ytan    | [Visa den här listan](#threat-protection) | Företags hantering av maskinvarubaserad isolering för Microsoft Edge | 
-| Office 365 Avancerat skydd (ATP) abonnemang 1 | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | Ingår inte, men kan läggas till på | 
+| Defender för Office 365 abonnemang 1 | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | Ingår inte, men kan läggas till på | 
 | **Identitets hantering**        | | | 
 | Self-Service lösen ords återställning för Hybrid Azure Active Directory-konton (Azure AD), Azure Multi-factority (MFA), villkorsstyrd åtkomst, tillbakaskrivning för lösen ord för lokala identiteter|     ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 | Cloud App Discovery, Azure AD Connect-hälsa    |     | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
-| Azure AD Office 365-appar enkel inloggning (SSO): 10 appar per användare (Galleri SaaS program som Salesforce) * | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
-| Azure AD Premium 1 SSO: ingen gräns (lokala program via Azure AD Application Proxy och program som inte är gallerier med hjälp av självbetjänings program)    |     | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
+| Azure AD Office 365-appar Sign-On (SSO): 10 appar per användare (Galleri SaaS program som Salesforce) * | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
+| Azure AD Premium 1 SSO: ingen gräns (lokala program via Azure AD Application Proxy och program som inte är gallerier med hjälp av Self-Service program för programkompatibilitet)    |     | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 | **Hantera enheter och appar**        | | | 
 | Microsoft Intune, Windows autopilot|     ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 |Åtkomst till virtuellt skriv bord (VDA)    |  |     ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
@@ -129,7 +129,7 @@ Windows 10 Business innehåller följande skydd:
 Windows 10 Enterprise, E3 inkluderar också företags hantering av maskinvarubaserad isolering för Microsoft Edge.
 
 >[!Note]
->Användare som migrerats till Microsoft 365 E3 måste var och en ha en licens för Office 365 ATP för fortsatt skydd. Se till att köpa ytterligare Office 365 ATP-licenser så att alla användare i omfattningen av dina Office 365 ATP-principer är licensierade. 
+>Användare som migrerats till Microsoft 365 E3 behöver varje Microsoft Defender för Office 365-licens för fortsatt skydd mot hot. Se till att du köper ytterligare Defender för Office 365-licenser så att alla användare i omfattningen av dina Defender för Office 365-principer är licensierade. 
 >
 
 ### <a name="device-management-with-intune"></a>Enhets hantering med Intune

@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 4e63badee2ca031bdd3ea7682396353d1658981b
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: c2772d0fc77e563bc80b0f29815349d1bfb3e2ea
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430415"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842518"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Få expert utbildning om avancerad jakt
 
@@ -32,14 +32,14 @@ ms.locfileid: "48430415"
 
 
 **Gäller för:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-Öka dina kunskaper om Avancerat jakt snabbt med _spårning av adversary_, en webb sändnings serie för nya säkerhets analyser och hotade hot Hunters. Serien vägleder dig genom grunderna för att skapa dina egna avancerade frågor. Börja med den första videon på grunderna eller gå till mer avancerade videor som passar din upplevelse.
+Öka dina kunskaper om Avancerat jakt snabbt med _spårning av adversary_ , en webb sändnings serie för nya säkerhets analyser och hotade hot Hunters. Serien vägleder dig genom grunderna för att skapa dina egna avancerade frågor. Börja med den första videon på grunderna eller gå till mer avancerade videor som passar din upplevelse.
 
 
 | Title | Beskrivning | Watch | Under | 
 |--|--|--|--|
-| Avsnitt 1: grundläggande om Keyword | I det här avsnittet beskrivs de grundläggande funktionerna i den avancerade jakten i Microsoft Threat Protection. Läs mer om tillgängliga avancerade jakt data och grundläggande Keyword-syntax och-operatörer. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [CSL-fil](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
+| Avsnitt 1: grundläggande om Keyword | I det här avsnittet beskrivs de grundläggande jaktarna i Microsoft 365 Defender. Läs mer om tillgängliga avancerade jakt data och grundläggande Keyword-syntax och-operatörer. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [CSL-fil](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | Avsnitt 2: kopplingar | Fortsätt att lära sig mer om data i avancerad jakt och hur du ansluter samman tabeller. Lär dig mer om `inner` , `outer` , `unique` och `semi` kopplingar och förstå Nuances för standard Kusto- `innerunique` kopplingen. | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [CSL-fil](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
 | Avsnitt 3: summera, pivotera och visualisera data | Nu när du har lärt dig att filtrera, hantera och koppla data är det dags att summera, kvantifiera, pivotera och visualisera. I det här avsnittet beskrivs `summarize` operatorn och olika beräkningar, medan fler tabeller i schemat introduceras. Du får också lära dig att omvandla data mängder till diagram som kan hjälpa dig att extrahera inblick. | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52) | [CSL-fil](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
 | Avsnitt 4: Låt oss titta! Använda Keyword i händelse spårning | I det här avsnittet lär du dig hur du spårar vissa angrepps aktiviteter. Vi använder vår förbättrade förståelse av Kusto och avancerad jakt för att spåra ett angrepp. Lär dig mer om faktiska stick som används i fältet, inklusive ABCs för Cybersecurity och hur du ska tillämpa dem på händelsens svar. | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [CSL-fil](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)
@@ -51,7 +51,7 @@ Följande utdrag från en CSL-fil visar en omfattande uppsättning vägledningar
 
 ```kusto
 // DeviceLogonEvents
-// A table containing a row for each logon a device enrolled in Defender ATP
+// A table containing a row for each logon a device enrolled in Microsoft Defender for Endpoint
 // Contains
 // - Account information associated with the logon
 // - The device which the account logged onto
@@ -67,7 +67,7 @@ DeviceLogonEvents
 | count
 
 // DeviceLogonEvents
-// A table containing a row for each logon a device enrolled in Defender ATP
+// A table containing a row for each logon a device enrolled in Microsoft Defender for Endpoint
 // Contains
 // - Account information associated with the logon
 // - The device which the account logged onto

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: a7d79684a085072e1af113bc0466ab26574ab904
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: d63994778762968962b2a32f026dbb81af39b664
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779238"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843822"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nyheter i Microsofts säkra Poäng
 
@@ -35,7 +35,7 @@ Vi har gjort några ändringar för att göra Microsoft säkert poäng en bättr
 
 ## <a name="october-2020"></a>Oktober 2020
 
-### <a name="remove-improvement-action-related-to-microsoft-defender-advanced-threat-protection"></a>Ta bort förbättrings åtgärd för Microsoft Defender Avancerat skydd
+### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Ta bort förbättrings åtgärd relaterad till Microsoft Defender för slut punkt
 
 - Ange webb innehålls kontroll för Windows Store-appen för Microsoft Defender SmartScreen
 
@@ -54,8 +54,8 @@ I tid kommer identitets säkra poäng och Graph API att anta den nya bedömnings
 ## <a name="updated-improvement-actions"></a>Uppdaterade förbättrings åtgärder
 
 - Åtgärder för Azure Active Directory-förbättring har lagts till
-- Förbättrade åtgärder för förbättring av integritets skydd för Azure
-- Stöd för Microsoft Defender ATP- [&](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) säkerhets rekommendationer
+- Microsoft Defender för förbättrings åtgärder har lagts till
+- Stöd för Microsoft Defender för att skydda slut punkter [&](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) säkerhets rekommendationer
     - Alla publicerade säkerhets rekommendationer från TVM är nu tillgängliga
 
 ## <a name="updated-interface-and-functionality"></a>Uppdaterat gränssnitt och funktioner

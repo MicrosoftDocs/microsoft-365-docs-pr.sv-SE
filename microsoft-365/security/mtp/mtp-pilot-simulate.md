@@ -1,6 +1,6 @@
 ---
-title: Kör dina simuleringar av angrepps skydd för Microsoft Threats
-description: Kör en simulering av attacker för ditt Microsoft Threat Protection Pilot projekt för att se hur det är avkortat och snabbt åtgärdat.
+title: Köra din Microsoft 365 Defender-attack simulering
+description: Kör antecknings simuleringar för ditt Microsoft 365 Defender Pilot projekt för att se hur det är avkortat och snabbt åtgärdat.
 keywords: Microsoft Threat Protection pilot-attack, kör Microsoft Threat Protection pilot attack simulering, simulera attack mot Microsoft Threat Protection, Microsoft Threat Protection Pilot-projekt, cyberterrorism-säkerhet, Avancerat, beständigt hot, företags säkerhet, enheter, enhet, identitet, användare, data, program, tillbud, automatisk undersökning och reparation, avancerad jakt
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,41 +20,41 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 50b74cf46999c3ad52f536ba0dfe07508c993a39
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 700bd7a3f4ba8d152cf66a27c0f66aa375872698
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447089"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842068"
 ---
-# <a name="run-your-microsoft-threat-protection-attack-simulations"></a>Kör dina simuleringar av angrepps skydd för Microsoft Threats  
+# <a name="run-your-microsoft-365-defender-attack-simulations"></a>Köra din Microsoft 365 Defender-attack simulering  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Gäller för:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
-        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft Threat Protection project" title="Planera ditt pilot Microsoft Threat Protection Project" />
+        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft 365 Defender project" title="Planera piloten Microsoft 365 Defender Project" />
       <br/>Planer </a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
-        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Förbereda ett utvärderings labb för Microsoft Threat Protection eller pilot miljö" />
+        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Förbereda utvärderings labb eller pilot miljö för Microsoft 365 Defender" />
       <br/>Ordning </a><br>
     </td>
     <td align="center"bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
-        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft Threat Protection attack simulations" title="Kör dina simuleringar av angrepps skydd för Microsoft Threats" />
+        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft 365 Defender attack simulations" title="Köra din Microsoft 365 Defender-attack simulering" />
       <br/>Simulera attack </a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
-        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft Threat Protection pilot" title="Stänga och sammanfatta ditt Microsoft Threat Protection pilot" />
+        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft 365 Defender pilot" title="Stänga och sammanfatta din Microsoft 365 Defender pilot" />
       <br/>Stäng och sammanfatta </a><br>
     </td>
   </tr>
@@ -76,7 +76,7 @@ ms.locfileid: "48447089"
 
 Du befinner dig i fasen för att angripen.
 
-När du har utarbetat din pilot miljö är det dags att testa Microsofts hot skydds-och automatiserade undersökningar och reparations funktioner. Vi hjälper dig att simulera en sofistikerad attack som använder avancerade tekniker för att dölja mot identifiering. Angrepps funktionen räknar upp öppnade SMB-sessioner (Server Message Block) på domän kontrol Lanterna och hämtar de senaste IP-adresserna för användarnas enheter. Den här kategorin av attacker inkluderar vanligt vis inte filer som ignorerats på den skadelidandes enhet – de är bara i minnet. De "bor utanför marken" genom att använda befintliga system-och administrations verktyg och injicera sin kod i system processer för att dölja deras utförande, så att de kan Evade identifiering och bevaras på enheten.
+När du har förberedat din pilot miljö är det dags att testa Microsoft 365 Defender tillbud-hanteringen och automatisk utredning och reparations kapacitet. Vi hjälper dig att simulera en sofistikerad attack som använder avancerade tekniker för att dölja mot identifiering. Angrepps funktionen räknar upp öppnade SMB-sessioner (Server Message Block) på domän kontrol Lanterna och hämtar de senaste IP-adresserna för användarnas enheter. Den här kategorin av attacker inkluderar vanligt vis inte filer som ignorerats på den skadelidandes enhet – de är bara i minnet. De "bor utanför marken" genom att använda befintliga system-och administrations verktyg och injicera sin kod i system processer för att dölja deras utförande, så att de kan Evade identifiering och bevaras på enheten.
 
 I den här simuleringen börjar vårt exempel scenario med ett PowerShell-skript. En användare kan ha svårt att köra ett skript. Eller så kan ett skript köras från en fjärr anslutning till en annan dator från en tidigare infekterad enhet – angriparen försöker flytta på ett senare plats i nätverket. Det kan vara svårt att identifiera dessa skript eftersom administratörer ofta kör skript för att utföra olika administrativa aktiviteter.
 
@@ -92,13 +92,13 @@ Under simuleringen injicerar angreppet shellcode i en Innocent process. Scenario
 
 Eftersom du redan har konfigurerat din pilot miljö under förberedelse fasen bör du kontrol lera att du har två enheter för det här scenariot: en testen het och en domänkontrollant.
 
-1.  Kontrol lera att din klient organisation har [aktiverat Microsoft Threat Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service).
+1.  Kontrol lera att din klient organisation har [aktiverat Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service).
 
 2.  Verifiera konfigurationen för din testdomänkontrollant:
 
     - Enheten körs med Windows Server 2008 R2 eller en senare version.
-    - Testa domänkontrollanten till [Avancerat Azure-skydd](https://docs.microsoft.com/azure/security-center/security-center-wdatp) och aktivera [fjärrhantering](https://docs.microsoft.com/windows-server/administration/server-manager/configure-remote-management-in-server-manager).    
-    - Kontrol lera att [integreringen med Azure ATP och Microsoft Cloud App](https://docs.microsoft.com/cloud-app-security/aatp-integration) har Aktiver ATS.
+    - Testa domänkontrollanten till [Microsoft Defender för identitet](https://docs.microsoft.com/azure/security-center/security-center-wdatp) och aktivera [fjärrhantering](https://docs.microsoft.com/windows-server/administration/server-manager/configure-remote-management-in-server-manager).    
+    - Kontrol lera att [Microsoft Defender för identitet och Microsoft Cloud App-säkerhetsintegrering](https://docs.microsoft.com/cloud-app-security/aatp-integration) har Aktiver ATS.
     - En test användare skapas på din domän – inga administratörs behörigheter behövs.
 
 3.  Verifiera test enhetens konfiguration:
@@ -109,7 +109,7 @@ Eftersom du redan har konfigurerat din pilot miljö under förberedelse fasen b�
     
     1.  [Aktivera Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Om du har problem med att aktivera Windows Defender Antivirus kan du läsa det här [avsnittet fel sökning](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
     
-    1.  Kontrol lera att test enheten är [inbyggd för Microsoft Defender Avancerat skydd (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+    1.  Kontrol lera att test enheten är [inbyggd i Microsoft Defender för slut punkten)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 Om du använder en befintlig klient organisation och implementerar enhets grupper skapar du en dedikerad enhets grupp för test enheten och skickar den till toppnivån i konfigurations gränssnittet.
 
@@ -175,7 +175,7 @@ Om du växlar till SOC analytiker kan du börja undersöka anslagen i Microsoft 
 
 ### <a name="investigate-the-attack-as-a-single-incident"></a>Undersök angreppet som en enda olycka
 
-Microsoft Threat Protection korrelerar analyser och sammanställda alla relaterade varningar och undersökningar från olika produkter till en olycka-enhet. Genom att göra så visas ett problem med en bredare attack som gör att SOC analytiker förstår och svarar på komplexa hot.
+Microsoft 365 Defender korrelerar analyser och sammanställda alla relaterade varningar och undersökningar från olika produkter till en olycka-enhet. Genom att göra så visar Microsoft 365 Defender en bredare attack artikel som gör att SOC analytiker förstår och svarar på komplexa hot.
 
 De notifieringar som genereras under simuleringen är kopplade till samma hot, och som ett resultat aggregeras automatiskt som en enda händelse.
 
@@ -189,11 +189,11 @@ Så här visar du felet:
 
     ![Skärm bild av sidan incidenter där genererade aviseringar aggregeras under simuleringen](../../media/mtp/fig4.png)
 
-    De aviseringar som visas i instrument panelen kan filtreras baserat på tjänst resurser: Azure ATP, Microsoft Cloud App Security, Microsoft Defender ATP, Microsoft Threat Protection och Office ATP.  
+    Aviseringarna som visas i instrument panelen kan filtreras baserat på tjänst resurser: Microsoft Defender för identitet, Microsoft Cloud App Security, Microsoft Defender för slut punkt, Microsoft 365 Defender och Microsoft Defender för Office 365.  
 
 3.  Välj **Öppna sidan incident** för att få mer information om felet.
 
-    På sidan **incident** kan du se alla aviseringar och information som rör händelsen. Informationen inkluderar de enheter och till gångar som ingår i aviseringen, identifierings källan för aviseringarna (Azure ATP, EDR) och anledningen till att de har länkats samman. Om du granskar samtals listan visas meddelandets förlopp. I den här vyn kan du se och undersöka de enskilda varningarna.
+    På sidan **incident** kan du se alla aviseringar och information som rör händelsen. Informationen inkluderar de enheter och till gångar som är involverade i aviseringen, identifierings källan för aviseringarna (Microsoft Defender för identitet, EDR) och anledningen till att de sammanlänkade. Om du granskar samtals listan visas meddelandets förlopp. I den här vyn kan du se och undersöka de enskilda varningarna.
 
     Du kan också klicka på **Hantera incident** från den högra menyn för att tagga händelsen, tilldela den till dig själv och lägga till kommentarer.
 
@@ -207,23 +207,23 @@ Så här visar du felet:
 Låt oss titta på några av de varningar som genereras under det simulerade angreppet.
 
 >[!NOTE]
->Vi går igenom bara några av de varningar som genereras under det simulerade angreppet. Beroende på vilken version av Windows och Microsoft Threat Protection-produkterna som körs på din test telefon kan du se fler aviseringar som visas lite annorlunda.
+>Vi går igenom bara några av de varningar som genereras under det simulerade angreppet. Beroende på vilken version av Windows och Microsoft 365 Defender-produkterna som körs på din test telefon kan du se fler aviseringar som visas lite annorlunda.
 
 ![Skärm bild av genererade aviseringar](../../media/mtp/fig6.png) 
 
 
-**Varning: misstänkt process inmatning (Källa: Microsoft Defender ATP EDR)**
+**Varning: misstänkt process inmatning (Källa: Microsoft Defender för slut punkt EDR)**
 
 Avancerade angripare använder avancerade och stealthy metoder för att spara i minnet och dölja från detektions verktyg. En gemensam teknik är att fungera i en betrodd system process i stället för en illvillig körbar fil, vilket gör den svår att upptäcka för identifierings verktyg och säkerhets åtgärder för att upptäcka den skadliga koden.
 
-För att SOC-analytikerna ska kunna fånga de här avancerade angreppen ger djup minnes sensorer i Microsoft Defender ATP en vår moln tjänst med oöverträffad insyn i en mängd olika metoder för kod inmatning med flera processer. I följande bild visas hur Microsoft Defender ATP identifieras och visas på försöket att injicera kod för <i>notepad.exe</i>.
+För att SOC-analytikerna ska kunna fånga de här avancerade angreppen ger djupt minnes sensorer i Microsoft Defender för slut punkter vår moln tjänst med oöverträffad synbarhet i en mängd olika metoder för kod inmatning med flera processer. I följande bild visas hur Defender för slut punkten identifieras och aviseringar om försöket att injicera kod till <i>notepad.exe</i>.
 
 ![Skärm bild av aviseringen för inmatning av potentiellt skadlig kod](../../media/mtp/fig7.png) 
 
 
-**Avisering: oväntat beteende som observerats av en process som körs utan kommando rads argument (Source: Microsoft Defender ATP EDR)**
+**Avisering: oväntat beteende som observerats av en process som körs utan kommando rads argument (Source: Microsoft Defender för slut punkts EDR)**
 
-Microsoft Defender ATP-identifieringar riktar sig ofta till det vanligaste attributet för en attack teknik. Den här metoden säkerställer hållbarheten och gör att angriparen kan växla till nyare taktiker.
+Microsoft Defender för slut punkts identifiering riktar sig ofta till det vanligaste attributet för en attack teknik. Den här metoden säkerställer hållbarheten och gör att angriparen kan växla till nyare taktiker.
 
 Vi använder storskaliga Learning-algoritmer för att fastställa normal beteende för vanliga processer i en organisation och över hela världen och titta efter när dessa processer visar avvikande beteenden. Dessa avvikande beteenden indikerar ofta att den extra koden införts och att den körs i en betrodd process.
 
@@ -242,17 +242,17 @@ I följande bild visas sidan för vald IP-adress (klicka på IP-adress i aviseri
 ![Skärm bild av sidan med information om IP-adress](../../media/mtp/fig9.png)
 
 
-**Varning: användare och IP-Reconnaissance (SMB) (Källa: Azure ATP)**
+**Varning: användare och IP-Reconnaissance (SMB) (Source: Microsoft Defender för identitet)**
 
 Uppräkning med SMB-protokollet (Server Message Block) gör det möjligt för angripare att få till gång till den senaste inloggnings informationen som hjälper dem att gå via nätverket till ett specifikt känsligt konto.
 
 I den här identifieringen utlöses en avisering när uppräkning av SMB-sessioner körs mot en domänkontrollant.
 
-![Skärm bild av Azure ATP-varning för användare och IP-adress Reconnaissance](../../media/mtp/fig10.png) 
+![Skärm bild av Microsoft Defender för identitets varning för användare och IP-Reconnaissance](../../media/mtp/fig10.png) 
 
 
-### <a name="review-the-device-timeline-microsoft-defender-atp"></a>Granska enhetens tids linje [Microsoft Defender ATP]
-När du har utforskat de olika varningarna i denna olycka navigerar du tillbaka till sidan där du undersökte dig tidigare. Välj fliken **enheter** på sidan incident för att granska de enheter som ingår i denna incident enligt rapport från Microsoft Defender ATP och Azure ATP.
+### <a name="review-the-device-timeline-microsoft-defender-for-endpoint"></a>Granska enhetens tids linje [Microsoft Defender för slut punkt]
+När du har utforskat de olika varningarna i denna olycka navigerar du tillbaka till sidan där du undersökte dig tidigare. Välj fliken **enheter** på sidan incident för att kontrol lera vilka enheter som ingår i den här incidenten som rapporteras av Microsoft Defender för slut punkten och Microsoft Defender för identiteten.
 
 Välj namnet på den enhet där angreppet gjordes för att öppna enhets sidan för den specifika enheten. På den sidan kan du se aviseringar som utlöstes och relaterade händelser.
 
@@ -281,7 +281,7 @@ Välj användar namnet för att öppna användarens profil sida där ytterligare
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-Navigera tillbaka till incidenten i Microsoft 365 Security Center-portalen. På fliken **undersökningar** på sidan **incident** visas de automatiska utredningar som utlöstes av Azure ATP och Microsoft Defender ATP. Skärm bilden nedan visar endast den automatiska undersökningen som utlöstes av Microsoft Defender ATP. Som standard åtgärdar Microsoft Defender ATP automatiskt de artefakter som finns i kön, vilket kräver reparation.
+Navigera tillbaka till incidenten i Microsoft 365 Security Center-portalen. På fliken **undersökningar** på sidan **incident** visas de automatiska utredningar som utlöstes av Microsoft Defender för identitet och Microsoft Defender för slut punkter. Skärm bilden nedan visar endast den automatiska undersökningen som utlöstes av Defender för slut punkten. Som standard åtgärdar Defender för slut punkten automatiskt artefakterna i kön, vilket kräver reparation.
 
 ![Skärm bild av automatiska utredningar relaterade till händelsen](../../media/mtp/fig14.png)
 
@@ -296,7 +296,7 @@ Välj den avisering som utlöste en undersökning för att öppna sidan med **ut
 
 ![Skärm bild av sidan med gransknings information](../../media/mtp/fig15.png)
 
-Under den automatiska undersökningen identifierade Microsoft Defender ATP notepad.exe processen, som sattes in som en av artefakterna som kräver reparation. Microsoft Defender ATP stoppar automatiskt den misstänkta process injektionen som en del av den automatiska reparationen. 
+Under den automatiska undersökningen identifierade Microsoft Defender för slut punkten notepad.exe processen, som sattes in som en av artefakterna som kräver reparation. Defender för slut punkt stoppar automatiskt den misstänkta process injektionen som en del av den automatiska reparationen. 
 
 Du kan se <i>notepad.exe</i> försvinner från listan med aktiva processer på test enheten.
 
@@ -323,13 +323,13 @@ Då avbryter du ansöknings simuleringen för samtals hantering och automatisk u
 ### <a name="hunting-environment-requirements"></a>Krav för jakt miljön
 Det krävs en enda intern post låda och enhet för det här scenariot. Du behöver också ett externt e-postkonto för att skicka test meddelandet.
 
-1.  Kontrol lera att din klient organisation har [aktiverat Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service).
+1.  Kontrol lera att klient organisationen har [aktiverat Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service).
 2.  Identifiera en måldator som ska användas för att ta emot e-post.
-    a.  Den här post lådan måste övervakas av Office 365 ATP b.  Enheten från 3] måste ha åtkomst till post lådan
+    a.  Den här post lådan måste övervakas av Microsoft Defender för Office 365 b.  Enheten från 3] måste ha åtkomst till post lådan
 3.  Konfigurera en testen het: a.  Kontrol lera att du använder Windows 10 version 1903 eller senare version.
     b.  Gå med i test enheten till test domänen.
     c.  [Aktivera Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Om du har problem med att aktivera Windows Defender Antivirus kan du läsa [det här avsnittet fel sökning](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
-    d.  [Internt till Microsoft Defender Avancerat skydd (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+    d.  [Till Microsoft Defender för slut punkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 ### <a name="run-the-simulation"></a>Kör simuleringen
 1.  Från ett externt e-postkonto skickar du ett e-postmeddelande till post lådan som identifieras i steg 2 i avsnittet krav för test miljö. Ta med en bifogad fil som ska tillåtas via befintliga e-postfilter principer.  Denna fil behöver inte vara skadlig eller körbar. Föreslagna filtyper är <i>. pdf</i>, <i>. exe</i> (om det tillåts) eller Office-dokument, till exempel en Word-fil.
@@ -394,7 +394,7 @@ Det krävs en enda intern post låda och enhet för det här scenariot. Du behö
 
 5.  Ta sedan med informationen om den bifogade filen (till exempel: fil namn, hash-värden) till din resultat uppsättning. För att göra det, gå med i **EmailAttachmentInfo** -tabellen. De vanligaste fälten som används för att ansluta i det här fallet är **NetworkMessageId** och **RecipientObjectId**.
 
-Följande fråga inkluderar också ytterligare en rad "| **Project – Byt namn på EmailTimestamp = tidsstämpel**"som hjälper dig att identifiera vilken tidstämpel som hör till e-postmeddelandet jämfört med tidsstämplar för de fil åtgärder som du ska lägga till i nästa steg.
+Följande fråga inkluderar också ytterligare en rad "| **Project – Byt namn på EmailTimestamp = tidsstämpel** "som hjälper dig att identifiera vilken tidstämpel som hör till e-postmeddelandet jämfört med tidsstämplar för de fil åtgärder som du ska lägga till i nästa steg.
 
     ```console
     EmailEvents 
@@ -405,7 +405,7 @@ Följande fråga inkluderar också ytterligare en rad "| **Project – Byt namn 
 
 6.  Använd sedan värdet **SHA256** från tabellen **EmailAttachmentInfo** för att söka efter **DeviceFileEvents** (fil åtgärder som inträffade på slut punkten) för denna hash.  Det gemensamma fältet här blir SHA256-hashvärdet för bilagan.
 
-    Den resulterande tabellen innehåller nu information från slut punkten (Microsoft Defender ATP), till exempel enhets namn, vilken åtgärd som utfördes (i det här fallet filtrerades endast FileCreated händelser) och var filen lagrades. Det konto namn som är kopplat till processen tas också med.
+    Den resulterande tabellen innehåller nu information från slut punkten (Microsoft Defender för slut punkt), till exempel enhets namn, vilken åtgärd som utfördes (i det här fallet filtrerades endast för att inkludera FileCreated-händelser) och var filen lagrades. Det konto namn som är kopplat till processen tas också med.
 
     ```console
     EmailEvents 
@@ -461,7 +461,7 @@ Anpassade identifieringar kör frågan utifrån den frekvens som du anger och re
 
     ![Skärm bild av sidan för att skapa en detektions regel där du kan köra en Antivirus sökning när en avisering utlöses för att skydda hoten](../../media/mtp/fig25.png) 
 
-5.  Välj omfattning för aviserings regeln. Eftersom den här frågan gäller enheter är enhets grupperna relevanta i denna anpassade identifiering enligt Microsoft Defender ATP-kontext.  När du skapar en anpassad identifiering som inte innehåller enheter som påverkade enheter gäller inte omfattningen.  
+5.  Välj omfattning för aviserings regeln. Eftersom den här frågan gäller enheter är enhets grupperna relevanta i denna anpassade identifiering enligt Microsoft Defender för slut punkts kontext. När du skapar en anpassad identifiering som inte innehåller enheter som påverkade enheter gäller inte omfattningen.  
 
     ![Skärm bild av sidan Skapa detektions regel där du kan ställa in omfattningen för notifieringsregeln för att hantera dina förväntningar för de resultat du kommer att se](../../media/mtp/fig26.png) 
 
@@ -479,19 +479,19 @@ Från den här sidan kan du välja identifierings regeln, som öppnar en informa
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>Ytterligare avancerade övningar
 
-För att få reda på mer om Advanced jakt kan följande webb sändningar vägleda dig genom de avancerade jakternas funktioner i Microsoft Threat Protection (MTP) för att skapa frågor från flera pelaren, pivotera till enheter och skapa anpassade identifierings-och reparations åtgärder.
+För att lära dig mer om Advanced jakt kan följande webb sändningar vägleda dig genom de avancerade jakternas funktioner i Microsoft 365 Defender för att skapa frågor från flera pelaren, pivotera till enheter och skapa anpassade identifierings-och reparations åtgärder.
 
 >[!NOTE]
 >Förbered dig med ditt eget GitHub-konto för att köra jakt frågorna i test laboratorie miljön för pilot.  
 
 |  Title  |  Beskrivning  |  Ladda ner MP4  |  Titta på YouTube  |  CSL fil som ska användas  |
 |:-----|:-----|:-----|:-----|:-----|
-| Avsnitt 1: grundläggande om Keyword | Vi kommer att få grunderna i de avancerade jakt funktionerna i Microsoft Threat Protection. Läs mer om tillgängliga avancerade jakt data och grundläggande Keyword-syntax och-operatörer. | [ MP4](https://aka.ms/MTP15JUL20_MP4) | [YouTube](https://youtu.be/0D9TkGjeJwM) | [Avsnitt 1: CSL-fil i git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
+| Avsnitt 1: grundläggande om Keyword | Vi kommer att få grunderna i de avancerade jakt funktionerna i Microsoft 365 Defender. Läs mer om tillgängliga avancerade jakt data och grundläggande Keyword-syntax och-operatörer. | [ MP4](https://aka.ms/MTP15JUL20_MP4) | [YouTube](https://youtu.be/0D9TkGjeJwM) | [Avsnitt 1: CSL-fil i git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | Avsnitt 2: kopplingar | Vi fortsätter att lära sig mer om data i avancerad jakt och hur du ansluter samman tabeller. Lär dig mer om inre, yttre, unika och mellananslutna och Nuances för standard Kusto innerunique Join. | [MP4](https://aka.ms/MTP22JUL20_MP4) | [YouTube](https://youtu.be/LMrO6K5TWOU) | [Avsnitt 2: CSL-fil i git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
 | Avsnitt 3: summera, pivotera och visualisera data|Nu när vi kan filtrera, hantera och koppla data är det dags att börja sammanfatta, kvantifiera, pivotera och visualisera. I det här avsnittet ska vi gå igenom den sammanfattande operatorn och vissa av de beräkningar som du kan utföra när du dykresa till ytterligare tabeller i det avancerade stöldskydds schemat. Vi förvandlar våra data uppsättningar till diagram som kan hjälpa till att förbättra analyser. | [MP4](https://aka.ms/MTP29JUL20_MP4) | [YouTube](https://youtu.be/UKnk9U1NH6Y) | [Avsnitt 3: CSL-fil i git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
-| Avsnitt 4: Låt oss titta! Använda Keyword i händelse spårning|Tid för att spåra viss angripares aktivitet! I det här avsnittet ska vi använda vår förbättrade förståelse av Keyword och avancerad jakt i skydd mot Microsoft Threat för att spåra ett angrepp. Lär dig mer om de tips och tricks som används i fältet för att spåra angrepps aktivitet, inklusive ABCs Cybersecurity och hur du använder dem för att söka efter händelser. | [MP4](https://aka.ms/MTP5AUG20_MP4) | [YouTube](https://youtu.be/2EUxOc_LNd8) | [Avsnitt 4: CSL-fil i git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl) |
+| Avsnitt 4: Låt oss titta! Använda Keyword i händelse spårning|Tid för att spåra viss angripares aktivitet! I det här avsnittet ska vi använda vår förbättrade förståelse av Keyword och avancerad jakt i Microsoft 365 Defender för att spåra ett angrepp. Lär dig mer om de tips och tricks som används i fältet för att spåra angrepps aktivitet, inklusive ABCs Cybersecurity och hur du använder dem för att söka efter händelser. | [MP4](https://aka.ms/MTP5AUG20_MP4) | [YouTube](https://youtu.be/2EUxOc_LNd8) | [Avsnitt 4: CSL-fil i git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl) |
 
 ## <a name="next-step"></a>Nästa steg
-|![Stänga och sammanfatta fasen](../../media/mtp/close.png) <br>[Stänga och sammanfatta fasen](mtp-pilot-close.md) | Analysera ditt Microsoft Threat Protection pilot resultat, presentera dem för dina intressenter och ta nästa steg.
+|![Stänga och sammanfatta fasen](../../media/mtp/close.png) <br>[Stänga och sammanfatta fasen](mtp-pilot-close.md) | Analysera ditt Microsoft 365 Defender pilot resultat, presentera dem för dina intressenter och ta nästa steg.
 |:-----|:-----|
 

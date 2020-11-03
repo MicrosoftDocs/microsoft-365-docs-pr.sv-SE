@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om förfalsknings intelligens i Exchange Online Protection (EOP), där du kan tillåta eller blockera specifika avsändare.
-ms.openlocfilehash: 86771397f0175d389a69c1008e0ac5471697afc5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4ebc32a6c87c58edcceb0d57ee8d55be43f2dd20
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199607"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841834"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Konfigurera förfalsknings information i EOP
 
@@ -74,7 +74,7 @@ Du kan hantera förfalsknings intelligens i säkerhets & Compliance Center eller
 ## <a name="use-the-security--compliance-center-to-manage-spoofed-senders"></a>Hantera falska avsändare genom att använda säkerhets & Compliance Center
 
 > [!NOTE]
-> Om du har ett Microsoft 365 Enterprise, E5-abonnemang eller har ett separat inköpt Office 365-tillägg för avancerat skydd (Office 365 ATP) kan du även hantera avsändare som är falska för domänen genom att veta mer om [falska](walkthrough-spoof-intelligence-insight.md)uppgifter.
+> Om du har ett Microsoft 365 Enterprise, E5-abonnemang eller har ett separat inköpt Microsoft Defender för Office 365-tillägg kan du även hantera avsändare som har falska din domän via [förfalsknings information](walkthrough-spoof-intelligence-insight.md).
 
 1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd**.
 
@@ -89,51 +89,51 @@ Du kan hantera förfalsknings intelligens i säkerhets & Compliance Center eller
 
 4. I **Bestäm om dessa avsändare får använda falska användare** som visas, väljer du någon av följande flikar:
 
-   - **Domänerna**: avsändare förfalskningar användare i de interna domänerna.
-   - **Externa domäner**: avsändare falska användare i externa domäner.
+   - **Domänerna** : avsändare förfalskningar användare i de interna domänerna.
+   - **Externa domäner** : avsändare falska användare i externa domäner.
 
-5. Klicka på ![ ikonen Expandera ](../../media/scc-expand-icon.png) i kolumnen **tillåts till förfalskning?** . Välj **Ja** om du vill tillåta falska avsändare eller Välj **Nej** om du vill markera meddelandet som falsk. Åtgärden styrs av standard policyn för skydd mot nätfiske eller anpassade Antivirus principer (Standardinställningen är **att flytta meddelandet till mappen skräp post**). Mer information finns i [Inställningar för förfalskningar i principer för nätfiske](set-up-anti-phishing-policies.md#spoof-settings).
+5. Klicka på ![ ikonen Expandera ](../../media/scc-expand-icon.png) i kolumnen **tillåts till förfalskning?** . Välj **Ja** om du vill tillåta falska avsändare eller Välj **Nej** om du vill markera meddelandet som falsk. Åtgärden styrs av standard policyn för skydd mot nätfiske eller anpassade anti-phishing-principer (Standardvärdet är **Flytta meddelandet till mappen skräp post** ). Mer information finns i [Inställningar för förfalskningar i principer för nätfiske](set-up-anti-phishing-policies.md#spoof-settings).
 
    ![Skärm bild som visar utfällda falska avsändare och om avsändaren är tillåten för förfalskning](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 
    Kolumnerna och värdena som visas förklaras i följande lista:
 
-   - **Falsk användare**: det användar konto som används för falskas. Det här är meddelandets avsändare i den från-adress (kallas även `5322.From` adress) som visas i e-postklienter. Giltigheten för denna adress kontrol leras inte av SPF.
+   - **Falsk användare** : det användar konto som används för falskas. Det här är meddelandets avsändare i den från-adress (kallas även `5322.From` adress) som visas i e-postklienter. Giltigheten för denna adress kontrol leras inte av SPF.
 
      - På fliken **dina domäner** innehåller värdet en enda e-postadress, eller om käll-e-postservern är falsk för flera användar konton innehåller den **fler än en**.
 
      - På fliken **externa domäner** innehåller värdet för domänen med falsk användare, inte den fullständiga e-postadressen.
 
-   - **Skicka infrastruktur**: domänen hittades i en omvänd DNS-sökning (PTR-post) av käll-e-postserverns IP-adress, eller IP-adressen om källan inte har någon PTR-post.
+   - **Skicka infrastruktur** : domänen hittades i en omvänd DNS-sökning (PTR-post) av käll-e-postserverns IP-adress, eller IP-adressen om källan inte har någon PTR-post.
 
      Mer information om meddelande källor och meddelande avsändare finns i [Översikt över e-poststandarder](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
-   - antal **meddelanden**: antalet meddelanden från infrastrukturen för sändning till din organisation som innehåller angivna avsändare eller avsändare inom de senaste 30 dagarna.
+   - antal **meddelanden** : antalet meddelanden från infrastrukturen för sändning till din organisation som innehåller angivna avsändare eller avsändare inom de senaste 30 dagarna.
 
-   - **antal användare klagomål**: klagomål som lämnats av användarna mot denna avsändare inom de senaste 30 dagarna. Klagomål är vanligt vis i form av skräp post försändelser till Microsoft.
+   - **antal användare klagomål** : klagomål som lämnats av användarna mot denna avsändare inom de senaste 30 dagarna. Klagomål är vanligt vis i form av skräp post försändelser till Microsoft.
 
-   - **Resultat**: ett av följande värden:
+   - **Resultat** : ett av följande värden:
 
-      - **Lyckades**: avsändaren skickade e-postkontroller (SPF eller DKIM).
-      - **Misslyckades**: avsändaren misslyckades EOP.
-      - **Okänt**: resultatet av dessa kontroller är inte känt.
+      - **Lyckades** : avsändaren skickade e-postkontroller (SPF eller DKIM).
+      - **Misslyckades** : avsändaren misslyckades EOP.
+      - **Okänt** : resultatet av dessa kontroller är inte känt.
 
-   - **Beslut inställt av**: visar vilka som har fastställt om den sändande infrastrukturen har tillstånd att skicka falska användare:
+   - **Beslut inställt av** : visar vilka som har fastställt om den sändande infrastrukturen har tillstånd att skicka falska användare:
 
        - **Policy för förfalsknings information** (automatiskt)
        - **Administratör** (manuell)
 
-   - **Senast sedd**: det sista datum då ett meddelande togs emot från den sändande infrastrukturen som innehåller den falskade användaren.
+   - **Senast sedd** : det sista datum då ett meddelande togs emot från den sändande infrastrukturen som innehåller den falskade användaren.
 
-   - Har du **tillstånd för falska identiteter?**: de värden som visas här är:
+   - Har du **tillstånd för falska identiteter?** : de värden som visas här är:
 
-     - **Ja**: meddelanden från en kombination av falsk användare och överföring av infrastrukturen tillåts och behandlas inte som falsk e-post.
+     - **Ja** : meddelanden från en kombination av falsk användare och överföring av infrastrukturen tillåts och behandlas inte som falsk e-post.
 
-     - **Nej**: meddelanden från en kombination av falsk användare och överföring av infrastrukturen markeras som falska. Åtgärden styrs av standard policyn för skydd mot nätfiske eller anpassade Antivirus principer (Standardinställningen är **att flytta meddelandet till mappen skräp post**). Se nästa avsnitt för mer information.
+     - **Nej** : meddelanden från en kombination av falsk användare och överföring av infrastrukturen markeras som falska. Åtgärden styrs av standard policyn för skydd mot nätfiske eller anpassade anti-phishing-principer (Standardvärdet är **Flytta meddelandet till mappen skräp post** ). Se nästa avsnitt för mer information.
 
-     - **Vissa användare** (endast**din domän** -flik): en annan infrastruktur är falsk för flera användare, där vissa falska användare är tillåtna och andra inte är det. Använd den **detaljerade** fliken för att visa specifika adresser.
+     - **Vissa användare** (endast **din domän** -flik): en annan infrastruktur är falsk för flera användare, där vissa falska användare är tillåtna och andra inte är det. Använd den **detaljerade** fliken för att visa specifika adresser.
 
-6. Klicka på **Spara**längst ned på sidan.
+6. Klicka på **Spara** längst ned på sidan.
 
 ## <a name="use-powershell-to-manage-spoofed-senders"></a>Använda PowerShell för att hantera falska avsändare
 
@@ -181,7 +181,7 @@ Du kan konfigurera inställningar för förfalsknings information i standard pri
 
 - [Konfigurera AntiPhishing-principer i EOP](configure-anti-phishing-policies-eop.md).
 
-- [Konfigurera AntiPhishing-principer för ATP i Microsoft 365](configure-atp-anti-phishing-policies.md).
+- [Konfigurera AntiPhishing-principer i Microsoft Defender för Office 365 i microsoft 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Hur vet jag att de här procedurerna fungerade?
 
@@ -204,7 +204,7 @@ Gör så här för att kontrol lera att du har konfigurerat falsk intelligens me
    Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
    ```
 
-- I säkerhets & Compliance Center går du till **Threat Management** \> **policy** \> **mot nätfiske** eller **ATP-nätfiske**och gör något av följande:  
+- I säkerhets & Compliance Center går du till **Threat Management** \> **policy** \> **mot nätfiske** eller **ATP-nätfiske** och gör något av följande:  
 
   - Välj en princip i listan. I den utfällbara filen som visas kontrollerar du värdena i avsnittet **Spoof** .
   - Klicka på **standard policy**. I den utfällbara filen som visas kontrollerar du värdena i avsnittet **Spoof** .

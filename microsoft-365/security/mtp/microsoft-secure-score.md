@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ea580ad6b7bb7cc905a299e473f23a4c74fb289e
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: a41e05f54a8ba94752c6df91628a2200367ac0f3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294790"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843846"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -76,7 +76,7 @@ En förbättrings åtgärd visar till exempel 10 Poäng genom att skydda alla an
 
 ### <a name="products-included-in-secure-score"></a>Produkter ingår i säkra Poäng
 
-För närvarande finns det rekommendationer för Microsoft 365 (inklusive Exchange Online), Azure Active Directory, Microsoft Defender ATP, Azure ATP och Cloud App Security. Rekommendationer för andra säkerhets produkter kommer snart. Rekommendationerna täcker inte alla de attack ytor som är associerade med varje produkt, men de är en bra original plan. Du kan också markera förbättrings åtgärderna som täcks av tredje part eller annan åtgärd.
+För närvarande finns det rekommendationer för Microsoft 365 (inklusive Exchange Online), Azure Active Directory, Microsoft Defender för slut punkt, Microsoft Defender för identitet och Cloud App Security. Rekommendationer för andra säkerhets produkter kommer snart. Rekommendationerna täcker inte alla de attack ytor som är associerade med varje produkt, men de är en bra original plan. Du kan också markera förbättrings åtgärderna som täcks av tredje part eller annan åtgärd.
 
 ### <a name="security-defaults"></a>Standardinställningar för säkerhet
 
@@ -129,4 +129,4 @@ Om du har några problem kan du meddela oss genom att publicera det i [säkerhet
 - [Utvärdera säkerhets genom övergå molnet](microsoft-secure-score-improvement-actions.md)
 - [Spåra din Microsoft säkra Poäng historik och uppfylla målen](microsoft-secure-score-history-metrics-trends.md)
 - [Kommer snart](microsoft-secure-score-whats-coming.md)
-- [Nyheter](microsoft-secure-score-whats-new.md)
+- [Vad är nytt](microsoft-secure-score-whats-new.md)

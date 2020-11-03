@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Lär dig mer om de säkerhetsfunktioner som medföljer Microsoft 365 Business Premium för att skydda dina data på datorer, telefoner och surfplattor.
-ms.openlocfilehash: 5e16d4bf297d363b6f9b44ce854c857e7e5464ed
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 587d80c27f867a387c901d23f4ec05f3c5905bf6
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357327"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843497"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 Business Premium-funktioner för säkerhet och efterlevnad
 
@@ -63,9 +63,9 @@ Du kan hantera många av Microsoft 365 Business Premium-säkerhetsfunktionerna i
 
 Avancerade funktioner i Microsoft 365 Business Premium är tillgängliga för att hjälpa dig att skydda ditt företag mot cyberterrorism-hot och att skydda känslig information.
   
-- **[Office 365 Avancerat skydd](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
+- **[Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
     
-    Avancerat skydd (ATP) hjälper till att skydda ditt företag mot avancerade nätfiske och utpressnings tro Jan attack som är utformade för att äventyra personal-eller kund uppgifter. Funktioner:
+    Microsoft Defender för Office 365 hjälper dig att skydda ditt företag mot avancerade nätfiske och utpressnings tro Jan attack som är avsedda att äventyra informationen om anställda eller kunder. Funktioner:
     
   - Avancerad bilage genomsökning och AI-drivna analys för att upptäcka och ignorera farliga meddelanden.
     
@@ -125,4 +125,4 @@ Ja, de här funktionerna är tillgängliga på alla marknader där Microsoft 365
     
     ![I det vänstra navigerings fältet i administrations centret för Microsoft 365 väljer du administrations Center.](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
-3. Välj ** &amp; säkerhetskompatibilitet** för att gå till säkerhetsrelaterade &amp; Center.
+3. Välj **&amp; säkerhetskompatibilitet** för att gå till säkerhetsrelaterade &amp; Center.

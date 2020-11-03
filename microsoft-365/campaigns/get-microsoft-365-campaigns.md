@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Skaffa Microsoft 365 för kampanjer så att du kan skydda din kampanj från Cybersecurity hot mot e-post, data och kommunikation.
-ms.openlocfilehash: fcb28ba7ca52ee3498afd12cf93157fa90d0d80b
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 6fe67f8e5723a272643c7980bf1744f80c612188
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131982"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843240"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>Skaffa Microsoft 365 för kampanjer
 
@@ -43,11 +43,11 @@ Om du inte är berättigad till särskild prissättning är Microsoft 365 Busine
 
 ## <a name="what-does-microsoft-365-for-campaigns-include"></a>Vad inkluderar Microsoft 365 för kampanjer?
 Denna konfiguration av Microsoft 365 Business Premium innehåller enkla kontroller som hjälper dig och personalen att samar beta på ett säkert sätt: 
-- **Skydda användar identitet**: kontrol lera att användarna är de som de säger att de är med när de loggar in för att skicka e-post eller åtkomst till filer (multifaktorautentisering).
-- **Skydda känslig**information: skydda känslig information för att övervaka information som delas utanför organisationen (förhindra data förlust).
-- **Skydda mobila enheter**: skydda data på mobila enheter (princip för mobilapp).
-- **Skydda mot skadligt innehåll**: förhindra åtkomst till skadligt innehåll genom att skanna e-postbilagor (avancerat skydd).
-- **Skydda lösen ord**: ange att lösen ord aldrig ska förfalla, vilket är säkrare och förhindra arbets avbrott (lösen ords princip). 
+- **Skydda användar identitet** : kontrol lera att användarna är de som de säger att de är med när de loggar in för att skicka e-post eller åtkomst till filer (multifaktorautentisering).
+- **Skydda känslig** information: skydda känslig information för att övervaka information som delas utanför organisationen (förhindra data förlust).
+- **Skydda mobila enheter** : skydda data på mobila enheter (princip för mobilapp).
+- **Skydda mot skadligt innehåll** : förhindra åtkomst till skadligt innehåll genom att skanna e-postbilagor (Defender för Office 365).
+- **Skydda lösen ord** : ange att lösen ord aldrig ska förfalla, vilket är säkrare och förhindra arbets avbrott (lösen ords princip). 
 
 
 ## <a name="what-does-it-cost-who-needs-it-and-what-is-the-commitment"></a>Vad kostar det, vem behöver det och vad är åtagandet?

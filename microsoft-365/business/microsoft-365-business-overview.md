@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Läs mer om Microsoft 365 Business Premium, en prenumerationstjänst som innehåller Office-appar för produktivitet och avancerat skydd för ditt företag mot cyberhot.
-ms.openlocfilehash: 50b1fec21593bd22577e07e000cedb89dfd90f66
-ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
+ms.openlocfilehash: e67ae036bf3ce7811f19c8745838bb51dde073ea
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45138237"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842189"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Översikt av Microsoft 365 Business Premium
 
@@ -71,11 +71,11 @@ Microsoft 365 Business Premium hjälper till att skydda dina data i var och en a
 
 Microsoft 365 Business Premium hjälper **att försvara mot hot** genom att:
 
-- Skanna länkar i e-postmeddelanden och dokument i realtid för att blockera osäkra webbplatser (ATP Säkra länkar).
+- Du kan söka efter länkar i e-postmeddelanden och dokument i real tid för att blockera osäkra webbplatser (säkra länkar).
 
-- Utföra avancerad analys av e-postbilagor i en sandbox-miljö för att hitta nyligen utvecklad skadlig programvara (ATP Säkra e-postbilagor). 
+- Utföra avancerad analys av e-postbilagor i en sand låde miljö för att upptäcka nyligen utvecklad skadlig program vara (säkra bifogade filer). 
 
-- Aktivera principer för skydd mot nätfiske som använder maskininlärningsmodeller och identifiering av imitering för att ge skydd mot avancerade attacker (ATP intelligens för skydd mot nätfiske). 
+- Aktivera skydd mot nätfiske som använder dator utbildnings modeller och identifiering av personifiering för att skydda mot avancerade attacker (nätfiske i Defender för Office 365 Intelligence). 
 
 - Konfigurera avancerade principer som inaktiverar åtkomst från otillförlitliga platser eller kringgå multifaktorautentisering från betrodda platser, t. ex. ditt kontorsnätverk (Azure MFA inklusive betrodda IP-adresser och villkorsstyrd åtkomst). 
 

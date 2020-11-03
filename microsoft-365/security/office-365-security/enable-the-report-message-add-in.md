@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Lär dig hur du aktiverar rapport tillägget för Outlook och Outlook på webben, för enskilda användare eller hela organisationen.
-ms.openlocfilehash: b061d9db44b08a65b59481035c055a1b75eb6e3c
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: d760aa5d58e628872682131efae9d9c3b3c46734
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600375"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842458"
 ---
 # <a name="enable-the-report-message-add-in"></a>Aktivera tillägget för att rapportera meddelande
 
@@ -35,7 +35,7 @@ Med rapport tilläggs tillägget för Outlook och Outlook på webben (tidigare O
 
 Antag till exempel att personer rapporterar många meddelanden som nätfiske. De här informations ytorna i [säkerhets instrument panelen](security-dashboard.md) och andra rapporter. Din organisations säkerhets team kan använda den här informationen som en indikation på att mot nätfiske-principer kan behöva uppdateras. Om personer rapporterar många meddelanden som inte har flaggats som skräp post som icke-skräppost-objekt genom att använda tillägget rapport, kan organisationens säkerhets Team behöva justera [principer för skräp post](configure-your-spam-filter-policies.md).
 
-Om din organisation använder [Office 365 Avancerat skydds abonnemang 1](office-365-atp.md) eller [abonnemang 2](office-365-ti.md), tillhandahåller tillägget rapport meddelanden organisationens säkerhets team med användbar information som de kan använda för att granska och uppdatera säkerhets principer.
+Dessutom, om din organisation använder [Microsoft Defender för Office 365 abonnemang 1](office-365-atp.md) eller [abonnemang 2](office-365-ti.md), ger din organisations säkerhets team en viktig information som de kan använda för att granska och uppdatera säkerhets principer.
 
 Administratörer kan aktivera tillägget rapportera till organisationen, och enskilda användare kan installera den själva.
 
@@ -101,7 +101,7 @@ Information om hur du använder tillägget finns i [använda tillägget rapporte
 
    ![Distribuera en ny tilläggs sida](../../media/NewAddInScreen2.png)
 
-4. Klicka i **sökrutan på** sidan **Välj tillägg** som visas, ange **rapport meddelande**och klicka sedan på ikonen **Sök** sökning ![ ](../../media/search-icon.png) . Sök efter **rapport meddelande** i listan med resultat och klicka sedan på **Lägg till**.
+4. Klicka i **sökrutan på** sidan **Välj tillägg** som visas, ange **rapport meddelande** och klicka sedan på ikonen **Sök** sökning ![ ](../../media/search-icon.png) . Sök efter **rapport meddelande** i listan med resultat och klicka sedan på **Lägg till**.
 
    ![Välja Sök Resultat för tillägg](../../media/NewAddInScreen3.png)
 
@@ -109,17 +109,17 @@ Information om hur du använder tillägget finns i [använda tillägget rapporte
 
 6. På sidan **Konfigurera tillägg** som visas konfigurerar du följande inställningar:
 
-   - **Tilldelade användare**: Välj något av följande värden:
+   - **Tilldelade användare** : Välj något av följande värden:
 
      - **Alla** (standard)
      - **Specifika användare/grupper**
      - **Bara jag**
 
-   - **Distributions metod**: Välj något av följande värden:
+   - **Distributions metod** : Välj något av följande värden:
 
-     - **Åtgärdat (standard)**: tillägget distribueras automatiskt till de angivna användarna och de kan inte tas bort.
-     - **Tillgängligt**: användarna kan installera **tillägget via** \> **Skaffa** tillägg som \> **hanteras av administratören**.
-     - **Valfritt**: tillägget distribueras automatiskt till angivna användare, men de kan välja att ta bort det.
+     - **Åtgärdat (standard)** : tillägget distribueras automatiskt till de angivna användarna och de kan inte tas bort.
+     - **Tillgängligt** : användarna kan installera **tillägget via** \> **Skaffa** tillägg som \> **hanteras av administratören**.
+     - **Valfritt** : tillägget distribueras automatiskt till angivna användare, men de kan välja att ta bort det.
 
    ![Konfigurera tilläggs Sidan](../../media/configure-add-in.png)
 

@@ -24,12 +24,12 @@ description: Lär dig hur du köper ett tillägg för att lägga till ytterligar
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: e73a3430dbcded25a15fad19815106a72798d8e8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: cfbce7efa1c80d9e5da8390c183233a6f2a12eb7
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638393"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842826"
 ---
 # <a name="buy-or-edit-an-add-on"></a>Köpa eller redigera ett tillägg
 
@@ -48,7 +48,7 @@ Flera av Microsoft 365 för Business-abonnemangen har tillägg som du kan köpa 
 
 1. Gå till sidan fakturering i administrations centret **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> .
 
-2. Välj **tillägg**längst ned på sidan **Köp tjänster** .
+2. Välj **tillägg** längst ned på sidan **Köp tjänster** .
 
 3. På sidan **Köp tjänster** väljer du den tilläggs prenumeration du vill köpa.
 
@@ -234,7 +234,7 @@ Information om Skype för företag-tillägg finns i [licensiering för Skype fö
 |**Tillägg**|**Tillgängliga i de här prenumerationerna**|
 |:-----|:-----|
 |Customer Lockbox  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E3  <br/>  Office 365 Enterprise E4  <br/> |
-|[Office 365 Online avancerat skydd](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E3  <br/>  Office 365 Enterprise E4  <br/> |
+|[Microsoft Defender för Office 365](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E3  <br/>  Office 365 Enterprise E4  <br/> |
 |[Exchange Online - arkivering](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise F1  <br/> |
 |Microsoft MyAnalytics  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E3  <br/>  Office 365 Enterprise E4  <br/> |
 |Office 365 Advanced Compliance  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E3  <br/>  Office 365 Enterprise E4  <br/> |

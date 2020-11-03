@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: Använd Microsoft Defender för Office 365 tillsammans med Microsoft Defender Avancerat skydd för att få mer detaljerad information om hot mot dina enheter och e-postinnehåll.
+description: Använd Microsoft Defender för Office 365 tillsammans med Microsoft Defender för slut punkt för att få mer detaljerad information om hot mot dina enheter och e-postinnehåll.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2c95e15c3cf16547843f9d2976dbf9df0d5747c0
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: 6b8bec8d3ebe52de9b4e1b919b2aceee20b5b5b0
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48309243"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842362"
 ---
-# <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-advanced-threat-protection"></a>Använda Microsoft Defender för Office 365 tillsammans med Microsoft Defender Avancerat skydd
+# <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Använda Microsoft Defender för Office 365 tillsammans med Microsoft Defender för slut punkten
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -41,7 +41,7 @@ I följande bild visas hur fliken **enheter** ser ut som har Microsoft Defender 
 I det här exemplet kan du se att mottagarna av det identifierade e-postmeddelandet har fyra enheter och en har en avisering. Om du klickar på länken för en enhet öppnas den i Microsoft Defender säkerhets Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
 
 > [!TIP]
-> **[Läs mer om Microsoft Defender säkerhets Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** (kallas även Microsoft Defender ATP-portalen.)
+> **[Läs mer om Microsoft Defender säkerhets Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** (kallas även Microsoft Defender för slut punkts Portal).
   
 ## <a name="requirements"></a>Krav
 
@@ -57,17 +57,17 @@ Att integrera Microsoft Defender för Office 365 med Microsoft Defender för slu
   
 1. Som global administratör eller säkerhets administratör går du till [https://protection.office.com](https://protection.office.com) och loggar in. (Du kommer till Office 365 Security & Compliance Center.)
     
-2. Välj **Threat Management**  >  **Explorer**i navigerings fönstret.<br>![Utforskaren i Threat Management-menyn](../../media/ThreatMgmt-Explorer-nav.png)<br>
+2. Välj **Threat Management**  >  **Explorer** i navigerings fönstret.<br>![Utforskaren i Threat Management-menyn](../../media/ThreatMgmt-Explorer-nav.png)<br>
     
-3. I det övre högra hörnet av skärmen väljer du **WDATP inställningar**.
+3. I det övre högra hörnet på skärmen väljer du **Defender för slut punkts inställningar**.
     
-4. I dialog rutan Microsoft Defender för slut punkts anslutning aktiverar **du Anslut till Windows ATP**.<br>![Microsoft Defender för slut punkts anslutning](../../media/Explorer-WDATPConnection-dialog.png)<br>
+4. I dialog rutan Microsoft Defender för slut punkts anslutning aktiverar **du Anslut till Microsoft Defender för slut punkt**.<br>![Microsoft Defender för slut punkts anslutning](../../media/Explorer-WDATPConnection-dialog.png)<br>
     
 5. Gå till Microsoft Defender säkerhets Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
 
-6. I navigerings fältet väljer du **Inställningar**. Under **Allmänt**väljer du **avancerade funktioner**.
+6. I navigerings fältet väljer du **Inställningar**. Under **Allmänt** väljer du **avancerade funktioner**.
 
-7. Rulla ned till **Office 365 Threat Intelligence-anslutning**och slå på anslutningen.<br/>![Anslutning till Office 365 Threat Intelligence](../../media/mdatp-oatptoggle.png)<br>
+7. Rulla ned till **Office 365 Threat Intelligence-anslutning** och slå på anslutningen.<br/>![Anslutning till Office 365 Threat Intelligence](../../media/mdatp-oatptoggle.png)<br>
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

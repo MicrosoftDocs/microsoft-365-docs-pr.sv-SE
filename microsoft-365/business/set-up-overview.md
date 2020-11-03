@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Lär dig hur du konfigurerar de olika installations stegen för Microsoft 365 Business Premium, från prenumeration, att lägga till en domän och användare, för att konfigurera säkerhets principer och mycket mer.
-ms.openlocfilehash: 8ec01a58d1a15d5c4aa1cef8b81518b474630d8b
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: 46370166a9d5e8c9308b8947513e631c159f0b86
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841150"
+ms.locfileid: "48842139"
 ---
 # <a name="overview-of-setup"></a>Översikt över konfiguration
 
@@ -48,7 +48,7 @@ De flesta installations anvisningarna kan göras i den interaktiva installatione
 
    - **[Lägga till din domän](set-up.md#add-your-domain-to-personalize-sign-in)** (om du har köpt din domän under [registreringen](sign-up.md)är det här steget redan klart.)
 
-   - **Lägga till användare** . Du kan lägga till användare på något av de tre sätten:
+   - **Lägga till användare**. Du kan lägga till användare på något av de tre sätten:
         - I den [guidade installationen](set-up.md#add-users-in-the-wizard).
         - Använd katalog-synkronisering för att [lägga till användare med Azure AD Connect](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) om du har en lokal Active Directory.
         - Du kan också [lägga till användare](add-users-m365b.md) i administrations centret.
@@ -61,7 +61,7 @@ De flesta installations anvisningarna kan göras i den interaktiva installatione
   Utöver säkerhets inställningarna i installations guiden kan du öka säkerheten genom att lägga till följande inställningar:
 
 - **Skydd mot skadlig program vara**
-- **Stöldskydd med ATP**
+- **Anti-nätfiske i Defender för Office 365**
 - **Exchange Online - arkivering**
 - **Azure information Protection (Plan1** )
 
