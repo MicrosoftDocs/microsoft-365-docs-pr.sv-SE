@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Lär dig hur du börjar samla in data för klient organisationen med hjälp av programmet Microsoft 365 användnings analys i Power BI.
-ms.openlocfilehash: 1e59811d6812c6a9d68878f6766181e85efb668b
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 0817e6441540086bf679c6533b1bad2e4087b4b9
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295339"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841463"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Aktivera Microsoft 365 användningsanalyser
 
@@ -52,54 +52,59 @@ Du kan också öppna **Produkter** och köpa en version av Power BI.
 > [!NOTE]
 > Du behöver en Power BI Pro-licens för att installera, anpassa och distribuera en mall. För mer information, se [förutsättningar](https://docs.microsoft.com/power-bi/service-template-apps-install-distribute?source=docs#prerequisites).
 
-Du behöver en Power BI Pro-licens för att dela innehåll och de personer som du delar det med, eller så måste innehållet vara på en arbets yta i en [Premium-kapacitet](https://docs.microsoft.com/power-bi/service-premium-what-is). 
+Om du vill dela dina data måste både du och de personer som du delar data med, ha en Power BI Pro-licens eller innehållet måste finnas på en arbets yta i en [Power BI premium-tjänst](https://docs.microsoft.com/power-bi/service-premium-what-is). 
   
 ### <a name="enable-the-template-app"></a>Aktivera programmet mall
 
-Om du vill aktivera programmet mall måste du vara antingen **Global administratör**, **rapport läsare**, Exchange- **administratör**, **Skype för företag-administratör**eller **SharePoint-administratör**. 
+Om du vill aktivera programmet mall måste du vara något av följande: 
+- **Global administratör**
+- **Rapport läsare**
+- **Exchange-administratör**
+- **Skype för företag-administratör**
+- **SharePoint-administratör** 
   
 Mer information finns i [om administratörs roller](../add-users/about-admin-roles.md) . 
   
 1. I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>. 
     
-2. På sidan **användning** letar du upp **Microsoft 365 användnings analys** kort och väljer **Kom igång**.
+2. På sidan **användning** letar du upp **Microsoft 365 användnings analys** kort och väljer **Kom igång** .
     
-3. På panelen rapporter som öppnas ställer du in **data som är tillgängliga för Microsoft 365 användnings analys för Power BI** **på** \> **Spara**. 
+3. På panelen rapporter som öppnas ställer du in **data som är tillgängliga för Microsoft 365 användnings analys för Power BI** **på** \> **Spara** . 
   
-Det här initierar datainsamlingsprocessen och tar mellan 2 och 48 timmar att slutföra beroende på storleken på din klientorganisation. Knappen **Gå till Power BI** aktiveras (ej längre gråmarkerad) när datainsamlingen är klar. 
+Data insamlings processen slutförs i två till 48 timmar beroende på innehavarens storlek. Knappen **Gå till Power BI** aktiveras (ej längre gråmarkerad) när datainsamlingen är klar. 
     
-### <a name="initiate-the-template-app"></a>Starta programmet mall
+### <a name="start-the-template-app"></a>Starta programmet mall
 
-För att kunna starta programmet mall måste du vara antingen **Global administratör**, **rapport läsare**, Exchange- **administratör**, **Skype för företag-administratör**eller **SharePoint-administratör**. 
+För att starta programmet mall måste du vara antingen **Global administratör** , **rapport läsare** , **Exchange-administratör** , **Skype för företag-administratör** eller SharePoint- **administratör** . 
   
-1. Kopiera klient-ID och välj **gå till Power BI**.
+1. Kopiera klient-ID och välj **gå till Power BI** .
     
-2.  När du kommer till Power BI loggar du in. Välj appar->skaffa appar från navigerings menyn.    
+2.  När du kommer till Power BI loggar du in. **Välj sedan appar** -> **Get apps** från navigerings menyn.    
   
-3. I fliken **Program** skriver du Microsoft 365 i sökrutan och väljer sedan **Microsoft 365 användningsanalyser** \> **Skaffa nu**.
+3. I fliken **Program** skriver du Microsoft 365 i sökrutan och väljer sedan **Microsoft 365 användningsanalyser** \> **Skaffa nu** .
 
     [![Välj Skaffa det nu](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
     
-4.  När programmet är installerat. Klicka på panelen för att öppna den.
+4.  När programmet är installerat. Välj panelen för att öppna den.
 
-5.  Klicka på **utforska app** för att Visa appen med exempel data. Klicka på **Anslut** för att koppla appen till organisationens data.
+5.  Välj **utforska app** för att Visa appen med exempel data. Välj **Anslut** för att koppla appen till organisationens data.
 
-6.  När du har klickat **365** på **Anslut**skriver du in klient-ID (utan tank streck) som du kopierade i steg (1) och väljer **Nästa**.
+6.  Välj **Anslut** , på skärmen **anslut till Microsoft 365 användnings analys** och skriv sedan in klient-ID (utan tank streck) som du kopierade i steg (1) och välj **Nästa** .
     
-7. På nästa skärm väljer du **OAuth2** som **autentiseringsmetod** \> **Sign in**. Om du väljer någon annan autentiseringsmetod kommer anslutningen till programmet att Miss lyckas.
+7. På nästa skärm väljer du **OAuth2** som **autentiseringsmetod** \> **Sign in** . Om du väljer någon annan autentiseringsmetod kommer anslutningen till programmet att Miss lyckas.
     
     ![Välj Microsoft-konto som autentiseringsmetod](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
   
 8. När mallgalleriet har instansierats blir Microsoft 365 användnings analys instrument panelen tillgängliga i Power BI på webben. Första inläsningen av instrumentpanelen tar 2 till 30 minuter.
   
-Sammanställningar på klientorganisationsnivån blir tillgängliga i alla rapporter. **Information på användarnivå blir bara tillgänglig efter den 1:a eller 15:e dagen varje kalendermånad efter att du har gått med**. Detta påverkar alla rapporter under användar aktivitet (se [navigera och använda rapporterna i Microsoft 365 användnings analyser](navigate-and-utilize-reports.md) för tips om hur du visar och använder dessa rapporter).
+Sammanställningar på klientorganisationsnivån blir tillgängliga i alla rapporter. **Information på användarnivå blir bara tillgänglig efter den 1:a eller 15:e dagen varje kalendermånad efter att du har gått med** . Detta påverkar alla rapporter under användar aktivitet. Se [navigera och utnyttja rapporterna i Microsoft 365 användnings analys](navigate-and-utilize-reports.md) för tips om hur du visar och använder dessa rapporter.
     
 ## <a name="make-the-collected-data-anonymous"></a>Gör insamlade data anonyma
 
 Du måste vara global administratör för att kunna anonymisera data som samlas in för alla rapporter. Då döljs identifierbar information som användare, grupp och webbplats namn i rapporter och i mallfilen.
   
-1. Gå till **Inställningar** i administrations centret \> **Org Settings**och välj **rapporter**på fliken **tjänster** .
+1. Gå till **Inställningar** i administrations centret \> **Org Settings** och välj **rapporter** på fliken **tjänster** .
     
-2. Välj **rapporter**och välj sedan om du vill **Visa anonyma identifierare**. Denna inställning tillämpas både på användnings rapporterna och i programmet.
+2. Välj **rapporter** och välj sedan om du vill **Visa anonyma identifierare** . Denna inställning tillämpas både på användnings rapporterna och i programmet.
   
-3. Välj **Spara ändringar**.
+3. Välj **Spara ändringar** .

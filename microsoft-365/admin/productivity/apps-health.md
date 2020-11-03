@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Information om hälso upplevelsen för Microsoft 365-apparna.
-ms.openlocfilehash: 4242a9b665bc7292232cc15ee0f1ec37915fb1ac
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 9497118f4ebfb1cb2b64670638ce939da21eb261
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804775"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841195"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365-appar hälsa – teknik upplevelse
 
-Produktivitets Poäng hjälper organisationer att omvandla hur arbete görs med mät värden för hur människor använder Microsoft 365-appar och stöd teknik upplevelsen. Poängen återspeglar din organisation&#39;s prestanda för kategorierna för folk-och teknik miljö och jämför poängen med organisationer som du vill. Kategorin för grupp arbete är en del av de mätningar som infaller under folkets upplevelse. Se [Översikt över produktivitets Poäng](productivity-score.md) för att få veta mer.
+Produktivitets Poäng hjälper organisationer att omvandla hur arbete görs med mät värden för hur människor använder Microsoft 365-appar och stöd teknik upplevelsen. Poängen återspeglar din organisation&#39;s prestanda för kategorierna för folk-och teknik miljö och jämför poängen med organisationer som du vill. Hälso kategorin appar är en del av de mått som infaller under folkets upplevelse. Se [Översikt över produktivitets Poäng](productivity-score.md) för att få veta mer.
 
 ## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>Därför är organisationen&#39;s Microsoft 365-appar hälso Poäng
 

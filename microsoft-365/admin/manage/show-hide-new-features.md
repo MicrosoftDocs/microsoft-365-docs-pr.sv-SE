@@ -18,57 +18,57 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Bestäm vilka funktioner och nytt innehåll som visas för eller döljs för slutanvändare i Office What's New Management for Office-skrivbordsappar.
-ms.openlocfilehash: 9f63da1870253c9023fa1e2e169bae22435807e4
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+description: Bestäm vilka funktioner och nyheter som visas för eller döljas för slutanvändare i Office-appen Nyheter för Office-programmet.
+ms.openlocfilehash: 8a7511845dbcce56848834178ed81cd7b919de42
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844734"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841417"
 ---
 # <a name="show-or-hide-new-features-using-whats-new-management"></a>Visa eller dölja nya funktioner med den nya hanteringen
 
-Med Office What's New Management för Windows kan din organisation bestämma vilka funktioner som ska visas för eller döljas för slutanvändare i Office-skrivbordsappen. Varje utgåva av Office innehåller nya och förbättrade funktioner, och med förhandsgranskningen av innehållet kan du visa nytt innehåll för varje version och kanal och välja om du vill dölja eller visa Vad är nytt innehåll för varje funktion för slutanvändarna. 
+Med **Office nyheter** kan organisationen bestämma vilka funktioner som visas för slutanvändarna i Office-programmen. Med innehålls förhands granskningen kan du Visa nytt innehåll för varje version och kanal. Därefter kan du välja om du vill dölja eller Visa nyheter för varje funktion för slutanvändarna. 
 
-Det nya innehållet i Office-skrivbordsapparna belyser en lista över nya funktioner som släpps för det programmet, med en kort beskrivning och ofta en bild eller en video som skapats av teamet som släpper funktionen för att hjälpa kunderna att lära sig hur de använder funktionen. 
+**Nyheter i Office-programmen** visar en lista över nya funktioner som släpps för ett program. Den innehåller också en kort beskrivning och ofta en bild eller en video som hjälper kunder att använda funktionen. 
 
-Office What's New-hantering är tillgänglig i Microsoft 365-administrationscentret och via [client configuration service](https://config.office.com).
+**Office nyheter** i administrations centret för Microsoft 365 och via [klient konfigurations tjänsten](https://config.office.com).
 
 > [!NOTE]
-> Globala administratörs- och Office Apps-administratörsroller hanterar det nya innehåll som användarna ser i sina Office-appar.
+> Administratörer för globala administratörer och Office-appar hanterar det nyheter som användarna ser i sina Office-appar.
 
 ##  <a name="show-or-hide-new-features"></a>Visa eller dölj nya funktioner 
 
-Administratörer kan förhandsgranska det nya innehållet för en kanal och hantera utgivningen av innehållet med office what's new-hantering.
+Administratörer kan förhandsgranska **Nyheter** för en kanal och hantera utgivningen av innehållet genom att använda Office-fönstret **Nyheter** .
 
-1. Välj **Organisationsinställningar**under Inställningar i Administrationscentret **för**Microsoft 365 .
-2. På fliken **Tjänster** väljer du **Office What's New management**.
-3. Välj en eller flera funktioner om du vill visa funktionsnamnet, en kort beskrivning, programmet och utgivningsversionen för varje funktion på den utfällbara panelen.
-4. Välj **Dölj för användare** eller Visa för **användare**.  
-    Statusen **Visas som standard** anger att funktionsinformation visas som standard för användarna tills administratören anger status för en funktion till **Dold** eller **Visad**.  
+1. Välj **org Settings** under **Inställningar** i administrations centret för Microsoft 365.
+2. Välj **Office-nyheter** på fliken **tjänster** .
+3. Välj en eller flera funktioner för att visa namnet på en funktion, en kort beskrivning, mål programmet och uttrycks versionen för varje funktion på panelen för utplattning.
+4. Välj **Dölj för användare** eller **Visa för användare** .  
+    Den status **som visas som standard** visar att funktions informationen visas som standard för användare tills administratören anger statusen för en funktion till **dold** eller **visad** .  
 
     > [!NOTE]
-    > Om en funktion är tillgänglig i flera Office-appar döljer inställningen för funktionen till dolda funktionsmeddelandet i alla Office-appar.
+    > Om en funktion är tillgänglig i flera Office-program kan du ställa in funktionen på dold Dölj funktions meddelandet i alla Office-appar.
 
-Nya funktioner visas i Office What's New Management baserat på det här schemat:
+Nya funktioner visas i Office och nyheter för hantering enligt det här schemat:
 
 ||||
 |:-----|:-----|:-----|
-|**Kanal** <br/> |**Förhandsgranskning av hantering** <br/> |**Vidta åtgärder** <br/> |
-|**Nuvarande** <br/> |15:e i månaden  <br/> |1 - 3 veckor före månadsversionen <br/> |
-|**Månatliga Företag** <br/> |1:a i månaden  <br/> |2 veckor före den stora utgåvan som ger nya funktioner |
-|**Halvårsvis företag (förhandsversion)** <br/> |1 september och 1 mars <br/> | 2 veckor före den stora utgåvan som ger nya funktioner|
-|**Halvårsvis företag** <br/> |1 januari och 1 juli <br/> | 2 veckor före den stora utgåvan som ger nya funktioner<br/> |
+|**Kanal** <br/> |**I förhands granskning av hantering** <br/> |**Utför åtgärd** <br/> |
+|**Här** <br/> |15 i månaden  <br/> |1-3 veckor före månads versionen <br/> |
+|**Månads Enterprise** <br/> |Första av månaden  <br/> |Två veckor före den större versionen som får nya funktioner |
+|**Halvårs Visa (för hands version)** <br/> |Sept 1 och 1 mars <br/> | två veckor före den större versionen som får nya funktioner|
+|**Halvårs företags** <br/> |1 januari och 1 juli <br/> | två veckor före den större versionen som får nya funktioner<br/> |
 
-Mer information om schemaläggning av kanaluppdatering finns i [Uppdateringshistorik för Microsoft 365 Apps (listat efter datum)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
+Mer information om kanal uppdaterings scheman finns i [uppdaterings historiken för Microsoft 365-appar (visas efter datum)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
 
-## <a name="add-office-whats-new-management-card-to-the-admin-center-home-page"></a>Lägga till Office What's New Management-kort på startsidan för administrationscentret
+## <a name="add-office-whats-new-management-card-to-the-admin-center-home-page"></a>Lägga till Office-nyheter på administrations centrets start sida
 
-1. På administrationssidan för Microsoft 365 väljer du Lägg till kort ovanpå sidan
-2. Leta reda på **Nyheter i Office Apps** i listan och välj det.
-3. När kortet är på vår hemsida kan du välja **Hantera** för att [visa eller dölja funktionerna](#show-or-hide-new-features) för yor organisation. 
+1. På sidan Microsoft 365-administratör väljer du **Lägg till kort** överst på sidan
+2. Leta reda **på vad som är nytt i Office-apparna** i listan och välj det.
+3. När kortet är på Start sidan kan du välja **Hantera** för att [Visa eller dölja funktionerna](#show-or-hide-new-features) för organisationen. 
 
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Office What's New-hantering är nu allmänt tillgänglig](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-is-now-generally-available/ba-p/1179954)
+[Office vad är ny hantering nu i allmänhet](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-is-now-generally-available/ba-p/1179954)

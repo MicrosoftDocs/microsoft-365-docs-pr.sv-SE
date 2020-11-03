@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Lär dig hur du får en rapport om Microsoft Forms-aktiviteter med instrument panelen för Microsoft 365-rapporter i administrations centret för Microsoft 365.
-ms.openlocfilehash: 78b09edfbfeb83c056af16787085b7c4cfe93fc6
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 843548e77067c7598cfa78ba6fac985237f6f62c
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949210"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841119"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365-rapporter i administrations centret – formulär aktivitet
 
@@ -39,7 +39,7 @@ Du kan till exempel förstå aktiviteten hos alla användare som är licensierad
 1. I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>.
 
     
-2. Välj **formulär** aktivitet i list rutan **Välj en rapport** \> **activity**.
+2. Välj **formulär** aktivitet i list rutan **Välj en rapport** \> **activity** .
 
 ## <a name="interpret-the-forms-activity-report"></a>Tolka rapporten formulär aktivitet
 

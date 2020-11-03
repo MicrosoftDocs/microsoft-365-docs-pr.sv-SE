@@ -19,21 +19,20 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Få en översikt över hur din organisation inför Microsoft 365-tjänster för att kommunicera och samar beta.
-ms.openlocfilehash: fecaed3aa9fc2d0990cb3e7b416cee1bfab21d7e
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d7e9e6cf945134df54221bb8a03ef83d1a8851cc
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948634"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841393"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 användningsanalyser
----
 
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Översikt över Microsoft 365 användningsanalyser
 
-Använd Microsoft 365 användnings analys i Power BI för att få information om hur organisationen inför de olika tjänsterna i Microsoft 365 för att kommunicera och samar beta. Du kan visualisera och analysera data i Microsoft 365, skapa anpassade rapporter och dela med dig av insikter i din organisation och få information om hur specifika regioner eller avdelningar använder Microsoft 365.
+Använd Microsoft 365 användnings analys i Power BI för att få information om hur organisationen använder olika tjänster i Microsoft 365. Du kan visualisera och analysera data i Microsoft 365, skapa anpassade rapporter och dela insikter i din organisation. Du kan också få information om hur specifika regioner eller avdelningar använder Microsoft 365.
   
-Microsoft 365 användnings analys är en mall som ger dig till gång till en fördefinierad instrument panel med en vy över de senaste 12 månaderna och innehåller ett antal färdiga rapporter. Varje rapport ger specifika insikter om användningen. Den användarspecifika informationen är tillgänglig för den senaste fullständiga kalendermånaden.
+Med Microsoft 365 användnings analyser får du till gång till en fördefinierad instrument panel som innehåller en vy över de senaste 12 månaderna och innehåller ett antal färdiga rapporter. Varje rapport ger specifika insikter om användningen. Användarspecifik information är tillgänglig under den senaste fullständiga kalender månaden.
   
 Den [data modell](usage-analytics-data-model.md) som gör att programkatalogpartitionen innehåller användarattribut från Active Directory gör det möjligt att pivotera in vissa rapporter. Följande Active Directory-attribut ingår: plats, avdelning och organisation. 
   
@@ -41,7 +40,7 @@ Se [Aktivera Microsoft 365 användningsanalyser](enable-usage-analytics.md) för
   
 Microsoft 365 användnings analys innehåller ett antal rapporter i följande avsnitt. 
 
-Du kan komma åt detaljerade rapporter för varje område genom att välja data tabeller. Du kan visa alla färdiga rapporter genom att välja flikarna längst ned på webbplatsen, när du visar rapporterna. Mer detaljerade anvisningar finns i [navigera och använda rapporterna i microsoft 365 användnings analys](navigate-and-utilize-reports.md) och [Anpassa rapporterna i Microsoft 365 användnings analys](customize-reports.md).
+Du kan komma åt detaljerade rapporter för varje område genom att välja data tabeller. Du kan visa alla färdiga rapporter genom att välja flikarna längst ned på webbplatsen. Mer detaljerad information finns [i navigera och använda rapporter](navigate-and-utilize-reports.md) och [anpassa rapporter](customize-reports.md).
 
 ## <a name="executive-summary"></a>Executive-Sammanfattning
 
@@ -93,7 +92,7 @@ Om du vill dela instrument paneler med andra kan du läsa mer på [dela instrume
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>Vem kan ansluta till Microsoft 365 användningsanalyser?
 
-Du måste vara **Global administratör**, **Exchange-administratör**, **Skype för företag-administratör**, SharePoint- **administratör**, **global läsare** eller **rapport läsare** för att kunna upprätta anslutningen till programmet mall. Mer information finns i [om administratörs roller](../add-users/about-admin-roles.md) .
+Du måste vara **Global administratör** , **Exchange-administratör** , **Skype för företag-administratör** , SharePoint- **administratör** , **global läsare** eller **rapport läsare** för att kunna upprätta anslutningen till programmet mall. Mer information finns i [om administratörs roller](../add-users/about-admin-roles.md) .
 
 ### <a name="who-can-customize-the-usage-analytics-reports"></a>Vem kan anpassa användnings analys rapporter?
 
