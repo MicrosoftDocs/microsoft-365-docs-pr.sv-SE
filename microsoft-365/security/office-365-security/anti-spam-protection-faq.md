@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan se vanliga frågor och svar om skydd mot skräp post i Exchange Online Protection (EOP).
-ms.openlocfilehash: 2bf2808cc0da6124a0377b52dc46f88b2c8a69e0
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: d2505eea572e512b306cf26c7a57d1dc1b705c0b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445741"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844470"
 ---
 # <a name="anti-spam-protection-faq"></a>Vanliga frågor och svar om skydd mot skräppost
 
@@ -59,7 +59,7 @@ När du har registrerat dig för tjänsten och lagt till din domän aktive ras s
 
 Mer information finns i följande avsnitt:
 
-[Rekommenderade inställningar för EOP och Office 365 säkerhet för ATP](recommended-settings-for-eop-and-office365-atp.md)
+[Rekommenderade inställningar för EOP och Microsoft Defender för Office 365-säkerhet](recommended-settings-for-eop-and-office365-atp.md)
 
 [Konfigurera anslutnings filtrering i EOP](configure-the-connection-filter-policy.md)
 
@@ -105,9 +105,9 @@ Du kan skicka ett meddelande till en viss e-postadress när en avsändare skicka
 
 Ja. Även om vi rekommenderar att du pekar din MX-post till Microsoft inser vi att det finns legitima affärs skäl för att dirigera din e-post till annan plats än Microsoft först.
 
-- **Inkommande**: ändra dina MX-poster så att de pekar på tredjepartsleverantörer och dirigera sedan om dem till EOP för ytterligare bearbetning. Mer information finns i [förbättrade filter för kopplingar i Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+- **Inkommande** : ändra dina MX-poster så att de pekar på tredjepartsleverantörer och dirigera sedan om dem till EOP för ytterligare bearbetning. Mer information finns i [förbättrade filter för kopplingar i Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- **Utgående**: konfigurera routning för smarta värden från Microsoft 365 till den mottagande tredje partens leverantör.
+- **Utgående** : konfigurera routning för smarta värden från Microsoft 365 till den mottagande tredje partens leverantör.
 
 ## <a name="does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>Har Microsoft någon dokumentation om hur jag kan skydda mig från nätfiske-bedrägerier?
 

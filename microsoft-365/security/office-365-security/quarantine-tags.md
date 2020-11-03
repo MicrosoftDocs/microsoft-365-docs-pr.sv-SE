@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Administratörer kan lära sig att använda karantän koder för att kontrol lera vad användarna kan göra i sina karantän meddelanden.
-ms.openlocfilehash: 89f03795d8f12b3df3e5090648c5a6c8b64c322a
-ms.sourcegitcommit: 676479f1e65492b44c4d0316a765f55ae9fae374
+ms.openlocfilehash: e50d7eea4cec3c87231dda855725b1e901f5fa33
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819746"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845702"
 ---
 # <a name="quarantine-tags"></a>Karantän koder
 
@@ -68,11 +68,11 @@ Du skapar och tilldelar karantän koder i säkerhets & efterföljandekrav eller 
 
 ## <a name="step-1-create-quarantine-tags-in-the-security--compliance-center"></a>Steg 1: skapa karantän koder i centret säkerhets & efterlevnad
 
-1. I fönstret säkerhets & efterlevnad går du till **Threat Management** \> **policy** och väljer sedan **Quarantine-Taggar** .
+1. I fönstret säkerhets & efterlevnad går du till **Threat Management** \> **policy** och väljer sedan **Quarantine-Taggar**.
 
-2. På sidan **karantän etiketter** väljer du **Lägg till anpassad tagg** .
+2. På sidan **karantän etiketter** väljer du **Lägg till anpassad tagg**.
 
-3. Guiden **ny tagg** öppnas. Ange ett kort men unikt namn i fältet **taggnamn** på sidan **taggnamn** . Du måste identifiera och markera taggen efter namn i kommande steg. När du är klar klickar du på **Nästa** .
+3. Guiden **ny tagg** öppnas. Ange ett kort men unikt namn i fältet **taggnamn** på sidan **taggnamn** . Du måste identifiera och markera taggen efter namn i kommande steg. När du är klar klickar du på **Nästa**.
 
 4. Välj något av följande värden på sidan **mottagar meddelande åtkomst** :
    - **Ingen åtkomst**
@@ -96,11 +96,11 @@ Du skapar och tilldelar karantän koder i säkerhets & efterföljandekrav eller 
 
    De här behörigheterna och deras inverkan på meddelanden i karantän och meddelanden om skräp post beskrivs i avsnittet [behörigheter för karantän tag](#quarantine-tag-permission-details) längre fram i den här artikeln.
 
-   När du är klar klickar du på **Nästa** .
+   När du är klar klickar du på **Nästa**.
 
 5. Granska inställningarna på **sammanfattnings** sidan som visas. Du kan klicka på **Redigera** på varje inställning för att ändra den.
 
-   När du är klar klickar du på **Skicka** .
+   När du är klar klickar du på **Skicka**.
 
 6. Klicka på **klar** på bekräftelse sidan som visas.
 
@@ -229,7 +229,7 @@ I skydds funktioner som _stöds_ i karantän meddelanden och filer (automatiskt 
 |Funktion|Finns det stöd för karantän?|Standard karantän koder|
 |---|:---:|---|
 |[Principer för skräp post](configure-your-spam-filter-policies.md): <ul><li>**Spam** ( _SpamAction_ )</li><li>**Snabb meddelanden med hög exakthet** ( _HighConfidenceSpamAction_ )</li><li>**Phishing-e-post** ( _PhishSpamAction_ )</li><li>**E-post med hög exakthet** ( _HighConfidencePhishAction_ )</li><li>**Mass utskick via e-post** ( _BulkSpamAction_ )</li></ul>|Ja|<ul><li>DefaultSpamTag (fullständig åtkomst)</li><li>DefaultHighConfSpamTag (fullständig åtkomst)</li><li>DefaultPhishTag (fullständig åtkomst)</li><li>DefaultHighConfPhishTag (ingen åtkomst)</li><li>DefaultBulkTag (fullständig åtkomst)</li></ul>
-|Skydd mot nätfiske: <ul><li>[Skydd mot förfalsknings information](set-up-anti-phishing-policies.md#spoof-settings) ( _AuthenticationFailAction_ )</li><li>[Personifieringsnivå](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies):<sup>\*</sup> <ul><li>**Om e-post skickas av en personifierad användare** ( _TargetedUserProtectionAction_ )</li><li>**Om e-post skickas av en domänkontrollant** ( _TargetedDomainProtectionAction_ )</li><li>**Post lådans intelligens** \> **Om e-post skickas av en personifierad användare** ( _MailboxIntelligenceProtectionAction_ )</li></ul></li></ul></ul>|Nej|ej tillämpligt|
+|Skydd mot nätfiske: <ul><li>[Skydd mot förfalsknings information](set-up-anti-phishing-policies.md#spoof-settings) ( _AuthenticationFailAction_ )</li><li>[Personifieringsnivå](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**Om e-post skickas av en personifierad användare** ( _TargetedUserProtectionAction_ )</li><li>**Om e-post skickas av en domänkontrollant** ( _TargetedDomainProtectionAction_ )</li><li>**Post lådans intelligens** \> **Om e-post skickas av en personifierad användare** ( _MailboxIntelligenceProtectionAction_ )</li></ul></li></ul></ul>|Nej|ej tillämpligt|
 |[Principer mot skadlig program vara](configure-anti-malware-policies.md): alla upptäckta meddelanden alltid är i karantän.|Nej|ej tillämpligt|
 |[ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md)|Nej|ej tillämpligt|
 |[Regler för e-postflöden](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (kallas även transport regler) med åtgärden: **leverera meddelandet till den värdbaserade karantänen** ( _karantän_ ).|Nej|ej tillämpligt|
@@ -243,7 +243,7 @@ Om du är nöjd med de slut användar behörigheter som tillhandahålls av stand
 
 Fullständiga anvisningar för hur du skapar och ändrar principer för skräp post beskrivs i [Konfigurera principer för skräp post i EOP](configure-your-spam-filter-policies.md).
 
-1. I säkerhets & Compliance Center går du till **Threat Management** \> **policy** \> och väljer sedan **anti-spam** . Eller öppna <https://protection.office.com/antispam> .
+1. I säkerhets & Compliance Center går du till **Threat Management** \> **policy** \> och väljer sedan **anti-spam**. Eller öppna <https://protection.office.com/antispam> .
 
 2. Leta reda på och välj en befintlig policy mot skräp post som du vill redigera eller skapa en ny policy mot skräp post.
 
@@ -304,9 +304,9 @@ Detaljerad information om syntax och parametrar finns i [Set-HostedContentFilter
 
 Med globala inställningar för karantän koder kan du anpassa avsändare av slutanvändare som skickas till mottagare av meddelanden som satts i karantän. Mer information om dessa meddelanden finns i aviseringar om avanmälan till [slutanvändare](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. I fönstret säkerhets & efterlevnad går du till **Threat Management** \> **policy** och väljer sedan **Quarantine-Taggar** .
+1. I fönstret säkerhets & efterlevnad går du till **Threat Management** \> **policy** och väljer sedan **Quarantine-Taggar**.
 
-2. På sidan **karantän etiketter** väljer du **globala inställningar** .
+2. På sidan **karantän etiketter** väljer du **globala inställningar**.
 
 3. I fönstret **Inställningar för karantän meddelanden** som öppnas konfigurerar du vissa eller alla av följande inställningar:
 
@@ -318,7 +318,7 @@ Med globala inställningar för karantän koder kan du anpassa avsändare av slu
 
    - **Välj språk** : skräp post meddelanden är redan lokaliserade baserat på mottagarens språk inställningar. Du kan ange anpassad text på olika språk för **visnings namn** och **fri skrivnings** värden.
 
-     Välj minst ett språk i rutan första språk och klicka sedan på **Lägg till** . Du kan välja flera språk genom att klicka på **Lägg till** efter varje. I rutan avsnitts språk visas alla språk som du har valt:
+     Välj minst ett språk i rutan första språk och klicka sedan på **Lägg till**. Du kan välja flera språk genom att klicka på **Lägg till** efter varje. I rutan avsnitts språk visas alla språk som du har valt:
 
      ![Valda språk i rutan andra språk i den globala karantänen inställningar för karantäns meddelanden](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
@@ -340,7 +340,7 @@ Med globala inställningar för karantän koder kan du anpassa avsändare av slu
 
 ## <a name="view-quarantine-tags-in-the-security--compliance-center"></a>Visa karantän koder i centret för säkerhets &
 
-1. I fönstret säkerhets & efterlevnad går du till **Threat Management** \> **policy** och väljer sedan **Quarantine-Taggar** .
+1. I fönstret säkerhets & efterlevnad går du till **Threat Management** \> **policy** och väljer sedan **Quarantine-Taggar**.
 
 - Om du vill visa inställningarna för inbyggda eller anpassade Quarantine-Taggar markerar du karantän tag gen i listan (Markera inte kryss rutan).
 
@@ -384,9 +384,9 @@ Detaljerad information om syntax och parametrar finns i [Get-HostedContentFilter
 
   Om du använder Quarantine-taggen ersätter du [den tilldelade karantän tag gen](#step-2-assign-a-quarantine-tag-to-supported-features) innan du tar bort den.
 
-1. I fönstret säkerhets & efterlevnad går du till **Threat Management** \> **policy** och väljer sedan **Quarantine-Taggar** .
+1. I fönstret säkerhets & efterlevnad går du till **Threat Management** \> **policy** och väljer sedan **Quarantine-Taggar**.
 
-2. På sidan **karantäns etiketter** väljer du den anpassade Quarantine-tagg som du vill ta bort och klickar på **ta bort-taggen** .
+2. På sidan **karantäns etiketter** väljer du den anpassade Quarantine-tagg som du vill ta bort och klickar på **ta bort-taggen**.
 
 3. Klicka på **ta bort tagg** i bekräftelse dialog rutan som visas.
 

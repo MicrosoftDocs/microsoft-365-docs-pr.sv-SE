@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Lär dig hur du använder Threat Explorer och rapporten om identifiering av real tids rapporter för att undersöka och reagera på hot i säkerhets &amp; Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75286b3fa8319afc9baadbc7ed349e8fe689d11c
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 83fa2d89c74b5ec1e2de7e65457313f20bbf2681
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447137"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844326"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vyer i Threat Explorer och identifieringar i real tid
 
@@ -32,20 +32,20 @@ ms.locfileid: "48447137"
 
 [Threat Explorer](threat-explorer.md) (och rapporten om identifiering av real tid) är ett kraftfullt, nära real tids verktyg som hjälper säkerhets åtgärder att undersöka och reagera på hot i säkerhets &amp; Center. Utforskaren (och rapporten real tids identifiering) visar information om misstänkt skadlig program vara och Phish i e-post och filer i Office 365 samt andra säkerhetshot och risker för din organisation.
 
-- Om du har [Office 365](office-365-atp.md) -abonnemang för avancerat skydd (ATP) 2 har du Explorer.
-- Om du har Office 365 ATP-abonnemang 1 har du real tids identifiering.
+- Om du har [Microsoft Defender för Office 365](office-365-atp.md) abonnemang 2 har du Explorer.
+- Om du har Microsoft Defender för Office 365 abonnemang 1 har du real tids identifiering.
 
-När du först öppnar Utforskaren (eller rapporten real tids identifiering) visas e-postidentifiering av skadlig program vara under de senaste sju dagarna. Den här rapporten kan även Visa identifieringar av ATP, till exempel skadlig URL-adresser som identifieras av [säkra länkar](atp-safe-links.md)och skadliga filer som identifieras av [säkra bifogade](atp-safe-attachments.md)filer. Den här rapporten kan ändras för att visa data för de senaste 30 dagarna (med ett ATP-betalat abonnemang). Prov abonnemang kommer endast att omfatta data för de senaste sju dagarna.
+När du först öppnar Utforskaren (eller rapporten real tids identifiering) visas e-postidentifiering av skadlig program vara under de senaste sju dagarna. Den här rapporten kan även visa Microsoft Defender för Office 365-identifieringar, till exempel skadlig URL-adresser som identifieras av [säkra länkar](atp-safe-links.md)och skadliga filer som identifieras av [säkra bifogade](atp-safe-attachments.md)filer. Den här rapporten kan ändras för att visa data för de senaste 30 dagarna (med ett Microsoft Defender för Office 365 P2-betalat abonnemang). Prov abonnemang kommer endast att omfatta data för de senaste sju dagarna.
 
 ****
 
 |Prenumerationsvy|Nytta|Dagar med data|
 |---|---|---|
-|ATP-test|Identifiering i realtid|borttagning|
-|ATP P1 betalt|Identifiering i realtid|halvtimme|
-|ATP P1-betal test för ATP|Hotutforskaren|borttagning|
-|ATP-prov|Hotutforskaren|borttagning|
-|ATP-betalat|Hotutforskaren|halvtimme|
+|Utvärderings version av Microsoft Defender för Office 365|Identifiering i realtid|borttagning|
+|Microsoft Defender för Office 365|Identifiering i realtid|halvtimme|
+|Microsoft Defender för Office 365 P1-test Defender för Office 365 P2-utvärdering|Hotutforskaren|borttagning|
+|Microsoft Defender för Office 365 P2-utvärdering|Hotutforskaren|borttagning|
+|Microsoft Defender för Office 365 P2-betalat|Hotutforskaren|halvtimme|
 |
 
 Använd **Visa** -menyn för att ändra vilken information som visas. Med knapp beskrivningar kan du bestämma vilken vy som ska användas.
@@ -56,7 +56,7 @@ När du har valt en vy kan du använda filter och ställa in frågor för att ut
 
 ## <a name="email--malware"></a>> skadlig program vara
 
-Om du vill visa rapporten klickar du på **Visa**  >  **e-**  >  **postskadlig kod**i Utforskaren (eller i real tid). I den här vyn visas information om e-postmeddelanden som identifierats som innehåll ande malware.
+Om du vill visa rapporten klickar du på **Visa**  >  **e-**  >  **postskadlig kod** i Utforskaren (eller i real tid). I den här vyn visas information om e-postmeddelanden som identifierats som innehåll ande malware.
 
 ![Visa information om e-post som identifieras som skadlig program vara](../../media/ExplorerEmailMalwareMenu.png)
 
@@ -98,7 +98,7 @@ Om du vill visa den här rapporten går du till Explorer (eller real tids identi
 
 Klicka på **avsändare** för att öppna listan över visnings alternativ. Använd den här listan för att visa information efter avsändare, mottagare, rapport typ (användarens kontroll att e-postmeddelandet var skräp, inte skräp post eller Phish) och mycket mer.
 
-Om du till exempel vill visa information om e-postmeddelanden som rapporter ATS som nätfiske-försök klickar du på **avsändarens**  >  **typ**, väljer **Phish**och klickar sedan på knappen Uppdatera.
+Om du till exempel vill visa information om e-postmeddelanden som rapporter ATS som nätfiske-försök klickar du på **avsändarens**  >  **typ** , väljer **Phish** och klickar sedan på knappen Uppdatera.
 
 ![Phish markerad för rapport typ filter](../../media/ThreatExplorerEmailUserReportedPhishSelected.png)
 
@@ -113,9 +113,9 @@ Välj ett objekt i listan för att visa ytterligare information.
 Om du vill visa rapporten klickar du på **Visa**  >  **e-** post i Utforskaren  >  **All mail**. I den här vyn visas en uppkopplings aktivitet med e-postaktivitet, inklusive e-post som identifieras som skadlig på grund av nätfiske eller skadlig program vara (vanlig e-post, spam och Mass utskick).
 
 > [!NOTE]
-> Om du får ett fel meddelande som läser upp **för mycket data**kan du lägga till ett filter och, om det behövs, begränsa det datum intervall du visar.
+> Om du får ett fel meddelande som läser upp **för mycket data** kan du lägga till ett filter och, om det behövs, begränsa det datum intervall du visar.
 
-Om du vill använda ett filter väljer du **avsändare**, markerar ett objekt i listan och klickar sedan på knappen Uppdatera. I vårt exempel använde vi **identifierings teknologi** som ett filter (det finns flera tillgängliga alternativ). Visa information efter avsändare, avsändarens domän, mottagare, ämne, bifogade filer och skadlig program vara, skydds status (åtgärder som vidtas av funktioner och principer för hotets skydd i Office 365), identifierings teknologi (hur skadlig program vara upptäcktes) och mycket mer.
+Om du vill använda ett filter väljer du **avsändare** , markerar ett objekt i listan och klickar sedan på knappen Uppdatera. I vårt exempel använde vi **identifierings teknologi** som ett filter (det finns flera tillgängliga alternativ). Visa information efter avsändare, avsändarens domän, mottagare, ämne, bifogade filer och skadlig program vara, skydds status (åtgärder som vidtas av funktioner och principer för hotets skydd i Office 365), identifierings teknologi (hur skadlig program vara upptäcktes) och mycket mer.
 
 ![Visa data om identifierad e-post efter identifierings teknologi](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png)
 
@@ -123,7 +123,7 @@ Under diagrammet kan du Visa mer information om specifika e-postmeddelanden, til
 
 ## <a name="content--malware"></a>Innehålls > skadlig program vara
 
-Om du vill visa rapporten i Utforskaren (eller i real tid) väljer du **Visa**  >  **Content**  >  **skadlig program vara**. I den här vyn visas filer som har identifierats som skadliga av [Office 365 Avancerat skydd i SharePoint Online, OneDrive för företag och Microsoft Teams](atp-for-spo-odb-and-teams.md).
+Om du vill visa rapporten i Utforskaren (eller i real tid) väljer du **Visa**  >  **Content**  >  **skadlig program vara**. I den här vyn visas filer som identifieras som skadliga av [Microsoft Defender för Office 365 i SharePoint Online, OneDrive för företag och Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
 Visa information från skadlig program vara, identifierings teknologi (hur skadlig kod har identifierats) och arbets belastning (OneDrive, SharePoint eller teams).
 
@@ -139,7 +139,7 @@ Med Explorer (och real tids identifieringar) kan du använda ett filter i ett kl
 
 Om du klickar på **ATP-sprängor** i det här diagrammet visas en vy som här:
 
-![Utforskaren är filtrerad för att endast visa resultat för ATP-Sprängor](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
+![Explorer filtrerat för att visa endast Defender för 365-sprängning](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
 I den här vyn visar vi nu data för filer som har sprängts med [säkra bifogade](atp-safe-attachments.md)filer. Under diagrammet kan vi se information om specifika e-postmeddelanden med bifogade filer som upptäcktes av säkra bifogade filer.
 

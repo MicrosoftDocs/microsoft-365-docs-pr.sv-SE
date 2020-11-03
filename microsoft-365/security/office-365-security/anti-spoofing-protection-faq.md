@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Administratörer kan se vanliga frågor och svar om skydd mot förfalskning i Exchange Online Protection (EOP).
-ms.openlocfilehash: 3b1a30541c46383284203eee61d8b6679ac3b493
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: a5b0484e41e3df7a7b6ad16e69a4f7062b19b554
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445717"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844398"
 ---
 # <a name="anti-spoofing-protection-faq"></a>Vanliga frågor och svar om skydd mot förfalskning
 
@@ -45,11 +45,9 @@ När Microsoft aktiverade den här funktionen i 2018 skedde vissa falska positiv
 
 Microsoft antog först de nya e-postautentiseringskravna flera veckor innan de distribueras till kunderna. I början förekom störningar men de minskade gradvis.
 
-## <a name="is-spoof-intelligence-available-to-microsoft-365-customers-without-atp"></a>Är Spoof-intelligens tillgänglig för Microsoft 365-kunder utan ATP?
+## <a name="is-spoof-intelligence-available-to-microsoft-365-customers-without-defender-for-office-365"></a>Är Spoof-intelligens tillgänglig för Microsoft 365-kunder utan Defender för Office 365?
 
 Ja. Från och med oktober 2018 är Spoof-intelligens tillgänglig för alla organisationer med post lådor i Exchange Online och fristående EOP-organisationer utan Exchange Online-postlådor.
-
-Tekniken mot förfalskning är ursprungligen endast tillgänglig i Office 365 Avancerat skydd för hotet. Till exempel Microsoft E5-abonnemang eller ATP-tillägg.
 
 ## <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Hur kan jag rapportera spam eller inte spam-meddelanden tillbaka till Microsoft?
 
@@ -73,12 +71,12 @@ Tyvärr, nej. Angripare anpassas till Använd annan teknik (till exempel äventy
 
 Nästan alla stora e-posttjänster implementerar traditionella SPF-, DKIM-och DMARC-kontroller. Vissa tjänster har andra, mer strikta kontroller, men få lika mycket som EOP för att blockera overifierad e-post och behandla dem som falska meddelanden. Men industrin blir mer medveten om problem med overifierad e-post, särskilt på grund av problemet med nätfiske.
 
-## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>Måste jag ändå aktivera avancerade inställningar för skräp post filtret "SPF record: hårda fail" (_MarkAsSpamSpfRecordHardFail_) om jag aktiverar mot förfalskning?
+## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>Måste jag ändå aktivera avancerade inställningar för skräp post filtret "SPF record: hårda fail" ( _MarkAsSpamSpfRecordHardFail_ ) om jag aktiverar mot förfalskning?
 
-Nej. Den här ASF-inställningen behövs inte längre. Skydd mot förfalskningar betraktar både SPF-hårda fel och en större uppsättning villkor. Om du har aktiverat skydd mot förfalskning och **SPF-post: Hard Fail** (_MarkAsSpamSpfRecordHardFail_) aktiverad kommer du antagligen att få mer falska positiva identifieringar.
+Nej. Den här ASF-inställningen behövs inte längre. Skydd mot förfalskningar betraktar både SPF-hårda fel och en större uppsättning villkor. Om du har aktiverat skydd mot förfalskning och **SPF-post: Hard Fail** ( _MarkAsSpamSpfRecordHardFail_ ) aktiverad kommer du antagligen att få mer falska positiva identifieringar.
 
 Vi rekommenderar att du inaktiverar den här funktionen eftersom den inte har någon ytterligare förmån för att upptäcka skräp post eller nätfiske och skulle i stället generera mest falska positiva positiv. Mer information finns i [Avancerade inställningar för skräp post filter (ASF) i EOP](advanced-spam-filtering-asf-options.md).
 
 ## <a name="does-sender-rewriting-scheme-help-fix-forwarded-email"></a>Hjälper avsändarens schema att åtgärda vidarebefordrade e-postmeddelanden?
 
-SRS korrigerar bara delvis problemet med vidarebefordrad e-post. Genom att skriva om SMTP **-e-post från**kan SRS säkerställa att det vidarebefordrade meddelandet skickar SPF vid nästa destination. Eftersom anti-förfalskning är baserat på **från** -adressen i kombination med **e-post från** eller DKIM (eller andra signaler) är det emellertid inte tillräckligt för att förhindra att e-post med SRS-meddelanden markeras som falsk.
+SRS korrigerar bara delvis problemet med vidarebefordrad e-post. Genom att skriva om SMTP **-e-post från** kan SRS säkerställa att det vidarebefordrade meddelandet skickar SPF vid nästa destination. Eftersom anti-förfalskning är baserat på **från** -adressen i kombination med **e-post från** eller DKIM (eller andra signaler) är det emellertid inte tillräckligt för att förhindra att e-post med SRS-meddelanden markeras som falsk.

@@ -13,20 +13,20 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
-description: Lär dig hur du påskyndar processen att upptäcka och rikta in användar konton med automatiserade undersökningar och svars funktioner i Office 365 Avancerat skydds abonnemang 2.
-ms.openlocfilehash: fa648b33180cab7d70348dc4d1d6e64930ecff99
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Lär dig hur du påskyndar processen att upptäcka och rikta in användar konton med automatiserade undersökningar och svars funktioner i Microsoft Defender för Office 365 abonnemang 2.
+ms.openlocfilehash: 0da065bea17796d09de771a767991804afb5335b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201237"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844602"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Lösa användar konton med automatisk undersökning och svar
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Office 365 Avancerat skydds plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2) inkluderar kraftfulla [automatiserade undersökningar och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (Air). Sådana funktioner kan spara din säkerhets åtgärds grupp mycket tid och ansträngning för att hantera hot. Microsoft fortsätter att förbättra säkerhets funktionerna. De senaste lösningarna har förbättrats för att omfatta Playbook (för närvarande för hands version). Läs den här artikeln om du vill ha mer information om säkerhets Playbook. Och se hur det går [fortare att upptäcka och reagera på användarens kompromisser och begränsa omfattningen av intrång till Office 365 ATP](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) .
+[Microsoft Defender för Office 365 abonnemang 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2) inkluderar kraftfulla [automatiserade undersökningar och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (Air). Sådana funktioner kan spara din säkerhets åtgärds grupp mycket tid och ansträngning för att hantera hot. Microsoft fortsätter att förbättra säkerhets funktionerna. De senaste lösningarna har förbättrats för att omfatta Playbook (för närvarande för hands version). Läs den här artikeln om du vill ha mer information om säkerhets Playbook. Och se hur det går [snabbare att upptäcka och reagera på användarnas kompromisser och begränsa eventuella överträdelser med Microsoft Defender för Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) .
 
 ![Automatiserad undersökning av en användare med kompromiss](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -40,7 +40,7 @@ Användarens säkerhets Playbook gör att organisationens säkerhets team kan:
 
 ## <a name="compromised-user-alerts"></a>Obehöriga användar aviseringar
 
-När ett användar konto är skadat uppstår atypical eller avvikande beteende. Till exempel kan nätfiske och skräp post skickas internt från ett betrott användar konto. Office 365 Avancerat skydd kan upptäcka sådana avvikelser i e-postmönster och samarbets aktivitet i Office 365. När detta inträffar utlöses notifieringar och hotets minsknings processen påbörjas.
+När ett användar konto är skadat uppstår atypical eller avvikande beteende. Till exempel kan nätfiske och skräp post skickas internt från ett betrott användar konto. Defender för Office 365 kan upptäcka sådana avvikelser i e-postmönster och samarbets aktivitet i Office 365. När detta inträffar utlöses notifieringar och hotets minsknings processen påbörjas.
 
 Här är en avisering som utlöstes på grund av misstänkt e-post:
 
@@ -67,7 +67,7 @@ Det finns några olika alternativ för att gå till en lista över begränsade a
 
 1. Gå till [https://protection.office.com](https://protection.office.com) och logga in.
 
-2. Välj instrument panel för **aviseringar**i navigerings fönstret  >  **Dashboard**.
+2. Välj instrument panel för **aviseringar** i navigerings fönstret  >  **Dashboard**.
 
 3. I widgeten **andra varningar** väljer **du begränsade användare**.
 
@@ -79,7 +79,7 @@ Det finns några olika alternativ för att gå till en lista över begränsade a
 
 ### <a name="view-details-about-automated-investigations"></a>Visa information om automatiserade utredningar
 
-När en automatiserad undersökning har påbörjats kan du se dess information och resultaten i säkerhets & Compliance Center. Gå till **Threat Management**  >  **utredningar**och välj sedan en undersökning för att visa dess uppgifter.
+När en automatiserad undersökning har påbörjats kan du se dess information och resultaten i säkerhets & Compliance Center. Gå till **Threat Management**  >  **utredningar** och välj sedan en undersökning för att visa dess uppgifter.
 
 Mer information finns i [Visa information om en undersökning](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results).
 
@@ -97,7 +97,7 @@ Mer information finns i [Visa information om en undersökning](https://docs.micr
 
 - [Hitta och undersöka skadlig e-post i Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-worldwide)
 
-- [Lär dig mer om AIR i Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Lär dig mer om AIR i Microsoft Defender för slut punkten](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
 - [Besök Microsoft 365-översikten för att se vad som kommer snart och lanseras](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 

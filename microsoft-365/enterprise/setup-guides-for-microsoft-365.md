@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Snabb planering och konfiguration av Microsoft 365 eller Office 365 med installations guider.
-ms.openlocfilehash: 215f51af1fc553ef0710565af0a7c25111de8328
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+ms.openlocfilehash: 7024494de231e5adcce4bb91414b5f7bb3349f88
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48493703"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844098"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Installations guider för Microsoft 365 och Office 365-tjänster
 
@@ -135,12 +135,12 @@ Med [AD FS Deployment Advisor](https://aka.ms/adfsguidance) får du stegvisa ins
 
 ## <a name="guides-for-security-and-compliance"></a>Rikt linjer för säkerhet och efterlevnad
 
-### <a name="microsoft-defender-advanced-threat-protection-atp-advisor"></a>Microsoft Defender (avancerat) rådgivare
+### <a name="microsoft-defender-for-endpoint-advisor"></a>Microsoft Defender för slut punkts klassificering
 
-[Microsoft Defender Avancerat skydds guide](https://aka.ms/mdatpsetup) innehåller instruktioner som hjälper företags nätverket att förhindra, upptäcka, undersöka och reagera på avancerade hot. Gör en välgrundad utvärdering av organisationens sårbarhet och bestäm vilka distributions paket och konfigurations metoder som är bäst. 
+[Microsoft Defender för slut punkts rådgivare](https://aka.ms/mdatpsetup) innehåller instruktioner som hjälper företagets nätverk att förhindra, upptäcka, undersöka och reagera på avancerade hot. Gör en välgrundad utvärdering av organisationens sårbarhet och bestäm vilka distributions paket och konfigurations metoder som är bäst. 
 
 >[!NOTE]
->Du måste ha en Microsoft Volume-licens för Microsoft Defender ATP.
+>Du måste ha en Microsoft Volume-licens för Microsoft Defender för att få slut punkter.
 
 ### <a name="exchange-online-protection-setup-guide"></a>Installations guide för Exchange Online Protection
 
@@ -148,9 +148,9 @@ Microsoft Exchange Online Protection (EOP) är en molnbaserad tjänst för e-pos
 
 Använd [installations guiden för Exchange Online Protection](https://aka.ms/EOPguidance) för att konfigurera EOP genom att välja vilka av de tre olika distributions scenarierna &mdash; (blandning av lokala och molnbaserade post lådor) eller alla moln post lådor som &mdash; passar din organisation. Guiden innehåller information och resurser som du kan använda för att konfigurera och granska användarens licensiering, tilldela behörigheter i administrations centret för Microsoft 365 och konfigurera organisationens principer mot skadlig program vara och skräp post i säkerhets & Compliance Center. 
 
-### <a name="office-365-advanced-threat-protection-advisor"></a>Office 365 rådgivare för avancerat skydd
+### <a name="microsoft-defender-for-office-365-advisor"></a>Microsoft Defender för Office 365 Advisor
 
-[Office 365-rådgivaren för avancerat skydd](https://aka.ms/oatpsetup) skyddar din organisation mot skadliga hot som kan uppstå via e-postmeddelanden, länkar och samarbets verktyg från tredje part. I den här guiden får du hjälp att förbereda och identifiera det avancerade hotets skydds abonnemanget för att passa organisationens behov. 
+[Microsoft Defender för Office 365 Advisor](https://aka.ms/oatpsetup) skyddar din organisation mot skadliga hot som kan uppstå via e-postmeddelanden, länkar och samarbets verktyg från tredje part. I den här guiden får du hjälp att förbereda och identifiera Defender för Office 365-abonnemanget för att passa organisationens behov. 
 
 ### <a name="microsoft-information-protection-setup-guide"></a>Installations guide för Microsoft informations skydd
 

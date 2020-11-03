@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: Administratörer kan lära sig att identifiera varför och hur ett nät fiske meddelande gick igenom i Microsoft 365 och vad man bör göra för att förhindra fler nät fiske meddelanden i framtiden.
-ms.openlocfilehash: ab7087355ce8ee41616f63a7b466a0d5d0fc7b0f
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: e933769b6bce9eb10765fb2b58025445432bed18
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446471"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845474"
 ---
 # <a name="tune-anti-phishing-protection"></a>Finjustera skydd mot nätfiske
 
@@ -33,15 +33,15 @@ ms.locfileid: "48446471"
 
 Om en mottagares konto har komprometterats som ett resultat av nät fiske meddelandet följer du stegen i [svara på ett anslaget e-postkonto i Microsoft 365](responding-to-a-compromised-email-account.md).
 
-Om ditt abonnemang inkluderar Avancerat skydd (ATP) kan du använda [Office 365 Threat Intelligence](office-365-ti.md) för att identifiera andra användare som också har tagit emot nät fiske meddelandet. Du har ytterligare alternativ för att blockera nät fiske meddelanden:
+Om ditt abonnemang innehåller Microsoft Defender för Office 365 kan du använda skydds regler för [Office 365](office-365-ti.md) för att identifiera andra användare som också har tagit emot nät fiske meddelandet. Du har ytterligare alternativ för att blockera nät fiske meddelanden:
 
-- [Säkra länkar i Office 365 ATP](set-up-atp-safe-links-policies.md)
+- [Säkra länkar i Microsoft Defender för Office 365](set-up-atp-safe-links-policies.md)
 
-- [Säkra bilagor i Office 365 ATP](set-up-atp-safe-attachments-policies.md)
+- [Säkra bifogade filer i Microsoft Defender för Office 365](set-up-atp-safe-attachments-policies.md)
 
-- [AntiPhishing-principer i Office 365 ATP](configure-atp-anti-phishing-policies.md). Observera att du kan tillfälligt öka de **avancerade nät fiske trösklarna** i principen från **standard** till **aggressivt**, **mer aggressivt**eller **de flesta aggressivt**.
+- [Anti-nätfiske-principer i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md). Observera att du kan tillfälligt öka de **avancerade nät fiske trösklarna** i principen från **standard** till **aggressivt** , **mer aggressivt** eller **de flesta aggressivt**.
 
-Kontrol lera att dessa ATP-funktioner är aktiverade.
+Kontrol lera att de här Defender för Office 365-funktionerna är aktiverade.
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>Rapportera nät fiske meddelandet till Microsoft
 
@@ -59,9 +59,9 @@ Om du vill kan du kontrol lera om fältet **X-antispam-rapport** huvud i meddela
 
 - För meddelanden som slutar med misstag eller för meddelanden som tillåts genom rekommenderar vi att du söker efter dessa meddelanden i [Threat Explorer och identifieringar i real tid](threat-explorer.md). Du kan söka efter avsändare, mottagare eller meddelande-ID. När du har hittat meddelandet går du till uppgifter genom att klicka på ämnet. Om du har ett meddelande i karantän kan du titta på "identifierings teknik", så att du kan använda lämplig metod för att åsidosätta. För ett tillåtet meddelande, se efter vilken princip som får meddelandet. 
 
-- Falsk e-post är märkt som Phish i ATP. Ibland är falska förfalskningar ofarliga och ibland vill användarna inte att den ska placeras i karantän. Om du vill minimera effekten för användarna kan du regelbundet granska [förfalsknings intelligens-rapporten](learn-about-spoof-intelligence.md). När du har granskat och gjort nödvändiga åsidosättningar kan du vara säker på att [Konfigurera förfalsknings intelligens](set-up-anti-phishing-policies.md#spoof-settings) mot **Quarantine** -misstänkta meddelanden i stället för att skicka dem till användarens mapp för skräp post.
+- Falsk e-post är märkt som Phish i Defender för Office 365. Ibland är falska förfalskningar ofarliga och ibland vill användarna inte att den ska placeras i karantän. Om du vill minimera effekten för användarna kan du regelbundet granska [förfalsknings intelligens-rapporten](learn-about-spoof-intelligence.md). När du har granskat och gjort nödvändiga åsidosättningar kan du vara säker på att [Konfigurera förfalsknings intelligens](set-up-anti-phishing-policies.md#spoof-settings) mot **Quarantine** -misstänkta meddelanden i stället för att skicka dem till användarens mapp för skräp post.
 
-- Du kan upprepa ovanstående steg för personifiering (domän eller användare). Personifieringsnivå hittas under **Threat Management** \> **instrument panels** \> **insikter**för hot Management.
+- Du kan upprepa ovanstående steg för personifiering (domän eller användare). Personifieringsnivå hittas under **Threat Management** \> **instrument panels** \> **insikter** för hot Management.
 
 - Gå regelbundet igenom [status rapporten för hotet skydd](view-reports-for-atp.md#threat-protection-status-report).
 

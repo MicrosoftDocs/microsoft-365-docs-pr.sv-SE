@@ -1,5 +1,5 @@
 ---
-title: Hot undersökning & svars kapacitet-Office 365 ATP-abonnemang 2
+title: Hot undersökning & svars funktioner-Microsoft Defender för Office 365 abonnemang 2
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -19,20 +19,20 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: Lär dig mer om hot-och svars funktioner i Office 365 Avancerat skydds abonnemang.
-ms.openlocfilehash: 4d51a172c3b6fb8641648ecd7a33e320b0a42b24
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+description: Lär dig mer om hot-och svars funktioner i Microsoft Defender för Office 365-abonnemang.
+ms.openlocfilehash: 6dba883a910306b548f1880be00ad45207da27dd
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431141"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845798"
 ---
 # <a name="threat-investigation-and-response"></a>Hot utredning och svar
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Hot-undersöknings-och svars funktioner i [Office 365 Avancerat skydds](office-365-atp.md) analyser och administratörer skyddar organisationens Microsoft 365 för företag-användare genom att:
+Hot-undersökningar och svars funktioner i [Microsoft Defender för Office 365](office-365-atp.md) hjälper säkerhets analyser och administratörer att skydda organisationens Microsoft 365 för företag-användare genom att:
 - Gör det enkelt att identifiera, övervaka och förstå cyberattacks
 - Att snabbt adressera hot i Exchange Online, SharePoint Online, OneDrive för företag och Microsoft Teams
 - Tillhandahålla insikter och kunskaper för att hjälpa säkerhets hanteringen att förhindra cyberattacks mot deras organisation
@@ -86,17 +86,17 @@ Använd automatiserade undersökningar och svar (AIR)-funktioner för att spara 
 
 ## <a name="threat-intelligence-widgets"></a>Hot Intelligence-widget
 
-Som en del av det avancerade skydds abonnemanget för Office 365 kan säkerhets analytiker granska information om ett känt hot. Detta är användbart för att ta reda på om det finns ytterligare förebyggande åtgärder/steg som kan vidtas för att skydda användare.
+Som en del av Microsoft Defender för Office 365 abonnemang 2, kan säkerhets analytiker granska information om ett känt hot. Detta är användbart för att ta reda på om det finns ytterligare förebyggande åtgärder/steg som kan vidtas för att skydda användare.
 
 ![Säkerhets trender som visar information om de senaste hoten](../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png)
 
 ## <a name="how-do-we-get-these-capabilities"></a>Hur får de här funktionerna?
 
-Microsoft 365 hot-och svars funktioner ingår i Office 365 Avancerat skydds abonnemang 2, som ingår i Enterprise, E5 eller som ett tillägg till vissa abonnemang. Mer information finns i [Office 365 ATP-abonnemang 1 och plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
+Microsoft 365 hot-och svars funktioner ingår i Microsoft Defender för Office 365 abonnemang 2, som ingår i Enterprise, E5 eller som ett tillägg till vissa abonnemang. Mer information finns i [Defender för Office 365 abonnemang 1 och abonnemang 2](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
 ## <a name="required-roles-and-permissions"></a>Nödvändiga roller och behörigheter
 
-Office 365 Avancerat skydd använder rollbaserad åtkomst kontroll. Behörigheter tilldelas genom vissa roller i Azure Active Directory, administrations centret för Microsoft 365 eller säkerhets & Compliance Center.
+I Microsoft Defender för Office 365 används rollbaserad åtkomst kontroll. Behörigheter tilldelas genom vissa roller i Azure Active Directory, administrations centret för Microsoft 365 eller säkerhets & Compliance Center.
 
 > [!TIP]
 > Även om vissa roller, till exempel säkerhets administratör, kan tilldelas i säkerhets & Compliance Center, bör du överväga att använda antingen Microsoft 365 Admin Center eller Azure Active Directory i stället. Information om roller, roll grupper och behörigheter finns i följande resurser:
@@ -113,7 +113,7 @@ Office 365 Avancerat skydd använder rollbaserad åtkomst kontroll. Behörighete
 |Använd [Threat Explorer (och real tids identifieringar)](threat-explorer.md) för att analysera hot|Något av följande: <br/>- **Global administratör**  <br/> - **Säkerhets administratör** <br/>- **Säkerhets läsare** <br/> <br/>Dessa roller kan tilldelas i antingen Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) eller Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ).|
 |Visa incidenter (kallas även undersökningar) <br/> Lägga till e-postmeddelanden i en olycka|Något av följande: <br/>- **Global administratör**  <br/> - **Säkerhets administratör** <br/>- **Säkerhets läsare** <br/> <br/>Dessa roller kan tilldelas i antingen Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) eller Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ).|
 |Utlösa e-poståtgärder i en olycka <br/> <br/> Hitta och ta bort misstänkta e-postmeddelanden|Något av följande: <br/>- **Global administratör**  <br/> - **Säkerhets administratören** plus rollen **Sök och rensa**<br/><br/>Rollen som **Global administratör** och **säkerhets administratör** kan tilldelas i antingen Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) eller Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ). <br/><br/>Rollen **sökning och rensning** måste tilldelas i säkerhets & Compliance Center ( [https://protection.office.com](https://protection.office.com) ).|
-|Integrera Office 365 Avancerat skydds plan 2 med Microsoft Defender Avancerat skydd  <br/><br/> Integrera Office 365 Avancerat skydds plan 2 med en SIEM-Server|Antingen den **globala administratören** eller rollen **säkerhets administratör** tilldelad i antingen Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) eller Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ).<br/>--- **bransch** ---<br/>En lämplig roll som är tilldelad i ytterligare program (till exempel [Microsoft Defender säkerhets Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) eller din Siem-Server)|
+|Integrera Microsoft Defender för Office 365 abonnemang 2 med Microsoft Defender för slut punkt  <br/><br/> Integrera Microsoft Defender för Office 365 abonnemang 2 med en SIEM-Server|Antingen den **globala administratören** eller rollen **säkerhets administratör** tilldelad i antingen Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) eller Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ).<br/>--- **bransch** ---<br/>En lämplig roll som är tilldelad i ytterligare program (till exempel [Microsoft Defender säkerhets Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) eller din Siem-Server)|
 |
 
 ## <a name="next-steps"></a>Nästa steg
@@ -122,6 +122,6 @@ Office 365 Avancerat skydd använder rollbaserad åtkomst kontroll. Behörighete
 
 - [Hitta och undersöka skadlig e-post som har levererats (Office 365 hot undersökning och svar)](investigate-malicious-email-that-was-delivered.md)
 
-- [Integrera Office 365 hot-undersökningar och-svar med Microsoft Defender Avancerat skydd](integrate-office-365-ti-with-wdatp.md)
+- [Integrera Office 365 hot-undersökningar och-svar med Microsoft Defender för slut punkten](integrate-office-365-ti-with-wdatp.md)
 
 - [Lär dig mer om angrepps Simulator](attack-simulator.md)

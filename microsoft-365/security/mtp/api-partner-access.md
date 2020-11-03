@@ -1,6 +1,6 @@
 ---
-title: 'Partner åtkomst via API: er för Microsoft Threat Protection'
-description: Lär dig hur du skapar ett AAD-program för att få program mässig åtkomst till skydd mot Microsoft Threat för dina kunders räkning
+title: 'Partner åtkomst via Microsoft 365 Defender API: er'
+description: Lär dig hur du skapar ett AAD-program för att få programmatisk åtkomst till Microsoft 365 Defender för dina kunders räkning
 keywords: partner, Access, API, multi-klient, medgivande, åtkomsttoken, app
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,42 +19,42 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ae9e5ae158c95ae52112f7bc16559559230a20e8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: eb40d5d2d82f57be225515ad0aa566038397bbbd
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203713"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844990"
 ---
-# <a name="partner-access-through-microsoft-threat-protection-apis"></a>Partner åtkomst via API: er för Microsoft Threat Protection
+# <a name="partner-access-through-microsoft-365-defender-apis"></a>Partner åtkomst via Microsoft 365 Defender API: er
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
 
 
-På den här sidan beskrivs hur du skapar ett AAD-program för att få programmatisk åtkomst till Microsoft Threat Protection åt dina kunder.
+På den här sidan beskrivs hur du skapar ett AAD-program för att få programmatisk åtkomst till Microsoft 365 Defender åt dina kunder.
 
-Microsoft Threat Protection visar mycket av dess data och åtgärder genom en uppsättning API: er. Dessa API: er kommer att hjälpa dig att automatisera arbets flöden och förnyas baserat på Microsoft Threat Protection-funktioner. För API-åtkomst krävs autentisering med OAuth 2.0. Mer information finns i [verifierings kod flödet för OAuth-2,0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft 365 Defender visar mycket av dess data och åtgärder via en uppsättning API: er. Dessa API: er hjälper dig att automatisera arbets flöden och förnyas baserat på Microsoft 365 Defender-funktioner. För API-åtkomst krävs autentisering med OAuth 2.0. Mer information finns i [verifierings kod flödet för OAuth-2,0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 I allmänhet måste du utföra följande steg för att använda API:
 - Skapa ett AAD **-program med flera innehavare** .
-- Få godkännande (godkänt) av din kund administratör för din ansökan för att få åtkomst till Microsofts hot Protection-resurser.
+- Få godkännande (godkänt) av din kund administratör för ditt program för att få åtkomst till Microsoft 365 Defender-resurser som behövs.
 - Skaffa en åtkomsttoken med det här programmet.
-- Använd token för att få åtkomst till Microsoft Threat Protection API.
+- Använd token för att få åtkomst till Microsoft 365 Defender API.
 
-Följ de här anvisningarna för att skapa ett AAD-program, skaffa en åtkomsttoken till Microsoft Threat Protection och validera token.
+Här följer instruktioner för hur du skapar ett AAD-program, hämtar en åtkomsttoken till Microsoft 365 Defender och validerar token.
 
 ## <a name="create-the-multi-tenant-app"></a>Skapa appen för flera innehavare
 
 1. Logga in på din [Azure-klient organisation](https://portal.azure.com) med en användare som har rollen **Global administratör** .
 
-2. Navigera till **Azure Active Directory**-  >  **programregistreringar**  >  **ny registrering**. 
+2. Navigera till **Azure Active Directory** -  >  **programregistreringar**  >  **ny registrering**. 
 
    ![Bild av Microsoft Azure och navigering till program registrering](../../media/atp-azure-new-app2.png)
 
@@ -69,12 +69,12 @@ Följ de här anvisningarna för att skapa ett AAD-program, skaffa en åtkomstto
     ![Bild av Microsoft Azure partner program registrering](../../media/atp-api-new-app-partner.png)
 
 
-4. Ge ditt program åtkomst till Microsoft Threat Protection och tilldela det med den minsta behörighet som krävs för att slutföra integrationen.
+4. Ge ditt program åtkomst till Microsoft 365 Defender och tilldela det den minsta behörighet som krävs för att slutföra integrationen.
 
-   - På din program sida klickar du på **API-behörigheter**  >  **Add permission**  >  **API min organisation använder** > ange **Microsoft Threat Protection** och klicka på **Microsoft Threat Protection**.
+   - På din program sida klickar du på **API-behörigheter**  >  **Add permission**  >  **API min organisation använder** > **Microsoft 365 Defender** och klickar på **Microsoft 365 Defender**.
 
    >[!NOTE]
-   >Microsoft Threat Protection visas inte i den ursprungliga listan. Du måste börja skriva dess namn i text rutan för att se det.
+   >Microsoft 365 Defender visas inte i den ursprungliga listan. Du måste börja skriva dess namn i text rutan för att se det.
 
    ![Bild av API-åtkomst och API-val](../../media/apis-in-my-org-tab.PNG)
    
@@ -98,7 +98,7 @@ Följ de här anvisningarna för att skapa ett AAD-program, skaffa en åtkomstto
 
 6. Lägg till en hemlighet i programmet.
 
-    - Klicka på **certifikat & hemligheter**, Lägg till en beskrivning till hemligheten och klicka på **Lägg till**.
+    - Klicka på **certifikat & hemligheter** , Lägg till en beskrivning till hemligheten och klicka på **Lägg till**.
 
     >[!IMPORTANT]
     > När du har valt **Lägg till** **kopierar du det genererade hemliga värdet**. Du kommer inte att kunna hämta efter att du har lämnat!
@@ -113,7 +113,7 @@ Följ de här anvisningarna för att skapa ett AAD-program, skaffa en åtkomstto
 
 8. Lägg till ansökan till kund innehavaren.
 
-    Du behöver programmet vara godkänt i varje kund innehavare för att du ska kunna använda det. Det beror på att ditt program interagerar med Microsoft Threat Protection-programmet åt din kund.
+    Du behöver programmet vara godkänt i varje kund innehavare för att du ska kunna använda det. Detta beror på att ditt program interagerar med Microsoft 365 Defender-programmet åt din kund.
 
     En användare med **Global administratör** från kundens klient organisation måste klicka på medgivande länken och godkänna programmet.
 
@@ -203,7 +203,7 @@ return $token
 - Öppna ett kommando fönster
 - Ange CLIENT_ID till ditt Azure-program-ID
 - Ange CLIENT_SECRET till din Azure Application Secret
-- Ange TENANT_ID till det Azure klient organisations-ID: t för kunden som vill använda ditt program för att få åtkomst till Microsoft Threat Protection-programmet
+- Ange TENANT_ID till det Azure TENANT ID för kunden som vill använda ditt program för att komma åt Microsoft 365 Defender-programmet
 - Kör kommandot nedan:
 
 ```
@@ -222,14 +222,14 @@ Sanity kontrol lera att du har rätt token:
 
 - Kopiera/klistra in i [JWT](https://jwt.ms) det token du får i föregående steg för att avkoda det
 - Verifiera att du får en "roles"-anspråk med de önskade behörigheterna
-- I skärm bilden nedan kan du se ett avkodat token som hämtats från ett program med flera behörigheter till Microsoft Threat Protection:
+- I skärm bilden nedan kan du se ett avkodat token som hämtats från ett program med flera behörigheter till Microsoft 365 Defender:
 - "Tid"-anspråk är det klient-ID som token tillhör.
 
 ![Bild av verifiering av token](../../media/webapp-decoded-token.png)
 
-## <a name="use-the-token-to-access-microsoft-threat-protection-api"></a>Använda token för att få åtkomst till Microsoft Threat Protection API
+## <a name="use-the-token-to-access-microsoft-365-defender-api"></a>Använda token för att få åtkomst till Microsoft 365 Defender API
 
-- Välj det API du vill använda för mer information, se [API: er som stöds av Microsoft Threat Protection](api-supported.md)
+- Välj det API du vill använda, mer information finns i [Microsoft 365 Defender API: er](api-supported.md)
 - Ange auktorisations huvudet i http-begäran som du skickar till "Bearer {token}" (innehavaren är godkännandet)
 - Giltighets tiden för token är 1 timme (du kan skicka mer än en begäran med samma token)
 
@@ -248,6 +248,6 @@ Sanity kontrol lera att du har rätt token:
 
 ## <a name="related-topics"></a>Relaterade ämnen 
 
-- [Komma åt API: erna för skydd mot Microsoft Threat](api-access.md)
-- [Åtkomst till Microsoft Threat Protection med program kontext](api-create-app-web.md)
-- [Åtkomst till Microsoft Threat Protection med användar kontext](api-create-app-user-context.md)
+- [Gå till API för Microsoft 365 Defender](api-access.md)
+- [Åtkomst till Microsoft 365 Defender med program kontext](api-create-app-web.md)
+- [Åtkomst till Microsoft 365 Defender med användar kontext](api-create-app-user-context.md)

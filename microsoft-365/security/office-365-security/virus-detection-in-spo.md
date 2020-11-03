@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig mer om hur SharePoint Online identifierar virus i filer som användare laddar upp och förhindrar att användare laddar ned och synkroniserar filerna.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 38d6111fe665e0af79cbd93f534b1058881ff76c
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: f774c9afd0988c504d6207b0e71ee9561312e6b4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327993"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844242"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>Inbyggt virus skydd i SharePoint Online, OneDrive och Microsoft Teams
 
@@ -65,9 +65,9 @@ Så här gör du:
 
 För OneDrive-synkroniseringsklienten hämtas inte filer som innehåller virus. Synkroniseringsklienten visar ett meddelande om att filen inte kan synkroniseras.
 
-## <a name="extended-capabilities-with-office-365-advanced-threat-protection"></a>Utökade funktioner med Office 365 Avancerat skydd
+## <a name="extended-capabilities-with-microsoft-defender-for-office-365"></a>Utökade funktioner i Microsoft Defender för Office 365
 
-Microsoft 365-organisationer som har [Office 365 Avancerat skydd (ATP)](office-365-atp.md) ingår i deras abonnemang eller köps som ett tillägg kan aktivera ATP för SharePoint-, OneDrive-och Microsoft Teams för bättre rapportering och skydd. Mer information finns i [ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md).
+Microsoft 365-organisationer som har [Microsoft Defender för Office 365](office-365-atp.md) inkluderade i deras abonnemang eller köpt som ett tillägg kan aktivera ATP för SharePoint-, OneDrive-och Microsoft Teams för bättre rapportering och skydd. Mer information finns i [ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
 ## <a name="more-information"></a>Mer information
 

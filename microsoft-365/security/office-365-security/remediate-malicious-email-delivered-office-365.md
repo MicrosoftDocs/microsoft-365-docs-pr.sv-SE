@@ -13,20 +13,20 @@ MS.collection: ''
 search.appverid: MET150
 description: Hot-reparation
 appliesto:
-- Microsoft Threat Protection
-ms.openlocfilehash: a7c1f6f89f5414f5fc6ef8dd59d2894195e75f7f
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+- Microsoft 365 Defender
+ms.openlocfilehash: af34b171cb213836d47edb2fb2905fb75341b02f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774065"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845606"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Åtgärda skadlig e-post som skickas i Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Genom reparation menas en fastställd åtgärd mot ett hot. Skadlig e-post som skickas till din organisation kan rensas antingen av systemet, via en tom timmes autorensning (ZAP) eller av säkerhets team genom reparations åtgärder som *Flytta till Inkorgen* , *Flytta till skräp post* , *gå till borttaget* , *mjuka bort* eller *ta bort borttagning* . Office Avancerat skydd (Office ATP) P2/E5 gör det möjligt för säkerhets team att åtgärda hot i e-post och samarbets funktioner genom manuell och automatisk undersökning.
+Genom reparation menas en fastställd åtgärd mot ett hot. Skadlig e-post som skickas till din organisation kan rensas antingen av systemet, via en tom timmes autorensning (ZAP) eller av säkerhets team genom reparations åtgärder som *Flytta till Inkorgen* , *Flytta till skräp post* , *gå till borttaget* , *mjuka bort* eller *ta bort borttagning*. Microsoft Defender för Office 365 P2/E5 gör det möjligt för säkerhets team att åtgärda hot om e-post och samarbets funktioner genom manuell och automatisk undersökning.
 
 > [!NOTE]
 > För att åtgärda skadlig e-post måste säkerhets teamen ha tilldelats *Sök-och rensnings* rollen. Roll tilldelning sker genom behörigheter i säkerhets-och kompatibilitetstillstånd.
@@ -44,10 +44,10 @@ Om du vill visa meddelande rubriker eller hämta e-postinnehåll måste du ha en
 |Använda Threat Explorer för att visa rubriker och hämta e-postmeddelanden som skickas till post lådor|Global administratör <br>Säkerhets administratör <br> Säkerhets läsare <br> Automatisk|Ja|
 
 > [!NOTE]
-> För hands versionen är en *roll* och inte en *roll grupp* . Förhands gransknings rollen måste läggas till i en befintlig roll grupp för Office 365. *Rollen global administratör* är tilldelad i [administrations centret för Microsoft 365](https://admin.microsoft.com). Rollerna säkerhets-och säkerhets läsare är kopplade till [säkerhets-och efterlevnadsprinciper](https://protection.office.com). Mer information om roller och behörigheter finns i [behörigheter i avsnittet säkerhet och efterlevnad](permissions-in-the-security-and-compliance-center.md).
+> För hands versionen är en *roll* och inte en *roll grupp*. Förhands gransknings rollen måste läggas till i en befintlig roll grupp för Office 365. *Rollen global administratör* är tilldelad i [administrations centret för Microsoft 365](https://admin.microsoft.com). Rollerna säkerhets-och säkerhets läsare är kopplade till [säkerhets-och efterlevnadsprinciper](https://protection.office.com). Mer information om roller och behörigheter finns i [behörigheter i avsnittet säkerhet och efterlevnad](permissions-in-the-security-and-compliance-center.md).
 
 > [!NOTE]
-> Administratörer kan utföra den åtgärd som krävs för e-post, men för att få dessa åtgärder godkända måste de ha rollen *Sök och ta bort* som har tilldelats dem via **säkerhets-och efterlevnadsprinciper**  >  **Permissions** .
+> Administratörer kan utföra den åtgärd som krävs för e-post, men för att få dessa åtgärder godkända måste de ha rollen *Sök och ta bort* som har tilldelats dem via **säkerhets-och efterlevnadsprinciper**  >  **Permissions**.
 
 ## <a name="manual-and-automated-remediation"></a>Manuell och automatisk reparation
 
@@ -73,7 +73,7 @@ När e-postmeddelanden har marker ATS via Threat Explorer kan du starta reparati
 
 ![Skicka e-post med skadlig program vara på sidan "zapped" med den här tiden för ZAP-körning.](../../media/tp-RemediationArticle3.png)
 
-Alla reparationer (antingen direkt godkännande eller ett godkännande med två steg) som skapats i Threat Explorer samt godkända åtgärder från automatiserade undersökningar visas i åtgärds centret. Komma åt dessa via den vänstra navigerings panelen under **gransknings**  >  **Åtgärds Center** .
+Alla reparationer (antingen direkt godkännande eller ett godkännande med två steg) som skapats i Threat Explorer samt godkända åtgärder från automatiserade undersökningar visas i åtgärds centret. Komma åt dessa via den vänstra navigerings panelen under **gransknings**  >  **Åtgärds Center**.
 
 ![Åtgärds Center med en lista med hot efter datum och allvarlighets grad.](../../media/tp-RemediationArticle4.png)
 

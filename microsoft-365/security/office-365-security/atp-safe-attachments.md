@@ -18,23 +18,23 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 - seo-marvel-apr2020
-description: Administratörer kan lära sig mer om funktionen för säkra bifogade filer i Office 365 Avancerat skydd (ATP).
-ms.openlocfilehash: b8a74ac9cea56612d4669f3e68b1b2c83f23c7a4
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: Administratörer kan läsa mer om de säkra funktionerna för bifogade filer i Microsoft Defender för Office 365.
+ms.openlocfilehash: 031760c58ae18ca7dec1ecd1c1c7f870633e87fd
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446701"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844290"
 ---
-# <a name="safe-attachments-in-office-365-atp"></a>Säkra bilagor i Office 365 ATP
+# <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Säkra bifogade filer i Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Säkra bifogade filer i [Office 365 Avancerat skydd (ATP)](office-365-atp.md) tillhandahåller ytterligare ett skydds lager för e-postbilagor som redan har skannats [in av skydd mot skadlig program vara i Exchange Online Protection (EOP)](anti-malware-protection.md). Med säkra bilagor används en virtuell miljö för att kontrol lera bifogade filer i e-postmeddelanden innan de skickas till mottagarna (en process som kallas _sprängning_).
+Säkra bifogade filer i [Microsoft Defender för Office 365](office-365-atp.md) innehåller ett ytterligare skydds nivå för bifogade filer som redan har skannats med [skydd mot skadlig program vara i Exchange Online Protection (EOP)](anti-malware-protection.md). Med säkra bilagor används en virtuell miljö för att kontrol lera bifogade filer i e-postmeddelanden innan de skickas till mottagarna (en process som kallas _sprängning_ ).
 
-Skyddade bilagor skyddar mot e-postmeddelanden genom principer för säkra bifogade filer. Det finns ingen standard princip för säkra bifogade filer, **så för att skydda säkra bilagor måste du skapa en eller flera principer för säker bifogad fil**. Anvisningar finns i [Konfigurera principer för säkra bifogade filer i ATP](set-up-atp-safe-attachments-policies.md).
+Skyddade bilagor skyddar mot e-postmeddelanden genom principer för säkra bifogade filer. Det finns ingen standard princip för säkra bifogade filer, **så för att skydda säkra bilagor måste du skapa en eller flera principer för säker bifogad fil**. Anvisningar finns i [Konfigurera principer för säkra bifogade filer i Defender för Office 365](set-up-atp-safe-attachments-policies.md).
 
-I följande tabell beskrivs scenarier för säkra bifogade filer i Microsoft 365 och Office 365 organisationer som innehåller ATP (med andra ord är brist på licensiering inte ett problem i exemplen).
+I följande tabell beskrivs scenarier för säkra bifogade filer i Microsoft 365 och Office 365 organisationer som innehåller Microsoft Defender för Office 365 (med andra ord är bristande licenser aldrig ett problem i exemplen).
 
 ****
 
@@ -59,7 +59,7 @@ Säkra sökningar i bifogade filer sker i samma region där dina Microsoft 365-d
 
 I det här avsnittet beskrivs inställningarna i principer för säkra bifogade filer:
 
-- **Osäkra bifogade filer – svar på skadlig program vara**: den här inställningen styr åtgärden för genomsökning av skadligt bifogade filer i e-postmeddelanden. De tillgängliga alternativen beskrivs i följande tabell:
+- **Osäkra bifogade filer – svar på skadlig program vara** : den här inställningen styr åtgärden för genomsökning av skadligt bifogade filer i e-postmeddelanden. De tillgängliga alternativen beskrivs i följande tabell:
 
   ****
 
@@ -72,21 +72,21 @@ I det här avsnittet beskrivs inställningarna i principer för säkra bifogade 
   |**Dynamisk leverans**|Skickar meddelanden direkt men ersätter bifogade filer med plats hållare tills Safe Attachment scanning är klar. <br/><br/> Mer information finns i avsnittet [dynamisk leverans i principer för säker bifogade filer](#dynamic-delivery-in-safe-attachments-policies) längre fram i det här avsnittet.|Undvik meddelande fördröjningar när du skyddar mottagare från skadliga filer <br/> <br/> Aktivera användare för att förhandsgranska bifogade filer i fel säkert läge när genomsökning sker|
   |
 
-- **Omdirigera bilaga: Aktivera omdirigera** och **skicka den bifogade filen till följande e-post adress**: för att **blockera**, **övervaka**eller **ersätta** åtgärder kan du skicka meddelanden som innehåller bifogade filer med skadlig kod till angiven intern eller extern e-postadress för analys och undersökning.
+- **Omdirigera bilaga: Aktivera omdirigera** och **skicka den bifogade filen till följande e-post adress** : för att **blockera** , **övervaka** eller **ersätta** åtgärder kan du skicka meddelanden som innehåller bifogade filer med skadlig kod till angiven intern eller extern e-postadress för analys och undersökning.
 
   Rekommendationen för standard-och strikta princip inställningar är att aktivera omdirigering. Mer information finns i [Inställningar för säkra bifogade filer](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
-- **Använda ovanstående markering om genomsökning av skadlig kod för bifogade filer eller fel inträffar**: åtgärden som anges av **osäkra bifogade filer inget svar på skadlig program** vara tas med när säkra bilagor inte kan slutföras. Välj alltid det här alternativet om du väljer **Aktivera omdirigering**. Annars kan meddelanden gå förlorade.
+- **Använda ovanstående markering om genomsökning av skadlig kod för bifogade filer eller fel inträffar** : åtgärden som anges av **osäkra bifogade filer inget svar på skadlig program** vara tas med när säkra bilagor inte kan slutföras. Välj alltid det här alternativet om du väljer **Aktivera omdirigering**. Annars kan meddelanden gå förlorade.
 
-- **Mottagar filter**: du måste ange de mottagar villkor och undantag som avgör vem principen gäller för. Du kan använda dessa egenskaper för villkor och undantag:
+- **Mottagar filter** : du måste ange de mottagar villkor och undantag som avgör vem principen gäller för. Du kan använda dessa egenskaper för villkor och undantag:
 
   - **Mottagaren är**
   - **Mottagar domänen är**
   - **Mottagaren är medlem i**
 
-  Du kan bara använda ett villkor eller ett undantag, men villkoret eller undantaget kan innehålla flera värden. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_).
+  Du kan bara använda ett villkor eller ett undantag, men villkoret eller undantaget kan innehålla flera värden. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_ ). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_ ).
 
-- **Prioritet**: om du skapar flera principer kan du ange i vilken ordning de används. Inga två policyer kan ha samma prioritet, och policyhantering stannar efter att den första policyn har tillämpats.
+- **Prioritet** : om du skapar flera principer kan du ange i vilken ordning de används. Inga två policyer kan ha samma prioritet, och policyhantering stannar efter att den första policyn har tillämpats.
 
   För mer information om ordningsföljden och hur flera policyer utvärderas och tillämpas, se [Order och prioritet för e-postskydd](how-policies-and-protections-are-combined.md).
 
@@ -125,7 +125,7 @@ Det finns scenarier där dynamisk leverans inte kan ersätta bifogade filer i me
 
 - [S/MIME)](s-mime-for-message-signing-and-encryption.md) krypterade meddelanden.
 
-- Du konfigurerade åtgärden för dynamisk leverans i en policy för säker bifogad fil, men mottagaren stöder inte dynamisk leverans (till exempel att mottagaren är en post låda i en lokal Exchange-organisation). Emellertid kan de [säkra länkarna i office 365 ATP](set-up-atp-safe-links-policies.md) Skanna Office-bifogade filer som innehåller URL-adresser (beroende på hur de [globala inställningarna för säkra länkar](configure-global-settings-for-safe-links.md) är konfigurerade).
+- Du konfigurerade åtgärden för dynamisk leverans i en policy för säker bifogad fil, men mottagaren stöder inte dynamisk leverans (till exempel att mottagaren är en post låda i en lokal Exchange-organisation). Däremot kan de [säkra länkarna i Microsoft Defender för Office 365](set-up-atp-safe-links-policies.md) söka i Office-filer som innehåller URL-adresser (beroende på hur de [globala inställningarna för säkra länkar](configure-global-settings-for-safe-links.md) är konfigurerade).
 
 ## <a name="submitting-files-for-malware-analysis"></a>Skicka filer för analys av skadlig program vara
 

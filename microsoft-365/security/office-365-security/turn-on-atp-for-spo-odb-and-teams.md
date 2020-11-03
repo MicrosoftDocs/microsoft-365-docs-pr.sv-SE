@@ -1,5 +1,5 @@
 ---
-title: Aktivera Office 365 ATP – SharePoint, OneDrive & Teams
+title: Aktivera Microsoft Defender för Office 365-SharePoint, OneDrive & team
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -19,18 +19,18 @@ ms.collection:
 - SPO_Content
 description: Lär dig hur du aktiverar ATP för SharePoint, OneDrive och Teams, inklusive hur du ställer in aviseringar för identifierade filer.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0c717a89492ea1160f26f26f13be6c36f348c79c
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 69cb7ffcfb06d5ccda915004a512e7eefc6eb56e
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350661"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844278"
 ---
 # <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Aktivera ATP för SharePoint, OneDrive och Microsoft Teams
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Office 365 Avancerat skydd (ATP) för SharePoint, OneDrive och Microsoft Teams skyddar din organisation från oavsiktlig delning av skadliga filer. Mer information finns i [ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md).
+Microsoft Defender för Office 365 för SharePoint, OneDrive och Microsoft Teams skyddar din organisation från oavsiktlig delning av skadliga filer. Mer information finns i [ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
 I den här artikeln beskrivs hur du aktiverar och konfigurerar ATP för SharePoint, OneDrive och Microsoft Teams.
 
@@ -48,7 +48,7 @@ I den här artikeln beskrivs hur du aktiverar och konfigurerar ATP för SharePoi
 
 ## <a name="step-1-use-the-security--compliance-center-to-turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Steg 1: Använd säkerhets & Compliance Center för att aktivera ATP för SharePoint, OneDrive och Microsoft Teams
 
-1. I säkerhets & Compliance Center går du till **Threat Management** \> **policys** \> **ATP Safe Attachments**och kan välja **globala inställningar**.
+1. I säkerhets & Compliance Center går du till **Threat Management** \> **policys** \> **ATP Safe Attachments** och kan välja **globala inställningar**.
 
 2. I de **globala inställningarna** , flyg ut som visas, går du till inställningen **Aktivera ATP för SharePoint, OneDrive och Microsoft Teams** . Flytta växlings knappen till höger ![ om ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) du vill aktivera ATP för SharePoint, OneDrive och Microsoft Teams.
 
@@ -74,7 +74,7 @@ För att förhindra att användare laddar ned skadliga filer, [Anslut till Share
 Set-SPOTenant -DisallowInfectedFileDownload $true
 ```
 
-**Anmärkningar**:
+**Anmärkningar** :
 
 - Den här inställningen påverkar både användare och administratörer.
 - Personer kan fortfarande ta bort skadliga filer.
@@ -87,28 +87,28 @@ Du kan skapa en aviserings policy som meddelar dig och andra administratörer n�
 
 1. Gå till **aviserings** principer för varningar eller öppna i fönstret [säkerhets & efterlevnad](https://protection.office.com) \> **Alert policies** <https://protection.office.com/alertpolicies> .
 
-2. Klicka på **ny aviserings princip**på sidan **aviserings principer** .
+2. Klicka på **ny aviserings princip** på sidan **aviserings principer** .
 
 3. Guiden **ny aviserings princip** öppnas när du flyger ut. På sidan **namnge din avisering** konfigurerar du följande inställningar:
 
-   - **Name**: Skriv in ett unikt och beskrivande namn. Till exempel skadliga filer i bibliotek.
-   - **Beskrivning**: Skriv en valfri beskrivning. Till exempel meddelar administratörer när skadlig filer identifieras i SharePoint Online, OneDrive eller Microsoft Teams.
-   - **Allvarlighets grad**: lämna standardvärdet **lågt** markerat eller Välj **mellan** eller **hög**.
-   - **Välj en kategori**: Välj **Threat Management**.
+   - **Name** : Skriv in ett unikt och beskrivande namn. Till exempel skadliga filer i bibliotek.
+   - **Beskrivning** : Skriv en valfri beskrivning. Till exempel meddelar administratörer när skadlig filer identifieras i SharePoint Online, OneDrive eller Microsoft Teams.
+   - **Allvarlighets grad** : lämna standardvärdet **lågt** markerat eller Välj **mellan** eller **hög**.
+   - **Välj en kategori** : Välj **Threat Management**.
 
    När du är klar klickar du på **Nästa**.
 
 4. Konfigurera följande inställningar på sidan **skapa aviserings inställningar** :
 
-   - **Vad vill du varna för?: aktiviteten är**: Välj **upptäckt skadlig kod i filen**.
+   - **Vad vill du varna för?: aktiviteten är** : Välj **upptäckt skadlig kod i filen**.
    - **Hur vill du att notifieringen ska utlösas?** lämna standardvärdet **varje gång en aktivitet matchar den valda regeln** .
 
    När du är klar klickar du på **Nästa**.
 
 5. På sidan **Ange mottagarna** konfigurerar du följande inställningar:
 
-   - **Skicka e-postmeddelanden**: kontrol lera att den här inställningen är markerad. I rutan **e-postmottagare** väljer du en eller flera globala administratörer, säkerhets administratörer eller säkerhets läsare som ska få avisering när en skadlig fil identifieras.
-   - **Daglig meddelande gräns**: lämna standardvärdet **ingen gräns** markerat.
+   - **Skicka e-postmeddelanden** : kontrol lera att den här inställningen är markerad. I rutan **e-postmottagare** väljer du en eller flera globala administratörer, säkerhets administratörer eller säkerhets läsare som ska få avisering när en skadlig fil identifieras.
+   - **Daglig meddelande gräns** : lämna standardvärdet **ingen gräns** markerat.
 
    När du är klar klickar du på **Nästa**.
 
@@ -134,7 +134,7 @@ Detaljerad information om syntax och parametrar finns i [New-ActivityAlert](http
 
 - Så här kontrollerar du att du har aktiverat ATP för SharePoint, OneDrive och Microsoft Teams på något av följande sätt:
 
-  - I [säkerhets & Compliance Center](https://protection.office.com)går du till **hanterings princip för hot Management** \> **Policy** \> **ATP Safe Attachments**, väljer **globala inställningar**och kontrollerar värdet på inställningen för att **Aktivera ATP för SharePoint, OneDrive och Microsoft Teams** .
+  - I [säkerhets & Compliance Center](https://protection.office.com)går du till **hanterings princip för hot Management** \> **Policy** \> **ATP Safe Attachments** , väljer **globala inställningar** och kontrollerar värdet på inställningen för att **Aktivera ATP för SharePoint, OneDrive och Microsoft Teams** .
 
   - I Exchange Online PowerShell kör du följande kommando för att kontrol lera inställningen för egenskapen:
 

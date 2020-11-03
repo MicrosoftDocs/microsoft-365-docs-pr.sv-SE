@@ -1,5 +1,5 @@
 ---
-title: Översikt över anpassade identifieringar i skydd mot Microsoft Threat
+title: Översikt över anpassade identifieringar i Microsoft 365 Defender
 description: Förstå hur du kan använda avancerad jakt för att skapa anpassade identifieringar och skapa aviseringar
 keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, anpassade identifieringar, schema, kusto, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 28d6cca20c8b386d5e6f7f39b80264a39f88ec55
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fe2b9f1b52fa2c8d9031bb58597992f3dda91520
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199471"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843918"
 ---
 # <a name="custom-detections-overview"></a>Översikt över anpassade identifieringar
 
@@ -30,7 +30,7 @@ ms.locfileid: "48199471"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft 365 Defender
 
 Med anpassade identifieringar kan du proaktivt övervaka för att visa och svara på olika händelser och system tillstånd, inklusive misstänkt överträdelse aktivitet och felkonfigurerade slut punkter. Det här är möjligt genom anpassningsbara identifierings regler som automatiskt aktiverar notifieringar och svars åtgärder.
 

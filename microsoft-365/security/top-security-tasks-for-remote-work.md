@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Skydda dina företags meddelanden och data från cyberterrorism hot, inklusive utpressnings tro Jan, nätfiske och illvilliga filer.
-ms.openlocfilehash: c72090bebe92ea61d99772eccde041d011c05580
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: e91d2c6fc3df7cbcd7fedc198747838d470ab7d8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398653"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845426"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>De 12 främsta aktiviteterna för säkerhets team för att stödja arbete hemifrån
 
@@ -42,9 +42,9 @@ För kunder som använder vårt företags abonnemang rekommenderar Microsoft att
 |---|---|---|---|---|
 |9.1|[Aktivera Azure Multi-Factor inloggningsautentisering (MFA)](#1-enable-azure-multi-factor-authentication-mfa)|![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |två|[Skydda mot hot](#2-protect-against-threats)|![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|amp;3D|[Konfigurera Office 365 Avancerat skydd](#3-configure-office-365-advanced-threat-protection)|||![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|9.4|[Konfigurera Avancerat skydd för Azure (ATP)](#4-configure-azure-advanced-threat-protection)|||![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|T5|[Aktivera Microsoft Hotskydd](#5-turn-on-microsoft-threat-protection)|||![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|amp;3D|[Konfigurera Microsoft Defender för Office 365](#3-configure-microsoft-defender-for-office-365)|||![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|9.4|[Konfigurera Microsoft Defender för identitet](#4-configure-microsoft-defender-for-identity)|||![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|T5|[Aktivera Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |18.6|[Konfigurera NAP-mobilappen för telefoner och surfplattor](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |borttagning|[Konfigurera MFA-och villkorlig åtkomst för gäster, inklusive program skydd från Intune](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8.2|[Registrera datorer i enhets hantering och kräva kompatibla datorer](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -86,17 +86,17 @@ Alla Microsoft 365-abonnemang innehåller en mängd olika skydds funktioner. Det
 
 Se [skydda mot hot i Office 365](office-365-security/protect-against-threats.md) för vägledning som du kan använda som utgångs punkt.
 
-## <a name="3-configure-office-365-advanced-threat-protection"></a>3: Konfigurera Office 365 Avancerat skydd
+## <a name="3-configure-microsoft-defender-for-office-365"></a>3: Konfigurera Microsoft Defender för Office 365
 
-Office 365 Avancerat skydd (ATP), som ingår i Microsoft 365 E5 och Office 365 E5, skyddar din organisation mot hot via e-postmeddelanden, länkar (URL: er) och samarbets verktyg. Det kan ta flera timmar att konfigurera.
+Microsoft Defender för Office 365, som ingår i Microsoft 365 E5 och Office 365 E5, skyddar din organisation mot hot via e-postmeddelanden, länkar (URL: er) och samarbets verktyg. Det kan ta flera timmar att konfigurera.
 
-Office 365 ATP:
+Microsoft Defender för Office 365:
 
 - Skyddar din organisation från okända e-posthoten i real tid genom att använda intelligenta system som kontrollerar bilagor och länkar för skadligt innehåll. Dessa automatiserade system inkluderar en robust plattform för sprängmedel, heuristik och maskin inlärnings modeller.
 - Skyddar organisationen när användare samarbetar och delar filer genom att identifiera och blockera skadliga filer på grupp webbplatser och dokument bibliotek.
 - Tillämpar dator utbildnings modeller och avancerade algoritmer för identifiering av personifieringstoken för AVERT nätfiske-attacker.
 
-En översikt, inklusive en sammanfattning av planerna, finns i [Office 365 Avancerat skydd för hot](office-365-security/office-365-atp.md).
+En översikt, inklusive en sammanfattning av planerna, finns i [Defender för Office 365](office-365-security/office-365-atp.md).
 
 Den globala administratören kan konfigurera följande skydd:
 
@@ -104,25 +104,25 @@ Den globala administratören kan konfigurera följande skydd:
 - [Konfigurera globala inställningar för säkra länkar](office-365-security/configure-global-settings-for-safe-links.md)
 - [Konfigurera principer för säkra bifogade filer](office-365-security/set-up-atp-safe-attachments-policies.md)
 
-Du måste arbeta med din Exchange Online-administratör och SharePoint Online-administratör för att konfigurera ATP för dessa arbets belastningar:
+Du måste arbeta med din Exchange Online-administratör och SharePoint Online-administratör för att konfigurera Defender för Office 365 för dessa arbets belastningar:
 
 - [ATP för SharePoint, OneDrive och Microsoft Teams](office-365-security/atp-for-spo-odb-and-teams.md)
 
-## <a name="4-configure-azure-advanced-threat-protection"></a>4: Konfigurera Avancerat Azure-skydd
+## <a name="4-configure-microsoft-defender-for-identity"></a>4: Konfigurera Microsoft Defender för identitet
 
-[Azure Avancerat skydd](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (Azure ATP) är en molnbaserad säkerhets lösning som använder dina lokala Active Directory-signaler för att identifiera, upptäcka och undersöka avancerade hot, kompromissade identiteter och illasinnade Insider-åtgärder på din organisation. Fokusera på den här nästa eftersom den skyddar din lokala och moln infrastrukturen inte har några beroenden eller förutsättningar och kan ge omedelbara fördelar.
+[Microsoft Defender för identitet](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) är en molnbaserad säkerhets lösning som använder dina lokala Active Directory-signaler för att identifiera, upptäcka och undersöka avancerade hot, kompromissade identiteter och illasinnade Insider-åtgärder på din organisation. Fokusera på den här nästa eftersom den skyddar din lokala och moln infrastrukturen inte har några beroenden eller förutsättningar och kan ge omedelbara fördelar.
 
-- Se [snabb starts](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) guiderna för Azure ATP för att snabbt komma igång
-- Titta [på videoklippet: Introduktion till Azure ATP](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
-- Granska de [tre faserna i distributionen av Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)
+- Se [snabb starts instruktioner för Microsoft Defender för](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) att snabbt få installation
+- Titta [på videoklippet: Introduktion till Microsoft Defender för identitet](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
+- Läs de [tre faserna i Microsoft Defender för identitets distribution](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)
 
-## <a name="5-turn-on-microsoft-threat-protection"></a>5: Aktivera skydd mot Microsoft Threat
+## <a name="5-turn-on-microsoft-365-defender"></a>5: aktivera Microsoft 365 Defender
 
-Nu när du har konfigurerat Office 365 ATP och Azure ATP kan du Visa de kombinerade signalerna från dessa funktioner på en instrument panel. [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) (MTP) sammanträder med aviseringar, händelser, automatiserade undersökningar och svar samt avancerad jakt i arbets belastning (Azure ATP, Office 365 ATP, Microsoft Defender ATP och Microsoft Cloud App Security) till en enda ruta på [Security.Microsoft.com](https://security.microsoft.com).
+Nu när du har Microsoft Defender för Office 365 och Microsoft Defender för identitet konfigurerade kan du Visa de kombinerade signalerna från dessa funktioner på en instrument panel. [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) sammanställer aviseringar, tillbud, automatiserad undersökning och svar och avancerad jakt bland arbets belastning (Microsoft Defender för identitets-, Defender för Office 365, Microsoft Defender för slut punkt och Microsoft Cloud App Security) till en enda ruta på [Security.Microsoft.com](https://security.microsoft.com).
 
 ![Bild av MTP-instrumentpanel](../media/top-ten-security-remote-work-mtp-dashboard.png)
 
-När du har konfigurerat en eller flera av dina avancerade skydds tjänster aktiverar du MTP. Nya funktioner läggs till ständig till MTP; Tänk på vanligt om du vill ha funktioner för förhands granskning.
+När du har konfigurerat en eller flera av dina Defender för Office 365-tjänster aktiverar du MTP. Nya funktioner läggs till ständig till MTP; Tänk på vanligt om du vill ha funktioner för förhands granskning.
 
 - [Lär dig mer om MTP](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
 - [Aktivera MTP](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable)
@@ -173,7 +173,7 @@ Du kan också utnyttja dessa själv studie kurser:
 
 När du har registrerat enheter kan du använda vägledningen i [vanliga principer för identitets-och enhets åtkomst](./office-365-security/identity-access-policies.md) för att skapa dessa principer:
 
-- [Definiera principer för enhets efterlevnad](./office-365-security/identity-access-policies.md#define-device-compliance-policies) – de rekommenderade inställningarna för Windows 10 inkluderar krav på Antivirus skydd. Om du har Microsoft 365 E5 kan du använda Microsoft Defender Avancerat skydd för att övervaka människors enheters hälsa. Kontrol lera att efterlevnadsprinciper för andra operativ system inkluderar skydd mot virus skydd och program vara för slut punkter.
+- [Definiera principer för enhets efterlevnad](./office-365-security/identity-access-policies.md#define-device-compliance-policies) – de rekommenderade inställningarna för Windows 10 inkluderar krav på Antivirus skydd. Om du har Microsoft 365 E5 kan du använda Microsoft Defender för slut punkt för att övervaka statusen för de anställdas enheter. Kontrol lera att efterlevnadsprinciper för andra operativ system inkluderar skydd mot virus skydd och program vara för slut punkter.
 - [Kräv kompatibla datorer](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) – det här är regeln för villkorsstyrd åtkomst i Azure AD som tillämpar principer för efterlevnadsprinciper.
 
 Endast en organisation kan hantera en enhet, så se till att exkludera gäst konton från regeln för villkorsstyrd åtkomst i Azure AD. Om du inte utesluter gäst-och externa användare från principer som kräver att enheter efterlevs blockerar dessa användare. Mer information finns i [Uppdatera gemensamma principer för att tillåta och skydda gäst och extern åtkomst](./office-365-security/identity-access-policies-guest-access.md).
@@ -209,7 +209,7 @@ Microsoft 365 tillhandahåller följande resurser för att hjälpa användare i 
 |Symboliserar konceptet|Resurser|
 |---|---|
 |Microsoft 365|[Anpassningsbara Learning-vägar](https://docs.microsoft.com/office365/customlearning/) <p>De här resurserna hjälper dig att hålla ihop utbildning för slutanvändare i din organisation|
-|Microsoft 365-säkerhet|[Kodmodul: skydda din organisation med inbyggd, intelligent säkerhet från Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Med den här modulen kan du beskriva hur säkerhetsfunktionerna i Microsoft 365 fungerar tillsammans och för att Articulate fördelarna med de här säkerhetsfunktionerna.|
+|Microsoft 365 Säkerhetscenter|[Kodmodul: skydda din organisation med inbyggd, intelligent säkerhet från Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Med den här modulen kan du beskriva hur säkerhetsfunktionerna i Microsoft 365 fungerar tillsammans och för att Articulate fördelarna med de här säkerhetsfunktionerna.|
 |Multifaktorautentisering|[Tvåstegsverifiering: Vad är sidan för ytterligare verifiering?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Den här artikeln hjälper slutanvändarna att förstå vad multifaktorautentisering är och varför den används i din organisation.|
 |
 
@@ -247,6 +247,6 @@ Microsoft 365 innehåller flera olika sätt att övervaka status och vidta lämp
 
 ## <a name="next-steps"></a>Nästa steg
 
-Grattis! Du har snabbt implementerat de viktigaste säkerhets skydden och organisationen är mycket säkrare. Nu är du redo att gå vidare med skydds funktioner (inklusive Microsoft Defender Avancerat skydd), data klassificering och skydds funktioner samt skydda administratörs konton. En djupare, metodisk uppsättning säkerhets rekommendationer för Microsoft 365 finns i [microsoft 365 Security för Business besluts fattare (BDMs)](Microsoft-365-security-for-bdm.md).
+Grattis! Du har snabbt implementerat de viktigaste säkerhets skydden och organisationen är mycket säkrare. Nu är du redo att gå vidare med hot Protection-funktioner (inklusive Microsoft Defender för slut punkter), data klassificering och skydds funktioner samt säkra administratörs konton. En djupare, metodisk uppsättning säkerhets rekommendationer för Microsoft 365 finns i [microsoft 365 Security för Business besluts fattare (BDMs)](Microsoft-365-security-for-bdm.md).
 
 Besök också Microsofts nya säkerhets Center på [docs.Microsoft.com/Security](https://docs.microsoft.com/security).

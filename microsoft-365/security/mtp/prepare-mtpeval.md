@@ -1,6 +1,6 @@
 ---
-title: Förbereda utvärderings laboratorie miljön för Microsoft Threat Protection
-description: Förbereda Stakeholder, tids linjer, miljö överväganden och tillämpnings ordning när du konfigurerar utvärderings labb för Microsoft Threat Protection eller pilot miljö
+title: Förbereda test laboratorie miljön för Microsoft 365 Defender
+description: Förbereda Stakeholder, tids linjer, miljö överväganden och implementerings ordning när du konfigurerar utvärderings labb för Microsoft 365 Defender eller pilot miljö
 keywords: MTP-utvärdering prep, MTP pilot, prep för att köra ett MTP Pilot-projekt, kör en pilot för ett MTP-projekt, distribuera, förbereda, Stakeholder, tids linje, miljö, slut punkt, Server, hantering, införande
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,39 +18,39 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 79e30ee6fd68148543a63377d89fe2955f276f24
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: a255c74db030325ba22c2095fba732a93b8c269c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446737"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844854"
 ---
-# <a name="prepare-your-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>Förbereda ett utvärderings labb för Microsoft Threat Protection eller pilot miljö
+# <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Förbereda utvärderings labb eller pilot miljö för Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Gäller för:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-Att skapa ett utvärderings labb för Microsoft Threat-eller pilot miljö och distribuera det är en process i tre steg:
+Att skapa en test labb-eller pilot miljö för Microsoft 365 Defender och distribuera det är en process i tre steg:
 
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Förbereda ett utvärderings labb för Microsoft Threat Protection eller pilot miljö" />
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft 365 Defender trial lab environment" title="Förbereda utvärderings labb eller pilot miljö för Microsoft 365 Defender" />
       <br/>Fas 1: förbereda </a><br>
     </td>
      <td align="center"  >
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Konfigurera ett utvärderings labb eller pilot miljö för Microsoft Threat Protection" />
+        <img src="../../media/setup.png" alt="Set up your Microsoft 365 Defender trial lab environment" title="Konfigurera utvärderings labb eller pilot miljö för Microsoft 365 Defender" />
       <br/>Fas 2: konfiguration </a><br>
         </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval">
-        <img src="../../media/config-onboard.png" alt="Configure each Microsoft Threat Protection pillar" title="Konfigurera var och en av dina slut punkter för Microsoft Threat Protection" />
+        <img src="../../media/config-onboard.png" alt="Configure each Microsoft 365 Defender pillar" title="Konfigurera varje Microsoft 365 Defender-pelare och få slut punkter" />
       <br/>Steg 3: Konfigurera & inbyggt</a><br>
 </td>
   </tr>
@@ -70,10 +70,10 @@ Att skapa ett utvärderings labb för Microsoft Threat-eller pilot miljö och di
 Du befinner dig i förberedelse fasen.
 
 
-Förberedelsen är viktig för eventuell distribution. I det här avsnittet får du hjälp att ta reda på vad du behöver tänka på när du förbereder dig för att skapa ett utvärderings labb eller pilot miljö för Microsoft Threat Protection Deployment.
+Förberedelsen är viktig för eventuell distribution. I det här avsnittet får du hjälp att ta reda på vad du behöver tänka på när du förbereder dig för att skapa ett utvärderings labb eller en pilot miljö för din Microsoft 365 Defender-distribution.
 
-## <a name="prerequisites"></a>Förutsättningar
-Läs mer om licensierings-, maskinvaru-och program varu krav och andra konfigurations inställningar för att tillhandahålla och använda skydd mot Microsoft Threat. Se minimi kraven för [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites), [Microsoft Defender atp](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements), [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites), [Microsoft Cloud App Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites).
+## <a name="prerequisites"></a>Krav
+Läs mer om licensierings-, maskinvaru-och program varu krav och andra konfigurations inställningar för att tillhandahålla och använda Microsoft 365 Defender. Se minimi kraven för [microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites), [Microsoft Defender för slut punkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements), [Microsoft Defender för Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), [Microsoft Defender för identitet](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites), [Microsoft Cloud App-säkerhet](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites).
 
 ## <a name="stakeholders-and-sign-off"></a>Intressenter och utloggning
 Identifiera alla intressenter som är involverade i projektet och som kan behöva logga ut, granska eller hålla dig informerad, till exempel för utvärdering eller körning av ett pilot projekt.
@@ -98,7 +98,7 @@ Lägg till intressenter i tabellen nedan enligt din organisation.
 | Ange namn och e-postadress | **Säkerhetsanalytiker** är *ett ombud från CDOC-teamet som kan ge feedback om identifierings funktionerna, användar upplevelsen och totalheten i den här ändringen från ett säkerhets åtgärds perspektiv.* | I      |
 
 ## <a name="prepare-your-azure-active-directory"></a>Förbereda din Azure Active Directory
-Hoppa över det här steget om du redan har aktiverat synkronisering mellan Active Directory och Azure Active Directory lokalt. Läs mer i dokumentationen om metod tips från Azure Active Directory. Följande steg är optimerade för att utvärdera eller köra ett pilotprogram för Microsoft Threat Protection.
+Hoppa över det här steget om du redan har aktiverat synkronisering mellan Active Directory och Azure Active Directory lokalt. Läs mer i dokumentationen om metod tips från Azure Active Directory. Följande steg är optimerade för att utvärdera eller köra en pilot Microsoft 365 Defender-projekt.
 
 1. Gå till [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade) -portalen > **Azure AD Connect**. 
 ![Bild av Portal sidan i Azure Active Directory](../../media/mtp-eval-1.png) <br> 
@@ -128,16 +128,16 @@ Du kan [lägga till användare och grupper i Active Directory](https://docs.micr
 
 
 ## <a name="configuration-order"></a>Konfigurations ordning
-Följande tabell visar vilken ordning Microsoft rekommenderar för att konfigurera Microsoft Threat Protection-komponenterna för utvärderings labbet eller pilot miljö distributionen.
+Följande tabell visar vilken ordning Microsoft rekommenderar för att konfigurera Microsoft 365 Defender-komponenterna för utvärderings labbet eller pilot miljö distributionen.
 
 | Komponent                               | Beskrivning                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Konfigurations ordning |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| Office 365 Avancerat skydd| Office 365 skyddar din organisation mot illasinnade hot via e-postmeddelanden, länkar (URL: er) och samarbets verktyg. <br> [Lära sig mer.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 9.1                   |
-|Azure Advanced Threat Protection|I Azure ATP används Active Directory-signaler för att identifiera, upptäcka och undersöka avancerade hot, kompromissade identiteter och skadliga Insider-åtgärder på din organisation. <br> [Mer information](https://docs.microsoft.com/azure-advanced-threat-protection/).| två |
+|Microsoft Defender för Office 365|Microsoft Defender för Office 365 skyddar din organisation mot hot via e-postmeddelanden, länkar (URL: er) och samarbets verktyg. <br> [Lära sig mer.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 9.1                   |
+|Microsoft Defender för identitet|Microsoft Defender för identitet använder Active Directory-signaler för att identifiera, upptäcka och undersöka avancerade hot, kompromissade identiteter och skadliga Insider-åtgärder på din organisation. <br> [Mer information](https://docs.microsoft.com/azure-advanced-threat-protection/).| två |
 |Microsoft Cloud App Security| Säkerhet för Microsoft Cloud App är en moln åtkomst säkerhets tjänst (CASB) som fungerar på flera moln. Det ger stor insyn, kontroll över data resor och avancerad analys för att identifiera och bekämpa Cyberthreats i alla dina moln tjänster. <br> [Mer information](https://docs.microsoft.com/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |amp;3D                   |
-|Microsoft Defender Avancerat skydd | Microsoft Defender-funktioner för identifiering och svar av slut punkter för att ge avancerade angrepps regler som är nära real tids och actionable. Säkerhets analytiker kan prioritera aviseringar effektivt, få insyn i hela omfattningen av en överträdelse och vidta åtgärder för att åtgärda hot. <br> [Lära sig mer.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |9.4                   |                                                                                                                                                                                                                                    
+|Microsoft Defender för slut punkt | Microsoft Defender för slut punkts slut punkter och svars funktioner ger avancerade angrepps regler som är nära real tids och actionable. Säkerhets analytiker kan prioritera aviseringar effektivt, få insyn i hela omfattningen av en överträdelse och vidta åtgärder för att åtgärda hot. <br> [Lära sig mer.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |9.4                   |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>Nästa steg
-|![Fas 2: konfiguration](../../media/setup.png) <br>[Fas 2: konfiguration](setup-mtpeval.md) | Ställ in ett utvärderings labb eller pilot miljö för Microsoft Threat Protection
+|![Fas 2: konfiguration](../../media/setup.png) <br>[Fas 2: konfiguration](setup-mtpeval.md) | Konfigurera utvärderings labb eller pilot miljö för Microsoft 365 Defender
 |:-------|:-----|
 

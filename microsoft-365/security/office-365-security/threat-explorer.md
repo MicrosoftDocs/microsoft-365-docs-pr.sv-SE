@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-defender-office365
 description: Lär dig hur du använder Utforskaren och real tids identifiering i &amp; Center för säkerhets kontroll för att undersöka och reagera på hot effektivt och effektivt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ae2c53f12465fd1d6ef5c5e4bd24309467be008
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: a6123306c1d707a3eeab5c5dd67ed25bebb71965
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769382"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845684"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer och real tids identifiering
 
-Om din organisation har [office 365 Avancerat skydd](office-365-atp.md) (Office 365 ATP) och du har de [nödvändiga behörigheterna](#required-licenses-and-permissions)har du antingen **Explorer** **-eller real tids identifiering** (tidigare *real tids rapporter* – [se vad som är nytt](#new-features-in-threat-explorer-and-real-time-detections)!). Gå till **Threat Management** i säkerhets & efterlevnad och välj sedan **Utforskaren** _eller_ **identifiering av real tid** .
+Om din organisation har [Microsoft Defender för Office 365](office-365-atp.md), och du har [nödvändig behörighet](#required-licenses-and-permissions), har du antingen **Explorer** -eller **real tids identifiering** (tidigare *real tids rapporter* – [se vad som är nytt](#new-features-in-threat-explorer-and-real-time-detections)!). Gå till **Threat Management** i säkerhets & efterlevnad och välj sedan **Utforskaren** _eller_ **identifiering av real tid**.
 
-|Med ATP-abonnemang 2 ser du:|Med ATP-abonnemang 1 ser du:|
+|Med Microsoft Defender för Office 365 abonnemang 2 ser du:|Med Microsoft Defender för Office 365 abonnemang 1 ser du:|
 |---|---|
 |![Threat Explorer](../../media/threatmgmt-explorer.png)|![Identifiering i realtid](../../media/threatmgmt-realtimedetections.png)|
 |
@@ -42,18 +42,18 @@ Med den här rapporten kan du:
 
 - [Se malware identifieras av Microsoft 365-säkerhetsfunktioner](#see-malware-detected-in-email-by-technology)
 - [Visa data om nät fiske adresser och klicka på Verdict](#view-data-about-phishing-urls-and-click-verdict)
-- [Starta en automatiserad undersökning och svars process från en vy i Utforskaren](#start-automated-investigation-and-response) (endast ATP-abonnemang 2)
+- [Starta en automatiserad undersökning och svars process från en vy i Utforskaren](#start-automated-investigation-and-response) (endast för Office 365 abonnemang 2)
 - ... [Undersök skadlig e-post och mycket mer](#more-ways-to-use-explorer-or-real-time-detections).
 
 
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Upplev förbättringar av Threat Explorer och identifiering i real tid
 
-## <a name="tags-in-threat-explorer"></a>Taggar i Threat Explorer
+### <a name="tags-in-threat-explorer"></a>Taggar i Threat Explorer
 
 > [!NOTE]
 > Funktionen användar koder är i förhands granskning, inte tillgänglig för alla och kan komma att ändras. Information om versions schema finns i Microsoft 365-översikten.
 
-User-taggar är identifierare för specifika grupper med användare i Microsoft Defender för Office 365. Mer information finns i taggar, licensiering och konfigurering av taggar, Läs mer här: [användar koder i Office 365 ATP](user-tags.md).
+User-taggar är identifierare för specifika grupper med användare i Microsoft Defender för Office 365. Mer information finns i taggar, licensiering och konfigurering av taggar, se [User-Taggar i Defender för Office 365](user-tags.md).
 
 I Threat Explorer kan du se information kring användar koder i följande versioner:
 
@@ -62,7 +62,7 @@ I Threat Explorer kan du se information kring användar koder i följande versio
 Kolumnerna som visas i e-postrutnätet innehåller alla Taggar som har kopplats till avsändaren eller mottagarna. Som standard visas systemtaggar som prioritets konton först.
 
 > [!div class="mx-imgBorder"]
-> ![Filtrera märkord](../../media/tags-grid.png)
+> ![Filtrera märkord i vyn e-post](../../media/tags-grid.png)
 
 #### <a name="filtering"></a>Paketfilter
 Nu har vi taggar som ett filter så att du bara kan upptäcka bara över prioriterade konton eller specifika användar märknings scenarier (och till och med exkludera resultat med vissa taggar som en del av den här versionen). Genom att kombinera dessa med de andra filter som vi tillhandahåller, kan du begränsa omfattningen av undersökningen
@@ -123,7 +123,7 @@ Förutom att identifiera alla leverans-och efter leverans händelser ger vyn tid
 
 I dag skickar vi Surface leverans plats i e-postrutnät och utfällbar e-post. Framåt, fältet leverans plats ändras till ursprunglig leverans plats. Dessutom introducerar vi också ett annat fält som heter senaste leverans plats.
 
-Den ursprungliga leverans platsen skulle ge mer information om var e-postmeddelandet levererades. Den senaste leverans platsen innehåller plats där ett e-postmeddelande kan ha landats efter att system åtgärder som ZAP eller administratörs åtgärder som **Flytta till borttagna objekt** . Den senaste leverans platsen är avsedd att informera administratörer om meddelandets senast kända plats efter leverans och alla system-och administratörs åtgärder. Det finns inga åtgärder för slutanvändare på e-postmeddelandet. Till exempel: om en användare tar bort ett meddelande eller flyttar meddelandet till Arkiv/PST uppdateras inte meddelandets leverans plats. Om en system åtgärd har uppdaterat platsen (till exempel en ZAP som resulterade i ett e-postmeddelande som flyttas till karantänen) ser du den senaste leverans platsen som karantän.
+Den ursprungliga leverans platsen skulle ge mer information om var e-postmeddelandet levererades. Den senaste leverans platsen innehåller plats där ett e-postmeddelande kan ha landats efter att system åtgärder som ZAP eller administratörs åtgärder som **Flytta till borttagna objekt**. Den senaste leverans platsen är avsedd att informera administratörer om meddelandets senast kända plats efter leverans och alla system-och administratörs åtgärder. Det finns inga åtgärder för slutanvändare på e-postmeddelandet. Till exempel: om en användare tar bort ett meddelande eller flyttar meddelandet till Arkiv/PST uppdateras inte meddelandets leverans plats. Om en system åtgärd har uppdaterat platsen (till exempel en ZAP som resulterade i ett e-postmeddelande som flyttas till karantänen) ser du den senaste leverans platsen som karantän.
 
 > [!div class="mx-imgBorder"]
 > ![Uppdaterade leverans platser](../../media/Updated_Delivery_Location.png)
@@ -196,6 +196,16 @@ Som en del av att förbättra jakt processen har vi gjort några uppdateringar f
 - [Uppdatera i uppdaterings processen](#update-in-the-refresh-process)
 - [Diagram specificering att lägga till i filter](#chart-drilldown-to-add-to-filters)
 - [Uppdateringar av produkt information](#in-product-information-updates)
+
+### <a name="filter-by-user-tags"></a>Filtrera efter användardefinierade Taggar
+
+Du kan nu sortera och filtrera efter antingen system-eller anpassade användar märkningar för att snabbt förstå. Mer information finns i [användar flaggor i Office 365 ATP](user-tags.md) .
+
+> [!IMPORTANT]
+> Filtrering och sortering efter användarmallar är för närvarande i offentlig för hands version.
+> Den kan ändras väsentligt innan den släpps kommersiellt. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls.
+
+![Kolumnen Taggar i Utforskaren](../../media/threat-explorer-tags.png)
 
 ### <a name="timezone-improvements"></a>Förbättringar av tidszon
 
@@ -350,7 +360,7 @@ Anta att du vill se hur skadlig kod identifieras i e-post, av Microsoft 365-tekn
    > [!div class="mx-imgBorder"]
    > ![Visa-menyn för Utforskaren](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. Klicka på **avsändare** och välj sedan **grundläggande**  >  **identifierings teknik** .
+3. Klicka på **avsändare** och välj sedan **grundläggande**  >  **identifierings teknik**.
 
    Din identifierings teknik är nu tillgänglig som filter för rapporten.
 
@@ -372,12 +382,12 @@ Om du vill granska Phish URL-adresser i meddelanden och klickar på URL: er i Ph
 
 1. [https://protection.office.com](https://protection.office.com)Välj **Threat Management**  >  **Explorer** (eller **real tids identifiering** ) i gruppen säkerhets & efterlevnad. (Det här exemplet använder Utforskaren.)
 
-2. Välj **e-** Phish på **Visa** -menyn  >  **Phish** .
+2. Välj **e-** Phish på **Visa** -menyn  >  **Phish**.
 
    > [!div class="mx-imgBorder"]
-   > ![Visa-menyn för Utforskaren](../../media/ExplorerViewEmailPhishMenu.png)
+   > ![Menyn Visa för Explorer i nät fiske kontext](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Klicka på **avsändare** och välj **URL-adresser**  >  **på Verdict** .
+3. Klicka på **avsändare** och välj **URL-adresser**  >  **på Verdict**.
 
 4. Välj ett eller flera alternativ, till exempel **blockerat** och **blockera** , och klicka sedan på knappen **Uppdatera** på samma rad som de alternativ som används för att tillämpa filtret. (Uppdatera inte webbläsarfönstret.)
 
@@ -422,21 +432,21 @@ Anta att du vill se e-postmeddelanden som användare i organisationen har rappor
 2. Välj **View** **e-**  >  **postinlägg** i menyn Visa.
 
    > [!div class="mx-imgBorder"]
-   > ![Visa-menyn för Utforskaren](../../media/explorer-view-menu-email-user-reported.png)
+   > ![Menyn Visa för e-post i Utforskaren](../../media/explorer-view-menu-email-user-reported.png)
 
-3. Klicka på **avsändare** och välj sedan **enkel**  >  **typ av rapport** .
+3. Klicka på **avsändare** och välj sedan **enkel**  >  **typ av rapport**.
 
 4. Välj ett alternativ, till exempel **Phish** , och klicka sedan på knappen **Uppdatera** .
 
    > [!div class="mx-imgBorder"]
    > ![Användardefinierad Phish](../../media/EmailUserReportedReportType.png)
 
-Rapporten uppdateras och visar information om e-postmeddelanden som personer i organisationen har rapporterat som ett nät fiske försök. Du kan använda den här informationen för att utföra ytterligare analyser och, om det behövs, justera dina [ATP-skydds principer](configure-atp-anti-phishing-policies.md).
+Rapporten uppdateras och visar information om e-postmeddelanden som personer i organisationen har rapporterat som ett nät fiske försök. Du kan använda den här informationen för att utföra ytterligare analyser och, om det behövs, justera dina [skydds principer i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="start-automated-investigation-and-response"></a>Starta automatisk undersökning och svar
 
 > [!NOTE]
-> Automatiserade undersökningar och svars funktioner finns i **Office 365 ATP-abonnemang 2** och **Office 365 E5** .
+> Den automatiska undersöknings-och svars funktionerna är tillgängliga i **Microsoft Defender för Office 365 abonnemang 2** och **Office 365 E5**.
 
 (Ny!) Den [automatiska undersökningen och svaret](automated-investigation-response-office.md) kan spara säkerhets arbets gruppen i stort sett tid och ansträngning för att undersöka och begränsa cyberattacks. Förutom att konfigurera aviseringar som kan utlösa en säkerhets Playbook kan du starta en automatiserad undersökning och svars process från en vy i Utforskaren.
 
@@ -454,11 +464,11 @@ Utöver de scenarier som beskrivs i den här artikeln finns det många fler rapp
 
 ## <a name="required-licenses-and-permissions"></a>Nödvändiga licenser och behörigheter
 
-Du måste ha [Office 365 ATP](office-365-atp.md) för att få Explorer eller real tids identifiering.
+Du måste ha [Microsoft Defender för Office 365](office-365-atp.md) för att få Explorer eller real tids identifiering.
 
-- Explorer ingår i Office 365 ATP-abonnemang 2.
-- Rapporten om real tids identifiering ingår i Office 365 ATP-abonnemang 1.
-- Planera för att tilldela licenser för alla användare som ska skyddas av Office 365 ATP. (Explorer eller real tids identifiering visar identifierings data för licensierade användare.)
+- Explorer ingår i Defender för Office 365 abonnemang 2.
+- Rapporten om real tids identifiering ingår i Defender för Office 365 abonnemang 1.
+- Planera för att tilldela licenser för alla användare som ska skyddas av Defender för Office 365. (Explorer eller real tids identifiering visar identifierings data för licensierade användare.)
 
 Om du vill visa och använda Explorer-eller real tids identifiering måste du ha lämplig behörighet, till exempel en säkerhets administratör eller en säkerhets läsare.
 
@@ -482,9 +492,9 @@ Mer information om roller och behörigheter finns i följande resurser:
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Skillnader mellan Threat Explorer och identifiering av real tid
 
-- Rapporten om **identifiering av real tid** är tillgänglig i Office 365 ATP-abonnemang 1, medan **hot Explorer** är tillgängligt i Office 365 ATP-abonnemang 2.
+- Rapporten om **identifiering av real tid** är tillgänglig i Defender för Office 365 abonnemang 1, medan **hot Explorer** är tillgänglig i Defender för Office 365 plan 2.
 - Med rapporten **real tids identifiering** kan du Visa identifieringar i real tid. **Threat Explorer** fungerar också, men du kan även visa ytterligare information om en viss attack.
 - En **all e-** postvy är tillgänglig i **Threat Explorer** (och är inte med i rapporten om **identifiering i real tid** ).
-- Fler filter funktioner och tillgängliga åtgärder ingår i **Threat Explorer** .
+- Fler filter funktioner och tillgängliga åtgärder ingår i **Threat Explorer**.
 
-Mer information finns i avsnittet [Office 365 ATP Service Description: funktions tillgänglighet för abonnemang för avancerat hot Protection (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+Mer information finns i [Microsoft Defender för Office 365 Service Description: funktions tillgänglighet i Defender för office 365-abonnemang](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).

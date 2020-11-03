@@ -1,6 +1,6 @@
 ---
-title: 'API: er som stöds av Microsoft Hotskydd'
-description: 'API: er som stöds av Microsoft Hotskydd'
+title: 'Microsoft 365 Defender API: er'
+description: 'Microsoft 365 Defender API: er'
 keywords: 'MTP, API: er'
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,19 +19,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: fda90945f09abfadfe56ea11469687130d88b2a7
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: b7c0accf2d649d4ad6177260294922ee17783f2c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203701"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844966"
 ---
-# <a name="supported-microsoft-threat-protection-apis"></a>API: er som stöds av Microsoft Hotskydd 
+# <a name="supported-microsoft-365-defender-apis"></a>Microsoft 365 Defender API: er 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.

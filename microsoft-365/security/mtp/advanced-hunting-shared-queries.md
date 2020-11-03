@@ -1,5 +1,5 @@
 ---
-title: Använda delade frågor i Microsoft Threat Protection Advanced jakt
+title: Använda delade frågor i Microsoft 365 Defender Advanced jakt
 description: Starta hotet jakt direkt med fördefinierade och delade frågor. Dela dina frågor till allmänheten eller till din organisation.
 keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, anpassade identifieringar, schema, kusto, GitHub repo, mina frågor, delade frågor
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 7cdb15be274c89bd92995b9e947489c62521c6bb
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 48da1a3a64926f44582e7872f0b0ee03240409ca
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429689"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844086"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Använda delade frågor i avancerad jakt
 
@@ -32,7 +32,7 @@ ms.locfileid: "48429689"
 
 
 **Gäller för:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 

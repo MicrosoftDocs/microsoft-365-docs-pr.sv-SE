@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan lära sig att använda standard-och strikta princip inställningar i skydds funktionerna i Exchange Online Protection (EOP) och Office 365 Avancerat skydd (ATP)
-ms.openlocfilehash: a624d48944965c217fb8547e4f09da0ec388e615
-ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
+description: Administratörer kan lära sig att använda standard-och strikta princip inställningar i skydds funktionerna i Exchange Online Protection (EOP) och Microsoft Defender för Office 365
+ms.openlocfilehash: 38a03727f91878f356d8bc0dc618c711bfc500bb
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "48830543"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845738"
 ---
-# <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Förvalda säkerhets principer i EOP och Office 365 ATP
+# <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Förvalda säkerhets principer i EOP och Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -59,31 +59,31 @@ De tillgängliga villkoren och undantagen är:
 
 ### <a name="policies-in-preset-security-policies"></a>Principer i förvalda säkerhets principer
 
-Förvalda säkerhets principer Använd motsvarande principer från de olika skydds funktionerna i EOP och Office 365 ATP. Dessa principer skapas _efter_ att du har tilldelat **standard** säkerhets principer för förvalda skydd eller **strikta skydd** för användare. Du kan inte ändra dessa principer.
+Förvalda säkerhets principer Använd motsvarande principer i de olika skydds funktionerna i EOP och Microsoft Defender för Office 365. Dessa principer skapas _efter_ att du har tilldelat **standard** säkerhets principer för förvalda skydd eller **strikta skydd** för användare. Du kan inte ändra dessa principer.
 
 - **Principer för Exchange Online Protection (EOP)** : det inkluderar Microsoft 365-organisationer med Exchange Online-postlådor och fristående EOP-organisationer utan Exchange Online-postlådor:
   
-  - [Principer för skräp post](configure-your-spam-filter-policies.md) som heter **Standard säkerhets princip** och **strikt förinställd säkerhets policy** .
-  - [Principer mot skadlig program vara](configure-anti-malware-policies.md) med namnet **Standard säkerhets princip** och **strikt förinställd säkerhets policy** .
+  - [Principer för skräp post](configure-your-spam-filter-policies.md) som heter **Standard säkerhets princip** och **strikt förinställd säkerhets policy**.
+  - [Principer mot skadlig program vara](configure-anti-malware-policies.md) med namnet **Standard säkerhets princip** och **strikt förinställd säkerhets policy**.
   - [EOP anti-nätfiske-principer](set-up-anti-phishing-policies.md#spoof-settings) som heter **Standard säkerhets princip** och **strikt förinställd säkerhets princip** (Spoof-inställningar).
 
-- **Office 365 principer för avancerat skydd (ATP)** : Detta inkluderar organisationer med Microsoft 365 E5 eller Office 365 ATP-tilläggs abonnemang:
+- **Microsoft Defender för Office 365-principer** : Detta inkluderar organisationer med Microsoft 365 E5-eller Defender för Office 365-tilläggs prenumerationer:
 
-  - ATP anti-nätfiske-principer som heter **Standard säkerhets princip för Förinställdhet** och **strikt förinställd säkerhets princip** , som omfattar:
+  - Anti-nätfiske-principer i Microsoft Defender för Office 365 heter **standarden för förvalda säkerhets principer** och **strikta förvalda säkerhets principer** , som omfattar:
 
     - Samma [falska inställningar](set-up-anti-phishing-policies.md#spoof-settings) som är tillgängliga i EOP anti-phishing-principer.
-    - [Inställningar för personifiering](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
-    - [Avancerade nät fiske trösklar](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
+    - [Inställningar för personifiering](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+    - [Avancerade nät fiske trösklar](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-  - [Principer för säkra länkar](set-up-atp-safe-links-policies.md) som heter **Standard säkerhets princip** och **strikt förinställd säkerhets policy** .
+  - [Principer för säkra länkar](set-up-atp-safe-links-policies.md) som heter **Standard säkerhets princip** och **strikt förinställd säkerhets policy**.
 
-  - [Principer för säkra bifogade filer](set-up-atp-safe-attachments-policies.md) med **standard** säkerhets princip och **strikt förinställd säkerhets policy** .
+  - [Principer för säkra bifogade filer](set-up-atp-safe-attachments-policies.md) med **standard** säkerhets princip och **strikt förinställd säkerhets policy**.
 
-Observera att du kan använda EOP skydd för olika användare än ATP-skydd.
+Observera att du kan använda EOP skydd för olika användare än Microsoft Defender för Office 365-skydd.
 
 ### <a name="policy-settings-in-preset-security-policies"></a>Princip inställningar i förvalda säkerhets principer
 
-Du kan inte ändra princip inställningarna i skydds profilerna. Värdena för **standard** -och **strict** -princip beskrivs i [rekommenderade inställningar för EOP och Office 365 ATP Security](recommended-settings-for-eop-and-office365-atp.md).
+Du kan inte ändra princip inställningarna i skydds profilerna. Värdena för **standard** -och **strict** -princip beskrivs i [rekommenderade inställningar för EOP och Microsoft Defender för Office 365-säkerhet](recommended-settings-for-eop-and-office365-atp.md).
 
 ### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>Prioritetsordning för förvalda säkerhets principer och andra principer
 
@@ -119,13 +119,13 @@ Med andra ord åsidosätter inställningarna för principen för **strikt skydd*
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Använd säkerhets & Compliance Center för att tilldela förvalda säkerhets principer till användare
 
-1. Gå till säkerhets principer för principer för **hot Management** policy i säkerhets & efterlevnad \> **Policy** \> **Preset security policies** .
+1. Gå till säkerhets principer för principer för **hot Management** policy i säkerhets & efterlevnad \> **Policy** \> **Preset security policies**.
 
-2. Under **standard skydd** eller **strikt skydd** klickar du på **Redigera** .
+2. Under **standard skydd** eller **strikt skydd** klickar du på **Redigera**.
 
 3. Guiden **Använd standard skydd** eller **Använd strikt skydd** startas. På **EOP skydd gäller för** steg hur du identifierar de interna mottagarna som [EOP skydd](#policies-in-preset-security-policies) gäller för:
 
-   1. Klicka på **Lägg till ett villkor** . I den nedrullningsbara List rutan som visas väljer du ett villkor under **används om** :
+   1. Klicka på **Lägg till ett villkor**. I den nedrullningsbara List rutan som visas väljer du ett villkor under **används om** :
 
       - **Mottagarna**
       - **Mottagarna är medlemmar i**
@@ -139,23 +139,23 @@ Med andra ord åsidosätter inställningarna för principen för **strikt skydd*
 
       Upprepa föregående steg för att lägga till värden i villkoret och upprepa det här steget så många gånger som behövs eller tills du får slut på villkoren.
 
-   4. Om du vill lägga till ett undantag klickar du på **Lägg till ett villkor** . I den nedrullningsbara List rutan som visas väljer du ett villkor under **utom när** . Inställningarna och beteendet är likadana som villkoren.
+   4. Om du vill lägga till ett undantag klickar du på **Lägg till ett villkor**. I den nedrullningsbara List rutan som visas väljer du ett villkor under **utom när**. Inställningarna och beteendet är likadana som villkoren.
 
-   När du är klar klickar du på **Nästa** .
+   När du är klar klickar du på **Nästa**.
 
-4. Om din organisation har Office 365 ATP kan du **använda säkerhets inställningarna för ATP** för att identifiera de interna mottagare som [Office 365 ATP-skydden](#policies-in-preset-security-policies) gäller för.
+4. Om din organisation har Microsoft Defender för Office 365 kommer du **till steget för att identifiera** de interna mottagare som [Microsoft defender för Office 365-skydd](#policies-in-preset-security-policies) gäller för.
 
    Inställningarna och beteendet är exakt likadant som **EOP skydd gäller för** steg.
 
-   När du är klar klickar du på **Nästa** .
+   När du är klar klickar du på **Nästa**.
 
-5. I **bekräftelse** steget verifierar du dina val och klickar sedan på **Bekräfta** .
+5. I **bekräftelse** steget verifierar du dina val och klickar sedan på **Bekräfta**.
 
 ### <a name="use-the-security--compliance-center-to-modify-the-assignments-of-preset-security-policies"></a>Använd säkerhets & Compliance Center för att ändra tilldelningarna för förvalda säkerhets principer
 
 Åtgärderna för att ändra tilldelningen av standard säkerhets principer för **skydd** eller **strikta skydd** är desamma som när du ursprungligen [tilldelade de förvalda säkerhets principerna till användarna](#use-the-security--compliance-center-to-assign-preset-security-policies-to-users).
 
-Om du vill inaktivera **standard skydds** -eller **strikta** säkerhets principer och samtidigt behålla de befintliga villkoren och undantagen drar du reglaget till **inaktive rad** . Aktivera principer genom att dra reglaget till **aktiverat** .
+Om du vill inaktivera **standard skydds** -eller **strikta** säkerhets principer och samtidigt behålla de befintliga villkoren och undantagen drar du reglaget till **inaktive rad**. Aktivera principer genom att dra reglaget till **aktiverat**.
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Hur vet jag att de här procedurerna fungerade?
 

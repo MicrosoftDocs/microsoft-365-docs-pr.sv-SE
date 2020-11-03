@@ -1,6 +1,6 @@
 ---
-title: Microsoft Threat Protection API-licens och användnings villkor
-description: 'Beskrivning av licens och användnings villkor för API: er i Microsoft Threat Protection'
+title: Microsoft 365 Defender API-licens och användnings villkor
+description: 'Beskrivning av licens och användnings villkor för API: er i Microsoft 365 Defender'
 keywords: 'API, API: er, licens, villkor, API: er, juridik, meddelanden, uppförandekod'
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,19 +19,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d76992108fb3cda82bd9ad9886a2886f70695788
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: e88b59ea28f9e71c677c25d95edc2f91cc2e56d4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203683"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844902"
 ---
-#  <a name="microsoft-threat-protection-apis-license-and-terms-of-use"></a>Microsoft Threat Protection API-licens och användnings villkor
+#  <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365 Defender API-licens och användnings villkor
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
@@ -39,7 +39,7 @@ ms.locfileid: "48203683"
 
 ## <a name="apis"></a>API:er
 
- Microsoft Threat Protection API: er lyder under [Microsoft API-licens och användnings villkor](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
+ Microsoft 365 Defender API: er lyder under [Microsoft API-licens och användnings villkor](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
 
 ### <a name="throttling-limits"></a>Begränsningsgränser
 

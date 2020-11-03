@@ -1,6 +1,6 @@
 ---
 title: 'Avancerade jakt-API: er'
-description: Lär dig hur du kör avancerade frågor med hjälp av Microsoft Threat Protection API
+description: Lär dig hur du kör avancerade frågor med hjälp av Microsoft 365 Defender API
 keywords: 'Avancerad jakt, API: er, MTP'
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: dd7b02200e370588bbb9470a3d7e897b30234ead
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c43d263009578af6280ffdc780ab0f9a174a3b97
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197815"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844038"
 ---
 # <a name="advanced-hunting-apis"></a>Avancerade jakt-API: er
 
@@ -32,7 +32,7 @@ ms.locfileid: "48197815"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
@@ -46,7 +46,7 @@ ms.locfileid: "48197815"
 
 
 ## <a name="permissions"></a>Behörigheter
-En av följande behörigheter krävs för att kunna ringa detta API. Om du vill veta mer, inklusive hur du väljer behörigheter, se [använda API: er för skydd mot Microsoft Threat Protection](api-access.md)
+En av följande behörigheter krävs för att kunna ringa detta API. Om du vill veta mer, inklusive hur du väljer behörigheter, se [Microsoft 365 Defender API: er](api-access.md)
 
 Behörighets typ |   Tillåtelse  |   Visnings namn för behörighet
 :---|:---|:---
@@ -65,7 +65,7 @@ POST https://api.security.microsoft.com/api/advancedhunting/run
 
 ## <a name="request-headers"></a>Begärandehuvuden
 
-Meddelande | Value 
+Meddelande | Värde 
 :---|:---
 Bemyndigande | Bearer {token}. **Obligatoriskt**.
 Innehålls typ    | program/JSON
@@ -73,7 +73,7 @@ Innehålls typ    | program/JSON
 ## <a name="request-body"></a>Brödtext
 Ange ett JSON-objekt med följande parametrar i den efterfrågade texten:
 
-Indataparametern | Type (Typ)    | Beskrivning
+Indataparametern | Skriv    | Beskrivning
 :---|:---|:---
 Frågeserver | Text |  Frågan att köra. **Obligatoriskt**.
 
@@ -82,7 +82,7 @@ Om det lyckas returnerar den här metoden 200 OK och _QueryResponse_ -objekt i s
 
 Response-objektet är uppdelat till 3 delar (egenskaper):<br>
 1) ```Stats``` -Fråga prestanda statistik.<br>
-2) ```Schema``` -Schemat för svaret, en lista med namn-textpar för varje kolumn. <br>
+2) ```Schema``` -Schemat för svaret, en lista över Name-Type par för varje kolumn. <br>
 3) ```Results``` – En lista över avancerade jakt händelser.
 
 ## <a name="example"></a>Exempel
@@ -168,4 +168,4 @@ Här är ett exempel på svaret.
 ```
 
 ## <a name="related-topic"></a>Närliggande ämne
-- [Komma åt API: erna för skydd mot Microsoft Threat](api-access.md)
+- [Gå till API för Microsoft 365 Defender](api-access.md)

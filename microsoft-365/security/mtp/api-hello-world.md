@@ -1,6 +1,6 @@
 ---
-title: Hej världen för Microsoft Threat Protection REST API
-description: Lär dig hur du skapar en app och använder ett token för att komma åt API för skydd mot Microsoft Threat Protection
+title: Hej världen för Microsoft 365 Defender REST API
+description: Lär dig hur du skapar en app och använder ett token för att komma åt API för Microsoft 365 Defender
 keywords: app, token, Access, AAD, program, program registrering, PowerShell, skript, global administratör, behörighet
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,20 +19,20 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: cdf3f6a0c007763d2772233b1a299d59c931b2e5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: bd4f7e5485d67cf74477900ae2cc5c77f1a6ee41
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201333"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844050"
 ---
-# <a name="hello-world-for-microsoft-threat-protection-rest-api"></a>Hej världen för Microsoft Threat Protection REST API 
+# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hej världen för Microsoft 365 Defender REST API 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
@@ -52,18 +52,18 @@ För program registrerings fasen måste du ha en **Global administratörs** roll
 
 1. Logga in på [Azure](https://portal.azure.com) med din **globala administratörs** användare.
 
-2. Navigera till **Azure Active Directory**-  >  **programregistreringar**  >  **ny registrering**. 
+2. Navigera till **Azure Active Directory** -  >  **programregistreringar**  >  **ny registrering**. 
 
    ![Bild av Microsoft Azure och navigering till program registrering](../../media/atp-azure-new-app2.png)
 
 3. I registrerings formuläret väljer du ett namn för ansökan och väljer sedan **Registrera**.
 
-4. Ge ditt program åtkomst till Microsoft Defender ATP och ge det behörigheten **läsa alla händelser** :
+4. Ge ditt program åtkomst till Microsoft Defender för slut punkt och ge det behörigheten **läsa alla händelser** :
 
-   - På din program sida väljer du **API-behörigheter**  >  **Add permission**  >  **API min organisation använder** > ange **Microsoft Threat Protection** och välj ett **skydd mot Microsoft Threat**.
+   - På din program sida väljer du **API-behörigheter**  >  **Add permission**  >  **API min organisation använder** > **Microsoft 365 Defender** och väljer Microsoft **365 Defender**.
 
    >[!NOTE]
-   >Microsoft Threat Protection visas inte i den ursprungliga listan. Du måste börja skriva dess namn i text rutan för att se det.
+   >Microsoft 365 Defender visas inte i den ursprungliga listan. Du måste börja skriva dess namn i text rutan för att se det.
 
    ![Bild av API-åtkomst och API-val](../../media/apis-in-my-org-tab.PNG)
 
@@ -87,7 +87,7 @@ För program registrerings fasen måste du ha en **Global administratörs** roll
 
 6. Lägg till en hemlighet i programmet.
 
-    - Välj **certifikat & hemligheter**, Lägg till en beskrivning för hemligheten och välj **Lägg till**.
+    - Välj **certifikat & hemligheter** , Lägg till en beskrivning för hemligheten och välj **Lägg till**.
 
     >[!IMPORTANT]
     > När du har valt **Lägg till** **kopierar du det genererade hemliga värdet**. Du kommer inte att kunna hämta efter att du har lämnat!
@@ -105,8 +105,8 @@ För program registrerings fasen måste du ha en **Global administratörs** roll
 
 ### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a>Steg 2-Hämta ett token med programmet och Använd denna token för att komma åt API: t.
 
--   Kopiera skriptet nedan till PowerShell ISE eller till en text redigerare och spara det som "**Get-Token.ps1**"
--   Om du kör det här skriptet skapas ett token och det sparas i arbetsmappen under namnet "**Latest-token.txt**".
+-   Kopiera skriptet nedan till PowerShell ISE eller till en text redigerare och spara det som " **Get-Token.ps1** "
+-   Om du kör det här skriptet skapas ett token och det sparas i arbetsmappen under namnet " **Latest-token.txt** ".
 
 ```
 # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
@@ -188,6 +188,6 @@ Nu är du klar! Du har precis lyckats:
 
 
 ## <a name="related-topic"></a>Närliggande ämne
-- [Komma åt API: erna för skydd mot Microsoft Threat](api-access.md)
-- [Åtkomst till Microsoft Threat Protection med program kontext](api-create-app-web.md)
-- [Åtkomst till Microsoft Threat Protection med användar kontext](api-create-app-user-context.md)
+- [Gå till API för Microsoft 365 Defender](api-access.md)
+- [Åtkomst till Microsoft 365 Defender med program kontext](api-create-app-web.md)
+- [Åtkomst till Microsoft 365 Defender med användar kontext](api-create-app-user-context.md)

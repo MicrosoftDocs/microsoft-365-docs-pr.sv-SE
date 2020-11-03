@@ -16,13 +16,13 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Lär dig mer om åtgärder i automatiserad undersökning och svars funktioner i Office 365 Avancerat skydds abonnemang 2.
-ms.openlocfilehash: 1df963a77054e1adc9a290e976be5998d6298436
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: Läs mer om reparations åtgärder i automatiserad undersökning och svars funktioner i Microsoft Defender för Office 365 abonnemang 2.
+ms.openlocfilehash: 7dc5c0ba2e320e3f140d26e79e5c2e4a8fde79d7
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446633"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844566"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>Visa pågående och klara reparations åtgärder efter en automatisk undersökning i Office 365
 

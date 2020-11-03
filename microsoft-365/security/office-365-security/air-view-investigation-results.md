@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-defender-office365
 description: Under och efter en automatiserad undersökning i Microsoft 365 kan du Visa resultaten och nyckeltalen.
 ms.date: 09/29/2020
-ms.openlocfilehash: 18da168615ce7e570bcdc9149ac14fe72b8eda4f
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 9640ec9429f1c8317c6526976b2fe24c1137115a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447065"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844578"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Information och resultat från en automatiserad undersökning i Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-När en [automatiserad undersökning](office-365-air.md) görs i [Office 365 Avancerat skydd](office-365-atp.md)är det bara att få information om den undersökningen och efter den automatiska gransknings processen. Om du har nödvändig behörighet kan du Visa den informationen i vyn granska information. I vyn undersöknings Detaljer får du uppdaterade status och möjlighet att godkänna väntande åtgärder.
+När en [Automatisk undersökning](office-365-air.md) sker i [Microsoft Defender för Office 365](office-365-atp.md)finns information om undersökningen under och efter den automatiska gransknings processen. Om du har nödvändig behörighet kan du Visa den informationen i vyn granska information. I vyn undersöknings Detaljer får du uppdaterade status och möjlighet att godkänna väntande åtgärder.
 
 ## <a name="investigation-status"></a>Gransknings status
 
@@ -42,15 +42,15 @@ Undersökningen visar analys och åtgärder. När undersökningen körs ändras 
 |---|---|
 |Startar| Undersökningen har utlösts och väntar på att börja köras.|
 |Aktiv| Undersökningen har påbörjats och är igång. Det här läget inträffar även när [väntande åtgärder](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) godkänns.|
-|Inga hot hittades| Undersökningen har avslut ATS och inga hot (användar konto, e-postmeddelande, URL eller fil) har identifierats. <br/><br/>**Tips**: om du misstänker något missade något (till exempel ett falskt-negativt) kan du vidta åtgärder med hjälp av [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer).|
-|Hot Funna|Den automatiska undersökningen hittade problem, men det finns inga särskilda åtgärder för att åtgärda problemen.<br/><br/> Hot som upptäckts kan uppstå när någon typ av användar aktivitet har identifierats men inga rensnings åtgärder är tillgängliga. Exemplen innehåller följande användar aktiviteter: <br/>-En händelse för att [förhindra data förlust](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) (DLP) <br/>-Ett e-postmeddelande som skickar avvikelse <br/>-Skickade skadlig kod <br/>-Skickat Phish<br/>Undersökningen hittade inga skadliga URL-adresser, filer eller e-postmeddelanden som ska åtgärdas, och det finns ingen aktivitets post låda att åtgärda, till exempel att inaktivera regler för vidarebefordran eller delegering. <br/><br/>**Tips**: om du misstänker något har missats (till exempel ett falskt negativt) kan du undersöka och vidta åtgärder med hjälp av [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer).|
-|Avslutat av systemet| Undersökningen har stoppats. En undersökning kan avbrytas av olika anledningar:<br/>-Undersökningen har upphört att gälla. De pågående åtgärderna avslut ATS efter godkännande i en vecka. <br/>-Det finns för många åtgärder. Om det till exempel finns för många användare att klicka på skadliga URL-adresser kan undersökningen gå vidare med att köra alla analyser. <br/><br/>**Tips**: om en undersökning stannar innan åtgärderna vidtogs kan du försöka hitta och åtgärda hot genom att använda [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) .|
+|Inga hot hittades| Undersökningen har avslut ATS och inga hot (användar konto, e-postmeddelande, URL eller fil) har identifierats. <br/><br/>**Tips** : om du misstänker något missade något (till exempel ett falskt-negativt) kan du vidta åtgärder med hjälp av [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer).|
+|Hot Funna|Den automatiska undersökningen hittade problem, men det finns inga särskilda åtgärder för att åtgärda problemen.<br/><br/> Hot som upptäckts kan uppstå när någon typ av användar aktivitet har identifierats men inga rensnings åtgärder är tillgängliga. Exemplen innehåller följande användar aktiviteter: <br/>-En händelse för att [förhindra data förlust](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) (DLP) <br/>-Ett e-postmeddelande som skickar avvikelse <br/>-Skickade skadlig kod <br/>-Skickat Phish<br/>Undersökningen hittade inga skadliga URL-adresser, filer eller e-postmeddelanden som ska åtgärdas, och det finns ingen aktivitets post låda att åtgärda, till exempel att inaktivera regler för vidarebefordran eller delegering. <br/><br/>**Tips** : om du misstänker något har missats (till exempel ett falskt negativt) kan du undersöka och vidta åtgärder med hjälp av [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer).|
+|Avslutat av systemet| Undersökningen har stoppats. En undersökning kan avbrytas av olika anledningar:<br/>-Undersökningen har upphört att gälla. De pågående åtgärderna avslut ATS efter godkännande i en vecka. <br/>-Det finns för många åtgärder. Om det till exempel finns för många användare att klicka på skadliga URL-adresser kan undersökningen gå vidare med att köra alla analyser. <br/><br/>**Tips** : om en undersökning stannar innan åtgärderna vidtogs kan du försöka hitta och åtgärda hot genom att använda [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) .|
 |Pågående åtgärd| Undersökningen har hittat ett hot, till exempel ett skadligt e-postmeddelande, en skadlig URL-adress eller en riskabel inställning, och en åtgärd för att åtgärda att hotet väntar på [godkännande](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>Det pågående åtgärds tillståndet utlöses när ett hot mot en motsvarande åtgärd hittas. Men listan med väntande åtgärder kan öka när undersökningen körs. Kontrol lera om det finns andra objekt i [gransknings loggen](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) .|
 |Åtgärdat| Undersökningen är klar och alla åtgärder godkändes (helt åtgärdade).<br/><br/>**Obs!** godkända reparations åtgärder kan ha fel som hindrar åtgärderna från att vidtas. Oberoende av om reparations åtgärder är slutförda ändras inte gransknings status. Kontrol lera i [gransknings loggen](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) detaljerad information.|
 |Delvis åtgärdat| Undersökningen ledde till reparations åtgärder och vissa godkändes och slutfördes. Andra åtgärder är fortfarande [väntande](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).|
 |Misslyckades| Minst en undersöknings analys stötte på ett problem där det inte gick att slutföra den. <br/><br/>**Obs!** om en undersökning Miss lyckas efter att reparations åtgärderna godkändes kan reparations åtgärderna ändå ha lyckats. Kontrol lera i [gransknings loggen](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) detaljerad information.|
-|Köade genom begränsning| En undersökning sparas i en kö. När andra undersökningar har genomförts börjar den köade undersökningen. Begränsning för att undvika dålig tjänst prestanda. <br/><br/>**Tips**! väntande åtgärder kan begränsa hur många nya undersökningar som kan utföras. Se till att [godkänna (eller avvisa) väntande åtgärder](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions).|
-|Avbröts av begränsning| Om en undersökning pågår i kön för länge stannar den. <br/><br/>**Tips**: du kan [starta en undersökning från hot Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
+|Köade genom begränsning| En undersökning sparas i en kö. När andra undersökningar har genomförts börjar den köade undersökningen. Begränsning för att undvika dålig tjänst prestanda. <br/><br/>**Tips** ! väntande åtgärder kan begränsa hur många nya undersökningar som kan utföras. Se till att [godkänna (eller avvisa) väntande åtgärder](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions).|
+|Avbröts av begränsning| Om en undersökning pågår i kön för länge stannar den. <br/><br/>**Tips** : du kan [starta en undersökning från hot Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
 |
 
 ## <a name="view-details-of-an-investigation"></a>Visa information om en undersökning
@@ -59,7 +59,7 @@ Undersökningen visar analys och åtgärder. När undersökningen körs ändras 
 
 2. Gör något av följande:
 
-    - Gå till **Threat management**  >  **instrument panelen**Threat Management. Då kommer du till [säkerhets instrument panelen](security-dashboard.md). Dina AIR-widgetar visas överst på [instrument panelen](security-dashboard.md). Välj en widget, till exempel **Sammanfattning av undersökningar**.
+    - Gå till **Threat management**  >  **instrument panelen** Threat Management. Då kommer du till [säkerhets instrument panelen](security-dashboard.md). Dina AIR-widgetar visas överst på [instrument panelen](security-dashboard.md). Välj en widget, till exempel **Sammanfattning av undersökningar**.
 
     - Gå till **Threat Management**  >  **utredningar**.
 
@@ -87,7 +87,7 @@ Vissa typer av aviseringar utlöser automatiserad undersökning i Microsoft 365.
 
 5. Markera ett objekt i listan. En utfällbara öppning öppnas med information om aviseringen och länkar till ytterligare information och åtgärder.
 
-6. Granska informationen om den utfällda funktionen och beroende på vad du varnar **för kan du**utföra en åtgärd, till exempel **lösa**, Visa eller **meddela användare**.
+6. Granska informationen om den utfällda funktionen och beroende på vad du varnar **för kan du** utföra en åtgärd, till exempel **lösa** , Visa eller **meddela användare**.
 
     - **Matchning** är detsamma som att stänga en avisering
 
@@ -107,8 +107,8 @@ Sidan automatiserade undersökningar visar organisationens utredningar och deras
 
 Du kan:
 
-- Navigera direkt till en undersökning (Välj ett **undersöknings-ID**).
-- Använd filter. Välj från **undersöknings typ**, **tidsintervall**, **status**eller en kombination av dessa.
+- Navigera direkt till en undersökning (Välj ett **undersöknings-ID** ).
+- Använd filter. Välj från **undersöknings typ** , **tidsintervall** , **status** eller en kombination av dessa.
 - Exportera data till en CSV-fil.
 
 ### <a name="investigation-graph"></a>Undersökning
@@ -164,7 +164,7 @@ Antalet e-postmeddelanden som identifieras på fliken e-post representerar den s
 
 Både Utforskaren och AIR räknar e-postmeddelanden per mottagare, eftersom säkerhets verdicts, åtgärder och leverans platser kan variera per mottagare. Därför räknas ett ursprungligt e-postmeddelande till tre användare som totalt tre e-postmeddelanden i stället för ett e-postmeddelande. Det kan hända att ett e-postmeddelande räknas två eller fler gånger, till exempel när ett e-postmeddelande har flera åtgärder, eller när det finns flera kopior av e-postmeddelandet när alla åtgärder utförs. Ett e-postmeddelande med skadlig kod som identifieras vid leverans kan till exempel resultera i både ett blockerat e-postmeddelande och ett e-postmeddelande (hot-fil ersatt med en varnings fil). Eftersom det finns två kopior av e-postmeddelandet i systemet, kan båda räknas i antal kluster.
 
-Antal e-posträkningar beräknas vid tiden för undersökningen och vissa räknare beräknas om när du öppnar undersökningen flyouts (baserat på en underliggande fråga). E-postmeddelandena som visas för e-postkluster på fliken e-post och antalet e-postuppgifter som visas i utfällda kluster beräknas vid tiden för undersökningen och inte ändras. Antalet e-postkonton visas längst ned på fliken e-post i e-postklustret och antalet e-postmeddelanden som visas i Utforskaren visar de e-postmeddelanden som tagits emot efter den första analysen. Därför visar ett e-postkluster som visar en ursprunglig mängd om 10 e-postmeddelanden en total e-postlista med totalt 15 om fem fler e-postmeddelanden tas mellan undersökningen analys fas och när administratören granskar undersökningen.  Även gamla undersökningar kan börja få större räkning än vad Explorer frågar visar, eftersom ATP-data förfaller efter sju dagar för utvärdering och 30 dagar för betalda licenser.  Visar både historiska och aktuella räkningar i olika vyer för att ange e-posteffekten vid tiden för undersökningen och den aktuella påverkan fram till den tid då åtgärden körs.
+Antal e-posträkningar beräknas vid tiden för undersökningen och vissa räknare beräknas om när du öppnar undersökningen flyouts (baserat på en underliggande fråga). E-postmeddelandena som visas för e-postkluster på fliken e-post och antalet e-postuppgifter som visas i utfällda kluster beräknas vid tiden för undersökningen och inte ändras. Antalet e-postkonton visas längst ned på fliken e-post i e-postklustret och antalet e-postmeddelanden som visas i Utforskaren visar de e-postmeddelanden som tagits emot efter den första analysen. Därför visar ett e-postkluster som visar en ursprunglig mängd om 10 e-postmeddelanden en total e-postlista med totalt 15 om fem fler e-postmeddelanden tas mellan undersökningen analys fas och när administratören granskar undersökningen.  Även gamla undersökningar kan börja bli större än vad Explorer frågar visar, sedan Defender för Office 365 P2 förfaller data efter sju dagar för utvärdering och 30 dagar för betalda licenser.  Visar både historiska och aktuella räkningar i olika vyer för att ange e-posteffekten vid tiden för undersökningen och den aktuella påverkan fram till den tid då åtgärden körs.
 
 Tänk på följande: Det första klustret med tre e-postmeddelanden ansågs vara Phish. Ett annat kluster med liknande meddelanden med samma IP och ämne upptäcktes och ansågs vara skadligt, eftersom vissa av dem identifierades som Phish under den inledande identifieringen.
 
@@ -198,13 +198,13 @@ På fliken **datorer** kan du se alla datorer som identifieras som en del av und
 
 ![Sidan AIR-prövnings maskin](../../media/air-investigationmachinepage.png)
 
-Som en del av vissa playbooks, korrelerar AIR e-posthoten med enheter (till exempel zapped). En undersökning skickar exempelvis en skadlig filhash till [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
-) för att undersöka. Detta möjliggör automatisk undersökning av relevanta maskiner för användarna, för att se till att hot adresseras både i molnet och i alla dina slut punkter.
+Som en del av vissa playbooks, korrelerar AIR e-posthoten med enheter (till exempel zapped). En undersökning skickar till exempel ett skadligt filhash till [Microsoft Defender för slut punkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
+) för att undersöka det. Detta möjliggör automatisk undersökning av relevanta maskiner för användarna, för att se till att hot adresseras både i molnet och i alla dina slut punkter.
 
 Du kan:
 
 - Få en visuell översikt över de aktuella datorerna och hoten.
-- Välj en dator för att öppna en vy i motsvarande [Microsoft Defender ATP-undersökningar](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) i Microsoft Defender säkerhets Center.
+- Välj en dator för att öppna en vy i motsvarande [Microsoft Defender för slut punkts undersökningar](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) i Microsoft Defender säkerhets Center.
 
 ### <a name="entity-investigation"></a>Undersökning av enheten
 
@@ -249,7 +249,7 @@ Du kan:
 |Avgående för utgående skadlig program vara och skräp post|Upptäck organisations-och utgående skadlig program vara, Phish eller skräp post som kommer från användare i organisationen|
 |Granskning av avsändare domän|Kontroll på begäran av domän rykte från [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) och externa hot Intelligence-källor|
 |Undersökning av avsändare| Kontroll av IP-rykte från [Microsoft Intelligent säkerhets diagram](https://www.microsoft.com/security/operations/intelligence) och externa hot Intelligence-källor|
-|URL: en klickar på undersökning| Undersök klickningar från användare som skyddas av [säkra länkar i Office 365 ATP](atp-safe-links.md) i din organisation|
+|URL: en klickar på undersökning| Undersök klickningar från användare som skyddas av [säkra länkar i Microsoft Defender för Office 365](atp-safe-links.md) i din organisation|
 |URL-ryktes undersökning|Kontroll på begäran efter URL-rykte från [Microsoft Intelligent säkerhets diagram](https://www.microsoft.com/security/operations/intelligence) och externa hot Intelligence-källor|
 |Granskning av användar aktivitet|Analysera användares avvikelser i [Microsoft Cloud App-säkerhet](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|
 |Användare-rapporterade utdrag för e-postindikatorer|Extrahera indikatorer från rubriken, bröd texten och innehållet i en [användardefinierad e-post](enable-the-report-message-add-in.md) för undersökning|
@@ -275,4 +275,4 @@ Du kan:
 
 - [Granska och godkänna pågående åtgärder](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)
 
-- [Lär dig mer om automatisk undersökning och svar i skydd mot Microsoft Threat](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Lär dig mer om automatisk undersökning och svar i Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

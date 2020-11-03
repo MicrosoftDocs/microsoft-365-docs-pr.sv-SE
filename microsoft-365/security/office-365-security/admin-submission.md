@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 'Administratörer kan läsa mer om hur du använder portalen för att skicka e-postmeddelanden, misstänkta nätfiske-meddelanden, skräp post och andra potentiellt skadligt meddelande, URL: er och filer till Microsoft för genomsökning i & den här gruppen.'
-ms.openlocfilehash: 5d4123acaf3c9891f9aeb8028173f3071c260935
-ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
+ms.openlocfilehash: 1ca1dc5e740aa5aa03a4c8b0c138eadb55c08a20
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48806766"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844650"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Använd administratörs sändning för att skicka misstänkt skräp post, Phish, URL: er och filer till Microsoft
 
@@ -52,7 +52,7 @@ Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microso
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Rapportera misstänkt innehåll till Microsoft
 
-1. I säkerhets & Compliance Center går du till **Threat Management** -undersändningar \> **Submissions** , kontrollerar att du är på fliken **admin-överföring** och klickar sedan på **ny överföring** .
+1. I säkerhets & Compliance Center går du till **Threat Management** -undersändningar \> **Submissions** , kontrollerar att du är på fliken **admin-överföring** och klickar sedan på **ny överföring**.
 
 2. Använd **New submission** utfällbar text som visas för att skicka meddelandet, URL: en eller bifogad fil enligt beskrivningen i följande avsnitt.
 
@@ -62,7 +62,7 @@ Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microso
 
    - **Nätverks meddelande-ID** : det här är ett GUID-värde som är tillgängligt i huvudet **X-MS-Exchange-Organization-Network-meddelande-ID** i meddelandet.
 
-   - **Fil** : Klicka på **Välj fil** . I dialog rutan som öppnas letar du reda på och markerar EML-eller MSG-filen och klickar sedan på **Öppna** .
+   - **Fil** : Klicka på **Välj fil**. I dialog rutan som öppnas letar du reda på och markerar EML-eller MSG-filen och klickar sedan på **Öppna**.
 
 2. Ange en eller flera mottagare som du vill köra en princip kontroll för i avsnittet **mottagare** . Princip kontrollen avgör om genomsökning av e-postmeddelandet kringgås på grund av principer för användare eller organisation.
 
@@ -70,11 +70,11 @@ Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microso
 
    - **Ska inte ha blockerats**
 
-   - **Bör ha blockerats** : Välj **skräp post** , **nätfiske** eller **skadlig program vara** . Om du är osäker kan du använda ditt bästa omdöme.
+   - **Bör ha blockerats** : Välj **skräp post** , **nätfiske** eller **skadlig program vara**. Om du är osäker kan du använda ditt bästa omdöme.
 
 4. Om filtret hoppades över på grund av principer vid överföring visas information om den policyn.
 
-   Om filtret inte har hoppats över på grund av en eller flera principer slutförs genomsökningen flera minuter. Du får mer information om inlämningen genom att klicka på status länken. Här ingår resultaten av princip kontrollen och omsökning Verdict. OBS! detta kör inte e-postmeddelandet via Office 365 ATP-fullständig filtrerings stack igen men kör en delvis omsökning baserat på vissa av attributen för e-post, URL eller fil.
+   Om filtret inte har hoppats över på grund av en eller flera principer slutförs genomsökningen flera minuter. Du får mer information om inlämningen genom att klicka på status länken. Här ingår resultaten av princip kontrollen och omsökning Verdict. OBS! detta kör inte e-postmeddelandet via Microsoft Defender för Office 365 full filtrerings stack igen men kör delvis omsökning baserat på vissa av attributen för e-post, URL eller fil.
 
 5. När du är klar klickar du på **Skicka** .
 
@@ -88,7 +88,7 @@ Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microso
 
    - **Ska inte ha blockerats**
 
-   - **Borde ha blockerats** : Välj **nätfiske** eller **malware** .
+   - **Borde ha blockerats** : Välj **nätfiske** eller **malware**.
 
 3. När du är klar klickar du på **Skicka** .
 
@@ -98,7 +98,7 @@ Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microso
 
 1. Välj **bilaga** under **objekt typ** .
 
-2. Klicka på **Välj fil** . Leta upp och markera filen i dialog rutan som öppnas och klicka sedan på **Öppna** .
+2. Klicka på **Välj fil**. Leta upp och markera filen i dialog rutan som öppnas och klicka sedan på **Öppna**.
 
 3. Välj något av följande alternativ i avsnittet **orsak för inlämning** :
 
@@ -112,7 +112,7 @@ Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microso
 
 ## <a name="view-admin-submissions"></a>Visa administratörs inlämningar
 
-I säkerhets & Compliance Center går du till **Threat Management** -undersändningar \> **Submissions** , kontrollerar att du är på fliken **admin-överföring** och klickar sedan på **ny överföring** .
+I säkerhets & Compliance Center går du till **Threat Management** -undersändningar \> **Submissions** , kontrollerar att du är på fliken **admin-överföring** och klickar sedan på **ny överföring**.
 
 Högst upp på sidan kan du ange ett start datum, ett slutdatum och (som standard) som du kan filtrera efter **överförings-ID** (ett GUID-värde som är kopplat till varje överföring) genom att ange ett värde i rutan och klicka på ![ knappen uppdatera ](../../media/scc-quarantine-refresh.png) . Du kan ange flera värden avgränsade med kommatecken.
 
@@ -126,9 +126,9 @@ Om du vill ändra filter villkoren klickar du på knappen **Skicka ID** och väl
 
 ![Filter alternativ för administratörs inlämning](../../media/admin-submission-email-filter-options.png)
 
-Exportera resultatet genom att klicka på **Exportera** överst på sidan och välja **diagram data** eller **tabell** . Spara CSV-filen i dialog rutan som visas.
+Exportera resultatet genom att klicka på **Exportera** överst på sidan och välja **diagram data** eller **tabell**. Spara CSV-filen i dialog rutan som visas.
 
-Under grafen finns det tre flikar: **e-post** (standard), **URL** och **bifogad fil** .
+Under grafen finns det tre flikar: **e-post** (standard), **URL** och **bifogad fil**.
 
 ### <a name="view-admin-email-submissions"></a>Visa e-postinlägg för administratörer
 
@@ -184,9 +184,9 @@ Du kan klicka på knappen **kolumn alternativ** nära längst ned på sidan för
 
 Om du har distribuerat [tillägget för rapport meddelanden](enable-the-report-message-add-in.md), eller om personer använder den [inbyggda rapporteringen i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), kan du se vilka användare som rapporterar på fliken **användar överföringar** .
 
-1. I säkerhets & Compliance Center går du till **Threat Management** - \> **inlämningar** .
+1. I säkerhets & Compliance Center går du till **Threat Management** - \> **inlämningar**.
 
-2. Välj fliken **användar överföringar** och klicka sedan på **ny överföring** .
+2. Välj fliken **användar överföringar** och klicka sedan på **ny överföring**.
 
 Du kan klicka på knappen **kolumn alternativ** nära längst ned på sidan för att lägga till eller ta bort kolumner i vyn:
 
@@ -211,13 +211,13 @@ Om du vill ändra filter villkoren klickar du på knappen **avsändare** och vä
 
 ![Filter alternativ för användar inlämning](../../media/user-submissions-filter-options.png)
 
-Exportera resultatet genom att klicka på **Exportera** överst på sidan och välja **diagram data** eller **tabell** . Spara CSV-filen i dialog rutan som visas.
+Exportera resultatet genom att klicka på **Exportera** överst på sidan och välja **diagram data** eller **tabell**. Spara CSV-filen i dialog rutan som visas.
 
 ## <a name="view-user-submissions-to-the-custom-mailbox"></a>Visa användar inlämningar till den anpassade post lådan
 
 **Om** du har [konfigurerat en egen post låda](user-submission.md) för att få användardefinierade meddelanden kan du Visa och även skicka meddelanden som har levererats till rapporterings post lådan.
 
-1. I säkerhets & Compliance Center går du till **Threat Management** - \> **inlämningar** .
+1. I säkerhets & Compliance Center går du till **Threat Management** - \> **inlämningar**.
 
 2. Välj fliken **egen post låda** .
 
@@ -232,7 +232,7 @@ Du kan klicka på knappen **kolumn alternativ** nära längst ned på sidan för
 
 Högst upp på sidan kan du ange ett start datum, ett slutdatum och du kan **Filtrera efter genom** att ange ett värde i rutan och klicka på ![ knappen uppdatera ](../../media/scc-quarantine-refresh.png) . Du kan ange flera värden avgränsade med kommatecken.
 
-Exportera resultatet genom att klicka på **Exportera** överst på sidan och välja **diagram data** eller **tabell** . Spara CSV-filen i dialog rutan som visas.
+Exportera resultatet genom att klicka på **Exportera** överst på sidan och välja **diagram data** eller **tabell**. Spara CSV-filen i dialog rutan som visas.
 
 ## <a name="undo-user-submissions"></a>Ångra användar inlägg
 

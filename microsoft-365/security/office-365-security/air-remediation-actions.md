@@ -20,12 +20,12 @@ description: Läs mer om åtgärder som utförs efter en automatiserad undersök
 ms.date: 09/29/2020
 ms.custom:
 - air
-ms.openlocfilehash: ffd0429d3dc85371e7b6bb1c2d1246d9820d0e2e
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: c178655d60b45e45680a86c3973317e63c354f17
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446713"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844544"
 ---
 # <a name="remediation-actions-following-automated-investigation-in-microsoft-defender-for-office-365"></a>Reparations åtgärder följer den automatiska undersökningen i Microsoft Defender för Office 365
 
@@ -53,7 +53,7 @@ I följande tabell sammanfattas hot och lämpliga reparations åtgärder i Micro
 |Kategori|Hot/risk|Reparations åtgärder|
 |---|---|---|
 |E-post|Program|Mjukt ta bort e-post/kluster <br/><br/>Om fler än en fåtal av e-postmeddelanden i ett kluster innehåller skadlig program vara anses klustret vara skadligt.|
-|E-post|Skadlig URL<br/>(En skadlig URL upptäcktes av [säkra länkar i Office 365 ATP](atp-safe-links.md).|Mjukt ta bort e-post/kluster <br/><br/>E-postmeddelanden som innehåller en illvillig URL anses vara skadlig.|
+|E-post|Skadlig URL<br/>(En skadlig URL upptäcktes av [Safe Links i Microsoft Defender för Office 365](atp-safe-links.md).|Mjukt ta bort e-post/kluster <br/><br/>E-postmeddelanden som innehåller en illvillig URL anses vara skadlig.|
 |E-post|Nätfiske|Mjukt ta bort e-post/kluster <br/><br/>Om fler än en fåtal av e-postmeddelanden i ett kluster innehåller nät fiske försök anses klustret vara Phish.|
 |E-post|Zapped phish <br/>(E-postmeddelanden skickades till och [zapped](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge).)|Mjukt ta bort e-post/kluster <br/><br/>Rapporter finns tillgängliga för att Visa zapped-meddelanden. [Se om ZAP har flyttat ett meddelande och vanliga frågor](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge#how-to-see-if-zap-moved-your-message).|
 |E-post|Missade Phish-e-post som [rapporter ATS](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in) av en användare|[Automatisk granskning utlöst av användarens rapport](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-user-reported-phish-message-launches-an-investigation-playbook)|

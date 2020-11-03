@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig hur nollställning av automatisk rensning (ZAP) kan flytta levererade meddelanden retroaktivt i en Exchange Online-postlåda till mappen skräp post eller karantän som kan vara skräp post eller nätfiske.
-ms.openlocfilehash: 31e546ddf6e93ed0a265aef3737182cf30ae5a95
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: e59d93285dd75a749739b8247c156c19533ce2b1
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327981"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845450"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Automatisk rensning av nollor (ZAP) i Exchange Online
 
@@ -57,13 +57,13 @@ Malware, ZAP är aktiverat som standard i principer mot skadlig program vara. Me
 
 För **lästa och olästa meddelanden** som identifieras som Phish efter leverans, beror ZAP-resultatet av den åtgärd som är konfigurerad för Verdict för **e** -postfiltrering i den aktuella principen för borttagning av skräp post. De tillgängliga Verdict-åtgärderna för Phish och deras eventuella ZAP-resultat beskrivs i följande lista:
 
-- **Lägga till X-rubrik**, **före ämnesrad med text**: ZAP gör ingen åtgärd för meddelandet.
+- **Lägga till X-rubrik** , **före ämnesrad med text** : ZAP gör ingen åtgärd för meddelandet.
 
-- **Flytta meddelande till skräp post**: ZAP flyttar meddelandet till mappen skräp post så länge skräp post regeln är aktive rad på post lådan (den är aktive rad som standard). Mer information finns i [Konfigurera inställningar för skräp post i Exchange Online-postlådor i Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Flytta meddelande till skräp post** : ZAP flyttar meddelandet till mappen skräp post så länge skräp post regeln är aktive rad på post lådan (den är aktive rad som standard). Mer information finns i [Konfigurera inställningar för skräp post i Exchange Online-postlådor i Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Omdirigera meddelande till e-postadress**, **ta bort meddelande**, **karantän meddelande**: ZAP karantänen.
+- **Omdirigera meddelande till e-postadress** , **ta bort meddelande** , **karantän meddelande** : ZAP karantänen.
 
-Phish ZAP är som standard aktive rad i principer för skräp post och standard åtgärden för Verdict för **nät fiske** meddelanden är **karantän meddelande**, vilket innebär att Phish ZAP mellanstår meddelandet som standard.
+Phish ZAP är som standard aktive rad i principer för skräp post och standard åtgärden för Verdict för **nät fiske** meddelanden är **karantän meddelande** , vilket innebär att Phish ZAP mellanstår meddelandet som standard.
 
 Mer information om hur du konfigurerar verdicts för skräp post finns i [Konfigurera principer för skräp post filtrering i Microsoft 365](configure-your-spam-filter-policies.md).
 
@@ -71,17 +71,17 @@ Mer information om hur du konfigurerar verdicts för skräp post finns i [Konfig
 
 För **olästa meddelanden** som identifieras som skräp post efter leverans beror ZAP-resultatet av den åtgärd som är konfigurerad för filtrering av **skräp post** filter i den aktuella principen för skräp post Verdict. De tillgängliga Verdict-åtgärderna för filtrering av skräp post och deras möjliga ZAP-resultat beskrivs i följande lista:
 
-- **Lägga till X-rubrik**, **före ämnesrad med text**: ZAP gör ingen åtgärd för meddelandet.
+- **Lägga till X-rubrik** , **före ämnesrad med text** : ZAP gör ingen åtgärd för meddelandet.
 
-- **Flytta meddelande till skräp post**: ZAP flyttar meddelandet till mappen skräp post så länge skräp post regeln är aktive rad på post lådan (den är aktive rad som standard). Mer information finns i [Konfigurera inställningar för skräp post i Exchange Online-postlådor i Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Flytta meddelande till skräp post** : ZAP flyttar meddelandet till mappen skräp post så länge skräp post regeln är aktive rad på post lådan (den är aktive rad som standard). Mer information finns i [Konfigurera inställningar för skräp post i Exchange Online-postlådor i Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Omdirigera meddelande till e-postadress**, **ta bort meddelande**, **karantän meddelande**: ZAP karantänen. Slutanvändare kan visa och hantera sina egna meddelanden i Inkorgen.
+- **Omdirigera meddelande till e-postadress** , **ta bort meddelande** , **karantän meddelande** : ZAP karantänen. Slutanvändare kan visa och hantera sina egna meddelanden i Inkorgen.
 
-Som standard är skräppost-ZAP aktiverat i principer för skräp post, och standard åtgärden för **skräp** post filtrering Verdict är **att flytta meddelandet till mappen skräp post**, vilket innebär att skräp posten är som standard **avläst** meddelanden till mappen skräp post.
+Som standard är skräppost-ZAP aktiverat i principer för skräp post, och standard åtgärden för **skräp** post filtrering Verdict är **att flytta meddelandet till mappen skräp post** , vilket innebär att skräp posten är som standard **avläst** meddelanden till mappen skräp post.
 
 Mer information om hur du konfigurerar verdicts för skräp post finns i [Konfigurera principer för skräp post filtrering i Microsoft 365](configure-your-spam-filter-policies.md).
 
-### <a name="zap-considerations-for-office-365-advanced-threat-protection-office-365-atp"></a>ZAP-överväganden för Office 365 Avancerat skydd (Office 365 ATP)
+### <a name="zap-considerations-for-microsoft-defender-for-office-365"></a>ZAP-överväganden för Microsoft Defender för Office 365
 
 ZAP kommer inte att placera något meddelande som bearbetas i processen för [dynamisk leverans](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) i den säkra bilage genomsökningen eller där EOP malware filter redan har ersatt bilagan med **varnings meddelandet Text.txt** -filen. Om en Phish eller spam signal tas emot för dessa typer av meddelanden och filtrerings Verdict i principen mot skräp post är inställt på att få en åtgärd på meddelandet (flytta till skräp post, omdirigering, ta bort eller karantän) så återställs den till åtgärden "flytta till skräp post".
 

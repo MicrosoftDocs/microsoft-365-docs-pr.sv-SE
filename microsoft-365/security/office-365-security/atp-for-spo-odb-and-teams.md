@@ -21,19 +21,19 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-description: Lär dig mer om Office 365 Avancerat skydd för filer i SharePoint Online, OneDrive för företag och Microsoft Teams.
-ms.openlocfilehash: e536809c74abbe87e1250acda3f3922180cfae97
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: Lär dig mer om Microsoft Defender för Office 365 för filer i SharePoint Online, OneDrive för företag och Microsoft Teams.
+ms.openlocfilehash: 7b007671a7fecb3ae074fd07ce38d17fb025f6b4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446269"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844338"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>ATP för SharePoint, OneDrive och Microsoft Teams
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-ATP för SharePoint-, OneDrive-och Microsoft Teams i [Office 365 Avancerat skydd (ATP)](office-365-atp.md) tillhandahåller ytterligare ett skydds lager för filer som redan har skannats vid uppladdning av den [vanliga antivirus motorn i Microsoft 365](virus-detection-in-spo.md). ATP för SharePoint, OneDrive och Microsoft Teams hjälper till att upptäcka och blockera befintliga filer som identifieras som skadligt för grupp webbplatser och dokument bibliotek.
+ATP för SharePoint-, OneDrive-och Microsoft Teams i [Microsoft Defender för Office 365](office-365-atp.md) ger dig ett ytterligare skydd mot filer som redan har skannats vid uppladdning av den [vanliga antivirus motorn i Microsoft 365](virus-detection-in-spo.md). ATP för SharePoint, OneDrive och Microsoft Teams hjälper till att upptäcka och blockera befintliga filer som identifieras som skadligt för grupp webbplatser och dokument bibliotek.
 
 ATP för SharePoint, OneDrive och Microsoft Teams är inte aktiverat som standard. Information om hur du aktiverar funktionen finns i [Aktivera ATP för SharePoint, OneDrive och Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
@@ -59,14 +59,14 @@ Om du vill veta mer om användar upplevelsen när en fil har identifierats som s
 
 ## <a name="view-information-about-malicious-files-detected-by-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Visa information om skadliga filer som identifieras av ATP för SharePoint, OneDrive och Microsoft Teams
 
-Filer som identifieras som skadligt för ATP visas i [rapporter för Office 365 Avancerat skydd för hotet](view-reports-for-atp.md) och i [Utforskaren (och real tids identifieringar)](threat-explorer.md).
+Filer som identifieras som skadliga av Microsoft Defender för Office 365 visas i [rapporter om Microsoft Defender för office 365](view-reports-for-atp.md) och i [Utforskaren (och real tids identifieringar)](threat-explorer.md).
 
-Från och med den 2018 maj kan filen också vara tillgänglig i karantän när en fil identifieras som skadlig för ATP. Mer information finns i [använda säkerhets & Compliance Center för att hantera filer i karantän](manage-quarantined-messages-and-files.md#atp-only-use-the-security--compliance-center-to-manage-quarantined-files).
+Från och med den 2018 maj kan filen också vara tillgänglig i karantän när en fil identifieras som skadlig för Microsoft Defender för Office 365. Mer information finns i [använda säkerhets & Compliance Center för att hantera filer i karantän](manage-quarantined-messages-and-files.md#microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files).
 
 ## <a name="keep-these-points-in-mind"></a>Tänk på följande saker
 
-- ATP kommer inte att söka igenom alla filer i SharePoint Online, OneDrive för företag eller Microsoft Teams. Detta är avsiktligt. Filer skannas asynkront. Processen använder delnings-och gäst aktiviteter tillsammans med smarta heuristik och hot signaler för att identifiera skadliga filer.
+- Defender för Office 365 söker inte igenom alla filer i SharePoint Online, OneDrive för företag eller Microsoft Teams. Detta är avsiktligt. Filer skannas asynkront. Processen använder delnings-och gäst aktiviteter tillsammans med smarta heuristik och hot signaler för att identifiera skadliga filer.
 
-- Kontrol lera att dina SharePoint-webbplatser är konfigurerade för att använda den [moderna upplevelsen](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience). ATP-skydd gäller om den moderna upplevelsen eller vyn Klassisk används; visuella indikatorer som en fil är blockerade är bara tillgängliga i den moderna upplevelsen.
+- Kontrol lera att dina SharePoint-webbplatser är konfigurerade för att använda den [moderna upplevelsen](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience). Defender för Office 365-skydd gäller om den moderna upplevelsen eller den klassiska vyn används; visuella indikatorer som en fil är blockerade är bara tillgängliga i den moderna upplevelsen.
 
-- ATP för SharePoint, OneDrive och Microsoft Teams är en del av organisationens övergripande hot skydds strategi, som inkluderar skydd mot skräp post och skyddar mot skadlig program vara i Exchange Online Protection (EOP), samt säkra länkar och säkra bifogade filer i Office 365 ATP. Mer information finns i [skydda mot hot i Office 365](protect-against-threats.md).
+- ATP för SharePoint, OneDrive och Microsoft Teams är en del av organisationens övergripande hot skydds strategi, som inkluderar skydd mot skräp post och skyddar mot skadlig program vara i Exchange Online Protection (EOP), samt säkra länkar och säkra bifogade filer i Microsoft Defender för Office 365. Mer information finns i [skydda mot hot i Office 365](protect-against-threats.md).

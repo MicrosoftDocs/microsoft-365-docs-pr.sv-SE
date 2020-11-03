@@ -1,6 +1,6 @@
 ---
 title: Uppdatera incident API
-description: Lär dig hur du uppdaterar incidenter med hjälp av Microsoft Threat Protection API
+description: Lär dig hur du uppdaterar incidenter med hjälp av Microsoft 365 Defender API
 keywords: uppdatering, API, incident
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8ad47453c7163bfac99c17f42986b818cdca603f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3f77980863b0c232166d736a6b557444df98c8ac
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203646"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844842"
 ---
 # <a name="update-incidents-api"></a>Uppdatera incident API
 
@@ -32,7 +32,7 @@ ms.locfileid: "48203646"
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
@@ -49,7 +49,7 @@ Uppdaterar egenskaper för befintlig incident.
 
 
 ## <a name="permissions"></a>Behörigheter
-En av följande behörigheter krävs för att kunna ringa detta API. Om du vill veta mer, inklusive hur du väljer behörigheter, kan du läsa [gå till Microsoft Threat Protection API: er](api-access.md).
+En av följande behörigheter krävs för att kunna ringa detta API. Mer information om hur du väljer behörigheter finns i avsnittet [om Microsoft 365 Defender API: er](api-access.md).
 
 Behörighets typ |   Tillåtelse  |   Visnings namn för behörighet
 :---|:---|:---
@@ -69,7 +69,7 @@ PATCH /api/incidents/{id}
 
 ## <a name="request-headers"></a>Begärandehuvuden
 
-Namn | Type (Typ) | Beskrivning
+Namn | Skriv | Beskrivning
 :---|:---|:---
 Bemyndigande | Sträng | Bearer {token}. **Obligatoriskt**.
 Innehålls typ | Sträng | Application/JSON. **Obligatoriskt**.
@@ -80,7 +80,7 @@ Ange värdena för de relevanta fält som ska uppdateras i begärans brödtext.
 <br>Befintliga egenskaper som inte är inkluderade i kravet på brödtext bibehåller sina tidigare värden eller omräknas om till ändringar i andra egenskaps värden. 
 <br>För bästa prestanda bör du inte ta med befintliga värden som inte har ändrats.
 
-Egenskap | Type (Typ) | Beskrivning
+Egenskap | Skriv | Beskrivning
 :---|:---|:---
 status | Enum | Anger aviseringens aktuella status. Möjliga värden är: ```Active``` , ```Resolved``` och ```Redirected``` .
 Tilldelat | strängvärdet | Ägaren till incidenten.

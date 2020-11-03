@@ -14,12 +14,12 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln lär du dig mer om rapporter och fel söknings verktyg som är tillgängliga för Microsoft Exchange Online Protection (EOP)-administratörer.
-ms.openlocfilehash: 86f4e18430324ed95f036f93746d826225ec3b2f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9a8eb8e35ef73eb27604eef4bf701982b1d51710
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196405"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845558"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Rapportering och meddelande spårning i EOP
 
@@ -30,13 +30,13 @@ I Microsoft 365-organisationer med post lådor i Exchange Online eller friståen
 
 ## <a name="usage-reports"></a>Användnings rapporter
 
-**Aktivitet i microsoft 365-grupper**: Visa information om antalet Microsoft 365-grupper som har skapats och använts.
+**Aktivitet i microsoft 365-grupper** : Visa information om antalet Microsoft 365-grupper som har skapats och använts.
 
-**E-postaktivitet**: Visa information om antalet meddelanden som skickas, tas emot och läses i hela organisationen och av specifika användare.
+**E-postaktivitet** : Visa information om antalet meddelanden som skickas, tas emot och läses i hela organisationen och av specifika användare.
 
-**Användning av e-postprogram**: Visa information om de e-postappar som används. Detta inkluderar totalt antal anslutningar för varje app och den version av Outlook som är ansluten.
+**Användning av e-postprogram** : Visa information om de e-postappar som används. Detta inkluderar totalt antal anslutningar för varje app och den version av Outlook som är ansluten.
 
-**Användning av post låda**: Visa information om använt lagrings utrymme för kvot, antal objekt och senaste aktivitet (skicka eller läsa aktivitet) för post lådor.
+**Användning av post låda** : Visa information om använt lagrings utrymme för kvot, antal objekt och senaste aktivitet (skicka eller läsa aktivitet) för post lådor.
 
 Mer information finns i följande resurser:
 
@@ -52,11 +52,11 @@ Mer information finns i följande resurser:
 
 De här förbättrade rapporterna ger en interaktiv rapport upplevelse för EOP-administratörer, som innehåller sammanfattnings information och möjlighet att detaljgranska ned för mer information.
 
-**Avancerat skydd (ATP)**: Visa information om säkra länkar och säkra bifogade filer som är en del av ATP.
+**Defender för office 365** : Visa information om säkra länkar och säkra bifogade filer som ingår i Microsoft Defender för Office 365.
 
-**EOP**: Visa information om identifiering av skadlig program vara, falsk e-post, skräp identifiering och e-postflöde till och från din organisation.
+**EOP** : Visa information om identifiering av skadlig program vara, falsk e-post, skräp identifiering och e-postflöde till och från din organisation.
 
-[Visa rapporter för Office 365 Avancerat skydd](view-reports-for-atp.md)
+[Visa rapporter för Defender för Office 365](view-reports-for-atp.md)
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Anpassade rapporter med Microsoft Graph
 

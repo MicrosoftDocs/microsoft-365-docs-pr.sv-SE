@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: a1e85b2089663208e8b6004462211263a1b27242
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: fc975610e24980c6a552179359bb643eb9ac040c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547835"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845258"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Till identitet och efter – en arkitekts synvinklar
 
@@ -132,11 +132,11 @@ Genom att kombinera alla dessa signaler kan du göra dynamiska principer så hä
 
 Om du godkänner den här utökade definitionen av godkännande måste du implementera ytterligare lösningar. Vilka lösningar du kan använda beror på hur dynamiskt du vill att principen ska vara och vilka hot du vill prioritera. Här är några exempel på sådana system:
 - [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/) 
-- [Azure-Avancerat skydd](https://docs.microsoft.com/azure-advanced-threat-protection/) (Azure ATP)
-- [Microsoft Defender Avancerat skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (Microsoft Defender ATP)
-- [Office 365 Avancerat skydd](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) (Office 365 ATP)
+- [Microsoft Defender för identitet](https://docs.microsoft.com/azure-advanced-threat-protection/)
+- [Microsoft Defender för slut punkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- [Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)
 - [Säkerhet för Microsoft Cloud App](https://docs.microsoft.com/cloud-app-security/) (MCAS)
-- [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide) (MTP)
+- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide)
 - [Microsoft Intune](https://docs.microsoft.com/mem/intune/)
 - [Microsoft informations skydd](https://docs.microsoft.com/microsoft-365/compliance/protect-information?view=o365-worldwide) (MIP)
 - [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/) 
@@ -242,27 +242,27 @@ Som tidigare nämnts är många kunder som vill ha en mer detaljerad delegations
 
 - **Exchange Online** - [https://docs.microsoft.com/exchange/permissions-exo/permissions-exo](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) 
 - **SharePoint Online** - [https://docs.microsoft.com/sharepoint/manage-site-collection-administrators](https://docs.microsoft.com/sharepoint/manage-site-collection-administrators) 
-- **Microsoft Teams**  -  [https://docs.microsoft.com/microsoftteams/itadmin-readiness ](https://docs.microsoft.com/microsoftteams/itadmin-readiness )
+- **Microsoft Teams**  -  [https://docs.microsoft.com/microsoftteams/itadmin-readiness](https://docs.microsoft.com/microsoftteams/itadmin-readiness )
 - **eDiscovery** - [https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions](https://docs.microsoft.com/microsoft-365/compliance/) 
-  + **Behörighets filtrering**  -  [https://docs.microsoft.com/microsoft-365/compliance/permissions-filtering-for-content-search ](https://docs.microsoft.com/microsoft-365/compliance/)
-  + **Efterföljandekrav**  -  [https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries ](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries )
-  + **Avancerad eDiscovery**  -  [https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 ](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 )
+  + **Behörighets filtrering**  -  [https://docs.microsoft.com/microsoft-365/compliance/permissions-filtering-for-content-search](https://docs.microsoft.com/microsoft-365/compliance/)
+  + **Efterföljandekrav**  -  [https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries )
+  + **Avancerad eDiscovery**  -  [https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 )
 - **Yammer** - [https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins) 
 - **Multi-geo** - [https://docs.microsoft.com/microsoft-365/enterprise/add-a-sharepoint-geo-admin](https://docs.microsoft.com/microsoft-365/enterprise/add-a-sharepoint-geo-admin) 
 - **Dynamics 365** – [https://docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) <br>
   OBS! den här länken är till roten i dokumentationen. Det finns flera typer av tjänster med variationer i administratörs-och Delegerings modellen.
-- **Power Platform**  -  [https://docs.microsoft.com/power-platform/admin/admin-documentation ](https://docs.microsoft.com/power-platform/admin/admin-documentation )
-  + **Power Apps**  -  [https://docs.microsoft.com/power-platform/admin/wp-security ](https://docs.microsoft.com/power-platform/admin/wp-security ) <br>
+- **Power Platform**  -  [https://docs.microsoft.com/power-platform/admin/admin-documentation](https://docs.microsoft.com/power-platform/admin/admin-documentation )
+  + **Power Apps**  -  [https://docs.microsoft.com/power-platform/admin/wp-security](https://docs.microsoft.com/power-platform/admin/wp-security ) <br>
     Obs! det finns flera typer av variationer i administratörs-och Delegerings modellerna.
-  + **Automatisk strömförsörjning**  -  [https://docs.microsoft.com/power-automate/environments-overview-admin ](https://docs.microsoft.com/power-automate/environments-overview-admin )
-  + **PowerBI**  -  [https://docs.microsoft.com/power-bi/service-admin-governance ](https://docs.microsoft.com/power-bi/service-admin-governance ) <br>
+  + **Automatisk strömförsörjning**  -  [https://docs.microsoft.com/power-automate/environments-overview-admin](https://docs.microsoft.com/power-automate/environments-overview-admin )
+  + **PowerBI**  -  [https://docs.microsoft.com/power-bi/service-admin-governance](https://docs.microsoft.com/power-bi/service-admin-governance ) <br>
 Obs! data plattforms säkerhet och delegering (som Power BI är en komponent) är ett komplext område.
-- **MEM/Intune**  -  [https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control ](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control )
-- **Microsoft Defender ATP**  -  [https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles )
-- **Skydd mot Microsoft Threat** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions)
+- **MEM/Intune**  -  [https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control )
+- **Microsoft Defender för slut punkt**  -  [https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles )
+- **Microsoft 365 Defender** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions)
 - **Säkerhet för Microsoft Cloud App** - [https://docs.microsoft.com/cloud-app-security/manage-admins](https://docs.microsoft.com/cloud-app-security/manage-admins)
-- **Direkt uppspelning**  -  [https://docs.microsoft.com/stream/assign-administrator-user-role ](https://docs.microsoft.com/stream/assign-administrator-user-role )
-- **Informations hinder**  -  [https://docs.microsoft.com/microsoft-365/compliance/information-barriers ](https://docs.microsoft.com/microsoft-365/compliance/information-barriers )
+- **Direkt uppspelning**  -  [https://docs.microsoft.com/stream/assign-administrator-user-role](https://docs.microsoft.com/stream/assign-administrator-user-role )
+- **Informations hinder**  -  [https://docs.microsoft.com/microsoft-365/compliance/information-barriers](https://docs.microsoft.com/microsoft-365/compliance/information-barriers )
 
 För resten är sökning i dokument mycket bra på sistone- [https://docs.microsoft.com/](https://docs.microsoft.com/microsoft-365/compliance/information-barriers) . 
 
@@ -273,9 +273,9 @@ Office 365 har en [enhetlig Gransknings logg](https://docs.microsoft.com/microso
 Här är några exempel på Microsoft 365-loggar som nås via andra API: er.
 - [Azure AD](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings) (aktiviteter som inte är relaterade till Office 365)
 - [Exchange meddelande spårning](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace)
-- Hot/UEBA-system som diskuteras ovan (till exempel Azure AD Identity-skydd, Microsoft Cloud App Security, Microsoft Defender ATP etc.)
+- Hot/UEBA-system som diskuteras ovan (till exempel Azure AD Identity-skydd, Microsoft Cloud App Security, Microsoft Defender för slut punkt osv.)
 - [Microsoft informations skydd](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide)
-- [Microsoft Defender Avancerat skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
+- [Microsoft Defender för slut punkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
 - [Microsoft Graph](https://graph.microsoft.com)
 
 Det är viktigt att först identifiera alla loggnings källor som behövs för ett säkerhets-och kompatibilitetstillstånd. Observera också att olika loggar har olika begränsningar för sid lagring. 
@@ -292,7 +292,7 @@ Om du kombinerar alla loggar till en lagrings plats inkluderar du extra förmån
 
 Loggar behöver inte dirigeras till endast en enda plats. Det kan också vara bra att integrera [Office 365-loggar med säkerhet för Microsoft Cloud App](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) eller en anpassad RBAC-modell i [Power BI](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide). Olika databaser har olika fördelar och mål grupper.
 
-Det är värt att nämna att det finns ett inbyggt analys system för säkerhet, hot, sårbarheter etc. i en tjänst som heter [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide).
+Det är värt att nämna att det finns ett inbyggt analys system för säkerhet, hot, sårbarheter etc. i en tjänst som heter [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide).
 
 Många stora kunder vill överföra denna loggnings information till ett tredje parts system (till exempel SIEM). Det finns olika sätt, men i-allmänt Azure- [händelsehubben](https://docs.microsoft.com/azure/azure-monitor/platform/stream-monitoring-data-event-hubs) och- [graf](https://docs.microsoft.com/graph/security-integration) är det bra utgångs punkten.
 
@@ -305,7 +305,7 @@ Det är viktigt att förstå relationer mellan olika tjänster i samma klient or
 -   Skicka in var och en av dem via en godkännande process (Power Platform)
 -   När alla komponenter har godkänts, sätter du in dessa i en Unified slut produkt (er) (s) [Microsoft Graph API](https://docs.microsoft.com/azure/active-directory/develop/microsoft-graph-intro) är din bästa kompis för dessa.  Inte omöjligt, men betydligt mer komplex för att designa en lösning som sträcker sig över [flera klient organisationer](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps).
 
-Den Azure rollbaserad åtkomst kontrollen (RBAC) möjliggör detaljerad åtkomst hantering för Azure. Med RBAC kan du hantera åtkomst till resurser genom att ge användarna minst de behörigheter som krävs för att utföra sina jobb. Informationen är utanför omfattning för det här dokumentet men mer information om RBAC finns i [Vad är rollbaserad åtkomst kontroll (RBAC) i Azure?](https://docs.microsoft.com/azure/role-based-access-control/overview) RBAC är viktigt men bara en del av styr aspekterna för Azure. [Ramverket för moln införande](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/) är en bra start punkt för att få mer information. Jag gillar hur min vän, Andres RAVINET hjälper kunderna att välja steg för steg, även om olika komponenter är på gång. En högkvalitativ vy för olika element (inte lika bra som processen för att komma till den faktiska kund modellen) ser ut ungefär så här:
+Azure Role-Based Access Control (RBAC) möjliggör detaljerad åtkomst hantering för Azure. Med RBAC kan du hantera åtkomst till resurser genom att ge användarna minst de behörigheter som krävs för att utföra sina jobb. Informationen är utanför omfattning för det här dokumentet men mer information om RBAC finns i [Vad är rollbaserad åtkomst kontroll (RBAC) i Azure?](https://docs.microsoft.com/azure/role-based-access-control/overview) RBAC är viktigt men bara en del av styr aspekterna för Azure. [Ramverket för moln införande](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/) är en bra start punkt för att få mer information. Jag gillar hur min vän, Andres RAVINET hjälper kunderna att välja steg för steg, även om olika komponenter är på gång. En högkvalitativ vy för olika element (inte lika bra som processen för att komma till den faktiska kund modellen) ser ut ungefär så här:
 
 ![Högkvalitativ visning av Azure-komponenter för delegerad administration](../media/solutions-architecture-center/identity-beyond-illustration-5.png)
 

@@ -21,12 +21,12 @@ description: Komma igång med automatiska undersökningar och svars funktioner i
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 340fc4851043ff917eaff6f237c3ad7d5810a4cb
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 54dbd419380c18e23119887c93a71885c6f9ce7d
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430925"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845810"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Komma igång med automatisk undersökning och svar (AIR) i Office 365
 
@@ -62,7 +62,7 @@ På en hög nivå utlöses en avisering och en säkerhets Playbook påbörjar en
     Eftersom pågående reparations åtgärder är godkända (eller nekade) är den automatiska undersökningen klar.
 
 > [!NOTE]
-> I Office 365 ATP vidtas inga reparations åtgärder automatiskt. Reparations åtgärder vidtas endast vid godkännande av organisationens säkerhets team. 
+> I Microsoft Defender för Office 365 vidtas ingen reparations åtgärd automatiskt. Reparations åtgärder vidtas endast vid godkännande av organisationens säkerhets team. 
 
 Under och efter en automatiserad gransknings process kan säkerhets teamet göra följande:
 

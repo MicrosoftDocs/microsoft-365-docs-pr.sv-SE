@@ -18,19 +18,19 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur inblicken för förfalsknings information fungerar, inklusive hur man snabbt tar reda på vilka avsändare som skickar ett overifierat e-postmeddelande.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fc934491606a53ebfb4bae4f46ab9e1ee93467b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 5995095e442bbcd07ddf4538b67be6e1b14fd8f1
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198577"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844218"
 ---
-# <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Genom gång – ATP-information i Microsoft 365
+# <a name="walkthrough---defender-for-office-365-spoof-intelligence-insight-in-microsoft-365"></a>Genom gång-Defender för Office 365 falsk intelligens inblick i Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-I Microsoft 365-organisationer med avancerat skydd (ATP) kan du använda falsk IT-insyn för att snabbt avgöra vilka avsändare som skickar ett legitimt e-postmeddelande till dig. Genom att tillåta att de skickar falska meddelanden kan du minska risken för falsk positiv identifiering till användarna. Du kan också använda falsk information för att övervaka och hantera tillåtna domän par för att tillhandahålla ett ytterligare säkerhets lager och förhindra osäkra meddelanden från att komma i din organisation.
+I Microsoft 365-organisationer med Defender för Office 365 kan du använda falsk IT-insyn för att snabbt avgöra vilka avsändare som skickar dig ett legitimt e-postmeddelande. Genom att tillåta att de skickar falska meddelanden kan du minska risken för falsk positiv identifiering till användarna. Du kan också använda falsk information för att övervaka och hantera tillåtna domän par för att tillhandahålla ett ytterligare säkerhets lager och förhindra osäkra meddelanden från att komma i din organisation.
 
 Om du inte har använt [rapporter och insikter i säkerhets & Compliance Center](reports-and-insights-in-security-and-compliance.md)kan det vara bra att se hur du enkelt kan navigera från en instrument panel till en inblick och Rekommenderad åtgärd.
 
@@ -49,7 +49,7 @@ Den här genom gången är en av flera för säkerhets & Compliance Center. Info
   - **Säkerhetsläsare** i [Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
   - **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- Du aktiverar och inaktiverar förfalsknings information i AntiPhishing-principer för ATP. Mer information finns i [Konfigurera AntiPhishing-principer för ATP i Microsoft 365](configure-atp-anti-phishing-policies.md).
+- Du aktiverar och inaktiverar förfalsknings intelligens i policy mot nätfiske i Microsoft Defender för Office 365. Mer information finns i [Konfigurera Antinätfiske-principer i Microsoft Defender för Office 365 i Microsoft 365](configure-atp-anti-phishing-policies.md).
 
 - I Microsoft 365-organisationer med Exchange Online-postlådor och i fristående Exchange Online Protection (EOP) utan Exchange Online-postlådor kan du använda falsk intelligens för att övervaka och hantera avsändare som skickar dig overifierade meddelanden. Mer information finns i [Konfigurera förfalskningsinformation i Microsoft 365](learn-about-spoof-intelligence.md).
 
@@ -59,9 +59,9 @@ Den här genom gången är en av flera för säkerhets & Compliance Center. Info
 
 2. Leta efter något av följande i raden **insikter** :
 
-   - **Förfalsknings intelligens är aktiverat**: inblicken heter **falska domäner som inte kunde verifieras av de senaste 30 dagarna**. Det här är standardinställningen.
+   - **Förfalsknings intelligens är aktiverat** : inblicken heter **falska domäner som inte kunde verifieras av de senaste 30 dagarna**. Det här är standardinställningen.
 
-   - **Förfalsknings intelligens är inaktiverat**: inblicken i namngivna **Aktivera förfalsknings skydd**och när du klickar på den kan du aktivera förfalsknings intelligens.
+   - **Förfalsknings intelligens är inaktiverat** : inblicken i namngivna **Aktivera förfalsknings skydd** och när du klickar på den kan du aktivera förfalsknings intelligens.
 
 3. Inblicken på instrument panelen visar information så här:
 
@@ -83,17 +83,17 @@ Den här genom gången är en av flera för säkerhets & Compliance Center. Info
 
    **Misstänkta domän par** är:
 
-   - **Falska säkerhets**problem: Microsoft 365 fick starka signaler som de här domänerna är misstänkta, baserat på de historiska sändnings mönstren och platsens ryktes poäng. Microsoft 365 är mycket säkert att domänerna är falska och att meddelanden som skickas från dessa domäner är mindre troligt att de är felfria.
+   - **Falska säkerhets** problem: Microsoft 365 fick starka signaler som de här domänerna är misstänkta, baserat på de historiska sändnings mönstren och platsens ryktes poäng. Microsoft 365 är mycket säkert att domänerna är falska och att meddelanden som skickas från dessa domäner är mindre troligt att de är felfria.
 
-   - **Falska problem med måttlig exakthet**: Microsoft 365 tog emot måttliga signaler som de här domänerna är misstänkta, baserat på historiska sändnings mönster och företagets ryktes poäng. Office 365 är ganska säkert med att domänerna är falska och att meddelanden som skickas från dessa domäner är giltiga. Den här Bucket har större chans att innehålla falskt positiva (FPs) än en Spoof-Bucket med hög exakthet.
+   - **Falska problem med måttlig exakthet** : Microsoft 365 tog emot måttliga signaler som de här domänerna är misstänkta, baserat på historiska sändnings mönster och företagets ryktes poäng. Office 365 är ganska säkert med att domänerna är falska och att meddelanden som skickas från dessa domäner är giltiga. Den här Bucket har större chans att innehålla falskt positiva (FPs) än en Spoof-Bucket med hög exakthet.
 
-   - **Icke misstänkt domän par** (inklusive **räddad förfalskning**): räddade förfalskningar är domäner som inte har de explicita autentiseringsmetoderna för kontroll av [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md)), men klarade med den implicita kontrollen av e-postverifikationen ([sammansatt verifikation](email-validation-and-authentication.md#composite-authentication)). Därför har Microsoft 365 räddat e-postmeddelandet och ingen åtgärd mot förfalskning vidtogs för meddelandet.
+   - **Icke misstänkt domän par** (inklusive **räddad förfalskning** ): räddade förfalskningar är domäner som inte har de explicita autentiseringsmetoderna för kontroll av [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md)), men klarade med den implicita kontrollen av e-postverifikationen ( [sammansatt verifikation](email-validation-and-authentication.md#composite-authentication)). Därför har Microsoft 365 räddat e-postmeddelandet och ingen åtgärd mot förfalskning vidtogs för meddelandet.
 
 ### <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>Visa detaljerad information om misstänkta domän par från inblicken för falska uppgifter
 
 1. Klicka på något av de här domän paren (High, måttlig eller räddat) i den här funktionen.
 
-   Sidan med **information om falska** uppgifter visas med en lista över avsändare som skickar overifierad e-post till din organisation. Informationen på den här sidan hjälper dig att avgöra om falska meddelanden är godkända eller om du behöver vidta ytterligare åtgärder. Du kan sortera informationen efter antal meddelanden, det datum då datafilen senast upptäcktes och mer. (Klicka på kolumn rubriker, till exempel **antal meddelanden** eller **senaste**).)
+   Sidan med **information om falska** uppgifter visas med en lista över avsändare som skickar overifierad e-post till din organisation. Informationen på den här sidan hjälper dig att avgöra om falska meddelanden är godkända eller om du behöver vidta ytterligare åtgärder. Du kan sortera informationen efter antal meddelanden, det datum då datafilen senast upptäcktes och mer. (Klicka på kolumn rubriker, till exempel **antal meddelanden** eller **senaste** ).)
 
 2. Välj ett objekt i tabellen för att öppna en informations ruta som innehåller omfattande information om domän paret, inklusive orsaken till att vi upptäckte att det här är en domän sammanfattning, WhoIs information om avsändaren och liknande e-postmeddelanden som vi har sett i din klient organisation från samma avsändare. Härifrån kan du också välja att lägga till eller ta bort domän paret från **AllowedToSpoof** Safe delistion.
 

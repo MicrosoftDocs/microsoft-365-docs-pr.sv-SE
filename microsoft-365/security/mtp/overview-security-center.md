@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: ed91ca8a2300cf69cb78ae24ad61e9aebb4dcc85
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 9aaeb5323900e65de47015b8cb28abf967694ea3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429425"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844806"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Översikt över Microsoft 365 säkerhets Center
 
@@ -52,7 +52,7 @@ Microsoft 365 säkerhets Center inkluderar:
 
 * **Hem** – få en överblick över hela organisationens säkerhets tillstånd.
 * **Incidenter** -se den bredare artikeln i en attack genom att ansluta punkterna som visas på enskilda aviseringar på enheter. Du vet exakt var en attack startas, vilka enheter som påverkas, vem som påverkades och var hotet befinner sig.
-* **Aviseringar** – få större insyn i alla notifieringar i din Microsoft 365-miljö. Inkluderar aviseringar från Microsoft Cloud App Security, Office 365 ATP, Azure Active Directory, Azure ATP och Microsoft Defender ATP. Disponibelt för E3 och E5 kunder.  
+* **Aviseringar** – få större insyn i alla notifieringar i din Microsoft 365-miljö. Inkluderar aviseringar från Microsoft Cloud App Security, Microsoft Defender för Office 365, Azure Active Directory, Microsoft Defender för identitet och Microsoft Defender för slut punkter. Disponibelt för E3 och E5 kunder.  
 * **Åtgärds Center** – minska volymen på aviseringar som din säkerhets grupp måste adressera manuellt, så att ditt säkerhets arbete kan fokusera på mer sofistikerade hot och andra högpresterande initiativ.
 * **Rapporter** – få de uppgifter och den information du behöver för att bättre skydda användare, enheter, appar och annat.
 * **Säkra Poäng** – förbättra din totala säkerhets Posture med Microsoft Secure score. Den här sidan innehåller en sammanfattning av de olika säkerhetsfunktioner och funktioner som du har aktiverat och innehåller rekommendationer för områden som ska förbättras.

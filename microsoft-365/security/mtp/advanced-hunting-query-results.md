@@ -1,6 +1,6 @@
 ---
-title: Arbeta med frågor för avancerad jakt i Microsoft Threat Protection
-description: Få ut mesta möjliga av frågeresultaten som har returnerats av Advanced jakt mot Microsoft Threat Protection
+title: Arbeta med avancerade frågor i en fråga i Microsoft 365 Defender
+description: Få ut mesta möjliga av frågeresultaten som har returnerats av Advanced jakt i Microsoft 365 Defender
 keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, anpassade identifieringar, schema, kusto, Microsoft 365, Microsoft Threat Protection, visualisering, diagram, filter, detalj granskning
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e19859189b57bbc9a6a4bbfb87fb224b2735331b
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: de26989b9092b783a45d27ad2a529720d21169f8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431081"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844134"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Arbeta med resultat från avancerad jakt fråga
 
@@ -32,7 +32,7 @@ ms.locfileid: "48431081"
 
 
 **Gäller för:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
