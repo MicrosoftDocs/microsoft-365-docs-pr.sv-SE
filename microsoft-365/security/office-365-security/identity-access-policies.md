@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 28d4fc196e75a1a7a27cbe2a0f6804646002354f
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: f9c26e7e4af99174c5723b44c59d7279ca93afa5
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464080"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846454"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Vanliga principer för identitets- och enhetsåtkomst
 
@@ -59,7 +59,7 @@ För att ge dig tid att utföra dessa uppgifter rekommenderar vi att du implemen
 |        |[Kräv godkända appar och program skydd](#require-approved-apps-and-app-protection)|Aktiverar dataexekveringsskydd för telefoner och surfplattor med iOS, iPad eller Android.|
 |        |[Definiera principer för efterlevnadsprinciper](#define-device-compliance-policies)|En princip för varje plattform.|
 |        |[Kräv kompatibla PC-datorer](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Framtvingar Intune-hantering av datorer med Windows eller MacOS.|
-|**Känslig**|[Kräv MFA när en inloggnings risk är *låg*, *medel*eller *hög*](#require-mfa-based-on-sign-in-risk)| |
+|**Känslig**|[Kräv MFA när en inloggnings risk är *låg* , *medel* eller *hög*](#require-mfa-based-on-sign-in-risk)| |
 |         |[Kräv kompatibla datorer *och* mobila enheter](#require-compliant-pcs-and-mobile-devices)|Framtvingar Intune-hantering för båda datorerna (Windows eller MacOS) och telefoner eller surfplattor (iOS, iPad eller Android).|
 |**Strikt reglerad**|[Kräv *alltid* MFA](#require-mfa-based-on-sign-in-risk)|
 | | | |
@@ -100,7 +100,7 @@ När användarna är registrerade kan du kräva MFA för att logga in med en ny 
 
 1. Gå till [Azure-portalen](https://portal.azure.com)och logga in med dina inloggnings uppgifter.
 2. I listan med Azure-tjänster väljer du **Azure Active Directory**.
-3. Välj **säkerhet**i listan **Hantera** och välj sedan **villkorlig åtkomst**.
+3. Välj **säkerhet** i listan **Hantera** och välj sedan **villkorlig åtkomst**.
 4. Välj **ny princip** och ange den nya Principens namn.
 
 I följande tabell beskrivs princip inställningarna för villkorsstyrd åtkomst för att kräva MFA baserat på inloggnings risker.
@@ -109,9 +109,9 @@ I avsnittet **uppgifter** :
 
 |Inställning|Fjärråtkomstsegenskaper|Värden|Kommentarer|
 |:---|:---------|:-----|:----|
-|Användare och grupper|Inkludera| **Välj användare och grupper > användare och grupper**: Välj specifika grupper som innehåller riktade användar konton. |Börja med gruppen som innehåller pilot användar konton.|
-||Ta| **Användare och grupper**: Välj en undantags grupp för villkorlig åtkomst. tjänst konton (program identiteter).|Medlemskapet bör ändras efter behov.|
-|Moln program eller-åtgärder| **> moln program inkluderar** | **Välj appar**: Välj de program du vill att den här policyn ska tillämpas på. Välj till exempel Exchange Online.||
+|Användare och grupper|Inkludera| **Välj användare och grupper > användare och grupper** : Välj specifika grupper som innehåller riktade användar konton. |Börja med gruppen som innehåller pilot användar konton.|
+||Ta| **Användare och grupper** : Välj en undantags grupp för villkorlig åtkomst. tjänst konton (program identiteter).|Medlemskapet bör ändras efter behov.|
+|Moln program eller-åtgärder| **> moln program inkluderar** | **Välj appar** : Välj de program du vill att den här policyn ska tillämpas på. Välj till exempel Exchange Online.||
 |Situationer| | |Konfigurera villkor som är specifika för din miljö och dina behov.|
 ||Inloggnings risker||Se anvisningarna i följande tabell.|
 |||||
@@ -138,7 +138,7 @@ I avsnittet **Access Controls** :
 
 Välj **Välj** för att spara inställningen för **beviljande** .
 
-**Välj slutligen för** **att aktivera principer**och välj sedan **skapa**.
+**Välj slutligen för** **att aktivera principer** och välj sedan **skapa**.
 
 Överväg [också att använda verktyget för](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) att testa policyn.
 
@@ -152,9 +152,9 @@ I avsnittet **uppgifter** :
 
 |Inställning|Fjärråtkomstsegenskaper|Värden|Kommentarer|
 |:---|:---------|:-----|:----|
-|Användare och grupper|Inkludera| **Välj användare och grupper > användare och grupper**: Välj specifika grupper som innehåller riktade användar konton. |Börja med gruppen som innehåller pilot användar konton.|
-||Ta| **Användare och grupper**: Välj en undantags grupp för villkorlig åtkomst. tjänst konton (program identiteter).|Medlemskapet bör ändras efter behov.|
-|Moln program eller-åtgärder|**> moln program inkluderar**| **Välj appar**: Välj de program som motsvarar klienterna som inte stöder modern lösenordsautentisering.||
+|Användare och grupper|Inkludera| **Välj användare och grupper > användare och grupper** : Välj specifika grupper som innehåller riktade användar konton. |Börja med gruppen som innehåller pilot användar konton.|
+||Ta| **Användare och grupper** : Välj en undantags grupp för villkorlig åtkomst. tjänst konton (program identiteter).|Medlemskapet bör ändras efter behov.|
+|Moln program eller-åtgärder|**> moln program inkluderar**| **Välj appar** : Välj de program som motsvarar klienterna som inte stöder modern lösenordsautentisering.||
 |Situationer| **Klient program** | Välj **Ja** för att **Konfigurera** <br> Avmarkera kryss markeringar för **webbläsare** och **mobilappar och Station ära klienter** | |
 ||||
 
@@ -168,7 +168,7 @@ I avsnittet **Access Controls** :
 
 Välj **Välj** för att spara inställningen för **beviljande** .
 
-**Välj slutligen för** **att aktivera principer**och välj sedan **skapa**.
+**Välj slutligen för** **att aktivera principer** och välj sedan **skapa**.
 
 Överväg att använda [verktyget för att testa](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) policyn.
 
@@ -178,7 +178,7 @@ För Exchange Online kan du använda autentiseringsprinciper för att [Inaktiver
 
 För att säkerställa att alla högrisk användares komprometterade konton tvingas göra en ändring av lösen ord när de loggar in måste du tillämpa följande policy.
 
-Logga in på [Microsoft Azure-portalen ( https://portal.azure.com) ](https://portal.azure.com/) med administratörs uppgifterna och navigera sedan till **Azure AD Identity Protection > User risk policy**.
+Logga in på [Microsoft Azure-portalen ( https://portal.azure.com)](https://portal.azure.com/) med administratörs uppgifterna och navigera sedan till **Azure AD Identity Protection > User risk policy**.
 
 I avsnittet **uppgifter** :
 
@@ -198,7 +198,7 @@ I avsnittet andra **uppgifter** :
 
 Välj **klar** för att spara **åtkomst** inställningar.
 
-Välj slutligen **på** för att **påtvinga policy**och välj sedan **Spara**.
+Välj slutligen **på** för att **påtvinga policy** och välj sedan **Spara**.
 
 Överväg att använda [verktyget för att testa](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) policyn.
 
@@ -274,7 +274,7 @@ Du måste skapa en princip för varje dator, telefon eller surfplatta:
 - Windows 8,1 och senare
 - Windows 10 och senare
 
-Om du vill skapa principer för efterlevnadsprinciper loggar du in i [administrations centret för Microsoft slut punkts hanteraren](https://endpoint.microsoft.com) med dina administratörs uppgifter och navigerar **sedan till principer**för principer för  >  **efterlevnadsprinciper**  >  **Policies**. Välj **Skapa princip**.
+Om du vill skapa principer för efterlevnadsprinciper loggar du in i [administrations centret för Microsoft slut punkts hanteraren](https://endpoint.microsoft.com) med dina administratörs uppgifter och navigerar **sedan till principer** för principer för  >  **efterlevnadsprinciper**  >  **Policies**. Välj **Skapa princip**.
 
 Om principer för enhetskompatibilitet ska distribueras måste de kopplas till användar grupper. Du tilldelar en policy när du har skapat och sparat den. I Admin Center väljer du policy och sedan **uppgifter**. När du har valt de grupper som du vill ta emot principen för väljer du **Spara** för att spara grupp tilldelningen och distribuera policyn.
 
@@ -282,7 +282,7 @@ Stegvisa instruktioner om hur du skapar efterlevnadsprinciper i Intune finns i [
 
 ### <a name="recommended-settings-for-windows-10-and-later"></a>Rekommenderade inställningar för Windows 10 och senare
 
-Följande inställningar rekommenderas för datorer med Windows 10 och senare, enligt konfigurationen i **steg 2: inställningar för efterlevnad**, av processen för att skapa principer.
+Följande inställningar rekommenderas för datorer med Windows 10 och senare, enligt konfigurationen i **steg 2: inställningar för efterlevnad** , av processen för att skapa principer.
 
 Information om **utvärderings regler för tjänsten för Hälsoattestering för Windows >** i den här tabellen.
 
@@ -295,9 +295,9 @@ Information om **utvärderings regler för tjänsten för Hälsoattestering för
 
 Ange lämpliga värden för operativ system versioner baserat på dina IT-och säkerhets principer för **enhets egenskaper**.
 
-För **Configuration Manager-efterlevnad**väljer du **Kräv**.
+För **Configuration Manager-efterlevnad** väljer du **Kräv**.
 
-Information om **säkerhet**finns i den här tabellen.
+Information om **säkerhet** finns i den här tabellen.
 
 |Skriv|Fjärråtkomstsegenskaper|Värde|Fattning|
 |:---|:---------|:-----|:----|
@@ -319,11 +319,11 @@ Information om **säkerhet**finns i den här tabellen.
 ||Real tids skydd|Nödvändig|Använda <br>Stöds endast för Windows 10-skrivbordet|
 |||||
 
-**Microsoft Defender Avancerat skydd**
+**Microsoft Defender för slut punkt**
 
 |Skriv|Fjärråtkomstsegenskaper|Värde|Fattning|
 |:---|:---------|:-----|:----|
-|Microsoft Defender-regler för avancerat skydd|Kräv att enheten bevaras på eller under maskin risk poängen|Risk|Använda|
+|Microsoft Defender för slut punkts regler|Kräv att enheten bevaras på eller under maskin risk poängen|Risk|Använda|
 |||||
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Kräv kompatibla datorer (men inte kompatibla telefoner och surfplattor)
@@ -334,22 +334,22 @@ Så här kräver du kompatibla datorer:
 
 1. Gå till [Azure-portalen](https://portal.azure.com)och logga in med dina inloggnings uppgifter.
 2. I listan med Azure-tjänster väljer du **Azure Active Directory**.
-3. Välj **säkerhet**i listan **Hantera** och välj sedan **villkorlig åtkomst**.
+3. Välj **säkerhet** i listan **Hantera** och välj sedan **villkorlig åtkomst**.
 4. Välj **ny princip** och ange den nya Principens namn.
 
-5. Under **uppgifter**väljer du **användare och grupper** och inkluderar vem du vill att principen ska gälla för. Uteslut också din undantags grupp för villkorsstyrd åtkomst.
+5. Under **uppgifter** väljer du **användare och grupper** och inkluderar vem du vill att principen ska gälla för. Uteslut också din undantags grupp för villkorsstyrd åtkomst.
 
-6. Välj **molnappar eller åtgärder**under **uppgifter**.
+6. Välj **molnappar eller åtgärder** under **uppgifter**.
 
-7. Om du vill **Inkludera**väljer du **Välj program > väljer**och väljer sedan önskade appar i listan med **moln program** . Välj till exempel Exchange Online. Välj **Välj** när du är klar.
+7. Om du vill **Inkludera** väljer du **Välj program > väljer** och väljer sedan önskade appar i listan med **moln program** . Välj till exempel Exchange Online. Välj **Välj** när du är klar.
 
-8. För att kräva kompatibla datorer (men inte kompatibla telefoner och surfplattor) väljer du **villkor > enhets plattformar**under **uppgifter**. Välj **Ja** för att **Konfigurera**. Välj  **Välj maskinvaruplattformar**, Välj **Windows** och **MacOS**och välj sedan **klar**.
+8. För att kräva kompatibla datorer (men inte kompatibla telefoner och surfplattor) väljer du **villkor > enhets plattformar** under **uppgifter**. Välj **Ja** för att **Konfigurera**. Välj  **Välj maskinvaruplattformar** , Välj **Windows** och **MacOS** och välj sedan **klar**.
 
 9. Välj **Tillåt** under **åtkomst kontroller**.
 
-10. Välj **bevilja åtkomst** och kontrol lera **att kryss rutan Kräv enhet är markerad som kompatibel**. För flera kontroller väljer du **Kräv alla markerade kontroller**. Välj **Markera**när du är klar. 
+10. Välj **bevilja åtkomst** och kontrol lera **att kryss rutan Kräv enhet är markerad som kompatibel**. För flera kontroller väljer du **Kräv alla markerade kontroller**. Välj **Markera** när du är klar. 
 
-10. Välj **på** för **Aktivera policy**och välj sedan **skapa**.
+10. Välj **på** för **Aktivera policy** och välj sedan **skapa**.
 
 >[!Note]
 >Kontrol lera att enheten är kompatibel innan du aktiverar den här principen. Annars kan du låsa upp och inte ändra denna princip förrän ditt användar konto har lagts till i gruppen uteslutning för villkorlig åtkomst.
@@ -361,20 +361,20 @@ Så här kräver du efterlevnad för alla enheter:
 
 1. Gå till [Azure-portalen](https://portal.azure.com)och logga in med dina inloggnings uppgifter.
 2. I listan med Azure-tjänster väljer du **Azure Active Directory**.
-3. Välj **säkerhet**i listan **Hantera** och välj sedan **villkorlig åtkomst**.
+3. Välj **säkerhet** i listan **Hantera** och välj sedan **villkorlig åtkomst**.
 4. Välj **ny princip** och ange den nya Principens namn.
 
-5. Under **uppgifter**väljer du **användare och grupper** och inkluderar vem du vill att principen ska gälla för. Uteslut också din undantags grupp för villkorsstyrd åtkomst.
+5. Under **uppgifter** väljer du **användare och grupper** och inkluderar vem du vill att principen ska gälla för. Uteslut också din undantags grupp för villkorsstyrd åtkomst.
 
-6. Välj **molnappar eller åtgärder**under **uppgifter**.
+6. Välj **molnappar eller åtgärder** under **uppgifter**.
 
-7. Om du vill **Inkludera**väljer du **Välj program > väljer**och väljer sedan önskade appar i listan med **moln program** . Välj till exempel Exchange Online. Välj **Välj** när du är klar.
+7. Om du vill **Inkludera** väljer du **Välj program > väljer** och väljer sedan önskade appar i listan med **moln program** . Välj till exempel Exchange Online. Välj **Välj** när du är klar.
 
 8. Välj **Tillåt** under **åtkomst kontroller**.
 
-9. Välj **bevilja åtkomst** och kontrol lera **att kryss rutan Kräv enhet är markerad som kompatibel**. För flera kontroller väljer du **Kräv alla markerade kontroller**. Välj **Markera**när du är klar. 
+9. Välj **bevilja åtkomst** och kontrol lera **att kryss rutan Kräv enhet är markerad som kompatibel**. För flera kontroller väljer du **Kräv alla markerade kontroller**. Välj **Markera** när du är klar. 
 
-10. Välj **på** för **Aktivera policy**och välj sedan **skapa**.
+10. Välj **på** för **Aktivera policy** och välj sedan **skapa**.
 
 >[!Note]
 >Kontrol lera att enheten är kompatibel innan du aktiverar den här principen. Annars kan du låsa upp och inte ändra denna princip förrän ditt användar konto har lagts till i gruppen uteslutning för villkorlig åtkomst.

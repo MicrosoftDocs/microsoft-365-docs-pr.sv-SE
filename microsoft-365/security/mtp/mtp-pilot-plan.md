@@ -1,6 +1,6 @@
 ---
-title: Planera pilotmaterial Microsoft Threat Protection Project
-description: Planera ditt pilot Microsoft Threat Protection-projekt med intressenter för att hantera förväntningar och säkerställa ett lyckat resultat.
+title: Planera piloten Microsoft 365 Defender Project
+description: Planera ditt pilot Microsoft 365 Defender-projekt med intressenter för att hantera förväntningar och se till att resultatet lyckades.
 keywords: Microsoft Threat Protection pilot, planera pilotprogram varan Microsoft Threat Protection Project, utvärdera Microsoft Threat Protection i Production, Microsoft Threat Protection Pilot-projekt, cyberterrorism-säkerhet, Avancerat, beständiga hot, företags säkerhet, enheter, enhet, identitet, användare, data, program, tillbud, automatiserad undersökning och reparation, avancerad jakt
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,41 +20,41 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: e62b4ec0ee6c9d05321accf269406e8127019f5b
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: ec2bfe52308231577e4f2749e1f4cdf24a36f604
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418115"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846026"
 ---
-# <a name="planning-your-pilot-microsoft-threat-protection-project"></a>Planera pilotmaterial Microsoft Threat Protection Project 
+# <a name="planning-your-pilot-microsoft-365-defender-project"></a>Planera piloten Microsoft 365 Defender Project 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Gäller för:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
-        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft Threat Protection project" title="Planera ditt pilot Microsoft Threat Protection Project" />
+        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft 365 Defender project" title="Planera piloten Microsoft 365 Defender Project" />
       <br/>Planera</a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
-        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Förbereda ett utvärderings labb för Microsoft Threat Protection eller pilot miljö" />
+        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Förbereda utvärderings labb eller pilot miljö för Microsoft 365 Defender" />
       <br/>Förbereda</a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
-        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft Threat Protection attack simulations" title="Kör dina simuleringar av angrepps skydd för Microsoft Threats" />
+        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft 365 Defender attack simulations" title="Köra din Microsoft 365 Defender-attack simulering" />
      <br/>Simulera attack</a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
-        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft Threat Protection pilot" title="Stänga och sammanfatta ditt Microsoft Threat Protection pilot" />
+        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft 365 Defender pilot" title="Stänga och sammanfatta din Microsoft 365 Defender pilot" />
      <br/>Stäng och sammanfatta</a><br>
     </td>
   </tr>
@@ -91,7 +91,7 @@ Omfattningen av piloten bestämmer hur breda testet kommer att vara, baserat på
 - Produktions miljö med Microsoft 365, Azure, Active Directory-tjänster, slut punkter och servrar
 
 >[!NOTE]
->Om du inte har alla licenser ännu kan du få prov licenser för utvärdering av [Microsoft Threat Protection](https://aka.ms/mtp-trial-lab) – planera, förbereda, konfigurera och starta ett pilot projekt. Dina intressenter spelar en stor roll för att under lätta processen från början till slut.
+>Om du inte har de fullständiga licenserna ännu kan du få prov licenser för [utvärdering av Microsoft 365 Defender](https://aka.ms/mtp-trial-lab) – planera, förbereda, konfigurera och köra ett pilot projekt. Dina intressenter spelar en stor roll för att under lätta processen från början till slut.
 
 Vilka typer av operativ system som ska utvärderas ska också definieras baserat på organisationens makeup. Det kan vara följande: [Mac-slutpunkter](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#system-requirements), [Linux-servrar](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#system-requirements), [Windows 10-slutpunkter](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions), [Windows Server 2016](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions).
 
@@ -110,11 +110,11 @@ I listan över användnings fall kan du börja skapa krav. Kraven inkluderar fun
 
 ## <a name="test-plan"></a>Test plan
 
-Beroende på kraven kan de olika test metoderna vara lämpliga. Om behovet är att utvärdera hur automatisk reparation fungerar måste test planen innehålla instruktioner för att generera de beteenden som skulle utlösa en automatisk reparations åtgärd inom Microsoft Threat Protection. Om behovet är att upptäcka ett visst beteende eller en attack kan testet innehålla fler steg. Det är bara att planera ett abonnemang mot dina behov.
+Beroende på kraven kan de olika test metoderna vara lämpliga. Om behovet är att utvärdera hur automatisk reparation fungerar måste test planen innehålla instruktioner för att generera de beteenden som skulle utlösa en automatisk reparations åtgärd i Microsoft 365 Defender. Om behovet är att upptäcka ett visst beteende eller en attack kan testet innehålla fler steg. Det är bara att planera ett abonnemang mot dina behov.
 
 ## <a name="success-criteria"></a>Villkor för framgång
 
-Villkoren för framgång är i sista hand för att mäta det du testar. Oavsett om du testar skydd mot Microsoft Threat (eller någon annan teknik) mot andra verktyg eller för sig själv, måste det finnas vissa kriterier för att avgöra vilket värde verktyget erbjuder. Utifrån omfattning, krav och test plan bestämmer villkoren för framgång hur du ska räkna med testet. Detta bör vara mindre av ett pass eller fel och mer av viktat poäng baserat på dina behov. För att lyckas kan ett verktyg behöva gå över 80% i vissa kritiska områden som du anger.
+Villkoren för framgång är i sista hand för att mäta det du testar. Oavsett om du testar Microsoft 365 Defender (eller någon annan teknik) mot andra verktyg eller själv, måste det finnas vissa kriterier för att avgöra vilket värde verktyget erbjuder. Utifrån omfattning, krav och test plan bestämmer villkoren för framgång hur du ska räkna med testet. Detta bör vara mindre av ett pass eller fel och mer av viktat poäng baserat på dina behov. För att lyckas kan ett verktyg behöva gå över 80% i vissa kritiska områden som du anger.
 
 ## <a name="scorecard"></a>Styrkort
 
@@ -122,12 +122,12 @@ Ett sätt att samla ihop alla element i planen är att skapa ett styrkort. Visa 
 
 | Användnings fall | Krav | Konfigurations krav | Test plan | Förväntat resultat | Test status | Poäng | Kommentarer |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
-|Ärende hantering|-Skydd mot Microsoft Threat </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Säkerhet för Microsoft Cloud App (valfritt)|Se [förutsättningarna](https://aka.ms/mtp-trial-lab) för förberedelse, konfigurering och konfiguration för information |[Simulera attack](mtp-pilot-simulate.md) <br></br>[Undersök problemet](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |Prövare kan förstå omfattningen och konsekvenserna av incidenten och hantera händelsen||||
-|AutoIR|-Skydd mot Microsoft Threat </br></br>-Azure ATP </br></br>-Microsoft Defender ATP |Se [förutsättningarna](https://aka.ms/mtp-trial-lab) för förberedelse, konfigurering och konfiguration för information <br>Aktivera AutoIR  |[Simulera attack](mtp-pilot-simulate.md) <br></br>[Automatisk undersökning](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Aviseringar och händelser åtgärdas automatiskt av skydd mot Microsoft Threat||||
-|Avancerad jakt|-Skydd mot Microsoft Threat </br></br>-Microsoft Defender ATP </br></br>-Office 365 ATP   |Se [förutsättningarna](https://aka.ms/mtp-trial-lab) för förberedelse, konfigurering och konfiguration för information|[Avancerat jakt scenario](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#advanced-hunting-scenario) |Prövare kan hitta data genom avancerad jakt, pivotering till förverkningarade enheter och genom att skapa anpassade identifieringar||||
+|Ärende hantering|-Microsoft 365 Defender  </br></br>-Microsoft Defender för identitet </br></br>-Microsoft Defender för slut punkt </br></br>-Säkerhet för Microsoft Cloud App (valfritt)|Se [förutsättningarna](https://aka.ms/mtp-trial-lab) för förberedelse, konfigurering och konfiguration för information |[Simulera attack](mtp-pilot-simulate.md) <br></br>[Undersök problemet](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |Prövare kan förstå omfattningen och konsekvenserna av incidenten och hantera händelsen||||
+|AutoIR|-Microsoft 365 Defender </br></br>-Microsoft Defender för identitet </br></br>-Microsoft Defender för slut punkt |Se [förutsättningarna](https://aka.ms/mtp-trial-lab) för förberedelse, konfigurering och konfiguration för information <br>Aktivera AutoIR  |[Simulera attack](mtp-pilot-simulate.md) <br></br>[Automatisk undersökning](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Aviseringar och händelser åtgärdas automatiskt av Microsoft 365 Defender||||
+|Avancerad jakt|-Microsoft 365 Defender </br></br>-Microsoft Defender för slut punkt </br></br>-Microsoft Defender för Office 365 |Se [förutsättningarna](https://aka.ms/mtp-trial-lab) för förberedelse, konfigurering och konfiguration för information|[Avancerat jakt scenario](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#advanced-hunting-scenario) |Prövare kan hitta data genom avancerad jakt, pivotering till förverkningarade enheter och genom att skapa anpassade identifieringar||||
 
 
 
 ## <a name="next-step"></a>Nästa steg
-|![Förberedelse fas](../../media/mtp/prep.png) <br>[Förberedelse fas](prepare-mtpeval.md) | Förbereda din pilot miljö för Microsoft Threat Protection
+|![Förberedelse fas](../../media/mtp/prep.png) <br>[Förberedelse fas](prepare-mtpeval.md) | Förbereda din Microsoft 365 Defender pilot miljö
 |:-------|:-----|

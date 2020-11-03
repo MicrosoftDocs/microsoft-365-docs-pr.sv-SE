@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 09/16/2020
-ms.openlocfilehash: 22a40e3c0c804800f2de02e705d1dfec6e296db0
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: ed0b9afa576f65d33cd9a49dfacd96ffaf173d28
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429617"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846538"
 ---
 # <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>Godkänna eller avvisa väntande åtgärder efter en automatisk undersökning
 
@@ -34,12 +34,12 @@ ms.locfileid: "48429617"
 
 
 **Gäller för:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 När en automatisk undersökning körs kan den resultera i en eller flera [reparations åtgärder](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) som kräver godkännande för att fortsätta. Ett kluster med e-postmeddelanden kan till exempel behöva tas bort, eller så måste en fil i karantän tas bort. Det är viktigt att godkänna (eller avvisa) pågående åtgärder så snart som möjligt så att dina automatiserade utredningar kan fortsätta och genomföras i god tid. 
 
 > [!TIP]
-> Om du tror att något har missats eller upptäckts felaktigt av den automatiska undersöknings-och svars funktionerna i Microsoft Threat Protection, tala om det för oss! Lär dig [hur du rapporterar falskta positiva eller negativa negativ i en automatiserad undersökning och svar (Air) i Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
+> Om du tror att något har missats eller upptäckts felaktigt av automatiserade undersökningar och svars funktioner i Microsoft 365 Defender kan du tala om det för oss! Lär dig [hur du rapporterar falskta positiva eller negativa negativ i en automatiserad undersökning och svar (Air) i Microsoft 365 Defender](mtp-autoir-report-false-positives-negatives.md).
 
 Väntande åtgärder kan granskas och godkännas med hjälp av [Åtgärds centret](#review-a-pending-action-in-the-action-center) eller [vyn granska information](#review-a-pending-action-in-the-investigation-details-view).
 
@@ -62,7 +62,7 @@ Väntande åtgärder kan granskas och godkännas med hjälp av [Åtgärds centre
 
 ![Gransknings uppgifter](../../media/mtp-air-investdetails.png)
 
-1. På en [undersöknings](mtp-autoir-results.md) sida väljer du fliken **pågående åtgärder** (eller **åtgärder**). Objekt som väntar på godkännande finns här.
+1. På en [undersöknings](mtp-autoir-results.md) sida väljer du fliken **pågående åtgärder** (eller **åtgärder** ). Objekt som väntar på godkännande finns här.
 
 2. Markera ett objekt i listan och välj sedan **Godkänn** eller **avvisa**.
 

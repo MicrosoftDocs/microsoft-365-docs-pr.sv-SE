@@ -21,12 +21,12 @@ description: Få en översikt över automatiserade undersökningar och svars fun
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: d63ba8a6d3ffb653b30448a973e1cd862631d350
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 316e2e30e5865e068f20d151cd0b081a96ee853f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447113"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845978"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>En översikt över automatiserad undersökning och svar (AIR) i Microsoft Defender för Office 365
 
@@ -62,7 +62,7 @@ För närvarande är det automatiskt undersökta notifieringar som genereras fr�
 > [!NOTE]
 > Aviseringarna som är markerade med en asterisk ( `*` ) har tilldelats en allvarlighets grad för *information* i respektive aviserings princip i säkerhets center för Microsoft 365, med e-postaviseringar inaktiverade. E-postaviseringar kan aktive ras genom [konfigurering av aviserings principer](../../compliance/alert-policies.md#alert-policy-settings). 
 
-Om du vill visa aviseringar väljer du **varningar**i avsnittet säkerhet & efterlevnad  >  **View alerts**. Välj en avisering om du vill visa dess uppgifter och därifrån kan du använda länken **Visa undersökning** för att gå till motsvarande [undersökning](air-view-investigation-results.md#investigation-graph).  
+Om du vill visa aviseringar väljer du **varningar** i avsnittet säkerhet & efterlevnad  >  **View alerts**. Välj en avisering om du vill visa dess uppgifter och därifrån kan du använda länken **Visa undersökning** för att gå till motsvarande [undersökning](air-view-investigation-results.md#investigation-graph).  
 
 > [!NOTE]
 > Informations varningar döljs som standard i vyn avisering. För att se dem kan du ändra varnings filtreringen så att den innehåller informations aviseringar.
@@ -73,7 +73,7 @@ Om din organisation hanterar dina säkerhets varningar via ett system för avise
 
 ## <a name="security-playbooks"></a>Säkerhets playbooks
 
-Säkerhets playbooks är backend-principer som är baserade på automatisering i Microsoft Defender för Office 365 och Microsoft Threat Protection. De säkerhets playbooks som tillhandahålls i AIR är baserade på vanliga scenarier för verklig säkerhet och utvecklad utifrån feedback från team för säkerhets åtgärder. En säkerhets Playbook startas automatiskt när specifika aviseringar utlöses inom din organisation. När notifieringen utlöses körs den associerade Playbook av den automatiska undersöknings-och svars systemet. Undersöknings stegen genom analys av aviseringen baserat på den specifika aviseringens Playbook, som visar alla associerade metadata (inklusive e-postmeddelanden, användare, ämnen, avsändare osv.). På grund av undersökningen playbooks resultat rekommenderar AIR en uppsättning åtgärder som organisationens säkerhets team kan vidta för att kontrol lera och minska hotet. 
+Säkerhets playbooks är backend-principer som är på automatiserings i Microsoft Defender för Office 365 och Microsoft 365 Defender. De säkerhets playbooks som tillhandahålls i AIR är baserade på vanliga scenarier för verklig säkerhet och utvecklad utifrån feedback från team för säkerhets åtgärder. En säkerhets Playbook startas automatiskt när specifika aviseringar utlöses inom din organisation. När notifieringen utlöses körs den associerade Playbook av den automatiska undersöknings-och svars systemet. Undersöknings stegen genom analys av aviseringen baserat på den specifika aviseringens Playbook, som visar alla associerade metadata (inklusive e-postmeddelanden, användare, ämnen, avsändare osv.). På grund av undersökningen playbooks resultat rekommenderar AIR en uppsättning åtgärder som organisationens säkerhets team kan vidta för att kontrol lera och minska hotet. 
 
 Playbooks som du får med flyg är avsedda att klara de hot som organisationer drabbar idag med e-post. De baseras på inmatningar från säkerhets åtgärder och arbets grupps svar, inklusive personer som kan försvara Microsoft och våra kunders till gångar.
 
@@ -118,7 +118,7 @@ Nu utförs flera hot undersökningar och jakt steg:
 - Likartade e-postmeddelanden identifieras via e-postklusters ökning.
 - Signalen delas med andra plattformar, till exempel [Microsoft Defender för slut punkten](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
 - En bestämning görs på om en användare har klickat på några illasinnade länkar i misstänkta e-postmeddelanden.
-- En kontroll görs med Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) och Office 365 Avancerat skydd ([ATP](office-365-atp.md)) för att se om det finns andra liknande meddelanden som rapporteras av användarna.
+- En kontroll görs med Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) och ([Microsoft Defender för Office 365](office-365-atp.md)) för att se om det finns andra liknande meddelanden som rapporteras av användarna.
 - En kontroll görs för att se om en användare har fått ett problem. Den här kontrollen används för att utnyttja signaler mellan Office 365, [Microsoft Cloud App-säkerhet](https://docs.microsoft.com/cloud-app-security)och [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), som korrelerar relaterade användar aktiviteter.
 
 Under jakt fasen är riskerna och hot tilldelade till olika jakt steg. 
@@ -143,7 +143,7 @@ På liknande sätt som playbooks utlöst av en avisering, inkluderar automatiska
 
 AIR-funktioner i Microsoft Defender för Office 365 innehåller [rapporter & information](air-view-investigation-results.md) som kan användas för att övervaka och adressera hot. Men du kan också integrera AIR-funktioner med andra lösningar. Exemplen innehåller ett system för säkerhets information och Event Management (SIEM), ett ärende hanterings system eller en anpassad rapporterings lösning. Dessa integrerings typer kan du göra med hjälp av [API för hanterings aktivitet i Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
 
-Till exempel har en organisation ställt in ett sätt för sin säkerhets åtgärds grupp för att Visa rapporterade Phish-aviseringar som redan bearbetats av AIR. Sin lösning integrerar relevanta aviseringar med organisationens SIEM-Server och ärende hanterings system. Lösningen minskar mängden falsk identifiering så att deras säkerhets åtgärd kan fokusera sin tid och ansträngning för riktiga hot. Om du vill veta mer om den här anpassade lösningen kan du läsa [teknisk community-blogg: förbättra effektiviteten hos din SOC med Office 365 ATP och O365 Management API](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
+Till exempel har en organisation ställt in ett sätt för sin säkerhets åtgärds grupp för att Visa rapporterade Phish-aviseringar som redan bearbetats av AIR. Sin lösning integrerar relevanta aviseringar med organisationens SIEM-Server och ärende hanterings system. Lösningen minskar mängden falsk identifiering så att deras säkerhets åtgärd kan fokusera sin tid och ansträngning för riktiga hot. Om du vill veta mer om den här anpassade lösningen kan du läsa [teknisk community-blogg: förbättra SOC i Microsoft Defender för Office 365 och O365 Management API](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
 
 ## <a name="next-steps"></a>Nästa steg
 

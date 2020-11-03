@@ -8,12 +8,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1e50b07208df46b199aada9c2ccbe04cc1c1ae72
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: e69656e13cd9a300cd56bdd5db7703f2387d23d4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289489"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846210"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Säkerhets teknik på Microsoft Managed Desktop
 
@@ -39,7 +39,7 @@ Tjänst | Beskrivning
 --- | ---
 Viktigt | Microsoft Defender AV är installerat och konfigurerat<br>Microsoft Defender AV-definitioner är uppdaterade
 Full volym kryptering |    Windows BitLocker är volym krypterings lösningen för Microsoft hanterade Station ära datorer.<br><br>När en organisation har satts in i tjänsten krypteras enheter med Windows BitLocker med inbyggd Trust Platform (TPM) för att förhindra otillåten åtkomst till lokala data när enheten är i vilo läge eller avstängd. 
-Övervakning |    Microsoft Defender Avancerat skydd (Microsoft Defender ATP) används för att övervaka säkerhets risken på alla Microsoft-hanterade Station ära enheter. Med Microsoft Defender ATP kan företags kunder upptäcka, undersöka och svara på avancerade hot i företagets nätverk. Mer information finns i [Microsoft Defender Avancerat skydd.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
+Övervakning |    Microsoft Defender för slut punkter används för att övervaka säkerhets risken på alla Microsoft-hanterade Station ära enheter. Med Defender för slut punkten kan företags kunder upptäcka, undersöka och svara på avancerade hot i företagets nätverk. Mer information finns i [Microsoft Defender för slut punkter.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
 Uppdateringar av operativ system |  Microsoft Managed Station ära datorer skyddas alltid med de senaste säkerhets uppdateringarna.
 Säker enhets konfiguration |   Microsoft Managed Desktop implementerar Microsofts säkerhets bas linje. Mer information finns i [säkerhets bas linjer för Windows.](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
 

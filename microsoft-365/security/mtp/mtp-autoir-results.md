@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 09/16/2020
-ms.openlocfilehash: 83a897438b9da88287574ff576fab9b2f6b30236
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 183435596706855479c49abc34358c85dccb0da4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430805"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846514"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Uppgifter och resultat från en automatiserad undersökning
 
@@ -34,9 +34,9 @@ ms.locfileid: "48430805"
 
 
 **Gäller för:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-När en automatisk undersökning görs med Microsoft Threat Protection är information om den undersökningen tillgängliga under och efter den automatiska gransknings processen. Om du har [nödvändig behörighet](mtp-action-center.md#required-permissions-for-action-center-tasks)kan du Visa den informationen i vyn granska information. I vyn undersöknings Detaljer får du uppdaterade status och möjlighet att godkänna väntande åtgärder. 
+När en automatisk undersökning sker i Microsoft 365 Defender är det möjligt att få information om den undersökningen och efter den automatiska gransknings processen. Om du har [nödvändig behörighet](mtp-action-center.md#required-permissions-for-action-center-tasks)kan du Visa den informationen i vyn granska information. I vyn undersöknings Detaljer får du uppdaterade status och möjlighet att godkänna väntande åtgärder. 
 
 ![Gransknings uppgifter](../../media/mtp-air-investdetails.png)
 
@@ -62,7 +62,7 @@ Använd en informations sida för att visa detaljerad information om en olycka, 
 
 1. Gå till [https://security.microsoft.com](https://security.microsoft.com) och logga in. 
 
-2. Välj **incidenter**i navigerings fönstret. 
+2. Välj **incidenter** i navigerings fönstret. 
 
 3. Välj ett objekt i listan för att öppna vyn incident information.<br/>![Incident uppgifter](../../media/mtp-incidentdetails-tabs.png)
 
@@ -74,7 +74,7 @@ Använd vyn granska information om du vill visa tidigare, nuvarande och väntand
 
 ![Gransknings uppgifter](../../media/mtp-air-investdetails.png)
 
-I vyn undersöknings Detaljer kan du se information om **undersökningen**, **aviseringar**, **enheter**, **identiteter**, **viktiga resultat**, **entiteter**, **loggning**och **väntande åtgärder** , som beskrivs i följande tabell.
+I vyn undersöknings Detaljer kan du se information om **undersökningen** , **aviseringar** , **enheter** , **identiteter** , **viktiga resultat** , **entiteter** , **loggning** och **väntande åtgärder** , som beskrivs i följande tabell.
 
 |Fliken    |Beskrivning |
 |--------|--------|

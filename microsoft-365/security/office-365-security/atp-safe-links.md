@@ -25,34 +25,34 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: I den här artikeln kan administratörer lära sig skydda länkar i Office 365 Avancerat skydd (ATP) för att skydda sin organisation från nätfiske och andra attacker som använder skadlig URL.
-ms.openlocfilehash: 45936cabf012c5f40080f3bbfee224aec9593d30
-ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
+description: I den här artikeln kan administratörer lära sig mer om skydd för säkra länkar i Defender för Office 365 för att skydda sin organisation från nätfiske och andra attacker som använder skadlig URL.
+ms.openlocfilehash: 869cb2f330b81481a2a0a013564853274654d0ef
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48806732"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846062"
 ---
-# <a name="safe-links-in-office-365-atp"></a>Säkra länkar i Office 365 ATP
+# <a name="safe-links-in-microsoft-defender-for-office-365"></a>Säkra länkar i Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Den här artikeln är avsedd för företags kunder som har Office 365-tjänsten för [Avancerat skydd (ATP)](office-365-atp.md). Om du använder Outlook.com, Microsoft 365 eller Microsoft 365 personal och du letar efter information om Safelinks i Outlook kan du läsa mer i [avancerad Outlook.com-säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Den här artikeln är avsedd för företags kunder som har [Microsoft Defender för Office 365](office-365-atp.md). Om du använder Outlook.com, Microsoft 365 eller Microsoft 365 personal och du letar efter information om Safelinks i Outlook kan du läsa mer i [avancerad Outlook.com-säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Säkra länkar är en funktion i [Office 365 Avancerat skydd](office-365-atp.md) som tillhandahåller URL-genomsökning och omskrivning av inkommande e-postmeddelanden i e-postflöde och när du klickar på verifiering av URL: er och länkar i e-postmeddelanden och andra platser. Sökning efter säkra länkar sker utöver det vanliga [skyddet mot skräp post och skydd mot skadlig program vara](anti-spam-and-anti-malware-protection.md) i inkommande e-postmeddelanden i Exchange Online Protection (EOP). Sökning efter säkra länkar skyddar din organisation från illasinnade länkar som används i nätfiske och andra attacker.
+Säkra länkar är en funktion i [Defender för Office 365](office-365-atp.md) som tillhandahåller URL-genomsökning och omskrivning av inkommande e-postmeddelanden i e-postflöde och för kontroll av URL-adresser och länkar i e-postmeddelanden och andra platser. Sökning efter säkra länkar sker utöver det vanliga [skyddet mot skräp post och skydd mot skadlig program vara](anti-spam-and-anti-malware-protection.md) i inkommande e-postmeddelanden i Exchange Online Protection (EOP). Sökning efter säkra länkar skyddar din organisation från illasinnade länkar som används i nätfiske och andra attacker.
 
 Säkra länkar skyddar du på följande platser:
 
-- **E-postmeddelanden** : skyddade länkar skydd för länkar i e-postmeddelanden styrs av principer för säkra länkar. Det finns ingen standard princip för säkra länkar, **så för att skydda säkra länkar i e-postmeddelanden måste du skapa en eller flera principer för säkra länkar** . Anvisningar finns i [Konfigurera principer för säkra länkar i ATP](set-up-atp-safe-links-policies.md).
+- **E-postmeddelanden** : skyddade länkar skydd för länkar i e-postmeddelanden styrs av principer för säkra länkar. Det finns ingen standard princip för säkra länkar, **så för att skydda säkra länkar i e-postmeddelanden måste du skapa en eller flera principer för säkra länkar**. Anvisningar finns i [Konfigurera principer för säkra länkar i Microsoft Defender för Office 365](set-up-atp-safe-links-policies.md).
 
   Mer information om säkra Länkar för e-postmeddelanden finns i avsnittet [Inställningar för säkra länkar i e-postmeddelanden](#safe-links-settings-for-email-messages) längre ned i den här artikeln.
 
-- **Microsoft Teams** (för närvarande i tryck för hands version): säkra länkar skydd för länkar i Teams konversationer, gruppchattar eller från kanaler styrs också av principer för säkra länkar. Det finns ingen standard princip för Safe Links, **så för att skydda säkra länkar i Teams måste du skapa en eller flera principer för säkra länkar** .
+- **Microsoft Teams** (för närvarande i tryck för hands version): säkra länkar skydd för länkar i Teams konversationer, gruppchattar eller från kanaler styrs också av principer för säkra länkar. Det finns ingen standard princip för Safe Links, **så för att skydda säkra länkar i Teams måste du skapa en eller flera principer för säkra länkar**.
 
   Mer information om skydd för säkra länkar i Teams finns i avsnittet [Inställningar för säkra Länkar för Microsoft Teams](#safe-links-settings-for-microsoft-teams) senare i det här avsnittet.
 
-- **Office 365-appar** : säkra länkar skydd för Office 365-appar är tillgängliga i Skriv bords-, mobil-och webb åtkomst punkter som stöds. Du **konfigurerar** skydd för säkra Länkar för Office 365-appar i den globala inställningen **utanför** Safe Links-principer. Anvisningar finns i [Konfigurera globala inställningar för inställningar för säkra länkar i Office 365 ATP](configure-global-settings-for-safe-links.md).
+- **Office 365-appar** : säkra länkar skydd för Office 365-appar är tillgängliga i Skriv bords-, mobil-och webb åtkomst punkter som stöds. Du **konfigurerar** skydd för säkra Länkar för Office 365-appar i den globala inställningen **utanför** Safe Links-principer. Anvisningar finns i [Konfigurera globala inställningar för inställningar för säkra länkar i Microsoft Defender för Office 365](configure-global-settings-for-safe-links.md).
 
   Men säkra länkar skyddar för Office 365- **appar endast för** användare som är inkluderade i principer för aktiva säkra länkar. Om en användare inte ingår i en princip för aktiva säkra länkar får användaren inte säkra länkar i Office 365-appar som stöds.
 
@@ -71,7 +71,7 @@ Den här artikeln innehåller detaljerad information om följande typer av inst�
   - [Inställningar för säkra Länkar för Office 365-appar](#safe-links-settings-for-office-365-apps)
   - ["Blockera följande URL-adresser" för säkra länkar](#block-the-following-urls-list-for-safe-links)
 
-I följande tabell beskrivs scenarier för säkra länkar i Microsoft 365 och Office 365 organisationer som innehåller ATP (med andra ord är brist på licensiering inte ett problem i exemplen).
+I följande tabell beskrivs scenarier för säkra länkar i Microsoft 365 och Office 365 organisationer som innehåller Defender för Office 365 (med andra ord är bristande licenser aldrig ett problem i exemplen).
 
 ****
 
@@ -91,7 +91,7 @@ När du har skrivit om en URL-adress sparas URL-adressen om, även om meddelande
 
 Inställningarna i principer för säkra länkar som gäller för e-postmeddelanden beskrivs i följande lista:
 
-- **Välj åtgärd för okända URL-adresser i meddelanden** : aktiverar eller inaktiverar sökning efter säkra länkar i e-postmeddelanden. Det rekommenderade värdet är **på** . Om du aktiverar den här inställningen får du följande åtgärder.
+- **Välj åtgärd för okända URL-adresser i meddelanden** : aktiverar eller inaktiverar sökning efter säkra länkar i e-postmeddelanden. Det rekommenderade värdet är **på**. Om du aktiverar den här inställningen får du följande åtgärder.
 
   - Sökning efter säkra länkar är aktiverat i Outlook (C2R) i Windows.
   - URL-adresser skrivs om och användare dirigeras genom skydd för säkra länkar när de klickar på URL-adresser i meddelanden.
@@ -152,7 +152,7 @@ På en hög nivå finns här hur säkra länkar skyddar sig på URL-adresser i e
 > [!IMPORTANT]
 > Från och med mars 2020 är den här funktionen i förhands granskning och är endast tillgänglig för medlemmar i Microsoft Teams-programmet (KNACKa). Information om versions schema finns i [Microsoft 365-översikten](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams).
 
-Du aktiverar eller inaktiverar skydd för säkra Länkar för Microsoft Teams i principer för säkra länkar. Du använder specifikt **åtgärden Välj åtgärd för okända eller potentiellt skadliga URL-adresser i Microsoft Teams** . Det rekommenderade värdet är **på** .
+Du aktiverar eller inaktiverar skydd för säkra Länkar för Microsoft Teams i principer för säkra länkar. Du använder specifikt **åtgärden Välj åtgärd för okända eller potentiellt skadliga URL-adresser i Microsoft Teams** . Det rekommenderade värdet är **på**.
 
 Följande inställningar i principer för säkra länkar som gäller för länkar i e-postmeddelanden gäller även för länkar i Teams:
 
@@ -180,7 +180,7 @@ På en hög nivå finns här hur säkra länkar skyddar sig efter URL-adresser i
 
 1. En användare startar Teams-appen.
 
-2. Microsoft 365 kontrollerar att användarens organisation innehåller Office 365 ATP och att användaren ingår i en Active Safe Links-princip där skyddet för Microsoft Teams är aktiverat.
+2. Microsoft 365 kontrollerar att användarens organisation innehåller Microsoft Defender för Office 365 och att användaren ingår i en Active Safe Links-princip där skyddet för Microsoft Teams är aktiverat.
 
 3. URL-adresser verifieras vid tiden för användaren i chatt, gruppchatt, kanaler och flikar.
 
@@ -204,11 +204,11 @@ Du konfigurerar skydd för säkra Länkar för Office 365-appar i de globala ins
 
 Följande inställningar för säkra länkar är tillgängliga för Office 365-appar:
 
-- **Office 365-program** : aktiverar eller inaktiverar sökning efter säkra länkar i Office 365-appar som stöds. Standard och Rekommenderat värde är **på** .
+- **Office 365-program** : aktiverar eller inaktiverar sökning efter säkra länkar i Office 365-appar som stöds. Standard och Rekommenderat värde är **på**.
 
 - **Spåra inte när användare klickar på säkra länkar** : aktiverar eller inaktiverar lagring av säkra länkar Klicka på data för URL-adresser på Word, Excel, PowerPoint och Visio. Det rekommenderade värdet är **inaktiverat** , vilket innebär att användare spåras.
 
-- **Tillåt inte att användare klickar via säkra länkar till original-URL** : tillåter eller blockerar användare från att klicka på [varnings sidan](#warning-pages-from-safe-links) till den ursprungliga URL-adressen i Skriv bords versionerna Word, Excel, PowerPoint och Visio. Standard och Rekommenderat värde är **på** .
+- **Tillåt inte att användare klickar via säkra länkar till original-URL** : tillåter eller blockerar användare från att klicka på [varnings sidan](#warning-pages-from-safe-links) till den ursprungliga URL-adressen i Skriv bords versionerna Word, Excel, PowerPoint och Visio. Standard och Rekommenderat värde är **på**.
 
 Information om hur du konfigurerar inställningar för Safe Links för Office 365-appar finns i [Konfigurera skydd för säkra Länkar för office 365-appar](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center).
 

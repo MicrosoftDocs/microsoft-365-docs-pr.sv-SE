@@ -17,12 +17,12 @@ ms.custom:
 - SIEM
 - seo-marvel-apr2020
 description: Få en översikt över säkerhets information och SIEM Server integration med Microsoft 365-molntjänster och-program
-ms.openlocfilehash: 6d657990417cab2a8cbb1b03b8b79a65c095d1a5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0e582333615d11c500b114225435903cea386ade
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202215"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846406"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Integrering av säkerhets information och Event Management (SIEM) med Microsoft 365-tjänster och-program
 
@@ -52,13 +52,13 @@ En SIEM-Server kan ta emot data från en mängd olika Microsoft 365-tjänster oc
 
 |Microsoft 365-tjänsten eller-programmet|SIEM-Server data/metoder|Resurser för att få mer information|
 |---|---|---|
-|[Office 365 Avancerat skydd](office-365-atp.md)|Gransknings loggar|[SIEM integrering med Office 365 Avancerat skydd för hotet](siem-integration-with-office-365-ti.md)|
-|[Microsoft Defender Avancerat skydd](https://docs.microsoft.com/windows/security/threat-protection/)|HTTPS-slutpunkt med Azure värd <br/>REST API|[Dra aviseringar till dina SIEM-verktyg](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
+|[Microsoft Defender för Office 365](office-365-atp.md)|Gransknings loggar|[SIEM integrering med Microsoft Defender för Office 365](siem-integration-with-office-365-ti.md)|
+|[Microsoft Defender för slut punkt](https://docs.microsoft.com/windows/security/threat-protection/)|HTTPS-slutpunkt med Azure värd <br/>REST API|[Dra aviseringar till dina SIEM-verktyg](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Logg integrering|[SIEM integrering med säkerhet för Microsoft Cloud App](https://docs.microsoft.com/cloud-app-security/siem)|
 |
 
 > [!TIP]
-> Ta en titt på [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview). Azure Sentinel kommer med anslutningar för Microsoft Solutions. Dessa kopplingar är tillgängliga "i kartongen" och möjliggör integrering i real tid. Du kan använda Azure Sentinel med Microsoft Threat Protection Solutions och Microsoft 365-tjänsterna, inklusive Office 365, Azure AD, Azure ATP, Microsoft Cloud App Security och mycket mer.
+> Ta en titt på [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview). Azure Sentinel kommer med anslutningar för Microsoft Solutions. Dessa kopplingar är tillgängliga "i kartongen" och möjliggör integrering i real tid. Du kan använda Azure Sentinel med Microsoft 365 Defender-lösningarna och Microsoft 365-tjänsterna, inklusive Office 365, Azure AD, Microsoft Defender för identitet, Microsoft Cloud App-säkerhet och mycket mer.
 
 ### <a name="audit-logging-must-be-turned-on"></a>Gransknings loggning måste aktive ras
 
@@ -70,6 +70,6 @@ Kontrol lera att gransknings loggning är aktiverat innan du konfigurerar SIEM.
 
 ## <a name="more-resources"></a>Fler resurser
 
-[Integrera säkerhetslösningar i Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
+[Integrera säkerhetslösningar i Azure Defender *](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
 
 [Integrera Microsoft Graph-säkerhetsfunktionerna med en SIEM](https://docs.microsoft.com/graph/security-integration)
