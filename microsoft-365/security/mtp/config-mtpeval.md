@@ -1,6 +1,6 @@
 ---
-title: Konfigurera Microsoft Threat Protection-pelare för utvärderings labbet eller pilot miljön
-description: Konfigurera skydd mot Microsoft Threat Protection, till exempel Office 365 ATP, Azure ATP, Microsoft Cloud App Security och Microsoft Defender ATP, för utvärderings labbet eller pilot miljön.
+title: Konfigurera Microsoft 365 Defender-pelaren för utvärderings labbet eller pilot miljön
+description: Konfigurera Microsoft 365 Defender-pelaren, till exempel Microsoft Defender för Office 365, Microsoft Defender för identitet, Microsoft Cloud App-säkerhet och Microsoft Defender för slut punkten, för utvärderings labbet eller pilot miljön.
 keywords: Konfigurera utvärderings versionen av Microsoft Threat Protection, test version av Microsoft Threat Protection, konfigurera Microsoft Threat Protection Pilot-projekt, konfigurera Microsoft Threat Protection-spel, Microsoft Threat Protection-pelare
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,293 +20,293 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 7e9060c804fcdb8445c8d833d8a43dc90a738b04
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: 88db2182ec1a3250d2f4308858026fec97a2f91b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418163"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844110"
 ---
-# <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-or-pilot-environment"></a><span data-ttu-id="3248e-104">Konfigurera skydd mot Microsoft Threat för utvärderings labbet eller pilot miljön</span><span class="sxs-lookup"><span data-stu-id="3248e-104">Configure Microsoft Threat Protection pillars for your trial lab or pilot environment</span></span>
+# <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a><span data-ttu-id="1e231-104">Konfigurera Microsoft 365 Defender-pelaren för utvärderings labbet eller pilot miljön</span><span class="sxs-lookup"><span data-stu-id="1e231-104">Configure Microsoft 365 Defender pillars for your trial lab or pilot environment</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="3248e-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="3248e-105">**Applies to:**</span></span>
-- <span data-ttu-id="3248e-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="3248e-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="1e231-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="1e231-105">**Applies to:**</span></span>
+- <span data-ttu-id="1e231-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="1e231-106">Microsoft 365 Defender</span></span>
 
 
-<span data-ttu-id="3248e-107">Att skapa ett utvärderings labb för Microsoft Threat-eller pilot miljö och distribuera det är en process i tre steg:</span><span class="sxs-lookup"><span data-stu-id="3248e-107">Creating a Microsoft Threat Protection trial lab or pilot environment and deploying it is a three-phase process:</span></span>
+<span data-ttu-id="1e231-107">Att skapa en test labb-eller pilot miljö för Microsoft 365 Defender och distribuera det är en process i tre steg:</span><span class="sxs-lookup"><span data-stu-id="1e231-107">Creating a Microsoft 365 Defender trial lab or pilot environment and deploying it is a three-phase process:</span></span>
 
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Förbereda ett utvärderings labb för Microsoft Threat Protection eller pilot miljö" />
-      <br/><span data-ttu-id="3248e-109">Fas 1: förbereda </a></span><span class="sxs-lookup"><span data-stu-id="3248e-109">Phase 1: Prepare </a></span></span><br>
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Förbereda utvärderings labb eller pilot miljö för Microsoft 365 Defender" />
+      <br/><span data-ttu-id="1e231-109">Fas 1: förbereda </a></span><span class="sxs-lookup"><span data-stu-id="1e231-109">Phase 1: Prepare </a></span></span><br>
     </td>
      <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab or pilot environment" title="Ställ in ett utvärderings labb eller pilot miljö för Microsoft Threat Protection" />
-      <br/><span data-ttu-id="3248e-111">Fas 2: konfiguration </a></span><span class="sxs-lookup"><span data-stu-id="3248e-111">Phase 2: Setup </a></span></span><br>
+        <img src="../../media/setup.png" alt="Set up your Microsoft 365 Defender trial lab or pilot environment" title="Konfigurera utvärderings labb eller pilot miljö för Microsoft 365 Defender" />
+      <br/><span data-ttu-id="1e231-111">Fas 2: konfiguration </a></span><span class="sxs-lookup"><span data-stu-id="1e231-111">Phase 2: Setup </a></span></span><br>
     </td>
     <td align="center" bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
-        <img src="../../media/config-onboard.png" alt="Configure & Onboard" title="Konfigurera var and rings skydd för ditt Microsoft Threat Protection test labb eller pilot miljö och inbyggda slut punkter" />
-      <br/><span data-ttu-id="3248e-113">Steg 3: Konfigurera & inbyggt </a></span><span class="sxs-lookup"><span data-stu-id="3248e-113">Phase 3: Configure & Onboard </a></span></span><br>
+        <img src="../../media/config-onboard.png" alt="Configure & Onboard" title="Konfigurera varje Microsoft 365 Defender-pelare för utvärderings labb och drift slut punkter för Microsoft 365 Defender" />
+      <br/><span data-ttu-id="1e231-113">Steg 3: Konfigurera & inbyggt </a></span><span class="sxs-lookup"><span data-stu-id="1e231-113">Phase 3: Configure & Onboard </a></span></span><br>
 </td>
   </tr>
 </table>
 
-<span data-ttu-id="3248e-114">Du är för närvarande i konfigurations fasen.</span><span class="sxs-lookup"><span data-stu-id="3248e-114">You're currently in the configuration phase.</span></span>
+<span data-ttu-id="1e231-114">Du är för närvarande i konfigurations fasen.</span><span class="sxs-lookup"><span data-stu-id="1e231-114">You're currently in the configuration phase.</span></span>
 
 
-<span data-ttu-id="3248e-115">Förberedelsen är viktig för eventuell distribution.</span><span class="sxs-lookup"><span data-stu-id="3248e-115">Preparation is key to any successful deployment.</span></span> <span data-ttu-id="3248e-116">I den här artikeln ska du vägleda dig på de Points du måste tänka på när du förbereder dig för att distribuera Microsoft Defender ATP.</span><span class="sxs-lookup"><span data-stu-id="3248e-116">In this article, you'll be guided on the points you'll need to consider as you prepare to deploy Microsoft Defender ATP.</span></span>
+<span data-ttu-id="1e231-115">Förberedelsen är viktig för eventuell distribution.</span><span class="sxs-lookup"><span data-stu-id="1e231-115">Preparation is key to any successful deployment.</span></span> <span data-ttu-id="1e231-116">I den här artikeln vägleder vi dig på de Points du måste tänka på när du förbereder dig för att distribuera Microsoft Defender för slut punkten.</span><span class="sxs-lookup"><span data-stu-id="1e231-116">In this article, you'll be guided on the points you'll need to consider as you prepare to deploy Microsoft Defender for Endpoint.</span></span>
 
 
-## <a name="microsoft-threat-protection-pillars"></a><span data-ttu-id="3248e-117">Microsoft Threat Protection-pelare</span><span class="sxs-lookup"><span data-stu-id="3248e-117">Microsoft Threat Protection pillars</span></span>
-<span data-ttu-id="3248e-118">Microsoft Threat Protection består av fyra pelare.</span><span class="sxs-lookup"><span data-stu-id="3248e-118">Microsoft Threat Protection consists of four pillars.</span></span> <span data-ttu-id="3248e-119">Även om en pelare redan kan ge ett värde till din nätverks organisations säkerhet, ger det fyra till gång till din organisation flest värde.</span><span class="sxs-lookup"><span data-stu-id="3248e-119">Although one pillar can already provide value to your network organization's security, enabling the four Microsoft Threat Protection pillars will give your organization the most value.</span></span>
+## <a name="microsoft-365-defender-pillars"></a><span data-ttu-id="1e231-117">Microsoft 365 Defender-pelare</span><span class="sxs-lookup"><span data-stu-id="1e231-117">Microsoft 365 Defender pillars</span></span>
+<span data-ttu-id="1e231-118">Microsoft 365 Defender består av fyra pelare.</span><span class="sxs-lookup"><span data-stu-id="1e231-118">Microsoft 365 Defender consists of four pillars.</span></span> <span data-ttu-id="1e231-119">Även om en pelare redan kan ge ett värde till din organisations säkerhet i ditt nätverk, ger de fyra hög365 Defender-stenarna det mest aktuella värdet.</span><span class="sxs-lookup"><span data-stu-id="1e231-119">Although one pillar can already provide value to your network organization's security, enabling the four Microsoft 365 Defender pillars will give your organization the most value.</span></span>
 
-![<span data-ttu-id="3248e-120">Of_Microsoft hot skydds lösning för användare, Azure Avancerat skydd för slut punkter Microsoft Defender Avancerat skydd, för Cloud-appar, Microsoft Cloud App-säkerhet och för data, Office 365 Avancerat skydd</span><span class="sxs-lookup"><span data-stu-id="3248e-120">Image of_Microsoft Threat Protection solution for users, Azure Advanced Threat Protection, for endpoints Microsoft Defender Advanced Threat Protection, for cloud apps, Microsoft Cloud App Security, and for data, Office 365 Advanced Threat Protection</span></span>  ](../../media/mtp-eval-31.png)
+![Bild of_Microsoft 365 Defender-lösning för användare, Microsoft Defender för identitet för slut punkter Microsoft Defender för slut punkter, moln program, Microsoft Cloud App-säkerhet och för data, Microsoft Defender för Office 365](../../media/mtp-eval-31.png)
 
-<span data-ttu-id="3248e-121">I det här avsnittet får du hjälp att konfigurera:</span><span class="sxs-lookup"><span data-stu-id="3248e-121">This section will guide you to configure:</span></span>
--   <span data-ttu-id="3248e-122">Office 365 Avancerat skydd</span><span class="sxs-lookup"><span data-stu-id="3248e-122">Office 365 Advanced Threat Protection</span></span>
--   <span data-ttu-id="3248e-123">Azure Advanced Threat Protection</span><span class="sxs-lookup"><span data-stu-id="3248e-123">Azure Advanced Threat Protection</span></span> 
--   <span data-ttu-id="3248e-124">Microsoft Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="3248e-124">Microsoft Cloud App Security</span></span>
--   <span data-ttu-id="3248e-125">Microsoft Defender Avancerat skydd</span><span class="sxs-lookup"><span data-stu-id="3248e-125">Microsoft Defender Advanced Threat Protection</span></span>
+<span data-ttu-id="1e231-121">I det här avsnittet får du hjälp att konfigurera:</span><span class="sxs-lookup"><span data-stu-id="1e231-121">This section will guide you to configure:</span></span>
+-   <span data-ttu-id="1e231-122">Microsoft Defender för Office 365</span><span class="sxs-lookup"><span data-stu-id="1e231-122">Microsoft Defender for Office 365</span></span>
+-   <span data-ttu-id="1e231-123">Microsoft Defender för identitet</span><span class="sxs-lookup"><span data-stu-id="1e231-123">Microsoft Defender for Identity</span></span> 
+-   <span data-ttu-id="1e231-124">Microsoft Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="1e231-124">Microsoft Cloud App Security</span></span>
+-   <span data-ttu-id="1e231-125">Microsoft Defender för slut punkt</span><span class="sxs-lookup"><span data-stu-id="1e231-125">Microsoft Defender for Endpoint</span></span>
 
 
-## <a name="configure-office-365-advanced-threat-protection"></a><span data-ttu-id="3248e-126">Konfigurera Office 365 Avancerat skydd</span><span class="sxs-lookup"><span data-stu-id="3248e-126">Configure Office 365 Advanced Threat Protection</span></span>
+## <a name="configure-microsoft-defender-for-office-365"></a><span data-ttu-id="1e231-126">Konfigurera Microsoft Defender för Office 365</span><span class="sxs-lookup"><span data-stu-id="1e231-126">Configure Microsoft Defender for Office 365</span></span>
 
 >[!NOTE]
-><span data-ttu-id="3248e-127">Hoppa över det här steget om du redan har aktiverat Office 365 Avancerat skydd.</span><span class="sxs-lookup"><span data-stu-id="3248e-127">Skip this step if you've already enabled Office 365 Advanced Threat Protection.</span></span> 
+><span data-ttu-id="1e231-127">Hoppa över det här steget om du redan har aktiverat Defender för Office 365.</span><span class="sxs-lookup"><span data-stu-id="1e231-127">Skip this step if you've already enabled Defender for Office 365.</span></span> 
 
-<span data-ttu-id="3248e-128">Det finns en PowerShell-modul som heter *Office 365 Advanced Threat Protection (Orca)* som hjälper dig att avgöra vissa av de här inställningarna.</span><span class="sxs-lookup"><span data-stu-id="3248e-128">There's a PowerShell Module called the *Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA)* that helps determine some of these settings.</span></span> <span data-ttu-id="3248e-129">När du kör som administratör i klient organisationen kan du med ORCAReport få en utvärdering av skräp post, anti-Phish och andra inställningar för meddelande hygien.</span><span class="sxs-lookup"><span data-stu-id="3248e-129">When run as an administrator in your tenant, get-ORCAReport will help generate an assessment of the anti-spam, anti-phish, and other message hygiene settings.</span></span> <span data-ttu-id="3248e-130">Du kan hämta den här modulen från https://www.powershellgallery.com/packages/ORCA/ .</span><span class="sxs-lookup"><span data-stu-id="3248e-130">You can download this module from https://www.powershellgallery.com/packages/ORCA/.</span></span> 
+<span data-ttu-id="1e231-128">Det finns en PowerShell-modul som heter *Office 365 Advanced Threat Protection (Orca)* som hjälper dig att avgöra vissa av de här inställningarna.</span><span class="sxs-lookup"><span data-stu-id="1e231-128">There's a PowerShell Module called the *Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA)* that helps determine some of these settings.</span></span> <span data-ttu-id="1e231-129">När du kör som administratör i klient organisationen kan du med ORCAReport få en utvärdering av skräp post, anti-Phish och andra inställningar för meddelande hygien.</span><span class="sxs-lookup"><span data-stu-id="1e231-129">When run as an administrator in your tenant, get-ORCAReport will help generate an assessment of the anti-spam, anti-phish, and other message hygiene settings.</span></span> <span data-ttu-id="1e231-130">Du kan hämta den här modulen från https://www.powershellgallery.com/packages/ORCA/ .</span><span class="sxs-lookup"><span data-stu-id="1e231-130">You can download this module from https://www.powershellgallery.com/packages/ORCA/.</span></span> 
 
-1. <span data-ttu-id="3248e-131">Navigera till [Office 365-säkerhets &](https://protection.office.com/homepage)  >  policy för**hantering**av villkor för efterlevnad  >  **Policy**.</span><span class="sxs-lookup"><span data-stu-id="3248e-131">Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Threat management** > **Policy**.</span></span>
+1. <span data-ttu-id="1e231-131">Navigera till [Office 365-säkerhets &](https://protection.office.com/homepage)  >  policy för **hantering** av villkor för efterlevnad  >  **Policy**.</span><span class="sxs-lookup"><span data-stu-id="1e231-131">Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Threat management** > **Policy**.</span></span>
 
    ![Bild of_Office 365 säkerhets & policy för Threat Management-hantering](../../media/mtp-eval-32.png)
  
-2. <span data-ttu-id="3248e-133">Klicka på **ATP-nätfiske**och välj **skapa** och fyll i Principens namn och beskrivning.</span><span class="sxs-lookup"><span data-stu-id="3248e-133">Click **ATP anti-phishing**, select **Create** and fill in the policy name and description.</span></span> <span data-ttu-id="3248e-134">Klicka på **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="3248e-134">Click **Next**.</span></span>
+2. <span data-ttu-id="1e231-133">Klicka på **nätfiske** , Välj **skapa** och fyll i princip namnet och beskrivningen.</span><span class="sxs-lookup"><span data-stu-id="1e231-133">Click **Anti-phishing** , select **Create** and fill in the policy name and description.</span></span> <span data-ttu-id="1e231-134">Klicka på **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="1e231-134">Click **Next**.</span></span>
 
    ![Bild of_Office 365 säkerhet & policy för skydd mot Office-nätfiske där du kan namnge policyn](../../media/mtp-eval-33.png)
 
    > [!NOTE]
-   > <span data-ttu-id="3248e-136">Redigera din avancerade policy för ATP-anti-phishing.</span><span class="sxs-lookup"><span data-stu-id="3248e-136">Edit your Advanced ATP anti-phishing policy.</span></span> <span data-ttu-id="3248e-137">Ändra den **avancerade nät fiske tröskeln** till **2-aggressivt**.</span><span class="sxs-lookup"><span data-stu-id="3248e-137">Change **Advanced Phishing Threshold** to **2 - Aggressive**.</span></span>
+   > <span data-ttu-id="1e231-136">Redigera din avancerade policy för anti-nätfiske i Microsoft Defender för Office 365.</span><span class="sxs-lookup"><span data-stu-id="1e231-136">Edit your Advanced anti-phishing policy in Microsoft Defender for Office 365.</span></span> <span data-ttu-id="1e231-137">Ändra den **avancerade nät fiske tröskeln** till **2-aggressivt**.</span><span class="sxs-lookup"><span data-stu-id="1e231-137">Change **Advanced Phishing Threshold** to **2 - Aggressive**.</span></span>
 
-3. <span data-ttu-id="3248e-138">Klicka på den nedrullningsbara menyn **Lägg till en villkors** lista och välj din domän (er) som mottagar domän.</span><span class="sxs-lookup"><span data-stu-id="3248e-138">Click the **Add a condition** drop-down menu and select your domain(s) as recipient domain.</span></span> <span data-ttu-id="3248e-139">Klicka på **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="3248e-139">Click **Next**.</span></span>
+3. <span data-ttu-id="1e231-138">Klicka på den nedrullningsbara menyn **Lägg till en villkors** lista och välj din domän (er) som mottagar domän.</span><span class="sxs-lookup"><span data-stu-id="1e231-138">Click the **Add a condition** drop-down menu and select your domain(s) as recipient domain.</span></span> <span data-ttu-id="1e231-139">Klicka på **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="1e231-139">Click **Next**.</span></span>
 
    ![Bild of_Office 365 säkerhet & policy för skydd mot server för uppringnings Center där du kan lägga till ett villkor för dess program](../../media/mtp-eval-34.png)
  
-4. <span data-ttu-id="3248e-141">Granska dina inställningar.</span><span class="sxs-lookup"><span data-stu-id="3248e-141">Review your settings.</span></span> <span data-ttu-id="3248e-142">Klicka på **skapa den här principen** för att bekräfta.</span><span class="sxs-lookup"><span data-stu-id="3248e-142">Click **Create this policy** to confirm.</span></span> 
+4. <span data-ttu-id="1e231-141">Granska dina inställningar.</span><span class="sxs-lookup"><span data-stu-id="1e231-141">Review your settings.</span></span> <span data-ttu-id="1e231-142">Klicka på **skapa den här principen** för att bekräfta.</span><span class="sxs-lookup"><span data-stu-id="1e231-142">Click **Create this policy** to confirm.</span></span> 
 
    ![Bild of_Office 365 säkerhets & policy för skydd mot efterlevnad för nätfiske där du kan granska dina inställningar och klicka på knappen Skapa den här principen](../../media/mtp-eval-35.png)
  
-5. <span data-ttu-id="3248e-144">Markera alternativet för **säker säkerhet för ATP** och välj alternativ **för att aktivera ATP för SharePoint, OneDrive och Microsoft Teams** .</span><span class="sxs-lookup"><span data-stu-id="3248e-144">Select **ATP Safe attachments** and select the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** option.</span></span>
+5. <span data-ttu-id="1e231-144">Välj **bifogade filer** och välj alternativet **Aktivera ATP för SharePoint, OneDrive och Microsoft Teams** .</span><span class="sxs-lookup"><span data-stu-id="1e231-144">Select **Safe Attachments** and select the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** option.</span></span>
 
    ![Bild of_Office 365 säkerhets & sidan Compliance Center där du kan aktivera ATP för SharePoint, OneDrive och Microsoft Teams](../../media/mtp-eval-36.png)
 
-6. <span data-ttu-id="3248e-146">Klicka på ikonen + för att skapa en ny princip för säker bifogad fil, tillämpa den som mottagar domän i domänerna.</span><span class="sxs-lookup"><span data-stu-id="3248e-146">Click the + icon to create a new safe attachment policy, apply it as recipient domain to your domains.</span></span> <span data-ttu-id="3248e-147">Klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="3248e-147">Click **Save**.</span></span>
+6. <span data-ttu-id="1e231-146">Klicka på ikonen + för att skapa en ny princip för säker bifogad fil, tillämpa den som mottagar domän i domänerna.</span><span class="sxs-lookup"><span data-stu-id="1e231-146">Click the + icon to create a new safe attachment policy, apply it as recipient domain to your domains.</span></span> <span data-ttu-id="1e231-147">Klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="1e231-147">Click **Save**.</span></span>
 
    ![Bild of_Office 365 säkerhets & sidan Compliance Center, där du kan skapa en ny princip för säker bifogad fil](../../media/mtp-eval-37.png)
  
-7. <span data-ttu-id="3248e-149">Välj sedan policyn för **Safet ATP-länkar** och klicka sedan på Penn ikonen för att redigera standard principen.</span><span class="sxs-lookup"><span data-stu-id="3248e-149">Next, select the **ATP Safe Links** policy, then click the pencil icon to edit the default policy.</span></span>
+7. <span data-ttu-id="1e231-149">Välj sedan principen för **säkra länkar** och klicka sedan på Penn ikonen för att redigera standard principen.</span><span class="sxs-lookup"><span data-stu-id="1e231-149">Next, select the **Safe Links** policy, then click the pencil icon to edit the default policy.</span></span>
 
-8. <span data-ttu-id="3248e-150">Kontrol lera att alternativet **Spåra inte när användare klickar på säkra länkar** inte är markerat, medan resten av alternativen är markerade.</span><span class="sxs-lookup"><span data-stu-id="3248e-150">Make sure that the **Do not track when users click safe links** option is not selected, while the rest of the options are selected.</span></span> <span data-ttu-id="3248e-151">Se [Inställningar för Safe Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) .</span><span class="sxs-lookup"><span data-stu-id="3248e-151">See [Safe Links settings](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) for details.</span></span> <span data-ttu-id="3248e-152">Klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="3248e-152">Click **Save**.</span></span> 
+8. <span data-ttu-id="1e231-150">Kontrol lera att alternativet **Spåra inte när användare klickar på säkra länkar** inte är markerat, medan resten av alternativen är markerade.</span><span class="sxs-lookup"><span data-stu-id="1e231-150">Make sure that the **Do not track when users click safe links** option is not selected, while the rest of the options are selected.</span></span> <span data-ttu-id="1e231-151">Se [Inställningar för Safe Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) .</span><span class="sxs-lookup"><span data-stu-id="1e231-151">See [Safe Links settings](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) for details.</span></span> <span data-ttu-id="1e231-152">Klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="1e231-152">Click **Save**.</span></span> 
 
    ![Bild of_Office 365 säkerhets & sidan Compliance Center som visar att alternativet spåra inte när användare klickar på säker är inte markerat](../../media/mtp-eval-38.png)
 
-9. <span data-ttu-id="3248e-154">Välj sedan standard principen för att förhindra **mot skadlig program vara** och välj sedan Penn ikonen.</span><span class="sxs-lookup"><span data-stu-id="3248e-154">Next select the **Anti-malware** policy, select the default, and choose the pencil icon.</span></span>
+9. <span data-ttu-id="1e231-154">Välj sedan standard principen för att förhindra **mot skadlig program vara** och välj sedan Penn ikonen.</span><span class="sxs-lookup"><span data-stu-id="1e231-154">Next select the **Anti-malware** policy, select the default, and choose the pencil icon.</span></span>
 
-10. <span data-ttu-id="3248e-155">Klicka på **Inställningar** och välj **Ja och Använd standard meddelande texten** för att aktivera **identifiering av skadlig program vara**.</span><span class="sxs-lookup"><span data-stu-id="3248e-155">Click **Settings** and select **Yes and use the default notification text** to enable **Malware Detection Response**.</span></span> <span data-ttu-id="3248e-156">Aktivera **filtret vanliga typer av bifogade filer** .</span><span class="sxs-lookup"><span data-stu-id="3248e-156">Turn the **Common Attachment Types Filter** on.</span></span> <span data-ttu-id="3248e-157">Klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="3248e-157">Click **Save**.</span></span>
+10. <span data-ttu-id="1e231-155">Klicka på **Inställningar** och välj **Ja och Använd standard meddelande texten** för att aktivera **identifiering av skadlig program vara**.</span><span class="sxs-lookup"><span data-stu-id="1e231-155">Click **Settings** and select **Yes and use the default notification text** to enable **Malware Detection Response**.</span></span> <span data-ttu-id="1e231-156">Aktivera **filtret vanliga typer av bifogade filer** .</span><span class="sxs-lookup"><span data-stu-id="1e231-156">Turn the **Common Attachment Types Filter** on.</span></span> <span data-ttu-id="1e231-157">Klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="1e231-157">Click **Save**.</span></span>
 
     ![Bild of_Office 365 säkerhets & sidan Compliance Center som visar att svaret om skadlig program vara är aktiverat med standard meddelande och att filtret vanliga bilage typer är aktiverat](../../media/mtp-eval-39.png)
   
-11. <span data-ttu-id="3248e-159">Navigera till [Office 365-säkerhets & Compliance Center](https://protection.office.com/homepage)  >  **Sök**efter  >  **gransknings loggs ökning** och aktivera granskning.</span><span class="sxs-lookup"><span data-stu-id="3248e-159">Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Search** > **Audit log search** and turn Auditing on.</span></span>
+11. <span data-ttu-id="1e231-159">Navigera till [Office 365-säkerhets & Compliance Center](https://protection.office.com/homepage)  >  **Sök** efter  >  **gransknings loggs ökning** och aktivera granskning.</span><span class="sxs-lookup"><span data-stu-id="1e231-159">Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Search** > **Audit log search** and turn Auditing on.</span></span>
 
     ![Bild of_Office 365 säkerhets & sidan Compliance Center där du kan aktivera gransknings loggs ökningen](../../media/mtp-eval-40.png)
 
-12. <span data-ttu-id="3248e-161">Integrera Office 365 ATP med Microsoft Defender ATP.</span><span class="sxs-lookup"><span data-stu-id="3248e-161">Integrate Office 365 ATP with Microsoft Defender ATP.</span></span> <span data-ttu-id="3248e-162">Navigera till [Office 365-säkerhets &](https://protection.office.com/homepage)  >  **hanterings**Center för regelefterlevnad  >  **Explorer** och välj **WDATP inställningar** i det övre högra hörnet av skärmen.</span><span class="sxs-lookup"><span data-stu-id="3248e-162">Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Threat management** > **Explorer** and select **WDATP Settings** on the upper right corner of the screen.</span></span> <span data-ttu-id="3248e-163">I dialog rutan Microsoft Defender ATP-anslutning aktiverar **du Anslut till Windows ATP**.</span><span class="sxs-lookup"><span data-stu-id="3248e-163">In the Microsoft Defender ATP connection dialog box, turn on **Connect to Windows ATP**.</span></span>
+12. <span data-ttu-id="1e231-161">Integrera Microsoft Defender för Office 365 med Microsoft Defender för slut punkten.</span><span class="sxs-lookup"><span data-stu-id="1e231-161">Integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint.</span></span> <span data-ttu-id="1e231-162">Navigera till [Office 365-säkerhets & efterlevnad för Compliance Center](https://protection.office.com/homepage)  >  **Threat management**  >  **Explorer** och välj **Microsoft Defender för slut punkts inställningar** i det övre högra hörnet av skärmen.</span><span class="sxs-lookup"><span data-stu-id="1e231-162">Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Threat management** > **Explorer** and select **Microsoft Defender for Endpoint Settings** on the upper right corner of the screen.</span></span> <span data-ttu-id="1e231-163">I dialog rutan Defender för slut punkts anslutning aktiverar **du Anslut till Microsoft Defender för slut punkt**.</span><span class="sxs-lookup"><span data-stu-id="1e231-163">In the Defender for Endpoint connection dialog box, turn on **Connect to Microsoft Defender for Endpoint**.</span></span>
 
-    ![Bild of_Office 365 säkerhets & sidan Compliance Center där du kan aktivera Windows Defender ATP-anslutning på](../../media/mtp-eval-41.png)
+    ![Bild of_Office 365 säkerhets & sidan Compliance Center där du kan aktivera Microsoft Defender för slut punkts anslutning på](../../media/mtp-eval-41.png)
 
-## <a name="configure-azure-advanced-threat-protection"></a><span data-ttu-id="3248e-165">Konfigurera Avancerat skydd för Azure</span><span class="sxs-lookup"><span data-stu-id="3248e-165">Configure Azure Advanced Threat Protection</span></span>
-
->[!NOTE]
-><span data-ttu-id="3248e-166">Hoppa över det här steget om du redan har aktiverat Azure Avancerat skydd</span><span class="sxs-lookup"><span data-stu-id="3248e-166">Skip this step if you've already enabled Azure Advanced Threat Protection</span></span>
-
-1. <span data-ttu-id="3248e-167">Gå till [Microsoft 365-säkerhets Center](https://security.microsoft.com/info) > Välj **fler resurser**  >  **Azure Avancerat skydd**.</span><span class="sxs-lookup"><span data-stu-id="3248e-167">Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > select **More Resources** > **Azure Advanced Threat Protection**.</span></span>
-
-   ![Bild of_Microsoft 365 säkerhets Center sida där det finns ett alternativ för att öppna Azure Avancerat skydd](../../media/mtp-eval-42.png)
-
-2. <span data-ttu-id="3248e-169">Klicka på **skapa** för att starta guiden Avancerat skydd för Azure.</span><span class="sxs-lookup"><span data-stu-id="3248e-169">Click **Create** to start the Azure Advanced Threat Protection wizard.</span></span> 
-
-   ![Bild of_Azure sidan för avancerat skydd på guiden där du bör Klicka på knappen Skapa](../../media/mtp-eval-43.png)
-
-3. <span data-ttu-id="3248e-171">Välj **ge ett användar namn och lösen ord för att ansluta till Active Directory-skogen**.</span><span class="sxs-lookup"><span data-stu-id="3248e-171">Choose **Provide a username and password to connect to your Active Directory forest**.</span></span>  
-
-   ![Bild på Välkomst sidan för of_Azure avancerad skydd](../../media/mtp-eval-44.png)
-
-4. <span data-ttu-id="3248e-173">Ange lokala inloggnings uppgifter för Active Directory.</span><span class="sxs-lookup"><span data-stu-id="3248e-173">Enter your Active Directory on-premises credentials.</span></span> <span data-ttu-id="3248e-174">Det kan vara vilket användar konto som helst som har Läs åtkomst till Active Directory.</span><span class="sxs-lookup"><span data-stu-id="3248e-174">This can be any user account that has read access to Active Directory.</span></span>
-
-   ![Bild of_Azure sidan för tjänsten för avancerat skydds katalog där du ska ange dina uppgifter](../../media/mtp-eval-45.png)
-
-5. <span data-ttu-id="3248e-176">Välj sedan **Ladda ned sensor konfiguration** och överföra fil till domänkontrollanten.</span><span class="sxs-lookup"><span data-stu-id="3248e-176">Next, choose **Download Sensor Setup** and transfer file to your domain controller.</span></span>
-
-   ![Bild of_Azure sidan för avancerat skydd där du kan välja nedladdnings sensor inställning](../../media/mtp-eval-46.png)
-
-6. <span data-ttu-id="3248e-178">Kör installations programmet för Azure ATP och börja följa guiden.</span><span class="sxs-lookup"><span data-stu-id="3248e-178">Execute the Azure ATP Sensor Setup and begin following the wizard.</span></span>
-
-   ![Bild of_Azure sidan för avancerat skydd där du bör Klicka på Nästa för att följa Azure ATP-sensor guiden](../../media/mtp-eval-47.png)
- 
-7. <span data-ttu-id="3248e-180">Klicka på **Nästa** på sensor distributions typen.</span><span class="sxs-lookup"><span data-stu-id="3248e-180">Click **Next** at the sensor deployment type.</span></span>
-
-   ![Bild of_Azure sidan för avancerat skydd för hotet där du bör Klicka på Nästa för att gå till nästa sida](../../media/mtp-eval-48.png)
- 
-8. <span data-ttu-id="3248e-182">Kopiera snabb tangenten eftersom du måste ange den intill i guiden.</span><span class="sxs-lookup"><span data-stu-id="3248e-182">Copy the access key because you need to enter it next in the Wizard.</span></span>
-
-   ![Bild of_the sensorer-sida där du vill kopiera den snabb åtkomst du behöver ange på nästa sida med guiden för Azure ATP-sensor](../../media/mtp-eval-49.png)
- 
-9. <span data-ttu-id="3248e-184">Kopiera till guiden och klicka på **Installera**.</span><span class="sxs-lookup"><span data-stu-id="3248e-184">Copy the access key into the Wizard and click **Install**.</span></span> 
-
-   ![Bild of_Azure sidan för avancerat skydd för Azure ATP-guiden där du bör tillhandahålla snabb tangenten och klicka sedan på knappen Installera.](../../media/mtp-eval-50.png)
-
-10. <span data-ttu-id="3248e-186">Grattis! du har konfigurerat Azure Avancerat skydd för din domänkontrollant.</span><span class="sxs-lookup"><span data-stu-id="3248e-186">Congratulations, you've successfully configured Azure Advanced Threat Protection on your domain controller.</span></span>
-
-    ![Bild of_Azure Avancerat skydd för Azure ATP-sensor för installation av Office.](../../media/mtp-eval-51.png)
- 
-11. <span data-ttu-id="3248e-188">Under Inställningar för [Azure Azure ATP](https://go.microsoft.com/fwlink/?linkid=2040449) väljer du **Windows Defender ATP**och aktiverar sedan växlings knappen.</span><span class="sxs-lookup"><span data-stu-id="3248e-188">Under the [Azure Azure ATP](https://go.microsoft.com/fwlink/?linkid=2040449) settings section, select **Windows Defender ATP**, then turn on the toggle.</span></span> <span data-ttu-id="3248e-189">Klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="3248e-189">Click **Save**.</span></span> 
-
-    ![Bild of_the sidan för Azure Azure ATP-inställningar där du bör aktivera Windows Defender ATP.](../../media/mtp-eval-52.png)
+## <a name="configure-microsoft-defender-for-identity"></a><span data-ttu-id="1e231-165">Konfigurera Microsoft Defender för identitet</span><span class="sxs-lookup"><span data-stu-id="1e231-165">Configure Microsoft Defender for Identity</span></span>
 
 >[!NOTE]
-><span data-ttu-id="3248e-191">Windows Defender ATP har ändrats som Microsoft Defender ATP.</span><span class="sxs-lookup"><span data-stu-id="3248e-191">Windows Defender ATP has been rebranded as Microsoft Defender ATP.</span></span> <span data-ttu-id="3248e-192">Att ändra dina ändringar i alla portaler blir då mer konsekvens.</span><span class="sxs-lookup"><span data-stu-id="3248e-192">Rebranding changes across all of our portals are being rolled out the for consistency.</span></span>
+><span data-ttu-id="1e231-166">Hoppa över det här steget om du redan har aktiverat Microsoft Defender för identitet</span><span class="sxs-lookup"><span data-stu-id="1e231-166">Skip this step if you've already enabled Microsoft Defender for Identity</span></span>
 
+1. <span data-ttu-id="1e231-167">Navigera till [Microsoft 365 säkerhets Center](https://security.microsoft.com/info) > Välj **fler resurser**  >  **Microsoft Defender för identitet**.</span><span class="sxs-lookup"><span data-stu-id="1e231-167">Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > select **More Resources** > **Microsoft Defender for Identity**.</span></span>
 
-## <a name="configure-microsoft-cloud-app-security"></a><span data-ttu-id="3248e-193">Konfigurera säkerhet för Microsoft Cloud App</span><span class="sxs-lookup"><span data-stu-id="3248e-193">Configure Microsoft Cloud App Security</span></span>
+   ![Bild of_Microsoft 365 säkerhets Center sida där det finns ett alternativ för att öppna Microsoft Defender för identitet](../../media/mtp-eval-42.png)
+
+2. <span data-ttu-id="1e231-169">Klicka på **skapa** för att starta Microsoft Defender för identitets guiden.</span><span class="sxs-lookup"><span data-stu-id="1e231-169">Click **Create** to start the Microsoft Defender for Identity wizard.</span></span> 
+
+   ![Bild of_Microsoft Defender för guiden för identitet där du bör Klicka på knappen Skapa](../../media/mtp-eval-43.png)
+
+3. <span data-ttu-id="1e231-171">Välj **ge ett användar namn och lösen ord för att ansluta till Active Directory-skogen**.</span><span class="sxs-lookup"><span data-stu-id="1e231-171">Choose **Provide a username and password to connect to your Active Directory forest**.</span></span>  
+
+   ![Bild of_Microsoft Defender för välkomst sida](../../media/mtp-eval-44.png)
+
+4. <span data-ttu-id="1e231-173">Ange lokala inloggnings uppgifter för Active Directory.</span><span class="sxs-lookup"><span data-stu-id="1e231-173">Enter your Active Directory on-premises credentials.</span></span> <span data-ttu-id="1e231-174">Det kan vara vilket användar konto som helst som har Läs åtkomst till Active Directory.</span><span class="sxs-lookup"><span data-stu-id="1e231-174">This can be any user account that has read access to Active Directory.</span></span>
+
+   ![Bild of_Microsoft Defender för identitets katalog tjänster där du ska ange dina uppgifter](../../media/mtp-eval-45.png)
+
+5. <span data-ttu-id="1e231-176">Välj sedan **Ladda ned sensor konfiguration** och överföra fil till domänkontrollanten.</span><span class="sxs-lookup"><span data-stu-id="1e231-176">Next, choose **Download Sensor Setup** and transfer file to your domain controller.</span></span>
+
+   ![Bild of_Microsoft Defender för identitets sida där du kan välja nedladdnings sensor inställning](../../media/mtp-eval-46.png)
+
+6. <span data-ttu-id="1e231-178">Kör installations programmet för Microsoft Defender för identitets sensor och börja följa guiden.</span><span class="sxs-lookup"><span data-stu-id="1e231-178">Execute the Microsoft Defender for Identity Sensor Setup and begin following the wizard.</span></span>
+
+   ![Bild of_Microsoft Defender för identitets sida där du bör Klicka på Nästa för att följa Microsoft Defender-guiden för identitets sensor](../../media/mtp-eval-47.png)
+ 
+7. <span data-ttu-id="1e231-180">Klicka på **Nästa** på sensor distributions typen.</span><span class="sxs-lookup"><span data-stu-id="1e231-180">Click **Next** at the sensor deployment type.</span></span>
+
+   ![Bild of_Microsoft Defender för identitets sida där du bör klicka bredvid gå till nästa sida](../../media/mtp-eval-48.png)
+ 
+8. <span data-ttu-id="1e231-182">Kopiera snabb tangenten eftersom du måste ange den intill i guiden.</span><span class="sxs-lookup"><span data-stu-id="1e231-182">Copy the access key because you need to enter it next in the Wizard.</span></span>
+
+   ![Bild of_the sensorer-sida där du vill kopiera den snabb åtkomst-knapp som du måste ange på nästa sida i guiden Konfigurera Microsoft Defender för identitets sensor](../../media/mtp-eval-49.png)
+ 
+9. <span data-ttu-id="1e231-184">Kopiera till guiden och klicka på **Installera**.</span><span class="sxs-lookup"><span data-stu-id="1e231-184">Copy the access key into the Wizard and click **Install**.</span></span> 
+
+   ![Bild of_Microsoft Defender för guiden för identitets sensor där du bör tillhandahålla åtkomst-tangenten och sedan klicka på knappen Installera](../../media/mtp-eval-50.png)
+
+10. <span data-ttu-id="1e231-186">Grattis! du har konfigurerat Microsoft Defender för din domänkontrollant.</span><span class="sxs-lookup"><span data-stu-id="1e231-186">Congratulations, you've successfully configured Microsoft Defender for Identity on your domain controller.</span></span>
+
+    ![Bild of_Microsoft Defender för guiden för identitets sensor installation, där du bör Klicka på knappen Slutför](../../media/mtp-eval-51.png)
+ 
+11. <span data-ttu-id="1e231-188">Under [Microsoft Defender för identitets](https://go.microsoft.com/fwlink/?linkid=2040449) inställningar väljer du \* \* Microsoft Defender för slut punkt \* \* och aktiverar sedan växlingen.</span><span class="sxs-lookup"><span data-stu-id="1e231-188">Under the [Microsoft Defender for Identity](https://go.microsoft.com/fwlink/?linkid=2040449) settings section, select \*\*Microsoft Defender for Endpoint \*\*, then turn on the toggle.</span></span> <span data-ttu-id="1e231-189">Klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="1e231-189">Click **Save**.</span></span> 
+
+    ![Bild of_the inställningar för inloggnings sidan för Microsoft Defender för att du ska aktivera växla mellan Microsoft Defender för slut punkt](../../media/mtp-eval-52.png)
 
 >[!NOTE]
-><span data-ttu-id="3248e-194">Hoppa över det här steget om du redan har aktiverat säkerhet för Microsoft Cloud App.</span><span class="sxs-lookup"><span data-stu-id="3248e-194">Skip this step if you've already enabled Microsoft Cloud App Security.</span></span> 
+><span data-ttu-id="1e231-191">Windows Defender ATP har ändrats som Microsoft Defender för slut punkt.</span><span class="sxs-lookup"><span data-stu-id="1e231-191">Windows Defender ATP has been rebranded as Microsoft Defender for Endpoint.</span></span> <span data-ttu-id="1e231-192">Att ändra dina ändringar i alla portaler blir då mer konsekvens.</span><span class="sxs-lookup"><span data-stu-id="1e231-192">Rebranding changes across all of our portals are being rolled out the for consistency.</span></span>
 
-1. <span data-ttu-id="3248e-195">Navigera till [Microsoft 365 säkerhets Center](https://security.microsoft.com/info)  >  **fler resurser**  >  **Microsoft Cloud App-säkerhet**.</span><span class="sxs-lookup"><span data-stu-id="3248e-195">Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > **More Resources** > **Microsoft Cloud App Security**.</span></span>
+
+## <a name="configure-microsoft-cloud-app-security"></a><span data-ttu-id="1e231-193">Konfigurera säkerhet för Microsoft Cloud App</span><span class="sxs-lookup"><span data-stu-id="1e231-193">Configure Microsoft Cloud App Security</span></span>
+
+>[!NOTE]
+><span data-ttu-id="1e231-194">Hoppa över det här steget om du redan har aktiverat säkerhet för Microsoft Cloud App.</span><span class="sxs-lookup"><span data-stu-id="1e231-194">Skip this step if you've already enabled Microsoft Cloud App Security.</span></span> 
+
+1. <span data-ttu-id="1e231-195">Navigera till [Microsoft 365 säkerhets Center](https://security.microsoft.com/info)  >  **fler resurser**  >  **Microsoft Cloud App-säkerhet**.</span><span class="sxs-lookup"><span data-stu-id="1e231-195">Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > **More Resources** > **Microsoft Cloud App Security**.</span></span>
 
    ![Bild of_Microsoft 365 säkerhets Center sida där du kan se Microsoft Cloud App Card och ska klicka på knappen Öppna](../../media/mtp-eval-53.png)
 
-2. <span data-ttu-id="3248e-197">Välj **Aktivera Azure ATP-data integrering**i informations meddelandet om du vill integrera Azure ATP.</span><span class="sxs-lookup"><span data-stu-id="3248e-197">At the information prompt to integrate Azure ATP, select **Enable Azure ATP data integration**.</span></span>
+2. <span data-ttu-id="1e231-197">I rutan information om hur du integrerar Microsoft Defender för identiteter väljer du **aktivera Microsoft Defender för identitets data integrering**.</span><span class="sxs-lookup"><span data-stu-id="1e231-197">At the information prompt to integrate Microsoft Defender for Identity, select **Enable Microsoft Defender for Identity data integration**.</span></span>
   
-   ![Bild of_the meddelande om att integrera Azure ATP där du bör välja länken Aktivera Azure ATP-data integrering](../../media/mtp-eval-54.png)
+   ![Of_the om du vill integrera Microsoft Defender för en identitet där du bör välja länken Aktivera Microsoft Defender för identitets data integrering](../../media/mtp-eval-54.png)
 
    > [!NOTE]
-   > <span data-ttu-id="3248e-199">Om du inte ser den här uppmaningen kan det betyda att din Azure ATP-data integrering redan har Aktiver ATS.</span><span class="sxs-lookup"><span data-stu-id="3248e-199">If you don’t see this prompt, it might mean that your Azure ATP data integration has already been enabled.</span></span> <span data-ttu-id="3248e-200">Om du är osäker kontaktar du IT-administratören för att bekräfta.</span><span class="sxs-lookup"><span data-stu-id="3248e-200">However, if you are not sure, contact your IT Administrator to confirm.</span></span> 
+   > <span data-ttu-id="1e231-199">Om du inte ser den här uppmaningen kan det betyda att din Microsoft Defender för identitets data integrering redan har Aktiver ATS.</span><span class="sxs-lookup"><span data-stu-id="1e231-199">If you don’t see this prompt, it might mean that your Microsoft Defender for Identity data integration has already been enabled.</span></span> <span data-ttu-id="1e231-200">Om du är osäker kontaktar du IT-administratören för att bekräfta.</span><span class="sxs-lookup"><span data-stu-id="1e231-200">However, if you are not sure, contact your IT Administrator to confirm.</span></span> 
 
-3. <span data-ttu-id="3248e-201">Gå till **Inställningar**, aktivera **integreringen av Azure ATP** och klicka sedan på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="3248e-201">Go to **Settings**, turn on the **Azure ATP integration** toggle, then click **Save**.</span></span> 
+3. <span data-ttu-id="1e231-201">Gå till **Inställningar** , aktivera växla mellan **Microsoft Defender för identitets integrering** och klicka sedan på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="1e231-201">Go to **Settings** , turn on the **Microsoft Defender for Identity integration** toggle, then click **Save**.</span></span> 
 
-   ![Sidan image of_the inställningar där du bör aktivera och inaktivera integreringen med Azure ATP klickar du på Spara](../../media/mtp-eval-55.png)
+   ![Sidan image of_the inställningar där du bör aktivera växla mellan Microsoft Defender för identitets integrering och klicka på Spara.](../../media/mtp-eval-55.png)
    
    > [!NOTE]
-   > <span data-ttu-id="3248e-203">För nya Azure ATP-instanser är denna växel växling automatiskt aktive rad.</span><span class="sxs-lookup"><span data-stu-id="3248e-203">For new Azure ATP instances, this integration toggle is automatically turned on.</span></span> <span data-ttu-id="3248e-204">Kontrol lera att din Azure ATP-integrering har Aktiver ATS innan du går vidare till nästa steg.</span><span class="sxs-lookup"><span data-stu-id="3248e-204">Confirm that your Azure ATP integration has been enabled before you proceed to the next step.</span></span>
+   > <span data-ttu-id="1e231-203">För nya Microsoft Defender för identitets instanser är denna växel växling automatiskt aktive rad.</span><span class="sxs-lookup"><span data-stu-id="1e231-203">For new Microsoft Defender for Identity instances, this integration toggle is automatically turned on.</span></span> <span data-ttu-id="1e231-204">Kontrol lera att din Microsoft Defender för identitets integrering har Aktiver ATS innan du fortsätter till nästa steg.</span><span class="sxs-lookup"><span data-stu-id="1e231-204">Confirm that your Microsoft Defender for Identity integration has been enabled before you proceed to the next step.</span></span>
  
-4. <span data-ttu-id="3248e-205">Under Inställningar för moln identifiering väljer du **Microsoft Defender ATP-integrering**och aktiverar integrationen.</span><span class="sxs-lookup"><span data-stu-id="3248e-205">Under the Cloud discovery settings, select **Microsoft Defender ATP integration**, then enable the integration.</span></span> <span data-ttu-id="3248e-206">Klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="3248e-206">Click **Save**.</span></span>
+4. <span data-ttu-id="1e231-205">Under Inställningar för moln identifiering väljer du **Microsoft Defender för slut punkts integrering** och aktiverar integrationen.</span><span class="sxs-lookup"><span data-stu-id="1e231-205">Under the Cloud discovery settings, select **Microsoft Defender for Endpoint integration** , then enable the integration.</span></span> <span data-ttu-id="1e231-206">Klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="1e231-206">Click **Save**.</span></span>
 
-   ![Bild of_the Microsoft Defender ATP-sida där kryss rutan blockera program som inte används under Microsoft Defender ATP-integrering är markerad.](../../media/mtp-eval-56.png)
+   ![Bild of_the Microsoft Defender för slut punkts sida där kryss rutan blockera program utan sanktioner under Microsoft Defender för slut punkts integrering är markerad.](../../media/mtp-eval-56.png)
 
-5. <span data-ttu-id="3248e-209">Under Inställningar för moln identifiering väljer du **användar upplevelse**och aktiverar integrationen med Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="3248e-209">Under Cloud discovery settings, select **User enrichment**, then enable the integration with Azure Active Directory.</span></span>
+5. <span data-ttu-id="1e231-209">Under Inställningar för moln identifiering väljer du **användar upplevelse** och aktiverar integrationen med Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="1e231-209">Under Cloud discovery settings, select **User enrichment** , then enable the integration with Azure Active Directory.</span></span>
 
    ![Bild av avsnittet användar berikning där kryss rutan utökad identifiering av användar identifierare med Azure Active Directory-username är markerad](../../media/mtp-eval-57.png)
 
 
-## <a name="configure-microsoft-defender-advanced-threat-protection"></a><span data-ttu-id="3248e-211">Konfigurera Microsoft Defender Avancerat skydd</span><span class="sxs-lookup"><span data-stu-id="3248e-211">Configure Microsoft Defender Advanced Threat Protection</span></span>
+## <a name="configure-microsoft-defender-for-endpoint"></a><span data-ttu-id="1e231-211">Konfigurera Microsoft Defender för slut punkten</span><span class="sxs-lookup"><span data-stu-id="1e231-211">Configure Microsoft Defender for Endpoint</span></span>
 
 >[!NOTE]
-><span data-ttu-id="3248e-212">Hoppa över det här steget om du redan har aktiverat Microsoft Defender Avancerat skydd.</span><span class="sxs-lookup"><span data-stu-id="3248e-212">Skip this step if you've already enabled Microsoft Defender Advanced Threat Protection.</span></span>
+><span data-ttu-id="1e231-212">Hoppa över det här steget om du redan har aktiverat Microsoft Defender för slut punkter.</span><span class="sxs-lookup"><span data-stu-id="1e231-212">Skip this step if you've already enabled Microsoft Defender for Endpoint.</span></span>
 
-1. <span data-ttu-id="3248e-213">Gå till [Microsoft 365 säkerhets Center](https://security.microsoft.com/info)  >  **fler resurser**  >  **Microsoft Defender säkerhets Center**.</span><span class="sxs-lookup"><span data-stu-id="3248e-213">Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > **More Resources** > **Microsoft Defender Security Center**.</span></span> <span data-ttu-id="3248e-214">Klicka på **Öppna**.</span><span class="sxs-lookup"><span data-stu-id="3248e-214">Click **Open**.</span></span>
+1. <span data-ttu-id="1e231-213">Gå till [Microsoft 365 säkerhets Center](https://security.microsoft.com/info)  >  **fler resurser**  >  **Microsoft Defender säkerhets Center**.</span><span class="sxs-lookup"><span data-stu-id="1e231-213">Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > **More Resources** > **Microsoft Defender Security Center**.</span></span> <span data-ttu-id="1e231-214">Klicka på **Öppna**.</span><span class="sxs-lookup"><span data-stu-id="1e231-214">Click **Open**.</span></span>
 
    ![Bild of_Microsoft Defender säkerhets Center på sidan Microsoft 365 Security Center](../../media/mtp-eval-58.png)
  
-2. <span data-ttu-id="3248e-216">Följ guiden för avancerat skydd mot Microsoft Defender.</span><span class="sxs-lookup"><span data-stu-id="3248e-216">Follow the Microsoft Defender Advanced Threat Protection wizard.</span></span> <span data-ttu-id="3248e-217">Klicka på **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="3248e-217">Click **Next**.</span></span> 
+2. <span data-ttu-id="1e231-216">Följ instruktionerna i Microsoft Defender för slut punkter.</span><span class="sxs-lookup"><span data-stu-id="1e231-216">Follow the Microsoft Defender for Endpoint wizard.</span></span> <span data-ttu-id="1e231-217">Klicka på **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="1e231-217">Click **Next**.</span></span> 
 
    ![Bild of_the sidan Välkommen till Microsoft Defender säkerhets Center](../../media/mtp-eval-59.png)
 
-3. <span data-ttu-id="3248e-219">Välj baserat på din önskade lagrings plats för data, bevarande princip för data, organisations storlek och val för förhands gransknings funktioner.</span><span class="sxs-lookup"><span data-stu-id="3248e-219">Choose based on your preferred data storage location, data retention policy, organization size, and opt-in for preview features.</span></span>
+3. <span data-ttu-id="1e231-219">Välj baserat på din önskade lagrings plats för data, bevarande princip för data, organisations storlek och val för förhands gransknings funktioner.</span><span class="sxs-lookup"><span data-stu-id="1e231-219">Choose based on your preferred data storage location, data retention policy, organization size, and opt-in for preview features.</span></span>
 
    ![Bild of_the sida för att välja data lagrings land, bevarande princip och organisations storlek.](../../media/mtp-eval-60.png)
    
    > [!NOTE]
-   > <span data-ttu-id="3248e-222">Du kan inte ändra vissa inställningar, till exempel data lagrings plats, efteråt.</span><span class="sxs-lookup"><span data-stu-id="3248e-222">You cannot change some of the settings, like data storage location, afterwards.</span></span> 
+   > <span data-ttu-id="1e231-222">Du kan inte ändra vissa inställningar, till exempel data lagrings plats, efteråt.</span><span class="sxs-lookup"><span data-stu-id="1e231-222">You cannot change some of the settings, like data storage location, afterwards.</span></span> 
 
-   <span data-ttu-id="3248e-223">Klicka på **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="3248e-223">Click **Next**.</span></span> 
+   <span data-ttu-id="1e231-223">Klicka på **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="1e231-223">Click **Next**.</span></span> 
 
-4. <span data-ttu-id="3248e-224">Klicka på **Fortsätt** så etableras din Microsoft Defender ATP-klient.</span><span class="sxs-lookup"><span data-stu-id="3248e-224">Click **Continue** and it will provision your Microsoft Defender ATP tenant.</span></span>
+4. <span data-ttu-id="1e231-224">Klicka på **Fortsätt** så tillhandahåller Microsoft Defender för slut punkts klient organisation.</span><span class="sxs-lookup"><span data-stu-id="1e231-224">Click **Continue** and it will provision your Microsoft Defender for Endpoint tenant.</span></span>
 
    ![Bild of_the sida där du uppmanas att klicka på knappen Fortsätt för att skapa din moln instans](../../media/mtp-eval-61.png)
 
-5. <span data-ttu-id="3248e-226">Ta fram dina slut punkter via grup principer, Microsoft slut punkts hanteraren eller genom att köra ett lokalt skript till Microsoft Defender ATP.</span><span class="sxs-lookup"><span data-stu-id="3248e-226">Onboard your endpoints through Group Policies, Microsoft Endpoint Manager or by running a local script to Microsoft Defender ATP.</span></span> <span data-ttu-id="3248e-227">För enkelhetens skull använder den här guiden det lokala skriptet.</span><span class="sxs-lookup"><span data-stu-id="3248e-227">For simplicity, this guide uses the local script.</span></span>
+5. <span data-ttu-id="1e231-226">Ta fram dina slut punkter via grup principer, Microsoft slut punkts hanteraren eller genom att köra ett lokalt skript till Microsoft Defender för slut punkt.</span><span class="sxs-lookup"><span data-stu-id="1e231-226">Onboard your endpoints through Group Policies, Microsoft Endpoint Manager or by running a local script to Microsoft Defender for Endpoint.</span></span> <span data-ttu-id="1e231-227">För enkelhetens skull använder den här guiden det lokala skriptet.</span><span class="sxs-lookup"><span data-stu-id="1e231-227">For simplicity, this guide uses the local script.</span></span>
 
-6. <span data-ttu-id="3248e-228">Klicka på **Ladda ned paket** och kopiera registrerings skriptet till din slut punkt (er).</span><span class="sxs-lookup"><span data-stu-id="3248e-228">Click **Download package** and copy the onboarding script to your endpoint(s).</span></span>
+6. <span data-ttu-id="1e231-228">Klicka på **Ladda ned paket** och kopiera registrerings skriptet till din slut punkt (er).</span><span class="sxs-lookup"><span data-stu-id="1e231-228">Click **Download package** and copy the onboarding script to your endpoint(s).</span></span>
 
    ![Bild of_page du uppmanas att klicka på knappen Ladda ned paket för att kopiera det inbyggda skriptet till slut punkten eller slut punkterna](../../media/mtp-eval-62.png)
 
-7. <span data-ttu-id="3248e-230">Kör skriptet som administratör på slut punkten och välj Y.</span><span class="sxs-lookup"><span data-stu-id="3248e-230">On your endpoint, run the onboarding script as Administrator and choose Y.</span></span> 
+7. <span data-ttu-id="1e231-230">Kör skriptet som administratör på slut punkten och välj Y.</span><span class="sxs-lookup"><span data-stu-id="1e231-230">On your endpoint, run the onboarding script as Administrator and choose Y.</span></span> 
 
    ![Bild of_the kommando rad där du kör det inbyggda skriptet och väljer sedan Y för att fortsätta](../../media/mtp-eval-63.png)
 
-8. <span data-ttu-id="3248e-232">Grattis! du har öppnat din första slut punkt.</span><span class="sxs-lookup"><span data-stu-id="3248e-232">Congratulations, you've onboarded your first endpoint.</span></span>
+8. <span data-ttu-id="1e231-232">Grattis! du har öppnat din första slut punkt.</span><span class="sxs-lookup"><span data-stu-id="1e231-232">Congratulations, you've onboarded your first endpoint.</span></span>
 
    ![Bild of_the kommando rad där du får bekräftelse på att du har öppnat din första slut punkt.](../../media/mtp-eval-64.png)
 
-9. <span data-ttu-id="3248e-235">Kopiera – klistra in identifierings testet från guiden Microsoft Defender ATP.</span><span class="sxs-lookup"><span data-stu-id="3248e-235">Copy-paste the detection test from the Microsoft Defender ATP wizard.</span></span>
+9. <span data-ttu-id="1e231-235">Kopiera – klistra in identifierings testet från Microsoft Defender för slut punkts guiden.</span><span class="sxs-lookup"><span data-stu-id="1e231-235">Copy-paste the detection test from the Microsoft Defender for Endpoint wizard.</span></span>
 
    ![Bild of_the kör ett identifierings test steg där du bör Klicka på Kopiera för att kopiera det identifierings test som du vill klistra in i kommando tolken](../../media/mtp-eval-65.png)
 
-10. <span data-ttu-id="3248e-237">Kopiera PowerShell-skriptet till en upphöjd kommando tolk och kör det.</span><span class="sxs-lookup"><span data-stu-id="3248e-237">Copy the PowerShell script to an elevated command prompt and run it.</span></span> 
+10. <span data-ttu-id="1e231-237">Kopiera PowerShell-skriptet till en upphöjd kommando tolk och kör det.</span><span class="sxs-lookup"><span data-stu-id="1e231-237">Copy the PowerShell script to an elevated command prompt and run it.</span></span> 
 
     ![Bild of_command fråga var du bör kopiera PowerShell-skriptet till en upphöjd kommando tolk och köra det](../../media/mtp-eval-66.png)
 
-11. <span data-ttu-id="3248e-239">Välj **börja använda Microsoft Defender ATP** från guiden.</span><span class="sxs-lookup"><span data-stu-id="3248e-239">Select **Start using Microsoft Defender ATP** from the Wizard.</span></span>
+11. <span data-ttu-id="1e231-239">Välj **börja använda Microsoft Defender för slut punkt** från guiden.</span><span class="sxs-lookup"><span data-stu-id="1e231-239">Select **Start using Microsoft Defender for Endpoint** from the Wizard.</span></span>
 
-    ![Bild of_the bekräfta meddelande i guiden där du bör Klicka på börja använda Microsoft Defender ATP](../../media/mtp-eval-67.png)
+    ![Bild of_the bekräfta uppmaning i guiden där du bör Klicka på börja använda Microsoft Defender för slut punkt](../../media/mtp-eval-67.png)
  
-12. <span data-ttu-id="3248e-241">Gå till [Microsoft Defender säkerhets Center](https://securitycenter.windows.com/).</span><span class="sxs-lookup"><span data-stu-id="3248e-241">Visit the [Microsoft Defender Security Center](https://securitycenter.windows.com/).</span></span> <span data-ttu-id="3248e-242">Gå till **Inställningar** och välj sedan **avancerade funktioner**.</span><span class="sxs-lookup"><span data-stu-id="3248e-242">Go to **Settings** and then select **Advanced features**.</span></span> 
+12. <span data-ttu-id="1e231-241">Gå till [Microsoft Defender säkerhets Center](https://securitycenter.windows.com/).</span><span class="sxs-lookup"><span data-stu-id="1e231-241">Visit the [Microsoft Defender Security Center](https://securitycenter.windows.com/).</span></span> <span data-ttu-id="1e231-242">Gå till **Inställningar** och välj sedan **avancerade funktioner**.</span><span class="sxs-lookup"><span data-stu-id="1e231-242">Go to **Settings** and then select **Advanced features**.</span></span> 
 
     ![Bild of_Microsoft Defender säkerhets Center-menyn inställningar där du bör välja avancerade funktioner](../../media/mtp-eval-68.png)
 
-13. <span data-ttu-id="3248e-244">Aktivera integrationen med **Avancerat Azure-skyddat skydd**.</span><span class="sxs-lookup"><span data-stu-id="3248e-244">Turn on the integration with **Azure Advanced Threat Protection**.</span></span>  
+13. <span data-ttu-id="1e231-244">Aktivera integrationen med **Microsoft Defender för identiteten**.</span><span class="sxs-lookup"><span data-stu-id="1e231-244">Turn on the integration with **Microsoft Defender for Identity**.</span></span>  
 
-    ![Bild of_Microsoft Defender säkerhets Center avancerade funktioner, alternativet för Azure Avancerat skydds alternativ växling som du måste aktivera](../../media/mtp-eval-69.png)
+    ![Bild of_Microsoft Defender säkerhets Center avancerade funktioner, alternativ för Microsoft Defender för identitet som du måste aktivera](../../media/mtp-eval-69.png)
 
-14. <span data-ttu-id="3248e-246">Aktivera integrationen med **Office 365 Threat Intelligence**.</span><span class="sxs-lookup"><span data-stu-id="3248e-246">Turn on the integration with **Office 365 Threat Intelligence**.</span></span>
+14. <span data-ttu-id="1e231-246">Aktivera integrationen med **Office 365 Threat Intelligence**.</span><span class="sxs-lookup"><span data-stu-id="1e231-246">Turn on the integration with **Office 365 Threat Intelligence**.</span></span>
 
     ![Bild of_Microsoft Defender säkerhets Center avancerade funktioner, alternativ för Office 365 Threat Intelligence växla till att aktivera](../../media/mtp-eval-70.png)
 
-15. <span data-ttu-id="3248e-248">Aktivera integrering med **säkerhet för Microsoft Cloud App**.</span><span class="sxs-lookup"><span data-stu-id="3248e-248">Turn on integration with **Microsoft Cloud App Security**.</span></span>
+15. <span data-ttu-id="1e231-248">Aktivera integrering med **säkerhet för Microsoft Cloud App**.</span><span class="sxs-lookup"><span data-stu-id="1e231-248">Turn on integration with **Microsoft Cloud App Security**.</span></span>
 
     ![Bild of_Microsoft Defender säkerhets Center avancerade funktioner, säkerhets alternativ för Microsoft Cloud App](../../media/mtp-eval-71.png)
 
-16. <span data-ttu-id="3248e-250">Rulla nedåt och klicka på **Spara inställningar** för att bekräfta de nya integreringarna.</span><span class="sxs-lookup"><span data-stu-id="3248e-250">Scroll down and click **Save preferences** to confirm the new integrations.</span></span>
+16. <span data-ttu-id="1e231-250">Rulla nedåt och klicka på **Spara inställningar** för att bekräfta de nya integreringarna.</span><span class="sxs-lookup"><span data-stu-id="1e231-250">Scroll down and click **Save preferences** to confirm the new integrations.</span></span>
 
     ![Knappen bild of_Save inställningar som du måste klicka på](../../media/mtp-eval-72.png)
 
-## <a name="start-the-microsoft-threat-protection-service"></a><span data-ttu-id="3248e-252">Starta tjänsten Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="3248e-252">Start the Microsoft Threat Protection service</span></span>
+## <a name="start-the-microsoft-365-defender-service"></a><span data-ttu-id="1e231-252">Starta Microsoft 365 Defender-tjänsten</span><span class="sxs-lookup"><span data-stu-id="1e231-252">Start the Microsoft 365 Defender service</span></span>
 
 >[!NOTE]
-><span data-ttu-id="3248e-253">Från och med den 1 juni 2020 aktive ras Microsoft automatiskt skydds funktioner för alla kvalificerade klient organisationer.</span><span class="sxs-lookup"><span data-stu-id="3248e-253">Starting June 1, 2020, Microsoft automatically enables Microsoft Threat Protection features for all eligible tenants.</span></span> <span data-ttu-id="3248e-254">Mer information finns i den här [artikeln i Microsoft Tech community](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) .</span><span class="sxs-lookup"><span data-stu-id="3248e-254">See this [Microsoft Tech Community article on license eligibility](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) for details.</span></span> 
+><span data-ttu-id="1e231-253">Från och med den 1 juni 2020, aktiverar Microsoft automatiskt Microsoft 365 Defender-funktioner för alla kvalificerade klient organisationer.</span><span class="sxs-lookup"><span data-stu-id="1e231-253">Starting June 1, 2020, Microsoft automatically enables Microsoft 365 Defender features for all eligible tenants.</span></span> <span data-ttu-id="1e231-254">Mer information finns i den här [artikeln i Microsoft Tech community](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) .</span><span class="sxs-lookup"><span data-stu-id="1e231-254">See this [Microsoft Tech Community article on license eligibility](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) for details.</span></span> 
 
 
-<span data-ttu-id="3248e-255">Gå till [Microsoft 365 säkerhets Center](https://security.microsoft.com/homepage).</span><span class="sxs-lookup"><span data-stu-id="3248e-255">Go to [Microsoft 365 Security Center](https://security.microsoft.com/homepage).</span></span> <span data-ttu-id="3248e-256">Navigera till **Inställningar** och välj sedan **Microsoft Threat Protection**.</span><span class="sxs-lookup"><span data-stu-id="3248e-256">Navigate to **Settings** and then select **Microsoft Threat Protection**.</span></span>
+<span data-ttu-id="1e231-255">Gå till [Microsoft 365 säkerhets Center](https://security.microsoft.com/homepage).</span><span class="sxs-lookup"><span data-stu-id="1e231-255">Go to [Microsoft 365 Security Center](https://security.microsoft.com/homepage).</span></span> <span data-ttu-id="1e231-256">Navigera till **Inställningar** och välj sedan **Microsoft 365 Defender**.</span><span class="sxs-lookup"><span data-stu-id="1e231-256">Navigate to **Settings** and then select **Microsoft 365 Defender**.</span></span>
 
-![<span data-ttu-id="3248e-257">Skärm bild av alternativ för of_Microsoft skydd från säkerhets Center för Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="3248e-257">Image of_Microsoft Threat Protection option screenshot from the Microsoft 365 Security Center Settings page</span></span> ](../../media/mtp-eval-72b.png) <br>
+![<span data-ttu-id="1e231-257">Bild of_Microsoft 365 Defender alternativ skärm bild från sidan Inställningar för säkerhets Center för Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="1e231-257">Image of_Microsoft 365 Defender option screenshot from the Microsoft 365 Security Center Settings page</span></span> ](../../media/mtp-eval-72b.png) <br>
 
-<span data-ttu-id="3248e-258">Mer omfattande vägledning finns i [Aktivera skydd mot Microsoft Threat](mtp-enable.md).</span><span class="sxs-lookup"><span data-stu-id="3248e-258">For a more comprehensive guidance, see [Turn on Microsoft Threat Protection](mtp-enable.md).</span></span> 
+<span data-ttu-id="1e231-258">En mer omfattande vägledning finns i [aktivera Microsoft 365 Defender](mtp-enable.md).</span><span class="sxs-lookup"><span data-stu-id="1e231-258">For a more comprehensive guidance, see [Turn on Microsoft 365 Defender](mtp-enable.md).</span></span> 
 
-<span data-ttu-id="3248e-259">Grattis!</span><span class="sxs-lookup"><span data-stu-id="3248e-259">Congratulations!</span></span> <span data-ttu-id="3248e-260">Du har just skapat ett utvärderings labb för Microsoft Threat Protection eller pilot miljö!</span><span class="sxs-lookup"><span data-stu-id="3248e-260">You've just created your Microsoft Threat Protection trial lab or pilot environment!</span></span> <span data-ttu-id="3248e-261">Nu kan du bekanta dig med användar gränssnittet för Microsoft Threat Protection!</span><span class="sxs-lookup"><span data-stu-id="3248e-261">Now you can familiarize yourself with the Microsoft Threat Protection user interface!</span></span> <span data-ttu-id="3248e-262">Se vad du kan lära dig från följande interaktiva guide för Microsoft Threat Protection och få reda på hur du använder varje instrument panel för dina dagliga säkerhets åtgärder.</span><span class="sxs-lookup"><span data-stu-id="3248e-262">See what you can learn from the following Microsoft Threat Protection interactive guide and know how to use each dashboard for your day-to-day security operation tasks.</span></span>
+<span data-ttu-id="1e231-259">Grattis!</span><span class="sxs-lookup"><span data-stu-id="1e231-259">Congratulations!</span></span> <span data-ttu-id="1e231-260">Du har just skapat en utvärderings version av Microsoft 365 Defender eller pilot miljö!</span><span class="sxs-lookup"><span data-stu-id="1e231-260">You've just created your Microsoft 365 Defender trial lab or pilot environment!</span></span> <span data-ttu-id="1e231-261">Nu kan du bekanta dig med Microsoft 365 Defender-användargränssnittet!</span><span class="sxs-lookup"><span data-stu-id="1e231-261">Now you can familiarize yourself with the Microsoft 365 Defender user interface!</span></span> <span data-ttu-id="1e231-262">Se vad du kan lära dig från följande Microsoft 365 Defender interaktiva guide och hur du använder varje instrument panel för dina dagliga säkerhets åtgärder.</span><span class="sxs-lookup"><span data-stu-id="1e231-262">See what you can learn from the following Microsoft 365 Defender interactive guide and know how to use each dashboard for your day-to-day security operation tasks.</span></span>
 
 
 >[!VIDEO https://aka.ms/MTP-Interactive-Guide]
 
-<span data-ttu-id="3248e-263">Sedan kan du simulera en attack och se hur funktionerna för kors produkten identifieras, skapa aviseringar och automatiskt svara på en fillös attack på en slut punkt.</span><span class="sxs-lookup"><span data-stu-id="3248e-263">Next, you can simulate an attack and see how the cross product capabilities detect, create alerts, and automatically respond to a fileless attack on an endpoint.</span></span>
+<span data-ttu-id="1e231-263">Sedan kan du simulera en attack och se hur funktionerna för kors produkten identifieras, skapa aviseringar och automatiskt svara på en fillös attack på en slut punkt.</span><span class="sxs-lookup"><span data-stu-id="1e231-263">Next, you can simulate an attack and see how the cross product capabilities detect, create alerts, and automatically respond to a fileless attack on an endpoint.</span></span>
 
-## <a name="next-step"></a><span data-ttu-id="3248e-264">Nästa steg</span><span class="sxs-lookup"><span data-stu-id="3248e-264">Next step</span></span>
-|<span data-ttu-id="3248e-265">![Fasen för attack simulering](../../media/mtp/run-sim.png)</span><span class="sxs-lookup"><span data-stu-id="3248e-265">![Attack simulation phase](../../media/mtp/run-sim.png)</span></span> <br>[<span data-ttu-id="3248e-266">Fasen för attack simulering</span><span class="sxs-lookup"><span data-stu-id="3248e-266">Attack simulation phase</span></span>](mtp-pilot-simulate.md) | <span data-ttu-id="3248e-267">Kör angrepps simuleringen för din pilot miljö för Microsoft Threat Protection.</span><span class="sxs-lookup"><span data-stu-id="3248e-267">Run the attack simulation for your Microsoft Threat Protection pilot environment.</span></span>
+## <a name="next-step"></a><span data-ttu-id="1e231-264">Nästa steg</span><span class="sxs-lookup"><span data-stu-id="1e231-264">Next step</span></span>
+|<span data-ttu-id="1e231-265">![Fasen för attack simulering](../../media/mtp/run-sim.png)</span><span class="sxs-lookup"><span data-stu-id="1e231-265">![Attack simulation phase](../../media/mtp/run-sim.png)</span></span> <br>[<span data-ttu-id="1e231-266">Fasen för attack simulering</span><span class="sxs-lookup"><span data-stu-id="1e231-266">Attack simulation phase</span></span>](mtp-pilot-simulate.md) | <span data-ttu-id="1e231-267">Kör angrepps simuleringen för din Microsoft 365 Defender pilot miljö.</span><span class="sxs-lookup"><span data-stu-id="1e231-267">Run the attack simulation for your Microsoft 365 Defender pilot environment.</span></span>
 |:-------|:-----|
