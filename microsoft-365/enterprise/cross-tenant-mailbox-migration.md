@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 06a82fda31e602ed2feb53d00e8839daf801bf7e
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: a9f983cebfbed1482fca7e44b77c200cbd9574ac
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277490"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847124"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migrera mellan innehavare (för hands version)
 
@@ -43,7 +43,7 @@ Migreringsguiden för Exchange-postlådan för flera innehavare kräver auktoris
 
 I det här avsnittet ingår inte de steg som krävs för att förbereda användar objekt i gruppen användare i mål katalogen, eller så inkluderar det inte kommandot exempel för att skicka in en migreringstabell. Se [förbereda mål användar objekt för migrering](#prepare-target-user-objects-for-migration) för den här informationen.
 
-## <a name="prerequisites"></a>Förutsättningar
+## <a name="prerequisites"></a>Krav
 
 För funktionen för flytt av post lådor krävs ett [Azure-valv](https://docs.microsoft.com/azure/key-vault/basic-concepts) för att upprätta ett klient organisations par-specifika Azure-program för säker lagring och åtkomst till certifikatet/hemligheten som används för att autentisera och auktorisera post lådans migrering från en klient organisation till den andra, vilket tar bort alla krav för att dela certifikat/hemligheter mellan klient organisationer. 
 
@@ -97,7 +97,7 @@ Förbereda käll klient organisationen:
 4. Ändra katalogen för filmapp till skript platsen eller kontrol lera att skriptet är sparat på platsen som för närvarande är en fjärr-PowerShell-session.
 5. Kör skriptet med följande parametrar och värden.
 
-    | Indataparametern | Value | Obligatoriskt eller valfritt
+    | Indataparametern | Värde | Obligatoriskt eller valfritt
     |---------------------------------------------|-----------------|--------------|
     | -ResourceTenantDomain                       | Käll klient organisation, till exempel Fabrikam \. onmicrosoft.com. | Obligatoriskt |
     | -ResourceTenantAdminEmail                   | Källa för klient organisationens e-postadress. Det här är käll klientens administratör som kommer att skickas vidare till den som skickas från mål administratören. Det här är administratören som kommer att få e-postinbjudan för programmet. | Obligatoriskt |
@@ -181,7 +181,7 @@ Konfigurationen för mål administratören är nu klar!
 
 7. Kör skriptet med följande obligatoriska parametrar och värden.
 
-    | Indataparametern | Value |
+    | Indataparametern | Värde |
     |-----|------|
     | -SourceMailboxMovePublishedScopes | E-postaktive rad säkerhets grupp skapad av käll klient organisationen för de identiteter/post lådor som är i omfång för migrering. |
     | -ResourceTenantDomain | Käll klient namn för källan, till exempel Fabrikam \. onmicrosoft.com. |
@@ -275,7 +275,7 @@ Om en post låda flyttas tillbaka till den ursprungliga käll klient organisatio
 
 Användare som migreras måste finnas i mål klient organisationen och Exchange Online-systemet (som återanvändare) markeras med specifika attribut för att aktivera kors klient organisationer. Systemet kommer inte att flyttas för användare som inte har kon figurer ATS korrekt i mål klient organisationen. I följande avsnitt beskrivs användar objekts kraven för mål klient organisationen.
 
-### <a name="prerequisites"></a>Förutsättningar
+### <a name="prerequisites"></a>Krav
   
 Du måste kontrol lera att följande objekt och attribut är inställda i mål organisationen.  
 
@@ -291,7 +291,7 @@ Du måste kontrol lera att följande objekt och attribut är inställda i mål o
  
     Exempel på **mål** användar objekt:
  
-    | Attribut             | Value                                                                                                                    |
+    | Attribut             | Värde                                                                                                                    |
     |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
     | Standardaliasuppsättning                 | LaraN                                                                                                                    |
     | RecipientType         | Användare                                                                                                                 |
@@ -310,7 +310,7 @@ Du måste kontrol lera att följande objekt och attribut är inställda i mål o
 
    Exempel på **käll** post låda:
 
-   | Attribut             | Value                                                                    |
+   | Attribut             | Värde                                                                    |
    |-----------------------|--------------------------------------------------------------------------|
    | Standardaliasuppsättning                 | LaraN                                                                    |
    | RecipientType         | UserMailbox                                                              |
@@ -533,7 +533,7 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
 
 - **Problem: Cloud-användare med icke ägda SMTP-proxyAddress blockera MRS flyttar bakgrunden.** När du skapar användare av mål grupp för användar namn måste du se till att alla SMTP-proxyadresser tillhör organisationen för mål innehavaren. Om en SMTP-proxyAddress finns på mål-e-postkontot som inte tillhör den lokala klient organisationen förhindras konverteringen av e-postmeddelandet till post låda. Detta är på grund av vår garanti att Mailbox-objekt endast kan skicka e-post från domäner för vilka klient organisationen är auktoritär (domäner som klienten använder): 
 - 
-   - När du synkroniserar användare via lokal användning av Azure AD Connect tillhandahåller du lokala e-postobjekt med ExternalEmailAddress som pekar på käll klient organisationen där post lådan finns (laran@contoso \. onmicrosoft.com) och sedan stämplar PrimarySMTPAddress som en domän som finns i mål klient organisationen (Lara. Newton@northwind \. com). Dessa värden synkroniseras till klient organisationen och en lämplig e-postanvändare tillhandahålls och är klar för migrering. Ett exempel objekt visas här.
+   - När du synkroniserar användare via lokal användning av Azure AD Connect etablerar du lokala e-postobjekt med ExternalEmailAddress som pekar på käll klient organisationen där post lådan finns (laran@contoso \. onmicrosoft.com) och sedan stämplar PrimarySMTPAddress som en domän som finns i mål klient organisationen (Lara.Newton@northwind \. com). Dessa värden synkroniseras till klient organisationen och en lämplig e-postanvändare tillhandahålls och är klar för migrering. Ett exempel objekt visas här.
      ```powershell
      target/AADSynced user] PS C> Get-MailUser laran | select ExternalEmailAddress, EmailAddresses   
      ExternalEmailAddress               EmailAddresses 
@@ -644,8 +644,8 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
    | Microsoft Business Center                         |
    | Microsoft $ (fullständig)                      |
    | Avancerad eDiscovery för Office 365                    |
-   | Office 365 Avancerat skydd (abonnemang 1)    |
-   | Office 365 Avancerat skydd (abonnemang 2)    |
+   | Microsoft Defender för Office 365 (abonnemang 1)    |
+   | Microsoft Defender för Office 365 (abonnemang 2)    |
    | Office 365 hantering av privilegie rad åtkomst           |
    | Kund ansvarig för Outlook                          |
    | Premium-kryptering i Office 365                  |

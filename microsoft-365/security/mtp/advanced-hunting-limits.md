@@ -1,5 +1,5 @@
 ---
-title: Avancerade jakt kvoter och användnings parametrar i Microsoft Threat Protection
+title: Avancerade jakt kvoter och användnings parametrar i Microsoft 365 Defender
 description: Förstå olika kvoter och användnings parametrar (tjänst begränsningar) som håller den avancerade jakt tjänsten tillgänglig
 keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema, kusto, processor gräns, maxgräns, resurser, högsta resultat, kvot, parametrar, tilldelning
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 192fb47aafdd20bd5e1f0774a64ec3215f1203d1
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bab63d9e5939f87f6a1edbf62d256b82552e4fe9
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636911"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847374"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>Avancerade jakt kvoter och användnings parametrar
 
@@ -32,7 +32,7 @@ ms.locfileid: "48636911"
 
 
 **Gäller för:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 För att hålla tjänsten igång och svarar kan de avancerade jaktarna ange olika kvoter och användnings parametrar (kallas även "tjänst gränser"). Dessa kvoter och parametrar gäller för frågor som körs manuellt och efter [anpassade identifierings regler](custom-detection-rules.md). Kunder som ofta kör flera frågor bör spåra förbrukning och [tillämpa optimerings metod tips](advanced-hunting-best-practices.md) för att minimera störningar.
 

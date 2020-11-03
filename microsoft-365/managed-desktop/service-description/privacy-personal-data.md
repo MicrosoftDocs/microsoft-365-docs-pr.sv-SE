@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 33a2bf0b85b9b8561a5dcf32eae6e4cd0cb53765
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 294a3c6c54e28fa03ff6264898e7763325f78c3e
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950490"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847774"
 ---
 # <a name="privacy-and-personal-data"></a>Integritets-och person uppgifter
 
@@ -56,7 +56,7 @@ Microsoft Managed Desktop använder följande data:
 |---------|---------|
 |Azure Active Directory-data     | Används i rapporter som har skapats för klient organisationer, vilka är tillgängliga på administrations portalen för Microsoft Managed Desktop.        |
 |Intune-data     | Används i rapporter som har skapats för klient organisationer, vilka är tillgängliga på administrations portalen för Microsoft Managed Desktop.        |
-|Microsoft Defender Avancerat skydd (ATP)     |  Används för adressering av säkerhetshoten som upptäckts på registrerade enheter av Microsoft Managed Desktops säkerhets åtgärds Center (SOC).  |
+|Microsoft Defender för slut punkt     |  Används för adressering av säkerhetshoten som upptäckts på registrerade enheter av Microsoft Managed Desktops säkerhets åtgärds Center (SOC).  |
 |Windows-diagnostikdata     |Används för att fastställa uppdaterings status för hanterade enheter samt för att tillhandahålla och förbättra Microsoft Managed Desktop-tjänsten IT-as-service (ITaaS).         |
 |Administratörs kontakt data     | Används av Microsoft Managed Desktop för att kommunicera med klient organisationer.        |
 
@@ -73,7 +73,7 @@ Microsoft Managed Desktop bearbetar dessa enheter för att tillhandahålla tjän
 - Klient organisations data
 - Azure Active Directory-resurser
 - Princip-och konfigurations data
-- Microsoft Defender ATP-metadata
+- Microsoft Defender för slut punktens metadata
 - Windows-diagnostikdata
 - Användnings data för produkt och tjänst
 
@@ -87,9 +87,9 @@ Mer information om regionerna Azure använder för data lagring finns i [Azure A
 
 Intune-data kan lagras i några olika regioner, till exempel Europe Nord (Irland) och Europe West (Nederländerna). Din IT-administratör skapar ett klient konto och väljer det land där data ska lagras när de ursprungligen registrerar i Intune-tjänsterna. En lista med data Center-platser som används av Intune finns i [Microsoft Intune – var finns mina kund uppgifter?](http://intunedatacentermap.azurewebsites.net/). Mer information om data lagring och användning av Intune finns i [data insamling i Intune](https://docs.microsoft.com/intune/privacy-data-collect).
 
-### <a name="microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Avancerat skydd
+### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender för slut punkt
 
-Microsoft Defender data för avancerat skydd (ATP) kan lagras i några olika regioner. Av den här anledningen fungerar Microsoft Defender ATP i Microsoft Azure-datacenters i Europeiska unionen, Storbritannien och USA, enligt vad som anges i [Microsoft Defender ATP – data lagrings platser](http://intunedatacentermap.azurewebsites.net/). Om du vill ha mer information om data lagring och användning av Microsoft Defender ATP kan du läsa [vilka data som har Microsoft Defender ATP?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
+Microsoft Defender för slut punkts data kan lagras i några olika områden. Av den här anledningen fungerar Defender för slut punkt i Microsoft Azure-datacenters i Europeiska unionen, Storbritannien och USA, enligt vad som anges i [Microsoft Defender för slut punkten – data lagrings platser](http://intunedatacentermap.azurewebsites.net/). Mer information om data lagring och användning av Defender för slut punkter finns i [vilka data samlar Microsoft Defender för slut punkter?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
 
 ### <a name="windows-10"></a>Windows 10
 
@@ -138,5 +138,5 @@ Använd dessutom följande vägledning för att använda DSRs för tjänsterna s
 
 - [Azure Active Directory](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure?view=o365-worldwide)
 - [Microsoft Intune](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-intune?view=o365-worldwide)
-- [Microsoft Defender Avancerat skydd](https:/docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+- [Microsoft Defender för slut punkt](https:/docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 - [Windows 10](https://docs.microsoft.com/windows/privacy/windows-10-and-privacy-compliance)

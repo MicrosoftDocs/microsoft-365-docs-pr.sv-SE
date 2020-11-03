@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8ced46ea30c7225fd3e5c8f1309ef482542e51b2
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: de0bc092c35c7f48c562da8d4218f7a638abe1d5
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445789"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847786"
 ---
 # <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Roller och ansvar för Microsoft Hanterat skrivbord
 
@@ -33,7 +33,7 @@ Roll eller ansvar | Beskrivning
 Princip hantering för MDM | Microsoft tillämpar MDM-principer enligt bästa praxis och Överväg begär Anden om princip ändringar. Vi kommer även att göra ändringar i din klient organisation enligt vad som anges i [enhets principer](../service-description/device-policies.md).
 stöd för användare | Vi tillhandahåller användar stöd för enheter, Windows och Microsoft 365-programmen för företags produkt paketet för alla registrerade användare via appen skaffa hjälp som är förinstallerad på alla Microsoft-hanterade Station ära enheter. 
 Stöd för Microsoft Managed Desktop service | Microsoft tillhandahåller support för din IT-avdelning via ett Microsoft Managed Station ära datorer. Det här teamet kommer att stödja teknisk fel sökning, ändrings förfrågningar och ärende hantering för kundens Microsoft-hanterade Skriv bords miljö. Mer information finns i [Administratörs support för Microsoft Managed Desktop](../working-with-managed-desktop/admin-support.md).
-Säkerhets övervakning | Microsoft övervakar dina Microsoft-hanterade Skriv bords enheter med Microsoft Defender ATP. Om Microsoft Managed Desktop Security Operations Center (SOC) upptäcker ett hot meddelar vi dig, isolerar enheten och kan lösa problemet från fjärran. Mer information finns i [säkerhet](../service-description/security.md).
+Säkerhets övervakning | Microsoft övervakar dina Microsoft-hanterade Skriv bords enheter med Microsoft Defender för slut punkten. Om Microsoft Managed Desktop Security Operations Center (SOC) upptäcker ett hot meddelar vi dig, isolerar enheten och kan lösa problemet från fjärran. Mer information finns i [säkerhet](../service-description/security.md).
 Uppdaterings övervakning och-hantering | Vi övervakar nu dina Microsoft Managed Station ära enheter för att säkerställa att de senaste kvalitets-och funktions uppdateringarna installeras för Microsoft Windows och Microsoft Office. Mer information finns i [hur uppdateringar hanteras](../service-description/updates.md).
 Gruppering av användare och enheter | Microsoft Managed Desktop Operations Group skapar och hanterar nödvändiga enheter och användar grupper som en del av IT-operationer. Inga medlemskaps-eller konfigurations ändringar är tillåtna för dessa grupper. Ändring av dessa grupper kan leda till oväntad konfiguration av enheter och funktions nedsättning. För eventuella problem eller frågor kring dessa grupper när de har upprättats kan IT-administratörer kontakta Microsoft Managed Station ära datorer. Mer information finns i [Administratörs support för Microsoft Managed Desktop](../working-with-managed-desktop/admin-support.md).
 

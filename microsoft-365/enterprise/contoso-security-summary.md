@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Hur Contoso använder säkerhetsfunktionerna i Microsoft 365 för företag.
-ms.openlocfilehash: d84b1423497a6a4358142902c4e159cc54b3500b
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 8d62dba96ecf19f0dc31af2cf5a2d85257ca19d5
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754238"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847112"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Sammanfattning av Microsoft 365 för företags säkerhet för Contoso Corporation
 
@@ -89,9 +89,9 @@ Om du vill följa säkerhets praxis och Microsoft 365 för företags distributio
 
   Contoso använder [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) som skydd mot skadlig kod och hantering av programvara som motverkar skadlig kod för datorer och enheter med Windows 10 Enterprise.
 
-- Säkert e-postflöde och loggning av postlådegranskning med Office 365 Avancerat skydd 
+- Skydda e-postflöde och gransknings loggning med Microsoft Defender för Office 365 
 
-  Contoso använder Exchange Online Protection och [Office](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) 365 Avancerat skydd som skydd mot okänd skadlig kod, virus och skadliga URL:er som skickas via e-post.
+  Contoso använder Exchange Online Protection och [Defender för Office 365 för](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) att skydda mot okända skadlig program vara, virus och illasinnade webb adresser.
 
   Contoso har också aktiverat gransknings loggning för post lådor för att identifiera vem som loggar in i en användares post låda, skickar meddelanden och andra aktiviteter som utförs av post lådans ägare, en delegerad användare eller administratör.
 
@@ -127,9 +127,9 @@ Om du vill följa säkerhets praxis och Microsoft 365 för företags distributio
 
 ## <a name="security-management"></a>Säkerhetshantering
 
-- Central säkerhetsinstrumentpanel för IT med Azure Security Center
+- Central säkerhets instrument panel för den med Azure Defender *
 
-  Contoso använder [Azure Security Center](https://azure.microsoft.com/services/security-center/) för att presentera en enhetlig vy över säkerhets-och hot skydd, för att hantera säkerhets principer för dess arbets belastningar och för att svara på cyberattacks.
+  Contoso använder [Azure Defender *](https://azure.microsoft.com/services/security-center/) för att presentera en enhetlig vy över säkerhets-och hot skydd, för att hantera säkerhets principer för dess arbets belastningar och för att svara på cyberattacks.
 
 - Central säkerhetsinstrumentpanel för användare med Windows Defender Säkerhetscenter
 

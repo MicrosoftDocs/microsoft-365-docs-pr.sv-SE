@@ -1,5 +1,5 @@
 ---
-title: AssignedIPAddresses ()-funktion i avancerad jakt för skydd mot Microsoft Threat
+title: AssignedIPAddresses ()-funktion i avancerad jakt för Microsoft 365 Defender
 description: Lär dig hur du använder funktionen AssignedIPAddresses () för att få de senaste IP-adresserna tilldelade till en enhet
 keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, FileProfile, fil profil, funktion och berikning
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 462a4884e2b17f9ae75ea3bdc1531b180dcc5934
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: cb9dffca148c95f284a6a7e920f3a08a839b748d
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430133"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847650"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -32,7 +32,7 @@ ms.locfileid: "48430133"
 
 
 **Gäller för:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 Använd `AssignedIPAddresses()` funktionen i de [avancerade jakt](advanced-hunting-overview.md) frågorna för att snabbt få de senaste IP-adresserna som har tilldelats till en enhet. Om du anger ett timestamp-argument får den här funktionen de senaste IP-adresserna vid den angivna tiden. 
 
@@ -54,8 +54,8 @@ AssignedIPAddresses(x, y)
 
 ## <a name="arguments"></a>Argument
 
-- **x**– `DeviceId` eller `DeviceName` värde som identifierar enheten
-- **y**– `Timestamp` (datetime)-värde som anger funktionen för att hämta de senaste tilldelade IP-adresserna från en viss tidpunkt. Om inget anges returnerar funktionen de senaste IP-adresserna.
+- **x** – `DeviceId` eller `DeviceName` värde som identifierar enheten
+- **y** – `Timestamp` (datetime)-värde som anger funktionen för att hämta de senaste tilldelade IP-adresserna från en viss tidpunkt. Om inget anges returnerar funktionen de senaste IP-adresserna.
 
 ## <a name="examples"></a>Exempel
 

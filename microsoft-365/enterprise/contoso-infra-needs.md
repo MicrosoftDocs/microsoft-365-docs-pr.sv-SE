@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå den grundläggande strukturen i den lokala IT-infrastrukturen för Contoso och hur företagets företags behov uppfylls av Microsoft 365 för företag.
-ms.openlocfilehash: 767374097efa116f116cff6f6ddf96d075eb71ed
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 0a837a457869fc579d94ee5e5f9bb114cb93f641
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754592"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847136"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Skype IT-infrastruktur och företags behov
 
@@ -121,10 +121,10 @@ Contosos IT-avdelning har fastställt följande mappning av företags behov till
 |  | Förbättra produktiviteten för distans- och mobila arbetare | Microsoft 365-arbetsbelastningar och molnbaserade data |
 |  | Öka kreativiteten och innovationen | Windows Ink, Cortana at Work, PowerPoint |
 | Säkerhet |  |  |
-|  | Identitets- och åtkomsthantering | Dedikerade globala administratörs konton med Azure Multi-Factority (MFA) och Azure Active Directory-privilegierad identitets hantering (PIM) <BR> MFA för alla användarkonton <BR> Med villkorsstyrd åtkomst <BR> Windows Hello <BR> Windows Credential Guard |
-|  | Skydd mot hot | Advanced Threat Analytics <BR> Windows Defender <BR> Avancerat skydd <BR> Office 365 Avancerat skydd <BR> Microsoft 365 hot undersökningar och svar <BR> |
+|  | Identitets- och åtkomsthantering | Dedikerade globala administratörskonton med Azure Multi-Factor Authentication (MFA) och Azure AD Privileged Identity Management (PIM) <BR> MFA för alla användarkonton <BR> Med villkorsstyrd åtkomst <BR> Windows Hello <BR> Windows Credential Guard |
+|  | Skydd mot hot | Advanced Threat Analytics <BR> Windows Defender <BR> Defender för Office 365 <BR> Microsoft Defender för Office 365 <BR> Microsoft 365 hot undersökningar och svar <BR> |
 |  | Informationsskydd | Azure Information Protection <BR> Skydd mot dataförlust (DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
-|  | Säkerhetshantering | Azure Security Center  <BR> Windows Defender Säkerhetscenter |
+|  | Säkerhetshantering | Azure Defender *  <BR> Windows Defender Säkerhetscenter |
 | Fjärr- och mobilåtkomst för affärspartner |  |  |
 |  | Högre säkerhet för arbetare och distansarbetare | Microsoft Intune |
 |  | Minska infrastrukturen för fjärråtkomst för medarbetare | Microsoft 365-arbetsbelastningar och molnbaserade data |

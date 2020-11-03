@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Använd den här test laboratorie guiden för att aktivera ytterligare Microsoft 365-säkerhets inställningar din Microsoft 365 för företags test miljö.
-ms.openlocfilehash: 7c3300111f5999714b87a176087207a1651cdcaf
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: d385688a6e59ee500442bcf1b815dfd165102242
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487406"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847006"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Ökad Microsoft 365-säkerhet för test miljön av Microsoft 365 för företag
 
@@ -56,17 +56,17 @@ Appar som inte stöder modern lösenordsautentisering kan inte ha [identitets-oc
   - Om du använder den simulerade företags test miljön för Microsoft 365 kan du använda [Azure-portalen](https://portal.azure.com) för att ansluta till den virtuella KLIENT1 och sedan logga in från KLIENT1.
  
 2. På fliken ny **administrations Center för Microsoft 365** går du till **administrations** Center i det vänstra navigerings fönstret och klickar på **SharePoint**.
-3. Klicka på **principer > åtkomst kontroll**på fliken nytt **administrations Center för SharePoint** .
-4. Klicka på **appar som inte stöder modern auktorisering**, Välj **blockera åtkomst**och klicka sedan på **Spara**.
+3. Klicka på **principer > åtkomst kontroll** på fliken nytt **administrations Center för SharePoint** .
+4. Klicka på **appar som inte stöder modern auktorisering** , Välj **blockera åtkomst** och klicka sedan på **Spara**.
 
 
-### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Aktivera avancerat skydd för SharePoint, OneDrive för företag och Microsoft Teams
+### <a name="enable-defender-for-office-365-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Aktivera Defender för Office 365 för SharePoint, OneDrive för företag och Microsoft Teams
 
-Office 365 Avancerat skydd (ATP) för SharePoint, OneDrive och Microsoft Teams skyddar din organisation från oavsiktlig delning av skadliga filer.
+Defender för Office 365 för SharePoint, OneDrive och Microsoft Teams skyddar din organisation från oavsiktlig delning av skadliga filer.
 
 1. Gå till [säkerhets & Compliance Center](https://protection.office.com) och logga in med ditt globala administratörs konto.
 
-2. I det vänstra navigerings fönstret, under **Threat Management**, klickar du på **princip**och sedan på **ATP Safe Attachments**. 
+2. I det vänstra navigerings fönstret under **Threat Management** klickar du på **princip** och sedan på **säkra bifogade filer**. 
 
 3. Under **skydda filer i SharePoint, OneDrive och Microsoft Teams**. Välj **Aktivera ATP för SharePoint, OneDrive och Microsoft Teams**.
 
@@ -84,8 +84,8 @@ Så här kontrollerar du att behandling mot skadlig program vara utförs på fil
 1. Klicka på knappen bakåt i webbläsaren för att gå tillbaka till **princip** sidan.
 2. Klicka på **skadlig program vara**.
 3. Dubbelklicka på den princip som heter **default**.
-4. Klicka på **Inställningar**i **princip fönstret mot skadlig program vara** .
-4. Välj **på**under **vanliga typer av bifogade filer**och klicka sedan på **Spara**.
+4. Klicka på **Inställningar** i **princip fönstret mot skadlig program vara** .
+4. Välj **på** under **vanliga typer av bifogade filer** och klicka sedan på **Spara**.
 
 
 ## <a name="phase-3-examine-the-security-dashboard"></a>Fas 3: granska säkerhets instrument panelen
@@ -96,7 +96,7 @@ Så här visar du säkerhets instrument panelen:
 
 1. Om det behövs går du till sidan [säkerhets & efterlevnad](https://protection.office.com) och loggar in med ditt globala administratörs konto.
 
-2. Klicka på **instrument panel**under **Threat Management**i det vänstra navigerings fönstret.
+2. Klicka på **instrument panel** under **Threat Management** i det vänstra navigerings fönstret.
 
 Ta en titt på alla kort på instrument panelen för att bekanta dig med informationen.
 

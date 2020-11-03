@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Förhindra person uppgifter om identitets-, enhets-och hot skydd i Microsoft 365.
-ms.openlocfilehash: e084036860f5d15a14ca6c75305583b86a5fc53f
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 321b60efbdabe62b14502df4a16dd2dcec4b9cef
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398697"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847184"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Använd identitets-, enhets-och hot skydd för data integritets förordning
 
@@ -70,12 +70,12 @@ Använd [Microsoft slut punkts hanteraren](https://www.microsoft.com/microsoft-3
 - Kräv att mobila enheter låses vid inaktivitet.
 - Kräv att mobila enheter rensas på flera inloggnings problem.
 
-Använd [Exchange Online Protection och Office 365 Avancerat skydd (ATP)](../security/office-365-security/office-365-atp.md) för kategorin **skydda mot hot** :
+Använd [Exchange Online Protection och Microsoft Defender för Office 365](../security/office-365-security/office-365-atp.md) för kategorin **skydda mot hot** som du kan:
 
 - Aktivera avsändare (SPF, DMARC och DKIM).
-- Konfigurera Office 365 skydd mot nätfiske (avancerat skydd).
-- Implementera säkra filer för ATP.
-- Implementera säkra ATP-länkar.
+- Konfigurera Microsoft Defender för Office 365-nätfiske-principer.
+- Implementera säkra bifogade filer.
+- Implementera säkra länkar.
 - Implementera identifierings-och svars principer för skadlig kod.
 - Implementera principer för utgående och inkommande skräp post.
 
@@ -83,6 +83,6 @@ Använd [Exchange Online Protection och Office 365 Avancerat skydd (ATP)](../sec
 
 - [Vanliga principer för identitets- och enhetsåtkomst](../security/office-365-security/identity-access-policies.md)
 - [Skydda mot hot i Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
-- [Säkra filer för ATP](../security/office-365-security/atp-safe-attachments.md)
-- [Säkra ATP-länkar](../security/office-365-security/atp-safe-links.md)
-- [ATP Säkra dokument](../security/office-365-security/safe-docs.md)
+- [Säkra bifogade filer](../security/office-365-security/atp-safe-attachments.md)
+- [Säkra länkar](../security/office-365-security/atp-safe-links.md)
+- [Säkra dokument](../security/office-365-security/safe-docs.md)

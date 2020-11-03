@@ -1,6 +1,6 @@
 ---
-title: Migrera avancerade frågor från Microsoft Defender ATP
-description: Lär dig hur du justerar dina Microsoft Defender ATP-frågor så att du kan använda dem i Microsoft Threat Protection
+title: Migrera frågor om avancerade jakt från Microsoft Defender för slut punkt
+description: Lär dig hur du justerar Microsoft Defender för slut punkts frågor så att du kan använda dem i Microsoft 365 Defender
 keywords: Avancerad jakt, Hot jakt, cyberterrorism Threat stöldskydd, Microsoft Threat Protection, Microsoft 365, MTP, m365, Microsoft Defender ATP, mdatp, Sök, fråga, telemetri, anpassade identifieringar, schema, kusto, Microsoft 365, mappning
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,39 +20,39 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f56360b28a9fe9de4198d97954a64a429d1d99a5
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 8b69dff94cc5d3ba3331fd6d13b1d7de1402ac47
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429701"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846862"
 ---
-# <a name="migrate-advanced-hunting-queries-from-microsoft-defender-atp"></a>Migrera avancerade frågor från Microsoft Defender ATP
+# <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Migrera frågor om avancerade jakt från Microsoft Defender för slut punkt
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Gäller för:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-Flytta dina avancerade arbets flöden från Microsoft Defender ATP för att proaktivt använda en bredare uppsättning data. I Microsoft Threat Protection får du till gång till data från andra Microsoft 365-säkerhetslösningar, bland annat:
+Flytta dina avancerade jakt arbets flöden från Microsoft Defender för slut punkt för att proaktivt använda en bredare uppsättning data. I Microsoft 365 Defender får du till gång till data från andra säkerhetslösningar från Microsoft 365, till exempel:
 
-- Microsoft Defender Avancerat skydd
-- Office 365 Avancerat skydd
+- Microsoft Defender för slut punkt
+- Microsoft Defender för Office 365
 - Microsoft Cloud App Security
-- Azure Advanced Threat Protection
+- Microsoft Defender för identitet
 
 >[!NOTE]
->De flesta Microsoft Defender ATP-kunder kan [använda Microsoft Threat Protection utan ytterligare licenser](prerequisites.md#licensing-requirements). Om du vill börja överföra dina avancerade arbets flöden från Microsoft Defender ATP [aktiverar du skydd mot Microsoft Threat](mtp-enable.md).
+>De flesta Microsoft Defender för slut punkter kan [använda Microsoft 365 Defender utan ytterligare licenser](prerequisites.md#licensing-requirements). Om du vill börja överta dina avancerade arbets flöden från Defender för slut punkt [aktiverar du Microsoft 365 Defender](mtp-enable.md).
 
-Du kan gå över utan att påverka dina befintliga Microsoft Defender ATP-arbetsflöden. Sparade frågor är oförändrade och anpassade identifierings regler fortsätter att köra och generera aviseringar. De kommer att synas i skydd mot Microsoft Threat. 
+Du kan gå över utan att påverka dina befintliga Defender för slut arbets flöden. Sparade frågor är oförändrade och anpassade identifierings regler fortsätter att köra och generera aviseringar. De kommer att synas i Microsoft 365 Defender. 
 
-## <a name="schema-tables-in-microsoft-threat-protection-only"></a>Endast schema tabeller i Microsoft Threat Protection
-Ett [Avancerat Antivirus schema för Microsoft Threat Protection](advanced-hunting-schema-tables.md) ger ytterligare tabeller med data från olika Microsoft 365-säkerhetslösningar. Följande tabeller är endast tillgängliga i Microsoft Threat Protection:
+## <a name="schema-tables-in-microsoft-365-defender-only"></a>Schema tabeller i Microsoft 365 Defender
+[Microsoft 365 Defender Advanced jakt-schemat](advanced-hunting-schema-tables.md) innehåller ytterligare tabeller med data från olika Microsoft 365-säkerhetslösningar. Följande tabeller är endast tillgängliga i Microsoft 365 Defender:
 
 | Tabellnamn | Beskrivning |
 |------------|-------------|
 | [AlertEvidence](advanced-hunting-alertevidence-table.md) | Filer, IP-adresser, URL: er, användare eller enheter associerade med aviseringar |
-| [AlertInfo](advanced-hunting-alertinfo-table.md) | Aviseringar från Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security och Azure ATP, inklusive allvarlighets GRADS information och hot kategorier  |
+| [AlertInfo](advanced-hunting-alertinfo-table.md) | Aviseringar från Microsoft Defender för slut punkt, Microsoft Defender för Office 365, Microsoft Cloud App Security och Microsoft Defender för identitet, inklusive allvarlighets GRADS information och hot kategorier  |
 | [AppFileEvents](advanced-hunting-appfileevents-table.md) | Filrelaterade aktiviteter i moln program och-tjänster |
 | [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) | Information om bifogade filer i e-postmeddelanden |
 | [EmailEvents](advanced-hunting-emailevents-table.md) | Microsoft 365-e-posthändelser, inklusive händelser för e-postleverans och blockering |
@@ -64,14 +64,14 @@ Ett [Avancerat Antivirus schema för Microsoft Threat Protection](advanced-hunti
 | [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md) | Frågor för Active Directory-objekt, till exempel användare, grupper, enheter och domäner |
 
 ## <a name="map-devicealertevents-table"></a>Kart DeviceAlertEvents tabell
-`AlertInfo`Tabellerna och `AlertEvidence` ersätter `DeviceAlertEvents` tabellen i Microsoft Defender ATP-schemat. Utöver data om enhets aviseringar innehåller de här två tabellerna data om aviseringar för identiteter, appar och e-postmeddelanden.
+`AlertInfo`Tabellerna och `AlertEvidence` ersätter `DeviceAlertEvents` tabellen i Microsoft Defender för slut punkts schema. Utöver data om enhets aviseringar innehåller de här två tabellerna data om aviseringar för identiteter, appar och e-postmeddelanden.
 
 Använd följande tabell för att kontrol lera hur `DeviceAlertEvents` kolumnerna mappas till kolumner i `AlertInfo` `AlertEvidence` tabellerna och.
 
 >[!TIP]
 >Förutom kolumnerna i följande tabell `AlertEvidence` innehåller tabellen många andra kolumner som ger en mer holistisk bild av notifieringar från olika källor. [Se alla AlertEvidence-kolumner](advanced-hunting-alertevidence-table.md) 
 
-| Kolumnen DeviceAlertEvents | Här hittar du samma data i Microsoft Threat Protection |
+| Kolumnen DeviceAlertEvents | Här hittar du samma data i Microsoft 365 Defender |
 |-------------|-----------|-------------|-------------|
 | `AlertId` | `AlertInfo` och  `AlertEvidence` tabeller |
 | `Timestamp` | `AlertInfo` och  `AlertEvidence` tabeller |
@@ -85,17 +85,17 @@ Använd följande tabell för att kontrol lera hur `DeviceAlertEvents` kolumnern
 | `RemoteUrl` | `AlertEvidence` tabell |
 | `RemoteIP` | `AlertEvidence` tabell |
 | `AttackTechniques` | `AlertInfo` tabell |
-| `ReportId` | Den här kolumnen används vanligt vis i Microsoft Defender ATP för att hitta relaterade poster i andra tabeller. I Microsoft Threat Protection kan du hämta relaterade data direkt från `AlertEvidence` tabellen. |
-| `Table` | Den här kolumnen används vanligt vis i Microsoft Defender ATP för ytterligare information i andra tabeller. I Microsoft Threat Protection kan du hämta relaterade data direkt från `AlertEvidence` tabellen. |
+| `ReportId` | Den här kolumnen används vanligt vis i Microsoft Defender för slut punkter för att hitta relaterade poster i andra tabeller. I Microsoft 365 Defender kan du hämta relaterade data direkt från `AlertEvidence` tabellen. |
+| `Table` | Den här kolumnen används vanligt vis i Microsoft Defender för att få ytterligare information i andra tabeller. I Microsoft 365 Defender kan du hämta relaterade data direkt från `AlertEvidence` tabellen. |
 
-## <a name="adjust-existing-microsoft-defender-atp-queries"></a>Justera befintliga Microsoft Defender ATP-frågor
-Microsoft Defender ATP-frågor fungerar på samma sätt såvida de inte refererar till `DeviceAlertEvents` tabellen. Tillämpa dessa ändringar för att använda dessa frågor i skydd mot Microsoft Threats:
+## <a name="adjust-existing-microsoft-defender-for-endpoint-queries"></a>Justera befintliga Microsoft Defender för slut punkts frågor
+Microsoft Defender för slut punkts frågor fungerar på samma sätt såvida den inte refererar till `DeviceAlertEvents` tabellen. Tillämpa dessa ändringar för att använda dessa frågor i Microsoft 365 Defender:
 
 - Ersätt `DeviceAlertEvents` med `AlertInfo` .
 - Gå med i `AlertInfo` och till `AlertEvidence` tabellerna för `AlertId` att få motsvarande data.
 
 ### <a name="original-query"></a>Ursprunglig fråga
-I följande fråga används `DeviceAlertEvents` Microsoft Defender ATP för att få de meddelanden som berör _powershell.exe_:
+I följande fråga används `DeviceAlertEvents` Microsoft Defender för slut punkt för att få aviseringar som berör _powershell.exe_ :
 
 ```kusto
 DeviceAlertEvents
@@ -103,7 +103,7 @@ DeviceAlertEvents
 | where AttackTechniques has "PowerShell (T1086)" and FileName == "powershell.exe"
 ```
 ### <a name="modified-query"></a>Ändrad fråga
-Följande fråga har ställts in för användning i Microsoft Threat Protection. I stället för att kontrol lera fil namnet direkt från `DeviceAlertEvents` går det `AlertEvidence` att kontrol lera fil namnet i tabellen.
+Följande fråga har ställts in för användning i Microsoft 365 Defender. I stället för att kontrol lera fil namnet direkt från `DeviceAlertEvents` går det `AlertEvidence` att kontrol lera fil namnet i tabellen.
 
 ```kusto
 AlertInfo 
@@ -114,7 +114,7 @@ AlertInfo
 ```
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Aktivera Microsoft Hotskydd](advanced-hunting-query-language.md)
+- [Aktivera Microsoft 365 Defender](advanced-hunting-query-language.md)
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
-- [Avancerad jakt i Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
+- [Avancerad jakt i Microsoft Defender för slut punkten](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)

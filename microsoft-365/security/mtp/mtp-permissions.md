@@ -1,6 +1,6 @@
 ---
-title: Hantera åtkomst till Microsoft Threat Protection data i Microsoft 365 säkerhets Center
-description: Lär dig hur du hanterar behörigheter till data i Microsoft Threat Protection
+title: Hantera åtkomst till Microsoft 365 Defender-data i Microsoft 365 säkerhets Center
+description: Lär dig hur du hanterar behörigheter till data i Microsoft 365 Defender
 keywords: åtkomst, behörigheter, MTP, Microsoft Threat Protection, M365, säkerhet, MCAS, MDATP, Cloud App Security, Microsoft Defender Avancerat skydd, scope, omfattning, RBAC
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,22 +19,22 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 96a8694f5cbc7c27d27acbd5ec0aabe8712c6f06
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 55b7b8c5755b773a4d53c95017a0a17a85495dee
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201081"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847254"
 ---
-# <a name="manage-access-to-microsoft-threat-protection"></a>Hantera åtkomst till skydd mot Microsoft Threat
+# <a name="manage-access-to-microsoft-365-defender"></a>Hantera åtkomst till Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Gäller för:**
-- Microsoft Hotskydd
+- Microsoft 365 Defender
 
-Konton tilldelade följande Azure Active Directory (AD)-roller kan komma åt funktioner och data för Microsoft Threat Protection:
+Konton tilldelade följande Azure Active Directory (AD)-roller kan komma åt Microsoft 365 Defender-funktioner och-data:
 - Global administratör
 - Säkerhetsadministratör
 - Säkerhets ansvarig
@@ -50,15 +50,15 @@ Konton tilldelade följande Azure Active Directory (AD)-roller kan komma åt fun
 [Automatisk undersökning och reparation](mtp-autoir-actions.md) kan utföra åtgärder på e-post, vidarebefordrings regler, filer, beständiga mekanismer och andra artefakter under undersökningar. För att godkänna eller avvisa väntande åtgärder som kräver explicit godkännande måste du ha vissa roller tilldelade i Microsoft 365. Mer information finns i [behörigheter för åtgärds Center](mtp-action-center.md#required-permissions-for-action-center-tasks).
 
 ## <a name="access-to-data"></a>Till gång till data
-Åtkomst till Microsoft Threat Protection data kan styras med det scope som tilldelats till användar grupper i Microsoft Defender ATP-baserad åtkomst kontroll (RBAC). Om din åtkomst inte har beställts till en viss uppsättning enheter i Microsoft Defender ATP får du fullständig åtkomst till data i Microsoft Threat Protection. Men när ditt konto har begränsad räckvidd visas bara data om enheterna i ditt område.
+Åtkomst till Microsoft 365 Defender-data kan styras med det scope som är tilldelat till användar grupper i Microsoft Defender för slut punkts rollbaserad åtkomst kontroll (RBAC). Om din åtkomst inte har beställts till en viss uppsättning enheter i Defender för slut punkt får du fullständig åtkomst till data i Microsoft 365 Defender. Men när ditt konto har begränsad räckvidd visas bara data om enheterna i ditt område.
 
-Om du till exempel tillhör bara en användar grupp med en Microsoft Defender ATP-roll och den användar gruppen endast har åtkomst till försäljnings enheter kan du endast se data om försäljnings enheter i Microsoft Threat Protection. [Läs mer om RBAC-inställningar i Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
+Om du till exempel tillhör bara en användar grupp med en Microsoft Defender för slut punkts roll och den användar gruppen endast har åtkomst till försäljnings enheter kan du endast se data om försäljnings enheter i Microsoft 365 Defender. [Läs mer om RBAC-inställningar i Microsoft Defender för slut punkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
 
 ### <a name="microsoft-cloud-app-security-access-controls"></a>Kontroller för säkerhets åtkomst för Microsoft Cloud App
-Under förhands granskningen upprätthålls inte åtkomst kontroller baserade på säkerhets inställningar för moln programmet. Åtkomst till Microsoft Threat Protection data påverkas inte av de här inställningarna.
+Under förhands granskningen upprätthåller inte Microsoft 365 Defender åtkomst kontroller baserade på säkerhets inställningar för Cloud App. Åtkomst till Microsoft 365 Defender-data påverkas inte av de här inställningarna.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
 - [Azure AD-roller](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
-- [Microsoft Defender ATP-RBAC](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
+- [Microsoft Defender för slut punkts RBAC](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
 - [Säkerhets roller för Cloud App](https://docs.microsoft.com/cloud-app-security/manage-admins)

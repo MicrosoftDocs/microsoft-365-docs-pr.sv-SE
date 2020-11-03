@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Sammanfattning: förstå migrering från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i det nya tyska data centret.'
-ms.openlocfilehash: a77dc43c4c30992d2e50aad94878f9269573db52
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 23ccc30bab5d1045e4716cd637899e20362fc597
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327123"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846946"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migrering från Microsoft Cloud Deutschland till Office 365-tjänster i de nya tyska Data Center-regionerna
 
@@ -133,7 +133,7 @@ Följande 15 tjänster är tillgängliga i tillägget Microsoft Cloud Deutschlan
 3. Grupper (moderna grupper)
 4. Delve-profil
 5. Exchange Online Protection
-6. Avancerat skydd (ATP)
+6. Defender för Office 365
 7. Advanced eDiscovery
 8. Data styrning
 9. SharePoint Online
@@ -153,7 +153,7 @@ Det finns för närvarande 29 tjänster tillgängliga som en del av Office 365-t
 5. MyAnalytics
 6. Workplace Analytics
 7. Exchange Online Protection
-8. Avancerat skydd (ATP)
+8. Defender för Office 365
 9. Advanced eDiscovery
 10. Avancerad säkerhets hantering
 11. Information Rights Management
@@ -221,7 +221,7 @@ Under migreringen från Microsoft Cloud Deutschland till Office 365-tjänsterna 
 | Office 365 a1 för lärare \_ de (STANDARDWOFFPACK \_ fakulteten \_ de) | Office 365 a1 för lärare (STANDARDWOFFPACK \_ lärare) |
 | Office 365 a1 för elever \_ de (STANDARDWOFFPACK \_ student \_ de) | Office 365 a1 för studenter (STANDARDWOFFPACK \_ student) |
 | Office 365 avancerad efterlevnad \_ de (EQUIVIO \_ Analytics \_ de) | Microsoft 365 E5-efterlevnad (informations \_ skydd \_ ) |
-| Office 365 Avancerat skydd (abonnemang 1) \_ de (ATP \_ Enterprise \_ de) | Office 365 Avancerat skydd (abonnemang 1) (ATP \_ Enterprise) |
+|Microsoft Defender för Office 365 (abonnemang 1) \_ de (ATP \_ Enterprise \_ de) |Microsoft Defender för Office 365 (abonnemang 1) (ATP \_ Enterprise) |
 | Office 365 Business Essentials \_ (O365 \_ Business \_ Essentials \_ de) | Microsoft 365 Business Basic (O365 \_ Business \_ Essentials) |
 | Office 365 Business Premium \_ de (O365 \_ Business \_ Premium \_ de) | Microsoft 365 Business Standard (O365 \_ Business \_ Premium) |
 | Office 365 Business \_ de (O365 \_ Business \_ de) | Microsoft 365-appar för företag (O365 \_ Business) |

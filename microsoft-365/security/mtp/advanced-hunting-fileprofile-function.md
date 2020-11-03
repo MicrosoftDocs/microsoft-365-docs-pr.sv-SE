@@ -1,5 +1,5 @@
 ---
-title: FileProfile ()-funktion i avancerad jakt för skydd mot Microsoft Threat
+title: FileProfile ()-funktion i avancerad jakt för Microsoft 365 Defender
 description: Lär dig hur du använder FileProfile () för att utöka informationen om filer i de avancerade frågeresultaten
 keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, FileProfile, fil profil, funktion och berikning
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e99e545b5578b5eff8c19345dc672f735e4f7bd2
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 31959ed146df52aa6568f7aa60617b74ab8dd4db
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430591"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847458"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -32,7 +32,7 @@ ms.locfileid: "48430591"
 
 
 **Gäller för:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 `FileProfile()`Funktionen är en mångsidig funktion i [Avancerad jakt](advanced-hunting-overview.md) som lägger till följande data i filer som hittas av frågan.
 
@@ -63,8 +63,8 @@ invoke FileProfile(x,y)
 
 ## <a name="arguments"></a>Argument
 
-- **x**— kolumnen fil-ID som ska användas: `SHA1` , `SHA256` ,, `InitiatingProcessSHA1` eller `InitiatingProcessSHA256` ;-funktionen används `SHA1` om ospecificerad
-- **y**– begränsa antalet poster som ska utökas, 1-1000; funktionen använder 100 om ospecificerad
+- **x** — kolumnen fil-ID som ska användas: `SHA1` , `SHA256` ,, `InitiatingProcessSHA1` eller `InitiatingProcessSHA256` ;-funktionen används `SHA1` om ospecificerad
+- **y** – begränsa antalet poster som ska utökas, 1-1000; funktionen använder 100 om ospecificerad
 
 ## <a name="examples"></a>Exempel
 

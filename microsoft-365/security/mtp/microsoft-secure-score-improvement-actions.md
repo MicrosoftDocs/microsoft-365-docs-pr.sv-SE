@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: cb2aad70b8ba6ccd9075513b5f383ede42ebd6c0
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: ff81b6e1a290d928d68cb43b455713183d24f75b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295134"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846646"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Utvärdera dina säkerhets Posture med Microsofts säkra Poäng
 
@@ -38,7 +38,7 @@ För att hjälpa dig att hitta den information du behöver snabbare är Microsof
 
 * Identitet (Azure Active Directory-konton & roller)
 * Data (Microsoft Information Protection)
-* Enhet (Microsoft Defender ATP, kallas [Microsofts säkra Poäng för enheter](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
+* Enhet (Microsoft Defender för slut punkt, kallas [Microsofts säkra Poäng för enheter](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 * App (e-post och Cloud-appar, inklusive Office 365 och Microsoft Cloud App Security)
 * Infrastruktur (inga förbättrings åtgärder)
 
@@ -57,9 +57,9 @@ Om du väljer knappen **Inkludera** bredvid poängen kan du välja olika vyer f�
 
 Här följer resultat som du kan lägga till i din vy av total poängen för att ge dig en fullständig bild av ditt totala poäng värde:
 
-- **Planerat Poäng**: Visa projektschemat när planerade åtgärder är klara
-- **Aktuell licens Poäng**: Visa poängen som kan uppnås med din nuvarande Microsoft-licens
-- **Möjlig Poäng**: Visa poängen som kan uppnås med Microsoft-licenser och nuvarande risk godkännande
+- **Planerat Poäng** : Visa projektschemat när planerade åtgärder är klara
+- **Aktuell licens Poäng** : Visa poängen som kan uppnås med din nuvarande Microsoft-licens
+- **Möjlig Poäng** : Visa poängen som kan uppnås med Microsoft-licenser och nuvarande risk godkännande
 
 Den här vyn ser ut om du har inkluderat alla möjliga åsikter:
 
@@ -124,4 +124,4 @@ Om du har några problem kan du meddela oss genom att publicera det i [säkerhet
 - [Översikt över Microsofts säkra Poäng](microsoft-secure-score.md)
 - [Spåra din Microsoft säkra Poäng historik och uppfylla målen](microsoft-secure-score-history-metrics-trends.md)
 - [Kommer snart](microsoft-secure-score-whats-coming.md)
-- [Nyheter](microsoft-secure-score-whats-new.md)
+- [Vad är nytt](microsoft-secure-score-whats-new.md)

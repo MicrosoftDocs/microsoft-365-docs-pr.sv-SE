@@ -1,6 +1,6 @@
 ---
-title: Prioritera incidenter i Microsoft Threat Protection
-description: Lär dig hur du prioriterar incidenter från incident kön i Microsoft Threat Protection
+title: Prioritera incidenter i Microsoft 365 Defender
+description: Lär dig hur du prioriterar händelser från incident kön i Microsoft 365 Defender
 keywords: incident, kö, översikt, enheter, identiteter, användare, post låda, e-post, incidenter
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,24 +21,24 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 382cfd374c40d0c5a0dd7d7705281bd56263d8b8
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: f681d02cc4af8bd56ba945a3d944798e545bf93c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430829"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846718"
 ---
-# <a name="prioritize-incidents-in-microsoft-threat-protection"></a>Prioritera incidenter i Microsoft Threat Protection
+# <a name="prioritize-incidents-in-microsoft-365-defender"></a>Prioritera incidenter i Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Gäller för:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 
-Microsoft Threat Protection använder korrelations analys och aggregerar alla relaterade varningar och undersökningar från olika produkter i en olycka. Microsoft Threat Protection utlöser också unika aviseringar för aktiviteter som endast kan identifieras som skadlig från slut punkt till slut punkt som Microsoft Threat Protection har på hela egendomen och serien med produkter. Genom att göra så får du ett hot-skydd som gör den bredare angrepps berättelsen så att en säkerhets åtgärd kan analyseras för att förstå och hantera komplexa hot i organisationen.
+Microsoft 365 Defender använder korrelations analys och aggregerar alla relaterade varningar och undersökningar från olika produkter i en olycka. Microsoft 365 Defender utlöser också unika aviseringar för aktiviteter som endast kan identifieras som skadlig från slut punkt till slut punkt som Microsoft 365 Defender har på hela egendomen och produkt serien. Genom att göra så gör Microsoft 365 Defender berättarröst den bredare angrepps berättelsen och gör att en säkerhets åtgärd kan analyseras för att förstå och hantera komplexa hot i organisationen.
 
 
 **Incident kön** visar en samling händelser som har flaggats från mellan enheter, användare och post lådor. Det hjälper dig att sortera genom tillbud för att prioritera och skapa ett välinformerat Cybersecurity.
@@ -75,7 +75,7 @@ Filtrera för att se endast händelser som innehåller fler än en avisering. De
 
 
 ### <a name="multiple-service-sources"></a>Flera tjänst källor 
-Filtrera för att se endast händelser som innehåller aviseringar från olika källor (Microsoft Defender ATP, Microsoft Cloud App Security, Azure ATP, Office 365 ATP)
+Filtrera för att se händelser som innehåller aviseringar från olika källor (Microsoft Defender för slut punkt, Microsoft Cloud App Security, Microsoft Defender för identitet, Microsoft Defender för Office 365)
 ### <a name="service-sources"></a>Tjänste källor
 Genom att välja en specifik källa kan du fokusera på händelser som innehåller minst en avisering från den valda källan. 
 

@@ -1,6 +1,6 @@
 ---
-title: Reparations åtgärder efter automatiserade utredningar av skydd mot Microsoft Threat
-description: Få en översikt över reparations åtgärder som följer automatiska utredningar av Microsoft Threat Protection
+title: Reparations åtgärder efter automatiserade utredningar i Microsoft 365 Defender
+description: Få en översikt över reparations åtgärder som följer automatiska utredningar i Microsoft 365 Defender
 keywords: automatiserad, undersökning, avisering, utlösare, åtgärd, reparation
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -21,27 +21,27 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.date: 09/16/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 5106ef34f11cb43d74fa993fcdb820d6a5dce86f
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 71cdf2d1b9a40e9cfbf487ca8596a0c2b09475d1
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429485"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847218"
 ---
-# <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Reparations åtgärder efter automatiserade utredningar av skydd mot Microsoft Threat
+# <a name="remediation-actions-following-automated-investigations-in-microsoft-365-defender"></a>Reparations åtgärder efter automatiserade utredningar i Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Gäller för:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 ## <a name="remediation-actions"></a>Reparationsåtgärder
 
-Under och efter en automatisk undersökning av Microsoft Threat Protection identifieras åtgärds åtgärder för skadliga eller misstänkta objekt. Vissa typer av reparations åtgärder utförs på enheter, som även kallas slut punkter. Andra reparations åtgärder vidtas på e-postinnehållet. Automatiserade undersökningar slutfört efter att reparations åtgärder vidtogs, godkännts eller avvisats.
+Under och efter en automatiserad undersökning i Microsoft 365 Defender identifieras åtgärds åtgärder för skadliga eller misstänkta objekt. Vissa typer av reparations åtgärder utförs på enheter, som även kallas slut punkter. Andra reparations åtgärder vidtas på e-postinnehållet. Automatiserade undersökningar slutfört efter att reparations åtgärder vidtogs, godkännts eller avvisats.
 
-I följande tabell sammanfattas de reparations åtgärder som stöds för närvarande i Microsoft Threat Protection: 
+I följande tabell sammanfattas de reparations åtgärder som stöds i Microsoft 365 Defender: 
 
 |Reparations åtgärder för enheter (slut punkter)  |Åtgärder för e-postreparation  |
 |---------|---------|
@@ -57,14 +57,14 @@ I följande tabell visas möjliga verdicts och resultat:
 
 |Verdict    |Under    |Resultat|
 |------|------|------|
-|Skadliga    |Enheter (slut punkter)    |Reparations åtgärder vidtas automatiskt (förutsatt att organisationens [enhets grupper](mtp-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) är inställda på att **automatiskt åtgärda hot**)|
+|Skadliga    |Enheter (slut punkter)    |Reparations åtgärder vidtas automatiskt (förutsatt att organisationens [enhets grupper](mtp-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) är inställda på att **automatiskt åtgärda hot** )|
 |Skadliga    |E-postinnehåll (URL: er eller bifogade filer) | Rekommenderade reparations åtgärder väntar på godkännande|
 |Misstänkt    |Enheter eller e-postinnehåll |Rekommenderade reparations åtgärder väntar på godkännande|
 |Inga hot hittades    |Enheter eller e-postinnehåll    |Inga reparations åtgärder behövs|
 
 > [!IMPORTANT]
 > Om reparations åtgärder vidtas automatiskt eller bara vid godkännande beror på vissa inställningar, till exempel organisationens enhets grup principer. Mer information finns i följande artiklar:
-> - [Konfigurera automatisk granskning och svars funktioner i Microsoft Threat Protection](mtp-configure-auto-investigation-response.md)
+> - [Konfigurera automatiserade undersökningar och svars funktioner i Microsoft 365 Defender](mtp-configure-auto-investigation-response.md)
 > - [Hur hot åtgärdas på enheter](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
 ## <a name="next-steps"></a>Nästa steg

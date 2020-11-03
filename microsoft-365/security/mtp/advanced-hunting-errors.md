@@ -1,5 +1,5 @@
 ---
-title: Hantera fel i avancerad jakt för Microsoft Threat Protection
+title: Hantera fel i avancerad jakt för Microsoft 365 Defender
 description: Problem som visas vid användning av avancerad jakt
 keywords: Avancerad jakt, Hot jakt, cyberterrorism Threat stöldskydd, Microsoft Threat Protection, Microsoft 365, MTP, m365, Sök, fråga, telemetri, schema, kusto, tids gräns, resurser, fel, okänt fel, gränser, kvot, parameter, tilldelning
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 8b9c46e312d28c7a08efbfa74f96dc33b90fee0a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a5379db66034ecfe537f7d9effdd83f6c41bfd58
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636899"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846898"
 ---
 # <a name="handle-advanced-hunting-errors"></a>Hantera avancerade jakt fel
 
@@ -45,6 +45,6 @@ I Advanced jakt visas fel för att informera om syntaxfel och när frågor tryck
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Avancerade råd om att få råd](advanced-hunting-best-practices.md)
-- [Kvoter och användnings parametrar](advanced-hunting-limits.md)
+- [Kvoter och användningsparametrar](advanced-hunting-limits.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Kusto Query-översikt](https://docs.microsoft.com/azure/data-explorer/kusto/query/)

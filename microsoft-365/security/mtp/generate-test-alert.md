@@ -1,6 +1,6 @@
 ---
-title: Skapa en test Microsoft Threat Protection-varning
-description: Skapa en test avisering för att prova hur miljön Microsoft Threat Protection Lab fungerar
+title: Skapa en test Microsoft 365 Defender-varning
+description: Skapa en test avisering för att prova hur Microsoft 365 Defender Lab Environment fungerar
 keywords: Microsoft Threat Protection simulering, pröva Microsoft Threat Protection, generera test avisering i Microsoft Threat Protection, test avisering i Microsoft Threat Protection Evaluation Lab
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,25 +19,25 @@ ms.collection:
 - M365-security-compliance
 - m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: be895138ff524fead6cbea903d978cef1cb49bde
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: a3183ce2651e118a663de0923a90f1223e34bc49
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368111"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846742"
 ---
-# <a name="generate-a-test-alert-in-your-microsoft-threat-protection-evaluation-lab"></a>Skapa en test avisering i utvärderings labb för Microsoft Threat Protection  
+# <a name="generate-a-test-alert-in-your-microsoft-365-defender-evaluation-lab"></a>Skapa en test avisering i utvärderings labb för Microsoft 365 Defender  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Gäller för:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-Nu när du har slutfört konfigurering och konfiguration av Microsoft Threat Protection Evaluation Lab kan du köra en simulering av en hot attack för att få identifiering, varnings korrelation och själv återställnings funktioner i den integrerade säkerhets lösningen.  
+Nu när du har slutfört installationen och konfigurationen av utvärderings laboratoriet för Microsoft 365 Defender kan du köra en simulering av en hot attack för att få identifiering, varnings korrelation och själv återställnings funktioner i den integrerade säkerhets lösningen.  
 
 1. Logga in på https://security.microsoft.com
-2. Leta reda på en panel med rubriker på Start **sidan.**  Läs igenom anvisningarna för att skapa en test incident i Microsoft Threat Protection.
+2. Leta reda på en panel med rubriker på Start **sidan.**  Läs igenom anvisningarna för att skapa en test incident i Microsoft 365 Defender.
 <br>![Bild av simulerings kort i instrument panelen för Microsoft 365-säkerhet](../../media/mtp-eval-73.png) <br>
 
 ## <a name="next-steps"></a>Nästa steg

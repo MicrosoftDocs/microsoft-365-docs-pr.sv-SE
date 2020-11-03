@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 212189c89f354b186072bb109f119cf048680d08
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 176f131ad020d001b72b97332d54be71feef5548
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431093"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847422"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -32,9 +32,9 @@ ms.locfileid: "48431093"
 
 
 **Gäller för:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-`IdentityLogonEvents`Tabellen i det [avancerade](advanced-hunting-overview.md) antivirus programmet innehåller information om de autentiseringsförfrågningar som görs via den lokala Active Directory som tagits fram av Azure ATP-och budgetaktiviteter som är relaterade till Microsoft Online Services som fångats av Microsoft Cloud App Security. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+`IdentityLogonEvents`Tabellen i det [avancerade](advanced-hunting-overview.md) antivirus programmet innehåller information om de autentiseringsförfrågningar som görs via den lokala Active Directory som samlas in av Microsoft Defender för identitets-och autentiseringsdatas aktiviteter som är relaterade till Microsoft Online Services som fångas av Microsoft Cloud App Security. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!TIP]
 > Detaljerad information om de händelse typer ( `ActionType` värden) som stöds av en tabell finns i den [inbyggda schema referensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) i säkerhets Center.

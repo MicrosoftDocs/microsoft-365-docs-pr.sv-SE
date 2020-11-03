@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6c758c05a64cd7ce84a2b021fe32f9e5ce5c1090
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 97640c318908b87c211caed780624080508a255f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431069"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847350"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Jakt efter hot på enheter, e-postmeddelanden, appar och identiteter
 
@@ -32,12 +32,12 @@ ms.locfileid: "48431069"
 
 
 **Gäller för:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-Med [Avancerad jakt](advanced-hunting-overview.md) i Microsoft Threat Protection kan du proaktivt efter problem i:
-- Enheter som hanteras av Microsoft Defender ATP
+Med [Avancerad jakt](advanced-hunting-overview.md) i Microsoft 365 Defender kan du proaktivt efter problem i världen:
+- Enheter som hanteras av Microsoft Defender för slut punkten
 - E-postmeddelanden som bearbetas av Microsoft 365
-- Molnprogram aktiviteter, autentiseringsnivåer och aktiviteter för domän kontrol Lanterna spåras av Microsoft Cloud App Security och Azure ATP
+- Molnprogram aktiviteter, autentiseringsnivåer och aktiviteter för domän kontrol Lanterna spåras av Microsoft Cloud App Security och Microsoft Defender för identitet
 
 Med den här synbarheten kan du snabbt hitta hot som rör fram delar av nätverket, inklusive sofistikerade intrång som kommer via e-post eller webben, öka behörigheterna, skaffa privilegierade domänautentiseringsuppgifter och flytta dem senare till alla dina enheter. 
 

@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Översikten för konfiguration av klient-och serverprogram för Microsoft 365.
-ms.openlocfilehash: 94412ca4a7665807368ae33a0e50dc928445c8b7
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: d51aead9a50df3acace94526824cfa08fc083a01
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655967"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847160"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Klient-och Server program översikt för Microsoft 365
 
@@ -89,7 +89,7 @@ Oavsett om din organisation är stor eller liten, kanske du använder en kombina
 - Bör uppdateras med de senaste säkerhetsuppdateringarna och supportkorrigeringarna. I vissa fall släpps sådana uppdateringar varje månad.
 - Har inte anpassats optimalt till att använda Microsofts molntekniker som hjälper dig att transformera din verksamhet digitalt.
 - Innehåller inte nya produktivitetsprogram, t.ex. Microsoft Teams.
-- Innehåller inte de senaste säkerhetsfunktionerna, till exempel Advanced Threat Protection i Exchange.
+- Ta inte med de senaste säkerhetsfunktionerna, till exempel Exchange och Defender för Office 365.
 
 Microsoft 365 för Enterprise innehåller molnbaserade versioner av Office Server-tjänster som använder vissa av de verktyg som lokala versioner av Office Server-program, till exempel webbläsare och Outlook-klienten. Tjänsternas säkerhet uppdateras ständigt utan att IT-avdelningen behöver agera, vilket sparar tid när lokala servrar ska underhållas och uppdateras. Tjänsterna har också nya funktionsförbättringar som inte finns i Office-serverprogrammen.
 

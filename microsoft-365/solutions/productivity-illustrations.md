@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 9c4898f6ecf17ad57da9ecd54499764c7efc2a6c
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 160211fe481d14749bd778255e6844b12aa80672
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816886"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847242"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Produktivitetsillustrationer för Microsoft 365
 
@@ -58,14 +58,14 @@ Säkerhet och informationsskydd för organisationer i flera regioner med en enda
 |:-----|:-----|
 |[![Miniatyrbild av infografiken för flera regioner](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>Uppdaterad i mars 2020 |Användning av en enda Microsoft 365-klientorganisation för din globala organisation är det bästa alternativet och den bästa upplevelsen av många olika anledningar. Men många arkitekter kämpar med hur de ska uppfylla kraven för säkerhet och informationsskydd i olika regioner. De här avsnitten innehåller rekommendationer. |
 
-### <a name="microsoft-defender-atp-deployment-strategy"></a>Distributionsstrategi för Microsoft Defender Avancerat skydd
+### <a name="microsoft-defender-for-endpoint-deployment-strategy"></a>Microsoft Defender för distributions strategi för slut punkt
 
 Beroende på din miljö passar vissa verktyg bättre för vissa arkitekturer.
 
 
 | Objekt | Beskrivning |
 |:-----|:-----|
-|[![Miniatyrbild av distributionsstrategin för Microsoft Defender Avancerat skydd](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>Uppdaterad i februari 2020| Med hjälp av arkitekturmaterialet kan du planera din distribution för följande arkitekturer: <ul><li> Molnbaserad </li><li> Samhantering </li><li> Lokal</li><li>Utvärdering och lokal registrering</li>
+|[![Bild av knapp för att Visa slut punkts distribution](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>Uppdaterad i februari 2020| Med hjälp av arkitekturmaterialet kan du planera din distribution för följande arkitekturer: <ul><li> Molnbaserad </li><li> Samhantering </li><li> Lokal</li><li>Utvärdering och lokal registrering</li>
 
 
 <a name="BKMK_O365IDP"></a>

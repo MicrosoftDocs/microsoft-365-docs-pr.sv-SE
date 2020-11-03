@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Så här implementerar du delade VPN-tunnlar för Office 365
-ms.openlocfilehash: ff79138d44c98d76af1a3d9c374159b0fae4c7ed
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 4a7c2a18ae5d4f275210ddeaea90eb1bb9bc1f16
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295280"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846994"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementera VPN-fildelning för Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "48295280"
 
 För många år som företag har haft stöd för fjärrupplevelser till sina användare. Medan kärn arbets belastningarna befann sig lokalt, var en VPN-anslutning från fjärrklienten via ett Data Center i företags nätverket den primära metoden för fjärran vändare att få till gång till företagets resurser. För att skydda dessa anslutningar skapar företag lager av nätverks säkerhets lösningar längs VPN-vägarna. Detta skedde för att skydda den interna infrastrukturen, samt för att skydda mobil surfning av externa webbplatser genom att dirigera om trafik till VPN och sedan från lokal Internet-perimeter. VPN, nätverks gränser och tillhör ande säkerhets infrastruktur är ofta utformade och skal för en viss trafik, vanligt vis med de flesta anslutningar som initieras från företags nätverket, och de flesta av dem håller sig inom de interna nätverks gränserna.
 
-För ganska lite tid är VPN-modeller där alla anslutningar från fjär renheten routas till det lokala nätverket (kallas **tvingande tunnel trafik**) var i stort hållbart så länge som fjärran vändare samtidigt var liten och trafik volymerna som passerar VPN-tjänsten låg.  Vissa kunder fortsatte att använda VPN-tvingande tunnlar som status quo även efter att deras program flyttats från företags omkrets till offentliga SaaS-moln är Office 365 ett primtal-exempel.
+För ganska lite tid är VPN-modeller där alla anslutningar från fjär renheten routas till det lokala nätverket (kallas **tvingande tunnel trafik** ) var i stort hållbart så länge som fjärran vändare samtidigt var liten och trafik volymerna som passerar VPN-tjänsten låg.  Vissa kunder fortsatte att använda VPN-tvingande tunnlar som status quo även efter att deras program flyttats från företags omkrets till offentliga SaaS-moln är Office 365 ett primtal-exempel.
 
 Det är väldigt optimalt att använda tvingande tunnel anslutningar för att ansluta till distribuerade och prestanda känsliga moln tillämpningar, men den negativa påverkan av detta kan ha godkänts av vissa företag, så att du bevarar statusen quo från ett säkerhets perspektiv. Ett exempel diagram för det här scenariot visas nedan:
 
@@ -49,7 +49,7 @@ Microsofts rekommenderade strategi för att optimera fjärr anslutningens anslut
 
 ## <a name="common-vpn-scenarios"></a>Vanliga VPN-scenarier
 
-I listan nedan ser du de vanligaste VPN-scenarier som visas i företags miljöer. De flesta kunder använder vanligt vis modell 1 (VPN-upptvingad tunnel). I det här avsnittet får du hjälp att snabbt och säkert övergå till **modell 2**, som kan nås med relativt lite ansträngning och har stora fördelar för nätverks prestanda och användar upplevelse.
+I listan nedan ser du de vanligaste VPN-scenarier som visas i företags miljöer. De flesta kunder använder vanligt vis modell 1 (VPN-upptvingad tunnel). I det här avsnittet får du hjälp att snabbt och säkert övergå till **modell 2** , som kan nås med relativt lite ansträngning och har stora fördelar för nätverks prestanda och användar upplevelse.
 
 | **Modell** | **Beskrivning** |
 | --- | --- |
@@ -91,7 +91,7 @@ En mer avancerad version av modell nummer två, där alla interna tjänster publ
 
 ## <a name="implement-vpn-split-tunneling"></a>Implementera VPN-delning
 
-I det här avsnittet hittar du de enkla stegen som krävs för att migrera din VPN-klients arkitektur från en _tvingande VPN-tunnel_ till en _VPN-Tvingad tunnel med ett mindre antal betrodda undantag_, [VPN-delning av tunnel modell #2](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) i avsnittet [common VPN-scenarier](#common-vpn-scenarios) .
+I det här avsnittet hittar du de enkla stegen som krävs för att migrera din VPN-klients arkitektur från en _tvingande VPN-tunnel_ till en _VPN-Tvingad tunnel med ett mindre antal betrodda undantag_ , [VPN-delning av tunnel modell #2](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) i avsnittet [common VPN-scenarier](#common-vpn-scenarios) .
 
 I diagrammet nedan visas hur Rekommenderad VPN-delnings-tunnel-lösning fungerar:
 
@@ -171,7 +171,7 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 
 I ovanstående skript är _$intIndex_ indexet för det gränssnitt som är kopplat till Internet (hitta genom att köra **Skaffa-netadapter** i _PowerShell) och_ _$Gateway_ är standardgateway för det gränssnittet (hitta genom att köra **ipconfig** i en kommando tolk eller **(Get-NetIPConfiguration | IPv4DefaultGateway). NextHop** i PowerShell).
 
-När du har lagt till vägarna kan du bekräfta att routningstabellen stämmer genom att köra **route print** i en kommando tolk eller PowerShell. Utdata ska innehålla de vägar som du lade till, med gränssnitts index (_22_ i det här exemplet) och gatewayen för det gränssnittet (_192.168.1.1_ i det här exemplet):
+När du har lagt till vägarna kan du bekräfta att routningstabellen stämmer genom att köra **route print** i en kommando tolk eller PowerShell. Utdata ska innehålla de vägar som du lade till, med gränssnitts index ( _22_ i det här exemplet) och gatewayen för det gränssnittet ( _192.168.1.1_ i det här exemplet):
 
 ![Dirigera utskrifts utmatning](../media/vpn-split-tunneling/vpn-route-print.png)
 
@@ -232,7 +232,7 @@ Signal trafik utförs via HTTPS och är inte allt eftersom svars tiden är käns
 
 Ett vanligt argument för att undvika delade tunnlar är att det är mindre säkert att göra det, dvs. all trafik som inte går via VPN-tunneln kommer inte att dra fördel av vilket krypterings schema som används för VPN-tunneln och är därför mindre säkert.
 
-Huvudräknare-argumentet till det här är att medie trafik redan har krypterats via _Secure Real-Time Transport Protocol (srtp)_, en profil för RTP (Real-Time Transport Protocol) som tillhandahåller konfidentialitet, autentiseringsinformation och Replay-skydd för RTP-trafik. SRTP använder sig själv av en slumpmässigt genererad sessionsnyckel som utbyts via TLS-skyddad signal kanal. Det här är en bra detalj nivå i [den här säkerhets guiden](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/security-guide-for-skype-for-business-online), men huvud delen av intresse är medie kryptering.
+Huvud räknare-argumentet-det här är att medie trafik redan har krypterats via _Secure Real-Time Transport Protocol (srtp)_ , en profil med Real-Time Transport Protocol (RTP) som tillhandahåller konfidentialitet, autentiseringsinformation och Replay-skydd till RTP-trafik. SRTP använder sig själv av en slumpmässigt genererad sessionsnyckel som utbyts via TLS-skyddad signal kanal. Det här är en bra detalj nivå i [den här säkerhets guiden](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/security-guide-for-skype-for-business-online), men huvud delen av intresse är medie kryptering.
 
 Media trafiken är krypterad med SRTP, som använder en sessionsnyckel som genereras av ett säkert slump tals Generator och utbyts med hjälp av TLS-kanalen för signaler. Dessutom krypteras inte medier med båda riktningarna mellan medlings servern och dess interna nästa hopp med SRTP.
 
@@ -266,13 +266,13 @@ Om du behöver ytterligare data för att felsöka, eller om du vill få hjälp f
 
 Det här avsnittet innehåller länkar till detaljerade stöd linjer för att implementera delade tunnlar för Office 365-trafik från de vanligaste partners i det här rummet. Vi lägger till ytterligare stöd linjer när de blir tillgängliga.
 
-- **Windows 10 VPN-klient**: [optimera Office 365-trafik för fjärranställda med den inbyggda Windows 10 VPN-klienten](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization)
-- **Cisco AnyConnect**: [optimera AnyConnect dela tunnel för Office365](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
-- **Palo GlobalProtect**: [optimera Office 365-trafik via VPN delnings dirigering för delade tunnel](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
-- **F5-nätverk stor-IP APM**: [optimera Office 365-trafik på fjärråtkomst via VPN när du använder stor-IP-APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
-- **Citrix Gateway**: [optimerar Citrix Gateway VPN dela tunnel för Office365](https://docs.citrix.com/en-us/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
-- **Puls säkra**: [VPN-tunnlar: Konfigurera delade tunnlar för att utesluta Office365-program](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
-- **Kontrol lera Point VPN**: [Konfigurera delade tunnlar för Office 365 och andra SaaS-program](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
+- **Windows 10 VPN-klient** : [optimera Office 365-trafik för fjärranställda med den inbyggda Windows 10 VPN-klienten](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization)
+- **Cisco AnyConnect** : [optimera AnyConnect dela tunnel för Office365](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
+- **Palo GlobalProtect** : [optimera Office 365-trafik via VPN delnings dirigering för delade tunnel](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
+- **F5-nätverk stor-IP APM** : [optimera Office 365-trafik på fjärråtkomst via VPN när du använder stor-IP-APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
+- **Citrix Gateway** : [optimerar Citrix Gateway VPN dela tunnel för Office365](https://docs.citrix.com/en-us/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
+- **Puls säkra** : [VPN-tunnlar: Konfigurera delade tunnlar för att utesluta Office365-program](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
+- **Kontrol lera Point VPN** : [Konfigurera delade tunnlar för Office 365 och andra SaaS-program](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
 
 ## <a name="faq"></a>Vanliga frågor och svar
 
@@ -306,7 +306,7 @@ Vi kan sedan utlösa princip som Godkänn, utlösa MFA-eller blockera-verifikati
 
 Med Office 365 får du skydd för optimering av markerade slut punkter i olika lager i själva [tjänsten.](https://docs.microsoft.com/office365/Enterprise/office-365-malware-and-ransomware-protection) Som vi noterade är det mycket effektivare att tillhandahålla dessa säkerhets element i själva tjänsten i stället för att pröva och göra det i linje med enheter som kanske inte helt förstår protokoll/trafik. Standardinställningen är att SharePoint Online [automatiskt söker igenom fil överföringar](https://docs.microsoft.com/microsoft-365/security/office-365-security/virus-detection-in-spo) efter känt skadlig program vara
 
-För Exchange [Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) och [Office 365 Avancerat skydd](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) för de drifts slut punkter är det ett utmärkt jobb för att skydda trafiken till tjänsten.
+För Exchange [Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) och [Microsoft Defender för Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) har du ett utmärkt jobb för att skydda trafiken till tjänsten.
 
 ### <a name="can-i-send-more-than-just-the-optimize-traffic-direct"></a>Kan jag skicka mer än bara att optimera trafik direkt?
 
@@ -324,11 +324,11 @@ Port 80 används bara för att till exempel omdirigera till en port 443-session,
 
 ### <a name="does-this-advice-apply-to-users-in-china-using-a-worldwide-instance-of-office-365"></a>Gäller de här råden för användare i Kina med en världs omspännande instans av Office 365?
 
-**Nej**, det gör det inte. Det enda villkoret för ovanstående råd är användare i Kina som ansluter till en världs omspännande instans av Office 365. På grund av den vanliga förekomsten av gränsöverskridande nätverks belastning i regionen kan direkt avlämning av Internet prestanda vara variabel. De flesta kunder i regionen samarbetar med ett VPN för att föra över trafiken till företagets nätverk och använda sin godkända MPLS-krets eller liknande att utlandet är på en optimerad väg. Detta beskrivs mer i artikeln [Office 365 Performance Optimization för Kina-användare](microsoft-365-networking-china.md).
+**Nej** , det gör det inte. Det enda villkoret för ovanstående råd är användare i Kina som ansluter till en världs omspännande instans av Office 365. På grund av den vanliga förekomsten av gränsöverskridande nätverks belastning i regionen kan direkt avlämning av Internet prestanda vara variabel. De flesta kunder i regionen samarbetar med ett VPN för att föra över trafiken till företagets nätverk och använda sin godkända MPLS-krets eller liknande att utlandet är på en optimerad väg. Detta beskrivs mer i artikeln [Office 365 Performance Optimization för Kina-användare](microsoft-365-networking-china.md).
 
 ### <a name="does-split-tunnel-configuration-work-for-teams-running-in-a-browser"></a>Fungerar konfiguration för delade tunnlar för grupper som körs i en webbläsare?
 
-**Nej**, det gör det inte. Den fungerar bara på klient versionen av Microsoft Teams-1.3.00.13565 eller senare. Den här versionen inkluderar förbättringar av hur klienten identifierar tillgängliga nätverks Sök vägar.
+**Nej** , det gör det inte. Den fungerar bara på klient versionen av Microsoft Teams-1.3.00.13565 eller senare. Den här versionen inkluderar förbättringar av hur klienten identifierar tillgängliga nätverks Sök vägar.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
