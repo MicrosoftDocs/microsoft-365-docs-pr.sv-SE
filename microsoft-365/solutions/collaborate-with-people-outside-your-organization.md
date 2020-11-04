@@ -13,15 +13,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom:
 - seo-marvel-apr2020
+- seo-marvel-jun2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Konfigurera Microsoft 365 för att aktivera delning och ytterligare säkerhet när du bjuder in externa användare att samar beta i Teams och dela SharePoint-webbplatser.
-ms.openlocfilehash: 11359e2de358d5673da6c39ca2d419c94349a829
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+description: Lär dig hur du konfigurerar Microsoft 365-appar som team, OneDrive och SharePoint för samarbete med personer utanför organisationen.
+ms.openlocfilehash: 9a15ea06cec6982977ec88edf5ee95b35591a33c
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377419"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906995"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Samar beta med personer utanför organisationen
 

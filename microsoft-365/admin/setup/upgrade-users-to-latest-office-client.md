@@ -1,5 +1,5 @@
 ---
-title: Uppgradera dina Microsoft 365 för företag-användare till den senaste Office-klienten
+title: Uppgradera din Office 2010 till Microsoft 365-Microsoft 365-administratör
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -16,16 +16,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.custom:
+- fwlink 824861; CampaignID
+- O365_Comm_SR_UpgradeOffice
+- seo-marvel-may2020
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
-description: Lär dig hur du uppgraderar användarna till den senaste Office-klienten.
-ms.openlocfilehash: 40160dc5590144a1132971368da70c6f36ed460c
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+description: Lär dig hur du uppgraderar Microsoft Office till den senaste Office-klienten för användare i organisationen.
+ms.openlocfilehash: 596dfc8f4a005d01c0bf330243bf1fb3c639f97e
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456343"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906447"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Uppgradera dina Microsoft 365 för företag-användare till den senaste Office-klienten
 
@@ -47,7 +50,7 @@ Se [Office 2010-översikten](https://docs.microsoft.com/deployoffice/endofsuppor
 
  Om du inte är administratör och har en [Microsoft 365-familj](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans) kan du läsa [Hur uppgraderar jag Office](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350) för information om hur du uppgraderar din äldre, Home-version av Office.
 
-## <a name="get-ready-to-upgrade"></a>Förbered dig för att uppgradera
+## <a name="get-ready-to-upgrade-to-microsoft-365"></a>Förbered dig för att uppgradera till Microsoft 365
 
 Som administratör kan du kontrol lera vilken version av Office-kontakter som finns i organisationen. Vi rekommenderar starkt att du hjälper användare i din organisation att köra äldre versioner av Office, till exempel Office 2010, Office 2013 eller Office 2016-uppgradering till den senaste versionen för att utnyttja säkerheten och produktiviteten.
 

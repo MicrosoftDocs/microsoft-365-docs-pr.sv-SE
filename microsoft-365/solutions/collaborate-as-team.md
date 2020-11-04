@@ -15,13 +15,13 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Lär dig mer om de Microsoft 365-konfigurations steg som behövs för att konfigurera ett team för samarbete med gäster i Teams.
-ms.openlocfilehash: 7a2259358d6976184d393980b2b7c0320c3bb171
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+description: Lär dig mer om de Microsoft 365-konfigurations steg som behövs för att skapa ett team för aktivitet, konversation och dokument samarbete med gäster i Teams.
+ms.openlocfilehash: b4eea473f03441144a0236ec53dcecde9080fc7a
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48409054"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906865"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Samar beta med gäster i ett team
 
@@ -48,13 +48,13 @@ Så här anger du inställningar för organisations relationer
 1. Logga in på Azure Active Directory på [https://aad.portal.azure.com](https://aad.portal.azure.com) .
 2. I det vänstra navigerings fönstret klickar du på **Azure Active Directory**.
 3. Klicka på **externa identiteter**.
-4. Klicka på **Inställningar för extern samarbete**i det vänstra navigerings fönstret på skärmen **Kom igång** .
+4. Klicka på **Inställningar för extern samarbete** i det vänstra navigerings fönstret på skärmen **Kom igång** .
 5. Kontrol lera att **Administratörer och användare i rollen för att bjuda in gäst kan bjuda** in och **medlemmar kan bjuda** in till **Ja**.
 6. Om du har gjort ändringar klickar du på **Spara**.
 
 Observera inställningarna i avsnittet **samarbets begränsningar** . Kontrol lera att domänerna för de gäster som du vill samar beta med inte är blockerade.
 
-Om du arbetar med gäster från flera organisationer kan det vara bra att begränsa deras möjligheter att komma åt katalog data. Detta hindrar dem från att se vem som är gäst i katalogen. För att göra det, under **gäst användares restriktioner**, väljer du **gäst användare har begränsad åtkomst till egenskaper och medlemskap i inställningar för katalog objekt** eller **gäst användares åtkomst är begränsad till egenskaper och medlemskap i deras egna katalog objekt**.
+Om du arbetar med gäster från flera organisationer kan det vara bra att begränsa deras möjligheter att komma åt katalog data. Detta hindrar dem från att se vem som är gäst i katalogen. För att göra det, under **gäst användares restriktioner** , väljer du **gäst användare har begränsad åtkomst till egenskaper och medlemskap i inställningar för katalog objekt** eller **gäst användares åtkomst är begränsad till egenskaper och medlemskap i deras egna katalog objekt**.
 
 ## <a name="teams-guest-access-settings"></a>Inställningar för gäst åtkomst för Teams
 
@@ -68,7 +68,7 @@ Att ange inställningar för gäståtkomst i Teams
 
 1. Logga in på Administrationscenter för Microsoft 365 på [https://admin.microsoft.com](https://admin.microsoft.com).
 2. I det vänstra navigerings fönstret klickar du på **Visa alla**.
-3. Under **Administrationscenter**klickar du på **Teams**.
+3. Under **Administrationscenter** klickar du på **Teams**.
 4. I administrations centret för Teams, i det vänstra navigerings fönstret, expanderar du **Inställningar för hela organisationen** och klickar på **gäst åtkomst**.
 5. Kontrollera att **Tillåt gäståtkomst i Teams** är inställt på **På**.
 6. Gör önskade ändringar i de ytterligare gästinställningarna och klicka sedan på **Spara**.
@@ -84,7 +84,7 @@ Teams använder Microsoft 365 Groups för grupp medlemskap. Inställningarna fö
 
 Ange inställningar för Microsoft 365-grupper
 
-1. Expandera **Inställningar**i det vänstra navigerings fönstret i administrations centret för Microsoft 365.
+1. Expandera **Inställningar** i det vänstra navigerings fönstret i administrations centret för Microsoft 365.
 2. Klicka på **org Settings**.
 3. I listan klickar du på **Microsoft 365 Groups**.
 4. Kontrol lera att **gruppen låt grupp ägarna lägger till personer utanför organisationen till Microsoft 365-grupper som gäster** och **Låt grupp medlemmarna i gruppen för gäst grupps medlemmar** vara markerade.
@@ -104,7 +104,7 @@ Om du vill tillåta fil-och mappdelning med oautentiserade personer väljer du *
 
 Så här anger du delnings inställningar för SharePoint på organisations nivå
 
-1. Klicka på **SharePoint**i det vänstra navigerings fältet **i administrations**centret för Microsoft 365.
+1. Klicka på **SharePoint** i det vänstra navigerings fältet **i administrations** centret för Microsoft 365.
 2. Expandera **principer** i det vänstra navigerings fönstret i administrations centret för SharePoint och klicka sedan på **delning**.
 3. Kontrol lera att extern delning för SharePoint är inställt på **vem som helst** eller **nya och befintliga gäster**.
 4. Om du har gjort ändringar klickar du på **Spara**.
@@ -128,7 +128,7 @@ Välj någon av följande länk typer som visas som standard när användare del
 Så här anger du inställningar för standard länken för SharePoint på organisations nivå
 
 1. Gå till sidan delning i administrations centret för SharePoint.
-2. Under **fil-och mappaktiviteter**väljer du den standard delnings länk som du vill använda.
+2. Under **fil-och mappaktiviteter** väljer du den standard delnings länk som du vill använda.
 3. Om du har gjort ändringar klickar du på **Spara**.
 
 ## <a name="create-a-team"></a>Skapa ett team
@@ -147,7 +147,7 @@ Vi bjuder in användare senare. Sedan är det viktigt att kontrol lera delnings 
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>Delnings inställningar på SharePoint-webbplats nivå
 
-Kontrol lera inställningarna för delning av webbplats nivå för att se till att de tillåter åtkomst typen för det här teamet. Om du till exempel ställer in inställningar på organisations nivå till **vem som helst**, men vill att alla gäster ska autentiseras för det här teamet, kontrollerar du att inställningarna för delning av webbplats nivå är inställda på **nya och befintliga gäster**.
+Kontrol lera inställningarna för delning av webbplats nivå för att se till att de tillåter åtkomst typen för det här teamet. Om du till exempel ställer in inställningar på organisations nivå till **vem som helst** , men vill att alla gäster ska autentiseras för det här teamet, kontrollerar du att inställningarna för delning av webbplats nivå är inställda på **nya och befintliga gäster**.
 
 ![Skärmbild av inställningar för extern delning för SharePoint](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -166,14 +166,14 @@ Inställningar för gäst delning är nu konfigurerade så att du kan börja lä
 Bjuda in interna användare till ett team
 1. I gruppen klickar du på **fler alternativ** ( **\*\*\*** ) och sedan på **Lägg till medlem**.
 2. Skriv namnet på den person som du vill bjuda in.
-3. Klicka på **Lägg till**och sedan på **Stäng**.
+3. Klicka på **Lägg till** och sedan på **Stäng**.
 
 Så här bjuder du in gäster till ett team
 1. I gruppen klickar du på **fler alternativ** ( **\*\*\*** ) och sedan på **Lägg till medlem**.
 2. Skriv e-postadressen för den gäst som du vill bjuda in.
 3. Klicka på **Redigera gäst information**.
 4. Skriv in gästens namn och klicka på bock markeringen.
-5. Klicka på **Lägg till**och sedan på **Stäng**.
+5. Klicka på **Lägg till** och sedan på **Stäng**.
 
 ## <a name="see-also"></a>Se även
 

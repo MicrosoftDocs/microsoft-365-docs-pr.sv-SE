@@ -19,17 +19,17 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Lär dig mer om Power BI och hur användare i organisationen kan använda Business Analytics-tjänsten.
-ms.openlocfilehash: 633052889a2ca5c5c4db4c3b3c9334b396148e2a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e549ff25b7db41d6a582b4af0506d67787df7e0d
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644933"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906591"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI i organisationen
 
 På den här sidan beskrivs hur användare i organisationen kan använda Power BI, och hur du kan styra hur din organisation tar del av den här tjänsten.
-    
+
 ## <a name="what-is-power-bi"></a>Vad är Power BI?
 
 Med Microsoft Power BI kan användarna visualisera data, dela upptäckter med varandra och samarbeta på nya och intuitiva sätt. Mer information finns på [Power BI-webbplatsen](https://powerbi.microsoft.com/en-us/).
@@ -48,20 +48,20 @@ Dessutom kan enskilda användare i organisationen registrera sig för Power BI v
 
 Det finns tre situationer som kan gälla för användare i organisationen:
   
-### <a name="scenario-1-your-organization-already-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-already-has-an-microsoft-365-account"></a>Scenario 1: organisationen har redan en befintlig Microsoft 365-miljö och användaren som registrerar sig för Power BI har redan ett Microsoft 365-konto.
+### <a name="scenario-1-your-organization-already-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-already-has-a-microsoft-365-account"></a>Scenario 1: organisationen har redan en befintlig Microsoft 365-miljö och användaren som registrerar sig för Power BI har redan ett Microsoft 365-konto.
 
 I den här situationen, där användaren redan har ett konto för arbetet eller skolan hos klientorganisationen (t.ex. contoso.com) men ännu inte har Power BI, aktiverar Microsoft helt enkelt abonnemanget för kontot, och användaren får automatiskt ett meddelande om hur man använder Power BI-tjänsten.
   
-### <a name="scenario-2-your-organization-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-doesnt-have-an-microsoft-365-account"></a>Scenario 2: organisationen har en befintlig Microsoft 365-miljö och användaren som registrerar sig för Power BI har inget Microsoft 365-konto.
+### <a name="scenario-2-your-organization-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-doesnt-have-a-microsoft-365-account"></a>Scenario 2: organisationen har en befintlig Microsoft 365-miljö och användaren som registrerar sig för Power BI har inget Microsoft 365-konto.
 
 I det här scenariot har användaren en e-postadress i organisationens domän (till exempel contoso.com) men inte ett Microsoft 365-konto. I det här fallet kan användaren registrera sig för Power BI och tilldelas automatiskt ett konto. Då kan användaren komma åt Power BI-tjänsten. Om en anställd till exempel använder sin arbets-e-postadress (till exempel Nancy@contoso.com) för att registrera dig, lägger Microsoft automatiskt till Nancy som en användare i den contoso Microsoft 365-miljön och aktiverar Power BI för det kontot.
   
 ### <a name="scenario-3-your-organization-does-not-have-a-microsoft-365-environment-connected-to-your-email-domain"></a>Scenario 3: din organisation har ingen Microsoft 365-miljö ansluten till e-postdomänen.
 
-Organisationen behöver inte vidta några administrativa åtgärder för att kunna dra nytta av Power BI.
+Det finns inga administrativa åtgärder din organisation behöver för att dra nytta av Power BI.
   
 > [!IMPORTANT]
-> Om organisationen har flera e-postdomäner och du vill att alla e-posttillägg ska finnas i samma klient organisation, måste du lägga till alla e-postadresser till klient organisationen innan användarna skapar din primära klient organisation. Det finns ingen automatisk mekanism för att flytta användare mellan klient organisationer när de har skapats. Mer information om den här processen finns i [om jag har flera domäner, kan jag styra klient organisationen som användare läggs till i?](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to) längre ned i den här artikeln och [lägga till en domän i Office 365](../setup/add-domain.md) online. 
+> Om organisationen har flera e-postdomäner och du vill att alla e-posttillägg ska finnas i samma klient organisation, måste du lägga till alla e-postadresser till klient organisationen innan användarna skapar din primära klient organisation. Det finns ingen automatisk mekanism för att flytta användare mellan klient organisationer när de har skapats. Mer information om den här processen finns i [om jag har flera domäner, kan jag styra klient organisationen som användare läggs till i?](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to) längre ned i den här artikeln och [lägga till en domän i Office 365](../setup/add-domain.md) online.
   
 ## <a name="how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today"></a>Hur ändrar det här mitt nuvarande sätt att hantera identiteter för organisationens användare?
 
@@ -77,14 +77,13 @@ Om organisationen inte har en Microsoft 365-miljö ansluten till e-postdomänen,
 
 Om en klientorganisation har skapats av Microsoft kan du begära och hantera klientorganisationen genom att följa stegen nedan:
   
-1. Anslut till klientorganisationen genom att [registrera dig för Power BI](https://go.microsoft.com/fwlink/?LinkId=522448) med en e-postadressdomän som överensstämmer med den klientorganisationsdomän som du vill hantera. Om Microsoft t.ex. skapade klientorganisationen contoso.edu, så måste du ansluta till klientorganisationen med en e-postadress som slutar med @contoso.edu. 
-    
-2. Begära administratörskontroll genom att verifiera att du äger domänen: du kan ge dig själv administratörsrollen genom att verifiera att du äger domänen. Gör så här:
- 
+1. Anslut till klientorganisationen genom att [registrera dig för Power BI](https://go.microsoft.com/fwlink/?LinkId=522448) med en e-postadressdomän som överensstämmer med den klientorganisationsdomän som du vill hantera. Om Microsoft t.ex. skapade klientorganisationen contoso.edu, så måste du ansluta till klientorganisationen med en e-postadress som slutar med @contoso.edu.
+
+1. Begära administratörskontroll genom att verifiera att du äger domänen: du kan ge dig själv administratörsrollen genom att verifiera att du äger domänen. Gör så här:
+
 ::: moniker range="o365-worldwide"
-   
+
 3. Gå till [https://admin.microsoft.com](https://admin.microsoft.com).
- 
 
 ::: moniker-end
 
@@ -100,15 +99,14 @@ Om en klientorganisation har skapats av Microsoft kan du begära och hantera kli
 
 ::: moniker-end
 
-    
 4. Välj ikonen för startprogrammet i det övre vänstra hörnet, och välj sedan **Admin**.
-    
+
     ![Start ikon för appen med administratörs programmet markerat](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
 5. Läs instruktionerna på sidan **bli administratör** och välj sedan **Ja, jag vill vara administratör**.
-    
+
     > [!NOTE]
-    >  Om det här alternativet inte visas finns det redan en administratör. 
+    >  Om det här alternativet inte visas finns det redan en administratör.
   
 ## <a name="if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to"></a>Om jag har flera domäner kan jag styra klient organisation som användare läggs till i?
 
@@ -117,31 +115,31 @@ Om du inte gör någonting skapas en klientorganisation för varje e-postdomän 
 Om du vill att alla användare ska finnas i samma klientorganisation, oavsett e-postadresstillägg, gör du följande:
   
 - Skapa en målklientorganisation i förväg eller använd en befintlig klientorganisation, och lägg till alla befintliga domäner och underdomäner som du vill samla i den klientorganisationen. Då kommer alla användare med e-postadresser som slutar med de domänerna och underdomänerna automatiskt att gå med i målklientorganisationen när de registrerar sig.
-    
+
 > [!IMPORTANT]
-> Det finns ingen automatiserad mekanism för att flytta användare mellan klientorganisationer när de har skapats. Information om hur du lägger till domäner till en enda Microsoft 365-klient organisation finns i [lägga till en domän i Office 365](../setup/add-domain.md). 
-  
+> Det finns ingen automatiserad mekanism för att flytta användare mellan klientorganisationer när de har skapats. Information om hur du lägger till domäner till en enda Microsoft 365-klient organisation finns i [lägga till en domän i Office 365](../setup/add-domain.md).
+
 > [!IMPORTANT]
-> Mer information och vägledning om hur du hanterar klient organisationer finns i [Vad är Power BI-administration?](https://docs.microsoft.com/power-bi/service-admin-administering-power-bi-in-your-organization). 
+> Mer information och råd om hur du hanterar klient organisationer finns i [Vad är Power BI-administration?](https://docs.microsoft.com/power-bi/service-admin-administering-power-bi-in-your-organization).
   
 ## <a name="how-can-i-prevent-users-from-joining-my-existing-tenant"></a>Hur kan jag hindra användare från att ansluta till min befintliga klient organisation?
 
-Det finns åtgärder du kan vidta som administratör för att hindra användare från att ansluta till din befintliga klient organisation. Om du blockerar detta Miss lyckas användarens inloggnings problem och de kommer att kontakta sin organisations administratör. Du behöver inte upprepa den här proceduren om du redan har inaktiverat automatisk licens distribution före (t. ex. Office 365 Education för studenter, lärare och personal).
+Det finns åtgärder du kan vidta som administratör för att hindra användare från att ansluta till din befintliga klient organisation. Om du blockerar användare från att ansluta till klient organisationen Miss lyckas användarens inloggnings problem och de kommer att kontakta sin organisations administratör. Du behöver inte upprepa den här proceduren om du redan har inaktiverat automatisk licens distribution före (till exempel Office 365 Education för studenter, lärare och personal).
   
 För de här stegen måste du använda Windows PowerShell. Om du vill få hjälp med att komma igång med Windows PowerShell kan du läsa [PowerShell Komma igång](https://go.microsoft.com/fwlink/p/?LinkID=286814).
   
 För att utföra följande steg måste du installera den senaste 64-bitars versionen av [Azure Active Directory v2 PowerShell-modulen](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5).
   
-När du har markerat länken väljer du **Kör** för att köra installations paketet. 
+När du har markerat länken väljer du **Kör** för att köra installations paketet.
   
- **Inaktivera automatisk anslutning till klientorganisation**: Använd det här Windows PowerShell-kommandot för att hindra nya användare från att ansluta till en hanterad klientorganisation:
+**Inaktivera automatisk anslutning till klientorganisation** : Använd det här Windows PowerShell-kommandot för att hindra nya användare från att ansluta till en hanterad klientorganisation:
   
 Så här inaktiverar du automatisk anslutning till klientorganisation för nya användare:  `Set-MsolCompanySettings -AllowEmailVerifiedUsers $false`
   
 Så här aktiverar du automatisk anslutning till klientorganisation för nya användare:  `Set-MsolCompanySettings -AllowEmailVerifiedUsers $true`
   
 > [!NOTE]
-> Detta förhindrar att nya användare i organisationen kan registrera sig för Power BI. Användare som registrerar sig för Power BI innan de kan inaktivera nya registreringar för din organisation behåller sina licenser. Se [hur du tar bort Power BI för användare som redan har registrerat sig?](#how-do-i-remove-power-bi-for-users-that-already-signed-up) för anvisningar om hur du kan ta bort åtkomst till Power BI för användare som tidigare registrerat sig för tjänsten. 
+> Detta förhindrar att nya användare i organisationen kan registrera sig för Power BI. Användare som registrerar sig för Power BI innan de kan inaktivera nya registreringar för din organisation behåller sina licenser. Se [hur du tar bort Power BI för användare som redan har registrerat sig?](#how-do-i-remove-power-bi-for-users-that-already-signed-up) för anvisningar om hur du kan ta bort åtkomst till Power BI för användare som tidigare registrerat sig för tjänsten.
   
 ## <a name="how-can-i-allow-users-to-join-my-existing-tenant"></a>Hur kan jag tillåta användare att gå med i min nuvarande klient organisation?
 
@@ -153,14 +151,14 @@ Använd följande PowerShell-skript:  `Get-MsolCompanyInformation | fl allow*`
   
 ## <a name="how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi"></a>Hur kan jag förhindra att min befintliga användare börjar använda Power BI?
 
- **Inaktivera automatisk licens distribution:** Använd detta Windows PowerShell-skript för att inaktivera automatiska licens distributioner för befintliga användare. Du behöver inte upprepa den här proceduren om du redan har inaktiverat automatisk licens distribution före (t. ex. Office 365 Education för studenter, lärare och personal). 
+**Inaktivera automatisk licens distribution:** Använd detta Windows PowerShell-skript för att inaktivera automatiska licens distributioner för befintliga användare. Du behöver inte upprepa den här proceduren om du redan har inaktiverat automatisk licens distribution före (till exempel Office 365 Education för studenter, lärare och personal).
   
 Så här inaktiverar du automatisk licensdistribution för befintliga användare:  `Set-MsolCompanySettings -AllowAdHocSubscriptions $false`
   
 Så här aktiverar du automatisk licensdistribution för befintliga användare:  `Set-MsolCompanySettings -AllowAdHocSubscriptions $true`
   
 > [!NOTE]
-> *AllowAdHocSubscriptions* -flaggan används för att styra flera användar funktioner i organisationen, inklusive möjligheten för användare att registrera sig för Azure Rights Management-tjänsten. Om den här flaggan ändras, påverkas alla de här funktionerna. 
+> *AllowAdHocSubscriptions* -flaggan används för att styra flera användar funktioner i organisationen, inklusive möjligheten för användare att registrera sig för Azure Rights Management-tjänsten. Om den här flaggan ändras, påverkas alla de här funktionerna.
   
 ## <a name="how-can-i-allow-my-existing-users-to-sign-up-for-power-bi"></a>Hur tillåter jag att de befintliga användarna registrerar sig för Power BI?
 
@@ -168,31 +166,30 @@ Om du vill tillåta att användarna registrerar sig för Power BI inverterar du 
   
 ## <a name="how-do-i-remove-power-bi-for-users-that-already-signed-up"></a>Hur tar jag bort Power BI för användare som redan registrerat sig?
 
-Om en användare har registrerat sig för Power BI-men du inte längre vill att de ska ha åtkomst till Power BI, kan du ta bort Power BI-licensen för den användaren.
+Om en användare har registrerat sig för Power BI men inte längre vill att de ska ha åtkomst till Power BI, kan du ta bort Power BI-licensen för den användaren.
 
 ::: moniker range="o365-worldwide"
   
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
-    
+
 2. Leta reda på den användare som du vill ta bort licensen för och välj sedan personens namn.
-    
+
 3. På fliken **licenser och appar** avmarkerar du kryss rutan **Microsoft Power BI** .
-    
+
 4. Välj **Spara ändringar**.
 
 ::: moniker-end
 
-  
 ::: moniker range="o365-germany"
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
 
 2. Leta reda på den användare som du vill ta bort licensen för och välj sedan personens namn.
-    
-3. Bredvid **produkt licenser**väljer du **Redigera**. 
-    
+
+3. Bredvid **produkt licenser** väljer du **Redigera**.
+
 4. Inaktivera **Microsoft Power BI** -alternativet.
-    
+
 5. Välj **Spara**.
 
 ::: moniker-end
@@ -202,21 +199,20 @@ Om en användare har registrerat sig för Power BI-men du inte längre vill att 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
 
 2. Leta reda på den användare som du vill ta bort licensen för och välj sedan personens namn.
-    
-3. Bredvid **produkt licenser**väljer du **Redigera**. 
-    
+
+3. Bredvid **produkt licenser** väljer du **Redigera**.
+
 4. Inaktivera **Microsoft Power BI** -alternativet.
-    
+
 5. Välj **Spara**.
 
-::: moniker-end 
-
+::: moniker-end
 
 ## <a name="how-do-i-know-when-new-users-have-joined-my-tenant"></a>Hur vet jag när nya användare har anslutit till min klientorganisation?
 
 Användare som har anslutit till din klientorganisation som en del av det här programmet tilldelas en unik licens som du kan filtrera efter i det aktiva användarfönstret på instrumentpanelen för administratörer.
   
-Om du vill skapa den nya vyn går du till administrations centret och följer stegen för att [skapa en anpassad vy](../add-users/create-edit-or-delete-a-custom-user-view.md#create-a-custom-user-view). Under **tilldelad produkt licens**väljer du **Microsoft Power BI**. När du har skapat den nya vyn kan du se alla användare i klient organisationen som har registrerat sig i det här programmet.
+Om du vill skapa den nya vyn går du till administrations centret och följer stegen för att [skapa en anpassad vy](../add-users/create-edit-or-delete-a-custom-user-view.md#create-a-custom-user-view). Under **tilldelad produkt licens** väljer du **Microsoft Power BI**. När du har skapat den nya vyn kan du se alla användare i klient organisationen som har registrerat sig i det här programmet.
   
 ## <a name="are-there-any-additional-things-i-should-be-prepared-for"></a>Finns det något annat som jag ska vara förberedd på?
 

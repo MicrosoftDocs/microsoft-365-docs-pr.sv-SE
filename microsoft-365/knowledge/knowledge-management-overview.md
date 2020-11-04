@@ -11,12 +11,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Översikt över Knowledge Management i Project cortex.
-ms.openlocfilehash: c4f7ff7d65ec08740dc14f717712731d839bd903
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: d422b54bb7991fb5fd61465cd0428ab586d10bf5
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361957"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906947"
 ---
 # <a name="knowledge-management-overview-preview"></a>Översikt över kunskaps hantering (för hands version)
 
@@ -29,20 +29,27 @@ Kunskaps hantering använder Microsoft AI-teknologi, Microsoft 365, Delve, sökn
 
 Målet är att leverera information till användare i program som de använder varje dag, till exempel Outlook, teams och SharePoint.
 
-Användarna kan till exempel se okända villkor i deras e-post, SharePoint-webbplatser eller i team-konversationer, som de vill veta mer om. Kunskaps hantering använder AI för att automatiskt söka efter och identifiera dessa **ämnen**och sammanfattar information om dem, till exempel en kort beskrivning, ämnes experter på ämnet och webbplatser, filer och sidor som är relaterade till det. Du kan välja att uppdatera ämnes informationen efter behov. Du kan sedan göra de avsnitt tillgängliga för användarna, vilket innebär att för varje förekomst av avsnittet som visas i program som Outlook, grupper och SharePoint markeras texten. Användare kan välja att välja ämne för att lära dig mer om det i avsnitts informationen.
+Användarna kan till exempel se okända villkor i deras e-post, SharePoint-webbplatser eller i team-konversationer, som de vill veta mer om. Kunskaps hantering använder AI för att automatiskt söka efter och identifiera dessa **ämnen** och sammanfattar information om dem, till exempel en kort beskrivning, ämnes experter på ämnet och webbplatser, filer och sidor som är relaterade till det. Du kan välja att uppdatera ämnes informationen efter behov. Du kan sedan göra de avsnitt tillgängliga för användarna, vilket innebär att för varje förekomst av avsnittet som visas i program som Outlook, grupper och SharePoint markeras texten. Användare kan välja att välja ämne för att lära dig mer om det i avsnitts informationen.
 
 
-## <a name="topic-discovery"></a>Avsnitts identifiering
+## <a name="topic-indexing"></a>Indexering av avsnitt
 
-Kunskaps hantering använder Microsoft AI-teknologi till att söka efter **ämnen** i din Office 365-miljö.
+Kunskaps hantering använder Microsoft AI-teknik för att identifiera **ämnen** i din Office 365-miljö.
 
 Ett ämne är en fras eller en term som är organiserad eller viktig. Den har en specifik innebörd för organisationen och har resurser relaterade till det som kan hjälpa folk förstå vad det är och få mer information om den.
 
-När ett ämne identifieras skapas en **ämnes sida** för den som innehåller information som samlats in genom identifiering av ämnen, till exempel:
+När ett ämne identifieras skapas en **ämnes sida** för den som innehåller information som samlats in genom avsnitts indexering, till exempel:
 
+- Alternativa namn och/eller akronymer.
 - En kort beskrivning av ämnet.
 - Användare som kan vara kunskapsbaserade i avsnittet.
 - Filer, sidor och webbplatser som är relaterade till avsnittet.
+
+
+## <a name="topic-discovery"></a>Avsnitts identifiering
+När ett ämne omnämns i innehåll på nyheter och sidor i SharePoint visas det markerat. Öppna sammanfattningen av rubriken från markeringen. Öppna avsnitts informationen från sammanfattningens rubrik. <!--(msg for Efren: not sure if I should use discovery for this; we use discovered in-product for indexing?)--> Det omnämnda ämnet kan identifieras automatiskt eller ha lagts till på sidan med en direkt referens till ämnet av sidans författare.
+
+Du kan också upptäcka ämnen via Microsoft Search.
 
 
 ## <a name="topic-management"></a>Hantering av ämnen
@@ -70,15 +77,13 @@ Med administratörs kontroller i Microsoft 365 Admin Center kan du hantera kunsk
 
 Mer information finns i [Hantera kunskaps nätverk](manage-knowledge-network.md) . 
 
-## <a name="topic-curation"></a>Ämnes underavsnitt
+## <a name="topic-curation--feedback"></a>Avsnitts information & feedback
 
 AI fungerar fort löp ande för att ge förslag på att förbättra dina ämnen när ändringar sker i miljön.
 
-Användare som du tillåter åtkomst till för att se ämnen i deras dagliga arbete får göra förslag för att förbättra dem. Om en användare till exempel visar ämnes sidan och ser information som är felaktig eller måste läggas till kan en länk på ämnes sidan skicka en förfrågan om att uppdatera informationen.
+Användare som du tillåter åtkomst till för att se ämnen i deras dagliga arbete får göra förslag för att förbättra dem. Om en användare till exempel visar ämnes sidan och ser information som är felaktig eller måste läggas till kan de redigera informationen direkt med en länk på sidan ämne. Om en användare till exempel visar en överstryknings färg på en sida i SharePoint-diskussionsgruppen kan du hitta frågor som frågar om markeringen är lämplig eller om det föreslagna ämnet passar din organisation. Ditt svar hjälper dig att avgöra vad som visas i avsnitts sammanfattningar och avsnitts information.
 
-Dessutom kan användare med rätt behörighet tagga objekt som en Teams-konversation som är relevant för ett ämne och lägga till dem i ett visst ämne.
-
-
+Dessutom kan användare med rätt behörighet tagga objekt som Yammer-konversationer som är relevanta för ett ämne och lägga till dem i ett visst ämne. <!--(msg for Efren: changed to Yammer, because we will not have shipped Teams yet)-->
 
 
 ## <a name="see-also"></a>Se även

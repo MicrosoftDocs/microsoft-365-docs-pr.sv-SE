@@ -19,6 +19,7 @@ ms.custom:
 - IT_Networking
 - TRN_M365B
 - OKR_SMB_Videos
+- seo-marvel-may2020
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -27,27 +28,27 @@ search.appverid:
 - ODB150
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
-description: Lär dig hur du använder OneDrive och en grupp webbplats för fil lagring och delning.
-ms.openlocfilehash: e6722dc7460a63878ba7fc6a15f6c384ca37e136
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+description: Lär dig hur du använder OneDrive och en grupp webbplats för Microsoft 365-lagring och fildelning från Microsoft 365.
+ms.openlocfilehash: cc6a7a45fda65073dc9b0cd15a844ec9aefca794
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350367"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906399"
 ---
-# <a name="set-up-file-storage-and-sharing"></a>Konfigurera fillagring och fildelning
+# <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Konfigurera fil lagring och delning i Microsoft 365
 
 Ett av de bästa sätten att konfigurera fil lagring och delning för ditt företag är att använda OneDrive och en grupp webbplats tillsammans. Det här är bra om du har ett litet företag med några få anställda.
 
-Titta på en kort video om var du kan lagra filer i Microsoft 365.<br><br>
+Titta på en kort video om att lagra filer i Microsoft 365-molnet.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
 Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## <a name="where-you-can-store-documents-in-microsoft-365"></a>Där du kan lagra dokument i Microsoft 365
+## <a name="microsoft-365-document-storage-and-management"></a>"Microsoft 365 Document Storage and Management"
 
-- OneDrive är avsett för individuell användning, med tillfällig delning av filer. 
+- OneDrive är avsett för individuell användning, med tillfällig delning av filer.
 
 - En grupp webbplats är utformad för att du ska kunna dela och samar beta med filer regelbundet. En grupp webbplats är idealisk för att lagra filer som har delade ägarskap där flera personer äger filerna och kan samar beta på dem. Skapa ett Microsoft-team för att lägga till en grupp webbplats. Mer information finns i [skapa ett team i Teams](https://support.microsoft.com/office/174adf5f-846b-4780-b765-de1a0a737e2b).
 
@@ -72,7 +73,7 @@ Här är rekommendationer för vad du kan lagra på varje plats när du använde
 
 Alla personer i ditt företag som har en Microsoft 365-licens tilldelad (och SharePoint Online markerat) får moln lagring i OneDrive. De kan lagra affärsrelaterade filer här för åtkomst från vilken enhet som helst och de är bara tillgängliga för den användaren. De kan till exempel lagra utkast, mötesanteckningar eller manuskriptet till en demo som de ska leverera.
   
-Anställda kan även dela OneDrive-filer och-mappar. Om en anställd är borta eller lämnar företaget kan andra komma åt delade filer som lagras på OneDrive.
+Anställda kan även dela OneDrive-filer och-mappar. Om en anställd är borta eller lämnar företaget kan andra komma åt delade filer som lagras i OneDrive-gruppmappen.
   
 Så här kan varje person i teamet konfigurera OneDrive och dela filer.
 
@@ -157,11 +158,11 @@ Här är några tips om hur du får ut mesta möjliga av OneDrive eller SharePoi
   
 ### <a name="file-storage-and-collaboration-recommendations-for-other-types-of-small-businesses"></a>Rekommendationer om fillagring och samarbete för andra typer av småföretag
 
-- En **mans**företag: Använd OneDrive för att lagra dina egna filer och dela dem med kunder i varje enskilt fall.
+- En **mans** företag: Använd OneDrive för att lagra dina egna filer och dela dem med kunder i varje enskilt fall.
 
-- **Samägare**: båda ägarna använder OneDrive och delar filer fram och tillbaka.
+- **Samägare** : båda ägarna använder OneDrive och delar filer fram och tillbaka.
 
-- **Företag med externa klienter eller partner som behöver åtkomst till filer**: skapa en ny grupp webbplats för att lagra och dela dokument som är avsedda för en viss kund. Konfigurera webbplatsen så att den endast tillåter åtkomst till den kunden. Då behöver du inte oroa dig för att en kund oavsiktligt får till gång till information som är avsedd för en annan kund.
+- **Företag med externa klienter eller partner som behöver åtkomst till filer** : skapa en ny grupp webbplats för att lagra och dela dokument som är avsedda för en viss kund. Konfigurera webbplatsen så att den endast tillåter åtkomst till den kunden. Då behöver du inte oroa dig för att en kund oavsiktligt får till gång till information som är avsedd för en annan kund.
 
 ### <a name="keep-private-files-private"></a>Hålla privata filer privata
 

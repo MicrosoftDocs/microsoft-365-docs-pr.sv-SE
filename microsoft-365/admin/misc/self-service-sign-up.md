@@ -19,13 +19,13 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
-description: Läs mer om Microsoft 365 Self-Service-registrering och tillgängliga självbetjänings program, till exempel Microsoft Power Apps, Microsoft Flow och Dynamics 365 för finansiering.
-ms.openlocfilehash: 8e8ed80cc24e3c6ec0a4a9d408d202495de52adb
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+description: Läs mer om Microsoft 365 Self-Service-anmälan och tillgängliga självbetjänings program, till exempel Microsoft Power Apps, Microsoft Flow och Dynamics 365 för finansiering.
+ms.openlocfilehash: 21e41661141a817a1751c80608035d839d2e3952
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324486"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906579"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Använda automatisk registrering i din organisation
 
@@ -44,9 +44,8 @@ I följande exempel beskrivs hur själv registrerar sig i skolan. Samma sak fung
 
 Nedan finns de självbetjänings program som är tillgängliga för närvarande. Den här listan uppdateras när nya program läggs till.
   
-|||||
+| Information <br/> | Beskrivning <br/> | Ytterligare information <br/> | Webbplats för självbetjänings registrering <br/> |
 |:-----|:-----|:-----|:-----|
-|**Information** <br/> |**Beskrivning** <br/> |**Ytterligare information** <br/> |Webbplats för självbetjänings registrering * * * * <br/> |
 |Office 365 a1 * * * * <br/> |Alla elever och lärare kan använda en e-postadress för skolan för att registrera dig för en kostnads fri Office 365 och hämta Office-appar för webben, 1 TB moln lagring i OneDrive och SharePoint Online för klass-, grupp-och projekt webbplatser.  <br/> |[Office 365 Education – tekniska frågor](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Office 365 a1 plus** <br/> |Berättigade studenter och lärare kan registrera sig för Office 365 a1 plus, vilket omfattar allting ovan plus Microsoft 365-appar för företag. Microsoft 365-appar för företag är produktivitets program, inklusive Word, PowerPoint, Excel, Outlook, OneNote, Publisher, Access och Skype för företag, som är installerat på din station ära eller bärbara dator.  <br/> |[Office 365 Education – tekniska frågor](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Power BI** <br/> |Power BI gör att användare kan visualisera data, dela upptäckter och samar beta på nya och intuitiva sätt. <br/> Om din organisation redan abonnerar kan du även se licenser för "Power BI Pro individuell User utvärdering", som ger användarna begränsad åtkomst till avancerade funktioner.  <br/> |[Power BI i organisationen](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
@@ -54,7 +53,7 @@ Nedan finns de självbetjänings program som är tillgängliga för närvarande.
 |**Microsoft Power Apps** <br/> |I PowerApps kan du hantera organisationsinformation genom att köra ett program som du har skapat eller som någon annan har skapat och delat med dig. Appar körs på mobila enheter, till exempel telefoner, eller så kan du köra dem i en webbläsare genom att öppna Dynamics 365. Du kan skapa en oändlig mängd olika appar – helt utan att lära dig ett programmeringsspråk, till exempel C#.  <br/> |[Själv registrering för PowerApps](https://go.microsoft.com/fwlink/p/?linkid=841461) <br/> |[Microsoft Power Apps](https://go.microsoft.com/fwlink/p/?linkid=841462) <br/> |
 |**Dynamics 365 för ekonomiska räkenskaper** <br/> |Skaffa en komplett företags-och ekonomisk hanterings lösning för små och medel stora företag. Dynamics 365 för ekonomiska kostnader gör det enklare att beställa, sälja, fakturera och rapportera: från dag ett.  <br/> |[Microsoft Dynamics 365 för ekonomiska räkenskaper](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |[Microsoft Dynamics 365 för ekonomiska räkenskaper](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |
 |**Microsoft Dynamics 365 för åtgärder** <br/> |Gör affärer mer effektivt. De fullständiga ERP-verktygen i Dynamics 365 för operationer ger globala skalbarhets-och digital Intelligence-funktioner som hjälper dig att växa i takt.  <br/> |[Microsoft Dynamics 365 för åtgärder](https://go.microsoft.com/fwlink/p/?linkid=841467) <br/> |[Microsoft Dynamics 365 för åtgärder](https://go.microsoft.com/fwlink/p/?linkid=841467) <br/> |
-|**Microsoft AppSource** <br/> |Microsoft AppSource är ett mål för program vara-as-service-affärsappar som bygger på Microsofts moln plattform. AppSource har funktioner för hundratals appar, tilläggsprogram och innehålls paket som utökar funktionerna i Microsoft-produkter som Azure, Dynamics 365, Office 365 och Power BI.  <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |
+|**Microsoft AppSource** <br/> |Microsoft AppSource är ett mål för program vara-as-service-affärsappar som bygger på Microsofts moln plattform. AppSource har funktioner för hundratals appar, tillägg och innehålls paket som utökar funktionerna i Microsoft-produkter som Azure, Dynamics 365, Office 365 och Power BI.  <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |
 |**Microsofts partner incitament** <br/> |I Microsoft Partner Network finns det tre typer av medlemskap. Varje typ ger en uppsättning fördelar som underlättar verksamheten. När du uppnår dina mål kan du delta i programmet på den nivå som passar dina unika behov för att få till gång till fler fördelar och utveckla ditt förhållande till oss och andra partners i nätverket.  <br/> |[Microsofts partner incitament](https://go.microsoft.com/fwlink/p/?linkid=841469) <br/> |[Microsofts partner incitament](https://go.microsoft.com/fwlink/p/?linkid=841469) <br/> |
 |**Microsoft Business Center** <br/> |Microsoft Business Center är portalen för kunder som har gjort köp via Microsofts produkter och service avtal (MPSA). <br/> |[Snabb start: registrera dig för Microsoft Business Center](https://go.microsoft.com/fwlink/p/?linkid=841479) <br/> |[Microsoft Business Center](https://go.microsoft.com/fwlink/p/?linkid=841470) <br/> |
 |**Microsoft Volume licenstjänster-Center** <br/> |I Microsoft Volume Licensing Service Center visas licenser som köpts under Enterprise, väljer, utbildning (Campus eller skola), Open Value, Open licens and ISV royalty-avtal.  <br/> |[VLSC utbildning och resurser](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx) <br/> |[Service Center för volym licens](https://www.microsoft.com/Licensing/servicecenter/default.aspx) <br/> |

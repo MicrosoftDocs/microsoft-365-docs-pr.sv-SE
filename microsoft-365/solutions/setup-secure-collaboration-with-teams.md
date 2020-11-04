@@ -11,27 +11,29 @@ ms.collection:
 - M365-collaboration
 - m365solution-securecollab
 - m365solution-overview
-ms.custom: ''
+ms.custom:
+- M365solutions
+- seo-marvel-jun2020
 f1.keywords: NOCSH
-description: Lär dig hur du konfigurerar Teams för att skydda dina data baserat på dess känslighet
-ms.openlocfilehash: 5cf4937a79fdf33e160432c740504ec84d196585
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: Lär dig hur du konfigurerar säkra innehålls samarbete i Teams för att skydda dina data baserat på dess känslighet.
+ms.openlocfilehash: 310605d0db84e33be1d5fdc925fadcfcdf9dddaf
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843546"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906805"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Konfigurera säkerhet samarbete med hjälp av Microsoft 365
 
 Det är enkelt att dela information med rätt personer när du hindrar överdelningen till en organisations framgångar. Det innebär att du kan dela känslig information på ett säkert sätt med bara de som ska ha åtkomst till det. Beroende på projektet kan det vara bra att dela känslig information med personer utanför organisationen.
 
-Lösnings vägledningen innehåller två komponenter som hjälper dig att:
+Den här vägledningen för samarbets lösningar innehåller två komponenter som hjälper dig att:
 - Distribuera Microsoft Teams med rätt skydds nivå för varje projekt
 - Konfigurera extern delning med lämpliga säkerhets inställningar för varje projekt
 
 ![Distribuera Teams med lämpligt skydd och konfigurera extern delning med lämpliga säkerhets inställningar](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
-Om det är mångsidigt och lättanvända samarbets verktyg inte är tillgängliga samarbetar användarna ofta via e-post. Det här är ett omständligt och felkänsligt samarbets sätt och kan öka risken för olämplig delning av information. Om folk tycker att informationen är för svår kan de återgå till att använda konsument produkter som inte styrs av den. Detta kan innebära en ännu större risk.
+Om det är mångsidigt och lättanvända verktyg för innehålls samarbete inte är tillgängligt kan användarna ofta samar beta via e-post. Det här är ett omständligt och felkänsligt samarbets sätt och kan öka risken för olämplig delning av information. Om folk tycker att informationen är för svår kan de återgå till att använda konsument produkter som inte styrs av den. Detta kan innebära en ännu större risk.
 
 Med Microsoft 365 kan du distribuera Teams med en mängd olika konfigurationer som hjälper:
 

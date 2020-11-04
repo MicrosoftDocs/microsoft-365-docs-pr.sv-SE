@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Lär dig vad som händer med dina data när prenumerationen på Microsoft 365 för företag upphör, är inaktive rad eller om du avbryter.
-ms.openlocfilehash: 77b65931056ca504d6f3efd7ca86560496495f5d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b09f56fefb7791af012c9dab2ba4e5684b9bf89f
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646877"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906829"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Vad händer med mina data och åtkomst när min Microsoft 365 för företag-prenumeration går ut?
 
@@ -203,6 +203,10 @@ Du kan inte återaktivera prenumerationen just nu. Som global administratör ell
 > [!NOTE]
 > Om du lägger till ett nytt abonnemang av samma typ som har avetablerats återställs inte data som är kopplade till den avetablerade prenumerationen.
 
+
+> [!NOTE]
+> Om en CSP-licens är inaktive rad är det ingen 30 dagars Grace-period och tjänsterna är inaktiverade omedelbart. Data tas bort efter 90 dagar om klient organisationen inte återaktiveras genom att lägga till en ny licens.
+
 ### <a name="what-happens-when-my-trial-ends"></a>Vad händer när min utvärderings version går ut?
 
 När utvärderings versionen upphör kan du inte fortsätta att använda Microsoft 365 kostnads fritt. Du har några alternativ:
@@ -237,3 +241,4 @@ När utvärderings versionen upphör kan du inte fortsätta att använda Microso
 [Avbryta din prenumeration](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (artikel) \
 [Förnya Microsoft 365 för företag](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (artikel) \
 [Återaktivera din prenumeration](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (artikel)
+

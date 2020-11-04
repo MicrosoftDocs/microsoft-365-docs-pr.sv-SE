@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365-center för lösningar och arkitektur
-description: Få den tekniska vägledning du behöver för att förstå, planera och implementera integrerade Microsoft 365-lösningar för säkert och kompatibelt modernt samarbete.
+description: Teknisk vägledning för att förstå, planera och implementera integrerade Microsoft 365-lösningar för företags resurs planering och säkert samarbete.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -12,29 +12,29 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 1f9d2d1a8a1c346214fa58f0f6095683bee0b24f
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 61947c940a5079574954344ab72d86594ac3ba48
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46520975"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906209"
 ---
 # <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365-center för lösningar och arkitektur
 
-Det här lösnings- och arkitekturcentret samlar den tekniska vägledning du behöver för att förstå, planera och implementera integrerade Microsoft 365-lösningar för säkert och kompatibelt modernt samarbete. I det här centret hittar du:
+Denna lösning och arkitektur Center sammanfattar den tekniska vägledningen som du behöver för att förstå, planera och implementera integrerade Microsoft 365-lösningar för företags resurs planering och säkra och kompatibla moderna samarbete. I den här Center:
 
-![block ](https://docs.microsoft.com/office/media/icons/blocks-blue.png) **[Grundläggande lösning vägledning](foundation-solutions-overview.md)** Dessa lösningar ger en fullständig vägledning för ett visst affärsproblem eller behov. De guidar dig genom begrepp och funktioner och hjälper dig att göra de val som leder till ett fungerande slutresultat, från planering till genomförande, till antagande. 
+![](https://docs.microsoft.com/office/media/icons/blocks-blue.png) **[grundläggande lösnings råd](foundation-solutions-overview.md)** de här lösningarna ger en fullständig vägledning för ett specifikt företags problem eller behov. De vägleder dig genom koncept och funktioner och hjälper dig att göra de val som leder till ett fungerande slut resultat, från planering till implementering, att välja. 
 
 - [Underlätta för distansarbetare med Microsoft 365](empower-people-to-work-remotely.md)
 - [Konfigurera säkerhet samarbete med hjälp av Microsoft 365](setup-secure-collaboration-with-teams.md)
 - [Distribuera skydd mot hot i Microsoft 365](deploy-threat-protection.md)
 - [Distribuera informationsskydd för datasekretessregler](information-protection-deploy.md)
 
-![objekt ](https://docs.microsoft.com/office/media/icons/objects-blue.png) **[Arbetsbelastningslösning och scenariovägledning](workload-solutions-scenarios-overview.md)** Dessa scenarier och lösningar hjälper dig att uppnå ett specifikt affärsmål. Du kan lägga till dem i de grundläggande lösningarna för att lägga till funktioner i din miljö.
+![objekt ](https://docs.microsoft.com/office/media/icons/objects-blue.png) **[arbets belastnings lösning och scenario vägledning](workload-solutions-scenarios-overview.md)**  de här scenarierna och lösningarna hjälper dig att genomföra ett specifikt affärs syfte. Du kan lägga till dem i de grundläggande lösningarna för att lägga till funktioner i din miljö.
 
-![Moln- och linjalsymboler ](https://docs.microsoft.com/office/media/icons/cloud-architecture2.png) **[Lösnings- och arkitekturillustrationer](productivity-illustrations.md)** Visa eller ladda ned dessa illustrationer för att förstå Microsoft 365:s funktioner och arkitekturen för Microsoft 365:s molntjänster.
+![Moln-och linjal symboler ](https://docs.microsoft.com/office/media/icons/cloud-architecture2.png) **[lösning och arkitektur illustrationer](productivity-illustrations.md)**  Visa eller ladda ner dessa illustrationer för att förstå Microsoft 365: s kapacitet och arkitekturen i Microsoft 365-moln tjänster.
 
-![Bästa praxis band ](https://docs.microsoft.com/office/media/icons/best-practices-blue.png) **[Branschspecifik vägledning](industry-specific-guidance-overview.md)** Hitta bästa praxis för din bransch – ekonomi, hälso- och sjukvård och utbildning.
+![Metod tips utbildning ](https://docs.microsoft.com/office/media/icons/best-practices-blue.png) **[bransch-specifika rikt linjer](industry-specific-guidance-overview.md)**  för din bransch – ekonomi, sjukvård och utbildning.
 
-![](https://docs.microsoft.com/office/media/icons/layout-navigation-blue.png) **[Layout/navigeringssymbol Designprinciper](design-principles.md)** Förstå de viktigaste principerna du behöver för att förstå nätverk, identitet, säkerhet och multinationell arkitektur.
+![Layout/navigerings symbol ](https://docs.microsoft.com/office/media/icons/layout-navigation-blue.png) **[design principer](design-principles.md)**  förstå de viktigaste principerna som behövs för att förstå nätverks-, identitets-, säkerhets-och multi-nationella arkitekturer.
 

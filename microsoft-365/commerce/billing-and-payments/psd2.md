@@ -14,18 +14,18 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Från och med den 14 september 2019 måste bankerna i det Europeiska ekonomiska samarbetsområdet verifiera identiteten hos den person som gör ett online-köp innan betalningen kan behandlas.
+description: Från och med den 14 september 2019 måste bankerna i det Europeiska ekonomiska samarbetsområdet verifiera identiteten hos den person som gör ett online-köp innan betalningen kan behandlas. "
 keywords: betal tjänster, direktiv 2, stark kundpool, multifaktorautentisering
-ms.openlocfilehash: fc8784949cdacea10957660c99795b4ade0f9f7a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d6564a8c6d31bd0758f1084e7ee9b6857aed034e
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638429"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906615"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>Betal tjänster, direktiv 2 och grundlig kundpool för kommersiella kunder
 
-Från och med den 14 september 2019 måste bankerna i det Europeiska ekonomiska samarbetsområdet verifiera identiteten hos den person som gör ett online-köp innan betalningen kan behandlas. Denna verifiering kräver multifaktorautentisering för att säkerställa att dina inköp online är säkra och skyddade. Datumet för det här verifierings kravet kommer att senareläggas för vissa länder. 
+Från och med den 14 september 2019 måste bankerna i det Europeiska ekonomiska samarbetsområdet verifiera identiteten hos den person som gör ett online-köp innan betalningen kan behandlas. Denna verifiering kräver multifaktorautentisering för att säkerställa att dina inköp online är säkra och skyddade. Datumet för det här verifierings kravet kommer att senareläggas för vissa länder.
 
 Mer information finns i [Microsoft vanliga frågor och svar om betal tjänster, direktiv 2 och grundlig kundpool](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication).
 

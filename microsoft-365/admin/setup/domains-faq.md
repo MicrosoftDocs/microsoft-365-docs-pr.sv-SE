@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- seo-marvel-may2020
 search.appverid:
 - BCS160
 - MET150
@@ -23,20 +24,20 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
-description: Lär dig mer om domäner genom att hitta svar på vanliga frågor.
-ms.openlocfilehash: b51b5fe56bbae56dd473dd831ec91e629d9233f3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Läs mer om domäner (onmicrosoft Domain and överföringen Domain) genom att hitta svar på dina frågor på vanliga frågor.
+ms.openlocfilehash: 8d504711f46383000697736d6825a813f01fbe69
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644590"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906483"
 ---
 # <a name="domains-faq"></a>Vanliga frågor och svar om domäner
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview).
 
 ::: moniker-end
 
@@ -85,7 +86,7 @@ Det är viktigt att du har eller  **bara skapar en TXT-post för SPF**. Om du re
 
 En domän är ett unikt namn som visas efter **@** -tecknet i e-postadresser och efter **www.** i webbadresser. Det består vanligen av organisationens namn och ett vanligt Internetsuffix, till exempel  *företagsnamn.com*  eller  *universitetsnamn.edu*  . 
   
-Om du använder en egen domän som "**anders \@ contoso.com**" med Microsoft 365 kan du skapa trovärdighet och igenkänning för varumärket. 
+Om du använder en egen domän som " **anders \@ contoso.com** " med Microsoft 365 kan du skapa trovärdighet och igenkänning för varumärket. 
   
 Du kan [köpa en domän i Microsoft 365 och ställa in den automatiskt](../get-help-with-domains/buy-a-domain-name.md), eller så kan du köpa eller ta med en du redan äger från en domän registrator.
     
@@ -206,9 +207,9 @@ Anvisningar för hur du piloterar Microsoft 365-e-postfunktioner från en anpass
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>Varför har jag en onmicrosoft.com-domän?
 
-Microsoft 365 skapar en domän åt dig, till exempel *contoso.onmicrosoft.com*, när du registrerar dig för tjänsten. Det användar-ID som du skapar när du registrerar dig inkluderar domänen, till exempel *Alan@contoso.onmicrosoft.com*. 
+Microsoft 365 skapar en domän åt dig, till exempel *contoso.onmicrosoft.com* , när du registrerar dig för tjänsten. Det användar-ID som du skapar när du registrerar dig inkluderar domänen, till exempel *Alan@contoso.onmicrosoft.com*. 
   
- **Om du vill att e-postmeddelandet ska se ut som *Alan \@ contoso.com*:** [köp domänen](../get-help-with-domains/buy-a-domain-name.md) eller följ instruktionerna i [lägga till användare och domän till Microsoft 365](add-domain.md) om du redan har den. 
+ **Om du vill att e-postmeddelandet ska se ut som *Alan \@ contoso.com* :** [köp domänen](../get-help-with-domains/buy-a-domain-name.md) eller följ instruktionerna i [lägga till användare och domän till Microsoft 365](add-domain.md) om du redan har den. 
   
 - **Du kan inte byta namn på onmicrosoft-domänen efter registreringen.** Om den initiala domänen du valde till exempel var fourthcoffee.onmicrosoft.com, kan du inte ändra den till fabrikam.onmicrosoft.com. Om du vill använda en annan onmicrosoft.com-domän måste du starta en ny prenumeration med Microsoft 365. 
     
@@ -223,9 +224,9 @@ Du kan emellertid fortsätta använda den första onmicrosoft.com-domänen, äve
 ::: moniker range="o365-germany"
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>Varför har jag en "onmicrosoft.de"-domän?
 
-Microsoft 365 skapar en domän åt dig, till exempel *contoso.onmicrosoft.de*, när du registrerar dig för tjänsten. Det användar-ID som du skapar när du registrerar dig inkluderar domänen, till exempel *Alan@contoso.onmicrosoft.de*. 
+Microsoft 365 skapar en domän åt dig, till exempel *contoso.onmicrosoft.de* , när du registrerar dig för tjänsten. Det användar-ID som du skapar när du registrerar dig inkluderar domänen, till exempel *Alan@contoso.onmicrosoft.de*. 
   
- **Om du vill att ditt e-postmeddelande ska se ut som *Alan@contoso.de*:** [köp domänen](../get-help-with-domains/buy-a-domain-name.md) eller följ bara anvisningarna i [lägga till användare och domän i Microsoft 365](add-domain.md) om du redan har den. 
+ **Om du vill att ditt e-postmeddelande ska se ut som *Alan@contoso.de* :** [köp domänen](../get-help-with-domains/buy-a-domain-name.md) eller följ bara anvisningarna i [lägga till användare och domän i Microsoft 365](add-domain.md) om du redan har den. 
   
 - **Du kan inte byta namn på onmicrosoft-domänen efter registreringen.** Om den första domänen du väljer är fourthcoffee.onmicrosoft.de kan du till exempel inte ändra den till att vara fabrikam.onmicrosoft.de. Om du vill använda en annan onmicrosoft.de-domän måste du starta en ny prenumeration med Microsoft 365. 
     

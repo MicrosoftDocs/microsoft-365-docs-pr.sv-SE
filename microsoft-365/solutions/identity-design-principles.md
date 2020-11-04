@@ -1,6 +1,6 @@
 ---
-title: Till identitet och efter – en arkitekts synvinklar
-description: Problembeskrivning.
+title: Microsoft 365 Enterprise Resource Planning – säkerhets arkitektur
+description: Lär dig mer om de vanligaste design strategierna för Microsofts företags arkitektur från Alex Shteynberg, tekniska huvud arkitekter på Microsoft.
 ms.author: bcarter
 author: brendacarter
 manager: bcarter
@@ -11,14 +11,15 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.custom: ''
+- M365solutions
+ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: fc975610e24980c6a552179359bb643eb9ac040c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e691b47a2d508064243886957ac491088df2f8ae
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845258"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906901"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Till identitet och efter – en arkitekts synvinklar
 
@@ -284,7 +285,7 @@ Från administratören för administratörs delegation har de flesta Microsoft 3
 
 Diagram med hög nivå:
 
-![hög nivå diagram med logg flöde](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
+![diagram över logg källor för säkerhets-och kompatibilitetstillstånd](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
 
 Diagrammet ovan visar inbyggda funktioner för att skicka loggar till Händelsehubben och/eller Azure-lagring och/eller Azure logg analys. Alla system inkluderar inte den här rutan. Men det finns andra sätt att skicka dessa loggar till samma lagrings plats. Se till exempel [skydda dina team med Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/protecting-your-teams-with-azure-sentinel/ba-p/1265761).
 

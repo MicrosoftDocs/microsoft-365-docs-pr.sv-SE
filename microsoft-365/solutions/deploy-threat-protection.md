@@ -14,12 +14,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 2d1316927124b1ce03910190922fa0804853ae4b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 1bf06c605290dc94f64da6c2aabca3683c234c9a
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845282"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906757"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Distribuera hot Protection-funktioner i Microsoft 365
 
@@ -77,5 +77,3 @@ Om du vill vara säker på att organisationen har bästa möjliga skydd kan du s
 Dina skydds funktioner kan konfigureras parallellt, så om du har flera nätverks säkerhets team som är ansvariga för olika tjänster kan de konfigurera organisationens skydds funktioner samtidigt. Följande diagram illustrerar den omfattande processen för distribution av skydds funktioner. 
 
 ![Process för distribution av hot Protection-funktioner](../media/solutions-architecture-center/deploy-threat-protection-across-m365-grid.png) 
-
-

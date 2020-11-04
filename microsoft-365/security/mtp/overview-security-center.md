@@ -1,6 +1,6 @@
 ---
-title: Översikt över Microsoft 365 säkerhets Center
-description: En beskrivning av hur du övervakar och hanterar säkerhet för dina Microsoft-identiteter, data, enheter och appar.
+title: Översikt – Microsoft 365 säkerhets Center
+description: Beskriver övervakning och hantering av säkerhet för dina Microsoft-identiteter, data, enheter och appar med Microsoft 365-säkerhet.
 keywords: säkerhet, skadlig program vara, Microsoft 365, M365, säkerhets Center, övervaka, rapport, identiteter, data, enheter, appar
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -16,12 +16,13 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 9aaeb5323900e65de47015b8cb28abf967694ea3
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.custom: seo-marvel-jun2020
+ms.openlocfilehash: 97dece3f3c732686cff885923532af14b6106b48
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844806"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906847"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Översikt över Microsoft 365 säkerhets Center
 

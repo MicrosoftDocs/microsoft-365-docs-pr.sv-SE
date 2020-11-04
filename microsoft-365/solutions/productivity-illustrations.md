@@ -1,6 +1,6 @@
 ---
 title: Produktivitetsillustrationer för Microsoft 365
-description: Använd de här illustrationerna för att förstå grundläggande arkitektur för implementering av Microsoft 365-produktivitetslösningar.
+description: Använd dessa illustrationer, till exempel diagrammet Teams-arkitektur, för att förstå grunderna i arkitekturen för implementering av Microsoft 365 Productivity Solutions.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,23 +13,23 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 160211fe481d14749bd778255e6844b12aa80672
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f84c1c4a8d507ae9a4be3cb69a816a8494e08cc3
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847242"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906793"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Produktivitetsillustrationer för Microsoft 365
 
-Microsoft 365-företagslösningsserien ger vägledning för implementering av Microsoft 365-funktioner, särskilt där funktioner möter tekniker.
+Microsoft 365 Enterprise Solution Series tillhandahåller vägledning för implementering av Microsoft 365-funktioner, särskilt när det gäller funktioner, bland annat Teams-arkitektur diagram.
 
 ### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams och relaterade produktivitetstjänster i Microsoft 365 för IT-arkitekter
 Den logiska arkitekturen för produktivitetstjänster i Microsoft 365, med Microsoft Teams i spetsen.
 
 | Objekt | Beskrivning |
 |:-----|:-----|
-|[![Miniatyrbild av affischen för Teams logiska arkitektur](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Uppdaterad i april 2019   |Microsoft erbjuder ett utbud av produktivitetstjänster som samverkar för att tillhandahålla samarbetsupplevelser med funktioner för datastyrning, säkerhet och efterlevnad. <br/> <br/>Den här serien med illustrationer ger en översikt över produktivitetstjänsternas logiska arkitektur för företagsarkitekter, med Microsoft Teams i spetsen.|
+|[![Arbets grupper för logiska arkitekturer](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Uppdaterad i april 2019   |Microsoft erbjuder ett utbud av produktivitetstjänster som samverkar för att tillhandahålla samarbetsupplevelser med funktioner för datastyrning, säkerhet och efterlevnad. <br/> <br/>Den här serien med illustrationer ger en översikt över produktivitetstjänsternas logiska arkitektur för företagsarkitekter, med Microsoft Teams i spetsen.|
 
 
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>Grupper i Microsoft 365 för IT-arkitekter
@@ -56,7 +56,7 @@ Säkerhet och informationsskydd för organisationer i flera regioner med en enda
 
 | Objekt | Beskrivning |
 |:-----|:-----|
-|[![Miniatyrbild av infografiken för flera regioner](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>Uppdaterad i mars 2020 |Användning av en enda Microsoft 365-klientorganisation för din globala organisation är det bästa alternativet och den bästa upplevelsen av många olika anledningar. Men många arkitekter kämpar med hur de ska uppfylla kraven för säkerhet och informationsskydd i olika regioner. De här avsnitten innehåller rekommendationer. |
+|[![Infografik med flera regioner](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>Uppdaterad i mars 2020 |Användning av en enda Microsoft 365-klientorganisation för din globala organisation är det bästa alternativet och den bästa upplevelsen av många olika anledningar. Men många arkitekter kämpar med hur de ska uppfylla kraven för säkerhet och informationsskydd i olika regioner. De här avsnitten innehåller rekommendationer. |
 
 ### <a name="microsoft-defender-for-endpoint-deployment-strategy"></a>Microsoft Defender för distributions strategi för slut punkt
 
@@ -125,7 +125,7 @@ This guidance includes Test Lab Guides. For more information, see [Microsoft Sec
 Microsoft har stöd för flera olika alternativ när du påbörjar övergången till Teams i Microsoft-molnet. Med den här affischen får du hjälp att avgöra vilken Microsoft-telefonilösning (telefonsystem i molnet eller VoIP för företag lokalt) som passar för användarna i din organisation, och hur din organisation kan ansluta till det publika telenätet (PSTN).
 
 
-[![Miniatyrbild av affischen för Microsofts telefonilösningar](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) <br/>
+[![Microsoft telefoni lösningar, affisch](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) <br/>
 [PDF](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) | [Visio](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-18.vsdx) <br>
 Uppdaterad i januari 2019
 
