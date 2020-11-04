@@ -2,7 +2,7 @@
 title: Fixa möjlig inblick i e-postslingan
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om hur du använder korrigerings filen för möjlig e-post som inblickas i instrument panelen för e-postflöde i säkerhets & efterlevnad för att identifiera och åtgärda e-postloopar i organisationen.
-ms.openlocfilehash: e868c020ae307ba490e85e5803f94a67a1a94057
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 15ad5c467d18ce3038bcb05db798a9b5a7c3e391
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198451"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877516"
 ---
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Åtgärda eventuell e-postloop inblick i säkerhets & Compliance Center
 
@@ -34,10 +34,10 @@ Den **åtgärd för möjlig e-post** som är inblick i **Rekommenderad för dig*
 När du klickar på **Visa information** i widgeten visas en utfällbar lista med mer information:
 
 - **Domain**
-- **Antal meddelanden**: du kan klicka på **Visa exempel meddelanden** för att se resultatet av [meddelande spårningen](message-trace-scc.md) för ett urval av de meddelanden som påverkade slingan.
-- **Domän typ**"till exempel auktoritär eller icke-auktoritativ.
-- **MX-post**:**värd-och** **prioritets** värden för MX-posten för domänen.
-- **Upprepa orsaken** och **hur du åtgärdar**: vi försöker att identifiera de vanligaste e-postlösningarna och ger de rekommenderade åtgärderna (om de finns tillgängliga) för att åtgärda slingan.
+- **Antal meddelanden** : du kan klicka på **Visa exempel meddelanden** för att se resultatet av [meddelande spårningen](message-trace-scc.md) för ett urval av de meddelanden som påverkade slingan.
+- **Domän typ** "till exempel auktoritär eller icke-auktoritativ.
+- **MX-post** : **värd-och** **prioritets** värden för MX-posten för domänen.
+- **Upprepa orsaken** och **hur du åtgärdar** : vi försöker att identifiera de vanligaste e-postlösningarna och ger de rekommenderade åtgärderna (om de finns tillgängliga) för att åtgärda slingan.
 
 ![Den utfällbara informationen som visas när du klickar på Visa information om att åtgärda eventuella problem med e-post](../../media/mfi-fix-possible-mail-loop-details.png)
 

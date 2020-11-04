@@ -2,7 +2,7 @@
 title: Nya domäner som vidarebefordras via e-post
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -11,12 +11,12 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Administratörer kan läsa mer om hur du använder de nya domänerna som vidarebefordrar e-postmeddelande inblick i det moderna administrations centret för Exchange för att undersöka när användare i organisationen vidarebefordrar meddelanden till externa domäner som aldrig har vidarebefordrats till.
-ms.openlocfilehash: 62e254e324322aec55d692cfe3128e8e4dd60e4b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 7dfdd63a9358b1057313962bc21424a325d7bc52
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200741"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877747"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Nya domäner vidarebefordras med e-post i säkerhets & efterlevnad
 
@@ -35,7 +35,7 @@ När du klickar på widgeten visas en utfällbar plats där du kan hitta mer inf
 
 ![Den utfällbara informationen som visas när du klickar på den nya domänen som vidarebefordrar e-postinsikt](../../media/mfi-new-domains-being-forwarded-details.png)
 
-Du kan också komma åt den här informations sidan när du väljer inblicken när du klickar på **Visa alla** i området **Top Insights & rekommendationer** på (**rapport** \> **instrument panel** eller <https://protection.office.com/insightdashboard> ).
+Du kan också komma åt den här informations sidan när du väljer inblicken när du klickar på **Visa alla** i området **Top Insights & rekommendationer** på ( **rapport** \> **instrument panel** eller <https://protection.office.com/insightdashboard> ).
 
 För att förhindra automatisk vidarebefordran av meddelanden till externa domäner konfigurerar du en fjärrdomän för vissa eller alla externa domäner. Mer information finns i [Hantera fjärrdomäner i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains).
 

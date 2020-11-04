@@ -2,7 +2,7 @@
 title: Insikter för e-postflöde i instrument panelen för e-postflöde
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Administratörer kan läsa mer om insikter och rapporter som är tillgängliga i instrument panelen för e-postflöde i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9ac8b8b0d346d78af252a9e427d0ef2b1a4c4ea
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: d252b9d898d4ee5a0df854a871f821c2b02bb482
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769024"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877783"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>E-postflödesinsikter i Säkerhets- och efterlevnadscenter
 
@@ -76,6 +76,6 @@ Mer information om behörigheter i säkerhets & Compliance Center finns i [behö
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Här hittar du instrument panelen för e-postflöde
 
-Öppna säkerhets & Compliance Center <https://protection.office.com> , expandera **e-postflöde** och välj **instrument panel** .
+Öppna säkerhets & Compliance Center <https://protection.office.com> , expandera **e-postflöde** och välj **instrument panel**.
 
 Öppna för att gå direkt till instrument panelen för e-postflöde <https://protection.office.com/mailflow/dashboard> .

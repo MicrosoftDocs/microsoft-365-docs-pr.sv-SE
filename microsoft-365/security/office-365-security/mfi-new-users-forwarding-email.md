@@ -2,7 +2,7 @@
 title: Nya användare vidarebefordrar insikt via e-post
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -11,12 +11,12 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Administratörer kan lära sig hur de nya användarna vidarebefordrar e-postmeddelandena i säkerhets & efterlevnad för att undersöka när användare i organisationen vidarebefordrar meddelanden till nya domäner.
-ms.openlocfilehash: 42f8c536f8a8a1421d97726c7af432c01d053b05
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: af66a84efbd4c0b8f1ccdacf4b71d1caca1c3929
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200661"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877531"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nya användare som vidarebefordrar e-postmeddelande för säkerhets &
 
@@ -35,7 +35,7 @@ När du klickar på widgeten visas en utfällbar plats där du kan hitta mer inf
 
 ![Den utfällbara informationen som visas när du klickar på den nya användaren vidarebefordrar e-postinsikt](../../media/mfi-new-users-forwarding-email-details.png)
 
-Du kan också komma åt den här informations sidan när du väljer inblicken när du klickar på **Visa alla** i området **Top Insights & rekommendationer** på (**rapport** \> **instrument panel** eller <https://protection.office.com/insightdashboard> ).
+Du kan också komma åt den här informations sidan när du väljer inblicken när du klickar på **Visa alla** i området **Top Insights & rekommendationer** på ( **rapport** \> **instrument panel** eller <https://protection.office.com/insightdashboard> ).
 
 Du kan klicka på länken **Se rapporten som är kopplad** till en Insight-länk för att gå till **rapporten ändringar i vidarebefordring** enligt beskrivningen i nästa avsnitt.
 
@@ -59,11 +59,11 @@ Den här rapporten är inte direkt tillgänglig i [instrument panelen för e-pos
 
 Följande diagram är tillgängliga i rapportvyn:
 
-- **Visa data för: nya vidarebefordrande användare**:
+- **Visa data för: nya vidarebefordrande användare** :
 
   ![Ny vy för vidarebefordrade användare i rapporten ändringar av vidarebefordran](../../media/forwarding-modifications-report-new-forwarding-users.png)
 
-- **Visa data för: nya vidarebefordrande domäner**:
+- **Visa data för: nya vidarebefordrande domäner** :
 
   ![Vyn nya vidarebefordrade domäner i rapporten ändringar i vidarebefordran](../../media/forwarding-modifications-report-new-forwarded-domains.png)
 
@@ -71,20 +71,20 @@ Om du klickar på **filter** i en rapportvy kan du ange ett datum intervall med 
 
 ### <a name="details-table-view-for-the-forwarding-modifications-report"></a>Vyn detaljerad tabell för rapporten ändringar i vidarebefordran
 
-Om du klickar på **Visa informations tabell**beror informationen som visas på diagrammet du tittade på:
+Om du klickar på **Visa informations tabell** beror informationen som visas på diagrammet du tittade på:
 
-- **Visa data för: nya vidarebefordrande användare**:
+- **Visa data för: nya vidarebefordrande användare** :
 
-  - **Namn**: avsändarens e-postadress.
+  - **Namn** : avsändarens e-postadress.
   - **Typ av vidarebefordran**
   - **Mottagarens adress**
   - **Information**
   - **Öka**
   - **Första framåtriktade datum**
 
-- **Visa data för: nya vidarebefordrande domäner**:
+- **Visa data för: nya vidarebefordrande domäner** :
 
-  - **Namn**: avsändarens e-postdomän.
+  - **Namn** : avsändarens e-postdomän.
   - **Typ av vidarebefordran**
   - **Mottagarens adress**
   - **Information**
@@ -95,13 +95,13 @@ Om du klickar på **filter** i en detaljerad tabellvy kan du ange ett datum inte
 
 Om du väljer en rad från tabellen visas en utfällbar **lista** med följande information:
 
-- **Namn**: det här är antingen avsändarens e-postadress (från **Visa data för vy med nya vidarebefordrade användare** ) eller avsändarens e-postdomän (från **Visa data för ny vy med vidarebefordrings domäner** ).
+- **Namn** : det här är antingen avsändarens e-postadress (från **Visa data för vy med nya vidarebefordrade användare** ) eller avsändarens e-postdomän (från **Visa data för ny vy med vidarebefordrings domäner** ).
 - **Typ av vidarebefordran**
 - **Mottagare**
 - **Information**
 - **Öka**
 - **Start datum**
-- **Rekommendation**: härifrån kan du klicka på länken för att hantera användaren i administrations centret för Microsoft 365.
+- **Rekommendation** : härifrån kan du klicka på länken för att hantera användaren i administrations centret för Microsoft 365.
 
 ![Information som är utfällad från tabellen för nya användare av vidarebefordring i rapporten om ändringar för vidarebefordran](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
 

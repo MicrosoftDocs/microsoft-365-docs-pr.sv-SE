@@ -2,7 +2,7 @@
 title: Rapportera skräp post och nätfiske i Outlook för iOS och Android
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa om de inbyggda skräp posten, inte skräp post och nätfiske-alternativen i Outlook för iOS och Android.
-ms.openlocfilehash: 23668a762301ee442bc805e62863079ee7ae6076
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 1c842ac5349f9c2804c637fa4c5598b06e8f489f
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350861"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877297"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>Rapportera skräp post och nätfiske i Outlook för iOS och Android i Exchange Online
 
@@ -54,7 +54,7 @@ Använd följande steg för att rapportera skräp post och nät fiske meddelande
 
    ![Rapportera skräp post eller nätfiske](../../media/Android-report-junk-or-phishing.png)
 
-4. I dialog rutan som visas kan du välja **rapport** eller **Nej**. Om du väljer **Nej**, om du tryckte på **skräp** post flyttas meddelandet till mappen skräp post om du tryckte på **nätfiske** flyttas meddelandet till mappen Borttaget. Välj **rapport** om du även vill skicka en kopia av meddelandet till Microsoft.
+4. I dialog rutan som visas kan du välja **rapport** eller **Nej**. Om du väljer **Nej** , om du tryckte på **skräp** post flyttas meddelandet till mappen skräp post om du tryckte på **nätfiske** flyttas meddelandet till mappen Borttaget. Välj **rapport** om du även vill skicka en kopia av meddelandet till Microsoft.
 
    ![Rapportera alternativ för skräp post eller nätfiske](../../media/Android-junk-email-reporting-options.png)
 

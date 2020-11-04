@@ -2,7 +2,7 @@
 title: Rapportera skräp post och nätfiske i Outlook på webben
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig mer om de inbyggda alternativen för skräp post, inte skräp post och nätfiske i Outlook på webben (Outlook Web App) i Exchange Online och hur du inaktiverar dessa rapporterings alternativ för användare.
-ms.openlocfilehash: 076f2858e84359d788714dc5d7e8bdb972b2c2ee
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: ebf266f3bb825a5ef81a3cd2b5d2bceb270fc260
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48351083"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877379"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>Rapportera skräp post och nätfiske i Outlook på webben i Exchange Online
 
@@ -50,7 +50,7 @@ I Microsoft 365-organisationer med post lådor i Exchange Online kan du använda
 
    - Markera ett eller flera meddelanden, högerklicka och välj sedan **Markera som skräp post**.
 
-2. Klicka på **rapport**i dialog rutan som visas. Om du ändrar dig klickar du på **rapportera inte**.
+2. Klicka på **rapport** i dialog rutan som visas. Om du ändrar dig klickar du på **rapportera inte**.
 
    |Mappen|Fiske|
    |:---:|:---:|
@@ -128,13 +128,13 @@ Gör så här för att kontrol lera att du har aktiverat eller inaktiverat skrä
   Get-OwaMailboxPolicy | Format-Table Name,ReportJunkEmailEnabled
   ```
 
-- Öppna en användares post låda i Outlook på webben, Välj ett meddelande i Inkorgen, klicka på **skräp** \> **post** och bekräfta uppmaningen att rapportera meddelandet till Microsoft är eller visas inte.<sup>\*</sup>
+- Öppna en användares post låda i Outlook på webben, Välj ett meddelande i Inkorgen, klicka på **skräp** \> **post** och bekräfta uppmaningen att rapportera meddelandet till Microsoft är eller visas inte. <sup>\*</sup>
 
-- Öppna en användares post låda i Outlook på webben, Välj ett meddelande i mappen skräp post, klicka på **skräp** \> **post** och bekräfta uppmaningen att rapportera meddelandet till Microsoft, eller så visas det inte.<sup>\*</sup>
+- Öppna en användares post låda i Outlook på webben, Välj ett meddelande i mappen skräp post, klicka på **skräp** \> **post** och bekräfta uppmaningen att rapportera meddelandet till Microsoft, eller så visas det inte. <sup>\*</sup>
 
 <sup>\*</sup> Användare kan dölja uppmaningen att rapportera meddelandet medan det rapporteras. Så här kontrollerar du inställningen i Outlook på webben:
 
-1. Klicka på **Inställningar** ![ i Outlook på webb inställnings ikonen ](../../media/owa-settings-icon.png) \> **Visa alla** \> **skräp post**i Outlook-inställningar.
+1. Klicka på **Inställningar** ![ i Outlook på webb inställnings ikonen ](../../media/owa-settings-icon.png) \> **Visa alla** \> **skräp post** i Outlook-inställningar.
 2. Kontrol lera värdet i avsnittet **rapportering** **innan du skickar en rapport**.
 
    ![Inställningar för skräp post rapportering i Outlook på webben](../../media/owa-junk-email-reporting-options.png)

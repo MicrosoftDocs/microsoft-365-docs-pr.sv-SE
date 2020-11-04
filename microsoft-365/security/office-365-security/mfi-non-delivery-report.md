@@ -2,7 +2,7 @@
 title: Rapport om utebliven leverans i instrument panelen för e-postflöde
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära dig hur du använder rapporten för information om ej leverans i instrument panelen för e-postflöde i säkerhets & Compliance Center för att övervaka de vanligaste fel koderna i rapporter som inte kunde levereras (kallas även NDR eller studs meddelanden) från avsändare i din organisation.
-ms.openlocfilehash: bc530cce54b3d4fd9f414920a8fb58f4322f6b5c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4967b3b5c294566e46bbc715dd6702c23d618105
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195970"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877687"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Rapport om utebliven leverans i säkerhets & efterlevnad
 
@@ -33,7 +33,7 @@ I **rapporten om utebliven leverans** i [instrument panelen för e-postflöden](
 
 Om du klickar på widgeten för **ej leverans rapporter** tas du till **rapporten för ej leverans**.
 
-Aktiviteten för alla felkoder visas som standard. Om du klickar på **Visa data för**kan du välja en specifik felkod i list rutan.
+Aktiviteten för alla felkoder visas som standard. Om du klickar på **Visa data för** kan du välja en specifik felkod i list rutan.
 
 Om du hovrar över en viss färg (felkod) på en viss dag i diagrammet visas det totala antalet meddelanden för felet.
 
@@ -46,7 +46,7 @@ Om du klickar på **Visa informations tabell** i en rapportvy visas följande in
 - **Datum**
 - **Rapport kod för ej leverans**
 - **Öka**
-- **Exempel meddelanden**: meddelande-ID för ett urval av påverkade meddelanden.
+- **Exempel meddelanden** : meddelande-ID för ett urval av påverkade meddelanden.
 
 Om du klickar på **filter** i en detaljerad tabellvy kan du ange ett datum intervall med **start datum** och **slutdatum**.
 
@@ -55,9 +55,9 @@ Om du vill skicka rapporten för ett visst datum intervall till en eller flera m
 När du markerar en rad i tabellen visas en utfällbar tabell med följande information:
 
 - **Datum**
-- **Rapport kod för ej leverans**: du kan klicka på länken för att hitta mer information om orsakerna och lösningarna för den specifika felkoden.
+- **Rapport kod för ej leverans** : du kan klicka på länken för att hitta mer information om orsakerna och lösningarna för den specifika felkoden.
 - **Öka**
-- **Exempel meddelanden**: du kan klicka på **Visa exempel meddelanden** om du vill visa [meddelande spårnings](message-trace-scc.md) resultaten för ett prov av de påverkade meddelandena.
+- **Exempel meddelanden** : du kan klicka på **Visa exempel meddelanden** om du vill visa [meddelande spårnings](message-trace-scc.md) resultaten för ett prov av de påverkade meddelandena.
 
 ![Utfällda detaljer när du har markerat en rad i Tabellvy i rapporten för ej leverans](../../media/mfi-non-delivery-report-details-flyout.png)
 

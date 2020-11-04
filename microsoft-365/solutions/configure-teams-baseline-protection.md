@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du distribuerar team med en grundläggande nivå av skydd.
-ms.openlocfilehash: ac6974b5625a4eff0fcd11a17c4607a7c2caf97f
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 76b60a61812c4d30884825b41ee7220d6686b58b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398871"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845306"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Konfigurera teams med grundläggande skydd
 
@@ -33,13 +33,13 @@ I den här artikeln tittar vi på hur du distribuerar team med en grundläggande
 
 Som ett första steg rekommenderar vi att du konfigurerar principer för grundläggande principer för identitets- och enhetsåtkomst. Mer information finns i [Principrekommendationer för att skydda Teams-chattar, grupper och filer](../security/office-365-security/teams-access-policies.md).
 
-Vi rekommenderar även att du aktiverar grundläggande ATP-funktioner för att skydda mot skadlig programvara i dokument, bilagor och länkar. Vi rekommenderar att du aktiverar vart och ett av alternativen i tabellen nedan.
+Vi rekommenderar även att du aktiverar grundläggande Defender för Office 365-funktioner för att skydda mot skadlig programvara i dokument, bilagor och länkar. Vi rekommenderar att du aktiverar vart och ett av alternativen i tabellen nedan.
 
 |Alternativ|Information |
 |:------|:-----------|
-|ATP säkra bilagor för SPO, OneDrive och Teams|[Office 365 ATP säkra bilagor](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[Office 365 ATP för SharePoint, OneDrive och Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)|
-|ATP Säkra dokument|[Säkra dokument i Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
-|ATP Säkra länkar för Teams|[Office 365 säkra länkar i Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[Office 365 ATP säkra länkar](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
+|Säkra bilagor för SPO, OneDrive och Teams|[Säkra bifogade filer](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[Defender för Office 365 för SharePoint, OneDrive och Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)|
+|Säkra dokument|[Säkra dokument i Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
+|Säkra länkar för Teams|[Office 365 säkra länkar i Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[Säkra länkar](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
 
 ## <a name="teams-guest-sharing"></a>Gästdelning i Teams
 
@@ -51,7 +51,7 @@ Att ange inställningar för gäståtkomst i Teams
 
 1. Logga in på Administrationscenter för Microsoft 365 på [https://admin.microsoft.com](https://admin.microsoft.com).
 2. Klicka på **Visa alla** i det vänstra navigeringsfönstret.
-3. Under **Administrationscenter**klickar du på **Teams**.
+3. Under **Administrationscenter** klickar du på **Teams**.
 4. Expandera **Inställningar för hela organisationen** och klicka på **Gäståtkomst** i Teams Administrationscenter i vänstra navigeringsfönstret.
 5. Kontrollera att **Tillåt gäståtkomst i Teams** är inställt på **På**.
 6. Gör önskade ändringar i de ytterligare gästinställningarna och klicka sedan på **Spara**.
@@ -67,7 +67,7 @@ Om du vill minska risken för att oavsiktligt dela filer eller mappar med person
 
 Ändra standardlänken för delning
 1. Öppna [SharePoint Online Administrationscenter](https://admin.microsoft.com/sharepoint).
-2. Under **Principer**klickar du på **Delning**.
+2. Under **Principer** klickar du på **Delning**.
 3. Under **Fil- och mapplänkar** väljer du **Endast personer i organisationen**.
 4. Klicka på **Spara**.
 

@@ -2,7 +2,7 @@
 title: Administratörs inlämningar
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 'Administratörer kan läsa mer om hur du använder portalen för att skicka e-postmeddelanden, misstänkta nätfiske-meddelanden, skräp post och andra potentiellt skadligt meddelande, URL: er och filer till Microsoft för genomsökning i & den här gruppen.'
-ms.openlocfilehash: 1ca1dc5e740aa5aa03a4c8b0c138eadb55c08a20
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: be2fc8e41e3b53923b0297f30dfb102bbabd7489
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844650"
+ms.locfileid: "48877273"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Använd administratörs sändning för att skicka misstänkt skräp post, Phish, URL: er och filer till Microsoft
 

@@ -2,7 +2,7 @@
 title: Icke godkänd domän rapport i instrument panelen för e-postflöde
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig att använda den icke godkända domän rapporten i instrument panelen för e-postflöde i säkerhets & efterlevnad för att övervaka meddelanden från din lokala organisation där avsändarens domän inte är konfigurerad i Microsoft 365.
-ms.openlocfilehash: d05489ec4a6d670fc89b5d943b3e7061506b6fe8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 06acacb79c826cb465b3fd28086a7df9d64eabdc
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199331"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877723"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Icke godkänd domän rapport i Center för säkerhets &
 
@@ -35,7 +35,7 @@ Microsoft 365 kan begränsa dessa meddelanden om vi har data som visar att syfte
 
 Om du klickar på diagrammet i widgeten **icke godkänd domän** tas du till den **icke godkända domän** rapporten.
 
-Aktiviteten för alla berörda kopplingar visas som standard. Om du klickar på **Visa data för**kan du välja en specifik koppling i list rutan.
+Aktiviteten för alla berörda kopplingar visas som standard. Om du klickar på **Visa data för** kan du välja en specifik koppling i list rutan.
 
 Om du hovrar över en data punkt (dag) i diagrammet visas det totala antalet meddelanden för kopplingen.
 
@@ -49,7 +49,7 @@ Om du klickar på **Visa informations tabell** i en rapportvy visas följande in
 - **Namn på inkommande anslutning**
 - **Avsändningsdomän**
 - **Antal meddelanden**
-- **Exempel meddelanden**: meddelande-ID för ett urval av påverkade meddelanden.
+- **Exempel meddelanden** : meddelande-ID för ett urval av påverkade meddelanden.
 
 Om du klickar på **filter** i en detaljerad tabellvy kan du ange ett datum intervall med **start datum** och **slutdatum**.
 
@@ -61,7 +61,7 @@ När du markerar en rad i tabellen visas en utfällbar tabell med följande info
 - **Namn på inkommande anslutning**
 - **Avsändningsdomän**
 - **Antal meddelanden**
-- **Exempel meddelanden**: du kan klicka på **Visa exempel meddelanden** om du vill visa [meddelande spårnings](message-trace-scc.md) resultaten för ett prov av de påverkade meddelandena.
+- **Exempel meddelanden** : du kan klicka på **Visa exempel meddelanden** om du vill visa [meddelande spårnings](message-trace-scc.md) resultaten för ett prov av de påverkade meddelandena.
 
 ![Utfällda detaljer när du har markerat en rad i tabellvy för information i den icke godkända domän rapporten](../../media/mfi-non-accepted-domain-report-details-flyout.png)
 

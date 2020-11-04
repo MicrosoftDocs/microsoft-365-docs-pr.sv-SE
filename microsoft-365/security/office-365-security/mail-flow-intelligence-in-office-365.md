@@ -2,7 +2,7 @@
 title: Information om e-postflöde
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Administratörer kan läsa mer om fel koderna som är kopplade till meddelande leverans via kopplingar (kallas även för e-postflöde).
-ms.openlocfilehash: 0d73ea1fe64cda3c3f29f7bd437bba4e93f37529
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 461d9bfa91d88b8bbec52d5aad6ec7a2e534bc96
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198509"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877807"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>E-postflödesinformation i EOP
 
@@ -71,7 +71,7 @@ Vanligt vis betyder det att Microsoft 365 stötte på ett anslutnings fel när d
 
   - I [administrations centret för Exchange (UK)](https://docs.microsoft.com/Exchange/exchange-admin-center)inaktiverar eller tar du bort kopplingen som skickar e-post från Microsoft 365 till din lokala e-post miljö:
 
-    1. Gå till **e-postflödes** \> **kopplingar**i UK.
+    1. Gå till **e-postflödes** \> **kopplingar** i UK.
 
     2. Välj kopplingen med värdet **från** **Office 365** och värdet **till för** **din organisations e-postserver** och gör något av följande:
 

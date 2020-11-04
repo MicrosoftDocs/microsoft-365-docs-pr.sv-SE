@@ -2,7 +2,7 @@
 title: Skicka meddelanden till Microsoft för analys manuellt
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer och slutanvändare kan läsa mer om hur man skickar meddelanden (god e-post markerat som dålig eller dålig e-post) till Microsoft för analys.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6673dc7e7ac263ea9f734c002d0ffac410fadc07
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 68a0921f85e5b916cd53ebe84e4ea7d35e39967e
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202209"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877711"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Skicka meddelanden till Microsoft för analys manuellt
 
@@ -48,9 +48,9 @@ Om du får ett meddelande som skickas via skräp post filter som skulle ha ident
 
 1. Skapa ett nytt, tomt e-postmeddelande med någon av följande mottagare:
 
-   - **Skräp post**: `junk@office365.microsoft.com`
+   - **Skräp post** : `junk@office365.microsoft.com`
 
-   - **Nätfiske**: `phish@office365.microsoft.com`
+   - **Nätfiske** : `phish@office365.microsoft.com`
 
 2. Dra och släpp skräp post eller nätfiske till det nya meddelandet. Detta sparar skräp post-eller nät fiske meddelandet som en bifogad fil i det nya meddelandet. Kopiera och klistra inte in innehållet i meddelandet eller vidarebefordra det (vi behöver det ursprungliga meddelandet så att vi kan kontrol lera meddelande huvudena).
 

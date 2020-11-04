@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Befintliga Office 365-kunder måste skicka in en begäran innan tids gränsen för sitt land för att deras Microsoft 365 Services-data flyttas till deras nya geo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f8f25fcaf3e8beb59ca43ad260e2636cf0c4949
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: b6ad699830389ef405b005bf8675a2bd0fb4f20b
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361945"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877261"
 ---
 # <a name="how-to-request-your-data-move"></a>Hur du begär din dataflytt
 
@@ -44,14 +44,14 @@ Berättigade Microsoft 365-kunder kan begära migrering för företagets viktiga
 |Sydafrika  <br/> |25 juli 2019  <br/> |30 juni 2020  <br/> |
 |Schweiz, Liechtenstein  <br/> |Den 10 december 2019  <br/> |30 juni 2020  <br/> |
 |Norge  <br/> |15 april 2020  <br/> |Den 31 oktober 2020  <br/> |
-|Tyskland  <br/> |Disponera  <br/> |Disponera  <br/> |
+|Tyskland  <br/> |Den 1 november 2020  <br/> |Den 30 april 2021  <br/> |
 
 ## <a name="how-to-request-a-move"></a>Så här gör du för att begära en flytt
 
-Berättigade kunder kan se en sida i [administrations centret för Microsoft 365](https://aka.ms/365admin), vilket gör det möjligt för dem att begära att deras grundläggande kund uppgifter flyttas till deras nya data Center region.  
+Berättigade kunder kan se en sida i administrations centret för Microsoft 365, vilket gör det möjligt för dem att begära att deras grundläggande kund uppgifter flyttas till deras nya data Center region.  
   
-För att komma åt sidan i administrations centret för Microsoft 365, expandera **Inställningar**i navigerings fönstret till vänster och klicka sedan på **organisations inställningar**.
-Välj fliken **organisations profil**och välj sedan alternativet **data de**.
+För att komma åt sidan i administrations centret för Microsoft 365, expandera **Inställningar** i navigerings fönstret till vänster och klicka sedan på **organisations inställningar**.
+Välj fliken **organisations profil** och välj sedan alternativet **data de**.
   
 Du kommer inte att se det här avsnittet om klient organisationen inte är berättigad till Microsoft 365-flytt-programmet.  Om din organisation har data de krav och du måste begära migrering markerar du kryss rutan och sedan **Spara**.
   

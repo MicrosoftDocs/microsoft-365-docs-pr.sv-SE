@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Lär dig mer om Microsoft 365 multi-geo, hur multi-geo fungerar och vilka geo-platser som är tillgängliga för data lagring.
-ms.openlocfilehash: 1924141b86ba3e1c16e4760e0f40d61b6f47ce69
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a8eba731fac16e56ef66ac0a905de521dfa7a6c8
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694570"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877238"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Abonnemang för Microsoft 365 multi-geo
 
@@ -30,7 +30,7 @@ I en multi-geo-konfiguration består din Microsoft 365-klient av en central plat
 
 Här är några viktiga multi-geo-termer som hjälper dig att förstå de grundläggande begreppen i konfigurationen:
 
--   **Innehavare** – en organisations representation i Microsoft 365 som normalt har en eller flera domäner kopplade till sig (till exempel https://contoso.sharepoint.com) . 
+-   **Innehavare** – en organisations representation i Microsoft 365 som normalt har en eller flera domäner kopplade till sig (till exempel https://contoso.sharepoint.com) . 
 
 -   **Geo platser** – de geografiska platser som är tillgängliga för att hantera data i en Microsoft 365-klient organisation.
 
@@ -73,7 +73,7 @@ Om dina användare synkroniseras från ett lokalt Active Directory-system till A
 
 Administrationen av en multi-geo-klient organisation kan skilja sig från en icke-geo-klient organisation, så många av SharePoint-och OneDrive-inställningarna och-tjänsterna är multi-geo-medvetna. Vi rekommenderar att du granskar [administrationen av en multi-geo-miljö](administering-a-multi-geo-environment.md) innan du fortsätter med konfigurationen.
 
-Läs [användar upplevelsen i en TYPVÄRDE-geo-miljö](multi-geo-user-experience.md) för att få information om slutanvändarnas upplevelse i en multi-geo-miljö.
+Läs [användar upplevelse i en multi-geo-miljö](multi-geo-user-experience.md) för att få information om slutanvändarnas erfarenheter i en miljö med flera geo.
 
 Mer information om Teams Experience i ett Microsoft 365 multi-geo-innehavning finns i [Teams Experience i ett microsoft 365 OneDrive och SharePoint Online multi-geo-aktiveradt innehav](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo).
 

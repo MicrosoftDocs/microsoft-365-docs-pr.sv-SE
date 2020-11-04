@@ -2,7 +2,7 @@
 title: Auto-vidarebefordrade meddelanden insikt
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Administratörer kan lära sig mer om rapporten för automatiskt vidarebefordrade meddelanden i instrument panelen för e-postflöde i säkerhets & efterlevnad.
-ms.openlocfilehash: d4b772e6392e0af22e6bed475970f637ed03dcb1
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+ms.openlocfilehash: 01a094b8531672708fc024e8ed0c5833786dbb0c
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245953"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877795"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Automatiskt vidarebefordrade meddelanden är inblick i säkerhets & Compliance Center
 
@@ -31,14 +31,14 @@ De **automatiskt avvidarekopplade meddelandena** är inblick i [instrument panel
 
 När du klickar på antalet meddelanden i widgeten visas en utfällbar ruta som visar mer information om de automatiskt vidarebefordrade meddelandena:
 
-- **Automatiskt vidarebefordrade meddelanden genom metoder för vidarebefordran**:
+- **Automatiskt vidarebefordrade meddelanden genom metoder för vidarebefordran** :
 
   - **Regler för e-postflöde**
   - **Regler för Inkorgen**
-  - **Genom SMTP-vidarekoppling**: det här är automatisk vidarebefordran som administratörer kan konfigurera på en post låda enligt beskrivningen i [Konfigurera e-postvidarekoppling för en post låda](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
+  - **Genom SMTP-vidarekoppling** : det här är automatisk vidarebefordran som administratörer kan konfigurera på en post låda enligt beskrivningen i [Konfigurera e-postvidarekoppling för en post låda](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
   - En länk till [vidarekoppling](view-mail-flow-reports.md#forwarding-report) för mer information.
 
-- **Automatiskt vidarebefordrade meddelanden per domän och användare**:
+- **Automatiskt vidarebefordrade meddelanden per domän och användare** :
 
   - **De fem främsta domänerna vidarekopplas till**
   - **Nya domäner (förra veckan)**

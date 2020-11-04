@@ -2,7 +2,7 @@
 title: E-postflödeskarta
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om hur du använder översikten för e-postflöden i instrument panelen för e-postflöde i säkerhets & efterföljandekrav för att visualisera och spåra hur e-flöden kommer till och från sin organisation via kopplingar och utan att använda kopplingar.
-ms.openlocfilehash: 74cabb7f7b34be6248d18d71565c8a9729d7e38b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fc03f05db77c40dbf726692e6fb6069d587a5ffc
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199377"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877771"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Översikt över e-postflöde i säkerhets & efterlevnad
 
@@ -37,11 +37,11 @@ Om du klickar på widgeten **Koppla dokument flöden** tas du till **översikten
 
 Följande diagram är tillgängliga i rapportvyn:
 
-- **Visa data för: översikt**: det här är i stort sett en större vy av widgeten. Om du hovrar över en viss färg visas antalet meddelanden för den typen av koppling.
+- **Visa data för: översikt** : det här är i stort sett en större vy av widgeten. Om du hovrar över en viss färg visas antalet meddelanden för den typen av koppling.
 
   ![Vyn Översikt i rapporten e-postflödes karta](../../media/mfi-mail-flow-map-report-overview.png)
 
-- **Visa data för: detail**: den här vyn visar information om kopplingarna och mål domänerna. De översta avsändarna och mottagar domänerna visas och resten placeras i **andra**. Om du hovrar över en viss färg och ett avsnitt visas antalet meddelanden.
+- **Visa data för: detail** : den här vyn visar information om kopplingarna och mål domänerna. De översta avsändarna och mottagar domänerna visas och resten placeras i **andra**. Om du hovrar över en viss färg och ett avsnitt visas antalet meddelanden.
 
   ![Detaljvyn i rapporten dokument flödes karta](../../media/mfi-mail-flow-map-report-detail.png)
 

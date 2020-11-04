@@ -2,7 +2,7 @@
 title: Den främsta statusen för domän-e-postflöde
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,29 +13,29 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om hur du använder den främsta domänens e-postflödes status inblick i instrument panelen för e-postflöde i säkerhets & efterlevnad för att felsöka e-postproblem i samband med MX-poster i deras e-
-ms.openlocfilehash: 24922d6ae7d2ec50e3d9383631991cf46a818c05
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d4abc311e96df87894d5f059328f1a16a00190b8
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197531"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877519"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>Den främsta domänens e-postflödes status inblick i säkerhets & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Statusen för den **främsta domänens e-postflöde** inblickar i [instrument panelen för e-postflöden](mail-flow-insights-v2.md) i [säkerhets & Compliance Center](https://protection.office.com) ger dig den aktuella statusen för organisationens domäner i termer av e-postflöde. Denna inblick hjälper dig att identifiera och felsöka domäner som ***påverkar problem med e-postflöde*** (till exempel att det inte går att ta emot extern e-post), särskilt upphör att gälla för domänen eller domäner med felaktiga MX-poster.
+Statusen för den **främsta domänens e-postflöde** inblickar i [instrument panelen för e-postflöden](mail-flow-insights-v2.md) i [säkerhets & Compliance Center](https://protection.office.com) ger dig den aktuella statusen för organisationens domäner i termer av e-postflöde. Denna inblick hjälper dig att identifiera och felsöka domäner med * *_e-postflöde som påverkar_* _ problem (till exempel att det inte går att ta emot extern e-post), särskilt upphör att gälla för domänen eller domäner med felaktiga MX-poster.
 
 ![Flödes schema för bästa domän status i instrument panelen för e-postflöde i säkerhets & Compliance Center](../../media/mfi-top-domain-mail-flow-status-widget.png)
 
-När du klickar på **Visa information** i widgeten visas en utfällbar **domän status** som visar mer information om varje domän status:
+När du klickar på _ *Visa information* * i widgeten visas en utfällbar **domän status** som visar mer information om varje domän status:
 
 - **Domain**
 - **Föregående MX-post**
 - **Aktuell MX-post**
 - **Status för e-postmottagning**
-- **Domän status**: en grön bock markering anger den aktuella MX-posten (när du klickade på widgeten) matchar det värde som finns på posten och att domänen har fått e-post under de två timmarna.
+- **Domän status** : en grön bock markering anger den aktuella MX-posten (när du klickade på widgeten) matchar det värde som finns på posten och att domänen har fått e-post under de två timmarna.
 
   Ett rött X anger att MX-posten har ändrats och att domänen inte har fått något e-postmeddelande under de senaste 6 timmarna. Detta indikerar antagligen att din domän har upphört, eller att MX-posten har uppdaterats felaktigt. Kontrol lera med din domän registrator eller DNS-värd om domänen har upphört att gälla, eller om domänens MX-post är felaktig.
 
