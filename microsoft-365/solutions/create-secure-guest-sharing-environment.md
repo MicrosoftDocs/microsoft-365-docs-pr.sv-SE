@@ -15,13 +15,13 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
-description: I den här artikeln får du lära dig mer om vilka alternativ som finns för att skapa en säker gästdelningsmiljö i Microsoft 365.
-ms.openlocfilehash: 3ca7dba7c22f1eaa24f1285e42aa3f4caaf70b65
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+description: Få reda på mer om tillgängliga alternativ för att skapa en säker delningsmiljö för gäster i Microsoft 365 och ge gäståtkomst för bättre samarbete.
+ms.openlocfilehash: e9dcb55deb5fc7ecd4230fdbcc8da9f881e90481
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787576"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906769"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Skapa en säker miljö för gästdelning
 
@@ -51,15 +51,15 @@ I det här exemplet konfigurerar vi multifaktorautentisering för gäster genom 
 Konfigurera multifaktorautentisering för gäster
 
 1. Gå till [Principer för villkorstyrd åtkomst i Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
-2. På bladet för **Villkorsstyrd åtkomst | Principer** klickar du på **Ny princip** .
+2. På bladet för **Villkorsstyrd åtkomst | Principer** klickar du på **Ny princip**.
 3. I fältet **Namn** skriver du ett namn.
-4. Under **Tilldelningar** klickar du på **Användare och grupper** .
-5. I bladet **Användare och grupper** markerar du **Välj användare och grupper** , markerar kryssrutan **Alla gäster och externa användare** .
-6. Under **Tilldelningar** klickar du på **Molnappar eller åtgärder** .
+4. Under **Tilldelningar** klickar du på **Användare och grupper**.
+5. I bladet **Användare och grupper** markerar du **Välj användare och grupper** , markerar kryssrutan **Alla gäster och externa användare**.
+6. Under **Tilldelningar** klickar du på **Molnappar eller åtgärder**.
 7. Välj **alla program i molnet** på fliken **inkluderar** fliken **moln program eller-åtgärder** blad.
-8. Under **Åtkomstkontroller** klickar du på **Bevilja** .
-9. På bladet **Bevilja** markerar du kryssrutan **Kräv multifaktorautentisering** och klickar sedan på **Välj** .
-10. På bladet **Nytt** , under **Aktivera princip** , klickar du på **På** och sedan på **Skapa** .
+8. Under **Åtkomstkontroller** klickar du på **Bevilja**.
+9. På bladet **Bevilja** markerar du kryssrutan **Kräv multifaktorautentisering** och klickar sedan på **Välj**.
+10. På bladet **Nytt** , under **Aktivera princip** , klickar du på **På** och sedan på **Skapa**.
 
 Gästen måste då registrera sig för multifaktorautentisering för att de ska kunna komma åt delat innehåll, webbplatser eller team.
 
@@ -77,32 +77,32 @@ Skapa användningsvillkor för Azure AD
 
 1. Logga in på Azure som global administratör, säkerhetsadministratör eller administratör för villkorsstyrd åtkomst.
 2. Gå till [Användningsvillkor](https://aka.ms/catou).
-3. Klicka på **Nya villkor** .
+3. Klicka på **Nya villkor**.
 
    ![Skärmbild av inställningar för nya användningsvillkor för Azure AD](../media/azure-ad-guest-terms-of-use.png)
 
-4. Skriv ett **namn** och **visningsnamn** .
+4. Skriv ett **namn** och **visningsnamn**.
 6. För **Dokument med användningsvillkor** bläddrar du till den PDF-fil som du har skapat och väljer den.
 7. Välj språk för dokumentet med användningsvillkor.
-8. Ange **Kräv att användarna expanderar användningsvillkoren** som **På** .
-9. Under **Villkorsstyrd åtkomst** , i listan **Tvinga med mallar för princip för villkorsstyrd åtkomst** , väljer du **Skapa princip för villkorsstyrd åtkomst senare** .
-10. Klicka på **Skapa** .
+8. Ange **Kräv att användarna expanderar användningsvillkoren** som **På**.
+9. Under **Villkorsstyrd åtkomst** , i listan **Tvinga med mallar för princip för villkorsstyrd åtkomst** , väljer du **Skapa princip för villkorsstyrd åtkomst senare**.
+10. Klicka på **Skapa**.
 
 När du har skapat användningsvillkoren är nästa steg att skapa en princip för villkorsstyrd åtkomst som visar användningsvillkoren för gästanvändare.
 
 Skapa princip för villkorsstyrd åtkomst
 
 1. Gå till [Principer för villkorstyrd åtkomst i Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
-2. På bladet för **Villkorsstyrd åtkomst | Principer** klickar du på **Ny princip** .
-3. Skriv ett namn i rutan **Namn** .
-4. Under **Tilldelningar** klickar du på **Användare och grupper** .
-5. I bladet **Användare och grupper** markerar du **Välj användare och grupper** , markerar kryssrutan **Alla gäster och externa användare** .
-6. Under **Tilldelningar** klickar du på **Molnappar eller åtgärder** .
-7. På fliken **Inkludera** väljer du **Välj appar** och klickar sedan på **Välj** .
-8. På bladet **Välj** väljer du **Microsoft Teams** , **Office 365 SharePoint Online** och **Outlook Groups** och klickar sedan på **Välj** .
-9. Under **Åtkomstkontroller** klickar du på **Bevilja** .
-10. På bladet **Bevilja** väljer du **Användningsvillkor för gäster** och klickar sedan på **Välj** .
-11. På bladet **Nytt** , under **Aktivera princip** , klickar du på **På** och sedan på **Skapa** .
+2. På bladet för **Villkorsstyrd åtkomst | Principer** klickar du på **Ny princip**.
+3. Skriv ett namn i rutan **Namn**.
+4. Under **Tilldelningar** klickar du på **Användare och grupper**.
+5. I bladet **Användare och grupper** markerar du **Välj användare och grupper** , markerar kryssrutan **Alla gäster och externa användare**.
+6. Under **Tilldelningar** klickar du på **Molnappar eller åtgärder**.
+7. På fliken **Inkludera** väljer du **Välj appar** och klickar sedan på **Välj**.
+8. På bladet **Välj** väljer du **Microsoft Teams** , **Office 365 SharePoint Online** och **Outlook Groups** och klickar sedan på **Välj**.
+9. Under **Åtkomstkontroller** klickar du på **Bevilja**.
+10. På bladet **Bevilja** väljer du **Användningsvillkor för gäster** och klickar sedan på **Välj**.
+11. På bladet **Nytt** , under **Aktivera princip** , klickar du på **På** och sedan på **Skapa**.
 
 Första gången en gästanvändare försöker komma åt innehåll, ett team eller en webbplats i organisationen måste de acceptera villkoren för användning.
 
@@ -123,27 +123,27 @@ Skapa ett program
 
 1. Logga in på Azure-portalen och öppna sidan [Identitetsstyrning](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade).
 2. I den vänstra menyn klickar du på **Program**
-3. Klicka på **Nytt program** .
-4. Skriv ett **namn**  och **Beskrivning** .
-5. Klicka på **Skapa** .
+3. Klicka på **Nytt program**.
+4. Skriv ett **namn**  och **Beskrivning**.
+5. Klicka på **Skapa**.
 
 När programmet har skapats kan vi skapa en granskning av gäståtkomsten och koppla den till programmet.
 
 Konfigurera åtkomstgranskning av gästanvändare
 
 1. På sidan [Identitetsstyrning](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade) klickar du på **Åtkomstgranskningar** i den vänstra menyn.
-2. Klicka på **Ny åtkomstgranskning** .
+2. Klicka på **Ny åtkomstgranskning**.
 
    ![Skärmbild av inställningar för åtkomstgranskning i Azure AD](../media/azure-ad-create-access-review.png)
 
-3. Skriv ett namn i rutan **Namn** .
-4. För **Frekvens** väljer du **Varje kvartal** .
-5. För **Slut** väljer du **Aldrig** .
-6. För **Omfång** väljer du **Enbart gästanvändare** .
-7. Klicka på **Grupp** , markera de grupper som du vill ska ingå i åtkomstgranskningen och klicka sedan på **Välj** .
-8. Under **Program** klickar du på **Länka till program** .
+3. Skriv ett namn i rutan **Namn**.
+4. För **Frekvens** väljer du **Varje kvartal**.
+5. För **Slut** väljer du **Aldrig**.
+6. För **Omfång** väljer du **Enbart gästanvändare**.
+7. Klicka på **Grupp** , markera de grupper som du vill ska ingå i åtkomstgranskningen och klicka sedan på **Välj**.
+8. Under **Program** klickar du på **Länka till program**.
 9. På bladet **Välj ett program** väljer du **Program för granskning av gäståtkomst**
-10. Klicka på **Start** .
+10. Klicka på **Start**.
 
 En separat åtkomstgranskning skapas för varje grupp som du anger. Gruppägare för varje grupp kommer att få ett e-postmeddelande varje kvartal för att godkänna eller neka gäståtkomst till sina grupper.
 
@@ -164,30 +164,30 @@ För Microsoft 365 Grupper och Team gör du det med en princip för villkorsstyr
 Tillåta begränsad endast webb-åtkomst för grupper och team
 
 1. Gå till [Principer för villkorstyrd åtkomst i Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
-2. På bladet för **Villkorsstyrd åtkomst – Principer** klickar du på **Ny princip** .
-3. Skriv ett namn i rutan **Namn** .
-4. Under **Tilldelningar** klickar du på **Användare och grupper** .
-5. I bladet **Användare och grupper** markerar du **Välj användare och grupper** , markerar kryssrutan **Alla gäster och externa användare** .
-6. Under **Tilldelningar** klickar du på **Molnappar eller åtgärder** .
-7. På fliken **Inkludera** väljer du **Välj appar** och klickar sedan på **Välj** .
-8. På bladet **Välj** väljer du **Microsoft Teams** och **Outlook Groups** och klickar sedan på **Välj** .
-9. Under **Tilldelningar** klickar du på **Villkor** .
-10. På bladet **Villkor** klickar du på **Klientappar** .
-11. På bladet **Klientappar** klickar du på **Ja** för **Konfigurera** och väljer sedan inställningarna **Mobila appar och skrivbordsklienter** . **Exchange ActiveSync-klienter** och **Andra klienter** . Avmarkera kryssrutan **Webbläsare** .
+2. På bladet för **Villkorsstyrd åtkomst – Principer** klickar du på **Ny princip**.
+3. Skriv ett namn i rutan **Namn**.
+4. Under **Tilldelningar** klickar du på **Användare och grupper**.
+5. I bladet **Användare och grupper** markerar du **Välj användare och grupper** , markerar kryssrutan **Alla gäster och externa användare**.
+6. Under **Tilldelningar** klickar du på **Molnappar eller åtgärder**.
+7. På fliken **Inkludera** väljer du **Välj appar** och klickar sedan på **Välj**.
+8. På bladet **Välj** väljer du **Microsoft Teams** och **Outlook Groups** och klickar sedan på **Välj**.
+9. Under **Tilldelningar** klickar du på **Villkor**.
+10. På bladet **Villkor** klickar du på **Klientappar**.
+11. På bladet **Klientappar** klickar du på **Ja** för **Konfigurera** och väljer sedan inställningarna **Mobila appar och skrivbordsklienter**. **Exchange ActiveSync-klienter** och **Andra klienter**. Avmarkera kryssrutan **Webbläsare**.
 
     ![Skärmbild av inställningar för villkorstyrd åtkomst till klientappar i Azure AD](../media/azure-ad-conditional-access-client-mobile.png)
 
-12. Klicka på **Klar** .
-13. Under **Åtkomstkontroller** klickar du på **Bevilja** .
-14. På bladet **Bevilja** väljer du **Kräv att enheten är markerad som kompatibel** och **Kräv Hybrid Azure AD-kopplad enhet** .
-15. Under **För flera kontroller** väljer du **Begär en av de valda kontrollerna** och klickar sedan på **Välj** .
-16. På bladet **Nytt** , under **Aktivera princip** , klickar du på **På** och sedan på **Skapa** .
+12. Klicka på **Klar**.
+13. Under **Åtkomstkontroller** klickar du på **Bevilja**.
+14. På bladet **Bevilja** väljer du **Kräv att enheten är markerad som kompatibel** och **Kräv Hybrid Azure AD-kopplad enhet**.
+15. Under **För flera kontroller** väljer du **Begär en av de valda kontrollerna** och klickar sedan på **Välj**.
+16. På bladet **Nytt** , under **Aktivera princip** , klickar du på **På** och sedan på **Skapa**.
 
 Begränsa gäståtkomsten till endast SharePoint
 
-1. I [Administrationscenter för SharePoint](https://admin.microsoft.com/sharepoint) visar du **Principer** och klickar på **Behörighets kontroll** .
-2. Klicka på **Ohanterade enheter** .
-3. Markera kryssrutan **Tillåt begränsad åtkomst** bara för webbplatser, och klicka sedan på **Spara** .
+1. I [Administrationscenter för SharePoint](https://admin.microsoft.com/sharepoint) visar du **Principer** och klickar på **Behörighets kontroll**.
+2. Klicka på **Ohanterade enheter**.
+3. Markera kryssrutan **Tillåt begränsad åtkomst** bara för webbplatser, och klicka sedan på **Spara**.
 
 Observera att den här inställningen i administrationscentret för SharePoint skapar en princip med stöd för villkorstyrd åtkomst i Azure AD.
 
@@ -198,17 +198,17 @@ Genom att kräva att gästanvändare ska autentiseras med jämna mellanrum kan d
 Konfigurera en princip för sessionstidsgräns för gäster
 
 1. Gå till [Principer för villkorstyrd åtkomst i Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
-2. På bladet för **Villkorsstyrd åtkomst – Principer** klickar du på **Ny princip** .
-3. I rutan **Namn** skriver du *Sessionstidsgräns för gäst* .
-4. Under **Tilldelningar** klickar du på **Användare och grupper** .
-5. I bladet **Användare och grupper** markerar du **Välj användare och grupper** , markerar kryssrutan **Alla gäster och externa användare** .
-6. Under **Tilldelningar** klickar du på **Molnappar eller åtgärder** .
-7. På fliken **Inkludera** väljer du **Välj appar** och klickar sedan på **Välj** .
-8. På bladet **Välj** väljer du **Microsoft Teams** , **Office 365 SharePoint Online** och **Outlook Groups** och klickar sedan på **Välj** .
-9. Under **Åtkomstkontroller** klickar du på **Session** .
-10. På bladet **Session** väljer du **Inloggningsfrekvens** .
-11. Välj **1** och **dagar** för tidsperiod och klicka sedan på **Välj** .
-12. På bladet **Nytt** , under **Aktivera princip** , klickar du på **På** och sedan på **Skapa** .
+2. På bladet för **Villkorsstyrd åtkomst – Principer** klickar du på **Ny princip**.
+3. I rutan **Namn** skriver du *Sessionstidsgräns för gäst*.
+4. Under **Tilldelningar** klickar du på **Användare och grupper**.
+5. I bladet **Användare och grupper** markerar du **Välj användare och grupper** , markerar kryssrutan **Alla gäster och externa användare**.
+6. Under **Tilldelningar** klickar du på **Molnappar eller åtgärder**.
+7. På fliken **Inkludera** väljer du **Välj appar** och klickar sedan på **Välj**.
+8. På bladet **Välj** väljer du **Microsoft Teams** , **Office 365 SharePoint Online** och **Outlook Groups** och klickar sedan på **Välj**.
+9. Under **Åtkomstkontroller** klickar du på **Session**.
+10. På bladet **Session** väljer du **Inloggningsfrekvens**.
+11. Välj **1** och **dagar** för tidsperiod och klicka sedan på **Välj**.
+12. På bladet **Nytt** , under **Aktivera princip** , klickar du på **På** och sedan på **Skapa**.
 
 ## <a name="create-a-sensitive-information-type-for-a-highly-sensitive-project"></a>Skapa en typ av känslig information för ett strikt känsligt projekt.
 
@@ -218,13 +218,13 @@ Du kan skapa anpassade typer av känslig information som hjälper dig att hanter
 
 Skapa en typ av känslig information
 
-1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com) går du till vänster navigeringsfält och expanderar **Klassificering** och klickar sedan på **Typer av känslig information** .
-2. Klicka på **Skapa** .
-3. För **Namn** och **Beskrivning** skriver du **Projekt Saturnus** och klickar sedan på **Nästa** .
-4. Klicka på **Lägg till ett element** .
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com) går du till vänster navigeringsfält och expanderar **Klassificering** och klickar sedan på **Typer av känslig information**.
+2. Klicka på **Skapa**.
+3. För **Namn** och **Beskrivning** skriver du **Projekt Saturnus** och klickar sedan på **Nästa**.
+4. Klicka på **Lägg till ett element**.
 5. I listan **Identifiera innehåll som innehåller** väljer du **Nyckelord** och skriver *Projekt Saturnus* i rutan sökordsrutan.
-6. Klicka på **Nästa** och sedan på **Slutför** .
-7. Om du tillfrågas om du vill testa typen av känslig information klickar du på **Nej** .
+6. Klicka på **Nästa** och sedan på **Slutför**.
+7. Om du tillfrågas om du vill testa typen av känslig information klickar du på **Nej**.
 
 ### <a name="more-information"></a>Mer information
 
@@ -237,22 +237,22 @@ Om du använder känslighetsetiketter i din organisation kan du automatiskt anv�
 Skapa en princip för automatisk etikettmärkning
 
 1. Öppna [administrationscentret för Microsoft 365 Efterlevnad](https://compliance.microsoft.com).
-2. I det vänstra navigeringsfältet klickar du på **Informationsskydd** .
-3. I fliken **Automatisk etikettmärkning** klickar du på **Skapa princip för automatisk etikettmärkning** .
-4. På sidan **väljer du den information som du vill att etiketten ska tillämpas på** väljer du **Anpassad** och klickar på **Nästa** .
-5. Skriv ett namn och en beskrivning för principen och klicka på **Nästa** .
-6. På sidan **Välj platser där du vill använda etikett** aktiverar du **SharePoint-webbplatser** och klickar på **Välj webbplatser** .
-7. Lägg till URL: erna för de webbplatser där du vill aktivera Automatisk etikettmärkning och klickar på **Klar** .
-8. Klicka på **Nästa** .
-9. Välj **Vanliga regler** på sidan **Konfigurera vanliga eller avancerade regler** och klicka på **Nästa** .
-10. På sidan **Definiera regler för innehåll på alla platser** klickar du på **Ny regel** .
-11. Ge regeln ett namn på sidan **Ny regel** klicka på **Lägg till villkor** och klicka sedan på **Innehållet har typer av känslig information** .
-12. Klicka på **Lägg till** , klicka på **Typer av känslig information** , välj vilka typer av känslig information du vill använda, klicka på **Lägg till** och klicka sedan på **Spara** .
-13. Klicka på **Nästa** .
-14. Klicka på **Välj en etikett** , välj etiketten som du vill använda och klicka sedan **Lägg till** .
-15. Klicka på **Nästa** .
-16. Lämna principen i simuleringsläge och klicka på **Nästa** .
-17. Klicka på **Skapa princip** och välj sedan **Klar** .
+2. I det vänstra navigeringsfältet klickar du på **Informationsskydd**.
+3. I fliken **Automatisk etikettmärkning** klickar du på **Skapa princip för automatisk etikettmärkning**.
+4. På sidan **väljer du den information som du vill att etiketten ska tillämpas på** väljer du **Anpassad** och klickar på **Nästa**.
+5. Skriv ett namn och en beskrivning för principen och klicka på **Nästa**.
+6. På sidan **Välj platser där du vill använda etikett** aktiverar du **SharePoint-webbplatser** och klickar på **Välj webbplatser**.
+7. Lägg till URL: erna för de webbplatser där du vill aktivera Automatisk etikettmärkning och klickar på **Klar**.
+8. Klicka på **Nästa**.
+9. Välj **Vanliga regler** på sidan **Konfigurera vanliga eller avancerade regler** och klicka på **Nästa**.
+10. På sidan **Definiera regler för innehåll på alla platser** klickar du på **Ny regel**.
+11. Ge regeln ett namn på sidan **Ny regel** klicka på **Lägg till villkor** och klicka sedan på **Innehållet har typer av känslig information**.
+12. Klicka på **Lägg till** , klicka på **Typer av känslig information** , välj vilka typer av känslig information du vill använda, klicka på **Lägg till** och klicka sedan på **Spara**.
+13. Klicka på **Nästa**.
+14. Klicka på **Välj en etikett** , välj etiketten som du vill använda och klicka sedan **Lägg till**.
+15. Klicka på **Nästa**.
+16. Lämna principen i simuleringsläge och klicka på **Nästa**.
+17. Klicka på **Skapa princip** och välj sedan **Klar**.
 
 När principen har skapats och en användare skriver ”Projekt Saturnus” i ett dokument, kommer principen för automatisk etikettmärkning att automatiskt tillämpa den specificerade etiketten när filen söks igenom.
 
@@ -267,25 +267,25 @@ Du kan använda [Dataförlustskydd (DLP](https://docs.microsoft.com/microsoft-36
 Skapa en DLP-regel
 
 1. I Microsoft 365 Efterlevnadscenter, gå till sidan [Dataförlustskydd](https://compliance.microsoft.com/datalossprevention).
-2. Klicka på **Skapa princip** .
-3. Välj **Anpassad** och klicka på **Nästa** .
-4. Skriv ett namn för principen och klicka på **Nästa** .
-5. På **Platser för att tillämpa principen** Stäng av alla inställningar utom **SharePoint-webbplatser** och **OneDrive-konton** och klicka sedan på **Nästa** .
-6. På sidan **Definiera principinställningar** klickar du på **Nästa** .
+2. Klicka på **Skapa princip**.
+3. Välj **Anpassad** och klicka på **Nästa**.
+4. Skriv ett namn för principen och klicka på **Nästa**.
+5. På **Platser för att tillämpa principen** Stäng av alla inställningar utom **SharePoint-webbplatser** och **OneDrive-konton** och klicka sedan på **Nästa**.
+6. På sidan **Definiera principinställningar** klickar du på **Nästa**.
 7. På sidan **Anpassa avancerade DLP-regler** klickar du på **Skapa regel** och anger ett namn på regeln.
-8. Under **Villkor** klickar du på **Lägg till villkor** och väljer **Innehållet har** .
-9. Om du klickar på **Lägg till** väljer du **Känslighetsetiketter** väljer de etiketter du vill använda och klickar på **Lägg till** .
+8. Under **Villkor** klickar du på **Lägg till villkor** och väljer **Innehållet har**.
+9. Om du klickar på **Lägg till** väljer du **Känslighetsetiketter** väljer de etiketter du vill använda och klickar på **Lägg till**.
 
    ![Skärmbild av alternativ för villkor, typer av känsliga information, känslighetsetiketter och kvarhållningsetiketter.](../media/limit-accidental-exposure-dlp-conditions.png)
 
-10. Under **Åtgärder** klickar du på **Lägg till en åtgärd** och väljer **Begränsa åtkomst eller kryptera innehållet i Microsoft 365 platser** .
-11. Välj kryssrutan **Begränsa åtkomst eller kryptera innehållet på Microsoft 365 platser** och välj sedan alternativet **Bara personer utanför din organisation** .
+10. Under **Åtgärder** klickar du på **Lägg till en åtgärd** och väljer **Begränsa åtkomst eller kryptera innehållet i Microsoft 365 platser**.
+11. Välj kryssrutan **Begränsa åtkomst eller kryptera innehållet på Microsoft 365 platser** och välj sedan alternativet **Bara personer utanför din organisation**.
 
       ![Skärmbild av åtgärdsalternativ för DLP-regler](../media/dlp-remove-guest-access-sensitive-files.png)
 
-12. Klicka på **Spara** och sedan på **Nästa** .
-13. Välj testalternativ och klicka på **Nästa** .
-14. Klicka på **Skicka** och klicka sedan på **Klart** .
+12. Klicka på **Spara** och sedan på **Nästa**.
+13. Välj testalternativ och klicka på **Nästa**.
+14. Klicka på **Skicka** och klicka sedan på **Klart**.
 
 Det är viktigt att tänka på att principen inte tar bort åtkomst om gästen är medlem på webbplatsen eller i teamet som helhet. Om du planerar att ha strikt känsliga dokument på en webbplats eller i ett team med gästmedlemmar, kan du överväga att använda [privata kanaler i Teams](https://support.microsoft.com/office/de3e20b0-7494-439c-b7e5-75899ebe6a0e) och bara tillåta medlemmarna i din organisation i de privata kanalerna.
 

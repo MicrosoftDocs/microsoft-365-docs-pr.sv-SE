@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Använd säkerhets- och efterlevnadstjänsterna i Microsoft 365 för att skydda appar, data och enheter för distansarbetare.
-ms.openlocfilehash: 7607f3945d2e3c4e057162296df94dce4c611dbe
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 6c6c30e320068a6e97cf5fd2cd81b4bfeff1c49e
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681474"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845234"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Steg 3: Distribuera säkerhet och efterlevnad för distansarbetare
 
@@ -49,9 +49,9 @@ Skydda dina program och data med de här säkerhetsfunktionerna i Microsoft 365.
 
 | Resurs eller funktion | Beskrivning | Licensiering |
 |:-------|:-----|:-------|
-| Office 365 ATP | Skydda dina Microsoft 365-appar och data – t.ex. e-postmeddelanden, Office-dokument och samarbetsverktyg – från angrepp. <br><br> Office ATP samlar in och analyserar signaler från dina appar för identifiering, undersökning och korrigering av säkerhetsrisker och skyddar organisationen mot skadliga hot som finns i e-postmeddelanden, länkar (URL:er) och samarbetsverktyg. | Microsoft 365 E3 eller E5 | 
+| Microsoft Defender för Office 365 | Skydda dina Microsoft 365-appar och data – t.ex. e-postmeddelanden, Office-dokument och samarbetsverktyg – från angrepp. <br><br> Microsoft Defender för Office 365 samlar in och analyserar signaler från dina appar för identifiering, undersökning och korrigering av säkerhetsrisker och skyddar organisationen mot skadliga hot som finns i e-postmeddelanden, länkar (URL:er) och samarbetsverktyg. | Microsoft 365 E3 eller E5 | 
 | Skydd mot skadlig programvara | ‎Windows Defender Antivirus och Device Guard tillhandahåller enhetsbaserat skydd mot skadlig programvara. <br><br> SharePoint‎ Online söker automatiskt igenom filuppladdningar efter känd skadlig programvara. ‎<br><br> Exchange Online Protection‎ (‎EOP‎) skyddar molnpostlådor. | Microsoft 365 E3 eller E5 |
-| Microsoft Defender Avancerat skydd | Skydda din organisations enheter mot cyberhot och dataintrång och identifiera, undersök och reagera på avancerade hot. | Microsoft 365 E5 |
+| Microsoft Defender för Endpoint | Skydda din organisationsenheter mot cyberhot och dataintrång och identifiera, undersök och reagera på avancerade hot. | Microsoft 365 E5 |
 | Cloud App Security | Skydda dina molnbaserade tjänster – både Microsoft 365 och andra SaaS-appar – mot angrepp. | Microsoft 365 E5 eller individuella Cloud App Security-licenser |
 | Azure AD Identity Protection  | Automatisera identifiering och åtgärder för identitetsbaserade risker. <br><br>Skapa riskbaserade principer för villkorsstyrd åtkomst för att kräva multifaktorautentisering (MFA) för riskfyllda inloggningar. | Microsoft 365 E5 eller E3 med Azure AD Premium P2-licenser |
 ||||
