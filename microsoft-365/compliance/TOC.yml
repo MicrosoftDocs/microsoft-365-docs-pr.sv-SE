@@ -266,6 +266,8 @@
           href: dlp-sensitivity-label-as-condition.md
         - name: Använda principer för skydd mot dataförlust för appar som inte kommer från Microsoft-molnet
           href: dlp-use-policies-non-microsoft-cloud-apps.md
+        - name: Villkor och undantag för DLP-princip (förhandsversion)
+          href: dlp-conditions-and-exceptions.md
 - name: Hantera informationsstyrning
   items:
     - name: Styr dina data
