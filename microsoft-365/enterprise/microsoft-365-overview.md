@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Ger en introduktion till komponenterna, planer och distributionssökvägar för Microsoft 365 för företag.
-ms.openlocfilehash: 0cee9752ae21e08831b6a3df856452a7ca6aec71
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 0916fa97daec166a7bae8b19e3c9efbd693f4874
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655977"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846970"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Översikt över Microsoft 365 för företag
 
@@ -44,7 +44,7 @@ Microsoft 365 för företag finns i tre planer.
 |Plannamn|Kapaciteter|
 |---|---|
 |E3|Kom åt Microsoft 365-kärnprodukter och funktioner för att förbättra produktiviteten på arbetsplatsen och förbättra innovationen på ett säkert sätt.|
-|E5|Få tillgång till Microsoft 365 senaste produkter och funktioner. Här ingår avancerade hotskydd, säkerhetsverktyg och samarbetsverktyg. Det här abbonemanget Innehåller alla E3:s-funktioner samt avancerade verktyg för säkerhet, röst och dataanalys.|
+|E5|Få tillgång till Microsoft 365 senaste produkter och funktioner. Här ingår Defender för Office 365, säkerhetsverktyg och samarbetsverktyg. Det här abbonemanget Innehåller alla E3:s-funktioner samt avancerade verktyg för säkerhet, röst och dataanalys.|
 |F3|Kommunicera med dina medarbetare i frontlinjen via syftesbyggda verktyg och resurser som de kan använda för att göra det möjligt för dem att fungera på bästa sätt.|
 |||
 
@@ -85,12 +85,12 @@ Med den här affischen på två sidor kan du snabbt inventera din befintliga inf
 
 [Windows 7](https://aka.ms/win7upgrade)upphörde med sin support den **14 januari 2020**.
 
-Dessa produkter nådde slutet av stöd på **13 oktober 2020**:
+Dessa produkter nådde slutet av stöd på **13 oktober 2020** :
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)
 
-[SharePoint Server 2010](upgrade-from-sharepoint-2010.md) kommer att nå slutet av supporte**13 april 2021**.
+[SharePoint Server 2010](upgrade-from-sharepoint-2010.md) kommer att nå slutet av supporte **13 april 2021**.
 
 En visuell sammanfattning av alternativen att uppgradera, migrera och flytta till molnet för dessa produkter finns på [affischen supportens upphörande](../downloads/Office2010Windows7EndOfSupport.pdf).
 

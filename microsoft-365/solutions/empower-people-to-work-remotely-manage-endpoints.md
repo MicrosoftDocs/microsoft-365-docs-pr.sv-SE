@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Använd Microsoft Endpoint Manager för att hantera dina hanteringsenheter, datorer och andra slutpunkter.
-ms.openlocfilehash: 72aa26c50f5d3c20409382f19d8beabb5d290023
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 291c1111bbfaf9a549c0d2ac22dab450a32a6a96
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681486"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845270"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Steg 4. Distribuera slutpunktshantering för enheter, datorer och andra slutpunkter
 
@@ -44,7 +44,7 @@ Mer information finns i det här [översikt över Microsoft Intune](https://docs
 
 ## <a name="configuration-manager"></a>Configuration Manager
 
-Configuration Manager är en lokal hanteringslösning för hantering av stationära datorer, servrar och bärbara datorer som finns på nätverket eller är internet-baserade. Använd Configuration Manager för att distribuera appar, programvaruuppdateringar och operativ system. Du kan också övervaka efterlevnad, läsa och åtgärda klienter i realtid och mycket mer. Du kan moln-aktivera den för att integrera med Intune, Azure Active Directory, Microsoft Defender Avancerat skydd och andra molntjänster. 
+Configuration Manager är en lokal hanteringslösning för hantering av stationära datorer, servrar och bärbara datorer som finns på nätverket eller är internet-baserade. Använd Configuration Manager för att distribuera appar, programvaruuppdateringar och operativ system. Du kan också övervaka efterlevnad, läsa och åtgärda klienter i realtid och mycket mer. Du kan moln-aktivera den för att integrera med Intune, Azure Active Directory, Microsoft Defender för Endpoint och andra molntjänster. 
 
 Mer information finns i den här [översikt över Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction).
 

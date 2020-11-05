@@ -410,6 +410,8 @@
               href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
             - name: Principer för användarrapporteringar
               href: ./office-365-security/user-submission.md
+            - name: Användartaggar i Office 365 ATP
+              href: ./office-365-security/user-tags.md
             - name: 'Aktivera ATP för SharePoint, OneDrive och Microsoft Teams'
               href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
             - name: Använda DKIM för att validera utgående e-post
@@ -487,6 +489,8 @@
           items:
             - name: Använda hotspårare
               href: ./office-365-security/threat-trackers.md
+            - name: Visa aviseringar
+              href: ../compliance/alert-policies.md
             - name: Smarta rapporter och insikter i Säkerhets- och efterlevnadscenter
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: Aktivera tillägget för att rapportera meddelande

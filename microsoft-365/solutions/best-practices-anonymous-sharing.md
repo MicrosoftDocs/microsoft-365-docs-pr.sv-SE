@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: I den här artikeln får du lära dig mer om metodtips för att dela filer och mappar med oautentiserade användare.
-ms.openlocfilehash: 18587fc6a718955cd5a752954b614c4d6fa5ee22
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: afbd2cf5e2e522228987941977fd53b8562aa9d7
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779266"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845378"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Metodtips för att dela filer och mappar med oautentiserade användare
 
@@ -42,19 +42,19 @@ Ange ett utgångsdatum för Alla-länkar i organisationen
 
 1. Öppna [SharePoint Online Administrationscenter](https://admin.microsoft.com/sharepoint).
 2. Klicka på **Delning** i det vänstra navigeringsfönstret.
-3. Markera kryssrutan **Länkarna måste upphöra att gälla inom så här många dagar** under **Välj behörigheter och giltighetsalternativ för Alla-länkar** .</br>
+3. Markera kryssrutan **Länkarna måste upphöra att gälla inom så här många dagar** under **Välj behörigheter och giltighetsalternativ för Alla-länkar**.</br>
    ![Skärmbild av inställningar för utgången av Alla-länkar för SharePoint på organisationsnivå](../media/sharepoint-organization-anyone-link-expiration.png)
-4. Skriv ett antal dagar i rutan och klicka sedan på **Spara** .
+4. Skriv ett antal dagar i rutan och klicka sedan på **Spara**.
 
 Ange ett utgångsdatum för Alla-länkar på en särskild webbplats
 
 1. Öppna [SharePoint Online Administrationscenter](https://admin.microsoft.com/sharepoint).
-2. I det vänstra navigeringsfältet expanderar du **Webbplatser** och klickar sedan på **Aktiva webbplatser** .
-3. Välj webbplatsen som du vill ändra och klicka sedan på **Delning** .
-4. Under **Avancerade inställningar för alla länkar** kan du under **Sista giltighetstiden för alla länkar** avmarkera kryssrutan **Samma som inställningen på organisationsnivå** .</br>
+2. I det vänstra navigeringsfältet expanderar du **Webbplatser** och klickar sedan på **Aktiva webbplatser**.
+3. Välj webbplatsen som du vill ändra och klicka sedan på **Delning**.
+4. Under **Avancerade inställningar för alla länkar** kan du under **Sista giltighetstiden för alla länkar** avmarkera kryssrutan **Samma som inställningen på organisationsnivå**.</br>
    ![Skärmbild av inställningar för utgången av Alla-länkar för SharePoint på webbplatsnivå](../media/sharepoint-organization-anyone-link-expiration-site.png)
 5. Välj **Dessa länkar måste upphöra inom detta antal dagar** alternativ och ange ett antal dagar i rutan.
-6. Klicka på **Spara** .
+6. Klicka på **Spara**.
 
 Tänk på att när en *Alla* -länk går ut kan filen eller mappen delas igen med en ny *Alla* -länk.
 
@@ -64,7 +64,7 @@ Du kan ange *vem som helst* för länkens utgång för en specifik OneDrive med 
 
 *Alla* -länkar för en fil tillåter som standard personer att redigera filen, och *Alla* -länkar för en mapp tillåter personer att redigera och visa filer samt att ladda upp nya filer till mappen. Du kan ändra de här behörigheterna till endast visning för filer och mappar oberoende av varandra.
 
-Om du vill tillåta oautentiserad delning, men är orolig för att oautentiserade personer ska ändra organisationens innehåll, bör du överväga att ställa in behörigheterna för filer och mappar till **Visa** .
+Om du vill tillåta oautentiserad delning, men är orolig för att oautentiserade personer ska ändra organisationens innehåll, bör du överväga att ställa in behörigheterna för filer och mappar till **Visa**.
 
 Ange behörigheter för Alla-länkar i organisationen
 
@@ -77,14 +77,14 @@ Med *Alla* -länkar inställda på **Visa** kan användare fortfarande dela file
 
 ## <a name="set-default-link-type-to-only-work-for-people-in-your-organization"></a>Ställa in standardlänktypen till att endast fungera för personer i organisationen
 
-När *Alla* -delning aktiveras för organisationen anges normalt delningslänken till **Alla** . Det kan vara praktiskt för användarna, men kan öka risken för oavsiktlig oautentiserad delning. Om en användare glömmer att ändra länktypen vid delning av ett känsligt dokument, kan det hända att de oavsiktligt skapar en delningslänk som inte kräver autentisering.
+När *Alla* -delning aktiveras för organisationen anges normalt delningslänken till **Alla**. Det kan vara praktiskt för användarna, men kan öka risken för oavsiktlig oautentiserad delning. Om en användare glömmer att ändra länktypen vid delning av ett känsligt dokument, kan det hända att de oavsiktligt skapar en delningslänk som inte kräver autentisering.
 
 Du kan minska den här risken genom att ändra standardlänkinställningen till en länk som bara fungerar för personer i organisationen. Användare som vill dela med oautentiserade personer måste då specifikt välja det alternativet.
 
 Ange standarddelningslänken för filer och mappar för organisationen
 1. Öppna [SharePoint Online Administrationscenter](https://admin.microsoft.com/sharepoint).
 2. Klicka på **Delning** i det vänstra navigeringsfönstret.
-3. Under **Fil- och mapplänkar** väljer du **Endast personer i organisationen** .
+3. Under **Fil- och mapplänkar** väljer du **Endast personer i organisationen**.
 
    ![Skärmbild av inställning för standardlänktyp för SharePoint](../media/sharepoint-default-sharing-link-company-link.png)
 
@@ -92,13 +92,13 @@ Ange standarddelningslänken för filer och mappar för organisationen
 
 Ange standarddelningslänken för filer och mappar för den särskilda webbplatsen.
 1. Öppna [SharePoint Online Administrationscenter](https://admin.microsoft.com/sharepoint).
-2. I det vänstra navigeringsfältet expanderar du **Webbplatser** och klickar sedan på **Aktiva webbplatser** .
-3. Välj webbplatsen som du vill ändra och klicka sedan på **Delning** .
-4. Avmarkera kryssrutan **Samma som organisationsnivå** under **Standardtyp av delningslänk** .
+2. I det vänstra navigeringsfältet expanderar du **Webbplatser** och klickar sedan på **Aktiva webbplatser**.
+3. Välj webbplatsen som du vill ändra och klicka sedan på **Delning**.
+4. Avmarkera kryssrutan **Samma som organisationsnivå** under **Standardtyp av delningslänk**.
 
    ![Skärmbild av inställning för standardlänktyp för SharePoint på webbplatsnivå](../media/sharepoint-organization-anyone-link-permissions-site.png)
 
-5. Välj alternativet **Bara personer i organisationen** och klicka på **Spara** .
+5. Välj alternativet **Bara personer i organisationen** och klicka på **Spara**.
 
 ## <a name="prevent-unauthenticated-sharing-of-sensitive-content"></a>Förhindra oautentiserad delning av känsligt innehåll
 
@@ -106,33 +106,33 @@ Du kan använda [Dataförlustskydd (DLP](https://docs.microsoft.com/microsoft-36
 
 Skapa en DLP-regel
 1. I Microsoft 365 Efterlevnadscenter, gå till sidan [Dataförlustskydd](https://compliance.microsoft.com/datalossprevention).
-2. Klicka på **Skapa princip** .
-3. Välj **Anpassad** och klicka på **Nästa** .
-4. Skriv ett namn för principen och klicka på **Nästa** .
-5. På **Platser för att tillämpa principen** Stäng av alla inställningar utom **SharePoint-webbplatser** och **OneDrive-konton** och klicka sedan på **Nästa** .
-6. På sidan **Definiera principinställningar** klickar du på **Nästa** .
+2. Klicka på **Skapa princip**.
+3. Välj **Anpassad** och klicka på **Nästa**.
+4. Skriv ett namn för principen och klicka på **Nästa**.
+5. På **Platser för att tillämpa principen** Stäng av alla inställningar utom **SharePoint-webbplatser** och **OneDrive-konton** och klicka sedan på **Nästa**.
+6. På sidan **Definiera principinställningar** klickar du på **Nästa**.
 7. På sidan **Anpassa avancerade DLP-regler** klickar du på **Skapa regel** och anger ett namn på regeln.
-8. Under **Villkor** klickar du på **Lägg till villkor** och väljer **Innehållet har** .
+8. Under **Villkor** klickar du på **Lägg till villkor** och väljer **Innehållet har**.
 9. Klicka på **Lägg till** och välj vilken typ av information som du vill förhindra oautentiserad delning för.
 
    ![Skärmbild av alternativ för villkor,typer av känsliga information, känslighetsetiketter och kvarhållningsetiketter.](../media/limit-accidental-exposure-dlp-conditions.png)
 
-10. Under **Åtgärder** klickar du på **Lägg till en åtgärd** och väljer **Begränsa åtkomst eller kryptera innehållet i Microsoft 365 platser** .
-11. Välj kryssrutan **Begränsa åtkomst eller kryptera innehållet på Microsoft 365 platser** och välj sedan **Bara personer som har fått åtkomst till innehållet via alternativen för “Alla som har länken "** .
+10. Under **Åtgärder** klickar du på **Lägg till en åtgärd** och väljer **Begränsa åtkomst eller kryptera innehållet i Microsoft 365 platser**.
+11. Välj kryssrutan **Begränsa åtkomst eller kryptera innehållet på Microsoft 365 platser** och välj sedan **Bara personer som har fått åtkomst till innehållet via alternativen för “Alla som har länken "**.
 
       ![Skärmbild av åtgärdsalternativ för DLP-regler](../media/limit-accidental-exposure-dlp-anyone-links.png)
 
-12. Klicka på **Spara** och sedan på **Nästa** .
-13. Välj testalternativ och klicka på **Nästa** .
-14. Klicka på **Skicka** och klicka sedan **Klart** .
+12. Klicka på **Spara** och sedan på **Nästa**.
+13. Välj testalternativ och klicka på **Nästa**.
+14. Klicka på **Skicka** och klicka sedan **Klart**.
 
 ## <a name="protect-against-malicious-files"></a>Skydda mot skadliga filer
 
-Om du tillåter anonyma användare att ladda upp filer ökar risken för att någon laddar upp en skadlig fil. I Microsoft 365 kan du använda funktionen för *säkra bifogade filer* i avancerat skydd för att automatiskt söka igenom uppladdade filer och sätta filer som kan vara osäkra i karantän.
+Om du tillåter anonyma användare att ladda upp filer ökar risken för att någon laddar upp en skadlig fil. I Microsoft 365 kan du använda funktionen för *säkra bifogade filer* i Defender för Office 365 för att automatiskt söka igenom uppladdade filer och sätta filer som kan vara osäkra i karantän.
 
 Aktivera säkra bifogade filer
 1. Öppna sidan [ATP-säkra bifogade filer](https://protection.office.com/safeattachmentv2) i Säkerhets- och Efterlevnadscenter.
-2. Klicka på **Globala inställningar** .
+2. Klicka på **Globala inställningar**.
 3. Aktivera ATP för SharePoint, OneDrive och Microsoft Teams.
 
    ![Skärmbild av inställningen för säkra bifogade filer i Säkerhets- och efterlevnadscenter](../media/safe-attachments-setting.png)
@@ -148,13 +148,13 @@ Om du använder känslighetsetiketter i administrationscentret för Microsoft 36
 Lägga till en sidfot i en fil med en etikett
 
 1. Öppna [administrationscentret för Microsoft 365 Efterlevnad](https://compliance.microsoft.com).
-2. Under **Lösningar** klickar du på **Informationsskydd** .
-3. Klicka på den etikett som du vill använda för att lägga till en sidfot och klicka sedan på **Redigera etikett** .
+2. Under **Lösningar** klickar du på **Informationsskydd**.
+3. Klicka på den etikett som du vill använda för att lägga till en sidfot och klicka sedan på **Redigera etikett**.
 4. Klicka på fliken **Nästa** för att nå **Märkning av innehåll** och sätt sedan **på** märkning av innehållet.
-5. Markera kryssrutan för den typ av text som du vill lägga till och klicka sedan på **Anpassa text** .
-6. Skriv den text du vill lägga till i dina dokument, markera de textalternativ som du vill använda och klicka sedan på **Spara** .</br>
+5. Markera kryssrutan för den typ av text som du vill lägga till och klicka sedan på **Anpassa text**.
+6. Skriv den text du vill lägga till i dina dokument, markera de textalternativ som du vill använda och klicka sedan på **Spara**.</br>
    ![Skärmbild av inställningar för innehållsmärkning för en känslighetsetikett](../media/content-marking-for-anonymous-sharing.png)
-7. Gå till slutet av guiden genom att klicka på **Nästa** och klicka sedan på **Spara etikett** .
+7. Gå till slutet av guiden genom att klicka på **Nästa** och klicka sedan på **Spara etikett**.
 
 När du har aktiverat innehållsmärkning för etiketten läggs den text som du angett till i Office-dokument när en användare använder etiketten.
 

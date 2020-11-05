@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Administratörer kan läsa mer om de skydd mot förfalskning som finns tillgängliga i Exchange Online Protection (EOP) och som kan hjälpa dig att minska riskerna för nätfiske från falska avsändare och domäner.
-ms.openlocfilehash: 8ec81c5032c4e3a0d0e556c37dd293b13e382b05
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 631c38a49b3e1fa5217545449c522ccc9cf0d913
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446281"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844422"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Skydd mot förfalskning i EOP
 
@@ -39,13 +39,13 @@ När det gäller att skydda sina användare tar Microsoft hot om nätfiske på a
 
 Här följer de förfalskningsskyddsmetoder som finns tillgängliga i EOP:
 
-- **Förfalskningsinformation**: granska falska meddelanden från avsändare i interna och externa domäner samt tillåt eller blockera avsändarna. Mer information finns i [Konfigurera förfalskningsinformation i Microsoft 365](learn-about-spoof-intelligence.md).
+- **Förfalskningsinformation** : granska falska meddelanden från avsändare i interna och externa domäner samt tillåt eller blockera avsändarna. Mer information finns i [Konfigurera förfalskningsinformation i Microsoft 365](learn-about-spoof-intelligence.md).
 
-- **Principer för skydd mot nätfiske**: Med principen för skydd mot nätfiske i EOP kan du aktivera eller inaktivera förfalskningsinformation, aktivera eller inaktivera icke autentiserad avsändarinformation i Outlook samt ange åtgärder för blockerade falska avsändare (placera i skräppostmappen eller i karantän). Avancerade principer för skydd mot nätfiske som är tillgängliga i Office 365 Avancerat skydd (Office 365 ATP) innehåller även inställningar för skydd mot obehörig personifiering (skyddade avsändare och domäner), inställningar för postlådeinformation och avancerade justerbara nätfisketrösklar. Mer information finns i [Principer för skydd mot nätfiske i Microsoft 365](set-up-anti-phishing-policies.md).
+- **Principer för skydd mot nätfiske** : Med principen för skydd mot nätfiske i EOP kan du aktivera eller inaktivera förfalskningsinformation, aktivera eller inaktivera icke autentiserad avsändarinformation i Outlook samt ange åtgärder för blockerade falska avsändare (placera i skräppostmappen eller i karantän). Avancerade principer för skydd mot nätfiske som är tillgängliga i Microsoft Defender för Office 365 innehåller även inställningar för skydd mot obehörig personifiering (skyddade avsändare och domäner), inställningar för postlådeinformation och avancerade justerbara nätfisketrösklar. Mer information finns i [Principer för skydd mot nätfiske i Microsoft 365](set-up-anti-phishing-policies.md).
 
-- **E-postautentisering**: en integrerad del av allt förfalskningsskydd är användningen av e-postautentisering (även kallat e-postverifiering) genom SPF-, DKIM- och DMARC-poster i DNS. Du kan konfigurera dessa poster för dina domäner så att mål-e-postsystemen kan kontrollera giltigheten i meddelanden som gör anspråk på att komma från avsändare i dina domäner. För inkommande meddelanden kräver Microsoft 365 autentisering av e-post för avsändardomäner. Mer information finns i [E-postautentisering i Microsoft 365](email-validation-and-authentication.md).
+- **E-postautentisering** : en integrerad del av allt förfalskningsskydd är användningen av e-postautentisering (även kallat e-postverifiering) genom SPF-, DKIM- och DMARC-poster i DNS. Du kan konfigurera dessa poster för dina domäner så att mål-e-postsystemen kan kontrollera giltigheten i meddelanden som gör anspråk på att komma från avsändare i dina domäner. För inkommande meddelanden kräver Microsoft 365 autentisering av e-post för avsändardomäner. Mer information finns i [E-postautentisering i Microsoft 365](email-validation-and-authentication.md).
 
-Från och med oktober 2018 är skydd mot förfalskning tillgängligt i EOP. Dessförinnan fanns skydd mot förfalskning endast tillgängligt i organisationer med Office 365 ATP.
+Från och med oktober 2018 är skydd mot förfalskning tillgängligt i EOP.
 
 EOP analyserar och blockerar meddelanden som inte kan autentiseras med kombinationen av standardmetoder för e-postautentisering och metoder för avsändaromdöme.
 
@@ -55,13 +55,13 @@ EOP analyserar och blockerar meddelanden som inte kan autentiseras med kombinati
 
 Förfalskade meddelanden har följande två negativa konsekvenser för användare:
 
-- **Falska meddelanden lurar användare**: Ett falskt meddelande kan lura en användare att klicka på en länk och lämna ut sina autentiseringsuppgifter, ladda ned skadlig kod eller svara på ett meddelande med känsligt innehåll (även kallat för business email compromise (BEC) – kompromettering av företags-e-post).
+- **Falska meddelanden lurar användare** : Ett falskt meddelande kan lura en användare att klicka på en länk och lämna ut sina autentiseringsuppgifter, ladda ned skadlig kod eller svara på ett meddelande med känsligt innehåll (även kallat för business email compromise (BEC) – kompromettering av företags-e-post).
 
   Följande är ett exempel på ett nätfiskemeddelande med den falska avsändaren msoutlook94@service.outlook.com:
 
   ![Nätfiskemeddelande som imiterar service.outlook.com](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
 
-  Det här meddelandet kom inte från service.outlook.com, men rubrikfältet **Från** förfalskades så att det ger intryck av att göra det. Det här var ett försök att lura mottagaren att klicka på **Ändra lösenords**-länken och uppge sina autentiseringsuppgifter.
+  Det här meddelandet kom inte från service.outlook.com, men rubrikfältet **Från** förfalskades så att det ger intryck av att göra det. Det här var ett försök att lura mottagaren att klicka på **Ändra lösenords** -länken och uppge sina autentiseringsuppgifter.
 
   Följande meddelande är ett exempel på BEC (business email compromise) som använder den falska e-postdomänen contoso.com:
 
@@ -69,7 +69,7 @@ Förfalskade meddelanden har följande två negativa konsekvenser för användar
 
   Meddelandet ser äkta ut men avsändaren är i själva verket falsk.
 
-- **Användare förväxlar riktiga meddelanden med falska**: även användare som känner till nätfiske kan ha svårt att se skillnaderna mellan riktiga och falska meddelanden.
+- **Användare förväxlar riktiga meddelanden med falska** : även användare som känner till nätfiske kan ha svårt att se skillnaderna mellan riktiga och falska meddelanden.
 
   Följande meddelande är ett exempel på en faktisk lösenordsåterställning från Microsofts säkerhetskonto:
 
@@ -81,7 +81,7 @@ Förfalskade meddelanden har följande två negativa konsekvenser för användar
 
 Microsoft skiljer mellan två olika typer av falska meddelanden:
 
-- **Förfalskning inom organisationen (“intra-org”)**: kallas även för _“self-to-self”_-förfalskning. Till exempel:
+- **Förfalskning inom organisationen (“intra-org”)** : kallas även för _“self-to-self”_ -förfalskning. Till exempel:
 
   - Avsändaren och mottagaren finns i samma domän:
     > Från: chris@contoso.com <br/> Till: michelle@contoso.com
@@ -104,7 +104,7 @@ Microsoft skiljer mellan två olika typer av falska meddelanden:
 
   - SFTY är meddelandets säkerhetsnivå. 9 anger nätfiske, .11 anger förfalskning inom organisationen.
 
-- **Förfalskningar mellan domäner**: avsändarens och mottagarens domäner skiljer sig åt och har ingen relation sinsemellan (kallas även externa domäner). Till exempel:
+- **Förfalskningar mellan domäner** : avsändarens och mottagarens domäner skiljer sig åt och har ingen relation sinsemellan (kallas även externa domäner). Till exempel:
     > Från: chris@contoso.com <br/> Till: michelle@tailspintoys.com
 
   Meddelanden som inte klarar [sammansatt autentisering](email-validation-and-authentication.md#composite-authentication) på grund av förfalskning mellan domäner innehåller följande värden i meddelandehuvudet:
@@ -125,7 +125,7 @@ Mer information om DMARC finns i [Använda DMARC för att validera e-post i Micr
 
 EOP-organisationer kan använda **falska identifieringar** rapporter i instrument panelen rapporter i säkerhets och efterlevnadscenter. Mer information finns i [Rapport om falska identifieringar](view-email-security-reports.md#spoof-detections-report).
 
-Office 365 ATP-organisationen kan använda Hotutforskaren i Säkerhets- och efterlevnadscenter för att visa information om nätfiskeförsök. Mer information finns i [Undersökning av hot och svar i Microsoft 365](office-365-ti.md).
+Microsoft Defender för Office 365-organisationen kan använda Hotutforskaren i Säkerhets- och efterlevnadscenter för att visa information om nätfiskeförsök. Mer information finns i [Undersökning av hot och svar i Microsoft 365](office-365-ti.md).
 
 ## <a name="problems-with-anti-spoofing-protection"></a>Problem med förfalskningsskydd
 
