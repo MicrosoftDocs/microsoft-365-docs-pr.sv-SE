@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Administratörer kan läsa mer om insikter och rapporter som är tillgängliga i instrument panelen för e-postflöde i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d252b9d898d4ee5a0df854a871f821c2b02bb482
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: f7781dca48e1eae4716dbe6c7c3b40da4bae0cd8
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877783"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920014"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>E-postflödesinsikter i Säkerhets- och efterlevnadscenter
 
@@ -66,13 +66,12 @@ Instrument panelen för e-postflöde är tillgänglig för medlemmar i följande
 
 - **[Exchange-administratör](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** i Azure Active Directory.
 
-- **Flödes administratör** i säkerhets & regelefterlevnad: om en medlem i den här roll gruppen inte är medlem i roll grupperna global administratör eller Exchange-administratör bör du tänka på följande:
-
+- **Flow-administratör** i säkerhets & Compliance Center. Om kontot inte är medlem i roll grupperna organisations hantering eller Exchange-administratör bör du tänka på följande:
   - Användaren måste logga in på säkerhets & Compliance Center direkt vid <https://protection.office.com> .
   - Användaren har bara Skriv behörighet i instrument panelen för e-postflöde.
   - Användaren har inte till gång till administrations centret för Microsoft 365.
 
-Mer information om behörigheter i säkerhets & Compliance Center finns i [behörigheter i säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md) och [ge användarna åtkomst till säkerhets & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
+Mer information om behörigheter finns i [behörigheter i säkerhets & efterlevnad](permissions-in-the-security-and-compliance-center.md) för att [ge användarna åtkomst till säkerhets & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Här hittar du instrument panelen för e-postflöde
 

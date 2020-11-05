@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: bfb58cb043f2bc641245814c41e389ddcdbfdefa
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 3dae9f208f5bb08d694322eb9f7cff35986930da
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842422"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920496"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Vanliga frågor och svar när du aktiverar Microsoft 365 Defender
 
@@ -42,8 +42,8 @@ Instruktioner om hur du aktiverar tjänsten finns [i Aktivera Microsoft 365 Defe
 
 Kunder med följande icke-E5 licenser kan använda Microsoft 365 Defender:
 
-- Microsoft Defender för slut punkt
-- Microsoft Defender för identitet
+- Microsoft Defender för Endpoint
+- Microsoft Defender for Identity
 - Microsoft Cloud App Security
 - Defender för Office 365 (abonnemang 2)
  
@@ -59,7 +59,7 @@ För att optimera din Microsoft 365 Defender-upplevelse rekommenderar vi att du 
 Microsoft 365 Defender väljer automatiskt en optimal plats för data centret där konsoliderade data behandlas och lagras. Om du har Microsoft Defender för slut punkt väljer den platsen som används av Defender för slut punkten.
 
 >[!NOTE]
->Microsoft Defender för slut punkt är automatiskt bestämmelser i EU-datacenter när de är aktiverade genom Azure Defender *. Microsoft 365 Defender tillhandahåller automatiskt samma EU-datacentertjänster för kunder som har etablerat Microsoft Defender för slut punkter på det här sättet. 
+>Microsoft Defender för slut punkt tillhandahåller automatiskt bestämmelser i EU-datacenter när de aktive ras via Azure Defender. Microsoft 365 Defender tillhandahåller automatiskt samma EU-datacentertjänster för kunder som har etablerat Microsoft Defender för slut punkter på det här sättet. 
 
 Data Center platsen visas innan och efter det att tjänsten har etablerats på inställnings sidan för Microsoft 365 Defender ( **inställningar > Microsoft 365 Defender** ). Om du föredrar att använda en annan data Center plats väljer du **behöver hjälp?** i Microsoft 365 säkerhets Center för att kontakta Microsofts support.
 

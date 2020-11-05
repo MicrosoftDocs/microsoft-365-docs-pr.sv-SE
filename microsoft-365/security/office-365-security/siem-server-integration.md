@@ -17,12 +17,12 @@ ms.custom:
 - SIEM
 - seo-marvel-apr2020
 description: Få en översikt över säkerhets information och SIEM Server integration med Microsoft 365-molntjänster och-program
-ms.openlocfilehash: 0e582333615d11c500b114225435903cea386ade
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 17e21d19463187744afe855b2304ac71956545d2
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846406"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919770"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Integrering av säkerhets information och Event Management (SIEM) med Microsoft 365-tjänster och-program
 
@@ -53,7 +53,7 @@ En SIEM-Server kan ta emot data från en mängd olika Microsoft 365-tjänster oc
 |Microsoft 365-tjänsten eller-programmet|SIEM-Server data/metoder|Resurser för att få mer information|
 |---|---|---|
 |[Microsoft Defender för Office 365](office-365-atp.md)|Gransknings loggar|[SIEM integrering med Microsoft Defender för Office 365](siem-integration-with-office-365-ti.md)|
-|[Microsoft Defender för slut punkt](https://docs.microsoft.com/windows/security/threat-protection/)|HTTPS-slutpunkt med Azure värd <br/>REST API|[Dra aviseringar till dina SIEM-verktyg](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
+|[Microsoft Defender för Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)|HTTPS-slutpunkt med Azure värd <br/>REST API|[Dra aviseringar till dina SIEM-verktyg](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Logg integrering|[SIEM integrering med säkerhet för Microsoft Cloud App](https://docs.microsoft.com/cloud-app-security/siem)|
 |
 
@@ -70,6 +70,6 @@ Kontrol lera att gransknings loggning är aktiverat innan du konfigurerar SIEM.
 
 ## <a name="more-resources"></a>Fler resurser
 
-[Integrera säkerhetslösningar i Azure Defender *](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
+[Integrera säkerhetslösningar i Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
 
 [Integrera Microsoft Graph-säkerhetsfunktionerna med en SIEM](https://docs.microsoft.com/graph/security-integration)

@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dcb7997c8c248c2b4e7d16902b6ebdd7756ccd0b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f73c6b010677cdc481655d1d5310872fd1a99126
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846634"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920520"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Program övervakning och rapportering i säkerhets Center för Microsoft 365
 
@@ -65,10 +65,10 @@ Riskfaktorerna börjar med allmän information, till exempel program utgivaren. 
 
 ## <a name="monitor-health-for-infrastructure-workloads"></a>Övervaka hälsa för infrastruktur arbets belastningar
 
-**Infrastruktur hälsa** visar hälso status varningar för infrastruktur arbets belastning i Azure Defender *.
+**Infrastruktur hälsa** visar hälso status aviseringar för infrastruktur arbets belastning i Azure Defender.
 
-Azure Defender * ger enhetlig säkerhets hantering och Defender för Office 365 i lokala och moln arbets belastningar. Du kan samla in, söka efter och analysera säkerhets data från olika källor, bland annat brand väggar och andra partner lösningar.
+Azure Defender innehåller enhetlig säkerhets hantering och Defender för Office 365 i lokala och moln arbets belastningar. Du kan samla in, söka efter och analysera säkerhets data från olika källor, bland annat brand väggar och andra partner lösningar.
 
-Mer information finns i [dokumentationen för Azure Defender *](https://docs.microsoft.com/azure/security-center/).
+Mer information finns i [dokumentationen för Azure Defender](https://docs.microsoft.com/azure/security-center/).
 
 ![Infrastruktur hälso kort](../../media/infrastructure-health.png)

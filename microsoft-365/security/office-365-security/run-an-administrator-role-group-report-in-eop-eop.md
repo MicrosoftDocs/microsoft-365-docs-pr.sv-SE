@@ -13,13 +13,13 @@ localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan läsa mer om hur man kör en administratörs grupp rapport i fristående Exchange Online Protection (EOP). Den här rapporten loggar när en administratör lägger till eller tar bort medlemmar från administratörs roll grupper, loggar EOP varje gång.
-ms.openlocfilehash: f2f3e32a818825d14c02b2bbffdc136e82f83013
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Administratörer kan läsa mer om hur man kör en administratörs grupp rapport i fristående Exchange Online Protection (EOP). Den här rapporten loggar när en administratör lägger till eller tar bort medlemmar från administratörs roll grupper.
+ms.openlocfilehash: 95b216b41d1c83ba36bcc00e1f571e08c8bd1f73
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200487"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920626"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Köra en administratörsrapport för rollgrupp i fristående EOP
 
@@ -34,24 +34,24 @@ När du kör en rapport i administratörs gruppen för administratörer i admini
 
 - Om du vill öppna administrations centret för Exchange går du till [administrations Center för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Specifikt måste du ha rollen gransknings loggar eller skrivskyddade loggar, som är tilldelad till ComplianceManagement, i (globala administratörer) och SecurityAdministrator roll grupper som standard. Mer information finns i [behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd UK för att ändra listan över medlemmar i roll grupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Specifikt måste du ha rollen gransknings loggar eller View-Only gransknings loggar som är tilldelad till ComplianceManagement, i (globala administratörer) och SecurityAdministrator roll grupper som standard. Mer information finns i [behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd UK för att ändra listan över medlemmar i roll grupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Information om tangent bords gen vägar som kan gälla för procedurerna i det här avsnittet finns i kortkommandon [för administrations centret för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Information om kortkommandon som kan gälla för procedurerna i den här artikeln finns i kortkommandon [för administrations centret för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Har du problem? Be om hjälp i [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.
 
 ## <a name="use-the-eac-to-run-an-administrator-role-group-report"></a>Använda rapporten UK för att köra en administratörs roll
 
-Kör rapporten administratörs grupp för att hitta ändringarna av roll grupperna för hantering i organisationen inom en viss tidsram.
+Kör rapporten administratörs grupp för att hitta ändringarna i roll grupperna för hantering inom en viss tids period.
 
-1. Gå till granskning i **överensstämmelse hantering** i UK \> **Auditing**och välj sedan **kör en administratörs grupp rapport för administratörer**.
+1. Gå till granskning i **överensstämmelse hantering** i UK \> **Auditing** och välj sedan **kör en administratörs grupp rapport för administratörer**.
 
 2. I sidan **Sök efter ändringar av gruppen Administratörer** som öppnas konfigurerar du följande inställningar:
 
-   - **Start datum** och **slutdatum**: Ange ett datum intervall. Som standard söker rapporten efter ändringar som gjorts i administratörs roll grupper under de senaste två veckorna.
+   - **Start datum** och **slutdatum** : Ange ett datum intervall. Som standard söker rapporten efter ändringar som gjorts i administratörs roll grupper under de senaste två veckorna.
 
-   - **Välj roll grupper**: som standard genomsöks alla roll grupper. Om du vill filtrera resultaten efter specifika roll grupper klickar du på **Välj roll grupper**. I dialog rutan som visas väljer du en roll grupp och klickar på **Lägg till >**. Upprepa det här steget så många gånger som behövs och klicka sedan på **OK** när du är klar.
+   - **Välj roll grupper** : som standard genomsöks alla roll grupper. Om du vill filtrera resultaten efter specifika roll grupper klickar du på **Välj roll grupper**. I dialog rutan som visas väljer du en roll grupp och klickar på **Lägg till >**. Upprepa det här steget så många gånger som behövs och klicka sedan på **OK** när du är klar.
 
 3. När du är klar klickar du på **Sök**.
 
@@ -72,7 +72,6 @@ För att avgöra om en användare har lagts till eller tagits bort måste du jä
 I det här exemplet utförde administratörs användar kontot följande ändringar:
 
 - I 2/06/2018 La de in användaren tonip.
-
 - På 2/19/2018 har de tagit bort användaren pilarp.
 
 ## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>Använda fristående Exchange Online PowerShell för att söka efter Gransknings logg poster
@@ -90,15 +89,11 @@ Search-AdminAuditLog - Cmdlets <cmdlet 1, cmdlet 2, ...> -Parameters <parameter 
 
 I det här exemplet utförs en sökning efter alla gransknings loggar med följande villkor:
 
-- **Start datum**: 08/04/2018
-
-- **Slutdatum**: 10/03/2018
-
-- **Användar-ID**: Davids, Chris Kima
-
-- **Cmdlet**: **set-Mailbox**
-
-- **Parametrar**: _ProhibitSendQuota_, _ProhibitSendReceiveQuota_, _IssueWarningQuota_, _MaxSendSize_, _MaxReceiveSize_
+- **Start datum** : 08/04/2018
+- **Slutdatum** : 10/03/2018
+- **Användar-ID** : `davids` , `chrisd` , `kima`
+- **Cmdlet** : **set-Mailbox**
+- **Parametrar** : _ProhibitSendQuota_ , _ProhibitSendReceiveQuota_ , _IssueWarningQuota_ , _MaxSendSize_ , _MaxReceiveSize_
 
 ```PowerShell
 Search-AdminAuditLog -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,ProhibitSendReceiveQuota,IssueWarningQuota,MaxSendSize,MaxReceiveSize -StartDate 08/04/2018 -EndDate 10/03/2018 -UserIds davids,chrisd,kima
@@ -106,25 +101,23 @@ Search-AdminAuditLog -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,Prohibit
 
 I det här exemplet söker du efter ändringar som gjorts i en viss post låda. Det är användbart om du felsöker eller om du behöver ange information för en undersökning. Följande kriterier används:
 
-- **Start datum**: 05/01/2018
-
-- **Slutdatum**: 10/03/2018
-
-- **Objekt-ID**: contoso.com/users/DavidS
+- **Start datum** : 05/01/2018
+- **Slutdatum** : 10/03/2018
+- **Objekt-ID** : contoso.com/users/DavidS
 
 ```PowerShell
 Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso.com/Users/DavidS
 ```
 
-Om dina sökningar returnerar många logg poster rekommenderar vi att du använder proceduren i **använda Exchange Online PowerShell för att söka efter poster för gransknings logg och skickar resultat till en mottagare** längre ned i det här avsnittet. Proceduren i avsnittet skickar en XML-fil som en e-postbilaga till de mottagare som du anger, vilket gör att du enkelt kan extrahera de data du är intresse rad av.
+Om dina sökningar returnerar många logg poster rekommenderar vi att du använder proceduren i **använda Exchange Online PowerShell för att söka efter poster för gransknings logg och skickar resultat till en mottagare** längre ned i den här artikeln. Proceduren i avsnittet skickar en XML-fil som en e-postbilaga till de mottagare som du anger, vilket gör att du enkelt kan extrahera de data du är intresse rad av.
 
 Detaljerad information om syntax och parametrar finns i [sökAdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog).
 
 ### <a name="view-details-of-audit-log-entries"></a>Visa information om Gransknings logg poster
 
-Cmdleten **search-AdminAuditLog** returnerar fälten som beskrivs i [gransknings loggens innehåll](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents). För de fält som returneras av cmdleten, två fält, **CmdletParameters** och **ModifiedProperties**, innehåller ytterligare information som inte visas som standard.
+Cmdleten **search-AdminAuditLog** returnerar fälten som beskrivs i [gransknings loggens innehåll](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents). För de fält som returneras av cmdleten, två fält, **CmdletParameters** och **ModifiedProperties** , innehåller ytterligare information som inte visas som standard.
 
-Om du vill visa innehållet i fälten **CmdletParameters** och **ModifiedProperties** följer du stegen nedan. Eller så kan du använda proceduren i **använda Exchange Online PowerShell för att söka efter poster för gransknings logg och skicka resultat till en mottagare** senare i det här avsnittet för att skapa en XML-fil.
+Om du vill visa innehållet i fälten **CmdletParameters** och **ModifiedProperties** följer du stegen nedan. Eller så kan du använda proceduren i **använda Exchange Online PowerShell för att söka efter poster för gransknings logg och skicka resultat till en mottagare** längre fram i den här artikeln för att skapa en XML-fil.
 
 I den här proceduren används följande koncept:
 
@@ -134,21 +127,21 @@ I den här proceduren används följande koncept:
 
 1. Välj de villkor du vill söka efter, kör **Sök-AdminAuditLog** cmdlet och lagra resultatet i en variabel med hjälp av följande kommando.
 
-    ```PowerShell
-    $Results = Search-AdminAuditLog <search criteria>
-    ```
+   ```PowerShell
+   $Results = Search-AdminAuditLog <search criteria>
+   ```
 
 2. Varje post för gransknings logg sparas som ett mat ris element i variabeln `$Results` . Du kan välja ett mat ris element genom att ange dess mat ris element index. Mat ris element index börjar med noll (0) för det första mat ris elementet. Om du till exempel vill hämta femte mat ris elementet, som har index 4, använder du följande kommando.
 
-    ```PowerShell
-    $Results[4]
-    ```
+   ```PowerShell
+   $Results[4]
+   ```
 
 3. Föregående kommando returnerar den loggpost som är lagrad i mat ris element 4. Använd följande kommandon för att visa innehållet i fälten **CmdletParameters** och **ModifiedProperties** för den här logg posten.
 
-    ```PowerShell
-    $Results[4].CmdletParameters
-    $Results[4].ModifiedProperties
-    ```
+   ```PowerShell
+   $Results[4].CmdletParameters
+   $Results[4].ModifiedProperties
+   ```
 
 4. Om du vill visa innehållet i fälten **CmdletParameters** eller **ModifiedParameters** i en annan loggpost ändrar du mat ris element indexet.

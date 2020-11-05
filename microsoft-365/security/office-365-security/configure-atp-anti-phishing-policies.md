@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur du skapar, ändrar och tar bort de avancerade AntiPhishing-principer som är tillgängliga i organisationer med Microsoft Defender för Office 365.
-ms.openlocfilehash: 9e07107c302f83b71a97517b11e71eac81f84f6b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: ecc68a8dc050a5f08c6982b023861e0ea8976775
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845930"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920662"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Konfigurera AntiPhishing-principer i Microsoft Defender för Office 365
 
@@ -159,9 +159,9 @@ Använd följande procedurer för att ändra anti-nätfiske-principer: en ny pri
 
      - **E-post adress** :
 
-        - Klicka i rutan och bläddra igenom listan med användare som ska markeras.
-        - Klicka i rutan och börja skriva för att filtrera listan och välja en användare.
-        - Om du vill ta bort en post klickar du på **ta bort** ![ ikonen Ta bort ](../../media/scc-remove-icon.png) .
+       - Klicka i rutan och bläddra igenom listan med användare som ska markeras.
+       - Klicka i rutan och börja skriva för att filtrera listan och välja en användare.
+       - Om du vill ta bort en post klickar du på **ta bort** ![ ikonen Ta bort ](../../media/scc-remove-icon.png) .
 
      - **Namn** : det här värdet fylls i baserat på e-postadressen du valde, men du kan ändra det.
 
@@ -170,15 +170,15 @@ Använd följande procedurer för att ändra anti-nätfiske-principer: en ny pri
      Om du vill redigera en befintlig post markerar du den skyddade användaren i listan.
 
      > [!NOTE]
-     > Du kan ange högst 60 användare i fältet säkerhets & efterlevnad eller i PowerShell.
-       
+     > Du kan ha högst 60 användare i alla nät fiske principer. Med andra ord kan du ha 60-skyddade användare i en princip, 12 skyddade användare i 5 principer etc.
+
    - **Lägg till domäner att skydda** : Konfigurera en eller båda av följande inställningar:
 
      - **Inkludera automatiskt de domäner jag äger** : standardvärdet är **inaktiverat**. Aktivera den genom att dra den till **på**.
      - **Inkludera anpassade domäner** : standardvärdet är **inaktiverat**. Om du vill aktivera funktionen drar du växlings knappen till **på på** och anger sedan domän namnet (till exempel contoso.com) i rutan **Lägg till domäner** , trycker på RETUR och upprepar efter behov.
 
      > [!NOTE]
-     > Du kan ange högst 50 domäner i säkerhets & efterföljandekrav eller i PowerShell.
+     > Du kan ha högst 50 domäner i alla nät fiske principer. Med andra ord kan du ha 50-skyddade användare i en princip, 10 skyddade användare i 5 principer osv.
 
    - **Åtgärder** : Klicka på **Redigera**
 
@@ -193,12 +193,12 @@ Använd följande procedurer för att ändra anti-nätfiske-principer: en ny pri
 
      - **Om e-post skickas av en domänkontrollant** : Konfigurera en av följande åtgärder för meddelanden där den falska avsändaren finns i en av de skyddade domänerna som du har angett i **Lägg till domäner för att skydda** :
 
-     - **Tillämpa inte någon åtgärd**
-     - **Omdirigera meddelanden till andra e-postadresser**
-     - **Flytta meddelandet till mappen skräp post**
-     - **Sätt i karantän meddelandet**
-     - **Leverera meddelandet och lägga till andra adresser på raden Hemlig kopia**
-     - **Ta bort meddelandet innan det levereras**
+       - **Tillämpa inte någon åtgärd**
+       - **Omdirigera meddelanden till andra e-postadresser**
+       - **Flytta meddelandet till mappen skräp post**
+       - **Sätt i karantän meddelandet**
+       - **Leverera meddelandet och lägga till andra adresser på raden Hemlig kopia**
+       - **Ta bort meddelandet innan det levereras**
 
    - Klicka på **Aktivera säkerhets tips för personifiering** och konfigurera något av följande inställningar:
 
@@ -267,7 +267,6 @@ Använd följande procedurer för att ändra anti-nätfiske-principer: en ny pri
 
      - Du kan klicka på **Redigera** i varje avsnitt för att gå tillbaka till relevant sida.
      - Du kan aktivera eller **inaktivera** följande inställningar **direkt på den** här sidan:
-
        - **Aktivera skydd mot förfalskning**
        - **Aktivera ej autentiserad avsändare**
 

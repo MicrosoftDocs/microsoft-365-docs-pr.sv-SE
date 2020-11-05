@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: how-to
+ms.article: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -14,25 +14,29 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Microsoft 365-administratörer kan läsa mer om hur man återställer från en utpressnings tro Jan attack.
-ms.openlocfilehash: dd740b19abac9d30196c1ffd82c8a3f377b19dbf
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: de1cddbdf1c2b3ffeb8fd74a8f0d31e815eb1b70
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845546"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920614"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Återställ från en utpressnings tro Jan attack i Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Även om du gör alla försiktighets åtgärder för att skydda din organisation kan du fortfarande falla ned till en [utpressnings tro Jan](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) attack. Utpressnings tro vara är stort företag och det är bara att kontrol lera avancerade.
+Även om du gör alla försiktighets åtgärder för att skydda din organisation kan du fortfarande falla ned till en [utpressnings tro Jan](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) attack. Utpressnings tro vara är stort företag och de är mycket avancerade.
 
-Stegen i det här avsnittet ger dig den bästa chansen att återställa data som har krypterats av utpressnings program varan och hjälper till att stoppa spridningen av infektionen i organisationen. Tänk på följande innan du börjar:
+Stegen i den här artikeln ger dig den bästa chansen att återställa data och stoppa det interna spridningen av infektion. Tänk på följande innan du börjar:
 
-- Det är inte säkert att betala utpressnings tro återkommer till dina filer. Det kan vara enklare för dig att betala utpressnings tro. Om du redan har betalat, men du kan återställa dina filer utan att behöva använda angriparens upplösning, bör du ringa till din bank för att se om de kan blockera transaktionen. Vi rekommenderar också att du rapporterar utpressnings tro Jan attack för att genomdriva, bedrägeri rapporterings webbplatser och Microsoft enligt beskrivningen längre ned i det här avsnittet.
+- Det är inte säkert att betala utpressnings tro återkommer till dina filer. Det kan vara enklare för dig att betala utpressnings tro.
 
-- Det är mycket viktigt att du svarar snabbt på angreppet och dess konsekvenser. Det längre du väntar, det mindre troligt att du kan återställa de data som påverkas.
+  Om du redan har betalat men återställt utan att använda angriparens lösning kontaktar du din bank för att se om de kan blockera transaktionen.
+
+  Vi rekommenderar också att du rapporterar utpressnings tro Jan attack för att genomdriva, bedrägeri rapporterings webbplatser och Microsoft enligt beskrivningen längre ned i den här artikeln.
+
+- Det är viktigt att du svarar snabbt på angreppen och dess konsekvenser. Det längre du väntar, det mindre troligt att du kan återställa de data som påverkas.
 
 ## <a name="step-1-verify-your-backups"></a>Steg 1: kontrol lera säkerhets kopiorna
 
@@ -40,13 +44,13 @@ Om du har säkerhets kopiering offline kan du troligt vis återställa krypterad
 
 Om du inte har säkerhets kopior, eller om dina säkerhets kopior också påverkas av utpressnings tro Jan, kan du hoppa över det här steget.
 
-## <a name="step-2-disable-activesync-and-onedrive-sync"></a>Steg 2: inaktivera synkronisering av ActiveSync och OneDrive
+## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>Steg 2: inaktivera synkronisering av Exchange ActiveSync och OneDrive
 
 Huvud punkten här är att stoppa spridningen av data kryptering av utpressnings tro janheten.
 
-Om du misstänker att e-posten är ett mål bör du tillfälligt inaktivera användar åtkomst till post lådor. Exchange ActiveSync används av mobila enheter för att synkronisera data mellan enheten och Exchange Online-postlådan.
+Om du misstänker att e-post är ett mål för utpressnings krypteringen kan du tillfälligt inaktivera användar åtkomst till post lådor. Exchange ActiveSync synkroniserar data mellan enheter och Exchange Online-postlådor.
 
-Information om hur du inaktiverar ActiveSync för en post låda finns i [så här inaktiverar du Exchange ActiveSync för användare i Exchange Online](https://support.microsoft.com/help/2795303).
+Information om hur du inaktiverar Exchange ActiveSync för en post låda finns i [så här inaktiverar du Exchange ActiveSync för användare i Exchange Online](https://support.microsoft.com/help/2795303).
 
 Information om hur du inaktiverar andra typer av åtkomst till en post låda finns i:
 
@@ -58,7 +62,9 @@ Om du pausar OneDrive-synkronisering kommer dina moln data att skyddas från pot
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>Steg 3: ta bort skadlig kod från berörda enheter
 
-Kör en fullständig Antivirus sökning med de senaste uppdateringarna på alla misstänkta datorer och enheter för att upptäcka och ta bort den nytto last som är associerad med utpressnings versionen. Glöm inte enheter som synkroniserar data, eller för anslutna nätverks enheter (dessa datorer och enheter måste också genomsökas).
+Kör en fullständig, aktuell Antivirus sökning på alla misstänkta datorer och enheter för att upptäcka och ta bort nytto lasten som är associerad med utpressnings tjänsten.
+
+Glöm inte att skanna enheter som synkroniserar data eller målen med mappade nätverks enheter.
 
 Du kan använda [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) eller (för äldre klienter) [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201).
 
@@ -90,7 +96,7 @@ I det sällsynta fallet att undertecknings program varan tagit bort all e-post k
 
 ## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>Steg 7: återaktivera Exchange ActiveSync och OneDrive-synkronisering
 
-När du har rensat dina datorer och enheter och återställt dina data kan du återaktivera ActiveSync-och OneDrive-synkronisering som du tidigare inaktiverat i [steg 2](#step-2-disable-activesync-and-onedrive-sync).
+När du har rensat dina datorer och enheter och återställt dina data kan du återaktivera Exchange ActiveSync-och OneDrive-synkronisering som du tidigare inaktiverat i [steg 2](#step-2-disable-exchange-activesync-and-onedrive-sync).
 
 ## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>Steg 8 (valfritt): Blockera OneDrive-synkronisering för specifika fil namns tillägg
 

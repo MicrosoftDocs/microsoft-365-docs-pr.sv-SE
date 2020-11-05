@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft tillhandahåller hjälp för EOP på olika platser och metoder, inklusive själv support och assisterad support.
-ms.openlocfilehash: c305f2e63d668a163bb82f5a4712cbdddc6f9259
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dd68200b7a3723adc7ccba899c0cc88031891197
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202729"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920436"
 ---
 # <a name="help-and-support-for-eop"></a>Hjälp och support för EOP
 
@@ -62,7 +62,7 @@ Om du vill ha mer information om hur Premier-supporten kan hjälpa din organisat
 
 1. Logga in i administrations centret för Microsoft 365.
 
-2. För allmänna produkt problem går du till **support** \> **fråga efter kund support** \> **Call technical support**.
+2. Om du vill ha allmänna produkt problem går du till **support** \> **fråga efter kund support** \> **Call technical support**.
 
    För frågor innan du köper EOP, eller frågor om fakturering och prenumerationer, går du till **support** \> **fråga efter kund support för** \> **fakturering och prenumerations support**.
 

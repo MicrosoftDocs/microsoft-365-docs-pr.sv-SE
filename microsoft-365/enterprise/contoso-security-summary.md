@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Hur Contoso använder säkerhetsfunktionerna i Microsoft 365 för företag.
-ms.openlocfilehash: 8d62dba96ecf19f0dc31af2cf5a2d85257ca19d5
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a72a770029328eaddf76cbe1b2039386c50c2750
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847112"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920424"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Sammanfattning av Microsoft 365 för företags säkerhet för Contoso Corporation
 
@@ -127,9 +127,9 @@ Om du vill följa säkerhets praxis och Microsoft 365 för företags distributio
 
 ## <a name="security-management"></a>Säkerhetshantering
 
-- Central säkerhets instrument panel för den med Azure Defender *
+- Central säkerhets instrument panel för den med Azure Defender
 
-  Contoso använder [Azure Defender *](https://azure.microsoft.com/services/security-center/) för att presentera en enhetlig vy över säkerhets-och hot skydd, för att hantera säkerhets principer för dess arbets belastningar och för att svara på cyberattacks.
+  Contoso använder [Azure Defender](https://azure.microsoft.com/services/security-center/) för att presentera en enhetlig vy över säkerhets-och hot skydd, för att hantera säkerhets principer för dess arbets belastningar och för att svara på cyberattacks.
 
 - Central säkerhetsinstrumentpanel för användare med Windows Defender Säkerhetscenter
 

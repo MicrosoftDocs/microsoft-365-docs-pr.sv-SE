@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå den grundläggande strukturen i den lokala IT-infrastrukturen för Contoso och hur företagets företags behov uppfylls av Microsoft 365 för företag.
-ms.openlocfilehash: 0a837a457869fc579d94ee5e5f9bb114cb93f641
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: b3b67429faccc5d22d49a2921fff4c8b3c3c062e
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847136"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920460"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Skype IT-infrastruktur och företags behov
 
@@ -124,7 +124,7 @@ Contosos IT-avdelning har fastställt följande mappning av företags behov till
 |  | Identitets- och åtkomsthantering | Dedikerade globala administratörskonton med Azure Multi-Factor Authentication (MFA) och Azure AD Privileged Identity Management (PIM) <BR> MFA för alla användarkonton <BR> Med villkorsstyrd åtkomst <BR> Windows Hello <BR> Windows Credential Guard |
 |  | Skydd mot hot | Advanced Threat Analytics <BR> Windows Defender <BR> Defender för Office 365 <BR> Microsoft Defender för Office 365 <BR> Microsoft 365 hot undersökningar och svar <BR> |
 |  | Informationsskydd | Azure Information Protection <BR> Skydd mot dataförlust (DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
-|  | Säkerhetshantering | Azure Defender *  <BR> Windows Defender Säkerhetscenter |
+|  | Säkerhetshantering | Azure Defender  <BR> Windows Defender Säkerhetscenter |
 | Fjärr- och mobilåtkomst för affärspartner |  |  |
 |  | Högre säkerhet för arbetare och distansarbetare | Microsoft Intune |
 |  | Minska infrastrukturen för fjärråtkomst för medarbetare | Microsoft 365-arbetsbelastningar och molnbaserade data |
