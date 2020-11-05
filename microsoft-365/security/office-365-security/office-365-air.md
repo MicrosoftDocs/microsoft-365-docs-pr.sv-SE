@@ -1,5 +1,5 @@
 ---
-title: Automatiserad undersökning och svar (AIR)-komma igång
+title: Komma igång med automatisk undersökning och svar i Microsoft Defender för Office 365
 keywords: LUFT, autoIR, ATP, automatiserad, undersökning, svar, reparation, hot, Avancerat, hot, skydd
 f1.keywords:
 - NOCSH
@@ -8,7 +8,7 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 09/29/2020
+ms.date: 11/04/2020
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -21,31 +21,31 @@ description: Komma igång med automatiska undersökningar och svars funktioner i
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 54dbd419380c18e23119887c93a71885c6f9ce7d
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7e9b786a9d00a34f5e2e88a8481e82fa8425a501
+ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845810"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48925610"
 ---
-# <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Komma igång med automatisk undersökning och svar (AIR) i Office 365
+# <a name="get-started-using-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Komma igång med automatisk undersökning och svar (AIR) i Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-[Microsoft Defender för Office 365](office-365-atp.md) inkluderar kraftfulla automatiserade undersökningar och svars funktioner som kan spara tid och ansträngning för arbets uppgifter. När notifieringar utlöses är det upp till din säkerhets åtgärd för att granska, prioritera och svara på dessa aviseringar. Det är lätt att hålla kontakten med volymen av inkommande varningar. Att automatisera vissa av detta kan vara till hjälp. Med flyg kan din säkerhets åtgärds grupp fokusera på aktiviteter med högre prioritet utan att förlora varningar som utlöses.
+[Microsoft Defender för Office 365](office-365-atp.md) inkluderar kraftfulla automatiserade undersökningar och svars funktioner som kan spara tid och ansträngning för arbets uppgifter. När notifieringar utlöses är det upp till din säkerhets åtgärd för att granska, prioritera och svara på dessa aviseringar. Det är lätt att hålla kontakten med volymen av inkommande varningar. Att automatisera vissa av dessa uppgifter kan hjälpa dig. Med flyg kan din säkerhets åtgärds grupp fokusera på aktiviteter med högre prioritet utan att förlora viktiga larm som utlöses.
 
-Den här artikeln innehåller:
-- LUFT [flödet](#the-overall-flow-of-air) .
+I den här artikeln beskrivs:
+- [Luft flödet](#the-overall-flow-of-air).
 - [Hur man kommer igång](#how-to-get-air); och 
 - De [behörigheter som krävs](#required-permissions-to-use-air-capabilities) för att konfigurera eller använda Air-funktioner. 
 
 ## <a name="the-overall-flow-of-air"></a>Det allmänna luft flödet
 
-På en hög nivå utlöses en avisering och en säkerhets Playbook påbörjar en automatiserad undersökning som ger resultat och rekommendationer. Här är det allmänna flödet för luft, steg för steg:
+En notifiering utlöses och en säkerhets Playbook påbörjar en automatiserad undersökning, vilket resulterar i resultat och rekommenderade åtgärder. Här är det allmänna flödet för luft, steg för steg:
 
 1. En automatiserad undersökning initieras på något av följande sätt:
 
-   - En [avisering](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) utlöses av en Office-händelse som skapar en olycka. Beroende på vilken typ av händelse det gäller påbörjar en [Playbook](automated-investigation-response-office.md#security-playbooks) en automatisk undersökning. 
+   - En [avisering](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) utlöses av något misstänkt i e-post (till exempel ett meddelande, en bilaga eller en URL). En incident skapas. Beroende på vilken typ av tillbud det är, en [säkerhets Playbook](automated-investigation-response-office.md#security-playbooks) körs och en automatisk undersökning påbörjas. 
 
      ---eller---
    
@@ -53,18 +53,17 @@ På en hög nivå utlöses en avisering och en säkerhets Playbook påbörjar en
 
 2. När en automatiserad undersökning körs samlar den in ytterligare information om e-postmeddelandet i fråga och enheter som är relaterade till e-postmeddelandet. Sådana enheter kan innehålla filer, URL: er och mottagare.  Undersökningens omfattning kan öka när nya och relaterade notifieringar utlöses.
 
-3. Under och efter en automatisk undersökning finns [information och resultat](air-view-investigation-results.md) tillgängliga för visning. Resultaten innehåller [rekommenderade åtgärder](air-remediation-actions.md) som kan vidtas för att svara och åtgärda eventuella hot som hittats. Dessutom är en [Playbook-logg](air-view-investigation-results.md#playbook-log) som visar alla undersöknings aktiviteter.
+3. Under och efter en automatisk undersökning finns [information och resultat](air-view-investigation-results.md) tillgängliga för visning. Resultaten innehåller [rekommenderade åtgärder](air-remediation-actions.md) som kan vidtas för att svara på och åtgärda eventuella hot som hittats. Dessutom är en [Playbook-logg](air-view-investigation-results.md#playbook-log) som visar alla undersöknings aktiviteter.
 
-    Om din organisation använder en anpassad rapporterings lösning eller en lösning från tredje part kan du [använda API: t för hanterings aktiviteten för Office 365](air-custom-reporting.md) för att visa information om automatiserade utredningar och hot.
 
 4. Säkerhets åtgärds gruppen granskar [undersöknings resultat och rekommendationer](air-view-investigation-results.md)och [godkänner eller avvisar reparations åtgärder](air-review-approve-pending-completed-actions.md). 
 
-    Eftersom pågående reparations åtgärder är godkända (eller nekade) är den automatiska undersökningen klar.
+5. Eftersom pågående reparations åtgärder är godkända (eller nekade) är den automatiska undersökningen klar.
 
-> [!NOTE]
-> I Microsoft Defender för Office 365 vidtas ingen reparations åtgärd automatiskt. Reparations åtgärder vidtas endast vid godkännande av organisationens säkerhets team. 
+> [!IMPORTANT]
+> I Microsoft Defender för Office 365 vidtas ingen reparations åtgärd automatiskt. Reparations åtgärder vidtas endast vid godkännande av organisationens säkerhets team. AIR-kapacitet sparar emellertid dina arbets tid för säkerhets åtgärder genom att identifiera åtgärder och tillhandahålla de uppgifter som behövs för att fatta ett välgrundat beslut.
 
-Under och efter en automatiserad gransknings process kan säkerhets teamet göra följande:
+Under och efter varje automatiserad undersökning kan säkerhets åtgärds teamet:
 
 - [Visa information om en avisering om en undersökning](air-view-investigation-results.md#view-details-about-an-alert-related-to-an-investigation)
 
@@ -73,27 +72,38 @@ Under och efter en automatiserad gransknings process kan säkerhets teamet göra
 - [Granska och godkänna åtgärder som ett resultat av en undersökning](air-review-approve-pending-completed-actions.md)
 
 > [!TIP]
-> Mer information finns i [så här fungerar luften](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office).
+> En mer detaljerad översikt över [hur Air fungerar](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office).
 
 ## <a name="how-to-get-air"></a>Så här kommer du till luften
 
-AIR-funktioner ingår i [Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2). Men dina [principer måste konfigureras](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) för att luften ska fungera som förväntat. Dessutom bör du kontrol lera att du har granskat och kanske konfigurerar organisationens [notifieringsregler](https://docs.microsoft.com/microsoft-365/compliance/alert-policies). 
+AIR-funktioner ingår i [Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2), förutsatt att dina principer och aviseringar är konfigurerade. Om du vill ha hjälp med det här följer du anvisningarna i [skydda mot hot](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) för att konfigurera eller konfigurera följande skydds inställningar: 
+
+1. [Gransknings loggning](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) (ska vara aktive rad)
+
+2. [Principer för antispionprogram](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?part-1---anti-malware-protection)
+
+3. [Skydd mot nätfiske](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?part-2---anti-phishing-protection)
+   
+4. [Antispam skydd](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?part-3---anti-spam-protection).
+   
+5. [Säkra länkar och säkra bifogade filer](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365).
+   
+6. [Säkra bilagor för SharePoint, OneDrive och Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on).
+   
+7. [Rensa tom timme för e-post](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?zero-hour-auto-purge-for-email-in-eop).
+
+Dessutom bör du se till att [Granska organisationens notifieringsregler](https://docs.microsoft.com/microsoft-365/compliance/alert-policies), särskilt [standard principerna i kategorin Threat Management](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?default-alert-policies). 
+
+## <a name="which-alert-policies-trigger-automated-investigations"></a>Vilka notifieringsregler utlöser automatiserade utredningar?
 
 Microsoft 365 innehåller många inbyggda aviserings principer som hjälper dig att identifiera behörigheter för Exchange-administratörer om missbruk, skadlig program vara, potentiella externa och interna hot samt informations hanterings risker. Flera av [standard aviserings principerna](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) kan utlösa automatiserade utredningar. Bland annat följande:
 
 - En potentiellt skadlig URL-klickning identifieras
-
 - Ett e-postmeddelande rapporteras av en användare som Phish
-
 - E-postmeddelanden med skadlig kod tas bort efter leverans
-
 - E-postmeddelanden som innehåller Phish URL-adresser tas bort efter leverans
-
 - Misstänkta e-postmeddelanden som skickar mönster identifieras
-
 - En användare är begränsad från att skicka e-post
-
-[Lär dig mer om aviseringar och luft](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office).
 
 ## <a name="required-permissions-to-use-air-capabilities"></a>Nödvändig behörighet för att använda AIR-funktioner
 
@@ -104,12 +114,13 @@ Behörigheter beviljas via vissa roller, till exempel de som beskrivs i följand
 |Så här ställer du in AIR-funktioner |En av följande roller: <br/>-Global administratör<br/>-Säkerhets administratör <br/>Dessa roller kan tilldelas i [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) eller i [säkerhets & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). |
 |För att godkänna eller avvisa rekommenderade åtgärder|En av följande roller, tilldelad i [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) eller i [säkerhets & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)):<br/>-Global administratör <br/>-Säkerhets administratör<br/>-Säkerhets läsare <br/>---och---<br/>-Sök och Töm (den här rollen tilldelas endast i [säkerhets & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). Du kanske måste skapa en ny roll grupp och lägga till rollen Sök och rensa i den nya roll gruppen.
 
+## <a name="required-licenses"></a>Nödvändiga licenser
+
 Licenser [för Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2) ska tilldelas:
 - Säkerhets administratörer (inklusive globala administratörer)
 - Organisationens säkerhets åtgärds team (inklusive säkerhets läsare och de som har rollen Sök och rensa)
 - Slutanvändare:
 
-Dessutom måste [principer för Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) definieras och användas för att skydd ska kunna användas.
 
 ## <a name="next-steps"></a>Nästa steg
 
