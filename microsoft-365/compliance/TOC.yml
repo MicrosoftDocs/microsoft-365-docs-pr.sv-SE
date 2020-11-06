@@ -296,8 +296,8 @@
           href: create-apply-retention-labels.md
         - name: Använda en kvarhållningsetikett för innehåll automatiskt
           href: apply-retention-labels-automatically.md
-        - name: Uppfylla kraven i SEC-regel 17a-4
-          href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
+        - name: Lås principer för att begränsa ändringarna
+          href: retention-preservation-lock.md
         - name: Skapa kvarhållningsetiketter med PowerShell
           href: bulk-create-publish-labels-using-powershell.md
         - name: Starta kvarhållning när en händelse inträffar
@@ -426,6 +426,8 @@
           href: declare-records.md
         - name: Versionsanvändning av arkivhandlingar
           href: record-versioning.md
+        - name: Resurser för vilka föreskriftsefterlevnad gäller
+          href: retention-regulatory-requirements.md
 - name: Hantera eDiscovery
   items:
     - name: eDiscovery i Microsoft 365
@@ -531,6 +533,8 @@
               href: data-spillage-scenariosearch-and-purge.md
             - name: Bevara hemlig kopia-mottagare för sökning
               href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+            - name: Dekryptering i eDiscovery-verktyg
+              href: ediscovery-decryption.md
             - name: Felsöka vanliga eDiscovery-problem
               href: ediscovery-troubleshooting-common-issues.md
             - name: Försöka med en misslyckad sökning igen
@@ -660,6 +664,8 @@
               href: permissions-filtering-for-content-search.md
             - name: Konfigurera efterlevnadsgränser
               href: set-up-compliance-boundaries.md
+            - name: Dekryptering i eDiscovery-verktyg
+              href: ediscovery-decryption.md
             - name: Söka efter eDiscovery-aktiviteter i granskningsloggen
               href: search-for-ediscovery-activities-in-the-audit-log.md
             - name: Felsöka AzCopy
