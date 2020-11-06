@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 ms.prod: microsoft-365-enterprise
 localization_priority: Priority
-description: Lär dig hur Microsoft 365 hjälper energiorganisationer att gå till en modern samarbetsplattform, medan vi håller data och systemen säkra och kompatibla med föreskrifter
-ms.custom: ''
-ms.openlocfilehash: 67cdf4d0bd037f71f3e483097152ce8baeedd396
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: Microsoft 365 hjälper energiorganisationer att gå till en modern samarbetsplattform, medan vi håller data och systemen säkra och kompatibla med föreskrifter
+ms.custom: seo-marvel-jun2020
+ms.openlocfilehash: 0fedb042d01814ef6cd53e9271f93b3c80b6babe
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843570"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906233"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Grundläggande efterlevnad och säkerhetsaspekter för energiindustrin
 ![Illustrerad metafor för en global vy över olika branscher som använder molnet](../media/solution-arch-center/MSC17_global_016.png)
