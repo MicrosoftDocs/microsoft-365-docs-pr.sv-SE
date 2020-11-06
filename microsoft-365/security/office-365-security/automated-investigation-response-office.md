@@ -1,5 +1,5 @@
 ---
-title: Automatisk undersökning och svar (luft) Översikt
+title: Så här fungerar den automatiska undersökningen och svaret (AIR) i Microsoft Defender för Office 365
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,86 +16,32 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 keywords: automatiskt svar på incident, undersökning, reparation, Hot skydd
-ms.date: 09/29/2020
-description: Få en översikt över automatiserade undersökningar och svars funktioner i Microsoft Defender för Office 365
+ms.date: 11/05/2020
+description: Se hur automatiserade funktioner för undersökning och svar fungerar i Microsoft Defender för Office 365
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 316e2e30e5865e068f20d151cd0b081a96ee853f
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6923e283e4ec62de9e4a9c1d9196eb032724798d
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845978"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931964"
 ---
-# <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>En översikt över automatiserad undersökning och svar (AIR) i Microsoft Defender för Office 365
+# <a name="how-automated-investigation-and-response-air-works-in-microsoft-defender-for-office-365"></a>Så här fungerar den automatiska undersökningen och svaret (AIR) i Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+När säkerhets varningar utlöses är det upp till din säkerhets åtgärds grupp för att titta på dessa meddelanden och vidta åtgärder för att skydda din organisation. Ibland kan säkerhets Operations teamen bli försäkrade av volymen av de larm som utlöses. Automatiserade undersökningar och svar (AIR) i Microsoft Defender för Office 365 kan hjälpa dig.
 
-När säkerhets varningar utlöses är det upp till din säkerhets åtgärds grupp för att titta på dessa meddelanden och vidta åtgärder för att skydda din organisation. Ibland kan säkerhets Operations teamen bli försäkrade av volymen av de larm som utlöses. Automatiserade undersökningar och svar (AIR) i Microsoft Defender för Office 365 kan hjälpa dig. 
+AIR gör det möjligt för din säkerhets plan att fungera mer effektivt och effektivt. FLYGTRAFIK funktioner inkluderar automatiserade undersökningar som svar på välkända hot som existerar idag. Lämpliga reparations åtgärder väntar på godkännande och gör det möjligt för ditt säkerhets arbete att reagera på identifierade hot.
 
-AIR gör det möjligt för din säkerhets plan att fungera mer effektivt och effektivt. FLYGTRAFIK funktioner inkluderar automatiserade undersökningar som svar på välkända hot som existerar idag. Lämpliga reparations åtgärder väntar på godkännande och gör det möjligt för ditt säkerhets arbete att reagera på identifierade hot. 
+I den här artikeln beskrivs hur luften fungerar med flera exempel. När du är redo att komma igång med AIR läser du [automatiskt och svarar på hot](office-365-air.md).
 
-Den här artikeln innehåller en översikt över luft. När du är redo att komma igång med AIR läser du [automatiskt och svarar på hot](office-365-air.md).
+- [Exempel 1: ett användardefinierat Phish meddelande öppnar en undersökning Playbook](#example-a-user-reported-phish-message-launches-an-investigation-playbook)
+- [Exempel 2: en säkerhets administratör utlöser en undersökning från Threat Explorer](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
+- [Exempel 3: en säkerhets åtgärds grupp integrerar AIR med sina SIEM med hjälp av API för hanterings aktivitet i Office 365](#example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api)
 
-## <a name="at-a-high-level"></a>På en hög nivå
-
-När notifieringar utlöses blir säkerhets playbooks träder i kraft. Beroende på situationen kan en [automatiserad undersöknings process](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) påbörjas. Under och efter en automatisk undersökning rekommenderas [reparations åtgärder](air-remediation-actions.md) . Inga åtgärder vidtas automatiskt i Microsoft Defender för Office 365. Din säkerhets Operations team granskar och [godkänner eller avvisar varje åtgärd](air-review-approve-pending-completed-actions.md)för att åtgärda. När alla åtgärder som följer med undersökningen har godkänts eller avvisats slutförs undersökningen. Alla de här aktiviteterna spåras och visas i Microsoft 365 säkerhets Center ( [https://security.microsoft.com](https://security.microsoft.com) ). (Mer information finns i [Visa information om en undersökning](air-view-investigation-results.md#view-details-of-an-investigation)).
-
-I följande avsnitt finns mer information om aviseringar, säkerhets playbooks och flyg exempel.
-
-## <a name="alerts"></a>Varningar
-
-[Aviseringar](../../compliance/alert-policies.md#viewing-alerts) representerar utlösare för säkerhets åtgärds team arbets flöden för samtals svar. Prioritera de rätta uppsättningarna med aviseringar och kontrol lera att inga hot är avadresserade är utmanande. När undersökningar av notifieringar utförs manuellt måste säkerhets åtgärds teamerna nå och korrelera enheter (till exempel innehåll, enheter och användare) till risk för hot. Sådana uppgifter och arbets flöden kan vara mycket tidsödande och involvera flera verktyg och system. Med luft, undersökning och svar för säkerhets händelser automatiseras genom att viktiga säkerhets-och Threat Management Alerts playbooks automatiskt. 
-
-För närvarande är det automatiskt undersökta notifieringar som genereras från följande typer av larm principer:  
-
-- En potentiellt skadlig URL-adress klickning upptäcktes
-- E-post som rapporter ATS av användaren som Phish`*`
-- E-postmeddelanden som innehåller skadlig kod tas bort efter leverans`*`
-- E-postmeddelanden som innehåller Phish-URL: er tas bort efter leverans`*`
-- Misstänkta e-postskickade mönster
-- Användare begränsad från att skicka e-post
-- Administratören utlöste den manuella undersökningen av e-post`*`
-
-> [!NOTE]
-> Aviseringarna som är markerade med en asterisk ( `*` ) har tilldelats en allvarlighets grad för *information* i respektive aviserings princip i säkerhets center för Microsoft 365, med e-postaviseringar inaktiverade. E-postaviseringar kan aktive ras genom [konfigurering av aviserings principer](../../compliance/alert-policies.md#alert-policy-settings). 
-
-Om du vill visa aviseringar väljer du **varningar** i avsnittet säkerhet & efterlevnad  >  **View alerts**. Välj en avisering om du vill visa dess uppgifter och därifrån kan du använda länken **Visa undersökning** för att gå till motsvarande [undersökning](air-view-investigation-results.md#investigation-graph).  
-
-> [!NOTE]
-> Informations varningar döljs som standard i vyn avisering. För att se dem kan du ändra varnings filtreringen så att den innehåller informations aviseringar.
-
-Om din organisation hanterar dina säkerhets varningar via ett system för aviserings hantering, tjänst hanterings system eller SIEM (Security information and Event Management) kan du skicka aviseringar till det systemet via ett e-postmeddelande eller via [API för hanterings aktivitet i Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Undersöknings aviseringar via e-post eller API innehåller länkar för åtkomst till aviseringarna i säkerhets Center för Microsoft 365, vilket gör att den tilldelade säkerhets administratören snabbt kan navigera till undersökningen.
-
-![Aviseringar som länkar till undersökningar](../../media/air-alerts-page-details.png) 
-
-## <a name="security-playbooks"></a>Säkerhets playbooks
-
-Säkerhets playbooks är backend-principer som är på automatiserings i Microsoft Defender för Office 365 och Microsoft 365 Defender. De säkerhets playbooks som tillhandahålls i AIR är baserade på vanliga scenarier för verklig säkerhet och utvecklad utifrån feedback från team för säkerhets åtgärder. En säkerhets Playbook startas automatiskt när specifika aviseringar utlöses inom din organisation. När notifieringen utlöses körs den associerade Playbook av den automatiska undersöknings-och svars systemet. Undersöknings stegen genom analys av aviseringen baserat på den specifika aviseringens Playbook, som visar alla associerade metadata (inklusive e-postmeddelanden, användare, ämnen, avsändare osv.). På grund av undersökningen playbooks resultat rekommenderar AIR en uppsättning åtgärder som organisationens säkerhets team kan vidta för att kontrol lera och minska hotet. 
-
-Playbooks som du får med flyg är avsedda att klara de hot som organisationer drabbar idag med e-post. De baseras på inmatningar från säkerhets åtgärder och arbets grupps svar, inklusive personer som kan försvara Microsoft och våra kunders till gångar.
-
-- Rapporterat Phish meddelande
-- URL-Klicka på Verdict ändra
-- Skadlig kod identifierad efter leverans (malware, ZAP)
-- Phish upptäckte att det är en Phish
-- Användare som rapporter ATS som kompromissad 
-- Manuell e-postundersökning (utlöst av administratören från Utforskaren, Phish eller alla e-postvyer)
-
-Fler playbooks-och Playbook-uppdateringar kommer att publiceras när de har slutförts. Besök [Microsoft 365-översikten](https://www.microsoft.com/microsoft-365/roadmap) för att se vad mer som är planerat och kommer snart.
-
-### <a name="playbooks-include-investigation-and-recommendations"></a>Playbooks innehåller undersökningar och rekommendationer
-
-I luft inkluderar varje säkerhets Playbook: 
-
-- en rot undersökning av ett e-postmeddelandes enheter (till exempel filer, URL: er, mottagare, IP-adresser och mer).
-- ytterligare jakt efter liknande e-postmeddelanden som tas emot av organisationen 
-- steg som vidtogs för att identifiera och korrelera andra potentiella hot. 
-- rekommenderade hot åtgärds åtgärder.
-
-Varje steg i hög nivå innehåller ett antal under steg som utförs för att ge ett djupgående, detaljerat och komplett svar på hot.
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Exempel: ett användardefinierat Phish meddelande öppnar en undersökning Playbook
 
@@ -151,4 +97,4 @@ Till exempel har en organisation ställt in ett sätt för sin säkerhets åtgä
 
 - [Besök Microsoft 365-översikten för att se vad som är planerat och att släppas snart](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
-- [Lär dig mer om automatisk granskning och svars funktioner i Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide&preserve-view=true)
+- [Lär dig mer om automatiserade undersökningar och svars funktioner i Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide&preserve-view=true)

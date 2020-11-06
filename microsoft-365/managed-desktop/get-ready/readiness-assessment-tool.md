@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 56d849a7abcbe480d82200cc7841d42e9c189762
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 347266f71dada3de1bbd9b1434cb1e6628249147
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795111"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931930"
 ---
 # <a name="readiness-assessment-tool"></a>Verktyg för bedömning av beredskap
 
@@ -22,7 +22,7 @@ För att du ska få den bästa möjliga upplevelsen när du registrerar dig på 
 
 Verktyget kontrollerar inställningar i Microsoft slut punkts hanteraren (specifikt, Microsoft Intune), Azure Active Directory (Azure AD) och Microsoft 365 för att säkerställa att de fungerar med Microsoft Managed Desktop. Microsoft Managed Desktop behåller de data som är kopplade till dessa kontroller i 12 månader efter den senaste gången du kör en check i din Azure AD-organisation (klient organisationen). Efter 12 månader behåller vi det i det format som identifieras.  Du kan välja att ta bort de data som samlas in.
 
-Alla som har minst rollen Intune-administratör kan köra det här verktyget, men tre av kontrollerna ([certifikat kopplingar](readiness-assessment-fix.md#certificate-connectors), [multifaktorautentisering](readiness-assessment-fix.md#multi-factor-authentication)samt [själv återställning av lösen ord](readiness-assessment-fix.md#self-service-password-reset)) kräver ytterligare behörigheter.
+Alla som har minst rollen Intune-administratör kan köra det här verktyget, men två av kontrollerna ([certifikat kopplingar](readiness-assessment-fix.md#certificate-connectors) och [multifaktorautentisering](readiness-assessment-fix.md#multi-factor-authentication) kräver ytterligare behörigheter.
  
 Utvärderings verktyget kontrollerar följande objekt:
 

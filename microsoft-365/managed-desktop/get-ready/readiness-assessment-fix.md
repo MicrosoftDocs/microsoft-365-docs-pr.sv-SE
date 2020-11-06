@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a6dec9473ee632b74bb79e50156cedff53a3cba3
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: c28353698dd372e14d5ec51b92eb4c0c051c92a4
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795123"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931918"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Åtgärda problem som upptäckts av verktyget för bedömning av beredskap
 
@@ -118,7 +118,7 @@ Microsoft Managed Station ära datorer måste tillåtas att registrera i Intune.
 
 **Inte klart**
 
-Följ stegen i [Ange registrerings begränsningar](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) för att ändra inställningen till **Tillåt** .
+Följ stegen i [Ange registrerings begränsningar](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) för att ändra inställningen till **Tillåt**.
 
 
 ### <a name="enrollment-status-page"></a>Sidan registrerings status
@@ -127,7 +127,7 @@ Du har för närvarande sidan registrerings status (ESP) aktive rad. Om du delta
 
 **Inte klart**
 
-Du har aktiverat ESP-standardprofilen för att **Visa konfigurations förlopp för appar och profiler** . Inaktivera den här inställningen genom att följa anvisningarna i [Konfigurera sidan registrerings status](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
+Du har aktiverat ESP-standardprofilen för att **Visa konfigurations förlopp för appar och profiler**. Inaktivera den här inställningen eller se till att uppgifter till vilken Azure AD-grupp som helst inte innehåller Microsoft hanterade Skriv bords enheter genom att följa anvisningarna i [Konfigurera sidan registrerings status](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
 
 **Rådgivare**
 
@@ -137,9 +137,9 @@ Kontrol lera att alla profiler som har **statusen Visa program-och profil konfig
 
 Windows 10-enheter i din Azure AD-organisation måste registreras automatiskt i Intune.
 
-**Inte klart**
+**Rådgivare**
 
-Användare i din Azure AD-organisation registreras inte automatiskt i Microsoft Intune. Ändra omfattningen för MDM-användare till **vissa** eller **alla** . Om du väljer **lite** , kom tillbaka efter registreringen och väljer den **moderna arbets platsen – alla** Azure AD-grupper för **grupper** .
+Kontrol lera att webområdet för MDM är inställt på **vissa** eller **alla** , inte **inga**. Om du väljer **lite** , kom tillbaka efter registreringen och väljer den **moderna arbets platsen – alla** Azure AD-grupper för **grupper**.
 
 
 ### <a name="microsoft-store-for-business"></a>Microsoft Store för företag
@@ -180,7 +180,7 @@ Windows PowerShell-skript kan inte tilldelas på ett sätt som riktar sig till M
 
 **Rådgivare**
 
-Kontrol lera att Windows PowerShell-skript i din Azure AD-organisation inte har några Microsoft-hanterings enheter eller användare. Mer information finns i [använda PowerShell-skript på Windows 10-enheter i Intune](https://docs.microsoft.com/mem/intune/apps/intune-management-extension).
+Kontrol lera att Windows PowerShell-skript i din Azure AD-organisation inte har några Microsoft-hanterings enheter eller användare. Koppla inte ett PowerShell-skript till alla användare, alla enheter eller både och. Ändra principen för att använda en tilldelning som är riktad till en viss Azure AD-grupp som inte innehåller Microsoft hanterade Station ära datorer. Mer information finns i [använda PowerShell-skript på Windows 10-enheter i Intune](https://docs.microsoft.com/mem/intune/apps/intune-management-extension).
 
 ### <a name="region"></a>Region
 
@@ -254,7 +254,7 @@ Här beskrivs hur du kontrollerar en inställning som (om värdet är "falskt") 
 
 **Rådgivare**
 
-Kontrol lera att **AllowAdHocSubscriptions** är inställt på **True** . I annat fall kanske företags statusen roaming inte fungerar. Mer information finns i [set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
+Kontrol lera att **AllowAdHocSubscriptions** är inställt på **True**. I annat fall kanske företags statusen roaming inte fungerar. Mer information finns i [set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
 
 
 ### <a name="enterprise-state-roaming"></a>Enterprise State Roaming
@@ -308,19 +308,11 @@ Säkerhets inställningarna är aktiverat. Inaktivera säkerhets standarder och 
 
 ### <a name="self-service-password-reset"></a>Självbetjäning för återställning av lösen ord
 
-Självbetjäning för återställning av lösen ord (SSPR) måste aktive ras.
-
-**Inte klart**
-
-SSPR måste vara aktiverat för alla användare. Om det inte är det kan inte Microsoft Managed Desktop-tjänsten fungera. Mer information finns i [själv studie kursen: Låt användare låsa upp sina konton eller återställa lösen ord med hjälp av återställning av Azure Active Directory Self-Service](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+Självbetjäning för återställning av lösen ord (SSPR) måste vara aktiverat för alla användare. Om det inte är det kan inte Microsoft Managed Desktop-tjänsten fungera. Mer information finns i [själv studie kursen: Låt användare låsa upp sina konton eller återställa lösen ord med hjälp av återställning av Azure Active Directory Self-Service](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
 
 **Rådgivare**
 
 Kontrol lera att SSPR **valda** inställningar innehåller Microsoft Managed Station ära datorer.
-
-**Fel**
-
-Rollen Intune-administratör har inte tillräcklig behörighet för den här kontrollen. Du behöver också ha den rapport läsare i Azure AD-rollen som tilldelats för att köra den här kontrollen.
 
 
 ### <a name="standard-user-role"></a>Standard användar roll
