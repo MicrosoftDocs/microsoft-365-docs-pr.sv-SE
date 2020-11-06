@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Med hjälp av Microsoft 365 Säkerhetscenter och Microsoft 365 Efterlevnadscenter kan du hantera behörigheter centralt för alla uppgifter som är relaterade till säkerhet och efterlevnad.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9ad17933592b860fb81e469fd55a454c90b71320
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0f7dcddd7070f95ae61b17b9623dfcbab4a62e5f
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845762"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920638"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Behörigheter i efterlevnadscentret i Microsoft 365 och säkerhetscentret i Microsoft 365
 
@@ -103,8 +103,8 @@ Användare som har den här rollen har behörighet att hantera säkerhetsrelater
 |**Microsoft Defender för Endpoint och EDR**|Tilldela roller. <br/><br/> Hantera datorgrupper. <br/><br/> Konfigurera identifiering av slutpunktshot och automatisk reparation. <br/><br/> Visa, undersöka och reagera på aviseringar.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Visar information om användare, enheter, registrering, konfiguration och program. <br/><br/> **Kan inte** göra ändringar i Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Lägga till administratörer, lägga till principer och inställningar, ladda upp loggar och utföra styrningsåtgärder.|
-|[**Azure Defender** _](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) (kommer snart)|Visa säkerhetsprinciper, visa säkerhetstillstånd, redigera säkerhetsprinciper, visa aviseringar och rekommendationer, stänga av varningar och rekommendationer.|
-|[_ *Office 365-tjänststatus**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Visa status för Office 365-tjänster.|
+|[**Azure Defender**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) (kommer snart)|Visa säkerhetsprinciper, visa säkerhetstillstånd, redigera säkerhetsprinciper, visa aviseringar och rekommendationer, stänga av varningar och rekommendationer.|
+|[**Office 365-tjänststatus**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Visa status för Office 365-tjänster.|
 |
 
 ### <a name="security-operator"></a>Säkerhetsoperatör
@@ -140,8 +140,8 @@ Användare som har den här rollen har global skrivskyddad åtkomst till säkerh
 |**Microsoft Defender för Endpoint och EDR**|Visa och undersöka varningar.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Visar information om användare, enheter, registrering, konfiguration och program. <br/><br/> **Kan inte** göra ändringar i Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Använda läsbehörigheter för att visa information. <br/><br/> Hantera aviseringar.|
-|[**Azure Defender** _](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)|Visa rekommendationer och aviseringar. <br/><br/> Visa säkerhetsprinciper. <br/><br/> Visa säkerhets tillstånd, men kan inte göra ändringar.|
-|[_ *Office 365-tjänststatus**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Visa status för Office 365-tjänster.|
+|[**Azure Defender**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)|Visa rekommendationer och aviseringar. <br/><br/> Visa säkerhetsprinciper. <br/><br/> Visa säkerhets tillstånd, men kan inte göra ändringar.|
+|[**Office 365-tjänststatus**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Visa status för Office 365-tjänster.|
 |
 
 ## <a name="global-administrators-can-manage-roles-in-azure-active-directory"></a>Globala administratörer kan hantera roller i Azure Active Directory
