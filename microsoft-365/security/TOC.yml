@@ -33,15 +33,15 @@
           href: mtp/microsoft-secure-score-history-metrics-trends.md
         - name: Kommer snart
           href: mtp/microsoft-secure-score-whats-coming.md
-        - name: Vad är nytt
+        - name: Nyheter
           href: mtp/microsoft-secure-score-whats-new.md
-    - name: Microsoft Hotskydd
+    - name: Microsoft 365 Defender
       items:
         - name: Översikt
           items:
-            - name: Vad är Microsoft Hotskydd?
+            - name: Vad är Microsoft 365 Defender?
               href: mtp/microsoft-threat-protection.md
-            - name: Nyheter i Microsoft Hotskydd
+            - name: Nyheter i Microsoft 365 Defender
               href: mtp/whats-new.md
             - name: Förhandsgranskningsfunktioner
               href: mtp/preview.md
@@ -67,7 +67,7 @@
               href: mtp/setup-mtpeval.md
             - name: Konfigurera och introducera
               href: mtp/config-mtpeval.md
-            - name: Starta tjänsten Microsoft Threat Protection
+            - name: Starta tjänsten Microsoft 365 Defender
               href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
             - name: Skapa ett testmeddelande
               href: mtp/generate-test-alert.md
@@ -91,7 +91,7 @@
               href: mtp/mtp-pilot.md
             - name: Distribuera tjänster som stöds
               href: mtp/deploy-supported-services.md
-            - name: Aktivera Microsoft Hotskydd
+            - name: Aktivera Microsoft 365 Defender
               href: mtp/mtp-enable.md
             - name: Aktivera vanliga frågor och svar
               href: mtp/mtp-enable-faq.md
@@ -137,7 +137,7 @@
                       href: mtp/advanced-hunting-shared-queries.md
                     - name: 'Jaga över olika enheter, e-postmeddelanden, appar och identiteter'
                       href: mtp/advanced-hunting-query-emails-devices.md
-                    - name: Övergång från Microsoft Defender ATP
+                    - name: Övergång från Defender för Endpoint
                       href: mtp/advanced-hunting-migrate-from-mdatp.md
                 - name: Arbeta med frågeresultat
                   href: mtp/advanced-hunting-query-results.md
@@ -251,15 +251,15 @@
                       href: ./mtp/tickets.md
                     - name: ServiceNow-ärenden i säkerhetscentret
                       href: ./mtp/tickets-security-center.md
-            - name: 'Microsoft Hotskydds-API:er (förhandsvisning)'
+            - name: 'Microsoft 365 Defender API: er (förhandsversion)'
               items:
-                - name: 'Översikt över API:er för Microsoft Hotskydd (förhandsversion)'
+                - name: 'Översikt över Microsoft 365 Defender API: er (förhandsversion)'
                   href: mtp/api-overview.md
-                - name: 'Komma igång med Microsoft Hotskydd API:er (förhandsversion)'
+                - name: 'Komma igång med Microsoft 365 Defender API: er (förhandsversion)'
                   items:
-                    - name: API-licens för Microsoft Hotskydd och användnings villkor
+                    - name: API-licens för Microsoft 365 Defender API och användningsvillkor
                       href: mtp/api-terms.md
-                    - name: 'Använda API:er för Microsoft Hotskydd'
+                    - name: 'Få åtkomst till Microsoft 365 Defender API:er'
                       href: mtp/api-access.md
                     - name: Hello World exempel
                       href: mtp/api-hello-world.md
@@ -271,9 +271,9 @@
                       href: mtp/api-partner-access.md
                     - name: Andra API-resurser
                       href: mtp/api-articles.md
-                - name: 'Microsoft Hotskydds-API: er och schema (förhandsvisning)'
+                - name: 'Microsoft 365 Defender API: er och schema (förhandsversion)'
                   items:
-                    - name: 'API: er som stöds av Microsoft Hotskydd'
+                    - name: 'Microsoft 365 Defender API: er som stöds'
                       href: mtp/api-supported.md
                     - name: Vanliga REST API-felkoder
                       href: mtp/api-error-codes.md
@@ -310,11 +310,11 @@
                   href: ./office-365-security/quarantine-email-messages.md
                 - name: Granskningsrapporter i fristående EOP
                   href: ./office-365-security/auditing-reports-in-eop.md
-            - name: Office 365 Avancerat skydd
+            - name: Defender för Office 365
               href: ./office-365-security/office-365-atp.md
-            - name: Nyheter i Office 365 ATP
+            - name: Nyheter i Defender för Office 365
               href: office-365-security/whats-new-in-office-365-atp.md
-            - name: 'ATP för SharePoint, OneDrive och Microsoft Teams'
+            - name: 'Defender för Office 365 för SharePoint, OneDrive och Microsoft Teams'
               href: ./office-365-security/atp-for-spo-odb-and-teams.md
             - name: Ny Microsoft 365 säkerhetscenter
               href: ./mtp/overview-security-center.md
@@ -336,9 +336,9 @@
               href: ./office-365-security/anti-phishing-protection.md
             - name: Skydd mot förfalskning
               href: ./office-365-security/anti-spoofing-protection.md
-            - name: Säkra bilagor i Office 365 ATP
+            - name: Säkra bifogade filer i Defender för Office 365
               href: ./office-365-security/atp-safe-attachments.md
-            - name: Säkra länkar i Office 365 ATP
+            - name: Säkra bifogade länkar i Defender för Office 365
               href: ./office-365-security/atp-safe-links.md
             - name: Utgående skräppostskydd
               href: ./office-365-security/outbound-spam-controls.md
@@ -368,15 +368,15 @@
                   href: ./office-365-security/set-up-your-eop-service.md
             - name: Skydda mot hot
               href: ./office-365-security/protect-against-threats.md
-            - name: Integrera Office 365 ATP med Microsoft Defender Avancerat skydd
+            - name: Integrera Defender för Office 365 med Defender för Endpoint
               href: ./office-365-security/integrate-office-365-ti-with-wdatp.md
             - name: Behörigheter i Säkerhets- och efterlevnadscentret
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
             - name: SIEM-serverintegrering
               href: ./office-365-security/siem-server-integration.md
-            - name: SIEM-integrering med Office 365 ATP
+            - name: SIEM-integrering med Defender för Office 365
               href: ./office-365-security/siem-integration-with-office-365-ti.md
-            - name: Konfigurera principer för ATP-skydd mot nätfiske
+            - name: Konfigurera principer för skydd mot nätfiske
               href: ./office-365-security/configure-atp-anti-phishing-policies.md
             - name: Konfigurera principer för skydd mot skadlig kod
               href: ./office-365-security/configure-anti-malware-policies.md
@@ -384,7 +384,7 @@
               href: ./office-365-security/configure-your-spam-filter-policies.md
             - name: Konfigurera anslutningsfiltrering
               href: ./office-365-security/configure-the-connection-filter-policy.md
-            - name: Konfigurera globala inställningar för Säkra Länkar i Office 365 ATP
+            - name: Konfigurera globala inställningar för säkra länkar i Defender för Office 365
               href: ./office-365-security/configure-global-settings-for-safe-links.md
             - name: Konfigurera inställningar för skräppost i Exchange Online-postlådor
               href: ./office-365-security/configure-junk-email-settings-on-exo-mailboxes.md
@@ -400,19 +400,19 @@
               href: ./office-365-security/email-validation-and-authentication.md
             - name: Ge användare åtkomst till Säkerhetscentret
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
-            - name: Säkra dokument i Office 365 ATP
+            - name: Säkra dokument i Defender för Office 365
               href: ./office-365-security/safe-docs.md
-            - name: Konfigurera principer för säkra länkar i Office 365 ATP
+            - name: Konfigurera principer för säkra länkar i Office 365
               href: ./office-365-security/set-up-atp-safe-links-policies.md
-            - name: Konfigurera principer för säkra bifogade filer i Office 365 ATP
+            - name: Konfigurera principer för säkra bifogade filer i Office 365
               href: ./office-365-security/set-up-atp-safe-attachments-policies.md
             - name: Konfigurera SPF för att förhindra förfalskning
               href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
             - name: Principer för användarrapporteringar
               href: ./office-365-security/user-submission.md
-            - name: Användartaggar i Office 365 ATP
+            - name: Användartaggar i Defender för Office 365
               href: ./office-365-security/user-tags.md
-            - name: 'Aktivera ATP för SharePoint, OneDrive och Microsoft Teams'
+            - name: 'Aktivera Defender för Office 365 för SharePoint, OneDrive och Microsoft Teams.'
               href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
             - name: Använda DKIM för att validera utgående e-post
               href: ./office-365-security/use-dkim-to-validate-outbound-email.md
@@ -424,7 +424,7 @@
               href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
             - name: Skapa gruppwebbplatser i en utvecklings-/testmiljö för en politisk kampanj
               href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
-            - name: Användartaggar i Office 365 ATP
+            - name: Användartaggar i Defender för Office 365
               href: ./office-365-security/user-tags.md
             - name: S/MIME
               href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
@@ -459,9 +459,9 @@
               href: ./office-365-security/preset-security-policies.md
             - name: Konfigureringsanalys för förvalda säkerhetsprinciper
               href: ./office-365-security/configuration-analyzer-for-security-policies.md
-            - name: Attacksimulatorn i Office 365 ATP
+            - name: Attacksimulator i Defender för Office 365
               href: ./office-365-security/attack-simulator.md
-            - name: Rekommenderade inställningar för att konfigurera EOP och Office 365 ATP-säkerhet
+            - name: Rekommenderade inställningar för att konfigurera EOP och Defender för Office 365-säkerhet
               href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
             - name: Metodtips för konfiguration av EOP
               href: ./office-365-security/best-practices-for-configuring-eop.md
@@ -513,7 +513,7 @@
               href: ./office-365-security/campaigns.md
             - name: Undersöka skadlig e-post
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
-            - name: Visa ATP-rapporter i Säkerhets- och efterlevnadscenter
+            - name: Visa rapporter i Säkerhets- och efterlevnadscenter
               href: ./office-365-security/view-reports-for-atp.md
             - name: Visa information och resultat från en automatisk undersökning
               href: ./office-365-security/air-view-investigation-results.md
