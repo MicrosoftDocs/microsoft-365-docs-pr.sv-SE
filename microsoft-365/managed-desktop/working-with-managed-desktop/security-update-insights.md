@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 772d1d52e977a067ff9bc3517de9cb2ae6c8c9a3
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b3b1f43217b3be285f20925065bf9710a38f9606
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950373"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941447"
 ---
 # <a name="windows-security-update-insights"></a>Insikter om Windows-säkerhetsuppdateringar
 Den här vyn innehåller en översikt över status för säkerhets uppdateringar för Microsoft Managed Station ära datorer. 
@@ -23,11 +23,11 @@ Om du vill visa användnings data väljer du fliken <strong>Windows säkerhets u
 
 ## <a name="device-status"></a>Enhets status
 
-För att enheter ska uppdateras av Windows Update måste de vara anslutna till Internet och inte försätts i vilo läge i minst sex timmar, två av dessa måste vara löpande. Så länge en enhet är ansluten och inte är i vilo läge anses den vara "används". Även om det är möjligt att en enhet som inte uppfyller dessa krav kommer att uppdateras, att enheter som uppfyller dem har högsta sannolikhet för att uppdateras. 
+För att enheter ska uppdateras av Windows Update måste de vara anslutna till Internet och inte försätts i vilo läge i minst sex timmar, två av dessa måste vara löpande. Även om det är möjligt att en enhet som inte uppfyller dessa krav kommer att uppdateras, att enheter som uppfyller dem har högsta sannolikhet för att uppdateras. 
 
 Vi kategoriserar enhets aktivitet i Windows Update med följande villkor:
 
-- <strong>Aktivt:</strong> Enheter som har uppnått de lägsta användnings villkoren (sex timmar, två forts) för den senaste säkerhets uppdateringen och har checkats in med Microsoft Intune minst var femte dag
+- <strong>Aktivt:</strong> Enheter som har uppnått de lägsta aktivitets villkoren (sex timmar, två löpande) för den senaste säkerhets uppdateringen och har checkat in med Microsoft Intune minst var femte dag
 - <strong>Synkroniserat:</strong> Enheter som har checkat in med Intune under de senaste 28 dagarna
 - Inte <strong>synkroniserat:</strong> Enheter som <i>inte</i> har checkats in med Intune under de senaste 28 dagarna
 

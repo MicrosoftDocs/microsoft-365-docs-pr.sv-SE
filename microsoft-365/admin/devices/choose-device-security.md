@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Välj mellan olika metoder för MDM och MAM.
-ms.openlocfilehash: 6231b7c82f280a60ae9d30bcf27697dc131b2471
-ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+ms.openlocfilehash: 2866aa8cf172361b2b5f5055932717154cd6ddd1
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 11/06/2020
-ms.locfileid: "48930280"
+ms.locfileid: "48941303"
 ---
 # <a name="options-for-protecting-your-devices-and-app-data"></a>Alternativ för att skydda enheter och program data
 
@@ -37,8 +37,6 @@ Du kan skydda dina organisationers enheter och data på flera sätt med Microsof
 - Microsoft 365 Enterprise-abonnemang som innehåller Avancerat skydd mot säkerhet och hot.
 
 ## <a name="device-management-options"></a>Alternativ för enhets hantering
-
-![En siffra som illustrerar vilka abonnemang som används för att använda MDM och MAM.](../../m365-mam-mdm.png)
 
 - **Grundläggande mobilitet och säkerhet** erbjuds med de flesta Microsoft 365-abonnemang och är det enda inbyggda alternativet för Microsoft 365 Business Standard och Microsoft 365 Business Basic. Mer information finns i [tillgänglighet för grundläggande mobilitet och säkerhet](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune). 
 

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c28353698dd372e14d5ec51b92eb4c0c051c92a4
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+ms.openlocfilehash: 642de80e1a133f212b7afb6774d9aab2eeaabdbf
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931918"
+ms.locfileid: "48941415"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Åtgärda problem som upptäckts av verktyget för bedömning av beredskap
 
@@ -308,20 +308,20 @@ Säkerhets inställningarna är aktiverat. Inaktivera säkerhets standarder och 
 
 ### <a name="self-service-password-reset"></a>Självbetjäning för återställning av lösen ord
 
-Självbetjäning för återställning av lösen ord (SSPR) måste vara aktiverat för alla användare. Om det inte är det kan inte Microsoft Managed Desktop-tjänsten fungera. Mer information finns i [själv studie kursen: Låt användare låsa upp sina konton eller återställa lösen ord med hjälp av återställning av Azure Active Directory Self-Service](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+Självbetjäning för återställning av lösen ord (SSPR) ska aktive ras för alla användare exklusive Microsoft Managed Desktop Service-konton. Mer information finns i [själv studie kursen: Låt användare låsa upp sina konton eller återställa lösen ord med hjälp av återställning av Azure Active Directory Self-Service](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
 
 **Rådgivare**
 
-Kontrol lera att SSPR **valda** inställningar innehåller Microsoft Managed Station ära datorer.
+Kontrol lera att den SSPR **valda** inställningen innehåller Microsoft hanterade Skriv bords enheter men inte Microsoft Managed Desktop Service accounts. Microsoft Managed Desktop Service-konton kan inte fungera som förväntat när SSPR är aktiverat.  
 
 
 ### <a name="standard-user-role"></a>Standard användar roll
 
-Microsoft Managed Desktop-användare ska vara vanliga användare utan lokala administratörs behörigheter. De tilldelas en standard användar roll när de startar sin Microsoft-hanterade Station.
+Förutom de användare som har tilldelats Azure AD-roller av global administratör och enhets administratör kommer Microsoft Managed Desktop-användare att vara vanliga användare utan lokala administratörs privilegier. Alla andra användare tilldelas en standard användar roll när de startar sin Microsoft-hanterade Station.
 
 **Rådgivare**
 
-Microsoft Managed Station ära datorer bör inte ha lokala administratörs behörigheter innan de registreras.
+Microsoft Managed Desktop-användare kommer inte att ha lokala administratörs privilegier på sina Microsoft Managed Station ära enheter efter registrering.
 
 ## <a name="microsoft-365-apps-for-enterprise"></a> Microsoft 365 Apps för företag
 

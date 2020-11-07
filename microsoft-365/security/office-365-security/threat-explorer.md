@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Lär dig hur du använder Utforskaren och real tids identifiering i &amp; Center för säkerhets kontroll för att undersöka och reagera på hot effektivt och effektivt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6123306c1d707a3eeab5c5dd67ed25bebb71965
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6a1aff37cc845e09be332b853aa938cb66fdb43f
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845684"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941493"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer och real tids identifiering
 
@@ -53,7 +53,7 @@ Med den här rapporten kan du:
 > [!NOTE]
 > Funktionen användar koder är i förhands granskning, inte tillgänglig för alla och kan komma att ändras. Information om versions schema finns i Microsoft 365-översikten.
 
-User-taggar är identifierare för specifika grupper med användare i Microsoft Defender för Office 365. Mer information finns i taggar, licensiering och konfigurering av taggar, se [User-Taggar i Defender för Office 365](user-tags.md).
+User-taggar är identifierare för specifika grupper med användare i Microsoft Defender för Office 365. Mer information finns i taggar, licensiering och konfigurering [av taggar.](user-tags.md)
 
 I Threat Explorer kan du se information kring användar koder i följande versioner:
 
@@ -199,7 +199,7 @@ Som en del av att förbättra jakt processen har vi gjort några uppdateringar f
 
 ### <a name="filter-by-user-tags"></a>Filtrera efter användardefinierade Taggar
 
-Du kan nu sortera och filtrera efter antingen system-eller anpassade användar märkningar för att snabbt förstå. Mer information finns i [användar flaggor i Office 365 ATP](user-tags.md) .
+Du kan nu sortera och filtrera efter antingen system-eller anpassade användar märkningar för att snabbt förstå. Mer information finns i [användar koder](user-tags.md) .
 
 > [!IMPORTANT]
 > Filtrering och sortering efter användarmallar är för närvarande i offentlig för hands version.

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du hittar och använder e-postsäkerhets rapporter för organisationen. Säkerhets rapporter för e-post finns i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36d7fde77ae8a6280dae26e5a0f7a75537bf28d4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fafb499e40c0014a85c9566b3e5aadf2751202a1
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841878"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941481"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visa rapporter om e-postsäkerhet i Säkerhets- och efterlevnadscenter
 
@@ -336,7 +336,7 @@ Följande vyer är tillgängliga:
 
 - **Bryta ned efter: identifierings teknologi** och **Visa data via: e- \> postskadlig program vara** : följande information visas:
 
-  - **ATP – genererad fil rykte**<sup>1</sup>: alla skadliga filer som orsakas av ATP-sprängor.
+  - **ATP – genererad fil rykte**<sup>1</sup>: alla skadliga fil rykte som genererats av Defender för Office 365-sprängmedel.
   - **Skydd mot skadlig program vara**<sup>: identifiering</sup>från motorer med skadlig program vara.
   - **Fil typs block för principer mot skadlig program vara** : dessa e-postmeddelanden filtreras på grund av den typ av skadlig fil som identifieras i meddelandet.
   - **Fil sprängare**<sup>1</sup>: fil sprängning fångar av säkra bifogade filer.  
