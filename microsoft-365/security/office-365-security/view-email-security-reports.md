@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du hittar och använder e-postsäkerhets rapporter för organisationen. Säkerhets rapporter för e-post finns i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fafb499e40c0014a85c9566b3e5aadf2751202a1
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 738ae55fac5677a1b4f78e4c67506e85d5975090
+ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941481"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48945360"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visa rapporter om e-postsäkerhet i Säkerhets- och efterlevnadscenter
 
@@ -129,7 +129,7 @@ Om du klickar på **Visa informations tabell** beror informationen som visas på
   - **Datum**
   - **Mottagar domän**
   - **Antal meddelanden**
-  
+
 Om du klickar på **filter** i en detaljerad tabellvy kan du ändra resultatet med följande filter:
 
 - **Start datum** och **slutdatum**
@@ -270,9 +270,11 @@ Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
 
 ## <a name="threat-protection-status-report"></a>Statusrapport för hotskydd
 
-Status rapporten för **hotet Protection** finns i både EOP och Microsoft Defender för Office 365; rapporterna innehåller emellertid olika data. EOP kunder kan till exempel Visa information om skadlig kod som upptäckts i e-post, men inte information om [skadliga filer som identifieras av ATP för SharePoint, OneDrive eller Microsoft Teams](atp-for-spo-odb-and-teams.md).
+Status rapporten för **hotet Protection** finns i både EOP och Microsoft Defender för Office 365; rapporterna innehåller emellertid olika data. EOP kunder kan till exempel Visa information om skadlig kod som upptäckts i e-post, men inte information om skadliga filer som identifieras av [ATP för SharePoint, OneDrive eller Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
-I rapporten får du räknat antalet e-postmeddelanden med skadligt innehåll, till exempel filer eller webbplats adresser (URL: er) som blockerades av motorn mot skadlig program vara, en [hel timmes autorensning (Zap)](zero-hour-auto-purge.md)och Defender för Office 365-funktioner som [säkra länkar](atp-safe-links.md), [säkra bifogade filer](atp-safe-attachments.md)och [nätfiske](set-up-anti-phishing-policies.md). Du kan använda den här informationen för att identifiera trender eller för att avgöra om organisations principer behöver justeras. Det är viktigt att förstå att om ett meddelande skickas till fem mottagare räknas det som fem olika meddelanden och inte ett meddelande.
+I rapporten får du räknat antalet e-postmeddelanden med skadligt innehåll, till exempel filer eller webbplats adresser (URL: er) som blockerades av motorn mot skadlig program vara, en [hel timmes autorensning (Zap)](zero-hour-auto-purge.md)och Defender för Office 365-funktioner som [säkra länkar](atp-safe-links.md), [säkra bifogade filer](atp-safe-attachments.md)och [nätfiske](set-up-anti-phishing-policies.md). Du kan använda den här informationen för att identifiera trender eller för att avgöra om organisations principer behöver justeras.
+
+**Obs!** det är viktigt att förstå att om ett meddelande skickas till fem mottagare räknas det som fem olika meddelanden och inte ett meddelande.
 
 Om du vill visa rapporten öppnar du [säkerhets & efterlevnad](https://protection.office.com), går till **Reports** \> **instrument paneler** för rapporter och väljer **skydds status**. Om du vill gå direkt till rapporten öppnar du en av följande webb adresser:
 
@@ -297,8 +299,8 @@ Följande vyer är tillgängliga:
 
 - **Visa data efter: innehåll \> Malware**<sup>1</sup>: följande information visas för Microsoft Defender för Office 365-organisationer:
 
-  - **Skydd mot skadlig program vara** fångar upp skadliga filer i SharePoint Online, OneDrive och Teams efter skadlig program vara.
-  - **Fil sprängning** : sprängan av skadliga filer i SharePoint Online, OneDrive och Teams efter säkra bifogade filer.
+  - **Skydd mot skadlig program vara** : illasinnade filer identifieras i SharePoint, OneDrive och Microsoft Teams med [inbyggd virus identifiering i Microsoft 365](virus-detection-in-spo.md).
+  - **Fil sprängare** : illasinnade filer identifieras av [ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
   ![Vyn skadlig program vara i rapporten skydds status](../../media/threat-protection-status-report-content-malware-view.png)
 
@@ -318,7 +320,7 @@ Följande vyer är tillgängliga:
 
 - **Bryta ned efter: identifierings teknologi** och **Visa data via: e- \> Phish** : följande information visas:
 
-  - **ATP-genererad URL-rykte**<sup>1</sup>: skadlig URL-rykte skapad från Defender för Office 365-sprängor i andra Defender för Office 365-kunder.
+  - **ATP-genererad URL-rykte**<sup>1</sup>: skadlig URL-rykte skapad från Defender för Office 365-sprängor i andra Microsoft 365-kunder.
   - **Avancerat Phish filter** : phishing-signaler baserade på dator inlärning.
   - **Skydd mot förfalskning – DMARC** : DMARC misslyckades för meddelanden.
   - **Skydd mot förfalskning** : avsändaren försöker skicka falska till mottagar domänen.
@@ -326,7 +328,7 @@ Följande vyer är tillgängliga:
   - **Varumärkes-personifiering** : personifiering av välkända varumärken baserat på avsändare.
   - **Domän person**<sup>1</sup>: personifiering av domäner som kunden äger eller definierar.
   - **EOP URL rykte** : skadlig URL-rykte.
-  - **Allmänt Phish-filter** : nät fiske signaler baserade på analytiker regler. 
+  - **Allmänt Phish-filter** : nät fiske signaler baserade på analytiker regler.
   - **Gemensamma**
   - **PHISH ZAP**<sup>2</sup>: Tom timme för automatisk rensning av nät fiske meddelanden.
   - **URL-sprängare**<sup>1</sup>
@@ -339,7 +341,7 @@ Följande vyer är tillgängliga:
   - **ATP – genererad fil rykte**<sup>1</sup>: alla skadliga fil rykte som genererats av Defender för Office 365-sprängmedel.
   - **Skydd mot skadlig program vara**<sup>: identifiering</sup>från motorer med skadlig program vara.
   - **Fil typs block för principer mot skadlig program vara** : dessa e-postmeddelanden filtreras på grund av den typ av skadlig fil som identifieras i meddelandet.
-  - **Fil sprängare**<sup>1</sup>: fil sprängning fångar av säkra bifogade filer.  
+  - **Fil sprängare**<sup>1</sup>: identifiering av säkra bifogade filer.
   - **Fil rykte**
   - **Malware, ZAP**<sup>2</sup>
   - **Gemensamma**
@@ -349,7 +351,7 @@ Följande vyer är tillgängliga:
 - **Bryt ned med: princip typ** och **Visa data via: e- \> Phish** eller **Visa data via: e-post för \> skadlig kod** : följande information visas:
 
   - **Skadlig program vara**
-  - **Säker bilaga**<sup>1</sup>
+  - **Säkra bifogade filer**<sup>1</sup>
   - **Anti-Phish**
   - **Skydd mot skräp post**
   - **Regel för e-postflöde** (kallas även transport regel)
@@ -377,26 +379,28 @@ Följande vyer är tillgängliga:
 
 Om du klickar på **filter** , beror de tillgängliga filtren på diagrammet du tittade på:
 
-För **innehålls \> skadliga program** kan du ändra rapporten genom att **Starta datum** och **slutdatum** samt **identifiering** svärdet.
+- Om du vill **Visa data via: \> skadligt innehåll** kan du ändra rapporten genom att **Starta datum** och **slutdatum** samt **identifiering** svärdet.
 
-För **åsidosättning av meddelanden** kan du ändra rapporten med följande filter:
+- Om du vill **Visa data via: åsidosättning av meddelande** kan du ändra rapporten med följande filter:
 
-- **Start datum** och **slutdatum**
-- **Åsidosätt orsak**
-- **Tagg** : Filtrera efter tagg för att returnera användare eller grupper som har en viss tagg. Mer information om användar flaggor finns i [User Tags](user-tags.md).
-- **Domain**
+  - **Start datum** och **slutdatum**
+  - **Åsidosätt orsak**
+  - **Tagg** : filtrera resultat efter användare eller grupper som har den angivna användar tag gen installerad (inklusive prioriterade konton). Mer information om användar flaggor finns i [User Tags](user-tags.md).
+  - **Domain**
 
-För alla andra vyer kan du ändra rapporten med följande filter:
+- För alla andra vyer kan du ändra rapporten med följande filter:
 
-- **Start datum** och **slutdatum**
-- **Proxyidentifiering**
-- **Skyddas av** : **ATP** eller **EOP**
-- **Tagg** : Filtrera efter tagg för att returnera användare eller grupper som har en viss tagg. Mer information om användar flaggor finns i [User Tags](user-tags.md).
-- **Domain**
+  - **Start datum** och **slutdatum**
+  - **Proxyidentifiering**
+  - **Skyddas av** : **ATP** eller **EOP**
+  - **Tagg** : filtrera resultat efter användare eller grupper som har den angivna användar tag gen installerad (inklusive prioriterade konton). Mer information om användar flaggor finns i [User Tags](user-tags.md).
+  - **Domain**
 
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>Vyn detaljerad tabell för status rapport för hotet skydd
 
 Om du klickar på **Visa informations tabell** beror informationen som visas på diagrammet du tittade på:
+
+- **Visa data efter: översikt** : knappen för **tabell information** är tillgänglig.
 
 - **Visa data efter: innehåll \> Skadlig kod** :
 
@@ -405,7 +409,7 @@ Om du klickar på **Visa informations tabell** beror informationen som visas på
   - **Omkopplad av**
   - **Namn på skadlig kod**
 
-Om du klickar på **filter** i den här vyn kan du ändra rapporten genom **start datum** och **slutdatum** samt **identifiering** svärdet.
+  Om du klickar på **filter** i den här vyn kan du ändra rapporten genom **start datum** och **slutdatum** samt **identifiering** svärdet.
 
 - **Visa data via: åsidosättning av meddelande** :
 
@@ -418,15 +422,13 @@ Om du klickar på **filter** i den här vyn kan du ändra rapporten genom **star
   - **Kompromiss källa**
   - **Taggen**
 
-Om du klickar på **filter** i den här vyn kan du ändra rapporten med följande filter:
+  Om du klickar på **filter** i den här vyn kan du ändra rapporten med följande filter:
 
-- **Start datum** och **slutdatum**
-- **Åsidosätt orsak**
-- **Tagg** : Filtrera efter tagg för att returnera användare eller grupper som har en viss tagg. Mer information om användar flaggor finns i [User Tags](user-tags.md).
-- **Domain**
-- **Mottagare** (Observera att den här filter bara egenskapen är endast tillgänglig i vyn detaljerad tabell)
-
-**Visa data efter: översikt** : knappen för **tabell information** är tillgänglig.
+  - **Start datum** och **slutdatum**
+  - **Åsidosätt orsak**
+  - **Tagg** : filtrera resultat efter användare eller grupper som har den angivna användar tag gen installerad (inklusive prioriterade konton). Mer information om användar flaggor finns i [User Tags](user-tags.md).
+  - **Domain**
+  - **Mottagare** (Observera att den här filter bara egenskapen är endast tillgänglig i vyn detaljerad tabell)
 
 - Alla andra diagram:
 
@@ -439,14 +441,14 @@ Om du klickar på **filter** i den här vyn kan du ändra rapporten med följand
   - **Kompromiss källa**
   - **Taggen**
 
-Om du klickar på **filter** kan du ändra rapporten med följande filter:
+  Om du klickar på **filter** kan du ändra rapporten med följande filter:
 
-- **Start datum** och **slutdatum**
-- **Proxyidentifiering**
-- **Skyddas av** : **Defender för Office 365** eller **EOP**
-- **Tagg** : Filtrera efter tagg för att returnera användare eller grupper som har en viss tagg. Mer information om användar flaggor finns i [User Tags](user-tags.md).
-- **Domain**
-- **Mottagare** (Observera att den här filter bara egenskapen är endast tillgänglig i vyn detaljerad tabell)
+  - **Start datum** och **slutdatum**
+  - **Proxyidentifiering**
+  - **Skyddas av** : **Defender för Office 365** eller **EOP**
+  - **Tagg** : filtrera resultat efter användare eller grupper som har den angivna användar tag gen installerad (inklusive prioriterade konton). Mer information om användar flaggor finns i [User Tags](user-tags.md).
+  - **Domain**
+  - **Mottagare** (Observera att den här filter bara egenskapen är endast tillgänglig i vyn detaljerad tabell)
 
 ## <a name="top-malware-report"></a>Top skadlig kod-rapport
 

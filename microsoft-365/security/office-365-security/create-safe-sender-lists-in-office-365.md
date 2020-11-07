@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa om tillgängliga och önskade alternativ för att tillåta inkommande meddelanden i Exchange Online Protection (EOP).
-ms.openlocfilehash: 4009dcd506921b473e938828e5bdc10411c06ce2
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 0ab0a636cb70d98aa7c17ffe6aaec66ae1f4ecc7
+ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600327"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48945348"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Skapa listor med säkra avsändare i EOP
 
@@ -57,17 +57,17 @@ Regler för e-postflöden i Exchange Online och fristående EOP användnings vil
 
 I följande exempel förutsätts att du behöver e-post från contoso.com för att hoppa över skräp post filtrering. Gör det genom att konfigurera följande inställningar:
 
-1. **Villkor**: **avsändarens** \> **domän är** \> contoso.com.
+1. **Villkor** : **avsändarens** \> **domän är** \> contoso.com.
 
 2. Konfigurera någon av följande inställningar:
 
-   - **Regel villkor för e-postflöde**: **ett meddelande huvud** \> **innehåller något av följande ord** \> **rubrik namn**: `Authentication-Results` \> **header-värde**: `dmarc=pass` eller `dmarc=bestguesspass` .
+   - **Regel villkor för e-postflöde** : **ett meddelande huvud** \> **innehåller något av följande ord** \> **rubrik namn** : `Authentication-Results` \> **header-värde** : `dmarc=pass` eller `dmarc=bestguesspass` .
 
-     Det här villkoret kontrollerar avsändarens autentiseringskrav för den sändande e-postdomänen för att säkerställa att den sändande domänen inte är falsk. Mer information om e-postauktorisering finns i [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)och [DMARC](use-dmarc-to-validate-email.md).
+     Det här villkoret kontrollerar statusen för e-poststatus för den sändande e-postdomänen för att säkerställa att den sändande domänen inte är falsk. Mer information om e-postauktorisering finns i [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)och [DMARC](use-dmarc-to-validate-email.md).
 
    - **Lista över tillåtna IP-** adresser: Ange käll-IP-adressen eller adress intervallet i anslutnings filter principen.
   
-     Använd den här inställningen om den sändande domänen inte har någon behörighet. Var så restriktiv som möjligt när det kommer till käll-IP-adresserna i listan över tillåtna IP-adresser. Vi rekommenderar ett IP-adressintervall på/eller mindre (mindre är bättre). Använd inte IP-adressintervall som tillhör konsument tjänster (till exempel outlook.com) eller delade infrastrukturer.
+     Använd den här inställningen om den sändande domänen inte använder e-postauktorisering. Var så restriktiv som möjligt när det kommer till käll-IP-adresserna i listan över tillåtna IP-adresser. Vi rekommenderar ett IP-adressintervall på/eller mindre (mindre är bättre). Använd inte IP-adressintervall som tillhör konsument tjänster (till exempel outlook.com) eller delade infrastrukturer.
 
    > [!IMPORTANT]
    >
@@ -77,17 +77,17 @@ I följande exempel förutsätts att du behöver e-post från contoso.com för a
    >
    > - Om du tillåter en IP-adress som ligger bakom en NAT-gateway (Network Address Translation) måste du känna till de servrar som ingår i NAT-poolen för att kunna veta omfattningen av listan över tillåtna IP-adresser. IP-adresser och NAT-deltagare kan ändra. Du måste regelbundet kontrol lera listan över tillåtna IP-poster som en del av dina standard underhålls procedurer.
 
-3. **Valfria villkor**:
+3. **Valfria villkor** :
 
-   - **Avsändaren** \> **är intern/extern** \> **Utanför organisationen**: det här villkoret är implicit, men det är OK att använda det för att logga in på lokala e-postservrar som kanske inte är korrekt konfigurerade.
+   - **Avsändaren** \> **är intern/extern** \> **Utanför organisationen** : det här villkoret är implicit, men det är OK att använda det för att logga in på lokala e-postservrar som kanske inte är korrekt konfigurerade.
 
    - **Ämne eller brödtext** \> **ämne eller brödtext innehåller något av dessa ord** \> \<keywords\>: Om du kan begränsa meddelandena ytterligare med nyckelord eller fraser i ämnes raden eller meddelande texten kan du använda dessa ord som villkor.
 
-4. **Åtgärd**: Konfigurera båda de här åtgärderna i regeln:
+4. **Åtgärd** : Konfigurera båda de här åtgärderna i regeln:
 
    a. **Ändra meddelande egenskaper** \> **Ställ in nivån för skräp post (SCL)** \> **Kringgå filtrering av skräp post**.
 
-   b. **En meddelande rubrik** \> **inkluderar något av dessa ord** \> **Rubrik namn**: \<CustomHeaderName\> **header-värde**: \<CustomHeaderValue\> .
+   b. **Ändra meddelande egenskaper** \> **Ange ett meddelande huvud** : **Ange meddelande huvudet** \<CustomHeaderName\> **till värdet** \<CustomHeaderValue\> .
 
       Till exempel `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Om du har fler än en domän i regeln kan du anpassa sidhuvud texten efter behov.
 
@@ -105,7 +105,7 @@ När meddelanden hoppar över filtrering av skräp post på grund av en använda
 
 Om du inte kan använda regler för e-postflöde enligt beskrivningen ovan är nästa bästa alternativet att lägga till käll-e-postservern eller servrar i listan över tillåtna IP-adresser för anslutnings filter. Mer information finns i [Konfigurera anslutnings filtrering i EOP](configure-the-connection-filter-policy.md).
 
-**Anmärkningar**:
+**Anmärkningar** :
 
 - Det är viktigt att du behåller det minsta antalet tillåtna IP-adresser, så undvik att använda hela IP-adressintervallet när så är möjligt.
 
@@ -130,7 +130,7 @@ Högsta tillåtna gräns för dessa listor är ungefär 1000 poster; Du kan dock
 
 ## <a name="considerations-for-bulk-email"></a>Att tänka på för Mass utskick
 
-Ett SMTP-standard-e-postmeddelande består av ett *meddelandes kuvert* och meddelande innehåll. Meddelandets kuvert innehåller information som krävs för överföring och leverans av meddelandet mellan SMTP-servrar. Meddelandets innehåll innehåller fält för meddelande rubrik (gemensamt kallat *meddelande huvudet*) och meddelande texten. Meddelandets kuvert beskrivs i RFC 5321 och meddelande huvudet beskrivs i RFC 5322. Mottagarna kan aldrig se det faktiska meddelandets kuvert eftersom det är genererat av meddelande överföringen och egentligen inte ingår i meddelandet.
+Ett SMTP-standard-e-postmeddelande består av ett *meddelandes kuvert* och meddelande innehåll. Meddelandets kuvert innehåller information som krävs för överföring och leverans av meddelandet mellan SMTP-servrar. Meddelandets innehåll innehåller fält för meddelande rubrik (gemensamt kallat *meddelande huvudet* ) och meddelande texten. Meddelandets kuvert beskrivs i RFC 5321 och meddelande huvudet beskrivs i RFC 5322. Mottagarna kan aldrig se det faktiska meddelandets kuvert eftersom det är genererat av meddelande överföringen och egentligen inte ingår i meddelandet.
 
 - `5321.MailFrom`Adressen (kallas även för **e-post från** adress, P1 avsändare eller kuvert avsändare) är den e-postadress som används i SMTP-överföringen av meddelandet. Den här e-postadressen lagras normalt i huvud fältet för **RETUR-sökväg** i meddelande huvudet (även om det är möjligt för avsändaren att ange en annan e-postadress för **RETUR-sökvägen** ). Om det inte går att leverera meddelandet är det mottagaren för rapporten om utebliven leverans (kallas även för en NDR eller ett studs meddelande).
 
