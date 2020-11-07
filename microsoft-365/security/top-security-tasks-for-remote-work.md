@@ -15,16 +15,18 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Skydda dina företags meddelanden och data från cyberterrorism hot, inklusive utpressnings tro Jan, nätfiske och illvilliga filer.
-ms.openlocfilehash: e91d2c6fc3df7cbcd7fedc198747838d470ab7d8
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8f170079a5542f703376139cdd6ec4550712d0fd
+ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845426"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48944379"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>De 12 främsta aktiviteterna för säkerhets team för att stödja arbete hemifrån
 
 Om du är nöjd med [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) och plötsligt tycker att du har stöd för din egen hem arbets styrka kan vi hjälpa dig att se till att din organisation fungerar som den ska. I den här artikeln prioriteras uppgifter så att säkerhets grupper implementerar de viktigaste säkerhets funktionerna så snabbt som möjligt.
+
+![Utför de här aktiviteterna för att stöda arbete hemifrån.](../media/security/security-support-remote-work.png)
 
 Om du är en liten eller medels Tor organisation med en av Microsofts företags abonnemang kan du läsa följande resurser i stället:
 
@@ -110,7 +112,7 @@ Du måste arbeta med din Exchange Online-administratör och SharePoint Online-ad
 
 ## <a name="4-configure-microsoft-defender-for-identity"></a>4: Konfigurera Microsoft Defender för identitet
 
-[Microsoft Defender för identitet](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) är en molnbaserad säkerhets lösning som använder dina lokala Active Directory-signaler för att identifiera, upptäcka och undersöka avancerade hot, kompromissade identiteter och illasinnade Insider-åtgärder på din organisation. Fokusera på den här nästa eftersom den skyddar din lokala och moln infrastrukturen inte har några beroenden eller förutsättningar och kan ge omedelbara fördelar.
+[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) är en molnbaserad säkerhetslösning som utnyttjar dina lokala Active Directory-signaler för att identifiera, upptäcka och undersöka avancerade hot, komprometterade identiteter och illasinnade insider-åtgärder som riktas mor organisationen. Fokusera på den här nästa eftersom den skyddar din lokala och moln infrastrukturen inte har några beroenden eller förutsättningar och kan ge omedelbara fördelar.
 
 - Se [snabb starts instruktioner för Microsoft Defender för](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) att snabbt få installation
 - Titta [på videoklippet: Introduktion till Microsoft Defender för identitet](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)

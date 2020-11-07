@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: de vanligaste hot-och attack scenarierna för organisationer för sina Microsoft 365-miljöer och rekommenderade åtgärder för att minska riskerna.
-ms.openlocfilehash: b359b16042d419a06096a48ddcbc50affbcc4cd6
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 64f4491db3dc4ef18411b166fb23c4388383dae2
+ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843134"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48944310"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365-säkerhet för företags besluts fattare (BDMs)
 
@@ -30,6 +30,8 @@ Den här artikeln är ordnad efter arbets prioritet, med början från att skydd
 [![365 bild av knapp](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
 
 Microsoft tillhandahåller dig det säkra Poäng verktyget i klient organisationen för att automatiskt analysera dina Posture utifrån dina vanliga aktiviteter, tilldela Poäng och ge rekommendationer för säkerhets förbättring. Observera dina aktuella poäng och rekommendationer innan du vidtar åtgärderna i den här artikeln. Åtgärderna som rekommenderas i den här artikeln ökar din poäng. Målet är inte att uppnå det högsta antalet poäng, men att vara medveten om att möjligheter är att skydda miljön på ett sätt som inte negativt påverkar användarnas produktivitet. Se [Microsofts säkra Poäng](mtp/microsoft-secure-score.md).
+
+![Följ de här stegen för att minska riskerna med ditt företag.](../media/security/security-for-bdms-overview.png)
 
 Ett mer bra sätt innan vi sätter igång. . . Se till att [Aktivera gransknings loggen](../compliance/search-the-audit-log-in-security-and-compliance.md). Du behöver dessa data senare för att kunna undersöka en olycka eller en överträdelse. 
 
