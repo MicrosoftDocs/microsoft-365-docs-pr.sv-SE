@@ -288,40 +288,61 @@
           href: 'https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new'
         - name: En guide till GDPR-efterlevnad
           href: security-and-compliance/gdpr-compliance.md
-    - name: Hantera enheter
+    - name: Hantera enheter och programdata
+      href: devices/index.yml
       items:
-        - name: Visa och redigera principer och enheter
-          href: ../business/view-policies-and-devices.md
-        - name: Ta bort företagsdata
-          href: ../business/remove-company-data.md
-        - name: Återställa enheter till fabriksinställningar
-          href: ../business/reset-devices-to-factory-settings.md
-        - name: Mappa skyddsfunktioner till Intune-inställningar
-          href: ../business/map-protection-features-to-intune-settings.md
-        - name: Statusvärden för enheter
-          href: ../business/device-states.md
-        - name: "Programskyddsinställningar för Windows\_10-enheter"
-          href: ../business/protection-settings-for-windows-10-devices.md
-        - name: Inställningar för appskydd för Android och iOS
-          href: ../business/app-protection-settings-for-android-and-ios.md
+        - name: Skyddsmetoder för enhets- och programdata
+          href: devices/choose-device-security.md
+        - name: Dokumentation för Microsoft Intune
+          href: 'https://docs.microsoft.com/mem/intune/'
+        - name: Microsoft 365 Business Premium
           items:
-            - name: Validera inställningar på Android eller iOS
-              href: ../business/validate-settings-on-android-or-ios.md
-        - name: Redigera eller skapa inställningar för enhetsskydd för Windows 10-datorer
-          href: ../business/protection-settings-for-windows-10-pcs.md
+            - name: Visa och redigera principer och enheter
+              href: ../business/view-policies-and-devices.md
+            - name: Ta bort företagsdata
+              href: ../business/remove-company-data.md
+            - name: Återställa enheter till fabriksinställningar
+              href: ../business/reset-devices-to-factory-settings.md
+            - name: Mappa skyddsfunktioner till Intune-inställningar
+              href: ../business/map-protection-features-to-intune-settings.md
+            - name: Statusvärden för enheter
+              href: ../business/device-states.md
+            - name: "Programskyddsinställningar för Windows\_10-enheter"
+              href: ../business/protection-settings-for-windows-10-devices.md
+            - name: Inställningar för appskydd för Android och iOS
+              href: ../business/app-protection-settings-for-android-and-ios.md
+              items:
+                - name: Validera inställningar på Android eller iOS
+                  href: ../business/validate-settings-on-android-or-ios.md
+            - name: Redigera eller skapa inställningar för enhetsskydd för Windows 10-datorer
+              href: ../business/protection-settings-for-windows-10-pcs.md
+              items:
+                - name: Validera inställningar på Windows 10-datorer
+                  href: ../business/validate-settings-on-windows-10-pcs.md
+            - name: Autopilot
+              items:
+                - name: Lägga till Autopilot-enheter och -profiler
+                  href: ../business/add-autopilot-devices-and-profile.md
+                - name: Skapa och redigera AutoPilot-profiler
+                  href: ../business/create-and-edit-autopilot-profiles.md
+                - name: Skapa och redigera AutoPilot-enheter
+                  href: ../business/create-and-edit-autopilot-devices.md
+                - name: AutoPilot-profilinställningar
+                  href: ../business/autopilot-profile-settings.md
+        - name: Dokumentation om Microsoft 365 för företag
+          href: ../enterprise/index.yml
+        - name: Grundläggande Mobility and Security
           items:
-            - name: Validera inställningar på Windows 10-datorer
-              href: ../business/validate-settings-on-windows-10-pcs.md
-        - name: Autopilot
-          items:
-            - name: Lägga till Autopilot-enheter och -profiler
-              href: ../business/add-autopilot-devices-and-profile.md
-            - name: Skapa och redigera AutoPilot-profiler
-              href: ../business/create-and-edit-autopilot-profiles.md
-            - name: Skapa och redigera AutoPilot-enheter
-              href: ../business/create-and-edit-autopilot-devices.md
-            - name: AutoPilot-profilinställningar
-              href: ../business/autopilot-profile-settings.md
+            - name: Översikt över grundläggande Mobility and Security
+              href: basic-mobility-security/overview.md
+            - name: Jämför grundläggande Mobility and Security och Intune
+              href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
+            - name: Vanliga frågor och svar om grundläggande Mobility and Security
+              href: basic-mobility-security/frequently-asked-questions.md
+            - name: Funktioner i grundläggande Mobility and Security
+              href: basic-mobility-security/capabilities.md
+            - name: Jämför grundläggande Mobility and Security och Intune
+              href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
     - name: Arbeta med kunder
       href: work-with-customers/index.yml
       items:
