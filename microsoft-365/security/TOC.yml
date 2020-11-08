@@ -292,6 +292,8 @@
       items:
         - name: Översikt
           items:
+            - name: Säkerhetsöversikt
+              href: ./office-365-security/security-roadmap.md
             - name: Exchange Online Protection
               items:
                 - name: Översikt över Exchange Online Protection
@@ -318,8 +320,6 @@
               href: ./office-365-security/atp-for-spo-odb-and-teams.md
             - name: Ny Microsoft 365 säkerhetscenter
               href: ./mtp/overview-security-center.md
-            - name: Säkerhetsöversikt
-              href: ./office-365-security/security-roadmap.md
             - name: Hotutforskaren (och realtidsidentifieringar)
               href: ./office-365-security/threat-explorer.md
             - name: Översikt över Automatiska undersökningar och svar
@@ -376,7 +376,9 @@
               href: ./office-365-security/siem-server-integration.md
             - name: SIEM-integrering med Defender för Office 365
               href: ./office-365-security/siem-integration-with-office-365-ti.md
-            - name: Konfigurera principer för skydd mot nätfiske
+            - name: Säker som standard
+              href: ./office-365-security/secure-by-default.md
+            - name: Konfigurera principer för ATP-skydd mot nätfiske
               href: ./office-365-security/configure-atp-anti-phishing-policies.md
             - name: Konfigurera principer för skydd mot skadlig kod
               href: ./office-365-security/configure-anti-malware-policies.md
@@ -461,6 +463,12 @@
               href: ./office-365-security/configuration-analyzer-for-security-policies.md
             - name: Attacksimulator i Defender för Office 365
               href: ./office-365-security/attack-simulator.md
+            - name: Simulera en nätfiskeattack genom att träna på attacksimulering
+              href: ./office-365-security/attack-simulation-training.md
+            - name: Skapa en anpassad nyttolast för att träna på attacksimulering
+              href: ./office-365-security/attack-simulation-training-payloads.md
+            - name: Få insikter genom att träna på attacksimulering
+              href: ./office-365-security/attack-simulation-training-insights.md
             - name: Rekommenderade inställningar för att konfigurera EOP och Defender för Office 365-säkerhet
               href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
             - name: Metodtips för konfiguration av EOP
