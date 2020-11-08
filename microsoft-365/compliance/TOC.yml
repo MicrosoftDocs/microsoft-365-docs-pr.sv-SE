@@ -475,7 +475,7 @@
               href: change-the-size-of-pst-files-when-exporting-results.md
             - name: Inaktivera rapporter när du exporterar sökresultat
               href: disable-reports-when-you-export-content-search-results.md
-        - name: Om innehållssökning
+        - name: Referens för innehållssökning
           items:
             - name: Begränsningar för innehållssökning
               href: limits-for-content-search.md
@@ -535,6 +535,8 @@
               href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
             - name: Dekryptering i eDiscovery-verktyg
               href: ediscovery-decryption.md
+            - name: Samla in information om eDiscovery-diagnostik
+              href: ediscovery-diagnostic-info.md
             - name: Felsöka vanliga eDiscovery-problem
               href: ediscovery-troubleshooting-common-issues.md
             - name: Försöka med en misslyckad sökning igen
@@ -666,6 +668,8 @@
               href: set-up-compliance-boundaries.md
             - name: Dekryptering i eDiscovery-verktyg
               href: ediscovery-decryption.md
+            - name: Samla in information om eDiscovery-diagnostik
+              href: ediscovery-diagnostic-info.md
             - name: Söka efter eDiscovery-aktiviteter i granskningsloggen
               href: search-for-ediscovery-activities-in-the-audit-log.md
             - name: Felsöka AzCopy

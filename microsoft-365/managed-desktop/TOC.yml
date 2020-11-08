@@ -68,6 +68,11 @@
           items:
             - name: Arbeta med Microsoft Consulting Services
               href: get-ready/apps-MCS.md
+        - name: Använda verktyg för bedömning av beredskap
+          href: get-ready/readiness-assessment-tool.md
+          items:
+            - name: Åtgärda problem som hittats av verktyget för bedömning av beredskap
+              href: get-ready/readiness-assessment-fix.md
     - name: Komma igång med Microsoft Hanterat skrivbord
       href: get-started/index.md
       items:
