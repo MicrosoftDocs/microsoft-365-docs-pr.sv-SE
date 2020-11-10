@@ -1,5 +1,5 @@
 ---
-title: Åtgärda problem som upptäckts av verktyget för bedömning av beredskap
+title: Åtgärda problem som hittats av verktyget för bedömning av beredskap
 description: Detaljerade åtgärder att vidta för varje problem som verktyget hittar
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 642de80e1a133f212b7afb6774d9aab2eeaabdbf
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: c342ea9f662d883883755d2f67e5c25ffabddf83
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941415"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948415"
 ---
-# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Åtgärda problem som upptäckts av verktyget för bedömning av beredskap
+# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Åtgärda problem som hittats av verktyget för bedömning av beredskap
 
 För varje kontroll rapporteras ett av fyra möjliga resultat:
 
@@ -242,7 +242,7 @@ Du har en "uppdatera ring"-princip som är riktad till alla enheter, alla använ
 
 **Rådgivare**
 
-Se till att eventuella uppdaterings rings principer du har exkluderar den **moderna arbets platsen – alla** Azure AD-grupper. Anvisningar finns i [hantera program uppdateringar för Windows 10 i Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure). **Moderna arbets plats enheter-alla** Azure AD-grupper är en dynamisk grupp som vi skapar när du registrerar dig på Microsoft Managed Desktop, så att du måste komma tillbaka till den här gruppen efter registrering.
+Se till att eventuella uppdaterings rings principer du har exkluderar den **moderna arbets ytans enheter-alla** Azure AD-grupper. Om du har tilldelat Azure AD-gruppgruppen till dessa principer kontrollerar du att eventuella uppdaterings rings principer du även har exkluderat den **moderna arbets platsen – alla** Azure AD-grupper som innehåller hanterade Microsoft-användare. Anvisningar finns i [hantera program uppdateringar för Windows 10 i Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure). Både den **moderna arbets ytan-alla** och **moderna arbets platser – alla** Azure AD-grupper tilldelas grupper som vi skapar när du registrerar dig på Microsoft Managed Desktop, så att du måste komma tillbaka till den här gruppen efter registreringen.
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory-inställningar

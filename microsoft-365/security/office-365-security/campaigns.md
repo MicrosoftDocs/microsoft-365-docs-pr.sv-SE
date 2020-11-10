@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Lär dig mer om kampanjmallar i Microsoft Defender för Office 365.
-ms.openlocfilehash: 181b6ce5859dd5146512fe854c983b6b9096d8c6
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 1e5754e077d4c1b8f685b5dea1f8a59985e08a13
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941361"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948487"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Kampanjmallar i Microsoft Defender för Office 365
 
@@ -115,9 +115,9 @@ Den mest grundläggande filtreringen du kan göra är start datum och slut tid.
 
 Om du vill filtrera vyn ytterligare kan du utföra en enskild egenskap med filtrering av flera värden genom att klicka på knappen **kampanj typ** , välja och sedan klicka på **Uppdatera**.
 
-De tillgängliga kampanj egenskaperna beskrivs i följande lista:
+De filter bara kampanj egenskaper som är tillgängliga i knappen **kampanj typ** beskrivs i följande lista:
 
-- Basic
+- **Grundläggande** :
   - **Kampanj typ** : Välj **skadlig** eller **Phish**. Om du avmarkerar valen är det samma resultat som att markera båda.
   - **Kampanj namn**
   - **Kampanj under typ**
@@ -127,23 +127,26 @@ De tillgängliga kampanj egenskaperna beskrivs i följande lista:
   - **Ämne**
   - **Namn på bifogad fil**
   - **Familjen skadlig program vara**
+  - **Taggar** : användare eller grupper som har den angivna användar tag gen används (inklusive prioriterade konton). Mer information om användar flaggor finns i [User Tags](user-tags.md).
+  - **Systemåsidosättningar**
   - **Leverans åtgärd**
+  - **Ytterligare åtgärd**
+  - **Riktning**
   - **Detekterings teknologi**
-  - **Taggen**
+  - **Ursprunglig leverans plats**
+  - **Senaste leverans plats**
   - **Systemåsidosättningar**
 
-- Avancerat
+- **Avancerat** :
   - **Internet meddelande-ID** : tillgängligt i fältet **meddelande-ID** i meddelande huvudet. Ett exempel värde är `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (Observera vinkelparenteser).
   - **ID för nätverks meddelande** : ett GUID-värde som är tillgängligt i huvudet **X-MS-Exchange-Organization-Network-meddelande-ID** i meddelande huvudet.
   - **Avsändarens IP**
   - **Bilaga SHA256** : om du vill hitta SHA256-hash-värdet för en fil i Windows kör du följande kommando i kommando tolken: `certutil.exe -hashfile "<Path>\<Filename>" SHA256` .
-
   - **Kluster-ID**
-
   - **ID för aviserings policy**
+  - **ZAP URL-signal**
 
-- Garanteras
-
+- **Webb adresser** :
   - **URL-domän**
   - **URL-domän och sökväg**
   - **:**

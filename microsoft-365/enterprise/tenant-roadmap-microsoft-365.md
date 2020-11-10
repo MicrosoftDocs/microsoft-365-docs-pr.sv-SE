@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: Översikten för konfiguration av klient organisationer för Microsoft 365.
-ms.openlocfilehash: 038d9b0d94b84d184f0d9d9b250d0ee4d2c19de9
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: d2640a036eedda0b0962a15a03dcf0211ea0209b
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753972"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948403"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Klient organisations översikt för Microsoft 365
 
@@ -66,7 +66,7 @@ Med Microsoft 365 multi-geo kan din organisation utöka sin Microsoft 365-närva
 
 Mer information finns i [Microsoft 365 multi-geo](microsoft-365-multi-geo.md).
 
-## <a name="manage-multiple-microsoft-365-tenant"></a>Hantera flera Microsoft 365-klient organisationer 
+## <a name="manage-multiple-microsoft-365-tenants"></a>Hantera flera Microsoft 365-klient organisationer 
 
 Trots att en enda klient organisation för din oganization är idealisk kan du vara en av många organisationer som har flera innehavare. Det kan vara bra att inkludera fusioner och förvärv, du vill ha en administrativ isolering eller ett avcentraliserat.
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig mer om hur EOP och Office 365 skyddar dig mot skräp post, nätfiske och dataexekveringsskydd genom att lägga till ett säkerhets tips längst upp i e-postmeddelandena.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3da52a8ef2913c30c281fec74f92142847e29792
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0e204021bfd79dabd4abdeefaa990da50915eaf0
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201989"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948463"
 ---
 # <a name="safety-tips-in-email-messages"></a>Säkerhetstips i e-postmeddelanden
 
@@ -47,14 +47,6 @@ Säkerhets tipset – ett färgkodat meddelande – varnar dig om potentiellt sk
     ![Skärm bild som visar ett grönt säkerhets tips.](../../media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
 
     Förutom osäkra meddelanden berättar vi också om giltiga meddelanden från avsändare som vi litar på med ett grönt säkerhets tips. Ett grönt säkerhets tips i ett e-postmeddelande innebär att vi kontrollerade avsändaren av meddelandet och kontrollerat att det är säkert. Microsoft bevarar den här listan över betrodda avsändare som innehåller ekonomiska organisationer och andra som ofta är falska eller personifierade.
-
-- Ofiltrerad e-post (grå säkerhets tips).
-
-    ![Skärm bild som visar ett grått säkerhets tips.](../../media/c4d0cf8f-08e9-4c84-beee-1d9e0b022e0a.png)
-
-    Vi meddelar dig när vi hoppade över kontrollen av ett e-postmeddelande eftersom det kommer från en avsändare som du litar på listan Betrodda avsändare eller om det finns en regel för att kringgå filtrering.
-
-    Det grå säkerhets tipset visas också när externa bilder blockeras, det vill säga att meddelandet finns i Inkorgen och inte verkar vara skräp post, men som innehåller externa bilder som du inte har valt att ladda ner.
 
 ## <a name="working-with-safety-tips"></a>Arbeta med säkerhets tips
 

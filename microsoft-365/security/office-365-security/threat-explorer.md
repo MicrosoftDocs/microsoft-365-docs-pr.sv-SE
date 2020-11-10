@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Lär dig hur du använder Utforskaren och real tids identifiering i &amp; Center för säkerhets kontroll för att undersöka och reagera på hot effektivt och effektivt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a1aff37cc845e09be332b853aa938cb66fdb43f
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 561e4c62922a4da0789111de5c3be7844bb83692
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941493"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948499"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer och real tids identifiering
 
@@ -45,7 +45,6 @@ Med den här rapporten kan du:
 - [Starta en automatiserad undersökning och svars process från en vy i Utforskaren](#start-automated-investigation-and-response) (endast för Office 365 abonnemang 2)
 - ... [Undersök skadlig e-post och mycket mer](#more-ways-to-use-explorer-or-real-time-detections).
 
-
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Upplev förbättringar av Threat Explorer och identifiering i real tid
 
 ### <a name="tags-in-threat-explorer"></a>Taggar i Threat Explorer
@@ -65,6 +64,7 @@ Kolumnerna som visas i e-postrutnätet innehåller alla Taggar som har kopplats 
 > ![Filtrera märkord i vyn e-post](../../media/tags-grid.png)
 
 #### <a name="filtering"></a>Paketfilter
+
 Nu har vi taggar som ett filter så att du bara kan upptäcka bara över prioriterade konton eller specifika användar märknings scenarier (och till och med exkludera resultat med vissa taggar som en del av den här versionen). Genom att kombinera dessa med de andra filter som vi tillhandahåller, kan du begränsa omfattningen av undersökningen
 
 [![Filtrera märkord ](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
@@ -113,11 +113,11 @@ Med utfällbar e-post-fliken > information kan du nu se det speciella hotet för
 
 Förutom att identifiera alla leverans-och efter leverans händelser ger vyn tids linje också information om det hot som identifieras vid den tidpunkten för en delmängd av dessa händelser. Här får du mer information om ytterligare åtgärder (till exempel ZAP, manuell reparation) tillsammans med resultatet av den åtgärden. Vyn tids linje innehåller information om den ursprungliga leveransen och därefter eventuella efter leverans händelser utförda på ett e-postmeddelande.
 
--   Källa: det kan vara administratören/systemet/användaren baserat på vad som var händelsen.
--   Händelse: Detta inkluderar händelser på den översta nivån som ursprunglig leverans, manuell justering, ZAP, inlämning och dynamisk leverans.
--   Åtgärd: det här gäller för den åtgärd som gjorts antingen som en del av en ZAP-eller administratörs åtgärd (t. ex. mjuk borttagning).
--   Hot: omfattar hoten (skadlig program vara, Phish, spam) som identifieras vid den tidpunkten.
--   Resultat/Detaljer: Här finns mer information om resultatet av åtgärden, om det utfördes som en del av ZAP/administratörs åtgärd.
+- Källa: det kan vara administratören/systemet/användaren baserat på vad som var händelsen.
+- Händelse: Detta inkluderar händelser på den översta nivån som ursprunglig leverans, manuell justering, ZAP, inlämning och dynamisk leverans.
+- Åtgärd: det här gäller för den åtgärd som gjorts antingen som en del av en ZAP-eller administratörs åtgärd (t. ex. mjuk borttagning).
+- Hot: omfattar hoten (skadlig program vara, Phish, spam) som identifieras vid den tidpunkten.
+- Resultat/Detaljer: Här finns mer information om resultatet av åtgärden, om det utfördes som en del av ZAP/administratörs åtgärd.
 
 ### <a name="original-and-latest-delivery-location"></a>Ursprunglig och senaste leverans plats
 
@@ -170,15 +170,15 @@ Systemåsidosättningar är en metod för att skapa undantag till den avsedda le
 
 De förbättringar som prioriteras mot URL och URL klickar på data inkluderar:
 
- - Visar fullständig URL-adress (inklusive frågeparametrar som är en del av URL) i avsnittet klickningar i URL-utfällbar. För närvarande visar vi URL-domänen och sökvägen i namn listen. Vi förlänger den informationen för att visa hela webb adressen.
+- Visar fullständig URL-adress (inklusive frågeparametrar som är en del av URL) i avsnittet klickningar i URL-utfällbar. För närvarande visar vi URL-domänen och sökvägen i namn listen. Vi förlänger den informationen för att visa hela webb adressen.
 
- - Korrigeringar via URL-filter (URL kontra URL-domän kontra URL-domän): vi har gjort uppdateringar för att söka efter meddelanden som innehåller en URL-adress/klicka på Verdict. Som en del av det har vi aktiverat stöd för sökning av protokoll oberoende (vilket betyder att du kan söka efter en URL utan http). Som standard mappas URL-sökning till http, om inget annat anges. Till exempel:
+- Korrigeringar via URL-filter (URL kontra URL-domän kontra URL-domän): vi har gjort uppdateringar för att söka efter meddelanden som innehåller en URL-adress/klicka på Verdict. Som en del av det har vi aktiverat stöd för sökning av protokoll oberoende (vilket betyder att du kan söka efter en URL utan http). Som standard mappas URL-sökning till http, om inget annat anges. Till exempel:
 
-   1. Sök med och utan `http://` prefix i "URL", "URL Domain" och "URL Domain and Path", filter fält. Det här är konsekvent och bör visa samma resultat.
+  1. Sök med och utan `http://` prefix i "URL", "URL Domain" och "URL Domain and Path", filter fält. Det här är konsekvent och bör visa samma resultat.
 
-   1. Sök efter `https://` prefixet i "URL". När det inte `http://` anges används prefixet.
+  1. Sök efter `https://` prefixet i "URL". När det inte `http://` anges används prefixet.
 
-   1. `/` i början och slutet av "URL-sökväg", "URL-domän", "URL-domän och sökväg" ignoreras. `/` i slutet av fältet "URL" ignoreras.
+  1. `/` i början och slutet av "URL-sökväg", "URL-domän", "URL-domän och sökväg" ignoreras. `/` i slutet av fältet "URL" ignoreras.
 
 ### <a name="phish-confidence-level"></a>Phish konfidensnivå
 
@@ -247,12 +247,13 @@ Du kan också exportera listan med riktade användare till en gräns på 3000 ti
 > [!div class="mx-imgBorder"]
 > ![Vanligaste riktade användare](../../media/Top_Targeted_Users.png)
 
-
 ### <a name="exchange-transport-rules"></a>Exchange Transport-regler
+
 Som en del av data berikning bör du även kunna se alla olika transport regler som används för ett meddelande. Den här informationen visas i vyn e-post-rutnät (om du vill visa det väljer du kolumn alternativ i rutnätet och Lägg till Exchange-transportläge från kolumn alternativen i rutnätet) samt information som visas i e-postmeddelandet.
 Du kan se både GUID och namnet på de transport regler som har lagts till i meddelandet. Dessutom kan du söka efter meddelanden med hjälp av namnet på transport regeln. Det här är en "innehåller"-sökning vilket innebär att du kan söka i vissa sökningar.
 
 #### <a name="important-note"></a>Viktigt Obs!
+
 Exchange Sök-och namn tillgänglighet beror på vilken roll som har tilldelats dig. Du måste ha någon av följande roller/behörigheter för att kunna visa Exchange namn och sökning.  Om du inte har någon av följande roller kopplade till dig kan du inte se namnen på transport reglerna och söka efter meddelanden med hjälp av Exchange-namnen. Men du kan se Exchange etikett och GUID-information i e-postinformationen. Det går inte att visa poster i e-postrutnät, e-flyouts, filter och export påverkas inte.
 
 - Endast EXO – förhindra data förlust: alla
