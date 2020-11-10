@@ -1,16 +1,16 @@
-- name: Komma igång med kunskapshantering
+- name: Komma igång med kunskaps hantering
   items:
-    - name: Översikt över kunskapshantering
+    - name: Översikt över kunskaps hantering
       href: knowledge-management-overview.md
-    - name: Översikt över ämnescenter
+    - name: Översikt över ämnes Center
       href: topic-center-overview.md
-    - name: Arbeta med ämnen i ämnescentret
+    - name: Arbeta med ämnen i ämnes centret
       href: work-with-topics.md
-    - name: Ge användarna behörighet till ämnescentret
+    - name: Ge användare behörighet till ämnes centret
       href: give-user-permissions-to-the-topic-center.md
 - name: Komma igång med installationen
   items:
-    - name: Ställ in kunskapshantering
-      href: set-up-knowledge-network.md
-    - name: Hantera ditt kunskapshanteringsnätverk
-      href: manage-knowledge-network.md
+    - name: Konfigurera kunskaps hantering
+      href: set-up-topic-experiences.md
+    - name: Hantera ditt kunskaps hanterings nätverk
+      href: topic-experiences-discovery.md
