@@ -469,8 +469,10 @@
               href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
             - name: Project Server 2010
               href: project-server-2010-end-of-support.md
-- name: Säkerhet och efterlevnad
-  href: 'https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap'
+- name: Säkerhet
+  href: 'https://docs.microsoft.com/microsoft-365/security/'
+- name: Efterlevnad
+  href: 'https://docs.microsoft.com/microsoft-365/compliance/'
 - name: Molntjänster
   items:
     - name: Översikt
