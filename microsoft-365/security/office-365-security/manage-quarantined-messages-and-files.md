@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig att visa och hantera meddelanden i karantän för alla användare i Exchange Online Protection (EOP). Administratörer i organisationer med Microsoft Defender för Office 365 kan också hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams.
-ms.openlocfilehash: b6f6f47dc227d3bada425d02784a8aff5da8b3d3
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9d58f8c08d994e5e9736c8223239b54e52c4edab
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842934"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951053"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Hantera meddelanden och filer i karantän som administratör i EOP
 
@@ -127,14 +127,6 @@ Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav 
    När du har angett sökvillkor klickar du på ![knappen Uppdatera](../../media/scc-quarantine-refresh.png) **Uppdatera** , så filtreras resultatet.
 
 När du har hittat ett specifikt meddelande i karantän väljer du meddelandet för att visa information om det och vidta åtgärder för det (till exempel visa, släpp, ladda ned eller ta bort meddelandet).
-
-#### <a name="export-message-results"></a>Exportera meddelanderesultat
-
-1. Markera de meddelanden du är intresserad av och klicka på **Exportera resultat**.
-
-2. Klicka på **Ja** i bekräftelsemeddelandet som varnar dig om att webbläsarfönstret ska vara öppet.
-
-3. När exporten är klar kan du namnge och välja nedladdningsplats för .csv-filen.
 
 #### <a name="view-quarantined-message-details"></a>Visa information om meddelanden i karantän
 
@@ -255,14 +247,6 @@ I organisationer med Defender för Office 365 kan administratörer hantera filer
    - **Principtyp**
 
 När du har hittat en viss fil i karantän väljer du filen för att visa information om den och för att utföra en åtgärd på den (till exempel Visa, släppa, ladda ned eller ta bort meddelandet).
-
-#### <a name="export-file-results"></a>Exportera fil resultat
-
-1. Välj de filer du är intresse rad av och klicka på **Exportera resultat**.
-
-2. Klicka på **Ja** i bekräftelsemeddelandet som varnar dig om att webbläsarfönstret ska vara öppet.
-
-3. När exporten är klar kan du namnge och välja nedladdningsplats för .csv-filen.
 
 #### <a name="view-quarantined-file-details"></a>Visa fil information i karantän
 

@@ -16,16 +16,16 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Den här artikeln innehåller resurser för användare som använder Office 2007 eller Office 2010 för att hjälpa dem planera sin uppgradering.
-ms.openlocfilehash: 4fa340f2dfa8091aba962da475f5ffb883ba4e3f
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 3193be0fb7b386f78ed4bdb9b80f2a2da72102b4
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920274"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951145"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planera uppgraderingen från Office 2007 eller Office 2010-servrar och-klienter
 
-*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Den här artikeln gäller både Microsoft 365 för Enterprise och Office 365 för företag.*
 
 Om din organisation använder äldre versioner av Office-produkter och servrar är det dags att börja planera uppgraderingen. Office 2007-produkter och-tjänster har nått [Supportens slut](upgrade-from-office-2007-servers-and-products.md). För Office 2010-produkter och-tjänster:
 
@@ -47,9 +47,9 @@ Microsoft 365 är ett sätt att digitalt omvandla ditt företag som kontinuerlig
 |Resurspool|Beskrivning|
 |---|---|
 |[Microsoft 365](https://www.microsoft.com/microsoft-365)|Få information om versioner av Microsoft 365.|
-|[Microsoft 365-dokumentation](https://docs.microsoft.com/microsoft-365/business/)|Få detaljerad information om versionen av Microsoft 365 för små och medel stora företag.|
-|[Microsoft 365 Education-dokumentation](https://docs.microsoft.com/microsoft-365/education/)|Få detaljerad information om den version av Microsoft 365 för utbildnings organisationer.|
-|[Microsoft 365 Enterprise-dokumentation](https://docs.microsoft.com/microsoft-365/enterprise/)|Få detaljerad information om versionen av Microsoft 365 för företags organisationer.|
+|[Microsoft 365 för företag-dokumentation](https://docs.microsoft.com/microsoft-365/business/)|Få detaljerad information om versionen av Microsoft 365 för små och medel stora företag.|
+|[Microsoft 365 för utbildning](https://docs.microsoft.com/microsoft-365/education/)|Få detaljerad information om den version av Microsoft 365 för utbildnings organisationer.|
+|[Microsoft 365 för företags dokumentation](https://docs.microsoft.com/microsoft-365/enterprise/)|Få detaljerad information om versionen av Microsoft 365 för företags organisationer.|
 |||
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>Vad händer om jag inte uppgraderar?

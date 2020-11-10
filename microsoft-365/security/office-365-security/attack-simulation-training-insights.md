@@ -1,5 +1,5 @@
 ---
-title: Få insikter genom att öva på att simulera attacker
+title: Få insikter genom att träna på attacksimulering
 ms.author: daniha
 author: danihalfin
 manager: dansimp
@@ -10,15 +10,15 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-description: Lär dig hur du arbetar med attacker i Microsoft 365 Security Center och få insikter från simulering och utbildning.
-ms.openlocfilehash: 180ddc773b5a299692e40ddc558d3b3a89f4093b
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+description: Lär dig hur utbildning för att simulera attacker i Microsoft 365 Security Center påverkar anställda och får insikter från simulering och utbildning.
+ms.openlocfilehash: 80b8c275d1d64dd3dbd6509309fb88cd641734e3
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944534"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48950989"
 ---
-# <a name="gain-insights-through-attack-simulation-training"></a>Få insikter genom att öva på att simulera attacker
+# <a name="gain-insights-through-attack-simulation-training"></a>Få insikter genom att träna på attacksimulering
 
 Med utbildning för att simulera attacker tillhandahåller Microsoft dig insikter baserade på resultat från simuleringar och utbildning som anställda gick igenom. Dessa insikter hjälper dig med att informera dina anställda om hot och att rekommendera nästa steg för att bättre förbereda dina anställda och din miljö för attacker.
 
@@ -38,14 +38,20 @@ I diagrammet kan du se:
 
 Dessutom visas `<number> less susceptible to phishing` skillnaden mellan det faktiska antalet anställda som äventyras av angreppet och det uppskattade kompromiss priset. Det här antalet anställda är mindre troligt att det äventyras genom liknande attacker i framtiden, samtidigt som `<percent%> better than predicted rate` det visar hur de anställda hade stor till gång till den förväntade kompromissen.
 
-![Kurs kort i Översikt över hantering av angrepp](../../media/attack-sim-preview-behavior-impact-card.png)
+> [!div class="mx-imgBorder"]
+> ![Kurs kort i Översikt över hantering av angrepp](../../media/attack-sim-preview-behavior-impact-card.png)
 
 Om du vill se en mer detaljerad rapport klickar du på **Visa simuleringar och kurs effektivitets rapport** som ger samma information om ytterligare kontext från själva simuleringen, som simulerings teknik och totalt antal användare riktade till sig.
 
 ## <a name="recommended-actions"></a>Rekommenderade åtgärder
 
-På fliken [ **simuleringar**](https://security.microsoft.com/attacksimulator?viewid=simulations) kommer du till simulerings uppgifter. Här hittar du avsnittet **rekommenderade åtgärder** .
+På fliken [ **simuleringar**](https://security.microsoft.com/attacksimulator?viewid=simulations)kommer du till simulerings uppgifter. Här hittar du avsnittet **rekommenderade åtgärder** .
 
 Rekommendationer för rekommenderade åtgärder som är tillgängliga i [Microsofts säkra Poäng](../mtp/microsoft-secure-score.md). Dessa rekommendationer är baserade på den nytto last som används i simuleringen och hjälper dig att skydda dina anställda och din miljö. Om du klickar på varje åtgärd för förbättring kommer du till dess uppgifter.
 
-![Avsnittet rekommendations åtgärder i utbildning för simulering av attacker](../../media/attack-sim-preview-recommended-actions.png)
+> [!div class="mx-imgBorder"]
+> ![Avsnittet rekommendations åtgärder i utbildning för simulering av attacker](../../media/attack-sim-preview-recommended-actions.png)
+
+## <a name="related-links"></a>Relaterade länkar
+
+**Angrepps Simulator** [skapa en simulering av nätfiske-attack](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide) och [skapa en nytto last för utbildning av dina kontakter](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads?view=o365-worldwide)
