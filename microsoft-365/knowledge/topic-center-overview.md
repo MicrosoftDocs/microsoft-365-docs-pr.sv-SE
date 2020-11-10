@@ -11,19 +11,19 @@ ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: d87a52bc6aca2f033a6e0d26a8c9c0e167908759
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 39a851ed3613057c7b3b931a94a79fed235d277a
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906971"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988836"
 ---
 # <a name="topic-center-overview-preview"></a>Översikt över avsnitts Center (för hands version)
 
 > [!Note] 
 > Innehållet i den här artikeln gäller för projekt cortex privat för hands version. [Läs mer om Project Cortex](https://aka.ms/projectcortex).
 
-Ämnes Center är en modern SharePoint-webbplats som fungerar som en grupp kunskap för organisationen. Det skapas vid [konfiguration av kunskaps hantering](set-up-knowledge-network.md) i administrations centret för Microsoft 365.
+Ämnes Center är en modern SharePoint-webbplats som fungerar som en grupp kunskap för organisationen. Det skapas vid [konfiguration av kunskaps hantering](set-up-topic-experiences.md) i administrations centret för Microsoft 365.
 
 Ämnes Center har en standard start sida där du kan se avsnitten som du har anslutit till eller föreslog att de ska vara anslutna till. Användare med rätt behörighet kan också:
 
@@ -36,7 +36,7 @@ ms.locfileid: "48906971"
 
 ## <a name="where-is-the-topic-center"></a>Var finns ämnes Center
 
-Ditt ämnes Center skapas under Inställningar för kunskaps hantering. När installationen är slutförd kan administratören hitta URL-adressen på [sidan hantering av kunskaps Center](manage-knowledge-network.md).
+Ditt ämnes Center skapas under Inställningar för kunskaps hantering. När installationen är slutförd kan administratören hitta URL-adressen på [sidan hantering av kunskaps Center](topic-experiences-discovery.md).
 
 1. I administrations centret för Microsoft 365 väljer du **Konfigurera** i navigerings fönstret och väljer **Anslut personer till kunskap** i avsnittet **organisationsinformation** .
 
@@ -46,7 +46,7 @@ Ditt ämnes Center skapas under Inställningar för kunskaps hantering. När ins
 
 ## <a name="home-page"></a>Start sida
 
-Om du vill visa ämnes Center måste du ha behörighet att Visa ämnen och ämnena. Administratören kan tilldela dessa behörigheter till användare under [inställning av kunskaps hantering](set-up-knowledge-network.md), eller så kan nya användare [läggas till senare](give-user-permissions-to-the-topic-center.md) av en administratör via administrations centret för Microsoft 365.
+Om du vill visa ämnes Center måste du ha behörighet att Visa ämnen och ämnena. Administratören kan tilldela dessa behörigheter till användare under [inställning av kunskaps hantering](set-up-topic-experiences.md), eller så kan nya användare [läggas till senare](give-user-permissions-to-the-topic-center.md) av en administratör via administrations centret för Microsoft 365.
 
 På Start Sidan 
 - **Visa ämnen** : Visa avsnitts upplevelser. Så att du kan se ämnen i organisationen och ge feedback om ämnen där du är ansluten:
@@ -59,7 +59,7 @@ När jag har fäst kan du redigera sidan för att granska min anslutning.
 
 ## <a name="permissions-to-use-the-manage-topics-capability-topic-center"></a>Behörighet att använda ämnes Center för hantera ämnen
 
-Om du vill arbeta i avsnittet hantera ämnen i ämnes Center måste du ha den behörighet som krävs. Administratören kan tilldela dessa behörigheter till användare under [inställning av kunskaps hantering](set-up-knowledge-network.md), eller så kan nya användare [läggas till senare](give-user-permissions-to-the-topic-center.md) av en administratör via administrations centret för Microsoft 365.
+Om du vill arbeta i avsnittet hantera ämnen i ämnes Center måste du ha den behörighet som krävs. Administratören kan tilldela dessa behörigheter till användare under [inställning av kunskaps hantering](set-up-topic-experiences.md), eller så kan nya användare [läggas till senare](give-user-permissions-to-the-topic-center.md) av en administratör via administrations centret för Microsoft 365.
 
 Användare av ämnes Center kan få två uppsättningar behörigheter:
 

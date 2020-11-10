@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig att använda en angrepps Simulator för att köra simulerade nät för nätfiske och lösen ord i Microsoft 365 E5-eller Microsoft Defender för Office 365 plan 2-organisationer.
-ms.openlocfilehash: b7d04b3c81791bfc107b48176373ffc84fc8f6c5
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0698d5d97dcedec05e76728379971fad2ab669c6
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846002"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988570"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Angrepps Simulator i Microsoft Defender för Office 365
 
@@ -35,6 +35,9 @@ Om din organisation har Microsoft Defender för Office 365 abonnemang 2, som inn
 
 > [!NOTE]
 > Information om attack simulering och utbildning relaterade data lagras med andra kunddata för Microsoft 365-tjänster. Mer information finns i [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations).
+
+> [!TIP]
+> Utbildning för attack simulering är tillgängligt för offentlig för hands version i Microsoft 365 säkerhets Center. Ta en titt på [simulera ett nät fiske angrepp med Microsoft Defender för Office 365](attack-simulation-training.md) för mer information.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 

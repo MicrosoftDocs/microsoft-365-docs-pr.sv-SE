@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Få insikter i de Microsoft Teams-appar som används i din organisation genom att hämta rapporten Microsoft Teams-programmet användning från Microsoft 365-rapporter.
-ms.openlocfilehash: deda550b3ffc4209f718d36a3010605edbc1102b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 928ba7bbe4d4753499e71b347baffafa7441f5b5
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636979"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988534"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 365-rapporter i administrations Center – användning av Microsoft Teams-enheter
 
@@ -61,5 +61,4 @@ Du kan också exportera rapport data till en Excel. csv-fil genom att välja **E
 |Webb  <br/> |Markerad om användaren varit aktiv i Teams-webbklienten på enheter.|
 |Datum för senaste aktivitet (UTC)  <br/> |Det sista datum (UTC) som användaren deltog i en team aktivitet.  <br/> |
 |Är licensierad|Markerad om användaren är licensierad för att använda Teams.|
-|Aktivitet i gruppen totalt|Totalt antal team aktiviteter under den valda tids perioden. |
 |||

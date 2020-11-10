@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du hämtar användar aktivitets rapporten för Microsoft Teams och få insikter om Teams-aktiviteten i din organisation.
-ms.openlocfilehash: 8ce29b43e6238883470d1159ad1d22fefca88792
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b85f073a2916b646a5a03e62913de44b410ca058
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637073"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988476"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 365-rapporter i administrations Center – användar aktivitet för Microsoft Teams
 
@@ -44,7 +44,7 @@ Du kan visa användar aktiviteten i Teams-rapporten genom att välja fliken **an
 
 Välj **Välj kolumner** för att lägga till eller ta bort kolumner i rapporten.  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
 
-Du kan också exportera rapport data till en Excel. csv-fil genom att välja **Exportera** -länken. Då exporteras data för alla användare och du kan göra enkel sortering och filtrering för vidare analys. Om du har mindre än 2 000 användare kan du sortera och filtrera i tabellen i själva rapporten. Om du har fler än 2 000 användare måste du exportera data för att kunna filtrera och sortera. Det exporterade formatet för **ljud tids**-, **video** -och **skärm delnings tid** följer iso8601.
+Du kan också exportera rapport data till en Excel. csv-fil genom att välja **Exportera** -länken. Då exporteras data för alla användare och du kan göra enkel sortering och filtrering för vidare analys. Om du har mindre än 2 000 användare kan du sortera och filtrera i tabellen i själva rapporten. Om du har fler än 2 000 användare måste du exportera data för att kunna filtrera och sortera. Det exporterade formatet för **ljud tids** -, **video** -och **skärm delnings tid** följer iso8601.
 
 |Objekt|Beskrivning|
 |:-----|:-----|
@@ -59,5 +59,5 @@ Du kan också exportera rapport data till en Excel. csv-fil genom att välja **E
 |Möten organiserade adhoc <br/> |Antalet möten som inte har schemalagts i den kalender som användaren organiserade under den angivna tids perioden. <br/>|
 |Schemalagda möten  <br/> |Antalet schemalagda möten som en användare organiserat under den angivna tids perioden.  <br/> |
 |Är licensierad |Markerad om användaren är licensierad för att använda Teams.|
-|Annan aktivitet|Användaren anses vara aktiv men har ett nollvärde för chatt meddelanden, 1:1-samtal, kanal meddelanden, totala möten och möten ordnade metriska värden. Exempel på åtgärder är när en användare öppnar ett kanal meddelande inlägg men inte svarar eller när ett privat meddelande tas emot och det läses men inte besvaras. |
+|Annan aktivitet|Användaren är aktiv men har gjort andra aktiviteter än utsatta åtgärds typer i rapporten (skickar eller svarar på kanal meddelanden och chattar, schemalägger eller deltar i 1:1-samtal och-möten). Exempel på åtgärder är när en användare ändrar team status eller team status meddelandet eller öppnar ett meddelande inlägg, men som inte svarar. |
 |||

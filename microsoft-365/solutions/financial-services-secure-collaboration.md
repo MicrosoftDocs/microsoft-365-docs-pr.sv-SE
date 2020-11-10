@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: Institutioner för finansiella tjänster kan hålla ekonomiska säkerhets efterlevnad och effektivt samarbeta med Microsoft 365 och Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: 8bc9e965029414dadc39757b926949f3f60afc16
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 7192b29d09acb23df368e2458fac62c18bbbadb2
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906913"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988720"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Viktig information om efterlevnad och säkerhet för amerikanska banker och stora marknader
 
@@ -164,7 +164,7 @@ I Microsoft 365 kan alla organisationer identifiera känsliga data i organisatio
 * **Microsoft Information Protection (MIP)** för både användardefinierad klassificering och automatisk klassificering av känsliga data.
 * **Office 365-dataförlustskydd (DLP)** för automatisk identifiering av känsliga data med känsliga datatyper (med andra ord, vanliga uttryck) samt nyckelord och policyhantering.
 
-Med **[Microsoft Information Protection (MIP)](../compliance/protect-information.md)** kan organisationer klassificera dokument och e-postmeddelanden på ett intelligent sätt med hjälp av känslighetsetiketter. Du kan använda känslighetsetiketter manuellt av användare för dokument i Microsoft Office-program och e-postmeddelanden i Outlook. Etiketterna kan automatiskt använda dokumentmarkeringar, skydd via kryptering och hantering av rättigheter. Du kan också använda känslighetsetiketter automatiskt genom att konfigurera principer som använder nyckelord och känsliga datatyper (till exempel kreditkortsnummer, socialförsäkringsnummer och identitetsnummer) för att automatiskt hitta och klassificera känsliga data.
+Med **[Microsoft Information Protection (MIP)](../compliance/information-protection.md)** kan organisationer klassificera dokument och e-postmeddelanden på ett intelligent sätt med hjälp av känslighetsetiketter. Du kan använda känslighetsetiketter manuellt av användare för dokument i Microsoft Office-program och e-postmeddelanden i Outlook. Etiketterna kan automatiskt använda dokumentmarkeringar, skydd via kryptering och hantering av rättigheter. Du kan också använda känslighetsetiketter automatiskt genom att konfigurera principer som använder nyckelord och känsliga datatyper (till exempel kreditkortsnummer, socialförsäkringsnummer och identitetsnummer) för att automatiskt hitta och klassificera känsliga data.
 
 Dessutom tillhandahåller Microsoft "träningsbara klassificerare" som använder maskininlärningsmodeller för att identifiera känsliga data baserat på innehållet, i motsats till att bara genom mönstermatchning eller genom elementen i innehållet. En klassificerare får reda på hur du identifierar en typ av innehåll genom att titta på flera exempel på innehållet som ska klassificeras. Att utbilda en klassificerare börjar med att ge det exempel på innehåll i en viss kategori. När den har lärt sig från dessa exempel testas modellen genom att ge den en blandning av matchande och icke matchande exempel. I klassificeraren förutsägs om ett visst exempel är i kategorin eller inte. En person bekräftar sedan resultaten, sorterar positiva, negativa, falska positiva och falska negativa för att öka noggrannheten i klassificerarens förutsägelser. När den utbildade klassificeraren publiceras bearbetar den innehåll i Microsoft SharePoint Online, Exchange Online och OneDrive för företag och klassificerar automatiskt innehållet.
 

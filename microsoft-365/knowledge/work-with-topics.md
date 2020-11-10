@@ -11,12 +11,12 @@ ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: d2fd3df200ab350ca3e6595402bab17034d960a7
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 464a926b99cceeb652756ad6d1456c5e17d2a925
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906925"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988744"
 ---
 # <a name="work-with-topics-in-the-topic-center-preview"></a>Arbeta med ämnen i ämnes centret (för hands version)
 
@@ -28,7 +28,7 @@ I ämnes Center kan en kunskaps chef granska ämnen som har mined och upptäckts
 
 ## <a name="requirements"></a>Krav
 
-För att kunna arbeta i ämnes centret måste du ha nödvändig behörighet. Din administratör kan lägga till dig under [Inställningar för kunskaps hantering](set-up-knowledge-network.md), eller så kan nya användare [läggas till senare](give-user-permissions-to-the-topic-center.md).
+För att kunna arbeta i ämnes centret måste du ha nödvändig behörighet. Din administratör kan lägga till dig under [Inställningar för kunskaps hantering](set-up-topic-experiences.md), eller så kan nya användare [läggas till senare](give-user-permissions-to-the-topic-center.md).
 
 Användare av ämnes Center kan få två uppsättningar behörigheter:
 
@@ -72,7 +72,7 @@ Så här granskar du ett bekräftat ämne:
 3. Du kan avvisa det också
 
 ## <a name="review-published-topics"></a>Granska publicerade ämnen
-Publicerade ämnen har redigerats så att specifika-informationen alltid visas för alla som betecknar sidan. Här visas manuellt avsnitt.
+Publicerade ämnen har redigerats så att viss information alltid visas för alla som stöter på sidan. Här visas manuellt avsnitt.
 
    
 ## <a name="create-a-new-topic"></a>Skapa ett nytt ämne
