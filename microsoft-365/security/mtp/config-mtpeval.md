@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 88db2182ec1a3250d2f4308858026fec97a2f91b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 5259c7b74446ad273ff9b1ae0baccd339e34baa3
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844110"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984956"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Konfigurera Microsoft 365 Defender-pelaren för utvärderings labbet eller pilot miljön
 
@@ -68,13 +68,13 @@ Förberedelsen är viktig för eventuell distribution. I den här artikeln vägl
 ## <a name="microsoft-365-defender-pillars"></a>Microsoft 365 Defender-pelare
 Microsoft 365 Defender består av fyra pelare. Även om en pelare redan kan ge ett värde till din organisations säkerhet i ditt nätverk, ger de fyra hög365 Defender-stenarna det mest aktuella värdet.
 
-![Bild of_Microsoft 365 Defender-lösning för användare, Microsoft Defender för identitet för slut punkter Microsoft Defender för slut punkter, moln program, Microsoft Cloud App-säkerhet och för data, Microsoft Defender för Office 365](../../media/mtp-eval-31.png)
+![Bild of_Microsoft 365 Defender-lösning för användare, Microsoft Defender för identitet för slut punkter Microsoft Defender för slut punkter, moln program, Microsoft Cloud App-säkerhet och för data, Microsoft Defender för Office 365](../../media/mtp/m365pillars.png)
 
 I det här avsnittet får du hjälp att konfigurera:
 -   Microsoft Defender för Office 365
--   Microsoft Defender för identitet 
+-   Microsoft Defender for Identity 
 -   Microsoft Cloud App Security
--   Microsoft Defender för slut punkt
+-   Microsoft Defender för Endpoint
 
 
 ## <a name="configure-microsoft-defender-for-office-365"></a>Konfigurera Microsoft Defender för Office 365
@@ -288,7 +288,7 @@ Det finns en PowerShell-modul som heter *Office 365 Advanced Threat Protection (
 
     ![Knappen bild of_Save inställningar som du måste klicka på](../../media/mtp-eval-72.png)
 
-## <a name="start-the-microsoft-365-defender-service"></a>Starta Microsoft 365 Defender-tjänsten
+## <a name="start-the-microsoft-365-defender-service"></a>Starta tjänsten Microsoft 365 Defender
 
 >[!NOTE]
 >Från och med den 1 juni 2020, aktiverar Microsoft automatiskt Microsoft 365 Defender-funktioner för alla kvalificerade klient organisationer. Mer information finns i den här [artikeln i Microsoft Tech community](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) . 
