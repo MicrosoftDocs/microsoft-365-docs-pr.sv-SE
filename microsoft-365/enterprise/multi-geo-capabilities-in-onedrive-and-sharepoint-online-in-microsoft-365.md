@@ -18,16 +18,16 @@ ms.collection:
 localization_priority: Normal
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Utöka din Microsoft 365-närvaro till flera geografiska regioner med flera geo-funktioner i OneDrive online.
-ms.openlocfilehash: 84abfc01d5073889e998347f58d4a3e8bb29ea33
-ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+ms.openlocfilehash: 8f42b071abef0602304f1a468190c33700fe3e82
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48930183"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995915"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>Multi-geo-funktioner i OneDrive och SharePoint Online
 
-Multi-geo-funktioner i OneDrive och SharePoint Online möjliggör kontroll över det land eller den region där delade resurser som SharePoint-gruppwebbplatser och Microsoft 365-grupppost lådor lagras på resten.
+Multi-geo-funktioner i OneDrive och SharePoint Online möjliggör kontroll av delade resurser som SharePoint-gruppwebbplatser och Microsoft 365-grupppost lådor som lagras i andra länder eller regioner.
 
 Varje användare, grupp post låda och SharePoint-webbplats har en önskad data plats (PDL) som anger den Geo-plats där relaterade data ska lagras. Användares person uppgifter (Exchange-postlåda och OneDrive) tillsammans med alla Microsoft 365-grupper eller SharePoint-webbplatser som de skapar kan lagras på angiven Geo-plats för att uppfylla data de kraven. Du kan [ange olika administratörer för varje Geo-plats](add-a-sharepoint-geo-admin.md).
 

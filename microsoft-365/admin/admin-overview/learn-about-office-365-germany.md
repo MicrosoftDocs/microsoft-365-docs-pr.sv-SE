@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Lär dig mer om Office 365 Germany.
-ms.openlocfilehash: b0b370399cc7687f3c564903d01bd07f447dc16a
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8b999ecbd2e429ad8a60fa60de1ad3a06664f085
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843336"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995863"
 ---
 # <a name="learn-about-office-365-germany"></a>Läs om Office 365 Germany
 
@@ -43,7 +43,7 @@ Kundernas behov har flyttats och isoleringen av Office 365 Germany uppställt gr
 
 Plan erbjudanden för Office 365 för Tyskland justeras så mycket som möjligt i denna isolerade miljö. Undantag från detta omfattar Yammer-relaterade abonnemang, abonnemang som är på väg att löpa ut och abonnemang som är tillgängliga genom program för ideell verksamhet. Office 365 E5, SPE och andra tjänster kommer att vara tillgängliga efter allmän tillgänglighet av Office 365 Germany. 
   
-Följande tjänster och funktioner är tillgängliga en del [Office 365 Germany-abonnemang](https://go.microsoft.com/fwlink/p/?linkid=839016). Mer information finns i [användarvillkor för onlinetjänster](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46).
+Följande tjänster och funktioner är tillgängliga en del [Office 365 Germany-abonnemang](https://go.microsoft.com/fwlink/p/?linkid=839016). Mer information finns i [användarvillkor för onlinetjänster](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46).
   
 - Microsoft 365-appar för Enterprise, Office 2016 och Office 2013<sup>1</sup>. Observera att Office 2013 kräver att du [använder modern office 365 med Office-klienter](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016).
     
@@ -85,7 +85,7 @@ Följande tjänster och funktioner är tillgängliga en del [Office 365 Germany-
     
 - Delve
     
-<sup>1</sup> Office 365 Germany-abonnemang innehåller klient program vara som är installerade och körs på slutanvändarens enhet (klient program program), till exempel Microsoft 365-appar för Enterprise, Office 2013 och Office 2016. Klientprogramvarorna ansluter inte bara till tyska datacenter och kan göra det möjligt för slutanvändare att komma åt onlinetjänster som inte är en del av de [tyska onlinetjänsterna](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58). När det gäller ditt avtal med Microsoft ingår klientprogramvara inte i de [tyska onlinetjänsterna](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58). Åtaganden vad gäller att data sparas i Tyskland samt åtkomststyrningen av den tyska dataförvaltaren gäller endast för de [tyska onlinetjänsterna](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58).
+<sup>1</sup> Office 365 Germany-abonnemang innehåller klient program vara som är installerade och körs på slutanvändarens enhet (klient program program), till exempel Microsoft 365-appar för Enterprise, Office 2013 och Office 2016. Klientprogramvarorna ansluter inte bara till tyska datacenter och kan göra det möjligt för slutanvändare att komma åt onlinetjänster som inte är en del av de [tyska onlinetjänsterna](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58). När det gäller ditt avtal med Microsoft ingår klientprogramvara inte i de [tyska onlinetjänsterna](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58). Åtaganden vad gäller att data sparas i Tyskland samt åtkomststyrningen av den tyska dataförvaltaren gäller endast för de [tyska onlinetjänsterna](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58).
   
 ## <a name="general-information"></a>Allmän information
 
