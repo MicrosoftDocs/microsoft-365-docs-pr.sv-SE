@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur du skapar, ändrar och tar bort de avancerade AntiPhishing-principer som är tillgängliga i organisationer med Microsoft Defender för Office 365.
-ms.openlocfilehash: ecc68a8dc050a5f08c6982b023861e0ea8976775
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 7665d0dc475909d04da209aa6c1cd6b12378f8a9
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920662"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993394"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Konfigurera AntiPhishing-principer i Microsoft Defender för Office 365
 
@@ -170,7 +170,10 @@ Använd följande procedurer för att ändra anti-nätfiske-principer: en ny pri
      Om du vill redigera en befintlig post markerar du den skyddade användaren i listan.
 
      > [!NOTE]
-     > Du kan ha högst 60 användare i alla nät fiske principer. Med andra ord kan du ha 60-skyddade användare i en princip, 12 skyddade användare i 5 principer etc.
+     >
+     > - I varje skydds princip kan du ange högst 60 skyddade användare (avsändarens e-postadress). Du kan inte ange samma skyddade användare i flera principer.
+     >
+     > - Användarautentisering fungerar inte om avsändaren och mottagaren tidigare kommunicerat via e-post. Om avsändaren och mottagaren aldrig har kommunicerat via e-post identifieras meddelandet som ett personifierings försök.
 
    - **Lägg till domäner att skydda** : Konfigurera en eller båda av följande inställningar:
 
@@ -178,7 +181,7 @@ Använd följande procedurer för att ändra anti-nätfiske-principer: en ny pri
      - **Inkludera anpassade domäner** : standardvärdet är **inaktiverat**. Om du vill aktivera funktionen drar du växlings knappen till **på på** och anger sedan domän namnet (till exempel contoso.com) i rutan **Lägg till domäner** , trycker på RETUR och upprepar efter behov.
 
      > [!NOTE]
-     > Du kan ha högst 50 domäner i alla nät fiske principer. Med andra ord kan du ha 50-skyddade användare i en princip, 10 skyddade användare i 5 principer osv.
+     > Du kan ha högst 50 domäner i alla nät fiske principer.
 
    - **Åtgärder** : Klicka på **Redigera**
 

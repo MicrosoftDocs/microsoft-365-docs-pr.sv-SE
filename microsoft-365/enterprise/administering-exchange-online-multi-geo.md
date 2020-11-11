@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: Lär dig hur du hanterar Exchange Online multi-geo-inställningar i din Microsoft 365-miljö med PowerShell.
-ms.openlocfilehash: ea7090cd65634138f9677960beab7770825a6e86
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: c9219d29a1fdae68075d296404a6c2aeab30f1aa
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950682"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993382"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Administrera Exchange Online-postlådor i en multi-geo-miljö
 
@@ -93,11 +93,11 @@ Get-OrganizationConfig | Select DefaultMailboxRegion
 
 Cmdleten **Get-Mailbox** in Exchange Online PowerShell visar följande multi-geo-relaterade egenskaper i post lådorna:
 
-- **Databas**: de första 3 bokstäverna i databas namnet motsvarar geo-koden, vilket anger var post lådan finns. För online-arkiv-post lådor ska egenskapen **ArchiveDatabase** användas.
+- **Databas** : de första 3 bokstäverna i databas namnet motsvarar geo-koden, vilket anger var post lådan finns. För online-arkiv-post lådor ska egenskapen **ArchiveDatabase** användas.
 
-- **MailboxRegion**: anger den Geo-plats kod som angavs av administratören (synkroniserad från **PREFERREDDATALOCATION** i Azure AD).
+- **MailboxRegion** : anger den Geo-plats kod som angavs av administratören (synkroniserad från **PREFERREDDATALOCATION** i Azure AD).
 
-- **MailboxRegionLastUpdateTime**: anger när MailboxRegion senast uppdaterades (antingen automatiskt eller manuellt).
+- **MailboxRegionLastUpdateTime** : anger när MailboxRegion senast uppdaterades (antingen automatiskt eller manuellt).
 
 Använd följande syntax för att visa de här egenskaperna för en post låda:
 
@@ -160,21 +160,39 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 >   - Antalet post lådor som flyttas.
 >   - Tillgängligheten för att flytta resurser.
 
-### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a>Flytta inaktiverade post lådor som har en tvist kvar
+### <a name="move-an-inactive-mailbox-to-a-specific-geo"></a>Flytta en inaktiv post låda till en viss geo
 
-Inaktiverade post lådor i tvist spärr som bevaras för eDiscovery kan inte flyttas genom att ändra deras **PreferredDataLocation** -värde i inaktiverat läge. Så här flyttar du en inaktive rad post låda i en tvist:
+Du kan inte flytta inaktiva post lådor som bevaras i enlighet (till exempel post lådor på rättsliga håll) genom att ändra deras **PreferredDataLocation** -värde. Gör så här om du vill flytta en inaktiv post låda till en annan geo:
 
-1. Koppla tillfälligt en licens till post lådan.
+1. Återställ den inaktiva post lådan. Anvisningar finns i [återställa en inaktiv post låda](https://docs.microsoft.com/microsoft-365/compliance/recover-an-inactive-mailbox).
 
-2. Ändra **PreferredDataLocation**.
+2. Förhindra att hanteraren för hanterade mappar bearbetar den återställda post lådan genom att ersätta den \<MailboxIdentity\> med namn, alias, konto eller e-postadress för post lådan och köra följande kommando i [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
 
-3. Ta bort licensen från post lådan efter att den har flyttats till den valda geo-platsen för att den ska vara inaktive rad.
+    ```powershell
+    Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $true
+    ```
+
+3. Tilldela en **Exchange Online abonnemang 2** -licens till den återställda post lådan. Det här steget krävs för att återställa post lådan på den juridiska processen. Anvisningar finns i [tilldela licenser till användare](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
+
+4. Konfigurera **PreferredDataLocation** -värdet i post lådan enligt beskrivningen i föregående avsnitt.
+
+5. När du har bekräftat att post lådan har flyttats till den nya geo-platsen placerar du den återställda post lådan igen i arbets gruppen. Anvisningar finns i [lägga till en post låda med undantag](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold#place-a-mailbox-on-litigation-hold).
+
+6. När du har verifierat att den kvarhållna processen är på plats kan du låta den hanterade mappstrukturen bearbeta post lådan igen genom att ersätta den \<MailboxIdentity\> med namn, alias, konto eller e-postadress för post lådan och köra följande kommando i [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
+
+    ```powershell
+    Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $false
+    ```
+
+7. Gör post lådan inaktiv igen genom att ta bort det användar konto som är kopplat till post lådan. Anvisningar finns i [ta bort en användare från din organisation](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user). I det här steget ges även Exchange Online abonnemang 2-licensen för andra användnings områden.
+
+**Obs!** när du flyttar en inaktiv post låda till en annan Geo-plats kan du påverka innehållet Sök resultat eller möjligheten att söka i post lådan från den tidigare geo-platsen. Mer information finns i [söka efter och exportera innehåll i multi-geo-miljöer](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments).
 
 ## <a name="create-new-cloud-mailboxes-in-a-specific-geo-location"></a>Skapa nya moln post lådor på en viss Geo-plats
 
 Om du vill skapa en ny post låda på en specifik Geo-plats måste du göra något av följande:
 
-- Konfigurera **PreferredDataLocation** -värdet enligt beskrivningen i föregående avsnitt *innan* post lådan skapas i Exchange Online. Konfigurera till exempel värdet **PreferredDataLocation** för en användare innan du tilldelar en licens.
+- Konfigurera **PreferredDataLocation** -värdet enligt beskrivningen ovan [flytta en befintlig moln-Only-postlåda till ett specifikt Geo-plats-](#move-an-existing-cloud-only-mailbox-to-a-specific-geo-location) avsnitt *innan* du skapar post lådan i Exchange Online. Konfigurera till exempel värdet **PreferredDataLocation** för en användare innan du tilldelar en licens.
 
 - Tilldela en licens samtidigt ställer du in **PreferredDataLocation** -värdet.
 
@@ -201,7 +219,7 @@ New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "E
 Mer information om hur du skapar nya användar konton och hittar LicenseAssignment värden i Azure AD PowerShell finns i [skapa användar konton med PowerShell](create-user-accounts-with-microsoft-365-powershell.md) och [Visa licenser och tjänster med PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
 
 > [!NOTE]
-> Om du använder Exchange Online PowerShell för att aktivera en post låda och behöver post lådan på en Geo-plats som anges i **PreferredDataLocation**, måste du använda en Exchange Online-cmdlet, till exempel **Aktivera-post låda** eller **ny-post låda** direkt mot moln tjänsten. Om du använder cmdleten **Enable-RemoteMailbox** i lokal Exchange PowerShell skapas post lådan på den centrala geo-platsen.
+> Om du använder Exchange Online PowerShell för att aktivera en post låda och behöver post lådan på en Geo-plats som anges i **PreferredDataLocation** , måste du använda en Exchange Online-cmdlet, till exempel **Aktivera-post låda** eller **ny-post låda** direkt mot moln tjänsten. Om du använder cmdleten **Enable-RemoteMailbox** i lokal Exchange PowerShell skapas post lådan på den centrala geo-platsen.
 
 ## <a name="onboard-existing-on-premises-mailboxes-in-a-specific-geo-location"></a>Befintliga lokala post lådor på en viss Geo-plats
 

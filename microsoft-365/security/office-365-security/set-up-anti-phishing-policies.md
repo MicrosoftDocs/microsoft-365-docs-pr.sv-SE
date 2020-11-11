@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om vilka phishing-principer som är tillgängliga i Exchange Online Protection (EOP) och Microsoft Defender för Office 365.
-ms.openlocfilehash: c1254ccdc678bd25c2d3481b0a43cca5ff9816c0
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: b54f452fb984f61913f2ade53ad45ed169a43832
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919782"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993360"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-nätfiske-principer i Microsoft 365
 
@@ -97,7 +97,7 @@ Följande inställningar för förfalskning är tillgängliga i principer för n
   > [!NOTE]
   >
   > - Skydd mot förfalskning är aktiverat som standard i standard AntiPhishing-principen och i alla nya anpassade Antivirus principer som du skapar.
-  > 
+  >
   > - Du behöver inte inaktivera skydd mot förfalskning om din MX-post inte pekar på Microsoft 365; du aktiverar bättre filtrering för kopplingar i stället. Anvisningar finns i [utökad filtrering för kopplingar i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
   För meddelanden från blockerade avsändare som inte är falska kan du även ange vilken åtgärd som ska vidtas:
@@ -158,7 +158,10 @@ Följande inställningar för personifiering är bara tillgängliga i policy mot
   Du kan använda skyddade användare för att lägga till e-postadresser för intern och extern avsändare för att skydda mot användning av personifiering. Den här listan över **avsändare** som skyddas från användarautentisering skiljer sig från listan över **mottagare** som principen gäller för (alla mottagare av standard principen, specifika mottagare **enligt inställningarna i avsnittet** [princip inställningar](#policy-settings) ).
 
   > [!NOTE]
-  > Det maximala antalet skyddade användare (avsändarens e-postadresser) som du kan definiera i alla anti-nätfiske-principer är 60. Med andra ord kan du ha 60-skyddade användare i en princip, 12 skyddade användare i 5 principer etc.
+  >
+  > - I varje skydds princip kan du ange högst 60 skyddade användare (avsändarens e-postadress). Du kan inte ange samma skyddade användare i flera principer.
+  >
+  > - Användarautentisering fungerar inte om avsändaren och mottagaren tidigare kommunicerat via e-post. Om avsändaren och mottagaren aldrig har kommunicerat via e-post identifieras meddelandet som ett personifierings försök.
 
   Standardinställningen är att inga e-postadresser för avsändare har kon figurer ATS för personifieringsnivå för **användare att skydda**. Därför är inte e-postadresserna för avsändare täckta av personifiering, antingen i standard principen eller i anpassade principer.
 
@@ -167,7 +170,7 @@ Följande inställningar för personifiering är bara tillgängliga i policy mot
 - **Domäner att skydda** : förhindrar att de angivna domänerna personifieras **i meddelandets avsändares domän**. Till exempel alla domäner som du äger ([godkända domäner](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) eller specifika domäner (domäner som du äger eller partner domäner). Den här listan över **avsändare** som skyddas mot personifiering skiljer sig från listan över **mottagare** som principen gäller för (alla mottagare av standard principen, specifika mottagare **enligt inställningarna i avsnittet** [princip inställningar](#policy-settings) ).
 
   > [!NOTE]
-  > Det maximala antalet skyddade domäner som du kan definiera i alla anti-nätfiske-principer är 50. Med andra ord kan du ha 50 skyddade domäner i en princip, 10 skyddade domäner i 5 principer osv.
+  > Det maximala antalet skyddade domäner som du kan definiera i alla anti-nätfiske-principer är 50.
 
   Som standard är inga avsändare konfigurerade för personifierings skydd i **domäner att skydda**. Därför täcks inte heller inga avsändare via personifiering, antingen i standard principen eller i anpassade principer.
 

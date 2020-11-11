@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: Konfigurera innehållstolkning i Project Cortex
-ms.openlocfilehash: 6078b41f8911301d343925c5bf895e881abddffe
-ms.sourcegitcommit: 88c2461b14cd16f74979f4bcd0a9ad18e4422cb3
+ms.openlocfilehash: 8f1ebd70f932bce874efc19f525b549f6717f532
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48469727"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988690"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Konfigurera SharePoint Syntex
 
@@ -65,7 +65,7 @@ Som administratör kan du också göra ändringar i dina valda inställningar n�
     
 5. På sidan **Skapa innehållscenter** kan du skapa en SharePoint-webbplats för innehållscenter där dina användare kan skapa och hantera modeller för dokumenttolkning.
 
-    1. För **Webbplatsnamn**skriver du namnet som du vill använda på webbplatsen för innehållscenter.
+    1. För **Webbplatsnamn** skriver du namnet som du vill använda på webbplatsen för innehållscenter.
     
     1. **Webbplatsens adress** kommer att visa URL:en för din webbplats baserat på vad du valde som webbplatsnamn. Om du vill ändra det klickar du på **Redigera**.
 
@@ -92,10 +92,10 @@ För att tilldela licenser:
 
 3. Välj **Tilldela fler**.
 
-4. Välj **Intelligenta innehållstjänster**. Under **Appar**ser du till att **Gemensam datatjänst för Intelligenta innehållstjänster** och **Intelligenta innehållstjänster** båda är markerade.
+4. Välj **SharePoint Syntex**. Under **Appar** kontrollerar du att **Common Data Service for SharePoint Syntex** , **SharePoint Syntex** och **SharePoint Syntex – SPO-typ** är alla markerade.
 
     > [!div class="mx-imgBorder"]
-    > ![SharePoint Syntex licenser i Administrationscenter för Microsoft 365](../media/content-understanding/sharepoint-syntex-licenses.png)
+    > ![SharePoint Syntex-licenser i Administrationscentret för Microsoft 365](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. Klicka på **Spara ändringar**.
 
