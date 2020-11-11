@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: Institutioner för finansiella tjänster kan hålla ekonomiska säkerhets efterlevnad och effektivt samarbeta med Microsoft 365 och Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: 7192b29d09acb23df368e2458fac62c18bbbadb2
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: 2e0148a89a811fb910237469c42e136d0c744087
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988720"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993406"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Viktig information om efterlevnad och säkerhet för amerikanska banker och stora marknader
 
@@ -46,6 +46,15 @@ I sektorn för finansiella tjänster måste du noga överväga för konfiguratio
 * Skydd mot dataexfiltration och insiderrisk
 
 Som Microsoft-partner bidrog Protiviti till och gav viktig feedback till den här artikeln.
+
+Följande nedladdningsbara illustrationer kompletterar den här artikeln. Woodgrove Bank och Contoso används för att visa hur de funktioner som beskrivs i den här artikeln kan användas för att lösa vanliga föreskrifter för finansiella tjänster. Du kan anpassa illustrationerna för eget bruk. 
+
+**Microsoft 365 illustrationer för informationsskydd och efterlevnad**
+
+| Objekt | Beskrivning |
+|:-----|:-----|
+|[![Modellaffisch: Microsoft 365 illustrationer för informationsskydd och efterlevnadsfunktioner](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Ladda ned som PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [Hämta som Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Uppdaterades: Oktober 2020|Innehåller: <ul><li>  Microsoft Informationsskydd och dataförlustskydd </li><li>Kvarhållningsprinciper och -etiketter </li><li>Informationsbarriärer</li><li>Kommunikationsefterlevnad</li><li>Intern risk</li><li>Datainmatning för tredje part</li>|
+
 
 ## <a name="empower-organizational-and-employee-productivity-by-using-microsoft-365-and-teams"></a>Möjliggör produktivitet i organisationer och hos anställda genom att använda Microsoft 365 och Teams
 
