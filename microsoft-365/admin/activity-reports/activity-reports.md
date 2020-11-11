@@ -20,209 +20,213 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Få regelbundna rapporter om hur personer i organisationen använder Microsoft 365-tjänster. Med instrumentpanelen för översikt över användning kan du granska varje diagram för fler insikter.
-ms.openlocfilehash: dee0f3e586c49c25daafe999d065e743babf020e
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: 9c3416f415c43377669b2c032e10696343c4416f
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779126"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988464"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center"></a><span data-ttu-id="bd358-104">Microsoft 365-rapporter i administrationscentret</span><span class="sxs-lookup"><span data-stu-id="bd358-104">Microsoft 365 Reports in the admin center</span></span>
+# <a name="microsoft-365-reports-in-the-admin-center"></a><span data-ttu-id="c8fd5-104">Microsoft 365-rapporter i administrationscentret</span><span class="sxs-lookup"><span data-stu-id="c8fd5-104">Microsoft 365 Reports in the admin center</span></span>
 
-<span data-ttu-id="bd358-p102">Du ser enkelt hur personer i företaget använder Microsoft 365-tjänster. Du kan till exempel identifiera vem som använder en tjänst mycket och når kvoter och vem som kanske inte behöver någon Microsoft 365-licens alls.</span><span class="sxs-lookup"><span data-stu-id="bd358-p102">You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Microsoft 365 license at all.</span></span>
+<span data-ttu-id="c8fd5-p102">Du ser enkelt hur personer i företaget använder Microsoft 365-tjänster. Du kan till exempel identifiera vem som använder en tjänst mycket och når kvoter och vem som kanske inte behöver någon Microsoft 365-licens alls.</span><span class="sxs-lookup"><span data-stu-id="c8fd5-p102">You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Microsoft 365 license at all.</span></span>
   
-<span data-ttu-id="bd358-p103">Rapporter är tillgängliga för de senaste 7 dagarna, 30 dagarna, 90 dagarna och 180 dagarna. Det finns inte direktdata för alla rapporteringsperioder. Rapporterna blir tillgängliga inom 48 timmar.</span><span class="sxs-lookup"><span data-stu-id="bd358-p103">Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.</span></span>
+<span data-ttu-id="c8fd5-p103">Rapporter är tillgängliga för de senaste 7 dagarna, 30 dagarna, 90 dagarna och 180 dagarna. Det finns inte direktdata för alla rapporteringsperioder. Rapporterna blir tillgängliga inom 48 timmar.</span><span class="sxs-lookup"><span data-stu-id="c8fd5-p103">Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.</span></span>
   
-<span data-ttu-id="bd358-110">I den här videon finns information om hur du kan använda rapporterna:</span><span class="sxs-lookup"><span data-stu-id="bd358-110">Watch this video for on overview: on how you can use the reports:</span></span>
+<span data-ttu-id="c8fd5-110">I den här videon finns information om hur du kan använda rapporterna:</span><span class="sxs-lookup"><span data-stu-id="c8fd5-110">Watch this video for on overview: on how you can use the reports:</span></span>
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fb726f8e-aead-43b2-ba0f-53ba5b886bf7?autoplay=false]
   
-## <a name="how-to-get-to-the-reports-dashboard"></a><span data-ttu-id="bd358-111">Så här öppnar du instrumentpanelen Rapporter</span><span class="sxs-lookup"><span data-stu-id="bd358-111">How to get to the Reports dashboard</span></span>
+## <a name="how-to-get-to-the-reports-dashboard"></a><span data-ttu-id="c8fd5-111">Så här öppnar du instrumentpanelen Rapporter</span><span class="sxs-lookup"><span data-stu-id="c8fd5-111">How to get to the Reports dashboard</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="bd358-112">I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>.</span><span class="sxs-lookup"><span data-stu-id="bd358-112">In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.</span></span>
+1. <span data-ttu-id="c8fd5-112">I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>.</span><span class="sxs-lookup"><span data-stu-id="c8fd5-112">In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.</span></span>
 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="bd358-113">I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a> går du till sidan **Rapporter** \> **Användning** .</span><span class="sxs-lookup"><span data-stu-id="bd358-113">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Reports** \> **Usage** page.</span></span>
+1. <span data-ttu-id="c8fd5-113">I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a> går du till sidan **Rapporter** \> **Användning**.</span><span class="sxs-lookup"><span data-stu-id="c8fd5-113">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Reports** \> **Usage** page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="bd358-114">I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a> går du till sidan **Rapporter** \> **Användning** .</span><span class="sxs-lookup"><span data-stu-id="bd358-114">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Reports** \> **Usage** page.</span></span>
+1. <span data-ttu-id="c8fd5-114">I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a> går du till sidan **Rapporter** \> **Användning**.</span><span class="sxs-lookup"><span data-stu-id="c8fd5-114">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Reports** \> **Usage** page.</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="bd358-115">Klicka på **Visa mer** -knappen från aktivitetskortet för en tjänst (till exempel e-post eller OneDrive) för att se rapportdetaljsidan.</span><span class="sxs-lookup"><span data-stu-id="bd358-115">Click on the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page.</span></span> <span data-ttu-id="bd358-116">Där finns olika rapporter för tjänsten i flikar.</span><span class="sxs-lookup"><span data-stu-id="bd358-116">In there different reports for the service are provided in tabs.</span></span> <br/><span data-ttu-id="bd358-117">![Instrumentpanelen Användning](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png)</span><span class="sxs-lookup"><span data-stu-id="bd358-117">![The Usage dashboard](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png)</span></span> 
+2. <span data-ttu-id="c8fd5-115">Klicka på **Visa mer** -knappen från aktivitetskortet för en tjänst (till exempel e-post eller OneDrive) för att se rapportdetaljsidan.</span><span class="sxs-lookup"><span data-stu-id="c8fd5-115">Click on the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page.</span></span> <span data-ttu-id="c8fd5-116">Där finns olika rapporter för tjänsten i flikar.</span><span class="sxs-lookup"><span data-stu-id="c8fd5-116">In there different reports for the service are provided in tabs.</span></span> <br/><span data-ttu-id="c8fd5-117">![Instrumentpanelen Användning](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png)</span><span class="sxs-lookup"><span data-stu-id="c8fd5-117">![The Usage dashboard](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png)</span></span> 
 
-## <a name="who-can-see-reports"></a><span data-ttu-id="bd358-118">Vem kan se rapporter</span><span class="sxs-lookup"><span data-stu-id="bd358-118">Who can see reports</span></span>
+## <a name="who-can-see-reports"></a><span data-ttu-id="c8fd5-118">Vem kan se rapporter</span><span class="sxs-lookup"><span data-stu-id="c8fd5-118">Who can see reports</span></span>
 
-<span data-ttu-id="bd358-119">Personer som har följande behörigheter:</span><span class="sxs-lookup"><span data-stu-id="bd358-119">People who have the following permissions:</span></span>
+<span data-ttu-id="c8fd5-119">Personer som har följande behörigheter:</span><span class="sxs-lookup"><span data-stu-id="c8fd5-119">People who have the following permissions:</span></span>
   
-- <span data-ttu-id="bd358-120">Globala administratörer: Vi rekommenderar att endast ett fåtal personer på företaget har den här rollen.</span><span class="sxs-lookup"><span data-stu-id="bd358-120">Global admins: We recommend that only a few people in your company have this role.</span></span> <span data-ttu-id="bd358-121">Det minskar riskerna för företaget.</span><span class="sxs-lookup"><span data-stu-id="bd358-121">It reduces the risk to your business.</span></span>
+- <span data-ttu-id="c8fd5-120">Globala administratörer: Vi rekommenderar att endast ett fåtal personer på företaget har den här rollen.</span><span class="sxs-lookup"><span data-stu-id="c8fd5-120">Global admins: We recommend that only a few people in your company have this role.</span></span> <span data-ttu-id="c8fd5-121">Det minskar riskerna för företaget.</span><span class="sxs-lookup"><span data-stu-id="c8fd5-121">It reduces the risk to your business.</span></span>
     
-- <span data-ttu-id="bd358-122">Exchange-administratörer</span><span class="sxs-lookup"><span data-stu-id="bd358-122">Exchange admins</span></span>
+- <span data-ttu-id="c8fd5-122">Exchange-administratörer</span><span class="sxs-lookup"><span data-stu-id="c8fd5-122">Exchange admins</span></span>
     
-- <span data-ttu-id="bd358-123">SharePoint-administratörer</span><span class="sxs-lookup"><span data-stu-id="bd358-123">SharePoint admins</span></span>
+- <span data-ttu-id="c8fd5-123">SharePoint-administratörer</span><span class="sxs-lookup"><span data-stu-id="c8fd5-123">SharePoint admins</span></span>
     
-- <span data-ttu-id="bd358-124">Skype för företag-administratörer</span><span class="sxs-lookup"><span data-stu-id="bd358-124">Skype for Business admins</span></span>
+- <span data-ttu-id="c8fd5-124">Skype för företag-administratörer</span><span class="sxs-lookup"><span data-stu-id="c8fd5-124">Skype for Business admins</span></span>
 
-- <span data-ttu-id="bd358-125">Global läsare</span><span class="sxs-lookup"><span data-stu-id="bd358-125">Global reader</span></span>
+- <span data-ttu-id="c8fd5-125">Global läsare</span><span class="sxs-lookup"><span data-stu-id="c8fd5-125">Global reader</span></span>
     
-- <span data-ttu-id="bd358-126">Rapportläsare</span><span class="sxs-lookup"><span data-stu-id="bd358-126">Reports reader</span></span>
+- <span data-ttu-id="c8fd5-126">Rapportläsare</span><span class="sxs-lookup"><span data-stu-id="c8fd5-126">Reports reader</span></span>
 
-- <span data-ttu-id="bd358-127">Administratör för Teams-tjänst</span><span class="sxs-lookup"><span data-stu-id="bd358-127">Teams Service Administrator</span></span>
+- <span data-ttu-id="c8fd5-127">Administratör för Teams-tjänst</span><span class="sxs-lookup"><span data-stu-id="c8fd5-127">Teams Service Administrator</span></span>
 
-- <span data-ttu-id="bd358-128">Administratör för Teams-kommunikation</span><span class="sxs-lookup"><span data-stu-id="bd358-128">Teams Communications Administrator</span></span>
+- <span data-ttu-id="c8fd5-128">Administratör för Teams-kommunikation</span><span class="sxs-lookup"><span data-stu-id="c8fd5-128">Teams Communications Administrator</span></span>
     
-<span data-ttu-id="bd358-129">Mer information finns i [Om administratörsroller](../add-users/about-admin-roles.md) och [Tilldela administratörsroller](../add-users/assign-admin-roles.md).</span><span class="sxs-lookup"><span data-stu-id="bd358-129">To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).</span></span>
+<span data-ttu-id="c8fd5-129">Mer information finns i [Om administratörsroller](../add-users/about-admin-roles.md) och [Tilldela administratörsroller](../add-users/assign-admin-roles.md).</span><span class="sxs-lookup"><span data-stu-id="c8fd5-129">To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).</span></span>
   
-## <a name="which-activity-reports-are-available-in-the-admin-center"></a><span data-ttu-id="bd358-130">Vilka aktivitetsrapporter är tillgängliga i administrationscentret</span><span class="sxs-lookup"><span data-stu-id="bd358-130">Which activity reports are available in the admin center</span></span>
+## <a name="which-activity-reports-are-available-in-the-admin-center"></a><span data-ttu-id="c8fd5-130">Vilka aktivitetsrapporter är tillgängliga i administrationscentret</span><span class="sxs-lookup"><span data-stu-id="c8fd5-130">Which activity reports are available in the admin center</span></span>
 
-<span data-ttu-id="bd358-131">De här rapporterna är tillgängliga, beroende på din prenumeration.</span><span class="sxs-lookup"><span data-stu-id="bd358-131">Depending on your subscription, here are the available reports.</span></span>
+<span data-ttu-id="c8fd5-131">De här rapporterna är tillgängliga, beroende på din prenumeration.</span><span class="sxs-lookup"><span data-stu-id="c8fd5-131">Depending on your subscription, here are the available reports.</span></span>
   
-- [<span data-ttu-id="bd358-132">E-postaktivitet</span><span class="sxs-lookup"><span data-stu-id="bd358-132">Email activity</span></span>](email-activity.md)
+- [<span data-ttu-id="c8fd5-132">E-postaktivitet</span><span class="sxs-lookup"><span data-stu-id="c8fd5-132">Email activity</span></span>](email-activity.md)
     
-- [<span data-ttu-id="bd358-133">Postlådeanvändning</span><span class="sxs-lookup"><span data-stu-id="bd358-133">Mailbox usage</span></span>](mailbox-usage.md)
+- [<span data-ttu-id="c8fd5-133">Postlådeanvändning</span><span class="sxs-lookup"><span data-stu-id="c8fd5-133">Mailbox usage</span></span>](mailbox-usage.md)
     
-- [<span data-ttu-id="bd358-134">Office-aktiveringar</span><span class="sxs-lookup"><span data-stu-id="bd358-134">Office activations</span></span>](microsoft-office-activations.md)
+- [<span data-ttu-id="c8fd5-134">Office-aktiveringar</span><span class="sxs-lookup"><span data-stu-id="c8fd5-134">Office activations</span></span>](microsoft-office-activations.md)
 
-- [<span data-ttu-id="bd358-135">Aktiva användare</span><span class="sxs-lookup"><span data-stu-id="bd358-135">Active Users</span></span>](active-users.md)
+- [<span data-ttu-id="c8fd5-135">Aktiva användare</span><span class="sxs-lookup"><span data-stu-id="c8fd5-135">Active Users</span></span>](active-users.md)
   
-- [<span data-ttu-id="bd358-136">Användning av e-postprogram</span><span class="sxs-lookup"><span data-stu-id="bd358-136">Email apps usage</span></span>](email-apps-usage.md)
+- [<span data-ttu-id="c8fd5-136">Användning av e-postprogram</span><span class="sxs-lookup"><span data-stu-id="c8fd5-136">Email apps usage</span></span>](email-apps-usage.md)
 
-- [<span data-ttu-id="bd358-137">Formuläraktivitet</span><span class="sxs-lookup"><span data-stu-id="bd358-137">Forms activity</span></span>](forms-activity.md)
+- [<span data-ttu-id="c8fd5-137">Formuläraktivitet</span><span class="sxs-lookup"><span data-stu-id="c8fd5-137">Forms activity</span></span>](forms-activity-ww.md)
 
-- [<span data-ttu-id="bd358-138">Forms Pro-aktivitet</span><span class="sxs-lookup"><span data-stu-id="bd358-138">Forms Pro activity</span></span>](forms-pro-activity.md)
-  
-- [<span data-ttu-id="bd358-139">Microsoft 365-grupper</span><span class="sxs-lookup"><span data-stu-id="bd358-139">Microsoft 365 groups</span></span>](office-365-groups.md)
-  
-- [<span data-ttu-id="bd358-140">Användaraktivitet i OneDrive för företag</span><span class="sxs-lookup"><span data-stu-id="bd358-140">OneDrive for Business user activity</span></span>](onedrive-for-business-activity-ww.md)
+- [<span data-ttu-id="c8fd5-138">Formuläraktivitet för US Government</span><span class="sxs-lookup"><span data-stu-id="c8fd5-138">Forms activity for US Government</span></span>](forms-activity.md)
 
-- [<span data-ttu-id="bd358-141">Användaraktivitet i OneDrive för företag för US Government</span><span class="sxs-lookup"><span data-stu-id="bd358-141">OneDrive for Business user activity for US Government</span></span>](onedrive-for-business-activity.md)
+- [<span data-ttu-id="c8fd5-139">Dynamics 365 Customer Voice-aktivitet</span><span class="sxs-lookup"><span data-stu-id="c8fd5-139">Dynamics 365 Customer Voice activity</span></span>](forms-pro-activity-ww.md)
+  
+- [<span data-ttu-id="c8fd5-140">Dynamics 365 Customer Voice-aktivitet för US Government</span><span class="sxs-lookup"><span data-stu-id="c8fd5-140">Dynamics 365 Customer Voice activity for US Government</span></span>](forms-pro-activity.md)
 
-- [<span data-ttu-id="bd358-142">OneDrive för företag-användning</span><span class="sxs-lookup"><span data-stu-id="bd358-142">OneDrive for Business usage</span></span>](onedrive-for-business-usage-ww.md)
+- [<span data-ttu-id="c8fd5-141">Microsoft 365-grupper</span><span class="sxs-lookup"><span data-stu-id="c8fd5-141">Microsoft 365 groups</span></span>](office-365-groups.md)
+  
+- [<span data-ttu-id="c8fd5-142">Användaraktivitet i OneDrive för företag</span><span class="sxs-lookup"><span data-stu-id="c8fd5-142">OneDrive for Business user activity</span></span>](onedrive-for-business-activity-ww.md)
 
-- [<span data-ttu-id="bd358-143">OneDrive för företag-användning för US Government</span><span class="sxs-lookup"><span data-stu-id="bd358-143">OneDrive for Business usage for US Government</span></span>](onedrive-for-business-usage.md)
+- [<span data-ttu-id="c8fd5-143">Användaraktivitet i OneDrive för företag för US Government</span><span class="sxs-lookup"><span data-stu-id="c8fd5-143">OneDrive for Business user activity for US Government</span></span>](onedrive-for-business-activity.md)
 
-- [<span data-ttu-id="bd358-144">Användning av Microsoft 365-appar</span><span class="sxs-lookup"><span data-stu-id="bd358-144">Microsoft 365 Apps usage</span></span>](microsoft365-apps-usage.md)
-  
-- [<span data-ttu-id="bd358-145">SharePoint-webbplatsanvändning</span><span class="sxs-lookup"><span data-stu-id="bd358-145">SharePoint site usage</span></span>](sharepoint-site-usage-ww.md)
+- [<span data-ttu-id="c8fd5-144">OneDrive för företag-användning</span><span class="sxs-lookup"><span data-stu-id="c8fd5-144">OneDrive for Business usage</span></span>](onedrive-for-business-usage-ww.md)
 
-- [<span data-ttu-id="bd358-146">SharePoint-webbplatsanvändning för US Government</span><span class="sxs-lookup"><span data-stu-id="bd358-146">SharePoint site usage for US Government</span></span>](sharepoint-site-usage.md)
-  
-- [<span data-ttu-id="bd358-147">SharePoint-aktivitet</span><span class="sxs-lookup"><span data-stu-id="bd358-147">SharePoint activity</span></span>](sharepoint-activity-ww.md)
+- [<span data-ttu-id="c8fd5-145">OneDrive för företag-användning för US Government</span><span class="sxs-lookup"><span data-stu-id="c8fd5-145">OneDrive for Business usage for US Government</span></span>](onedrive-for-business-usage.md)
 
-- [<span data-ttu-id="bd358-148">SharePoint-aktivitet för US Government</span><span class="sxs-lookup"><span data-stu-id="bd358-148">SharePoint activity for US Government</span></span>](sharepoint-activity.md)
+- [<span data-ttu-id="c8fd5-146">Användning av Microsoft 365-appar</span><span class="sxs-lookup"><span data-stu-id="c8fd5-146">Microsoft 365 Apps usage</span></span>](microsoft365-apps-usage.md)
   
-- [<span data-ttu-id="bd358-149">Aktivitet i Skype för företag – Online</span><span class="sxs-lookup"><span data-stu-id="bd358-149">Skype for Business Online activity</span></span>](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
+- [<span data-ttu-id="c8fd5-147">SharePoint-webbplatsanvändning</span><span class="sxs-lookup"><span data-stu-id="c8fd5-147">SharePoint site usage</span></span>](sharepoint-site-usage-ww.md)
+
+- [<span data-ttu-id="c8fd5-148">SharePoint-webbplatsanvändning för US Government</span><span class="sxs-lookup"><span data-stu-id="c8fd5-148">SharePoint site usage for US Government</span></span>](sharepoint-site-usage.md)
   
-- [<span data-ttu-id="bd358-150">Aktivitet relaterad till organiserad konferens i Skype för företag – Online</span><span class="sxs-lookup"><span data-stu-id="bd358-150">Skype for Business Online conference organized activity</span></span>](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)
+- [<span data-ttu-id="c8fd5-149">SharePoint-aktivitet</span><span class="sxs-lookup"><span data-stu-id="c8fd5-149">SharePoint activity</span></span>](sharepoint-activity-ww.md)
+
+- [<span data-ttu-id="c8fd5-150">SharePoint-aktivitet för US Government</span><span class="sxs-lookup"><span data-stu-id="c8fd5-150">SharePoint activity for US Government</span></span>](sharepoint-activity.md)
   
-- [<span data-ttu-id="bd358-151">Aktivitet relaterad till deltagare i konferens i Skype för företag – Online</span><span class="sxs-lookup"><span data-stu-id="bd358-151">Skype for Business Online conference participant activity</span></span>](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
+- [<span data-ttu-id="c8fd5-151">Aktivitet i Skype för företag – Online</span><span class="sxs-lookup"><span data-stu-id="c8fd5-151">Skype for Business Online activity</span></span>](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   
-- [<span data-ttu-id="bd358-152">Peer-to-peer-aktivitet i Skype för företag – Online</span><span class="sxs-lookup"><span data-stu-id="bd358-152">Skype for Business Online peer-to-peer activity</span></span>](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
+- [<span data-ttu-id="c8fd5-152">Aktivitet relaterad till organiserad konferens i Skype för företag – Online</span><span class="sxs-lookup"><span data-stu-id="c8fd5-152">Skype for Business Online conference organized activity</span></span>](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)
+  
+- [<span data-ttu-id="c8fd5-153">Aktivitet relaterad till deltagare i konferens i Skype för företag – Online</span><span class="sxs-lookup"><span data-stu-id="c8fd5-153">Skype for Business Online conference participant activity</span></span>](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
+  
+- [<span data-ttu-id="c8fd5-154">Peer-to-peer-aktivitet i Skype för företag – Online</span><span class="sxs-lookup"><span data-stu-id="c8fd5-154">Skype for Business Online peer-to-peer activity</span></span>](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
   
 ::: moniker range="o365-worldwide"
 
-- [<span data-ttu-id="bd358-153">Yammer-aktivitet</span><span class="sxs-lookup"><span data-stu-id="bd358-153">Yammer activity</span></span>](yammer-activity-report-ww.md)
+- [<span data-ttu-id="c8fd5-155">Yammer-aktivitet</span><span class="sxs-lookup"><span data-stu-id="c8fd5-155">Yammer activity</span></span>](yammer-activity-report-ww.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [<span data-ttu-id="bd358-154">Yammer-aktivitet för US Government</span><span class="sxs-lookup"><span data-stu-id="bd358-154">Yammer activity for US Government</span></span>](yammer-activity-report.md)
+- [<span data-ttu-id="c8fd5-156">Yammer-aktivitet för US Government</span><span class="sxs-lookup"><span data-stu-id="c8fd5-156">Yammer activity for US Government</span></span>](yammer-activity-report.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [<span data-ttu-id="bd358-155">Användning av Yammer-enheter</span><span class="sxs-lookup"><span data-stu-id="bd358-155">Yammer device usage</span></span>](yammer-device-usage-report-ww.md)
+- [<span data-ttu-id="c8fd5-157">Användning av Yammer-enheter</span><span class="sxs-lookup"><span data-stu-id="c8fd5-157">Yammer device usage</span></span>](yammer-device-usage-report-ww.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [<span data-ttu-id="bd358-156">Yammer enhetsanvändning för USA: s regering</span><span class="sxs-lookup"><span data-stu-id="bd358-156">Yammer device usage for US Government</span></span>](yammer-device-usage-report.md)
+- [<span data-ttu-id="c8fd5-158">Yammer enhetsanvändning för USA: s regering</span><span class="sxs-lookup"><span data-stu-id="c8fd5-158">Yammer device usage for US Government</span></span>](yammer-device-usage-report.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [<span data-ttu-id="bd358-157">Rapporten Aktivitet i Yammer-grupper</span><span class="sxs-lookup"><span data-stu-id="bd358-157">Yammer groups activity report</span></span>](yammer-groups-activity-report-ww.md)
+- [<span data-ttu-id="c8fd5-159">Rapporten Aktivitet i Yammer-grupper</span><span class="sxs-lookup"><span data-stu-id="c8fd5-159">Yammer groups activity report</span></span>](yammer-groups-activity-report-ww.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [<span data-ttu-id="bd358-158">Rapporten Aktivitet i Yammer-grupper för USA: s regering</span><span class="sxs-lookup"><span data-stu-id="bd358-158">Yammer groups activity report for US Government</span></span>](yammer-groups-activity-report.md)
+- [<span data-ttu-id="c8fd5-160">Rapporten Aktivitet i Yammer-grupper för USA: s regering</span><span class="sxs-lookup"><span data-stu-id="c8fd5-160">Yammer groups activity report for US Government</span></span>](yammer-groups-activity-report.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [<span data-ttu-id="bd358-159">Användaraktivitet för Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="bd358-159">Microsoft Teams user activity</span></span>](microsoft-teams-user-activity-preview.md)
+- [<span data-ttu-id="c8fd5-161">Användaraktivitet för Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="c8fd5-161">Microsoft Teams user activity</span></span>](microsoft-teams-user-activity-preview.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [<span data-ttu-id="bd358-160">Microsoft Teams användaraktivitet för USA: s regering</span><span class="sxs-lookup"><span data-stu-id="bd358-160">Microsoft Teams user activity for US Government</span></span>](microsoft-teams-user-activity.md)
+- [<span data-ttu-id="c8fd5-162">Microsoft Teams användaraktivitet för USA: s regering</span><span class="sxs-lookup"><span data-stu-id="c8fd5-162">Microsoft Teams user activity for US Government</span></span>](microsoft-teams-user-activity.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [<span data-ttu-id="bd358-161">Enhetsanvändning för Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="bd358-161">Microsoft Teams device usage</span></span>](microsoft-teams-device-usage-preview.md)
+- [<span data-ttu-id="c8fd5-163">Enhetsanvändning för Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="c8fd5-163">Microsoft Teams device usage</span></span>](microsoft-teams-device-usage-preview.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [<span data-ttu-id="bd358-162">Microsoft Teams enhetsanvändning för USA: s regering</span><span class="sxs-lookup"><span data-stu-id="bd358-162">Microsoft Teams device usage for US Government</span></span>](microsoft-teams-device-usage.md)
+- [<span data-ttu-id="c8fd5-164">Microsoft Teams enhetsanvändning för USA: s regering</span><span class="sxs-lookup"><span data-stu-id="c8fd5-164">Microsoft Teams device usage for US Government</span></span>](microsoft-teams-device-usage.md)
 
 ::: moniker-end
 
-## <a name="how-to-view-licensing-information"></a><span data-ttu-id="bd358-163">Så här visar du licensinformation</span><span class="sxs-lookup"><span data-stu-id="bd358-163">How to view licensing information</span></span>
+## <a name="how-to-view-licensing-information"></a><span data-ttu-id="c8fd5-165">Så här visar du licensinformation</span><span class="sxs-lookup"><span data-stu-id="c8fd5-165">How to view licensing information</span></span>
 
-- <span data-ttu-id="bd358-164">Om du vill se hur många licenser du har tilldelat och tagit bort går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> i administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="bd358-164">To see how many licenses you have assigned and unassigned, in the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.</span></span>
+- <span data-ttu-id="c8fd5-166">Om du vill se hur många licenser du har tilldelat och tagit bort går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> i administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="c8fd5-166">To see how many licenses you have assigned and unassigned, in the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.</span></span>
     
-- <span data-ttu-id="bd358-165">Om du vill se vem som är licensierad, olicensierad eller en gäst går du till **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a> i administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="bd358-165">To see who is licensed, unlicensed, or guest, in the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span> 
+- <span data-ttu-id="c8fd5-167">Om du vill se vem som är licensierad, olicensierad eller en gäst går du till **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a> i administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="c8fd5-167">To see who is licensed, unlicensed, or guest, in the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span> 
   
-## <a name="how-to-view-usage-information-for-a-specific-user"></a><span data-ttu-id="bd358-166">Så här visar du användningsinformation för en viss användare</span><span class="sxs-lookup"><span data-stu-id="bd358-166">How to view usage information for a specific user</span></span>
+## <a name="how-to-view-usage-information-for-a-specific-user"></a><span data-ttu-id="c8fd5-168">Så här visar du användningsinformation för en viss användare</span><span class="sxs-lookup"><span data-stu-id="c8fd5-168">How to view usage information for a specific user</span></span>
 
-<span data-ttu-id="bd358-p106">Använd tjänsterapporterna när du vill se hur mycket en viss användare använder tjänsten. Om du till exempel vill ta reda på hur mycket lagringsutrymme för e-post en viss användare har förbrukat öppnar du rapporten Postlådeanvändning och sorterar användarna efter namn. Om du har tusentals användare kan du exportera rapporten till Excel där du snabbt kan filtrera listan.</span><span class="sxs-lookup"><span data-stu-id="bd358-p106">Use the service reports to research how much a specific user is using the service. For example, to find out how much mailbox storage a specific user has consumed, open the Mailbox usage report, and sort the users by name. If you have thousands of users, export the report to Excel so you filter through the list quickly.</span></span>
+<span data-ttu-id="c8fd5-p106">Använd tjänsterapporterna när du vill se hur mycket en viss användare använder tjänsten. Om du till exempel vill ta reda på hur mycket lagringsutrymme för e-post en viss användare har förbrukat öppnar du rapporten Postlådeanvändning och sorterar användarna efter namn. Om du har tusentals användare kan du exportera rapporten till Excel där du snabbt kan filtrera listan.</span><span class="sxs-lookup"><span data-stu-id="c8fd5-p106">Use the service reports to research how much a specific user is using the service. For example, to find out how much mailbox storage a specific user has consumed, open the Mailbox usage report, and sort the users by name. If you have thousands of users, export the report to Excel so you filter through the list quickly.</span></span>
   
-<span data-ttu-id="bd358-170">Det finns ingen rapport där du anger ett användarkonto och får en lista med vilka tjänster som används och hur mycket.</span><span class="sxs-lookup"><span data-stu-id="bd358-170">You can't generate a report where you enter a user's account and then get a list which services they are using and how much.</span></span>
+<span data-ttu-id="c8fd5-172">Det finns ingen rapport där du anger ett användarkonto och får en lista med vilka tjänster som används och hur mycket.</span><span class="sxs-lookup"><span data-stu-id="c8fd5-172">You can't generate a report where you enter a user's account and then get a list which services they are using and how much.</span></span>
   
-## <a name="hide-user-details-in-the-reports"></a><span data-ttu-id="bd358-171">Dölja användarinformation i rapporterna</span><span class="sxs-lookup"><span data-stu-id="bd358-171">Hide user details in the reports</span></span>
+## <a name="hide-user-details-in-the-reports"></a><span data-ttu-id="c8fd5-173">Dölja användarinformation i rapporterna</span><span class="sxs-lookup"><span data-stu-id="c8fd5-173">Hide user details in the reports</span></span>
 
-<span data-ttu-id="bd358-172">Du kan snabbt göra en ändring i administrationscentret om du vill dölja information om användarnivå när du skapar rapporter.</span><span class="sxs-lookup"><span data-stu-id="bd358-172">If you want to hide user level information when you're generating your reports, you can quickly make that change in the admin center.</span></span>
+<span data-ttu-id="c8fd5-174">Du kan snabbt göra en ändring i administrationscentret om du vill dölja information om användarnivå när du skapar rapporter.</span><span class="sxs-lookup"><span data-stu-id="c8fd5-174">If you want to hide user level information when you're generating your reports, you can quickly make that change in the admin center.</span></span>
   
-1. <span data-ttu-id="bd358-173">I administrationscentret går du till sidan **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Tjänster och tillägg</a>.</span><span class="sxs-lookup"><span data-stu-id="bd358-173">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services &amp; add-ins</a> page.</span></span>
+1. <span data-ttu-id="c8fd5-175">I administrationscentret går du till sidan **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Tjänster och tillägg</a>.</span><span class="sxs-lookup"><span data-stu-id="c8fd5-175">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services &amp; add-ins</a> page.</span></span>
 
-2. <span data-ttu-id="bd358-174">Välj **Rapporter** .</span><span class="sxs-lookup"><span data-stu-id="bd358-174">Select **Reports** .</span></span> 
+2. <span data-ttu-id="c8fd5-176">Välj **Rapporter**.</span><span class="sxs-lookup"><span data-stu-id="c8fd5-176">Select **Reports**.</span></span> 
   
-3. <span data-ttu-id="bd358-175">Välj de alternativ du vill använda i fönstret **Rapporter** och spara sedan ändringarna.</span><span class="sxs-lookup"><span data-stu-id="bd358-175">In the **Reports** pane, select the options you want, and then save your changes.</span></span>
+3. <span data-ttu-id="c8fd5-177">Välj de alternativ du vill använda i fönstret **Rapporter** och spara sedan ändringarna.</span><span class="sxs-lookup"><span data-stu-id="c8fd5-177">In the **Reports** pane, select the options you want, and then save your changes.</span></span>
   
-<span data-ttu-id="bd358-176">Din användarlista kommer att se ut så här:</span><span class="sxs-lookup"><span data-stu-id="bd358-176">Your user list will look like this:</span></span>
+<span data-ttu-id="c8fd5-178">Din användarlista kommer att se ut så här:</span><span class="sxs-lookup"><span data-stu-id="c8fd5-178">Your user list will look like this:</span></span>
   
 ![Rapporter – anonymiserad användarlista](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
-<span data-ttu-id="bd358-p107">Det tar några minuter innan ändringarna börjar gälla i rapporterna i instrumentpanelen för rapporter. Den här inställningen gäller även för API för rapporter.</span><span class="sxs-lookup"><span data-stu-id="bd358-p107">It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the reports API.</span></span>
+<span data-ttu-id="c8fd5-p107">Det tar några minuter innan ändringarna börjar gälla i rapporterna i instrumentpanelen för rapporter. Den här inställningen gäller även för API för rapporter.</span><span class="sxs-lookup"><span data-stu-id="c8fd5-p107">It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the reports API.</span></span>
   
-## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a><span data-ttu-id="bd358-180">Vad händer med användningsdata när ett användarkonto stängs?</span><span class="sxs-lookup"><span data-stu-id="bd358-180">What happens to usage data when a user account is closed?</span></span>
+## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a><span data-ttu-id="c8fd5-182">Vad händer med användningsdata när ett användarkonto stängs?</span><span class="sxs-lookup"><span data-stu-id="c8fd5-182">What happens to usage data when a user account is closed?</span></span>
 
-<span data-ttu-id="bd358-181">När du stänger en användares konto tar Microsoft bort användarens användningsdata inom 30 dagar.</span><span class="sxs-lookup"><span data-stu-id="bd358-181">Whenever you close a user's account, Microsoft will delete that user's usage data within 30 days.</span></span> <span data-ttu-id="bd358-182">Användaren ingår fortfarande i aktivitetsdiagrammets summor (se nummer 1) för de perioder då användaren var aktiv, men visas inte i tabellen med användarinformation (se nummer 2).</span><span class="sxs-lookup"><span data-stu-id="bd358-182">That user will still be included in the Activity chart totals (see number 1) for the periods she was active in, but will not appear in the User Details table (see number 2).</span></span>
+<span data-ttu-id="c8fd5-183">När du stänger en användares konto tar Microsoft bort användarens användningsdata inom 30 dagar.</span><span class="sxs-lookup"><span data-stu-id="c8fd5-183">Whenever you close a user's account, Microsoft will delete that user's usage data within 30 days.</span></span> <span data-ttu-id="c8fd5-184">Användaren ingår fortfarande i aktivitetsdiagrammets summor (se nummer 1) för de perioder då användaren var aktiv, men visas inte i tabellen med användarinformation (se nummer 2).</span><span class="sxs-lookup"><span data-stu-id="c8fd5-184">That user will still be included in the Activity chart totals (see number 1) for the periods she was active in, but will not appear in the User Details table (see number 2).</span></span>
   
-<span data-ttu-id="bd358-183">När du däremot markerar en viss dag (se nummer 3), upp till 28 dagar från dagens datum, visar rapporten användarens användning för den dagen i tabellen med användarinformation (se nummer 2).</span><span class="sxs-lookup"><span data-stu-id="bd358-183">However, when you select a particular day (see number 3), up to 28 days from the current date, the report show the user's usage for that day in the User Details table (see number 2).</span></span>
+<span data-ttu-id="c8fd5-185">När du däremot markerar en viss dag (se nummer 3), upp till 28 dagar från dagens datum, visar rapporten användarens användning för den dagen i tabellen med användarinformation (se nummer 2).</span><span class="sxs-lookup"><span data-stu-id="c8fd5-185">However, when you select a particular day (see number 3), up to 28 days from the current date, the report show the user's usage for that day in the User Details table (see number 2).</span></span>
   
-## <a name="related-articles"></a><span data-ttu-id="bd358-184">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="bd358-184">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="c8fd5-186">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="c8fd5-186">Related articles</span></span>
 
-[<span data-ttu-id="bd358-185">Rapporter i Säkerhets- och efterlevnadscenter</span><span class="sxs-lookup"><span data-stu-id="bd358-185">Reports in the Security &amp; Compliance Center</span></span>](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance)
+[<span data-ttu-id="c8fd5-187">Rapporter i Säkerhets- och efterlevnadscenter</span><span class="sxs-lookup"><span data-stu-id="c8fd5-187">Reports in the Security &amp; Compliance Center</span></span>](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance)
   
