@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Lär dig mer om multifaktorautentisering i Microsoft 365.
-ms.openlocfilehash: bca84e949e696b483b567bf5f72233840023abca
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: cb425f3fd3d97dc0cd8815699bd22cb2540aed46
+ms.sourcegitcommit: 09518b7c9146cda7fd42839ee644ad418d48491a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948718"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49001519"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Multifaktorautentisering för Microsoft 365
 
@@ -40,26 +40,26 @@ För att tillhandahålla en ytterligare säkerhets nivå för inloggningar måst
 Den alternativa kontrollen används inte förrän användarens lösen ord har verifierats. Med MFA, även om ett starkt användar lösen ord äventyras, har angriparen inte din telefon eller ditt finger avtryck för att slutföra inloggningen.
 
 ## <a name="mfa-support-in-microsoft-365"></a>MFA-stöd i Microsoft 365
+
 Som standard stöder både Microsoft 365 och Office 365 MFA för användar konton med:
 
 - Ett textmeddelande som skickas till en telefon som kräver att användaren skriver en verifierings kod.
 - Ett telefonsamtal.
 - Programmet Microsoft Authenticator smart telefon.
 
-I båda fallen använder MFA-inloggningen det "något du har med dig som inte är lätt att dubblera" för den ytterligare verifieringen.
-Det finns flera sätt att aktivera MFA för Microsoft 365 och Office 365:
+I båda fallen använder MFA-inloggningen det "något du har med dig som inte är lätt att dubblera" för den ytterligare verifieringen. Det finns flera sätt att aktivera MFA för Microsoft 365 och Office 365:
 
 - Med säkerhets standarder
 - Med principer för villkorsstyrd åtkomst
 - För varje enskilt användar konto (rekommenderas inte)
 
 Dessa sätt baseras på ditt Microsoft 365-abonnemang.
-    
-|Planera  |Rekommendation  | Typ av kund |
-|---------|---------|----------|
-| Alla Microsoft 365-abonnemang | Använd säkerhets standarder, som kräver MFA för alla användar konton. <br> Du kan också kräva MFA för ett konto per användare, men det rekommenderas inte. | Småföretag |
-| Microsoft 365 Business Premium <br><br> Microsoft 365 E3 <br><br> Azure Active Directory (Azure AD) Premium P1-licenser | Använd villkorsstyrda åtkomst principer för att kräva MFA för användar konton baserat på grupp medlemskap, appar eller andra villkor. | Småföretag till företag |
-| Microsoft 365 E5 <br><br> Azure AD Premium P2-licenser | Använd Azure AD Identity Protection för att kräva MFA utifrån villkor för inloggnings risker. |  Enterprise |
+
+|Planera|Rekommendation|Typ av kund|
+|---|---|---|
+|Alla Microsoft 365-abonnemang|Använd säkerhets standarder, som kräver MFA för alla användar konton. <p> Du kan också konfigurera användarspecifik MFA för enskilda användar konton, men det rekommenderas inte.|Småföretag|
+|Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) Premium P1-licenser|Använd villkorsstyrda åtkomst principer för att kräva MFA för användar konton baserat på grupp medlemskap, appar eller andra villkor.|Småföretag till företag|
+|Microsoft 365 E5 <p> Azure AD Premium P2-licenser|Använd Azure AD Identity Protection för att kräva MFA utifrån villkor för inloggnings risker.|Enterprise|
 ||||
 
 ### <a name="security-defaults"></a>Standardinställningar för säkerhet
@@ -79,7 +79,7 @@ Du aktiverar eller inaktiverar säkerhets standarder från fönstret **Egenskape
 
 Du kan använda säkerhets standarder med alla Microsoft 365-abonnemang.
 
-Mer information finns i den här [översikten över standardinställningar för säkerhet](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). 
+Mer information finns i den här [översikten över standardinställningar för säkerhet](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
 ### <a name="conditional-access-policies"></a>Principer för villkorsstyrd åtkomst
 
@@ -93,13 +93,13 @@ Du kan också använda villkorsstyrda åtkomst principer för mer avancerade fun
 
 Du konfigurerar villkorsstyrda åtkomst principer från fönstret **säkerhet** för Azure AD i Azure-portalen.
 
-![Picure för villkorsstyrd åtkomst](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
+![Bild av meny alternativet för villkorsstyrd åtkomst](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
 Du kan använda villkorsstyrda åtkomst principer med:
 
 - Microsoft 365 Business Premium
 - Microsoft 365 E3 och E5
-- Azure AD Premium P1-och Azure AD Premium P2-licenser 
+- Azure AD Premium P1-och Azure AD Premium P2-licenser
 
 För småföretag med Microsoft 365 Business Premium kan du enkelt använda villkorsstyrda åtkomst principer med följande steg:
 
@@ -134,9 +134,9 @@ Du kan använda Azure AD Identity Protection och riskfyllda villkorsstyrda åtko
 
 Mer information finns i den här [översikt över Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
 
-### <a name="legacy-per-person-mfa-not-recommended"></a>Bakåtkompatibelt för alla personer (rekommenderas inte)
+### <a name="legacy-per-user-mfa-not-recommended"></a>Legacy användarspecifik för användare (rekommenderas inte)
 
-Du bör använda antingen säkerhets standarder eller villkorsstyrda åtkomst principer för att kräva MFA för inloggnings programmen för ditt användar konto. Om något av dessa inte kan användas rekommenderar Microsoft starkt MFA för användar konton som har administratörs roller, särskilt den globala administratörs rollen, för alla storleks abonnemang. 
+Du bör använda antingen säkerhets standarder eller villkorsstyrda åtkomst principer för att kräva MFA för inloggnings programmen för ditt användar konto. Om något av dessa inte kan användas rekommenderar Microsoft starkt MFA för användar konton som har administratörs roller, särskilt den globala administratörs rollen, för alla storleks abonnemang.
 
 Du aktiverar MFA för enskilda användar konton i det **aktiva användar** fönstret i administrations centret för Microsoft 365.
 
@@ -148,11 +148,11 @@ När användaren sedan loggar in uppmanas de att registrera sig för MFA och vä
 
 I den här tabellen visas resultatet av att aktivera MFA med standardinställningar för säkerhet, principer för villkorsstyrd åtkomst och användarspecifika kontoinställningar.
 
-|| Aktiverat | Inaktiverad | Metod för sekundär autentisering |
-|:-------|:-----|:-------|:-------|
-| **Standardinställningar för säkerhet** | Det går inte att använda principer för villkorsstyrd åtkomst |   Det går att använda principer för villkorsstyrd åtkomst | Microsoft Authenticator-appen |
-| **Principer för villkorsstyrd åtkomst** |Om några är aktiverade kan du inte aktivera standardinställningar för säkerhet | Om alla är inaktiverade kan du aktivera standardinställningar för säkerhet | Användardefinierad under MFA-registrering |
-| **Bakåtkompatibelt för alla personer (rekommenderas inte)** | Åsidosätter säkerhets standarder och villkorsstyrda åtkomst principer som kräver MFA för varje inloggning | Åsidosatt av säkerhets standarder och villkorsstyrda åtkomst principer | Användardefinierad under MFA-registrering|
+||Aktiverat|Inaktiverad|Metod för sekundär autentisering|
+|---|---|---|---|
+|**Standardinställningar för säkerhet**|Kan inte använda principer för villkorsstyrd åtkomst|Det går att använda principer för villkorsstyrd åtkomst|Microsoft Authenticator-appen|
+|**Principer för villkorsstyrd åtkomst**|Om det finns några är det möjligt att du inte kan aktivera säkerhets standarder|Om alla är inaktiverade kan du aktivera standardinställningar för säkerhet|Användardefinierad under MFA-registrering|
+|**Legacy användarspecifik för användare (rekommenderas inte)**|Åsidosätter säkerhets standarder och villkorsstyrda åtkomst principer som kräver MFA för varje inloggning|Åsidosatt av säkerhets standarder och villkorsstyrda åtkomst principer|Användardefinierad under MFA-registrering|
 ||||
 
 Om säkerhets standarder är aktiverade ombeds alla nya användare om MFA-registrering och användning av Microsoft Authenticator-appen vid nästa inloggning.
