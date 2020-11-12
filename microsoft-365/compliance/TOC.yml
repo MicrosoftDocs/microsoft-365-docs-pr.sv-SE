@@ -82,7 +82,7 @@
 - name: Hantera informationsskydd
   items:
     - name: 'Känn dina data, skydda dina data, förhindra dataförlust'
-      href: protect-information.md
+      href: information-protection.md
     - name: Typer av känslig information
       items:
         - name: Entitetsdefinitioner för typer av känslig information
