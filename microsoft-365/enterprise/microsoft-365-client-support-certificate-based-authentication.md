@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: I den här artikeln hittar du information om support för Microsoft 365-klient för certifikatbaserad identifiering.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2f2f5acb88e49cf7a81bd5e89c0c9c85feea6672
-ms.sourcegitcommit: 86e878849a8bdd456cee6a3f49939d26223fb626
+ms.openlocfilehash: 57ced47c268f4d0515acb26aa8f705fa6e9ae0f9
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48997809"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999390"
 ---
 # <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Microsoft 365-klientprogram: certifikatbaserad identifiering
 
@@ -29,11 +29,10 @@ ms.locfileid: "48997809"
 
 Modern autentisering är en parasoll för en kombination av autentiserings-och auktoriseringsregler. De omfattar:
 
-- Autentiseringsmetoder: multifaktorautentisering; Klient certifikat-baserad verifikation.
+- **Autentiseringsmetoder** : multifaktorautentisering; Klient certifikat-baserad verifikation.
+- **Auktoriseringsregler** : Microsofts implementering av Open Authorization (OAuth).
 
-- Auktoriseringsregler: Microsofts implementering av Open Authorization (OAuth).
-
-Modern verifikation aktive ras via användning av ett autentiseringspaket, till exempel ADAL eller MSAL. Modern autentisering är vilka klienter som använder för att autentisera och auktorisera åtkomst till Microsoft 365-resurser. Modern autentisering utnyttjar OAuth och ger en säker mekanism för klienter att få åtkomst till Microsoft 365-tjänster utan att behöva åtkomst till användarautentiseringsuppgifter. Vid inloggning verifierar användaren direkt med Azure Active Directory och får ett par för Access/Refresh-token i Return. Åtkomsttoken beviljar klienten åtkomst till lämpliga resurser i Microsoft 365-klient organisationen. En uppdateringstoken används för att få ett nytt Access-eller Refresh-token när den aktuella åtkomsttoken upphör.
+Modern lösenordsautentisering aktive ras via användning av ett autentiseringspaket, till exempel Active Directory-autentiseringspaket (ADAL) eller Microsoft-autentiseringspaket (MSAL). Modern autentisering är vilka klienter som använder för att autentisera och auktorisera åtkomst till Microsoft 365-resurser. Modern autentisering utnyttjar OAuth och ger en säker mekanism för klienter att få åtkomst till Microsoft 365-tjänster utan att behöva åtkomst till användarautentiseringsuppgifter. Vid inloggning verifierar användaren direkt med Azure Active Directory och får ett par för Access/Refresh-token i Return. Åtkomsttoken beviljar klienten åtkomst till lämpliga resurser i Microsoft 365-klient organisationen. En uppdateringstoken används för att få ett nytt Access-eller Refresh-token när den aktuella åtkomsttoken upphör.
 
 Modern auktorisering har stöd för olika autentiseringsmekanismer, till exempel certifikatbaserad verifikation. Klienter på Windows-, Android-eller iOS-enheter kan använda certifikatbaserad autentisering (CBA) för att autentisera till Azure Active Directory med ett klient certifikat på enheten. I stället för ett typiskt användar namn/lösen ord används certifikatet för att hämta ett par för åtkomst-och uppdateringstoken från Azure Active Directory.
 
@@ -53,7 +52,7 @@ De senaste versionerna av följande klienter och plattformar har stöd för cert
 | Företags Portal | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Saknas |
 | Cortana | Disponera | Disponera | Saknas | ![Stöds](../media/check-mark.png) | Saknas |
 | Delve | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
-| Fördel | ![Stöds](../media/check-mark.png)* | ![Stöds](../media/check-mark.png)* | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
+| Kant<sup>1</sup> | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
 | Excel | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) |
 | Exchange Online-administratör | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
 | Formulär | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
@@ -87,12 +86,8 @@ De senaste versionerna av följande klienter och plattformar har stöd för cert
 | Företags analys | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
 | Yammer | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Disponera | Saknas | Disponera |
 
-> [!IMPORTANT]
-> Edge för iOS och Android har stöd för certifikatbaserad äkthet under konto att lägga till flöden. Edge för iOS och Android stöder inte certifikatbaserad autentisering när autentisering utförs på webbplatser, som vanligt vis är intranäts webbplatser. I det här scenariot navigerar en användare till en webbplats (vanligt vis i intranätet) där användaren behöver verifiera via ett certifikat. Detta inbegriper inte modern lösenordsautentisering alls och påverkar inte ett Microsoft-autentiseringspaket. Detta beror på en begränsning med iOS: iOS hindrar tredjepartsprogram från att komma åt systemets nyckel Ring där certifikaten lagras (endast Apple-appar och en Safari- [webvisare](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) kan komma åt systemets nyckel Ring).
-
- 
-
-När Edge är beroende av webkit kan inte Edge komma åt systemets nyckel Ring och Visa användaren med ett certifikat val. Det här är en avsiktlig konstruktion på grund av appletens arkitektur.
+>[!NOTE]
+><sup>1</sup> Edge för iOS och Android har stöd för certifikatbaserad äkthet under konto att lägga till flöden. Edge för iOS och Android stöder inte certifikatbaserad autentisering när autentisering utförs på webbplatser, som vanligt vis är intranäts webbplatser. <br><br>  I det här scenariot navigerar en användare till en webbplats (vanligt vis i intranätet) där användaren behöver verifiera via ett certifikat. Detta inbegriper inte modern lösenordsautentisering alls och påverkar inte ett Microsoft-autentiseringspaket. Detta beror på en begränsning med iOS: iOS hindrar tredjepartsprogram från att komma åt systemets nyckel Ring där certifikaten lagras (endast Apple-appar och en Safari- [webvisare](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) kan komma åt systemets nyckel Ring). <br><br> När Edge är beroende av webkit kan inte Edge komma åt systemets nyckel Ring och Visa användaren med ett certifikat val. Det här är en avsiktlig konstruktion på grund av appletens arkitektur.
 
 ## <a name="supported-powershell-modules"></a>PowerShell-moduler som stöds
 

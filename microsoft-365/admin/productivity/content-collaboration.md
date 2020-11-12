@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Information om innehålls samarbete-människor upplever produktivitets poäng.
-ms.openlocfilehash: 87f89af527e2a1b843a9b70fbef590b69d920f7d
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 5cdbe0cbb683715a19b182d0781fe238d026a400
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804603"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999434"
 ---
 # <a name="content-collaboration--people-experiences"></a>Innehålls samarbete – folk upplevelse
 
@@ -32,7 +32,7 @@ Produktivitets Poäng hjälper dig att omvandla hur arbete görs med mät värde
 
 ## <a name="why-your-organization39s-content-collaboration-score-matters"></a>Varför din organisation&#39;s innehålls samarbets Poäng
 
-Ett grundläggande pelare för organisering är hur människor samarbetar i filer. Med innehållet på Microsoft 365 kan folk komma åt, skapa, ändra och samar beta på innehåll med andra från valfri plats. Undersökningar visar att när personer samarbetar med online-filer sparar varje person ett medelvärde på 100 minuter per vecka. Se [beviset](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+Ett grundläggande pelare för organisering är hur människor samarbetar i filer. Med innehållet på Microsoft 365 kan folk komma åt, skapa, ändra och samar beta på innehåll med andra från valfri plats. Undersökningar visar att när personer samarbetar med online-filer sparar varje person ett medelvärde på 100 minuter per vecka. [Se beviset](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
 ## <a name="how-we-calculate-the-content-collaboration-score"></a>Så här beräknas poängen för innehålls samarbete
 
@@ -81,7 +81,7 @@ Typer som du kan använda i den här informationen är Word, Excel, PowerPoint, 
 
 Diagrammet trend visualiseringar visar trenden för de primära viktiga måtten för inblickens nyckeltal för läsare, skapare och kollegor under de senaste 180 dagarna. Varje data punkt i diagrammet är en mängd aktivitet under de senaste 28 dagarna. Varje skapad data punkt innehåller många personer som har märkts som skapare under de senaste 28 dagarna för varje datum på x-axeln.
 
-:::image type="content" source="../../media/trendvisualization.jpg" alt-text="Primära insikter från kommunikations samarbete.":::
+:::image type="content" source="../../media/trendvisualization.jpg" alt-text="Diagram med trender för huvud samarbete.":::
 
 ### <a name="scoring-framework"></a>Poäng ramverk
 
@@ -93,7 +93,7 @@ Vi tillhandahåller också information som hjälper dig att få insyn i hur pers
 
 ### <a name="creating-files-to-onedrive-or-sharepoint"></a>Skapa filer till OneDrive eller SharePoint
 
-:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Primära insikter från kommunikations samarbete.":::
+:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Diagram som visar antalet personer som skapar filer på OneDrive eller SharePoint":::
 
 1. **Sidhuvud:** Markerar procent andelen personer som är aktiva i Microsoft 365 Office-program som skapar filer på OneDrive eller SharePoint.
 2. **Brödtext:** Innehåller information om värdet på skapa innehåll i OneDrive och SharePoint.
@@ -109,7 +109,7 @@ Vi tillhandahåller också information som hjälper dig att få insyn i hur pers
 
 ### <a name="use-of-attachments-in-email"></a>Använda bilagor via e-post
 
-:::image type="content" source="../../media/emailattachments.png" alt-text="Primära insikter från kommunikations samarbete.":::
+:::image type="content" source="../../media/emailattachments.png" alt-text="Användning av e-postbilagor.":::
 
 1. **Sidhuvud:** Markerar procent andelen personer som använder bilagor i e-postmeddelanden som inte sparats i OneDrive eller SharePoint.
 2. **Brödtext:** Innehåller information om värdet för att dela länkar till online-filer från ett samarbete och säkerhets perspektiv.
@@ -127,7 +127,7 @@ Vi tillhandahåller också information som hjälper dig att få insyn i hur pers
 
 ### <a name="sharing-of-online-files"></a>Delning av online-filer
 
-:::image type="content" source="../../media/sharingonlinefiles.png" alt-text="Primära insikter från kommunikations samarbete.":::
+:::image type="content" source="../../media/sharingonlinefiles.png" alt-text="Diagram som visar antalet personer som delar filer online.":::
 
 1. **Sidhuvud:** Markerar procent andelen personer som har åtkomst till för OneDrive eller SharePoint som delar filer externt.
 2. **Brödtext:** Ger information om administratörs&#39; möjlighet att ändra inställningar för fildelning i organisationen så att den passar bäst för din organisation.
@@ -142,7 +142,7 @@ Vi tillhandahåller också information som hjälper dig att få insyn i hur pers
 
 ### <a name="intensity-of-files-collaborated-on"></a>Intensitet för de filer som samar beta på
 
-:::image type="content" source="../../media/intensityofcollab.png" alt-text="Primära insikter från kommunikations samarbete.":::
+:::image type="content" source="../../media/intensityofcollab.png" alt-text="Diagram som visar hur många filer som var mest samarbetade med.":::
 
 1. **Sidhuvud:** Detta markerar hur många procent av personer som har åtkomst till OneDrive eller SharePoint som samarbetar med 4 eller fler filer.
 2. **Brödtext:** Här finns information om hur andra kan utnyttja online-filer för bättre samarbete.
@@ -164,7 +164,7 @@ Vi tillhandahåller också information som hjälper dig att få insyn i hur pers
 
 ### <a name="network-performance-strength-for-onedrive-and-sharepoint"></a>Nätverks prestanda styrka för OneDrive och SharePoint
 
-:::image type="content" source="../../media/networkperfstrength.png" alt-text="Primära insikter från kommunikations samarbete.":::
+:::image type="content" source="../../media/networkperfstrength.png" alt-text="Diagram som visar nätverks prestanda för OneDrive och SharePoint.":::
 
 1. **Sidhuvud:** Markerar procent andelen enheter som testas av alla testade och som har dålig nätverks anslutning till OneDrive och SharePoint. 
 2. **Brödtext:** Innehåller information om varför nätverks anslutnings prestanda är viktig för samarbete. 
