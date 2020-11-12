@@ -1,5 +1,5 @@
 ---
-title: Förbereda en icke-dirigerbart domän för Active Directory-synkronisering
+title: Förbereda en icke-dirigerbar domän för katalogsynkronisering
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -22,14 +22,14 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Lär dig vad du kan göra om du har en icke-dirigerbar domän kopplad till dina lokala användare innan du synkroniserar med Microsoft 365.
-ms.openlocfilehash: 835beffb77c495179991fbb4388ecd9ee804ec91
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 21344cb0d495691a96867d401a5262fbbcfd02d4
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696648"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002387"
 ---
-# <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Förbereda en icke-dirigerbart domän för Active Directory-synkronisering
+# <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Förbereda en icke-dirigerbar domän för katalogsynkronisering
 När du synkroniserar en lokal katalog med Microsoft 365 måste du ha en verifierad domän i Azure Active Directory (Azure AD). Endast UPN-namnen (User huvud namn) som är kopplade till den lokala domänen synkroniseras. Alla UPN som innehåller en icke-routad domän, till exempel. local (som billa@contoso. local) synkroniseras till en. onmicrosoft.com-domän (som billa@contoso.onmicrosoft.com). 
 
 Om du för närvarande använder en. lokala domän för dina användar konton i Active Directory Domain Services (AD DS) rekommenderar vi att du ändrar dem till att använda en verifierad domän (till exempel billa@contoso.com) för att synkronisera med din Microsoft 365-domän korrekt.
@@ -42,7 +42,7 @@ Azure AD Connect synkroniserar användarnas UPN och lösen ord så att användar
   
 ### <a name="change-your-primary-domain"></a>**Ändra din primära domän**
 
-Ändra din primära domän till en domän som du har verifierat i Microsoft 365, till exempel contoso.com. Alla användare som har domänen contoso. local har sedan uppdaterats till contoso.com. Anvisningar finns i [hur domän namn byte fungerar](https://go.microsoft.com/fwlink/p/?LinkId=624174). Det här är ett mycket praktiskt tillvägagångs sätt och en enklare lösning beskrivs i följande avsnitt.
+Ändra din primära domän till en domän som du har verifierat i Microsoft 365, till exempel contoso.com. Alla användare som har domänen contoso. local har sedan uppdaterats till contoso.com. Det här är ett mycket praktiskt tillvägagångs sätt och en enklare lösning beskrivs i följande avsnitt.
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>**Lägga till UPN-suffix och uppdatera användarna till dem**
 
@@ -52,7 +52,7 @@ När du har uppdaterat UPN-värdet för att använda den verifierade domänen ä
   
  **Steg 1: Lägg till det nya UPN-suffixet**
   
-1. Välj **verktyg** \> **Active Directory-domäner och förtroenden**i Server hanteraren på AD DS-domänkontrollanten.
+1. Välj **verktyg** \> **Active Directory-domäner och förtroenden** i Server hanteraren på AD DS-domänkontrollanten.
     
     **Om du inte har Windows Server 2012**
     
@@ -60,7 +60,7 @@ När du har uppdaterat UPN-värdet för att använda den verifierade domänen ä
     
     ![Välj Active Directory-domäner och förtroenden.](../media/46b6e007-9741-44af-8517-6f682e0ac974.png)
   
-2. I fönstret **Active Directory-domäner och förtroenden** högerklickar du på **Active Directory-domäner och förtroenden**och väljer sedan **Egenskaper**.
+2. I fönstret **Active Directory-domäner och förtroenden** högerklickar du på **Active Directory-domäner och förtroenden** och väljer sedan **Egenskaper**.
     
     ![Högerklicka på Active Directory-domäner och förtroenden och välj egenskaper](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
   
@@ -72,7 +72,7 @@ När du har uppdaterat UPN-värdet för att använda den verifierade domänen ä
     
  **Steg 2: ändra UPN-suffix för befintliga användare**
   
-1. Välj **verktyg** \> **Active Directory-användare och datorer**i Server hanteraren på AD DS-domänkontrollanten.
+1. Välj **verktyg** \> **Active Directory-användare och datorer** i Server hanteraren på AD DS-domänkontrollanten.
     
     **Om du inte har Windows Server 2012**
     

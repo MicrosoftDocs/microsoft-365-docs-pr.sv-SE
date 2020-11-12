@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b98cec62a018556bfbd31df0aa824acbd00b37b6
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a6e3e7cc0404a56e4d69da69b95aa95fa6795dd5
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846246"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002227"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Teknologier i Microsoft Hanterat skrivbord
 
@@ -31,9 +31,9 @@ I det här avsnittet sammanfattas de komponenter som ingår i de företags licen
  |
  --- | ---
 Microsoft 365-appar för Enterprise (64-bitar) | Dessa Office-program levereras med enheten: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype för företag, OneNote.<br><br>De 64-bitars fullständiga versionerna av Microsoft Project och Microsoft Visio ingår inte. Men eftersom installationen av dessa program beror på Microsoft 365-programmen för installation av Enterprise har Microsoft Managed Desktop skapat Microsoft Intune-distributioner och säkerhets grupper som du kan använda för att distribuera dessa program till licensierade användare. Mer information finns i [Installera Microsoft Project eller Microsoft Visio på Microsoft Managed Station ära enheter](../get-started/project-visio.md).
-OneDrive för företag |Enkel inloggning med Azure Active Directory är aktiverat för användare vid första inloggningen till OneDrive för företag.<br><br>Kända Mappomdirigering för "Skriv bord", "dokument" och "bilder"-mappar är inkluderade. aktiverat och konfigurerat av Microsoft Managed Desktop. 
+OneDrive |Enkel inloggning för Azure Active Directory är aktiverat för användare vid första inloggningen till OneDrive.<br><br>Kända Mappomdirigering för "Skriv bord", "dokument" och "bilder"-mappar är inkluderade. aktiverat och konfigurerat av Microsoft Managed Desktop.
 Store-appar |    Microsoft Sway och Power BI levereras inte med enheten. Dessa appar kan laddas ned från Microsoft Store.
-Win32-program |    Teams levereras inte med enheten men är paketerad och tillhandahålls av Microsoft för Microsoft-hanterade Station ära datorer. Azure information Protection-klienten levereras inte med enheten, men du kan ha denna paketerad installation. 
+Win32-program |    Teams levereras inte med enheten men är paketerad och tillhandahålls av Microsoft för Microsoft-hanterade Station ära datorer. Azure information Protection-klienten levereras inte med enheten, men du kan ha denna paketerad installation.
 Webb program |  Yammer, Office i en webbläsare, Delve, Flow, StaffHub, PowerApps och Planner levereras inte med enheten. Användare kan komma åt webb versionen av dessa program med en webbläsare.
 
 
@@ -42,7 +42,7 @@ Webb program |  Yammer, Office i en webbläsare, Delve, Flow, StaffHub, PowerApp
  |
  --- | ---
 Application Virtualization (App-V) |    Kunderna kan distribuera App-V-paket med hjälp av Intune Win32 app Management-klienten.
-Microsoft Defender för slut punkt |    Microsoft Managed Desktop använder detta för att övervaka enhets säkerhet. 
+Microsoft Defender för Endpoint |    Microsoft Managed Desktop använder detta för att övervaka enhets säkerhet. 
 
 ## <a name="enterprise-mobility--security-e5"></a>Företags mobilitet + säkerhet, E5
 

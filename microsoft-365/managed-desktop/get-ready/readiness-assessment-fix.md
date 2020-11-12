@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c342ea9f662d883883755d2f67e5c25ffabddf83
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: b77313a18a5744549e492de991e282bc34dbb6da
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948415"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002423"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Åtgärda problem som hittats av verktyget för bedömning av beredskap
 
@@ -214,7 +214,7 @@ Granska de program du vill att Microsoft Managed Desktop-användarna ska ha.
 
 **Rådgivare**
 
-Du bör förbereda en inventering av de program som du vill att Microsoft Managed Desktop-användarna ska ha. Kontrol lera att dessa appar kan distribueras av Intune. Mer information finns i [program på Microsoft Managed Desktop](apps.md).
+Du bör förbereda en inventering av de program som du vill att Microsoft Managed Desktop-användarna ska ha. Eftersom dessa appar måste distribueras av Intune kan du utvärdera dem igen med befintliga Intune-appar. Överväg att använda företags portalen (se [Installera Intune företags Portal på enheter](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) och registrerings status sida (ESP) för att distribuera program till användarna. Mer information finns i [program på Microsoft Managed Desktop](apps.md) och förstagångskörningen [med autopilot och sidan registrerings status](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run).
 
 Du kan be din Microsoft-representant om en fråga i Microsoft Endpoint Configuration Manager att identifiera de program som är redo att migreras till Intune eller behöver justeras.
 
@@ -289,9 +289,8 @@ Användare med vissa säkerhets roller måste ha kopplade till dem i Microsoft D
 
 **Rådgivare**
 
-Om du har någon av de här rollerna i din Azure AD-organisation kontrollerar du att de också har tilldelats dessa roller i Microsoft Defender för slut punkter. Annars kommer administratörer med dessa roller inte att kunna använda administrations portalen.
+Om du har användare tilldelade till någon av dessa roller i din Azure AD-organisation kontrollerar du att de också har tilldelats dessa roller i Microsoft Defender för slut punkter. Annars kommer administratörer med dessa roller inte att kunna använda administrations portalen.
 
-- Säkerhets läsare
 - Säkerhets ansvarig
 - Global läsare
 
@@ -308,7 +307,7 @@ Säkerhets inställningarna är aktiverat. Inaktivera säkerhets standarder och 
 
 ### <a name="self-service-password-reset"></a>Självbetjäning för återställning av lösen ord
 
-Självbetjäning för återställning av lösen ord (SSPR) ska aktive ras för alla användare exklusive Microsoft Managed Desktop Service-konton. Mer information finns i [själv studie kursen: Låt användare låsa upp sina konton eller återställa lösen ord med hjälp av återställning av Azure Active Directory Self-Service](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+Självbetjäning för återställning av lösen ord (SSPR) ska aktive ras för alla hanterade Microsoft-användare utom Microsoft Managed Desktop Service-konton. Mer information finns i [själv studie kursen: Låt användare låsa upp sina konton eller återställa lösen ord med hjälp av återställning av Azure Active Directory Self-Service](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
 
 **Rådgivare**
 
@@ -325,11 +324,11 @@ Microsoft Managed Desktop-användare kommer inte att ha lokala administratörs p
 
 ## <a name="microsoft-365-apps-for-enterprise"></a> Microsoft 365 Apps för företag
 
-### <a name="onedrive-for-business"></a>OneDrive för företag
+### <a name="onedrive"></a>OneDrive
 
 Inställningen **Tillåt synkronisering endast på datorer som är anslutna till vissa domäner** visas i konflikt med Microsoft Managed Desktop.
 
 **Rådgivare**
 
-Du använder alternativet **Tillåt synkronisering endast på datorer som är anslutna till vissa domän** inställningar. Den här inställningen fungerar inte med Microsoft Managed Desktop. Inaktivera den här inställningen och konfigurera i stället OneDrive för företag för användning av villkorsstyrd åtkomst policy. Se [Planera en distribution för villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) för hjälp.
+Du använder alternativet **Tillåt synkronisering endast på datorer som är anslutna till vissa domän** inställningar. Den här inställningen fungerar inte med Microsoft Managed Desktop. Inaktivera den här inställningen och konfigurera i stället OneDrive för att använda en princip för villkorsstyrd åtkomst. Se [Planera en distribution för villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) för hjälp.
 
