@@ -47,16 +47,18 @@
               href: mtp/preview.md
             - name: Microsoft 365 Säkerhetscenter
               href: mtp/overview-security-center.md
-            - name: Förutsättningar
-              href: mtp/prerequisites.md
-            - name: Datasäkerhet och sekretess
-              href: mtp/data-privacy.md
-            - name: Microsoft säkerhetsportaler
-              href: mtp/portals.md
             - name: Felsöka problem
               href: ./mtp/troubleshoot.md
             - name: Branschtester
               href: ./mtp/top-scoring-industry-tests.md
+        - name: Planera
+          items:
+            - name: Förutsättningar
+              href: mtp/prerequisites.md
+            - name: Datasäkerhet och sekretess
+              href: mtp/data-privacy.md
+            - name: Microsoft-säkerhetsportaler
+              href: mtp/portals.md
         - name: Utvärdera funktioner
           items:
             - name: Översikt över utvärderingslaboratorie
@@ -71,28 +73,30 @@
               href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
             - name: Skapa ett testmeddelande
               href: mtp/generate-test-alert.md
-        - name: Kör ditt pilotprojekt i produktion
+        - name: Distribuera
           items:
-            - name: Pilotöversikt
-              href: mtp/mtp-pilot.md
-            - name: Planera
-              href: mtp/mtp-pilot-plan.md
-            - name: Förbereda
-              href: mtp/prepare-mtpeval.md
-            - name: Simulera attack
-              href: mtp/mtp-pilot-simulate.md
-            - name: Stäng och sammanfatta
-              href: mtp/mtp-pilot-close.md
+            - name: Aktivera Microsoft Threat Protection
+              href: mtp/mtp-enable.md
+            - name: Kör ditt pilotprojekt i produktion
+              items:
+                - name: Pilotöversikt
+                  href: mtp/mtp-pilot.md
+                - name: Planera
+                  href: mtp/mtp-pilot-plan.md
+                - name: Förbereda
+                  href: mtp/prepare-mtpeval.md
+                - name: Simulera attack
+                  href: mtp/mtp-pilot-simulate.md
+                - name: Stäng och sammanfatta
+                  href: mtp/mtp-pilot-close.md
+            - name: Distribuera tjänster som stöds
+              href: mtp/deploy-supported-services.md
         - name: Guider med anvisningar
           items:
             - name: Skapa en utvärderings- eller pilotlaboratoriemiljö
               href: mtp/mtp-evaluation.md
             - name: Kör pilotspelbok
               href: mtp/mtp-pilot.md
-            - name: Distribuera tjänster som stöds
-              href: mtp/deploy-supported-services.md
-            - name: Aktivera Microsoft 365 Defender
-              href: mtp/mtp-enable.md
             - name: Aktivera vanliga frågor och svar
               href: mtp/mtp-enable-faq.md
             - name: Incidenter
