@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'Lär dig hur du lägger till flera användare i Microsoft 365 för företag från en lista i ett kalkyl blad eller annan CSV-formaterad fil. Titta på en video på YouTube som förklarar hur du lägger till konton i Microsoft 365. I slutet av processen kommer alla användare med ett konto att ha en Microsoft 365-postlåda. '
-ms.openlocfilehash: c75f16233a85f48be44082ba3ec9ffb82ef18ff9
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a970fbfa28214543e34011f1310742c6fb811d09
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694938"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071519"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Lägga till flera användare samtidigt till Microsoft 365 – hjälp för administratörer
 
@@ -43,23 +43,23 @@ Varje person i gruppen behöver ett användar konto innan de kan logga in och ko
 
 1. Logga in på Microsoft 365 med ditt arbets- eller skolkonto. 
     
-2. Välj **användare** \> **aktiva användare**i administrations centret.
+2. Välj **användare** \> **aktiva användare** i administrations centret.
 
 3. Välj **Lägg till flera användare**.
 
 4. På panelen **Importera flera användare** kan du ladda ned en CSV-exempelfil med eller utan ifyllda exempeldata. 
     
-    Kalkylbladet måste innehålla **exakt samma kolumnrubriker** som exempelfilen (Användarnamn, Förnamn osv.). Om du använder mallen öppnar du den i ett textredigeringsverktyg, till exempel Anteckningar. Du kan låta alla data på rad 1 vara och bara ange data från rad 2 och nedåt. 
+    Kalkyl bladet måste innehålla **exakt samma kolumn rubriker** som exempel ett (användar namn, Förnamn o.s.v.). Om du använder mallen öppnar du den i ett text redigerings verktyg, till exempel anteckningar, och du kan låta alla data i rad 1 vara skrivskyddade och bara ange data på raderna 2 och nedanför. 
     
     Kalkylbladet måste också innehålla värden för användarnamn (t.ex. jens@contoso.com) och ett visningsnamn (t.ex. Jens Persson) för varje användare. 
     
   ```
-  User Name,First Name,Last Name,Display Name,Job Title,Department,Office Number,Office Phone,Mobile Phone,Fax,Address,City,State or Province,ZIP or Postal Code,Country or Region
-  chris@contoso.com,Chris,Green,Chris Green,IT Manager,Information Technology,123451,123-555-1211,123-555-6641,123-555-9821,1 Microsoft way,Redmond,Wa,98052,United States
-  ben@contoso.com,Ben,Andrews,Ben Andrews,IT Manager,Information Technology,123452,123-555-1212,123-555-6642,123-555-9822,1 Microsoft way,Redmond,Wa,98052,United States
-  david@contoso.com,David,Longmuir,David Longmuir,IT Manager,Information Technology,123453,123-555-1213,123-555-6643,123-555-9823,1 Microsoft way,Redmond,Wa,98052,United States
-  cynthia@contoso.com,Cynthia,Carey,Cynthia Carey,IT Manager,Information Technology,123454,123-555-1214,123-555-6644,123-555-9824,1 Microsoft way,Redmond,Wa,98052,United States
-  melissa@contoso.com,Melissa,MacBeth,Melissa MacBeth,IT Manager,Information Technology,123455,123-555-1215,123-555-6645,123-555-9825,1 Microsoft way,Redmond,Wa,98052,United States
+  User Name,First Name,Last Name,Display Name,Job Title,Department,Office Number,Office Phone,Mobile Phone,Address,City,State or Province,ZIP or Postal Code,Country or Region
+  chris@contoso.com,Chris,Green,Chris Green,IT Manager,Information Technology,123451,123-555-1211,123-555-6641,1 Microsoft way,Redmond,Wa,98052,United States
+  ben@contoso.com,Ben,Andrews,Ben Andrews,IT Manager,Information Technology,123452,123-555-1212,123-555-6642,1 Microsoft way,Redmond,Wa,98052,United States
+  david@contoso.com,David,Longmuir,David Longmuir,IT Manager,Information Technology,123453,123-555-1213,123-555-6643,1 Microsoft way,Redmond,Wa,98052,United States
+  cynthia@contoso.com,Cynthia,Carey,Cynthia Carey,IT Manager,Information Technology,123454,123-555-1214,123-555-6644,1 Microsoft way,Redmond,Wa,98052,United States
+  melissa@contoso.com,Melissa,MacBeth,Melissa MacBeth,IT Manager,Information Technology,123455,123-555-1215,123-555-6645,1 Microsoft way,Redmond,Wa,98052,United States
   
   ```
 

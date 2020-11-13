@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Lär dig hur du börjar samla in data för klient organisationen med hjälp av programmet Microsoft 365 användnings analys i Power BI.
-ms.openlocfilehash: 347256fa7acaae18cd31f0c8c6b7eca20ad2e9dd
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: cda5931e81f7ea13208825afa658f1c672a2f326
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941337"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071461"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Aktivera Microsoft 365 användningsanalyser
 
@@ -92,7 +92,7 @@ För att starta programmet mall måste du vara antingen **Global administratör*
   
 8. När mallgalleriet har instansierats blir Microsoft 365 användnings analys instrument panelen tillgängliga i Power BI på webben. Första inläsningen av instrumentpanelen tar 2 till 30 minuter.
   
-Sammanställningar på klientorganisationsnivån blir tillgängliga i alla rapporter. **Information på användarnivå blir bara tillgänglig efter den 1:a eller 15:e dagen varje kalendermånad efter att du har gått med**. Detta påverkar alla rapporter under användar aktivitet. Se [navigera och utnyttja rapporterna i Microsoft 365 användnings analys](navigate-and-utilize-reports.md) för tips om hur du visar och använder dessa rapporter.
+Aggregerade klient nivåer kommer att vara tillgängliga i alla rapporter efter vanligt i. **Uppgifter på användar nivå blir tillgängliga i femte nästa månad efter vanligt**. Detta påverkar alla rapporter under användar aktivitet (se [navigera och använda rapporterna i Microsoft 365 användnings analyser](navigate-and-utilize-reports.md) för tips om hur du visar och använder dessa rapporter).
     
 ## <a name="make-the-collected-data-anonymous"></a>Gör insamlade data anonyma
 

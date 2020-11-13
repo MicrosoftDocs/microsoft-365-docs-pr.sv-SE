@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 225cb8b74a50fa8308cc14e8ad35283e6a7aa044
-ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
+ms.openlocfilehash: 48c69a71a98e381123a8f87acc20a34eb6e99806
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48279571"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071495"
 ---
 # <a name="register-new-devices-yourself"></a>Registrera nya enheter själv
 
@@ -47,6 +47,8 @@ Du kan använda [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com
 1.  Öppna en PowerShell-kommandotolk med administrativa rättigheter.
 2.  Använda `Install-Script -Name Get-WindowsAutoPilotInfo`
 3.  Använda `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+4.  Kör `powershell -ExecutionPolicy restricted` för att förhindra att efterföljande obegränsade skript körs.
+
 
 #### <a name="flash-drive-method"></a>Flash-enhet, metod
 
@@ -84,7 +86,7 @@ I [Microsoft slut punkts hanteraren](https://endpoint.microsoft.com/)väljer du 
 Gör så här:
 
 1. Ange en sökväg till CSV-filen som du skapade tidigare i **fil överföring**.
-3. Välj **registrera enheter**. Systemet lägger till enheter i listan med enheter i **bladet enheter**, markerade som **registrering väntar**. Registreringen tar vanligt vis mindre än 10 minuter och när enheten lyckas visas den som **klar för användarna** , vilket betyder att det är klart och väntar på att en användare ska börja använda.
+3. Välj **registrera enheter**. Systemet lägger till enheter i listan med enheter i **bladet enheter** , markerade som **registrering väntar**. Registreringen tar vanligt vis mindre än 10 minuter och när enheten lyckas visas den som **klar för användarna** , vilket betyder att det är klart och väntar på att en användare ska börja använda.
 
 
 Du kan övervaka förloppet av enhets registrering på huvud sidan. Möjliga tillstånd rapporterade att inkludera:
@@ -119,7 +121,6 @@ Du är också välkommen att lägga till din egen image om du vill. För att kom
 > Innan du lämnar in enheten till din användare bör du kontrol lera att du har skaffat [rätt licenser](../get-ready/prerequisites.md) för den användaren.
 
 Om alla licenser tillämpas kan du [få användarna redo att använda enheter](get-started-devices.md)och sedan kan användaren starta enheten och gå igenom installations upplevelsen i Windows.
-
 
 
 
