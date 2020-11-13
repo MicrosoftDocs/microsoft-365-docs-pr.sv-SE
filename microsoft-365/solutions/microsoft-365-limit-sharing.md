@@ -11,6 +11,7 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 search.appverid:
 - SPO160
 - MET150
@@ -18,12 +19,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Lär dig mer om olika alternativ för att begränsa eller inaktivera delning i Microsoft 365.
-ms.openlocfilehash: 7ed9cc499e16de835c6ba96eb19bcc28a144b68b
-ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
+ms.openlocfilehash: 504d2b5dd72aead266697d273395e371ad6f5846
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48651424"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030047"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Begränsa delning i Microsoft 365
 
@@ -106,7 +107,7 @@ Inaktivera åtkomstbegäranden
 Du kan begränsa delning av webbplatser till vissa domäner genom att tillåta eller blockera domäner för den webbplatsen.
 
 Begränsa webbplatsdelning per domän
-1. I administrationscentret för SharePoint, under **Webbplatser**, klickar du på **Aktiva webbplatser**.
+1. I administrationscentret för SharePoint, under **Webbplatser** , klickar du på **Aktiva webbplatser**.
 2. Klicka på den webbplats du vill konfigurera.
 3. Klicka på **Redigera** under **Extern delning** på fliken **Principer**.
 4. Under **Avancerade inställningar för extern delning** väljer du **Begränsa delning per domän**.
@@ -140,7 +141,7 @@ Begränsa delning av webbplatser, filer och mappar till ägare
 Om du vill förhindra att SharePoint- eller OneDrive-filer och -mappar delas med personer utanför organisationen, kan du inaktivera gästdelning för hela organisationen eller för en enskild webbplats.
 
 Inaktivera gästdelning i SharePoint för organisationen
-1. I administrationscentret för SharePoint, under **Principer**, klickar du på **Delning**.
+1. I administrationscentret för SharePoint, under **Principer** , klickar du på **Delning**.
 2. Under **Extern delning** drar du reglaget för SharePoint nedåt till **Endast personer i din organisation**.
 3. Klicka på **Spara**.
 
@@ -148,7 +149,7 @@ Inaktivera gästdelning i SharePoint för organisationen
 
 
 Inaktivera gästdelning för en webbplats
-1. I administrationscentret för SharePoint, under **Webbplatser**, klickar du på **Aktiva webbplatser**.
+1. I administrationscentret för SharePoint, under **Webbplatser** , klickar du på **Aktiva webbplatser**.
 2. Klicka på den webbplats du vill konfigurera.
 3. Klicka på **Redigera** under **Extern delning** på fliken **Principer**.
 4. Under **Extern delning** väljer du **Endast personer i din organisation** och klickar sedan på **Spara**.
@@ -158,14 +159,14 @@ Inaktivera gästdelning för en webbplats
 Om du vill tillåta delning med personer utanför organisationen, men du vill vara säker på att alla autentiseras, kan du inaktivera länkarna *Alla* (anonym delning) för hela organisationen eller för en enskild webbplats.
 
 Inaktivera länkarna *Alla* på organisationsnivå
-1. I administrationscentret för SharePoint, under **Principer**, klickar du på **Delning**.
+1. I administrationscentret för SharePoint, under **Principer** , klickar du på **Delning**.
 2. Under **Extern delning** drar du reglaget för SharePoint nedåt till **Nya och befintliga gäster**.
 3. Klicka på **Spara**.
 
     ![Skärmbild på delningsinställningar för SharePoint på organisationsnivå inställd på Nya och nuvarande gäster](../media/sharepoint-guest-sharing-new-existing-guests.png)
 
-Inaktivera *Alla*-länkar för en webbplats
-1. I administrationscentret för SharePoint, under **Webbplatser**, klickar du på **Aktiva webbplatser**.
+Inaktivera *Alla* -länkar för en webbplats
+1. I administrationscentret för SharePoint, under **Webbplatser** , klickar du på **Aktiva webbplatser**.
 2. Klicka på den webbplats du vill konfigurera.
 3. Klicka på **Redigera** under **Extern delning** på fliken **Principer**.
 4. Under **Extern delning** väljer du **Nya och befintliga gäster** och klickar sedan på **Spara**.

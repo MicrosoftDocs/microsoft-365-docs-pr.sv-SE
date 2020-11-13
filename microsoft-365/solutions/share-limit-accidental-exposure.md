@@ -11,16 +11,17 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom: ''
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Lär dig hur du begränsar oavsiktlig exponering av information när du delar filer med personer utanför organisationen.
-ms.openlocfilehash: 6250103e36900da76a4529a73b78f14862ab86ef
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: 430c00d46fa3801d0869b05a651fadd3bf5dea28
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769012"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49029975"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Begränsa oavsiktlig exponering för filer när de delas med personer utanför organisationen
 
@@ -41,22 +42,22 @@ Om du inaktiverar *Alla* -länkar kan användare trots det enkelt dela med gäst
 Beroende på behoven kan du inaktivera *Alla* -länkar för specifika webbplatser eller för hela organisationen.
 
 Inaktivera *Alla* -länkar för organisationen
-1. I navigeringsfönstret till vänster i administrationscentret för SharePoint klickar du på **Delning** .
-2. Sätt inställningen för extern delning för SharePoint på **Nya och befintliga gäster** .
+1. I navigeringsfönstret till vänster i administrationscentret för SharePoint klickar du på **Delning**.
+2. Sätt inställningen för extern delning för SharePoint på **Nya och befintliga gäster**.
 
    ![Skärmbild av inställningar på organisationsnivå för extern delning för SharePoint](../media/sharepoint-organization-external-sharing-controls-new-users.png)
 
-3. Klicka på **Spara** .
+3. Klicka på **Spara**.
 
 Inaktivera *Alla* -länkar för en webbplats
-1. I navigeringsfönstret till vänster i administrationscentret för SharePoint expanderar du **Webbplatser** och klickar på **Aktiva webbplatser** .
+1. I navigeringsfönstret till vänster i administrationscentret för SharePoint expanderar du **Webbplatser** och klickar på **Aktiva webbplatser**.
 2. Välj den webbplats du vill konfigurera.
 3. Klicka på **Delning** i menyfliksområdet.
-4. Kontrollera att delning är inställt på **Nya och befintligt gäster** .
+4. Kontrollera att delning är inställt på **Nya och befintligt gäster**.
 
    ![Skärmbild av inställningar på webbplatsnivå för extern delning för SharePoint](../media/sharepoint-site-external-sharing-settings.png)
 
-5. Om du har gjort ändringar klickar du på **Spara** .
+5. Om du har gjort ändringar klickar du på **Spara**.
 
 ## <a name="domain-filtering"></a>Domänfiltrering
 
@@ -69,14 +70,14 @@ Med en neka-lista kan du ange en lista över domäner från vilken användarna i
 Listorna över tillåtna och nekade domäner påverkar bara delning med gäster. Användare kan fortfarande dela med personer från förbjudna domäner genom att använda *Alla* -länkar om du inte har inaktiverat dem. Om du vill få bäst resultat med listor över tillåtna eller nekade domäner kan du inaktivera *Alla* -länkar enligt beskrivningen ovan.
 
 Konfigurera en lista över tillåtna eller nekade domäner
-1. I navigeringsfönstret till vänster i administrationscentret för SharePoint klickar du på **Delning** .
-2. Under **Avancerade inställningar för extern delning** markerar du kryssrutan **Begränsa extern delning per domän** .
-3. Klicka på **Lägg till domäner** .
-4. Välj om du vill blockera domäner, ange domänerna och klicka på **OK** .
+1. I navigeringsfönstret till vänster i administrationscentret för SharePoint klickar du på **Delning**.
+2. Under **Avancerade inställningar för extern delning** markerar du kryssrutan **Begränsa extern delning per domän**.
+3. Klicka på **Lägg till domäner**.
+4. Välj om du vill blockera domäner, ange domänerna och klicka på **OK**.
 
    ![Skärmbild av inställningen för att begränsa extern delning per domän för SharePoint](../media/sharepoint-sharing-block-domain.png)
 
-5. Klicka på **Spara** .
+5. Klicka på **Spara**.
 
 Om du vill begränsa delningen per domän på en högre nivå än SharePoint och OneDrive kan du [tillåta eller blockera inbjudningar för B2B-användare från specifika organisationer](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list) i Azure Active Directory. (Du måste konfigurera [SharePoint- och OneDrive-integreringen med Azure AD B2B förhandsversion](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) för att de här inställningarna ska påverka SharePoint och OneDrive.)
 
@@ -85,10 +86,10 @@ Om du vill begränsa delningen per domän på en högre nivå än SharePoint och
 Du kan begränsa delning av filer, mappar och webbplatser med personer utanför organisationen till medlemmar i en specifik säkerhetsgrupp. Det här är användbart om du vill aktivera extern delning, men med ett arbetsflöde för godkännande eller en process för begäran. Du kan även kräva att användarna ska genomgå en utbildning innan de läggs till i säkerhetsgruppen och får dela externt.
 
 Begränsa extern delning till medlemmar i en säkerhetsgrupp
-1. I navigeringsfönstret till vänster i [administrationscentret för SharePoint](https://admin.microsoft.com/sharepoint) går du till **Principer** och klickar på **Delning** .
-2. Under **Extern delning** väljer du **Fler inställningar för extern delning** .
+1. I navigeringsfönstret till vänster i [administrationscentret för SharePoint](https://admin.microsoft.com/sharepoint) går du till **Principer** och klickar på **Delning**.
+2. Under **Extern delning** väljer du **Fler inställningar för extern delning**.
 
-3. Välj **Tillåt endast användare i vissa säkerhetsgrupper att dela externt** och därefter **Hantera säkerhetsgrupper** .
+3. Välj **Tillåt endast användare i vissa säkerhetsgrupper att dela externt** och därefter **Hantera säkerhetsgrupper**.
 
     ![Skärmbild av panelen Hantera säkerhetsgrupper](https://docs.microsoft.com/sharepoint/sharepointonline/media/manage-security-groups.png)
 
@@ -99,7 +100,7 @@ Begränsa extern delning till medlemmar i en säkerhetsgrupp
     - **Endast autentiserade gäster** (standard)
     - **Alla**
 
-6. Välj **Spara** .
+6. Välj **Spara**.
 
 Observera att det här påverkar filer, mappar och webbplatser, men inte Microsoft 365-grupper eller Teams. När medlemmar bjuder in gäster till en privat Microsoft 365-grupp eller ett privat team i Microsoft Teams skickas inbjudan till grupp- eller teamägaren för godkännande.
 

@@ -11,17 +11,18 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: I den här artikeln får du lära dig hur du samarbetar med gäster i ett dokument i SharePoint och OneDrive.
-ms.openlocfilehash: 022811be642a79c07c632cefcc67a27f19e3af4f
-ms.sourcegitcommit: 39af527404cb06e05c5aa4550dbec39aec133016
+ms.openlocfilehash: e3492732756aecb176eb21f0bdfd0d394013975e
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "48422611"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030011"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Samar beta med gäster i ett dokument
 
@@ -48,13 +49,13 @@ Så här anger du inställningar för extern samarbete
 1. Logga in på Azure Active Directory på [https://aad.portal.azure.com](https://aad.portal.azure.com) .
 2. I det vänstra navigerings fönstret klickar du på **Azure Active Directory**.
 3. Klicka på **externa identiteter**.
-4. Klicka på **Inställningar för extern samarbete**i det vänstra navigerings fönstret på skärmen **Kom igång** .
+4. Klicka på **Inställningar för extern samarbete** i det vänstra navigerings fönstret på skärmen **Kom igång** .
 5. Kontrol lera att **Administratörer och användare i rollen för att bjuda in gäst kan bjuda** in och **medlemmar kan bjuda** in till **Ja**.
 6. Om du har gjort ändringar klickar du på **Spara**.
 
 Observera inställningarna i avsnittet **samarbets begränsningar** . Kontrol lera att domänerna för de gäster som du vill samar beta med inte är blockerade.
 
-Om du arbetar med gäster från flera organisationer kan det vara bra att begränsa deras möjligheter att komma åt katalog data. Detta hindrar dem från att se vem som är gäst i katalogen. För att göra det, under **gäst användares restriktioner**, väljer du **gäst användare har begränsad åtkomst till egenskaper och medlemskap i inställningar för katalog objekt** eller **gäst användares åtkomst är begränsad till egenskaper och medlemskap i deras egna katalog objekt**.
+Om du arbetar med gäster från flera organisationer kan det vara bra att begränsa deras möjligheter att komma åt katalog data. Detta hindrar dem från att se vem som är gäst i katalogen. För att göra det, under **gäst användares restriktioner** , väljer du **gäst användare har begränsad åtkomst till egenskaper och medlemskap i inställningar för katalog objekt** eller **gäst användares åtkomst är begränsad till egenskaper och medlemskap i deras egna katalog objekt**.
 
 ## <a name="sharepoint-organization-level-sharing-settings"></a>Delnings inställningar för SharePoint på organisations nivå
 
@@ -71,8 +72,8 @@ För SharePoint väljer du den mest krävda inställning som behövs av någon w
 
 Så här anger du delnings inställningar för SharePoint på organisations nivå
 
-1. Klicka på **SharePoint**i det vänstra navigerings fältet **i administrations**centret för Microsoft 365.
-2. Klicka på **delning** **i det**vänstra navigerings fältet i administrations centret för SharePoint.
+1. Klicka på **SharePoint** i det vänstra navigerings fältet **i administrations** centret för Microsoft 365.
+2. Klicka på **delning** **i det** vänstra navigerings fältet i administrations centret för SharePoint.
 3. Kontrol lera att extern delning för SharePoint eller OneDrive är inställt på **vem som helst** eller **nya och befintliga gäster**. (Observera att OneDrive-inställningen inte kan bli mer tillåtna än SharePoint-inställningen.)
 4. Om du har gjort ändringar klickar du på **Spara**.
 
@@ -94,7 +95,7 @@ Välj en länk från någon av följande typer som sedan är markerad som standa
 Så här anger du inställningar för SharePoint-och OneDrive-standardinställningar på organisations nivå
 
 1. Gå till sidan delning i administrations centret för SharePoint.
-2. Under **fil-och mappaktiviteter**väljer du den standard delnings länk som du vill använda.
+2. Under **fil-och mappaktiviteter** väljer du den standard delnings länk som du vill använda.
 3. Om du har gjort ändringar klickar du på **Spara**.
 
 Om du vill ange behörighet för delnings länken under **Välj den behörighet som är markerad som standard för delning av länkar.**
@@ -126,7 +127,7 @@ Ange delnings inställningar på webbplats nivå
 2. Välj den webbplats där du vill dela filer och mappar med gäster.
 3. Bläddra till höger på raden (där den valda webbplatsen finns) och klicka någonstans i kolumnen **extern delning** .
 4. Klicka på fliken **principer** på sidan som visas.
-5. Klicka på **Redigera**under fönstret **extern delning** .
+5. Klicka på **Redigera** under fönstret **extern delning** .
 6. Kontrol lera att delning är inställt på **vem som helst** eller **nya och befintliga gäster**.
 7. Om du har gjort ändringar klickar du på **Spara**.
 
