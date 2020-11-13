@@ -18,18 +18,18 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: d57709d78cd8b64b740c88362cb99653f6dec681
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: db0f001d20f46c5c248ec153238fe394b8e9721c
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48463996"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49020979"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Nödvändigt arbete för implementering av identitets-och enhets åtkomst principer
 
 I den här artikeln beskrivs förutsättningar som måste implementeras innan du kan distribuera Rekommenderad identitet och enhets åtkomst principer. I den här artikeln beskrivs också rekommenderade standardinställningar för konfigurering av plattformar för att tillhandahålla den bästa enkel inloggnings upplevelsen (SSO) för användarna, samt de tekniska kraven för villkorlig åtkomst.
 
-## <a name="prerequisites"></a>Krav
+## <a name="prerequisites"></a>Förutsättningar
 
 Innan du implementerar de rekommenderade principer för identitet och enheter finns det flera förutsättningar för att organisationen måste mötas för dessa identitets-och autentiseringsdata för Microsoft 365 och Office 365:
 

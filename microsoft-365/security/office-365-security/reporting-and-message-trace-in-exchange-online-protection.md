@@ -14,12 +14,12 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln lär du dig mer om rapporter och fel söknings verktyg som är tillgängliga för Microsoft Exchange Online Protection (EOP)-administratörer.
-ms.openlocfilehash: 9a8eb8e35ef73eb27604eef4bf701982b1d51710
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 856e99e55e6b67d1d22a30e2f55f60857eb4fe75
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845558"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49020897"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Rapportering och meddelande spårning i EOP
 
@@ -83,8 +83,8 @@ I följande tabell beskrivs när EOP rapporter och spårnings data för meddelan
 |Rapport typ|Tillgängliga data för (se bakgrunds perioden)|Borttagning|
 |---|---|---|
 |Sammanfattnings rapporter för e-postskydd|90 dagar|Meddelande data agg regering är mest komplett inom 24-48 timmar. Vissa mindre stegvisa sammanlagda ändringar kan uppkomma i upp till fem dagar.|
-|Informations rapporter för e-postskydd|90 dagar|För detalj uppgifter som är mindre än 7 dagar gamla bör data visas inom 24 timmar, men inte förrän 48 timmar. Vissa mindre stegvisa ändringar kan uppstå i upp till fem dagar. <br/><br/> Om du vill visa detalj rapporter för meddelanden som är äldre än 7 dagar gamla kan resultatet ta upp till några timmar.|
-|Meddelande spårnings data|90 dagar|När du kör en meddelande spårning för meddelanden som är mindre än 7 dagar gamla visas meddelandena inom 5-30 minuter.<br/><br/> När du kör en meddelande spårning för meddelanden som är äldre än 7 dagar sedan kan resultatet ta upp till några timmar.|
+|Informations rapporter för e-postskydd|90 dagar|För detalj uppgifter som är mindre än 7 dagar gamla bör data visas inom 24 timmar, men inte förrän 48 timmar. Vissa mindre stegvisa ändringar kan uppstå i upp till fem dagar. <p> Om du vill visa detalj rapporter för meddelanden som är äldre än 7 dagar gamla kan resultatet ta upp till några timmar.|
+|Meddelande spårnings data|90 dagar|När du kör en meddelande spårning för meddelanden som är mindre än 7 dagar gamla visas meddelandena inom 5-30 minuter.<p> När du kör en meddelande spårning för meddelanden som är äldre än 7 dagar sedan kan resultatet ta upp till några timmar.|
 |
 
 > [!NOTE]

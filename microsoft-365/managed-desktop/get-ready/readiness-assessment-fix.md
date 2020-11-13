@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b77313a18a5744549e492de991e282bc34dbb6da
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 0459de8974fe6bae98e6984fd7dc65afeb04b4e7
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002423"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021091"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Åtgärda problem som hittats av verktyget för bedömning av beredskap
 
@@ -29,6 +29,8 @@ För varje kontroll rapporteras ett av fyra möjliga resultat:
 |Fel | Azure Active Director (AD)-rollen som du använder har inte tillräcklig behörighet för att köra den här kontrollen. |
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune-inställningar
+
+Du kan komma åt Intune-inställningar i [administrations centret](https://endpoint.microsoft.com)för Microsoft Endpoint Manager.
 
 ### <a name="autopilot-deployment-profile"></a>Distributions profil för autopilot
 
@@ -214,7 +216,7 @@ Granska de program du vill att Microsoft Managed Desktop-användarna ska ha.
 
 **Rådgivare**
 
-Du bör förbereda en inventering av de program som du vill att Microsoft Managed Desktop-användarna ska ha. Eftersom dessa appar måste distribueras av Intune kan du utvärdera dem igen med befintliga Intune-appar. Överväg att använda företags portalen (se [Installera Intune företags Portal på enheter](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) och registrerings status sida (ESP) för att distribuera program till användarna. Mer information finns i [program på Microsoft Managed Desktop](apps.md) och förstagångskörningen [med autopilot och sidan registrerings status](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run).
+Du bör förbereda en inventering av de program som du vill att Microsoft Managed Desktop-användarna ska ha. Eftersom dessa appar måste distribueras av Intune kan du utvärdera igen med befintliga Intune-appar. Överväg att använda företags portalen (se [Installera Intune företags Portal på enheter](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) och registrerings status sida (ESP) för att distribuera program till användarna. Mer information finns i [program på Microsoft Managed Desktop](apps.md) och förstagångskörningen [med autopilot och sidan registrerings status](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run).
 
 Du kan be din Microsoft-representant om en fråga i Microsoft Endpoint Configuration Manager att identifiera de program som är redo att migreras till Intune eller behöver justeras.
 
@@ -247,6 +249,7 @@ Se till att eventuella uppdaterings rings principer du har exkluderar den **mode
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory-inställningar
 
+Du kan komma åt Azure Active Directory-inställningar i [Azure-portalen](https://portal.azure.com).
 
 ### <a name="ad-hoc-subscriptions"></a>Ad hoc-abonnemang
 
@@ -326,7 +329,7 @@ Microsoft Managed Desktop-användare kommer inte att ha lokala administratörs p
 
 ### <a name="onedrive"></a>OneDrive
 
-Inställningen **Tillåt synkronisering endast på datorer som är anslutna till vissa domäner** visas i konflikt med Microsoft Managed Desktop.
+Inställningen **Tillåt synkronisering endast på datorer som är anslutna till vissa domäner** visas i konflikt med Microsoft Managed Desktop. Du kan komma åt OneDrive-inställningar i [administrations centret](https://admin.onedrive.com)för OneDrive.
 
 **Rådgivare**
 

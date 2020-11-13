@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa om hur de visar, skapar, ändrar och tar bort principer för skräppostskydd i Exchange Online Protection (EOP).
-ms.openlocfilehash: a2d0f5dcdf02eb3562f15e733f1d8ae25ae82a94
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: da9e9265116ab41f2d8d09b32b496a04673f753f
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203269"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49020991"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurera principer för skräppostskydd i EOP
 
@@ -36,8 +36,8 @@ Du kan konfigurera principer för skräppostskydd i Säkerhets- och efterlevnads
 
 De grundläggande delarna av en anti-spam-policy är:
 
-- **Principen för skräppostfilter**: anger åtgärderna för utfall av skräppostfiltrering och aviseringsalternativen.
-- **Regeln för skräppostfilter**: anger prioritets- och mottagarfilter (vem principen gäller för) för en princip för skräppostfilter.
+- **Principen för skräppostfilter** : anger åtgärderna för utfall av skräppostfiltrering och aviseringsalternativen.
+- **Regeln för skräppostfilter** : anger prioritets- och mottagarfilter (vem principen gäller för) för en princip för skräppostfilter.
 
 Skillnaden mellan dessa två element är inte uppenbar när du hanterar principer för skräppostskydd i Säkerhets- och efterlevnadscenter:
 
@@ -85,15 +85,15 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
 
 3. I den utfällbara rutan **Ny princip för skräppostfilter** som öppnas konfigurerar du följande inställningar:
 
-   - **Namn**: Ange ett unikt, beskrivande namn på principen. Använd inte följande tecken: `\ % & * + / = ? { } | < > ( ) ; : , [ ] "`.
+   - **Namn** : Ange ett unikt, beskrivande namn på principen. Använd inte följande tecken: `\ % & * + / = ? { } | < > ( ) ; : , [ ] "`.
 
       Om du tidigare har skapat principer för skräppostskydd i administrationscenter för Exchange (EAC) som innehåller dessa tecken bör du byta namn på principen för skräppostskydd i PowerShell. Instruktioner finns i avsnittet [Använda PowerShell för att ändra regler för skräppostfilter](#use-powershell-to-modify-spam-filter-rules) längre ner i den här artikeln.
 
-   - **Beskrivning**: Ange en valfri beskrivning av principen.
+   - **Beskrivning** : Ange en valfri beskrivning av principen.
 
 4. (Valfritt) Utöka avsnittet **Åtgärder för skräppost och massutskick** och verifiera eller konfigurera följande inställningar:
 
-   - **Välj vad som ska göras med skräppost och massutskick**: Välj eller granska åtgärden som ska vidtas för meddelanden baserat på följande utfall av skräppostfiltreringen:
+   - **Välj vad som ska göras med skräppost och massutskick** : Välj eller granska åtgärden som ska vidtas för meddelanden baserat på följande utfall av skräppostfiltreringen:
 
      - **Skräppost**
      - **Skräppost med hög konfidens**
@@ -110,36 +110,36 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
 
      |<span>|Skräppost|Högsta<br/>konfidens<br/>skräppost|Fiske<br/>e-post|Högsta<br/>konfidens<br/>fiske<br/>e-post|Massutskick<br/>e-post|
      |---|:---:|:---:|:---:|:---:|:---:|
-     |**Flytta meddelandet till mappen skräppost**: Meddelandet levereras till postlådan och flyttas till mappen Skräppost.<sup>1</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-     |**Lägg till X-rubrik**: Lägger till ett X-huvud i meddelandehuvudet och levererar meddelandet till postlådan. <br/> Du anger fältnamnet för X-huvudet (inte värdet) senare i rutan **Lägg till följande X-sidhuvudtext**. <br/><br/> Om utfallet är **Skräppost** eller **Skräppost med hög konfidens** flyttas meddelandet till mappen Skräppost.<sup>1,2</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-     |**Lägg till text i ämnesraden**: Lägger till text i början av meddelandets ämnesrad. Meddelandet levereras till postlådan och flyttas till mappen Skräppost.<sup>1,2</sup> <br/> Du anger texten senare i rutan **Lägg till den här texten i ämnesraden**.|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-     |**Omdirigera meddelandet till e-postadressen**: Skickar meddelandet till andra mottagare istället för till avsedda mottagare. <br/> Du anger mottagarna senare i rutan **Omdirigera till den här e-postadressen**.|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-     |**Ta bort meddelande**: Hela meddelandet tas tyst bort, inklusive alla bifogade filer.|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-     |**Sätt meddelandet i karantän**: Skickar meddelandet till karantän istället för till avsedda mottagare. <br/> Du anger senare hur länge meddelandet ska hållas kvar i karantänen i rutan **Karantän**.|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+     |**Flytta meddelandet till mappen skräppost** : Meddelandet levereras till postlådan och flyttas till mappen Skräppost. <sup>1</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+     |**Lägg till X-rubrik** : Lägger till ett X-huvud i meddelandehuvudet och levererar meddelandet till postlådan. <p> Du anger fältnamnet för X-huvudet (inte värdet) senare i rutan **Lägg till följande X-sidhuvudtext**. <p> Om utfallet är **Skräppost** eller **Skräppost med hög konfidens** flyttas meddelandet till mappen Skräppost. <sup>1,2</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+     |**Lägg till text i ämnesraden** : Lägger till text i början av meddelandets ämnesrad. Meddelandet levereras till postlådan och flyttas till mappen Skräppost.<sup>1,2</sup> <p> Du anger texten senare i rutan **Lägg till den här texten i ämnesraden**.|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+     |**Omdirigera meddelandet till e-postadressen** : Skickar meddelandet till andra mottagare istället för till avsedda mottagare. <p> Du anger mottagarna senare i rutan **Omdirigera till den här e-postadressen**.|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+     |**Ta bort meddelande** : Hela meddelandet tas tyst bort, inklusive alla bifogade filer.|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+     |**Sätt meddelandet i karantän** : Skickar meddelandet till karantän istället för till avsedda mottagare. <p> Du anger senare hur länge meddelandet ska hållas kvar i karantänen i rutan **Karantän**.|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
      |**Ingen åtgärd**|||||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
      |
 
-     > <sup>1</sup> I Exchange Online flyttas meddelandet till mappen Skräppost om regeln för skräppost har aktiverats för postlådan (den är aktiverad som standard). Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor](configure-junk-email-settings-on-exo-mailboxes.md).
-     >
-     > I fristående EOP-miljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera e-postflödesregler (kallas även för transportregler) i lokalt Exchange för att översätta utfallet av skräppostfiltreringen i EOP så att regeln för skräppost kan flytta meddelandet till mappen Skräppost. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
-     >
-     > <sup>2</sup> Du kan använda det här värdet som ett villkor i e-postflödesregler (kallas även transportregler) för att filtrera eller dirigera meddelandet.
+     <sup>1</sup> I Exchange Online flyttas meddelandet till mappen Skräppost om regeln för skräppost har aktiverats för postlådan (den är aktiverad som standard). Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor](configure-junk-email-settings-on-exo-mailboxes.md).
 
-   - **Välj tröskelvärde**: Anger klagomålsnivån på massutskick (BCL) för ett meddelande som utlöser angiven åtgärd för utfallet **Massutskick** av skräppostfiltreringen (större än det angivna värdet, inte större än eller lika med). Ett högre värde innebär att meddelandet är mindre önskvärt (mer troligt att det liknar skräppost). Standardvärdet är 7. Mer information finns i [Massklagomålsnivå (BCL) i EOP](bulk-complaint-level-values.md) och [Vad är skillnaden mellan skräppost och massutskick?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+     I fristående EOP-miljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera e-postflödesregler (kallas även för transportregler) i lokalt Exchange för att översätta utfallet av skräppostfiltreringen i EOP så att regeln för skräppost kan flytta meddelandet till mappen Skräppost. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
-     Som standard är PowerShell-inställningen _MarkAsSpamBulkMail_ `On` (På) i principer för skräppostskydd. Den här inställningen påverkar dramatiskt resultatet av filtreringsutfallet **Massutskick**:
+     <sup>2</sup> Du kan använda det här värdet som ett villkor i e-postflödesregler (kallas även transportregler) för att filtrera eller dirigera meddelandet.
 
-     - **_MarkAsSpamBulkMail_ är på**: En BCL som är större än tröskelvärdet konverteras till en SCL 6 som motsvarar filtreringsutfallet **Skräppost**, och åtgärden för filtreringsutfallet **Massutskick** vidtas för meddelandet.
+   - **Välj tröskelvärde** : Anger klagomålsnivån på massutskick (BCL) för ett meddelande som utlöser angiven åtgärd för utfallet **Massutskick** av skräppostfiltreringen (större än det angivna värdet, inte större än eller lika med). Ett högre värde innebär att meddelandet är mindre önskvärt (mer troligt att det liknar skräppost). Standardvärdet är 7. Mer information finns i [Massklagomålsnivå (BCL) i EOP](bulk-complaint-level-values.md) och [Vad är skillnaden mellan skräppost och massutskick?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
-     - **_MarkAsSpamBulkMail_ är av**: Meddelandet stämplas med BCL:n, men _ingen åtgärd_ vidtas för filtreringsutfallet **Massutskick**. I praktiken innebär det att BCL-tröskelvärdet och åtgärden för filtreringsutfallet **Massutskick** är irrelevanta.
+     Som standard är PowerShell-inställningen _MarkAsSpamBulkMail_ `On` (På) i principer för skräppostskydd. Den här inställningen påverkar dramatiskt resultatet av filtreringsutfallet **Massutskick** :
 
-   - **Karantän**: Anger hur lång tid meddelandet ska behållas i karantän om du har valt **Sätt meddelandet i karantän** som åtgärd för ett utfall av skräppostfiltreringen. När tidsperioden går ut tas meddelandet bort. Standardvärdet är 30 dagar. Giltiga värden är 1 till 30 dagar. Mer information om karantän finns i artiklarna om följande ämnen:
+     - **_MarkAsSpamBulkMail_ är på** : En BCL som är större än tröskelvärdet konverteras till en SCL 6 som motsvarar filtreringsutfallet **Skräppost** , och åtgärden för filtreringsutfallet **Massutskick** vidtas för meddelandet.
+
+     - **_MarkAsSpamBulkMail_ är av** : Meddelandet stämplas med BCL:n, men _ingen åtgärd_ vidtas för filtreringsutfallet **Massutskick**. I praktiken innebär det att BCL-tröskelvärdet och åtgärden för filtreringsutfallet **Massutskick** är irrelevanta.
+
+   - **Karantän** : Anger hur lång tid meddelandet ska behållas i karantän om du har valt **Sätt meddelandet i karantän** som åtgärd för ett utfall av skräppostfiltreringen. När tidsperioden går ut tas meddelandet bort. Standardvärdet är 30 dagar. Giltiga värden är 1 till 30 dagar. Mer information om karantän finns i artiklarna om följande ämnen:
 
      - [Meddelanden i karantän i EOP](quarantine-email-messages.md)
      - [Hantera meddelanden och filer i karantän som administratör i EOP](manage-quarantined-messages-and-files.md)
      - [Hitta och släppa meddelanden i karantän som användare i EOP](find-and-release-quarantined-messages-as-a-user.md)
 
-   - **Lägg till följande X-sidhuvudtext**: Den här rutan krävs och är endast tillgänglig om du har valt **Lägg till X-rubrik** som åtgärd för ett utfall av skräppostfiltreringen. Värdet du anger är *namnet* på huvudfältet som läggs till i meddelandehuvudet. Huvudfältets *värde* är alltid `This message appears to be spam` (Det här meddelandet verkar vara skräppost).
+   - **Lägg till följande X-sidhuvudtext** : Den här rutan krävs och är endast tillgänglig om du har valt **Lägg till X-rubrik** som åtgärd för ett utfall av skräppostfiltreringen. Värdet du anger är *namnet* på huvudfältet som läggs till i meddelandehuvudet. Huvudfältets *värde* är alltid `This message appears to be spam` (Det här meddelandet verkar vara skräppost).
 
      Den maximala längden är 255 tecken och värdet får inte innehålla blanksteg eller kolon (:).
 
@@ -147,17 +147,17 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
 
      Om du anger ett värde som innehåller blanksteg eller kolon (:) ignoreras det värde du anger och standardtexten för X-huvudet läggs till i meddelandet (`X-This-Is-Spam: This message appears to be spam.`).
 
-   - **Lägg till den här texten i ämnesraden**: Den här rutan krävs och är endast tillgänglig om du har valt **Lägg till text i ämnesraden** som åtgärd för ett utfall av skräppostfiltreringen. Skriv texten som ska läggas till i början av meddelandets ämnesrad.
+   - **Lägg till den här texten i ämnesraden** : Den här rutan krävs och är endast tillgänglig om du har valt **Lägg till text i ämnesraden** som åtgärd för ett utfall av skräppostfiltreringen. Skriv texten som ska läggas till i början av meddelandets ämnesrad.
 
-   - **Omdirigera till den här e-postadressen**: Den här rutan krävs och är endast tillgänglig om du har valt **Omdirigera meddelandet till e-postadressen** som åtgärd för ett utfall av skräppostfiltreringen. Ange den e-postadress dit du vill leverera meddelandet. Du kan ange flera värden avgränsade med semikolon (;).
+   - **Omdirigera till den här e-postadressen** : Den här rutan krävs och är endast tillgänglig om du har valt **Omdirigera meddelandet till e-postadressen** som åtgärd för ett utfall av skräppostfiltreringen. Ange den e-postadress dit du vill leverera meddelandet. Du kan ange flera värden avgränsade med semikolon (;).
 
-   - **Säkerhetstips**: Säkerhetstips är aktiverade som standard, men du kan inaktivera dem genom att avmarkera kryssrutan **På**. Mer information om säkerhetstips finns i [Säkerhetstips i e-postmeddelanden](safety-tips-in-office-365.md).
+   - **Säkerhetstips** : Säkerhetstips är aktiverade som standard, men du kan inaktivera dem genom att avmarkera kryssrutan **På**. Mer information om säkerhetstips finns i [Säkerhetstips i e-postmeddelanden](safety-tips-in-office-365.md).
 
-   Inställningar för **Automatisk rensning**: Automatisk rensning identifierar och vidtar åtgärder för meddelanden som redan har levererats till Exchange Online-postlådor. Mer information om automatisk rensning finns i [Automatisk rensning – skydd mot skräppost och skadlig kod](zero-hour-auto-purge.md).
+   Inställningar för **Automatisk rensning** : Automatisk rensning identifierar och vidtar åtgärder för meddelanden som redan har levererats till Exchange Online-postlådor. Mer information om automatisk rensning finns i [Automatisk rensning – skydd mot skräppost och skadlig kod](zero-hour-auto-purge.md).
 
-   - **Automatisk rensning av skräppost**: Automatisk rensning är aktiverat som standard för upptäckt av skräppost, men du kan inaktivera det genom att avmarkera kryssrutan **På**.
+   - **Automatisk rensning av skräppost** : Automatisk rensning är aktiverat som standard för upptäckt av skräppost, men du kan inaktivera det genom att avmarkera kryssrutan **På**.
 
-   - **Automatisk rensning av nätfiske**: Automatisk rensning är aktiverat som standard för upptäckt av nätfiske, men du kan inaktivera det genom att avmarkera kryssrutan **På**.
+   - **Automatisk rensning av nätfiske** : Automatisk rensning är aktiverat som standard för upptäckt av nätfiske, men du kan inaktivera det genom att avmarkera kryssrutan **På**.
 
 5. (Valfritt) Utöka avsnittet **Tillståndslistor** om du vill konfigurera meddelandeavsändare efter e-postadress eller e-postdomän som får hoppa över skräppostfiltrering:
 
@@ -167,7 +167,7 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
    >
    > - Lägg aldrig till godkända domäner (domäner som du äger) eller vanliga domäner (till exempel microsoft.com eller office.com) i listan över tillåtna domäner. Då skulle angripare kunna skicka e-post till din organisation som kringgår skräppostfiltreringen.
 
-   - **Tillåt avsändare**: Klicka på **Redigera**. I den utfällbara rutan **Lista över tillåtna avsändare** som visas gör du följande:
+   - **Tillåt avsändare** : Klicka på **Redigera**. I den utfällbara rutan **Lista över tillåtna avsändare** som visas gör du följande:
 
       a. Ange avsändarens e-postadress. Du kan ange flera e-postadresser avgränsade med semikolon (;).
 
@@ -179,7 +179,7 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
 
       Klicka på **Spara** när du är klar.
 
-   - **Tillåt domän**: Klicka på **Redigera**. I den utfällbara rutan **Lista över tillåtna domäner** som visas gör du följande steg:
+   - **Tillåt domän** : Klicka på **Redigera**. I den utfällbara rutan **Lista över tillåtna domäner** som visas gör du följande steg:
 
       a. Ange domänen. Du kan ange flera domäner avgränsade med semikolon (;).
 
@@ -196,7 +196,7 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
    > [!NOTE]
    > Manuell blockering av domäner är inte farligt, men det kan öka mängden administrativt arbete. Mer information finns i artikeln om att [skapa listor över blockerade avsändare i EOP](create-block-sender-lists-in-office-365.md).
 
-   - **Blockera avsändare**: Klicka på **Redigera**. I den utfällbara rutan **Lista över blockerade avsändare** som visas gör du följande steg:
+   - **Blockera avsändare** : Klicka på **Redigera**. I den utfällbara rutan **Lista över blockerade avsändare** som visas gör du följande steg:
 
       a. Ange avsändarens e-postadress. Du kan ange flera e-postadresser avgränsade med semikolon (;). Jokertecken (*) är inte tillåtna.
 
@@ -208,7 +208,7 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
 
       Klicka på **Spara** när du är klar.
 
-   - **Blockera domän**: Klicka på **Redigera**. I den utfällbara rutan **Lista över blockerade domäner** som visas gör du följande:
+   - **Blockera domän** : Klicka på **Redigera**. I den utfällbara rutan **Lista över blockerade domäner** som visas gör du följande:
 
       a. Ange domänen. Du kan ange flera domäner avgränsade med semikolon (;). Jokertecken (*) är inte tillåtna.
 
@@ -222,9 +222,9 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
 
 7. (Valfritt) Utöka avsnittet **Internationell skräppost** om du vill konfigurera e-postspråk eller källänder som blockeras av skräppostfiltrering:
 
-   - **Filtrera e-postmeddelanden skrivna på följande språk**: Den här inställningen är inaktiverad som standard (**Status: AV**). Klicka på **Redigera**. I den utfällbara rutan **Inställningar för internationell skräppost** som visas konfigurerar du följande inställningar:
+   - **Filtrera e-postmeddelanden skrivna på följande språk** : Den här inställningen är inaktiverad som standard ( **Status: AV** ). Klicka på **Redigera**. I den utfällbara rutan **Inställningar för internationell skräppost** som visas konfigurerar du följande inställningar:
 
-     - **Filtrera e-postmeddelanden skrivna på följande språk**: Markera kryssrutan om du vill aktivera den här inställningen. Avmarkera kryssrutan om du vill inaktivera inställningen.
+     - **Filtrera e-postmeddelanden skrivna på följande språk** : Markera kryssrutan om du vill aktivera den här inställningen. Avmarkera kryssrutan om du vill inaktivera inställningen.
 
      - Klicka i rutan och börja skriva *namnet* på språket. En filtrerad lista över språk som stöds visas, tillsammans med motsvarande ISO 639-2-språkkod. När du hittar det språk du letar efter väljer du det. Upprepa det här steget så många gånger det behövs.
 
@@ -232,9 +232,9 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
 
      Klicka på **Spara** när du är klar.
 
-   - **Filtrera e-postmeddelanden skickade från följande länder eller regioner**: Den här inställningen är inaktiverad som standard (**Status: AV**). Om du vill aktivera den klickar du på **Redigera**. I den utfällbara rutan **Inställningar för internationell skräppost** som visas konfigurerar du följande inställningar:
+   - **Filtrera e-postmeddelanden skickade från följande länder eller regioner** : Den här inställningen är inaktiverad som standard ( **Status: AV** ). Om du vill aktivera den klickar du på **Redigera**. I den utfällbara rutan **Inställningar för internationell skräppost** som visas konfigurerar du följande inställningar:
 
-     - **Filtrera e-postmeddelanden skickade från följande länder eller regioner**: Markera kryssrutan om du vill aktivera den här inställningen. Avmarkera kryssrutan om du vill inaktivera inställningen.
+     - **Filtrera e-postmeddelanden skickade från följande länder eller regioner** : Markera kryssrutan om du vill aktivera den här inställningen. Avmarkera kryssrutan om du vill inaktivera inställningen.
 
      - Klicka i rutan och börja skriva *namnet* på landet eller regionen. En filtrerad lista över länder och regioner som stöds visas, tillsammans med motsvarande ISO 3166-1-landskod med två bokstäver. När du hittar landet eller regionen du söker efter väljer du det. Upprepa det här steget så många gånger det behövs.
 
@@ -248,17 +248,17 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
 
 9. (Obligatoriskt) Utöka avsnittet **Tillämpas på** och ange vilka interna mottagare som principen gäller för.
 
-    Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_).
+    Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_ ). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_ ).
 
     Det är enklast att klicka på **Lägg till ett villkor** tre gånger för att visa alla tillgängliga villkor. Om du vill ta bort villkor som du inte vill konfigurera kan du klicka på ![knappen Ta bort](../../media/scc-remove-icon.png).
 
-    - **Mottagande domän är**: Anger mottagare i en eller flera av de godkända domänerna som har konfigurerats i din organisation. Klicka i rutan **Lägg till en tagg** om du vill visa och välja en domän. Klicka igen i rutan **Lägg till en tagg** och välj fler domäner om fler än en domän är tillgänglig.
+    - **Mottagande domän är** : Anger mottagare i en eller flera av de godkända domänerna som har konfigurerats i din organisation. Klicka i rutan **Lägg till en tagg** om du vill visa och välja en domän. Klicka igen i rutan **Lägg till en tagg** och välj fler domäner om fler än en domän är tillgänglig.
 
-    - **Mottagaren är**: Anger en eller flera postlådor, e-postanvändare eller e-postkontakter i organisationen. Klicka i rutan **Lägg till en tagg** och börja skriva för att filtrera listan. Klicka igen i rutan **Lägg till en tagg** om du vill välja fler mottagare.
+    - **Mottagaren är** : Anger en eller flera postlådor, e-postanvändare eller e-postkontakter i organisationen. Klicka i rutan **Lägg till en tagg** och börja skriva för att filtrera listan. Klicka igen i rutan **Lägg till en tagg** om du vill välja fler mottagare.
 
-    - **Mottagaren är medlem i**: Anger en eller flera grupper i organisationen. Klicka i rutan **Lägg till en tagg** och börja skriva för att filtrera listan. Klicka igen i rutan **Lägg till en tagg** om du vill välja fler mottagare.
+    - **Mottagaren är medlem i** : Anger en eller flera grupper i organisationen. Klicka i rutan **Lägg till en tagg** och börja skriva för att filtrera listan. Klicka igen i rutan **Lägg till en tagg** om du vill välja fler mottagare.
 
-    - **Förutom om**: Om du vill lägga till undantag för regeln klickar du på **Lägg till ett villkor** tre gånger, så visas alla tillgängliga undantag. Inställningarna och beteendet är likadana som villkoren.
+    - **Förutom om** : Om du vill lägga till undantag för regeln klickar du på **Lägg till ett villkor** tre gånger, så visas alla tillgängliga undantag. Inställningarna och beteendet är likadana som villkoren.
 
 10. Klicka på **Spara** när du är klar.
 
@@ -296,7 +296,7 @@ Läs mer i följande avsnitt om du vill aktivera eller inaktivera en princip, an
 
 1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd**.
 
-2. På sidan **Inställningar för skräppostskydd** klickar du på ![ikonen Visa](../../media/scc-expand-icon.png), så visas en anpassad princip som du har skapat (värdet i kolumnen **Typ** är **Anpassad princip för skräppostskydd**).
+2. På sidan **Inställningar för skräppostskydd** klickar du på ![ikonen Visa](../../media/scc-expand-icon.png), så visas en anpassad princip som du har skapat (värdet i kolumnen **Typ** är **Anpassad princip för skräppostskydd** ).
 
 3. Kontrollera värdet i kolumnen **På** i den utökade principinformationen som visas.
 
@@ -312,21 +312,21 @@ Som standard tilldelas principer för skräppostskydd en prioritet baserat på d
 
 För mer information om ordningsföljden och hur flera policyer utvärderas och tillämpas, se [Order och prioritet för e-postskydd](how-policies-and-protections-are-combined.md).
 
-Anpassade principer för skräppostskydd visas i den ordning som de bearbetas (den första principen har värdet 0 för **Prioritet**). Standardprincipen för skräppostskydd med namnet **Standardprincip för skräppostfilter** har prioritetsvärdet **Lägsta**, och du kan inte ändra det.
+Anpassade principer för skräppostskydd visas i den ordning som de bearbetas (den första principen har värdet 0 för **Prioritet** ). Standardprincipen för skräppostskydd med namnet **Standardprincip för skräppostfilter** har prioritetsvärdet **Lägsta** , och du kan inte ändra det.
 
- **Obs**! I Säkerhets- och efterlevnadscenter kan du bara ändra prioriteten för principen för skräppostskydd efter att du har skapat den. I PowerShell kan du åsidosätta standardprioriteten när du skapar regeln för skräppostfilter (vilket kan påverka prioriteringen för befintliga regler).
+ **Obs** ! I Säkerhets- och efterlevnadscenter kan du bara ändra prioriteten för principen för skräppostskydd efter att du har skapat den. I PowerShell kan du åsidosätta standardprioriteten när du skapar regeln för skräppostfilter (vilket kan påverka prioriteringen för befintliga regler).
 
 Du ändrar prioriteten för en princip genom att flytta principen uppåt eller nedåt i listan (du kan inte ändra **prioritetsnumret** direkt i Säkerhets- och efterlevnadscenter).
 
 1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd**.
 
-2. På sidan **Inställningar för skräppostskydd** hittar du principerna där värdet i kolumnen **Typ** är **Anpassad princip för skräppostskydd**. Kontrollera värdena i kolumnen **Prioritet**:
+2. På sidan **Inställningar för skräppostskydd** hittar du principerna där värdet i kolumnen **Typ** är **Anpassad princip för skräppostskydd**. Kontrollera värdena i kolumnen **Prioritet** :
 
    - Den anpassade principen för skräppostskydd med den högsta prioriteten har värdet ![ikonen Nedåtpil](../../media/ITPro-EAC-DownArrowIcon.png) **0**.
 
    - Den anpassade principen för skräppostskydd med den lägsta prioriteten har värdet ![ikonen Uppåtpil](../../media/ITPro-EAC-UpArrowIcon.png) **n** (till exempel ![ikonen Uppåtpil](../../media/ITPro-EAC-UpArrowIcon.png) **3**.)
 
-   - Om du har tre eller fler anpassade principer för skräppostskydd har principerna mellan den högsta och lägsta prioriteten värdena ![ikonen Uppåtpil](../../media/ITPro-EAC-UpArrowIcon.png)![ikonen Nedåtpil](../../media/ITPro-EAC-DownArrowIcon.png) **n** (till exempel ![ikonen Uppåtpil](../../media/ITPro-EAC-UpArrowIcon.png)![ikonen Nedåtpil](../../media/ITPro-EAC-DownArrowIcon.png) **2**).
+   - Om du har tre eller fler anpassade principer för skräppostskydd har principerna mellan den högsta och lägsta prioriteten värdena ![ikonen Uppåtpil](../../media/ITPro-EAC-UpArrowIcon.png)![ikonen Nedåtpil](../../media/ITPro-EAC-DownArrowIcon.png) **n** (till exempel ![ikonen Uppåtpil](../../media/ITPro-EAC-UpArrowIcon.png)![ikonen Nedåtpil](../../media/ITPro-EAC-DownArrowIcon.png) **2** ).
 
 3. Klicka på ![ikonen Uppåtpil](../../media/ITPro-EAC-UpArrowIcon.png) eller ![ikonen Nedåtpil](../../media/ITPro-EAC-DownArrowIcon.png) om du vill flytta den anpassade principen för skräppostskydd uppåt eller nedåt i prioritetslistan.
 
@@ -346,16 +346,16 @@ När ett utfall av skräppostfiltreringen sätter ett meddelande i karantän kan
 
 4. Konfigurera följande inställningar i dialogrutan **\<Policy Name\>** som öppnas:
 
-   - **Aktivera aviseringar om skräppost för slutanvändare**: Markera kryssrutan om du vill aktivera aviseringar. Avmarkera kryssrutan om du vill inaktivera aviseringar.
+   - **Aktivera aviseringar om skräppost för slutanvändare** : Markera kryssrutan om du vill aktivera aviseringar. Avmarkera kryssrutan om du vill inaktivera aviseringar.
 
-   - **Skicka skräppostaviseringar till slutanvändare varje (dagar)**: Välj hur ofta aviseringar ska skickas. Standardvärdet är 3 dagar. Du kan ange 1 till 15 dagar.
+   - **Skicka skräppostaviseringar till slutanvändare varje (dagar)** : Välj hur ofta aviseringar ska skickas. Standardvärdet är 3 dagar. Du kan ange 1 till 15 dagar.
 
      Det finns tre cykler för skräppostaviseringar för användare inom en 24-timmarsperiod som startar vid följande tidpunkter: 01:00 UTC, 08:00 UTC och 16:00 UTC.
 
      > [!NOTE]
      > Om vi missade en avisering under en tidigare cykel skickas aviseringen under nästföljande cykeln. Det här kan få det att verka som om flera aviseringar skickas ut samma dag.
 
-   - **Aviseringsspråk**: Klicka på listrutan och välj ett tillgängligt språk i listan. Standardvärdet är **Standard**, vilket innebär engelska.
+   - **Aviseringsspråk** : Klicka på listrutan och välj ett tillgängligt språk i listan. Standardvärdet är **Standard** , vilket innebär engelska.
 
    Klicka på **Spara** när du är klar.
 
@@ -363,7 +363,7 @@ När ett utfall av skräppostfiltreringen sätter ett meddelande i karantän kan
 
 1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd**.
 
-2. På sidan **Inställningar för skräppostskydd** klickar du på ![ikonen Visa](../../media/scc-expand-icon.png), så visas den anpassade principen du vill ta bort (kolumnen **Typ** har värdet **Anpassad princip för skräppostskydd**).
+2. På sidan **Inställningar för skräppostskydd** klickar du på ![ikonen Visa](../../media/scc-expand-icon.png), så visas den anpassade principen du vill ta bort (kolumnen **Typ** har värdet **Anpassad princip för skräppostskydd** ).
 
 3. I den utökade principinformationen som visas klickar du på **Ta bort princip**.
 
@@ -375,7 +375,7 @@ Du kan inte ta bort standardprincipen.
 
 Som tidigare beskrivits består en anti-spam policy av en policy för spamfilter och en regel för spamfilter.
 
-I Exchange Online PowerShell eller fristående EOP PowerShell är skillnaden mellan principer för skräppostfilter och regler för skräppostfilter uppenbar. Du hanterar principer för skräppostfilter genom att använda cmdletarna **\*-HostedContentFilterPolicy**, och du hanterar regler för skräppostfilter genom att använda cmdletarna **\*-HostedContentFilterRule**.
+I Exchange Online PowerShell eller fristående EOP PowerShell är skillnaden mellan principer för skräppostfilter och regler för skräppostfilter uppenbar. Du hanterar principer för skräppostfilter genom att använda cmdletarna **\*-HostedContentFilterPolicy** , och du hanterar regler för skräppostfilter genom att använda cmdletarna **\*-HostedContentFilterRule**.
 
 - I PowerShell skapar du först principen för skräppostfilter. Sedan skapar du regeln för skräppostfilter som identifierar principen som regeln gäller för.
 - I PowerShell ändrar du inställningarna för principen för skräppostfilter och regeln för skräppostfilter separat.
@@ -398,14 +398,14 @@ Du skapar en princip för skräppostskydd i PowerShell i två steg:
 1. Skapa principen för skräppostfilter.
 2. Skapa regeln för skräppostfilter som anger den princip för skräppostfilter som regeln gäller för.
 
- **Anmärkningar**:
+ **Anmärkningar** :
 
 - Du kan skapa en ny regel för skräppostfilter och tilldela en befintlig princip för skräppostfilter som inte har associerats till den. En regel för skräppostfilter kan inte associeras med fler än en princip för skräppostfilter.
 
 - Du kan konfigurera följande inställningar i nya principer för skräppostfilter i PowerShell som inte är tillgängliga i Säkerhets- och efterlevnadscenter förrän du har skapat principen:
 
-  - Skapa den nya principen som inaktiverad (_Enabled_ `$false` i cmdleten **New-HostedContentFilterRule**).
-  - Ange prioriteten för principen när du skapar den (_Priority_ _\<Number\>_) i cmdleten **New-HostedContentFilterRule**).
+  - Skapa den nya principen som inaktiverad ( _Enabled_ `$false` i cmdleten **New-HostedContentFilterRule** ).
+  - Ange prioriteten för principen när du skapar den ( _Priority_ _\<Number\>_ ) i cmdleten **New-HostedContentFilterRule** ).
 
 - En ny princip för skräppostfilter som du skapar i PowerShell är inte synlig i Säkerhets- och efterlevnadscenter förrän du tilldelar principen till en regel för skräppostfilter.
 
@@ -428,7 +428,7 @@ New-HostedContentFilterPolicy -Name "Contoso Executives" -HighConfidenceSpamActi
 ```
 
 > [!NOTE]
-> **New-HostedContentFilterPolicy** och **Set-HostedContentFilterPolicy** innehåller en äldre _ZapEnabled_-parameter, samt nyare _PhishZapEnabled_- och _SpamZapEnabled_-parametrar. Parametern _ZapEnabled_ blev inaktuell i februari 2020. Parametrarna _PhishZapEnabled_ och _SpamZapEnabled_ brukade ärva sina värden från parametern _ZapEnabled_. Men om du använder parametrarna _PhishZapEnabled_ och _SpamZapEnabled_ i ett kommando eller om du använder inställningarna för **Automatisk rensning av skräppost** eller **Automatisk rensning av nätfiske** i principen för skräppostskydd i Säkerhets- och efterlevnadscentret ignoreras värdet för parametern _ZapEnabled_. Använd med andra ord inte parametern _ZapEnabled_. Använd istället parametrarna _PhishZapEnabled_ och _SpamZapEnabled_.
+> **New-HostedContentFilterPolicy** och **Set-HostedContentFilterPolicy** innehåller en äldre _ZapEnabled_ -parameter, samt nyare _PhishZapEnabled_ - och _SpamZapEnabled_ -parametrar. Parametern _ZapEnabled_ blev inaktuell i februari 2020. Parametrarna _PhishZapEnabled_ och _SpamZapEnabled_ brukade ärva sina värden från parametern _ZapEnabled_. Men om du använder parametrarna _PhishZapEnabled_ och _SpamZapEnabled_ i ett kommando eller om du använder inställningarna för **Automatisk rensning av skräppost** eller **Automatisk rensning av nätfiske** i principen för skräppostskydd i Säkerhets- och efterlevnadscentret ignoreras värdet för parametern _ZapEnabled_. Använd med andra ord inte parametern _ZapEnabled_. Använd istället parametrarna _PhishZapEnabled_ och _SpamZapEnabled_.
 
 Detaljerad information om syntax och parametrar finns i [New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy).
 
@@ -518,7 +518,7 @@ Förutom följande objekt är samma inställningar tillgängliga när du ändrar
 
 - Switchparametern _MakeDefault_ som omvandlar den angivna principen till standardprincipen (tillämpas på alla, alltid prioriteten **Lägsta** och du kan inte ta bort den) är endast tillgänglig när du ändrar en princip för skräppostfilter i PowerShell.
 
-- Du kan inte byta namn på en princip för skräppostfilter (cmdleten **Set-HostedContentFilterPolicy** har ingen _Name_-parameter). När du byter namn på en princip för skräppostskydd i Säkerhets- och efterlevnadscenter byter du bara namn på _regeln_ för skräppostfiltret.
+- Du kan inte byta namn på en princip för skräppostfilter (cmdleten **Set-HostedContentFilterPolicy** har ingen _Name_ -parameter). När du byter namn på en princip för skräppostskydd i Säkerhets- och efterlevnadscenter byter du bara namn på _regeln_ för skräppostfiltret.
 
 Om du vill ändra en princip för skräppostfilter använder du följande syntax:
 
@@ -588,7 +588,7 @@ I det här exemplet anges prioriteten för regeln med namnet Marketing Departmen
 Set-HostedContentFilterRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Anmärkningar**:
+**Anmärkningar** :
 
 - Om du vill ange prioriteten för en ny regel när du skapar den använder du parametern _Priority_ i cmdleten **New-HostedContentFilterRule** istället.
 

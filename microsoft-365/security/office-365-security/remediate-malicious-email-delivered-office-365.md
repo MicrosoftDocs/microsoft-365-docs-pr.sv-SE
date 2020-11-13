@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Hot-reparation
 appliesto:
 - Microsoft 365 Defender
-ms.openlocfilehash: af34b171cb213836d47edb2fb2905fb75341b02f
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 60a658ec4f94dc35519c21b5354f480845342663
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845606"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49020945"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Åtgärda skadlig e-post som skickas i Office 365
 
@@ -38,16 +38,16 @@ Om du vill visa meddelande rubriker eller hämta e-postinnehåll måste du ha en
 ****
 
 |Aktivitet|Roll grupp|Vill du för *hands Visa* den?|
-|---|---|---|
-|Använd Threat Explorer (och real tids identifieringar) för att analysera hot |Global administratör <br> Säkerhets administratör <br> Säkerhets läsare|Nej|
-|Använd Threat Explorer (och identifiering i real tid) för att visa rubriker för e-postmeddelanden och för att förhandsgranska och hämta e-postmeddelanden i karantän|Global administratör <br> Säkerhets administratör <br>Säkerhets läsare|Nej|
-|Använda Threat Explorer för att visa rubriker och hämta e-postmeddelanden som skickas till post lådor|Global administratör <br>Säkerhets administratör <br> Säkerhets läsare <br> Automatisk|Ja|
+|---|---|:---:|
+|Använd Threat Explorer (och real tids identifieringar) för att analysera hot |Global administratör <p> Säkerhets administratör <p> Säkerhets läsare|Nej|
+|Använd Threat Explorer (och identifiering i real tid) för att visa rubriker för e-postmeddelanden och för att förhandsgranska och hämta e-postmeddelanden i karantän|Global administratör <p> Säkerhets administratör <p> Säkerhets läsare|Nej|
+|Använda Threat Explorer för att visa rubriker och hämta e-postmeddelanden som skickas till post lådor|Global administratör <p> Säkerhets administratör <p> Säkerhets läsare <p> Automatisk|Ja|
 
 > [!NOTE]
-> För hands versionen är en *roll* och inte en *roll grupp*. Förhands gransknings rollen måste läggas till i en befintlig roll grupp för Office 365. *Rollen global administratör* är tilldelad i [administrations centret för Microsoft 365](https://admin.microsoft.com). Rollerna säkerhets-och säkerhets läsare är kopplade till [säkerhets-och efterlevnadsprinciper](https://protection.office.com). Mer information om roller och behörigheter finns i [behörigheter i avsnittet säkerhet och efterlevnad](permissions-in-the-security-and-compliance-center.md).
-
-> [!NOTE]
-> Administratörer kan utföra den åtgärd som krävs för e-post, men för att få dessa åtgärder godkända måste de ha rollen *Sök och ta bort* som har tilldelats dem via **säkerhets-och efterlevnadsprinciper**  >  **Permissions**.
+>
+> - För hands versionen är en *roll* och inte en *roll grupp*. Förhands gransknings rollen måste läggas till i en befintlig roll grupp för Office 365. *Rollen global administratör* är tilldelad i [administrations centret för Microsoft 365](https://admin.microsoft.com). Rollerna säkerhets administratör och säkerhets läsare är kopplade till [Center för säkerhets & efterlevnad](https://protection.office.com). Mer information om roller och behörigheter finns i [behörigheter i säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+>
+> - Administratörer kan utföra den åtgärd som krävs för e-post, men för att få dessa åtgärder godkända måste de ha rollen *Sök och ta bort* som har tilldelats dem via **säkerhet & krav för kompatibilitetskontrollen** \> **Permissions**.
 
 ## <a name="manual-and-automated-remediation"></a>Manuell och automatisk reparation
 
@@ -77,67 +77,66 @@ Alla reparationer (antingen direkt godkännande eller ett godkännande med två 
 
 ![Åtgärds Center med en lista med hot efter datum och allvarlighets grad.](../../media/tp-RemediationArticle4.png)
 
-Åtgärds Center visar alla reparations åtgärder under de senaste 30 dagarna. Åtgärder som vidtas via Threat Explorer listas efter det namn som säkerhets åtgärds gruppen tillhandahöll när reparationen skapades. Åtgärder som utförs genom automatiserade utredningar har titlar som börjar med den relaterade aviseringen som utlöste undersökningen, till exempel "ZAP-e-postkluster... ."
+Åtgärds Center visar alla reparations åtgärder under de senaste 30 dagarna. Åtgärder som vidtas via Threat Explorer listas efter det namn som säkerhets åtgärds gruppen tillhandahöll när reparationen skapades. Åtgärder som utförs genom automatiserade utredningar har titlar som börjar med den relaterade aviseringen som utlöste undersökningen, till exempel "ZAP-e-postkluster...."
 
 Öppna ett reparations objekt om du vill visa information om det, inklusive namn, tillkomst datum, beskrivning, risk allvarlighets grad och status. Här visas även två flikar.
 
-- Fliken **e-post** : visar antalet e-postmeddelanden som skickas via Threat Explorer eller automatiska utredningar som ska åtgärdas. Dessa e-postmeddelanden kan vara åtgärdade eller inte åtgärdade.<br/><br/>![Åtgärds Center med problem som åtgärdas och inte är åtgärdade.](../../media/tp-RemediationArticle5.png)
+- Fliken **e-post** : visar antalet e-postmeddelanden som skickas via Threat Explorer eller automatiska utredningar som ska åtgärdas. Dessa e-postmeddelanden kan vara åtgärdade eller inte åtgärdade.
 
-   - **Åtgärdbar** : e-postmeddelanden i följande moln post lådor kan användas och flyttas:
+  ![Åtgärds Center med problem som åtgärdas och inte är åtgärdade.](../../media/tp-RemediationArticle5.png)
 
-     - Brevlåda
-     - Mappen
-     - Borttagen mapp
-     - Mappen Borttaget
+  - **Åtgärdbar** : e-postmeddelanden i följande moln post lådor kan användas och flyttas:
+    - Brevlåda
+    - Mappen
+    - Borttagen mapp
+    - Mappen Borttaget
 
-     > [!NOTE]
-     > För närvarande kan bara en användare som har till gång till post lådan återskapa objekt från en mapp som du har tagit bort.
+      > [!NOTE]
+      > För närvarande kan bara en användare som har till gång till post lådan återskapa objekt från en mapp som du har tagit bort.
 
-   - **Ej åtgärdbar** : e-postmeddelanden på följande platser kan inte utföras eller flyttas i åtgärds åtgärder:
+  - **Ej åtgärdbar** : e-postmeddelanden på följande platser kan inte utföras eller flyttas i åtgärds åtgärder:
+    - Karantän
+    - Mappen tas bort
+    - Lokal/extern
+    - Misslyckad/avbruten
 
-     - Karantän
-     - Mappen tas bort
-     - Lokal/extern
-     - Misslyckad/avbruten
+  Misstänkta meddelanden kategoriseras som antingen åtgärds bara eller nonremediable. I de flesta fall kan avhjälps bara och nonremediable-meddelanden vara lika med totalt antal skickade meddelanden. I sällsynta fall kan det här vara sant. Detta kan bero på att systemet förskjuts, timeout eller gått ut. Meddelanden upphör att gälla baserat på den bevarande tids perioden för din organisation.
 
-   Misstänkta meddelanden kategoriseras som antingen åtgärds bara eller nonremediable. I de flesta fall kan avhjälps bara och nonremediable-meddelanden vara lika med totalt antal skickade meddelanden. I sällsynta fall kan det här vara sant. Detta kan bero på att systemet förskjuts, timeout eller gått ut. Meddelanden upphör att gälla baserat på den bevarande tids perioden för din organisation.
+  Om du inte reparerar gamla meddelanden efter det att du har bevarat en bevarande period i din organisations under skrift bör du försöka åtgärda objekt igen om du ser inkonsekvenser av tal. För system fördröjningar uppdateras vanligt vis reparations uppdateringar inom några timmar.
 
-   Om du inte reparerar gamla meddelanden efter det att du har bevarat en bevarande period i din organisations under skrift bör du försöka åtgärda objekt igen om du ser inkonsekvenser av tal. För system fördröjningar uppdateras vanligt vis reparations uppdateringar inom några timmar.
+  Om din organisations bevarande period för e-post i Threat Explorer är 30 dagar och du åtgärdar e-post som går tillbaka 29-30 dagar, kan du inte alltid lägga till e-post. E-postmeddelandena kan ha börjat flytta sig från lagrings perioden redan.
 
-   Om din organisations bevarande period för e-post i Threat Explorer är 30 dagar och du åtgärdar e-post som går tillbaka 29-30 dagar, kan du inte alltid lägga till e-post. E-postmeddelandena kan ha börjat flytta sig från lagrings perioden redan.
+  Om reparationen fastnar i tillståndet "pågående" för ett tag beror det troligt vis på systemets fördröjning. Det kan ta upp till några timmar att åtgärda. Du kan se variationer i antal e-postsändningar eftersom vissa av e-postmeddelandena kanske inte har inkluderats i början av reparationen på grund av system fördröjningar. Det är en bra idé att försöka åtgärda detta i sådana fall.
 
-   Om reparationen fastnar i tillståndet "pågående" för ett tag beror det troligt vis på systemets fördröjning. Det kan ta upp till några timmar att åtgärda. Du kan se variationer i antal e-postsändningar eftersom vissa av e-postmeddelandena kanske inte har inkluderats i början av reparationen på grund av system fördröjningar. Det är en bra idé att försöka åtgärda detta i sådana fall.
+  > [!NOTE]
+  > För bästa resultat ska reparationen göras i grupper om 50 000 eller färre.
 
-  >[!Note]
-  >För bästa resultat ska reparationen göras i grupper om 50 000 eller färre.
+  Endast avhjälpade e-postmeddelanden behandlas vid reparation. Nonremediable-e-postmeddelanden kan inte åtgärdas av Office 365-e-postsystemet, eftersom de inte lagras i moln post lådor.
 
-   Endast avhjälpade e-postmeddelanden behandlas vid reparation. Nonremediable-e-postmeddelanden kan inte åtgärdas av Office 365-e-postsystemet, eftersom de inte lagras i moln post lådor.
+  Administratörer kan utföra åtgärder för e-postmeddelanden i karantän om det behövs, men dessa e-postmeddelanden upphör att gälla om de inte töms manuellt. E-postmeddelanden i karantän eftersom skadligt innehåll inte är tillgängligt för användarna, så säkerhets personalen behöver inte vidta några åtgärder för att få bort hot i karantänen. Om e-posten är lokal eller extern kan användaren kontaktas för att adressera den misstänkta e-postmeddelandet. Eller så kan administratörer använda separata e-postservrar/säkerhets verktyg för borttagning. Dessa e-postmeddelanden kan identifieras genom att använda *lokala* externa filter i Threat Explorer. För misslyckad eller avbruten e-post eller e-post som inte är tillgänglig för användarna är det inget e-postmeddelande att undvika, eftersom dessa e-postmeddelanden inte når post lådan.
 
-   Administratörer kan utföra åtgärder för e-postmeddelanden i karantän om det behövs, men dessa e-postmeddelanden upphör att gälla om de inte töms manuellt. E-postmeddelanden i karantän eftersom skadligt innehåll inte är tillgängligt för användarna, så säkerhets personalen behöver inte vidta några åtgärder för att få bort hot i karantänen. Om e-posten är lokal eller extern kan användaren kontaktas för att adressera den misstänkta e-postmeddelandet. Eller så kan administratörer använda separata e-postservrar/säkerhets verktyg för borttagning. Dessa e-postmeddelanden kan identifieras genom att använda *lokala* externa filter i Threat Explorer. För misslyckad eller avbruten e-post eller e-post som inte är tillgänglig för användarna är det inget e-postmeddelande att undvika, eftersom dessa e-postmeddelanden inte når post lådan.
+  I följande bild visas hur en överföring ser ut i åtgärds Center. En åtgärd kan innehålla flera inlämningar. Om flera åtgärder godkänns genom en automatisk undersökning visas varje e-post eller e-postkluster åtgärd i samma reparation som en annan överföring.
 
-   I följande bild visas hur en överföring ser ut i åtgärds Center. En åtgärd kan innehålla flera inlämningar. Om flera åtgärder godkänns genom en automatisk undersökning visas varje e-post eller e-postkluster åtgärd i samma reparation som en annan överföring.
+  ![Den utfällbara panelen för e-postgrupp.](../../media/tp-RemediationArticle6.png)
 
-   ![Den utfällbara panelen för e-postgrupp.](../../media/tp-RemediationArticle6.png)
-
-   Välj ett e-postobjekt om du vill visa information om den här åtgärden, till exempel frågan (när reparationen utlöses genom automatiska utredningar eller hot Explorer genom att välja en fråga) och start-och slut tiderna för reparationen. Dessutom visas en lista med meddelanden som skickades för reparation. När meddelanden flyttas från den bevarande perioden för hot Explorer försvinner meddelandena från den här listan. Listan visar också enskilda meddelanden som är avhjälpade.
+  Välj ett e-postobjekt om du vill visa information om den här åtgärden, till exempel frågan (när reparationen utlöses genom automatiska utredningar eller hot Explorer genom att välja en fråga) och start-och slut tiderna för reparationen. Dessutom visas en lista med meddelanden som skickades för reparation. När meddelanden flyttas från den bevarande perioden för hot Explorer försvinner meddelandena från den här listan. Listan visar också enskilda meddelanden som är avhjälpade.
 
 - **Åtgärds loggar** : den här fliken visar de meddelanden som har åtgärd ATS, inklusive godkänt datum, administratören som godkände åtgärden, åtgärden, statusen och antalet.
 
-   Status kan vara:
+  Status kan vara:
 
-     - **Startad** : åtgärd aktive ras.
-     - **Köade** : reparation är i kö för att minska antalet e-postmeddelanden.
-     - **Pågår** : det pågår.
-     - **Slutfört** : begränsning av alla avhjälpda e-postmeddelanden har antingen genomförts eller med fel.
-     - **Misslyckades** : ingen åtgärd lyckades.
+  - **Startad** : åtgärd aktive ras.
+  - **Köade** : reparation är i kö för att minska antalet e-postmeddelanden.
+  - **Pågår** : det pågår.
+  - **Slutfört** : begränsning av alla avhjälpda e-postmeddelanden har antingen genomförts eller med fel.
+  - **Misslyckades** : ingen åtgärd lyckades.
 
-   Det är bara att lösa in e-postmeddelanden som kan åtgärdas genom att rensa varje e-postmeddelande. Från de totala avhjälpade e-postmeddelandena, lyckade och misslyckade begränsningarna rapporteras.
+  Det är bara att lösa in e-postmeddelanden som kan åtgärdas genom att rensa varje e-postmeddelande. Från de totala avhjälpade e-postmeddelandena, lyckade och misslyckade begränsningarna rapporteras.
 
-   - **Lyckades** : den önskade åtgärden i avhjälpade e-postmeddelanden har gjorts. Till exempel: en administratör vill ta bort e-postmeddelanden från post lådor, så administratören tar bort e-postmeddelandena. Om det inte går att hitta en åtgärd med e-post i originalmappen efter åtgärden är statusen klar.
+  - **Lyckades** : den önskade åtgärden i avhjälpade e-postmeddelanden har gjorts. Till exempel: en administratör vill ta bort e-postmeddelanden från post lådor, så administratören tar bort e-postmeddelandena. Om det inte går att hitta en åtgärd med e-post i originalmappen efter åtgärden är statusen klar.
 
-   - **Fel** : den önskade åtgärden på avhjälpade e-postmeddelanden misslyckades. Till exempel: en administratör vill ta bort e-postmeddelanden från post lådor, så administratören tar bort e-postmeddelandena. Om det finns ett åtgärdat e-postmeddelande som fortfarande hittas i post lådan efter åtgärden har statusen visats som misslyckad.
+  - **Fel** : den önskade åtgärden på avhjälpade e-postmeddelanden misslyckades. Till exempel: en administratör vill ta bort e-postmeddelanden från post lådor, så administratören tar bort e-postmeddelandena. Om det finns ett åtgärdat e-postmeddelande som fortfarande hittas i post lådan efter åtgärden har statusen visats som misslyckad.
 
-   Markera ett objekt i åtgärds loggen för att Visa reparations information. Om informationen säger "lyckades" eller "finns inte i post lådan", så har den redan tagits bort från post lådan. Ibland uppstår ett systemfel under reparationen. I dessa fall är det en bra idé att försöka igen.
+  Markera ett objekt i åtgärds loggen för att Visa reparations information. Om informationen säger "lyckades" eller "finns inte i post lådan", så har den redan tagits bort från post lådan. Ibland uppstår ett systemfel under reparationen. I dessa fall är det en bra idé att försöka igen.
 
- Reparation är ett kraftfullt verktyg för att minska riskerna och adressera misstänkta e-postmeddelanden. Det hjälper till att skydda en organisation.
-
+  Reparation är ett kraftfullt verktyg för att minska riskerna och adressera misstänkta e-postmeddelanden. Det hjälper till att skydda en organisation.

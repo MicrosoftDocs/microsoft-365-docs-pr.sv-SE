@@ -16,12 +16,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: För att det ska vara lätt att skydda användar förtroendet för användning av e-post har Microsoft infört olika principer och teknologier som hjälper våra användare att hjälpa dig.
-ms.openlocfilehash: e9389d52ee1d6c1c0bbab8630778749a6ed6005f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 478f94d2ed1a03253168486d48fb2b2df57a6a5e
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199583"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021031"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Tjänster för ej kunder som skickar e-post till Microsoft 365
 
@@ -38,7 +38,7 @@ Den här översikten innehåller information om fördelarna som vi tillhandahål
 
 |Tjänst|Intäkter|
 |---|---|
-|Detta online-hjälp innehåll|Gång <br/> En utgångs punkt för eventuella frågor om att leverera kommunikation till EOP användare. <br/><br/> Innehåller en enkel onlineguiden med våra principer och krav. <br/><br/> En översikt över skräp post filter och verifieringsmetoder som används av Microsoft.|
+|Detta online-hjälp innehåll|Gång <ul><li>En utgångs punkt för eventuella frågor om att leverera kommunikation till EOP användare.</li><li>Innehåller en enkel onlineguiden med våra principer och krav.</li><li>En översikt över skräp post filter och verifieringsmetoder som används av Microsoft.</li><ul>|
 |[Microsoft-Support](#microsoft-support)|Tillhandahåller självhjälps-och eskaleringshantering för leverans problem.|
 |[IP-portalwebbplats för skräp post](#anti-spam-ip-delist-portal)|Ett verktyg för att skicka en begäran om IP-registrering. Innan det här meddelandet skickas är det ansvarigt för att säkerställa att all e-post som härstammar från undersöknings tjänsten är olämplig eller skadlig.|
 |[Missbruk och spam rapportering för skräp post från Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Håller skräp posten och annan oönskad e-post från Exchange Online och fyller på Internet och ditt e-postsystem.|

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: I följande tabell finns en lista med funktioner som är tillgängliga i e-postfiltret för Exchange Online Protection (EOP).
-ms.openlocfilehash: 58893cd4a4d6c90c8d19de5a6b2f0d108ee797e0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dcbb7d2e31e230633d0401eee0ef0874eb6af615
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202933"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021043"
 ---
 # <a name="eop-features"></a>Funktioner i EOP
 
@@ -34,10 +34,10 @@ I följande tabell finns en lista med funktioner som är tillgängliga i e-postf
 |Funktion|Beskrivning|
 |---|---|
 |**Skydd mot skräppost**||
-|Inkommande spam för skräp post|Mer information finns i [skydd mot skräp post i Microsoft 365](anti-spam-protection.md). <br/><br/> I fristående EOP-miljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera e-postflödesregler (kallas även för transportregler) i lokalt Exchange för att översätta utfallet av skräppostfiltreringen i EOP så att regeln för skräppost kan flytta meddelandet till mappen Skräppost. Mer information finns i [Konfigurera fristående EOP för att skicka skräp post till skräppostmappen i hybrid miljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)|
+|Inkommande spam för skräp post|Mer information finns i [skydd mot skräp post i Microsoft 365](anti-spam-protection.md). <p> I fristående EOP-miljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera e-postflödesregler (kallas även för transportregler) i lokalt Exchange för att översätta utfallet av skräppostfiltreringen i EOP så att regeln för skräppost kan flytta meddelandet till mappen Skräppost. Mer information finns i [Konfigurera fristående EOP för att skicka skräp post till skräppostmappen i hybrid miljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)|
 |Utgående skräp identifiering|Utgående skydd mot skräp post är alltid aktiverat om du använder tjänsten för att skicka utgående e-post. Mer information finns i [utgående skräp post skydd](outbound-spam-controls.md).|
 |Skydd mot bakdett|Mer information finns i avsnittet om att läsa- [och EOP](backscatter-messages-and-eop.md).|
-|Mass filtrering|EOP använder Mass avgränsaren för klagomål (BCL) för att markera Mass utskick av e-postmeddelanden. Mer information finns i följande avsnitt: <br/><br/> [Vad är skillnaden mellan skräppost och massutskick?](what-s-the-difference-between-junk-email-and-bulk-email.md) <br/> [Bulk klagomål (BCL) i EOP](bulk-complaint-level-values.md) <br/> [Konfigurera principer för skräppostskydd](configure-your-spam-filter-policies.md)|
+|Mass filtrering|EOP använder Mass avgränsaren för klagomål (BCL) för att markera Mass utskick av e-postmeddelanden. Mer information finns i följande avsnitt: <p> [Vad är skillnaden mellan skräppost och massutskick?](what-s-the-difference-between-junk-email-and-bulk-email.md) <p> [Bulk klagomål (BCL) i EOP](bulk-complaint-level-values.md) <p> [Konfigurera principer för skräppostskydd](configure-your-spam-filter-policies.md)|
 |Listor med skadlig URL-block|EOP använder flera URL-adressblock som hjälper dig att identifiera kända illasinnade länkar i meddelanden.|
 |Skydd mot nätfiske|EOP innehåller 750 000-domäner för kända skräp post avsändare.|
 |Skydd mot förfalskning|Mer information finns i [skydd mot förfalskning](anti-spoofing-protection.md).|
@@ -46,7 +46,7 @@ I följande tabell finns en lista med funktioner som är tillgängliga i e-postf
 |Skapa anpassade principer för skräp post|Om du vill ha större precision kan du skapa anpassade principer för skräp post och tillämpa dem på specifika användare, grupper eller domäner i organisationen. Anpassade principer har alltid högre prioritet än standard principen, men du kan ändra prioriteten (d.v.s. den kör ande ordningen) på dina anpassade principer. Mer information finns i [Konfigurera principer för skräppostskydd](configure-your-spam-filter-policies.md).|
 |Konfigurera åtgärderna för skräp post – filtrerade meddelanden|Du kan till exempel ta bort innehåll – filtrerade meddelanden eller skicka dem till mappen skräp post eller karantänen. Mer information finns i [Konfigurera principer för skräppostskydd](configure-your-spam-filter-policies.md).|
 |Internationell skräp filtrering|Du kan konfigurera filtrering av skräp post för att filtrera meddelanden skrivna på ett visst språk eller skickas från specifika länder eller regioner. Mer information finns i [Konfigurera principer för skräppostskydd](configure-your-spam-filter-policies.md).|
-|Hantera skräp post via Outlook eller Outlook på webben (tidigare Outlook Web App)|Administratörer och slutanvändare kan skapa säkra avsändare och spärrade avsändare. Mer information finns i [om inställningar för skräp post i Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook). <br/><br/> Om du använder EOP för att skydda lokala post lådor bör du använda profilsynkronisering för att säkerställa att dessa inställningar synkroniseras med tjänsten. Mer information om hur du konfigurerar katalog synkronisering finns i "använda katalog synkronisering för att hantera e-postanvändare" i [Hantera e-postanvändare i EOP](manage-mail-users-in-eop.md).|
+|Hantera skräp post via Outlook eller Outlook på webben (tidigare Outlook Web App)|Administratörer och slutanvändare kan skapa säkra avsändare och spärrade avsändare. Mer information finns i [om inställningar för skräp post i Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook). <p> Om du använder EOP för att skydda lokala post lådor bör du använda profilsynkronisering för att säkerställa att dessa inställningar synkroniseras med tjänsten. Mer information om hur du konfigurerar katalog synkronisering finns i "använda katalog synkronisering för att hantera e-postanvändare" i [Hantera e-postanvändare i EOP](manage-mail-users-in-eop.md).|
 |Rapportera falska positiva och falska negativa negativ till Microsoft.|Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).|
 |Meddelanden om skräp post för slutanvändare|Mer information finns i [aviseringar](use-spam-notifications-to-release-and-report-quarantined-messages.md) om slutanvändare och [konfigurering av skräp post meddelanden](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications).|
 |Visa, hitta och hantera meddelanden i karantän portalen.|Mer information finns i [Hantera meddelanden och filer i karantän som administratör i EOP](manage-quarantined-messages-and-files.md) eller [hitta och släppa meddelanden i karantän som en användare](find-and-release-quarantined-messages-as-a-user.md).|
@@ -61,7 +61,7 @@ I följande tabell finns en lista med funktioner som är tillgängliga i e-postf
 |Skydd mot spionprogram|Skydd mot skadlig program vara omfattar Antivirus skydd och skydd mot spionprogram.|
 |Skapa anpassade filter principer för skadlig kod|För högre precision kan du skapa anpassade filter principer för skadlig kod och tillämpa dem på specifika användare, grupper eller domäner i organisationen. Anpassade principer har alltid högre prioritet än standard principen, men du kan ändra prioriteten (d.v.s. den kör ande ordningen) på dina anpassade principer. Mer information finns i [Konfigurera principer för skadlig program vara](configure-anti-malware-policies.md).|
 |**E-postdirigering och kopplingar**||
-|Villkorsstyrd e-postdirigering|Mer information finns i [Scenario: villkorlig e-postdirigering i Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing).|
+|Villkorsstyrd e-postdirigering|Mer information finns i [Scenario: Villkorsstyrd e-postdirigering i Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing).|
 |Opportunistic eller påtvingad TLS|Opportunistic eller Användarkonfigurerad TLS är tillgängligt med kopplingar. Opportunistic TLS försöker ansluta till en TLS-anslutning men använder en SMTP-anslutning om TLS-anslutningen Miss lyckas. Tvinga fram TLS-anslutningar, vilket innebär att meddelandet nekas om anslutningen Miss lyckas. Mer information om TLS, säkerhet och anslutningar finns i [Konfigurera kopplingar för säkert e-postflöde med en partner organisation](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner).|
 |Regional routing (begränsningen för e-postflöden till en viss region)|Mer information finns i avsnittet "EOP Data Center" i [Exchange Online Protection-översikten](exchange-online-protection-overview.md).|
 |SMTP Connectivity Checker|Om du vill ha mer information om hur du använder verktyget för att testa e-postflödet läser du [Testa e-postflödet genom att verifiera dina Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)|
