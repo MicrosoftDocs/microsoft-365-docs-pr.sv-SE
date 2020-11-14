@@ -15,34 +15,30 @@ ms.collection:
 - commerce
 - Adm_NonTOC
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-ms.assetid: 0199dd39-7c46-4875-af9b-588df3a9afea
 ROBOTS: NOINDEX
 description: Lär dig hur du löser in en Microsoft 365 Business Standard produkt nyckeln som köpts i en butik.
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 9dcf38937e6140f1b0b20688d1dac0a9f3962cbe
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1c647efaa880096a9fc7713aa28960d563eff69d
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638369"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072753"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Ange produkt nyckeln för Microsoft 365 Business Standard
 
-Om du har köpt Microsoft 365 Business standard från en butik kan du använda den här artikeln för att aktivera prenumerationen. 
+Om du har köpt Microsoft 365 Business standard från en butik kan du använda den här artikeln för att aktivera prenumerationen.
   
  **Behöver du något annat?**
- **Om du behöver hjälp med microsoft 365 eller microsoft 365 personal**läser du [använda produkt nycklar med Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
+ **Om du behöver hjälp med microsoft 365 eller microsoft 365 personal** läser du [använda produkt nycklar med Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
  **Volymlicenskund?** Om du har köpt Microsoft 365 för företag via ett [Microsoft Open License-program](https://go.microsoft.com/fwlink/p/?LinkID=613298)kan du läsa artikeln [Ange produkt nyckeln som köpts från Microsoft Open](purchases-from-microsoft-open.md).
   
 ## <a name="activate-a-new-subscription"></a>Aktivera en ny prenumeration
 
-1. Gå till <a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">Office.com/setupkey</a>.
+1. Gå till <a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">https://microsoft365.com/setupbusiness</a>.
 
 2. Ange produkt nyckeln och välj sedan **Nästa**.
 
@@ -59,7 +55,7 @@ Om du har köpt Microsoft 365 Business standard från en butik kan du använda d
 
 ## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>Förläng utgångs datumet eller lägga till en licens till en befintlig prenumeration
 
-Om du vill använda en produkt nyckeln för att förlänga utgångs datumet eller lägga till en licens till din befintliga Microsoft 365 Business Standard-prenumeration måste du ha en ny och oanvänd nyckeln för samma Microsoft 365-abonnemang. Det går inte att ange den ursprungliga Microsoft 365-produktnyckeln eftersom det inte går att använda en av de nycklar som redan har lösts in igen. Se [lägga till licenser eller förlänga ett abonnemang som betalas för användning av en produkt nyckeln](licenses/add-licenses-using-product-key.md).
+För att förlänga utgångs datumet eller lägga till en licens till din befintliga Microsoft 365 Business Standard-prenumeration, Använd en ny och oanvänd-post för samma Microsoft 365-plan. Det går inte att ange den ursprungliga Microsoft 365-produktnyckeln eftersom det inte går att använda en av de nycklar som redan har lösts in igen. Se [lägga till licenser eller förlänga ett abonnemang som betalas för användning av en produkt nyckeln](licenses/add-licenses-using-product-key.md).
 
 ## <a name="whats-next"></a>Hur går jag vidare?
 

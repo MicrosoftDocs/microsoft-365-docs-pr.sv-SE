@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Se hälso statusen för Microsoft 365-tjänsterna innan du ringer support för att se om det finns ett aktivt tjänst avbrott.
-ms.openlocfilehash: 20e19072e1a851fba20e556be696146b8ad57a2f
-ms.sourcegitcommit: 392f60efa0921c64ac1462dd63985cd156e6498a
+ms.openlocfilehash: b1819e455732d142c563f598433c410b0ae60882
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48134081"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072765"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Så här kontrollerar du Microsoft 365-tjänstens hälsa
 
@@ -39,7 +39,8 @@ ms.locfileid: "48134081"
 
 Du kan se tillståndet för dina Microsoft-tjänster, inklusive Office på webben, Yammer, Microsoft Dynamics CRM och moln tjänster för mobila enheter, på sidan **tjänstens hälsa** i [administrations centret för Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). Om du har problem med en molnbaserad tjänst kan du kontrollera tjänstens hälsa för att ta reda på om det är ett känt problem där en lösning är på gång innan du ringer supporten eller ägnar tid åt felsökning.
 
-Om det inte går att logga in på service portalen kan du använda [sidan tjänst status](https://status.office365.com) för att kontrol lera kända problem som hindrar dig från att logga in på din klient organisation.
+Om det inte går att logga in i administrations centret kan du använda [sidan tjänst status](https://status.office365.com) för att kontrol lera kända problem som hindrar dig från att logga in på din klient organisation.  Du kan också anmäla dig till oss på [@MSFT365status](https://twitter.com/MSFT365Status) på Twitter för att visa information om vissa händelser.
+
   
 ### <a name="how-to-check-service-health"></a>Kontrollera tjänstens hälsa
 
@@ -50,7 +51,7 @@ Om det inte går att logga in på service portalen kan du använda [sidan tjäns
   
 2. Om du inte använder det nya administrations centret väljer du alternativet **testa det nya administrations centret** i det övre högra hörnet på **Start** sidan.
 
-3. Om du vill visa tjänstens status går du till **hälso**tillstånd i administrations centret  >  **Service health**eller väljer **tjänstens hälso** kort på **Start instrument panelen**. Instrument panels kortet visar om det finns ett aktivt tjänst problem och länkar till sidan för detaljerad **tjänst kontroll** .
+3. Om du vill visa tjänstens status går du till **hälso** tillstånd i administrations centret  >  **Service health** eller väljer **tjänstens hälso** kort på **Start instrument panelen**. Instrument panels kortet visar om det finns ett aktivt tjänst problem och länkar till sidan för detaljerad **tjänst kontroll** .
   
 4. På sidan **tjänstens hälsa** visas hälso statusen för varje moln tjänst i ett tabell format.
 
@@ -62,11 +63,11 @@ Om du vill filtrera vyn till tjänster som för närvarande har en olycka välje
 
 På fliken **Historik** visas historiken över de incidenter och rådgivare som har åtgärd ATS.
 
-Om du upplever ett problem med en Microsoft 365-tjänst och inte ser den på sidan **tjänstens hälsa** kan du berätta om den genom att välja **rapportera ett problem**och fylla i den korta formen. Vi kommer att titta på relaterade data och rapporter från andra organisationer för att se hur omfattande problemet är, och om det kom från vår tjänst. Om så är fallet lägger vi till det som ett nytt tillbud eller råd på sidan **tjänstens hälsa** , där du kan spåra dess upplösning. Om det inte visas i listan i cirka 30 minuter bör du kontakta supporten för att lösa problemet.
+Om du upplever ett problem med en Microsoft 365-tjänst och inte ser den på sidan **tjänstens hälsa** kan du berätta om den genom att välja **rapportera ett problem** och fylla i den korta formen. Vi kommer att titta på relaterade data och rapporter från andra organisationer för att se hur omfattande problemet är, och om det kom från vår tjänst. Om så är fallet lägger vi till det som ett nytt tillbud eller råd på sidan **tjänstens hälsa** , där du kan spåra dess upplösning. Om det inte visas i listan i cirka 30 minuter bör du kontakta supporten för att lösa problemet.
 
-Om du vill anpassa vilka tjänster som visas på instrument **panelen väljer du**  >  **anpassad vy**och avmarkerar kryss rutorna för de tjänster som du vill filtrera bort från din kontrollpanelflik för tjänste status. Kontrol lera att kryss rutan är markerad för varje tjänst som du vill övervaka.    
+Om du vill anpassa vilka tjänster som visas på instrument **panelen väljer du**  >  **anpassad vy** och avmarkerar kryss rutorna för de tjänster som du vill filtrera bort från din kontrollpanelflik för tjänste status. Kontrol lera att kryss rutan är markerad för varje tjänst som du vill övervaka.    
 
-För att registrera dig för e-postaviseringar om nya incidenter som påverkar klient organisationens och status ändringar för en aktiv incident, väljer du **Inställningar**för  >  **e-post**, klickar på **skicka mig Heath meddelanden i e-post**och anger sedan:
+För att registrera dig för e-postaviseringar om nya incidenter som påverkar klient organisationens och status ändringar för en aktiv incident, väljer du **Inställningar** för  >  **e-post** , klickar på **skicka mig Heath meddelanden i e-post** och anger sedan:
 
 - Upp till två e-postadresser.
 - Om du vill få aviseringar eller rådgivare
