@@ -415,8 +415,6 @@
           href: manage-microsoft-365-groups.md
         - name: Styrning
           href: manage-microsoft-365-identity-governance.md
-        - name: Återskapa borttagna objekt i en användares postlåda
-          href: recover-deleted-items-in-a-mailbox.md
         - name: 'Katalogsynkronisering:'
           items:
             - name: Visa status
@@ -604,7 +602,7 @@
                   href: disable-access-to-services-while-assigning-user-licenses.md
         - name: Grupper
           items:
-            - name: Hantera gruppmedlemskap
+            - name: Underhålla säkerhetsgruppmedlemskap
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Hantera Microsoft 365-grupper
               href: manage-microsoft-365-groups-with-powershell.md
