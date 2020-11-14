@@ -240,8 +240,6 @@
               href: dlp-configure-endpoints-script.md
             - name: Registrera icke beständiga enheter för virtual desktop infrastructure (VDI)
               href: dlp-configure-endpoints-vdi.md
-        - name: Kom igång med DLP-principrekommendationer
-          href: get-started-with-dlp-policy-recommendations.md
         - name: Kom igång med DLP-standardprincipen
           href: get-started-with-the-default-dlp-policy.md
         - name: Skapa en DLP-princip från en mall
@@ -342,6 +340,8 @@
               href: archive-twitter-data-with-sample-connector.md
         - name: Globanet-datakontakter
           items:
+            - name: CellTrust
+              href: archive-celltrust-data.md
             - name: Cisco Jabber
               href: archive-ciscojabberonmssql-data.md
             - name: EML
@@ -350,10 +350,16 @@
               href: archive-fxconnect-data.md
             - name: Jive
               href: archive-jive-data.md
+            - name: MS SQL-databas
+              href: archive-mssqldatabaseimporter-data.md
             - name: Pivot
               href: archive-pivot-data.md
+            - name: Reuters Dealing
+              href: archive-reutersdealing-data.md
             - name: Reuters Eikon
               href: archive-reuterseikon-data.md
+            - name: Reuters FX
+              href: archive-reutersfx-data.md
             - name: EDiscovery för slack
               href: archive-slack-data.md
             - name: Symphony
@@ -366,6 +372,8 @@
               href: archive-webexteams-data.md
             - name: Arbetsplats från Facebook
               href: archive-workplacefromfacebook-data.md
+            - name: XIP
+              href: archive-xip-data.md
             - name: XSLT/XML
               href: archive-xslt-xml-data.md
             - name: Zooma möten
