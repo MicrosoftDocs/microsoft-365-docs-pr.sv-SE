@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Anslut till din Microsoft 365-klientorganisation med PowerShell för Microsoft 365 för att utföra uppgifter i administrationscenter från kommandoraden.
-ms.openlocfilehash: d8263fd14d5eae58d3686f18056945a60158b421
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 33f9af45418ae8a1f126d2b321e7246201bd1f6e
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754310"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002411"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Ansluta till Microsoft 365 med PowerShell
 
@@ -98,7 +98,7 @@ För att ansluta till Azure Active Directory (Azure AD) för din Microsoft 365-p
 | Office 365 U.S. Government DoD och Office 365 U.S. Government GCC High | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
 |||
 
-Skriv ditt användarnamn och lösenord för ditt Microsoft 365-konto för arbetet eller skolan i dialogrutan **Logga in på ditt konto** , och välj sedan **OK** .
+Skriv ditt användarnamn och lösenord för ditt Microsoft 365-konto för arbetet eller skolan i dialogrutan **Logga in på ditt konto** , och välj sedan **OK**.
 
 Om du använder multifaktorautentisering, följ instruktionerna för att ange ytterligare autentiseringsinformation, till exempel en verifieringskod.
 
@@ -122,7 +122,7 @@ De här stegen krävs bara en gång på din dator. Men du måste troligen uppdat
 2. Följ de här stegen för att installera Microsoft Azure Active Directory-modulen för Windows PowerShell:
     
    1. Öppna en upphöjd PowerShell-kommandotolk i Windows (kör Windows PowerShell som administratör).
-   1.  Kör kommandot **Installera-modul MSOnline** .
+   1.  Kör kommandot **Installera-modul MSOnline**.
    1. Om du uppmanas att installera NuGet-leverantören, skriv **Y** och tryck på Retur.
    1. Om du uppmanas att installera modulen från PSGGallery, skriv **Y** och tryck på Retur.
     
@@ -138,7 +138,7 @@ För att ansluta till Azure AD för din Microsoft 365-prenumeration med ett kont
 | Office 365 U.S. Government DoD och Office 365 U.S. Government GCC High | `Connect-MsolService -AzureEnvironment USGovernment` |
 |||
 
-Skriv ditt användarnamn och lösenord för ditt Microsoft 365-konto för arbetet eller skolan i dialogrutan **Logga in på ditt konto** , och välj sedan **OK** .
+Skriv ditt användarnamn och lösenord för ditt Microsoft 365-konto för arbetet eller skolan i dialogrutan **Logga in på ditt konto** , och välj sedan **OK**.
 
 Om du använder multifaktorautentisering, följ instruktionerna för att ange ytterligare autentiseringsinformation, till exempel en verifieringskod.
 
@@ -148,7 +148,7 @@ Om du inte får ett felmeddelande har du anslutit framgångsrikt. Ett snabbt tes
   
 Om du får ett felmeddelande, kontrollera följande problem:
   
-- **Ett vanligt problem är ett felaktigt lösenord** . Kör [Steg 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) igen och var uppmärksam på det användarnamn och lösenord som du anger.
+- **Ett vanligt problem är ett felaktigt lösenord**. Kör [Steg 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) igen och var uppmärksam på det användarnamn och lösenord som du anger.
     
 - **Microsoft Azure Active Directory-modulen för Windows PowerShell kräver att Microsoft .NET Framework 3.5.* x* är aktiverad på din dator**. Det är troligt att din dator har en nyare version installerad (till exempel 4 eller 4.5.* x*). Men bakåtkompatibilitet med äldre versioner av .NET Framework kan aktiveras och inaktiveras. Mer information finns i följande artiklar:
     

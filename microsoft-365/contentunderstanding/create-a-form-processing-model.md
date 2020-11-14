@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Skapa en modell för formulärbearbetning i Microsoft SharePoint-Syntex.
-ms.openlocfilehash: 784a3e0a918424e599e87852d2a36b613867f62e
-ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
+ms.openlocfilehash: 7edea0d36c85fba7bda31effdcdff08cd59a1174
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48390191"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002435"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Skapa en modell för formulärbearbetning i Microsoft SharePoint-Syntex
 
@@ -44,11 +44,11 @@ Du kan bara skapa en modell för formulärbearbetning i SharePoint-dokumentbibli
 
 Första steget för att skapa en modell för formulärbearbetning är att namnge den och skapa, definiera den nya innehållstyp och skapa ett nytt vy för dokumentbiblioteket.
 
-1. Välj **Automatisera** -menyn i dokumentbiblioteket, välj **AI Builder**och välj sedan **Skapa en modell för Formulärbearbetning**.
+1. Välj **Automatisera** -menyn i dokumentbiblioteket, välj **AI Builder** och välj sedan **Skapa en modell för Formulärbearbetning**.
 
     ![Skapa en modell](../media/content-understanding/create-ai-builder-model.png)</br>
 
-2. I fönstret **Ny modell för formulärbearbetning**, **Namn**-fältet skriver du ett namn på din modell (t. ex *Inköpsorder*).
+2. I fönstret **Ny modell för formulärbearbetning** , **Namn** -fältet skriver du ett namn på din modell (t. ex *Inköpsorder* ).
 
     ![Ny modell för formulärbearbetning](../media/content-understanding/new-form-model.png)</br> 
 
@@ -69,7 +69,7 @@ När du har skapat din nya modell för formulärbearbetning öppnas en ny PowerA
 
    ![Power Apps AI Builder](../media/content-understanding/powerapps.png)</br> 
  
-1. Välj **Lägg till dokument** för att börja lägga till exempeldokument som analyseras för att avgöra vilka namn/värde-par som kan extraheras. Sedan kan du välja antingen **Ladda upp från lokal lagring**, **SharePoint**eller **Azure-blobblagring**. Du måste använda minst fem filer för utbildning.
+1. Välj **Lägg till dokument** för att börja lägga till exempeldokument som analyseras för att avgöra vilka namn/värde-par som kan extraheras. Sedan kan du välja antingen **Ladda upp från lokal lagring** , **SharePoint** eller **Azure-blobblagring**. Du måste använda minst fem filer för utbildning.
 
 2. När du har lagt till filer välj **Analysera** för att kontrollera om det finns någon gemensam information för alla filer. Det kan ta flera minuter att slutföra.</br> 
  
@@ -87,7 +87,7 @@ När du har analyserat dokumenten för fält kan du nu se de fält som hittades 
 
     ![Välj fältsida](../media/content-understanding/select-fields-page.png)</br> 
 
-2. Välj de fält som du vill spara och välj kryssrutan för att bekräfta ditt val. Till exempel, i Modellen för Inköpsorder välj *Datumet*, *IO*och *Summa* fälten.  Notera att du kan också välja att byta namn på ett fält om du vill. </br>
+2. Välj de fält som du vill spara och välj kryssrutan för att bekräfta ditt val. Till exempel, i Modellen för Inköpsorder välj *Datumet* , *IO* och *Summa* fälten.  Notera att du kan också välja att byta namn på ett fält om du vill. </br>
 
     ![Välj IO #](../media/content-understanding/po.png)</br> 
 
@@ -101,9 +101,9 @@ När du har analyserat dokumenten för fält kan du nu se de fält som hittades 
 
 ## <a name="step-4-train-and-test-your-model"></a>Steg 4: Träna och testa din modell
 
-När du har valt de fält du vill spara kan du använda **Modellsammanfattnings**-sidan för att träna och testa din modell.
+När du har valt de fält du vill spara kan du använda **Modellsammanfattnings** -sidan för att träna och testa din modell.
 
-1. På **Modellsammanfattnings**-sidan visas de sparade fälten i den **Valda fält** sektionen. Välj **Träna** för att påbörja utbildning på dina exempelfiler. Notera att det här kan ta några minuter att slutföra.</br>
+1. På **Modellsammanfattnings** -sidan visas de sparade fälten i den **Valda fält** sektionen. Välj **Träna** för att påbörja utbildning på dina exempelfiler. Notera att det här kan ta några minuter att slutföra.</br>
 
      ![Välj fältsida Träna](../media/content-understanding/select-fields-train.png)</br> 
 
