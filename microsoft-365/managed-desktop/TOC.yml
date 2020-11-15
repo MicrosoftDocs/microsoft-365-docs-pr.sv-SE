@@ -61,6 +61,8 @@
           href: get-ready/mapped-drives.md
         - name: Förbereda certifikat och nätverksprofiler
           href: get-ready/certs-wifi-lan.md
+        - name: Förutsättningar för gästkonton
+          href: get-ready/guest-accounts.md
         - name: Förbereda utskriftsresurser
           href: get-ready/printing.md
         - name: Förbereda appar
