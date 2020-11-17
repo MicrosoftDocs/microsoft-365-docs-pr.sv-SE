@@ -17,18 +17,18 @@ search.appverid:
 - SPO160
 - MET150
 description: I den här artikeln beskrivs hur du kan starta portalen med hjälp av portalen starta Schemaläggaren
-ms.openlocfilehash: 6a191cf323e180fa77614eb09bae4185228a5029
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: a7a007fdd95638109830a8e3689232060f2b9d8b
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087673"
+ms.locfileid: "49123589"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>Starta portalen med hjälp av portalen starta Schemaläggaren
 
 En portal är en SharePoint-webbplats på ditt intranät som har ett stort antal webbplats läsare som använder innehåll på webbplatsen. Att starta din portal i vågor är en viktig del av att säkerställa att användarna har en smidig och snabb åtkomst till en ny SharePoint Online-Portal. 
 
-Att starta i vågor är ett viktigt sätt att samla in din portal, enligt vad som beskrivs i [Planera hur portalen ska lanseras](https://docs.microsoft.com/en-us/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). Med portalen kan du använda Schemaläggaren för att hjälpa dig att följa en nedrullningsbar våg med nedrullnings bara genom att hantera omdirigeringarna för den nya portalen. Under varje vågor kan du samla in feedback och övervaka prestanda under varje enskild installation. Det här är fördelen med att vi tar en långsam introduktion till portalen, vilket ger dig möjligheten att pausa och lösa problem innan du fortsätter med nästa våg, och slutligen säkerställa en positiv upplevelse för dina användare. 
+Att starta i vågor är ett viktigt sätt att samla in din portal, enligt vad som beskrivs i [Planera hur portalen ska lanseras](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). Med portalen kan du använda Schemaläggaren för att hjälpa dig att följa en nedrullningsbar våg med nedrullnings bara genom att hantera omdirigeringarna för den nya portalen. Under varje vågor kan du samla in feedback och övervaka prestanda under varje enskild installation. Det här är fördelen med att vi tar en långsam introduktion till portalen, vilket ger dig möjligheten att pausa och lösa problem innan du fortsätter med nästa våg, och slutligen säkerställa en positiv upplevelse för dina användare. 
 
 Det finns två typer av omdirigering: 
 - dubbelriktad: starta en ny modern SharePoint Online-Portal för att ersätta en befintlig SharePoint-klassiskt eller modern Portal 
