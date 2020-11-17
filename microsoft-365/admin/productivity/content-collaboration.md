@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Information om innehålls samarbete-människor upplever produktivitets poäng.
-ms.openlocfilehash: 5cdbe0cbb683715a19b182d0781fe238d026a400
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: 99f5a897dc372a45be31a8c01379c6fe4c980de9
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999434"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123459"
 ---
 # <a name="content-collaboration--people-experiences"></a>Innehålls samarbete – folk upplevelse
 
-Produktivitets Poäng hjälper dig att omvandla hur arbete görs med mät värden för hur människor använder Microsoft 365-appar och de teknik funktioner som har stöd för dem. Poängen reflekterar din organisation&#39;s prestanda för personer och teknik upplevelser och jämför poängen med dina organisationer som din. Innehålls samarbete är en av de åtgärder som faller under folk upplevelsen. Titta på  [Översikt över produktivitets Poäng](productivity-score.md).
+Produktivitets Poäng hjälper dig att omvandla hur arbete görs med mät värden för hur människor använder Microsoft 365-appar och de teknik funktioner som har stöd för dem. Poängen reflekterar din organisation&#39;s prestanda för personer och teknik upplevelser och jämför poängen med dina organisationer som din. Innehålls samarbete är en av de åtgärder som faller under folk upplevelsen. Titta på [Översikt över produktivitets Poäng](productivity-score.md).
 
 ## <a name="why-your-organization39s-content-collaboration-score-matters"></a>Varför din organisation&#39;s innehålls samarbets Poäng
 
@@ -140,7 +140,7 @@ Vi tillhandahåller också information som hjälper dig att få insyn i hur pers
         - Nämnare: det totala antalet personer som har haft åtkomst till OneDrive eller SharePoint för minst en av de senaste 28 dagarna
 4. **Länka till resurser:** Välj den här länken om du vill visa hjälp innehåll.
 
-### <a name="intensity-of-files-collaborated-on"></a>Intensitet för de filer som samar beta på
+### <a name="number-of-files-collaborated-on"></a>Antal filer som samar beta på
 
 :::image type="content" source="../../media/intensityofcollab.png" alt-text="Diagram som visar hur många filer som var mest samarbetade med.":::
 
@@ -149,16 +149,16 @@ Vi tillhandahåller också information som hjälper dig att få insyn i hur pers
 3. **Visualisering:** Då visas en distribution av de personer som har åtkomst till OneDrive eller SharePoint, baserat på hur många filer de samarbetar med. Detta visas genom följande fyra kategorier (för varje, den blå delen av stapeln och bråket representerar procent av personer som har åtkomst till OneDrive eller SharePoint som tillhör kategorin):
       - **Inget samarbete:**
         - **Täljare:** Antalet personer som inte samarbetar med några filer under de senaste 28 dagarna
-        - **Nämnare:** Det totala antalet personer som har åtkomst till OneDrive eller SharePoint för minst 1 av de senaste 28 dagarna
+        - **Nämnare:** Det totala antalet personer som har åtkomst till OneDrive eller SharePoint för minst 1 av de senaste 28 dagarna.
       - **Samarbete för 1-3-filer:**
         - **Täljare:** Antalet personer som samarbetar på 1-3-filer under de senaste 28 dagarna
-        - **Nämnare:** Det totala antalet personer som har haft åtkomst till OneDrive eller SharePoint för minst 1 av de senaste 28 dagarna
+        - **Nämnare:** Det totala antalet personer som har haft åtkomst till OneDrive eller SharePoint för minst 1 av de senaste 28 dagarna.
       - **Samarbete för 4-10-filer:**
         - **Täljare:** Antalet personer som samarbetar på 4-10-filer under de senaste 28 dagarna
-        - **Nämnare: det** totala antalet personer som har haft åtkomst till OneDrive eller SharePoint för minst en av de senaste 28 dagarna
+        - **Nämnare: det** totala antalet personer som har haft åtkomst till OneDrive eller SharePoint för minst en av de senaste 28 dagarna.
       - **Samarbete på 11 eller fler filer:**
         - **Täljare:** Antalet personer som samarbetar på 11 eller fler filer under de senaste 28 dagarna
-        - **Nämnare:** Det totala antalet personer som har haft åtkomst till OneDrive eller SharePoint för minst 1 av de senaste 28 dagarna
+        - **Nämnare:** Det totala antalet personer som har haft åtkomst till OneDrive eller SharePoint för minst 1 av de senaste 28 dagarna.
         
 4. **Länka till resurser:** Välj den här länken om du vill visa hjälp innehåll.
 
@@ -169,11 +169,11 @@ Vi tillhandahåller också information som hjälper dig att få insyn i hur pers
 1. **Sidhuvud:** Markerar procent andelen enheter som testas av alla testade och som har dålig nätverks anslutning till OneDrive och SharePoint. 
 2. **Brödtext:** Innehåller information om varför nätverks anslutnings prestanda är viktig för samarbete. 
 3. **Visualisering:** visar en procent andel av enheter med olika nätverks anslutnings prestanda i avseende OneDrive och SharePoint:
-      - **80 – 100 (bäst)** : den mörkgrå gröna (färgade) delen av stapeln representerar procent av enheter med bästa prestanda.
-      - **60-80** : den gröna (färgade) delen av stapeln representerar procent av enheter med nätverks prestanda poäng mellan 60-80. 
-      - **40-60** : den orange delen av stapeln representerar procent av enheter med nätverks prestanda poäng mellan 40-60. 
-      - **20-40** : den röda (färgade) delen av stapeln representerar procent av enheter med nätverks prestanda poäng mellan 20-40. 
-      - **0-20** : den mörka röda delen av stapeln representerar procent av enheter med sämsta nätverks prestanda poäng mellan 0-20. 
+      - **80-100 (bäst)**: den mörkgrå gröna (färgade) delen av stapeln representerar procent av enheter med bästa prestanda.
+      - **60-80**: den gröna (färgade) delen av stapeln representerar procent av enheter med nätverks prestanda poäng mellan 60-80. 
+      - **40-60**: den orange delen av stapeln representerar procent av enheter med nätverks prestanda poäng mellan 40-60. 
+      - **20-40**: den röda (färgade) delen av stapeln representerar procent av enheter med nätverks prestanda poäng mellan 20-40. 
+      - **0-20**: den mörka röda delen av stapeln representerar procent av enheter med sämsta nätverks prestanda poäng mellan 0-20. 
 
 ### <a name="people-in-your-organization"></a>Personer i organisationen
 
@@ -183,12 +183,12 @@ Följande kolumner visas i tabellen på användar nivå:
 
 - **Username**  är användarens e-postadress.
 - **Visnings namn**  är användarens fullständiga namn.
-- **Datum för senaste aktivitet**  syftar på den tidpunkt då användaren senast utförde en aktivitet avseende något av insikter inom innehålls samarbete under de senaste 28 dagarna
-- **Avdelning:** Användarens&#39;s avdelning, enligt definitionen i Azure Active Directory (AAD)
-- **Företag:** Användarens&#39;s företag, enligt definitionen i AAD
-- **Land:** Användarens&#39;land, enligt definitionen i AAD
-- **Status:** &#39;användarens status-tillstånd, enligt definitionen i AAD
-- **Ort:** Användaren&#39;s ort, enligt definitionen i AAD
+- **Datum för senaste aktivitet**  syftar på den tidpunkt då användaren senast utförde en aktivitet avseende något av insikter inom innehålls samarbete under de senaste 28 dagarna.
+- **Avdelning:** Användarens&#39;s avdelning, enligt definitionen i Azure Active Directory (AAD).
+- **Företag:** Användarens&#39;s företag, enligt definitionen i AAD.
+- **Land:** Användarens&#39;s land, enligt definitionen i AAD.
+- **Status:**&#39;användarens status-tillstånd, enligt vad som anges i AAD.
+- **Ort:** Användaren&#39;s ort, enligt definitionen i AAD.
 - **OneDrive:** Booleskt värde som anger om personen hade åtkomst till OneDrive för minst 1 av de senaste 28 dagarna.
 - **SharePoint:** Booleskt värde som anger om personen hade fått åtkomst till toSharePoint för minst 1 av de senaste 28 dagarna.
 - **Åtkomst till Office-filer:** Booleskt värde som anger om den person som har åtkomst till filer via Microsoft Word, Excel, PowerPoint eller OneNote under de senaste 28 dagarna.

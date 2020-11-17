@@ -6,15 +6,16 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
+ms.collection: enabler-strategic
 search.appverid: MET150
 localization_priority: Priority
 description: Konfigurera innehållstolkning i Project Cortex
-ms.openlocfilehash: 8f1ebd70f932bce874efc19f525b549f6717f532
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: dfbcc8e41a28e3107b58ac6b8d471e3a2a08d036
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988690"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087577"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Konfigurera SharePoint Syntex
 
@@ -22,12 +23,12 @@ Administratörer kan använda Administrationscenter för Microsoft 365 för att 
 
 Tänk på följande innan du börjar:
 
-- På vilka SharePoint-webbplatser kommer du aktivera formulärbearbetning? Alla, vissa eller utvalda webbplatser?
+- Which SharePoint sites will you enable form processing? All of them, some, or select sites?
 - Vad heter ditt standard innehållscenter?
 
 Du kan ändra inställningarna efter den första konfigurationen i Administrationscenter för Microsoft 365.
 
-Innan konfigurationen ser du till att planera för det bästa sättet att ställa in och konfigurera innehållstolkning i din miljö. Till exempel behöver du överväga om följande namn av:
+Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make considerations about the following names of:
 
 - De SharePoint-webbplatser som du vill aktivera formulärbearbetning för – alla, vissa eller utvalda webbplatser
 - Ditt innehållscenter och namnet på den primära webbplatsadministratören
@@ -50,7 +51,7 @@ Som administratör kan du också göra ändringar i dina valda inställningar n�
     > [!div class="mx-imgBorder"]
     > ![Starta konfiguration](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. På sidan **Konfigurera formulärbearbetning** kan du välja om du vill tillåta att användare kan skapa modeller för formulärbearbetning i vissa dokumentbibliotek i SharePoint. Ett menyalternativ kommer att vara tillgängligt i menyfliksområdet för dokumentbiblioteket för att **Skapa en modell för formulärbearbetning** i dokumentbibliotek i SharePoint där den är aktiverad.
+4. On the **Configure Form Processing** page, you can choose if you want to let users be able to create form processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
  
      För **vilka SharePoint-bibliotek som ska visa alternativ för att skapa modell för formulärbearbetning** kan du välja:</br>
       - **Alla SharePoint-bibliotek** för att göra det tillgängligt för alla SharePoint-bibliotek i organisationen.</br>
@@ -67,18 +68,18 @@ Som administratör kan du också göra ändringar i dina valda inställningar n�
 
     1. För **Webbplatsnamn** skriver du namnet som du vill använda på webbplatsen för innehållscenter.
     
-    1. **Webbplatsens adress** kommer att visa URL:en för din webbplats baserat på vad du valde som webbplatsnamn. Om du vill ändra det klickar du på **Redigera**.
+    1. The **Site address** will show the URL for your site, based on what you selected for the site name. If you want to change it, click **Edit**.
 
        > [!div class="mx-imgBorder"]
        > ![Skapa innehållscenter](../media/content-understanding/admin-cu-create-cc.png)</br>
 
        Välj **Nästa**.
 
-6. På sidan **Granska och slutför** kan du titta på vald inställning och välja att göra ändringar. Om du är nöjd med dina val väljer du **Aktivera**.
+6. On the **Review and finish** page, you can look at your selected setting and choose to make changes. If you are satisfied with your selections, select **Activate**.
 
 7. På bekräftelsesidan klickar du på **Klar**.
 
-8. Du kommer tillbaka till sidan **Automatisera innehållstolkning**. På den här sidan kan du välja **Hantera** om du vill göra ändringar i dina konfigurationsinställningar. 
+8. You'll be returned to your **Automate content understanding** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
 
 ## <a name="assign-licenses"></a>Tilldela licenser
 
@@ -92,7 +93,7 @@ För att tilldela licenser:
 
 3. Välj **Tilldela fler**.
 
-4. Välj **SharePoint Syntex**. Under **Appar** kontrollerar du att **Common Data Service for SharePoint Syntex** , **SharePoint Syntex** och **SharePoint Syntex – SPO-typ** är alla markerade.
+4. Select **SharePoint Syntex**. Under **Apps**, make sure **Common Data Service for SharePoint Syntex**, **SharePoint Syntex**, and **SharePoint Syntex - SPO type** are all selected.
 
     > [!div class="mx-imgBorder"]
     > ![SharePoint Syntex-licenser i Administrationscentret för Microsoft 365](../media/content-understanding/sharepoint-syntex-licenses.png)
@@ -101,7 +102,7 @@ För att tilldela licenser:
 
 ## <a name="ai-builder-credits"></a>AI Builder-krediter
 
-Om du har 300 eller fler SharePoint Syntex-licenser för SharePoint Syntex i din organisation allokeras en miljon AI Builder-krediter. Om du har färre än 300 licenser måste du köpa AI Builder-krediter för att kunna använda formulärbearbetning.
+If you have 300 or more SharePoint Syntex licenses for SharePoint Syntex in your organization, you will be allocated one million AI Builder credits. If you have fewer than 300 licenses, you must purchase AI Builder credits in order to use forms processing.
 
 Du kan beräkna den AI Builder-kapacitet som passar dig bäst med [Kalkylatorn för AI Builder](https://powerapps.microsoft.com/ai-builder-calculator).
 

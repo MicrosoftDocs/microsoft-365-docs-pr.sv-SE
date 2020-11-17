@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Sammanfattning: Ansluta till alla Microsoft 365-tjänster i ett enda PowerShell-fönster.'
-ms.openlocfilehash: 04be916f745e2bde70554045340fc8ec03f87413
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 4128e360a3664d3a61559139bc4e6e346418fa61
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754322"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087033"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Ansluta till alla Microsoft 365-tjänster i ett enda PowerShell-fönster
 
@@ -56,7 +56,7 @@ Innan du kan hantera hela Microsoft 365 från en enda instans av PowerShell mås
     
   - Windows Server 2008 R2 SP1*
     
-    \* Du måste installera Microsoft .NET Framework 4,5. *x* och sedan Windows Management Framework 3,0 eller 4,0. Mer information finns i [Windows Management Framework](https://docs.microsoft.com/powershell/scripting/windows-powershell/wmf/overview?view=powershell-7).
+    \* Du måste installera Microsoft .NET Framework 4,5.*x* och sedan Windows Management Framework 3,0 eller 4,0. Mer information finns i [Windows Management Framework](https://docs.microsoft.com/powershell/scripting/windows-powershell/wmf/overview?view=powershell-7).
     
     Du måste använda en 64-bitars version av Windows på grund av kraven för Skype för företag – Online-modulen och en av Microsoft 365-modulerna.
     
@@ -68,7 +68,7 @@ Innan du kan hantera hela Microsoft 365 från en enda instans av PowerShell mås
   - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
   - [Teams PowerShell översikt](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
     
--  PowerShell måste konfigureras för körning av signerade skript för Skype för Företag – Online och Säkerhets- och &amp; efterlevnadscentret. Kör följande kommando i en upphöjd PowerShell-session (ett PowerShell-fönster som du **Kör som administratör** ).
+-  PowerShell måste konfigureras för körning av signerade skript för Skype för Företag – Online och Säkerhets- och &amp; efterlevnadscentret. Kör följande kommando i en upphöjd PowerShell-session (ett PowerShell-fönster som du **Kör som administratör**).
     
    ```powershell
    Set-ExecutionPolicy RemoteSigned
@@ -76,7 +76,7 @@ Innan du kan hantera hela Microsoft 365 från en enda instans av PowerShell mås
 
 ## <a name="exchange-online-and-security-amp-compliance-center-with-the-exchange-online-powershell-v2-module"></a>Exchange Online och Säkerhets- och &amp; Efterlevnadscenter med modulen Exchange Online PowerShell V2
 
-Procedurerna i den här artikeln använder Exchange Online PowerShell V2-modulen för att ansluta till både Exchange Online och Säkerhets- och &amp; efterlevnadscentret. Men för närvarande kan du inte ansluta till båda *i samma PowerShell-fönster* . Så du måste välja att ansluta till den ena eller den andra när du konfigurerar ett PowerShell-fönster för flera Microsoft 365-tjänster.
+Procedurerna i den här artikeln använder Exchange Online PowerShell V2-modulen för att ansluta till både Exchange Online och Säkerhets- och &amp; efterlevnadscentret. Men för närvarande kan du inte ansluta till båda *i samma PowerShell-fönster*. Så du måste välja att ansluta till den ena eller den andra när du konfigurerar ett PowerShell-fönster för flera Microsoft 365-tjänster.
 
 ## <a name="connection-steps-when-using-just-a-password"></a>Anslutningssteg vid användning av bara ett lösenord
 
@@ -109,7 +109,7 @@ Här är några steg för att ansluta till alla tjänster i ett enda PowerShell-
     
    ```powershell
    $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
-   Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userCredential
+   Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $Credential
    ```
 
 5. Kör dessa kommandon för att ansluta till Skype för Företag – Online. En varning om att öka `WSMan NetworkDelayms` värdet visas första gången du ansluter. Ignorera det.
@@ -152,7 +152,7 @@ Här är några steg för att ansluta till alla tjänster i ett enda PowerShell-
    ```
   
    > [!Note]
-   > För att ansluta till Microsoft Teams-moln som inte är *världsomspännande* , se [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams).
+   > För att ansluta till Microsoft Teams-moln som inte är *världsomspännande*, se [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams).
 
 
 ### <a name="azure-active-directory-powershell-for-graph-module"></a>Azure Active Directory PowerShell för Graph-modulen

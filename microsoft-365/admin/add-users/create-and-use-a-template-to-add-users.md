@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Du kan skapa och använda en mall för att spara tid och standardisera inställningar när du lägger till flera användare.
-ms.openlocfilehash: 92d3bd68a57291586da27eb2d578a26c53d20d78
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+ms.openlocfilehash: aef5085da603c38b37544b76c5336c9bfe4edd24
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245863"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123423"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Skapa och använda en mall för att lägga till användare
 
@@ -33,7 +33,7 @@ Du kan skapa och använda en mall för att spara tid och standardisera inställn
 
 ## <a name="create-a-template"></a>Skapa en mall
 
-Det är enkelt att skapa mallar och &mdash; välja **användare**  >  **aktiva**användare användarmallar  >  **User templates**och sedan välja **Lägg till en mall** från List rutan, eller så kan du lägga till en ny användare och när du är klar har du möjlighet att spara posten som en mall.
+Det är enkelt att skapa mallar och &mdash; välja **användare**  >  **aktiva** användare användarmallar  >  **User templates** och sedan välja **Lägg till en mall** från List rutan, eller så kan du lägga till en ny användare och när du är klar har du möjlighet att spara posten som en mall.
 
 När du skapar en mall när du har lagt till en användare sparas värdena som du väljer för följande inställningar i mallen:
 
@@ -44,7 +44,7 @@ När du skapar en mall när du har lagt till en användare sparas värdena som d
 - Licens val
 - Program alternativ
 - Roll
-- De flesta profil uppgifter, till exempel **jobb profil**, **avdelning**, **kontor**, **kontors telefon**och **gatuadress** 
+- De flesta profil uppgifter, till exempel **jobb profil**, **avdelning**, **kontor**, **kontors telefon** och **gatuadress** 
 
 Följande information är användarspecifik och sparas inte i mallen:
 
@@ -62,30 +62,30 @@ När du skapar en mall genom att välja alternativet **Lägg till en mall** kan 
 
 Så här använder du en befintlig mall för att lägga till en användare:
 
-1. Välj **användare**  >  **aktiva användare**i administrations centret.
+1. Välj **användare**  >  **aktiva användare** i administrations centret.
 
-2. Välj **användarmallar**och välj sedan en mall i list rutan. (Listan kommer bara att innehålla de mallar som du har skapat, inte de som skapats av andra administratörer.)
+2. Välj **användarmallar** och välj sedan en mall i list rutan. (Listan kommer bara att innehålla de mallar som du har skapat, inte de som skapats av andra administratörer.)
 
- > [!NOTE]
- > Du kan också använda en mall för att lägga till en användare genom **att välja användarmallar**  >  **Hantera mallar**, välja en mall och sedan välja **Använd mall**.
+   > [!NOTE]
+   > Du kan också använda en mall för att lägga till en användare genom **att välja användarmallar**  >  **Hantera mallar**, välja en mall och sedan välja **Använd mall**.
 
 3. Följ stegen för att skapa en användare från mallen som du har valt.
 
-> [!NOTE]
-> Om du inte har tillräckligt med licenser tillgängliga för en användare som du lägger till och din betalnings information är tillgänglig försöker vi köpa en annan licens med din befintliga betalnings information. Om din betalnings information inte är tillgänglig skapas användaren som en olicensierad användare.
+   > [!NOTE]
+   > Om du inte har tillräckligt med licenser tillgängliga för en användare som du lägger till och din betalnings information är tillgänglig försöker vi köpa en annan licens med din befintliga betalnings information. Om din betalnings information inte är tillgänglig skapas användaren som en olicensierad användare.
 
 ## <a name="manage-templates"></a>Hantera mallar
 
-Du kan enkelt ta bort mallar som du inte längre behöver och lägga till nya. Så här tar du bort en mall:
+Du kan bara ta bort mallar som du inte längre behöver och lägga till nya. Så här tar du bort en mall:
 
-1. Välj **användare**  >  **aktiva användare**i administrations centret.
+1. Välj **användare**  >  **aktiva användare** i administrations centret.
 
-2. Välj **mallar**och sedan **Hantera mallar** i list rutan.
+2. Välj **mallar** och sedan **Hantera mallar** i list rutan.
 
 3. En lista med mallar visas. Du kan ta bort en mall genom att göra något av följande:
     - Välj en eller flera mallar och välj sedan **ta bort**. 
     - Markera de tre punkterna till höger om mallnamnet och välj sedan **ta bort**.
-    - Välj mallnamnet. Välj **ta bort mall**när mal detaljer visas till höger på skärmen.
+    - Välj mallnamnet. Välj **ta bort mall** när mal detaljer visas till höger på skärmen.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

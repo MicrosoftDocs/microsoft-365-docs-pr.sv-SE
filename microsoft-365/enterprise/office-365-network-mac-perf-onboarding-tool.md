@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365-testverktyg (för hands version)
-ms.openlocfilehash: 2be48f42c8529334b55b311e6f202d9f3b25ff9e
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 4fc12645ccd6a022e4ef4ebe849ac91ba431129b
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295532"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087085"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Microsoft 365-testverktyg (för hands version)
 
@@ -217,7 +217,7 @@ Visar de uppmätta UDP-skakningarna, som ska vara lägre än **30ms**.
 
 Vi testar för HTTP-anslutning från användar kontoret till alla obligatoriska Microsoft 365-nätverks slut punkter. Dessa publiceras hos [https://aka.ms/o365ip](https://aka.ms/o365ip) . Ett nätverks inblick visas för eventuella nätverks slut punkter som eventuellt inte kan anslutas till.
 
-Anslutningen i rad blockeras av en proxyserver, en brand vägg eller en annan nätverks säkerhets enhet i företags nätverkets perimeter eller används som en molnbaserad proxyserver.
+Anslutningen kan blockeras av en proxyserver, en brand vägg eller en annan nätverks säkerhets enhet i företags nätverkets perimeter. Anslutning till TCP-port 80 testas med en HTTP-begäran och anslutning till TCP-port 443 testas med en HTTPS-begäran. Om det inte finns något svar är FQDN markerat som ett fel. Om det finns en HTTP-svarskod 407 är FQDN markerat som ett fel. Om det finns en HTTP-svarskod 403 kontrollerar vi svaret och om det verkar vara en proxyserver markerar det här som ett fel. Du kan simulera testerna som utförs med kommando rads verktyget för Windows curl.exe.
 
 Vi testar SSL-certifikatet hos alla obligatoriska Microsoft 365-nätverks slut punkter i kategorin optimera eller Tillåt enligt definitionen i [https://aka.ms/o365ip](https://aka.ms/o365ip) . Om en test inte hittar ett Microsoft SSL-certifikat måste det krypterade nätverket vara anslutet till en mellanliggande nätverks enhet. Ett nätverks inblick visas på alla spärrade krypterade nätverks slut punkter.
 

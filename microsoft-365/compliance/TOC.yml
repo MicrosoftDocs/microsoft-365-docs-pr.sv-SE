@@ -914,6 +914,8 @@
           href: compliance-manager-improvement-actions.md
         - name: Hur din efterlevnadspoäng beräknas
           href: compliance-score-calculation.md
+        - name: Compliance Configuration Analyzer-verktyget
+          href: compliance-manager-mcca.md
         - name: Vanliga frågor (FAQ)
           href: compliance-manager-faq.md
         - name: Compliance Manager (klassisk)

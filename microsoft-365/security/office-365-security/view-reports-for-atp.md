@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Hitta och använda rapporter för Microsoft Defender för Office 365 i säkerhetsrelaterade &amp; Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b24249bcbba60bc5340d973567369f534a0178fb
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8885eea2168cc40c497f6fa1066ae020dda7fd7c
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842922"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087724"
 ---
 # <a name="view-reports-for-microsoft-defender-for-office-365"></a>Visa rapporter för Microsoft Defender för Office 365
 
@@ -35,7 +35,7 @@ Microsoft Defender för Office 365-organisationer (till exempel Microsoft 365 E5
 
 ![Instrument panelen för rapporter i säkerhets & efterlevnad](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="defender-for-office-365-file-types-report"></a>Rapport om fil typer i Defender för Office 365
+## <a name="defender-for-office-365-file-types-report"></a>Typrapport för Defender for Office 365
 
 I rapporten **Defender för Office 365-filtyper** visas en typ av filer som identifieras i skadlig kod för [bifogade](atp-safe-attachments.md)filer.
 
@@ -52,7 +52,7 @@ Om du vill visa rapporten öppnar du [säkerhets & Compliance Center](https://pr
 
 Följande vyer är tillgängliga:
 
-- **Visa data genom: fil** : diagrammet innehåller följande information:
+- **Visa data genom: fil**: diagrammet innehåller följande information:
 
   - **Skadliga Excel-bilagor**
   - **Skadliga Flash-filer**
@@ -72,12 +72,12 @@ Följande vyer är tillgängliga:
   - **Start datum** och **slutdatum**
   - Samma fil typs värden som visas i diagrammet.
 
-- **Visa data via: meddelande** : diagrammet innehåller följande information:
+- **Visa data via: meddelande**: diagrammet innehåller följande information:
 
   - **Blockera åtkomst**
   - **Meddelanden ersatta**
   - **Meddelanden som övervakas**
-  - **Ersatt med dynamisk e-postleverans** : Mer information finns i [dynamisk leverans i principer för säkra bifogade filer](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
+  - **Ersatt med dynamisk e-postleverans**: Mer information finns i [dynamisk leverans i principer för säkra bifogade filer](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
   ![Vyn meddelande i rapporten fil typer i Defender för Office 365](../../media/atp-file-types-report-message-view.png)
 
@@ -90,12 +90,12 @@ Följande vyer är tillgängliga:
 
 Om du klickar på **Visa informations tabell** visas en vy i real tid av alla klickningar i organisationen under de senaste 10 dagarna. Informationen som visas beror på diagrammet du tittade på:
 
-- **Visa data per: fil** :
+- **Visa data per: fil**:
 
   - **Datum**
   - **Mottagarens adress**
   - **Avsändarens adress**
-  - **Meddelande-ID** : tillgängligt i fältet **meddelande-ID** i meddelande huvudet och ska vara unikt. Ett exempel värde är `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (Observera vinkelparenteser).
+  - **Meddelande-ID**: tillgängligt i fältet **meddelande-ID** i meddelande huvudet och ska vara unikt. Ett exempel värde är `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (Observera vinkelparenteser).
   - **Fil**
 
   Om du klickar på **filter** kan du ändra rapporten med följande filter:
@@ -103,7 +103,7 @@ Om du klickar på **Visa informations tabell** visas en vy i real tid av alla kl
   - **Start datum** och **slutdatum**
   - Samma fil typs värden som visas i diagrammet.
 
-- **Visa data via: meddelande** :
+- **Visa data via: meddelande**:
 
   - **Datum**
   - **Mottagarens adress**
@@ -119,7 +119,7 @@ Om du klickar på **Visa informations tabell** visas en vy i real tid av alla kl
 
 Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
 
-## <a name="defender-for-office-365-message-disposition-report"></a>Meddelande disposition för Defender för Office 365
+## <a name="defender-for-office-365-message-disposition-report"></a>Rapport om meddelandeborttagning i Office 365
 
 I rapporten för att visa **ATP** visas de åtgärder som vidtogs för e-postmeddelanden som identifierats som skadligt innehåll.
 
@@ -134,12 +134,12 @@ Om du vill visa rapporten öppnar du [säkerhets & efterlevnad](https://protecti
 
 Följande vyer är tillgängliga:
 
-- **Visa data via: meddelande** : diagrammet innehåller följande information:
+- **Visa data via: meddelande**: diagrammet innehåller följande information:
 
   - **Blockera åtkomst**
   - **Meddelanden ersatta**
   - **Meddelanden som övervakas**
-  - **Ersatt med dynamisk e-postleverans** : Mer information finns i [dynamisk leverans i principer för säkra bifogade filer](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
+  - **Ersatt med dynamisk e-postleverans**: Mer information finns i [dynamisk leverans i principer för säkra bifogade filer](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
   ![Vyn meddelande i rapporten fil typer i Defender för Office 365](../../media/atp-file-types-report-message-view.png)
 
@@ -148,7 +148,7 @@ Följande vyer är tillgängliga:
   - **Start datum** och **slutdatum**
   - Samma meddelande dispositions värden som är tillgängliga i diagrammet och ytterligare **meddelanden** .
 
-- **Visa data genom: fil** : diagrammet innehåller följande information:
+- **Visa data genom: fil**: diagrammet innehåller följande information:
 
   - **Skadliga Excel-bilagor**
   - **Skadliga Flash-filer**
@@ -172,7 +172,7 @@ Följande vyer är tillgängliga:
 
 Om du klickar på **Visa informations tabell** visas en vy i real tid av alla klickningar i organisationen under de senaste 10 dagarna. Informationen som visas beror på diagrammet du tittade på:
 
-- **Visa data via: meddelande** :
+- **Visa data via: meddelande**:
 
   - **Datum**
   - **Mottagarens adress**
@@ -186,7 +186,7 @@ Om du klickar på **Visa informations tabell** visas en vy i real tid av alla kl
   - **Start datum** och **slutdatum**
   - Samma meddelande dispositions värden som är tillgängliga i diagrammet och ytterligare **meddelanden** .
 
-- **Visa data per: fil** :
+- **Visa data per: fil**:
 
   - **Datum**
   - **Mottagarens adress**
@@ -200,6 +200,61 @@ Om du klickar på **Visa informations tabell** visas en vy i real tid av alla kl
   - Samma fil typs värden som visas i diagrammet.
 
 Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
+
+## <a name="mail-latency-report"></a>E-postrapport
+
+I **rapporten e-postsvars tid** visas en sammanslagen för leverans-och spräng tiden i din organisation. Leverans tiden för e-post påverkas av många faktorer och den absoluta leverans tiden i sekunder är ofta inte en bra indikation på framgång eller ett problem. En långsam leverans tid på en dag kan betraktas som en genomsnittlig leverans tid på en annan dag, eller tvärtom. I **rapporten e-postsvars tid** görs ett försök att kvalificera meddelande leverans baserat på statistik om den observerade leverans tiden för andra meddelanden:
+
+- **femtio percentil**: det här är mitten för leverans tider för meddelanden. Du kan betrakta detta värde som en genomsnittlig leverans tid.
+- **nittionde percentil**: Detta indikerar en hög latens för meddelande leverans. Det tog längre tid än 10 procent av meddelandena att leverera.
+- **99th percentil**: här visas den högsta svars tiden för meddelande leverans.
+
+Klient sidan och nätverks fördröjningen ingår inte.
+
+Om du vill visa rapporten öppnar du [säkerhets & efterlevnad](https://protection.office.com), går till **Reports** \> **instrument paneler** för rapporter och väljer **rapport om e-postsvar**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/mailLatencyReport?viewid=P50> .
+
+![Widget för tids rapport för e-post i instrument panelen rapporter](../../media/mail-latency-report-widget.png)
+
+### <a name="report-view-for-the-mail-latency-report"></a>Rapportvy för rapport om e-postsvar
+
+När du öppnar rapporten är fliken **femtio percentil** markerad som standard.
+
+Som standard innehåller den här vyn ett diagram som är konfigurerat med följande filter:
+
+- **Datum**: de senaste 7 dagarna
+- **Meddelande vy**:
+  - Översprängta meddelanden
+
+I det här diagrammet visas meddelanden ordnade i följande kategorier:
+
+- **Leverans svars tid för e-post**
+- **Fördröjning för sprängning**
+
+När du hovrar över en kategori i diagrammet kan du se en uppdelning av svars tiden i varje kategori.
+
+![E-postrapport](../../media/mail-latency-report.png)
+
+Om du klickar på **filter** i rapportvyn kan du ändra resultatet med följande filter:
+
+- Alla meddelanden
+- Meddelanden som innehåller bilagor eller URL: er
+
+Om du klickar på fliken **nittionde percentiler** eller på fliken **99th percentiler** används samma standard filter från vyn **50 percentiler** .
+
+### <a name="details-table-view-for-the-mail-latency-report"></a>Vyn detaljerad tabell för rapporten e-postsvar
+
+Följande information visas i vyn detaljerad tabell:
+
+- **Datum**
+- **Värden**
+- **Antal meddelanden**
+- **Total svars tid**
+
+![Rapport information om e-postsvar](../../media/mail-latency-report-details.png)
+
+Ovanstående visar att genomsnittlig tids åtgång den 14 november för alla meddelanden som levererats och sprängat sig **108,033** sekunder.
+
+Tabellen information innehåller samma information på varje flik.
 
 ## <a name="threat-protection-status-report"></a>Statusrapport för hotskydd
 
@@ -220,7 +275,7 @@ Om du vill visa rapporten öppnar du [säkerhets & Compliance Center](https://pr
 
 Rapporten **skydd mot URL-hotet** har två aggregerade vyer som uppdateras en gång var fjärde timme som visar data för de senaste 90 dagarna:
 
-- **Webb adress klicka på skydds åtgärd** : visar antalet URL-musklick efter användare i organisationen och resultatet av klickning:
+- **Webb adress klicka på skydds åtgärd**: visar antalet URL-musklick efter användare i organisationen och resultatet av klickning:
 
   - **Blockerad** (användaren hindrades från att gå till URL-adressen)
   - **Blockerad och klickat genom**
@@ -274,8 +329,8 @@ Utöver de rapporter som beskrivs i det här avsnittet är flera andra rapporter
 |Rapport|Ämnes|
 |---|---|
 |**Explorer** (Microsoft Defender för Office 365 abonnemang 2) eller **real tids identifiering** (microsoft Defender för Office 365 abonnemang 1)|[Hotutforskaren (och realtidsidentifieringar)](threat-explorer.md)|
-|**Säkerhets rapporter för e-post** , till exempel rapporten Top avsändare och mottagare, rapporten Spoof meddelanden och rapporten skräp identifiering.|[Visa säkerhets rapporter för e-post i säkerhets & efterlevnad](view-email-security-reports.md)|
-|**E-postflödes rapporter** , till exempel vidarebefordran, rapporten flödes schema och rapport om avsändare och mottagare.|[Visa rapporter om e-postflöden i säkerhets & Compliance Center](view-mail-flow-reports.md)|
+|**Säkerhets rapporter för e-post**, till exempel rapporten Top avsändare och mottagare, rapporten Spoof meddelanden och rapporten skräp identifiering.|[Visa säkerhets rapporter för e-post i säkerhets & efterlevnad](view-email-security-reports.md)|
+|**E-postflödes rapporter**, till exempel vidarebefordran, rapporten flödes schema och rapport om avsändare och mottagare.|[Visa rapporter om e-postflöden i säkerhets & Compliance Center](view-mail-flow-reports.md)|
 |**URL-spårning för säkra länkar** (endast PowerShell). Utdata från denna cmdlet visar resultaten av åtgärder för säkra länkar under de senaste sju dagarna.|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
 |**Resultat för e-posttrafik för EOP och Microsoft Defender för Office 365** (endast PowerShell). Utdata från den här cmdleten innehåller information om domäner, datum, händelse typ, riktning, åtgärd och antal meddelanden.|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
 |**E-postdetaljerade rapporter för EOP och Defender för Office 365-identifiering** (endast PowerShell). Utdata från den här cmdleten innehåller information om skadliga filer och URL-adresser, nät fiske försök, personifiering och andra potentiella hot i e-post och filer.|[Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|

@@ -467,10 +467,10 @@
               href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
             - name: Project Server 2010
               href: project-server-2010-end-of-support.md
-- name: Säkerhet
-  href: 'https://docs.microsoft.com/microsoft-365/security/'
 - name: Efterlevnad
-  href: 'https://docs.microsoft.com/microsoft-365/compliance/'
+  href: ../compliance/index.yml
+- name: Säkerhet
+  href: ../security/index.yml
 - name: Molntjänster
   items:
     - name: Översikt
@@ -581,6 +581,8 @@
               href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
             - name: Blockera
               href: block-user-accounts-with-microsoft-365-powershell.md
+            - name: Lösenord
+              href: manage-passwords-with-microsoft-365-powershell.md
         - name: Licenser och tjänster
           items:
             - name: Visa licenser och tjänster
@@ -602,6 +604,8 @@
                   href: disable-access-to-services-while-assigning-user-licenses.md
         - name: Grupper
           items:
+            - name: Hantera säkerhetsgrupper
+              href: manage-security-groups-with-microsoft-365-powershell.md
             - name: Underhålla säkerhetsgruppmedlemskap
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Hantera Microsoft 365-grupper
@@ -723,10 +727,6 @@
       href: contoso-info-protect.md
     - name: Sammanfattning av säkerhet
       href: contoso-security-summary.md
-- name: Microsoft 365 Efterlevnad
-  href: ../compliance/index.yml
-- name: Microsoft 365-säkerhet
-  href: ../security/index.yml
 - name: Microsoft 365-arkitektur och lösningar
   href: ../solutions/index.yml
 - name: Hantera affärskontinuitet (EBCM) med molntjänster

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig att identifiera specifika grupper med användare med användar koder i Microsoft Defender för Office 365 abonnemang 2. För att snabbt identifiera taggade användare kan du använda tagg filtrering för meddelanden, rapporter och undersökningar i Microsoft Defender för Office 365.
-ms.openlocfilehash: 9c83a323a3116b3da61a133c7fb449978ca13841
-ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
+ms.openlocfilehash: 14ebcebeb8081a2de341fd06facabd9f7d55b119
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48945324"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123625"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Användarmallar i Microsoft Defender för Office 365
 
@@ -29,8 +29,8 @@ ms.locfileid: "48945324"
 
 User-taggar är identifierare för specifika grupper med användare i [Microsoft Defender för Office 365](office-365-atp.md). Det finns två typer av användar flaggor:
 
-- **System märkning** : [prioritets konton](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) är för närvarande den enda typen av system märkning.
-- **Anpassade taggar** : du skapar dem själv.
+- **System märkning**: [prioritets konton](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) är för närvarande den enda typen av system märkning.
+- **Anpassade taggar**: du skapar dem själv.
 
 Om din organisation har Defender för Office 365 abonnemang 2 (ingår i ditt abonnemang eller som ett tillägg) kan du skapa anpassade användar flaggor förutom att använda taggen Priority accounts.
 
@@ -40,6 +40,7 @@ När du har använt system koder eller anpassade taggar för användare kan du a
 - [Threat Explorer och real tids identifiering](threat-explorer.md)
 - [Statusrapport för hotskydd](view-email-security-reports.md#threat-protection-status-report)
 - [Kampanjvyer](campaigns.md)
+- För prioriterade konton kan du använda rapporten med [e-postproblem för prioriterade konton](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) i administrations centret för Exchange (UK).
 
 I den här artikeln förklaras hur du konfigurerar användar koder i fältet säkerhets & efterlevnad. Det finns inga cmdletar i säkerhets & kompatibilitetstillstånd för att hantera användar koder.
 
@@ -60,17 +61,14 @@ I den här artikeln förklaras hur du konfigurerar användar koder i fältet sä
 2. På sidan med **användar Taggar** som öppnas klickar du på **skapa tagg**.
 
 3. Guiden **skapa tagg** öppnas i ett nytt flyg ut. På sidan **definiera etikett** konfigurerar du följande inställningar:
-
-   - **Name** : Ange ett unikt, beskrivande namn för taggen. Det här är det värde som du kommer att se och använda.
-
-   - **Beskrivning** : Ange en valfri beskrivning för märket.
+   - **Name**: Ange ett unikt, beskrivande namn för taggen. Det här är det värde som du kommer att se och använda.
+   - **Beskrivning**: Ange en valfri beskrivning för märket.
 
    När du är klar klickar du på **Nästa**.
 
 4. Gör något av följande på sidan **tilldela post lådor** :
 
    - Klicka på **Lägg till post lådor**. Gör något av följande för att lägga till enskilda användare eller grupper i rutan Lägg på som visas:
-
      - Klicka i rutan och bläddra igenom listan för att välja en användare eller grupp.
      - Klicka i rutan och börja skriva för att filtrera listan och välja en användare eller grupp.
      - Om du vill lägga till fler värden klickar du i ett tomt område i rutan.

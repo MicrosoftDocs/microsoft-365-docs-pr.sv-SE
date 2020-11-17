@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: Lär dig hur du skapar en extraktor i Microsoft SharePoint-Syntex.
-ms.openlocfilehash: 260486c128ce76c31fe5f4a0994b4e103687b829
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 99d2a4602c03d8a7207736ea17ed500626ce43ac
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338655"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087469"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Skapa en extraktor i Microsoft SharePoint-Syntex.
 
@@ -27,7 +28,7 @@ ms.locfileid: "48338655"
 
 Före eller efter det att du har skapat en klassificeringsmodell för att automatisera identifieringen och klassifikationen av specifika dokumenttyper kan du välja att lägga till extraktorer i din modell för att hämta specifik information från de här dokumenten. Du kanske, till exempel, vill att din modell inte bara ska identifiera alla *Kontraktförnyelse* dokument som lagts till i ditt dokumentbiblioteket, utan också för att visa *Tjänstens Startdatum* för varje dokument som ett kolumnvärde i dokumentbiblioteket.
 
-Du behöver skapa en extraktor för varje enhet i det dokument som du vill extrahera. I vårt exempel vill vi extrahera **Tjänstens Startdatum** för varje **Kontraktförnyelse** dokument som identifieras av modellen. Vi vill kunna se en vy i dokumentbiblioteket för alla **Kontraktförnyelse** dokument med en kolumn som visar **Tjänstens Start**-datum värde för varje dokument. 
+Du behöver skapa en extraktor för varje enhet i det dokument som du vill extrahera. I vårt exempel vill vi extrahera **Tjänstens Startdatum** för varje **Kontraktförnyelse** dokument som identifieras av modellen. Vi vill kunna se en vy i dokumentbiblioteket för alla  **Kontraktförnyelse** dokument med en kolumn som visar **Tjänstens Start**-datum värde för varje dokument. 
 
 > [!NOTE]
 > För att skapa en extraktor använder du samma filer som du tidigare har laddat upp för att träna klassificeraren. 
@@ -44,8 +45,8 @@ Nästa steget är att sätta en etikett på den enhet du vill extrahera i dina u
 
 När du skapar extraktor öppnas extraktorsidan. Här visas en lista över dina exempelfiler, och den första filen i listan visas i visningsprogrammet.
 
-1. Välj de data från visningsprogrammet som du vill extrahera från filerna. Om du, till exempel, vill extrahera *Tjänstens Startdatum*markerar du datumet i den första filen (*måndag 14 oktober 2019*). och klicka på **Spara**.  Du bör se värdet som visas från filen i listan med Etiketterade exempel under kolumnen **Etikett**.
-2. Välj **Nästa fil** för att spara automatiskt och öppna nästa fil i listan i visningsprogrammet. Eller välj **Spara** och sedan välj en annan fil från den**Etiketterade exempel** -listan.
+1. Välj de data från visningsprogrammet som du vill extrahera från filerna. Om du, till exempel, vill extrahera *Tjänstens Startdatum* markerar du datumet i den första filen (*måndag 14 oktober 2019*). och klicka på **Spara**.  Du bör se värdet som visas från filen i listan med Etiketterade exempel under kolumnen **Etikett**.
+2. Välj **Nästa fil** för att spara automatiskt och öppna nästa fil i listan i visningsprogrammet. Eller välj **Spara** och sedan välj en annan fil från den **Etiketterade exempel** -listan.
 3. Upprepa steg 1 och 2 i visningsprogrammet och upprepa sedan tills du har sparat etiketten i alla fem filerna.
 
     ![Avancerade inställningar](../media/content-understanding/select-service-start-date.png) 
@@ -94,7 +95,7 @@ För *Tjänstens Startdatum* exempel är det mer effektivt att använda den för
 
 ## <a name="train-the-model"></a>Träna modellen 
 
-Om du sparar förklaringen startar du utbildningen. Om din modell har tillräcklig information för att extrahera data från dina etiketterade exempelfiler, kommer du att se varje fil etiketterade med**Match**.  
+Om du sparar förklaringen startar du utbildningen. Om din modell har tillräcklig information för att extrahera data från dina etiketterade exempelfiler, kommer du att se varje fil etiketterade med **Match**.  
 
 ![Match](../media/content-understanding/match2.png) 
 
@@ -116,7 +117,7 @@ I vårt exempel kan du se att textsträngen *Starta Tjänstedatumet för* föreg
 
 ## <a name="train-the-model-again"></a>Träna modellen igen
 
-Om du sparar förklaringen startar utbildningen igen, den här gången med hjälp av båda förklaringarna i exemplet. Om din modell har tillräcklig information för att extrahera data från dina etiketterade exempelfiler, kommer du att se varje fil etiketterade med**Match**. 
+Om du sparar förklaringen startar utbildningen igen, den här gången med hjälp av båda förklaringarna i exemplet. Om din modell har tillräcklig information för att extrahera data från dina etiketterade exempelfiler, kommer du att se varje fil etiketterade med **Match**. 
 
 Om du får en **Matchningsfel** igen på dina etiketterade filer behöver du antagligen skapa ytterligare en förklaring för att ge modellen mer information för att identifiera dokumenttypen, eller så kan du göra ändringar i dina befintliga.
 

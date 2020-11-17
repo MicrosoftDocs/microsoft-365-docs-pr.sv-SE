@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: 5ba17c414b6f6470d2e9af14d1f484b435cb4f51
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 3c8477ce16249cb4d21c736da60d619774175041
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846502"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123613"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Konfigurera automatiserade undersökningar och svars funktioner i Microsoft 365 Defender
 
@@ -91,13 +91,13 @@ Säkerhets inställningar i Office 365 hjälper till att skydda e-post och inneh
 
 1. Gå till Microsoft 365 säkerhets Center ( [https://security.microsoft.com](https://security.microsoft.com) ) och logga in.
 
-2. Leta efter **händelser** , **Åtgärds Center** och **jakt** i navigerings fönstret, som visas i följande bild:
+2. Leta efter **händelser**, **Åtgärds Center** och **jakt** i navigerings fönstret, som visas i följande bild:
 
    :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP den":::
 
-   - Om du ser **händelser** , **Åtgärds Center** och **jakt** är Microsoft 365 Defender aktiverat. Gå vidare till nästa procedur, [Granska eller ändra automatiserings nivån för enhets grupper](#review-or-change-the-automation-level-for-device-groups).
+   - Om du ser **händelser**, **Åtgärds Center** och **jakt** är Microsoft 365 Defender aktiverat. Se proceduren, [Granska eller ändra automatiserings nivån för enhets grupper](#review-or-change-the-automation-level-for-device-groups) (i den här artikeln).
 
-   - Om du inte *ser* **problem** , **Åtgärds center** eller **jakt** kanske Microsoft 365 Defender inte är aktiverat. I det här fallet fortsätter du till nästa steg.
+   - Om du inte *ser* **problem**, **Åtgärds center** eller **jakt** kanske Microsoft 365 Defender inte är aktiverat. I det här fallet går du vidare till nästa steg ([Granska pågående och slutförda åtgärder](#review-pending-and-completed-actions-in-the-action-center)i den här artikeln).
 
 3. I navigerings fönstret väljer du **Inställningar**  >  **Microsoft 365 Defender**. Kontrol lera att Microsoft 365 Defender är aktiverat. 
 

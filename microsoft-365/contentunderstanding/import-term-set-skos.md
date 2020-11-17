@@ -8,14 +8,15 @@ audience: admin
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.service: ''
+ms.collection: enabler-strategic
 search.appverid: ''
 localization_priority: Priority
-ms.openlocfilehash: 318497b8b1815b281eff7d781820616c9be9d5ed
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 96ffa22880aa9bcb70c0f7159ac7587c911b375b
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321247"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087361"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>Importera en termuppsättning med ett SKOS-baserat format
 
@@ -27,7 +28,7 @@ Vi rekommenderar att du endast importerar filer med färre än 20 000 termer. St
 
 2. Välj den termgrupp där du vill importera termuppsättningen.
 
-3. Klicka på **Importera termuppsättning**i kommandofältet.
+3. Klicka på **Importera termuppsättning** i kommandofältet.
  
 4.  Om du vill ladda ned en exempelfil och använda den som en mall klickar du på **sample-metadata.ttl** för att hämta en exempelfil som använder det SKOS-baserade formatet.
  

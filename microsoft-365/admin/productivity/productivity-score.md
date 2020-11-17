@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Översikt över Microsoft produktivitets poäng.
-ms.openlocfilehash: 3808583429c78460483cd7193d38810a7e189040
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 49ae35d68b0d0ebf627e44e5912d4a1bb7b712c0
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804738"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123495"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft produktivitets Poäng 
 
@@ -88,7 +88,7 @@ Om du vill visa produktivitets poängen för din organisation måste du ha av n�
 - Global läsare 
 - Rapport läsare 
 
-Du kan komma åt upplevelsen från Microsoft 365 admin Home under **rapporter** om  >  **produktivitets Poäng** .
+Du kan komma åt upplevelsen från Microsoft 365 admin Home under **rapporter** om  >  **produktivitets Poäng**.
 
 ## <a name="interpreting-productivity-score"></a>Tolka Poäng för produktivitet 
 

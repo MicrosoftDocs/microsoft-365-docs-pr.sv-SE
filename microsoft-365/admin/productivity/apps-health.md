@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Information om hälso upplevelsen för Microsoft 365-apparna.
-ms.openlocfilehash: 9497118f4ebfb1cb2b64670638ce939da21eb261
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: c38f2109ed41377cfccb9838c95dbfbebbfd322a
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841195"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123517"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365-appar hälsa – teknik upplevelse
 
-Produktivitets Poäng hjälper organisationer att omvandla hur arbete görs med mät värden för hur människor använder Microsoft 365-appar och stöd teknik upplevelsen. Poängen återspeglar din organisation&#39;s prestanda för kategorierna för folk-och teknik miljö och jämför poängen med organisationer som du vill. Hälso kategorin appar är en del av de mått som infaller under folkets upplevelse. Se [Översikt över produktivitets Poäng](productivity-score.md) för att få veta mer.
+Produktivitets Poäng hjälper organisationer att omvandla hur arbete görs med mät värden för hur människor använder Microsoft 365-appar och stöd teknik upplevelsen. Poängen återspeglar din organisation&#39;s prestanda för kategorierna för folk-och teknik miljö och jämför poängen med organisationer som du vill. Hälso kategorin appar är en del av måtten som faller under teknologi upplevelser. Se [Översikt över produktivitets Poäng](productivity-score.md) för att få veta mer.
 
 ## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>Därför är organisationen&#39;s Microsoft 365-appar hälso Poäng
 
@@ -59,7 +59,7 @@ Information som behandlas för detta inkluderar Microsoft 365-appar, version och
 
 Följande diagram visar antalet enheter i rekommenderad uppdaterings kanal under de senaste 180 dagarna. Data punkten i linje diagrammet är en mängd aktiviteter för de senaste 28 dagarna.
 
-:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="Huvudsaklig visuell visualisering för Microsoft 365-appar.":::
+:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="Diagram som visar trenden för enheter med rekommenderad uppdaterings kanal.":::
 
 ### <a name="scoring-framework"></a>Poäng ramverk
 
@@ -71,7 +71,7 @@ Vi tillhandahåller också stödjande uppgifter som hjälper dig att få mer ins
 
 ### <a name="devices-on-current-channel-and-running-supported-versions"></a>Enheter på aktuell kanal och kör versioner som stöds
 
-:::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="Huvudsaklig visuell visualisering för Microsoft 365-appar.":::
+:::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="Diagram som visar antal enheter i den aktuella kanalen med stöd.":::
 
 1. **Sidhuvud:**  Markerar procent andelen enheter i den aktuella kanalen som har stöd för versioner av Microsoft 365-program som stöds
 1. **Brödtext:**  Innehåller information om värdet på enheter som kör Microsoft 365-appar på Rekommenderad kanal.
@@ -82,7 +82,7 @@ Vi tillhandahåller också stödjande uppgifter som hjälper dig att få mer ins
 
 ### <a name="devices-running-latest-and-supported-versions"></a>Enheter med de senaste och kompatibla versionerna
 
-:::image type="content" source="../../media/device-supported-versions.png" alt-text="Huvudsaklig visuell visualisering för Microsoft 365-appar.":::
+:::image type="content" source="../../media/device-supported-versions.png" alt-text="Diagram som visar antal enheter med den senaste versionen av program som stöds.":::
 
 1. **Sidhuvud:**  Markerar procent andelen enheter som kör versioner och enheter som kör de senaste versionerna.
 1. **Brödtext:**  Innehåller information om det värde som används för att köra enheter på rekommenderade kanaler och kompatibla/senaste versioner.
@@ -99,7 +99,7 @@ Vi tillhandahåller också stödjande uppgifter som hjälper dig att få mer ins
 
 Det här diagrammet visar trenden för de enheter som kör versioner och de senaste versionerna av Microsoft 365-appar under de senaste 180 dagarna.
 
-:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Huvudsaklig visuell visualisering för Microsoft 365-appar.":::
+:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Diagram som visar hur många enheter som körs och den senaste versionen av apparna över tiden.":::
 
 ## <a name="people-in-your-organization"></a>Personer i organisationen
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du hittar och använder e-postsäkerhets rapporter för organisationen. Säkerhets rapporter för e-post finns i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 738ae55fac5677a1b4f78e4c67506e85d5975090
-ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
+ms.openlocfilehash: 75370cbbdfbc59bf8e9334d1e11d8b92c5c97e61
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48945360"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087757"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visa rapporter om e-postsäkerhet i Säkerhets- och efterlevnadscenter
 
@@ -51,9 +51,9 @@ Du kan filtrera både diagrammet och informations tabellen genom att klicka på 
 
 - **Start datum** och **slutdatum**
 
-- **Misstänkt** : användar kontot har skickat misstänkt e-post och riskerar att begränsas från att skicka e-post.
+- **Misstänkt**: användar kontot har skickat misstänkt e-post och riskerar att begränsas från att skicka e-post.
 
-- **Begränsat** : användar kontot har begränsats från att skicka e-post på grund av starkt misstänkta mönster.
+- **Begränsat**: användar kontot har begränsats från att skicka e-post på grund av starkt misstänkta mönster.
 
 ![Rapportvyn i rapporten användare med kompromissad](../../media/compromised-users-report-activity-view.png)
 
@@ -83,7 +83,7 @@ Mer information om kryptering finns i [kryptering med e-post i Microsoft 365](..
 
 Du kan använda följande filter i diagrammet:
 
-- **Visa data via: meddelande krypterings rapport** och **bryta ned efter: krypterings metod** : följande krypterings metoder är tillgängliga:
+- **Visa data via: meddelande krypterings rapport** och **bryta ned efter: krypterings metod**: följande krypterings metoder är tillgängliga:
 
   - **Kryptering efter användare**
   - **Kryptering per princip**
@@ -94,7 +94,7 @@ Du kan använda följande filter i diagrammet:
   - Krypterings metod.
   - Krypterings mal len.
 
-- **Visa data via: meddelande krypterings rapport** och **bryta ned efter: krypterings mal len** : följande krypterings metoder är tillgängliga:
+- **Visa data via: meddelande krypterings rapport** och **bryta ned efter: krypterings mal len**: följande krypterings metoder är tillgängliga:
 
   - **Vidarekoppla inte**
   - **Endast kryptering**
@@ -107,7 +107,7 @@ Du kan använda följande filter i diagrammet:
   - Krypteringsmetod
   - Krypterings mal len
 
-- **Visa data efter: de fem främsta mottagar domänerna** : i den här vyn visas ett cirkel diagram med antal skickade meddelanden för de fem främsta domänerna.
+- **Visa data efter: de fem främsta mottagar domänerna**: i den här vyn visas ett cirkel diagram med antal skickade meddelanden för de fem främsta domänerna.
 
   Om du klickar på **filter** kan du välja ett **start datum** och ett **slutdatum**.
 
@@ -115,7 +115,7 @@ Du kan använda följande filter i diagrammet:
 
 Om du klickar på **Visa informations tabell** beror informationen som visas på diagrammet du tittade på:
 
-- **Bryt ner med: krypterings metod** eller **Bryt ner med: krypterings mal len** : följande information visas:
+- **Bryt ner med: krypterings metod** eller **Bryt ner med: krypterings mal len**: följande information visas:
 
   - **Datum**
   - **Avsändarens adress**
@@ -124,7 +124,7 @@ Om du klickar på **Visa informations tabell** beror informationen som visas på
   - **Mottagarens adress**
   - **Ämne**
 
-- **Visa data enligt: de 5 främsta mottagar domänerna** :
+- **Visa data enligt: de 5 främsta mottagar domänerna**:
 
   - **Datum**
   - **Mottagar domän**
@@ -165,12 +165,16 @@ Om du klickar på **Visa informations tabell** kan du se följande uppgifter:
 - **Datum**
 - **Avsändarens adress**
 - **Mottagarens adress**
-- **Meddelande-ID** : tillgängligt i fältet **meddelande-ID** i meddelande huvudet och ska vara unikt. Ett exempel värde är `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (Observera vinkelparenteser).
+- **Meddelande-ID**: tillgängligt i fältet **meddelande-ID** i meddelande huvudet och ska vara unikt. Ett exempel värde är `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (Observera vinkelparenteser).
 - **Ämne**
 - **Datafil**
 - **Namn på skadlig kod**
 
 Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
+
+## <a name="mail-latency-report"></a>E-postrapport
+
+I **rapporten e-postsvars tid** finns information om hur du skickar e-post och Spräng Mer information finns i [rapporten om e-postsvar](view-reports-for-atp.md#mail-latency-report).
 
 ## <a name="sent-and-received-email-report"></a>Skicka och ta emot e-postrapport
 
@@ -192,18 +196,18 @@ Mer information om skydd mot skräp post finns i [skydd mot skräp post i EOP](a
 
 Följande diagram är tillgängliga i rapportvyn:
 
-- **Bryt ned genom: åtgärd** : följande händelse typer visas:
+- **Bryt ned genom: åtgärd**: följande händelse typer visas:
 
   - **Skräp post filtrerat**
   - **Skräp post IP-block**
   - **Skräp post omslag**
-  - **Spam DBEB filter** : mappad Edge-blockering (DBEB)
+  - **Spam DBEB filter**: mappad Edge-blockering (DBEB)
 
   När du hovrar över en dag (data punkt) i diagrammet kan du se hur många objekt som har blockerats den dagen samt hur objekten kategoriseras.
 
   ![Aktivitetsvy i rapporten om skräp identifiering](../../media/spam-detections-report-action-view.png)
 
-- **Bryt ned efter: riktning** : följande vägvisningar visas:
+- **Bryt ned efter: riktning**: följande vägvisningar visas:
 
   - **Inkommande**
   - **Gående**
@@ -289,7 +293,7 @@ Som standard visar diagrammet data för de senaste sju dagarna. Om du klickar p�
 
 Följande vyer är tillgängliga:
 
-- **Visa data via: översikt** : följande identifierings information visas:
+- **Visa data via: översikt**: följande identifierings information visas:
 
   - **Skadlig program vara**
   - **E-Phish**
@@ -299,12 +303,12 @@ Följande vyer är tillgängliga:
 
 - **Visa data efter: innehåll \> Malware**<sup>1</sup>: följande information visas för Microsoft Defender för Office 365-organisationer:
 
-  - **Skydd mot skadlig program vara** : illasinnade filer identifieras i SharePoint, OneDrive och Microsoft Teams med [inbyggd virus identifiering i Microsoft 365](virus-detection-in-spo.md).
-  - **Fil sprängare** : illasinnade filer identifieras av [ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md).
+  - **Skydd mot skadlig program vara**: illasinnade filer identifieras i SharePoint, OneDrive och Microsoft Teams med [inbyggd virus identifiering i Microsoft 365](virus-detection-in-spo.md).
+  - **Fil sprängare**: illasinnade filer identifieras av [ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
   ![Vyn skadlig program vara i rapporten skydds status](../../media/threat-protection-status-report-content-malware-view.png)
 
-- **Visa data via: åsidosättning av meddelande** : följande information om att åsidosätta orsaken visas:
+- **Visa data via: åsidosättning av meddelande**: följande information om att åsidosätta orsaken visas:
 
   - **Lokal hoppning**
   - **IP-Tillåt**
@@ -318,17 +322,17 @@ Följande vyer är tillgängliga:
 
   ![Vyn Åsidosätt meddelande i rapporten skydds status](../../media/threat-protection-status-report-message-override-view.png)
 
-- **Bryta ned efter: identifierings teknologi** och **Visa data via: e- \> Phish** : följande information visas:
+- **Bryta ned efter: identifierings teknologi** och **Visa data via: e- \> Phish**: följande information visas:
 
   - **ATP-genererad URL-rykte**<sup>1</sup>: skadlig URL-rykte skapad från Defender för Office 365-sprängor i andra Microsoft 365-kunder.
-  - **Avancerat Phish filter** : phishing-signaler baserade på dator inlärning.
-  - **Skydd mot förfalskning – DMARC** : DMARC misslyckades för meddelanden.
-  - **Skydd mot förfalskning** : avsändaren försöker skicka falska till mottagar domänen.
-  - **Skydd mot förfalskning-extern domän** : avsändaren försöker använda en annan domän.
-  - **Varumärkes-personifiering** : personifiering av välkända varumärken baserat på avsändare.
+  - **Avancerat Phish filter**: phishing-signaler baserade på dator inlärning.
+  - **Skydd mot förfalskning – DMARC**: DMARC misslyckades för meddelanden.
+  - **Skydd mot förfalskning**: avsändaren försöker skicka falska till mottagar domänen.
+  - **Skydd mot förfalskning-extern domän**: avsändaren försöker använda en annan domän.
+  - **Varumärkes-personifiering**: personifiering av välkända varumärken baserat på avsändare.
   - **Domän person**<sup>1</sup>: personifiering av domäner som kunden äger eller definierar.
-  - **EOP URL rykte** : skadlig URL-rykte.
-  - **Allmänt Phish-filter** : nät fiske signaler baserade på analytiker regler.
+  - **EOP URL rykte**: skadlig URL-rykte.
+  - **Allmänt Phish-filter**: nät fiske signaler baserade på analytiker regler.
   - **Gemensamma**
   - **PHISH ZAP**<sup>2</sup>: Tom timme för automatisk rensning av nät fiske meddelanden.
   - **URL-sprängare**<sup>1</sup>
@@ -336,11 +340,11 @@ Följande vyer är tillgängliga:
 
   ![Identifierings teknologi vy för nät fiske-e-post i status rapport för hotet skydd](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
-- **Bryta ned efter: identifierings teknologi** och **Visa data via: e- \> postskadlig program vara** : följande information visas:
+- **Bryta ned efter: identifierings teknologi** och **Visa data via: e- \> postskadlig program vara**: följande information visas:
 
   - **ATP – genererad fil rykte**<sup>1</sup>: alla skadliga fil rykte som genererats av Defender för Office 365-sprängmedel.
   - **Skydd mot skadlig program vara**<sup>: identifiering</sup>från motorer med skadlig program vara.
-  - **Fil typs block för principer mot skadlig program vara** : dessa e-postmeddelanden filtreras på grund av den typ av skadlig fil som identifieras i meddelandet.
+  - **Fil typs block för principer mot skadlig program vara**: dessa e-postmeddelanden filtreras på grund av den typ av skadlig fil som identifieras i meddelandet.
   - **Fil sprängare**<sup>1</sup>: identifiering av säkra bifogade filer.
   - **Fil rykte**
   - **Malware, ZAP**<sup>2</sup>
@@ -348,7 +352,7 @@ Följande vyer är tillgängliga:
 
   ![Identifierings teknologi vy för malware i status rapport för hotet skydd](../../media/threat-protection-status-report-malware-detection-tech-view.png)
 
-- **Bryt ned med: princip typ** och **Visa data via: e- \> Phish** eller **Visa data via: e-post för \> skadlig kod** : följande information visas:
+- **Bryt ned med: princip typ** och **Visa data via: e- \> Phish** eller **Visa data via: e-post för \> skadlig kod**: följande information visas:
 
   - **Skadlig program vara**
   - **Säkra bifogade filer**<sup>1</sup>
@@ -359,7 +363,7 @@ Följande vyer är tillgängliga:
 
   ![Vy för princip typ för nät fiske meddelanden i status rapport för hotet skydd](../../media/threat-protection-status-report-phishing-policy-type-view.png)
 
-- **Bryt ner med: leverans status** och **Visa data via: e- \> Phish** eller **Visa data via: e-post för \> skadlig kod** : följande information visas:
+- **Bryt ner med: leverans status** och **Visa data via: e- \> Phish** eller **Visa data via: e-post för \> skadlig kod**: följande information visas:
 
   - **Leveransen misslyckades**
   - **Avbröts**
@@ -377,7 +381,7 @@ Följande vyer är tillgängliga:
 
 <sup>2</sup> noll-timmars autorensning (Zap) är inte tillgängligt i fristående EOP (den fungerar bara i Exchange Online-postlådor).
 
-Om du klickar på **filter** , beror de tillgängliga filtren på diagrammet du tittade på:
+Om du klickar på **filter**, beror de tillgängliga filtren på diagrammet du tittade på:
 
 - Om du vill **Visa data via: \> skadligt innehåll** kan du ändra rapporten genom att **Starta datum** och **slutdatum** samt **identifiering** svärdet.
 
@@ -385,24 +389,24 @@ Om du klickar på **filter** , beror de tillgängliga filtren på diagrammet du 
 
   - **Start datum** och **slutdatum**
   - **Åsidosätt orsak**
-  - **Tagg** : filtrera resultat efter användare eller grupper som har den angivna användar tag gen installerad (inklusive prioriterade konton). Mer information om användar flaggor finns i [User Tags](user-tags.md).
+  - **Tagg**: filtrera resultat efter användare eller grupper som har den angivna användar tag gen installerad (inklusive prioriterade konton). Mer information om användar flaggor finns i [User Tags](user-tags.md).
   - **Domain**
 
 - För alla andra vyer kan du ändra rapporten med följande filter:
 
   - **Start datum** och **slutdatum**
   - **Proxyidentifiering**
-  - **Skyddas av** : **ATP** eller **EOP**
-  - **Tagg** : filtrera resultat efter användare eller grupper som har den angivna användar tag gen installerad (inklusive prioriterade konton). Mer information om användar flaggor finns i [User Tags](user-tags.md).
+  - **Skyddas av**: **ATP** eller **EOP**
+  - **Tagg**: filtrera resultat efter användare eller grupper som har den angivna användar tag gen installerad (inklusive prioriterade konton). Mer information om användar flaggor finns i [User Tags](user-tags.md).
   - **Domain**
 
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>Vyn detaljerad tabell för status rapport för hotet skydd
 
 Om du klickar på **Visa informations tabell** beror informationen som visas på diagrammet du tittade på:
 
-- **Visa data efter: översikt** : knappen för **tabell information** är tillgänglig.
+- **Visa data efter: översikt**: knappen för **tabell information** är tillgänglig.
 
-- **Visa data efter: innehåll \> Skadlig kod** :
+- **Visa data efter: innehåll \> Skadlig kod**:
 
   - **Datum**
   - **Plats**
@@ -411,7 +415,7 @@ Om du klickar på **Visa informations tabell** beror informationen som visas på
 
   Om du klickar på **filter** i den här vyn kan du ändra rapporten genom **start datum** och **slutdatum** samt **identifiering** svärdet.
 
-- **Visa data via: åsidosättning av meddelande** :
+- **Visa data via: åsidosättning av meddelande**:
 
   - **Datum**
   - **Ämne**
@@ -426,7 +430,7 @@ Om du klickar på **Visa informations tabell** beror informationen som visas på
 
   - **Start datum** och **slutdatum**
   - **Åsidosätt orsak**
-  - **Tagg** : filtrera resultat efter användare eller grupper som har den angivna användar tag gen installerad (inklusive prioriterade konton). Mer information om användar flaggor finns i [User Tags](user-tags.md).
+  - **Tagg**: filtrera resultat efter användare eller grupper som har den angivna användar tag gen installerad (inklusive prioriterade konton). Mer information om användar flaggor finns i [User Tags](user-tags.md).
   - **Domain**
   - **Mottagare** (Observera att den här filter bara egenskapen är endast tillgänglig i vyn detaljerad tabell)
 
@@ -445,8 +449,8 @@ Om du klickar på **Visa informations tabell** beror informationen som visas på
 
   - **Start datum** och **slutdatum**
   - **Proxyidentifiering**
-  - **Skyddas av** : **Defender för Office 365** eller **EOP**
-  - **Tagg** : filtrera resultat efter användare eller grupper som har den angivna användar tag gen installerad (inklusive prioriterade konton). Mer information om användar flaggor finns i [User Tags](user-tags.md).
+  - **Skyddas av**: **Defender för Office 365** eller **EOP**
+  - **Tagg**: filtrera resultat efter användare eller grupper som har den angivna användar tag gen installerad (inklusive prioriterade konton). Mer information om användar flaggor finns i [User Tags](user-tags.md).
   - **Domain**
   - **Mottagare** (Observera att den här filter bara egenskapen är endast tillgänglig i vyn detaljerad tabell)
 

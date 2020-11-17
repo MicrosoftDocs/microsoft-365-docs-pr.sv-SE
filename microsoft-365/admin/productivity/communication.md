@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Information om kommunikationen-människor upplever produktivitets poäng.
-ms.openlocfilehash: 6f79a636c24548586048adf0151ac5eefb98fffe
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: ba2e69659f49c90d3b65e56e54b3026c7c9ff36a
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804661"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123458"
 ---
 # <a name="communication--people-experiences"></a>Kommunikation – folk upplevelse
 
@@ -57,8 +57,8 @@ Microsoft 365 ger folk flexibiliteten att passa allas kommunikations format geno
 3. **Visualisering av aktuell status:**
     - Vågrätt fält där den blå delen representerar procent satsen i sidhuvudet
     - Markerar den (täljare/nämnare) som används för att beräkna procent satsen i huvudet:
-      - **Täljare** : antal personer som använder fler än ett kommunikations läge under de senaste 28 dagarna
-      - **Nämnare** : # av personer som marker ATS som aktiverade för fler än en kommunikations produkter de senaste 28 dagarna
+      - **Täljare**: antal personer som använder fler än ett kommunikations läge under de senaste 28 dagarna
+      - **Nämnare**: # av personer som marker ATS som aktiverade för fler än en kommunikations produkter de senaste 28 dagarna
     - Nyckeltal **svärdet för huvud** måttet visas också som en procents ATS
 
 1. **Visa kommunikations resurser:** Klicka här om du vill samla in hela support innehållet i form av videor/artiklar relaterade till kommunikation. Härifrån kan du gå till den anpassade spelnings listan för kommunikation och sedan för alla poäng kategorier för produktivitet.
@@ -67,7 +67,7 @@ Microsoft 365 ger folk flexibiliteten att passa allas kommunikations format geno
 
  I det här diagrammet får du en överblick över täljaren av viktiga mått i huvud inblicken – det vill säga antalet personer som använder fler än ett kommunikations läge under de senaste 180 dagarna. Här visas värdet för dagligt antal personer som använder flera olika former av kommunikation under de senaste 28 dagarna.
 
-:::image type="content" source="../../media/trend-communication.png" alt-text="Huvudsaklig inblick i kommunikations lägena.":::
+:::image type="content" source="../../media/trend-communication.png" alt-text="Diagram som visar antalet personer som använder mer än ett läge för kommunikation och tid.":::
 
 ### <a name="scoring-model"></a>Poäng modell
 
@@ -79,17 +79,17 @@ Vi tillhandahåller också information som hjälper dig att få insyn i hur pers
 
 ### <a name="breakdown-of-communication-by-modes"></a>Uppdelning av kommunikation via lägen
 
-:::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="Huvudsaklig inblick i kommunikations lägena.":::
+:::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="! [Nedbrytning av kommunikations lägen.]":::
 
 1. **Sidhuvud:** Framhäver målet att inblicken ger en detaljerad översikt över olika kommunikations lägen i kommunikationen
 2. **Brödtext:** Innehåller information om värdet för att använda olika lägen för att dela kunskaper
 3. **Visualisering:** Fördelningen representerar UES för varje steg. Den färgade delen och bråket i varje stapel representerar antalet personer som skickar e-post, meddelanden eller community-inlägg som en procent andel av de som är aktiverade för det läget:
       - **Personer som skickar e-post:** Den färgade delen och bråkdel representerar procent av användare som är aktiverade för Exchange och skickar e-postmeddelanden. Detta bråk är konstruerat från:
-          - **Täljare** : personer som skickar e-post under de senaste 28 dagarna
-          - **Nämnare** : personer aktiverade för Exchange de senaste 28 dagarna
+          - **Täljare**: personer som skickar e-post under de senaste 28 dagarna
+          - **Nämnare**: personer aktiverade för Exchange de senaste 28 dagarna
       - **Personer som skickar meddelanden i Microsoft Teams:** Den färgade delen och bråkdel representerar procent av användare som är aktiverade för Microsoft Teams som skickar meddelanden. Detta bråk är konstruerat från:
-          - **Täljare** : personer som skickar meddelanden i Microsoft Teams de senaste 28 dagarna
-          - **Nämnare** : personer aktiverade för Microsoft Teams de senaste 28 dagarna
+          - **Täljare**: personer som skickar meddelanden i Microsoft Teams de senaste 28 dagarna
+          - **Nämnare**: personer aktiverade för Microsoft Teams de senaste 28 dagarna
       - **Personer som publicerar i communities:** Den färgade delen och delen representerar procent av användare som är aktiverade för Yammer och som bokförs i communities. Detta bråk är konstruerat från:
           - **Täljare:** Personer som skickar inlägg i Yammer-communities de senaste 28 dagarna
           - **Nämnare:** Personer aktiverade för Yammer under de senaste 28 dagarna
@@ -97,15 +97,15 @@ Vi tillhandahåller också information som hjälper dig att få insyn i hur pers
 
 ### <a name="mentions-in-emails"></a>@mentions i e-postmeddelanden
 
-:::image type="content" source="../../media/emailmentions.png" alt-text="Huvudsaklig inblick i kommunikations lägena.":::
+:::image type="content" source="../../media/emailmentions.png" alt-text="! [E-postmeddelanden med omnämnanden.]":::
 
 1. **Sidhuvud:** Markerar ökningen av svars frekvensen för nya e-posttrådar startade de senaste 28 dagarna när de innehåller @mentions
 2. **Brödtext:** Innehåller information om värdet för att använda @mentions i e-postmeddelanden. Dessutom uttrycks de personer som använder @mentions som en procent andel av alla användare som har skickat ett e-postmeddelande under de senaste 28 dagarna.
 3. **Visualisering:** Delar upp svars frekvensen för nya e-posttrådar baserat på om de hade @mentions eller inte:
-      - **Svar på e-postmeddelanden med @mentions:** Den färgade delen och bråkdel representerar svars frekvensen för nya e-posttrådar som innehåller @mentions. Detta bråk är konstruerat från:
+      - **Svar på e-postmeddelanden med \@ omnämnanden:** den färgade delen och bråket representerar svars frekvensen för nya e-posttrådar som innehåller @mentions. Detta bråk är konstruerat från:
           - **Täljare:** Nya e-posttrådar som innehåller @mentions som har startats och som också fått ett svar under de senaste 28 dagarna.
           - **Nämnare:** Nya e-posttrådar som innehåller @mentions som har startats de senaste 28 dagarna
-      - **Svar på e-postmeddelanden utan @mentions:** Den färgade delen och bråkdel representerar svars frekvensen för nya e-posttrådar som innehåller @mentions. Detta bråk är konstruerat från:
+      - **Svar på e-postmeddelanden utan \@ omnämnande:** den färgade delen och bråkdel representerar svars frekvensen för nya e-posttrådar som innehåller @mentions. Detta bråk är konstruerat från:
           - **Täljare:** Nya e-posttrådar som inte innehåller @mentions, som har startats och också fått ett svar de senaste 28 dagarna.
           - **Nämnare:** Nya e-posttrådar som inte innehåller @mentions som har startats under de senaste 28 dagarna.
 4. **Visa relaterat innehåll:** Välj den här länken om du vill visa sorterade videoklipp och annat relaterat hjälp innehåll.
@@ -113,7 +113,7 @@ Vi tillhandahåller också information som hjälper dig att få insyn i hur pers
 
 ### <a name="breakdown-of-messages-by-type-in-microsoft-teams"></a>Uppdelning av meddelanden efter typ i Microsoft Teams
 
-:::image type="content" source="../../media/teamsmessages.png" alt-text="Huvudsaklig inblick i kommunikations lägena.":::
+:::image type="content" source="../../media/teamsmessages.png" alt-text="! [Teams meddelande typer.]":::
 
 1. **Sidhuvud:** Markerar de personer som skickade kanal meddelanden som en procent andel av de som skickade meddelanden (inklusive chatt och kanal meddelanden) under de senaste 28 dagarna
 2. **Brödtext:** Innehåller information om värdet för att använda kanal meddelanden i Microsoft Teams
@@ -128,7 +128,7 @@ Vi tillhandahåller också information som hjälper dig att få insyn i hur pers
 
 ### <a name="questions-and-answers-in-yammer"></a>Frågor och svar i Yammer
 
-:::image type="content" source="../../media/yammerqsandas.png" alt-text="Huvudsaklig inblick i kommunikations lägena.":::
+:::image type="content" source="../../media/yammerqsandas.png" alt-text="[Frågor och svar i Yammer]":::
 
 1. **Sidhuvud:** Markerar de inlägg som har marker ATS som frågor på Yammer och som har fått ett svar markerat som &quot; bästa svar &quot; som en procent andel av alla poster som har marker ATS som frågor på Yammer under de senaste 28 dagarna
 2. **Brödtext:** Innehåller information om värdet för att använda frågor och svar i Yammer för att dela information.
@@ -158,7 +158,7 @@ Det här avsnittet innehåller information om användar nivå för aktiviteter s
 - **Dagar som publicerats i Yammer:** Antalet dagar som användaren har publicerat på Yammer under de senaste 28 dagarna.
 - **Dagar som används @mention i e-post:** Antalet dagar som användaren skickade ett e-postmeddelande som innehåller en @mention de senaste 28 dagarna.
 
-Du kan också exportera rapport data till en Excel. csv-fil genom att välja länken exportera **Exportera** . Observera att du kan anpassa uppsättningen kolumner i vyn genom att markera kolumnerna som krävs efter att du klickat på **Välj kolumner** .
+Du kan också exportera rapport data till en Excel. csv-fil genom att välja länken exportera **Exportera** . Observera att du kan anpassa uppsättningen kolumner i vyn genom att markera kolumnerna som krävs efter att du klickat på **Välj kolumner**.
 
 ## <a name="related-content"></a>Relaterat innehåll
 

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Vad är metod tips för säkerhets inställningar för Exchange Online Protection (EOP) och Defender för Office 365? Vad är de senaste rekommendationerna för standard skydd? Vad ska användas om du vill veta mer? Vilka extrafunktioner får du om du även använder Defender för Office 365?
-ms.openlocfilehash: 032cd6a50f56fd3e1e47faebfaea5f6665553a4b
-ms.sourcegitcommit: 09518b7c9146cda7fd42839ee644ad418d48491a
+ms.openlocfilehash: bc91ba58c9dc14954f638853ad24fcf7a26684e3
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001531"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123483"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Rekommenderade inställningar för EOP och Microsoft Defender för Office 365-säkerhet
 
@@ -81,21 +81,21 @@ Vi rekommenderar att **du inaktiverar dessa ASF-inställningar för** både **st
 
 |Säkerhetsfunktionens namn|Kommentar|
 |---|---|
-|**Bild länkar till fjärranslutna webbplatser** ( _IncreaseScoreWithImageLinks_ )||
-|**Numerisk IP-adress i URL** ( _IncreaseScoreWithNumericIps_ )||
-|**Gruppomdirigera till annan port** ( _IncreaseScoreWithRedirectToOtherPort_ )||
-|**URL till. B2B argumentssida eller. info webbplatser** ( _IncreaseScoreWithBizOrInfoUrls_ )||
-|**Tomma meddelanden** ( _MarkAsSpamEmptyMessages_ )||
-|**Java script eller VBScript i HTML** ( _MarkAsSpamJavaScriptInHtml_ )||
-|**Ram-eller iframe-taggar i HTML** ( _MarkAsSpamFramesInHtml_ )||
-|**Objekt-Taggar i HTML** ( _MarkAsSpamObjectTagsInHtml_ )||
-|**Bädda in Taggar i HTML** ( _MarkAsSpamEmbedTagsInHtml_ )||
-|**Formulär koder i HTML** ( _MarkAsSpamFormTagsInHtml_ )||
-|**Webb program fel i HTML** ( _MarkAsSpamWebBugsInHtml_ )||
-|**Använda känslig ord lista** ( _MarkAsSpamSensitiveWordList_ )||
-|**SPF-post: hårda fel** ( _MarkAsSpamSpfRecordHardFail_ )||
-|**ID för villkorsstyrd avsändare: hårda fel** ( _MarkAsSpamFromAddressAuthFail_ )||
-|_AutoMarkAsSpamNdrBackscatter_ ( **NDR** )||
+|**Bild länkar till fjärranslutna webbplatser** (_IncreaseScoreWithImageLinks_)||
+|**Numerisk IP-adress i URL** (_IncreaseScoreWithNumericIps_)||
+|**Gruppomdirigera till annan port** (_IncreaseScoreWithRedirectToOtherPort_)||
+|**URL till. B2B argumentssida eller. info webbplatser** (_IncreaseScoreWithBizOrInfoUrls_)||
+|**Tomma meddelanden** (_MarkAsSpamEmptyMessages_)||
+|**Java script eller VBScript i HTML** (_MarkAsSpamJavaScriptInHtml_)||
+|**Ram-eller iframe-taggar i HTML** (_MarkAsSpamFramesInHtml_)||
+|**Objekt-Taggar i HTML** (_MarkAsSpamObjectTagsInHtml_)||
+|**Bädda in Taggar i HTML** (_MarkAsSpamEmbedTagsInHtml_)||
+|**Formulär koder i HTML** (_MarkAsSpamFormTagsInHtml_)||
+|**Webb program fel i HTML** (_MarkAsSpamWebBugsInHtml_)||
+|**Använda känslig ord lista** (_MarkAsSpamSensitiveWordList_)||
+|**SPF-post: hårda fel** (_MarkAsSpamSpfRecordHardFail_)||
+|**ID för villkorsstyrd avsändare: hårda fel** (_MarkAsSpamFromAddressAuthFail_)||
+|_AutoMarkAsSpamNdrBackscatter_( **NDR** )||
 |
 
 #### <a name="eop-outbound-spam-policy-settings"></a>EOP utgående princip inställningar för skräp post
@@ -148,7 +148,7 @@ Ytterligare säkerhets fördelarna ingår i en Microsoft Defender för Office 36
 
 > [!IMPORTANT]
 >
-> - Standard policyn för anti-phishing i Microsoft Defender för Office 365 ger [förfalsknings skydd](set-up-anti-phishing-policies.md#spoof-settings) för alla mottagare. De tillgängliga inställningarna för [skydd mot personifiering](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) för vissa avsändare eller avsändare är inte konfigurerade eller aktiverade i standard principen. För att aktivera skydd mot obehörig person konfigurerar du standard principen eller skapar ytterligare AntiPhishing-principer i Defender för Office 365.
+> - Standard policyn för anti-phishing i Microsoft Defender för Office 365 tillhandahåller [förfalsknings skydd](set-up-anti-phishing-policies.md#spoof-settings) och post lådans intelligens för alla mottagare. Men de andra tillgängliga funktionerna för [skydd mot personifiering](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) och [Avancerade inställningar](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) är inte konfigurerade eller aktiverade i standard principen. Om du vill aktivera alla skydds funktioner ändrar du standard policyn för anti-phishing eller skapar ytterligare skydd mot nätfiske.
 >
 > - Det finns inga standard principer för säkra anslutningar eller principer för säkra bifogade filer som automatiskt skyddar alla mottagare i organisationen. För att skydda måste du skapa minst en princip för säker länk och principer för säkra bifogade filer.
 >
@@ -287,7 +287,7 @@ I PowerShell använder du cmdleten [New-SafeAttachmentPolicy](https://docs.micro
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- Letar du efter rekommendationer för regler för **Exchange-flöden (kallas även transport regler** )? Se [metod tips för hur du konfigurerar regler för e-postflöden i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
+- Letar du efter rekommendationer för regler för **Exchange-flöden (kallas även transport regler**)? Se [metod tips för hur du konfigurerar regler för e-postflöden i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
 
 - Administratörer och användare kan skicka falska positiva (bra e-postmeddelanden) och falska negativ (dålig e-post) till Microsoft för analys. Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
