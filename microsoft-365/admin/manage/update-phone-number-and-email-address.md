@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Uppdatera administratörs telefonnumret och e-postadressen i administrations centret. Du behöver den här informationen om du vill återställa ditt eget administratörs lösen ord.
-ms.openlocfilehash: 7387ffe693abf0e52d647e35827a9f55bd1d70df
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: 06dc277fc408ab234dd51d9c8bec5f20226e3215
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456345"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126619"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Uppdatera administratörs telefonnumret och e-postadressen
 
@@ -39,15 +39,15 @@ I den här artikeln förklaras hur du, administratören, kan ändra företagets 
   
 Om du vill veta hur du ändrar företagets profilinformation, till exempel företagsnamn och -adress, företagstelefonnummer och teknisk kontaktinformation läser du [Ändra adress, e-postadress och annan information för organisationen](change-address-contact-and-more.md).
   
-## <a name="to-update-your-name-phone-number-and-email-address"></a>Så här uppdaterar du namn, telefonnummer och e-postadress
+## <a name="to-update-your-phone-number-and-email-address"></a>Uppdatera ditt telefonnummer och din e-postadress
 
-Använd sidan **Inställningar och sekretess** för att ändra namn, mobiltelefon nummer och alternativ e-postadress. Den alternativa e-postadressen används för viktiga meddelanden, som att återställa administratörs lösen ordet (inte administratörs lösen ordet). 
+Använd sidan **säkerhets information** för att ändra ditt mobiltelefon nummer och en alternativ e-postadress. Den alternativa e-postadressen används för viktiga meddelanden, som att återställa administratörs lösen ordet (inte administratörs lösen ordet). 
   
 1. Gå till administrations centret för Microsoft 365.
 
-2. I sidhuvudet väljer du profil ikonen \> **Mina konto** \> **Inställningar och integritet**.
+2. I sidhuvudet väljer du din profil ikonen \> **mitt konto** \> **säkerhets info**.
 
-3. På fliken **Sekretess** under **kontakt inställningar**väljer du **kontakt inställningar endast för administratörer**. Uppdatera din mobil, telefon och alternativa e-postadress. Kontrol lera att du använder något annat från din Microsoft-e-postadress för din alternativa e-postadress.
+3. På fliken **säkerhets information** väljer du **Lägg till** \> **Phone** \> **alternativ** telefon eller **e-post** för att lägga till information. Om du vill uppdatera dina mobil-, telefon-och alternativa e-postadresser väljer du **ändra**. Kontrol lera att du använder något annat än din Microsoft-e-postadress för din alternativa e-postadress.
 
     > [!IMPORTANT]
     > Den alternativa e-postadressen och mobiltelefon numret behövs för att återställa administratörs lösen ordet (inte administratörs lösen ordet).

@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: Använd administrations centret för Microsoft 365 eller Windows PowerShell för att ta bort kalendrar.
-ms.openlocfilehash: 3a1cb1c54f60247ab72056b3e39b56b0981228b7
-ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
+ms.openlocfilehash: 2fcb92cee18d709ef0e1fa3faa0246e622a9f9db
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422448"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126655"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Ta bort en boknings kalender i bokningar
 
@@ -46,7 +46,7 @@ I boknings kalendern är det viktigt att all relevant information om kalender oc
 
 ## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>Ta bort en boknings kalender med Exchange Online PowerShell
 
-Se [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) för förutsättningar och vägledning för anslutning till Exchange Online PowerShell.
+Se [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) för förutsättningar och vägledning för anslutning till Exchange Online PowerShell.
 
 För att utföra de här stegen måste du använda ett aktivt Microsoft PowerShell-Kommandotolken som du körde genom att välja alternativet Kör som administratör.
 

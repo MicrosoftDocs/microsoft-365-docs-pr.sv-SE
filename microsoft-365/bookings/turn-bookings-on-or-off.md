@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Lär dig hur du får till gång till Microsoft-bokningar i Microsoft 365.
-ms.openlocfilehash: 815aa3a859db15364aa18d3550001a28d085b711
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 7e4eaa1e474f3f49807b842097c855193f028af0
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47420198"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126606"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>Aktivera eller inaktivera Microsoft-bokningar
 
@@ -27,7 +27,7 @@ Du kan aktivera eller inaktivera bokningar för hela organisationen eller för s
 
 1. Logga in på administrations centret för Microsoft 365 som global administratör.
 
-2. Gå till **Inställningar**   \> **Settings** och välj **bokningar**i administrations centret.
+2. I administrations centret går du till  **Inställningar**   \> **organisations inställningar** och väljer **bokningar**.
 
 3. Markera kryss rutan för **Låt organisationen använda bokningar** för att aktivera eller inaktivera bokningar för din organisation.
 
@@ -38,7 +38,7 @@ Du kan aktivera eller inaktivera bokningar för hela organisationen eller för s
 
 ## <a name="turn-bookings-on-or-off-for-your-organization-using-powershell"></a>Aktivera eller inaktivera bokningar för organisationen med hjälp av PowerShell
 
-Om du vill aktivera eller inaktivera bokningar för din organisation med PowerShell-cmdleten [set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig) [ansluter du till Exchange Online PowerShell]() och kör följande kommando:
+Om du vill aktivera eller inaktivera bokningar för din organisation med PowerShell-cmdleten [set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig) [ansluter du till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) och kör följande kommando:
 
 ```PowerShell
    Set-OrganizationConfig -BookingsEnabled $false

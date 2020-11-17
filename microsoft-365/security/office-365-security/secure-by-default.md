@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om inställningen säker med standardinställningen i Exchange Online Protection (EOP)
-ms.openlocfilehash: 50d1c64e4d8343fdb9b25bfcbeee5d988ddc6b8a
-ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
+ms.openlocfilehash: d4345134e98ae204f73dfb51a0abf5136590a24c
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48945336"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126667"
 ---
 # <a name="secure-by-default-in-office-365"></a>Säkra som standard i Office 365
 
@@ -49,18 +49,15 @@ Eftersom Microsoft vill hålla våra kunder säkra som standard, används vissa 
 
 Mer information om dessa åsidosättningar finns i [skapa säkra avsändare](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365).
 
-Alternativet säker som standard är inte en inställning som kan aktive ras eller avaktiveras, men det är så att vårt filter fungerar för att behålla potentiellt farliga eller oönskade meddelanden från dina post lådor. Skadlig program vara och Phish med hög exakthet bör skickas till karantän. Endast administratörer kan hantera meddelanden som satts i karantän som skadlig eller högsäker nätfiske och de kan också rapportera falska positiva positiv till Microsoft därifrån. Mer information finns i [Hantera meddelanden och filer i karantän som administratör i EOP](manage-quarantined-messages-and-files.md)
+Alternativet säker som standard är inte en inställning som kan aktive ras eller avaktiveras, men det är så att vårt filter fungerar för att behålla potentiellt farliga eller oönskade meddelanden från dina post lådor. Malware och högkonfidens nätfiske bör skickas till karantänen. Endast administratörer kan hantera meddelanden som satts i karantän som skadlig eller högsäker nätfiske och de kan också rapportera falska positiva positiv till Microsoft därifrån. Mer information finns i [Hantera meddelanden och filer i karantän som administratör i EOP](manage-quarantined-messages-and-files.md)
 
 ## <a name="exceptions"></a>Undanta
 
-De enda åsidosättningar som kommer att kringgå alla filter är:
+Den enda åsidosättning som möjliggör högsäker nät fiske meddelande för att kringgå filtrering är regler för Exchange-flöden (kallas även transport regler). Om du vill använda regler för e-postflöde för att kringgå filtrering läser du [använda regler för e-postflöde för att ange SCL i meddelanden](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 
-- Regler för Exchange-Exchange (/mail). Använd regler för e-postflöde för att ange säkerhets nivån för skräp post (SCL) i meddelanden i EOP.
-- Tillåt/blockera i klient organisation: hantera URL-adresser och filer i listan Tillåt/blockera för klient organisation.
+Åsidosättningar ska endast användas för:
 
-Dessa typer av åsidosättningar är användbara för:
-
-- Phish simuleringar: simulerade attacker kan hjälpa dig att identifiera sårbara användare innan en verklig attack påverkar din organisation.
+- Nät fiske simulering: simulerade attacker kan hjälpa dig att identifiera sårbara användare innan en verklig attack påverkar din organisation.
 - Säkerhets-SecOps post lådor: dedikerade post lådor som används av säkerhets team för att få ofiltrerad meddelanden (både bra och dåligt). Teams kan sedan granska för att se om de innehåller skadligt innehåll.
 - Filter från tredje part: vissa leverantörer av tredje part rekommenderar att du inaktiverar EOP (SCL =-1) när filtret för tredje part hanterar e-postfiltreringen. Microsoft rekommenderar inte att du inaktiverar EOP eftersom EOP krävs för Defender för Office 365.
 - Falsk positiva uppgifter: du kanske vill tillåta vissa meddelanden som fortfarande analyseras av Microsoft [via administratörs inlämningar](admin-submission.md). Precis som med alla åsidosättningar rekommenderar vi att de är tillfälliga.

@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Lär dig hur du får en rapport om hur du kan få information om användarnas aktiviteter med en post låda.
-ms.openlocfilehash: 0b0c57bda813e1600866513df86b7c973dcdffdc
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 8d942f507c1e3102f909fb33eb16e00f7ebf05ea
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949138"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126573"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Microsoft 365-rapporter i administrations Center – använde brev Låde användning
 
@@ -37,8 +37,8 @@ ms.locfileid: "47949138"
 
 1. I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>.
 
-    
-2. I list rutan **Välj en rapport** väljer du **Exchange** \> **Använd användning**av Exchange-postlåda.
+2. Välj **Visa mer** under **aktiva användare – Microsoft 365-tjänster**. 
+3. I list rutan **aktiva användare** väljer du Använd användning av **Exchange** - \> **postlåda**.
   
 ## <a name="interpret-the-mailbox-usage-report"></a>Tolka rapporten om postlådeanvändning
 
@@ -57,4 +57,3 @@ Du kan få en inblick i organisationens **Postlådeanvändning** genom att titta
 |9.  <br/> |Du kan också exportera rapport data till en Excel. csv-fil genom att välja **Exportera** -länken.  <br/> |
 |||
    
-

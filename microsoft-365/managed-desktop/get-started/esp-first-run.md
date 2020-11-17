@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7337dd28f7940256d1753cd4c0b6309406fab2d1
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 5e2340c7c0bf00165bb43740d3d095b5b0402fc0
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305276"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126631"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Välkomstprogrammet med Autopilot och sidan Registreringsstatus
 
@@ -34,7 +34,7 @@ När dina enheter har registrerats med tjänsten kan du aktivera ESP för dina M
 Microsoft Managed Desktop använder de här inställningarna i den autopilot-profil som används för användarnas enheter:
 
 
-|Inställning  |Value  |
+|Inställning  |Värde  |
 |---------|---------|
 |Distributions läge |  Användare drivna       |
 |Anslut till Azure AD som     |  Azure AD-ansluten       |
@@ -56,7 +56,7 @@ Microsoft Managed Desktop använder de här inställningarna i den autopilot-pro
 Microsoft Managed Desktop använder de här inställningarna för registrerings status sidans funktion:
 
 
-|Inställning  |Value  |
+|Inställning  |Värde  |
 |---------|---------|
 |Visa konfigurations förlopp för appar och profiler     | Ja        |
 |Visa ett fel när installationen tar längre tid än angivet antal minuter     |  60       |
@@ -95,7 +95,7 @@ Om installations programmet som hanteras av Microsoft Managed Desktop inte exakt
 
 ### <a name="autopilot-settings-change"></a>Ändring av inställningar för autopilot
 
-Du kanske vill begära en annan mall för enhets namn. Du kan inte ändra distributions läge, ansluta till Azure som, sekretess inställningar eller användar konto typen.
+Du kanske vill begära en annan mall för enhets namn. Du kan inte ändra distributions läge, ansluta till Azure AD som, sekretess inställningar eller användar konto typen.
 
 ### <a name="enrollment-status-page-settings-change"></a>Inställningar för registrerings status sidan ändras
 
