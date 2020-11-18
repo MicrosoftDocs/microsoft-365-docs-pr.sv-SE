@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 5259c7b74446ad273ff9b1ae0baccd339e34baa3
-ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
+ms.openlocfilehash: 240ffd7ec8d46da33c43ec2f9cb50cf59c89f11b
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984956"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131303"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Konfigurera Microsoft 365 Defender-pelaren för utvärderings labbet eller pilot miljön
 
@@ -38,29 +38,11 @@ ms.locfileid: "48984956"
 
 Att skapa en test labb-eller pilot miljö för Microsoft 365 Defender och distribuera det är en process i tre steg:
 
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Förbereda utvärderings labb eller pilot miljö för Microsoft 365 Defender" />
-      <br/>Fas 1: förbereda </a><br>
-    </td>
-     <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft 365 Defender trial lab or pilot environment" title="Konfigurera utvärderings labb eller pilot miljö för Microsoft 365 Defender" />
-      <br/>Fas 2: konfiguration </a><br>
-    </td>
-    <td align="center" bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
-        <img src="../../media/config-onboard.png" alt="Configure & Onboard" title="Konfigurera varje Microsoft 365 Defender-pelare för utvärderings labb och drift slut punkter för Microsoft 365 Defender" />
-      <br/>Steg 3: Konfigurera & inbyggt </a><br>
-</td>
-  </tr>
-</table>
+|[![Fas 1: förbereda](../../media/phase-diagrams/prepare.png)](prepare-mtpeval.md)<br/>[Fas 1: förbereda](prepare-mtpeval.md) |[![Fas 2: Konfigurera](../../media/phase-diagrams/setup.png)](setup-mtpeval.md)<br/>[Fas 2: Konfigurera](setup-mtpeval.md) |![Fas 3: inbyggt](../../media/phase-diagrams/onboard.png)<br/>Fas 3: inbyggt | [![Tillbaka till piloten](../../media/phase-diagrams/backtopilot.png)](mtp-pilot.md)<br/>[Tillbaka till pilot Playbook](mtp-pilot.md) |
+|--|--|--|--|
+|| |*Nu är det här!* | |
 
 Du är för närvarande i konfigurations fasen.
-
 
 Förberedelsen är viktig för eventuell distribution. I den här artikeln vägleder vi dig på de Points du måste tänka på när du förbereder dig för att distribuera Microsoft Defender för slut punkten.
 
@@ -88,7 +70,7 @@ Det finns en PowerShell-modul som heter *Office 365 Advanced Threat Protection (
 
    ![Bild of_Office 365 säkerhets & policy för Threat Management-hantering](../../media/mtp-eval-32.png)
  
-2. Klicka på **nätfiske** , Välj **skapa** och fyll i princip namnet och beskrivningen. Klicka på **Nästa**.
+2. Klicka på **nätfiske**, Välj **skapa** och fyll i princip namnet och beskrivningen. Klicka på **Nästa**.
 
    ![Bild of_Office 365 säkerhet & policy för skydd mot Office-nätfiske där du kan namnge policyn](../../media/mtp-eval-33.png)
 
@@ -200,7 +182,7 @@ Det finns en PowerShell-modul som heter *Office 365 Advanced Threat Protection (
    > [!NOTE]
    > Om du inte ser den här uppmaningen kan det betyda att din Microsoft Defender för identitets data integrering redan har Aktiver ATS. Om du är osäker kontaktar du IT-administratören för att bekräfta. 
 
-3. Gå till **Inställningar** , aktivera växla mellan **Microsoft Defender för identitets integrering** och klicka sedan på **Spara**. 
+3. Gå till **Inställningar**, aktivera växla mellan **Microsoft Defender för identitets integrering** och klicka sedan på **Spara**. 
 
    ![Sidan image of_the inställningar där du bör aktivera växla mellan Microsoft Defender för identitets integrering och klicka på Spara.](../../media/mtp-eval-55.png)
    
@@ -308,5 +290,5 @@ Grattis! Du har just skapat en utvärderings version av Microsoft 365 Defender e
 Sedan kan du simulera en attack och se hur funktionerna för kors produkten identifieras, skapa aviseringar och automatiskt svara på en fillös attack på en slut punkt.
 
 ## <a name="next-step"></a>Nästa steg
-|![Fasen för attack simulering](../../media/mtp/run-sim.png) <br>[Fasen för attack simulering](mtp-pilot-simulate.md) | Kör angrepps simuleringen för din Microsoft 365 Defender pilot miljö.
+|[Fasen för attack simulering](mtp-pilot-simulate.md) | Kör angrepps simuleringen för din Microsoft 365 Defender pilot miljö.
 |:-------|:-----|

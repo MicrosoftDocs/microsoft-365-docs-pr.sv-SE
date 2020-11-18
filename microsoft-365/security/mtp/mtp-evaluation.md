@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: d6c96f7720344721bb2786dc130c490a5a8ea657
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fe0a06dd104f0f0532363ee046f4bad1c03c5400
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846490"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130886"
 ---
 # <a name="create-a-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Skapa en test labb-eller pilot miljö för Microsoft 365 Defender 
 
@@ -54,11 +54,13 @@ Den här guiden hjälper dig:
 
 Det finns tre faser i att skapa en test labbs miljö för Microsoft 365 Defender och distribuera den:
 
+![Distributions faser: förbereda, konfigurera, inbyggt](../../media/phase-diagrams/deployment-phases.png)
+
 |Fas | Beskrivning | 
 |:-------|:-----|
-| ![Fas 1: förbereda](../../media/prepare.png)<br>[Fas 1: förbereda](prepare-mtpeval.md)| Läs om vad du behöver tänka på när du distribuerar Microsoft 365 Defender i ett prov labb eller en pilot miljö: <br><br>-Intressenter och utloggning <br> -Miljö överväganden <br>-Åtkomst <br>-Konfigurera Azure Active Directory <br> -Konfigurations beställning
-|  ![Fas 2: konfiguration](../../media/setup.png) <br>[Fas 2: konfiguration](setup-mtpeval.md)|  Vidta de första stegen för att komma åt Microsoft 365 säkerhets Center för att konfigurera utvärderings labb för Microsoft 365 Defender eller pilot miljö. Du är guidad att:<br><br>-Registrera dig för Microsoft 365 E5-utvärderings version <br>  -Konfigurera domän<br>-Tilldela Microsoft 365 E5-licenser<br>-Slutför installations guiden i portalen|
-|  ![Steg 3: Konfigurera & inbyggt](../../media/config-onboard.png) <br>[Steg 3: Konfigurera & inbyggt](config-mtpeval.md) | Konfigurera varje slut punkter för Microsoft 365 Defender pelare och inbyggda. Du är guidad att:<br><br>-Konfigurera Microsoft Defender för Office 365<br>-Konfigurera säkerhet för Microsoft Cloud App<br>-Konfigurera Microsoft Defender för identitet<br>-Konfigurera Microsoft Defender för slut punkt
+|[Fas 1: förbereda](prepare-mtpeval.md)| Läs om vad du behöver tänka på när du distribuerar Microsoft 365 Defender i ett prov labb eller en pilot miljö: <br><br>-Intressenter och utloggning <br> -Miljö överväganden <br>-Åtkomst <br>-Konfigurera Azure Active Directory <br> -Konfigurations beställning
+|[Fas 2: konfiguration](setup-mtpeval.md)|  Vidta de första stegen för att komma åt Microsoft 365 säkerhets Center för att konfigurera utvärderings labb för Microsoft 365 Defender eller pilot miljö. Du är guidad att:<br><br>-Registrera dig för Microsoft 365 E5-utvärderings version <br>  -Konfigurera domän<br>-Tilldela Microsoft 365 E5-licenser<br>-Slutför installations guiden i portalen|
+|[Steg 3: Konfigurera & inbyggt](config-mtpeval.md) | Konfigurera varje slut punkter för Microsoft 365 Defender pelare och inbyggda. Du är guidad att:<br><br>-Konfigurera Microsoft Defender för Office 365<br>-Konfigurera säkerhet för Microsoft Cloud App<br>-Konfigurera Microsoft Defender för identitet<br>-Konfigurera Microsoft Defender för slut punkt
 
 
 ## <a name="in-scope"></a>I omfattning
@@ -72,9 +74,9 @@ Följande aktiviteter är omfång för den här guiden:
     -   Slutföra installations guiden i portalen
 -   Konfigurera alla Microsoft 365 Defender-pelare baserat på metod tips
     -   Microsoft Defender för Office 365
-    -   Microsoft Defender för identitet
+    -   Microsoft Defender for Identity
     -   Microsoft Cloud App Security
-    -   Microsoft Defender för slut punkt
+    -   Microsoft Defender för Endpoint
 
 ## <a name="out-of-scope"></a>Utanför omfattning
 
@@ -84,5 +86,5 @@ Den här distributions guiden följer inte med:
 -   Test av inträngda i produktions miljön
 
 ## <a name="next-step"></a>Nästa steg
-![Fas 1: förbereda](../../media/prepare.png) <br>[Fas 1: förbereda](prepare-mtpeval.md) 
+[Fas 1: förbereda](prepare-mtpeval.md) 
 <br> Förbereda utvärderings labb eller pilot miljö för Microsoft 365 Defender

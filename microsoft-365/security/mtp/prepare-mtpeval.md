@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: a255c74db030325ba22c2095fba732a93b8c269c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7149524de868a3670807556f5f423ba0ee4a772a
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844854"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131276"
 ---
 # <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Förbereda utvärderings labb eller pilot miljö för Microsoft 365 Defender
 
@@ -35,44 +35,16 @@ ms.locfileid: "48844854"
 
 Att skapa en test labb-eller pilot miljö för Microsoft 365 Defender och distribuera det är en process i tre steg:
 
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft 365 Defender trial lab environment" title="Förbereda utvärderings labb eller pilot miljö för Microsoft 365 Defender" />
-      <br/>Fas 1: förbereda </a><br>
-    </td>
-     <td align="center"  >
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval">
-        <img src="../../media/setup.png" alt="Set up your Microsoft 365 Defender trial lab environment" title="Konfigurera utvärderings labb eller pilot miljö för Microsoft 365 Defender" />
-      <br/>Fas 2: konfiguration </a><br>
-        </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval">
-        <img src="../../media/config-onboard.png" alt="Configure each Microsoft 365 Defender pillar" title="Konfigurera varje Microsoft 365 Defender-pelare och få slut punkter" />
-      <br/>Steg 3: Konfigurera & inbyggt</a><br>
-</td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
-
-</td>    
-  </tr>
-</table>
+|![Fas 1: förbereda](../../media/phase-diagrams/prepare.png)<br/>Fas 1: förbereda |[![Fas 2: Konfigurera](../../media/phase-diagrams/setup.png)](setup-mtpeval.md)<br/>[Fas 2: Konfigurera](setup-mtpeval.md) |[![Fas 3: inbyggt](../../media/phase-diagrams/onboard.png)](config-mtpeval.md)<br/>[Fas 3: inbyggt](config-mtpeval.md) | [![Tillbaka till piloten](../../media/phase-diagrams/backtopilot.png)](mtp-pilot.md)<br/>[Tillbaka till pilot Playbook](mtp-pilot.md) |
+|--|--|--|--|
+|*Nu är det här!* | || |
 
 Du befinner dig i förberedelse fasen.
 
 
 Förberedelsen är viktig för eventuell distribution. I det här avsnittet får du hjälp att ta reda på vad du behöver tänka på när du förbereder dig för att skapa ett utvärderings labb eller en pilot miljö för din Microsoft 365 Defender-distribution.
 
-## <a name="prerequisites"></a>Krav
+## <a name="prerequisites"></a>Förutsättningar
 Läs mer om licensierings-, maskinvaru-och program varu krav och andra konfigurations inställningar för att tillhandahålla och använda Microsoft 365 Defender. Se minimi kraven för [microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites), [Microsoft Defender för slut punkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements), [Microsoft Defender för Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), [Microsoft Defender för identitet](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites), [Microsoft Cloud App-säkerhet](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites).
 
 ## <a name="stakeholders-and-sign-off"></a>Intressenter och utloggning
@@ -132,10 +104,10 @@ Följande tabell visar vilken ordning Microsoft rekommenderar för att konfigure
 
 | Komponent                               | Beskrivning                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Konfigurations ordning |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-|Microsoft Defender för Office 365|Microsoft Defender för Office 365 skyddar din organisation mot hot via e-postmeddelanden, länkar (URL: er) och samarbets verktyg. <br> [Lära sig mer.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 9.1                   |
-|Microsoft Defender för identitet|Microsoft Defender för identitet använder Active Directory-signaler för att identifiera, upptäcka och undersöka avancerade hot, kompromissade identiteter och skadliga Insider-åtgärder på din organisation. <br> [Mer information](https://docs.microsoft.com/azure-advanced-threat-protection/).| två |
+|Microsoft Defender för Office 365|Microsoft Defender för Office 365 skyddar din organisation mot skadliga hot från e-postmeddelanden, länkar (URL: er) och samarbetsverktyg. <br> [Lära sig mer.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 9.1                   |
+|Microsoft Defender for Identity|Microsoft Defender för identitet använder Active Directory-signaler för att identifiera, upptäcka och undersöka avancerade hot, kompromissade identiteter och skadliga Insider-åtgärder på din organisation. <br> [Mer information](https://docs.microsoft.com/azure-advanced-threat-protection/).| två |
 |Microsoft Cloud App Security| Säkerhet för Microsoft Cloud App är en moln åtkomst säkerhets tjänst (CASB) som fungerar på flera moln. Det ger stor insyn, kontroll över data resor och avancerad analys för att identifiera och bekämpa Cyberthreats i alla dina moln tjänster. <br> [Mer information](https://docs.microsoft.com/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |amp;3D                   |
-|Microsoft Defender för slut punkt | Microsoft Defender för slut punkts slut punkter och svars funktioner ger avancerade angrepps regler som är nära real tids och actionable. Säkerhets analytiker kan prioritera aviseringar effektivt, få insyn i hela omfattningen av en överträdelse och vidta åtgärder för att åtgärda hot. <br> [Lära sig mer.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |9.4                   |                                                                                                                                                                                                                                    
+|Microsoft Defender för Endpoint | Microsoft Defender för slut punkts slut punkter och svars funktioner ger avancerade angrepps regler som är nära real tids och actionable. Säkerhets analytiker kan prioritera aviseringar effektivt, få insyn i hela omfattningen av en överträdelse och vidta åtgärder för att åtgärda hot. <br> [Lära sig mer.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |9.4                   |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>Nästa steg
 |![Fas 2: konfiguration](../../media/setup.png) <br>[Fas 2: konfiguration](setup-mtpeval.md) | Konfigurera utvärderings labb eller pilot miljö för Microsoft 365 Defender

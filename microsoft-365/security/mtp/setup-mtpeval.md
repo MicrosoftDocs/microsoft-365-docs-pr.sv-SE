@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 47f4ceeebd50784b1880a028ebe2698012c406da
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 503b7a6a6b3ad6394293e9f70dbdd336f6bee9dd
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844830"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131315"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-lab-environment"></a>Konfigurera utvärderings labb miljön för Microsoft 365 Defender 
 
@@ -36,30 +36,10 @@ ms.locfileid: "48844830"
 
 Att skapa en test labb-eller pilot miljö för Microsoft 365 Defender och distribuera det är en process i tre steg:
 
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Förbereda utvärderings labb eller pilot miljö för Microsoft 365 Defender" />
-      <br/>Fas 1: förbereda </a><br>
-    </td>
-     <td align="center"bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft 365 Defender trial lab or pilot environment" title="Konfigurera utvärderings labb eller pilot miljö för Microsoft 365 Defender" />
-      <br/>Fas 2: konfiguration </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
-        <img src="../../media/config-onboard.png" alt="
-Configure each Microsoft 365 Defender pillar for your Microsoft 365 Defender trial lab or pilot environment and onboard your endpoints" title="
-Konfigurera varje Microsoft 365 Defender-pelare för utvärderings labb eller pilot miljön Microsoft 365 Defender" />
-      <br/>Steg 3: Konfigurera & inbyggt </a><br>
-</td>
+|[![Fas 1: förbereda](../../media/phase-diagrams/prepare.png)](prepare-mtpeval.md)<br/>[Fas 1: förbereda](prepare-mtpeval.md) |![Fas 2: Konfigurera](../../media/phase-diagrams/setup.png)<br/>Fas 2: Konfigurera |[![Fas 3: inbyggt](../../media/phase-diagrams/onboard.png)](config-mtpeval.md)<br/>[Fas 3: inbyggt](config-mtpeval.md) | [![Tillbaka till piloten](../../media/phase-diagrams/backtopilot.png)](mtp-pilot.md)<br/>[Tillbaka till pilot Playbook](mtp-pilot.md) |
+|--|--|--|--|
+||*Nu är det här!*  | | |
 
-
-  </tr>
-</table>
 
 Du befinner dig i fasen inställning. Vidta de första stegen för att komma åt Microsoft 365 Security Center och konfigurera sedan utvärderings labbet eller pilot miljön.
 
@@ -163,7 +143,7 @@ I den här fasen vägleds du:
 
    ![Bild of_Microsoft 365 E5 gratis prov sida där du bör stänga knappen prova nu för att starta](../../media/mtp-eval-27.png)
  
-6. Gå till **administrations centret för Microsoft 365** -  >  **användare**  >  **Active users**. Välj ditt användar konto, Välj **Hantera produkt licenser** och byt sedan licensen från Office 365 E5 till **Microsoft 365 E5**. Klicka på **Spara**.
+6. Gå till **administrations centret för Microsoft 365**-  >  **användare**  >  **Active users**. Välj ditt användar konto, Välj **Hantera produkt licenser** och byt sedan licensen från Office 365 E5 till **Microsoft 365 E5**. Klicka på **Spara**.
 
    ![Bild of_Microsoft 365 administrations Center sida där du kan välja Microsoft 365 E5-licens](../../media/mtp-eval-28.png)
  
@@ -178,5 +158,5 @@ I den här fasen vägleds du:
 
 
 ## <a name="next-step"></a>Nästa steg
-|![Steg 3: Konfigurera & inbyggt](../../media/config-onboard.png) <br>[Steg 3: Konfigurera & inbyggt](config-mtpeval.md) | Konfigurera varje Microsoft 365 Defender-pelare för utvärderings labb eller pilot miljö för Microsoft 365 Defender och få slut punkter.
+|[Steg 3: Konfigurera & inbyggt](config-mtpeval.md) | Konfigurera varje Microsoft 365 Defender-pelare för utvärderings labb eller pilot miljö för Microsoft 365 Defender och få slut punkter.
 |:-------|:-----|

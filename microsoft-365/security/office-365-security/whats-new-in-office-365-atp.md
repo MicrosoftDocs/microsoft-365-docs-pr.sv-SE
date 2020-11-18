@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: e0801fb26b0bc7c4d37ab9455d9fcd2630f0fe51
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 5aa1d5fe14f6213931e089c2f97fcf06c96397b3
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842850"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131159"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nyheter i Microsoft Defender för Office 365
 
@@ -40,6 +40,10 @@ Den här artikeln innehåller de nya funktionerna i den senaste versionen av Mic
 
 > [!TIP]
 > Har du inte Microsoft Defender för Office 365 ännu? [Kontakta Sales för att starta en prov period](https://go.microsoft.com/fwlink/p/?LinkId=518644).
+
+## <a name="november-2020"></a>November 2020 
+
+- Uppdaterade export gränser i granska > åtgärds Center > reparation från e-post och åtgärds logg (Defender för Office 365 abonnemang 2)
 
 ## <a name="septemberoctober-2020"></a>September/oktober 2020 
 
@@ -75,7 +79,7 @@ Den här artikeln innehåller de nya funktionerna i den senaste versionen av Mic
 
 - [Exportera URL Klicka på data för offline-analys](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
 
-- [Använda kampanjmallar i Microsoft Defender för office 365 (för **hands version** )](campaigns.md) (microsoft Defender för Office 365 abonnemang 2)
+- [Använda kampanjmallar i Microsoft Defender för office 365 (för **hands version**)](campaigns.md) (microsoft Defender för Office 365 abonnemang 2)
 
 ## <a name="november-2019"></a>November 2019
 
@@ -101,7 +105,7 @@ Den här artikeln innehåller de nya funktionerna i den senaste versionen av Mic
 
 - [Visa data om nät fiske adresser och klicka på Verdict](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
 
-## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender för Office 365 abonnemang 1 och abonnemang 2
+## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2
 
 Visste du att Microsoft Defender för Office 365 finns i två planer? [Lär dig mer om vad varje abonnemang innehåller](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 

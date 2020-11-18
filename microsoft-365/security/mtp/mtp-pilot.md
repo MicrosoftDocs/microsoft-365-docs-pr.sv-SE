@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 350904022ec86acdbebf109dd5946598643aea83
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 50f334a055a5bd974f9ea1f39c8fa38d44be9c26
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843666"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131284"
 ---
 # <a name="run-your-pilot-microsoft-365-defender-project"></a>Kör ditt pilot Microsoft 365 Defender Project 
 
@@ -56,7 +56,7 @@ Med den integrerade Microsoft 365 Defender-lösningen kan säkerhets experter ko
 
 Följande exempel tids linje varierar beroende på om du har rätt resurser i din miljö. Vissa identifieringar och arbets flöden kan behöva mer inlärnings tid än de andra.
 
-![Exempel på tids linje i en Microsoft 365 Defender pilot](../../media/pilotimeline.png)
+![Exempel på tids linje i en Microsoft 365 Defender pilot](../../media/phase-diagrams/pilot-phases.png)
 
 >[!IMPORTANT]
 >För optimalt resultat följer du pilot instruktionerna så nära som möjligt.
@@ -68,11 +68,11 @@ Det finns fyra faser i en Microsoft 365 Defender pilot:
 
 |Fas | Beskrivning | 
 |:-------|:-----|
-| ![Planering](../../media/mtp/plan.png)<br>[Planering](mtp-pilot-plan.md)| Läs mer om vad du behöver tänka på innan du kör Microsoft 365 Defender pilot-projektet: <br><br>-Omfattning <br> -Användnings fall <br>-Krav <br>-Test plan <br> -Villkor <br> -Styrkort 
-| ![Förberedelse](../../media/mtp/prep.png) <br>[Förberedelse](mtp-evaluation.md)|  Få åtkomst till Microsoft 365 säkerhets Center för att konfigurera pilot miljön för Microsoft 365 Defender. Du är guidad att:<br><br>-Identifiera intressenter och inhämta en uppsägning för din pilot <br> -Miljö överväganden <br>-Åtkomst <br>-Konfigurera Azure Active Directory <br> -Konfigurations beställning <br> -Registrera dig för Microsoft 365 E5-utvärderings version <br> -Konfigurera domän <br>-Tilldela Microsoft 365 E5-licenser <br> -Slutför installations guiden i portalen|
-| ![Simulering av attacker](../../media/mtp/run-sim.png) <br>[Simulering av attacker](mtp-pilot-simulate.md) | För att simulera en attack ska du vägleda dig till:<br><br>-Kontrol lera test miljö kraven <br>-Kör simuleringen <br>-Undersök en olycka <br>-Lös problemet 
-| ![Stänga och sammanfatta](../../media/mtp/close.png) <br>[Stänga och sammanfatta](mtp-pilot-close.md) | När du har nått slutet av processen är du guidad att:<br><br>-Gå igenom dina slutliga utdata<br>-Presentera dina synpunkter för dina intressenter <br>-Ge feedback <br>-Ta nästa steg 
+| [Planering](mtp-pilot-plan.md)<br> ~ 1 dag| Läs mer om vad du behöver tänka på innan du kör Microsoft 365 Defender pilot-projektet: <br><br>-Omfattning <br> -Användnings fall <br>-Krav <br>-Test plan <br> -Villkor <br> -Styrkort 
+| [Förberedelse](mtp-evaluation.md) <br>~ 2 dagar|  Få åtkomst till Microsoft 365 säkerhets Center för att konfigurera pilot miljön för Microsoft 365 Defender. Du är guidad att:<br><br>-Identifiera intressenter och inhämta en uppsägning för din pilot <br> -Miljö överväganden <br>-Åtkomst <br>-Konfigurera Azure Active Directory <br> -Konfigurations beställning <br> -Registrera dig för Microsoft 365 E5-utvärderings version <br> -Konfigurera domän <br>-Tilldela Microsoft 365 E5-licenser <br> -Slutför installations guiden i portalen|
+| [Simulering av attacker](mtp-pilot-simulate.md) <br>~ 2 dagar| För att simulera en attack ska du vägleda dig till:<br><br>-Kontrol lera test miljö kraven <br>-Kör simuleringen <br>-Undersök en olycka <br>-Lös problemet 
+| [Stänga och sammanfatta](mtp-pilot-close.md) <br>~ 1 dag| När du har nått slutet av processen är du guidad att:<br><br>-Gå igenom dina slutliga utdata<br>-Presentera dina synpunkter för dina intressenter <br>-Ge feedback <br>-Ta nästa steg 
 
 ## <a name="next-step"></a>Nästa steg
-|![Planerings fas](../../media/mtp/plan.png) <br>[Planerings fas](mtp-pilot-plan.md) | Planera ditt Microsoft 365 Defender Pilot projekt 
+|[Planerings fas](mtp-pilot-plan.md) | Planera ditt Microsoft 365 Defender Pilot projekt 
 |:-------|:-----|

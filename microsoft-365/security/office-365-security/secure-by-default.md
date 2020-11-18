@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om inställningen säker med standardinställningen i Exchange Online Protection (EOP)
-ms.openlocfilehash: d4345134e98ae204f73dfb51a0abf5136590a24c
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: 9f676dcd89f0322792bd40e06879b9758082d94e
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126667"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131103"
 ---
 # <a name="secure-by-default-in-office-365"></a>Säkra som standard i Office 365
 
@@ -41,7 +41,7 @@ Microsoft 365-organisationer med post lådor i Exchange Online skyddas av Exchan
 1. E-post med misstänkt skadlig program vara placeras automatiskt i karantän och mottagarna får ett meddelande. Se [Konfigurera principer för skydd mot skadlig program vara i EOP](configure-anti-malware-policies.md).
 1. Nät fiske meddelande som identifieras som "hög exakthet" hanteras i enlighet med åtgärd för att förhindra skräp post. Se [Konfigurera principer för skräp post i EOP](configure-your-spam-filter-policies.md).
 
-Eftersom Microsoft vill hålla våra kunder säkra som standard, används vissa klient organisationer inte för skadlig program vara eller Phish. Dessa åsidosättningar inkluderar:
+Eftersom Microsoft vill hålla våra kunder säkra som standard, tillämpas vissa klient organisationer inte på skadlig program vara eller nätfiske med hög exakthet. Dessa åsidosättningar inkluderar:
 
 - Listan Tillåtna avsändare eller tillåtna domän listor (principer för skräp post)
 - Säkra avsändare i Outlook

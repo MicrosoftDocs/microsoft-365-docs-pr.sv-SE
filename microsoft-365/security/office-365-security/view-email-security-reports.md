@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du hittar och använder e-postsäkerhets rapporter för organisationen. Säkerhets rapporter för e-post finns i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75370cbbdfbc59bf8e9334d1e11d8b92c5c97e61
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 1b2fd7a18589932d56ea39722b48462d2a6eac2f
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087757"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131207"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visa rapporter om e-postsäkerhet i Säkerhets- och efterlevnadscenter
 
@@ -334,7 +334,7 @@ Följande vyer är tillgängliga:
   - **EOP URL rykte**: skadlig URL-rykte.
   - **Allmänt Phish-filter**: nät fiske signaler baserade på analytiker regler.
   - **Gemensamma**
-  - **PHISH ZAP**<sup>2</sup>: Tom timme för automatisk rensning av nät fiske meddelanden.
+  - **PHISH ZAP**<sup>2</sup>: nollställt Hour Time rensning av nät fiske meddelanden.
   - **URL-sprängare**<sup>1</sup>
   - **User personifieringstoken**<sup>1</sup>: personifiering av användare som definierats av administratören eller lärts via post låda.
 

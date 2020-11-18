@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: ec2bfe52308231577e4f2749e1f4cdf24a36f604
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 4420342f964564305bb113c45ee0e3107f8a822e
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846026"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130987"
 ---
 # <a name="planning-your-pilot-microsoft-365-defender-project"></a>Planera piloten Microsoft 365 Defender Project 
 
@@ -34,45 +34,10 @@ ms.locfileid: "48846026"
 
 **Gäller för:**
 - Microsoft 365 Defender
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
-        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft 365 Defender project" title="Planera piloten Microsoft 365 Defender Project" />
-      <br/>Planera</a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
-        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Förbereda utvärderings labb eller pilot miljö för Microsoft 365 Defender" />
-      <br/>Förbereda</a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
-        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft 365 Defender attack simulations" title="Köra din Microsoft 365 Defender-attack simulering" />
-     <br/>Simulera attack</a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
-        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft 365 Defender pilot" title="Stänga och sammanfatta din Microsoft 365 Defender pilot" />
-     <br/>Stäng och sammanfatta</a><br>
-    </td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
 
-</td>    
-    <td valign="top" style="width:25%; border:0;">
-
-</td>
-  </tr>
-</table>
+|![Planering](../../media/phase-diagrams/1-planning.png)<br/>Planering|[![Förbereda](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[Förberedelse](prepare-mtpeval.md) | [![Simulera attack](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)<br/>[Simulera attack](mtp-pilot-simulate.md) | [![Stäng och sammanfatta](../../media/phase-diagrams/4-summary.png)](mtp-pilot-close.md)<br/>[Stäng och sammanfatta](mtp-pilot-close.md)|
+|--|--|--|--|
+|*Nu är det här!*| | | |
 
 Du befinner dig i planerings fasen.
 

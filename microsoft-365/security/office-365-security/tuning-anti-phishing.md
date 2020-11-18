@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: Administratörer kan lära sig att identifiera varför och hur ett nät fiske meddelande gick igenom i Microsoft 365 och vad man bör göra för att förhindra fler nät fiske meddelanden i framtiden.
-ms.openlocfilehash: e933769b6bce9eb10765fb2b58025445432bed18
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c495be3f5a90ca96f9a7a05513df9438f88910ad
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845474"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131327"
 ---
 # <a name="tune-anti-phishing-protection"></a>Finjustera skydd mot nätfiske
 
@@ -39,7 +39,7 @@ Om ditt abonnemang innehåller Microsoft Defender för Office 365 kan du använd
 
 - [Säkra bifogade filer i Microsoft Defender för Office 365](set-up-atp-safe-attachments-policies.md)
 
-- [Anti-nätfiske-principer i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md). Observera att du kan tillfälligt öka de **avancerade nät fiske trösklarna** i principen från **standard** till **aggressivt** , **mer aggressivt** eller **de flesta aggressivt**.
+- [Anti-nätfiske-principer i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md). Observera att du kan tillfälligt öka de **avancerade nät fiske trösklarna** i principen från **standard** till **aggressivt**, **mer aggressivt** eller **de flesta aggressivt**.
 
 Kontrol lera att de här Defender för Office 365-funktionerna är aktiverade.
 
@@ -51,21 +51,21 @@ Att rapportera nät fiske meddelanden är användbart när du vill justera filtr
 
 Du kan granska meddelande huvudena för nät fiske meddelandet för att se om det finns något du kan göra för att förhindra att fler nät fiske meddelanden kommer fram. Med andra ord kan du med hjälp av meddelande rubrikerna se vilka inställningar i organisationen som är ansvariga för att tillåta nät fiske meddelanden.
 
-Om du vill kan du kontrol lera om fältet **X-antispam-rapport** huvud i meddelande rubrikerna inte har hoppat över skräp post eller PHISH i SFV-värdet. Meddelanden som hoppar över filtrering kommer att ha en inmatning `SCL:-1` , vilket innebär att en av dina inställningar tillåter det här meddelandet genom att åsidosätta skräp post eller Phish verdicts som bestämts av tjänsten. Mer information om hur du hämtar meddelande rubriker och en fullständig lista över alla tillgängliga skräp post-och Phish meddelande rubriker finns i [meddelande rubriker för skräp post i Microsoft 365](anti-spam-message-headers.md).
+Om du vill kontrol **lera att det finns ett meddelande** om att du har hoppat över filtreringen av skräp post eller nätfiske i SFV-värdet för skräp post filtrering i Verdict (spam). Meddelanden som hoppar över filtrering kommer att få en inmatning `SCL:-1` , vilket innebär att en av dina inställningar tillåter detta meddelande genom att åsidosätta skräp post eller nätfiske-verdicts som avgörs av tjänsten. Mer information om hur du hämtar meddelande rubriker och en fullständig lista över alla tillgängliga skydd mot skräp post och nätfiske finns i [meddelande rubriker för skräp post i Microsoft 365](anti-spam-message-headers.md).
 
 ## <a name="best-practices-to-stay-protected"></a>Metod tips för att skydda dig
 
 - Per månad kan du använda [säkert Poäng](../mtp/microsoft-secure-score.md) för att utvärdera organisationens säkerhets inställningar.
 
-- För meddelanden som slutar med misstag eller för meddelanden som tillåts genom rekommenderar vi att du söker efter dessa meddelanden i [Threat Explorer och identifieringar i real tid](threat-explorer.md). Du kan söka efter avsändare, mottagare eller meddelande-ID. När du har hittat meddelandet går du till uppgifter genom att klicka på ämnet. Om du har ett meddelande i karantän kan du titta på "identifierings teknik", så att du kan använda lämplig metod för att åsidosätta. För ett tillåtet meddelande, se efter vilken princip som får meddelandet. 
+- För meddelanden som slutar med misstag eller för meddelanden som tillåts genom rekommenderar vi att du söker efter dessa meddelanden i [Threat Explorer och identifieringar i real tid](threat-explorer.md). Du kan söka efter avsändare, mottagare eller meddelande-ID. När du har hittat meddelandet går du till uppgifter genom att klicka på ämnet. Om du har ett meddelande i karantän kan du titta på "identifierings teknik", så att du kan använda lämplig metod för att åsidosätta. För ett tillåtet meddelande, se efter vilken princip som får meddelandet.
 
-- Falsk e-post är märkt som Phish i Defender för Office 365. Ibland är falska förfalskningar ofarliga och ibland vill användarna inte att den ska placeras i karantän. Om du vill minimera effekten för användarna kan du regelbundet granska [förfalsknings intelligens-rapporten](learn-about-spoof-intelligence.md). När du har granskat och gjort nödvändiga åsidosättningar kan du vara säker på att [Konfigurera förfalsknings intelligens](set-up-anti-phishing-policies.md#spoof-settings) mot **Quarantine** -misstänkta meddelanden i stället för att skicka dem till användarens mapp för skräp post.
+- Falsk e-post kallas för nätfiske i Defender för Office 365. Ibland är falska förfalskningar ofarliga och ibland vill användarna inte att den ska placeras i karantän. Om du vill minimera effekten för användarna kan du regelbundet granska [förfalsknings intelligens-rapporten](learn-about-spoof-intelligence.md). När du har granskat och gjort nödvändiga åsidosättningar kan du vara säker på att [Konfigurera förfalsknings intelligens](set-up-anti-phishing-policies.md#spoof-settings) mot **Quarantine** -misstänkta meddelanden i stället för att skicka dem till användarens mapp för skräp post.
 
 - Du kan upprepa ovanstående steg för personifiering (domän eller användare). Personifieringsnivå hittas under **Threat Management** \> **instrument panels** \> **insikter** för hot Management.
 
 - Gå regelbundet igenom [status rapporten för hotet skydd](view-reports-for-atp.md#threat-protection-status-report).
 
-- Vissa kunder oavsiktligt tillåter nät fiske meddelanden genom att lägga till sina egna domäner i listan Tillåt avsändare eller Tillåt domän i principer för skräp post. Även om den här konfigurationen tillåter vissa legitima meddelanden via, tillåter den också skadliga meddelanden som normalt skulle blockeras av skräp post och/eller Phish filtren. I stället för att tillåta domänen bör du korrigera det underliggande problemet.
+- Vissa kunder oavsiktligt tillåter nät fiske meddelanden genom att lägga till sina egna domäner i listan Tillåt avsändare eller Tillåt domän i principer för skräp post. Även om den här konfigurationen tillåter vissa legitima meddelanden via, tillåter den också skadliga meddelanden som normalt skulle blockeras av skräp post och/eller nät fiske filter. I stället för att tillåta domänen bör du korrigera det underliggande problemet.
 
   Det bästa sättet att hantera legitima meddelanden som blockeras av Microsoft 365 (falska positiva positivt) som involverar avsändare i din domän är att fullständigt och helt konfigurera SPF-, DKIM-och DMARC-posterna i DNS för _alla_ dina e-postdomäner:
 
@@ -74,7 +74,7 @@ Om du vill kan du kontrol lera om fältet **X-antispam-rapport** huvud i meddela
   - Använd hårda fel ( \- alla) för att se till att obehöriga avsändare nekas via e-postsystem som är konfigurerade för detta. Du kan använda [falsk intelligens](learn-about-spoof-intelligence.md) för att identifiera avsändare som använder din domän så att du kan ta med auktoriserade tredjeparts avsändare i SPF-posten.
 
   Anvisningar för konfiguration finns i:
-  
+
   - [Konfigurera SPF för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   - [Använda DKIM för att validera utgående e-post som skickas från din anpassade domän](use-dkim-to-validate-outbound-email.md)
