@@ -23,28 +23,28 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Lär dig vad som händer med dina data när prenumerationen på Microsoft 365 för företag upphör, är inaktive rad eller om du avbryter.
-ms.openlocfilehash: b09f56fefb7791af012c9dab2ba4e5684b9bf89f
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: c191b2fa795614a272b28cedae8d23693933dc95
+ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906829"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49135985"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Vad händer med mina data och åtkomst när min Microsoft 365 för företag-prenumeration går ut?
 
-Om ditt abonnemang går ut – antingen för att det upphör att gälla, eller om du väljer Avbryt, kommer din åtkomst till Microsoft 365-tjänster, program och kunddata att gå igenom flera tillstånd innan abonnemanget är helt inaktiverat eller *avetablerats*. Om du känner till den här statusen är du bättre utrustad för att återställa ditt abonnemang till ett aktivt tillstånd innan det är för sent, eller – om du lämnar Microsoft 365 – säkerhetskopiera dina data innan de tas bort.
+Om ditt abonnemang slutar – antingen för att det upphör att gälla, eller om du väljer att avbryta – får du till gång till Microsoft 365-tjänster,-program och kund data från flera stater innan abonnemanget är helt inaktiverat eller *Borttaget*. Om du känner till den här statusen är du bättre utrustad för att återställa ditt abonnemang till ett aktivt tillstånd innan det är för sent, eller – om du lämnar Microsoft 365 – säkerhetskopiera dina data innan de tas bort.
 
 Läs igenom den viktiga informationen innan du kontaktar [Microsoft 365 support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>Vad händer med data när ett abonnemang går ut?
 
-- Om ditt abonnemang går ut går det igenom följande steg: har upphört att gälla/avaktiverats/avetablerats. Det upphörde stadiet startar omedelbart efter att prenumerationen har nått sitt slutdatum.
+- Om ditt abonnemang går ut går det igenom följande steg: har upphört att gälla/avaktiverats/tagits bort. Det upphörde stadiet startar omedelbart efter att prenumerationen har nått sitt slutdatum.
 - Om du stänger av den återkommande faktureringen för ett års abonnemang går det igenom samma steg som ett förfallet abonnemang. Den första fasen börjar är årsdagen för det årliga abonnemanget, som inte börjar på det datum då du stängde av abonnemanget.
 - Om du avbryter ditt månads abonnemang inaktive ras det omedelbart (vid avbrotts datumet). Det innebär att användarna förlorar åtkomsten till Microsoft 365-till gångar omedelbart och bara administratörer har till gång till informationen för de kommande 90 dagarna.
 
 I följande tabell förklaras vad du kan förvänta dig när en betald Microsoft 365 för företag-prenumeration upphör.
 
-| **Aktiva**                                                             | **Upphört <br/> (30 dagar \* )**                                                | **Inaktive rad <br/> (90 dagar \* )**                                               | **Återkallad**                                                                         |
+| Aktiva | Ut <br/>(30 dagar \* ) | Inaktiverad <br/>(90 dagar \* ) | Deleted |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *Data tillgängliga för alla*                                               | *Data tillgängliga för alla*                                                     | *Endast tillgängliga för administratörer*                                             | **Data som tagits bort <br/> Azure Active Directory tas bort, om de inte används av andra tjänster** |
 | Användare har normal åtkomst till Microsoft 365, filer och program   | Användare har normal åtkomst till Microsoft 365, filer och program              | Användarna kan inte komma åt Microsoft 365, filer eller program                        | Användarna kan inte komma åt Microsoft 365, filer eller program                                     |
@@ -192,16 +192,16 @@ I det här läget minskar din åtkomst markant. Användarna kan inte logga in, e
 
 Som global administratör eller fakturering kan du [återaktivera abonnemanget](reactivate-your-subscription.md) och fortsätta använda Microsoft 365 med alla dina kund uppgifter intakt. Om du väljer att inte återaktivera kan du [säkerhetskopiera dina data](back-up-data-before-switching-plans.md).
 
-### <a name="state-deprovisioned"></a>Tillstånd: avetablerad
+### <a name="state-deleted"></a>Tillstånd: borttaget
   
- **Vad du kan förvänta dig:** Om du inte återaktiverar prenumerationen när den är i Grace eller inaktive ring har abonnemanget avetablerats.
+ **Vad du kan förvänta dig:** Om du inte återaktiverar prenumerationen när den är i Grace eller inaktive rad är abonnemanget borttaget.
   
 Administratörer och användare har inte längre till gång till de tjänster eller Office-program som medföljde prenumerationen. Alla kunddata – från användar data till dokument och e-post – tas bort permanent och kan inte återställas.
   
 Du kan inte återaktivera prenumerationen just nu. Som global administratör eller fakturering kan du ändå komma åt administrations centret för att hantera andra abonnemang eller för att köpa nya abonnemang för att uppfylla företagets behov.
   
 > [!NOTE]
-> Om du lägger till ett nytt abonnemang av samma typ som har avetablerats återställs inte data som är kopplade till den avetablerade prenumerationen.
+> Om du lägger till ett nytt abonnemang av samma typ som har tagits bort återställs inte data som har associerats med den borttagna prenumerationen.
 
 
 > [!NOTE]
