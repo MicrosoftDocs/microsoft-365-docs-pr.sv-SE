@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Befintliga Office 365-kunder måste skicka in en begäran innan tids gränsen för sitt land för att deras Microsoft 365 Services-data flyttas till deras nya geo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b6ad699830389ef405b005bf8675a2bd0fb4f20b
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 216cd3b0cb55cbbe6be89945b98a01ae469ec4e2
+ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877261"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349238"
 ---
 # <a name="how-to-request-your-data-move"></a>Hur du begär din dataflytt
 
@@ -45,6 +45,7 @@ Berättigade Microsoft 365-kunder kan begära migrering för företagets viktiga
 |Schweiz, Liechtenstein  <br/> |Den 10 december 2019  <br/> |30 juni 2020  <br/> |
 |Norge  <br/> |15 april 2020  <br/> |Den 31 oktober 2020  <br/> |
 |Tyskland  <br/> |Den 1 november 2020  <br/> |Den 30 april 2021  <br/> |
+|Brasilien  <br/> |Den 18 november 2020  <br/> |Den 31 maj 2021  <br/> |
 
 ## <a name="how-to-request-a-move"></a>Så här gör du för att begära en flytt
 

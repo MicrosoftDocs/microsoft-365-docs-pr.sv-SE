@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Lär dig mer om nya Office 365 Data Center-geos och hur du använder alternativet data de för att begära att dina grundläggande data flyttas till en ny geo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 17b8d5c828a8c528aba180c260510345e77226d5
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 6c5e63a973ca6fdf6aaaaca884df306ff790c325
+ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333718"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349250"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Flytta grundläggande data till nya Microsoft 365 Data Center-geos
 
@@ -48,6 +48,7 @@ Befintliga kunder som har sina grundläggande kund uppgifter lagrade i ett befin
 |**Schweiz, Liechtenstein**| EU: s EU | Schweiz | December 2019 |
 |**Tyskland**| EU: s EU | Tyskland | December 2019 |
 |**Norge**| EU: s EU | Norge | April 2020 |
+|**Brasilien**| USA | Brasilien | November 2020 |
 
 Från och med den 1 oktober är 2020 kunder med en Office 365 Education-prenumeration som ingår i klient organisationen inte kvalificerat för migrering.
 

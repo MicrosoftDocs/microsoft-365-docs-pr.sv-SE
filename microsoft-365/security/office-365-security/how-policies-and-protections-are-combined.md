@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om program ordningen för skydd i Exchange Online Protection (EOP) och hur prioritet svärdet i skydds principer bestämmer vilken princip som tillämpas.
-ms.openlocfilehash: 9bff44a0c9964c60f5b8b5c0afdfe6d29ee6da93
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c6a89e35f1cce0532f206b5ac5dbfd4a1aedda9d
+ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843618"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349274"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Prioritetsordning för e-postskydd
 
@@ -34,7 +34,7 @@ I allmänhet identifieras en policy som tillämpas på ett meddelande i huvudet 
 
 Det finns två huvud faktorer som avgör vilken princip som tillämpas på ett meddelande:
 
-- **Prioriteten för e-postskyddet** : den här ordningen är inte konfigurerbar och beskrivs i följande tabell:
+- **Prioriteten för e-postskyddet**: den här ordningen är inte konfigurerbar och beskrivs i följande tabell:
 
   ****
 
@@ -44,15 +44,15 @@ Det finns två huvud faktorer som avgör vilken princip som tillämpas på ett m
   |två|Fiske|KAT: PHSH|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
   |amp;3D|Skräppost med hög konfidens|KAT: HSPM|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
   |9.4|Förfalskning|KAT: FALSKA IDENTITETER|[Konfigurera förfalsknings information i EOP](learn-about-spoof-intelligence.md)|
-  |T5<sup>\*</sup>|Användarens personifiering (skyddade domäner)|UIMP|[Konfigurera AntiPhishing-principer i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md)|
-  |18.6<sup>\*</sup>|Domän personifiering (skyddade användare)|DIMP|[Konfigurera AntiPhishing-principer i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md)|
+  |T5<sup>\*</sup>|Användarens personifiering (skyddade användare)|UIMP|[Konfigurera AntiPhishing-principer i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md)|
+  |18.6<sup>\*</sup>|Domänens identitet (skyddade domäner)|DIMP|[Konfigurera AntiPhishing-principer i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md)|
   |borttagning|Skräppost|KAT: SPM|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
   |8.2|Massutskick|KAT: BULK|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
   |
 
   <sup>\*</sup> De här funktionerna är bara tillgängliga i policy mot nätfiske i Microsoft Defender för Office 365.
 
-- **Prioriteten för principen** : för varje skydds typ (anti-spam, mot skadlig kod, anti-nätfiske etc.) finns det en standard princip som gäller för alla, men du kan skapa anpassade principer som gäller för specifika användare. Varje anpassad princip har ett prioritets värde som anger i vilken ordning principerna tillämpas. Standard principen tillämpas alltid sist.
+- **Prioriteten för principen**: för varje skydds typ (anti-spam, mot skadlig kod, anti-nätfiske etc.) finns det en standard princip som gäller för alla, men du kan skapa anpassade principer som gäller för specifika användare. Varje anpassad princip har ett prioritets värde som anger i vilken ordning principerna tillämpas. Standard principen tillämpas alltid sist.
 
   Om en användare har definierats i flera principer av samma typ tillämpas bara principen med den högsta prioriteten. Eventuella kvarvarande principer av den typen utvärderas inte för användaren (inklusive standard principen).
 

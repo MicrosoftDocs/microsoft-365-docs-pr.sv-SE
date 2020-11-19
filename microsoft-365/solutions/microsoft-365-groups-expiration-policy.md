@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Lär dig mer om principer för förfallo datum för Microsoft 365 Groups.
-ms.openlocfilehash: 8fc9c48d5a86c68eabd4139ad0a2d0dc1e83da0f
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 4b283bcc9f4e54462a71b9aee70d6312b9f127d6
+ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377229"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49350718"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Utgångs princip för Microsoft 365-gruppen
 
@@ -34,7 +34,7 @@ När en grupp upphör är "mjuk borttagen", vilket innebär att den fortfarande 
 Administratörer kan ange en förfallo period och alla inaktiva grupper som når slutet av perioden och som inte förnyas, tas bort. (Detta inkluderar arkiverade team.) Utgångs perioden börjar när gruppen skapas, eller vid det datum då den senast förnyades. Grupp ägare kommer automatiskt att skicka ett e-postmeddelande innan utgångs datumet gör det möjligt för dem att förnya gruppen för ett annat utgångs intervall. Teams användarna kan se beständiga meddelanden i Teams.
 
 Grupper som aktivt används förnyas automatiskt. En av följande åtgärder kommer automatiskt att förnya en grupp:
-- SharePoint – Visa, redigera, ladda ned, flytta, dela eller ladda upp filer.
+- SharePoint – Visa, redigera, ladda ned, flytta, dela eller ladda upp filer. (Visning av en SharePoint-sida räknas inte som en åtgärd för automatisk förnyelse.)
 - Outlook – gå med i gruppen, läsa eller skriva grupp meddelande från gruppen och gilla ett meddelande (Outlook på webben).
 - Teams som besöker en Teams-kanal.
 
@@ -55,7 +55,7 @@ Det är viktigt att veta att förfallo dagen är inaktive rad som standard. Admi
 
 ## <a name="how-to-set-the-expiration-policy"></a>Ange förfallo princip
 
-Som vi noterade ovan är förfallo datumet inaktiverat som standard. En administratör måste aktivera policyn för förfallo datum och ställa in egenskaperna för att den ska gälla. För att aktivera att det går att gå till **Azure Active Directory**-  >  **grupper**  >  **Expiration**. Här kan du ange standard livstid för gruppen och ange hur långt i förväg du vill att aviseringarna för första och sista giltighets tiden ska gå till gruppens ägare.
+Som vi noterade ovan är förfallo datumet inaktiverat som standard. En administratör måste aktivera policyn för förfallo datum och ställa in egenskaperna för att den ska gälla. Gå till gruppen **Azure Active Directory**-grupper för att aktivera den  >  **Groups**  >  **Expiration**. Här kan du ange standard livstid för gruppen och ange hur långt i förväg du vill att aviseringarna för första och sista giltighets tiden ska gå till gruppens ägare.
 
 Gruppens livs längd anges i dagar och kan anges till 180, 365 eller till ett anpassat värde som du anger. Värdet måste vara minst 30 dagar.
 

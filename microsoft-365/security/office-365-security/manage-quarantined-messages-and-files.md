@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig att visa och hantera meddelanden i karantän för alla användare i Exchange Online Protection (EOP). Administratörer i organisationer med Microsoft Defender för Office 365 kan också hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams.
-ms.openlocfilehash: 9d58f8c08d994e5e9736c8223239b54e52c4edab
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: 94dfc8503d61c16aadc8e9d0ccfd295e2684fbba
+ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951053"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349286"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Hantera meddelanden och filer i karantän som administratör i EOP
 
@@ -48,9 +48,11 @@ Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav 
 
 - Meddelanden i karantän bevaras under en standard tids period innan de tas bort automatiskt:
 
-  - Meddelanden i karantän med principer för skräp post (spam, nätfiske och Mass utskick): 30 dagar. Det här är standardvärdet och Max värdet. Information om hur du konfigurerar det här värdet finns i [Konfigurera principer för skräp post](configure-your-spam-filter-policies.md).
+  - 30 dagar för meddelanden i karantän med principer för skräp post (spam, nätfiske och Mass utskick). Det här är standardvärdet och Max värdet. Om du vill konfigurera (sänka) det här värdet läser du [Konfigurera principer för skräp post](configure-your-spam-filter-policies.md).
 
-  - Meddelanden som innehåller skadlig kod: 15 dagar.
+  - 15 dagar för meddelanden som innehåller skadlig program vara.
+
+  - 15 dagar för filer i karantän med ATP för SharePoint, OneDrive och Microsoft Teams i Defender för Office 365.
 
   När ett meddelande utgår från karantän kan du inte återställa det.
 
@@ -81,84 +83,84 @@ Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav 
 
 4. Om du vill filtrera resultaten klickar du på **Filter**. Följande filter är tillgängliga:
 
-   - **Upphör att gälla** : Filtrera meddelanden efter när de kommer att upphöra från karantänen:
+   - **Upphör att gälla**: Filtrera meddelanden efter när de kommer att upphöra från karantänen:
      - **I dag**
      - **Kommande 2 dagarna**
      - **Kommande 7 dagarna**
-     - **Anpassad** : Ange ett **Startdatum** och **Slutdatum**.
+     - **Anpassad**: Ange ett **Startdatum** och **Slutdatum**.
 
-   - **Togs emot** : Ange ett **Startdatum** och **Slutdatum**.
+   - **Togs emot**: Ange ett **Startdatum** och **Slutdatum**.
 
-   - **Orsak till karantän** :
-     - **Princip** : meddelandet överensstämde med villkoren i en regel för e-postflöde (kallas även för transport regel).
+   - **Orsak till karantän**:
+     - **Princip**: meddelandet överensstämde med villkoren i en regel för e-postflöde (kallas även för transport regel).
      - **Bulk** (Massutskick)
-     - **Phish** : skräp post filtret Verdict var ett **nät fiske** meddelande eller skydd mot nätfiske ( [Spoof inställningar](set-up-anti-phishing-policies.md#spoof-settings) eller [personifieringstoken](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
+     - **Phish**: skräp post filtret Verdict var ett **nät fiske** meddelande eller skydd mot nätfiske ([Spoof inställningar](set-up-anti-phishing-policies.md#spoof-settings) eller [personifieringstoken](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
      - **Program**
      - **Skräppost**
      - **Hög exakthet Phish**
 
-   - **Principtyp** : filtrera meddelanden efter principtyp:
+   - **Principtyp**: filtrera meddelanden efter principtyp:
      - **Policy för mot skadlig program vara**
      - **Principer för säkra bifogade filer**
      - **Princip för skydd mot nätfiske**
      - **Principer för värd innehålls filter** (policy för skräp post)
      - **Transport regel**
 
-   - **E-postmottagare** : alla användare eller bara meddelanden som skickas till dig. Slutanvändare kan bara hantera skickade meddelanden till dem.
+   - **E-postmottagare**: alla användare eller bara meddelanden som skickas till dig. Slutanvändare kan bara hantera skickade meddelanden till dem.
 
    Tryck på **Rensa** om du vill ta bort filtret. Klicka på **Filter** igen om du vill dölja den utfällbara filterrutan.
 
 5. Använd **Sortera resultat efter** (knappen **Meddelande-ID** som standard) och ett motsvarande värde för att hitta specifika meddelanden. Jokertecken stöds inte. Du kan söka efter följande värden:
 
-   - **Meddelande-ID** : Meddelandets globalt unika identifierare.
+   - **Meddelande-ID**: Meddelandets globalt unika identifierare.
 
      Du använde exempelvis [meddelande spårning](message-trace-scc.md) för att leta efter ett meddelande som skickades till en användare i din organisation, och du fastställer att meddelandet satts i stället för att levereras. Se till att du inkluderar fullständigt meddelande-ID, som kan innehålla vinkelparenteser ( \<\> ). Till exempel: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>` .
 
-   - **Avsändarens e-postadress** : En enskild avsändarens e-postadress.
+   - **Avsändarens e-postadress**: En enskild avsändarens e-postadress.
 
-   - **Principnamn** : använd meddelandets hela principnamn. Sökningen är inte skiftlägeskänslig.
+   - **Principnamn**: använd meddelandets hela principnamn. Sökningen är inte skiftlägeskänslig.
 
-   - **Mottagarens e-postadress** : En enskild mottagares e-postadress.
+   - **Mottagarens e-postadress**: En enskild mottagares e-postadress.
 
-   - **Ämne** : Använd meddelandets hela ämne. Sökningen är inte skiftlägeskänslig.
+   - **Ämne**: Använd meddelandets hela ämne. Sökningen är inte skiftlägeskänslig.
   
-   - **Princip namn** : namnet på den policy som var ansvarig för quarantining meddelandet.
+   - **Princip namn**: namnet på den policy som var ansvarig för quarantining meddelandet.
 
-   När du har angett sökvillkor klickar du på ![knappen Uppdatera](../../media/scc-quarantine-refresh.png) **Uppdatera** , så filtreras resultatet.
+   När du har angett sökvillkor klickar du på ![knappen Uppdatera](../../media/scc-quarantine-refresh.png) **Uppdatera**, så filtreras resultatet.
 
 När du har hittat ett specifikt meddelande i karantän väljer du meddelandet för att visa information om det och vidta åtgärder för det (till exempel visa, släpp, ladda ned eller ta bort meddelandet).
 
 #### <a name="view-quarantined-message-details"></a>Visa information om meddelanden i karantän
 
-När du väljer ett e-postmeddelande i listan visas följande meddelandeinformation i den utfällbara rutan **Information** :
+När du väljer ett e-postmeddelande i listan visas följande meddelandeinformation i den utfällbara rutan **Information**:
 
-- **Meddelande-ID** : Meddelandets globalt unika identifierare.
+- **Meddelande-ID**: Meddelandets globalt unika identifierare.
 
 - **Avsändarens adress**
 
-- **Mottaget** : Datumet/tiden då meddelandet togs emot.
+- **Mottaget**: Datumet/tiden då meddelandet togs emot.
 
 - **Ämne**
 
-- **Karantän orsak** : visar om ett meddelande har identifierats som **skräp post** , **bulk** , **Phish** , matchade en e-postregel ( **Transport regel** ) eller som innehåller **skadlig program vara**.
+- **Karantän orsak**: visar om ett meddelande har identifierats som **skräp post**, **bulk**, **Phish**, matchade en e-postregel (**Transport regel**) eller som innehåller **skadlig program vara**.
 
 - **Antal mottagare**
 
-- **Mottagare** : Om meddelandet innehåller flera mottagare måste du klicka på **Förhandsgranska meddelandet** eller **Visa meddelandehuvud** för att se den fullständiga listan över mottagare.
+- **Mottagare**: Om meddelandet innehåller flera mottagare måste du klicka på **Förhandsgranska meddelandet** eller **Visa meddelandehuvud** för att se den fullständiga listan över mottagare.
 
-- **Upphör** : Datumet/tiden då meddelandet tas bort automatiskt och permanent från karantänen.
+- **Upphör**: Datumet/tiden då meddelandet tas bort automatiskt och permanent från karantänen.
 
-- **Släppt till** : Alla e-postadresser som meddelandet har släppts till.
+- **Släppt till**: Alla e-postadresser som meddelandet har släppts till.
 
-- **Släppt till** : Alla e-postadresser som meddelandet har släppts till.
+- **Släppt till**: Alla e-postadresser som meddelandet har släppts till.
 
 ### <a name="take-action-on-quarantined-email"></a>Vidta åtgärder för e-post i karantän
 
 När du har valt ett meddelande har du flera alternativ för vad du kan göra med meddelandena i fönstret utfällda **Detaljer** :
 
-- **Släpp meddelande** : i fönstret som visas väljer du följande alternativ:
+- **Släpp meddelande**: i fönstret som visas väljer du följande alternativ:
 
-  - **Rapportera meddelanden till Microsoft för analys** : det här är markerat som standard och rapporterar det felaktiga meddelandet till Microsoft som ett falskt positivt tal. Om meddelandet sattes i karantän som skräp post, bulk, nätfiske eller innehåller skadlig program vara, rapporteras meddelandet också till Microsoft spam-gruppen. Beroende på vilken analys de har, kan de globala skräp post filter reglerna justeras så att de tillåter meddelandet.
+  - **Rapportera meddelanden till Microsoft för analys**: det här är markerat som standard och rapporterar det felaktiga meddelandet till Microsoft som ett falskt positivt tal. Om meddelandet sattes i karantän som skräp post, bulk, nätfiske eller innehåller skadlig program vara, rapporteras meddelandet också till Microsoft spam-gruppen. Beroende på vilken analys de har, kan de globala skräp post filter reglerna justeras så att de tillåter meddelandet.
 
   - Välj något av följande alternativ:
     - **Släpp meddelanden till alla mottagare**
@@ -172,26 +174,26 @@ När du har valt ett meddelande har du flera alternativ för vad du kan göra me
   - Du kan inte frigöra ett meddelande till samma mottagare flera gånger.
   - Endast mottagare som inte har fått meddelandet visas i listan över potentiella mottagare.
 
-- **Visa meddelandehuvud** : Välj den här länken om du vill visa meddelandehuvudets text. Om du vill analysera fälten och värden för huvuden mer ingående kopierar du meddelandehuvudets text till Urklipp och väljer sedan **Microsofts analysverktyg för meddelanderubrik** för att gå till analysverktyget för fjärranslutning (högerklicka och välj **Öppna i ny flik** om du inte vill lämna Microsoft 365 för att slutföra den här uppgiften). Klistra in meddelandehuvudet på sidan i analysverktyget för meddelanderubrik. Välj **Analyze headers** (Analysera rubriker):
+- **Visa meddelandehuvud**: Välj den här länken om du vill visa meddelandehuvudets text. Om du vill analysera fälten och värden för huvuden mer ingående kopierar du meddelandehuvudets text till Urklipp och väljer sedan **Microsofts analysverktyg för meddelanderubrik** för att gå till analysverktyget för fjärranslutning (högerklicka och välj **Öppna i ny flik** om du inte vill lämna Microsoft 365 för att slutföra den här uppgiften). Klistra in meddelandehuvudet på sidan i analysverktyget för meddelanderubrik. Välj **Analyze headers** (Analysera rubriker):
 
-- **Förhandsgranska meddelandet** : Välj något av följande alternativ i den utfällbara rutan som visas:
+- **Förhandsgranska meddelandet**: Välj något av följande alternativ i den utfällbara rutan som visas:
 
-  - **Källvy** : Visar HTML-versionen av meddelandetexten med alla länkar inaktiverade.
-  - **Textvy** : Visar meddelandetexten som oformaterad text.
+  - **Källvy**: Visar HTML-versionen av meddelandetexten med alla länkar inaktiverade.
+  - **Textvy**: Visar meddelandetexten som oformaterad text.
 
-- **Ta bort från karantän** : när du klickar på **Ja** i den varning som visas, tas meddelandet omedelbart bort utan att skickas till de ursprungliga mottagarna.
+- **Ta bort från karantän**: när du klickar på **Ja** i den varning som visas, tas meddelandet omedelbart bort utan att skickas till de ursprungliga mottagarna.
 
-- **Ladda ned meddelande** : Välj **Jag är medveten om riskerna om jag laddar ned meddelandet** i den utfällbara rutan som visas om du vill spara en lokal kopia av meddelandet i .eml-format.
+- **Ladda ned meddelande**: Välj **Jag är medveten om riskerna om jag laddar ned meddelandet** i den utfällbara rutan som visas om du vill spara en lokal kopia av meddelandet i .eml-format.
 
-- **Skicka meddelande** : i fönstret som visas väljer du följande alternativ:
+- **Skicka meddelande**: i fönstret som visas väljer du följande alternativ:
 
-  - **Objekt typ** : **e-post** (standard), **URL** eller **bifogad fil**.
+  - **Objekt typ**: **e-post** (standard), **URL** eller **bifogad fil**.
 
-  - **Sändnings format** : **ID för nätverks meddelanden** (standard, med motsvarande värde i fältet för **nätverks meddelande-ID** ) eller **filen** (Bläddra till en lokal. eml-eller. msg-fil). Observera att om du väljer **Arkiv** och sedan **nätverks meddelande-ID** är värdet från från början borta.
+  - **Sändnings format**: **ID för nätverks meddelanden** (standard, med motsvarande värde i fältet för **nätverks meddelande-ID** ) eller **filen** (Bläddra till en lokal. eml-eller. msg-fil). Observera att om du väljer **Arkiv** och sedan **nätverks meddelande-ID** är värdet från från början borta.
 
-  - **Mottagare** : Ange en ursprunglig mottagare för meddelandet eller klicka på **Markera alla** för att identifiera alla mottagare. Du kan också klicka på **Markera alla** och sedan ta bort enskilda mottagare.
+  - **Mottagare**: Ange en ursprunglig mottagare för meddelandet eller klicka på **Markera alla** för att identifiera alla mottagare. Du kan också klicka på **Markera alla** och sedan ta bort enskilda mottagare.
 
-  - **Orsak för inlämning** : **ska inte vara blockerat** (standard) eller **ha blockerats**.
+  - **Orsak för inlämning**: **ska inte vara blockerat** (standard) eller **ha blockerats**.
 
   När du är klar klickar du på **Skicka**.
 
@@ -201,12 +203,12 @@ Om du inte släpper eller tar bort meddelandet tas det bort när standardtiden f
 
 När du markerar flera meddelanden i karantän i listan (upp till 100) visas den utfällbara rutan **Massåtgärder** där du kan vidta följande åtgärder:
 
-- **Släpp meddelanden** : Du har samma alternativ som när du släpper ett enstaka meddelande, förutom att du inte kan välja **Släpp meddelanden till vissa mottagare**. Du kan endast välja **Släpp meddelanden till alla mottagare** eller **Släpp meddelanden till andra personer**.
+- **Släpp meddelanden**: Du har samma alternativ som när du släpper ett enstaka meddelande, förutom att du inte kan välja **Släpp meddelanden till vissa mottagare**. Du kan endast välja **Släpp meddelanden till alla mottagare** eller **Släpp meddelanden till andra personer**.
 
   > [!NOTE]
   > Tänk på följande: john@gmail.com skickar ett meddelande till faith@contoso.com och john@subsidiary.contoso.com. Gmail bifurcates det här meddelandet i två kopior som båda dirigeras till karantän som nätfiske i Microsoft. En administratör frigör båda dessa meddelanden till admin@contoso.com. Det första meddelandet som når administratörs post lådan levereras. Det andra publicerade meddelandet identifieras som dubbel leverans och hoppas över. Meddelandet identifieras som dubbletter om de har samma meddelande-ID och tid.
 
-- **Ta bort meddelanden** : När du har klickat på **Ja** i varningen som visas tas meddelandet genast bort utan att skickas till de ursprungliga mottagarna.
+- **Ta bort meddelanden**: När du har klickat på **Ja** i varningen som visas tas meddelandet genast bort utan att skickas till de ursprungliga mottagarna.
 
 Klicka på **Stäng** när du är klar.
 
@@ -237,13 +239,13 @@ I organisationer med Defender för Office 365 kan administratörer hantera filer
 
 4. Om du vill filtrera resultaten klickar du på **Filter**. Följande filter är tillgängliga:
 
-   - **Upphör att gälla** : Filtrera meddelanden efter när de kommer att upphöra från karantänen:
+   - **Upphör att gälla**: Filtrera meddelanden efter när de kommer att upphöra från karantänen:
      - **I dag**
      - **Kommande 2 dagarna**
      - **Kommande 7 dagarna**
      - Ett anpassat datum-och tidsintervall.
    - **Mottaget**
-   - **Karantän orsak** : det enda tillgängliga värdet är **skadlig program vara**.
+   - **Karantän orsak**: det enda tillgängliga värdet är **skadlig program vara**.
    - **Principtyp**
 
 När du har hittat en viss fil i karantän väljer du filen för att visa information om den och för att utföra en åtgärd på den (till exempel Visa, släppa, ladda ned eller ta bort meddelandet).
@@ -255,22 +257,22 @@ När du väljer en fil i listan visas följande fil information i fönstret **de
 - **Fil namn**
 - **URL: URL** som definierar filens plats (till exempel i SharePoint Online).
 - **Skadligt innehåll upptäcktes på** Det datum/den tid då filen sattes i karantän.
-- **Upphör** : det datum då filen ska tas bort från karantänen.
-- **Identifieras av** : Defender för Office 365 eller Microsoft-programmet mot skadlig program vara.
+- **Upphör**: det datum då filen ska tas bort från karantänen.
+- **Identifieras av**: Defender för Office 365 eller Microsoft-programmet mot skadlig program vara.
 - **Släppt?**
 - **Namn på skadlig kod**
-- **Dokument-ID** : ett unikt ID för dokumentet.
-- **Fil storlek** : i KILOBYTE (KB).
+- **Dokument-ID**: ett unikt ID för dokumentet.
+- **Fil storlek**: i KILOBYTE (KB).
 - **Organisation** Organisationens unika ID.
 - **Senast ändrad**
-- **Ändrad av** : den användare som senast ändrade filen.
-- **Secure Hash Algorithm 256-bit (SHA-256) värde** : du kan använda det här hashvärdet för att identifiera filen i andra ryktes butiker eller på andra platser i miljön.
+- **Ändrad av**: den användare som senast ändrade filen.
+- **Secure Hash Algorithm 256-bit (SHA-256) värde**: du kan använda det här hashvärdet för att identifiera filen i andra ryktes butiker eller på andra platser i miljön.
 
 ### <a name="take-action-on-quarantined-files"></a>Vidta en åtgärd för filer i karantän
 
 När du väljer en fil i listan kan du utföra följande åtgärder på filen i fönstret **detaljerad information** :
 
-- **Släpp filer** : Välj (standard) eller avmarkera **rapportera filer till Microsoft för analys** och klicka sedan på **släpp filer**.
+- **Släpp filer**: Välj (standard) eller avmarkera **rapportera filer till Microsoft för analys** och klicka sedan på **släpp filer**.
 - **Ladda ner fil**
 - **Ta bort fil från karantän**
 
@@ -281,7 +283,7 @@ Om du inte släpper eller tar bort filerna tas de bort när standard perioden f�
 När du markerar flera filer i karantän i listan (upp till 100) visas utfällda **Mass åtgärder** -fönstret där du kan vidta följande åtgärder:
 
 - **Släpp filer**
-- **Ta bort filer** : när du har klickat på **Ja** i varningen som visas tas filerna bort omedelbart.
+- **Ta bort filer**: när du har klickat på **Ja** i varningen som visas tas filerna bort omedelbart.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>Använda Exchange Online PowerShell eller fristående EOP PowerShell för att visa och hantera meddelanden och filer i karantänen
 

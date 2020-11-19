@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Data transporter är bakgrunds åtgärder som inträffar när Microsoft flyttar tjänster och tillhör ande data för din klient organisation till ett nytt Data Center geo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 63536a46e28f264f49e8071710221b0847f62414
-ms.sourcegitcommit: 86e878849a8bdd456cee6a3f49939d26223fb626
+ms.openlocfilehash: ca3159aeb951fb0cb3bf3aba953979dabc6ba024
+ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48997797"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349262"
 ---
 # <a name="during-and-after-your-data-move"></a>Under och efter dataflytt
 
@@ -46,6 +46,7 @@ Se meddelande Center för Microsoft 365 för att bekräfta när det rör sig om 
 |Schweiz, Liechtenstein  <br/> |Den 1 juli 2022  <br/> |
 |Norge  <br/> |Den 1 november 2022  <br/> |
 |Tyskland  <br/> |Den 1 maj 2023  <br/> |
+|Brasilien  <br/> |Den 1 juni 2023  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 

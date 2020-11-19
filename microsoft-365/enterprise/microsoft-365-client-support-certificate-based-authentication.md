@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: I den här artikeln hittar du information om support för Microsoft 365-klient för certifikatbaserad identifiering.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 57ced47c268f4d0515acb26aa8f705fa6e9ae0f9
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: fde124fcefdf3b949ec35a3b2ed99b15ee36f85e
+ms.sourcegitcommit: 2beefb695cead03cc21d6066f589572d3ae029aa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999390"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349686"
 ---
 # <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Microsoft 365-klientprogram: certifikatbaserad identifiering
 
@@ -29,8 +29,8 @@ ms.locfileid: "48999390"
 
 Modern autentisering är en parasoll för en kombination av autentiserings-och auktoriseringsregler. De omfattar:
 
-- **Autentiseringsmetoder** : multifaktorautentisering; Klient certifikat-baserad verifikation.
-- **Auktoriseringsregler** : Microsofts implementering av Open Authorization (OAuth).
+- **Autentiseringsmetoder**: multifaktorautentisering; Klient certifikat-baserad verifikation.
+- **Auktoriseringsregler**: Microsofts implementering av Open Authorization (OAuth).
 
 Modern lösenordsautentisering aktive ras via användning av ett autentiseringspaket, till exempel Active Directory-autentiseringspaket (ADAL) eller Microsoft-autentiseringspaket (MSAL). Modern autentisering är vilka klienter som använder för att autentisera och auktorisera åtkomst till Microsoft 365-resurser. Modern autentisering utnyttjar OAuth och ger en säker mekanism för klienter att få åtkomst till Microsoft 365-tjänster utan att behöva åtkomst till användarautentiseringsuppgifter. Vid inloggning verifierar användaren direkt med Azure Active Directory och får ett par för Access/Refresh-token i Return. Åtkomsttoken beviljar klienten åtkomst till lämpliga resurser i Microsoft 365-klient organisationen. En uppdateringstoken används för att få ett nytt Access-eller Refresh-token när den aktuella åtkomsttoken upphör.
 
@@ -87,7 +87,7 @@ De senaste versionerna av följande klienter och plattformar har stöd för cert
 | Yammer | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Disponera | Saknas | Disponera |
 
 >[!NOTE]
-><sup>1</sup> Edge för iOS och Android har stöd för certifikatbaserad äkthet under konto att lägga till flöden. Edge för iOS och Android stöder inte certifikatbaserad autentisering när autentisering utförs på webbplatser, som vanligt vis är intranäts webbplatser. <br><br>  I det här scenariot navigerar en användare till en webbplats (vanligt vis i intranätet) där användaren behöver verifiera via ett certifikat. Detta inbegriper inte modern lösenordsautentisering alls och påverkar inte ett Microsoft-autentiseringspaket. Detta beror på en begränsning med iOS: iOS hindrar tredjepartsprogram från att komma åt systemets nyckel Ring där certifikaten lagras (endast Apple-appar och en Safari- [webvisare](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) kan komma åt systemets nyckel Ring). <br><br> När Edge är beroende av webkit kan inte Edge komma åt systemets nyckel Ring och Visa användaren med ett certifikat val. Det här är en avsiktlig konstruktion på grund av appletens arkitektur.
+><sup>1</sup> Edge för iOS och Android har stöd för certifikatbaserad äkthet under konto att lägga till flöden. Edge för iOS och Android stöder inte certifikatbaserad autentisering när autentisering utförs på webbplatser, som vanligt vis är intranäts webbplatser. <br><br>  I det här scenariot navigerar en användare till en webbplats (vanligt vis i intranätet) där användaren behöver verifiera via ett certifikat. Detta inbegriper inte modern lösenordsautentisering alls och påverkar inte ett Microsoft-autentiseringspaket. Detta beror på en begränsning med iOS: iOS hindrar tredjepartsprogram från att komma åt systemets nyckel Ring där certifikaten lagras (endast Apple-appar och en Safari- [webvisare](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) kan komma åt systemets nyckel Ring). <br><br> När kanterna är beroende av [webkit](https://developer.apple.com/documentation/webkit) -ramverket för att återge webbplatser kan Edge inte komma åt systemets nyckel Ring och Visa användaren med ett certifikat val. Det här är en avsiktlig konstruktion på grund av appletens arkitektur.
 
 ## <a name="supported-powershell-modules"></a>PowerShell-moduler som stöds
 
