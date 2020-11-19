@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Lär dig hur du hanterar e-postanvändare i Exchange Online Protection (EOP), inklusive att använda Directory-synkronisering, UK och PowerShell för att hantera användare.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 56e6f8955b5993fb4b5064aa92cdde80a4c67ffe
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3c3e69def731a85c0dccffdcb5620560dcf00052
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201789"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356733"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Hantera e-postanvändare i fristående EOP
 
@@ -63,7 +63,7 @@ För fristående EOP-organisationer med ett fåtal användare kan du lägga till
 
    - **Efter namn**
 
-   - <sup>\*</sup>**Visnings namn**: den här rutan visar som standard värdena i rutorna för **förnamn**, **initialer**och **efter namn** . Du kan acceptera det här värdet eller ändra det. Värdet ska vara unikt och får innehålla högst 64 tecken.
+   - <sup>\*</sup>**Visnings namn**: den här rutan visar som standard värdena i rutorna för **förnamn**, **initialer** och **efter namn** . Du kan acceptera det här värdet eller ändra det. Värdet ska vara unikt och får innehålla högst 64 tecken.
 
    - <sup>\*</sup>**Alias**: Ange ett unikt alias med upp till 64 tecken för användaren
 
@@ -77,7 +77,7 @@ För fristående EOP-organisationer med ett fåtal användare kan du lägga till
 
 ### <a name="use-the-eac-to-modify-mail-users"></a>Använda UK för att ändra e-postanvändare
 
-1. Gå till **mottagare** \> **kontakter**i UK.
+1. Gå till **mottagare** \> **kontakter** i UK.
 
 2. Markera den e-postanvändare som du vill ändra och klicka sedan på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-AddIcon.png) .
 
@@ -128,7 +128,7 @@ Använd fliken **organisation** för att registrera detaljerad information om an
 
 ### <a name="use-the-eac-to-remove-mail-users"></a>Använda UK för att ta bort e-postanvändare
 
-1. Gå till **mottagare** \> **kontakter**i UK.
+1. Gå till **mottagare** \> **kontakter** i UK.
 
 2. Markera den e-postanvändare som du vill ta bort och klicka sedan på **ta bort** ![ ikonen Ta bort ](../../media/ITPro-EAC-RemoveIcon.gif) .
 
@@ -230,7 +230,7 @@ Detaljerad information om syntax och parametrar finns i [Remove-EOPMailUser](htt
 
 Så här kontrollerar du att du har skapat, ändrat eller tagit bort e-postanvändare i fristående EOP:
 
-- Gå till **mottagare** \> **kontakter**i UK. Kontrol lera att e-postmeddelandet finns med i listan (eller inte listat). Markera e-postkontot och Visa informationen i informations fönstret eller klicka på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-AddIcon.png) för att visa inställningarna.
+- Gå till **mottagare** \> **kontakter** i UK. Kontrol lera att e-postmeddelandet finns med i listan (eller inte listat). Markera e-postkontot och Visa informationen i informations fönstret eller klicka på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-AddIcon.png) för att visa inställningarna.
 
 - I fristående EOP PowerShell kör du följande kommando för att kontrol lera att e-postmeddelandet är listad (eller inte listad):
 
@@ -258,11 +258,11 @@ I fristående EOP är Directory-synkronisering tillgängligt för kunder med lok
 
 - Du rekommenderas att använda profilsynkronisering med följande funktioner:
 
-  - Listorna **Betrodda avsändare och spärrade avsändare i Outlook**: när du synkroniserar till tjänsten får de här listorna högre prioritet än skräp post filtrering i tjänsten. Då kan användarna hantera sin egen lista över betrodda avsändare och spärrade avsändare med enskilda avsändare och domän poster. Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes).
+  - Listorna **Betrodda avsändare och spärrade avsändare i Outlook**: när du synkroniserar till tjänsten får de här listorna högre prioritet än skräp post filtrering i tjänsten. Då kan användarna hantera sin egen lista över betrodda avsändare och spärrade avsändare med enskilda avsändare och domän poster. Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor](configure-junk-email-settings-on-exo-mailboxes.md).
 
   - **Mappbaserade Edge-blockering (DBEB)**: Mer information om DBEB finns i [använda katalogbaserade Edge-blockering för att neka meddelanden skickade till ogiltiga mottagare](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 
-  - **Slutanvändare åtkomst till karantän**: för att få åtkomst till deras karantän meddelanden måste mottagarna ha ett giltigt användar-ID och lösen ord i tjänsten. Mer information om karantän finns i [hitta och släppa meddelanden i karantän som en användare](https://docs.microsoft.com/microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user).
+  - **Slutanvändare åtkomst till karantän**: för att få åtkomst till deras karantän meddelanden måste mottagarna ha ett giltigt användar-ID och lösen ord i tjänsten. Mer information om karantän finns i [hitta och släppa meddelanden i karantän som en användare](find-and-release-quarantined-messages-as-a-user.md).
 
   - **Regler för e-postflöde (kallas även transport regler)**: när du använder katalog synkronisering laddas de befintliga Active Directory-användarna och-grupperna automatiskt till molnet, och du kan skapa regler för e-postflöde som riktar sig till specifika användare och/eller grupper utan att behöva lägga till dem manuellt i tjänsten. Observera att [dynamiska distributions grupper](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) inte kan synkroniseras med katalog synkronisering.
 

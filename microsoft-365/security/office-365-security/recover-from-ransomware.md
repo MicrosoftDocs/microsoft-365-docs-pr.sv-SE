@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Microsoft 365-administratörer kan läsa mer om hur man återställer från en utpressnings tro Jan attack.
-ms.openlocfilehash: de1cddbdf1c2b3ffeb8fd74a8f0d31e815eb1b70
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: a1369e64821902e3c2a3061acd1bbebeeb6c85ac
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920614"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357103"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Återställ från en utpressnings tro Jan attack i Microsoft 365
 
@@ -76,7 +76,7 @@ Om de här alternativen inte fungerar kan du prova [Windows Defender Offline](ht
 
 När du har slutfört föregående steg för att ta bort utpressnings tro janheten från din miljö (som hindrar utpressnings tro från att kryptera eller ta bort filer) kan du använda [fil historik](https://support.microsoft.com/help/17128) i Windows 10 och Windows 8,1 eller system skydd i Windows 7 för att försöka återställa dina lokala filer och mappar.
 
-**Anmärkningar** :
+**Anmärkningar**:
 
 - Vissa utpressnings Jan program kommer också att kryptera eller ta bort säkerhets kopior, så du kan inte använda fil historik eller system skydd för att återställa filer. Om det inträffar behöver du använda säkerhets kopior på externa enheter eller enheter som inte påverkades av utpressnings tro Jan eller OneDrive enligt beskrivningen i nästa avsnitt.
 
@@ -148,7 +148,7 @@ Du kan rapportera nät fiske meddelanden som innehåller utpressnings tro Jan me
 
 - [Aktivera eller inaktivera makron i Office-filer](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 
-- [Rekommenderade inställningar för EOP och Microsoft Defender för Office 365-säkerhet](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)
+- [Rekommenderade inställningar för EOP och Microsoft Defender för Office 365-säkerhet](recommended-settings-for-eop-and-office365-atp.md)
 
 - [En minnes-uppgradering: nästa generations säkerhet i Windows 10 visar att det är elastiskt mot utpressnings brott i 2017](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 

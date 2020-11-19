@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Administratörer kan lära sig att använda karantän koder för att kontrol lera vad användarna kan göra i sina karantän meddelanden.
-ms.openlocfilehash: e50d7eea4cec3c87231dda855725b1e901f5fa33
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e194aabf57a1a105f01d8d34815312d3c2fa153d
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845702"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357653"
 ---
 # <a name="quarantine-tags"></a>Karantän koder
 
@@ -44,12 +44,12 @@ De tillgängliga enskilda behörigheterna och vad som ingår eller inte ingår i
 
 |Tillåtelse|Ingen åtkomst|Begränsad åtkomst|Full åtkomst|
 |---|:---:|:---:|:---:|
-|**Tillåt avsändare** ( _PermissionToAllowSender_ )|||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Spärra avsändare** ( _PermissionToBlockSender_ )||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Ta bort** ( _PermissionToDelete_ )||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Förhandsgranska** ( _PermissionToPreview_ )||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Tillåt att mottagare släpper ett meddelande från karantän** ( _PermissionToRelease_ )|||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Tillåt mottagare att begära att ett meddelande släpps från karantän** ( _PermissionToRequestRelease_ )||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**Tillåt avsändare** (_PermissionToAllowSender_)|||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Spärra avsändare** (_PermissionToBlockSender_)||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Ta bort** (_PermissionToDelete_)||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Förhandsgranska** (_PermissionToPreview_)||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Tillåt att mottagare släpper ett meddelande från karantän** (_PermissionToRelease_)|||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Tillåt mottagare att begära att ett meddelande släpps från karantän** (_PermissionToRequestRelease_)||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |
 
 Om du inte gillar standard behörigheterna i gruppen för förvalda behörigheter kan du använda anpassade behörigheter när du skapar eller ändrar egna karantän koder. Mer information om vad de här behörigheterna gör finns i avsnittet [behörighets information om karantänen](#quarantine-tag-permission-details) längre fram i den här artikeln.
@@ -83,12 +83,12 @@ Du skapar och tilldelar karantän koder i säkerhets & efterföljandekrav eller 
 
    Om du vill ange anpassade behörigheter väljer du **ange specifik åtkomst (avancerat)** och konfigurerar följande inställningar:
 
-     - **Välj inställningar för släpp** : Välj något av följande värden:
-       - **Ingen släpp-åtgärd** : det här är standardvärdet.
+     - **Välj inställningar för släpp**: Välj något av följande värden:
+       - **Ingen släpp-åtgärd**: det här är standardvärdet.
        - **Tillåt att mottagare släpper ett meddelande från karantän**
        - **Tillåt mottagare att begära att ett meddelande släpps från karantän**
 
-     - **Välj ytterligare åtgärder som mottagarna kan ta med i karantänen** : Välj några, alla eller inga av följande värden:
+     - **Välj ytterligare åtgärder som mottagarna kan ta med i karantänen**: Välj några, alla eller inga av följande värden:
        - **Ta bort**
        - **Automatisk**
        - **Tillåt avsändare**
@@ -178,19 +178,19 @@ Standardvärdet för eventuella oanvända parametrar är `$false` så du behöve
 
 I följande exempel visas hur du skapar behörighets objekt som motsvarar de fördefinierade behörighets grupperna:
 
-- **Ingen åtkomst** :
+- **Ingen åtkomst**:
 
   ```powershell
   $NoAccess = New-QuarantinePermissions
   ```
 
-- **Begränsad åtkomst** :
+- **Begränsad åtkomst**:
 
   ```powershell
   $LimitedAccess = New-QuarantinePermissions -PermissionToBlockSender $true -PermissionToDelete $true -PermissionToPreview $true -PermissionToRequestRelease $true
   ```
 
-- **Fullständig åtkomst** :
+- **Fullständig åtkomst**:
 
   ```powershell
   $FullAccess = New-QuarantinePermissions -PermissionToAllowSender $true -PermissionToBlockSender $true -PermissionToDelete $true -PermissionToPreview $true -PermissionToRelease $true
@@ -228,11 +228,11 @@ I skydds funktioner som _stöds_ i karantän meddelanden och filer (automatiskt 
 
 |Funktion|Finns det stöd för karantän?|Standard karantän koder|
 |---|:---:|---|
-|[Principer för skräp post](configure-your-spam-filter-policies.md): <ul><li>**Spam** ( _SpamAction_ )</li><li>**Snabb meddelanden med hög exakthet** ( _HighConfidenceSpamAction_ )</li><li>**Phishing-e-post** ( _PhishSpamAction_ )</li><li>**E-post med hög exakthet** ( _HighConfidencePhishAction_ )</li><li>**Mass utskick via e-post** ( _BulkSpamAction_ )</li></ul>|Ja|<ul><li>DefaultSpamTag (fullständig åtkomst)</li><li>DefaultHighConfSpamTag (fullständig åtkomst)</li><li>DefaultPhishTag (fullständig åtkomst)</li><li>DefaultHighConfPhishTag (ingen åtkomst)</li><li>DefaultBulkTag (fullständig åtkomst)</li></ul>
-|Skydd mot nätfiske: <ul><li>[Skydd mot förfalsknings information](set-up-anti-phishing-policies.md#spoof-settings) ( _AuthenticationFailAction_ )</li><li>[Personifieringsnivå](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**Om e-post skickas av en personifierad användare** ( _TargetedUserProtectionAction_ )</li><li>**Om e-post skickas av en domänkontrollant** ( _TargetedDomainProtectionAction_ )</li><li>**Post lådans intelligens** \> **Om e-post skickas av en personifierad användare** ( _MailboxIntelligenceProtectionAction_ )</li></ul></li></ul></ul>|Nej|ej tillämpligt|
+|[Principer för skräp post](configure-your-spam-filter-policies.md): <ul><li>**Spam** (_SpamAction_)</li><li>**Snabb meddelanden med hög exakthet** (_HighConfidenceSpamAction_)</li><li>**Phishing-e-post** (_PhishSpamAction_)</li><li>**E-post med hög exakthet** (_HighConfidencePhishAction_)</li><li>**Mass utskick via e-post** (_BulkSpamAction_)</li></ul>|Ja|<ul><li>DefaultSpamTag (fullständig åtkomst)</li><li>DefaultHighConfSpamTag (fullständig åtkomst)</li><li>DefaultPhishTag (fullständig åtkomst)</li><li>DefaultHighConfPhishTag (ingen åtkomst)</li><li>DefaultBulkTag (fullständig åtkomst)</li></ul>
+|Skydd mot nätfiske: <ul><li>[Skydd mot förfalsknings information](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Personifieringsnivå](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**Om e-post skickas av en personifierad användare** (_TargetedUserProtectionAction_)</li><li>**Om e-post skickas av en domänkontrollant** (_TargetedDomainProtectionAction_)</li><li>**Post lådans intelligens** \> **Om e-post skickas av en personifierad användare** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|Nej|ej tillämpligt|
 |[Principer mot skadlig program vara](configure-anti-malware-policies.md): alla upptäckta meddelanden alltid är i karantän.|Nej|ej tillämpligt|
 |[ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md)|Nej|ej tillämpligt|
-|[Regler för e-postflöden](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (kallas även transport regler) med åtgärden: **leverera meddelandet till den värdbaserade karantänen** ( _karantän_ ).|Nej|ej tillämpligt|
+|[Regler för e-postflöden](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (kallas även transport regler) med åtgärden: **leverera meddelandet till den värdbaserade karantänen** (_karantän_).|Nej|ej tillämpligt|
 |
 
 <sup>\*</sup> Inställningarna för skydd mot personifiering är endast tillgängliga i skydd mot nätfiske i Microsoft Defender för Office 365.
@@ -265,7 +265,7 @@ Om du hellre vill använda PowerShell för att tilldela karantän koder i princi
 <New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>">  [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
 ```
 
-**Anmärkningar** :
+**Anmärkningar**:
 
 - Standardvärdet för parametern _HighConfidencePhishAction_ är karantän, så du behöver inte ange karantäns åtgärden för att få en hög exakthet för nät fiske igenkänning i nya principer för skräp post skydd. För all annan filtrering av skräp post verdicts i nya eller befintliga principer för skräp post hantering är karantän tag gen bara effektiv om åtgärd svärdet är Quarantine. Om du vill visa åtgärds värden i befintliga principer för skräp post meddelanden kör du följande kommando:
 
@@ -310,19 +310,19 @@ Med globala inställningar för karantän koder kan du anpassa avsändare av slu
 
 3. I fönstret **Inställningar för karantän meddelanden** som öppnas konfigurerar du vissa eller alla av följande inställningar:
 
-   - **Använd min företags logo typ** : Välj det här alternativet om du vill ersätta Microsofts standard logo typ som används överst i meddelanden om avanmälan till slutanvändare. Innan du gör det måste du följa instruktionerna i [Anpassa Microsoft 365-temat för din organisation](https://docs.microsoft.com/microsoft-365/admin/setup/customize-your-organization-theme) för att överföra din anpassade logo typ.
+   - **Använd min företags logo typ**: Välj det här alternativet om du vill ersätta Microsofts standard logo typ som används överst i meddelanden om avanmälan till slutanvändare. Innan du gör det måste du följa instruktionerna i [Anpassa Microsoft 365-temat för din organisation](https://docs.microsoft.com/microsoft-365/admin/setup/customize-your-organization-theme) för att överföra din anpassade logo typ.
 
      Följande skärm bild visar en egen logo typ i en avisering om avanmälan till slutanvändare:
 
      ![En egen logo typ i en avisering om avanmälan till slutanvändare](../../media/quarantine-tags-esn-customization-logo.png)
 
-   - **Välj språk** : skräp post meddelanden är redan lokaliserade baserat på mottagarens språk inställningar. Du kan ange anpassad text på olika språk för **visnings namn** och **fri skrivnings** värden.
+   - **Välj språk**: skräp post meddelanden är redan lokaliserade baserat på mottagarens språk inställningar. Du kan ange anpassad text på olika språk för **visnings namn** och **fri skrivnings** värden.
 
      Välj minst ett språk i rutan första språk och klicka sedan på **Lägg till**. Du kan välja flera språk genom att klicka på **Lägg till** efter varje. I rutan avsnitts språk visas alla språk som du har valt:
 
      ![Valda språk i rutan andra språk i den globala karantänen inställningar för karantäns meddelanden](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
-   - **Visnings namn** : anpassa avsändarens visnings namn som används i meddelanden med slutanvändare.
+   - **Visnings namn**: anpassa avsändarens visnings namn som används i meddelanden med slutanvändare.
 
      För varje språk som du har lagt till väljer du det språk som du vill använda i rutan andra språk (Klicka inte på X) och anger önskat text värde i rutan **visnings namn** .
 
@@ -372,7 +372,7 @@ Detaljerad information om syntax och parametrar finns i [Get-HostedContentFilter
 
 ## <a name="remove-quarantine-tags-in-the-security--compliance-center"></a>Ta bort karantän koder i säkerhets & efterlevnad
 
-**Anmärkningar** :
+**Anmärkningar**:
 
 - Du kan inte ta bort inbyggda karantän koder.
 
@@ -412,11 +412,11 @@ De enskilda behörigheter som ingår i de förinställda behörighets grupperna 
 
 Om **Ingen åtkomst** behörighet tilldelas (inga behörigheter) för fältet karantän får användarna ändå vissa bas linje funktioner:
 
-- **Detaljer i karantän** : knappen **Visa meddelande rubrik** är alltid tillgänglig.
+- **Detaljer i karantän**: knappen **Visa meddelande rubrik** är alltid tillgänglig.
 
   ![Tillgängliga knappar i information om karantänen för meddelanden om Quarantine-taggen ger användaren ingen åtkomst behörighet](../../media/quarantine-tags-quarantined-message-details-no-access.png)
 
-- **Aviseringar om slutanvändare** : knappen **Granska** som tar användaren till meddelandet i karantän är alltid tillgänglig.
+- **Aviseringar om slutanvändare**: knappen **Granska** som tar användaren till meddelandet i karantän är alltid tillgänglig.
 
   ![Tillgängliga knappar i meddelandet om att skicka skräp post till slutanvändaren ger användaren ingen åtkomst behörighet](../../media/quarantine-tags-esn-no-access.png)
 
@@ -424,7 +424,7 @@ Om **Ingen åtkomst** behörighet tilldelas (inga behörigheter) för fältet ka
 
 Om funktionen för karantän tilldelar de **begränsade åtkomst** behörigheterna får användarna följande funktioner:
 
-- **Detaljer i karantän** : följande knappar är tillgängliga:
+- **Detaljer i karantän**: följande knappar är tillgängliga:
   - **Begäran släpp**
   - **Visa meddelande rubrik**
   - **Förhandsgranska meddelande**
@@ -433,7 +433,7 @@ Om funktionen för karantän tilldelar de **begränsade åtkomst** behörigheter
 
   ![Tillgängliga knappar i information om karantänen för meddelanden om Quarantine-taggen ger användare begränsad åtkomst behörighet](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
 
-- **Meddelanden om avanmälan till slutanvändare** : följande knappar är tillgängliga:
+- **Meddelanden om avanmälan till slutanvändare**: följande knappar är tillgängliga:
   - **Spärra avsändare**
   - **Översikt**
 
@@ -443,7 +443,7 @@ Om funktionen för karantän tilldelar de **begränsade åtkomst** behörigheter
 
 Om den här flaggan tilldelar **full åtkomst** behörighet (alla tillgängliga behörigheter) får användarna följande funktioner:
 
-- **Detaljer i karantän** : följande knappar är tillgängliga:
+- **Detaljer i karantän**: följande knappar är tillgängliga:
   - **Släpp meddelande**
   - **Visa meddelande rubrik**
   - **Förhandsgranska meddelande**
@@ -453,7 +453,7 @@ Om den här flaggan tilldelar **full åtkomst** behörighet (alla tillgängliga 
 
   ![Tillgängliga knappar i information om karantänen för meddelanden om Quarantine-taggen ger användaren full åtkomst behörighet](../../media/quarantine-tags-quarantined-message-details-full-access.png)
 
-- **Meddelanden om avanmälan till slutanvändare** : följande knappar är tillgängliga:
+- **Meddelanden om avanmälan till slutanvändare**: följande knappar är tillgängliga:
   - **Spärra avsändare**
   - **Version**
   - **Översikt**
@@ -467,68 +467,68 @@ Om den här flaggan tilldelar **full åtkomst** behörighet (alla tillgängliga 
 
 #### <a name="allow-sender-permission"></a>Tillåt avsändarens tillstånd
 
-Alternativet **Tillåt avsändare** kontrollerar åtkomsten till knappen som gör att användare enkelt kan lägga till avsändaren av meddelandet i listan Betrodda avsändare. _PermissionToAllowSender_
+Alternativet **Tillåt avsändare** kontrollerar åtkomsten till knappen som gör att användare enkelt kan lägga till avsändaren av meddelandet i listan Betrodda avsändare._PermissionToAllowSender_
 
-- **Detaljer i karantänen** :
+- **Detaljer i karantänen**:
   - **Tillåt avsändarens** behörighet aktiverat: knappen **Tillåt avsändare** är tillgänglig.
   - **Tillåt avsändarens** behörighet inaktive rad: knappen **Tillåt avsändare** är inte tillgänglig.
 
-- **Meddelanden om avanmälan till slutanvändare** : ingen effekt.
+- **Meddelanden om avanmälan till slutanvändare**: ingen effekt.
 
-Om du vill ha mer information om listan Betrodda avsändare kan du läsa förhindra att betrodda avsändare [blockeras](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) och [använda Exchange Online PowerShell för att konfigurera säker lista-samlingen på en post låda](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
+Om du vill ha mer information om listan Betrodda avsändare kan du läsa förhindra att betrodda avsändare [blockeras](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) och [använda Exchange Online PowerShell för att konfigurera säker lista-samlingen på en post låda](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
 #### <a name="block-sender-permission"></a>Förhindra avsändare
 
-Behörigheten **Blockera avsändare** ( _PermissionToBlockSender_ ) styr åtkomsten till knappen som gör att användare enkelt kan lägga till avsändaren för meddelande i listan över spärrade avsändare.
+Behörigheten **Blockera avsändare** (_PermissionToBlockSender_) styr åtkomsten till knappen som gör att användare enkelt kan lägga till avsändaren för meddelande i listan över spärrade avsändare.
 
-- **Detaljer i karantänen** :
+- **Detaljer i karantänen**:
   - **Blockering av avsändare** är aktiverat: knappen **block avsändare** är tillgänglig.
   - **Förhindra att avsändaren** har inaktiverats: knappen **Spärra avsändare** är inte tillgänglig.
 
-- **Meddelanden om avanmälan till slutanvändare** :
+- **Meddelanden om avanmälan till slutanvändare**:
   - **Förhindra att avsändaren** har inaktiverats: knappen **Spärra avsändare** är inte tillgänglig.
   - **Blockering av avsändare** är aktiverat: knappen **block avsändare** är tillgänglig.
 
-Mer information om listan Spärrade avsändare finns i [blockera meddelanden från någon](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) och [använda Exchange Online PowerShell för att konfigurera säker lista-samlingen i en post låda](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
+Mer information om listan Spärrade avsändare finns i [blockera meddelanden från någon](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) och [använda Exchange Online PowerShell för att konfigurera säker lista-samlingen i en post låda](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
 #### <a name="delete-permission"></a>Ta bort behörighet
 
-Behörigheten **ta bort** ( _PermissionToDelete_ ) styr möjligheten för användare att ta bort sina meddelanden (meddelanden där användaren är en mottagare) från karantän.
+Behörigheten **ta bort** (_PermissionToDelete_) styr möjligheten för användare att ta bort sina meddelanden (meddelanden där användaren är en mottagare) från karantän.
 
-- **Detaljer i karantänen** :
+- **Detaljer i karantänen**:
   - **Borttagnings** behörighet aktive rad: knappen **ta bort från karantän** är tillgänglig.
   - **Borttagnings** behörighet avaktiverad: knappen **ta bort från karantän** är inte tillgänglig.
 
-- **Meddelanden om avanmälan till slutanvändare** : ingen effekt.
+- **Meddelanden om avanmälan till slutanvändare**: ingen effekt.
 
 #### <a name="preview-permission"></a>För hands version
 
-Med funktionen för **förhands granskning** ( _PermissionToPreview_ ) kan användarna förhandsgranska sina meddelanden i karantänen.
+Med funktionen för **förhands granskning** (_PermissionToPreview_) kan användarna förhandsgranska sina meddelanden i karantänen.
 
-- **Detaljer i karantänen** :
+- **Detaljer i karantänen**:
   - **Förhands gransknings** behörighet aktive rad: knappen **Förhandsgranska meddelande** är tillgänglig.
   - För **hands versionen** är inaktive rad: knappen för **förhands granskning** är inte tillgänglig.
 
-- **Meddelanden om avanmälan till slutanvändare** : ingen effekt.
+- **Meddelanden om avanmälan till slutanvändare**: ingen effekt.
 
 #### <a name="allow-recipients-to-release-a-message-from-quarantine-permission"></a>Tillåt att mottagare släpper ett meddelande från karantän behörighet
 
-**Tillåt att mottagarna kan släppa ett meddelande från karantän** tillstånd ( _PermissionToRelease_ ) styr möjligheten för användarna att släppa sina karantän meddelanden direkt och utan godkännande från en administratör.
+**Tillåt att mottagarna kan släppa ett meddelande från karantän** tillstånd (_PermissionToRelease_) styr möjligheten för användarna att släppa sina karantän meddelanden direkt och utan godkännande från en administratör.
 
-- **Detaljer i karantänen** :
+- **Detaljer i karantänen**:
   - Behörighet aktive rad: knappen för att **frigöra meddelande** är tillgänglig.
   - Inaktive rad behörighet: knappen för att **frigöra meddelande** är inte tillgänglig.
   
-- **Meddelanden om avanmälan till slutanvändare** :
+- **Meddelanden om avanmälan till slutanvändare**:
   - Behörighet aktive rad: knappen **släpp** är tillgänglig.
   - Inaktive rad behörighet: knappen **släpp** är inte tillgänglig.
 
 #### <a name="allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission"></a>Tillåt att mottagare kan begära att ett meddelande släpps från karantän behörighet
 
-**Tillåt att mottagarna kan begära att ett meddelande släpps från karantän** tillstånd ( _PermissionToRequestRelease_ ) styr möjligheten för användarna att _begära_ utgivningen av sina karantän meddelanden. Meddelandet släpps bara efter att en administratör godkänt begäran.
+**Tillåt att mottagarna kan begära att ett meddelande släpps från karantän** tillstånd (_PermissionToRequestRelease_) styr möjligheten för användarna att _begära_ utgivningen av sina karantän meddelanden. Meddelandet släpps bara efter att en administratör godkänt begäran.
 
-- **Detaljer i karantänen** :
+- **Detaljer i karantänen**:
   - Behörighet aktive rad: knappen för att **släppa begäran** är tillgänglig.
   - Inaktive rad behörighet: knappen för att **släppa begäran** är inte tillgänglig.
 
-- **Avisering om avanmälan till slutanvändare** : knappen **släpp** är inte tillgänglig.
+- **Avisering om avanmälan till slutanvändare**: knappen **släpp** är inte tillgänglig.

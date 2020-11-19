@@ -14,12 +14,12 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur Exchange Online Protection (EOP) hjälper till att skydda din lokala e-postorganisation i fristående och hybrid miljöer.
-ms.openlocfilehash: a8b30a475e6865916c74f08c4d927662f658a096
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 997f157432dced474ccc17bf47cf9af68f4b8c08
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842410"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356721"
 ---
 # <a name="exchange-online-protection-overview"></a>Översikt över Exchange Online Protection
 
@@ -28,9 +28,9 @@ ms.locfileid: "48842410"
 
 Exchange Online Protection (EOP) är den molnbaserade filter tjänsten som hjälper dig att skydda din organisation mot skräp post och skadlig program vara. EOP ingår i alla Microsoft 365-organisationer med Exchange Online-postlådor. EOP är också tillgängligt i följande lokala scenarier:
 
-- **I ett fristående scenario** : EOP tillhandahåller Cloud-baserad e-postskydd för din lokala Exchange-organisation eller för någon annan lokal SMTP-e-postlösning.
+- **I ett fristående scenario**: EOP tillhandahåller Cloud-baserad e-postskydd för din lokala Exchange-organisation eller för någon annan lokal SMTP-e-postlösning.
 
-- **I en hybrid distribution** : EOP kan konfigureras för att skydda din e-postmiljö och styra e-postdirigering när du har en blandning av lokala och Cloud-postlådor.
+- **I en hybrid distribution**: EOP kan konfigureras för att skydda din e-postmiljö och styra e-postdirigering när du har en blandning av lokala och Cloud-postlådor.
 
 I dessa scenarion kan EOP förenkla hanteringen av din e-postmiljö och för att minska antalet arbets bördar som medföljer underhåll av lokal maskin vara och program vara.
 
@@ -42,13 +42,13 @@ För att förstå hur EOP fungerar kan du se hur det behandlar inkommande e-post
 
 :::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Bild av e-post från Internet eller en kund feedback som skickas till EOP och via anslutningen, antiskadligt, flödes regler med snedstreck – byte av filtrering och innehålls filtrering, innan Verdict av antingen skräp post eller karantän eller slutanvändarens e-postleverans.":::
 
-- När ett inkommande meddelande kommer till EOP övergår det initialt genom anslutnings filtrering, vilket kontrollerar avsändarens rykte. Majoriteten av skräp posten har stoppats vid den här punkten och avvisas av EOP. Mer information finns i [konfigurera anslutningsfilter](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-connection-filter-policy?view=o365-worldwide).
+- När ett inkommande meddelande kommer till EOP övergår det initialt genom anslutnings filtrering, vilket kontrollerar avsändarens rykte. Majoriteten av skräp posten har stoppats vid den här punkten och avvisas av EOP. Mer information finns i [konfigurera anslutningsfilter](configure-the-connection-filter-policy.md).
 
-- Då kontrol leras meddelandet om att du har tecken på skadlig program vara. Om skadlig kod hittas i meddelandet eller bifogade filer skickas meddelandet till en administratörs karantän lagring. Du kan läsa mer om hur du konfigurerar anti-malware [här](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-malware-policies?view=o365-worldwide).
+- Då kontrol leras meddelandet om att du har tecken på skadlig program vara. Om skadlig kod hittas i meddelandet eller bifogade filer skickas meddelandet till en administratörs karantän lagring. Du kan läsa mer om hur du konfigurerar anti-malware [här](configure-anti-malware-policies.md).
 
 - Meddelanden fortsätter genom princip filtrering, där de utvärderas mot anpassade regler för e-postflöde (kallas även transport regler) som du skapar eller tillämpar från en mall. Du kan till exempel ha en regel som skickar ett meddelande till en chef när e-post kommer från en viss avsändare. Det sker även i den här punkten (Exchange Enterprise CAL med tjänster).
 
-- Sedan passerar meddelandet upp genom innehålls filtrering (kallas även för skräp post). Ett meddelande om att det här filtret bestämmer sig för att vara skräp post *eller Phish* kan skickas till karantän eller till en annan mapp för skräp post. Mer information finns i [Konfigurera principer för skräp post](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide) och [Konfigurera skydd mot nätfiske](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-phishing-policies-eop?view=o365-worldwide).
+- Sedan passerar meddelandet upp genom innehålls filtrering (kallas även för skräp post). Ett meddelande om att det här filtret bestämmer sig för att vara skräp post *eller Phish* kan skickas till karantän eller till en annan mapp för skräp post. Mer information finns i [Konfigurera principer för skräp post](configure-your-spam-filter-policies.md) och [Konfigurera skydd mot nätfiske](configure-anti-phishing-policies-eop.md).
 
 Alla meddelanden som klarar alla dessa skydds lager levereras till mottagaren.
 
@@ -58,11 +58,11 @@ Mer information finns i [order och prioriteringsordning för e-postskydd](how-po
 
 De tillgängliga EOP-abonnemangen är:
 
-- **Fristående EOP** : du registrerar dig i EOP för att skydda din lokala e-postorganisation.
+- **Fristående EOP**: du registrerar dig i EOP för att skydda din lokala e-postorganisation.
 
-- **EOP funktioner i Exchange Online** : alla abonnemang som innehåller Exchange Online (fristående eller som en del av Microsoft 365) använder EOP för att skydda dina Exchange Online-postlådor.
+- **EOP funktioner i Exchange Online**: alla abonnemang som innehåller Exchange Online (fristående eller som en del av Microsoft 365) använder EOP för att skydda dina Exchange Online-postlådor.
 
-- **Exchange Enterprise-klientåtkomstlicens med tjänster** : om du har en lokal Exchange-organisation där du har köpt ytterligare Exchange-klientåtkomstlicens för företag med tjänste licenser är EOP en del av de tjänster som ingår.
+- **Exchange Enterprise-klientåtkomstlicens med tjänster**: om du har en lokal Exchange-organisation där du har köpt ytterligare Exchange-klientåtkomstlicens för företag med tjänste licenser är EOP en del av de tjänster som ingår.
 
 Information om krav, viktiga begränsningar och tillgängligheten för alla EOP-abonnemang finns i [beskrivningen av Exchange Online Protection Service](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
@@ -96,7 +96,7 @@ EOP utför belastnings fördelning mellan data centers men bara inom en region. 
 
 Hjälp innehållet för EOP-administratörer består av följande kategorier:
 
-- [Konfigurera EOP, dag 1, för Microsoft Defender för Office 365-administratörer](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide): Konfigurera EOP skydds-och identifierings verktyg i kärnan i Microsoft Defender för Office 365.
+- [Konfigurera EOP, dag 1, för Microsoft Defender för Office 365-administratörer](protect-against-threats.md): Konfigurera EOP skydds-och identifierings verktyg i kärnan i Microsoft Defender för Office 365.
 
 - [EOP funktioner](eop-features.md): innehåller en lista med funktioner som är tillgängliga i EOP.
 

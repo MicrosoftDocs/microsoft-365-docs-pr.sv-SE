@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e5ac3e9a02c333d3168c328aa6ad5532c48af99e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6149b6f128b3c96d2338e325caa8df835c292b13
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846694"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357617"
 ---
 # <a name="incidents-overview-in-microsoft-365-defender"></a>Incidenter översikt i Microsoft 365 Defender
 
@@ -36,6 +36,8 @@ ms.locfileid: "48846694"
 **Gäller för:**
 - Microsoft 365 Defender
 
+> Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera det i en labb miljö](https://aka.ms/mtp-trial-lab) eller [köra ett pilot projekt i produktionen](https://aka.ms/m365d-pilotplaybook).
+>
 
 
 Händelser är baserade på relaterade aviseringar. Aviseringar skapas när en illvillig händelse eller aktivitet visas i nätverket. Enskilda meddelanden ger värdefulla LED trådar om pågående attacker. Däremot använder angrepp olika vektorer och teknik för att genomföra en överträdelse. Piecing enskilda LED trådar kan vara utmanande och tids krävande.

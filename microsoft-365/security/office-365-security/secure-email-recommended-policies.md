@@ -18,18 +18,18 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: c8a1609bed124789229c6ae6d1f80b7d9c70bb66
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f2d3b9180ad5ab58e92812ed7b2d4f7ba07e2971
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646817"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357115"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Policy rekommendationer för att skydda e-post
 
 I den här artikeln beskrivs hur du implementerar de rekommenderade principer för identitet och enheter för att skydda organisatoriska e-post-och e-postklienter som stöder modern och villkorlig åtkomst. Den här vägledningen bygger på den [vanliga policyn för identitets-och enhets åtkomst](identity-access-policies.md) och innehåller dessutom ytterligare några rekommendationer.
 
-Dessa rekommendationer är baserade på tre olika nivåer av säkerhet och skydd som kan användas baserat på hur olika behov fungerar: **bas linje**, **känslig**och **högreglerad**. Du kan läsa mer om de här säkerhets nivåerna och de rekommenderade klient operativ systemen som hänvisas till av de här rekommendationerna i de [rekommenderade säkerhets reglerna och konfigurationerna](microsoft-365-policies-configurations.md).
+Dessa rekommendationer är baserade på tre olika nivåer av säkerhet och skydd som kan användas baserat på hur olika behov fungerar: **bas linje**, **känslig** och **högreglerad**. Du kan läsa mer om de här säkerhets nivåerna och de rekommenderade klient operativ systemen som hänvisas till av de här rekommendationerna i de [rekommenderade säkerhets reglerna och konfigurationerna](microsoft-365-policies-configurations.md).
 
 Dessa rekommendationer kräver att användarna använder moderna e-postklienter, inklusive Outlook för iOS och Android på mobila enheter. Outlook för iOS och Android tillhandahåller stöd för de bästa funktionerna i Office 365. Dessa mobila Outlook-appar är också utformad med säkerhets funktioner som har stöd för mobil användning och arbetar tillsammans med andra säkerhets funktioner för Microsoft Cloud. Mer information finns i [vanliga frågor om Outlook för iOS och Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq).
 
@@ -46,16 +46,17 @@ Observera att en ny princip för Exchange Online läggs till för att blockera A
 Om du har inkluderat Exchange Online och Outlook enligt principernas omfattning när du ställer in dem behöver du bara skapa den nya principen för att blockera ActiveSync-klienter. Granska de principer som visas i tabellen nedan och gör de rekommenderade tilläggen, eller bekräfta att dessa redan är med. Varje princip länkar till de associerade konfigurations anvisningarna i [vanliga principer för identitets-och enhets åtkomst](identity-access-policies.md).
 
 |Skydds nivå|Principerna|Mer information|
-|:---------------|:-------|:----------------|
+|---|---|---|
 |**Grundläggande**|[Kräv MFA när en inloggnings risk är *mellan* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera Exchange Online i tilldelning av moln program|
-|        |[Blockera klienter som inte har stöd för modern autentisering](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inkludera Exchange Online i tilldelning av moln program|
-|        |[Tillämpa program data skydds policy](identity-access-policies.md#apply-app-data-protection-policies)|Kontrol lera att Outlook ingår i listan med program. Se till att uppdatera policyn för varje plattform (iOS, Android, Windows)|
-|        |[Kräv godkända appar och program skydd](identity-access-policies.md#require-approved-apps-and-app-protection)|Ta med Exchange Online i listan med moln program|
-|        |[Kräv kompatibla PC-datorer](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Ta med Exchange Online i listan över moln program|
-|        |[Blockera ActiveSync-klienter](#block-activesync-clients)|Lägg till den här nya principen| 
-|**Känslig**|[Kräv MFA när en inloggnings risk är *låg*, *medium* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Inkludera Exchange Online i tilldelning av moln program|
-|         |[Kräv kompatibla datorer *och* mobila enheter](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Ta med Exchange Online i listan med moln program|
+||[Blockera klienter som inte har stöd för modern autentisering](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inkludera Exchange Online i tilldelning av moln program|
+||[Tillämpa program data skydds policy](identity-access-policies.md#apply-app-data-protection-policies)|Kontrol lera att Outlook ingår i listan med program. Se till att uppdatera policyn för varje plattform (iOS, Android, Windows)|
+||[Kräv godkända appar och program skydd](identity-access-policies.md#require-approved-apps-and-app-protection)|Ta med Exchange Online i listan med moln program|
+||[Kräv kompatibla PC-datorer](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Ta med Exchange Online i listan över moln program|
+||[Blockera ActiveSync-klienter](#block-activesync-clients)|Lägg till den här nya principen|
+|**Känslig**|[Kräv MFA när en inloggnings risk är *låg*, *medium* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera Exchange Online i tilldelning av moln program|
+||[Kräv kompatibla datorer *och* mobila enheter](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Ta med Exchange Online i listan med moln program|
 |**Strikt reglerad**|[Kräv *alltid* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera Exchange Online i tilldelning av moln program|
+|
 
 ## <a name="block-activesync-clients"></a>Blockera ActiveSync-klienter
 
@@ -85,20 +86,19 @@ Här är stegen:
    Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnlyPlusAttachmentsBlocked
    ```
 
-4. I Azure-portalen skapar du en ny princip för villkorsstyrd åtkomst med följande inställningar:
+5. I Azure-portalen skapar du en ny princip för villkorsstyrd åtkomst med följande inställningar:
 
-   **Uppgifter > användare och grupper**: Välj lämpliga användare och grupper att inkludera och exkludera.
+   **Uppgifter** \> **Användare och grupper**: Välj lämpliga användare och grupper som ska ingå och exkluderas.
 
-   **Uppgifter > molnappar eller åtgärder > moln program > > Välj appar**: välj **Office 365 Exchange Online**
+   **Uppgifter** \> **Moln program eller-åtgärder** \> **Molnappar** \> **Ta med** \> **Välj appar**: välj **Office 365 Exchange Online**
 
-   **Åtkomst kontroller > session**: Välj **Använd program begränsningar**
+   **Åtkomst kontroller** \> **Session**: Välj **Använd program begränsningar**
 
 ## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>Kräv att iOS-och Android-enheter måste använda Outlook
 
 För att säkerställa att användare av iOS-och Android-enheter endast kan komma åt arbets-eller skol innehåll med Outlook för iOS och Android behöver du en princip för villkorsstyrd åtkomst som är avsedd för de potentiella användarna.
 
 Se anvisningarna för att konfigurera den här principen i [Hantera åtkomst till samarbeten med hjälp av Outlook för iOS och Android]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access).
-
 
 ## <a name="set-up-message-encryption"></a>Konfigurera meddelande kryptering
 

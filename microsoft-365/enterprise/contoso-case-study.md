@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Hur en fiktiv men representativ global organisation antog Microsoft 365 för företag.
-ms.openlocfilehash: 980146a2a9c2a909d0b65c20e460841dce9fecee
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: eef22b372df36a4e5d14351df342268c195d04ce
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754674"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356997"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 för företag för Contoso Corporation
 
@@ -66,6 +66,12 @@ Mer information finns i följande artiklar:
 - [Sammanfattning av Microsoft 365 för företags säkerhet](contoso-security-summary.md)
 
   Contoso använder det fullständiga spektrumet av Microsoft 365 för företags säkerhetsfunktioner för identitets-och åtkomst hantering, Hot skydd, informations skydd och säkerhets hantering.
+
+Se dessa ytterligare IT-scenarier och-konfigurationer:
+
+- [COVID-19 svar och infrastruktur för en hybrid arbets styrka](../solutions/contoso-hybrid-workforce.md)
+
+  Lär dig hur contoso har uppdaterat sin infrastruktur för fjärråtkomst för COVID-19 Pandemic och deras nya installationer och uppdaterar infrastrukturen för en hybrid personal.
 
 - [Team för ett topphemligt projekt](../solutions/contoso-team-for-top-secret-project.md)
 

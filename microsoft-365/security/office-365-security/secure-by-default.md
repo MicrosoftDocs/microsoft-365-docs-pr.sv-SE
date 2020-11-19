@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om inställningen säker med standardinställningen i Exchange Online Protection (EOP)
-ms.openlocfilehash: 9f676dcd89f0322792bd40e06879b9758082d94e
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 23c0cad2b96b3a2002f235db7739b903cf862366
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131103"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357869"
 ---
 # <a name="secure-by-default-in-office-365"></a>Säkra som standard i Office 365
 
@@ -47,7 +47,7 @@ Eftersom Microsoft vill hålla våra kunder säkra som standard, tillämpas viss
 - Säkra avsändare i Outlook
 - Lista över tillåtna IP-adresser (anslutnings filter)
 
-Mer information om dessa åsidosättningar finns i [skapa säkra avsändare](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365).
+Mer information om dessa åsidosättningar finns i [skapa säkra avsändare](create-safe-sender-lists-in-office-365.md).
 
 Alternativet säker som standard är inte en inställning som kan aktive ras eller avaktiveras, men det är så att vårt filter fungerar för att behålla potentiellt farliga eller oönskade meddelanden från dina post lådor. Malware och högkonfidens nätfiske bör skickas till karantänen. Endast administratörer kan hantera meddelanden som satts i karantän som skadlig eller högsäker nätfiske och de kan också rapportera falska positiva positiv till Microsoft därifrån. Mer information finns i [Hantera meddelanden och filer i karantän som administratör i EOP](manage-quarantined-messages-and-files.md)
 

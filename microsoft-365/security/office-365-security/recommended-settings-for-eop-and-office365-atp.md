@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Vad är metod tips för säkerhets inställningar för Exchange Online Protection (EOP) och Defender för Office 365? Vad är de senaste rekommendationerna för standard skydd? Vad ska användas om du vill veta mer? Vilka extrafunktioner får du om du även använder Defender för Office 365?
-ms.openlocfilehash: bcad3609f5f73ac538ae9d1a0964ecc8e176003e
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: af741e1af412d535c53beb83c36c0cbe3fcd617b
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126643"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357127"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Rekommenderade inställningar för EOP och Microsoft Defender för Office 365-säkerhet
 
@@ -291,6 +291,6 @@ I PowerShell använder du cmdleten [New-SafeAttachmentPolicy](https://docs.micro
 
 - Administratörer och användare kan skicka falska positiva (bra e-postmeddelanden) och falska negativ (dålig e-post) till Microsoft för analys. Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
-- Använd de här länkarna om du vill veta mer om hur du **ställer in** din [EOP-tjänst](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)och **konfigurerar** [Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp). Glöm inte de användbara anvisningarna för att[skydda mot hot i Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
+- Använd de här länkarna om du vill veta mer om hur du **ställer in** din [EOP-tjänst](set-up-your-eop-service.md)och **konfigurerar** [Microsoft Defender för Office 365](office-365-atp.md). Glöm inte de användbara anvisningarna för att[skydda mot hot i Office 365](protect-against-threats.md).
 
 - **Säkerhets bas linjer för Windows** hittar du här: [var kan jag hämta säkerhets bas linjerna?](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) för GPO/lokala alternativ och [använda säkerhets bas linjer för att konfigurera Windows 10-enheter i Intune](https://docs.microsoft.com/intune/protect/security-baselines) för Intune-baserad säkerhet. En jämförelse mellan Microsoft Defender för slut punkter och säkerhets bas linjer för Microsoft Intune är att vara tillgänglig i [Jämför Microsoft Defender för slut punkten och säkerhets bas linjerna i Windows Intune](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines).

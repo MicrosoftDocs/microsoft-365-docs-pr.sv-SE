@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 627791e9dc3d4bf18047a05734a4e275152d19da
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: bab055036a8e7fdcf88329413c9fd86269af2aaa
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845038"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357231"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Proaktiv för problem med avancerad jakt i Microsoft 365 Defender
 
@@ -34,6 +34,9 @@ ms.locfileid: "48845038"
 
 **Gäller för:**
 - Microsoft 365 Defender
+
+> Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera det i en labb miljö](https://aka.ms/mtp-trial-lab) eller [köra ett pilot projekt i produktionen](https://aka.ms/m365d-pilotplaybook).
+>
 
 Advanced jakt är ett fråge baserat Threat-verktyg som gör att du kan utforska upp till 30 dagars rå data. Du kan inspektera händelser i ditt nätverk proaktivt för att hitta hot indikatorer och enheter. Den flexibla till gången till data möjliggör obegränsad jakt för både kända och potentiella hot.
 <p></p>
@@ -44,10 +47,10 @@ Du kan använda samma hot-jakt-frågor för att skapa anpassade identifierings r
 
 Denna funktion liknar [Avancerad jakt i Microsoft Defender för slut punkten](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). Med den här funktionen i Microsoft 365 Security Center kan du använda frågor som kontrollerar en bredare data uppsättning från:
 
-- Microsoft Defender för slut punkt
+- Microsoft Defender för Endpoint
 - Microsoft Defender för Office 365
 - Microsoft Cloud App Security
-- Microsoft Defender för identitet
+- Microsoft Defender for Identity
 
 [Aktivera Microsoft 365 Defender](mtp-enable.md)för att använda avancerad jakt.
 
@@ -70,8 +73,8 @@ För att använda avancerad jakt eller andra [Microsoft 365 Defender](microsoft-
 ## <a name="data-freshness-and-update-frequency"></a>Data aktualitet och uppdaterings frekvens
 Avancerade jakt uppgifter kan kategoriseras i två distinkta typer, som varje konsol IDE rad är annorlunda.
 
-- **Händelse-eller aktivitets data** – fyller i tabeller om aviseringar, säkerhets händelser, system händelser och utvärderings bedömningar. Advanced jakt tar emot dessa data nästan omedelbart efter att de sensorer som samlar in dem lyckades överföra dem till motsvarande moln tjänster. Du kan till exempel läsa händelse data från friska sensorer på arbets stationer eller domänkontrollanter nästan omedelbart efter att de är tillgängliga i Microsoft Defender för slut punkten och Microsoft Defender för identiteten.
-- **Entitetsinformation** – fyller i tabeller med information om användare och enheter. Dessa data kommer från både relativt statiska data källor och dynamiska källor, till exempel Active Directory-poster och händelse loggar. Om du vill lägga till nya data uppdateras tabellerna var 15: e minut och rader som kanske inte är helt ifyllda läggs till. Var 24: e timme konsol IDE ras för att infoga en post som innehåller de senaste, mest omfattande data uppsättningarna för varje enhet.
+- **Händelse-eller aktivitets data**– fyller i tabeller om aviseringar, säkerhets händelser, system händelser och utvärderings bedömningar. Advanced jakt tar emot dessa data nästan omedelbart efter att de sensorer som samlar in dem lyckades överföra dem till motsvarande moln tjänster. Du kan till exempel läsa händelse data från friska sensorer på arbets stationer eller domänkontrollanter nästan omedelbart efter att de är tillgängliga i Microsoft Defender för slut punkten och Microsoft Defender för identiteten.
+- **Entitetsinformation**– fyller i tabeller med information om användare och enheter. Dessa data kommer från både relativt statiska data källor och dynamiska källor, till exempel Active Directory-poster och händelse loggar. Om du vill lägga till nya data uppdateras tabellerna var 15: e minut och rader som kanske inte är helt ifyllda läggs till. Var 24: e timme konsol IDE ras för att infoga en post som innehåller de senaste, mest omfattande data uppsättningarna för varje enhet.
 
 ## <a name="time-zone"></a>Tidszon
 Tidsinformation i Advanced jakt är i UTC-zonen.

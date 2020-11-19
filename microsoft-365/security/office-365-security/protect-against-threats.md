@@ -19,19 +19,19 @@ ms.collection:
 - m365initiative-m365-defender
 description: Administratörer kan läsa om hotets skydd i Microsoft 365 och konfigurera hur det ska användas för din organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f6ac5b67d589db57d449ba61f07668b10b32706d
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: d80e81ab5648d186bb72f29acc010442877aba7c
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845726"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356685"
 ---
 # <a name="protect-against-threats"></a>Skydda mot hot
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Här är en snabb start guide som bryter konfigurationen av Defender för Office 365 till delar. Om du är nybörjare i Office 365 och inte vet var du ska börja, eller om du får det genom *att göra* , kan du använda den här vägledningen som en check lista och en utgångs punkt.
+Här är en snabb start guide som bryter konfigurationen av Defender för Office 365 till delar. Om du är nybörjare i Office 365 och inte vet var du ska börja, eller om du får det genom *att göra*, kan du använda den här vägledningen som en check lista och en utgångs punkt.
 
 > [!IMPORTANT]
 > **Initiala rekommenderade inställningar är tillgängliga för alla typer av principer, men du kan också ändra dina inställningar för att uppfylla specifika organisationens behov**. Tillåt cirka 30 minuter för dina principer eller ändringar för att fungera på ett annat sätt via ditt data Center.
@@ -43,14 +43,14 @@ Här är en snabb start guide som bryter konfigurationen av Defender för Office
 Hot Protection-funktioner är inkluderade i *alla* Microsoft-eller Office 365-abonnemang; Vissa abonnemang har emellertid avancerade funktioner. I tabellen nedan visas de skydds funktioner som ingår i den här artikeln tillsammans med de minsta abonnemangs kraven.
 
 > [!TIP]
-> Observera att, utöver anvisningarna för att aktivera granskning, *att börja mot* skadlig program vara, nätfiske och anti-spam, som är markerade som en del av Office 365 Exchange Online Protection ( **EOP** ). Det kan verka konstigt i en artikel i Defender för Office 365 tills du kommer ihåg ( **Defender för Office 365** ) innehåller och skapar EOP.
+> Observera att, utöver anvisningarna för att aktivera granskning, *att börja mot* skadlig program vara, nätfiske och anti-spam, som är markerade som en del av Office 365 Exchange Online Protection (**EOP**). Det kan verka konstigt i en artikel i Defender för Office 365 tills du kommer ihåg (**Defender för Office 365**) innehåller och skapar EOP.
 
 ****
 
 |Skydds typ|Abonnemangs behov|
 |---|---|
 |Gransknings loggning (för rapporterings ändamål)|[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)|
-|Skydd mot skadlig kod|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) ( **EOP** )|
+|Skydd mot skadlig kod|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
 |Skydd mot nätfiske|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Skydd mot skräppost|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Automatisk rensning av Tom timme (för e-post)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
@@ -139,7 +139,7 @@ Om du vill veta mer om alternativen för att skydda dina nätfiske-principer lä
 
 2. Aktivera anpassade inställningar på fliken **anpassad** .
 
-3. Expandera **standard filter princip för skräp post** , klicka på **Redigera princip** och ange sedan följande inställningar:
+3. Expandera **standard filter princip för skräp post**, klicka på **Redigera princip** och ange sedan följande inställningar:
 
    - I avsnittet **skräp post och Mass åtgärder** anger du tröskelvärdet till 5 eller 6.
 
@@ -157,7 +157,7 @@ Skydd mot skadlig URL-adress och filer är tillgängligt i abonnemang som inneh�
 
 Om du vill konfigurera [säkra bilagor](atp-safe-attachments.md)måste du skapa minst en princip för säkra länkar.
 
-1. I [säkerhets & Compliance Center](https://protection.office.com)väljer du **hot Management**  >  **policy** säkerhets meddelanden om säkerhet  >  , **ATP** och klickar sedan på **skapa**.
+1. I [säkerhets & Compliance Center](https://protection.office.com)väljer du **hot Management**  >  **policy** säkerhets meddelanden om säkerhet  >  ,**ATP** och klickar sedan på **skapa**.
 
 2. Konfigurera följande inställningar i guiden **ny princip för säkra bifogade filer** som visas:
 
@@ -169,7 +169,7 @@ Om du vill konfigurera [säkra bilagor](atp-safe-attachments.md)måste du skapa 
 
      Klicka på **Nästa**.
 
-3. På sidan **används för klickar du** på **Lägg till ett villkor** , **väljer tillämpas om: mottagar domänen är** , klickar du på **Lägg till** , väljer din domän eller dina domäner **, klickar på Lägg till och** **klickar sedan** på **Nästa**.
+3. På sidan **används för klickar du** på **Lägg till ett villkor**, **väljer tillämpas om: mottagar domänen är**, klickar du på **Lägg till**, väljer din domän eller dina domäner **, klickar på Lägg till och** **klickar sedan** på **Nästa**.
 
 4. Granska inställningarna och klicka sedan på **Slutför**.
 
@@ -180,8 +180,8 @@ Om du vill konfigurera [säkra länkar](atp-safe-links.md)kan du läsa och redig
 1. I [säkerhets & Compliance Center](https://protection.office.com)väljer du **Threat Management**  >  **policy**  >  **Safe Links** och klickar på **globala inställningar** och konfigurerar sedan följande inställningar:
 
    - Verifiera **Använd säkra länkar i: Office 365-program** är aktiverat: ![ slå på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
-   - **Spåra inte när användare klickar på säkra länkar** : inaktivera den här inställningen för att spåra användare: Stäng ![ av ](../../media/scc-toggle-off.png) .
-   - **Tillåt inte att användare klickar via säkra länkar till ursprunglig URL** : kontrol lera att den här inställningen är aktive rad: ![ slå på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Spåra inte när användare klickar på säkra länkar**: inaktivera den här inställningen för att spåra användare: Stäng ![ av ](../../media/scc-toggle-off.png) .
+   - **Tillåt inte att användare klickar via säkra länkar till ursprunglig URL**: kontrol lera att den här inställningen är aktive rad: ![ slå på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
 
    Klicka på **Spara** när du är klar.
 
@@ -192,8 +192,8 @@ Om du vill konfigurera [säkra länkar](atp-safe-links.md)kan du läsa och redig
    - Skriv ett namn i rutan **namn** , till exempel `Safe Links` och klicka sedan på **Nästa**.
 
    - Konfigurera följande inställningar på sidan **Inställningar** :
-     - **Välj åtgärd för okända URL-adresser i meddelanden** : Välj **på**.
-     - **Välj åtgärd för okända eller potentiellt skadliga webb adresser i Microsoft Teams** : Välj **på**.
+     - **Välj åtgärd för okända URL-adresser i meddelanden**: Välj **på**.
+     - **Välj åtgärd för okända eller potentiellt skadliga webb adresser i Microsoft Teams**: Välj **på**.
      - **Använda säkra länkar till e-postmeddelanden som skickas inom organisationen**
      - **Vänta på att URL-genomsökningen ska slutföras innan du levererar meddelandet**
      - **Använda säkra länkar till e-postmeddelanden som skickas inom organisationen**
@@ -201,7 +201,7 @@ Om du vill konfigurera [säkra länkar](atp-safe-links.md)kan du läsa och redig
 
      Klicka på **Nästa**
 
-4. På sidan **används för klickar du** på **Lägg till ett villkor** , **väljer tillämpas om: mottagar domänen är** , klickar du på **Lägg till** , väljer din domän eller dina domäner **, klickar på Lägg till och** **klickar sedan** på **Nästa**.
+4. På sidan **används för klickar du** på **Lägg till ett villkor**, **väljer tillämpas om: mottagar domänen är**, klickar du på **Lägg till**, väljer din domän eller dina domäner **, klickar på Lägg till och** **klickar sedan** på **Nästa**.
 
 5. Granska inställningarna och klicka sedan på **Slutför**.
 
@@ -209,7 +209,7 @@ Mer information finns i [Ställ in policyer för säkra länkar](set-up-atp-safe
 
 ## <a name="part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>Del 5 – kontrol lera ATP för SharePoint, OneDrive och Microsoft Teams
 
-Arbets belastningar som SharePoint, OneDrive och Teams är byggda för samarbete. Med Defender för Office 365 får du hjälp med blockering och identifiering av filer som identifieras som skadliga på grupp webbplatser och dokument bibliotek. Du kan läsa mer om hur det fungerar [här](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams).
+Arbets belastningar som SharePoint, OneDrive och Teams är byggda för samarbete. Med Defender för Office 365 får du hjälp med blockering och identifiering av filer som identifieras som skadliga på grupp webbplatser och dokument bibliotek. Du kan läsa mer om hur det fungerar [här](atp-for-spo-odb-and-teams.md).
 
 > [!IMPORTANT]
 > **Innan du påbörjar den här proceduren bör du kontrol lera att gransknings loggning redan är aktiverat för din Microsoft 365-miljö**. Det gör du vanligt vis av någon som har rollen gransknings loggar som tilldelats i Exchange Online. Mer information finns i [Aktivera eller inaktivera gransknings loggs ökning](../../compliance/turn-audit-log-search-on-or-off.md)!

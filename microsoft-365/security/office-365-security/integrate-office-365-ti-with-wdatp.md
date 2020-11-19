@@ -18,19 +18,19 @@ ms.collection:
 - M365-security-compliance
 description: Använd Microsoft Defender för Office 365 tillsammans med Microsoft Defender för slut punkt för att få mer detaljerad information om hot mot dina enheter och e-postinnehåll.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6b8bec8d3ebe52de9b4e1b919b2aceee20b5b5b0
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7f668aa1234509789dacd2b018b94f1bfbc79e2c
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842362"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357785"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Använda Microsoft Defender för Office 365 tillsammans med Microsoft Defender för slut punkten
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) kan konfigureras så att det fungerar med [Microsoft Defender för slut punkten](https://docs.microsoft.com/windows/security/threat-protection).
+[Microsoft Defender för Office 365](office-365-atp.md) kan konfigureras så att det fungerar med [Microsoft Defender för slut punkten](https://docs.microsoft.com/windows/security/threat-protection).
 
 Att integrera Microsoft Defender för Office 365 med Microsoft Defender för slut punkten kan hjälpa din säkerhets åtgärds grupp övervakning och vidta åtgärder snabbt om användarnas enheter löper risk. När integrationen är aktive rad kan till exempel din säkerhets åtgärds grupp se vilka enheter som eventuellt påverkas av ett identifierat e-postmeddelande, samt hur många senaste aviseringar som genererades för dessa enheter i Microsoft Defender för slut punkter. 
 
@@ -75,4 +75,4 @@ Att integrera Microsoft Defender för Office 365 med Microsoft Defender för slu
   
 [Microsoft Defender för Office 365](office-365-atp.md)
   
-[Microsoft Defender för slut punkt](https://docs.microsoft.com/windows/security/threat-protection)
+[Microsoft Defender för Endpoint](https://docs.microsoft.com/windows/security/threat-protection)

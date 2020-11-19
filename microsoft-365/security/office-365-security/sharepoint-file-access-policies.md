@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 653bd90fb68eb42423d5f32633736bba4b5943b4
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 7e8104e234bd1b724bc62fb1a9b401ab83a2bcb4
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464318"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357533"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Policy rekommendationer för att skydda SharePoint-webbplatser och-filer
 
 I den här artikeln beskrivs hur du implementerar Rekommenderad identitet och enhets åtkomst principer för att skydda SharePoint och OneDrive för företag. Den här vägledningen bygger på [vanliga principer för identitets-och enhets åtkomst](identity-access-policies.md).
 
-De här rekommendationerna bygger på tre olika nivåer av säkerhet och skydd för SharePoint-filer som kan användas baserat på hur olika behov fungerar: **original plan**, **känslig**och **högreglerad**. Du kan läsa mer om de här säkerhets nivåerna och de rekommenderade klient operativ systemen som hänvisas till av de här rekommendationerna i [översikten](microsoft-365-policies-configurations.md).
+De här rekommendationerna bygger på tre olika nivåer av säkerhet och skydd för SharePoint-filer som kan användas baserat på hur olika behov fungerar: **original plan**, **känslig** och **högreglerad**. Du kan läsa mer om de här säkerhets nivåerna och de rekommenderade klient operativ systemen som hänvisas till av de här rekommendationerna i [översikten](microsoft-365-policies-configurations.md).
 
 Förutom att implementera den här vägledningen måste du konfigurera SharePoint-webbplatser med rätt skydds nivå, inklusive att ange lämpliga behörigheter för känslig och hög reglerad information.
 
@@ -47,17 +47,18 @@ De nya principerna implementerar enhets skydd för känsligt och starkt reglerat
 I följande tabell visas de principer som du måste granska och uppdatera eller skapa en ny för SharePoint. Gemensamma principer-länken till de associerade konfigurations anvisningarna i artikeln om [principer för åtkomst policys för identitet och enheter](identity-access-policies.md) .
 
 |Skydds nivå|Principerna|Mer information|
-|:---------------|:-------|:----------------|
+|---|---|---|
 |**Grundläggande**|[Kräv MFA när en inloggnings risk är *mellan* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera SharePoint i tilldelningen av Cloud-appar.|
-|        |[Blockera klienter som inte har stöd för modern autentisering](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inkludera SharePoint i tilldelningen av Cloud-appar.|
-|        |[Tillämpa program data skydds policy](identity-access-policies.md#apply-app-data-protection-policies)|Se till att alla rekommenderade appar ingår i listan med program. Se till att uppdatera policyn för varje plattform (iOS, Android, Windows).|
-|        |[Kräv kompatibla PC-datorer](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Ta med SharePoint i listan med moln program.|
-|        |[Använda tvingande program begränsningar i SharePoint](#use-app-enforced-restrictions-in-sharepoint)|Lägg till den här nya principen. Detta meddelar Azure Active Directory (Azure AD) att använda inställningarna i SharePoint. Den här principen gäller för alla användare, men påverkar bara åtkomst till webbplatser som ingår i SharePoint Access-principer.|
+||[Blockera klienter som inte har stöd för modern autentisering](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inkludera SharePoint i tilldelningen av Cloud-appar.|
+||[Tillämpa program data skydds policy](identity-access-policies.md#apply-app-data-protection-policies)|Se till att alla rekommenderade appar ingår i listan med program. Se till att uppdatera policyn för varje plattform (iOS, Android, Windows).|
+||[Kräv kompatibla PC-datorer](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Ta med SharePoint i listan med moln program.|
+||[Använda tvingande program begränsningar i SharePoint](#use-app-enforced-restrictions-in-sharepoint)|Lägg till den här nya principen. Detta meddelar Azure Active Directory (Azure AD) att använda inställningarna i SharePoint. Den här principen gäller för alla användare, men påverkar bara åtkomst till webbplatser som ingår i SharePoint Access-principer.|
 |**Känslig**|[Kräv MFA när en inloggnings risk är *låg*, *medium* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera SharePoint i tilldelningarna för molnappar.|
-|         |[Kräv kompatibla datorer *och* mobila enheter](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Ta med SharePoint i listan med moln program.|
+||[Kräv kompatibla datorer *och* mobila enheter](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Ta med SharePoint i listan med moln program.|
 ||[Kontroll policy för SharePoint-åtkomst](#sharepoint-access-control-policies): Tillåt åtkomst via webbläsare till specifika SharePoint-webbplatser från ohanterade enheter.|Detta förhindrar redigering och nedladdning av filer. Använd PowerShell för att ange webbplatser.|
 |**Strikt reglerad**|[Kräv *alltid* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera SharePoint i tilldelningen av Cloud-appar.|
 ||[Åtkomst kontroll princip för SharePoint](#use-app-enforced-restrictions-in-sharepoint): blockera åtkomst till specifika SharePoint-webbplatser från ohanterade enheter.|Använd PowerShell för att ange webbplatser.|
+|
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint"></a>Använd program begränsningar i SharePoint
 
@@ -98,4 +99,3 @@ Konfigurera principer för villkorsstyrd åtkomst för:
 
 - [Microsoft Teams](teams-access-policies.md)
 - [Exchange Online](secure-email-recommended-policies.md)
-

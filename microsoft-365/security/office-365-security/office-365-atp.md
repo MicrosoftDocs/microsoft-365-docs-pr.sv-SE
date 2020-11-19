@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft Defender för Office 365 innehåller säkra bifogade filer, säkra länkar, avancerade verktyg för skydd mot nätfiske, rapporteringsverktyg och funktioner för hotinformation.
-ms.openlocfilehash: c102948ff66a6362a1adb60734629b79e7eb7ad5
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 11b6445e17fc870c2999ddb56715b0c5cee5b5fc
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021115"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357713"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender för Office 365
 
@@ -37,29 +37,29 @@ ms.locfileid: "49021115"
 
 Microsoft Defender för Office 365 skyddar din organisation mot skadliga hot från e-postmeddelanden, länkar (URL: er) och samarbetsverktyg. Defender för Office 365 innehåller:
 
-- **[Principer för hotskydd](#configure-microsoft-defender-for-office-365-policies)** : Definiera skyddsprinciper för hot för att ange rätt skyddsnivå för din organisation.
+- **[Principer för hotskydd](#configure-microsoft-defender-for-office-365-policies)**: Definiera skyddsprinciper för hot för att ange rätt skyddsnivå för din organisation.
 
-- **[Rapporter](#view-microsoft-defender-for-office-365-reports)** : Visa realtidsrapporter för att övervaka Defender för Office 365-prestanda i organisationen.
+- **[Rapporter](#view-microsoft-defender-for-office-365-reports)**: Visa realtidsrapporter för att övervaka Defender för Office 365-prestanda i organisationen.
 
-- **[Funktioner för undersökning av hot och svar](#use-threat-investigation-and-response-capabilities)** : Använd verktygen för nya funktioner för att undersöka, förstå, simulera och förhindra hot.
+- **[Funktioner för undersökning av hot och svar](#use-threat-investigation-and-response-capabilities)**: Använd verktygen för nya funktioner för att undersöka, förstå, simulera och förhindra hot.
 
-- **[Automatiserade funktioner för undersökning och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)** : Spara tid och ansträngning för att undersöka och mildra hot.
+- **[Automatiserade funktioner för undersökning och svar](office-365-air.md)**: Spara tid och ansträngning för att undersöka och mildra hot.
 
 ## <a name="getting-started"></a>Komma igång
 
 Om du inte har använt Microsoft Defender för Office 365 eller vill ha mer information om *att göra* kan du dra nytta av den ursprungliga Defender för Office 365-konfigurationen i segment, undersöka och Visa rapporter som använder den här artikeln som en referens. Här är logiska tidiga konfigurations segment:
 
-- Konfigurera allt med " *anti* " i namnet.
-    - anti-skadlig kod
-    - anti-phishing
-    - anti-spam
-- Konfigurera allt med " *säkert* " i namnet.
-    - säkra länkar
-    - Säkra bifogade filer
-- Försvara arbets belastningarna (t. ex. SharePoint Online, OneDrive och Teams) 
+- Konfigurera allt med "*anti*" i namnet.
+  - anti-skadlig kod
+  - anti-phishing
+  - anti-spam
+- Konfigurera allt med "*säkert*" i namnet.
+  - säkra länkar
+  - Säkra bifogade filer
+- Försvara arbets belastningarna (t. ex. SharePoint Online, OneDrive och Teams)
 - Skydda med Zero-Hour auto purge
 
-Om du vill lära dig genom att göra [klickar du på den här länken](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide&preserve-view=true). 
+Om du vill lära dig genom att göra [klickar du på den här länken](protect-against-threats.md).
 
 > [!NOTE]
 > Microsoft Defender för Office 365 finns med två olika typer av abonnemang. Du kan se om du har **plan 1** om du har "real tids identifiering" och **plan 2** om du har hot Explorer. Planen du har påverkar de verktyg du kommer att se, så var säker på att du är medveten om din plan när du lär dig.
@@ -72,7 +72,7 @@ I följande tabell sammanfattas vad som ingår i varje abonnemang.
 
 |Microsoft Defender för Office 365 Abonnemang 1|Microsoft Defender för Office 365 abonnemang 2|
 |---|---|
-|<br/>Funktioner för konfiguration, skydd och identifiering: <ul><li>[Säkra bifogade filer](atp-safe-attachments.md)</li><li>[Säkra länkar](atp-safe-links.md)</li><li>[ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Skydd mot nätfiske i Defender för Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Identifiering i realtid](threat-explorer.md)</li></ul>|Microsoft Defender för Office 365 Abonnemang 1 <br/>--- plus ---<br/>Funktioner för automatisering, undersökning, reparationer och utbildning:</li><li>[Hotspårare](threat-trackers.md)</li><li>[Hotutforskaren](threat-explorer.md)</li><li>[Automatiska undersökningar och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[Attacksimulator](attack-simulator.md)</li></ul>|
+|<br/>Funktioner för konfiguration, skydd och identifiering: <ul><li>[Säkra bifogade filer](atp-safe-attachments.md)</li><li>[Säkra länkar](atp-safe-links.md)</li><li>[ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Skydd mot nätfiske i Defender för Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Identifiering i realtid](threat-explorer.md)</li></ul>|Microsoft Defender för Office 365 Abonnemang 1 <br/>--- plus ---<br/>Funktioner för automatisering, undersökning, reparationer och utbildning:</li><li>[Hotspårare](threat-trackers.md)</li><li>[Hotutforskaren](threat-explorer.md)</li><li>[Automatiska undersökningar och svar](office-365-air.md)</li><li>[Attacksimulator](attack-simulator.md)</li></ul>|
 |
 
 - Microsoft Defender för Office 365 Abonnemang 2 ingår i Office 365 E5, Office 365 A5, Microsoft 365 E5 Security och Microsoft 365 E5.
@@ -96,13 +96,13 @@ Med Microsoft Defender för Office 365 kan din organisations säkerhetsteam konf
 
 Principerna som definieras för din organisation avgör beteendet och skyddsnivån för fördefinierade hot. Principalternativ är mycket flexibla. Din organisations säkerhetsgrupp kan t. ex. ge skydd mot detaljerade hot på användar-, organisations-, mottagar- och domännivå. Det är viktigt att granska dina principer regelbundet eftersom nya hot och utmaningar dyker upp dagligen.
 
-- **[Säkra bifogade filer](atp-safe-attachments.md)** : Ger nolldagarsskydd för att skydda ditt meddelandesystem genom att kontrollera e-postbilagor för skadligt innehåll. Den dirigerar alla meddelanden och bifogade filer som inte har en signatur i en särskild miljö, och använder sedan maskininlärnings- och analystekniker för att upptäcka skadliga avsikter. Om det inte går att hitta någon misstänkt aktivitet överförs meddelandet till postlådan. Mer information finns i [konfigurera policyer för säkra bifogade filer](set-up-atp-safe-attachments-policies.md).
+- **[Säkra bifogade filer](atp-safe-attachments.md)**: Ger nolldagarsskydd för att skydda ditt meddelandesystem genom att kontrollera e-postbilagor för skadligt innehåll. Den dirigerar alla meddelanden och bifogade filer som inte har en signatur i en särskild miljö, och använder sedan maskininlärnings- och analystekniker för att upptäcka skadliga avsikter. Om det inte går att hitta någon misstänkt aktivitet överförs meddelandet till postlådan. Mer information finns i [konfigurera policyer för säkra bifogade filer](set-up-atp-safe-attachments-policies.md).
 
-- **[Säkra länkar](atp-safe-links.md)** : Tillhandahåller klickverifiering av URL:er, till exempel i e-postmeddelanden och Office-filer. Skyddet är pågående och används i alla dina meddelanden och din Office-miljö. Länkar söks igenom för varje klick: säkra länkar är tillgängliga och skadliga länkar blockeras dynamiskt. Mer information finns i [Ställ in policyer för säkra länkar](set-up-atp-safe-links-policies.md).
+- **[Säkra länkar](atp-safe-links.md)**: Tillhandahåller klickverifiering av URL:er, till exempel i e-postmeddelanden och Office-filer. Skyddet är pågående och används i alla dina meddelanden och din Office-miljö. Länkar söks igenom för varje klick: säkra länkar är tillgängliga och skadliga länkar blockeras dynamiskt. Mer information finns i [Ställ in policyer för säkra länkar](set-up-atp-safe-links-policies.md).
 
-- **[ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md)** : skyddar din organisation när användare samarbetar och delar filer genom att identifiera och blockera skadliga filer på gruppwebbplatser och dokumentbibliotek. Mer information finns i [Aktivera Defender för Office 365 för SharePoint, OneDrive och Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
+- **[ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md)**: skyddar din organisation när användare samarbetar och delar filer genom att identifiera och blockera skadliga filer på gruppwebbplatser och dokumentbibliotek. Mer information finns i [Aktivera Defender för Office 365 för SharePoint, OneDrive och Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
-- **[Skydd mot nätfiske i Defender för Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)** : identifierar försök att imitera användare och interna eller anpassade domäner. Det tillämpar maskininlärningsmodeller och avancerade algoritmer för identifiering av personifiering för att avvärja nätfiskeattacker. Mer information finns i [Skydd mot nätfiske i Defender för Office 365](configure-atp-anti-phishing-policies.md).
+- **[Skydd mot nätfiske i Defender för Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)**: identifierar försök att imitera användare och interna eller anpassade domäner. Det tillämpar maskininlärningsmodeller och avancerade algoritmer för identifiering av personifiering för att avvärja nätfiskeattacker. Mer information finns i [Skydd mot nätfiske i Defender för Office 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="view-microsoft-defender-for-office-365-reports"></a>Visa rapporter för Microsoft Defender för Office 365 Plan 2
 
@@ -132,7 +132,7 @@ Microsoft Defender för Office 365-abonnemang 2 inkluderar förstklassiga [verkt
 
 ## <a name="save-time-with-automated-investigation-and-response"></a>Spara tid med automatiserad undersökning och svar
 
-( **NYTT!** ) När du ska undersöka en potentiell cyberattack är tiden avgörande. Ju tidigare du kan identifiera och mildra hot, desto bättre blir din organisation. [Funktionerna för automatiserade undersökning och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (AIR) innehåller en uppsättning säkerhetsspelböcker som du kan starta automatiskt, t. ex. när en avisering initieras, eller manuellt, t. ex. från en vy i Utforskaren. Med AIR kan du spara arbetstid och arbetskraft i säkerhetsarbetet för att begränsa riskerna effektivt och effektivt. Mer information finns i [AIR in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (AIR i Office 365).
+(**NYTT!**) När du ska undersöka en potentiell cyberattack är tiden avgörande. Ju tidigare du kan identifiera och mildra hot, desto bättre blir din organisation. [Funktionerna för automatiserade undersökning och svar](office-365-air.md) (AIR) innehåller en uppsättning säkerhetsspelböcker som du kan starta automatiskt, t. ex. när en avisering initieras, eller manuellt, t. ex. från en vy i Utforskaren. Med AIR kan du spara arbetstid och arbetskraft i säkerhetsarbetet för att begränsa riskerna effektivt och effektivt. Mer information finns i [AIR in Office 365](office-365-air.md) (AIR i Office 365).
 
 ## <a name="permissions-required-to-use-microsoft-defender-for-office-365-features"></a>Behörigheter som krävs för att använda Microsoft Defender för Office 365-funktioner
 

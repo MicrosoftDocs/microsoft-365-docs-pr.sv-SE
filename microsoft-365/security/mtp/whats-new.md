@@ -17,17 +17,19 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: 5214f7c399ab511ec16231e4dda97a2c33b37668
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: ade93bf8c89077c117ada764478cc74f4a5f14cc
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844710"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357325"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nyheter i Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+> Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera det i en labb miljö](https://aka.ms/mtp-trial-lab) eller [köra ett pilot projekt i produktionen](https://aka.ms/m365d-pilotplaybook).
+>
 
 Följande funktioner är allmänt tillgängliga (GA) i den senaste versionen av Microsoft 365 Defender.
 
@@ -35,6 +37,9 @@ RSS-feed: få ett meddelande när den här sidan uppdateras genom att kopiera oc
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
+> Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera det i en labb miljö](https://aka.ms/mtp-trial-lab) eller [köra ett pilot projekt i produktionen](https://aka.ms/m365d-pilotplaybook)
+>
+
 ## <a name="september-2020"></a>September 2020
 - [IdentityDirectoryEvents tabell](advanced-hunting-identitydirectoryevents-table.md) <br> Hitta händelser som berör en lokal domänkontrollant som kör Active Directory (AD). Den här [avancerade](advanced-hunting-overview.md) schema tabellen för ökningar täcker ett antal identitets relaterade händelser och system händelser på domänkontrollanten.
 - [Funktionen AssignedIPAddresses ()](advanced-hunting-assignedipaddresses-function.md) <br> Med den här funktionen kan du snabbt skaffa de senaste IP-adresserna till en enhet eller de senaste IP-adresserna från en viss tid.

@@ -17,18 +17,19 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 97dece3f3c732686cff885923532af14b6106b48
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 70fd278dd4cdeadd5e8911705ac3f87d981a3de0
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906847"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356877"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Översikt över Microsoft 365 säkerhets Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
+> Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera det i en labb miljö](https://aka.ms/mtp-trial-lab) eller [köra ett pilot projekt i produktionen](https://aka.ms/m365d-pilotplaybook).
+>
 Om du hanterar säkerheten för ditt företag för att skydda mot ett ständigt växande hot-landskap får många utmaningar. Du kanske har för många säkerhetslösningar med olika platser för att konfigurera många kontroller. Du kan bli problem med att veta vilka kontroller som är mest effektiva och vilka som kommer att introducera nya utmaningar för din arbets styrka. Det kan vara svårt för säkerhets teamerna att hitta rätt balans på säkerhet och produktivitet.
 
 Ange Microsoft 365 säkerhets Center-det nya start sidan för övervakning och hantering av säkerhet för dina Microsoft-identiteter, data, enheter, appar och infrastruktur. Här kan du enkelt visa organisationens säkerhets tillstånd, hantera enheter, användare och appar och få aviseringar för misstänkt aktivitet. Säkerhets Center för Microsoft 365 hjälper till att hjälpa säkerhets administratörer och säkerhets åtgärder att hantera och skydda sin organisation.
@@ -76,4 +77,4 @@ Lär dig mer om att övervaka, granska och svara på dina säkerhets behov:
 
 ## <a name="see-also"></a>Se även
 
-- [Microsoft säkerhetsportaler](portals.md)
+- [Microsoft-säkerhetsportaler](portals.md)

@@ -19,18 +19,18 @@ ms.collection:
 - m365initiative-defender-office365
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om de säkra funktionerna för bifogade filer i Microsoft Defender för Office 365.
-ms.openlocfilehash: d758db46f53be46d8213794f90bf8c462f9135e8
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: da3949a4520c52c7f5685efd109f8c976305ea06
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49020957"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357226"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Säkra bifogade filer i Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Säkra bifogade filer i [Microsoft Defender för Office 365](office-365-atp.md) innehåller ett ytterligare skydds nivå för bifogade filer som redan har skannats med [skydd mot skadlig program vara i Exchange Online Protection (EOP)](anti-malware-protection.md). Med säkra bilagor används en virtuell miljö för att kontrol lera bifogade filer i e-postmeddelanden innan de skickas till mottagarna (en process som kallas _sprängning_ ).
+Säkra bifogade filer i [Microsoft Defender för Office 365](office-365-atp.md) innehåller ett ytterligare skydds nivå för bifogade filer som redan har skannats med [skydd mot skadlig program vara i Exchange Online Protection (EOP)](anti-malware-protection.md). Med säkra bilagor används en virtuell miljö för att kontrol lera bifogade filer i e-postmeddelanden innan de skickas till mottagarna (en process som kallas _sprängning_).
 
 Skyddade bilagor skyddar mot e-postmeddelanden genom principer för säkra bifogade filer. Det finns ingen standard princip för säkra bifogade filer, **så för att skydda säkra bilagor måste du skapa en eller flera principer för säker bifogad fil**. Anvisningar finns i [Konfigurera principer för säkra bifogade filer i Defender för Office 365](set-up-atp-safe-attachments-policies.md).
 
@@ -59,7 +59,7 @@ Säkra sökningar i bifogade filer sker i samma region där dina Microsoft 365-d
 
 I det här avsnittet beskrivs inställningarna i principer för säkra bifogade filer:
 
-- **Osäkra bifogade filer – svar på skadlig program vara** : den här inställningen styr åtgärden för genomsökning av skadligt bifogade filer i e-postmeddelanden. De tillgängliga alternativen beskrivs i följande tabell:
+- **Osäkra bifogade filer – svar på skadlig program vara**: den här inställningen styr åtgärden för genomsökning av skadligt bifogade filer i e-postmeddelanden. De tillgängliga alternativen beskrivs i följande tabell:
 
   ****
 
@@ -69,24 +69,24 @@ I det här avsnittet beskrivs inställningarna i principer för säkra bifogade 
   |**Övervaka**|Skickar meddelanden med bifogade filer och sedan spåras vad som händer med identifiering av skadlig kod. <p> Leverans av säkra meddelanden kan komma att försenas på grund av genomsökning av säkra bifogade filer.|Se var upptäckta skadlig kod hamnar i din organisation.|
   |**Blockera**|Förhindrar att meddelanden som hittas av skadliga program levereras. <p> Meddelanden är i [karantän](manage-quarantined-messages-and-files.md) där endast administratörer (inte slutanvändare) kan granska, släppa eller ta bort meddelanden. <p> Blockerar automatiskt framtida instanser av meddelanden och bifogade filer. <p> Leverans av säkra meddelanden kan komma att försenas på grund av genomsökning av säkra bifogade filer.|Skyddar din organisation från upprepade attacker med samma bifogade filer. <p> Det här är standardvärdet och det rekommenderade värdet i standard-och Strict- [förvalda säkerhets principer](preset-security-policies.md).|
   |**Byter**|Tar bort hittade bifogade filer. <p> Meddelar mottagare om att bifogade filer har tagits bort. <p>  Meddelanden är i [karantän](manage-quarantined-messages-and-files.md) där endast administratörer (inte slutanvändare) kan granska, släppa eller ta bort meddelanden. <p> Leverans av säkra meddelanden kan komma att försenas på grund av genomsökning av säkra bifogade filer.|Öka synligheten för mottagarna att de bifogade filerna har tagits bort på grund av upptäckt skadlig kod.|
-  |**Dynamisk leverans**|Skickar meddelanden direkt men ersätter bifogade filer med plats hållare tills Safe Attachment scanning är klar. <p> Mer information finns i avsnittet [dynamisk leverans i principer för säker bifogade filer](#dynamic-delivery-in-safe-attachments-policies) längre fram i det här avsnittet.|Undvik meddelande fördröjningar när du skyddar mottagare från skadliga filer <br/> <br/> Aktivera användare för att förhandsgranska bifogade filer i fel säkert läge när genomsökning sker|
+  |**Dynamisk leverans**|Skickar meddelanden direkt men ersätter bifogade filer med plats hållare tills Safe Attachment scanning är klar. <p> Mer information finns i avsnittet [dynamisk leverans i principer för säker bifogade filer](#dynamic-delivery-in-safe-attachments-policies) längre fram i det här avsnittet.|Undvik meddelande fördröjningar när du skyddar mottagare från skadliga filer. <p> Aktivera mottagare för förhands granskning av bifogade filer i fel säkert läge när genomsökning sker.|
   |
 
-- **Omdirigera bilaga: Aktivera omdirigera** och **skicka den bifogade filen till följande e-post adress** : för att **blockera** , **övervaka** eller **ersätta** åtgärder kan du skicka meddelanden som innehåller bifogade filer med skadlig kod till angiven intern eller extern e-postadress för analys och undersökning.
+- **Omdirigera bilaga: Aktivera omdirigera** och **skicka den bifogade filen till följande e-post adress**: för att **blockera**, **övervaka** eller **ersätta** åtgärder kan du skicka meddelanden som innehåller bifogade filer med skadlig kod till angiven intern eller extern e-postadress för analys och undersökning.
 
   Rekommendationen för standard-och strikta princip inställningar är att aktivera omdirigering. Mer information finns i [Inställningar för säkra bifogade filer](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
-- **Använda ovanstående markering om genomsökning av skadlig kod för bifogade filer eller fel inträffar** : åtgärden som anges av **osäkra bifogade filer inget svar på skadlig program** vara tas med när säkra bilagor inte kan slutföras. Välj alltid det här alternativet om du väljer **Aktivera omdirigering**. Annars kan meddelanden gå förlorade.
+- **Använda ovanstående markering om genomsökning av skadlig kod för bifogade filer eller fel inträffar**: åtgärden som anges av **osäkra bifogade filer inget svar på skadlig program** vara tas med när säkra bilagor inte kan slutföras. Välj alltid det här alternativet om du väljer **Aktivera omdirigering**. Annars kan meddelanden gå förlorade.
 
-- **Mottagar filter** : du måste ange de mottagar villkor och undantag som avgör vem principen gäller för. Du kan använda dessa egenskaper för villkor och undantag:
+- **Mottagar filter**: du måste ange de mottagar villkor och undantag som avgör vem principen gäller för. Du kan använda dessa egenskaper för villkor och undantag:
 
   - **Mottagaren är**
   - **Mottagar domänen är**
   - **Mottagaren är medlem i**
 
-  Du kan bara använda ett villkor eller ett undantag, men villkoret eller undantaget kan innehålla flera värden. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_ ). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_ ).
+  Du kan bara använda ett villkor eller ett undantag, men villkoret eller undantaget kan innehålla flera värden. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_).
 
-- **Prioritet** : om du skapar flera principer kan du ange i vilken ordning de används. Inga två policyer kan ha samma prioritet, och policyhantering stannar efter att den första policyn har tillämpats.
+- **Prioritet**: om du skapar flera principer kan du ange i vilken ordning de används. Inga två policyer kan ha samma prioritet, och policyhantering stannar efter att den första policyn har tillämpats.
 
   För mer information om ordningsföljden och hur flera policyer utvärderas och tillämpas, se [Order och prioritet för e-postskydd](how-policies-and-protections-are-combined.md).
 

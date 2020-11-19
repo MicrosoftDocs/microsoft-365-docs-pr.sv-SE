@@ -14,19 +14,19 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: Lär dig hur du påskyndar processen att upptäcka och rikta in användar konton med automatiserade undersökningar och svars funktioner i Microsoft Defender för Office 365 abonnemang 2.
-ms.openlocfilehash: 0da065bea17796d09de771a767991804afb5335b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 80e4529f864d83d2a1711007f0f095de39955e68
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844602"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357917"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Lösa användar konton med automatisk undersökning och svar
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Microsoft Defender för Office 365 abonnemang 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2) inkluderar kraftfulla [automatiserade undersökningar och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (Air). Sådana funktioner kan spara din säkerhets åtgärds grupp mycket tid och ansträngning för att hantera hot. Microsoft fortsätter att förbättra säkerhets funktionerna. De senaste lösningarna har förbättrats för att omfatta Playbook (för närvarande för hands version). Läs den här artikeln om du vill ha mer information om säkerhets Playbook. Och se hur det går [snabbare att upptäcka och reagera på användarnas kompromisser och begränsa eventuella överträdelser med Microsoft Defender för Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) .
+[Microsoft Defender för Office 365 abonnemang 2](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2) inkluderar kraftfulla [automatiserade undersökningar och svar](office-365-air.md) (Air). Sådana funktioner kan spara din säkerhets åtgärds grupp mycket tid och ansträngning för att hantera hot. Microsoft fortsätter att förbättra säkerhets funktionerna. De senaste lösningarna har förbättrats för att omfatta Playbook (för närvarande för hands version). Läs den här artikeln om du vill ha mer information om säkerhets Playbook. Och se hur det går [snabbare att upptäcka och reagera på användarnas kompromisser och begränsa eventuella överträdelser med Microsoft Defender för Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) .
 
 ![Automatiserad undersökning av en användare med kompromiss](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -59,7 +59,7 @@ När ett användar konto är skadat utlöses notifieringarna. I vissa fall block
 - [Visa information om automatiserade utredningar](#view-details-about-automated-investigations)
 
 > [!IMPORTANT]
-> Du måste ha nödvändig behörighet för att utföra följande uppgifter. Se vilka [behörigheter som krävs för att använda Air-funktioner](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air?view=o365-worldwide#required-permissions-to-use-air-capabilities).
+> Du måste ha nödvändig behörighet för att utföra följande uppgifter. Se vilka [behörigheter som krävs för att använda Air-funktioner](office-365-air.md#required-permissions-to-use-air-capabilities).
 
 ### <a name="view-and-investigate-restricted-users"></a>Visa och undersöka begränsade användare
 
@@ -73,31 +73,32 @@ Det finns några olika alternativ för att gå till en lista över begränsade a
 
    ![Widgeten andra varningar](/microsoft-365/media/office365atp-otheralertswidget.jpg)
 
-   Listan med begränsade användare öppnas.<br/>![Begränsade användare i Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg)
+   Listan med begränsade användare öppnas.
 
-4. Välj ett användar konto i listan för att visa information och vidta åtgärder, till exempel [att släppa den begränsade användaren](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
+   ![Begränsade användare i Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg)
+
+4. Välj ett användar konto i listan för att visa information och vidta åtgärder, till exempel [att släppa den begränsade användaren](removing-user-from-restricted-users-portal-after-spam.md).
 
 ### <a name="view-details-about-automated-investigations"></a>Visa information om automatiserade utredningar
 
 När en automatiserad undersökning har påbörjats kan du se dess information och resultaten i säkerhets & Compliance Center. Gå till **Threat Management**  >  **utredningar** och välj sedan en undersökning för att visa dess uppgifter.
 
-Mer information finns i [Visa information om en undersökning](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results).
+Mer information finns i [Visa information om en undersökning](air-view-investigation-results.md).
 
 ## <a name="keep-the-following-points-in-mind"></a>Tänk på följande saker
 
 - **Håll koll på dina aviseringar**. Som du vet är det längre en kompromiss som försvinner, desto större potential och kostnad för din organisation, kunder och partners. Tidiga identifieringar och svars tiden är kritiska för att minska risken för hot, särskilt när en användares konto äventyras.
 
-- **Automatisering hjälper, men ersätter inte, din säkerhets åtgärd**. Automatiserade undersökningar och svars funktioner kan upptäcka en användare som är utsatt för tidigt, men din säkerhets åtgärd är antagligen tvungen att delta och göra vissa undersökningar och ny hjälp. Behöver du hjälp med det här? Se [Granska och godkänna åtgärder](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#review-and-approve-actions).
+- **Automatisering hjälper, men ersätter inte, din säkerhets åtgärd**. Automatiserade undersökningar och svars funktioner kan upptäcka en användare som är utsatt för tidigt, men din säkerhets åtgärd är antagligen tvungen att delta och göra vissa undersökningar och ny hjälp. Behöver du hjälp med det här? Se [Granska och godkänna åtgärder](air-review-approve-pending-completed-actions.md).
 
 - **Använd inte en misstänkt inloggnings avisering som indikator**. Det kan hända att det inte går att utlösa en varning om misstänkt inloggning när ett användar konto är skadat. Ibland är det en serie aktiviteter som inträffar efter att ett konto har blivit utsatt för en avisering. Vill du veta mer om aviseringar? Se [aviserings principer](https://docs.microsoft.com/microsoft-365/compliance/alert-policies).
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Granska de behörigheter som krävs för att använda AIR-funktioner](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air?view=o365-worldwide#required-permissions-to-use-air-capabilities)
+- [Granska de behörigheter som krävs för att använda AIR-funktioner](office-365-air.md#required-permissions-to-use-air-capabilities)
 
-- [Hitta och undersöka skadlig e-post i Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-worldwide)
+- [Hitta och undersöka skadlig e-post i Office 365](investigate-malicious-email-that-was-delivered.md)
 
 - [Lär dig mer om AIR i Microsoft Defender för slut punkten](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
 - [Besök Microsoft 365-översikten för att se vad som kommer snart och lanseras](https://www.microsoft.com/microsoft-365/roadmap?filters=)
-

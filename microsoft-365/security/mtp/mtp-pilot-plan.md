@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 4420342f964564305bb113c45ee0e3107f8a822e
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 649f3e777a330e1b60faf4f3513a470b51e56a80
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130987"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356985"
 ---
 # <a name="planning-your-pilot-microsoft-365-defender-project"></a>Planera piloten Microsoft 365 Defender Project 
 
@@ -88,8 +88,8 @@ Ett sätt att samla ihop alla element i planen är att skapa ett styrkort. Visa 
 | Användnings fall | Krav | Konfigurations krav | Test plan | Förväntat resultat | Test status | Poäng | Kommentarer |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |Ärende hantering|-Microsoft 365 Defender  </br></br>-Microsoft Defender för identitet </br></br>-Microsoft Defender för slut punkt </br></br>-Säkerhet för Microsoft Cloud App (valfritt)|Se [förutsättningarna](https://aka.ms/mtp-trial-lab) för förberedelse, konfigurering och konfiguration för information |[Simulera attack](mtp-pilot-simulate.md) <br></br>[Undersök problemet](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |Prövare kan förstå omfattningen och konsekvenserna av incidenten och hantera händelsen||||
-|AutoIR|-Microsoft 365 Defender </br></br>-Microsoft Defender för identitet </br></br>-Microsoft Defender för slut punkt |Se [förutsättningarna](https://aka.ms/mtp-trial-lab) för förberedelse, konfigurering och konfiguration för information <br>Aktivera AutoIR  |[Simulera attack](mtp-pilot-simulate.md) <br></br>[Automatisk undersökning](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Aviseringar och händelser åtgärdas automatiskt av Microsoft 365 Defender||||
-|Avancerad jakt|-Microsoft 365 Defender </br></br>-Microsoft Defender för slut punkt </br></br>-Microsoft Defender för Office 365 |Se [förutsättningarna](https://aka.ms/mtp-trial-lab) för förberedelse, konfigurering och konfiguration för information|[Avancerat jakt scenario](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#advanced-hunting-scenario) |Prövare kan hitta data genom avancerad jakt, pivotering till förverkningarade enheter och genom att skapa anpassade identifieringar||||
+|AutoIR|-Microsoft 365 Defender </br></br>-Microsoft Defender för identitet </br></br>-Microsoft Defender för slut punkt |Se [förutsättningarna](https://aka.ms/mtp-trial-lab) för förberedelse, konfigurering och konfiguration för information <br>Aktivera AutoIR  |[Simulera attack](mtp-pilot-simulate.md) <br></br>[Automatisk undersökning](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#automated-investigation-and-remediation) |Aviseringar och händelser åtgärdas automatiskt av Microsoft 365 Defender||||
+|Avancerad jakt|-Microsoft 365 Defender </br></br>-Microsoft Defender för slut punkt </br></br>-Microsoft Defender för Office 365 |Se [förutsättningarna](https://aka.ms/mtp-trial-lab) för förberedelse, konfigurering och konfiguration för information|[Avancerat jakt scenario](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#advanced-hunting-scenario) |Prövare kan hitta data genom avancerad jakt, pivotering till förverkningarade enheter och genom att skapa anpassade identifieringar||||
 
 
 

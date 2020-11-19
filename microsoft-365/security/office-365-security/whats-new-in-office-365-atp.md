@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 5aa1d5fe14f6213931e089c2f97fcf06c96397b3
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 01a5e374396b1f7ef79dff436cd9ecc4e0c4abf1
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131159"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357243"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nyheter i Microsoft Defender för Office 365
 
@@ -41,11 +41,11 @@ Den här artikeln innehåller de nya funktionerna i den senaste versionen av Mic
 > [!TIP]
 > Har du inte Microsoft Defender för Office 365 ännu? [Kontakta Sales för att starta en prov period](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
-## <a name="november-2020"></a>November 2020 
+## <a name="november-2020"></a>November 2020
 
 - Uppdaterade export gränser i granska > åtgärds Center > reparation från e-post och åtgärds logg (Defender för Office 365 abonnemang 2)
 
-## <a name="septemberoctober-2020"></a>September/oktober 2020 
+## <a name="septemberoctober-2020"></a>September/oktober 2020
 
 - [Kontrol lera dina policyer med hjälp av Configuration Analyzer](configuration-analyzer-for-security-policies.md)
 - [Åsidosätt filter manuellt verdicts med listan Tillåt/blockera klient organisation](tenant-allow-block-list.md)
@@ -53,27 +53,27 @@ Den här artikeln innehåller de nya funktionerna i den senaste versionen av Mic
 - Visa URL-hot i [Threat Explorer](threat-explorer.md#threats-in-urls) (skadlig program vara, Phish, spam eller ingen) (Defender för Office 365 abonnemang 2)
 - [Förbättringar av skydds Utforskaren för jakt](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) och uppdatering kring hot, ytterligare åtgärder, leverans ställen och uppdaterad tidslinjevy (Defender för Office 365 abonnemang 2)
 
-## <a name="julyaugust-2020"></a>Juli 2020 
+## <a name="julyaugust-2020"></a>Juli 2020
 
 - [Upplev förbättringar av jakt upplevelsen](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
 - [Använd de rekommenderade inställningarna med förvalda säkerhets principer](preset-security-policies.md) 
 
 ## <a name="marchapril-2020"></a>Mars 2020
 
-- Möjligheten att [adressera kompromissade användar konton med automatisk undersökning och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) är nu allmänt tillgänglig. (Microsoft Defender för Office 365 abonnemang 2)
+- Möjligheten att [adressera kompromissade användar konton med automatisk undersökning och svar](address-compromised-users-quickly.md) är nu allmänt tillgänglig. (Microsoft Defender för Office 365 abonnemang 2)
 
 ## <a name="januaryfebruary-2020"></a>Januari 2020
 
 - [Allmän tillgänglighet för kampanjmallar i Microsoft Defender för office 365](campaigns.md) (Microsoft Defender för Office 365 abonnemang 2)
 - Förbättringar av [Threat Explorer](threat-explorer.md) för att aktivera säkerhets åtgärder för att söka och filtrera efter flera fält när du [undersöker e-post](investigate-malicious-email-that-was-delivered.md): (Microsoft Defender för Office 365 abonnemang 2)
-    - Leverans plats och särskilda åtgärder
-    - Riktning (inkommande, utgående eller inom organisationen)
-    - Avancerade icke-filter (det här är avancerade filtrerings alternativ som inte innehåller, inkluderar inte, etc.)
-    - Detaljerade tids filter (dag, timme, halvtimme) 
+  - Leverans plats och särskilda åtgärder
+  - Riktning (inkommande, utgående eller inom organisationen)
+  - Avancerade icke-filter (det här är avancerade filtrerings alternativ som inte innehåller, inkluderar inte, etc.)
+  - Detaljerade tids filter (dag, timme, halvtimme)
 
 - Widgeten **incidenter** är nu widgeten **Åtgärds Center** . (Om du vill visa dina säkerhetswidgetar kan du gå till **Threat Management**  >  i säkerhets & efterlevnad **Granska**.) (Microsoft Defender för Office 365 abonnemang 2)
 
-- [Säkra dokument i Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(för hands version)**
+- [Säkra dokument i Microsoft 365](safe-docs.md) **(för hands version)**
 
 ## <a name="december-2019"></a>December 2019
 

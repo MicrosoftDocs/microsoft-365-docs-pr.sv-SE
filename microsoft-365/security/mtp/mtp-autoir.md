@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.date: 09/16/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: d17bd49206bcdef9f60a4873c642179165753887
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 2b8872288291adc0b9fc5e1c1541f885711df230
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843690"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356709"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Automatisk undersökning och svar i Microsoft 365 Defender
 
@@ -35,6 +35,9 @@ ms.locfileid: "48843690"
 
 **Gäller för:**
 - Microsoft 365 Defender
+
+> Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera det i en labb miljö](https://aka.ms/mtp-trial-lab) eller [köra ett pilot projekt i produktionen](https://aka.ms/m365d-pilotplaybook).
+>
 
 När säkerhets varningar utlöses är det upp till din säkerhets åtgärds grupp för att titta på dessa meddelanden och vidta åtgärder för att skydda din organisation. Det kan ta väldigt lång tid att prioritera och undersöka aviseringar, särskilt när nya meddelanden fortsätter när en undersökning pågår. Säkerhets Operations team kan känna av sig som skir volymen av de hot som de måste övervaka och skydda mot. Automatisk utredning och svars kapacitet, med själv återställning, i Microsoft 365 Defender kan hjälpa dig.
 
@@ -69,10 +72,10 @@ En utlöst varning skapar en olycka som kan starta en automatiserad undersöknin
 
 |Posterna |Hot Protection Services  |
 |---------|---------|
-|Enheter (kallas även slut punkter)     |[Microsoft Defender för slut punkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Microsoft Defender för identitet](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
+|Enheter (kallas även slut punkter)     |[Microsoft Defender för Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
 |E-postinnehåll (filer och meddelanden i post lådor)     |[Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-Varje undersökning ger upphov till verdicts ( *skadlig* , *misstänkt* eller *Inga hot* ) för varje undersöknings bevis. Beroende på typen av hot och resulterande Verdict inträffar reparations åtgärder automatiskt eller efter godkännande av organisationens säkerhets åtgärds team. Pågående och slutförda åtgärder visas i [Åtgärds centret](mtp-action-center.md).
+Varje undersökning ger upphov till verdicts (*skadlig*, *misstänkt* eller *Inga hot*) för varje undersöknings bevis. Beroende på typen av hot och resulterande Verdict inträffar reparations åtgärder automatiskt eller efter godkännande av organisationens säkerhets åtgärds team. Pågående och slutförda åtgärder visas i [Åtgärds centret](mtp-action-center.md).
 
 När en undersökning körs läggs eventuella andra relaterade aviseringar till i undersökningen tills den är klar. Om en incriminated-enhet visas någon annan stans expanderar den automatiserade undersökningen dess omfattning för att inkludera den enheten och en allmän säkerhets Playbook körs. 
 

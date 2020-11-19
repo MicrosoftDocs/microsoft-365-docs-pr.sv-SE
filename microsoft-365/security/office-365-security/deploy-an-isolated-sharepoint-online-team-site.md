@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: Använd den här stegvisa distributions guiden för att skapa och konfigurera en isolerad SharePoint Online-gruppwebbplats i Microsoft Office 365.
-ms.openlocfilehash: f2800e74149e79e5c3f0444799f454ab8b3caf69
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f9e8482238c7da4d10b6299b0f8a997734edbb13
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203137"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356913"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Distribuera en isolerad SharePoint Online-gruppwebbplats
 
@@ -112,7 +112,7 @@ Om du hanterar användar konton och grupper via Office 365 kan du använda admin
   
 För administrations centret för Microsoft 365 loggar du in med ett användar konto som har tilldelats rollen användar konto administratör eller företags administratör och använder grupper för att lägga till användar konton och grupper i lämpliga åtkomst grupper.
   
-För PowerShell, [Anslut först med Azure Active Directory PowerShell för Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell?view=o365-worldwide#connect-with-the-azure-active-directory-powershell-for-graph-module).
+För PowerShell, [Anslut först med Azure Active Directory PowerShell för Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 Använd sedan följande kommando block för att lägga till ett enskilt användar konto i en åtkomst grupp:
   
@@ -166,17 +166,17 @@ Börja med att skapa grupp webbplatsen för SharePoint Online med de här stegen
   
 1. Logga in på administrations centret för Microsoft 365 med ett konto som också används för att administrera SharePoint Online-gruppwebbplatsen (en SharePoint Online-administratör). Mer information finns i [Så här loggar du in i Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
-2. Klicka på **SharePoint** **i administrations**centret för Microsoft 365.
+2. Klicka på **SharePoint** **i administrations** centret för Microsoft 365.
 
-3. Expandera **webbplatser** och klicka på **aktiva webbplatser**i administrations centret för SharePoint.
+3. Expandera **webbplatser** och klicka på **aktiva webbplatser** i administrations centret för SharePoint.
 
-4. Klicka på **skapa**och välj sedan **andra alternativ**.
+4. Klicka på **skapa** och välj sedan **andra alternativ**.
 
-5. Välj **grupp webbplats**i listan **Välj en mall** .
+5. Välj **grupp webbplats** i listan **Välj en mall** .
    
 6. Ange ett namn på grupp webbplatsen i **webbplats namn**. 
     
-7. I **primär administratör**skriver du det konto som du är inloggad med.
+7. I **primär administratör** skriver du det konto som du är inloggad med.
  
 8. Klicka på **Slutför**.
     
@@ -184,7 +184,7 @@ Sedan kan du konfigurera behörigheter från den nya SharePoint Online-gruppwebb
   
 1. Klicka på inställningsikonen i verktygsfältet och klicka sedan på **Webbplatsbehörigheter**.
 
-2. Klicka på **ändra hur medlemmar kan dela**under **webbplats delning**.
+2. Klicka på **ändra hur medlemmar kan dela** under **webbplats delning**.
 
 3. Välj de **enda webbplats ägarna som kan dela filer, mappar och webbplatsen**.
 
@@ -194,25 +194,25 @@ Sedan kan du konfigurera behörigheter från den nya SharePoint Online-gruppwebb
     
 6. I fönstret **behörigheter** klickar du på **avancerade behörigheter**.
     
-7. Klicka på ** \<site name> medlemmar** i listan på fliken **behörigheter** i webbläsaren.
+7. Klicka på **\<site name> medlemmar** i listan på fliken **behörigheter** i webbläsaren.
     
-8. Klicka på **nytt**i **personer och grupper**.
+8. Klicka på **nytt** i **personer och grupper**.
     
 9. I dialog rutan **dela** skriver du in namnet på gruppen webbplats medlemmar, markerar den och klickar sedan på **dela**.
     
 10. Klicka på bakåtknappen i webbläsaren.
     
-11. Klicka på ** \<site name> ägare** i listan.
+11. Klicka på **\<site name> ägare** i listan.
     
-12. Klicka på **nytt**i **personer och grupper**.
+12. Klicka på **nytt** i **personer och grupper**.
     
 13. I dialog rutan **dela** skriver du in namnet på gruppen webbplats administratörer, markerar den och klickar sedan på **dela**.
     
 14. Klicka på bakåtknappen i webbläsaren.
     
-15. Klicka på ** \<site name> besökare** i listan.
+15. Klicka på **\<site name> besökare** i listan.
     
-16. Klicka på **nytt**i **personer och grupper**.
+16. Klicka på **nytt** i **personer och grupper**.
     
 17. I dialog rutan **dela** skriver du namnet på gruppen visnings åtkomst för webbplats, markerar den och klickar sedan på **dela**.
     
@@ -220,11 +220,11 @@ Sedan kan du konfigurera behörigheter från den nya SharePoint Online-gruppwebb
     
 Resultatet av dessa behörighets inställningar är:
   
-- SharePoint-gruppen ** \<site name> ägare** innehåller gruppen webbplats administratörer åtkomst där alla medlemmar har **fullständig** behörighets nivå.
+- SharePoint-gruppen **\<site name> ägare** innehåller gruppen webbplats administratörer åtkomst där alla medlemmar har **fullständig** behörighets nivå.
     
-- SharePoint-gruppen ** \<site name> medlemmar** innehåller gruppen webbplats medlemmar åtkomst där alla medlemmar har behörighets nivån **Redigera** .
+- SharePoint-gruppen **\<site name> medlemmar** innehåller gruppen webbplats medlemmar åtkomst där alla medlemmar har behörighets nivån **Redigera** .
     
-- SharePoint-gruppen ** \<site name> besökare** innehåller gruppen webbplats visnings åtkomst där alla medlemmar har behörighets nivån **läsa** .
+- SharePoint-gruppen **\<site name> besökare** innehåller gruppen webbplats visnings åtkomst där alla medlemmar har behörighets nivån **läsa** .
     
 - Möjligheten för medlemmar att bjuda in andra medlemmar eller för icke-medlemmar att begära åtkomst är inaktive rad.
     

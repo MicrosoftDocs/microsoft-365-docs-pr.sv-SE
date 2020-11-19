@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: db0f001d20f46c5c248ec153238fe394b8e9721c
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 4b354d124cfd9c1ae0eab19c8feee7e0fd59df25
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49020979"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357809"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Nödvändigt arbete för implementering av identitets-och enhets åtkomst principer
 
@@ -40,61 +40,66 @@ Innan du implementerar de rekommenderade principer för identitet och enheter fi
 
 I följande tabell beskrivs de nödvändiga funktionerna och deras konfiguration som gäller för alla identitets modeller förutom där det anges. 
 
-| Konfiguration | Undanta |
-| :------------- | :-----------: |
-|  [Konfigurera PHS](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Detta måste vara aktiverat för att upptäcka läcka autentiseringsuppgifter och för att fungera med en riskfylld, villkorlig åtkomst. **Obs!** Det här är obligatoriskt oavsett om din organisation använder federerad identifiering. | Endast molnet |
-| [Aktivera sömlös enkel inloggning](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso) för att automatiskt signera användare i när de är på deras organisations enheter som är anslutna till organisationens nätverk. | Endast moln och federerad  |
-| [Konfigurera namngivna nätverk](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal). Azure AD Identity Protection samlar in och analyserar alla tillgängliga sessionsdata för att generera risk poäng. Vi rekommenderar att du anger din organisations offentliga IP-adressintervall för ditt nätverk i konfiguration av Azure AD med namnet Networks. Trafik från dessa områden ges minskad risk Poäng och trafik utanför organisations miljön får ett högre risk poäng. | |
-|[Registrera alla användare för självbetjäning för återställning av lösen ord (SSPR) och multifaktorautentisering (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged). Vi rekommenderar att du registrerar användare för Azure Multi-Factor-verifikation i förväg. Azure AD Identity Protection använder Azure Multi-Factor-verifiering för att utföra ytterligare säkerhets verifiering. För bästa inloggnings upplevelse rekommenderar vi att användare installerar [Microsoft Authenticator-appen](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) och Microsoft-företagsportalsappen på sina enheter. De här kan installeras från App Store för varje plattform. | |
-| [Aktivera automatisk registrering av en domänansluten Windows-dator](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup). Villkorsstyrd åtkomst säkerställer att enheter som ansluter till program är domänansluten eller kompatibla. För att du ska kunna använda detta på Windows-datorer måste enheten vara registrerad med Azure AD.  I den här artikeln beskrivs hur du konfigurerar automatisk registrering av enheter. | Endast molnet |
-| **Förbered support teamet**. Ha en plan för användare som inte kan slutföra MFA. Detta kan läggas till i en princip undantags grupp eller Registrera ny MFA-information för dem. Innan du gör något av följande säkerhets känsliga ändringar måste du se till att den faktiska användaren gör det. Att kräva att användarnas chefer får hjälp med godkännandet är ett effektivt steg. | |  
-| [Konfigurera tillbakaskrivning för lösen ord för lokal annons](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). Med Lösenordssynkronisering kan Azure AD begära att användarna ändrar sina lokala lösen ord när ett högrisk problem upptäcks. Du kan aktivera den här funktionen med Azure AD Connect på ett av två sätt: aktivera **Ångra lösen ord** på skärmen valfria funktioner i installations guiden för Azure AD Connect eller aktivera den via Windows PowerShell. | Endast molnet |
-| [Konfigurera lösen ords skydd för Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad). Azure AD-lösenordsskydd upptäcker och blockerar kända svaga lösenord och deras varianter och kan också blockera ytterligare svaga termer som är specifika för din organisation. Standard globala förbjudna lösenordslistor tillämpas automatiskt på alla användare i en Azure AD-klient. Du kan definiera ytterligare poster i en anpassad förbjuden lösenordslista. När användare ändrar eller återställer sina lösenord kontrolleras dessa förbjudna lösenordslistor för att använda starka lösenord. |  |
-| [Aktivera Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)-kryptering. Azure AD Identity Protection gör att du kan upptäcka potentiella sårbarheter som påverkar organisationens identitet och konfigurera en automatisk reparations princip för att Visa riskerna med låg, medelhög och stor inloggning och användare.  | |
-| **Aktivera modern lösenordsautentisering** för [Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) och för [Skype för företag – Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). Modern verifiering är en förutsättning för användning av MFA. Modern autentisering är aktive rad som standard för Office 2016 och 2019 klienter, SharePoint och OneDrive för företag. |  |
-|||
+|Konfiguration|Undanta|
+|---|:---:|
+|[Konfigurera PHS](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Detta måste vara aktiverat för att upptäcka läcka autentiseringsuppgifter och för att fungera med en riskfylld, villkorlig åtkomst. **Obs!** Det här är obligatoriskt oavsett om din organisation använder federerad identifiering.|Endast molnet|
+|[Aktivera sömlös enkel inloggning](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso) för att automatiskt signera användare i när de är på deras organisations enheter som är anslutna till organisationens nätverk.|Endast moln och federerad|
+|[Konfigurera namngivna nätverk](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal). Azure AD Identity Protection samlar in och analyserar alla tillgängliga sessionsdata för att generera risk poäng. Vi rekommenderar att du anger din organisations offentliga IP-adressintervall för ditt nätverk i konfiguration av Azure AD med namnet Networks. Trafik från dessa områden ges minskad risk Poäng och trafik utanför organisations miljön får ett högre risk poäng.||
+|[Registrera alla användare för självbetjäning för återställning av lösen ord (SSPR) och multifaktorautentisering (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged). Vi rekommenderar att du registrerar användare för Azure Multi-Factor-verifikation i förväg. Azure AD Identity Protection använder Azure Multi-Factor-verifiering för att utföra ytterligare säkerhets verifiering. För bästa inloggnings upplevelse rekommenderar vi att användare installerar [Microsoft Authenticator-appen](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) och Microsoft-företagsportalsappen på sina enheter. De här kan installeras från App Store för varje plattform.||
+|[Aktivera automatisk registrering av en domänansluten Windows-dator](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup). Villkorsstyrd åtkomst säkerställer att enheter som ansluter till program är domänansluten eller kompatibla. För att du ska kunna använda detta på Windows-datorer måste enheten vara registrerad med Azure AD.  I den här artikeln beskrivs hur du konfigurerar automatisk registrering av enheter.|Endast molnet|
+|**Förbered support teamet**. Ha en plan för användare som inte kan slutföra MFA. Detta kan läggas till i en princip undantags grupp eller Registrera ny MFA-information för dem. Innan du gör något av följande säkerhets känsliga ändringar måste du se till att den faktiska användaren gör det. Att kräva att användarnas chefer får hjälp med godkännandet är ett effektivt steg.||
+|[Konfigurera tillbakaskrivning för lösen ord för lokal annons](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). Med Lösenordssynkronisering kan Azure AD begära att användarna ändrar sina lokala lösen ord när ett högrisk problem upptäcks. Du kan aktivera den här funktionen med Azure AD Connect på ett av två sätt: aktivera **Ångra lösen ord** på skärmen valfria funktioner i installations guiden för Azure AD Connect eller aktivera den via Windows PowerShell.|Endast molnet|
+|[Konfigurera lösen ords skydd för Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad). Azure AD-lösenordsskydd upptäcker och blockerar kända svaga lösenord och deras varianter och kan också blockera ytterligare svaga termer som är specifika för din organisation. Standard globala förbjudna lösenordslistor tillämpas automatiskt på alla användare i en Azure AD-klient. Du kan definiera ytterligare poster i en anpassad förbjuden lösenordslista. När användare ändrar eller återställer sina lösenord kontrolleras dessa förbjudna lösenordslistor för att använda starka lösenord.||
+|[Aktivera Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)-kryptering. Azure AD Identity Protection gör att du kan upptäcka potentiella sårbarheter som påverkar organisationens identitet och konfigurera en automatisk reparations princip för att Visa riskerna med låg, medelhög och stor inloggning och användare.||
+|**Aktivera modern lösenordsautentisering** för [Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) och för [Skype för företag – Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). Modern verifiering är en förutsättning för användning av MFA. Modern autentisering är aktive rad som standard för Office 2016 och 2019 klienter, SharePoint och OneDrive för företag.||
+|
 
 ## <a name="recommended-client-configurations"></a>Rekommenderade klientkonfigurationer
+
 I det här avsnittet beskrivs de standardinställningar för Platform-klient vi rekommenderar att tillhandahålla den bästa SSO-upplevelsen för användarna, samt de tekniska kraven för villkorlig åtkomst.
 
 ### <a name="windows-devices"></a>Windows-enheter
+
 Vi rekommenderar Windows 10 (version 2004 eller senare) eftersom Azure är utformat för att tillhandahålla det smidigaste SSO-gränssnittet för både lokalt och Azure AD. Arbets-eller skolbaserade enheter ska konfigureras för att ansluta till Azure AD direkt eller om organisationen använder lokal AD-domänansluten-anslutning ska dessa enheter [konfigureras att automatiskt och tyst registrera med Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup).
 
 För BYOD Windows-enheter kan användare använda **Lägg till arbets-eller skol konto**. Observera att användare av Google Chrome-webbläsaren på Windows 10-enheter måste [Installera ett tillägg](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog) för att få samma smidiga inloggnings upplevelse som Microsoft Edge-användare. Om din organisation har en domänansluten Windows 8-eller 8,1-enheter kan du även installera Microsoft Workplace Join för datorer utanför Windows 10. [Ladda ner paketet för att registrera](https://www.microsoft.com/download/details.aspx?id=53554) enheterna med Azure AD.
 
 ### <a name="ios-devices"></a>iOS-enheter
+
 Vi rekommenderar att du installerar [Microsoft Authenticator-appen](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) på användarnas enheter innan du distribuerar villkorsstyrd åtkomst eller MFA-principer. Du bör minst installera programmet när användarna ska registrera sin enhet med Azure AD genom att lägga till ett arbets-eller skol konto, eller när de installerar programmet Intune-företagsportalsappen för att registrera enheten i hanteringen. Detta beror på den konfigurerade principen för villkorsstyrd åtkomst.
 
 ### <a name="android-devices"></a>Android-enheter
+
 Vi rekommenderar att användare installerar [programmet Intune](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal&hl=en) -företagsportalsappen och [Microsoft Authenticator-appen](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) innan principer för villkorsstyrd åtkomst distribueras eller när det behövs under vissa autentiseringsförsök. Efter programinstallationen kan användarna uppmanas att registrera sig med Azure AD eller registrera sin enhet med Intune. Detta beror på den konfigurerade principen för villkorsstyrd åtkomst.
 
 Vi rekommenderar även att företagsägda enheter standardiseras på OEM-tillverkare och versioner som stöder Android för arbete eller Samsung KNOX för att tillåta att e-postkonton hanteras och skyddas av Intune MDM policy.
 
-
 ### <a name="recommended-email-clients"></a>Rekommenderade e-postklienter
+
 Följande e-postklienter stöder modern och villkorlig åtkomst. 
 
 |Plattform|Klient|Version/anteckningar|
-|:-------|:-----|:------------|
-|**Windows**|Outlook|2019, 2016, 2013 <BR> [Aktivera modern verifikation](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication), [nödvändiga uppdateringar](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
+|---|---|---|
+|**Windows**|Outlook|2019, 2016, 2013 <p> [Aktivera modern verifikation](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication) <p> [Uppdateringar som krävs](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
 |**iOS**|Outlook för iOS|[RelatesTo](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook för Android|[RelatesTo](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**macOS**|Outlook|2019 och 2016|
 |**Linux**|Stöds inte||
-|||
+|
 
 ### <a name="recommended-client-platforms-when-securing-documents"></a>Rekommenderade klient plattformar när du skyddar dokument
 
 Följande klienter rekommenderas när en princip för säker dokument tillämpas.
 
 |Plattform|Word/Excel/PowerPoint|OneNote|OneDrive-appen|SharePoint-App|[OneDrive-synkroniseringsklient](https://docs.microsoft.com/onedrive/enable-conditional-access)|
-|:-------|:-----|:------------|:-------|:-------------|:-----|
+|---|---|---|---|---|---|
 |Windows 8.1|Stöds|Stöds|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Stöds|
 |Windows 10|Stöds|Stöds|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Stöds|
 |Android|Stöds|Stöds|Stöds|Stöds|Saknas|
 |iOS|Stöds|Stöds|Stöds|Stöds|Saknas|
 |macOS|Stöds|Stöds|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Stöds inte|
 |Linux|Stöds inte|Stöds inte|Stöds inte|Stöds inte|Stöds inte|
+|
 
 ### <a name="microsoft-365-client-support"></a>Support för Microsoft 365-klienter
 

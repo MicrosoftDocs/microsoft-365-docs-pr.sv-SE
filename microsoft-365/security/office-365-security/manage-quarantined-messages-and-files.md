@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig att visa och hantera meddelanden i karantän för alla användare i Exchange Online Protection (EOP). Administratörer i organisationer med Microsoft Defender för Office 365 kan också hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams.
-ms.openlocfilehash: 94dfc8503d61c16aadc8e9d0ccfd295e2684fbba
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+ms.openlocfilehash: fed05ee202e4352200a80516e0ec1b62c8421178
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349286"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357139"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Hantera meddelanden och filer i karantän som administratör i EOP
 
@@ -165,7 +165,7 @@ När du har valt ett meddelande har du flera alternativ för vad du kan göra me
   - Välj något av följande alternativ:
     - **Släpp meddelanden till alla mottagare**
     - **Släpp meddelanden till specifika mottagare**
-    - **Släppa meddelanden till andra personer**
+    - **Släpp meddelanden till andra personer**: Obs! det går inte att släppa skadliga program mot andra personer än de ursprungliga mottagarna. 
 
   Klicka på **Släpp meddelandet** när du är klar.
 
@@ -189,7 +189,7 @@ När du har valt ett meddelande har du flera alternativ för vad du kan göra me
 
   - **Objekt typ**: **e-post** (standard), **URL** eller **bifogad fil**.
 
-  - **Sändnings format**: **ID för nätverks meddelanden** (standard, med motsvarande värde i fältet för **nätverks meddelande-ID** ) eller **filen** (Bläddra till en lokal. eml-eller. msg-fil). Observera att om du väljer **Arkiv** och sedan **nätverks meddelande-ID** är värdet från från början borta.
+  - **Sändnings format**: **ID för nätverks meddelanden** (standard, med motsvarande värde i fältet för **nätverks meddelande-ID** ) eller **filen** (Bläddra till en lokal. eml-eller. msg-fil). Observera att om du väljer **Arkiv** och sedan **nätverks meddelande-ID** är det ursprungliga värdet borta.
 
   - **Mottagare**: Ange en ursprunglig mottagare för meddelandet eller klicka på **Markera alla** för att identifiera alla mottagare. Du kan också klicka på **Markera alla** och sedan ta bort enskilda mottagare.
 
@@ -208,7 +208,7 @@ När du markerar flera meddelanden i karantän i listan (upp till 100) visas den
   > [!NOTE]
   > Tänk på följande: john@gmail.com skickar ett meddelande till faith@contoso.com och john@subsidiary.contoso.com. Gmail bifurcates det här meddelandet i två kopior som båda dirigeras till karantän som nätfiske i Microsoft. En administratör frigör båda dessa meddelanden till admin@contoso.com. Det första meddelandet som når administratörs post lådan levereras. Det andra publicerade meddelandet identifieras som dubbel leverans och hoppas över. Meddelandet identifieras som dubbletter om de har samma meddelande-ID och tid.
 
-- **Ta bort meddelanden**: När du har klickat på **Ja** i varningen som visas tas meddelandet genast bort utan att skickas till de ursprungliga mottagarna.
+- **Ta bort meddelanden**: när du klickar på **Ja** i den varning som visas, tas meddelandena omedelbart bort utan att skickas till de ursprungliga mottagarna.
 
 Klicka på **Stäng** när du är klar.
 
