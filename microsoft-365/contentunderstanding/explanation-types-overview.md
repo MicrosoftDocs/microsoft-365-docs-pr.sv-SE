@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: Mer information om olika typer av förklaringar i Microsoft SharePoint Syntex
-ms.openlocfilehash: 2d76fec3ee98f7c096c44a2b19b52da9fb70859d
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: f01529199bf4dea0a14c7dc30b39fcaa5078931b
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988768"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087649"
 ---
 # <a name="introduction-to-explanation-types"></a>Introduktion till förklaringstyper
 
@@ -24,15 +25,15 @@ Förklaringar används för att definiera den information som du vill använda f
    
 Följande förklaringstyper är tillgängliga:
 
-- **Fraslista** : lista med ord, fraser, siffror eller andra tecken som du kan använda i det dokument eller den information du extraherar. Exempel: textsträngen **Hänvisande läkare** finns i alla medicinska referensdokument som du identifierar.</br>
+- **Fraslista**: lista med ord, fraser, siffror eller andra tecken som du kan använda i det dokument eller den information du extraherar. Till exempel, textsträngen **Hänvisande läkare** är i alla medicinska referensdokument som du identifierar.</br>
 
-- **Mönsterlista** : listar mönster med siffror, bokstäver eller andra tecken som du kan använda för att identifiera den information som du extraherar. Till exempel kan du extrahera den hänvisande läkarens **Telefonnumret** i alla medicinsk referensdokument som du identifierar.</br>
+- **Mönsterlista**: listar mönster med siffror, bokstäver eller andra tecken som du kan använda för att identifiera den information som du extraherar. Du kan till exempel extrahera hämvisande läkarens **telefonnumret** alla medicinska referensdokument som du identifierar..</br>
 
-- **Närhet** : beskriver hur nära förklaringar är för varandra. Exempel: en mönsterlista för *gatunummer* ska ligga precis efter fraslistan för *gatunamn* utan tokens emellan (du får lära dig mer om tokens senare i den här artikeln). Med närhetstypen måste du ha minst två förklaringar i modellen, annars är alternativet inaktiverat. 
+- **Närhet**: beskriver hur nära förklaringar är för varandra. Till exempel: en *gatunummer* mönsterlista går direkt före *gatu namn* fraslistan, utan tokens i mitten (du får lära dig mer om tokens senare i den här artikeln).Med närhetstypen måste du ha minst två förklaringar i modellen, annars är alternativet inaktiverat. 
  
 ## <a name="phrase-list"></a>Fraslista
 
-Förklaringstypen fraslista används vanligtvis för att identifiera och klassificera ett dokument via modellen. Så som det beskrivs i exemplet med etikett för *Hänvisande läkare* är det en sträng med ord, fraser, siffror eller tecken är konsekventa i de dokument som du identifierar.
+Förklaringstypen fraslista används vanligtvis för att identifiera och klassificera ett dokument via modellen.Så som det beskrivs i exemplet med etikett för *Hänvisande läkare* är det en sträng med ord, fraser, siffror eller tecken är konsekventa i de dokument som du identifierar.
 
 Även om det inte är obligatoriskt kan du få mer framgång med din förklaring om frasen du hämtar finns på en konsekvent plats i ditt dokument. Till exempel kan etiketten *Hänvisande läkare* konsekvent finnas i det första stycket i dokumentet.
 
@@ -42,7 +43,7 @@ Om skifteslägeskänslighet är obligatorisk för att identifiera din etikett ti
 
 ## <a name="pattern-lists"></a>Mönsterlistor
 
-Typen mönsterlista är särskilt användbar när du skapar en förklaring som identifierar och hämtar information från ett dokument. Den visas vanligtvis i olika format, till exempel datum, telefonnummer och kreditkortsnummer. Ett datum kan till exempel visas i flera olika format (1/1/2020, 2020-01-01, 1 januari 2020 osv). Genom att definiera en mönsterlista blir förklaringen mer effektiv genom att fånga alla möjliga variationer i de data som du försöker identifiera och extrahera. 
+Typen mönsterlista är särskilt användbar när du skapar en förklaring som identifierar och hämtar information från ett dokument. Den visas vanligtvis i olika format, till exempel datum, telefonnummer och kreditkortsnummer. Ett datum kan till exempel visas i flera olika format (1/1 2020, 2020-01-01, 1 januari 2020 osv.). Genom att definiera en mönsterlista blir förklaringen mer effektiv genom att fånga alla möjliga variationer i de data som du försöker identifiera och extrahera. 
 
 För exemplet **Telefonnummer** extraheras telefonnumret till varje hänvisande läkare från alla medicinska referensdokument som modellen identifierar. När du skapar förklaringen väljer du typen mönsterlista för att tillåta de olika format som du kan förvänta dig returneras.
 
@@ -68,7 +69,7 @@ Om du även har krav på stor begynnelsebokstav i din mönsterlista kan du välj
    ![Endast exakta versaler](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> I stället för att manuellt skapa en förklaring för en mönsterlista kan du använda [förklaringsbiblioteket](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) för att använda färdiga mönsterlistmallar för vanliga mönsterlistor, till exempel *datum* , *telefonnummer* , *kreditkortsnummer* osv.
+> I stället för att manuellt skapa en förklaring för en mönsterlista kan du använda [förklaringsbiblioteket](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) för att använda färdiga mönsterlistmallar för vanliga mönsterlistor, till exempel *datum*, *telefonnummer*, *kreditkortsnummer* osv.
 
 ## <a name="proximity"></a>Närhet 
 
@@ -87,7 +88,7 @@ Använd närhetsförklaringen för att definiera hur långt bort det är för at
 
 #### <a name="what-are-tokens"></a>Vad är tokens?
 
-Om du vill använda närhetsförklaringstypen behöver du förstå vad en token är eftersom antalet tokens är hur närhetsförklaringen mäter avståndet från en förklaring till en annan. En token är ett sammanhängande intervall (exklusive blanksteg eller skiljetecken) för bokstäver och siffror. 
+Om du vill använda förklaringstypen närhet måste du förstå vad en token är eftersom antalet tokens är hur närhetsförklaringen mäter avståndet från en förklaring till en annan. En token är ett sammanhängande intervall (exklusive blanksteg eller skiljetecken) för bokstäver och siffror. 
 
 I tabellen nedan visas exempel på hur du kan ta reda på antalet tokens i en fras.
 
@@ -100,7 +101,7 @@ I tabellen nedan visas exempel på hur du kan ta reda på antalet tokens i en fr
 
 #### <a name="configure-the-proximity-explanation-type"></a>Konfigurera typen närhetsförklaring
 
-Konfigurera inställningen närhet för detta exempel att definiera intervallet för antalet tokens i förklaringen för *Telefonnummer* från förklaringen *Gatunummer*. Notera att det minsta intervallet är "0" eftersom det inte finns några tokens mellan telefonnumret och gatunumret.
+Konfigurera inställningen närhet för detta exempel att definiera intervallet för antalet tokens i förklaringen för *Telefonnummer* från förklaringen *Gatunummer*.Notera att det minsta intervallet är "0" eftersom det inte finns några tokens mellan telefonnumret och gatunumret.
 
 Men vissa telefonnummer i urvalsdokumenten har tillägget *(mobil)*.
 
@@ -109,7 +110,7 @@ Viktor Magnusson<br>
 One Microsoft Way<br>
 Redmond, WA 98034<br>
 
-Det finns tre tokens i *(mobil)* :
+Det finns tre tokens i *(mobil)*:
 
 |Fras|Antal tokens|
 |--|--|
@@ -125,7 +126,7 @@ Konfigurera inställningen för närhet så att den har ett område med 0 till 3
 
 Även om du kan lägga till olika mönsterlistvärden för dina förklaringar manuellt kan det vara mycket enklare att använda de färdiga mallar som har skapats åt dig i förklaringsbiblioteket.
 
-I stället för att exempelvis manuellt lägga till alla variationer för *Datum* kan du använda mönsterlistmallen för *Datum* , som redan har ett antal mönsterlistvärden:</br>
+I stället för att exempelvis manuellt lägga till alla variationer för *Datum* kan du använda mönsterlistmallen för *Datum*, som redan har ett antal mönsterlistvärden:</br>
 
    ![Förklaringsbiblioteket](../media/content-understanding/explanation-template.png)</br>
  
@@ -155,7 +156,7 @@ Observera att förklaringsbiblioteket även innehåller mallar för fraslistför
 
        ![Välj en mall](../media/content-understanding/phone-template.png)</br>
 
-3. Informationen för den mall som du valde visas på sidan **Skapa en förklaring**. Om det behövs kan du redigera namnet på förklaringen och lägga till eller ta bort objekt från mönsterlistan. </br> 
+3. Informationen för den mall som du valde visas på sidan **Skapa en förklaring**. Om det behövs kan du redigera namnet på förklaringen och lägga till eller ta bort objekt från mönsterlistan.</br> 
 
    ![Redigera mall](../media/content-understanding/phone-template-live.png)</br>
 

@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: Skapa en modell för formulärbearbetning i Microsoft SharePoint-Syntex.
-ms.openlocfilehash: 7edea0d36c85fba7bda31effdcdff08cd59a1174
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: aed918d899fe7c5e3c49b733d2411c178e9b98d0
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002435"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087697"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Skapa en modell för formulärbearbetning i Microsoft SharePoint-Syntex
 
@@ -36,7 +37,7 @@ Att skapa en modell för formulärbearbetning inbegriper följande:
 
 ## <a name="requirements"></a>Krav
 
-Du kan bara skapa en modell för formulärbearbetning i SharePoint-dokumentbibliotek för vilka den är aktiverad. Om formulärbearbetning är aktiverad kan du se **AI Builder** **"Skapa en modell för formulärbearbetning"** under **Automatisera** meny i ditt dokumentbiblioteket.  Om du behöver få bearbetning aktiverad i ditt dokumentbibliotek måste du kontakta din SharePoint-administratör.
+Du kan bara skapa en modell för formulärbearbetning i SharePoint-dokumentbibliotek för vilka den är aktiverad. Om formulärbearbetning är aktiverad kan du se **AI Builder** **"Skapa en modell för formulärbearbetning"** under **Automatisera** meny i ditt dokumentbiblioteket. Om du behöver få bearbetning aktiverad i ditt dokumentbibliotek måste du kontakta din SharePoint-administratör.
 
  ![Skapa en AI Builder-modell](../media/content-understanding/create-ai-builder-model.png)</br>
 
@@ -48,11 +49,11 @@ Första steget för att skapa en modell för formulärbearbetning är att namnge
 
     ![Skapa en modell](../media/content-understanding/create-ai-builder-model.png)</br>
 
-2. I fönstret **Ny modell för formulärbearbetning** , **Namn** -fältet skriver du ett namn på din modell (t. ex *Inköpsorder* ).
+2. I fönstret **Ny modell för formulärbearbetning**, **Namn**-fältet skriver du ett namn på din modell (t. ex *Inköpsorder*).
 
     ![Ny modell för formulärbearbetning](../media/content-understanding/new-form-model.png)</br> 
 
-3. När du skapar en modell för formulärbearbetning skapar du en ny SharePoint-innehållstyp. En SharePoint-innehållstyp representerar en kategori med dokument som har gemensamma egenskaper och delar en samling kolumner eller metadata för det specifika innehåll. SharePoint Innehållstyper hanteras via [Innehållstyper galleriet ]().
+3. När du skapar en modell för formulärbearbetning skapar du en ny SharePoint-innehållstyp. En SharePoint-innehållstyp representerar en kategori med dokument som har gemensamma egenskaper och delar en samling kolumner eller metadata för det specifika innehåll. SharePoint Innehållstyper hanteras via [Innehållstyper galleri]().
 
     Välj **Avancerade inställningar** om du vill mappa denna modell till en befintlig innehållstyp i SharePoint Innehållstyp galleriet för att använda dess schema. 
 
@@ -69,7 +70,7 @@ När du har skapat din nya modell för formulärbearbetning öppnas en ny PowerA
 
    ![Power Apps AI Builder](../media/content-understanding/powerapps.png)</br> 
  
-1. Välj **Lägg till dokument** för att börja lägga till exempeldokument som analyseras för att avgöra vilka namn/värde-par som kan extraheras. Sedan kan du välja antingen **Ladda upp från lokal lagring** , **SharePoint** eller **Azure-blobblagring**. Du måste använda minst fem filer för utbildning.
+1. Välj **Lägg till dokument** för att börja lägga till exempeldokument som analyseras för att avgöra vilka namn/värde-par som kan extraheras. Sedan kan du välja antingen **Ladda upp från lokal lagring**, **SharePoint-** eller **Azure Blob Storage**. Du måste använda minst fem filer för utbildning.
 
 2. När du har lagt till filer välj **Analysera** för att kontrollera om det finns någon gemensam information för alla filer. Det kan ta flera minuter att slutföra.</br> 
  
@@ -87,7 +88,7 @@ När du har analyserat dokumenten för fält kan du nu se de fält som hittades 
 
     ![Välj fältsida](../media/content-understanding/select-fields-page.png)</br> 
 
-2. Välj de fält som du vill spara och välj kryssrutan för att bekräfta ditt val. Till exempel, i Modellen för Inköpsorder välj *Datumet* , *IO* och *Summa* fälten.  Notera att du kan också välja att byta namn på ett fält om du vill. </br>
+2. Välj de fält som du vill spara och välj kryssrutan för att bekräfta ditt val. Till exempel, i Modellen för Inköpsorder välj *Datumet*, *IO* och *Summa* fälten. Notera att du kan också välja att byta namn på ett fält om du vill.</br>
 
     ![Välj IO #](../media/content-understanding/po.png)</br> 
 
@@ -101,15 +102,15 @@ När du har analyserat dokumenten för fält kan du nu se de fält som hittades 
 
 ## <a name="step-4-train-and-test-your-model"></a>Steg 4: Träna och testa din modell
 
-När du har valt de fält du vill spara kan du använda **Modellsammanfattnings** -sidan för att träna och testa din modell.
+När du har valt de fält du vill spara kan du använda **Modellsammanfattnings**-sidan för att träna och testa din modell.
 
-1. På **Modellsammanfattnings** -sidan visas de sparade fälten i den **Valda fält** sektionen. Välj **Träna** för att påbörja utbildning på dina exempelfiler. Notera att det här kan ta några minuter att slutföra.</br>
+1. På **Modellsammanfattnings**-sidan visas de sparade fälten i den **Valda fält** sektionen. Välj **Träna** för att påbörja träning på dina exempelfiler. Notera att det här kan ta några minuter att slutföra.</br>
 
      ![Välj fältsida Träna](../media/content-understanding/select-fields-train.png)</br> 
 
 2. När du ser meddelandet om att utbildning har slutförts välj **Gå till informationssidan**. 
 
-3. På sidan **Modellinformation** kan du välja att testa hur din modell fungerar genom att välja **Snabbtest**. På så sätt kan du dra och släppa filer till sidan och se om fälten har identifierats.
+3. På sidan **Modellinformation** kan du välja att testa hur din modell fungerar genom att välja **Snabbtest**. På så sätt kan du dra och släppa filer till sidan och se om fälten har identifierats..
 
     ![Bekräfta fält](../media/content-understanding/select-fields-train.png)</br> 
 
