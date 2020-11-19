@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: 'Lär dig hur du konfigurerar Prioriterad inkorg för alla eller vissa användare i organisationen. '
-ms.openlocfilehash: eaf2c7623c81b24670a7b512c6311f0af036b255
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 76a449295b7a2ad0cc1c82488a131a3a89fe41fc
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644609"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123435"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Konfigurera Prioriterad inkorg för alla i organisationen
 
   Om du är ansvarig för att konfigurera hur e-post fungerar för ALLA i ett företag är den här artikeln för dig! Här förklaras det hur du anpassar eller inaktiverar den för ditt företag och här finns svar på [Vanliga frågor](#faq-for-focused-inbox).  <br/> Om du vill stänga av Prioriterad inkorg bara för dig själv läser du [Stänga av Prioriterad inkorg](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2).  
-   
+
 Om du vill se till att dina användare säkert får företagsspecifika e-postmeddelanden, till exempel från personalavdelningen eller löneavdelningen, kan du konfigurera Prioriterad inkorg så att dessa meddelanden hamnar i vyn Prioriterad. Du kan även ange om användarna i organisationen ska se Prioriterad inkorg i Inkorgen eller inte.
   
 ## <a name="turn-focused-inbox-on-or-off-in-your-organization"></a>Aktivera eller inaktivera Prioriterad inkorg för din organisation
@@ -42,31 +42,31 @@ Du kan använda PowerShell för att aktivera eller inaktivera Prioriterad inkorg
 I följande PowerShell-exempel **inaktiverar** du Prioriterad inkorg i din organisation. Men funktionens tillgänglighet blockeras inte för användarna. Om de vill kan de fortfarande aktivera Prioriterad inkorg igen på sina egna klienter.  
   
 1. [Ansluta till Exchange Online med fjärr-PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
-    
+
 2. Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Du kan se vilka behörigheter du behöver i avsnittet om transportregler i artikeln [Behörigheter för meddelandepolicyer och efterlevnad](https://go.microsoft.com/fwlink/p/?LinkId=829796).
-    
+
 3. Kör cmdlet **Get-OrganizationConfig**. 
-    
+
  ``` PowerShell
 Get-OrganizationConfig
  ```
 
 4. Leta efter **FocusedInboxOn** för att visa den aktuella inställningen: 
-    
+
     ![Svar från PowerShell om statusen för Prioriterad inkorg.](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. Kör följande cmdlet om du vill inaktivera Prioriterad inkorg.
-    
+
  ``` PowerShell
  Set-OrganizationConfig -FocusedInboxOn $false
  ```
 
 6. Kör cmdlet **Get-OrganizationConfig** igen och så ser du att FocusedInboxOn anges till $false, vilket innebär att den har inaktiverats. 
-    
+
  **Aktivera Prioriterad inkorg:**
   
 - I steg 5 ovan kör du följande cmdlet om du vill aktivera Prioriterad inkorg.
-    
+
  ``` PowerShell
  Set-OrganizationConfig -FocusedInboxOn $true
  ```
@@ -88,27 +88,27 @@ Om du växlar från Övrig e-post till Prioriterad inkorg kan de välja att akti
 I det här exemplet **inaktiveras** Prioriterad inkorg för Tim Matthews i organisationen Contoso. Men funktionens tillgänglighet blockeras inte för honom. Om han vill kan han fortfarande aktivera Prioriterad inkorg igen på sina egna klienter. 
   
 1. [Ansluta till Exchange Online med fjärr-PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
-    
+
 2. Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Du kan se vilka behörigheter du behöver i avsnittet om transportregler i artikeln Behörigheter för meddelandepolicyer och efterlevnad (på engelska).
-    
+
 3. Kör cmdleten **Get-FocusedInbox**, till exempel: 
-    
+
  ``` PowerShell
  Get-FocusedInbox -Identity <tim@contoso.com>
  ```
 
 4. Leta efter FocusedInboxOn för att visa den aktuella inställningen:
-    
+
     ![Svar från PowerShell om statusen för Prioriterad inkorg.](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. Kör följande cmdlet om du vill inaktivera Prioriterad inkorg:
-    
+
  ``` PowerShell
  Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $false
  ```
 
 6. ELLER, kör följande cmdlet om du vill aktivera den:
-    
+
  ``` PowerShell
  Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $true
  ```
@@ -116,23 +116,26 @@ I det här exemplet **inaktiveras** Prioriterad inkorg för Tim Matthews i organ
 ## <a name="use-the-ui-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Använda gränssnittet till att skapa en transportregel som dirigerar e-postmeddelanden till vyn Prioriterad för alla användare
 
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administrationscentret för Exchange</a>.
-    
+
 2. Gå till **E-postflöde** \> **Regler**. Välj ![EAC-ikonen Lägg till](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) och välj sedan **Skapa en ny regel**. 
-    
-3. När du är färdig med den nya regeln klickar du på **Spara** så att regeln börjar gälla. 
-    
+
+3. När du är färdig med den nya regeln klickar du på **Spara** så att regeln börjar gälla.
+
     I den följande bilden skickas alla meddelanden från ”Löneavdelningen” till den prioriterade inkorgen.
-    
-    ![prioriterad inkorg löneavdelning](../../media/focusedinbox-transport-rule.PNG)
+
+    ![prioriteradinkorg lönelista](../../media/focusedinbox-transport-rule.PNG)
+
+> [!NOTE]
+> Värdetexten i meddelandehuvudet i det här exemplet är **X-MS-Exchange-Organization-BypassFocusedInbox**.
   
-## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Använda PowerShell till att skapa en transportregel som dirigerar e-postmeddelanden till vyn Prioriterad för alla användare
+## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Använda PowerShell för att skapa en transportregel som dirigerar e-postmeddelanden till vyn Prioriterad för alla användare
 
 1. [Ansluta till Exchange Online med fjärr-PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
-    
+
 2. Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Du kan se vilka behörigheter du behöver i avsnittet om transportregler i artikeln [Behörigheter för meddelandepolicyer och efterlevnad](https://go.microsoft.com/fwlink/p/?LinkId=829796).
 
 3. Kör följande kommando om du vill skicka alla meddelanden från ”Löneavdelningen” till den prioriterade inkorgen.
-    
+
  ``` PowerShell
  New-TransportRule -Name <name_of_the_rule> -From "Payroll Department" -SetHeaderName "X-MS-Exchange-Organization-BypassFocusedInbox" -SetHeaderValue "true"
  ```
@@ -143,15 +146,15 @@ I det här exemplet **inaktiveras** Prioriterad inkorg för Tim Matthews i organ
 
 ### <a name="how-do-you-know-this-worked"></a>Hur vet du att det fungerade?
 
-Du kan kontrollera meddelandehuvudena och se efter om e-post hamnar i Inkorgen på grund av att transportregeln för Prioriterad inkorg kringgås. Välj ett e-postmeddelande i en postlåda i organisationen som transportregeln för Prioriterad inkorg använts för. Om du tittar på meddelandehuvudet ska du se **X-MS-Exchange-Organization-BypassFocusedInbox: true**. Det här innebär att regeln fungerar. Läs mer om att hitta informationen i meddelandehuvudet i [Visa e-postmeddelandehuvud](https://go.microsoft.com/fwlink/p/?LinkId=822530). 
- 
+Du kan kontrollera meddelandehuvudena och se efter om e-post hamnar i Inkorgen på grund av att transportregeln för Prioriterad inkorg kringgås. Välj ett e-postmeddelande i en postlåda i organisationen som transportregeln för Prioriterad inkorg använts för. Om du tittar på meddelandehuvudet ska du se **X-MS-Exchange-Organization-BypassFocusedInbox: true**. Det här innebär att regeln fungerar. Läs mer om att hitta informationen i meddelandehuvudet i [Visa e-postmeddelandehuvud](https://go.microsoft.com/fwlink/p/?LinkId=822530).
+
 ## <a name="turn-onoff-clutter"></a>Aktivera/inaktivera Övrig e-post
- 
+
 Vi har fått rapporter att Övrig e-post plötsligt slutar fungera för en del användare. Du kan aktivera funktionen igen för specifika användare om detta inträffar. Se [Konfigurera Övrig e-post för organisationen](../email/configure-clutter.md).
- 
+
 ## <a name="faq-for-focused-inbox"></a>Vanliga frågor och svar om Prioriterad inkorg
 
-Här är svar på några vanliga frågor om Prioriterad inkorg. 
+Här är svar på några vanliga frågor om Prioriterad inkorg.
 
 ### <a name="can-i-control-how-i-roll-out-focused-inbox-in-my-organization"></a>Kan jag styra hur jag distribuerar Prioriterad inkorg i min organisation?
 
@@ -183,10 +186,10 @@ Nej. Du kan uttryckligen inaktivera Övrig e-post för en postlåda med cmdleten
 
 Det finns två lägen kopplade till Prioriterad inkorg.
   
-- Läget **Organisationsnivå**: Prioriterad inkorg, samt en tillhörande tidsstämpel för senaste uppdatering. 
-    
+- Läget **Organisationsnivå**: Prioriterad inkorg, samt en tillhörande tidsstämpel för senaste uppdatering.
+
 - Läget **Postlådenivå**: Prioriterad inkorg, samt en tillhörande tidsstämpel för senaste uppdatering. 
-    
+
 ### <a name="how-does-outlook-decide-to-show-the-focused-inbox-experience-with-these-two-states"></a>Hur avgör Outlook vilken version av Prioriterad inkorg som ska visas med dessa två lägen?
 
 Outlook avgör vilken version som ska visas baserat på vilken cmdlet som har den senaste tidsstämpeln. Som standard har båda tidsstämplarna värdet ”null”, och då är funktionen aktiverad.
