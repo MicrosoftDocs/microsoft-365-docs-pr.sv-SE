@@ -212,6 +212,19 @@
           href: activity-reports/activity-reports.md
         - name: Övervaka användarproduktivitet med Produktivitetspoäng
           href: productivity/productivity-score.md
+          items:
+            - name: Samarbeta med innehåll
+              href: productivity/content-collaboration.md
+            - name: Kommunikation
+              href: productivity/communication.md
+            - name: Mobilitet
+              href: productivity/mobility.md
+            - name: Lagarbete
+              href: productivity/teamwork.md
+            - name: Microsoft 365-applikationer
+              href: productivity/apps-health.md
+            - name: Skapa DNS-poster för valfri DNS-värd
+              href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
         - name: Ändra organisationens kontaktinformation
           href: manage/change-address-contact-and-more.md
         - name: Uppdatera administratörens kontaktinformation
