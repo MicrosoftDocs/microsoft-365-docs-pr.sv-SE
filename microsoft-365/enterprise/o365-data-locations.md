@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Bestäm var dina Microsoft 365 kunddata lagras globalt
-ms.openlocfilehash: e450468b54bdbce0e6c01dd3b935922836ab9f90
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+ms.openlocfilehash: 4fd3f480ef2ad3389e9a959695b9654badbda27f
+ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48493691"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49135997"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -127,6 +127,7 @@ För lands-/regionspecifika Data Center anger följande i vilka städer som kund
 | Land | Ort |
 | --- | --- |
 | Australien | Sydney, Melbourne |
+| Brasilien | Rio, Campinas |
 | Kanada | Quebec City, Toronto |
 | EU: s EU | Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Netherlands (Amsterdam) |
 | Frankrike | Paris, Marseille |
@@ -892,19 +893,19 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | Global geography 3-Amerika |
-| OneDrive för företag | Global geography 3-Amerika |
-| SharePoint Online | Global geography 3-Amerika |
+| Exchange online | Brasilien |
+| OneDrive för företag | Brasilien |
+| SharePoint online | Brasilien |
 | Skype för företag | USA |
-| Microsoft Teams | USA |
-| Office Online &amp; Mobile | Global geography 3-Amerika |
-| EOP | Global geography 3-Amerika |
+| Microsoft Teams | Brasilien |
+| Office online &amp; Mobile | Brasilien |
+| EOP | Brasilien |
 | Intune | USA |
-| MyAnalytics | Global geography 3-Amerika |
+| MyAnalytics | Brasilien |
 | Planner | USA |
 | Sway | USA |
 | Yammer | USA |
-| OneNote-tjänster | Global geography 3-Amerika |
+| OneNote-tjänster | Brasilien |
 | Strömma | USA |
 | Whiteboard | USA |
 | Formulär | USA |
@@ -1962,8 +1963,8 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
 | Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
-| Formulär | EU |
+| Whiteboard | EU |
+| Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
 
@@ -2280,7 +2281,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 </p></details>
 
 ## <a name="guadeloupe"></a>Guadeloupe
-<details><summary>Klicka för att Visa</summary><p>
+<details><summary>Klicka för att visa</summary><p>
 
 | Tjänst | Position |
 | --- | --- |
@@ -2597,8 +2598,8 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | Tjänst | Position |
 | --- | --- |
 | Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
-| SharePoint Online | EU |
+| OneDrive för företag | EU |
+| SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
@@ -2912,7 +2913,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 1 – EMEA |
 | SharePoint Online | Global geography 1 – EMEA |
 | Skype för företag | Global geography 1 – EMEA |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 1 – EMEA |
 | EOP | Global geography 1 – EMEA |
 | Intune | Global geography 1 – EMEA |
@@ -3857,8 +3858,8 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU |
+| Strömma | EU |
+| Whiteboard | EU: s EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -4492,8 +4493,8 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU: s EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
@@ -5122,8 +5123,8 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
-| Intune | EU |
+| EOP | EU |
+| Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
@@ -5437,7 +5438,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
