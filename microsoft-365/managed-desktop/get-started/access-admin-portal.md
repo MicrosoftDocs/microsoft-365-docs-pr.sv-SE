@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 5adf57c2397c4de3c5ea8622a2a9be7207ebf152
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 66e4e5c305947f90f935563a3baf0592ce42480a
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379296"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371676"
 ---
 # <a name="access-the-admin-portal"></a>Gå till administrations portalen
 
@@ -37,7 +37,7 @@ Alla roller nedan kan tilldelas för att ge olika åtkomst nivåer:
 |Global administratör     | Administratörer med den här rollen får **Läs-och Skriv behörighet till alla funktioner** på Microsoft Managed Desktop admin-portalen.         |
 |Global läsare     | Administratörer med den här rollen får **skrivskyddade behörigheter till alla funktioner** på Microsoft Managed Desktop admin-portalen.         |
 |Intune tjänst administratör     |  Administratörer med den här rollen får **Läs-och Skriv behörighet till funktioner som inte är relaterade till säkerhet** på Microsoft Managed Desktop admin-portalen.       |
-|Support administratör för tjänsten     | Administratörer med den här rollen får **Läs-och Skriv behörighet till funktioner som inte är relaterade till säkerhet** på Microsoft Managed Desktop admin-portalen.         |
+|Support administratör för tjänsten     | Administratörer med den här rollen får **skrivskyddade behörigheter till funktioner som inte är relaterade till säkerhet** och **Skriv behörigheter för att hantera support ärenden** på Microsoft Managed Desktop admin-portalen.         |
 |Säkerhets administratör | Administratörer med den här rollen får **skrivskyddade behörigheter till alla funktioner** och **Skriv behörigheter för säkerhetsrelaterade funktioner** i Microsoft Managed Desktop i administrations portalen. |
 |Säkerhets läsare |Administratörer med den här rollen får **skrivskyddade behörigheter till alla funktioner** på Microsoft Managed Desktop admin-portalen.|
 

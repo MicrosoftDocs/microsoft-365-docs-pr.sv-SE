@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: Lär dig hur du hanterar Microsoft 365-användarkonton,-licenser och-grupper med PowerShell.
-ms.openlocfilehash: ec60fcfe3c3d2c0e26cb2cca6a56741067d154c0
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: d3745b9365c67615efe32881408d1a717b8dbbed
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073131"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371542"
 ---
 # <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>Hantera Microsoft 365-användarkonton,-licenser och-grupper med PowerShell
 
@@ -53,5 +53,6 @@ Mer information finns i följande artiklar.
 - [Ta bort licenser från användarkonton](remove-licenses-from-user-accounts-with-microsoft-365-powershell.md)
 
 ## <a name="groups"></a>Grupper
-- [Hantera gruppmedlemskap](maintain-group-membership-with-microsoft-365-powershell.md)
+- [Hantera säkerhets grupper](manage-security-groups-with-microsoft-365-powershell.md)
+- [Underhåll säkerhets grupp medlemskap](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Hantera Microsoft 365-grupper](manage-microsoft-365-groups-with-powershell.md)

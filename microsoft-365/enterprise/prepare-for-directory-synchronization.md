@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Här beskrivs hur du förbereder användare till Microsoft 365 med hjälp av profilsynkronisering och de långsiktiga fördelarna med den här metoden.
-ms.openlocfilehash: b74310b0f444da118699c5ad5fbb68b15519b830
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: e49cc4472b47320650d8a0ca90395b69ae5b6df7
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48773991"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371630"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Förbereda för Active Directory-synkronisering till Microsoft 365
 
@@ -127,7 +127,7 @@ De attribut som du måste förbereda finns här:
     Observera att ogiltiga tecken gäller de tecken som följer efter typ avgränsaren och ":", till exempel att SMTP:User@contso.com är tillåtet, men SMTP:user:M@contoso.com inte är det.
 
     > [!IMPORTANT]
-    > Alla SMTP-adresser (Simple Mail Transport Protocol) ska överensstämma med e-poststandarderna. Om det finns dubbletter eller oönskade adresser, se hjälp avsnittet [ta bort dubbletter och oönskade proxyadresser i Exchange](https://go.microsoft.com/fwlink/?LinkId=293860).
+    > Alla SMTP-adresser (Simple Mail Transport Protocol) ska överensstämma med e-poststandarderna. Ta bort dubbletter och oönskade adresser om de finns.
 
 - **sAMAccountName**
 
@@ -170,7 +170,7 @@ De attribut som du måste förbereda finns här:
 
 ## <a name="3-prepare-the-userprincipalname-attribute"></a>3. förbereda attributet userPrincipalName
 
-Active Directory är utformat för att tillåta slutanvändarna i din organisation att logga in på katalogen med antingen **sAMAccountName** eller **userPrincipalName** . På liknande sätt kan slutanvändare logga in på Microsoft 365 med hjälp av användarens huvud namn (UPN) på sitt arbets-eller skol konto. Med katalog-synkronisering görs ett försök att skapa nya användare i Azure Active Directory med samma UPN som finns i AD DS. UPN-filen är formaterad som en e-postadress.
+Active Directory är utformat för att tillåta slutanvändarna i din organisation att logga in på katalogen med antingen **sAMAccountName** eller **userPrincipalName**. På liknande sätt kan slutanvändare logga in på Microsoft 365 med hjälp av användarens huvud namn (UPN) på sitt arbets-eller skol konto. Med katalog-synkronisering görs ett försök att skapa nya användare i Azure Active Directory med samma UPN som finns i AD DS. UPN-filen är formaterad som en e-postadress.
 
 I Microsoft 365 är UPN det standardattribut som används för att skapa e-postadressen. Det är enkelt att få **userPrincipalName** (i AD DS och Azure AD) och den primära e-postadressen i **proxyAddresses** ange olika värden. Om de har olika värden kan de vara förvirrande för administratörer och slutanvändare.
 
