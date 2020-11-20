@@ -860,7 +860,7 @@
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Hantera gransknings- och aviseringsprinciper
   items:
-    - name: Enhetlig granskning
+    - name: Grundläggande granskning
       items:
         - name: Söka i granskningsloggen
           href: search-the-audit-log-in-security-and-compliance.md

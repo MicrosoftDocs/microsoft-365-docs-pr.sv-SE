@@ -171,6 +171,8 @@
       items:
         - name: Microsoft 365-lösningar för Contoso Corporation
           href: contoso-case-study-solutions.md
+        - name: COVID-19 svar och stöd för en hybrid arbetskraft
+          href: contoso-hybrid-workforce.md
         - name: Isolerat team för ett topphemligt projekt
           href: contoso-team-for-top-secret-project.md
         - name: Röstmigrering för Teams
