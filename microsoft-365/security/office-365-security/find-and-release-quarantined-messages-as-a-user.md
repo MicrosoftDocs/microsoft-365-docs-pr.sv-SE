@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Användare kan läsa mer om hur de visar och hanterar meddelanden i karantän i Exchange Online Protection (EOP) som borde ha levererats till dem.
-ms.openlocfilehash: 2a8e37dc430af5b3d3c47179c721d83832f01184
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 48c727c442ee6f861499f1a72c687f7b3457c594
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600351"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130859"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Hitta och släppa meddelanden i karantän som användare i EOP
 
@@ -54,27 +54,16 @@ Som användare kan du visa, släppa och ta bort meddelanden i karantän där du 
 2. Du kan sortera resultaten genom att klicka på en tillgänglig kolumnrubrik. Klicka på **Ändra kolumner** för att visa högst sju kolumner. Standardvärdena är markerade med en asterisk (<sup>\*</sup>):
 
    - **Mottaget**<sup>\*</sup>
-
    - **Avsändare**<sup>\*</sup>
-
    - **Ämne**<sup>\*</sup>
-
    - **Orsak till karantän**<sup>\*</sup>
-
    - **Släppt?**<sup>\*</sup>
-
    - **Principtyp**<sup>\*</sup>
-
    - **Upphör**<sup>\*</sup>
-
    - **Mottagare**
-
    - **Meddelande-ID**
-
    - **Principnamn**
-
    - **Storlek**
-
    - **Riktning**
 
    Klicka på **Spara** eller på **Ställ in på standard** när du är klar.
@@ -82,29 +71,21 @@ Som användare kan du visa, släppa och ta bort meddelanden i karantän där du 
 3. Om du vill filtrera resultaten klickar du på **Filter**. Följande filter är tillgängliga:
 
    - **Upphör att gälla**: Filtrera meddelanden efter när de kommer att upphöra från karantänen:
-
      - **I dag**
-
      - **Kommande 2 dagarna**
-
      - **Kommande 7 dagarna**
-
      - **Anpassad**: Ange ett **Startdatum** och **Slutdatum**.
 
    - **Togs emot**: Ange ett **Startdatum** och **Slutdatum**.
 
    - **Orsak till karantän**:
-
      - **Bulk** (Massutskick)
-
      - **Skräppost**
-
      - **Nätfiske**
-     
+
    - **Principtyp**: filtrera meddelanden efter principtyp:
      - **Princip för skydd mot nätfiske**
-     - **Värdbaserad princip för innehållsfilter**
-     
+     - **Filterprincip för värdbaserat innehåll** (Skräppostprincip)
 
    Tryck på **Rensa** om du vill ta bort filtret. Klicka på **Filter** igen om du vill dölja den utfällbara filterrutan.
 
@@ -113,7 +94,7 @@ Som användare kan du visa, släppa och ta bort meddelanden i karantän där du 
    - **Meddelande-ID**: Meddelandets globalt unika identifierare. Om du väljer ett meddelande i listan visas värdet för **Meddelande-ID** i den utfällbara rutan **Information** som visas. Administratörer kan använda [meddelandespårning](message-trace-scc.md) för att söka efter meddelanden med motsvarande värden för meddelande-ID.
 
    - **Avsändarens e-postadress**: En enskild avsändarens e-postadress.
-   
+
    - **Principnamn**: använd meddelandets hela principnamn. Sökningen är inte skiftlägeskänslig.
 
    - **Mottagarens e-postadress**: En enskild mottagares e-postadress.
@@ -165,9 +146,7 @@ När du har valt ett meddelande finns det alternativ för vad du kan göra med m
 - **Visa meddelandehuvud**: Välj den här länken om du vill visa meddelandehuvudets text. Om du vill analysera fälten och värden för huvuden mer ingående kopierar du meddelandehuvudets text till Urklipp och väljer sedan **Microsofts analysverktyg för meddelanderubrik** för att gå till analysverktyget för fjärranslutning (högerklicka och välj **Öppna i ny flik** om du inte vill lämna Microsoft 365 för att slutföra den här uppgiften). Klistra in meddelandehuvudet på sidan i analysverktyget för meddelanderubrik. Välj **Analyze headers** (Analysera rubriker):
 
 - **Förhandsgranska meddelandet**: Välj något av följande alternativ i den utfällbara rutan som visas:
-
   - **Källvy**: Visar HTML-versionen av meddelandetexten med alla länkar inaktiverade.
-  
   - **Textvy**: Visar meddelandetexten som oformaterad text.
 
 - **Ladda ned meddelande**: Välj **Jag är medveten om riskerna om jag laddar ned meddelandet** i den utfällbara rutan som visas om du vill spara en lokal kopia av meddelandet i .eml-format.

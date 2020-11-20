@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Användarna kan lära sig hur de sköter sina självbetjänings köp.
-ms.openlocfilehash: 7a5b52c0378e4d8f2a48ce7cdb56fb1901c25472
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a94a474bf2a5c506f4e6ed02659cd10d371fb779
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546612"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367161"
 ---
 # <a name="manage-self-service-purchases-users"></a>Hantera självbetjäningsköp (användare)
 
@@ -53,21 +53,21 @@ Du kan se en lista över alla inköpta abonnemang för självbetjäning som du h
 
 ### <a name="to-assign-licenses"></a>Så här tilldelar du licenser
 
-1. Gå till sidan för **fakturerings**licenser i administrations centret  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> .
+1. Gå till sidan för **fakturerings** licenser i administrations centret  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> .
 2. Välj den prenumeration som du vill tilldela licenser för.
 3. Välj **tilldela licenser**.
 4. I fönstret **Tilldela licenser till användare** börjar du skriva ett namn och väljer sedan namnet från resultatet för att lägga till det i listan. Du kan lägga till upp till 20 användare åt gången.
     > [!NOTE]
     > Du kan bara tilldela licenser till personer i organisationen.
-5. Välj **tilldela**och sedan **Stäng**.
+5. Välj **tilldela** och sedan **Stäng**.
 
 ### <a name="to-unassign-licenses"></a>Ta bort tilldelning av licenser
 
-1. Gå till sidan för **fakturerings**licenser i administrations centret  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> .
+1. Gå till sidan för **fakturerings** licenser i administrations centret  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> .
 2. Välj den produkt som du vill ta bort tilldelningen av licenser för.
 3. Välj de användare som du vill ta bort tilldelningen från.
 4. Välj **ta bort licenser**.
-5. Välj **ta bort tilldelning**i rutan **ta bort licenser** .
+5. Välj **ta bort tilldelning** i rutan **ta bort licenser** .
 
 ## <a name="cancel-a-subscription"></a>Avbryta ett abonnemang
 
@@ -80,7 +80,7 @@ Du kan se en lista över alla inköpta abonnemang för självbetjäning som du h
 
 1. I administrations centret går du till sidan **fakturerings**  >  **profiler &-betalningar**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing profiles</a> .
 2. Välj en fakturerings profil i listan.
-3. Välj något av följande alternativ under **betalnings metod**på sidan fakturerings profil information: \
+3. Välj något av följande alternativ under **betalnings metod** på sidan fakturerings profil information:
     - Om du vill uppdatera en befintlig betalnings metod väljer du **Redigera**.
     - Om du vill lägga till en ny betalnings metod väljer du **Ersätt**.
 4. I det högra fönstret anger du kort informationen och väljer sedan **Spara**.

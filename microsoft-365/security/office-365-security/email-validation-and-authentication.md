@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Administratörer kan lära sig hur EOP använder e-autentisering (SPF, DKIM och DMARC) för att förhindra förfalskning, phishing och skräppost.
-ms.openlocfilehash: d490caf600fef9d9caab79a1a97ec29637e10d66
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 7c196b68d88187da2890cc886f646c5416ef9a11
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202981"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131079"
 ---
 # <a name="email-authentication-in-eop"></a>E-postautentisering i EOP
 
@@ -32,9 +32,9 @@ ms.locfileid: "48202981"
 
 E-postautentisering (kallas även för e-postverifiering) är en grupp standarder som försöker sluta förfalskning (e-postmeddelanden från falska avsändare). I alla Microsoft 365-organisationer använder EOP dessa standarder för att verifiera inkommande e-post:
 
-- [SPF](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-worldwide)
+- [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-- [DKIM](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide)
+- [DKIM](use-dkim-to-validate-outbound-email.md)
 
 - [DMARC](use-dmarc-to-validate-email.md)
 
@@ -62,7 +62,7 @@ Du kan läsa Microsofts allmänna meddelande i [Ett hav av nätfiskare, del 2 �
 
 ## <a name="composite-authentication"></a>Sammansatt autentisering
 
-Om det inte finns traditionella SPF-, DKIM-och DMARC-poster i en domän, överförs inte tillräcklig information om autentiserings status vid de post kontrollerna. Därför har Microsoft utvecklat en algoritm för implicit e-autentisering. Med den här algoritmen kombineras flera signaler till ett enda värde som kallas _oseparerad autentisering_eller `compauth` för kort. `compauth` värdet stämplas i **verifierings resultat** rubriken i meddelande rubrikerna.
+Om det inte finns traditionella SPF-, DKIM-och DMARC-poster i en domän, överförs inte tillräcklig information om autentiserings status vid de post kontrollerna. Därför har Microsoft utvecklat en algoritm för implicit e-autentisering. Med den här algoritmen kombineras flera signaler till ett enda värde som kallas _oseparerad autentisering_ eller `compauth` för kort. `compauth` värdet stämplas i **verifierings resultat** rubriken i meddelande rubrikerna.
 
 ```text
 Authentication-Results:
@@ -188,7 +188,7 @@ På grund av problem med skräppost och nätfiske rekommenderar Microsoft att al
 - Om användarna massutskick för att skicka e-post åt dem, ska du kontrollera att domänen i från-adressen (om den tillhör dem) stämmer överens med den domän som beviljar SPF- eller DMARC.
 
 - Kontrollera att följande platser (om de använder dem) ingår i SPF-posten:
-  
+
   - Lokala e-postservrar.
   - E-post som skickas från en SaaS-leverantör (Software as-as-service).
   - E-post som skickas från en molnvärdtjänst (Microsoft Azure, GoDaddy, Rackspace, Amazon Web Services osv.).

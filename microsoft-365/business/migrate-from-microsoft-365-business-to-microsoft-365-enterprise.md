@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Lär dig hur du flyttar ditt företag från Microsoft 365 Business Premium till Microsoft 365 E3.
-ms.openlocfilehash: 2b15d20e3ae1ad0bef871b139e61abf3ba260729
-ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
+ms.openlocfilehash: 3f840a27cdcf50bba7710681135f6c2e241ad14b
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071436"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367064"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Migrera från Microsoft 365 Business Premium till Microsoft 365 E3
 
@@ -129,7 +129,7 @@ Windows 10 Business innehåller följande skydd:
 Windows 10 Enterprise, E3 inkluderar också företags hantering av maskinvarubaserad isolering för Microsoft Edge.
 
 >[!Note]
->Användare som migrerats till Microsoft 365 E3 behöver varje Microsoft Defender för Office 365-licens för fortsatt skydd mot hot. Se till att du köper ytterligare Defender för Office 365-licenser så att alla användare i omfattningen av dina Defender för Office 365-principer är licensierade. 
+>Användare som migrerats till Microsoft 365 E3 måste var och en ha en Microsoft Defender för Office 365-licens för fortsatt skydd mot hot. Se till att du köper ytterligare Defender för Office 365-licenser så att alla användare i omfattningen av dina Defender för Office 365-principer är licensierade. 
 >
 
 ### <a name="device-management-with-intune"></a>Enhets hantering med Intune

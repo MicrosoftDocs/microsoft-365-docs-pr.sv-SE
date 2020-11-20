@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Lär dig hur du använder Threat Explorer och rapporten om identifiering av real tids rapporter för att undersöka och reagera på hot i säkerhets &amp; Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83fa2d89c74b5ec1e2de7e65457313f20bbf2681
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f9412350384c0b2092c376db371e93fa5295c454
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844326"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367195"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vyer i Threat Explorer och identifieringar i real tid
 
@@ -98,7 +98,7 @@ Om du vill visa den här rapporten går du till Explorer (eller real tids identi
 
 Klicka på **avsändare** för att öppna listan över visnings alternativ. Använd den här listan för att visa information efter avsändare, mottagare, rapport typ (användarens kontroll att e-postmeddelandet var skräp, inte skräp post eller Phish) och mycket mer.
 
-Om du till exempel vill visa information om e-postmeddelanden som rapporter ATS som nätfiske-försök klickar du på **avsändarens**  >  **typ** , väljer **Phish** och klickar sedan på knappen Uppdatera.
+Om du till exempel vill visa information om e-postmeddelanden som rapporter ATS som nätfiske-försök klickar du på **avsändarens**  >  **typ**, väljer **Phish** och klickar sedan på knappen Uppdatera.
 
 ![Phish markerad för rapport typ filter](../../media/ThreatExplorerEmailUserReportedPhishSelected.png)
 
@@ -115,7 +115,7 @@ Om du vill visa rapporten klickar du på **Visa**  >  **e-** post i Utforskaren 
 > [!NOTE]
 > Om du får ett fel meddelande som läser upp **för mycket data** kan du lägga till ett filter och, om det behövs, begränsa det datum intervall du visar.
 
-Om du vill använda ett filter väljer du **avsändare** , markerar ett objekt i listan och klickar sedan på knappen Uppdatera. I vårt exempel använde vi **identifierings teknologi** som ett filter (det finns flera tillgängliga alternativ). Visa information efter avsändare, avsändarens domän, mottagare, ämne, bifogade filer och skadlig program vara, skydds status (åtgärder som vidtas av funktioner och principer för hotets skydd i Office 365), identifierings teknologi (hur skadlig program vara upptäcktes) och mycket mer.
+Om du vill använda ett filter väljer du **avsändare**, markerar ett objekt i listan och klickar sedan på knappen Uppdatera. I vårt exempel använde vi **identifierings teknologi** som ett filter (det finns flera tillgängliga alternativ). Visa information efter avsändare, avsändarens domän, mottagare, ämne, bifogade filer och skadlig program vara, skydds status (åtgärder som vidtas av funktioner och principer för hotets skydd i Office 365), identifierings teknologi (hur skadlig program vara upptäcktes) och mycket mer.
 
 ![Visa data om identifierad e-post efter identifierings teknologi](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png)
 
