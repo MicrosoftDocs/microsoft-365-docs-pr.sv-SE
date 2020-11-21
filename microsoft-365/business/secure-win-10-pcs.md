@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Lär dig att skydda Windows 10-datorer när du har konfigurerat Microsoft 365 Business Premium.
-ms.openlocfilehash: a70fcd330fe6ef330fac08512aded4d8913313d5
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 286393779eaa92d33432ff9ad4b21c0a1fb8612c
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778393"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376286"
 ---
 # <a name="secure-windows-10-computers"></a>Skydda Windows 10-datorer
 
@@ -36,13 +36,13 @@ Den här artikeln gäller Microsoft 365 Business Premium.
 
 När du har [konfigurerat](set-up.md) Microsoft 365 Business Premium är det dags att skydda Windows 10-datorerna i din organisation från stöld och skadliga hot som virus och skadlig program vara.
 
-## <a name="to-secure-your-windows-10-pcs"></a>Så här skyddar du dina Windows 10-datorer
+## <a name="to-secure-your-windows-10-computers"></a>Skydda Windows 10-datorer
 
 1. Logga in på [Administrationscenter för Microsoft 365](https://admin.microsoft.com) som global administratör. 
-2. I det vänstra navigerings fältet väljer du **konfiguration** och väljer **skydda Windows 10-datorer**under **inloggning och säkerhet**. Välj **Visa** för att komma igång.
+2. I det vänstra navigerings fältet väljer du **konfiguration** och väljer **skydda Windows 10-datorer** under **inloggning och säkerhet**. Välj **Visa** för att komma igång.
 3. På sidan **Secure The Windows 10-datorer** läser du all information för att förstå vad du aktiverar och vad användaren påverkar.
 
-    Välj **Kom igång**högst upp på sidan.
+    Välj **Kom igång** högst upp på sidan.
 
 4. Välj de alternativ du vill aktivera i fönstret **skydda din Windows 10-dator** . Mer information om inställningarna finns i [säkra Windows 10-enheter](secure-windows-10-devices.md). 
     

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om vilka phishing-principer som är tillgängliga i Exchange Online Protection (EOP) och Microsoft Defender för Office 365.
-ms.openlocfilehash: c728a69a3b0841219e4f9b546e80e71b2cf89151
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: a02d69b278420d814871df8eebdd6efcdf5d8e7f
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123637"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376350"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-nätfiske-principer i Microsoft 365
 
@@ -200,8 +200,11 @@ Följande inställningar för personifiering är bara tillgängliga i policy mot
   - **Personifierade domäner**: från-adressen innehåller en skyddad domän.
   - **Ovanliga tecken**: från-adressen innehåller ovanliga tecken uppsättningar (till exempel matematiska symboler och text eller en blandning av versaler och gemener) i en skyddad avsändare eller domän.
 
-  > [!NOTE]
-  > Även när säkerhets tipset för personifiering är inaktiverat kan du använda en regel för e-postflöde (kallas även en transport regel) för att lägga till en meddelande rubrik med namnet **X-MS-Exchange-EnableFirstContactSafetyTip** . Särskilda säkerhets tips visas som meddelar mottagarna att de ofta inte får e-post från avsändaren eller i de fall då mottagaren får ett e-postmeddelande för första gången från avsändaren.
+> [!IMPORTANT]
+>
+> Även när säkerhets tipset för personifiering är inaktiverat **rekommenderar** vi att du använder en regel för e-postflöde (kallas även för en transport regel) för att lägga till ett meddelande som heter **X-MS – Exchange-EnableFirstContactSafetyTip** till meddelanden. Särskilda säkerhets tips visas som meddelar mottagarna att de ofta inte får e-post från avsändaren eller i de fall då mottagaren får ett e-postmeddelande för första gången från avsändaren.
+>:::image type="content" source="../../media/Urja_FirstContactEmail-Set-us-anti-phish-pol-safetyTip-ImpersonationProtection-MultipleRecipients.png" alt-text="Texten i säkerhets tipset för personifiering med flera mottagare.":::
+<p>
 
 - **Post låda**: aktiverar eller inaktiverar artificiell intelligens (AI) som bestämmer användarnas e-postmönster med deras vanliga kontakter. Den här inställningen hjälper AI-åtskillnaden mellan legitim och falsk e-post från de kontakterna. Post låda-intelligens är bara tillgängligt för Exchange Online-postlådor.
 

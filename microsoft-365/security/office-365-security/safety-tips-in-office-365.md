@@ -18,23 +18,22 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig mer om hur EOP och Office 365 skyddar dig mot skräp post, nätfiske och dataexekveringsskydd genom att lägga till ett säkerhets tips längst upp i e-postmeddelandena.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e204021bfd79dabd4abdeefaa990da50915eaf0
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: e36887e2bb0146c86a8a4f1526f1e712a38b46ba
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948463"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376625"
 ---
 # <a name="safety-tips-in-email-messages"></a>Säkerhetstips i e-postmeddelanden
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
 Exchange Online Protection (EOP) och Microsoft 365 skyddar dig mot skräp post, nätfiske och skadlig program vara. I dag är vissa av dessa attacker så väl utformade att de ser äkta ut. Det räcker inte med att skicka meddelanden till mappen skräp post. När du sedan checkar in din e-post i Outlook eller Outlook på webben eller en e-postklient kontrollerar EOP automatiskt avsändaren och lägger till ett säkerhets tips längst upp i e-postmeddelandet.
 
 Säkerhets tips i Outlook är inte beroende av vilken version av Outlook du använder eftersom säkerhets tipset är knäckt och infogat direkt i meddelande texten. Det innebär att säkerhets tipset visas i den e-postklient som du använder. Den är klar på e-postfilter nivån och återges inte på e-postklientnivå, så den visas också i alla e-postklienter.
 
-Säkerhets tipset – ett färgkodat meddelande – varnar dig om potentiellt skadliga meddelanden. De flesta meddelanden i Inkorgen har ingen säkerhets tips. Du kan bara se dem när EOP och Microsoft 365 har information som du behöver för att förhindra skräp post, nätfiske och skadlig program vara. Om säkerhets tips visas i Inkorgen kan du använda följande exempel för att lära dig mer om olika typer av säkerhets tips.
+Säkerhets tipset--ett färgkodat meddelande – du får en varning om potentiellt skadliga meddelanden. De flesta meddelanden i Inkorgen har ingen säkerhets tips. Du kan bara se dem när EOP och Microsoft 365 har information som du behöver för att förhindra skräp post, nätfiske och skadlig program vara. Om säkerhets tips visas i Inkorgen kan du använda följande exempel för att lära dig mer om olika typer av säkerhets tips.
 
 - Misstänkt e-post (rött säkerhets tips).
 
