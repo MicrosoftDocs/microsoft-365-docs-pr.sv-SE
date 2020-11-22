@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Bestäm var dina Microsoft 365 kunddata lagras globalt
-ms.openlocfilehash: 4fd3f480ef2ad3389e9a959695b9654badbda27f
-ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
+ms.openlocfilehash: 6ad35082cbed602325e2a32edb825a17b5cb9f4a
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49135997"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376521"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -29,7 +29,9 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Var dina Microsoft 365 kunddata lagras
 
-Tabellen nedan visar var kunddata lagras i vila för Microsoft 365-tjänster i alla Microsofts globala moln platser. Utöka platsen för ditt fakturerings adress land för att ta reda på var kunddata för varje tjänst ska lagras.
+Tabellen nedan visar var kunddata lagras i vila för Microsoft 365-tjänster i alla Microsofts globala molnplatser. Utöka platsen för ditt fakturerings adress land för att ta reda på var kunddata för varje tjänst ska lagras.
+
+Om företaget ligger i EU finns mer information i [Dataplatser för Europeiska unionen](EU-data-storage-locations.md). 
 
 Kunderna ska visa information om klientplats för särskild dataplats i administrationscentret för Microsoft 365 i **Inställningar | Organisationens inställningar | Organisations profil | Dataplats**.
 
@@ -38,7 +40,6 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 Hitta information om avtalade åtaganden för lagrings platsen för kunddata i rest i [Microsoft Online Services terms (OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215).
 
 Om du använder Azure Active Directory-dataplatser går du till [AAD data Map](https://go.microsoft.com/fwlink/p/?linkid=2092972).
-
 
 Om kundens faktureringsadress är utanför Europa och kunden har en utbildningsprenumeration på Office 365, utan hinder av avdelningen för kundens vilande kunddata för kärntjänster online i OST, kommer Microsoft att tillhandahålla kundens Office 365-klientorganisation i, överföra kunddata till och lagra vilande kunddata var som helst inom Europa och Nordamerika.  Om kundens faktureringsadress är i Europa och kunden har en utbildningsprenumeration på Office 365, utan hinder av avdelningen för kundens vilande kunddata för kärntjänster online i OST, kommer Microsoft att tillhandahålla kundens Office 365-klientorganisation i, överföra kunddata till och lagra vilande kunddata var som helst inom EU.
 
@@ -153,12 +154,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -254,7 +255,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -417,7 +418,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 1 – EMEA |
 | SharePoint Online | Global geography 1 – EMEA |
 | Skype för företag | Global geography 1 – EMEA |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 1 – EMEA |
 | EOP | Global geography 1 – EMEA |
 | Intune | Global geography 1 – EMEA |
@@ -485,21 +486,21 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -513,7 +514,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 1 – EMEA |
 | SharePoint Online | Global geography 1 – EMEA |
 | Skype för företag | Global geography 1 – EMEA |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 1 – EMEA |
 | EOP | Global geography 1 – EMEA |
 | Intune | Global geography 1 – EMEA |
@@ -585,12 +586,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -653,21 +654,21 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -753,12 +754,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -926,7 +927,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -969,12 +970,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -989,21 +990,21 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -1065,12 +1066,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -1257,12 +1258,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -1281,12 +1282,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -1305,12 +1306,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -1425,12 +1426,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -1493,21 +1494,21 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -1541,21 +1542,21 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -1565,21 +1566,21 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -1589,21 +1590,21 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -1805,21 +1806,21 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -1905,12 +1906,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -1934,7 +1935,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | EOP | Australien |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Australien |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Australien |
@@ -1949,20 +1950,20 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
+| Strömma | EU |
 | Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
@@ -1986,8 +1987,8 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | Sway | USA |
 | Yammer | EU |
 | OneNote-tjänster | Frankrike |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -2025,12 +2026,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -2121,7 +2122,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 1 – EMEA |
 | SharePoint Online | Global geography 1 – EMEA |
 | Skype för företag | Global geography 1 – EMEA |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 1 – EMEA |
 | EOP | Global geography 1 – EMEA |
 | Intune | Global geography 1 – EMEA |
@@ -2154,8 +2155,8 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | Sway | USA |
 | Yammer | EU |
 | OneNote-tjänster | Tyskland |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -2213,21 +2214,21 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -2313,12 +2314,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -2577,12 +2578,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -2597,21 +2598,21 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -2654,7 +2655,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | EOP | Indien |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Indien |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Indien |
@@ -2673,12 +2674,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -2717,21 +2718,21 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -2789,21 +2790,21 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -2961,12 +2962,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -2990,7 +2991,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | EOP | Sydkorea |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Sydkorea |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Sydkorea |
@@ -3057,7 +3058,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 1 – EMEA |
 | SharePoint Online | Global geography 1 – EMEA |
 | Skype för företag | Global geography 1 – EMEA |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 1 – EMEA |
 | EOP | Global geography 1 – EMEA |
 | Intune | Global geography 1 – EMEA |
@@ -3081,12 +3082,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -3101,21 +3102,21 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -3245,21 +3246,21 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -3269,21 +3270,21 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -3345,12 +3346,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -3369,12 +3370,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -3413,21 +3414,21 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -3441,12 +3442,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -3633,12 +3634,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -3753,12 +3754,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -3801,12 +3802,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -3825,12 +3826,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -3845,13 +3846,13 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
@@ -3859,7 +3860,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
 | Strömma | EU |
-| Whiteboard | EU: s EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -3897,12 +3898,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -3926,7 +3927,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | EOP | Australien |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Australien |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Australien |
@@ -4017,12 +4018,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -4041,12 +4042,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -4065,12 +4066,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -4137,7 +4138,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 1 – EMEA |
 | SharePoint Online | Global geography 1 – EMEA |
 | Skype för företag | Global geography 1 – EMEA |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 1 – EMEA |
 | EOP | Global geography 1 – EMEA |
 | Intune | Global geography 1 – EMEA |
@@ -4161,12 +4162,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -4190,7 +4191,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -4233,12 +4234,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -4305,12 +4306,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -4329,12 +4330,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -4349,21 +4350,21 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -4373,21 +4374,21 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -4449,7 +4450,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 1 – EMEA |
 | SharePoint Online | Global geography 1 – EMEA |
 | Skype för företag | Global geography 1 – EMEA |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 1 – EMEA |
 | EOP | Global geography 1 – EMEA |
 | Intune | Global geography 1 – EMEA |
@@ -4494,20 +4495,20 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | Tjänst | Position |
 | --- | --- |
 | Exchange Online | EU |
-| OneDrive för företag | EU: s EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -4737,12 +4738,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -4929,12 +4930,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -4973,21 +4974,21 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -4997,21 +4998,21 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -5025,12 +5026,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -5117,8 +5118,8 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
@@ -5130,8 +5131,8 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -5145,12 +5146,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -5237,21 +5238,21 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Position |
 | --- | --- |
-| Exchange Online | EU: s EU |
-| OneDrive för företag | EU: s EU |
+| Exchange Online | EU |
+| OneDrive för företag | EU |
 | SharePoint Online | EU: s EU |
 | Skype för företag | EU |
 | Microsoft Teams | EU: s EU |
 | Office Online &amp; Mobile | EU: s EU |
-| EOP | EU: s EU |
+| EOP | EU |
 | Intune | EU: s EU |
 | MyAnalytics | EU: s EU |
 | Planner | EU: s EU |
 | Sway | USA |
 | Yammer | EU  |
 | OneNote-tjänster | EU: s EU |
-| Strömma | EU: s EU |
-| Whiteboard | EU: s EU |
+| Strömma | EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -5289,12 +5290,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -5313,7 +5314,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 1 – EMEA |
 | SharePoint Online | Global geography 1 – EMEA |
 | Skype för företag | Global geography 1 – EMEA |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 1 – EMEA |
 | EOP | Global geography 1 – EMEA |
 | Intune | Global geography 1 – EMEA |
@@ -5361,12 +5362,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -5385,12 +5386,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -5433,7 +5434,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
@@ -5457,12 +5458,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -5553,7 +5554,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 1 – EMEA |
 | SharePoint Online | Global geography 1 – EMEA |
 | Skype för företag | Global geography 1 – EMEA |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 1 – EMEA |
 | EOP | Global geography 1 – EMEA |
 | Intune | Global geography 1 – EMEA |
@@ -5601,12 +5602,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -5731,7 +5732,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | Yammer | EU |
 | OneNote-tjänster | Storbritannien |
 | Strömma | Storbritannien |
-| Whiteboard | EU: s EU |
+| Whiteboard | EU |
 | Formulär | EU: s EU |
 | Workplace Analytics | USA |
 </p></details>
@@ -5793,12 +5794,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -5817,7 +5818,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 1 – EMEA |
 | SharePoint Online | Global geography 1 – EMEA |
 | Skype för företag | Global geography 1 – EMEA |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 1 – EMEA |
 | EOP | Global geography 1 – EMEA |
 | Intune | Global geography 1 – EMEA |
@@ -5841,12 +5842,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -5889,12 +5890,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |
@@ -5913,12 +5914,12 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | OneDrive för företag | Global geography 2 – Pacific, Stilla havs området |
 | SharePoint Online | Global geography 2 – Pacific, Stilla havs området |
 | Skype för företag | Global geography 2 – Pacific, Stilla havs området |
-| Microsoft Teams | Global geography 2 – Pacific, Stilla havs området |
+| Microsoft Teams | Global geography 2 – Asien och Stillahavsområdet |
 | Office Online &amp; Mobile | Global geography 2 – Pacific, Stilla havs området |
 | EOP | Global Geography 2 – Asien och Stillahavsområdet |
 | Intune | Global geography 2 – Pacific, Stilla havs området |
 | MyAnalytics | Global geography 2 – Pacific, Stilla havs området |
-| Planner | Global geography 2 – Pacific, Stilla havs området |
+| Planner | Global geography 2 – Asien och Stillahavsområdet |
 | Sway | USA |
 | Yammer | USA |
 | OneNote-tjänster | Global geography 2 – Pacific, Stilla havs området |

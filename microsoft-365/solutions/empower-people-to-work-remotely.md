@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: Kontrollera att du har aktiverat alla funktioner i Microsoft 365 för att maximera produktiviteten på distansmedarbetaren och bibehålla säker åtkomst till servrar, data och moln.
-ms.openlocfilehash: 6cf956d7d7e895dc328c8551f98e78d0fc42d86c
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 833f0351c3eb78afb7218ea1c1c51151d70bb608
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357043"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371508"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Underlätta för distansarbetare med Microsoft 365
 
@@ -114,4 +114,4 @@ Följ dessa steg för att skydda och optimera åtkomsten till organisationens se
 
 Om du vill ha den senaste informationen från Microsoft om support för distansarbetare går du till [Aktivera hybridarbete med Microsoft Teams-webbplatsen](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).
 
-Om du vill se hur en fiktiv men representativ organisation med flera nationella organisationer har befogenhet att fjärrarbeta finns mer information i [Contosos COVID-19-svar och infrastruktur för en hybrid arbetsstyrka](contoso-hybrid-workforce.md).
+Om du vill se hur en fiktiv men representativ multinationell organisation driver distansarbete finns mer information i [Contosos Svar mot COVID-19 och infrastruktur för distans- och på plats-arbete](contoso-remote-onsite-work.md).

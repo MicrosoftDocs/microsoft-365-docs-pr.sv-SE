@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: Institutioner för finansiella tjänster kan hålla ekonomiska säkerhets efterlevnad och effektivt samarbeta med Microsoft 365 och Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: 2e0148a89a811fb910237469c42e136d0c744087
-ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
+ms.openlocfilehash: cf485ec673c2f53d1b088c24be950dfe98c71276
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993406"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376649"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Viktig information om efterlevnad och säkerhet för amerikanska banker och stora marknader
 
@@ -53,7 +53,7 @@ Följande nedladdningsbara illustrationer kompletterar den här artikeln. Woodgr
 
 | Objekt | Beskrivning |
 |:-----|:-----|
-|[![Modellaffisch: Microsoft 365 illustrationer för informationsskydd och efterlevnadsfunktioner](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Ladda ned som PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [Hämta som Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Uppdaterades: Oktober 2020|Innehåller: <ul><li>  Microsoft Informationsskydd och dataförlustskydd </li><li>Kvarhållningsprinciper och -etiketter </li><li>Informationsbarriärer</li><li>Kommunikationsefterlevnad</li><li>Intern risk</li><li>Datainmatning för tredje part</li>|
+|[![Modellaffisch: Microsoft 365 illustrationer för informationsskydd och efterlevnadsfunktioner](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/>Engelska:[Ladda ned som PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [Hämta som Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japanska[Ladda ned som PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)\| [Hämta som Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)<br/> Uppdaterad i november 2020|Innehåller: <ul><li>  Microsoft Informationsskydd och dataförlustskydd </li><li>Kvarhållningsprinciper och -etiketter </li><li>Informationsbarriärer</li><li>Kommunikationsefterlevnad</li><li>Intern risk</li><li>Datainmatning för tredje part</li>|
 
 
 ## <a name="empower-organizational-and-employee-productivity-by-using-microsoft-365-and-teams"></a>Möjliggör produktivitet i organisationer och hos anställda genom att använda Microsoft 365 och Teams
@@ -62,7 +62,7 @@ Samarbete kräver vanligt vis olika former av kommunikation, möjligheten att la
 
 Genom att tillhandahålla anställda med en modern molnbaserad samarbetsplattform kan de välja och integrera verktyg som gör dem mer produktiva och få dem att hitta smidiga sätt att arbeta på. Att använda Teams tillsammans med säkerhetskontroller och policyer för informationsstyrning som skyddar organisationen kan hjälpa personalen att kommunicera och samarbeta effektivt.
 
-Teams tillhandahåller ett samarbetsnav till organisationen. Det hjälper människor att samlas för att arbeta produktivt med gemensamma initiativ och projekt. Med Teams kan grupp medlemmarna utföra 1:1 chatt eller med flera personer samt samarbeta och samredigera dokument och lagra och dela filer. Teams förenklar även onlinemöten via integrerat företag röst och video. Teams kan också anpassas med Microsoft-appar som Microsoft Planner, Microsoft Dynamics 365, PowerApps, PowerBI och applikationer från tredje part. Teams är utformat för att användas av både interna gruppmedlemmar och tillåtna externa användare som kan delta i gruppkanaler, delta i chattar, komma åt lagrade filer och använda andra program
+Teams tillhandahåller ett samarbetsnav till organisationen. Det hjälper människor att samlas för att arbeta produktivt med gemensamma initiativ och projekt. Med Teams kan grupp medlemmarna utföra 1:1 chatt eller med flera personer samt samarbeta och samredigera dokument och lagra och dela filer. Teams förenklar även onlinemöten via integrerat företag röst och video. Teams kan också anpassas med Microsoft-appar som Microsoft Planner, Microsoft Dynamics 365, PowerApps, PowerBI och företagsappar från tredje part. Teams är utformat för att användas av både interna gruppmedlemmar och tillåtna externa användare som kan delta i gruppkanaler, delta i chattar, komma åt lagrade filer och använda andra program
 
 Varje Microsoft-team stöds av en Microsoft 365-grupp. Gruppen anses vara medlemskapstjänsten i flera Office 365-tjänster, inklusive Teams. Microsoft 365-grupper används för att på ett säkert sätt skilja mellan ”ägare” och ”medlemmar” och för att styra åtkomsten till olika funktioner i Teams. När de är kopplade till lämpliga styrningskontroller och regelbundet administrerade åtkomstgranskningar kan Teams bara låta medlemmar och ägare använda godkända kanaler och funktioner.
 
@@ -226,7 +226,7 @@ Finansiella institut hanterar stora mängder data. Alla lagringsperioder initier
 
 Kvarhållningsetiketterna publiceras sedan till SharePoint- och OneDrive-webbplatser, Exchange-postlådor och Microsoft 365-grupper. Användare kan tillämpa lagringsetiketterna manuellt i dokument och e-postmeddelanden. Arkivhanterare kan använda information för att automatiskt använda etiketterna. Intelligenta funktioner kan baseras på [över 90 inbyggda typer av känslig information](https://docs.microsoft.com/microsoft-365/compliance/content-search?view=o365-worldwide) (till exempel ABA outingnummer, bankkontonummer eller personnummer). De kan också anpassas baserat på nyckelord och känsliga data som finns i dokument och e-postmeddelanden, t. ex kreditkortsnummer eller annan personlig information som är baserad på SharePoint-metadata. För data som inte är enkel att identifiera i manuell eller automatiserad mönstermatchning kan träningsbara klassificerare användas för att smart klassificera dokument baserat på maskininlärningstekniker.
  
-_ *Securities and Exchange Commission (SEC)* * kräver att mäklare och andra reglerade finansiella institut bevarar all affärsrelaterad kommunikation. Kraven gäller för många typer av kommunikation och data, t. ex. e-post, dokument, snabbmeddelanden, fax och mycket mer. **SEC-regel 17a-4** definierar villkor som dessa organisationer måste uppfylla för att lagra poster i ett elektroniskt datalagringssystem. Under 2003 utfärdade SEC en version som klargör de här kraven. Det innehöll bland annat följande kriterier:
+_ *Securities and Exchange Commission (SEC)** kräver att mäklare och andra reglerade finansiella institut bevarar all affärsrelaterad kommunikation. Kraven gäller för många typer av kommunikation och data, t. ex. e-post, dokument, snabbmeddelanden, fax och mycket mer. **SEC-regel 17a-4** definierar villkor som dessa organisationer måste uppfylla för att lagra poster i ett elektroniskt datalagringssystem. Under 2003 utfärdade SEC en version som klargör de här kraven. Det innehöll bland annat följande kriterier:
 
 * Data som bevaras av ett elektroniskt lagringssystem måste vara icke-omskrivningsbar och inte raderbar. Detta kallas för ett WORM-krav (write once, read many).
 * Lagringssystemet måste kunna lagra data som överskrider den lagringsperiod som regeln kräver, i händelse av en stämningsansökan eller annan rättslig order.

@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: En fiktiv men representativ global organisation har distribuerat Microsoft 365-lösningar.
-ms.openlocfilehash: 8ba1661a2a4257409b7622b6d78dca4bcd103929
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 66040bdd64e83d796e6d045aad2f512898452c50
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357701"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371642"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Microsoft 365-lösningar för Contoso Corporation
 
@@ -32,7 +32,7 @@ Läs mer om [Contoso Corporation](../enterprise/contoso-overview.md), deras inte
 
 Härnäst ska vi se hur Contoso använder Microsoft 365 för dessa lösningar och scenarier:
 
-- [COVID-19 svar och stöd för en hybrid arbetskraft](contoso-hybrid-workforce.md)
+- [Svar mot COVID-19 och infrastruktur för distans- och på plats-arbete](contoso-remote-onsite-work.md)
 
 - [Ett isolerat team för ett topphemligt projekt](contoso-team-for-top-secret-project.md)
 
