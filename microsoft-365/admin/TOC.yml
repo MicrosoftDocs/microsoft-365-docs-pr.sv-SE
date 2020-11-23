@@ -289,7 +289,7 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Aktivera modern autentisering för Office 2013
           href: security-and-compliance/enable-modern-authentication.md
-        - name: Skydda Microsoft Business Premium
+        - name: Secure Microsoft 365 Business Premium
           items:
             - name: Förutsättningar för dataskydd
               href: ../business/pre-requisites-for-data-protection.md
@@ -297,6 +297,10 @@
               href: ../business/security-features.md
             - name: Öka hotskyddet
               href: ../business/increase-threat-protection.md
+            - name: Hot som upptäcks av Microsoft Defender Antivirus
+              href: ../business/threats-detected-defender-av.md
+            - name: Granska identifierade hot och vidta åtgärder
+              href: ../business/review-threats-take-action.md
             - name: Konfigurera funktioner för efterlevnad
               href: ../business/set-up-compliance.md
         - name: Säkerhetspoäng
