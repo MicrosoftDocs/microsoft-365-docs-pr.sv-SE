@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Lär dig hur du granskar och hanterar hot som upptäckts av Microsoft Defender Antivirus på Windows 10-enheter.
-ms.openlocfilehash: 21830b91bfbb88fdd5d5139ee07c4dfb35f5b875
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: ffdf5cffb50d6145d6059233e0850839f4dfb582
+ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376734"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385246"
 ---
 # <a name="review-detected-threats-and-take-action"></a>Granska identifierade hot och vidta åtgärder
 
@@ -58,7 +58,7 @@ Följande procedur gäller för kunder som har Microsoft 365 Business Premium.
 
 ## <a name="manage-threat-detections-on-the-active-threats-page"></a>Hantera hot identifieringar på sidan **aktiva hot**
 
-Följande procedur gäller för kunder som har Microsoft 365 Business. [Windows 10-enheter måste vara säkra och vara](/microsoft-365/business/secure-win-10-pcs) [registrerade i Intune](/mem/intune/enrollment/windows-enrollment-methods).
+Följande procedur gäller för kunder som har Microsoft 365 Business Premium. [Windows 10-enheter måste vara säkra och vara](/microsoft-365/business/secure-win-10-pcs) [registrerade i Intune](/mem/intune/enrollment/windows-enrollment-methods).
 
 > [!NOTE]
 > **Microsoft Defender Antivirus** -kortet och **aktiva hot** -sidan distribueras i faser, så du kanske inte har omedelbar åtkomst till dem.
