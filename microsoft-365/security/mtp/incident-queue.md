@@ -1,6 +1,6 @@
 ---
 title: Prioritera incidenter i Microsoft 365 Defender
-description: Lär dig hur du prioriterar händelser från incident kön i Microsoft 365 Defender
+description: Lär dig hur du filtrerar incidenter från incident kön i Microsoft 365 Defender
 keywords: incident, kö, översikt, enheter, identiteter, användare, post låda, e-post, incidenter
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4369d51ed740af652be632ba0b8752c708d6c719
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: e587004fbb3bc6defab985cea9b427f64b3aab35
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877225"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409261"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Prioritera incidenter i Microsoft 365 Defender
 
@@ -38,7 +38,7 @@ ms.locfileid: "48877225"
 
 
 
-Microsoft 365 Defender använder korrelations analys och aggregerar alla relaterade varningar och undersökningar från olika produkter i en olycka. Microsoft 365 Defender utlöser också unika aviseringar för aktiviteter som endast kan identifieras som skadlig från slut punkt till slut punkt som Microsoft 365 Defender har på hela egendomen och produkt serien. Genom att göra så gör Microsoft 365 Defender berättarröst den bredare angrepps berättelsen och gör att en säkerhets åtgärd kan analyseras för att förstå och hantera komplexa hot i organisationen.
+Microsoft 365 Defender använder korrelations analys och aggregerar alla relaterade varningar och undersökningar från olika produkter i en olycka. Microsoft 365 Defender utlöser också unika aviseringar för aktiviteter som endast kan identifieras som skadlig från slut punkt till slut punkt som Microsoft 365 Defender har på hela egendomen och produkt serien. Den här vyn ger säkerhets åtgärder som analyserar den större angrepps berättelsen som hjälper dem att förstå och hantera komplexa hot i organisationen.
 
 
 **Incident kön** visar en samling händelser som har flaggats från mellan enheter, användare och post lådor. Det hjälper dig att sortera genom tillbud för att prioritera och skapa ett välinformerat Cybersecurity.
@@ -100,8 +100,7 @@ Allvarlighets graden för en olycka är att det påverkar vilken inverkan den ka
 ### <a name="status"></a>Status
 Du kan välja att begränsa listan med incidenter baserat på deras status för att se vilka som är aktiva eller stängda.
 
->[!IMPORTANT]
->Klassificerings-, enhets-, gransknings-och OS-plattforms filtren är för närvarande endast tillgängliga i offentlig för hands version.
+
 
 
 ## <a name="next-steps"></a>Nästa steg

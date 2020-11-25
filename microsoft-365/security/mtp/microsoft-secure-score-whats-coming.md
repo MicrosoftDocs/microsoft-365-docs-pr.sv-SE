@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3e9a8b34f8f112cadc0377dd73ba846c88b8604c
-ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
+ms.openlocfilehash: e42c65fdb4d409c1da7b85fbe7eca13170b9b974
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49374013"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409239"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Det här kommer att komma till Microsofts säkra Poäng
 
@@ -33,6 +33,17 @@ Microsoft Secure score finns https://security.microsoft.com/securescore i [Micro
 ## <a name="proposed-changes"></a>Föreslagna ändringar
 
 Vi håller på att göra några ändringar i närmaste framtid och gör [Microsoft säkert Poäng](microsoft-secure-score.md) en bättre representant för din säkerhets Posture och bättre användbarhet. Ditt Poäng och högsta möjliga poäng kan förändras.
+
+### <a name="december-2020"></a>December 2020
+
+Lägga till 6 konton-relaterade förbättrings åtgärder för Microsoft Defender för slut punkten (tidigare Microsoft Defender ATP):
+
+- Ange minsta längd för lösen ord för "14 eller fler tecken"
+- Ange "lösen ord historik" för "24 eller fler lösen ord"
+- Ange "maximalt lösen ord ålder" på "60 eller färre dagar", men inte 0 '
+- Ange "lägst lösen ord ålder" på "1 eller fler dagar"
+- Inaktivera det inbyggda administratörs kontot
+- Inaktivera det inbyggda gäst kontot
 
 ### <a name="november-2020"></a>November 2020
 
