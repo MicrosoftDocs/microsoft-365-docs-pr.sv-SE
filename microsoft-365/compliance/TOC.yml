@@ -477,8 +477,6 @@
           items:
             - name: Konfigurera behörighetsfiltrering för innehållssökning
               href: permissions-filtering-for-content-search.md
-            - name: Öka nedladdningshastigheten när du exporterar sökresultat
-              href: increase-download-speeds-when-exporting-ediscovery-results.md
             - name: Ändra storleken på PST-filer när du exporterar sökresultat
               href: change-the-size-of-pst-files-when-exporting-results.md
             - name: Inaktivera rapporter när du exporterar sökresultat

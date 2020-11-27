@@ -141,6 +141,8 @@
                       href: mtp/advanced-hunting-shared-queries.md
                     - name: 'Jaga över olika enheter, e-postmeddelanden, appar och identiteter'
                       href: mtp/advanced-hunting-query-emails-devices.md
+                    - name: Jag utpressningstrojan
+                      href: mtp/advanced-hunting-find-ransomware.md
                     - name: Övergång från Defender för Endpoint
                       href: mtp/advanced-hunting-migrate-from-mdatp.md
                 - name: Arbeta med frågeresultat
