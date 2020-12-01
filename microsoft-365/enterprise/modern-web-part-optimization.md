@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Lär dig hur du använder Nätverksdiagnostik för att optimera prestanda för webb delar i SharePoint Online-moderna webbplats sidor.
-ms.openlocfilehash: 7dcfcbfe033ef5f4257cc9688b61aca3227ade8b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f7b72aa8ed212147c06660585c4e58e548762c35
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694608"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519757"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimera webb dels prestanda i sidor i SharePoint Online
 
@@ -80,7 +80,7 @@ Det finns tre möjliga orsaker till dåligt webb dels prestanda. Använd informa
   - Åter användnings bara ramverk som _reagerar_ och _Fabric-import_ som ingår i SharePoint Framework (SPFx). Mer information finns i [Översikt över SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Kontrol lera att du använder den senaste versionen av SharePoint Framework och uppgradera till nya versioner när de blir tillgängliga.
 - Data hämtning/cachning
-  - Om webb delen är beroende av extra Server samtal för att hämta data för visning kontrollerar du att dessa Server-API: er snabbt och/eller implementerar cachelagring på klient sidan (till exempel genom att använda _localStorage_ eller _IndexDB_ för större uppsättningar).
+  - Om webb delen är beroende av extra Server samtal för att hämta data för visning kontrollerar du att dessa Server-API: er snabbt och/eller implementerar cachelagring på klient sidan (till exempel genom att använda _localStorage_ eller _IndexedDB_ för större uppsättningar).
   - Om det krävs flera samtal för att återge viktiga data bör du överväga att använda en server eller någon annan metod för att konsolidera förfrågningar till ett enda samtal.
   - Om vissa delar av data kräver ett långsammare API men inte är kritiska för inledande rendering kan du koppla ihop dessa med ett separat samtal som körs efter att kritiska data har Render ATS.
   - Om flera delar använder samma data kan du använda ett vanligt data lager för att undvika dubbletter.
@@ -106,6 +106,6 @@ Innan du gör sid ändringar för att åtgärda prestanda problem ska du anteckn
 
 [Prestanda i den moderna SharePoint-upplevelsen](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
-[Nätverk för innehålls leverans](content-delivery-networks.md)
+[Nätverk för innehållsleverans](content-delivery-networks.md)
 
 [Använda Office 365-innehålls leverans nätverk (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md)

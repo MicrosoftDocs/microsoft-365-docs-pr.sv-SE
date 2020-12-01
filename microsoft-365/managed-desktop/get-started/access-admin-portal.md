@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 66e4e5c305947f90f935563a3baf0592ce42480a
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: deeced350ad867a374a486967c2cbd278ba91710
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371676"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519335"
 ---
 # <a name="access-the-admin-portal"></a>Gå till administrations portalen
 
@@ -59,7 +59,7 @@ Alla roller nedan kan tilldelas för att ge olika åtkomst nivåer:
 Om du behöver hjälp med att tilldela Azure Active Directory-roller kan du läsa [behörigheter för administratörs roller i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 För enkel hantering av de inbyggda rollerna har en säkerhets grupp skapats för varje anpassad roll (till exempel "moderna arbets plats roller – säkerhets chef"). Följ de här stegen om du vill tilldela användare till en av säkerhets grupperna:
-1.  Gå till Azure-portalen och navigera till Azure Active Directory-bladet.
+1.  Gå till Microsoft Endpoint Manager-portalen
 2.  Välj grupper på vänster sida.
 3.  Sök efter moderna arbets plats roller och välj sedan gruppen som är kopplad till den roll du vill tilldela. 
 4.  Välj medlemmar på vänster sida och välj sedan + Lägg till medlemmar i kommando fältet.

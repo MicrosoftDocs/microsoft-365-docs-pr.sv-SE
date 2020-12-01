@@ -23,12 +23,12 @@ f1.keywords:
 - NOCSH
 description: Börja planera uppgraderingen från Office 2010-servrar och-klient program, eftersom supporten slutar snart och anpassade support avtal inte är tillgängliga.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 879aae71f703d8a26b3d6e640eff6d30a81febac
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: b9dcf5c36cff5e14828b1a6540ed920577537c49
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456357"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519792"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Resurser som hjälper dig att uppgradera från Office 2010-servrar och-klienter
 
@@ -38,17 +38,17 @@ Office 2010 och Exchange 2010 nådde sin slut på support den **13 oktober 2020*
 
 SharePoint 2010 och Project Server 2010 kommer att nå Supportens slut den **13 April 2021**.
 
-När du planerar uppgraderingen är det en bra idé att gå vidare till Microsoft 365.
+När du planerar uppgraderingen bör du överväga att gå till Microsoft 365.
 
-- Microsoft 365 har molnbaserade tjänster för Office 2010-serverprodukter som Exchange Server och SharePoint Server och tjänster, till exempel Teams och OneDrive för företag.
+- Microsoft 365 har molnbaserade tjänster för Office 2010-serverprodukter, till exempel Exchange Server och SharePoint Server och tjänster, till exempel Teams och OneDrive för företag.
 
-- Microsoft 365-appar för företag (tidigare kallat Office 365 ProPlus), som ingår i Microsoft 365 E3 och E5, är den uppsättning Office-klientprogram som du installerar på din lokala enhet. De uppdateras med nya produktivitets-och säkerhetsfunktioner kontinuerligt från Microsofts moln.
+- Microsoft 365-appar för företag (tidigare kallat *Office 365 ProPlus*), som ingår i Microsoft 365 E3 och E5, är den uppsättning Office-klientprogram som du installerar på din lokala enhet. De uppdateras med nya produktivitets-och säkerhetsfunktioner regelbundet från Microsofts moln.
 
-En visuell Sammanfattning av alternativen uppgradera, migrera och flytta till moln för Office 2010-klienter och-servrar och Windows 7 finns i avsnittet [support affisch](../downloads/Office2010Windows7EndOfSupport.pdf).
+En visuell Sammanfattning av alternativen för uppgradering, migrering och flytt till moln för Office 2010-klienter och-servrar och Windows 7 finns i avsnittet [support affisch](../downloads/Office2010Windows7EndOfSupport.pdf).
 
-[![Bild på affischen för supportens upphörande för Office 2010-klienter/servrar och Windows 7](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Slut på support för Office 2010-klienter och-servrar och Windows 7-affisch](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-Den här affischen är ett snabbt sätt att förstå de olika vägarna som du kan vidta för att förhindra att Office 2010-klient och Server produkter och Windows 7 når supporten, med önskade sökvägar och alternativ support i Microsoft 365 Enterprise markerat.
+Den här affischen sammanfattar olika banor som du kan ta för att hantera Office 2010-klient och Server produkter och Windows 7 från att få slut på support. Önskade sökvägar och alternativ stöd i Microsoft 365 Enterprise är markerade.
 
 Du kan också [Ladda ned](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) den här affischen och skriva ut den i Letter-, Legal-och Tabloid-format (11 x 17).
 

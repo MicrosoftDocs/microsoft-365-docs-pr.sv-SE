@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hur integritet skyddas med produktivitets poängen.
-ms.openlocfilehash: 8686c7c86249a408fe8d4fda14c2ae23a168cafe
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: c88886e9d1470bda48d023b77472e7dd296508a0
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999412"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519359"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Integritets inställningar för produktivitets Poäng
 
@@ -54,7 +54,7 @@ För att visa hela produktivitets poängen, inklusive uppgifter om klient organi
 
 Koppla rollen rapport läsare till vem som är ansvarig för ändrings hantering och antagande. Den här rollen ger dem till gång till den fullständiga upplevelsen, inklusive nivå mått för klient nivå och uppgifter per användare.
 
-Rapporten personer upplever innehåller aktivitets information per användare för varje kategori detalj sida. Skapa en anpassad roll som kallas användnings översikt rapporter (som är tillgänglig från och med början 29 oktober 2020) för att tillåta åtkomst till personernas samlade mått. Den här rollen måste tilldelas genom PowerShell-cmdletar tills den blir tillgänglig från Microsoft Admin Center på 11/15/2020.
+Rapporten personer upplever innehåller aktivitets information per användare för varje kategori detalj sida. Skapa en anpassad roll som kallas användnings översikt rapporter (som är tillgänglig från och med början 29 oktober 2020) för att tillåta åtkomst till personernas samlade mått. Den här rollen måste tilldelas genom PowerShell-cmdletar tills den blir tillgänglig från Microsoft Admin Center senare det här året.
 
 Så här tilldelar du rollen användnings översikts rapporter med PowerShell:
 
@@ -62,6 +62,7 @@ Så här tilldelar du rollen användnings översikts rapporter med PowerShell:
 
 ```powershell
 Connect-AzureAD
+Enable-AzureADDirectoryRole -RoleTemplateId '75934031-6c7e-415a-99d7-48dbd49e875e'
 $role=Get-AzureADDirectoryRole -Filter "roleTemplateId eq '75934031-6c7e-415a-99d7-48dbd49e875e'"
 Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId
 $u=Get-AzureADUser -ObjectId <user upn>
