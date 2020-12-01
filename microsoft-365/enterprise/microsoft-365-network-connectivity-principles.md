@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: I den här artikeln får du de senaste anvisningarna för att optimera Microsoft 365-nätverksanslutningen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8036a4759f959a075ad0398e823116491e128c0b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a6f104f53abd0a9aa2376b09c93af96d7f8178e8
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847018"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519745"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Microsoft 365 principer för nätverksanslutningar
 
@@ -67,7 +67,7 @@ Det huvudsakliga målet för nätverksdesignen bör vara att minimera svarstiden
   
 Att identifiera Microsoft 365 nätverkstrafik är det första steget för att kunna skilja trafiken från allmän internet-bunden nätverkstrafik. Microsoft 365-anslutningen kan optimeras genom att använda en kombination av metoder som optimering av nätverksvägar, brandväggsregler, proxyinställningar för webbläsare och förbikoppling för nätverkskontrollsenheter för vissa slutpunkter.
   
-Tidigare optimeringsvägledning för Microsoft 365 delade upp Microsoft 365-slutpunkter i två kategorier, **Obligatoriskt** och **Valfri**. Eftersom slutpunkter har lagts till för att stödja nya Microsoft 365-tjänster och funktioner har vi omorganiserat Microsoft 365-slutpunkter till tre kategorier: **Optimera** , **Tillåta** och **Standard**. Riktlinjer för varje kategori gäller för alla slutpunkter i kategorin och gör optimeringar lättare att förstå och implementera.
+Tidigare optimeringsvägledning för Microsoft 365 delade upp Microsoft 365-slutpunkter i två kategorier, **Obligatoriskt** och **Valfri**. Eftersom slutpunkter har lagts till för att stödja nya Microsoft 365-tjänster och funktioner har vi omorganiserat Microsoft 365-slutpunkter till tre kategorier: **Optimera**, **Tillåta** och **Standard**. Riktlinjer för varje kategori gäller för alla slutpunkter i kategorin och gör optimeringar lättare att förstå och implementera.
   
 Mer information om Microsoft 365-slutpunktskategorier och optimeringsmetoder finns i [nya slutpunktskategorier för Office 365](microsoft-365-network-connectivity-principles.md#BKMK_Categories).
   
@@ -157,13 +157,13 @@ Slutpunkter för Office 365 representerar en varierad uppsättning nätverksadre
   
 I vår tidigare vägledning om hantering av Microsoft 365-trafik ordnades slutpunkter i två kategorier, **Obligatoriska** och **Valfria**. Slutpunkter inom varje kategori kräver olika optimeringar beroende på hur kritisk tjänsten är och många kunder som möter problem vid tillämpningen av samma nätverksoptimeringar i den fullständiga listan med Office 365-URL:er och IP-adresser.
   
-I den nya modellen delas slutpunkterna in i tre kategorier, **Optimera** , **Tillåta** och **Standard** som ger en prioritetsbaserad pivotering där du kan fokusera på nätverksoptimering för att få bästa möjliga prestandaförbättringar och avkastning på investeringen. Slutpunkterna konsolideras i kategorierna ovan baserat på känsligheten hos den faktiska användarupplevelsen för nätverkskvalitet, volym och prestandakuvert och enklare implementering. Rekommenderade optimeringar kan användas på samma sätt för alla slutpunkter i en viss kategori.
+I den nya modellen delas slutpunkterna in i tre kategorier, **Optimera**, **Tillåta** och **Standard** som ger en prioritetsbaserad pivotering där du kan fokusera på nätverksoptimering för att få bästa möjliga prestandaförbättringar och avkastning på investeringen. Slutpunkterna konsolideras i kategorierna ovan baserat på känsligheten hos den faktiska användarupplevelsen för nätverkskvalitet, volym och prestandakuvert och enklare implementering. Rekommenderade optimeringar kan användas på samma sätt för alla slutpunkter i en viss kategori.
   
 - **Optimera** slutpunkter krävs för anslutning till varje Office 365-tjänst och representerar över 75 procent av bandbredden, anslutningarna och datavolymen för Office 365. Dessa slutpunkter representerar Office 365-scenarier som är mest känsliga när det gäller nätverksprestanda, svarstid och tillgänglighet. Alla slutpunkter ligger inom Microsoft datacenter. Hastigheten för ändring av slutpunkterna i den här kategorin förväntas vara mycket lägre än för slutpunkterna i de andra två kategorierna. I den här kategorin finns en liten (i ordningen ~ 10) uppsättning av nyckelURL:er och en definierad uppsättning IP-undernät avsedda för Office 365 huvudsakliga arbetsbelastning, t. ex Exchange Online, SharePoint Online, Skype för företag Online och Microsoft Teams.
 
     En komprimerad lista med väldefinierade kritiska slutpunkter ska hjälpa dig att planera och implementera nätverksoptimering med höga värden för dessa destinationer snabbare och enklare.
 
-    Exempel på *Optimera* slutpunkter innefattar *https://outlook.office365.com* , *https://\<tenant\>.sharepoint.com* och *https://\<tenant\>-my.sharepoint.com*.
+    Exempel på *Optimera* slutpunkter innefattar *https://outlook.office365.com*,*https://\<tenant\>.sharepoint.com* och *https://\<tenant\>-my.sharepoint.com*.
 
     Optimeringsmetoder inkluderar:
 
@@ -228,7 +228,7 @@ En holistisk metod för förbättrad säkerhet bör innehålla övervägande til
   - Säkerställ lokal utgång för Microsoft 365-trafik
 - Förbättringar kan åtgärdas stegvis enligt beskrivningen i avsnittet [Stegvis optimering](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt). En del optimeringstekniker kan erbjuda bättre intervall för kostnader/fördel beroende på ditt nätverks arkitektur och du bör välja optimeringar som passar bäst för din organisation.
 
-Mer information om säkerhet och efterlevnad för Microsoft 365 finns i artikeln [Microsoft 365 Säkerhet](https://docs.microsoft.com/microsoft-365/security) och [Microsoft 365 Säkerhet](https://docs.microsoft.com/microsoft-365/compliance).
+Mer information om Microsoft 365 Säkerhet och efterlevnad finns i artikeln [Microsoft 365 Säkerhet](https://docs.microsoft.com/microsoft-365/security) och [Microsoft 365 Efterlevnad](https://docs.microsoft.com/microsoft-365/compliance).
   
 ## <a name="incremental-optimization"></a>Stegvis optimering
 <a name="BKMK_IncOpt"> </a>

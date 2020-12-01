@@ -20,20 +20,20 @@ description: Lär dig verifiera din domän och skapa DNS-poster på vilken DNS-v
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 6c2359cbf2da24fa7e2cd579d61216d948e0cb83
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bc22dbd3a050516f518c9ddc9ccf5a3af9c76f12
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645377"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519299"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Lägga till DNS-poster för att ansluta till din domän
 
-Om du har köpt en domän från en tredjeparts värd kan du ansluta den till Microsoft 365 genom att uppdatera DNS-posterna på registratorns konto.
+Om du har köpt en domän från en tredjeparts värd kan du ansluta den till Microsoft 365 genom att uppdatera DNS-posterna i ditt registrators konto.
 
-Under slutet av de här stegen kommer din domän att vara registrerad hos den värd som du har köpt domänen från, men Microsoft 365 kan använda det för e-postadresser (till exempel user@yourdomain.com) och andra tjänster.
+Vid slutet av dessa steg kommer din domän att förbli registrerad hos den värd som du köpte domänen från, men Microsoft 365 kan använda den för e-postadresser (till exempel user@yourdomain.com) och andra tjänster.
 
-Om du inte lägger till en domän kommer personer i organisationen att använda domänen onmicrosoft.com för sina e-postadresser tills du gör det. Det är viktigt att lägga till domänen innan du lägger till användare, så att du inte behöver konfigurera dem två gånger.
+Om du inte lägger till en domän kommer personer i din organisation att använda domänen onmicrosoft.com för sina e-postadresser tills du gör det. Det är viktigt att lägga till domänen innan du lägger till användare, så att du inte behöver konfigurera dem två gånger.
 
 [Läs frågor och svar om domäner](../setup/domains-faq.md) om du inte hittar det du letar efter nedan.
 
@@ -160,7 +160,7 @@ Om värden inte tillhandahåller dessa fält för SRV-poster måste du ange vär
 Exempel: `_sip._tls`
 
 ##### <a name="priority-weight-and-port-br"></a>Prioritet, vikt och port <br>
-Om värden inte tillhandahåller dessa fält för SRV-poster måste du ange värdena för postens **Målfält**. (Obs! beroende på din värd kan **Målfältet** kallas för något annat, t. ex.: **Innehåll**, **IP-adress**eller **Målvärd**.) 
+Om värden inte tillhandahåller dessa fält för SRV-poster måste du ange värdena för postens **Målfält**. (Obs! beroende på din värd kan **Målfältet** kallas för något annat, t. ex.: **Innehåll**, **IP-adress** eller **Målvärd**.) 
 
 Om du vill lägga till de här värdena skapar du en sträng som avgränsar värdena med blanksteg och *ibland slutar med en punkt* (kontrollera med din leverantör om du är osäker). Värdena måste tas med i följande ordning: Prioritet, Vikt, Port, Mål. 
 
