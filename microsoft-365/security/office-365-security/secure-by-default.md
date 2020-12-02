@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om inställningen säker med standardinställningen i Exchange Online Protection (EOP)
-ms.openlocfilehash: 23c0cad2b96b3a2002f235db7739b903cf862366
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 1a68c14a2d37f1fc3bfb032c4d3ca34c09a89890
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357869"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527775"
 ---
 # <a name="secure-by-default-in-office-365"></a>Säkra som standard i Office 365
 
@@ -59,5 +59,5 @@ Den enda åsidosättning som möjliggör högsäker nät fiske meddelande för a
 
 - Nät fiske simulering: simulerade attacker kan hjälpa dig att identifiera sårbara användare innan en verklig attack påverkar din organisation.
 - Säkerhets-SecOps post lådor: dedikerade post lådor som används av säkerhets team för att få ofiltrerad meddelanden (både bra och dåligt). Teams kan sedan granska för att se om de innehåller skadligt innehåll.
-- Filter från tredje part: vissa leverantörer av tredje part rekommenderar att du inaktiverar EOP (SCL =-1) när filtret för tredje part hanterar e-postfiltreringen. Microsoft rekommenderar inte att du inaktiverar EOP eftersom EOP krävs för Defender för Office 365.
+- Filter från tredje part: vissa tredjepartsleverantörer rekommenderar att du inaktiverar EOP (SCL =-1) när filtret för tredje part hanterar e-postfiltreringen. Microsoft rekommenderar inte att du inaktiverar EOP eftersom EOP krävs för Defender för Office 365. I stället är rekommendationen att aktivera [utökad filtrering för kopplingar](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) i stället.
 - Falsk positiva uppgifter: du kanske vill tillåta vissa meddelanden som fortfarande analyseras av Microsoft [via administratörs inlämningar](admin-submission.md). Precis som med alla åsidosättningar rekommenderar vi att de är tillfälliga.

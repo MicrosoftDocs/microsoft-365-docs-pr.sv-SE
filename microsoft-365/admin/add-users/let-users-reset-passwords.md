@@ -2,8 +2,8 @@
 title: Låt användare återställa sina egna lösenord
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Lär dig hur du återställer dina lösen ord med standard verktyget för återställning av lösen ord.
-ms.openlocfilehash: 7ecadaa42610e0b77dc1727c11140080bd7b1779
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bbde517858186d844412aca21f231620ed76496a
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646685"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551926"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Låt användare återställa sina egna lösenord
 
@@ -79,9 +79,9 @@ Anvisningarna aktiverar Självbetjäning för återställning av lösenord för 
   
 3. Välj **självbetjäning för återställning av lösen ord**.
 
-4. Under **Automatisk återställning av lösen ord**väljer **du gå till Azure-portalen för att aktivera automatisk återställning av lösen ord**.
+4. Under **Automatisk återställning av lösen ord** väljer **du gå till Azure-portalen för att aktivera automatisk återställning av lösen ord**.
 
-5. I det vänstra navigerings fönstret väljer **du användare**och sedan, på **användare | Sidan alla användare** väljer du **Återställ lösen ord**.
+5. I det vänstra navigerings fönstret väljer **du användare** och sedan, på **användare | Sidan alla användare** väljer du **Återställ lösen ord**.
   
 6. På sidan **Egenskaper** väljer du **alla** för att aktivera det för alla i företaget och väljer sedan **Spara**.
   

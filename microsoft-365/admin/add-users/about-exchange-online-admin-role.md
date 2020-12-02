@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange Online-administratörer hanterar organisationens e-post och post lådor. De återställer till exempel borttagna objekt i en användares post låda. '
-ms.openlocfilehash: cd2c4c10554cbaf425fa6ae9156a8ceeb1a21503
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8e332e886ca25221fefbbc5d1bb790bd4f513f00
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646709"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527519"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Om administratörsrollen i Exchange Online
 
@@ -44,7 +44,7 @@ Här är några av de viktigaste uppgifterna som användare kan göra när de ti
 
 - Konfigurera brevlådefunktioner såsom delningsprinciper för postlådor: hur användare kan dela kalender- och kontaktinformation med andra utanför din organisation.
 
-- Konfigurera ombuden "[Skicka som](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" och "[Skicka på abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" för en persons post låda. En chef kan till exempel vilja att hans/hennes assistent ska kunna skicka e-post åt chefen.
+- Konfigurera ombud för en persons post låda "[Skicka som](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" och "[Skicka för](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)". En chef kan till exempel vilja att hans/hennes assistent ska kunna skicka e-post åt chefen.
 
 - [Skapa en delad post låda](../email/create-a-shared-mailbox.md) så att en grupp människor kan övervaka och skicka e-post från en gemensam e-postadress.
 
@@ -58,7 +58,7 @@ Om du har en stor organisation kanske Exchange-administratören vill tilldela Ex
   
  Till exempel kan Exchange-administratören lägga till någon i rollgruppen för Identifieringshantering så att han/hon kan söka i postlådor efter data som uppfyller vissa villkor. Mer information finns i [Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) och [Hantera rollgrupper](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
   
-## <a name="learn-about-other-admin-role"></a>Läs mer om andra administratörs roller
+## <a name="learn-about-other-admin-roles"></a>Läs mer om andra administratörs roller
 
 - [Om administratörsroller i Microsoft 365](about-admin-roles.md)
 

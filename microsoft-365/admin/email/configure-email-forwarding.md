@@ -2,8 +2,8 @@
 title: Konfigurera vidarebefordran av e-post
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Konfigurera vidarebefordran av e-post till ett eller flera e-postkonton med Office365.
-ms.openlocfilehash: d19e2c533be6fac927bdf2aa65d72acab9fad6f6
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: acdca0b19eda70d7da34ce1093a4a1b11052fd79
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645533"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551840"
 ---
 # <a name="configure-email-forwarding"></a>Konfigurera vidarebefordran av e-post
 
@@ -45,7 +45,7 @@ Som administratör för en organisation kan du ha företags krav för att konfig
 
  Observera följande innan du konfigurerar e-postvidarebefordran: 
 
-- När du har konfigurerat e-postvidarebefordran blir bara **nya** e-postmeddelanden som skickas till  *från*  -post lådan vidare. 
+- När du har konfigurerat e-postvidarekoppling vidarekopplas bara **nya** e-postmeddelanden som skickas till  *från*  -post lådan. 
     
 - För e-postvidarekoppling krävs det att  *from*  -kontot har en licens. Om du konfigurerar vidarebefordran av e-post eftersom användaren har lämnat organisationen är ett annat alternativ att [göra om postlådan till en delad postlåda](convert-user-mailbox-to-shared-mailbox.md). På det sättet kan flera personer komma åt den. En delad postlåda kan dock inte vara större än 50 GB. 
     
@@ -57,11 +57,11 @@ Du måste vara Exchange-administratör eller global administratör i Microsoft 3
     
 2. Välj namnet på den användare vars e-postadress du vill vidarebefordra för att öppna egenskaps sidan. 
  
-3. Välj **Hantera e-postvidarebefordran**på fliken **e-post** . 
+3. Välj **Hantera e-postvidarebefordran** på fliken **e-post** . 
   
 4. På sidan e-postchatt väljer du **vidarebefordra alla e-postmeddelanden som skickas till den här post lådan**, anger adressen för vidarebefordran och väljer om du vill behålla en kopia av vidarebefordrade e-postmeddelanden. Se till att en licens tilldelas till användarkontot om du inte ser det här alternativet. Välj **Spara ändringar**.
     
-    **Om du vill vidarebefordra till flera e-postadresser**kan du be användaren att konfigurera en regel i Outlook så att den vidarebefordras till adresserna. Mer information finns i [använda regler för att automatiskt vidarebefordra meddelanden](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746). 
+    **Om du vill vidarebefordra till flera e-postadresser** kan du be användaren att konfigurera en regel i Outlook så att den vidarebefordras till adresserna. Mer information finns i [använda regler för att automatiskt vidarebefordra meddelanden](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746). 
     
      Du kan också [skapa en distributions grupp](../setup/create-distribution-lists.md)i administrations centret, [lägga till adresser i den](add-user-or-contact-to-distribution-list.md)och ställa in vidarebefordran så att den pekar på dl enligt instruktionerna i den här artikeln.
     
@@ -75,11 +75,11 @@ Du måste vara Exchange-administratör eller global administratör i Microsoft 3
     
 2. Välj namnet på den användare vars e-postadress du vill vidarebefordra för att öppna egenskaps sidan. 
 
-3. Expandera **e-postinställningar**och välj sedan **Redigera**i avsnittet **e-postvidarebefordran** .
+3. Expandera **e-postinställningar** och välj sedan **Redigera** i avsnittet **e-postvidarebefordran** .
 
 4. På sidan e-postvidarekoppling ställer du in på **på**, anger adressen för vidarebefordran och väljer om du vill behålla en kopia av vidarebefordrade e-postmeddelanden. Se till att en licens tilldelas till användarkontot om du inte ser det här alternativet. Välj **Spara**.
     
-    **Om du vill vidarebefordra till flera e-postadresser**kan du be användaren att konfigurera en regel i Outlook så att den vidarebefordras till adresserna. Mer information finns i [använda regler för att automatiskt vidarebefordra meddelanden](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746). 
+    **Om du vill vidarebefordra till flera e-postadresser** kan du be användaren att konfigurera en regel i Outlook så att den vidarebefordras till adresserna. Mer information finns i [använda regler för att automatiskt vidarebefordra meddelanden](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746). 
     
      Du kan också [skapa en distributions grupp](../setup/create-distribution-lists.md)i administrations centret, [lägga till adresser i den](add-user-or-contact-to-distribution-list.md)och ställa in vidarebefordran så att den pekar på dl enligt instruktionerna i den här artikeln.
     
@@ -93,11 +93,11 @@ Du måste vara Exchange-administratör eller global administratör i Microsoft 3
     
 2. Välj namnet på den användare vars e-postadress du vill vidarebefordra för att öppna egenskaps sidan. 
 
-3. Expandera **e-postinställningar**och välj sedan **Redigera**i avsnittet **e-postvidarebefordran** .
+3. Expandera **e-postinställningar** och välj sedan **Redigera** i avsnittet **e-postvidarebefordran** .
 
 4. På sidan e-postvidarekoppling ställer du in på **på**, anger adressen för vidarebefordran och väljer om du vill behålla en kopia av vidarebefordrade e-postmeddelanden. Se till att en licens tilldelas till användarkontot om du inte ser det här alternativet. Välj **Spara**.
     
-    **Om du vill vidarebefordra till flera e-postadresser**kan du be användaren att konfigurera en regel i Outlook så att den vidarebefordras till adresserna. Mer information finns i [använda regler för att automatiskt vidarebefordra meddelanden](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746). 
+    **Om du vill vidarebefordra till flera e-postadresser** kan du be användaren att konfigurera en regel i Outlook så att den vidarebefordras till adresserna. Mer information finns i [använda regler för att automatiskt vidarebefordra meddelanden](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746). 
     
      Du kan också [skapa en distributions grupp](../setup/create-distribution-lists.md)i administrations centret, [lägga till adresser i den](add-user-or-contact-to-distribution-list.md)och ställa in vidarebefordran så att den pekar på dl enligt instruktionerna i den här artikeln.
     

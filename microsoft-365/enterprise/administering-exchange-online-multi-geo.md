@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: Lär dig hur du hanterar Exchange Online multi-geo-inställningar i din Microsoft 365-miljö med PowerShell.
-ms.openlocfilehash: c9219d29a1fdae68075d296404a6c2aeab30f1aa
-ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
+ms.openlocfilehash: 63eb1957611fd57e216012435188a6ddd1b232d3
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993382"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552013"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Administrera Exchange Online-postlådor i en multi-geo-miljö
 
@@ -37,7 +37,9 @@ Specifikt måste du lägga till `?email=<emailaddress>` värdet i slutet av _Con
 
 Microsoft 365 eller Microsoft 365 GCC-kunder behöver vanligt vis inte använda parametern _ConnectionUri_ för att ansluta till Exchange Online PowerShell. Men om du vill ansluta till en specifik Geo-plats måste du använda _ConnectionUri_ parameter så att du kan använda `?email=<emailaddress>` i värdet.
 
-### <a name="connect-to-a-geo-location-in-exchange-online-powershell-using-multi-factor-authentication-mfa"></a>Ansluta till en Geo-plats i Exchange Online PowerShell med multifaktorautentisering (MFA)
+### <a name="connect-to-a-geo-location-in-exchange-online-powershell"></a>Ansluta till en Geo-plats i Exchange Online PowerShell
+
+Följande anslutnings instruktioner fungerar för konton som är eller inte har kon figurer ATS för multifaktorautentisering (MFA).
 
 1. Öppna modulen EXO v2 i ett Windows PowerShell-fönster genom att köra följande kommando:
 
@@ -47,31 +49,11 @@ Microsoft 365 eller Microsoft 365 GCC-kunder behöver vanligt vis inte använda 
 
 2. I det här exemplet är admin@contoso.onmicrosoft.com administratörs konto och mål-geo-platsen där post lådans olga@contoso.onmicrosoft.com finns.
 
-  ```powershell
-  Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
-  ```
-
-### <a name="connect-to-a-geo-location-in-exchange-online-powershell-without-using-mfa"></a>Ansluta till en Geo-plats i Exchange Online PowerShell utan MFA
-
-1. Öppna modulen EXO v2 i ett Windows PowerShell-fönster genom att köra följande kommando:
-
    ```powershell
-   Import-Module ExchangeOnlineManagement
+   Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
    ```
 
-2. Kör följande kommando:
-
-   ```powershell
-   $UserCredential = Get-Credential
-   ```
-
-   I dialog rutan **begäran om autentiseringsuppgifter för Windows PowerShell** anger du ditt arbets-eller skol konto och lösen ord och klickar sedan på **OK**.
-
-3. I det här exemplet är mål-geo platsen där olga@contoso.onmicrosoft.com finns.
-
-   ```powershell
-   Connect-ExchangeOnline -Credential $UserCredential -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
-   ```
+3. Ange lösen ordet för admin@contoso.onmicrosoft.com i meddelandet som visas. Om kontot är konfigurerat för MFA måste du också ange säkerhets koden.
 
 ## <a name="view-the-available-geo-locations-that-are-configured-in-your-exchange-online-organization"></a>Visa tillgängliga geo-platser som är konfigurerade i din Exchange Online-organisation
 
@@ -93,11 +75,11 @@ Get-OrganizationConfig | Select DefaultMailboxRegion
 
 Cmdleten **Get-Mailbox** in Exchange Online PowerShell visar följande multi-geo-relaterade egenskaper i post lådorna:
 
-- **Databas** : de första 3 bokstäverna i databas namnet motsvarar geo-koden, vilket anger var post lådan finns. För online-arkiv-post lådor ska egenskapen **ArchiveDatabase** användas.
+- **Databas**: de första 3 bokstäverna i databas namnet motsvarar geo-koden, vilket anger var post lådan finns. För online-arkiv-post lådor ska egenskapen **ArchiveDatabase** användas.
 
-- **MailboxRegion** : anger den Geo-plats kod som angavs av administratören (synkroniserad från **PREFERREDDATALOCATION** i Azure AD).
+- **MailboxRegion**: anger den Geo-plats kod som angavs av administratören (synkroniserad från **PREFERREDDATALOCATION** i Azure AD).
 
-- **MailboxRegionLastUpdateTime** : anger när MailboxRegion senast uppdaterades (antingen automatiskt eller manuellt).
+- **MailboxRegionLastUpdateTime**: anger när MailboxRegion senast uppdaterades (antingen automatiskt eller manuellt).
 
 Använd följande syntax för att visa de här egenskaperna för en post låda:
 
@@ -219,7 +201,7 @@ New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "E
 Mer information om hur du skapar nya användar konton och hittar LicenseAssignment värden i Azure AD PowerShell finns i [skapa användar konton med PowerShell](create-user-accounts-with-microsoft-365-powershell.md) och [Visa licenser och tjänster med PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
 
 > [!NOTE]
-> Om du använder Exchange Online PowerShell för att aktivera en post låda och behöver post lådan på en Geo-plats som anges i **PreferredDataLocation** , måste du använda en Exchange Online-cmdlet, till exempel **Aktivera-post låda** eller **ny-post låda** direkt mot moln tjänsten. Om du använder cmdleten **Enable-RemoteMailbox** i lokal Exchange PowerShell skapas post lådan på den centrala geo-platsen.
+> Om du använder Exchange Online PowerShell för att aktivera en post låda och behöver post lådan på en Geo-plats som anges i **PreferredDataLocation**, måste du använda en Exchange Online-cmdlet, till exempel **Aktivera-post låda** eller **ny-post låda** direkt mot moln tjänsten. Om du använder cmdleten **Enable-RemoteMailbox** i lokal Exchange PowerShell skapas post lådan på den centrala geo-platsen.
 
 ## <a name="onboard-existing-on-premises-mailboxes-in-a-specific-geo-location"></a>Befintliga lokala post lådor på en viss Geo-plats
 

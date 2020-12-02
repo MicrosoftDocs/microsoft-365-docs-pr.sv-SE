@@ -2,8 +2,8 @@
 title: Anpassa en SharePoint-gruppwebbplats för fil lagring och fildelning
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: Lär dig hur du anpassar, strukturerar och hanterar SharePoint-gruppwebbplatsen med dokument bibliotek, listor och hubbar.
-ms.openlocfilehash: 3eb09f0b0160333e3b17ebc5f02424ba3d24a13c
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 3ef82cecf22226380fbb18492a7630aa023b4036
+ms.sourcegitcommit: 4a9e1b6851b988bcd31e87b184fc185be949840d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906495"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49525539"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Anpassa din gruppwebbplats för fillagring och delning
 
@@ -85,7 +85,7 @@ Visa en video om hur du lägger till kalendrar på din webbplats finns i [skapa 
 
 Gruppwebbplatsen delar nästan allt med alla medlemmar i gruppen som är kopplade till webbplatsen. Om du vill ha en separat webbplats för vissa kunder kan du skapa ytterligare gruppwebbplatser och hantera dem med hjälp av SharePoint hubb-webbplatser. Mer information
   
-Hubb-webbplatser låter dig lägga till och koppla ihop webbplatser. Mer information finns i [Vad är en SharePoint-hubb-webbplats?](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f).
+Hubb-webbplatser låter dig lägga till och koppla ihop webbplatser. Mer information finns i [Vad är en SharePoint Hub-webbplats?](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f).
   
 Är du redo att skapa en hubb-webbplats se [Skapa en hubb-webbplats i SharePoint Online](/sharepoint/create-hub-site).
   
@@ -93,11 +93,11 @@ Information om hur du lägger till platser till en hubb-webbplats finns i [Koppl
   
 ## <a name="sharing-files-with-the-team"></a>Dela filer med gruppen
 
-När fil lagring och dokument hantering är en start är det viktigt att dela med din grupp och externa klienter. Här är några länkar till information som hjälper dig att hantera användare och dela dina data.
+När fil lagring och dokument hantering är en start är det viktigt att dela med din grupp och externa klienter. Följande artiklar hjälper dig att hantera användare och dela med dig av dina data:
   
-Information om fildelning med din grupp finns i [dela SharePoint-filer eller-mappar i Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
+- Information om fildelning med din grupp finns i [dela SharePoint-filer eller-mappar i Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
   
-För att förstå delning utanför ditt team se [Hantera extern delning i SharePoint Online-miljön](/sharepoint/external-sharing-overview).
+- För att förstå delning utanför ditt team se [Hantera extern delning i SharePoint Online-miljön](/sharepoint/external-sharing-overview).
   
 ## <a name="managing-users-and-groups"></a>Hantera användare och grupper
 
@@ -109,9 +109,9 @@ Om du vill lägga till användare i en Microsoft 365-grupp kan du läsa [lägga 
   
 Lär dig hur du hanterar åtkomst förfrågningar med [Konfigurera och hantera åtkomst förfrågningar](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3).
   
-## <a name="here-are-more-topics-you-might-be-interested-in"></a>Här är fler ämnen du kan vara intresserad av
+## <a name="here-are-more-articles-you-might-be-interested-in"></a>Här är fler artiklar som du kanske är intresse rad av
 
-- **Konfigurera Office-appar på surfplattor och telefoner**. Du behöver göra detta så att du kan redigera filer som är lagrade på gruppwebbplatsen från en surfplatta eller telefon. Om du inte installerar Office-appar för surfplattan eller telefonen kommer du att kunna visa filerna på gruppwebbplatsen, men inte redigera dem. 
+- **Konfigurera Office-appar på surfplattor och telefoner**. Du måste göra det här för att redigera filer som är lagrade på grupp webbplatsen från din surfplatta eller telefon. Om du inte installerar Office-appar för surfplattan eller telefonen kommer du att kunna visa filerna på gruppwebbplatsen, men inte redigera dem. 
     
   - [Installera och konfigurera Office på en Android med Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     

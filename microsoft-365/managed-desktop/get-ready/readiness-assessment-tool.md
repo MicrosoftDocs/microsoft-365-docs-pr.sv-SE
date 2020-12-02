@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e2d1c68c3fe963c957e4c3e18fce441b92c96bf1
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 491422126f7d159689e7995b69bef0f395491dcb
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519827"
+ms.locfileid: "49527715"
 ---
 # <a name="readiness-assessment-tool"></a>Verktyg för bedömning av beredskap
 
@@ -22,7 +22,7 @@ För att du ska få den bästa möjliga upplevelsen när du registrerar dig på 
 
 Verktyget kontrollerar inställningar i Microsoft slut punkts hanteraren (specifikt, Microsoft Intune), Azure Active Directory (Azure AD) och Microsoft 365 för att säkerställa att de fungerar med Microsoft Managed Desktop. Microsoft Managed Desktop behåller de data som är kopplade till dessa kontroller i 12 månader efter den senaste gången du kör en check i din Azure AD-organisation (klient organisationen). Efter 12 månader behåller vi det i det format som identifieras.  Du kan välja att ta bort de data som samlas in.
 
-Alla som har minst rollen Intune-administratör kan köra det här verktyget, men två av kontrollerna ([villkorsstyrda åtkomst principer](readiness-assessment-fix.md#conditional-access-policies) och [multifaktorautentisering](readiness-assessment-fix.md#multi-factor-authentication) kräver ytterligare behörigheter.
+Alla som har minst rollen Intune-administratör kan köra det här verktyget, men två av kontrollerna ([villkorsstyrd åtkomst policy](readiness-assessment-fix.md#conditional-access-policies) och [multifaktorautentisering](readiness-assessment-fix.md#multifactor-authentication) kräver ytterligare behörigheter.
  
 Utvärderings verktyget kontrollerar följande objekt:
 
@@ -39,7 +39,7 @@ Utvärderings verktyget kontrollerar följande objekt:
 |Sidan registrerings status     | Bekräftar att registrerings status sidan inte är aktive rad      |
 |Intune-registrering     | Verifierar att Windows 10-enheter i din Azure AD-organisation registreras automatiskt i Intune         |
 |Microsoft Store för företag     | Bekräftar att Microsoft Store för företag är aktiverat och synkroniserat med Intune        |
-|Multifaktorautentisering | Verifierar att multifaktorautentisering inte tillämpas på Microsoft Managed Desktop Service-konton.
+|Multifaktorautentisering | Verifiera att multifaktorautentisering inte tillämpas på Microsoft Managed Desktop Service-konton.
 |PowerShell-skript     | Kontrollerar att Windows PowerShell-skript *inte* är tilldelade på ett sätt som kan hantera Microsoft Managed Station ära enheter    |
 |Region     | Kontrollerar att din region stöds av Microsoft Managed Desktop        |
 |Säkerhets bas linjer     | Kontrollerar att säkerhets bas profilen inte uppfyller alla användare eller alla enheter (principer för säkerhets bas linje ska *inte* vara riktad till Microsoft Managed Station ära datorer).       |
@@ -55,7 +55,7 @@ Utvärderings verktyget kontrollerar följande objekt:
 |"Ad hoc"-abonnemang för företags status-roaming     | Här förklaras hur du kontrollerar en inställning som (om värdet är "falskt") kan hindra företags tillstånd från att fungera korrekt  |
 |Enterprise State Roaming     | Här får du information om hur du kontrollerar att nätverks tillstånd är aktiverat       |
 |Licenser     | Kontrollerar att du har skaffat de [licenser](prerequisites.md#more-about-licenses) du behöver         |
-|Multifaktorautentisering     | Kontrollerar att multifaktorautentisering inte används för alla användare (multifaktorautentisering får inte oavsiktligt användas på Microsoft Managed Desktop Service-konton.)|
+|Multifaktorautentisering     | Kontrollerar att multifaktorautentisering inte tillämpas på alla användare (multifaktorautentisering får inte heller användas på Microsoft Managed Desktop Service accounts.)|
 |Namn på säkerhets konton   | Kontrollerar att inga användar namn är i konflikt med att Microsoft Managed Desktop reserver för eget bruk        |
 |Säkerhets administratörs roller     | Bekräftar att användare med rollen säkerhets läsare, säkerhets ansvarig eller global läsare har tilldelats roller i Microsoft Defender för slut punkten         |
 |Standardinställningar för säkerhet | Kontrollerar om din Azure AD-organisation har säkerhets standarder aktiverade i Azure Active Directory |
@@ -79,3 +79,7 @@ För varje kontroll rapporteras ett av fyra möjliga resultat:
 |Rådgivare    | Följ stegen i verktyget för att få den bästa upplevelsen med registrering och för användare. Du *kan* slutföra registreringen, men du måste åtgärda dessa problem innan du distribuerar den första enheten.        |
 |Inte klart | *Registreringen Miss lyckas* om du inte åtgärdar dessa problem. Följ stegen i verktyget för att åtgärda dem.        |
 |Fel | Azure Active Director (AD)-rollen som du använder har inte tillräcklig behörighet för att köra den här kontrollen. |
+
+## <a name="after-enrollment"></a>Efter registrering
+
+När du är klar med registreringen på Microsoft Managed Desktop, kom ihåg att gå tillbaka och justera vissa inställningar i Intune och Azure. Mer information finns i [Justera inställningar efter registrering](../get-started/conditional-access.md).

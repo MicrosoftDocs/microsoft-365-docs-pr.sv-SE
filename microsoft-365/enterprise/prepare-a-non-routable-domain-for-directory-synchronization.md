@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Lär dig vad du kan göra om du har en icke-dirigerbar domän kopplad till dina lokala användare innan du synkroniserar med Microsoft 365.
-ms.openlocfilehash: 21344cb0d495691a96867d401a5262fbbcfd02d4
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: f38f6143b6e26b2849c174f74c94d009ddea73cd
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002387"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527727"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Förbereda en icke-dirigerbar domän för katalogsynkronisering
 När du synkroniserar en lokal katalog med Microsoft 365 måste du ha en verifierad domän i Azure Active Directory (Azure AD). Endast UPN-namnen (User huvud namn) som är kopplade till den lokala domänen synkroniseras. Alla UPN som innehåller en icke-routad domän, till exempel. local (som billa@contoso. local) synkroniseras till en. onmicrosoft.com-domän (som billa@contoso.onmicrosoft.com). 
@@ -91,7 +91,7 @@ När du har uppdaterat UPN-värdet för att använda den verifierade domänen ä
 
 Om du har många användare att uppdatera är det enklare att använda Windows PowerShell. I följande exempel används cmdletarna [Get-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624312) och [set-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624313) för att ändra alla contoso. local-suffix till contoso.com. 
 
-Foe-exempel kan du köra följande Windows PowerShell-kommandon för att uppdatera alla contoso. local-suffix till contoso.com:
+Du kan till exempel köra följande Windows PowerShell-kommandon för att uppdatera alla contoso. lokala suffix till contoso.com:
     
   ```powershell
   $LocalUsers = Get-ADUser -Filter "UserPrincipalName -like '*contoso.local'" -Properties userPrincipalName -ResultSetSize $null

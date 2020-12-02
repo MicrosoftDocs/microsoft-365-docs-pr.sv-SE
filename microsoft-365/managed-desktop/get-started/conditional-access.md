@@ -1,5 +1,5 @@
 ---
-title: Justera villkorsstyrd åtkomst
+title: Justera inställningar efter registrering
 description: Så här utesluter du vissa Microsoft-konton
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
@@ -9,29 +9,36 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8844c50f5faba609b3f5f53adc5ab45ba1dbaa74
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 76a73372cc7517c3241390e58c28b0b02bffd664
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529689"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527703"
 ---
-# <a name="adjust-conditional-access"></a>Justera villkorsstyrd åtkomst
+# <a name="adjust-settings-after-enrollment"></a>Justera inställningar efter registrering
 
-Om du använder [principer för villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) i organisationen måste du ange att de ska utesluta vissa konton så att Microsoft Managed Desktop kan fungera korrekt.
+När du är klar med registreringen på Microsoft Managed Desktop måste du justera vissa inställningar för Microsoft Intune och Azure Active Directory (Azure AD) för att tillåta hantering och underhåll av säkerhet. Ange följande inställningar för att utesluta Azure AD-grupperna som innehåller Microsoft Managed Desktop-enheter och-användare. Anvisningar för hur du exkluderar grupper finns i [villkorlig åtkomst: användare och grupper](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups#exclude-users).
 
-Gör så här:
+## <a name="microsoft-intune-settings"></a>Microsoft Intune-inställningar
 
-1. Se avsnittet "Återställ steg" i [Så här planerar du distributionen för villkorlig åtkomst i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access#rollback-steps).
-2. Följ stegen där för att utesluta gruppen *Moderna arbetsplatstjänstkonton* för alla principer.
+- Distributions profil för automatisk pilot: exkludera den **moderna arbets ytan enheter-alla**  Azure AD-grupper. Anvisningar finns i [registrera Windows-enheter i Intune med hjälp av Windows autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot).
+- Principer för villkorsstyrd åtkomst: exkludera den **moderna arbets plats tjänstens konton** Azure AD-grupp. Anvisningar finns i [villkorlig åtkomst: användare och grupper](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups).
+- Multifaktorautentisering: kontrol lera att alla principer för villkorsstyrd åtkomst som kräver multifaktorautentisering exkluderar den **moderna arbets plats tjänstens konton** Azure AD-grupp. Mer information finns i [principer för villkorsstyrd åtkomst](../get-ready/readiness-assessment-fix.md#conditional-access-policies) och [villkorsstyrd åtkomst: Kräv MFA för alla användare](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
+- Säkerhets bas linje: exkludera den **moderna arbets ytans enheter-alla**  Azure AD-grupper. Anvisningar finns i [använda säkerhets bas linjer för att konfigurera Windows 10-enheter i Intune](https://docs.microsoft.com/mem/intune/protect/security-baselines).
+- Windows 10, uppdaterings ring: Uteslut **moderna arbets plats enheter-alla**  Azure AD-grupper. Anvisningar finns i [hantera program uppdateringar för Windows 10 i Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure).
 
 
-Om du har några problem med villkorlig åtkomst kontaktar du [administratörssupporten](../working-with-managed-desktop/admin-support.md).
+## <a name="azure-active-directory-settings"></a>Azure Active Directory-inställningar
+
+Själv återställning av lösen ord: Välj den **valda** inställningen och välj sedan **moderna arbets plats enheter-alla** Azure AD-grupper. Mer information finns i [själv studie kursen: Låt användare låsa upp sina konton eller återställa lösen ord med hjälp av återställning av Azure Active Directory Self-Service](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+
+
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Steg för att komma igång med Microsoft Managed Desktop
 
 1. [Lägga till och verifiera administratörskontakter i administratörsportalen](add-admin-contacts.md)
-2. Justera villkorlig åtkomst (det här avsnittet)
+2. Justera inställningar efter registrering (den här artikeln)
 3. [Koppla licenser](assign-licenses.md)
 4. [Distribuera Intune-företagsportalen](company-portal.md)
 5. [Aktivera Enterprise State Roaming](enterprise-state-roaming.md)

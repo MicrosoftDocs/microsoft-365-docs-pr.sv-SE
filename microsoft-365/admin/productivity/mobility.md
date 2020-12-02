@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Information om mobilitet-människor upplever produktivitets poäng.
-ms.openlocfilehash: f40984b3c053dcb976c901830bf796e3b7297f2d
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: e37d5ff0377163bea270b1d16e8b4fddae9099b4
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804787"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551869"
 ---
 # <a name="mobility--people-experiences"></a>Rörlighet – människor upplever
 
-Produktivitets Poäng hjälper organisationer att omvandla hur arbete görs med mät värden för hur människor använder Microsoft 365-appar och stöd teknik upplevelsen. Poängen återspeglar din organisation&#39;s prestanda för kategorierna för folk-och teknik miljö och jämför poängen med organisationer som du vill. Kategorin för grupp arbete är en del av de mätningar som infaller under folkets upplevelse. Se [Översikt över produktivitets Poäng](productivity-score.md) för att få veta mer.
+Produktivitets Poäng har stöd för resan till digital transformation med insikter om hur din organisation använder Microsoft 365 och dess teknik. Din organisations Poäng återspeglar mått för folk-och teknik upplevelsen och kan jämföras med benchmarks från fritt på liknande sätt. Kategorin mobilitet är en del av folk upplevelsen. Se [Översikt över produktivitets Poäng](productivity-score.md) för att få veta mer.
 
 ## <a name="why-your-organization39s-mobility-score-matters"></a>Varför din organisation&#39;s rörlighets Poäng
 
@@ -56,19 +56,20 @@ Med Microsoft 365 kan folk samar beta med program, till exempel Microsoft Outloo
 
 #### <a name="trend-visualization-of-the-primary-insight"></a>Trend visualisering av huvudsaklig insikt
 
-:::image type="content" source="../../media/mobility-primary.png" alt-text="Diagram som visar huvudsaklig insikt för ökad rörlighet – människor upplever produktivitets poäng.":::
+:::image type="content" source="../../media/mobility-primary.png" alt-text="Diagram som visar antalet personer som använder mer än en plattform jämfört med tid.":::
 
 Det här diagrammet visar den trend linje där täljaren är antalet personer som har använt program under de senaste 180 dagarna. Varje data punkt i linje diagrammet är en mängd aktivitet under de senaste 28 dagarna. Varje data punkt innehåller flera personer som använder ett program på minst två plattformar under de senaste 28 dagarna för varje datum på x-axeln.
 
 ### <a name="scoring-framework"></a>Poäng ramverk
 
-Mobilitets poängen mäter om personer använder Microsoft 365-appar – Outlook, teams, Word, Excel, PowerPoint, OneNote, Yammer och Skype-på olika plattformar – skriv bord, webben och mobil.
+Betygs poängen för din organisation mått på en organisations (aggregerad) nivå, oavsett om de använder Microsoft 365-appar – Outlook, teams, Word, Excel, PowerPoint, OneNote, Yammer och Skype-på olika plattformar – skriv bord, webb och mobil.
+Poängen tillhandahålls inte på individuell användar nivå.
 
 ## <a name="explore-how-your-org-works-across-platforms-and-locations"></a>Lär dig hur din organisation fungerar mellan plattformar och platser
 
 ### <a name="use-of-outlook-across-platforms"></a>Användning av Outlook mellan plattformar
 
-:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="Diagram som visar huvudsaklig insikt för ökad rörlighet – människor upplever produktivitets poäng.":::
+:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="Diagram som visar hur många personer som använder Outlook på flera plattformar.":::
 
 1. **Sidhuvud:** Visar procent andelen personer aktiva i Outlook som använder Outlook på flera plattformar.
 2. **Brödtext:** Innehåller information om värdet för att använda Outlook på mobila enheter för att hålla kontakten var som helst på e-post.
@@ -89,7 +90,7 @@ Mobilitets poängen mäter om personer använder Microsoft 365-appar – Outlook
 
 ### <a name="use-of-teams-across-platforms"></a>Utnyttjande av team mellan plattformar
 
-:::image type="content" source="../../media/teams-across-platforms.png" alt-text="Diagram som visar huvudsaklig insikt för ökad rörlighet – människor upplever produktivitets poäng.":::
+:::image type="content" source="../../media/teams-across-platforms.png" alt-text="Diagram som visar hur många personer som använder Teams på mer än en eller en enskild plattform.":::
 
 1. **Sidhuvud:** Visar vilken andel av personer som är aktiva i Microsoft Teams som använder den på flera plattformar.
 2. **Brödtext:** Innehåller information om värdet för att använda Teams på mobila enheter för att hjälpa personer att hålla sig uppdaterade när du arbetar från valfri plats.
@@ -110,7 +111,7 @@ Mobilitets poängen mäter om personer använder Microsoft 365-appar – Outlook
 
 ### <a name="use-of-microsoft-365-apps-across-platforms"></a>Användning av Microsoft 365-appar mellan plattformar
 
-:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="Diagram som visar huvudsaklig insikt för ökad rörlighet – människor upplever produktivitets poäng.":::
+:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="Diagram som visar antalet personer som använder Microsoft 365-appar på flera eller enskilda plattformar.":::
 
 1. **Sidhuvud:** Visar procent andelen personer aktiva i Microsoft 365-program (Word, Excel, PowerPoint och OneNote) på flera plattformar.
 2. **Brödtext:** Ger information om värdet för att ge folk i organisationen flexibiliteten att komma åt deras filer var som helst.
@@ -123,7 +124,7 @@ Mobilitets poängen mäter om personer använder Microsoft 365-appar – Outlook
 
 ### <a name="remote-work"></a>Fjärrarbete
 
-:::image type="content" source="../../media/remotework-trend.png" alt-text="Diagram som visar huvudsaklig insikt för ökad rörlighet – människor upplever produktivitets poäng.":::
+:::image type="content" source="../../media/remotework-trend.png" alt-text="Diagram som visar hur många personer som arbetar på en fjärrdator, på plats eller både och.":::
 
 1. **Sidhuvud:** Visar procent andelen personer som bara arbetar från hemmet eller platsen utanför företagets&#39;s nätverk.
 2. **Brödtext:** Framhäver vikten av att under lätta fjärran arbete för personer som inte har till gång till organisationens&#39;s fysiska kontor.

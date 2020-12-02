@@ -3,7 +3,7 @@ title: Så här väljer du för migrering från Microsoft Cloud Tyskland (Micros
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 09/30/2020
+ms.date: 12/01/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Sammanställning '
-ms.openlocfilehash: 41f3e928bde0b366b17f698c30f33359a471e757
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 76cad72d742f6bf7ab6ddd1f90bfe0e5a2435df1
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327195"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552093"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Så här väljer du för migrering från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i de nya tyska Data Center-områdena
 
@@ -44,7 +44,7 @@ Om din organisation vill migrera din tjänst från Microsoft Cloud Tyskland (Mic
  
 ![Deltagande i inledning](../media/ms-cloud-germany-migration-opt-in/tenant-migration.png)
 
-Ett nytt avsnitt visas till höger på skärmen för att acceptera din bekräftelse. Välj växlings knappen till **Ja**och klicka sedan på **Spara**.
+Ett nytt avsnitt visas till höger på skärmen för att acceptera din bekräftelse. Välj växlings knappen till **Ja** och klicka sedan på **Spara**.
  
 ![Deltagande i godkännande](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
 
@@ -62,10 +62,27 @@ Villkoren för online tjänster har ändrats med villkor som gör att Microsoft 
 
 Kund-och partner klient organisationer uppmanas att välja att delta i administrations Center så att migreringen kan börja så snart som möjligt.
 
+
+## <a name="next-step"></a>Nästa steg
+
+[Förstå kund upplevelsen under migreringen](ms-cloud-germany-transition-experience.md)
+
 ## <a name="more-information"></a>Mer information
 
+Komma igång:
+
+- [Migrering från Microsoft Cloud Deutschland till Office 365-tjänster i de nya tyska Data Center-regionerna](ms-cloud-germany-transition.md)
 - [Hjälp för Microsoft Cloud Deutschland](https://aka.ms/germanymigrateassist)
-- [Office 365 migration-program för Microsoft Cloud Deutschland-kunder](https://aka.ms/office365germanymove)
-- [Dynamics 365 migrations program för Microsoft Cloud Deutschland-kunder](https://aka.ms/d365ceoptin)
-- [Power BI migrations program för Microsoft Cloud Deutschland-kunder](https://aka.ms/pbioptin)
-- Skicka frågor med hjälp av "behöver du hjälp?" länk till [administrations centret för Microsoft 365](https://portal.office.de/)
+- [Kund upplevelse under migreringen](ms-cloud-germany-transition-experience.md)
+
+Flytta genom över gången:
+
+- [Åtgärder och konsekvenser för migreringen](ms-cloud-germany-transition-phases.md)
+- [Övrig för hands arbete](ms-cloud-germany-transition-add-pre-work.md)
+- Ytterligare information om [tjänster](ms-cloud-germany-transition-add-general.md), [enheter](ms-cloud-germany-transition-add-devices.md), [erfarenheter](ms-cloud-germany-transition-add-experience.md)och [AD FS](ms-cloud-germany-transition-add-adfs.md).
+
+Molnappar:
+
+- [Information om programmet för Dynamics 365 migration](https://aka.ms/d365ceoptin)
+- [Information om datamigreringshanteraren för Power BI](https://aka.ms/pbioptin)
+- [Komma igång med din uppgradering av Microsoft Teams](https://aka.ms/SkypeToTeams-Home)

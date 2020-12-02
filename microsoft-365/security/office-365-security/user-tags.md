@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig att identifiera specifika grupper med användare med användar koder i Microsoft Defender för Office 365 abonnemang 2. För att snabbt identifiera taggade användare kan du använda tagg filtrering för meddelanden, rapporter och undersökningar i Microsoft Defender för Office 365.
-ms.openlocfilehash: 14ebcebeb8081a2de341fd06facabd9f7d55b119
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: 136de95addae7dcd48de2c6ac1f30ce67714817c
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123625"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552025"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Användarmallar i Microsoft Defender för Office 365
 
@@ -66,9 +66,9 @@ I den här artikeln förklaras hur du konfigurerar användar koder i fältet sä
 
    När du är klar klickar du på **Nästa**.
 
-4. Gör något av följande på sidan **tilldela post lådor** :
+4. Gör något av följande på sidan **tilldela användare** :
 
-   - Klicka på **Lägg till post lådor**. Gör något av följande för att lägga till enskilda användare eller grupper i rutan Lägg på som visas:
+   - Klicka på **Lägg till användare**. Gör något av följande för att lägga till enskilda användare eller grupper i rutan Lägg på som visas:
      - Klicka i rutan och bläddra igenom listan för att välja en användare eller grupp.
      - Klicka i rutan och börja skriva för att filtrera listan och välja en användare eller grupp.
      - Om du vill lägga till fler värden klickar du i ett tomt område i rutan.

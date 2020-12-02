@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 'Administratörer kan läsa mer om hur du använder portalen för att skicka e-postmeddelanden, misstänkta nätfiske-meddelanden, skräp post och andra potentiellt skadligt meddelande, URL: er och filer till Microsoft för genomsökning i & den här gruppen.'
-ms.openlocfilehash: be2fc8e41e3b53923b0297f30dfb102bbabd7489
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 1e133c0d4a875fc9735cc8a92e42b6ffeee6dd5f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877273"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527751"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Använd administratörs sändning för att skicka misstänkt skräp post, Phish, URL: er och filer till Microsoft
 
@@ -52,7 +52,7 @@ Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microso
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Rapportera misstänkt innehåll till Microsoft
 
-1. I säkerhets & Compliance Center går du till **Threat Management** -undersändningar \> **Submissions** , kontrollerar att du är på fliken **admin-överföring** och klickar sedan på **ny överföring**.
+1. I säkerhets & Compliance Center går du till **Threat Management** -undersändningar \> **Submissions**, kontrollerar att du är på fliken **admin-överföring** och klickar sedan på **ny överföring**.
 
 2. Använd **New submission** utfällbar text som visas för att skicka meddelandet, URL: en eller bifogad fil enligt beskrivningen i följande avsnitt.
 
@@ -60,9 +60,12 @@ Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microso
 
 1. Välj **e-post** under **objekt typ** . Använd något av följande alternativ i avsnittet **sändnings format** :
 
-   - **Nätverks meddelande-ID** : det här är ett GUID-värde som är tillgängligt i huvudet **X-MS-Exchange-Organization-Network-meddelande-ID** i meddelandet.
+   - **Nätverks meddelande-ID**: det här är ett GUID-värde som är tillgängligt i huvudet **X-MS-Exchange-Organization-Network-meddelande-ID** i meddelandet.
 
-   - **Fil** : Klicka på **Välj fil**. I dialog rutan som öppnas letar du reda på och markerar EML-eller MSG-filen och klickar sedan på **Öppna**.
+   - **Fil**: Klicka på **Välj fil**. I dialog rutan som öppnas letar du reda på och markerar EML-eller MSG-filen och klickar sedan på **Öppna**.
+   
+   > [!NOTE]
+   > Administratörer med Defender för Office 365 abonnemang 1 eller abonnemang 2 kan skicka meddelanden som gamla 30 dagar. Andra administratörer kan bara gå tillbaka sju dagar.
 
 2. Ange en eller flera mottagare som du vill köra en princip kontroll för i avsnittet **mottagare** . Princip kontrollen avgör om genomsökning av e-postmeddelandet kringgås på grund av principer för användare eller organisation.
 
@@ -70,13 +73,9 @@ Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microso
 
    - **Ska inte ha blockerats**
 
-   - **Bör ha blockerats** : Välj **skräp post** , **nätfiske** eller **skadlig program vara**. Om du är osäker kan du använda ditt bästa omdöme.
+   - **Bör ha blockerats**: Välj **skräp post**, **nätfiske** eller **skadlig program vara**. Om du är osäker kan du använda ditt bästa omdöme.
 
-4. Om filtret hoppades över på grund av principer vid överföring visas information om den policyn.
-
-   Om filtret inte har hoppats över på grund av en eller flera principer slutförs genomsökningen flera minuter. Du får mer information om inlämningen genom att klicka på status länken. Här ingår resultaten av princip kontrollen och omsökning Verdict. OBS! detta kör inte e-postmeddelandet via Microsoft Defender för Office 365 full filtrerings stack igen men kör delvis omsökning baserat på vissa av attributen för e-post, URL eller fil.
-
-5. När du är klar klickar du på **Skicka** .
+4. När du är klar klickar du på **Skicka** .
 
 ![Exempel på skicka URL](../../media/submission-flyout-email.PNG)
 
@@ -88,7 +87,7 @@ Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microso
 
    - **Ska inte ha blockerats**
 
-   - **Borde ha blockerats** : Välj **nätfiske** eller **malware**.
+   - **Borde ha blockerats**: Välj **nätfiske** eller **malware**.
 
 3. När du är klar klickar du på **Skicka** .
 
@@ -104,7 +103,7 @@ Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microso
 
    - **Ska inte ha blockerats**
 
-   - **Bör ha blockerats** : **malware** är det enda alternativet och väljs automatiskt...
+   - **Bör ha blockerats**: **malware** är det enda alternativet och väljs automatiskt...
 
 4. När du är klar klickar du på **Skicka** .
 
@@ -112,7 +111,7 @@ Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microso
 
 ## <a name="view-admin-submissions"></a>Visa administratörs inlämningar
 
-I säkerhets & Compliance Center går du till **Threat Management** -undersändningar \> **Submissions** , kontrollerar att du är på fliken **admin-överföring** och klickar sedan på **ny överföring**.
+I säkerhets & Compliance Center går du till **Threat Management** -undersändningar \> **Submissions**, kontrollerar att du är på fliken **admin-överföring** och klickar sedan på **ny överföring**.
 
 Högst upp på sidan kan du ange ett start datum, ett slutdatum och (som standard) som du kan filtrera efter **överförings-ID** (ett GUID-värde som är kopplat till varje överföring) genom att ange ett värde i rutan och klicka på ![ knappen uppdatera ](../../media/scc-quarantine-refresh.png) . Du kan ange flera värden avgränsade med kommatecken.
 
@@ -137,7 +136,7 @@ Klicka på fliken **e-post** .
 Du kan klicka på knappen **kolumn alternativ** nära längst ned på sidan för att lägga till eller ta bort kolumner i vyn:
 
 - **Datum**
-- **Sändnings-ID** : ett GUID-värde som tilldelats varje överföring.
+- **Sändnings-ID**: ett GUID-värde som tilldelats varje överföring.
 - **Skickades av**<sup>\*</sup>
 - **Ämne**<sup>\*</sup>
 - **Avsändare**
@@ -145,10 +144,19 @@ Du kan klicka på knappen **kolumn alternativ** nära längst ned på sidan för
 - **Sändnings typ**
 - **Leverans orsak**
 - **Status**<sup>\*</sup>
-- **Kontroll typ**
-- **Kontroll källa**
 
   <sup>\*</sup> Om du klickar på det här värdet visas detaljerad information i utfällbar skick.
+
+#### <a name="admin-submission-rescan-details"></a>Information om att söka efter administratörs uppgifter
+
+Meddelanden som skickas i administratörs inlämningar skannas in och visas i den utfällbara informationen:
+
+- Om det uppstod ett fel i avsändarens e-postautentisering vid leverans tillfället.
+- Information om eventuella policy träffar som kan ha påverkat eller åsidosatt Verdict av ett meddelande.
+- Aktuella Spräng resultat för att se om URL-adresserna eller filerna i meddelandet är skadliga eller inte.
+- Feedback från betyg.
+
+Om en åsidosättning hittas måste genomsökningen genomföras flera minuter. Om det inte fanns något problem med e-postauktorisering eller leveransen påverkas inte av en åsidosättning och feedback från betyg kan ta upp till en dag.
 
 ### <a name="view-admin-url-submissions"></a>Visa URL-överföringar för administratörer
 

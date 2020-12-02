@@ -2,8 +2,8 @@
 title: Konfigurera fillagring och fildelning
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -29,12 +29,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Lär dig hur du använder OneDrive och en grupp webbplats för Microsoft 365-lagring och fildelning från Microsoft 365.
-ms.openlocfilehash: cc6a7a45fda65073dc9b0cd15a844ec9aefca794
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: aa85789b950965a33c07214b5eaebf827ed8cc92
+ms.sourcegitcommit: 4a9e1b6851b988bcd31e87b184fc185be949840d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906399"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49525575"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Konfigurera fil lagring och delning i Microsoft 365
 
@@ -117,7 +117,7 @@ Så här lägger du till filer:
   
 5. Du kan ta bort filerna från datorn. I nästa steg ska du [synkronisera online-filer med din PC eller Mac](#sync-online-files-with-your-pc-or-mac)och skapa en ny plats för dessa filer på din dator.
 
-    Om du har många filer eller stora filer att ladda upp till gruppwebbplatsen kan du läsa de här tipsen om att [ladda upp stora eller många filer till ett bibliotek](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242).
+    Om du har många filer eller stora filer att ladda upp till grupp webbplatsen kan du läsa de här tipsen om [att ladda upp stora eller många filer till ett bibliotek](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242).
 
     Om du behöver mer lagringsutrymme kan du läsa [Ändra lagringsutrymme för din prenumeration](../../commerce/add-storage-space.md).
 
@@ -160,9 +160,9 @@ Här är några tips om hur du får ut mesta möjliga av OneDrive eller SharePoi
 
 - En **mans** företag: Använd OneDrive för att lagra dina egna filer och dela dem med kunder i varje enskilt fall.
 
-- **Samägare** : båda ägarna använder OneDrive och delar filer fram och tillbaka.
+- **Samägare**: båda ägarna använder OneDrive och delar filer fram och tillbaka.
 
-- **Företag med externa klienter eller partner som behöver åtkomst till filer** : skapa en ny grupp webbplats för att lagra och dela dokument som är avsedda för en viss kund. Konfigurera webbplatsen så att den endast tillåter åtkomst till den kunden. Då behöver du inte oroa dig för att en kund oavsiktligt får till gång till information som är avsedd för en annan kund.
+- **Företag med externa klienter eller partner som behöver åtkomst till filer**: skapa en ny grupp webbplats för att lagra och dela dokument som är avsedda för en viss kund. Konfigurera webbplatsen så att den endast tillåter åtkomst till den kunden. Då behöver du inte oroa dig för att en kund oavsiktligt får till gång till information som är avsedd för en annan kund.
 
 ### <a name="keep-private-files-private"></a>Hålla privata filer privata
 

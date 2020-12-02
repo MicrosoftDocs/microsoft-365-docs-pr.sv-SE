@@ -16,12 +16,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa om olika sätt att rapportera bra och dåliga meddelanden och filer till Microsoft för analys.
-ms.openlocfilehash: 379393919274662554522e21e98637105bc82287
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: df89e90998b5aa482dc1ea4003d53cf98b4b4d3f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49020909"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527787"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Rapportera meddelanden och filer till Microsoft
 
@@ -37,7 +37,7 @@ I Microsoft 365-organisationer med post lådor i Exchange Online eller friståen
 |[Aktivera tillägget för att rapportera meddelande](enable-the-report-message-add-in.md)|Fungerar med Outlook, Outlook för Mac och Outlook på webben (kallades tidigare Outlook Web App) och är det rekommenderade tillägget. <p> Beroende på ditt abonnemang är meddelanden som användare rapporterade med tillägget tillgängliga i [portalen för administration av](admin-submission.md)underställda- [och svars uppgifter, automatiserade undersökningar och reaktioner (Air)](air-view-investigation-results.md), rapporter om [meddelanden och meddelande](view-email-security-reports.md#user-reported-messages-report) [Utforskaren](threat-explorer-views.md#email--submissions). <p> Du kan konfigurera vilka meddelanden som ska kopieras eller dirigeras om till en post låda som du anger. Mer information finns i [principer för användar profiler](user-submission.md).|
 |[Installera och använda tillägget skräp post rapportering för Microsoft Outlook](junk-email-reporting-add-in-for-microsoft-outlook.md)|Fungerar bara i Outlook.|
 |[Rapportera skräp post och nätfiske i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|Använd de inbyggda funktionerna i Outlook på webben för organisationer med Exchange Online-postlådor (inte tillgängligt i fristående EOP). <p> Meddelanden som användare rapporterar är tillgängliga i [portalen för administrations överföringar](admin-submission.md). <p> Du kan konfigurera vilka meddelanden som ska kopieras eller dirigeras om till en post låda som du anger. Mer information finns i [principer för användar profiler](user-submission.md).|
-|[Rapportera skräp post och nätfiske i Outlook för iOS och Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)|Använd de inbyggda funktionerna i Outlook för iOS en Android för organisationer med Exchange Online-postlådor (ej tillgänglig i fristående EOP). <p> Meddelanden som användare rapporterar är tillgängliga i [portalen för administrations överföringar](admin-submission.md). <p> Du kan konfigurera vilka meddelanden som ska kopieras eller dirigeras om till en post låda som du anger. Mer information finns i [principer för användar profiler](user-submission.md).|
+|[Rapportera skräp post och nätfiske i Outlook för iOS och Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)|Använd de inbyggda funktionerna i Outlook för iOS och Android för organisationer med Exchange Online-postlådor (inte tillgängligt i fristående EOP). <p> Meddelanden som användare rapporterar är tillgängliga i [portalen för administrations överföringar](admin-submission.md). <p> Du kan konfigurera vilka meddelanden som ska kopieras eller dirigeras om till en post låda som du anger. Mer information finns i [principer för användar profiler](user-submission.md).|
 |[Skicka meddelanden till Microsoft för analys manuellt](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)|Manuellt skicka bifogade meddelanden till specifika Microsoft-e-postadresser för skräp post, inte skräp post och nätfiske.|
 |[Använd regler för e-postflöde för att se vad dina användare rapporterar till Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|Lär dig hur du skapar en regel för e-postflöde (kallas även transport regel) som meddelar dig när användare rapporterar meddelanden till Microsoft för analys.
 |||

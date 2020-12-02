@@ -1,5 +1,5 @@
 ---
-title: Åtgärda problem som hittats av verktyget för bedömning av beredskap
+title: Åtgärda problem som upptäckts av verktyget för bedömning av beredskap
 description: Detaljerade åtgärder att vidta för varje problem som verktyget hittar
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0459de8974fe6bae98e6984fd7dc65afeb04b4e7
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: f23209568fcfc2db4a22dbb034890c5a25e21bf7
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021091"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527739"
 ---
-# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Åtgärda problem som hittats av verktyget för bedömning av beredskap
+# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Åtgärda problem som upptäckts av verktyget för bedömning av beredskap
 
 För varje kontroll rapporteras ett av fyra möjliga resultat:
 
@@ -141,7 +141,7 @@ Windows 10-enheter i din Azure AD-organisation måste registreras automatiskt i 
 
 **Rådgivare**
 
-Kontrol lera att webområdet för MDM är inställt på **vissa** eller **alla** , inte **inga**. Om du väljer **lite** , kom tillbaka efter registreringen och väljer den **moderna arbets platsen – alla** Azure AD-grupper för **grupper**.
+Kontrol lera att webområdet för MDM är inställt på **vissa** eller **alla**, inte **inga**. Om du väljer **lite**, kom tillbaka efter registreringen och väljer den **moderna arbets platsen – alla** Azure AD-grupper för **grupper**.
 
 
 ### <a name="microsoft-store-for-business"></a>Microsoft Store för företag
@@ -152,9 +152,9 @@ Vi använder Microsoft Store för företag så att du kan ladda ned företags Po
 
 Microsoft Store för företag är antingen inte aktiverat eller synkroniseras inte med Intune. Mer information finns i [så här hanterar du volym köps program från Microsoft Store för företag med Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business) och [Installera Intune företags Portal på enheter](../get-started/company-portal.md).
 
-### <a name="multi-factor-authentication"></a>Multifaktorautentisering
+### <a name="multifactor-authentication"></a>Multifaktorautentisering
 
-Multifaktorautentisering får inte på ett oavsiktligt sätt tillämpas på Microsoft Managed Desktop Service-konton.
+Multifaktorautentisering får inte oavsiktligt användas på Microsoft Managed Desktop Service-konton.
 
 
 **Inte klart**

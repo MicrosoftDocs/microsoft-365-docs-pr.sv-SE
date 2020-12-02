@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Läs mer om Deployment Lab kit för Windows och Office, och var du hittar det.
-ms.openlocfilehash: 65c251b2cd161687eb0a2e9c7ece29f453fcaae8
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 4ee3663e326dc5a7fbefce06a696cca6a4b060a9
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519628"
+ms.locfileid: "49527461"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Distributions labb paketet för Windows och Office
 
@@ -36,7 +36,7 @@ Du får en virtuell labbmiljö som etableras automatiskt, inklusive domänanslut
 
   - NYHET! Windows 10 Enterprise, version 20H2
   - Windows 7 Enterprise
-  - Microsoft Endpoint Configuration Manager, version 2002
+  - Microsoft Endpoint Configuration Manager, version 2010 *
   - Windows Assessment and Deployment Kit för Windows 10
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -94,7 +94,7 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
 
 [Ladda ned Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-* Använd en bred bandbredd för att ladda ner innehållet för att förbättra nedladdningen och tillåta att 30-45 minuter för automatisk etablering. Laboratorie miljön kräver minst 16 GB tillgängligt minne och 300 GB fritt disk utrymme. För optimal prestanda rekommenderas 32 GB tillgängligt minne. Lab går ut i februari 2020. En ny version publiceras innan den upphör att gälla.
+* Installerat original plan version 2002 kan uppdateras till version 2010 med hjälp av in-Console-uppdateringen. Använd en bred bandbredd för att ladda ner innehållet så att det blir lättare att ladda ner och tillåta att 30-45 minuter för automatisk etablering. Lab-miljön kräver minst 16 GB tillgängligt minne och 150GB av ledigt disk utrymme. För optimal prestanda rekommenderas 32 GB tillgängligt minne och 300 GB ledigt utrymme. Lab: a upphör 7 februari 2021. En ny version publiceras innan den upphör att gälla.
 
 ## <a name="additional-guidance"></a>Ytterligare vägledning
 

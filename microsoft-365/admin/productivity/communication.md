@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Information om kommunikationen-människor upplever produktivitets poäng.
-ms.openlocfilehash: ba2e69659f49c90d3b65e56e54b3026c7c9ff36a
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: a6fccdcc7f6440195bb83949ee294bbb4fe5ce7f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123458"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527507"
 ---
 # <a name="communication--people-experiences"></a>Kommunikation – folk upplevelse
 
@@ -119,9 +119,9 @@ Vi tillhandahåller också information som hjälper dig att få insyn i hur pers
 2. **Brödtext:** Innehåller information om värdet för att använda kanal meddelanden i Microsoft Teams
 3. **Visualisering:** Delar upp användning av chatt-och kanal meddelanden:
       - **Personer som skickar chatt meddelanden:** Den färgade delen och delen representerar användning av chatt meddelanden i personer som har skickat meddelanden i Microsoft Teams. Bråket är konstruerat från:
-        - **Täljare:** Personer som har skickat chatt meddelanden från Microsoft Teams de senaste 28 dagarna
-        - **Nämnare:** Personer skickade meddelanden i Microsoft Teams de senaste 28 dagarna
-      - **Personer som skickar chatt meddelanden:** Den färgade delen och delen representerar användning av kanal meddelanden i personer som skickar meddelanden i Microsoft Teams. Bråket är konstruerat från:
+        - **Täljare:** Personer som har skickat chatt meddelanden från Microsoft Teams de senaste 28 dagarna.
+        - **Nämnare:** Personer som har skickat meddelanden i Microsoft Teams de senaste 28 dagarna.
+      - **Personer som skickar kanal meddelanden:** Den färgade delen och delen representerar användning av kanal meddelanden i personer som skickar meddelanden i Microsoft Teams. Bråket är konstruerat från:
         - **Täljare:** Personer som har skickat chatt meddelanden från Microsoft Teams de senaste 28 dagarna.
         - **Nämnare:** Personer som har skickat meddelanden i Microsoft Teams de senaste 28 dagarna.
 4. **Visa relaterat innehåll:** Välj den här länken om du vill visa sorterade videoklipp och annat relaterat hjälp innehåll.
