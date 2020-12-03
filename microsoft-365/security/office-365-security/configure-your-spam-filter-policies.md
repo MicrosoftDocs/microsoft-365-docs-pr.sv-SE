@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa om hur de visar, skapar, ändrar och tar bort principer för skräppostskydd i Exchange Online Protection (EOP).
-ms.openlocfilehash: 34e0f3cf1ae382dcb256887557af18556d52a7df
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 480fa294d441eb8519d66d7baa80867e73ef684d
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357893"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552124"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurera principer för skräppostskydd i EOP
 
@@ -119,11 +119,11 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
      |**Ingen åtgärd**|||||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
      |
 
-     <sup>1</sup> I Exchange Online flyttas meddelandet till mappen Skräppost om regeln för skräppost har aktiverats för postlådan (den är aktiverad som standard). Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor](configure-junk-email-settings-on-exo-mailboxes.md).
-
-     I fristående EOP-miljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera e-postflödesregler (kallas även för transportregler) i lokalt Exchange för att översätta utfallet av skräppostfiltreringen i EOP så att regeln för skräppost kan flytta meddelandet till mappen Skräppost. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
-
-     <sup>2</sup> Du kan använda det här värdet som ett villkor i e-postflödesregler (kallas även transportregler) för att filtrera eller dirigera meddelandet.
+     > <sup>1</sup> I Exchange Online flyttas meddelandet till mappen Skräppost om regeln för skräppost har aktiverats för postlådan (den är aktiverad som standard). Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor](configure-junk-email-settings-on-exo-mailboxes.md).
+     >
+     > I fristående EOP-miljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera e-postflödesregler (kallas även för transportregler) i lokalt Exchange för att översätta utfallet av skräppostfiltreringen i EOP så att regeln för skräppost kan flytta meddelandet till mappen Skräppost. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+     >
+     > <sup>2</sup> Du kan använda det här värdet som ett villkor i e-postflödesregler för att filtrera eller dirigera meddelandet.
 
    - **Välj tröskelvärde**: Anger klagomålsnivån på massutskick (BCL) för ett meddelande som utlöser angiven åtgärd för utfallet **Massutskick** av skräppostfiltreringen (större än det angivna värdet, inte större än eller lika med). Ett högre värde innebär att meddelandet är mindre önskvärt (mer troligt att det liknar skräppost). Standardvärdet är 7. Mer information finns i [Massklagomålsnivå (BCL) i EOP](bulk-complaint-level-values.md) och [Vad är skillnaden mellan skräppost och massutskick?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Bestäm var dina Microsoft 365-kunddata lagras inom Europeiska unionen
-ms.openlocfilehash: 5a50600c123dad1a0e4d14fd8f47283f951d3edc
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 78c2ae75656df017631fce0a189f6e25ee44f20f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376736"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527691"
 ---
 # <a name="data-locations-for-the-european-union"></a>Dataplatser för Europeiska unionen
 
@@ -63,8 +63,10 @@ Vi har datacenter i Tyskland och Frankrike som gör att du kan lagra data i ditt
 ||||| 
 
 >[!Note]
->Om du har en Office 365 Education-prenumeration med en faktureringsadress i Frankrike eller Tyskland kan dina data lagras i våra regionala EU-datacenter. 
+>Om du har en Office 365 Education-prenumeration med en faktureringsadress i Frankrike eller Tyskland kan dina data lagras i våra regionala EU-datacenter. Information om platserna för klientorganisationsdata utanför EU finns i [Var din Microsoft 365-kunddata lagras](o365-data-locations.md).
 >
+
+
 
 ### <a name="where-eu-data-is-computed"></a>Där EU-data beräknas
 

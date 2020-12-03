@@ -23,7 +23,7 @@
           href: empower-people-to-work-remotely-security-compliance.md
         - name: Steg 4. Distribuera slutpunktshantering
           href: empower-people-to-work-remotely-manage-endpoints.md
-        - name: Steg 5. Distribuera produktivitetsappar och tjänster
+        - name: 'Steg 5: Distribuera produktivitetsappar och tjänster'
           href: empower-people-to-work-remotely-teams-productivity-apps.md
         - name: Steg 6. Utbilda distansarbetare
           href: empower-people-to-work-remotely-train-monitor-usage.md
@@ -43,7 +43,7 @@
               href: configure-teams-highly-sensitive-protection.md
             - name: Konfigurera en team med säkerhetsisolering
               href: secure-teams-security-isolation.md
-        - name: Ste 2. Konfigurera extern delning
+        - name: Steg 2. Konfigurera extern delning
           items:
             - name: Översikt av extern delning
               href: collaborate-with-people-outside-your-organization.md
@@ -109,14 +109,16 @@
           items:
             - name: Översikt
               href: collaboration-governance-overview.md
-            - name: Styrning först
+            - name: Skapa ditt styrningsplan
               href: collaboration-governance-first.md
-            - name: Grupper med SharePoint
-              href: groups-sharepoint-governance.md
-            - name: 'Grupper, SharePoint och Teams'
-              href: groups-sharepoint-teams-governance.md
-            - name: Tjänster interaktion referens
-              href: groups-services-interactions.md
+            - name: Inställningar i tjänster
+              items:
+                - name: Grupper med SharePoint
+                  href: groups-sharepoint-governance.md
+                - name: 'Grupper, SharePoint och Teams'
+                  href: groups-sharepoint-teams-governance.md
+                - name: Grupper med andra tjänster
+                  href: groups-services-interactions.md
             - name: Åtkomst
               href: groups-teams-access-governance.md
             - name: Efterlevnad
