@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Lär dig hur du flyttar ditt företag till Microsoft 365 Business Premium från Office 365 E3.
-ms.openlocfilehash: b8aa58f1f050ec6247479ed02e142507a2df45fc
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: eebf78c24ed4bfd1a4fc2d843f37aebbe3d35e31
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842169"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558267"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrera från Office 365 E3 till Microsoft 365 Business Premium 
 
@@ -53,7 +53,7 @@ I den här tabellen visas skillnaderna mellan Microsoft 365 Business Premium och
 | **Skydd för hotet**        | | | 
 | Defender för Office 365 abonnemang 1 | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | Ingår inte, men kan läggas till på | 
 | **Identitets hantering**        | | | 
-| Self-Service lösen ords återställning för Hybrid Azure Active Directory-konton (Azure AD), Azure Multi-factority (MFA), villkorsstyrd åtkomst, tillbakaskrivning för lösen ord för lokala identiteter|     ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    |  | 
+| Standard lösen ords återställning för Hybrid Azure Active Directory-konton (Azure AD), Azure AD multi-factority (MFA), villkorsstyrd åtkomst, tillbakaskrivning för lösen ord för lokala identiteter|     ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    |  | 
 | **Hantera enheter och appar**        | | |
 | Microsoft Intune, Windows autopilot|     ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    |  |
 | Aktivering av delad dator|     ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Office 365 E3](../media/check-mark.png)| 

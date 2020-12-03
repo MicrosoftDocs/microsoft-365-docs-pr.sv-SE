@@ -19,30 +19,30 @@ search.appverid:
 - MET150
 - MOE150
 description: Översikt över Microsoft produktivitets poäng.
-ms.openlocfilehash: 49ae35d68b0d0ebf627e44e5912d4a1bb7b712c0
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: f1edc1a66763562b233455609f3381e3f4fbfa98
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123495"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561484"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft produktivitets Poäng 
 
-Produktivitets poäng gör det lättare för organisationer att omvandla hur arbete görs med insikter om hur människor använder Microsoft 365 och de teknik funktioner som har stöd för dem. Poängen reflekterar organisationens prestanda mot folk-och teknik upplevelser och jämför poängen med organisationer som ditt.
+Produktivitets Poäng Stöder resan till digital transformation med insikter om hur din organisation använder Microsoft 365 och de teknik funktioner som stöder det. Din organisations Poäng återspeglar mått för folk-och teknik upplevelsen och kan jämföras med benchmarks från organisationer som har liknande storlek.
 
-Poängen inkluderar:
+Det ger:
 
-- **Mått** för att se hur andra använder Microsoft 365-produkter för att samar beta, kommunicera och arbeta på olika plattformar.
-- **Insikter** om data för att hjälpa dig att identifiera möjligheter för att förbättra produktivitet och tillfredsställelse hos din personal.
-- **Rekommenderade åtgärder** du kan vidta för att hjälpa personer i din organisation att använda Microsoft 365-produkter effektivt så att alla kan göra sitt bästa arbete.
+- **Mått** för att se var du är på din resa för digital transformation.
+- **Insikter** om data för att hjälpa dig att identifiera möjligheter att förbättra produktivitet och tillfredsställelse i organisationen.
+- **Rekommenderade åtgärder** du kan vidta för att hjälpa din organisation att använda Microsoft 365-produkter effektivt.
 
-Vi tillhandahåller data, insikter och rekommendationer i två områden: 
+Vi tillhandahåller mått, insikter och rekommendationer i två områden: 
 
-- **Personer upplever:** Mäter hur personer samarbetar med innehåll, hur de använder Microsoft 365-produkter för att kommunicera och om de använder Microsoft 365 på flera plattformar. 
+- **Personer upplever:** Kvantifierar hur organisationen fungerar med hjälp av Microsoft 365-kategorier som innehålls samarbete, mobilitet, kommunikation, möten och lag arbete.  
 
-    Vi tillhandahåller dessa insikter eftersom när personer samarbetar online sparar de tid och med friheten att arbeta på alla enheter blir det mer produktivt och uppfyllt. Möjligheten att kommunicera på ett flexibelt sätt gör det lättare för människor att effektivisera, kunna bilda bättre relationer och göra organisationen mer enhetlig. Mer information finns i [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+    För var och en av de nämnda kategorierna tittar vi på offentlig forskning för att identifiera några av de bästa metoderna och tillhör ande fördelar i form av organisationens effektivitet. Till exempel [Forrester] ( https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf forskningen visar att när personer samarbetar och delar innehåll i molnet (istället för e-postbilagor) kan de Spara upp till 100 minuter per vecka. Dessutom kan vi kvantifiera användning av de här metod tipsen i organisationen så att du kan se var du befinner dig på din resa för digital transformation. 
 
-- **Teknik upplevelser:** Gruppens produktivitet beror på pålitlig och välpresterande teknik samt effektiv användning av Microsoft 365. Med [slut punkts analys](https://aka.ms/endpointanalytics) kan du förstå hur användarnas produktivitet påverkar prestanda och hälso problem med din maskin vara och program vara. Rekommenderade åtgärder hjälper dig att åtgärda problemen. Microsoft 365 Network Connectivity Insights hjälper dig att felsöka connectivty problem för din organisation.
+- **Teknik upplevelser:** Din organisation beror på pålitlig och välpresterande teknologi samt effektiv användning av Microsoft 365. Med [slut punkts analyser](https://aka.ms/endpointanalytics) får du hjälp med att förstå hur din organisation kan påverka prestanda-och hälso problem med din maskin vara och program vara. Microsoft 365-appar hälsa hjälper dig att förstå om enheterna i din organisation kör Microsoft 365-appar på rekommenderade kanaler.
 
 Se [Vad är slut punkts analys](https://docs.microsoft.com/mem/analytics/overview) för en översikt och krav uppgifter. Om du vill veta mer om Microsoft 365 Network Connectivity kan du läsa [Översikt över nätverks anslutningen](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
@@ -63,22 +63,22 @@ Produktivitets poängen baseras på de kombinerade poängen från kategorierna k
 - Microsoft 365-program (100 Points)
 - **Totalt antal möjliga = 800 punkter**
  
- I varje Poäng kategori identifierar vi mönster för viktiga aktiviteter som är symboler för hur folk använder Microsoft 365-produkter för att samar beta, kommunicera och arbeta på olika plattformar. Vi tillhandahåller 28-dagars-och 180-dagars visningar av viktiga aktiviteter. Vi tillhandahåller också stödjande mått som inte är en del av poängen och som är viktiga för att du ska kunna identifiera underliggande beteenden och inställningar som du kan adressera.
+ I varje resultat kategori, kvantifierar vi de viktigaste indikatorerna för hur din organisation använder Microsoft 365 i sin resa mot digital transformation. Vi tillhandahåller 28-dagars-och 180-dagars visningar av viktiga aktiviteter. Vi tillhandahåller också stödjande mått som inte ingår i poängen, utan är viktiga för att du ska kunna identifiera underliggande användnings statistik och konfigurationer som du kan adressera.
 
 ### <a name="products-included-in-productivity-score"></a>Produkter inkluderade i produktivitets Poäng 
 
 Produktivitets Poäng inkluderar data från Exchange, SharePoint, OneDrive, teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer och Skype.
 
-Ditt resultat uppdateras dagligen och återspeglar användar åtgärderna som har slutförts under de senaste 28 (inklusive den aktuella dagen).
+Din organisations Poäng uppdateras dagligen och återspeglar användar åtgärderna som har slutförts under de senaste 28 (inklusive den aktuella dagen).
 
 
 ## <a name="pre-requisites"></a>Förutsättningar 
 
-För folk som upplever data behöver du ett Microsoft 365 för företag-eller Office 365 för företags abonnemang. För slut punkts analys data för din klient organisation måste du lägga till Microsoft Intune i prenumerationen. Intune hjälper dig att skydda organisationens data genom att hantera enheter och appar. När du har Intune kan du aktivera slut punkts analys i Intune-upplevelsen. Läs mer om Microsoft Intune. 
+För folk som upplever data behöver du ett Microsoft 365 för företag-eller Office 365 för företags abonnemang. För slut punkts analys data för din klient organisation måste du lägga till Microsoft Intune i prenumerationen. Intune hjälper dig att skydda organisationens data genom att hantera enheter och appar. När du har Intune kan du aktivera slut punkts analys i Intune-upplevelsen. Läs mer om [Microsoft Intune](https://docs.microsoft.com/mem/intune/). 
 > [!NOTE]
 > Det krävs inte en licens för att få poäng poängen.
 
-Om du vill visa produktivitets poängen för din organisation måste du ha av någon av följande roller: 
+Produktivitets Poäng är bara tillgängligt i Microsoft 365 Admin Center och kan bara nås av de som har någon av följande roller:  
 
 - Global administratör 
 - Exchange-administratörer
@@ -88,17 +88,21 @@ Om du vill visa produktivitets poängen för din organisation måste du ha av n�
 - Global läsare 
 - Rapport läsare 
 
+Observera att informationen endast är avsedd att användas för att installera en digital transformation med hjälp av Microsoft 365, och därför bör delas med eventuell avsikt. 
+
+Microsoft värnar om att skydda individuell integritet. I det här [Sekretess dokumentet](privacy.md)  förklaras de kontroller vi tillhandahåller dig, som organisationens IT-administratör, för att säkerställa att informationen är åtgärdbar och att du inte behöver kompromissa med det förtroende du placerar i Microsoft.
+
 Du kan komma åt upplevelsen från Microsoft 365 admin Home under **rapporter** om  >  **produktivitets Poäng**.
 
-## <a name="interpreting-productivity-score"></a>Tolka Poäng för produktivitet 
+## <a name="interpreting-your-organizations-productivity-score"></a>Tolkning av organisationens produktivitets Poäng 
 
-På Start sidan för produktivitets Poäng visas din totala poäng-och Poäng historik och huvud inblick för varje kategori.
+På Start sidan för produktivitet visas organisationens totala poäng-och resultat historik och huvud inblick för varje kategori.
 
 :::image type="content" source="../../media/prodscore-landing.png" alt-text="Poäng för produktivitet i rapporter.":::
 
-**Poängen** visas som ett procent värde och i punkter. Du kan se dina Points i täljaren och maximalt antal möjliga punkter i nämnaren.
+**Din organisations Poäng** visas som ett procent värde och i punkter. Du kan se dina Points i täljaren och maximalt antal möjliga punkter i nämnaren.
 
-Med funktioner för **peer-prestandatest** kan du jämföra poängen med organisationer som dina egna. Peer-benchmark för kategorierna personer som går ut beräknas som medelvärdet av mått inom en uppsättning likartade organisationer. Uppsättningen organisationer består av organisationer i din region med ett liknande antal licensierade användare, typer av licenser, bransch och besittning med Microsoft 365. 
+Med distribution med **motparter** kan du jämföra din organisations poäng med organisationer som ditt. Peer-benchmark för kategorierna personer som går ut beräknas som medelvärdet av mått inom en uppsättning likartade organisationer. Uppsättningen organisationer består av organisationer i din region med ett liknande antal licensierade användare, typer av licenser, bransch och besittning med Microsoft 365. 
 
 Resurs benchmark för slut punkts analys inkluderar mål för start prestanda och Rekommenderad program konfiguration baserat på aggregerade median värden för alla klienter.
 
@@ -126,7 +130,7 @@ Informations sidorna är:
 
 Rapporten kontinuitet för företag är en begränsad tids rapport för arbets plats information som är tillgänglig för alla Microsoft 365-kunder så att de kan hjälpa dem att vägleda sina organisationer under denna utmanande tid.  
 
-Den här rapporten hjälper företags ledare att förstå: 
+Den här rapporten hjälper organisationer att förstå: 
 
 - Hur samarbete och kommunikation påverkas av SKIFT för fjärrarbete. 
 
@@ -140,4 +144,4 @@ Den här rapporten hjälper företags ledare att förstå:
 
 ## <a name="we-want-to-hear-from-you"></a>Vi vill höra från dig
 
-Dela dina tankar om produktivitets Poäng och dina idéer om hur du kan förbättra det. Använd **feedback** -avsnitten i produkten och/eller nå produktivitets gruppen på ProductivityScorePreview@service.microsoft.com.
+Dela dina tankar om produktivitets Poäng och dina idéer om hur du kan förbättra det. Använd **feedback** -avsnitten i produkten och/eller nå produktivitets gruppen på prodscorefeedback@microsoft.com.

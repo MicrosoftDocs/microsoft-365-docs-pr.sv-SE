@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: ytterligare enhets information på tjänster när du flyttar från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i det nya tyska data centret.'
-ms.openlocfilehash: da05a3c2eb6a8d579c53d403a1ef575c389eda12
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 941b836871f4ffb7f39f6e144675e9ee15510270
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551959"
+ms.locfileid: "49560868"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Ytterligare enhets information för migreringen från Microsoft Cloud Deutschland
 
@@ -136,6 +136,12 @@ Enheten ansluts automatiskt till Azure AD utan användar-eller administratörs �
 
 
 ## <a name="windows-azure-ad-join"></a>Windows Azure AD-anslutning
+
+**Viktigt:** Intune-tjänstens huvud konto aktive ras efter handelsmigrering, vilket innebär aktivering av Azure AD-registrering. Om du blockerade registrering av Azure AD-enheter före migrering måste du inaktivera Intune-tjänstens huvud konto med PowerShell för att inaktivera registrering av Azure AD-enheter med Azure AD-portalen igen. Du kan inaktivera Intune-huvudobjektet med det här kommandot i Azure Active Directory PowerShell för Graph.
+
+```powershell
+Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
+```
 
 ### <a name="unjoin"></a>Koppla från
 

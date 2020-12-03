@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 description: Administratörer kan läsa om hotets skydd i Microsoft 365 och konfigurera hur det ska användas för din organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d80e81ab5648d186bb72f29acc010442877aba7c
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 98a20c8805ff9eb735ca880cfc24a0acf9698b3e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356685"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561213"
 ---
 # <a name="protect-against-threats"></a>Skydda mot hot
 
@@ -71,7 +71,7 @@ För att konfigurera Defender för Office 365-principer måste du ha en lämplig
 |Organisations hantering i Exchange Online|[Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>och<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |
 
-Mer information finns i [behörigheter i säkerhets &amp; kontroll Center](permissions-in-the-security-and-compliance-center.md).
+Mer information finns i [behörigheter i säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="before-you-begin-turn-on-audit-logging-for-reporting-and-investigation"></a>Innan du börjar aktiverar du gransknings loggning för rapportering och undersökning
 

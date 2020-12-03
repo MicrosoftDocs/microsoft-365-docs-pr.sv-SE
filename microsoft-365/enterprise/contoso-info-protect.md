@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå hur Contoso använder funktionerna för informations skydd i Microsoft 365 för företag för att skydda sina digitala till gångar i molnet.
-ms.openlocfilehash: a1aa08a20d284d3a003f4a406c37f2107ce19bd1
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 7cc51110a0bc4c87e57e71b2ddb42aa0dbaa288d
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754611"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558510"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Informationsskydd för Contoso Corporation
 
@@ -34,14 +34,14 @@ Contoso utförde en analys av sina uppgifter och fastställde följande klassifi
 
 | Nivå 1: Baslinje | Nivå 2: Känslig | Nivå 3: Strikt reglerad |
 |:-------|:-----|:-----|
-| Datan krypteras och är endast tillgänglig för autentiserade användare.<BR> <BR> Tillhandahålls för alla data som lagrats lokalt och i Cloud-baserad lagring och arbets belastning. Datan krypteras när den lagras i tjänsten och överförs mellan tjänsten och klientenheterna. <BR><BR>Exempel på data på nivå 1 är normal företagskommunikation (e-post) och filer till administrations-, försäljnings- och supportpersonal. | Nivå 1 plus stark autentisering och dataförlustskydd.<BR> <BR> Stark autentisering inkluderar Azure Multi-Factor Authentication (MFA) med SMS-verifiering. Med förhindra data förlust ser du till att känslig eller viktig information inte reser utanför Microsofts moln.<BR><BR>Exempel på data på nivå 2 är ekonomisk och juridisk information, samt data vid forskning och utveckling av nya produkter. | Nivå 2 plus de högsta nivåerna för kryptering, autentisering och granskning.<BR><BR>Högsta krypteringsnivåerna för vilande data och data i molnet, kompatibla med regionala föreskrifter, kombinerade med MFA med smartkort, detaljerad granskning och aviseringar.<BR> <BR>Exempel på nivå 3-data är kund-och partner person uppgifter, produkt teknik specifikationer och tillverkarspecifik tillverknings teknik.  |
+| Datan krypteras och är endast tillgänglig för autentiserade användare.<BR> <BR> Tillhandahålls för alla data som lagrats lokalt och i Cloud-baserad lagring och arbets belastning. Datan krypteras när den lagras i tjänsten och överförs mellan tjänsten och klientenheterna. <BR><BR>Exempel på data på nivå 1 är normal företagskommunikation (e-post) och filer till administrations-, försäljnings- och supportpersonal. | Nivå 1 plus stark autentisering och dataförlustskydd.<BR> <BR> Med stark autentisering ingår multifaktorautentisering med Azure AD (MFA) med SMS-verifiering. Med förhindra data förlust ser du till att känslig eller viktig information inte reser utanför Microsofts moln.<BR><BR>Exempel på data på nivå 2 är ekonomisk och juridisk information, samt data vid forskning och utveckling av nya produkter. | Nivå 2 plus de högsta nivåerna för kryptering, autentisering och granskning.<BR><BR>Högsta krypteringsnivåerna för vilande data och data i molnet, kompatibla med regionala föreskrifter, kombinerade med MFA med smartkort, detaljerad granskning och aviseringar.<BR> <BR>Exempel på nivå 3-data är kund-och partner person uppgifter, produkt teknik specifikationer och tillverkarspecifik tillverknings teknik.  |
 ||||
 
 ## <a name="contoso-information-policies"></a>Contoso information policies
 I följande tabell visas Contosos informations principer.
 
 
-| Värde | Åtkomst | Datakvarhållning | Informationsskydd |
+| Value | Åtkomst | Datakvarhållning | Informationsskydd |
 |:-------|:-----|:-----|:-----|
 | Lågt affärsvärde (Nivå 1: Baslinje) | Tillåt åtkomst till alla.  | 6 månader | Använd kryptering. |
 | Medelhögt affärsvärde (Nivå 2: Känslig) | Tillåt åtkomst till contoso-anställda, underleverantörer och partners. <BR><BR> Använd MFA, TLS (Transport Layer Security) och hantering av mobilprogram (MAM). | 2 år  | Använd hashvärden för dataintegritet.  |

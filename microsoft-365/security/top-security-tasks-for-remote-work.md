@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Skydda dina företags meddelanden och data från cyberterrorism hot, inklusive utpressnings tro Jan, nätfiske och illvilliga filer.
-ms.openlocfilehash: 8f170079a5542f703376139cdd6ec4550712d0fd
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: df6d837c31244efb1b6cea804972601acdb5dc17
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944379"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558544"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>De 12 främsta aktiviteterna för säkerhets team för att stödja arbete hemifrån
 
@@ -42,7 +42,7 @@ För kunder som använder vårt företags abonnemang rekommenderar Microsoft att
 
 |Steg|Uppgift|Alla Office 365 Enterprise-abonnemang|Microsoft 365 E3|Microsoft 365 E5|
 |---|---|---|---|---|
-|9.1|[Aktivera Azure Multi-Factor inloggningsautentisering (MFA)](#1-enable-azure-multi-factor-authentication-mfa)|![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|9.1|[Aktivera Azure AD multifaktorautentisering (MFA)](#1-enable-azure-ad-multi-factor-authentication-mfa)|![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |två|[Skydda mot hot](#2-protect-against-threats)|![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |amp;3D|[Konfigurera Microsoft Defender för Office 365](#3-configure-microsoft-defender-for-office-365)|||![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9.4|[Konfigurera Microsoft Defender för identitet](#4-configure-microsoft-defender-for-identity)|||![Förts](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -60,7 +60,7 @@ Innan du börjar bör du kontrol lera din [microsoft 365 säkra Poäng](https://
 
 ![Skärm bild av Microsofts säkra Poäng](../media/secure-score.png)
 
-## <a name="1-enable-azure-multi-factor-authentication-mfa"></a>1: Aktivera Azure Multi-Factor inloggningsautentisering (MFA)
+## <a name="1-enable-azure-ad-multi-factor-authentication-mfa"></a>1: Aktivera Azure AD multifaktorautentisering (MFA)
 
 Det enda du kan göra för att förbättra säkerheten för anställda som arbetar hemifrån är att aktivera MFA. Om du inte redan har processer på plats kan du behandla detta som en nöd situations pilot och kontrol lera att du har stöd familjen redo att hjälpa anställda som är låsta. Eftersom du troligen inte kan distribuera maskin varu säkerhetsenheter kan du använda Windows Hello biometrik och smartphone-verifierings program som Microsoft Authenticator.
 
@@ -112,7 +112,7 @@ Du måste arbeta med din Exchange Online-administratör och SharePoint Online-ad
 
 ## <a name="4-configure-microsoft-defender-for-identity"></a>4: Konfigurera Microsoft Defender för identitet
 
-[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) är en molnbaserad säkerhetslösning som utnyttjar dina lokala Active Directory-signaler för att identifiera, upptäcka och undersöka avancerade hot, komprometterade identiteter och illasinnade insider-åtgärder som riktas mor organisationen. Fokusera på den här nästa eftersom den skyddar din lokala och moln infrastrukturen inte har några beroenden eller förutsättningar och kan ge omedelbara fördelar.
+[Microsoft Defender för identitet](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) är en molnbaserad säkerhets lösning som använder dina lokala Active Directory-signaler för att identifiera, upptäcka och undersöka avancerade hot, kompromissade identiteter och illasinnade Insider-åtgärder på din organisation. Fokusera på den här nästa eftersom den skyddar din lokala och moln infrastrukturen inte har några beroenden eller förutsättningar och kan ge omedelbara fördelar.
 
 - Se [snabb starts instruktioner för Microsoft Defender för](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) att snabbt få installation
 - Titta [på videoklippet: Introduktion till Microsoft Defender för identitet](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
@@ -211,7 +211,7 @@ Microsoft 365 tillhandahåller följande resurser för att hjälpa användare i 
 |Symboliserar konceptet|Resurser|
 |---|---|
 |Microsoft 365|[Anpassningsbara Learning-vägar](https://docs.microsoft.com/office365/customlearning/) <p>De här resurserna hjälper dig att hålla ihop utbildning för slutanvändare i din organisation|
-|Microsoft 365 Säkerhetscenter|[Kodmodul: skydda din organisation med inbyggd, intelligent säkerhet från Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Med den här modulen kan du beskriva hur säkerhetsfunktionerna i Microsoft 365 fungerar tillsammans och för att Articulate fördelarna med de här säkerhetsfunktionerna.|
+|Microsoft 365-säkerhet|[Kodmodul: skydda din organisation med inbyggd, intelligent säkerhet från Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Med den här modulen kan du beskriva hur säkerhetsfunktionerna i Microsoft 365 fungerar tillsammans och för att Articulate fördelarna med de här säkerhetsfunktionerna.|
 |Multifaktorautentisering|[Tvåstegsverifiering: Vad är sidan för ytterligare verifiering?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Den här artikeln hjälper slutanvändarna att förstå vad multifaktorautentisering är och varför den används i din organisation.|
 |
 

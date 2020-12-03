@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Hur Contoso använder säkerhetsfunktionerna i Microsoft 365 för företag.
-ms.openlocfilehash: a72a770029328eaddf76cbe1b2039386c50c2750
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 5c951a973fbebeff92040f9411ad2c81788f920a
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920424"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558400"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Sammanfattning av Microsoft 365 för företags säkerhet för Contoso Corporation
 
@@ -56,7 +56,7 @@ Om du vill följa säkerhets praxis och Microsoft 365 för företags distributio
 
 - Dedikerade globala administratörskonton med MFA och PIM
 
-  I stället för att tilldela rollen global administratör till vardagliga användar konton, har contoso tre dedikerade globala administratörs konton med starka lösen ord. Kontona skyddas av Azure Multi-Factority (MFA) och Azure Active Directory (Azure AD) privilegierad identitets hantering (PIM). *PIM är endast tillgängligt med Microsoft 365 E5.*
+  I stället för att tilldela rollen global administratör till vardagliga användar konton, har contoso tre dedikerade globala administratörs konton med starka lösen ord. Kontona skyddas av Azure AD Multi-Factor inloggningsautentisering (MFA) och Azure Active Directory (Azure AD) privilegierad identitets hantering (PIM). *PIM är endast tillgängligt med Microsoft 365 E5.*
 
   Det är bara att logga in med ett globalt administratörs konto för specifika administrativa uppgifter. Lösen orden är bara kända för den avsedda personalen och kan endast användas inom en tids period som är konfigurerad i Azure AD PIM.
 

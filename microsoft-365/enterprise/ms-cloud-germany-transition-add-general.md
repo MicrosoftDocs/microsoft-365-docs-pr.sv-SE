@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: ytterligare allmän information om tjänster när du flyttar från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i det nya tyska data centret.'
-ms.openlocfilehash: 6fa09165f8aaa68e0f9fc567d96a4e53baaa594e
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 93692200f2519dbc647bb4e81b4bd8c646815858
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551788"
+ms.locfileid: "49558436"
 ---
 # <a name="additional-general-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Ytterligare allmän information för migrering från Microsoft Cloud Deutschland
 
@@ -49,14 +49,14 @@ Det finns tre villkor för att du ska kunna uppdatera inloggnings myndigheten:
 
 Ett program kan vara något av följande:
 
-- En enda sida (SPA)
-- Webb program som loggar in i användare
-- Webb program som anropar webb-API
-- Skyddad webb-API
-- Webb-API som anropar webb-API
-- Skriv bords program
-- Daemon-app
-- Mobilapp
+- [En enda sida (SPA)](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
+- [Webb program som loggar in i användare](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-sign-user-overview)
+- [Webb program som anropar webb-API](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
+- [Skyddad webb-API](https://docs.microsoft.com/azure/active-directory/develop/scenario-protected-web-api-overview)
+- [Webb-API som anropar webb-API](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-api-call-api-overview)
+- [Skriv bords program](https://docs.microsoft.com/azure/active-directory/develop/scenario-desktop-overview)
+- [Daemon-app](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)
+- [Mobilapp](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
  
 > [!NOTE] 
 > När ett program växlar till att använda `login.microsoftonline.com` som auktoritet kommer tokens att signeras av den här nya myndigheten. Om du har ett resurs program som andra appar ringer till måste du tillåta verifiering av lax-token. Det innebär att din app måste tillåta att tokens som är signerade av både Azure AD Germany och offentliga Azure AD-molnen. Denna lax krävs tills alla klient program som anropar tjänsten är fullständigt migrerade till det offentliga Azure AD-molnet. Efter migrering måste resurs programmet bara acceptera tokens som är signerade av Azure AD Public Cloud.
@@ -76,10 +76,10 @@ Ett program kan vara något av följande:
 
 5. Uppdatera miljöparametrar för att vara `AzurePublic` (i stället för `AzureGermany` ) i administrativa verktyg och skript för:
 
-    - Azure PowerShell
-    - Azure AD PowerShell (MSOnline)
-    - Azure AD PowerShell (AzureAD)
-    - Azure CLI
+    - [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.8.0&viewFallbackFrom=azurermps-5.6.0)
+    - [Azure AD PowerShell (MSOnline)](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)
+    - [Azure AD PowerShell (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)
+    - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)
  
 **Vad händer med program som jag publicerar?**
 

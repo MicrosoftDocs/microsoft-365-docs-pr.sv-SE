@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Lär dig hur du flyttar ditt företag från Microsoft 365 Business Premium till Microsoft 365 E3.
-ms.openlocfilehash: 3f840a27cdcf50bba7710681135f6c2e241ad14b
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 3f1bb9591e1bd2bac49326325ce6c8c2d6778497
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367064"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558253"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Migrera från Microsoft 365 Business Premium till Microsoft 365 E3
 
@@ -62,7 +62,7 @@ I den här tabellen visas skillnaderna mellan Microsoft 365 Business Premium och
 | Reducerings kapacitet för attack ytan    | [Visa den här listan](#threat-protection) | Företags hantering av maskinvarubaserad isolering för Microsoft Edge | 
 | Defender för Office 365 abonnemang 1 | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | Ingår inte, men kan läggas till på | 
 | **Identitets hantering**        | | | 
-| Self-Service lösen ords återställning för Hybrid Azure Active Directory-konton (Azure AD), Azure Multi-factority (MFA), villkorsstyrd åtkomst, tillbakaskrivning för lösen ord för lokala identiteter|     ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
+| Standard lösen ords återställning för Hybrid Azure Active Directory-konton (Azure AD), Azure AD multi-factority (MFA), villkorsstyrd åtkomst, tillbakaskrivning för lösen ord för lokala identiteter|     ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 | Cloud App Discovery, Azure AD Connect-hälsa    |     | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 | Azure AD Office 365-appar Sign-On (SSO): 10 appar per användare (Galleri SaaS program som Salesforce) * | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 | Azure AD Premium 1 SSO: ingen gräns (lokala program via Azure AD Application Proxy och program som inte är gallerier med hjälp av Self-Service program för programkompatibilitet)    |     | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 

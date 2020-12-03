@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Få det senaste inom maskinvarubaserad isolering. Förhindra nuvarande och framväxande attacker som att utnyttja och sabotera inte fungerar för att störa företagets produktivitet och företags säkerhet.
-ms.openlocfilehash: c9b31ff91521b6badda31b6eb3202f370769a0fd
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 075006bb8f000dbbda2fd564e0c7cf83c1a15129
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021079"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561441"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>Application Guard för Office (offentlig för hands version) för administratörer
 
@@ -29,8 +29,8 @@ ms.locfileid: "49021079"
 
 **Gäller för:** Word, Excel och PowerPoint för Microsoft 365, Windows 10 Enterprise
 
->[!IMPORTANT]
->Vissa uppgifter gäller för en för hands version som kan ändras väsentligt innan den släpps kommersiellt. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
+> [!IMPORTANT]
+> Vissa uppgifter gäller för en för hands version som kan ändras väsentligt innan den släpps kommersiellt. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
 
 Microsoft Defender Application Guard för Office (Application Guard för Office) hindrar icke betrodda filer från att komma åt betrodda resurser, så att ditt företag är säkert mot nya och framväxande attacker. I den här artikeln får administratörer hjälp med att konfigurera enheter för förhands granskning av Application Guard för Office. Den innehåller information om system krav och installations anvisningar för att aktivera Application Guard för Office på en enhet.
 
@@ -38,15 +38,15 @@ Microsoft Defender Application Guard för Office (Application Guard för Office)
 
 ### <a name="minimum-hardware-requirements"></a>Minsta maskin varu krav
 
-* **CPU** : 64-bitar, 4 kärnor (fysiskt eller virtuellt), virtualiseringslösningar (Intel VT-x eller AMD-V), bas i5 motsvarande eller högre rekommenderas
-* **Fysiskt minne** : 8 GB RAM-minne
-* **Hård disk** : 10 GB ledigt utrymme på system enheten (SSD rekommenderas)
+* **CPU**: 64-bitar, 4 kärnor (fysiskt eller virtuellt), virtualiseringslösningar (Intel VT-x eller AMD-V), bas i5 motsvarande eller högre rekommenderas
+* **Fysiskt minne**: 8 GB RAM-minne
+* **Hård disk**: 10 GB ledigt utrymme på system enheten (SSD rekommenderas)
 
 ### <a name="minimum-software-requirements"></a>Minsta program varu krav
 
-* **Windows 10** : Windows 10 Enterprise Edition, Client version 2004 (20H1) build 19041
-* **Office** : Office beta Channel version 2008 16.0.13212 eller senare
-* **Uppdaterings paket** : Windows 10 kumulativa [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) säkerhets uppdateringar
+* **Windows 10**: Windows 10 Enterprise Edition, Client version 2004 (20H1) build 19041
+* **Office**: Office beta Channel version 2008 16.0.13212 eller senare
+* **Uppdaterings paket**: Windows 10 kumulativa [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) säkerhets uppdateringar
 
 Detaljerade system krav finns i [system krav för Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Mer information om för hands versionen av Office Insider finns i [komma igång med distribution av Office Insider-versioner](https://insider.office.com/business/deploy).
 

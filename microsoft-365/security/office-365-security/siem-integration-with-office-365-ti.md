@@ -18,21 +18,21 @@ ms.collection:
 - M365-security-compliance
 description: Integrera din organisations SIEM-server med Microsoft Defender för Office 365 och relaterade hot händelser i Office 365 Activity Management API.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 185e6e816cfff4131d7b5af11c4e3ea9cf94b338
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6253ed0133bf53bdbeca71bb595a850e25441311
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843582"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561711"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>SIEM integrering med Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Om din organisation använder en säkerhets information och en server för Event Management (SIEM) kan du integrera Microsoft Defender för Office 365 med din SIEM-Server. Du kan ställa in denna integrering genom att använda [API för aktivitets hantering i Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
+Om din organisation använder en säkerhets information och en server för Event Management (SIEM) kan du integrera Microsoft Defender för Office 365 med din SIEM-Server. Du kan ställa in denna integrering genom att använda [API för aktivitets hantering i Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
 
-SIEM integrering gör att du kan visa information, till exempel skadlig program vara eller Phish som identifieras av Microsoft Defender för Office 365, i dina SIEM Server-rapporter. 
+SIEM integrering gör att du kan visa information, till exempel skadlig program vara eller Phish som identifieras av Microsoft Defender för Office 365, i dina SIEM Server-rapporter.
 
 - Om du vill se ett exempel på SIEM-integrering med Microsoft Defender för Office 365, se Tech (community) för [SOC med Defender för office 365 och O365 Management API](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
 
@@ -40,11 +40,11 @@ SIEM integrering gör att du kan visa information, till exempel skadlig program 
 
 ## <a name="how-siem-integration-works"></a>Så fungerar SIEM-integrering
 
-API: t för aktivitets hantering i Office 365 hämtar information om åtgärder och händelser för användare, administratörer, system och principer från organisationens Microsoft 365-och Azure Active Directory-aktivitets loggar. Om din organisation har Microsoft Defender för Office 365 abonnemang 1 eller 2 eller Office 365 E5 kan du använda [Microsoft Defender för office 365-schemat](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema).  
+API: t för aktivitets hantering i Office 365 hämtar information om åtgärder och händelser för användare, administratörer, system och principer från organisationens Microsoft 365-och Azure Active Directory-aktivitets loggar. Om din organisation har Microsoft Defender för Office 365 abonnemang 1 eller 2 eller Office 365 E5 kan du använda [Microsoft Defender för office 365-schemat](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema).
 
 Nyligen har händelser från automatiserade undersökningar och svars funktioner i [Microsoft Defender för office 365 abonnemang 2](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2) lagts till i API för hanterings aktiviteten för Office 365. Förutom att inkludera uppgifter om grundläggande undersöknings uppgifter, till exempel ID, namn och status, innehåller API: n också information om undersöknings åtgärder och-enheter.
 
-SIEM-servern eller liknande system avsöker **granskningen. allmänna** arbets belastning för att få åtkomst till identifierings händelser. Mer information finns i [komma igång med Office 365 Management API: er](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). 
+SIEM-servern eller liknande system avsöker **granskningen. allmänna** arbets belastning för att få åtkomst till identifierings händelser. Mer information finns i [komma igång med Office 365 Management API: er](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
 
 ## <a name="enum-auditlogrecordtype---type-edmint32"></a>Enum: AuditLogRecordType-Type: EDM. Int32
 
@@ -52,7 +52,7 @@ SIEM-servern eller liknande system avsöker **granskningen. allmänna** arbets b
 
 I följande tabell sammanfattas de värden för **AuditLogRecordType** som är relevanta för Microsoft Defender för Office 365-händelser:
 
-|Värde|Medlems namn|Beskrivning|
+|Value|Medlems namn|Beskrivning|
 |---|---|---|
 |28|ThreatIntelligence|Phishing-och malware-händelser från Exchange Online Protection och Microsoft Defender för Office 365.|
 |41|ThreatIntelligenceUrl|Säkra länkar tids-och Blocks händelser från Microsoft Defender för Office 365.|

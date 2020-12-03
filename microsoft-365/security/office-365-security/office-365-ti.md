@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig mer om hot-och svars funktioner i Microsoft Defender för Office 365-abonnemang.
-ms.openlocfilehash: 6dba883a910306b548f1880be00ad45207da27dd
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7ae61e7ea70d8be5c31ec12443c8943f6e54bcf4
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845798"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561261"
 ---
 # <a name="threat-investigation-and-response"></a>Hot utredning och svar
 
@@ -33,12 +33,13 @@ ms.locfileid: "48845798"
 
 
 Hot-undersökningar och svars funktioner i [Microsoft Defender för Office 365](office-365-atp.md) hjälper säkerhets analyser och administratörer att skydda organisationens Microsoft 365 för företag-användare genom att:
+
 - Gör det enkelt att identifiera, övervaka och förstå cyberattacks
 - Att snabbt adressera hot i Exchange Online, SharePoint Online, OneDrive för företag och Microsoft Teams
 - Tillhandahålla insikter och kunskaper för att hjälpa säkerhets hanteringen att förhindra cyberattacks mot deras organisation
 - Använda [Automatisk undersökning och svar i Office 365](automated-investigation-response-office.md) för viktiga e-postbaserade hot
-    
-Hot-undersökningar och svars funktioner tillhandahåller insikter mot hot och relaterade svars åtgärder som är tillgängliga i säkerhetsövervakning &amp; . Dessa insikter kan hjälpa din organisations säkerhets team att skydda användare från e-post-eller filbaserade attacker. Funktionerna hjälper dig att övervaka signaler och samla in data från flera källor, till exempel användar aktivitet, inloggningsautentisering, e-post, kompromissade datorer och säkerhets händelser. Besluts fattare och säkerhets åtgärder kan använda den här informationen för att förstå och reagera på hot mot din organisation och skyddar din immateriella egendom.
+
+Hot-och svars funktioner tillhandahåller insikter för hot och relaterade svars åtgärder som är tillgängliga i centret för säkerhets & efterlevnad. Dessa insikter kan hjälpa din organisations säkerhets team att skydda användare från e-post-eller filbaserade attacker. Funktionerna hjälper dig att övervaka signaler och samla in data från flera källor, till exempel användar aktivitet, inloggningsautentisering, e-post, kompromissade datorer och säkerhets händelser. Besluts fattare och säkerhets åtgärder kan använda den här informationen för att förstå och reagera på hot mot din organisation och skyddar din immateriella egendom.
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>Bekanta dig med Threat-och svars verktyg
 
@@ -53,19 +54,19 @@ Arbets ytan för hot-undersökningar och svars funktioner i området säkerhets 
 ### <a name="threat-dashboard"></a>Hot instrument panel
 
 Använd hot instrument panelen (Detta kallas även för [säkerhets instrument panelen](security-dashboard.md)) för att snabbt se vilka hot som har åtgärd ATS, och som ett visuellt sätt att rapportera till besluts fattare för företag hur Microsoft 365-tjänster säkrar verksamheten.
-  
+
 ![Hot instrument panel](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
-  
-Om du vill visa och använda den här instrument panelen &amp; går du till instrument panelen för **hot Management** i Center för säkerhets kontroll \> **Dashboard**.
-  
+
+Om du vill visa och använda den här instrument panelen går du till fliken **Threat Management** på \> **instrument panelen** för säkerhet &.
+
 ### <a name="threat-explorer"></a>Hotutforskaren
 
 Använd [Threat Explorer (och identifieringar i real tid)](threat-explorer.md) för att analysera hot, se hur mycket du har attacker och analysera data från hot familjer, angripare och andra infrastrukturer. Threat Explorer (kallas även Utforskaren) är start platsen för eventuella säkerhetsanalytikers undersökningar.
 
 ![Threat Explorer](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
-  
-Om du vill visa och använda den här rapporten &amp; går du till **Threat Management** \> **Explorer**.
-  
+
+Om du vill visa och använda den här & rapporten går du till **Threat Management** \> **Explorer**.
+
 ### <a name="incidents"></a>Incidenter
 
 Använd listan incidenter (kallas även undersökningar) för att se en lista över flyg säkerhets tillbud. Incidenter används för att spåra hot som misstänkta e-postmeddelanden och för att genomföra ytterligare undersökningar och åtgärder.
@@ -101,7 +102,7 @@ I Microsoft Defender för Office 365 används rollbaserad åtkomst kontroll. Beh
 > [!TIP]
 > Även om vissa roller, till exempel säkerhets administratör, kan tilldelas i säkerhets & Compliance Center, bör du överväga att använda antingen Microsoft 365 Admin Center eller Azure Active Directory i stället. Information om roller, roll grupper och behörigheter finns i följande resurser:
 >
-> - [Behörigheter i säkerhetsrelaterade &amp; Center](permissions-in-the-security-and-compliance-center.md)
+> - [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md)
 >
 > - [Administratörens rollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 

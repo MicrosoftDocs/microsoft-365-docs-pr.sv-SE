@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-overview
-ms.openlocfilehash: 993dd1ed66ca5bc6635c0eadf2dc7345ab84b57d
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 0144e9478e74e252e0c4ccc0c902df376129c388
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356925"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558292"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationer av identiteter och enhetsåtkomst
 
@@ -110,7 +110,7 @@ Azure AD tillhandahåller en full uppsättning funktioner för identitets hanter
 
 |Resurs eller funktion|Beskrivning|Licensiering|
 |---|---|---|
-|[Multifaktorautentisering (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA kräver att användare tillhandahåller två former av verifiering, till exempel ett användar lösen ord samt ett meddelande från programmet Microsoft Authenticator eller ett telefonsamtal. MFA minskar risken att stulna uppgifter kan användas för att komma åt din miljö. Microsoft 365 använder Azure Multi-Factor autentiseringstjänst-tjänsten för MFA-baserade inloggnings program.|Microsoft 365 E3 eller E5|
+|[Multifaktorautentisering (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA kräver att användare tillhandahåller två former av verifiering, till exempel ett användar lösen ord samt ett meddelande från programmet Microsoft Authenticator eller ett telefonsamtal. MFA minskar risken att stulna uppgifter kan användas för att komma åt din miljö. I Microsoft 365 används Azure AD Multi-Factor autentiseringstjänst för MFA-baserade inloggnings program.|Microsoft 365 E3 eller E5|
 |[Med villkorsstyrd åtkomst](/azure/active-directory/conditional-access/overview)|Azure AD utvärderar villkoren för användarens inloggning och använder principer för villkorsstyrd åtkomst för att fastställa tillåten åtkomst. I den här vägledningen visar vi dig hur du skapar en princip för villkorsstyrd åtkomst så att du måste ha nödvändig åtkomst till känslig information. Detta minskar risken för att en hackare med sin egen enhet och stulna autentiseringsuppgifter kan komma åt dina känsliga data. Det skyddar också känslig information på enheterna, eftersom enheterna måste uppfylla specifika krav på hälsa och säkerhet.|Microsoft 365 E3 eller E5|
 |[Azure AD-grupper](/azure/active-directory/fundamentals/active-directory-manage-groups)|Principer för villkorsstyrd åtkomst, enhets hantering med Intune och till och med behörigheter till filer och webbplatser i din organisation är beroende av tilldelningen till användar konton eller Azure AD-grupper. Vi rekommenderar att du skapar Azure AD-grupper som motsvarar den skydds nivå du implementerar. Din exekutiva personal är till exempel troligen högre värde mål för hackare. Därför är det bra att lägga till användar konton för dessa anställda i en Azure AD-grupp och tilldela den här gruppen till principer för villkorlig åtkomst och andra principer som tvingar fram en högre skydds nivå för Access.|Microsoft 365 E3 eller E5|
 |[Enhets registrering](/azure/active-directory/devices/overview)|Du registrerar en enhet i Azure AD för att skapa en identitet för enheten. Denna identitet används för att autentisera enheten när en användare loggar in och för att tillämpa villkorsstyrda åtkomst principer som kräver domänanslutna eller kompatibla datorer. För den här vägledningen använder vi enhets registrering för att automatiskt registrera domänanslutna Windows-datorer. Enhets registrering är en förutsättning för att hantera enheter med Intune.|Microsoft 365 E3 eller E5|

@@ -17,14 +17,14 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Hitta och använda rapporter för Microsoft Defender för Office 365 i säkerhetsrelaterade &amp; Center.
+description: Hitta och använda rapporter för Microsoft Defender för Office 365 i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8885eea2168cc40c497f6fa1066ae020dda7fd7c
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 5efaef018c78bd161c9cde81af36be92173479ae
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087724"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561733"
 ---
 # <a name="view-reports-for-microsoft-defender-for-office-365"></a>Visa rapporter för Microsoft Defender för Office 365
 
@@ -35,7 +35,7 @@ Microsoft Defender för Office 365-organisationer (till exempel Microsoft 365 E5
 
 ![Instrument panelen för rapporter i säkerhets & efterlevnad](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="defender-for-office-365-file-types-report"></a>Typrapport för Defender for Office 365
+## <a name="defender-for-office-365-file-types-report"></a>Rapport om fil typer i Defender för Office 365
 
 I rapporten **Defender för Office 365-filtyper** visas en typ av filer som identifieras i skadlig kod för [bifogade](atp-safe-attachments.md)filer.
 
@@ -119,7 +119,7 @@ Om du klickar på **Visa informations tabell** visas en vy i real tid av alla kl
 
 Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
 
-## <a name="defender-for-office-365-message-disposition-report"></a>Rapport om meddelandeborttagning i Office 365
+## <a name="defender-for-office-365-message-disposition-report"></a>Meddelande disposition för Defender för Office 365
 
 I rapporten för att visa **ATP** visas de åtgärder som vidtogs för e-postmeddelanden som identifierats som skadligt innehåll.
 
@@ -338,7 +338,7 @@ Utöver de rapporter som beskrivs i det här avsnittet är flera andra rapporter
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Vilka behörigheter behövs för att Visa Defender för Office 365-rapporterna?
 
-För att kunna visa och använda de rapporter som beskrivs i det här avsnittet **måste du ha en lämplig roll kopplad till både säkerhets &amp; kontroll Center och administrations centret för Exchange**.
+För att kunna visa och använda de rapporter som beskrivs i det här avsnittet **måste du ha tilldelats en lämplig roll för både säkerhets & efterlevnad och administrations centret för Exchange**.
 
 - För säkerhets & Compliance Center måste du ha någon av följande roller tilldelade:
 

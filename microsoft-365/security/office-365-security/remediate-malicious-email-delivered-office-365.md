@@ -14,19 +14,19 @@ search.appverid: MET150
 description: Hot-reparation
 appliesto:
 - Microsoft 365 Defender
-ms.openlocfilehash: 5568a296697c7cdbbada333d45f498a2876603f9
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: 4adabe3e85b2bff26167bfad92a9a7fcbf24e58e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350740"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561297"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Åtgärda skadlig e-post som skickas i Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Genom reparation menas en fastställd åtgärd mot ett hot. Skadlig e-post som skickas till din organisation kan rensas antingen av systemet, via en tom timmes autorensning (ZAP) eller av säkerhets team genom reparations åtgärder som *Flytta till Inkorgen*, *Flytta till skräp post*, *gå till borttaget*, *mjuka bort* eller *ta bort borttagning*. Microsoft Defender för Office 365 P2/E5 gör det möjligt för säkerhets team att åtgärda hot om e-post och samarbets funktioner genom manuell och automatisk undersökning.
+Genom reparation menas en fastställd åtgärd mot ett hot. Skadlig e-post som skickas till din organisation kan rensas antingen av systemet, med rensad automatisk rensning (ZAP) eller av säkerhets team genom reparations åtgärder som *Flytta till Inkorgen*, *flyttas till skräp post*, *flyttas till borttagna objekt*, *mjuka rader* *eller* borttagningar. Microsoft Defender för Office 365 P2/E5 gör det möjligt för säkerhets team att åtgärda hot om e-post och samarbets funktioner genom manuell och automatisk undersökning.
 
 > [!NOTE]
 > För att åtgärda skadlig e-post måste säkerhets teamen ha tilldelats *Sök-och rensnings* rollen. Roll tilldelning sker genom behörigheter i säkerhets-och kompatibilitetstillstånd.

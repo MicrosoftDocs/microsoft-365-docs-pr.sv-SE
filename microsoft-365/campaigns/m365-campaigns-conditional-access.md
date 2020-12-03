@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du begär MFA och konfigurerar principer för villkorsstyrd åtkomst för Microsoft 365 för företag.
-ms.openlocfilehash: 5908a36f09753cd8f66169c6a67be45c748807b7
-ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
+ms.openlocfilehash: 08a77615d6801eef52465c450c2559a9d786befb
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071507"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558280"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Kräv multifaktorautentisering och konfigurera principer för villkorsstyrd åtkomst
 
@@ -45,7 +45,7 @@ För närvarande inkluderar grundläggande principer följande:
     - **Blockera äldre verifierare** – äldre klient program och vissa nya appar använder inte nyare, säkrare autentiseringsprotokoll. Dessa äldre appar kan kringgå villkorsstyrda åtkomst principer och få obehörig åtkomst till din miljö. Denna princip blockerar åtkomst från klienter som inte stöder villkorlig åtkomst. 
     - **KRÄV MFA för tjänst hantering** – kräver multifaktorautentisering för åtkomst till hanterings verktyg, inklusive Azure Portal (där du konfigurerar rikt linjer för principer). 
 
-Microsoft rekommenderar att du aktiverar alla dessa rikt linjer. Efter att dessa principer har Aktiver ATS uppmanas administratörer och användare att registrera sig för Azure Multi-Factor User.
+Microsoft rekommenderar att du aktiverar alla dessa rikt linjer. När dessa principer är aktiverade uppmanas administratörer och användare att registrera dig för multifaktorautentisering med Azure AD.
 
 Mer information om dessa principer finns i [Vad är rikt linjer](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)?
 

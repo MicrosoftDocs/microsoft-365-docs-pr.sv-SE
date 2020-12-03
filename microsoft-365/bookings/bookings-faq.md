@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Vanliga frågor och svar om Microsoft-bokningar.
-ms.openlocfilehash: 40605cfc7e5d30e12cd34a463a76e8d9c324efc7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 47bb71476c3fd0b32f9be3e71b188bef6efe2498
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445457"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561561"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Vanliga frågor och svar om Microsoft-bokningar
 
@@ -29,7 +29,7 @@ Bokningar är en online tjänst så du behöver inte ladda ner något. Gå bara 
 
 ### <a name="who-has-access-to-microsoft-bookings"></a>Vem har åtkomst till Microsoft-bokningar?
 
-Bokningar är tillgängliga och aktiva som standard för Microsoft 365 Business Premium, A3, A5, E3 och E5 kunder i hela världen. Bokningar är också tillgängliga i Office 365 som drivs av 21Vianet.
+Bokningar är tillgängliga och aktiva som standard för Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3 och E5 kunder i hela världen. Bokningar är också tillgängliga i Office 365 som drivs av 21Vianet.
 
 ### <a name="will-my-customers-see-my-personal-or-business-calendar"></a>Ser mina kunder min personliga eller företags kalender?
 
@@ -37,7 +37,7 @@ Kunderna ser bara den kalender som du publicerar online för de tjänster, tider
 
 ### <a name="how-do-end-users-access-the-bookings-app"></a>Hur kommer användarna åt programmet program vara?
 
-Alla som har en licens för Microsoft 365 Business Premium, A3, A5, E3, E5 eller har lagts till som anställd i antingen administratörs-eller visnings programs roller kan komma åt bokningar i program väljaren i Microsoft 365 webb miljö. Det finns också en Companion-app för iOS och Android.
+Alla som har en licens för Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3, E5 eller har lagts till som anställd i administratörs-eller visnings programs rollen kan komma åt bokningar i program väljaren i Microsoft 365 webb miljö. Det finns också en Companion-app för iOS och Android.
 
 ### <a name="can-i-use-bookings-in-my-own-web-site"></a>Kan jag använda bokningar på min egen webbplats?
 
@@ -49,7 +49,7 @@ Ja. Vi tillhandahåller en länk till din boknings sida på fliken **boknings si
 
 ### <a name="can-our-it-department-control-whether-end-users-can-access-bookings"></a>Kan IT-avdelningen kontrol lera om slutanvändare kan komma åt bokningar?
 
-Bokningar finns i Business Premium, M365 a3/A5 och E3/E5 klient organisationer som standard, men administratörer kan inaktivera funktionen i Microsoft 365 Admin Center om de väljer. Gör det genom att [följa de här instruktionerna](turn-bookings-on-or-off.md).
+Bokningar finns i Microsoft 365 Business Premium, Microsoft 365 Business Standard, M365 a3/A5 och E3/E5 klient organisationer som standard, men administratörer kan inaktivera funktionen i Microsoft 365 Admin Center om de väljer. Gör det genom att [följa de här instruktionerna](turn-bookings-on-or-off.md).
 
 Om en kund vill inaktivera åtkomst till bokningar för vissa kvalificerade licenser i sin klient organisation kan de antingen använda en grup princip för att begränsa licenser eller implementera en OWA-postlåda som begränsar vem som kan skapa nya kalender kalendrar.
 
@@ -114,7 +114,7 @@ Bokningar är en perfekt lösning för både företags-och småföretags kunder 
 
 ### <a name="how-do-i-get-microsoft-bookings"></a>Hur skaffar jag Microsoft-bokningar?
 
-Bokningar finns i Microsoft 365 för kunder med licenserna Business Premium, A3, A5, E3 och E5 tillsammans med en app för iOS och Android. Bokningar är inte tillgängliga som en fristående app. Outlook Web App eller Outlook på webben måste vara aktiverat för att du ska kunna använda bokningar eftersom det lagrar data i Outlook.
+Bokningar finns i Microsoft 365 för kunder med Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3 och E5, tillsammans med iOS-och Android Companion-appar. Bokningar är inte tillgängliga som en fristående app. Outlook Web App eller Outlook på webben måste vara aktiverat för att du ska kunna använda bokningar eftersom det lagrar data i Outlook.
 
 En boknings licens ger full funktionalitet för produkten, inklusive att skapa och hantera kalendrar. Det gör det möjligt för användarna att visa och redigera befintliga kalendrar, när dessa användare läggs till som personal i en administratörs-eller visnings roll.
 
@@ -172,9 +172,9 @@ En inställning som kallas för **maximal ledtid** bestämmer det längstaste i 
 
 ### <a name="how-does-bookings-work-across-time-zones"></a>Hur fungerar det med olika tids zoner?
 
-Alla tider är i arbets tids zonen (din lokala tidszon) som standard. Det innebär att alla inställningar du konfigurerar för en kalender, till exempel arbets tid, visas i den här tids zonen. Självbetjänings sidan har möjlighet att visa alla tider för avtalade tider i tids zonen för slutanvändare, som kan stängas av om du vill.Om **Visa inte tids luckor i affärs tids zonen** är avmarkerad på fliken sida med flikar visas tids luckor i sina egna lokala tids zoner.
+Alla tider är i arbets tids zonen (din lokala tidszon) som standard. Det innebär att alla inställningar du konfigurerar för en kalender, till exempel arbets tid, visas i den här tids zonen. Självbetjänings sidan har möjlighet att visa alla tider för avtalade tider i tids zonen för slutanvändare, som kan stängas av om du vill. Om **Visa inte tids luckor i affärs tids zonen** är avmarkerad på fliken sida med flikar visas tids luckor i sina egna lokala tids zoner.
 
-:::image type="content" source="media/bookings-faq-region.png" alt-text="Schemaläggning i bokningar":::
+:::image type="content" source="media/bookings-faq-region.png" alt-text="Inställningar för region och tidszon":::
 
 Det finns ingen möjlighet att ställa in tidszon för personal i bokningar. Tids zonen för personalen och därmed kontors tid är i affärs tids zonen.
 
@@ -202,7 +202,7 @@ Ja, vi har en grupp funktioner som gör att flera personer kan boka samma avtala
 
 Ja. Det finns en kryss ruta på fliken boknings sida i webb programmet: **Kräv ett Microsoft 365-eller Office 365-konto från min organisation till bok**. Om du markerar den här kryss rutan begränsas åtkomst för självbetjäning till bara de som är inom din klient organisation. Det går bara att få åtkomst till de personer som har lagts till som personal på sidan med administratörs-eller visnings roller.
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Schemaläggning i bokningar":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Åtkomst kontroll för boknings sida i bokningar":::
 
 ### <a name="how-frequently-does-the-home-page-update"></a>Hur ofta uppdateras start sidan?
 
@@ -250,7 +250,7 @@ Varje boknings kalender underhålls oberoende. Det finns ingen övrig annan vy �
 
 Till gång till webb programmet bokningar inbegriper att verifiera via den vanliga Azure Active Directory-autentiseringsprocessen (AAD). Självbetjänings sidan kan göras tillgänglig för alla som har länken webb sida. Men när alternativet **Kräv att ett Microsoft 365-eller Office 365-konto från min organisation** till bok inställning är markerat är sidan begränsat för användning inom Microsoft 365-klient organisationen (med hjälp av AAD-identifiering).
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Schemaläggning i bokningar":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Åtkomst kontroll för boknings sida i bokningar":::
 
 ### <a name="does-customer-data-leave-the-production-system-for-any-reason"></a>Lämnar kunddata av produktions systemet någon anledning?
 
@@ -303,18 +303,20 @@ För att anteckningarna ska synkroniseras korrekt med personalens kalendrar mås
 
 1. Logga in på Microsoft 365 och välj sedan **Outlook** från Start programmet.
 
-   ![Bild av Outlook i Start programmet](../media/bookings-applauncher-outlook.png)
+   > [!div class="mx-imgBorder"]
+   > ![Bild av Outlook i Start programmet](../media/bookings-applauncher-outlook.png)
 
 1. Välj **dela** kalender högst upp på sidan \> **Calendar**.
 
    ![Bild av menyn för kalender delning](../media/bookings-share-calendar.png)
 
-1. I avsnittet **personer i din organisation** väljer du List rutan bredvid **min organisation**och väljer sedan **Visa när jag är upptagen**.
+1. I avsnittet **personer i din organisation** väljer du List rutan bredvid **min organisation** och väljer sedan **Visa när jag är upptagen**.
 
-> [!NOTE]
-> Med den här inställningen kan du dela med dig av dina ledig/upptagen-uppgifter med bokningar och andra användare i organisationen. Den innehåller inte någon annan information, till exempel vilken typ av avtalad tid du har schemalagt, vem du har schemalagt avtalad tiden med eller platsen.
+   > [!NOTE]
+   > Med den här inställningen kan du dela med dig av dina ledig/upptagen-uppgifter med bokningar och andra användare i organisationen. Den innehåller inte någon annan information, till exempel vilken typ av avtalad tid du har schemalagt, vem du har schemalagt avtalad tiden med eller platsen.
 
-   ![Bild av fönstret för kalender delning med kan visa när jag är upptagen](../media/bookings-view-busy.png)
+   > [!div class="mx-imgBorder"]
+   > ![Bild av fönstret för kalender delning med kan visa när jag är upptagen](../media/bookings-view-busy.png)
 
 1. Välj **Klar**.
 
@@ -328,14 +330,14 @@ Om en anställd har lämnat företaget och tagit bort dem från din Microsoft 36
 
 1. Välj ikonen **ta bort** .
 
-1. Välj **OK**i bekräftelse rutan.
+1. Välj **OK** i bekräftelse rutan.
 
 > [!NOTE]
 > Om du har fler än en boknings kalender måste du ta bort användaren från alla.
 
 Om du vill kontrol lera om du har fler än en kalender väljer du pilen i den nedrullningsbara List rutan bredvid företagets namn och väljer sedan **Öppna**. Om du bara har en kalender visas bara alternativet för att lägga till en boknings kalender. Det här exemplet visar att det finns en andra kalender med namnet "contoso CO".
 
-   ![Bild av Välj en kalender skärm med en andra kalender som visas](../media/bookings-choose-calendar.png)
+![Bild av Välj en kalender skärm med en andra kalender som visas](../media/bookings-choose-calendar.png)
 
 ### <a name="theres-a-syncing-error-we-cant-identify"></a>Det finns ett synkroniseringsfel som vi inte kan identifiera
 

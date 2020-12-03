@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 description: Konfigurera multifaktorautentisering med text meddelanden som skickas till en smart telefon i test miljön för Microsoft 365 för företag.
-ms.openlocfilehash: f41fe7ad933f85c4b44a1e90529a998651412191
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 4c59405c1ce59cafaf0309e2314e5cbfa4eb080a
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487146"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558448"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>Multifaktorautentisering för test miljön för Microsoft 365 för företag
 
 *Den här test laboratorie guiden kan användas för både Microsoft 365 för företags-och Office 365 företags test miljöer.*
 
-Om du vill ha ytterligare en säkerhets nivå för att logga in på Microsoft 365 eller någon tjänst eller ett program som använder Azure AD-klient organisationen för din prenumeration kan du aktivera Azure Multi-Factor-verifiering, vilket kräver mer än ett användar namn och lösen ord för att verifiera ett konto.
+Om du vill ha ytterligare en säkerhets nivå för att logga in på Microsoft 365 eller någon tjänst eller ett program som använder Azure AD-klient organisationen för din prenumeration kan du aktivera Azure AD Multi-Factor-verifiering, vilket kräver mer än ett användar namn och lösen ord för att verifiera ett konto.
 
 Med multifaktorautentisering måste användare bekräfta ett telefonsamtal, ange en verifierings kod som skickas i ett textmeddelande eller verifiera verifieringen med en app på deras smarta telefoner när du har angett lösen orden korrekt. De kan bara logga in när denna faktor är uppfylld.
   
@@ -64,7 +64,7 @@ Aktivera multifaktorautentisering för användare 2-kontot med de här stegen:
     
 4. I listan väljer du **användare 2** -konto.
     
-5. I avsnittet **User 2** under **snabb steg**väljer du **Aktivera**.
+5. I avsnittet **User 2** under **snabb steg** väljer du **Aktivera**.
     
 6. I dialog rutan **om aktivering av multifaktorautentisering** väljer du **Aktivera multifaktorautentisering**.
     
@@ -88,7 +88,7 @@ Slutför konfigurationen för användare 2-kontot för att använda ett textmedd
     
    - Ange telefonnumret till den smarta telefon som ska ta emot textmeddelanden.
     
-   - I **metod**väljer du **skicka en kod efter SMS**.
+   - I **metod** väljer du **skicka en kod efter SMS**.
     
 5. Välj **Nästa**.
     
@@ -110,11 +110,11 @@ Skapa sedan en ny grupp med namnet MFAUsers och Lägg till användare 3-kontot i
 
 1. Gå till fliken **administrations Center för Microsoft 365** , Välj **grupper** i det vänstra navigerings fältet och välj sedan **grupper**.
 2. Välj **Lägg till en grupp**.
-3. I fönstret **Välj en grupptyp** väljer du **säkerhet**och sedan **Nästa**.
-4. I fönstret **Konfigurera grunderna väljer du** **Skapa grupp**och sedan **Stäng**.
-5. Ange **MFAUsers**i fönstret **Granska och slutför** och välj sedan **Nästa**.
+3. I fönstret **Välj en grupptyp** väljer du **säkerhet** och sedan **Nästa**.
+4. I fönstret **Konfigurera grunderna väljer du** **Skapa grupp** och sedan **Stäng**.
+5. Ange **MFAUsers** i fönstret **Granska och slutför** och välj sedan **Nästa**.
 6. I listan med grupper väljer du gruppen **MFAUsers** .
-7. I fönstret **MFAUsers** väljer du **medlemmar**och sedan **Visa alla och hantera medlemmar**.
+7. I fönstret **MFAUsers** väljer du **medlemmar** och sedan **Visa alla och hantera medlemmar**.
 8. I fönstret **MFAUsers** väljer du **Lägg till medlemmar**, väljer **användare 3** -konto och väljer sedan **Spara**  >  **Close**  >  **Close**.
 
 Skapa sedan en villkorsstyrd åtkomst policy som kräver multifaktorautentisering för medlemmar i gruppen MFAUsers.
@@ -123,12 +123,12 @@ Skapa sedan en villkorsstyrd åtkomst policy som kräver multifaktorautentiserin
 2. Välj villkorlig åtkomst för **Azure Active Directory**-  >  **säkerhet**  >  **Conditional Access**.
 3. I fönstret **villkorlig åtkomst – principer** väljer du **ny princip**.
 4. Ange **MFA för användar konton** i rutan **namn** i fönstret **nytt** .
-5. Välj **användare och grupper**i avsnittet **uppgifter** .
-6. På fliken **Inkludera** i fönstret **användare och grupper** väljer du **Välj användare och grupper**som  >  **användare och grupper**  >  **väljer**.
+5. Välj **användare och grupper** i avsnittet **uppgifter** .
+6. På fliken **Inkludera** i fönstret **användare och grupper** väljer du **Välj användare och grupper** som  >  **användare och grupper**  >  **väljer**.
 7. I fönstret **Välj** väljer du gruppen **MFAUsers** och väljer sedan **Välj**  >  **klar**.
 8. I avsnittet **Access Controls** i fönstret **ny** väljer du **Grant**.
-9. I fönstret **bidrag** väljer du **Kräv multifaktorautentisering**och väljer sedan **Välj**.
-10. I fönstret **nytt** väljer du **på** för **att aktivera principer**och väljer sedan **skapa**.
+9. I fönstret **bidrag** väljer du **Kräv multifaktorautentisering** och väljer sedan **Välj**.
+10. I fönstret **nytt** väljer du **på** för **att aktivera principer** och väljer sedan **skapa**.
 11. Stäng flikarna **Azure Portal** och **Microsoft 365 administrations Center** .
 
 Testa den här principen genom att logga ut och logga in med användare 3-kontot. Du bör uppmanas att konfigurera MFA. Det visar att MFAUsers Policy tillämpas.

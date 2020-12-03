@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Lär dig mer om hur du styr åtkomst i Microsoft 365-grupper,-team och SharePoint.
-ms.openlocfilehash: ec4e62f4d77b9aadbdc7457631ac1c4b498221c3
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 2a3a5a126a340a8ec1036eaebd22a0a0a81cf6c3
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377575"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558228"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Styrande åtkomst i Microsoft 365-grupper,-team och SharePoint
 
@@ -35,7 +35,7 @@ Följande tabell innehåller en snabb referens för de tillgängliga åtkomst ko
 ||Dynamiskt grupp medlemskap baserat på regler|[Skapa eller uppdatera en dynamisk grupp i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)|
 ||Kontrol lera vem som kan dela filer, mappar och webbplatser.|[Konfigurera och hantera åtkomstförfrågningar](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)|
 |Villkorlig åtkomst|||
-||Multifaktorautentisering|[Azure Multi-Factor-verifikation](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)|
+||Multifaktorautentisering|[Azure AD Multi-Factor-verifikation](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)|
 ||Styra enhets åtkomst baserat på grupp-, grupp-eller plats känslighet.|[Använd känslighets etiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
 ||Begränsa webbplats åtkomst för ohanterade enheter.|[Kontrol lera SharePoint Access från ohanterade enheter](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)|
 ||Kontrol lera webbplats åtkomst baserat på plats|[Hantera åtkomst till SharePoint och OneDrive data baserat på nätverksplats](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)|
@@ -73,7 +73,7 @@ Med SharePoint-webbplatser kan du lägga till ägare, medlemmar och besökare fr
 
 Med Microsoft 365 kan du kräva multifaktorautentisering för både personer inom och utanför organisationen. Det finns många alternativ för omständigheterna när andra uppmanas att ange en andra faktor. Vi rekommenderar starkt att du distribuerar multifaktorautentisering för din organisation:
 
-- [Azure Multi-Factor-verifikation](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
+- [Azure AD Multi-Factor-verifikation](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
 
 Om du har känslig information i vissa grupper och team kan du använda hanterings principer för enheter baserat på en grupp eller ett grupps känslighets etikett. Du kan blockera åtkomst helt och hållet från ohanterade enheter eller tillåta begränsad åtkomst via webben:
 

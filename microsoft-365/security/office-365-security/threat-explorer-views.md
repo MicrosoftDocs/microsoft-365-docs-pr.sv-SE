@@ -14,14 +14,14 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Lär dig hur du använder Threat Explorer och rapporten om identifiering av real tids rapporter för att undersöka och reagera på hot i säkerhets &amp; Center.
+description: Lär dig hur du använder Threat Explorer och rapporten om identifiering av real tids rapporter för att undersöka och reagera på hot i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9412350384c0b2092c376db371e93fa5295c454
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 551425bf3e6b2c4fbb429dd6698b4f85e30d1ebe
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367195"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561237"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vyer i Threat Explorer och identifieringar i real tid
 
@@ -30,7 +30,7 @@ ms.locfileid: "49367195"
 
 ![Hotutforskaren](../../media/ThreatExplorerFirstOpened.png)
 
-[Threat Explorer](threat-explorer.md) (och rapporten om identifiering av real tid) är ett kraftfullt, nära real tids verktyg som hjälper säkerhets åtgärder att undersöka och reagera på hot i säkerhets &amp; Center. Utforskaren (och rapporten real tids identifiering) visar information om misstänkt skadlig program vara och Phish i e-post och filer i Office 365 samt andra säkerhetshot och risker för din organisation.
+[Threat Explorer](threat-explorer.md) (och rapporten om identifiering av real tid) är ett kraftfullt, nära real tids verktyg som hjälper säkerhets åtgärder att undersöka och reagera på hot i säkerhets & Compliance Center. Utforskaren (och rapporten real tids identifiering) visar information om misstänkt skadlig program vara och Phish i e-post och filer i Office 365 samt andra säkerhetshot och risker för din organisation.
 
 - Om du har [Microsoft Defender för Office 365](office-365-atp.md) abonnemang 2 har du Explorer.
 - Om du har Microsoft Defender för Office 365 abonnemang 1 har du real tids identifiering.

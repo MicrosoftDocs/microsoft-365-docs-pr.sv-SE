@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå den grundläggande strukturen i den lokala IT-infrastrukturen för Contoso och hur företagets företags behov uppfylls av Microsoft 365 för företag.
-ms.openlocfilehash: b3b67429faccc5d22d49a2921fff4c8b3c3c062e
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 72d502b5078a1e572eeba27832550af52907e209
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920460"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558412"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Skype IT-infrastruktur och företags behov
 
@@ -121,7 +121,7 @@ Contosos IT-avdelning har fastställt följande mappning av företags behov till
 |  | Förbättra produktiviteten för distans- och mobila arbetare | Microsoft 365-arbetsbelastningar och molnbaserade data |
 |  | Öka kreativiteten och innovationen | Windows Ink, Cortana at Work, PowerPoint |
 | Säkerhet |  |  |
-|  | Identitets- och åtkomsthantering | Dedikerade globala administratörskonton med Azure Multi-Factor Authentication (MFA) och Azure AD Privileged Identity Management (PIM) <BR> MFA för alla användarkonton <BR> Med villkorsstyrd åtkomst <BR> Windows Hello <BR> Windows Credential Guard |
+|  | Identitets- och åtkomsthantering | Dedikerade globala administratörs konton med Azure AD Multi-Factor inloggningsautentisering (MFA) och Azure AD privilegierad identitets hantering (PIM) <BR> MFA för alla användarkonton <BR> Med villkorsstyrd åtkomst <BR> Windows Hello <BR> Windows Credential Guard |
 |  | Skydd mot hot | Advanced Threat Analytics <BR> Windows Defender <BR> Defender för Office 365 <BR> Microsoft Defender för Office 365 <BR> Microsoft 365 hot undersökningar och svar <BR> |
 |  | Informationsskydd | Azure Information Protection <BR> Skydd mot dataförlust (DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | Säkerhetshantering | Azure Defender  <BR> Windows Defender Säkerhetscenter |

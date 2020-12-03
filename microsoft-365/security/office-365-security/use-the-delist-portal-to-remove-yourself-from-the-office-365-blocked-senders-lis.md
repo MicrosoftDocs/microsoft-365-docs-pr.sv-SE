@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln får du lära dig hur du använder list portalen för att ta bort dig själv från listan med spärrade avsändare i Microsoft 365.
-ms.openlocfilehash: 637b610d0dd621e6d922d23354aead8e3824ad6a
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: f4e7bcc13ac6c133880eb0ebe69ba3f724d0a84e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445537"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561429"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Använda avlistningsportalen för att ta bort dig själv från listan med spärrade avsändare
 
@@ -39,13 +39,13 @@ Microsoft använder listan Spärrade avsändare för att skydda sina kunder mot 
 
 Du vet att du har lagts till i listan när du får ett svar på ett e-postmeddelande som innehåller ett fel som ser ut ungefär så här:
 
-> 550 5.7.606-649 åtkomst nekad, tillåts inte skickande IP [_IP-adress_]; För att begära borttagning från den här listan https://sender.office.com/ , gå till och följ instruktionerna. Mer information finns i [rapportera om icke-postleveranser för e-post i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
+> 550 5.7.606-649 åtkomst nekad, tillåts inte skickande IP [_IP-adress_]; För att begära borttagning från den här listan <https://sender.office.com/> , gå till och följ instruktionerna. Mer information finns i [rapportera om icke-postleveranser för e-post i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
 där  _IP-adress_ är IP-adressen för den dator där e-postservern körs.
 
 ### <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Så här använder du en List Portal för att ta bort dig själv från listan Spärrade avsändare
 
-1. Gå till i en webbläsare [https://sender.office.com](https://sender.office.com) .
+1. Gå till i en webbläsare <https://sender.office.com> .
 
 2. Följ instruktionerna på sidan. Kontrol lera att du använder den e-postadress som fel meddelandet skickades till och den IP-adress som anges i fel meddelandet. Du kan bara ange en e-postadress och en IP-adress per besök.
 

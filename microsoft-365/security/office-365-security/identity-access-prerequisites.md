@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 4b354d124cfd9c1ae0eab19c8feee7e0fd59df25
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 67835f4140179c69b5e0f2cd0287e656dd4c49ad
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357809"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558556"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Nödvändigt arbete för implementering av identitets-och enhets åtkomst principer
 
@@ -45,7 +45,7 @@ I följande tabell beskrivs de nödvändiga funktionerna och deras konfiguration
 |[Konfigurera PHS](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Detta måste vara aktiverat för att upptäcka läcka autentiseringsuppgifter och för att fungera med en riskfylld, villkorlig åtkomst. **Obs!** Det här är obligatoriskt oavsett om din organisation använder federerad identifiering.|Endast molnet|
 |[Aktivera sömlös enkel inloggning](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso) för att automatiskt signera användare i när de är på deras organisations enheter som är anslutna till organisationens nätverk.|Endast moln och federerad|
 |[Konfigurera namngivna nätverk](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal). Azure AD Identity Protection samlar in och analyserar alla tillgängliga sessionsdata för att generera risk poäng. Vi rekommenderar att du anger din organisations offentliga IP-adressintervall för ditt nätverk i konfiguration av Azure AD med namnet Networks. Trafik från dessa områden ges minskad risk Poäng och trafik utanför organisations miljön får ett högre risk poäng.||
-|[Registrera alla användare för självbetjäning för återställning av lösen ord (SSPR) och multifaktorautentisering (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged). Vi rekommenderar att du registrerar användare för Azure Multi-Factor-verifikation i förväg. Azure AD Identity Protection använder Azure Multi-Factor-verifiering för att utföra ytterligare säkerhets verifiering. För bästa inloggnings upplevelse rekommenderar vi att användare installerar [Microsoft Authenticator-appen](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) och Microsoft-företagsportalsappen på sina enheter. De här kan installeras från App Store för varje plattform.||
+|[Registrera alla användare för självbetjäning för återställning av lösen ord (SSPR) och multifaktorautentisering (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged). Vi rekommenderar att du registrerar användare för Azure AD Multi-Factor-verifikation i förväg. Azure AD Identity Protection använder Azure AD Multi-Factor-verifiering för att utföra ytterligare säkerhets verifiering. För bästa inloggnings upplevelse rekommenderar vi att användare installerar [Microsoft Authenticator-appen](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) och Microsoft-företagsportalsappen på sina enheter. De här kan installeras från App Store för varje plattform.||
 |[Aktivera automatisk registrering av en domänansluten Windows-dator](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup). Villkorsstyrd åtkomst säkerställer att enheter som ansluter till program är domänansluten eller kompatibla. För att du ska kunna använda detta på Windows-datorer måste enheten vara registrerad med Azure AD.  I den här artikeln beskrivs hur du konfigurerar automatisk registrering av enheter.|Endast molnet|
 |**Förbered support teamet**. Ha en plan för användare som inte kan slutföra MFA. Detta kan läggas till i en princip undantags grupp eller Registrera ny MFA-information för dem. Innan du gör något av följande säkerhets känsliga ändringar måste du se till att den faktiska användaren gör det. Att kräva att användarnas chefer får hjälp med godkännandet är ett effektivt steg.||
 |[Konfigurera tillbakaskrivning för lösen ord för lokal annons](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). Med Lösenordssynkronisering kan Azure AD begära att användarna ändrar sina lokala lösen ord när ett högrisk problem upptäcks. Du kan aktivera den här funktionen med Azure AD Connect på ett av två sätt: aktivera **Ångra lösen ord** på skärmen valfria funktioner i installations guiden för Azure AD Connect eller aktivera den via Windows PowerShell.|Endast molnet|

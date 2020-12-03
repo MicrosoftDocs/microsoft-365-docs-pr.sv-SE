@@ -16,14 +16,14 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Lär dig hur du använder Utforskaren och real tids identifiering i &amp; Center för säkerhets kontroll för att undersöka och reagera på hot effektivt och effektivt.
+description: Lär dig hur du använder Utforskaren och identifiering av real tid i säkerhets & kompatibilitetstillstånd för att undersöka och reagera på hot effektivt och effektivt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bc137a7390961e2b6abe049aead2b238cb9d3a16
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 021810a4d64dc3a8d9089a3b7174a1b5f536745a
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021127"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561405"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer och real tids identifiering
 
@@ -289,7 +289,7 @@ Dessa nya funktioner beskrivs nedan.
 
 ### <a name="preview-email-header-and-download-email-body"></a>Förhandsgranska e-posthuvud och hämta e-postmeddelande
 
-Möjligheten att förhandsgranska ett e-posthuvud och hämta e-postmeddelandet är nya funktioner som är tillgängliga i Threat Explorer. Administratörer kan analysera hämtade meddelandehuvuden/e-postmeddelanden för hot. Eftersom hämtning av e-postmeddelanden kan påverka exponeringen av informationen styrs processen av en rollbaserad åtkomst kontroll (RBAC). En ny roll, för *hands version* , måste läggas till i en annan roll grupp (som säkerhets åtgärder eller säkerhets administratör) för att tillåta möjligheten att hämta e-post och förhandsgranska rubriker i alla e-postmeddelanden.
+Möjligheten att förhandsgranska ett e-posthuvud och hämta e-postmeddelandet är nya funktioner som är tillgängliga i Threat Explorer. Administratörer kan analysera hämtade meddelandehuvuden/e-postmeddelanden för hot. Eftersom hämtning av e-postmeddelanden kan påverka exponeringen av informationen styrs processen av en rollbaserad åtkomst kontroll (RBAC). En ny roll, för *hands version*, måste läggas till i en annan roll grupp (som säkerhets åtgärder eller säkerhets administratör) för att tillåta möjligheten att hämta e-post och förhandsgranska rubriker i alla e-postmeddelanden.
 
 Men Explorer (och real tids identifieringar) lägger också till nya fält som är utformade för att ge dig en mer fullständig bild av var e-postmeddelandena hamnar. En del av syftet med ändringen är att göra det lättare för säkerhetsledandet att skydda dig, men netto resultatet är att du snabbt kan se var det finns problem med e-postmeddelanden.
 
@@ -318,13 +318,13 @@ Så här ser användaren vad de kan se och vad de inte kan:
 
 Leverans platsen visar resultaten av principer och upptäckter med efter-leverans. Den är länkad till en leverans åtgärd. Det här fältet lades till för att ge insyn i den åtgärd som utförs när ett problem har uppstått. Här är möjliga värden för leverans plats:
 
-- **Inkorgen eller mapp** : e-postmeddelandet finns i Inkorgen eller i en mapp (enligt dina e-postregler).
-- **On-lokala eller external** : post lådan finns inte i molnet, men den är lokal.
-- **Skräppostmappen** : e-postmeddelandet finns i skräppostmappen för en användare.
-- **Mappen Borttaget** : e-post i mappen Borttaget för en användare.
-- **Karantän** : e-postmeddelandet i karantän och finns inte i en användares post låda.
-- **Misslyckades** : det gick inte att nå post lådan.
-- **Släppt** : e-postmeddelandet tappas bort någonstans i e-postflödet.
+- **Inkorgen eller mapp**: e-postmeddelandet finns i Inkorgen eller i en mapp (enligt dina e-postregler).
+- **On-lokala eller external**: post lådan finns inte i molnet, men den är lokal.
+- **Skräppostmappen**: e-postmeddelandet finns i skräppostmappen för en användare.
+- **Mappen Borttaget**: e-post i mappen Borttaget för en användare.
+- **Karantän**: e-postmeddelandet i karantän och finns inte i en användares post låda.
+- **Misslyckades**: det gick inte att nå post lådan.
+- **Släppt**: e-postmeddelandet tappas bort någonstans i e-postflödet.
 
 ### <a name="email-timeline"></a>E-posttids linje
 
@@ -354,7 +354,7 @@ Du kan komma till samma plats i rapporten för rapporter i real tid så här:
 
 Anta att du vill se hur skadlig kod identifieras i e-post, av Microsoft 365-teknologi. För att göra det här använder du [e-postmeddelandet med > skadlig program vara](threat-explorer-views.md#email--malware) för Explorer (eller real tids identifiering).
 
-1. [https://protection.office.com](https://protection.office.com)Välj **Threat Management**  >  **Explorer** (eller **real tids identifiering** ) i gruppen säkerhets & efterlevnad. (Det här exemplet använder Utforskaren.)
+1. [https://protection.office.com](https://protection.office.com)Välj **Threat Management**  >  **Explorer** (eller **real tids identifiering**) i gruppen säkerhets & efterlevnad. (Det här exemplet använder Utforskaren.)
 
 2. Välj **View** **e-**  >  **postmalware** på Visa-menyn.
 
@@ -381,7 +381,7 @@ Anta att du vill se nät fiske försök via URL: er via e-post, inklusive en lis
 
 Om du vill granska Phish URL-adresser i meddelanden och klickar på URL: er i Phish meddelanden använder du [e-post> Phish](threat-explorer-views.md#email--phish) vyn av Utforskaren (eller real tids identifieringar).
 
-1. [https://protection.office.com](https://protection.office.com)Välj **Threat Management**  >  **Explorer** (eller **real tids identifiering** ) i gruppen säkerhets & efterlevnad. (Det här exemplet använder Utforskaren.)
+1. [https://protection.office.com](https://protection.office.com)Välj **Threat Management**  >  **Explorer** (eller **real tids identifiering**) i gruppen säkerhets & efterlevnad. (Det här exemplet använder Utforskaren.)
 
 2. Välj **e-** Phish på **Visa** -menyn  >  **Phish**.
 
@@ -390,7 +390,7 @@ Om du vill granska Phish URL-adresser i meddelanden och klickar på URL: er i Ph
 
 3. Klicka på **avsändare** och välj **URL-adresser**  >  **på Verdict**.
 
-4. Välj ett eller flera alternativ, till exempel **blockerat** och **blockera** , och klicka sedan på knappen **Uppdatera** på samma rad som de alternativ som används för att tillämpa filtret. (Uppdatera inte webbläsarfönstret.)
+4. Välj ett eller flera alternativ, till exempel **blockerat** och **blockera**, och klicka sedan på knappen **Uppdatera** på samma rad som de alternativ som används för att tillämpa filtret. (Uppdatera inte webbläsarfönstret.)
 
    > [!div class="mx-imgBorder"]
    > ![URL: er och klicka på verdicts](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
@@ -415,20 +415,20 @@ Om du vill granska Phish URL-adresser i meddelanden och klickar på URL: er i Ph
 
 I e-postmeddelandet eller URL-flyouts, de viktigaste tryckningarna samt i vår filter upplevelse ser du olika klick värden som en del av din jakt upplevelse. I det här avsnittet kan du välja Verdicts och deras tolkning:
 
-- **Ingen** : det gick inte att skapa Verdict för URL-adressen. Användaren kanske har klickat via webb adressen.
-- **Tillåten** : användaren har fått åtkomst till URL-adressen.
-- **Blockerat** : användaren hindrades från att navigera till webb adressen.
-- **Väntande Verdict** : användaren har presenter ATS med den väntande sidan för Sprängaren.
-- **Blockerad åsidosatt** : användaren hindrades från att gå till URL-adressen. användaren overrode dock att gå till URL-adressen.
-- **Väntande Verdict förbigåde** : användaren uppvisade sig med sidan detonation; användaren overrode till sidan för att gå till URL-adressen.
-- **Fel** : användaren uppvisade fel sidan. Det kan också betyda att det fanns ett fel när du hämtade Verdict.
-- **Fel** : ett okänt undantag uppstod när du hämtade Verdict. Användaren kanske har klickat via webb adressen.
+- **Ingen**: det gick inte att skapa Verdict för URL-adressen. Användaren kanske har klickat via webb adressen.
+- **Tillåten**: användaren har fått åtkomst till URL-adressen.
+- **Blockerat**: användaren hindrades från att navigera till webb adressen.
+- **Väntande Verdict**: användaren har presenter ATS med den väntande sidan för Sprängaren.
+- **Blockerad åsidosatt**: användaren hindrades från att gå till URL-adressen. användaren overrode dock att gå till URL-adressen.
+- **Väntande Verdict förbigåde**: användaren uppvisade sig med sidan detonation; användaren overrode till sidan för att gå till URL-adressen.
+- **Fel**: användaren uppvisade fel sidan. Det kan också betyda att det fanns ett fel när du hämtade Verdict.
+- **Fel**: ett okänt undantag uppstod när du hämtade Verdict. Användaren kanske har klickat via webb adressen.
 
 ## <a name="review-email-messages-reported-by-users"></a>Granska e-postmeddelanden som rapporter ATS av användare
 
 Anta att du vill se e-postmeddelanden som användare i organisationen har rapporterat som skräp post, inte skräp post eller nätfiske med hjälp av [rapport tillägget för Outlook och Outlook på webben](enable-the-report-message-add-in.md). För att göra detta kan du använda [e-post>-](threat-explorer-views.md#email--submissions) vyn i Utforskaren (eller real tids identifieringar).
 
-1. [https://protection.office.com](https://protection.office.com)Välj **Threat Management**  >  **Explorer** (eller **real tids identifiering** ) i gruppen säkerhets & efterlevnad. (Det här exemplet använder Utforskaren.)
+1. [https://protection.office.com](https://protection.office.com)Välj **Threat Management**  >  **Explorer** (eller **real tids identifiering**) i gruppen säkerhets & efterlevnad. (Det här exemplet använder Utforskaren.)
 
 2. Välj **View** **e-**  >  **postinlägg** i menyn Visa.
 
@@ -437,7 +437,7 @@ Anta att du vill se e-postmeddelanden som användare i organisationen har rappor
 
 3. Klicka på **avsändare** och välj sedan **enkel**  >  **typ av rapport**.
 
-4. Välj ett alternativ, till exempel **Phish** , och klicka sedan på knappen **Uppdatera** .
+4. Välj ett alternativ, till exempel **Phish**, och klicka sedan på knappen **Uppdatera** .
 
    > [!div class="mx-imgBorder"]
    > ![Användardefinierad Phish](../../media/EmailUserReportedReportType.png)
@@ -473,7 +473,7 @@ Du måste ha [Microsoft Defender för Office 365](office-365-atp.md) för att f�
 
 Om du vill visa och använda Explorer-eller real tids identifiering måste du ha lämplig behörighet, till exempel en säkerhets administratör eller en säkerhets läsare.
 
-- För säkerhetsrelaterade &amp; Center måste du ha någon av följande roller tilldelade:
+- För säkerhets & Compliance Center måste du ha någon av följande roller tilldelade:
 
   - Organisationshantering
   - Säkerhets administratör (detta kan tilldelas i Azure Active Directory Admin Center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
@@ -488,7 +488,7 @@ Om du vill visa och använda Explorer-eller real tids identifiering måste du ha
 
 Mer information om roller och behörigheter finns i följande resurser:
 
-- [Behörigheter i säkerhetsrelaterade &amp; Center](permissions-in-the-security-and-compliance-center.md)
+- [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md)
 - [Behörigheter för funktioner i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Skillnader mellan Threat Explorer och identifiering av real tid

@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Information om hälso upplevelsen för Microsoft 365-apparna.
-ms.openlocfilehash: c38f2109ed41377cfccb9838c95dbfbebbfd322a
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: a84e919ce01775b8791ed7a1992464e4f52c7234
+ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123517"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49562949"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365-appar hälsa – teknik upplevelse
 
-Produktivitets Poäng hjälper organisationer att omvandla hur arbete görs med mät värden för hur människor använder Microsoft 365-appar och stöd teknik upplevelsen. Poängen återspeglar din organisation&#39;s prestanda för kategorierna för folk-och teknik miljö och jämför poängen med organisationer som du vill. Hälso kategorin appar är en del av måtten som faller under teknologi upplevelser. Se [Översikt över produktivitets Poäng](productivity-score.md) för att få veta mer.
+Produktivitets Poäng tillhandahåller insikter i organisationens digitala Transformation-resa via dess användning av Microsoft 365 och de teknik funktioner som stöder det. Din organisations Poäng återspeglar funktionerna för folk-och teknik upplevelse och kan jämföras med benchmarks från organisationer som liknar ditt. Hälso kategorin appar är en del av måtten som faller under teknologi upplevelser. Mer information finns i [Översikt över produktivitets Poäng](productivity-score.md) och Läs [Microsofts sekretess policy](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>Därför är organisationen&#39;s Microsoft 365-appar hälso Poäng
 
@@ -101,11 +101,11 @@ Det här diagrammet visar trenden för de enheter som kör versioner och de sena
 
 :::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Diagram som visar hur många enheter som körs och den senaste versionen av apparna över tiden.":::
 
-## <a name="people-in-your-organization"></a>Personer i organisationen
+## <a name="devices-in-your-organization"></a>Enheter i din organisation
 
 I det här avsnittet får du hjälp med att hantera de mått du vill fokusera på genom att tillhandahålla relevant information till alla mät värden för Microsoft 365-appar.
 
-Följande kolumner visas i tabellen på användar nivå:
+Följande kolumner visas i tabellen på nivån kanal/version:
 
 - **Kanal** : den aktuella kanalen för Microsoft 365-appar på enheterna.
 - **Status:**   Microsoft 365-program-support för enheter som baseras på aktuell kanal och version.

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Konfigurera vidarebefordran av e-post till ett eller flera e-postkonton med Office365.
-ms.openlocfilehash: acdca0b19eda70d7da34ce1093a4a1b11052fd79
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: c821d4363a053b432c4376d7b4fec4926df7b568
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551840"
+ms.locfileid: "49560798"
 ---
 # <a name="configure-email-forwarding"></a>Konfigurera vidarebefordran av e-post
 
@@ -39,6 +39,9 @@ ms.locfileid: "49551840"
 ::: moniker-end
   
 Som administratör för en organisation kan du ha företags krav för att konfigurera e-postvidarekoppling för en användares post låda. Med vidarebefordran av e-post kan du vidarebefordra e-postmeddelanden som skickas till en användares brevlåda till en annan användares brevlåda i eller utanför organisationen.
+
+> [!IMPORTANT]
+> Du kan använda filter principer för utgående e-post för att styra automatisk vidarebefordran till externa mottagare. Mer information finns i [styra automatisk extern e-postvidarebefordran i Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-worldwide#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
 
   
 ## <a name="configure-email-forwarding"></a>Konfigurera vidarebefordran av e-post
@@ -102,5 +105,6 @@ Du måste vara Exchange-administratör eller global administratör i Microsoft 3
      Du kan också [skapa en distributions grupp](../setup/create-distribution-lists.md)i administrations centret, [lägga till adresser i den](add-user-or-contact-to-distribution-list.md)och ställa in vidarebefordran så att den pekar på dl enligt instruktionerna i den här artikeln.
     
 5. Ta inte bort kontot för den användare som skickar e-post som du vidarebefordrar eller tar bort sin licens!  Om du gör det stoppas e-postvidarekoppling. 
+
 
 ::: moniker-end 
