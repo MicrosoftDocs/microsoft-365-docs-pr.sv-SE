@@ -29,9 +29,9 @@ ms.locfileid: "49519299"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Lägga till DNS-poster för att ansluta till din domän
 
-Om du har köpt en domän från en tredjeparts värd kan du ansluta den till Microsoft 365 genom att uppdatera DNS-posterna i ditt registrators konto.
+Om du har köpt en domän från en tredjeparts värd kan du ansluta den till Microsoft 365 genom att uppdatera DNS-posterna i ditt registratorskonto.
 
-Vid slutet av dessa steg kommer din domän att förbli registrerad hos den värd som du köpte domänen från, men Microsoft 365 kan använda den för e-postadresser (till exempel user@yourdomain.com) och andra tjänster.
+När du har slutfört de här anvisningarna förblir din domän registrerad hos den värd som du köpte domänen från, men Microsoft 365 kan använda den för e-postadresser (till exempel user@yourdomain.com) och andra tjänster.
 
 Om du inte lägger till en domän kommer personer i din organisation att använda domänen onmicrosoft.com för sina e-postadresser tills du gör det. Det är viktigt att lägga till domänen innan du lägger till användare, så att du inte behöver konfigurera dem två gånger.
 

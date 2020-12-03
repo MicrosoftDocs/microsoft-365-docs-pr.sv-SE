@@ -226,7 +226,7 @@ En holistisk metod för förbättrad säkerhet bör innehålla övervägande til
   - Minska nätverkssäkerhetskraven för företagets WAN-kant
   - Vissa säkerhetsenheter för nätverksområden, t. ex. brandväggar är fortfarande nödvändiga men belastningen minskar
   - Säkerställ lokal utgång för Microsoft 365-trafik
-- Förbättringar kan åtgärdas stegvis enligt beskrivningen i avsnittet [Stegvis optimering](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt). En del optimeringstekniker kan erbjuda bättre intervall för kostnader/fördel beroende på ditt nätverks arkitektur och du bör välja optimeringar som passar bäst för din organisation.
+- Förbättringar kan åtgärdas stegvis enligt beskrivningen i avsnittet [Stegvis optimering](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt). En del optimeringstekniker kan erbjuda bättre förhållande mellan kostnad/fördel beroende på din nätverksarkitektur, och du bör välja optimeringar som passar bäst för din organisation.
 
 Mer information om Microsoft 365 Säkerhet och efterlevnad finns i artikeln [Microsoft 365 Säkerhet](https://docs.microsoft.com/microsoft-365/security) och [Microsoft 365 Efterlevnad](https://docs.microsoft.com/microsoft-365/compliance).
   
