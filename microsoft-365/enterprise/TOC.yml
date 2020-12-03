@@ -117,14 +117,14 @@
           items:
             - name: Certifikatbaserad autentisering
               href: microsoft-365-client-support-certificate-based-authentication.md
-            - name: Med villkorsstyrd åtkomst
+            - name: Villkorsstyrd åtkomst
               href: microsoft-365-client-support-conditional-access.md
-            - name: Välj mellan grundläggande mobilitetssäkerhet och Intune
-              href: 'https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune'
             - name: Modern autentisering
               href: microsoft-365-client-support-modern-authentication.md
             - name: Enkel inloggning
               href: microsoft-365-client-support-single-sign-on.md
+            - name: 'Välj mellan grundläggande mobilitet, säkerhet och Intune'
+              href: 'https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune'
         - name: Hybrid modern autentisering
           items:
             - name: Förkunskapskrav för Skype för företag – Server och Exchange Server
@@ -187,84 +187,6 @@
               href: microsoft-365-isolation-in-microsoft-365-video.md
             - name: Klientisolering i Office Graph och Delve
               href: microsoft-365-isolation-in-graph-and-delve.md
-        - name: Tjänstgranskning
-          items:
-            - name: Tjänstgranskning i Säkerhets- och efterlevnadscenter
-              href: 'https://docs.microsoft.com/microsoft-365/compliance/service-assurance'
-            - name: Administrativa åtkomstkontroller
-              href: microsoft-365-administrative-access-controls-overview.md
-              items:
-                - name: Övervakning och granskning av åtkomstkontroller
-                  href: microsoft-365-monitoring-and-auditing-access-controls.md
-                - name: Isoleringskontroller
-                  href: microsoft-365-isolation-controls.md
-                - name: Personalkontroller
-                  href: microsoft-365-personnel-controls.md
-                - name: Teknikkontroller
-                  href: microsoft-365-technology-controls.md
-                - name: Åtkomstkontroller för Yammer Enterprise
-                  href: microsoft-365-yammer-enterprise-access-controls.md
-            - name: Granskning och rapportering
-              href: microsoft-365-auditing-and-reporting-overview.md
-              items:
-                - name: Rapporteringsfunktioner
-                  href: microsoft-365-reporting-features.md
-                - name: eDiscovery och sökfunktioner
-                  href: microsoft-365-ediscovery-and-search-features.md
-                - name: Intern loggning för Microsoft 365-teknik
-                  href: microsoft-365-internal-logging.md
-                - name: Migrering av postlåda
-                  href: microsoft-365-mailbox-migrations.md
-                - name: API för hanteringsaktivitet
-                  href: microsoft-365-management-activity-api.md
-            - name: Dataåterhämtning
-              href: microsoft-365-data-resiliency-overview.md
-              items:
-                - name: Hantera skadade data
-                  href: microsoft-365-dealing-with-data-corruption.md
-                - name: Dataåterhämtning för Exchange Online
-                  href: microsoft-365-exchange-data-resiliency.md
-                - name: Skydd mot skadlig kod och utpressningstrojan
-                  href: microsoft-365-malware-and-ransomware-protection.md
-                - name: Övervakning och självåterställning
-                  href: microsoft-365-monitoring-and-self-healing.md
-            - name: 'Databevarande, borttagning och destruktion'
-              href: microsoft-365-data-retention-deletion-and-destruction-overview.md
-              items:
-                - name: Datadestruktion
-                  href: microsoft-365-data-destruction.md
-                - name: Oföränderlighet
-                  href: microsoft-365-data-immutability.md
-                - name: Databorttagning för Exchange Online
-                  href: microsoft-365-exchange-online-data-deletion.md
-                - name: SharePoint Online Data Deletion
-                  href: microsoft-365-sharepoint-online-data-deletion.md
-                - name: Databorttagning för Skype för företag
-                  href: microsoft-365-skype-data-deletion.md
-            - name: Skydd mot överbelastningsattacker
-              href: microsoft-365-defending-cloud-services-against-dos-attacks.md
-              items:
-                - name: Microsofts skyddsstrategi mot överbelastningsattacker
-                  href: microsoft-365-microsoft-dos-defense-strategy.md
-                - name: Grundläggande principer för skydd mot överbelastningsattacker
-                  href: microsoft-365-core-principles-of-defense-against-dos-attacks.md
-            - name: Kryptering i Microsoft-molnet
-              href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview'
-              items:
-                - name: Tjänstkryptering i Microsoft 365
-                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-service-encryption'
-                - name: Kryptering för data i transit
-                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-for-data-in-transit'
-                - name: Kundhanterade krypterings funktioner
-                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-customer-managed-encryption-features'
-                - name: Krypteringsrisker och skydd
-                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections'
-                - name: 'Kryptering för Skype för företag, OneDrive för företag, SharePoint Online och Exchange Online'
-                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-for-skype-onedrive-sharepoint-and-exchange'
-                - name: Kryptering i Microsoft Dynamics 365
-                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-microsoft-dynamics-365'
-                - name: Kryptering i Azure
-                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-azure-encryption'
     - name: Distribuera
       items:
         - name: Lägga till en domän
@@ -350,6 +272,22 @@
               href: ms-cloud-germany-transition.md
             - name: Välj till migrering
               href: ms-cloud-germany-migration-opt-in.md
+            - name: Kundupplevelse
+              href: ms-cloud-germany-transition-experience.md
+            - name: Åtgärder och påverkan i migreringsfaser
+              href: ms-cloud-germany-transition-phases.md
+            - name: Ytterligare information
+              items:
+                - name: Allmänt
+                  href: ms-cloud-germany-transition-add-general.md
+                - name: Enheter
+                  href: ms-cloud-germany-transition-add-devices.md
+                - name: Förarbete
+                  href: ms-cloud-germany-transition-add-pre-work.md
+                - name: Upplevelse
+                  href: ms-cloud-germany-transition-add-experience.md
+                - name: Steg för migrering för AD FS
+                  href: ms-cloud-germany-transition-add-adfs.md
 - name: Identitet
   items:
     - name: Översikt

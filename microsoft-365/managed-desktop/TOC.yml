@@ -82,7 +82,7 @@
           href: get-started/access-admin-portal.md
         - name: Lägga till och verifiera administratörskontakter i administratörsportalen
           href: get-started/add-admin-contacts.md
-        - name: Justera villkorsstyrd åtkomst
+        - name: Justera inställningarna efter registrering
           href: get-started/conditional-access.md
         - name: Tilldela licenser
           href: get-started/assign-licenses.md

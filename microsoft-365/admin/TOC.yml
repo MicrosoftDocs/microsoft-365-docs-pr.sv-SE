@@ -121,6 +121,8 @@
               href: create-groups/compare-groups.md
             - name: Skapa en grupp
               href: create-groups/create-groups.md
+            - name: Förklara grupper
+              href: create-groups/explain-groups-knowledge-worker.md
             - name: Hantera grupper
               href: create-groups/manage-groups.md
             - name: Lägga till eller ta bort gruppmedlemmar
@@ -208,9 +210,9 @@
     - name: Hantera data och tjänster
       href: manage/index.yml
       items:
-        - name: Övervaka användaraktivitet med hjälp av rapporter
+        - name: Övervaka Microsoft 365-aktivitet med hjälp av rapporter
           href: activity-reports/activity-reports.md
-        - name: Övervaka användarproduktivitet med Produktivitetspoäng
+        - name: Microsoft Produktivitetspoäng – översikt
           href: productivity/productivity-score.md
           items:
             - name: Samarbeta med innehåll
