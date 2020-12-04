@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur du skapar, ändrar och tar bort de avancerade AntiPhishing-principer som är tillgängliga i organisationer med Microsoft Defender för Office 365.
-ms.openlocfilehash: 7665d0dc475909d04da209aa6c1cd6b12378f8a9
-ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
+ms.openlocfilehash: ae8c87a0bfb7f975328d8283f0b62aa12c1d5e2b
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993394"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572411"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Konfigurera AntiPhishing-principer i Microsoft Defender för Office 365
 
@@ -35,8 +35,8 @@ Information om hur du konfigurerar de begränsade begränsningarna för nätfisk
 
 De grundläggande delarna i en Antivirus policy är:
 
-- **Policyn för Phish** : anger skydds alternativen för nätfiske för att aktivera eller inaktivera och åtgärderna för att tillämpa alternativ.
-- **Regeln för Phish** : anger de prioritets-och mottagar filter (som principen gäller för) för en policy mot anti-Phish.
+- **Policyn för Phish**: anger skydds alternativen för nätfiske för att aktivera eller inaktivera och åtgärderna för att tillämpa alternativ.
+- **Regeln för Phish**: anger de prioritets-och mottagar filter (som principen gäller för) för en policy mot anti-Phish.
 
 Skillnaden mellan dessa två element är inte uppenbar när du hanterar skydd mot nätfiske i säkerhets & Compliance Center:
 
@@ -60,17 +60,17 @@ För att öka effektiviteten för skydd mot nätfiske i Microsoft Defender för 
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Du måste tilldelas behörigheter innan du kan utföra åtgärderna i den här artikeln:
+- Du måste tilldelas behörigheter i säkerhets & Compliance Center innan du kan göra det i den här artikeln:
+  - För att lägga till, ändra och ta bort skydd mot nätfiske måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** .
+  - Om du vill ha skrivskyddad åtkomst till principer mot nätfiske måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** <sup>\*</sup> .
 
-  - För att lägga till, ändra och ta bort skydd mot nätfiske måste du vara medlem i någon av följande roll grupper:
+  Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
-    - **Organisationshantering** eller **Säkerhetsadministratör** i [Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
-    - **Organisationshantering** eller **Hygienhantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Anmärkningar**:
 
-  - För skrivskyddad åtkomst till principer mot nätfiske måste du vara medlem i någon av följande roll grupper:
-
-    - **Säkerhetsläsare** i [Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
-    - **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - Om du lägger till användare i motsvarande Azure Active Directory-roll i Microsoft 365 Admin Center får användarna den behörighet som krävs för säkerhets & efterlevnad Center _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Roll gruppen **organisations hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen <sup>\*</sup> .
+  - <sup>\*</sup> I säkerhets & Compliance Center är skrivskyddad åtkomst tillåta användare att Visa inställningar för anpassade skydds principer. Skrivskyddade användare kan inte se inställningarna i standard policyn för skydd mot nätfiske.
 
 - För våra rekommenderade inställningar för skydd mot nätfiske i Microsoft Defender för Office 365, se [AntiPhishing-principer i inställningar för Defender för Office 365](recommended-settings-for-eop-and-office365-atp.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
 
@@ -90,21 +90,21 @@ När du skapar en AntiPhishing-princip kan du bara ange princip namnet, beskrivn
 
 3. Guiden **skapa en ny policy för skydd mot nätfiske** öppnas. På sidan **namnge din policy** konfigurerar du följande inställningar:
 
-   - **Namn** : Ange ett unikt, beskrivande namn på principen.
+   - **Namn**: Ange ett unikt, beskrivande namn på principen.
 
-   - **Beskrivning** : Ange en valfri beskrivning av principen.
+   - **Beskrivning**: Ange en valfri beskrivning av principen.
 
    När du är klar klickar du på **Nästa**.
 
 4. **På sidan som** visas anger du vilka interna mottagare som principen gäller för.
 
-   Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_ ). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_ ).
+   Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_).
 
-   Klicka på **Lägg till ett villkor**. I den nedrullningsbara List rutan som visas väljer du ett villkor under **används om** :
+   Klicka på **Lägg till ett villkor**. I den nedrullningsbara List rutan som visas väljer du ett villkor under **används om**:
 
-   - **Mottagaren är** : anger en eller flera post lådor, e-postkonton eller e-postkontakter i din organisation.
-   - **Mottagaren är medlem i** : anger en eller flera grupper i din organisation.
-   - **Mottagar domänen är** : anger mottagare i en eller flera av de konfigurerade godkända domänerna i organisationen.
+   - **Mottagaren är**: anger en eller flera post lådor, e-postkonton eller e-postkontakter i din organisation.
+   - **Mottagaren är medlem i**: anger en eller flera grupper i din organisation.
+   - **Mottagar domänen är**: anger mottagare i en eller flera av de konfigurerade godkända domänerna i organisationen.
 
    När du har valt villkoret visas en motsvarande listruta med en **av dessa** rutor.
 
@@ -142,7 +142,7 @@ Använd följande procedurer för att ändra anti-nätfiske-principer: en ny pri
 
    - När du har klickat på **Redigera** i ett avsnitt visas de tillgängliga inställningarna i ett guide format, men du kan hoppa mellan sidorna i valfri ordning och du kan klicka på **Spara** på valfri sida (eller **Avbryt** eller **Stäng** Stäng-ikonen om du vill ![ ](../../media/scc-remove-icon.png) gå tillbaka till sidan **Redigera din policy \<name\>** ).
 
-4. **Princip inställning** : Klicka på **Redigera** om du vill ändra samma inställningar som fanns tillgängliga när du [skapade principen](#use-the-security--compliance-center-to-create-anti-phishing-policies-in-microsoft-defender-for-office-365) i föregående avsnitt:
+4. **Princip inställning**: Klicka på **Redigera** om du vill ändra samma inställningar som fanns tillgängliga när du [skapade principen](#use-the-security--compliance-center-to-create-anti-phishing-policies-in-microsoft-defender-for-office-365) i föregående avsnitt:
 
    - **Name**
    - **Beskrivning**
@@ -151,19 +151,19 @@ Använd följande procedurer för att ändra anti-nätfiske-principer: en ny pri
 
    När du är klar klickar du på **Spara** på valfri sida.
 
-5. **Personifiering** : Klicka på **Redigera** för att ändra de skyddade avsändarna och de skyddade domänerna i principen. Dessa inställningar är ett villkor för den princip som identifierar falska avsändare att leta efter (individuellt eller efter domän) i från-adressen för inkommande meddelanden. Mer information finns i [Inställningar för personifiering i principer för nätfiske i Microsoft Defender för Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+5. **Personifiering**: Klicka på **Redigera** för att ändra de skyddade avsändarna och de skyddade domänerna i principen. Dessa inställningar är ett villkor för den princip som identifierar falska avsändare att leta efter (individuellt eller efter domän) i från-adressen för inkommande meddelanden. Mer information finns i [Inställningar för personifiering i principer för nätfiske i Microsoft Defender för Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-   - **Lägg till användare att skydda** : standardvärdet är **inaktiverat**. Aktivera **den genom att dra den till den** och sedan klicka på knappen **Lägg till användare** som visas.
+   - **Lägg till användare att skydda**: standardvärdet är **inaktiverat**. Aktivera **den genom att dra den till den** och sedan klicka på knappen **Lägg till användare** som visas.
 
      I **Lägg till** utfällda användare som visas konfigurerar du följande värden:
 
-     - **E-post adress** :
+     - **E-post adress**:
 
        - Klicka i rutan och bläddra igenom listan med användare som ska markeras.
        - Klicka i rutan och börja skriva för att filtrera listan och välja en användare.
        - Om du vill ta bort en post klickar du på **ta bort** ![ ikonen Ta bort ](../../media/scc-remove-icon.png) .
 
-     - **Namn** : det här värdet fylls i baserat på e-postadressen du valde, men du kan ändra det.
+     - **Namn**: det här värdet fylls i baserat på e-postadressen du valde, men du kan ändra det.
 
      När du är klar klickar du på **Spara** på valfri sida.
 
@@ -175,17 +175,17 @@ Använd följande procedurer för att ändra anti-nätfiske-principer: en ny pri
      >
      > - Användarautentisering fungerar inte om avsändaren och mottagaren tidigare kommunicerat via e-post. Om avsändaren och mottagaren aldrig har kommunicerat via e-post identifieras meddelandet som ett personifierings försök.
 
-   - **Lägg till domäner att skydda** : Konfigurera en eller båda av följande inställningar:
+   - **Lägg till domäner att skydda**: Konfigurera en eller båda av följande inställningar:
 
-     - **Inkludera automatiskt de domäner jag äger** : standardvärdet är **inaktiverat**. Aktivera den genom att dra den till **på**.
-     - **Inkludera anpassade domäner** : standardvärdet är **inaktiverat**. Om du vill aktivera funktionen drar du växlings knappen till **på på** och anger sedan domän namnet (till exempel contoso.com) i rutan **Lägg till domäner** , trycker på RETUR och upprepar efter behov.
+     - **Inkludera automatiskt de domäner jag äger**: standardvärdet är **inaktiverat**. Aktivera den genom att dra den till **på**.
+     - **Inkludera anpassade domäner**: standardvärdet är **inaktiverat**. Om du vill aktivera funktionen drar du växlings knappen till **på på** och anger sedan domän namnet (till exempel contoso.com) i rutan **Lägg till domäner** , trycker på RETUR och upprepar efter behov.
 
      > [!NOTE]
      > Du kan ha högst 50 domäner i alla nät fiske principer.
 
-   - **Åtgärder** : Klicka på **Redigera**
+   - **Åtgärder**: Klicka på **Redigera**
 
-     - **Om e-post skickas av en personifierad användare** : Konfigurera en av följande åtgärder för meddelanden där den falska avsändaren är en av de skyddade användare som du har angett i **Lägg till användare att skydda** :
+     - **Om e-post skickas av en personifierad användare**: Konfigurera en av följande åtgärder för meddelanden där den falska avsändaren är en av de skyddade användare som du har angett i **Lägg till användare att skydda**:
 
        - **Tillämpa inte någon åtgärd**
        - **Omdirigera meddelanden till andra e-postadresser**
@@ -194,7 +194,7 @@ Använd följande procedurer för att ändra anti-nätfiske-principer: en ny pri
        - **Leverera meddelandet och lägga till andra adresser på raden Hemlig kopia**
        - **Ta bort meddelandet innan det levereras**
 
-     - **Om e-post skickas av en domänkontrollant** : Konfigurera en av följande åtgärder för meddelanden där den falska avsändaren finns i en av de skyddade domänerna som du har angett i **Lägg till domäner för att skydda** :
+     - **Om e-post skickas av en domänkontrollant**: Konfigurera en av följande åtgärder för meddelanden där den falska avsändaren finns i en av de skyddade domänerna som du har angett i **Lägg till domäner för att skydda**:
 
        - **Tillämpa inte någon åtgärd**
        - **Omdirigera meddelanden till andra e-postadresser**
@@ -205,17 +205,17 @@ Använd följande procedurer för att ändra anti-nätfiske-principer: en ny pri
 
    - Klicka på **Aktivera säkerhets tips för personifiering** och konfigurera något av följande inställningar:
 
-     - **Visa tips för personifierade användare** : standardvärdet är **inaktiverat**. Aktivera den genom att dra den till **på**.
-     - **Visa tips för personifierade domäner** : standardvärdet är **inaktiverat**. Aktivera den genom att dra den till **på**.
-     - **Visa tips för ovanliga tecken** : standardvärdet är **inaktiverat**. Aktivera den genom att dra den till **på**.
+     - **Visa tips för personifierade användare**: standardvärdet är **inaktiverat**. Aktivera den genom att dra den till **på**.
+     - **Visa tips för personifierade domäner**: standardvärdet är **inaktiverat**. Aktivera den genom att dra den till **på**.
+     - **Visa tips för ovanliga tecken**: standardvärdet är **inaktiverat**. Aktivera den genom att dra den till **på**.
 
      Klicka på **Spara** när du är klar.
 
-   - **Post låda** :
+   - **Post låda**:
 
-     - **Aktivera post lådans intelligens?** : standardvärdet är **på**. Inaktivera växlings knappen för att **stänga av den.**
+     - **Aktivera post lådans intelligens?**: standardvärdet är **på**. Inaktivera växlings knappen för att **stänga av den.**
 
-     - **Aktivera post låde baserat personifieringstoken?** : den här inställningen är endast tillgänglig om **Aktivera post låda-intelligens?** är **på**.
+     - **Aktivera post låde baserat personifieringstoken?**: den här inställningen är endast tillgänglig om **Aktivera post låda-intelligens?** är **på**.
 
        I **om e-post skickas av en personifierad användare** kan du ange någon av följande åtgärder som ska vidtas för meddelanden som inte har post lådans intelligens (samma åtgärder som är tillgängliga för skyddade användare och skyddade domäner):
 
@@ -226,17 +226,17 @@ Använd följande procedurer för att ändra anti-nätfiske-principer: en ny pri
        - **Leverera meddelandet och lägga till andra adresser på raden Hemlig kopia**
        - **Ta bort meddelandet innan det levereras**
 
-   - **Lägga till betrodda avsändare och domäner** : ange undantag för principen:
+   - **Lägga till betrodda avsändare och domäner**: ange undantag för principen:
 
-     - **Betrodda avsändare** :
+     - **Betrodda avsändare**:
 
        - Klicka i rutan och bläddra igenom listan med användare som ska markeras.
        - Klicka i rutan och börja skriva för att filtrera listan och välja en användare.
        - Om du vill ta bort en post klickar du på **ta bort** ![ ikonen Ta bort ](../../media/scc-remove-icon.png) .
 
-     - **Betrodda domäner** : ange domän namnet (till exempel contoso.com), tryck på RETUR och upprepa vid behov.
+     - **Betrodda domäner**: ange domän namnet (till exempel contoso.com), tryck på RETUR och upprepa vid behov.
 
-   - **Granska dina inställningar** : i stället för att klicka på varje enskilt steg visas inställningarna i en sammanfattning.
+   - **Granska dina inställningar**: i stället för att klicka på varje enskilt steg visas inställningarna i en sammanfattning.
 
      - Du kan klicka på **Redigera** i varje avsnitt för att gå tillbaka till relevant sida.
      - Du kan aktivera eller **inaktivera** följande inställningar **direkt på den** här sidan:
@@ -252,21 +252,21 @@ Använd följande procedurer för att ändra anti-nätfiske-principer: en ny pri
 
    Observera att dessa inställningar också är tillgängliga i principer för nätfiske i EOP.
 
-   - **Inställningar för förfalsknings filter** : standardvärdet är **på** och vi rekommenderar att du lämnar det. Inaktivera växlings knappen för att **stänga av den.** Mer information finns i [Konfigurera förfalsknings information i EOP](learn-about-spoof-intelligence.md).
+   - **Inställningar för förfalsknings filter**: standardvärdet är **på** och vi rekommenderar att du lämnar det. Inaktivera växlings knappen för att **stänga av den.** Mer information finns i [Konfigurera förfalsknings information i EOP](learn-about-spoof-intelligence.md).
 
      > [!NOTE]
      > Du behöver inte inaktivera skydd mot förfalskning om din MX-post inte pekar på Microsoft 365; du aktiverar bättre filtrering för kopplingar i stället. Anvisningar finns i [utökad filtrering för kopplingar i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-   - **Aktivera overifierad avsändare** : standardvärdet är **på**. Inaktivera växlings knappen för att **stänga av den.**
+   - **Aktivera overifierad avsändare**: standardvärdet är **på**. Inaktivera växlings knappen för att **stänga av den.**
 
-   - **Åtgärder** : ange vilken åtgärd som ska vidtas för meddelanden som saknar förfalsknings information:
+   - **Åtgärder**: ange vilken åtgärd som ska vidtas för meddelanden som saknar förfalsknings information:
 
-     **Om e-post skickas av någon som inte har tillåtelse att imitera din domän** :
+     **Om e-post skickas av någon som inte har tillåtelse att imitera din domän**:
 
      - **Flytta meddelandet till mottagarnas skräp post mappar**
      - **Sätt i karantän meddelandet**
 
-   - **Granska dina inställningar** : i stället för att klicka på varje enskilt steg visas inställningarna i en sammanfattning.
+   - **Granska dina inställningar**: i stället för att klicka på varje enskilt steg visas inställningarna i en sammanfattning.
 
      - Du kan klicka på **Redigera** i varje avsnitt för att gå tillbaka till relevant sida.
      - Du kan aktivera eller **inaktivera** följande inställningar **direkt på den** här sidan:
@@ -275,16 +275,16 @@ Använd följande procedurer för att ändra anti-nätfiske-principer: en ny pri
 
    När du är klar klickar du på **Spara** på valfri sida.
 
-7. **Avancerade inställningar** : Klicka på **Redigera** för att konfigurera de avancerade gräns värdena för nät fiske tjänsten. Mer information finns i [avancerade nät fiske trösklar i principer för nätfiske i Microsoft Defender för Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+7. **Avancerade inställningar**: Klicka på **Redigera** för att konfigurera de avancerade gräns värdena för nät fiske tjänsten. Mer information finns i [avancerade nät fiske trösklar i principer för nätfiske i Microsoft Defender för Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-   - **Avancerade nät fiske gränser** : Välj något av följande värden:
+   - **Avancerade nät fiske gränser**: Välj något av följande värden:
 
    - **1 – standard** (det här är standardvärdet).
    - **2 – aggressivt**
    - **3 – mer aggressivt**
    - **4-mest aggressivt**
 
-   - **Granska dina inställningar** : Klicka på **Redigera** för att gå tillbaka till sidan för **avancerade nät fiske gränser** .
+   - **Granska dina inställningar**: Klicka på **Redigera** för att gå tillbaka till sidan för **avancerade nät fiske gränser** .
 
    När du är klar klickar du på **Spara** på valfri sida.
 
@@ -344,7 +344,7 @@ Om du vill ändra prioriteten för en princip klickar du på **öka prioriteten*
 
    - Den anpassade AntiPhishing-principen med **prioritet** svärdet **0** har bara knappen **minska prioritet** tillgänglig.
 
-   - Den anpassade AntiPhishing-principen med lägst **prioritet** (till exempel **3** ) har bara knappen **öka prioritet** tillgänglig.
+   - Den anpassade AntiPhishing-principen med lägst **prioritet** (till exempel **3**) har bara knappen **öka prioritet** tillgänglig.
 
    - Om du har tre eller fler anpassade nät fiske principer har de värden mellan de högsta och lägsta prioriteterna både knappen **öka prioritet** och knappen **minska prioritet** tillgänglig.
 
@@ -391,14 +391,14 @@ Att skapa en skydds policy i PowerShell är en process i två steg:
 1. Skapa policyn för Phish.
 2. Skapa en regel för Phish som anger den policy för anti-Phish som regeln gäller för.
 
- **Anmärkningar** :
+ **Anmärkningar**:
 
 - Du kan skapa en ny Phish regel och koppla en befintlig, icke associerad policy mot anti-Phish-princip till den. En antiphish-regel kan inte kopplas till fler än en anti-Phish princip.
 
 - Du kan konfigurera följande inställningar i nya principer mot Phish i PowerShell som inte är tillgängliga i säkerhets & Compliance Center förrän du har skapat principen:
 
-  - Skapa den nya principen som inaktive rad ( _aktive rad_ `$false` på **New-AntiPhishRule-** cmdleten).
-  - Ange prioriteten för principen när den skapas ( _prioritet_ _\<Number\>_ ) på den **nya AntiPhishRule-** cmdleten.
+  - Skapa den nya principen som inaktive rad (_aktive rad_ `$false` på **New-AntiPhishRule-** cmdleten).
+  - Ange prioriteten för principen när den skapas (_prioritet_ _\<Number\>_ ) på den **nya AntiPhishRule-** cmdleten.
 
 - En ny policy för Phish som du skapar i PowerShell visas inte i fönstret säkerhets & efterlevnad förrän du tilldelar principen en antiphish-regel.
 
@@ -570,7 +570,7 @@ I det här exemplet anges prioriteten för regeln med namnet Marketing Departmen
 Set-AntiPhishRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Anmärkningar** :
+**Anmärkningar**:
 
 - Om du vill ange prioriteten för en ny regel när du skapar den kan du använda _prioritets_ parametern i **New-AntiPhishRule** cmdlet i stället.
 

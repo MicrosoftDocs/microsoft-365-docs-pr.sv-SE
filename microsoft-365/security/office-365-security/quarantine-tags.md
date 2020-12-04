@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Administratörer kan lära sig att använda karantän koder för att kontrol lera vad användarna kan göra i sina karantän meddelanden.
-ms.openlocfilehash: e194aabf57a1a105f01d8d34815312d3c2fa153d
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 68f28e2dff3bdeada2685ef6806489f5e57f5daf
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357653"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572675"
 ---
 # <a name="quarantine-tags"></a>Karantän koder
 
@@ -62,9 +62,7 @@ Du skapar och tilldelar karantän koder i säkerhets & efterföljandekrav eller 
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Om du vill visa, skapa, ändra eller ta bort karantän koder måste du vara medlem i någon av följande roll grupper:
-  - **Organisationshantering** eller **Säkerhetsadministratör** i [Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
-  - **Organisationshantering** eller **Hygienhantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+- Om du vill visa, skapa, ändra eller ta bort karantän koder måste du vara medlem i rollerna **organisations hantering** eller **säkerhets administratör** i [säkerhets & efterlevnad](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="step-1-create-quarantine-tags-in-the-security--compliance-center"></a>Steg 1: skapa karantän koder i centret säkerhets & efterlevnad
 

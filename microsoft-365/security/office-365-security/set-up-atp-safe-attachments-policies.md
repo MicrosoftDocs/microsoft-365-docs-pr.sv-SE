@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du definierar principer för säkra bifogade filer för att skydda din organisation från skadliga filer via e-post.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ca0bfb7ba91f86fee187cfe3445c0dd6c8d4ad56
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a14f5a22795fc08b76165466d8e44ee38d8a2d81
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845498"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572648"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Konfigurera principer för säkra bifogade filer i Microsoft Defender för Office 365
 
@@ -39,8 +39,8 @@ Du kan konfigurera principer för säkra bifogade filer i fältet säkerhets & e
 
 De grundläggande delarna i en policy för principer för bifogade filer är:
 
-- **Principen för säker bifogad fil** : anger åtgärderna för okända identifieringar av skadlig program vara om du vill skicka meddelanden med bifogade filer till en viss e-postadress och om det inte går att slutföra säkra bilagor.
-- **Regeln för säker bifogad fil** : anger de prioritets-och mottagar filter (som principen gäller för).
+- **Principen för säker bifogad fil**: anger åtgärderna för okända identifieringar av skadlig program vara om du vill skicka meddelanden med bifogade filer till en viss e-postadress och om det inte går att slutföra säkra bilagor.
+- **Regeln för säker bifogad fil**: anger de prioritets-och mottagar filter (som principen gäller för).
 
 Skillnaden mellan dessa två element är inte uppenbar när du hanterar Safe Attachment-principer i säkerhets & Compliance Center:
 
@@ -59,10 +59,16 @@ I Exchange Online PowerShell eller fristående EOP PowerShell hanterar du policy
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Om du vill visa, skapa, ändra och ta bort principer för säkra bifogade filer måste du vara medlem i någon av följande roll grupper:
+- Du måste tilldelas behörigheter i säkerhets & Compliance Center innan du kan göra det i den här artikeln:
+  - Om du vill skapa, ändra och ta bort principer för säkra bifogade filer måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** .
+  - Om du vill ha skrivskyddad åtkomst till principer för säkra bifogade filer måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** .
 
-  - **Organisationshantering** eller **Säkerhetsadministratör** i [Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
-  - **Organisations hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
+
+  **Anmärkningar**:
+
+  - Om du lägger till användare i motsvarande Azure Active Directory-roll i Microsoft 365 Admin Center får användarna den behörighet som krävs för säkerhets & efterlevnad Center _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Roll gruppen **organisations hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
 - De rekommenderade inställningarna för principer för säkra bifogade filer finns i [Inställningar för säkra bifogade filer](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
@@ -78,41 +84,41 @@ Om du skapar en anpassad princip för säker bifogade filer i säkerhets & Compl
 
 3. Guiden **ny princip för säkert bifogade filer** öppnas. På sidan **namnge din policy** konfigurerar du följande inställningar:
 
-   - **Namn** : Ange ett unikt, beskrivande namn på principen.
+   - **Namn**: Ange ett unikt, beskrivande namn på principen.
 
-   - **Beskrivning** : Ange en valfri beskrivning av principen.
+   - **Beskrivning**: Ange en valfri beskrivning av principen.
 
    När du är klar klickar du på **Nästa**.
 
 4. På sidan **Inställningar** som visas konfigurerar du följande inställningar:
 
-   - **Säkra bifogade filer okänt antivirus program** : Välj något av följande värden:
+   - **Säkra bifogade filer okänt antivirus program**: Välj något av följande värden:
 
-     - **Av** : vanligt vis rekommenderar vi inte det här värdet.
+     - **Av**: vanligt vis rekommenderar vi inte det här värdet.
      - **Övervaka**
-     - **Block** : det här är standardvärdet och det rekommenderade värdet i säkerhets principer för standard-och Strict- [förvalda](preset-security-policies.md).
+     - **Block**: det här är standardvärdet och det rekommenderade värdet i säkerhets principer för standard-och Strict- [förvalda](preset-security-policies.md).
      - **Byter**
      - **Dynamisk leverans (för hands version)**
 
      Dessa värden förklaras i [princip inställningar för säkra bifogade filer](atp-safe-attachments.md#safe-attachments-policy-settings).
 
-   - **Skicka bilagan till följande e-post adress** : för åtgärds värden **blockera** , **övervaka** eller **ersätta** kan du välja **Aktivera omdirigering** för att skicka meddelanden som innehåller bifogade filer med skadlig kod till angiven intern eller extern e-postadress för analys och undersökning.
+   - **Skicka bilagan till följande e-post adress**: för åtgärds värden **blockera**, **övervaka** eller **ersätta** kan du välja **Aktivera omdirigering** för att skicka meddelanden som innehåller bifogade filer med skadlig kod till angiven intern eller extern e-postadress för analys och undersökning.
 
      Rekommendationen för standard-och strikta princip inställningar är att aktivera omdirigering. Mer information finns i [Inställningar för säkra bifogade filer](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
-   - **Använda ovanstående markering om genomsökning av skadlig kod för bifogade filer eller fel inträffar** : åtgärden som anges av **osäkra bifogade filer inget svar på skadlig program** vara tas med när säkra bilagor inte kan slutföras. Välj alltid det här alternativet om du väljer **Aktivera omdirigering**. Annars kan meddelanden gå förlorade.
+   - **Använda ovanstående markering om genomsökning av skadlig kod för bifogade filer eller fel inträffar**: åtgärden som anges av **osäkra bifogade filer inget svar på skadlig program** vara tas med när säkra bilagor inte kan slutföras. Välj alltid det här alternativet om du väljer **Aktivera omdirigering**. Annars kan meddelanden gå förlorade.
 
    När du är klar klickar du på **Nästa**.
 
 5. **På sidan som** visas anger du vilka interna mottagare som principen gäller för.
 
-   Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_ ). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_ ).
+   Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_).
 
-   Klicka på **Lägg till ett villkor**. I den nedrullningsbara List rutan som visas väljer du ett villkor under **används om** :
+   Klicka på **Lägg till ett villkor**. I den nedrullningsbara List rutan som visas väljer du ett villkor under **används om**:
 
-   - **Mottagaren är** : anger en eller flera post lådor, e-postkonton eller e-postkontakter i din organisation.
-   - **Mottagaren är medlem i** : anger en eller flera grupper i din organisation.
-   - **Mottagande domän är** : Anger mottagare i en eller flera av de godkända domänerna som har konfigurerats i din organisation.
+   - **Mottagaren är**: anger en eller flera post lådor, e-postkonton eller e-postkontakter i din organisation.
+   - **Mottagaren är medlem i**: anger en eller flera grupper i din organisation.
+   - **Mottagande domän är**: Anger mottagare i en eller flera av de godkända domänerna som har konfigurerats i din organisation.
 
    När du har valt villkoret visas en motsvarande listruta med en **av dessa** rutor.
 
@@ -182,7 +188,7 @@ Du ändrar prioriteten för en princip genom att flytta principen uppåt eller n
 
    - Principen för säkra bifogade filer med **prioritet** svärdet **0** har bara knappen **minska prioritet** tillgänglig.
 
-   - Principen för säkra bifogade filer med lägst **prioritet** (till exempel **3** ) har bara knappen **öka prioritet** tillgänglig.
+   - Principen för säkra bifogade filer med lägst **prioritet** (till exempel **3**) har bara knappen **öka prioritet** tillgänglig.
 
    - Om du har tre eller fler principer för säkra bifogade filer har principer mellan de högsta och lägsta prioriteterna både knappen **öka prioritet** och knappen för att **minska prioriteten** tillgängliga.
 
@@ -215,13 +221,13 @@ Att skapa en policy för säker bifogad fil i PowerShell är en process i två s
 1. Skapa principen för säker bifogad fil.
 2. Skapa regeln för säker bifogad fil som anger den policy för säker bifogad fil som regeln gäller för.
 
- **Anmärkningar** :
+ **Anmärkningar**:
 
 - Du kan skapa en ny regel för en säker bilaga och koppla en befintlig, icke associerad princip för säker bifogad fil till den. En regel för säker bifogad fil kan inte kopplas till fler än en princip för säker bifogad fil.
 
 - Du kan konfigurera följande inställningar i nya principer för säker bifogade filer i PowerShell som inte är tillgängliga i säkerhets & Compliance Center förrän du har skapat principen:
-  - Skapa den nya principen som inaktive rad ( _aktive rad_ `$false` på **New-SafeAttachmentRule-** cmdleten).
-  - Ange prioriteten för principen när den skapas ( _prioritet_ _\<Number\>_ ) på den **nya SafeAttachmentRule-** cmdleten.
+  - Skapa den nya principen som inaktive rad (_aktive rad_ `$false` på **New-SafeAttachmentRule-** cmdleten).
+  - Ange prioriteten för principen när den skapas (_prioritet_ _\<Number\>_ ) på den **nya SafeAttachmentRule-** cmdleten.
 
 - En ny princip för säker bifogad fil som du skapar i PowerShell visas inte i säkerhets & Compliance Center förrän du tilldelar principen till en regel för säker bifogad fil.
 

@@ -15,14 +15,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur du konfigurerar URL-poster i listan Tillåt/blockera i klient organisationen för säkerhets &.
-ms.openlocfilehash: eb9dcc5b239aae1366a0a2e0eebd68b3f0082e6b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1aae54ffd6026a7fc131017a10f9676d96be9b69
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202345"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572652"
 ---
-# <a name="manage-urls-in-the-tenant-allowblock-list"></a>Hantera URL: er i listan Tillåt / blockera hyresgäster
+# <a name="manage-urls-in-the-tenant-allowblock-list"></a>Hantera URL:er i Klientorganisation Tillåt / blockera listan
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -52,23 +52,22 @@ I det här avsnittet beskrivs hur du konfigurerar poster i listan Tillåt/blocke
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna för detta ämne:
+- Du måste tilldelas behörigheter i säkerhets & Compliance Center innan du kan göra det i den här artikeln:
+  - För att lägga till och ta bort värden från listan över tillåtna/blockerade innehavare måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** .
+  - Om du vill ha skrivskyddad åtkomst till listan Tillåt/blockera för klient organisationen måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** .
 
-  - Om du vill lägga till och ta bort värden från listan Tillåt/blockera för klient organisationer måste du vara medlem i någon av följande roll grupper:
+  Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
-    - **Organisationshantering** eller **Säkerhetsadministratör** i [Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
-    - **Organisationshantering** eller **Hygienhantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Anmärkningar**:
 
-  - Om du vill ha skrivskyddad åtkomst till listan Tillåt/blockera för klient organisationer måste du vara medlem i någon av följande roll grupper:
-
-    - **Säkerhetsläsare** i [Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
-    - **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - Om du lägger till användare i motsvarande Azure Active Directory-roll i Microsoft 365 Admin Center får användarna den behörighet som krävs för säkerhets & efterlevnad Center _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Roll gruppen **organisations hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Använd säkerhets & efterlevnad för att skapa URL-poster i listan Tillåt/blockera för klient organisation
 
 Mer information om syntaxen för URL-poster finns i [URL-syntaxen för listan Tillåt/blockera lista för klient organisation](#url-syntax-for-the-tenant-allowblock-list) längre ned i det här avsnittet.
 
-1. Gå till fliken **Threat Management** \> **policy** för \> **Tillåt/blockera listor**i säkerhets & efterlevnad.
+1. Gå till fliken **Threat Management** \> **policy** för \> **Tillåt/blockera listor** i säkerhets & efterlevnad.
 
 2. På sidan **Tillåt/blockera lista för klient organisation** kontrollerar du att fliken **URL: er** är markerad och klickar sedan på **Lägg till** .
 
@@ -92,7 +91,7 @@ Mer information om syntaxen för URL-poster finns i [URL-syntaxen för listan Ti
 
 ## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>Använd säkerhets & Compliance Center för att visa poster i listan Tillåt/blockera för klient organisation
 
-1. Gå till fliken **Threat Management** \> **policy** för \> **Tillåt/blockera listor**i säkerhets & efterlevnad.
+1. Gå till fliken **Threat Management** \> **policy** för \> **Tillåt/blockera listor** i säkerhets & efterlevnad.
 
 2. Välj fliken **URL: er** .
 
@@ -120,13 +119,13 @@ Klicka på **filter**. I det **filter** som visas konfigurerar du följande inst
 
 När du är klar klickar du på **Använd**.
 
-Om du vill ta bort befintliga filter klickar du på **filter**och sedan på **Rensa filter**i det **filter** som visas.
+Om du vill ta bort befintliga filter klickar du på **filter** och sedan på **Rensa filter** i det **filter** som visas.
 
 ## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a>Använd säkerhets & Compliance Center för att ändra poster i listan Tillåt/blockera för klient organisation
 
 Du kan inte ändra själva URL-värdet. I stället måste du ta bort posten och skapa den igen.
 
-1. Gå till fliken **Threat Management** \> **policy** för \> **Tillåt/blockera listor**i säkerhets & efterlevnad.
+1. Gå till fliken **Threat Management** \> **policy** för \> **Tillåt/blockera listor** i säkerhets & efterlevnad.
 
 2. Välj fliken **URL: er** .
 
@@ -150,7 +149,7 @@ Du kan inte ändra själva URL-värdet. I stället måste du ta bort posten och 
 
 ## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>Använd säkerhets & Compliance Center för att ta bort poster från listan Tillåt/blockera för klient organisation
 
-1. Gå till fliken **Threat Management** \> **policy** för \> **Tillåt/blockera listor**i säkerhets & efterlevnad.
+1. Gå till fliken **Threat Management** \> **policy** för \> **Tillåt/blockera listor** i säkerhets & efterlevnad.
 
 2. Välj fliken **URL: er** .
 
