@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig att använda standard-och strikta princip inställningar i skydds funktionerna i Exchange Online Protection (EOP) och Microsoft Defender för Office 365
-ms.openlocfilehash: 38a03727f91878f356d8bc0dc618c711bfc500bb
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e968f7ea768ac8a0b402c28f3830a52b44afa342
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845738"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572783"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Förvalda säkerhets principer i EOP och Microsoft Defender för Office 365
 
@@ -44,32 +44,32 @@ Prioritetsordning är dessutom viktigt om flera förvalda säkerhets principer o
 
 En profil bestämmer skydds nivån. Följande profiler är tillgängliga:
 
-- **Standard skydd** : en grundläggande skydds profil som passar de flesta användare.
-- **Strikt skydd** : en mer aggressiv skydds profil för utvalda användare (högsta värde mål eller prioriterade användare).
+- **Standard skydd**: en grundläggande skydds profil som passar de flesta användare.
+- **Strikt skydd**: en mer aggressiv skydds profil för utvalda användare (högsta värde mål eller prioriterade användare).
 
 Du använder regler med villkor och undantag som avgör vem profilen är eller inte är kopplad till.
 
-Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_ ). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_ ).
+Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_).
 
 De tillgängliga villkoren och undantagen är:
 
-- **Mottagarna är** : post lådor, e-postanvändare eller e-postkontakter i din organisation.
-- **Mottagarna är medlemmar i** : grupper i din organisation.
-- **Mottagar domäner är** : godkända domäner som är konfigurerade i Microsoft 365.
+- **Mottagarna är**: post lådor, e-postanvändare eller e-postkontakter i din organisation.
+- **Mottagarna är medlemmar i**: grupper i din organisation.
+- **Mottagar domäner är**: godkända domäner som är konfigurerade i Microsoft 365.
 
 ### <a name="policies-in-preset-security-policies"></a>Principer i förvalda säkerhets principer
 
 Förvalda säkerhets principer Använd motsvarande principer i de olika skydds funktionerna i EOP och Microsoft Defender för Office 365. Dessa principer skapas _efter_ att du har tilldelat **standard** säkerhets principer för förvalda skydd eller **strikta skydd** för användare. Du kan inte ändra dessa principer.
 
-- **Principer för Exchange Online Protection (EOP)** : det inkluderar Microsoft 365-organisationer med Exchange Online-postlådor och fristående EOP-organisationer utan Exchange Online-postlådor:
+- **Principer för Exchange Online Protection (EOP)**: det inkluderar Microsoft 365-organisationer med Exchange Online-postlådor och fristående EOP-organisationer utan Exchange Online-postlådor:
   
   - [Principer för skräp post](configure-your-spam-filter-policies.md) som heter **Standard säkerhets princip** och **strikt förinställd säkerhets policy**.
   - [Principer mot skadlig program vara](configure-anti-malware-policies.md) med namnet **Standard säkerhets princip** och **strikt förinställd säkerhets policy**.
   - [EOP anti-nätfiske-principer](set-up-anti-phishing-policies.md#spoof-settings) som heter **Standard säkerhets princip** och **strikt förinställd säkerhets princip** (Spoof-inställningar).
 
-- **Microsoft Defender för Office 365-principer** : Detta inkluderar organisationer med Microsoft 365 E5-eller Defender för Office 365-tilläggs prenumerationer:
+- **Microsoft Defender för Office 365-principer**: Detta inkluderar organisationer med Microsoft 365 E5-eller Defender för Office 365-tilläggs prenumerationer:
 
-  - Anti-nätfiske-principer i Microsoft Defender för Office 365 heter **standarden för förvalda säkerhets principer** och **strikta förvalda säkerhets principer** , som omfattar:
+  - Anti-nätfiske-principer i Microsoft Defender för Office 365 heter **standarden för förvalda säkerhets principer** och **strikta förvalda säkerhets principer**, som omfattar:
 
     - Samma [falska inställningar](set-up-anti-phishing-policies.md#spoof-settings) som är tillgängliga i EOP anti-phishing-principer.
     - [Inställningar för personifiering](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
@@ -104,18 +104,11 @@ Med andra ord åsidosätter inställningarna för principen för **strikt skydd*
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna för detta ämne:
+- Du måste tilldelas behörigheter innan du kan utföra åtgärderna i den här artikeln:
 
-  - Om du vill konfigurera förvalda säkerhets principer måste du vara medlem i någon av följande roll grupper:
+  - Om du vill konfigurera förvalda säkerhets principer måste du vara medlem i rollerna **organisations hantering** eller **säkerhets administratör** i [säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-    - **Organisationshantering** eller **Säkerhetsadministratör** i [Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
-    - **Organisationshantering** eller **Hygienhantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
-
-  - Om du vill ha skrivskyddad åtkomst till förvalda säkerhets principer måste du vara medlem i någon av följande roll grupper:
-
-    - **Säkerhetsläsare** i [Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
-    - **Global läsare** i [säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - Om du vill ha skrivskyddad åtkomst till förvalda säkerhets principer måste du vara medlem i rollen **global läsare** i [säkerhets & efterlevnad](permissions-in-the-security-and-compliance-center.md).
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Använd säkerhets & Compliance Center för att tilldela förvalda säkerhets principer till användare
 
@@ -125,7 +118,7 @@ Med andra ord åsidosätter inställningarna för principen för **strikt skydd*
 
 3. Guiden **Använd standard skydd** eller **Använd strikt skydd** startas. På **EOP skydd gäller för** steg hur du identifierar de interna mottagarna som [EOP skydd](#policies-in-preset-security-policies) gäller för:
 
-   1. Klicka på **Lägg till ett villkor**. I den nedrullningsbara List rutan som visas väljer du ett villkor under **används om** :
+   1. Klicka på **Lägg till ett villkor**. I den nedrullningsbara List rutan som visas väljer du ett villkor under **används om**:
 
       - **Mottagarna**
       - **Mottagarna är medlemmar i**

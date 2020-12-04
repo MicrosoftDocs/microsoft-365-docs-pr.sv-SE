@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Den här artikeln innehåller felsöknings information för problem med att skicka e-post till Inkorgen i Microsoft 365 & metod tips för Mass utskick till Microsoft 365-kunder.
-ms.openlocfilehash: 52b4bb333a92dcaa21f45977b3d59a96053a69c2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 895f2651529cd46968d053fefac10cb22b6a5d86
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201749"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568560"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Felsöka e-post som skickas till Microsoft 365
 
@@ -51,9 +51,7 @@ Instruktioner om hur du skapar och hanterar DNS-poster, inklusive MX-posten som 
 Vi kanske inte accepterar e-post från avsändare som inte har en omvänd DNS-sökning. I vissa fall annonseras legitima avsändare felaktigt som icke-Internetbaserad IP-adress när du försöker öppna en anslutning till EOP. IP-adresser som reserveras för privata (icke-dirigerbart) nätverk inkluderar:
 
 - 192.168.0.0/16 (eller 192.168.0.0 – 192.168.255.255)
-
 - 10.0.0.0/8 (eller 10.0.0.0-10.255.255.255)
-
 - 172.16.0.0/11 (eller 172.16.0.0 – 172.31.255.255)
 
 ## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Du fick en rapport om utebliven leverans (NDR) när du skickar e-post till en användare i Office 365

@@ -1,5 +1,5 @@
 ---
-title: Styrning först
+title: Skapa en plan för hantering av samarbete
 ms.reviewer: mmclean
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,15 +14,15 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Styrning först
-ms.openlocfilehash: 7f6104997028434b9c8aeab946ac6e1f06a61c84
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+description: Lär dig hur du skapar en plan för hantering av samarbete
+ms.openlocfilehash: 2fb2db16df3c83347831f4ea3489835e5037bbec
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377431"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568288"
 ---
-# <a name="governance-first"></a>Styrning först
+# <a name="create-your-collaboration-governance-plan"></a>Skapa en plan för hantering av samarbete
 
 Det är alltid bäst att påbörja flytten till Microsoft 365 med en tydlig vision:
 
@@ -34,9 +34,9 @@ Det är alltid bäst att påbörja flytten till Microsoft 365 med en tydlig visi
 
 En instruktion för klare sikt ger viktig vägledning till det oundvikliga beslutet är bara att behöva tänka på din styrnings plan. Graden av formaliteter och det djup som du måste använda för att dokumentera planen bör justeras mot de resultat du vill uppnå. Synområdet ger sålunda en ram för både sammanhang och investeringar i styrning.
 
-Microsoft 365-molnet skapar nya paradigm för teknologier som stödjer verksamheten. Dessa nya paradigm-funktioner ändrar hur dessa tekniker tillämpas, hanteras och regleras. 
+Microsoft 365 skapar nya paradigm för teknologier som stödjer verksamheten. Dessa nya paradigm-funktioner ändrar hur dessa tekniker tillämpas, hanteras och regleras. 
 
-Microsoft 365-styrningen bör komplettera befintliga principer som styr lokala miljöer.  Men eftersom molnet ger nya möjligheter att stödja verksamheten är det viktigt att du förstår dessa möjligheter och funderar på en styr metod som skapar en lämplig balans mellan användar mål, affärs risker och bransch och myndighets krav.
+Microsoft 365-styrningen bör komplettera befintliga principer som styr lokala miljöer. Men eftersom molnet ger nya möjligheter att stödja verksamheten är det viktigt att du förstår dessa möjligheter och funderar på en styr metod som skapar en lämplig balans mellan användar mål, affärs risker och bransch och myndighets krav.
 
 Att fundera på styrning innebär först att påbörja resan till molnet med vissa viktiga beslut för att det ska fungera så bra som möjligt. Vissa av dessa beslut är:
 
@@ -60,9 +60,9 @@ Planering för styrning för Microsoft 365 handlar om att skydda kritiska inform
 
 Styrnings planering bör komma först, men styrning måste vara något som du kontinuerligt besöker i en iterativ process. Allteftersom datamärkningen ändras över tiden vill du gå igenom de styrda besluten för att anpassa dig till föränderliga företags behov och tillgänglighet. Du kanske behöver mer insikt för att säkerställa att du är uppslagen. Det kan hända att du behöver mindre insikt för att uppmuntra mer kreativ användning av grundläggande funktioner. Det kan hända att roller och ansvars områden måste uppdateras för att återspegla ändringar i lösningen eller ändringar i hur användarna använder olika program.
 
-En av de viktigaste fördelarna med Microsoft 365 är att det är enkelt att samar beta med externa användare och organisationer. Vissa organisationer i vissa branscher väljer att blockera all extern delning. Andra aktiverar extern delning i specifika scenarier eller med specifika organisationer. Det finns inga rätta eller felaktiga styr beslut när det kommer till extern delning – och det finns många olika scenarier där du kan aktivera olika inställningar i Microsoft 365 för att tillåta delning i vissa fall och blockera dem i andra. Om du bara påbörjar resan från en lokal miljö i molnet är det viktigt att tänka på om externa delnings beslut och förstår fördelarna och riskerna med olika tillgängliga alternativ.
+En av de viktigaste fördelarna med Microsoft 365 är att det är enkelt att samar beta med personer utanför organisationen. Vissa organisationer i vissa branscher väljer att blockera all extern delning. Andra aktiverar extern delning i specifika scenarier eller med specifika organisationer. Det finns inga rätta eller felaktiga styr beslut när det kommer till extern delning – och det finns många olika scenarier där du kan aktivera olika inställningar i Microsoft 365 för att tillåta delning i vissa fall och blockera dem i andra. Om du bara påbörjar resan från en lokal miljö i molnet är det viktigt att tänka på om externa delnings beslut och förstår fördelarna och riskerna med olika tillgängliga alternativ.
 
-## <a name="why-think-about-governance-first"></a>Varför bara tänka på styrning?
+## <a name="think-about-governance-first"></a>Tänk på styrningarna först
 
 Din investering i Microsoft 365 är bara lika bra som värdet på det innehåll och den stöd som du aktiverar – så att du kan tänka på styrningen när du är i början av resan för att du ska kunna förstå och bedöma konsekvenserna av varje beslut. Det finns flera "rattar och nummer" som du kan använda för att aktivera administrations centret för Microsoft 365 och för enskilda webbplatser och team. Ett effektivt styr abonnemang är avgörande för att uppnå affärs mål-men styrning är att balansera risken med fördelar. Om vi låser allt ned kan andra hitta ett sätt att arbeta kring reglerna om de behövs för att få jobbet gjort.
 
@@ -98,7 +98,7 @@ Arbeta genom de viktiga styr besluten – men försök inte att göra varje besl
 
 Utöver extern delning, som diskuterats tidigare, är det ett annat avgörande beslut för varje organisation att tillhandahålla webbplatser och grupper. Tänk dig till exempel:
 
-- Eftersom det är så enkelt för användare att skapa Microsoft 365-grupper kan det vara bra att öppna grupp skapande så att den inte är inundated med en begäran om att skapa dem åt andra personer. För att undvika "grupp sprawl" kan du skapa ett anpassat arbets flöde som skickar ett e-postmeddelande med styrelse former, utbildning och annan information till grupp Creators efter att gruppen har skapats. (Till exempel "du har just skapat en webbplats/ett team, en community, etc.-här är dina skyldigheter och länkar till utbildning...") Å andra sidan, beroende på ditt företag, kanske du vill kontrol lera vilka som kan skapa grupper.
+- Eftersom det är så enkelt för användare att skapa Microsoft 365-grupper kan det vara bra att öppna grupp skapande så att den inte är inundated med en begäran om att skapa dem åt andra personer. För att undvika "grupp sprawl" kan du skapa ett anpassat arbets flöde som skickar ett e-postmeddelande med styrelse former, utbildning och annan information till grupp Creators efter att gruppen har skapats. (Till exempel "du har just skapat en webbplats/ett team, en community, etc.-här är dina skyldigheter och länkar till utbildning...") Å andra sidan, beroende på ditt företag, kanske du vill kontrol lera vem som kan skapa grupper.
 
 - Om du vill styra hur SharePoint-webbplatser skapas kan du dölja länken **Skapa webbplats** på Start sidan för SharePoint. Skapa ett anpassat formulär eller skapa ett anpassat webbplats design-och webbplats skript för att automatisera etableringen av nya moderna SharePoint-webbplatser med hjälp av en fördefinierad webbplats struktur som kan innehålla länkar till styrning och utbildning.
 
@@ -130,7 +130,7 @@ I slut ändan av hur dina styr planeringen görs beror det på hur väl du har �
 
 - Bör du skapa en certifiering och förnyad certifiering för webbplats-och team ägare?
 
-- Kan du skapa ett Microsoft 365 representanter-program för din organisation? Dessutom kan du gå med i Microsoft 365 representanter program för att få idéer och funktioner för ditt eget representanter-program och för att ansluta till gillade människor och tanke på utfyllnadstecken från och med Microsoft.
+- Kan du skapa ett Microsoft 365 representanter-program för din organisation? Dessutom kan du gå med i [microsoft 365 representanter program](https://aka.ms/O365Champions) för att få idéer och funktioner för ditt eget representanter-program och för att ansluta till gillade människor och tanke på utfyllnadstecken från och med Microsoft.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
@@ -139,3 +139,5 @@ I slut ändan av hur dina styr planeringen görs beror det på hur väl du har �
 [Översikt över SharePoint-styrning](https://docs.microsoft.com/sharepoint/governance-overview)
 
 [Planera organisation och livscykler för grupper tjänster](plan-organization-lifecycle-governance.md)
+
+[Filsamarbete i SharePoint med Microsoft 365](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)

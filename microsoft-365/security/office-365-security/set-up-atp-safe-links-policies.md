@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur du visar, skapar, ändrar och tar bort principer för säkra länkar och globala inställningar för säkra länkar i Microsoft Defender för Office 365.
-ms.openlocfilehash: ed95c72c98e0c9d59b9860e89843c5f9b4970c8e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 550be48d5f1cae490c53c8f4a9fcedb0b9f21f73
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846442"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572723"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Konfigurera principer för säkra länkar i Microsoft Defender för Office 365
 
@@ -39,8 +39,8 @@ Du kan konfigurera principer för säkra länkar i säkerhets &s kontroll Center
 
 De grundläggande delarna i en policy för säkra länkar är:
 
-- **Principen för säkra länkar** : Aktivera skyddad länk skydd, aktivera URL-genomsökning i real tid, ange om du vill vänta på att genomsökning i real tid ska slutföras innan du levererar meddelandet, aktiverar skanning för interna meddelanden, anger om du vill spåra användare klickar på URL-adresser och ange om du vill tillåta användare att klicka på återträff till den ursprungliga URL-adressen.
-- **Regeln för säkra länkar** : anger de prioritets-och mottagar filter (som principen gäller för).
+- **Principen för säkra länkar**: Aktivera skyddad länk skydd, aktivera URL-genomsökning i real tid, ange om du vill vänta på att genomsökning i real tid ska slutföras innan du levererar meddelandet, aktiverar skanning för interna meddelanden, anger om du vill spåra användare klickar på URL-adresser och ange om du vill tillåta användare att klicka på återträff till den ursprungliga URL-adressen.
+- **Regeln för säkra länkar**: anger de prioritets-och mottagar filter (som principen gäller för).
 
 Skillnaden mellan dessa två element är inte uppenbar när du hanterar Safe Links-principer i säkerhets & Compliance Center:
 
@@ -59,10 +59,16 @@ I Exchange Online PowerShell eller fristående EOP PowerShell hanterar du policy
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- För att visa, skapa, ändra och ta bort principer för säkra länkar måste du vara medlem i någon av följande roll grupper:
+- Du måste tilldelas behörigheter i säkerhets & Compliance Center innan du kan göra det i den här artikeln:
+  - För att skapa, ändra och ta bort principer för säkra länkar måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** .
+  - Om du vill ha skrivskyddad åtkomst till principer för säkra länkar måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** .
 
-  - **Organisationshantering** eller **Säkerhetsadministratör** i [Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
-  - **Organisations hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
+
+  **Anmärkningar**:
+
+  - Om du lägger till användare i motsvarande Azure Active Directory-roll i Microsoft 365 Admin Center får användarna den behörighet som krävs för säkerhets & efterlevnad Center _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Roll gruppen **organisations hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
 - För de rekommenderade inställningarna för principer för säkra länkar, se [princip inställningar för säkra länkar](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).
 
@@ -80,29 +86,29 @@ Om du skapar en anpassad princip för säkra länkar i säkerhets & Compliance C
 
 3. Guiden **ny princip för säkra länkar** öppnas. På sidan **namnge din policy** konfigurerar du följande inställningar:
 
-   - **Namn** : Ange ett unikt, beskrivande namn på principen.
+   - **Namn**: Ange ett unikt, beskrivande namn på principen.
 
-   - **Beskrivning** : Ange en valfri beskrivning av principen.
+   - **Beskrivning**: Ange en valfri beskrivning av principen.
 
    När du är klar klickar du på **Nästa**.
 
 4. På sidan **Inställningar** som visas konfigurerar du följande inställningar:
 
-   - **Välj åtgärd för okända URL-adresser i meddelanden** : Välj **på** för att aktivera skydda Länkar för länkar i e-postmeddelanden.
+   - **Välj åtgärd för okända URL-adresser i meddelanden**: Välj **på** för att aktivera skydda Länkar för länkar i e-postmeddelanden.
 
-   - **Välj åtgärd för okända eller potentiellt skadliga URL-adresser i Microsoft Teams** : Välj **på** för att aktivera skydd mot säkra Länkar för länkar i team.
+   - **Välj åtgärd för okända eller potentiellt skadliga URL-adresser i Microsoft Teams**: Välj **på** för att aktivera skydd mot säkra Länkar för länkar i team.
 
-   - **Använda URL-genomsökning i real tid för misstänkta länkar och länkar som pekar på filer** : Välj den här inställningen för att aktivera genomsökning i real tid med länkar i e-postmeddelanden.
+   - **Använda URL-genomsökning i real tid för misstänkta länkar och länkar som pekar på filer**: Välj den här inställningen för att aktivera genomsökning i real tid med länkar i e-postmeddelanden.
 
-   - **Vänta på att URL-genomsökningen ska slutföras innan du levererar meddelandet** : Välj den här inställningen för att vänta på att URL-genomsökning i real tid ska slutföras innan meddelandet levereras.
+   - **Vänta på att URL-genomsökningen ska slutföras innan du levererar meddelandet**: Välj den här inställningen för att vänta på att URL-genomsökning i real tid ska slutföras innan meddelandet levereras.
 
-   - **Använd Safe Links för e-postmeddelanden som skickas inom organisationen** : Välj den här inställningen om du vill tillämpa principen för säkra länkar i meddelanden mellan interna avsändare och interna mottagare.
+   - **Använd Safe Links för e-postmeddelanden som skickas inom organisationen**: Välj den här inställningen om du vill tillämpa principen för säkra länkar i meddelanden mellan interna avsändare och interna mottagare.
 
    - **Spåra inte användare** Klicka på: låt den här inställningen vara avmarkerad för att aktivera spårnings användaren på URL: er i e-postmeddelanden.
 
-   - **Tillåt inte att användare klickar genom till ursprunglig URL** : Välj den här inställningen för att hindra användare från att klicka dig fram till den ursprungliga URL-adressen i [varnings sidor](atp-safe-links.md#warning-pages-from-safe-links).
+   - **Tillåt inte att användare klickar genom till ursprunglig URL**: Välj den här inställningen för att hindra användare från att klicka dig fram till den ursprungliga URL-adressen i [varnings sidor](atp-safe-links.md#warning-pages-from-safe-links).
 
-   - **Skriv inte om följande webb adresser** : tillåter åtkomst till angivna URL-adresser som annars skulle blockeras av säkra länkar.
+   - **Skriv inte om följande webb adresser**: tillåter åtkomst till angivna URL-adresser som annars skulle blockeras av säkra länkar.
 
      Skriv URL: en eller det värde du vill använda i rutan och klicka sedan på ![Ikonen Lägg till knapp](../../media/ITPro-EAC-AddIcon.png).
 
@@ -118,13 +124,13 @@ Om du skapar en anpassad princip för säkra länkar i säkerhets & Compliance C
 
 5. **På sidan som** visas anger du vilka interna mottagare som principen gäller för.
 
-   Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_ ). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_ ).
+   Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_).
 
-   Klicka på **Lägg till ett villkor**. I den nedrullningsbara List rutan som visas väljer du ett villkor under **används om** :
+   Klicka på **Lägg till ett villkor**. I den nedrullningsbara List rutan som visas väljer du ett villkor under **används om**:
 
-   - **Mottagaren är** : anger en eller flera post lådor, e-postkonton eller e-postkontakter i din organisation.
-   - **Mottagaren är medlem i** : anger en eller flera grupper i din organisation.
-   - **Mottagande domän är** : Anger mottagare i en eller flera av de godkända domänerna som har konfigurerats i din organisation.
+   - **Mottagaren är**: anger en eller flera post lådor, e-postkonton eller e-postkontakter i din organisation.
+   - **Mottagaren är medlem i**: anger en eller flera grupper i din organisation.
+   - **Mottagande domän är**: Anger mottagare i en eller flera av de godkända domänerna som har konfigurerats i din organisation.
 
    När du har valt villkoret visas en motsvarande listruta med en **av dessa** rutor.
 
@@ -194,7 +200,7 @@ Du ändrar prioriteten för en princip genom att flytta principen uppåt eller n
 
    - Principen för säkra länkar med **prioritet** svärdet **0** har bara knappen **minska prioritet** tillgänglig.
 
-   - Principen för säkra länkar med det lägsta **prioritet** svärdet (till exempel **3** ) har bara knappen **öka prioritet** tillgänglig.
+   - Principen för säkra länkar med det lägsta **prioritet** svärdet (till exempel **3**) har bara knappen **öka prioritet** tillgänglig.
 
    - Om du har tre eller fler Safe Link-principer har de principer som gäller för de högsta och lägsta värdena både knappen **öka prioritet** och knappen för att **minska prioriteten** tillgängliga.
 
@@ -227,14 +233,14 @@ Att skapa en princip för säkra länkar i PowerShell är en process i två steg
 1. Skapa principen för säkra länkar.
 2. Skapa regeln för säkra länkar som anger principen för säkra länkar som regeln gäller för.
 
- **Anmärkningar** :
+ **Anmärkningar**:
 
 - Du kan skapa en ny regel för ett säkert länkar och koppla en befintlig princip för osäkra länkar till den. En regel för säkert länkar kan inte kopplas till fler än en princip för säkra länkar.
 
 - Du kan konfigurera följande inställningar på nya principer för säkra länkar i PowerShell som inte är tillgängliga i säkerhets & Compliance Center förrän du har skapat principen:
 
-  - Skapa den nya principen som inaktive rad ( _aktive rad_ `$false` på **New-SafeLinksRule-** cmdleten).
-  - Ange prioriteten för principen när den skapas ( _prioritet_ _\<Number\>_ ) på den **nya SafeLinksRule-** cmdleten.
+  - Skapa den nya principen som inaktive rad (_aktive rad_ `$false` på **New-SafeLinksRule-** cmdleten).
+  - Ange prioriteten för principen när den skapas (_prioritet_ _\<Number\>_ ) på den **nya SafeLinksRule-** cmdleten.
 
 - En ny princip för säkra länkar som du skapar i PowerShell visas inte i fönstret säkerhets & efterlevnad förrän du tilldelar principen en regel för ett säkert länkar.
 
@@ -246,7 +252,7 @@ Använd den här syntaxen om du vill skapa en princip för säkra länkar:
 New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEnabled <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-DoNotAllowClickThrough <$true | $false>] [-DoNotTrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
 ```
 
-**Anmärkningar** :
+**Anmärkningar**:
 
 - Mer information om syntaxen för _DoNotRewriteUrls_ finns i [syntaxen för listan "Skriv inte om följande URL-adresser"](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
 

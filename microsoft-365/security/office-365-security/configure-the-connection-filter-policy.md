@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära dig hur du konfigurerar anslutnings filtrering i Exchange Online Protection (EOP) för att tillåta eller blockera e-postservrar.
-ms.openlocfilehash: 95e178e34c944c13cd99e4d4a0e9f30ed083842c
-ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
+ms.openlocfilehash: a2a755516f029f5d72016e9ea8fcb87a997d5065
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48318258"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572831"
 ---
 # <a name="configure-connection-filtering"></a>Konfigurera anslutningsfiltrering
 
@@ -49,19 +49,18 @@ I det här avsnittet beskrivs hur du konfigurerar standard princip för anslutni
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna för detta ämne:
+- Du måste tilldelas behörigheter i säkerhets & Compliance Center innan du kan göra det i den här artikeln:
+  - Om du vill ändra standard princip för anslutnings filter måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** .
+  - Om du vill ha skrivskyddad åtkomst till standard anslutnings filter principen måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** .
 
-  - Om du vill ändra standard princip för anslutnings filter måste du vara medlem i någon av följande roll grupper:
+  Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
-    - **Organisationshantering** eller **Säkerhetsadministratör** i [Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
-    - **Organisationshantering** eller **Hygienhantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Anmärkningar**:
 
-  - Om du vill ha skrivskyddad åtkomst till standard anslutnings filter principen måste du vara medlem i någon av följande roll grupper:
+  - Om du lägger till användare i motsvarande Azure Active Directory-roll i Microsoft 365 Admin Center får användarna den behörighet som krävs för säkerhets & efterlevnad Center _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Roll gruppen **organisations hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
-    - **Säkerhetsläsare** i [Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
-    - **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
-
-- Om du vill ta reda på käll-IP-adresserna för de e-postservrar (avsändare) som du vill tillåta eller blockera kan du kontrol lera värdet för**CIP**-huvudet i meddelande huvudet. Information om hur du visar meddelande huvudet i olika e-postklienter finns i [Visa Internet meddelande rubriker i Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
+- Om du vill ta reda på käll-IP-adresserna för de e-postservrar (avsändare) som du vill tillåta eller blockera kan du kontrol lera värdet för **CIP**-huvudet i meddelande huvudet. Information om hur du visar meddelande huvudet i olika e-postklienter finns i [Visa Internet meddelande rubriker i Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
 - Listan över tillåtna IP-adresser har högre prioritet än IP-blockeringslistan (en adress i båda listor är inte blockerad).
 

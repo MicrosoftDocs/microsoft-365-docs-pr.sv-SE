@@ -14,16 +14,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365-testverktyg (för hands version)
-ms.openlocfilehash: 4fc12645ccd6a022e4ef4ebe849ac91ba431129b
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: b29eb29cd390c3febd0992e942cf8ab39f652fb2
+ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087085"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49569993"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Microsoft 365-testverktyg (för hands version)
 
 Test verktyget för Microsoft 365 Network Connectivity finns på <https://connectivity.office.com> . Det är ett Adjunct verktyg för nätverks utvärdering och nätverks information som är tillgänglig i administrations centret för Microsoft 365 under **tillståndet |. Menyn anslutningar** .
+
+> [!IMPORTANT]
+> Det är viktigt att logga in på din Microsoft 365-klient organisation eftersom alla test rapporter delas med din administratör och laddas upp till klient organisationen när du är inloggad.
 
 ![Verktyg för anslutnings test](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
 

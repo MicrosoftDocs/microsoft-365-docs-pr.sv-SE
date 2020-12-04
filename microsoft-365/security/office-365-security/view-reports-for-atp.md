@@ -1,5 +1,5 @@
 ---
-title: Visa rapporter för Defender för Office 365
+title: Visa Defender för Office 365-rapporter i instrument panelen rapporter
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-office365
 description: Hitta och använda rapporter för Microsoft Defender för Office 365 i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5efaef018c78bd161c9cde81af36be92173479ae
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: a237049c9ebbccf1c01feeb21129496e16d437b2
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561733"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572495"
 ---
-# <a name="view-reports-for-microsoft-defender-for-office-365"></a>Visa rapporter för Microsoft Defender för Office 365
+# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>Visa Defender för Office 365-rapporter i rapport instrument panelen i säkerhets & efterlevnad
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -338,27 +338,16 @@ Utöver de rapporter som beskrivs i det här avsnittet är flera andra rapporter
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Vilka behörigheter behövs för att Visa Defender för Office 365-rapporterna?
 
-För att kunna visa och använda de rapporter som beskrivs i det här avsnittet **måste du ha tilldelats en lämplig roll för både säkerhets & efterlevnad och administrations centret för Exchange**.
+För att kunna visa och använda de rapporter som beskrivs i det här avsnittet måste du vara medlem i någon av följande roll grupper i säkerhets & Compliance Center:
 
-- För säkerhets & Compliance Center måste du ha någon av följande roller tilldelade:
+- **Organisationshantering**
+- **Säkerhets administratör**
+- **Säkerhets läsare**
+- **Global läsare**
 
-  - Organisationshantering
-  - Säkerhets administratör (detta kan tilldelas i Azure Active Directory Admin Center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
-  - Säkerhets ansvarig (detta kan tilldelas i Azure Active Directory-administratörs Center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
-  - Säkerhets läsare
+Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
-- För Exchange Online måste du ha någon av följande roller tilldelade i antingen administrations centret för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) eller med PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
-
-  - Organisationshantering
-  - Organisations hantering för endast visning
-  - Roll för View-Only mottagare
-  - Hantering av efterlevnad
-
-Mer information finns i följande resurser:
-
-- [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md)
-
-- [Behörigheter för funktioner i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
+**Obs!** när du lägger till användare i motsvarande Azure Active Directory-roll i Microsoft 365 Admin Center får användarna den behörighet som krävs för säkerhets & efterlevnad Center _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Vad händer om rapporterna inte visar data?
 

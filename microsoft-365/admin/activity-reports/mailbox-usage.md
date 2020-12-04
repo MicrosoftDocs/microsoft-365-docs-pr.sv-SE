@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Lär dig hur du får en rapport om hur du kan få information om användarnas aktiviteter med en post låda.
-ms.openlocfilehash: 988f6e638e01cb5929e2ad9dd74e3d08f8e51c97
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: ee6a39518cc4e73364749d3634710b5d9db868ba
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561465"
+ms.locfileid: "49568276"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Microsoft 365-rapporter i administrations Center – använde brev Låde användning
 
@@ -36,8 +36,8 @@ ms.locfileid: "49561465"
 ## <a name="how-to-get-to-the-mailbox-usage-report"></a>Så här kommer du åt rapporten om postlådeanvändning
 
 1. I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>.
-2. Välj **Visa mer** under **aktiva användare – Microsoft 365-tjänster**. 
-3. I list rutan **aktiva användare** väljer du Använd användning av **Exchange** - \> **postlåda**.
+2. Välj **Visa mer** under **e-postaktivitet**. 
+3. I list rutan **e-postaktivitet** väljer du **Exchange** \> **Använd användning** av Exchange-postlåda.
 
   
 ## <a name="interpret-the-mailbox-usage-report"></a>Tolka rapporten om postlådeanvändning

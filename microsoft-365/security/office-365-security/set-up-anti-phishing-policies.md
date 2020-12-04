@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om vilka phishing-principer som är tillgängliga i Exchange Online Protection (EOP) och Microsoft Defender för Office 365.
-ms.openlocfilehash: a02d69b278420d814871df8eebdd6efcdf5d8e7f
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 839d76c1e07b457f671f1f0eccd0a9160e4039a3
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376350"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568577"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-nätfiske-principer i Microsoft 365
 
@@ -200,11 +200,10 @@ Följande inställningar för personifiering är bara tillgängliga i policy mot
   - **Personifierade domäner**: från-adressen innehåller en skyddad domän.
   - **Ovanliga tecken**: från-adressen innehåller ovanliga tecken uppsättningar (till exempel matematiska symboler och text eller en blandning av versaler och gemener) i en skyddad avsändare eller domän.
 
-> [!IMPORTANT]
->
-> Även när säkerhets tipset för personifiering är inaktiverat **rekommenderar** vi att du använder en regel för e-postflöde (kallas även för en transport regel) för att lägga till ett meddelande som heter **X-MS – Exchange-EnableFirstContactSafetyTip** till meddelanden. Särskilda säkerhets tips visas som meddelar mottagarna att de ofta inte får e-post från avsändaren eller i de fall då mottagaren får ett e-postmeddelande för första gången från avsändaren.
->:::image type="content" source="../../media/Urja_FirstContactEmail-Set-us-anti-phish-pol-safetyTip-ImpersonationProtection-MultipleRecipients.png" alt-text="Texten i säkerhets tipset för personifiering med flera mottagare.":::
-<p>
+  > [!IMPORTANT]
+  >
+  > Även när säkerhets tipset för personifiering är inaktiverat **rekommenderar vi** att du använder en regel för e-postflöde (kallas även en transport regel) för att lägga till ett meddelande som heter **X-MS-Exchange-EnableFirstContactSafetyTip** med värde **Aktivera** meddelanden. Ett säkerhets tips meddelar mottagarna första gången de får ett meddelande från avsändaren, eller om de inte får meddelanden från avsändaren ofta.
+  > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="Texten i säkerhets tipset för personifiering med flera mottagare.":::
 
 - **Post låda**: aktiverar eller inaktiverar artificiell intelligens (AI) som bestämmer användarnas e-postmönster med deras vanliga kontakter. Den här inställningen hjälper AI-åtskillnaden mellan legitim och falsk e-post från de kontakterna. Post låda-intelligens är bara tillgängligt för Exchange Online-postlådor.
 

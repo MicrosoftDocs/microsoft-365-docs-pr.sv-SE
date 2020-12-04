@@ -25,28 +25,16 @@ search.appverid:
 - MOE150
 - BEA160
 description: Lär dig hur du konfigurerar din Microsoft 365 Business Standard-abonnemang.
-ms.openlocfilehash: e69a3c75d77a8b4721558e72526a068df643f284
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 61ba3b0a8a753c9c441fc5a2ffa66b63da9af675
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644561"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572423"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Konfigurera Microsoft Business Standard
 
-Titta på en kort video om hur du konfigurerar Microsoft 365 Business Standard.<br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ELKR]
-
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
-  
- De här stegen gäller för företag och [ideella organisationer](https://go.microsoft.com/fwlink/p/?LinkId=627221) som har**[Microsoft 365 Business Standard-abonnemang.](https://go.microsoft.com/fwlink/p/?LinkId=627220)**_
-
-Titta på en kort video om hur du konfigurerar Microsoft 365 Business Standard (tidigare Office 365 Business Premium).<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/913be1ad-bae1-40c0-9ded-15bb477b828b]
-
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="add-your-domain-to-personalize-sign-in"></a>Lägga till din domän för att personanpassa inloggning
 
@@ -56,7 +44,7 @@ När du köper Microsoft 365 Business Standard får du möjlighet att använda e
 
 1. Logga in på [Administrationscenter för Microsoft 365](https://admin.microsoft.com) som global administratör. 
 
-2. Starta guiden genom att välja _*Gå till inställningar*.
+2. Starta guiden genom att välja **Gå till inställningar**.
 
 3. På sidan **Installera Office-apparna** kan du välja att installera apparna på din egen dator.
     
@@ -93,7 +81,7 @@ För att få igång tjänsten måste du uppdatera några poster hos din DNS-vär
   
 1. Installationsguiden identifierar normalt din domänregistrator och ger dig en länk till stegvisa instruktioner för att uppdatera dina NS-poster på registratorns webbplats. Om det inte gör det, [ ändra namnservrar för att konfigurera Office 365 med valfri domänregistrator](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar). 
 
-    - Om du har befintliga DNS-poster, t. ex. en befintlig webbplats, men din DNS-värd är aktiverad för [Domain Connect](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)väljer du **Lägga till poster för mig**. På sidan **Välj onlinetjänster** accepterar du alla standardinställningar och väljer **Nästa**och väljer **Auktorisera** på DNS-värdens sida.
+    - Om du har befintliga DNS-poster, t. ex. en befintlig webbplats, men din DNS-värd är aktiverad för [Domain Connect](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)väljer du **Lägga till poster för mig**. På sidan **Välj onlinetjänster** accepterar du alla standardinställningar och väljer **Nästa** och väljer **Auktorisera** på DNS-värdens sida.
     - Om du har befintliga DNS-poster med andra DNS-värdar (inte aktiverad för domänanslutning), ska du hantera dina egna DNS-poster för att se till att de befintliga tjänsterna fortsätter att vara anslutna. Mer information finns i [domängrunder](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics).
 
 2. Följ stegen i guiden så kommer e-postmeddelanden och andra tjänster att konfigureras åt dig.

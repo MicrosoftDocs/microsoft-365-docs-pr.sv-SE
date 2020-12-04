@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Delade post lådor används när flera personer behöver ha åtkomst till samma post låda. Läs mer om vad du behöver veta innan du skapar en delad post låda.
-ms.openlocfilehash: d0e0888a71e2a017b3934caa67f8d53ffb787fe7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: cc94ae30edcc7a8307328230989dc4a883732b0e
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445705"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568300"
 ---
 # <a name="about-shared-mailboxes"></a>Om delade postlådor
 
@@ -42,7 +42,7 @@ Här är några saker du bör känna till innan du [skapar en delad post låda](
 
 - **Externa användare:** Du kan inte ge personer utanför företaget (till exempel personer med ett Gmail-konto) åtkomst till din delade post låda. Om du vill kan du också skapa en grupp för Outlook i stället. Mer information finns i [skapa en Microsoft 365-grupp i administrations centret](../create-groups/create-groups.md).
 
--  **Använda med Outlook:** Förutom att använda Outlook på webben från webbläsaren för att komma åt delade post lådor kan du även använda Outlook för iOS-appen eller Outlook för Android-appen. Mer information finns i <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">lägga till en delad post låda i Outlook Mobile</a>. Ett annat alternativ är att skapa en grupp för den delade post lådan. Mer information finns i [jämföra grupper](../create-groups/compare-groups.md).  
+- **Använda med Outlook:** Förutom att använda Outlook på webben från webbläsaren för att komma åt delade post lådor kan du även använda Outlook för iOS-appen eller Outlook för Android-appen. Mer information finns i [lägga till en delad post låda i Outlook Mobile](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f). Ett annat alternativ är att skapa en grupp för den delade post lådan. Mer information finns i [jämföra grupper](../create-groups/compare-groups.md).
 
 - **Kryptering:** Det går inte att kryptera e-post som skickas från en delad post låda. Detta beror på att en delad post låda inte har en egen säkerhets kontext (username/Password), så den kan inte tilldelas en. Om fler än en person är en medlem och de skickar/tar emot e-post som har krypterats med sina egna nycklar kanske andra medlemmar kan läsa e-postmeddelandet och andra kanske inte, beroende på vilken offentlig nyckel e-postmeddelandet krypterades med.
 

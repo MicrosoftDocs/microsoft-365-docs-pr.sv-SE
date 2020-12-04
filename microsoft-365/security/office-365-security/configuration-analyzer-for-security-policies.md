@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur de använder konfigurations analys för att hitta och åtgärda säkerhets principer som är under standard säkerhets principer för förvalda skydd och begränsande skydd.
-ms.openlocfilehash: 1429bddc5ae5f8409ad4f3593f7ea236b13f854c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7d02a6f83ceb06eb56039b449890fd90712c76e5
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846478"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572543"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Konfigurations analys för skydds principer i EOP och Microsoft Defender för Office 365
 
@@ -36,13 +36,13 @@ Med konfigurations analys i säkerhets & Compliance Center får du en central pl
 
 Följande typer av principer analyseras av konfigurations analys:
 
-- **Principer för Exchange Online Protection (EOP)** : det inkluderar Microsoft 365-organisationer med Exchange Online-postlådor och fristående EOP-organisationer utan Exchange Online-postlådor:
+- **Principer för Exchange Online Protection (EOP)**: det inkluderar Microsoft 365-organisationer med Exchange Online-postlådor och fristående EOP-organisationer utan Exchange Online-postlådor:
   
   - [Principer för skräp post](configure-your-spam-filter-policies.md).
   - [Principer mot skadlig program vara](configure-anti-malware-policies.md).
   - [EOP anti-nätfiske-principer](set-up-anti-phishing-policies.md#spoof-settings).
 
-- **Microsoft Defender för Office 365-principer** : Detta inkluderar organisationer med Microsoft 365 E5-eller Defender för Office 365-tilläggs prenumerationer:
+- **Microsoft Defender för Office 365-principer**: Detta inkluderar organisationer med Microsoft 365 E5-eller Defender för Office 365-tilläggs prenumerationer:
 
   - Skydd mot nätfiske i Microsoft Defender för Office 365, som omfattar:
 
@@ -62,17 +62,16 @@ De **vanliga** och **strikta** princip inställnings värden som används som ba
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Du måste tilldelas behörigheter innan du kan utföra åtgärderna i den här artikeln:
+- Du måste tilldelas behörigheter i säkerhets & Compliance Center innan du kan göra det i den här artikeln:
+  - För att använda konfigurations analys **och** göra uppdateringar av säkerhets principer måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** .
+  - Om du vill ha skrivskyddad åtkomst till konfigurations analys måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** .
 
-  - För att använda konfigurations analys **och** göra uppdateringar av säkerhets principer måste du vara medlem i någon av följande roll grupper:
+  Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
-    - **Organisationshantering** eller **Säkerhetsadministratör** i [Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
-    - **Organisationshantering** eller **Hygienhantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Anmärkningar**:
 
-  - Om du vill ha skrivskyddad åtkomst till konfigurations analys måste du vara medlem i någon av följande roll grupper:
-
-    - **Säkerhetsläsare** i [Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
-    - **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - Om du lägger till användare i motsvarande Azure Active Directory-roll i Microsoft 365 Admin Center får användarna den behörighet som krävs för säkerhets & efterlevnad Center _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Roll gruppen **organisations hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
 ## <a name="use-the-configuration-analyzer-in-the-security--compliance-center"></a>Använda Configuration Analyzer i Center för säkerhets &
 
@@ -82,9 +81,9 @@ Gå till **Threat management** \> **Policy** \> **konfigurations analys** för T
 
 Konfigurations analysen har två primära flikar:
 
-- **Inställningar och rekommendationer** : du väljer standard eller Strict och jämför dessa inställningar med dina befintliga säkerhets principer. I resultatet kan du justera värdena för inställningarna så att de får samma nivå som standard eller strikt.
+- **Inställningar och rekommendationer**: du väljer standard eller Strict och jämför dessa inställningar med dina befintliga säkerhets principer. I resultatet kan du justera värdena för inställningarna så att de får samma nivå som standard eller strikt.
 
-- **Analys och historik för konfigurations avvikelse** : med den här vyn kan du spåra princip förändringar med tiden.
+- **Analys och historik för konfigurations avvikelse**: med den här vyn kan du spåra princip förändringar med tiden.
 
 ### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>Fliken inställning och rekommendationer i konfigurations analys
 
@@ -102,27 +101,27 @@ Som standard innehåller kolumnen **princip grupp/inställnings namn** en dold v
 
 I standardvyn är allting dolda. Bredvid varje princip finns en sammanfattning av jämförelse resultat från dina principer (som du kan ändra) och inställningarna i motsvarande principer för standard-eller sträng skydds profilerna (som du inte kan ändra). Följande information om den skydds profil som du jämför med ska visas:
 
-- **Grön** : alla inställningar i alla befintliga principer är åtminstone lika säkra som skydds profilen.
-- **Gul** : ett litet antal inställningar i befintliga principer är inte så säkert som skydds profilen.
-- **Rött** : ett stort antal inställningar i befintliga principer är inte så säkert som skydds profilen. Det här kan vara några få inställningar i många principer eller många inställningar i en princip.
+- **Grön**: alla inställningar i alla befintliga principer är åtminstone lika säkra som skydds profilen.
+- **Gul**: ett litet antal inställningar i befintliga principer är inte så säkert som skydds profilen.
+- **Rött**: ett stort antal inställningar i befintliga principer är inte så säkert som skydds profilen. Det här kan vara några få inställningar i många principer eller många inställningar i en princip.
 
 För fördelaktig jämförelser visas texten: **alla inställningar följer** \<**Standard** or **Strict**\> **rekommendationer**. I annat fall ser du antalet rekommenderade inställningar att ändra.
 
-Om du expanderar **princip grupp/inställnings namn** visas alla principer och associerade inställningar i varje specifik princip som kräver åtgärd. Eller så kan du expandera en viss typ av princip (till exempel **anti-spam** ) för att se bara de inställningar som gäller för de principer som kräver din uppmärksamhet.
+Om du expanderar **princip grupp/inställnings namn** visas alla principer och associerade inställningar i varje specifik princip som kräver åtgärd. Eller så kan du expandera en viss typ av princip (till exempel **anti-spam**) för att se bara de inställningar som gäller för de principer som kräver din uppmärksamhet.
 
 Om jämförelsen inte har några rekommendationer för förbättring (grön) kan du utöka policyn genom att Visa ingenting. Om det finns några rekommendationer för förbättringar (gul eller röd) visas de inställningar som kräver åtgärd och informationen visas i följande kolumner:
 
 - Namnet på den inställning som kräver din uppmärksamhet. I föregående skärm bild är det till exempel att **tröskelvärdet för Mass** utskick av e-post i en policy för skräp post.
 
-- **Princip** : namnet på den berörda policyn som innehåller inställningen.
+- **Princip**: namnet på den berörda policyn som innehåller inställningen.
 
-- **Tillämpas på** : antalet användare som de berörda principerna tillämpas på.
+- **Tillämpas på**: antalet användare som de berörda principerna tillämpas på.
 
-- **Aktuell konfiguration** : det aktuella värdet för inställningen.
+- **Aktuell konfiguration**: det aktuella värdet för inställningen.
 
-- **Senast ändrad** : det datum då principen senast ändrades.
+- **Senast ändrad**: det datum då principen senast ändrades.
 
-- **Rekommendationer** : värdet för inställningen i standard-eller sträng skydds profilen. Om du vill ändra värdet för inställningen i principen så att det matchar det rekommenderade värdet i skydds profilen klickar du **på Välj.** Om ändringen lyckas visas meddelandet: **rekommendationerna har antagits**. Klicka på **Uppdatera** om du vill visa det nedsänkta antalet rekommendationer och borttagning av raden specifik inställning/princip från resultaten.
+- **Rekommendationer**: värdet för inställningen i standard-eller sträng skydds profilen. Om du vill ändra värdet för inställningen i principen så att det matchar det rekommenderade värdet i skydds profilen klickar du **på Välj.** Om ändringen lyckas visas meddelandet: **rekommendationerna har antagits**. Klicka på **Uppdatera** om du vill visa det nedsänkta antalet rekommendationer och borttagning av raden specifik inställning/princip från resultaten.
 
 ### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Konfiguration av avvikelser och historik i konfigurations analys
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 'Administratörer kan läsa mer om hur du använder portalen för att skicka e-postmeddelanden, misstänkta nätfiske-meddelanden, skräp post och andra potentiellt skadligt meddelande, URL: er och filer till Microsoft för genomsökning i & den här gruppen.'
-ms.openlocfilehash: 1e133c0d4a875fc9735cc8a92e42b6ffeee6dd5f
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 0c01afff2e9e5a656099192f3867bb3a6f1cee23
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527751"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568596"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Använd administratörs sändning för att skicka misstänkt skräp post, Phish, URL: er och filer till Microsoft
 
@@ -60,10 +60,10 @@ Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microso
 
 1. Välj **e-post** under **objekt typ** . Använd något av följande alternativ i avsnittet **sändnings format** :
 
-   - **Nätverks meddelande-ID**: det här är ett GUID-värde som är tillgängligt i huvudet **X-MS-Exchange-Organization-Network-meddelande-ID** i meddelandet.
+   - **ID för nätverks meddelande**: det här är ett GUID-värde som är tillgängligt i huvudet **x-MS-Exchange-Organization-Network-meddelande-ID** i meddelandet, eller i **X-MS-Office365**
 
    - **Fil**: Klicka på **Välj fil**. I dialog rutan som öppnas letar du reda på och markerar EML-eller MSG-filen och klickar sedan på **Öppna**.
-   
+
    > [!NOTE]
    > Administratörer med Defender för Office 365 abonnemang 1 eller abonnemang 2 kan skicka meddelanden som gamla 30 dagar. Andra administratörer kan bara gå tillbaka sju dagar.
 
@@ -244,7 +244,7 @@ Exportera resultatet genom att klicka på **Exportera** överst på sidan och v�
 
 ## <a name="undo-user-submissions"></a>Ångra användar inlägg
 
-När en användare skickar ett misstänkt e-postmeddelande till den anpassade post lådan har användaren och administratören inget alternativ för att ångra sändningen. Om användaren vill återställa e-postmeddelandet kommer den att vara tillgänglig för återställning i mapparna Borttaget eller skräp post. 
+När en användare skickar ett misstänkt e-postmeddelande till den anpassade post lådan har användaren och administratören inget alternativ för att ångra sändningen. Om användaren vill återställa e-postmeddelandet kommer den att vara tillgänglig för återställning i mapparna Borttaget eller skräp post.
 
 ### <a name="submit-messages-to-microsoft-from-the-custom-mailbox"></a>Skicka meddelanden till Microsoft från den anpassade post lådan
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa, skapa, ändra och ta bort utgående skräp post principer i Exchange Online Protection (EOP).
-ms.openlocfilehash: 316bdcf4f7beb0af3dd71fdd3c3a2c0198a89f8d
-ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
+ms.openlocfilehash: 792cd44d1571c407477671c6223b8ec38ad9b7f8
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "48830655"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572843"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurera utgående skräp post filtrering i EOP
 
@@ -42,8 +42,8 @@ Du kan konfigurera regler för utgående skräp post i säkerhets & efterföljan
 
 De grundläggande delarna i en regel för utgående e-post i EOP är:
 
-- **Filter policy för utgående e-post** : anger åtgärderna för utgående spam-filtrering verdicts och meddelande alternativen.
-- **Filter regeln för utgående e-post** : anger de prioritets-och mottagar filter (som principen gäller för) för en utgående filter policy för skräp post.
+- **Filter policy för utgående e-post**: anger åtgärderna för utgående spam-filtrering verdicts och meddelande alternativen.
+- **Filter regeln för utgående e-post**: anger de prioritets-och mottagar filter (som principen gäller för) för en utgående filter policy för skräp post.
 
 Skillnaden mellan dessa två element är inte uppenbar när du hanterar utgående spam-principer i säkerhets & Compliance Center:
 
@@ -67,39 +67,38 @@ Om du vill öka effektiviteten för utgående skräp post filtrering kan du skap
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna för detta ämne:
+- Du måste tilldelas behörigheter i säkerhets & Compliance Center innan du kan göra det i den här artikeln:
+  - För att lägga till, ändra och ta bort regler för utgående skräp post måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** .
+  - Om du vill ha skrivskyddad åtkomst till skräp post principer måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** .
 
-  - För att lägga till, ändra och ta bort principer för utgående skräp post måste du vara medlem i någon av följande roll grupper:
+  Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
-    - **Organisationshantering** eller **Säkerhetsadministratör** i [Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
-    - **Organisationshantering** eller **Hygienhantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Anmärkningar**:
 
-  - För skrivskyddad åtkomst till principer för utgående skräp post måste du vara medlem i någon av följande roll grupper:
-
-    - **Säkerhetsläsare** i [Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
-    - **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - Om du lägger till användare i motsvarande Azure Active Directory-roll i Microsoft 365 Admin Center får användarna den behörighet som krävs för säkerhets & efterlevnad Center _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Roll gruppen **organisations hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
 - De rekommenderade inställningarna för utgående skräp post finns i [EOP utgående filter princip inställningar för skräp post](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings).
 
-- Standard [aviserings principerna](../../compliance/alert-policies.md) med **begränsning för e-postutskick har överskridits** , **misstänkt e-post som skickar mönster** och **användare hindras från att skicka e-post** till medlemmar i gruppen **TenantAdmins** ( **globala administratörer** ) om ovanliga utgående e-postaktiviteter och blockerade användare på grund av utgående skräp post. Mer information finns i [Verifiera aviserings inställningarna för användare med begränsad åtkomst](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). Vi rekommenderar att du använder dessa aviserings principer i stället för meddelande alternativen i principer för utgående skräp post.
+- Standard [aviserings principerna](../../compliance/alert-policies.md) med **begränsning för e-postutskick har överskridits**, **misstänkt e-post som skickar mönster** och **användare hindras från att skicka e-post** till medlemmar i gruppen **TenantAdmins** (**globala administratörer**) om ovanliga utgående e-postaktiviteter och blockerade användare på grund av utgående skräp post. Mer information finns i [Verifiera aviserings inställningarna för användare med begränsad åtkomst](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). Vi rekommenderar att du använder dessa aviserings principer i stället för meddelande alternativen i principer för utgående skräp post.
 
 ## <a name="use-the-security--compliance-center-to-create-outbound-spam-policies"></a>Använda säkerhets & Compliance Center för att skapa principer för utgående skräp post
 
 Om du skapar en anpassad princip för utgående e-post i säkerhets & Compliance Center skapas skräp post filter regeln och den associerade skräp post filter principen samtidigt med samma namn för båda.
 
-1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd** .
+1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd**.
 
-2. På sidan **Inställningar för skräp post** klickar du på **skapa en utgående princip** .
+2. På sidan **Inställningar för skräp post** klickar du på **skapa en utgående princip**.
 
 3. I **principen utgående skräp post filter** lägger du till följande inställningar:
 
-   - **Namn** : Ange ett unikt, beskrivande namn på principen.
+   - **Namn**: Ange ett unikt, beskrivande namn på principen.
 
-   - **Beskrivning** : Ange en valfri beskrivning av principen.
+   - **Beskrivning**: Ange en valfri beskrivning av principen.
 
 4. Skriver Expandera avsnittet **meddelanden** för att konfigurera ytterligare användare som ska få kopior och meddelanden om misstänkta utgående e-postmeddelanden:
 
-   - **Skicka en kopia av misstänkta utgående e-postmeddelanden till vissa personer** : den här inställningen lägger till angivna användare som hemlig kopia för de misstänkta utgående meddelandena.
+   - **Skicka en kopia av misstänkta utgående e-postmeddelanden till vissa personer**: den här inställningen lägger till angivna användare som hemlig kopia för de misstänkta utgående meddelandena.
 
      > [!NOTE]
      > Den här inställningen fungerar bara i standard principen för utgående e-post. Den fungerar inte i anpassade principer för utgående e-post som du skapar.
@@ -108,7 +107,7 @@ Om du skapar en anpassad princip för utgående e-post i säkerhets & Compliance
 
      1. Markera kryss rutan om du vill aktivera inställningen.
 
-     1. Klicka på **Lägg till personer** . I **Lägg till eller ta bort** utfällda mottagare visas:
+     1. Klicka på **Lägg till personer**. I **Lägg till eller ta bort** utfällda mottagare visas:
 
      1. Ange avsändarens e-postadress. Du kan ange flera e-postadresser avgränsade med semikolon (;) eller en mottagare per rad.
 
@@ -122,13 +121,13 @@ Om du skapar en anpassad princip för utgående e-post i säkerhets & Compliance
 
         Om du vill inaktivera den här inställningen avmarkerar du kryss rutan.
 
-   - **Meddela specifika personer om en avsändare blockeras på grund av inkommande skräp post** :
+   - **Meddela specifika personer om en avsändare blockeras på grund av inkommande skräp post**:
 
      > [!IMPORTANT]
      >
      > - Den här inställningen används för att utgå från principer för utgående skräp post.
      >
-     > - Standard [aviserings principen](../../compliance/alert-policies.md) med **användare som är begränsad från att skicka e-post skickar inte** e-postmeddelanden till medlemmar i gruppen **TenantAdmins** ( **globala administratörer** ) när användare blockeras på grund av begränsningarna i området för **mottagar gränser** . **Vi rekommenderar starkt att du använder notifieringsregeln i stället för den här inställningen i principen för utgående skräp post för att meddela administratörer och andra användare** . Anvisningar finns i [Verifiera aviserings inställningarna för användare med begränsad](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)åtkomst.
+     > - Standard [aviserings principen](../../compliance/alert-policies.md) med **användare som är begränsad från att skicka e-post skickar inte** e-postmeddelanden till medlemmar i gruppen **TenantAdmins** (**globala administratörer**) när användare blockeras på grund av begränsningarna i området för **mottagar gränser** . **Vi rekommenderar starkt att du använder notifieringsregeln i stället för den här inställningen i principen för utgående skräp post för att meddela administratörer och andra användare**. Anvisningar finns i [Verifiera aviserings inställningarna för användare med begränsad](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)åtkomst.
 
 5. Skriver Expandera avsnittet **mottagar gränser** för att konfigurera begränsningar och åtgärder för misstänkta utgående e-postmeddelanden:
 
@@ -139,15 +138,15 @@ Om du skapar en anpassad princip för utgående e-post i säkerhets & Compliance
 
      Ett giltigt värde är 0 till 10000. Standardvärdet är 0, vilket innebär att tjänstens standardinställningar används. Mer information finns i avsnittet om att [Skicka gränser](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1).
 
-     - **Extern Tim gräns** : maximalt antal externa mottagare per timme.
+     - **Extern Tim gräns**: maximalt antal externa mottagare per timme.
 
-     - **Intern gräns för varje timme** : det högsta antalet interna mottagare per timme.
+     - **Intern gräns för varje timme**: det högsta antalet interna mottagare per timme.
 
-     - **Daglig gräns** : det högsta antalet mottagare per dag.
+     - **Daglig gräns**: det högsta antalet mottagare per dag.
 
-   - **Åtgärd när en användare överskrider ovanstående gränser** : Konfigurera den åtgärd som ska vidtas när någon av de **mottagande gränserna** överskrids. För alla åtgärder är mottagarna angivna i **användarens begränsade från att skicka e-** postaviserings princip (och i det **här meddelandet om att en avsändare har blockerats på grund av att den utgående skräp posten** avinstalleras.
+   - **Åtgärd när en användare överskrider ovanstående gränser**: Konfigurera den åtgärd som ska vidtas när någon av de **mottagande gränserna** överskrids. För alla åtgärder är mottagarna angivna i **användarens begränsade från att skicka e-** postaviserings princip (och i det **här meddelandet om att en avsändare har blockerats på grund av att den utgående skräp posten** avinstalleras.
 
-     - **Hindra användaren från att skicka e-post till följande dag** : Detta är standardvärdet. E-postaviseringar skickas och användaren kan inte skicka fler meddelanden förrän följande dag, baserat på UTC-tid. Det finns inget sätt för administratören att åsidosätta det här blocket.
+     - **Hindra användaren från att skicka e-post till följande dag**: Detta är standardvärdet. E-postaviseringar skickas och användaren kan inte skicka fler meddelanden förrän följande dag, baserat på UTC-tid. Det finns inget sätt för administratören att åsidosätta det här blocket.
 
        - Aktivitets aviseringen som heter **användare begränsad från att skicka e-post till** administratörer (via e-post och på sidan **Visa aviseringar** ).
 
@@ -155,9 +154,9 @@ Om du skapar en anpassad princip för utgående e-post i säkerhets & Compliance
 
        - Användaren kan inte skicka fler meddelanden förrän följande dag, baserat på UTC-tid. Det finns inget sätt för administratören att åsidosätta det här blocket.
 
-     - **Hindra användaren från att skicka e-post** : e-postaviseringar skickas, användaren läggs till i gruppen **[ <https://sip.protection.office.com/restrictedusers> begränsade användare]** i säkerhets & Compliance Center och användaren kan inte skicka e-post förrän de tas bort från portalen för **begränsade användare** av en administratör. När en administratör tar bort användaren från listan kommer användaren inte att begränsas till den dagen. Anvisningar finns i [ta bort en användare från portalen med begränsade användare när du skickar skräp post](removing-user-from-restricted-users-portal-after-spam.md).
+     - **Hindra användaren från att skicka e-post**: e-postaviseringar skickas, användaren läggs till i gruppen **[ <https://sip.protection.office.com/restrictedusers> begränsade användare]** i säkerhets & Compliance Center och användaren kan inte skicka e-post förrän de tas bort från portalen för **begränsade användare** av en administratör. När en administratör tar bort användaren från listan kommer användaren inte att begränsas till den dagen. Anvisningar finns i [ta bort en användare från portalen med begränsade användare när du skickar skräp post](removing-user-from-restricted-users-portal-after-spam.md).
 
-     - **Ingen åtgärd, endast meddelande** : e-postaviseringar skickas.
+     - **Ingen åtgärd, endast meddelande**: e-postaviseringar skickas.
 
 6. Skriver Expandera avsnittet **Automatic Forwarding** för att styra automatisk vidarebefordran av e-post till externa avsändare. Mer information om automatisk vidarebefordran finns i [Konfigurera e-postvidarekoppling](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding).
 
@@ -171,49 +170,49 @@ Om du skapar en anpassad princip för utgående e-post i säkerhets & Compliance
 
    De tillgängliga värdena är:
 
-   - **Automatisk Systemstyrd** : tillåter utgående skräp post filtrering för automatisk överföring av externa e-postmeddelanden. Det här är standardvärdet.
-   - **Den** : automatisk överföring av externa e-post är inte inaktive rad av principen.
+   - **Automatisk Systemstyrd**: tillåter utgående skräp post filtrering för automatisk överföring av externa e-postmeddelanden. Det här är standardvärdet.
+   - **Den**: automatisk överföring av externa e-post är inte inaktive rad av principen.
    - **Av** den här principen är inaktive rad för automatisk vidarebefordring av externa e-postmeddelanden.
  
 7. Kunna Expandera avsnittet **används** för att identifiera de interna avsändare som principen gäller för.
 
-    Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<sender1\>_ eller _\<sender2\>_ ). Olika villkor och undantag använder OCH-logik (till exempel _\<sender1\>_ och _\<member of group 1\>_ ).
+    Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<sender1\>_ eller _\<sender2\>_). Olika villkor och undantag använder OCH-logik (till exempel _\<sender1\>_ och _\<member of group 1\>_).
 
     Det är enklast att klicka på **Lägg till ett villkor** tre gånger för att visa alla tillgängliga villkor. Om du vill ta bort villkor som du inte vill konfigurera kan du klicka på ![knappen Ta bort](../../media/scc-remove-icon.png).
 
-    - **Avsändarens domän är** : anger avsändare i en eller flera av de konfigurerade godkända domänerna i organisationen. Klicka i rutan **Lägg till en tagg** om du vill visa och välja en domän. Klicka igen i rutan **Lägg till en tagg** och välj fler domäner om fler än en domän är tillgänglig.
+    - **Avsändarens domän är**: anger avsändare i en eller flera av de konfigurerade godkända domänerna i organisationen. Klicka i rutan **Lägg till en tagg** om du vill visa och välja en domän. Klicka igen i rutan **Lägg till en tagg** och välj fler domäner om fler än en domän är tillgänglig.
 
-    - **Avsändare är** : anger en eller flera användare i organisationen. Klicka i rutan **Lägg till en tagg** och börja skriva för att filtrera listan. Klicka på rutan **Lägg till en tagg** för att välja fler avsändare.
+    - **Avsändare är**: anger en eller flera användare i organisationen. Klicka i rutan **Lägg till en tagg** och börja skriva för att filtrera listan. Klicka på rutan **Lägg till en tagg** för att välja fler avsändare.
 
-    - **Avsändaren är medlem i** : anger en eller flera grupper i din organisation. Klicka i rutan **Lägg till en tagg** och börja skriva för att filtrera listan. Klicka på rutan **Lägg till en tagg** för att välja fler avsändare.
+    - **Avsändaren är medlem i**: anger en eller flera grupper i din organisation. Klicka i rutan **Lägg till en tagg** och börja skriva för att filtrera listan. Klicka på rutan **Lägg till en tagg** för att välja fler avsändare.
 
-    - **Förutom om** : Om du vill lägga till undantag för regeln klickar du på **Lägg till ett villkor** tre gånger, så visas alla tillgängliga undantag. Inställningarna och beteendet är likadana som villkoren.
+    - **Förutom om**: Om du vill lägga till undantag för regeln klickar du på **Lägg till ett villkor** tre gånger, så visas alla tillgängliga undantag. Inställningarna och beteendet är likadana som villkoren.
 
 8. Klicka på **Spara** när du är klar.
 
 ## <a name="use-the-security--compliance-center-to-view-outbound-spam-policies"></a>Använd säkerhets & Compliance Center för att visa principer för utgående skräp post
 
-1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd** .
+1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd**.
 
 2. På sidan **Inställningar för skräp post** klickar du på ![ ikonen Expandera ](../../media/scc-expand-icon.png) för att expandera en princip för utgående skräp post:
 
-   - Standard principen med namnet **utgående skräp post filter princip** .
+   - Standard principen med namnet **utgående skräp post filter princip**.
 
-   - En anpassad princip som du skapade där värdet i kolumnen **Type** är anpassat för **utgående skräp post** .
+   - En anpassad princip som du skapade där värdet i kolumnen **Type** är anpassat för **utgående skräp post**.
 
-3. Princip inställningarna visas i den utökade princip informationen som visas, eller så kan du klicka på **Redigera princip** .
+3. Princip inställningarna visas i den utökade princip informationen som visas, eller så kan du klicka på **Redigera princip**.
 
 ## <a name="use-the-security--compliance-center-to-modify-outbound-spam-policies"></a>Använda inställningarna för säkerhets & efterlevnad för att ändra principer för utgående skräp post
 
-1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd** .
+1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd**.
 
 2. På sidan **Inställningar för skräp post** klickar du på ![ ikonen Expandera ](../../media/scc-expand-icon.png) för att expandera en princip för utgående skräp post:
 
-   - Standard principen med namnet **utgående skräp post filter princip** .
+   - Standard principen med namnet **utgående skräp post filter princip**.
 
-   - En anpassad princip som du skapade där värdet i kolumnen **Type** är anpassat för **utgående skräp post** .
+   - En anpassad princip som du skapade där värdet i kolumnen **Type** är anpassat för **utgående skräp post**.
 
-3. Klicka på **Redigera princip** .
+3. Klicka på **Redigera princip**.
 
 För anpassade principer för utgående e-post är de tillgängliga inställningarna i utfällning som visas identiska med de som beskrivs i avsnittet [använda säkerhets & efterlevnad för att skapa regler för utgående skräp post](#use-the-security--compliance-center-to-create-outbound-spam-policies) .
 
@@ -223,9 +222,9 @@ Läs mer i följande avsnitt om du vill aktivera eller inaktivera en princip, an
 
 ### <a name="enable-or-disable-outbound-spam-policies"></a>Aktivera och inaktivera principer för utgående skräp post
 
-1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd** .
+1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd**.
 
-2. På sidan **Inställningar för skräp post** klickar du på ![ ikonen Expandera ](../../media/scc-expand-icon.png) för att expandera en anpassad princip som du har skapat (värdet i kolumnen **Type** är **anpassad princip för utgående skräp post** ).
+2. På sidan **Inställningar för skräp post** klickar du på ![ ikonen Expandera ](../../media/scc-expand-icon.png) för att expandera en anpassad princip som du har skapat (värdet i kolumnen **Type** är **anpassad princip för utgående skräp post**).
 
 3. Kontrollera värdet i kolumnen **På** i den utökade principinformationen som visas.
 
@@ -243,25 +242,25 @@ Anpassade principer för utgående skräp post visas i den ordning de behandlas 
 
 Du ändrar prioriteten för en princip genom att flytta principen uppåt eller nedåt i listan (du kan inte ändra **prioritetsnumret** direkt i Säkerhets- och efterlevnadscenter).
 
-1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd** .
+1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd**.
 
-2. Leta reda på de principer där värdet i kolumnen **typ** är **anpassat för utgående skräp post** på sidan **Inställningar för skräp post** . Kontrollera värdena i kolumnen **Prioritet** :
+2. Leta reda på de principer där värdet i kolumnen **typ** är **anpassat för utgående skräp post** på sidan **Inställningar för skräp post** . Kontrollera värdena i kolumnen **Prioritet**:
 
-   - Den anpassade principen för utgående skräp post med den högsta prioriteten har ikonen för värde ![ nedpilen ](../../media/ITPro-EAC-DownArrowIcon.png) **0** .
+   - Den anpassade principen för utgående skräp post med den högsta prioriteten har ikonen för värde ![ nedpilen ](../../media/ITPro-EAC-DownArrowIcon.png) **0**.
 
-   - Den anpassade principen för utgående skräp post med lägst prioritet har ![ ikonen för värde uppåt ](../../media/ITPro-EAC-UpArrowIcon.png) **n** (till exempel uppåtpil ![ ](../../media/ITPro-EAC-UpArrowIcon.png) **3** ).
+   - Den anpassade principen för utgående skräp post med lägst prioritet har ![ ikonen för värde uppåt ](../../media/ITPro-EAC-UpArrowIcon.png) **n** (till exempel uppåtpil ![ ](../../media/ITPro-EAC-UpArrowIcon.png) **3**).
 
-   - Om du har tre eller fler anpassade principer för utgående e-post har principerna mellan den högsta och lägsta prioriteten ikonen för att hålla ned en nedåtpil (till exempel ikonen nedåtpil ![ ](../../media/ITPro-EAC-UpArrowIcon.png)![ ](../../media/ITPro-EAC-DownArrowIcon.png) **n** ![ ](../../media/ITPro-EAC-UpArrowIcon.png)![ ](../../media/ITPro-EAC-DownArrowIcon.png) **2** ).
+   - Om du har tre eller fler anpassade principer för utgående e-post har principerna mellan den högsta och lägsta prioriteten ikonen för att hålla ned en nedåtpil (till exempel ikonen nedåtpil ![ ](../../media/ITPro-EAC-UpArrowIcon.png)![ ](../../media/ITPro-EAC-DownArrowIcon.png) **n** ![ ](../../media/ITPro-EAC-UpArrowIcon.png)![ ](../../media/ITPro-EAC-DownArrowIcon.png) **2**).
 
 3. Klicka på ![ikonen Uppåtpil](../../media/ITPro-EAC-UpArrowIcon.png) eller ![ikonen Nedåtpil](../../media/ITPro-EAC-DownArrowIcon.png) för att flytta den anpassade principen för utgående skräp post uppåt eller nedåt i prioritets listan.
 
 ## <a name="use-the-security--compliance-center-to-remove-outbound-spam-policies"></a>Använda tjänsten säkerhets & efterlevnad för att ta bort principer för utgående skräp post
 
-1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd** .
+1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd**.
 
-2. På sidan **Inställningar för skräp post** klickar du på ![ ikonen Expandera ](../../media/scc-expand-icon.png) för att expandera den anpassade princip som du vill ta bort (kolumnen **Type** är **anpassad princip för utgående skräp post** ).
+2. På sidan **Inställningar för skräp post** klickar du på ![ ikonen Expandera ](../../media/scc-expand-icon.png) för att expandera den anpassade princip som du vill ta bort (kolumnen **Type** är **anpassad princip för utgående skräp post**).
 
-3. I den utökade principinformationen som visas klickar du på **Ta bort princip** .
+3. I den utökade principinformationen som visas klickar du på **Ta bort princip**.
 
 4. Klicka på **Ja** i varningsrutan som visas.
 
@@ -284,14 +283,14 @@ Det är en process i två steg:
 1. Skapa filtret för utgående skräp post.
 2. Skapa filter regeln för utgående e-post som anger vilken regel för utgående skräp post som regeln gäller för.
 
- **Anmärkningar** :
+ **Anmärkningar**:
 
 - Du kan skapa en ny regel för utgående skräp post filter och koppla en befintlig, otilldelad filter princip för utgående e-post till den. En regel för utgående skräp post kan inte kopplas till fler än en utgående filter policy för skräp post.
 
 - Du kan konfigurera följande inställningar på nya utgående filter principer för skräp post i PowerShell som inte är tillgängliga i säkerhets & Compliance Center förrän efter att du har skapat principen:
 
-  - Skapa den nya principen som inaktive rad ( _aktive rad_ `$false` på **New-HostedOutboundSpamFilterRule-** cmdleten).
-  - Ange prioriteten för principen när den skapas ( _prioritet_ _\<Number\>_ ) på den **nya HostedOutboundSpamFilterRule-** cmdleten.
+  - Skapa den nya principen som inaktive rad (_aktive rad_ `$false` på **New-HostedOutboundSpamFilterRule-** cmdleten).
+  - Ange prioriteten för principen när den skapas (_prioritet_ _\<Number\>_ ) på den **nya HostedOutboundSpamFilterRule-** cmdleten.
 
 - En ny regel för utgående skräp post som du skapar i PowerShell visas inte i säkerhets & Compliance Center förrän du tilldelar principen till en skräp post filter.
 
@@ -468,7 +467,7 @@ Set-HostedOutboundSpamFilterRule -Identity "Marketing Department" -Priority 2
 >
 > - Om du vill ange prioriteten för en ny regel när du skapar den kan du använda _prioritets_ parametern i **New-HostedOutboundSpamFilterRule** cmdlet i stället.
 >
-> - Standard policyn för skräp post filter har ingen motsvarande filter regel för skräp post, och den har alltid det värde som är **lägst** .
+> - Standard policyn för skräp post filter har ingen motsvarande filter regel för skräp post, och den har alltid det värde som är **lägst**.
 
 ### <a name="use-powershell-to-remove-outbound-spam-filter-policies"></a>Använda PowerShell för att ta bort principer för skräp post filter
 

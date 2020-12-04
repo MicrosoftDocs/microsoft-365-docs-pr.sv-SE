@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur inblicken med förfalsknings information fungerar. De kan snabbt avgöra vilka avsändare som skickar e-post till sina organisationer från domäner som inte klarar e-postauktorisering (SPF, DKIM eller DMARC).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 89a31c6df7c9b6e02f52ea414ceb6334427feab1
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 6f5ebd0fd42d17354eeb1e03c946ac5446c3667c
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920484"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572747"
 ---
 # <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>Genom gång-inblick i Microsoft Defender för Office 365
 
@@ -44,12 +44,13 @@ Den här genom gången är en av flera för säkerhets & Compliance Center. Info
 
   Du kan visa inblick från fler än en instrument panel i säkerhets & Compliance Center. Oavsett vilken instrument panel du tittar på, ger inblicken samma uppgifter och gör att du snabbt kan utföra samma uppgifter.
 
-- Du måste tilldelas behörigheter innan du kan utföra procedurerna i det här avsnittet. Om du vill använda falsk IT-insikt måste du vara medlem i någon av följande roll grupper:
+- Du måste tilldelas behörigheter i säkerhets & Compliance Center innan du kan göra det i den här artikeln:
+  - **Organisationshantering**
+  - **Säkerhets administratör**
+  - **Säkerhets läsare**
+  - **Global läsare**
 
-  - **Organisationshantering** eller **Säkerhetsadministratör** i [Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
-  - **Organisationshantering** eller **Hygienhantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
-  - **Säkerhetsläsare** i [Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
-  - **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Obs!** när du lägger till användare i motsvarande Azure Active Directory-roll i Microsoft 365 Admin Center får användarna den behörighet som krävs för säkerhets & efterlevnad Center _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 - Du aktiverar och inaktiverar förfalsknings intelligens i policy mot nätfiske i Microsoft Defender för Office 365. Mer information finns i [Konfigurera anti-nätfiske-principer i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md).
 
@@ -61,8 +62,8 @@ Den här genom gången är en av flera för säkerhets & Compliance Center. Info
 
 2. Leta efter något av följande i raden **insikter** :
 
-   - **Förfalsknings intelligens är aktiverat** : inblicken heter **falska domäner som inte kunde verifieras av de senaste 30 dagarna**. Det här är standardinställningen.
-   - **Förfalsknings intelligens är inaktiverat** : inblicken i namngivna **Aktivera förfalsknings skydd** och när du klickar på den kan du aktivera förfalsknings intelligens.
+   - **Förfalsknings intelligens är aktiverat**: inblicken heter **falska domäner som inte kunde verifieras av de senaste 30 dagarna**. Det här är standardinställningen.
+   - **Förfalsknings intelligens är inaktiverat**: inblicken i namngivna **Aktivera förfalsknings skydd** och när du klickar på den kan du aktivera förfalsknings intelligens.
 
 3. Inblicken på instrument panelen visar information så här:
 
@@ -70,9 +71,9 @@ Den här genom gången är en av flera för säkerhets & Compliance Center. Info
 
    Denna inblick har två lägen:
 
-   - **Insight-läge** : om förfalsknings intelligens är aktiverat visar insikt dig hur många meddelanden som har påverkats av våra förfalsknings funktioner under de senaste 30 dagarna.
+   - **Insight-läge**: om förfalsknings intelligens är aktiverat visar insikt dig hur många meddelanden som har påverkats av våra förfalsknings funktioner under de senaste 30 dagarna.
 
-   - **Vad händer om-läge** : om förfalsknings intelligens är inaktiverat visar insikten dig hur *många meddelanden som* har påverkats av våra förfalsknings uppgifter under de senaste 30 dagarna.
+   - **Vad händer om-läge**: om förfalsknings intelligens är inaktiverat visar insikten dig hur *många meddelanden som* har påverkats av våra förfalsknings uppgifter under de senaste 30 dagarna.
 
    Oavsett vilket är de falska domänerna som visas i inblicken indelade i två kategorier: **misstänkta domän par** och **icke misstänkt domän par**. Dessa kategorier är indelade i tre olika buckets för att du ska kunna granska.
 
@@ -84,11 +85,11 @@ Den här genom gången är en av flera för säkerhets & Compliance Center. Info
 
    **Misstänkta domän par** är:
 
-   - **Falska användare med hög exakthet** : baserat på de historiska sändnings-och ryktes poängen för domänerna, är det mycket säkert att domänerna är falska och att meddelanden från dessa domäner är mer troligt att de är skadliga.
+   - **Falska användare med hög exakthet**: baserat på de historiska sändnings-och ryktes poängen för domänerna, är det mycket säkert att domänerna är falska och att meddelanden från dessa domäner är mer troligt att de är skadliga.
 
    - **Falska säkerhets** problem: baserat på historiska sändnings mönster och ryktes poängen för domänerna, är det ganska säkert att domänerna är falska och att meddelanden som skickas från dessa domäner är giltiga. Falsk positiv identitet är mer sannolik i den här kategorin än högkonfidens.
 
-   - **Icke misstänkt domän par** (inklusive **räddad förfalskning** ): domänen misslyckades explicit kontroller för e-postauktorisering [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)och [DMARC](use-dmarc-to-validate-email.md)). Domänen godkände emellertid vår implicita kontroll för e-postverifikationer ([sammansatt verifikation](email-validation-and-authentication.md#composite-authentication)). Därför har ingen åtgärd mot förfalskning gjorts för meddelandet.
+   - **Icke misstänkt domän par** (inklusive **räddad förfalskning**): domänen misslyckades explicit kontroller för e-postauktorisering [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)och [DMARC](use-dmarc-to-validate-email.md)). Domänen godkände emellertid vår implicita kontroll för e-postverifikationer ([sammansatt verifikation](email-validation-and-authentication.md#composite-authentication)). Därför har ingen åtgärd mot förfalskning gjorts för meddelandet.
 
 ### <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>Visa detaljerad information om misstänkta domän par från inblicken för falska uppgifter
 
@@ -119,7 +120,7 @@ Om du bara tillåter ett domän par kan kombinationen av den nekade domänen *oc
 
 Du tillåter till exempel följande domän par för att skicka falska meddelanden till din organisation:
 
-- *Falsk domän* : Gmail.com "
+- *Falsk domän*: Gmail.com "
 - *Skickar infrastruktur* `tms.mx.com` :
 
 Endast e-post från det domän paret kommer att tillåtas för falska identiteter. Andra avsändare som försöker falska gmail.com är inte tillåtna. Meddelanden i andra domäner från tms.mx.com kontrol leras av förfalsknings intelligens.
