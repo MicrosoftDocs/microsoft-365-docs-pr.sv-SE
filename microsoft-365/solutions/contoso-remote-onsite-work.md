@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå hur Contoso Corporation svarade på COVID-19 Pandemic och har utvecklat sina program varu installationer och uppdatera infrastrukturen för fjärrsamtal.
-ms.openlocfilehash: 8e25b399d7acd2cb3486283623d29315eac9491e
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: d04b4efcdd4dd04315ad37311cdd2cfbc2e64e88
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371775"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580679"
 ---
 # <a name="contosos-covid-19-response-and-support-for-remote-and-onsite-work"></a>Contosos COVID – 19 svar och support för fjärrsamtal-och-på-plats-arbete
 
@@ -44,8 +44,8 @@ En fjärran sluten anställd med den installerade VPN-klienten använder DNS fö
 Efter det att de ursprungliga ändringarna har gjorts till stöd som var och en av de flesta fjärranställdaer under regionala låsningar, har contoso gjorda infrastruktur ändringar som stöd för fjärranslutna och på-på-på-plats
 
 - Alltid fjärr.
-- Alltid lokal.
-- En kombination av fjär och lokal.
+- Alltid på plats.
+- En kombination av på-och-plats.
 
 Microsoft 365-funktioner för identitet, säkerhet och efterlevnad är avsedda för noll och fungerar oberoende av användarens och enhetens plats. Mer information finns i avsnittet [noll](https://www.microsoft.com/security/business/zero-trust).
 

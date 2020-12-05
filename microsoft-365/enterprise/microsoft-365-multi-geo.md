@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: I den här artikeln lär du dig hur du expanderar din Microsoft 365-närvaro till flera geografiska regioner med Microsoft 365 multi-geo.
-ms.openlocfilehash: 10f941549fd4899d5b3a14c97e6f301339702722
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: cf5f655e2b205001c6c16ed05abc33d68324ff15
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171332"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580703"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -52,7 +52,8 @@ Här är de viktigaste villkoren som används för att beskriva Microsoft 365 mu
 
 Microsoft 365 multi-geo är tillgängligt som ett tillägg till följande Microsoft 365-prenumerations abonnemang för kunder med minst 250 Microsoft 365-platser i sin klient organisation och minst 5% av dessa säten med multi-geo. Kontakta ditt Microsoft-konto för mer information.
 
-- Microsoft 365 F1, E1, E3 eller E5
+- Microsoft 365 F1, F3, E3 eller E5
+- Office 365 F3, E1, E3 eller E5
 - Exchange Online-abonnemang 1 eller abonnemang 2
 - OneDrive för företag, abonnemang 1 eller abonnemang 2
 - SharePoint Online-abonnemang 1 eller abonnemang 2

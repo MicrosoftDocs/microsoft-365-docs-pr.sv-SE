@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Grundläggande mobilitet och säkerhet är en del av Microsoft 365-abonnemangen.
-ms.openlocfilehash: 8724b3dccbdb5949190ceda4b804b9f1f2a5d4b2
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 75fef5bd70d7b8926d31b80f16952aa996bc625c
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561501"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580667"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Välj mellan grundläggande mobilitet och säkerhet eller Intune
 
@@ -33,7 +33,7 @@ ms.locfileid: "49561501"
  
 Både grundläggande mobilitet och säkerhet och Intune ingår i en mängd olika abonnemang, som beskrivs i följande tabell.
 
-| Planera | Grundläggande mobilitet och säkerhet | Microsoft Intune |
+| Planera | Grundläggande Mobility and Security | Microsoft Intune |
 |:-----|:-----|:-----|
 |Microsoft 365-applikationer|Ja|Nej|
 |Microsoft 365 Business Basic|Ja|Nej|
@@ -64,13 +64,12 @@ Microsoft Intune med inbyggd grundläggande rörlighet och säkerhet ger båda d
 >[!NOTE]
 >Du kan hantera användare och deras mobila enheter med både Intune och grundläggande mobilitet och säkerhet i samma Microsoft 365 Business Standard-organisation *genom att konfigurera grundläggande mobilitet och säkerhet först och sedan lägga till Microsoft Intune*. Med det här alternativet kan du välja grundläggande mobilitet och mer funktionalitet-rika Intune-lösning. Tilldela en Intune-licens för att aktivera Intune-funktioner.
 
-| Funktions område | Funktions markeringar | Grundläggande mobilitet och säkerhet | Microsoft Intune |
+| Funktions område | Funktions markeringar | Grundläggande Mobility and Security | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
 |Enhets typer|Hantera olika OS-plattformar och stora hanterings lägen. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>Mac OS, iPad OS|
 |Kompatibilitet med enheter|Ange och hantera säkerhets principer, som PIN-lås och jailbreak identifiering på enhets nivå. |Begränsningar för Android 9 och senare enheter. Visa [information](capabilities.md). |Ja|
 |Villkorlig åtkomst baserat på enhetens efterlevnad |Förhindra att icke-kompatibla enheter får åtkomst till företagets e-post och data från molnet. |Stöds inte i Windows 10.<br/>Begränsat för att kontrol lera åtkomsten till Exchange Online, SharePoint Online och Outlook. |Ja |
-|Enhetskonfiguration  |Konfigurera enhets inställningar (till exempel att inaktivera kameran)|Kompatibilitet med enheter|Ange och hantera säkerhets principer, som PIN-lås och jailbreak identifiering på enhets nivå. |Begränsningar för Android 9 och senare enheter. Visa [information](capabilities.md). |Ja|
- |Begränsad uppsättning inställningar. |Ja|
+|Enhetskonfiguration  |Konfigurera enhets inställningar (till exempel att inaktivera kameran)|Begränsad uppsättning inställningar.|Ja|Kompatibilitet med enheter|Ange och hantera säkerhets principer, som PIN-lås och jailbreak identifiering på enhets nivå. |Begränsningar för Android 9 och senare enheter. Visa [information](capabilities.md). |Ja|
 |E-postprofiler  |Tillhandahålla en intern e-postprofil på enheten. |Ja|Ja|
 |WiFi-profiler |Tillhandahålla en inbyggd WiFi-profil på enheten. |Nej|Ja|
 |VPN-profiler |Tillhandahålla en intern VPN-profil på enheten. |Nej|Ja|
