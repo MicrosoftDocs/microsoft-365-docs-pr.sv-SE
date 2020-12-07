@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan få information om hur de tar bort användare från portalen för åtkomstbegränsade användare i Office 365. Användare läggs till i portalen med åtkomstbegränsade användare för att de skickat utgående skräppost, oftast som ett resultat av kontointrång.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c63d50fcf24e19c6a3265d57ea34fb8ab852c61c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f464a2c02ae6b6290e79cc9aff7d3a37bc08a6ff
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201561"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572447"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Ta bort blockerade användare från portalen med åtkomstbegränsade användare i Office 365
 
@@ -43,19 +43,18 @@ Administratörer kan ta bort användare från portalen med åtkomstbegränsade a
 
 - Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Använd <https://protection.office.com/restrictedusers> för att gå direkt till sidan med **åtkomstbegränsade användare**.
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna för detta ämne:
+- Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
+  - Om du vill ta bort användare från Portalen för begränsade användare måste du vara medlem i rollgruppen **Organisationsledning** eller **Säkerhetsadministratörer**.
+  - För skrivskyddad behörighet till Portalen för begränsade användare måste du vara medlem i rollgruppen **Global läsare** eller **Säkerhetsläsare**.
 
-  - Om du vill ta bort användare från portalen för åtkomstbegränsade användare måste du vara medlem i en av följande rollgrupper:
+  Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
-    - **Organisationshantering** eller **Säkerhetsadministratör** i [Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
-    - **Organisationshantering** eller **Hygienhantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Anmärkningar**:
 
-  - För skrivskyddad behörighet till portalen för åtkomstbegränsade användare måste du vara medlem i en av följande rollgrupper:
-
-    - **Säkerhetsläsare** i [Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
-    - **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
 - En avsändare som överskrider gränsen för utgående e-post är ett bevis på ett komprometterat konto. Innan du tar bort användaren från portalen för åtkomstbegränsade användare måste du följa de nödvändiga stegen för att återfå kontroll över kontot. Mer information finns i [Svara på ett komprometterat e-postkonto i Office 365](responding-to-a-compromised-email-account.md).
 
@@ -93,7 +92,7 @@ Standardaviseringsprincipen med namnet **Användare med restriktioner för att s
 
      - **Skicka e-postmeddelanden**: kontrollera att kryssrutan är markerad (**På**).
 
-     - **E-postmottagare**: standardvärdet är **TenantAdmins** (d.v.s. **Globala administratör**medlemmar). Klicka i ett tomt område i rutan om du vill lägga till fler mottagare. En lista med mottagare visas, och du kan börja skriva ett namn för att filtrera och välja en mottagare. Du kan ta bort en befintlig mottagare från rutan genom att klicka på ![Ta bort ikon](../../media/scc-remove-icon.png) bredvid namnet.
+     - **E-postmottagare**: standardvärdet är **TenantAdmins** (d.v.s. **Globala administratör** medlemmar). Klicka i ett tomt område i rutan om du vill lägga till fler mottagare. En lista med mottagare visas, och du kan börja skriva ett namn för att filtrera och välja en mottagare. Du kan ta bort en befintlig mottagare från rutan genom att klicka på ![Ta bort ikon](../../media/scc-remove-icon.png) bredvid namnet.
 
      - **Daglig aviseringsgräns**: standardvärdet är **Ingen gräns**, men du kan välja en gräns för max antal aviseringar per dag.
 

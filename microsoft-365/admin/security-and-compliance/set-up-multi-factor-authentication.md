@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Lär dig hur du konfigurerar multifaktorautentisering för din organisation.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 1bbca8efe09655195605f0610f92c8f66486b940
-ms.sourcegitcommit: 09518b7c9146cda7fd42839ee644ad418d48491a
+ms.openlocfilehash: db858cbd4242a096261942fd12b911ecff43f71f
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001507"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558216"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Konfigurera multifaktorautentisering
 
@@ -54,7 +54,7 @@ Du aktiverar eller inaktiverar säkerhetsinställningar för Azure Active Direct
 
 1. Logga in som global administratör på [Administrationscenter för Microsoft 365](https://admin.microsoft.com).
 2. I det vänstra navigeringsfältet väljer du **Visa alla** och under **Administratörscenter** väljer du **Azure Active Directory**.
-3. I **Azure Active Directory administratörscenter** väljer du **Azure Active Directory** \> **Egenskaper**.
+3. I **Azure Active Directory administrationscenter** väljer du **Azure Active Directory** \> **Egenskaper**.
 4. Längst ner på sidan väljer du **Hantera standardinställningar för säkerhet**.
 5. Välj **Ja** för att aktivera standardinställningar för säkerhet eller **Nej** för att inaktivera dem och välj sedan **Spara**.
 
@@ -90,7 +90,7 @@ För de flesta prenumerationer aktiveras modern autentisering automatiskt, men o
 
 Om du tidigare har aktiverat MFA för enskilda användare måste du inaktivera det innan du aktiverar säkerhetsinställningar.
 
-1. I Administrationscenter för Microsoft 365, in det vänstra navigeringsfältet, väljer du **Användare** \> **Aktiva användare**.
+1. I Administrationscenter för Microsoft 365, i det vänstra navigeringsfältet, väljer du **Användare** \> **Aktiva användare**.
 1. På sidan **Aktiva användare** väljer du **Multifaktorautentisering**.
 1. På sidan multifaktorautentisering väljer du varje användare och konfigurerar deras multifaktorstatus till **Inaktiverad**.
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.custom: seo-marvel-apr2020
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Sammanfattning: Skapa offentliga, privata, känsliga och strikt konfidentiella SharePoint Online-gruppwebbplatser i utvecklings-/testmiljön för din politiska kampanj.'
-ms.openlocfilehash: 1ae147cef3f7c946946d10fe50a7c23bd9e61a2e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d6fe2067e51e47fed4bd90e1a1fa6c898034a6d7
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203161"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561207"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Skapa gruppwebbplatser i en utvecklings-/testmiljö för en politisk kampanj
 
@@ -46,9 +46,9 @@ I den här fasen skapar du etiketter för dokumentmapparna med olika säkerhetsn
     
 2. På fliken **Microsoft Office Home** klickar du på panelen **Administratör**.
     
-3. På den nya fliken **Administrationscenter för Microsoft 365** i webbläsaren klickar du på **Administrationscenter > Säkerhet &amp; efterlevnad**.
+3. På den nya fliken **Administrationscenter för Microsoft 365** i webbläsaren klickar du på **Administrationscenter > Säkerhet  efterlevnad**.
     
-4. Klicka på **Klassifikationer > Etiketter** på den nya fliken **Start – Säkerhet &amp; **efterlevnad.
+4. Från den nya fliken **Hem – Säkerhet och efterlevnad** i din webbläsare klickar du på **Klassificeringar > Etiketter**.
     
 5. I fönstret **Start > Etiketter** klickar du på **Skapa en etikett**.
     
@@ -218,9 +218,9 @@ Därefter konfigurerar du dokumentmappen för kampanjmarknadsföringens gruppweb
     
 Därefter konfigurerar du en princip för dataförlustskydd (DLP) som meddelar användarna när de delar ett dokument med etiketten Känslig på en SharePoint Online-gruppwebbplats utanför organisationen. DLP-principen används för resurser som finns på kampanjmarknadsföringens webbplats.
   
-1. På fliken **Microsoft Office Home** i webbläsaren klickar du på fliken **Säkerhet &amp;efterlevnad**.
+1. På fliken **Microsoft Office Home** i webbläsaren genom att klicka på **Säkerhet och efterlevnad**.
     
-2. Klicka på **Dataförlustskydd > Princip** på den nya fliken **Säkerhet &amp; efterlevnad** i webbläsaren.
+2. På den nya fliken **Säkerhet och efterlevnad** i din webbläsare klickar du på **dataförlustskydd > Policy**.
     
 3. I fönstret **Dataförlustskydd** klickar du på **+ Skapa en princip**.
     
@@ -328,9 +328,9 @@ Därefter konfigurerar du en DLP-princip som blockerar användare när de delar 
   
 1. Om det behövs kan du använda webbläsaren på din lokala dator och logga in på administrationscentret för ([https://admin.microsoft.com](https://admin.microsoft.com)) med ett konto som har rollen som säkerhetsadministratör eller företagsadministratör.
     
-2. På fliken **Microsoft Office Home** i webbläsaren klickar du på fliken **Säkerhet &amp;efterlevnad**.
+2. På fliken **Microsoft Office Home** i webbläsaren genom att klicka på **Säkerhet och efterlevnad**.
     
-3. Klicka på **Dataförlustskydd > Princip** på den nya fliken **Säkerhet &amp; efterlevnad** i webbläsaren.
+3. På den nya fliken **Säkerhet och efterlevnad** i din webbläsare klickar du på **dataförlustskydd > Policy**.
     
 4. I fönstret **Dataförlustskydd** klickar du på **+ Skapa en princip**.
     
