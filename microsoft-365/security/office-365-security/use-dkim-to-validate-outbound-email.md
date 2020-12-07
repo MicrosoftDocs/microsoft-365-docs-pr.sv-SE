@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du använder DomainKeys identifierad e-post (DKIM) med Microsoft 365 för att säkerställa att meddelanden som skickas från din anpassade domän är betrodda av mål-e-postsystemet.
-ms.openlocfilehash: 7f9e33a6f117f5da592d875e40cefc6a0072fd4a
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: 66f352b6c3a5d3b3beff3043a3f0d1a435d1e5d1
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126679"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49560890"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Använda DKIM för att validera utgående e-post som skickas från din anpassade domän
 
@@ -130,6 +130,9 @@ Om du vill konfigurera DKIM gör du så här:
 
 För varje domän som du vill lägga till en DKIM-signatur för måste du publicera två CNAME-poster.
 
+> [!NOTE]
+> Om du inte har läst hela artikeln kan du ha missat den här tidsbesparande PowerShell-anslutningsinformationen: [Anslut till Office 365-arbetsbelastningar via PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (Cmdleten kommer från Exchange Online.) 
+
 Kör följande kommandon för att skapa väljarposterna:
 
 ```powershell
@@ -187,8 +190,6 @@ TTL:                3600
 > [!NOTE]
 > Det är viktigt att skapa den andra posten, men bara en av dem kan vara tillgänglig när du skapar den. I själva verket kan den andra väljarens peka på en adress som inte har skapats än. Vi rekommenderar fortfarande att du skapar den andra CNAME-posten eftersom nyckelroteringen blir smidig.
 
-> [!CAUTION]
-> Automatisk nyckelrotering har tillfälligt inaktiverats eftersom vi implementerar några designändringar i hur vi skapar nycklar. Det är en bra idé att ha flera nycklar så att du kan rotera dem med jämna mellanrum. Även om det är svårt att knäcka är det fortfarande en praktisk strategi för att skydda mot sådan som imitation. Du kan följa dokumentet [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig) om du vill utföra det här för din organisation. Vi beräknar att automatisk rotering kommer att aktiveras igen i augusti 2020.
 
 ### <a name="enable-dkim-signing-for-your-custom-domain"></a>Aktivera DKIM-signering för din anpassade domän
 <a name="EnableDKIMinO365"> </a>
@@ -350,3 +351,7 @@ Till exempel skulle DKIM-posten se ut så här:
 <a name="DKIMNextSteps"> </a>
 
 Även om DKIM har utformats för att förhindra förfalskningar fungerar DKIM bättre med SPF och DMARC. När du har konfigurerat DKIM kan du konfigurera SPF om du inte redan har gjort det. En introduktion till SPF finns i [Konfigurera SPF i Microsoft 365 för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md), där du även kan konfigurera det snabbt. För att få en djupare förståelse av hur Microsoft 365 använder SPF, eller om du vill felsöka eller göra icke-standarddistributioner (t.ex. hybriddistributioner), kan du börja med att läsa artikeln om [hur Microsoft 365 använder SPF (Sender Policy Framework) för att förhindra förfalskning](how-office-365-uses-spf-to-prevent-spoofing.md). Därefter läser du [Använda DMARC för att validera e-post](use-dmarc-to-validate-email.md). [Meddelandehuvuden för antiskräppost](anti-spam-message-headers.md) innehåller syntaxen och rubrikerna som används i Microsoft 365 för DKIM-kontroller.
+
+## <a name="more-information"></a>Mer information
+
+Nyckelrotation via PowerShell [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig)

@@ -195,6 +195,8 @@
       items:
         - name: Hälsostatus för Microsoft 365-tjänsten
           href: microsoft-365-service-health.md
+        - name: Exchange Online-övervakning
+          href: microsoft-365-exchange-monitoring.md
         - name: Installationsguider
           href: setup-guides-for-microsoft-365.md
     - name: Flera klientorganisationer

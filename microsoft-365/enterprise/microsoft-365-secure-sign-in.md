@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: Kräva att dina användare loggar in säkert med multifaktorautentisering (MFA) och andra funktioner.
-ms.openlocfilehash: a3a63dfc06f5470c2151cd2ff140ad5dee19b0ce
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 8426d902ff8be8541b5d770af6d34cdf71868047
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446083"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558532"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Säkra användarinloggningar till din Microsoft 365-klient
 
@@ -52,7 +52,7 @@ MFA kräver att användarinloggningar underkastas en ytterligare verifiering ut�
 
 ![Rätt lösenord plus extra verifiering gör att inloggningen lyckas](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-Ditt första steg i att använda MFA är att ***kräva det för alla administratörskonton***, även kända som privilegierade konton.
+Ditt första steg i att använda MFA är att **kräva det för alla administratörskonton**, även kända som privilegierade konton.
 
 Utöver detta första steg rekommenderar Microsoft MFA för alla användare.
 
@@ -67,7 +67,7 @@ Det finns tre sätt att kräva att dina administratörer eller användare använ
 
 ### <a name="security-defaults"></a>Standardinställningar för säkerhet
 
-Standardinställningar för säkerhet är en ny funktion för Microsoft 365 och Office 365, betalade eller utvärderingsprenumerationer skapade efter den 21 oktober 2019. De här prenumerationerna har aktiverat standardinställningar för säkerhet som ***kräver att alla dina användare ska använda MFA med programmet Microsoft Authenticator-appen***.
+Standardinställningar för säkerhet är en ny funktion för Microsoft 365 och Office 365, betalade eller utvärderingsprenumerationer skapade efter den 21 oktober 2019. De här prenumerationer har säkerhetsinställningar aktiverade, vilket _*_kräver att alla dina användare använder MFA med Microsoft Authenticator-appen_*_.
  
 Användare har 14 dagar på sig att registrera sig för MFA med Microsoft Authenticator-appen från sina smartphones, som börjar från första gången de loggar in efter att standardinställningar för säkerhet har aktiverats. Efter 14 dagar kommer användaren inte att kunna logga in förrän MFA-registreringen är klar.
 
@@ -102,7 +102,7 @@ I den här tabellen visas resultatet av att aktivera MFA med standardinställnin
 
 | Metod | Aktiverad | Inaktiverad | Ytterligare autentiseringsmetod |
 |:-------|:-----|:-------|:-------|
-| **Standardinställningar för säkerhet**  | Det går inte att använda principer för villkorsstyrd åtkomst | Det går att använda principer för villkorsstyrd åtkomst | Microsoft Authenticator-appen |
+| _ *Standardinställningar för säkerhet**  | Det går inte att använda principer för villkorsstyrd åtkomst | Det går att använda principer för villkorsstyrd åtkomst | Microsoft Authenticator-appen |
 | **Principer för villkorsstyrd åtkomst** | Om några är aktiverade kan du inte aktivera standardinställningar för säkerhet | Om alla är inaktiverade kan du aktivera standardinställningar för säkerhet  | Användare anger under MFA-registrering  |
 ||||
 
