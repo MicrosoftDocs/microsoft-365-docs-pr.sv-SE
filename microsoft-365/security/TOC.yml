@@ -320,7 +320,7 @@
                   href: ./office-365-security/quarantine-email-messages.md
                 - name: Granskningsrapporter i fristående EOP
                   href: ./office-365-security/auditing-reports-in-eop.md
-            - name: Defender för Office 365
+            - name: Defender förr Office 365
               href: ./office-365-security/office-365-atp.md
             - name: Nyheter i Defender för Office 365
               href: office-365-security/whats-new-in-office-365-atp.md
@@ -527,7 +527,7 @@
               href: ./office-365-security/campaigns.md
             - name: Undersöka skadlig e-post
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
-            - name: Visa rapporter i Säkerhets- och efterlevnadscenter
+            - name: Visa Defender för Office 365-rapporter i säkerhets- och efterlevnadscentret
               href: ./office-365-security/view-reports-for-atp.md
             - name: Visa information och resultat från en automatisk undersökning
               href: ./office-365-security/air-view-investigation-results.md
