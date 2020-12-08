@@ -19,64 +19,22 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 8992efdd79295b6b56b8f033bd97b10f59a7a4d5
-ms.sourcegitcommit: bd36c88e731e3fee2a3a5cb3564fdc94f11bab94
+ms.openlocfilehash: f0aadbf2dbf8cb8d9815b4ef8b1c8d3d892c8b31
+ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769681"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588535"
 ---
-# <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a><span data-ttu-id="13fbc-104">Skapa och spåra ServiceNow biljetter i säkerhets Center för Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="13fbc-104">Create and track ServiceNow tickets in the Microsoft 365 security center</span></span>
+# <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a><span data-ttu-id="74388-104">Skapa och spåra ServiceNow biljetter i säkerhets Center för Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="74388-104">Create and track ServiceNow tickets in the Microsoft 365 security center</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 >[!CAUTION]
-><span data-ttu-id="13fbc-105">**Förhands gransknings perioden för ServiceNow-kopplingen slutar**</span><span class="sxs-lookup"><span data-stu-id="13fbc-105">**The preview period for the ServiceNow connector is ending**</span></span><br>
-><span data-ttu-id="13fbc-106">Denna funktion kommer inte längre att vara tillgänglig i slutet av november 2020.</span><span class="sxs-lookup"><span data-stu-id="13fbc-106">This capability will no longer available by the end of November 2020.</span></span> <span data-ttu-id="13fbc-107">Tack för din feedback och fortsatta support medan vi bestämmer nästa steg.</span><span class="sxs-lookup"><span data-stu-id="13fbc-107">Thank you for your feedback and continued support while we determine next steps.</span></span>
+><span data-ttu-id="74388-105">**För hands perioden för ServiceNow-kopplingen har avslut ATS**</span><span class="sxs-lookup"><span data-stu-id="74388-105">**The preview period for the ServiceNow connector has ended**</span></span><br>
+><span data-ttu-id="74388-106">Den här funktionen är inte längre tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="74388-106">This capability is no longer available.</span></span> <span data-ttu-id="74388-107">Tack för din feedback och fortsatta support medan vi bestämmer nästa steg.</span><span class="sxs-lookup"><span data-stu-id="74388-107">Thank you for your feedback and continued support while we determine next steps.</span></span>
 
-<span data-ttu-id="13fbc-108">[Säkerhets Center för Microsoft 365](overview-security-center.md) har förbättrats med möjligheten att skapa och spåra biljetter i ServiceNow.</span><span class="sxs-lookup"><span data-stu-id="13fbc-108">The [Microsoft 365 security center](overview-security-center.md) has been enhanced with the ability to natively create and track tickets in ServiceNow.</span></span> [<span data-ttu-id="13fbc-109">Lär dig mer om ServiceNow</span><span class="sxs-lookup"><span data-stu-id="13fbc-109">Learn more about ServiceNow</span></span>](https://www.servicenow.com/)
+<span data-ttu-id="74388-108">[Säkerhets Center för Microsoft 365](overview-security-center.md) har förbättrats med möjligheten att skapa och spåra biljetter i ServiceNow.</span><span class="sxs-lookup"><span data-stu-id="74388-108">The [Microsoft 365 security center](overview-security-center.md) has been enhanced with the ability to natively create and track tickets in ServiceNow.</span></span> [<span data-ttu-id="74388-109">Lär dig mer om ServiceNow</span><span class="sxs-lookup"><span data-stu-id="74388-109">Learn more about ServiceNow</span></span>](https://www.servicenow.com/)
 
-<span data-ttu-id="13fbc-110">I säkerhets Center kan säkerhets administratörer skicka en åtgärd för [säker Poäng](microsoft-secure-score.md) förbättring direkt till ServiceNow och skapa en biljett.</span><span class="sxs-lookup"><span data-stu-id="13fbc-110">In the security center, security administrators can send a [Microsoft Secure Score](microsoft-secure-score.md) improvement action directly to ServiceNow and create a ticket.</span></span> <span data-ttu-id="13fbc-111">Både hantering av problem och hantering av ändringar kan skapas.</span><span class="sxs-lookup"><span data-stu-id="13fbc-111">Both incident management and change management tickets can be created.</span></span> <span data-ttu-id="13fbc-112">Spåra biljetter i säkerhets centrets start sida och ServiceNow.</span><span class="sxs-lookup"><span data-stu-id="13fbc-112">Track tickets in the security center home page and ServiceNow.</span></span>
+<span data-ttu-id="74388-110">I säkerhets Center kan säkerhets administratörer skicka en åtgärd för [säker Poäng](microsoft-secure-score.md) förbättring direkt till ServiceNow och skapa en biljett.</span><span class="sxs-lookup"><span data-stu-id="74388-110">In the security center, security administrators can send a [Microsoft Secure Score](microsoft-secure-score.md) improvement action directly to ServiceNow and create a ticket.</span></span> <span data-ttu-id="74388-111">Både hantering av problem och hantering av ändringar kan skapas.</span><span class="sxs-lookup"><span data-stu-id="74388-111">Both incident management and change management tickets can be created.</span></span> <span data-ttu-id="74388-112">Spåra biljetter i säkerhets centrets start sida och ServiceNow.</span><span class="sxs-lookup"><span data-stu-id="74388-112">Track tickets in the security center home page and ServiceNow.</span></span>
 
-- [<span data-ttu-id="13fbc-113">**Läs mer om förutsättningar, data utbyte och fel sökning**</span><span class="sxs-lookup"><span data-stu-id="13fbc-113">**Learn about prerequisites, data exchange, and troubleshooting**</span></span>](tickets.md)
-- <span data-ttu-id="13fbc-114">**Hantera ServiceNow biljetter i överensstämmelse Center** (ej tillgängligt)</span><span class="sxs-lookup"><span data-stu-id="13fbc-114">**Manage ServiceNow tickets in the compliance center** (not available)</span></span>
-
-## <a name="connect-microsoft-365-security-center-to-servicenow"></a><span data-ttu-id="13fbc-115">Ansluta Microsoft 365 säkerhets Center till ServiceNow</span><span class="sxs-lookup"><span data-stu-id="13fbc-115">Connect Microsoft 365 security center to ServiceNow</span></span>
-
-<span data-ttu-id="13fbc-116">Gå till start sidan för Microsoft 365 säkerhets Center för att se ServiceNow-anslutnings kortet.</span><span class="sxs-lookup"><span data-stu-id="13fbc-116">Navigate to the Microsoft 365 security center home page to see the ServiceNow connection card.</span></span>
-
-![Använder du ServiceNow](../../media/do-you-use-servicenow-250.png)
-
-<span data-ttu-id="13fbc-118">Välj "Anslut till ServiceNow" för att gå till sidan för inställning av ServiceNow.</span><span class="sxs-lookup"><span data-stu-id="13fbc-118">Select "Connect to ServiceNow" to go to the ServiceNow setup page.</span></span> <span data-ttu-id="13fbc-119">Följ instruktionerna för att auktorisera Microsoft 365 Connector-appen.</span><span class="sxs-lookup"><span data-stu-id="13fbc-119">Follow the instructions to authorize the Microsoft 365 Connector app.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="13fbc-120">Innan du godkänner anslutningen mellan Microsoft 365 säkerhets Center och ServiceNow bör du kontrol lera att du använder den inloggning och det lösen ord som du skapade i installations stegen.</span><span class="sxs-lookup"><span data-stu-id="13fbc-120">Before you authorize the connection between Microsoft 365 security center and ServiceNow, make sure you use the integration user login and password you created in the installation steps.</span></span> <span data-ttu-id="13fbc-121">Använd inte dina personliga autentiseringsuppgifter.</span><span class="sxs-lookup"><span data-stu-id="13fbc-121">Do not use your personal credentials.</span></span>
-
-<span data-ttu-id="13fbc-122">När du har följt anvisningarna och godkänt anslutningen kan du Visa anslutnings statusen på sidan för Microsoft 365 Security Centre-anslutningen och i ServiceNow Microsoft 365 Ticking Connector.</span><span class="sxs-lookup"><span data-stu-id="13fbc-122">After you've followed the directions and authorized the connection, view the connection status in the Microsoft 365 security center connection page and in the ServiceNow Microsoft 365 Ticketing Connector App experience.</span></span> <span data-ttu-id="13fbc-123">Nu är du redo att börja skapa aktiviteter.</span><span class="sxs-lookup"><span data-stu-id="13fbc-123">Now you're all set to start creating tasks!</span></span>
-
-### <a name="troubleshooting"></a><span data-ttu-id="13fbc-124">Felsökning</span><span class="sxs-lookup"><span data-stu-id="13fbc-124">Troubleshooting</span></span>
-
-<span data-ttu-id="13fbc-125">Lär dig mer om vanliga fel som kan komma att visas i anslutnings processen och hur du minskar dem i [avsnittet fel sökning](tickets.md#troubleshooting).</span><span class="sxs-lookup"><span data-stu-id="13fbc-125">Learn common errors you may come across in the connection process, and how to mitigate them, in the [troubleshooting section](tickets.md#troubleshooting).</span></span>
-
-## <a name="create-a-task-and-share-it-to-servicenow"></a><span data-ttu-id="13fbc-126">Skapa en uppgift och dela den med ServiceNow</span><span class="sxs-lookup"><span data-stu-id="13fbc-126">Create a task and share it to ServiceNow</span></span>
-
-<span data-ttu-id="13fbc-127">När integrationen är aktive rad kan du skapa ServiceNow uppgifter baserat på specifika åtgärder för [säker Poäng](microsoft-secure-score.md) förbättring.</span><span class="sxs-lookup"><span data-stu-id="13fbc-127">Once the integration is set up, create ServiceNow tasks based on specific [Microsoft Secure Score](microsoft-secure-score.md) improvement actions.</span></span> <span data-ttu-id="13fbc-128">Gå till alla åtgärder för säker Poäng förbättring i säkerhets Center för Microsoft 365 och välj **dela** .</span><span class="sxs-lookup"><span data-stu-id="13fbc-128">Go to any Secure Score improvement action in the Microsoft 365 security center, and select **Share** .</span></span> <span data-ttu-id="13fbc-129">Ett av de nedrullningsbara alternativen är ServiceNow.</span><span class="sxs-lookup"><span data-stu-id="13fbc-129">One of the dropdown options is ServiceNow.</span></span>
-
-<span data-ttu-id="13fbc-130">En aktivitet skapas där du kan ange prioritet och redigera namn, beskrivning eller förfallo datum.</span><span class="sxs-lookup"><span data-stu-id="13fbc-130">A task is generated where you can set the priority and edit the name, description, or due date.</span></span> <span data-ttu-id="13fbc-131">När alla obligatoriska fält är ifyllda skickar du uppgiften till ServiceNow.</span><span class="sxs-lookup"><span data-stu-id="13fbc-131">Once all the required fields are filled in, send the task to ServiceNow.</span></span>
-
-<span data-ttu-id="13fbc-132">Aktiviteten visas i ServiceNow som en begäran om ändring av en Microsoft 365-säkerhet och-konfiguration.</span><span class="sxs-lookup"><span data-stu-id="13fbc-132">The task is visible in ServiceNow as a Microsoft 365 Security and Configuration Change Request.</span></span>
-
-## <a name="track-tickets"></a><span data-ttu-id="13fbc-133">Spåra biljetter</span><span class="sxs-lookup"><span data-stu-id="13fbc-133">Track tickets</span></span>
-
-<span data-ttu-id="13fbc-134">När ServiceNow för hantering av ändringar har skapats visas de på kort på Start sidan för Microsoft 365 säkerhets Center.</span><span class="sxs-lookup"><span data-stu-id="13fbc-134">Once ServiceNow change management and incident management tickets have been created, they're displayed on cards in the Microsoft 365 security center home page.</span></span> <span data-ttu-id="13fbc-135">Från dessa kort kan du skapa en biljett, Visa alla biljetter eller hantera ServiceNow-konfigurationen.</span><span class="sxs-lookup"><span data-stu-id="13fbc-135">From these cards, you can create a ticket, view all tickets, or manage the ServiceNow configuration.</span></span>
-
-![ServiceNow för ändrings hantering](../../media/change-management-375.png)  ![ServiceNow ärende hantering biljetter](../../media/incident-management-375.png)
-
-<span data-ttu-id="13fbc-138">Om du vill etablera eller hantera din ServiceNow-integrering i säkerhets Center för Microsoft 365 väljer du **Hantera ServiceNow-konfiguration** på något av korten.</span><span class="sxs-lookup"><span data-stu-id="13fbc-138">To reprovision or manage your ServiceNow integration in the Microsoft 365 security center, select **Manage ServiceNow configuration** on either of the cards.</span></span> <span data-ttu-id="13fbc-139">Därifrån kan du ta bort den aktuella ServiceNow-anslutningen och anpassa namn på biljett status.</span><span class="sxs-lookup"><span data-stu-id="13fbc-139">From there, remove the current ServiceNow connection and customize ticket state names.</span></span>
-
-<span data-ttu-id="13fbc-140">Med ServiceNow biljetter som visas i Microsoft 365 Security Center är dina uppgifter aktiva på en plats där de kan spåras och behandlas på andra säkerhets instrument paneler.</span><span class="sxs-lookup"><span data-stu-id="13fbc-140">With ServiceNow tickets visible in the Microsoft 365 security center, your tasks live in a place where they can be tracked and acted upon alongside your other security dashboard items.</span></span>
-
-## <a name="resources"></a><span data-ttu-id="13fbc-141">Resurser</span><span class="sxs-lookup"><span data-stu-id="13fbc-141">Resources</span></span>
-
-- [<span data-ttu-id="13fbc-142">Läs mer om förutsättningar, data utbyte och fel sökning</span><span class="sxs-lookup"><span data-stu-id="13fbc-142">Learn about prerequisites, data exchange, and troubleshooting</span></span>](tickets.md)
-- [<span data-ttu-id="13fbc-143">Microsoft Secure Score</span><span class="sxs-lookup"><span data-stu-id="13fbc-143">Microsoft Secure Score</span></span>](microsoft-secure-score.md)
