@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 294a3c6c54e28fa03ff6264898e7763325f78c3e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8412c10416a4a131129eebd20d1b4f01228afaf3
+ms.sourcegitcommit: 280200281aec862517876319a3fe4ce170674047
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847774"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "49586691"
 ---
 # <a name="privacy-and-personal-data"></a>Integritets-och person uppgifter
 
@@ -46,6 +46,10 @@ Microsoft Managed Desktop lagrar data i en eller flera av följande Microsoft-la
 - Azure-lagring
 
 Microsoft Managed Desktop lagrar data i USA. Person uppgifter behålls av Microsoft Managed Desktop i högst 30 dagar.
+
+### <a name="staff-location"></a>Personalens placering
+
+Säkerhets operationerna MMD Operations and MMD finns i USA och Indien.
 
 ## <a name="data-usage-of-microsoft-managed-desktop"></a>Data användning för Microsoft Managed Desktop
 

@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Lär dig hur du granskar och hanterar hot som upptäckts av Microsoft Defender Antivirus på Windows 10-enheter.
-ms.openlocfilehash: ffdf5cffb50d6145d6059233e0850839f4dfb582
-ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
+ms.openlocfilehash: 41465cb81850415a7b490b6af7f0ec66c724ca68
+ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49385246"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588523"
 ---
 # <a name="review-detected-threats-and-take-action"></a>Granska identifierade hot och vidta åtgärder
 
@@ -42,7 +42,7 @@ Det finns flera alternativ för att visa specifik information om hot identifieri
 
 - Sidan **aktiva enheter** i <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrations centret för Microsoft 365</a>. Se [Hantera hot identifieringar på sidan aktiva enheter](#manage-threat-detections-on-the-active-devices-page) i den här artikeln.
 - Sidan **aktiva hot** i <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrations centret för Microsoft 365</a>. Se [Hantera hot identifieringar på sidan aktiva hot](#manage-threat-detections-on-the-active-threats-page) .
-- **Antivirus** -sidan i <a href="https://endpoint.microsoft.com" target="_blank">Microsoft slut punkts hanteraren</a>. Se [Hantera hot identifieringar i Microsoft slut punkts hanteraren](#manage-threat-detections-in-microsoft-endpoint-manager) i den här artikeln.
+- **Antivirus** -sidan i <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">Microsoft slut punkts hanteraren</a>. Se [Hantera hot identifieringar i Microsoft slut punkts hanteraren](#manage-threat-detections-in-microsoft-endpoint-manager) i den här artikeln.
 
 Mer information finns i [hot som upptäckts av Microsoft Defender Antivirus](threats-detected-defender-av.md).
 
@@ -88,7 +88,7 @@ När du visar information om specifika hot eller enheter får du rekommendatione
 
 Du kan använda Microsoft slut punkts hanteraren för att hantera hot identifieringar. Windows 10-enheter måste vara [registrerade i Intune](/mem/intune/enrollment/windows-enrollment-methods) (ingår i Microsoft Endpoint Manager).
 
-1. Gå till administrations centret för Microsoft Endpoint Manager på <a href="https://endpoint.microsoft.com" target="_blank">https://endpoint.microsoft.com</a> och logga in.
+1. Gå till administrations centret för Microsoft Endpoint Manager på <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">https://endpoint.microsoft.com</a> och logga in.
 
 2. I navigerings fönstret väljer du **Endpoint Security**.
 

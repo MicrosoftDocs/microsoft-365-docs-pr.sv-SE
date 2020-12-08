@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 9bd5ad3e2544e0c715ade59ca4744e08c8a548a6
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 81e729d9b0ff145d1d10a385cdd3f0856287dd9f
+ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376671"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588591"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Produktivitetsillustrationer för Microsoft 365
 
@@ -48,7 +48,7 @@ Denna uppsättning illustrationer använder en av de mest reglerade industrierna
 
 | Objekt | Beskrivning |
 |:-----|:-----|
-|[![Modellaffisch: Microsoft 365 illustrationer för informationsskydd och efterlevnadsfunktioner](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Engelska: [Ladda ned som en PDF-](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) \| [fil laddas som Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Japanska: [Ladda ned som PDF-](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf) \| [nedladdning som Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> Uppdaterat 2020 november|Innehåller: <ul><li>  Microsoft Informationsskydd och dataförlustskydd </li><li>Bevarande principer och bevarande etiketter </li><li>Informationsbarriärer</li><li>Kommunikationsefterlevnad</li><li>Intern risk</li><li>Datainmatning för tredje part</li>|
+|[![Modellaffisch: Microsoft 365 illustrationer för informationsskydd och efterlevnadsfunktioner](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Engelska:[Ladda ned som PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [Hämta som Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japanska[Ladda ned som PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)\| [Hämta som Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Uppdaterad i november 2020|Innehåller: <ul><li>  Microsoft Informationsskydd och dataförlustskydd </li><li>Bevarande principer och bevarande etiketter </li><li>Informationsbarriärer</li><li>Efterlevnad av kommunikation</li><li>Intern risk</li><li>Datainmatning för tredje part</li>|
 
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>Säkerhet och informationsskydd för organisationer i flera regioner
@@ -84,7 +84,7 @@ Avancerat arbets flöde från slut punkt till slut punkt för Avancerad eDiscove
 
 | Objekt | Beskrivning |
 |:-----|:-----|
-|[![Modell affisch: Avancerad eDiscovery-arkitektur i Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Visa som en bild](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Ladda ned som PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \| [Ladda ned som Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Uppdaterades: Oktober 2020|Innehåller: <ul><li>  Arbets flödet från slut punkt till slut punkt i en enda miljö</li><li>Arbets flöde från slut punkt till slut punkt i en Microsoft 365 multi-geo-miljö </li><li>Data flöde från slut punkt till slut punkt som stöder EDRM-arbetsflödet</li> |
+|[![Modell affisch: Avancerad eDiscovery-arkitektur i Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Visa som en bild](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Ladda ned som PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \| [Ladda ned som Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Uppdaterat 2020|Innehåller: <ul><li>  Arbets flödet från slut punkt till slut punkt i en enda miljö</li><li>Arbets flöde från slut punkt till slut punkt i en Microsoft 365 multi-geo-miljö </li><li>Data flöde från slut punkt till slut punkt som stöder EDRM-arbetsflödet</li> |
   
 <!--
 
@@ -130,7 +130,26 @@ Microsoft har stöd för flera olika alternativ när du påbörjar övergången 
 Uppdaterad i januari 2019
 
 Mer information finns i artikeln för denna affisch: [Microsofts telefonilösningar](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions).
-  
+
+### <a name="empower-remote-workers"></a>Ge distansarbetare goda förutsättningar
+
+Med Microsoft 365 och andra moln teknologier från Microsoft kan du ge dina arbetare säker till gång till organisationens lokala och molnbaserade information, verktyg och resurser från hemmet. 
+
+[![Ge distansarbetare goda förutsättningar (affisch)](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf) <br/>
+[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf)  |  [PowerPoint](https://download.microsoft.com/download/5/1/1/511b77a9-a34c-4ea7-af2a-32b07f20b780/empower-remote-workers.pptx) <br>
+Uppdaterat 2020
+
+Mer information finns i artikeln för denna affisch: ge [fjärranställda med Microsoft 365](empower-people-to-work-remotely.md).
+
+### <a name="microsoft-teams-with-security-isolation"></a>Microsoft Teams med säkerhets isolering
+
+Med Microsoft 365 kan du konfigurera ett privat team i Microsoft Teams och använda säkerhets inställningar för SharePoint-webbplatsen och en unik känslighets etikett för att kryptera filer så att bara grupp medlemmar kan dekryptera dem.
+
+[![Microsoft Teams med säkerhets isolering, affisch](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf) <br/>
+[DOKUMENT](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) <br> Uppdaterat 2020
+
+Mer information finns i artikeln om den här affischen: [Konfigurera ett team med säkerhets isolering](secure-teams-security-isolation.md).
+
   
 ## <a name="see-also"></a>Se även
 
