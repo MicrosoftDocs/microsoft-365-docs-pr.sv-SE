@@ -97,12 +97,22 @@
       href: workload-solutions-scenarios-overview.md
     - name: Lagarbete och samarbete.
       items:
-        - name: Arkitekturaffischer för Teams
+        - name: Arkitekturaffischer för Microsoft Teams
           href: 'https://docs.microsoft.com/MicrosoftTeams/teams-architecture-solutions-posters?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-        - name: Telefonilösningar
+        - name: Använd Microsoft Teams-röst i Microsoft 365
           items:
-            - name: Välj din röstlösning i Teams
+            - name: Översikt
+              href: deploy-voice.md
+            - name: Steg 1. Välj din röstlösning
               href: 'https://docs.microsoft.com/MicrosoftTeams/cloud-voice-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+            - name: Steg 2. - Inställning av telefonsystem
+              href: 'https://docs.microsoft.com/microsoftteams/setting-up-your-phone-system?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+            - name: Steg 3. - Inställning av PSTN-anslutning
+              items:
+                - name: Samtalsabonnemang-alternativ
+                  href: 'https://docs.microsoft.com/microsoftteams/set-up-calling-plans?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+                - name: Direktroutning-alternativ
+                  href: 'https://docs.microsoft.com/microsoftteams/direct-routing-configure?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: Fallstudie för multinationellt företag
               href: 'https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: Samarbetsstyrning
