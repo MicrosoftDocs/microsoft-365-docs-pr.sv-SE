@@ -20,22 +20,26 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6d1358da465bd7e31ca7b234f140aa8e48bb7508
-ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
+ms.openlocfilehash: 4b25f701aca24563dc4f1a15f78a80e1e2064367
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49374001"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604389"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nyheter i Microsofts säkra Poäng
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Vi har gjort några ändringar för att göra Microsoft säkert poäng en bättre representant för dina säkerhets Posture. Om du vill veta mer om planerade ändringar kan du läsa [vad som kommer i Microsofts säkra Poäng?](microsoft-secure-score-whats-coming.md).
+Vi har gjort några ändringar för att göra Microsoft säkert poäng en bättre representant för dina säkerhets Posture. Om du vill veta mer om planerade ändringar kan du läsa [vad som kommer i Microsofts säkra Poäng?](microsoft-secure-score-whats-coming.md)
 
 Microsoft Secure score finns https://security.microsoft.com/securescore i [Microsoft 365 Security Center](overview-security-center.md).
 
 ## <a name="november-2020"></a>November 2020
+
+### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>Tog bort möjligheten att skapa ServiceNow biljetter genom säkra Poäng 
+
+Möjligheten att skapa ServiceNow biljetter genom säkra poäng genom att gå till **dela > ServiceNow** är inte längre tillgänglig. Tack för din feedback och fortsatta support medan vi bestämmer nästa steg.
 
 ### <a name="added-3-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>3 tjänster-relaterade förbättrings åtgärder för Microsoft Defender för slut punkten (tidigare Microsoft Defender ATP):
 

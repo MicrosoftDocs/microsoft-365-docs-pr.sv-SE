@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e42c65fdb4d409c1da7b85fbe7eca13170b9b974
-ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
+ms.openlocfilehash: 950daef315ef27fe5d6bc40528eb0104974c8c00
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49409239"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604401"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Det här kommer att komma till Microsofts säkra Poäng
 
@@ -44,14 +44,6 @@ Lägga till 6 konton-relaterade förbättrings åtgärder för Microsoft Defende
 - Ange "lägst lösen ord ålder" på "1 eller fler dagar"
 - Inaktivera det inbyggda administratörs kontot
 - Inaktivera det inbyggda gäst kontot
-
-### <a name="november-2020"></a>November 2020
-
-#### <a name="removing-the-ability-to-create-servicenow-tickets-through-secure-score"></a>Ta bort möjligheten att skapa ServiceNow biljetter genom säkra Poäng 
-
-Möjligheten att skapa ServiceNow biljetter genom säkra poäng genom att gå till **dela > ServiceNow** kommer att tas bort.
-
-För hands perioden för ServiceNow-kopplingen är slut. Den här funktionen kommer inte längre att vara tillgänglig i slutet av 2020. Tack för din feedback och fortsatta support medan vi bestämmer nästa steg.
 
 ## <a name="related-resources"></a>Relaterade resurser
 

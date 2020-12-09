@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c5b8cae9e4eabcb2b3c6a7eb76971784193a221d
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: fbe98b814b253551432ea35102f2bd6eeba921f8
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920508"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602097"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Aktivera Microsoft 365 Defender
 
@@ -52,13 +52,13 @@ Microsoft 365 Defender sammanställer data från de tjänster som du redan har d
 För att få bästa möjliga skydd och optimera Microsoft 365 Defender rekommenderar vi att du distribuerar alla tillämpliga tjänster som stöds i ditt nätverk. Mer information finns i [om att distribuera tjänster som stöds](deploy-supported-services.md).
 
 ## <a name="before-starting-the-service"></a>Innan tjänsten startas
-Innan du aktiverar tjänsten visar Microsoft 365 säkerhets Center ( [Security.Microsoft.com](https://security.microsoft.com)) sidan Microsoft 365 Defender-inställningar när du väljer **händelser** , **Åtgärds Center** eller **jakt** från navigerings fönstret. Dessa navigerings objekt visas inte om du inte är berättigad att använda Microsoft 365 Defender.
+Innan du aktiverar tjänsten visar Microsoft 365 säkerhets Center ([Security.Microsoft.com](https://security.microsoft.com)) sidan Microsoft 365 Defender-inställningar när du väljer **händelser**, **Åtgärds Center** eller **jakt** från navigerings fönstret. Dessa navigerings objekt visas inte om du inte är berättigad att använda Microsoft 365 Defender.
 
 ![Bild av sidan Microsoft 365 Defender-inställningar som visas om Microsoft 365 Defender inte har Aktiver ATS på ](../../media/mtp-enable/mtp-settings.png)
  *Microsoft 365 Defender-inställningar i Microsoft 365 säkerhets Center*
 
 ## <a name="starting-the-service"></a>Startar tjänsten
-För att aktivera Microsoft 365 Defender väljer du **Aktivera microsoft 365 Defender** och gör ändringarna. Du kan också komma åt det här alternativet genom att välja **Inställningar** ( [Security.Microsoft.com/settings](https://security.microsoft.com/settings)) i navigerings fönstret och sedan välja **Microsoft 365 Defender**.
+För att aktivera Microsoft 365 Defender väljer du **Aktivera microsoft 365 Defender** och gör ändringarna. Du kan också komma åt det här alternativet genom att välja **Inställningar** ([Security.Microsoft.com/settings](https://security.microsoft.com/settings)) i navigerings fönstret och sedan välja **Microsoft 365 Defender**.
 
 >[!NOTE]
 >Om du inte ser **Inställningar** i navigerings fönstret eller inte har åtkomst till sidan kontrollerar du dina behörigheter och licenser.
@@ -84,11 +84,6 @@ När tjänsten har etablerats lägger den till:
 ### <a name="getting-microsoft-defender-for-identity-data"></a>Microsoft Defender för identitets data
 Om du vill dela Microsoft Defender för identitets data med Microsoft 365 Defender kontrollerar du att säkerhet för Microsoft Cloud App och Microsoft Defender för identitets integrering är aktiverat. [Läs mer om denna integrering](https://docs.microsoft.com/cloud-app-security/aatp-integration)
 
-
-## <a name="turn-off-microsoft-365-defender"></a>Inaktivera Microsoft 365 Defender
-Om du vill sluta använda Microsoft 365 Defender går du till **Inställningar**  >  **Microsoft 365 Defender** och väljer att  >  **välja ut** i Microsoft 365 säkerhets Center. Avmarkera **aktivera Microsoft 365 Defender** och tillämpa ändringarna.
-
-Motsvarande funktioner tas bort från Microsoft 365 säkerhets Center.
 
 ## <a name="get-assistance"></a>Få hjälp
 

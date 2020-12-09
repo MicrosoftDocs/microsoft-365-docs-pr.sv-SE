@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Lär dig hur du konfigurerar säkra innehålls samarbete i Teams för att skydda dina data baserat på dess känslighet.
-ms.openlocfilehash: 310605d0db84e33be1d5fdc925fadcfcdf9dddaf
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 4f2e157025f00660e77ba3377221368e37e45445
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906805"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602079"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Konfigurera säkerhet samarbete med hjälp av Microsoft 365
 
@@ -60,7 +60,7 @@ Information som är kritisk för din organisations framgångar eller har strikt 
 
 För alla scenarier ovan kan du använda Teams i Microsoft Teams för att lagra, dela och samar beta med informationen. 
 
-Om du vill konfigurera säkra collabration använder du dessa Microsoft 365-funktioner och-funktioner.
+För att konfigurera säkra samarbeten använder du dessa Microsoft 365-funktioner och-funktioner.
 
 | Produkt eller komponent | Resurs eller funktion | Licensiering |
 |:-------|:-----|:-------|
@@ -76,9 +76,9 @@ För att hantera åtkomst till information med olika sensitivities har vi utveck
 ![Miniatyrbild av affischen för Teams logiska arkitektur](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
 
-Dessa nivåer- *bas linje* , *känsligt* och *mycket känsligt* – gradvis öka skyddet för att förhindra överdelning och potentiellt informations läckage enligt följande tabell.
+Dessa nivåer- *bas linje*, *känsligt* och *mycket känsligt* – gradvis öka skyddet för att förhindra överdelning och potentiellt informations läckage enligt följande tabell.
 
-||**Bas linje nivå**|**Känslig nivå**|**Känslig nivå**|
+|-|**Bas linje nivå**|**Känslig nivå**|**Känslig nivå**|
 |:--|:-----------|:------------|:-------------------|
 |Offentligt eller privat team|Respektive|Privat|Privat|
 |Oautentiserad delning|Blockering|Blockering|Blockering|

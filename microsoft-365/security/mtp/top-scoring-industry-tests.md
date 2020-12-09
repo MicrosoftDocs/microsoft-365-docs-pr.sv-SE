@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 824864ffd69a1f885c56a55957fc369fec4f640a
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: a1e8c083c0769031fcc17cc799e7edc29fc9bc57
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357303"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604413"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Bästa poängen vid bransch test
 
@@ -40,7 +40,7 @@ Microsoft 365 Defender kombinerar funktionerna i [Microsoft Defender för slut p
 
 Kärnan till MITRE är att emulera riktiga attacker för att förstå om lösningar kan upptäcka och reagera på dem. När testet fokuseras på slut punktens detektion och svar sträcker sig MITREs simulerade APT29-attack för flera attacker-domäner, vilket skapar möjligheter att ge skydds planerna bortom bara Endpoint Protection. Microsoft utökade försvarare står utanför slut punkten med Microsoft 365 Defender.
 
-- Att&CK-baserad utvärdering av Microsoft 365 Defender – maj 2020: [med rad identifiering i Real världen](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
+- Att&CK-baserad utvärdering av Microsoft 365 Defender-maj 2020: [med rad identifiering i Real världen](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
     Microsoft 365 Defender tillhandahöll nästan 100 procent i alla angrepp. Den levererar ledande synligheten utanför kartongen med angrepps aktiviteter. Synligheten minskar dramatiskt manuell arbete för säkerhets åtgärds Center och leverantörs lösningar som förlitar sig på specifika konfigurations ändringar. Microsoft 365 Defender hade också minst minsta mellanrum för att minska angrepps förmågan mot drift.
 
@@ -56,21 +56,21 @@ Test av produkt granskning och certifierings rapporter i tre kategorier: skydd, 
 
 **Ladda ned den senaste genomskinlighets rapporten: [Granska av-test resultat January-February 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)**
 
-- Juli – test AV företags användare i augusti 2020: [skydds Poäng 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2020/microsoft-defender-antivirus-4.18-203215/) <sup>**senaste**</sup>
+- September-oktober 2020 AV-TEST Business User test: [skydds Poäng 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2020/microsoft-defender-antivirus-4.18-204116/) <sup>**senaste**</sup>
 
-    Microsoft Defender Antivirus har uppnått ett perfekt skydd av 6.0/6.0 med 100% i juli och augusti. 13 941 program mot skadlig kod användes.
+    Microsoft Defender Antivirus har uppnått ett perfekt skydd för 6.0/6.0 med 100% i september och oktober. 12 650 program mot skadlig kod användes.
 
-- Maj – företags användarens juni 2020 AV-TEST: [skydds Poäng 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/)
+- Juli-augusti 2020 månads test AV-TEST för företags användare: [skydd poängen 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2020/microsoft-defender-antivirus-4.18-203215/)
+
+- Maj-juni 2020 AV-TEST Business User test: [skydds Poäng 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/)
 
 - Mars-april 2020 AV-TEST Business User test: [skydds Poäng 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)
 
-- Januari – test av företags användare i februari 2020 av-test: [skydds Poäng 5.5/6.0-](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)  |  [analys](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
+- Januari-test för företags användare i februari 2020: [skydds Poäng 5.5/6.0-](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)  |  [analys](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
 
-- November – test för företags användare i december 2019: [skydds Poäng 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2019/microsoft-windows-defender-antivirus-4.18-195015/)
+- November-december 2019 AV-TEST Business User test: [skydds Poäng 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2019/microsoft-windows-defender-antivirus-4.18-195015/)
 
-- September – test för företags användare i oktober 2019: [skydds Poäng 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2019/microsoft-windows-defender-antivirus-4.18-194115/)
-
-- Juli – test av företags användare i augusti 2019: [skydds Poäng 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2019/microsoft-windows-defender-antivirus-4.18-193215/)  |  [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
+- September-2019 AV-TEST för företags användare test: [skydds Poäng 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2019/microsoft-windows-defender-antivirus-4.18-194115/)
 
 ### <a name="av-comparatives-protection-rating-of-997-in-the-latest-test"></a>AV-jämförelser: skydds betyg för 99,7% i det senaste testet
 
@@ -80,7 +80,7 @@ Säkerhets test för företag består av tre huvud delar: Real-World skydd test 
 
     Microsoft Defender Antivirus har lyckats med höga Real-World skydds avgifter under det gångna året, med 99,7% i det senaste testet.
 
-- Business Security test 2019 (augusti – november): [verklig skydds skatt 99,6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
+- Business Security test 2019 (augusti-november): [verklig skydds taxa 99,6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
 
 - Business Security test 2019 (mars – juni): [verklig skydds skatt 99,9%](https://www.av-comparatives.org/tests/business-security-test-2019-march-june/)  |  [analys](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
@@ -96,9 +96,9 @@ SE-labb testar en rad lösningar som används av produkter och tjänster för at
 
 - Enterprise Endpoint Protection april – juni 2020: [AAA Award](https://selabs.uk/reports/epp-ent-20q2-security-testing/)
 
-- Enterprise Endpoint Protection januari — mars 2020: [AAA Award](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) av <sup>**PDF-**</sup>  |  [analys](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
+- Enterprise Endpoint Protection januari – mars 2020: [AAA Award](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) av <sup>**PDF-**</sup>  |  [analys](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
 
-- Enterprise Endpoint Protection oktober – december 2019: [AAA Award](https://selabs.uk/download/enterprise/epp/2019/oct-dec-2019-enterprise.pdf) för <sup>**PDF**</sup>
+- Enterprise Endpoint Protection oktober-december 2019: [AAA Award](https://selabs.uk/download/enterprise/epp/2019/oct-dec-2019-enterprise.pdf) för <sup>**PDF**</sup>
 
 - Enterprise Endpoint Protection juli – september 2019: [AAA Award](https://selabs.uk/download/enterprise/epp/2019/jul-sep-2019-enterprise.pdf) för <sup>**PDF-**</sup>  |  [analys](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
 
@@ -113,7 +113,7 @@ EDR och slut punkts skydds funktioner i Microsoft Defender för slut punkter har
 
 MITRE testade förmågan hos produkter att upptäcka teknik som vanligt vis används av mål grupps gruppen APT3 (kallas även bor eller UPS). För att identifiera identifierings funktioner har alla skydds-och förebyggande funktioner stängts av. Microsoft är lyckligt att vara en av de första EDR-leverantörerna för att registrera sig för MITRE-utvärderingen baserat på to&CK-ramverket. Ramverket betraktas i dag som den mest omfattande katalogen för angripare och taktiker.
 
-- Att&CK-baserad utvärdering av Microsoft Defender för slut punkt – december 2018: [ledande optik-och detektions funktioner](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)  |  [analys](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/MITRE-evaluation-highlights-industry-leading-EDR-capabilities-in/ba-p/369831)
+- Att&CK-baserad utvärdering av Microsoft Defender för slut punkt – december 2018: ledande regler för [optik och identifiering av funktioner](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)  |  [Analysis](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/MITRE-evaluation-highlights-industry-leading-EDR-capabilities-in/ba-p/369831)
 
     Microsoft Defender för slut punkt levereras omfattande täckning av angripare teknik i hela angrepps kedjan. Fokus är bland andra bredd på telemetri, styrkan hos Threat intelligence och den avancerade, automatiska identifieringen genom dator inlärning, heuristik och beteende övervakning.
 

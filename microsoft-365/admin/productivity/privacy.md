@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hur integritet skyddas med produktivitets poängen.
-ms.openlocfilehash: db123042761b07ed64dd2dd94e783d65205e1460
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: ceb19fcb7bbf2f6a58e38684604ed3b0dac2a5d4
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561520"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604332"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Integritets inställningar för produktivitets Poäng
 
@@ -48,7 +48,7 @@ Om du vill visa hela produktivitets poängen måste du ha någon av följande ad
 - Skype för företag-administratör
 - Teams-administratör
 - Global läsare
-- Rapport läsare
+- Rapportläsare
 - Översikt över användnings sammanfattnings rapporter
 
 Tilldela rapport läsaren en rapport läsare och rollen användnings översikt till alla som har ansvar för ändrings hantering och antagande, men inte nödvändigt vis en IT-administratör. Den här rollen ger dem till gång till den kompletta produktivitets upplevelsen i Microsoft 365 Admin Center.
@@ -73,7 +73,7 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 
 ## <a name="capability-to-opt-out-of-people-experiences"></a>Möjlighet att avanmäla folk upplevelsen
 
-Du kan också säga av området personer som är produktivt. Om du avmarkerar det här kan du inte se något från din organisation, och organisationen tas bort från alla beräkningar som rör kommunikation, möten, samarbete, innehålls samarbete och mobilitet.
+Du kan också säga av området personer som är produktivt. Om du avmarkerar det här kan du inte se något från din organisation, och organisationen tas bort från alla beräkningar som rör kommunikation, möten, samarbete, innehålls samarbete och mobilitet. Du måste vara global administratör för att välja att organisationen ska få slut på rapporter från folk upplevelsen.
 
 Så här väljer du:
 

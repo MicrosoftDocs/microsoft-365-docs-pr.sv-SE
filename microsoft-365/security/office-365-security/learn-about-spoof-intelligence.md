@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om förfalsknings intelligens i Exchange Online Protection (EOP), där du kan tillåta eller blockera specifika avsändare.
-ms.openlocfilehash: 9168d43e6e5544ad3454729afc8140642deba0ef
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: bc8ae2664acf96ea6cd4c20c2f9195db9b75b3da
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572735"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602127"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Konfigurera förfalsknings information i EOP
 
@@ -55,9 +55,9 @@ Du kan hantera förfalsknings intelligens i säkerhets & Compliance Center eller
 
 - Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till **Inställningar för skräppostskydd** använder du <https://protection.office.com/antispam>. För att gå direkt till **nätfiske-** sidan, Använd <https://protection.office.com/antiphishing> .
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Du måste tilldelas behörigheter i säkerhets & Compliance Center innan du kan göra det i den här artikeln:
+- Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
   - Du måste vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** för att kunna ändra policyn för förfalsknings information eller aktivera förfalsknings information.
   - Om du vill ha skrivskyddad åtkomst till policyn för förfalsknings intelligens måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** .
 
@@ -65,8 +65,8 @@ Du kan hantera förfalsknings intelligens i säkerhets & Compliance Center eller
 
   **Anmärkningar**:
 
-  - Om du lägger till användare i motsvarande Azure Active Directory-roll i Microsoft 365 Admin Center får användarna den behörighet som krävs för säkerhets & efterlevnad Center _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Roll gruppen **organisations hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
+  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
 - För våra rekommenderade inställningar för Spoof-intelligens, se [EOP standardinställningar för skydd mot nätfiske](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
 
@@ -103,7 +103,7 @@ Du kan hantera förfalsknings intelligens i säkerhets & Compliance Center eller
 
      - På fliken **externa domäner** innehåller värdet för domänen med falsk användare, inte den fullständiga e-postadressen.
 
-   - **Skicka infrastruktur**: domänen hittades i en omvänd DNS-sökning (PTR-post) av käll-e-postserverns IP-adress, eller IP-adressen om källan inte har någon PTR-post.
+   - **Skicka infrastruktur**: domänen hittades i en omvänd DNS-sökning (PTR-post) av käll-e-postserverns IP-adress. Om käll-IP-adressen inte har någon PTR-post identifieras den sändande infrastrukturen som \<source IP\> /24 (till exempel 192.168.100.100/24).
 
      Mer information om meddelande källor och meddelande avsändare finns i [Översikt över e-poststandarder](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
@@ -112,22 +112,18 @@ Du kan hantera förfalsknings intelligens i säkerhets & Compliance Center eller
    - **antal användare klagomål**: klagomål som lämnats av användarna mot denna avsändare inom de senaste 30 dagarna. Klagomål är vanligt vis i form av skräp post försändelser till Microsoft.
 
    - **Resultat**: ett av följande värden:
-
       - **Lyckades**: avsändaren skickade e-postkontroller (SPF eller DKIM).
       - **Misslyckades**: avsändaren misslyckades EOP.
       - **Okänt**: resultatet av dessa kontroller är inte känt.
 
    - **Beslut inställt av**: visar vilka som har fastställt om den sändande infrastrukturen har tillstånd att skicka falska användare:
-
        - **Policy för förfalsknings information** (automatiskt)
        - **Administratör** (manuell)
 
    - **Senast sedd**: det sista datum då ett meddelande togs emot från den sändande infrastrukturen som innehåller den falskade användaren.
 
    - Har du **tillstånd för falska identiteter?**: de värden som visas här är:
-
      - **Ja**: meddelanden från en kombination av falsk användare och överföring av infrastrukturen tillåts och behandlas inte som falsk e-post.
-
      - **Nej**: meddelanden från en kombination av falsk användare och överföring av infrastrukturen markeras som falska. Åtgärden styrs av standard policyn för skydd mot nätfiske eller anpassade anti-phishing-principer (Standardvärdet är **Flytta meddelandet till mappen skräp post**). Se nästa avsnitt för mer information.
 
      - **Vissa användare** (endast **din domän** -flik): en annan infrastruktur är falsk för flera användare, där vissa falska användare är tillåtna och andra inte är det. Använd den **detaljerade** fliken för att visa specifika adresser.
