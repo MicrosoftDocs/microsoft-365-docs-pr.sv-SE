@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Administratörer kan läsa hur du konfigurerar en post låda för att samla in skräp post och nätfiske som rapporteras av användare.
-ms.openlocfilehash: 31249ab930c44d84f27efac95d8e57bd88d9742f
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 7064e2d26722c433d33fe2f983484a40fa33c1e6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130905"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615630"
 ---
 # <a name="user-submissions-policy"></a>Policy för användar inlägg
 
@@ -72,7 +72,7 @@ När du har verifierat att post lådan uppfyller alla tillämpliga förutsättni
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>Konfigurera e-postpost lådan för användare via säkerhets & efterlevnad
 
-1. Gå till användar tillägget för **Threat Management** policy i säkerhets & efterlevnad \> **Policy** \> **User submissions**.
+1. Gå till användar tillägget för **Threat Management** policy i säkerhets & efterlevnad \>  \> .
 
 2. På sidan **användar inlägg** som visas väljer du något av följande alternativ:
 
@@ -86,7 +86,7 @@ När du har verifierat att post lådan uppfyller alla tillämpliga förutsättni
 
         > Din e-post skickas till Microsoft för analys. Vissa e-postmeddelanden kan innehålla personlig eller känslig information.
 
-      - **Efter sändning**: Klicka på ![ ikonen Expandera ](../../media/scc-expand-icon.png) . Ange den **Title** beskrivande text som användarna ser efter att de har rapporterat ett meddelande med hjälp av rapport tillägget. **Confirmation message** Du kan använda variabel% Type% för att inkludera överförings typen.
+      - **Efter sändning**: Klicka på ![ ikonen Expandera ](../../media/scc-expand-icon.png) . Ange den  beskrivande text som användarna ser efter att de har rapporterat ett meddelande med hjälp av rapport tillägget.  Du kan använda variabel% Type% för att inkludera överförings typen.
 
       Klicka på **Spara** när du är klar. Om du vill rensa de här värdena klickar du på **Återställ** bakåt på sidan **användar inlägg** .
 
@@ -99,7 +99,7 @@ När du har verifierat att post lådan uppfyller alla tillämpliga förutsättni
         - **Anpassad post låda**: i rutan som visas anger du e-postadressen för en befintlig Exchange Online-postlåda. Distributions grupper är inte tillåtet. Använd det här alternativet om du vill att meddelandet endast ska skickas till en administratör eller säkerhets åtgärds teamet för analys. Meddelanden går inte till Microsoft såvida inte administratören vidarebefordrar det själva.
 
         > [!NOTE]
-        > Amerikanska statliga organisationer (GCC, GCC-H och DoD) kan endast konfigurera **anpassade post lådor**. De två andra alternativen är inaktiverade. 
+        > Amerikanska statliga organisationer (GCC, GCC-H och DoD) kan endast konfigurera **anpassade post lådor**. De två andra alternativen är inaktiverade.
 
       När du är klar klickar du på **Bekräfta**.
 

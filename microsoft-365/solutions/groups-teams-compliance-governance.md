@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Läs om alternativ för kompatibilitet för Microsoft 365-grupper,-team och SharePoint-samarbete.
-ms.openlocfilehash: 0383b0728d9b8ea12ce75de8bf0e250932d14ae5
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: e1ca6e638b2d44ae3b04e2a0f13222424e89714d
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377539"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613636"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Alternativ för kompatibilitet för Microsoft 365-grupper, team och SharePoint-samarbete
 
@@ -113,8 +113,10 @@ Med informations hinder kan du dela med dig av dina data och användare för att
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
+[Planerings steg-för-steg-samarbete för samarbets styrning](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Skapa en plan för hantering av samarbete](collaboration-governance-first.md)
+
 [Säkerhet och efterlevnad för Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/security-and-compliance)
 
 [Skydda information](https://docs.microsoft.com/microsoft-365/compliance/protect-information)
-
-

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Lär dig hur du använder Threat Explorer och rapporten om identifiering av real tids rapporter för att undersöka och reagera på hot i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 551425bf3e6b2c4fbb429dd6698b4f85e30d1ebe
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: b7300f8c87b100a38117b0cc4bee1bb95c9584c6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561237"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615714"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vyer i Threat Explorer och identifieringar i real tid
 
@@ -56,7 +56,7 @@ När du har valt en vy kan du använda filter och ställa in frågor för att ut
 
 ## <a name="email--malware"></a>> skadlig program vara
 
-Om du vill visa rapporten klickar du på **Visa**  >  **e-**  >  **postskadlig kod** i Utforskaren (eller i real tid). I den här vyn visas information om e-postmeddelanden som identifierats som innehåll ande malware.
+Om du vill visa rapporten klickar du på **Visa** \> **e-** \> **postskadlig kod** i Utforskaren (eller i real tid). I den här vyn visas information om e-postmeddelanden som identifierats som innehåll ande malware.
 
 ![Visa information om e-post som identifieras som skadlig program vara](../../media/ExplorerEmailMalwareMenu.png)
 
@@ -72,7 +72,7 @@ Visa mer information om specifika meddelanden under diagrammet. När du markerar
 
 ## <a name="email--phish"></a>E-> Phish
 
-Om du vill visa rapporten går du till Explorer (eller real tids identifiering) och väljer **Visa**  >  **e-**  >  **Phish**. I den här vyn visas e-postmeddelanden som identifieras som nätfiske-försök.
+Om du vill visa rapporten går du till Explorer (eller real tids identifiering) och väljer **Visa** \> **e-** \> **Phish**. I den här vyn visas e-postmeddelanden som identifieras som nätfiske-försök.
 
 ![Visa information om e-post som identifieras som nätfiske-försök](../../media/ThreatExplorerEmailPhish.png)
 
@@ -92,13 +92,13 @@ När du markerar ett objekt i listan, till exempel en webb adress som upptäckts
 
 ## <a name="email--submissions"></a>Skicka e-post >
 
-Om du vill visa den här rapporten går du till Explorer (eller real tids identifieringar) och väljer **Visa**  >  **e-**  >  **postinlägg**. I den här vyn visas e-post som användare har rapporterat som skräp post, inte skräp post eller nätfiske.
+Om du vill visa den här rapporten går du till Explorer (eller real tids identifieringar) och väljer **Visa** \> **e-** \> **postinlägg**. I den här vyn visas e-post som användare har rapporterat som skräp post, inte skräp post eller nätfiske.
 
 ![E-postmeddelanden som rapporter ATS av användare](../../media/ThreatExplorerEmailUserReportedViewOptions.png)
 
 Klicka på **avsändare** för att öppna listan över visnings alternativ. Använd den här listan för att visa information efter avsändare, mottagare, rapport typ (användarens kontroll att e-postmeddelandet var skräp, inte skräp post eller Phish) och mycket mer.
 
-Om du till exempel vill visa information om e-postmeddelanden som rapporter ATS som nätfiske-försök klickar du på **avsändarens**  >  **typ**, väljer **Phish** och klickar sedan på knappen Uppdatera.
+Om du till exempel vill visa information om e-postmeddelanden som rapporter ATS som nätfiske-försök klickar du på **avsändarens** \> **typ**, väljer **Phish** och klickar sedan på knappen Uppdatera.
 
 ![Phish markerad för rapport typ filter](../../media/ThreatExplorerEmailUserReportedPhishSelected.png)
 
@@ -110,7 +110,7 @@ Välj ett objekt i listan för att visa ytterligare information.
 
 ## <a name="email--all-email"></a>E-posta > all e-post
 
-Om du vill visa rapporten klickar du på **Visa**  >  **e-** post i Utforskaren  >  **All mail**. I den här vyn visas en uppkopplings aktivitet med e-postaktivitet, inklusive e-post som identifieras som skadlig på grund av nätfiske eller skadlig program vara (vanlig e-post, spam och Mass utskick).
+Om du vill visa rapporten klickar du på **Visa** \> **e-** post i Utforskaren \> . I den här vyn visas en uppkopplings aktivitet med e-postaktivitet, inklusive e-post som identifieras som skadlig på grund av nätfiske eller skadlig program vara (vanlig e-post, spam och Mass utskick).
 
 > [!NOTE]
 > Om du får ett fel meddelande som läser upp **för mycket data** kan du lägga till ett filter och, om det behövs, begränsa det datum intervall du visar.
@@ -123,7 +123,7 @@ Under diagrammet kan du Visa mer information om specifika e-postmeddelanden, til
 
 ## <a name="content--malware"></a>Innehålls > skadlig program vara
 
-Om du vill visa rapporten i Utforskaren (eller i real tid) väljer du **Visa**  >  **Content**  >  **skadlig program vara**. I den här vyn visas filer som identifieras som skadliga av [Microsoft Defender för Office 365 i SharePoint Online, OneDrive för företag och Microsoft Teams](atp-for-spo-odb-and-teams.md).
+Om du vill visa rapporten i Utforskaren (eller i real tid) väljer du **Visa** \>  \> **skadlig program vara**. I den här vyn visas filer som identifieras som skadliga av [Microsoft Defender för Office 365 i SharePoint Online, OneDrive för företag och Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
 Visa information från skadlig program vara, identifierings teknologi (hur skadlig kod har identifierats) och arbets belastning (OneDrive, SharePoint eller teams).
 

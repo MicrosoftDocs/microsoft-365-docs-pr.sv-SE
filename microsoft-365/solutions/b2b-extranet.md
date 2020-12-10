@@ -2,7 +2,7 @@
 title: Skapa ett B2B-extranät med hanterade gäster
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,19 +15,19 @@ ms.collection:
 ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Lär dig hur du skapar en webbplats eller ett B2B-team med hanterade gäst användare från en partner organisation.
-ms.openlocfilehash: b052598f86072776f69e538c70a6bd56d79c3f81
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+description: Lär dig hur du skapar en webbplats eller ett B2B-team med hanterade gäster från en partner organisation.
+ms.openlocfilehash: cfb7cc4310cb83f9ce7761c95f021724b7d75faf
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030059"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613602"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Skapa ett B2B-extranät med hanterade gäster
 
 Du kan använda [Azure Active Directory-hanteringen](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview) för att skapa ett B2B-extra nät för att samar beta med en partner organisation som använder Azure Active Directory. Detta gör att användare själv kan registrera sig på extra nätet eller teamet och få åtkomst via ett arbets flöde för godkännande.
 
-Med den här metoden för att dela resurser för samarbete kan partner organisationen hjälpa till att underhålla och godkänna gäst användarna i sin slut, vilket minskar belastningen på IT-avdelningen och gör dem mest bekanta med samarbets avtalet för att hantera användar åtkomst.
+Med den här metoden för att dela resurser för samarbete kan partner organisationen hjälpa till att underhålla och godkänna gästerna, vilket minskar belastningen på IT-avdelningen och gör dem mest bekanta med samarbets avtalet för att hantera användar åtkomst.
 
 Den här artikeln innehåller anvisningar för hur du skapar ett paket med resurser (i det här fallet en webbplats eller ett team) som du kan dela med en partner organisation via en självbetjänings registrerings modell. 
 
@@ -57,7 +57,7 @@ Lägga till en ansluten organisation
 6. Klicka på **Lägg till katalog + domän**.
 7. Skriv domänen för den organisation som du vill ansluta till och klicka sedan på **Lägg till**.
 8. Klicka på **Anslut** och sedan på **Nästa: sponsorer**.
-9. Lägg till personer från din organisation eller den organisation som du ansluter till och som du vill godkänna åtkomst för gäst användare.
+9. Lägg till personer från din organisation eller den organisation som du ansluter till och som du vill godkänna åtkomst för gäster.
 10. Klicka på **Nästa: granska + skapa**.
 11. Granska de inställningar du har valt och klicka sedan på **skapa**.
 
@@ -92,7 +92,7 @@ Så här skapar du ett Access-paket
 2. Klicka på **Access-paket** och sedan på **nytt Access-paket**.
 3. Ange ett namn och en beskrivning för Access-paketet och klicka sedan på **Nästa: resurs roller**.
 4. Välj de resurser från katalogen som du vill använda för extra nätet.
-5. För varje resurs, i kolumnen **Role** , väljer du den användar roll du vill ge gäst användarna som använder extra nätet.
+5. För varje resurs, i kolumnen **Role** , väljer du den användar roll du vill ge till gästerna som använder extra nätet.
 6. Klicka på **Nästa: förfrågningar**.
 7. Under **användare som kan begära åtkomst** väljer du **för användare som inte finns i katalogen**.
 8. Kontrol lera att alternativet **specifika anslutna organisationer** är markerat och klicka sedan på **Lägg till kataloger**.

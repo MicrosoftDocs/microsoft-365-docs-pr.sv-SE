@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Använd den nya säkerhets instrument panelen för att granska status för skydd mot Office 365 och Visa och åtgärda säkerhets varningar.
-ms.openlocfilehash: b49422621e70d597251cd342559e59ffa0e128f6
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 6a2669e3e36ee9238de99014a6c899df75204726
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877331"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615822"
 ---
 # <a name="security-dashboard"></a>Säkerhets instrument panel
 
@@ -40,7 +40,7 @@ Titta på videon för att få en översikt och Läs sedan mer i den här artikel
 
 Beroende på vad din organisations abonnemang inkluderar inkluderar säkerhets instrument panelen flera widgetar, till exempel en sammanfattning av hot Management, Hot skydds status, globala vecko hotets identifieringar, skadlig kod och mer, enligt beskrivningen i följande avsnitt.
 
-Om du vill visa säkerhets instrument panelen går du till fliken **Threat Management** på instrument panelen för [säkerhet &](../../compliance/go-to-the-securitycompliance-center.md) \> **Dashboard**.
+Om du vill visa säkerhets instrument panelen går du till fliken **Threat Management** på instrument panelen för [säkerhet &](../../compliance/go-to-the-securitycompliance-center.md) \> .
 
 > [!NOTE]
 > Du måste vara global administratör, en säkerhets administratör eller en säkerhets läsare för att Visa säkerhets instrument panelen. Vissa widgetar kräver ytterligare behörigheter för att visas. Mer information finns i [behörigheter i säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -55,7 +55,7 @@ Vilken information som visas i sammanfattningen av Threat Management beror på v
 
 |Office 365 E3|Office 365 E5|
 |---|---|
-|Blockerade meddelanden<br/>Blockerade nätfiske-meddelanden<br>Meddelanden som rapporter ATS av användare<br><br><br><br>|Blockerade meddelanden<br>Blockerade nätfiske-meddelanden<br>Meddelanden som rapporter ATS av användare<br>Ej använda skadlig program vara blockerat<br>Avancerade nät fiske meddelanden upptäcktes<br>Blockerade URL-adresser|
+|Blockerade meddelanden<br>Blockerade nätfiske-meddelanden<br>Meddelanden som rapporter ATS av användare<br><br><br><br>|Blockerade meddelanden<br>Blockerade nätfiske-meddelanden<br>Meddelanden som rapporter ATS av användare<br>Ej använda skadlig program vara blockerat<br>Avancerade nät fiske meddelanden upptäcktes<br>Blockerade URL-adresser|
 
 Om du vill visa eller få åtkomst till widgeten Threat Management Summary måste du ha behörighet att Visa Defender för Office 365-rapporter. Om du vill veta mer kan du läsa [vilka behörigheter som krävs för att Visa Defender för Office 365-rapporterna?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
 
@@ -69,8 +69,8 @@ Detaljerna beror på om ditt Microsoft 365-abonnemang innehåller [Exchange Onli
 
 |Om ditt abonnemang inkluderar...|Du kommer att se dessa uppgifter|
 |---|---|
-|EOP men inte Microsoft Defender för Office 365|Skadlig e-post som identifieras och blockeras av EOP.<br><br> Se [status rapport för hot Protection (EOP)](view-email-security-reports.md#threat-protection-status-report).|
-|Microsoft Defender för Office 365|Skadligt innehåll och skadlig e-post som identifieras och blockeras av EOP och Defender för Office 365<br><br>Sammanslagna antal unika e-postmeddelanden med skadligt innehåll blockerat av motorn mot skadlig program vara, [Tom timme för automatisk rensning](zero-hour-auto-purge.md)och Defender för Office 365-funktioner (inklusive [säkra länkar](atp-safe-links.md), [säkra bifogade filer](atp-safe-attachments.md)och [anti-nätfiske i Defender för Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).<br><br>Se [status rapport för hot skydd](view-reports-for-atp.md#threat-protection-status-report).|
+|EOP men inte Microsoft Defender för Office 365|Skadlig e-post som identifieras och blockeras av EOP.<p> Se [status rapport för hot Protection (EOP)](view-email-security-reports.md#threat-protection-status-report).|
+|Microsoft Defender för Office 365|Skadligt innehåll och skadlig e-post som identifieras och blockeras av EOP och Defender för Office 365 <p> Sammanslagna antal unika e-postmeddelanden med skadligt innehåll blockerat av motorn mot skadlig program vara, [Tom timme för automatisk rensning](zero-hour-auto-purge.md)och Defender för Office 365-funktioner (inklusive [säkra länkar](atp-safe-links.md), [säkra bifogade filer](atp-safe-attachments.md)och [anti-nätfiske i Defender för Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)). <p> Se [status rapport för hot skydd](view-reports-for-atp.md#threat-protection-status-report).|
 
 Du måste ha behörighet att Visa Defender för Office 365-rapporter för att visa eller komma åt skydds status för hotet. Mer information finns i [vilka behörigheter som krävs för att Visa Defender för Office 365-rapporter?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
@@ -127,6 +127,6 @@ Om du vill visa eller komma åt den senaste widgeten Threat Management Alerts m�
 
 [Visa rapporter för Microsoft Defender för Office 365](view-reports-for-atp.md)
 
-[Defender för Office 365](office-365-atp.md)
+[Defender förr Office 365](office-365-atp.md)
 
 [Office 365 hot undersökningar och svar](office-365-ti.md)

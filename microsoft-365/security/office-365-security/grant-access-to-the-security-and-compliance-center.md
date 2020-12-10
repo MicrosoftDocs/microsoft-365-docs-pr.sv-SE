@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Användare måste tilldelas behörigheter i Microsoft 365 Security & Compliance Center innan de kan hantera säkerhets-eller efterlevnadsprinciper.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d586684d44545f7aea94c30f5474b1fe5fa4651
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1bf8da85a0e090a9d74934ea5084f547d6a8794f
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202813"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616614"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Ge användarna åtkomst till säkerhets & efterlevnad
 
@@ -51,9 +51,9 @@ Om du vill ha mer information om de olika behörigheter du kan ge användare i a
 
 2. I listan över roll grupper väljer du roll gruppen och klickar sedan på **Redigera** ![ redigerings ikon ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) .
 
-3. På roll gruppens egenskaps sida under **medlemmar**klickar du på **Lägg**till ![ Lägg till ikonen ](../../media/ITPro-EAC-AddIcon.gif) och väljer namnet på den eller de användare som du vill lägga till.
+3. På roll gruppens egenskaps sida under **medlemmar** klickar du på **Lägg** till ![ Lägg till ikonen ](../../media/ITPro-EAC-AddIcon.gif) och väljer namnet på den eller de användare som du vill lägga till.
 
-4. När du har valt alla användare som du vill lägga till i roll gruppen klickar du på **Lägg till \> ** och sedan på **OK**.
+4. När du har valt alla användare som du vill lägga till i roll gruppen klickar du på **Lägg till \>** och sedan på **OK**.
 
 5. Klicka på **Spara** när du är klar.
 
@@ -81,7 +81,7 @@ Detaljerad information om syntax och parametrar finns i [Add-RoleGroupMember](ht
 
 Gör något av följande om du vill verifiera att du har beviljats åtkomst till säkerhets & Compliance Center.
 
-- Gå till **behörigheter** i säkerhets & efterlevnad och välj roll gruppen. I den utfällbara informationen som öppnas kontrollerar du medlemmarna i roll gruppen. 
+- Gå till **behörigheter** i säkerhets & efterlevnad och välj roll gruppen. I den utfällbara informationen som öppnas kontrollerar du medlemmarna i roll gruppen.
 
 - I säkerhets & Compliance Center PowerShell, Ersätt \<RoleGroupName\> med namnet på roll gruppen och kör följande kommando:
 

@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Lär dig mer om inställnings interaktioner mellan Microsoft 365-grupper, team och SharePoint
-ms.openlocfilehash: 3a6d4e057f88410a8808ea133bf7e579d0041228
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 23ef7a316417109ae51c221f1a25524dea3abeca
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377551"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613672"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-teams-and-sharepoint"></a>Inställningar för interaktioner mellan Microsoft 365-grupper, team och SharePoint
 
@@ -48,6 +48,10 @@ Vissa inställningar för Microsoft 365 Groups, Microsoft Teams och SharePoint i
 |Policy för giltighets tid för grupp|Anger en tids period efter vilken grupper som inte aktive ras aktivt tas bort automatiskt.|När gruppen tas bort raderas teamet och tillhör ande SharePoint-webbplats också. Innehåll som skyddas av bevarande principer bevaras.|Använd principer för förfallo dag för att undvika sprawl oanvända team, grupper och webbplatser.|
 
 ## <a name="related-topics"></a>Relaterade ämnen
+
+[Planerings steg-för-steg-samarbete för samarbets styrning](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Skapa en plan för hantering av samarbete](collaboration-governance-first.md)
 
 [Samar beta med personer utanför organisationen](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)
 

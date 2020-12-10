@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Få det senaste inom maskinvarubaserad isolering. Förhindra nuvarande och framväxande attacker som att utnyttja och sabotera inte fungerar för att störa företagets produktivitet och företags säkerhet.
-ms.openlocfilehash: 075006bb8f000dbbda2fd564e0c7cf83c1a15129
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: a1d0fb857a80d5500036f6d9a95f930ec4df38a0
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561441"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616794"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>Application Guard för Office (offentlig för hands version) för administratörer
 
@@ -76,9 +76,7 @@ Detaljerade system krav finns i [system krav för Microsoft Defender Application
 
    Alternativt kan du ange motsvarande KRYPTOGRAFIPROVIDER-princip:
 
-   OMA-URI: **./Device/Vendor/MSFT/WindowsDefenderApplicationGuard/Settings/AllowWindowsDefenderApplicationGuard**<br/>
-   Datatyp: **Integer**<br/>
-   Värde: **2**
+   > OMA-URI: **./Device/Vendor/MSFT/WindowsDefenderApplicationGuard/Settings/AllowWindowsDefenderApplicationGuard** <br> Datatyp: **Integer** <br> Värde: **2**
 
 4. Starta om systemet.
 

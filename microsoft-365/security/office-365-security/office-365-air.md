@@ -21,12 +21,12 @@ description: Komma igång med automatiska undersökningar och svars funktioner i
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 86414eaf0917a6cad7debc44e3f7aa604c55ae70
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8b6ef712e2e90e6798f16c54bc82f99590dbea42
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357749"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614840"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Automatisk undersökning och svar (AIR) i Microsoft Defender för Office 365
 
@@ -124,7 +124,7 @@ Behörigheter beviljas via vissa roller, till exempel de som beskrivs i följand
 |Uppgift|Nödvändiga roller|
 |---|---|
 |Aktivera AIR-funktioner|En av följande roller: <ul><li>Global administratör</li><li>Säkerhets administratör</li></ul> <p> Dessa roller kan tilldelas i [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) eller i [säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md).|
-|Starta en automatisk undersökning <p> ---eller--- <p> Godkänna eller avvisa rekommenderade åtgärder|En av följande roller, tilldelad i [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) eller i [säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md): <ul><li>Global administratör</li><li>Säkerhets administratör</li><li>Säkerhets läsare <br/>---och---</li><li>Sök och Töm (den här rollen tilldelas endast i [säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md). Du kanske måste skapa en ny roll grupp och lägga till rollen Sök och rensa i den nya roll gruppen.</li></ul>|
+|Starta en automatisk undersökning <p> ---eller--- <p> Godkänna eller avvisa rekommenderade åtgärder|En av följande roller, tilldelad i [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) eller i [säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md): <ul><li>Global administratör</li><li>Säkerhets administratör</li><li>Säkerhets läsare <br> ---och--- </li><li>Sök och Töm (den här rollen tilldelas endast i [säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md). Du kanske måste skapa en ny roll grupp och lägga till rollen Sök och rensa i den nya roll gruppen.</li></ul>|
 |
 
 ## <a name="required-licenses"></a>Nödvändiga licenser

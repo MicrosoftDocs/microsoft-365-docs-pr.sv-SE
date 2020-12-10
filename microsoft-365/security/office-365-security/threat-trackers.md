@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Lär dig mer om hot Spårare, inklusive nya viktiga Spårare, för att hjälpa din organisation att hålla dig informerad om säkerhets problem.
-ms.openlocfilehash: e173bb2b4ee6e7c54c7414c7f102d8c4d1d06641
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 551f5704337ef8989fd1568854822bc1d9d4c14b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568462"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615462"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Hot-Spårare-nya och intressanta
 
@@ -46,7 +46,7 @@ De flesta Spårare-sidor innehåller trend nummer som uppdateras regelbundet, wi
 
 Spårare är bara några av de många fantastiska funktioner som du får med [Microsoft Defender för Office 365 abonnemang 2](office-365-ti.md). Threat-Spårare inkluderar [Noteworth-Spårare](#noteworthy-trackers), [trender för Spårare](#trending-trackers), [spårade frågor](#tracked-queries)och [sparade frågor](#saved-queries).
 
-Om du vill visa och använda dina Threat-Spårare för organisationen går du till säkerhets & efterlevnad ( [https://protection.office.com](https://protection.office.com) ) och väljer hot **Management** \> **Threat-Spårare**.
+Om du vill visa och använda dina Threat-Spårare för organisationen går du till säkerhets & efterlevnad ( <https://protection.office.com> ) och väljer hot **Management** \> **Threat-Spårare**.
 
 > [!NOTE]
 > För att använda Threat-Spårare måste du vara global administratör, säkerhets administratör eller säkerhets läsare. Se [behörigheter i säkerhets & efterlevnad](permissions-in-the-security-and-compliance-center.md).

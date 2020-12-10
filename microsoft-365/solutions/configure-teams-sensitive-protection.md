@@ -3,7 +3,7 @@ title: Konfigurera team med skydd för känslig data
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du distribuerar team med skydd för känslig data.
-ms.openlocfilehash: 3c68e6690d9fdab28a5dd1369876bec5b3fd9bc7
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: ad1cf437bdbe3bd7b25347bb49698314097462ab
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528200"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49612958"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Konfigurera team med skydd för känslig data
 
@@ -56,7 +56,7 @@ När du har aktiverat känslighetsetiketter för Teams är nästa steg att skapa
 
 Att skapa en känslighetsetikett
 1. Öppna [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com).
-2. Under **Lösningar**klickar du på **Informationsskydd**.
+2. Under **Lösningar** klickar du på **Informationsskydd**.
 3. Klicka på **Skapa en etikett**.
 4. Namnge etiketten. Vi föreslår **känslig**, men du kan välja ett annat namn om denna redan används.
 5. Lägg till ett knapptips och klicka sedan på **Nästa**.
@@ -65,7 +65,7 @@ Att skapa en känslighetsetikett
 8. På sidan **Inställningar för webbplatser och grupper** ställer du **inställningar för webbplatser och grupper** till **På**.
 9. I listrutan **Sekretess för gruppanslutna teamwebbplatser i Office 365** väljer du **Privat – endast användare kan komma åt webbplatsen**.
 10. Om du vill tillåta gäståtkomst markerar du kryssrutan **Låt gruppägarna för Office 365 lägga till personer utanför organisationen i gruppen**. 
-11. Under **ohanterade enheter**väljer du **tillåta begränsad åtkomst**via webben.
+11. Under **ohanterade enheter** väljer du **tillåta begränsad åtkomst** via webben.
 12. Klicka på **Nästa**.
 13. På sidan **Auto-etiketting för Office-program** klickar du på **Nästa**.
 14. Klicka på **Skicka** och klicka sedan **Klart**.
@@ -81,7 +81,7 @@ Skapa en team för känslig information
 2. Klicka på **Skapa team** (första kortet, övre vänstra hörnet).
 3. Välj **Skapa ett team från början**.
 4. I listan **känslighet** väljer du **känslighetsetiketten** som du precis har skapat.
-5. Under **Sekretess**klickar du på **Privat**.
+5. Under **Sekretess** klickar du på **Privat**.
 6. Skriv in ett namn på teamet och klicka sedan på **Skapa**.
 7. Lägg till användare i teamet och klicka sedan på **Stäng**.
 
@@ -90,7 +90,7 @@ Skapa en team för känslig information
 På denna nivå begränsar vi skapandet av privata kanaler till teamägare.
 
 För att begränsa skapandet av en privat kanal
-1. Klicka på **Fler alternativ**i teamet och klicka sedan på **Hantera team**.
+1. Klicka på **Fler alternativ** i teamet och klicka sedan på **Hantera team**.
 2. På fliken **Inställningar**, expandera **medlemsbehörigheter**.
 3. Avmarkera kryssrutan **Tillåt att medlemmar skapar privata kanaler**.
 
@@ -114,7 +114,7 @@ Den inställning för gästdelning som du valde när du skapade etiketten (som b
 
 Uppdatera webbplatsinställningar
 1. Öppna [SharePoint Online Administrationscenter](https://admin.microsoft.com/sharepoint).
-2. Under **Webbplatser**klickar du på **Aktiva webbplatser**.
+2. Under **Webbplatser** klickar du på **Aktiva webbplatser**.
 3. Klicka på den webbplats som är kopplad till teamet.
 4. Klicka på **Redigera** under **Extern delning** på fliken **Principer**.
 5. Om du tillät gästdelning när du skapade känslighetsetiketten ska du kontrollera att **Nya och befintligt gäster** har markerats. Om du inte tillåter delning när du skapade etiketten väljer du **Bara personer i organisationen**.

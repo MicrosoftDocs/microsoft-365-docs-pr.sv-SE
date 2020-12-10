@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om vilka phishing-principer som är tillgängliga i Exchange Online Protection (EOP) och Microsoft Defender för Office 365.
-ms.openlocfilehash: 839d76c1e07b457f671f1f0eccd0a9160e4039a3
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 9d3c8c0bf2b1c440892a1099d3d0812d95027156
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568577"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615774"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-nätfiske-principer i Microsoft 365
 
@@ -129,7 +129,6 @@ För att förhindra att frågetecknet eller via-tagg läggs till i meddelanden f
 - Tillåt avsändaren till förfalskning i policyn för förfalsknings information. Med den här åtgärden kan du förhindra att via-märket visas i meddelanden från avsändaren när avsändaren av avsändar-ID är inaktive rad. Anvisningar finns i [Konfigurera förfalsknings intelligens i Microsoft 365](learn-about-spoof-intelligence.md).
 
 - [Konfigurera e-postauktorisering](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) för avsändarens domän.
-  
   - För frågetecknet i avsändarens foto, SPF eller DKIM är de viktigaste.
   - För via-taggen bekräftar du domänen i DKIM signatur eller **e-** postadressen matchar (eller är en under domän av) domänen i från-adressen.
 

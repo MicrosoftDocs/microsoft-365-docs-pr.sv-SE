@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Lär dig hur du skapar en plan för hantering av samarbete
-ms.openlocfilehash: 2fb2db16df3c83347831f4ea3489835e5037bbec
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: c27ac401d06808d1a4337e9ec7ec0700bfba19ea
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568288"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613302"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>Skapa en plan för hantering av samarbete
 
@@ -133,6 +133,8 @@ I slut ändan av hur dina styr planeringen görs beror det på hur väl du har �
 - Kan du skapa ett Microsoft 365 representanter-program för din organisation? Dessutom kan du gå med i [microsoft 365 representanter program](https://aka.ms/O365Champions) för att få idéer och funktioner för ditt eget representanter-program och för att ansluta till gillade människor och tanke på utfyllnadstecken från och med Microsoft.
 
 ## <a name="related-topics"></a>Relaterade ämnen
+
+[Planerings steg-för-steg-samarbete för samarbets styrning](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [Styrelse former i Microsofts moln antagande ramverk för Azure](https://docs.microsoft.com/azure/cloud-adoption-framework/govern)
 

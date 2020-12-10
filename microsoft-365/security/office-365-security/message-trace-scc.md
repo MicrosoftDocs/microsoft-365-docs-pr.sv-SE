@@ -13,12 +13,12 @@ ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan använda meddelande spårning i säkerhets & efterlevnad för att ta reda på vad som hände med meddelanden.
-ms.openlocfilehash: 1e9f5e21655e55f711997defcb7ace0319ff4be6
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 46aa454ff709e9b17c3b18992757a9a4c3a51247
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197543"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616758"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Meddelandespårning i Säkerhets- och efterlevnadscenter
 
@@ -41,7 +41,7 @@ Meddelande spårning i säkerhets & uppfyller kraven på den ursprungliga meddel
 
 1. Öppna säkerhets & Compliance Center på <https://protection.office.com> .
 
-2. Expandera **e-postflödet**och välj sedan **meddelande spårning**.
+2. Expandera **e-postflödet** och välj sedan **meddelande spårning**.
 
 ## <a name="message-trace-page"></a>Sidan meddelande spårning
 
@@ -66,7 +66,10 @@ Standardvärdena är **alla avsändare** och **alla mottagare**, men du kan anv�
 - **Till de här personerna**: Klicka i det här fältet för att välja en eller flera användare i organisationen.
 
 > [!NOTE]
-> Du kan också skriva e-postadresserna för externa avsändare och mottagare. Jokertecken stöds (till exempel `*@contoso.com` ), men du kan inte använda flera jokertecken i samma fält samtidigt. <br/><br/> Du kan klistra in flera avsändare eller mottagar listor avgränsade med semikolon ( `;` ). blank steg ( `\s` ), rad matningar ( `\r` ) eller Next-line ( `\n` ).
+>
+> - Du kan också skriva e-postadresserna för externa avsändare och mottagare. Jokertecken stöds (till exempel `*@contoso.com` ), men du kan inte använda flera jokertecken i samma fält samtidigt.
+>
+> - Du kan klistra in flera avsändare eller mottagar listor avgränsade med semikolon ( `;` ). blank steg ( `\s` ), rad matningar ( `\r` ) eller Next-line ( `\n` ).
 
 ### <a name="time-range"></a>Tidsintervall
 
@@ -108,7 +111,7 @@ Du kan lämna standardvärdet **alla** markerat, eller så kan du välja ett av 
 
 - **Status:** Meddelandet togs nyligen emot av Microsoft 365, men inga andra status data är tillgängliga ännu. Kom tillbaka om några minuter.
 
-**Obs!** de värden som **väntar,** **satts i karantän**och **filtreras som skräp post** är bara tillgängliga för sökningar som är mindre än 10 dagar. Det kan också finnas en 5-till-10 minuters fördröjning mellan den faktiska och rapporterade leverans statusen.
+**Obs!** de värden som **väntar,** **satts i karantän** och **filtreras som skräp post** är bara tillgängliga för sökningar som är mindre än 10 dagar. Det kan också finnas en 5-till-10 minuters fördröjning mellan den faktiska och rapporterade leverans statusen.
 
 #### <a name="message-id"></a>Meddelande-ID
 
@@ -134,7 +137,7 @@ Tillgängliga rapport typer är:
 
 - **Sammanfattning**: tillgänglig om tidsintervallet är mindre än 10 dagar och kräver inga ytterligare filtrerings alternativ. Resultaten är tillgängliga nästan direkt efter att du klickat på **Sök**. Rapporten returnerar upp till 20000 resultat.
 
-- **Förbättrad Sammanfattning** eller **utökad**: dessa rapporter är bara tillgängliga som nedladdnings bara CSV-filer och kräver ett eller flera av följande filtrerings alternativ oavsett tidsintervallet: **av dessa personer**, **till dessa personer**eller **meddelande-ID**. Du kan använda jokertecken för avsändare eller mottagare (till exempel \* @contoso. com). Den förbättrade sammanfattnings rapporten returnerar upp till 50000 resultat. Den utökade rapporten returnerar upp till 1000 resultat.
+- **Förbättrad Sammanfattning** eller **utökad**: dessa rapporter är bara tillgängliga som nedladdnings bara CSV-filer och kräver ett eller flera av följande filtrerings alternativ oavsett tidsintervallet: **av dessa personer**, **till dessa personer** eller **meddelande-ID**. Du kan använda jokertecken för avsändare eller mottagare (till exempel \* @contoso. com). Den förbättrade sammanfattnings rapporten returnerar upp till 50000 resultat. Den utökade rapporten returnerar upp till 1000 resultat.
 
 **Anmärkningar**:
 
@@ -142,7 +145,7 @@ Tillgängliga rapport typer är:
 
 - Du kan välja en utökad Sammanfattning eller utökad rapport för ett datum-och tidsintervall, vanligt vis är de fyra sista timmarna av arkiverade data inte tillgängliga för dessa två typer av rapporter.
 
-När du klickar på **Nästa**visas en sammanfattnings sida med de filtrerings alternativ som du har valt, en unik (redigerbar) rubrik för rapporten och e-postadressen som tar emot meddelandet när meddelande spårningen har slutförts (även redigerbart) och måste finnas i en av organisationens godkända domäner. Klicka på **Förbered rapport** för att skicka meddelande spårningen. På sidan för huvud **meddelande spårning** visas rapportens status i avsnittet **nedladdnings bara rapporter** .
+När du klickar på **Nästa** visas en sammanfattnings sida med de filtrerings alternativ som du har valt, en unik (redigerbar) rubrik för rapporten och e-postadressen som tar emot meddelandet när meddelande spårningen har slutförts (även redigerbart) och måste finnas i en av organisationens godkända domäner. Klicka på **Förbered rapport** för att skicka meddelande spårningen. På sidan för huvud **meddelande spårning** visas rapportens status i avsnittet **nedladdnings bara rapporter** .
 
 Mer information om informationen som returneras i olika rapport typer finns i nästa avsnitt.
 
@@ -174,7 +177,7 @@ Du kan klicka på kolumn rubrikerna för att sortera resultaten efter värdena i
 
 Du kan klicka på **filtrera resultat** för att filtrera resultatet efter en eller flera kolumner.
 
-Du kan exportera resultaten när du har markerat en eller flera rader genom att klicka på **Exportera resultat** och sedan välja **Exportera alla resultat**, **Exportera inlästa resultat**eller **Exportera markerade**.
+Du kan exportera resultaten när du har markerat en eller flera rader genom att klicka på **Exportera resultat** och sedan välja **Exportera alla resultat**, **Exportera inlästa resultat** eller **Exportera markerade**.
 
 #### <a name="find-related-records-for-this-message"></a>Hitta relaterade poster för det här meddelandet
 
@@ -210,7 +213,7 @@ Meddelande spårnings informationen innehåller följande ytterligare informatio
 
   - **Överföring**: mottagarna har flyttats till ett förgrenat meddelande på grund av innehålls konvertering, meddelande mottagarens gränser eller agenter.
 
-  - **Skjut**upp: meddelande leveransen uppskjuts och kan försöka igen senare.
+  - **Skjut** upp: meddelande leveransen uppskjuts och kan försöka igen senare.
 
   - **Åtgärdat**: meddelandet har omdirigerats till en ny mottagar adress baserat på en Active Directory-uppkoppling. När detta inträffar visas den ursprungliga mottagar adressen på en separat rad i meddelande spårningen tillsammans med meddelandets slutliga leverans status.
 
@@ -260,9 +263,9 @@ Tillgängliga (slutförda) förbättrade sammanfattnings rapporter finns i avsni
 
 - **connector_id**: namnet på käll-eller destinations kopplingen. Mer information om anslutningar i Exchange Online finns i [Konfigurera e-postflöde med kopplingar i Office 365](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
-- **delivery_priority** <sup>*</sup> : om meddelandet skickades med **hög**, **lägre**eller **Normal** prioritet.
+- **delivery_priority** <sup>*</sup> : om meddelandet skickades med **hög**, **lägre** eller **Normal** prioritet.
 
-<sup>*</sup>Dessa egenskaper är bara tillgängliga i förbättrade sammanfattnings rapporter.
+<sup>*</sup> Dessa egenskaper är bara tillgängliga i förbättrade sammanfattnings rapporter.
 
 ### <a name="extended-reports"></a>Utökade rapporter
 

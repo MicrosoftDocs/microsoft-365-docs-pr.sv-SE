@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft tillhandahåller hjälp för EOP på olika platser och metoder, inklusive själv support och assisterad support.
-ms.openlocfilehash: dd68200b7a3723adc7ccba899c0cc88031891197
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 3d11abee08fa3fdd7dfb659bd90e29908f9e4bda
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920436"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614864"
 ---
 # <a name="help-and-support-for-eop"></a>Hjälp och support för EOP
 
@@ -62,7 +62,7 @@ Om du vill ha mer information om hur Premier-supporten kan hjälpa din organisat
 
 1. Logga in i administrations centret för Microsoft 365.
 
-2. Om du vill ha allmänna produkt problem går du till **support** \> **fråga efter kund support** \> **Call technical support**.
+2. Om du vill ha allmänna produkt problem går du till **support** \> **fråga efter kund support** \> .
 
    För frågor innan du köper EOP, eller frågor om fakturering och prenumerationer, går du till **support** \> **fråga efter kund support för** \> **fakturering och prenumerations support**.
 
@@ -76,13 +76,13 @@ Microsoft tillhandahåller lokala eller avgiftsfria telefonnummer för produkt s
 
 |Land eller region.|För-och fakturerings frågor|Tekniska support frågor|
 |---|---|---|
-|Brasilien|Avgiftsfritt nummer: 08007621146 <br/> Lokal: 1147001999|Det|
-|Frankrike|Avgiftsfritt nummer: 0805 540 594 <br/> Lokal: 01 57 32 42 97|Det|
-|Tyskland|Avgiftsfritt nummer: 0800 589 2332 <br/>  Lokal: 069 380 789 508|Det|
-|Japan |Avgiftsfritt nummer: 0120-628860 <br/> Lokal: 343326257|Avgiftsfritt nummer: 0120-996680 <br/> Lokal: 357679793|
-|Korea|Avgiftsfritt nummer: 080-495-0880 <br/> Lokal: 234831937|Det|
-|Spanien|Avgiftsfritt nummer: 900 814 197 <br/> Lokal: 912 718 160|Det|
-|Storbritannien|Avgiftsfritt nummer: 0800 032 6417 <br/> Lokal: 0203 450 6455|Det|
+|Brasilien|Avgiftsfritt nummer: 08007621146 <br> Lokal: 1147001999|Det|
+|Frankrike|Avgiftsfritt nummer: 0805 540 594 <br> Lokal: 01 57 32 42 97|Det|
+|Tyskland|Avgiftsfritt nummer: 0800 589 2332 <br>  Lokal: 069 380 789 508|Det|
+|Japan |Avgiftsfritt nummer: 0120-628860 <br> Lokal: 343326257|Avgiftsfritt nummer: 0120-996680 <br> Lokal: 357679793|
+|Korea|Avgiftsfritt nummer: 080-495-0880 <br> Lokal: 234831937|Det|
+|Spanien|Avgiftsfritt nummer: 900 814 197 <br> Lokal: 912 718 160|Det|
+|Storbritannien|Avgiftsfritt nummer: 0800 032 6417 <br> Lokal: 0203 450 6455|Det|
 |USA|Avgiftsfritt nummer: 1-877-913-2707|Avgiftsfritt nummer: 1-800-865-9408|
 |
 

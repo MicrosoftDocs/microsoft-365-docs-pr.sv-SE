@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Lär dig hur du skapar en anpassad nytto last för utbildning för attack simulering i Microsoft Defender för Office 365.
-ms.openlocfilehash: ffb5397d9b39a35b4cb8bd0fdb3301cd156896e1
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: a8366e6cbf703ef1e1a14e216ada71200668cd14
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944598"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616278"
 ---
-# <a name="create-a-custom-payload-for-attack-simulation-training"></a>Skapa en anpassad nytto last för simulering av angrepp
+# <a name="create-a-custom-payload-for-attack-simulation-training"></a>Skapa en anpassad nyttolast för att träna på attacksimulering
 
 Microsoft har en robust nytto Last katalog för olika sociala teknik tekniker som kan para ihop med din utbildning för utskrivning av attacker. Men du kanske vill skapa anpassade nytto laster som fungerar bättre för din organisation. Här följer en beskrivning av hur du skapar en nytto last för utbildning för attack simulering via Microsoft Defender för Office 365.
 
@@ -60,7 +60,7 @@ Lägg till en egen beskrivning som beskriver indikatorn och klicka i indikatorn 
 
 ## <a name="review-payload"></a>Granska nytto Last
 
-Du är klar med att bygga din nytto Last. Nu är det dags att granska informationen och se en förhands granskning av din nytto Last. I förhands granskningen visas alla indikatorer som du har skapat. Du kan redigera varje del av nytto lasten från det här steget. **Skicka** in din betalning när du är nöjd. 
+Du är klar med att bygga din nytto Last. Nu är det dags att granska informationen och se en förhands granskning av din nytto Last. I förhands granskningen visas alla indikatorer som du har skapat. Du kan redigera varje del av nytto lasten från det här steget. **Skicka** in din betalning när du är nöjd.
 
 > [!IMPORTANT]
 > De nytto laster du har skapat har **klient organisationen** inställd som källa. När du väljer nytto laster bör du kontrol lera att du inte har filtrerat bort **klient organisationen** .

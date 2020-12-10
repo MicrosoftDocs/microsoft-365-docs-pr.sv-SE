@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Lär dig hur utbildning för att simulera attacker i Microsoft 365 Security Center påverkar anställda och får insikter från simulering och utbildning.
-ms.openlocfilehash: 6a8ee15f14475a1cebb169ab49bdb0f490c81345
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 772815add47d2e0a61187f2d687ff047a4de9c31
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357357"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615186"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Få insikter genom att träna på attacksimulering
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig att visa och hantera meddelanden i karantän för alla användare i Exchange Online Protection (EOP). Administratörer i organisationer med Microsoft Defender för Office 365 kan också hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams.
-ms.openlocfilehash: fed05ee202e4352200a80516e0ec1b62c8421178
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8f4ca5caef9bf244315db2271011126ad4d7976e
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357139"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616782"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Hantera meddelanden och filer i karantän som administratör i EOP
 
@@ -42,7 +42,7 @@ Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav 
 
 - Gå till <https://protection.office.com> för att öppna Säkerhets- och efterlevnadscenter. Om du vill öppna karantänsidan direkt går du till <https://protection.office.com/quarantine>.
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Du måste tilldelas behörigheter innan du kan hantera karantänen som administratör. Behörigheterna styrs av **karantän** rollen i säkerhets & Compliance Center. Som standard tilldelas den här rollen **organisations hantering** (globala administratörer), **karantän administratören** och **säkerhets administratörs** rollerna för säkerhets &. Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
@@ -99,10 +99,10 @@ Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav 
      - **Skräppost**
      - **Hög exakthet Phish**
 
-   - **Principtyp**: filtrera meddelanden efter principtyp:
+   - **Princip typ**: filtrera meddelanden efter princip typ:
      - **Policy för mot skadlig program vara**
      - **Principer för säkra bifogade filer**
-     - **Princip för skydd mot nätfiske**
+     - **Policy för Phish**
      - **Principer för värd innehålls filter** (policy för skräp post)
      - **Transport regel**
 
@@ -118,12 +118,12 @@ Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav 
 
    - **Avsändarens e-postadress**: En enskild avsändarens e-postadress.
 
-   - **Principnamn**: använd meddelandets hela principnamn. Sökningen är inte skiftlägeskänslig.
+   - **Princip namn**: Använd hela meddelandets princip namn. Sökningen är inte skiftlägeskänslig.
 
    - **Mottagarens e-postadress**: En enskild mottagares e-postadress.
 
    - **Ämne**: Använd meddelandets hela ämne. Sökningen är inte skiftlägeskänslig.
-  
+
    - **Princip namn**: namnet på den policy som var ansvarig för quarantining meddelandet.
 
    När du har angett sökvillkor klickar du på ![knappen Uppdatera](../../media/scc-quarantine-refresh.png) **Uppdatera**, så filtreras resultatet.
@@ -165,7 +165,7 @@ När du har valt ett meddelande har du flera alternativ för vad du kan göra me
   - Välj något av följande alternativ:
     - **Släpp meddelanden till alla mottagare**
     - **Släpp meddelanden till specifika mottagare**
-    - **Släpp meddelanden till andra personer**: Obs! det går inte att släppa skadliga program mot andra personer än de ursprungliga mottagarna. 
+    - **Släpp meddelanden till andra personer**: Obs! det går inte att släppa skadliga program mot andra personer än de ursprungliga mottagarna.
 
   Klicka på **Släpp meddelandet** när du är klar.
 

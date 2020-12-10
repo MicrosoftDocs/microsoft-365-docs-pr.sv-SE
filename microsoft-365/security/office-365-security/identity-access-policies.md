@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: b4468bfc7ef4b6f76d44b328f4e5b6d61d7f06ac
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 0a9c09e33eb8fd5d03fcbdf44701544e656673d2
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357845"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615162"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Vanliga principer för identitets- och enhetsåtkomst
 
@@ -41,7 +41,7 @@ Följande diagram illustrerar den rekommenderade uppsättningen principer. Det v
 
 Här är en ensidig PDF-sammanfattning med länkar till enskilda principer:
 
-[![Bild av knapp för identitet och enhets skydd för Microsoft 365-åhörar kopia](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br/>  [Visa som en PDF-fil](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Ladda ned som PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
+[![Bild av knapp för identitet och enhets skydd för Microsoft 365-åhörar kopia](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [Visa som en PDF-fil](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Ladda ned som PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
 
 I resten av den här artikeln beskrivs hur du konfigurerar dessa principer.
 
@@ -155,7 +155,7 @@ I avsnittet **uppgifter** :
 |Användare och grupper|Inkludera|**Välj användare och grupper > användare och grupper**: Välj specifika grupper som innehåller riktade användar konton.|Börja med gruppen som innehåller pilot användar konton.|
 ||Ta|**Användare och grupper**: Välj en undantags grupp för villkorlig åtkomst. tjänst konton (program identiteter).|Medlemskapet bör ändras efter behov.|
 |Moln program eller-åtgärder|**> moln program inkluderar**|**Välj appar**: Välj de program som motsvarar klienterna som inte stöder modern lösenordsautentisering.||
-|Situationer|**Klient program**|Välj **Ja** för att **Konfigurera** <br/> Avmarkera kryss markeringar för **webbläsare** och **mobilappar och Station ära klienter**||
+|Situationer|**Klient program**|Välj **Ja** för att **Konfigurera** <p> Avmarkera kryss markeringar för **webbläsare** och **mobilappar och Station ära klienter**||
 |
 
 I avsnittet **Access Controls** :
@@ -182,7 +182,7 @@ Logga in på [Microsoft Azure-portalen ( https://portal.azure.com)](https://port
 
 I avsnittet **uppgifter** :
 
-|Skriv|Fjärråtkomstsegenskaper|Värden|Fattning|
+|Type (Typ)|Fjärråtkomstsegenskaper|Värden|Fattning|
 |---|---|---|---|
 |Användare|Inkludera|**Alla användare**|Använda|
 |Risk för användare|**Högsta**||Använda|
@@ -190,7 +190,7 @@ I avsnittet **uppgifter** :
 
 I avsnittet andra **uppgifter** :
 
-|Skriv|Fjärråtkomstsegenskaper|Värden|Fattning|
+|Type (Typ)|Fjärråtkomstsegenskaper|Värden|Fattning|
 |---|---|---|---|
 |Åtkomst|**Tillåt åtkomst**||Använda|
 |||**Kräv lösen ords ändring**|Check|
@@ -275,7 +275,7 @@ Du måste skapa en princip för varje dator, telefon eller surfplatta:
 - Windows 8,1 och senare
 - Windows 10 och senare
 
-Om du vill skapa principer för efterlevnadsprinciper loggar du in i [administrations centret för Microsoft slut punkts hanteraren](https://endpoint.microsoft.com) med dina administratörs uppgifter och navigerar **sedan till principer** för principer för  >  **efterlevnadsprinciper**  >  **Policies**. Välj **Skapa princip**.
+Om du vill skapa principer för efterlevnadsprinciper loggar du in i [administrations centret för Microsoft slut punkts hanteraren](https://endpoint.microsoft.com) med dina administratörs uppgifter och navigerar **sedan till principer** för principer för \> **efterlevnadsprinciper** \> . Välj **Skapa princip**.
 
 Om principer för enhetskompatibilitet ska distribueras måste de kopplas till användar grupper. Du tilldelar en policy när du har skapat och sparat den. I Admin Center väljer du policy och sedan **uppgifter**. När du har valt de grupper som du vill ta emot principen för väljer du **Spara** för att spara grupp tilldelningen och distribuera policyn.
 
@@ -287,7 +287,7 @@ Följande inställningar rekommenderas för datorer med Windows 10 och senare, e
 
 Information om **utvärderings regler för tjänsten för Hälsoattestering för Windows >** i den här tabellen.
 
-|Fjärråtkomstsegenskaper|Värde|Fattning|
+|Fjärråtkomstsegenskaper|Value|Fattning|
 |---|---|---|
 |Kräv BitLocker|Nödvändig|Använda|
 |Kräv säker start för att vara aktive rad på enheten|Nödvändig|Använda|
@@ -300,29 +300,29 @@ För **Configuration Manager-efterlevnad** väljer du **Kräv**.
 
 Information om **säkerhet** finns i den här tabellen.
 
-|Skriv|Fjärråtkomstsegenskaper|Värde|Fattning|
+|Type (Typ)|Fjärråtkomstsegenskaper|Value|Fattning|
 |---|---|---|---|
 |Lösenord|Kräv lösen ord för att låsa upp mobila enheter|Nödvändig|Använda|
 ||Enkla lösen ord|Blockera|Använda|
 ||Lösen ords typ|Enhetens standard|Använda|
-||Minsta längd på lösen ord|18.6|Skriv|
-||Maximalt antal minuter av inaktivitet innan lösen ord krävs|0,15|Skriv <br/> Den här inställningen stöds för Android-versionerna 4,0 och senare eller KNOX 4,0 och senare. För iOS-enheter stöds det för iOS 8,0 och senare.|
-||Lösen ordet upphör (dagar)|41|Skriv|
-||Antal tidigare lösen ord för att förhindra åter användning|T5|Skriv|
+||Minsta längd på lösen ord|18.6|Type (Typ)|
+||Maximalt antal minuter av inaktivitet innan lösen ord krävs|0,15|Type (Typ) <p> Den här inställningen stöds för Android-versionerna 4,0 och senare eller KNOX 4,0 och senare. För iOS-enheter stöds det för iOS 8,0 och senare.|
+||Lösen ordet upphör (dagar)|41|Type (Typ)|
+||Antal tidigare lösen ord för att förhindra åter användning|T5|Type (Typ)|
 ||Kräv lösen ord när enheten återgår från Idle-tillstånd (mobil och Holographic)|Nödvändig|Tillgängligt för Windows 10 och senare|
 |Kryptering|Kryptering av data lagring på enhet|Nödvändig|Använda|
 |Enhets säkerhet|Vägg|Nödvändig|Använda|
 ||Viktigt|Nödvändig|Använda|
-||Antispionprogram|Nödvändig|Använda <br/> För den här inställningen krävs en antispionprograms lösning registrerade i Windows säkerhets Center.|
+||Antispionprogram|Nödvändig|Använda <p> För den här inställningen krävs en antispionprograms lösning registrerade i Windows säkerhets Center.|
 |Defender|Microsoft Defender antimalware|Nödvändig|Använda|
-||Microsoft Defender antimalware-version||Skriv <br/> Stöds endast för Windows 10-skrivbordet. Microsoft rekommenderar att versions nummer inte överstiger fem gånger från den senaste versionen.|
+||Microsoft Defender antimalware-version||Type (Typ) <p> Stöds endast för Windows 10-skrivbordet. Microsoft rekommenderar att versions nummer inte överstiger fem gånger från den senaste versionen.|
 ||Microsoft Defender antimalware-signatur uppdaterad|Nödvändig|Använda|
-||Real tids skydd|Nödvändig|Använda <br/> Stöds endast för Windows 10-skrivbordet|
+||Real tids skydd|Nödvändig|Använda <p> Stöds endast för Windows 10-skrivbordet|
 |
 
-#### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender för Endpoint
+#### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender för slut punkt
 
-|Skriv|Fjärråtkomstsegenskaper|Värde|Fattning|
+|Type (Typ)|Fjärråtkomstsegenskaper|Value|Fattning|
 |---|---|---|---|
 |Microsoft Defender för slut punkts regler|Kräv att enheten bevaras på eller under maskin risk poängen|Risk|Använda|
 |

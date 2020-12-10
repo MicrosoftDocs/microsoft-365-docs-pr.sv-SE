@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Lär dig hur du skapar en namn princip för Microsoft 365 Groups.
-ms.openlocfilehash: 55faf5c61d577b35b34923efc7b65457fe46de29
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 15fcbace737398c6edd2062e72622e8551ebd222
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377611"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613508"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 grupper namn princip
 
@@ -45,7 +45,7 @@ För att använda Azure AD-grupprinciper för Microsoft 365-grupper måste du ha
 
 Det här är också obligatoriskt för administratören som skapar namn princip för grupper.
 
-## <a name="prefix-suffix-naming-policy"></a>Prefix – namngivnings princip för suffix
+## <a name="prefix-suffix-naming-policy"></a>Prefix-Suffix namn princip
 
 Prefix och suffix kan antingen vara fasta strängar eller användarattribut.
 
@@ -122,15 +122,19 @@ Vissa administratörer undantas från dessa principer, i alla grupp arbets belas
 
 Så här skapar du en namngivnings princip:
 
-1. Klicka på **grupper**under **Hantera**i [Azure Active Directory](https://aad.portal.azure.com).
-2. Klicka på **namn princip**under **Inställningar**.
+1. Klicka på **grupper** under **Hantera** i [Azure Active Directory](https://aad.portal.azure.com).
+2. Klicka på **namn princip** under **Inställningar**.
 3. Välj fliken för att **namnge principer** .
-4. Under **aktuell princip**väljer du om du vill kräva ett prefix eller ett suffix eller bådadera och markerar lämpliga kryss rutor.
+4. Under **aktuell princip** väljer du om du vill kräva ett prefix eller ett suffix eller bådadera och markerar lämpliga kryss rutor.
 5. Välj mellan **attribut** och **sträng** för varje rad och ange sedan ett attribut eller en sträng.
 6. När du har lagt till de prefix och suffix du behöver klickar du på **Spara**.
 
 ![Skärm bild av inställningarna för namngivnings princip för grupper i Azure Active Directory](../media/groups-naming-policy-azure.png)
 
 ## <a name="related-topics"></a>Relaterade ämnen
+
+[Planerings steg-för-steg-samarbete för samarbets styrning](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Skapa en plan för hantering av samarbete](collaboration-governance-first.md)
 
 [Azure Active Directory-cmdlets för konfiguration av grupp inställningar](https://go.microsoft.com/fwlink/?linkid=868341)

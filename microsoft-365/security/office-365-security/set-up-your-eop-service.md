@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Administratörer kan läsa mer om hur du installerar ett fristående Exchange Online Protection (EOP) för att skydda lokala e-postmiljöer.
-ms.openlocfilehash: 53386b700c2a2832cf16d47da0678dfb91c5b6d7
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ab34d715bd8196bb2376926402f6a88018d1d7ae
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197173"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615678"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Konfigurera din fristående EOP-tjänst
 
@@ -29,7 +29,9 @@ ms.locfileid: "48197173"
 I det här avsnittet förklaras hur du konfigurerar fristående Exchange Online Protection (EOP). Om du kommer hit från guiden Office 365-domäner går du tillbaka till guiden för Office 365-domäner om du inte vill använda Exchange Online Protection. Om du vill ha mer information om hur du konfigurerar anslutningar kan du läsa [Konfigurera e-postflöde med kopplingar i Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 > [!NOTE]
-> I det här avsnittet förutsätts det att du har lokala post lådor och du vill skydda dem med EOP, som kallas ett fristående scenario. Om du vill hantera alla dina post lådor i molnet med Exchange Online behöver du inte utföra alla steg i det här avsnittet. Gå till [Jämför Exchange Online-abonnemang](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) för att registrera dig och köpa moln post lådor. Om du vill använda en del av dina post lådor på lokala platser och i molnet, kallas detta ett hybrid scenario. Det kräver mer avancerade inställningar för e-postflöde. Med [hybrid distributioner av Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid) förklaras hybrid meddelanden och länkar till resurser som visar hur du ställer in det.
+> I det här avsnittet förutsätts det att du har lokala post lådor och du vill skydda dem med EOP, som kallas ett fristående scenario. Om du vill hantera alla dina post lådor i molnet med Exchange Online behöver du inte utföra alla steg i det här avsnittet. Gå till [Jämför Exchange Online-abonnemang](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) för att registrera dig och köpa moln post lådor.
+>
+> Om du vill använda en del av dina post lådor på lokala platser och i molnet, kallas detta ett hybrid scenario. Det kräver mer avancerade inställningar för e-postflöde. Med [hybrid distributioner av Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid) förklaras hybrid meddelanden och länkar till resurser som visar hur du ställer in det.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
@@ -96,4 +98,6 @@ I det här läget har du bekräftat tjänste leverans för en korrekt konfigurer
 - Om du vill köra ett utgående e-PostTest kan du skicka ett e-postmeddelande från en användare i din organisation till ett webbaserat e-postkonto och bekräfta att meddelandet har tagits emot.
 
 > [!TIP]
-> När du har slutfört installationen behöver du inte utföra några extra steg för att göra EOP för att ta bort skräp post och skadlig program vara. EOP tar bort skräp post och malware automatiskt. Men du kan finjustera dina inställningar utifrån dina företags behov. Mer information finns i [anti-spam och skydd mot skadlig program vara i Office 365](anti-spam-and-anti-malware-protection.md) och [Konfigurera förfalsknings information](learn-about-spoof-intelligence.md). <br/><br/> Nu när din tjänst körs rekommenderar vi att du läser [metod tips för att konfigurera EOP](best-practices-for-configuring-eop.md), som beskriver rekommenderade inställningar och överväganden när du har konfigurerat EOP.
+> När du har slutfört installationen behöver du inte utföra några extra steg för att göra EOP för att ta bort skräp post och skadlig program vara. EOP tar bort skräp post och malware automatiskt. Men du kan finjustera dina inställningar utifrån dina företags behov. Mer information finns i [anti-spam och skydd mot skadlig program vara i Office 365](anti-spam-and-anti-malware-protection.md) och [Konfigurera förfalsknings information](learn-about-spoof-intelligence.md).
+>
+> Nu när din tjänst körs rekommenderar vi att du läser [metod tips för att konfigurera EOP](best-practices-for-configuring-eop.md), som beskriver rekommenderade inställningar och överväganden när du har konfigurerat EOP.

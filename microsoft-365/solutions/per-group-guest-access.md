@@ -1,5 +1,5 @@
 ---
-title: Hindra gäst användare från att läggas till i en viss grupp
+title: Förhindra att gäster läggs till i en viss grupp
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,15 +14,15 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Lär dig hur du hindrar gäst användare från att läggas till i en viss grupp
-ms.openlocfilehash: 91c7560186fb0b954075e9ff9c997b34121951cd
-ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
+description: Lär dig hur du förhindrar att gäster läggs till i en viss grupp
+ms.openlocfilehash: 99e78932b29d25054922b56fcadb608a7dfca432
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48651356"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613062"
 ---
-# <a name="prevent-guest-users-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Hindra gäst användare från att läggas till i en viss Microsoft 365-grupp eller Microsoft Teams-team
+# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Förhindra att gäster läggs till i en viss Microsoft 365-grupp eller Microsoft Teams-team
 
 Om du vill tillåta gäst åtkomst till de flesta grupper och team, men om du vill förhindra gäst åtkomst kan du blockera gäst åtkomst för enskilda grupper och team. (Blockering av gäst åtkomst till ett team utförs genom att blockera gäst åtkomst till den associerade gruppen.) Detta förhindrar att nya gäster läggs till, men inga gäster som redan finns i gruppen eller teamet tas bort.
 
@@ -69,7 +69,7 @@ Verifieringen ser ut så här:
   
 ## <a name="allow-or-block-guest-access-based-on-their-domain"></a>Tillåta eller blockera gäst åtkomst baserat på deras domän
 
-Du kan tillåta eller blockera gäst användare som använder en viss domän. Om ditt företag till exempel har ett samarbete med ett annat företag (Fabrikam) kan du lägga till Fabrikam i listan Tillåt så att användarna kan lägga till dem i sina grupper.
+Du kan tillåta eller blockera gäster som använder en viss domän. Om ditt företag till exempel har ett samarbete med ett annat företag (Fabrikam) kan du lägga till Fabrikam i listan Tillåt så att användarna kan lägga till dem i sina grupper.
 
 Mer information finns i [tillåta eller blockera inbjudningar för B2B-användare från specifika organisationer](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).
 
@@ -77,7 +77,7 @@ Mer information finns i [tillåta eller blockera inbjudningar för B2B-användar
 
 Som standard är inte gästerna synliga i den globala adress listan för Exchange. Följ stegen nedan om du vill göra en gäst synlig i den globala adress listan.
 
-Hitta gäst användarens ObjectID genom att köra:
+Hitta gästens ObjectID genom att köra:
 
 ```PowerShell
 Get-AzureADUser -Filter "userType eq 'Guest'"
@@ -89,7 +89,11 @@ Kör sedan följande värden för ObjectID, GivenName, efter namn, DisplayName o
 Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList $true -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -TelephoneNumber '555-555-5555'
 ```
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-topics"></a>Relaterade ämnen
+
+[Planerings steg-för-steg-samarbete för samarbets styrning](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Skapa en plan för hantering av samarbete](collaboration-governance-first.md)
 
 [Hantera grupp medlemskap i administrations centret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/create-groups/add-or-remove-members-from-groups)
   

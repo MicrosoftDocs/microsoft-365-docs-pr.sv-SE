@@ -2,7 +2,7 @@
 title: Samar beta med personer utanför organisationen
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Lär dig hur du konfigurerar Microsoft 365-appar som team, OneDrive och SharePoint för samarbete med personer utanför organisationen.
-ms.openlocfilehash: 60789041abca98769fa25e2f299ee2d7eebe0726
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+ms.openlocfilehash: 374ad8f5ec37fc0900fb38cb4e0f4743a02c4da4
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49029987"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613460"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Samar beta med personer utanför organisationen
 

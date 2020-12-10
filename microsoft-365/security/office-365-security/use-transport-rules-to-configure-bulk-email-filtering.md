@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur de använder regler för e-postflöde (transport regler) för att identifiera och filtrera Mass utskick (grå e-post) i Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 82a93cdc7375468748f241e2d15d729811095330
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 1f88358973648846d650700bb5939c052851c789
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600315"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615642"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>Använda e-postflödesregler för att filtrera massutskick i EOP
 
@@ -39,12 +39,12 @@ I det här avsnittet förklaras hur du skapar dessa regler för e-post i adminis
 - Du måste tilldelas behörigheter innan du kan göra följande:
 
   - I Exchange Online kan du läsa "mail flöde"-posten i [funktioner i Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/feature-permissions).
-  
+
   - I fristående EOP behöver du Transport regel rollen som är tilldelad till rollerna i, ComplianceManagement och RecordsManagement som standard. Mer information finns i [behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd UK för att ändra listan över medlemmar i roll grupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Om du vill öppna UK i Exchange Online läser du [administrations Center för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center). Information om hur du öppnar UK i fristående EOP finns i [administrations Center för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Mer information om regler för e-postflöden i Exchange Online och fristående EOP finns i följande avsnitt:
 
@@ -62,7 +62,7 @@ I det här avsnittet förklaras hur du skapar dessa regler för e-post i adminis
 
 ## <a name="use-the-eac-to-create-mail-flow-rules-that-filter-bulk-email"></a>Använd UK för att skapa regler för e-postflöde som filtrerar Mass utskick
 
-1. Gå till regler för **e-postflöde** i UK \> **Rules**.
+1. Gå till regler för **e-postflöde** i UK \> .
 
 2. Klicka på **Lägg** till ![ ikonen Lägg till ](../../media/ITPro-EAC-AddIcon.png) och välj sedan **skapa en ny regel**.
 
@@ -93,7 +93,7 @@ I det här avsnittet förklaras hur du skapar dessa regler för e-post i adminis
 
        När du är klar klickar du på **OK**.
 
-     - **Ämne eller brödtext** \> **ämne eller brödtext inkluderar något av**följande: i dialog rutan **Ange ord eller fraser** som visas anger du ett av nedanstående värden, klickar på **Lägg** till ![ Lägg till ikonen ](../../media/ITPro-EAC-AddIcon.png) och upprepar tills du har angett alla värden.
+     - **Ämne eller brödtext** \> **ämne eller brödtext inkluderar något av** följande: i dialog rutan **Ange ord eller fraser** som visas anger du ett av nedanstående värden, klickar på **Lägg** till ![ Lägg till ikonen ](../../media/ITPro-EAC-AddIcon.png) och upprepar tills du har angett alla värden.
 
        - `to change your preferences or unsubscribe`
        - `Modify email preferences or unsubscribe`
@@ -115,7 +115,7 @@ I det här avsnittet förklaras hur du skapar dessa regler för e-post i adminis
 
    - **Gör följande**: Välj **ändra meddelande egenskaper** \> **ange nivån för skräp post (SCL)**. I dialog rutan **Ange SCL** som visas konfigurerar du en av följande inställningar:
 
-     - Om du vill markera meddelanden som **skräp post**väljer du **6**. Den åtgärd som du har konfigurerat för **skräp post** filtrering verdicts i policyn för skräp post hantering tillämpas på meddelandena (standardvärdet **flyttas till mappen skräp post**).
+     - Om du vill markera meddelanden som **skräp post** väljer du **6**. Den åtgärd som du har konfigurerat för **skräp post** filtrering verdicts i policyn för skräp post hantering tillämpas på meddelandena (standardvärdet **flyttas till mappen skräp post**).
 
      - Om du vill markera meddelanden som **skräp post** väljer du **9**. Den åtgärd som du har konfigurerat för filtrering av skräp post med **hög exakthet** verdicts i dina meddelanden (standardvärdet **flyttas till mappen skräp post**).
 
@@ -149,7 +149,7 @@ Detaljerad information om syntax och parametrar finns i [New-TransportRule](http
 
 Gör något av följande om du vill kontrol lera att du har konfigurerat regler för e-postflöde för filtrering av Mass utskick:
 
-- Gå till regler för **e-postflöde** i UK och \> **Rules** \> Välj regeln \> Klicka på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-EditIcon.png) och kontrol lera inställningarna.
+- Gå till regler för **e-postflöde** i UK och \>  \> Välj regeln \> Klicka på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-EditIcon.png) och kontrol lera inställningarna.
 
 - Ersätt \<Rule Name\> med regel namnet i PowerShell och kör följande kommando för att verifiera inställningarna:
 

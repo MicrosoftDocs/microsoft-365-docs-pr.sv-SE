@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Vad är metod tips för säkerhets inställningar för Exchange Online Protection (EOP) och Defender för Office 365? Vad är de senaste rekommendationerna för standard skydd? Vad ska användas om du vill veta mer? Vilka extrafunktioner får du om du även använder Defender för Office 365?
-ms.openlocfilehash: ee450c8da346d5815710afe2622f8f2c600132d4
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 192e37a1a9a373f7b6712600bc3c81189f7c51ad
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367219"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615966"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Rekommenderade inställningar för EOP och Microsoft Defender för Office 365-säkerhet
 
@@ -263,8 +263,8 @@ I PowerShell använder du cmdleten [set-AtpPolicyForO365](https://docs.microsoft
 |Säkerhetsfunktionens namn|Standard|Standard|Tillåts|Kommentar|
 |---|:---:|:---:|:---:|---|
 |**Aktivera ATP för SharePoint, OneDrive och Microsoft Teams** <p> _EnableATPForSPOTeamsODB_|På <p> `$true`|På <p> `$true`||
-|**Aktivera säkra dokument för Office-klienter**<bt/><br/> _EnableSafeDocs_|På <p> `$true`|På <p> `$true`|Den här inställningen är bara tillgänglig med Microsoft 365 E5-eller Microsoft 365 E5-säkerhets licenser. Mer information finns i [säkra dokument i Microsoft Defender för Office 365](safe-docs.md).|
-|**Tillåt att personer klickar via skyddad vy även om säkra dokument har identifierat filen som skadlig**<bt/><br/> _AllowSafeDocsOpen_|Av <p> `$false`|Av <p> `$false`|Den här inställningen är relaterad till säkra dokument.|
+|**Aktivera säkra dokument för Office-klienter** <p> _EnableSafeDocs_|På <p> `$true`|På <p> `$true`|Den här inställningen är bara tillgänglig med Microsoft 365 E5-eller Microsoft 365 E5-säkerhets licenser. Mer information finns i [säkra dokument i Microsoft Defender för Office 365](safe-docs.md).|
+|**Tillåt att personer klickar via skyddad vy även om säkra dokument har identifierat filen som skadlig** <p> _AllowSafeDocsOpen_|Av <p> `$false`|Av <p> `$false`|Den här inställningen är relaterad till säkra dokument.|
 |
 
 #### <a name="safe-attachments-policy-settings"></a>Princip inställningar för säkra bifogade filer

@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Microsoft 365-administratörer kan läsa mer om hur man återställer från en utpressnings tro Jan attack.
-ms.openlocfilehash: a1369e64821902e3c2a3061acd1bbebeeb6c85ac
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: ad3f044e338abeb56046538bdda8df7b8510be0e
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357103"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615906"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Återställ från en utpressnings tro Jan attack i Microsoft 365
 

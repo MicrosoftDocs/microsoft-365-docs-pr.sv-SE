@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Integrera din organisations SIEM-server med Microsoft Defender för Office 365 och relaterade hot händelser i Office 365 Activity Management API.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6253ed0133bf53bdbeca71bb595a850e25441311
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 93ff1606130c60ceb46087d28bb26f9a6d27d330
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561711"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615666"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>SIEM integrering med Microsoft Defender för Office 365
 
@@ -61,7 +61,9 @@ I följande tabell sammanfattas de värden för **AuditLogRecordType** som är r
 |
 
 > [!IMPORTANT]
-> Du måste vara global administratör eller ha rollen som säkerhets administratör tilldelad för säkerhets & Compliance Center för att konfigurera SIEM-integrering med Microsoft Defender för Office 365.<br/>Gransknings loggning måste vara aktiverat för din Microsoft 365-miljö. Om du behöver hjälp kan du läsa [Aktivera och inaktivera gransknings loggs ökning](../../compliance/turn-audit-log-search-on-or-off.md).
+> Du måste vara global administratör eller ha rollen som säkerhets administratör tilldelad för säkerhets & Compliance Center för att konfigurera SIEM-integrering med Microsoft Defender för Office 365.
+>
+> Gransknings loggning måste vara aktiverat för din Microsoft 365-miljö. Om du behöver hjälp kan du läsa [Aktivera och inaktivera gransknings loggs ökning](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## <a name="see-also"></a>Se även
 

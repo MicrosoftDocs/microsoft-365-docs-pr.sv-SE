@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Sammanfattning: Konfigurera en SharePoint Online-gruppwebbplats som är isolerad från resten av organisationen i din Microsoft 365-miljö.'
-ms.openlocfilehash: e21dccb9ef535bb997d6e62b70e5576bf531041c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6e056cd1d930d13e1ae20f8f8d0cdc9aa886f17e
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199667"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616494"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Isolerad SharePoint Online-grupps dev-och test miljö
 
@@ -35,9 +35,7 @@ SharePoint Online-gruppwebbplatser i Microsoft 365 är platser för samarbete me
 Åtkomst till SharePoint Online-gruppwebbplatser och vilka användare som kan göra styrs av SharePoint-grupper och behörighets nivåer. Som standard har SharePoint Online-webbplatser tre åtkomst nivåer:
 
 - **Medlemmar**, som kan visa, skapa och ändra resurser på webbplatsen.
-
 - **Ägare**, som har fullständig kontroll över webbplatsen, inklusive möjligheten att ändra behörigheter.
-
 - **Besökare**, vilka bara kan visa resurser på webbplatsen.
 
 I den här artikeln beskrivs hur du konfigurerar en isolerad SharePoint Online-gruppwebbplats för ett hemligt forsknings projekt med namnet ProjectX. Åtkomst kraven är:
@@ -116,7 +114,7 @@ $userName= "devvp@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "Development VP" -FirstName Development -LastName VP -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment -ForceChangePassword $false
 ```
 
-Observera det genererade lösen **New-MsolUser** ordet för utvecklings direktörs kontot och registrera det på en säker plats.
+Observera det genererade lösen  ordet för utvecklings direktörs kontot och registrera det på en säker plats.
 
 För att lägga till nya konton i de nya åtkomst grupperna kör du dessa PowerShell-kommandon från Windows Azure Active Directory-modulen för Windows PowerShell:
 
@@ -135,15 +133,15 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 Resultat
 
-- Åtkomst gruppen ProjectX-medlemmar innehåller användar kontona för lead designer och ledar forskare
+- Gruppen ProjectX-Members åtkomst innehåller användar kontona för lead designer och lead-forskare
 
-- Åtkomst gruppen ProjectX-administratörer innehåller det globala administratörs kontot för utvärderings prenumerationen
+- Gruppen ProjectX-Admins åtkomst innehåller det globala administratörs kontot för utvärderings prenumerationen
 
-- Åtkomst gruppen ProjectX-visnings program innehåller användar kontot för utvecklings användare
+- Gruppen ProjectX-Viewers åtkomst innehåller användar kontot för utvecklings användare
 
 Bild 1 visar åtkomst grupper och deras medlemskap.
 
-**Bild 1**
+**Bild 1**:
 
 ![Microsoft 365-grupperna och deras medlemskap för en isolerad SharePoint Online-gruppwebbplats](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
@@ -151,23 +149,23 @@ Bild 1 visar åtkomst grupper och deras medlemskap.
 
 Så här skapar du en SharePoint Online-gruppwebbplats för ProjectX:
 
-1. Med en webbläsare på din lokala dator (Lightweight Configuration) eller på KLIENT1 (simulerad företags konfiguration) loggar du in på Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ) med ditt globala administratörs konto.
+1. Med en webbläsare på din lokala dator (Lightweight Configuration) eller på KLIENT1 (simulerad företags konfiguration) loggar du in på Microsoft 365 Admin Center ( <https://admin.microsoft.com> ) med ditt globala administratörs konto.
 
 2. Klicka på **SharePoint** i listan med paneler.
 
 3. På den nya fliken SharePoint i webbläsaren klickar du på **+ Skapa webbplats**.
 
-4. I **grupp webbplatsens namn**skriver du **ProjectX**. Välj privata medlemmar i **Sekretess inställningar**för **att få åtkomst till webbplatsen**.
+4. I **grupp webbplatsens namn** skriver du **ProjectX**. Välj privata medlemmar i **Sekretess inställningar** för **att få åtkomst till webbplatsen**.
 
-5. I **grupp webbplats Beskrivning**skriver du **SharePoint-webbplats för ProjectX**och klickar sedan på **Nästa**.
+5. I **grupp webbplats Beskrivning** skriver du **SharePoint-webbplats för ProjectX** och klickar sedan på **Nästa**.
 
 6. På sidan **vem vill du lägga till**? klickar du på **Slutför**.
 
-7. På den nya **ProjectX-** fliken i webbläsaren klickar du på ikonen Inställningar och sedan på **webbplats behörigheter**i verktygsfältet.
+7. På den nya **ProjectX-** fliken i webbläsaren klickar du på ikonen Inställningar och sedan på **webbplats behörigheter** i verktygsfältet.
 
 8. I fönstret **Webbplatsbehörigheter** klickar du på **Inställningar för avancerade behörigheter**.
 
-9. Klicka på **Inställningar**för åtkomstbegäran på fliken ny **behörighet: Project X** i webbläsaren.
+9. Klicka på **Inställningar** för åtkomstbegäran på fliken ny **behörighet: Project X** i webbläsaren.
 
 10. I dialog rutan **Inställningar för åtkomst förfrågningar** avmarkerar **du Tillåt medlemmar att dela webbplatsen och enskilda filer och mappar** och **tillåta åtkomst förfrågningar** (så att alla tre kryss rutor är avmarkerade) och klickar sedan på **OK**.
 
@@ -183,7 +181,7 @@ Så här skapar du en SharePoint Online-gruppwebbplats för ProjectX:
 
 16. På sidan **Personer och grupper** klickar du på **Nytt**.
 
-17. Skriv **ProjectX – administratörer**i dialog rutan **dela** och klicka sedan på **dela**.
+17. Skriv **ProjectX – administratörer** i dialog rutan **dela** och klicka sedan på **dela**.
 
 18. Klicka på bakåtknappen i webbläsaren.
 
@@ -191,19 +189,19 @@ Så här skapar du en SharePoint Online-gruppwebbplats för ProjectX:
 
 20. På sidan **Personer och grupper** klickar du på **Nytt**.
 
-21. Skriv **ProjectX-visnings program**i dialog rutan **dela** och klicka på **dela**.
+21. Skriv **ProjectX-visnings program** i dialog rutan **dela** och klicka på **dela**.
 
 22. Stäng fliken **personer och grupper** i webbläsaren, klicka på **ProjectX-** fliken i webbläsaren och stäng sedan fönstret **webbplats behörigheter** .
 
 Här är resultatet av att konfigurera behörigheter:
 
-- SharePoint-gruppen ProjectX medlemmar innehåller bara gruppen ProjectX-medlemmar (som bara innehåller Lead Designer och användar konton för ledar forskare) och ProjectX-gruppen (som bara innehåller det globala administratörs användar kontot).
+- SharePoint-gruppen ProjectX medlemmar innehåller bara gruppen ProjectX-Members åtkomst (som bara innehåller användar kontona Lead Designer och ledar ansvarig) och gruppen ProjectX (som bara innehåller det globala administratörs användar kontot).
 
-- SharePoint-gruppen ProjectX-ägare innehåller bara gruppen ProjectX-administratörer (som bara innehåller det globala administratörs kontot).
+- SharePoint-gruppen ProjectX-ägare innehåller bara gruppen ProjectX-Admins åtkomst (som bara innehåller det globala administratörs användar kontot).
 
-- SharePoint-gruppen ProjectX besökare innehåller bara gruppen ProjectX-visnings åtkomst (som bara innehåller användar kontot utvecklings direktör).
+- SharePoint-gruppen ProjectX besökare innehåller bara gruppen ProjectX-Viewers åtkomst (som bara innehåller användar kontot utvecklings direktör).
 
-- Medlemmar kan inte ändra behörigheter på webbplats nivå (detta kan bara göras av medlemmar i ProjectX-administratörs gruppen).
+- Medlemmar kan inte ändra behörigheter på webbplats nivå (detta kan bara utföras av medlemmar i gruppen ProjectX-Admins).
 
 - Andra användarkonton kan inte komma åt webbplatsen eller dess resurser. De kan inte heller begära åtkomst till webbplatsen.
 
@@ -219,19 +217,19 @@ Nu kan du Visa åtkomst med hjälp av användar kontot för lead designer:
 
 2. Klicka på namnet på den globala administratören och klicka sedan på **Logga ut**.
 
-3. Logga in på administrations centret för Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) med namnet Lead Designer och lösen ordet.
+3. Logga in på administrations centret för Microsoft 365 ( <https://admin.microsoft.com> ) med namnet Lead Designer och lösen ordet.
 
 4. Klicka på **SharePoint** i listan med paneler.
 
 5. På den nya **SharePoint** -fliken i webbläsaren skriver du **ProjectX** i sökrutan, aktiverar sökningen och klickar sedan på **ProjectX** -grupp webbplatsen. En ny flik visas i din webbläsare för ProjectX-gruppwebbplatsen.
 
-6. Klicka på ikonen Inställningar. Observera att det inte finns något alternativ för **webbplats behörigheter**. Det här är korrekt eftersom endast medlemmar i ProjectX-administratörs gruppen kan ändra behörigheter på webbplatsen
+6. Klicka på ikonen Inställningar. Observera att det inte finns något alternativ för **webbplats behörigheter**. Det här är korrekt eftersom bara medlemmar i gruppen ProjectX-Admins kan ändra behörigheter på webbplatsen
 
 7. Öppna Anteckningar eller en text redigerare.
 
 8. Kopiera URL-adressen till ProjectX och klistra in den på en ny rad i anteckningar eller i text redigeraren.
 
-9. Klicka på **dokument**på fliken ny **ProjectX-start** i webbläsaren.
+9. Klicka på **dokument** på fliken ny **ProjectX-start** i webbläsaren.
 
 10. Kopiera URL-adressen till ProjectX-mappen och klistra in den på en ny rad i anteckningar eller i text redigeraren.
 
@@ -249,23 +247,23 @@ Nu kan du Visa åtkomst med hjälp av användar kontot för lead designer:
 
 Nu kan du Visa åtkomst med användar kontot för utvecklings chef:
 
-1. Logga in på administrations centret för Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) med konto namnet för utvecklings sidan och lösen ordet.
+1. Logga in på administrations centret för Microsoft 365 ( <https://admin.microsoft.com> ) med konto namnet för utvecklings sidan och lösen ordet.
 
 2. Klicka på **SharePoint** i listan med paneler.
 
 3. På den nya **SharePoint** -fliken i webbläsaren skriver du **ProjectX** i sökrutan, aktiverar sökningen och klickar sedan på **ProjectX** -grupp webbplatsen. En ny flik visas i din webbläsare för ProjectX-gruppwebbplatsen.
 
-4. Klicka på **dokument**och sedan på **Document.docx** .
+4. Klicka på **dokument** och sedan på **Document.docx** .
 
 5. Prova att ändra texten på fliken **Document.docx** i webbläsaren. Du bör se ett meddelande om att **dokumentet är skrivskyddat.** Det förväntas på grund av att användar kontot för utvecklings personen endast har behörigheten Visa för webbplatsen.
 
-6. Stäng flikarna **Document.docx**, **ProjectX**och **SharePoint** i webbläsaren.
+6. Stäng flikarna **Document.docx**, **ProjectX** och **SharePoint** i webbläsaren.
 
 7. Klicka på fliken **Microsoft Office-start** , klicka på **utvecklings direktörens** namn och klicka sedan på **Logga ut**.
 
 Nu kan du Visa Access med ett användar konto som inte har behörighet:
 
-1. Logga in på administrations centret för Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) med användare 3-kontonamnet och lösen ordet.
+1. Logga in på administrations centret för Microsoft 365 ( <https://admin.microsoft.com> ) med användare 3-kontonamnet och lösen ordet.
 
 2. Klicka på **SharePoint** i listan med paneler.
 

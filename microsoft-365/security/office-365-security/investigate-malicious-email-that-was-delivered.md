@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du använder hot-och svars funktioner för att hitta och undersöka skadlig e-post.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a411e221d49a30a103de6e0f169588d13c387443
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: f3fd2e5c0f75de9a1b942e8f0baa8e9d44843de4
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561334"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616530"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Undersök skadlig e-post som har levererats i Office 365
 
@@ -62,7 +62,7 @@ Om du vill utföra vissa åtgärder, till exempel Visa meddelande rubriker eller
 |
 
 > [!NOTE]
-> För *hands versionen* är en roll och inte en roll grupp; förhands gransknings rollen måste läggas till i en befintlig roll grupp för Office 365. Rollen global administratör har tilldelats administratörs Center för Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) och rollerna säkerhets administratör och säkerhets läsare tilldelas i säkerhets & Compliance Center ( [https://protection.office.com](https://protection.office.com) ). Mer information om roller och behörigheter finns i [behörigheter i säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> För *hands versionen* är en roll och inte en roll grupp; förhands gransknings rollen måste läggas till i en befintlig roll grupp för Office 365. Rollen global administratör har tilldelats administratörs Center för Microsoft 365 ( <https://admin.microsoft.com> ) och rollerna säkerhets administratör och säkerhets läsare tilldelas i säkerhets & Compliance Center ( <https://protection.office.com> ). Mer information om roller och behörigheter finns i [behörigheter i säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Hitta misstänkt e-post som har levererats
 
@@ -71,7 +71,7 @@ Threat Explorer är en kraftfull rapport som kan hantera flera ändamål, till e
 > [!NOTE]
 > Standard sökningar i Utforskaren inkluderar för närvarande inte zapped-objekt.  Detta gäller för alla vyer, till exempel skadliga program och Phish. Om du vill inkludera Zappeda objekt måste du lägga till en "leverans åtgärd" för att ta med "borttagen av ZAP". Om du inkluderar alla alternativ visas alla leverans resultat, inklusive zapped-objekt.
 
-1. **Navigera till Threat Explorer**: gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt arbets-eller skol konto för Office 365. Då kommer du till säkerhets & Compliance Center.
+1. **Navigera till Threat Explorer**: gå till <https://protection.office.com> och logga in med ditt arbets-eller skol konto för Office 365. Då kommer du till säkerhets & Compliance Center.
 
 2. Välj **Threat Management** Explorer i navigerings fältet till vänster \> **Explorer**.
 

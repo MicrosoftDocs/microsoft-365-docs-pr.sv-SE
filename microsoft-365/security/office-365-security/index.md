@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Säkerhet i Office 365, från EOP till Defender för Office 365, abonnemang 1 och 2, standard kontra strikta säkerhets konfigurationer, med mera. Förstå vad du har och hur du skyddar dina egenskaper.
-ms.openlocfilehash: 008488149a403fdafef9de0b0f64a9a43616debe
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 84d7dcfc68ce78bfde92f3d7096cd4104355ce94
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357761"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616254"
 ---
 # <a name="office-365-security-overview"></a>Säkerhets översikt för Office 365
 
@@ -124,16 +124,16 @@ Den här snabb referensen hjälper dig att förstå vilka funktioner som ingår 
 
 |Defender för Office 365 abonnemang 1|Defender för Office 365 abonnemang 2|
 |---|---|
-|Funktioner för konfiguration, skydd och identifiering: <ul><li>[Säkra bifogade filer](atp-safe-attachments.md)</li><li>[Säkra länkar](atp-safe-links.md)</li><li>[ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Skydd mot nätfiske i Defender för Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Identifiering i realtid](threat-explorer.md)</li></ul>|Defender för Office 365 abonnemang 1-funktioner<br/>--- plus ---<br/>Funktioner för automatisering, undersökning, reparationer och utbildning:</li><li>[Hotspårare](threat-trackers.md)</li><li>[Hotutforskaren](threat-explorer.md)</li><li>[Automatiska undersökningar och svar](office-365-air.md)</li><li>[Attacksimulator](attack-simulator.md)</li></ul>|
+|Funktioner för konfiguration, skydd och identifiering: <ul><li>[Säkra bifogade filer](atp-safe-attachments.md)</li><li>[Säkra länkar](atp-safe-links.md)</li><li>[ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Skydd mot nätfiske i Defender för Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Identifiering i realtid](threat-explorer.md)</li></ul>|Defender för Office 365 abonnemang 1-funktioner <p> --- plus --- <p> Funktioner för automatisering, undersökning, reparationer och utbildning: <ul><li>[Hotspårare](threat-trackers.md)</li><li>[Hotutforskaren](threat-explorer.md)</li><li>[Automatiska undersökningar och svar](office-365-air.md)</li><li>[Attacksimulator](attack-simulator.md)</li></ul>|
 |
 
 - Microsoft Defender för Office 365 abonnemang 2 ingår i Office 365 E5, Office 365 A5 och Microsoft 365 E5.
 
-- Microsoft Defender för Office 365 Abonnemang 1 ingår i Microsoft 365 Business Premium.
+- Microsoft Defender för Office 365 abonnemang 1 ingår i Microsoft 365 Business Premium.
 
 - Microsoft Defender för Office 365 abonnemang 1 och Defender för Office 365 abonnemang 2 finns tillgängliga som tillägg för vissa prenumerationer. Om du vill ha mer information kan du läsa mer om [tillgänglighets funktioner i Microsoft Defender för Office 365-abonnemang](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-- Funktionen [Säkra dokument](safe-docs.md) är bara tillgänglig för användare med Microsoft 365 E5- eller Microsoft 365 E5 Säkerhet-licenser (inte inkluderad i Microsoft Defender för Office 365-abonnemang).
+- Funktionen för [säkra dokument](safe-docs.md) är bara tillgänglig för användare med Microsoft 365 E5-eller Microsoft 365 E5-säkerhets licenser (som inte ingår i Microsoft Defender för Office 365-abonnemang).
 
 - Om ditt nuvarande abonnemang inte innehåller Microsoft Defender för Office 365 och du vill ha det kan du [Kontakta försäljning för att starta en utvärderings version](https://go.microsoft.com/fwlink/p/?LinkId=518644)och ta reda på hur Microsoft Defender för Office 365 kan arbeta i organisationen.
 

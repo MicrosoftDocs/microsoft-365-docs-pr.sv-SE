@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom:
 - autoir
-ms.openlocfilehash: 27edc44145e7b61768d9caf00a3f308e8561d708
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 0fe8891f5ea6af215791c5f4321a93667a9d58f0
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357405"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616182"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Rapportera falskta positiva eller negativa negativ i den automatiska undersökningen och svars funktionerna
 
@@ -79,9 +79,9 @@ Med Threat Explorer kan säkerhets åtgärds gruppen Hitta ett e-postmeddelande 
 
 I åtgärds Center kan du se åtgärds åtgärder som vidtogs och eventuellt ångra åtgärden.
 
-1. Gå till [https://protection.office.com](https://protection.office.com) och logga in. Då kommer du till säkerhets & Compliance Center.
+1. Gå till <https://protection.office.com> och logga in. Då kommer du till säkerhets & Compliance Center.
 
-2. Gå till **Threat Management**  >  **utredningar**.
+2. Gå till **Threat Management** \> **utredningar**.
 
 3. I listan över undersökningar väljer du ikonen **Öppna i nytt fönster** bredvid ett objekts ID.
 

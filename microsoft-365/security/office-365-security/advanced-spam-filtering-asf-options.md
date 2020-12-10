@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om de avancerade inställningarna för skräp post filter (ASF) som är tillgängliga i principer för skräp post överföring i Exchange Online Protection (EOP).
-ms.openlocfilehash: f9295de6fb524cff16394d305ca9247d9f7ce07b
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 3ac2b45cc03327f47bd73efe54e78312cbda4bb6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49020933"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615258"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Avancerade inställningar för skräp post filter (ASF) i EOP
 
@@ -50,25 +50,25 @@ I följande avsnitt beskrivs de ASF-inställningar och-alternativ som är tillg�
 
 För varje ASF-inställning är följande alternativ tillgängliga i principer för skräp post:
 
-- **On** : ASF lägger till motsvarande X-huvud-fält i meddelandet och antingen markerar meddelandet som **skräp post** (SCL 5 eller 6 för att [öka inställningarna för skräp post](#increase-spam-score-settings)) eller **hög exakthet för skräp** post (SCL 9 för [markering som skräp post inställningar](#mark-as-spam-settings)).
+- **On**: ASF lägger till motsvarande X-huvud-fält i meddelandet och antingen markerar meddelandet som **skräp post** (SCL 5 eller 6 för att [öka inställningarna för skräp post](#increase-spam-score-settings)) eller **hög exakthet för skräp** post (SCL 9 för [markering som skräp post inställningar](#mark-as-spam-settings)).
 
-- **Av** : inställningen för ASF är inaktive rad. Det här är standardvärdet och vi rekommenderar att du inte ändrar det.
+- **Av**: inställningen för ASF är inaktive rad. Det här är standardvärdet och vi rekommenderar att du inte ändrar det.
 
-- **Test** : ASF lägger till motsvarande X-huvud-fält i meddelandet. Vad som händer med meddelandet beror på alternativ för **testläge** ( *TestModeAction* ):
+- **Test**: ASF lägger till motsvarande X-huvud-fält i meddelandet. Vad som händer med meddelandet beror på alternativ för **testläge** (*TestModeAction*):
 
-  - **Ingen** : meddelande leverans påverkas inte av ASF-identifieringen. Meddelandet gäller fortfarande andra typer av filtrering och regler i EOP.
+  - **Ingen**: meddelande leverans påverkas inte av ASF-identifieringen. Meddelandet gäller fortfarande andra typer av filtrering och regler i EOP.
 
-  - **Lägg till standard text för x-rubrik ( *AddXHeader* )** : värdet x-Head `X-CustomSpam: This message was filtered by the custom spam filter option` läggs till i meddelandet. Du kan använda det här värdet i regler för Inkorgen eller regler för e-postflöde (kallas även transport regler) för att påverka leveransen av meddelandet.
+  - **Lägg till standard text för x-rubrik (*AddXHeader*)**: värdet x-Head `X-CustomSpam: This message was filtered by the custom spam filter option` läggs till i meddelandet. Du kan använda det här värdet i regler för Inkorgen eller regler för e-postflöde (kallas även transport regler) för att påverka leveransen av meddelandet.
 
-  - **Skicka hemlig kopia ( *BccMessage* )** : de angivna e-postadresserna ( *TestModeBccToRecipients* -parametervärdet i PowerShell) läggs till i fältet Hemlig kopia i meddelandet och meddelandet skickas till övriga mottagare. I säkerhets & Compliance Center avgränsar du flera e-postadresser med semikolon (;). I PowerShell avgränsar du flera e-postadresser med kommatecken.
+  - **Skicka hemlig kopia (*BccMessage*)**: de angivna e-postadresserna ( *TestModeBccToRecipients* -parametervärdet i PowerShell) läggs till i fältet Hemlig kopia i meddelandet och meddelandet skickas till övriga mottagare. I säkerhets & Compliance Center avgränsar du flera e-postadresser med semikolon (;). I PowerShell avgränsar du flera e-postadresser med kommatecken.
 
-  **Anmärkningar** :
+  **Anmärkningar**:
 
   - Test läget är inte tillgängligt för följande ASF-inställningar:
 
-    - **ID för villkorsstyrd avsändare: hårda fel** ( *MarkAsSpamFromAddressAuthFail* )
-    - *AutoMarkAsSpamNdrBackscatter* ( **NDR** )
-    - **SPF-post: hårda fel** ( *MarkAsSpamSpfRecordHardFail* )
+    - **ID för villkorsstyrd avsändare: hårda fel** (*MarkAsSpamFromAddressAuthFail*)
+    - *AutoMarkAsSpamNdrBackscatter*( **NDR**)
+    - **SPF-post: hårda fel** (*MarkAsSpamSpfRecordHardFail*)
 
   - Samma åtgärd för test läge tillämpas på *alla* ASF-inställningar som är inställda på att **testa**. Du kan inte konfigurera olika test läges åtgärder för olika ASF-inställningar.
 
@@ -100,9 +100,9 @@ Följande ASF-inställningar anger SCL för identifierade meddelanden till 9, so
 |**Objekt-Taggar i HTML** <p> *MarkAsSpamObjectTagsInHtml*|Meddelanden som innehåller `<object>` HTML-taggar markeras som skräp post. <p> Den här taggen gör att plugin-program eller program kan köras i ett HTML-fönster.|`X-CustomSpam: Object tag in html`|
 |**Bädda in Taggar i HTML** <p> *MarkAsSpamEmbedTagsInHtml*|Meddelande som innehåller `<embed>` HTML-taggar är markerade som skräp post med hög exakthet. <p> Med den här taggen kan du bädda in olika typer av dokument i ett HTML-dokument (till exempel ljud, video eller bilder).|`X-CustomSpam: Embed tag in html`|
 |**Formulär-Taggar i HTML** <p> *MarkAsSpamFormTagsInHtml*|Meddelanden som innehåller `<form>` HTML-taggar markeras som skräp post. <p> Den här taggen används för att skapa webbplats formulär. E-postannonser inkluderar ofta denna märkning för att skicka information från mottagaren.|`X-CustomSpam: Form tag in html`|
-|**Webb program fel i HTML** <p> *MarkAsSpamWebBugsInHtml*|Ett *webb program fel* (kallas även för en *Web beacon* ) är ett grafik element (ofta i en bild punkt) som används i e-postmeddelanden för att avgöra om meddelandet lästes av mottagaren. <p> Meddelanden som innehåller webb fel är markerade som skräp post med hög exakthet. <p> Legitima nyhets brev kan använda webb program, även om många anser det här en webb integritet. |`X-CustomSpam: Web bug`|
+|**Webb program fel i HTML** <p> *MarkAsSpamWebBugsInHtml*|Ett *webb program fel* (kallas även för en *Web beacon*) är ett grafik element (ofta i en bild punkt) som används i e-postmeddelanden för att avgöra om meddelandet lästes av mottagaren. <p> Meddelanden som innehåller webb fel är markerade som skräp post med hög exakthet. <p> Legitima nyhets brev kan använda webb program, även om många anser det här en webb integritet. |`X-CustomSpam: Web bug`|
 |**Använda känslig ord lista** <p> *MarkAsSpamSensitiveWordList*|Microsoft hanterar en dynamisk men inte redigerbar lista över ord som är kopplade till potentiellt stötande meddelanden. <p> Meddelanden som innehåller ord från den känsliga ord listan i ämnet eller meddelande texten markeras som skräp post.|`X-CustomSpam: Sensitive word in subject/body`|
 |**SPF-post: hårda fel** <p> *MarkAsSpamSpfRecordHardFail*|Meddelanden som skickas från en IP-adress som inte anges i SPF-posten (SPF avsändaren Policy Framework) i DNS för källan e-postdomänen markeras som skräp post som är säkrare. <p> Test läget är inte tillgängligt för den här inställningen.|`X-CustomSpam: SPF Record Fail`|
 |**ID för villkorsstyrd avsändare: hårda fel** <p> *MarkAsSpamFromAddressAuthFail*|Meddelanden som inte fungerar på ett annat sätt är markerade som skräp post. <p> Den här inställningen kombinerar en SPF-kontroll med avsändarens ID-kontroll för att skydda mot meddelande rubriker som innehåller förfalskade avsändare. <p> Test läget är inte tillgängligt för den här inställningen.|`X-CustomSpam: SPF From Record Fail`|
-|**Autoleverans punkt för NDR** <p> *MarkAsSpamNdrBackscatter*|*Bakgrunds program kan inte använda* icke-leverans rapporter (kallas även NDR eller studsande meddelanden) orsakade av förfalskade avsändare i e-postmeddelanden. Mer information finns i [bakpunkts meddelanden och EOP](backscatter-messages-and-eop.md). <p> Du behöver inte konfigurera den här inställningen i följande miljöer, eftersom legitima NDR levereras och bakgrunds funktionen markeras som skräp post: <ul><li>Microsoft 365-organisationer med Exchange Online-postlådor.</li><li>Lokala e-postorganisationer där du dirigerar *utgående* e-post via EOP.</li></ul><br/> I fristående EOP miljöer som skyddar inkommande e-post till lokala post lådor är det bara att aktivera eller inaktivera den här inställningen: <ul><li> **På** : legitima NDR levereras och bakgrunds markering är markerat som skräp post.</li><li>**Av** : legitimt NDR och-och-filter. De mest legitima NDR skickas till den ursprungliga avsändaren. Vissa, men inte alla, bakgrunder markeras som skräp post. Efter definition kan det bara levereras till den falska avsändaren, inte till den ursprungliga avsändaren.</li></ul><br/> Test läget är inte tillgängligt för den här inställningen.|`X-CustomSpam: Backscatter NDR`|
+|**Autoleverans punkt för NDR** <p> *MarkAsSpamNdrBackscatter*|*Bakgrunds program kan inte använda* icke-leverans rapporter (kallas även NDR eller studsande meddelanden) orsakade av förfalskade avsändare i e-postmeddelanden. Mer information finns i [bakpunkts meddelanden och EOP](backscatter-messages-and-eop.md). <p> Du behöver inte konfigurera den här inställningen i följande miljöer, eftersom legitima NDR levereras och bakgrunds funktionen markeras som skräp post: <ul><li>Microsoft 365-organisationer med Exchange Online-postlådor.</li><li>Lokala e-postorganisationer där du dirigerar *utgående* e-post via EOP.</li></ul> <p> I fristående EOP miljöer som skyddar inkommande e-post till lokala post lådor är det bara att aktivera eller inaktivera den här inställningen: <ul><li> **På**: legitima NDR levereras och bakgrunds markering är markerat som skräp post.</li><li>**Av**: legitimt NDR och-och-filter. De mest legitima NDR skickas till den ursprungliga avsändaren. Vissa, men inte alla, bakgrunder markeras som skräp post. Efter definition kan det bara levereras till den falska avsändaren, inte till den ursprungliga avsändaren.</li></ul> <p> Test läget är inte tillgängligt för den här inställningen.|`X-CustomSpam: Backscatter NDR`|
 |

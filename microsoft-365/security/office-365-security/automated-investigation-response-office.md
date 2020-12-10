@@ -21,12 +21,12 @@ description: Se hur automatiserade funktioner för undersökning och svar funger
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: b901585f0a25c51c377e974c56faffe560eab5f3
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: bbc51201f9d96744ed5bc236516158a75f7af272
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357677"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615234"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Så här fungerar automatisk undersökning och svar i Microsoft Defender för Office 365
 
@@ -41,7 +41,6 @@ I den här artikeln beskrivs hur luften fungerar med flera exempel. När du är 
 - [Exempel 1: ett användardefinierat Phish meddelande öppnar en undersökning Playbook](#example-a-user-reported-phish-message-launches-an-investigation-playbook)
 - [Exempel 2: en säkerhets administratör utlöser en undersökning från Threat Explorer](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
 - [Exempel 3: en säkerhets åtgärds grupp integrerar AIR med sina SIEM med hjälp av API för hanterings aktivitet i Office 365](#example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api)
-
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Exempel: ett användardefinierat Phish meddelande öppnar en undersökning Playbook
 
@@ -58,7 +57,7 @@ Under den här fasen av rot undersökningen bedöms olika delar av e-postmeddela
 - och mycket annat.
 
 När du har slutfört rot undersökningen tillhandahåller Playbook en lista över rekommenderade åtgärder att vidta på den ursprungliga e-postmeddelandet och de enheter som är kopplade till den.
-  
+
 Nu utförs flera hot undersökningar och jakt steg:
 
 - Likartade e-postmeddelanden identifieras via e-postklusters ökning.
@@ -67,15 +66,15 @@ Nu utförs flera hot undersökningar och jakt steg:
 - En kontroll görs med Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) och ([Microsoft Defender för Office 365](office-365-atp.md)) för att se om det finns andra liknande meddelanden som rapporteras av användarna.
 - En kontroll görs för att se om en användare har fått ett problem. Den här kontrollen används för att utnyttja signaler mellan Office 365, [Microsoft Cloud App-säkerhet](https://docs.microsoft.com/cloud-app-security)och [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), som korrelerar relaterade användar aktiviteter.
 
-Under jakt fasen är riskerna och hot tilldelade till olika jakt steg. 
+Under jakt fasen är riskerna och hot tilldelade till olika jakt steg.
 
-Reparation är den sista fasen i Playbook. Under den här fasen vidtas reparations steg, baserat på undersökningen och jakt faserna. 
+Reparation är den sista fasen i Playbook. Under den här fasen vidtas reparations steg, baserat på undersökningen och jakt faserna.
 
 ## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>Exempel: en säkerhets administratör utlöser en undersökning från Threat Explorer
 
-Utöver automatiserade utredningar som löses genom en avisering kan organisationens säkerhets åtgärds team utlösa en automatiserad undersökning från en vy i [Threat Explorer](threat-explorer.md).  Genom den här undersökningen skapas också en avisering, så att Microsoft Defender-tillbud och externa SIEM-verktyg kan se att den här undersökningen har utlösts. 
+Utöver automatiserade utredningar som löses genom en avisering kan organisationens säkerhets åtgärds team utlösa en automatiserad undersökning från en vy i [Threat Explorer](threat-explorer.md).  Genom den här undersökningen skapas också en avisering, så att Microsoft Defender-tillbud och externa SIEM-verktyg kan se att den här undersökningen har utlösts.
 
-Antag till exempel att du använder vyn **mot skadlig program vara** i Utforskaren. Använd flikarna nedanför diagrammet och välj fliken **e-post** . Om du markerar ett eller flera objekt i listan aktive ras knappen **+-åtgärder** . 
+Antag till exempel att du använder vyn **mot skadlig program vara** i Utforskaren. Använd flikarna nedanför diagrammet och välj fliken **e-post** . Om du markerar ett eller flera objekt i listan aktive ras knappen **+-åtgärder** .
 
 ![Utforskaren med valda meddelanden](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
@@ -87,7 +86,7 @@ På liknande sätt som playbooks utlöst av en avisering, inkluderar automatiska
 
 ## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>Exempel: en säkerhets åtgärds grupp integrerar AIR med sina SIEM med hjälp av API för hanterings aktivitet i Office 365
 
-AIR-funktioner i Microsoft Defender för Office 365 innehåller [rapporter & information](air-view-investigation-results.md) som kan användas för att övervaka och adressera hot. Men du kan också integrera AIR-funktioner med andra lösningar. Exemplen innehåller ett system för säkerhets information och Event Management (SIEM), ett ärende hanterings system eller en anpassad rapporterings lösning. Dessa integrerings typer kan du göra med hjälp av [API för hanterings aktivitet i Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
+AIR-funktioner i Microsoft Defender för Office 365 innehåller [rapporter & information](air-view-investigation-results.md) som kan användas för att övervaka och adressera hot. Men du kan också integrera AIR-funktioner med andra lösningar. Exemplen innehåller ett system för säkerhets information och Event Management (SIEM), ett ärende hanterings system eller en anpassad rapporterings lösning. Dessa integrerings typer kan du göra med hjälp av [API för hanterings aktivitet i Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
 
 Till exempel har en organisation ställt in ett sätt för sin säkerhets åtgärds grupp för att Visa rapporterade Phish-aviseringar som redan bearbetats av AIR. Sin lösning integrerar relevanta aviseringar med organisationens SIEM-Server och ärende hanterings system. Lösningen minskar mängden falsk identifiering så att deras säkerhets åtgärd kan fokusera sin tid och ansträngning för riktiga hot. Om du vill veta mer om den här anpassade lösningen kan du läsa [teknisk community-blogg: förbättra SOC i Microsoft Defender för Office 365 och O365 Management API](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
 

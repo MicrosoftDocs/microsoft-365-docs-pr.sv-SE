@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 description: Administratörer kan läsa om hotets skydd i Microsoft 365 och konfigurera hur det ska användas för din organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 98a20c8805ff9eb735ca880cfc24a0acf9698b3e
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 646fff4550de2e07342c0fef04952846db65a8eb
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561213"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615126"
 ---
 # <a name="protect-against-threats"></a>Skydda mot hot
 
@@ -56,7 +56,7 @@ Hot Protection-funktioner är inkluderade i *alla* Microsoft-eller Office 365-ab
 |Automatisk rensning av Tom timme (för e-post)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Skydda från skadliga URL-adresser och filer i e-post och Office-dokument (säkra länkar och säkra bifogade filer)|[Microsoft Defender för Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |Aktivera ATP för arbets belastning för SharePoint, OneDrive och Microsoft Teams|[Defender för Office 365 ](atp-for-spo-odb-and-teams.md)|
-|Avancerat skydd mot nätfiske|[Defender för Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Avancerat skydd mot nätfiske|[Defender förr Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Roller och behörigheter
 
@@ -68,20 +68,20 @@ För att konfigurera Defender för Office 365-principer måste du ha en lämplig
 |---|---|
 |global administratör|[Om administratörsroller i Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
 |Säkerhets administratör|[Administratörens rollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Organisations hantering i Exchange Online|[Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>och<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
+|Organisations hantering i Exchange Online|[Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> och <p> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |
 
 Mer information finns i [behörigheter i säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="before-you-begin-turn-on-audit-logging-for-reporting-and-investigation"></a>Innan du börjar aktiverar du gransknings loggning för rapportering och undersökning
 
-Starta din gransknings loggning tidigt. Du behöver **Granska för vissa** av stegen som följer. Gransknings loggning är tillgängligt i abonnemang som innehåller [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Gransknings loggning måste vara *aktiverat* för att du ska kunna visa data i Threat Protection [email security reports](view-email-security-reports.md)-rapporter, till exempel [säkerhets instrument panelen](security-dashboard.md)och [Utforskaren](threat-explorer.md). Mer information finns i [Aktivera eller inaktivera gransknings loggs ökning](../../compliance/turn-audit-log-search-on-or-off.md).
+Starta din gransknings loggning tidigt. Du behöver **Granska för vissa** av stegen som följer. Gransknings loggning är tillgängligt i abonnemang som innehåller [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Gransknings loggning måste vara *aktiverat* för att du ska kunna visa data i Threat Protection [](view-email-security-reports.md)-rapporter, till exempel [säkerhets instrument panelen](security-dashboard.md)och [Utforskaren](threat-explorer.md). Mer information finns i [Aktivera eller inaktivera gransknings loggs ökning](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## <a name="part-1---anti-malware-protection"></a>Del 1 – skydd mot skadlig program vara
 
 [Skydd mot skadlig program](anti-malware-protection.md) vara finns i abonnemang som innehåller [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
-1. Välj skydd mot **Threat management** skadligt Management policy i [Center för säkerhet & efterlevnad](https://protection.office.com)  >  **Policy**  >  **Anti-malware**.
+1. Välj skydd mot  skadligt Management policy i [Center för säkerhet & efterlevnad](https://protection.office.com) \>  \> .
 
 2. Dubbelklicka på **standard** principen och välj sedan **Inställningar**.
 
@@ -101,7 +101,7 @@ Mer information om alternativ för principer mot skadlig program vara finns i [K
 
 I följande procedur beskrivs hur du konfigurerar en anti-nätfiske-princip i Microsoft Defender för Office 365. De här stegen är liknande för att konfigurera en skydds policy för en EOP.
 
-1. Välj **Threat Management** policy [Security & Compliance Center](https://protection.office.com)  >  **Policy**  >  **ATP-nätfiske** i säkerhets & Compliance Center.
+1. Välj **Threat Management** policy [](https://protection.office.com) \>  \> **ATP-nätfiske** i säkerhets & Compliance Center.
 
 2. Klicka på **standard policy**.
 
@@ -135,7 +135,7 @@ Om du vill veta mer om alternativen för att skydda dina nätfiske-principer lä
 
 [Skydd mot skräp post](anti-spam-protection.md) finns i abonnemang som innehåller [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
-1. I [säkerhets & Compliance Center](https://protection.office.com)väljer du **hot Management**  >  **policy**  >  **anti-spam**.
+1. I [säkerhets & Compliance Center](https://protection.office.com)väljer du **hot Management** \> **policy** \> **anti-spam**.
 
 2. Aktivera anpassade inställningar på fliken **anpassad** .
 
@@ -157,7 +157,7 @@ Skydd mot skadlig URL-adress och filer är tillgängligt i abonnemang som inneh�
 
 Om du vill konfigurera [säkra bilagor](atp-safe-attachments.md)måste du skapa minst en princip för säkra länkar.
 
-1. I [säkerhets & Compliance Center](https://protection.office.com)väljer du **hot Management**  >  **policy** säkerhets meddelanden om säkerhet  >  ,**ATP** och klickar sedan på **skapa**.
+1. I [säkerhets & Compliance Center](https://protection.office.com)väljer du **hot Management** \> **policy** säkerhets meddelanden om säkerhet \> , **ATP** och klickar sedan på **skapa**.
 
 2. Konfigurera följande inställningar i guiden **ny princip för säkra bifogade filer** som visas:
 
@@ -177,7 +177,7 @@ Om du vill konfigurera [säkra bilagor](atp-safe-attachments.md)måste du skapa 
 
 Om du vill konfigurera [säkra länkar](atp-safe-links.md)kan du läsa och redigera dina globala inställningar för säkra länkar och skapa minst en princip för säkra länkar.
 
-1. I [säkerhets & Compliance Center](https://protection.office.com)väljer du **Threat Management**  >  **policy**  >  **Safe Links** och klickar på **globala inställningar** och konfigurerar sedan följande inställningar:
+1. I [säkerhets & Compliance Center](https://protection.office.com)väljer du **Threat Management** \> **policy** \> **Safe Links** och klickar på **globala inställningar** och konfigurerar sedan följande inställningar:
 
    - Verifiera **Använd säkra länkar i: Office 365-program** är aktiverat: ![ slå på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
    - **Spåra inte när användare klickar på säkra länkar**: inaktivera den här inställningen för att spåra användare: Stäng ![ av ](../../media/scc-toggle-off.png) .
@@ -214,7 +214,7 @@ Arbets belastningar som SharePoint, OneDrive och Teams är byggda för samarbete
 > [!IMPORTANT]
 > **Innan du påbörjar den här proceduren bör du kontrol lera att gransknings loggning redan är aktiverat för din Microsoft 365-miljö**. Det gör du vanligt vis av någon som har rollen gransknings loggar som tilldelats i Exchange Online. Mer information finns i [Aktivera eller inaktivera gransknings loggs ökning](../../compliance/turn-audit-log-search-on-or-off.md)!
 
-1. I [säkerhets & Compliance Center](https://protection.office.com)väljer du **hot Management**  >  **policy**  >  **säkerhets** **Inställningar** för fler spar ande bilagor
+1. I [säkerhets & Compliance Center](https://protection.office.com)väljer du **hot Management** \> **policy** \> **säkerhets** **Inställningar** för fler spar ande bilagor
 
 2. Kontrol lera att växla mellan **ATP för SharePoint, OneDrive och Microsoft Teams** är till höger: ![ slå på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) och klicka sedan på **Spara**.
 
@@ -284,7 +284,7 @@ När du har konfigurerat hotets skydds funktioner ser du till att övervaka hur 
 
 |Vad kan jag göra?|Resurser för att få mer information|
 |---|---|
-|Se hur hot Protection-funktioner fungerar för din organisation genom att visa rapporter|[Säkerhets instrument panel](security-dashboard.md)<br/>[Säkerhets rapporter för e-post](view-email-security-reports.md)<br/>[Rapporter för Microsoft Defender för Office 365](view-reports-for-atp.md)<br/>[Hotutforskaren](threat-explorer.md)|
-|Regelbundet granska och omarbeta dina skydds principer om det behövs|[Säkra Poäng](../mtp/microsoft-secure-score.md)<br/>[Smarta rapporter och insikter](reports-and-insights-in-security-and-compliance.md)<br/>[Microsoft 365 hot-och svars funktioner](keep-users-safe-with-office-365-ti.md)|
-|Titta efter nya funktioner och tjänste uppdateringar|[Standard-och riktade versions alternativ](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365)<br/>[Meddelandecentral](https://docs.microsoft.com/microsoft-365/admin/manage/message-center)<br/>[Översikt över Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[Tjänst beskrivningar](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
+|Se hur hot Protection-funktioner fungerar för din organisation genom att visa rapporter|[Säkerhets instrument panel](security-dashboard.md) <p> [Säkerhets rapporter för e-post](view-email-security-reports.md) <p> [Rapporter för Microsoft Defender för Office 365](view-reports-for-atp.md) <p> [Hotutforskaren](threat-explorer.md)|
+|Regelbundet granska och omarbeta dina skydds principer om det behövs|[Säkra Poäng](../mtp/microsoft-secure-score.md) <p> [Smarta rapporter och insikter](reports-and-insights-in-security-and-compliance.md) <p> [Microsoft 365 hot-och svars funktioner](keep-users-safe-with-office-365-ti.md)|
+|Titta efter nya funktioner och tjänste uppdateringar|[Standard-och riktade versions alternativ](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365) <p> [Meddelandecentral](https://docs.microsoft.com/microsoft-365/admin/manage/message-center) <p> [Översikt över Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Tjänst beskrivningar](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
 |Lär dig mer om rekommenderade standard-och strikta säkerhetskonfigurationer för EOP och Defender för Office 365|[Rekommenderade inställningar för EOP och Microsoft Defender för Office 365-säkerhet](recommended-settings-for-eop-and-office365-atp.md)|

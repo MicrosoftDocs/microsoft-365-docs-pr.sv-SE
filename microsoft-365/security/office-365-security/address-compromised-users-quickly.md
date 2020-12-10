@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: Lär dig hur du påskyndar processen att upptäcka och rikta in användar konton med automatiserade undersökningar och svars funktioner i Microsoft Defender för Office 365 abonnemang 2.
-ms.openlocfilehash: 80e4529f864d83d2a1711007f0f095de39955e68
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 19c9bad33263178f92c6fe523b44497cf38ebd53
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357917"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616743"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Lösa användar konton med automatisk undersökning och svar
 
@@ -63,11 +63,11 @@ När ett användar konto är skadat utlöses notifieringarna. I vissa fall block
 
 ### <a name="view-and-investigate-restricted-users"></a>Visa och undersöka begränsade användare
 
-Det finns några olika alternativ för att gå till en lista över begränsade användare. I säkerhets & Compliance Center kan du till exempel gå till **Threat Management**  >  **Granska**  >  **begränsade användare**. I följande procedur beskrivs navigering med instrument panelen **aviseringar** , som är ett bra sätt att se olika typer av aviseringar som kan ha utlösts.
+Det finns några olika alternativ för att gå till en lista över begränsade användare. I säkerhets & Compliance Center kan du till exempel gå till **Threat Management** \> **Granska** \> **begränsade användare**. I följande procedur beskrivs navigering med instrument panelen **aviseringar** , som är ett bra sätt att se olika typer av aviseringar som kan ha utlösts.
 
-1. Gå till [https://protection.office.com](https://protection.office.com) och logga in.
+1. Gå till <https://protection.office.com> och logga in.
 
-2. Välj instrument panel för **aviseringar** i navigerings fönstret  >  **Dashboard**.
+2. Välj instrument panel för **aviseringar** i navigerings fönstret \> .
 
 3. I widgeten **andra varningar** väljer **du begränsade användare**.
 
@@ -81,7 +81,7 @@ Det finns några olika alternativ för att gå till en lista över begränsade a
 
 ### <a name="view-details-about-automated-investigations"></a>Visa information om automatiserade utredningar
 
-När en automatiserad undersökning har påbörjats kan du se dess information och resultaten i säkerhets & Compliance Center. Gå till **Threat Management**  >  **utredningar** och välj sedan en undersökning för att visa dess uppgifter.
+När en automatiserad undersökning har påbörjats kan du se dess information och resultaten i säkerhets & Compliance Center. Gå till **Threat Management** \> **utredningar** och välj sedan en undersökning för att visa dess uppgifter.
 
 Mer information finns i [Visa information om en undersökning](air-view-investigation-results.md).
 

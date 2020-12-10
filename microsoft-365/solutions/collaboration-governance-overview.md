@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Lär dig mer om hur du styr relaterade funktioner i Microsoft 365 Groups, teams, SharePoint och Yammer.
-ms.openlocfilehash: 2e4064ec64c52d4d3afe3d2e83f34079b3749f97
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 2319a0f5b8c74925569d00eb781d247fe61a5a76
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568450"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613038"
 ---
 # <a name="what-is-collaboration-governance"></a>Vad är samarbets styrning?
 
@@ -141,7 +141,7 @@ Styr funktioner för samarbete i Microsoft 365 inkluderar funktioner i Microsoft
 |Policy för giltighets tid för grupp|Ange att inaktiva grupper och team ska upphöra och tas bort efter en viss tids period.|Microsoft 365 E5 eller E3 med Azure AD Premium-licenser|
 |Gäståtkomst per grupp|Tillåt eller förhindra grupp-och grupp delning med personer utanför organisationen per grupp.|Microsoft 365 E5 eller E3|
 
-## <a name="create-your-governance-plan"></a>Skapa ditt styrningsplan
+## <a name="collaboration-governance-planning-step-by-step"></a>Planerings steg-för-steg-samarbete för samarbets styrning
 
 Följ de här grundläggande stegen för att skapa din plan ritning:
 
@@ -208,12 +208,12 @@ Den logiska arkitekturen för produktivitetstjänster i Microsoft 365, med Micro
 
 Microsoft 365 innehåller en mängd olika funktioner för informations skydd och efterlevnad. Tillsammans med Microsofts produktivitets verktyg är de här funktionerna utformade för att hjälpa organisationer att samar beta i real tid, samtidigt som de uppfyller stränga villkor för efterlevnad. 
 
-Denna uppsättning illustrationer använder en av de mest reglerade industrierna, finans tjänsterna, för att demonstrera hur dessa funktioner kan användas för att åtgärda gemensamma reglerings krav. Du kan anpassa dessa illustrationer för eget bruk. 
+Denna uppsättning illustrationer använder en av de mest reglerade industrierna, finans tjänsterna, för att demonstrera hur dessa funktioner kan användas för att åtgärda gemensamma reglerings krav. Du kan anpassa illustrationerna för eget bruk. 
 
 
 | Objekt | Beskrivning |
 |:-----|:-----|
-|[![Modell affisch: Microsoft 365 informations skydd och funktioner för regelefterlevnad](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Engelska: [Ladda ned som en PDF-](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) \| [fil laddas som Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Japanska: [Ladda ned som PDF-](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf) \| [nedladdning som Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> Uppdaterat 2020 november|Beskrivs <ul><li>  Microsoft informations skydd och skydd mot data förlust</li><li>Bevarande principer och bevarande etiketter </li><li>Informationsbarriärer</li><li>Kommunikationsefterlevnad</li><li>Insider-risk</li><li>Data intag från tredje part</li>|
+|[![Modellaffisch: Microsoft 365 illustrationer för informationsskydd och efterlevnadsfunktioner](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Engelska:[Ladda ned som PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [Hämta som Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japanska[Ladda ned som PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)\| [Hämta som Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Uppdaterad i november 2020|Innehåller: <ul><li>  Microsoft Informationsskydd och dataförlustskydd </li><li>Bevarande principer och bevarande etiketter </li><li>Informationsbarriärer</li><li>Efterlevnad av kommunikation</li><li>Intern risk</li><li>Datainmatning för tredje part</li>|
 
 ## <a name="conference-sessions"></a>Konferens-sessioner
 

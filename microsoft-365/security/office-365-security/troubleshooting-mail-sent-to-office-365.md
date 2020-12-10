@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Den här artikeln innehåller felsöknings information för problem med att skicka e-post till Inkorgen i Microsoft 365 & metod tips för Mass utskick till Microsoft 365-kunder.
-ms.openlocfilehash: 895f2651529cd46968d053fefac10cb22b6a5d86
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 8b7c008f827a579e234d8a8feab008d36ecfe064
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568560"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615414"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Felsöka e-post som skickas till Microsoft 365
 
@@ -92,11 +92,11 @@ Om du ofta utför Mass utskick av e-post till Microsoft 365-användare och vill 
 
 Rätt:
 
-> Från: marketing@shoppershandbag.com <br/> Ämne: Uppdaterad katalog för jul säsongen!
+> Från: marketing@shoppershandbag.com <br> Ämne: Uppdaterad katalog för jul säsongen!
 
 Fel:
 
-> Från: someone@outlook.com <br/> Ämne: kataloger
+> Från: someone@outlook.com <br> Ämne: kataloger
 
 Ju lättare du gör det för folk att veta vem du är och vad du gör är det mindre svårt att få fram de flesta spam.
 

@@ -17,19 +17,19 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 12b6499822f8ed97ace8468054f219361d925332
-ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
+ms.openlocfilehash: b5b095a1d75ead0f963a71d816e7d879b7cd3697
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563000"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614804"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Utvärdera Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
->[!IMPORTANT]
->Utvärdera Microsoft Defender för Office 365 kommer snart att vara i Public Preview denna för hands version tillhandahålls utan ett service nivå avtal. Vissa funktioner kanske inte stöds eller så har de begränsad kapacitet.
+> [!IMPORTANT]
+> Utvärdera Microsoft Defender för Office 365 kommer snart att vara i offentlig för hands version. Denna för hands version tillhandahålls utan service nivå avtal. Vissa funktioner kanske inte stöds eller så har de begränsad kapacitet.
 
 Genom att utföra en omfattande utvärdering av en säkerhets produkt kan du få ett välinformerade beslut om uppgraderingar och köp. Det hjälper till att pröva säkerhets produktens kapacitet för att bedöma hur den kan hjälpa din säkerhets åtgärd i sina dagliga uppgifter.
 
@@ -73,7 +73,7 @@ Om du inte har någon av dessa licenser måste du skaffa en utvärderings licens
 
 För att få en utvärderings licens för Microsoft Defender för Office 365 måste du ha **rollen fakturerings administratör** eller **Global administratör**. Begära tillstånd från någon som har rollen som global administratör. [Lär dig mer om prenumerationer och licenser](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
 
-När du har rätt roll är den rekommenderade sökvägen att få en utvärderings version av Microsoft Defender för Office 365 (abonnemang 2) i Microsoft 365 Admin Center genom att gå till fakturerings > Köp tjänster. Test versionen inkluderar en gratis prov period på 30 dagar för 25 licenser. [Skaffa en utvärderings version av Microsoft Defender för Office 365 (abonnemang 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA). 
+När du har rätt roll är den rekommenderade sökvägen att få en utvärderings version av Microsoft Defender för Office 365 (abonnemang 2) i Microsoft 365 Admin Center genom att gå till fakturerings > Köp tjänster. Test versionen inkluderar en gratis prov period på 30 dagar för 25 licenser. [Skaffa en utvärderings version av Microsoft Defender för Office 365 (abonnemang 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA).
 
 Du får ett 30 dagars fönster med utvärderingen för att övervaka och rapportera avancerade hot. Du kan också köpa ett betalt abonnemang om du vill ha fullständig Defender för Office 365-funktioner.
 
@@ -81,13 +81,14 @@ Du får ett 30 dagars fönster med utvärderingen för att övervaka och rapport
 
 Exchange Online-roller krävs för att konfigurera Defender för Office 365 i utvärderings läge. Följande roller behövs:
 
-|Uppgift | Roll |
-|-----| -----|
-| Skaffa en gratis prov period eller Köp Microsoft Defender för Office 365 (abonnemang 2)| Rollen fakturerings administratör eller rollen global administratör|
-| Skapa utvärderings princip| Rollen fjärrsamt godkända domäner; Rollen säkerhets administratör|
-| Redigera utvärderings policy | Rollen fjärrsamt godkända domäner; Rollen säkerhets administratör |
-| Ta bort utvärderings policy | Rollen fjärrsamt godkända domäner; Rollen säkerhets administratör |
-|Visa utvärderings rapport | Rollen säkerhets administratör eller rollen säkerhets läsare|
+|Uppgift|Roll|
+|---|---|
+|Skaffa en gratis prov period eller Köp Microsoft Defender för Office 365 (abonnemang 2)|Rollen fakturerings administratör eller rollen global administratör|
+|Skapa utvärderings princip|Rollen fjärrsamt godkända domäner; Rollen säkerhets administratör|
+|Redigera utvärderings policy|Rollen fjärrsamt godkända domäner; Rollen säkerhets administratör|
+|Ta bort utvärderings policy|Rollen fjärrsamt godkända domäner; Rollen säkerhets administratör |
+|Visa utvärderings rapport|Rollen säkerhets administratör eller rollen säkerhets läsare|
+|
 
 ### <a name="enhanced-filtering"></a>Förbättrad filtrering
 
@@ -107,7 +108,7 @@ Du måste förbereda motsvarande uppgifter som du behöver för att konfigurera 
 
 Scenarion för e-postdirigering som stöds:
 
-- **Partner från tredje part och/eller lokal tjänst**: den inkommande koppling som du vill utvärdera använder en tredjepartsleverantör och/eller du använder en lösning för e-postsäkerhet.  
+- **Partner från tredje part och/eller lokal tjänst**: den inkommande koppling som du vill utvärdera använder en tredjepartsleverantör och/eller du använder en lösning för e-postsäkerhet.
 - **Endast Microsoft Exchange Online Protection**: den klient organisation som du vill utvärdera använder Office 365 för e-postsäkerhet och Mail Exchange-posten pekar på Microsoft.
 
 ### <a name="email-security-gateway"></a>E-postsäker Gateway
@@ -154,7 +155,7 @@ Om du har en befintlig gateway kanske du vill kringgå filtreringen eftersom den
 
 ## <a name="evaluate-capabilities"></a>Utvärdera funktioner
 
-När utvärderings rapporten har genererats kan du se hur många avancerade hot länkar, avancerade hot bilagor och potentiella personer som kan identifieras i din organisation.  
+När utvärderings rapporten har genererats kan du se hur många avancerade hot länkar, avancerade hot bilagor och potentiella personer som kan identifieras i din organisation.
 
 När utvärderings versionen har gått ut kan du fortsätta att få till gång till rapporten i 90 dagar. Men samlar inte in mer information. Om du vill fortsätta att använda Microsoft Defender för Office 365 när utvärderings versionen har upphört, se till att du [köper ett betalt abonnemang för Microsoft Defender för office 365 (abonnemang 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA).
 

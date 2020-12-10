@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 01a5e374396b1f7ef79dff436cd9ecc4e0c4abf1
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: d219895767919c2a0658f8b83150fe6edde01b5b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357243"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615558"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nyheter i Microsoft Defender för Office 365
 
@@ -56,7 +56,7 @@ Den här artikeln innehåller de nya funktionerna i den senaste versionen av Mic
 ## <a name="julyaugust-2020"></a>Juli 2020
 
 - [Upplev förbättringar av jakt upplevelsen](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
-- [Använd de rekommenderade inställningarna med förvalda säkerhets principer](preset-security-policies.md) 
+- [Använd de rekommenderade inställningarna med förvalda säkerhets principer](preset-security-policies.md)
 
 ## <a name="marchapril-2020"></a>Mars 2020
 
@@ -71,7 +71,7 @@ Den här artikeln innehåller de nya funktionerna i den senaste versionen av Mic
   - Avancerade icke-filter (det här är avancerade filtrerings alternativ som inte innehåller, inkluderar inte, etc.)
   - Detaljerade tids filter (dag, timme, halvtimme)
 
-- Widgeten **incidenter** är nu widgeten **Åtgärds Center** . (Om du vill visa dina säkerhetswidgetar kan du gå till **Threat Management**  >  i säkerhets & efterlevnad **Granska**.) (Microsoft Defender för Office 365 abonnemang 2)
+- Widgeten **incidenter** är nu widgeten **Åtgärds Center** . (Om du vill visa dina säkerhetswidgetar kan du gå till **Threat Management** \> i säkerhets & efterlevnad **Granska**.) (Microsoft Defender för Office 365 abonnemang 2)
 
 - [Säkra dokument i Microsoft 365](safe-docs.md) **(för hands version)**
 
@@ -105,7 +105,7 @@ Den här artikeln innehåller de nya funktionerna i den senaste versionen av Mic
 
 - [Visa data om nät fiske adresser och klicka på Verdict](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
 
-## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2
+## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender för Office 365 abonnemang 1 och abonnemang 2
 
 Visste du att Microsoft Defender för Office 365 finns i två planer? [Lär dig mer om vad varje abonnemang innehåller](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 

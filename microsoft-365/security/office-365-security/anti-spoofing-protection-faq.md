@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Administratörer kan se vanliga frågor och svar om skydd mot förfalskning i Exchange Online Protection (EOP).
-ms.openlocfilehash: a5b0484e41e3df7a7b6ad16e69a4f7062b19b554
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f567c7bc0c6a6efed7621cec86c5db4e616290b7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844398"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616746"
 ---
 # <a name="anti-spoofing-protection-faq"></a>Vanliga frågor och svar om skydd mot förfalskning
 
@@ -71,9 +71,9 @@ Tyvärr, nej. Angripare anpassas till Använd annan teknik (till exempel äventy
 
 Nästan alla stora e-posttjänster implementerar traditionella SPF-, DKIM-och DMARC-kontroller. Vissa tjänster har andra, mer strikta kontroller, men få lika mycket som EOP för att blockera overifierad e-post och behandla dem som falska meddelanden. Men industrin blir mer medveten om problem med overifierad e-post, särskilt på grund av problemet med nätfiske.
 
-## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>Måste jag ändå aktivera avancerade inställningar för skräp post filtret "SPF record: hårda fail" ( _MarkAsSpamSpfRecordHardFail_ ) om jag aktiverar mot förfalskning?
+## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>Måste jag ändå aktivera avancerade inställningar för skräp post filtret "SPF record: hårda fail" (_MarkAsSpamSpfRecordHardFail_) om jag aktiverar mot förfalskning?
 
-Nej. Den här ASF-inställningen behövs inte längre. Skydd mot förfalskningar betraktar både SPF-hårda fel och en större uppsättning villkor. Om du har aktiverat skydd mot förfalskning och **SPF-post: Hard Fail** ( _MarkAsSpamSpfRecordHardFail_ ) aktiverad kommer du antagligen att få mer falska positiva identifieringar.
+Nej. Den här ASF-inställningen behövs inte längre. Skydd mot förfalskningar betraktar både SPF-hårda fel och en större uppsättning villkor. Om du har aktiverat skydd mot förfalskning och **SPF-post: Hard Fail** (_MarkAsSpamSpfRecordHardFail_) aktiverad kommer du antagligen att få mer falska positiva identifieringar.
 
 Vi rekommenderar att du inaktiverar den här funktionen eftersom den inte har någon ytterligare förmån för att upptäcka skräp post eller nätfiske och skulle i stället generera mest falska positiva positiv. Mer information finns i [Avancerade inställningar för skräp post filter (ASF) i EOP](advanced-spam-filtering-asf-options.md).
 

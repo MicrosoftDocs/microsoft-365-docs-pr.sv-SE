@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Lär dig hur man simulerar nät fiske attacker och kan utbilda dina användare om nätfiske-förebyggande med utbildning för attack simulering i Microsoft Defender för Office 365.
-ms.openlocfilehash: b9b8a431fc28942f5e11bc7ce2e805ca082cf36b
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: 8f5f457f60c81fe961282f33bb8c37f4d9e27aab
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944569"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616110"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simulera nätfiske-attack
 
@@ -58,8 +58,8 @@ Det finns många data punkter som du kan använda för att välja:
 - **Klicka på Rate** räknas hur många personer som klickade på denna nytto Last.
 - **Förväntad kompromiss frekvens** förväntar sig procent av personer som kommer att bli utsatt för denna nytto Last baserat på historiska data för denna nytto Last i Microsoft Defender för Office 365-kunder.
 - **Simuleringar startas** antal gånger denna nytto Last användes i andra simuleringar.
-- **Komplexitet** , tillgängliga genom **filter** , beräknas baserat på antalet indikatorer inom nytto lasten som led trådar till att det är en attack. Fler indikatorer kan leda till lägre komplexitet.
-- **Källa** , som är tillgänglig via **filter** , anger om nytto lasten skapades på din klient organisation eller är en del av Microsofts förvalda nytto fil katalog (global).
+- **Komplexitet**, tillgängliga genom **filter**, beräknas baserat på antalet indikatorer inom nytto lasten som led trådar till att det är en attack. Fler indikatorer kan leda till lägre komplexitet.
+- **Källa**, som är tillgänglig via **filter**, anger om nytto lasten skapades på din klient organisation eller är en del av Microsofts förvalda nytto fil katalog (global).
 
 ![Vald nytto Last i utbildning för attack simulering i Microsoft 365 säkerhets Center](../../media/attack-sim-preview-select-payload.png)
 
@@ -69,11 +69,11 @@ Om du vill skapa en egen nytto Last läser du [skapa en nytto last för utbildni
 
 ## <a name="audience-targeting"></a>Mål grupps anpassning
 
-Nu är det dags att välja simuleringens mål grupp. Du kan välja att **ta med alla användare i organisationen** eller **bara ta med specifika användare och grupper**. 
+Nu är det dags att välja simuleringens mål grupp. Du kan välja att **ta med alla användare i organisationen** eller **bara ta med specifika användare och grupper**.
 
 Om du väljer att **bara inkludera specifika användare och grupper** kan du antingen:
 
-- **Lägg till användare** , som gör att du kan använda Sök funktionen för din klient organisation, samt avancerade funktioner för sökning och filtrering, som mål för användare som inte har riktat mot en simulering under de senaste 3 månaderna.
+- **Lägg till användare**, som gör att du kan använda Sök funktionen för din klient organisation, samt avancerade funktioner för sökning och filtrering, som mål för användare som inte har riktat mot en simulering under de senaste 3 månaderna.
   ![Användar filter i utbildning för attack simulering i Microsoft 365 Security Center](../../media/attack-sim-preview-user-targeting.png)
 - **Importera från CSV** låter dig importera en fördefinierad uppsättning användare för den här simuleringen.
 
@@ -94,7 +94,7 @@ I nästa steg måste du **lägga till utbildningar** om du väljer det själv oc
 
 ## <a name="launch-details-and-review"></a>Starta detaljer och granska
 
-Nu när allt är konfigurerat kan du starta simuleringen direkt eller schemalägga det för ett senare datum. Du måste också välja när simuleringen ska avslutas. Vi slutar samla in interaktionen med den här simuleringen tidigare den valda tiden. 
+Nu när allt är konfigurerat kan du starta simuleringen direkt eller schemalägga det för ett senare datum. Du måste också välja när simuleringen ska avslutas. Vi slutar samla in interaktionen med den här simuleringen tidigare den valda tiden.
 
 **Aktivera region medveten leverans** för att leverera simulerade attack meddelanden till dina anställda under deras arbets tid baserat på deras region.
 

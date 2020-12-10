@@ -14,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Lär dig hur du installerar och använder tillägget skräp post rapportering i Microsoft för att rapportera skräp post, icke skräp post-och nät fiske meddelanden till Microsoft.
-ms.openlocfilehash: 6e4c16ed8efd781a6e8ecea422fe55fb6723209c
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 6f08c72ae797825695c443848429dcfd2cd485a2
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877555"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616434"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installera och använda tillägget skräp post rapportering för Microsoft Outlook
 
@@ -70,7 +70,7 @@ I det här avsnittet förklaras hur du installerar och använder tillägget skr�
 
    - Flyttas till mappen skräp post om den rapporter ATS som skräp post.
    - Borttagen om den rapporterades som nätfiske.
-   
+
    Bekräfta att meddelanden har skickats genom att öppna mappen **skickat** för att visa de meddelanden som skickats.
 
 ## <a name="use-the-junk-email-reporting-add-in-to-report-non-spam-and-phishing-messages-from-the-junk-email-folder"></a>Använda tillägget skräp post rapportering för att rapportera icke-spam-och nät fiske meddelanden från mappen skräp post
@@ -108,8 +108,8 @@ I det här avsnittet förklaras hur du installerar och använder tillägget skr�
 
 - Gå till <https://www.microsoft.com/download/details.aspx?id=18275> och ladda ned lämplig MSI-fil för din version av Office till en plats som är lätt att hitta:
 
-  - **32-bitar** : `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
-  - **64-bitar** : `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
+  - **32-bitar**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
+  - **64-bitar**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
 - För Outlook 2013 eller senare är det enda kravet för Microsoft .NET Framework 2,0. I Windows 10 kan du inte installera .NET Framework 2,0 från en nedladdning.
 
@@ -209,27 +209,27 @@ Kontrol lera att du har installerat tillägget skräp post rapportering genom at
 
 När du har stängt Outlook kan du använda någon av följande procedurer för att avinstallera tillägget skräp post rapportering:
 
-- **Kontroll panelen** : Tryck på Windows-tangenten + R. I dialog rutan **Kör** som öppnas anger du `control appwiz.cpl` och klickar sedan på **OK**.
+- **Kontroll panelen**: Tryck på Windows-tangenten + R. I dialog rutan **Kör** som öppnas anger du `control appwiz.cpl` och klickar sedan på **OK**.
 
   Leta reda på och markera **tillägget skräp post rapportering** i listan och klicka sedan på **Avinstallera**.
 
-- **Windows installations paket** : Sök eller ladda ned lämplig. msi-fil och dubbelklicka på den.
+- **Windows installations paket**: Sök eller ladda ned lämplig. msi-fil och dubbelklicka på den.
 
-  - **32-bitar** : `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
+  - **32-bitar**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
-  - **64-bitar** : `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
+  - **64-bitar**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
   I dialog rutan som visas väljer du **ta bort Microsoft skräppost-e-postrapportering för Outlook** och klicka sedan på **Nästa**.
 
-- **Tyst läge** : hitta eller ladda ned lämplig. msi-fil. Ersätt \<PathToFile\> med platsen för MSI-filen i kommando tolken och kör något av följande kommandon:
+- **Tyst läge**: hitta eller ladda ned lämplig. msi-fil. Ersätt \<PathToFile\> med platsen för MSI-filen i kommando tolken och kör något av följande kommandon:
 
-  - **32-bitar** :
+  - **32-bitar**:
 
     ```dos
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
     ```
 
-  - **64-bitar** :
+  - **64-bitar**:
 
     ```dos
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
@@ -263,7 +263,7 @@ Andra metoder som du kan använda för att skicka meddelanden till Microsoft fin
 
 1. Verifiera eller ange `LoggingLevel` register nyckel för värdet "VERBOSE":
 
-   - **32-bitars Outlook på 32-bitars versionen av Windows** :
+   - **32-bitars Outlook på 32-bitars versionen av Windows**:
 
      ```text
      Windows Registry Editor Version 5.00
@@ -272,7 +272,7 @@ Andra metoder som du kan använda för att skicka meddelanden till Microsoft fin
      "LoggingLevel"="Verbose"
      ```
 
-   - **32-bitars Outlook på 64-bitars versionen av Windows** :
+   - **32-bitars Outlook på 64-bitars versionen av Windows**:
 
      ```text
      Windows Registry Editor Version 5.00
@@ -281,7 +281,7 @@ Andra metoder som du kan använda för att skicka meddelanden till Microsoft fin
      "LoggingLevel"="Verbose"
      ```
 
-   - **64-bitars Outlook** :
+   - **64-bitars Outlook**:
 
      ```text
      Windows Registry Editor Version 5.00

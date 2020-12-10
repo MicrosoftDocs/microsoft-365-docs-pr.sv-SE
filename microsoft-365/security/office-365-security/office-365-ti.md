@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig mer om hot-och svars funktioner i Microsoft Defender för Office 365-abonnemang.
-ms.openlocfilehash: 7ae61e7ea70d8be5c31ec12443c8943f6e54bcf4
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: cbda50dacd6b892c976ce55632c8fc35813839b7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561261"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614780"
 ---
 # <a name="threat-investigation-and-response"></a>Hot utredning och svar
 
@@ -73,7 +73,7 @@ Använd listan incidenter (kallas även undersökningar) för att se en lista ö
 
 ![Lista över aktuella hot händelser i Office 365](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
 
-Om du vill visa en lista över aktuella incidenter för organisationen går du till fliken säkerhet & regelefterlevnad och går till **Threat Management** \> **Review** \> **Incidents**.
+Om du vill visa en lista över aktuella incidenter för organisationen går du till fliken säkerhet & regelefterlevnad och går till **Threat Management** \>  \> .
 
 ![I fönstret säkerhets & efterlevnad väljer du Threat Management \> recension](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
@@ -110,11 +110,11 @@ I Microsoft Defender för Office 365 används rollbaserad åtkomst kontroll. Beh
 
 |Aktivitet|Roller och behörigheter|
 |---|---|
-|Använda hot instrument panelen (eller den nya [säkerhets instrument panelen](security-dashboard.md))<br/> <br/>Visa information om senaste eller aktuella hot|Något av följande: <br/>- **Global administratör**  <br/> - **Säkerhets administratör** <br/>- **Säkerhets läsare** <br/> <br/>Dessa roller kan tilldelas i antingen Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) eller Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ).|
-|Använd [Threat Explorer (och real tids identifieringar)](threat-explorer.md) för att analysera hot|Något av följande: <br/>- **Global administratör**  <br/> - **Säkerhets administratör** <br/>- **Säkerhets läsare** <br/> <br/>Dessa roller kan tilldelas i antingen Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) eller Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ).|
-|Visa incidenter (kallas även undersökningar) <br/> Lägga till e-postmeddelanden i en olycka|Något av följande: <br/>- **Global administratör**  <br/> - **Säkerhets administratör** <br/>- **Säkerhets läsare** <br/> <br/>Dessa roller kan tilldelas i antingen Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) eller Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ).|
-|Utlösa e-poståtgärder i en olycka <br/> <br/> Hitta och ta bort misstänkta e-postmeddelanden|Något av följande: <br/>- **Global administratör**  <br/> - **Säkerhets administratören** plus rollen **Sök och rensa**<br/><br/>Rollen som **Global administratör** och **säkerhets administratör** kan tilldelas i antingen Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) eller Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ). <br/><br/>Rollen **sökning och rensning** måste tilldelas i säkerhets & Compliance Center ( [https://protection.office.com](https://protection.office.com) ).|
-|Integrera Microsoft Defender för Office 365 abonnemang 2 med Microsoft Defender för slut punkt  <br/><br/> Integrera Microsoft Defender för Office 365 abonnemang 2 med en SIEM-Server|Antingen den **globala administratören** eller rollen **säkerhets administratör** tilldelad i antingen Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) eller Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ).<br/>--- **bransch** ---<br/>En lämplig roll som är tilldelad i ytterligare program (till exempel [Microsoft Defender säkerhets Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) eller din Siem-Server)|
+|Använda hot instrument panelen (eller den nya [säkerhets instrument panelen](security-dashboard.md)) <p> Visa information om senaste eller aktuella hot|Något av följande: <ul><li>**Global administratör**</li><li>**Säkerhets administratör**</li><li>**Säkerhets läsare**</li></ul> <p> Dessa roller kan tilldelas i antingen Azure Active Directory ( <https://portal.azure.com> ) eller Microsoft 365 Admin Center ( <https://admin.microsoft.com> ).|
+|Använd [Threat Explorer (och real tids identifieringar)](threat-explorer.md) för att analysera hot|Något av följande: <ul><li>**Global administratör**</li><li>**Säkerhets administratör**</li><li>**Säkerhets läsare**</li></ul> <p> Dessa roller kan tilldelas i antingen Azure Active Directory ( <https://portal.azure.com> ) eller Microsoft 365 Admin Center ( <https://admin.microsoft.com> ).|
+|Visa incidenter (kallas även undersökningar) <p> Lägga till e-postmeddelanden i en olycka|Något av följande: <ul><li>**Global administratör**</li><li>**Säkerhets administratör**</li><li>**Säkerhets läsare**</li></ul> <p> Dessa roller kan tilldelas i antingen Azure Active Directory ( <https://portal.azure.com> ) eller Microsoft 365 Admin Center ( <https://admin.microsoft.com> ).|
+|Utlösa e-poståtgärder i en olycka <p> Hitta och ta bort misstänkta e-postmeddelanden|Något av följande: <ul><li>**Global administratör**</li><li>**Säkerhets administratören** plus rollen **Sök och rensa**</li></ul> <p> Rollen som **Global administratör** och **säkerhets administratör** kan tilldelas i antingen Azure Active Directory ( <https://portal.azure.com> ) eller Microsoft 365 Admin Center ( <https://admin.microsoft.com> ). <p> Rollen **sökning och rensning** måste tilldelas i säkerhets & Compliance Center ( <https://protection.office.com> ).|
+|Integrera Microsoft Defender för Office 365 abonnemang 2 med Microsoft Defender för slut punkt  <p> Integrera Microsoft Defender för Office 365 abonnemang 2 med en SIEM-Server|Antingen den **globala administratören** eller rollen **säkerhets administratör** tilldelad i antingen Azure Active Directory ( <https://portal.azure.com> ) eller Microsoft 365 Admin Center ( <https://admin.microsoft.com> ). <p> --- **bransch** --- <p> En lämplig roll som har tilldelats till ytterligare program (till exempel [Microsoft Defender säkerhets Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) eller din Siem-Server).|
 |
 
 ## <a name="next-steps"></a>Nästa steg

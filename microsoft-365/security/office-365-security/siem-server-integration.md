@@ -17,12 +17,12 @@ ms.custom:
 - SIEM
 - seo-marvel-apr2020
 description: Få en översikt över säkerhets information och SIEM Server integration med Microsoft 365-molntjänster och-program
-ms.openlocfilehash: 17e21d19463187744afe855b2304ac71956545d2
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 851b27769badb2629b7e9fb1c93992c76828a633
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919770"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615654"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Integrering av säkerhets information och Event Management (SIEM) med Microsoft 365-tjänster och-program
 
@@ -53,7 +53,7 @@ En SIEM-Server kan ta emot data från en mängd olika Microsoft 365-tjänster oc
 |Microsoft 365-tjänsten eller-programmet|SIEM-Server data/metoder|Resurser för att få mer information|
 |---|---|---|
 |[Microsoft Defender för Office 365](office-365-atp.md)|Gransknings loggar|[SIEM integrering med Microsoft Defender för Office 365](siem-integration-with-office-365-ti.md)|
-|[Microsoft Defender för Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)|HTTPS-slutpunkt med Azure värd <br/>REST API|[Dra aviseringar till dina SIEM-verktyg](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
+|[Microsoft Defender för slut punkt](https://docs.microsoft.com/windows/security/threat-protection/)|HTTPS-slutpunkt med Azure värd <p> REST API|[Dra aviseringar till dina SIEM-verktyg](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Logg integrering|[SIEM integrering med säkerhet för Microsoft Cloud App](https://docs.microsoft.com/cloud-app-security/siem)|
 |
 

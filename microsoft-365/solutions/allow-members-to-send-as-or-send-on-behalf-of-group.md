@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Lär dig hur du tillåter att medlemmar skickar e-post som en Microsoft 365-grupp eller skickar e-post åt en Microsoft 365-grupp.
-ms.openlocfilehash: 9ccaeff49914dd5b510beb80f40a3a3b790ce831
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 2abf0668411ccd08db5bbd8408605dcd0aa2d832
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377599"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613578"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Tillåta medlemmar att skicka som eller skicka för en grupp
 
@@ -42,7 +42,7 @@ Med behörigheten **Skicka åt** kan en användare skicka e-post åt en Microsof
 
 I det här avsnittet förklaras hur du tillåter att användare skickar e-post som en grupp i [administrations centret för Exchange](https://go.microsoft.com/fwlink/p/?linkid=2059104) (UK) i Exchange Online.
   
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange Admin Center</a>går du till gruppen **mottagare** \> **Groups**.
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange Admin Center</a>går du till gruppen **mottagare** \> .
     
 2. Välj **Redigera** ![ ikonen Redigera grupp ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) i gruppen som du vill tillåta användare att skicka som.   
     
@@ -60,7 +60,7 @@ I det här avsnittet förklaras hur du tillåter att användare skickar e-post s
 
 I det här avsnittet förklaras hur du tillåter att användare skickar e-post för en grupp i administrations centret för Exchange (UK) i Exchange Online.
   
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange Admin Center</a>går du till gruppen **mottagare** \> **Groups**.
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange Admin Center</a>går du till gruppen **mottagare** \> .
     
 2. Välj **Redigera** ![ ikonen Redigera grupp ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) i gruppen som du vill tillåta användare att skicka som. 
     
@@ -75,6 +75,10 @@ I det här avsnittet förklaras hur du tillåter att användare skickar e-post f
     ![Skriv för att söka eller välja en användare i listan](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
 ## <a name="related-articles"></a>Relaterade artiklar
+
+[Planerings steg-för-steg-samarbete för samarbets styrning](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Skapa en plan för hantering av samarbete](collaboration-governance-first.md)
 
 [Lär dig mer om Microsoft 365-grupper](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 

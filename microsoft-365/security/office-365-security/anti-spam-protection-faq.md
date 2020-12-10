@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan se vanliga frågor och svar om skydd mot skräp post i Exchange Online Protection (EOP).
-ms.openlocfilehash: d2505eea572e512b306cf26c7a57d1dc1b705c0b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 21c70f1942703b8e5f3f4d96b136aff46afcc32b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844470"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615438"
 ---
 # <a name="anti-spam-protection-faq"></a>Vanliga frågor och svar om skydd mot skräppost
 
@@ -105,9 +105,9 @@ Du kan skicka ett meddelande till en viss e-postadress när en avsändare skicka
 
 Ja. Även om vi rekommenderar att du pekar din MX-post till Microsoft inser vi att det finns legitima affärs skäl för att dirigera din e-post till annan plats än Microsoft först.
 
-- **Inkommande** : ändra dina MX-poster så att de pekar på tredjepartsleverantörer och dirigera sedan om dem till EOP för ytterligare bearbetning. Mer information finns i [förbättrade filter för kopplingar i Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+- **Inkommande**: ändra dina MX-poster så att de pekar på tredjepartsleverantörer och dirigera sedan om dem till EOP för ytterligare bearbetning. Mer information finns i [förbättrade filter för kopplingar i Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- **Utgående** : konfigurera routning för smarta värden från Microsoft 365 till den mottagande tredje partens leverantör.
+- **Utgående**: konfigurera routning för smarta värden från Microsoft 365 till den mottagande tredje partens leverantör.
 
 ## <a name="does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>Har Microsoft någon dokumentation om hur jag kan skydda mig från nätfiske-bedrägerier?
 
@@ -124,7 +124,7 @@ Rikt linjerna nedan är tips för att skicka utgående e-postmeddelanden.
 - **Käll-e-postdomänen bör kunna matchas i DNS.**
 
   Om avsändaren är user@fabrikam är domänen fabrikam matcha till IP-adress 192.0.43.10.
-  
+
   Om en sändande domän saknar en-post och ingen MX-post i DNS dirigeras meddelandet via den högre risk leveransen oavsett om innehållet i meddelandet är skräp post. Mer information om poolen med högre risk leverans finns i [poolen för utgående meddelanden](high-risk-delivery-pool-for-outbound-messages.md).
 
 - **Eserver för utgående e-post ska ha en omvänd DNS-post (PTR).**
@@ -155,11 +155,11 @@ Rikt linjerna nedan är tips för att skicka utgående e-postmeddelanden.
 
   Meddelande texten bör ha en tydlig indikation på erbjudandet, tjänsten eller produkten. Om till exempel en avsändare skickar ett Mass utskick för företaget contoso ser du följande för e-post från och ämne:
 
-  > Från: marketing@contoso.com <br/> Ämne: ny uppdaterad katalog för jul säsongen!
+  > Från: marketing@contoso.com <br> Ämne: ny uppdaterad katalog för jul säsongen!
 
   Här följer ett exempel på vad du inte kan göra eftersom det inte är beskrivande:
 
-  > Från: user@hotmail.com <br/> Ämne: kataloger
+  > Från: user@hotmail.com <br> Ämne: kataloger
 
 - **Om du skickar ett Mass utskick till många mottagare och meddelandet är i nyhets brevs format, bör det finnas ett sätt att avsluta prenumerationen längst ned i meddelandet.**
 

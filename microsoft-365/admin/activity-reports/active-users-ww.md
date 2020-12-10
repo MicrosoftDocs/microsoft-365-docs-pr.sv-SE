@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Lär dig hur du får en aktive rad användare-rapport med instrument panelen för Microsoft 365-rapporter i administrations centret för Microsoft 365 och hur du kan ta reda på hur många produkt licenser som används.
-ms.openlocfilehash: 0f5d113bf17d338c52f998db45a8626a6636a996
+ms.openlocfilehash: 8ca9e32a36be068ada8b59ce0f456a82541be8d9
 ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611355"
+ms.locfileid: "49611984"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---active-users"></a>Microsoft 365-rapporter i administrations centret – aktiva användare
 
@@ -37,21 +37,21 @@ Du kan till exempel använda rapporten **Aktiva användare** för att ta reda p�
 
 ## <a name="how-to-get-to-the-active-users-report"></a>Så här kommer du till rapporten Aktiva användare
 
-1. I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>.
-
-2. Välj **Office 365** - \> **aktiva användare** i list rutan. 
+1. I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>. 
+2. Från instrument panelens start sida klickar du på knappen **Visa mer** på aktiva användare-Microsoft 365-kort.
 
 ## <a name="interpret-the-active-users-report"></a>Tolka rapporten Aktiva användare
 
-  
+Du kan visa aktiva användare i rapporten Office 365 genom att välja fliken **aktiva användare** .<br/>![Microsoft 365-rapporter – Microsoft Office 365-aktiva användare.](../../media/56fe2e54-76ad-49e5-886f-1344c2697258.png)
+
 |||
 |:-----|:-----|
 |1.  <br/> |I rapporten **Aktiva användare** kan du se trender under de senaste 7, 30, 90 eller 180 dagarna. Om du däremot visar en viss dag i rapporten visar tabellen (7) data för upp till 28 dagar från det aktuella datumet (inte det datum då rapporten genererades).  <br/> |
 |2.  <br/> |Informationen i varje rapport täcker vanligt vis upp till de senaste 24 till 48 timmar.  <br/> |
-|3.  <br/> |I diagrammet **Aktiva användare** visas dagligen aktiva användare under rapporteringsperioden, avgränsade per produkt.  <br/> I diagrammet **Tjänster** visas antalet användare efter aktivitetstyp och tjänst.  <br/> |
-|4.  <br/> | I diagrammet **aktiva användare** visar x-axeln den valda rapporterings perioden och y-axeln visar de dagliga aktiva användarna avgränsade och färgkodade efter licens typ.  <br/>  I aktivitetsdiagrammet **Tjänster** visar X-axeln de enskilda tjänster som användarna är aktiverade för under en viss tidsperiod och Y-axeln är antalet användare efter aktivitetsstatus, färgkodade efter aktivitetsstatus.  <br/> |
+|3.  <br/> |I diagrammet **användare** visas dagliga aktiva användare under rapporterings perioden, avgränsade med produkt.  <br/> I **aktivitets** diagrammet visas dagliga aktivitets antalet i rapporterings perioden avdelad efter produkt. <br/> I diagrammet **Tjänster** visas antalet användare efter aktivitetstyp och tjänst.  <br/> |
+|4.  <br/> | I diagrammet **användare** visar x-axeln den valda rapporterings perioden och y-axeln visar de dagliga aktiva användarna avgränsade och färgkodade efter licens typ.  <br/>  I diagrammet **aktivitet**   visar x-axeln den valda rapporterings perioden och y-axeln visar de dagliga aktivitets räknarna avgränsade efter licens typ. <br/> I aktivitetsdiagrammet **Tjänster** visar X-axeln de enskilda tjänster som användarna är aktiverade för under en viss tidsperiod och Y-axeln är antalet användare efter aktivitetsstatus, färgkodade efter aktivitetsstatus.  <br/> |
 |5.  <br/> |Du kan filtrera serien som visas i diagrammet genom att markera ett objekt i förklaringen. När du ändrar det här valet ändras inte informationen i rutnätstabellen.  <br/> |
-|18.6.  <br/> |Du kan också exportera rapport data till en Excel. csv-fil genom att välja **Exportera** ![ data till en Excel-fil ](../../media/816a224b-6ca7-4967-a135-4f6427f64dc8.JPG) . Då exporteras data för alla användare och du kan göra enkel sortering och filtrering för vidare analys. Om du har mindre än 2 000 användare kan du sortera och filtrera i tabellen i själva rapporten. Om du har fler än 2 000 användare måste du exportera data för att kunna filtrera och sortera.  <br/> |
+|18.6.  <br/> |Du kan också exportera rapport data till en Excel. csv-fil genom att välja **Exportera** -länken. Då exporteras data för alla användare och du kan göra enkel sortering och filtrering för vidare analys. Om du har mindre än 2 000 användare kan du sortera och filtrera i tabellen i själva rapporten. Om du har fler än 2 000 användare måste du exportera data för att kunna filtrera och sortera.  <br/> |
 |borttagning.  <br/> |Du kan ändra vilken information som visas i rutnätstabellen med kolumnkontroller.  <br/> Om ditt abonnemang drivs av 21Vianet visas inte Yammer. <br/> <br/> |
 |||
 

@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om karantän i Exchange Online Protection (EOP) som innehåller potentiellt farliga eller oönskade meddelanden.
-ms.openlocfilehash: 74f420dd1d37acb9949aae2e1f01688c44e5b1bc
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: f4e3f668ac94abfea6dc19f6f256141b2a7b9915
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430877"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616038"
 ---
 # <a name="quarantined-email-messages-in-eop"></a>E-postmeddelanden i karantän i EOP
 

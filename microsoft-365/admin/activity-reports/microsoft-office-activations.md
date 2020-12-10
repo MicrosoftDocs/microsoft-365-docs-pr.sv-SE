@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Lär dig hur du får en Office Activation-rapport som visar vilka användare som har aktiverat Office-prenumerationen och vilka som kan behöva ytterligare hjälp.
-ms.openlocfilehash: 228d8a6437cecfad8e7600a354ca31ddd6b0e6c4
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 1af022053735fb9b1b8fe382c44bbe9cc11058a5
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949150"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611418"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Microsoft 365-rapporter i administrations Center – Microsoft Office-aktiveringar
 
@@ -56,7 +56,7 @@ Du kan se organisationens Office-aktiveringar genom att titta på diagrammen **A
 |9.4  <br/> |Diagrammet **Användare** visar antalet användare som har aktiverats, och användare som har aktiverat Office-prenumerationen på datorn eller andra enheter.  <br/> |
 |T5  <br/> | I diagrammet **Aktiveringar** är Y-axeln antalet Office-aktiveringar.  <br/>  I diagrammet **Användare** är Y-axeln användarens aktivitet för att aktivera Office.  <br/>  X-axeln i båda diagrammen är det valda datumintervallet för den här specifika rapporten.  <br/> |
 |18.6  <br/> |Du kan filtrera diagram som visas genom att markera ett objekt i förklaringen. I diagrammet **aktiveringar** väljer du till exempel **Windows OS**, **Mac OS**, **Windows 10 Mobile**, **iOS** eller **Android** för att bara se informationen som hör till var och en. När du ändrar det här valet ändras inte informationen i rutnätstabellen. <br/> ![Aktiverings data för enheter](../../media/59d3ec6e-2a6e-4b21-8aac-c73038c47b9f.png)  <br/> |
-|borttagning  <br/> | I tabellen visas detaljerad information om Office-aktiveringar på användarnivå. Det här är listan över alla användare med Office-produkten tilldelad till dem. Du kan lägga till fler kolumner i tabellen.  <br/> ![Tillgängliga kolumner för Office-aktiveringar](../../media/410a4baa-cef8-4676-bf7c-02a907a3a575.png)<br/> **Användarnamn** är användarens e-postadress.  <br/> **Visnings namn** är det fullständiga namnet om användaren.  <br/> **Produkt licenser** är de produkter som tilldelats den här användaren.  <br/> **Senaste aktiveringsdatum** är datumet då användaren aktiverade Office på en dator eller annan enhet.  <br/> **Använd delad dator aktivering** är sant om användaren använde Office via delad dator aktivering. <br/> **Windows** refererar till det antal Windows-skrivbord som en användare har aktiverat Office på.  <br/> **Mac** syftar på antalet Mac-datorer som en användare har aktiverat Office på.  <br/> **Windows 10 Mobile** syftar på hur många Windows 10-enheter en användare har aktiverat Office på.  <br/> **iOS** syftar på antalet iOS-enheter som en användare har aktiverat Office på.  <br/> **Android** refererar till antalet Android-enheter som en användare har aktiverat Office på.  <br/>  Om organisationens principer förhindrar dig att visa rapporter där användarinformationen är identifierbar kan du ändra sekretessinställningen för alla de här rapporterna. Ta en titt på ikonen **Dölj användare i avsnittet rapporter** i [aktivitets rapporterna i administrations centret för Microsoft 365](activity-reports.md).  <br/> |
+|borttagning  <br/> | I tabellen visas detaljerad information om Office-aktiveringar på användarnivå. Det här är listan över alla användare med Office-produkten tilldelad till dem. Du kan lägga till fler kolumner i tabellen.  <br/> ![Tillgängliga kolumner för Office-aktiveringar](../../media/410a4baa-cef8-4676-bf7c-02a907a3a575.png)<br/> **Användarnamn** är användarens e-postadress.  <br/> **Visningsnamn** är användarens fullständiga namn.  <br/> **Produkt licenser** är de produkter som tilldelats den här användaren.  <br/> **Senaste aktiveringsdatum** är datumet då användaren aktiverade Office på en dator eller annan enhet.  <br/> **Använd delad dator aktivering** är sant om användaren använde Office via delad dator aktivering. <br/> **Windows** refererar till det antal Windows-skrivbord som en användare har aktiverat Office på.  <br/> **Mac** syftar på antalet Mac-datorer som en användare har aktiverat Office på.  <br/> **Windows 10 Mobile** syftar på hur många Windows 10-enheter en användare har aktiverat Office på.  <br/> **iOS** syftar på antalet iOS-enheter som en användare har aktiverat Office på.  <br/> **Android** refererar till antalet Android-enheter som en användare har aktiverat Office på.  <br/>  Om organisationens principer förhindrar dig att visa rapporter där användarinformationen är identifierbar kan du ändra sekretessinställningen för alla de här rapporterna. Ta en titt på ikonen **Dölj användare i avsnittet rapporter** i [aktivitets rapporterna i administrations centret för Microsoft 365](activity-reports.md).  <br/> |
 |||
    
 

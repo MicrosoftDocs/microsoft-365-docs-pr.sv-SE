@@ -14,12 +14,12 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln får du lära dig hur du flyttar domäner och inställningar från en Microsoft Exchange Online Protection (EOP)-organisation till en annan.
-ms.openlocfilehash: 141fb85bb7120f4e547c27f399d254847b19e3c2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 485911ff7ac94c820d6f1e0f7cfa54da08943054
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200509"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614828"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Flytta domäner och inställningar från en EOP-organisation till en annan
 
@@ -29,7 +29,10 @@ ms.locfileid: "48200509"
 Du kan ibland behöva dela en Microsoft Exchange Online Protection-organisation (EOP) i två separata organisationer, slå samman två organisationer till en eller flytta domän-och EOP-inställningar från en organisation till en annan organisation. Att förflytta dig från en EOP-organisation till en andra EOP-organisation kan vara utmanande, men med ett fåtal grundläggande Windows PowerShell-skript och en liten mängd förberedelse kan detta uppnås med ett relativt litet underhålls fönster.
 
 > [!NOTE]
-> Inställningarna kan endast göras tillförlitliga från en EOP fristående (standard) organisation till en annan EOP-standard eller en Exchange Enterprise-CAL med Service (EOP Premium)-organisation eller från en EOP Premium-organisation till en annan EOP Premium-organisation. Eftersom det inte går att använda vissa Premium-funktioner i EOP standard organisationer, flyttas från en EOP Premium-organisation till en EOP-standard organisation. <br><br> De här instruktionerna gäller för EOP-specifika organisationer. Det finns andra saker du bör tänka på när du flyttar från en Exchange Online-organisation till en annan Exchange Online-organisation. Exchange Online-organisationer saknar omfattning för dessa instruktioner.
+>
+> - Inställningarna kan endast göras tillförlitliga från en EOP fristående (standard) organisation till en annan EOP-standard eller en Exchange Enterprise-CAL med Service (EOP Premium)-organisation eller från en EOP Premium-organisation till en annan EOP Premium-organisation. Eftersom det inte går att använda vissa Premium-funktioner i EOP standard organisationer, flyttas från en EOP Premium-organisation till en EOP-standard organisation.
+>
+> - De här instruktionerna gäller för EOP-specifika organisationer. Det finns andra saker du bör tänka på när du flyttar från en Exchange Online-organisation till en annan Exchange Online-organisation. Exchange Online-organisationer saknar omfattning för dessa instruktioner.
 
 I följande exempel har contoso, Ltd. slagit samman med contoso-serier. Följande bild visar processen för att flytta domäner, e-postanvändare och grupper och inställningar från source EOP-organisationen (contoso.onmicrosoft.com) till mål EOP organisationen (contososuites.onmicrosoft.com):
 
@@ -42,27 +45,20 @@ Utmaningen med att flytta domäner från en organisation till en annan är att e
 För att kunna återskapa käll organisationen i mål organisationen ska du se till att du samlar in och lagrar följande information om käll organisationen:
 
 - Domäner
-
 - E-postanvändare
-
 - Grupper
-
 - Skydd mot skräp post
-
   - Principer för skräp post (kallas även för principer för innehålls filter)
   - Utgående filter principer för skräp post
   - Principer för anslutnings filter
-
 - Principer mot skadlig program vara
-
 - Koppling
-
 - Regler för e-postflöde (kallas även transport regler)
 
   > [!NOTE]
   > Cmdlet-stöd för att kunna exportera och importera regel samlingen för e-postflöde stöds för närvarande endast för EOP Premium-abonnemang.
 
-Det enklaste sättet att samla in alla dina inställningar är att använda PowerShell. Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+Det enklaste sättet att samla in alla dina inställningar är att använda PowerShell. Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 Sedan kan du samla in alla dina inställningar och exportera dem till en XML-fil som ska importeras till mål klient organisationen. I allmänhet kan du gå till utdata från cmdleten **Get** för varje inställning till cmdleten **export-CliXml** för att spara inställningarna i XML-filer, enligt följande kod exempel.
 
@@ -186,11 +182,11 @@ Nu kan du granska och samla in informationen från administrations centret för 
 
 2. Klicka på **domäner**.
 
-   Om du inte ser domäner klickar du på **Anpassa navigering**, väljer **Konfigurera**och klickar sedan på **Spara**.
+   Om du inte ser domäner klickar du på **Anpassa navigering**, väljer **Konfigurera** och klickar sedan på **Spara**.
 
 3. Klicka på länken **Start setup** och fortsätt sedan med installations guiden.
 
-4. Välj **allmänna instruktioner**för att **Visa stegvisa instruktioner för hur du utför det här steget**på sidan **bekräfta ägande** .
+4. Välj **allmänna instruktioner** för att **Visa stegvisa instruktioner för hur du utför det här steget** på sidan **bekräfta ägande** .
 
 5. Spela in MX-posten eller TXT-posten som du ska använda för att verifiera din domän och slutför installations guiden.
 
@@ -252,7 +248,7 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>Steg 5: verifiera domänerna för mål organisationen
 
-1. Logga in på administrations centret på [https://portal.office.com](https://portal.office.com) .
+1. Logga in på administrations centret på <https://portal.office.com> .
 
 2. Klicka på **domäner**.
 

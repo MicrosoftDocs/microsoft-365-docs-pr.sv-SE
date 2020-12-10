@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Interaktioner i grupper
-ms.openlocfilehash: 235a897314a784ba3bb1ac50fe8bdfe9986a70d3
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 6d5681b11cdbd837f784b6c8364cce23f964b167
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377635"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613232"
 ---
 # <a name="groups-services-interactions"></a>Interaktioner i grupper
 
@@ -89,7 +89,7 @@ Ett gemensamt sätt att styra Sprawl är att begränsa vilka användare som kan 
 Hur grupp skapande begränsas varierar mellan program och tjänster:
 
 
-|App eller tjänst|Funktionerna|
+|App eller tjänst|Upplevelse|
 |:-------------|:---------|
 |Outlook|Alternativet **ny grupp** tas bort från menyn nytt på sidan kontakter|
 |Planner|I den **nya planen** förklaras att grupp skapandet har inaktiverats och att du kan lägga till planen i en befintlig grupp|
@@ -639,4 +639,10 @@ Nej, Yammer-gruppen kan bara associeras med den Microsoft 365-grupp som den ursp
 **Tar du bort Yammer-gruppen ta bort gruppen Microsoft 365?**
 
 Ja, om du tar bort gruppen i Yammer tas tillhör ande Microsoft-grupper och gruppassocierade tjänster och innehåll bort.
+
+## <a name="related-topics"></a>Relaterade ämnen
+
+[Planerings steg-för-steg-samarbete för samarbets styrning](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Skapa en plan för hantering av samarbete](collaboration-governance-first.md)
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Under och efter en automatiserad undersökning i Microsoft 365 kan du Visa resultaten och nyckeltalen.
 ms.date: 11/05/2020
-ms.openlocfilehash: 4dc74987619c3f958c874927af6e4240b9d7e154
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 2018f008e043f36cd41047185f305209fcb725d7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357291"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615150"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Information och resultat från en automatiserad undersökning i Microsoft 365
 
@@ -53,11 +53,11 @@ Undersökningen visar analys och åtgärder. När undersökningen körs ändras 
 
 ## <a name="view-details-of-an-investigation"></a>Visa information om en undersökning
 
-1. Gå till säkerhets & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) och logga in.
+1. Gå till säkerhets & Compliance Center ( <https://protection.office.com> ) och logga in.
 
 2. Gör något av följande:
 
-    - Gå till **Threat management** \> **instrument panelen** Threat Management. Då kommer du till [säkerhets instrument panelen](security-dashboard.md). Dina AIR-widgetar visas överst på [instrument panelen](security-dashboard.md). Välj en widget, till exempel **Sammanfattning av undersökningar**.
+    - Gå till  \> **instrument panelen** Threat Management. Då kommer du till [säkerhets instrument panelen](security-dashboard.md). Dina AIR-widgetar visas överst på [instrument panelen](security-dashboard.md). Välj en widget, till exempel **Sammanfattning av undersökningar**.
 
     - Gå till **Threat Management** \> **utredningar**.
 
@@ -77,7 +77,7 @@ Vissa typer av aviseringar utlöser automatiserad undersökning i Microsoft 365.
 
 Följ anvisningarna nedan om du vill visa information om en avisering som är kopplad till en automatisk undersökning.
 
-1. Gå till säkerhets & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) och logga in.
+1. Gå till säkerhets & Compliance Center ( <https://protection.office.com> ) och logga in.
 
 2. Gå till **Threat Management** \> **utredningar**.
 

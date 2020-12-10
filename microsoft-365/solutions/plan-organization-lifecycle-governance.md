@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Lean-alternativ för hantering av livs cykeln för samarbets verktyg i Microsoft 365
-ms.openlocfilehash: 706f1aaecf22c4088d4539c208fef68320c5e710
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 4d779701d241fc7178ab759063be1b8cdf2e960c
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377193"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613026"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planera organisation och livscykler för Microsoft 365-grupper och Microsoft Teams
 
@@ -74,3 +74,9 @@ När du har ställt in grupper som förfaller:
 - Alla grupper som tas bort kan återställas inom 30 dagar av grupp ägarna eller administratören.
 
 Principer för förfallo dag är ett bra sätt att begränsa gruppens sprawl genom att se till att grupper som inte längre används tas bort. Om du vill skapa en giltighets princip för en grupp kan du läsa [Microsoft 365-gruppens förfallo princip](microsoft-365-groups-expiration-policy.md).
+
+## <a name="related-topics"></a>Relaterade ämnen
+
+[Planerings steg-för-steg-samarbete för samarbets styrning](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Skapa en plan för hantering av samarbete](collaboration-governance-first.md)

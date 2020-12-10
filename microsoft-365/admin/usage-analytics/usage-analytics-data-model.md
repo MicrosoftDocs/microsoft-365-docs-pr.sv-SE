@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Lär dig hur användnings analys ansluter till ett API och ger en månads trend för användning av olika Microsoft 365-tjänster.  '
-ms.openlocfilehash: 9d13d979e64a68aaffb3582ad6b09ab901843cd4
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: d7b3e7e9467a57f913f069c48249e82b5958aabb
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841381"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611454"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Datamodell för Microsoft 365 användningsanalyser
 
@@ -153,7 +153,7 @@ Den här tabellen innehåller information om hur du använder en månad för må
 |Produkt  <br/> |Namnet på produkter som användningsinformationen sammanfattas för. Microsoft 365-värdet i kolumnen Product representerar aktivitet i alla produkter  <br/> |
 |Timeframe  <br/> |Månadsvärdet. Det kommer att finnas en rad per produkt per månad för de senaste tolv månaderna, inklusive delar av aktuell månad.  <br/> |
 |EnabledUsers  <br/> |Antalet användare som är aktiverade för användning av produkten för tids Rute värden, om en användare aktiverades för en del av månaden räknas de ändå.  <br/> |
-|ActiveUsers  <br/> |Antalet användare som har utfört en avsiktlig aktivitet i produkten för tids ram värdet.  <br/> En användare räknas som aktiv för en produkt under en viss månad om han eller hon har utfört en nyckelaktivitet i produkten. Nyckelaktiviteter är tillgängliga i tabellen **Klientorganisationens produktaktivitet** .  <br/> |
+|ActiveUsers  <br/> |Antalet användare som har utfört en avsiktlig aktivitet i produkten för tids ram värdet.  <br/> En användare räknas som aktiv för en produkt under en viss månad om han eller hon har utfört en nyckelaktivitet i produkten. Nyckelaktiviteter är tillgängliga i tabellen **Klientorganisationens produktaktivitet**.  <br/> |
 |CumulativeActiveUsers  <br/> |Antalet användare som har aktiverats för att använda en produkt och som har använt produkten fram till månaden inom tidsperioden minst en gång sedan datainsamlingen påbörjades i det nya användningssystemet.  <br/> |
 |MoMReturningUsers  <br/> |Antalet användare som är aktiva under månaden inom tidsperioden och som även var aktiva under den föregående månaden.  <br/> |
 |FirstTimeUsers  <br/> |Antalet användare som blev aktiva inom tidsperioden för första gången sedan data samlades in i det nya användningssystemet.  <br/> En användare räknas som förstagångsanvändare under en viss månad, om vi identifierar hans eller hennes aktiviteter för första gången efter det att data börjat samlas in i det här nya rapporteringssystemet. När du har inventerat som användare i första tiden, även om användaren har en stor lucka i sin aktivitet kommer de aldrig att inventeras igen som en användare av första gången.  <br/> |
@@ -215,8 +215,8 @@ Den här tabellen består av månads översikts information om hur du använder 
 |DocumentCount  <br/> |Totalt antal dokument som fanns på webbplatsen vid tidsperiodens slut.  <br/> |
 |Diplansed  <br/> |Total lagringskvot som används för alla webbplatserna vid tidsperiodens slut.  <br/> |
 |ActivityType  <br/> |Antalet webbplatser som registrerade de olika typerna av filaktivitet (valfri/aktiva filer/delade filer EXT/INT/synkroniserade filer).  <br/> Representerar valfri fil aktivitet som har utförts.  <br/> |
-|SitesWithOwnerActivities  <br/> |Antalet aktiva platser där webbplatsägaren utfört en viss filaktivitet på sina egna webbplatser.  <br/> |
-|SitesWithNonOwnerActivities  <br/> |Antalet aktiva platser som summeras för månaden, där andra användare än webbplatsägaren utfört en viss filaktivitet på webbplatser.  <br/> |
+|SitesWithOwnerActivities  <br/> |Antalet aktiva platser där webbplatsägaren utfört en viss filaktivitet på sina egna webbplatser. Du kan hämta webbplats ägaren från PowerShell **-kommandot Get-sposite**. Det här är den person som är ansvarig för webbplatsen.   <br/> |
+|SitesWithNonOwnerActivities  <br/> |Antalet aktiva platser som summeras för månaden, där andra användare än webbplatsägaren utfört en viss filaktivitet på webbplatser. Du kan hämta webbplats ägaren från PowerShell **-kommandot Get-sposite**. Det här är den person som är ansvarig för webbplatsen. <br/> |
 |ActivityTotalSites  <br/> |Antalet webbplatser där någon aktivitet registrerats inom tidsperioden. Om en webbplats hade aktivitet tidigare inom tidsperioden och sedan togs bort i slutet av tidsperioden skulle den fortfarande räknas in i totalen för den aktiva webbplatsen för den tidsperioden.  <br/> |
 |Timeframe  <br/> |Den här kolumnen innehåller datumvärdet. Används som ett-till-många-samband för kalendertabellen.  <br/> |
 |Content Date  <br/> |Om tidsperioden är aktuell månad representerar det här värdet det senaste datumet i den aktuella månaden för vilket det finns tillgängliga data.  <br/> Om tidsperioden är föregående månad representerar det här värdet det sista datumet i månaden inom tidsperioden.  <br/> |

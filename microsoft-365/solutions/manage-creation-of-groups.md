@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Lär dig hur du styr vilka användare som kan skapa Microsoft 365-grupper.
-ms.openlocfilehash: 3a0ac5ef48eabfd06e0df3f509c7d8e4be3cff10
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: 2954f68dce289d43b37bf8f5c6ff43fe1b5c48c7
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602025"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613569"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Hantera vilka som kan skapa Microsoft 365 Grupper
 
@@ -36,7 +36,7 @@ Om ditt företag kräver att du begränsar vem som kan skapa grupper kan du gör
 - Microsoft Teams
 - Microsoft Stream
 - Planner
-- PowerBI (klassisk)
+- Power BI (klassisk)
 - Projekt för webben/översikt
 
 Du kan förhindra att Microsoft 365-grupper skapas för medlemmar i en viss säkerhets grupp. För att konfigurera det här använder du Windows PowerShell. I den här artikeln får du stegvisa instruktioner.
@@ -167,7 +167,11 @@ Prova samma procedur igen med en medlem i säkerhets gruppen.
 > [!NOTE]
 > Om medlemmar i säkerhets gruppen inte kan skapa grupper kontrollerar du att de inte blockeras genom sin princip för [OWA-postlådan](https://go.microsoft.com/fwlink/?linkid=852135).
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-topics"></a>Relaterade ämnen
+
+[Planerings steg-för-steg-samarbete för samarbets styrning](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Skapa en plan för hantering av samarbete](collaboration-governance-first.md)
 
 [Komma igång med Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=808033)
 

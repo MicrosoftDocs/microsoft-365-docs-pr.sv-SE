@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig att använda standard-och strikta princip inställningar i skydds funktionerna i Exchange Online Protection (EOP) och Microsoft Defender för Office 365
-ms.openlocfilehash: e968f7ea768ac8a0b402c28f3830a52b44afa342
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: fb613916ec375214b33b8b842c6817561920715d
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572783"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616050"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Förvalda säkerhets principer i EOP och Microsoft Defender för Office 365
 
@@ -62,7 +62,7 @@ De tillgängliga villkoren och undantagen är:
 Förvalda säkerhets principer Använd motsvarande principer i de olika skydds funktionerna i EOP och Microsoft Defender för Office 365. Dessa principer skapas _efter_ att du har tilldelat **standard** säkerhets principer för förvalda skydd eller **strikta skydd** för användare. Du kan inte ändra dessa principer.
 
 - **Principer för Exchange Online Protection (EOP)**: det inkluderar Microsoft 365-organisationer med Exchange Online-postlådor och fristående EOP-organisationer utan Exchange Online-postlådor:
-  
+
   - [Principer för skräp post](configure-your-spam-filter-policies.md) som heter **Standard säkerhets princip** och **strikt förinställd säkerhets policy**.
   - [Principer mot skadlig program vara](configure-anti-malware-policies.md) med namnet **Standard säkerhets princip** och **strikt förinställd säkerhets policy**.
   - [EOP anti-nätfiske-principer](set-up-anti-phishing-policies.md#spoof-settings) som heter **Standard säkerhets princip** och **strikt förinställd säkerhets princip** (Spoof-inställningar).
@@ -112,7 +112,7 @@ Med andra ord åsidosätter inställningarna för principen för **strikt skydd*
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Använd säkerhets & Compliance Center för att tilldela förvalda säkerhets principer till användare
 
-1. Gå till säkerhets principer för principer för **hot Management** policy i säkerhets & efterlevnad \> **Policy** \> **Preset security policies**.
+1. Gå till säkerhets principer för principer för **hot Management** policy i säkerhets & efterlevnad \>  \> .
 
 2. Under **standard skydd** eller **strikt skydd** klickar du på **Redigera**.
 

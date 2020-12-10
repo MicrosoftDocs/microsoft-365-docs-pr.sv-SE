@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Administratörer kan lära sig att använda karantän koder för att kontrol lera vad användarna kan göra i sina karantän meddelanden.
-ms.openlocfilehash: 68f28e2dff3bdeada2685ef6806489f5e57f5daf
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 498a5f45fa62481f7f4f8dfe5ece8a51a038f99a
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572675"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616014"
 ---
 # <a name="quarantine-tags"></a>Karantän koder
 
@@ -60,7 +60,7 @@ Du skapar och tilldelar karantän koder i säkerhets & efterföljandekrav eller 
 
 - Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Öppna för att gå direkt till sidan **karantän etiketter** <https://protection.office.com/quarantineTags> .
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Om du vill visa, skapa, ändra eller ta bort karantän koder måste du vara medlem i rollerna **organisations hantering** eller **säkerhets administratör** i [säkerhets & efterlevnad](permissions-in-the-security-and-compliance-center.md).
 
@@ -161,7 +161,9 @@ Detaljerad information om syntax och parametrar finns i [New-QuarantineTag](http
 Gör så här om du vill skapa en karantän etikett med hjälp av parametern _EndUserQuarantinePermissionsValue_ :
 
 Kallas. Lagra ett karantän objekt i en variabel med cmdleten **New-QuarantinePermissions** .
-<br/>
+
+<p>
+
 H. Använd variabeln som _EndUserQuarantinePermissions_ -värde i kommandot **ny-QuarantineTag** .
 
 ##### <a name="step-a-store-a-quarantine-permissions-object-in-a-variable"></a>Steg A: lagra ett karantän objekt i en variabel
@@ -246,11 +248,11 @@ Fullständiga anvisningar för hur du skapar och ändrar principer för skräp p
 2. Leta reda på och välj en befintlig policy mot skräp post som du vill redigera eller skapa en ny policy mot skräp post.
 
 3. I den utfällbara princip informationen expanderar du avsnittet **skräp post och Mass åtgärder** .
-  
+
 4. Om du har valt **karantän meddelande** för en tillgänglig spam-Verdict är rutan **Använd karantän princip** tillgänglig för dig att välja karantän tag gen för den Verdict.
 
    **Obs!** när du skapar en ny princip anger ett tomt karantän värde för en skräp post filtrering Verdict att standard karantänen för den Verdict används. När du senare redigerar principen ersätts de tomma värdena med de faktiska standard namnen på karantänen enligt beskrivningen i föregående tabell.
-  
+
    ![Alternativ för karantän i en policy för skräp post](../../media/quarantine-tags-in-anti-spam-policies.png)
 
 5. Klicka på **Spara** när du är klar.
@@ -465,7 +467,7 @@ Om den här flaggan tilldelar **full åtkomst** behörighet (alla tillgängliga 
 
 #### <a name="allow-sender-permission"></a>Tillåt avsändarens tillstånd
 
-Alternativet **Tillåt avsändare** kontrollerar åtkomsten till knappen som gör att användare enkelt kan lägga till avsändaren av meddelandet i listan Betrodda avsändare._PermissionToAllowSender_
+Alternativet **Tillåt avsändare** kontrollerar åtkomsten till knappen som gör att användare enkelt kan lägga till avsändaren av meddelandet i listan Betrodda avsändare.
 
 - **Detaljer i karantänen**:
   - **Tillåt avsändarens** behörighet aktiverat: knappen **Tillåt avsändare** är tillgänglig.
@@ -516,7 +518,7 @@ Med funktionen för **förhands granskning** (_PermissionToPreview_) kan använd
 - **Detaljer i karantänen**:
   - Behörighet aktive rad: knappen för att **frigöra meddelande** är tillgänglig.
   - Inaktive rad behörighet: knappen för att **frigöra meddelande** är inte tillgänglig.
-  
+
 - **Meddelanden om avanmälan till slutanvändare**:
   - Behörighet aktive rad: knappen **släpp** är tillgänglig.
   - Inaktive rad behörighet: knappen **släpp** är inte tillgänglig.

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln får du lära dig hur du använder list portalen för att ta bort dig själv från listan med spärrade avsändare i Microsoft 365.
-ms.openlocfilehash: f4e7bcc13ac6c133880eb0ebe69ba3f724d0a84e
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 0c87d467db004a50502402b05eb0fa3283aa46c5
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561429"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614768"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Använda avlistningsportalen för att ta bort dig själv från listan med spärrade avsändare
 

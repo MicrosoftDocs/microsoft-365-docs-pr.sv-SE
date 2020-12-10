@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur du konfigurerar URL-poster i listan Tillåt/blockera i klient organisationen för säkerhets &.
-ms.openlocfilehash: 1aae54ffd6026a7fc131017a10f9676d96be9b69
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 0fdfa23ba22b240032e7a6888948de180aa0f6ae
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572652"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614970"
 ---
 # <a name="manage-urls-in-the-tenant-allowblock-list"></a>Hantera URL:er i Klientorganisation Tillåt / blockera listan
 
@@ -50,9 +50,9 @@ I det här avsnittet beskrivs hur du konfigurerar poster i listan Tillåt/blocke
 
 - Poster i listan Tillåt/blockera för klient organisationer upphör som standard efter 30 dagar. Du kan ange ett datum eller ange att de aldrig ska upphöra att gälla.
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Du måste tilldelas behörigheter i säkerhets & Compliance Center innan du kan göra det i den här artikeln:
+- Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
   - För att lägga till och ta bort värden från listan över tillåtna/blockerade innehavare måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** .
   - Om du vill ha skrivskyddad åtkomst till listan Tillåt/blockera för klient organisationen måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** .
 
@@ -60,8 +60,8 @@ I det här avsnittet beskrivs hur du konfigurerar poster i listan Tillåt/blocke
 
   **Anmärkningar**:
 
-  - Om du lägger till användare i motsvarande Azure Active Directory-roll i Microsoft 365 Admin Center får användarna den behörighet som krävs för säkerhets & efterlevnad Center _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Roll gruppen **organisations hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
+  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Använd säkerhets & efterlevnad för att skapa URL-poster i listan Tillåt/blockera för klient organisation
 
@@ -296,7 +296,7 @@ Giltiga URL-värden och deras resultat beskrivs i följande avsnitt.
   - test.com/q=contoso.com
   - www.contoso.com
   - www. contoso. com/q = a@contoso. com
-  
+
 - **Blockera träff**:
 
   - contoso.com
@@ -324,7 +324,7 @@ Giltiga URL-värden och deras resultat beskrivs i följande avsnitt.
   - contoso.com
   - test.com/contoso.com
   - www.contoso.com/abc
-  
+
 #### <a name="scenario-right-wildcard-at-top-of-path"></a>Scenario: höger mönster överst i sökvägen
 
 **Post**: `contoso.com/a/*`
@@ -341,7 +341,7 @@ Giltiga URL-värden och deras resultat beskrivs i följande avsnitt.
   - contoso.com/a
   - www.contoso.com
   - www. contoso. com/q = a@contoso. com
-  
+
 #### <a name="scenario-left-tilde"></a>Scenario: vänster Tilde
 
 **Post**: `~contoso.com`

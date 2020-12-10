@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Administratörer kan lära dig hur du använder widgeten köer i instrument panelen för e-postflöde i säkerhets & Compliance Center för att övervaka misslyckade e-postflöden till deras lokala eller partner organisationer via utgående anslutningar.
-ms.openlocfilehash: e6935793cd04c6072784cd20b55649126864c369
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: c582a7f459d89fa1515713c4f55dea14b619a6ec
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877579"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616398"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Köer inblickar i säkerhets & Compliance Center
 
@@ -33,8 +33,8 @@ Microsoft 365 fortsätter att försöka leverera i 24 timmar. Efter 24 timmar up
 Om den köade e-postvolymen överskrider det fördefinierade tröskelvärdet (Standardvärdet är 200 meddelanden) finns informationen på följande platser:
 
 - **Köerna** inblickar i [instrument panelen för e-postflöden](mail-flow-insights-v2.md) i [säkerhets & Compliance Center](https://protection.office.com). Mer information finns i [köerna under rubriken e-postflöde](#queues-insight-in-the-mail-flow-dashboard) i det här avsnittet.
-  
-- En avisering visas i de **senaste varningarna** instrument panelen för aviseringar i [säkerhets & Compliance Center](https://protection.office.com) (instrument panelen för **aviseringar** \> **Dashboard** eller <https://protection.office.com/alertsdashboard> ).
+
+- En avisering visas i de **senaste varningarna** instrument panelen för aviseringar i [säkerhets & Compliance Center](https://protection.office.com) (instrument panelen för **aviseringar** \>  eller <https://protection.office.com/alertsdashboard> ).
 
   ![Senaste meddelanden i instrument panelen för aviseringar i säkerhets & efterlevnad](../../media/mfi-queued-messages-alert.png)
 
@@ -44,7 +44,7 @@ Om den köade e-postvolymen överskrider det fördefinierade tröskelvärdet (St
 
 ## <a name="customize-queue-alerts"></a>Anpassa aviseringar i kö
 
-1. Gå till **aviserings** principer för varningar eller öppna i fönstret [säkerhets & efterlevnad](https://protection.office.com) \> **Alert policies** <https://protection.office.com/alertpolicies> .
+1. Gå till **aviserings** principer för varningar eller öppna i fönstret [säkerhets & efterlevnad](https://protection.office.com) \>  <https://protection.office.com/alertpolicies> .
 
 2. Leta reda på och välj policyn som heter **meddelanden** på sidan **aviserings principer** .
 
@@ -52,16 +52,16 @@ Om den köade e-postvolymen överskrider det fördefinierade tröskelvärdet (St
 
    ![Meddelanden har fördröjts med aviserings princip uppgifter säkerhets & efterlevnad](../../media/mfi-queued-messages-alert-policy.png)
 
-   - **Status** : du kan aktivera eller inaktivera aviseringen.
+   - **Status**: du kan aktivera eller inaktivera aviseringen.
 
-   - **E-postmottagare** och **daglig meddelande gräns** : Klicka på **Redigera** för att konfigurera följande inställningar:
+   - **E-postmottagare** och **daglig meddelande gräns**: Klicka på **Redigera** för att konfigurera följande inställningar:
 
 4. Konfigurera aviserings inställningarna genom att klicka på **Redigera**. I redigera utfällbar **princip** som visas konfigurerar du följande inställningar:
 
-   - **Skicka e-postmeddelanden** : standardvärdet är på.
-   - **E-postmottagare** : standardvärdet är **TenantAdmins**.
-   - **Daglig meddelande gräns** : standardvärdet är **ingen gräns**.
-   - **Tröskelvärde** : standardvärdet är 200.
+   - **Skicka e-postmeddelanden**: standardvärdet är på.
+   - **E-postmottagare**: standardvärdet är **TenantAdmins**.
+   - **Daglig meddelande gräns**: standardvärdet är **ingen gräns**.
+   - **Tröskelvärde**: standardvärdet är 200.
 
    ![Aviserings inställningar i meddelanden har fördröjts med aviserings princip uppgifter säkerhets & efterlevnad](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
 
@@ -76,13 +76,13 @@ Om den köade e-postvolymen överskrider det fördefinierade tröskelvärdet (St
 Om du klickar på antalet meddelanden i widgeten visas en utfällbar **meddelande** med följande information:
 
 - **Antal köade meddelanden**
-- **Anslutnings namn** : Klicka på kopplingens namn för att hantera kopplingen i administrations centret för Exchange (UK).
+- **Anslutnings namn**: Klicka på kopplingens namn för att hantera kopplingen i administrations centret för Exchange (UK).
 - **Start tid för kö**
 - **Äldsta meddelanden har upphört**
 - **Mål Server**
 - **Sista IP-adress**
 - **Senaste fel**
-- **Så här löser du problemet** : vanliga problem och lösningar finns tillgängliga. Om du har en lösning på att länken **nu** är tillgänglig klickar du på den för att åtgärda problemet. Annars kan du klicka på eventuella tillgängliga länkar för mer information om felet och möjliga lösningar.
+- **Så här löser du problemet**: vanliga problem och lösningar finns tillgängliga. Om du har en lösning på att länken **nu** är tillgänglig klickar du på den för att åtgärda problemet. Annars kan du klicka på eventuella tillgängliga länkar för mer information om felet och möjliga lösningar.
 
 ![Information efter att du klickat på ärende köerna i instrument panelen för e-postflöde](../../media/mfi-queues-details.png)
 

@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Lär dig mer om hur du förklarar Microsoft 365-grupper för användarna.
-ms.openlocfilehash: 179452800fb28c193622b47dce85dd6419ae5ac2
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 2f983d69f8b3138634739a82e35de9e62821d252
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49554808"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613014"
 ---
 # <a name="explaining-microsoft-365-groups-to-your-users"></a>Förklara Microsoft 365-grupper för användarna
 
@@ -38,6 +38,8 @@ Eftersom grupper kan skapas på flera olika sätt rekommenderar vi att du använ
 [![bild DESC ](../../media/03.png)](../../media/03.png#lightbox)
 
 Om du tränar användarna att alltid använda den metod för att skapa grupper som bäst stämmer överens med deras arbets sätt när de behöver ett utrymme för att samar beta med andra kan du undvika förvirring och dubbletter av resurser. När användarna blir mer erfarna förstår de att de tjänster som ingår i en grupp och att olika metoder för skapande kan ge samma resultat.
+
+Du kan använda [Microsoft 365-grupperna för företags användare – PowerPoint](https://www.microsoft.com/download/details.aspx?id=102396) som utgångs punkt för utbildnings presentationer för dina användare.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 81e729d9b0ff145d1d10a385cdd3f0856287dd9f
-ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
+ms.openlocfilehash: 1a82fc414bfed2f7a054ae533700c52a8270ed6d
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49588591"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615296"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Produktivitetsillustrationer för Microsoft 365
 
@@ -146,7 +146,7 @@ Mer information finns i artikeln för denna affisch: ge [fjärranställda med Mi
 Med Microsoft 365 kan du konfigurera ett privat team i Microsoft Teams och använda säkerhets inställningar för SharePoint-webbplatsen och en unik känslighets etikett för att kryptera filer så att bara grupp medlemmar kan dekryptera dem.
 
 [![Microsoft Teams med säkerhets isolering, affisch](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf) <br/>
-[DOKUMENT](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) <br> Uppdaterat 2020
+[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)  |  [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br> Uppdaterat 2020
 
 Mer information finns i artikeln om den här affischen: [Konfigurera ett team med säkerhets isolering](secure-teams-security-isolation.md).
 

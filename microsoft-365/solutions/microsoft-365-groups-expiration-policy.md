@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Lär dig mer om principer för förfallo datum för Microsoft 365 Groups.
-ms.openlocfilehash: 4b283bcc9f4e54462a71b9aee70d6312b9f127d6
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: d55cc7fff939cb07ae2eba92de411e8f0d088885
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350718"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613660"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Utgångs princip för Microsoft 365-gruppen
 
@@ -55,7 +55,7 @@ Det är viktigt att veta att förfallo dagen är inaktive rad som standard. Admi
 
 ## <a name="how-to-set-the-expiration-policy"></a>Ange förfallo princip
 
-Som vi noterade ovan är förfallo datumet inaktiverat som standard. En administratör måste aktivera policyn för förfallo datum och ställa in egenskaperna för att den ska gälla. Gå till gruppen **Azure Active Directory**-grupper för att aktivera den  >  **Groups**  >  **Expiration**. Här kan du ange standard livstid för gruppen och ange hur långt i förväg du vill att aviseringarna för första och sista giltighets tiden ska gå till gruppens ägare.
+Som vi noterade ovan är förfallo datumet inaktiverat som standard. En administratör måste aktivera policyn för förfallo datum och ställa in egenskaperna för att den ska gälla. Gå till gruppen **Azure Active Directory**-grupper för att aktivera den  >    >  . Här kan du ange standard livstid för gruppen och ange hur långt i förväg du vill att aviseringarna för första och sista giltighets tiden ska gå till gruppens ägare.
 
 Gruppens livs längd anges i dagar och kan anges till 180, 365 eller till ett anpassat värde som du anger. Värdet måste vara minst 30 dagar.
 
@@ -81,7 +81,11 @@ Om du av någon anledning inte förnyar gruppen innan den upphör kan administra
 
 Om du har en grupp som du inte längre planerar att använda, men du vill behålla dess [innehåll, kan du läsa om](end-life-cycle-groups-teams-sites-yammer.md) hur du exporterar information från de olika grupp tjänsterna.
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-topics"></a>Relaterade ämnen
+
+[Planerings steg-för-steg-samarbete för samarbets styrning](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Skapa en plan för hantering av samarbete](collaboration-governance-first.md)
 
 [Översikt över bevarande principer](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)
 

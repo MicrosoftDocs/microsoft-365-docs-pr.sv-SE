@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa, skapa, ändra och ta bort utgående skräp post principer i Exchange Online Protection (EOP).
-ms.openlocfilehash: 792cd44d1571c407477671c6223b8ec38ad9b7f8
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 237703d9ad6ed652a3feb4dda57a7af0e99240f7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572843"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614946"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurera utgående skräp post filtrering i EOP
 
@@ -65,9 +65,9 @@ Om du vill öka effektiviteten för utgående skräp post filtrering kan du skap
 
 - Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till **Inställningar för skräppostskydd** använder du <https://protection.office.com/antispam>.
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Du måste tilldelas behörigheter i säkerhets & Compliance Center innan du kan göra det i den här artikeln:
+- Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
   - För att lägga till, ändra och ta bort regler för utgående skräp post måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** .
   - Om du vill ha skrivskyddad åtkomst till skräp post principer måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** .
 
@@ -75,8 +75,8 @@ Om du vill öka effektiviteten för utgående skräp post filtrering kan du skap
 
   **Anmärkningar**:
 
-  - Om du lägger till användare i motsvarande Azure Active Directory-roll i Microsoft 365 Admin Center får användarna den behörighet som krävs för säkerhets & efterlevnad Center _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Roll gruppen **organisations hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
+  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
 - De rekommenderade inställningarna för utgående skräp post finns i [EOP utgående filter princip inställningar för skräp post](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings).
 
@@ -173,7 +173,7 @@ Om du skapar en anpassad princip för utgående e-post i säkerhets & Compliance
    - **Automatisk Systemstyrd**: tillåter utgående skräp post filtrering för automatisk överföring av externa e-postmeddelanden. Det här är standardvärdet.
    - **Den**: automatisk överföring av externa e-post är inte inaktive rad av principen.
    - **Av** den här principen är inaktive rad för automatisk vidarebefordring av externa e-postmeddelanden.
- 
+
 7. Kunna Expandera avsnittet **används** för att identifiera de interna avsändare som principen gäller för.
 
     Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<sender1\>_ eller _\<sender2\>_). Olika villkor och undantag använder OCH-logik (till exempel _\<sender1\>_ och _\<member of group 1\>_).
@@ -248,9 +248,9 @@ Du ändrar prioriteten för en princip genom att flytta principen uppåt eller n
 
    - Den anpassade principen för utgående skräp post med den högsta prioriteten har ikonen för värde ![ nedpilen ](../../media/ITPro-EAC-DownArrowIcon.png) **0**.
 
-   - Den anpassade principen för utgående skräp post med lägst prioritet har ![ ikonen för värde uppåt ](../../media/ITPro-EAC-UpArrowIcon.png) **n** (till exempel uppåtpil ![ ](../../media/ITPro-EAC-UpArrowIcon.png) **3**).
+   - Den anpassade principen för utgående skräp post med lägst prioritet har ![ ikonen för värde uppåt ](../../media/ITPro-EAC-UpArrowIcon.png)  (till exempel uppåtpil ![ ](../../media/ITPro-EAC-UpArrowIcon.png) **3**).
 
-   - Om du har tre eller fler anpassade principer för utgående e-post har principerna mellan den högsta och lägsta prioriteten ikonen för att hålla ned en nedåtpil (till exempel ikonen nedåtpil ![ ](../../media/ITPro-EAC-UpArrowIcon.png)![ ](../../media/ITPro-EAC-DownArrowIcon.png) **n** ![ ](../../media/ITPro-EAC-UpArrowIcon.png)![ ](../../media/ITPro-EAC-DownArrowIcon.png) **2**).
+   - Om du har tre eller fler anpassade principer för utgående e-post har principerna mellan den högsta och lägsta prioriteten ikonen för att hålla ned en nedåtpil (till exempel ikonen nedåtpil ![ ](../../media/ITPro-EAC-UpArrowIcon.png)![ ](../../media/ITPro-EAC-DownArrowIcon.png)  ![ ](../../media/ITPro-EAC-UpArrowIcon.png)![ ](../../media/ITPro-EAC-DownArrowIcon.png) **2**).
 
 3. Klicka på ![ikonen Uppåtpil](../../media/ITPro-EAC-UpArrowIcon.png) eller ![ikonen Nedåtpil](../../media/ITPro-EAC-DownArrowIcon.png) för att flytta den anpassade principen för utgående skräp post uppåt eller nedåt i prioritets listan.
 

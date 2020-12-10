@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Rekommendationer från Microsofts Cybersecurity-team för implementering av säkerhetsfunktioner för att skydda din Microsoft 365-miljö. '
-ms.openlocfilehash: d62db9206a98078ae5adaad220a7c9b53ff116cd
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 452ce2a303f02cadfcdcbe12310f2538d33a24e7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561705"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615810"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Säkerhets plan – de främsta prioriteringarna för de första 30 dagarna, 90 dagar och senare
 
@@ -77,7 +77,7 @@ Dessa uppgifter tar lite längre tid att planera och implementera men det ökar 
 
 |Under|Uppgift|
 |---|---|
-|Säkerhetshantering|<ul><li>Kontrol lera säkerhets poängen för rekommenderade åtgärder för din miljö ( [https://securescore.office.com](https://securescore.office.com) ).</li><li>Fortsätt att regelbundet granska instrument paneler och rapporter 365 i säkerhets Center, Cloud App-säkerhet och SIEM verktyg.</li><li>Leta efter och implementera program uppdateringar.</li><li>Utför angrepps simuleringar för Spear – nätfiske, lösen ords skydd och angrepp med [angrepps Simulator](attack-simulator.md) (ingår i [Office 365 Threat Intelligence](office-365-ti.md)).</li><li>Leta efter risk för delning genom att granska de inbyggda rapporterna i Cloud App Security (på fliken Undersök).</li><li>Kontrol lera status för reglerna som gäller för din organisation (till exempel GDPR, NIST 800-171) genom att granska [överensstämmelse hanteraren](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager) .</li></ul>|
+|Säkerhetshantering|<ul><li>Kontrol lera säkerhets poängen för rekommenderade åtgärder för din miljö ( <https://securescore.office.com> ).</li><li>Fortsätt att regelbundet granska instrument paneler och rapporter 365 i säkerhets Center, Cloud App-säkerhet och SIEM verktyg.</li><li>Leta efter och implementera program uppdateringar.</li><li>Utför angrepps simuleringar för Spear – nätfiske, lösen ords skydd och angrepp med [angrepps Simulator](attack-simulator.md) (ingår i [Office 365 Threat Intelligence](office-365-ti.md)).</li><li>Leta efter risk för delning genom att granska de inbyggda rapporterna i Cloud App Security (på fliken Undersök).</li><li>Kontrol lera status för reglerna som gäller för din organisation (till exempel GDPR, NIST 800-171) genom att granska [överensstämmelse hanteraren](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager) .</li></ul>|
 |Skydd mot hot|Implementera utökade skydd för administratörs konton: <ul><li>Konfigurera [behöriga åtkomst arbets stationer](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) (PAWs) för administratörs aktivitet.</li><li>Konfigurera [Azure AD-privilegie rad identitets hantering](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).</li><li>Konfigurera ett verktyg för säkerhets information och Event Management (SIEM) för insamling av loggnings data från Office 365, Cloud App Security och andra tjänster, inklusive AD FS. I gransknings loggen lagras data för endast 90 dagar. Om du fångar in dessa data i SIEM-verktyget kan du lagra data under en längre tid.</li></ul>|
 |Identitets- och åtkomsthantering|<ul><li>Aktivera och verkställa MFA för alla användare.</li><li>Implementera en uppsättning [villkor för villkorsstyrd åtkomst och relaterade principer](microsoft-365-policies-configurations.md).</li></ul>|
 |Informationsskydd| Anpassa och implementera principer för informations skydd. De här resurserna innehåller exempel: <ul><li>[Informationsskydd för Office 365 för GDPR](https://aka.ms/o365gdpr)</li><li>[Konfigurera Teams med tre skyddsnivåer](../../solutions/configure-teams-three-tiers-protection.md)</li></ul> <p> Använd principer för data förlust skydd och övervaknings verktyg i Microsoft 365 för data som lagrats i Microsoft 365 (istället för Cloud App Security). <p> Använd Cloud App Security med Microsoft 365 för avancerade aviserings funktioner (annat än förhindra data förlust).|

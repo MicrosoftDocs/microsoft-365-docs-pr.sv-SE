@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 67835f4140179c69b5e0f2cd0287e656dd4c49ad
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: bd0b4efb1281d467a61e4aee792b507f0ca44181
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558556"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616566"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Nödvändigt arbete för implementering av identitets-och enhets åtkomst principer
 
@@ -38,7 +38,7 @@ Innan du implementerar de rekommenderade principer för identitet och enheter fi
 - Hybrid med direktautentisering (PTA)
 - Extern
 
-I följande tabell beskrivs de nödvändiga funktionerna och deras konfiguration som gäller för alla identitets modeller förutom där det anges. 
+I följande tabell beskrivs de nödvändiga funktionerna och deras konfiguration som gäller för alla identitets modeller förutom där det anges.
 
 |Konfiguration|Undanta|
 |---|:---:|
@@ -76,7 +76,7 @@ Vi rekommenderar även att företagsägda enheter standardiseras på OEM-tillver
 
 ### <a name="recommended-email-clients"></a>Rekommenderade e-postklienter
 
-Följande e-postklienter stöder modern och villkorlig åtkomst. 
+Följande e-postklienter stöder modern och villkorlig åtkomst.
 
 |Plattform|Klient|Version/anteckningar|
 |---|---|---|
@@ -116,9 +116,9 @@ För utgåvor av Microsoft 365 eller Office 365 som inte har stöd för villkorl
 
 Här är några ytterligare rekommendationer:
 
-- Använd [Azure AD privilegie rad identitets hantering](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) för att minska antalet beständiga administratörs konton. 
-- [Använd hanteringen av privilegie rad åtkomst](../../compliance/privileged-access-management-overview.md) för att skydda din organisation från intrång som kan använda befintliga administratörs konton med åtkomst till känsliga data eller åtkomst till viktiga konfigurations inställningar. 
-- Skapa och Använd separata konton som har tilldelats [Microsoft 365-administratörs roller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) *endast för administration*. Administratörer bör ha eget användar konto för regelbunden icke-administrativ användning och kan bara använda ett administratörs konto när det behövs för att slutföra en aktivitet som är kopplad till deras roll eller jobb funktion. 
+- Använd [Azure AD privilegie rad identitets hantering](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) för att minska antalet beständiga administratörs konton.
+- [Använd hanteringen av privilegie rad åtkomst](../../compliance/privileged-access-management-overview.md) för att skydda din organisation från intrång som kan använda befintliga administratörs konton med åtkomst till känsliga data eller åtkomst till viktiga konfigurations inställningar.
+- Skapa och Använd separata konton som har tilldelats [Microsoft 365-administratörs roller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) *endast för administration*. Administratörer bör ha eget användar konto för regelbunden icke-administrativ användning och kan bara använda ett administratörs konto när det behövs för att slutföra en aktivitet som är kopplad till deras roll eller jobb funktion.
 - Följ de [bästa metoderna](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) för att skydda privilegierade konton i Azure AD.
 
 ## <a name="next-step"></a>Nästa steg

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Lär dig hur du använder Utforskaren och identifiering av real tid i säkerhets & kompatibilitetstillstånd för att undersöka och reagera på hot effektivt och effektivt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 021810a4d64dc3a8d9089a3b7174a1b5f536745a
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 4328bfc52497f911c57256f8366b3742523b17b0
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561405"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615570"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer och real tids identifiering
 
@@ -67,7 +67,7 @@ Kolumnerna som visas i e-postrutnätet innehåller alla Taggar som har kopplats 
 
 Nu har vi taggar som ett filter så att du bara kan upptäcka bara över prioriterade konton eller specifika användar märknings scenarier (och till och med exkludera resultat med vissa taggar som en del av den här versionen). Genom att kombinera dessa med de andra filter som vi tillhandahåller, kan du begränsa omfattningen av undersökningen
 
-[![Filtrera märkord ](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
+[![Filtrera märkord](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
 > ![Filtrera inte märkord](../../media/tags-filter-not.png)
@@ -149,7 +149,7 @@ Ytterligare åtgärder består av de åtgärder som har tillämpats anslå lever
 > - Det kommer att finnas nya fält och värden för identifierings teknologier och ytterligare åtgärder (särskilt för ZAP-scenarier). Utvärdera dina befintliga sparade frågor och spårade frågor för att kontrol lera att de fungerar med de nya värdena.
 
 > [!div class="mx-imgBorder"]
-> ![Additional_Actions](../../media/Additional_Actions.png)
+> ![Ytterligare åtgärder i Utforskaren](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>Systemåsidosättningar
 
@@ -161,10 +161,10 @@ Systemåsidosättningar är en metod för att skapa undantag till den avsedda le
 - Blockerat av en organisations princip: det här är när organisationens säkerhets team anger principer eller regler för e-postflöde för att blockera avsändare, domäner, meddelande språk eller käll-IP för användare i organisationen. Det kan också vara för en uppsättning användare eller hela organisationen.
 - Fil tillägget blockerat av en organisations princip: det här är när ett fil namns tillägg blockeras av en organisations säkerhets team via princip inställningarna mot skadlig program vara. Dessa värden visas nu i e-postinformation för att hjälpa till med undersökningar. Secops Teams kan också filtrera på blockerade fil namns tillägg med hjälp av funktionen för RTF-filtrering.
 
-[![System_Overrides ](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
+[![Systemåsidosättningar i Utforskaren](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+> ![Systemet åsidosätter rutnät i Utforskaren](../../media/System_Overrides_Grid.png)
 
 ### <a name="improvements-around-url-and-clicks-experience"></a>Förbättringar kring URL-och klicknings upplevelser
 
@@ -184,7 +184,7 @@ De förbättringar som prioriteras mot URL och URL klickar på data inkluderar:
 
 Phish konfidensnivå hjälper dig att identifiera graden av förtroende, med vilken ett e-postmeddelande kategoriserats som Phish. De två möjliga värdena är hög och normal. I de inledande faserna är det här filtret bara tillgängligt i den Phish vyn av Threat Explorer.
 
-[![Phish_Confidence_Level ](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
+[![Phish konfidensnivå i Utforskaren](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
 
 ### <a name="zap-url-signal"></a>ZAP URL-signal
 
@@ -354,14 +354,14 @@ Du kan komma till samma plats i rapporten för rapporter i real tid så här:
 
 Anta att du vill se hur skadlig kod identifieras i e-post, av Microsoft 365-teknologi. För att göra det här använder du [e-postmeddelandet med > skadlig program vara](threat-explorer-views.md#email--malware) för Explorer (eller real tids identifiering).
 
-1. [https://protection.office.com](https://protection.office.com)Välj **Threat Management**  >  **Explorer** (eller **real tids identifiering**) i gruppen säkerhets & efterlevnad. (Det här exemplet använder Utforskaren.)
+1. <https://protection.office.com>Välj **Threat Management** \> **Explorer** (eller **real tids identifiering**) i gruppen säkerhets & efterlevnad. (Det här exemplet använder Utforskaren.)
 
-2. Välj **View** **e-**  >  **postmalware** på Visa-menyn.
+2. Välj **View** **e-** \> **postmalware** på Visa-menyn.
 
    > [!div class="mx-imgBorder"]
    > ![Visa-menyn för Utforskaren](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. Klicka på **avsändare** och välj sedan **grundläggande**  >  **identifierings teknik**.
+3. Klicka på **avsändare** och välj sedan **grundläggande** \> **identifierings teknik**.
 
    Din identifierings teknik är nu tillgänglig som filter för rapporten.
 
@@ -381,14 +381,14 @@ Anta att du vill se nät fiske försök via URL: er via e-post, inklusive en lis
 
 Om du vill granska Phish URL-adresser i meddelanden och klickar på URL: er i Phish meddelanden använder du [e-post> Phish](threat-explorer-views.md#email--phish) vyn av Utforskaren (eller real tids identifieringar).
 
-1. [https://protection.office.com](https://protection.office.com)Välj **Threat Management**  >  **Explorer** (eller **real tids identifiering**) i gruppen säkerhets & efterlevnad. (Det här exemplet använder Utforskaren.)
+1. <https://protection.office.com>Välj **Threat Management** \> **Explorer** (eller **real tids identifiering**) i gruppen säkerhets & efterlevnad. (Det här exemplet använder Utforskaren.)
 
-2. Välj **e-** Phish på **Visa** -menyn  >  **Phish**.
+2. Välj **e-** Phish på **Visa** -menyn \> **Phish**.
 
    > [!div class="mx-imgBorder"]
    > ![Menyn Visa för Explorer i nät fiske kontext](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Klicka på **avsändare** och välj **URL-adresser**  >  **på Verdict**.
+3. Klicka på **avsändare** och välj **URL-adresser** \> **på Verdict**.
 
 4. Välj ett eller flera alternativ, till exempel **blockerat** och **blockera**, och klicka sedan på knappen **Uppdatera** på samma rad som de alternativ som används för att tillämpa filtret. (Uppdatera inte webbläsarfönstret.)
 
@@ -428,14 +428,14 @@ I e-postmeddelandet eller URL-flyouts, de viktigaste tryckningarna samt i vår f
 
 Anta att du vill se e-postmeddelanden som användare i organisationen har rapporterat som skräp post, inte skräp post eller nätfiske med hjälp av [rapport tillägget för Outlook och Outlook på webben](enable-the-report-message-add-in.md). För att göra detta kan du använda [e-post>-](threat-explorer-views.md#email--submissions) vyn i Utforskaren (eller real tids identifieringar).
 
-1. [https://protection.office.com](https://protection.office.com)Välj **Threat Management**  >  **Explorer** (eller **real tids identifiering**) i gruppen säkerhets & efterlevnad. (Det här exemplet använder Utforskaren.)
+1. <https://protection.office.com>Välj **Threat Management** \> **Explorer** (eller **real tids identifiering**) i gruppen säkerhets & efterlevnad. (Det här exemplet använder Utforskaren.)
 
-2. Välj **View** **e-**  >  **postinlägg** i menyn Visa.
+2. Välj **View** **e-** \> **postinlägg** i menyn Visa.
 
    > [!div class="mx-imgBorder"]
    > ![Menyn Visa för e-post i Utforskaren](../../media/explorer-view-menu-email-user-reported.png)
 
-3. Klicka på **avsändare** och välj sedan **enkel**  >  **typ av rapport**.
+3. Klicka på **avsändare** och välj sedan **enkel** \> **typ av rapport**.
 
 4. Välj ett alternativ, till exempel **Phish**, och klicka sedan på knappen **Uppdatera** .
 
@@ -476,14 +476,14 @@ Om du vill visa och använda Explorer-eller real tids identifiering måste du ha
 - För säkerhets & Compliance Center måste du ha någon av följande roller tilldelade:
 
   - Organisationshantering
-  - Säkerhets administratör (detta kan tilldelas i Azure Active Directory Admin Center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
+  - Säkerhets administratör (detta kan tilldelas i Azure Active Directory Admin Center ( <https://aad.portal.azure.com> )
   - Säkerhets läsare
 
-- För Exchange Online måste du ha någon av följande roller tilldelade i antingen administrations centret för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) eller med PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
+- För Exchange Online måste du ha någon av följande roller tilldelade i antingen Exchange Admin Center ( <https://admin.protection.outlook.com/ecp/> ) eller [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell):
 
   - Organisationshantering
-  - Organisations hantering för endast visning
-  - Roll för View-Only mottagare
+  - View-Only organisations hantering
+  - View-Only mottagare
   - Hantering av efterlevnad
 
 Mer information om roller och behörigheter finns i följande resurser:

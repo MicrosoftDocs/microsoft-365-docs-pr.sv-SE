@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Läs mer om reparations åtgärder i automatiserad undersökning och svars funktioner i Microsoft Defender för Office 365 abonnemang 2.
-ms.openlocfilehash: 7dc5c0ba2e320e3f140d26e79e5c2e4a8fde79d7
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9a1fdb4bec5168dfcd816dbce7da01f930e38ae1
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844566"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615198"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>Visa pågående och klara reparations åtgärder efter en automatisk undersökning i Office 365
 
@@ -39,17 +39,17 @@ När du visar [information om en undersökning](air-view-investigation-results.m
 > [!IMPORTANT]
 > Lämpliga behörigheter krävs för att godkänna eller avvisa reparations åtgärder. Se vilka [behörigheter som krävs för att använda Air-funktioner](office-365-air.md#required-permissions-to-use-air-capabilities).
 
-1. Gå till [https://protection.office.com](https://protection.office.com) och logga in. Då kommer du till sidan säkerhets & efterlevnad.
+1. Gå till <https://protection.office.com> och logga in. Då kommer du till sidan säkerhets & efterlevnad.
 
-2. Gå till **Threat Management**  >  **utredningar**.
+2. Gå till **Threat Management** \> **utredningar**.
 
-3. I listan över undersökningar väljer du ett objekt i kolumnen **ID** . 
+3. I listan över undersökningar väljer du ett objekt i kolumnen **ID** .
 
 4. Välj fliken **åtgärder** .
 
 5. Markera ett objekt i listan. (Det här aktiverar knapparna Godkänn och avvisa.)
 
-6. Granska tillgänglig information för de objekt du har valt och Godkänn eller avvisa sedan uppgiften/åtgärderna. 
+6. Granska tillgänglig information för de objekt du har valt och Godkänn eller avvisa sedan uppgiften/åtgärderna.
    - **Godkänn** gör att du kan börja med att göra en åtgärd.
    - **Avslag** tar ingen åtgärd
 

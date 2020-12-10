@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Hot-reparation
 appliesto:
 - Microsoft 365 Defender
-ms.openlocfilehash: 4adabe3e85b2bff26167bfad92a9a7fcbf24e58e
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 742f19c4051b2cab3311562f688da51975bd3c48
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561297"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615894"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Åtgärda skadlig e-post som skickas i Office 365
 
@@ -33,14 +33,14 @@ Genom reparation menas en fastställd åtgärd mot ett hot. Skadlig e-post som s
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>Vad du behöver veta innan du börjar
 
-Administratörer kan utföra den åtgärd som krävs för e-post, men för att få dessa åtgärder godkända måste de ha rollen *Sök och ta bort* som har tilldelats dem via **säkerhet & krav för kompatibilitetskontrollen** \> **Permissions**. Utan att rollen "Sök och rensa" har lagts till i en av roll grupperna kan de inte utföra åtgärden.
+Administratörer kan utföra den åtgärd som krävs för e-post, men för att få dessa åtgärder godkända måste de ha rollen *Sök och ta bort* som har tilldelats dem via **säkerhet & krav för kompatibilitetskontrollen** \> . Utan att rollen "Sök och rensa" har lagts till i en av roll grupperna kan de inte utföra åtgärden.
 
 ## <a name="manual-and-automated-remediation"></a>Manuell och automatisk reparation
 
 *Manuell jakt* inträffar när säkerhets team identifierar hot manuellt med hjälp av Sök-och filtrerings funktionerna i Threat Explorer. Manuell e-postreparation kan utlösas via valfri e-postvy (*malware*, *Phish* eller *all e-post*) när du har identifierat en uppsättning e-postmeddelanden som måste åtgärdas.
 
 > [!div class="mx-imgBorder"]
-> [![Manuell jakt i Office 365 Threat Explorer efter datum. ](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
+> [![Manuell jakt i Office 365 Threat Explorer efter datum.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
 
 Säkerhets team kan använda Threat Explorer för att välja e-post på flera olika sätt:
 
@@ -59,12 +59,12 @@ När e-postmeddelanden har marker ATS via Threat Explorer kan du starta reparati
 **Automatiserade undersökningar och svars** åtgärder löses genom notifieringar eller av säkerhets åtgärder från Threat Explorer. Dessa kan inkludera rekommenderade reparations åtgärder som måste godkännas av en säkerhets åtgärds grupp. Dessa åtgärder är inkluderade på fliken **åtgärd** i den automatiska undersökningen.
 
 > [!div class="mx-imgBorder"]
-> [![Skicka e-post med skadlig program vara på sidan "zapped" med den här tiden för ZAP-körning. ](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
+> [![Skicka e-post med skadlig program vara på sidan "zapped" med den här tiden för ZAP-körning.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-Alla reparationer (antingen direkt godkännande eller ett godkännande med två steg) som skapats i Threat Explorer samt godkända åtgärder från automatiserade undersökningar visas i åtgärds centret. Komma åt dessa via den vänstra navigerings panelen under **gransknings**  >  **Åtgärds Center**.
+Alla reparationer (antingen direkt godkännande eller ett godkännande med två steg) som skapats i Threat Explorer samt godkända åtgärder från automatiserade undersökningar visas i åtgärds centret. Komma åt dessa via den vänstra navigerings panelen under **gransknings** \> **Åtgärds Center**.
 
 > [!div class="mx-imgBorder"]
-> [![Åtgärds Center med en lista med hot efter datum och allvarlighets grad. ](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
+> [![Åtgärds Center med en lista med hot efter datum och allvarlighets grad.](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
 
 Åtgärds Center visar alla reparations åtgärder under de senaste 30 dagarna. Åtgärder som vidtas via Threat Explorer listas efter det namn som säkerhets åtgärds gruppen tillhandahöll när reparationen skapades. Åtgärder som utförs genom automatiserade utredningar har titlar som börjar med den relaterade aviseringen som utlöste undersökningen, till exempel "ZAP-e-postkluster...."
 
@@ -73,7 +73,7 @@ Alla reparationer (antingen direkt godkännande eller ett godkännande med två 
 - Fliken **e-post** : visar antalet e-postmeddelanden som skickas via Threat Explorer eller automatiska utredningar som ska åtgärdas. Dessa e-postmeddelanden kan vara åtgärdade eller inte åtgärdade.
 
   > [!div class="mx-imgBorder"]
-  > [![Åtgärds Center med problem som åtgärdas och inte är åtgärdade. ](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
+  > [![Åtgärds Center med problem som åtgärdas och inte är åtgärdade.](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
 
   - **Åtgärdbar**: e-postmeddelanden i följande moln post lådor kan användas och flyttas:
     - Brevlåda
@@ -108,7 +108,7 @@ Alla reparationer (antingen direkt godkännande eller ett godkännande med två 
   I följande bild visas hur en överföring ser ut i åtgärds Center. En åtgärd kan innehålla flera inlämningar. Om flera åtgärder godkänns genom en automatisk undersökning visas varje e-post eller e-postkluster åtgärd i samma reparation som en annan överföring.
 
   > [!div class="mx-imgBorder"]
-  > [Den ![ utfällbara panelen för e-postgrupp. ](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
+  > [![Den utfällbara panelen för e-postgrupp.](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
 
   Välj ett e-postobjekt om du vill visa information om den här åtgärden, till exempel frågan (när reparationen utlöses genom automatiska utredningar eller hot Explorer genom att välja en fråga) och start-och slut tiderna för reparationen. Dessutom visas en lista med meddelanden som skickades för reparation. När meddelanden flyttas från den bevarande perioden för hot Explorer försvinner meddelandena från den här listan. Listan visar också enskilda meddelanden som är avhjälpade.
 
@@ -129,7 +129,7 @@ Alla reparationer (antingen direkt godkännande eller ett godkännande med två 
   - **Fel**: den önskade åtgärden på avhjälpade e-postmeddelanden misslyckades. Till exempel: en administratör vill ta bort e-postmeddelanden från post lådor, så administratören tar bort e-postmeddelandena. Om det finns ett åtgärdat e-postmeddelande som fortfarande hittas i post lådan efter åtgärden har statusen visats som misslyckad.
 
   Markera ett objekt i åtgärds loggen för att Visa reparations information. Om informationen säger "lyckades" eller "finns inte i post lådan", så har den redan tagits bort från post lådan. Ibland uppstår ett systemfel under reparationen. I dessa fall är det en bra idé att försöka igen.
-  
+
   Om du reparerar stora satser kan du också exportera meddelanden om att få reparation via e-post och meddelanden som har åtgärd ATS i händelse loggar. Export gränsen höjs till 100K-poster.
 
   Reparation är ett kraftfullt verktyg för att minska riskerna och adressera misstänkta e-postmeddelanden. Det hjälper till att skydda en organisation.

@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: Administratörer kan lära sig att identifiera varför och hur ett nät fiske meddelande gick igenom i Microsoft 365 och vad man bör göra för att förhindra fler nät fiske meddelanden i framtiden.
-ms.openlocfilehash: c495be3f5a90ca96f9a7a05513df9438f88910ad
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 8a2c63d499317427b921d7786dd60b3ad4f18c42
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131327"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615390"
 ---
 # <a name="tune-anti-phishing-protection"></a>Finjustera skydd mot nätfiske
 
@@ -61,7 +61,7 @@ Om du vill kontrol **lera att det finns ett meddelande** om att du har hoppat ö
 
 - Falsk e-post kallas för nätfiske i Defender för Office 365. Ibland är falska förfalskningar ofarliga och ibland vill användarna inte att den ska placeras i karantän. Om du vill minimera effekten för användarna kan du regelbundet granska [förfalsknings intelligens-rapporten](learn-about-spoof-intelligence.md). När du har granskat och gjort nödvändiga åsidosättningar kan du vara säker på att [Konfigurera förfalsknings intelligens](set-up-anti-phishing-policies.md#spoof-settings) mot **Quarantine** -misstänkta meddelanden i stället för att skicka dem till användarens mapp för skräp post.
 
-- Du kan upprepa ovanstående steg för personifiering (domän eller användare). Personifieringsnivå hittas under **Threat Management** \> **instrument panels** \> **insikter** för hot Management.
+- Du kan upprepa ovanstående steg för personifiering (domän eller användare). Personifieringsnivå hittas under  \> **instrument panels** \> **insikter** för hot Management.
 
 - Gå regelbundet igenom [status rapporten för hotet skydd](view-reports-for-atp.md#threat-protection-status-report).
 
