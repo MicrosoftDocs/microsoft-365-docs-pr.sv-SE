@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Användare kan läsa mer om hur de visar och hanterar meddelanden i karantän i Exchange Online Protection (EOP) som borde ha levererats till dem.
-ms.openlocfilehash: 48c727c442ee6f861499f1a72c687f7b3457c594
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 038d3326df2572f792f1cfc7efa6ad6d03e0a602
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130859"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611370"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Hitta och släppa meddelanden i karantän som användare i EOP
 
@@ -148,8 +148,6 @@ När du har valt ett meddelande finns det alternativ för vad du kan göra med m
 - **Förhandsgranska meddelandet**: Välj något av följande alternativ i den utfällbara rutan som visas:
   - **Källvy**: Visar HTML-versionen av meddelandetexten med alla länkar inaktiverade.
   - **Textvy**: Visar meddelandetexten som oformaterad text.
-
-- **Ladda ned meddelande**: Välj **Jag är medveten om riskerna om jag laddar ned meddelandet** i den utfällbara rutan som visas om du vill spara en lokal kopia av meddelandet i .eml-format.
 
 - **Ta bort från karantän**: När du har klickat på **Ja** i varningen som visas tas meddelandet genast bort.
 

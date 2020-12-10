@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Administratörer kan läsa mer om de skydd mot förfalskning som finns tillgängliga i Exchange Online Protection (EOP) och som kan hjälpa dig att minska riskerna för nätfiske från falska avsändare och domäner.
-ms.openlocfilehash: 57d6dc8d9c1935578db15abdbb3e17e72bb64257
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: cae99cce070e6dc362dc678c153074fee53ca6a6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130835"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616722"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Skydd mot förfalskning i EOP
 
@@ -84,13 +84,13 @@ Microsoft skiljer mellan två olika typer av falska meddelanden:
 - **Förfalskning inom organisationen (“intra-org”)**: kallas även för _“self-to-self”_-förfalskning. Till exempel:
 
   - Avsändaren och mottagaren finns i samma domän:
-    > Från: chris@contoso.com <br/> Till: michelle@contoso.com
+    > Från: chris@contoso.com <br> Till: michelle@contoso.com
 
   - Avsändaren och mottagaren finns i underdomäner till samma domän:
-    > Från: laura@marketing.fabrikam.com <br/> Till: julia@engineering.fabrikam.com
+    > Från: laura@marketing.fabrikam.com <br> Till: julia@engineering.fabrikam.com
 
   - Avsändaren och mottagaren finns i olika domäner som tillhör samma organisation (d.v.s. båda domänerna är konfigurerade som [godkända domäner](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) i samma organisation):
-    > Från: avsändare @ microsoft.com <br/> Till: mottagare @ bing.com
+    > Från: avsändare @ microsoft.com <br> Till: mottagare @ bing.com
 
     Mellanslag används i e-postadresserna för att förhindra spambot-insamling.
 
@@ -105,7 +105,7 @@ Microsoft skiljer mellan två olika typer av falska meddelanden:
   - SFTY är meddelandets säkerhetsnivå. 9 anger nätfiske, .11 anger förfalskning inom organisationen.
 
 - **Förfalskningar mellan domäner**: avsändarens och mottagarens domäner skiljer sig åt och har ingen relation sinsemellan (kallas även externa domäner). Till exempel:
-    > Från: chris@contoso.com <br/> Till: michelle@tailspintoys.com
+    > Från: chris@contoso.com <br> Till: michelle@tailspintoys.com
 
   Meddelanden som inte klarar [sammansatt autentisering](email-validation-and-authentication.md#composite-authentication) på grund av förfalskning mellan domäner innehåller följande värden i meddelandehuvudet:
 
@@ -133,11 +133,11 @@ E-postlistor (även kallade diskussionslistor) är kända för att ha problem me
 
 Anta till exempel att Gabriela Laureano (glaureano@contoso.com) är intresserad av fågelskådning och går med i diskussionslistan fagelskadare@fabrikam.com. och skickar följande meddelande till listan:
 
-> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **Till:** Birdwatcherens diskussions lista \<birdwatchers@fabrikam.com\> <br/> **Ämne:** Fantastiska bilder av blåskrika på Mt. Rainier denna vecka <p> Vem vill kolla in denna veckas bilder från Mt. Rainier?
+> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **Till:** Birdwatcherens diskussions lista \<birdwatchers@fabrikam.com\> <br> **Ämne:** Fantastiska bilder av blåskrika på Mt. Rainier denna vecka <p> Vem vill kolla in denna veckas bilder från Mt. Rainier?
 
 E-postlistans server tar emot meddelandet, ändrar innehållet och skickar tillbaka det till medlemmarna i listan. Det återgivna meddelandet har samma Från:-adress (glaureano@contoso.com) men en tagg har lagts till i ämnesraden och en sidfot har lagts till längst ned i meddelandet. Den här typen av ändringar är vanliga i distributionslistor och kan leda till falska positiva identifieringar av förfalskning.
 
-> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **Till:** Birdwatcherens diskussions lista \<birdwatchers@fabrikam.com\> <br/> **Ämne:** [FÅGELSKÅDARE] Fantastiska bilder av blåskrika på Mt. Rainier denna vecka <p> Vem vill kolla in denna veckas bilder från Mt. Rainier? <p> Meddelandet skickades till diskussionslistan Fågelskådare. Du kan avbryta prenumerationen när du vill.
+> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **Till:** Birdwatcherens diskussions lista \<birdwatchers@fabrikam.com\> <br> **Ämne:** [FÅGELSKÅDARE] Fantastiska bilder av blåskrika på Mt. Rainier denna vecka <p> Vem vill kolla in denna veckas bilder från Mt. Rainier? <p> Meddelandet skickades till diskussionslistan Fågelskådare. Du kan avbryta prenumerationen när du vill.
 
 Om du vill se till att e-post från distributionslistor klarar förfalskningskontroller, följer du dessa anvisningar beroende på om du har kontroll över distributionslistan:
 

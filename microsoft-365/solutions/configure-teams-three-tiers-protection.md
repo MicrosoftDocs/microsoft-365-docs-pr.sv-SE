@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Lär dig hur du konfigurerar Teams för bättre säkerhet vid delning av filer med hjälp av tre skyddsnivåer, och balansera säkerhet med att kunna samarbete enkelt.
-ms.openlocfilehash: 5a3449294c6e64355961d10d84750c53715366ef
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: cb49c35cc1c485d45656b1716d385cf626322ce8
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906889"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602013"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Konfigurera Teams med tre skyddsnivåer
 
@@ -49,7 +49,7 @@ Mer information om nivåerna och de funktioner som rekommenderas för varje niv�
 
 I tabellen nedan sammanfattas konfigurationerna för respektive nivå. Använd de här konfigurationerna som utgångspunkt och justera konfigurationerna efter behoven i din organisation. Du kanske inte behöver alla nivåer.
 
-||Grundläggande (offentlig)|Grundläggande (privat)|Känslig|Strikt känsligt|
+|-|Grundläggande (offentlig)|Grundläggande (privat)|Känslig|Strikt känsligt|
 |:-----|:-----|:-----|:-----|:-----|
 |Privat eller offentligt team|Offentlig|Privat|Privat|Privat|
 |Vem har åtkomst?|Alla i organisationen, t. ex. B2B-användare.|Endast teammedlemmar. Andra kan begära åtkomst till den associerade webbplatsen.|Endast teammedlemmar.|Endast teammedlemmar.|

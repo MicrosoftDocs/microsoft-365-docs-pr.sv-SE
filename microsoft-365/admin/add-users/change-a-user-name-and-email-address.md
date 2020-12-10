@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Läs om hur en global administratör kan ändra en användares e-postadress och visningsnamn. '
-ms.openlocfilehash: 1672401e9a8e994b91804870130b659ad8724b5e
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 7f894af3778964dfa6c696c1f467bc0dd8313f32
+ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551514"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "49585300"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Ändra ett användarnamn och en e-postadress
 
@@ -81,7 +81,8 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
 
 ::: moniker-end
 
-**VIKTIGT**: Om ett felmeddelande visas läser du [Åtgärda felmeddelanden](#resolve-error-messages).
+> [!IMPORTANT]
+> Om ett felmeddelande visas läser du [Åtgärda felmeddelanden](#resolve-error-messages).
 
 ## <a name="set-the-primary-email-address"></a>Ange den primära e-postadressen
 
@@ -93,23 +94,24 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
 
 3. Välj **Ange som primär** för den e-postadress som du vill ange som primär e-postadress för den personen. 
     
-    **VIKTIGT**! Alternativet Ange som primär visas inte om du har köpt Microsoft 365 från GoDaddy eller en annan partnertjänst som tillhandahåller en hanteringskonsol. Logga istället in på hanteringskonsolen för GoDaddy eller partnern om du vill ange ett primärt alias. 
-    
-    Du ser inte heller det här alternativet om du inte är en global administratör. Om du inte ser alternativet har du inte behörighet att ändra användarnamn och primär e-postadress.
+   > [!IMPORTANT]
+   > Du ser inte alternativet Ange som primär om du har köpt Microsoft 365 från GoDaddy eller en annan partnertjänst som tillhandahåller en hanteringskonsol. Logga istället in på hanteringskonsolen för GoDaddy eller partnern om du vill ange ett primärt alias. 
+   >  
+   > Du ser endast det här alternativet om du är en global administratör. Om du inte ser alternativet har du inte behörighet att ändra användarnamn och primär e-postadress.
   
 4. Ett stort gult varningsmeddelande visas om att du håller på att ändra personens inloggningsinformation. Välj **Spara** och sedan **Stäng**.
     
 5. Ge personen information om följande:
  
-  - Ändringen kan ta en stund.
+   - Ändringen kan ta en stund.
   
-  - Deras nya användarnamn. De behöver det för att logga in på Microsoft 365.
+   - Deras nya användarnamn. De behöver det för att logga in på Microsoft 365.
     
-  - Om personen använder Skype för företag – måste de schemalägga alla eventuella Skype för företag – Online-möten som han/hon organiserat på nytt, och be sina externa kontakter att uppdatera kontaktinformationen.
+   - Om personen använder Skype för företag – måste de schemalägga alla eventuella Skype för företag – Online-möten som han/hon organiserat på nytt, och be sina externa kontakter att uppdatera kontaktinformationen.
 
-  - Om personen använder OneDrive har URL-adressen till den här platsen ändrats. Om personen har OneNote-anteckningsböcker i OneDrive, kan de behöva stänga och öppna dem igen i OneNote. Om de har delat filer från OneDrive kanske inte länkarna till filerna fungerar och användaren kan dela vidare.    
+   - Om personen använder OneDrive har URL-adressen till den här platsen ändrats. Om personen har OneNote-anteckningsböcker i OneDrive, kan de behöva stänga och öppna dem igen i OneNote. Om de har delat filer från OneDrive kanske inte länkarna till filerna fungerar och användaren kan dela vidare.    
   
-  - Om också användarens lösenord ändrats kommer han/hon att uppmanas att ange det nya lösenordet på sin mobila enhet, så att den synkroniseras.
+   - Om också användarens lösenord ändrats kommer han/hon att uppmanas att ange det nya lösenordet på sin mobila enhet, så att den synkroniseras.
   
 ::: moniker-end
 
@@ -121,23 +123,24 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
 
 3. Välj **Ange som primär** för den e-postadress som du vill ange som primär e-postadress för den personen. 
     
-    **VIKTIGT**! Alternativet Ange som primär visas inte om du har köpt Microsoft 365 från GoDaddy eller en annan partnertjänst som tillhandahåller en hanteringskonsol. Logga istället in på hanteringskonsolen för GoDaddy eller partnern om du vill ange ett primärt alias. 
-    
-    Du ser inte heller det här alternativet om du inte är en global administratör. Om du inte ser alternativet har du inte behörighet att ändra användarnamn och primär e-postadress.
+   > [!IMPORTANT]
+   > Du ser inte alternativet Ange som primär om du har köpt Microsoft 365 från GoDaddy eller en annan partnertjänst som tillhandahåller en hanteringskonsol. Logga istället in på hanteringskonsolen för GoDaddy eller partnern om du vill ange ett primärt alias. 
+   > 
+   > Du ser endast det här alternativet om du är en global administratör. Om du inte ser alternativet har du inte behörighet att ändra användarnamn och primär e-postadress.
   
 4. Ett stort gult varningsmeddelande visas om att du håller på att ändra personens inloggningsinformation. Välj **Spara** och sedan **Stäng**.
     
 5. Informera personen om följande:
  
-  - Det kan ta en stund att göra den här ändringen.
+   - Det kan ta en stund att göra den här ändringen.
   
-  - Personens nya användarnamn. Han/hon behöver det för att logga in på Microsoft 365.
+   - Personens nya användarnamn. Han/hon behöver det för att logga in på Microsoft 365.
     
-  - Om personen använder Skype för företag - Online ska du berätta att han/hon måste schemalägga alla eventuella Skype för företag - Online-möten som han/hon organiserat på nytt, och att han/hon måste be sina externa kontakter att uppdatera den gamla kontaktinformationen.
+   - Om personen använder Skype för företag - Online ska du berätta att han/hon måste schemalägga alla eventuella Skype för företag - Online-möten som han/hon organiserat på nytt, och att han/hon måste be sina externa kontakter att uppdatera den gamla kontaktinformationen.
 
-  - Om personen använder OneDrive berättar du att URL-adressen till den här platsen har ändrats. Om personen har OneNote-anteckningsböcker i OneDrive, kan de behöva stänga och öppna dem igen i OneNote. Om de har delat filer från OneDrive kanske inte länkarna till filerna fungerar och användaren kan dela vidare.    
+   - Om personen använder OneDrive berättar du att URL-adressen till den här platsen har ändrats. Om personen har OneNote-anteckningsböcker i OneDrive, kan de behöva stänga och öppna dem igen i OneNote. Om de har delat filer från OneDrive kanske inte länkarna till filerna fungerar och användaren kan dela vidare.    
   
-  - Om också användarens lösenord ändrats berättar du att han/hon kommer att uppmanas att ange det nya lösenordet på sin mobila enhet, så att den synkroniseras.
+   - Om också användarens lösenord ändrats berättar du att han/hon kommer att uppmanas att ange det nya lösenordet på sin mobila enhet, så att den synkroniseras.
 
 ::: moniker-end
 
@@ -149,23 +152,24 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
 
 3. Välj **Ange som primär** för den e-postadress som du vill ange som primär e-postadress för den personen. 
     
-    **VIKTIGT**! Alternativet Ange som primär visas inte om du har köpt Microsoft 365 från GoDaddy eller en annan partnertjänst som tillhandahåller en hanteringskonsol. Logga istället in på hanteringskonsolen för GoDaddy eller partnern om du vill ange ett primärt alias. 
-    
-    Du ser inte heller det här alternativet om du inte är en global administratör. Om du inte ser alternativet har du inte behörighet att ändra användarnamn och primär e-postadress.
+   > [!IMPORTANT]
+   > Du ser inte alternativet Ange som primär om du har köpt Microsoft 365 från GoDaddy eller en annan partnertjänst som tillhandahåller en hanteringskonsol. Logga istället in på hanteringskonsolen för GoDaddy eller partnern om du vill ange ett primärt alias. 
+   >  
+   > Du ser endast det här alternativet om du är en global administratör. Om du inte ser alternativet har du inte behörighet att ändra användarnamn och primär e-postadress.
   
 4. Ett stort gult varningsmeddelande visas om att du håller på att ändra personens inloggningsinformation. Välj **Spara** och sedan **Stäng**.
     
 5. Informera personen om följande:
  
-  - Det kan ta en stund att göra den här ändringen.
+   - Det kan ta en stund att göra den här ändringen.
   
-  - Personens nya användarnamn. Han/hon behöver det för att logga in på Microsoft 365.
+   - Personens nya användarnamn. Han/hon behöver det för att logga in på Microsoft 365.
     
-  - Om personen använder Skype för företag - Online ska du berätta att han/hon måste schemalägga alla eventuella Skype för företag - Online-möten som han/hon organiserat på nytt, och att han/hon måste be sina externa kontakter att uppdatera den gamla kontaktinformationen.
+   - Om personen använder Skype för företag - Online ska du berätta att han/hon måste schemalägga alla eventuella Skype för företag - Online-möten som han/hon organiserat på nytt, och att han/hon måste be sina externa kontakter att uppdatera den gamla kontaktinformationen.
 
-  - Om personen använder OneDrive berättar du att URL-adressen till den här platsen har ändrats. Om personen har OneNote-anteckningsböcker i OneDrive, kan de behöva stänga och öppna dem igen i OneNote. Om de har delat filer från OneDrive kanske inte länkarna till filerna fungerar och användaren kan dela vidare.    
+   - Om personen använder OneDrive berättar du att URL-adressen till den här platsen har ändrats. Om personen har OneNote-anteckningsböcker i OneDrive, kan de behöva stänga och öppna dem igen i OneNote. Om de har delat filer från OneDrive kanske inte länkarna till filerna fungerar och användaren kan dela vidare.    
   
-  - Om också användarens lösenord ändrats berättar du att han/hon kommer att uppmanas att ange det nya lösenordet på sin mobila enhet, så att den synkroniseras.
+   - Om också användarens lösenord ändrats berättar du att han/hon kommer att uppmanas att ange det nya lösenordet på sin mobila enhet, så att den synkroniseras.
 
 ::: moniker-end
   
@@ -179,7 +183,7 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
 
 3. I rutan **Visningsnamn** skriver du ett nytt namn för personen och väljer sedan **Spara**.
 
-    Om du får felmeddelandet ”**Tyvärr kunde användaren inte redigeras. Kontrollera användarinformationen och försök igen**” läser du [Åtgärda felmeddelanden](#resolve-error-messages).
+   Om du får felmeddelandet ”**Tyvärr kunde användaren inte redigeras. Kontrollera användarinformationen och försök igen**” läser du [Åtgärda felmeddelanden](#resolve-error-messages).
 
 Det kan ta upp till 24 timmar innan ändringen börjar gälla i alla tjänster. När ändringen har genomförts måste personen logga in på Outlook, Skype för företag och SharePoint med det uppdaterade användarnamnet.
 
@@ -193,7 +197,7 @@ Det kan ta upp till 24 timmar innan ändringen börjar gälla i alla tjänster. 
 
 3. I rutan **Visningsnamn** skriver du ett nytt namn för personen och väljer sedan **Spara**.
 
-    Om du får felmeddelandet ”**Tyvärr kunde användaren inte redigeras. Kontrollera användarinformationen och försök igen**” läser du [Åtgärda felmeddelanden](#resolve-error-messages).
+   Om du får felmeddelandet ”**Tyvärr kunde användaren inte redigeras. Kontrollera användarinformationen och försök igen**” läser du [Åtgärda felmeddelanden](#resolve-error-messages).
 
 Det kan ta upp till 24 timmar innan ändringen börjar gälla i alla tjänster. När ändringen har genomförts måste personen logga in på Outlook, Skype för företag och SharePoint med det uppdaterade användarnamnet, så se till att berätta för personen om ändringen.
 
@@ -207,7 +211,7 @@ Det kan ta upp till 24 timmar innan ändringen börjar gälla i alla tjänster. 
 
 3. I rutan **Visningsnamn** skriver du ett nytt namn för personen och väljer sedan **Spara**.
 
-    Om du får felmeddelandet ”**Tyvärr kunde användaren inte redigeras. Kontrollera användarinformationen och försök igen**” läser du [Åtgärda felmeddelanden](#resolve-error-messages).
+   Om du får felmeddelandet ”**Tyvärr kunde användaren inte redigeras. Kontrollera användarinformationen och försök igen**” läser du [Åtgärda felmeddelanden](#resolve-error-messages).
 
 Det kan ta upp till 24 timmar innan ändringen börjar gälla i alla tjänster. När ändringen har genomförts måste personen logga in på Outlook, Skype för företag och SharePoint med det uppdaterade användarnamnet, så se till att berätta för personen om ändringen.
 
@@ -217,7 +221,7 @@ Det kan ta upp till 24 timmar innan ändringen börjar gälla i alla tjänster. 
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>"Det hittades ingen parameter som matchar parameternamnet 'E-postadresser'"
 
-Om du får felmeddelandet ”**Det hittades ingen parameter som matchar parameternamnet 'E-postadresser'**” innebär det att det tar lite längre tid för att slutföra konfigurationen av klienten eller den anpassade domänen, om du nyligen har lagt till en sådan. Konfigurationen kan ta upp till 4 timmar. Vänta en stund så att konfigurationen hinner slutföras och försök sedan igen. Om problemet kvarstår kan du ringa [supporten](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) och be dem göra en fullständig synkronisering åt dig.
+Om du får felmeddelandet ”**Det hittades ingen parameter som matchar parameternamnet 'E-postadresser'**” innebär det att det tar lite längre tid för att slutföra konfigurationen av klientorganisationen eller den anpassade domänen, om du nyligen har lagt till en sådan. Konfigurationen kan ta upp till 4 timmar. Vänta en stund så att konfigurationen hinner slutföras och försök sedan igen. Om problemet kvarstår kan du ringa [supporten](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) och be dem göra en fullständig synkronisering åt dig.
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>"Tyvärr kunde användaren inte redigeras. Kontrollera användarinformationen och försök igen"
 
