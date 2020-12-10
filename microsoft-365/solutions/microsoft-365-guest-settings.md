@@ -2,7 +2,7 @@
 title: Inställningar för gästdelning i Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Läs mer om de inställningar för gästdelning som är tillgängliga i Microsoft 365 som kan påverka delning med personer utanför organisationen.
-ms.openlocfilehash: 184962b1de8d1dccf86541dba302ca9de26989c2
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+ms.openlocfilehash: 0c734d1046a1c2d180c8102187b8cf07de7dc4dc
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030083"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613050"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Inställningar för gästdelning i Microsoft 365
 
@@ -78,7 +78,7 @@ Administrationscenter för Microsoft 365 har inställningar på organisationsniv
 
 |**Inställning**|**Standard**|**Beskrivning**|
 |:-----|:-----|:-----|
-|Låt gruppmedlemmar utanför organisationen få åtkomst till gruppinnehåll|På|När den här inställningen är **På** kan gäster komma åt gruppinnehåll. När den är **Av** kan de inte det. Den här inställningen ska vara **På** i alla situationer där gästanvändare interagerar med Microsoft 365-grupper och Teams.|
+|Låt gruppmedlemmar utanför organisationen få åtkomst till gruppinnehåll|På|När den här inställningen är **På** kan gäster komma åt gruppinnehåll. När den är **Av** kan de inte det. Den här inställningen ska vara **På** i alla situationer där gästanvändare interagerar med Microsoft 365-grupper eller Teams.|
 |Låt gruppägare lägga till personer utanför organisationen i grupper|På|När inställningen är **På** kan ägare av Microsoft 365-grupper eller Teams bjuda in nya gäster till gruppen. När den är **Av** kan ägare endast bjuda in gäster som redan finns i katalogen.|
 
 Dessa är inställningar på organisationsnivå. Mer information om hur du ändrar de här inställningarna på gruppnivå genom att använda PowerShell finns under[Skapa inställningar för en viss grupp](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group).
@@ -171,7 +171,7 @@ Eftersom OneDrive är en webbplatshierarki i SharePoint påverkar delningsinstä
 
 ### <a name="sharepoint-and-onedrive-file-and-folder-link-settings"></a>Inställningar för fil- och mapplänkar för SharePoint och OneDrive
 
-När filer och mappar delas i SharePoint och OneDrive får delningsmottagare en länk med behörighet till filen eller mappen i stället för att få direktåtkomst till filen eller mappen. Det finns flera typer av länkar och du kan välja vilken standardtyp för länkar som ska visas för användare när de delar en fil eller mapp. Du kan också ange behörigheter och förfalloalternativ för *Alla* -länkar.
+När filer och mappar delas i SharePoint och OneDrive får delningsmottagare en länk med behörighet till filen eller mappen i stället för att få direktåtkomst till filen eller mappen. Det finns flera typer av länkar och du kan välja vilken standardtyp för länkar som ska visas för användare när de delar en fil eller mapp. Du kan också ange behörigheter och förfalloalternativ för *Alla*-länkar.
 
 **Navigering:** Administrationscenter för SharePoint > Delning
 
@@ -180,9 +180,9 @@ När filer och mappar delas i SharePoint och OneDrive får delningsmottagare en 
 |**Inställning**|**Standard**|**Beskrivning**|
 |:-----|:-----|:-----|
 |Fil- och mapplänkar|Alla som har länken|Anger vilken delningslänk som visas som standard när en användare delar en fil eller mapp. Användare kan ändra alternativet innan de delar. Om standardinställningen är **Alla som har länken** och *Alla* är delning inte tillåten för en viss webbplats, och **Endast personer i din organisation** visas som standard för den webbplatsen.|
-|Länkarna måste upphöra att gälla inom så här många dagar|Av (upphör inte)|*Alla* -länken upphör efter det angivna antalet dagar efter att den har skapats. Länkar som har upphört kan inte förnyas. Skapa en ny länk om du vill fortsätta att dela efter förfallotiden.|
-|Filbehörigheter|Visa och redigera|Anger filbehörighetsnivåer som är tillgängliga för användare när de skapar en *Alla* -länk. Om **Visa** har valts kan användare bara skapa *Alla* -fillänkar med visningsbehörigheter. Om **Visa och redigera** har valts kan användare välja mellan behörigheter för att visa och visa och redigera när de skapar länken.|
-|Mappbehörigheter|Visa, redigera och ladda upp|Anger mappbehörighetsnivåer som är tillgängliga för användare när de skapar en *Alla* -länk. Om **Visa** har valts kan användare bara skapa *Alla* -mapplänkar med visningsbehörigheter. Om **Visa, redigera och ladda upp** har valts kan användare välja mellan behörigheter för att visa och visa, redigera och ladda upp när de skapar länken.|
+|Länkarna måste upphöra att gälla inom så här många dagar|Av (upphör inte)|*Alla*-länken upphör efter det angivna antalet dagar efter att den har skapats. Länkar som har upphört kan inte förnyas. Skapa en ny länk om du vill fortsätta att dela efter förfallotiden.|
+|Filbehörigheter|Visa och redigera|Anger filbehörighetsnivåer som är tillgängliga för användare när de skapar en *Alla*-länk. Om **Visa** har valts kan användare bara skapa *Alla*-fillänkar med visningsbehörigheter. Om **Visa och redigera** har valts kan användare välja mellan behörigheter för att visa och visa och redigera när de skapar länken.|
+|Mappbehörigheter|Visa, redigera och ladda upp|Anger mappbehörighetsnivåer som är tillgängliga för användare när de skapar en *Alla*-länk. Om **Visa** har valts kan användare bara skapa *Alla*-mapplänkar med visningsbehörigheter. Om **Visa, redigera och ladda upp** har valts kan användare välja mellan behörigheter för att visa och visa, redigera och ladda upp när de skapar länken.|
 
 ### <a name="sharepoint-and-onedrive-security-group-settings"></a>Inställningar för säkerhetsgrupper i SharePoint och OneDrive
 
@@ -194,20 +194,20 @@ Om du vill begränsa vilka som kan dela med gäster i SharePoint och OneDrive be
 
 |**Inställning**|**Standard**|**Beskrivning**|
 |:-----|:-----|:-----|
-|Tillåt endast användare i valda säkerhetsgrupper att dela med autentiserade externa användare|Av|När inställningen är **På** kan bara personer i de specifika säkerhetsgrupperna dela med externa användare. Bara länkar för *Vissa personer* är tillgängliga. Delning med *Alla* inaktiveras, såvida inte **Tillåt endast användare i valda säkerhetsgrupper att dela med autentiserade användare och med hjälp av anonyma länkar** också är **På**|
+|Tillåt endast användare i valda säkerhetsgrupper att dela med autentiserade externa användare|Av|När **På** kan bara personer i de angivna säkerhetsgrupperna dela med personer utanför organisationen. Bara länkar för *Vissa personer* är tillgängliga. Delning med *Alla* inaktiveras, såvida inte **Tillåt endast användare i valda säkerhetsgrupper att dela med autentiserade användare och med hjälp av anonyma länkar** också är **På**|
 |Tillåt endast användare i valda säkerhetsgrupper att dela med autentiserade användare och med hjälp av anonyma länkar|Av|När inställningen är **På** kan bara personerna i de angivna säkerhetsgrupperna dela med gäster. Både länkar för *Alla* och *Vissa personer* är tillgängliga.|
 
-Båda inställningarna kan användas samtidigt. Om en användare ingår i säkerhetsgrupper som angetts för båda inställningarna, kommer den högre behörighetsnivån att gälla ( *Alla* plus *Vissa användare* ). Kapslade säkerhetsgrupper stöds.
+Båda inställningarna kan användas samtidigt. Om en användare ingår i säkerhetsgrupper som angetts för båda inställningarna, kommer den högre behörighetsnivån att gälla (*Alla* plus *Vissa användare*). Kapslade säkerhetsgrupper stöds.
 
 ## <a name="sharepoint-site-level"></a>SharePoint (webbplatsnivå)
 
 **Administratörsroll:** SharePoint-administrator
 
-Eftersom de här inställningarna åsidosätts av inställningarna för hela organisationen för SharePoint, kan inställningen för webbplatsdelning ändras om någon inställning på organisationsnivå ändras. Om du väljer en inställning här och inställningen på organisationsnivå ställs in senare på ett mer begränsat värde, kommer den här webbplatsen att fungera enligt det mer begränsade värdet. Om du till exempel väljer **Alla** och inställningen på organisationsnivå ställs in senare på **Nya och befintliga gäster** kommer webbplatsen bara att tillåta nya och befintliga gäster. Om inställningen på organisationsnivå ställs in på **Alla** kan webbplatsen återigen tillåta *Alla* -länkar.
+Eftersom de här inställningarna åsidosätts av inställningarna för hela organisationen för SharePoint, kan inställningen för webbplatsdelning ändras om någon inställning på organisationsnivå ändras. Om du väljer en inställning här och inställningen på organisationsnivå ställs in senare på ett mer begränsat värde, kommer den här webbplatsen att fungera enligt det mer begränsade värdet. Om du till exempel väljer **Alla** och inställningen på organisationsnivå ställs in senare på **Nya och befintliga gäster** kommer webbplatsen bara att tillåta nya och befintliga gäster. Om inställningen på organisationsnivå ställs in på **Alla** kan webbplatsen återigen tillåta *Alla*-länkar.
 
 ### <a name="site-sharing"></a>Webbplatsdelning
 
-Du kan ange behörigheter för gästdelning för varje webbplats i SharePoint. Den här inställningen gäller både webbplatsdelning och delning av filer och mappar. ( *Alla* -delning är inte tillgänglig för webbplatsdelning. Om du väljer **Alla** kan användarna dela filer och mappar genom att använda *Alla* -länkar och webbplatsen med nya och befintliga gäster.)
+Du kan ange behörigheter för gästdelning för varje webbplats i SharePoint. Den här inställningen gäller både webbplatsdelning och delning av filer och mappar. (*Alla*-delning är inte tillgänglig för webbplatsdelning. Om du väljer **Alla** kan användarna dela filer och mappar genom att använda *Alla*-länkar och webbplatsen med nya och befintliga gäster.)
 
 **Navigering:** Administrationscenter för SharePoint > Aktiva webbplatser > välj webbplats > fliken Principer > Redigera extern delning
 
@@ -219,7 +219,7 @@ Du kan ange behörigheter för gästdelning för varje webbplats i SharePoint. D
 
 ### <a name="site-file-and-folder-link-settings"></a>Webbplatsinställningar för fil- och mapplänk
 
-Du kan ange standardinställningar för länktyp och behörigheter samt förfalloinställningar för *Alla* -länkar för varje webbplats. När inställningarna anges på webbplatsnivå kan de åsidosättas av inställningarna på organisationsnivå. Tänk på att om *Alla* -länkar inaktiveras på organisationsnivå blir inte *Alla* en tillgänglig länktyp på webbplatsnivå.
+Du kan ange standardinställningar för länktyp och behörigheter samt förfalloinställningar för *Alla*-länkar för varje webbplats. När inställningarna anges på webbplatsnivå kan de åsidosättas av inställningarna på organisationsnivå. Tänk på att om *Alla*-länkar inaktiveras på organisationsnivå blir inte *Alla* en tillgänglig länktyp på webbplatsnivå.
 
 **Navigering:** Administrationscenter för SharePoint > Aktiva webbplatser > välj webbplats > fliken Principer > Redigera extern delning
 
@@ -229,7 +229,7 @@ Du kan ange standardinställningar för länktyp och behörigheter samt förfall
 |:-----|:-----|:-----|
 |Begränsa delning per domän|Av|Med den här inställningen kan du ange en lista över tillåtna eller blockerade domäner för delning. När tillåtna domäner anges kan delningsinbjudningar bara skickas till dessa domäner. När blockerade domäner anges kan delningsinbjudningar inte skickas till de domänerna.<br><br> Den här inställningen kan inte åsidosätta domänbegränsningar som anges på organisations- eller Azure AD-nivå.|
 |Standardtyp för delningslänk|Samma som inställningarna på organisationsnivå|Med den här inställningen kan du ange standarddelningslänken som visas för användarna på webbplatsen. Alternativet *Samma som inställningarna på organisationsnivå* definieras av en kombination av inställningar för delning på organisations- och webbplatsnivå.|
-|Avancerade inställningar för Alla-länkar|Samma som inställningarna på organisationsnivå|*Alla* -länken upphör efter det angivna antalet dagar efter att den har skapats för en fil på den här webbplatsen. Länkar som har upphört kan inte förnyas. Skapa en ny länk om du vill fortsätta att dela efter förfallotiden.|
+|Avancerade inställningar för Alla-länkar|Samma som inställningarna på organisationsnivå|*Alla*-länken upphör efter det angivna antalet dagar efter att den har skapats för en fil på den här webbplatsen. Länkar som har upphört kan inte förnyas. Skapa en ny länk om du vill fortsätta att dela efter förfallotiden.|
 |Standardbehörighet för länk|Samma som inställningarna på organisationsnivå|Med den här inställningen kan du ange standardbehörighet (Visa eller Redigera) för delning av länkar som skapas för filer på webbplatsen.|
 
 ### <a name="default-site-sharing-settings"></a>Standardinställningar för webbplatsdelning

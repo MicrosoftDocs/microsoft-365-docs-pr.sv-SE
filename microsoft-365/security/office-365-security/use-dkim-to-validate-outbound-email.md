@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du använder DomainKeys identifierad e-post (DKIM) med Microsoft 365 för att säkerställa att meddelanden som skickas från din anpassade domän är betrodda av mål-e-postsystemet.
-ms.openlocfilehash: 66f352b6c3a5d3b3beff3043a3f0d1a435d1e5d1
-ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
+ms.openlocfilehash: f8ae6334a078d635de069d2fe7af351ad42d8df3
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49560890"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615366"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Använda DKIM för att validera utgående e-post som skickas från din anpassade domän
 
@@ -90,7 +90,7 @@ Eftersom både 1024 och 2048 bitar stöds för DKIM-nycklar visar riktningarna h
    1. [Ansluta till Office 365-arbetsbelastningar via PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (Cmdleten kommer från Exchange Online.)
    1. Kör följande kommando:
 
-      ```powershell 
+      ```powershell
       Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}
       ```
 
@@ -131,7 +131,7 @@ Om du vill konfigurera DKIM gör du så här:
 För varje domän som du vill lägga till en DKIM-signatur för måste du publicera två CNAME-poster.
 
 > [!NOTE]
-> Om du inte har läst hela artikeln kan du ha missat den här tidsbesparande PowerShell-anslutningsinformationen: [Anslut till Office 365-arbetsbelastningar via PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (Cmdleten kommer från Exchange Online.) 
+> Om du inte har läst hela artikeln kan du ha missat den här tidsbesparande PowerShell-anslutningsinformationen: [Anslut till Office 365-arbetsbelastningar via PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (Cmdleten kommer från Exchange Online.)
 
 Kör följande kommandon för att skapa väljarposterna:
 
@@ -254,7 +254,7 @@ Vänta några minuter innan du följer de här anvisningarna för att kontroller
 
 Om du senare bestämmer dig för att lägga till en egen domän och vill aktivera DKIM för den nya domänen måste du utföra stegen i den här artikeln för varje domän. Slutför först alla [steg du behöver göra för att konfigurera DKIM manuellt](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365).
 
-## <a name="disabling-the-dkim-signing-policy-for-a-custom-domain"></a>Inaktivera DKIM-signeringsprincipen för en anpassad domän 
+## <a name="disabling-the-dkim-signing-policy-for-a-custom-domain"></a>Inaktivera DKIM-signeringsprincipen för en anpassad domän
 <a name="DisableDKIMSigningPolicy"> </a>
 
 När du inaktiverar signeringsprincipen inaktiveras inte DKIM fullständigt. Efter en viss tid används standardprincipen automatiskt för din domän i Microsoft 365. Mer information finns i [Standardbeteende för DKIM och Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
@@ -336,7 +336,7 @@ I det här exemplet för att uppnå följande resultat:
    > sender@**contoso.com**
 
    > d=**contoso.com**
-   
+
 ## <a name="identify-domains-that-do-not-send-email"></a>Identifiera domäner som inte skickar e-post
 
 Organisationer ska uttryckligen ange om en domän inte skickar e-post genom att ange `v=DKIM1; p=` i DKIM-posten för dessa domäner. Detta informerar om att ta emot e-postservrar att det inte finns några giltiga offentliga nycklar för domänen och att e-postmeddelanden som påstår sig komma från den domänen bör avvisas. Du bör göra detta för varje domän och under domän med en jokertecken DKIM.
