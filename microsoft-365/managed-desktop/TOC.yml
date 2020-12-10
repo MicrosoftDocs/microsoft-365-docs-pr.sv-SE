@@ -125,9 +125,6 @@
           items:
             - name: Enhets inventerings rapport
               href: working-with-managed-desktop/device-inventory-report.md
-        - name: Arbeta med insikter
-          href: working-with-managed-desktop/insights.md
-          items:
             - name: Användningsinsikter
               href: working-with-managed-desktop/usage-insights.md
             - name: Tillförlitlighetsinsikter
