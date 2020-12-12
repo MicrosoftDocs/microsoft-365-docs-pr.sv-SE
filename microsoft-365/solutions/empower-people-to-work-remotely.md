@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: Kontrollera att du har aktiverat alla funktioner i Microsoft 365 för att maximera produktiviteten på distansmedarbetaren och bibehålla säker åtkomst till servrar, data och moln.
-ms.openlocfilehash: 833f0351c3eb78afb7218ea1c1c51151d70bb608
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: c6f17f2a80fa37abe43ceabc7a06c86c80eeadbd
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371508"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616362"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Underlätta för distansarbetare med Microsoft 365
 
@@ -99,9 +99,19 @@ För kriterier för säkerhet och efterlevnad, se [Distribuera säkerhet och eft
 
 [![Ge distansarbetare goda förutsättningar (affisch)](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
 
-Du kan också ladda ner den här affischen i [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) och skriva ut den på brev, legal eller tabloid papper i storlek (11 x 17).
+Du kan också ladda ned den här affischen i [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf)- eller [PowerPoint](https://download.microsoft.com/download/5/1/1/511b77a9-a34c-4ea7-af2a-32b07f20b780/empower-remote-workers.pptx)-format och skriva ut den i pappersstorleken letter, legal eller tabloid (11 x 17).
 
-Följ dessa steg för att skydda och optimera åtkomsten till organisationens servrar och molntjänster och maximera produktiviteten för distansarbetarna.
+## <a name="provide-remote-working-for-all-of-your-workers"></a>Tillhandahålla fjärråtkomst för alla dina medarbetare
+
+Du kan göra så alla dina medarbetare kan vara produktiva var de än befinner sig med dessa enheter:
+
+- En modern enhet, till exempel en Surface laptop och Windows 10, som har funktioner, säkerhet och prestanda för att få tillgång till Microsoft 365-molnprogram och -tjänster direkt över webben.
+
+- Alla enheter, inklusive äldre laptops eller stationära datorer, som kan få tillgång till Microsoft 365-molnprogram och -tjänster indirekt via en snabb distribution av [Windows 10-baserade virtuella skrivbord](empower-people-to-work-remotely-remote-access.md#deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices). Med det här alternativet får du hög prestanda, stark säkerhet och förenklad IT-hantering.
+
+## <a name="next-steps"></a>Nästa steg
+
+Följ dessa steg för att skydda och optimera åtkomsten till organisationens servrar och molntjänster, och maximera produktiviteten för distansarbetarna.
 
 1. [Öka inloggningssäkerheten med MFA](empower-people-to-work-remotely-secure-sign-in.md)
 2. [Ge fjärråtkomst till lokala appar och tjänster](empower-people-to-work-remotely-remote-access.md)
