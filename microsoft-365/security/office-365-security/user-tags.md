@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig att identifiera specifika grupper med användare med användar koder i Microsoft Defender för Office 365 abonnemang 2. För att snabbt identifiera taggade användare kan du använda tagg filtrering för meddelanden, rapporter och undersökningar i Microsoft Defender för Office 365.
-ms.openlocfilehash: 136de95addae7dcd48de2c6ac1f30ce67714817c
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: ad06bf90f1ecb93d671bfcad6fad0b4f2a952cb2
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49552025"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663613"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Användarmallar i Microsoft Defender för Office 365
 
@@ -48,15 +48,23 @@ I den här artikeln förklaras hur du konfigurerar användar koder i fältet sä
 
 - Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Öppna för att gå direkt till sidan **User Tags** <https://protection.office.com/userTags> .
 
-- För att skapa, ändra eller ta bort **anpassade användar flaggor** måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** i säkerhets & Compliance Center. Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
+- Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
+  - Om du vill skapa, ändra och ta bort användar flaggor måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** .
+  - För att lägga till och ta bort medlemmar från befintliga användar flaggor måste du vara medlem i roll grupperna **organisations ledning**, **säkerhets administratör** eller **säkerhets ansvarig**
+  - För skrivskyddad åtkomst till användar flaggor måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** .
 
-- Du måste vara [Global administratör](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) eller [Exchange-administratör](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)för att kunna konfigurera prioritets konton (systemtaggar).
+  Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
-  Du kan också hantera och övervaka prioriterade konton i administrations centret för Microsoft 365. Anvisningar finns i [Hantera och övervaka prioritets konton](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
+  **Anmärkningar**:
+
+  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Hantering av användar märkning styrs av rollerna **etikett läsare**, **tagga deltagare** och **taggredigerare** .
+
+- Du kan också hantera och övervaka prioriterade konton i administrations centret för Microsoft 365. Anvisningar finns i [Hantera och övervaka prioritets konton](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>Använda säkerhets Center för att skapa användar flaggor
 
-1. Gå till användar märkning för **Threat Management** i säkerhets Center \> **User tags**.
+1. Gå till användar märkning för **Threat Management** i säkerhets Center \> .
 
 2. På sidan med **användar Taggar** som öppnas klickar du på **skapa tagg**.
 
@@ -87,7 +95,7 @@ I den här artikeln förklaras hur du konfigurerar användar koder i fältet sä
 
 ## <a name="use-the-security-center-to-view-user-tags"></a>Använda säkerhets Center för att Visa användar flaggor
 
-1. Gå till användar märkning för **Threat Management** i säkerhets Center \> **User tags**.
+1. Gå till användar märkning för **Threat Management** i säkerhets Center \> .
 
 2. På sidan med **användar Taggar** som öppnas väljer du den användar tagg som du vill visa (Klicka inte på kryss rutan).
 
@@ -97,7 +105,7 @@ I den här artikeln förklaras hur du konfigurerar användar koder i fältet sä
 
 ## <a name="use-the-security-center-to-modify-user-tags"></a>Använda säkerhets Center för att ändra användar flaggor
 
-1. Gå till användar märkning för **Threat Management** i säkerhets Center \> **User tags**.
+1. Gå till användar märkning för **Threat Management** i säkerhets Center \> .
 
 2. På sidan med **användar Taggar** som öppnas väljer du den användar tagg som du vill visa och klickar sedan på **Redigera tagg**.
 
@@ -109,6 +117,6 @@ I den här artikeln förklaras hur du konfigurerar användar koder i fältet sä
 
 **Obs!** du kan inte ta bort den inbyggda **prioritets konto** typen.
 
-1. Gå till användar märkning för **Threat Management** i säkerhets Center \> **User tags**.
+1. Gå till användar märkning för **Threat Management** i säkerhets Center \> .
 
 2. På sidan med **användar Taggar** som öppnas väljer du den användar tagg som du vill ta bort, klickar på **ta bort flagga** och väljer sedan **Ja, ta bort** i varningen som visas.

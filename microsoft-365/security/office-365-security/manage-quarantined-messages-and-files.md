@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig att visa och hantera meddelanden i karantän för alla användare i Exchange Online Protection (EOP). Administratörer i organisationer med Microsoft Defender för Office 365 kan också hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams.
-ms.openlocfilehash: 8f4ca5caef9bf244315db2271011126ad4d7976e
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 5f4d63576e57ac50abe1ec1eb378221c4d457280
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616782"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659992"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Hantera meddelanden och filer i karantän som administratör i EOP
 
@@ -44,14 +44,21 @@ Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav 
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Du måste tilldelas behörigheter innan du kan hantera karantänen som administratör. Behörigheterna styrs av **karantän** rollen i säkerhets & Compliance Center. Som standard tilldelas den här rollen **organisations hantering** (globala administratörer), **karantän administratören** och **säkerhets administratörs** rollerna för säkerhets &. Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
+- Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
+  - Du måste vara medlem i roll grupperna **organisations hantering**, **säkerhets administratör** eller **karantän administratör** för att kunna vidta åtgärder för alla användare <sup>\*</sup> .
+  - Om du vill ha skrivskyddad åtkomst till meddelanden i karantän för alla användare måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** .
+
+  Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
+
+  **Anmärkningar**:
+
+  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
+  - <sup>\*</sup> Medlemmar i roll gruppen **karantän administratörer** måste också vara medlemmar i roll gruppen **hygien hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) för att kunna göra karantän förfaranden i Exchange Online PowerShell.
 
 - Meddelanden i karantän bevaras under en standard tids period innan de tas bort automatiskt:
-
   - 30 dagar för meddelanden i karantän med principer för skräp post (spam, nätfiske och Mass utskick). Det här är standardvärdet och Max värdet. Om du vill konfigurera (sänka) det här värdet läser du [Konfigurera principer för skräp post](configure-your-spam-filter-policies.md).
-
   - 15 dagar för meddelanden som innehåller skadlig program vara.
-
   - 15 dagar för filer i karantän med ATP för SharePoint, OneDrive och Microsoft Teams i Defender för Office 365.
 
   När ett meddelande utgår från karantän kan du inte återställa det.
@@ -99,11 +106,11 @@ Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav 
      - **Skräppost**
      - **Hög exakthet Phish**
 
-   - **Princip typ**: filtrera meddelanden efter princip typ:
+   - **Principtyp**: filtrera meddelanden efter principtyp:
      - **Policy för mot skadlig program vara**
      - **Principer för säkra bifogade filer**
-     - **Policy för Phish**
-     - **Principer för värd innehålls filter** (policy för skräp post)
+     - **Princip för skydd mot nätfiske**
+     - **Filterprincip för värdbaserat innehåll** (Skräppostprincip)
      - **Transport regel**
 
    - **E-postmottagare**: alla användare eller bara meddelanden som skickas till dig. Slutanvändare kan bara hantera skickade meddelanden till dem.
@@ -118,7 +125,7 @@ Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav 
 
    - **Avsändarens e-postadress**: En enskild avsändarens e-postadress.
 
-   - **Princip namn**: Använd hela meddelandets princip namn. Sökningen är inte skiftlägeskänslig.
+   - **Principnamn**: använd meddelandets hela principnamn. Sökningen är inte skiftlägeskänslig.
 
    - **Mottagarens e-postadress**: En enskild mottagares e-postadress.
 

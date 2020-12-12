@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 'Administratörer kan läsa mer om hur du använder portalen för att skicka e-postmeddelanden, misstänkta nätfiske-meddelanden, skräp post och andra potentiellt skadligt meddelande, URL: er och filer till Microsoft för genomsökning i & den här gruppen.'
-ms.openlocfilehash: 0c01afff2e9e5a656099192f3867bb3a6f1cee23
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 7327768780e5db16e09e2b709c9c11344573c404
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568596"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659831"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Använd administratörs sändning för att skicka misstänkt skräp post, Phish, URL: er och filer till Microsoft
 
@@ -46,15 +46,15 @@ Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microso
 
   - **Organisations hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-    Observera att medlemskap i den här roll gruppen krävs för att [Visa användar överföringar till den anpassade post lådan](#view-user-submissions-to-the-custom-mailbox) enligt beskrivningen längre fram i det här avsnittet.
+    Observera att medlemskap i den här roll gruppen krävs för att [Visa användar överföringar till den anpassade post lådan](#view-user-submissions-to-the-custom-mailbox) enligt beskrivningen längre ned i den här artikeln.
 
 - Mer information om hur användarna kan skicka meddelanden och filer till Microsoft finns i [rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Rapportera misstänkt innehåll till Microsoft
 
-1. I säkerhets & Compliance Center går du till **Threat Management** -undersändningar \> **Submissions**, kontrollerar att du är på fliken **admin-överföring** och klickar sedan på **ny överföring**.
+1. I säkerhets & Compliance Center går du till **Threat Management** -undersändningar \> , kontrollerar att du är på fliken **admin-överföring** och klickar sedan på **ny överföring**.
 
-2. Använd **New submission** utfällbar text som visas för att skicka meddelandet, URL: en eller bifogad fil enligt beskrivningen i följande avsnitt.
+2. Använd  utfällbar text som visas för att skicka meddelandet, URL: en eller bifogad fil enligt beskrivningen i följande avsnitt.
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>Skicka ett tveksamt e-postmeddelande till Microsoft
 
@@ -111,7 +111,7 @@ Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microso
 
 ## <a name="view-admin-submissions"></a>Visa administratörs inlämningar
 
-I säkerhets & Compliance Center går du till **Threat Management** -undersändningar \> **Submissions**, kontrollerar att du är på fliken **admin-överföring** och klickar sedan på **ny överföring**.
+I säkerhets & Compliance Center går du till **Threat Management** -undersändningar \> , kontrollerar att du är på fliken **admin-överföring** och klickar sedan på **ny överföring**.
 
 Högst upp på sidan kan du ange ett start datum, ett slutdatum och (som standard) som du kan filtrera efter **överförings-ID** (ett GUID-värde som är kopplat till varje överföring) genom att ange ett värde i rutan och klicka på ![ knappen uppdatera ](../../media/scc-quarantine-refresh.png) . Du kan ange flera värden avgränsade med kommatecken.
 

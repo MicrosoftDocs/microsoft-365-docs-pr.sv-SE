@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Lär dig hur du förhindrar att gäster läggs till i en viss grupp
-ms.openlocfilehash: 99e78932b29d25054922b56fcadb608a7dfca432
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 8bee26bf5ec323536ca1ac6f25ce96927634cee7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613062"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49660054"
 ---
 # <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Förhindra att gäster läggs till i en viss Microsoft 365-grupp eller Microsoft Teams-team
 
@@ -30,7 +30,7 @@ Om du använder känslighets etiketter i organisationen rekommenderar vi att du 
 
 ## <a name="change-group-settings-using-microsoft-powershell"></a>Ändra grupp inställningar med hjälp av Microsoft PowerShell
 
-Du kan också förhindra att nya gäster läggs till enskilda grupper med PowerShell.
+Du kan också förhindra att nya gäster läggs till enskilda grupper med PowerShell. (Kom ihåg att teamets associerade SharePoint-webbplats har [separata kontroller för gäst delning](https://docs.microsoft.com/sharepoint/change-external-sharing-site).)
 
 Du måste använda för hands versionen av [Azure Active Directory PowerShell för graf](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (modul name **AzureADPreview**) för att ändra inställningen för gäst åtkomst på grupp nivå:
 

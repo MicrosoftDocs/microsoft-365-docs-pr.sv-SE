@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Lär dig mer om de Microsoft 365-konfigurations steg som behövs för att skapa ett team för aktivitet, konversation och dokument samarbete med gäster i Teams.
-ms.openlocfilehash: 7f00acb7b7b58169d6a66bfa4cabdc5a3035f67f
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+ms.openlocfilehash: cc962e22bde70220e07f805b0a7a83c111886369
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030035"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659612"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Samar beta med gäster i ett team
 
@@ -36,15 +36,15 @@ I den här videon visas de konfigurations steg som beskrivs i det här dokumente
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44NTr?autoplay=false]
 
-## <a name="azure-organizational-relationships-settings"></a>Inställningar för Azure organisations relationer
+## <a name="azure-external-collaboration-settings"></a>Inställningar för extern samarbete i Azure
 
-Delning i Microsoft 365 regleras på högsta nivå av [organisations Relations inställningarna i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Om gäst delning är inaktiverat eller begränsat i Azure AD åsidosätter den här inställningen eventuella delnings inställningar som du konfigurerar i Microsoft 365.
+Delning i Microsoft 365 regleras på högsta nivå av [B2B-inställningen för externt samarbete i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Om gäst delning är inaktiverat eller begränsat i Azure AD åsidosätter den här inställningen eventuella delnings inställningar som du konfigurerar i Microsoft 365.
 
-Kontrol lera inställningarna för organisations relationer för att säkerställa att delning med gäster inte blockeras.
+Kontrol lera inställningarna för externt samarbete för B2B för att säkerställa att delning med gäster inte blockeras.
 
 ![Skärmbild av sidan med inställningar för organisationsrelationer i Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
 
-Så här anger du inställningar för organisations relationer
+Så här anger du inställningar för extern samarbete
 
 1. Logga in på Azure Active Directory på [https://aad.portal.azure.com](https://aad.portal.azure.com) .
 2. I det vänstra navigerings fönstret klickar du på **Azure Active Directory**.
@@ -55,7 +55,7 @@ Så här anger du inställningar för organisations relationer
 
 Observera inställningarna i avsnittet **samarbets begränsningar** . Kontrol lera att domänerna för de gäster som du vill samar beta med inte är blockerade.
 
-Om du arbetar med gäster från flera organisationer kan det vara bra att begränsa deras möjligheter att komma åt katalog data. Detta hindrar dem från att se vem som är gäst i katalogen. För att göra det, under **gäst användares restriktioner** , väljer du **gäst användare har begränsad åtkomst till egenskaper och medlemskap i inställningar för katalog objekt** eller **gäst användares åtkomst är begränsad till egenskaper och medlemskap i deras egna katalog objekt**.
+Om du arbetar med gäster från flera organisationer kan det vara bra att begränsa deras möjligheter att komma åt katalog data. Detta hindrar dem från att se vem som är gäst i katalogen. För att göra det, under **gäst användares restriktioner**, väljer du **gäst användare har begränsad åtkomst till egenskaper och medlemskap i inställningar för katalog objekt** eller **gäst användares åtkomst är begränsad till egenskaper och medlemskap i deras egna katalog objekt**.
 
 ## <a name="teams-guest-access-settings"></a>Inställningar för gäst åtkomst för Teams
 
@@ -73,6 +73,8 @@ Att ange inställningar för gäståtkomst i Teams
 4. I administrations centret för Teams, i det vänstra navigerings fönstret, expanderar du **Inställningar för hela organisationen** och klickar på **gäst åtkomst**.
 5. Kontrollera att **Tillåt gäståtkomst i Teams** är inställt på **På**.
 6. Gör önskade ändringar i de ytterligare gästinställningarna och klicka sedan på **Spara**.
+
+När gästen är aktive rad kan du välja att kontrol lera gäst åtkomsten till enskilda team och deras tillhör ande SharePoint-webbplatser med känslighets etiketter. Mer information finns i [använda känslighets etiketter för att skydda innehåll i Microsoft Teams, microsoft 365 Groups och SharePoint-webbplatser](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
 > [!NOTE]
 > Det kan ta upp till 24 timmar innan gäst inställningarna blir aktiva när du har aktiverat det.
@@ -148,10 +150,9 @@ Vi bjuder in användare senare. Sedan är det viktigt att kontrol lera delnings 
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>Delnings inställningar på SharePoint-webbplats nivå
 
-Kontrol lera inställningarna för delning av webbplats nivå för att se till att de tillåter åtkomst typen för det här teamet. Om du till exempel ställer in inställningar på organisations nivå till **vem som helst** , men vill att alla gäster ska autentiseras för det här teamet, kontrollerar du att inställningarna för delning av webbplats nivå är inställda på **nya och befintliga gäster**.
+Kontrol lera inställningarna för delning av webbplats nivå för att se till att de tillåter åtkomst typen för det här teamet. Om du till exempel ställer in inställningar på organisations nivå till **vem som helst**, men vill att alla gäster ska autentiseras för det här teamet, kontrollerar du att inställningarna för delning av webbplats nivå är inställda på **nya och befintliga gäster**.
 
 ![Skärmbild av inställningar för extern delning för SharePoint](../media/sharepoint-site-external-sharing-settings.png)
-
 
 Ange delnings inställningar på webbplats nivå
 1. I administrations centret för SharePoint, i det vänstra navigerings fönstret, expanderar du **webbplatser** och klickar på **aktiva webbplatser**.

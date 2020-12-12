@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur du konfigurerar URL-poster i listan Tillåt/blockera i klient organisationen för säkerhets &.
-ms.openlocfilehash: 0fdfa23ba22b240032e7a6888948de180aa0f6ae
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 4bf5e2e29a9f48c434be527a2447ca4bf98c4208
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614970"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49660004"
 ---
 # <a name="manage-urls-in-the-tenant-allowblock-list"></a>Hantera URL:er i Klientorganisation Tillåt / blockera listan
 
@@ -28,7 +28,7 @@ ms.locfileid: "49614970"
 
 
 > [!NOTE]
-> De funktioner som beskrivs i det här avsnittet är i förhands gransknings syfte och kan ändras och är inte tillgängliga i alla organisationer.
+> De funktioner som beskrivs i den här artikeln är i förhands granskning och kan ändras och är inte tillgängliga i alla organisationer.
 
 I Microsoft 365-organisationer med post lådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor kanske du inte kan komma att behöva filtrera EOP Verdict. Ett bra meddelande kan till exempel vara markerat som dåligt (ett falskt positivt) eller så tillåts ett ogiltigt meddelande genom (ett falskt negativt).
 
@@ -40,7 +40,7 @@ I det här avsnittet beskrivs hur du konfigurerar poster i listan Tillåt/blocke
 
 - Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. För att gå direkt till sidan **Tillåt/blockera lista för klient organisation** , Använd <https://protection.office.com/tenantAllowBlockList> .
 
-- Tillgängliga URL-värden beskrivs i [URL-syntaxen för avsnittet Tillåt/blockera lista för klient organisation](#url-syntax-for-the-tenant-allowblock-list) längre ned i det här avsnittet.
+- Tillgängliga URL-värden beskrivs i [URL-syntaxen för avsnittet Tillåt/blockera lista för klient organisation](#url-syntax-for-the-tenant-allowblock-list) längre ned i den här artikeln.
 
 - Listan Tillåt/blockera för klient organisationer tillåter högst 500 poster för URL: er.
 
@@ -65,7 +65,7 @@ I det här avsnittet beskrivs hur du konfigurerar poster i listan Tillåt/blocke
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Använd säkerhets & efterlevnad för att skapa URL-poster i listan Tillåt/blockera för klient organisation
 
-Mer information om syntaxen för URL-poster finns i [URL-syntaxen för listan Tillåt/blockera lista för klient organisation](#url-syntax-for-the-tenant-allowblock-list) längre ned i det här avsnittet.
+Mer information om syntaxen för URL-poster finns i [URL-syntaxen för listan Tillåt/blockera lista för klient organisation](#url-syntax-for-the-tenant-allowblock-list) längre ned i den här artikeln.
 
 1. Gå till fliken **Threat Management** \> **policy** för \> **Tillåt/blockera listor** i säkerhets & efterlevnad.
 

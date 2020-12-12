@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du skapar e-postflödes regler (transport regler) för att identifiera meddelanden och ange SCL (skräp säkerhets nivå) för meddelanden i Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 791e6747e1ffa92d54e7d4f4a6c257c3aad4c0d9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 447333eb968ba7d91a1673c57b11afdb16b90469
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195861"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659843"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages-in-eop"></a>Använda regler för e-postflöde för att ange säkerhets nivån för skräp post (SCL) i meddelanden i EOP
 
@@ -35,15 +35,23 @@ Om du vill markera specifika meddelanden som skräp post innan de är inaktivera
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du måste ha behörighet i Exchange Online innan du kan utföra dessa procedurer. Specifikt måste du ha tilldelats rollen **transport regler** , som tilldelats rollerna **organisations hantering**, **regelefterlevnad**och hantering av **Arkiv handlingar** . Mer information finns i [Hantera roll grupper i Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+- Du måste tilldelas behörigheter i Exchange Online eller Exchange Online Protection innan du kan göra det i den här artikeln. För det specifika måste du ha rollen **Transport regel** , som är tilldelad till **organisations hantering**, **hantering av efterlevnad** (globala administratörer) och roll grupperna **Arkiv handlings hantering** som standard.
 
-- Om du vill öppna UK i Exchange Online läser du [administrations Center för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
+  Mer information finns i följande avsnitt:
 
-- Mer information om regler för e-postflöden i Exchange Online finns i [regler för e-postflöde (transport regler) i Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
+  - [Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+  - [Behörigheter i fristående EOP](feature-permissions-in-eop.md)
+  - [Använda UK ändra listan över medlemmar i roll grupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
+
+- Om du vill öppna UK i Exchange Online läser du [administrations Center för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center). Information om hur du öppnar UK i fristående EOP finns i [administrations Center för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
+
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+
+- Mer information om regler för e-postflöden i Exchange Online och Exchange Online Protection finns i [regler för e-postflöde (transport regler) i Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
 ## <a name="use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>Använd UK för att skapa en regel för e-postflöde som anger SCL för ett meddelande
 
-1. Gå till regler för **e-postflöde** i UK \> **Rules**.
+1. Gå till regler för **e-postflöde** i UK \> .
 
 2. Klicka på **Lägg** till ![ ikonen Lägg till ](../../media/ITPro-EAC-AddIcon.png) och välj sedan **skapa en ny regel**.
 
@@ -72,4 +80,4 @@ Om du vill markera specifika meddelanden som skräp post innan de är inaktivera
 
 ## <a name="how-do-you-know-this-worked"></a>Hur vet du att det fungerade?
 
-Verifiera att den här proceduren fungerar som den ska genom att skicka ett e-postmeddelande till någon inom organisationen och kontrol lera att åtgärden som utförs på meddelandet är som förväntat. Om du till exempel **ställer in säkerhets nivån för skräp post (SCL)** för att **kringgå skräp post**ska meddelandet skickas till den angivna mottagarens inkorg. Men om du **har angett säkerhets nivån för skräp post (SCL)** till **9**och åtgärden att ta bort **hög säkerhet** för dina tillämpliga skydd mot skräp post är att meddelandet ska flyttas till mappen skräp post.
+Verifiera att den här proceduren fungerar som den ska genom att skicka ett e-postmeddelande till någon inom organisationen och kontrol lera att åtgärden som utförs på meddelandet är som förväntat. Om du till exempel **ställer in säkerhets nivån för skräp post (SCL)** för att **kringgå skräp post** ska meddelandet skickas till den angivna mottagarens inkorg. Men om du **har angett säkerhets nivån för skräp post (SCL)** till **9** och åtgärden att ta bort **hög säkerhet** för dina tillämpliga skydd mot skräp post är att meddelandet ska flyttas till mappen skräp post.

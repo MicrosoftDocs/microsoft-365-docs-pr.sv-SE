@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2cca4850227716fe5f7d7d21f3220b46e9761420
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: e858ae1fc564fdcacbe181930ae1489d131965e7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561189"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659684"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft hanterade Station ära enheter 
 
@@ -44,9 +44,9 @@ Länkar till enheter här är endast för din referens. Om du vill beställa enh
 | [Dell Latitude 7410/7410 2-i-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-7410-business-laptop-or-2-in-1/spd/latitude-14-7410-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | IR-kamera krävs | 19 maj 2022  | 19 maj 2025  |
 | [Dell Latitude 9410 2-i-1](https://www.dell.com/en-us/work/shop/laptops/new-14-9410-2-in-1/spd/latitude-14-9410-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | IR-kamera krävs | Maj 2022  | Maj 2025  |
 | [Dell Latitude 9510](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-9510-laptop-or-2-in-1/spd/latitude-15-9510-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | IR-kamera krävs | Maj 2022  | Maj 2025  |
-| [Dell OptiPlex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop) | 128 GB/Intel i3/8 GB RAM | Ingen | 27 maj 2022  | 27 maj 2025  |
-| [Dell OptiPlex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio) | 128 GB/Intel i3/8 GB RAM | Ingen | 15 maj 2022  | 15 maj 2025  |
-| [Dell 5550 arbets Station](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop) | 256 GB/Intel i5/8 GB RAM | Ingen | 27 maj 2022  | 27 maj 2025  |
+| [Dell OptiPlex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop) | 128 GB/Intel i3/8 GB RAM | Inga | 27 maj 2022  | 27 maj 2025  |
+| [Dell OptiPlex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio) | 128 GB/Intel i3/8 GB RAM | Inga | 15 maj 2022  | 15 maj 2025  |
+| [Dell 5550 arbets Station](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop) | 256 GB/Intel i5/8 GB RAM | Inga | 27 maj 2022  | 27 maj 2025  |
 
 ### <a name="hp"></a>KLIENTANSLUTNINGAR
 
@@ -66,13 +66,11 @@ Länkar till enheter här är endast för din referens. Om du vill beställa enh
 
 | Modell    | Miniminormer  | Ytterligare krav   | Arkiv datum   | Pensions datum   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB/Intel i5/8 GB RAM | Ingen | Maj 2022 | Maj 2027 |
-| [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB/Intel Core m3/8 GB RAM | Ingen | Maj 2022 | Maj 2027 |
-| [Surface bärbar dator](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB/Intel i5/8 GB RAM | Ingen | Okt 12, 2022 | Okt 12, 2025 |
-| [Surface laptop 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB/Intel i5/8 GB RAM | Ingen | Oktober 2020 | Oktober 2023 |
-| [Bärbar dator 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB/Intel i5/8 GB RAM | Ingen | Oktober 22, 2021 | Oktober 22, 2024 |
-| [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel i5/8 GB RAM | Ingen | Oktober 2020 | Oktober 2023 |
-| [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB/Intel i5/8 GB RAM | Ingen | Oktober 22, 2021 | Oktober 22, 2024 |
+| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB/Intel i5/8 GB RAM | Inga | Maj 2022 | Maj 2027 |
+| [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB/Intel Core m3/8 GB RAM | Inga | Maj 2022 | Maj 2027 |
+| [Surface bärbar dator](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB/Intel i5/8 GB RAM | Inga | Okt 12, 2022 | Okt 12, 2025 |
+| [Bärbar dator 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB/Intel i5/8 GB RAM | Inga | Oktober 22, 2021 | Oktober 22, 2024 |
+| [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB/Intel i5/8 GB RAM | Inga | Oktober 22, 2021 | Oktober 22, 2024 |
 
 Dessutom måste enheten också uppfylla följande kriterier:     
 

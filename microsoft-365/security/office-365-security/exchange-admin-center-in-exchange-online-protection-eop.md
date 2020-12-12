@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om webb hanterings gränssnittet i fristående Exchange Online Protection (EOP).
-ms.openlocfilehash: 732991befa9084b62c152295d10a2bbf94bc36ec
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fc76ecd6dafcf9453a0c6de14917c96c950f8370
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202957"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659672"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Administrationscenter för Exchange i fristående EOP
 
@@ -54,7 +54,7 @@ Fristående EOP-kunder kan komma åt UK på följande sätt:
 
 I det här avsnittet beskrivs de användar gränssnitts element som finns i UK.
 
-![EOP-AdminCenter](../../media/EOP-AdminCenter.png)
+![Administrations centret för Exchange i Exchange Online Protection](../../media/EOP-AdminCenter.png)
 
 ### <a name="feature-pane"></a>Fönstret funktion
 
@@ -85,7 +85,7 @@ När du klickar på de flesta flikar ser du ett verktygsfält. Verktygsfältet i
 
 ****
 
-|Ikonen|Namn|Fattning|
+|Ikonen|Namn|Åtgärd|
 |---|---|---|
 |![Ikonen Lägg till](../../media/ITPro-EAC-AddIcon.gif)|Lägga till, ny|Använd den här ikonen för att skapa ett nytt objekt. Vissa av de här ikonerna har en associerad nedpilen som du kan klicka på för att visa ytterligare objekt som du kan skapa.|
 |![Redigera-ikon](../../media/ITPro-EAC-EditIcon.gif)|Redigera|Använd den här ikonen om du vill redigera ett objekt.|
@@ -107,16 +107,12 @@ När du väljer ett objekt från listvyn visas information om objektet i informa
 
 ### <a name="me-tile-and-help"></a>Panel och hjälp med mig
 
-Med panelen **min** kan du logga ut från UK och logga in som en annan användare. I den **Help** ![ ](../../media/ITPro-EAC-HelpIcon.gif) nedrullningsbara menyn hjälp hjälp ikon kan du göra följande:
+Med panelen **min** kan du logga ut från UK och logga in som en annan användare. I den  ![ ](../../media/ITPro-EAC-HelpIcon.gif) nedrullningsbara menyn hjälp hjälp ikon kan du göra följande:
 
 - **Hjälp**: Klicka på ![ ikonen hjälp ](../../media/ITPro-EAC-HelpIcon.gif) för att visa onlinehjälpen.
-
 - **Feedback**: lämna feedback.
-
 - **Community**: Ställ en fråga för att hitta svar i Community-forumen.
-
 - **Inaktivera hjälp bubbla**: hjälp bubblan visar kontextuell hjälp för fält när du skapar eller redigerar ett objekt. Du kan stänga av hjälp bubblan eller aktivera den om den har inaktiverats.
-
 - **Visa kommando loggning**: ett nytt fönster öppnas med motsvarande PowerShell-kommandon baserat på vad du konfigurerade i UK.
 
 ## <a name="supported-browsers"></a>Webbläsare som stöds

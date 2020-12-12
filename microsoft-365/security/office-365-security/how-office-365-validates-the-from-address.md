@@ -18,23 +18,23 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa om vilka typer av e-postadresser som accepteras eller nekas av Exchange Online Protection (EOP) och Outlook.com för att förhindra nätfiske.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e0afd05c80bb4de665d23b17c7089631dad93c78
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 25fbca8fa5d264a212ac25e2035bffde0819383d
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196065"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659660"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Så här verifierar EOP från-adressen för att förhindra nätfiske
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Nät fiske attacker är ett konstant hot mot alla e-postorganisationer. Utöver [falska e-postadresser som inte är förfalskade](anti-spoofing-protection.md)använder angripare ofta värden i från-adressen som bryter mot Internet-standarden. För att förhindra den här typen av nätfiske måste du nu använda Exchange Online Protection (EOP) och Outlook.com för att inkludera en RFC-kompatibel adress enligt beskrivningen i det här avsnittet. Denna tillämpning har Aktiver ATS i november 2017.
+Nät fiske attacker är ett konstant hot mot alla e-postorganisationer. Utöver [falska e-postadresser som inte är förfalskade](anti-spoofing-protection.md)använder angripare ofta värden i från-adressen som bryter mot Internet-standarden. För att förhindra den här typen av nätfiske måste du nu använda Exchange Online Protection (EOP) och Outlook.com inkommande meddelanden för att inkludera en RFC-kompatibel adress enligt beskrivningen i den här artikeln. Denna tillämpning har Aktiver ATS i november 2017.
 
 **Anmärkningar**:
 
-- Om du regelbundet får e-post från organisationer som har fel format från adresser enligt beskrivningen i det här avsnittet kan du uppmuntra dessa organisationer att uppdatera sina e-postservrar så att de uppfyller moderna säkerhets standarder.
+- Om du regelbundet får e-post från organisationer som har fel format från adresser enligt beskrivningen i den här artikeln bör du uppmuntra dessa organisationer att uppdatera sina e-postservrar för att uppfylla moderna säkerhets standarder.
 
 - Motsvarande avsändare (används i skicka-och distributions listor) påverkas inte av de här kraven. Mer information finns i följande blogg inlägg: [Vad innebär det när vi hänvisar till "avsändaren" i ett e-postmeddelande?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/).
 
@@ -44,7 +44,7 @@ Ett SMTP-standard-e-postmeddelande består av ett *meddelandes kuvert* och medde
 
 - `5321.MailFrom`Adressen (kallas även för **e-post från** adress, P1 avsändare eller kuvert avsändare) är den e-postadress som används i SMTP-överföringen av meddelandet. Den här e-postadressen lagras normalt i huvud fältet för **RETUR-sökväg** i meddelande huvudet (även om det är möjligt för avsändaren att ange en annan e-postadress för **RETUR-sökvägen** ).
 
-- `5322.From`(Kallas även från-adressen eller P2-avsändaren) är e-postadressen i fältet **från** huvud och är avsändarens e-postadress som visas i e-postklienter. Från-adressen är fokus på kraven i det här avsnittet.
+- `5322.From`(Kallas även från-adressen eller P2-avsändaren) är e-postadressen i fältet **från** huvud och är avsändarens e-postadress som visas i e-postklienter. Från-adressen är fokus på kraven i den här artikeln.
 
 Från-adressen definieras i detalj bland flera RFC: er (till exempel RFC 5322 Section 3.2.3, 3,4 och 3.4.1 och [RFC 3696](https://tools.ietf.org/html/rfc3696)). Det finns många variationer för adressering och vad som anses vara giltigt eller ogiltigt. För att det ska vara enkelt rekommenderar vi följande format och definitioner:
 

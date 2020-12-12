@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: I den här artikeln får du lära dig hur du samarbetar med gäster i ett dokument i SharePoint och OneDrive.
-ms.openlocfilehash: bb97beaacf6a433e4fc5c38a897327d1e359ffb1
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 1b2fe003902b69e4c0c58852af67862ce6f2eb34
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613520"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663517"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Samar beta med gäster i ett dokument
 
@@ -34,15 +34,13 @@ I den här videon visas de konfigurations steg som beskrivs i det här dokumente
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE450Vt?autoplay=false]
 
-## <a name="azure-organizational-relationships-settings"></a>Inställningar för Azure organisations relationer
+## <a name="azure-external-collaboration-settings"></a>Inställningar för extern samarbete i Azure
 
-Delning i Microsoft 365 regleras på högsta nivå av [organisations Relations inställningarna i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Om gäst delning är inaktiverat eller begränsat i Azure AD åsidosätter den här inställningen eventuella delnings inställningar som du konfigurerar i Microsoft 365.
+Delning i Microsoft 365 regleras på högsta nivå av [B2B-inställningen för externt samarbete i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Om gäst delning är inaktiverat eller begränsat i Azure AD åsidosätter den här inställningen eventuella delnings inställningar som du konfigurerar i Microsoft 365.
 
-Kontrol lera inställningarna för organisations relationer för att säkerställa att delning med gäster inte blockeras.
+Kontrol lera inställningarna för externt samarbete för B2B för att säkerställa att delning med gäster inte blockeras.
 
 ![Skärmbild av sidan med inställningar för organisationsrelationer i Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
-
-Så här anger du inställningar för organisations relationer
 
 Så här anger du inställningar för extern samarbete
 
@@ -109,11 +107,11 @@ Så här anger du behörigheter för länkar som tillåter delning med vem som h
 
 1. Under de **här länkarna kan du ge behörigheterna:** under fönster rutan 
     1. Från List rutan **filer** 
-        1. Välj **Visa och redigera** om du vill tillåta att overifierade användare gör ändringar i filerna.
-        2. Välj **Visa** om du inte vill att overifierade användare ska kunna göra ändringar i filerna.
+        - Välj **Visa och redigera** om du vill tillåta att overifierade användare gör ändringar i filerna.
+        - Välj **Visa** om du inte vill att overifierade användare ska kunna göra ändringar i filerna.
     2. Från List rutan **mappar**
-        1. Välj **Visa, redigera och ladda upp** om du vill tillåta att overifierade användare gör ändringar i mapparna.
-        2. Välj **Visa** om du inte vill att overifierade användare ska kunna göra ändringar i mapparna.
+        - Välj **Visa, redigera och ladda upp** om du vill tillåta att overifierade användare gör ändringar i mapparna.
+        - Välj **Visa** om du inte vill att overifierade användare ska kunna göra ändringar i mapparna.
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>Delnings inställningar på SharePoint-webbplats nivå
 

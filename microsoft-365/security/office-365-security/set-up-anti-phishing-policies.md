@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om vilka phishing-principer som är tillgängliga i Exchange Online Protection (EOP) och Microsoft Defender för Office 365.
-ms.openlocfilehash: 9d3c8c0bf2b1c440892a1099d3d0812d95027156
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 34c66d8ab39af443462e8c5ac99009b4170be21e
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615774"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659867"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-nätfiske-principer i Microsoft 365
 
@@ -84,7 +84,7 @@ Följande princip inställningar är tillgängliga i principer för nätfiske i 
     - **Mottagar domänen är**
 
   > [!NOTE]
-  > Inställningen **tillämpa på** är obligatorisk i anpassade principer för nätfiske **för att identifiera vilka meddelanden** <u>som principen gäller för</u>. Anti-nätfiske-principer i Microsoft Defender för Office 365 har också [personifieringsparametrar-inställningar](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) där du kan ange enskilda avsändare-e-postadresser eller avsändar domäner <u>som ska få personifieringsnivå</u> enligt beskrivningen längre ned i det här avsnittet.
+  > Inställningen **tillämpa på** är obligatorisk i anpassade principer för nätfiske **för att identifiera vilka meddelanden** <u>som principen gäller för</u>. Anti-nätfiske-principer i Microsoft Defender för Office 365 har också [personifieringsparametrar-inställningar](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) där du kan ange enskilda avsändare-e-postadresser eller avsändar domäner <u>som</u> beskrivs längre fram i den här artikeln.
 
 ## <a name="spoof-settings"></a>Inställningar för förfalskning
 

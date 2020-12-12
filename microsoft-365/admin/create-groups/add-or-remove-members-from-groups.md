@@ -15,18 +15,15 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Lär dig hur du lägger till en medlem i en grupp, tar bort medlem från grupp och hanterar grupp ägar status i administrations centret för Microsoft 365.
-ms.openlocfilehash: a8739b6cd2005598acbfccbaff6131235ec480ee
-ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
+ms.openlocfilehash: 34c026bced5563e07a1ae0d13f4c691cfaf3f624
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753319"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663249"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Lägga till eller ta bort medlemmar från Microsoft 365-grupper med administrations centret
 
@@ -37,11 +34,11 @@ I Microsoft 365 skapar grupp medlemmar normalt deras egna grupper, lägger till 
   
 ## <a name="add-a-member-to-a-group-in-the-admin-center"></a>Lägga till en medlem i en grupp i administrations centret
 
-1. Gå till sidan grupper i administrations centret **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .  
+1. Gå till sidan [**aktiva grupper**](https://admin.microsoft.com/Adminportal/Home?#/groups) i administrations centret.  
 
-2. Välj ett grupp namn.
+2. Klicka på ett grupp namn.
 
-3. Välj **Visa alla och hantera medlemmar**på fliken **medlemmar** i informations fönstret och välj sedan **Lägg till medlemmar**.
+3. Välj **Visa alla och hantera medlemmar** på fliken **medlemmar** i informations fönstret och välj sedan **Lägg till medlemmar**.
 
 4. Sök efter eller välj namnet på den person som du vill lägga till.
 
@@ -49,11 +46,11 @@ I Microsoft 365 skapar grupp medlemmar normalt deras egna grupper, lägger till 
 
 ## <a name="add-a-group-to-a-member-in-the-admin-center"></a>Lägga till en grupp till en medlem i administrations centret
 
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.  
+1. Gå till sidan [**aktiva användare**](https://admin.microsoft.com/Adminportal/Home?#/users) i administrations centret.  
 
-2. Välj en användare.
+2. Klicka på en användare.
 
-3. Välj **hantera grupper**på fliken **konto** i informations fönstret.
+3. Välj **hantera grupper** på fliken **konto** i informations fönstret.
 
 4. Sök efter eller välj namnet på den grupp du vill lägga till.
 
@@ -62,13 +59,13 @@ I Microsoft 365 skapar grupp medlemmar normalt deras egna grupper, lägger till 
 ## <a name="remove-a-member-from-a-group-in-the-admin-center"></a>Ta bort en medlem från en grupp i administrations centret
 
 > [!NOTE]
-> När du tar bort en medlem från en privat grupp tar det 5 minuter innan personen blockeras från gruppen (sedan medlemskapsändringar har replikerats fullständigt bland domänkontrollanter).
+> När du tar bort en medlem från en privat grupp tar det 5 minuter innan personen blockeras från gruppen.
 
-1. Gå till sidan grupper i administrations centret **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
+1. Gå till sidan [**aktiva grupper**](https://admin.microsoft.com/Adminportal/Home?#/groups) i administrations centret.  
 
-2. Välj ett grupp namn.
+2. Klicka på ett grupp namn.
 
-3. Välj **Visa alla och hantera medlemmar**på fliken **medlemmar** i informations fönstret.
+3. Välj **Visa alla och hantera medlemmar** på fliken **medlemmar** i informations fönstret.
 
 4. Markera kryss rutan X bredvid medlemmen du vill ta bort.
 
@@ -80,25 +77,25 @@ Personen som skapade gruppen är som standard gruppägare. Grupper har ofta fler
   
 ### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a>Befordra en medlem till ägar status i Admin Center
 
-1. Gå till sidan grupper i administrations centret **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
+1. Gå till sidan [**aktiva grupper**](https://admin.microsoft.com/Adminportal/Home?#/groups) i administrations centret.  
 
-2. Välj ett grupp namn.
+2. Klicka på ett grupp namn.
 
-3. Välj **Visa alla och hantera ägare**på fliken **medlemmar** i informations fönstret.
+3. Välj **Visa alla och hantera ägare** på fliken **medlemmar** i informations fönstret.
 
-4. Sök efter en medlem eller Välj **Lägg till ägare**.
+4. Välj **Lägg till ägare**.
 
 5. Markera kryss rutan bredvid namnet på den medlem som du vill lägga till.
 
-6. Välj **Spara**och sedan **Stäng**.
+6. Välj **Spara** och sedan **Stäng**.
 
 ### <a name="remove-owner-status-in-the-admin-center"></a>Ta bort ägar status i administrations centret
 
-1. Gå till sidan grupper i administrations centret **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
+1. Gå till sidan [**aktiva grupper**](https://admin.microsoft.com/Adminportal/Home?#/groups) i administrations centret.  
 
-2. Välj ett grupp namn.
+2. Klicka på ett grupp namn.
 
-3. Välj **Visa alla och hantera ägare**på fliken **medlemmar** i informations fönstret.
+3. Välj **Visa alla och hantera ägare** på fliken **medlemmar** i informations fönstret.
 
 4. Välj X bredvid ägarens namn.
 
@@ -108,7 +105,7 @@ Personen som skapade gruppen är som standard gruppägare. Grupper har ofta fler
 
 - [Hantera grupper dynamiskt i Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=847632): mer information finns i avsnittet "Hur kan jag hantera medlemskapet för en grupp dynamiskt?"
 
-- Om du vill lägga till hundratals eller tusentals användare i grupper använder du [unifiedgrouplinkshttps](https://go.microsoft.com/fwlink/p/?LinkId=616191).
+- Om du vill lägga till hundratals eller tusentals användare i grupper använder du [unifiedgrouplinkshttps](https://docs.microsoft.com/powershell/module/exchange/add-unifiedgrouplinks).
 
 - [Tilldela en ny ägare till en överbliven grupp](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 

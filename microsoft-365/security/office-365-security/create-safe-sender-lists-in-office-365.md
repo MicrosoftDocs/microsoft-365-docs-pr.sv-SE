@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa om tillgängliga och önskade alternativ för att tillåta inkommande meddelanden i Exchange Online Protection (EOP).
-ms.openlocfilehash: 71c413cdf3f9a189420c33953d7bce41362ab6a9
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 38f1ab2451191dd63d5738075dbf42f8201a34ca
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616638"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659910"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Skapa listor med säkra avsändare i EOP
 
@@ -47,7 +47,7 @@ Reglerna för e-postflöden gör det möjligt att se till att endast rätt medde
 >
 > - Om du vill tillåta att en domän skickar overifierad e-post (kringgå skydd mot förfalskning) men inte kringgår kontroll av skräp post och skadlig program vara, kan du lägga till den i [AllowedToSpoof Safe Sender List](walkthrough-spoof-intelligence-insight.md)
 >
-> - EOP och Outlook inspekterar olika meddelande egenskaper för att bestämma meddelandets avsändare. Mer information finns i avsnittet [om att skicka e-post](#considerations-for-bulk-email) längre ned i det här avsnittet.
+> - EOP och Outlook inspekterar olika meddelande egenskaper för att bestämma meddelandets avsändare. Mer information finns i avsnittet [om att skicka e-post](#considerations-for-bulk-email) längre ned i den här artikeln.
 
 Däremot har du flera alternativ för att blockera e-post från specifika källor med _spärrade avsändare_. Mer information finns i artikeln om att [skapa listor över blockerade avsändare i EOP](create-block-sender-lists-in-office-365.md).
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa, skapa, ändra och ta bort utgående skräp post principer i Exchange Online Protection (EOP).
-ms.openlocfilehash: 237703d9ad6ed652a3feb4dda57a7af0e99240f7
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 0deafe2817c3e10371b02349aca2612af090af65
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614946"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659708"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurera utgående skräp post filtrering i EOP
 
@@ -51,7 +51,7 @@ Skillnaden mellan dessa två element är inte uppenbar när du hanterar utgåend
 - När du ändrar en princip kan inställningar som är relaterade till namn, prioritet, aktiverade eller inaktiverade och mottagar filter ändra regeln för utgående skräp post filter. Alla andra inställningar ändrar den associerade filtret för skräp post filter.
 - När du tar bort en princip tas regeln för utgående skräp post bort och den associerade filtrerings principen för utgående e-post raderas.
 
-I Exchange Online PowerShell eller fristående EOP PowerShell hanterar du policyn och regeln separat. Mer information finns i [använda Exchange Online PowerShell eller fristående EOP PowerShell för att konfigurera avsnittet för principer för skräp post](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies) .
+I Exchange Online PowerShell eller fristående EOP PowerShell hanterar du policyn och regeln separat. Mer information finns i [använda Exchange Online PowerShell eller fristående EOP PowerShell för att konfigurera avsnittet för principer för skräp post](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies) senare i den här artikeln.
 
 Varje organisation har inbyggd princip för skräp post som heter standard och har följande egenskaper:
 
@@ -158,7 +158,7 @@ Om du skapar en anpassad princip för utgående e-post i säkerhets & Compliance
 
      - **Ingen åtgärd, endast meddelande**: e-postaviseringar skickas.
 
-6. Skriver Expandera avsnittet **Automatic Forwarding** för att styra automatisk vidarebefordran av e-post till externa avsändare. Mer information om automatisk vidarebefordran finns i [Konfigurera e-postvidarekoppling](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding).
+6. Skriver Expandera avsnittet **Automatic Forwarding** för att styra automatisk vidarebefordran av e-post till externa avsändare. Mer information finns i [styra automatisk extern e-postvidarebefordran i Microsoft 365](external-email-forwarding.md).
 
    > [!NOTE]
    >
@@ -166,7 +166,7 @@ Om du skapar en anpassad princip för utgående e-post i säkerhets & Compliance
    >
    > - De här inställningarna gäller endast för molnbaserade post lådor.
    >
-   > - När automatisk vidarebefordran är inaktive rad kommer mottagaren att få en rapport om utebliven leverans (kallas även för ett NDR-eller studs meddelande) om externa avsändare skickar e-post till en post låda som har vidarebefordran. Om e-postmeddelandet skickas av en intern avsändare får avsändaren.
+   > - När automatisk vidarebefordran är inaktive rad kommer mottagaren att få en rapport om utebliven leverans (kallas även för ett NDR-eller studs meddelande) om externa avsändare skickar e-post till en post låda som har vidarebefordran. Om meddelandet skickas av en intern avsändare **och** metoden för vidarebefordran av [e-post](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (kallas även för SMTP- _vidarebefordran_) kommer den interna avsändaren att få NDR-rapporten. Intern avsändaren får inte en NDR om vidarebefordran skedde på grund av en regel för Inkorgen.
 
    De tillgängliga värdena är:
 
@@ -396,7 +396,7 @@ Detaljerad information om syntax och parametrar finns i [Get-HostedOutboundSpamF
 
 ### <a name="use-powershell-to-modify-outbound-spam-filter-policies"></a>Använda PowerShell för att ändra principer för utgående skräp post filter
 
-Samma inställningar är tillgängliga när du ändrar en filter princip för skadlig kod i PowerShell som när du skapar principen enligt beskrivningen i [steg 1: använda PowerShell för att skapa en regel för utgående skräp post filter](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) tidigare i det här avsnittet.
+Samma inställningar är tillgängliga när du ändrar en filter princip för skadlig kod i PowerShell som när du skapar principen enligt beskrivningen i [steg 1: använda PowerShell för att skapa en regel för utgående skräp post filter](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) tidigare i den här artikeln.
 
 > [!NOTE]
 > Du kan inte byta namn på en filter princip för utgående e-post (cmdleten **set-HostedOutboundSpamFilterPolicy** , saknar _namn_ parameter). När du byter namn på en utgående skräp post policy i säkerhets & Compliance Center byter du bara namn på _regeln_ för utgående skräp post filter.
@@ -413,7 +413,7 @@ Detaljerad information om syntax och parametrar finns i [set-HostedOutboundSpamF
 
 Den enda inställning som inte är tillgänglig när du ändrar en utgående regel för skräp post filter i PowerShell är den _aktiverade_ parametern som gör att du kan skapa en inaktive rad regel. Information om hur du aktiverar eller inaktiverar befintliga regler för skräp post filter finns i nästa avsnitt.
 
-Annars är inga ytterligare inställningar tillgängliga när du ändrar en utgående filter regel för skräp post i PowerShell. Samma inställningar är tillgängliga när du skapar en regel enligt beskrivningen i [steg 2: använda PowerShell för att skapa en utgående filter regel för skräp post](#step-2-use-powershell-to-create-an-outbound-spam-filter-rule) i det här avsnittet.
+Annars är inga ytterligare inställningar tillgängliga när du ändrar en utgående filter regel för skräp post i PowerShell. Samma inställningar är tillgängliga när du skapar en regel enligt beskrivningen i [steg 2: använda PowerShell för att skapa en regel för utgående skräp post filter](#step-2-use-powershell-to-create-an-outbound-spam-filter-rule) i den här artikeln.
 
 Om du vill ändra en regel för utgående skräp post använder du följande syntax:
 

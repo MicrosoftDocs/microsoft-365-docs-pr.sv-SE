@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om Safe-dokument i Microsoft 365 E5 eller Microsoft 365 E5 Security.
-ms.openlocfilehash: 7fbee440298aea3609665b62a946ae3ce2857e37
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0acb5d4ee0c80deebc4d0b040b046d63037037a7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845486"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659879"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Säkra dokument i Microsoft 365 E5
 
@@ -37,9 +37,18 @@ Säkra dokument är en funktion i Microsoft 365 E5-eller Microsoft 365 E5-säker
 
 - Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com>. Om du vill gå direkt till sidan **betrodda säkerhets** meddelanden via ATP öppnar du <https://protection.office.com/safeattachmentv2> .
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Du måste tilldelas behörigheter innan du kan utföra procedurerna i det här avsnittet. För att aktivera och konfigurera säkra dokument måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** . Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
+- Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
+  - För att konfigurera inställningar för säkra dokument måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** .
+  - För skrivskyddad åtkomst till inställningar för säkra dokument måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** .
+
+  Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
+
+  **Anmärkningar**:
+
+  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
 ### <a name="how-does-microsoft-handle-your-data"></a>Hur hanterar Microsoft dina data?
 
@@ -53,9 +62,9 @@ Filer som skickas av säkra dokument behålls inte i Defender utöver den tid so
 
 2. I de **globala inställningarna** som visas konfigurerar du följande inställningar:
 
-   - **Aktivera säkra dokument för Office-klienter** : flytta växlings knappen till höger för att aktivera funktionen: ![ slå på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Aktivera säkra dokument för Office-klienter**: flytta växlings knappen till höger för att aktivera funktionen: ![ slå på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
 
-   - **Tillåt att personer klickar via skyddad vy även om säkra dokument identifierar filen som skadlig** : Vi rekommenderar att du låter det här alternativet vara avstängt (Stäng av växlings knappen till vänster: ![ Växla av ](../../media/scc-toggle-off.png) ).
+   - **Tillåt att personer klickar via skyddad vy även om säkra dokument identifierar filen som skadlig**: Vi rekommenderar att du låter det här alternativet vara avstängt (Stäng av växlings knappen till vänster: ![ Växla av ](../../media/scc-toggle-off.png) ).
 
    Klicka på **Spara** när du är klar.
 
@@ -84,7 +93,7 @@ Detaljerad information om syntax och parametrar finns i [set-AtpPolicyForO365](h
 
 Gör något av följande om du vill kontrol lera att du har aktiverat och konfigurerat säkra dokument:
 
-- I säkerhets & Compliance Center går du till **Threat Management** \> **policy** för inkommande \> **bifogade filer** , klickar på **globala inställningar** och verifierar alternativet **Aktivera säkra dokument för Office-klienter** och **tillåter att personer klickar via skyddad vy även om säkra dokument identifierar filen som skadlig** inställningar.
+- I säkerhets & Compliance Center går du till **Threat Management** \> **policy** för inkommande \> **bifogade filer**, klickar på **globala inställningar** och verifierar alternativet **Aktivera säkra dokument för Office-klienter** och **tillåter att personer klickar via skyddad vy även om säkra dokument identifierar filen som skadlig** inställningar.
 
 - Kör följande kommando i Exchange Online PowerShell och kontrol lera egenskapsvärdena:
 

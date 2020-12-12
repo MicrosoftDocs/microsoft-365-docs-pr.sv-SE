@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om de avancerade inställningarna för skräp post filter (ASF) som är tillgängliga i principer för skräp post överföring i Exchange Online Protection (EOP).
-ms.openlocfilehash: 3ac2b45cc03327f47bd73efe54e78312cbda4bb6
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 92d5e58937b539bf2be8d6d2c541f985562b7007
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615258"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659624"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Avancerade inställningar för skräp post filter (ASF) i EOP
 
@@ -42,7 +42,7 @@ I alla Microsoft 365-organisationer är det avancerade skräp post filtret (ASF)
 >
 > - Det finns filtrerade meddelanden i karantänen.
 >
-> - Specifika `X-CustomSpam:` X-huvudfält som läggs till i meddelanden enligt beskrivningen i det här avsnittet.
+> - Specifika `X-CustomSpam:` X-huvudfält som läggs till i meddelanden enligt beskrivningen i den här artikeln.
 
 I följande avsnitt beskrivs de ASF-inställningar och-alternativ som är tillgängliga i principer för skydd mot skräp post i säkerhets & Compliance Center och i Exchange Online PowerShell eller fristående EOP PowerShell ([ny-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy) och [set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)). Mer information finns i [Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md).
 

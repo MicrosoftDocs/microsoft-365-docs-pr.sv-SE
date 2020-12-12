@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära dig hur du konfigurerar anslutnings filtrering i Exchange Online Protection (EOP) för att tillåta eller blockera e-postservrar.
-ms.openlocfilehash: a2a755516f029f5d72016e9ea8fcb87a997d5065
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 844b1d8d17a99bbb0c441be511c64a009b8dafcb
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572831"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659819"
 ---
 # <a name="configure-connection-filtering"></a>Konfigurera anslutningsfiltrering
 
@@ -32,7 +32,7 @@ ms.locfileid: "49572831"
 
 Om du är Microsoft 365-kund med post lådor i Exchange Online eller på en fristående Exchange Online Protection (EOP)-kund utan Exchange Online-postlådor, använder du anslutnings filtrering i EOP (specifikt en standard princip för anslutnings filter) för att identifiera godkända e-postservrar med deras IP-adresser. Huvud komponenterna i standard princip för anslutnings filter är:
 
-- **IP-lista**: hoppa över skräp post filtrering för alla inkommande meddelanden från de käll-e-postservrar som du anger via IP-adress eller IP-adressintervall. Om du har problem med att skicka skräp post från dessa källor kan du läsa de [scenarier där meddelanden från källor i listan IP-adresser fortfarande är filtrerat](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) i det här avsnittet. Mer information om hur listan över tillåtna IP-adresser ska placeras i den övergripande strategin för säker avsändare finns i [skapa säkra avsändare listor i EOP](create-safe-sender-lists-in-office-365.md).
+- **IP-lista**: hoppa över skräp post filtrering för alla inkommande meddelanden från de käll-e-postservrar som du anger via IP-adress eller IP-adressintervall. Om du har problem med att skicka skräp post från dessa källor kan du läsa de [scenarier där meddelanden från källor i listan IP-adresser fortfarande är filtrerat](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) i den här artikeln. Mer information om hur listan över tillåtna IP-adresser ska placeras i den övergripande strategin för säker avsändare finns i [skapa säkra avsändare listor i EOP](create-safe-sender-lists-in-office-365.md).
 
 - **IP-blockeringslistan**: blockera alla inkommande meddelanden från de käll-e-postservrar som du anger via IP-adress eller IP-adressintervall. Inkommande meddelanden avvisas, har inte marker ATS som skräp post och ingen ytterligare filtrering sker. Mer information om hur IP-blockeringslistan får plats i den övergripande strategin för blockerade avsändare finns i [skapa block avsändare i EOP](create-block-sender-lists-in-office-365.md).
 
@@ -47,9 +47,9 @@ I det här avsnittet beskrivs hur du konfigurerar standard princip för anslutni
 
 - Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till **Inställningar för skräppostskydd** använder du <https://protection.office.com/antispam>.
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Du måste tilldelas behörigheter i säkerhets & Compliance Center innan du kan göra det i den här artikeln:
+- Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
   - Om du vill ändra standard princip för anslutnings filter måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** .
   - Om du vill ha skrivskyddad åtkomst till standard anslutnings filter principen måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** .
 
@@ -57,8 +57,8 @@ I det här avsnittet beskrivs hur du konfigurerar standard princip för anslutni
 
   **Anmärkningar**:
 
-  - Om du lägger till användare i motsvarande Azure Active Directory-roll i Microsoft 365 Admin Center får användarna den behörighet som krävs för säkerhets & efterlevnad Center _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Roll gruppen **organisations hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
+  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
 - Om du vill ta reda på käll-IP-adresserna för de e-postservrar (avsändare) som du vill tillåta eller blockera kan du kontrol lera värdet för **CIP**-huvudet i meddelande huvudet. Information om hur du visar meddelande huvudet i olika e-postklienter finns i [Visa Internet meddelande rubriker i Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
@@ -82,7 +82,7 @@ I det här avsnittet beskrivs hur du konfigurerar standard princip för anslutni
 
      - IP-intervall: till exempel 192.168.0.1-192.168.0.254.
 
-     - CIDR-IP: till exempel 192.168.0.1/25. Giltiga nätverks mask värden är/24 till/med/32. Om du vill hoppa över skräp post filtrering för CIDR-värden för IP-mask/1 till/23 kan du läsa avsnittet [hoppa över skräp post filtrering för en CIDR-IP utanför området för tillgängliga områden](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) senare i det här avsnittet.
+     - CIDR-IP: till exempel 192.168.0.1/25. Giltiga nätverks mask värden är/24 till/med/32. Om du vill hoppa över skräp post filtrering för CIDR-värden för IP-mask/1 till/23 kan du läsa avsnittet [hoppa över skräp post filtrering för en CIDR-IP utanför det tillgängliga området](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) i den här artikeln.
 
      Om du vill lägga till IP-adressen eller adress intervallet klickar du på **Lägg** till ![ ikonen Lägg till ](../../media/ITPro-EAC-AddIcon.png) . Om du vill ta bort en post markerar du posten i den **tillåtna IP-adressen** och klickar sedan på **ta bort** ![ borttagning ](../../media/scc-remove-icon.png) . Klicka på **Spara** när du är klar.
 
@@ -160,7 +160,7 @@ I följande avsnitt hittar du ytterligare objekt som du måste känna till när 
 
 ### <a name="skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range"></a>Hoppa över skräp post filtrering för en CIDR-IP utanför det tillgängliga intervallet
 
-Som beskrivs tidigare i det här avsnittet kan du bara använda en CIDR-IP med nätverks masken/24 till/32 i listan över tillåtna IP-adresser. Om du vill hoppa över skräp post filtrering för meddelanden från käll-e-postservrar i området/1 till/med 23 måste du använda regler för Exchange-flöden (kallas även transport regler). Men vi rekommenderar att du inte gör det om det skulle vara möjligt eftersom meddelanden blockeras om en IP-adress i en/ett-till-23-CIDR-adressintervall visas på någon av Microsofts patentskydd eller tredje parts block listor.
+Enligt beskrivningen ovan kan du bara använda en CIDR-IP med nätverks masken/24 till/32 i listan över tillåtna IP-adresser. Om du vill hoppa över skräp post filtrering för meddelanden från käll-e-postservrar i området/1 till/med 23 måste du använda regler för Exchange-flöden (kallas även transport regler). Men vi rekommenderar att du inte gör det om det skulle vara möjligt eftersom meddelanden blockeras om en IP-adress i en/ett-till-23-CIDR-adressintervall visas på någon av Microsofts patentskydd eller tredje parts block listor.
 
 Nu när du är helt medveten om möjliga problem kan du skapa en regel för e-postflöde med följande inställningar (minst) för att säkerställa att meddelanden från följande IP-adresser åsidosätter skräp post filtrering:
 
