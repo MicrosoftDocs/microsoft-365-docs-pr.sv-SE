@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 034bd7bc-b098-4c4d-8a93-4d74ff24532a
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Yahoo! Small Business för Microsoft.
-ms.openlocfilehash: 3c6bc44baef4924133ea2308189662dd53399689
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 47b3b1f3a6e889d067d0166f872725aa3812a7b4
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645605"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656909"
 ---
 # <a name="create-dns-records-at-yahoo-small-business-for-microsoft"></a>Skapa DNS-poster på Yahoo! Small Business för Microsoft
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 Om Yahoo! Small Business har varit din DNS-värd bör du vara medveten om att din leverantör nu är Aabaco Small Business.
   
@@ -45,7 +45,7 @@ Du måste skapa ditt Aabaco-konto innan du kan [Skapa DNS-poster](../get-help-wi
     
     ![Välj Konfigurera ditt Aabaco-konto för småföretag](../../media/d708f272-d42f-40a1-9aaf-d05d8cfd55cf.png)
   
-2. Ange ditt Yahoo! E- **post-ID**för Small Business och välj sedan **Jag är inte en robot**.
+2. Ange ditt Yahoo! E- **post-ID** för Small Business och välj sedan **Jag är inte en robot**.
     
     ![Select I am not a robot](../../media/ded4b5dd-4e04-4baa-ae31-8426b5799151.png)
   
@@ -71,7 +71,7 @@ Du måste skapa ditt Aabaco-konto innan du kan [Skapa DNS-poster](../get-help-wi
   
     ![The Choose your password page](../../media/cc592345-72d1-4a41-9410-a1f3345cfd1d.png)
   
-7. Välj **Jag accepterar villkoren och**Välj sedan **skapa lösen ord**.
+7. Välj **Jag accepterar villkoren och** Välj sedan **skapa lösen ord**.
     
     ![Välj Skapa lösen ord](../../media/434aa6a3-076e-4abf-a9cf-31145786e819.png)
   

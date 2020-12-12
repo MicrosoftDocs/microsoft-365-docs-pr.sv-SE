@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Administratörer kan läsa mer om hur du installerar ett fristående Exchange Online Protection (EOP) för att skydda lokala e-postmiljöer.
-ms.openlocfilehash: ab34d715bd8196bb2376926402f6a88018d1d7ae
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 2d63057e77e6965616e19452de824a94ba0ccda8
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615678"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659423"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Konfigurera din fristående EOP-tjänst
 
@@ -29,7 +29,7 @@ ms.locfileid: "49615678"
 I det här avsnittet förklaras hur du konfigurerar fristående Exchange Online Protection (EOP). Om du kommer hit från guiden Office 365-domäner går du tillbaka till guiden för Office 365-domäner om du inte vill använda Exchange Online Protection. Om du vill ha mer information om hur du konfigurerar anslutningar kan du läsa [Konfigurera e-postflöde med kopplingar i Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 > [!NOTE]
-> I det här avsnittet förutsätts det att du har lokala post lådor och du vill skydda dem med EOP, som kallas ett fristående scenario. Om du vill hantera alla dina post lådor i molnet med Exchange Online behöver du inte utföra alla steg i det här avsnittet. Gå till [Jämför Exchange Online-abonnemang](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) för att registrera dig och köpa moln post lådor.
+> I det här avsnittet förutsätts det att du har lokala post lådor och du vill skydda dem med EOP, som kallas ett fristående scenario. Om du vill hantera alla dina post lådor i molnet med Exchange Online behöver du inte göra alla steg i den här artikeln. Gå till [Jämför Exchange Online-abonnemang](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) för att registrera dig och köpa moln post lådor.
 >
 > Om du vill använda en del av dina post lådor på lokala platser och i molnet, kallas detta ett hybrid scenario. Det kräver mer avancerade inställningar för e-postflöde. Med [hybrid distributioner av Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid) förklaras hybrid meddelanden och länkar till resurser som visar hur du ställer in det.
 
@@ -37,11 +37,11 @@ I det här avsnittet förklaras hur du konfigurerar fristående Exchange Online 
 
 - Uppskattad tid för att slutföra uppgiften: 1 timme
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Specifikt behöver du rollen Remote och godkände Domains, som tilldelats roll grupperna MailFlowAdministrator och i (globala administratörer). Mer information finns i [behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd UK för att ändra listan över medlemmar i roll grupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Du måste ha behörighet i Exchange Online Protection innan du kan göra det i den här artikeln. Specifikt behöver du rollen **Remote och godkände Domains** , som tilldelats roll grupperna **organisations hantering** (globala administratörer) och **administratör för e-postflöde** . Mer information finns i [behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd UK för att ändra listan över medlemmar i roll grupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Om du inte har registrerat dig för EOP kan du gå till [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection) och välja att köpa eller prova tjänsten.
 
-- Information om tangent bords gen vägar som kan gälla för procedurerna i det här avsnittet finns i kortkommandon [för administrations centret för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Information om kortkommandon som kan gälla för procedurerna i den här artikeln finns i kortkommandon [för administrations centret för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Har du problem? Be om hjälp i [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.

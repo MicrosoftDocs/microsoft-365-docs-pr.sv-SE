@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 50f334a055a5bd974f9ea1f39c8fa38d44be9c26
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: f01e918d35ce77d9239c200355c7b4c48c9e2b84
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131284"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659327"
 ---
 # <a name="run-your-pilot-microsoft-365-defender-project"></a>Kör ditt pilot Microsoft 365 Defender Project 
 
@@ -35,7 +35,13 @@ ms.locfileid: "49131284"
 **Gäller för:**
 - Microsoft 365 Defender
 
-För att effektivt fastställa fördelarna och antagandet av Microsoft 365 Defender kan du köra ett pilot projekt. Innan du aktiverar Microsoft 365 Defender i produktions miljön och startar dina användnings fall är det bäst att planera för att bestämma vilka uppgifter som ska utföras för pilot projektet och hur du ställer in framgång. 
+
+Med den här guiden får du hjälp att köra ett pilot projekt genom att ange att du har ett välstrukturerat abonnemang och du kan använda funktionen för att hantera anslags verktyget och slutligen ingå piloten med de viktiga anvisningarna.
+
+![Faser i en Microsoft 365 Defender pilot](../../media/pilotphases.png)
+
+
+Genom att använda en pilot kan du effektivt bestämma fördelarna med adoptiing Microsoft 365 Defender. Innan du aktiverar Microsoft 365 Defender i produktions miljön och startar dina användnings fall är det bäst att planera för att bestämma vilka uppgifter som ska utföras för pilot projektet och hur du ställer in framgång. 
 
 
 ## <a name="how-to-use-this-pilot-playbook"></a>Så här använder du pilot Playbook
@@ -52,7 +58,7 @@ Microsoft 365 Defender är ett enhetligt för hands versions paket med för-och 
 
 Med den integrerade Microsoft 365 Defender-lösningen kan säkerhets experter koppla ihop hotet om att Microsoft Defender för slut punkt, Microsoft Defender för Office 365, Microsoft Defender för identitet och Microsoft Cloud App Security tar emot och fastställer det fulla scopet och effekten av hotet, hur det kommer att påverkas och hur det påverkar organisationen. Microsoft 365 Defender vidtar automatisk åtgärd för att förhindra eller stoppa angreppet och själv läka berörda post lådor, slut punkter och användar identiteter. Mer information finns i [Microsoft 365 Defender-översikten](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) .
 
-![Faser i en Microsoft 365 Defender pilot](../../media/pilotphases.png)
+
 
 Följande exempel tids linje varierar beroende på om du har rätt resurser i din miljö. Vissa identifieringar och arbets flöden kan behöva mer inlärnings tid än de andra.
 

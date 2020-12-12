@@ -18,19 +18,19 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du hittar och använder e-postsäkerhets rapporter för organisationen. Säkerhets rapporter för e-post finns i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ab78f17cd5689f9110227762c149d3691433179
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: e98e59d39744d67427a272f456a03fc123034aa7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572567"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659483"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visa rapporter om e-postsäkerhet i Säkerhets- och efterlevnadscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Det finns en mängd olika rapporter i [säkerhets & Compliance Center](https://protection.office.com) som hjälper dig att se hur säkerhetsfunktionerna för e-post, till exempel skydd mot skräp post, mot skadlig program vara och krypterings funktioner i Microsoft 365 som skyddar din organisation. Om du har [nödvändig behörighet](#what-permissions-are-needed-to-view-these-reports)kan du visa dessa rapporter i säkerhets & Compliance Center genom att gå till **Reports** \> **instrument panelen** för rapporter. Öppna för att gå direkt till instrument panelen rapporter <https://protection.office.com/insightdashboard> .
+Det finns en mängd olika rapporter i [säkerhets & Compliance Center](https://protection.office.com) som hjälper dig att se hur säkerhetsfunktionerna för e-post, till exempel skydd mot skräp post, mot skadlig program vara och krypterings funktioner i Microsoft 365 som skyddar din organisation. Om du har [nödvändig behörighet](#what-permissions-are-needed-to-view-these-reports)kan du visa dessa rapporter i säkerhets & Compliance Center genom att gå till  \> **instrument panelen** för rapporter. Öppna för att gå direkt till instrument panelen rapporter <https://protection.office.com/insightdashboard> .
 
 ![Instrument panel för rapporter i centret för säkerhets &](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -45,7 +45,7 @@ Rapporten **äventyrade användare** visar antalet användar konton som marker A
 
 I vyn mängd visas data för de senaste 90 dagarna och detaljvyn visar data för de senaste 30 dagarna.
 
-Om du vill visa rapporten öppnar du [säkerhets & Compliance Center](https://protection.office.com), går till **Reports** \> **instrument paneler** för rapporter och väljer **användare med kompromissade**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=CompromisedUsers> .
+Om du vill visa rapporten öppnar du [säkerhets & Compliance Center](https://protection.office.com), går till  \> **instrument paneler** för rapporter och väljer **användare med kompromissade**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=CompromisedUsers> .
 
 Du kan filtrera både diagrammet och informations tabellen genom att klicka på **filter** och välja ett eller flera av följande värden:
 
@@ -61,7 +61,7 @@ Om du klickar på **Visa informations tabell** kan du se följande uppgifter:
 
 - **Skapelse tid**
 - **Användar-ID**
-- **Fattning**
+- **Åtgärd**
 
 Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
 
@@ -148,7 +148,7 @@ I **rapporten flödes** schema visas information om skadlig program vara, skräp
 
  Med filtret mängd filter kan du använda 90 dagar, men det går bara att filtrera tabellen med information i 10 dagar.
 
-Om du vill visa rapporten öppnar du [säkerhets & efterlevnad](https://protection.office.com), går till **Reports** \> **instrument paneler** för rapporter och väljer **identifiering av skadlig kod i e-post**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=MalwareDetections> .
+Om du vill visa rapporten öppnar du [säkerhets & efterlevnad](https://protection.office.com), går till  \> **instrument paneler** för rapporter och väljer **identifiering av skadlig kod i e-post**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=MalwareDetections> .
 
 ![Identifiering av skadlig program vara i e-postwidget på rapport instrument panelen](../../media/malware-detections-widget.png)
 
@@ -186,7 +186,7 @@ I rapporten **skräp identifiering** visas skräp post meddelanden som blockeras
 
 I den sammanslagna vyn kan du filtrera 90 dagar medan tabellen information tillåter filtrering i tio dagar.
 
-Om du vill visa rapporten öppnar du [säkerhets & Compliance Center](https://protection.office.com), går till **Reports** \> **instrument paneler** för rapporter och väljer **skräp identifiering**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=SpamDetections> .
+Om du vill visa rapporten öppnar du [säkerhets & Compliance Center](https://protection.office.com), går till  \> **instrument paneler** för rapporter och väljer **skräp identifiering**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=SpamDetections> .
 
 ![Widget för skräp post identifiering i instrument panelen rapporter](../../media/spam-detections-report-widget.png)
 
@@ -228,7 +228,7 @@ Om du klickar på **Visa informations tabell** i en rapportvy visas följande in
 - **Avsändarens adress**
 - **Mottagarens adress**
 - **Händelse typ**
-- **Fattning**
+- **Åtgärd**
 - **Ämne**
 
 Om du klickar på **filter** i en informations tabell kan du ändra resultatet med följande filter:
@@ -267,7 +267,7 @@ Om du klickar på **Visa informations tabell** kan du se följande uppgifter:
 - **Falsk avsändare**
 - **Sant avsändare**
 - **Avsändarens IP**
-- **Fattning**
+- **Åtgärd**
 - **Antal meddelanden**
 
 Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
@@ -280,7 +280,7 @@ I rapporten får du räknat antalet e-postmeddelanden med skadligt innehåll, ti
 
 **Obs!** det är viktigt att förstå att om ett meddelande skickas till fem mottagare räknas det som fem olika meddelanden och inte ett meddelande.
 
-Om du vill visa rapporten öppnar du [säkerhets & efterlevnad](https://protection.office.com), går till **Reports** \> **instrument paneler** för rapporter och väljer **skydds status**. Om du vill gå direkt till rapporten öppnar du en av följande webb adresser:
+Om du vill visa rapporten öppnar du [säkerhets & efterlevnad](https://protection.office.com), går till  \> **instrument paneler** för rapporter och väljer **skydds status**. Om du vill gå direkt till rapporten öppnar du en av följande webb adresser:
 
 - Microsoft Defender för Office 365: <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
 - EOP <https://protection.office.com/reportv2?id=TPSAggregateReport>
@@ -458,7 +458,7 @@ Om du klickar på **Visa informations tabell** beror informationen som visas på
 
 Den **översta program varan** rapporterar visar de olika typer av skadlig kod som identifieras av [skydd mot skadlig program vara i EOP](anti-malware-protection.md).
 
-Om du vill visa rapporten öppnar du [säkerhets & Compliance Center](https://protection.office.com), går till **Reports** \> **instrument paneler** för rapporter och väljer **högsta skadliga program vara**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=TopMalware> .
+Om du vill visa rapporten öppnar du [säkerhets & Compliance Center](https://protection.office.com), går till  \> **instrument paneler** för rapporter och väljer **högsta skadliga program vara**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=TopMalware> .
 
 ![Widgeten Top skadlig kod på instrument panelen rapporter](../../media/top-malware-report-widget.png)
 
@@ -487,7 +487,7 @@ Information är tillgänglig för varje meddelande, inklusive leverans orsaken, 
 
 Om du vill visa den här rapporten gör du något av följande i avsnittet [säkerhet & regelefterlevnad](https://protection.office.com):
 
-- Gå till instrument panel för **Threat Management** \> **Dashboard** \> **-rapporter**.
+- Gå till instrument panel för **Threat Management** \>  \> **-rapporter**.
 
 - Gå till **Threat Management** \> **Granska** \> **användardefinierade meddelanden**.
 
@@ -498,7 +498,7 @@ Om du vill visa den här rapporten gör du något av följande i avsnittet [säk
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Vilka behörigheter behövs för att visa rapporterna?
 
-För att kunna visa och använda de rapporter som beskrivs i det här avsnittet måste du vara medlem i någon av följande roll grupper i säkerhets & Compliance Center:
+För att kunna visa och använda de rapporter som beskrivs i den här artikeln måste du vara medlem i någon av följande roll grupper i säkerhets & Compliance Center:
 
 - **Organisationshantering**
 - **Säkerhets administratör**

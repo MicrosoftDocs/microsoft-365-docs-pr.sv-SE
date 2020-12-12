@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på CloudFlare för Microsoft.
-ms.openlocfilehash: 301ed156584d9a9a2b84b88db7d6969ade5b34a2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 110bd96c0eecf40ae96efe7055d82a8d12dde607
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646157"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657966"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Skapa DNS-poster på CloudFlare för Microsoft
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 Om Cloudflare är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype for Business Online och så vidare.
   
@@ -81,14 +81,14 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
   
 2. På **Start** sidan väljer du den domän som du vill uppdatera. 
   
-3. Välj **DNS**på sidan **Översikt** för din domän.
+3. Välj **DNS** på sidan **Översikt** för din domän.
 
   
-4. Klicka på **Lägg till post**på sidan **DNS Management** och välj sedan värdena från följande tabell. 
+4. Klicka på **Lägg till post** på sidan **DNS Management** och välj sedan värdena från följande tabell. 
     
     |**Type (typ)**|**Name (namn)**|**Automatic TTL (automatisk TTL)**|**Innehåll**|
     |:-----|:-----|:-----|:----|
-    |TXT  <br/> |@  <br/> |30 minuter  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)    |
+    |TXT  <br/> |@  <br/> |30 minuter  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)    |
   
     
 5. Välj **Spara**.
@@ -125,10 +125,10 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 2. På **Start** sidan väljer du den domän som du vill uppdatera. 
   
-3. Välj **DNS**på sidan **Översikt** för din domän.
+3. Välj **DNS** på sidan **Översikt** för din domän.
 
   
-4. Klicka på **Lägg till post**på sidan **DNS Management** och välj sedan värdena från följande tabell. 
+4. Klicka på **Lägg till post** på sidan **DNS Management** och välj sedan värdena från följande tabell. 
     
     |**Type (typ)**|**Namn**|**Mail server (postserver)**|**Prioritet**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
@@ -151,12 +151,12 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 2. På **Start** sidan väljer du den domän som du vill uppdatera. 
   
-3. Välj **DNS**på sidan **Översikt** för din domän.
+3. Välj **DNS** på sidan **Översikt** för din domän.
 
   
 4. Lägg till den första av de fem CNAME-posterna.
     
-    Klicka på **Lägg till post**på sidan **DNS Management** och välj sedan värdena från följande tabell.
+    Klicka på **Lägg till post** på sidan **DNS Management** och välj sedan värdena från följande tabell.
     
     
     |**Type (typ)**|**Namn**|**Mål**|**TTL**|
@@ -187,10 +187,10 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 2. På **Start** sidan väljer du den domän som du vill uppdatera. 
   
-3. Välj **DNS**på sidan **Översikt** för din domän.
+3. Välj **DNS** på sidan **Översikt** för din domän.
 
   
-4. Klicka på **Lägg till post**på sidan **DNS Management** och välj sedan värdena från följande tabell.  
+4. Klicka på **Lägg till post** på sidan **DNS Management** och välj sedan värdena från följande tabell.  
     
     |**Type (typ)**|**Namn**|**TTL**|**Innehåll**|
     |:-----|:-----|:-----|:-----|
@@ -211,11 +211,11 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
       
 2. På **Start** sidan väljer du den domän som du vill uppdatera. 
   
-3. Välj **DNS**på sidan **Översikt** för din domän.
+3. Välj **DNS** på sidan **Översikt** för din domän.
   
 4. Lägg till den första av de två SRV-posterna.
 
-    Klicka på **Lägg till post**på sidan **DNS Management** och välj sedan värdena från den första raden i följande tabell.
+    Klicka på **Lägg till post** på sidan **DNS Management** och välj sedan värdena från den första raden i följande tabell.
         
     |**Type (typ)**|**Service (tjänst)**|**Protocol (protokoll)**|**Namn**|**TTL**|**Prioritet**|**Vikt**|**Port**|**Target (mål)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|

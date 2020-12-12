@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Register.com för Microsoft.
-ms.openlocfilehash: 96ec44875d5bc86f46e4945d4021deb0ca427fed
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dd2f3d516b5309fee85dd572470fe610ff277a68
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645809"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657598"
 ---
 # <a name="create-dns-records-at-registercom-for-microsoft"></a>Skapa DNS-poster på Register.com för Microsoft
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 Om Register.com är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag - Online och så vidare.
   
@@ -69,7 +69,7 @@ Följ stegen nedan eller [titta på videon (börja vid 0:44)](https://support.mi
     
 3. Välj **Hantera**.
     
-4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. Välj sedan **Hantera**på den raden.
+4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. Välj sedan **Hantera** på den raden.
     
 5. Rulla ned till avsnittet **Advanced Technical Settings** och välj **Edit TXT Records (SPF)**.
     
@@ -78,7 +78,7 @@ Följ stegen nedan eller [titta på videon (börja vid 0:44)](https://support.mi
     |||
     |:-----|:-----|
     |**Värdnamn** <br/> |**TXT Record** <br/> |
-    |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
 7. Välj **Fortsätt**.
     
@@ -112,7 +112,7 @@ Följ stegen nedan eller [titta på videon (börja vid 3:32)](https://support.mi
     
 3. Välj **Hantera**.
     
-4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. Välj sedan **Hantera**på den raden.
+4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. Välj sedan **Hantera** på den raden.
     
 5. Bläddra till avsnittet **Advanced Technical Settings** och välj sedan **Edit Mail Exchanger Records**.
     
@@ -151,7 +151,7 @@ Följ stegen nedan eller [titta på videon (börja vid 4:23)](https://support.mi
     
 3. Välj **Hantera**.
     
-4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. Välj sedan **Hantera**på den raden.
+4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. Välj sedan **Hantera** på den raden.
     
 5. Bläddra till avsnittet **Advanced Technical Settings** och välj sedan **Edit Domain aliasing Records**.
     
@@ -197,7 +197,7 @@ Följ stegen nedan eller [titta på videon (börja vid 5:12)](https://support.mi
     
 3. Välj **Hantera**.
     
-4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. Välj sedan **Hantera**på den raden.
+4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. Välj sedan **Hantera** på den raden.
     
 5. Bläddra till avsnittet **Advanced Technical Settings** och välj **Edit TXT Records (SPF)**.
     
@@ -230,7 +230,7 @@ Följ stegen nedan eller [titta på videon (börja vid 5:55)](https://support.mi
     
 3. Välj **Hantera**.
     
-4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. Välj sedan **Hantera**på den raden.
+4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. Välj sedan **Hantera** på den raden.
     
 5. Bläddra till avsnittet **Advanced Technical Settings** och välj **Edit SRV Records**.
     

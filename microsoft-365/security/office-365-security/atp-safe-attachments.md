@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-office365
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om de säkra funktionerna för bifogade filer i Microsoft Defender för Office 365.
-ms.openlocfilehash: d38f95991a1d310e8a894a32e06b5891ebb498a9
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 07e44885a3813ce625c6a853f4070d644a392ded
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616686"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659205"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Säkra bifogade filer i Microsoft Defender för Office 365
 
@@ -69,7 +69,7 @@ I det här avsnittet beskrivs inställningarna i principer för säkra bifogade 
   |**Övervaka**|Skickar meddelanden med bifogade filer och sedan spåras vad som händer med identifiering av skadlig kod. <p> Leverans av säkra meddelanden kan komma att försenas på grund av genomsökning av säkra bifogade filer.|Se var upptäckta skadlig kod hamnar i din organisation.|
   |**Blockera**|Förhindrar att meddelanden som hittas av skadliga program levereras. <p> Meddelanden är i [karantän](manage-quarantined-messages-and-files.md) där endast administratörer (inte slutanvändare) kan granska, släppa eller ta bort meddelanden. <p> Blockerar automatiskt framtida instanser av meddelanden och bifogade filer. <p> Leverans av säkra meddelanden kan komma att försenas på grund av genomsökning av säkra bifogade filer.|Skyddar din organisation från upprepade attacker med samma bifogade filer. <p> Det här är standardvärdet och det rekommenderade värdet i standard-och Strict- [förvalda säkerhets principer](preset-security-policies.md).|
   |**Byter**|Tar bort hittade bifogade filer. <p> Meddelar mottagare om att bifogade filer har tagits bort. <p>  Meddelanden är i [karantän](manage-quarantined-messages-and-files.md) där endast administratörer (inte slutanvändare) kan granska, släppa eller ta bort meddelanden. <p> Leverans av säkra meddelanden kan komma att försenas på grund av genomsökning av säkra bifogade filer.|Öka synligheten för mottagarna att de bifogade filerna har tagits bort på grund av upptäckt skadlig kod.|
-  |**Dynamisk leverans**|Skickar meddelanden direkt men ersätter bifogade filer med plats hållare tills Safe Attachment scanning är klar. <p> Mer information finns i avsnittet [dynamisk leverans i principer för säker bifogade filer](#dynamic-delivery-in-safe-attachments-policies) längre fram i det här avsnittet.|Undvik meddelande fördröjningar när du skyddar mottagare från skadliga filer. <p> Aktivera mottagare för förhands granskning av bifogade filer i fel säkert läge när genomsökning sker.|
+  |**Dynamisk leverans**|Skickar meddelanden direkt men ersätter bifogade filer med plats hållare tills Safe Attachment scanning är klar. <p> Mer information finns i avsnittet [dynamisk leverans i principer för säker bifogade filer](#dynamic-delivery-in-safe-attachments-policies) längre fram i den här artikeln.|Undvik meddelande fördröjningar när du skyddar mottagare från skadliga filer. <p> Aktivera mottagare för förhands granskning av bifogade filer i fel säkert läge när genomsökning sker.|
   |
 
 - **Omdirigera bilaga: Aktivera omdirigera** och **skicka den bifogade filen till följande e-post adress**: för att **blockera**, **övervaka** eller **ersätta** åtgärder kan du skicka meddelanden som innehåller bifogade filer med skadlig kod till angiven intern eller extern e-postadress för analys och undersökning.

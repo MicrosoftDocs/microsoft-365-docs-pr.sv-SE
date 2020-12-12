@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Lär dig hur du köper ett domän namn i Microsoft 365.
-ms.openlocfilehash: f636b9e6afc1e910a6b0c01a58a4e69127c80772
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d8c0bac5921b5cb3efacffdfee3ab948857b8a1f
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645521"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658617"
 ---
 # <a name="buy-a-domain-name"></a>Köpa ett domännamn
 
@@ -42,7 +42,7 @@ ms.locfileid: "48645521"
 
  *För att lägga till, ändra eller ta bort domäner **måste** du vara **Global administratör** för [företags-eller företags abonnemang](https://products.office.com/business/office). Dessa ändringar påverkar hela klient organisationen, *anpassade administratörer* eller *vanliga användare* kommer inte att kunna göra dessa ändringar.*  
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 ### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Logga in och gå till inställnings \> domäner \> köpa en domän
 
@@ -74,7 +74,7 @@ Du kan välja bland följande toppnivådomän för din domän.
     
 
 > [!NOTE]
-> När du väljer **Köp domän**kanske du omdirigeras till din Microsoft-partners webbplats om klient organisationen köps/hanteras via en Microsoft-partner.
+> När du väljer **Köp domän** kanske du omdirigeras till din Microsoft-partners webbplats om klient organisationen köps/hanteras via en Microsoft-partner.
 
 ### <a name="domain-privacy"></a>Domän integritet
 Vi tillhandahåller ett kostnads fritt domän integritets abonnemang med köp av en domän. Då hålls dina kontakt uppgifter kopplade till registreringen av din domän med ICANN privat. [Lära sig mer.](https://whois.icann.org/en/privacy-and-proxy-services)
@@ -128,6 +128,6 @@ När du har registrerat din domän (hos en domän registrator) loggar du in på 
 
 [Lägga till en domän i Microsoft 365](../setup/add-domain.md)
 
-[Vanliga frågor och svar om domäner](../setup/domains-faq.md)
+[Vanliga frågor och svar om domäner](../setup/domains-faq.yml)
 
 [Uppdatera DNS-poster för att behålla din webbplats hos din nuvarande värd](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider).

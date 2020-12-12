@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig hur nollställning av automatisk rensning (ZAP) kan flytta levererade meddelanden retroaktivt i en Exchange Online-postlåda till mappen skräp post eller karantän som kan vara skräp post eller nätfiske.
-ms.openlocfilehash: fd5186bc40d2d80097e6292d86ea113a41e0dd52
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 7b43fb46adacfe1e9f1e7e622122df90e747ff44
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131155"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659435"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Automatisk rensning av nollor (ZAP) i Exchange Online
 

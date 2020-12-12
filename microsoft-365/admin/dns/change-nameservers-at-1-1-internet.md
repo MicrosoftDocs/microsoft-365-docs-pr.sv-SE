@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Lär dig hur du kan konfigurera Office 365 som drivs av 21Vianet för att hantera dina DNS-poster, när 1&1 Internet är DNS-värden.
-ms.openlocfilehash: 8a783be20d2f8dbdb26e9826018f911289b35235
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b363718c7d1d1845117f44317ae9e6b24e9a2e28
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646565"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658038"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>Ändra namnservrar för att konfigurera Microsoft 365 med 1&1 IONOS
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 Följ de här anvisningarna om du vill att Microsoft 365 ska hantera dina DNS-poster för Microsoft 365 åt dig. (Om du vill kan du [hantera alla dina Microsoft 365 DNS-poster på 1&1 IONOS](create-dns-records-at-1-1-internet.md).) 
   
@@ -52,9 +52,9 @@ Följ stegen nedan eller [titta på videon (börja vid 0:42)](https://support.mi
     
 3. Leta reda på den domän som du vill uppdatera på sidan **Domain Center** . Välj sedan **panel** kontrollen ( **v**) för den domänen.
     
-4. Välj **Edit DNS Settings**i området **Domain Settings** .
+4. Välj **Edit DNS Settings** i området **Domain Settings** .
     
-5. Välj **Add Record**i avsnittet **txt and SRV Records** .
+5. Välj **Add Record** i avsnittet **txt and SRV Records** .
     
     (Du kan behöva rulla nedåt.) 
     
@@ -66,9 +66,9 @@ Följ stegen nedan eller [titta på videon (börja vid 0:42)](https://support.mi
 |TXT  <br/> |(Lämna det här fältet tomt.)  <br/> |MS=ms *XXXXXXXX* <br/> **Obs!** det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Microsoft 365. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
-7. Välj **Spara**och sedan **Spara** på nytt. 
+7. Välj **Spara** och sedan **Spara** på nytt. 
     
-8. Välj **Ja**i dialog rutan **Edit DNS Settings** .
+8. Välj **Ja** i dialog rutan **Edit DNS Settings** .
     
 9. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
@@ -105,7 +105,7 @@ Vill du ändra NAMNSERVER posterna så att du kan konfigurera din domän i Micro
     
 3. Leta reda på den domän som du vill uppdatera på sidan **Domain Center** och välj sedan **panel** kontrollen ( **v**) för den domänen.
     
-4. Välj **Edit DNS Settings**i området **Domain Settings** .
+4. Välj **Edit DNS Settings** i området **Domain Settings** .
     
 5. I avsnittet **Name Server Settings** väljer du **Other name servers**.
     
@@ -145,7 +145,7 @@ Vill du ändra NAMNSERVER posterna så att du kan konfigurera din domän i Micro
     
     ![Välja Spara på sidan Name Server Settings](../../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
   
-5. Välj **Ja**i dialog rutan **Edit DNS Settings** .
+5. Välj **Ja** i dialog rutan **Edit DNS Settings** .
     
     ![Välja Spara i dialog rutan Edit DNS Settings](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
@@ -176,7 +176,7 @@ Vill du ändra NAMNSERVER posterna så att du kan konfigurera din domän i Micro
     
     ![Välja Spara på sidan Name Server Settings](../../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
   
-4. Välj **Ja**i dialog rutan **Edit DNS Settings** .
+4. Välj **Ja** i dialog rutan **Edit DNS Settings** .
     
     ![Välja Spara i dialog rutan Edit DNS Settings](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   

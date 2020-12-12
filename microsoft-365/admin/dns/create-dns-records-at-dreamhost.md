@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9c0812e0-908b-4b41-a64b-77f0dbd3db7a
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Dreamhost för Microsoft.
-ms.openlocfilehash: 8ab617fd5d63b292a85289d2d51a0ae0fd3b26be
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2faf7cae1fd9a0f9308e303c0588958e56b223e1
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646205"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658129"
 ---
 # <a name="create-dns-records-at-dreamhost-for-microsoft"></a>Skapa DNS-poster på Dreamhost för Microsoft
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 Om DreamHost är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Lync och så vidare.
  
@@ -52,7 +52,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
     ![Dreamhost-BP-Configure-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
-2. Välj **domäner**på sidan **instrument panel** och sedan **hantera domäner**.
+2. Välj **domäner** på sidan **instrument panel** och sedan **hantera domäner**.
     
     ![Dreamhost-BP-Configure-1-2](../../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
   
@@ -68,7 +68,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
     |**Name**|**Typ**|**Värde**|**Kommentar**|
     |:-----|:-----|:-----|:-----|
-    |(Lämna det här fältet tomt.)  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |(Det här fältet är valfritt.)  <br/> |
+    |(Lämna det här fältet tomt.)  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |(Det här fältet är valfritt.)  <br/> |
    
    ![Dreamhost-BP-verify-1-1](../../media/ed4a7d43-eeeb-4ec8-849c-37f81315dc69.png)
   
@@ -111,7 +111,7 @@ Följ stegen nedan.
     
     ![Dreamhost-BP-Configure-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
-2. Välj **e-post**på sidan **Dashboard** och sedan **anpassad MX**.
+2. Välj **e-post** på sidan **Dashboard** och sedan **anpassad MX**.
     
     ![Dreamhost-BP-Configure-2-1](../../media/58478679-4018-49cc-9d83-371dc5fa4a22.png)
   
@@ -153,7 +153,7 @@ Följ stegen nedan.
     
     ![Dreamhost-BP-Configure-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
-2. Välj **domäner**på sidan **instrument panel** och sedan **hantera domäner**.
+2. Välj **domäner** på sidan **instrument panel** och sedan **hantera domäner**.
     
     ![Dreamhost-BP-Configure-1-2](../../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
   
@@ -196,7 +196,7 @@ Följ stegen nedan.
     
     ![Dreamhost-BP-Configure-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
-2. Välj **domäner**på sidan **instrument panel** och sedan **hantera domäner**.
+2. Välj **domäner** på sidan **instrument panel** och sedan **hantera domäner**.
     
     ![Dreamhost-BP-Configure-1-2](../../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
   
@@ -232,7 +232,7 @@ Följ stegen nedan.
     
     ![Dreamhost-BP-Configure-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
-2. Välj **domäner**på sidan **instrument panel** och sedan **hantera domäner**.
+2. Välj **domäner** på sidan **instrument panel** och sedan **hantera domäner**.
     
     ![Dreamhost-BP-Configure-1-2](../../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
   

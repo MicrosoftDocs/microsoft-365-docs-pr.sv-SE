@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Administratörer kan läsa mer om hur du tilldelar eller tar bort behörigheter i administrations centret för Exchange (UK) i Exchange Online Protection.
-ms.openlocfilehash: fb1e0979b77c38d852f35817e01135af888eac68
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4a1353963e5e3eadc1a07f8b4aa3a765b06c86ec
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201907"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659303"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>Hantera rollgrupper i fristående EOP
 
@@ -34,9 +34,9 @@ Mer information om roller och roll grupper finns i [behörigheter i fristående 
 
 - Information om hur du öppnar fristående EOP PowerShell finns i [ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Du behöver bara rollen roll hantering, som är tilldelad till rollen i (globala administratörer) som standard. Mer information finns i [behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd UK för att ändra listan över medlemmar i roll grupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Du måste ha behörighet i Exchange Online Protection innan du kan göra det i den här artikeln. Specifikt behöver du **roll hanterings** rollen, som tilldelats roll gruppen **organisations hantering** . Mer information finns i [behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd UK för att ändra listan över medlemmar i roll grupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Information om tangent bords gen vägar som kan gälla för procedurerna i det här avsnittet finns i kortkommandon [för administrations centret för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Information om kortkommandon som kan gälla för procedurerna i den här artikeln finns i kortkommandon [för administrations centret för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Har du problem? Be om hjälp i [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.
@@ -45,15 +45,15 @@ Mer information om roller och roll grupper finns i [behörigheter i fristående 
 
 ### <a name="use-the-eac-to-view-role-groups"></a>Använda roll grupperna UK för att Visa
 
-1. Gå till **Permissions** \> **rollerna för administratörs**behörighet i UK. Alla roll grupper i din organisation visas här.
+1. Gå till  \> **rollerna för administratörs** behörighet i UK. Alla roll grupper i din organisation visas här.
 
-2. Välj en roll grupp. I informations fönstret visas **namnet**, **beskrivningen**, **tilldelade roller**och **som hanteras av** roll gruppen. Du kan också se informationen genom att klicka på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-EditIcon.png) .
+2. Välj en roll grupp. I informations fönstret visas **namnet**, **beskrivningen**, **tilldelade roller** och **som hanteras av** roll gruppen. Du kan också se informationen genom att klicka på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-EditIcon.png) .
 
 ### <a name="use-the-eac-to-create-role-groups"></a>Använda UK för att skapa roll grupper
 
 När du skapar en ny roll grupp kan du konfigurera alla inställningar själv (när du skapar gruppen eller efter). Eller så kan du kopiera en befintlig roll grupp och ändra den.
 
-1. Gå **till** \> **Administratörs roller**i UK och gör sedan något av följande:
+1. Gå **till** \> **Administratörs roller** i UK och gör sedan något av följande:
 
    - **Skapa en ny roll grupp manuellt**: Klicka på **Lägg** till ![ ikonen Lägg till ](../../media/ITPro-EAC-AddIcon.png) .
 
@@ -65,9 +65,9 @@ När du skapar en ny roll grupp kan du konfigurera alla inställningar själv (n
 
     - **Beskrivning**: Ange en valfri beskrivning för roll gruppen.
 
-    - **Roller**: Klicka på **Lägg** till ![ ikonen lägg till ](../../media/ITPro-EAC-AddIcon.png) eller **ta bort** ![ITPro-EAC-RemoveIcon.gif](../../media/ITPro-EAC-RemoveIcon.gif) för att välja eller ändra de roller som är tilldelade till roll gruppen.
+    - **Roller**: Klicka på **Lägg** till ![ Lägg till ](../../media/ITPro-EAC-AddIcon.png) eller **ta bort** ![ ikon ](../../media/ITPro-EAC-RemoveIcon.gif) för att välja eller ändra de roller som är tilldelade till roll gruppen.
 
-    - **Medlemmar**: Klicka på **Lägg** till ![ ikonen lägg till ](../../media/ITPro-EAC-AddIcon.png) eller **ta bort** ![ITPro-EAC-RemoveIcon.gif](../../media/ITPro-EAC-RemoveIcon.gif) om du vill ändra medlemskap i roll gruppen.
+    - **Medlemmar**: Klicka på **Lägg** till ![ Lägg till ](../../media/ITPro-EAC-AddIcon.png) eller **ta bort** ![ ikon ](../../media/ITPro-EAC-RemoveIcon.gif) för att ändra medlemskap i roll gruppen.
 
 3. När du är klar klickar du på **Spara** för att skapa roll gruppen.
 
@@ -87,7 +87,7 @@ Samma alternativ är tillgängliga när du ändrar roll grupper som när du skap
 
 #### <a name="use-the-eac-modify-the-list-of-members-in-role-groups"></a>Använda UK ändra listan över medlemmar i roll grupper
 
-1. Gå **till** \> **Administratörs roller**i UK, Välj den roll grupp som du vill ändra och klicka sedan på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-EditIcon.png) .
+1. Gå **till** \> **Administratörs roller** i UK, Välj den roll grupp som du vill ändra och klicka sedan på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-EditIcon.png) .
 
 2. Gör något av följande i avsnittet **medlemmar** på sidan roll grupp egenskaper som öppnas:
 
@@ -104,7 +104,7 @@ Samma alternativ är tillgängliga när du ändrar roll grupper som när du skap
 
 Det går inte att ta bort inbyggda roll grupper, men du kan ta bort anpassade roll grupper som du har skapat.
 
-1. Gå till **Permissions** \> **rollerna för administratörs**behörighet i UK.
+1. Gå till  \> **rollerna för administratörs** behörighet i UK.
 
 2. Välj den roll grupp du vill ta bort och klicka sedan på **ta bort** ![ ikon för borttagning ](../../media/ITPro-EAC-DeleteIcon.png) .
 
@@ -241,7 +241,7 @@ Detaljerad information om syntax och parametrar finns i [Remove-RoleGroup](https
 
 Om du vill kontrol lera att du har kopierat en roll grupp gör du något av följande:
 
-- Gå **till** \> **Administratörs rollerna**i UK och kontrol lera att roll gruppen är listad (eller inte listad). Välj roll gruppen och kontrol lera inställningarna i informations fönstret eller klicka på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-EditIcon.png) för att bekräfta inställningarna.
+- Gå **till** \> **Administratörs rollerna** i UK och kontrol lera att roll gruppen är listad (eller inte listad). Välj roll gruppen och kontrol lera inställningarna i informations fönstret eller klicka på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-EditIcon.png) för att bekräfta inställningarna.
 
 - I Exchange Online PowerShell ersätter du \<Role Group Name\> namnet på roll gruppen och kör följande kommando för att kontrol lera att roll gruppen finns (eller inte existerar) och verifierar inställningarna:
 

@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på NameCheap för Microsoft.
-ms.openlocfilehash: 25b40dad0eb47c190df9496d5df4f061d8fdba6d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1e0fa8839e4ceae5074059d6ae05e3c7456611c2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645929"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657845"
 ---
 # <a name="create-dns-records-at-namecheap-for-microsoft"></a>Skapa DNS-poster på NameCheap för Microsoft
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 Om du har Namecheap som DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag Online och så vidare.
   
@@ -65,7 +65,7 @@ Följ stegen nedan.
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. Välj **Add New Record**i avsnittet **Host Records** .
+5. Välj **Add New Record** i avsnittet **Host Records** .
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
@@ -82,7 +82,7 @@ Följ stegen nedan.
     
     |**Typ**|**Host**|**Värde**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/>**Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen.  [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
+    |TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/>**Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen.  [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
        
     ![NameCheap-BP-verify-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   
@@ -193,7 +193,7 @@ Följ stegen nedan.
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. Välj **Add New Record**i avsnittet **Host Records** .
+5. Välj **Add New Record** i avsnittet **Host Records** .
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
@@ -245,7 +245,7 @@ Följ stegen nedan.
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. Välj **Add New Record**i avsnittet **Host Records** .
+5. Välj **Add New Record** i avsnittet **Host Records** .
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
@@ -289,7 +289,7 @@ Följ stegen nedan.
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. Välj **Add New Record**i avsnittet **Host Records** .
+5. Välj **Add New Record** i avsnittet **Host Records** .
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   

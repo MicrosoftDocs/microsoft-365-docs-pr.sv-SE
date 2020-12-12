@@ -14,12 +14,12 @@ ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer i fristående Exchange Online Protection (EOP)-organisationer kan lära sig hur du skapar, ändrar och tar bort distributions grupper och e-postaktiverade säkerhets grupper i administrations centret för Exchange (UK) och i fristående Exchange Online Protection (EOP) PowerShell.
-ms.openlocfilehash: a395c0738093a00c0225aea22a6e556863eebee5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 5ff7c61d51ded039b06d1faa98ba6390939b3413
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201883"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658851"
 ---
 # <a name="manage-groups-in-eop"></a>Hantera grupper i EOP
 
@@ -44,13 +44,13 @@ Du kan hantera grupper i administrations centret för Exchange (UK) och i frist�
 
 - Om du vill öppna administrations centret för Exchange går du till [administrations Center för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- När du hanterar grupper i fristående EOP PowerShell kan du stöta på begränsning. PowerShell-förfarandena i det här avsnittet använder en grupp bearbetnings metod som resulterar i en spridnings fördröjning på några minuter innan resultatet av kommandona visas.
+- När du hanterar grupper i fristående EOP PowerShell kan du stöta på begränsning. PowerShell-förfarandena i den här artikeln använder en grupp bearbetnings metod som resulterar i ett par minuter innan resultatet av kommandona visas.
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Specifikt behöver du rollen distributions grupper, som är tilldelad till roll grupperna i (global admins) och RecipientManagement som standard. Mer information finns i [behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd UK för att ändra listan över medlemmar i roll grupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Du måste ha behörighet i Exchange Online Protection innan du kan göra det i den här artikeln. Du behöver bara rollen **distributions grupper** , som är tilldelad roll grupperna **organisations hantering** och **mottagar hantering** som standard. Mer information finns i [behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd UK för att ändra listan över medlemmar i roll grupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Information om tangent bords gen vägar som kan gälla för procedurerna i det här avsnittet finns i kortkommandon [för administrations centret för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Information om kortkommandon som kan gälla för procedurerna i den här artikeln finns i kortkommandon [för administrations centret för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Har du problem? Be om hjälp i [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.

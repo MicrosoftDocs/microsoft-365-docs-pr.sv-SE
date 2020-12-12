@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på name.com för Microsoft.
-ms.openlocfilehash: ce465e06b3bc18c824d741ee4cba4b9f4f410d90
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2330755412abfe262ac79c4acbfc12e33af76fe2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645893"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657833"
 ---
 # <a name="create-dns-records-at-namecom-for-microsoft"></a>Skapa DNS-poster på name.com för Microsoft
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 Om name.com är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag - Online och så vidare.
   
@@ -52,11 +52,11 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. Under **My Domains**väljer du namnet på den domän som du vill ändra.
+2. Under **My Domains** väljer du namnet på den domän som du vill ändra.
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. Välj **DNS Records**i kolumnen **information** . 
+3. Välj **DNS Records** i kolumnen **information** . 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -67,7 +67,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     |||||
     |:-----|:-----|:-----|:-----|
     |**Typ** <br/> |**Host (värd)** <br/> |**Answer (svar)** <br/> |**TTL** <br/> |
-    |TXT  <br/> |(Lämna det här fältet tomt.)  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |Använd standardvärdet (300).  <br/> |
+    |TXT  <br/> |(Lämna det här fältet tomt.)  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |Använd standardvärdet (300).  <br/> |
    
     ![Namn-BP-verify-1-1](../../media/0c352fd3-cf84-439f-a481-0705e225cc54.png)
   
@@ -105,11 +105,11 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. Under **My Domains**väljer du namnet på den domän som du vill ändra.
+2. Under **My Domains** väljer du namnet på den domän som du vill ändra.
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. Välj **DNS Records**i kolumnen **information** . 
+3. Välj **DNS Records** i kolumnen **information** . 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -146,11 +146,11 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. Under **My Domains**väljer du namnet på den domän som du vill ändra.
+2. Under **My Domains** väljer du namnet på den domän som du vill ändra.
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. Välj **DNS Records**i kolumnen **information** . 
+3. Välj **DNS Records** i kolumnen **information** . 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -190,11 +190,11 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. Under **My Domains**väljer du namnet på den domän som du vill ändra.
+2. Under **My Domains** väljer du namnet på den domän som du vill ändra.
 
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. Välj **DNS Records**i kolumnen **information** . 
+3. Välj **DNS Records** i kolumnen **information** . 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -219,7 +219,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. Under **My Domains**väljer du namnet på den domän som du vill ändra.
+2. Under **My Domains** väljer du namnet på den domän som du vill ändra.
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   

@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 4b2c53ee8535c2e99acb83060a2ee04d8f5033db
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 57b49e49a20ee9e088301e90590c19cfabf89a2b
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754522"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658947"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft Managed Desktop-arkiverade enheter
 
@@ -60,8 +60,9 @@ För att vara registrerade på Microsoft Managed Desktop en enhet måste vara en
 |Surface Book 2| 256 GB/Intel i5/8 GB RAM | Inga | **November 2022** |
 |Surface go| 128 GB/Intel 4415Y/8 GB RAM | Inga | **Aug 2, 2023** |
 |Surface laptop| 256 GB/Intel i5/8 GB RAM | Inga | **Maj 2022** |
+|Surface laptop 2| 128 GB/Intel i5/8 GB RAM | Inga | **Oktober 2023** |
 |Surface Pro| 256 GB/Intel i5/8 GB RAM | Inga | **Jun 15, 2022** |
-
+|Surface Pro 6| 128 GB/Intel i5/8 GB RAM | Inga | **Oktober 2023** |
 
 Dessutom måste enheten också:
 

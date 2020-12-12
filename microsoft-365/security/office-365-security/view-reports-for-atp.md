@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Hitta och använda rapporter för Microsoft Defender för Office 365 i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2818362eea4071430bb2c784ceb0ce0eeb970a79
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 82c003478538274be1dd1d2e04816de80d1eae6d
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615582"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659459"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>Visa Defender för Office 365-rapporter i rapport instrument panelen i säkerhets & efterlevnad
 
@@ -313,7 +313,7 @@ Om du klickar på **Visa informations tabell** visas en vy i real tid av alla kl
 - **Klicka på tid**
 - **Användare**
 - **:**
-- **Fattning**
+- **Åtgärd**
 - **Program**
 
 Om du klickar på **filter** i vyn detaljerad tabell kan du filtrera efter samma villkor som i rapportvyn och även efter **domäner** eller **mottagare** avgränsade med kommatecken.
@@ -322,7 +322,7 @@ Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
 
 ## <a name="additional-reports-to-view"></a>Ytterligare rapporter att Visa
 
-Utöver de rapporter som beskrivs i det här avsnittet är flera andra rapporter tillgängliga, enligt följande tabell:
+Utöver de rapporter som beskrivs i den här artikeln är flera andra rapporter tillgängliga enligt följande tabell:
 
 ****
 
@@ -338,7 +338,7 @@ Utöver de rapporter som beskrivs i det här avsnittet är flera andra rapporter
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Vilka behörigheter behövs för att Visa Defender för Office 365-rapporterna?
 
-För att kunna visa och använda de rapporter som beskrivs i det här avsnittet måste du vara medlem i någon av följande roll grupper i säkerhets & Compliance Center:
+För att kunna visa och använda de rapporter som beskrivs i den här artikeln måste du vara medlem i någon av följande roll grupper i säkerhets & Compliance Center:
 
 - **Organisationshantering**
 - **Säkerhets administratör**

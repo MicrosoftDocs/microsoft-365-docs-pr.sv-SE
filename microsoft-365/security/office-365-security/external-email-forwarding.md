@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: bbe341899599d5092db0b0961add5a9825eca3b4
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 76cd560c3b97bb67d25d2e4ff2c219669c3d4f0d
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616602"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658887"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Kontrol lera automatisk extern e-postvidarebefordran i Microsoft 365
 
@@ -31,14 +31,12 @@ Följande typer av automatisk vidarebefordran är tillgängliga i Microsoft 365:
 
 - Användare kan konfigurera [regler för Inkorgen](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) för att automatiskt vidarebefordra meddelanden till externa avsändare (avsiktligt eller som ett resultat av ett komprometterat konto).
 
-- Administratörer kan konfigurera [vidarebefordran av post lådor](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (kallas även för _SMTP-vidarekoppling_) för att automatiskt vidarebefordra meddelanden till externa mottagare.
+- Administratörer kan konfigurera [vidarebefordran av post lådor](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (kallas även för _SMTP-vidarekoppling_) för att automatiskt vidarebefordra meddelanden till externa mottagare. Administratören kan välja om du bara vill vidarekoppla meddelanden eller Spara kopior av vidarebefordrade meddelanden i post lådan.
 
 Du kan använda filter principer för utgående e-post för att styra automatisk vidarebefordran till externa mottagare. Tre inställningar är tillgängliga:
 
 - **Automatisk**: Automatisk extern vidarebefordran är blockerad. Intern automatisk vidarebefordran av meddelanden fortsätter att fungera. Detta är standardinställningen.
-
 - **Den**: Automatisk extern vidarebefordran är tillåten och inte begränsad.
-
 - **Av**: Automatisk extern vidarebefordran är inaktiverat och resulterar i en rapport om utebliven leverans (kallas även för ett NDR-eller studs meddelande) för avsändaren.
 
 Anvisningar om hur du konfigurerar dessa inställningar finns i [Konfigurera utgående skräp post filtrering i EOP](configure-the-outbound-spam-policy.md).

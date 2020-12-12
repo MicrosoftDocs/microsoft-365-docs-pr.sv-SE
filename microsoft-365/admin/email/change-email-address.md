@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: 'Ändra din initiala e-postadress till en egen e-postadress som tom@fourthcoffee.com. För att göra detta måste du köpa ett domän namn och lägga till det i Microsoft 365. '
-ms.openlocfilehash: 7b5ab62ea99af52c61ca4ba6a7e9ea37604ddf19
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d23c612eecae0a0b58d844fbbe25392ffa682fde
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645545"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656837"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Ändra din e-postadress så att en anpassad domän används
 
@@ -41,7 +41,7 @@ ms.locfileid: "48645545"
 
 ::: moniker-end
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 ::: moniker range="o365-worldwide"
 

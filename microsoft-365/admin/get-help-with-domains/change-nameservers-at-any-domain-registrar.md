@@ -25,16 +25,16 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Lär dig hur du lägger till och konfigurerar din domän i Microsoft 365 så att dina tjänster som e-post och Skype för företag – Online kan använda ditt eget domän namn.
-ms.openlocfilehash: f233cc9b2d37e3ee81e52178a7cc045cb3579e42
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a4218b03e3f23ba8bc39c5eb84b42f87a71b9a65
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645401"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658605"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Ändra namnservrar för att konfigurera Microsoft 365 med valfri domän registrator
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 Markera [Konfigurera din domän (datorspecifika instruktioner)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) först för att se om vi har anvisningar för din registrator. 
   
@@ -80,7 +80,7 @@ Beroende på om du skapar en TXT-post eller en MX-post gör du något av följan
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**Record Type**|**Alias** eller **Host Name**|**Värde**|**Prioritet**|**TTL**|
-|MX|Skriv antingen **@** eller domännamnet. |MS=ms *XXXXXXXX* > [!NOTE]> Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Microsoft 365.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |Under **Prioritet** anger du en lägre prioritet än den som eventuella befintliga MX-poster har, för att undvika konflikter med den MX-post som används för e-postflöde. Mer information om prioritet finns i [Vad är MX-prioritet?](../setup/domains-faq.md#what-is-mx-priority) |Ställ in det här värdet på **1 timme** eller till motsvarande minuter ( **60** ), sekunder ( **3600** ) osv. |
+|MX|Skriv antingen **@** eller domännamnet. |MS=ms *XXXXXXXX* > [!NOTE]> Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Microsoft 365.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |Under **Prioritet** anger du en lägre prioritet än den som eventuella befintliga MX-poster har, för att undvika konflikter med den MX-post som används för e-postflöde. Mer information om prioritet finns i [Vad är MX-prioritet?](../setup/domains-faq.yml) |Ställ in det här värdet på **1 timme** eller till motsvarande minuter ( **60** ), sekunder ( **3600** ) osv. |
    
 ### <a name="save-the-record"></a>Spara posten
 
@@ -166,7 +166,7 @@ Här följer exempel på några åtgärder som krävs för e-post och webbplatse
 
 2. På sidan **domäner** väljer du domänen och sedan **DNS Records**.
 
-3. Under **DNS-inställningar**väljer du **anpassade poster**och väljer sedan **ny anpassad post**.
+3. Under **DNS-inställningar** väljer du **anpassade poster** och väljer sedan **ny anpassad post**.
 
 4. Välj den typ av DNS-post du vill lägga till och ange informationen för den nya posten.
 

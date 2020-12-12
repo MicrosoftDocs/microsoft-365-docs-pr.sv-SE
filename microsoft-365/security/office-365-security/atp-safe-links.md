@@ -26,12 +26,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: I den här artikeln kan administratörer lära sig mer om skydd för säkra länkar i Defender för Office 365 för att skydda sin organisation från nätfiske och andra attacker som använder skadlig URL.
-ms.openlocfilehash: f2a747b0776a16ac981158ab866f28699583a06b
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 066732e2f1a886e303fea86730baeb78c8152990
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616326"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659495"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Säkra länkar i Microsoft Defender för Office 365
 
@@ -50,7 +50,7 @@ Säkra länkar skyddar du på följande platser:
 
 - **Microsoft Teams** (för närvarande i tryck för hands version): säkra länkar skydd för länkar i Teams konversationer, gruppchattar eller från kanaler styrs också av principer för säkra länkar. Det finns ingen standard princip för Safe Links, **så för att skydda säkra länkar i Teams måste du skapa en eller flera principer för säkra länkar**.
 
-  Mer information om skydd för säkra länkar i Teams finns i avsnittet [Inställningar för säkra Länkar för Microsoft Teams](#safe-links-settings-for-microsoft-teams) senare i det här avsnittet.
+  Mer information om skydd för säkra länkar i Teams finns i avsnittet [Inställningar för säkra Länkar för Microsoft Teams](#safe-links-settings-for-microsoft-teams) senare i den här artikeln.
 
 - **Office 365-appar**: säkra länkar skydd för Office 365-appar är tillgängliga i Skriv bords-, mobil-och webb åtkomst punkter som stöds. Du **konfigurerar** skydd för säkra Länkar för Office 365-appar i den globala inställningen **utanför** Safe Links-principer. Anvisningar finns i [Konfigurera globala inställningar för inställningar för säkra länkar i Microsoft Defender för Office 365](configure-global-settings-for-safe-links.md).
 
@@ -80,8 +80,8 @@ I följande tabell beskrivs scenarier för säkra länkar i Microsoft 365 och Of
 |Jean är medlem i marknadsförings avdelningen. Säkra länkar skydd för Office 365-appar är aktiverat i de globala inställningarna för säkra länkar och en policy för säkra länkar som gäller för medlemmar i marknadsförings avdelningen finns. Jean öppnar en PowerPoint-presentation i ett e-postmeddelande och klickar sedan på en URL i presentationen.|Jean skyddas av säkra länkar. <p> Jean ingår i en policy för säkra länkar och skydd för säkra Länkar för Office 365-appar är aktiverat. <p> Mer information om kraven för skydd mot säkra länkar i Office 365-appar finns i avsnittet [Inställningar för säkra Länkar för Office 365-appar](#safe-links-settings-for-office-365-apps) längre ned i den här artikeln.|
 |Chris Microsoft 365 E5-organisation har inga konfigurerade principer för säkra länkar. Chris får ett e-postmeddelande från en extern avsändare som innehåller en URL till en illvillig webbplats som han sedan klickar på.|Chris skyddas inte av säkra länkar. <p> En administratör måste skapa minst en princip för säkra Länkar för att alla ska få säkra länkar i inkommande e-postmeddelanden. Christer måste inkludera villkoren i policyn för att skydda skydd mot säkra länkar.|
 |I Pat organisation har inga administratörer några principer för Safe Links, men säkra länkar skyddar Office 365-apparna. Pat öppnar ett Word-dokument och klickar på en URL i filen.|Pat skyddas inte av säkra länkar. <p> Även om skydd för säkra Länkar för Office 365-appar är aktiverat globalt är Pat inte inkluderat i några aktiva principer för säkert länkar, så skyddet kan inte tillämpas.|
-|I Aaron Lee-organisationen `https://tailspintoys.com` konfigureras i **Blockera följande URL-adresser** i de globala inställningarna för säkra länkar. En princip för säkra länkar som innehåller Aaron Lee finns redan. Aaron Lee får ett e-postmeddelande som innehåller URL-adressen `https://tailspintoys.com/aboutus/trythispage` . Aaron Lee klickar på URL-adressen.|URL-adressen kanske blockeras automatiskt för Aaron Lee; Det beror på URL-posten i listan och e-postklienten Aaron Lee används. Mer information finns i avsnittet ["Blockera följande URL-adresser" för säkra länkar](#block-the-following-urls-list-for-safe-links) längre ned i det här avsnittet.|
-|Janne och Julia är både arbete för contoso.com. För länge sedan, administratörer konfigurerade principer för säkra länkar som gäller för båda Janne och Julia. Janne skickar ett e-postmeddelande till Julia och vet inte att e-postmeddelandet innehåller en skadlig URL.|Julia skyddas av säkra länkar **om** den princip för säkra länkar som gäller för henne är konfigurerad för att tillämpas på meddelanden mellan interna mottagare. Mer information finns i avsnittet [Inställningar för säkra länkar i e-postmeddelanden](#safe-links-settings-for-email-messages) längre ned i det här avsnittet.|
+|I Aaron Lee-organisationen `https://tailspintoys.com` konfigureras i **Blockera följande URL-adresser** i de globala inställningarna för säkra länkar. En princip för säkra länkar som innehåller Aaron Lee finns redan. Aaron Lee får ett e-postmeddelande som innehåller URL-adressen `https://tailspintoys.com/aboutus/trythispage` . Aaron Lee klickar på URL-adressen.|URL-adressen kanske blockeras automatiskt för Aaron Lee; Det beror på URL-posten i listan och e-postklienten Aaron Lee används. Mer information finns i avsnittet ["Blockera följande URL-adresser" för säkra länkar](#block-the-following-urls-list-for-safe-links) längre ned i den här artikeln.|
+|Janne och Julia är både arbete för contoso.com. För länge sedan, administratörer konfigurerade principer för säkra länkar som gäller för båda Janne och Julia. Janne skickar ett e-postmeddelande till Julia och vet inte att e-postmeddelandet innehåller en skadlig URL.|Julia skyddas av säkra länkar **om** den princip för säkra länkar som gäller för henne är konfigurerad för att tillämpas på meddelanden mellan interna mottagare. Mer information finns i avsnittet [Inställningar för säkra länkar i e-postmeddelanden](#safe-links-settings-for-email-messages) i den här artikeln.|
 
 ## <a name="safe-links-settings-for-email-messages"></a>Inställningar för säkra Länkar för e-postmeddelanden
 

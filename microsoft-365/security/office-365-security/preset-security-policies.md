@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig att använda standard-och strikta princip inställningar i skydds funktionerna i Exchange Online Protection (EOP) och Microsoft Defender för Office 365
-ms.openlocfilehash: fb613916ec375214b33b8b842c6817561920715d
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: a77201835652fb36822fbc603f5211c1f7a9521b
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616050"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659256"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Förvalda säkerhets principer i EOP och Microsoft Defender för Office 365
 
@@ -102,13 +102,15 @@ Med andra ord åsidosätter inställningarna för principen för **strikt skydd*
 
 - Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. För att gå direkt till sidan för **förvalda säkerhets principer** , Använd <https://protection.office.com/presetSecurityPolicies> .
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Du måste tilldelas behörigheter innan du kan utföra åtgärderna i den här artikeln:
+- Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
+  - Om du vill konfigurera förvalda säkerhets principer måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** .
+  - Om du vill ha skrivskyddad åtkomst till förvalda säkerhets principer måste du vara medlem i rollen **global läsare** .
 
-  - Om du vill konfigurera förvalda säkerhets principer måste du vara medlem i rollerna **organisations hantering** eller **säkerhets administratör** i [säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
-  - Om du vill ha skrivskyddad åtkomst till förvalda säkerhets principer måste du vara medlem i rollen **global läsare** i [säkerhets & efterlevnad](permissions-in-the-security-and-compliance-center.md).
+  **Obs!** när du lägger till användare i motsvarande Azure Active Directory-roll i Microsoft 365 Admin Center får användarna den behörighet som krävs för säkerhets & efterlevnad Center _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Använd säkerhets & Compliance Center för att tilldela förvalda säkerhets principer till användare
 

@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: fbcef2d7-ebaf-40d0-ba1f-cdaeff9f50ef
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster i Azure DNS Zones för Microsoft.
-ms.openlocfilehash: 40fadb81ebd0ae5385bbbdad727b1c579142b227
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: c276570ec1d5ff079348bd8202ea597ef61e88f6
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645677"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656873"
 ---
 # <a name="create-dns-records-for-azure-dns-zones"></a>Skapa DNS-poster för Azure DNS-zoner
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 Om Azure är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och så vidare.
   
@@ -100,7 +100,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
     ![Azure-BP-Configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
-3. Välj **+ Record set**i området **DNS Zone** på sidan **Inställningar** för din domän.
+3. Välj **+ Record set** i området **DNS Zone** på sidan **Inställningar** för din domän.
     
     ![Azure-BP-Configure-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
@@ -110,7 +110,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
     |**Name**|**Type (typ)**|**TTL**|**TTL-enhet**|**Värde**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |TXT  <br/> |9.1  <br/> |Tider  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |TXT  <br/> |9.1  <br/> |Tider  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Azure-BP-verify-1-1](../../media/7d5a253c-e88f-4565-a00a-79bba52f9970.png)
   
@@ -150,7 +150,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Azure-BP-Configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
-3. Välj **+ Record set**i området **DNS Zone** på sidan **Inställningar** för din domän.
+3. Välj **+ Record set** i området **DNS Zone** på sidan **Inställningar** för din domän.
     
     ![Azure-BP-Configure-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
@@ -197,7 +197,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Azure-BP-Configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
-3. Välj **+ Record set**i området **DNS Zone** på sidan **Inställningar** för din domän.
+3. Välj **+ Record set** i området **DNS Zone** på sidan **Inställningar** för din domän.
     
     ![Azure-BP-Configure-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
@@ -222,7 +222,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 6. Lägg till de andra tre CNAME-posterna.
     
-    Välj **+ Record set**i området **DNS Zone** . I den tomma post uppsättningen skapar du en post med värdena från nästa rad i tabellen och väljer sedan **OK** för att slutföra den posten. 
+    Välj **+ Record set** i området **DNS Zone** . I den tomma post uppsättningen skapar du en post med värdena från nästa rad i tabellen och väljer sedan **OK** för att slutföra den posten. 
     
     Upprepa proceduren tills du har skapat alla fyra CNAME-posterna.
     
@@ -279,7 +279,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Azure-BP-Configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
-3. Välj **+ Record set**i området **DNS Zone** på sidan **Inställningar** för din domän.
+3. Välj **+ Record set** i området **DNS Zone** på sidan **Inställningar** för din domän.
     
     ![Azure-BP-Configure-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   

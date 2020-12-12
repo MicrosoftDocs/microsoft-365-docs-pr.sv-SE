@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig mer om de inbyggda alternativen för skräp post, inte skräp post och nätfiske i Outlook på webben (Outlook Web App) i Exchange Online och hur du inaktiverar dessa rapporterings alternativ för användare.
-ms.openlocfilehash: ebf266f3bb825a5ef81a3cd2b5d2bceb270fc260
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 0032e807961aed60128d6863899ae0de32d1a627
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877379"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659321"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>Rapportera skräp post och nätfiske i Outlook på webben i Exchange Online
 
@@ -34,7 +34,7 @@ I Microsoft 365-organisationer med post lådor i Exchange Online kan du använda
 
 - Om du är administratör i en organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen för säkerhets & efterlevnad. Mer information finns i [använda administratörs överföring för att skicka misstänkt skräp post, Phish, URL: er och filer till Microsoft](admin-submission.md).
 
-- Administratörer kan inaktivera eller aktivera möjligheten för användare att rapportera meddelanden till Microsoft i Outlook på webben. Mer information finns i [Aktivera eller inaktivera rapportering av skräp post i Outlook på webben](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) längre ned i det här avsnittet.
+- Administratörer kan inaktivera eller aktivera möjligheten för användare att rapportera meddelanden till Microsoft i Outlook på webben. Mer information finns i [Aktivera eller inaktivera rapportering av skräp post i Outlook på webben](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) längre ned i den här artikeln.
 
 - Du kan konfigurera vilka meddelanden som ska kopieras eller dirigeras om till en post låda som du anger. Mer information finns i [principer för användar profiler](user-submission.md).
 
@@ -64,7 +64,7 @@ I Microsoft 365-organisationer med post lådor i Exchange Online kan du använda
 
    - Markera meddelandet, klicka på **inte skräp post** i verktygsfältet och välj **inte skräp post** eller **nätfiske**.
 
-     ![Rapportera skräp post eller nätfiske via menyfliksområdet](../../media/owa-report-not-junk.png)
+     ![Rapportera inte skräp post eller inte heller nät fiske meddelanden från menyfliksområdet](../../media/owa-report-not-junk.png)
 
    - Markera ett eller flera meddelanden, högerklicka och välj sedan **Markera som inte skräp post**.
 
@@ -82,9 +82,9 @@ Som standard kan användare rapportera skräp post i falsk positiv, falsk negati
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Specifikt du behöver **mottagar principer** eller **e-postmottagare** roller i Exchange Online, som är tilldelade till roll grupperna **organisations hantering** och **mottagare** . Mer information om roll grupper i Exchange Online finns i [ändra roll grupper i Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups).
+- Du måste ha behörighet i Exchange Online innan du kan utföra åtgärderna i den här artikeln. Det här behöver du bara **mottagar principer** eller **e-postmottagare** , vilka tilldelats roll grupperna **organisations hantering** och **mottagare** . Mer information om roll grupper i Exchange Online finns i [behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) och [ändra roll grupper i Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups).
 
 - Varje organisation har en standard princip som heter OwaMailboxPolicy-Default, men du kan skapa anpassade principer. Anpassade principer tillämpas på användare med begränsad räckvidd före standard principen. Mer information om Outlook på principer för webb post lådor finns i [Outlook på principer för Internet post lådor i Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies).
 
@@ -128,9 +128,9 @@ Gör så här för att kontrol lera att du har aktiverat eller inaktiverat skrä
   Get-OwaMailboxPolicy | Format-Table Name,ReportJunkEmailEnabled
   ```
 
-- Öppna en användares post låda i Outlook på webben, Välj ett meddelande i Inkorgen, klicka på **skräp** \> **post** och bekräfta uppmaningen att rapportera meddelandet till Microsoft är eller visas inte. <sup>\*</sup>
+- Öppna en användares post låda i Outlook på webben, Välj ett meddelande i Inkorgen, klicka på **skräp** \> **post** och bekräfta uppmaningen att rapportera meddelandet till Microsoft är eller visas inte.<sup>\*</sup>
 
-- Öppna en användares post låda i Outlook på webben, Välj ett meddelande i mappen skräp post, klicka på **skräp** \> **post** och bekräfta uppmaningen att rapportera meddelandet till Microsoft, eller så visas det inte. <sup>\*</sup>
+- Öppna en användares post låda i Outlook på webben, Välj ett meddelande i mappen skräp post, klicka på **skräp** \> **post** och bekräfta uppmaningen att rapportera meddelandet till Microsoft, eller så visas det inte.<sup>\*</sup>
 
 <sup>\*</sup> Användare kan dölja uppmaningen att rapportera meddelandet medan det rapporteras. Så här kontrollerar du inställningen i Outlook på webben:
 

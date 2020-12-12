@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på eNomCentral för Microsoft.
-ms.openlocfilehash: c60c33f4be94e2f7719fdfc583500c6d1164991d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e6e05b987a893da582ea7fb062eafe421861b970
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646169"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658117"
 ---
 # <a name="create-dns-records-at-enomcentral-for-microsoft"></a>Skapa DNS-poster på eNomCentral för Microsoft
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter.
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter.
 
 Om eNomCentral är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag - Online och så vidare.
 
@@ -53,7 +53,7 @@ Följ stegen nedan eller [titta på videon (börja vid 0:46)](https://support.mi
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. Under **My Domains**väljer du namnet på den domän som du vill redigera.
+2. Under **My Domains** väljer du namnet på den domän som du vill redigera.
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -67,7 +67,7 @@ Följ stegen nedan eller [titta på videon (börja vid 0:46)](https://support.mi
 
    |Värdnamn|Record Type|Adress|
    |---|---|---|
-   |@|TXT|MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)|
+   |@|TXT|MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)|
 
    ![eNom-BP-verify-1-2](../../media/e1f95529-46a6-40f9-9709-9fe66f373bcf.png)
 
@@ -101,7 +101,7 @@ Följ stegen nedan eller [titta på videon (börja vid 3:40)](https://support.mi
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. Under **My Domains**väljer du namnet på den domän som du vill redigera.
+2. Under **My Domains** väljer du namnet på den domän som du vill redigera.
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -142,7 +142,7 @@ Följ stegen nedan eller [titta på videon (börja vid 4:24)](https://support.mi
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. Under **My Domains**väljer du namnet på den domän som du vill redigera.
+2. Under **My Domains** väljer du namnet på den domän som du vill redigera.
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -184,7 +184,7 @@ Följ stegen nedan eller [titta på videon (börja vid 5:12)](https://support.mi
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. Under **My Domains**väljer du namnet på den domän som du vill redigera.
+2. Under **My Domains** väljer du namnet på den domän som du vill redigera.
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -215,7 +215,7 @@ Följ stegen nedan eller [titta på videon (börja vid 5:50)](https://support.mi
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. Under **My Domains**väljer du namnet på den domän som du vill redigera.
+2. Under **My Domains** väljer du namnet på den domän som du vill redigera.
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -223,13 +223,13 @@ Följ stegen nedan eller [titta på videon (börja vid 5:50)](https://support.mi
 
    ![eNom-BP-Configure-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
 
-4. Till höger om **ny rad**väljer du **Add SRV or SPF record**.
+4. Till höger om **ny rad** väljer du **Add SRV or SPF record**.
 
    ![eNom-BP-Configure-5-1](../../media/c73c154d-5aa0-41ef-be25-f43129eb178c.png)
 
 5. I rutorna för de två nya posterna skriver du, eller kopierar och klistrar in, värdena från följande tabell.
 
-   |Tjänst|Protokoll|Priority|Väga|Port|Mål (värdnamn)|
+   |Tjänst|Protokoll|Ordningen|Väga|Port|Mål (värdnamn)|
    |---|---|---|---|---|---|
    |_sip|_tls|100|9.1|443|sipdir.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)**|
    |_sipfederationtls|_tcp|100|9.1|5061|sipfed.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)**|

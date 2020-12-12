@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa om vilka e-postflödes rapporter som är tillgängliga på instrument panelen för rapporter i säkerhets & efterlevnad.
 ms.custom: ''
-ms.openlocfilehash: 701735374e03f2afb91323ceb4b3fbf30988bdcd
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 1ededf2d0d693c537c159c52d00deb03f278b4b2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572807"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659471"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Visa rapporter om e-postflöden i instrument panelen för säkerhet &
 
@@ -32,7 +32,7 @@ ms.locfileid: "49572807"
 
 Utöver de e-postflödes rapporter som är tillgängliga i [instrument panelen för e-postflöden](mail-flow-insights-v2.md) i säkerhets & Compliance Center finns det flera olika e-postflödes rapporter som hjälper dig att övervaka din Microsoft 365-organisation.
 
-Om du har [nödvändig behörighet](#what-permissions-are-needed-to-view-these-reports)kan du visa dessa rapporter i [säkerhets & Compliance Center](https://office.protection.com) genom att gå till **Reports** \> **instrument panelen** för rapporter. Öppna för att gå direkt till instrument panelen rapporter <https://protection.office.com/insightdashboard> .
+Om du har [nödvändig behörighet](#what-permissions-are-needed-to-view-these-reports)kan du visa dessa rapporter i [säkerhets & Compliance Center](https://office.protection.com) genom att gå till  \> **instrument panelen** för rapporter. Öppna för att gå direkt till instrument panelen rapporter <https://protection.office.com/insightdashboard> .
 
 ![Instrument panel för rapporter i centret för säkerhets &](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -94,7 +94,7 @@ Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
 
 I **rapporten Exchange Transport Rule** visas resultatet av regler för e-postflöden (kallas även transport regler) i inkommande och utgående meddelanden i organisationen.
 
-Om du vill visa rapporten öppnar du [säkerhets & Compliance Center](https://protection.office.com), går till **Reports** \> **instrument paneler** för rapporter och väljer **Exchange Transport Rule**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=ETRRuleReport> .
+Om du vill visa rapporten öppnar du [säkerhets & Compliance Center](https://protection.office.com), går till  \> **instrument paneler** för rapporter och väljer **Exchange Transport Rule**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=ETRRuleReport> .
 
 ![Widget för Exchange-transportläge i instrument panelen rapporter](../../media/transport-rule-report-widget.png)
 
@@ -163,7 +163,7 @@ Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
 
 I **vidarekoppling** visas organisationens automatiskt vidarebefordrade meddelanden till externa domäner från Exchange Online-postlådor. Vidarebefordrade meddelanden kan utgöra en säkerhets-eller efterlevnad och kan tyda på ett komprometterat konto.
 
-Om du vill visa rapporten öppnar du [säkerhets & Compliance Center](https://protection.office.com), går till **Reports** \> **instrument paneler** för rapporter och väljer **vidarebefordra rapport**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=MailFlowForwarding> .
+Om du vill visa rapporten öppnar du [säkerhets & Compliance Center](https://protection.office.com), går till  \> **instrument paneler** för rapporter och väljer **vidarebefordra rapport**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=MailFlowForwarding> .
 
 ![Widget för vidarebefordrade rapporter i instrument panelen rapporter](../../media/forwarding-report-widget.png)
 
@@ -374,7 +374,7 @@ Om du klickar på **filter** kan du filtrera både diagrammet och data tabellen.
 I det här diagrammet visas meddelanden ordnade i följande kategorier:
 
 - **Totalt e-postmeddelande**
-- **Edge allow** **Filtrerat**
+-  **Filtrerat**
 - **Ej skadlig kod**, identifiering av skadliga **bilagor** <sup>\*</sup> , **identifiering av skadlig program vara** samt **regel meddelanden**
 - **Inte Phish**, **DMARC-fel**, **identifiering av obehörig person**, **förfalsknings avkänning** och **Phish-identifiering**
 - **Ingen identifiering med URL-sprängning** och **URL-sprängning**<sup>\*</sup>
@@ -420,7 +420,7 @@ Rapporten **skickat och mottaget e-postmeddelande** är en Smart rapport som vis
 
 I den aggregerade vyn och detaljvyn för rapporten får du 90 dagar på filtreringen.
 
-Om du vill visa rapporten öppnar du [säkerhets & efterlevnad](https://protection.office.com), går till **Reports** \> **instrument paneler** för rapporter och väljer **skickade och mottagna e-postmeddelanden**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=SentAndReceivedMailATP> .
+Om du vill visa rapporten öppnar du [säkerhets & efterlevnad](https://protection.office.com), går till  \> **instrument paneler** för rapporter och väljer **skickade och mottagna e-postmeddelanden**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=SentAndReceivedMailATP> .
 
 ![Widget för skicka och ta emot e-post i instrument panelen rapporter](../../media/sent-and-received-email-report-widget.png)
 
@@ -535,7 +535,7 @@ Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Vilka behörigheter behövs för att visa rapporterna?
 
-För att kunna visa och använda de rapporter som beskrivs i det här avsnittet måste du vara medlem i någon av följande roll grupper i säkerhets & Compliance Center:
+För att kunna visa och använda de rapporter som beskrivs i den här artikeln måste du vara medlem i någon av följande roll grupper i säkerhets & Compliance Center:
 
 - **Organisationshantering**
 - **Säkerhets administratör**

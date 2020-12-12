@@ -20,16 +20,16 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Läs mer om "MSOID" CNAME-posten i Office 365 som leder dig till den bästa servern för autentiseringsprocessen, så att du får snabbare svar.
 monikerRange: o365-21vianet
-ms.openlocfilehash: ac9ad3ad9f860722760d59c54570a453146a3a93
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: aea04391768993c40978d94b50817244cd77405c
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644645"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655490"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>Vad är syftet med Office 365-CNAME-posten för MSOID?
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
 > [!NOTE]
 > Följande gäller endast för * * Office 365 som drivs av 21Vianet.
   

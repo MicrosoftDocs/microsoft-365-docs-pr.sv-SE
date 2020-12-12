@@ -13,12 +13,12 @@ ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan använda meddelande spårning i säkerhets & efterlevnad för att ta reda på vad som hände med meddelanden.
-ms.openlocfilehash: 46aa454ff709e9b17c3b18992757a9a4c3a51247
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 455a1e22ff67ec47e1a6292c962d2a276ec54a64
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616758"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658994"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Meddelandespårning i Säkerhets- och efterlevnadscenter
 
@@ -85,7 +85,7 @@ Standardvärdet är **2 dagar**, men du kan ange datum-och tidsintervall på upp
 
   I 10 dagar eller färre blir resultaten omedelbart tillgängliga som en **sammanfattnings** rapport. Om du anger ett tidsintervall som är ännu något mer än 10 dagar försenas resultatet eftersom det bara är tillgängligt som en CSV-fil som hämtas ( **utökad Sammanfattning** eller **utökade** rapporter).
 
-  Mer information om de olika rapport typerna finns i avsnittet [välja rapport typ](#choose-report-type) i det här avsnittet.
+  Mer information om de olika rapport typerna finns i avsnittet [välja rapport typ](#choose-report-type) i den här artikeln.
 
   **Obs!** förbättrad Sammanfattning och utökade rapporter är avsedda med arkiverade meddelanden och kan ta upp till flera timmar innan rapporten kan laddas ner. Beroende på hur många andra administratörer som också har lämnat rapport förfrågningar samtidigt kan du också få en fördröjning innan bearbetningen påbörjas för din kö.
 
@@ -185,7 +185,7 @@ Relaterade meddelande poster är poster som har samma meddelande-ID. Kom ihåg a
 
 När du har markerat kryss rutan för en rad kan du söka efter relaterade poster för meddelandet genom att klicka på knappen **Sök relaterad** som visas, eller genom att välja **fler alternativ** ![ ](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **för att hitta relaterade poster för detta meddelande**.
 
-Mer information om meddelande-ID finns i avsnittet meddelande-ID ovan i det här avsnittet.
+Mer information om meddelande-ID finns i avsnittet meddelande-ID ovan i den här artikeln.
 
 #### <a name="message-trace-details"></a>Information om meddelande spårning
 
@@ -225,7 +225,7 @@ Meddelande spårnings informationen innehåller följande ytterligare informatio
 
 - **Mer information**: det här avsnittet innehåller följande information:
 
-  - **Meddelande-ID**: det här värdet beskrivs i avsnittet [meddelande-ID](#message-id) tidigare i det här avsnittet. Till exempel `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+  - **Meddelande-ID**: det här värdet beskrivs i avsnittet [meddelande-ID](#message-id) ovan i den här artikeln. Till exempel `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
   - **Meddelande storlek**
 
@@ -253,7 +253,7 @@ Tillgängliga (slutförda) förbättrade sammanfattnings rapporter finns i avsni
 
 - **total_bytes**: meddelandets storlek i byte, inklusive bifogade filer.
 
-- **message_id**: det här värdet beskrivs i avsnittet [meddelande-ID](#message-id) tidigare i det här avsnittet. Till exempel `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+- **message_id**: det här värdet beskrivs i avsnittet [meddelande-ID](#message-id) tidigare i den här artikeln. Till exempel `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
 - **network_message_id**: ett unikt meddelande-ID som finns kvar i alla kopior av meddelandet som kan skapas på grund av bifurcation eller distributions grupp. Ett exempel värde är `1341ac7b13fb42ab4d4408cf7f55890f` .
 

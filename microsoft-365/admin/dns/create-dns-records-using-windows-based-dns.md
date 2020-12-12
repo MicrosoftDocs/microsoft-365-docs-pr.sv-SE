@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster i Windows-baserad DNS för Microsoft.
-ms.openlocfilehash: 471aa0323bd59b09c672431ef39bb33f5c89b555
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8202ffe10b4a0ff9c94d863d92fc55c47ebb38d3
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645581"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656849"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Skapa DNS-poster för Microsoft med Windows-baserad DNS
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
    
 Om du är värd för dina egna DNS-poster med hjälp av Windows-baserad DNS följer du anvisningarna i den här artikeln för att konfigurera posterna för e-post, Skype för företag - Online och så vidare.
   
@@ -39,7 +39,7 @@ För att komma igång måste du [hitta dina DNS-poster i Windows-baserad DNS](#f
 Problem med e-postflöden eller andra problem när du har lagt till DNS-poster finns i [Felsöka problem efter ändring av domän namn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Hitta dina DNS-poster i Windows-baserad DNS
-<a name="BKMK_find_your_dns_1"> </a> Gå till sidan som innehåller DNS-posterna för din domän. Om du arbetar i Windows Server 2008 går du till **Start**  >  **Kör**. Om du arbetar i Windows Server 2012 trycker du på Windows-tangenten och **r**. Skriv **dnsmgmnt. msc**och välj sedan **OK**. Utöka ** \<DNS server name\> \> zoner för vanlig sökning  **i DNS-hanteraren. Välj din domän. Nu är du redo att skapa DNS-poster.
+<a name="BKMK_find_your_dns_1"></a> Gå till sidan som innehåller DNS-posterna för din domän. Om du arbetar i Windows Server 2008 går du till **Start**  >  **Kör**. Om du arbetar i Windows Server 2012 trycker du på Windows-tangenten och **r**. Skriv **dnsmgmnt. msc** och välj sedan **OK**. Utöka **\<DNS server name\> \> zoner för vanlig sökning** i DNS-hanteraren. Välj din domän. Nu är du redo att skapa DNS-poster.
    
 ## <a name="add-mx-record"></a>Lägga till MX-post
 <a name="BKMK_add_MX"> </a>
@@ -68,7 +68,7 @@ Lägg till de CNAME-poster som krävs för Microsoft. Om ytterligare CNAME-poste
     - Värdnamn: Autodiscover
     - Format 
     - CNAMEAddress: autodiscover.outlook.com
-- Välj **O**K.
+- Välj **O** K.
 
 Lägga till SIP CNAME-posten. 
 - På sidan DNS-hanteraren för domänen går du till **Action** \> **CNAME (CNAME)**. 
@@ -168,7 +168,7 @@ Innan du lägger till DNS-posterna för att konfigurera Microsoft-tjänsterna m�
 
 1. Samla in information från Microsoft.  <br/> 
 2. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>. 
-3. Välj **Starta installation**i kolumnen **åtgärder** för den domän du verifierar på sidan **Domains** . 
+3. Välj **Starta installation** i kolumnen **åtgärder** för den domän du verifierar på sidan **Domains** . 
 4. På sidan **Lägg till en domän till Microsoft** väljer du **Starta steg 1**. 
 5. På sidan **Bekräfta att du äger din domän** , i list rutan **Se anvisningar för att utföra det här steget med** , väljer du **allmänna instruktioner**. 
 6. Kopiera värdet för Mål eller pekar på-adress i tabellen. Du behöver det i nästa steg. Vi rekommenderar att du kopierar och klistrar in det här värdet så att alla avstånd förblir korrekta.
@@ -191,9 +191,9 @@ Verifiera din domän i Microsoft.
 > Vänta i ungefär 15 minuter innan du gör det så att den post som du just skapade kan uppdateras på Internet.       
 
 - Gå tillbaka till Microsoft och följ stegen nedan för att begära en verifierings kontroll. Kontrollen används för TXT-posten du lade till i föregående steg. När den hittar rätt TXT-post är domänen verifierad.  
-1. Gå till sidan **Konfigurera** domäner i administrations centret \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> .
+1. Gå till sidan **Konfigurera** domäner i administrations centret \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a> .
 2. På sidan **Domains** i kolumnen **Action** för den domän du verifierar väljer du **Starta installation**. 
-3. På sidan **Bekräfta att du äger din domän väljer du** **klar, verifiera nu**och sedan **Slutför**i bekräftelse dialog rutan. 
+3. På sidan **Bekräfta att du äger din domän väljer du** **klar, verifiera nu** och sedan **Slutför** i bekräftelse dialog rutan. 
    
 > [!NOTE]
 >  Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 

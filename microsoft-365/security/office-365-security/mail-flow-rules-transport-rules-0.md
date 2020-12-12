@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Du kan använda regler för e-postflöde för att identifiera och vidta åtgärder för meddelanden som flödar i din organisation.
-ms.openlocfilehash: 11bf2af56c6e85c868e2e0726736f624e196805c
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 6bbf50b1a99b6691e959f6dcd4cfce33686a0014
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021055"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659210"
 ---
 # <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>E-postflödesregler (transportregler) i fristående EOP
 
@@ -56,19 +56,19 @@ Följande video visar en demonstration av hur du konfigurerar regler för e-post
 
 En regel för e-postflöden består av villkor, undantag, åtgärder och egenskaper:
 
-- **Villkor** : identifiera de meddelanden som du vill tillämpa åtgärderna på. Vissa villkor undersöker meddelande rubrik fälten (till exempel fälten till, från eller kopia). Andra villkor kontrollerar meddelande egenskaper (till exempel meddelandets ämne, brödtext, bifogade filer, meddelande storlek eller meddelande klassificering). De flesta villkor kräver att du anger en jämförelse operator (till exempel lika med, inte lika med eller innehåller) och ett värde att matcha. Om det inte finns några villkor eller undantag tillämpas regeln på alla meddelanden.
+- **Villkor**: identifiera de meddelanden som du vill tillämpa åtgärderna på. Vissa villkor undersöker meddelande rubrik fälten (till exempel fälten till, från eller kopia). Andra villkor kontrollerar meddelande egenskaper (till exempel meddelandets ämne, brödtext, bifogade filer, meddelande storlek eller meddelande klassificering). De flesta villkor kräver att du anger en jämförelse operator (till exempel lika med, inte lika med eller innehåller) och ett värde att matcha. Om det inte finns några villkor eller undantag tillämpas regeln på alla meddelanden.
 
 Mer information om villkor för regel för e-postflöde i fristående EOP finns i [villkor och undantag för e-postflödes regler (predikat) i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-- **Undantag** : Ange eventuellt vilka meddelanden som åtgärderna ska tillämpas på. Samma meddelande identifierare som är tillgängliga under förhållanden är också tillgängliga i undantag. Undantag åsidosätta villkor och förhindra att regel åtgärderna tillämpas på ett meddelande, även om meddelandet matchar alla konfigurerade villkor.
+- **Undantag**: Ange eventuellt vilka meddelanden som åtgärderna ska tillämpas på. Samma meddelande identifierare som är tillgängliga under förhållanden är också tillgängliga i undantag. Undantag åsidosätta villkor och förhindra att regel åtgärderna tillämpas på ett meddelande, även om meddelandet matchar alla konfigurerade villkor.
 
-- **Åtgärder** : ange vad du vill göra för meddelanden som uppfyller villkoren i regeln och inte matchar något av undantagen. Det finns många tillgängliga åtgärder, till exempel avvisa, ta bort eller omdirigera meddelanden, lägga till fler mottagare, lägga till prefix i meddelandets ämne eller infoga fri skrivningar i meddelande texten.
+- **Åtgärder**: ange vad du vill göra för meddelanden som uppfyller villkoren i regeln och inte matchar något av undantagen. Det finns många tillgängliga åtgärder, till exempel avvisa, ta bort eller omdirigera meddelanden, lägga till fler mottagare, lägga till prefix i meddelandets ämne eller infoga fri skrivningar i meddelande texten.
 
 Mer information om åtgärder för regel för e-postflöde som är tillgängliga i fristående EOP finns i [åtgärder för e-postflödes regler i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
-- **Egenskaper** : ange andra regel inställningar som inte är villkor, undantag eller åtgärder. Till exempel när regeln ska användas, om regeln ska tillämpas eller testas, samt tids perioden då regeln är aktiv.
+- **Egenskaper**: ange andra regel inställningar som inte är villkor, undantag eller åtgärder. Till exempel när regeln ska användas, om regeln ska tillämpas eller testas, samt tids perioden då regeln är aktiv.
 
-  Mer information finns i avsnittet [Egenskaper för regel för e-postflöde](#mail-flow-rule-properties) i det här avsnittet.
+  Mer information finns i avsnittet [Egenskaper för regel för e-postflöde](#mail-flow-rule-properties) i den här artikeln.
 
 ### <a name="multiple-conditions-exceptions-and-actions"></a>Flera villkor, undantag och åtgärder
 
@@ -104,7 +104,7 @@ I följande tabell beskrivs de regel egenskaper som är tillgängliga i regler f
 
 ## <a name="how-mail-flow-rules-are-applied-to-messages"></a>Hur regler för e-postflöde tillämpas på meddelanden
 
-Alla meddelanden som flödar genom organisationen utvärderas mot de aktiverade reglerna för e-postflöde i organisationen. Regler bearbetas i den ordning som visas på sidan regler för **e-postflöde** \> **Rules** i UK, eller _Priority_ baserat på motsvarande egenskaps värde i PowerShell.
+Alla meddelanden som flödar genom organisationen utvärderas mot de aktiverade reglerna för e-postflöde i organisationen. Regler bearbetas i den ordning som visas på sidan regler för **e-postflöde** \>  i UK, eller  baserat på motsvarande egenskaps värde i PowerShell.
 
 Varje regel erbjuder också alternativet att stoppa bearbetningen av fler regler när regeln matchas. Den här inställningen är viktig för meddelanden som uppfyller villkoren i flera regler för e-postflöde (vilken regel vill du använda i meddelandet? Alla? Bara en?).
 
@@ -116,14 +116,14 @@ Det finns flera typer av meddelanden som passerar genom en organisation. Följan
 
 |Typ av meddelande|Kan en regel användas?|
 |---|---|
-|**Vanliga meddelanden** : meddelanden som innehåller en RTF-, HTML-eller oformaterad textmeddelande text eller en grupp eller en alternativ uppsättning med meddelande texter.|Ja|
-|**Office 365 meddelande kryptering** : meddelanden krypterade av Office 365 meddelande kryptering i Office 365. Mer information finns i [kryptering i Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Regler kan alltid komma åt kuvert rubriker och bearbeta meddelanden baserat på villkor som inspekterar dessa huvuden. <p> Om du vill ha en regel för att kontrol lera eller ändra innehållet i ett krypterat meddelande måste du kontrol lera att transport avkryptering är aktiverat (obligatoriskt eller frivilligt), Standardinställningen är valfri. Mer information finns i [definiera regler för att kryptera eller dekryptera e-postmeddelanden i Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).|
+|**Vanliga meddelanden**: meddelanden som innehåller en RTF-, HTML-eller oformaterad textmeddelande text eller en grupp eller en alternativ uppsättning med meddelande texter.|Ja|
+|**Office 365 meddelande kryptering**: meddelanden krypterade av Office 365 meddelande kryptering i Office 365. Mer information finns i [kryptering i Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Regler kan alltid komma åt kuvert rubriker och bearbeta meddelanden baserat på villkor som inspekterar dessa huvuden. <p> Om du vill ha en regel för att kontrol lera eller ändra innehållet i ett krypterat meddelande måste du kontrol lera att transport avkryptering är aktiverat (obligatoriskt eller frivilligt), Standardinställningen är valfri. Mer information finns i [definiera regler för att kryptera eller dekryptera e-postmeddelanden i Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).|
 |**S/MIME-krypterade meddelanden**|Regler kan bara komma åt kuvert rubriker och bearbeta meddelanden baserat på villkor som inspekterar dessa huvuden. <p> Regler med villkor som kräver kontroll av meddelandets innehåll, eller åtgärder som ändrar meddelandets innehåll kan inte behandlas.|
-|**RMS-skyddade meddelanden** : meddelanden som hade en AD RMS-(Active Directory Rights Management Services) eller en RMS-princip (Azure Rights Management).|Regler kan alltid komma åt kuvert rubriker och bearbeta meddelanden baserat på villkor som inspekterar dessa huvuden. <p> Om du vill ha en regel för att kontrol lera eller ändra innehållet i ett RMS-skyddat meddelande måste du kontrol lera att transport avkryptering är aktiverat (obligatoriskt eller frivilligt). standardvärdet är inte obligatoriskt).|
-|**Rensade meddelanden** : meddelanden som har signerats men inte krypterats.|Ja|
-|**UM-meddelanden** : meddelanden som skapas eller bearbetas av Unified Messaging-tjänsten, till exempel röst brev låda, Fax, missade samtals aviseringar och meddelanden som har skapats eller vidarebefordrats med hjälp av Microsoft Outlook Voice Access.|Ja|
-|**Anonyma meddelanden** : meddelanden som skickas av anonyma avsändare.|Ja|
-|**Läs rapporter** : rapporter som skapas som svar på begäran om Läs kvitton per avsändare. Läs rapporter har en meddelande klass av `IPM.Note*.MdnRead` eller `IPM.Note*.MdnNotRead` .|Ja|
+|**RMS-skyddade meddelanden**: meddelanden som hade en AD RMS-(Active Directory Rights Management Services) eller en RMS-princip (Azure Rights Management).|Regler kan alltid komma åt kuvert rubriker och bearbeta meddelanden baserat på villkor som inspekterar dessa huvuden. <p> Om du vill ha en regel för att kontrol lera eller ändra innehållet i ett RMS-skyddat meddelande måste du kontrol lera att transport avkryptering är aktiverat (obligatoriskt eller frivilligt). standardvärdet är inte obligatoriskt).|
+|**Rensade meddelanden**: meddelanden som har signerats men inte krypterats.|Ja|
+|**UM-meddelanden**: meddelanden som skapas eller bearbetas av Unified Messaging-tjänsten, till exempel röst brev låda, Fax, missade samtals aviseringar och meddelanden som har skapats eller vidarebefordrats med hjälp av Microsoft Outlook Voice Access.|Ja|
+|**Anonyma meddelanden**: meddelanden som skickas av anonyma avsändare.|Ja|
+|**Läs rapporter**: rapporter som skapas som svar på begäran om Läs kvitton per avsändare. Läs rapporter har en meddelande klass av `IPM.Note*.MdnRead` eller `IPM.Note*.MdnNotRead` .|Ja|
 |
 
 ## <a name="what-else-should-i-know"></a>Vad mer bör jag veta?

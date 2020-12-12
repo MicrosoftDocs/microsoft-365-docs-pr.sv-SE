@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Administratörer kan lära dig hur du använder widgeten köer i instrument panelen för e-postflöde i säkerhets & Compliance Center för att övervaka misslyckade e-postflöden till deras lokala eller partner organisationer via utgående anslutningar.
-ms.openlocfilehash: c582a7f459d89fa1515713c4f55dea14b619a6ec
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: a1563c61620ef9f1ae97739681f426fd0ea38bd8
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616398"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659286"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Köer inblickar i säkerhets & Compliance Center
 
@@ -32,7 +32,7 @@ Microsoft 365 fortsätter att försöka leverera i 24 timmar. Efter 24 timmar up
 
 Om den köade e-postvolymen överskrider det fördefinierade tröskelvärdet (Standardvärdet är 200 meddelanden) finns informationen på följande platser:
 
-- **Köerna** inblickar i [instrument panelen för e-postflöden](mail-flow-insights-v2.md) i [säkerhets & Compliance Center](https://protection.office.com). Mer information finns i [köerna under rubriken e-postflöde](#queues-insight-in-the-mail-flow-dashboard) i det här avsnittet.
+- **Köerna** inblickar i [instrument panelen för e-postflöden](mail-flow-insights-v2.md) i [säkerhets & Compliance Center](https://protection.office.com). Mer information finns i [köer i avsnittet e-postflöde](#queues-insight-in-the-mail-flow-dashboard) i den här artikeln.
 
 - En avisering visas i de **senaste varningarna** instrument panelen för aviseringar i [säkerhets & Compliance Center](https://protection.office.com) (instrument panelen för **aviseringar** \>  eller <https://protection.office.com/alertsdashboard> ).
 

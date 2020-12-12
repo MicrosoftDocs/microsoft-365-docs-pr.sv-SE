@@ -22,16 +22,16 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Lär dig mer om domäner och deras associerade DNS-poster för att hantera dina domäner.
-ms.openlocfilehash: 3f913a96395424e86d0d88dbb29bcb58a076ebb8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1f5d49eb588a7c4245751360fa3309bf20496512
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645365"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658537"
 ---
 # <a name="dns-basics"></a>Grundläggande om DNS
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 ::: moniker range="o365-worldwide"
 
@@ -61,7 +61,7 @@ Domännamn används i URL:er och e-postadresser, och de har olika nivåer. Till 
   
 - **.com** är domänen på toppnivå 
     
-- ** contoso** är domänen på andra nivån 
+- **contoso** är domänen på andra nivån 
     
 - **mail** är domänen på tredje nivån 
     

@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
 description: 'Lär dig hur du konfigurerar din Microsoft Custom-domän med Network Solutions om du vill att Microsoft ska hantera dina DNS-poster. '
-ms.openlocfilehash: 1cb5cd3cc8628a629fb6d7044063914e37adfac2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 04817ca24b13b4c138986df3875b6d397100fffd
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646409"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658434"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-network-solutions"></a>Ändra namnservrar för att konfigurera Microsoft med Network Solutions
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter.
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter.
   
 Följ de här anvisningarna om du vill att Microsoft ska hantera dina DNS-poster åt dig. (Om du vill kan du [hantera alla dina Microsoft DNS-poster på Network Solutions](create-dns-records-at-network-solutions.md).)
   
@@ -120,7 +120,7 @@ För att slutföra konfigurationen av din domän med Microsoft ändrar du domän
 Vill du ändra NAMNSERVER posterna så att Microsoft kan konfigurera din domän? Följ stegen nedan eller [titta på videon (börja vid 2:23)](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261).
   
 > [!IMPORTANT]
->  När du har slutfört stegen i det här avsnittet är de  *enda*  namnservrar som ska visas här fyra: **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **NS3.bdm.microsoftonline.com**och **NS4.bdm.microsoftonline.com**. Följande procedur visar hur du tar bort andra, oönskade namnservrar från listan, och hur du lägger till  *korrekta*  namnservrar om de inte redan finns i listan. 
+>  När du har slutfört stegen i det här avsnittet är de  *enda*  namnservrar som ska visas här fyra: **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **NS3.bdm.microsoftonline.com** och **NS4.bdm.microsoftonline.com**. Följande procedur visar hur du tar bort andra, oönskade namnservrar från listan, och hur du lägger till  *korrekta*  namnservrar om de inte redan finns i listan. 
   
 1. Kom igång genom att gå till domänsidan på Network Solutions med [den här länken](https://www.networksolutions.com/manage-it). Du uppmanas att logga in.
     
@@ -149,7 +149,7 @@ Vill du ändra NAMNSERVER posterna så att Microsoft kan konfigurera din domän?
     
 ### <a name="if-there-are-no-nameservers-already-listed"></a>Om INGA namnservrar visas
 
-1. Välj **Add More Name servers**i avsnittet **Ange Domain Name servers** på sidan **Domains** .
+1. Välj **Add More Name servers** i avsnittet **Ange Domain Name servers** på sidan **Domains** .
     
     ![NetworkSolutionsBP-Redelegate-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   

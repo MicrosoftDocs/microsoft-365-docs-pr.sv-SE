@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 6386d63e-b78f-4736-90e7-b99a2c116a9f
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster i galna Domains for Microsoft.
-ms.openlocfilehash: cf65173873affdc66e4e6d03764a3d6c842b7642
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 4b39a51f96299879207b96d1e15d039905440b0a
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646229"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658501"
 ---
 # <a name="create-dns-records-at-crazy-domains-for-microsoft"></a>Skapa DNS-poster på galna-domäner för Microsoft
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 Om Crazy Domains är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag - Online och så vidare.
   
@@ -53,7 +53,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
     ![CrazyDomains-BP-Configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. Välj **Domains**i avsnittet **mitt konto** .
+2. Välj **Domains** i avsnittet **mitt konto** .
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
@@ -81,7 +81,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
     |**Underdomän**|**Textpost**|
     |:-----|:-----|
-    |(Lämna det här fältet tomt.)  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
+    |(Lämna det här fältet tomt.)  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![CrazyDomains-BP-verify-1-3](../../media/3867de97-6a98-4475-9bda-470bac75d483.png)
   
@@ -120,7 +120,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![CrazyDomains-BP-Configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. Välj **Domains**i avsnittet **mitt konto** .
+2. Välj **Domains** i avsnittet **mitt konto** .
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
@@ -179,7 +179,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![CrazyDomains-BP-Configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. Välj **Domains**i avsnittet **mitt konto** .
+2. Välj **Domains** i avsnittet **mitt konto** .
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
@@ -223,7 +223,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 10. Lägg till den andra CNAME-posten.
     
-    Använd värdena från nästa rad i tabellen i rutorna för den nya posten och välj sedan **Add CNAME Record**igen.
+    Använd värdena från nästa rad i tabellen i rutorna för den nya posten och välj sedan **Add CNAME Record** igen.
     
     Upprepa proceduren tills du har skapat alla sex CNAME-posterna.
     
@@ -241,7 +241,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![CrazyDomains-BP-Configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. Välj **Domains**i avsnittet **mitt konto** .
+2. Välj **Domains** i avsnittet **mitt konto** .
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
@@ -284,7 +284,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![CrazyDomains-BP-Configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. Välj **Domains**i avsnittet **mitt konto** .
+2. Välj **Domains** i avsnittet **mitt konto** .
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   

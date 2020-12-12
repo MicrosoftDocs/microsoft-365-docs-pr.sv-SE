@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Lägga till din domän i Microsoft 365 i Microsoft 365 Admin Center genom att lägga till en DNS-post hos din DNS-värd. Installations guiden hjälper dig genom processen.
-ms.openlocfilehash: 3a4cd31a37eb01570f58e9cdb83940640768a273
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3e7463bd4cf6b7836a9770421e0b8ce597524a67
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644621"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658057"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Lägga till en domän i Microsoft 365
 
@@ -42,7 +42,7 @@ ms.locfileid: "48644621"
 
 ::: moniker-end
 
- **[Läs frågor och svar om domäner](domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](domains-faq.yml)** om du inte hittar det du letar efter. 
   
  *För att lägga till, ändra eller ta bort domäner **måste** du vara **Global administratör** för [företags-eller företags abonnemang](https://products.office.com/business/office). Dessa ändringar påverkar hela klient organisationen, *anpassade administratörer* eller *vanliga användare* kommer inte att kunna göra dessa ändringar.*  
 
@@ -114,7 +114,7 @@ Följ stegen nedan om du vill lägga till en anpassad post för en webbplats ell
 
 3. Välj en domän på sidan **Domäner**. 
     
-4. Välj **anpassade poster**under **DNS-inställningar**. Välj sedan **ny anpassad post**.
+4. Välj **anpassade poster** under **DNS-inställningar**. Välj sedan **ny anpassad post**.
 
 5. Välj den typ av DNS-post du vill lägga till och ange informationen för den nya posten.
     
@@ -151,7 +151,7 @@ Om du har en webbplats som du använder med ditt företag kommer den att fortsä
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Vanliga frågor och svar om domäner](domains-faq.md)
+[Vanliga frågor och svar om domäner](domains-faq.yml)
 
 [Vad är en domän?](../get-help-with-domains/what-is-a-domain.md)
 

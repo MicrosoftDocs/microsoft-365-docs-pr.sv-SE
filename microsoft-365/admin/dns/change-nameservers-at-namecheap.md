@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 84f467f6-28cf-40f0-94d0-a2a27ddfc2e7
 description: 'Lär dig hur du konfigurerar din Microsoft Custom Domain med NameCheap om du vill att Microsoft ska hantera dina DNS-poster. '
-ms.openlocfilehash: e305abb7768b286dbd24336c1dab39d919f9a0ac
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 0dec28c99bd49d3ba558e11afac8142c7df96591
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646457"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657990"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-namecheap"></a>Ändra namnservrar för att konfigurera Microsoft med NameCheap
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter.
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter.
   
 Följ de här anvisningarna om du vill att Microsoft ska hantera dina DNS-poster åt dig. (Om du vill kan du [hantera alla dina Microsoft DNS-poster på NameCheap](create-dns-records-at-namecheap.md).)
   
@@ -53,7 +53,7 @@ Följ de här anvisningarna om du vill att Microsoft ska hantera dina DNS-poster
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. Välj **Add New Record**i avsnittet **Host Records** .
+5. Välj **Add New Record** i avsnittet **Host Records** .
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
@@ -70,7 +70,7 @@ Följ de här anvisningarna om du vill att Microsoft ska hantera dina DNS-poster
     
 |**Typ**|**Host**|**Värde**|**TTL**|
 |:-----|:-----|:-----|:-----|
-|TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
+|TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
    
    ![NameCheap-BP-verify-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   

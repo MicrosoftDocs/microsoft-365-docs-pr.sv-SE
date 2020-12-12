@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Lär dig hur du tar bort en gammal domän från Microsoft 365 och flyttar användare och grupper till en annan domän.
-ms.openlocfilehash: 4eb44914daf500ac48f140bd999a2cf783a9bf83
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: cddbb0ef9cf48147e33b93a4a8def15576edfab5
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645293"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655536"
 ---
 # <a name="remove-a-domain"></a>Ta bort en domän
 
@@ -38,7 +38,7 @@ ms.locfileid: "48645293"
 
 ::: moniker-end
   
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 Tar du bort din domän för att lägga till den i en annan prenumeration på Microsoft 365? Eller vill du avbryta din prenumeration? Du kan [ändra ditt abonnemang eller din prenumeration](../../commerce/subscriptions/switch-to-a-different-plan.md) eller [avbryta prenumerationen](../../commerce/subscriptions/cancel-your-subscription.md).
   
@@ -100,9 +100,9 @@ Du måste även göra detta för dig själv om du använder den domän som du vi
 
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrations centret</a>.
 
-2. Gå till **användare** \> **aktiva användare**och välj ditt konto i listan.
+2. Gå till **användare** \> **aktiva användare** och välj ditt konto i listan.
 
-3. På fliken **konto** väljer du **hantera användar namn**och sedan en annan domän.
+3. På fliken **konto** väljer du **hantera användar namn** och sedan en annan domän.
   
 4. Välj ditt konto namn högst upp och välj sedan **Logga ut**.
 
@@ -114,9 +114,9 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 ::: moniker range="o365-germany"
 
-1. Gå till **användare** \> **aktiva användare**och välj ditt namn i listan.
+1. Gå till **användare** \> **aktiva användare** och välj ditt namn i listan.
 
-2. Välj **Redigera**i avsnittet **användar namn/e-post** och välj sedan en annan domän.
+2. Välj **Redigera** i avsnittet **användar namn/e-post** och välj sedan en annan domän.
 
 3. Välj **Ange som primärt** > **Spara** > **nära**.
   
@@ -130,9 +130,9 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till **användare** \> **aktiva användare**och välj ditt namn i listan.
+1. Gå till **användare** \> **aktiva användare** och välj ditt namn i listan.
 
-2. Välj **Redigera**i avsnittet **användar namn/e-post** och välj sedan en annan domän.
+2. Välj **Redigera** i avsnittet **användar namn/e-post** och välj sedan en annan domän.
 
 3. Välj **Ange som primärt** > **Spara** > **nära**.
   
@@ -148,9 +148,9 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan grupper i administrations centret **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
+1. Gå till sidan grupper i administrations centret  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> .
   
-2. Välj gruppens namn och klicka sedan på **Redigera**på fliken **Allmänt** under **e-postadress**.
+2. Välj gruppens namn och klicka sedan på **Redigera** på fliken **Allmänt** under **e-postadress**.
 
 3. Använd List rutan för att välja en annan domän.
 
@@ -160,7 +160,7 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **grupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrations centret</a> > **Groups** .
+1. Gå till sidan **grupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrations centret</a> >  .
 
 2. Välj grupp namnet och välj sedan **redigera** bredvid **namn**.
 
@@ -172,7 +172,7 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **grupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrations centret</a> > **Groups** .
+1. Gå till sidan **grupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrations centret</a> >  .
 
 2. Välj grupp namnet och välj sedan **redigera** bredvid **namn**.
 
@@ -192,13 +192,13 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Konfigurera** domäner i administrations centret \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> .
+1. Gå till sidan **Konfigurera** domäner i administrations centret \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank"></a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Konfigurera** domäner i administrations centret \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> .
+1. Gå till sidan **Konfigurera** domäner i administrations centret \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank"></a> .
 
 ::: moniker-end
   
@@ -227,7 +227,7 @@ Fungerar det fortfarande inte? Domänen kan behöva tas bort manuellt. [Ring oss
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Vanliga frågor och svar om domäner](../setup/domains-faq.md)
+[Vanliga frågor och svar om domäner](../setup/domains-faq.yml)
 
 [Byta till ett annat Microsoft 365 för företag-abonnemang](../../commerce/subscriptions/switch-to-a-different-plan.md)
 

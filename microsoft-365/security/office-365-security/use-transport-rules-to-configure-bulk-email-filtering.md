@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur de använder regler för e-postflöde (transport regler) för att identifiera och filtrera Mass utskick (grå e-post) i Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1f88358973648846d650700bb5939c052851c789
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: b029e805147218551ba6ff80fb5abfda3fbfef7f
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615642"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658643"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>Använda e-postflödesregler för att filtrera massutskick i EOP
 
@@ -36,11 +36,13 @@ I det här avsnittet förklaras hur du skapar dessa regler för e-post i adminis
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du måste tilldelas behörigheter innan du kan göra följande:
+- Du måste tilldelas behörigheter i Exchange Online eller Exchange Online Protection innan du kan göra det i den här artikeln. För det specifika måste du ha rollen **Transport regel** , som är tilldelad till **organisations hantering**, **hantering av efterlevnad** (globala administratörer) och roll grupperna **Arkiv handlings hantering** som standard.
 
-  - I Exchange Online kan du läsa "mail flöde"-posten i [funktioner i Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/feature-permissions).
+  Mer information finns i följande avsnitt:
 
-  - I fristående EOP behöver du Transport regel rollen som är tilldelad till rollerna i, ComplianceManagement och RecordsManagement som standard. Mer information finns i [behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd UK för att ändra listan över medlemmar i roll grupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+  - [Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+  - [Behörigheter i fristående EOP](feature-permissions-in-eop.md)
+  - [Använda UK ändra listan över medlemmar i roll grupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
 - Om du vill öppna UK i Exchange Online läser du [administrations Center för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center). Information om hur du öppnar UK i fristående EOP finns i [administrations Center för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 

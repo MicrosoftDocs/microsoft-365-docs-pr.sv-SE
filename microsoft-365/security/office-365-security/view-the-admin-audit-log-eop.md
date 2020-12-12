@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Administratörer kan lära sig att visa och söka i administratörs gransknings loggen i fristående Exchange Online Protection (EOP).
-ms.openlocfilehash: 9fe2c742083cde1ca36f6a04cd357a473a10aeac
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c65c09efa0f90fc9b63d635dae598b24d93ea714
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196549"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659447"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>Visa administratörsgranskningsloggen i fristående EOP
 
@@ -32,7 +32,7 @@ Administratörs gransknings loggen registrerar specifika åtgärder baserat på 
 >
 > - Loggning för administratörs granskning är aktiverat som standard och kan inte inaktive ras.
 >
-> - Administratörs gransknings loggen spelar inte in åtgärder baserat på cmdlets som börjar med verben **Get**, **search**eller **test**.
+> - Administratörs gransknings loggen spelar inte in åtgärder baserat på cmdlets som börjar med verben **Get**, **search** eller **test**.
 >
 > - Gransknings logg poster bevaras i 90 dagar. När en post är äldre än 90 dagar raderas den
 
@@ -40,18 +40,18 @@ Administratörs gransknings loggen registrerar specifika åtgärder baserat på 
 
 - Om du vill öppna administrations centret för Exchange går du till [administrations Center för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Specifikt måste du ha rollen gransknings loggar eller skrivskyddade loggar, som är tilldelad till ComplianceManagement, i (globala administratörer) och SecurityAdministrator roll grupper som standard. Mer information finns i [behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd UK för att ändra listan över medlemmar i roll grupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Du måste ha behörighet i Exchange Online Protection innan du kan göra det i den här artikeln. Specifikt måste du ha rollen **gransknings loggar** eller skrivskyddade **gransknings loggar** , som har tilldelats roll grupperna **organisations hantering**, **regelefterlevnad** och **säkerhets administratör** . Mer information finns i [behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd UK för att ändra listan över medlemmar i roll grupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Information om tangent bords gen vägar som kan gälla för procedurerna i det här avsnittet finns i kortkommandon [för administrations centret för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Information om kortkommandon som kan gälla för procedurerna i den här artikeln finns i kortkommandon [för administrations centret för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Har du problem? Be om hjälp i [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.
 
 ## <a name="use-the-eac-to-view-the-admin-audit-log"></a>Använda UK för att Visa administratörs gransknings loggen
 
-1. Gå till granskning i **överensstämmelse hantering** i UK \> **Auditing**och välj sedan **kör rapporten administratörs Gransknings logg**.
+1. Gå till granskning i **överensstämmelse hantering** i UK \> och välj sedan **kör rapporten administratörs Gransknings logg**.
 
 2. Välj ett **start datum** och **slutdatum** i listan **Sök efter ändringar på sidan för administratörs roller** som öppnas och välj sedan **Sök**. Alla konfigurations ändringar som görs under den angivna tids perioden visas och kan sorteras med hjälp av följande information:
 
@@ -102,7 +102,7 @@ I det här exemplet utförs en sökning efter alla gransknings loggar med följa
 
 - **Start datum**: 4 augusti 2019
 - **Slutdatum**: 3 oktober 2019
-- **Cmdletar**: Update-RoleGroupMember
+- **Cmdlet**: Update-RoleGroupMember
 
 ```PowerShell
 Search-AdminAuditLog -Cmdlets Update-RoleGroupMember -StartDate (Get-Date "08/04/2019").ToUniversalTime() -EndDate (Get-Date "10/03/2019").ToUniversalTime()
@@ -112,7 +112,7 @@ Detaljerad information om syntax och parametrar finns i [sökAdminAuditLog](http
 
 ### <a name="view-details-of-audit-log-entries"></a>Visa information om Gransknings logg poster
 
-Cmdleten **search-AdminAuditLog** returnerar fälten som beskrivs i avsnittet [granska logg innehåll](#audit-log-contents) längre ned i det här avsnittet. För de fält som returneras av cmdleten, två fält, **CmdletParameters** och **ModifiedProperties**, innehåller ytterligare information som inte returneras som standard.
+Cmdleten **search-AdminAuditLog** returnerar fälten som beskrivs i avsnittet [audit log](#audit-log-contents) i den här artikeln. För de fält som returneras av cmdleten, två fält, **CmdletParameters** och **ModifiedProperties**, innehåller ytterligare information som inte returneras som standard.
 
 Om du vill visa innehållet i fälten **CmdletParameters** och **ModifiedProperties** följer du stegen nedan.
 

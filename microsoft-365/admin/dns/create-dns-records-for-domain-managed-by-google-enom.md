@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 3c490fbf-7833-4e43-be34-ed0dc3cce5e3
 description: Lär dig hur du kommer åt eNom och skapar DNS via sidan Google domains.
-ms.openlocfilehash: 37fa8836b7511d51ef2dcb137f36d62eebc36443
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3294be667653c568fbbd1a911bcfab9b6ea7788b
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645617"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656861"
 ---
 # <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>Skapa DNS-poster när din domän hanteras av Google (eNom)
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 För att migrera dina e-postkonton till Microsoft måste du skapa en DNS-post hos din domän registrator.
   
@@ -40,7 +40,7 @@ Du kan komma åt eNom och skapa DNS via sidan Google **Domains** . Följ bara an
   
 ## <a name="create-the-dns-record"></a>Skapa DNS-posten
 
-1. I [Google Admin Console](https://www.google.com/work/apps/business)väljer du **Logga**in.
+1. I [Google Admin Console](https://www.google.com/work/apps/business)väljer du **Logga** in.
     
     ![Google-Apps-Configure-1-1-0](../../media/37a6e9f6-319e-4c02-aa18-d8d06df7953d.png)
   
@@ -48,7 +48,7 @@ Du kan komma åt eNom och skapa DNS via sidan Google **Domains** . Följ bara an
     
     ![Google Apps - Konfigurera-1-1-1](../../media/2caf8dcb-4d40-4cfa-bc40-d634e454e699.png)
   
-3. Välj **fler kontroller**längst ned på sidan.
+3. Välj **fler kontroller** längst ned på sidan.
     
     ![Google-Apps-Configure-1-2-0](../../media/1518ff78-035b-423e-85a3-c16d7faa0968.png)
   
@@ -60,14 +60,14 @@ Du kan komma åt eNom och skapa DNS via sidan Google **Domains** . Följ bara an
     
     ![Google Apps - Konfigurera-1-2-2](../../media/07b8068f-9a05-40aa-a041-fc495c729a18.png)
   
-6. Välj **Advanced DNS Settings**på sidan **Domains** .
+6. Välj **Advanced DNS Settings** på sidan **Domains** .
     
     > [!NOTE]
     > Om du inte köpte ett domännamn via Google när du registrerade ditt **Google Apps for Work** -konto visas inte **Advanced DNS settings** på sidan **Domains**. Då måste du i stället gå direkt till domänvärdens webbplats för att komma åt DNS-inställningarna och följa de här anvisningarna. Se [komma åt dina domän inställningar för G Suite](https://support.google.com/a/answer/54693?hl=en) för mer information. 
   
     ![Google-Apps – eNom-Configure-1-3](../../media/b244b29c-e479-40be-b380-4ffa0f74b421.png)
   
-7. På sidan **Advanced DNS Settings** väljer **du logga in på DNS Console**. Skriv ned **inloggningsnamnet** och **lösenord**sinformationen. Du behöver det i nästa steg. 
+7. På sidan **Advanced DNS Settings** väljer **du logga in på DNS Console**. Skriv ned **inloggningsnamnet** och **lösenord** sinformationen. Du behöver det i nästa steg. 
     
     ![Google-Apps – eNom-Configure-1-4](../../media/056a2767-462f-4847-acee-d01e3f773add.png)
   
@@ -75,11 +75,11 @@ Du kan komma åt eNom och skapa DNS via sidan Google **Domains** . Följ bara an
     
     ![Google-Apps – eNom-Configure-1-5](../../media/08b74652-8cdb-4560-a5fd-0899f86deee8.png)
   
-9. På sidan ** _domain_name_*_, i avsnittet _* Host Records** väljer du **Edit**.
+9. På sidan **_domain_name_*_, i avsnittet _* Host Records** väljer du **Edit**.
     
     ![Google-Apps – eNom-Configure-1-6](../../media/d54fec18-b9d1-4796-8397-0393c964eade.png)
   
-10. Välj **Add New**i avsnittet **Host Records** .
+10. Välj **Add New** i avsnittet **Host Records** .
     
     ![Google-Apps – eNom-Configure-1-7](../../media/3562806a-4328-4e60-a717-0566841204cf.png)
   
@@ -90,7 +90,7 @@ Du kan komma åt eNom och skapa DNS via sidan Google **Domains** . Följ bara an
     |@  <br/> ||TXT  <br/> |
 
     > [!NOTE]
-    > Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen. 
+    > Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen. 
   
     [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)
   

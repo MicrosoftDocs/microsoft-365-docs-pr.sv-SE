@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Bluehost för Microsoft.
-ms.openlocfilehash: c0ba1b876c939632bc6c43a6e0004fbbe23a7723
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a9de709b0981c3e74eec1a3ea0e0452d068c5ad4
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646241"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658153"
 ---
 # <a name="create-dns-records-at-bluehost-for-microsoft"></a>Skapa DNS-poster på Bluehost för Microsoft
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 Om Bluehost är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag - Online och så vidare.
   
@@ -53,7 +53,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
     (Du kan behöva rulla nedåt.)
     
-3. I området ** _domain_name_*_ väljer du*** **Manage DNS Records**på raden _ DNS Zone Editor.
+3. I området **_domain_name_*_ väljer du*** **Manage DNS Records** på raden _ DNS Zone Editor.
     
 4. Gå till sidan **DNS Zone Editor** och området **Add DNS Record**. I den nya postens rutor skriver du in, eller kopierar och klistrar in värdena från följande tabell. 
     
@@ -62,7 +62,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     |||||
     |:-----|:-----|:-----|:-----|
     |**Host Record** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Value** <br/> |
-    |@  <br/> |14400  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |14400  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
 5. Välj **Add Record**.
     
@@ -93,7 +93,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     (Du kan behöva rulla nedåt.)
     
-3. I området ** _domain_name_*_ väljer du*** **Manage DNS Records**på raden _ DNS Zone Editor.
+3. I området **_domain_name_*_ väljer du*** **Manage DNS Records** på raden _ DNS Zone Editor.
     
 4. Gå till sidan **DNS Zone Editor** och området **Add DNS Record**. I den nya postens rutor skriver du in, eller kopierar och klistrar in värdena från följande tabell. 
     
@@ -115,7 +115,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Välj Ta bort för varje ytterligare MX-post](../../media/6be17f54-3f33-47af-a9db-4689141530c2.png)
   
-7. Välj **OK**i bekräftelse dialog rutan.
+7. Välj **OK** i bekräftelse dialog rutan.
     
     ![Välj OK](../../media/a50df7a3-2906-4cc0-87d4-1231ab234230.png)
   
@@ -130,7 +130,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     (Du kan behöva rulla nedåt.)
     
-3. I området ** _domain_name_*_ väljer du*** **Manage DNS Records**på raden _ DNS Zone Editor.
+3. I området **_domain_name_*_ väljer du*** **Manage DNS Records** på raden _ DNS Zone Editor.
     
 4. Leta reda på raden för posten **Autodiscover** i avsnittet **a (hosts)** Records och välj **ta bort** för den raden. 
     
@@ -173,7 +173,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. I stället kan du lägga till de Microsoft-värden som krävs i den aktuella posten så att du har en  *enda*  SPF-post som innehåller båda uppsättningar med värden. Behöver du exempel? Ta en titt på dessa [externa DNS-poster för Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Du kan validera SPF-posten genom att använda någon av dessa[SPF-verifierings verktyg](../setup/domains-faq.md). 
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. I stället kan du lägga till de Microsoft-värden som krävs i den aktuella posten så att du har en  *enda*  SPF-post som innehåller båda uppsättningar med värden. Behöver du exempel? Ta en titt på dessa [externa DNS-poster för Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Du kan validera SPF-posten genom att använda någon av dessa[SPF-verifierings verktyg](../setup/domains-faq.yml). 
   
 1. Kom igång genom att gå till domänsidan på Bluehost genom att klicka på [den här länken](https://my.bluehost.com/cgi/dm). Du uppmanas att logga in först.
     
@@ -181,7 +181,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     (Du kan behöva rulla nedåt.)
     
-3. I området ** _domain_name_*_ väljer du*** **Manage DNS Records**på raden _ DNS Zone Editor.
+3. I området **_domain_name_*_ väljer du*** **Manage DNS Records** på raden _ DNS Zone Editor.
     
 4. Gå till sidan **DNS Zone Editor** och området **Add DNS Record**. I den nya postens rutor skriver du in, eller kopierar och klistrar in värdena från följande tabell. 
     
@@ -206,7 +206,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     (Du kan behöva rulla nedåt.)
     
-3. I området ** _domain_name_*_ väljer du*** **Manage DNS Records**på raden _ DNS Zone Editor.
+3. I området **_domain_name_*_ väljer du*** **Manage DNS Records** på raden _ DNS Zone Editor.
     
 4. Skapa den första av de två SRV-posterna.
     

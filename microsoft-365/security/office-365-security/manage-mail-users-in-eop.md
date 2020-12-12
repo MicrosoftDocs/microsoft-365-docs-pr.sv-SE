@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Lär dig hur du hanterar e-postanvändare i Exchange Online Protection (EOP), inklusive att använda Directory-synkronisering, UK och PowerShell för att hantera användare.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3c3e69def731a85c0dccffdcb5620560dcf00052
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: a8258a63fe0fbf4a6b5641fbdef213f25de2e4dd
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356733"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658839"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Hantera e-postanvändare i fristående EOP
 
@@ -30,21 +30,21 @@ I fristående Exchange Online Protection-organisationer (EOP) utan Exchange Onli
 > [!NOTE]
 > När du skapar en e-postanvändare finns motsvarande användar konto i administrations centret för Microsoft 365. När du skapar ett användar konto i administrations centret för Microsoft 365 kan du inte använda det kontot för att skapa en e-postanvändare.
 
-Den rekommenderade metoden för att skapa och hantera e-postanvändare i fristående EOP är att använda profilsynkronisering enligt beskrivningen i avsnittet [använda katalog synkronisering för att hantera e-postanvändare](#use-directory-synchronization-to-manage-mail-users) i det här avsnittet.
+Den rekommenderade metoden för att skapa och hantera e-postanvändare i fristående EOP är att använda profilsynkronisering enligt beskrivningen i avsnittet [använda katalog-synkronisering för att hantera e-postanvändare](#use-directory-synchronization-to-manage-mail-users) i den här artikeln.
 
-För fristående EOP-organisationer med ett fåtal användare kan du lägga till och hantera e-postanvändare i administrations centret för Exchange (UK) eller fristående EOP PowerShell enligt beskrivningen i det här avsnittet.
+För fristående EOP-organisationer med ett fåtal användare kan du lägga till och hantera e-postanvändare i administrations centret för Exchange (UK) eller fristående EOP PowerShell enligt beskrivningen i den här artikeln.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
 - Om du vill öppna administrations centret för Exchange (UK) läser du [administrations Center för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - När du skapar e-postanvändare i EOP PowerShell kan du stöta på begränsning. Dessutom använder PowerShell-cmdlets för EOP en grupp bearbetnings metod som resulterar i ett par minuter innan resultatet av kommandona visas.
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Specifikt behöver du skapa en e-postmottagare (skapa) och e-postmottagare (ändra), som är tilldelad till i (globala administratörer) och RecipientManagement roll grupper som standard. Mer information finns i [behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd UK för att ändra listan över medlemmar i roll grupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Du måste ha behörighet i Exchange Online Protection innan du kan göra det i den här artikeln. Du behöver bara skapa **e-postmottagare** och **e-postmottagare** (ändra), som har tilldelats roll grupperna **organisations hantering** (globala administratörer) och **mottagar hantering** . Mer information finns i [behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd UK för att ändra listan över medlemmar i roll grupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Information om tangent bords gen vägar som kan gälla för procedurerna i det här avsnittet finns i kortkommandon [för administrations centret för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Information om kortkommandon som kan gälla för procedurerna i den här artikeln finns i kortkommandon [för administrations centret för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Har du problem? Be om hjälp i Exchange-forumen. Gå till [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.

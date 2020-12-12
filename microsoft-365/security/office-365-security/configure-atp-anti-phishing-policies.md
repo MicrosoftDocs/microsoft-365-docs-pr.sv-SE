@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur du skapar, ändrar och tar bort de avancerade AntiPhishing-principer som är tillgängliga i organisationer med Microsoft Defender för Office 365.
-ms.openlocfilehash: ae8c87a0bfb7f975328d8283f0b62aa12c1d5e2b
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 295600098aee151ec088e48345bf69181ba3afb8
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572411"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658900"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Konfigurera AntiPhishing-principer i Microsoft Defender för Office 365
 
@@ -44,7 +44,7 @@ Skillnaden mellan dessa två element är inte uppenbar när du hanterar skydd mo
 - När du ändrar en princip kan inställningar som är relaterade till namn, prioritet, aktiverade eller inaktiverade och mottagar filter ändra Phish regel. Alla andra inställningar ändra den associerade policyn för Phish.
 - När du tar bort en princip tas Phish-regeln och den associerade anti-Phish-principen bort.
 
-I Exchange Online PowerShell hanterar du policyn och regeln separat. Mer information finns i [använda Exchange Online PowerShell för att konfigurera skydd mot nätfiske-principer i avsnittet Microsoft Defender för Office 365](#use-exchange-online-powershell-to-configure-anti-phishing-policies-in-microsoft-defender-for-office-365) längre ned i det här avsnittet.
+I Exchange Online PowerShell hanterar du policyn och regeln separat. Mer information finns i [använda Exchange Online PowerShell för att konfigurera AntiPhishing-principer i Microsoft Defender för Office 365](#use-exchange-online-powershell-to-configure-anti-phishing-policies-in-microsoft-defender-for-office-365) avsnitt längre ned i den här artikeln.
 
 Alla Microsoft Defender för Office 365-organisationer har en inbyggd policy för anti-nätfiske som heter Office365 AntiPhish standard och har följande egenskaper:
 
@@ -58,9 +58,9 @@ För att öka effektiviteten för skydd mot nätfiske i Microsoft Defender för 
 
 - Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Använd om du vill gå direkt till sidan **ATP-nätfiske** <https://protection.office.com/antiphishing> .
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Du måste tilldelas behörigheter i säkerhets & Compliance Center innan du kan göra det i den här artikeln:
+- Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
   - För att lägga till, ändra och ta bort skydd mot nätfiske måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** .
   - Om du vill ha skrivskyddad åtkomst till principer mot nätfiske måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** <sup>\*</sup> .
 
@@ -68,7 +68,7 @@ För att öka effektiviteten för skydd mot nätfiske i Microsoft Defender för 
 
   **Anmärkningar**:
 
-  - Om du lägger till användare i motsvarande Azure Active Directory-roll i Microsoft 365 Admin Center får användarna den behörighet som krävs för säkerhets & efterlevnad Center _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
   - Roll gruppen **organisations hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen <sup>\*</sup> .
   - <sup>\*</sup> I säkerhets & Compliance Center är skrivskyddad åtkomst tillåta användare att Visa inställningar för anpassade skydds principer. Skrivskyddade användare kan inte se inställningarna i standard policyn för skydd mot nätfiske.
 
@@ -502,7 +502,7 @@ Detaljerad information om syntax och parametrar finns i [Get-AntiPhishRule](http
 
 ### <a name="use-powershell-to-modify-anti-phish-policies"></a>Använda PowerShell för att ändra policyn för Phish
 
-Förutom följande objekt är samma inställningar tillgängliga när du ändrar en policy för Phish i PowerShell som när du skapar policyn enligt beskrivningen i [steg 1: använda PowerShell för att skapa ett princip policy för Phish](#step-1-use-powershell-to-create-an-anti-phish-policy) .
+Förutom följande objekt är samma inställningar tillgängliga när du ändrar en policy mot Phish i PowerShell som när du skapar policyn enligt beskrivningen i [steg 1: använda PowerShell för att skapa ett policy mot principer för Phish](#step-1-use-powershell-to-create-an-anti-phish-policy) tidigare i den här artikeln.
 
 - _MakeDefault_ -växeln som aktiverar den angivna principen till standard principen (tillämpas på alla, alltid **lägst** prioritet och du kan inte ta bort den) är bara tillgänglig när du ändrar en policy mot Phish i PowerShell.
 
@@ -520,7 +520,7 @@ Detaljerad information om syntax och parametrar finns i [set-AntiPhishPolicy](ht
 
 Den enda inställning som inte är tillgänglig när du ändrar en anti-Phish-regel i PowerShell är den _aktiverade_ parametern som gör att du kan skapa en inaktive rad regel. Information om hur du aktiverar eller inaktiverar befintliga regler för Phish finns i nästa avsnitt.
 
-Annars är inga ytterligare inställningar tillgängliga när du ändrar en Phish-regel i PowerShell. Samma inställningar är tillgängliga när du skapar en regel enligt beskrivningen i [steg 2: använda PowerShell för att skapa en antiphish regel](#step-2-use-powershell-to-create-an-anti-phish-rule) -avsnitt tidigare i det här avsnittet.
+Annars är inga ytterligare inställningar tillgängliga när du ändrar en Phish-regel i PowerShell. Samma inställningar är tillgängliga när du skapar en regel enligt beskrivningen i [steg 2: använda PowerShell för att skapa ett antiphish regel](#step-2-use-powershell-to-create-an-anti-phish-rule) avsnitt tidigare i den här artikeln.
 
 Om du vill ändra en Phish regel använder du följande syntax:
 

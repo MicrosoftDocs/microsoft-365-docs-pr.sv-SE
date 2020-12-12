@@ -23,16 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på GoDaddy för Microsoft.
-ms.openlocfilehash: 995e579e21a185084d9ee64a7ee462930d845844
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fdd8688f848e676411e736a5be10a2d01dcce50b
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646133"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658482"
 ---
 # <a name="create-dns-records-at-godaddy-for-microsoft"></a>Skapa DNS-poster på GoDaddy för Microsoft
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter.
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter.
 
 Om GoDaddy är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag - Online och så vidare.
 
@@ -55,7 +55,7 @@ Följ stegen nedan.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. Under **domäner**väljer du DNS under den domän som du vill redigera.
+2. Under **domäner** väljer du DNS under den domän som du vill redigera.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -67,7 +67,7 @@ Följ stegen nedan.
 
     |**Record type** |**Värd**|**TXT Value**|**TTL** |
     |:-----|:-----|:-----|:-----|
-    |TXT (Text)|@|MS=ms *XXXXXXXX*<br>**Obs!** det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)|1 timme  <br>(Välj ett värde i list rutan.)|
+    |TXT (Text)|@|MS=ms *XXXXXXXX*<br>**Obs!** det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)|1 timme  <br>(Välj ett värde i list rutan.)|
 
       ![GoDaddy-BP-verify-1-0](../../media/dns/56526870-d6465780-651a-11e9-9cf0-d6fff71e2f62.png)
 
@@ -106,7 +106,7 @@ Följ stegen nedan.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. Under **domäner**väljer du DNS under den domän som du vill redigera.
+2. Under **domäner** väljer du DNS under den domän som du vill redigera.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -137,7 +137,7 @@ Följ stegen nedan.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. Under **domäner**väljer du DNS under den domän som du vill redigera.
+2. Under **domäner** väljer du DNS under den domän som du vill redigera.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -180,7 +180,7 @@ Följ stegen nedan.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. Under **domäner**väljer du DNS under den domän som du vill redigera.
+2. Under **domäner** väljer du DNS under den domän som du vill redigera.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -214,7 +214,7 @@ Följ stegen nedan.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. Under **domäner**väljer du DNS under den domän som du vill redigera.
+2. Under **domäner** väljer du DNS under den domän som du vill redigera.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 

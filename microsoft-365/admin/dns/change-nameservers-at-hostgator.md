@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: f3bd3c62-0477-48e4-b2b5-21e329d67985
 description: Lär dig hur du kan konfigurera Microsoft för att hantera DNS-posterna för din anpassade domän på Host gator.
-ms.openlocfilehash: 02052e98ba92c970a1e8bcc89c73df6946a6c472
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 34e7bbe3abc084185f72f4fef004ad891492ef3c
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646445"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658026"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-hostgator"></a>Ändra namnservrar för att konfigurera Microsoft 365 med Host Gator
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter.
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter.
   
 Följ de här anvisningarna om du vill att Microsoft ska hantera dina DNS-poster åt dig. (Om du vill kan du [hantera alla dina Microsoft DNS-poster på Host Gator](create-dns-records-at-hostgator.md).)
   
@@ -94,7 +94,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
 |||||
 |:-----|:-----|:-----|:-----|
 |**Name** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Data** <br/> |
-|Använd ditt  *domännamn*  . (Till exempel fourthcoffee.com.)  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |9.1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)     <br/>  |
+|Använd ditt  *domännamn*  . (Till exempel fourthcoffee.com.)  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |9.1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)     <br/>  |
    
 4. Välj **Add Record**.
     
@@ -124,7 +124,7 @@ För att slutföra konfigurationen av din domän med Microsoft ändrar du domän
 > När du ändrar domänens NS-poster så att de pekar på Microsoft Name Server påverkas alla tjänster som är associerade till din domän. Till exempel kommer all e-post som skickas till din domän (som rob@ *your_domain*  . com) att komma till Microsoft när du har gjort den här ändringen.
   
 > [!IMPORTANT]
-> Följande procedur visar hur du tar bort andra, oönskade namnservrar från listan, och hur du lägger till korrekta namnservrar om de inte redan finns i listan. När du har slutfört stegen i det här avsnittet är de enda namnservrar som ska visas här fyra:  **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **NS3.bdm.microsoftonline.com**och **NS4.bdm.microsoftonline.com**.
+> Följande procedur visar hur du tar bort andra, oönskade namnservrar från listan, och hur du lägger till korrekta namnservrar om de inte redan finns i listan. När du har slutfört stegen i det här avsnittet är de enda namnservrar som ska visas här fyra:  **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **NS3.bdm.microsoftonline.com** och **NS4.bdm.microsoftonline.com**.
   
 1. Kom igång genom att gå till kundportalen på Hostgator genom att klicka på [den här länken](https://portal.hostgator.com/domain/manage). Du uppmanas att logga in.
     
@@ -138,7 +138,7 @@ För att slutföra konfigurationen av din domän med Microsoft ändrar du domän
     
     ![Hostgator-BP-Redelegate-1-2](../../media/2c2f8530-26a1-4e62-bb04-b3874bc1cf36.png)
   
-4. Välj **ändra**i området **Name servers** på sidan **Domain Overview** .
+4. Välj **ändra** i området **Name servers** på sidan **Domain Overview** .
     
     ![Hostgator-BP - Omdelegera-1-3](../../media/c8979d8a-ee96-4064-a8df-c5b01054cb16.png)
   
@@ -146,11 +146,11 @@ För att slutföra konfigurationen av din domän med Microsoft ändrar du domän
     
     ![Hostgator-BP - Omdelegera-1-4](../../media/4cf61060-1e8a-4758-9892-32059ffc90c2.png)
   
-6. Välj **Ange namn**automatiskt.
+6. Välj **Ange namn** automatiskt.
     
     ![Hostgator-BP - Omdelegera-1-5](../../media/5b73ae32-f26e-48aa-b5ad-6da20f1c491a.png)
   
-7.   **Varning**! Följ de här anvisningarna bara om du har en annan namnservrar än de fyra korrekta namnservrar. (Det är bara att ta bort alla aktuella namnservrar som  *inte*  heter **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **NS3.bdm.microsoftonline.com**eller **NS4.bdm.microsoftonline.com**.)
+7.   **Varning**! Följ de här anvisningarna bara om du har en annan namnservrar än de fyra korrekta namnservrar. (Det är bara att ta bort alla aktuella namnservrar som  *inte*  heter **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **NS3.bdm.microsoftonline.com** eller **NS4.bdm.microsoftonline.com**.)
   
         Fortfarande på sidan **Name Servers** för din domän tar du bort varje namnserver i listan genom att markera den och sedan trycka på **Delete** på tangentbordet. 
     

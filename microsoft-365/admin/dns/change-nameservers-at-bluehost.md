@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 7712b6af-329c-43a0-af7b-c4e4c1befb0e
 description: 'Lär dig hur du konfigurerar DNS-poster på Bluehost. '
-ms.openlocfilehash: c15ba11e0df57deaef61309f5bc6d1b2a60645b8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 78b138a501054a573c2b36cc486dda833be7ae35
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646469"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658014"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-bluehost"></a>Ändra namnservrar för att konfigurera Microsoft med Bluehost
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 Följ de här anvisningarna om du vill att Microsoft ska hantera dina DNS-poster åt dig. (Om du vill kan du [hantera alla dina DNS-poster på Bluehost](create-dns-records-at-bluehost.md).)
   
@@ -56,7 +56,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
 |||||
 |:-----|:-----|:-----|:-----|
 |**Host Record** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Value** <br/> |
-|@  <br/> |14400  <br/> |TXT  <br/> |MS=ms *XXXXXXXX* <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md) <br/> |
+|@  <br/> |14400  <br/> |TXT  <br/> |MS=ms *XXXXXXXX* <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
 5. Välj **Add Record**.
@@ -139,7 +139,7 @@ För att slutföra konfigurationen av din domän med Microsoft ändrar du domän
 ### <a name="if-there-are-nameservers-already-listed"></a>Om det redan FINNS namnservrar listade
 
 > [!CAUTION]
-> Följ de här stegen endast om du har andra befintliga namnservrar än de fyra korrekta namnservrar. (Det är bara att ta bort alla aktuella namnservrar som  *inte*  heter **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **NS3.bdm.microsoftonline.com**eller **NS4.bdm.microsoftonline.com**.) 
+> Följ de här stegen endast om du har andra befintliga namnservrar än de fyra korrekta namnservrar. (Det är bara att ta bort alla aktuella namnservrar som  *inte*  heter **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **NS3.bdm.microsoftonline.com** eller **NS4.bdm.microsoftonline.com**.) 
   
 1. Om det finns andra namnservrar tar du bort var och en av dem genom att markera den och sedan trycka på **Delete**-tangenten. 
     

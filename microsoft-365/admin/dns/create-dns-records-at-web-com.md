@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på web.com för Microsoft.
-ms.openlocfilehash: 25df88e05e96e2394628bf89c8cc07af2d0eac1e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 943070f3790f532a0cc686270e0ecdea08f802fd
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645761"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656897"
 ---
 # <a name="create-dns-records-at-webcom-for-microsoft"></a>Skapa DNS-poster på web.com för Microsoft
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 Om web.com är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och så vidare.
   
@@ -84,11 +84,11 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
 3. Under * * Hantera * min domän * * * väljer du **Redigera avancerade DNS-poster**.
 
   
-4. Klicka på **Edit TXT Records**under **text (TXT-poster)** på sidan **Domain Names** och välj sedan värdena från följande tabell. 
+4. Klicka på **Edit TXT Records** under **text (TXT-poster)** på sidan **Domain Names** och välj sedan värdena från följande tabell. 
     
     |**Host**|**TTL**|**Text**|
     |:-----|:-----|:----|
-    |@  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)    |
+    |@  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)    |
   
     
 5. Välj **Fortsätt**.
@@ -127,7 +127,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 3. Under * * Hantera * min domän * * * väljer du **Redigera avancerade DNS-poster**.
 
-4. Under **e-postservrar (MX-poster)** klickar du på **Edit MX Records**och väljer sedan värdena från följande tabell. 
+4. Under **e-postservrar (MX-poster)** klickar du på **Edit MX Records** och väljer sedan värdena från följande tabell. 
     
     |**Prioritet**|**TTL**|**Mail server (postserver)**|
     |:-----|:-----|:-----|
@@ -136,7 +136,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 
 5. Välj **Spara**.
   
-6. Om det finns andra MX-poster i avsnittet **MX Records** markerar du kryss rutan bredvid posten under **ta bort**och väljer **Spara**. 
+6. Om det finns andra MX-poster i avsnittet **MX Records** markerar du kryss rutan bredvid posten under **ta bort** och väljer **Spara**. 
   
 7. På bekräftelse sidan väljer du **Spara ändringar**. 
 
@@ -152,7 +152,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 
 4. Lägg till den första av de sex CNAME-posterna.
     
-    Under **Host aliases (CNAME-poster)** klickar du på **Redigera CNAME-poster**och väljer sedan värdena från följande tabell.
+    Under **Host aliases (CNAME-poster)** klickar du på **Redigera CNAME-poster** och väljer sedan värdena från följande tabell.
     
     
     |**Alias**|**TTL**|**Refers to Host Name**|**Annan värd**|
@@ -184,7 +184,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 3. Under * * Hantera * min domän * * * väljer du **Redigera avancerade DNS-poster**.
 
   
-4. Klicka på **Edit TXT Records**under **text (TXT-poster)** på sidan **Domain Names** och välj sedan värdena från följande tabell.   
+4. Klicka på **Edit TXT Records** under **text (TXT-poster)** på sidan **Domain Names** och välj sedan värdena från följande tabell.   
     
     |**Host**|**TTL**|**Text**|
     |:-----|:-----|:-----|
@@ -211,7 +211,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 4. Lägg till den första av de två SRV-posterna.
 
-    Under **tjänst (SRV-poster)** klickar du på **Redigera SRV-poster**och väljer sedan värdena från följande tabell. 
+    Under **tjänst (SRV-poster)** klickar du på **Redigera SRV-poster** och väljer sedan värdena från följande tabell. 
         
     |**Service**|**Protocol**|**TTL**|**Prioritet**|**Vikt**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|

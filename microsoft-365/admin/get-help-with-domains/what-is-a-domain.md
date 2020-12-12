@@ -22,16 +22,16 @@ description: Förstå vad en domän är och hur du kan köpa en domän eller anv
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 0c59fb6bc5f9a7796c84a0370c771bf90102dec0
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 9afc38aeda32870a248212f7b67f2fb4af8fd960
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645125"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658081"
 ---
 # <a name="what-is-a-domain"></a>Vad är en domän?
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 En domän är ett unikt namn som visas efter **@** -tecknet i e-postadresser och efter **www.** i webbadresser. Det tar vanligt vis hänsyn till organisationens namn och ett standardiserat Internet-suffix, till exempel *yourbusiness. <span> com* eller *StateUniversity. <span> edu*. 
   

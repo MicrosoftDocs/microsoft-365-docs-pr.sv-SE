@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 0db29490-2612-48bc-9b77-1862e7a41a8c
 description: Läs mer om att verifiera din domän och konfigurera DNS-poster för e-post, Lync och andra tjänster på Google Domains för Microsoft.
-ms.openlocfilehash: 417fe89bd408eba4d3b14ecb3e38af6beed196cf
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a20b08d92814865cee5b169cb435b898a6b068ac
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646097"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657869"
 ---
 # <a name="create-dns-records-at-google-domains-for-microsoft"></a>Skapa DNS-poster på Google Domains för Microsoft
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 Om Google Domains är din DNS-värd följer du anvisningarna i den här artikeln om du vill verifiera din domän och konfigurera DNS-posterna för e-post, Lync och så vidare.
   
@@ -53,7 +53,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
 1. Välj **Logga in**.
     
-2. Ange dina inloggnings uppgifter och välj sedan **Logga**in igen.
+2. Ange dina inloggnings uppgifter och välj sedan **Logga** in igen.
     
 2. På sidan **My** Domains letar du reda på den domän som du vill använda med Microsoft och väljer **Hantera** -länken bredvid den. I det vänstra navigerings fältet väljer du **DNS**.
     
@@ -66,7 +66,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     |||||
     |:-----|:-----|:-----|:-----|
     |**Name** <br/> |**Type (typ)** <br/> |**TTL** <br/> |**Data** <br/> |
-    |@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. Välj **Lägg till**.
     
@@ -96,13 +96,13 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
 2. Välj **Logga in**.
     
-3. Ange dina inloggnings uppgifter och välj sedan **Logga**in igen.
+3. Ange dina inloggnings uppgifter och välj sedan **Logga** in igen.
 4. Välj **Konfigurera DNS** för den domän som du vill redigera i avsnittet **Domain** **på sidan** domains.
     
     > [!IMPORTANT]
     > Om du har ett G Suite-e-postkonto måste du först ta bort MX-posterna som är kopplade till kontot. G Suite MX-posterna hindrar dig från att lägga till andra MX-poster, inklusive de som behövs för Microsoft. Observera att borttagning av MX-poster inte raderar ditt G Suite-konto. Så här tar du bort MX-posterna från ditt G Suite-konto. 
   
-5. Välj **ta bort**i området **G Suite** i avsnittet **syntetiska poster** .
+5. Välj **ta bort** i området **G Suite** i avsnittet **syntetiska poster** .
     
     (Du kan behöva rulla nedåt.)
     
@@ -181,17 +181,17 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Lägga till en TXT-post för SPF för att förhindra skräppost
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg istället till de obligatoriska Microsoft-värdena i den aktuella posten, så att du har en enda SPF-post som innehåller båda uppsättningarna med värden. Behöver du exempel? Ta en titt på dessa [externa DNS-poster för Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#bkmk_spfrecords). Om du vill validera SPF-posten kan du använda något av dessa [SPF-valideringsverktyg](../setup/domains-faq.md). 
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg istället till de obligatoriska Microsoft-värdena i den aktuella posten, så att du har en enda SPF-post som innehåller båda uppsättningarna med värden. Behöver du exempel? Ta en titt på dessa [externa DNS-poster för Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#bkmk_spfrecords). Om du vill validera SPF-posten kan du använda något av dessa [SPF-valideringsverktyg](../setup/domains-faq.yml). 
   
 1. Börja med att gå till domänsidan på Google Domains genom att klicka på [den här länken](https://domains.google.com/registrar). Du uppmanas att logga in. Gör så här:
     
 1. Välj **Logga in**.
     
-2. Ange dina inloggnings uppgifter och välj sedan **Logga**in igen.
+2. Ange dina inloggnings uppgifter och välj sedan **Logga** in igen.
     
 3. Välj **Konfigurera DNS** för den domän som du vill redigera i avsnittet **Domain** **på sidan** domains. 
     
-4. Välj **Redigera**på raden txt Record i avsnittet **Custom Resource Records** . 
+4. Välj **Redigera** på raden txt Record i avsnittet **Custom Resource Records** . 
     
     > [!IMPORTANT]
     > I Google Domains betraktas en TXT-post som en uppsättning som kan innehålla flera poster. Om du har minst en TXT-post, till exempel TXT-posten du använde för att verifiera din domän, måste du lägga till nya TXT-poster i denna postuppsättning. Försöker du att ange ytterligare TXT-poster som separata poster får du ett felmeddelande om **Duplicate record** (dublettpost). 
@@ -226,7 +226,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
 2. Välj **Logga in**.
     
-3. Ange dina inloggnings uppgifter och välj sedan **Logga**in igen.
+3. Ange dina inloggnings uppgifter och välj sedan **Logga** in igen.
     
 4. Välj **Konfigurera DNS** för den domän som du vill redigera i avsnittet **Domain** **på sidan** domains. 
     

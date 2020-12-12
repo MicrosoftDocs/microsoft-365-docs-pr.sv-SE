@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Administratörer kan läsa mer om fel koderna som är kopplade till meddelande leverans via kopplingar (kallas även för e-postflöde).
-ms.openlocfilehash: 461d9bfa91d88b8bbec52d5aad6ec7a2e534bc96
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 5339bf2117a87cd940c4b96b3d00b7b8ba78a1da
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877807"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658863"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>E-postflödesinformation i EOP
 
@@ -27,7 +27,7 @@ ms.locfileid: "48877807"
 
 I Microsoft 365-organisationer med post lådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor använder du vanligt vis en koppling för att dirigera e-postmeddelanden från EOP till din lokala e-postmiljö. Du kan också använda en koppling för att dirigera meddelanden från Microsoft 365 till en partner organisation. När Microsoft 365 inte kan leverera dessa meddelanden via kopplingen köas de i Microsoft 365. Microsoft 365 fortsätter att försöka leverera för varje meddelande i 24 timmar. Efter 24 timmar upphör det köade meddelandet att upphöra och meddelandet kommer att återföras till den ursprungliga avsändaren i en rapport om utebliven leverans (kallas även för en NDR eller ett studs meddelande).
 
-Microsoft 365 skapar ett fel när ett meddelande inte kan levereras med en koppling. De vanligaste felen och deras lösningar beskrivs i det här avsnittet. Det är kollektivt, köer och aviserings fel för meddelanden som skickas via kopplingar kallas för _e-postflöde_.
+Microsoft 365 skapar ett fel när ett meddelande inte kan levereras med en koppling. De vanligaste felen och deras lösningar beskrivs i den här artikeln. Det är kollektivt, köer och aviserings fel för meddelanden som skickas via kopplingar kallas för _e-postflöde_.
 
 ## <a name="error-code-450-44312-dns-query-failed"></a>Felkod: 450 4.4.312 DNS Query misslyckades
 

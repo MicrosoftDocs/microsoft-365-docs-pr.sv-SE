@@ -24,40 +24,40 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: 'Lär dig hur du hittar de värden du behöver för att skapa DNS-poster för Microsoft 365. '
-ms.openlocfilehash: eca9dbe4e40193f76538b639624b827177ff7772
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: db9aff1fdcd9fa52c90cc96b1a32cd3908c30edb
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645317"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658513"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>Samla den information du behöver för att skapa DNS-poster
 
- **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
+ **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 ### <a name="step-1-find-the-txt-record-value-and-verify"></a>Steg 1: Sök efter TXT-Postens värde och bekräfta
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **konfigurations** domäner i administrations centret för Microsoft 365 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> .
+1. Gå till sidan **konfigurations** domäner i administrations centret för Microsoft 365 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Konfigurera** domäner i administrations centret > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> .
+1. Gå till sidan **Konfigurera** domäner i administrations centret > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank"></a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Konfigurera** domäner i administrations centret > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> .
+1. Gå till sidan **Konfigurera** domäner i administrations centret > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank"></a> .
 
 ::: moniker-end
     
 2. På sidan **domäner** väljer du din domän och sedan **starta installationen**. Du går tillbaka till domäninstallationsguiden för att se det specifika värde som du måste lägga till.
     
-3. På sidan **Verifiera domän** väljer du **Lägg till en TXT-post i stället**och sedan **Nästa**.
+3. På sidan **Verifiera domän** väljer du **Lägg till en TXT-post i stället** och sedan **Nästa**.
     
 4. Kopiera det **txt-värde** som visas. Det ser ut så här: **MS = msXXXXXXXX**. 
     
@@ -71,19 +71,19 @@ ms.locfileid: "48645317"
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **konfigurations** domäner i administrations centret för Microsoft 365 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> .
+1. Gå till sidan **konfigurations** domäner i administrations centret för Microsoft 365 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a> .
 
 ::: moniker-end
     
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Konfigurera** domäner i administrations centret > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> .
+1. Gå till sidan **Konfigurera** domäner i administrations centret > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank"></a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Konfigurera** domäner i administrations centret > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> .
+1. Gå till sidan **Konfigurera** domäner i administrations centret > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank"></a> .
 
 ::: moniker-end
     

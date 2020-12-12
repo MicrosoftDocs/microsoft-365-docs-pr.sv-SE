@@ -14,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Lär dig hur du installerar och använder tillägget skräp post rapportering i Microsoft för att rapportera skräp post, icke skräp post-och nät fiske meddelanden till Microsoft.
-ms.openlocfilehash: 6f08c72ae797825695c443848429dcfd2cd485a2
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 4345066ec180b5d7fe5ff8b537a3cd057f60c31c
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616434"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658875"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installera och använda tillägget skräp post rapportering för Microsoft Outlook
 
@@ -35,7 +35,7 @@ I det här avsnittet förklaras hur du installerar och använder tillägget skr�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Information om hur du installerar tillägget skräp post rapportering finns i avsnittet [installera tillägget skräp post rapportering](#install-the-junk-email-reporting-add-in) längre ned i det här avsnittet.
+- Information om hur du installerar tillägget skräp post rapportering finns i avsnittet [installera tillägget skräp post rapportering](#install-the-junk-email-reporting-add-in) längre ned i den här artikeln.
 
 - Tillägget skräp post rapportering fungerar med följande versioner av Outlook:
 

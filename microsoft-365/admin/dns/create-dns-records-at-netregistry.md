@@ -22,16 +22,16 @@ search.appverid:
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på netregistry för Microsoft.
-ms.openlocfilehash: 016df6c61fd6934c1bc46b55c7e110d8442cf1d5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 857645c685cce946b39a7c3dcadb0a45b43686cf
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645977"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657809"
 ---
 # <a name="create-dns-records-at-netregistry-for-microsoft"></a>Skapa DNS-poster på netregistry för Microsoft
 
-[Läs frågor och svar om domäner](../setup/domains-faq.md) om du inte hittar det du letar efter. 
+[Läs frågor och svar om domäner](../setup/domains-faq.yml) om du inte hittar det du letar efter. 
   
 Om netregistry är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och så vidare.
   
@@ -65,7 +65,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
     ![Netregistry_login](../../media/ed3c785f-01c3-49e7-affd-c04637c0ffe9.png)
   
-2. Välj **Hantera**bredvid den domän som du vill hantera.
+2. Välj **Hantera** bredvid den domän som du vill hantera.
     
     ![Netregistry_Manage](../../media/64ad542a-5ec4-4148-96f8-d6e163449352.png)
   
@@ -73,7 +73,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
     ![Netregistry_selectZoneManager](../../media/e18c32f9-c1e7-4aa2-9aa6-8dc9c5ea44af.png)
   
-4. Under **Lägg till en zonfil**väljer du **txt Record** i listan och väljer sedan **Skapa ny post**.
+4. Under **Lägg till en zonfil** väljer du **txt Record** i listan och väljer sedan **Skapa ny post**.
     
     ![Netregistry_TXT_select](../../media/eb1761e6-9deb-4631-8deb-bc5d09926722.png)
   
@@ -84,7 +84,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
     |**Namn**|**TTL (SEK)**|**TXT (pekar på adress eller värde)**|
     |:-----|:-----|:-----|
-    |(lämna tomt)  <br/> |3600 (sekunder)  <br/> |"MS = msXXXXXXXX"  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)  |
+    |(lämna tomt)  <br/> |3600 (sekunder)  <br/> |"MS = msXXXXXXXX"  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)  |
        
     ![Netregistry_verificationTXTvalues](../../media/cfe8b05a-fa8b-4dba-9554-7a3466e6c012.png)
   
@@ -118,7 +118,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Netregistry_login](../../media/80277b0e-547e-4635-aa6a-5d8ebe3fba85.png)
   
-2. Välj **Hantera**bredvid den domän som du vill hantera.
+2. Välj **Hantera** bredvid den domän som du vill hantera.
     
     ![Netregistry_Manage](../../media/96e2c6e4-21fd-4405-a4fe-b1188400b985.png)
   
@@ -126,11 +126,11 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Netregistry_selectZoneManager](../../media/914021f6-dff3-4640-84d6-b83cf8f61cf1.png)
   
-4. Under **aktuella zondata**tar du bort de förvalda MX-posterna genom att välja **ta bort** bredvid varje MX-post i listan. 
+4. Under **aktuella zondata** tar du bort de förvalda MX-posterna genom att välja **ta bort** bredvid varje MX-post i listan. 
     
     ![Netregistry_MX_remove](../../media/494670a9-8b8d-46e5-8136-05e82212a115.png)
   
-5. Under **Lägg till en zonfil**väljer du **MX Record** i listan och väljer sedan **Skapa ny post**.
+5. Under **Lägg till en zonfil** väljer du **MX Record** i listan och väljer sedan **Skapa ny post**.
     
     ![Netregistry_MX_select](../../media/29b60eb9-6c40-490f-9669-e65b65962f37.png)
   
@@ -153,7 +153,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Netregistry_login](../../media/cbf83dce-86d2-4008-9400-56def4b6fcd7.png)
   
-2. Välj **Hantera**bredvid den domän som du vill hantera.
+2. Välj **Hantera** bredvid den domän som du vill hantera.
     
     ![Netregistry_Manage](../../media/7bee4b0f-2c1d-43ca-b1bb-9b889ca0c5e4.png)
   
@@ -161,7 +161,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Netregistry_selectZoneManager](../../media/58384add-0a9d-472b-a5d0-51ec8155fd41.png)
   
-4. Under  **Lägg till en zonfil**väljer du **CNAME-post** i listan och väljer sedan **Skapa ny post**.
+4. Under  **Lägg till en zonfil** väljer du **CNAME-post** i listan och väljer sedan **Skapa ny post**.
     
     ![Netregistry_CNAME_CreateNewRecord](../../media/7b4f133f-45da-48da-93c0-62f57c786165.png)
   
@@ -195,7 +195,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Netregistry_login](../../media/a841f11f-1c0f-4926-acea-a2b8bb083984.png)
   
-2. Välj **Hantera**bredvid den domän som du vill hantera.
+2. Välj **Hantera** bredvid den domän som du vill hantera.
     
     ![Netregistry_Manage](../../media/4245bbbb-4e2d-49e7-a89c-679949aa3d18.png)
   
@@ -203,7 +203,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Netregistry_selectZoneManager](../../media/372e5918-b6dc-4268-8f9a-0aa71d65deef.png)
   
-4. Under **Lägg till en zonfil**väljer du **txt Record** i listan och väljer sedan **Skapa ny post**.
+4. Under **Lägg till en zonfil** väljer du **txt Record** i listan och väljer sedan **Skapa ny post**.
     
     ![Netregistry_TXT_select](../../media/a2930d03-853a-4f1e-9205-d00f25bed35f.png)
   
@@ -229,7 +229,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Netregistry_login](../../media/accf6584-e5f4-4d68-a641-0f8847f8370f.png)
   
-2. Välj  **Hantera**bredvid den domän som du vill hantera.
+2. Välj  **Hantera** bredvid den domän som du vill hantera.
     
     ![Netregistry_Manage](../../media/e0ddc79e-0123-4e24-8380-9645bdb41aac.png)
   
@@ -237,7 +237,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Netregistry_selectZoneManager](../../media/f122888b-3cc5-40ec-adac-0ede04799d9a.png)
   
-4. Under  **Lägg till en zonfil**väljer du **SRV-post** i listan och väljer sedan **Skapa ny post**.
+4. Under  **Lägg till en zonfil** väljer du **SRV-post** i listan och väljer sedan **Skapa ny post**.
     
     ![Netregistry_SRV_select](../../media/e5dab850-acd1-48b8-8b4a-e3b9777cf508.png)
   

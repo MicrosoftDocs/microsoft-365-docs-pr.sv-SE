@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på easyDNS för Microsoft.
-ms.openlocfilehash: 4909a02ec56fc9720a2636e822da0339e89bccf8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a971a722f071ef5df9ce0fba387cfacfeb409f5b
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645557"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656825"
 ---
 # <a name="create-dns-records-at-easydns-for-microsoft"></a>Skapa DNS-poster på easyDNS för Microsoft
 
-[Läs frågor och svar om domäner ](../setup/domains-faq.md) om du inte hittar det du letar efter. 
+[Läs frågor och svar om domäner ](../setup/domains-faq.yml) om du inte hittar det du letar efter. 
   
 Du måste lägga till följande DNS-poster på din registrators webbplats för att dirigera e-post till Microsoft, använda din domän för Teams och Skype för företag, och så vidare.
   
