@@ -18,8 +18,32 @@
       href: compliance-extensibility.md
 - name: Hantera insiderrisker
   items:
-    - name: Hantering av insiderrisker
+    - name: 'Microsoft 365, Insider-risklösningar'
+      href: insider-risk-solution-overview.md
+    - name: Kommunikationsefterlevnad
       items:
+        - name: Översikt
+          href: communication-compliance-solution-overview.md
+        - name: Lär dig mer om kommunikationsefterlevnad
+          href: communication-compliance.md
+        - name: Planera för kommunikationsefterlevnad
+          href: communication-compliance-plan.md
+        - name: Kom igång med kommunikationsefterlevnad
+          href: communication-compliance-configure.md
+        - name: Undersöka och åtgärda aviseringar för kommunikationsefterlevnad
+          href: communication-compliance-investigate-remediate.md
+        - name: Funktionsreferens för kommunikationsefterlevnad
+          href: communication-compliance-feature-reference.md
+        - name: Fallstudie – Contoso konfigurerar snabbt en princip för stötande språk
+          href: communication-compliance-case-study.md
+        - name: Övervakningsprinciper i Office 365
+          href: supervision-policies.md
+        - name: Konfigurera övervakningsprinciper för Office 365
+          href: configure-supervision-policies.md
+    - name: Hantering av insiderrisk
+      items:
+        - name: Översikt
+          href: insider-risk-management-solution-overview.md
         - name: Lär dig mer om hantering av insiderrisker
           href: insider-risk-management.md
         - name: Planera för hantering av insiderrisker
@@ -40,27 +64,12 @@
           href: insider-risk-management-users.md
         - name: Skapa mallar för insiderriskaviseringar
           href: insider-risk-management-notices.md
-    - name: Kommunikationsefterlevnad
-      items:
-        - name: Lär dig mer om kommunikationsefterlevnad
-          href: communication-compliance.md
-        - name: Planera för kommunikationsefterlevnad
-          href: communication-compliance-plan.md
-        - name: Kom igång med kommunikationsefterlevnad
-          href: communication-compliance-configure.md
-        - name: Undersöka och åtgärda aviseringar för kommunikationsefterlevnad
-          href: communication-compliance-investigate-remediate.md
-        - name: Funktionsreferens för kommunikationsefterlevnad
-          href: communication-compliance-feature-reference.md
-        - name: Fallstudie – Contoso konfigurerar snabbt en princip för stötande språk
-          href: communication-compliance-case-study.md
-        - name: Övervakningsprinciper i Office 365
-          href: supervision-policies.md
-        - name: Konfigurera övervakningsprinciper för Office 365
-          href: configure-supervision-policies.md
     - name: Informationsbarriärer
-      href: information-barriers.md
       items:
+        - name: Översikt
+          href: information-barriers-solution-overview.md
+        - name: Läs mer om informationsbarriärer
+          href: information-barriers.md
         - name: Definiera informationsbarriärsprinciper
           href: information-barriers-policies.md
         - name: Attribut för informationsbarriärsprinciper
@@ -71,6 +80,8 @@
           href: information-barriers-edit-segments-policies.md
     - name: Privilegierad åtkomsthantering
       items:
+        - name: Översikt
+          href: privileged-access-management-solution-overview.md
         - name: Lär dig mer om privilegierad åtkomsthantering
           href: privileged-access-management-overview.md
         - name: Kom igång med privilegierad åtkomsthantering
@@ -95,6 +106,8 @@
           href: custom-sensitive-info-types.md
         - name: Skapa anpassade känsliga informationstyper med exakt datamatchning
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+        - name: Ändra exakt dataskema för att använda konfigurerbar matchning
+          href: sit-modify-edm-schema-configurable-match.md
         - name: Skapa en anpassad känslig informationstyp – Säkerhets- och efterlevnadscenter
           href: create-a-custom-sensitive-information-type.md
         - name: Skapa en anpassad känslig informationstyp – PowerShell
@@ -155,17 +168,17 @@
           href: double-key-encryption-overview.md
         - name: Tjänstkryptering i Office 365
           href: office-365-service-encryption.md
-        - name: Kundnyckel
+        - name: Customer Key
           items:
-            - name: Tjänstkryptering med kundnyckel i Office 365
+            - name: Tjänstkryptering med Kundnyckel i Office 365
               href: customer-key-overview.md
-            - name: Konfigurera kundnyckeln för Office 365
+            - name: Konfigurera Customer Key för Office 365
               href: customer-key-set-up.md
-            - name: Hantera kundnyckeln för Office 365
+            - name: Hantera Customer Key för Office 365
               href: customer-key-manage.md
-            - name: Rulla eller rotera kundnyckeln eller en tillgänglighetsnyckel
+            - name: Rulla eller rotera Customer Key eller en tillgänglighetsnyckel
               href: customer-key-availability-key-roll.md
-            - name: Lär dig mer om tillgänglighetsnyckeln för kundnyckel
+            - name: Lär dig mer om tillgänglighetsnyckeln för Customer Key
               href: customer-key-availability-key-understand.md
         - name: E-postkryptering
           href: email-encryption.md
@@ -180,7 +193,7 @@
               href: add-your-organization-brand-to-encrypted-messages.md
             - name: Skapa en princip för typ av känslig information för organisationen med meddelandekryptering i Office 365
               href: ome-sensitive-info-types.md
-            - name: Hantera meddelandekryptering i Office 365
+            - name: Hantera Meddelandekryptering i Office 365
               href: manage-office-365-message-encryption.md
             - name: Office 365 Advanced Message Encryption
               href: ome-advanced-message-encryption.md
@@ -280,7 +293,7 @@
               href: retention-policies-sharepoint.md
             - name: Kvarhållning för Microsoft Teams
               href: retention-policies-teams.md
-            - name: Kvarhållning för Yammer
+            - name: Retention för Yammer
               href: retention-policies-yammer.md
             - name: Kvarhållning för Exchange
               href: retention-policies-exchange.md
@@ -418,7 +431,7 @@
           href: create-and-manage-inactive-mailboxes.md
         - name: Ändra kvarhållningstiden för en inaktiv postlåda
           href: change-the-hold-duration-for-an-inactive-mailbox.md
-        - name: Återskapa en inaktiv postlåda
+        - name: Återställa en inaktiv postlåda
           href: recover-an-inactive-mailbox.md
         - name: Återställa en inaktiv postlåda
           href: restore-an-inactive-mailbox.md
@@ -882,13 +895,13 @@
               href: 'https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api'
     - name: Postlådegranskning
       href: enable-mailbox-auditing.md
-    - name: Advanced granskning
+    - name: Advanced Audit
       items:
         - name: Översikt över Advanced Audit
           href: advanced-audit.md
         - name: Hantera kvarhållningsprinciper för granskningsloggar
           href: audit-log-retention-policies.md
-        - name: Undersöka komprometterade konton med hjälp av Advanced granskning
+        - name: Undersöka komprometterade konton med hjälp av Advanced Audit
           href: mailitemsaccessed-forensics-investigations.md
     - name: Aviseringsprinciper
       href: alert-policies.md
