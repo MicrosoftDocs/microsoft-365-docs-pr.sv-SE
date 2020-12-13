@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Sammanfattning: skapa utvärderingsversioner av Office 365 och Enterprise Mobility + Security (EMS) med användare och grupper i en utvecklings-/test miljö för en politisk kampanj.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 80454477bc55ab54ae7edf14ded5b4fa49fe1530
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1fac15cc0b2a512745e0538ec689bd5f17555419
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203365"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614912"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Konfigurera grupper och användare i en utvecklings-/testmiljö för en politisk kampanj
 
@@ -46,7 +46,7 @@ Registrera dig sedan för en utvärderingsprenumeration på EMS E5 och lägg til
 
 2. Klicka på panelen **Administratör**.
 
-3. På fliken **Microsoft 365 administrationscenter** i webbläsaren klickar du **Fakturering > Köpa tjänster**i det vänstra navigeringsfältet.
+3. På fliken **Microsoft 365 administrationscenter** i webbläsaren klickar du **Fakturering > Köpa tjänster** i det vänstra navigeringsfältet.
 
 4. På sidan **Köpa tjänster** hittar du **Enterprise Mobility + Security E5**-objekt. Håll muspekaren över den och klicka på **Starta kostnadsfri utvärderingsversion**.
 
@@ -68,7 +68,7 @@ I den här fasen skapar och konfigurerar du Azure AD-grupper för din kampanj.
 
 Börja med att skapa en uppsättning grupper för en typisk politisk kampanj med Azure-portalen.
 
-1. Gå till Azure-portalen vid [https://portal.azure.com](https://portal.azure.com) på en separat flik i webbläsaren. Om det behövs loggar du in med inloggningsuppgifterna för det globala administratörskontot för din utvärderingsprenumeration av Office 365 E5.
+1. Gå till Azure-portalen vid <https://portal.azure.com> på en separat flik i webbläsaren. Om det behövs loggar du in med inloggningsuppgifterna för det globala administratörskontot för din utvärderingsprenumeration av Office 365 E5.
 
 2. Klicka på **Azure Active Directory > Användare och grupper > Alla grupper** i Azure-portalen.
 
@@ -102,7 +102,7 @@ Börja med att skapa en uppsättning grupper för en typisk politisk kampanj med
 
 8. I nästa fält skriver du gruppnamnet från listan.
 
-9. Klicka på **Lägg till fråga**och klicka sedan på **Skapa**.
+9. Klicka på **Lägg till fråga** och klicka sedan på **Skapa**.
 
 10. Klicka på **Användare och grupper – Alla grupper**.
 
@@ -175,7 +175,7 @@ Använd de här anvisningarna för att kontrollera att dynamiska gruppmedlemskap
 
 1. På fliken **Microsoft Office Home** i webbläsaren klickar du på fliken **Administratör**.
 
-2. Klicka **Användare**under den nya fliken **administrationscentret för Microsoft 365** i webbläsaren.
+2. Klicka **Användare** under den nya fliken **administrationscentret för Microsoft 365** i webbläsaren.
 
 3. I listan över användare klickar du på **Kandidat**.
 

@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: En fiktiv men representativ global organisation har distribuerat Microsoft 365-lösningar.
-ms.openlocfilehash: 66040bdd64e83d796e6d045aad2f512898452c50
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: 1e06da623a9d580d71823ab030976b213a9e7022
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371642"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620557"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Microsoft 365-lösningar för Contoso Corporation
 
@@ -30,7 +30,7 @@ Det övergripande målet för Contoso när det gäller Microsoft 365 Enterprise 
 
 Läs mer om [Contoso Corporation](../enterprise/contoso-overview.md), deras internationella kontor och de designöverväganden de gjorde när de distribuerade Microsoft 365 Enterprise.
 
-Härnäst ska vi se hur Contoso använder Microsoft 365 för dessa lösningar och scenarier:
+Härnäst ska vi se hur Contoso använde Microsoft 365 för dessa lösningar och scenarier:
 
 - [Svar mot COVID-19 och infrastruktur för distans- och på plats-arbete](contoso-remote-onsite-work.md)
 
@@ -38,3 +38,4 @@ Härnäst ska vi se hur Contoso använder Microsoft 365 för dessa lösningar oc
 
 - [Migrering av deras lokala användare till Teams för enhetlig kommunikation, samarbete och röst](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
 
+- [Konfigurera en policy för anstötligt språk för Microsoft Teams, Exchange och Yammer-kommunikation](../compliance/communication-compliance-case-study.md)

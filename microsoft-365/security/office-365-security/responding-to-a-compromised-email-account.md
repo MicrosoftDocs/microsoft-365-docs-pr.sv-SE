@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Lär dig hur du känner igen och hanterar ett komprometterat e-postkonto ned tillgängliga verktyg i Microsoft 365.
-ms.openlocfilehash: 2830fd10b633e094c92fd98fe61ce678a4da842b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 5d5e5360e9851aee8eab27fc7c39e266e0332411
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200135"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659891"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Hantera ett komprometterat e-postkonto
 
@@ -109,7 +109,7 @@ Följ anvisningarna i [återställa ett företags lösen ord för någon](https:
 
 3. I den information som visas, väljer du fliken **e-post**.
 
-4. Om värdet i avsnittet **vidarebefordra e-post** **tillämpas**klickar du på **hantera e-postvidarebefordran**. I **Hantera e vidarebefordran** flyout som visas klart **vidarebefordra all e-post som skickas till denna brevlåda**, och klicka sedan på **Spara ändringar**.
+4. Om värdet i avsnittet **vidarebefordra e-post** **tillämpas** klickar du på **hantera e-postvidarebefordran**. I **Hantera e vidarebefordran** flyout som visas klart **vidarebefordra all e-post som skickas till denna brevlåda**, och klicka sedan på **Spara ändringar**.
 
 ### <a name="step-3-disable-any-suspicious-inbox-rules"></a>Steg 3 Inaktivera alla misstänkta inkorgsregler
 
@@ -168,7 +168,7 @@ Om du vill tillåta att en postlåda skickar e-post igen följer du procedurerna
 
    a. Klicka på **redigera** bredvid **medlemmar**.
    b. I **redigerar väljer du medlemmar** utfällbar som visas klickar du på **redigera**.
-   c. I **Välj medlemmar** utfällbar som visas väljer du användar konto och klickar sedan på **ta bort**. När du är klar klickar du på **klar** **Spara**och **sedan**stänga.
+   c. I **Välj medlemmar** utfällbar som visas väljer du användar konto och klickar sedan på **ta bort**. När du är klar klickar du på **klar** **Spara** och **sedan** stänga.
 
 4. Gör följande steg i EAC på <admin.protection.outlook.com/ecp/>:
 

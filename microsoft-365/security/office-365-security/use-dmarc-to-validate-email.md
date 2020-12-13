@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Lär dig hur du konfigurerar DMARC (Domain-based Message Authentication, Reporting, and Conformance) för att validera meddelanden som skickats från din organisation.
-ms.openlocfilehash: 4ff2c93e420957714815100243a6502e7ea087a7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 9dd97b1fc60f0b6198bb6c55af291c7dd103ac5d
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446377"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615342"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Använda DMARC för att validera e-post
 
@@ -191,7 +191,7 @@ Du kan implementera DMARC gradvis utan att det påverkar resten av ditt e-postfl
 3. Begära att externa e-postsystem inte accepterar meddelanden som inte klarar DMARC
 
     Det sista steget är att implementera en avvisningsprincip. En avvisningsprincip är en DMARC TXT-post som har principen inställd på avvisa (p=reject). När du gör det här uppmanar du DMARC-mottagare att inte acceptera meddelanden som inte klarar DMARC-kontrollerna.
-    
+
 4. Hur ställer du in DMARC för underdomän?
 
 DMARC implementeras genom att publicera en policy som en TXT-post i DNS och är hierarkisk (t.ex. en policy publicerad för contoso.com kommer att tillämpas på sub.domain.contonos.com om inte en annan policy definieras uttryckligen för underdomänet). Detta är användbart eftersom organisationer kanske kan specificera ett mindre antal DMARC-poster på hög nivå för bredare täckning. Man bör vara noga med att konfigurera explicita underdomän DMARC-poster där du inte vill att underdomänerna ska ärva topp nivå domänens DMARC-post.

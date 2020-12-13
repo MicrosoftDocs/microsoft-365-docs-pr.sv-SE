@@ -3,7 +3,7 @@ title: Konfigurera en team med säkerhetsisolering
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 localization_priority: Priority
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du skapar ett team med en unik känslighetsetikett för säkerhet.
-ms.openlocfilehash: 46bc63bab52bf75dc7c215510d49b4d985ff07c3
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: c7230f23a21804530863f125003e4db0eaeeeb60
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487488"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616302"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Konfigurera en team med säkerhetsisolering
 
@@ -50,7 +50,7 @@ Titta på den här videon för att få en översikt över distributionsprocessen
 
 [![Microsoft Teams med säkerhets isolering, affisch](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
-Du kan också ladda ner den här affischen i [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)-format och skriva ut den på brev, legal eller tabloid papper i storlek (11 x 17).
+Du kan också ladda ned den här affischen i [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)- eller [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx)-format och skriva ut den i pappersstorleken letter, legal eller tabloid (11 x 17).
 
 ## <a name="initial-protections"></a>Initiala skydd
 
@@ -79,8 +79,8 @@ Skapa en team för känslig information
 2. Klicka på **Skapa team** (första kortet, övre vänstra hörnet).
 3. Välj **Skapa ett team från början**.
 4. Behåll standardinställningen i listan **Känslighet**.
-5. Under **Sekretess**klickar du på **Privat**.
-6. Skriv ett namn för det team som är relaterat till det känsliga projektet. **Projekt Saturn**till exempel.
+5. Under **Sekretess** klickar du på **Privat**.
+6. Skriv ett namn för det team som är relaterat till det känsliga projektet. **Projekt Saturn** till exempel.
 7. Klicka på **Skapa**.
 8. Lägg till användare i teamet och klicka sedan på **Stäng**.
 
@@ -89,7 +89,7 @@ Skapa en team för känslig information
 Vi rekommenderar att du begränsar skapandet av privata kanaler till teamägare.
 
 För att begränsa skapandet av en privat kanal
-1. Klicka på **Fler alternativ**i teamet och klicka sedan på **Hantera team**.
+1. Klicka på **Fler alternativ** i teamet och klicka sedan på **Hantera team**.
 2. På fliken **Inställningar**, expandera **medlemsbehörigheter**.
 3. Avmarkera kryssrutan **Tillåt att medlemmar skapar privata kanaler**.
 
@@ -103,7 +103,7 @@ Om du har ett intern partner- eller intresseteam som ska kunna visa krypterade d
 
 Att skapa en känslighetsetikett
 1. Öppna [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com).
-2. Under **Lösningar**klickar du på **Informationsskydd**.
+2. Under **Lösningar** klickar du på **Informationsskydd**.
 3. Klicka på **Skapa en etikett**.
 4. Skriv ett namn på etiketten som liknar ditt teamnamn. Till exempel **Mycket känslig – Projekt Saturn**.
 5. Lägg till ett knapptips och klicka sedan på **Nästa**.
@@ -124,7 +124,7 @@ Att skapa en känslighetsetikett
 11. På sidan **Inställningar för webbplatser och grupper** ställer du **inställningar för webbplatser och grupper** till **På**.
 12. I listrutan **Sekretess för gruppanslutna teamwebbplatser i Office 365** väljer du **Privat – endast användare kan komma åt webbplatsen**.
 13. Om du vill tillåta gäståtkomst markerar du kryssrutan **Låt gruppägarna för Office 365 lägga till personer utanför organisationen i gruppen**. 
-14. Under **Ohanterade enheter**väljer du **Blockera åtkomst**.
+14. Under **Ohanterade enheter** väljer du **Blockera åtkomst**.
 15. Klicka på **Nästa**.
 16. På sidan **Auto-etiketting för Office-program** klickar du på **Nästa**.
 17. Klicka på **Skicka** och klicka sedan **Klart**.
@@ -151,7 +151,7 @@ När etiketten har publicerats måste du använda den i teamet för att inställ
 
 Använda känslighetsetiketten
 1. Öppna [SharePoint Online Administrationscenter](https://admin.microsoft.com/sharepoint).
-2. Under **Webbplatser**klickar du på **Aktiva webbplatser**.
+2. Under **Webbplatser** klickar du på **Aktiva webbplatser**.
 3. Klicka på den webbplats som är kopplad till teamet.
 4. På fliken **Principer** klickar du på **Redigera** under **Känslighet**.
 5. Markera den etikett som du har skapat och klicka sedan på **Spara**.
@@ -177,7 +177,7 @@ Vi kommer också att uppdatera standardtypen av delnings ’länk för att minsk
 
 Uppdatera webbplatsinställningar
 1. Öppna [SharePoint Online Administrationscenter](https://admin.microsoft.com/sharepoint).
-2. Under **Webbplatser**klickar du på **Aktiva webbplatser**.
+2. Under **Webbplatser** klickar du på **Aktiva webbplatser**.
 3. Klicka på den webbplats som är kopplad till teamet.
 4. Klicka på **Redigera** under **Extern delning** på fliken **Principer**.
 5. Om du tillät gästdelning när du skapade känslighetsetiketten ska du kontrollera att **Nya och befintligt gäster** har markerats. Om du inte tillåter delning när du skapade etiketten väljer du **Bara personer i organisationen**.
@@ -211,7 +211,7 @@ Om du har lagt till personer med visningsbehörighet till känsliga etiketter ka
 
 Bjuda in användare till webbplatsen
 1. På sidan klickar du på inställningsikonen och klickar sedan på **Webbplatsbehörigheter**.
-2. Klicka **Bjud in personer**och klicka sedan på **dela bara webbplats**.
+2. Klicka **Bjud in personer** och klicka sedan på **dela bara webbplats**.
 3. Skriv namnen på de användare och grupper som du vill bjuda in.
 4. Om du vill ändra behörigheten för varje person eller grupp som du lägger till kan du ändra deras behörigheter från **Redigera** att **Läsa**.
 5. Välj om du vill skicka ett e-postmeddelande med en länk till webbplatsen.

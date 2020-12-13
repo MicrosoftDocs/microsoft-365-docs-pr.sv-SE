@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Läs om tre verktyg som du kan använda för att övervaka personliga data.
-ms.openlocfilehash: 67cce80435aa0f01f496ec67d617f0a2dfff8ec8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a212067d75ab3d9e195e3d869e0a6ae7d1ed4d01
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202705"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616386"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Övervaka läckage av personliga data
 
@@ -117,7 +117,6 @@ Den andra principen blockerar nedladdning av filer till en ohanterad enhet. Du v
 Dessa attributtyper kommer snart att ingå i Cloud App Security:
 
 - Typer av känslig information
-
 - Enhetliga etiketter i Microsoft 365 och Azure Information Protection
 
 ### <a name="cloud-app-security-dashboard"></a>Instrumentpanelen i Cloud App Security
@@ -142,69 +141,24 @@ Mer information:
 
 Avisera när en fil som innehåller ett kreditkortsnummer delas från en godkänd molnapp.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>Kontroll</strong></th>
-<th align="left"><strong>Inställningar</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Typ av princip</td>
-<td align="left">Filprincip</td>
-</tr>
-<tr class="even">
-<td align="left">Principmall</td>
-<td align="left">Ingen mall</td>
-</tr>
-<tr class="odd">
-<td align="left">Allvarlighetsgrad för princip</td>
-<td align="left">Högsta</td>
-</tr>
-<tr class="even">
-<td align="left">Kategori</td>
-<td align="left">DLP</td>
-</tr>
-<tr class="odd">
-<td align="left">Filterinställningar</td>
-<td align="left"><p>Åtkomstnivå = offentlig (Internet), offentlig, extern</p>
-<p>App = &lt;välj appar&gt; (använd den här inställningen om du vill begränsa övervakning till vissa SaaS-appar)</p></td>
-</tr>
-<tr class="even">
-<td align="left">Använd för</td>
-<td align="left">Alla filer, alla ägare</td>
-</tr>
-<tr class="odd">
-<td align="left">Innehållsgranskning</td>
-<td align="left"><p>Innefattar filer som matchar ett befintligt uttryck: Alla länder: Ekonomi: Kreditkortsnummer</p>
-<p>Kräv inte relevant kontext: avmarkerat (matchar nyckelord och regex)</p>
-<p>Innefattar filer med minst 1 matchning</p>
-<p>Ta bort mask för de fyra sista tecknen i överträdelsen: markerat</p></td>
-</tr>
-<tr class="even">
-<td align="left">Varningar</td>
-<td align="left"><p>Skapa en avisering för varje matchande fil: markerat</p>
-<p>Daglig aviseringsgräns: 1 000</p>
-<p>Välj en avisering som e-post: markerat</p>
-<p>Till: infosec@contoso.com</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Styrning</td>
-<td align="left"><p>Microsoft OneDrive för företag</p>
-<p>Gör privat: markera Ta bort externa användare</p>
-<p>Alla andra inställningar: avmarkerade</p>
-<p>Microsoft SharePoint Online</p>
-<p>Gör privat: markera Ta bort externa användare</p>
-<p>Alla andra inställningar: avmarkerade</p></td>
-</tr>
-</tbody>
-</table>
+****
+
+|Kontroll|Inställningar|
+|---|---|
+|Typ av princip|Filprincip|
+|Principmall|Ingen mall|
+|Allvarlighetsgrad för princip|Högsta|
+|Kategori|DLP|
+|Filterinställningar|Åtkomstnivå = offentlig (Internet), offentlig, extern <p> App = \<select apps\>(använd den här inställningen om du vill begränsa övervakning till vissa SaaS-appar)|
+|Använd för|Alla filer, alla ägare|
+|Innehållsgranskning|Innefattar filer som matchar ett befintligt uttryck: Alla länder: Ekonomi: Kreditkortsnummer <p> Kräv inte relevant kontext: avmarkerat (matchar nyckelord och regex) <p> Innefattar filer med minst 1 matchning <p> Ta bort mask för de fyra sista tecknen i överträdelsen: markerat|
+|Varningar|Skapa en avisering för varje matchande fil: markerat <p> Daglig aviseringsgräns: 1 000 <p> Välj en avisering som e-post: markerat <p> Till: infosec@contoso.com|
+|Styrning|Microsoft OneDrive för företag <p> Gör privat: markera Ta bort externa användare <p> Alla andra inställningar: avmarkerade <p> Microsoft SharePoint Online <p> Gör privat: markera Ta bort externa användare <p> Alla andra inställningar: avmarkerade|
+|
 
 Liknande principer:
 
 - Identifiera delning av filer som innehåller PII – e-postadress
-
 - Identifiera delning av filer som innehåller PII – passnummer
 
 ### <a name="detect-customer-or-hr-data-in-box-or-onedrive-for-business"></a>Identifiera kund- eller HR-data i Box eller OneDrive för företag
@@ -214,64 +168,23 @@ Avisera när en fil som är markerad som kunddata eller HR-information överför
 Kommentarer:
 
 - Box-övervakning kräver att en anslutning konfigureras med hjälp av API-anslutaren SDK.
-
 - Principen kräver funktioner som för närvarande är i privat förhandsversion.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>Kontroll</strong></th>
-<th align="left"><strong>Inställningar</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Typ av princip</td>
-<td align="left">Aktivitetspolicy</td>
-</tr>
-<tr class="even">
-<td align="left">Principmall</td>
-<td align="left">Ingen mall</td>
-</tr>
-<tr class="odd">
-<td align="left">Allvarlighetsgrad för princip</td>
-<td align="left">Högsta</td>
-</tr>
-<tr class="even">
-<td align="left">Kategori</td>
-<td align="left">Delningskontroll</td>
-</tr>
-<tr class="odd">
-<td align="left">Agera på</td>
-<td align="left">Enskild aktivitet</td>
-</tr>
-<tr class="even">
-<td align="left">Filterinställningar</td>
-<td align="left"><p>Aktivitetstyp = överföra fil</p>
-<p>App = Microsoft OneDrive för företag och Box</p>
-<p>Klassificeringsetikett (för närvarande i privat förhandsversion): Azure Information Protection = kunddata, personal – löneuppgifter, personal – information om anställda</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Varningar</td>
-<td align="left"><p>Skapa en avisering: markerad</p>
-<p>Daglig aviseringsgräns: 1 000</p>
-<p>Välj en avisering som e-post: markerat</p>
-<p>Till: infosec@contoso.com</p></td>
-</tr>
-<tr class="even">
-<td align="left">Styrning</td>
-<td align="left"><p>Alla appar</p>
-<p>Placera användare i karantän: markerad</p>
-<p>Alla andra inställningar: avmarkerade</p>
-<p>Office 365</p>
-<p>Placera användare i karantän: markerad</p>
-<p>Alla andra inställningar: avmarkerade</p></td>
-</tr>
-</tbody>
-</table>
+****
+
+|Kontroll|Inställningar|
+|---|---|
+|Typ av princip|Aktivitetspolicy|
+|Principmall|Ingen mall|
+|Allvarlighetsgrad för princip|Högsta|
+|Kategori|Delningskontroll|
+|Agera på|Enskild aktivitet|
+|Filterinställningar|Aktivitetstyp = överföra fil <p> App = Microsoft OneDrive för företag och Box <p> Klassificeringsetikett (för närvarande i privat förhandsversion): Azure Information Protection = kunddata, personal – löneuppgifter, personal – information om anställda|
+|Varningar|Skapa en avisering: markerad <p> Daglig aviseringsgräns: 1 000 <p> Välj en avisering som e-post: markerat <p> Till: infosec@contoso.com|
+|Styrning|Alla appar <p> Placera användare i karantän: markerad <p> Alla andra inställningar: avmarkerade <p> Office 365 <p> Placera användare i karantän: markerad <p> Alla andra inställningar: avmarkerade|
+|
 
 Liknande principer:
 
 - Identifiera stora nedladdningar med kunddata eller HR-data – avisera när ett stort antal filer som innehåller kunddata eller HR-data har laddats ned av en enskild användare under en begränsad tidsperiod.
-
 - Identifiera delning av kunddata och HR-data – avisera när filer som innehåller kund- eller HR-data delas.

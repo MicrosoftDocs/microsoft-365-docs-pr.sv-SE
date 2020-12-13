@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Få regelbundna rapporter om hur personer i organisationen använder Microsoft 365-tjänster. Med instrumentpanelen för översikt över användning kan du granska varje diagram för fler insikter.
-ms.openlocfilehash: 9c3416f415c43377669b2c032e10696343c4416f
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: d2c5b4f67d93500f7341463a01313271d182dc38
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988464"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611358"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365-rapporter i administrationscentret
 
@@ -58,7 +58,7 @@ I den här videon finns information om hur du kan använda rapporterna:
 
 ::: moniker-end
 
-2. Klicka på **Visa mer** -knappen från aktivitetskortet för en tjänst (till exempel e-post eller OneDrive) för att se rapportdetaljsidan. Där finns olika rapporter för tjänsten i flikar. <br/>![Instrumentpanelen Användning](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+2. Klicka på **Visa mer**-knappen från aktivitetskortet för en tjänst (till exempel e-post eller OneDrive) för att se rapportdetaljsidan. Där finns olika rapporter för tjänsten i flikar. <br/>![Instrumentpanelen Användning](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
 
 ## <a name="who-can-see-reports"></a>Vem kan se rapporter
 
@@ -90,9 +90,13 @@ De här rapporterna är tillgängliga, beroende på din prenumeration.
     
 - [Postlådeanvändning](mailbox-usage.md)
     
-- [Office-aktiveringar](microsoft-office-activations.md)
+- [Office-aktiveringar](microsoft-office-activations-ww.md)
 
-- [Aktiva användare](active-users.md)
+- [Office-aktiveringar för US Government](microsoft-office-activations.md)
+
+- [Aktiva användare](active-users-ww.md)
+
+- [Aktiva användare för US Government](active-users.md)
   
 - [Användning av e-postprogram](email-apps-usage.md)
 
@@ -104,7 +108,9 @@ De här rapporterna är tillgängliga, beroende på din prenumeration.
   
 - [Dynamics 365 Customer Voice-aktivitet för US Government](forms-pro-activity.md)
 
-- [Microsoft 365-grupper](office-365-groups.md)
+- [Microsoft 365-grupper](office-365-groups-ww.md)
+
+- [Microsoft 365-grupper för US Government](office-365-groups.md)
   
 - [Användaraktivitet i OneDrive för företag](onedrive-for-business-activity-ww.md)
 
@@ -114,7 +120,9 @@ De här rapporterna är tillgängliga, beroende på din prenumeration.
 
 - [OneDrive för företag-användning för US Government](onedrive-for-business-usage.md)
 
-- [Användning av Microsoft 365-appar](microsoft365-apps-usage.md)
+- [Användning av Microsoft 365-appar](microsoft365-apps-usage-ww.md)
+
+- [Microsoft 365-appar för US Government](microsoft365-apps-usage.md)
   
 - [SharePoint-webbplatsanvändning](sharepoint-site-usage-ww.md)
 
@@ -203,6 +211,8 @@ De här rapporterna är tillgängliga, beroende på din prenumeration.
 Använd tjänsterapporterna när du vill se hur mycket en viss användare använder tjänsten. Om du till exempel vill ta reda på hur mycket lagringsutrymme för e-post en viss användare har förbrukat öppnar du rapporten Postlådeanvändning och sorterar användarna efter namn. Om du har tusentals användare kan du exportera rapporten till Excel där du snabbt kan filtrera listan.
   
 Det finns ingen rapport där du anger ett användarkonto och får en lista med vilka tjänster som används och hur mycket.
+
+Det finns tillfällen då nya användare visas som **okända**. Det beror vanligtvis på tillfälliga förseningar i skapandet av användarprofiler.  
   
 ## <a name="hide-user-details-in-the-reports"></a>Dölja användarinformation i rapporterna
 

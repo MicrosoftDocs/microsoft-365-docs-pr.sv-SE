@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du uppdaterar en DNS-post (Domain Name Service) för att använda en SPF-post (Sender Policy Framework) med din anpassade domän i Office 365.
-ms.openlocfilehash: ce8a982b875632ad58b34ae240c02b507c4656fe
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 137937b106be9ce0cf782a84b988913e2c6dac4b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021067"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615726"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Konfigurera SPF för att förhindra förfalskning
 
@@ -69,11 +69,11 @@ Samla in följande information:
    |---|---|---|---|
    |1|Ett e-postsystem (obligatoriskt)|Vanligt. SPF-poster som startar med det här värdet.|`v=spf1`|
    |2|Exchange Online|Vanligt|`include:spf.protection.outlook.com`|
-   |3|Endast dedikerad Exchange Online|Inte vanligt|`ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com`|
+   |3|Endast dedikerad Exchange Online|Inte vanligt|`ip4:23.103.224.0/19` <br> `ip4:206.191.224.0/19` <br> `ip4:40.103.0.0/16` <br> `include:spf.protection.outlook.com`|
    |4|Office 365 Germany, endast Microsoft Cloud Germany|Inte vanligt|`include:spf.protection.outlook.de`|
-   |5|E-postsystem från tredje part|Inte vanligt|`include:<domain_name>`  <br/> Där \<domain_name\> domännamnet är av tredje parts e-postsystem.|
-   |6|Lokalt e-postsystem. Till exempel Exchange Online Protection plus ett annat e-postsystem.|Inte vanligt|Använd något av följande för varje extra e-postsystem: <br> `ip4:<IP_address>` <br/> `ip6:<IP_address>` <br/> `include:<domain_name>` <br/> Där \<IP_address\> och \<domain_name\> motsvarar IP-adressen och domänen för det andra e-postsystemet som skickar e-post på din domän.|
-   |7|Ett e-postsystem (obligatoriskt)|Vanligt. Alla SPF TXT-poster som slutar med det här värdet.|`<enforcement rule>` <br/> Det här kan vara ett av flera värden. Vi rekommenderar värdet ``-alla''.|
+   |5|E-postsystem från tredje part|Inte vanligt|`include:<domain_name>` <p> Där \<domain_name\> domännamnet är av tredje parts e-postsystem.|
+   |6|Lokala e-postsystem. Till exempel Exchange Online Protection plus ett annat e-postsystem.|Inte vanligt|Använd något av följande för varje extra e-postsystem: <p> `ip4:<IP_address>` <br> `ip6:<IP_address>` <br> `include:<domain_name>` <p> \<IP_address\> och \<domain_name\> motsvarar IP-adressen och domänen för det andra e-postsystemet som skickar e-post på din domän.|
+   |7|Ett e-postsystem (obligatoriskt)|Vanligt. Alla SPF TXT-poster som slutar med det här värdet.|`<enforcement rule>` <p> Det här kan vara ett av flera värden. Vi rekommenderar värdet `-all`.|
    |
 
 2. Om du inte redan har gjort det, skapa din SPF TXT-post genom att använda syntaxen från tabellen.
