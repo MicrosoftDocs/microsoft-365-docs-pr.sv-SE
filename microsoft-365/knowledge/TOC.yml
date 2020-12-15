@@ -8,6 +8,8 @@
       href: work-with-topics.md
     - name: Ge användare behörighet till ämnes centret
       href: give-user-permissions-to-the-topic-center.md
+    - name: Förbered din miljö
+      href: topic-experiences-get-ready.md
 - name: Konfiguration och administration
   items:
     - name: Ämnets säkerhet
@@ -24,3 +26,7 @@
       href: topic-experiences-user-permissions.md
     - name: Ändra namnet på ämnes Center
       href: topic-experiences-administration.md
+- name: Integrering
+  items:
+    - name: Komma igång med att börja använda
+      href: topics-adoption-getstarted.md
