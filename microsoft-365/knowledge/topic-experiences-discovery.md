@@ -1,143 +1,97 @@
 ---
-title: 'Hantera din kunskaps Management Network (för hands version) '
-description: Så här konfigurerar du kunskaps hantering.
+title: Hantera identifiering av avsnitt i Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 08/01/2020
+ms.reviewer: nkokoye
 audience: admin
 ms.topic: article
 ms.service: o365-administration
-search.appverid: ''
+search.appverid: MET150
+localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: None
-ms.openlocfilehash: 265816a8d3d04b8d10b529f1ea1a0b658aa2931d
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+description: Lär dig att hantera identifiering av avsnitt i Microsoft 365.
+ms.openlocfilehash: 035fb74f1989dc7ef5b7fcf8e9c6d59b63cf2b42
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48989033"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667896"
 ---
-# <a name="manage-your-knowledge-management-network-preview"></a><span data-ttu-id="3b6f3-103">Hantera din kunskaps Management Network (för hands version)</span><span class="sxs-lookup"><span data-stu-id="3b6f3-103">Manage your knowledge management network (Preview)</span></span>
+# <a name="manage-topic-discovery-in-microsoft-365"></a><span data-ttu-id="2c5e6-103">Hantera identifiering av avsnitt i Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="2c5e6-103">Manage topic discovery in Microsoft 365</span></span>
 
-> [!Note] 
-> <span data-ttu-id="3b6f3-104">Innehållet i den här artikeln gäller för projekt cortex privat för hands version.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-104">The content in this article is for Project Cortex Private Preview.</span></span> <span data-ttu-id="3b6f3-105">[Läs mer om Project Cortex](https://aka.ms/projectcortex).</span><span class="sxs-lookup"><span data-stu-id="3b6f3-105">[Find out more about Project Cortex](https://aka.ms/projectcortex).</span></span>
+<span data-ttu-id="2c5e6-104">Du kan hantera identifierings inställningar för avsnitt i [administrations centret för Microsoft 365](https://admin.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="2c5e6-104">You can manage topic discovery settings in the [Microsoft 365 admin center](https://admin.microsoft.com).</span></span> <span data-ttu-id="2c5e6-105">Du måste vara global administratör eller SharePoint-administratör för att utföra dessa uppgifter.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-105">You must be a global administrator or SharePoint administrator to perform these tasks.</span></span>
 
+## <a name="to-access-topics-management-settings"></a><span data-ttu-id="2c5e6-106">Så här öppnar du inställningar för hantering av ämnen:</span><span class="sxs-lookup"><span data-stu-id="2c5e6-106">To access topics management settings:</span></span>
 
-<span data-ttu-id="3b6f3-106">När du [har konfigurerat kunskaps hanteringen](set-up-topic-experiences.md)kan du när som helst göra ändringar i konfigurations inställningarna via administrations centret för Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-106">After you [set up knowledge management](set-up-topic-experiences.md), at any time afterwards an admin can make adjustments to your configuration settings through the Microsoft 365 admin center.</span></span>
+1. <span data-ttu-id="2c5e6-107">I administrations centret för Microsoft 365 klickar du på **Inställningar** och sedan på **org Settings**.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-107">In the Microsoft 365 admin center, click **Settings**, then **Org settings**.</span></span>
+2. <span data-ttu-id="2c5e6-108">Klicka på **kunskaps nätverk** på fliken **tjänster** .</span><span class="sxs-lookup"><span data-stu-id="2c5e6-108">On the **Services** tab, click **Knowledge network**.</span></span>
 
-<span data-ttu-id="3b6f3-107">Du kan till exempel behöva justera dina inställningar för något av följande:</span><span class="sxs-lookup"><span data-stu-id="3b6f3-107">For example, you may need to adjust your settings for any of the following:</span></span>
-- <span data-ttu-id="3b6f3-108">Lägga till nya SharePoint-källor i mina avsnitt.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-108">Add new SharePoint sources to mine topics.</span></span>
-- <span data-ttu-id="3b6f3-109">Ändra vilka användare som ska ha åtkomst till ämnen.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-109">Change which users will have access to topics.</span></span>
-- <span data-ttu-id="3b6f3-110">Ändra vilka användare som har behörighet att utföra uppgifter i ämnes centret.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-110">Change which users have permissions to do tasks on the topic center.</span></span>
-- <span data-ttu-id="3b6f3-111">Ändra namnet på ämnes Center</span><span class="sxs-lookup"><span data-stu-id="3b6f3-111">Change the name of your topic center</span></span>
+    ![Koppla personer till kunskap](../media/admin-org-knowledge-options-completed.png) 
 
+3. <span data-ttu-id="2c5e6-110">Välj fliken **identifiering av ämne** . I följande avsnitt finns information om de olika inställningarna.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-110">Select the **Topic discovery** tab. See the following sections for information about each setting.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="3b6f3-112">Krav</span><span class="sxs-lookup"><span data-stu-id="3b6f3-112">Requirements</span></span> 
-<span data-ttu-id="3b6f3-113">Du måste ha global administratör eller administratörs behörighet för SharePoint för att kunna komma åt Microsoft 365 Admin Center och hantera organisationens kunskaps uppgifter.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-113">You must have Global Admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and manage Organizational knowledge tasks.</span></span>
+    ![kunskap – nätverks inställningar](../media/knowledge-network-settings-topic-discovery.png) 
 
+## <a name="select-sharepoint-topic-sources"></a><span data-ttu-id="2c5e6-112">Välj SharePoint-rubriker</span><span class="sxs-lookup"><span data-stu-id="2c5e6-112">Select SharePoint topic sources</span></span>
 
-## <a name="to-access-knowledge-management-settings"></a><span data-ttu-id="3b6f3-114">Så här använder du inställningar för kunskaps hantering:</span><span class="sxs-lookup"><span data-stu-id="3b6f3-114">To access knowledge management settings:</span></span>
+<span data-ttu-id="2c5e6-113">Du kan ändra de SharePoint-webbplatser i din organisation som ska crawlas för avsnitt.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-113">You can change the SharePoint sites in your organization that will be crawled for topics.</span></span>
 
-1. <span data-ttu-id="3b6f3-115">I administrations centret för Microsoft 365 väljer du **Konfigurera** och sedan avsnittet **organisations** information.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-115">In the Microsoft 365 admin center, select **Setup** , and then view the **Organizational Knowledge** section.</span></span>
-2. <span data-ttu-id="3b6f3-116">I avsnittet **organisationsinformation** klickar du på **Anslut personer till kunskap**.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-116">In the **Organizational Knowledge** section, click **Connect people to knowledge**.</span></span><br/>
+<span data-ttu-id="2c5e6-114">Om du vill ta med eller utesluta en viss lista med webbplatser kan du använda följande. csv-mall:</span><span class="sxs-lookup"><span data-stu-id="2c5e6-114">If you want to include or exclude a specific list of sites, you can use the following .csv template:</span></span>
 
-    ![Koppla personer till kunskap](../media/content-understanding/admin-org-knowledge-options.png) </br>
+``` csv
+Site name,URL
+```
 
-3. <span data-ttu-id="3b6f3-118">På sidan **Anslut personer till kunskap** väljer du **Hantera** för att öppna fönstret **kunskaps nätverks inställningar** .</span><span class="sxs-lookup"><span data-stu-id="3b6f3-118">On the **Connect people to knowledge** page, select **Manage** to open the **Knowledge network settings** pane.</span></span><br/>
+<span data-ttu-id="2c5e6-115">Om du lägger till webbplatser med webbplats väljaren läggs de till i den befintliga listan över webbplatser som ska inkluderas eller exkluderas.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-115">If you add sites using the site picker, they are added to the existing list of sites to include or exclude.</span></span> <span data-ttu-id="2c5e6-116">Om du laddar upp en CSV-fil skrivs en befintlig lista över.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-116">If you upload a .csv file, it overwrites any existing list.</span></span> <span data-ttu-id="2c5e6-117">Om du tidigare har inkluderat eller uteslutit vissa webbplatser kan du hämta listan som en CSV-fil, göra ändringar och ladda upp den nya listan.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-117">If you have previously included or excluded specific sites, you and download the list as a .csv file, make changes, and upload the new list.</span></span>
 
-    ![kunskap – nätverks inställningar](../media/content-understanding/knowledge-network-settings.png) </br>
+<span data-ttu-id="2c5e6-118">Välja webbplatser för identifiering av ämnen</span><span class="sxs-lookup"><span data-stu-id="2c5e6-118">To choose sites for topic discovery</span></span>
 
-## <a name="change-how-the-knowledge-network-can-find-topics"></a><span data-ttu-id="3b6f3-120">Ändra hur kunskaps nätverket hittar ämnen</span><span class="sxs-lookup"><span data-stu-id="3b6f3-120">Change how the knowledge network can find topics</span></span>
+1. <span data-ttu-id="2c5e6-119">På fliken **identifiering** , under **Välj SharePoint-ämnes källor**, väljer du **Redigera**.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-119">On the **Topic discovery** tab, under **Select SharePoint topic sources**, select **Edit**.</span></span>
+2. <span data-ttu-id="2c5e6-120">På sidan **Select SharePoint topic sources** väljer du vilka SharePoint-webbplatser som ska crawlas som källor för dina ämnen under identifiering.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-120">On the **Select SharePoint topic sources** page, select which SharePoint sites will be crawled as sources for your topics during discovery.</span></span> <span data-ttu-id="2c5e6-121">Detta inkluderar:</span><span class="sxs-lookup"><span data-stu-id="2c5e6-121">This includes:</span></span>
+    - <span data-ttu-id="2c5e6-122">**Alla webbplatser**: alla SharePoint-webbplatser i din klient organisation.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-122">**All sites**: All SharePoint sites in your tenant.</span></span> <span data-ttu-id="2c5e6-123">Här fångar du aktuella och framtida webbplatser.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-123">This captures current and future sites.</span></span>
+    - <span data-ttu-id="2c5e6-124">**Alla, förutom markerade webbplatser**: Skriv namnen på de webbplatser du vill undanta.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-124">**All, except selected sites**: Type the names of the sites you want to exclude.</span></span>  <span data-ttu-id="2c5e6-125">Du kan också ladda upp en lista med webbplatser som du inte vill ska ingå i sökningen.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-125">You can also upload a list of sites you want to opt out from discovery.</span></span> <span data-ttu-id="2c5e6-126">Webbplatser som skapats i framtiden kommer att inkluderas som källor för avsnitts identifiering.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-126">Sites created in the future will be included as sources for topic discovery.</span></span> 
+    - <span data-ttu-id="2c5e6-127">**Endast valda webbplatser**: Skriv in namnen på de webbplatser du vill ta med.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-127">**Only selected sites**: Type the names of the sites you want to include.</span></span> <span data-ttu-id="2c5e6-128">Du kan också ladda upp en lista med webbplatser.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-128">You can also upload a list of sites.</span></span> <span data-ttu-id="2c5e6-129">Webbplatser som skapats i framtiden kommer inte att ingå som källor för identifiering av ämnen.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-129">Sites created in the future will not be included as sources for topic discovery.</span></span>
+    - <span data-ttu-id="2c5e6-130">**Inga webbplatser**: ämnen skapas eller uppdateras inte automatiskt med SharePoint-innehåll.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-130">**No sites**: Topics won't be automatically generated or updated with SharePoint content.</span></span> <span data-ttu-id="2c5e6-131">Befintliga avsnitt finns kvar i ämnes centret.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-131">Existing topics remain in the topic center.</span></span>
 
-<span data-ttu-id="3b6f3-121">Välj fliken **identifiering** om du vill uppdatera dina val för avsnitts källor i SharePoint.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-121">Select the **Topic discovery** tab if you want to update your choices for  for SharePoint topic sources.</span></span> <span data-ttu-id="3b6f3-122">Med den här inställningen kan du välja vilka SharePoint-webbplatser i din klient organisation som ska crawlas och mined för avsnitt.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-122">This setting let you select the SharePoint sites in your tenant that will be crawled and mined for topics.</span></span>
-
-1. <span data-ttu-id="3b6f3-123">På fliken **identifiering** , under **Välj SharePoint-ämnes källor** , väljer du **Redigera**.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-123">On the **Topic discovery** tab, under **Select SharePoint topic sources** , select **Edit**.</span></span>
-2. <span data-ttu-id="3b6f3-124">På sidan **Select SharePoint topic sources** väljer du vilka SharePoint-webbplatser som ska crawlas som källor för dina ämnen under identifiering.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-124">On the **Select SharePoint topic sources** page, select which SharePoint sites will be crawled as sources for your topics during discovery.</span></span> <span data-ttu-id="3b6f3-125">Detta inkluderar:</span><span class="sxs-lookup"><span data-stu-id="3b6f3-125">This includes:</span></span></br>
-    <span data-ttu-id="3b6f3-126">a.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-126">a.</span></span> <span data-ttu-id="3b6f3-127">**Alla webbplatser** : alla SharePoint-webbplatser i din klient organisation.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-127">**All sites** : All SharePoint sites in your tenant.</span></span> <span data-ttu-id="3b6f3-128">Här fångar du aktuella och framtida webbplatser.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-128">This captures current and future sites.</span></span></br>
-    <span data-ttu-id="3b6f3-129">b.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-129">b.</span></span> <span data-ttu-id="3b6f3-130">**Alla, förutom markerade webbplatser** : Skriv namnen på de webbplatser du vill undanta.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-130">**All, except selected sites** : Type the names of the sites you want to exclude.</span></span>  <span data-ttu-id="3b6f3-131">Du kan också ladda upp en lista med webbplatser som du inte vill ska ingå i sökningen.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-131">You can also upload a list of sites you want to opt out from discovery.</span></span> <span data-ttu-id="3b6f3-132">Webbplatser som skapats i framtiden kommer att inkluderas som källor för avsnitts identifiering.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-132">Sites created in the future will be included as sources for topic discovery.</span></span> </br>
-    <span data-ttu-id="3b6f3-133">c.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-133">c.</span></span> <span data-ttu-id="3b6f3-134">**Endast valda webbplatser** : Skriv in namnen på de webbplatser du vill ta med.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-134">**Only selected sites** : Type the names of the sites you want to include.</span></span> <span data-ttu-id="3b6f3-135">Du kan också ladda upp en lista med webbplatser.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-135">You can also upload a list of sites.</span></span> <span data-ttu-id="3b6f3-136">Webbplatser som skapats i framtiden kommer inte att ingå som källor för identifiering av ämnen.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-136">Sites created in the future will not be included as sources for topic discovery.</span></span> </br>
-
-    ![Välj hur du vill hitta ämnen](../media/content-understanding/k-manage-select-topic-source.png) </br>
+    ![Skärm bild av användar gränssnittet för SharePoint-rubriker](../media/k-manage-select-topic-source.png)
    
-    <span data-ttu-id="3b6f3-138">Om du har ett antal webbplatser som du vill undanta (om du markerar **alla, förutom markerade webbplatser** ) eller inkludera (om du valde **endast markerade webbplatser** ) kan du välja att överföra en CSV-fil med webbplats namn och URL-adresser.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-138">If you have a number of sites that you want to exclude (if you select **All, except selected sites** ) or include (if you selected **Only selected sites** ), you can choose to upload a CSV file with the site names and URLs.</span></span> <span data-ttu-id="3b6f3-139">Du kan välja **Hämta webbplatsmall. csv** om du vill använda CSV-mallfilen.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-139">You can select **Download site template .csv** if you want to use the CSV template file.</span></span>
+3. <span data-ttu-id="2c5e6-133">Klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-133">Click **Save**.</span></span>
 
-3. <span data-ttu-id="3b6f3-140">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-140">Select **Save**.</span></span>
+## <a name="exclude-topics-by-name"></a><span data-ttu-id="2c5e6-134">Utelämna ämnen efter namn</span><span class="sxs-lookup"><span data-stu-id="2c5e6-134">Exclude topics by name</span></span>
 
-##  <a name="change-who-can-see-topics-in-your-organization"></a><span data-ttu-id="3b6f3-141">Ändra vem som kan se ämnen i din organisation</span><span class="sxs-lookup"><span data-stu-id="3b6f3-141">Change who can see topics in your organization</span></span>
+<span data-ttu-id="2c5e6-135">Du kan utesluta ämnen från Upptäck genom att överföra en lista med en CSV-fil.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-135">You can exclude topics from discovery by uploading a list using a .csv file.</span></span> <span data-ttu-id="2c5e6-136">Om du tidigare har uteslutit ämnen kan du ladda ned. csv, göra ändringar och ladda upp den igen.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-136">If you've previously excluded topics, you can download the .csv, make changes, and upload it again.</span></span>
 
-<span data-ttu-id="3b6f3-142">Välj fliken **identifiering** om du vill uppdatera vem i organisationen kan se upptäckta avsnitt i Sök Resultat och när ämnen markeras i innehåll som SharePoint-sidor.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-142">Select the **Topic discovery** tab if you want to update who in your organization can see discovered topics in search results and when topics are highlighted in content like SharePoint pages.</span></span>
+1. <span data-ttu-id="2c5e6-137">På fliken **identifiering** , under **utelämna ämnen**, väljer du **Redigera**.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-137">On the **Topic discovery** tab, under **Exclude topics**, select **Edit**.</span></span>
+2. <span data-ttu-id="2c5e6-138">Klicka på **utelämna ämnen efter namn**.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-138">Click **Exclude topics by name**.</span></span>
+3. <span data-ttu-id="2c5e6-139">Om du behöver skapa en lista kan du Hämta CSV-mallen och lägga till ämnen som du vill undanta (se *arbeta med CSV-mallen* nedan).</span><span class="sxs-lookup"><span data-stu-id="2c5e6-139">If you need to create a list, download the .csv template and add the topics that you want to exclude (see *Working with the .csv template* below).</span></span> <span data-ttu-id="2c5e6-140">När filen är klar klickar du på **Bläddra** och laddar upp filen.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-140">When the file is ready, click **Browse** and upload the file.</span></span> <span data-ttu-id="2c5e6-141">Om det finns en befintlig lista kan du Hämta CSV-filen som innehåller listan.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-141">If there's an existing list, you can download the .csv containing the list.</span></span>
+4. <span data-ttu-id="2c5e6-142">Klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-142">Click **Save**.</span></span>
 
-1. <span data-ttu-id="3b6f3-143">På fliken **identifiering** , under **vem kan se ämnen i kunskaps nätverket** , väljer du **Redigera**.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-143">On the **Topic discovery** tab, under **Who can see topics in the knowledge network** , select **Edit**.</span></span>
-2. <span data-ttu-id="3b6f3-144">På sidan **vem kan se ämnen i kunskaps nätverk** väljer du vilka som kommer att ha till gång till ämnen, till exempel markerade ämnen, ämnes kort, ämnes svar i sökningar och avsnitts sidor.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-144">On the **Who can see topics in the knowledge network** page, you choose who will have access to topic details, such as highlighted topics, topic cards, topic answers in search, and topic pages.</span></span> <span data-ttu-id="3b6f3-145">Du kan välja:</span><span class="sxs-lookup"><span data-stu-id="3b6f3-145">You can select:</span></span></br>
-    <span data-ttu-id="3b6f3-146">a.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-146">a.</span></span> <span data-ttu-id="3b6f3-147">**Alla i organisationen**</span><span class="sxs-lookup"><span data-stu-id="3b6f3-147">**Everyone in your organization**</span></span></br>
-    <span data-ttu-id="3b6f3-148">b.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-148">b.</span></span> <span data-ttu-id="3b6f3-149">**Endast valda personer eller säkerhets grupper**</span><span class="sxs-lookup"><span data-stu-id="3b6f3-149">**Only selected people or security groups**</span></span></br>
-    <span data-ttu-id="3b6f3-150">c.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-150">c.</span></span> <span data-ttu-id="3b6f3-151">**Ingen**</span><span class="sxs-lookup"><span data-stu-id="3b6f3-151">**No one**</span></span></br>
+    ![Skärm bild av användar gränssnittet undanta ämnen](../media/km-manage-exclude-topics.png)
 
-    ![Vilka som kan se ämnen](../media/content-understanding/k-manage-who-can-see-topics.png) </br> 
-3. <span data-ttu-id="3b6f3-153">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-153">Select **Save**.</span></span>  
- 
-> [!Note] 
-> <span data-ttu-id="3b6f3-154">Med den här inställningen kan du välja en användare i organisationen, men endast användare som har kunskaps hanterings licenser tilldelade till dem kan visa ämnen.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-154">While this setting allows you to select any user in your organization, only users who have knowledge management licenses assigned to them will be able to view topics.</span></span>
+### <a name="working-with-the-csv-template"></a><span data-ttu-id="2c5e6-144">Arbeta med CSV-mallen</span><span class="sxs-lookup"><span data-stu-id="2c5e6-144">Working with the .csv template</span></span>
 
-## <a name="change-who-has-permissions-to-do-tasks-on-the-topic-center"></a><span data-ttu-id="3b6f3-155">Ändra vem som har behörighet att utföra uppgifter i ämnes centret</span><span class="sxs-lookup"><span data-stu-id="3b6f3-155">Change who has permissions to do tasks on the topic center</span></span>
+<span data-ttu-id="2c5e6-145">Du kan kopiera CSV-mallen nedan:</span><span class="sxs-lookup"><span data-stu-id="2c5e6-145">You can copy the csv template below:</span></span>
 
-<span data-ttu-id="3b6f3-156">Välj fliken **behörigheter för ämne** om du vill uppdatera vilka som har behörighet att göra följande på sidan avsnitts Center:</span><span class="sxs-lookup"><span data-stu-id="3b6f3-156">Select the **Topic permissions** tab if you want to update who has permissions to do the following in the topic center page:</span></span>
+``` csv
+Name (required),Expansion,MatchType- Exact/Partial (required)
+```
 
-- <span data-ttu-id="3b6f3-157">Vilka användare som kan skapa och redigera ämnen: skapa nya avsnitt som inte hittades under identifiering eller redigera befintliga avsnitts sidor.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-157">Which users can create and edit topics: Create new topics that were not found during discovery or edit existing topic page details.</span></span>
-- <span data-ttu-id="3b6f3-158">Vilka användare som kan hantera ämnen: bekräfta eller avvisa upptäckta ämnen.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-158">Which users can manage topics: Confirm or reject discovered topics.</span></span>
+<span data-ttu-id="2c5e6-146">I CSV-mallen anger du följande information om de avsnitt som du vill undanta:</span><span class="sxs-lookup"><span data-stu-id="2c5e6-146">In the CSV template, enter the following information about the topics you want to exclude:</span></span>
 
-<span data-ttu-id="3b6f3-159">Så här uppdaterar du vilka som har behörighet att skapa och redigera ämnen:</span><span class="sxs-lookup"><span data-stu-id="3b6f3-159">To update who has permissions to create and edit topics:</span></span>
+- <span data-ttu-id="2c5e6-147">**Namn**: Skriv namnet på det ämne som du vill undanta.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-147">**Name**: Type the name of the topic you want to exclude.</span></span> <span data-ttu-id="2c5e6-148">Du kan göra det på två sätt:</span><span class="sxs-lookup"><span data-stu-id="2c5e6-148">There are two ways to do this:</span></span>
+    - <span data-ttu-id="2c5e6-149">Exakt träff: du kan ange exakt namn eller akronym (till exempel *contoso* eller *ATL*).</span><span class="sxs-lookup"><span data-stu-id="2c5e6-149">Exact match: You can include the exact name or acronym (for example, *Contoso* or *ATL*).</span></span>
+    - <span data-ttu-id="2c5e6-150">Ofullständig matchning: du kan exkludera alla ämnen som har ett visst ord i det.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-150">Partial match: You can exclude all topics that have a specific word in it.</span></span>  <span data-ttu-id="2c5e6-151">Till exempel kommer *bågen* att exkludera alla ämnen med ord *båge* i det, till exempel *båge cirkel*, *plasma båge svets* eller *tränings båge*. Observera att den inte utesluter ämnen där texten är inkluderad som en del av ett ord, till exempel *arkitekturen*.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-151">For example, *arc* will exclude all topics with the word *arc* in it, such as *Arc circle*, *Plasma arc welding*, or *Training arc*. Note that it will not exclude topics in which the text is included as part of a word, such as *Architecture*.</span></span>
+- <span data-ttu-id="2c5e6-152">**Står för (valfritt)**: om du vill utesluta en akronym skriver du orden som förkortningen står för.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-152">**Stands for (optional)**: If you want to exclude an acronym, type the words the acronym stands for.</span></span>
+- <span data-ttu-id="2c5e6-153">**MatchType-exakt/delvis**: Skriv om det namn du angav är en *exakt* eller *delvis* matchnings typ.</span><span class="sxs-lookup"><span data-stu-id="2c5e6-153">**MatchType-Exact/Partial**: Type whether the name you entered was an *exact* or *partial* match type.</span></span>
 
-1. <span data-ttu-id="3b6f3-160">På fliken **behörigheter** under **vem kan skapa och redigera ämnen** väljer du **Redigera**.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-160">On the **Topic permissions** tab, under **Who can create and edit topics** , select **Edit**.</span></span></br>
-2. <span data-ttu-id="3b6f3-161">På sidan **vem som kan skapa och redigera ämnen** kan du välja:</span><span class="sxs-lookup"><span data-stu-id="3b6f3-161">On the **Who can create and edit topics** page, you can select:</span></span></br>
-    <span data-ttu-id="3b6f3-162">a.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-162">a.</span></span> <span data-ttu-id="3b6f3-163">**Alla i organisationen**</span><span class="sxs-lookup"><span data-stu-id="3b6f3-163">**Everyone in your organization**</span></span></br>
-    <span data-ttu-id="3b6f3-164">b.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-164">b.</span></span> <span data-ttu-id="3b6f3-165">**Endast valda personer eller säkerhets grupper**</span><span class="sxs-lookup"><span data-stu-id="3b6f3-165">**Only selected people or security groups**</span></span></br>
+    ![Uteslut avsnitt i en CSV-mall](../media/exclude-topics-csv.png) 
 
-    ![Skapa och redigera ämnen](../media/content-understanding/k-manage-who-can-create-and-edit.png) </br> 
+## <a name="see-also"></a><span data-ttu-id="2c5e6-155">Se även</span><span class="sxs-lookup"><span data-stu-id="2c5e6-155">See also</span></span>
 
-3. <span data-ttu-id="3b6f3-167">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-167">Select **Save**.</span></span></br>
+[<span data-ttu-id="2c5e6-156">Hantera ämnets synlighet i Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="2c5e6-156">Manage topic visibility in Microsoft 365</span></span>](topic-experiences-knowledge-rules.md)
 
-<span data-ttu-id="3b6f3-168">Så här uppdaterar du vilka som har behörighet att hantera ämnen:</span><span class="sxs-lookup"><span data-stu-id="3b6f3-168">To update who has permissions to manage topics:</span></span>
+[<span data-ttu-id="2c5e6-157">Hantera behörigheter för ämne i Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="2c5e6-157">Manage topic permissions in Microsoft 365</span></span>](topic-experiences-user-permissions.md)
 
-1. <span data-ttu-id="3b6f3-169">Välj **Redigera** under **vilka kan hantera ämnen** på fliken **behörigheter** .</span><span class="sxs-lookup"><span data-stu-id="3b6f3-169">On the **Topic permissions** tab, under **Who can manage topics** , select **Edit**.</span></span></br>
-2. <span data-ttu-id="3b6f3-170">På sidan **vem kan hantera ämnen** kan du välja:</span><span class="sxs-lookup"><span data-stu-id="3b6f3-170">On the **Who can manage topics** page, you can select:</span></span></br>
-    <span data-ttu-id="3b6f3-171">a.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-171">a.</span></span> <span data-ttu-id="3b6f3-172">**Alla i organisationen**</span><span class="sxs-lookup"><span data-stu-id="3b6f3-172">**Everyone in your organization**</span></span></br>
-    <span data-ttu-id="3b6f3-173">b.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-173">b.</span></span> <span data-ttu-id="3b6f3-174">**Markerade personer eller säkerhets grupper**</span><span class="sxs-lookup"><span data-stu-id="3b6f3-174">**Selected people or security groups**</span></span></br>
-
-    ![Hantera ämnen](../media/content-understanding/k-manage-who-can-manage-topics.png) </br> 
-
-3. <span data-ttu-id="3b6f3-176">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-176">Select **Save**.</span></span></br>
-
-
-##  <a name="update-your-topic-center-name"></a><span data-ttu-id="3b6f3-177">Uppdatera namnet på ämnes Center</span><span class="sxs-lookup"><span data-stu-id="3b6f3-177">Update your topic center name</span></span>
-
-<span data-ttu-id="3b6f3-178">Välj fliken för **avsnitts Center** om du vill uppdatera namnet på ditt ämnes Center.</span><span class="sxs-lookup"><span data-stu-id="3b6f3-178">Select the **Topic center** tab if you want to update the name of your topic center.</span></span> 
-
-1. <span data-ttu-id="3b6f3-179">Välj **Redigera** under **ämnes Center namn** på fliken **ämnes Center** .</span><span class="sxs-lookup"><span data-stu-id="3b6f3-179">On the **Topic center** tab, under **Topic center name** , select **Edit**.</span></span>
-2. <span data-ttu-id="3b6f3-180">Skriv det nya namnet på ämnes centret i rutan **namn** på sidan **Redigera ämnes Center namn** .</span><span class="sxs-lookup"><span data-stu-id="3b6f3-180">On the **Edit topic center name** page, in the **Topic center name** box, type the new name for your topic center.</span></span>
-3. <span data-ttu-id="3b6f3-181">Välj **Spara**</span><span class="sxs-lookup"><span data-stu-id="3b6f3-181">Select **Save**</span></span>
-
-    ![Redigera namn på ämnes Center](../media/content-understanding/manage-topic-center-name.png) </br> 
-
-
-
-
-
-
-
-
-
-
-
-## <a name="see-also"></a><span data-ttu-id="3b6f3-183">Se även</span><span class="sxs-lookup"><span data-stu-id="3b6f3-183">See also</span></span>
-
-
-
-  
-
-
-
-
-
+[<span data-ttu-id="2c5e6-158">Ändra namnet på ämnes centret i Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="2c5e6-158">Change the name of the topic center in Microsoft 365</span></span>](topic-experiences-administration.md)
 
