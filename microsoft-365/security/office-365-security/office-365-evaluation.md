@@ -17,12 +17,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b5b095a1d75ead0f963a71d816e7d879b7cd3697
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 54acf9d21e3dd935f8b87c6ee4a13ab30e7bc59e
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614804"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49668079"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Utvärdera Microsoft Defender för Office 365
 
@@ -62,7 +62,7 @@ Med den förenklade inställnings upplevelsen kan du fokusera på:
 
 För att få åtkomst till utvärderingen måste du uppfylla licens kraven. Följande licenser fungerar:
 
-- Microsoft Defender för Office 365 abonnemang 1
+- Microsoft Defender för Office 365 Abonnemang 1
 - Microsoft Defender för Office 365 abonnemang 2
 - Microsoft 365 E5, Microsoft 365 E5 Security
 - Office 365 E5

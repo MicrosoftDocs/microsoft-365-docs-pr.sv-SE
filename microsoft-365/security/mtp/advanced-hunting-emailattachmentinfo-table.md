@@ -19,12 +19,12 @@ mms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 87ebf4ca0ff773dd5622097385173f538d990afc
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6d88303b34f78abc857e9aec749bf2f58090f43a
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847482"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667655"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -52,6 +52,10 @@ Information om andra tabeller i det avancerade jakt schema [finns i referens fö
 | `SHA256` | strängvärdet | SHA-256 av filen som den registrerade åtgärden tillämpades på. Det här fältet är oftast inte ifyllt – Använd SHA1-kolumnen när det är tillgängligt. |
 | `MalwareFilterVerdict` | strängvärdet | Verdict av e-postfiltrerings stack på om e-postmeddelandet innehåller skadlig kod: skadlig kod, inte skadlig kod |
 | `MalwareDetectionMethod` | strängvärdet | Metod som används för att upptäcka skadlig program vara i e-postmeddelandet: skadlig program vara, fil rykte, säkra bilagor |
+| `SenderDisplayName` | strängvärdet | Namnet på den avsändare som visas i adress boken, vanligt vis en kombination av ett visst eller förnamn, en mellan initial och ett efter-eller efter namn |
+| `SenderObjectId` | strängvärdet | Unik identifierare för avsändarens konto i Azure AD |
+| `ThreatTypes` | strängvärdet | Verdict från e-postfiltrerings gruppen om e-postmeddelandet innehåller skadlig kod, nätfiske eller andra hot |
+| `ThreatNames` | strängvärdet | Identifierings namn för skadlig program vara eller andra hot Funna |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

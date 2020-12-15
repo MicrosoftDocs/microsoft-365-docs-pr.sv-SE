@@ -1,5 +1,5 @@
 ---
-title: Hantera faktureringsprofiler
+title: Förstå fakturerings profiler
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -12,25 +12,27 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- Commerce
 search.appverid:
 - MET150
 description: Lär dig hur fakturerings profiler stöder fakturor.
-keywords: fakturerings profil, fakturor, avgifter, hanterade avgifter
-ms.openlocfilehash: de6d6cd65d9e83e7211bcdc33f1774aaec3d1729
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 708096b624caa9c23a40df4842ccfce856db048d
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638453"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667783"
 ---
-# <a name="manage-billing-profiles"></a>Hantera faktureringsprofiler
+# <a name="understand-billing-profiles"></a>Förstå fakturerings profiler
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -63,7 +65,7 @@ Roller i fakturerings profiler har behörighet att kontrol lera inköp samt Visa
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fakturor och betalningar</a>.
 
-2. Välj **betalnings profiler**och välj sedan en fakturerings profil i listan.
+2. Välj **betalnings profiler** och välj sedan en fakturerings profil i listan.
 
     - På fliken **Översikt** kan du redigera information om fakturerings profiler och aktivera eller inaktivera en faktura via e-post.
 

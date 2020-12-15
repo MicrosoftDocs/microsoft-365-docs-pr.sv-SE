@@ -10,23 +10,23 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-description: Lär dig hur du skapar en anpassad nytto last för utbildning för attack simulering i Microsoft Defender för Office 365.
-ms.openlocfilehash: a8366e6cbf703ef1e1a14e216ada71200668cd14
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: Administratörer kan läsa mer om hur man skapar anpassade nytto laster för utbildning för angrepps simulering i Microsoft Defender för Office 365.
+ms.openlocfilehash: c42090634f6fa9500ae4c3e781b49b607ee928f5
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616278"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667550"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Skapa en anpassad nyttolast för att träna på attacksimulering
 
-Microsoft har en robust nytto Last katalog för olika sociala teknik tekniker som kan para ihop med din utbildning för utskrivning av attacker. Men du kanske vill skapa anpassade nytto laster som fungerar bättre för din organisation. Här följer en beskrivning av hur du skapar en nytto last för utbildning för attack simulering via Microsoft Defender för Office 365.
+Microsoft erbjuder en robust nytto Last katalog för olika sociala teknik tekniker som kan kopplas till din utbildning för utskrivning av attacker. Men du kanske vill skapa anpassade nytto laster som fungerar bättre för din organisation. I den här artikeln beskrivs hur du skapar en nytto last för utbildning för attack simulering i Microsoft Defender för Office 365.
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Du kan skapa en nytto last genom att klicka på **skapa en nytto Last** på [fliken dedikerade **nytto laster**](https://security.microsoft.com/attacksimulator?viewid=payload) eller i [guiden skapa simulering](attack-simulation-training.md#selecting-a-payload).
 
-I det första steget i guiden kan du välja en nytto Last typ. **Endast e-post är tillgänglig**.
+I det första steget i guiden kan du välja en nytto Last typ. **För närvarande är bara e-post tillgänglig**.
 
 Välj sedan en associerad teknik. Se mer information om tekniker när du [väljer en social teknik teknik](attack-simulation-training.md#selecting-a-social-engineering-technique).
 
@@ -39,7 +39,7 @@ Nu är det dags att bygga din nytto Last. Ange avsändarens namn, e-postadress o
 > [!TIP]
 > Du kan välja en intern e-postadress för avsändarens avsändare, som kommer att visas som en annan anställd i företaget. Detta ökar det mottagligt för nytto lasten och hjälper anställda att hålla sig utsatt för risk för interna hot.
 
-Det finns en RTF-redigerare som kan skapa din nytto Last. Du kan också importera ett e-postmeddelande som du har skapat i förväg. När du strukturerar bröd texten i e-postmeddelandet kan du dra nytta av de **dynamiska märkningarna** för att anpassa e-postmeddelandet till dina mål. Klicka på **nätfiske-länken** för att lägga till den tidigare valda nät fiske adressen i bröd texten i e-postmeddelandet.
+Det finns en RTF-redigerare som kan skapa din nytto Last. Du kan också importera ett e-postmeddelande som du har skapat i förväg. När du skapar bröd texten i e-postmeddelandet kan du dra nytta av de **dynamiska märkningarna** för att anpassa e-postmeddelandet till dina mål. Klicka på **phishing-länken** för att lägga till den tidigare valda nät fiske adressen i meddelande texten.
 
 ![Phishing-länk och dynamiska Taggar markerade i nytto last för Microsoft Defender för Office 365](../../media/attack-sim-preview-payload-email-body.png)
 
@@ -63,4 +63,4 @@ Lägg till en egen beskrivning som beskriver indikatorn och klicka i indikatorn 
 Du är klar med att bygga din nytto Last. Nu är det dags att granska informationen och se en förhands granskning av din nytto Last. I förhands granskningen visas alla indikatorer som du har skapat. Du kan redigera varje del av nytto lasten från det här steget. **Skicka** in din betalning när du är nöjd.
 
 > [!IMPORTANT]
-> De nytto laster du har skapat har **klient organisationen** inställd som källa. När du väljer nytto laster bör du kontrol lera att du inte har filtrerat bort **klient organisationen** .
+> De nytto laster som du har skapat har **klient organisationen** som källa. När du väljer nytto laster bör du kontrol lera att du inte filtrerar bort **klient organisationen**.

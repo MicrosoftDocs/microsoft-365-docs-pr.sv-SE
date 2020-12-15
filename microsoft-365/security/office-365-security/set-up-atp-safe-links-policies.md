@@ -17,23 +17,26 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur du visar, skapar, ändrar och tar bort principer för säkra länkar och globala inställningar för säkra länkar i Microsoft Defender för Office 365.
-ms.openlocfilehash: 550be48d5f1cae490c53c8f4a9fcedb0b9f21f73
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 8a6d8a7ad567b658f04cb0b28800d4edbc33ec67
+ms.sourcegitcommit: f81ca61f74f11a7436a6172538c3bda81b484d62
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572723"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675247"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Konfigurera principer för säkra länkar i Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Den här artikeln är avsedd för företags kunder som har [Microsoft Defender för Office 365](office-365-atp.md). Om du är hem användare letar efter information om Safelinks i Outlook kan du läsa mer i [avancerad Outlook.com-säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Den här artikeln är avsedd för företagskunder som har [Microsoft Defender för Office 365](office-365-atp.md). Om du är hem användare letar efter information om Safelinks i Outlook kan du läsa mer i [avancerad Outlook.com-säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Säkra länkar är en funktion i [Microsoft Defender för Office 365](office-365-atp.md) som tillhandahåller URL-genomsökning av inkommande e-postmeddelanden i e-postflöde och när du klickar på verifiering av URL-adresser och länkar i e-postmeddelanden och på andra platser. Mer information finns i [säkra länkar i Microsoft Defender för Office 365](atp-safe-links.md).
 
 Det finns inga inbyggda eller standard principer för säkra länkar. För att få säker sökning efter URL-adresser måste du skapa en eller flera principer för säkra länkar enligt beskrivningen i den här artikeln.
+
+> [!NOTE]
+> Du konfigurerar globala inställningar för skydd mot säkra länkar **utanför** principer för säkra länkar. Anvisningar finns i [Konfigurera globala inställningar för säkra länkar i Microsoft Defender för Office 365](configure-global-settings-for-safe-links.md).
 
 Du kan konfigurera principer för säkra länkar i säkerhets &s kontroll Center eller i PowerShell (Exchange Online PowerShell för kvalificerade Microsoft 365-organisationer med post lådor i Exchange Online, fristående EOP PowerShell för organisationer utan Exchange Online-postlådor, men med prenumerationer för tilläggsprogram för Microsoft Defender för Office 365).
 
@@ -50,16 +53,13 @@ Skillnaden mellan dessa två element är inte uppenbar när du hanterar Safe Lin
 
 I Exchange Online PowerShell eller fristående EOP PowerShell hanterar du policyn och regeln separat. Mer information finns i [använda Exchange Online PowerShell eller fristående EOP PowerShell för att konfigurera principer för Safe Links](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) i den här artikeln.
 
-> [!NOTE]
-> Du konfigurerar globala inställningar för skydd mot säkra länkar **utanför** principer för säkra länkar. Anvisningar finns i [Konfigurera globala inställningar för säkra länkar i Microsoft Defender för Office 365](configure-global-settings-for-safe-links.md).
-
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
 - Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till sidan **Safe Links** använder du <https://protection.office.com/safelinksv2> .
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Du måste tilldelas behörigheter i säkerhets & Compliance Center innan du kan göra det i den här artikeln:
+- Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
   - För att skapa, ändra och ta bort principer för säkra länkar måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** .
   - Om du vill ha skrivskyddad åtkomst till principer för säkra länkar måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** .
 
@@ -67,8 +67,8 @@ I Exchange Online PowerShell eller fristående EOP PowerShell hanterar du policy
 
   **Anmärkningar**:
 
-  - Om du lägger till användare i motsvarande Azure Active Directory-roll i Microsoft 365 Admin Center får användarna den behörighet som krävs för säkerhets & efterlevnad Center _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Roll gruppen **organisations hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
+  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
 - För de rekommenderade inställningarna för principer för säkra länkar, se [princip inställningar för säkra länkar](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).
 

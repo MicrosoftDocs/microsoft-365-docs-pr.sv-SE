@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Lär dig hur du lägger till användare och tilldelar licenser till Microsoft 365 samtidigt.
 ms.date: 07/01/2020
-ms.openlocfilehash: 95f84ead009b7510699e467bf5f12bf32d8097d8
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 5df0db1cb782cc55bcf3e2b599430a98ea88750c
+ms.sourcegitcommit: 8252377f63de188d32ed1ccd37540d92cba3cb65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948802"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49671001"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Lägga till användare och tilldela licenser samtidigt
 
@@ -55,7 +55,7 @@ Du måste vara global, licens eller en användar administratör för att lägga 
 ::: moniker range="o365-worldwide"
 
 1. Gå till administrationscentret på <https://admin.microsoft.com>.
-2. Gå till **användare** > **aktiva användare**och välj **Lägg till en användare**.
+2. Gå till **användare** > **aktiva användare** och välj **Lägg till en användare**.
 3. Fyll i grundläggande användar information i fönstret **Konfigurera grunderna** och välj **Nästa**.
     - **Namn** Fyll i för-och efter namn, visnings namn och användar namn.
     - **Domän** Välj domänen för användarens konto. Om användarens användar namn till exempel är Jakob och domänen är contoso.com loggar de in med jakob@contoso.com.
@@ -64,14 +64,14 @@ Du måste vara global, licens eller en användar administratör för att lägga 
     - Välj om du vill skicka lösen ordet i e-post när användaren läggs till.
 4. I fönstret **tilldela produkt licenser** väljer du platsen och lämplig licens för användaren. Även om du inte har några tillgängliga licenser kan du alltid lägga till en ny användare och köpa fler licenser. Expandera **appar** och markera eller avmarkera appar för att begränsa vilka program användaren har en licens för. Välj **Nästa**.
 5. I fönstret med **valfria inställningar** expanderar du **roller** för att göra användaren till administratör. Expandera **profil information** för att lägga till ytterligare information om användaren.
-6. Välj **Nästa**, granska den nya användarens inställningar, gör de ändringar du vill och välj sedan **Slutför tillägg**och **Stäng**.
+6. Välj **Nästa**, granska den nya användarens inställningar, gör de ändringar du vill och välj sedan **Slutför tillägg** och **Stäng**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Gå till administrationscentret på <https://portal.office.de/adminportal>.
-2. Gå till **användare** > **aktiva användare**och välj **Lägg till en användare**.
+2. Gå till **användare** > **aktiva användare** och välj **Lägg till en användare**.
 3. Fyll i följande information i fönstret **ny användare** . När du är klar väljer du **Lägg till**.
     - **Namn** Fylla i förnamn, efternamn, visningsnamn och användarnamn.
     - **Domän** Om användarens användar namn till exempel är Jakob och domänen är contoso.com loggar de in genom att skriva jakob@contoso.com.
@@ -85,7 +85,7 @@ Du måste vara global, licens eller en användar administratör för att lägga 
 ::: moniker range="o365-21vianet"
 
 1. Gå till administrationscentret på <https://portal.partner.microsoftonline.cn>.
-2. Gå till **användare** > **aktiva användare**och välj **Lägg till en användare**.
+2. Gå till **användare** > **aktiva användare** och välj **Lägg till en användare**.
 3. Fyll i följande information i fönstret **ny användare** . När du är klar väljer du **Lägg till**.
     - **Namn** Fylla i förnamn, efternamn, visningsnamn och användarnamn.
     - **Domän** Om användarens användar namn till exempel är Jakob och domänen är contoso.com loggar de in genom att skriva jakob@contoso.com.

@@ -8,9 +8,19 @@
       href: work-with-topics.md
     - name: Ge användare behörighet till ämnes centret
       href: give-user-permissions-to-the-topic-center.md
-- name: Komma igång med installationen
+- name: Konfiguration och administration
   items:
-    - name: Konfigurera kunskaps hantering
+    - name: Ämnets säkerhet
+      href: topic-experiences-security-privacy.md
+    - name: Planera ämnen
+      href: plan-topic-experiences.md
+    - name: Konfigurera ämnen
       href: set-up-topic-experiences.md
-    - name: Hantera ditt kunskaps hanterings nätverk
+    - name: Hantera identifiering av avsnitt
       href: topic-experiences-discovery.md
+    - name: Hantera ämnets synlighet
+      href: topic-experiences-knowledge-rules.md
+    - name: Hantera behörigheter för ämnen
+      href: topic-experiences-user-permissions.md
+    - name: Ändra namnet på ämnes Center
+      href: topic-experiences-administration.md

@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 86cc32cf395f2216eb3e167e372d1225734c4c28
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 00fcc6514679868066ef88b0c9bc4a485d032528
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842638"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667643"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -71,6 +71,17 @@ Information om andra tabeller i det avancerade jakt schema [finns i referens fö
 | `AttachmentCount` | signera | Antal bilagor i e-postmeddelandet |
 | `UrlCount` | signera | Antal inbäddade URL-adresser i e-postmeddelandet |
 | `EmailLanguage` | strängvärdet | Identifierat språk för e-postinnehållet |
+| `OrgLevelAction` | strängvärdet | Åtgärd som utförs på e-postmeddelandet som svar på matchningar till en princip som har definierats på organisations nivå |
+| `OrgLevelPolicy` | strängvärdet | Organisations princip som utlöste åtgärden som utförts på e-postmeddelandet |
+| `UserLevelAction` | strängvärdet | Åtgärd som utförs på e-postmeddelandet som svar på matchningar till en policy för post lådan som definieras av mottagaren |
+| `UserLevelPolicy` | strängvärdet | Policy för slut användar post lådan som utlöste åtgärden som utförs på e-postmeddelandet |
+| `Connectors` | strängvärdet | Anpassade instruktioner som definierar organisationens e-postflöde och hur e-postmeddelandet cirkulerades |
+| `SenderDisplayName` | strängvärdet | Namnet på den avsändare som visas i adress boken, vanligt vis en kombination av ett visst eller förnamn, en mellan initial och ett efter-eller efter namn |
+| `SenderObjectId` | strängvärdet |Unik identifierare för avsändarens konto i Azure AD |
+| `ThreatTypes` | strängvärdet | Verdict från e-postfiltrerings gruppen om e-postmeddelandet innehåller skadlig kod, nätfiske eller andra hot |
+| `ThreatNames` | strängvärdet |Identifierings namn för skadlig program vara eller andra hot Funna |
+| `DetectionMethods` | strängvärdet | Metoder som används för att upptäcka skadlig kod, nätfiske eller andra hot som hittats i e-postmeddelandet |
+
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

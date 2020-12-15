@@ -1,5 +1,5 @@
 ---
-title: Köpa eller redigera ett tillägg
+title: Köpa eller hantera tillägg
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -12,74 +12,69 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
-description: Lär dig hur du köper ett tillägg för att lägga till ytterligare funktioner i ditt Microsoft 365 för företag-abonnemang. Du kan också uppdatera och ta bort ett tillägg.
+description: Lär dig hur du köper och hanterar tillägg för ditt Microsoft 365 för företag-prenumeration.
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: cfbce7efa1c80d9e5da8390c183233a6f2a12eb7
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+- Commerce
+ms.openlocfilehash: 482b7def1126be6694fdbacbbb2399ccb1b34298
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842826"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667805"
 ---
-# <a name="buy-or-edit-an-add-on"></a>Köpa eller redigera ett tillägg
+# <a name="buy-or-manage-add-ons"></a>Köpa eller hantera tillägg
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
-Flera av Microsoft 365 för Business-abonnemangen har tillägg som du kan köpa för abonnemanget. Ett tillägg ger ytterligare funktioner med den prenumeration som du köper det för.
+Många Microsoft 365 för företag-abonnemang har tillägg som du kan köpa för dina abonnemang. Tillägg ger fler funktioner för att förbättra din prenumeration.
+
+Det finns två typer av tillägg:
+
+1. **Traditionella tillägg** är länkade till ett specifikt abonnemang. Om du avbryter prenumerationen avbryts även det associerade tillägget.
+2. **Fristående abonnemang** visas som ett separat abonnemang på sidan **produkter** och har ett eget utgångs datum. Till skillnad från traditionella tillägg är inte de fristående tilläggs abonnemangen länkade till ett specifikt abonnemang. Du hanterar en fristående tilläggs prenumeration på samma sätt som du hanterar andra abonnemang.
+
+## <a name="before-you-begin"></a>Innan du börjar
+
+Du måste vara global administratör eller faktureringsadministratörer för att kunna utföra åtgärder som beskrivs i den här artikeln. Mer information finns i [Om administratörsroller](../admin/add-users/about-admin-roles.md).
 
 ## <a name="buy-an-add-on"></a>Köpa ett tillägg
 
+Följ stegen nedan för att hitta och köpa tillägg. Listan innehåller bara tillägg som är tillgängliga för dig. Den här listan är baserad på dina aktiva abonnemang och andra befintliga tillägg som du redan har. Om ett tillägg inte finns med i listan kan du inte köpa det.
+
+Information om Skype för företag-tillägg finns i [licensiering för Skype för företag och Microsoft Teams](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
+
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan fakturering i administrations centret **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> .
-
+1. Gå till sidan fakturering i administrations centret  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank"></a> .
 2. Välj **tillägg** längst ned på sidan **Köp tjänster** .
-
-3. På sidan **Köp tjänster** väljer du den tilläggs prenumeration du vill köpa.
-
-4. Ange hur många användarlicenser du behöver och om du vill betala varje månad eller för hela året. Välj om du vill att licenser automatiskt ska tilldelas alla användare som inte redan har en licens. Om det visas väljer du en bas prenumeration.
-
-5. Välj **kolla ut nu**.
-
-6. Granska pris informationen och välj sedan **Nästa**.
-
-7. Ange din betalnings information och välj sedan **Placera order** \> **gå till administratörs start**.
+3. På sidan **Köp tjänster** väljer du det tillägg som du vill köpa.
+4. På sidan produkt information väljer du **köp**.
+5. Om det behövs kan du slutföra eventuell ytterligare beställnings information. Den här informationen kan inkludera att välja vilken prenumeration tillägget gäller. När du är klar väljer du **gå ut nu**.
+6. Om det behövs granskar du ordern och prissättnings informationen och väljer sedan **Nästa**.
+7. Välj betalnings metod eller Lägg till en ny och välj sedan **Placera order** > **gå till administratörens start sida**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a> i administrationscentret.
-
 2. På sidan **Prenumerationer** väljer du den prenumeration som du vill köpa ett tillägg för.
-
 3. I det nedre vänstra hörnet i prenumerations informationen väljer du **tillägg** \> **köp tillägg**.
-
     ![Länken Köp tilläggs komponenter på sidan prenumerationer i administrations centret för Microsoft 365.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
-  
 4. På sidan **Köp tjänster** , peka på eller tryck på den tilläggs prenumeration du vill köpa och välj sedan **Köp nu**.
-
-5. Ange hur många användarlicenser du behöver och om du vill betala varje månad eller för hela året. Välj om du vill att licenser automatiskt ska tilldelas alla användare som inte redan har en licens. Om det visas väljer du en bas prenumeration.
-
+5. Ange hur många användarlicenser du behöver och om du vill betala varje månad eller för hela året. Välj om du vill tilldela licenser automatiskt till alla som inte har en. Om det visas väljer du en bas prenumeration.
 6. Välj **kolla ut nu**.
-
 7. Granska pris informationen och välj sedan **Nästa**.
-
 8. Ange din betalnings information och välj sedan **Placera order** \> **gå till administratörs start**.
 
 ::: moniker-end
@@ -87,68 +82,45 @@ Flera av Microsoft 365 för Business-abonnemangen har tillägg som du kan köpa 
 ::: moniker range="o365-21vianet"
 
 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a> i administrationscentret.
-
 2. På sidan **Prenumerationer** väljer du den prenumeration som du vill köpa ett tillägg för.
-
 3. I det nedre vänstra hörnet i prenumerations informationen väljer du **tillägg** \> **köp tillägg**.
-
     ![Länken Köp tilläggs komponenter på sidan prenumerationer i administrations centret för Microsoft 365.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
-  
 4. På sidan **Köp tjänster** , peka på eller tryck på den tilläggs prenumeration du vill köpa och välj sedan **Köp nu**.
-
-5. Ange hur många användarlicenser du behöver och om du vill betala varje månad eller för hela året. Välj om du vill att licenser automatiskt ska tilldelas alla användare som inte redan har en licens. Om det visas väljer du en bas prenumeration.
-
+5. Ange hur många användarlicenser du behöver och om du vill betala varje månad eller för hela året. Välj om du vill tilldela licenser automatiskt till alla som inte har en. Om det visas väljer du en bas prenumeration.
 6. Välj **kolla ut nu**.
-
 7. Granska pris informationen och välj sedan **Nästa**.
-
 8. Ange din betalnings information och välj sedan **Placera order** \> **gå till administratörs start**.
 
 ::: moniker-end
 
-## <a name="update-an-add-on"></a>Uppdatera ett tillägg
+## <a name="manage-an-add-on"></a>Hantera ett tillägg
 
-Stegen du använder för att uppdatera ett tillägg beror på om tillägget är ett traditionellt tillägg, eller ett fristående tillägg.
+Du hanterar en fristående tilläggs prenumeration på samma sätt som du hanterar andra abonnemang – på sidan **produkter** . Du kan till exempel [köpa eller ta bort licenser](licenses/buy-licenses.md), [hantera återkommande fakturering](subscriptions/renew-your-subscription.md)och [Redigera eller ersätta betalnings metoder](billing-and-payments/manage-payment-methods.md) för fristående prenumerationer.
 
-*Traditionella tillägg* är länkade till ett specifikt abonnemang. Om du avbryter prenumerationen avbryts även det associerade tillägget.
+Du hanterar ett traditionellt tillägg genom att gå till prenumerationen som innehåller den och göra ändringar där. Följ stegen nedan om du vill hantera ett traditionellt tillägg.
   
-*Fristående tillägg* är inte länkade till ett specifikt abonnemang. Fristående tillägg visas som en separat prenumeration på sidan **produkter** och har ett eget utgångs datum. Du hanterar ett fristående tillägg på samma sätt som du hanterar andra prenumerationer.
-  
-### <a name="update-a-traditional-add-on"></a>Uppdatera ett traditionellt tillägg
-
 ::: moniker range="o365-worldwide"
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
-
-2. På sidan **produkter** väljer du den prenumeration som du vill uppdatera ett tillägg för.
-
-3. Välj **tillägg**. De tillägg som du har köpt visas.
-
-4. Välj **ändra antal** för det tillägg du vill ändra.
-
-5. Ange den ändring för antal du vill ha för abonnemanget och välj sedan **Skicka ändring**.
+2. På fliken **produkter** väljer du den prenumeration som innehåller tillägget som du vill uppdatera.
+3. **I avsnittet med** prenumerations information visas de tillägg som du har köpt. Välj **Hantera tillägg**.
+4. Välj det tillägg som du vill ändra i den nedrullningsbara listan med **tillägg** i fönstret **Hantera tillägg** .
+5. Ange en ändring för antal och välj sedan **Spara**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a> i administrationscentret.
-
 2. På sidan **Prenumerationer** väljer du den prenumeration som du vill uppdatera ett tillägg för.
-
 3. Välj **tillägg**.
-
     Tilläggen du har köpt visas och under varje tillägg visas länken **Ändra antal**.
-
-4. Välj länken **ändra antal** för det tillägg som du vill uppdatera.
-
+4. Välj länken **ändra antal** för det tillägg som du vill uppdatera. \
     ![Länkarna Tilläggsprogram och Ändra antal.](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
-  
 5. Ange antalet användar licenser du behöver i rutan och välj sedan **Skicka**.
-
     > [!TIP]
     > Du kan även använda upp- och nedpilen när du vill ändra antalet användarlicenser eller bara ange siffran du vill ha i rutan.
-  
+
     ![Rutan Totalt antal licenser och knappen Skicka i dialogrutan Lägg till eller ta bort licenser.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
@@ -156,64 +128,14 @@ Stegen du använder för att uppdatera ett tillägg beror på om tillägget är 
 ::: moniker range="o365-21vianet"
 
 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a> i administrationscentret.
-
 2. På sidan **Prenumerationer** väljer du den prenumeration som du vill uppdatera ett tillägg för.
-
 3. Välj **tillägg**.
-
     Tilläggen du har köpt visas och under varje tillägg visas länken **Ändra antal**.
-
-4. Välj länken **ändra antal** för det tillägg som du vill uppdatera.
-
+4. Välj länken **ändra antal** för det tillägg som du vill uppdatera. \
     ![Länkarna Tilläggsprogram och Ändra antal.](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
-  
 5. Ange antalet användar licenser du behöver i rutan och välj sedan **Skicka**.
-
     > [!TIP]
     > Du kan även använda upp- och nedpilen när du vill ändra antalet användarlicenser eller bara ange siffran du vill ha i rutan.
-  
-    ![Rutan Totalt antal licenser och knappen Skicka i dialogrutan Lägg till eller ta bort licenser.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
-
-
-::: moniker-end
-
-### <a name="update-a-standalone-add-on"></a>Uppdatera ett fristående tillägg
-
-::: moniker range="o365-worldwide"
-
-1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
-
-2. På sidan **produkter** väljer du den tilläggs prenumeration du vill uppdatera och väljer sedan **Lägg till/ta bort licenser**.
-
-3. Ange antalet licenser du behöver i rutan och välj sedan **Skicka ändring**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a> i administrationscentret.
-
-2. På sidan **prenumerationer** väljer du den tilläggs prenumeration du vill uppdatera och väljer sedan **Lägg till/ta bort licenser**.
-
-3. Ange antalet licenser du behöver i rutan och välj sedan **Skicka**.
-
-    > [!TIP]
-    > Du kan även använda upp- och nedpilen för att ändra antalet användarlicenser eller ange siffran du vill ha i rutan.
-  
-    ![Rutan Totalt antal licenser och knappen Skicka i dialogrutan Lägg till eller ta bort licenser.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a> i administrationscentret.
-
-2. På sidan **prenumerationer** väljer du den tilläggs prenumeration du vill uppdatera och väljer sedan **Lägg till/ta bort licenser**.
-
-3. Ange antalet licenser du behöver i rutan och välj sedan **Skicka**.
-
-    > [!TIP]
-    > Du kan även använda upp- och nedpilen för att ändra antalet användarlicenser eller ange siffran du vill ha i rutan.
   
     ![Rutan Totalt antal licenser och knappen Skicka i dialogrutan Lägg till eller ta bort licenser.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
@@ -221,30 +143,13 @@ Stegen du använder för att uppdatera ett tillägg beror på om tillägget är 
 
 ## <a name="remove-an-add-on"></a>Ta bort ett tillägg
 
-Du kan avsluta ett fristående tillägg på samma sätt som du [avbryter en prenumeration](subscriptions/cancel-your-subscription.md). Du kan även avaktivera **automatisk förnyelse** för ett fristående tillägg med hjälp av stegen ovan. Du kan inte dock ta bort ett traditionellt tillägg efter att det har köpts. Om du behöver ta bort ett traditionellt tillägg [kontaktar du support för att få hjälp](../admin/contact-support-for-business-products.md).
-  
-## <a name="available-add-ons"></a>Tillgängliga tillägg
+Om du vill ta bort ett fristående tilläggs abonnemang [avbryter du prenumerationen](subscriptions/cancel-your-subscription.md)precis som alla andra prenumerationer. Eller så kan du stänga [av](subscriptions/renew-your-subscription.md)automatisk förnyelse.
 
-Följande tabell innehåller tillägg som är tillgängliga för olika versioner av Microsoft 365 för företag.
+Det går inte att ta bort ett traditionellt tillägg. Om du vill ta bort ett traditionellt tillägg [kontaktar du support för att få hjälp](../admin/contact-support-for-business-products.md).
   
-Information om Skype för företag-tillägg finns i [licensiering för Skype för företag och Microsoft Teams](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
-  
-****
+## <a name="related-content"></a>Relaterat innehåll
 
-|**Tillägg**|**Tillgängliga i de här prenumerationerna**|
-|:-----|:-----|
-|Customer Lockbox  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E3  <br/>  Office 365 Enterprise E4  <br/> |
-|[Microsoft Defender för Office 365](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E3  <br/>  Office 365 Enterprise E4  <br/> |
-|[Exchange Online - arkivering](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise F1  <br/> |
-|Microsoft MyAnalytics  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E3  <br/>  Office 365 Enterprise E4  <br/> |
-|Office 365 Advanced Compliance  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E3  <br/>  Office 365 Enterprise E4  <br/> |
-|Office 365 Extra File Storage  <br/> | Microsoft 365-applikationer för affärsverksamhet  <br/>  Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E2  <br/>  Office 365 Enterprise, E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/>  Office för webben med SharePoint abonnemang 1  <br/>  Office för webben med SharePoint abonnemang 2  <br/>  SharePoint Online (abonnemang 1)  <br/>  SharePoint Online (abonnemang 2)  <br/> |
-|Telefon system  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/> |
-|Ljudkonferens  <br/> |  Microsoft 365 Business Basic <br/> Microsoft 365 Business Standard <br/> Office 365 Enterprise E1 <br/> Office 365 Enterprise, E3 <br/> Office 365 Enterprise E4 <br/> Office 365 Enterprise, E5 utan ljud konferens <br/> Microsoft 365 Business Premium <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
-|Samtals krediter  <br/> | Office 365 Enterprise E5  <br/> |
-|Inrikes samtals abonnemang <br/> | Office 365 Enterprise E5  <br/> |
-|Internationellt samtals abonnemang  <br/> | Office 365 Enterprise E5  <br/> |
-  
-## <a name="related-articles"></a>Relaterade artiklar
-
-[Lägga till lagrings utrymme för din prenumeration](add-storage-space.md)
+[Lägga till lagrings utrymme för din prenumeration](add-storage-space.md) (artikel) \
+[Köpa eller ta bort prenumerations licenser](licenses/buy-licenses.md) (artikel) \
+[Aktivera automatisk förnyelse eller på](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) (artikel) \
+[Hantera betalnings metoder](billing-and-payments/manage-payment-methods.md) (artikel)
