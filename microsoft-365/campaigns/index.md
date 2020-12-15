@@ -77,7 +77,7 @@ När du har installerat din säkra Microsoft 365-miljö kan du börja arbeta med
 | Skapa team för samarbete | Konfigurera onlinemöten |
 | ------------- | ------------- |
 | ![en SharePoint-kommunikationswebbplats](../media/sm-m365-democracy-teams-collab.png) | ![ett onlinemöte](../media/m365-democracy-teams-meetings.png) |
-| Samarbeta med team för nyckelpersoner, alla anställda och partners eller leverantörer. [Skapa ditt team](create-teams-for-collaboration.md) | Schemalägg ett möte med ljud-, video- och delning med Microsoft Teams. [Boka ett möte](set-up-meetings.md) |
+| Samarbeta med team för nyckelpersoner, alla anställda och partners eller leverantörer. [Skapa ditt team](create-teams-for-collaboration.md) | Planera ett möte med ljud-, video- och fildelning med Microsoft Teams. [Boka ett möte](set-up-meetings.md) |
 
 | Kryptera eller märk dina konfidentiella e-postmeddelanden | Skapa en webbplats för kommunikation |
 | ------------- | ------------- |
