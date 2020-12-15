@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Sammanfattning: den nya webb tjänsten för slut punkter innehåller inte ett litet antal slut punkter för specifika scenarier.'
 hideEdit: true
-ms.openlocfilehash: b94bd187eb0e450a2a85d4d156472e1f96420261
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 8e1d464a4bb24594ae783a8e1e272050b6c038bb
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558182"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682859"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Ytterligare slut punkter som inte ingår i Office 365 IP Address and URL Web Service
 
@@ -74,7 +74,7 @@ Förutom DNS är det alla valfria för de flesta kunder om du inte behöver det 
 
 [Hantera Office 365-slutpunkter](managing-office-365-endpoints.md)
   
-[Felsöka Office 365-anslutningar](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d.aspx)
+[Övervaka Microsoft 365-anslutning](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity?view=o365-worldwide)
   
 [Klientanslutning](https://support.office.com/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b)
   

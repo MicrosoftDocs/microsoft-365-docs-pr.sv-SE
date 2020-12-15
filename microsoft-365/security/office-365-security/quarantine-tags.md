@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Administratörer kan lära sig att använda karantän koder för att kontrol lera vad användarna kan göra i sina karantän meddelanden.
-ms.openlocfilehash: 498a5f45fa62481f7f4f8dfe5ece8a51a038f99a
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 167f147d7c74b78b1a1661b5444625fbf1cf3d41
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616014"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683073"
 ---
 # <a name="quarantine-tags"></a>Karantän koder
 
@@ -44,12 +44,12 @@ De tillgängliga enskilda behörigheterna och vad som ingår eller inte ingår i
 
 |Tillåtelse|Ingen åtkomst|Begränsad åtkomst|Full åtkomst|
 |---|:---:|:---:|:---:|
-|**Tillåt avsändare** (_PermissionToAllowSender_)|||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Spärra avsändare** (_PermissionToBlockSender_)||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Ta bort** (_PermissionToDelete_)||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Förhandsgranska** (_PermissionToPreview_)||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Tillåt att mottagare släpper ett meddelande från karantän** (_PermissionToRelease_)|||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Tillåt mottagare att begära att ett meddelande släpps från karantän** (_PermissionToRequestRelease_)||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**Tillåt avsändare** (_PermissionToAllowSender_)|||![Bockmarkering](../../media/checkmark.png)|
+|**Spärra avsändare** (_PermissionToBlockSender_)||![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|
+|**Ta bort** (_PermissionToDelete_)||![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|
+|**Förhandsgranska** (_PermissionToPreview_)||![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|
+|**Tillåt att mottagare släpper ett meddelande från karantän** (_PermissionToRelease_)|||![Bockmarkering](../../media/checkmark.png)|
+|**Tillåt mottagare att begära att ett meddelande släpps från karantän** (_PermissionToRequestRelease_)||![Bockmarkering](../../media/checkmark.png)||
 |
 
 Om du inte gillar standard behörigheterna i gruppen för förvalda behörigheter kan du använda anpassade behörigheter när du skapar eller ändrar egna karantän koder. Mer information om vad de här behörigheterna gör finns i avsnittet [behörighets information om karantänen](#quarantine-tag-permission-details) längre fram i den här artikeln.

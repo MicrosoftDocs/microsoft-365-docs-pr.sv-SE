@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5c558529360d84d5872649e41b95f509e5b52663
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 15778f076d4122b23449f66bd9781a7037c52c58
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663637"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683133"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Nätverks konfiguration för Microsoft Hanterat skrivbord
 
@@ -44,7 +44,7 @@ Microsoft Managed Desktop-adressen används för alla våra tjänster körs på 
 Microsoft-tjänst  | URL-adresser som behövs för listan Tillåt 
 --- | ---
 Microsoft Hanterat skrivbord | prod-mwaas-services-customerapi.azurewebsites.net
-Få hjälp | \*. support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net
+Få hjälp | \*. support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net  <br>concierge.live.com
 Snabb hjälp | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*. lync.com
 Microsoft-assistenten för support och återställning | \*. apibasic.diagnostics.office.com  <br>\*. api.diagnostics.office.com
  

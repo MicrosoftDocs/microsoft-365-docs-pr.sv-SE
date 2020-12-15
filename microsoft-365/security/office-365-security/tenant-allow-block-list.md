@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur du konfigurerar URL-poster i listan Tillåt/blockera i klient organisationen för säkerhets &.
-ms.openlocfilehash: 4bf5e2e29a9f48c434be527a2447ca4bf98c4208
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: f60e2f29bf9b880e9d2247fa59554300ae348a03
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49660004"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683217"
 ---
 # <a name="manage-urls-in-the-tenant-allowblock-list"></a>Hantera URL:er i Klientorganisation Tillåt / blockera listan
 
@@ -83,7 +83,7 @@ Mer information om syntaxen för URL-poster finns i [URL-syntaxen för listan Ti
 
      eller
 
-     - Flytta växlings knappen till höger för att konfigurera att posterna aldrig ska förfalla: ![Växlingsknapp aktiverad](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+     - Flytta växlings knappen till höger för att konfigurera att posterna aldrig ska förfalla: ![Växlingsknapp aktiverad](../../media/scc-toggle-on.png).
 
    - **Valfri anmärkning**: Ange en beskrivande text för posterna.
 
@@ -111,7 +111,7 @@ Klicka på **filter**. I det **filter** som visas konfigurerar du följande inst
 
 - **Åtgärd**: Välj **Tillåt**, **blockera** eller båda.
 
-- **Aldrig förfaller**: Välj av ( ![ Växla av ](../../media/scc-toggle-off.png) ) eller på ( ![ växling på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) ).
+- **Aldrig förfaller**: Välj av: ![ aktivera ](../../media/scc-toggle-off.png) eller inaktivera: ![ slå på ](../../media/scc-toggle-on.png) .
 
 - **Uppdaterades senast**: Välj ett start datum (**från**), ett slutdatum (**till**) eller båda.
 
@@ -141,7 +141,7 @@ Du kan inte ändra själva URL-värdet. I stället måste du ta bort posten och 
 
      eller
 
-     - Flytta växlings knappen till höger för att konfigurera posten så att den aldrig förfaller: ![Växlingsknapp aktiverad](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+     - Flytta växlings knappen till höger för att konfigurera posten så att den aldrig förfaller: ![Växlingsknapp aktiverad](../../media/scc-toggle-on.png).
 
    - **Valfri anmärkning**: Ange en beskrivande text för posten.
 

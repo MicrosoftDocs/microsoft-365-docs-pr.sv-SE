@@ -98,7 +98,7 @@ För att ansluta till Azure Active Directory (Azure AD) för din Microsoft 365-p
 | Office 365 U.S. Government DoD och Office 365 U.S. Government GCC High | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
 |||
 
-Skriv ditt användarnamn och lösenord för ditt Microsoft 365-konto för arbetet eller skolan i dialogrutan **Logga in på ditt konto** , och välj sedan **OK**.
+Skriv ditt användarnamn och lösenord för ditt Microsoft 365-konto för arbetet eller skolan i dialogrutan **Logga in på ditt konto**, och välj sedan **OK**.
 
 Om du använder multifaktorautentisering, följ instruktionerna för att ange ytterligare autentiseringsinformation, till exempel en verifieringskod.
 
@@ -138,7 +138,7 @@ För att ansluta till Azure AD för din Microsoft 365-prenumeration med ett kont
 | Office 365 U.S. Government DoD och Office 365 U.S. Government GCC High | `Connect-MsolService -AzureEnvironment USGovernment` |
 |||
 
-Skriv ditt användarnamn och lösenord för ditt Microsoft 365-konto för arbetet eller skolan i dialogrutan **Logga in på ditt konto** , och välj sedan **OK**.
+Skriv ditt användarnamn och lösenord för ditt Microsoft 365-konto för arbetet eller skolan i dialogrutan **Logga in på ditt konto**, och välj sedan **OK**.
 
 Om du använder multifaktorautentisering, följ instruktionerna för att ange ytterligare autentiseringsinformation, till exempel en verifieringskod.
 
@@ -165,11 +165,11 @@ Om du får ett felmeddelande, kontrollera följande problem:
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
   ```
 
-    Om versionsnumret som returneras är lägre än *1.0.8070.2* , avinstallerar Microsoft Azure Active Directory-modulen för Windows PowerShell och installerar från [Steg 1](#step-1-install-the-required-software)ovan.
+    Om versionsnumret som returneras är lägre än *1.0.8070.2*, avinstallerar Microsoft Azure Active Directory-modulen för Windows PowerShell och installerar från [Steg 1](#step-1-install-the-required-software)ovan.
 
-- **Om du får ett anslutningsfelmeddelande** , se [Felet "Connect-MsolService: Undantag av typen" misslyckades](https://go.microsoft.com/fwlink/p/?LinkId=532377).
+- **Om du får ett anslutningsfelmeddelande**, se [Felet "Connect-MsolService: Undantag av typen" misslyckades](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
-- **Om du får felmeddelandet "Get-Item: Det går inte att hitta sökvägen"** , kör kommandot:
+- **Om du får felmeddelandet "Get-Item: Det går inte att hitta sökvägen"**, kör kommandot:
 
 
    ```powershell

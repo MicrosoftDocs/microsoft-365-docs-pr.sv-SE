@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Administratörer kan läsa mer om vilka behörigheter som är tillgängliga i säkerhets & Compliance Center i Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff1aec2b513b90cf64007ce3b955ca11b9faf90b
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 6c01e70dd693b313ca369901a2d6475961510b6e
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663625"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683265"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>Behörigheter i Säkerhets- och efterlevnadscentret
 
@@ -59,7 +59,7 @@ Om du vill se hur du beviljar åtkomst till säkerhets & Compliance Center kan d
 |Roll grupp|Beskrivning|Standard roller tilldelade|
 |---|---|---|
 |**Kommunikationer**|Ger behörighet till alla arbets boks roller för kommunikation: administratör, analytiker, prövares och användare.|Ärende hantering <p> Administratör för kommunikation kompatibilitet <p> Analys av kommunikations kompatibilitet <p> Hantering av villkor för kommunikation <p> Undersökning av kommunikationen <p> Visnings program för kommunikation <p> Leverantör för feedback om data klassificering <p> View-Only fall|
-|**Administratörer för kommunikation överensstämmelse**|Administratörer för kommunikation som kan skapa och redigera principer och definiera globala inställningar.|ommunication för regelefterlevnad <p> Hantering av villkor för kommunikation|
+|**Administratörer för kommunikation överensstämmelse**|Administratörer för kommunikation som kan skapa och redigera principer och definiera globala inställningar.|Administratör för kommunikation kompatibilitet <p> Hantering av villkor för kommunikation|
 |**Analys av kommunikationer**|Analys av kommunikations efterlevnad som kan undersöka princip matchningar, Visa meddelande-metadata och vidta åtgärder.|Analys av kommunikations kompatibilitet <p> Hantering av villkor för kommunikation|
 |**Undersöknings prövare**|En analys av kommunikationen som kan undersöka princip matchningar, Visa meddelande innehåll och vidta åtgärder.|Ärende hantering <p> Analys av kommunikations kompatibilitet <p> Hantering av villkor för kommunikation <p> Undersökning av kommunikationen <p> Leverantör för feedback om data klassificering <p> View-Only fall|
 |**Visnings program för kommunikation**|Visnings program för kommunikation som kan komma åt tillgängliga rapporter och widgetar.|Hantering av villkor för kommunikation <p> Visnings program för kommunikation|
@@ -89,7 +89,7 @@ Om du vill se hur du beviljar åtkomst till säkerhets & Compliance Center kan d
 |**Deltagare i integritets hantering**|Hantera deltagar åtkomst för frågor om integritets hantering.|Permanent bidrag till integritets hantering <p> Tillfälligt bidrag till integritets hantering|
 |**Integritets utredning**|Analyser av integritets hanterings lösning som kan undersöka princip matchningar, Visa meddelande innehåll och vidta åtgärder.|Undersökning av integritets hantering|
 |**Visnings program för integritets hantering**|Visning av integritets hanterings lösning som kan komma åt tillgängliga instrument paneler och widgetar.|Sekretess hanterings visning|
-|**Hantering av Arkiv handlingar**|Medlemmar kan hantera och ta bort post innehåll.|RecordManagement|
+|**Hantering av Arkiv handlingar**|Medlemmar kan konfigurera alla aspekter av hantering av Arkiv handlingar, inklusive bevarande etiketter och dispositions granskningar.|RecordManagement <p> Hantering av bevarande <p> Dispositions hantering|
 |**Granskare**|Medlemmar kan bara visa listan med ärenden på sidan eDiscovery-ärenden i säkerhets & Compliance Center. De kan inte skapa, öppna eller hantera ett eDiscovery-ärende. Det primära syftet med den här roll gruppen är att tillåta medlemmar att visa och komma åt ärende data i [Avancerad eDiscovery (klassisk)](../../compliance/office-365-advanced-ediscovery.md) (kallas även för *Avancerad eDiscovery v1*). <p> Den här roll gruppen har den mest restriktiva eDiscovery-relaterade behörigheterna. <p> **Obs!** För närvarande kan användare som är medlemmar i roll gruppen granska inte komma åt data i [Avancerad eDiscovery i Microsoft 365](../../compliance/overview-ediscovery-20.md) (kallas även *Avancerad eDiscovery v2*). För att lägga till medlemmar i ett ärende i Avancerad eDiscovery v2 så att de kan granska ärende data måste en användare vara medlem i roll gruppen eDiscovery Manager.|Översikt|
 |**Säkerhets administratör**|Medlemmar har till gång till ett antal säkerhetsfunktioner i identitets skydds Center, privilegierad identitets hantering, övervaka Microsoft 365-tjänstens tillstånd och säkerhets & Compliance Center. <p> Den här roll gruppen kanske som standard inte har några medlemmar. Rollen som säkerhets administratör från Azure Active Directory är dock kopplad till den här roll gruppen. Därför ärver den här roll gruppen funktioner och medlemskap för rollen säkerhets administratör från Azure Active Directory. <p> Om du vill hantera behörigheter centralt kan du lägga till och ta bort grupp medlemmar i administrations centret för Azure Active Directory. Mer information finns i [Administratörs behörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Om du redigerar den här roll gruppen i fältet säkerhets & efterlevnad (medlemskap eller roller) gäller dessa ändringar endast för säkerhets & för regelefterlevnad och inte andra tjänster. <p> Den här roll gruppen innehåller alla skrivskyddade behörigheter för rollen säkerhets läsare plus ett antal ytterligare administrativa behörigheter för samma tjänster: Azure information Protection, identitets skydds Center, behörig identitets hantering, övervaka Microsoft 365-tjänstens hälsa och säkerhets & Compliance Center.|Gransknings loggar <p> Enhets hantering <p> Hantering av DLP-efterlevnad <p> IB-kompatibilitetskontrollen <p> Hantera aviseringar <p> Karantän <p> Säkerhets administratör <p> Etikett administratör för känslighet <p> Tagga deltagare <p> Taggredigerare <p> Taggkontrollen <p> View-Only gransknings loggar <p> Hantering av View-Only enheter <p> View-Only DLP-kompatibilitetskontrollen <p> View-Only IB-kompatibilitetskontrollen <p> View-Only hantera aviseringar|
 |**Säkerhets ansvarig**|Medlemmar kan hantera säkerhets varningar och även visa rapporter och inställningar för säkerhetsfunktioner.|Sökning efter efterlevnad <p> Hantera aviseringar <p> Säkerhets läsare <p> Tagga deltagare <p> Taggkontrollen <p> View-Only gransknings loggar <p> Hantering av View-Only enheter <p> View-Only DLP-kompatibilitetskontrollen <p> View-Only IB-kompatibilitetskontrollen <p> View-Only hantera aviseringar|
@@ -171,7 +171,7 @@ Observera att följande roller inte är tilldelade till roll gruppen organisatio
 |**Visnings program för data klassificering**|Visa listan med filer i innehålls Utforskaren.|Listvy för innehålls Utforskaren|
 |**Hantering av data undersökning**|Skapa, redigera, ta bort och kontrol lera åtkomsten till data undersökningar.|Administratör för efterlevnad <p> Data utredning|
 |**Enhets hantering**|Visa och redigera inställningar och rapporter för enhets hanterings funktioner.|Administratör för efterlevnad <p> Administratör för regelefterlevnad <p> Organisationshantering <p> Säkerhets administratör|
-|**Dispositions hantering**|Kontrol lera behörigheter för att komma åt manuell disposition i säkerhets & Compliance Center.|Administratör för efterlevnad <p> Administratör för regelefterlevnad|
+|**Dispositions hantering**|Visa och vidta en åtgärd på innehåll som har nått slutet av dess bevarande period. <p> | Administratör för regelefterlevnad|
 |**Hantering av DLP-efterlevnad**|Visa och redigera inställningar och rapporter för principer för data förlust skydd (DLP).|Administratör för efterlevnad <p> Administratör för regelefterlevnad <p> Organisationshantering <p> Säkerhets administratör|
 |**Ören**|Exportera post låda och webbplats innehåll som returneras från sökningar.|eDiscovery Manager|
 |**Låta**|Placera innehåll i post lådor, webbplatser och gemensamma mappar i parkerat. När det parkeras sparas en kopia av innehållet på en säker plats. Innehålls ägare kan fortfarande ändra eller ta bort det ursprungliga innehållet.|Administratör för efterlevnad <p> eDiscovery Manager <p> Organisationshantering|
@@ -192,8 +192,8 @@ Observera att följande roller inte är tilldelade till roll gruppen organisatio
 |**Tillfälligt bidrag till integritets hantering**|Används för att komma åt sekretess hanteringen som en tillfällig deltagare.|Integritets hantering <p> Deltagare i integritets hantering|
 |**Sekretess hanterings visning**|Används för att komma åt instrument paneler & widget i integritets hanterings lösning.|PrivacyManagement <p> Visnings program för integritets hantering|
 |**Karantän**|Gör det möjligt att visa och släppa e-postmeddelanden i karantän.|Karantän administratör <p> Säkerhets administratör <p> Organisationshantering|
-|**RecordManagement**|Visa och redigera konfiguration och rapporter för funktionen för post hantering.|Administratör för efterlevnad <p> Administratör för regelefterlevnad <p> Organisationshantering <p> Hantering av Arkiv handlingar|
-|**Hantering av bevarande**|Hantera bevarande principer.|Administratör för efterlevnad <p> Administratör för regelefterlevnad <p> Organisationshantering|
+|**RecordManagement**|Visa och redigera konfigurationen för funktionen för hantering av Arkiv handlingar.|Administratör för efterlevnad <p> Administratör för regelefterlevnad <p> Organisationshantering <p> Hantering av Arkiv handlingar|
+|**Hantering av bevarande**|Hantera bevarande principer, bevarande etiketter och bevarande etikett principer.|Administratör för efterlevnad <p> Administratör för regelefterlevnad <p> Organisationshantering <p> Hantering av Arkiv handlingar|
 |**Översikt**|Använd Avancerad eDiscovery för att spåra, tagga, analysera och testa dokument som har kopplats till dem.|eDiscovery Manager <p> Granskare|
 |**RMS-kryptering**|Dekryptera RMS-skyddat innehåll när du exporterar Sök resultat.|eDiscovery Manager|
 |**Roll hantering**|Hantera roll grupp medlemskap och skapa eller ta bort anpassade roll grupper.|Organisationshantering|
@@ -214,6 +214,6 @@ Observera att följande roller inte är tilldelade till roll gruppen organisatio
 |**Skrivskyddad hantering i IB**|Visa konfiguration och rapporter för funktionen för informations hinder.|Administratör för efterlevnad <p> Administratör för regelefterlevnad <p> Organisationshantering <p> Säkerhets administratör <p> Säkerhets ansvarig <p> Säkerhets läsare|
 |**Visa endast hantera aviseringar**|Visa konfiguration och rapporter för funktionen Hantera aviseringar.|Säkerhets administratör <p> Säkerhets ansvarig <p> Säkerhets läsare <p> Administratör för efterlevnad <p> Administratör för regelefterlevnad <p> Organisationshantering|
 |**Endast visning-mottagare**|Visa information om användare och grupper.|Flödes administratör <p> Administratör för efterlevnad <p> Administratör för regelefterlevnad <p> Organisationshantering|
-|**Skrivskyddad post hantering**|Visa konfiguration och rapporter för funktionen för post hantering.|Administratör för efterlevnad <p> Administratör för regelefterlevnad <p> Organisationshantering|
-|**Skrivskyddad hantering av bevarande**|Visa konfiguration och rapporter för funktionen för bevarande hantering.|Administratör för regelefterlevnad <p> Organisationshantering <p> Administratör för efterlevnad|
+|**Skrivskyddad post hantering**|Visa konfigurationen för funktionen för hantering av Arkiv handlingar.|Administratör för efterlevnad <p> Administratör för regelefterlevnad <p> Organisationshantering|
+|**Skrivskyddad hantering av bevarande**|Visa konfigureringen av bevarande principer, bevarande etiketter och bevarande etikett principer.|Administratör för regelefterlevnad <p> Organisationshantering <p> Administratör för efterlevnad|
 |

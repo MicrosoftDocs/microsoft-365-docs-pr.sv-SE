@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Få reda på mer om tillgängliga alternativ för att skapa en säker delningsmiljö för gäster i Microsoft 365 och ge gäståtkomst för bättre samarbete.
-ms.openlocfilehash: 4e2045113a6c98e2b3839a3a2cdd83105be94023
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: c52feeb8e5c85d38dfa1623ecdd7c2ee2a381fbd
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558194"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667711"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Skapa en säker miljö för gästdelning
 
@@ -162,7 +162,7 @@ Du kan minska din attackyta och underlätta administrationen genom att kräva at
 
 För Microsoft 365 Grupper och Team gör du det med en princip för villkorsstyrd åtkomst i Azure AD. För SharePoint är detta konfigurerat i administrationscentret för SharePoint. (Du kan också [använda känslighetsetiketter för att tillåta begränsad endast webb-åtkomst för gäster](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).)
 
-Tillåta begränsad endast webb-åtkomst för grupper och team
+Begränsa gäster till endast webbåtkomst för Grupper och Teams:
 
 1. Gå till [Principer för villkorstyrd åtkomst i Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
 2. På bladet för **Villkorsstyrd åtkomst – Principer** klickar du på **Ny princip**.

@@ -17,19 +17,19 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur du visar och konfigurerar globala inställningar (Blockera följande webb adresser lista och skydd för Office 365-appar) för säkra länkar i Microsoft Defender för Office 365.
-ms.openlocfilehash: 2793985e6289b26baad268925cbf9c5e9a89dce9
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: bc44432d4d9478e4c6a2414a70acc785c5b2c005
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572435"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682912"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Konfigurera globala inställningar för säkra länkar i Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Den här artikeln är avsedd för företags kunder som har [Microsoft Defender för Office 365](office-365-atp.md). Om du är hem användare letar efter information om Safelinks i Outlook kan du läsa mer i [avancerad Outlook.com-säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Den här artikeln är avsedd för företagskunder som har [Microsoft Defender för Office 365](office-365-atp.md). Om du är hem användare letar efter information om Safelinks i Outlook kan du läsa mer i [avancerad Outlook.com-säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Säkra länkar är en funktion i [Microsoft Defender för Office 365](office-365-atp.md) som tillhandahåller URL-genomsökning av inkommande e-postmeddelanden i e-postflöde och när du klickar på verifiering av URL-adresser och länkar i e-postmeddelanden och på andra platser. Mer information finns i [säkra länkar i Microsoft Defender för Office 365](atp-safe-links.md).
 
@@ -48,9 +48,9 @@ Du kan konfigurera inställningarna för global Safe Links i säkerhets & Compli
 
 - Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till sidan **Safe Links** använder du <https://protection.office.com/safelinksv2> .
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Du måste tilldelas behörigheter i säkerhets & Compliance Center innan du kan göra det i den här artikeln:
+- Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
   - För att konfigurera globala inställningar för säkra länkar måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** .
   - Om du vill ha skrivskyddad åtkomst till de globala inställningarna för säkra länkar måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** .
 
@@ -58,8 +58,8 @@ Du kan konfigurera inställningarna för global Safe Links i säkerhets & Compli
 
   **Anmärkningar**:
 
-  - Om du lägger till användare i motsvarande Azure Active Directory-roll i Microsoft 365 Admin Center får användarna den behörighet som krävs för säkerhets & efterlevnad Center _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Roll gruppen **organisations hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
+  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
 - För våra rekommenderade värden för globala inställningar för säkra länkar, se [Inställningar för säkra anslutningar](recommended-settings-for-eop-and-office365-atp.md#safe-links-settings).
 
@@ -71,7 +71,7 @@ Du kan konfigurera inställningarna för global Safe Links i säkerhets & Compli
 
 I rutan **Blockera följande URL: er** visas länkar som alltid ska blockeras av sökning efter säkra länkar i program som stöds. Mer information finns i ["Blockera följande URL-adresser" för säkra länkar](atp-safe-links.md#block-the-following-urls-list-for-safe-links).
 
-1. I säkerhets & Compliance Center går du till **Threat Management** \> **policy** \> **ATP Safe Links** och klickar sedan på **globala inställningar**.
+1. I säkerhets & Compliance Center går du till **Threat Management** \> **policy** \> och klickar sedan på **globala inställningar**.
 
 2. I **principen Safe Links för din organisation** flyger ut som visas går du till rutan **Blockera följande URL: er** .
 
@@ -116,15 +116,15 @@ Du kan använda cmdleten **Get-AtpPolicyForO365** för att visa befintliga poste
 
 Säkra länkar skydd för Office 365-appar gäller för dokument i Office-skrivbord, mobiler och webb program som stöds. Mer information finns i [Inställningar för säkra Länkar för Office 365-appar](atp-safe-links.md#safe-links-settings-for-office-365-apps).
 
-1. I säkerhets & Compliance Center går du till **Threat Management** \> **policy** \> **ATP Safe Links** och klickar sedan på **globala inställningar**.
+1. I säkerhets & Compliance Center går du till **Threat Management** \> **policy** \> och klickar sedan på **globala inställningar**.
 
 2. I **principen Safe Links för din organisation** flyger ut som visas konfigurerar du följande inställningar i inställningarna för **innehåll utom e-post** :
 
-   - **Office 365-program**: kontrol lera att växlings knappen är till höger för att aktivera säkra Länkar för Office 365-appar som stöds: ![ slå på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Office 365-program**: kontrol lera att växlings knappen är till höger för att aktivera säkra Länkar för Office 365-appar som stöds: ![ slå på ](../../media/scc-toggle-on.png) .
 
    - **Spåra inte när användare klickar på säkra länkar**: flytta växlings knappen till vänster för att hålla reda på användare klickar på relaterade till blockerade URL: er i Office 365-appar som stöds ![ ](../../media/scc-toggle-off.png) .
 
-   - **Tillåt inte att användare klickar via säkra länkar till den ursprungliga webb adressen**: kontrol lera att växlings knappen är till höger för att förhindra användare från att klicka dig fram till den ursprungliga blockerade webb adressen i Office 365-appar som stöds och ![ aktivera ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Tillåt inte att användare klickar via säkra länkar till den ursprungliga webb adressen**: kontrol lera att växlings knappen är till höger för att förhindra användare från att klicka dig fram till den ursprungliga blockerade webb adressen i Office 365-appar som stöds och ![ aktivera ](../../media/scc-toggle-on.png) .
 
    Klicka på **Spara** när du är klar.
 

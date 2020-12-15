@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om Safe-dokument i Microsoft 365 E5 eller Microsoft 365 E5 Security.
-ms.openlocfilehash: 0acb5d4ee0c80deebc4d0b040b046d63037037a7
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 1bf802422dc05babaf5e2616468f8326b7007dc8
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659879"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682943"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Säkra dokument i Microsoft 365 E5
 
@@ -62,7 +62,7 @@ Filer som skickas av säkra dokument behålls inte i Defender utöver den tid so
 
 2. I de **globala inställningarna** som visas konfigurerar du följande inställningar:
 
-   - **Aktivera säkra dokument för Office-klienter**: flytta växlings knappen till höger för att aktivera funktionen: ![ slå på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Aktivera säkra dokument för Office-klienter**: flytta växlings knappen till höger för att aktivera funktionen: ![ slå på ](../../media/scc-toggle-on.png) .
 
    - **Tillåt att personer klickar via skyddad vy även om säkra dokument identifierar filen som skadlig**: Vi rekommenderar att du låter det här alternativet vara avstängt (Stäng av växlings knappen till vänster: ![ Växla av ](../../media/scc-toggle-off.png) ).
 

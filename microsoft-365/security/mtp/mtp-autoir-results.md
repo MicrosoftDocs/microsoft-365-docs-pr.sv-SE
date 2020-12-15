@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 09/16/2020
-ms.openlocfilehash: 183435596706855479c49abc34358c85dccb0da4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 39f6be70ad7a611f9919bb0529e8c8ed7f9dc339
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846514"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683366"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Uppgifter och resultat från en automatiserad undersökning
 
@@ -74,19 +74,19 @@ Använd vyn granska information om du vill visa tidigare, nuvarande och väntand
 
 ![Gransknings uppgifter](../../media/mtp-air-investdetails.png)
 
-I vyn undersöknings Detaljer kan du se information om **undersökningen** , **aviseringar** , **enheter** , **identiteter** , **viktiga resultat** , **entiteter** , **loggning** och **väntande åtgärder** , som beskrivs i följande tabell.
+I vyn undersöknings Detaljer kan du se information om **undersökningen**, **aviseringar**, **enheter**, **identiteter**, **viktiga resultat**, **entiteter**, **loggning** och **väntande åtgärder** , som beskrivs i följande tabell.
 
-|Fliken    |Beskrivning |
+| Fliken | Beskrivning |
 |--------|--------|
-|Undersökning    |Ger en visuell representation av undersökningen. Beskriver enheter och visar en lista med hot och varningar och om åtgärder väntar på godkännande.<br/>Du kan klicka på ett objekt i diagrammet för att visa mer information. Om du till exempel klickar på ikonen **upptäckta hot** tar du till fliken **viktiga resultat** . |
-|Varningar |Visar en lista över aviseringar som är associerade med undersökningen. Aviseringar kan komma från hot Protection-funktioner på en användares dator, i Office-appar, Cloud App-säkerhet och andra Microsoft 365 Threat Protection-funktioner.|
-|Anordningar|Visar en lista med maskiner som ingår i undersökningen tillsammans med reparations nivå.|
-|Nyckeltal   |Visar resultaten från undersökningen tillsammans med status och åtgärder som utförs eller väntar. Du kan godkänna väntande åtgärder för enheter och identiteter på den här fliken.|
-|Posterna   |Visar en lista över användar aktiviteter, filer, processer, tjänster, driv rutiner, IP-adresser och beständiga metoder som är förknippade med undersökningen samt status och åtgärder som vidtas.|
-|Logga in    |Visar en detaljerad vy av alla steg som görs under undersökningen, tillsammans med status.|
-|Väntande åtgärder    |Visar de objekt som kräver godkännande för att fortsätta.|
+| **Undersökning**   | Ger en visuell representation av undersökningen. Beskriver enheter och visar en lista med hot och varningar och om åtgärder väntar på godkännande.<br/>Du kan klicka på ett objekt i diagrammet för att visa mer information. Om du till exempel klickar på ikonen **upptäckta hot** tar du till fliken **viktiga resultat** . |
+| **Varningar**    | Visar en lista över aviseringar som är associerade med undersökningen. Aviseringar kan komma från hot Protection-funktioner på en användares dator, i Office-appar, Cloud App-säkerhet och andra Microsoft 365 Defender-funktioner.|
+| **Enheter** | Visar en lista med maskiner som ingår i undersökningen tillsammans med reparations nivå.|
+| **Nyckeltal**  | Visar resultaten från undersökningen tillsammans med status och åtgärder som utförs eller väntar. Du kan godkänna väntande åtgärder för enheter och identiteter på den här fliken.|
+| **Posterna**  | Visar en lista över användar aktiviteter, filer, processer, tjänster, driv rutiner, IP-adresser och beständiga metoder som är förknippade med undersökningen samt status och åtgärder som vidtas.|
+|**Logga in**    | Visar en detaljerad vy av alla steg som görs under undersökningen, tillsammans med status.|
+| **Väntande åtgärder** | Visar de objekt som kräver godkännande för att fortsätta.|
 
 ## <a name="next-steps"></a>Nästa steg
 
 - [Godkänna eller avvisa åtgärder relaterade till automatiserad undersökning och svar](mtp-autoir-actions.md)
-
+- [Granska reparations åtgärder](mtp-remediation-actions.md)

@@ -17,19 +17,19 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du definierar principer för säkra bifogade filer för att skydda din organisation från skadliga filer via e-post.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a14f5a22795fc08b76165466d8e44ee38d8a2d81
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 9105e7ed9e9bc376b3d86cd846d8c1d6eae8deea
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572648"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682919"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Konfigurera principer för säkra bifogade filer i Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Den här artikeln är avsedd för företags kunder som har [Microsoft Defender för Office 365](office-365-atp.md). Om du är hem användare letar efter information om genomsökning av bifogade filer i Outlook, se [avancerad Outlook.com säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Den här artikeln är avsedd för företagskunder som har [Microsoft Defender för Office 365](office-365-atp.md). Om du är hem användare letar efter information om genomsökning av bifogade filer i Outlook, se [avancerad Outlook.com säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Säkra bifogade filer är en funktion i [Microsoft Defender för Office 365](office-365-atp.md) som använder en virtuell miljö för att kontrol lera bilagor i inkommande e-postmeddelanden efter att de har skannats av [skydd mot skadlig program vara i Exchange Online Protection (EOP)](anti-malware-protection.md), men innan de levereras till mottagarna. Mer information finns i avsnitten [om säkra bifogade filer i Microsoft Defender för Office 365](atp-safe-attachments.md).
 
@@ -57,9 +57,9 @@ I Exchange Online PowerShell eller fristående EOP PowerShell hanterar du policy
 
 - Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Använd om du vill gå direkt till sidan **betrodda bifogade filer** <https://protection.office.com/safeattachmentv2> .
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Du måste tilldelas behörigheter i säkerhets & Compliance Center innan du kan göra det i den här artikeln:
+- Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
   - Om du vill skapa, ändra och ta bort principer för säkra bifogade filer måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** .
   - Om du vill ha skrivskyddad åtkomst till principer för säkra bifogade filer måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** .
 
@@ -67,8 +67,8 @@ I Exchange Online PowerShell eller fristående EOP PowerShell hanterar du policy
 
   **Anmärkningar**:
 
-  - Om du lägger till användare i motsvarande Azure Active Directory-roll i Microsoft 365 Admin Center får användarna den behörighet som krävs för säkerhets & efterlevnad Center _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Roll gruppen **organisations hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
+  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
 - De rekommenderade inställningarna för principer för säkra bifogade filer finns i [Inställningar för säkra bifogade filer](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
@@ -166,7 +166,7 @@ Om du vill aktivera eller inaktivera en princip eller ange prioritetsordning fö
 
    - Flytta reglaget till vänster ![Inaktivera princip](../../media/scc-toggle-off.png) Om du vill inaktivera principen.
 
-   - Flytta reglaget till höger ![Aktivera princip](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) för att aktivera policyn.
+   - Flytta reglaget till höger ![Aktivera princip](../../media/scc-toggle-on.png) för att aktivera policyn.
 
 ### <a name="set-the-priority-of-safe-attachments-policies"></a>Ange prioritet för principer för säkra bifogade filer
 

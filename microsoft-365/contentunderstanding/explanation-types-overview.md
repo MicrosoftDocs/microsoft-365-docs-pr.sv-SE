@@ -25,15 +25,15 @@ Förklaringar används för att definiera den information som du vill använda f
    
 Följande förklaringstyper är tillgängliga:
 
-- **Fraslista**: lista med ord, fraser, siffror eller andra tecken som du kan använda i det dokument eller den information du extraherar. Till exempel, textsträngen **Hänvisande läkare** är i alla medicinska referensdokument som du identifierar.</br>
+- **Fraslista**: lista med ord, fraser, siffror eller andra tecken som du kan använda i det dokument eller den information du extraherar. Exempel: textsträngen **Hänvisande läkare** finns i alla medicinska referensdokument som du identifierar.</br>
 
-- **Mönsterlista**: listar mönster med siffror, bokstäver eller andra tecken som du kan använda för att identifiera den information som du extraherar. Du kan till exempel extrahera hämvisande läkarens **telefonnumret** alla medicinska referensdokument som du identifierar..</br>
+- **Mönsterlista**: listar mönster med siffror, bokstäver eller andra tecken som du kan använda för att identifiera den information som du extraherar. Till exempel kan du extrahera den hänvisande läkarens **Telefonnumret** i alla medicinsk referensdokument som du identifierar.</br>
 
-- **Närhet**: beskriver hur nära förklaringar är för varandra. Till exempel: en *gatunummer* mönsterlista går direkt före *gatu namn* fraslistan, utan tokens i mitten (du får lära dig mer om tokens senare i den här artikeln).Med närhetstypen måste du ha minst två förklaringar i modellen, annars är alternativet inaktiverat. 
+- **Närhet**: beskriver hur nära förklaringar är för varandra. Exempel: en mönsterlista för *gatunummer* ska ligga precis efter fraslistan för *gatunamn* utan tokens i mellan (du får lära dig mer om tokens senare i den här artikeln). Med närhetstypen måste du ha minst två förklaringar i modellen, annars är alternativet inaktiverat. 
  
 ## <a name="phrase-list"></a>Fraslista
 
-Förklaringstypen fraslista används vanligtvis för att identifiera och klassificera ett dokument via modellen.Så som det beskrivs i exemplet med etikett för *Hänvisande läkare* är det en sträng med ord, fraser, siffror eller tecken är konsekventa i de dokument som du identifierar.
+Förklaringstypen fraslista används vanligtvis för att identifiera och klassificera ett dokument via modellen. Så som det beskrivs i exemplet med etikett för *Hänvisande läkare* är det en sträng med ord, fraser, siffror eller tecken är konsekventa i de dokument som du identifierar.
 
 Även om det inte är obligatoriskt kan du få mer framgång med din förklaring om frasen du hämtar finns på en konsekvent plats i ditt dokument. Till exempel kan etiketten *Hänvisande läkare* konsekvent finnas i det första stycket i dokumentet.
 
@@ -77,7 +77,7 @@ Typen närhetsförklaring hjälper modellen att lättare identifiera data genom 
 
 Notera att kundens telefonnummer alltid visas före gatunumret. 
 
-Christian Forsberg<br>
+Alex Wilburn<br>
 555-555-5555<br>
 One Microsoft Way<br>
 Redmond, WA 98034<br>
@@ -88,7 +88,7 @@ Använd närhetsförklaringen för att definiera hur långt bort det är för at
 
 #### <a name="what-are-tokens"></a>Vad är tokens?
 
-Om du vill använda förklaringstypen närhet måste du förstå vad en token är eftersom antalet tokens är hur närhetsförklaringen mäter avståndet från en förklaring till en annan. En token är ett sammanhängande intervall (exklusive blanksteg eller skiljetecken) för bokstäver och siffror. 
+Om du vill använda närhetsförklaringstypen behöver du förstå vad en token är eftersom antalet tokens är hur närhetsförklaringen mäter avståndet från en förklaring till en annan. En token är ett sammanhängande intervall (exklusive blanksteg eller skiljetecken) för bokstäver och siffror. 
 
 I tabellen nedan visas exempel på hur du kan ta reda på antalet tokens i en fras.
 
@@ -101,7 +101,7 @@ I tabellen nedan visas exempel på hur du kan ta reda på antalet tokens i en fr
 
 #### <a name="configure-the-proximity-explanation-type"></a>Konfigurera typen närhetsförklaring
 
-Konfigurera inställningen närhet för detta exempel att definiera intervallet för antalet tokens i förklaringen för *Telefonnummer* från förklaringen *Gatunummer*.Notera att det minsta intervallet är "0" eftersom det inte finns några tokens mellan telefonnumret och gatunumret.
+Konfigurera inställningen närhet för detta exempel att definiera intervallet för antalet tokens i förklaringen för *Telefonnummer* från förklaringen *Gatunummer*. Notera att det minsta intervallet är "0" eftersom det inte finns några tokens mellan telefonnumret och gatunumret.
 
 Men vissa telefonnummer i urvalsdokumenten har tillägget *(mobil)*.
 
@@ -156,7 +156,7 @@ Observera att förklaringsbiblioteket även innehåller mallar för fraslistför
 
        ![Välj en mall](../media/content-understanding/phone-template.png)</br>
 
-3. Informationen för den mall som du valde visas på sidan **Skapa en förklaring**. Om det behövs kan du redigera namnet på förklaringen och lägga till eller ta bort objekt från mönsterlistan.</br> 
+3. Informationen för den mall som du valde visas på sidan **Skapa en förklaring**. Om det behövs kan du redigera namnet på förklaringen och lägga till eller ta bort objekt från mönsterlistan. </br> 
 
    ![Redigera mall](../media/content-understanding/phone-template-live.png)</br>
 

@@ -20,13 +20,13 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 09/16/2020
-ms.openlocfilehash: ed0b9afa576f65d33cd9a49dfacd96ffaf173d28
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.date: 12/09/2020
+ms.openlocfilehash: b34f4a532571d6215500ab2bec022489fd462d0f
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846538"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683373"
 ---
 # <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>Godkänna eller avvisa väntande åtgärder efter en automatisk undersökning
 
@@ -44,7 +44,7 @@ När en automatisk undersökning körs kan den resultera i en eller flera [repar
 Väntande åtgärder kan granskas och godkännas med hjälp av [Åtgärds centret](#review-a-pending-action-in-the-action-center) eller [vyn granska information](#review-a-pending-action-in-the-investigation-details-view).
 
 > [!NOTE]
-> Du måste ha [rätt behörighet](mtp-action-center.md#required-permissions-for-action-center-tasks) för att godkänna eller avvisa reparations åtgärder.
+> Du måste ha [rätt behörighet](mtp-action-center.md#required-permissions-for-action-center-tasks) för att godkänna eller avvisa reparations åtgärder. För mer information, se [förutsättningar för automatisk undersökning och svar i Microsoft 365 Defender](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
 
 ## <a name="review-a-pending-action-in-the-action-center"></a>Granska en väntande åtgärd i åtgärds centret
 
@@ -62,7 +62,7 @@ Väntande åtgärder kan granskas och godkännas med hjälp av [Åtgärds centre
 
 ![Gransknings uppgifter](../../media/mtp-air-investdetails.png)
 
-1. På en [undersöknings](mtp-autoir-results.md) sida väljer du fliken **pågående åtgärder** (eller **åtgärder** ). Objekt som väntar på godkännande finns här.
+1. På en [undersöknings](mtp-autoir-results.md) sida väljer du fliken **pågående åtgärder** (eller **åtgärder**). Objekt som väntar på godkännande finns här.
 
 2. Markera ett objekt i listan och välj sedan **Godkänn** eller **avvisa**.
 

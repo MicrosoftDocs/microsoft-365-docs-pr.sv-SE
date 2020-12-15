@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
-ms.date: 09/16/2020
+ms.date: 12/09/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 2b8872288291adc0b9fc5e1c1541f885711df230
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 7c28b7f3ac797f7402cfdb1f604fcef1e142a31b
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356709"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683313"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Automatisk undersökning och svar i Microsoft 365 Defender
 
@@ -39,21 +39,20 @@ ms.locfileid: "49356709"
 > Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera det i en labb miljö](https://aka.ms/mtp-trial-lab) eller [köra ett pilot projekt i produktionen](https://aka.ms/m365d-pilotplaybook).
 >
 
+## <a name="how-automated-investigation-and-self-healing-works"></a>Hur automatisk undersökning och själv återställning fungerar
+
 När säkerhets varningar utlöses är det upp till din säkerhets åtgärds grupp för att titta på dessa meddelanden och vidta åtgärder för att skydda din organisation. Det kan ta väldigt lång tid att prioritera och undersöka aviseringar, särskilt när nya meddelanden fortsätter när en undersökning pågår. Säkerhets Operations team kan känna av sig som skir volymen av de hot som de måste övervaka och skydda mot. Automatisk utredning och svars kapacitet, med själv återställning, i Microsoft 365 Defender kan hjälpa dig.
 
 Titta på följande video för att se hur själv återställning fungerar:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
-I Microsoft 365 Defender går det att automatisera undersökningar och svar med själv lagnings funktion på dina enheter, e-& innehåll och identiteter. I Microsoft 365 Defender samlas funktioner från: 
-- [Automatisk undersökning och reparation i Microsoft Defender för slut punkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-- [Automatisk undersökning och svar i Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
-- [Avancerad hot identifiering för Azure](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
+I Microsoft 365 Defender går det att automatisera undersökningar och svar med själv lagnings funktion på dina enheter, e-& innehåll och identiteter.
  
-I den här artikeln beskrivs hur automatisk undersökning och svar fungerar. Information om hur du konfigurerar de här funktionerna finns i [Konfigurera automatiserade undersökningar och svars funktioner i Microsoft 365 Defender](mtp-configure-auto-investigation-response.md).
+> [!TIP]
+> I den här artikeln beskrivs hur automatisk undersökning och svar fungerar. Information om hur du konfigurerar de här funktionerna finns i [Konfigurera automatiserade undersökningar och svars funktioner i Microsoft 365 Defender](mtp-configure-auto-investigation-response.md).
 
-## <a name="your-virtual-analyst"></a>Din virtuella analytiker
+## <a name="your-own-virtual-analyst"></a>Din egen virtuella analytiker
 
 Föreställ dig att du har en virtuell analys i ditt team för säkerhets åtgärder för nivå 1/nivå 2. Den virtuella analytikern imiterar de idealiska stegen som säkerhets åtgärder skulle vidta för att undersöka och åtgärda hot. Den virtuella assistenten kan arbeta dygnet runt, med obegränsad kapacitet och få en omfattande inläsning av undersökningar och hot. En sådan virtuell assistent kan avsevärt minska tiden för att svara och på så sätt frigöra dina säkerhets åtgärder för andra viktiga strategiska projekt. Om det här scenariot liknar vetenskaps gilla är det inte! En sådan virtuell analytiker är en del av Microsoft 365 Defender-sviten och dess namn är *automatiserad undersökning och svar*.
 

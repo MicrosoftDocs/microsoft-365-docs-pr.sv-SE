@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: 3c8477ce16249cb4d21c736da60d619774175041
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: 12f71011e28d5c8c8287146670282a86a77781ff
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123613"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682987"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Konfigurera automatiserade undersökningar och svars funktioner i Microsoft 365 Defender
 
@@ -60,7 +60,6 @@ Om automatiska utredningar körs och om reparations åtgärder vidtas automatisk
 3. Granska din enhets grup principer. Titta i så fall på åtgärds **nivå** kolumnen. Vi rekommenderar att du använder **fullständig åtgärd automatiskt**.  Du kan behöva skapa eller redigera dina enhets grupper för att få den automatiserings nivå du vill ha. Om du vill ha hjälp med den här uppgiften kan du läsa följande artiklar:
 
    - [Så här åtgärdar du hot](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
-   
    - [Skapa och hantera enhets grupper](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups) 
 
 ## <a name="review-your-security-and-alert-policies-in-office-365"></a>Granska säkerhets-och aviserings principer i Office 365
@@ -105,6 +104,6 @@ Säkerhets inställningar i Office 365 hjälper till att skydda e-post och inneh
 
 ## <a name="review-pending-and-completed-actions-in-the-action-center"></a>Granska väntande och slutförda åtgärder i åtgärds centret
 
-När du har konfigurerat en automatisk undersökning och ett svar i Microsoft 365 Defender är nästa steg att besöka åtgärds centret ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ). Där kan du granska och godkänna väntande åtgärder och se åtgärds åtgärder som vidtogs automatiskt. 
+När du har konfigurerat en automatisk undersökning och ett svar i Microsoft 365 Defender är nästa steg att besöka åtgärds centret ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ). Där kan du granska och godkänna pågående åtgärder och se reparations åtgärder som vidtogs automatiskt eller manuellt. 
 
 [Gå till åtgärds Center](mtp-action-center.md).

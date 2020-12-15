@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om vilka phishing-principer som är tillgängliga i Exchange Online Protection (EOP) och Microsoft Defender för Office 365.
-ms.openlocfilehash: 34c66d8ab39af443462e8c5ac99009b4170be21e
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 43736fbd42949a084804825ec7f12d19b7fd1818
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659867"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683047"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-nätfiske-principer i Microsoft 365
 
@@ -43,12 +43,12 @@ De högre skillnaderna mellan anti-nätfiske-principer i EOP och anti-nätfiske-
 
 |Funktion|Skydd mot nätfiske i EOP|Skydd mot nätfiske i Microsoft Defender för Office 365|
 |---|:---:|:---:|
-|Automatiskt skapad standard policy|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Skapa anpassade principer|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Princip inställningar<sup>\*</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Inställningar för personifiering||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Inställningar för förfalskning|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Avancerade nät fiske trösklar||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Automatiskt skapad standard policy|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|
+|Skapa anpassade principer|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|
+|Princip inställningar<sup>\*</sup>|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|
+|Inställningar för personifiering||![Bockmarkering](../../media/checkmark.png)|
+|Inställningar för förfalskning|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|
+|Avancerade nät fiske trösklar||![Bockmarkering](../../media/checkmark.png)|
 |
 
 <sup>\*</sup> I standard principen är princip namnet och beskrivningen skrivskyddad (beskrivningen är tom) och du kan inte ange vem principen gäller för (standard policyn gäller för alla mottagare).

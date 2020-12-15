@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 description: Administratörer kan läsa om hotets skydd i Microsoft 365 och konfigurera hur det ska användas för din organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 646fff4550de2e07342c0fef04952846db65a8eb
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 3eec37f01bb39dda9f767ad32be96bbff43a2ee0
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615126"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683253"
 ---
 # <a name="protect-against-threats"></a>Skydda mot hot
 
@@ -179,9 +179,9 @@ Om du vill konfigurera [säkra länkar](atp-safe-links.md)kan du läsa och redig
 
 1. I [säkerhets & Compliance Center](https://protection.office.com)väljer du **Threat Management** \> **policy** \> **Safe Links** och klickar på **globala inställningar** och konfigurerar sedan följande inställningar:
 
-   - Verifiera **Använd säkra länkar i: Office 365-program** är aktiverat: ![ slå på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - Verifiera **Använd säkra länkar i: Office 365-program** är aktiverat: ![ slå på ](../../media/scc-toggle-on.png) .
    - **Spåra inte när användare klickar på säkra länkar**: inaktivera den här inställningen för att spåra användare: Stäng ![ av ](../../media/scc-toggle-off.png) .
-   - **Tillåt inte att användare klickar via säkra länkar till ursprunglig URL**: kontrol lera att den här inställningen är aktive rad: ![ slå på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Tillåt inte att användare klickar via säkra länkar till ursprunglig URL**: kontrol lera att den här inställningen är aktive rad: ![ slå på ](../../media/scc-toggle-on.png) .
 
    Klicka på **Spara** när du är klar.
 
@@ -216,7 +216,7 @@ Arbets belastningar som SharePoint, OneDrive och Teams är byggda för samarbete
 
 1. I [säkerhets & Compliance Center](https://protection.office.com)väljer du **hot Management** \> **policy** \> **säkerhets** **Inställningar** för fler spar ande bilagor
 
-2. Kontrol lera att växla mellan **ATP för SharePoint, OneDrive och Microsoft Teams** är till höger: ![ slå på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) och klicka sedan på **Spara**.
+2. Kontrol lera att växla mellan **ATP för SharePoint, OneDrive och Microsoft Teams** är till höger: ![ slå på ](../../media/scc-toggle-on.png) och klicka sedan på **Spara**.
 
 3. Granska (och, om tillämpligt, redigera) organisationens principer för [säkert bifogade filer](set-up-atp-safe-attachments-policies.md) och [säkra länkar](set-up-atp-safe-links-policies.md).
 

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 55a84fa8ba31cfd4f981f2820811b541ae340a27
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: c2c01278831433c02e5c869dba83f223eea57d27
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357629"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683241"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Principer för att tillåta gäst-och extern B2B-åtkomst
 
@@ -63,8 +63,6 @@ Microsoft Teams definierar följande:
 - **Extern åtkomst** är för en extern användare som inte har ett B2B-konto. Extern åtkomst kan inkludera inbjudningar och deltagande i samtal, chattar och möten, men inte grupp medlemskap och åtkomst till teamens resurser.
 
 Mer information finns i [jämförelsen mellan gäst och extern åtkomst för Teams](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
-
-Principer för villkorsstyrd åtkomst gäller endast för gäst åtkomst i Teams eftersom det finns ett motsvarande Azure AD B2B-konto.
 
 Se [Policy rekommendationer för att skydda Teams, grupper och filer](teams-access-policies.md) för att få mer information om att skydda identitets-och enhets åtkomst principer för Teams.
 
