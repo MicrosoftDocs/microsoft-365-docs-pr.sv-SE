@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratörsroller mappar till affärsfunktioner och ger behörighet att utföra särskilda uppgifter i administrationscentret. Tjänsteadministratören kan till exempel öppna supportbiljetter via administratörscentret.
-ms.openlocfilehash: 5ee8f5732d67ee3913ac7de5bcb7328065b0c8ba
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 774edf1a024bd7aab7f35d5635c84b355fc0ef5a
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445469"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682663"
 ---
 # <a name="about-admin-roles"></a>Om administratörsroller
 
-Din Microsoft 365- eller Office 365-prenumeration innehåller en uppsättning administratörsroller som du kan tilldela användare i organisationen i Administrationscenter för Microsoft 365. Varje administratörsroll mappar till vanliga affärsfunktioner och ger personerna i organisationen behörighet att utföra särskilda uppgifter i administrationscentret.
+Microsoft 365- eller Office 365-prenumeration innehåller en uppsättning administratörsroller som du kan tilldela användare i din organisation i Administrationscenter för Microsoft 365. Varje administratörsroll mappar till vanliga affärsfunktioner och ger personerna i organisationen behörighet att utföra särskilda uppgifter i administrationscentret.
 
 I Administrationscenter för Microsoft 365 kan du hantera Azure Active Directory-roller och Microsoft Intune-roller. Dessa roller är dock en deluppsättning av rollerna som finns tillgängliga i Azure Active Directory-portalen och administrationscentret för Intune.
 
