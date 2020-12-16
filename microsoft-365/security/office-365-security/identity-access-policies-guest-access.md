@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: c2c01278831433c02e5c869dba83f223eea57d27
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 376845d8e3657b91b9efe0357e94f4bec3a84078
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683241"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688291"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Principer för att tillåta gäst-och extern B2B-åtkomst
 
@@ -44,7 +44,7 @@ I följande tabell visas de principer som du måste skapa och uppdatera. Gemensa
 
 |Skydds nivå|Principerna|Mer information|
 |---|---|---|
-|**Grundläggande**|[Kräv MFA alltid för gäst-och externa användare](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Skapa den här nya principen och konfigurera: <ul><li> För **uppgifter > användare och grupper > inkludera** väljer **du Välj användare och grupper** och sedan **alla gäst-och externa användare**. </li><li> För **tilldelningar > villkor > inloggning** ska du låta alla alternativ vara avmarkerade så att multifaktorautentisering alltid används (MFA).</li>|
+|**Grundläggande**|[Kräv MFA alltid för gäst-och externa användare](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Skapa den här nya principen och konfigurera: <ul><li>För **uppgifter > användare och grupper > inkludera** väljer **du Välj användare och grupper** och sedan **alla gäst-och externa användare**.</li><li>För **tilldelningar > villkor > inloggning** ska du låta alla alternativ vara avmarkerade så att multifaktorautentisering alltid används (MFA).</li></ul>|
 ||[Kräv MFA när en inloggnings risk är *mellan* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Ändra den här principen så att den exkluderar gäst-och externa användare.|
 ||[Kräv kompatibla PC-datorer](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Ändra den här principen så att den exkluderar gäst-och externa användare.|
 

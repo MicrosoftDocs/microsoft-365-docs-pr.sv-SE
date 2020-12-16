@@ -366,7 +366,7 @@
           items:
             - name: Exchange Online Protection
               items:
-                - name: Konfigurera standardprincipen för skydd mot nätfiske i EOP
+                - name: Konfigurera principer för skydd mot nätfiske i EOP
                   href: ./office-365-security/configure-anti-phishing-policies-eop.md
                 - name: Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost
                   href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
