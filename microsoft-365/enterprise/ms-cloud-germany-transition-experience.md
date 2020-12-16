@@ -1,9 +1,9 @@
 ---
-title: Kund upplevelse under migreringen till Office 365-tjänster i de nya tyska Data Center-regionerna
+title: Vad har ändrats för migreringen till Office 365-tjänster i de nya tyska Data Center-regionerna
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/01/2020
+ms.date: 12/11/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,15 +18,15 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 'Sammanfattning: förstå upplevelsen av att flytta från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i det nya tyska data centret.'
-ms.openlocfilehash: a44fbe504a9a710856deeb3baf258feb124ce7ae
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+description: 'Sammanfattning: förstå vad som har ändrats för flytt från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i det nya tyska data centret.'
+ms.openlocfilehash: 0415f7b95cb9a9f2625798311946dac0f1f7c2c0
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551701"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688628"
 ---
-# <a name="customer-experience-during-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Kund upplevelse under migreringen till Office 365-tjänster i de nya tyska Data Center-regionerna
+# <a name="what-has-changed-for-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Vad har ändrats för migreringen till Office 365-tjänster i de nya tyska Data Center-regionerna
 
 Migrering av klient organisationer har utformats för att få minimal påverkan på administratörer och användare. Men det finns faktorer för varje arbets belastning. Kontrol lera följande avsnitt för att få en bättre förståelse för migreringsprocessen.
 
@@ -107,9 +107,9 @@ Komma igång:
 
 Flytta genom över gången:
 
-- [Åtgärder och konsekvenser för migreringen](ms-cloud-germany-transition-phases.md)
+- [Åtgärder och påverkan i migreringsfaser](ms-cloud-germany-transition-phases.md)
 - [Övrig för hands arbete](ms-cloud-germany-transition-add-pre-work.md)
-- Ytterligare information om [tjänster](ms-cloud-germany-transition-add-general.md), [enheter](ms-cloud-germany-transition-add-devices.md), [erfarenheter](ms-cloud-germany-transition-add-experience.md)och [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Ytterligare information för [Azure AD](ms-cloud-germany-transition-azure-ad.md), [enheter](ms-cloud-germany-transition-add-devices.md), [upplevelser](ms-cloud-germany-transition-add-experience.md)och [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Molnappar:
 

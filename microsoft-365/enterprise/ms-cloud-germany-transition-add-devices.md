@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: ytterligare enhets information på tjänster när du flyttar från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i det nya tyska data centret.'
-ms.openlocfilehash: 941b836871f4ffb7f39f6e144675e9ee15510270
-ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
+ms.openlocfilehash: 1bbb4bf39db61a93844c21cd6062a70699b5d6d7
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49560868"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688661"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Ytterligare enhets information för migreringen från Microsoft Cloud Deutschland
 
@@ -247,7 +247,7 @@ För att avregistrera och registrera enheten på Android från företags portale
 3.  På menyn punkter (tre punkter) väljer du **ta bort enhet** och slutför borttagningen genom att bekräfta i dialog rutan.
 4.  Du ska nu vara utloggad från företagsportalsappen. Välj **Logga in** för att registrera enheten på nytt.
 
-Om du vill ha mer information om åtgärder som krävs under migrations fasen för denna arbets belastning, eller om det påverkar administrationen eller användningen, läser du informationen om Azure Active Directory i [Ytterligare allmän information för migreringen från Microsoft Cloud Deutschland](ms-cloud-germany-transition-add-general.md#azure-active-directory).
+Om du vill ha mer information om åtgärder som krävs under migrations fasen av denna arbets belastning, eller om det påverkar administrationen eller användningen, läser du informationen om Azure Active Directory (Azure AD) i [ytterligare Azure AD-information för migreringen från Microsoft Cloud Deutschland](ms-cloud-germany-transition-azure-ad.md).
 
 ## <a name="ios"></a>iOS
 
@@ -281,9 +281,9 @@ Komma igång:
 
 Flytta genom över gången:
 
-- [Åtgärder och konsekvenser för migreringen](ms-cloud-germany-transition-phases.md)
+- [Åtgärder och påverkan i migreringsfaser](ms-cloud-germany-transition-phases.md)
 - [Övrig för hands arbete](ms-cloud-germany-transition-add-pre-work.md)
-- Ytterligare information om [tjänster](ms-cloud-germany-transition-add-general.md), [enheter](ms-cloud-germany-transition-add-devices.md), [erfarenheter](ms-cloud-germany-transition-add-experience.md)och [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Ytterligare information för [Azure AD](ms-cloud-germany-transition-azure-ad.md), [enheter](ms-cloud-germany-transition-add-devices.md), [upplevelser](ms-cloud-germany-transition-add-experience.md)och [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Molnappar:
 

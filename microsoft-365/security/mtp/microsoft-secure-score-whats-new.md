@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4b25f701aca24563dc4f1a15f78a80e1e2064367
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 253e85da7bb85a0722831851f00051a50a96153e
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604389"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688417"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nyheter i Microsofts säkra Poäng
 
@@ -34,6 +34,17 @@ ms.locfileid: "49604389"
 Vi har gjort några ändringar för att göra Microsoft säkert poäng en bättre representant för dina säkerhets Posture. Om du vill veta mer om planerade ändringar kan du läsa [vad som kommer i Microsofts säkra Poäng?](microsoft-secure-score-whats-coming.md)
 
 Microsoft Secure score finns https://security.microsoft.com/securescore i [Microsoft 365 Security Center](overview-security-center.md).
+
+## <a name="december-2020"></a>December 2020
+
+### <a name="added-6-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>6 Accounts-relaterade förbättrings åtgärder för Microsoft Defender för slut punkten (tidigare Microsoft Defender ATP):
+
+- Ange minsta längd för lösen ord för "14 eller fler tecken"
+- Ange "lösen ord historik" för "24 eller fler lösen ord"
+- Ange "maximalt lösen ord ålder" på "60 eller färre dagar", men inte 0 '
+- Ange "lägst lösen ord ålder" på "1 eller fler dagar"
+- Inaktivera det inbyggda administratörs kontot
+- Inaktivera det inbyggda gäst kontot
 
 ## <a name="november-2020"></a>November 2020
 

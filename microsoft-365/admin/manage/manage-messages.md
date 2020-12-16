@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
-description: Lär dig att hantera meddelanden i Message Center för att hjälpa till med ändringshantering.
-ms.openlocfilehash: c415120a86b0c095df8ba9cbb4130abda1f6596b
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+description: Lär dig hantera meddelanden i meddelande Center för att få hjälp med ändrings hantering.
+ms.openlocfilehash: 9f64be8396900db3377505fea3e144fffbb3b096
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005828"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688284"
 ---
 # <a name="manage-messages-in-message-center"></a>Hantera meddelanden i Meddelandecenter
 
@@ -33,71 +33,71 @@ Inlägg i Meddelandecenter är viktiga meddelanden om nya och ändrade funktione
   
 ## <a name="read-a-message"></a>Läsa ett meddelande
 
-Om du vill gå till meddelandecentret går du till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=2024339)och väljer **Health**  >  **Hälsomeddelandecenter**. 
+Gå till meddelande Center genom att gå till [administrations centret](https://go.microsoft.com/fwlink/p/?linkid=2024339)och välja Center för **hälso**  >  **meddelanden**. 
 
-Markera en meddelandetitel för att öppna den i läsfönstret. Varje meddelande innehåller en sammanfattning av ändringen, en redogörelse för hur ändringen kan påverka dig, information om hur du kan förbereda din organisation för ändringen och (i de flesta fall) en ytterligare informationslänk där du kan läsa mer. Den ytterligare informationen fortsätter att vara tillgänglig, även efter att ett meddelande har upphört att gälla.
+Markera en meddelande rubrik för att öppna den i Läs fönstret. Varje meddelande innehåller en sammanfattning av ändringen, en förklaring om hur ändringen kan påverka dig, information om hur du kan förbereda din organisation för ändringen och (i de flesta fall) en ytterligare informations länk där du kan läsa mer. Den ytterligare informationen fortsätter att vara tillgänglig även efter att ett meddelande har gått ut.
 
 ## <a name="filter-and-sort"></a>Filtrera och sortera
 
 ::: moniker range="o365-worldwide"
 
-Använd den **nedrullningsbara** menyn Filter för att välja en filtrerad vy av meddelanden.
+Använd List menyn **filter** för att välja en filtrerad vy av meddelanden.
 
-Du kan markera valfri kolumnrubrik för att sortera meddelanden i stigande eller fallande ordning. Till exempel sorteras i det här diagrammet meddelanden på **Agera senast**-datum.
+Du kan välja en kolumn rubrik för att sortera meddelanden i stigande eller fallande ordning. Till exempel sorteras i det här diagrammet meddelanden på **Agera senast**-datum.
 
-![Meddelandecentervy sorterad efter lag efter datum](../../media/message-center-filter-act-by.png)
+![Vyn meddelande Center sorterad efter datum](../../media/message-center-filter-act-by.png)
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Använd listrutan **Vyer** för att välja en filtrerad vy med meddelanden. 
+Använd den nedrullningsbara menyn **vyer** för att välja en filtrerad vy av meddelanden. 
  
-Du kan markera valfri kolumnrubrik för att sortera meddelanden i stigande eller fallande ordning. I den här bilden sorteras till exempel **meddelandena** efter datum.
+Du kan välja en kolumn rubrik för att sortera meddelanden i stigande eller fallande ordning. I den här illustrationen sorteras till exempel meddelandena **efter** datum.
 
-![Meddelandecentervy sorterad efter lag efter datum](../../media/message-center-old-admin-center1.png)
+![Vyn meddelande Center sorterad efter datum](../../media/message-center-old-admin-center1.png)
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Använd listrutan **Vyer** för att välja en filtrerad vy med meddelanden. 
+Använd den nedrullningsbara menyn **vyer** för att välja en filtrerad vy av meddelanden. 
  
-Du kan markera valfri kolumnrubrik för att sortera meddelanden i stigande eller fallande ordning. I den här bilden sorteras till exempel **meddelandena** efter datum.
+Du kan välja en kolumn rubrik för att sortera meddelanden i stigande eller fallande ordning. I den här illustrationen sorteras till exempel meddelandena **efter** datum.
 
-![Meddelandecentervy sorterad efter lag efter datum](../../media/message-center-old-admin-center1.png)
+![Vyn meddelande Center sorterad efter datum](../../media/message-center-old-admin-center1.png)
 
 ::: moniker-end
 
-## <a name="give-feedback-on-a-post"></a>Ge feedback på ett inlägg
+## <a name="give-feedback-on-a-post"></a>Ge feedback om ett inlägg
 
-I meddelandecentret kan du välja ett meddelande för att visa information.
+I meddelande Center kan du välja ett meddelande för att visa detaljer.
 
-Om du vill ge feedback på meddelandet markerar du ikonen **Gilla** eller **ogillar** och ger feedback i textrutan som visas. Lämna inga personuppgifter. Du kan också välja **Det är OK att kontakta mig om denna feedback** och sedan välja **Skicka**.
+Om du vill ge feedback om meddelandet väljer du ikonen **gilla** eller **gilla** och ger feedback i text rutan som visas. Uppge ingen personlig information. Du kan till och med välja **det här om du vill kontakta mig angående feedback** och sedan välja **Skicka**.
 
 ## <a name="share-a-message"></a>Dela ett meddelande
 
 Ser du ett meddelande som någon annan måste göra något åt? Du kan dela innehållet i meddelandet med en annan användare via e-post:
   
-1. Markera meddelandet för att öppna det och välj sedan **Dela**.
+1. Markera meddelandet för att öppna det och välj sedan **dela**.
   
-2. Om du vill dela meddelandet anger du upp till två e-postadresser avgränsade med ett kolon. Du kan skicka till enskilda och gruppera e-postadresser. Du kan också välja att ta emot en kopia av meddelandet i e-postmeddelandet (meddelandet går till din primära e-postadress) eller lägger till ett personligt meddelande för att ge mottagarna mer kontext.
+2. Dela meddelandet genom att ange upp till två e-postadresser avgränsade med ett kolon. Du kan skicka till enskilda och gruppera e-postadresser. Du kan också välja att få en kopia av meddelandet via e-post (meddelandet skickas till din primära e-postadress) eller Lägg till ett personligt meddelande för att ge mottagare med mer kontext.
   
-3. Välj **Dela** om du vill skicka e-postmeddelandet.
+3. Välj **dela** för att skicka e-postmeddelandet.
     
 ## <a name="get-a-link"></a>Hämta en länk
 
-Behöver du följa upp med en annan administratör för att se till att de är medvetna om en förändring och vidta åtgärder? Du kan till exempel skapa en länk för att dela med e-post eller snabbmeddelanden som ansluter användaren direkt till meddelandet. Personen du delar länken med måste vara administratör i Microsoft 365 för din organisation eller så har de inte åtkomst till det länkade meddelandet.
+Behöver du följa upp med en annan administratör för att se till att de är medvetna om en ändring och åtgärd? Du kan skapa en länk för att dela via e-post eller snabb meddelanden, till exempel om du vill att användaren ska kopplas direkt till meddelandet. Den du delar länken med måste vara en administratör i Microsoft 365 för din organisation, eller så har de inte åtkomst till det länkade meddelandet.
 
 ::: moniker range="o365-worldwide"
 
 1. Markera meddelandet för att öppna det.
 
-2. Markera **ikonen Kopiera till Urklipp** (länk).
+2. Välj ikonen **Kopiera länk till Urklipp** .
 
-3. Tillåt webbsidan att få åtkomst till Urklipp. En direktlänk kopieras till Urklipp.
+3. Tillåt webbsidan att få åtkomst till Urklipp. En direkt länk kopieras till Urklipp.
 
-4. Använd Ctrl+V eller högerklicka och välj **Klistra in** för att infoga länken.
+4. Använd Ctrl + V eller högerklicka och välj **Klistra** in för att infoga länken.
 
 ::: moniker-end
 
@@ -105,11 +105,11 @@ Behöver du följa upp med en annan administratör för att se till att de är m
 
 1. Markera meddelandet för att öppna det.
 
-2. Välj **Mer** \> **Hämta en länk** från åtgärdsfältet.
+2. Välj **mer** \>  i åtgärds fältet.
 
-3. Tillåt webbsidan att få åtkomst till Urklipp. En direktlänk kopieras till Urklipp.
+3. Tillåt webbsidan att få åtkomst till Urklipp. En direkt länk kopieras till Urklipp.
 
-4. Använd Ctrl+V eller högerklicka och välj **Klistra in** för att infoga länken.
+4. Använd Ctrl + V eller högerklicka och välj **Klistra** in för att infoga länken.
 
 ::: moniker-end
 
@@ -117,11 +117,11 @@ Behöver du följa upp med en annan administratör för att se till att de är m
 
 1. Markera meddelandet för att öppna det.
 
-2. Välj **Mer** \> **Hämta en länk** från åtgärdsfältet.
+2. Välj **mer** \>  i åtgärds fältet.
 
-3. Tillåt webbsidan att få åtkomst till Urklipp. En direktlänk kopieras till Urklipp.
+3. Tillåt webbsidan att få åtkomst till Urklipp. En direkt länk kopieras till Urklipp.
 
-4. Använd Ctrl+V eller högerklicka och välj **Klistra in** för att infoga länken.
+4. Använd Ctrl + V eller högerklicka och välj **Klistra** in för att infoga länken.
 
 ::: moniker-end
 
@@ -131,7 +131,7 @@ Alla meddelanden i Meddelandecenter som är olästa visas i fetstil. Om du öppn
 
 ::: moniker range="o365-worldwide"
 
-1. Välj ett meddelande på huvudsidan i meddelandecentret.
+1. På huvud sidan i meddelande Center väljer du ett meddelande.
 
 2. Markera ikonen **Markera som oläst** (kuvert) högst upp i meddelandet.
   
@@ -157,21 +157,21 @@ Alla meddelanden i Meddelandecenter som är olästa visas i fetstil. Om du öppn
 
 ::: moniker-end
 
-## <a name="archive-and-restore"></a>Arkivera och återställa
+## <a name="archive-and-restore"></a>Arkivera och Återställ
 
-Om du ser ett meddelande som inte hör till dig, eller om du kanske redan har agerat på det, kan du arkivera meddelandet för att ta bort det från vyn Meddelandecenter. Vyn som visas i meddelandecentret är specifik för ditt användarkonto, så arkivering av det från vyn påverkar inte andra administratörer.
+Om du ser ett meddelande som inte gäller dig eller kanske du redan har arbetat med det kan du arkivera meddelandet för att ta bort det från vyn meddelande Center. Den vy som visas i meddelande centret är specifik för ditt användar konto, så arkiveringen från din vy påverkar inte andra administratörer.
 
 ::: moniker range="o365-worldwide"
 
-- På huvudsidan i meddelandecentret markerar du ett meddelande och väljer sedan **Arkiv** ovanför listan med meddelanden.
+- Markera ett meddelande på huvud sidan i meddelande centret och välj sedan **arkivera** ovanför meddelande listan.
 
-- Öppna meddelandet och **välj** arkiv längst ned i meddelandet.
+- Öppna meddelandet och välj sedan **arkivera** längst ned i meddelandet.
 
 Behöver du få ett arkiverat meddelande tillbaka? Inga problem.
   
-1. Välj fliken **Arkiverade meddelanden** högst upp i meddelandecentret. En lista med arkiverade meddelanden visas. 
+1. Välj fliken **arkiverade meddelanden** högst upp i meddelande Center. En lista med arkiverade meddelanden visas. 
 
-2. Markera meddelandet, välj **Återställ**och meddelandet återställs till aktiva meddelanden.
+2. Markera meddelandet, Välj **Återställ** så återställs meddelandet till aktiva meddelanden.
 
 ::: moniker-end
 
@@ -179,15 +179,15 @@ Behöver du få ett arkiverat meddelande tillbaka? Inga problem.
 
 Det finns två sätt att arkivera ett meddelande.
   
-- Välj det X som visas till höger om meddelande-ID: et. Meddelandet tas bort från listan. Eller:
+- Välj det X som visas till höger om meddelande-ID. Meddelandet tas bort från listan. Eller:
 
-- Öppna meddelandet och **välj** arkiv högst upp i meddelandet.
+- Öppna meddelandet och välj **arkivera** högst upp i meddelandet.
 
 Behöver du få tillbaka ett stängt meddelande? Inga problem.
   
-1. Välj filtret **Arkiverade meddelanden** på den nedrullningsbara menyn **Vyer.** En lista med arkiverade meddelanden visas.
+1. Välj filtret **arkiverade meddelanden** i list rutan **vyer** . En lista med arkiverade meddelanden visas.
 
-2. Välj **Återställ** till höger om meddelande-ID:t och meddelandet återställs till aktiva meddelanden.
+2. Välj **Återställ** till höger om meddelande-ID: t så återställs meddelandet till aktiva meddelanden.
 
 ::: moniker-end
 
@@ -195,17 +195,22 @@ Behöver du få tillbaka ett stängt meddelande? Inga problem.
 
 Det finns två sätt att arkivera ett meddelande.
   
-- Välj det X som visas till höger om meddelande-ID: et. Meddelandet tas bort från listan. Eller:
+- Välj det X som visas till höger om meddelande-ID. Meddelandet tas bort från listan. Eller:
 
-- Öppna meddelandet och **välj** arkiv högst upp i meddelandet.
+- Öppna meddelandet och välj **arkivera** högst upp i meddelandet.
 
 Behöver du få ett arkiverat meddelande tillbaka? Inga problem.
   
-1. Välj filtret **Arkiverade meddelanden** på den nedrullningsbara menyn **Vyer.** En lista med arkiverade meddelanden visas.
+1. Välj filtret **arkiverade meddelanden** i list rutan **vyer** . En lista med arkiverade meddelanden visas.
 
-2. Välj **Återställ** till höger om meddelande-ID:t och meddelandet återställs till aktiva meddelanden.
+2. Välj **Återställ** till höger om meddelande-ID: t så återställs meddelandet till aktiva meddelanden.
 
 ::: moniker-end
 
-En översikt över Meddelandecenter finns [i Meddelandecenter i Microsoft 365](message-center.md). Du kan också läsa inlägg om språköversättning för att aktivera maskinöversättning för inlägg i Message center finns i [Inlägg om språköversättning för meddelandecenter](language-translation-for-message-center-posts.md). Om du vill programmera ett alternativt sätt att få hälsoinformation för tjänster i realtid och Message Center-kommunikation, refererar du till [Microsoft 365 Service Communications API Overview](https://go.microsoft.com/fwlink/p/?linkid=848507).
+## <a name="track-your-message-center-tasks-in-planner"></a>Följa upp dina meddelande Center-uppgifter i Planner
+
+Mycket actionable information om ändringar i Microsoft 365-tjänsterna kommer till Microsoft 365 meddelande Center. Det kan vara svårt att hålla reda på vilka ändringar som kräver att uppgifter ska utföras, när och av vem och av vem som kan spåra varje uppgift. Du kanske också vill anteckna något och tagga det för att kontrol lera det senare. Du kan göra allt detta och mer när du synkroniserar dina meddelanden från Microsoft 365 Admin Center till Microsoft Planner. Mer information finns i [spåra dina meddelande Center uppgifter i Planner](https://docs.microsoft.comoffice365/planner/track-message-center-tasks-planner).
+
+
+En översikt över Message Center finns i [meddelande Center i Microsoft 365](message-center.md). Om du vill lära dig hur du anger språk inställningar för att aktivera maskin översättning för inlägg i meddelande Center kan du läsa [översätta översättning för meddelanden i meddelande Center](language-translation-for-message-center-posts.md). Om du vill att ett annat sätt att få information om hälso status i real tid-tjänsten och meddelanden om meddelande Center kan du hänvisa till [Microsoft 365 service Communications API-översikt](https://go.microsoft.com/fwlink/p/?linkid=848507).
   

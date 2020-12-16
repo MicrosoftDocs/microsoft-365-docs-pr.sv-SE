@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: migrering av AD FS (Active Directory Federation Services) för migrering från Microsoft Cloud Deutschland.'
-ms.openlocfilehash: 175734851c2838eb2e224a9afb57a600d4ed9523
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: c946ec3c0772cf95ab696266475b50959d682ef2
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49554816"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688671"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>Migreringsåtgärder för migrering från Microsoft Cloud Deutschland
 
@@ -101,9 +101,9 @@ Komma igång:
 
 Flytta genom över gången:
 
-- [Åtgärder och konsekvenser för migreringen](ms-cloud-germany-transition-phases.md)
+- [Åtgärder och påverkan i migreringsfaser](ms-cloud-germany-transition-phases.md)
 - [Övrig för hands arbete](ms-cloud-germany-transition-add-pre-work.md)
-- Ytterligare information om [tjänster](ms-cloud-germany-transition-add-general.md), [enheter](ms-cloud-germany-transition-add-devices.md), [erfarenheter](ms-cloud-germany-transition-add-experience.md)och [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Ytterligare information för [Azure AD](ms-cloud-germany-transition-azure-ad.md), [enheter](ms-cloud-germany-transition-add-devices.md), [upplevelser](ms-cloud-germany-transition-add-experience.md)och [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Molnappar:
 

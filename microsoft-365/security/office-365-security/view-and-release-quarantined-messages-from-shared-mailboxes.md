@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Användare kan lära sig att visa och hantera meddelanden i karantän som skickades till delade post lådor.
-ms.openlocfilehash: 0c165395edc3a3032ece603cb8d9aac875443d7d
-ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
+ms.openlocfilehash: 34a401d3bff66926acd3e04d7144ce465dfa3dbb
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49570967"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688035"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Visa och släppa meddelanden i karantän från delade post lådor
 
@@ -47,16 +47,6 @@ Oavsett hur du använder den här metoden kan användarna undvika förvirring ge
 ## <a name="things-to-keep-in-mind"></a>Saker att tänka på
 
 - Den första användaren som ska agera på det satta meddelandet bestämmer överskrivning av meddelandet för alla som använder den delade post lådan. Om till exempel en delad post låda används av 10 användare och en användare bestämmer sig för att ta bort karantän meddelandet raderas meddelandet för alla tio användarna. Om en användare väljer att släppa meddelandet släpps det på den delade post lådan och är tillgänglig för alla andra användare av den delade post lådan.
-
-- För närvarande, om en användare väljer flera meddelanden som skickats till den delade post lådan, returneras följande missvisande fel när användaren klickar på **släpp meddelanden** eller **ta bort meddelanden** i den utfällbara **Mass åtgärden** :
-
-  > Du har inte behörighet att frigöra alla markerade meddelanden i karantän.
-  >
-  > Du har inte behörighet att ta bort alla markerade meddelanden i karantänen.
-
-  Oavsett felet utförs åtgärden på meddelandet och felet kan ignoreras.
-
-  ![Falskt fel vid Mass fri släppning eller borttagning av meddelanden som skickas till en delad post låda.](../../media/quarantine-bulk-action-error.png)
 
 - För närvarande går det inte att använda knappen **Blockera avsändare** för **infällbara meddelanden** som skickats till den delade post lådan.
 

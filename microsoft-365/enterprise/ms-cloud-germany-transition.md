@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Sammanfattning: förstå migrering från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i det nya tyska data centret.'
-ms.openlocfilehash: 37bf052739bf15c1a0d3712539779e9dff31d9e8
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 16e57eff5556d31d2d13ab6ce0d284719d63c44c
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551540"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688647"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migrering från Microsoft Cloud Deutschland till Office 365-tjänster i de nya tyska Data Center-regionerna
 
@@ -71,7 +71,7 @@ Migrering utförs i faser som alla startar när du [väljer att migrera](https:/
 
 Migreringen börjar inte när deltagande inträffar. Din organisation läggs till i listan över innehavare som är schemalagda för senare migrering. Du kan börja använda faserna nu eftersom det är viktigt att få en lyckad migrering och användning när den är klar:
 
-- [Åtgärder och konsekvenser för migreringen](ms-cloud-germany-transition-phases.md)
+- [Åtgärder och påverkan i migreringsfaser](ms-cloud-germany-transition-phases.md)
 - [Övrig för hands arbete](ms-cloud-germany-transition-add-pre-work.md)
 
 En vecka innan klient organisationens början börjar, kommer du att få ett meddelande i Message Center-tjänsten som en slutgiltig varning om att alla förutsättningar måste vara klara.
@@ -138,7 +138,7 @@ Följande 15 tjänster är tillgängliga i tillägget Microsoft Cloud Deutschlan
 3. Grupper (moderna grupper)
 4. Delve-profil
 5. Exchange Online Protection
-6. Defender för Office 365
+6. Defender förr Office 365
 7. Advanced eDiscovery
 8. Data styrning
 9. SharePoint Online
@@ -158,7 +158,7 @@ Det finns för närvarande 29 tjänster tillgängliga som en del av Office 365-t
 5. MyAnalytics
 6. Workplace Analytics
 7. Exchange Online Protection
-8. Defender för Office 365
+8. Defender förr Office 365
 9. Advanced eDiscovery
 10. Avancerad säkerhets hantering
 11. Information Rights Management
@@ -288,9 +288,9 @@ Komma igång:
 
 Flytta genom över gången:
 
-- [Åtgärder och konsekvenser för migreringen](ms-cloud-germany-transition-phases.md)
+- [Åtgärder och påverkan i migreringsfaser](ms-cloud-germany-transition-phases.md)
 - [Övrig för hands arbete](ms-cloud-germany-transition-add-pre-work.md)
-- Ytterligare information om [tjänster](ms-cloud-germany-transition-add-general.md), [enheter](ms-cloud-germany-transition-add-devices.md), [erfarenheter](ms-cloud-germany-transition-add-experience.md)och [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Ytterligare information för [Azure AD](ms-cloud-germany-transition-azure-ad.md), [enheter](ms-cloud-germany-transition-add-devices.md), [upplevelser](ms-cloud-germany-transition-add-experience.md)och [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Molnappar:
 

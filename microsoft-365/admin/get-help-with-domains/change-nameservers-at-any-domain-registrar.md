@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Lär dig hur du lägger till och konfigurerar din domän i Microsoft 365 så att dina tjänster som e-post och Skype för företag – Online kan använda ditt eget domän namn.
-ms.openlocfilehash: a4218b03e3f23ba8bc39c5eb84b42f87a71b9a65
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 492bc5d2a5f3fd9810f045e7effda1ea20fa15ed
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658605"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688255"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Ändra namnservrar för att konfigurera Microsoft 365 med valfri domän registrator
 
@@ -166,7 +166,7 @@ Här följer exempel på några åtgärder som krävs för e-post och webbplatse
 
 2. På sidan **domäner** väljer du domänen och sedan **DNS Records**.
 
-3. Under **DNS-inställningar** väljer du **anpassade poster** och väljer sedan **ny anpassad post**.
+3. Under **hantera DNS** väljer du **anpassade poster** och väljer sedan **ny anpassad post**.
 
 4. Välj den typ av DNS-post du vill lägga till och ange informationen för den nya posten.
 

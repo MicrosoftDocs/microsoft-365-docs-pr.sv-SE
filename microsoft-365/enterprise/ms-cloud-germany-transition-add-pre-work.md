@@ -1,9 +1,9 @@
 ---
-title: Ytterligare information för arbets uppgifter för migrering från Microsoft Cloud Deutschland
+title: Arbete för migrering från Microsoft Cloud Deutschland
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/01/2020
+ms.date: 12/11/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,15 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 'Sammanfattning: ytterligare information före arbete som flyttas från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i det nya tyska data centret.'
-ms.openlocfilehash: 41953aa9d91faa91bd983fbbc8d93baf08c172ed
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+description: 'Sammanfattning: förarbete när du flyttar från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i det nya tyska data centret.'
+ms.openlocfilehash: 1bb6a1b80da462da2218f32fbbc2899ae651a3ec
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551717"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688461"
 ---
-# <a name="additional-pre-work-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Ytterligare information för arbets uppgifter för migrering från Microsoft Cloud Deutschland
+# <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Arbete för migrering från Microsoft Cloud Deutschland
 
 | Steg | Beskrivning | Gäller för | Påverkan |
 |:-------|:-----|:-------|:-------|
@@ -65,10 +65,6 @@ Om du har SharePoint 2013:
 | Begränsa SharePoint 2013-arbetsflöden, Använd under migreringen av SharePoint Online. | Minska arbets flöden i SharePoint 2013 och färdigställa arbets flöden före över gångarna. | SharePoint Online-kunder | Inåtgärd kan leda till användar förvirring och helpdesk-samtal. |
 |||||
 
-<!--
-[Reference:  If Pre-Work][ SharePoint 2013 ]
---> 
-
 ## <a name="mobile"></a>Mobil
 
 Om du använder en lösning från en tredjepartsleverantör (Mobile Device Management):
@@ -77,10 +73,6 @@ Om du använder en lösning från en tredjepartsleverantör (Mobile Device Manag
 |:-------|:-----|:-------|:-------|
 | Avgöra om en omkonfiguration krävs efter migreringen. | MDM-lösningar kan nå `outlook.de` slut punkter. I den här över gången till Office 365-tjänster ska klient profilerna uppdateras till URL-adressen för Office 365-tjänster `outlook.office365.com` . | Exchange Online-och MDM-kunder | Klienter kan fortsätta fungera när `outlook.de` slut punkten är tillgänglig, men de fungerar inte om Microsoft Cloud Deutschland slut punkter inte längre är tillgängliga. |
 |||||
-
-<!--
-[Reference:  If Pre-Work][ Mobile]
--->             
 
 ## <a name="line-of-business-apps"></a>Branschspecifika program
 
@@ -91,20 +83,12 @@ Om du använder en tjänst från tredje part eller ett LOB-program som är integ
 | Avgöra om en omkonfiguration krävs efter migreringen. | Tjänster och program från tredje part som integreras med Office 365 kan kodas för att förvänta sig Microsoft Cloud Deutschland IP-adresser och URL: er. | Alla kunder | Nödvändig åtgärd. Inåtgärd kan leda till att tjänsten eller klient program varan inte fungerar. |
 |||||
 
-<!--
-[Reference:  If Pre-Work][ LOB]
---> 
-
 ## <a name="azure"></a>Azure 
 
 | Steg | Beskrivning | Gäller för | Påverkan |
 |:-------|:-----|:-------|:-------|
 | Fastställ vilka Azure-tjänster som används och förbereda framtida migrering från Tyskland till Office 365-tjänstens klient organisation genom att arbeta med dina partners. Följ stegen som beskrivs i [Azure migration Playbook](https://docs.microsoft.com/azure/germany/germany-migration-main). | Migrering av Azure-resurser är ett kund ansvar och kräver manuell ansträngning enligt anvisningarna. Det är viktigt att förstå vilka tjänster som används i organisationen för att kunna migrera Azure-tjänsterna. <br><br> Office 365 Germany-kunder som har Azure-abonnemang under samma identitetsmappen (organisation) måste följa Microsoft-den beskrivna ordningen när de kan påbörja migrering av prenumerationer och tjänster. | Azure-kunder | -Kunder kan ha flera Azure-abonnemang, alla abonnemang som innehåller infrastruktur, tjänster och plattforms komponenter. <br><br> -Administratörer bör identifiera prenumerationer och intressenter för att säkerställa att det går att migrera och validera meddelanden i den här migreringen. <br><br> Om det inte går att slutföra migreringen av dessa abonnemang och Azure-komponenterna inom den angivna tids linjen påverkar det slut för ande av Office-och Azure AD-överföring till Office 365-tjänster och kan leda till data förlust.  <br><br> -En avisering om meddelande Center signalerar den punkt där kund Lede migration kan påbörjas. |
 |||||
-
-<!--
-[Reference:  If Azure Pre-Work][ Azure]
--->  
 
 ## <a name="dynamics-365"></a>Dynamics 365
 
@@ -113,20 +97,12 @@ Om du använder en tjänst från tredje part eller ett LOB-program som är integ
 | För Dynamics 365 sandbox-prenumerationer ska du ladda ned produktions miljön för Dynamics SQL-instansen från din Dynamics 365-prenumeration i Microsoft Cloud Deutschland. Den senaste arbets säkerhets kopieringen bör återställas till sand lådan före sand låde migrering. | Migrering av Dynamics 365 kräver att kunderna ser till att den begränsade miljön uppdateras med den senaste produktions databasen. | Microsoft Dynamics-kunder | FastTrack-teamet hjälper kunder att genomföra torra sekvenser för att verifiera versions uppgraderingen från 8 till 9. x till 9.1. x. |
 |||||
 
-<!--
-[Reference: Prework][Dynamics]
--->             
-
 ## <a name="power-bi"></a>Power BI
 
 | Steg | Beskrivning | Gäller för | Påverkan |
 |:-------|:-----|:-------|:-------|
 | Borttagning av objekt från Power BI-prenumerationer som inte migreras från Power BI-Deutschland till Office 365-tjänster. | Om du migrerar Power BI-tjänsterna måste kund åtgärden ta bort vissa artefakter, till exempel data mängder och instrument paneler. | Power BI-kunder | Administratörer kan behöva ta bort följande objekt från deras prenumeration: <br> -Real-Time data uppsättningar (till exempel direkt uppspelning eller push-datauppsättningar) <br> -Konfiguration och data källa i Power BI-lokal data Gateway |
 |||||
-
-<!--
-[Reference: Prework][Power BI]
---> 
 
 ## <a name="dns"></a>SERVERTJÄNSTEN
 
@@ -135,20 +111,12 @@ Om du använder en tjänst från tredje part eller ett LOB-program som är integ
 | Granska och förbereda för DNS-ändring om den aktuella DNS-posten har en MSOID. | Ändringar av kundägda DNS-zoner | Office klient tjänst kunder | Uppdatera TTL-värdet (Time to Live) för kundägda DNS-poster till fem minuter om det finns en MSOID CName. |
 |||||
 
-<!--
-[Reference: Prework][DNS]
--->             
-
 ## <a name="federated-identity"></a>Federerad identitet
 
 | Steg | Beskrivning | Gäller för | Påverkan |
 |:-------|:-----|:-------|:-------|
 | Generera förtroende för förlitande part för globala Azure AD-slutpunkter. | Kunderna måste manuellt skapa ett förlitande part-förtroende för [globala](https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml) slut punkter. Det gör du genom att lägga till en ny RPT via GUI genom att använda URL-adressen för den globala federationsmetadata (i AD [FS-hjälpen](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator#:~:text=%20Azure%20AD%20RPT%20Claim%20Rules%20%201,Azure%20AD.%20This%20will%20be%20what...%20More%20) ) för att generera anspråks reglerna och importera dem till en RPT. | Organisationer för extern autentiseringsprocess | Nödvändig åtgärd. Inåtgärd innebär att tjänsten påverkas under migreringen. |
 |||||
-
-<!--
-[Reference: Prework][Federation]
--->  
 
 ## <a name="more-information"></a>Mer information
 
@@ -161,9 +129,9 @@ Komma igång:
 
 Flytta genom över gången:
 
-- [Åtgärder och konsekvenser för migreringen](ms-cloud-germany-transition-phases.md)
+- [Åtgärder och påverkan i migreringsfaser](ms-cloud-germany-transition-phases.md)
 - [Övrig för hands arbete](ms-cloud-germany-transition-add-pre-work.md)
-- Ytterligare information om [tjänster](ms-cloud-germany-transition-add-general.md), [enheter](ms-cloud-germany-transition-add-devices.md), [erfarenheter](ms-cloud-germany-transition-add-experience.md)och [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Ytterligare information för [Azure AD](ms-cloud-germany-transition-azure-ad.md), [enheter](ms-cloud-germany-transition-add-devices.md), [upplevelser](ms-cloud-germany-transition-add-experience.md)och [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Molnappar:
 

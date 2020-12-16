@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan få information om hur de tar bort användare från portalen för åtkomstbegränsade användare i Office 365. Användare läggs till i portalen med åtkomstbegränsade användare för att de skickat utgående skräppost, oftast som ett resultat av kontointrång.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f464a2c02ae6b6290e79cc9aff7d3a37bc08a6ff
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: bca9366fdb8cacdc58c12757e870c8ead8f1fa7a
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572447"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683061"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Ta bort blockerade användare från portalen med åtkomstbegränsade användare i Office 365
 
@@ -86,7 +86,7 @@ Standardaviseringsprincipen med namnet **Användare med restriktioner för att s
 
 3. I den utfällbara meny som visas kan du verifiera eller konfigurera följande inställningar:
 
-   - **Status**: verifiera att meddelandet är aktiverat ![Aktivera](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+   - **Status**: verifiera att meddelandet är aktiverat ![Aktivera](../../media/scc-toggle-on.png).
 
    - **E-postmottagare**: Klicka på **Redigera** och verifiera eller konfigurera följande inställningar i den utfällbara menyn **Redigera mottagare** som visas:
 

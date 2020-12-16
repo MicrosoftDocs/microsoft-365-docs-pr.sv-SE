@@ -119,7 +119,7 @@
                   href: mtp/mtp-autoir.md
                 - name: Konfigurera automatiserade utrednings- och svarsfunktioner
                   href: mtp/mtp-configure-auto-investigation-response.md
-                - name: Saneringsåtgärder efter automatiserade undersökningar
+                - name: Reparationsåtgärder
                   href: mtp/mtp-remediation-actions.md
                 - name: Besök åtgärden centret
                   href: mtp/mtp-action-center.md

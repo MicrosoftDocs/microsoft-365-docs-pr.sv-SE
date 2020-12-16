@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Lär dig hur du får till gång till lokala resurser som affärs program, fil resurser och skrivare från en Windows 10-enhet med Azure Active Directory.
-ms.openlocfilehash: 2144268f5cbab67c39d5902622c61c0c35e6481c
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 22edf0c23d6318e1f70bcb21b2cd697ea0a75da4
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295319"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688242"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Åtkomst till lokala resurser från en Azure AD-ansluten enhet i Microsoft 365 Business Premium
 
@@ -63,4 +63,4 @@ Om Windows-enheten som du Azure-AD anslöt till fungerade tidigare i domänen el
 
 - Användarna kan inte autentisera till program som är beroende av Active Directory-autentisering. Utvärdera det äldre programmet och Överväg att uppdatera till ett program som använder modern autentisering, om möjligt.
 
-- Active Directory-skrivaren fungerar inte. Du kan tillhandahålla direkta skrivar vägar för alla användare eller använda [hybrid moln utskrift](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy).
+- Active Directory-skrivaren fungerar inte. Du kan tillhandahålla direkta skrivar vägar för alla användare eller använda [universell utskrift](https://aka.ms/UPDocs).

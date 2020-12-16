@@ -21,12 +21,12 @@ search.appverid:
 - BSA160
 ms.assetid: 4ecfb843-e5d5-464d-8bf6-7ed512a9b213
 description: 'Hämta rapporten om användning av SharePoint-webbplatser för att få veta hur många filer användarna lagrar på SharePoint-webbplatser, hur många som används aktivt och hur mycket lagrings utrymme som förbrukas. '
-ms.openlocfilehash: 8c2428a49a42a1d259c69297feff13e5c00a9b8e
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 7da72dccb4a90ed204ffa785040b1968ac70feb3
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948862"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688211"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365-rapporter i administrations centret – SharePoint-webbplatsens användning
 
@@ -38,10 +38,13 @@ Microsoft 365-rapporter i administrations centret stöds inte för GCC-och DoD-k
  
 ## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a>Så här kommer du till rapporten om SharePoint-webbplatsanvändning
 
-1. Gå till **rapport** användning i administrations centret \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a>.
-
+1. Gå till **rapport** användning i administrations centret \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank"></a>.
     
-2. I list rutan **Välj en rapport** väljer du SharePoint- **SharePoint** \> **webbplats användning**.
+2. Klicka på **Visa mer** under **SharePoint-filer** . 
+
+3. Bredvid **SharePoint-aktivitet** klickar du på nedpilen för att öppna menyn.
+
+4. Välj användning av **SharePoint** - \> **webbplats**.
   
 ## <a name="interpreting-the-sharepoint-site-usage-report"></a>Tolka rapporten om SharePoint-webbplatsanvändning
 
