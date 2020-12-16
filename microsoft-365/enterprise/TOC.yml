@@ -274,20 +274,20 @@
               href: ms-cloud-germany-transition.md
             - name: Välj till migrering
               href: ms-cloud-germany-migration-opt-in.md
-            - name: Kundupplevelse
+            - name: Vad har förändrats
               href: ms-cloud-germany-transition-experience.md
-            - name: Åtgärder och påverkan i migreringsfaser
+            - name: Förarbete
+              href: ms-cloud-germany-transition-add-pre-work.md
+            - name: Migreringsfaser åtgärder och påverkan (general)
               href: ms-cloud-germany-transition-phases.md
+            - name: Migreringsfaser åtgärder och påverkan (avancerat)
+              href: ms-cloud-germany-transition-add-experience.md
             - name: Ytterligare information
               items:
-                - name: Allmänt
-                  href: ms-cloud-germany-transition-add-general.md
+                - name: Azure AD
+                  href: ms-cloud-germany-transition-azure-ad.md
                 - name: Enheter
                   href: ms-cloud-germany-transition-add-devices.md
-                - name: Förarbete
-                  href: ms-cloud-germany-transition-add-pre-work.md
-                - name: Upplevelse
-                  href: ms-cloud-germany-transition-add-experience.md
                 - name: Steg för migrering för AD FS
                   href: ms-cloud-germany-transition-add-adfs.md
 - name: Identitet
