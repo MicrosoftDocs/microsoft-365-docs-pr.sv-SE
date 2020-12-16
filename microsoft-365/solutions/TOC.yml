@@ -1,5 +1,5 @@
 - name: Microsoft 365-center för lösningar och arkitektur
-  href: solution-architecture-center.md
+  href: index.yml
   displayName: Home
 - name: Illustrationer för lösningar och arkitektur
   items:
@@ -7,10 +7,10 @@
       href: productivity-illustrations.md
     - name: Microsoft Cloud-arkitekturmodeller
       href: cloud-architecture-models.md
+    - name: Arkitektur ikoner och mallar
+      href: architecture-icons-templates.md
 - name: Microsoft 365 Foundation-lösningar
   items:
-    - name: Översikt
-      href: foundation-solutions-overview.md
     - name: Underlätta för distansarbetare med Microsoft 365
       items:
         - name: Översikt
@@ -93,8 +93,6 @@
           href: information-protection-deploy-monitor-respond.md
 - name: Lösningar och scenarier för arbetsbelastningar
   items:
-    - name: Översikt
-      href: workload-solutions-scenarios-overview.md
     - name: Lagarbete och samarbete.
       items:
         - name: Arkitekturaffischer för Microsoft Teams
@@ -211,8 +209,6 @@
           href: team-security-isolation-dev-test.md
 - name: Branschspecifik vägledning
   items:
-    - name: Översikt
-      href: industry-specific-guidance-overview.md
     - name: Ekonomi
       items:
         - name: Säkerhet och efterlevnad för finansiella tjänster
