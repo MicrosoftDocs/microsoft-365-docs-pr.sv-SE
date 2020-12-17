@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 07/09/2020
+ms.date: 12/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du använder hot-och svars funktioner för att hitta och undersöka skadlig e-post.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f3fd2e5c0f75de9a1b942e8f0baa8e9d44843de4
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 8a068f4502a286b8782e03a9a6f61e61fa96ed72
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616530"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698585"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Undersök skadlig e-post som har levererats i Office 365
 
@@ -58,22 +58,25 @@ Om du vill utföra vissa åtgärder, till exempel Visa meddelande rubriker eller
 |---|---|---|
 |Använd Threat Explorer (och real tids identifieringar) för att analysera hot |Global administratör <p> Säkerhets administratör <p> Säkerhets läsare|Nej|
 |Använd Threat Explorer (och real tids identifieringar) för att visa rubriker för e-postmeddelanden samt för hands Visa och ladda ned e-postmeddelanden i karantän|Global administratör <p> Säkerhets administratör <p> Säkerhets läsare|Nej|
-|Använda Threat Explorer för att visa rubriker och hämta e-postmeddelanden som skickas till post lådor|Global administratör <p> Säkerhets administratör <p> Säkerhets läsare <p> Automatisk|Ja|
+|Använda Threat Explorer för att visa rubriker, förhandsgranska e-post (endast på sidan e-postenhet) och hämta e-postmeddelanden som skickas till post lådor|Global administratör <p> Säkerhets administratör <p> Säkerhets läsare <p> Automatisk|Ja|
 |
 
 > [!NOTE]
-> För *hands versionen* är en roll och inte en roll grupp; förhands gransknings rollen måste läggas till i en befintlig roll grupp för Office 365. Rollen global administratör har tilldelats administratörs Center för Microsoft 365 ( <https://admin.microsoft.com> ) och rollerna säkerhets administratör och säkerhets läsare tilldelas i säkerhets & Compliance Center ( <https://protection.office.com> ). Mer information om roller och behörigheter finns i [behörigheter i säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> För *hands versionen* är en roll och inte en roll grupp; förhands gransknings rollen måste läggas till i en befintlig roll grupp för Office 365 (at [https://protection.office.com](https://protection.office.com) ). Gå till **behörigheter** och sedan antingen redigera en befintlig roll grupp eller Lägg till en ny roll grupp med rollen för **förhands granskning** .
+> Rollen global administratör har tilldelats administratörs Center för Microsoft 365 ( <https://admin.microsoft.com> ) och rollerna säkerhets administratör och säkerhets läsare tilldelas i säkerhets & Compliance Center ( <https://protection.office.com> ). Mer information om roller och behörigheter finns i [behörigheter i säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+
+Vi förstår att förhands granskning och nedladdning av e-post är känsliga aktiviteter och därför är vi aktiverade för dessa. När en administratör utför de här aktiviteterna i e-postmeddelanden genereras gransknings loggar för samma person och visas i Office 365 Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ). Gå till **Sök**  >  **gransknings loggs ökning** och-filter på administratörs namnet i sökavsnitt. De filtrerade resultaten visar aktivitets **AdminMailAccess**. Markera en rad för **Mer information** om förhands granskning eller nedladdad e-post.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Hitta misstänkt e-post som har levererats
 
 Threat Explorer är en kraftfull rapport som kan hantera flera ändamål, till exempel att söka efter och ta bort meddelanden, identifiera IP-adressen för en oönskad e-avsändare eller påbörja en olycka för ytterligare undersökning. Följande procedur fokuserar på att använda Utforskaren för att hitta och ta bort skadlig e-post från mottagares post lådor.
 
 > [!NOTE]
-> Standard sökningar i Utforskaren inkluderar för närvarande inte zapped-objekt.  Detta gäller för alla vyer, till exempel skadliga program och Phish. Om du vill inkludera Zappeda objekt måste du lägga till en "leverans åtgärd" för att ta med "borttagen av ZAP". Om du inkluderar alla alternativ visas alla leverans resultat, inklusive zapped-objekt.
+> Standard sökningar i Utforskaren inkluderar för närvarande inte zapped-objekt.  Detta gäller för alla vyer, till exempel skadliga program och Phish. Om du vill inkludera Zappeda objekt måste du lägga till en **leverans åtgärd** för att inkludera **borttagna av ZAP**. Om du inkluderar alla alternativ visas alla leverans resultat, inklusive zapped-objekt.
 
 1. **Navigera till Threat Explorer**: gå till <https://protection.office.com> och logga in med ditt arbets-eller skol konto för Office 365. Då kommer du till säkerhets & Compliance Center.
 
-2. Välj **Threat Management** Explorer i navigerings fältet till vänster \> **Explorer**.
+2. Välj **Threat Management** Explorer i navigerings fältet till vänster \> .
 
     ![Explorer med fälten leverans åtgärd och leverans plats.](../../media/ThreatExFields.PNG)
 

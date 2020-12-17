@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Ta bort licensen från en delad post låda för att tilldela den till en annan användare. '
-ms.openlocfilehash: 43d32744afe42a8f244160ace20c1d989f501b28
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 11d5185cc3f79899a737ddccc0a93160acb380bc
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445501"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698309"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Ta bort en licens från en delad postlåda
 
@@ -45,6 +45,7 @@ Delade post lådor kräver normalt ingen licens. Följ de här anvisningarna om 
 > 1. Den delade post lådan har mer än 50 GB lagrings utrymme.
 > 2. Den delade post lådan använder arkivering på plats.
 > 3. Den delade post lådan placeras i en tvist.
+> 4. Den delade post lådan har en Microsoft Defender-licens tilldelad.
 
   
 ## <a name="remove-the-license"></a>Ta bort licensen
@@ -105,6 +106,8 @@ Delade post lådor kräver normalt ingen licens. Följ de här anvisningarna om 
 6. Du betalar fortfarande för licensen. Om du vill sluta betala för det [tar du bort licensen från din prenumeration](../../commerce/licenses/remove-licenses-from-subscription.md).
 
 ::: moniker-end 
+
+ 
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

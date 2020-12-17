@@ -11,16 +11,16 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Lär dig hur du konfigurerar ämnen i Microsoft 365
-ms.openlocfilehash: cc157463c8c85f25ba232c344294ef3e0fabba23
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: e11f0b75556a4a8ac0ffa40269d7166258128daf
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668013"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698561"
 ---
 # <a name="set-up-topic-experiences-in-microsoft-365"></a>Konfigurera ämnen i Microsoft 365
 
-Du kan använda Microsoft 365 Admin Center för att konfigurera och konfigurera [avsnitts upplevelser](knowledge-management-overview.md). 
+Du kan använda Microsoft 365 Admin Center för att konfigurera och konfigurera [avsnitts upplevelser](topic-experiences-overview.md). 
 
 Det är viktigt att planera det bästa sättet att konfigurera och konfigurera ämnen i miljön. Se till att läsa [Plans erfarenheterna](plan-topic-experiences.md) innan du börjar procedurerna i den här artikeln.
 
@@ -144,4 +144,4 @@ När du har konfigurerat ämnen kan du ändra inställningarna under installatio
 
 ## <a name="see-also"></a>Se även
 
-[Översikt över kunskaps hantering](knowledge-management-overview.md)
+[Översikt över ämnen](topic-experiences-overview.md)

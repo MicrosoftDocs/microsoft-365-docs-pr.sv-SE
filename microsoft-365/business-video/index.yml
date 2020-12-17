@@ -1,0 +1,84 @@
+### YamlMime:Hub
+title: Microsoft 365 Small Business-utbildning
+summary: Lär dig hur du konfigurerar och hanterar Microsoft 365 för ditt företag.
+brand: m365
+metadata:
+  title: Microsoft 365 Small Business-utbildning
+  description: Konfigurera och hantera Microsoft 365 i administrations centret för Microsoft 365.
+  ms.service: O365-administration
+  ms.prod: microsoft-365-business
+  ms.topic: hub-page
+  author: Sirkkuw
+  ms.author: sirkkuw
+  ms.date: 12/16/2020
+  localization_priority: Priority
+  ms.custom: AdminSurgePortfolio
+  ms.openlocfilehash: d66e3a5c56fbc6676a21ec9729d44fac64e3abe3
+  ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+  ms.translationtype: MT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 12/17/2020
+  ms.locfileid: "49702495"
+productDirectory:
+  items:
+  - title: Komma igång
+    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
+    summary: Planera flytten till Microsoft 365 för företag.
+    url: what-is-microsoft-365.md
+  - title: Konfigurera Microsoft 365 för företag
+    imageSrc: https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg
+    summary: Lägga till en domän, lägga till användare och konfigurera säkerhets principer...
+    url: sign-up.md
+  - title: Konfigurera datorer
+    imageSrc: https://docs.microsoft.com/office/media/icons/device-desktop-download-blue.svg
+    summary: Installera Office, konfigurera e-post, migrera filer...
+    url: upgrade.md
+  - title: Konfigurera mobila enheter
+    imageSrc: https://docs.microsoft.com/office/media/icons/device-mobile-download-blue.svg
+    summary: Installera Office-appar på mobila enheter.
+    url: work-from-anywhere.md
+  - title: Samar beta med andra
+    imageSrc: https://docs.microsoft.com/office/media/icons/collaborate-blue.svg
+    summary: Arbeta med anställda och kunder i Teams.
+    url: collab-outlook-teams.md
+  - title: Lagra och dela filer
+    imageSrc: https://docs.microsoft.com/office/media/icons/cloud-storage-folder-blue.svg
+    summary: Lagra filer säkert och åtkomst var som helst.
+    url: overview-file-sharing.md
+  - title: Konfigurera företags röst
+    imageSrc: https://docs.microsoft.com/office/media/icons/call-phone-blue.svg
+    summary: Konfigurera telefon tjänst och konferenser.
+    url: business-voice.md
+  - title: Konfigurera affärsappar
+    imageSrc: https://docs.microsoft.com/office/media/icons/task-list-planning-blue.svg
+    summary: Konfigurera och lär dig mer om bokningar, listor, uppgifter...
+    url: overview-bookings.md
+  - title: Hantera ditt abonnemang
+    imageSrc: https://docs.microsoft.com/office/media/icons/settings.svg
+    summary: Hantera användare, återställa lösen ord, Visa din faktura...
+    url: what-is-admin.md
+  - title: Hantera dina enheter
+    imageSrc: https://docs.microsoft.com/office/media/icons/devices-2-blue.svg
+    summary: Konfigurera policyer för personliga och arbets enheter.
+    url: secure-win-10-pro-devices.md
+  - title: Skydda ditt företag
+    imageSrc: https://docs.microsoft.com/office/media/icons/security-blue.svg
+    summary: Konfigurera funktioner för säkerhet och efterlevnad.
+    url: overview-m365-security.md
+  - title: Få support
+    imageSrc: https://docs.microsoft.com/office/media/icons/headset-blue.svg
+    summary: Få hjälp med Microsoft 365 för företag.
+    url: find-help-answers.md
+additionalContent:
+  sections:
+  - title: Mer information
+    items:
+    - title: Lär dig mer om Office
+      summary: Lär dig hur du använder Word, Excel, PowerPoint och andra Office-program.
+      url: https://support.microsoft.com/training
+    - title: Byta från Google Workspace
+      summary: Lär dig hur du byter till Microsoft 365 för företag.
+      url: https://support.microsoft.com/office/cff9f9fb-956e-4cb9-8b64-d7ebc1911123
+    - title: Hitta fler administratörs resurser
+      summary: Gå till hjälp webbplatsen för Microsoft 365 Admin Center.
+      url: ../admin/index.yml

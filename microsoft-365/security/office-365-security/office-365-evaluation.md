@@ -17,12 +17,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 54acf9d21e3dd935f8b87c6ee4a13ab30e7bc59e
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: abb33b85717e63cb78a2b1edfd86584fd165a71f
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668079"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701021"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Utvärdera Microsoft Defender för Office 365
 
@@ -41,13 +41,13 @@ Om du inte redan har en licens som stöder Microsoft Defender för Office 365 ka
 
 Defender för Office 365 i utvärderingsprogrammet skapar principer för e-post för Defender för Office 365 som loggar verdicts, till exempel skadlig program vara, men fungerar inte på meddelanden. Du behöver inte ändra din MX-postkonfiguration.
 
-Med utvärderings läge, [säkra bifogade filer](atp-safe-attachments.md), [säkra länkar](atp-safe-links.md)och konfigurations [principer för nätfiske](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) är det bara att ställa. Alla principer för Defender för Office 365 skapas i läget ej tvingande i bakgrunden och syns inte för dig.
+Utvärderings läget, [säkra bifogade filer](atp-safe-attachments.md), [säkra länkar](atp-safe-links.md)och konfigurations [principer för nätfiske](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) är inställda för din räkning. Alla principer för Defender för Office 365 skapas i läget ej tvingande i bakgrunden och syns inte för dig.
 
-Som en del av inställningen konfigurerar utvärderings läget också [utökad filtrering för kopplingar](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). Den förbättrar filtreringen genom att bevara information om IP-adresser och avsändare, som annars försvinner när e-post skickas via en e-postsäker Gateway (ESG) framför Defender för Office 365. Detta förbättrar också filtrerings precisionen för skydd mot skräp post och nätfiske för Exchange Online Protection (EOP).
+Som en del av inställningen konfigurerar utvärderings läget också [utökad filtrering för kopplingar](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). Den förbättrar filtreringen genom att bevara information om IP-adresser och avsändare, som annars försvinner när e-post skickas via en e-postsäker Gateway (ESG) framför Defender för Office 365. Förbättrad filtrering förbättrar också filtrerings precisionen för skydd mot skräp post och nätfiske för Exchange Online Protection (EOP).
 
 Om du vill minska eventuell produktions påverkan för vissa scenarier som inte stöds, kan du kringgå all EOP-filtrering genom att skapa en transport regel för att ange nivån för skräp post (SCL) till-1. Mer information finns i [använda UK för att skapa en regel för e-postflöde som anger SCL för ett meddelande](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)   .
 
-När utvärderings läget är inställt kommer du att få en rapport uppdaterad varje dag med upp till 90 dagar med data som anger att de meddelanden som skulle ha blockerats hade principer och implementerats (till exempel ta bort, skicka till skräp post, karantän). Rapporter skapas för alla Defender för Office 365 och EOP-identifieringar. De aggregeras per identifierings teknik (till exempel personifiering) och kan filtreras efter tidsintervall. Dessutom kan meddelande rapporter skapas på begäran för att skapa anpassade pivottabeller eller för djupa spelmeddelanden med hjälp av Threat Explorer.
+När du har konfigurerat utvärderings läget kommer du att få en rapport uppdaterad varje dag med upp till 90 dagar med data som kvantifierar de meddelanden som skulle ha blockerats om principerna har implementerats (till exempel ta bort, skicka till skräp post, karantän). Rapporter skapas för alla Defender för Office 365 och EOP-identifieringar. De aggregeras per identifierings teknik (till exempel personifiering) och kan filtreras efter tidsintervall. Dessutom kan meddelande rapporter skapas på begäran för att skapa anpassade pivottabeller eller för djupa spelmeddelanden med hjälp av Threat Explorer.
 
 Med den förenklade inställnings upplevelsen kan du fokusera på:
 
@@ -79,7 +79,12 @@ Du får ett 30 dagars fönster med utvärderingen för att övervaka och rapport
 
 ### <a name="roles"></a>Role
 
-Exchange Online-roller krävs för att konfigurera Defender för Office 365 i utvärderings läge. Följande roller behövs:
+Exchange Online-roller krävs för att konfigurera Defender för Office 365 i utvärderings läge.
+
+- [Lär dig mer om behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+- [Lär dig mer om hur du tilldelar administratörs roller](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)
+
+Följande roller behövs:
 
 |Uppgift|Roll|
 |---|---|
@@ -90,9 +95,10 @@ Exchange Online-roller krävs för att konfigurera Defender för Office 365 i ut
 |Visa utvärderings rapport|Rollen säkerhets administratör eller rollen säkerhets läsare|
 |
 
+
 ### <a name="enhanced-filtering"></a>Förbättrad filtrering
 
-Dina Exchange Online Protection-principer, till exempel Mass-och skräp post skydd, förblir desamma. Meddelande leveransen förblir också likadan. Utvärderingen aktiverar emellertid utökad filtrering för kopplingar, vilket kommer att påverka dina policyer för flöden och Exchange Online-skydd om de inte kringgås.
+Dina Exchange Online Protection-principer, till exempel Mass-och skräp post skydd, förblir desamma. Meddelande leveransen förblir också likadan. Utvärderingen aktiverar emellertid utökad filtrering för kopplingar, som påverkar dina e-postflöden och Exchange Online Protection-principer om de inte kringgås.
 
 Förbättrad filtrering för kopplingar gör att klient organisationer kan använda skydd mot förfalskning. Skydd mot förfalskning stöds inte om du använder en e-postsäker Gateway (ESG) utan att aktivera utökad filtrering för kopplingar.
 
@@ -104,7 +110,7 @@ URL-länkar i e-postmeddelandenas delar kommer inte att radbrytas, för att mins
 
 ### <a name="email-routing"></a>E-postdirigering
 
-Du måste förbereda motsvarande uppgifter som du behöver för att konfigurera e-postmeddelandet för närvarande, inklusive namnet på den inkommande kopplingen som ska dirigera din e-post. Om du bara använder Exchange Online Protection har du ingen koppling.  [Lär dig mer om e-postflöde och e-postdirigering](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
+Förbered motsvarande uppgifter som du behöver för att konfigurera e-postmeddelandet för närvarande, inklusive namnet på den inkommande kopplingen som dirigerar din e-post. Om du bara använder Exchange Online Protection har du ingen koppling.  [Lär dig mer om e-postflöde och e-postdirigering](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
 
 Scenarion för e-postdirigering som stöds:
 

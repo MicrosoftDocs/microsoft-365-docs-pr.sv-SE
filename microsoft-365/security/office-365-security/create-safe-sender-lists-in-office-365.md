@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa om tillgängliga och önskade alternativ för att tillåta inkommande meddelanden i Exchange Online Protection (EOP).
-ms.openlocfilehash: 38f1ab2451191dd63d5738075dbf42f8201a34ca
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 6e33d2b75429453602615bf98b8269ab160c7749
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659910"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698705"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Skapa listor med säkra avsändare i EOP
 
@@ -97,6 +97,9 @@ I följande exempel förutsätts att du behöver e-post från contoso.com för a
 
 ## <a name="use-outlook-safe-senders"></a>Använda betrodda avsändare i Outlook
 
+> [!CAUTION]
+> Med den här metoden skapas en stor risk för att attackerare skickar e-post till Inkorgen som annars skulle filtrerats. användarens listor med betrodda avsändare och säkra domäner förhindrar inte att skadlig program vara eller högsäker nät fiske meddelanden filtreras.
+
 I stället för en organisations inställning kan användare eller administratörer lägga till avsändarens e-postadresser i listan Betrodda avsändare i post lådan. Anvisningar finns i [Konfigurera inställningar för skräp post i Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Detta är inte önskvärt i de flesta fall eftersom avsändare kringgår delar av filtrerings stacken. Trots att du litar på avsändaren kan avsändaren ändå vara angripen och skicka skadligt innehåll. Det är bäst att låta våra filter göra vad som behövs för att kontrol lera alla meddelanden och sedan [rapportera falskt positiv/negativ till Microsoft](report-junk-email-messages-to-microsoft.md) om våra filter har fel. Om du kringgår filtrerings stacken påverkas också inte med [ZAP](zero-hour-auto-purge.md).
 
 När meddelanden hoppar över filtrering av skräp post på grund av en användares lista med betrodda avsändare kommer fältet **X-antispam – rapport** huvud att innehålla värdet `SFV:SFE` , vilket betyder att filtrering av skräp post, förfalskning och nätfiske hoppades över.
@@ -114,7 +117,7 @@ Om du inte kan använda regler för e-postflöde enligt beskrivningen ovan är n
 - Granska posterna i listan över tillåtna IP-adresser och ta bort de uppgifter som du inte längre behöver.
 
 > [!CAUTION]
-> Utan extra verifiering som regler för e-postflöde hoppar e-post från källor i listan över tillåtna IP-adresser över skräp post och avsändare (SPF, DKIM, DMARC). Detta skapar en stor risk för att attackerare skickar e-post till Inkorgen som annars skulle filtrerats.
+> Utan extra verifiering som regler för e-postflöde hoppar e-post från källor i listan över tillåtna IP-adresser över skräp post och avsändare (SPF, DKIM, DMARC). Detta skapar en stor risk för att attackerare skickar e-post till Inkorgen som annars skulle filtrerats. Listan med IP-adresser förhindrar inte att skadlig program vara eller högsäker nät fiske meddelanden filtreras.
 
 ## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>Använda listor med tillåtna avsändare eller tillåtna domän listor
 
@@ -124,7 +127,7 @@ Högsta tillåtna gräns för dessa listor är ungefär 1000 poster; Du kan dock
 
 > [!CAUTION]
 >
-> - Med den här metoden skapas en stor risk för att attackerare skickar e-post till Inkorgen som annars skulle filtreras.
+> - Med den här metoden skapas en stor risk för att attackerare skickar e-post till Inkorgen som annars skulle filtrerats. listorna tillåtna avsändare och tillåtna domäner förhindrar inte att skadlig program vara eller högsäker nät fiske messsages filtreras.
 >
 > - Använd inte domäner som du äger (kallas även godkända domäner) eller vanliga domäner (till exempel microsoft.com) i listan över tillåtna domän rapporter.
 

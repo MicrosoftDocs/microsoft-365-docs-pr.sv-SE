@@ -1,5 +1,6 @@
 ---
-title: Microsoft-rekommendationer för säkerhets inställningar för EOP och Defender för Office 365, rekommendationer, principer för avsändare, domänbaserade meddelanden och prosvars linjer, DomainKeys identifierat e-post, steg, hur fungerar det, säkerhets bas linjer, bas linjer för EOP, original planerna för Defender för Office 365, konfigurera Defender för Office 365, konfigurera EOP, konfigurera Defender för Office 365
+title: Microsoft-rekommendationer för säkerhets inställningar för EOP och Defender för Office 365
+keywords: Säkerhets rekommendationer för Office 365, principer för avsändare, domänbaserade meddelanden och profiler, DomainKeys identifierat e-post, steg, hur fungerar den, säkerhets bas linjer, original planer för EOP, bas linjer för Defender för Office 365, konfigurera Defender för Office 365, konfigurera EOP, konfigurera Defender för Office 365, konfigurera EOP, säkerhets konfiguration
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Vad är metod tips för säkerhets inställningar för Exchange Online Protection (EOP) och Defender för Office 365? Vad är de senaste rekommendationerna för standard skydd? Vad ska användas om du vill veta mer? Vilka extrafunktioner får du om du även använder Defender för Office 365?
-ms.openlocfilehash: 192e37a1a9a373f7b6712600bc3c81189f7c51ad
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: d731b75e05dcecc513c72b390b106491f7601c71
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615966"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698693"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Rekommenderade inställningar för EOP och Microsoft Defender för Office 365-säkerhet
 
@@ -122,7 +123,7 @@ Information om hur du skapar och konfigurerar principer mot skadlig program vara
 
 |Säkerhetsfunktionens namn|Standard|Standard|Tillåts|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Vill du meddela mottagare om deras meddelanden är i karantän?** <p> _Fattning_|Nej <p> _DeleteMessage_|Nej <p> _DeleteMessage_|Nej <p> _DeleteMessage_|Om skadlig kod hittas i en e-postbilaga är meddelandet satt i karantän och kan bara släppas av en administratör.|
+|**Vill du meddela mottagare om deras meddelanden är i karantän?** <p> _Åtgärd_|Nej <p> _DeleteMessage_|Nej <p> _DeleteMessage_|Nej <p> _DeleteMessage_|Om skadlig kod hittas i en e-postbilaga är meddelandet satt i karantän och kan bara släppas av en administratör.|
 |**Filtret vanliga bilagor** <p> _EnableFileFilter_|Av <p> `$false`|På <p> `$true`|På <p> `$true`|Den här inställningen skapar karantän meddelanden som innehåller körbara bilagor baserat på filtyp, oavsett innehållet i bifogade filer.|
 |**Automatisk borttagning av skadlig program vara** <p> _ZapEnabled_|På <p> `$true`|På <p> `$true`|På <p> `$true`||
 |**Meddela interna avsändare** om det ej skickade meddelandet <p> _EnableInternalSenderNotifications_|Inaktiverad <p> `$false`|Inaktiverad <p> `$false`|Inaktiverad <p> `$false`||
@@ -280,7 +281,7 @@ I PowerShell använder du cmdleten [New-SafeAttachmentPolicy](https://docs.micro
 
 |Säkerhetsfunktionens namn|Standard|Standard|Tillåts|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Osäkra bifogade filer, svar på skadlig program vara** <p> _Fattning_|Blockera <p> `Block`|Blockera <p> `Block`|Blockera <p> `Block`||
+|**Osäkra bifogade filer, svar på skadlig program vara** <p> _Åtgärd_|Blockera <p> `Block`|Blockera <p> `Block`|Blockera <p> `Block`||
 |**Omdirigera bilaga vid identifiering** : **Aktivera omdirigering** <p> _Omdirigeringstid_ <p> _RedirectAddress_|Av och ingen e-postadress angavs. <p> `$true` <p> none (ingen)|På och ange en e-postadress. <p> `$true` <p> en e-postadress|På och ange en e-postadress. <p> `$true` <p> en e-postadress|Omdirigera meddelanden till en säkerhets administratör för granskning.|
 |**Använd ovanstående markering om genomsökning av skadlig kod för bifogade filer eller fel uppstår.** <p> _ActionOnError_|På <p> `$true`|På <p> `$true`|På <p> `$true`||
 |

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Få hjälp med att öka skydds nivån i Microsoft 365
-ms.openlocfilehash: 99b9bfac7867d6f6b29571940f717667fd05a697
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 2078f9b40f6f556b2aacee28d6ff3c25be90fcc4
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843262"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698457"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-subscription"></a>Öka skydds prenumerationen för Microsoft 365
 
@@ -44,7 +44,7 @@ Din Office 365-eller Microsoft 365-miljö inkluderar skydd mot skadlig program v
 
 1. Gå till <https://protection.office.com> och logga in med dina inloggnings uppgifter för ditt administratörs konto.
 
-2. Välj **policy** **Threat management** \> **anti-malware** under Threat Management i navigerings fönstret för säkerhets &.
+2. Välj **policy**  \> **anti-malware** under Threat Management i navigerings fönstret för säkerhets &.
 
 3. Dubbelklicka på standard principen för att redigera företagets policy.
 
@@ -102,7 +102,7 @@ Hackare som får åtkomst till en användares post låda kan stjäla din e-post 
 
 Om du vill skapa en regel för e-posttransport, titta på [den här korta videon](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) eller följ de här stegen:
 
-1. I administrations centret för Microsoft 365 klickar du på Exchange **Center** -tjänsten \> **Exchange**.
+1. I administrations centret för Microsoft 365 klickar du på Exchange **Center** -tjänsten \> .
 
 2. Klicka på **regler** i kategorin **e-postflöde** .
 
@@ -151,7 +151,7 @@ Om du vill skapa en AntiPhishing-princip i Defender för Office 365, titta på [
 |Välj åtgärder|Om e-post skickas av en personifierad användare: Välj **omdirigera meddelande till en annan e-postadress** och skriv sedan e-postadressen för säkerhets administratören. till exempel *Alice <span> <span> @contoso. com*. <br/> Om e-post skickas av en domänkontrollant: Välj **karantän meddelande**.|
 |Post lådans intelligens|Som standard väljs post lådans intelligens när du skapar en ny skydds policy. Lämna den här **inställningen för** bästa resultat.|
 |Lägga till betrodda avsändare och domäner|Här kan du lägga till en egen domän eller någon annan betrodd domän.|
-|Tillämpas på|Välj **mottagar domänen**. Välj **Välj** under **något av dessa**. Välj **+ Lägg till**. Markera kryss rutan bredvid domän namnet, till exempel *contoso. <span> <span> com* , i listan och välj sedan **Lägg till**. Välj **Klar**.|
+|Tillämpas på|Välj **mottagar domänen**. Välj **Välj** under **något av dessa**. Välj **+ Lägg till**. Markera kryss rutan bredvid domän namnet, till exempel *contoso. <span> <span> com*, i listan och välj sedan **Lägg till**. Välj **Klar**.|
 
 Mer information finns i [Konfigurera anti-nätfiske-principer i Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
 
@@ -171,7 +171,7 @@ Om du inte ser **inställnings** sidan med kort i klient organisationen ännu ka
    ![Välj Visa på ökat skydd mot avancerade hot.](../media/startatp.png)
 
 3. På sidan **öka skyddet mot avancerade hot** väljer du **Kom igång**.
-4. I fönstret som öppnas markerar du kryss rutorna bredvid **länkar och bifogade filer i e-post** , **skannar filer i SharePoint, OneDrive och Teams** och **söknings länkar i Office-skrivbordet och Office Online-program** under **Sök efter objekt efter skadligt innehåll**.
+4. I fönstret som öppnas markerar du kryss rutorna bredvid **länkar och bifogade filer i e-post**, **skannar filer i SharePoint, OneDrive och Teams** och **söknings länkar i Office-skrivbordet och Office Online-program** under **Sök efter objekt efter skadligt innehåll**.
 
    Under **länkar och bifogade filer i e-post** skriver du in alla användare eller de specifika användare vars e-post du vill skanna.
 
@@ -229,7 +229,7 @@ Om du vill skapa säkra länkar kan du titta på [den här korta utbildnings vid
 
 Så här ändrar du standard principen:
 
-1. På sidan Safe Links, under **principer som gäller för hela organisationen** , väljer du **standard** policy.
+1. På sidan Safe Links, under **principer som gäller för hela organisationen**, väljer du **standard** policy.
 
 2. Välj **Microsoft 365-appar för företag, Office för iOS och Android** under **inställningar som gäller för innehåll förutom e-post**.
 
@@ -237,7 +237,7 @@ Så här ändrar du standard principen:
 
 Så här skapar du en ny princip för alla mottagare i domänen:
 
-1. På sidan Safe Links, under **principer som gäller för hela organisationen** , klickar **+** du på för att skapa en ny princip.
+1. På sidan Safe Links, under **principer som gäller för hela organisationen**, klickar **+** du på för att skapa en ny princip.
 
 2. Använd inställningarna i följande tabell.
 
@@ -258,8 +258,8 @@ När du har aktiverat gransknings loggs ökningen i säkerhets & Compliance Cent
 
 Du måste ha rollen gransknings loggar i Exchange Online för att aktivera eller inaktivera gransknings loggs ökningen i Microsoft 365-prenumerationen. Den här rollen är som standard kopplad till roll grupperna efterlevnad Management och organisations hantering på sidan behörigheter i administrations centret för Exchange. Globala administratörer i Microsoft 365 är medlemmar i den här gruppen som standard.
 
-1. Aktivera gransknings loggs ökningen genom att gå till administrations centret på <https://admin.microsoft.com> och välja **efterföljande** under **Administratörs Center** i det vänstra navigerings fältet.
-2. Välj **fler resurser** på sidan **Microsoft 365-efterlevnad** och **Öppna** sedan kortet **Office 365 Security & Center** .
+1. Aktivera gransknings loggs ökningen genom att gå till administrations centret på <https://admin.microsoft.com> och sedan välja **säkerhet** under **Administratörs Center** i det vänstra navigerings fältet.
+2. Välj **fler resurser** på sidan **Microsoft 365-säkerhet** och **Öppna** sedan kortet **Office 365 Security & Compliance Center** .
 
     ![Välj Öppna på fliken säkerhet & bilar.](../media/gotosecandcomp.png)
 3. På sidan säkerhet och efterlevnad väljer du **Sök** och sedan **Granska loggnings sökning**.
@@ -272,8 +272,8 @@ När funktionen är aktive rad kan du söka efter filer, mappar och många aktiv
 (ändra den anonyma standard länken till 14 dagar, ändra standard typ för delning till "specifika personer") Så här ändrar du delnings inställningar för OneDrive och SharePoint:
 
 1. Gå till administrations centret på <https://admin.microsoft.com> och välj sedan **SharePoint** under **administrations Center** i det vänstra navigerings fältet.
-2. Gå till **princip** delning i administrations centret för SharePoint \> **Sharing**.
-3. På sidan **delning** under fil- **och mappaktiviteter** väljer du **specifika personer** , och under **Avancerade inställningar för "alla"-länkar** kan du välja **att dessa länkar ska upphöra att gälla inom det här antalet dagar** och skriva i 14 (eller ett annat antal dagar som du vill begränsa länk livs längden till).
+2. Gå till **princip** delning i administrations centret för SharePoint \> .
+3. På sidan **delning** under fil- **och mappaktiviteter** väljer du **specifika personer**, och under **Avancerade inställningar för "alla"-länkar** kan du välja **att dessa länkar ska upphöra att gälla inom det här antalet dagar** och skriva i 14 (eller ett annat antal dagar som du vill begränsa länk livs längden till).
 
    ![Välj specifika personer och ange förfallo tid till 14 dagar.](../media/anyonelinks.png)
 
@@ -289,8 +289,8 @@ I följande bild visas de standard principer som ingår i Microsoft 365.
 
 Du kan förhindra att personer i organisationen delar sina kalendrar, eller också kan du även hantera vad de kan dela. Du kan till exempel begränsa delningen till endast ledig/upptagen tid.
 
-1. Gå till administrations centret på <https://admin.microsoft.com> och välj **Inställningar** \> **tjänst & tillägg**.
-2. På sidan **tjänster & tillägg** väljer du **kalender** och väljer om personer i din organisation kan dela sina kalendrar med personer utanför Office 365 eller Exchange eller med vem som helst.
+1. Gå till administrations centret på <https://admin.microsoft.com> och välj **Inställningar** \> **organisations inställningar**.
+2. På sidan **tjänster** väljer du **kalender** och väljer om personer i din organisation kan dela sina kalendrar med personer utanför Office 365 eller Exchange eller med vem som helst.
 
    Om du väljer dela med någon kan du välja att bara dela med dig av ledig/upptagen-information.
 

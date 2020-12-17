@@ -11,12 +11,12 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Lär dig hur du planerar för funktioner för säkerhet och sekretess i Microsoft 365
-ms.openlocfilehash: 7b88e5bbc8158ebd7dea65b2ecbf77085651b439
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: b3c33a49b8273c5f7830f08de17af9757a858413
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668342"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698503"
 ---
 # <a name="topic-experiences-security-and-privacy"></a>Ämnets säkerhet och integritet
 
@@ -26,7 +26,7 @@ Om du konfigurerar kunskaps nätet ändras inte befintliga åtkomst kontroller f
 
 I den här artikeln beskrivs hur erfarenheter fungerar från ett säkerhets perspektiv och alternativen som kunskaps administratörer och kunskaps chefer måste kontrol lera ämnets synlighet. Läs den här artikeln som en del av [planeringen av ämnen](plan-topic-experiences.md).
 
-Du bör vara bekant med [avsnitts upplevelser](knowledge-management-overview.md), [ämnes Center](topic-center-overview.md)och hur du [arbetar med ämnen i ämnes centret](work-with-topics.md) innan du läser den här artikeln.
+Du bör vara bekant med [avsnitts upplevelser](topic-experiences-overview.md), [ämnes Center](topic-center-overview.md)och hur du [arbetar med ämnen i ämnes centret](manage-topics.md) innan du läser den här artikeln.
 
 ## <a name="what-users-can-see-in-topics"></a>Vad användarna kan se i ämnen
 
