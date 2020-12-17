@@ -1,0 +1,51 @@
+---
+title: Konfigurera Microsoft 365 Business Premium-abonnemang
+f1.keywords:
+- NOCSH
+ms.author: sirkkuw
+author: Sirkkuw
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- adminvideo
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+description: Lär dig hur du konfigurerar Microsoft 365 Business Premium.
+ms.openlocfilehash: 79f089e38979990c29156ea07201c8d902a51e80
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49703145"
+---
+# <a name="set-up-microsoft-365-business-premium"></a><span data-ttu-id="a4736-103">Konfigurera Microsoft 365 Business Premium</span><span class="sxs-lookup"><span data-stu-id="a4736-103">Set up Microsoft 365 Business Premium</span></span>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ?autoplay=false]
+
+## <a name="try-it"></a><span data-ttu-id="a4736-104">Prova!</span><span class="sxs-lookup"><span data-stu-id="a4736-104">Try it!</span></span>
+
+1. <span data-ttu-id="a4736-105">Logga in på administrations centret för Microsoft 365 och välj  **gå till konfiguration**.</span><span class="sxs-lookup"><span data-stu-id="a4736-105">Sign in to the Microsoft 365 admin center, and select  **Go to setup**.</span></span> <span data-ttu-id="a4736-106">Installations guiden startas.</span><span class="sxs-lookup"><span data-stu-id="a4736-106">The setup wizard will start.</span></span>
+2.  <span data-ttu-id="a4736-107">På sidan  **installera Office-appar**  kan du välja att installera Office-program på datorn eller välja  **Fortsätt**.</span><span class="sxs-lookup"><span data-stu-id="a4736-107">On the  **Install your Office apps**  page, you can choose to install Office apps on your computer, or select  **Continue**.</span></span>
+3.  <span data-ttu-id="a4736-108">På  **din domän är din företags identitets**  sida anger du domän namnet för företaget och väljer sedan  **Använd denna domän**.</span><span class="sxs-lookup"><span data-stu-id="a4736-108">On the  **Your domain is your business identity**  page, enter the domain name for your business and then select  **Use this domain**.</span></span> <span data-ttu-id="a4736-109">Om du använder en gemensam registrator som WordPress eller GoDaddy, läggs dina poster automatiskt till på den här sidan.</span><span class="sxs-lookup"><span data-stu-id="a4736-109">If you use a common registrar like WordPress or GoDaddy, your records will be added automatically on this page.</span></span>
+4. <span data-ttu-id="a4736-110">På sidan  **Verifiera din domän**  väljer du  **Verifiera** för att verifiera ägandet av domänen och loggar sedan in på ditt domän registrators konto.</span><span class="sxs-lookup"><span data-stu-id="a4736-110">On the  **Verify your domain**  page, select  **Verify** to verify ownership of your domain, and then sign in to your domain registrar account.</span></span> <span data-ttu-id="a4736-111">Om du vill låta Microsoft lägga till en TXT-post för konto verifiering väljer du  **Bekräfta**.</span><span class="sxs-lookup"><span data-stu-id="a4736-111">To let Microsoft add a TXT record for account verification, select  **Confirm**.</span></span>
+5. <span data-ttu-id="a4736-112">På sidan  **Lägg till användare och tilldela licenser**  skriver du in användarens förnamn, efter namn och användar namn.</span><span class="sxs-lookup"><span data-stu-id="a4736-112">On the  **Add users and assign licenses**  page, enter user first names, last names, and user names.</span></span> <span data-ttu-id="a4736-113">Välj sedan  **Lägg till användare och tilldela licenser**.</span><span class="sxs-lookup"><span data-stu-id="a4736-113">Then select  **Add users and assign licenses**.</span></span>
+6. <span data-ttu-id="a4736-114">På sidan  **dela inloggnings information**  anger du alternativa e-postadresser för användarna och väljer sedan  **skicka e-post och fortsätt**.</span><span class="sxs-lookup"><span data-stu-id="a4736-114">On the  **Share sign-in information**  page, enter alternate email addresses for your users, and select  **Send email and continue**.</span></span>
+7.  <span data-ttu-id="a4736-115">På sidan  **Aktivera poster**  klickar du på  **Fortsätt**.</span><span class="sxs-lookup"><span data-stu-id="a4736-115">On the  **Activate records**  page, click  **Continue**.</span></span>
+8.  <span data-ttu-id="a4736-116">På sidan  **Lägg till DNS-poster**  rekommenderar vi att du lämnar tjänsterna aktiverade för e-post, team och mobil telefon.</span><span class="sxs-lookup"><span data-stu-id="a4736-116">On the  **Add DNS records**  page, we recommend that you leave the services turned on for email, Teams, and mobile device security.</span></span> <span data-ttu-id="a4736-117">Välj  **Konfigurera** och sedan  **Anslut** för att bekräfta ändringarna hos domän registratorn.</span><span class="sxs-lookup"><span data-stu-id="a4736-117">Select  **Configure** , and then select  **Connect** to confirm the changes with your domain registrar.</span></span>
+9.  <span data-ttu-id="a4736-118">På sidan  **öka skyddet från Advanced cyberterrorism hot**  , låt  **Office Avancerat skydda**  , se vad som kommer att skannas och välj sedan  **Skapa avancerade hot skydds**   **principer**.</span><span class="sxs-lookup"><span data-stu-id="a4736-118">On the  **Increase protection from advanced cyber threats**  page, leave  **Office Advanced Threat Protection**  on, review what will be scanned, and then select  **Create Advanced Threat Protection**   **policies**.</span></span>
+10.  <span data-ttu-id="a4736-119">Om du vill kan du även installera Outlook på dina mobila enheter.</span><span class="sxs-lookup"><span data-stu-id="a4736-119">If you like, you can optionally install Outlook on your mobile devices.</span></span> <span data-ttu-id="a4736-120">Välj  **Fortsätt**.</span><span class="sxs-lookup"><span data-stu-id="a4736-120">Select  **Continue**.</span></span>
+11. <span data-ttu-id="a4736-121">På sidan  **Hjälp personer använder Microsoft Teams**  väljer du om du vill skicka e-post till användare i organisationen om Teams och väljer  **Fortsätt**.</span><span class="sxs-lookup"><span data-stu-id="a4736-121">On the  **Help people use Microsoft Teams**  page, choose if you want to email users in your organization about Teams, and select  **Continue**.</span></span>
+12. <span data-ttu-id="a4736-122">På sidan  **skydda data på en mobil på kontoret**  , låt hantering av mobil program vara aktiverat, expandera inställningar och granska dem och välj sedan  **skapa hanterings princip för mobilapp**.</span><span class="sxs-lookup"><span data-stu-id="a4736-122">On the  **Protect data in Office for mobile**  page, leave mobile app management on, expand the settings and review them, and then select  **Create mobile app management policy**.</span></span>
+13. <span data-ttu-id="a4736-123">När installationen är klar går du tillbaka till administrations centret för Microsoft.</span><span class="sxs-lookup"><span data-stu-id="a4736-123">After your setup is complete, return to the Microsoft admin center.</span></span> <span data-ttu-id="a4736-124">I administrations centret kan du fortsätta att konfigurera funktioner som Windows 10-principer, DLP och så vidare. </span><span class="sxs-lookup"><span data-stu-id="a4736-124">In the admin center you can continue setting up features like Windows 10 policies, DLP, etc. on the  **Setup**  page.</span></span>
+
+<span data-ttu-id="a4736-125">Installationen är klar.</span><span class="sxs-lookup"><span data-stu-id="a4736-125">Your setup is complete.</span></span>
