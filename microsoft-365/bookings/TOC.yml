@@ -1,47 +1,47 @@
 - name: Microsoft Bookings
   href: bookings-overview.md
   items:
-    - name: Installation
+    - name: Konfiguration
       items:
-        - name: Få till gång till bokningar
+        - name: Få tillgång till Microsoft Bookings
           href: get-access.md
-        - name: Ange din företags information
+        - name: Ange din företagsinformation
           href: enter-business-information.md
-        - name: Definiera dina tjänst möjligheter
+        - name: Beskriv tjänsterna du erbjuder
           href: define-service-offerings.md
-        - name: Lägga till personal i bokningar
+        - name: Lägg till personal i Bookings
           href: add-staff.md
-        - name: Schemalägg företags stängning och ledighet
+        - name: Schemalägg företagsstängningar och ledighet
           href: schedule-closures-time-off-vacation.md
-        - name: Ange schemaläggnings principer
+        - name: Ange dina principer för schemaläggning
           href: set-scheduling-policies.md
-        - name: Anpassa och publicera boknings sidan
+        - name: Anpassa och publicera din bokningssida
           href: customize-booking-page.md
         - name: Skapa en manuell bokning
           href: create-a-manual-booking.md
-        - name: Schemalägg företags stängning och ledighet
+        - name: Schemalägg företagsstängningar och ledighet
           href: schedule-closures-time-off-vacation.md
-        - name: Anställda timmar
+        - name: Arbetstid
           href: employee-hours.md
-        - name: Lägga till anpassade och nödvändiga frågor på boknings sidan
+        - name: Lägg till anpassade och nödvändiga frågor till bokningssidan
           href: add-questions.md
-        - name: Ange buffertstorlek
+        - name: Ställ in bufferttid
           href: set-buffer-time.md
-        - name: Mått och aktivitets spårning
+        - name: Mätvärden och aktivitetsspårning
           href: metrics-and-activity-tracking.md
-        - name: Ange språk och tidszon
+        - name: Ställ in språk och tidszon
           href: set-language-time-zones.md
-    - name: Hämta programmet bokningar
+    - name: Hämta Bookings-appen
       href: get-bookings-app.md
-    - name: Program och virtuella besök i Microsoft Teams
+    - name: Bookings-app och virtuella möten i Microsoft Teams
       href: 'https://docs.microsoft.com/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json'
-    - name: Jämförelse diagram – Web App och Teams-appen
+    - name: Jämförelsediagram – webbapp vs Teams app
       href: comparison-chart.md
-    - name: Ta bort en boknings kalender
+    - name: Ta bort en bokningskalender
       href: delete-calendar.md
-    - name: Aktivera eller inaktivera Microsoft-bokningar
+    - name: Aktivera eller inaktivera Microsoft Bookings
       href: turn-bookings-on-or-off.md
-    - name: Rapporterings information för Microsoft-bokningar
+    - name: Rapportera information för Microsoft Bookings
       href: reporting-info.md
-    - name: Vanliga frågor och svar om Microsoft-bokningar
+    - name: Vanliga frågor och svar om Microsoft Forms (FAQ)
       href: bookings-faq.md

@@ -1,4 +1,4 @@
-- name: Lär dig mer om Microsoft SharePoint Syntex
+- name: Läs mer om Microsoft SharePoint Syntex
   items:
     - name: Introduktion till SharePoint Syntex
       href: index.md
@@ -10,7 +10,7 @@
       href: difference-between-document-understanding-and-form-processing-model.md
 - name: Komma igång med modeller
   items:
-    - name: Lär dig mer om modeller genom exempel modellen
+    - name: Läs mer om modeller genom exempel modellen
       href: learn-about-document-understanding-models-through-the-sample-model.md
     - name: Skapa ett innehållscenter
       href: create-a-content-center.md
@@ -24,27 +24,27 @@
       href: apply-a-model.md
     - name: Skapa en modell för formulärbearbetning
       href: create-a-form-processing-model.md
-    - name: Använda en bevarande etikett
+    - name: Använda en kvarhållningsetikett
       href: apply-a-retention-label-to-a-model.md
     - name: Modell för användningsanalys
       href: model-usage-analytics.md
-    - name: Använda termlagringstaxonomi vid skapande av extraktor
+    - name: Använd termlagringstaxonomi vid skapande av extraktor
       href: leverage-term-store-taxonomy.md
 - name: Integrering
   items:
-    - name: Komma igång med antagandet
+    - name: Komma igång med integrering
       href: adoption-getstarted.md
 - name: Konfiguration och administration
   items:
-    - name: Ställa in innehållstolkning
+    - name: Konfigurera innehållstolkning
       href: set-up-content-understanding.md
-- name: Innehålls tjänster
+- name: Innehållstjänster
   items:
-    - name: Importera med SKOS
+    - name: Importera genom att använda SKOS
       href: import-term-set-skos.md
-    - name: SKOS formaterings referens
+    - name: SKOS formateringsreferens
       href: skos-format-reference.md
-    - name: Skicka innehålls typen till navet
+    - name: Skicka innehållstyper till hubb
       href: push-content-type-to-hub.md
     - name: Rapporter för termlagring
       href: term-store-analytics.md
