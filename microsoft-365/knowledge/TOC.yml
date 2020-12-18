@@ -1,32 +1,44 @@
-- name: Komma igång med kunskaps hantering
+- name: Komma igång med Ämnesupplevelser
   items:
-    - name: Översikt över kunskaps hantering
-      href: knowledge-management-overview.md
-    - name: Översikt över ämnes Center
-      href: topic-center-overview.md
-    - name: Arbeta med ämnen i ämnes centret
-      href: work-with-topics.md
-    - name: Ge användare behörighet till ämnes centret
-      href: give-user-permissions-to-the-topic-center.md
+    - name: Introduktion till Ämnesupplevelser
+      href: index.md
+    - name: Översikt över Ämnesupplevelser
+      href: topic-experiences-overview.md
+    - name: Identifiering och säkring av Ämnesupplevelser
+      href: topic-experiences-discovery-curation.md
+    - name: Roller i Ämnesupplevelser
+      href: topic-experiences-roles.md
     - name: Förbered din miljö
       href: topic-experiences-get-ready.md
 - name: Konfiguration och administration
   items:
-    - name: Ämnets säkerhet
+    - name: Ämnes säkerhet
       href: topic-experiences-security-privacy.md
-    - name: Planera ämnen
+    - name: Planera ämnesupplevelser
       href: plan-topic-experiences.md
-    - name: Konfigurera ämnen
+    - name: Konfigurera ämnesupplevelser
       href: set-up-topic-experiences.md
-    - name: Hantera identifiering av avsnitt
+    - name: Hantera ämnesidentifiering
       href: topic-experiences-discovery.md
-    - name: Hantera ämnets synlighet
+    - name: Hantera ämnes synlighet
       href: topic-experiences-knowledge-rules.md
-    - name: Hantera behörigheter för ämnen
+    - name: Hantera ämnesbehörigheter
       href: topic-experiences-user-permissions.md
-    - name: Ändra namnet på ämnes Center
+    - name: Ändra namnet på ämnescenter
       href: topic-experiences-administration.md
-- name: Integrering
+- name: Arbeta med ämnen
   items:
-    - name: Komma igång med att börja använda
+    - name: Översikt över ämnescentret
+      href: topic-center-overview.md
+    - name: Hantera ämnen i ämnes centret
+      href: manage-topics.md
+    - name: Skapa ett nytt ämne
+      href: create-a-topic.md
+    - name: Redigera ett ämne
+      href: edit-a-topic.md
+    - name: Säkerhetstrimning
+      href: topic-experiences-security-trimming.md
+- name: Införande
+  items:
+    - name: Komma igång med införandet
       href: topics-adoption-getstarted.md
