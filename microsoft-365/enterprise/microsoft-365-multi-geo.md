@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: I den här artikeln lär du dig hur du expanderar din Microsoft 365-närvaro till flera geografiska regioner med Microsoft 365 multi-geo.
-ms.openlocfilehash: cf5f655e2b205001c6c16ed05abc33d68324ff15
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+ms.openlocfilehash: 6d16d222a97f309eafdd79a2b107978ce7b4f242
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580703"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712503"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -50,7 +50,7 @@ Här är de viktigaste villkoren som används för att beskriva Microsoft 365 mu
 
 ## <a name="licensing"></a>Licensiering
 
-Microsoft 365 multi-geo är tillgängligt som ett tillägg till följande Microsoft 365-prenumerations abonnemang för kunder med minst 250 Microsoft 365-platser i sin klient organisation och minst 5% av dessa säten med multi-geo. Kontakta ditt Microsoft-konto för mer information.
+Microsoft 365 multi-geo är tillgängligt som ett tillägg till följande Microsoft 365-prenumerations abonnemang för kunder i Enterprise Agreement med minst 250 Microsoft 365-platser i sin klient organisation och ett minimum på 5% av dessa säten med multi-geo. Användar abonnemangs licenser måste finnas i samma företags avtal som för multi-geo-tjänsterna. Kontakta ditt Microsoft-konto för mer information.
 
 - Microsoft 365 F1, F3, E3 eller E5
 - Office 365 F3, E1, E3 eller E5
@@ -70,7 +70,7 @@ Följ de här stegen för att komma igång med multi-geo:
 
 1. Arbeta med ditt konto team för att lägga till _flera geo funktioner i Microsoft 365_ service plan. De hjälper dig att lägga till antalet licenser som behövs. Multi-geo-funktionen är tillgänglig för kunder med minst 250 Microsoft 365-abonnemang.
 
-   Innan du kan börja använda Microsoft 365 multi-geo måste Microsoft konfigurera Exchange Online-klienten för multi-geo-stöd. Denna konfigurations process i real tid utlöses efter att du beställt *flera geo-funktioner i Microsoft 365* service plan och de licenser som visas i klient organisationen. Du får arbets uppgifter specifika meddelanden i [Microsoft 365 meddelande Center](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) när klient organisationen har slutfört konfigurations processen för varje arbets belastning, och sedan kan du börja konfigurera och använda Microsoft 365 multi-geo-funktionerna. Den tid som krävs för att konfigurera en klient organisation för multi-geo-stöd varierar från klient organisationen till klient organisationen, men de flesta klient organisationer slutar inom en månad efter mottagandet av funktions licenserna. Större eller mer komplexa klient organisationer kan kräva mer tid för att slutföra konfigurationen. Kontakta ditt konto team för att få information om din specifika klient organisation.
+   Innan du kan börja använda Microsoft 365 multi-geo måste Microsoft konfigurera Exchange Online-klienten för multi-geo-stöd. Denna konfigurations process i real tid utlöses efter att du beställt *flera geo-funktioner i Microsoft 365* service plan och de licenser som visas i klient organisationen. Du kommer att få arbets belastnings meddelanden i [microsoft 365 meddelande Center](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) när klient organisationen har slutfört konfigurations processen för varje arbets belastning, och sedan kan du börja konfigurera och använda dina Microsoft 365 multi-geo-funktioner. Den tid som krävs för att konfigurera en klient organisation för multi-geo-stöd varierar från klient organisationen till klient organisationen, men de flesta klient organisationer slutar inom en månad efter mottagandet av funktions licenserna. Större eller mer komplexa klient organisationer kan kräva mer tid för att slutföra konfigurationen. Kontakta ditt konto team för att få information om din specifika klient organisation.
 
 2. Läs [Planera din multi-geo-miljö](plan-for-multi-geo.md).
 

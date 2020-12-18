@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om vilka phishing-principer som är tillgängliga i Exchange Online Protection (EOP) och Microsoft Defender för Office 365.
-ms.openlocfilehash: 43736fbd42949a084804825ec7f12d19b7fd1818
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 7660516e60c77a7f31f711f78b6fd28d3ad179fd
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683047"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709710"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-nätfiske-principer i Microsoft 365
 
@@ -55,7 +55,7 @@ De högre skillnaderna mellan anti-nätfiske-principer i EOP och anti-nätfiske-
 
 Information om hur du konfigurerar principer för nätfiske finns i följande artiklar:
 
-- [Konfigurera AntiPhishing-principer i EOP](configure-anti-phishing-policies-eop.md)
+- [Konfigurera principer för skydd mot nätfiske i EOP](configure-anti-phishing-policies-eop.md)
 
 - [Konfigurera AntiPhishing-principer i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md)
 
@@ -99,6 +99,8 @@ Följande inställningar för förfalskning är tillgängliga i principer för n
   > - Skydd mot förfalskning är aktiverat som standard i standard AntiPhishing-principen och i alla nya anpassade Antivirus principer som du skapar.
   >
   > - Du behöver inte inaktivera skydd mot förfalskning om din MX-post inte pekar på Microsoft 365; du aktiverar bättre filtrering för kopplingar i stället. Anvisningar finns i [utökad filtrering för kopplingar i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  >
+  > - Om du inaktiverar skydd mot förfalskning avaktiveras inte implicita förfalsknings skydd från [sammansatta](email-validation-and-authentication.md#composite-authentication) kontroller. Om avsändaren Miss lyckas explicita [DMARC](use-dmarc-to-validate-email.md) kontrollerar om den här principen är inställd på Quarantine eller avvisande är meddelandet fortfarande i karantän eller avvisas.
 
   För meddelanden från blockerade avsändare som inte är falska kan du även ange vilken åtgärd som ska vidtas:
 

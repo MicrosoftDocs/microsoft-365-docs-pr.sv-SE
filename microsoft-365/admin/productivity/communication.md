@@ -19,16 +19,28 @@ search.appverid:
 - MET150
 - MOE150
 description: Information om kommunikationen-människor upplever produktivitets poäng.
-ms.openlocfilehash: de73957ffad27ddac9b5e18cd6da7becd2239a59
-ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
+ms.openlocfilehash: b688063c10749d15fc5b00b629ee18afedba927e
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49585322"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712585"
 ---
 # <a name="communication--people-experiences"></a>Kommunikation – folk upplevelse
 
 Produktivitets Poäng Stöder resan till digital transformation med insikter om hur din organisation använder Microsoft 365 och de teknik funktioner som stöder det. Din organisations poäng speglar personer och tekniska upplevelsemätningar och kan jämföras med riktmärke från organisationer som har samma storlek som din. Kommunikations kategorin är en del av folks måtten. Mer information finns i [Översikt över produktivitets Poäng](productivity-score.md) och Läs [Microsofts sekretess policy](https://privacy.microsoft.com/privacystatement).
+
+## <a name="prerequisites"></a>Förutsättningar
+
+För att komma igång med kommunikations insikter måste personer i din organisation vara licensierade för:
+
+- Microsoft Teams
+- Yammer
+- Exchange Online
+
+Mer information finns i [tilldela licenser till användare](../manage/assign-licenses-to-users.md).
+
+När personer har varit aktiva i ovanstående produkter minst en gång under de senaste 28 dagarna visas insikter.
 
 ## <a name="why-your-organizations-communication-score-matters"></a>Därför är det viktigt att organisationens kommunikation Poäng 
 

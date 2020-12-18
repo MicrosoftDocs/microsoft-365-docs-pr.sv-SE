@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Sammanfattning: förstå migrering från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i det nya tyska data centret.'
-ms.openlocfilehash: 16e57eff5556d31d2d13ab6ce0d284719d63c44c
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 3587979c61434b77c38758e70903ee7028d70b9e
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688647"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709698"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migrering från Microsoft Cloud Deutschland till Office 365-tjänster i de nya tyska Data Center-regionerna
 
@@ -35,7 +35,7 @@ I augusti 2018 presenterade Microsoft vårt avsikt att leverera hela Microsoft C
 
 De nya regionerna är utformade för att hantera de föränderliga behoven hos tyska kunder med mer flexibelt, de senaste intelligenta moln tjänsterna och fullständig anslutning till vårt Microsoft 365-tjänst moln nätverk samt kund data de i Tyskland.
 
-## <a name="how-to-migrate-to-the-new-german-regions"></a>Så här migrerar du till de nya tyska regionerna
+## <a name="how-to-migrate-to-the-new-german-datacenter-regions"></a>Så här migrerar du till nya tyska Data Center områden
 
 Befintliga Microsoft Cloud Deutschland-kunder kan nu börja migrera sin Office 365, Dynamics 365 kund engagemang och Power Platform-kunder. Det första steget är att [välja ett Microsoft-LED-migrering](https://aka.ms/office365germanymoveoptin) till våra nya tyska Data Center områden.
 
@@ -78,9 +78,9 @@ En vecka innan klient organisationens början börjar, kommer du att få ett med
 
 Migreringen kommer att flytta din Azure AD-klient från den andra Tyskland Azure AD-tjänsten till Office 365 Services-instansen av Azure AD i EU-regionen.
 
-Nästa steg är migreringen av klient organisationen&#39;s abonnemang och användar licenser från Tyskland-specifika produkter.
+Nästa steg är migreringen av klient organisationens&#39;s abonnemang och användar licenser från Tyskland-specifika produkter till globala produkter.
 
-När alla steg är klara inklusive Azure migration för kunder är din klient för tillfället färdig i Office 365-tjänsterna och migreringen har marker ATS som slutförd. I det här läget tillhandahålls den senaste uppdateringen till meddelande Center. Klient organisationen är nu inte en helt global Office 365-organisation.
+När alla steg är klara inklusive Azure migration för kunder är din klient för tillfället färdig i Office 365-tjänsterna och migreringen har marker ATS som slutförd. I det här läget tillhandahålls den senaste uppdateringen till meddelande Center. Klient organisationen är nu en helt global Office 365-organisation.
 
 Du får ett meddelande om migrerings förlopp med inlägg i meddelande Center. Inläggen görs med specifika mil stolpar och ger vägledning om hur steget fortskrider samt viktig information för kunder att fungera baserat på process kraven. Meddelande Center-meddelanden tillhandahålls i följande mil stolpar:
 
@@ -94,11 +94,11 @@ Du får ett meddelande om migrerings förlopp med inlägg i meddelande Center. I
 - Power BI färdigt
 - Slutgiltig snabbmigrering av tjänsterna är färdig
 
-## <a name="moving-to-the-new-german-regions"></a>Flytta till de nya tyska regionerna
+## <a name="moving-to-the-new-german-datacenter-regions"></a>Flytta till nya tyska Data Center områden
 
-Befintliga Microsoft Cloud Germany (Microsoft Cloud Deutschland) kunder kan nu börja migrera sina Office 365-, Dynamics 365-kund åtaganden och Power Platform-kunder. Det första steget är att [välja ett Microsoft-LED-migrering](https://aka.ms/office365germanymoveoptin) till våra nya tyska Data Center områden. När du förnyar prenumerationen ska du automatiskt välja ett Microsoft-kundbaserad migrering. Microsoft meddelar kundernas klient organisationer med e-post och i meddelande centret för Microsoft 365 Admin Center när det här inträffar. Men om du föredrar att starta processen nu kan du [välja](https://aka.ms/office365germanymoveoptin) direkt i Microsoft 365 Admin Center idag. Migreringar förväntas starta tidigt 2021 och kommer att slutföras senast den 29 oktober 2021. 
+Befintliga Microsoft Cloud Deutschland-kunder kan nu börja migrera sin Office 365, Dynamics 365 kund engagemang och Power Platform-tjänster. Det första steget är att [välja ett Microsoft-LED-migrering](https://aka.ms/office365germanymoveoptin) till våra nya tyska Data Center områden. När du förnyar prenumerationen ska du automatiskt välja ett Microsoft-kundbaserad migrering. Microsoft meddelar kundernas klient organisationer med e-post och i meddelande centret för Microsoft 365 Admin Center när det här inträffar. Men om du föredrar att starta processen nu kan du [välja](https://aka.ms/office365germanymoveoptin) direkt i Microsoft 365 Admin Center idag. Migreringar förväntas starta tidigt 2021 och kommer att slutföras senast den 29 oktober 2021. 
 
-Som ett resultat av migreringen flyttas grundläggande kund uppgifter och abonnemang till de nya tyska regionerna.
+Som ett resultat av migreringen flyttas grundläggande kund data och abonnemang till de nya tyska Data Center-regionerna.
 
 ## <a name="how-to-prepare-for-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Förbereda för migrering till Office 365-tjänster i de nya tyska Data Center-regionerna
 
@@ -149,7 +149,7 @@ Följande 15 tjänster är tillgängliga i tillägget Microsoft Cloud Deutschlan
 14. Office 365 Pro plus
 15. Outlook Mobile
 
-Det finns för närvarande 29 tjänster tillgängliga som en del av Office 365-tjänsterna i de nya tyska Data Center-regionerna. Nya funktioner och tjänster kommer att vara tillgängliga konsekvent med globala Office 365-tjänster.
+Det finns för närvarande 39 tjänster tillgängliga som en del av Office 365-tjänsterna i de nya tyska Data Center-regionerna. Nya funktioner och tjänster kommer att vara tillgängliga konsekvent med globala Office 365-tjänster.
 
 1. Exchange Online
 2. Kund lås för Exchange Online
@@ -161,7 +161,7 @@ Det finns för närvarande 29 tjänster tillgängliga som en del av Office 365-t
 8. Defender förr Office 365
 9. Advanced eDiscovery
 10. Avancerad säkerhets hantering
-11. Information Rights Management
+11. Informations skydd för Office 365 
 12. Data styrning
 13. SharePoint Online
 14. Kund lås för SharePoint Online
@@ -173,13 +173,23 @@ Det finns för närvarande 29 tjänster tillgängliga som en del av Office 365-t
 20. PSTN-samtal
 21. Microsoft Teams
 22. Rapporter om administratör/användning
-23. Word Online, Excel Online, PowerPoint, OneNote och Visio online
+23. Office på webben
 24. Planner
 25. Sway
 26. Microsoft 365-applikationer
 27. Outlook Mobile
 28. Enterprise Mobility + Security (EMS) E3 (Azure AD Premium P1, Intune och Rights Management Service)
-29. Yammer online
+29. Yammer Enterprise
+30. Microsoft Forms
+31. Automatisk energi för Office 365
+32. Power Virtual agents för Office 365
+33. PowerApps för Office 365
+34. Microsoft Bookings
+35. To-Do
+36. Whiteboard
+37. Microsoft StuffHub
+38. Microsoft Kaizala Pro
+39. Beskriver
 
 ### <a name="when-will-migration-happen"></a>När sker migrering?
 

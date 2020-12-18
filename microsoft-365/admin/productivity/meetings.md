@@ -19,16 +19,26 @@ search.appverid:
 - MET150
 - MOE150
 description: Information om möten-människor upplever produktivitets poäng.
-ms.openlocfilehash: b9dfd59643d38531d1eb4ff9fdc24fdc2a54f382
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 09b0682593c0e5a623e9b17712754c4bea2a6672
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561653"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712549"
 ---
 # <a name="meetings--people-experiences"></a>Möten – folk upplevelse
 
 Produktivitets Poäng tillhandahåller insikter i organisationens digitala Transformation-resa via dess användning av Microsoft 365 och de teknik funktioner som stöder det. Din organisations Poäng återspeglar funktionerna för folk-och teknik upplevelse och kan jämföras med benchmarks från organisationer som liknar ditt. Kategorin möten är en del av folks måtten. Mer information finns i [Översikt över produktivitets Poäng](productivity-score.md) och Läs [Microsofts sekretess policy](https://privacy.microsoft.com/privacystatement).
+
+## <a name="prerequisites"></a>Förutsättningar
+
+För att komma igång med Mötes syn måste personer i din organisation vara licensierade för:
+
+- Microsoft Teams
+
+Mer information finns i [tilldela licenser till användare](../manage/assign-licenses-to-users.md).
+
+När personer har varit aktiva i Teams minst en gång under de senaste 28 dagarna visas insikter.
 
 ## <a name="why-your-organizations-meetings-score-matters"></a>Orsaken till att organisationens möten Poäng
 

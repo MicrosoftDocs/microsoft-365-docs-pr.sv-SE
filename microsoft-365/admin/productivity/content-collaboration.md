@@ -19,16 +19,28 @@ search.appverid:
 - MET150
 - MOE150
 description: Information om innehålls samarbete-människor upplever produktivitets poäng.
-ms.openlocfilehash: 2637debe41cd32093c378a4665af6dc5185b0e5e
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 62486511be7e085401e4a2934ce3742a15729e1f
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561665"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712597"
 ---
 # <a name="content-collaboration--people-experiences"></a>Innehålls samarbete – folk upplevelse
 
 Produktivitets Poäng tillhandahåller insikter i organisationens digitala Transformation-resa via dess användning av Microsoft 365 och de teknik funktioner som stöder det. Din organisations Poäng återspeglar funktionerna för folk-och teknik upplevelse och kan jämföras med benchmarks från organisationer som liknar ditt. Kategorin innehålls samarbete är en del av folks måtten. Mer information finns i [Översikt över produktivitets Poäng](productivity-score.md) och Läs [Microsofts sekretess policy](https://privacy.microsoft.com/privacystatement).
+
+## <a name="prerequisites"></a>Förutsättningar
+
+För att komma igång med innehålls samarbete måste personer i din organisation vara licensierade för:
+
+- OneDrive för företag
+- SharePoint
+- Exchange Online
+
+Mer information finns i [tilldela licenser till användare](../manage/assign-licenses-to-users.md).
+
+ När personer har varit aktiva i ovanstående produkter minst en gång under de senaste 28 dagarna visas insikter.
 
 ## <a name="why-your-organization39s-content-collaboration-score-matters"></a>Varför din organisation&#39;s innehålls samarbets Poäng
 

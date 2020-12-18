@@ -19,16 +19,31 @@ search.appverid:
 - MET150
 - MOE150
 description: Information om mobilitet-människor upplever produktivitets poäng.
-ms.openlocfilehash: 04651cfee4ac2e67c4099c47bfe6d8c07b41ba83
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: e632bb4960ef36acf2c81373f34947ababc8b903
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561583"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712573"
 ---
 # <a name="mobility--people-experiences"></a>Rörlighet – människor upplever
 
 Produktivitets Poäng tillhandahåller insikter i organisationens digitala Transformation-resa via dess användning av Microsoft 365 och de teknik funktioner som stöder det. Din organisations Poäng återspeglar funktionerna för folk-och teknik upplevelse och kan jämföras med benchmarks från organisationer som liknar ditt. Kategorin mobilitet är en del av folks måtten. Mer information finns i [Översikt över produktivitets Poäng](productivity-score.md) och Läs [Microsofts sekretess policy](https://privacy.microsoft.com/privacystatement).
+
+## <a name="prerequisites"></a>Förutsättningar
+
+För att komma igång med mobilitets insikter måste personer i din organisation vara licensierade för:
+
+- Microsoft Teams
+- Exchange Online
+- Word
+- Excel
+- PowerPoint
+- OneNote
+
+Mer information finns i [tilldela licenser till användare](../manage/assign-licenses-to-users.md).
+
+När personer har varit aktiva i ovanstående produkter minst en gång under de senaste 28 dagarna visas insikter.
 
 ## <a name="why-your-organization39s-mobility-score-matters"></a>Varför din organisation&#39;s rörlighets Poäng
 

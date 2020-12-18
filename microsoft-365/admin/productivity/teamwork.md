@@ -19,16 +19,28 @@ search.appverid:
 - MET150
 - MOE150
 description: Detaljerad information om hur du får poäng med samarbete.
-ms.openlocfilehash: 2be98b904131e8ac7cd5f6215faf41fd69ee1837
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: f64f60a6c9717d3d55ee2ac5cc6f507d4927fe18
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561549"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712561"
 ---
 # <a name="teamwork--people-experiences"></a>Samarbete – folk upplevelse
 
 Produktivitets Poäng tillhandahåller insikter i organisationens digitala Transformation-resa via dess användning av Microsoft 365 och de teknik funktioner som stöder det. Din organisations Poäng återspeglar funktionerna för folk-och teknik upplevelse och kan jämföras med benchmarks från organisationer som liknar ditt. Kategorin för grupp arbete är en del av de mätningar som infaller under folkets upplevelse. Mer information finns i [Översikt över produktivitets Poäng](productivity-score.md) och Läs [Microsofts sekretess policy](https://privacy.microsoft.com/privacystatement).
+
+## <a name="prerequisites"></a>Förutsättningar
+
+För att komma igång med samarbete måste personer i din organisation vara licensierade för:
+
+- Microsoft Teams
+- SharePoint
+- Exchange Online
+
+Mer information finns i [tilldela licenser till användare](../manage/assign-licenses-to-users.md).
+
+När personer har varit aktiva i ovanstående produkter minst en gång under de senaste 28 dagarna visas insikter.
 
 ## <a name="why-your-orgs-teamwork-score-matters"></a>Därför är organisationens lag för grupp Poäng
 
