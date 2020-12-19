@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: förstå åtgärderna för migrering och påverkan av förflyttning från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i det nya tyska Data Center-området.'
-ms.openlocfilehash: 4a032ab88704cfb46b3f451d939a784d222cbb40
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 4a54fed8a109c3d03b735a5db3cb48060f5c438f
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688635"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719398"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Åtgärder och konsekvenser för migreringen från Microsoft Cloud Deutschland (allmänt)
 
@@ -83,7 +83,7 @@ Ytterligare överväganden:
 
 | Steg | Beskrivning | Gäller för | Påverkan |
 |:-------|:-----|:-------|:-------|
-| Migrering av Skype för företag till Teams. | Befintliga Skype för företag-kunder migreras till Office 365-tjänster i Europa och sedan övergår till Microsoft Teams i Tyskland för Office 365-tjänster. | Skype för företag-kunder | -Användare kan inte logga in på Skype för företag på migrations datumet. Tio dagar före migreringen meddelar vi slutanvändare via den Skype för företag-klient som de uppgraderar till Teams. Vi kommer även att publicera i administrations centret om dessa ändringar inträffar efter de 10 dagarna. <br><br> -Princip konfigurationen migreras. <br><br> -Användarna migreras till Teams och har inte längre Skype för företag efter migreringen. <br><br> -Användare måste ha en stationär klient program vara installerad. Installationen sker under de tio dagarna via policyn i Skype för företag-infrastrukturen, men om det inte fungerar kan användarna ändå Ladda ner klienten eller ansluta med en webbläsare som stöds. <br><br> -Kontakter och möten migreras till Teams. <br><br> -Användare kan inte logga in på Skype för företag mellan tids tjänst över gångar till Office 365-tjänster, och inte förrän kundernas DNS-poster har slutförts. <br><br> -Kontakter och befintliga möten fortsätter att fungera som Skype för företag-möten. |
+| Migrering av Skype för företag till Teams. | Befintliga Skype för företag-kunder migreras till Office 365-tjänster i Europa och sedan övergår till Microsoft Teams i Tyskland för Office 365-tjänster. | Skype för företag-kunder | -Användare kan inte logga in på Skype för företag på migrations datumet. Tio dagar före migreringen skickar vi till administrations centret för att informera dig om när migreringen sker och när vi påbörjar migreringen. <br><br> -Princip konfigurationen migreras. <br><br> -Användarna migreras till Teams och har inte längre Skype för företag efter migreringen. <br><br> -Användare måste ha en stationär klient program vara installerad. Installationen sker under de tio dagarna via policyn i Skype för företag-infrastrukturen, men om det inte fungerar kan användarna ändå Ladda ner klienten eller ansluta med en webbläsare som stöds. <br><br> -Kontakter och möten migreras till Teams. <br><br> -Användare kan inte logga in på Skype för företag mellan tids tjänst över gångar till Office 365-tjänster, och inte förrän kundernas DNS-poster har slutförts. <br><br> -Kontakter och befintliga möten fortsätter att fungera som Skype för företag-möten. |
 |||||
 
 ## <a name="office-services"></a>Office-tjänster

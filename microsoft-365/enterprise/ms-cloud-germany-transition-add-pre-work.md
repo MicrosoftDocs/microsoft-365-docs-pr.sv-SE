@@ -3,7 +3,7 @@ title: Arbete för migrering från Microsoft Cloud Deutschland
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/11/2020
+ms.date: 12/18/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: förarbete när du flyttar från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i det nya tyska data centret.'
-ms.openlocfilehash: 1bb6a1b80da462da2218f32fbbc2899ae651a3ec
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 107447226b9b75f371e23f8dd06ec29860571c63
+ms.sourcegitcommit: 86f75cf77a7a446a79226ca530bd7b5eb39189cb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688461"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49717037"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Arbete för migrering från Microsoft Cloud Deutschland
 
@@ -115,6 +115,7 @@ Om du använder en tjänst från tredje part eller ett LOB-program som är integ
 
 | Steg | Beskrivning | Gäller för | Påverkan |
 |:-------|:-----|:-------|:-------|
+| Lägga till en identifierare för enkel inloggning (SSO) i ett befintligt förlitande part-förtroende och inaktivera automatiska uppdateringar av AD FS-metadata. | Ett ID måste läggas till i AD FS-förlitande part-förtroendet innan migreringen påbörjas. För att undvika oavsiktlig borttagning av den förlitande partens identifierare inaktiverar du automatisk uppdatering för uppdateringar av metadata. <br><br> Kör det här kommandot på AD FS-servern: <br> `Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:microsoftonline.de -Identifier @('urn:federation:microsoftonline.de','https://login.microsoftonline.de/extSTS.srf','https://login.microsoftonline.de') -AutoUpdate $False` | Organisationer för extern autentiseringsprocess | Nödvändig åtgärd. Inåtgärd innebär att tjänsten påverkas under migreringen.  |
 | Generera förtroende för förlitande part för globala Azure AD-slutpunkter. | Kunderna måste manuellt skapa ett förlitande part-förtroende för [globala](https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml) slut punkter. Det gör du genom att lägga till en ny RPT via GUI genom att använda URL-adressen för den globala federationsmetadata (i AD [FS-hjälpen](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator#:~:text=%20Azure%20AD%20RPT%20Claim%20Rules%20%201,Azure%20AD.%20This%20will%20be%20what...%20More%20) ) för att generera anspråks reglerna och importera dem till en RPT. | Organisationer för extern autentiseringsprocess | Nödvändig åtgärd. Inåtgärd innebär att tjänsten påverkas under migreringen. |
 |||||
 

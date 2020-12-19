@@ -1,7 +1,7 @@
 ---
-title: 'Avancerade jakt-API: er'
-description: Lär dig hur du kör avancerade frågor med hjälp av Microsoft 365 Defender API
-keywords: 'Avancerad jakt, API: er, MTP'
+title: Microsoft 365 Defender Advanced jakt-API
+description: Lär dig hur du kör avancerade jakt frågor med Microsoft 365 Defender s Advanced jakt API
+keywords: 'Avancerad jakt, API: er, MTP, M365 Defender, Microsoft 365 Defender'
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,78 +19,89 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c43d263009578af6280ffdc780ab0f9a174a3b97
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e7cd9192ec25e01ed06b77cb2b39357cb9df79bd
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844038"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719386"
 ---
-# <a name="advanced-hunting-apis"></a>Avancerade jakt-API: er
+# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender Advanced jakt-API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Gäller för:**
-- Microsoft 365 Defender
 
->[!IMPORTANT] 
->Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
+- Microsoft Threat Protection
 
-## <a name="limitations"></a>Begränsningar
-1. Du kan bara köra en fråga på data från de senaste 30 dagarna.
-2. Resultaten inkluderar högst 100 000 rader.
-3. Antalet körningar är begränsat per klient organisation: upp till 10 samtal per minut, 10 minuters kör tid varje timme och 4 timmar efter en dag.
-4. Maximal körnings tid för en enda begäran är 10 minuter.
-5. 429-svaret kommer att representera en kvot gräns antingen per antal begär Anden eller per CPU. Svars texten för 429 anger också tiden tills kvoten förnyas. 
+> [!IMPORTANT]
+> Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
 
+[Avancerad jakt](advanced-hunting-overview.md) är ett hot-jakt-verktyg som använder [särskilt utformade frågor](advanced-hunting-query-language.md) för att undersöka de senaste 30 dagarna av händelse data i Microsoft 365 Defender. Du kan använda avancerade jakt frågor för att kontrol lera ovanlig aktivitet, upptäcka möjliga hot och till och med reagera på attacker. Med Advanced jakt API kan du programatically fråga efter händelse data.
+
+## <a name="quotas-and-resource-allocation"></a>Kvoter och resurstilldelning
+
+Följande villkor gäller för alla frågor.
+
+1. Frågor utforskar och returnerar data från de senaste 30 dagarna.
+2. Resultaten kan returnera upp till 100 000 rader.
+3. Du kan ringa upp till 10 samtal per minut per klient organisation.
+4. Du har 10 minuters kör tid per timme per klient organisation.
+5. Du har fyra totala timmar med kör tid per klient organisation.
+6. Om en enda begäran körs i mer än 10 minuter upphör den att fungera och ett fel meddelande returneras.
+7. En `429` http-svarskod visar att du har nått en kvot, antingen av antalet begär Anden som skickats eller via utsatt tid för drift. Svars texten inkluderar tiden tills den kvot du nådde återställs.
 
 ## <a name="permissions"></a>Behörigheter
-En av följande behörigheter krävs för att kunna ringa detta API. Om du vill veta mer, inklusive hur du väljer behörigheter, se [Microsoft 365 Defender API: er](api-access.md)
 
-Behörighets typ |   Tillåtelse  |   Visnings namn för behörighet
-:---|:---|:---
-Program |   AdvancedHunting. Read. all |  "Kör avancerade frågor"
-Delegerat (arbets-eller skol konto) | AdvancedHunting. Read | "Kör avancerade frågor"
+En av följande behörigheter krävs för att kunna ringa det avancerade jakt-API: t. Om du vill veta mer, inklusive hur du väljer behörigheter, läser du [gå till Microsoft 365 Defender-skydds-API: erna](api-access.md)
+
+Behörighets typ | Tillåtelse | Visnings namn för behörighet
+-|-|-
+Program | AdvancedHunting. Read. all | Kör avancerade frågor
+Delegerat (arbets-eller skol konto) | AdvancedHunting. Read | Kör avancerade frågor
 
 >[!Note]
 > När du erhåller ett token med användar uppgifter:
+>
 >- Användaren måste ha AD-rollen "Visa data"
 >- Användaren måste ha åtkomst till enheten baserat på Inställningar för enhets grupp.
 
 ## <a name="http-request"></a>HTTP-begäran
-```
+
+```HTTP
 POST https://api.security.microsoft.com/api/advancedhunting/run
 ```
 
 ## <a name="request-headers"></a>Begärandehuvuden
 
-Meddelande | Värde 
-:---|:---
-Bemyndigande | Bearer {token}. **Obligatoriskt**.
-Innehålls typ    | program/JSON
+Meddelande | Value
+-|-
+Bemyndigande | Bevarad {token} **Obs!**
+Innehålls typ | program/JSON
 
 ## <a name="request-body"></a>Brödtext
+
 Ange ett JSON-objekt med följande parametrar i den efterfrågade texten:
 
-Indataparametern | Skriv    | Beskrivning
-:---|:---|:---
-Frågeserver | Text |  Frågan att köra. **Obligatoriskt**.
+Indataparametern | Type (Typ) | Beskrivning
+-|-|-
+Frågeserver | Text | Frågan att köra. **Obs!**
 
 ## <a name="response"></a>Interimssvar
-Om det lyckas returnerar den här metoden 200 OK och _QueryResponse_ -objekt i svars texten. <br><br>
 
-Response-objektet är uppdelat till 3 delar (egenskaper):<br>
-1) ```Stats``` -Fråga prestanda statistik.<br>
-2) ```Schema``` -Schemat för svaret, en lista över Name-Type par för varje kolumn. <br>
-3) ```Results``` – En lista över avancerade jakt händelser.
+Om det lyckas returneras den här metoden `200 OK` och ett _QueryResponse_ -objekt i svars texten.
+
+Response-objektet innehåller tre högsta nivå egenskaper:
+
+1. Statistik – en ord lista med prestanda statistik för frågor.
+2. Schema – schemat för svaret, en lista över Name-Type par för varje kolumn.
+3. Resultat – en lista över avancerade jakt händelser.
 
 ## <a name="example"></a>Exempel
 
-Ställning
+I följande exempel skickar en användare frågan nedan och tar emot ett API-svarsmeddelande som innehåller `Stats` , `Schema` , och `Results` .
 
-Här är ett exempel på begäran.
-
+### <a name="query"></a>Frågeserver
 
 ```json
 {
@@ -99,10 +110,7 @@ Här är ett exempel på begäran.
 
 ```
 
-Interimssvar
-
-Här är ett exempel på svaret.
-
+### <a name="response-object"></a>Response-objekt
 
 ```json
 {
@@ -164,8 +172,11 @@ Här är ett exempel på svaret.
         }
     ]
 }
-
 ```
 
-## <a name="related-topic"></a>Närliggande ämne
+## <a name="related-articles"></a>Relaterade artiklar
+
 - [Gå till API för Microsoft 365 Defender](api-access.md)
+- [Läs mer om API-begränsningar och licensiering](api-terms.md)
+- [Förstå felkoder](api-error-codes.md)
+- [Översikt över avancerad jakt](advanced-hunting-overview.md)

@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 63eab8c44651bfc2865e9bf6c577c1ebe13381fc
-ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
+ms.openlocfilehash: f151f02af695eb54eaf8f4f97936f4985fc7f8c0
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49624772"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719208"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migrera mellan innehavare (för hands version)
 
@@ -43,7 +43,7 @@ Migreringsguiden för Exchange-postlådan för flera innehavare kräver auktoris
 
 I det här avsnittet ingår inte de steg som krävs för att förbereda användar objekt i gruppen användare i mål katalogen, eller så inkluderar det inte kommandot exempel för att skicka in en migreringstabell. Se [förbereda mål användar objekt för migrering](#prepare-target-user-objects-for-migration) för den här informationen.
 
-## <a name="prerequisites"></a>Förutsättningar
+## <a name="prerequisites"></a>Krav
 
 För funktionen för flytt av post lådor krävs ett [Azure-valv](https://docs.microsoft.com/azure/key-vault/basic-concepts) för att upprätta ett klient organisations par-specifika Azure-program för säker lagring och åtkomst till certifikatet/hemligheten som används för att autentisera och auktorisera post lådans migrering från en klient organisation till den andra, vilket tar bort alla krav för att dela certifikat/hemligheter mellan klient organisationer. 
 
@@ -99,9 +99,9 @@ Förbereda käll klient organisationen:
 
     | Indataparametern | Value | Obligatoriskt eller valfritt
     |---------------------------------------------|-----------------|--------------|
-    | -ResourceTenantDomain                       | Käll klient organisation, till exempel fabrikam.onmicrosoft.com. | Obligatoriskt |
+    | -TargetTenantDomain                         | Mål grupps domän, till exempel contoso \. onmicrosoft.com. | Obligatoriskt |
+    | -ResourceTenantDomain                       | Käll klient organisation, till exempel Fabrikam \. onmicrosoft.com. | Obligatoriskt |
     | -ResourceTenantAdminEmail                   | Källa för klient organisationens e-postadress. Det här är käll klientens administratör som kommer att skickas vidare till den som skickas från mål administratören. Det här är administratören som kommer att få e-postinbjudan för programmet. | Obligatoriskt |
-    | -TargetTenantDomain                         | Mål grupps domän, till exempel contoso.onmicrosoft.com. | Obligatoriskt |
     | -ResourceTenantId                           | Organisations-ID för käll innehavare (GUID). | Obligatoriskt |
     | -SubscriptionId                             | Azure-abonnemanget som används för att skapa resurser. | Obligatoriskt |
     | -ResourceGroup                              | Namnet på Azure Resource-gruppen som innehåller eller kommer att innehålla huvud-valvet. | Obligatoriskt |
@@ -187,10 +187,10 @@ Konfigurationen för mål administratören är nu klar!
     | Indataparametern | Value |
     |-----|------|
     | -SourceMailboxMovePublishedScopes | E-postaktive rad säkerhets grupp skapad av käll klient organisationen för de identiteter/post lådor som är i omfång för migrering. |
-    | -ResourceTenantDomain | Käll klientens domän namn, till exempel fabrikam.onmicrosoft.com. |
-    | -TargetTenantDomain | Mål gruppens domän namn, till exempel contoso.onmicrosoft.com. |
+    | -ResourceTenantDomain | Käll klient namn för källan, till exempel Fabrikam \. onmicrosoft.com. |
     | -ApplicationId | ID för Azure-programmet (GUID) för programmet som används för migrering. Program-ID tillgängligt via din Azure-Portal (Azure AD, Enterprise-program, program namn, program-ID) eller inkluderat i e-postinbjudan.  |
-    | -TargetTenantId | Innehavarens ID för mål innehavaren. Till exempel Azure AD Tenant-ID för contoso.onmicrosoft.com-klient organisation. |
+    | -TargetTenantDomain | Mål gruppens domän namn, till exempel contoso \. onmicrosoft.com. |
+    | -TargetTenantId | Innehavarens ID för mål innehavaren. Till exempel Azure AD-klient organisations-ID: t contoso \. onmicrosoft.com-klienten. |
     |||
 
     Här är ett exempel.
@@ -279,11 +279,12 @@ Om en post låda flyttas tillbaka till den ursprungliga käll klient organisatio
 
 Användare som migreras måste finnas i mål klient organisationen och Exchange Online-systemet (som återanvändare) markeras med specifika attribut för att aktivera kors klient organisationer. Systemet kommer inte att flyttas för användare som inte har kon figurer ATS korrekt i mål klient organisationen. I följande avsnitt beskrivs användar objekts kraven för mål klient organisationen.
 
-### <a name="prerequisites"></a>Förutsättningar
+### <a name="prerequisites"></a>Krav
   
 Du måste kontrol lera att följande objekt och attribut är inställda i mål organisationen.  
 
 1. För alla post lådor som flyttas från en käll organisation måste du tillhandahålla ett e-postobjekt i mål organisationen: 
+
    - Mål-e-postkontot måste ha följande attribut från käll post lådan eller tilldelat det nya användarobjektet:
       - ExchangeGUID (direkt flöde från källa till mål) – post lådans GUID måste stämma. Flyttningen går inte att genomföra om det inte finns någon på målobjektet. 
       - ArchiveGUID (direkt flöde från källa till mål) – Arkiv-GUID måste stämma. Flyttningen går inte att genomföra om det inte finns något på målobjektet. (Detta krävs endast om käll brev lådan är aktive rad. 
@@ -293,40 +294,40 @@ Du måste kontrol lera att följande objekt och attribut är inställda i mål o
       - TargetAddress/ExternalEmailAddress – Mail-användare hänvisar till användarens aktuella post låda i käll klient organisationen (till exempel user@contoso.onmicrosoft.com). När du tilldelar det här värdet bör du kontrol lera att du har/tilldelar PrimarySMTPAddress eller det här värdet ställer in PrimarySMTPAddress som orsakar ett flytt problem. 
       - Du kan inte lägga till gamla SMTP-proxyadresser från käll brev lådan till mål-och e-postanvändare. Du kan till exempel inte underhålla contoso.com på POSTAKTIVERADE användaren i fabrikam.onmicrosoft.com klient organisations objekt). Domäner är kopplade till bara en Azure AD-eller Exchange Online-klient organisation.
  
-    Exempel på **mål** användar objekt:
+     Exempel på **mål** användar objekt:
  
-    | Attribut             | Value                                                                                                                    |
-    |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
-    | Standardaliasuppsättning                 | LaraN                                                                                                                    |
-    | RecipientType         | Användare                                                                                                                 |
-    | En  | Användare                                                                                                                 |
-    | UserPrincipalName     | LaraN@northwintraders.onmicrosoft.com                                                                                    |
-    | PrimarySmtpAddress    | Lara.Newton@northwind.com                                                                                                |
-    | ExternalEmailAddress  | SMTP:LaraN@contoso.onmicrosoft.com                                                                                       |
-    | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                     |
-    | LegacyExchangeDN      | /o = första organisation/ou = Exchange administrativ grupp                                                                   |
-    |                       | (FYDIBOHF23SPDLT)/CN = mottagare/CN = 74e5385fce4b46d19006876949855035Lara                                                  |
-    | Postadresser '        | x500:/o = First organisation/ou = Exchange Administrative Group (FYDIBOHF23SPDLT)/CN = mottagare/CN = d11ec1a2cacd4f81858c8190  |
-    |                       | 7273f1f9-Lara                                                                                                            |
-    |                       | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                              |
-    |                       | SMTP:Lara.Newton@northwind.com                                                                                           |
-    |||
+     | Attribut             | Value                                                                                                                    |
+     |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
+     | Standardaliasuppsättning                 | LaraN                                                                                                                    |
+     | RecipientType         | Användare                                                                                                                 |
+     | En  | Användare                                                                                                                 |
+     | UserPrincipalName     | LaraN@northwintraders.onmicrosoft.com                                                                                    |
+     | PrimarySmtpAddress    | Lara.Newton@northwind.com                                                                                                |
+     | ExternalEmailAddress  | SMTP:LaraN@contoso.onmicrosoft.com                                                                                       |
+     | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                     |
+     | LegacyExchangeDN      | /o = första organisation/ou = Exchange administrativ grupp                                                                   |
+     |                       | (FYDIBOHF23SPDLT)/CN = mottagare/CN = 74e5385fce4b46d19006876949855035Lara                                                  |
+     | Postadresser '        | x500:/o = First organisation/ou = Exchange Administrative Group (FYDIBOHF23SPDLT)/CN = mottagare/CN = d11ec1a2cacd4f81858c8190  |
+     |                       | 7273f1f9-Lara                                                                                                            |
+     |                       | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                              |
+     |                       | SMTP:Lara.Newton@northwind.com                                                                                           |
+     |||
 
-   Exempel på **käll** post låda:
+     Exempel på **käll** post låda:
 
-   | Attribut             | Value                                                                    |
-   |-----------------------|--------------------------------------------------------------------------|
-   | Standardaliasuppsättning                 | LaraN                                                                    |
-   | RecipientType         | UserMailbox                                                              |
-   | En  | UserMailbox                                                              |
-   | UserPrincipalName     | LaraN@contoso.onmicrosoft.com                                            |
-   | PrimarySmtpAddress    | Lara.Newton@contoso.com                                                  |
-   | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                     |
-   | LegacyExchangeDN      | /o = första organisation/ou = Exchange administrativ grupp                   |
-   |                       | (FYDIBOHF23SPDLT)/CN = mottagare/CN = d11ec1a2cacd4f81858c81907273f1f9Lara  |
-   | Postadresser '        | smtp:LaraN@contoso.onmicrosoft.com 
-   |                       | SMTP:Lara.Newton@contoso.com          |
-   |||
+     | Attribut             | Value                                                                    |
+     |-----------------------|--------------------------------------------------------------------------|
+     | Standardaliasuppsättning                 | LaraN                                                                    |
+     | RecipientType         | UserMailbox                                                              |
+     | En  | UserMailbox                                                              |
+     | UserPrincipalName     | LaraN@contoso.onmicrosoft.com                                            |
+     | PrimarySmtpAddress    | Lara.Newton@contoso.com                                                  |
+     | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                     |
+     | LegacyExchangeDN      | /o = första organisation/ou = Exchange administrativ grupp                   |
+     |                       | (FYDIBOHF23SPDLT)/CN = mottagare/CN = d11ec1a2cacd4f81858c81907273f1f9Lara  |
+     | Postadresser '        | smtp:LaraN@contoso.onmicrosoft.com 
+     |                       | SMTP:Lara.Newton@contoso.com          |
+     |||
 
    - Ytterligare attribut kan ingå i Exchange hybrid Skriv tillbaka. Om inte, ska de inkluderas. 
    - msExchBlockedSendersHash – skriver tillbaka säkra och blockerade avsändare från klienter till lokala Active Directory.
@@ -350,7 +351,7 @@ Du måste kontrol lera att följande objekt och attribut är inställda i mål o
     > [!Note]
     > När du tillämpar en licens på en post låda eller ett e-postobjekt, tas alla SMTP-proxyAddresses bort så att endast verifierade domäner tas med i matrisen Exchange postadresser '. 
 
-5. Du måste se till att mål-ExchangeGuid inte har några tidigare som inte stämmer överens med ExchangeGuid. Det här kan inträffa om mål-POSTAKTIVERADE användaren tidigare var licensierad för Exchange Online och etablerade en post låda. Om mål-eller postanvändaren har licensierat för eller haft en ExchangeGuid som inte matchar käll ExchangeGuid måste du utföra en rensning av moln POSTAKTIVERADE användaren. Du kan köra kommandot för dessa moln postaktiverade användare `Set-User <identity> -PermanentlyClearPreviousMailboxInfo` .  
+5. Du måste se till att mål-ExchangeGuid inte har några tidigare som inte stämmer överens med ExchangeGuid. Det här kan inträffa om mål-POSTAKTIVERADE användaren tidigare var licensierad för Exchange Online och etablerade en post låda. Om mål-eller postanvändaren har licensierat för eller haft en ExchangeGuid som inte matchar käll ExchangeGuid måste du utföra en rensning av moln POSTAKTIVERADE användaren. För dessa moln postaktiverade användare kan du köra `Set-User <identity> -PermanentlyClearPreviousMailboxInfo` .  
 
     > [!Caution]
     > Den här processen kan inte ångras. Om objektet har en softDeleted-postlåda kan den inte återställas efter den här punkten. När du har avmarkerat den kan du synkronisera rätt ExchangeGuid till målobjektet och MRS ansluter käll post lådan till den nya mål post lådan. (Referens, EHLO-blogg på den nya parametern.)  
@@ -508,7 +509,7 @@ Exchange-postlådan flyttar med MRS-båtar targetAddress på den ursprungliga k�
 
 Behörigheter för Mailbox inkluderar Send för användarens och post lådans åtkomst: 
 
-- Skicka åt (AD: publicDelegates) lagrar DN för mottagarna med åtkomst till en användares post låda som ombud. Det här värdet lagras i Active Directory och flyttas inte som en del av över gången till post lådan. Om käll brev lådan innehåller publicDelegates måste du omstämpla publicDelegates i mål brev lådan när POSTAKTIVERADE användaren-konverteringen till post låda har slutförts i mål miljön med `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>` kommandot. 
+- Skicka åt (AD: publicDelegates) lagrar DN för mottagarna med åtkomst till en användares post låda som ombud. Det här värdet lagras i Active Directory och flyttas inte som en del av över gången till post lådan. Om käll brev lådan innehåller publicDelegates måste du omstämpla publicDelegates i mål brev lådan när POSTAKTIVERADE användaren-konverteringen till post låda har slutförts i mål miljön `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>` . 
  
 - Behörigheter för Mailbox som lagras i post lådan flyttas med post lådan när både huvud kontot och ombudet flyttas till mål systemet. Användaren TestUser_7 ges till exempel behörigheten Full Access till post lådan TestUser_8 i klient organisationens SourceCompany.onmicrosoft.com. När flyttningen av post lådan är färdig med TargetCompany.onmicrosoft.com har samma behörigheter ställts in i mål katalogen. Exempel på *Get-MailboxPermission* för TestUser_7 i både käll-och mål klient organisationer visas nedan. Exchange-cmdlets föregås av källa och mål därefter. 
  

@@ -1,5 +1,5 @@
 ---
-title: Resurs typen incident i Microsoft 365 Defender API
+title: 'Microsoft 365 Defender tillbuds-API: er och resurs typen för incidenten'
 description: Lär dig mer om metoderna och egenskaperna för resurs typen incident i Microsoft 365 Defender
 keywords: incident, incidenter, API
 search.product: eADQiWindows 10XVcnh
@@ -19,36 +19,51 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 68bee647cdd5687dbaad08ce3cd01b427dabf030
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 372c939f5eed29832725e6b048735040ca7391d6
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844026"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719340"
 ---
-# <a name="incident-resource-type"></a>Resurs typ för incident
+# <a name="microsoft-365-defender-incidents-api-and-the-incident-resource-type"></a>Microsoft 365 Defender-incidenter API och resurs typen för incidenten
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Gäller för:**
+
 - Microsoft 365 Defender
 
->[!IMPORTANT] 
->Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
+> [!IMPORTANT]
+> Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
+
+En [olycka](incidents-overview.md) är en samling relaterade aviseringar som hjälper dig att beskriva en attack. Händelser från olika enheter i organisationen aggregeras automatiskt efter Microsoft 365 Defender. Du kan använda API-programatically för att få åtkomst till din organisations incidenter och relaterade aviseringar.
+
+## <a name="quotas-and-resource-allocation"></a>Kvoter och resurstilldelning
+
+Du kan begära upp till 50 samtal per minut eller 1500 samtal per timme. Varje metod har också sina egna kvoter. Mer information om metod specifika kvoter finns i respektive artikel för den metod du vill använda.
+
+En `429` http-svarskod visar att du har nått en kvot, antingen av antalet begär Anden som skickats eller via utsatt tid för drift. Svars texten inkluderar tiden tills den kvot du nådde återställs.
+
+## <a name="permissions"></a>Behörigheter
+
+För incident API krävs olika typer av behörigheter för varje metod. Mer information om vilka behörigheter som krävs finns i respektive metod.
 
 ## <a name="methods"></a>Verifieringsmetoder
 
-Metod |Returtyp |Beskrivning
-:---|:---|:---
+Metod | Returtyp | Beskrivning
+-|-|-
 [Lista incidenter](api-list-incidents.md) | [Incident](api-incident.md) lista | Få en lista över incidenter.
-[Uppdatera incident](api-update-incidents.md) | [Händelse](api-incident.md) | Uppdatera specifik incident.
+[Uppdatera incident](api-update-incidents.md) | [Händelse](api-incident.md) | Uppdatera en specifik olycka.
 
+## <a name="request-body-response-and-examples"></a>Begära brödtext, svar och exempel
 
-## <a name="properties"></a>Fjärråtkomstsegenskaper
+Se de olika metod artiklarna för att få mer information om hur man skapar en begäran eller tolkar ett svar samt för praktiska exempel.
 
-Egenskap |    Skriv    |    Beskrivning
-:---|:---|:---
+## <a name="common-properties"></a>Gemensamma egenskaper
+
+Egenskap | Type (Typ) | Beskrivning
+-|-|-
 incidentId | tids | Unikt ID för incidenten.
 redirectIncidentId | null-värde långa | Incident-ID för den aktuella incidenten slogs samman till.
 incidentName | strängvärdet | Namnet på incidenten.
@@ -61,3 +76,10 @@ nomenklatur | Enum | Specifikation av felet. Möjliga värden är: ```Unknown```
 bedömning | Enum | Anger hur incidenten ska visas. Möjliga värden är: ```NotAvailable``` , ```Apt``` , ```Malware``` , ```SecurityPersonnel``` , ```SecurityTesting``` , ```UnwantedSoftware``` , ```Other``` .
 taggen | sträng lista | Lista över incident koder.
 larm | Aviserings lista | Lista med relaterade aviseringar. Se exemplen på API-dokumentation för [samtal](api-list-incidents.md) .
+
+## <a name="related-articles"></a>Relaterade artiklar
+
+- [Översikt över Microsoft 365 Defender API](api-overview.md)
+- [Incident översikt](incidents-overview.md)
+- [API för List frågor](api-list-incidents.md)
+- [Uppdatera API för incident](api-update-incidents.md)

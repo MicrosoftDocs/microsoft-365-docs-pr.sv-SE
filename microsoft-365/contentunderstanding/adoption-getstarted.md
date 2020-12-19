@@ -12,12 +12,12 @@ ms.collection: enabler-strategic
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: db54ff053dcb1c9c1c608608ab1a37da8090cdb3
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 18bc5d8d0f80f7cee024f4d6358361509879bd11
+ms.sourcegitcommit: 86f75cf77a7a446a79226ca530bd7b5eb39189cb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087517"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49717025"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex: komma igång
 
@@ -32,8 +32,8 @@ Med nya AI-tjänster och-kapaciteter kan du skapa program för innehålls först
 |Manuell inmatning| Formulär bearbetning | Dokument förståelse |
 |:-------|:--------|:--------|
 | Data inmatning och arbets kraft för allt innehåll | Bearbeta digitalt innehåll – foton, skannar, kvitton, visitkort, video med OCR & text |  Fånga innehålls typer och metadata från kontrakt, Merit förteckningar och andra strukturerade dokument |
-| Active   | Färdiga, automatiserade   | Anpassat, assisterande   | Anpassad, kompatibel |
-| Personer som gör jobbet | I ämnes experter (SMF). Fånga innehålls typer och metadata från kontrakt, Merit förteckningar, andra ostrukturerade dokument. | Små och medel stora företag är mindre inblandade. från inköps order, program, andra halv strukturerade och strukturerade dokument |
+| Active   | Färdiga, automatiserade   | Anpassat, assisterande  |
+| Personer som gör jobbet | I ämnes experter (SMF). Fånga innehålls typer och metadata från kontrakt, Merit förteckningar, andra strukturerade dokument. | Små och medel stora företag är mindre inblandade. från inköps order, program, andra halv strukturerade och strukturerade dokument |
 
 I följande tabell förklaras vad du får när du använder SharePoint Syntex:
 

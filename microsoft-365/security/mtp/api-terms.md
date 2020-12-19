@@ -19,40 +19,60 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e88b59ea28f9e71c677c25d95edc2f91cc2e56d4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: d9b3c48e4b9e89ef7648086b05c9fdd9f078f51e
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844902"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719304"
 ---
-#  <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365 Defender API-licens och användnings villkor
+# <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365 Defender API-licens och användnings villkor
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Gäller för:**
+
 - Microsoft 365 Defender
 
->[!IMPORTANT] 
->Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
+> [!IMPORTANT]
+> Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
 
+## <a name="official-terms"></a>Officiella villkor
 
-## <a name="apis"></a>API:er
-
- Microsoft 365 Defender API: er lyder under [Microsoft API-licens och användnings villkor](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
-
-### <a name="throttling-limits"></a>Begränsningsgränser
-
-Varje API har sina egna begränsnings gränser.<br>
-Det finns begränsningar för begränsning per timme och per minut.<br>
-Till exempel är begränsnings gränserna för API: 50-samtal per minut och 1500 per timme.<br>
-Status koden för HTTP-svar om begränsningen är 429.
-
+Microsoft 365 Defender API: er lyder under [Microsoft API-licens och användnings villkor](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
 
 ## <a name="legal-notices"></a>Juridisk information
 
-Microsoft och alla deltagare får en licens till Microsoft documentation och annat innehåll i den här databasen under Creative Commons-tilldelning 4,0 International Public Licensing.
+Microsoft och alla deltagare tilldelar dig en licens till Microsoft documentation och annat innehåll i [den här databasen](https://github.com/MicrosoftDocs/microsoft-365-docs), under den internationella offentliga licensen för Creative Commons 4,0. Mer information finns i [licens](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/LICENSE) filen.
 
-Microsoft, Windows, Microsoft Azure och/eller andra Microsoft-produkter och-tjänster som hänvisas till i dokumentationen kan vara varumärken eller registrerade varumärken som tillhör Microsoft i USA och andra länder. Licenserna för det här projektet ger dig inte rättigheterna att använda Microsoft-namn, logo typer eller varumärken. Microsofts allmänna varumärkes regler finns på https://go.microsoft.com/fwlink/?LinkID=254653 .
+Microsoft, Windows, Microsoft Azure och/eller andra Microsoft-produkter och-tjänster som hänvisas till i dokumentationen kan vara varumärken eller registrerade varumärken som tillhör Microsoft i USA och andra länder.
 
-Integritets information finns på https://privacy.microsoft.com/en-us/ Microsoft och alla deltagare kan reservera alla andra rättigheter, oavsett om de är implication, estoppel eller varumärken under deras respektive upphovs rätter.
+Licenserna för det här projektet ger dig inte rättigheterna att använda Microsoft-namn, logo typer eller varumärken. Microsofts allmänna varumärkes rikt linjer finns på [Microsofts varumärken](https://go.microsoft.com/fwlink/?LinkID=254653).
+
+Sekretess information finns på [sekretess på Microsoft](https://privacy.microsoft.com).
+
+Microsoft och alla deltagare förbehåller sig alla andra rättigheter, oavsett om de är under deras respektive upphovs rätt, patent eller varumärken, oavsett om de är implication, estoppel eller på annat sätt.
+
+## <a name="other-restrictions"></a>Andra begränsningar
+
+Det avancerade jakt-API: t har vissa [begränsningar](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-advanced-query-api#limitations) för antalet returnerade resultat och vilka data som kan läsas.
+
+1. Du kan bara fråga efter data under de senaste 30 dagarna.
+1. Resultaten inkluderar högst 100 000 rader.
+
+### <a name="quotas-and-resource-allocation"></a>Kvoter och resurstilldelning
+
+Microsoft 365 Defender API: er har begränsningar för begränsning.
+
+- **INCIDENT API**: upp till 50 samtal per minut eller 1500 samtal per timme.
+- **Avancerat jakt-API**: upp till 15 samtal per minut, 10 minuters kör tid per timme och 4 timmar med kör tid per dag.
+
+Status koden för HTTP-svar som indikerar begränsning är `429` .
+
+Om din begäran har begränsats visar svars texten den tid när du kan börja göra förfrågningar igen.
+
+## <a name="related-articles"></a>Relaterade artiklar
+
+- [Översikt över Microsoft 365 Defender API](api-overview.md)
+- [Microsoft 365 Defender API: er som stöds](api-supported.md)
+- [Gå till API för Microsoft 365 Defender](api-access.md)

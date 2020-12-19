@@ -19,65 +19,49 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: aceb376662f2b27397aa2332f8929a57d5a3ee03
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0df741efb7555d587a6033acc23716e93f542d5e
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846014"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719220"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Vanliga API-felkoder för Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Gäller för:**
-- Microsoft 365 Defender
 
->[!IMPORTANT] 
->Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
+- Microsoft Threat Protection
 
-Felkoderna som visas i följande tabell kan returneras av en åtgärd med Microsoft 365 Defender API: er.
+> [!IMPORTANT]
+> Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
 
-Alla fel meddelanden innehåller ett fel meddelande som kan hjälpa dig att lösa problemet.
+Felkoder kan returneras av en åtgärd med Microsoft 365 Defender API: er. Varje fel svar kommer att innehålla ett fel meddelande som kan hjälpa dig att lösa problemet. Kolumnen fel meddelande i avsnittet tabell innehåller några exempel meddelanden. Innehållet i faktiska meddelanden varierar beroende på faktorer som utlöste svaret. Variabel innehåll anges i tabellen med vinkelparenteser.
 
-Meddelandet är en fri text som du kan ändra.
+## <a name="error-codes"></a>Felkoder
 
-Längst ned på sidan hittar du svars exempel.
-
-Felkod |HTTP-statuskod |Meddelande 
-:---|:---|:---
+Felkod | HTTP-statuskod | Meddelande
+-|-|-
 BadRequest | BadRequest (400) | Allmänt fel meddelande om felaktig begäran.
-ODataError | BadRequest (400) | Ogiltig OData URI-fråga (det specifika felet har angetts).
-InvalidInput | BadRequest (400) | Ogiltig inmatning {ogiltigt värde}.
+ODataError | BadRequest (400) | Ogiltig OData URI-fråga \<the specific error is specified\> .
+InvalidInput | BadRequest (400) | Ogiltiga indata \<the invalid input\> .
 InvalidRequestBody | BadRequest (400) | Ogiltigt brödtext för begäran.
-InvalidHashValue | BadRequest (400) | Hash-värde {ogiltigt hash} är ogiltigt.
-InvalidDomainName | BadRequest (400) | Domän namn {den ogiltiga domänen} är ogiltig.
-InvalidIpAddress | BadRequest (400) | IP-adress {ogiltigt IP} är ogiltigt.
-InvalidUrl | BadRequest (400) | URL {ogiltig URL} är ogiltig.
-MaximumBatchSizeExceeded | BadRequest (400) | Maximal batchstorlek har överskridits. Mottaget: {batch-storlek mottaget}, tillåts: {batchstorlek tillåts}.
-MissingRequiredParameter | BadRequest (400) | Parameter {den saknade parametern} saknas.
-OsPlatformNotSupported | BadRequest (400) | OS-plattform {OS-plattformen} stöds inte för den här åtgärden.
-ClientVersionNotSupported | BadRequest (400) | {Den begärda åtgärden} stöds för klient version {-kompatibel klient version} och senare.
-Saknas | Ej behörig (401) | Ej behörig (vanligt vis ogiltigt eller Förfallet godkännande rubrik).
-Förbjudet | Förbjuden (403) | Förbjuden (giltig token men otillräcklig behörighet för åtgärden).
+InvalidHashValue | BadRequest (400) | Ogiltigt hashvärde \<the invalid hash\> .
+InvalidDomainName | BadRequest (400) | Domän namnet \<the invalid domain\> är ogiltigt.
+InvalidIpAddress | BadRequest (400) | IP-adressen \<the invalid IP\> är ogiltig.
+InvalidUrl | BadRequest (400) | Webb adressen \<the invalid URL\> är ogiltig.
+MaximumBatchSizeExceeded | BadRequest (400) | Maximal batchstorlek har överskridits. Mottaget: \<batch size received\> tillåts: {grupp storlek tillåts}.
+MissingRequiredParameter | BadRequest (400) | Parameter \<the missing parameter\> saknas.
+OsPlatformNotSupported | BadRequest (400) | Operativ system plattformen \<the client OS Platform\> stöder inte den här åtgärden.
+ClientVersionNotSupported | BadRequest (400) | \<The requested action\> stöds på klient versionen \<supported client version\> och senare.
+Saknas | Ej behörig (401) | Saknas <br /><br />*Obs! det beror vanligt vis på ett ogiltigt eller Förfallet godkännande huvud.*
+Förbjudet | Förbjuden (403) | Förbjudet <br /><br />*Obs! giltig token men otillräcklig behörighet för åtgärden*.
 DisabledFeature | Förbjuden (403) | Klient funktionen är inte aktive rad.
-DisallowedOperation | Förbjuden (403) | {åtgärden är inte tillåten och anledningen}.
+DisallowedOperation | Förbjuden (403) | \<the disallowed operation and the reason\>.
 NotFound | Hittas inte (404) | Allmänt meddelande visas inte.
-ResourceNotFound | Hittas inte (404) | Resurs {den begärda resursen} hittades inte.
-InternalServerError | Internt Server fel (500) | (Inget fel meddelande, försök igen eller kontakta oss om det inte löses)
-
-## <a name="body-parameters-are-case-sensitive"></a>Text parametrar är Skift läges känsliga
-
-De skickade huvud parametrarna är för närvarande Skift läges känsliga.
-<br>Om du stöter på ett **InvalidRequestBody** -eller **MissingRequiredParameter** -fel kan det bero på felaktig tecken parameter eller gemen.
-<br>Vi rekommenderar att du granskar sidan API-dokumentation och kontrollerar att de skickade parametrarna stämmer överens med det relevanta exemplet.
-
-## <a name="correlation-request-id"></a>Korrelations-ID
-
-Varje fel svar innehåller en parameter med unikt ID för spårning.
-<br>Egenskaps namnet för den här parametern är "mål".
-<br>När vi kontaktar oss om ett fel kan du hitta orsaken till problemet genom att bifoga detta ID.
+ResourceNotFound | Hittas inte (404) | Resursen \<the requested resource\> hittades inte.
+InternalServerError | Internt Server fel (500) | *Obs! inga fel meddelanden, försök igen eller kontakta Microsoft om det inte löses*
 
 ## <a name="examples"></a>Exempel
 
@@ -91,7 +75,6 @@ Varje fel svar innehåller en parameter med unikt ID för spårning.
 }
 ```
 
-
 ```json
 {
     "error": {
@@ -102,3 +85,20 @@ Varje fel svar innehåller en parameter med unikt ID för spårning.
 }
 ```
 
+## <a name="body-parameters"></a>Body-parametrar
+
+> [!IMPORTANT]
+> Text parametrar är Skift läges känsliga.
+
+Om du upplever ett *InvalidRequestBody* -eller *MissingRequiredParameter* -fel kan det bero på ett stavfel. Granska API-dokumentationen och kontrol lera att de skickade parametrarna stämmer överens med det relevanta exemplet.
+
+## <a name="tracking-id"></a>Spårnings-ID
+
+Varje fel svar innehåller en parameter med unikt ID för spårning. Egenskaps namnet för den här parametern är *mål*. När vi kontaktar oss angående ett fel hjälper vi till med att hitta orsaken till problemet.
+
+## <a name="related-articles"></a>Relaterade artiklar
+
+- [Översikt över Microsoft 365 Defender API](api-overview.md)
+- [Microsoft 365 Defender API: er som stöds](api-supported.md)
+- [Gå till API för Microsoft 365 Defender](api-access.md)
+- [Läs mer om API-begränsningar och licensiering](api-terms.md)
