@@ -12,12 +12,12 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 ROBOTS: NOINDEX
-ms.openlocfilehash: 9709bec9b6e59ef05903f9c04909c796eb4127f4
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 45469e17870a58966a42a13116b6ba645071722c
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683467"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698537"
 ---
 # <a name="get-started-driving-adoption-of-topic-experiences-preview"></a>Komma igång med att använda en ämnes upplevelse (för hands version)
 
@@ -33,7 +33,7 @@ Innan du börjar med att börja använda måste du förstå de koncept som ingå
 - **Identifiering**: med kunskap och personer i Microsoft Graph och artificiell intelligens (ämnen, färdigheter, så vidare) identifieras och ordnas automatiskt i närliggande ämnen. SharePoint-innehållet indexeras med säkerhets innehåll.
 - **Tillägg**: med Microsoft Graph-innehåll (kommer snart) kan du skriva ut kunskap från externa tjänster och data databaser.
 
-Om du vill ha mer information kan du läsa [översikten](knowledge-management-overview.md) för en introduktion.
+Om du vill ha mer information kan du läsa [översikten](topic-experiences-overview.md) för en introduktion.
 
 Tänk på följande:
 
