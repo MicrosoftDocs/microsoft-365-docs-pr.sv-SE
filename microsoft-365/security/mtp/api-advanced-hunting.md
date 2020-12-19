@@ -1,7 +1,7 @@
 ---
-title: 'Avancerade jakt-API: er'
-description: Lär dig hur du kör avancerade frågor med hjälp av Microsoft 365 Defender API
-keywords: 'Avancerad jakt, API: er, MTP'
+title: Microsoft 365 Defender Advanced jakt-API
+description: Lär dig hur du kör avancerade jakt frågor med Microsoft 365 Defender s Advanced jakt API
+keywords: 'Avancerad jakt, API: er, MTP, M365 Defender, Microsoft 365 Defender'
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,78 +19,89 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c43d263009578af6280ffdc780ab0f9a174a3b97
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e7cd9192ec25e01ed06b77cb2b39357cb9df79bd
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844038"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719386"
 ---
-# <a name="advanced-hunting-apis"></a><span data-ttu-id="c7a8f-104">Avancerade jakt-API: er</span><span class="sxs-lookup"><span data-stu-id="c7a8f-104">Advanced hunting APIs</span></span>
+# <a name="microsoft-365-defender-advanced-hunting-api"></a><span data-ttu-id="5a2c7-104">Microsoft 365 Defender Advanced jakt-API</span><span class="sxs-lookup"><span data-stu-id="5a2c7-104">Microsoft 365 Defender Advanced hunting API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+<span data-ttu-id="5a2c7-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="5a2c7-105">**Applies to:**</span></span>
 
-<span data-ttu-id="c7a8f-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="c7a8f-105">**Applies to:**</span></span>
-- <span data-ttu-id="c7a8f-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="c7a8f-106">Microsoft 365 Defender</span></span>
+- <span data-ttu-id="5a2c7-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="5a2c7-106">Microsoft Threat Protection</span></span>
 
->[!IMPORTANT] 
-><span data-ttu-id="c7a8f-107">Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs.</span><span class="sxs-lookup"><span data-stu-id="c7a8f-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="c7a8f-108">Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.</span><span class="sxs-lookup"><span data-stu-id="c7a8f-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="5a2c7-107">Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs.</span><span class="sxs-lookup"><span data-stu-id="5a2c7-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="5a2c7-108">Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.</span><span class="sxs-lookup"><span data-stu-id="5a2c7-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
 
-## <a name="limitations"></a><span data-ttu-id="c7a8f-109">Begränsningar</span><span class="sxs-lookup"><span data-stu-id="c7a8f-109">Limitations</span></span>
-1. <span data-ttu-id="c7a8f-110">Du kan bara köra en fråga på data från de senaste 30 dagarna.</span><span class="sxs-lookup"><span data-stu-id="c7a8f-110">You can only run a query on data from the last 30 days.</span></span>
-2. <span data-ttu-id="c7a8f-111">Resultaten inkluderar högst 100 000 rader.</span><span class="sxs-lookup"><span data-stu-id="c7a8f-111">The results will include a maximum of 100,000 rows.</span></span>
-3. <span data-ttu-id="c7a8f-112">Antalet körningar är begränsat per klient organisation: upp till 10 samtal per minut, 10 minuters kör tid varje timme och 4 timmar efter en dag.</span><span class="sxs-lookup"><span data-stu-id="c7a8f-112">The number of executions is limited per tenant: up to 10 calls per minute, 10 minutes of running time every hour and 4 hours of running time a day.</span></span>
-4. <span data-ttu-id="c7a8f-113">Maximal körnings tid för en enda begäran är 10 minuter.</span><span class="sxs-lookup"><span data-stu-id="c7a8f-113">The maximal execution time of a single request is 10 minutes.</span></span>
-5. <span data-ttu-id="c7a8f-114">429-svaret kommer att representera en kvot gräns antingen per antal begär Anden eller per CPU.</span><span class="sxs-lookup"><span data-stu-id="c7a8f-114">429 response will represent reaching quota limit either by number of requests or by CPU.</span></span> <span data-ttu-id="c7a8f-115">Svars texten för 429 anger också tiden tills kvoten förnyas.</span><span class="sxs-lookup"><span data-stu-id="c7a8f-115">The 429 response body will also indicate the time until the quota is renewed.</span></span> 
+<span data-ttu-id="5a2c7-109">[Avancerad jakt](advanced-hunting-overview.md) är ett hot-jakt-verktyg som använder [särskilt utformade frågor](advanced-hunting-query-language.md) för att undersöka de senaste 30 dagarna av händelse data i Microsoft 365 Defender.</span><span class="sxs-lookup"><span data-stu-id="5a2c7-109">[Advanced hunting](advanced-hunting-overview.md) is a threat-hunting tool that uses [specially constructed queries](advanced-hunting-query-language.md) to examine the past 30 days of event data in Microsoft 365 Defender.</span></span> <span data-ttu-id="5a2c7-110">Du kan använda avancerade jakt frågor för att kontrol lera ovanlig aktivitet, upptäcka möjliga hot och till och med reagera på attacker.</span><span class="sxs-lookup"><span data-stu-id="5a2c7-110">You can use advanced hunting queries to inspect unusual activity, detect possible threats, and even respond to attacks.</span></span> <span data-ttu-id="5a2c7-111">Med Advanced jakt API kan du programatically fråga efter händelse data.</span><span class="sxs-lookup"><span data-stu-id="5a2c7-111">The advanced hunting API allows you to programatically query event data.</span></span>
 
+## <a name="quotas-and-resource-allocation"></a><span data-ttu-id="5a2c7-112">Kvoter och resurstilldelning</span><span class="sxs-lookup"><span data-stu-id="5a2c7-112">Quotas and resource allocation</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c7a8f-116">Behörigheter</span><span class="sxs-lookup"><span data-stu-id="c7a8f-116">Permissions</span></span>
-<span data-ttu-id="c7a8f-117">En av följande behörigheter krävs för att kunna ringa detta API.</span><span class="sxs-lookup"><span data-stu-id="c7a8f-117">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="c7a8f-118">Om du vill veta mer, inklusive hur du väljer behörigheter, se [Microsoft 365 Defender API: er](api-access.md)</span><span class="sxs-lookup"><span data-stu-id="c7a8f-118">To learn more, including how to choose permissions, see [Access the Microsoft 365 Defender APIs](api-access.md)</span></span>
+<span data-ttu-id="5a2c7-113">Följande villkor gäller för alla frågor.</span><span class="sxs-lookup"><span data-stu-id="5a2c7-113">The following conditions relate to all queries.</span></span>
 
-<span data-ttu-id="c7a8f-119">Behörighets typ</span><span class="sxs-lookup"><span data-stu-id="c7a8f-119">Permission type</span></span> |   <span data-ttu-id="c7a8f-120">Tillåtelse</span><span class="sxs-lookup"><span data-stu-id="c7a8f-120">Permission</span></span>  |   <span data-ttu-id="c7a8f-121">Visnings namn för behörighet</span><span class="sxs-lookup"><span data-stu-id="c7a8f-121">Permission display name</span></span>
-:---|:---|:---
-<span data-ttu-id="c7a8f-122">Program</span><span class="sxs-lookup"><span data-stu-id="c7a8f-122">Application</span></span> |   <span data-ttu-id="c7a8f-123">AdvancedHunting. Read. all</span><span class="sxs-lookup"><span data-stu-id="c7a8f-123">AdvancedHunting.Read.All</span></span> |  <span data-ttu-id="c7a8f-124">"Kör avancerade frågor"</span><span class="sxs-lookup"><span data-stu-id="c7a8f-124">'Run advanced queries'</span></span>
-<span data-ttu-id="c7a8f-125">Delegerat (arbets-eller skol konto)</span><span class="sxs-lookup"><span data-stu-id="c7a8f-125">Delegated (work or school account)</span></span> | <span data-ttu-id="c7a8f-126">AdvancedHunting. Read</span><span class="sxs-lookup"><span data-stu-id="c7a8f-126">AdvancedHunting.Read</span></span> | <span data-ttu-id="c7a8f-127">"Kör avancerade frågor"</span><span class="sxs-lookup"><span data-stu-id="c7a8f-127">'Run advanced queries'</span></span>
+1. <span data-ttu-id="5a2c7-114">Frågor utforskar och returnerar data från de senaste 30 dagarna.</span><span class="sxs-lookup"><span data-stu-id="5a2c7-114">Queries explore and return data from the past 30 days.</span></span>
+2. <span data-ttu-id="5a2c7-115">Resultaten kan returnera upp till 100 000 rader.</span><span class="sxs-lookup"><span data-stu-id="5a2c7-115">Results can return up to 100,000 rows.</span></span>
+3. <span data-ttu-id="5a2c7-116">Du kan ringa upp till 10 samtal per minut per klient organisation.</span><span class="sxs-lookup"><span data-stu-id="5a2c7-116">You can make up to 10 calls per minute per tenant.</span></span>
+4. <span data-ttu-id="5a2c7-117">Du har 10 minuters kör tid per timme per klient organisation.</span><span class="sxs-lookup"><span data-stu-id="5a2c7-117">You have 10 minutes of running time per hour per tenant.</span></span>
+5. <span data-ttu-id="5a2c7-118">Du har fyra totala timmar med kör tid per klient organisation.</span><span class="sxs-lookup"><span data-stu-id="5a2c7-118">You have four total hours of running time day per tenant.</span></span>
+6. <span data-ttu-id="5a2c7-119">Om en enda begäran körs i mer än 10 minuter upphör den att fungera och ett fel meddelande returneras.</span><span class="sxs-lookup"><span data-stu-id="5a2c7-119">If a single request runs for more than 10 minutes, it will time out and return an error.</span></span>
+7. <span data-ttu-id="5a2c7-120">En `429` http-svarskod visar att du har nått en kvot, antingen av antalet begär Anden som skickats eller via utsatt tid för drift.</span><span class="sxs-lookup"><span data-stu-id="5a2c7-120">A `429` HTTP response code indicates that you've reached a quota, either by number of requests sent, or by allotted running time.</span></span> <span data-ttu-id="5a2c7-121">Svars texten inkluderar tiden tills den kvot du nådde återställs.</span><span class="sxs-lookup"><span data-stu-id="5a2c7-121">The response body will include the time until the quota you reached will be reset.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="5a2c7-122">Behörigheter</span><span class="sxs-lookup"><span data-stu-id="5a2c7-122">Permissions</span></span>
+
+<span data-ttu-id="5a2c7-123">En av följande behörigheter krävs för att kunna ringa det avancerade jakt-API: t.</span><span class="sxs-lookup"><span data-stu-id="5a2c7-123">One of the following permissions is required to call the advanced hunting API.</span></span> <span data-ttu-id="5a2c7-124">Om du vill veta mer, inklusive hur du väljer behörigheter, läser du [gå till Microsoft 365 Defender-skydds-API: erna](api-access.md)</span><span class="sxs-lookup"><span data-stu-id="5a2c7-124">To learn more, including how to choose permissions, see [Access the Microsoft 365 Defender Protection APIs](api-access.md)</span></span>
+
+<span data-ttu-id="5a2c7-125">Behörighets typ</span><span class="sxs-lookup"><span data-stu-id="5a2c7-125">Permission type</span></span> | <span data-ttu-id="5a2c7-126">Tillåtelse</span><span class="sxs-lookup"><span data-stu-id="5a2c7-126">Permission</span></span> | <span data-ttu-id="5a2c7-127">Visnings namn för behörighet</span><span class="sxs-lookup"><span data-stu-id="5a2c7-127">Permission display name</span></span>
+-|-|-
+<span data-ttu-id="5a2c7-128">Program</span><span class="sxs-lookup"><span data-stu-id="5a2c7-128">Application</span></span> | <span data-ttu-id="5a2c7-129">AdvancedHunting. Read. all</span><span class="sxs-lookup"><span data-stu-id="5a2c7-129">AdvancedHunting.Read.All</span></span> | <span data-ttu-id="5a2c7-130">Kör avancerade frågor</span><span class="sxs-lookup"><span data-stu-id="5a2c7-130">Run advanced queries</span></span>
+<span data-ttu-id="5a2c7-131">Delegerat (arbets-eller skol konto)</span><span class="sxs-lookup"><span data-stu-id="5a2c7-131">Delegated (work or school account)</span></span> | <span data-ttu-id="5a2c7-132">AdvancedHunting. Read</span><span class="sxs-lookup"><span data-stu-id="5a2c7-132">AdvancedHunting.Read</span></span> | <span data-ttu-id="5a2c7-133">Kör avancerade frågor</span><span class="sxs-lookup"><span data-stu-id="5a2c7-133">Run advanced queries</span></span>
 
 >[!Note]
-> <span data-ttu-id="c7a8f-128">När du erhåller ett token med användar uppgifter:</span><span class="sxs-lookup"><span data-stu-id="c7a8f-128">When obtaining a token using user credentials:</span></span>
->- <span data-ttu-id="c7a8f-129">Användaren måste ha AD-rollen "Visa data"</span><span class="sxs-lookup"><span data-stu-id="c7a8f-129">The user needs to have 'View Data' AD role</span></span>
->- <span data-ttu-id="c7a8f-130">Användaren måste ha åtkomst till enheten baserat på Inställningar för enhets grupp.</span><span class="sxs-lookup"><span data-stu-id="c7a8f-130">The user needs to have access to the device, based on device group settings.</span></span>
+> <span data-ttu-id="5a2c7-134">När du erhåller ett token med användar uppgifter:</span><span class="sxs-lookup"><span data-stu-id="5a2c7-134">When obtaining a token using user credentials:</span></span>
+>
+>- <span data-ttu-id="5a2c7-135">Användaren måste ha AD-rollen "Visa data"</span><span class="sxs-lookup"><span data-stu-id="5a2c7-135">The user needs to have the 'View Data' AD role</span></span>
+>- <span data-ttu-id="5a2c7-136">Användaren måste ha åtkomst till enheten baserat på Inställningar för enhets grupp.</span><span class="sxs-lookup"><span data-stu-id="5a2c7-136">The user needs to have access to the device, based on device group settings.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="c7a8f-131">HTTP-begäran</span><span class="sxs-lookup"><span data-stu-id="c7a8f-131">HTTP request</span></span>
-```
+## <a name="http-request"></a><span data-ttu-id="5a2c7-137">HTTP-begäran</span><span class="sxs-lookup"><span data-stu-id="5a2c7-137">HTTP request</span></span>
+
+```HTTP
 POST https://api.security.microsoft.com/api/advancedhunting/run
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c7a8f-132">Begärandehuvuden</span><span class="sxs-lookup"><span data-stu-id="c7a8f-132">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="5a2c7-138">Begärandehuvuden</span><span class="sxs-lookup"><span data-stu-id="5a2c7-138">Request headers</span></span>
 
-<span data-ttu-id="c7a8f-133">Meddelande</span><span class="sxs-lookup"><span data-stu-id="c7a8f-133">Header</span></span> | <span data-ttu-id="c7a8f-134">Värde</span><span class="sxs-lookup"><span data-stu-id="c7a8f-134">Value</span></span> 
-:---|:---
-<span data-ttu-id="c7a8f-135">Bemyndigande</span><span class="sxs-lookup"><span data-stu-id="c7a8f-135">Authorization</span></span> | <span data-ttu-id="c7a8f-136">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="c7a8f-136">Bearer {token}.</span></span> <span data-ttu-id="c7a8f-137">**Obligatoriskt**.</span><span class="sxs-lookup"><span data-stu-id="c7a8f-137">**Required**.</span></span>
-<span data-ttu-id="c7a8f-138">Innehålls typ</span><span class="sxs-lookup"><span data-stu-id="c7a8f-138">Content-Type</span></span>    | <span data-ttu-id="c7a8f-139">program/JSON</span><span class="sxs-lookup"><span data-stu-id="c7a8f-139">application/json</span></span>
+<span data-ttu-id="5a2c7-139">Meddelande</span><span class="sxs-lookup"><span data-stu-id="5a2c7-139">Header</span></span> | <span data-ttu-id="5a2c7-140">Value</span><span class="sxs-lookup"><span data-stu-id="5a2c7-140">Value</span></span>
+-|-
+<span data-ttu-id="5a2c7-141">Bemyndigande</span><span class="sxs-lookup"><span data-stu-id="5a2c7-141">Authorization</span></span> | <span data-ttu-id="5a2c7-142">Bevarad {token} **Obs!**</span><span class="sxs-lookup"><span data-stu-id="5a2c7-142">Bearer {token} **Note: required**</span></span>
+<span data-ttu-id="5a2c7-143">Innehålls typ</span><span class="sxs-lookup"><span data-stu-id="5a2c7-143">Content-Type</span></span> | <span data-ttu-id="5a2c7-144">program/JSON</span><span class="sxs-lookup"><span data-stu-id="5a2c7-144">application/json</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="c7a8f-140">Brödtext</span><span class="sxs-lookup"><span data-stu-id="c7a8f-140">Request body</span></span>
-<span data-ttu-id="c7a8f-141">Ange ett JSON-objekt med följande parametrar i den efterfrågade texten:</span><span class="sxs-lookup"><span data-stu-id="c7a8f-141">In the request body, supply a JSON object with the following parameters:</span></span>
+## <a name="request-body"></a><span data-ttu-id="5a2c7-145">Brödtext</span><span class="sxs-lookup"><span data-stu-id="5a2c7-145">Request body</span></span>
 
-<span data-ttu-id="c7a8f-142">Indataparametern</span><span class="sxs-lookup"><span data-stu-id="c7a8f-142">Parameter</span></span> | <span data-ttu-id="c7a8f-143">Skriv</span><span class="sxs-lookup"><span data-stu-id="c7a8f-143">Type</span></span>    | <span data-ttu-id="c7a8f-144">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="c7a8f-144">Description</span></span>
-:---|:---|:---
-<span data-ttu-id="c7a8f-145">Frågeserver</span><span class="sxs-lookup"><span data-stu-id="c7a8f-145">Query</span></span> | <span data-ttu-id="c7a8f-146">Text</span><span class="sxs-lookup"><span data-stu-id="c7a8f-146">Text</span></span> |  <span data-ttu-id="c7a8f-147">Frågan att köra.</span><span class="sxs-lookup"><span data-stu-id="c7a8f-147">The query to run.</span></span> <span data-ttu-id="c7a8f-148">**Obligatoriskt**.</span><span class="sxs-lookup"><span data-stu-id="c7a8f-148">**Required**.</span></span>
+<span data-ttu-id="5a2c7-146">Ange ett JSON-objekt med följande parametrar i den efterfrågade texten:</span><span class="sxs-lookup"><span data-stu-id="5a2c7-146">In the request body, supply a JSON object with the following parameters:</span></span>
 
-## <a name="response"></a><span data-ttu-id="c7a8f-149">Interimssvar</span><span class="sxs-lookup"><span data-stu-id="c7a8f-149">Response</span></span>
-<span data-ttu-id="c7a8f-150">Om det lyckas returnerar den här metoden 200 OK och _QueryResponse_ -objekt i svars texten.</span><span class="sxs-lookup"><span data-stu-id="c7a8f-150">If successful, this method returns 200 OK, and _QueryResponse_ object in the response body.</span></span> <br><br>
+<span data-ttu-id="5a2c7-147">Indataparametern</span><span class="sxs-lookup"><span data-stu-id="5a2c7-147">Parameter</span></span> | <span data-ttu-id="5a2c7-148">Type (Typ)</span><span class="sxs-lookup"><span data-stu-id="5a2c7-148">Type</span></span> | <span data-ttu-id="5a2c7-149">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="5a2c7-149">Description</span></span>
+-|-|-
+<span data-ttu-id="5a2c7-150">Frågeserver</span><span class="sxs-lookup"><span data-stu-id="5a2c7-150">Query</span></span> | <span data-ttu-id="5a2c7-151">Text</span><span class="sxs-lookup"><span data-stu-id="5a2c7-151">Text</span></span> | <span data-ttu-id="5a2c7-152">Frågan att köra.</span><span class="sxs-lookup"><span data-stu-id="5a2c7-152">The query to run.</span></span> <span data-ttu-id="5a2c7-153">**Obs!**</span><span class="sxs-lookup"><span data-stu-id="5a2c7-153">**Note: required**</span></span>
 
-<span data-ttu-id="c7a8f-151">Response-objektet är uppdelat till 3 delar (egenskaper):</span><span class="sxs-lookup"><span data-stu-id="c7a8f-151">The response object is divided to 3 parts (properties):</span></span><br>
-1) <span data-ttu-id="c7a8f-152">```Stats``` -Fråga prestanda statistik.</span><span class="sxs-lookup"><span data-stu-id="c7a8f-152">```Stats``` - Query performance statistics.</span></span><br>
-2) <span data-ttu-id="c7a8f-153">```Schema``` -Schemat för svaret, en lista över Name-Type par för varje kolumn.</span><span class="sxs-lookup"><span data-stu-id="c7a8f-153">```Schema``` - The schema of the response, a list of Name-Type pairs for each column.</span></span> <br>
-3) <span data-ttu-id="c7a8f-154">```Results``` – En lista över avancerade jakt händelser.</span><span class="sxs-lookup"><span data-stu-id="c7a8f-154">```Results``` - A list of Advanced Hunting events.</span></span>
+## <a name="response"></a><span data-ttu-id="5a2c7-154">Interimssvar</span><span class="sxs-lookup"><span data-stu-id="5a2c7-154">Response</span></span>
 
-## <a name="example"></a><span data-ttu-id="c7a8f-155">Exempel</span><span class="sxs-lookup"><span data-stu-id="c7a8f-155">Example</span></span>
+<span data-ttu-id="5a2c7-155">Om det lyckas returneras den här metoden `200 OK` och ett _QueryResponse_ -objekt i svars texten.</span><span class="sxs-lookup"><span data-stu-id="5a2c7-155">If successful, this method will return `200 OK`, and a _QueryResponse_ object in the response body.</span></span>
 
-<span data-ttu-id="c7a8f-156">Ställning</span><span class="sxs-lookup"><span data-stu-id="c7a8f-156">Request</span></span>
+<span data-ttu-id="5a2c7-156">Response-objektet innehåller tre högsta nivå egenskaper:</span><span class="sxs-lookup"><span data-stu-id="5a2c7-156">The response object contains three top-level properties:</span></span>
 
-<span data-ttu-id="c7a8f-157">Här är ett exempel på begäran.</span><span class="sxs-lookup"><span data-stu-id="c7a8f-157">Here is an example of the request.</span></span>
+1. <span data-ttu-id="5a2c7-157">Statistik – en ord lista med prestanda statistik för frågor.</span><span class="sxs-lookup"><span data-stu-id="5a2c7-157">Stats - A dictionary of query performance statistics.</span></span>
+2. <span data-ttu-id="5a2c7-158">Schema – schemat för svaret, en lista över Name-Type par för varje kolumn.</span><span class="sxs-lookup"><span data-stu-id="5a2c7-158">Schema - The schema of the response, a list of Name-Type pairs for each column.</span></span>
+3. <span data-ttu-id="5a2c7-159">Resultat – en lista över avancerade jakt händelser.</span><span class="sxs-lookup"><span data-stu-id="5a2c7-159">Results - A list of advanced hunting events.</span></span>
 
+## <a name="example"></a><span data-ttu-id="5a2c7-160">Exempel</span><span class="sxs-lookup"><span data-stu-id="5a2c7-160">Example</span></span>
+
+<span data-ttu-id="5a2c7-161">I följande exempel skickar en användare frågan nedan och tar emot ett API-svarsmeddelande som innehåller `Stats` , `Schema` , och `Results` .</span><span class="sxs-lookup"><span data-stu-id="5a2c7-161">In the following example, a user sends the query below and receives an API response object containing `Stats`, `Schema`, and `Results`.</span></span>
+
+### <a name="query"></a><span data-ttu-id="5a2c7-162">Frågeserver</span><span class="sxs-lookup"><span data-stu-id="5a2c7-162">Query</span></span>
 
 ```json
 {
@@ -99,10 +110,7 @@ POST https://api.security.microsoft.com/api/advancedhunting/run
 
 ```
 
-<span data-ttu-id="c7a8f-158">Interimssvar</span><span class="sxs-lookup"><span data-stu-id="c7a8f-158">Response</span></span>
-
-<span data-ttu-id="c7a8f-159">Här är ett exempel på svaret.</span><span class="sxs-lookup"><span data-stu-id="c7a8f-159">Here is an example of the response.</span></span>
-
+### <a name="response-object"></a><span data-ttu-id="5a2c7-163">Response-objekt</span><span class="sxs-lookup"><span data-stu-id="5a2c7-163">Response object</span></span>
 
 ```json
 {
@@ -164,8 +172,11 @@ POST https://api.security.microsoft.com/api/advancedhunting/run
         }
     ]
 }
-
 ```
 
-## <a name="related-topic"></a><span data-ttu-id="c7a8f-160">Närliggande ämne</span><span class="sxs-lookup"><span data-stu-id="c7a8f-160">Related topic</span></span>
-- [<span data-ttu-id="c7a8f-161">Gå till API för Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="c7a8f-161">Access the Microsoft 365 Defender APIs</span></span>](api-access.md)
+## <a name="related-articles"></a><span data-ttu-id="5a2c7-164">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="5a2c7-164">Related articles</span></span>
+
+- [<span data-ttu-id="5a2c7-165">Gå till API för Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="5a2c7-165">Access the Microsoft 365 Defender APIs</span></span>](api-access.md)
+- [<span data-ttu-id="5a2c7-166">Läs mer om API-begränsningar och licensiering</span><span class="sxs-lookup"><span data-stu-id="5a2c7-166">Learn about API limits and licensing</span></span>](api-terms.md)
+- [<span data-ttu-id="5a2c7-167">Förstå felkoder</span><span class="sxs-lookup"><span data-stu-id="5a2c7-167">Understand error codes</span></span>](api-error-codes.md)
+- [<span data-ttu-id="5a2c7-168">Översikt över avancerad jakt</span><span class="sxs-lookup"><span data-stu-id="5a2c7-168">Advanced hunting overview</span></span>](advanced-hunting-overview.md)

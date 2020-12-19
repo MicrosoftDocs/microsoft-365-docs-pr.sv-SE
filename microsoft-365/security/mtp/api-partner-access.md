@@ -1,6 +1,6 @@
 ---
 title: 'Partner åtkomst via Microsoft 365 Defender API: er'
-description: Lär dig hur du skapar ett AAD-program för att få programmatisk åtkomst till Microsoft 365 Defender för dina kunders räkning
+description: Lär dig hur du skapar en app för att få programmatisk åtkomst till Microsoft 365 Defender åt dina användare.
 keywords: partner, Access, API, multi-klient, medgivande, åtkomsttoken, app
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,235 +19,278 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: eb40d5d2d82f57be225515ad0aa566038397bbbd
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 5de113c8f8419b3af2a287bd7ba7e41dc06b4121
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844990"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719446"
 ---
-# <a name="partner-access-through-microsoft-365-defender-apis"></a><span data-ttu-id="d78e5-104">Partner åtkomst via Microsoft 365 Defender API: er</span><span class="sxs-lookup"><span data-stu-id="d78e5-104">Partner access through Microsoft 365 Defender APIs</span></span>
+# <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a><span data-ttu-id="9a6ac-104">Skapa en app med partner åtkomst till Microsoft 365 Defender API: er</span><span class="sxs-lookup"><span data-stu-id="9a6ac-104">Create an app with partner access to Microsoft 365 Defender APIs</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+<span data-ttu-id="9a6ac-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="9a6ac-105">**Applies to:**</span></span>
 
-<span data-ttu-id="d78e5-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="d78e5-105">**Applies to:**</span></span>
-- <span data-ttu-id="d78e5-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="d78e5-106">Microsoft 365 Defender</span></span>
+- <span data-ttu-id="9a6ac-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="9a6ac-106">Microsoft 365 Defender</span></span>
 
->[!IMPORTANT] 
-><span data-ttu-id="d78e5-107">Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs.</span><span class="sxs-lookup"><span data-stu-id="d78e5-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="d78e5-108">Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.</span><span class="sxs-lookup"><span data-stu-id="d78e5-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="9a6ac-107">Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="9a6ac-108">Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
 
+<span data-ttu-id="9a6ac-109">På den här sidan beskrivs hur du skapar ett Azure Active Directory-program som har programmatisk åtkomst till Microsoft 365 Defender för användare i flera klient organisationer.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-109">This page describes how to create an Azure Active Directory app that has programmatic access to Microsoft 365 Defender, on behalf of users across multiple tenants.</span></span> <span data-ttu-id="9a6ac-110">Flera klient program är användbara för att betjäna stora användar grupper.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-110">Multi-tenant apps are useful for serving large groups of users.</span></span>
 
-<span data-ttu-id="d78e5-109">På den här sidan beskrivs hur du skapar ett AAD-program för att få programmatisk åtkomst till Microsoft 365 Defender åt dina kunder.</span><span class="sxs-lookup"><span data-stu-id="d78e5-109">This page describes how to create an AAD application to get programmatic access to Microsoft 365 Defender on behalf of your customers.</span></span>
+<span data-ttu-id="9a6ac-111">Om du behöver programmatisk åtkomst till Microsoft 365 Defender för en enskild användare läser du [skapa en app för att få åtkomst till microsoft 365 Defender API: er för en användares räkning](api-create-app-user-context.md).</span><span class="sxs-lookup"><span data-stu-id="9a6ac-111">If you need programmatic access to Microsoft 365 Defender on behalf of a single user, see [Create an app to access Microsoft 365 Defender APIs on behalf of a user](api-create-app-user-context.md).</span></span> <span data-ttu-id="9a6ac-112">Om du behöver åtkomst utan någon användare uttryckligen (om du till exempel skriver en bakgrunds program eller en daemon) läser du [skapa en app för att få åtkomst till Microsoft 365 Defender utan en användare](api-create-app-web.md).</span><span class="sxs-lookup"><span data-stu-id="9a6ac-112">If you need access without a user explicitly defined (for example, if you're writing a background app or daemon), see [Create an app to access Microsoft 365 Defender without a user](api-create-app-web.md).</span></span> <span data-ttu-id="9a6ac-113">Om du inte är säker på vilken typ av åtkomst du behöver läser du [komma igång](api-access.md).</span><span class="sxs-lookup"><span data-stu-id="9a6ac-113">If you're not sure which kind of access you need, see [Get started](api-access.md).</span></span>
 
-<span data-ttu-id="d78e5-110">Microsoft 365 Defender visar mycket av dess data och åtgärder via en uppsättning API: er.</span><span class="sxs-lookup"><span data-stu-id="d78e5-110">Microsoft 365 Defender exposes much of its data and actions through a set of programmatic APIs.</span></span> <span data-ttu-id="d78e5-111">Dessa API: er hjälper dig att automatisera arbets flöden och förnyas baserat på Microsoft 365 Defender-funktioner.</span><span class="sxs-lookup"><span data-stu-id="d78e5-111">Those APIs will help you automate work flows and innovate based on Microsoft 365 Defender capabilities.</span></span> <span data-ttu-id="d78e5-112">För API-åtkomst krävs autentisering med OAuth 2.0.</span><span class="sxs-lookup"><span data-stu-id="d78e5-112">The API access requires OAuth2.0 authentication.</span></span> <span data-ttu-id="d78e5-113">Mer information finns i [verifierings kod flödet för OAuth-2,0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).</span><span class="sxs-lookup"><span data-stu-id="d78e5-113">For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).</span></span>
+<span data-ttu-id="9a6ac-114">Microsoft 365 Defender visar mycket av dess data och åtgärder via en uppsättning API: er.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-114">Microsoft 365 Defender exposes much of its data and actions through a set of programmatic APIs.</span></span> <span data-ttu-id="9a6ac-115">Dessa API: er hjälper dig att automatisera arbets flöden och utnyttja Microsoft 365 Defender-funktionerna.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-115">Those APIs help you automate workflows and make use of Microsoft 365 Defender's capabilities.</span></span> <span data-ttu-id="9a6ac-116">Denna API-åtkomst kräver autentisering med OAuth 2.0.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-116">This API access requires OAuth2.0 authentication.</span></span> <span data-ttu-id="9a6ac-117">Mer information finns i [verifierings kod flödet för OAuth-2,0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).</span><span class="sxs-lookup"><span data-stu-id="9a6ac-117">For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).</span></span>
 
-<span data-ttu-id="d78e5-114">I allmänhet måste du utföra följande steg för att använda API:</span><span class="sxs-lookup"><span data-stu-id="d78e5-114">In general, you’ll need to take the following steps to use the APIs:</span></span>
-- <span data-ttu-id="d78e5-115">Skapa ett AAD **-program med flera innehavare** .</span><span class="sxs-lookup"><span data-stu-id="d78e5-115">Create a **multi-tenant** AAD application.</span></span>
-- <span data-ttu-id="d78e5-116">Få godkännande (godkänt) av din kund administratör för ditt program för att få åtkomst till Microsoft 365 Defender-resurser som behövs.</span><span class="sxs-lookup"><span data-stu-id="d78e5-116">Get authorized (consent) by your customer administrator for your application to access Microsoft 365 Defender resources it needs.</span></span>
-- <span data-ttu-id="d78e5-117">Skaffa en åtkomsttoken med det här programmet.</span><span class="sxs-lookup"><span data-stu-id="d78e5-117">Get an access token using this application.</span></span>
-- <span data-ttu-id="d78e5-118">Använd token för att få åtkomst till Microsoft 365 Defender API.</span><span class="sxs-lookup"><span data-stu-id="d78e5-118">Use the token to access Microsoft 365 Defender API.</span></span>
+<span data-ttu-id="9a6ac-118">I allmänhet måste du göra följande för att använda dessa API:</span><span class="sxs-lookup"><span data-stu-id="9a6ac-118">In general, you'll need to take the following steps to use these APIs:</span></span>
 
-<span data-ttu-id="d78e5-119">Här följer instruktioner för hur du skapar ett AAD-program, hämtar en åtkomsttoken till Microsoft 365 Defender och validerar token.</span><span class="sxs-lookup"><span data-stu-id="d78e5-119">The following steps with guide you how to create an AAD application, get an access token to Microsoft 365 Defender and validate the token.</span></span>
+- <span data-ttu-id="9a6ac-119">Skapa ett Azure Active Directory (Azure AD)-program.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-119">Create an Azure Active Directory (Azure AD) application.</span></span>
+- <span data-ttu-id="9a6ac-120">Skaffa en åtkomsttoken med det här programmet.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-120">Get an access token using this application.</span></span>
+- <span data-ttu-id="9a6ac-121">Använd token för att få åtkomst till Microsoft 365 Defender API.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-121">Use the token to access Microsoft 365 Defender API.</span></span>
 
-## <a name="create-the-multi-tenant-app"></a><span data-ttu-id="d78e5-120">Skapa appen för flera innehavare</span><span class="sxs-lookup"><span data-stu-id="d78e5-120">Create the multi-tenant app</span></span>
+<span data-ttu-id="9a6ac-122">Eftersom den här appen är en multi-klient organisation behöver du också [Administratörs medgivande](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant) från varje klient organisation åt sina användare.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-122">Since this app is multi-tenant, you'll also need [admin consent](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant) from each tenant on behalf of its users.</span></span>
 
-1. <span data-ttu-id="d78e5-121">Logga in på din [Azure-klient organisation](https://portal.azure.com) med en användare som har rollen **Global administratör** .</span><span class="sxs-lookup"><span data-stu-id="d78e5-121">Log on to your [Azure tenant](https://portal.azure.com) with user that has **Global Administrator** role.</span></span>
+<span data-ttu-id="9a6ac-123">I den här artikeln förklarar vi hur du:</span><span class="sxs-lookup"><span data-stu-id="9a6ac-123">This article explains how to:</span></span>
 
-2. <span data-ttu-id="d78e5-122">Navigera till **Azure Active Directory** -  >  **programregistreringar**  >  **ny registrering**.</span><span class="sxs-lookup"><span data-stu-id="d78e5-122">Navigate to **Azure Active Directory** > **App registrations** > **New registration**.</span></span> 
+- <span data-ttu-id="9a6ac-124">Skapa ett Azure AD-program **med flera innehavare**</span><span class="sxs-lookup"><span data-stu-id="9a6ac-124">Create a **multi-tenant** Azure AD application</span></span>
+- <span data-ttu-id="9a6ac-125">Få ett godkänt medgivande från din användar administratör för din ansökan för att få åtkomst till Microsoft 365 Defender-resurserna som behövs.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-125">Get authorized consent from your user administrator for your application to access the Microsoft 365 Defender that resources it needs.</span></span>
+- <span data-ttu-id="9a6ac-126">Skaffa en åtkomsttoken till Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="9a6ac-126">Get an access token to Microsoft 365 Defender</span></span>
+- <span data-ttu-id="9a6ac-127">Validera token</span><span class="sxs-lookup"><span data-stu-id="9a6ac-127">Validate the token</span></span>
+
+<span data-ttu-id="9a6ac-128">Microsoft 365 Defender visar mycket av dess data och åtgärder via en uppsättning API: er.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-128">Microsoft 365 Defender exposes much of its data and actions through a set of programmatic APIs.</span></span> <span data-ttu-id="9a6ac-129">Dessa API: er hjälper dig att automatisera arbets flöden och förnyas baserat på Microsoft 365 Defender-funktioner.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-129">Those APIs will help you automate work flows and innovate based on Microsoft 365 Defender capabilities.</span></span> <span data-ttu-id="9a6ac-130">För API-åtkomst krävs autentisering med OAuth 2.0.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-130">The API access requires OAuth2.0 authentication.</span></span> <span data-ttu-id="9a6ac-131">Mer information finns i [verifierings kod flödet för OAuth-2,0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).</span><span class="sxs-lookup"><span data-stu-id="9a6ac-131">For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).</span></span>
+
+<span data-ttu-id="9a6ac-132">I allmänhet måste du utföra följande steg för att använda API:</span><span class="sxs-lookup"><span data-stu-id="9a6ac-132">In general, you’ll need to take the following steps to use the APIs:</span></span>
+
+- <span data-ttu-id="9a6ac-133">Skapa ett Azure AD-program **med flera innehavare** .</span><span class="sxs-lookup"><span data-stu-id="9a6ac-133">Create a **multi-tenant** Azure AD application.</span></span>
+- <span data-ttu-id="9a6ac-134">Få godkännande (godkänt) av din användar administratör för ditt program för att få åtkomst till Microsoft 365 Defender-resurser som behövs.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-134">Get authorized (consent) by your user administrator for your application to access Microsoft 365 Defender resources it needs.</span></span>
+- <span data-ttu-id="9a6ac-135">Skaffa en åtkomsttoken med det här programmet.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-135">Get an access token using this application.</span></span>
+- <span data-ttu-id="9a6ac-136">Använd token för att få åtkomst till Microsoft 365 Defender API.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-136">Use the token to access Microsoft 365 Defender API.</span></span>
+
+<span data-ttu-id="9a6ac-137">Följ de här anvisningarna för att skapa ett Azure AD-program med flera innehavare, skaffa en åtkomsttoken till Microsoft 365 Defender och validera token.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-137">The following steps with guide you how to create a multi-tenant Azure AD application, get an access token to Microsoft 365 Defender and validate the token.</span></span>
+
+## <a name="create-the-multi-tenant-app"></a><span data-ttu-id="9a6ac-138">Skapa appen för flera innehavare</span><span class="sxs-lookup"><span data-stu-id="9a6ac-138">Create the multi-tenant app</span></span>
+
+1. <span data-ttu-id="9a6ac-139">Logga in på [Azure](https://portal.azure.com) som en användare med rollen **Global administratör** .</span><span class="sxs-lookup"><span data-stu-id="9a6ac-139">Sign in to [Azure](https://portal.azure.com) as a user with the **Global Administrator** role.</span></span>
+
+2. <span data-ttu-id="9a6ac-140">Navigera till **Azure Active Directory**-  >  **programregistreringar**  >  **ny registrering**.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-140">Navigate to **Azure Active Directory** > **App registrations** > **New registration**.</span></span>
 
    ![Bild av Microsoft Azure och navigering till program registrering](../../media/atp-azure-new-app2.png)
 
-3. <span data-ttu-id="d78e5-124">I registrerings formuläret:</span><span class="sxs-lookup"><span data-stu-id="d78e5-124">In the registration form:</span></span>
+3. <span data-ttu-id="9a6ac-142">I registrerings formuläret:</span><span class="sxs-lookup"><span data-stu-id="9a6ac-142">In the registration form:</span></span>
 
-    - <span data-ttu-id="d78e5-125">Välj ett namn för programmet.</span><span class="sxs-lookup"><span data-stu-id="d78e5-125">Choose a name for your application.</span></span>
+   - <span data-ttu-id="9a6ac-143">Välj ett namn för programmet.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-143">Choose a name for your application.</span></span>
+   - <span data-ttu-id="9a6ac-144">Från **konto typer som stöds** väljer du **konton i valfri organisations katalog (vilken Azure AD-katalog)-multiinnehavare**.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-144">From **Supported account types**, select **Accounts in any organizational directory (Any Azure AD directory) - Multitenant**.</span></span>
+   - <span data-ttu-id="9a6ac-145">Fyll i avsnittet **OMDIRIGERA URI** .</span><span class="sxs-lookup"><span data-stu-id="9a6ac-145">Fill out the **Redirect URI** section.</span></span> <span data-ttu-id="9a6ac-146">Välj Skriv **webbplats** och ge omdirigerings-URI som **https://portal.azure.com** .</span><span class="sxs-lookup"><span data-stu-id="9a6ac-146">Select type **Web** and give the redirect URI as **https://portal.azure.com**.</span></span>
 
-    - <span data-ttu-id="d78e5-126">Konto typer som stöds-konton i valfri organisations katalog.</span><span class="sxs-lookup"><span data-stu-id="d78e5-126">Supported account types - accounts in any organizational directory.</span></span>
+   <span data-ttu-id="9a6ac-147">När du har fyllt i formuläret väljer du **Registrera**.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-147">After you're done filling out the form, select **Register**.</span></span>
 
-    - <span data-ttu-id="d78e5-127">Omdirigera URI-typ: webb, URI: https://portal.azure.com</span><span class="sxs-lookup"><span data-stu-id="d78e5-127">Redirect URI - type: Web, URI: https://portal.azure.com</span></span>
+   ![Bild av registret registrera ett ansöknings formulär](../..//media/atp-api-new-app-partner.png)
 
-    ![Bild av Microsoft Azure partner program registrering](../../media/atp-api-new-app-partner.png)
+4. <span data-ttu-id="9a6ac-149">På din program sida väljer du **API-behörigheter**  >  **Add permission**  >  **API min organisation använder** >, Skriv **Microsoft Threat Protection** och välj **Microsoft Threat Protection**.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-149">On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and select **Microsoft Threat Protection**.</span></span> <span data-ttu-id="9a6ac-150">Ditt program kan nu komma åt Microsoft 365 Defender.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-150">Your app can now access Microsoft 365 Defender.</span></span>
 
+   > [!TIP]
+   > <span data-ttu-id="9a6ac-151">*Microsoft Threat Protection* är ett tidigare namn för Microsoft 365 Defender och kommer inte att synas i den ursprungliga listan.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-151">*Microsoft Threat Protection* is a former name for Microsoft 365 Defender, and will not appear in the original list.</span></span> <span data-ttu-id="9a6ac-152">Du måste börja skriva dess namn i text rutan för att se det.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-152">You need to start writing its name in the text box to see it appear.</span></span>
 
-4. <span data-ttu-id="d78e5-129">Ge ditt program åtkomst till Microsoft 365 Defender och tilldela det den minsta behörighet som krävs för att slutföra integrationen.</span><span class="sxs-lookup"><span data-stu-id="d78e5-129">Allow your Application to access Microsoft 365 Defender and assign it with the minimal set of permissions required to complete the integration.</span></span>
+   ![Bild av API-behörighet](../../media/apis-in-my-org-tab.PNG)
 
-   - <span data-ttu-id="d78e5-130">På din program sida klickar du på **API-behörigheter**  >  **Add permission**  >  **API min organisation använder** > **Microsoft 365 Defender** och klickar på **Microsoft 365 Defender**.</span><span class="sxs-lookup"><span data-stu-id="d78e5-130">On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **Microsoft 365 Defender** and click on **Microsoft 365 Defender**.</span></span>
-
-   >[!NOTE]
-   ><span data-ttu-id="d78e5-131">Microsoft 365 Defender visas inte i den ursprungliga listan.</span><span class="sxs-lookup"><span data-stu-id="d78e5-131">Microsoft 365 Defender does not appear in the original list.</span></span> <span data-ttu-id="d78e5-132">Du måste börja skriva dess namn i text rutan för att se det.</span><span class="sxs-lookup"><span data-stu-id="d78e5-132">You need to start writing its name in the text box to see it appear.</span></span>
-
-   ![Bild av API-åtkomst och API-val](../../media/apis-in-my-org-tab.PNG)
-   
-   ### <a name="request-api-permissions"></a><span data-ttu-id="d78e5-134">Begära API-behörigheter</span><span class="sxs-lookup"><span data-stu-id="d78e5-134">Request API permissions</span></span>
-
-   <span data-ttu-id="d78e5-135">Ta reda på vilken behörighet du behöver genom att titta i avsnittet **behörigheter** i det API du är intresse rad av.</span><span class="sxs-lookup"><span data-stu-id="d78e5-135">To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.</span></span> 
-
-   <span data-ttu-id="d78e5-136">I följande exempel kommer vi att använda behörigheten **"Läs alla händelser"** :</span><span class="sxs-lookup"><span data-stu-id="d78e5-136">In the following example we will use **'Read all incidents'** permission:</span></span>
-
-   <span data-ttu-id="d78e5-137">Välj incidenter för **program behörigheter**  >  **. Läs alla** > Klicka på **Lägg till behörigheter**</span><span class="sxs-lookup"><span data-stu-id="d78e5-137">Choose **Application permissions** > **Incidents.Read.All** > Click on **Add permissions**</span></span>
+5. <span data-ttu-id="9a6ac-154">Välj **program behörigheter**.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-154">Select **Application permissions**.</span></span> <span data-ttu-id="9a6ac-155">Välj relevanta behörigheter för ditt scenario (till exempel **incident. Read. all**) och välj sedan **Add Permissions**.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-155">Choose the relevant permissions for your scenario (for example, **Incident.Read.All**), and then select **Add permissions**.</span></span>
 
    ![Bild av API-åtkomst och API-val](../../media/request-api-permissions.PNG)
 
+    > [!NOTE]
+    > <span data-ttu-id="9a6ac-157">Du måste välja relevanta behörigheter för scenariot.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-157">You need to select the relevant permissions for your scenario.</span></span> <span data-ttu-id="9a6ac-158">*Läs alla händelser* är bara ett exempel.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-158">*Read all incidents* is just an example.</span></span> <span data-ttu-id="9a6ac-159">Ta reda på vilken behörighet du behöver genom att titta i avsnittet **behörigheter** i det API som du vill ringa.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-159">To determine which permission you need, please look at the **Permissions** section in the API you want to call.</span></span>
+    >
+    > <span data-ttu-id="9a6ac-160">Om du till exempel vill [köra avancerade frågor](api-advanced-hunting.md)väljer du "kör avancerade frågor". Om du vill [isolera en enhet](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/isolate-machine)väljer du "isolera datorns tillstånd".</span><span class="sxs-lookup"><span data-stu-id="9a6ac-160">For instance, to [run advanced queries](api-advanced-hunting.md), select the 'Run advanced queries' permission; to [isolate a device](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/isolate-machine), select the 'Isolate machine' permission.</span></span>
 
-5. <span data-ttu-id="d78e5-139">Klicka på **bevilja medgivande**</span><span class="sxs-lookup"><span data-stu-id="d78e5-139">Click **Grant consent**</span></span>
-
-    >[!NOTE]
-    ><span data-ttu-id="d78e5-140">Varje gång du lägger till behörighet måste du klicka på **bevilja medgivande** för att den nya behörigheten ska börja gälla.</span><span class="sxs-lookup"><span data-stu-id="d78e5-140">Every time you add permission you must click on **Grant consent** for the new permission to take effect.</span></span>
+6. <span data-ttu-id="9a6ac-161">Välj **ge administratörs medgivande**.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-161">Select **Grant admin consent**.</span></span> <span data-ttu-id="9a6ac-162">Varje gång du lägger till en behörighet måste du välja **bevilja administratörs medgivande** för att det ska börja gälla.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-162">Every time you add a permission, you must select **Grant admin consent** for it to take effect.</span></span>
 
     ![Bild av beviljande behörigheter](../../media/grant-consent.PNG)
 
-6. <span data-ttu-id="d78e5-142">Lägg till en hemlighet i programmet.</span><span class="sxs-lookup"><span data-stu-id="d78e5-142">Add a secret to the application.</span></span>
+7. <span data-ttu-id="9a6ac-164">Om du vill lägga till en hemlighet i programmet väljer du **certifikat & hemligheter**, lägger till en beskrivning till hemligheten och väljer sedan **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-164">To add a secret to the application, select **Certificates & secrets**, add a description to the secret, then select **Add**.</span></span>
 
-    - <span data-ttu-id="d78e5-143">Klicka på **certifikat & hemligheter** , Lägg till en beskrivning till hemligheten och klicka på **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="d78e5-143">Click **Certificates & secrets** , add description to the secret and click **Add**.</span></span>
-
-    >[!IMPORTANT]
-    > <span data-ttu-id="d78e5-144">När du har valt **Lägg till** **kopierar du det genererade hemliga värdet**.</span><span class="sxs-lookup"><span data-stu-id="d78e5-144">After selecting **Add** , **copy the generated secret value**.</span></span> <span data-ttu-id="d78e5-145">Du kommer inte att kunna hämta efter att du har lämnat!</span><span class="sxs-lookup"><span data-stu-id="d78e5-145">You won't be able to retrieve after you leave!</span></span>
+    > [!TIP]
+    > <span data-ttu-id="9a6ac-165">När du har valt **Lägg till** väljer **du kopiera det genererade hemliga värdet**.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-165">After you select **Add**, select **copy the generated secret value**.</span></span> <span data-ttu-id="9a6ac-166">Du kommer inte att kunna hämta det hemliga värdet efter att du har lämnat.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-166">You won't be able to retrieve the secret value after you leave.</span></span>
 
     ![Bild av Create app-tangenten](../../media/webapp-create-key2.png)
 
-7. <span data-ttu-id="d78e5-147">Skriv in ditt program-ID:</span><span class="sxs-lookup"><span data-stu-id="d78e5-147">Write down your application ID:</span></span>
+8. <span data-ttu-id="9a6ac-168">Spela in ditt program-ID och klient-ID något säkert.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-168">Record your application ID and your tenant ID somewhere safe.</span></span> <span data-ttu-id="9a6ac-169">De visas under **Översikt** på din program sida.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-169">They're listed under **Overview** on your application page.</span></span>
 
-   - <span data-ttu-id="d78e5-148">Gå till **Översikt** och kopiera följande på program sidan:</span><span class="sxs-lookup"><span data-stu-id="d78e5-148">On your application page, go to **Overview** and copy the following:</span></span>
+   ![Bild av ID för skapat program](../../media/app-and-tenant-ids.png)
 
-   ![Bild av ID för skapat program](../../media/app-id.png)
+9. <span data-ttu-id="9a6ac-171">Lägg till programmet i användarens innehavare.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-171">Add the application to your user's tenant.</span></span>
 
-8. <span data-ttu-id="d78e5-150">Lägg till ansökan till kund innehavaren.</span><span class="sxs-lookup"><span data-stu-id="d78e5-150">Add the application to your customer's tenant.</span></span>
+   <span data-ttu-id="9a6ac-172">Eftersom ditt program interagerar med Microsoft 365 Defender åt användarna måste det godkännas för varje klient organisation som ska använda det.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-172">Since your application interacts with Microsoft 365 Defender on behalf of your users, it needs be approved for every tenant on which you intend to use it.</span></span>
 
-    <span data-ttu-id="d78e5-151">Du behöver programmet vara godkänt i varje kund innehavare för att du ska kunna använda det.</span><span class="sxs-lookup"><span data-stu-id="d78e5-151">You need your application to be approved in each customer tenant where you intend to use it.</span></span> <span data-ttu-id="d78e5-152">Detta beror på att ditt program interagerar med Microsoft 365 Defender-programmet åt din kund.</span><span class="sxs-lookup"><span data-stu-id="d78e5-152">This is because your application interacts with Microsoft 365 Defender application on behalf of your customer.</span></span>
+   <span data-ttu-id="9a6ac-173">En **Global administratör** från användarens innehavare måste visa medgivande länken och godkänna ditt program.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-173">A **Global Administrator** from your user's tenant needs to view the consent link and approve your application.</span></span>
 
-    <span data-ttu-id="d78e5-153">En användare med **Global administratör** från kundens klient organisation måste klicka på medgivande länken och godkänna programmet.</span><span class="sxs-lookup"><span data-stu-id="d78e5-153">A user with **Global Administrator** from your customer's tenant need to click the consent link and approve your application.</span></span>
+   <span data-ttu-id="9a6ac-174">Godkännande länken är av formen:</span><span class="sxs-lookup"><span data-stu-id="9a6ac-174">Consent link is of the form:</span></span>
 
-    <span data-ttu-id="d78e5-154">Godkännande länken är av formen:</span><span class="sxs-lookup"><span data-stu-id="d78e5-154">Consent link is of the form:</span></span>
+   ```HTTP
+   https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true
+   ```
 
-    ```
-    https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true
-    ```
+   <span data-ttu-id="9a6ac-175">Siffrorna `00000000-0000-0000-0000-000000000000` bör ersättas med ditt program-ID.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-175">The digits `00000000-0000-0000-0000-000000000000` should be replaced with your Application ID.</span></span>
 
-    <span data-ttu-id="d78e5-155">Där 00000000-0000-0000-0000-000000000000 ska ersättas med ditt program-ID</span><span class="sxs-lookup"><span data-stu-id="d78e5-155">Where 00000000-0000-0000-0000-000000000000 should be replaced with your Application ID</span></span>
+   <span data-ttu-id="9a6ac-176">När du har klickat på länken för godkännande loggar du in med den globala administratören för användarens klient organisation och godkänner programmet.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-176">After clicking on the consent link, sign in with the Global Administrator of the user's tenant and consent the application.</span></span>
 
-    <span data-ttu-id="d78e5-156">När du har klickat på länken för godkännande loggar du in på den globala administratören för kundens klient organisation och godkänner programmet.</span><span class="sxs-lookup"><span data-stu-id="d78e5-156">After clicking on the consent link, login with the Global Administrator of the customer's tenant and consent the application.</span></span>
+   ![Bild av godkännande](../../media/app-consent-partner.png)
 
-    ![Bild av godkännande](../../media/app-consent-partner.png)
+   <span data-ttu-id="9a6ac-178">Du måste också be din användare om sitt klient-ID.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-178">You'll also need to ask your user for their tenant ID.</span></span> <span data-ttu-id="9a6ac-179">Klient-ID är en av de identifierare som används för att hämta åtkomst-token.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-179">The tenant ID is one of the identifiers used to acquire access tokens.</span></span>
 
-    <span data-ttu-id="d78e5-158">Dessutom måste du be din kund om sitt klient-ID och spara det för framtida bruk när du hämtar token.</span><span class="sxs-lookup"><span data-stu-id="d78e5-158">In addition, you will need to ask your customer for their tenant ID and save it for future use when acquiring the token.</span></span>
+- <span data-ttu-id="9a6ac-180">**Åstadkomma!**</span><span class="sxs-lookup"><span data-stu-id="9a6ac-180">**Done!**</span></span> <span data-ttu-id="9a6ac-181">Du har registrerat ett program!</span><span class="sxs-lookup"><span data-stu-id="9a6ac-181">You've successfully registered an application!</span></span>
+- <span data-ttu-id="9a6ac-182">Se exemplen nedan för hämtning av token och verifiering.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-182">See examples below for token acquisition and validation.</span></span>
 
-- <span data-ttu-id="d78e5-159">**Åstadkomma!**</span><span class="sxs-lookup"><span data-stu-id="d78e5-159">**Done!**</span></span> <span data-ttu-id="d78e5-160">Du har registrerat ett program!</span><span class="sxs-lookup"><span data-stu-id="d78e5-160">You have successfully registered an application!</span></span> 
-- <span data-ttu-id="d78e5-161">Se exemplen nedan för hämtning av token och verifiering.</span><span class="sxs-lookup"><span data-stu-id="d78e5-161">See examples below for token acquisition and validation.</span></span>
+## <a name="get-an-access-token"></a><span data-ttu-id="9a6ac-183">Skaffa en åtkomsttoken</span><span class="sxs-lookup"><span data-stu-id="9a6ac-183">Get an access token</span></span>
 
-## <a name="get-an-access-token-examples"></a><span data-ttu-id="d78e5-162">Få ett exempel på en åtkomsttoken:</span><span class="sxs-lookup"><span data-stu-id="d78e5-162">Get an access token examples:</span></span>
+<span data-ttu-id="9a6ac-184">Mer information om Azure AD-token finns i [Azure AD själv studie kurs](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).</span><span class="sxs-lookup"><span data-stu-id="9a6ac-184">For more information on Azure AD tokens, see the [Azure AD tutorial](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).</span></span>
 
->[!NOTE]
-> <span data-ttu-id="d78e5-163">För att få till gång till din kunds räkning kan du använda kundens klient organisations-ID på följande token-hämtningar.</span><span class="sxs-lookup"><span data-stu-id="d78e5-163">To get access token on behalf of your customer, use the customer's tenant ID on the following token acquisitions.</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="9a6ac-185">Även om exemplen i det här avsnittet uppmanar dig att klistra in hemliga värden i test syfte bör du **aldrig hardcode hemligheter** i ett program som körs i produktion.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-185">Although the examples in this section encourage you to paste in secret values for testing purposes, you should **never hardcode secrets** into an application running in production.</span></span> <span data-ttu-id="9a6ac-186">En tredje part kan använda din hemlighet för att komma åt resurser.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-186">A third party could use your secret to access resources.</span></span> <span data-ttu-id="9a6ac-187">Du kan hålla dina programs hemligheter säkra genom att använda [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates).</span><span class="sxs-lookup"><span data-stu-id="9a6ac-187">You can help keep your app's secrets secure by using [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates).</span></span> <span data-ttu-id="9a6ac-188">Ett praktiskt exempel på hur du kan skydda din app finns i [Hantera hemligheter i dina serverprogram med Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/).</span><span class="sxs-lookup"><span data-stu-id="9a6ac-188">For a practical example of how you can protect your app, see [Manage secrets in your server apps with Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/).</span></span>
 
-<br><span data-ttu-id="d78e5-164">Mer information om AAD-token finns i [artikeln om AAD-vägledning](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)</span><span class="sxs-lookup"><span data-stu-id="d78e5-164">For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)</span></span>
+> [!TIP]
+> <span data-ttu-id="9a6ac-189">I följande exempel använder du en användares klient-ID för att testa att skriptet fungerar.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-189">In the following examples, use a user's tenant ID to test that the script is working.</span></span>
 
-### <a name="using-powershell"></a><span data-ttu-id="d78e5-165">Använda PowerShell</span><span class="sxs-lookup"><span data-stu-id="d78e5-165">Using PowerShell</span></span>
+### <a name="get-an-access-token-using-powershell"></a><span data-ttu-id="9a6ac-190">Skaffa en åtkomsttoken med PowerShell</span><span class="sxs-lookup"><span data-stu-id="9a6ac-190">Get an access token using PowerShell</span></span>
 
-```
-# That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
-# Paste below your Tenant ID, App ID and App Secret (App key).
+```PowerShell
+# This code gets the application context token and saves it to a file named "Latest-token.txt" under the current directory.
 
-$tenantId = '' ### Paste your tenant ID here
-$appId = '' ### Paste your Application ID here
-$appSecret = '' ### Paste your Application key here
+$tenantId = '' # Paste your directory (tenant) ID here
+$clientId = '' # Paste your application (client) ID here
+$appSecret = '' # Paste your own app secret here to test, then store it in a safe place!
 
 $resourceAppIdUri = 'https://api.security.microsoft.com'
-$oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
+$oAuthUri = "https://login.windows.net/$tenantId/oauth2/token"
+
 $authBody = [Ordered] @{
-    resource = "$resourceAppIdUri"
-    client_id = "$appId"
-    client_secret = "$appSecret"
+    resource = $resourceAppIdUri
+    client_id = $clientId
+    client_secret = $appSecret
     grant_type = 'client_credentials'
 }
+
 $authResponse = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $authBody -ErrorAction Stop
 $token = $authResponse.access_token
+
 Out-File -FilePath "./Latest-token.txt" -InputObject $token
+
 return $token
 ```
 
-### <a name="using-c"></a><span data-ttu-id="d78e5-166">Använda C#:</span><span class="sxs-lookup"><span data-stu-id="d78e5-166">Using C#:</span></span>
+### <a name="get-an-access-token-using-c"></a><span data-ttu-id="9a6ac-191">Skaffa en åtkomsttoken med C\#</span><span class="sxs-lookup"><span data-stu-id="9a6ac-191">Get an access token using C\#</span></span>
 
-><span data-ttu-id="d78e5-167">Koden nedan har testats med NuGet Microsoft. IdentityModel. clients. ActiveDirectory</span><span class="sxs-lookup"><span data-stu-id="d78e5-167">The below code was tested with Nuget Microsoft.IdentityModel.Clients.ActiveDirectory</span></span>
+> [!NOTE]
+> <span data-ttu-id="9a6ac-192">Följande kod har testats med NuGet Microsoft. IdentityModel. clients. ActiveDirectory 3.19.8.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-192">The following code was tested with Nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8.</span></span>
 
-- <span data-ttu-id="d78e5-168">Skapa ett nytt konsol program</span><span class="sxs-lookup"><span data-stu-id="d78e5-168">Create a new Console Application</span></span>
-- <span data-ttu-id="d78e5-169">Installera NuGet [Microsoft. IdentityModel. clients. ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)</span><span class="sxs-lookup"><span data-stu-id="d78e5-169">Install Nuget [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)</span></span>
-- <span data-ttu-id="d78e5-170">Lägg till nedan med</span><span class="sxs-lookup"><span data-stu-id="d78e5-170">Add the below using</span></span>
+1. <span data-ttu-id="9a6ac-193">Skapa ett nytt konsol program.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-193">Create a new console application.</span></span>
+1. <span data-ttu-id="9a6ac-194">Installera NuGet [Microsoft. IdentityModel. clients. ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).</span><span class="sxs-lookup"><span data-stu-id="9a6ac-194">Install NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).</span></span>
+1. <span data-ttu-id="9a6ac-195">Lägg till följande rad:</span><span class="sxs-lookup"><span data-stu-id="9a6ac-195">Add the following line:</span></span>
 
-    ```
+    ```C#
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     ```
 
-- <span data-ttu-id="d78e5-171">Kopiera/klistra in koden nedan i programmet (Glöm inte att uppdatera tre variabler: ```tenantId, appId, appSecret``` )</span><span class="sxs-lookup"><span data-stu-id="d78e5-171">Copy/Paste the below code in your application (do not forget to update the 3 variables: ```tenantId, appId, appSecret```)</span></span>
+1. <span data-ttu-id="9a6ac-196">Kopiera och klistra in följande kod i appen (Glöm inte att uppdatera de tre variablerna: `tenantId` , `clientId` , `appSecret` ):</span><span class="sxs-lookup"><span data-stu-id="9a6ac-196">Copy and paste the following code into your app (don't forget to update the three variables: `tenantId`, `clientId`, `appSecret`):</span></span>
 
-    ```
-    string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
-    string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
-    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    ```C#
+    string tenantId = ""; // Paste your directory (tenant) ID here
+    string clientId = ""; // Paste your application (client) ID here
+    string appSecret = ""; // Paste your own app secret here to test, then store it in a safe place, such as the Azure Key Vault!
 
     const string authority = "https://login.windows.net";
-    const string mtpResourceId = "https://api.security.microsoft.com";
+    const string wdatpResourceId = "https://api.security.microsoft.com";
 
     AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
-    ClientCredential clientCredential = new ClientCredential(appId, appSecret);
-    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(mtpResourceId, clientCredential).GetAwaiter().GetResult();
+    ClientCredential clientCredential = new ClientCredential(clientId, appSecret);
+    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
     string token = authenticationResult.AccessToken;
     ```
 
+### <a name="get-an-access-token-using-python"></a><span data-ttu-id="9a6ac-197">Skaffa en åtkomsttoken med python</span><span class="sxs-lookup"><span data-stu-id="9a6ac-197">Get an access token using Python</span></span>
 
+```Python
+import json
+import urllib.request
+import urllib.parse
 
-### <a name="using-curl"></a><span data-ttu-id="d78e5-172">Använda sväng</span><span class="sxs-lookup"><span data-stu-id="d78e5-172">Using Curl</span></span>
+tenantId = '' # Paste your directory (tenant) ID here
+clientId = '' # Paste your application (client) ID here
+appSecret = '' # Paste your own app secret here to test, then store it in a safe place, such as the Azure Key Vault!
+
+url = "https://login.windows.net/%s/oauth2/token" % (tenantId)
+
+resourceAppIdUri = 'https://api.securitycenter.windows.com'
+
+body = {
+    'resource' : resourceAppIdUri,
+    'client_id' : clientId,
+    'client_secret' : appSecret,
+    'grant_type' : 'client_credentials'
+}
+
+data = urllib.parse.urlencode(body).encode("utf-8")
+
+req = urllib.request.Request(url, data)
+response = urllib.request.urlopen(req)
+jsonResponse = json.loads(response.read())
+aadToken = jsonResponse["access_token"]
+```
+
+### <a name="get-an-access-token-using-curl"></a><span data-ttu-id="9a6ac-198">Skaffa en åtkomsttoken med hjälp av sväng</span><span class="sxs-lookup"><span data-stu-id="9a6ac-198">Get an access token using curl</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="d78e5-173">Proceduren nedan som ska vara en sväng för Windows är redan installerad på datorn</span><span class="sxs-lookup"><span data-stu-id="d78e5-173">The below procedure supposed Curl for Windows is already installed on your computer</span></span>
+> <span data-ttu-id="9a6ac-199">Sväng är förinstallerat på Windows 10, version 1803 och senare.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-199">Curl is pre-installed on Windows 10, versions 1803 and later.</span></span> <span data-ttu-id="9a6ac-200">För andra versioner av Windows laddar du ned och installerar verktyget direkt från den [officiella platsen](https://curl.haxx.se/windows/).</span><span class="sxs-lookup"><span data-stu-id="9a6ac-200">For other versions of Windows, download and install the tool directly from the [official curl website](https://curl.haxx.se/windows/).</span></span>
 
-- <span data-ttu-id="d78e5-174">Öppna ett kommando fönster</span><span class="sxs-lookup"><span data-stu-id="d78e5-174">Open a command window</span></span>
-- <span data-ttu-id="d78e5-175">Ange CLIENT_ID till ditt Azure-program-ID</span><span class="sxs-lookup"><span data-stu-id="d78e5-175">Set CLIENT_ID to your Azure application ID</span></span>
-- <span data-ttu-id="d78e5-176">Ange CLIENT_SECRET till din Azure Application Secret</span><span class="sxs-lookup"><span data-stu-id="d78e5-176">Set CLIENT_SECRET to your Azure application secret</span></span>
-- <span data-ttu-id="d78e5-177">Ange TENANT_ID till det Azure TENANT ID för kunden som vill använda ditt program för att komma åt Microsoft 365 Defender-programmet</span><span class="sxs-lookup"><span data-stu-id="d78e5-177">Set TENANT_ID to the Azure tenant ID of the customer that wants to use your application to access Microsoft 365 Defender application</span></span>
-- <span data-ttu-id="d78e5-178">Kör kommandot nedan:</span><span class="sxs-lookup"><span data-stu-id="d78e5-178">Run the below command:</span></span>
+1. <span data-ttu-id="9a6ac-201">Öppna en kommando tolk och ange CLIENT_ID till ditt Azure-program-ID.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-201">Open a command prompt, and set CLIENT_ID to your Azure application ID.</span></span>
+1. <span data-ttu-id="9a6ac-202">Ange CLIENT_SECRET till din Azure Application Secret.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-202">Set CLIENT_SECRET to your Azure application secret.</span></span>
+1. <span data-ttu-id="9a6ac-203">Ange TENANT_ID till Azure TENANT ID för den användare som vill använda din app för att komma åt Microsoft 365 Defender.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-203">Set TENANT_ID to the Azure tenant ID of the user that wants to use your app to access Microsoft 365 Defender.</span></span>
+1. <span data-ttu-id="9a6ac-204">Kör följande kommando:</span><span class="sxs-lookup"><span data-stu-id="9a6ac-204">Run the following command:</span></span>
 
+```bash
+curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
 ```
-curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://api.security.microsoft.com.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
-```
 
-<span data-ttu-id="d78e5-179">Du får ett svar på formuläret:</span><span class="sxs-lookup"><span data-stu-id="d78e5-179">You will get an answer of the form:</span></span>
+<span data-ttu-id="9a6ac-205">Ett lyckat svar ser ut så här:</span><span class="sxs-lookup"><span data-stu-id="9a6ac-205">A successful response will look like this:</span></span>
 
-```
+```bash
 {"token_type":"Bearer","expires_in":3599,"ext_expires_in":0,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIn <truncated> aWReH7P0s0tjTBX8wGWqJUdDA"}
 ```
 
-## <a name="validate-the-token"></a><span data-ttu-id="d78e5-180">Validera token</span><span class="sxs-lookup"><span data-stu-id="d78e5-180">Validate the token</span></span>
+## <a name="validate-the-token"></a><span data-ttu-id="9a6ac-206">Validera token</span><span class="sxs-lookup"><span data-stu-id="9a6ac-206">Validate the token</span></span>
 
-<span data-ttu-id="d78e5-181">Sanity kontrol lera att du har rätt token:</span><span class="sxs-lookup"><span data-stu-id="d78e5-181">Sanity check to make sure you got a correct token:</span></span>
+1. <span data-ttu-id="9a6ac-207">Kopiera och klistra in din token i [JSON Web token validator-webbplatsen, JWT,](https://jwt.ms) för att avkoda den.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-207">Copy and paste the token into the [JSON web token validator website, JWT,](https://jwt.ms) to decode it.</span></span>
+1. <span data-ttu-id="9a6ac-208">Kontrol lera att de *roller* som är med i det kodade token innehåller de önskade behörigheterna.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-208">Make sure that the *roles* claim within the decoded token contains the desired permissions.</span></span>
 
-- <span data-ttu-id="d78e5-182">Kopiera/klistra in i [JWT](https://jwt.ms) det token du får i föregående steg för att avkoda det</span><span class="sxs-lookup"><span data-stu-id="d78e5-182">Copy/paste into [JWT](https://jwt.ms) the token you get in the previous step in order to decode it</span></span>
-- <span data-ttu-id="d78e5-183">Verifiera att du får en "roles"-anspråk med de önskade behörigheterna</span><span class="sxs-lookup"><span data-stu-id="d78e5-183">Validate you get a 'roles' claim with the desired permissions</span></span>
-- <span data-ttu-id="d78e5-184">I skärm bilden nedan kan du se ett avkodat token som hämtats från ett program med flera behörigheter till Microsoft 365 Defender:</span><span class="sxs-lookup"><span data-stu-id="d78e5-184">In the screenshot below, you can see a decoded token acquired from an Application with multiple permissions to Microsoft 365 Defender:</span></span>
-- <span data-ttu-id="d78e5-185">"Tid"-anspråk är det klient-ID som token tillhör.</span><span class="sxs-lookup"><span data-stu-id="d78e5-185">The "tid" claim is the tenant ID the token belongs to.</span></span>
+<span data-ttu-id="9a6ac-209">I följande bild kan du se ett avkodat token från en app, med ```Incidents.Read.All``` , ```Incidents.ReadWrite.All``` och ```AdvancedHunting.Read.All``` behörigheter:</span><span class="sxs-lookup"><span data-stu-id="9a6ac-209">In the following image, you can see a decoded token acquired from an app, with ```Incidents.Read.All```, ```Incidents.ReadWrite.All```, and ```AdvancedHunting.Read.All``` permissions:</span></span>
 
 ![Bild av verifiering av token](../../media/webapp-decoded-token.png)
 
-## <a name="use-the-token-to-access-microsoft-365-defender-api"></a><span data-ttu-id="d78e5-187">Använda token för att få åtkomst till Microsoft 365 Defender API</span><span class="sxs-lookup"><span data-stu-id="d78e5-187">Use the token to access Microsoft 365 Defender API</span></span>
+## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a><span data-ttu-id="9a6ac-211">Använda token för att komma åt Microsoft 365 Defender API</span><span class="sxs-lookup"><span data-stu-id="9a6ac-211">Use the token to access the Microsoft 365 Defender API</span></span>
 
-- <span data-ttu-id="d78e5-188">Välj det API du vill använda, mer information finns i [Microsoft 365 Defender API: er](api-supported.md)</span><span class="sxs-lookup"><span data-stu-id="d78e5-188">Choose the API you want to use, for more information, see [Supported Microsoft 365 Defender APIs](api-supported.md)</span></span>
-- <span data-ttu-id="d78e5-189">Ange auktorisations huvudet i http-begäran som du skickar till "Bearer {token}" (innehavaren är godkännandet)</span><span class="sxs-lookup"><span data-stu-id="d78e5-189">Set the Authorization header in the Http request you send to "Bearer {token}" (Bearer is the Authorization scheme)</span></span>
-- <span data-ttu-id="d78e5-190">Giltighets tiden för token är 1 timme (du kan skicka mer än en begäran med samma token)</span><span class="sxs-lookup"><span data-stu-id="d78e5-190">The Expiration time of the token is 1 hour (you can send more then one request with the same token)</span></span>
+1. <span data-ttu-id="9a6ac-212">Välj det API du vill använda (incidenter eller avancerad jakt).</span><span class="sxs-lookup"><span data-stu-id="9a6ac-212">Choose the API you want to use (incidents, or advanced hunting).</span></span> <span data-ttu-id="9a6ac-213">Mer information finns i [Microsoft 365 Defender API: n](api-supported.md).</span><span class="sxs-lookup"><span data-stu-id="9a6ac-213">For more information, see [Supported Microsoft 365 Defender APIs](api-supported.md).</span></span>
+2. <span data-ttu-id="9a6ac-214">I den http-begäran som du ska skicka kan du ange tillstånds huvudet till `"Bearer" <token>` , *innehavaren* är ett godkännande och *token* som verifierad token.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-214">In the http request you're about to send, set the authorization header to `"Bearer" <token>`, *Bearer* being the authorization scheme, and *token* being your validated token.</span></span>
+3. <span data-ttu-id="9a6ac-215">Token upphör att gälla inom en timme.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-215">The token will expire within one hour.</span></span> <span data-ttu-id="9a6ac-216">Du kan skicka fler än en begäran under tiden med samma token.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-216">You can send more than one request during this time  with the same token.</span></span>
 
-- <span data-ttu-id="d78e5-191">Exempel på att skicka en begäran om att få en lista över incidenter **med C#**</span><span class="sxs-lookup"><span data-stu-id="d78e5-191">Example of sending a request to get a list of incidents **using C#**</span></span> 
-    ```
-    var httpClient = new HttpClient();
+<span data-ttu-id="9a6ac-217">I följande exempel visas hur du skickar en begäran om att få en lista över incidenter **med C#**.</span><span class="sxs-lookup"><span data-stu-id="9a6ac-217">The following example shows how to send a request to get a list of incidents **using C#**.</span></span>
 
-    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.security.microsoft.com/api/incidents");
+```C#
+   var httpClient = new HttpClient();
+   var request = new HttpRequestMessage(HttpMethod.Get, "https://api.security.microsoft.com/api/incidents");
 
-    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+   request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-    var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
+   var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
+```
 
-    // Do something useful with the response
-    ```
+## <a name="related-articles"></a><span data-ttu-id="9a6ac-218">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="9a6ac-218">Related articles</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="d78e5-192">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="d78e5-192">Related topics</span></span> 
-
-- [<span data-ttu-id="d78e5-193">Gå till API för Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="d78e5-193">Access the Microsoft 365 Defender APIs</span></span>](api-access.md)
-- [<span data-ttu-id="d78e5-194">Åtkomst till Microsoft 365 Defender med program kontext</span><span class="sxs-lookup"><span data-stu-id="d78e5-194">Access  Microsoft 365 Defender with application context</span></span>](api-create-app-web.md)
-- [<span data-ttu-id="d78e5-195">Åtkomst till Microsoft 365 Defender med användar kontext</span><span class="sxs-lookup"><span data-stu-id="d78e5-195">Access  Microsoft 365 Defender with user context</span></span>](api-create-app-user-context.md)
+- [<span data-ttu-id="9a6ac-219">Översikt över Microsoft 365 Defender API</span><span class="sxs-lookup"><span data-stu-id="9a6ac-219">Microsoft 365 Defender APIs overview</span></span>](api-overview.md)
+- [<span data-ttu-id="9a6ac-220">Gå till API för Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="9a6ac-220">Access the Microsoft 365 Defender APIs</span></span>](api-access.md)
+- [<span data-ttu-id="9a6ac-221">Skapa ett ' Hej världen '-program</span><span class="sxs-lookup"><span data-stu-id="9a6ac-221">Create a 'Hello world' application</span></span>](api-hello-world.md)
+- [<span data-ttu-id="9a6ac-222">Skapa en app för åtkomst till Microsoft 365 Defender utan en användare</span><span class="sxs-lookup"><span data-stu-id="9a6ac-222">Create an app to access Microsoft 365 Defender without a user</span></span>](api-create-app-web.md)
+- [<span data-ttu-id="9a6ac-223">Skapa en app för att få åtkomst till Microsoft 365 Defender API: er för en användares räkning</span><span class="sxs-lookup"><span data-stu-id="9a6ac-223">Create an app to access Microsoft 365 Defender APIs on behalf of a user</span></span>](api-create-app-user-context.md)
+- [<span data-ttu-id="9a6ac-224">Läs mer om API-begränsningar och licensiering</span><span class="sxs-lookup"><span data-stu-id="9a6ac-224">Learn about API limits and licensing</span></span>](api-terms.md)
+- [<span data-ttu-id="9a6ac-225">Förstå felkoder</span><span class="sxs-lookup"><span data-stu-id="9a6ac-225">Understand error codes</span></span>](api-error-codes.md)
+- [<span data-ttu-id="9a6ac-226">Hantera hemligheter i dina serverprogram med Azure Key Vault</span><span class="sxs-lookup"><span data-stu-id="9a6ac-226">Manage secrets in your server apps with Azure Key Vault</span></span>](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
+- [<span data-ttu-id="9a6ac-227">OAuth 2,0-auktorisering för användare inloggning och API-åtkomst</span><span class="sxs-lookup"><span data-stu-id="9a6ac-227">OAuth 2.0 authorization for user sign in and API access</span></span>](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
