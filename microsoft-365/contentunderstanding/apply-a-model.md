@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: Lär dig att använda en publicerad modell på ett SharePoint-dokumentbibliotek
-ms.openlocfilehash: 0ca58e863d42d41b634978f53f55201a10a5ed93
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 9c99ede49633b5ae70cbb67c30d83c111084df95
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087493"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701147"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Använda en modell för dokumenttolkning i Microsoft SharePoint Syntex
 
@@ -78,10 +78,13 @@ Modellen identifierar alla filer med modellens kopplade innehållstyp och visar 
 
       ![Klassificera och extrahera](../media/content-understanding/extract-classify.png)</br> 
 
+> [!NOTE]
+> Du kan kopiera enskilda filer till ett bibliotek och använda dem i en modell, men inte mappar.
+
 ## <a name="see-also"></a>Se även
 [Skapa en klassificerare](create-a-classifier.md)
 
-[Skapa en extraktor](create-an-extractor.md)
+[Skapa en extraherare](create-an-extractor.md)
 
 [Översikt av dokumenttolkning](document-understanding-overview.md)
 

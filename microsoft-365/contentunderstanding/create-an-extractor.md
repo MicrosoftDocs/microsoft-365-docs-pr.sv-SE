@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: Lär dig hur du skapar en extraktor i Microsoft SharePoint-Syntex.
-ms.openlocfilehash: 99d2a4602c03d8a7207736ea17ed500626ce43ac
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: b957d905f3807f6007ebeb742d9b56d81ea38ac2
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087469"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701135"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Skapa en extraktor i Microsoft SharePoint-Syntex.
 
@@ -37,7 +37,9 @@ Du behöver skapa en extraktor för varje enhet i det dokument som du vill extra
 
 1. Från modellens startsida, i **Skapa och träna extraktorer** panel och klicka på **Träna extraktor**.
 2. På skärmen **Ny enhet extraktor** skriv in namnet på din extraktor i fältet **Nytt extraktor-namn**. Om du, till exempel, namnge det **Tjänstens Startdatum** om du vill extrahera tjänstens startdatum från varje Kontraktförnyelse dokument. Du kan också välja att återanvända en tidigare skapad kolumn, (t. ex. en hanterad metadata kolumn).
-3. Klicka på **Skapa**.
+> [!NOTE]
+> Om du skapar en ny extraktor väljer du **Ny kolumntyp** och väljer **enskild textrad**, så är maxgränsen 255 tecken. Alla tecken som du skriver som överskrider gränsen blir trunkerade. 
+3. Klicka på **Skapa** när du är klar.
 
 ## <a name="add-a-label"></a>Lägga till en etikett
 
