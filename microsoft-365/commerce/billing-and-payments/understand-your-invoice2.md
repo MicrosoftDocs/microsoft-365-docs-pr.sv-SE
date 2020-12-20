@@ -1,5 +1,5 @@
 ---
-title: Förstå din faktura för Microsoft 365 för företag
+title: Förstå fakturan för Microsoft 365 för företag
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,17 +24,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
-description: Lär dig hur du tolkar avgifter, fakturering och betalnings information på din faktura för Microsoft 365 för företag och hur du ändrar inköps order numret.
+description: Lär dig hur du tolkar avgifter, fakturering och betalningsinformation på fakturan för Microsoft 365 för företag samt hur du ändrar inköpsordernumret.
 ms.openlocfilehash: 3d71bab82be3fd9e4c633885dccaf357ccabb551
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48638405"
 ---
-# <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Förstå din faktura för Microsoft 365 för företag
+# <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Förstå fakturan för Microsoft 365 för företag
 
-Antingen varje månad eller varje år (beroende på vilket alternativ du valde när du köpte ditt abonnemang) får du ett e-postmeddelande med information om att ditt nya fakturerings utdrag är tillgängligt i administrations centret. [Läs mer om hur du hittar och visar fakturan](view-your-bill-or-invoice.md).
+Antingen varje månad eller varje år (beroende på vilket alternativ du valde när du köpte prenumerationen) får du ett e-postmeddelande där det står att ditt nya faktureringsutdrag finns i administrationscentret. [Läs mer om hur du hittar och visar fakturan](view-your-bill-or-invoice.md).
   
 Fakturan innehåller två sidor. Sida 1 är fakturasammanfattningen och innehåller allmän information om fakturan, order, belopp att betala, hur du gör en betalning och hur du kontaktar supporten.
   
@@ -52,11 +52,11 @@ Innan du visar fakturan är det bra om du förstår några viktiga faktureringsb
   
 ### <a name="invoice-balance-vs-order-balance"></a>Fakturasaldo och ordersaldo
 
- **Fakturasaldo** är beloppet som visas på fakturan och är bara det belopp som ska betalas för den specifika faktureringsperioden. Totalt **ordersaldo** är summan av alla obetalda fakturor. Du kan visa ditt beställnings saldo i avsnittet **fakturering** i administrations centret.
+ **Fakturasaldo** är beloppet som visas på fakturan och är bara det belopp som ska betalas för den specifika faktureringsperioden. Totalt **ordersaldo** är summan av alla obetalda fakturor. Du kan visa ordersaldot i avsnittet **Fakturering** i administrationscentret.
   
 ### <a name="billing-frequency-vs-invoice-frequency"></a>Faktureringsfrekvens och fakturafrekvens
 
- **Faktureringsfrekvens** innebär hur ofta du faktureras. Abonnemang debiteras antingen per månad eller år, beroende på vilket alternativ du valde under abonnemangs köpet. **Fakturafrekvens** innebär hur ofta du får en faktura. Om du väljer fakturering per år får du bara en faktura årligen, om det inte finns aktiviteter för prenumerationen som kräver avgift eller kredit.
+ **Faktureringsfrekvens** innebär hur ofta du faktureras. Prenumerationer faktureras per månad eller per år, beroende på vilket alternativ du valde vid köpet av prenumerationen. **Fakturafrekvens** innebär hur ofta du får en faktura. Om du väljer fakturering per år får du bara en faktura årligen, om det inte finns aktiviteter för prenumerationen som kräver avgift eller kredit.
   
 Om du har fler än en order får du en faktura för varje order.
   
@@ -69,30 +69,30 @@ I följande tabell beskrivs de fält som eventuellt visas på fakturan. Vissa f�
   
 |**Name**|**Beskrivning**|
 |:-----|:-----|
-|Pris per år|Prenumerationer faktureras per månad eller per år. Om du valde årlig betalning under abonnemangs köpet återspeglas det årliga priset på fakturan. Om du vill ändra faktureringsfrekvensen måste du avbryta prenumerationen och köpa den på nytt med den nya faktureringsfrekvensen.|
+|Pris per år|Prenumerationer faktureras per månad eller per år. Om du valde fakturering per år vid köpet av prenumerationen visas licenspriset per år på fakturan. Om du vill ändra faktureringsfrekvensen måste du avbryta prenumerationen och köpa den på nytt med den nya faktureringsfrekvensen.|
 |Faktureringsperiod|Faktureringsperiod är tidsperioden sedan datumet för den senaste fakturan. Tjänstperiod är tidsperioden då du debiteras för att använda tjänsten.|
-|Faktureras till|Det här är adressen till din faktureringsavdelning och är vanligtvis samma som Såld till-adressen. Information om hur du uppdaterar din fakturerings adress finns i [ändra dina fakturerings adresser](change-your-billing-addresses.md).|
+|Faktureras till|Det här är adressen till din faktureringsavdelning och är vanligtvis samma som Såld till-adressen. Information om hur du uppdaterar din faktureringsadress finns i [ändra dina faktureringsadresser](change-your-billing-addresses.md).|
 |Debitering|På sida 1 på fakturan sammanfattas alla debiteringar för fakturans faktureringsperiod. På sida 2 visas detaljerade debiteringar för varje prenumeration.|
 |Check|Om du betalar med faktura och checkbetalning erbjuds i ditt land innehåller den nedre delen på sida 1 information om vart du skickar betalningen. Ange fakturanumret på checken.|
 |Krediter|På sida 1 på fakturan sammanfattas alla krediter för fakturans faktureringsperiod. På sida 2 visas detaljerade krediter för varje prenumeration.|
-|Inköpsordernr för kund|Ditt inköpsordernummer. Om du uppdaterar inköpsordernumret visas det på framtida fakturor. [Ändra ditt inköps order nummer](#change-your-purchase-order-number). <br/> **Obs!** Du kan inte lägga till ett inköps order nummer på en befintlig faktura.           |
+|Inköpsordernr för kund|Ditt inköpsordernummer. Om du uppdaterar inköpsordernumret visas det på framtida fakturor. [Ändra ditt inköpsordernummer](#change-your-purchase-order-number). <br/> **OBS!** Det går inte att lägga till ett inköpsordernummer på en befintlig faktura.           |
 |dagar|Varje faktureringstransaktion är kopplad till en tjänstperiod. I kolumnen dagar anges antalet dagar i den tjänstperioden.|
 |Rabatter|På sida 1 på fakturan sammanfattas alla rabatter för fakturans faktureringsperiod. På sida 2 visas detaljerade rabatter för varje prenumeration.|
-|Förfallodatum|Datumet när fakturan förfaller till betalning. Om ditt abonnemang betalas med ett kredit kort eller bank konto debiteras ditt kredit kort eller bank konto dagen efter faktura datumet. <br/> **Obs!** Betalning med bank konto är inte tillgängligt i vissa länder eller regioner.           |
-|Elektronisk betalningsöverföring|Om du väljer "faktura" som betalnings metod för abonnemang innehåller sidan 1 bank konto information för elektroniska (tråd bunden, ACH, SEPA och så vidare). Din bank har vanligtvis ett referensfält som du fyller i när du skickar en betalning. Ange fakturanumret som visas i det här fältet.|
+|Förfallodatum|Datumet när fakturan förfaller till betalning. Om prenumerationen betalas med kreditkort eller bankkonto debiteras kreditkortet eller bankkontot dagen efter fakturadatumet. <br/> **OBS!** Betalning med bankkonto är inte tillgängligt i vissa länder eller regioner.           |
+|Elektronisk betalningsöverföring|Om du valde "faktura" som betalningsmetod för prenumerationen innehåller sida 1 Microsofts bankkontoinformation för elektroniska betalningar (elektronisk överföring, ACH, SEPA osv.). Din bank har vanligtvis ett referensfält som du fyller i när du skickar en betalning. Ange fakturanumret som visas i det här fältet.|
 |Totalsumma|Den här raden innehåller totalsummorna för kolumnerna Debitering, Rabatter, Krediter, Delsumma, Moms och Summa för alla prenumerationer som visas på fakturan.|
 |Fakturadatum|Datumet då fakturan skapades. Fakturadatumet är dagen efter slutet av faktureringsperioden. Om faktureringsperioden exempelvis är 15 jan-14 feb är fakturadatumet 15 feb.|
 |Fakturanummer|Det unika numret som tilldelas fakturan. Ange fakturanumret vid betalningen.|
-|Pris per månad|Prenumerationer faktureras per månad eller per år. Om du valde månatlig betalning under abonnemangs köpet visas priset per månad på fakturan. Om du vill ändra faktureringsfrekvensen måste du avbryta prenumerationen och köpa den på nytt med den nya faktureringsfrekvensen.|
+|Pris per månad|Prenumerationer faktureras per månad eller per år. Om du valde fakturering per månad vid köpet av prenumerationen visas licenspriset per månad på fakturan. Om du vill ändra faktureringsfrekvensen måste du avbryta prenumerationen och köpa den på nytt med den nya faktureringsfrekvensen.|
 |Ordernummer|Varje gång du köper en ny prenumeration skapas en order. Varje månad får du en faktura för varje order.|
 |Betalningsinstruktioner|Om du betalar med kreditkort visas Betalas ej - registrerat kreditkort debiteras. Om du betalar med faktura visas anvisningar om hur du betalar med elektronisk betalningsöverföring (EFT) och check (om tillämpligt).|
 |Betalningsvillkor|Antalet dagar från fakturadatumet som den förfaller till betalning. Standard är 30 dagar.|
 |Produkt|På sida 1 på fakturan används det allmänna begreppet Onlinetjänster för att beskriva dina prenumerationer. På sida 2 visas de enskilda prenumerationsnamnen.|
 |Antal|Antalet licenser som köpts under tjänstperioden.|
 |Tjänstperiod|Tjänstperiod är tidsperioden då du debiteras för att använda tjänsten. En faktureringsperiod är tidsperioden sedan datumet för den senaste fakturan.|
-|Tjänstanvändningsadress|Adressen där tjänsten används, vanligtvis samma som Såld till-adressen. Information om hur du uppdaterar din tjänst användning finns i [ändra dina fakturerings adresser](change-your-billing-addresses.md).|
+|Tjänstanvändningsadress|Adressen där tjänsten används, vanligtvis samma som Såld till-adressen. Information om hur du uppdaterar din tjänstanvändningsadress finns i [ändra dina faktureringsadresser](change-your-billing-addresses.md).|
 |Såld till|Företagets namn och adress. Information om hur du uppdaterar den här informationen finns i [Ändra organisationens adress, e-postadress för teknisk kontakt och annan information](../../admin/manage/change-address-contact-and-more.md).|
-|Räkna|Varje prenumeration som visas på fakturan har en separat rad med delsumma för kolumnerna Debitering, Rabatter, Krediter, Delsumma, Moms och Summa för den prenumerationen.|
+|Delsumma|Varje prenumeration som visas på fakturan har en separat rad med delsumma för kolumnerna Debitering, Rabatter, Krediter, Delsumma, Moms och Summa för den prenumerationen.|
 |Moms|På sida 1 på fakturan visas total moms. På sida 2 visas momssatsen som används och det totala momsbeloppet för varje post. Om fakturan innehåller moms och företaget är skattebefriat ska du [kontakta supporten](../../admin/contact-support-for-business-products.md).|
 |Summa|Beloppet som ska betalas för fakturans faktureringsperiod.|
 
@@ -107,13 +107,13 @@ Om du betalar med faktura kan du lägga till eller ändra inköpsordernumret fö
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
 
-2. Om du är i **tabellvy** väljer du **kort** för att växla vy.
+2. Om du befinner dig i **tabell** vy väljer du **Kort** för att växla vy.
 
-3. Leta upp den prenumeration som du vill ändra.
+3. Hitta den prenumeration du vill ändra.
 
-4. Välj **Redigera**bredvid **faktura**i avsnittet **fakturering** .
+4. Välj **Redigera** i avsnittet **Fakturering**, bredvid **faktura**.
 
-5. Skriv in ditt inköps order nummer längst ned i fönstret **Redigera betalnings information** och välj sedan **Spara**.
+5. Längst ned i fönstret **Redigera betalningsinformation** skriver du ditt inköpsordernummer och väljer **Spara**.
 
 ::: moniker-end
 
@@ -121,9 +121,9 @@ Om du betalar med faktura kan du lägga till eller ändra inköpsordernumret fö
 
 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a> i administrationscentret.
 
-2. Välj den prenumeration som du vill ändra och välj **ändra betalnings information**i avsnittet **betalnings metod** .
+2. Välj den prenumeration du vill ändra. I avsnittet **Betalningsmetod** väljer du **Ändra betalningsinformation**.
 
-3. Skriv in ditt inköps order nummer längst ned i fönstret **ändra betalnings information** och välj sedan **Skicka**.
+3. Ange ditt inköpsordernummer längst ned i fönstret **Ändra betalningsinformation** och välj sedan **Skicka**.
 
 ::: moniker-end
 
@@ -131,14 +131,14 @@ Om du betalar med faktura kan du lägga till eller ändra inköpsordernumret fö
 
 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a> i administrationscentret.
 
-2. Välj den prenumeration som du vill ändra och välj **ändra betalnings information**i avsnittet **betalnings metod** .
+2. Välj den prenumeration du vill ändra. I avsnittet **Betalningsmetod** väljer du **Ändra betalningsinformation**.
 
-3. Skriv in ditt inköps order nummer längst ned i fönstret **ändra betalnings information** och välj sedan **Skicka**.
+3. Ange ditt inköpsordernummer längst ned i fönstret **Ändra betalningsinformation** och välj sedan **Skicka**.
 
 ::: moniker-end
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Betala för ditt Microsoft 365 för företag-abonnemang](pay-for-your-subscription.md)
+[Betala för Microsoft 365 för företag-prenumeration](pay-for-your-subscription.md)
 
 [Betalningsalternativ för Minecraft: Education Edition](https://go.microsoft.com/fwlink/p/?linkid=838761)
