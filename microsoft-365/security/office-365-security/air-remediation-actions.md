@@ -20,12 +20,12 @@ description: Läs mer om åtgärder som utförs efter en automatiserad undersök
 ms.date: 09/29/2020
 ms.custom:
 - air
-ms.openlocfilehash: 75550352170841b1e6a26512c9e857a7c9e3acd3
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 74fe6f66d0970fe2725caba7b51bd8a95a34159e
+ms.sourcegitcommit: 16e018f8b6eef5dad48eabf179691ead3cebe533
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616146"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "49725171"
 ---
 # <a name="remediation-actions-following-automated-investigation-in-microsoft-defender-for-office-365"></a>Reparations åtgärder följer den automatiska undersökningen i Microsoft Defender för Office 365
 
@@ -59,7 +59,7 @@ I följande tabell sammanfattas hot och lämpliga reparations åtgärder i Micro
 |E-post|Missade Phish-e-post som [rapporter ATS](enable-the-report-message-add-in.md) av en användare|[Automatisk granskning utlöst av användarens rapport](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
 |E-post|Volym avvikelse <br> (Senaste e-postkvantiteten överskrider de föregående 7-10 dagarna för matchnings villkor.)|Den automatiska undersökningen resulterar inte i en särskild väntande åtgärd. <p> Volym avvikelser är inget tydligt hot, men det är bara att ange större e-postvolymer under de senaste dagarna jämfört med de senaste 7-10 dagarna. Även om det här kan tyda på potentiella problem måste du bekräfta att du har en verdicts eller manuell recension av e-postmeddelanden/kluster. Se [hitta misstänkt e-post som har levererats](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered).|
 |E-post|Inga hot hittades <br> (Det gick inte att hitta några hot baserat på filer, URL: er eller analys av e-postkluster verdicts.)|Den automatiska undersökningen resulterar inte i en särskild väntande åtgärd. <p> Hot Funna och [zapped](zero-hour-auto-purge.md) efter att en undersökning är färdig visas inte i en undersöknings numeriska resultat, men sådana hot visas i [Threat Explorer](threat-explorer.md).|
-|Användare|En användare klickade på en illvillig URL <br> (En användare navigerade till en sida som du har hittat för att bli skadlig eller en användare har blockerat en varning om ett [säkert länkar](atp-safe-links.md#warning-pages-from-safe-links) till en skadlig sida.)|Den automatiska undersökningen resulterar inte i en särskild väntande åtgärd. <p> Använd Threat Explorer för att [Visa data om URL: er och klicka på verdicts](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict). <p> Om din organisation använder [Microsoft Defender för slut punkten](https://docs.microsoft.com/windows/security/threat-protection/)kan du [pröva användaren](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user) att kontrol lera om deras konto är angripet.|
+|Användare|En användare klickade på en illvillig URL <br> (En användare navigerade till en sida som du har hittat för att bli skadlig eller en användare har blockerat en varning om ett [säkert länkar](atp-safe-links.md#warning-pages-from-safe-links) till en skadlig sida.)|Den automatiska undersökningen resulterar inte i en särskild väntande åtgärd. <p> Använd Threat Explorer för att [Visa data om URL: er och klicka på verdicts](threat-explorer.md#view-phishing-url-and-click-verdict-data). <p> Om din organisation använder [Microsoft Defender för slut punkten](https://docs.microsoft.com/windows/security/threat-protection/)kan du [pröva användaren](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user) att kontrol lera om deras konto är angripet.|
 |Användare|En användare skickar skadlig program vara/Phish|Den automatiska undersökningen resulterar inte i en särskild väntande åtgärd. <p> Användaren kan rapportera skadlig program vara/Phish eller någon kan behöva [falska användaren](anti-spoofing-protection.md) som en del av en attack. Använd [Threat Explorer](threat-explorer.md) för att visa och hantera e-post som innehåller [skadlig kod](threat-explorer-views.md#email--malware) eller [Phish](threat-explorer-views.md#email--phish).|
 |Användare|Vidarebefordran av e-post <br> (Regler för vidarebefordran av post lådor är konfigurerade, vilka kan användas för data exfiltration.)|Ta bort vidarebefordrings regel <p> Använd [e-postflöde](mail-flow-insights-v2.md), inklusive rapporten för [automatiskt vidarebefordrade meddelanden](mfi-auto-forwarded-messages-report.md), för att visa mer detaljerad information om vidarebefordrad e-post.|
 |Användare|Regler för e-postombud <br> (En användares konto har Delegerings inställning.)|Ta bort Delegerings regel <p> Om din organisation använder [Microsoft Defender för slut punkter](https://docs.microsoft.com/windows/security/threat-protection/)bör du överväga att [undersöka användaren](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user) som får behörigheten delegera.|

@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: d219895767919c2a0658f8b83150fe6edde01b5b
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: fb588320461ab44d1ce0f10c0776bcc9ee61b551
+ms.sourcegitcommit: 0ecac0387be6b49025b79ce8eb949a8cf62481e2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615558"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "49724408"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nyheter i Microsoft Defender för Office 365
 
@@ -51,11 +51,11 @@ Den här artikeln innehåller de nya funktionerna i den senaste versionen av Mic
 - [Åsidosätt filter manuellt verdicts med listan Tillåt/blockera klient organisation](tenant-allow-block-list.md)
 - [Utökade funktioner i Threat Explorer inklusive Top riktade användare, transport regler och anslutningar](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Defender för Office 365 i [Threat Explorer](threat-explorer.md) (via e-post som klient/användar princip) (Defender för Office 365 abonnemang 2)
 - Visa URL-hot i [Threat Explorer](threat-explorer.md#threats-in-urls) (skadlig program vara, Phish, spam eller ingen) (Defender för Office 365 abonnemang 2)
-- [Förbättringar av skydds Utforskaren för jakt](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) och uppdatering kring hot, ytterligare åtgärder, leverans ställen och uppdaterad tidslinjevy (Defender för Office 365 abonnemang 2)
+- [Förbättringar av skydds Utforskaren för jakt](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) och uppdatering kring hot, ytterligare åtgärder, leverans ställen och uppdaterad tidslinjevy (Defender för Office 365 abonnemang 2)
 
 ## <a name="julyaugust-2020"></a>Juli 2020
 
-- [Upplev förbättringar av jakt upplevelsen](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
+- [Upplev förbättringar av jakt upplevelsen](threat-explorer.md#improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
 - [Använd de rekommenderade inställningarna med förvalda säkerhets principer](preset-security-policies.md)
 
 ## <a name="marchapril-2020"></a>Mars 2020
@@ -103,9 +103,9 @@ Den här artikeln innehåller de nya funktionerna i den senaste versionen av Mic
 
 ## <a name="june-2019"></a>Juni 2019
 
-- [Visa data om nät fiske adresser och klicka på Verdict](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
+- [Visa nät fiske adresser och klicka på Verdict data](threat-explorer.md#view-phishing-url-and-click-verdict-data) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
 
-## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender för Office 365 abonnemang 1 och abonnemang 2
+## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2
 
 Visste du att Microsoft Defender för Office 365 finns i två planer? [Lär dig mer om vad varje abonnemang innehåller](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
