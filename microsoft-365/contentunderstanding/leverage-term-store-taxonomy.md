@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: Använd en termlagringstaxonomi vid skapande av extraktor i modellen för dokumenttolkning i Microsoft SharePoint Syntex.
-ms.openlocfilehash: 0008dd02ef46401e9f0c9414b8363cff034c18eb
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: cf396d14a497981389cc336c5efd121f36392181
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087330"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709554"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>Använda termlagringstaxonomi vid skapande av extraktor
 
@@ -25,17 +25,15 @@ ms.locfileid: "49087330"
 
 </br>
 
-
-När du skapar en extraktor i modellen för dokumenttolkning i SharePoint-Syntex kan du dra nytta av termlagringstaxonomins [Hanterade metadatatjänster](https://docs.microsoft.com/sharepoint/managed-metadata#terms) för att visa rekommenderade termer för data som du extraherar.  
+När du skapar en extraherare i din dokumentförståelsemodell med SharePoint Syntex kan du dra nytta av globala termuppsättningar i [term lagringsplats](https://docs.microsoft.com/sharepoint/managed-metadata) för att visa föredragna termer för data som du extraherar.  
 
 Som exempel identifierar och klassificerar din modell alla **Kontrakt** som har laddats upp till dokumentbiblioteket.  Dessutom extraherar modellen också värdet **Kontraktstjänst** från varje kontrakt. Det visas i en kolumn i din biblioteksvy. Bland de olika värdena för kontraktstjänster i kontrakten finns det flera äldre värden som företaget inte längre använder och som har bytt namn. Exempel: alla hänvisningar till termernas *Design*, *Grafik* eller *Topografi* i kontraktstjänsterna ska nu kallas *Kreativa*. När din modell hämtar en inaktuell term från ett kontrakt vill du att det ska visa den aktuella termen – Kreativ – i din biblioteksvy. I exemplet nedan ser vi medan vi tränar modellen att ett exempeldokument innehåller inaktuella villkor för *Design*.
 
    ![Termlagring](../media/content-understanding/design.png)</br>
 
-
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>Använda en kolumn med hanterade metadata i din extraktor
 
-Uppsättningar med termer konfigureras i hanterade metadatatjänstens termarkiv i administrationscenter för SharePoint. I exemplet nedan är *Kontraktstjänsters* [termuppsättning](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) konfigurerad att innehålla flera termer, bland annat *Kreativa*.  Informationen för den visar att termen har tre synonymer (*Design*, *Grafik* och *Topografi*) och att synonymerna ska översätta till *Kreativa*. 
+Uppsättningar med termer konfigureras i hanterade metadatatjänstens (MMS) termarkiv i administrationscenter för SharePoint. I exemplet nedan är *Kontraktstjänsters* [termuppsättning](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) konfigurerad att innehålla flera termer, bland annat *Kreativa*.  Informationen för den visar att termen har tre synonymer (*Design*, *Grafik* och *Topografi*) och att synonymerna ska översätta till *Kreativa*. 
 
    ![Termuppsättning](../media/content-understanding/term-store.png)</br>
 

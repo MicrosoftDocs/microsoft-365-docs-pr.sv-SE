@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: 'Lär dig hur du ger en användare rätt att komma åt en annan användares postlåda. Då kan användaren läsa e-postmeddelanden och skicka e-postmeddelanden från den andra användarens postlåda. '
-ms.openlocfilehash: 0b6977efbd6041a11c67ed66c9b7ecc72a38bde4
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: af12cfe3acad9e12ca3983c9fa13f52b72f0a467
+ms.sourcegitcommit: 16e018f8b6eef5dad48eabf179691ead3cebe533
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560381"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "49725159"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Ge behörigheter för postlådor åt en annan användare – administratörshjälp
 
@@ -121,6 +121,10 @@ Det finns några olika sätt att komma åt en postlåda när du har fått åtkom
 5. Välj **Lägg till behörigheter** och välj sedan namnet på den eller de användare du vill ge tillåtelse att läsa e-post från den här postlådan.
 
 6. Välj **Spara**.
+
+
+> [!NOTE]
+> **Läsa** och **hantera** behörigheter kallas **full åtkomstbehörighet** när de beviljas i Exchange-administratörscentret. Fullständig åtkomst ger inte behörighet att **skicka som** eller **skicka för** behörigheter.
 
 ::: moniker-end
 
