@@ -12,12 +12,12 @@ ms.collection: enabler-strategic
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Översikt över avsnitts upplevelser.
-ms.openlocfilehash: 9321f349056c1c4df36b6bd725214f3c6758cf6a
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 8b06dd016295c8b0712a7c18c2296a318cd826ba
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49699044"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731333"
 ---
 # <a name="topic-experiences-overview-preview"></a>Avsnitts översikt (för hands version)
 
@@ -26,7 +26,11 @@ ms.locfileid: "49699044"
 
 Avsnitts upplevelser använder Microsoft AI Technology, Microsoft 365, Delve, Microsoft Graph, Sök och andra komponenter och tjänster för att bygga ett kunskaps nätverk i din Microsoft 365-miljö. 
 
-   ![Kunskaps hanterings flöde](../media/knowledge-management/knowledge-management-flowchart.png) </br> 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
+
+</br>
 
 Målet är att konvertera information till kunskap och skicka den till dina användare i program de använder varje dag, till exempel SharePoint-moderna sidor och Microsoft Search.
 

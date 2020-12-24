@@ -11,17 +11,24 @@ search.appverid: ''
 ms.collection: enabler-strategic
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 832067d157ed9ffcba1ed9ad514c375cbbdd752b
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 92cf9c860ddbf199c70a7c2d89a7daba3dfe0fe7
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49699032"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731337"
 ---
 # <a name="manage-topics-in-the-topic-center-preview"></a>Hantera ämnen i ämnes centret (för hands version)
 
 > [!Note] 
 > Innehållet i den här artikeln gäller för projekt cortex privat för hands version. [Läs mer om Project Cortex](https://aka.ms/projectcortex).
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LxDx]  
+
+</br>
+
 
 I ämnes Center kan en kunskaps chef Visa sidan **hantera ämnen** för att granska ämnen som har identifierats på SharePoint source locations, enligt vad som anges av din kunskaps administratör.  
 

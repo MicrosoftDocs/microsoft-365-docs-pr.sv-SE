@@ -11,14 +11,20 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Lär dig hur du konfigurerar ämnen i Microsoft 365
-ms.openlocfilehash: e11f0b75556a4a8ac0ffa40269d7166258128daf
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: df4dccead4b627a215ec7ebd11932aa0f2b6ac08
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698561"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731373"
 ---
 # <a name="set-up-topic-experiences-in-microsoft-365"></a>Konfigurera ämnen i Microsoft 365
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LBp7]  
+
+</br>
 
 Du kan använda Microsoft 365 Admin Center för att konfigurera och konfigurera [avsnitts upplevelser](topic-experiences-overview.md). 
 
@@ -26,7 +32,7 @@ Det är viktigt att planera det bästa sättet att konfigurera och konfigurera �
 
 Du måste vara global administratör eller SharePoint-administratör för att få åtkomst till administrations centret för Microsoft 365 och konfigurera ämnen.
 
-## <a name="set-up-topic-experiences"></a>Konfigurera ämnen
+## <a name="set-up-topic-experiences"></a>Konfigurera ämnesupplevelser
 
 Så här konfigurerar du ämnen i Microsoft 365
 
