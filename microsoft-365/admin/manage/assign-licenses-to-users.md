@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 description: Lär dig hur man tilldelar licenser till användare.
 ms.date: 08/14/2020
-ms.openlocfilehash: ec2f9ae2e580987266c636343a66d7c21138e4c3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fc5f9112a22d56abb9c11d61f4108586487b4986
+ms.sourcegitcommit: 806536f859ac864228797f1f2f23b8f41040a6b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645137"
+ms.lasthandoff: 12/28/2020
+ms.locfileid: "49735804"
 ---
 # <a name="assign-licenses-to-users"></a>Tilldela licenser till användare
 
@@ -62,7 +62,7 @@ När du tilldelar licenser på sidan **Licenser** tilldelar du licenser för en 
 
 1. Gå till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> i administrationscentret.
 2. Välj en produkt.
-3. Välj **Tilldela licenser**på sidan produktinformation.
+3. Välj **Tilldela licenser** på sidan produktinformation.
 4. I fönstret **Tilldela licenser till användare** börjar du skriva ett namn och väljer sedan namnet från resultatet för att lägga till det i listan. Du kan lägga till upp till 20 användare åt gången.
 5. Välj **Aktivera eller inaktivera appar och tjänster** för att tilldela eller ta bort åtkomst till särskilda objekt.
 6. När du är klar väljer du **Tilldela** och sedan **Stäng**.
@@ -163,7 +163,7 @@ När du använder sidan **Aktiva användare** för att tilldela licenser tilldel
 
 ## <a name="assign-a-license-to-a-guest-user"></a>Tilldela en licens till en gästanvändare
 
-Du kan bjuda in gästanvändare att samarbeta med din organisation i Azure Active Directory administrationscenter. För information om gästanvändaren, se [Vad är gästanvändaråtkomst i Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b) Om du inte har någon gästanvändare se [Snabb start: lägga till gästanvändare i katalogen i Azure-portalen](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
+Du kan bjuda in gästanvändare att samarbeta med din organisation i Azure Active Directory administrationscenter. För information om gästanvändaren, se [Vad är gästanvändaråtkomst i Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b). Om du inte har någon gästanvändare se [Snabb start: lägga till gästanvändare i katalogen i Azure-portalen](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
 
 > [!IMPORTANT]
 > Du måste vara en global administratör för att utföra de här stegen.
@@ -171,10 +171,10 @@ Du kan bjuda in gästanvändare att samarbeta med din organisation i Azure Activ
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Azure Active Directory-administratörcenter</a>
 2. Välj **Användare** i navigeringsfönstret.
 3. På **Användare | Alla användare (Förhandsgranskning)** sidan väljer du **Lägg till filter**.
-4. I **Välj ett fält** väljer du **Användartyp**och sedan **Verkställ**.
+4. I **Välj ett fält** väljer du **Användartyp** och sedan **Verkställ**.
 5. I nästa meny väljer du **Gäst**.
 6. Välj den användare som behöver en licens i resultatlistan.
-7. Under **Hantera**väljer du **Licenser**.
+7. Under **Hantera** väljer du **Licenser**.
 8. Välj **Uppgifter**.
 9. På sidan **Uppdatera licenstilldelningar** väljer du den produkt som du vill tilldela en licens för.
 10. Gå till höger och avmarkera kryssrutorna för de tjänster som du inte vill att gäst användaren ska ha tillgång till.
