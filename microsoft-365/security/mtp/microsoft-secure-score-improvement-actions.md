@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 8ebfe5746a69cc0161c38f0467954fabb3839240
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: c463e375594b3581486cb8d4bdd380412e195b2e
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683349"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49738017"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Utvärdera dina säkerhets Posture med Microsofts säkra Poäng
 
@@ -74,14 +74,15 @@ Rangordning baseras på antalet Points kvar för att uppnå, implementera proble
 
 När du väljer en särskild förbättrings åtgärd visas en hel sida med utfällbar text.  
 
-![Förbättrings instruktionen utfälld exempel ](../../media/secure-score/secure-score-improvement-action-details.png)
- *figur 2: förbättrings åtgärd utfällbar exempel*
+![Exempel på förbättrings åtgärd](../../media/secure-score/secure-score-improvement-action-details.png)
 
 Om du vill slutföra åtgärden har du några alternativ:
 
-* Välj **Hantera** för att gå till sidan konfiguration och göra ändringen. Då får du de punkter som åtgärden är värd för, synlig i flyg ut. Det tar vanligt vis ungefär 24 timmar att uppdatera det.
+- Välj **Hantera** för att gå till sidan konfiguration och göra ändringen. Då får du de punkter som åtgärden är värd för, synlig i flyg ut. Det tar vanligt vis ungefär 24 timmar att uppdatera det.
 
-* Välj **dela** för att kopiera den direkta länken till förbättrings åtgärden. Du kan också välja plattformen för att dela länken, till exempel e-post, Microsoft Teams, Microsoft Planner eller ServiceNow. Om du väljer ServiceNow kan du skapa en ändrings biljett som visas i ServiceNow och Microsoft 365 Security Center Home. Mer information finns i [Microsoft 365 Security Center och ServiceNow integration](tickets-security-center.md).
+- Välj **dela** för att kopiera den direkta länken till förbättrings åtgärden. Du kan också välja plattformen för att dela länken, till exempel e-post, Microsoft Teams, Microsoft Planner eller ServiceNow. Om du väljer ServiceNow kan du skapa en ändrings biljett som visas i ServiceNow och Microsoft 365 Security Center Home. Mer information finns i [Microsoft 365 Security Center och ServiceNow integration](tickets-security-center.md).
+
+Lägga till **anteckningar** för att hålla koll på status eller något annat du vill kommentera. Om du lägger till egna **taggar** i förbättrings åtgärden kan du filtrera efter dessa taggar.
 
 ### <a name="choose-an-improvement-action-status"></a>Välj en förbättrings åtgärds status
 
@@ -94,23 +95,23 @@ Välj status och anteckningar för förbättrings åtgärden.
 
 #### <a name="threat--vulnerability-management-improvement-actions"></a>Hot & sårbarhet för hanterings förbättring
 
-För förbättrings åtgärder i kategorin "enhet" kan du inte välja status. I stället dirigeras du om till den associerade [Threat & säkerhets rekommendation för hantering (TVM)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) i [Microsoft Defender säkerhets Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) för att vidta åtgärder. Det undantag du väljer och motivering du skriver är specifikt för den portalen. Det finns inte på Microsofts säkra Poäng-Portal.
+För förbättrings åtgärder i kategorin "enhet" kan du inte välja status. I stället dirigeras du till [säkerhets rekommendationen för hotet och säkerhets problemet](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) i [Microsoft Defender säkerhets Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) för att vidta åtgärder. Det undantag du väljer och motivering du skriver är specifikt för den portalen. Det finns inte på Microsofts säkra Poäng-Portal.
 
 #### <a name="completed-improvement-actions"></a>Slutförda förbättrings åtgärder
 
-Förbättrings åtgärder har statusen "slutfört" när alla möjliga poäng för förbättrings åtgärden har uppnåtts. Slutförda förbättrings åtgärder bekräftas, men du kommer inte att kunna ändra den.
+Förbättrings åtgärder har statusen "slutfört" när alla möjliga poäng för förbättrings åtgärden har uppnåtts. Slutförda förbättrings åtgärder bekräftas med Microsoft-data och du kan inte ändra status.
 
 ### <a name="assess-information-and-review-user-impact"></a>Utvärdera information och granska användar påverkan
 
 I det avsnitt som heter kan du berätta för dig kategorin, angripna den **för** att skydda mot och produkten.
 
-**Användarens påverkan** visar vad användarna kommer att uppleva om förbättrings åtgärden utförs, och användare som **påverkas** av din upplevelse.
+Användarens **inverkan** är vad användarna kan uppleva om förbättrings åtgärden behandlas, och användare som **påverkas** är de personer som kommer att påverkas.
 
 ### <a name="implement-the-improvement-action"></a>Implementera förbättrings åtgärden
 
 I **implementerings** avsnittet visas eventuella förutsättningar för att förbättra förbättrings åtgärden, steg för steg-steg och anvisningar för förbättrings åtgärden.
 
-Förutsättningar innehåller alla licenser som måste erhållas eller åtgärder som måste slutföras innan förbättrings åtgärden åtgärdas. Kontrol lera att du har tillräckligt många platser i din licens för att slutföra förbättrings åtgärden och att dessa licenser tillämpas på de användare som behövs.  
+Förutsättningar inkluderar alla licenser som behövs eller åtgärder som ska utföras innan förbättrings åtgärden åtgärdas. Kontrol lera att du har tillräckligt många platser i din licens för att slutföra förbättrings åtgärden och att dessa licenser tillämpas på de användare som behövs.  
 
 ## <a name="we-want-to-hear-from-you"></a>Vi vill höra från dig
 

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 7fe5be065ee45700a1f08a39c8050757c3843f7b
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 6e9dd214e53e3fdd601fe51e5522a3a24a7fd3d0
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682577"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49738005"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -65,7 +65,6 @@ Resultatet uppdateras i real tid för att visa informationen som visas i åtgär
 - [Jämför poängen med dina organisationer som dina](microsoft-secure-score-history-metrics-trends.md#compare-your-score-to-organizations-like-yours)
 - [Visa förbättrings åtgärder och bestäm ett åtgärds abonnemang](microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score)
 - [Initiera och implementera arbets flöden](microsoft-secure-score-improvement-actions.md#view-improvement-action-details)
-    - [Microsoft 365 säkerhets Center och ServiceNow-integrering](tickets-security-center.md)
 
 ### <a name="how-improvement-actions-are-scored"></a>Hur förbättrings åtgärder betygs ätts
 
@@ -75,7 +74,15 @@ En förbättrings åtgärd visar till exempel 10 Poäng genom att skydda alla an
 
 ### <a name="products-included-in-secure-score"></a>Produkter ingår i säkra Poäng
 
-För närvarande finns det rekommendationer för Microsoft 365 (inklusive Exchange Online), Azure Active Directory, Microsoft Defender för slut punkt, Microsoft Defender för identitet och Cloud App Security. Rekommendationer för andra säkerhets produkter kommer snart. Rekommendationerna täcker inte alla de attack ytor som är associerade med varje produkt, men de är en bra original plan. Du kan också markera förbättrings åtgärderna som täcks av tredje part eller annan åtgärd.
+För närvarande finns det rekommendationer för följande produkter:
+
+- Microsoft 365 (inklusive Exchange Online)
+- Azure Active Directory
+- Microsoft Defender för Endpoint
+- Microsoft Defender for Identity
+- Cloud App Security
+
+Rekommendationer för andra säkerhets produkter kommer snart. Rekommendationerna täcker inte alla de attack ytor som är associerade med varje produkt, men de är en bra original plan. Du kan också markera förbättrings åtgärderna som täcks av tredje part eller annan åtgärd.
 
 ### <a name="security-defaults"></a>Standardinställningar för säkerhet
 
@@ -117,7 +124,7 @@ Med skrivskyddad åtkomst kan du inte redigera status eller anteckningar för en
 
 ## <a name="risk-awareness"></a>Risk medvetenhet
 
-Microsofts säkra poäng är en numerisk Sammanfattning av dina säkerhets Posture, baserat på systemkonfigurationer, användar beteende och andra säkerhetsrelaterade mått. Det är inte ett absolut mått på hur troligt det är att systemet eller data blir. I stället representerar den utsträckning som du har antagit säkerhets kontroller i din Microsoft-miljö som kan hjälpa till att undanröja risken att bli intrång. Ingen online tjänst är helt immun mot säkerhets brott och säkra Poäng bör inte tolkas som en garanti mot säkerhets brott på något sätt.
+Microsofts säkra poäng är en numerisk Sammanfattning av dina säkerhets Posture, baserat på systemkonfigurationer, användar beteende och andra säkerhetsrelaterade mått. Det är inte ett absolut mått på hur troligt det är att systemet eller data blir. I stället representerar den utsträckning som du har antagit säkerhets kontroller i din Microsoft-miljö som kan hjälpa till att undanröja risken att bli intrång. Ingen online tjänst är immun mot säkerhets brott och säkra Poäng bör inte tolkas som en garanti mot säkerhets brott på något sätt.
 
 ## <a name="we-want-to-hear-from-you"></a>Vi vill höra från dig
 

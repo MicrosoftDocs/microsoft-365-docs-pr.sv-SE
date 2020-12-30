@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 253e85da7bb85a0722831851f00051a50a96153e
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 61ac8c627dd701ac354a5d60d4774a6443b4d41e
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688417"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49737993"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nyheter i Microsofts säkra Poäng
 
@@ -37,7 +37,7 @@ Microsoft Secure score finns https://security.microsoft.com/securescore i [Micro
 
 ## <a name="december-2020"></a>December 2020
 
-### <a name="added-6-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>6 Accounts-relaterade förbättrings åtgärder för Microsoft Defender för slut punkten (tidigare Microsoft Defender ATP):
+### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Sex åtgärder för förbättring av konton har lagts till för Microsoft Defender för slut punkten (tidigare Microsoft Defender ATP):
 
 - Ange minsta längd för lösen ord för "14 eller fler tecken"
 - Ange "lösen ord historik" för "24 eller fler lösen ord"
@@ -52,7 +52,7 @@ Microsoft Secure score finns https://security.microsoft.com/securescore i [Micro
 
 Möjligheten att skapa ServiceNow biljetter genom säkra poäng genom att gå till **dela > ServiceNow** är inte längre tillgänglig. Tack för din feedback och fortsatta support medan vi bestämmer nästa steg.
 
-### <a name="added-3-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>3 tjänster-relaterade förbättrings åtgärder för Microsoft Defender för slut punkten (tidigare Microsoft Defender ATP):
+### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Tre tjänster-relaterade förbättrings åtgärder har lagts till i Microsoft Defender för slut punkten (tidigare Microsoft Defender ATP):
 
 - Åtgärda den icke-citerade tjänst Sök vägen för Windows-tjänster
 - Ändra sökvägen till den körbara filen till en gemensam skyddad plats

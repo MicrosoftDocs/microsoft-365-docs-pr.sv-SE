@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Lär dig hur du konverterar en privat post låda till en delad post låda som kan användas av flera användare. '
-ms.openlocfilehash: fa8e37b5e924f1b38755a953f40d8b70011213d0
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: f716bbd16be9f67189b19358ddf16a289f57f8e7
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698291"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49737971"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Konvertera en användarpostlåda till en delad postlåda
 
@@ -93,24 +93,15 @@ Anta att du har tagit bort ett användarkonto och du nu vill konvertera använda
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>Konvertera en användares postlåda i en hybridmiljö
 
-> [!NOTE] 
-> Med start 11 oktober 2018, Exchange hybrid distribution kan du skapa delade fjärranslutna post lådor med början i den kumulativa uppdateringen för Exchange Server 2013 och den kumulativa uppdateringen 10 för Exchange Server 2016 i en lokal Exchange Server-miljö. Du kan skapa eller ändra en delad fjärrpostlåda direkt med hjälp av den nya _delade_ parametern. Mer information finns i [cmdlets för att skapa eller ändra en delad fjärrpostlåda i en lokal Exchange-miljö](https://support.microsoft.com/help/4133605/cmdlets-to-create-modify-remote-shared-mailbox-in-on-premises-exchange).
+Mer information om hur du konverterar en användar post låda till en delad post låda i en Exchange-hybrid miljö finns i:
 
-Om den delade post lådan finns i en hybrid miljö och inte faller under ovanstående scenario **rekommenderar** vi att (nästan behöva!) du flyttar tillbaka användar post lådan till lokal post låda och sedan flyttar tillbaka den delade post lådan till molnet. 
-
-Så här gör du för att: om du konverterar post lådan i molnet kan den konverteras, men lokala användare tycker fortfarande att post lådan är post lådan, eftersom den nya verkligheten inte synkroniserar tillbaka till lokala platser.
-
-Vanligt vis är det här inget problem, men det finns några scenarier där de lokala attributen (som tror att post lådan är användarens post låda) kan skriva över de nya moln versionerna av dessa attribut och det kan leda till att post lådan konverteras tillbaka. Det här är ett problem med att användar post lådor kräver licenser **eller att de är mjuka borttagna efter 30 dagar**!
-
-Vi har åtgärdat de flesta skälen till att det här gäller, men det kan ändå inträffa, trots att det inte är ofta. Det bästa är att vara säkert och flytta tillbaka post lådan till lokal, konvertera den och sedan flytta tillbaka den delade post lådan till molnet. Den rekommenderade lösningen är inte ett brott mot licens avtalet för Hybrid miljöer eftersom förekomsten av användar post lådan är bara tillfällig. Du strider mot din licens om du bihörde användar post lådan eller den delade post lådan i din lokala organisation och inte flyttade den tillbaka till molnet.
-
+ - [Cmdlets för att skapa eller ändra en delad fjärrpostlåda i en lokal Exchange-miljö](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
+ - [Delade post lådor konverteras oväntat till användar post lådor efter att profilsynkronisering körs i en Exchange hybrid distribution](https://docs.microsoft.com/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
+ 
 
 > [!NOTE]
-> Om du är medlem i roll gruppen organisations hantering eller mottagare kan du använda Exchange Management Shell för att ändra en användar post låda till en delad post låda lokalt. Till exempel `Set-Mailbox -Identity mailbox1@contoso.onmicrosoft.com -Type Shared`.
+> Om du är medlem i roll gruppen organisations hantering eller mottagare kan du använda Exchange Management Shell för att ändra en användar post låda till en delad post låda lokalt. Till exempel `Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`.
 
-> [!TIP]
-> Se lösningen i den här support lösningen för instanser när [delade post lådor oväntat omvandlas till användar post lådor](https://support.microsoft.com/help/2710029/shared-mailboxes-are-unexpectedly-converted-to-user-mailboxes-after-di).
-  
 ## <a name="related-articles"></a>Relaterade artiklar
 
 [Om delade postlådor](about-shared-mailboxes.md)

@@ -20,17 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4dfe1c9595db869a59474a030a5dd8673cf7db24
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: ed937c90bbc6875ee3d72f710d5ac11d4069cbb6
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769250"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49738049"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Spåra din Microsoft säkra Poäng historik och uppfylla målen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 [Microsoft Secure score](microsoft-secure-score.md) är ett mått på en organisations säkerhets Posture, med ett högre nummer som indikerar fler förbättrings åtgärder. Den finns https://security.microsoft.com/securescore i [säkerhets Center för Microsoft 365](overview-security-center.md).
 
@@ -56,7 +55,7 @@ På fliken **mått & trender** finns det flera diagram för att du ska få mer i
 * **Regressions trend** – en tids linje med punkter som har regressed på grund av ändringar av konfiguration, användare eller enhet.  
 * **Jämförelse trend** – hur din organisations säkra Poäng jämförs med andra med över tiden. I den här vyn kan du inkludera rader som representerar medelvärdet av organisationer med liknande antal och en anpassad jämförelse vy som du kan ange.
 * **Trend** -och tids linje för att acceptera riskerna.
-* **Poäng ändringar** -antalet poäng uppnåddes, Points regressed, tillsammans med följande Poäng ändring, i det angivna datum intervallet.
+* **Poäng ändringar** -antalet poäng uppnåddes, Points regressed och ändrade Poäng i angivet datum intervall.
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>Jämför poängen med dina organisationer som dina
 
@@ -64,18 +63,18 @@ Det finns två platser för att se hur poängen jämförs med organisationer som
 
 #### <a name="comparison-bar-chart"></a>Jämförelse stapeldiagram
 
-Jämförelse fönstret är fliken **Översikt** . Hovra över diagrammet för att Visa poängen och poängen. Jämförelse data är anonymiserad så vi vet inte exakt vilka andra som har en kombination.
+Jämförelse fönstret är fliken **Översikt** . Hovra över diagrammet för att Visa poängen och poängen. Jämförelse data är anonymiserad så vi vet inte exakt vilka andra innehavare är i blandningen.
 
 ![Stapeldiagram med likartad Poäng](../../media/secure-score/secure-score-comparison-bar.png)
 
-- **Organisationer** som du kan ge dig medelvärdet av andra innehavare (förutsatt att minst 5 klienter kan jämföras) som uppfyller följande kriterier:
+- **Organisationer** som du vill: ett genomsnittligt antal andra innehavare (förutsatt att vi har minst fem eller fler klient organisationer) som uppfyller följande kriterier:
     1. Samma bransch
     2. Samma organisations storlek
     3. Alla regioner
     4. Microsoft-produkter som används är 80% liknande
     5. Affärs möjlighet (högsta poäng som kan uppnås genom aktuell licens) inom 20% från klient organisationen
 
-- **Anpassad jämförelse** : måste konfigureras först genom att välja **Hantera jämförelse** (endast om vi hittar fem eller fler klient organisationer) baserat på följande kriterier:
+- **Anpassad jämförelse**: måste ställas in genom att välja **Hantera jämförelse** utifrån följande kriterier:
     1. Valda branscher
     2. Vald organisations storlek
     3. Markerade regioner
@@ -83,7 +82,7 @@ Jämförelse fönstret är fliken **Översikt** . Hovra över diagrammet för at
     5. Microsoft-produkter som används är 80% liknande
     6. Affärs möjlighet (högsta poäng som kan uppnås genom aktuell licens) inom 20% från klient organisationen
 
-Om du inte har gjort en markering för att få färre än fem andra innehavare som vi kan jämföra med visas "inte tillgänglig på grund av begränsade data".
+Om du har gjort en anpassad markering men resultatet har färre än fem andra klient organisationer som vi kan jämföra med visas "inte tillgängligt på grund av begränsat data".
 
 #### <a name="comparison-trend"></a>Jämförelse trend
 
@@ -100,4 +99,4 @@ Om du har några problem kan du meddela oss genom att publicera det i [säkerhet
 - [Översikt över Microsofts säkra Poäng](microsoft-secure-score.md)
 - [Utvärdera säkerhets genom övergå molnet](microsoft-secure-score-improvement-actions.md)
 - [Kommer snart](microsoft-secure-score-whats-coming.md)
-- [Vad är nytt](microsoft-secure-score-whats-new.md)
+- [Nyheter](microsoft-secure-score-whats-new.md)
