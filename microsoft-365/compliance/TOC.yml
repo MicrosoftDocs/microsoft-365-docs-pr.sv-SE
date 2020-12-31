@@ -589,7 +589,7 @@
           items:
             - name: Lägga till dokumentägare i ett ärende
               href: add-custodians-to-case.md
-            - name: Lägga till flera dokumentägare i ett ärende
+            - name: Importera flera vårdnadshavare till ett ärende
               href: bulk-add-custodians.md
             - name: Hantera dokumentägare
               href: manage-new-custodians.md
