@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4c731869d1ec1740f8c9173705f9af72b0e2fe53
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 15f599f425e20540f5f7889efa632f5a9f11a4e8
+ms.sourcegitcommit: 25ac2736a66bb72c0d574c3fbde7472ac98d5321
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844758"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49741063"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>För hands versionen av Microsoft 365 Defender
 
@@ -62,6 +62,8 @@ Du vet att du har aktiverat förhandsgranskningsfunktionerna när kryssrutan **A
 Följande funktioner och förbättringar är för närvarande tillgängliga för förhandsgranskning:
 
 - **[Microsoft 365 Defender API](api-overview.md)** -API: er med Lop nivå Microsoft 365 Defender kan du automatisera arbets flöden baserat på de delade incidenterna och de avancerade jakt tabellerna. 
-- **[Vidta åtgärder i avancerad jakt](advanced-hunting-take-action.md)** – snabb till gångar som du hittar i en [Avancerad jakt](advanced-hunting-overview.md)snabbt.
-- **[Schema referens i portalen](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** – få information om avancerade tilläggs schema tabeller direkt i säkerhets Center. Förutom tabell-och kolumn beskrivningar innehåller den här referensen händelse typer ( `ActionType` värden) och exempel frågor.
+- **[Vidta åtgärder i avancerad jakt](advanced-hunting-take-action.md)**– snabb till gångar som du hittar i en [Avancerad jakt](advanced-hunting-overview.md)snabbt.
+- **[Schema referens i portalen](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**– få information om avancerade tilläggs schema tabeller direkt i säkerhets Center. Förutom tabell-och kolumn beskrivningar innehåller den här referensen händelse typer ( `ActionType` värden) och exempel frågor.
+- **[Funktionen DeviceFromIP ()](advanced-hunting-devicefromip-function.md)**– få information om vilka enheter som har tilldelats en specifik IP-adress eller adresser vid ett givet tidsintervall.
+
 
