@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 01/04/2021
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Använd gransknings-och larm principer och data subjekt förfrågningar för att övervaka och svara på frågor om person uppgifter.
-ms.openlocfilehash: 296220ac8b34d9ce10c783194b78ca344e746b84
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 3ae0f2a6528f6188500c7cee7732c6447013eaa6
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377205"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749593"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Övervaka och svara på data integritets incidenter i din organisation
 
@@ -78,9 +78,6 @@ Information om hur du svarar på en DSR-data i Microsoft 365 finns i artikeln om
 
 För Microsoft Stream, när en användare tas bort från Azure Active Directory (Azure AD), om deras namn var kopplad till en bokförd direkt uppspelnings video innan den punkten förblir e-postadressen kopplad till videon. Se [Hantera borttagna användare från Microsoft Stream](https://docs.microsoft.com/stream/managing-deleted-users) för att ta bort den.
 
-## <a name="additional-investigative-tools"></a>Ytterligare undersöknings verktyg
+## <a name="insider-risk-management-as-an-investigative-tool"></a>Insider riskhantering som ett undersöknings verktyg
 
-Här är ytterligare två verktyg som kan vara användbara för att övervaka, undersöka och åtgärda data integritets-relaterade incidenter i din organisation:
-
-- [Insider riskhantering i microsoft 365](../compliance/insider-risk-management.md), en funktion i administrations centret för Microsoft för att minimera intern risken genom att låta dig upptäcka, undersöka och vidta åtgärder för riskfyllda aktiviteter i organisationen.
-- [Data undersökningar i microsoft 365](../compliance/overview-data-investigations.md), en funktion i administrations centret för Microsoft för att söka efter känsliga, skadliga eller felplacerade data i Microsoft 365 och sedan undersöka vad som hände med att vidta lämpliga åtgärder för att åtgärda problemet.
+[Insider riskhantering i microsoft 365](../compliance/insider-risk-management.md) är en funktion i Microsoft Support Administration Center som hjälper dig att minimera intern risken genom att låta dig upptäcka, undersöka och vidta åtgärder för riskfyllda aktiviteter i din organisation.

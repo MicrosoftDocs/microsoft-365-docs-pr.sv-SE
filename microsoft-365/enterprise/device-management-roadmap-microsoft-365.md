@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: Översikten för konfiguration av enhets hantering för Microsoft 365.
-ms.openlocfilehash: d359cae62fbd1bf2468ad753670ff8e385d6f25b
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 79be47d6bc83c124f2203866986e06181a1f7f3d
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398967"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749545"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Enhets hanterings översikt för Microsoft 365
 
@@ -29,7 +29,7 @@ Microsoft 365 för Enterprise innehåller funktioner för att hantera enheter oc
 Det finns två alternativ för enhets hantering:
 
 - [Microsoft Intune](#microsoft-intune)
-- [Grundläggande mobilitet och säkerhet](#basic-mobility-and-security)
+- [Grundläggande Mobility and Security](#basic-mobility-and-security)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -39,7 +39,7 @@ Användare med egna personliga enheter kanske inte vill registrera sina enheter 
 
 Du bestämmer också hur du ska hantera personliga enheter och företagsägda enheter. Du kanske vill behandla enheter på olika sätt, beroende på hur de används.
 
-## <a name="basic-mobility-and-security"></a>Grundläggande mobilitet och säkerhet
+## <a name="basic-mobility-and-security"></a>Grundläggande Mobility and Security
 
 Den är inbyggd i Microsoft 365 och hjälper dig att skydda och hantera användares mobila enheter som iPhone, iPad, Android och Windows-telefoner. Du kan skapa och hantera säkerhets principer för enheter, rensa en enhet och se detaljerade enhets rapporter.
 
@@ -49,8 +49,8 @@ För att hjälpa dig att bättre bedöma vilka enheter som hanteras bäst för d
 
 Baserat på din utvärdering kan du komma igång med att hantera dina enheter:
 
-- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide).
-- [Grundläggande mobilitet och säkerhet](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd).
+- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
+- [Grundläggande Mobility and Security](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
  
 ## <a name="identity-and-device-access-recommendations"></a>Rekommendationer för identitets- och enhetsåtkomst
 

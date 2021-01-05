@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer och slutanvändare kan läsa mer om hur man skickar meddelanden (god e-post markerat som dålig eller dålig e-post) till Microsoft för analys.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 68a0921f85e5b916cd53ebe84e4ea7d35e39967e
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: fe8e3c5ed44c7578764ed0bf19408f4db16e3740
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877711"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751565"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Skicka meddelanden till Microsoft för analys manuellt
 
@@ -48,9 +48,9 @@ Om du får ett meddelande som skickas via skräp post filter som skulle ha ident
 
 1. Skapa ett nytt, tomt e-postmeddelande med någon av följande mottagare:
 
-   - **Skräp post** : `junk@office365.microsoft.com`
+   - **Skräp post**: `junk@office365.microsoft.com`
 
-   - **Nätfiske** : `phish@office365.microsoft.com`
+   - **Nätfiske**: `phish@office365.microsoft.com`
 
 2. Dra och släpp skräp post eller nätfiske till det nya meddelandet. Detta sparar skräp post-eller nät fiske meddelandet som en bifogad fil i det nya meddelandet. Kopiera och klistra inte in innehållet i meddelandet eller vidarebefordra det (vi behöver det ursprungliga meddelandet så att vi kan kontrol lera meddelande huvudena).
 
@@ -90,6 +90,10 @@ Om ett meddelande felaktigt har identifierats som skräp post kan du skicka medd
 
 > [!TIP]
 > Administratörer har flera olika sätt att tillåta vissa meddelanden att hoppa över filtrering av skräp post. Mer information finns i [skapa säkra avsändar listor i EOP](create-safe-sender-lists-in-office-365.md).
+
+## <a name="where-is-the-data-from-submissions-to-microsoft-stored"></a>Var lagras data från inlägg till Microsoft?
+
+Informationen finns i begränsningen för Office 365-kompatibilitet i Nord amerikanska data Center. Informationen granskas av analytiker på ingenjörs avdelningen för att förbättra filterens effektivitet.
 
 ## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Skapa en regel för e-postflöde för att ta emot kopior av meddelanden som rapporteras till Microsoft
 

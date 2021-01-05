@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 'När du är inloggad med giltiga arbets-eller skol konton kan användarna få molnbaserade stöd tjänster med Cortana i Microsoft 365-upplevelser som uppfyller Office 365: s sekretess, säkerhet och efterlevnad.'
-ms.openlocfilehash: aaef43f33bb06bf43d5e68fbc2509686fc8dd371
-ms.sourcegitcommit: 16cbac5eacadd7b30cbca1fd2435ba9098de5e1c
+ms.openlocfilehash: bd296b19d0e21abb39fe39e2a0bb92d0d84d9034
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48785544"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751341"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana i Microsoft 365
 
@@ -37,7 +37,7 @@ Flytta framåt, vi fokuserar Cortana på företagets produktivitet.
 
 - Med beaktande av andra Office 365-tjänster uppfyller Cortana-tjänsterna samma integritet, säkerhet och efterlevnad för företags nivå som återspeglas i [Online Services (ost) villkor](https://www.microsoft.com/licensing/product-licensing/products).
 
-- Nya Microsoft 365-upplevelser, till exempel e-postmeddelandet och spela upp mina e-postmeddelanden, kommer att aktive ras med Cortana Enterprise-tjänster och helt uppfylla dessa löfte. De här funktionerna är för närvarande tillgängliga på engelska (USA) marknad för användare med post lådor i USA geo, och för anställda i multinationella företag med amerikanska post lådor. Mer information om hur du hittar användnings platsen finns i [Visa ytterligare egenskaps värden för konton](https://docs.microsoft.com/microsoft-365/enterprise/view-user-accounts-with-microsoft-365-powershell?view=o365-worldwide#view-additional-property-values-for-accounts).
+- Nya Microsoft 365-upplevelser, till exempel e-postmeddelandet och spela upp mina e-postmeddelanden, kommer att aktive ras med Cortana Enterprise-tjänster och helt uppfylla dessa löfte. De här funktionerna är tillgängliga i hela världen (standard för flera innehavare). Mer information om hur du hittar användnings platsen finns i [Visa ytterligare egenskaps värden för konton](https://docs.microsoft.com/microsoft-365/enterprise/view-user-accounts-with-microsoft-365-powershell?view=o365-worldwide#view-additional-property-values-for-accounts).
 
 - Användare kan ansluta till Cortana Enterprise-tjänster som beskrivs här via Cortana i Windows 10 (version 2004 och senare), samt klient program, till exempel Outlook för iOS och Android, beroende på separata licens villkor. 
 
@@ -95,11 +95,11 @@ Enskilda användare kan testa Cortana-hjälpen i Teams-mobilappen genom att klic
 
 1. Öppna mobilappen för Teams eller gå till den omgivande skärmen (start) i Microsoft Teams display.
 
-2. I Teams-mobilappen går du till **Inställningar** . Välj användare i Microsoft Teams-visningen och välj sedan inställningar. Om Cortana är aktiverat, säg &#8220;Cortana, gå till inställningar. &#8221;
+2. I Teams-mobilappen går du till **Inställningar**. Välj användare i Microsoft Teams-visningen och välj sedan inställningar. Om Cortana är aktiverat, säg &#8220;Cortana, gå till inställningar. &#8221;
 
-3. Välj **Cortana** .
+3. Välj **Cortana**.
 
-4. Flytta växlings knappen till **på** eller **av** , beroende på om du vill ha Cortana-Hjälp på enheten.
+4. Flytta växlings knappen till **på** eller **av**, beroende på om du vill ha Cortana-Hjälp på enheten.
 
 [Läs mer om Cortana-assistans i Teams](https://docs.microsoft.com/microsoftteams/cortana-in-teams)
 
@@ -115,9 +115,9 @@ Det går att avanmäla mina e-postmeddelanden med hjälp av följande anvisninga
 
 1. Öppna Outlook Mobile.
 
-2. Gå till **Inställningar** .
+2. Gå till **Inställningar**.
   
-3. Välj **spela upp mina e-postmeddelanden** .
+3. Välj **spela upp mina e-postmeddelanden**.
 
 4. Flytta reglaget till av på de konton som du vill inaktivera.
 
@@ -141,7 +141,7 @@ Vi fortsätter att introducera fler upplevelser som ovan för att öka organisat
 
 Här är de två olika sätten att se hur Cortana fungerar i ditt företag:
 
-**Nya upplevelser för organisationer med Cortana Enterprise-tjänster** : Cortana företags tjänster är utformade för att uppfylla kraven på säkerhet och efterlevnad hos organisationer: 
+**Nya upplevelser för organisationer med Cortana Enterprise-tjänster**: Cortana företags tjänster är utformade för att uppfylla kraven på säkerhet och efterlevnad hos organisationer: 
 
 1. Det här är en ny tjänst som diskuteras här i det här dokumentet.
 
@@ -151,7 +151,7 @@ Här är de två olika sätten att se hur Cortana fungerar i ditt företag:
 
 4. IT-administratörer har alltid kontroller för valfri ansluten upplevelse för Cortana, ungefär som valfri ansluten upplevelse med Office ProPlus-program.  
 
-**Befintliga tjänster för konsumenter** : Cortana valfria anslutna tjänster är främst avsedda för klient upplevelser och levereras för närvarande i Windows 10 (version 1909 och tidigare) och Cortana-appen på iOS och Android.
+**Befintliga tjänster för konsumenter**: Cortana valfria anslutna tjänster är främst avsedda för klient upplevelser och levereras för närvarande i Windows 10 (version 1909 och tidigare) och Cortana-appen på iOS och Android.
 
 1. Dessa upplevelser möjliggör funktioner som väder, nyheter och trafik.
 
@@ -159,10 +159,10 @@ Här är de två olika sätten att se hur Cortana fungerar i ditt företag:
 
 Inaktivera Cortana-åtkomst till organisationens Microsoft-värdbaserade data
 
-1. I administrations centret för Microsoft 365 väljer du **Inställningar**  >  **organisations inställningar** och väljer **Cortana** .
+1. I administrations centret för Microsoft 365 väljer du **Inställningar**  >  **organisations inställningar** och väljer **Cortana**.
 
 2. Avmarkera kryss rutan för **Tillåt Cortana i Windows 10 (version 1909 och tidigare) och Cortana-appen på iOS och Android för att få åtkomst till Microsoft-värd uppgifter för personer i organisationen** för att inaktivera Cortana-anslutna upplevelser.
 
-3. Välj **Spara ändringar** .
+3. Välj **Spara ändringar**.
 
 För tjänster som lyder under [Microsofts tjänste avtal](https://go.microsoft.com/fwlink/p/?LinkId=2109174) och [Microsofts sekretess policy](https://privacy.microsoft.com/privacystatement)är Microsoft datakontrollanten. Som data kontroll använder Microsoft data för att förbättra produkter och tjänster i enlighet med [Microsofts sekretess policy](https://privacy.microsoft.com/privacystatement).

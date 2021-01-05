@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Hur en fiktiv men representativ global organisation antog Microsoft 365 för företag.
-ms.openlocfilehash: 4b17f87008f47d45737fcdbe67d5c8425d4f5530
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: b009e02cde0708c54fbd8e047029dae9f67a145b
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371618"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749573"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 för företag för Contoso Corporation
 
@@ -69,7 +69,7 @@ Mer information finns i följande artiklar:
 
 Se dessa ytterligare IT-scenarier och-konfigurationer:
 
-- [COVID-19 svar och infrastruktur för fjärrsamtal-och-på-plats-arbete](../solutions/contoso-remote-onsite-work.md)
+- [Svar mot COVID-19 och infrastruktur för distans- och på plats-arbete](../solutions/contoso-remote-onsite-work.md)
 
   Lär dig hur contoso har uppdaterat sin infrastruktur för fjärråtkomst för COVID-19 Pandemic och deras nya installationer och uppdateringar av infrastrukturen för fjärrsamtal.
 

@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Vanliga frågor och svar om Microsoft-bokningar.
-ms.openlocfilehash: 47bb71476c3fd0b32f9be3e71b188bef6efe2498
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 35e1b71fb7d87d40aa9a3a60d2e3cf108f36c2bf
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561561"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751387"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Vanliga frågor och svar om Microsoft-bokningar
 
@@ -34,6 +34,10 @@ Bokningar är tillgängliga och aktiva som standard för Microsoft 365 Business 
 ### <a name="will-my-customers-see-my-personal-or-business-calendar"></a>Ser mina kunder min personliga eller företags kalender?
 
 Kunderna ser bara den kalender som du publicerar online för de tjänster, tider och personal du väljer att registrera.
+
+### <a name="how-do-i-change-a-bookable-attribute-under-manage-staff"></a>Hur ändrar jag ett bookable-attribut under hantera personal?
+
+När personalen lades till skulle de ha fått ett e-postmeddelande för att acceptera eller avvisa begäran. De kan öppna samma e-postadress och välja "avvisa" för att göra dem icke-bookable. För närvarande finns det inte något sätt att växla detta från appen.
 
 ### <a name="how-do-end-users-access-the-bookings-app"></a>Hur kommer användarna åt programmet program vara?
 
@@ -306,7 +310,7 @@ För att anteckningarna ska synkroniseras korrekt med personalens kalendrar mås
    > [!div class="mx-imgBorder"]
    > ![Bild av Outlook i Start programmet](../media/bookings-applauncher-outlook.png)
 
-1. Välj **dela** kalender högst upp på sidan \> **Calendar**.
+1. Välj **dela** kalender högst upp på sidan \> .
 
    ![Bild av menyn för kalender delning](../media/bookings-share-calendar.png)
 
@@ -354,11 +358,11 @@ Om du fortfarande får det här felet efter en längre tid eller om du ser det o
 
   - [Börja använda Microsoft-bokningar](get-access.md)
 
-  - [Aktivera eller inaktivera Microsoft-bokningar](turn-bookings-on-or-off.md)
+  - [Aktivera eller inaktivera Microsoft Bookings](turn-bookings-on-or-off.md)
 
   - [Lägga till användare individuellt eller i bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users?view=o365-worldwide.)
 
-  - [Lägga till personal i bokningar](add-staff.md)
+  - [Lägg till personal i Bookings](add-staff.md)
 
   - [API-komponenter som ska automatiseras efter att mallen har definierats](https://docs.microsoft.com/graph/api/bookingbusiness-post-bookingbusinesses)
 
@@ -366,7 +370,7 @@ Om du fortfarande får det här felet efter en längre tid eller om du ser det o
 
   - [Principer för efterlevnadsprinciper](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365?view=o365-worldwide#bookings)
 
-  - [Anpassa och publicera boknings sidan](customize-booking-page.md)
+  - [Anpassa och publicera din bokningssida](customize-booking-page.md)
 
   - [Konfiguration av klient post lådor](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)
 

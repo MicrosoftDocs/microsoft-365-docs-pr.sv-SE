@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Läs mer om användar upplevelsen för SharePoint, OneDrive och Exchange i en multi-geo-miljö för Microsoft 365.
-ms.openlocfilehash: c94fc5569a5444ca6361712f57460cf0c977b18e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 558e5a1f7ff2f6f5485a9f32d6e2b43b552b7f17
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694479"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749581"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>Användar upplevelse i en multi-geo-miljö
 
@@ -44,7 +44,7 @@ Office-program som Word, Excel och PowerPoint identifierar automatiskt den korre
 
 ## <a name="onedrive-for-business-sync-client"></a>Synkroniseringsklient för OneDrive för företag
 
-Synkroniseringsklienten för OneDrive för företag (version 17.3.6943.0625 och senare) identifierar automatiskt rätt OneDrive för företag Geo-plats för användaren. Stöd för Synch client inkluderar möjligheten att synkronisera grupperade webbplatser oavsett deras Geo-plats. Observera att synkroniseringsklienten för Groove inte stöds för multi-geo. 
+Synkroniseringsklienten för OneDrive för företag (version 17.3.6943.0625 och senare) identifierar automatiskt rätt OneDrive för företag Geo-plats för användaren. Stöd för synkroniseringsklient inkluderar möjligheten att synkronisera grupperade webbplatser oavsett deras Geo-plats. Observera att synkroniseringsklienten för Groove inte stöds för multi-geo. 
 
 ## <a name="onedrive-for-business-location"></a>OneDrive för företag-plats
 
@@ -94,7 +94,7 @@ SharePoint Mobile-klienten är en geo medveten och visar relevant innehåll och 
 
 ## <a name="sharing"></a>Delning
 
-Person väljaren visar alla användare oavsett deras Geo-plats. Det gör det möjligt för en användare att dela med sig av sina geo-eller andra användares geo-platser. Innehåll från olika geo-platser visas i vyn **delas med mig** i användarens OneDrive för företag och kan nås med enkel inloggnings upplevelse oavsett vilken Geo-plats den finns i.
+Person väljaren visar alla användare oavsett deras Geo-plats. Det gör det möjligt för en användare att dela med sig av sina geo-eller andra användares geo-platser. Innehåll från olika geo-platser visas i vyn **delas med mig** i användarens OneDrive för företag och kan nås med en enda Sign-On-upplevelse oavsett vilken Geo-plats den är värd för.
 
 ## <a name="teams-experience"></a>Teams Experience
 
