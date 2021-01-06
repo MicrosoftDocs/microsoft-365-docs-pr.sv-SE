@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: förstå åtgärderna för migrering och påverkan av förflyttning från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i det nya tyska Data Center-området.'
-ms.openlocfilehash: 4a54fed8a109c3d03b735a5db3cb48060f5c438f
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.openlocfilehash: 940ad0799aca7ead20d226cfcf3cc4b7b21c6cdb
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719398"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760204"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Åtgärder och konsekvenser för migreringen från Microsoft Cloud Deutschland (allmänt)
 
@@ -77,6 +77,10 @@ Ytterligare överväganden:
 - Om din organisation ändå använder SharePoint 2010-arbetsflöden fungerar de inte längre efter 31 december 2021. SharePoint 2013-arbets flöden fortsätter att fungera men är inaktiverat som standard för nya klient organisationer som börjar den 1 november 2020. När migreringen till SharePoint Online-tjänsten är klar rekommenderar vi att du går vidare till Power automatisering eller andra lösningar som stöds.
 
 - När migreringen av OneDrive har genomförts till den tyska regionen återskapas data indexet. Funktioner som är beroende av Sök index kan påverkas under Omindexering.
+
+- Microsoft Cloud Deutschland kunder vars SharePoint Online-instans ännu inte migrerats måste finnas kvar på SharePoint Online PowerShell-modulen/Microsoft. SharePointOnline. CSOM version 16.0.20616.12000 eller tidigare. Annars Miss lyckas anslutningar till SharePoint Online via PowerShell eller klient objekt modellen.
+
+- Microsoft Cloud Deutschland-kunder vars SharePoint Online-instans migreras måste uppdatera SharePoint Online PowerShell-modulen/Microsoft. SharePointOnline. CSOM till version 16.0.20717.12000 eller senare. Annars Miss lyckas anslutningar till SharePoint Online via PowerShell eller klient objekt modellen.
 
 
 ## <a name="skype-for-business-online"></a>Skype för företag online

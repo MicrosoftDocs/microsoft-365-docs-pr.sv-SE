@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Den här artikeln innehåller felsöknings information för problem med att skicka e-post till Inkorgen i Microsoft 365 & metod tips för Mass utskick till Microsoft 365-kunder.
-ms.openlocfilehash: 8b7c008f827a579e234d8a8feab008d36ecfe064
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 3504d7518073826f3979c3c837c58d4406886b41
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615414"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760488"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Felsöka e-post som skickas till Microsoft 365
 
@@ -88,7 +88,7 @@ Om du ofta utför Mass utskick av e-post till Microsoft 365-användare och vill 
 
 ### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Kontrol lera att från-namnet återspeglar vem som skickar meddelandet
 
-Ämnet bör vara en kort sammanfattning av vad meddelandet rör sig om och meddelandets brödtext bör tydligt och succinctly Visa vad erbjudandet, tjänsten eller produkten är till för. Till exempel:
+Ämnet bör vara en kort sammanfattning av vad meddelandet rör sig om och meddelandets brödtext bör tydligt och succinctly Visa vad erbjudandet, tjänsten eller produkten är till för. Ett exempel:
 
 Rätt:
 
@@ -102,7 +102,7 @@ Ju lättare du gör det för folk att veta vem du är och vad du gör är det mi
 
 ### <a name="always-include-an-unsubscribe-option-in-campaign-emails"></a>Inkludera alltid alternativet för att avbryta prenumerationer i e-post för kampanjer
 
-Marknadsförings-e-postmeddelanden, särskilt nyhets brev, bör alltid innehålla ett sätt att avsluta en framtida e-post. Till exempel:
+Marknadsförings-e-postmeddelanden, särskilt nyhets brev, bör alltid innehålla ett sätt att avsluta en framtida e-post. Ett exempel:
 
  `This email was sent to example@contoso.com by sender@fabrikam.com.`
 
@@ -126,9 +126,9 @@ Precis så viktigt som att e-postmeddelandena skickas är innehållet de innehå
 
 - När e-postmeddelandet begär att mottagarna lägger till avsändaren i adress boken bör det tydligt uppges att sådan åtgärd inte är en garanti för leverans.
 
-- Omdirigeringar som ingår i meddelandets brödtext ska vara liknande och enhetliga och inte multipla och varierande. Det är bara att omdirigera från meddelandet, till exempel länkar och dokument. Om du har många annonserings-eller avprenumerations länkar eller uppdaterar profil länkarna måste de peka på samma domän. Till exempel:
+- Omdirigeringar som ingår i meddelandets brödtext ska vara liknande och enhetliga och inte multipla och varierande. Det är bara att omdirigera från meddelandet, till exempel länkar och dokument. Om du har många annonserings-eller avprenumerations länkar eller uppdaterar profil länkarna måste de peka på samma domän. Ett exempel:
 
-  Rätt:
+  Korrekt (alla domäner är desamma):
 
   `unsubscribe.bulkmailer.com`
 
@@ -136,7 +136,7 @@ Precis så viktigt som att e-postmeddelandena skickas är innehållet de innehå
 
   `options.bulkmailer.com`
 
-  Fel:
+  Fel (alla domäner är olika):
 
   `unsubscribe.bulkmailer.com`
 

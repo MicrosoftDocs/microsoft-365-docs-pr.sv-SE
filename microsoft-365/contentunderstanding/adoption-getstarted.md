@@ -12,12 +12,12 @@ ms.collection: enabler-strategic
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 18bc5d8d0f80f7cee024f4d6358361509879bd11
-ms.sourcegitcommit: 86f75cf77a7a446a79226ca530bd7b5eb39189cb
+ms.openlocfilehash: 95e1ad15a62762c8b28203e178d4d4ae7906e38a
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49717025"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760248"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex: komma igång
 
@@ -31,28 +31,30 @@ Med nya AI-tjänster och-kapaciteter kan du skapa program för innehålls först
 
 |Manuell inmatning| Formulär bearbetning | Dokument förståelse |
 |:-------|:--------|:--------|
-| Data inmatning och arbets kraft för allt innehåll | Bearbeta digitalt innehåll – foton, skannar, kvitton, visitkort, video med OCR & text |  Fånga innehålls typer och metadata från kontrakt, Merit förteckningar och andra strukturerade dokument |
-| Active   | Färdiga, automatiserade   | Anpassat, assisterande  |
-| Personer som gör jobbet | I ämnes experter (SMF). Fånga innehålls typer och metadata från kontrakt, Merit förteckningar, andra strukturerade dokument. | Små och medel stora företag är mindre inblandade. från inköps order, program, andra halv strukturerade och strukturerade dokument |
+| Data inmatning och arbets kraft för allt innehåll. | Identifiera filer och hämta data från strukturerade eller halv strukturerade dokument, till exempel formulär och fakturor. |  Identifiera och extrahera data från ostrukturerade dokument, till exempel bokstäver eller kontrakt, där de textenheter som du vill extrahera finns i meningar eller vissa områden i dokumentet. |
+| Active.   |  Anpassat, assisterande.  | Färdiga, automatiserade. |
+| Personer som sköter arbetet. | I ämnes experter (SMF). | Små och medel stora företag är mindre inblandade. |
 
-I följande tabell förklaras vad du får när du använder SharePoint Syntex:
+I följande tabell förklaras tillgänglighet och licensiering för SharePoint Syntex:
 
 | Formulär bearbetning | Dokument förståelse |
 |:-------|:-------|
-| Finns i APAC, Australien, Kanada, EU, JP, Latinamerika, Storbritannien, USA | Tillgänglig i alla regioner |
-| Använder AI Builder-kredit-1M-kredit = 2000-sidor; Förbrukningen är ungefär 2000 fakturor = 2 enheter. Power autoautomatisera krävs – om du behöver mer kan du lägga till det. 1M tillgodohavanden är tilldelade till 300 + köpta licenser. Du kan också köpa kredit separat. | Modeller fungerar på alla latinska språk. Förutom engelska: tyska, svenska, engelska, franska, spanska, italienska och portugisiska. |
-| Tillhandahålls mot Standard miljön för gemensam data tjänst| Saknar kapacitets begränsningar. |
+| Formulär bearbetning är beroende av Power Platform. <br>Information om global tillgänglighet för Power Platform och AI Builder finns i [tillgänglighet för Power Platform](https://dynamics.microsoft.com/geographic-availability/). | Tillgänglig i alla regioner. |
+| Använder AI Builder-kredit.<br>Tillgodohavanden kan köpas i batchar med 1M.<br>1M-kredit ingår när Syntex-licenser för 300 + SharePoint köps.<br>1M-kredit möjliggör bearbetning av 2000-filsidor. | Modeller fungerar på alla latinska språk. Förutom engelska: tyska, svenska, engelska, franska, spanska, italienska och portugisiska. |
+| Tillhandahålls mot Standard miljön för gemensam data tjänst. | Saknar kapacitets begränsningar. |
+
+Få reda på mer om AI-byggares kredit och enheter i [AI Builder-licensiering](https://docs.microsoft.com/ai-builder/administer-licensing).
 
 Det finns två olika sätt att förstå innehållet. Vilken modell typ du använder är baserad på fil format och användnings fall:
 
 | Formulär bearbetning | Dokument förståelse |
 |:-------|:-------|
-| Skapat från dokument bibliotek | Skapat i innehålls Center, som ingår i SharePoint Syntex |
-| Modell skapad i AI Builder | Modell skapad i inbyggt gränssnitt |
-| Används för halv strukturerade fil format | Används för ostrukturerade fil format |
-| Uppställd klassificerare | Tågens klassificerare med valfria utdrag |
-| Begränsat till ett enda bibliotek | Kan tillämpas på flera bibliotek |
-| Träna på PDF, JPG, PNG-format, totalt 50 MB/500 sid | Utbilda dig på 5-10 PDF-, Office-och e-postfiler, inklusive negativa exempel |
+| Skapades från ett dokument bibliotek. | Skapat i innehålls Center, som ingår i SharePoint Syntex. |
+| Modell skapad i AI Builder. | Modell skapad i inbyggt gränssnitt. |
+| Används för halv strukturerade fil format. | Används för ostrukturerade fil format. |
+| Uppställd klassificerare. | Tågens klassificerare med valfria utdrag. |
+| Begränsat till ett enda bibliotek. | Kan tillämpas på flera bibliotek. |
+| Utbilda dig på PDF, JPG, PNG-format, totalt 50 MB/500 sid. | Träna på 5-10 PDF-, Office-och e-postfiler, inklusive negativa exempel. |
 
 SharePoint-Syntex integreras med Microsoft 365-funktioner för kompatibilitet som:
 

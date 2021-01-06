@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du distribuerar team med skydd för mycket känslig data.
-ms.openlocfilehash: 77ec469776bf263bbd3d667a28f1f9b1bc3284b5
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 6354de5a37547d14b16a4d6a0857ddc390d531e6
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49612970"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750815"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Konfigurera team med skydd för mycket känslig data
 
@@ -63,21 +63,26 @@ Att skapa en känslighetsetikett
 1. Öppna [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com).
 2. Under **Lösningar** klickar du på **Informationsskydd**.
 3. Klicka på **Skapa en etikett**.
-4. Namnge etiketten. Vi föreslår **Mycket känslig**, men du kan välja ett annat namn om denna redan används.
-5. Lägg till ett knapptips och klicka sedan på **Nästa**.
-6. I listrutan **Kryptering** på sidan **Kryptering** väljer du **Använd**. 
-7. Under **Tilldela behörigheter för vissa användare och grupper** klickar du på **Tilldela behörigheter**.
-8. Klicka på **Lägga till alla användare och grupper i organisationen**.
-9. Om det finns gästanvändare som ska ha behörighet att dekryptera filer klickar du på **Lägga till användare eller grupper** och lägger till dem.
-10.  Klicka på **Spara** och sedan på **Nästa**.
-11. Om du vill lägga till ett sidhuvud, en sidfot eller en vattenstämpel automatiskt i filer som klassificeras med den här etiketten går du till sidan **Markering av innehåll**.
-12. På sidan **Inställningar för webbplatser och grupper** ställer du **inställningar för webbplatser och grupper** till **På**.
-13. I listrutan **Sekretess för gruppanslutna teamwebbplatser i Office 365** väljer du **Privat – endast användare kan komma åt webbplatsen**.
-14. Om du vill tillåta gäståtkomst markerar du kryssrutan **Låt gruppägarna för Office 365 lägga till personer utanför organisationen i gruppen**. 
-15. Under **Ohanterade enheter** väljer du **Blockera åtkomst**.
-16. Klicka på **Nästa**.
-17. På sidan **Auto-etiketting för Office-program** klickar du på **Nästa**.
-18. Klicka på **Skicka** och klicka sedan **Klart**.
+4. Namnge etiketten. Vi föreslår **Känslig**, men du kan välja ett annat namn om det redan används.
+5. Lägg till ett visningsnamn och en beskrivning och klicka på **Nästa**.
+6. På sidan **Definiera omfång för etikett** väljer du **filer och e-postmeddelanden** samt **grupper och webbplatser** och klickar på **Nästa**.
+7. På sidan **Välj säkerhetsinställningar för filer och e-postmeddelanden** väljer du **Kryptera filer och e-postmeddelande** och klickar på **Nästa**.
+8. På sidan **Kryptering** väljer du **Konfigurera krypteringsinställningar**.
+9. Under **Tilldela behörigheter för vissa användare och grupper** klickar du på **Tilldela behörigheter**.
+10. Klicka på **Lägga till alla användare och grupper i organisationen**.
+11. Om det finns gästanvändare som ska ha behörighet att dekryptera filer klickar du på **Lägga till användare eller grupper** och lägger till dem.
+12.  Klicka på **Spara** och sedan på **Nästa**.
+13. På sidan *Auto-etiketting för filer och e-postmeddelanden** klickar du på **Nästa**.
+14. På sidan **Definiera säkerhetsinställningar för grupper och webbplatser** väljer du **Inställningar för sekretess och extern användaråtkomst** samt **Inställningar för enhetsåtkomst och extern delning** och klickar på **Nästa**.
+15. Välj alternativet **Privat** under **Sekretess** på sidan **Definiera inställningar för sekretess och extern användaråtkomst**.
+16. Om du vill tillåta gäståtkomst väljer du **Låt Microsoft 365-gruppägare lägga till personer utanför organisationen i gruppen som gäster** under **Extern användaråtkomst**.
+17. Klicka på **Nästa**.
+18. På sidan **Definiera inställningar för extern delning och enhetsåtkomst** väljer du **Styra extern delning från etiketterade SharePoint-webbplatser**.
+19. Under **Innehåll kan delas med** väljer du **Nya och befintliga gäster** om du vill tillåta gäståtkomst eller **Endast personer i organisationen**.
+20. Under **Åtkomst från ohanterade enheter** väljer du **Blockera åtkomst**.
+21. Klicka på **Nästa**.
+22. På sidan **Auto-etiketting för databaskolumner** klickar du på **Nästa**.
+23. Klicka på **Skapa etikett** och sedan på **Klart**.
 
 När du har skapat en etikett måste du publicera den till de användare som ska använda den. För känsligt skydd gör vi etiketterna tillgängliga för alla användare. Du publicerar etiketten i Microsoft 365 Efterlevnadscenter på fliken **Etikettprinciper** på sidan **Informationskydd**. Om du har en befintlig princip som gäller för alla användare kan du lägga till den här etiketten i principen. Om du behöver skapa en ny princip kan du läsa [Publicera känsliga etiketter genom att skapa en etikettpolicy](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy).
 

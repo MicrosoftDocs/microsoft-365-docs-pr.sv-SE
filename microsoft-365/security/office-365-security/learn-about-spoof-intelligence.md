@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om förfalsknings intelligens i Exchange Online Protection (EOP), där du kan tillåta eller blockera specifika avsändare.
-ms.openlocfilehash: bc8ae2664acf96ea6cd4c20c2f9195db9b75b3da
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: 603aeb35241f9808561593afa69b3b9ce7193fb0
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602127"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760536"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Konfigurera förfalsknings information i EOP
 
@@ -33,7 +33,7 @@ ms.locfileid: "49602127"
 
 I Microsoft 365-organisationer med post lådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor skyddas inkommande e-postmeddelanden automatiskt mot förfalskning genom EOP som i oktober 2018. EOP använder förfalsknings intelligens som en del av organisationens allmänna försvar mot nätfiske. Mer information finns i [skydd mot förfalskning i EOP](anti-spoofing-protection.md).
 
-När en avsändare får en e-postadress ser de ut som en användare i en av organisationens domäner eller en användare i en extern domän som skickar e-post till din organisation. Angripare som är falska att skicka skräp post eller nätfiske måste blockeras. Men det finns tillfällen då legitima avsändare är falska. Till exempel:
+När en avsändare får en e-postadress ser de ut som en användare i en av organisationens domäner eller en användare i en extern domän som skickar e-post till din organisation. Angripare som är falska att skicka skräp post eller nätfiske måste blockeras. Men det finns tillfällen då legitima avsändare är falska. Ett exempel:
 
 - Legitima scenarier för falska interna domäner:
 
@@ -207,7 +207,7 @@ Gör så här för att kontrol lera att du har konfigurerat falsk intelligens me
 - I Exchange Online PowerShell ersätter \<Name\> du med Office365 AntiPhish default eller namnet på en anpassad princip och kör följande kommando för att kontrol lera inställningarna:
 
   ```PowerShell
-  Get-AntiPhishPolicy -Identity "<Name>" | Format-List EnableAntiSpoofEnforcement,EnableUnauthenticatedSender,AuthenticationFailAction
+  Get-AntiPhishPolicy -Identity "<Name>" | Format-List EnableSpoofIntelligence,EnableUnauthenticatedSender,AuthenticationFailAction
   ```
 
 ## <a name="other-ways-to-manage-spoofing-and-phishing"></a>Andra sätt att hantera förfalskningar och nätfiske

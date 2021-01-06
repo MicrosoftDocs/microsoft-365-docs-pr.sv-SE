@@ -1,5 +1,5 @@
 ---
-title: Justera inställningar efter registrering
+title: Justera inställningarna efter registrering
 description: Så här utesluter du vissa Microsoft-konton
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
@@ -9,16 +9,20 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 76a73372cc7517c3241390e58c28b0b02bffd664
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: d7fe410f114d43d4f6c983aaf23d949298635318
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527703"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760109"
 ---
-# <a name="adjust-settings-after-enrollment"></a>Justera inställningar efter registrering
+# <a name="adjust-settings-after-enrollment"></a>Justera inställningarna efter registrering
 
 När du är klar med registreringen på Microsoft Managed Desktop måste du justera vissa inställningar för Microsoft Intune och Azure Active Directory (Azure AD) för att tillåta hantering och underhåll av säkerhet. Ange följande inställningar för att utesluta Azure AD-grupperna som innehåller Microsoft Managed Desktop-enheter och-användare. Anvisningar för hur du exkluderar grupper finns i [villkorlig åtkomst: användare och grupper](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups#exclude-users).
+
+> [!NOTE]
+> Om du gör några ändringar efter registrering till principer i Microsoft Intune, Azure Active Directory eller Microsoft 365 kan det hända att Microsoft Managed Desktop slutar fungera korrekt. För att undvika problem med Microsoft Managed Station ära datorer kontrollerar du de specifika inställningarna som beskrivs i [åtgärda problem som upptäckts av verktyget för utvärdering av beredskap](../get-ready/readiness-assessment-fix.md) innan du ändrar några principer.
+
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune-inställningar
 

@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Lär dig hur du skapar en namn princip för Microsoft 365 Groups.
-ms.openlocfilehash: 9bc0a4c7e1ae6ad532c97b442a2bc50880a942fc
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: acf660375508760bd2e9874a07454709849929b0
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698681"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759830"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 grupper namn princip
 
 Du kan använda en princip för att skapa en konsekvent namn strategi för grupper som skapas av användare i organisationen. En namn princip hjälper dig och dina användare att identifiera funktionen för gruppen, medlemskap, geografiska områden eller vem som skapat gruppen. Namn princip kan också hjälpa kategorisering av grupper i adress boken. Du kan använda principen för att blockera specifika ord från att användas i grupp namn och alias.
 
-Namngivnings principen tillämpas på grupper som skapas i alla grupp arbets uppgifter (som Outlook, Microsoft Teams, SharePoint, Planner, Yammer osv.). Den används för både grupp namn och gruppalias. Den används när en användare skapar en grupp och när grupp namn eller alias redige ras för en befintlig grupp.
+Namngivnings principen tillämpas på grupper som skapas i alla grupp arbets uppgifter (som Outlook, Microsoft Teams, SharePoint, Planner, Yammer osv.). Den används för både grupp namn och gruppalias. Den används också när en användare skapar en grupp och när gruppens namn, alias, beskrivning eller avatar redige ras för en befintlig grupp.
 
 > [!TIP]
 > En Microsoft 365-grupp för namngivnings princip gäller endast för Microsoft 365-grupper. Det gäller inte distributions grupper som har skapats i Exchange Online. Information om hur du skapar en namngivnings princip för distributions grupper finns i [skapa en namn princip för en distributions grupp](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).

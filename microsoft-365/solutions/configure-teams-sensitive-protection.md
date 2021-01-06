@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du distribuerar team med skydd för känslig data.
-ms.openlocfilehash: ad1cf437bdbe3bd7b25347bb49698314097462ab
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 16c4ceedcafee02ca5d168cc70fc61bb8d01fc72
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49612958"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750793"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Konfigurera team med skydd för känslig data
 
@@ -58,17 +58,21 @@ Att skapa en känslighetsetikett
 1. Öppna [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com).
 2. Under **Lösningar** klickar du på **Informationsskydd**.
 3. Klicka på **Skapa en etikett**.
-4. Namnge etiketten. Vi föreslår **känslig**, men du kan välja ett annat namn om denna redan används.
-5. Lägg till ett knapptips och klicka sedan på **Nästa**.
-6. På sidan **kryptering** klickar du på **nästa**.
-7. Om du vill lägga till ett sidhuvud, en sidfot eller en vattenstämpel automatiskt i filer som klassificeras med den här etiketten går du till sidan **Markering av innehåll**.
-8. På sidan **Inställningar för webbplatser och grupper** ställer du **inställningar för webbplatser och grupper** till **På**.
-9. I listrutan **Sekretess för gruppanslutna teamwebbplatser i Office 365** väljer du **Privat – endast användare kan komma åt webbplatsen**.
-10. Om du vill tillåta gäståtkomst markerar du kryssrutan **Låt gruppägarna för Office 365 lägga till personer utanför organisationen i gruppen**. 
-11. Under **ohanterade enheter** väljer du **tillåta begränsad åtkomst** via webben.
+4. Namnge etiketten. Vi föreslår **Känslig**, men du kan välja ett annat namn om det redan används.
+5. Lägg till ett visningsnamn och en beskrivning och klicka på **Nästa**.
+6. På sidan **Definiera omfång för etikett** väljer du **filer och e-postmeddelanden** samt **grupper och webbplatser** och klickar på **Nästa**.
+7. På sidan **Välj säkerhetsinställningar för filer och e-postmeddelanden** klickar du på **Nästa**.
+8. På sidan *Auto-etiketting för filer och e-postmeddelanden** klickar du på **Nästa**.
+9. På sidan **Definiera säkerhetsinställningar för grupper och webbplatser** väljer du **Inställningar för sekretess och extern användaråtkomst** samt **Inställningar för enhetsåtkomst och extern delning** och klickar på **Nästa**.
+10. Välj alternativet **Privat** under **Sekretess** på sidan **Definiera inställningar för sekretess och extern användaråtkomst**.
+11. Om du vill tillåta gäståtkomst väljer du **Låt Microsoft 365-gruppägare lägga till personer utanför organisationen i gruppen som gäster** under **Extern användaråtkomst**.
 12. Klicka på **Nästa**.
-13. På sidan **Auto-etiketting för Office-program** klickar du på **Nästa**.
-14. Klicka på **Skicka** och klicka sedan **Klart**.
+13. På sidan **Definiera inställningar för extern delning och enhetsåtkomst** väljer du **Styra extern delning från etiketterade SharePoint-webbplatser**.
+14. Under **Innehåll kan delas med** väljer du **Nya och befintliga gäster** om du vill tillåta gäståtkomst eller **Endast personer i organisationen**.
+15. Under **Åtkomst från ohanterade enheter** väljer du **Tillåt begränsad åtkomst via webben**.
+16. Klicka på **Nästa**.
+17. På sidan **Auto-etiketting för databaskolumner** klickar du på **Nästa**.
+18. Klicka på **Skapa etikett** och sedan på **Klart**.
 
 När du har skapat en etikett måste du publicera den till de användare som ska använda den. För känsligt skydd gör vi etiketterna tillgängliga för alla användare. Du publicerar etiketten i Microsoft 365 Efterlevnadscenter på fliken **Etikettprinciper** på sidan **Informationskydd**. Om du har en befintlig princip som gäller för alla användare kan du lägga till den här etiketten i principen. Om du behöver skapa en ny princip kan du läsa [Publicera känsliga etiketter genom att skapa en etikettpolicy](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy).
 

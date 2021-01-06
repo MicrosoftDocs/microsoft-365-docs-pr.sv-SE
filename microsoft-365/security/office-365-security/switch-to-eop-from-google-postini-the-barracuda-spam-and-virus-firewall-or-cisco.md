@@ -14,12 +14,12 @@ ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln får du lära dig hur du växlar till Exchange Online Protection (EOP) från en lokal server för e-posthygien eller Cloud-baserad skydd.
-ms.openlocfilehash: 25669982c06127331369fdb595c6614733681047
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a007bb94c35f7712b69ad5eef4152455c114ca24
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202131"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760392"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Byta till EOP från Google Postini, Barracuda Spam and Virus Firewall eller Cisco IronPort
 
@@ -44,7 +44,7 @@ Om du för närvarande är värd för dina post lådor på lokala enheter och an
 
 ## <a name="switch-to-exchange-online"></a>Växla till Exchange Online
 
-Kanske har du lokala post lådor som skyddas av en lokal enhet och du vill hoppa till Exchange Online-postköer och EOP skydd för att utnyttja Microsoft 365 Cloud Messaging och skydds funktioner. För att komma igång kan du registrera dig för Microsoft 365 och lägga till din domän. I det här scenariot behöver du inte konfigurera kopplingar, eftersom det inte finns någon routning på lokala post lådor. Börja med att [Skaffa de senaste avancerade funktionerna med Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) för att registrera dig och få bekanta med dess funktioner.
+Kanske har du lokala post lådor som skyddas av en lokal enhet och du vill hoppa till Exchange Online-postköer och EOP skydd för att utnyttja Microsoft 365 Cloud Messaging och skydds funktioner. För att komma igång kan du registrera dig för Microsoft 365 och lägga till din domän. För det här scenariot behöver du inte konfigurera kopplingar, eftersom det inte finns någon routning på lokala post lådor. Börja med att [Skaffa de senaste avancerade funktionerna med Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) för att registrera dig och få bekanta med dess funktioner.
 
 Under installationen av Microsoft 365 skapar du dina molnbaserade användare av post lådor.
 

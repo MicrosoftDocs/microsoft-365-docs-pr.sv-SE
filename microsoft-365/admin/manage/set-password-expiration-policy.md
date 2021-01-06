@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Lär dig hur du anger en förfalloprincip för lösenord i organisationen i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 39726846d591b2d1f72a89a7dc59038c726a8e80
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: 96e9159f3228fb6b7725f2f0d6eb515b108bc32e
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787528"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751507"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Ange förfalloprincip för lösenord i organisationen
 
@@ -56,18 +56,18 @@ Följ anvisningarna nedan om du vill ställa in så att användarlösenorden ska
 > [!IMPORTANT]
 > Endast [globala administratörer](../add-users/about-admin-roles.md) kan utföra de här stegen.
   
-1. I administrationscentret för går du till fliken **inställningar** \> **organisationsinställningar** .
+1. I administrationscentret för går du till fliken **inställningar** \> **organisationsinställningar**.
 
 2. Gå till sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Säkerhet och sekretess</a>.
  Om du inte är global administratör visas inte alternativet Säkerhet och sekretess.
   
-3. Välj **Förfalloprincip för lösenordet** .
+3. Välj **Förfalloprincip för lösenordet**.
   
-4. Om du inte vill att användarna ska behöva ändra lösenord markerar du kryssrutan bredvid **Ställ in så att användarlösenord upphör att gälla efter ett visst antal dagar** .
+4. Om du inte vill att användarna ska behöva ändra lösenord avmarkerar du rutan bredvid **Ställ in så att användarlösenord upphör att gälla efter ett visst antal dagar**.
   
 5. Ange hur ofta lösenord ska upphöra. Välj ett antal dagar mellan 14 och 730.
   
-6. I den andra rutan anger du när användarna underrättas om att deras lösenord upphör att gälla och väljer sedan **Spara** . Du kan välja ett antal dagar mellan 1 och 30.
+6. I den andra rutan anger du när användarna underrättas om att deras lösenord upphör att gälla och väljer sedan **Spara**. Du kan välja ett antal dagar mellan 1 och 30.
 
 7. När användarens lösenord slutar gälla, visas ett meddelande om detta i det nedre högra hörnet på skärmen.
   

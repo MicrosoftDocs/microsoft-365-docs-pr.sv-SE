@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Använd Microsoft Endpoint Manager för att hantera dina hanteringsenheter, datorer och andra slutpunkter.
-ms.openlocfilehash: 291c1111bbfaf9a549c0d2ac22dab450a32a6a96
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: bca3e8e79264a2218dd1036e50be1c9ab29d2b8a
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845270"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749605"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Steg 4. Distribuera slutpunktshantering för enheter, datorer och andra slutpunkter
 
@@ -87,7 +87,7 @@ Mer information finns i den här [översikt över Windows Autopilot](https://doc
 - [Registrera olika typer av enheter för hantering av mobila enheter](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 - [Hur du utbildar dina slutanvändare om Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
  
-## <a name="results-of-step-3"></a>Resultat i steg 3
+## <a name="results-of-step-4"></a>Resultat i steg 4
 
 Du använder paketet med Endpoint Manager-funktioner och -förmågor för att hantera mobila enheter, stationära datorer, virtuella datorer, inbäddade enheter och servrar.
 

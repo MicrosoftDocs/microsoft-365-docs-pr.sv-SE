@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Vad är metod tips för säkerhets inställningar för Exchange Online Protection (EOP) och Defender för Office 365? Vad är de senaste rekommendationerna för standard skydd? Vad ska användas om du vill veta mer? Vilka extrafunktioner får du om du även använder Defender för Office 365?
-ms.openlocfilehash: d731b75e05dcecc513c72b390b106491f7601c71
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: c9a9774e0866b009965eeb574384095c26fa780e
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698693"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760236"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Rekommenderade inställningar för EOP och Microsoft Defender för Office 365-säkerhet
 
@@ -138,7 +138,7 @@ Mer information om de här inställningarna finns i [Inställningar för förfal
 
 |Säkerhetsfunktionens namn|Standard|Standard|Tillåts|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Aktivera skydd mot förfalskning** <p> _EnableAntispoofEnforcement_|På <p> `$true`|På <p> `$true`|På <p> `$true`||
+|**Aktivera skydd mot förfalskning** <p> _EnableSpoofIntelligence_|På <p> `$true`|På <p> `$true`|På <p> `$true`||
 |**Aktivera oautentiserad avsändare** <p> _EnableUnauthenticatedSender_|På <p> `$true`|På <p> `$true`|På <p> `$true`|Lägger till ett frågetecken (?) till avsändarens foto i Outlook för oidentifierade avsändare. Mer information finns i [Inställningar för förfalskningar i principer för nätfiske](set-up-anti-phishing-policies.md).|
 |**Om e-post skickas av någon som inte har behörighet att använda din domän** <p> _AuthenticationFailAction_|**Flytta meddelandet till mottagarnas skräp post mappar** <p> `MoveToJmf`|**Flytta meddelandet till mottagarnas skräp post mappar** <p> `MoveToJmf`|**Sätt i karantän meddelandet** <p> `Quarantine`|Den här inställningen gäller för spärrade avsändare i [Spoof-intelligens](learn-about-spoof-intelligence.md).|
 |
@@ -192,7 +192,7 @@ Observera att dessa inställningar är tillgängliga i [princip inställningar f
 
 |Säkerhetsfunktionens namn|Standard|Standard|Tillåts|Kommentar|
 |---|---|---|---|---|
-|**Aktivera skydd mot förfalskning** <p> _EnableAntispoofEnforcement_|På <p> `$true`|På <p> `$true`|På <p> `$true`||
+|**Aktivera skydd mot förfalskning** <p> _EnableSpoofIntelligence_|På <p> `$true`|På <p> `$true`|På <p> `$true`||
 |**Aktivera oautentiserad avsändare** <p> _EnableUnauthenticatedSender_|På <p> `$true`|På <p> `$true`|På <p> `$true`|Lägger till ett frågetecken (?) till avsändarens foto i Outlook för oidentifierade avsändare. Mer information finns i [Inställningar för förfalskningar i principer för nätfiske](set-up-anti-phishing-policies.md).|
 |**Om e-post skickas av någon som inte har behörighet att använda din domän** <p> _AuthenticationFailAction_|**Flytta meddelandet till mottagarnas skräp post mappar** <p> `MoveToJmf`|**Flytta meddelandet till mottagarnas skräp post mappar** <p> `MoveToJmf`|**Sätt i karantän meddelandet** <p> `Quarantine`|Den här inställningen gäller för spärrade avsändare i [Spoof-intelligens](learn-about-spoof-intelligence.md).|
 |

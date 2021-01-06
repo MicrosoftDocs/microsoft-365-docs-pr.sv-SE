@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: fbe98b814b253551432ea35102f2bd6eeba921f8
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: b052f70c1b618adef12c4f70c2b3fe55741697d5
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602097"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760512"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Aktivera Microsoft 365 Defender
 
@@ -39,39 +39,46 @@ Med [microsoft 365 Defender](microsoft-threat-protection.md) interagerar samtals
 Microsoft 365 Defender aktive ras automatiskt när berättigade kunder med nödvändig behörighet gå till Microsoft 365 säkerhets Center. Läs den här artikeln för att förstå olika förutsättningar och hur Microsoft 365 Defender etableras.
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>Kontrol lera licens krav och nödvändiga behörigheter
+
 Med en licens till en Microsoft 365-säkerhetsprodukt får du i allmänhet rätt att använda Microsoft 365 Defender i Microsoft 365 säkerhets Center utan extra licens kostnad. Vi rekommenderar att få en Microsoft 365 E5-, E5-säkerhet, A5-eller A5-säkerhetslicens eller en giltig kombination av licenser som ger till gång till alla tjänster som stöds.
 
 Mer detaljerad information om licensiering finns [i licens kraven](prerequisites.md#licensing-requirements).
 
 ### <a name="check-your-role"></a>Kontrol lera din roll
-Du måste vara **Global administratör** eller **säkerhets administratör** i Azure Active Directory för att aktivera Microsoft 365 Defender. [Visa dina roller i Azure AD](https://docs.microsoft.com//azure/active-directory/users-groups-roles/directory-manage-roles-portal)
+
+Du måste vara **Global administratör** eller **säkerhets administratör** i Azure Active Directory för att aktivera Microsoft 365 Defender. [Visa dina roller i Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## <a name="supported-services"></a>Tjänster som stöds
+
 Microsoft 365 Defender sammanställer data från de tjänster som du redan har distribuerat. Den bearbetar och lagrar data centralt för att identifiera nya insikter och göra centraliserade arbets flöden möjligt. Det gör det utan att befintliga distributioner, inställningar eller data som är kopplade till de integrerade tjänsterna påverkas.
 
 För att få bästa möjliga skydd och optimera Microsoft 365 Defender rekommenderar vi att du distribuerar alla tillämpliga tjänster som stöds i ditt nätverk. Mer information finns i [om att distribuera tjänster som stöds](deploy-supported-services.md).
 
 ## <a name="before-starting-the-service"></a>Innan tjänsten startas
+
 Innan du aktiverar tjänsten visar Microsoft 365 säkerhets Center ([Security.Microsoft.com](https://security.microsoft.com)) sidan Microsoft 365 Defender-inställningar när du väljer **händelser**, **Åtgärds Center** eller **jakt** från navigerings fönstret. Dessa navigerings objekt visas inte om du inte är berättigad att använda Microsoft 365 Defender.
 
 ![Bild av sidan Microsoft 365 Defender-inställningar som visas om Microsoft 365 Defender inte har Aktiver ATS på ](../../media/mtp-enable/mtp-settings.png)
  *Microsoft 365 Defender-inställningar i Microsoft 365 säkerhets Center*
 
 ## <a name="starting-the-service"></a>Startar tjänsten
+
 För att aktivera Microsoft 365 Defender väljer du **Aktivera microsoft 365 Defender** och gör ändringarna. Du kan också komma åt det här alternativet genom att välja **Inställningar** ([Security.Microsoft.com/settings](https://security.microsoft.com/settings)) i navigerings fönstret och sedan välja **Microsoft 365 Defender**.
 
->[!NOTE]
->Om du inte ser **Inställningar** i navigerings fönstret eller inte har åtkomst till sidan kontrollerar du dina behörigheter och licenser.
+> [!NOTE]
+> Om du inte ser **Inställningar** i navigerings fönstret eller inte har åtkomst till sidan kontrollerar du dina behörigheter och licenser.
 
 ### <a name="data-center-location"></a>Plats för data Center
-Microsoft 365 Defender lagrar och bearbetar data på [samma plats som Microsoft Defender för slut punkten](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Om du inte har Microsoft Defender för slut punkt väljs en ny data Center-plats automatiskt baserat på platsen för Active Microsoft 365-säkerhetstjänster. Den valda data Center platsen visas på skärmen. 
 
-Välj **behöver du hjälp?** i Microsoft 365 Security Center kan du kontakta Microsoft support om hur du konfigurerar Microsoft 365 Defender på en annan plats i data centret. 
+Microsoft 365 Defender lagrar och bearbetar data på [samma plats som Microsoft Defender för slut punkten](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Om du inte har Microsoft Defender för slut punkt väljs en ny data Center-plats automatiskt baserat på platsen för Active Microsoft 365-säkerhetstjänster. Den valda data Center platsen visas på skärmen.
 
->[!NOTE]
->Microsoft Defender för slut punkt tillhandahåller automatiskt bestämmelser i EU-datacenter när de aktive ras via Azure Defender. Microsoft 365 Defender tillhandahåller automatiskt samma EU-datacentertjänster för kunder som har etablerat Defender för slut punkt på det här sättet. 
+Välj **behöver du hjälp?** i Microsoft 365 Security Center kan du kontakta Microsoft support om hur du konfigurerar Microsoft 365 Defender på en annan plats i data centret.
+
+> [!NOTE]
+> Microsoft Defender för slut punkt tillhandahåller automatiskt bestämmelser i EU-datacenter när de aktive ras via Azure Defender. Microsoft 365 Defender tillhandahåller automatiskt samma EU-datacentertjänster för kunder som har etablerat Defender för slut punkt på det här sättet.
 
 ### <a name="confirm-that-the-service-is-on"></a>Kontrol lera att tjänsten är på
+
 När tjänsten har etablerats lägger den till:
 
 - [Hantering av incidenter](incidents-overview.md)
@@ -82,8 +89,8 @@ När tjänsten har etablerats lägger den till:
  *Microsoft 365 säkerhets Center med problem hantering och andra Microsoft 365 Defender-funktioner*
 
 ### <a name="getting-microsoft-defender-for-identity-data"></a>Microsoft Defender för identitets data
-Om du vill dela Microsoft Defender för identitets data med Microsoft 365 Defender kontrollerar du att säkerhet för Microsoft Cloud App och Microsoft Defender för identitets integrering är aktiverat. [Läs mer om denna integrering](https://docs.microsoft.com/cloud-app-security/aatp-integration)
 
+Om du vill dela Microsoft Defender för identitets data med Microsoft 365 Defender kontrollerar du att säkerhet för Microsoft Cloud App och Microsoft Defender för identitets integrering är aktiverat. [Läs mer om denna integrering](https://docs.microsoft.com/cloud-app-security/mdi-integration).
 
 ## <a name="get-assistance"></a>Få hjälp
 

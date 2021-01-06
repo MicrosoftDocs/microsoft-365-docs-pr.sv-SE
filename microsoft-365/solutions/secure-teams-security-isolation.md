@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du skapar ett team med en unik känslighetsetikett för säkerhet.
-ms.openlocfilehash: c7230f23a21804530863f125003e4db0eaeeeb60
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 03252cad8449ee83cd757fac3ae74db6df68bcfe
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616302"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751149"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Konfigurera en team med säkerhetsisolering
 
@@ -101,33 +101,36 @@ Om du vill konfigurera ett team för säkerhetsisolering kommer vi att använda 
 
 Om du har ett intern partner- eller intresseteam som ska kunna visa krypterade dokument men inte redigera dem, kan du lägga till dem i etiketten med endast visningsbehörigheter. Du kan sedan lägga till dessa personer i teamets SharePoint-webbplats med läsarbehörigheter och de kommer att ha skrivskyddad åtkomst till webbplatsen där dokumenten behålls, men inte själva teamet.
 
+
 Att skapa en känslighetsetikett
 1. Öppna [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com).
 2. Under **Lösningar** klickar du på **Informationsskydd**.
 3. Klicka på **Skapa en etikett**.
-4. Skriv ett namn på etiketten som liknar ditt teamnamn. Till exempel **Mycket känslig – Projekt Saturn**.
-5. Lägg till ett knapptips och klicka sedan på **Nästa**.
-6. I listrutan **Kryptering** på sidan **Kryptering** väljer du **Använd**. 
-7. Så här lägger du till teambehörigheter:<br>
-  a. Klicka på **Tilldela behörigheter**.<br>
-  b. Klicka på **Lägg till användare eller grupper**, markera det team som du har skapat och klicka sedan **lägga till**<br>
-  c. Klicka **Välj behörigheter**.<br>
-  d. Välj **Samtidig redigering** från listrutan och klicka sedan på **Spara**.<br>
-8. Om du vill lägga till användare eller grupper med skrivskyddad åtkomst till filer med etiketten:<br>
-  a. Klicka på **Tilldela behörigheter**.<br>
-  b. Klicka på **Lägg till användare eller grupper** och välj de användare eller grupper du vill lägga till och klicka sedan på **Lägg till**.<br>
-  c. Klicka **Välj behörigheter**.<br>
-  d. Välj **Visningsprogram** i listrutan och klicka sedan på **Spara**.<br>
-  e. Klicka på **Spara**.
-9. Klicka på **Nästa**.
-10. Om du vill lägga till ett sidhuvud, en sidfot eller en vattenstämpel automatiskt i filer som klassificeras med den här etiketten går du till sidan **Markering av innehåll**.
-11. På sidan **Inställningar för webbplatser och grupper** ställer du **inställningar för webbplatser och grupper** till **På**.
-12. I listrutan **Sekretess för gruppanslutna teamwebbplatser i Office 365** väljer du **Privat – endast användare kan komma åt webbplatsen**.
-13. Om du vill tillåta gäståtkomst markerar du kryssrutan **Låt gruppägarna för Office 365 lägga till personer utanför organisationen i gruppen**. 
-14. Under **Ohanterade enheter** väljer du **Blockera åtkomst**.
-15. Klicka på **Nästa**.
-16. På sidan **Auto-etiketting för Office-program** klickar du på **Nästa**.
-17. Klicka på **Skicka** och klicka sedan **Klart**.
+4. Namnge etiketten. Vi föreslår **Känslig**, men du kan välja ett annat namn om det redan används.
+5. Lägg till ett visningsnamn och en beskrivning och klicka på **Nästa**.
+6. På sidan **Definiera omfång för etikett** väljer du **filer och e-postmeddelanden** samt **grupper och webbplatser** och klickar på **Nästa**.
+7. På sidan **Välj säkerhetsinställningar för filer och e-postmeddelanden** väljer du **Kryptera filer och e-postmeddelande** och klickar på **Nästa**.
+8. På sidan **Kryptering** väljer du **Konfigurera krypteringsinställningar**.
+9. Klicka på **Lägg till användare eller grupper**, markera det team som du har skapat och klicka sedan på **Lägg till**
+10. Klicka på **Välj behörigheter**.
+11. Välj **Samtidig redigering** från listrutan och klicka sedan på **Spara**.
+12. Om du vill lägga till användare eller grupper med skrivskyddad åtkomst till filer med etiketten:
+    1. Klicka på **Tilldela behörigheter**.
+    1. Klicka på **Lägg till användare eller grupper**, välj de användare eller grupper du vill lägga till och klicka sedan på **Lägg till**.
+    1. Klicka på **Välj behörigheter**.
+    1. Välj **Visningsprogram** i listrutan och klicka på **Spara**.
+13.  Klicka på **Spara** och sedan på **Nästa**.
+14. På sidan *Auto-etiketting för filer och e-postmeddelanden** klickar du på **Nästa**.
+15. På sidan **Definiera säkerhetsinställningar för grupper och webbplatser** väljer du **Inställningar för sekretess och extern användaråtkomst** samt **Inställningar för enhetsåtkomst och extern delning** och klickar på **Nästa**.
+16. Välj alternativet **Privat** under **Sekretess** på sidan **Definiera inställningar för sekretess och extern användaråtkomst**.
+17. Om du vill tillåta gäståtkomst väljer du **Låt Microsoft 365-gruppägare lägga till personer utanför organisationen i gruppen som gäster** under **Extern användaråtkomst**.
+18. Klicka på **Nästa**.
+19. På sidan **Definiera inställningar för extern delning och enhetsåtkomst** väljer du **Styra extern delning från etiketterade SharePoint-webbplatser**.
+20. Under **Innehåll kan delas med** väljer du **Nya och befintliga gäster** om du vill tillåta gäståtkomst eller **Endast personer i organisationen**.
+21. Under **Åtkomst från ohanterade enheter** väljer du **Blockera åtkomst**.
+22. Klicka på **Nästa**.
+23. På sidan **Auto-etiketting för databaskolumner** klickar du på **Nästa**.
+24. Klicka på **Skapa etikett** och sedan på **Klart**.
 
 När du har skapat en etikett måste du publicera den till de användare som ska använda den. I det här fallet gör vi etiketten tillgänglig bara för personer i teamet.
 

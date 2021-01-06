@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Administratörer kan lära sig att använda S/MIME (Secure/Multipurpose Internet Mail Extensions) i Exchange Online för att kryptera e-post och signera dem digitalt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8dce3e3fa3d24e1773f51f96e19a58d8a3b2efce
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 01de52bb1d8e946ead0d8b39e34b13e34741259e
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200613"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760560"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME för meddelande signering och kryptering i Exchange Online
 
@@ -60,7 +60,7 @@ De steg du följer för att konfigurera S/MIME med dessa slut punkter är lite a
 > [!NOTE]
 > Du kan inte installera S/MIME-kontroll i Outlook på webben på Mac, iOS, Android eller andra enheter som inte är Windows. Mer information finns i [kryptera meddelanden med S/MIME i Outlook på webben](https://support.microsoft.com/office/878c79fc-7088-4b39-966f-14512658f480).
 
-## <a name="setup-smime-with-outlook-on-the-web"></a>Konfigurera S/MIME med Outlook på webben
+## <a name="set-up-smime-with-outlook-on-the-web"></a>Konfigurera S/MIME med Outlook på webben
 
 Det handlar om att konfigurera S/MIME för Exchange Online med Outlook på webben:
 

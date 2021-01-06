@@ -1,5 +1,5 @@
 ---
-title: Konfigurera AntiPhishing-principer i EOP
+title: Konfigurera principer för skydd mot nätfiske i EOP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,14 +14,14 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur de skapar, ändrar och tar bort de anti-phishing-principer som är tillgängliga i EOP-organisationer (Exchange Online Protection) med eller utan Exchange Online-postlådor.
-ms.openlocfilehash: 69ab17263ab8c0cc03d3bc4aed6bdf39b251b9fb
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 03c1ce8e940491607fe04988d41c927f92479d96
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572531"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760338"
 ---
-# <a name="configure-anti-phishing-policies-in-eop"></a>Konfigurera AntiPhishing-principer i EOP
+# <a name="configure-anti-phishing-policies-in-eop"></a>Konfigurera principer för skydd mot nätfiske i EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -57,13 +57,13 @@ För att öka effektiviteten för skydd mot nätfiske kan du skapa anpassade sky
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. För att gå direkt till **nätfiske-** sidan, Använd <https://protection.office.com/antiphishing> .
+- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. För att gå direkt till **nätfiske-** sidan, Använd <https://protection.office.com/antiphishing> .
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
   Du kan inte hantera anti-nätfiske-principer i fristående EOP PowerShell.
 
-- Du måste tilldelas behörigheter i säkerhets & Compliance Center innan du kan göra det i den här artikeln:
+- Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
   - För att lägga till, ändra och ta bort skydd mot nätfiske måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** .
   - Om du vill ha skrivskyddad åtkomst till principer mot nätfiske måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** <sup>\*</sup> .
 
@@ -71,7 +71,7 @@ För att öka effektiviteten för skydd mot nätfiske kan du skapa anpassade sky
 
   **Anmärkningar**:
 
-  - Om du lägger till användare i motsvarande Azure Active Directory-roll i Microsoft 365 Admin Center får användarna den behörighet som krävs för säkerhets & efterlevnad Center _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
   - Roll gruppen **organisations hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen <sup>\*</sup> .
   - <sup>\*</sup> I säkerhets & Compliance Center är skrivskyddad åtkomst tillåta användare att Visa inställningar för anpassade skydds principer. Skrivskyddade användare kan inte se inställningarna i standard policyn för skydd mot nätfiske.
 
@@ -306,7 +306,7 @@ Att skapa en skydds policy i PowerShell är en process i två steg:
 Använd följande syntax för att skapa en policy för Phish:
 
 ```PowerShell
-New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableAntiSpoofEnforcement <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>]
+New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>]
 ```
 
 I det här exemplet skapas en policy med Phish forsknings karantän med följande inställningar:

@@ -1,5 +1,5 @@
 ---
-title: Åtgärda problem som upptäckts av verktyget för bedömning av beredskap
+title: Åtgärda problem som hittats av verktyget för bedömning av beredskap
 description: Detaljerade åtgärder att vidta för varje problem som verktyget hittar
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f23209568fcfc2db4a22dbb034890c5a25e21bf7
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 3c3c0d21ca93c0d93d17cefbc6ce630d00a16d09
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527739"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760130"
 ---
-# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Åtgärda problem som upptäckts av verktyget för bedömning av beredskap
+# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Åtgärda problem som hittats av verktyget för bedömning av beredskap
 
 För varje kontroll rapporteras ett av fyra möjliga resultat:
 
@@ -27,6 +27,9 @@ För varje kontroll rapporteras ett av fyra möjliga resultat:
 |Rådgivare    | Följ stegen i verktyget eller den här artikeln för att få bästa möjliga upplevelse av registrering och användare. Du *kan* slutföra registreringen, men du måste åtgärda dessa problem innan du distribuerar den första enheten.        |
 |Inte klart | *Registreringen Miss lyckas om du inte åtgärdar dessa problem.* Följ stegen i verktyget eller den här artikeln för att åtgärda dem.        |
 |Fel | Azure Active Director (AD)-rollen som du använder har inte tillräcklig behörighet för att köra den här kontrollen. |
+
+> [!NOTE]
+> Resultaten som rapporteras med det här verktyget visar endast statusen för dina inställningar vid den specifika tidpunkt då du körde det. Om du senare ändrar principer i Microsoft Intune, Azure Active Directory eller Microsoft 365 kan objekt som "Ready" bli "inte klara". För att undvika problem med Microsoft Managed Station ära datorer kontrollerar du de specifika inställningar som beskrivs i den här artikeln innan du ändrar några principer.
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune-inställningar
 

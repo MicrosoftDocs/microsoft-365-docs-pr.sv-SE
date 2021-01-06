@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om program ordningen för skydd i Exchange Online Protection (EOP) och hur prioritet svärdet i skydds principer bestämmer vilken princip som tillämpas.
-ms.openlocfilehash: c6a89e35f1cce0532f206b5ac5dbfd4a1aedda9d
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+ms.openlocfilehash: a18234344e1100f3b6a03c10e970c8195e53e7df
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349274"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760572"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Prioritetsordning för e-postskydd
 
@@ -38,7 +38,7 @@ Det finns två huvud faktorer som avgör vilken princip som tillämpas på ett m
 
   ****
 
-  |Priority|E-postskydd|Kategori|Plats att hantera|
+  |Ordningen|E-postskydd|Kategori|Plats att hantera|
   |---|---|---|---|
   |9.1|Program|KAT: MALW|[Konfigurera principer för skydd mot skadlig program vara i EOP](configure-anti-malware-policies.md)|
   |två|Fiske|KAT: PHSH|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
@@ -60,13 +60,13 @@ Du kan till exempel ta med följande anti-nätfiske-principer i Microsoft Defend
 
   ****
 
-  |Principnamn|Priority|Användar personifiering|Skydd mot förfalskning|
+  |Principnamn|Ordningen|Användar personifiering|Skydd mot förfalskning|
   |---|---|---|---|
   |Princip A|9.1|På|Av|
   |Princip B|två|Av|På|
   |
 
-1. Meddelandet är markerat och behandlas som förfalskning eftersom förfalskning har högre prioritet (4) än User-personifiering (8).
+1. Meddelandet är markerat och behandlas som förfalskning eftersom förfalskning har högre prioritet (4) än User-personifiering (5).
 2. Princip A tillämpas på användarna eftersom den har högre prioritet än princip B.
 3. Baserat på inställningarna i princip A vidtas ingen åtgärd för meddelandet eftersom funktionen för att förhindra förfalskning är inaktive rad i principen.
 4. Princip bearbetning stoppas, så policy B används aldrig för användarna.
