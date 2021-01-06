@@ -122,13 +122,13 @@
           href: what-the-dlp-functions-look-for.md
     - name: Utbildningsbara klassificerare
       items:
-        - name: Mer information om tågens klassificerare (förhandsversion)
+        - name: Mer information om utbildningsbara klassificerare
           href: classifier-learn-about.md
-        - name: Kom igång med träningsbara klassificerare (förhandsversion)
+        - name: Kom igång med utbildningsbara klassificerare
           href: classifier-get-started-with.md
-        - name: Så här tränar du om en klassificering i kommunikationsöverensstämmelse (förhandsvisning)
+        - name: Så här tränar du en klassificerare i kommunikationsefterlevnad på nytt
           href: classifier-how-to-retrain-comms-compliance.md
-        - name: Så här tränar du om en klassificering i innehållsutforskaren (förhandsvisning)
+        - name: Så här tränar du en klassificerare i innehållsutforskaren på nytt
           href: classifier-how-to-retrain-content-explorer.md
     - name: Dataklassificering
       items:
@@ -629,7 +629,7 @@
             - name: Nyckelordsfrågor och sökvillkor
               href: keyword-queries-and-search-conditions.md
             - name: Sökstatistik
-              href: search-statistics.md
+              href: search-statistics-in-advanced-ediscovery.md
             - name: Lägga till sökresultat i en granskningsuppsättning
               href: add-data-to-review-set.md
         - name: Hantera granskningsuppsättningar
@@ -792,83 +792,6 @@
               href: run-reports-in-advanced-ediscovery.md
     - name: Utfasning av äldre eDiscovery-verktyg
       href: legacy-ediscovery-retirement.md
-- name: Hantera dataundersökningar
-  items:
-    - name: Översikt över dataundersökningar
-      href: overview-data-investigations.md
-    - name: Hantera en dataspillincident
-      href: manage-data-spillage-incidents.md
-    - name: Tilldela behörigheter för dataundersökningar
-      href: data-investigations-permissions.md
-    - name: Skapa en ny undersökning
-      href: create-new-investigation.md
-    - name: Söka efter data i en undersökning
-      href: search-for-data.md
-      items:
-        - name: Skapa sökfrågor
-          href: build-search-queries.md
-        - name: Sökstatistik
-          href: search-statistics.md
-    - name: Granska data i bevis
-      href: review-data-in-evidence.md
-      items:
-        - name: Fråga data
-          href: evidence-query.md
-        - name: Tagga dokument
-          href: tag-documents.md
-        - name: Kommentera och redigera dokument
-          href: annotate-and-redact-documents.md
-        - name: Läsa in icke-Office 365-data
-          href: load-non-office365-data.md
-        - name: Åtgärda fel vid bearbetning av data
-          href: error-remediation.md
-        - name: Ta bort objekt från den ursprungliga platsen
-          href: delete-items-from-original-locations.md
-    - name: Köra analys för att undersöka snabbare
-      href: run-analytics-to-investigate-faster.md
-      items:
-        - name: E-posttrådar
-          href: email-threading.md
-        - name: Identifiering av nästan dubbletter
-          href: near-duplicates.md
-        - name: Teman
-          href: themes.md
-        - name: Använda relevansmodulen
-          href: use-relevance-module.md
-    - name: Hantera personer av intresse i en undersökning
-      href: manage-people-of-interest.md
-      items:
-        - name: Indexera data för personer i en undersökning
-          href: index-data-people-of-interest.md
-        - name: Visa granskningsaktiviteten för personer i en undersökning
-          href: view-people-of-interest-activity.md
-    - name: Exportera data från en undersökning
-      href: export-data.md
-      items:
-        - name: Exportera dokument från bevis
-          href: export-documents-from-incident.md
-        - name: Ladda ned exportjobb
-          href: download-export-jobs-from-a-data-investigation.md
-    - name: Konfigurera undersökningsinställningar
-      items:
-        - name: Lägga till eller ta bort medlemmar från en undersökning
-          href: add-remove-members.md
-        - name: Konfigurera inställningar för sökning och analys
-          href: configure-search-analytics-settings.md
-        - name: Stänga eller ta bort en undersökning
-          href: close-or-delete-investigation.md
-    - name: Referens för dataundersökningar
-      items:
-        - name: Viktig information
-          href: data-investigations-release-notes.md
-        - name: Begränsningar i dataundersökningar
-          href: limits-datainvestigations.md
-        - name: Filtyper som stöds
-          href: supported-filetypes-datainvestigations.md
-        - name: Fält för dokumentmetadata
-          href: document-metadata-fields.md
-        - name: Hantera jobb
-          href: manage-jobs.md
 - name: Hantera undantag
   items:
     - name: Identifiera typen av undantag som tillämpas på en postlåda
