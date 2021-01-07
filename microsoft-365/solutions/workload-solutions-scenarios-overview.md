@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365-lösningar för arbets belastning
-description: Problembeskrivning.
+description: Gör dina företags mål med de här lösnings guiderna för specifika Microsoft 365-arbetsbelastningar.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,13 +13,13 @@ ms.collection:
 ms.custom: ''
 f1.keywords: NOCSH
 ROBOTS: NOINDEX
-ms.openlocfilehash: d7243c68ca52ac2c84d96e3db0fa60b9592cbac3
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 55eab63636fd20dc33062498f6bbae9295d7277f
+ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613554"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49771829"
 ---
-# <a name="microsoft-365-workload-solutions-and-scenarios"></a><span data-ttu-id="96e0a-103">Microsoft 365-lösningar för arbets belastning</span><span class="sxs-lookup"><span data-stu-id="96e0a-103">Microsoft 365 workload solutions and scenarios</span></span>
+# <a name="microsoft-365-workload-solutions-and-scenarios"></a><span data-ttu-id="3c85e-103">Microsoft 365-lösningar för arbets belastning</span><span class="sxs-lookup"><span data-stu-id="3c85e-103">Microsoft 365 workload solutions and scenarios</span></span>
 
-<span data-ttu-id="96e0a-104">![objekt ](https://docs.microsoft.com/office/media/icons/objects-blue.png) **arbets scenarier och lösningar**  de här scenarierna och lösningarna hjälper dig att genomföra ett specifikt affärs syfte.</span><span class="sxs-lookup"><span data-stu-id="96e0a-104">![objects](https://docs.microsoft.com/office/media/icons/objects-blue.png) **Workload scenarios and solutions**  These scenarios and solutions help you accomplish a specific business objective.</span></span> <span data-ttu-id="96e0a-105">Du kan lägga till dem i de grundläggande lösningarna för att lägga till funktioner i din miljö.</span><span class="sxs-lookup"><span data-stu-id="96e0a-105">You can add them onto the foundational solutions to add capabilities to your environment.</span></span>
+<span data-ttu-id="3c85e-104">![objekt ](https://docs.microsoft.com/office/media/icons/objects-blue.png) **arbets scenarier och lösningar**  de här scenarierna och lösningarna hjälper dig att genomföra ett specifikt affärs syfte.</span><span class="sxs-lookup"><span data-stu-id="3c85e-104">![objects](https://docs.microsoft.com/office/media/icons/objects-blue.png) **Workload scenarios and solutions**  These scenarios and solutions help you accomplish a specific business objective.</span></span> <span data-ttu-id="3c85e-105">Du kan lägga till dem i de grundläggande lösningarna för att lägga till funktioner i din miljö.</span><span class="sxs-lookup"><span data-stu-id="3c85e-105">You can add them onto the foundational solutions to add capabilities to your environment.</span></span>
