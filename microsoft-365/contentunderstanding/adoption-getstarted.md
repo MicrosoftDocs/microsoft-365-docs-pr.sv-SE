@@ -12,12 +12,12 @@ ms.collection: enabler-strategic
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 95e1ad15a62762c8b28203e178d4d4ae7906e38a
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: 441f28e36ced25b2e5af3f71235995c8b021f779
+ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760248"
+ms.locfileid: "49771877"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex: komma igång
 
@@ -27,13 +27,16 @@ Tänk på de intelligenta innehålls tjänsterna som är tillgängliga i SharePo
 - **Innehålls bearbetning:** Automatisera insamling, intag och kategorisering av innehåll och strömlinjeforma innehållsbaserade processer genom att använda Power autoautomatisera. Läs mer om [innehålls bearbetning](form-processing-overview.md).
 - **Innehålls överensstämmelse:** Kontrol lera och hantera innehåll för att förbättra säkerheten och styrningen med integrering med Microsoft informations skydd.
 
-Med nya AI-tjänster och-kapaciteter kan du skapa program för innehålls förståelse och klassificering direkt i innehålls hanterings flödet med hjälp av SharePoint Syntex:
+Med nya AI-tjänster och-kapaciteter kan du skapa program för innehålls förståelse och klassificering direkt i innehålls hanterings flödet med hjälp av SharePoint Syntex. Det finns två olika sätt att förstå innehållet. Vilken modell typ du använder är baserad på fil format och användnings fall:
 
-|Manuell inmatning| Formulär bearbetning | Dokument förståelse |
-|:-------|:--------|:--------|
-| Data inmatning och arbets kraft för allt innehåll. | Identifiera filer och hämta data från strukturerade eller halv strukturerade dokument, till exempel formulär och fakturor. |  Identifiera och extrahera data från ostrukturerade dokument, till exempel bokstäver eller kontrakt, där de textenheter som du vill extrahera finns i meningar eller vissa områden i dokumentet. |
-| Active.   |  Anpassat, assisterande.  | Färdiga, automatiserade. |
-| Personer som sköter arbetet. | I ämnes experter (SMF). | Små och medel stora företag är mindre inblandade. |
+| Formulär bearbetning | Dokument förståelse |
+|:-------|:-------|
+| Skapades från ett dokument bibliotek. | Skapat i innehålls Center, som ingår i SharePoint Syntex. |
+| Modell skapad i AI Builder. | Modell skapad i inbyggt gränssnitt. |
+| Används för halv strukturerade fil format. | Används för ostrukturerade fil format. |
+| Uppställd klassificerare. | Tågens klassificerare med valfria utdrag. |
+| Begränsat till ett enda bibliotek. | Kan tillämpas på flera bibliotek. |
+| Utbilda dig på PDF, JPG, PNG-format, totalt 50 MB/500 sid. | Träna på 5-10 PDF-, Office-och e-postfiler, inklusive negativa exempel. |
 
 I följande tabell förklaras tillgänglighet och licensiering för SharePoint Syntex:
 
@@ -44,17 +47,6 @@ I följande tabell förklaras tillgänglighet och licensiering för SharePoint S
 | Tillhandahålls mot Standard miljön för gemensam data tjänst. | Saknar kapacitets begränsningar. |
 
 Få reda på mer om AI-byggares kredit och enheter i [AI Builder-licensiering](https://docs.microsoft.com/ai-builder/administer-licensing).
-
-Det finns två olika sätt att förstå innehållet. Vilken modell typ du använder är baserad på fil format och användnings fall:
-
-| Formulär bearbetning | Dokument förståelse |
-|:-------|:-------|
-| Skapades från ett dokument bibliotek. | Skapat i innehålls Center, som ingår i SharePoint Syntex. |
-| Modell skapad i AI Builder. | Modell skapad i inbyggt gränssnitt. |
-| Används för halv strukturerade fil format. | Används för ostrukturerade fil format. |
-| Uppställd klassificerare. | Tågens klassificerare med valfria utdrag. |
-| Begränsat till ett enda bibliotek. | Kan tillämpas på flera bibliotek. |
-| Utbilda dig på PDF, JPG, PNG-format, totalt 50 MB/500 sid. | Träna på 5-10 PDF-, Office-och e-postfiler, inklusive negativa exempel. |
 
 SharePoint-Syntex integreras med Microsoft 365-funktioner för kompatibilitet som:
 

@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: f63328992af95562688e644f68b8151eb09b9e0f
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9b48321693f883e40a100e29e5e1ec3c5203caa2
+ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846154"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49771865"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -83,6 +83,9 @@ Information om andra tabeller i det avancerade jakt schema [finns i referens fö
 | `SensitivityLabel` | strängvärdet | Etikett som används för ett e-postmeddelande, en fil eller annat innehåll för att klassificera den för informations skydd |
 | `SensitivitySubLabel` | strängvärdet | Under etikett används för ett e-postmeddelande, en fil eller annat innehåll för att klassificera den för informations skydd; under etiketter för känslighet är grupperade under känslighets etiketter men behandlas oberoende av varandra |
 | `IsAzureInfoProtectionApplied` | returtyp | Anger om filen har krypterats med Azure information Protection |
+
+>[!NOTE]
+> Hash-informationen kommer alltid att visas när den är tillgänglig. Det finns emellertid flera möjliga orsaker till att det inte går att beräkna SHA1, SHA256 eller MD5. Till exempel kanske filen finns i Fjärrlagring, att den är låst av en annan process, komprimerad eller har marker ATS som virtuell. I de här fallen visas fil-hash-informationen tom.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

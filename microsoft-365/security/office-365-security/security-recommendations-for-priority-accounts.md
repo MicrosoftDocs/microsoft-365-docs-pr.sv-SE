@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur man höjer säkerhets inställningarna och använder rapporter, varningar och undersökningar för prioriterade konton i sina Microsoft 365-organisationer.
-ms.openlocfilehash: aee238d2fb58d2772881d8d77f98959906943290
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 9788131ea881a1cb3c36a60dfaac01ed5daf0901
+ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668337"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49769256"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Säkerhets rekommendationer för prioriterade konton i Microsoft 365
 
@@ -31,6 +31,8 @@ Vad gör du om du fick ett brådskande meddelande från en chef i din organisati
 För attackerare är det inte så effektivt med vanliga nät fiske attacker som kastar ett slumpmässigt nät för att få behörighet till slumpmässiga eller okända användare. Å andra sidan är _Spear nätfiske_ eller _Whaling_ attacker som riktar sig till användare i Power eller Authority är mycket mer givande för attackerare. Om de här prioritets kontona äventyras kan angriparen få åtkomst till konton med administratörs-, finans-, produkt-och till-och till-fysiska åtkomst funktioner i organisationen.
 
 Microsoft 365 och Microsoft Defender för Office 365 innehåller många olika funktioner som kan hjälpa dig att tillhandahålla ytterligare säkerhets nivåer för dina prioritets konton. Vilka funktioner som är tillgängliga och hur du använder dem beskrivs i den här artikeln.
+
+![Sammanfattning av säkerhets rekommendationerna i ikon formuläret](../../media/security-recommendations-for-priority-users.png)
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>Öka inloggnings säkerhet för prioriterade konton
 
@@ -60,7 +62,7 @@ Förvalda säkerhets principer är en enkel och central plats för att tillämpa
 
 Information om hur strikta princip inställningar skiljer sig från standardinställningarna för standard och standard princip finns i [rekommenderade inställningar för EOP och Microsoft Defender för Office 365-säkerhet](recommended-settings-for-eop-and-office365-atp.md).
 
-## <a name="user-tags"></a>Användar flaggor
+## <a name="apply-user-tags-to-priority-accounts"></a>Använda användar koder på prioritets konton
 
 User-Taggar i Microsoft Defender för Office 365 abonnemang 2 (som en del av Microsoft 365 E5 eller en tilläggs prenumeration) är ett sätt att snabbt identifiera och klassificera specifika användare eller grupper av användare i rapporter och händelse analyser.
 
@@ -68,7 +70,11 @@ User-Taggar i Microsoft Defender för Office 365 abonnemang 2 (som en del av Mic
 
 Du kan också skapa anpassade taggar för att identifiera och klassificera dina prioritets konton. Mer information finns i [User Tags](user-tags.md). Observera att du kan hantera **prioriterade konton** (systemtaggar) i samma gränssnitt som anpassade användar flaggor.
 
-## <a name="priority-accounts-in-reports-and-investigations-in-microsoft-365"></a>Prioriterade konton i rapporter och undersökningar i Microsoft 365
+## <a name="monitor-priority-accounts-in-alerts-reports-and-detections"></a>Övervaka prioriterade konton i aviseringar, rapporter och identifieringar
+
+När du har skyddat och taggat dina prioriterade användare kan du använda de tillgängliga rapporterna, varningarna och utredningarna i EOP och Defender för Office 365 för att snabbt identifiera händelser och upptäckter som inbegriper prioriterade konton. De funktioner som stöder användar märkning beskrivs i följande tabell.
+
+<br>
 
 ****
 
