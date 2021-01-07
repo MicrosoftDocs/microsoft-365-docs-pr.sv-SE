@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Läs om tre verktyg som du kan använda för att övervaka personliga data.
-ms.openlocfilehash: a212067d75ab3d9e195e3d869e0a6ae7d1ed4d01
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 2a00d639be3b43fb56e26dca2725f2c3dac54b39
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616386"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760548"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Övervaka läckage av personliga data
 
@@ -36,9 +36,9 @@ Det finns många verktyg som kan användas för att övervaka användning och tr
 
 På bilden:
 
-- Börja med Microsoft 365-rapporter för dataförlustskydd för att övervaka personliga data i SharePoint Online, OneDrive för företag och e-post under överföring. De ger den högsta detaljnivån för övervakning av personliga data. Rapporterna innefattar dock inte alla tjänster i Office 365.
+- Börja med Microsoft 365-rapporter för dataförlustskydd för att övervaka personliga data i SharePoint Online, OneDrive för företag och e-post under överföring. De här rapporterna ger den högsta detaljnivån för övervakning av personliga data. Rapporterna innefattar dock inte alla tjänster i Office 365.
 
-- Använd sedan aviseringsprinciper och granskningsloggen för att övervaka aktiviteten i flera tjänster. Konfigurera löpande övervakning eller sök efter en händelse i granskningsloggen. Granskningsloggen fungerar för alla tjänster – Sway, PowerBI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, administratörsaktivitet, OneDrive för företag, SharePoint Online, e-post under överföring och vilande inkorgar. Skype-konversationer ingår i vilande inkorgar.
+- Använd sedan aviseringsprinciper och granskningsloggen för att övervaka aktiviteten i flera tjänster. Konfigurera löpande övervakning eller sök efter en händelse i granskningsloggen. Granskningsloggen fungerar för alla tjänster: Sway, PowerBI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, administratörsaktivitet, OneDrive för företag, SharePoint Online, e-post under överföring och vilande inkorgar. Skype-konversationer ingår i vilande inkorgar.
 
 - Till sist ska du använda Microsoft Cloud App Security för att övervaka filer med känsliga data hos andra SaaS-leverantörer. Inom kort blir det möjligt att använda känsliga informationstyper och enhetliga etiketter för Azure Information Protection och Office med Cloud App Security. Du kan konfigurera principer som gäller för alla dina SaaS-appar eller vissa appar (som Box). Cloud App Security identifierar inte filer i Exchange Online, till exempel bifogade filer i e-post.
 
@@ -74,7 +74,7 @@ I granskningsloggen finns händelser från Exchange Online, SharePoint Online, O
 
 Säkerhetscenter och efterlevnadscenter tillhandahåller två olika sätt att övervaka och rapportera mot granskningsloggen:
 
-- Konfigurera aviseringsprinciper, visa aviseringar och följa trender – använd verktygen för aviseringsprinciper och avisering på instrumentpanelen i säkerhetscenter eller efterlevnadscenter.
+- Konfigurera aviseringsprinciper, visa aviseringar och följa trender: använd verktygen för aviseringsprinciper och avisering på instrumentpanelen i säkerhetscenter eller efterlevnadscenter.
 
 - Sök direkt i granskningsloggen – sök efter alla händelser i ett specifikt datumintervall. Du kan också filtrera resultatet utifrån vissa villkor, t. ex. användaren som utförde åtgärden, åtgärden eller målobjektet.
 
@@ -151,7 +151,7 @@ Avisera när en fil som innehåller ett kreditkortsnummer delas från en godkän
 |Kategori|DLP|
 |Filterinställningar|Åtkomstnivå = offentlig (Internet), offentlig, extern <p> App = \<select apps\>(använd den här inställningen om du vill begränsa övervakning till vissa SaaS-appar)|
 |Använd för|Alla filer, alla ägare|
-|Innehållsgranskning|Innefattar filer som matchar ett befintligt uttryck: Alla länder: Ekonomi: Kreditkortsnummer <p> Kräv inte relevant kontext: avmarkerat (matchar nyckelord och regex) <p> Innefattar filer med minst 1 matchning <p> Ta bort mask för de fyra sista tecknen i överträdelsen: markerat|
+|Innehållsgranskning|Innefattar filer som matchar ett befintligt uttryck: Alla länder: Ekonomi: Kreditkortsnummer <p> Kräv inte relevant kontext: avmarkerat (den här inställningen matchar nyckelord och regex) <p> Innefattar filer med minst 1 matchning <p> Ta bort mask för de fyra sista tecknen i överträdelsen: markerat|
 |Varningar|Skapa en avisering för varje matchande fil: markerat <p> Daglig aviseringsgräns: 1 000 <p> Välj en avisering som e-post: markerat <p> Till: infosec@contoso.com|
 |Styrning|Microsoft OneDrive för företag <p> Gör privat: markera Ta bort externa användare <p> Alla andra inställningar: avmarkerade <p> Microsoft SharePoint Online <p> Gör privat: markera Ta bort externa användare <p> Alla andra inställningar: avmarkerade|
 |
@@ -186,5 +186,5 @@ Kommentarer:
 
 Liknande principer:
 
-- Identifiera stora nedladdningar med kunddata eller HR-data – avisera när ett stort antal filer som innehåller kunddata eller HR-data har laddats ned av en enskild användare under en begränsad tidsperiod.
-- Identifiera delning av kunddata och HR-data – avisera när filer som innehåller kund- eller HR-data delas.
+- Identifiera stora nedladdningar med kunddata eller HR-data; avisera när ett stort antal filer som innehåller kunddata eller HR-data har laddats ned av en enskild användare under en begränsad tidsperiod.
+- Identifiera delning av kunddata och HR-data: avisera när filer som innehåller kund- eller HR-data delas.

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Lär dig hur du konfigurerar DMARC (Domain-based Message Authentication, Reporting, and Conformance) för att validera meddelanden som skickats från din organisation.
-ms.openlocfilehash: 9dd97b1fc60f0b6198bb6c55af291c7dd103ac5d
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: bcf1c0b3dc0a1a8dd8a679af815fbdc2173cabb7
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615342"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759862"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Använda DMARC för att validera e-post
 
@@ -35,7 +35,7 @@ ms.locfileid: "49615342"
 
 ## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-microsoft-365"></a>Hur fungerar SPF och DMARC tillsammans för att skydda e-post i Microsoft 365?
 
- Ett e-postmeddelande kan innehålla flera avsändaradresser. Adresserna används för olika ändamål. Tänk på följande adresser till exempel:
+ Ett e-postmeddelande kan innehålla flera upphovsmän eller avsändaradresser. Adresserna används för olika ändamål. Tänk på följande adresser till exempel:
 
 - **”E-post från”-adress**: Identifierar avsändaren och anger vart returmeddelanden ska skickas om problem uppstår med leveransen av meddelandet, till exempel meddelanden om utebliven leverans. Det här visas i kuvertdelen av ett e-postmeddelande och visas normalt inte av e-postprogrammet. Detta kallas ibland för 5321.MailFrom-adressen eller reverse-path-adressen.
 
@@ -192,15 +192,15 @@ Du kan implementera DMARC gradvis utan att det påverkar resten av ditt e-postfl
 
     Det sista steget är att implementera en avvisningsprincip. En avvisningsprincip är en DMARC TXT-post som har principen inställd på avvisa (p=reject). När du gör det här uppmanar du DMARC-mottagare att inte acceptera meddelanden som inte klarar DMARC-kontrollerna.
 
-4. Hur ställer du in DMARC för underdomän?
+4. Hur konfigurerar du DMARC för underdomän?
 
-DMARC implementeras genom att publicera en policy som en TXT-post i DNS och är hierarkisk (t.ex. en policy publicerad för contoso.com kommer att tillämpas på sub.domain.contonos.com om inte en annan policy definieras uttryckligen för underdomänet). Detta är användbart eftersom organisationer kanske kan specificera ett mindre antal DMARC-poster på hög nivå för bredare täckning. Man bör vara noga med att konfigurera explicita underdomän DMARC-poster där du inte vill att underdomänerna ska ärva topp nivå domänens DMARC-post.
+   DMARC implementeras genom att publicera en policy som en TXT-post i DNS och är hierarkisk (t.ex. en policy publicerad för contoso.com kommer att tillämpas på sub.domain.contonos.com om inte en annan policy definieras uttryckligen för underdomänet). Detta är användbart eftersom organisationer kanske kan specificera ett mindre antal DMARC-poster på hög nivå för bredare täckning. Man bör vara noga med att konfigurera explicita underdomän DMARC-poster där du inte vill att underdomänerna ska ärva topp nivå domänens DMARC-post.
 
-Du kan också lägga till en policy wildcard-typ för DMARC när domäner inte bör skicka e-post, genom att lägga till `sp=reject` värdet. Till exempel:
+   Du kan också lägga till en policy wildcard-typ för DMARC när domäner inte bör skicka e-post, genom att lägga till `sp=reject` värdet. Till exempel:
 
-```console
-_dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
-```
+   ```text
+   _dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
+   ```
 
 ## <a name="how-microsoft-365-handles-outbound-email-that-fails-dmarc"></a>Så hanterar Microsoft 365 utgående e-post som inte klarar DMARC
 
