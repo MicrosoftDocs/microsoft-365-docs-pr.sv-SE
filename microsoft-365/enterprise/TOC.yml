@@ -24,7 +24,7 @@
       items:
         - name: Lägga till en domän
           href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
-        - name: Konfigurera M365E tillåten slutpunkt
+        - name: Konfigurera slutpunkter för att kringgå
           items:
             - name: Office 365 IP-adress och URL webbtjänst
               href: microsoft-365-ip-web-service.md

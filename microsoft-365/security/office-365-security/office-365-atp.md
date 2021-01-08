@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft Defender för Office 365 innehåller säkra bifogade filer, säkra länkar, avancerade verktyg för skydd mot nätfiske, rapporteringsverktyg och funktioner för hotinformation.
-ms.openlocfilehash: 86e738fa9390cc40b06c10a27f3198715bb991fd
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 34011780241ae3a669fe32aa5fad00f9836d5570
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614816"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780314"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender för Office 365
 
@@ -44,6 +44,11 @@ Microsoft Defender för Office 365 skyddar din organisation mot skadliga hot fr�
 - **[Funktioner för undersökning av hot och svar](#use-threat-investigation-and-response-capabilities)**: Använd verktygen för nya funktioner för att undersöka, förstå, simulera och förhindra hot.
 
 - **[Automatiserade funktioner för undersökning och svar](office-365-air.md)**: Spara tid och ansträngning för att undersöka och mildra hot.
+
+## <a name="interactive-guide-to-microsoft-defender-for-office-365"></a>Interaktiv guide till Microsoft Defender för Office 365
+I den här interaktiva guiden får du lära dig hur du skyddar din organisation med Microsoft Defender för Office 365. Du kommer att se hur Defender för Office 365 kan hjälpa dig att definiera skyddsprinciper, analysera hot till din organisation och reagera på attacker.
+
+> [!VIDEO https://aka.ms/MSDO-IG]
 
 ## <a name="getting-started"></a>Komma igång
 
