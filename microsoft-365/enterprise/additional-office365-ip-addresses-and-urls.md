@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Sammanfattning: den nya webb tjänsten för slut punkter innehåller inte ett litet antal slut punkter för specifika scenarier.'
 hideEdit: true
-ms.openlocfilehash: 8e1d464a4bb24594ae783a8e1e272050b6c038bb
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: d5c97fa2399392b03e00644f270e8726570aefb5
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682859"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780586"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Ytterligare slut punkter som inte ingår i Office 365 IP Address and URL Web Service
 
@@ -74,12 +74,18 @@ Förutom DNS är det alla valfria för de flesta kunder om du inte behöver det 
 
 [Hantera Office 365-slutpunkter](managing-office-365-endpoints.md)
   
-[Övervaka Microsoft 365-anslutning](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity?view=o365-worldwide)
+[Övervaka Microsoft 365 anslutning](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity?view=o365-worldwide)
   
 [Klientanslutning](https://support.office.com/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b)
   
 [Nätverk för innehållsleverans](https://support.office.com/article/content-delivery-networks-0140f704-6614-49bb-aa6c-89b75dcd7f1f)
   
-[Microsoft Azure Datacenter IP-intervall](https://www.microsoft.com/download/details.aspx?id=41653)
+[Azure IP-adressintervall och service märken – offentligt moln](https://www.microsoft.com/download/details.aspx?id=56519)
+
+[Azure IP-adressintervall och service märken – amerikanska myndigheter](https://www.microsoft.com/download/details.aspx?id=57063)
+
+[Azure IP-adressintervall och service märken – Tyskland-moln](https://www.microsoft.com/download/details.aspx?id=57064)
+
+[Azure IP-adressintervall och service märken – Kina-moln](https://www.microsoft.com/download/details.aspx?id=57062)
   
 [Microsoft Public IP-utrymme](https://www.microsoft.com/download/details.aspx?id=53602)

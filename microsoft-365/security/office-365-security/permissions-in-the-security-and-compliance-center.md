@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Administratörer kan läsa mer om vilka behörigheter som är tillgängliga i säkerhets & Compliance Center i Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 27e1a9451f4a51872599f18e65c29a2ec15c539d
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: 28f3ca7fb1efa7924cc69c9ecf1deb2123282dfa
+ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769237"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784327"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>Behörigheter i Säkerhets- och efterlevnadscentret
 
@@ -53,6 +53,11 @@ I följande tabell visas de standard roll grupper som är tillgängliga i säker
 Att hantera behörigheter i säkerhets & efterlevnad ger bara användarna åtkomst till de funktioner som är tillgängliga i säkerhets & efterlevnad Center. Om du vill bevilja behörigheter till andra funktioner som inte finns i säkerhets & kompatibilitetstillstånd, till exempel regler för Exchange-flöden (kallas även transport regler), måste du använda administrations centret för Exchange.
 
 Om du vill se hur du beviljar åtkomst till säkerhets & Compliance Center kan du läsa [ge användare åtkomst till Microsoft 365 Compliance Admin Center](grant-access-to-the-security-and-compliance-center.md).
+
+> [!NOTE]
+> Om du vill visa fliken **behörigheter** i säkerhets & Compliance Center måste du vara administratör. Specifikt måste du ha tilldelats roll **hanterings** rollen och den rollen tilldelas bara rollen **organisations hantering** i säkerhets & Compliance Center som standard. Roll **hanterings** rollen gör det också möjligt för användare att visa, skapa och ändra roll grupper.
+
+<br><br>
 
 ****
 
@@ -141,6 +146,8 @@ Observera att följande roller inte är tilldelade till roll gruppen organisatio
 - Översikt
 - RMS-kryptering
 - Kontrol lera administratören
+
+<br><br>
 
 ****
 

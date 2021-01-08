@@ -22,18 +22,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du köper nya Microsoft 365 för företag-licenser.
-ms.openlocfilehash: 2f881881bc55659d5ba4cd7280111a15bf0f9ff3
-ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
+ms.openlocfilehash: a4bc66188b064227821ddc66cc764c83caad5f64
+ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49771968"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784247"
 ---
 # <a name="buy-microsoft-365-licenses"></a>Köp Microsoft 365-licenser
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE?autoplay=false]
 
-När du lägger till nya användare måste du köpa fler licenser för dessa användare.
+När du lägger till nya användare måste du köpa fler Microsoft 365-licenser för dessa användare.
 
 ## <a name="try-it"></a>Prova!
 

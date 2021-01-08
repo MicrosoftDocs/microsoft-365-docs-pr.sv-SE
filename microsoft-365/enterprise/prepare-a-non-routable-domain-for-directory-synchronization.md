@@ -21,36 +21,37 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
-description: Lär dig vad du kan göra om du har en icke-dirigerbar domän kopplad till dina lokala användare innan du synkroniserar med Microsoft 365.
-ms.openlocfilehash: f38f6143b6e26b2849c174f74c94d009ddea73cd
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+description: Lär dig vad du kan göra om du har en icke-dirigerbart domän kopplad till dina lokala användar konton innan du synkroniserar dem med din Microsoft 365-klient.
+ms.openlocfilehash: dcd941bbae159afeb0cf6ef4f5acbaf409966295
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527727"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780338"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Förbereda en icke-dirigerbar domän för katalogsynkronisering
-När du synkroniserar en lokal katalog med Microsoft 365 måste du ha en verifierad domän i Azure Active Directory (Azure AD). Endast UPN-namnen (User huvud namn) som är kopplade till den lokala domänen synkroniseras. Alla UPN som innehåller en icke-routad domän, till exempel. local (som billa@contoso. local) synkroniseras till en. onmicrosoft.com-domän (som billa@contoso.onmicrosoft.com). 
 
-Om du för närvarande använder en. lokala domän för dina användar konton i Active Directory Domain Services (AD DS) rekommenderar vi att du ändrar dem till att använda en verifierad domän (till exempel billa@contoso.com) för att synkronisera med din Microsoft 365-domän korrekt.
-  
-## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>Vad händer om jag bara har en lokalt lokal domän?
+När du synkroniserar en lokal katalog med Microsoft 365 måste du ha en verifierad domän i Azure Active Directory (Azure AD). Endast UPN (User Principal Name) som är kopplade till den lokala Active Directory Domain Services-domänen (AD DS) synkroniseras. Alla UPN som innehåller en icke-dirigerbart domän, till exempel ". local" (exempel: billa@contoso. local), synkroniseras till en. onmicrosoft.com-domän (exempel: billa@contoso.onmicrosoft.com). 
 
-Det senaste verktyget som du kan använda för att synkronisera AD DS till Azure AD heter Azure AD Connect. Mer information finns i [integrera dina lokala identiteter med Azure AD](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
+Om du använder en ". local"-domän för dina användar konton i AD DS rekommenderar vi att du ändrar dem till att använda en verifierad domän, till exempel billa@contoso.com, för att kunna synkroniseras korrekt med din Microsoft 365-domän.
   
-Azure AD Connect synkroniserar användarnas UPN och lösen ord så att användare kan logga in med samma inloggnings uppgifter som de använder lokalt. Azure AD Connect kan bara synkronisera användare till domäner som verifieras av Microsoft 365. Detta innebär att domänen också verifieras av Azure AD eftersom Microsoft 365-identiteter hanteras av Azure AD. Med andra ord måste domänen vara en giltig Internet-domän (till exempel. com,. org, .net,. USA osv.). Om den interna AD DS-tjänsten endast använder en icke-dirigerbart domän (till exempel. lokal) kan detta inte matcha den verifierade domän som du har på Microsoft 365. Du kan åtgärda det här problemet genom att antingen ändra din primära domän i din lokala AD DS, eller genom att lägga till ett eller flera UPN-suffix.
+## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>Vad händer om jag bara har en "lokalt" lokal domän?
+
+Du använder Azure AD Connect för att synkronisera din AD DS till Azure AD-innehavaren av din Microsoft 365-klient. Mer information finns i [integrera dina lokala identiteter med Azure AD](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
   
-### <a name="change-your-primary-domain"></a>**Ändra din primära domän**
+Azure AD Connect synkroniserar användarnas UPN och lösen ord så att användare kan logga in med samma inloggnings uppgifter som de använder lokalt. Azure AD Connect kan bara synkronisera användare till domäner som verifieras av Microsoft 365. Detta innebär att domänen också verifieras av Azure AD eftersom Microsoft 365-identiteter hanteras av Azure AD. Med andra ord måste domänen vara en giltig Internet-domän (till exempel. com,. org, .net,. us). Om den interna AD DS-tjänsten endast använder en icke-dirigerbart domän (till exempel ". lokal"), kan detta inte matcha den verifierade domän som du har för Microsoft 365-klienten. Du kan åtgärda det här problemet genom att antingen ändra din primära domän i din lokala AD DS, eller genom att lägga till ett eller flera UPN-suffix.
+  
+### <a name="change-your-primary-domain"></a>Ändra din primära domän
 
 Ändra din primära domän till en domän som du har verifierat i Microsoft 365, till exempel contoso.com. Alla användare som har domänen contoso. local har sedan uppdaterats till contoso.com. Det här är ett mycket praktiskt tillvägagångs sätt och en enklare lösning beskrivs i följande avsnitt.
   
-### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>**Lägga till UPN-suffix och uppdatera användarna till dem**
+### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>Lägga till UPN-suffix och uppdatera användarna till dem
 
-Du kan lösa det lokala problemet genom att registrera nya UPN-suffix eller suffix i AD DS för att matcha den eller de domäner som du verifierade i Microsoft 365. När du har registrerat det nya suffixet uppdaterar du användar-UPN för att ersätta. local med det nya domän namnet till exempel så att ett användar konto ser ut som billa@contoso.com.
+Du kan lösa problemet ". local" genom att registrera nya UPN-suffix eller suffix i AD DS för att matcha den eller de domäner som du verifierade i Microsoft 365. När du har registrerat det nya suffixet uppdaterar du användar-UPN för att ersätta ". local" med det nya domän namnet, till exempel så att ett användar konto ser ut som billa@contoso.com.
   
 När du har uppdaterat UPN-värdet för att använda den verifierade domänen är du klar att synkronisera din lokala AD DS med Microsoft 365.
   
- **Steg 1: Lägg till det nya UPN-suffixet**
+#### <a name="step-1-add-the-new-upn-suffix"></a>Steg 1: Lägg till det nya UPN-suffixet * *
   
 1. Välj **verktyg** \> **Active Directory-domäner och förtroenden** i Server hanteraren på AD DS-domänkontrollanten.
     
@@ -64,13 +65,13 @@ När du har uppdaterat UPN-värdet för att använda den verifierade domänen ä
     
     ![Högerklicka på Active Directory-domäner och förtroenden och välj egenskaper](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
   
-3. På fliken **UPN-suffix** , i rutan **alternativa UPN-suffix** , skriver du in det nya UPN-suffixet eller suffixen och väljer sedan **Lägg till** \> **Apply**.
+3. På fliken **UPN-suffix** , i rutan **alternativa UPN-suffix** , skriver du in det nya UPN-suffixet eller suffixen och väljer sedan **Lägg till** \> .
     
     ![Lägga till ett nytt UPN-suffix](../media/a4aaf919-7adf-469a-b93f-83ef284c0915.PNG)
   
     Välj **OK** när du är klar med att lägga till suffix. 
     
- **Steg 2: ändra UPN-suffix för befintliga användare**
+ #### <a name="step-2-change-the-upn-suffix-for-existing-users"></a>Steg 2: ändra UPN-suffix för befintliga användare
   
 1. Välj **verktyg** \> **Active Directory-användare och datorer** i Server hanteraren på AD DS-domänkontrollanten.
     
@@ -87,11 +88,11 @@ När du har uppdaterat UPN-värdet för att använda den verifierade domänen ä
 4. Utför de här stegen för alla användare.
     
    
-### <a name="you-can-also-use-windows-powershell-to-change-the-upn-suffix-for-all-users"></a>**Du kan också använda Windows PowerShell för att ändra UPN-suffix för alla användare**
+### <a name="use-powershell-to-change-the-upn-suffix-for-all-of-your-users"></a>Använda PowerShell för att ändra UPN-suffix för alla dina användare
 
-Om du har många användare att uppdatera är det enklare att använda Windows PowerShell. I följande exempel används cmdletarna [Get-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624312) och [set-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624313) för att ändra alla contoso. local-suffix till contoso.com. 
+Om du har många användar konton som ska uppdateras är det enklare att använda PowerShell. I följande exempel används cmdletarna [Get-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624312) och [set-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624313) för att ändra alla contoso. local-suffix till contoso.com i AD DS. 
 
-Du kan till exempel köra följande Windows PowerShell-kommandon för att uppdatera alla contoso. lokala suffix till contoso.com:
+Du kan till exempel köra följande PowerShell-kommandon för att uppdatera alla contoso. lokala suffix till contoso.com:
     
   ```powershell
   $LocalUsers = Get-ADUser -Filter "UserPrincipalName -like '*contoso.local'" -Properties userPrincipalName -ResultSetSize $null

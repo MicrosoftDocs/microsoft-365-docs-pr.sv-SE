@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Lär dig mer om de Microsoft 365-konfigurations steg som behövs för att skapa ett team för aktivitet, konversation och dokument samarbete med gäster i Teams.
-ms.openlocfilehash: cc962e22bde70220e07f805b0a7a83c111886369
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 34b7d5d47d7fb0c9196beda70184fa6510b6cc33
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659612"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780550"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Samar beta med gäster i ett team
 
@@ -74,7 +74,7 @@ Att ange inställningar för gäståtkomst i Teams
 5. Kontrollera att **Tillåt gäståtkomst i Teams** är inställt på **På**.
 6. Gör önskade ändringar i de ytterligare gästinställningarna och klicka sedan på **Spara**.
 
-När gästen är aktive rad kan du välja att kontrol lera gäst åtkomsten till enskilda team och deras tillhör ande SharePoint-webbplatser med känslighets etiketter. Mer information finns i [använda känslighets etiketter för att skydda innehåll i Microsoft Teams, microsoft 365 Groups och SharePoint-webbplatser](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+När gästen är aktive rad kan du välja att kontrol lera gäst åtkomsten till enskilda team och deras tillhör ande SharePoint-webbplatser med känslighets etiketter. Mer information finns i [Använd känslighetsetiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
 > [!NOTE]
 > Det kan ta upp till 24 timmar innan gäst inställningarna blir aktiva när du har aktiverat det.
@@ -188,3 +188,5 @@ Så här bjuder du in gäster till ett team
 [Skapa ett B2B-extranät med hanterade gäster](b2b-extranet.md)
 
 [SharePoint och OneDrive-integrering med Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+
+[Delnings alternativ är nedtonad när du delar från SharePoint eller OneDrive](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Administratörer kan läsa mer om hur man skapar anpassade nytto laster för utbildning för angrepps simulering i Microsoft Defender för Office 365.
-ms.openlocfilehash: c42090634f6fa9500ae4c3e781b49b607ee928f5
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: c48e6001e6d51c5621d54b3d4149d90b71724fad
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667550"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780254"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Skapa en anpassad nyttolast för att träna på attacksimulering
 
@@ -50,7 +50,7 @@ När du är klar med att bygga upp nytto lasten klickar du på **Nästa**.
 
 ## <a name="adding-indicators"></a>Lägga till indikatorer
 
-Med indikatorer blir det lättare för anställda att komma via attack simuleringen förstå hur de kan leta efter i framtida attacker. Börja genom att klicka på **Lägg till indikator**.
+Med indikatorer blir det lättare för anställda att komma via attack simuleringen förstå vilken LED trådar de kan leta efter i framtida attacker. Börja genom att klicka på **Lägg till indikator**.
 
 Välj en indikator du vill använda i list rutan. Listan granskas för att innehålla de vanligaste LED trådar som visas i nät fiske meddelanden. När du markerat det här alternativet kontrollerar du att indikator placeringen är inställd på **från bröd texten i e-** postmeddelandet och klickar på **Markera text**. Markera den del av nytto lasten där denna indikator visas och klicka på **Välj**.
 

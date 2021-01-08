@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Lär dig hur du konfigurerar en Exchange-Server lokalt för användning av hybrid modern autentisering (HMA) och ger dig säkrare autentisering och verifiering.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8db74c04335e0846666991d74980648cedb4d9d7
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 3841f429399500cfc24ebadc89c74d478d2290d9
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547136"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780290"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Så här konfigurerar du Exchange Server lokalt för användning av hybrid modern
 
@@ -40,11 +40,11 @@ Innan vi börjar ringer jag:
 
 - Exchange Online- \> EXO
 
-*Om en bild i den här artikeln har ett objekt som är nedtonat eller nedtonat, innebär det att elementet som visas i grått inte ingår i HMA-specifik konfiguration* .
+*Om en bild i den här artikeln har ett objekt som är nedtonat eller nedtonat, innebär det att elementet som visas i grått inte ingår i HMA-specifik konfiguration*.
 
 ## <a name="enabling-hybrid-modern-authentication"></a>Aktivera hybrid modern
 
-Att aktivera HMA på medelvärden:
+Att slå på HMA betyder:
 
 1. Det är bara att möta PreReqs innan du börjar.
 
@@ -85,7 +85,7 @@ Se till att URL-klienterna kan ansluta till är listade som HTTPS-tjänstens huv
 
    **Obs!** Du måste använda alternativet _Connect-MSOLService_ på den här sidan om du vill kunna använda kommandot nedan.
 
-2. För Exchange-relaterade URL-adresser skriver du följande kommando:
+2. För dina Exchange-relaterade URL-adresser skriver du följande kommando:
 
    ```powershell
    Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
@@ -93,7 +93,7 @@ Se till att URL-klienterna kan ansluta till är listade som HTTPS-tjänstens huv
 
    Ta del av (och skärmdump för senare jämförelse) utdata för det här kommandot, vilket bör omfatta en https://  *Autodiscover.yourdomain.com*  och https://  *mail.yourdomain.com* -URL, men i de flesta fall är SPN-namn som börjar med 00000002-0000-0ff1-CE00-000000000000/. Om det finns https://URL-adresser från dina lokala platser måste vi lägga till dessa specifika poster i den här listan.
 
-3. Om du inte ser dina interna och externa MAPI/HTTP-, EWS-, ActiveSync-, OAB-och Autodiscover-poster i den här listan måste du lägga till dem med hjälp av kommandot nedan (exempel-URL: erna är " `mail.corp.contoso.com` " och " `owa.contoso.com` ", men du **ersätter exempel URL-adresserna med din egen** ):
+3. Om du inte ser dina interna och externa MAPI/HTTP-, EWS-, ActiveSync-, OAB-och Autodiscover-poster i den här listan måste du lägga till dem med hjälp av kommandot nedan (exempel-URL: erna är " `mail.corp.contoso.com` " och " `owa.contoso.com` ", men du **ersätter exempel URL-adresserna med din egen**):
 
    ```powershell
    $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000
@@ -102,7 +102,7 @@ Se till att URL-klienterna kan ansluta till är listade som HTTPS-tjänstens huv
    Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
    ```
 
-4. Verifiera att de nya posterna har lagts till genom att köra kommandot Get-MsolServicePrincipal från steg 2 igen och titta igenom resultatet. Jämför listan/skärm bilden från den nya listan med SPN-namn (du kan också skriva in den nya listan för posterna). Om du lyckades ser du de två nya URL-adresserna i listan. I vårt exempel kommer listan med SPN att inkludera specifika URL: er  `https://mail.corp.contoso.com`  och  `https://owa.contoso.com` .
+4. Verifiera att de nya posterna har lagts till genom att köra kommandot Get-MsolServicePrincipal från steg 2 igen och titta igenom resultatet. Jämför listan/skärm bilden från den nya listan med SPN-namn. Du kan också ta en skärm bild av den nya listan för posterna. Om du lyckades ser du de två nya URL-adresserna i listan. I vårt exempel kommer listan med SPN att inkludera specifika URL: er  `https://mail.corp.contoso.com`  och  `https://owa.contoso.com` .
 
 ## <a name="verify-virtual-directories-are-properly-configured"></a>Verifiera att virtuella kataloger är korrekt konfigurerade
 
@@ -153,15 +153,15 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 ## <a name="verify"></a>Kontroll
 
-När du har aktiverat HMA använder klientens nästa inloggning det nya trafikflödet. Observera att när du aktiverar HMA utlöses ingen omauktorisering för någon klient. Klienterna autentiseras på nytt baserat på hur många autentiseringstoken och/eller vilka certifikat de har.
+När du har aktiverat HMA använder klientens nästa inloggning det nya trafikflödet. Observera att när du bara aktiverar HMA utlöses ingen reauktorisering för någon klient. Klienterna autentiseras baserat på de auth-token och/eller certifikat de har.
 
-Du bör även hålla ned CTRL-tangenten samtidigt som du högerklickar på ikonen för Outlook-klienten (även i Windows Notifications) och klickar på "anslutnings status". Leta efter klientens SMTP-adress mot "authn" \* -typen, som representerar Bearer-token som används i OAuth.
+Håll ned CTRL-tangenten samtidigt som du högerklickar på ikonen för Outlook-klienten (också i Windows Notifications-fältet) och klicka på "anslutnings status". Leta efter klientens SMTP-adress mot "authn" \* -typen, som representerar Bearer-token som används i OAuth.
 
  **Obs!** Behöver du konfigurera Skype för företag med HMA? Du behöver två artiklar: en som visar en lista med [topologier som stöds](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)och en som visar [hur](configure-skype-for-business-for-hybrid-modern-authentication.md)du konfigurerar.
 
 ## <a name="using-hybrid-modern-authentication-with-outlook-for-ios-and-android"></a>Använda hybrid modern inloggningsautentisering med Outlook för iOS och Android
 
-Om du är lokal kund med Exchange Server på TCP 443 ska du Lägg följande IP-adressintervall:
+Om du är en lokal kund med Exchange Server i TCP 443 ska du kringgå trafik bearbetning för följande IP-intervall:
 
 ```text
 52.125.128.0/20

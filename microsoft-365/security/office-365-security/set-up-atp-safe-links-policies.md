@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur du visar, skapar, ändrar och tar bort principer för säkra länkar och globala inställningar för säkra länkar i Microsoft Defender för Office 365.
-ms.openlocfilehash: 7a00b73855302f5046afa0605fd7188007394ed7
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: ef83d0dba1de03aa2b36384474791783e926059f
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683169"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780538"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Konfigurera principer för säkra länkar i Microsoft Defender för Office 365
 
@@ -55,15 +55,15 @@ I Exchange Online PowerShell eller fristående EOP PowerShell hanterar du policy
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till sidan **Safe Links** använder du <https://protection.office.com/safelinksv2> .
+- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till sidan **Safe Links** använder du <https://protection.office.com/safelinksv2> .
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
-  - För att skapa, ändra och ta bort principer för säkra länkar måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** .
+- Du måste tilldelas behörigheter innan du kan utföra åtgärderna i den här artikeln:
+  - För att skapa, ändra och ta bort principer för säkra länkar måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** i säkerhets & Compliance Center **och** en medlem i roll gruppen **organisations hantering** i Exchange Online.
   - Om du vill ha skrivskyddad åtkomst till principer för säkra länkar måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** .
 
-  Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
+  Mer information finns i [behörigheter i säkerhets & efterlevnad för Center](permissions-in-the-security-and-compliance-center.md) och [behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
   **Anmärkningar**:
 

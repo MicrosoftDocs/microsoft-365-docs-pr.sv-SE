@@ -15,24 +15,24 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Läs mer om Deployment Lab kit för Windows och Office, och var du hittar det.
-ms.openlocfilehash: 4ee3663e326dc5a7fbefce06a696cca6a4b060a9
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: f7f6dcaa9c1e007f6b83f897539bdabe9faa0b96
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527461"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780562"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Distributions labb paketet för Windows och Office
 
-Dessa övningar är avsedda att hjälpa dig att planera, testa och validera din installation och hantering av Station ära datorer med Windows 10 Enterprise och Microsoft 365-appar för företag. Lab-täckning med Konfigurations hanteraren för Microsoft-slutpunkter, skriv bords analyser, verktyget Office-anpassning, OneDrive, Windows autopilot och mer.
+Windows och Office Deployment Lab kit är utformat för att hjälpa dig att planera, testa och validera din installation och hantering av Station ära datorer med Windows 10 Enterprise och Microsoft 365-appar för företag. Laborationerna i paketets omslag med Konfigurations hanteraren för Microsoft-slutpunkter, stationär analys, verktyget Office-anpassning, OneDrive, Windows autopilot och mycket annat.
 
-Detta paket rekommenderas starkt för organisationer som förbereder Windows 8-uppgraderingar och gäller även om du använder Windows 10, Microsoft 365-appar för företag (tidigare Office 365 ProPlus) eller Office 2019. Och som en isolerad miljö är Lab perfekt för att utforska distributionsverktyg för uppdateringar och testning av distributionsautomatisering.
+Detta paket rekommenderas starkt för organisationer som förbereder Windows 8,1-uppgraderingar till Windows 10. Det gäller även om du använder Windows 10, Microsoft 365-appar för företag (tidigare Office 365 ProPlus) eller Office 2019. Som en isolerad miljö är det bästa laboratoriet som är idealiskt för att utforska distributions verktyget och testa den distributions-relaterade automatiseringen.
 
 [Ladda ned Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
 ## <a name="a-complete-lab-environment"></a>En komplett labbmiljö
 
-Du får en virtuell labbmiljö som etableras automatiskt, inklusive domänanslutna skrivbordsklienter, domänkontrollant, Internetgateway och en helt konfigurerad Konfigurationshanterare-instans. Lab innehåller de senaste utvärderings versionerna av följande produkter:
+Med paketet får du en automatiskt etablerad virtuell labb miljö, inklusive domän anslutna Skriv bords klienter, en domänkontrollant, en Internet-gateway och en fullt konfigurerad Configuration Manager-instans. Paketet innehåller de senaste utvärderings versionerna av följande produkter:
 
   - NYHET! Windows 10 Enterprise, version 20H2
   - Windows 7 Enterprise
@@ -44,10 +44,10 @@ Du får en virtuell labbmiljö som etableras automatiskt, inklusive domänanslut
   - Windows Server 
   - Microsoft SQL Server 
 
-Dessutom är labbet utformat för anslutning till utvärderingsversioner av: 
+Det resulterande laboratoriet är utformat för att anslutas till prov för: 
 
   - Microsoft 365 E5
-  - Office 365 Enterprise, E5 med Enterprise Mobility + Security (EMS)
+  - Office 365 E5 med Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>Stegvisa labbuppgifter
 
@@ -56,10 +56,11 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
 ### <a name="plan-and-prepare-infrastructure"></a>Planera och förbereda infrastruktur 
 - Desktop Analytics 
 - Cloud Management Gateway & moln distributions plats 
-- Anslut till klient organisation, samtidig hantering och byte av arbets belastning  
+- Ansluta till, hantera och byta arbets belastning 
 - Fjärråtkomst (VPN) 
 
 ### <a name="prepare-configuration"></a>Förbered konfiguration   
+
 - Optimera leverans i Windows 10   
 - Underhålla Windows 10 med grup princip
 - Underhålla Windows 10 med hjälp av Microsoft Intune   
@@ -69,16 +70,19 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
 - Säkerhet och efterlevnad   
 
 ### <a name="prepare-applications"></a>Förbereda program    
+
 - Readiness Toolkit för Office  
 - MSIX packning och konvertering av Win32-program   
 
 ### <a name="deploy-windows-10"></a>Distribuera Windows 10   
+
 - Aktivitetssekvensdistributioner i Configuration Manager
-- OS Deployment-aktivitetssekvenser i MDT   
+- OS Deployment sequences i Microsoft Deployment Toolkit (MDT)
 - Windows Autopilot
 - Distribuera och hantera den nya Microsoft Edge  
 
 ### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Distribuera Microsoft 365-appar för företag    
+
 - Cloud Managed Deployment  
 - Lokalt hanterad distribution    
 - Microsoft 365-appar för företags distribution på icke-annons anslutna enheter 
@@ -88,13 +92,14 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
 - Distribuera Microsoft Teams
 
 ### <a name="deploy-windows-virtual-desktop"></a>Distribuera virtuellt skriv bord i Windows  
+
 - Förbereda, distribuera, optimera
  
-## <a name="download-the-windows-and-office-deployment-lab-kit"></a>Ladda ned Windows and Office Deployment Lab Kit
+## <a name="where-to-find-the-windows-and-office-deployment-lab-kit"></a>Här hittar du installations labbs paketet för Windows och Office
 
 [Ladda ned Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-* Installerat original plan version 2002 kan uppdateras till version 2010 med hjälp av in-Console-uppdateringen. Använd en bred bandbredd för att ladda ner innehållet så att det blir lättare att ladda ner och tillåta att 30-45 minuter för automatisk etablering. Lab-miljön kräver minst 16 GB tillgängligt minne och 150GB av ledigt disk utrymme. För optimal prestanda rekommenderas 32 GB tillgängligt minne och 300 GB ledigt utrymme. Lab: a upphör 7 februari 2021. En ny version publiceras innan den upphör att gälla.
+* Den installerade original Plans versionen 2002 kan uppdateras till version 2010 med och i-konsol-uppdateringen. Använd en Internet anslutning med bred bandbredd för att ladda ner innehållet och tillåta att 30-45 minuter för automatisk etablering. Laboratorie miljön kräver minst 16 GB tillgängligt minne och 150 GB fritt disk utrymme. För optimal prestanda rekommenderas 32 GB tillgängligt minne och 300 GB ledigt utrymme. Paketet upphör 7 februari 2021. En ny version publiceras innan den upphör att gälla.
 
 ## <a name="additional-guidance"></a>Ytterligare vägledning
 
@@ -102,20 +107,20 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
 
   - [Operativsystemdistribution med Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
-  - [<span class="underline">Planera för distribution av Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
+  - [Planera för distribution av Windows 10](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Guide till distribution av Microsoft 365-applikationer</span>](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
+  - [Guide till distribution av Microsoft 365-applikationer](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-  - [<span class="underline">Komma igång med Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
+  - [Komma igång med Intune](https://docs.microsoft.com/intune/get-started-evaluation)
 
 ## <a name="related-resources"></a>Relaterade resurser
 
-  - [<span class="underline">Introduktion till Microsoft 365</span>](https://www.microsoft.com/microsoft-365/default.aspx)
+  - [Introduktion till Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
 
-  - [<span class="underline">Office 365 för företag</span>](https://products.office.com/business/office)
+  - [Office 365 för företag](https://products.office.com/business/office)
 
-  - [<span class="underline">Introduktion till Enterprise Mobility + Security</span>](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+  - [Introduktion till Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
-  - [<span class="underline">Windows 10 för företag</span>](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
+  - [Windows 10 för företag](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
 
-  - [<span class="underline">Windows 10 för små och medelstora företag</span>](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)
+  - [Windows 10 för små och medelstora företag](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du definierar principer för säkra bifogade filer för att skydda din organisation från skadliga filer via e-post.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9105e7ed9e9bc376b3d86cd846d8c1d6eae8deea
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 8dfdcc0779fb8b8438ee7a63d2f0e180cbb12ac9
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682919"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780518"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Konfigurera principer för säkra bifogade filer i Microsoft Defender för Office 365
 
@@ -55,15 +55,15 @@ I Exchange Online PowerShell eller fristående EOP PowerShell hanterar du policy
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Använd om du vill gå direkt till sidan **betrodda bifogade filer** <https://protection.office.com/safeattachmentv2> .
+- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Använd om du vill gå direkt till sidan **betrodda bifogade filer** <https://protection.office.com/safeattachmentv2> .
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
-  - Om du vill skapa, ändra och ta bort principer för säkra bifogade filer måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** .
-  - Om du vill ha skrivskyddad åtkomst till principer för säkra bifogade filer måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** .
+- Du måste tilldelas behörigheter innan du kan utföra åtgärderna i den här artikeln:
+  - För att skapa, ändra och ta bort principer för säkra länkar måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** i säkerhets & Compliance Center **och** en medlem i roll gruppen **organisations hantering** i Exchange Online.
+  - Om du vill ha skrivskyddad åtkomst till principer för säkra länkar måste du vara medlem i roll grupperna **global läsare** eller **säkerhets läsare** i säkerhets & Compliance Center.
 
-  Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
+  Mer information finns i [behörigheter i säkerhets & efterlevnad för Center](permissions-in-the-security-and-compliance-center.md) och [behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
   **Anmärkningar**:
 

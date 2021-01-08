@@ -3,7 +3,6 @@ title: Vanliga frågor och svar om dataflytt
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +14,12 @@ f1.keywords:
 - NOCSH
 description: Hitta svar på vanliga frågor (FAQ) om att flytta grundläggande data till ett nytt Office 365-datacenter geo.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3eb3b7ec99da2cdca357f45eb4e71500a235fc61
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 49ddcbf3a1aa8d91bd8202894e114fe50624720a
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877831"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780266"
 ---
 # <a name="data-move-general-faq"></a>Vanliga frågor och svar om dataflytt
 
@@ -28,7 +27,7 @@ Här är några svar på vanliga frågor om att flytta grundläggande kunddata p
   
 ## <a name="what-customers-are-eligible-to-request-a-move"></a>Vilka kunder är berättigade att begära flytt?
   
-Befintliga Microsoft 365-kommersiella kunder som valde ett land som är berättigat till det nya data Center geo kommer att kunna begära en flytt.  Programmet finns bara för innehavare med en stödberättigad landskod som tilldelats Microsoft 365-klient organisationen för att migrera grundläggande kunddata på rest för kvalificerade arbets belastningar till motsvarande Microsoft 365 Data Center geo.  Se [hur du kan begära att dina data flyttas](request-your-data-move.md) för att bekräfta land.   
+Befintliga Microsoft 365-kommersiella kunder som valde ett land som är berättigat till det nya data Center geo kommer att kunna begära en flytt. Programmet finns bara för innehavare med en stödberättigad landskod som tilldelats Microsoft 365-klient organisationen för att migrera grundläggande kunddata på rest för kvalificerade arbets belastningar till motsvarande Microsoft 365 Data Center geo. Se [hur du kan begära att dina data flyttas](request-your-data-move.md) för att bekräfta land.   
 
 ## <a name="how-do-we-define-core-customer-data"></a>Hur definierar vi grundläggande kunddata?
  
@@ -39,19 +38,19 @@ Grundläggande kund data är en term som refererar till en delmängd kunddata so
 
 ## <a name="what-is-in-scope-for-teams-migration"></a>Vad finns i omfattning för team migrering?
 
-Utöver Exchange Online, SharePoint Online och OneDrive för företag; Microsoft migrerar team data till det lokala data centret.  
+Utöver Exchange Online, SharePoint Online och OneDrive för företag; Microsoft migrerar team data till det lokala data centret. 
 - Teams chattar meddelanden, inklusive privata meddelanden och kanal meddelanden. 
 - Team-bilder som används i chattar. 
 
-Teams-filer lagras i SharePoint Online-och Teams-chatt-filer lagras i OneDrive för företag.  Röst brev låda, kalender och kontakter lagras i Exchange Online.  I många fall används Exchange Online, SharePoint Online och OneDrive för företag redan av kunden i det lokala datacentret Geo och är också en del av Microsoft 365 migrations program för godkända kund länder.
+Teams-filer lagras i SharePoint Online-och Teams-chatt-filer lagras i OneDrive för företag. Röst brev låda, kalender och kontakter lagras i Exchange Online. I många fall används Exchange Online, SharePoint Online och OneDrive för företag redan av kunden i det lokala datacentret Geo och är också en del av Microsoft 365 migrations program för godkända kund länder.
 
 ## <a name="at-what-point-is-my-migration-complete-so-that-my-tenants-core-customer-data-is-being-stored-at-rest-in-my-new-geo"></a>Vad händer när min migrering är färdig så att min klient organisations viktigaste kund uppgifter lagras på en ny geo?
 
-På grund av delade samarbeten mellan Exchange Online och SharePoint Online/OneDrive för företag kan ingen migrering anses vara slutförd förrän båda tjänsterna migreras.  Exchange Online och SharePoint Online/OneDrive för företag migreras ofta vid olika tillfällen och oberoende av varandra.  Klient organisations administratörer får bekräftelse i meddelande Center när varje tjänste migrering är färdig och kan visa data plats kortet i administrations centret när som helst för att bekräfta grundläggande kund uppgifter på rest-platsen för varje tjänst.
+På grund av delade samarbeten mellan Exchange Online och SharePoint Online/OneDrive för företag kan ingen migrering anses vara slutförd förrän båda tjänsterna migreras. Exchange Online och SharePoint Online/OneDrive för företag migreras ofta vid olika tillfällen och oberoende av varandra. Klient organisations administratörer får bekräftelse i meddelande Center när varje tjänste migrering är färdig och kan visa data plats kortet i administrations centret när som helst för att bekräfta grundläggande kund uppgifter på rest-platsen för varje tjänst.
 
 ## <a name="how-do-you-make-sure-my-customer-data-is-safe-during-the-move-and-that-i-wont-experience-downtime"></a>Hur ser jag till att mina kund uppgifter är säkra under flytten och att jag inte upplever nertid?
   
-Data flyttas är en backend-åtgärd som påverkar slutanvändaren minimalt. Funktioner som kan påverkas visas [under och efter att data flyttas](during-and-after-your-data-move.md). Vi följer [service nivå avtalet för Microsoft Online Services (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) för tillgänglighet så det finns inget som kunderna behöver för att förbereda för eller för att övervaka under flytten. 
+Data flyttas är en server åtgärd som påverkar slutanvändaren minimalt. Funktioner som kan påverkas visas [under och efter att data flyttas](during-and-after-your-data-move.md). Vi följer [service nivå avtalet för Microsoft Online Services (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) för tillgänglighet så det finns inget som kunderna behöver för att förbereda för eller för att övervaka under flytten. 
   
 Alla Microsoft 365-tjänster kör samma versioner i Data Center, så att du kan vara säker på konsekvent funktionalitet. Din tjänst stöds helt och hållet.
   
@@ -61,7 +60,7 @@ Vissa av Microsoft 365-tjänsterna kan finnas i olika geos för vissa befintliga
 
  ## <a name="where-is-my-core-customer-data-located"></a>Var finns alla grundläggande kund uppgifter?
 
-Kund tjänst administratörer kan när som helst visa data plats kortet i administrations centret för att bekräfta grundläggande kund data på rest-platsen för varje tjänst, särskilt för deras innehavare.  Vi publicerar också platsen för datacenter-geos, data Center och plats för Office 365-kunddata på [Microsoft 365 interaktiva Data Center-kartor ](https://office.com/datamaps) som en referens till de aktuella standard kund uppgifterna på rest-platser för nya klient organisationer.  Du kan kontrol lera platsen för dina kunddata på rest via området data plats under din organisations profil i administrations centret för Microsoft 365.  
+Kund tjänst administratörer kan när som helst visa data plats kortet i administrations centret för att bekräfta grundläggande kund data på rest-platsen för varje tjänst, särskilt för deras innehavare.  Vi publicerar också platsen för datacenter-geos, data Center och plats för Office 365-kunddata på [Microsoft 365 interaktiva Data Center-kartor ](https://office.com/datamaps) som en referens till de aktuella standard kund uppgifterna på rest-platser för nya klient organisationer. Du kan kontrol lera platsen för dina kunddata på rest via området data plats under din organisations profil i administrations centret för Microsoft 365.  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>När kan jag begära en flytt?
   
@@ -91,9 +90,9 @@ Varje tjänst flyttas oberoende och kommer troligen att flytta sina data vid oli
  
 Kunder kan inte välja ett specifikt datum, de kan inte försena sin flytt och det går inte att dela ett specifikt datum eller en tidsram för flytten.
   
- ## <a name="can-you-share-when-my-data-will-be-be-moved"></a>Kan du dela när mina data ska flyttas?
+ ## <a name="can-you-share-when-my-data-will-be-moved"></a>Kan du dela när mina data flyttas?
   
-Data flyttas är en backend-åtgärd som påverkar slutanvändaren minimalt. Komplexiteten, precisionen och skalan där vi måste utföra data flyttningar inom en globalt styrd och automatiserad miljö hindrar oss från att dela när data flyttas för din klient organisation eller annan klient organisation. Kunderna får en bekräftelse i meddelande Center per deltagande tjänst när dess data flyttas. 
+Data flyttas är en backend-åtgärd som påverkar slutanvändaren minimalt. Den komplexitet, precision och skala som vi behöver för att utföra data flyttningar inom en global, automatisk, automatiserad miljö hindrar oss från att dela när data flyttas för din klient organisation eller annan klient organisation. Kunderna får en bekräftelse i meddelande Center per deltagande tjänst när dess data flyttas. 
   
  ## <a name="what-happens-if-users-access-services-while-the-data-is-being-moved"></a>Vad händer om användare får åtkomst till tjänster medan data flyttas?
 
@@ -101,7 +100,7 @@ Se [under och efter att data har flyttats](during-and-after-your-data-move.md) f
   
  ## <a name="how-do-i-know-the-move-is-complete"></a>Hur vet jag att flytten är slutförd?
   
-Titta på meddelande Center i Microsoft 365 för att bekräfta att det flyttas mellan alla data för varje tjänst. När de enskilda tjänstens data flyttas så skickar vi ett meddelande om att du får tre slut för ande meddelanden: en för Exchange Online, SharePoint Online och Skype för företag – online.  Du kan också kontrol lera platsen för dina kunddata på rest via området data plats under din organisations profil i administrations centret för Microsoft 365.  
+Titta på meddelande Center i Microsoft 365 för att bekräfta att det flyttas mellan alla data för varje tjänst. När de enskilda tjänstens data flyttas så skickar vi ett meddelande om att du får tre slut för ande meddelanden: en för Exchange Online, SharePoint Online och Skype för företag – online. Du kan också kontrol lera platsen för dina kunddata på rest via området data plats under din organisations profil i administrations centret för Microsoft 365.  
   
 ## <a name="i-am-a-microsoft-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a>Jag är Microsoft 365-kund i ett av de nya data Center-geos, men när jag registrerade dig valde jag ett annat land. Hur kan jag flytta till det nya data Center geo?
 
@@ -109,7 +108,7 @@ Det går inte att ändra det registrerings land som är associerat med din klien
   
 ## <a name="what-happens-if-we-are-in-process-of-email-data-migration-to-microsoft-365-during-the-exchange-online-move"></a>Vad händer om vi håller på att migrera e-postdata till Microsoft 365 när du flyttar Exchange Online?
 
-Det här är ett ovanligt vanligt scenario och stöds helt.  Cloud migration mellan data Center geos stör inte eventuella lokala för migreringar av moln post lådor.
+Det här är ett ovanligt vanligt scenario och stöds helt. Cloud migration mellan data Center geos stör inte eventuella lokala för migreringar av moln post lådor.
   
  ## <a name="can-i-pilot-some-users"></a>Kan jag piloterar vissa användare?
   
@@ -123,7 +122,7 @@ Om du skapar en ny klient organisation efter det nya data Center geo är det mö
   
 ## <a name="my-customer-data-has-already-been-moved-to-a-new-datacenter-geo-can-i-move-back"></a>Mina kund uppgifter har redan flyttats till ett nytt Data Center geo. Kan jag gå tillbaka?
  
-Nej, det är inte möjligt. Kunder som har flyttats till nya geo-datacenter kan inte flyttas tillbaka. Som kund i alla geoprodukter kommer du att uppleva samma QoS-, prestanda-och säkerhets kontroller som du gjorde förut.  [Microsoft 365 multi geo](https://aka.ms/multi-geo) är tillgängligt för vissa kunder som ett tillägg och låter en enda klient organisation skapa flera satellit geos och flytta användar data till de geos med data de åtaganden.
+Nej, det är inte möjligt. Kunder som har flyttats till nya geo-datacenter kan inte flyttas tillbaka. Som kund i alla geoprodukter kommer du att uppleva samma QoS-, prestanda-och säkerhets kontroller som du gjorde förut. [Microsoft 365 multi geo](https://aka.ms/multi-geo) är tillgängligt för vissa kunder som ett tillägg och låter en enda klient organisation skapa flera satellit geos och flytta användar data till de geos med data de åtaganden.
   
 ## <a name="will-microsoft-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a>Kommer Microsoft 365-klient organisationer som är värd för nya data Center att vara tillgängliga för användare utanför landet?
   
@@ -133,9 +132,9 @@ Ja. Microsoft har ett stort globalt nätverk med offentliga Internet anslutninga
 
 Ja, din klient organisation är berättigad, men det finns betydande överväganden när flytt av klient nivå inte stöds helt för kunder som har konfigurerat multi-geo.
 
-SharePoint Online och OneDrive för företag kan inte migrera till det nya data Center geo på klient nivå via det här programmet.  Kund administratören kan konfigurera OneDrive för företag-resurser för att gå till alla tillgängliga regioner med multi-geo, men standard platsen för klient organisationen kan inte ändras när multi-geo har kon figurer ATS för en klient organisation.
+SharePoint Online och OneDrive för företag kan inte migrera till det nya data Center geo på klient nivå via det här programmet. Kund administratören kan konfigurera OneDrive för företag-resurser för att gå till alla tillgängliga regioner med multi-geo, men standard platsen för klient organisationen kan inte ändras när multi-geo har kon figurer ATS för en klient organisation.
 
-För kunder som väljer att migrera – vi flyttar alla Exchange Online-postlådor från din nuvarande geo till ditt nya lokala data Center och uppdaterar standard området för Exchange Online.  Vi kommer inte att flytta EXO-postlådor som kon figurer ATS i flera geo satellit regioner för att fortsätta att respektera data de i satellit området.  
+För kunder som väljer att migrera – vi flyttar alla Exchange Online-postlådor från din nuvarande geo till ditt nya lokala data Center och uppdaterar standard området för Exchange Online. Vi kommer inte att flytta EXO-postlådor som kon figurer ATS i flera geo satellit regioner för att fortsätta att respektera data de i satellit området. 
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

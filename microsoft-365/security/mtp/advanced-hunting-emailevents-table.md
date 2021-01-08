@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 00fcc6514679868066ef88b0c9bc4a485d032528
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 6dbd7473074212c6bc257e683288040056426048
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667643"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780278"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -65,9 +65,9 @@ Information om andra tabeller i det avancerade jakt schema [finns i referens fö
 | `PhishDetectionMethod` | strängvärdet | Metod som används för att hitta e-post som en Phish: skadlig URL-rykte, säkra länkar URL-sprängning, Avancerat Phish-filter, Allmänt Phish-filter, programförfalskningar: inom organisationen, mot förfalskning: extern domän, domän användning, användarens personifiering, varumärkes användning |
 | `MalwareFilterVerdict` | strängvärdet | Verdict av e-postfiltrerings stack på om e-postmeddelandet innehåller skadlig kod: skadlig kod, inte skadlig kod |
 | `MalwareDetectionMethod` | strängvärdet | Metod som används för att upptäcka skadlig program vara i e-postmeddelandet: skadlig program vara, fil rykte, säkra bilagor |
-| `FinalEmailAction` | strängvärdet | Slutgiltig åtgärd som vidtas på e-postmeddelandet baserat på filter Verdict, principer och användar åtgärder: flytta meddelande till mappen skräp post, lägga till X-rubrik, ändra ämne, omdirigera meddelande, ta bort meddelande, skicka till karantän, ingen åtgärd vidtogs, hemlig kopia |
-| `FinalEmailActionPolicy` | strängvärdet | Åtgärds policy som vidtogs: antispam hög exakthet, antispam, antispam Mass utskick, antispam nätfiske, icke-nätfiske-domän-personifiering, Antinätfiske-användare, förfalskning mot nätfiske, skydd mot nätfiske, antiskadligt, säkra bifogade filer för företags transport (Exchange) |
-| `FinalEmailActionPolicyGuid` | strängvärdet | Unik identifierare för den policy som avgjorde den slutgiltiga e-poståtgärden |
+| `EmailAction` | strängvärdet | Slutgiltig åtgärd som vidtas på e-postmeddelandet baserat på filter Verdict, principer och användar åtgärder: flytta meddelande till mappen skräp post, lägga till X-rubrik, ändra ämne, omdirigera meddelande, ta bort meddelande, skicka till karantän, ingen åtgärd vidtogs, hemlig kopia |
+| `EmailActionPolicy` | strängvärdet | Åtgärds policy som vidtogs: antispam hög exakthet, antispam, antispam Mass utskick, antispam nätfiske, icke-nätfiske-domän-personifiering, Antinätfiske-användare, förfalskning mot nätfiske, skydd mot nätfiske, antiskadligt, säkra bifogade filer för företags transport (Exchange) |
+| `EmailActionPolicyGuid` | strängvärdet | Unik identifierare för den policy som avgjorde den slutgiltiga e-poståtgärden |
 | `AttachmentCount` | signera | Antal bilagor i e-postmeddelandet |
 | `UrlCount` | signera | Antal inbäddade URL-adresser i e-postmeddelandet |
 | `EmailLanguage` | strängvärdet | Identifierat språk för e-postinnehållet |

@@ -1,9 +1,8 @@
 ---
-title: Hantera slut punkter för Office 365
+title: Hantera Office 365-slutpunkter
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 1/24/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,28 +18,28 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Lär dig hur du hanterar Office 365-slutpunkter så att de fungerar med företagets nätverks arkitektur.
-ms.openlocfilehash: 1c1e76ae6f6ca2c034258c5ba06e3efefd51d04c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: dcacb10492f4377dbcdf6e74c848a404f1b64c6f
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694458"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780490"
 ---
-# <a name="managing-office-365-endpoints"></a>Hantera slut punkter för Office 365
+# <a name="managing-office-365-endpoints"></a>Hantera Office 365-slutpunkter
 
-De flesta företags organisationer som har flera Office-platser och anslutning till WAN kräver konfiguration för Office 365-nätverks anslutningar. Du kan optimera ditt nätverk genom att skicka alla betrodda Office 365-begäranden direkt via din brand vägg, och sedan gå förbi alla ytterligare paket nivå kontroller eller bearbetningar. Detta minskar svars tiden och dina krav på perimeter. Att identifiera nätverks trafik för Office 365 är det första steget med optimala prestanda för dina användare. Mer information om Office 365-nätverks anslutningar finns i [principer för nätverks anslutningar för office 365](microsoft-365-network-connectivity-principles.md).
+De flesta företags organisationer som har flera Office-platser och anslutning till WAN kräver konfiguration för Office 365-nätverks anslutningar. Du kan optimera ditt nätverk genom att skicka alla betrodda Office 365-begäranden direkt via din brand vägg, och sedan gå förbi alla ytterligare paket nivå kontroller eller bearbetningar. Detta minskar svars tiden och dina krav på perimeter. Att identifiera nätverks trafik för Office 365 är det första steget med optimala prestanda för dina användare. Mer information finns i [principer för Office 365-nätverks anslutningar](microsoft-365-network-connectivity-principles.md).
 
-Microsoft rekommenderar att du får till gång till Office 365 nätverks slut punkter och ändringar i dem med hjälp av [IP-adressen och URL-adressen för office 365](microsoft-365-ip-web-service.md).
+Microsoft rekommenderar att du får till gång till Office 365 nätverks slut punkter och pågående ändringar i dem med hjälp av [IP-adressen och URL-adressen för office 365](microsoft-365-ip-web-service.md).
 
 Oavsett hur du hanterar viktig Office 365-nätverks trafik kräver Office 365 Internet anslutning. Andra nätverks slut punkter där anslutning krävs visas i [ytterligare slut punkter som inte ingår i Office 365 IP Address and URL Web Service](additional-office365-ip-addresses-and-urls.md).
 
-Hur du använder Office 365 nätverks slut punkter beror på företagets organisations nätverks arkitektur. I den här artikeln beskrivs flera olika sätt som företags nätverks arkitekturer kan integreras med Office 365 IP-adresser och URL: er. Det enklaste sättet att välja vilka nätverks förfrågningar som ska vara tillförlitliga är att använda SDWAN enheter som stöder automatisk Office 365-konfiguration på var och en av dina Office-platser.
+Hur du använder Office 365 nätverks slut punkter beror på företagets organisations nätverks arkitektur. I den här artikeln beskrivs flera olika sätt som företags nätverks arkitekturer kan integreras med Office 365 IP-adresser och URL: er. Det enklaste sättet att välja vilka nätverks förfrågningar som ska vara tillförlitliga är att använda SD-WAN-enheter som har stöd för automatisk Office 365-konfiguration på var och en av dina Office-platser.
 
-## <a name="sdwan-for-local-branch-egress-of-vital-office-365-network-traffic"></a>SDWAN för lokal förgrening med viktig Office 365-nätverks trafik
+## <a name="sd-wan-for-local-branch-egress-of-vital-office-365-network-traffic"></a>SD – WAN för lokal förgrening tillsluts av viktig Office 365-nätverks trafik
 
-På varje filial kontors plats kan du ange en SDWAN-enhet som är konfigurerad för att cirkulera trafik för Office 365 optimerar kategorin för slut punkter eller optimerar och tillåter kategorier direkt till Microsofts nätverk. Annan nätverks trafik inklusive lokal data Center trafik, allmän trafik på Internet webbplatser och trafik till Office 365 standard kategori slut punkter skickas till en annan plats där du har en större nätverks gräns.
+På varje filial kontors plats kan du tillhandahålla en SD-WAN-enhet som är konfigurerad för att cirkulera trafik för Office 365 optimerar kategorin med slut punkter eller optimerar och tillåter kategorier direkt till Microsofts nätverk. Annan nätverks trafik inklusive lokal data Center trafik, allmän trafik på Internet webbplatser och trafik till Office 365 standard kategori slut punkter skickas till en annan plats där du har en större nätverks gräns.
 
-Microsoft arbetar med SDWAN-leverantörer för att aktivera automatisk konfiguration. Mer information finns i [Office 365 Network partner program](microsoft-365-networking-partner-program.md).
+Microsoft arbetar med SD-WAN-leverantörer för att aktivera automatisk konfiguration. Mer information finns i [Office 365 Network partner program](microsoft-365-networking-partner-program.md).
 
 <a name="pacfiles"> </a>
 ## <a name="use-a-pac-file-for-direct-routing-of-vital-office-365-traffic"></a>Använda en PAC-fil för direkt dirigering av viktig Office 365-trafik
@@ -59,7 +58,7 @@ Separat om du väljer att göra en direkt dirigering för optimerings kategorins
 
 Den gemensamma konfigurationen är att tillåta utan att bearbeta all utgående trafik från proxyservern för mål-IP-adresser för Office 365 nätverks trafik som ger proxyservern. Information om problem med SSL-avbrott och inspektion finns i [använda nätverks enheter eller-lösningar från tredje part i Office 365-trafik](https://support.microsoft.com/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
 
-Det finns två typer av PAC-filer som skapas av Get-PacFile-skriptet.
+Det finns två typer av PAC-filer som Get-PacFile-skriptet skapar.
 
 | Type (Typ) | Beskrivning |
 |:-----|:-----|
@@ -72,12 +71,12 @@ Här är ett enkelt exempel på hur du anropar PowerShell-skriptet:
 Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 ```
 
-Det finns ett antal parametrar som du kan skicka till skriptet:
+Det finns många parametrar som du kan skicka till skriptet:
 
 | Indataparametern | Beskrivning |
 |:-----|:-----|
 |**ClientRequestId** <br/> |Det här är obligatoriskt och är en GUID som skickas till webb tjänsten som representerar den klient dator som ringer samtalet. <br/> |
-|**Enhetsinstans** <br/> |Office 365-tjänstens instans som standard världen över. Skickas också till webb tjänsten. <br/> |
+|**Enhetsinstans** <br/> |Office 365-tjänst instans som är som standard världen över. Detta skickas också till webb tjänsten. <br/> |
 |**TenantName** <br/> |Ditt Office 365-klient namn. Skickades till webb tjänsten och används som en återställnings bara parameter i vissa Office 365-URL: er. <br/> |
 |**Typ** <br/> |Den typ av PAC som du vill skapa. <br/> |
 
@@ -91,7 +90,7 @@ Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10
 
 Där PAC-filer inte används för direkt utgående trafik, vill du ändå kringgå bearbetningen av nätverks omkretsen genom att konfigurera proxyservern. Vissa proxyservrar har aktiverat automatisk konfiguration av detta enligt beskrivningen i [Office 365 Network partner-programmet](microsoft-365-networking-partner-program.md).
 
-Om du gör det här manuellt måste du få optimering och Tillåt slut punkts kategori data från Office 365 IP Address and URL web service och konfigurera din proxyserver för att kringgå bearbetningen för dessa. Det är viktigt att undvika SSL-avbrott och inspektera och proxyautentisering för optimerings-och grupp slut punkter.
+Om du gör detta manuellt måste du skaffa optimerings-och tillåtna slut punkts kategori data från Office 365 IP Address and URL web service och konfigurera din proxyserver för att kringgå bearbetningen för dessa. Det är viktigt att undvika SSL-avbrott och inspektera och proxyautentisering för optimerings-och grupp slut punkter.
   
 <a name="bkmk_changes"> </a>
 ## <a name="change-management-for-office-365-ip-addresses-and-urls"></a>Ändrings hantering för Office 365 IP-adresser och URL: er
@@ -121,7 +120,7 @@ Information om ett Microsoft-flödes exempel och-mall finns i [använda Microsof
 <a name="FAQ"> </a>
 ## <a name="office-365-network-endpoints-faq"></a>Vanliga frågor om Office 365-nätverks slut punkter
 
-Vanliga frågor och svar om Office 365-anslutning:
+Se de här vanliga frågorna om Office 365-nätverks anslutningar.
   
 ### <a name="how-do-i-submit-a-question"></a>Hur skickar jag in en fråga?
 
@@ -147,12 +146,12 @@ Finns det en IP-adress som är kopplad till Office 365 som du vill ha mer inform
 1. Kontrol lera att IP-adressen ingår i ett större publicerat område med hjälp av en CIDR-kalkylator, till exempel [IPv4](https://www.ipaddressguide.com/cidr) eller [IPv6](https://www.ipaddressguide.com/ipv6-cidr). 40.96.0.0/13 inkluderar till exempel IP-adressen 40.103.0.1 trots att 40,96 inte matchar 40,103.
 2. Se om en partner äger IP-adressen med en [whois-fråga](https://dnsquery.org/). Om det ägs av Microsoft kan det vara en intern partner. Många slut punkter för partner nätverk visas som tillhör _standard_ kategorin, för vilka IP-adresser inte är publicerade.
 3. IP-adressen får inte vara en del av Office 365 eller ett samband. Nätverks slut punkter för Office 365 inkluderar inte alla slut punkter för Microsoft-nätverk.
-4. Kontrol lera certifikatet, i en webbläsare Anslut till IP-adressen med *https:// \<IP_ADDRESS\> * , markera domänerna som visas i certifikatet för att förstå vilka domäner som är kopplade till IP-adressen. Om det är en Microsoft-adress som ägs av domänen och inte finns i listan med IP-adresser för Office 365, beror det troligt vis på att IP-adressen är kopplad till ett Microsoft CDN, till exempel  *MSOCDN.net*  eller en annan Microsoft-domän utan offentlig IP-information. Om du hittar domänen på certifikatet är ett ställe där vi hävdar att det finns en lista med IP-adressen ber vi dig berätta.
+4. Kontrol lera certifikatet. Med en webbläsare ansluter du till den IP-adress som använder *https:// \<IP_ADDRESS\>* och kontrollerar vilka domäner som är kopplade till IP-adressen genom att markera domänerna i certifikatet. Om det är en Microsoft-adress och inte i listan med IP-adresser för Office 365 är det troligt vis IP-adressen som är kopplad till ett Microsoft CDN, till exempel  *MSOCDN.net*  eller en annan Microsoft-domän utan offentlig IP-information. Om du hittar domänen på certifikatet är ett ställe där vi hävdar att det finns en lista med IP-adressen ber vi dig berätta.
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>Vissa Office 365-adresser pekar på CNAME-poster i stället för en post i DNS. Vad måste jag göra med CNAME-posterna?
 
-Klient datorer behöver en DNS A-eller AAAA-post som innehåller en eller flera IP-adresser som ska anslutas till en moln tjänst. Vissa URL-adresser i Office 365 visar CNAME-poster i stället för A-eller AAAA-poster. Dessa CNAME-poster är mellanhand och det kan finnas flera i en kedja. De kommer alltid att behöva komma till en A-eller AAAA-post för en IP-adress. Överväg till exempel följande serie av DNS-poster, som i slut ända till IP-adressen _IP_1_:
+Klient datorer behöver en DNS A-eller AAAA Record t)-hatt inkluderar en eller flera IP-adresser att ansluta till en moln tjänst. Vissa URL-adresser i Office 365 visar CNAME-poster i stället för A-eller AAAA-poster. Dessa CNAME-poster är mellanhand och det kan finnas flera i en kedja. De kommer alltid att behöva komma till en A-eller AAAA-post för en IP-adress. Överväg till exempel följande serie av DNS-poster, som i slut ända till IP-adressen _IP_1_:
 
 ```console
 serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.com -> A: IP_1
@@ -160,18 +159,18 @@ serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.co
 
 Dessa CNAME-omdirigeringar är en normal del av DNS och är transparenta för klient datorn och är transparent för proxyservrar. De används för belastnings utjämning, innehålls leverans nätverk, hög tillgänglighet och minskning av service händelser. Microsoft publicerar inte de mellanliggande CNAME-posterna, de kan ändras när som helst och du bör inte behöva konfigurera dem som tillåtna i din proxyserver.
 
-En proxyserver verifierar den initiala URL-adressen som i exemplet ovan är serviceA.office.com och denna URL inkluderas i Office 365-publiceringen. Proxyservern begär DNS-matchning av URL-adressen till en IP-adress och får tillbaka IP_1. Det verifierar inte de mellanliggande CNAME-omdirigerings posterna.
+En proxyserver verifierar den inledande URL-adressen, som i exemplet ovan är serviceA.office.com och denna URL inkluderas i Office 365-publiceringen. Proxyservern begär DNS-matchning av URL-adressen till en IP-adress och får tillbaka IP_1. Det verifierar inte de mellanliggande CNAME-omdirigerings posterna.
 
-Hårdkodade konfigurationer eller väggar baserade på indirekta Office 365-FQDN rekommenderas inte, stöds inte av Microsoft och är känt för problem med kund anslutningen. DNS-lösningar som blockerar CNAME-omdirigering eller som annars löser Office 365 DNS-poster kan lösas genom villkorlig DNS-vidarebefordran (omfattning för direkt använda Office 365 FQDN) med DNS rekursion aktiverat. Många nätverks gräns produkter från tredje part integrerar automatiskt rekommenderade Office 365-slutpunkter väggar i deras konfiguration med hjälp av [IP-adress och URL för office 365](microsoft-365-ip-web-service.md).
+Hårdkodade konfigurationer eller att tillåta trafik baserat på indirekta Office 365 FQDN-namn rekommenderas inte, stöds inte av Microsoft och är känd för att orsaka problem med kund anslutningen. DNS-lösningar som blockerar CNAME-omdirigering eller som annars löser Office 365 DNS-poster kan lösas genom villkorlig DNS-vidarebefordran (omfattning för direkt använda Office 365 FQDN) med DNS rekursion aktiverat. Många nätverks gräns produkter från tredje part integrerar den rekommenderade Office 365-slutlinjens konfiguration med hjälp av [IP-adressen och URL-adressen för office 365](microsoft-365-ip-web-service.md).
 
 <a name="bkmk_akamai"> </a>
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Varför ser jag namn som nsatc.net eller akadns.net i domän namnen för Microsoft?
 
-Office 365 och andra Microsoft-tjänster använder flera tredjepartsprogram som Akamai och MarkMonitor för att förbättra din Office 365-upplevelse. För att det ska bli så bra som möjligt kan vi ändra dessa tjänster i framtiden. Tredje parts domäner kan hantera innehåll, till exempel en CDN, eller de kan vara en tjänst, till exempel en tjänst för en geografisk trafik. Här är några av de tjänster som används för närvarande:
+Office 365 och andra Microsoft-tjänster använder flera tredjepartsprogram som Akamai och MarkMonitor för att förbättra din Office 365-upplevelse. För att det ska bli så bra som möjligt kan vi ändra dessa tjänster i framtiden. Tredjeparts domäner kan hantera innehåll, till exempel en CDN, eller de kan vara värd för en tjänst, till exempel en tjänst för en geografisk trafik. Här är några av de tjänster som används för närvarande:
   
-[MarkMonitor](https://www.markmonitor.com/) används när du ser förfrågningar som innehåller * \* . nsatc.net* . Denna tjänst tillhandahåller domän namns skydd och övervakning för att skydda mot skadligt beteende.
+[MarkMonitor](https://www.markmonitor.com/) används när du ser förfrågningar som innehåller *\* . nsatc.net*. Denna tjänst tillhandahåller domän namns skydd och övervakning för att skydda mot skadligt beteende.
   
-[ExactTarget](https://www.marketingcloud.com/) används när du ser förfrågningar till * \* . ExactTarget.com* . Den här tjänsten tillhandahåller hantering av e-postlänk och övervakning mot skadligt beteende.
+[ExactTarget](https://www.marketingcloud.com/) används när du ser förfrågningar till *\* . ExactTarget.com*. Den här tjänsten tillhandahåller hantering av e-postlänk och övervakning mot skadligt beteende.
   
 [Akamai](https://www.akamai.com/) används när du ser förfrågningar som innehåller något av följande FQDN-namn. Den här tjänsten erbjuder nätverks tjänster för geo-DNS och innehålls leverans.
   
@@ -192,18 +191,18 @@ Office 365 och andra Microsoft-tjänster använder flera tredjepartsprogram som 
 
 Eftersom Office 365 är en uppsättning tjänster som är byggda för att fungera över Internet, baseras tillförlitlighet och tillgänglighet på många vanliga Internet-tjänster. Vanliga Internet-tjänster, till exempel DNS, CRL och CDN, måste kunna nås för att kunna använda Office 365 på samma sätt som de måste kunna använda för de flesta moderna Internet-tjänster.
 
-Office 365-sviten är uppdelad i huvud tjänst områden. Dessa kan vara selektivt aktiverade för anslutning och det finns ett gemensamt område som är ett samband för alla och som alltid är obligatoriskt.
+Office 365-sviten är uppdelad i huvud tjänst områden. Dessa kan vara selektivt aktiverade för anslutning och det finns ett gemensamt område, vilket är ett samband för alla och som alltid är obligatoriskt.
 
 | Tjänst område | Beskrivning |
 |:-----|:-----|
 |**Exchange** <br/> |Exchange Online och Exchange Online Protection <br/> |
 |**SharePoint** <br/> |SharePoint Online och OneDrive för företag <br/> |
-|**Skype för företag – Online och Microsoft Teams** <br/> |Skype för företag och Microsoft Teams <br/> |
+|**Skype för företag Online och Microsoft Teams** <br/> |Skype för företag och Microsoft Teams <br/> |
 |**Gemenskapens** <br/> |Office 365 Pro Plus, Office i en webbläsare, Azure AD och andra vanliga nätverks slut punkter <br/> |
 
-Utöver de grundläggande Internet-tjänsterna finns det tjänster som bara används för att integrera funktionalitet. Medan dessa behövs för integrationen är de markerade som valfria i Office 365-slut punkter, som innebär att funktionerna i tjänsten fortsätter att fungera om slut punkten inte är tillgänglig. Alla nätverks slut punkter som krävs kommer att ha attributet obligatoriskt angivet till true. Alla nätverks slut punkter som är valfria kommer att ha attributet är inställt på false och attributet Notes visar de saknade funktioner som du bör förvänta dig om anslutningen blockeras.
+Utöver de grundläggande Internet-tjänsterna finns det tjänster som bara används för att integrera funktionalitet. Medan dessa behövs för integrering är de markerade som valfria i avsnittet Office 365-slutpunkter, vilket innebär att de grundläggande funktionerna i tjänsten fortsätter att fungera om slut punkten inte är tillgänglig. Alla nätverks slut punkter som krävs kommer att ha attributet obligatoriskt angivet till true. Alla nätverks slut punkter som är valfria kommer att ha attributet #a0 inställt på falskt och attributet Obs! visar de saknade funktioner som du bör förvänta dig om anslutningen blockeras.
   
-Om du försöker använda Office 365 och letar efter tjänster från tredje part inte är tillgängliga kan du se till [att alla FQDN som marker ATS som obligatoriska eller valfria i den här artikeln tillåts via proxyn och brand väggen](urls-and-ip-address-ranges.md).
+Om du försöker använda Office 365 och letar efter tjänster från tredje part är inte tillgängliga, bör du [kontrol lera att alla FQDN-namn är markerade som obligatoriska eller valfria i den här artikeln tillåts via proxyn och brand väggen](urls-and-ip-address-ranges.md).
   
 <a name="bkmk_consumer"> </a>
 ### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Hur blockerar jag åtkomst till Microsofts konsument tjänster?
@@ -215,15 +214,15 @@ Tänk på att du inte kan förhindra att någon i nätverket kan exfiltrate info
 <a name="bkmk_IPOnlyFirewall"> </a>
 ### <a name="my-firewall-requires-ip-addresses-and-cannot-process-urls-how-do-i-configure-it-for-office-365"></a>Brand väggen kräver IP-adresser och kan inte hantera URL: er. Hur konfigurerar jag det för Office 365?
 
-Office 365 tillhandahåller inte IP-adresser till alla nödvändiga nätverks slut punkter. Vissa tillhandahålls endast som URL-adresser och kategoriseras som standard. URL-adresser i Standard kategorin som behövs bör tillåtas via en proxyserver. Om du inte har en proxyserver kan du titta på hur du har konfigurerat webbegäranden för webb adresser som användare skriver i adress fältet i en webbläsare. användaren anger ingen IP-adress. URL-adresserna för Office 365 som inte tillhandahåller IP-adresser bör konfigureras på samma sätt.
+Office 365 tillhandahåller inte IP-adresser till alla nödvändiga nätverks slut punkter. Vissa tillhandahålls endast som URL-adresser och kategoriseras som standard. URL-adresser i Standard kategorin som behövs bör tillåtas via en proxyserver. Om du inte har någon proxyserver kan du läsa om hur du har konfigurerat webbegäranden för webb adresser som användare skriver i adress fältet i en webbläsare. användaren anger ingen IP-adress. URL-adresserna för Office 365 som inte tillhandahåller IP-adresser bör konfigureras på samma sätt.
 
-## <a name="related-topics"></a>Närliggande ämnen
+## <a name="related-topics"></a>Relaterade ämnen
 
-[IP-adress och URL för Office 365](microsoft-365-ip-web-service.md)
+[Office 365 IP-adress och URL webbtjänst](microsoft-365-ip-web-service.md)
 
-[Microsoft Azure datacenter-IP-intervall](https://www.microsoft.com/download/details.aspx?id=41653)
+[Microsoft Azure Datacenter IP-intervall](https://www.microsoft.com/download/details.aspx?id=41653)
   
-[Microsoft offentlig IP-rymd](https://www.microsoft.com/download/details.aspx?id=53602)
+[Microsoft Public IP-utrymme](https://www.microsoft.com/download/details.aspx?id=53602)
   
 [Krav för nätverks infrastruktur för Microsoft Intune](https://docs.microsoft.com/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)
   
@@ -233,4 +232,4 @@ Office 365 tillhandahåller inte IP-adresser till alla nödvändiga nätverks sl
   
 [Hantera ExpressRoute för Office 365](managing-expressroute-for-connectivity.md)
   
-[Principer för nätverks anslutning för Office 365](microsoft-365-network-connectivity-principles.md)
+[Office 365 principer för nätverksanslutningar](microsoft-365-network-connectivity-principles.md)

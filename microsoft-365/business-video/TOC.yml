@@ -1,51 +1,51 @@
-- name: Microsoft 365 Small Business-utbildning
+- name: Microsoft 365-utbildning för småföretag
   href: index.yml
   items:
     - name: Komma igång
       items:
-        - name: Vad är Microsoft 365?
+        - name: Vad är Microsoft 365
           href: what-is-microsoft-365.md
         - name: Översikt över konfiguration
           href: setup-overview.md
-        - name: Välj ett abonnemang
+        - name: Välj en prenumeration
           href: Choose-subscription.md
-    - name: Cloud-konfiguration
+    - name: Molnkonfiguration
       items:
-        - name: Registrera dig för ett abonnemang
+        - name: Registrera dig för en prenumeration
           href: sign-up.md
-        - name: Konfigurera tjänsten
+        - name: Installera tjänsten
           href: set-up.md
         - name: Skydda Windows 10-datorer
           href: secure-win10-pcs.md
-        - name: Skapa en GoDaddy webbplats
+        - name: Skapa en GoDaddy-webbplats
           href: create-web-site.md
-    - name: Enhets konfiguration
+    - name: Konfigurera enhet
       items:
         - name: Uppgradera till Windows 10 Pro
           href: upgrade.md
-        - name: Ansluta datorer till Microsoft 365
+        - name: Ansluta datorer till Microsoft 365 Business Premium
           href: connect.md
-        - name: Installera Microsoft Office-appar
+        - name: Installera Microsoft Office-program
           href: install-office.md
         - name: Konfigurera Outlook för e-post
           href: setup-outlook.md
         - name: Importera och omdirigera e-post
           href: import-email.md
-        - name: Flytta dina filer till OneDrive
+        - name: Flytta dina filer i OneDrive
           href: files-to-onedrive.md
-        - name: Flytta företags filer till SharePoint
+        - name: Flytta företagsfiler till SharePoint
           href: files-to-sharepoint.md
     - name: Mobil
       items:
-        - name: Arbeta var som helst
+        - name: Arbeta var du än är
           href: work-from-anywhere.md
-        - name: Installera Office-appar på Android
+        - name: Installera appar på Android
           href: install-apps-android.md
-        - name: Installera Office-appar på iOS
+        - name: Installera appar på iOS
           href: install-apps-ios.md
         - name: Skaffa mobilappen för administratörer
           href: admin-mobile.md
-    - name: Samar beta
+    - name: Samarbeta
       items:
         - name: Använda Outlook och Teams
           href: collab-outlook-teams.md
@@ -53,7 +53,7 @@
           href: group-email.md
         - name: Skapa en delad kalender
           href: shared-calendar.md
-        - name: Skapa ett organisations team
+        - name: Skapa ett organisationsteam
           href: org-wide-team.md
         - name: Skapa ett team med gäster
           href: team-with-guests.md
@@ -63,59 +63,61 @@
           href: start-and-pin-chats.md
         - name: Översikt över onlinemöten
           href: overview-online-meetings.md
-        - name: Schemalägga ett möte med gäster
+        - name: Schemalägga ett Teams-möte med gäster
           href: schedule-guest-meeting.md
-        - name: Ansluta till ett möte med gäster
+        - name: Ansluta till ett Teams-möte med gäster
           href: join-guest-meeting.md
-    - name: Moln lagring
+    - name: Molnlagring
       items:
-        - name: Dela översikt
+        - name: Översikt av delning
           href: overview-file-sharing.md
         - name: Platser för fillagring
           href: store-files.md
-        - name: Dela filer på säkert sätt externt
+        - name: Dela filer externt på ett säkert sätt
           href: securely-share-files-externally.md
-        - name: Dela filer externt
+        - name: Dela filer externt på ett enkelt sätt
           href: share-files-externally.md
-    - name: Business-röst
+    - name: Business Voice
       items:
-        - name: Översikt över Business-röst
+        - name: Översikt över Business Voice
           href: business-voice.md
-        - name: Köp affärsvoice-tillägg
+        - name: Köp tillägg för Business Voice
           href: buy-business-voice.md
-    - name: Produktivitets program
+    - name: Produktivitetsappar
       items:
-        - name: Översikt över bokningar
+        - name: Översikt över Bookings
           href: overview-bookings.md
-        - name: Planera en händelse
+        - name: Planera ett evenemang
           href: plan-event.md
     - name: Hantera tjänster
       items:
-        - name: Vad är en administratör?
+        - name: Vad är en administratör
           href: what-is-admin.md
-        - name: Översikt över administrations centret
+        - name: Översikt över administrationscenter
           href: admin-center-overview.md
-        - name: 'Visa, ladda ned eller Skriv ut din faktura'
+        - name: 'Visa, ladda ned eller skriva ut din faktura'
           href: view-bill.md
-        - name: Uppdatera betalnings metod
+        - name: Köp nya licenser
+          href: buy-licenses.md
+        - name: Uppdatera betalningsmetod
           href: update-payment.md
-        - name: Återställa användar lösen ord
+        - name: Återställ användarlösenord
           href: reset-user-passwords.md
-        - name: Konfigurera självbetjäning för återställning av lösen ord
+        - name: Installera lösenordsåterställning via självbetjäning
           href: set-up-self-serve-password-reset.md
         - name: Lägga till en användare
           href: add-user.md
         - name: Ta bort en användare
           href: delete-user.md
-        - name: Lägga till en annan administratör
+        - name: Lägg till en till administratör
           href: add-admin.md
-        - name: Ändra ett användar namn eller e-postmeddelande
+        - name: Ändra ett användarnamn och en e-postadress
           href: change-user-name-email.md
         - name: Flytta användare till en annan prenumeration
           href: change-subscription.md
         - name: Skapa en företagsomfattande signatur
           href: company-wide-signature.md
-        - name: Arbeta med en användnings rapport
+        - name: Arbeta om användningsrapport
           href: act-on-report.md
         - name: Lägga till en annan domän
           href: add-domain.md
@@ -125,23 +127,23 @@
           href: secure-win-10-pro-devices.md
         - name: Säkra Office-appar på iOS
           href: secure-office-on-ios.md
-    - name: Säkerhets & efterlevnad
+    - name: Säkerhet och efterlevnad
       items:
-        - name: Översikt över Microsoft 365 Business Premium-säkerhet
+        - name: Översikt av Microsoft 365 Business Premium
           href: overview-m365-security.md
-        - name: Skydda konton med MFA
+        - name: Skydda anställdas konton med MFA
           href: turn-on-mfa.md
-        - name: Konfigurera inloggning med två faktorer på telefonen
+        - name: Konfigurera tvåfaktorsinloggning på din telefon
           href: set-up-mfa.md
-        - name: Aktivera identifiering av skadlig kod
+        - name: Aktivera identifiering av skadlig programvara
           href: anti-malware.md
-        - name: Skapa e-postregler för utpressnings tro Jan
+        - name: Skapa e-postregler för utpressningstrojan
           href: prevent-ransom-in-email.md
-        - name: Stoppa e-postvidarebefordrade meddelanden automatiskt
+        - name: Stoppa e-post med automatisk vidarebefordring
           href: stop-email-auto-forward.md
-        - name: Konfigurera anti-nätfiske
+        - name: Konfigurera skydd mot nätfiske och ATP-principer för skydd mot nätfiske
           href: setup-anti-phishing.md
-        - name: Hantera säkra bifogade filer
+        - name: Hantera säkra bilagor
           href: safe-attachments.md
         - name: Hantera säkra länkar
           href: safe-links.md
@@ -155,5 +157,5 @@
           href: find-help-answers.md
         - name: Få hjälp eller support
           href: get-help-support.md
-        - name: Snabb inställning för personal
+        - name: Snabbinstallationsguide för anställda
           href: employee-quick-setup.md
