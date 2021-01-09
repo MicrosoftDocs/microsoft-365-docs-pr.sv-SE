@@ -66,6 +66,8 @@
           href: whats-new-in-preview.md
         - name: Håll koll på ändringarna
           href: manage/stay-on-top-of-updates.md
+        - name: Hantera flera klientorganisationer
+          href: multi-tenant/manage.md
     - name: Office 365 med 21Vianet
       items:
         - name: Läs om Office 365 som drivs av 21Vianet
