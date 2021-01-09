@@ -2,8 +2,8 @@
 title: Nätverks översikt för Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 08/10/2020
 audience: ITPro
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Översikten för implementering av Microsoft 365-nätverk.
-ms.openlocfilehash: 93d0f253e098815139b431a826f7e5e7a0410b37
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2962adf7bdca35d06672696471e0932fd1a7b09c
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694612"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787757"
 ---
 # <a name="networking-roadmap-for-microsoft-365"></a>Nätverks översikt för Microsoft 365
 

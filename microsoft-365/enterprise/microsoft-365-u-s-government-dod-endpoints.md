@@ -1,7 +1,7 @@
 ---
 title: Office 365 amerikanska myndigheters DOD-slut punkter
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 01/04/2021
 audience: ITPro
@@ -22,12 +22,12 @@ f1.keywords:
 description: Office 365 kräver internetanslutning. Slut punkterna nedan bör vara tillgängliga för kunder som använder Office 365 amerikanska myndigheter för offentliga DoD-abonnemang.
 hideEdit: true
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 39f48b152f46ab12b1e96cf8869a0fd8050d1c35
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: c19aa281dea439f1ae41e6b20f917f8fe7439d3e
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751645"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787781"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 amerikanska myndigheters DoD-slut punkter
 
@@ -39,7 +39,7 @@ ms.locfileid: "49751645"
   
 |||
 |:-----|:-----|
-|**Uppdaterades senast:** 01/04/2021 – ![ prenumeration på RSS- ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ändrings logg](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Ladda ned:** hela listan i [JSON-format](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Uppdaterades senast:** 2021-01-04 – ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Ändringsloggsprenumeration](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Ladda ned:** hela listan i [JSON-format](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
 
  Börja med [Hantera Office 365-slutpunkter](managing-office-365-endpoints.md) för att förstå våra rekommendationer för hantering av nätverksanslutningar med dessa data. Slutpunktsdata uppdateras i början av varje månad med nya IP-adresser och URL:er publicerade 30 dagar i förväg. Detta gör att kunder som ännu inte har automatiserat uppdateringar kan slutföra sina processer innan nya anslutningar krävs. Slutpunkter kan också uppdateras under månaden om det behövs för att lösa stöd för eskalering, säkerhetstillbud och andra omedelbara driftskrav. De data som visas på den här sidan nedan skapas från de REST-baserade webbtjänsterna. Om du använder ett skript eller en nätverksenhet för att komma åt dessa data ska du gå direkt till [Webbtjänst](microsoft-365-ip-web-service.md).
 

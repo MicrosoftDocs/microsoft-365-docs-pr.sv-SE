@@ -19,17 +19,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig att använda en angrepps Simulator för att köra simulerade nät för nätfiske och lösen ord i Microsoft 365 E5-eller Microsoft Defender för Office 365 plan 2-organisationer.
-ms.openlocfilehash: b1c2ad265c4812f67aee66f0f59664480b4db229
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: a53ffee29ce928910b8c4add245c002ae6eb03da
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615210"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49788117"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Angrepps Simulator i Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 Om din organisation har Microsoft Defender för Office 365 abonnemang 2, som innehåller [hot undersökningar och svars funktioner](office-365-ti.md), kan du använda angrepps simulatorn i säkerhets & Compliance Center för att köra realistiska angrepp i din organisation. Dessa simulerade attacker kan hjälpa dig att identifiera och hitta sårbara användare innan en verklig attack påverkar din botten linje. Läs den här artikeln om du vill veta mer.
 
@@ -119,9 +118,7 @@ Om du ska använda någon av de inbyggda mallarna eller skapa e-postmeddelandet 
 
      > [!NOTE]
      >
-     > - Alla URL-adresser är avsiktligt http, inte https.
-     >
-     > - En URL-ryktes tjänst kan identifiera en eller flera av dessa URL-adresser som osäkra. Kontrol lera tillgängligheten för URL-adressen i webbläsare som stöds innan du använder URL-adressen i en nätfiske-kampanj.
+     > En URL-ryktes tjänst kan identifiera en eller flera av dessa URL-adresser som osäkra. Kontrol lera tillgängligheten för URL-adressen i webbläsare som stöds innan du använder URL-adressen i en nätfiske-kampanj.
 
    - **Anpassad URL** för start sidan: Ange en extra landnings sida där användarna ska klicka på nätfiske-länken och ange deras autentiseringsuppgifter. Den här länken ersätter standard ingångs sidan. Om du till exempel har intern medvetenhets kurs kan du ange den URL-adressen här.
 

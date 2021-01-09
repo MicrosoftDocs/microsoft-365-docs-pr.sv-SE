@@ -13,78 +13,86 @@ ms.collection: ''
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: Hitta, testa och distribuera Microsoft- och Microsoft-partnerappar för användare och grupper i organisationen från portalen för integrerade appar i Microsoft 365-administrationscentret.
-ms.openlocfilehash: 787c1670cff865e1f207a1554f3fa6a0b1a28f1d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Hitta, testa och distribuera Microsoft-och Microsoft partner-appar för användare och grupper i din organisation från portalen för integrerade program i administrations centret för Microsoft 365.
+ms.openlocfilehash: b0dc6277461ff03e8aae2e820543f8e5d9e2303c
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399524"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790196"
 ---
-# <a name="test-and-deploy-microsoft-365-apps-in-the-microsoft-365-admin-center"></a>Testa och distribuera Microsoft 365-appar i microsoft 365-administrationscentret
+# <a name="test-and-deploy-microsoft-365-apps-in-the-microsoft-365-admin-center"></a>Testa och distribuera Microsoft 365-appar i administrations centret för Microsoft 365
 
-Microsoft 365-administrationscentret ger dig flexibiliteten att distribuera Microsoft- och Microsoft-partnerappar från en enda plats. Möjligheten att hitta, testa och fullt ut distribuera köpta och licensierade appar av Microsoft och Microsoft-partner från portalen för integrerade appar ger den bekvämlighet och fördelar som din organisation kräver för att hålla företagstjänster uppdaterade regelbundet och körs effektivt.  
+Administrations centret för Microsoft 365 ger dig flexibilitet att distribuera Microsoft-och Microsoft-partner-appar från en enda plats. Möjligheten att hitta, testa och helt distribuera köpta och licensierade appar från Microsoft och Microsoft-partners från den integrerade program-portalen är en kombination av de möjligheter och fördelar som organisationen kräver för att hålla företags tjänsterna uppdaterade regelbundet och effektivt.  
 
-Mer information om hur du köper och licensierar Microsoft 365-appar för din organisation finns i blogginlägget [Hantera och distribuera Microsoft 365 Apps från Microsoft 365-administrationscentret](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324).
+Mer information om hur du köper och licensierar Microsoft 365-appar för din organisation finns i blogg inlägget som heter [Hantera och distribuera microsoft 365-program från microsoft 365 Admin Center](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324).
   
-## <a name="manage-apps-in-the-integrated-apps-portal"></a>Hantera appar i portalen för integrerade appar
+## <a name="manage-apps-in-the-integrated-apps-portal"></a>Hantera program i portalen för integrerade appar
 
-Genom att välja Integrerade appar i Microsoft 365-administrationscentret kan du hantera testning och distribution av köpta och licensierade Microsoft- och Microsoft-partnerappar. 
+Genom att välja integrerade appar i Microsoft 365 Admin Center kan du hantera testning och distribution av köpta och licensierade Microsoft-och Microsoft partner-appar. 
 
-1. I administrationscentret, i den vänstra navigeringscentralen, väljer du **Inställningar**och väljer sedan **Integrerade appar**. 
+1. Välj **Inställningar** i administrations centret i det vänstra navigerings fältet och välj **integrerade appar**. 
 
-2. Välj en app med **Status för** fler **appar tillgängliga**.
+2. Välj en app med **status** för **fler program tillgängliga**.
 
-3. Välj **Distribuera** högst upp på sidan bredvid meddelandet som refererar till väntar på att distribueras.
+3. Välj **distribuera** högst upp på sidan bredvid meddelandet som refererar till väntande distribution.
 
-    Vissa appar kräver att du lägger till användare innan du kan välja **Distribuera**.
+    För vissa appar måste du lägga till användare innan du kan välja **distribuera**.
 
-    a. Välj **Lägg till användare**, välj Fullständig **distribution**och välj sedan **Hela organisationen** eller **Specifika användare/grupper**.
+    a. Välj **Lägg till användare**, Välj **fullständig distribution** och välj sedan **hela organisationen** eller **specifika användare/grupper**.
 
-    Specifika användare/grupper kan vara en Microsoft 365-grupp, en säkerhetsgrupp eller en distribuerad grupp.
+    Specifika användare/grupper kan vara en Microsoft 365-grupp, en säkerhets grupp eller en distribuerad grupp.
 
-    Du kan också välja **Testa distribution** om du föredrar att vänta med att distribuera appen till hela organisationen.
+    Du kan också välja **testa distribution** om du föredrar att vänta med att distribuera appen till hela organisationen.
 
-    b. Välj **Uppdatera**, **Klar**och nu kan du välja **Distribuera** på fliken **Översikt.**  
+    b. Välj **Uppdatera**, **klart** och nu kan du välja **distribuera** på fliken **Översikt** .  
 
-4. Granska appinformationen och välj sedan **Distribuera**. 
+4. Granska program informationen och välj sedan **distribuera**. 
 
-5. Välj **Klar** på sidan **Distribuera färdig.** 
+5. Välj **klar** på sidan **distributionen är klar** . 
 
-    Granska information om testet eller fullständig distribution på fliken **Översikt.**
+    Granska informationen om testet eller fullständig distribution på fliken **Översikt** .
 
-## <a name="find-published-apps-for-test-and-full-deployment"></a>Hitta publicerade appar för test och fullständig distribution 
+## <a name="find-published-apps-for-testing-and-full-deployment"></a>Hitta publicerade program för testning och fullständig distribution 
 
-Du kan hitta, testa och distribuera publicerade appar som inte redan visas i listan på sidan Integrerade appar. Genom att köpa och licensiera apparna från administrationscentret kan du lägga till Microsoft- och Microsoft-partnerappar i listan från en enda plats.
+Du kan söka efter, testa och distribuera publicerade appar som inte redan visas i listan på sidan integrerade appar. Genom att köpa och licensiera appar från administrations centret kan du lägga till Microsoft-och Microsoft-partner-appar i din lista från en och samma plats.
 
-1. I administrationscentret, i den vänstra navigeringscentralen, väljer du **Inställningar**och väljer sedan **Integrerade appar**. 
+1. Välj **Inställningar** i administrations centret i det vänstra navigerings fältet och välj **integrerade appar**. 
 
-2. Välj **Hämta appar** ovanför listan över appar.
+2. Välj **Hämta program** ovanför listan med program.
 
-3. På sidan **Microsoft 365 Apps** publicerade appar väljer du den app som du vill distribuera genom att välja **Hämta den nu**.
+3. Välj den app du vill distribuera på sidan **Microsoft 365-program** för publicerade appar genom att välja **Skaffa det nu**.
 
-4. Acceptera behörigheterna och välj sedan **Fortsätt**.
+4. Godkänn behörigheterna och välj sedan **Continue**.
 
-5. Välj **Distribuera** högst upp på sidan bredvid meddelandet som refererar till väntar på att distribueras.
+5. Välj **distribuera** högst upp på sidan bredvid meddelandet som refererar till väntande distribution.
 
-    Vissa appar kräver att du lägger till användare innan du kan välja **Distribuera**.
+    För vissa appar måste du lägga till användare innan du kan välja **distribuera**.
 
-    a. Välj **Lägg till användare**, välj Fullständig **distribution**och välj sedan **Hela organisationen** eller **Specifika användare/grupper**.
+    a. Välj **Lägg till användare**, Välj **fullständig distribution** och välj sedan **hela organisationen** eller **specifika användare/grupper**.
 
-    Specifika användare/grupper kan vara en Microsoft 365-grupp, en säkerhetsgrupp eller en distribuerad grupp.
+    Specifika användare/grupper kan vara en Microsoft 365-grupp, en säkerhets grupp eller en distribuerad grupp.
 
-    Du kan också välja **Testa distribution** om du föredrar att vänta med att distribuera appen till hela organisationen.
+    Du kan också välja **testa distribution** om du föredrar att vänta med att distribuera appen till hela organisationen.
 
-    b. Välj **Uppdatera,** **Klar**och nu kan du välja **Distribuera** på fliken **Översikt.**  
+    b. Välj **Uppdatera**, **klar** och nu kan du välja **distribuera** på fliken **Översikt** .  
 
-6. Granska appinformationen och välj sedan **Distribuera**. 
+6. Granska program informationen och välj sedan **distribuera**. 
 
-7. Välj **Klar** på sidan **Distribuera färdig.** 
+7. Välj **klar** på sidan **distributionen är klar** . 
 
-    Granska information om testet eller fullständig distribution på fliken **Översikt.**
+    Granska informationen om testet eller fullständig distribution på fliken **Översikt** .
 
-I Administrationscentret för Microsoft 365 är varje distribuerad **appstatus** **OK** med en **distributionstyp** för **testdistribution,** **fullständig distribution**eller **anpassad**och det datum då du distribuerade appen.
+I Microsoft 365 Admin Center är varje distribuerad program **status** **OK** med en **distributions typ** för **test distribution**, **fullständig distribution** eller **anpassad** samt det datum då du distribuerade appen.
 
 > [!NOTE]
-> Om en app tidigare har distribuerats från någon annanstans än portalen för integrerade appar är **distributionstypen** **anpassad.**
+> Om ett program redan har distribuerats från någon annan plats än den integrerade program portalen är **distributions typen** **anpassat.**
+
+## <a name="unsupported-scenarios"></a>Scenarier som inte stöds
+
+Följande scenarier stöds för närvarande inte för distribution från den integrerade program-portalen:
+
+- Programmet eller tillägget har länkats till fler än ett program som tjänst (SaaS).
+- SaaS-appen är länkad till program och tillägg, men har inte en associerad AADid.
+- Två SaaS-appar delar samma AADid och de är båda länkade till appar eller tillägg.
   

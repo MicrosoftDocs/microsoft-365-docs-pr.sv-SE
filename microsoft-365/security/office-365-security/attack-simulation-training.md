@@ -11,20 +11,20 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Administratörer kan lära sig hur man simulerar nät fiske attacker och tränar användarna att förhindra nätfiske genom att använda utbildning för attack simulering i Microsoft Defender för Office 365.
-ms.openlocfilehash: 3707041067fd76ee9535d0dccf5cdfcb9d74fbd7
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 41a5a503fbc8aa5e41760c1cf420d5e3c6047d86
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667579"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49788057"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simulera nätfiske-attack
 
-Med utbildning för angrepps Simulator i Microsoft Defender för Office 365 kan du köra säkra cyberattack-simuleringar på din organisation för att testa dina säkerhets principer och-rutiner, samt för att träna dina anställda att öka sin medvetenhet och minska deras känslighet för attacker. I den här artikeln får du hjälp med att skapa en simulerad nätfiske-attack med hjälp av angrepps Simulator.
+Utbildning för angrepps simulering i Microsoft Defender för Office 365 kan du köra säkra cyberattack-simuleringar på din organisation för att testa din säkerhets policy och dina arbets rutiner, samt för att träna dina anställda att öka sin medvetenhet och minska deras känslighet för attacker. I den här artikeln får du lära dig hur du skapar en simulerad nätfiske-attack med utbildning för att simulera attacker.
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-För att starta en simulerad nätfiske-attack, öppna [Microsoft 365 Security Center](https://security.microsoft.com/), gå till **e-& samarbets** \> **attack Simulator** och växla till fliken [**simuleringar**](https://security.microsoft.com/attacksimulator?viewid=simulations) .
+För att starta en simulerad nätfiske-attack, öppna [Microsoft 365 Security Center](https://security.microsoft.com/), gå till **e-& samarbets** möjligheter för \> **simulering** och gå till fliken [**simuleringar**](https://security.microsoft.com/attacksimulator?viewid=simulations) .
 
 Välj **+ starta en simulering** under **simuleringar**.
 

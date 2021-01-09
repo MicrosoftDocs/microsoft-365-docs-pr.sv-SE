@@ -21,12 +21,12 @@ description: Microsoft 365 Admin Center – lär dig mer om de funktioner som ha
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 90805568d77cf55cbd0e77fb3085435df09824ab
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 12b7dfd39a9cf8ac73e8f1c7f2297721c2d629bf
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668055"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787885"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nyheter i administrations centret för Microsoft 365
 
@@ -57,7 +57,7 @@ Välkommen till Microsoft antändt-vår första Online-Only. Vi hoppas att du sk
 
 ### <a name="multi-tenant-management"></a>Hantering av flera innehavare
 
-Vi har utvecklat en uppsättning funktioner för administratörer som använder flera innehavare för att få jobbet gjort snabbare och mer effektivt.
+Vi har utvecklat en uppsättning funktioner för administratörer som använder flera innehavare för att få jobbet gjort snabbare och mer effektivt. Mer information finns i [Hantera flera klient organisationer](multi-tenant/manage.md).
 
 - **Dina klient organisationer**: växla snabbt mellan de klient organisationer som du hanterar.
 - **Alla klient organisationer**: en ny sida där du snabbt kan se hälsan hos alla dina klient organisationer, alla öppna tjänst förfrågningar, dina produkter och fakturerings program, rekommenderade konfigurations uppgifter och antalet användare hos denna klient organisation.
@@ -293,7 +293,7 @@ Det finns två uppdateringar för grupper den här månaden:
 
 - [Schemalägga ett möte](https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
 - [Ansluta till ett Teams-möte](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [Skapa ett organisations team](https://support.microsoft.com/office/037bb27a-bcc9-48fe-8d72-44d9482420a3)
+- [Skapa ett organisationsteam](https://support.microsoft.com/office/037bb27a-bcc9-48fe-8d72-44d9482420a3)
 - [Skapa ett team med gäster](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)
 - [Gå med i ett team som gäst](https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824)
 - [Skapa en grupp-e-postadress](https://support.microsoft.com/office/ded875f9-a9de-437f-b559-2ae4f235bb2b)

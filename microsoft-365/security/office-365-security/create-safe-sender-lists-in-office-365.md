@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa om tillgängliga och önskade alternativ för att tillåta inkommande meddelanden i Exchange Online Protection (EOP).
-ms.openlocfilehash: 6e33d2b75429453602615bf98b8269ab160c7749
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 48f08e5b0d94a0e1eb65b78ba56639d8457f90aa
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698705"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49788105"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Skapa listor med säkra avsändare i EOP
 
@@ -41,9 +41,9 @@ Reglerna för e-postflöden gör det möjligt att se till att endast rätt medde
 
 > [!IMPORTANT]
 >
-> - Se till att noggrant övervaka *eventuella* undantag som du kan använda för att filtrera meddelanden med säkra avsändare.
+> - Se till att noggrant övervaka *eventuella* undantag som du gör för skräp post filtrering med säkra avsändar listor.
 >
-> - Du kan använda listor med säkra avsändare för att få hjälp med falsk identifiering (god e-post markerat som spam), men du bör överväga att använda säkra avsändar listor som en tillfällig lösning som bör undvikas om möjligt. Vi rekommenderar inte att du hanterar falsk identifiering genom att använda listor med säkra avsändare, eftersom undantag för skräp post filtrering kan öppna din organisation för förfalskning och andra attacker. Om du måste med hjälp av säkra avsändar listor för att hantera falska positiva identifieringar måste du vara vigilant och hålla koll på [meddelandena och filerna till Microsoft](report-junk-email-messages-to-microsoft.md) när du är redo.
+> - Du kan använda listor med säkra avsändare för att få hjälp med falsk identifiering (god e-post som är markerad som dålig), bör du överväga att använda listor med säkra avsändare som en tillfällig lösning som bör undvikas om möjligt. Vi rekommenderar inte att du hanterar falsk identifiering genom att använda listor med säkra avsändare, eftersom undantag för skräp post filtrering kan öppna din organisation för förfalskning och andra attacker. Om du måste med hjälp av säkra avsändar listor för att hantera falska positiva identifieringar måste du vara vigilant och hålla koll på [meddelandena och filerna till Microsoft](report-junk-email-messages-to-microsoft.md) när du är redo.
 >
 > - Om du vill tillåta att en domän skickar overifierad e-post (kringgå skydd mot förfalskning) men inte kringgår kontroll av skräp post och skadlig program vara, kan du lägga till den i [AllowedToSpoof Safe Sender List](walkthrough-spoof-intelligence-insight.md)
 >

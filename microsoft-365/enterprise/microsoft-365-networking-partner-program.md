@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Nätverkspartnerprogram
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: conceptual
@@ -16,12 +16,12 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: Med Microsoft 365 Network partner program kan enheten certifieras som att fungera med Microsoft 365.
 hideEdit: true
-ms.openlocfilehash: 4f47b4d58dacf9578952f18668f2a0a89752f30f
-ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
+ms.openlocfilehash: 407fdf4b6a1866dc2fb1c6ec01d473e71179b477
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48370364"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787849"
 ---
 # <a name="microsoft-365-networking-partner-program"></a>Microsoft 365 Nätverkspartnerprogram
 

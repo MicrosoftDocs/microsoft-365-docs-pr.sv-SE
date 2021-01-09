@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Lär dig mer om kampanjmallar i Microsoft Defender för Office 365.
-ms.openlocfilehash: 82dbccabe4917b8b90f67456fbac1c673bad3286
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8e5c49c9a45d1578da1eea33a560da611fb74155
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357665"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49788021"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Kampanjmallar i Microsoft Defender för Office 365
 
@@ -53,7 +53,7 @@ En kampanj kan vara kort livs längd eller kunna omfatta flera dagar, veckor ell
 
 ## <a name="campaign-views-in-the-security--compliance-center"></a>Kampanjmallar i säkerhets & efterlevnad
 
-Kampanjmallar är tillgängligt i [säkerhets & Compliance Center](https://protection.office.com) med kampanjer för **Threat Management** \> **Campaigns** eller direkt vid <https://protection.office.com/campaigns> .
+Kampanjmallar är tillgängligt i [säkerhets & Compliance Center](https://protection.office.com) med kampanjer för **Threat Management** \> eller direkt vid <https://protection.office.com/campaigns> .
 
 ![Översikt över kampanjer i säkerhets & Compliance Center](../../media/campaigns-overview.png)
 
@@ -77,7 +77,7 @@ På fliken standard **kampanj** visas ett stapeldiagram som visar antalet mottag
 
 På resten av översikts sidan visas följande information på fliken **kampanj** :
 
-- **Namn**
+- **Name**
 
 - **Exempel ämne**: ämnes raden för ett av meddelandena i kampanjen. Observera att alla meddelanden i kampanjen inte nödvändigt vis har samma ämne.
 
@@ -165,7 +165,7 @@ När du har skapat ett grundläggande eller Avancerat filter kan du spara det ge
 
 Om du vill exportera diagrammet eller listan med kampanjer klickar du på **Exportera** och väljer **Exportera diagram data** eller **Exportera kampanj lista**.
 
-Om du har en Microsoft Defender för slut punkts prenumeration kan du klicka på **WDATP** för att koppla eller koppla bort kampanj informationen med Microsoft Defender för slut punkten. Mer information finns i [integrera Microsoft Defender för Office 365 med Microsoft Defender för slut punkt](integrate-office-365-ti-with-wdatp.md).
+Om du har en Microsoft Defender för slut punkts prenumeration kan du klicka på **MDE-inställningar** för att ansluta eller koppla bort kampanj informationen med Microsoft Defender för slut punkt. Mer information finns i [integrera Microsoft Defender för Office 365 med Microsoft Defender för slut punkt](integrate-office-365-ti-with-wdatp.md).
 
 ## <a name="campaign-details"></a>Kampanj uppgifter
 
@@ -212,7 +212,7 @@ Diagrammet innehåller följande information:
 
   ****
 
-  |Värde|Skräp post filter Verdict|Beskrivning|
+  |Value|Skräp post filter Verdict|Beskrivning|
   |---|---|---|
   |**Möjlighet**|`SFV:SKN` <p> `SFV:SKI`|Meddelandet har marker ATS som icke skräp post och/eller ignorerade filtrering innan skräp post filtrering. Meddelandet markerades till exempel som inte skräp post av en regel för e-postflöde (kallas även transport regel). <p> Meddelandet ignorerade spam av andra orsaker. Avsändaren och mottagaren ser till exempel ut i samma organisation.|
   |**Blockering**|`SFV:SKS`|Meddelandet har marker ATS som skräp post innan det utvärderas av skräp post filtrering. Till exempel med en regel för e-postflöde.|
