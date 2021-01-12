@@ -159,3 +159,5 @@
           href: get-help-support.md
         - name: Snabbinstallationsguide för anställda
           href: employee-quick-setup.md
+    - name: Växla från Google-arbetsyta
+      href: moveto-microsoft-365/move-from-google-workspace-overview.md
