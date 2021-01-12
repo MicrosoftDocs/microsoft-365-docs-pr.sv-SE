@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Få det senaste inom maskinvarubaserad isolering. Förhindra nuvarande och framväxande attacker som att utnyttja och sabotera inte fungerar för att störa företagets produktivitet och företags säkerhet.
-ms.openlocfilehash: a1d0fb857a80d5500036f6d9a95f930ec4df38a0
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: f5a5feb14db75c5baccecf0c6afafe0c42517224
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616794"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794514"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>Application Guard för Office (offentlig för hands version) för administratörer
 
@@ -150,7 +150,7 @@ Om du stöter på problem när du startar Application Guard för Office uppmanas
 
 1. Öppna **appen feedback Hub** och logga in.
 
-2. Om du får en dialog ruta när du startar Application Guard väljer du **rapportera till Microsoft** i fel dialog rutan för att starta en ny feedback-överföring. I annat fall navigerar du till <https://aka.ms/wdagoffice-fb> för att välja rätt kategori för application Guard och väljer sedan **+ Lägg till ny feedback** nära det övre högra hörnet.
+2. Om du får en dialog ruta när du startar Application Guard väljer du **rapportera till Microsoft** i fel dialog rutan för att starta en ny feedback-överföring. I annat fall navigerar du till <https://aka.ms/mdagoffice-fb> för att välja rätt kategori för application Guard och väljer sedan **+ Lägg till ny feedback** nära det övre högra hörnet.
 
 3. Fyll i rutan **sammanfatta din feedback** om den inte redan är ifylld.
 

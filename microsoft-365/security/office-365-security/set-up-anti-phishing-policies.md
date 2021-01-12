@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om vilka phishing-principer som är tillgängliga i Exchange Online Protection (EOP) och Microsoft Defender för Office 365.
-ms.openlocfilehash: 7660516e60c77a7f31f711f78b6fd28d3ad179fd
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: dadb41e1f0ff9e18681b13ad3d265f3f436c2052
+ms.sourcegitcommit: f40378013757d560d5566a11ad4e6f527c018cc4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709710"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796200"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-nätfiske-principer i Microsoft 365
 
@@ -122,7 +122,7 @@ Inställningen **overifierad avsändare** aktiverar eller inaktiverar icke auten
 
 - Ett frågetecken (?) läggs till avsändarens foto om meddelandet inte tillåter SPF-eller DKIM-kontroller **och** meddelandet klarar inte DMARC eller [sammansatt](email-validation-and-authentication.md#composite-authentication)behörighet. Om du inaktiverar overifierad avsändare hindrar du att frågetecknet läggs till i avsändarens bild.
 
-- Via-taggen (chris@contoso.com <u>via</u> Michelle@fabrikam.com) läggs till om domänen i from-adressen (meddelande avsändaren som visas i e-postklienter) skiljer sig från domänen i DKIM-signaturen eller **e-** postadressen. Mer information om dessa adresser finns i [Översikt över e-poststandarder](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
+- Via-taggen (chris@contoso.com <u>via</u> fabrikam.com) läggs till om domänen i from-adressen (meddelande avsändaren som visas i e-postklienter) skiljer sig från domänen i DKIM-signaturen eller **e-** postadressen. Mer information om dessa adresser finns i [Översikt över e-poststandarder](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
   Inaktive ring av overifierad avsändare förhindrar inte att taggen via läggs till om domänen i från-adressen är annorlunda i DKIM-signaturen eller e-postadressen.
 

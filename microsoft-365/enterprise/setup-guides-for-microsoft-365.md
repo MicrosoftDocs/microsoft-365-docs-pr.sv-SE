@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Snabb planering och konfiguration av Microsoft 365 eller Office 365 med installations guider.
-ms.openlocfilehash: 7024494de231e5adcce4bb91414b5f7bb3349f88
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9bddf24e4133dfac32a0175b754709ba0c840760
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844098"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794430"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Installations guider för Microsoft 365 och Office 365-tjänster
 
@@ -67,7 +67,7 @@ Med [förbereda din miljö](https://aka.ms/prepareyourenvironment) guide kan du 
 
 Med [guiden för e-postkonfiguration](https://aka.ms/office365setup) får du stegvisa instruktioner för hur du konfigurerar Exchange Online för din organisation. Här ingår att konfigurera nya e-postkonton, migrera e-post och konfigurera e-postskydd. Använd den här rådgivaren för att få en lyckad e-postinstallation, med den rekommenderade autentiseringsmetoden baserat på din organisations aktuella e-postsystem, antalet post lådor som migreras och hur du vill hantera användare och deras åtkomst.
 
-### <a name="gmail-contacts-and-calendar-advisor"></a>Gmail-kontakter och kalender klassificering
+### <a name="migrate-gmail-contacts-and-calendar-items"></a>Migrera Gmail-kontakter och Kalender objekt
 
 När du migrerar en Gmail-användares post låda till Microsoft 365 migreras e-postmeddelanden, men inte kontakter och Kalender objekt. [Gmail-kontakter och kalender rådgivare](https://aka.ms/gmailcontactscalendar) innehåller anvisningar för hur du importerar Google-kontakter och Google Kalender-objekt till Microsoft 365 med hjälp av import-och export metoder med Outlook.com, Outlook-klienten eller PowerShell.
 
@@ -90,12 +90,17 @@ Windows Virtual Desktop är en omfattande tjänst för dator-och program virtual
 
 [Installations guiden för Windows Virtual Desktop](https://aka.ms/wvdsetupguide) innehåller administratörer med planerings resurser och förutsättningar för distribution, konfigurations vägledning och ytterligare resurser. 
 
-### <a name="microsoft-edge-deployment-advisor"></a>Microsoft Edge Deployment Advisor
+### <a name="microsoft-edge-setup-guide"></a>Inställnings guide för Microsoft Edge
 
 Microsoft Edge har återskapats från grunden för att ge dig världs klassens kompatibilitet och prestanda, den säkerhet och den integritet du förtjänar och nya funktioner som är utformade för att ge dig det bästa med Internet.
 
-Med [Microsoft Edge Deployment Advisor](https://aka.ms/edgeadvisor) kan du konfigurera identifiering av företags webbplatser så att du kan se vilka webbplatser som har öppnats i din organisation som måste behöva använda IE-läge, granska och konfigurera viktiga säkerhetsfunktioner, konfigurera integritets policy och ytterligare principer för att uppfylla organisationens krav och hantera Internet åtkomst på dina enheter. Du kan ladda ned Microsoft Edge till enskilda enheter, eller så visar vi dig hur du distribuerar till flera användare i organisationen med Configuration Manager eller Microsoft Intune.
-Windows Virtual Desktop är en omfattande tjänst för dator-och program virtualisering som körs i molnet. Det är den enda virtuella Skriv bords infrastrukturen (VDI) som ger förenklad hantering, multi-session Windows 10, optimeringar för Microsoft 365-appar och stöd för fjärr skrivbords tjänster (RDS). Distribuera och skala dina Windows-datorer och appar till Azure i minuter och få inbyggda funktioner för säkerhet och efterlevnad. 
+Med [installations guiden för Microsoft Edge](https://aka.ms/edgeadvisor) kan du konfigurera identifiering av företags webbplatser så att du kan se vilka webbplatser som har öppnats i din organisation som måste behöva använda IE-läge, granska och konfigurera viktiga säkerhetsfunktioner, konfigurera integritets policy och ytterligare principer för att uppfylla organisationens krav och hantera webb åtkomst på dina enheter. Du kan ladda ned Microsoft Edge till enskilda enheter, eller så visar vi dig hur du distribuerar till flera användare i organisationen med Configuration Manager eller Microsoft Intune. 
+
+### <a name="microsoft-search-setup-guide"></a>Installations guide för Microsoft Search
+
+Med Microsoft Search kan organisationen hitta vad de behöver för att slutföra vad de arbetar med. Om det sker en sökning efter personer, filer, organisations scheman, webbplatser eller svar på vanliga frågor kan organisationen använda Microsoft Search under hela sin arbets dag för att få svar.
+
+[Installations guiden för Microsoft Search](https://aka.ms/MicrosoftSearchSetup) hjälper dig att konfigurera Microsoft Search, oavsett om du vill leda den till en grupp användare eller sammanställa den för alla i organisationen. Du tilldelar Sök administratörer och sökredigerarna och anpassar sedan Sök upplevelsen för användarna med svar och ytterligare alternativ, som att lägga till Bing-tillägget i Chrome eller ställa in Bing som standard sökmotor.
 
 ### <a name="intune-configuration-manager-co-management-setup-guide"></a>Installations guide för co-Management för Intune Configuration Manager
 
@@ -135,6 +140,12 @@ Med [AD FS Deployment Advisor](https://aka.ms/adfsguidance) får du stegvisa ins
 
 ## <a name="guides-for-security-and-compliance"></a>Rikt linjer för säkerhet och efterlevnad
 
+### <a name="microsoft-intune-setup-guide"></a>Installations guide för Microsoft Intune 
+
+Konfigurera Microsoft Intune för att hantera enheter i din organisation. För fullständig kontroll över företags enheter använder du Intune-funktioner (Mobile Device Management). Om du vill hantera organisationens data på delade och personliga enheter kan du använda Intune-MAM (Mobile Application Management). 
+
+Med [installations guiden för Microsoft Intune](https://aka.ms/intunesetupguide)konfigurerar du principer för kompatibilitet för enheter och appar, tilldelar program skydds principer och övervakar statusen för enheten och appens skydd. 
+
 ### <a name="microsoft-defender-for-endpoint-advisor"></a>Microsoft Defender för slut punkts klassificering
 
 [Microsoft Defender för slut punkts rådgivare](https://aka.ms/mdatpsetup) innehåller instruktioner som hjälper företagets nätverk att förhindra, upptäcka, undersöka och reagera på avancerade hot. Gör en välgrundad utvärdering av organisationens sårbarhet och bestäm vilka distributions paket och konfigurations metoder som är bäst. 
@@ -166,9 +177,9 @@ Få en översikt över de funktioner som du kan använda i informations skydds s
 
 Med [distributions guiden för Microsoft 365-appar](https://aka.ms/OPPquickstartguide) kan du få dina användar enheter att köra den senaste versionen av Office-produkter som Word, Excel, PowerPoint och OneNote. Du får vägledning om olika distributions metoder som inkluderar enkla installations alternativ för företags distributioner med hanterings verktyg. Anvisningarna hjälper dig att utvärdera din miljö, ta reda på dina specifika distributions krav och implementera nödvändiga support verktyg för att säkerställa en lyckad installation. 
 
-### <a name="office-mobile-apps-setup-assistant"></a>Installations assistenten för Office Mobile-appar
+### <a name="mobile-apps-setup-guide"></a>Installations guide för mobilappar
 
-[Installations assistenten för Office Mobile-appar](https://aka.ms/officeappguidance) innehåller instruktioner för hur du laddar ner och installerar Office-appar på dina mobila enheter för Windows, iOS och Android. I den här guiden får du stegvisa instruktioner för hur du laddar ned och installerar Microsoft 365-och Office 365-appar på din telefon och surfplatta.
+[Installations guiden för mobilappar](https://aka.ms/officeappguidance) innehåller instruktioner för hur du laddar ner och installerar Office-appar på dina mobila Windows-, iOS-och Android-enheter. I den här guiden får du stegvisa instruktioner för hur du laddar ned och installerar Microsoft 365-och Office 365-appar på din telefon och surfplatta.
 
 ### <a name="microsoft-teams-setup-guide"></a>Installations guide för Microsoft Teams
 

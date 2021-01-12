@@ -9,14 +9,14 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: Administratörer kan läsa mer om hur man skapar anpassade nytto laster för utbildning för angrepps simulering i Microsoft Defender för Office 365.
-ms.openlocfilehash: c48e6001e6d51c5621d54b3d4149d90b71724fad
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: fbab4825625c33d027ceaa9aa9272c06e286ed61
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780254"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794226"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Skapa en anpassad nyttolast för att träna på attacksimulering
 

@@ -1,0 +1,22 @@
+- name: Byta från Google Workspace till Microsoft 365
+  items:
+    - name: Översikt
+      href: move-from-google-workspace-overview.md
+    - name: Registrera dig för Microsoft 365
+      href: ../sign-up.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
+    - name: Konfigurera Microsoft 365 för Google-migrering
+      href: set-up-microsoft-365-forgoogle.md
+    - name: Konfigurera säkerhets principer för Windows-enheter
+      href: ../secure-win10-pcs.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
+    - name: Lägga till en Google Workspace-domän
+      href: add-google-domain.md
+    - name: Installera Office-appar och Microsoft Teams
+      href: ../install-office.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
+    - name: 'Migrera e-post, kalender och kontakter till Microsoft 365'
+      href: migrate-email.md
+    - name: Anslut din domän till Microsoft 365
+      href: connect-domain-tom365.md
+    - name: Använd flytt firma för att flytta alla data
+      href: mover-migrate-files.md
+    - name: Avbryt Google-arbetsyta
+      href: cancel-google.md

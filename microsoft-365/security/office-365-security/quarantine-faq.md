@@ -15,15 +15,15 @@ search.appverid:
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: Administratörer kan visa vanliga frågor och svar om meddelanden i karantän i Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9cf1281338de66f54a6c4546b047259d647cc3ea
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 58ddb5847706aef3d2c3b8ea8cd9a96fd65a9b3d
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616002"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794418"
 ---
 # <a name="quarantined-messages-faq"></a>Vanliga frågor om meddelanden i karantän
 

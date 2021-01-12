@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: f151f02af695eb54eaf8f4f97936f4985fc7f8c0
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.openlocfilehash: aecb1230ac9a9b2868c519c9b8920e312ff5a282
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719208"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794050"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migrera mellan innehavare (för hands version)
 
@@ -43,7 +43,7 @@ Migreringsguiden för Exchange-postlådan för flera innehavare kräver auktoris
 
 I det här avsnittet ingår inte de steg som krävs för att förbereda användar objekt i gruppen användare i mål katalogen, eller så inkluderar det inte kommandot exempel för att skicka in en migreringstabell. Se [förbereda mål användar objekt för migrering](#prepare-target-user-objects-for-migration) för den här informationen.
 
-## <a name="prerequisites"></a>Krav
+## <a name="prerequisites"></a>Förutsättningar
 
 För funktionen för flytt av post lådor krävs ett [Azure-valv](https://docs.microsoft.com/azure/key-vault/basic-concepts) för att upprätta ett klient organisations par-specifika Azure-program för säker lagring och åtkomst till certifikatet/hemligheten som används för att autentisera och auktorisera post lådans migrering från en klient organisation till den andra, vilket tar bort alla krav för att dela certifikat/hemligheter mellan klient organisationer. 
 
@@ -279,7 +279,7 @@ Om en post låda flyttas tillbaka till den ursprungliga käll klient organisatio
 
 Användare som migreras måste finnas i mål klient organisationen och Exchange Online-systemet (som återanvändare) markeras med specifika attribut för att aktivera kors klient organisationer. Systemet kommer inte att flyttas för användare som inte har kon figurer ATS korrekt i mål klient organisationen. I följande avsnitt beskrivs användar objekts kraven för mål klient organisationen.
 
-### <a name="prerequisites"></a>Krav
+### <a name="prerequisites"></a>Förutsättningar
   
 Du måste kontrol lera att följande objekt och attribut är inställda i mål organisationen.  
 
@@ -359,7 +359,7 @@ Du måste kontrol lera att följande objekt och attribut är inställda i mål o
     Hitta objekt som tidigare post lådor med det här kommandot.
 
     ```powershell
-    Get-User <identity> | select Name, *recipient* | ft -a**.
+    Get-User <identity> | select Name, *recipient* | ft -AutoSize
     ```
 
     Här är ett exempel. 

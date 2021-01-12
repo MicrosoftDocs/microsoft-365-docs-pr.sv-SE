@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: Säkerhet i Office 365, från EOP till Defender för Office 365, abonnemang 1 och 2, standard kontra strikta säkerhets konfigurationer, med mera. Förstå vad du har och hur du skyddar dina egenskaper.
-ms.openlocfilehash: 84d7dcfc68ce78bfde92f3d7096cd4104355ce94
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: a24f71286a524c4057fd1354804b067497479493
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616254"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794526"
 ---
 # <a name="office-365-security-overview"></a>Säkerhets översikt för Office 365
 
@@ -129,11 +129,11 @@ Den här snabb referensen hjälper dig att förstå vilka funktioner som ingår 
 
 - Microsoft Defender för Office 365 abonnemang 2 ingår i Office 365 E5, Office 365 A5 och Microsoft 365 E5.
 
-- Microsoft Defender för Office 365 abonnemang 1 ingår i Microsoft 365 Business Premium.
+- Microsoft Defender för Office 365 Abonnemang 1 ingår i Microsoft 365 Business Premium.
 
 - Microsoft Defender för Office 365 abonnemang 1 och Defender för Office 365 abonnemang 2 finns tillgängliga som tillägg för vissa prenumerationer. Om du vill ha mer information kan du läsa mer om [tillgänglighets funktioner i Microsoft Defender för Office 365-abonnemang](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-- Funktionen för [säkra dokument](safe-docs.md) är bara tillgänglig för användare med Microsoft 365 E5-eller Microsoft 365 E5-säkerhets licenser (som inte ingår i Microsoft Defender för Office 365-abonnemang).
+- Funktionen [Säkra dokument](safe-docs.md) är bara tillgänglig för användare med Microsoft 365 E5- eller Microsoft 365 E5 Säkerhet-licenser (inte inkluderad i Microsoft Defender för Office 365-abonnemang).
 
 - Om ditt nuvarande abonnemang inte innehåller Microsoft Defender för Office 365 och du vill ha det kan du [Kontakta försäljning för att starta en utvärderings version](https://go.microsoft.com/fwlink/p/?LinkId=518644)och ta reda på hur Microsoft Defender för Office 365 kan arbeta i organisationen.
 

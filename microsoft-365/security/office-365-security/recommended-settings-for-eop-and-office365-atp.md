@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: Vad är metod tips för säkerhets inställningar för Exchange Online Protection (EOP) och Defender för Office 365? Vad är de senaste rekommendationerna för standard skydd? Vad ska användas om du vill veta mer? Vilka extrafunktioner får du om du även använder Defender för Office 365?
-ms.openlocfilehash: c9a9774e0866b009965eeb574384095c26fa780e
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: c93475f1215477281604abe72d70a60a75c41b3f
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760236"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794466"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Rekommenderade inställningar för EOP och Microsoft Defender för Office 365-säkerhet
 

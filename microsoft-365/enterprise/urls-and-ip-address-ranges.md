@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Sammanfattning: Office 365 kräver internetanslutning. Slutpunkterna nedan bör vara tillgängliga för kunder med Office 365-abonnemang, inklusive Government Community Cloud (GCC).'
 hideEdit: true
-ms.openlocfilehash: 88837f495caac13db5bf029354d3a27ffa21dba6
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: 9b705c6cad0387efb16f3fc5494b1ba2fe337732
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787697"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794406"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>URL-adresser och IP-adressintervall för Office 365
 
@@ -79,6 +79,12 @@ Data kolumnerna som visas är:
   
 [Nätverk för innehållsleverans](https://support.office.com/article/content-delivery-networks-0140f704-6614-49bb-aa6c-89b75dcd7f1f)
   
-[Microsoft Azure Datacenter IP-intervall](https://www.microsoft.com/download/details.aspx?id=41653)
+[Microsoft Azure IP-intervall och servicetaggar – offentligt moln](https://www.microsoft.com/download/details.aspx?id=56519)
+
+[Microsoft Azure IP-intervall och servicetaggar – USA: s regeringsmoln](https://www.microsoft.com/download/details.aspx?id=57063)
+
+[Microsoft Azure IP-intervaller och servicetaggar – moln i Tyskland](https://www.microsoft.com/download/details.aspx?id=57064)
+
+[Microsoft Azure IP-intervall och servicetaggar – moln i Kina](https://www.microsoft.com/download/details.aspx?id=57062)
   
 [Microsoft Public IP-utrymme](https://www.microsoft.com/download/details.aspx?id=53602)
