@@ -1,6 +1,6 @@
 ---
-title: Appar på Microsoft Hanterat skrivbord
-description: ''
+title: Appar i Microsoft Hanterat skrivbord
+description: Förklarar hur appar hanteras, inklusive hur man paketerar, distribuerar och hanterar dem.
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: da5798b3412cb69580e5d9adc582f0ca4add1e3e
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 20d68ec007ccda82816ad2288428016019f6d4b2
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289597"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840699"
 ---
-# <a name="apps-in-microsoft-managed-desktop"></a>Appar på Microsoft Hanterat skrivbord
+# <a name="apps-in-microsoft-managed-desktop"></a>Appar i Microsoft Hanterat skrivbord
 
 <!--This topic is the target for 2 "Learn more" links in the Admin Portal (aka.ms/app-overview;app-package); also target for link from Online resources (aka.ms/app-overviewmmd-app-prep) do not delete.-->
 
@@ -47,7 +47,7 @@ Det finns fortfarande vissa saker du måste göra med de här apparna:
 
 ## <a name="apps-you-provide"></a>Program du tillhandahåller
 
-Självklart är det troligt att du har ett antal andra program som du behöver för ditt företag. Dessa kan bara distribueras till Microsoft Managed Station ära datorer med hjälp av Microsoft Intunes drift sättning. Om appen behöver den kan du ha dem paketerade av en leverantör (som kan vara en leverantör eller Microsoft Consulting Services), eller om du har det kan du paketera dem själv. Sedan lägger du till dessa paket till Microsoft Managed Desktop Portal och tilldelar dem till Azure Active Directory-grupper för att utlösa distributionen. 
+Du har antagligen andra program som du behöver för dina affärs verksamheter. De här apparna kan bara distribueras till Microsoft Managed Station ära datorer med hjälp av Microsoft Intunes drift sättning. Om appen behöver den kan du ha dem paketerade av en leverantör (som kan vara en leverantör eller Microsoft Consulting Services), eller om du har det kan du paketera dem själv. Sedan lägger du till dessa paket till Microsoft Managed Desktop Portal och tilldelar dem till Azure Active Directory-grupper för att utlösa distributionen. 
 
 Om du för närvarande distribuerar dina program med hjälp av Microsoft Endpoint Configuration Manager kan Microsoft Managed Desktop förse dig med en fråga för att utvärdera dina appar och upptäcka vilka som är klara att migreras till Microsoft Intune och vilka som kan behöva justeras.
 
@@ -56,12 +56,12 @@ Om du för närvarande distribuerar dina program med hjälp av Microsoft Endpoin
 Granska dina appar, kontrol lera:
 
 - Inga av programmen är förbjudna eller har begränsat beteende, enligt beskrivningen i [Microsofts hanterade program krav](https://aka.ms/app-req).
-- Program måste vara klara för hantering av Microsoft Intune. Mer information om detta finns i [Windows 10-programdistribution med Microsoft Intune](https://docs.microsoft.com/intune/apps-windows-10-app-deploy) och [Lägg till program i Microsoft Intune](https://docs.microsoft.com/intune/apps-add).
+- Program måste vara klara för hantering av Microsoft Intune. Mer information om det här finns i [Windows 10-programdistribution med Microsoft Intune](https://docs.microsoft.com/intune/apps-windows-10-app-deploy) och [Lägg till program i Microsoft Intune](https://docs.microsoft.com/intune/apps-add).
 - Andra krav för förpackning som att tillhandahålla licens nycklar, avtal med licens villkor och för att konfigurera server anslutningar.
 
 ### <a name="decide-how-to-package-apps"></a>Bestämma hur du ska paketera appar
 
-Vissa oberoende program varu leverantörer kan kräva att dina appar paketeras innan de distribueras centralt. "Paketera" betyder att appens installations program är konfigurerat med inställningar som licens nycklar, fjärrplatser eller Skriv bords gen vägar så att programmet kan installeras i bakgrunden.
+Vissa oberoende program varu utgivare kanske kräver att dina appar paketeras innan de distribueras centralt. "Paketera" betyder att appens installations program är konfigurerat med inställningar som licens nycklar, fjärrplatser eller Skriv bords gen vägar så att programmet kan installeras i bakgrunden.
 
 Det finns tre sätt att få dina appar paketerade: 
 
@@ -69,10 +69,6 @@ Det finns tre sätt att få dina appar paketerade:
 - Du kan paketera appar själv
 - Du kan arbeta med en leverantör som inte tillhör Microsoft
 - Du kan samar beta med MCS för att paketera dina appar. Arbeta med ditt Microsoft-konto. Mer information finns i [arbeta med Microsoft Consulting Services](apps-MCS.md).
-
-
-
-
 
 
 

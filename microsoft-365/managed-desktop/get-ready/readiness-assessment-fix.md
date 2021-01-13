@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3c3c0d21ca93c0d93d17cefbc6ce630d00a16d09
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: ada6bb8ef66e3414a375a151b45d4871e306e825
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760130"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841077"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Åtgärda problem som hittats av verktyget för bedömning av beredskap
 
@@ -219,7 +219,7 @@ Granska de program du vill att Microsoft Managed Desktop-användarna ska ha.
 
 **Rådgivare**
 
-Du bör förbereda en inventering av de program som du vill att Microsoft Managed Desktop-användarna ska ha. Eftersom dessa appar måste distribueras av Intune kan du utvärdera igen med befintliga Intune-appar. Överväg att använda företags portalen (se [Installera Intune företags Portal på enheter](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) och registrerings status sida (ESP) för att distribuera program till användarna. Mer information finns i [program på Microsoft Managed Desktop](apps.md) och förstagångskörningen [med autopilot och sidan registrerings status](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run).
+Du bör förbereda en inventering av de program som du vill att Microsoft Managed Desktop-användarna ska ha. Eftersom dessa appar måste distribueras av Intune kan du utvärdera igen befintliga Intune-appar. Överväg att använda företags portalen (se [Installera Intune företags Portal på enheter](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) och registrerings status sida (ESP) för att distribuera program till användarna. Mer information finns i [program på Microsoft Managed Desktop](apps.md) och förstagångskörningen [med autopilot och sidan registrerings status](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run).
 
 Du kan be din Microsoft-representant om en fråga i Microsoft Endpoint Configuration Manager att identifiera de program som är redo att migreras till Intune eller behöver justeras.
 
@@ -291,7 +291,7 @@ Du har minst ett konto namn som är oförenliga med dem som skapas av Microsoft 
 
 ### <a name="security-administrator-roles"></a>Säkerhets administratörs roller
 
-Användare med vissa säkerhets roller måste ha kopplade till dem i Microsoft Defender för slut punkter.
+Användare med vissa säkerhets roller måste ha de roller som är kopplade till Microsoft Defender för slut punkter.
 
 **Rådgivare**
 

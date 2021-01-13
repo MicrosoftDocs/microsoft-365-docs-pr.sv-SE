@@ -7,16 +7,16 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 48c69a71a98e381123a8f87acc20a34eb6e99806
-ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
+ms.openlocfilehash: df6013f2f7fec32e79557a82f9b56fe4ad487786
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071495"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840687"
 ---
 # <a name="register-new-devices-yourself"></a>Registrera nya enheter själv
 
-Microsoft Managed Desktop kan fungera med helt nya enheter eller kan du återanvända enheter som du kanske redan har (som kräver att du skriver ut dem igen). Du kan registrera enheter med Microsoft Managed Desktop i Microsoft Endpoint Manager-portalen.
+Microsoft Managed Desktop kan fungera med helt nya enheter eller så kan du återanvända enheter som du kanske redan har (som kräver att du skriver ut dem igen). Du kan registrera enheter med Microsoft Managed Desktop i Microsoft Endpoint Manager-portalen.
 
 > [!NOTE]
 > Arbetar du med en partner för att få fram enheter? Om så är fallet behöver du inte oroa dig för att få maskinvaru-hashar; de tar hand om det åt dig. Se till att din partner etablerar en relation med dig i [partner Center](https://partner.microsoft.com/dashboard). Din partner kan läsa mer i [Hjälp för partner Center](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer). När den här relationen är etablerad registrerar din partner bara enheter åt dig – ingen ytterligare åtgärd krävs. Om du vill se informationen, eller om din partner har frågor, kan du läsa [anvisningarna för partner att registrera enheter](register-devices-partner.md). När du har registrerat enheterna kan du gå vidare med att [kontrol lera bilden](#check-the-image) och [leverera enheterna](#deliver-the-device) till användarna.
@@ -68,14 +68,14 @@ Du kan använda [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com
 
 ### <a name="merge-hash-data"></a>Slå samman hash-data
 
-Du måste ha data i CSV-filerna sammankopplade till en enda fil för att slutföra registreringen. Här är ett exempel på PowerShell-skript som gör det enkelt:
+Du måste ha data i CSV-filerna sammankopplade till en enda fil för att slutföra registreringen. Här följer ett exempel på PowerShell-skript som gör det enkelt:
 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>Registrera enheter med hjälp av administrations portalen
 
-I [Microsoft slut punkts hanteraren](https://endpoint.microsoft.com/)väljer du **enheter** i det vänstra navigerings fönstret. Leta efter avsnittet Microsoft Managed Desktop på menyn och välj **enheter**. I arbets ytan Microsoft Managed Station ära datorer väljer du **+ registrera enheter** som öppnar ett flyg program för att registrera nya enheter.
+I [Microsoft slut punkts hanteraren](https://endpoint.microsoft.com/)väljer du **enheter** i det vänstra navigerings fönstret. Leta efter avsnittet Microsoft Managed Desktop på menyn och välj **enheter**. I arbets ytan Microsoft Managed Station ära datorer väljer du **+ registrera enheter**, som öppnar ett flyg program för att registrera nya enheter.
 
 <!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -86,7 +86,7 @@ I [Microsoft slut punkts hanteraren](https://endpoint.microsoft.com/)väljer du 
 Gör så här:
 
 1. Ange en sökväg till CSV-filen som du skapade tidigare i **fil överföring**.
-3. Välj **registrera enheter**. Systemet lägger till enheter i listan med enheter i **bladet enheter** , markerade som **registrering väntar**. Registreringen tar vanligt vis mindre än 10 minuter och när enheten lyckas visas den som **klar för användarna** , vilket betyder att det är klart och väntar på att en användare ska börja använda.
+3. Välj **registrera enheter**. Systemet lägger till enheter i listan med enheter på **enheter**, markerade som **registrering väntar**. Registreringen tar vanligt vis mindre än 10 minuter och när enheten lyckas visas den som **klar för användarna** , vilket betyder att det är klart och väntar på att en användare ska börja använda.
 
 
 Du kan övervaka förloppet av enhets registrering på huvud sidan. Möjliga tillstånd rapporterade att inkludera:
@@ -95,8 +95,8 @@ Du kan övervaka förloppet av enhets registrering på huvud sidan. Möjliga til
 |---------------|-------------|
 | Registrering väntar | Registreringen är inte klar ännu. Kom tillbaka senare. |
 | Registreringen misslyckades | Det gick inte att genomföra registreringen. Mer information finns i [fel sökning av enhets registrering](#troubleshooting-device-registration) . |
-| Redo för användare | Registreringen lyckades och enheten är nu klar att levereras till användaren. Microsoft Managed Desktop vägleder dem genom första gången, vilket innebär att du inte behöver göra några fler förberedelser. |
-| Aktiva | Enheten har levererats till användaren och har registrerats hos din klient organisation. Detta indikerar också att de ofta använder enheten. |
+| Redo för användare | Registreringen lyckades och enheten är nu klar att levereras till användaren. Microsoft Managed Desktop vägleder dem genom den första konfigurationen, så du behöver inte göra några fler förberedelser. |
+| Aktiva | Enheten har levererats till användaren och har registrerats hos din klient organisation. Det här läget visar också att den används för regelbunden användning av enheten. |
 | Inaktiv | Enheten har levererats till användaren och har registrerats hos din klient organisation. De har emellertid inte använt enheten nyligen (under de senaste 7 dagarna).  | 
 
 #### <a name="troubleshooting-device-registration"></a>Felsöka registrering av enheter

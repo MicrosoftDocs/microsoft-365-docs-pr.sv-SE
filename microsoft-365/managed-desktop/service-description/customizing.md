@@ -1,6 +1,6 @@
 ---
 title: Undantag från tjänstplanen
-description: ''
+description: Så här anvisar du undantag för standard abonnemanget
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0785d7ac12c7b027322338d9949a10ea30168b3b
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 97fe3fe1734908c46dcfff4acd76ce9ae5b8b1a5
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289067"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841273"
 ---
 # <a name="exceptions-to-the-service-plan"></a>Undantag från tjänstplanen
 
@@ -31,7 +31,7 @@ Ett undantag är ett tillägg eller ändring till Microsoft Managed desktop base
 |Övervakning med digital upplevelse     |  Program vara som används för att spåra data på en användares enhet för att rapportera till den       |
 |Maskinvaru-eller program varu driv rutiner     |   Driv rutiner, begränsade enligt [program kraven](mmd-app-requirements.md)      |
 |Principerna     | Windows 10-eller Microsoft 365-appar för företags inställningar på en hanterad enhet        |
-|Anordningar     | Enheter som inte är med i [listan](device-list.md) med hanterade Station ära datorer        |
+|Enheter     | Enheter som inte är med i [listan](device-list.md) med hanterade Station ära datorer        |
 |Annat     |  Något som inte täcks av de andra områdena       |
  
 ## <a name="request-an-exception"></a>Begära ett undantag
@@ -49,7 +49,7 @@ När vi granskar undantags förfrågningar, bedömer vi dessa faktorer i följan
  
 1.  Vissa program och principer som Microsoft Managed Desktop distribueras till för alla enheter inte är överlåtbara, så din begäran får inte påverka dem. Se [enhetens konfiguration](device-policies.md) för mer information.
 2.  Begränsad produktivitet program vara som krävs av en användare ska kunna göra sitt jobb godkänt. 
-3.  Om vi kan uppfylla ditt krav med hjälp av Microsoft-teknik kommer vi troligen att godkänna din begäran om en tids period på tre till tolv månader (beroende på projektets omfattning).
+3.  Om vi kan uppfylla ditt krav med hjälp av Microsoft-teknik kommer vi troligen att godkänna din begäran om en tids period på tre till 12 månader (beroende på projektets omfattning).
 4.  Om vi inte kan uppfylla ditt krav med hjälp av Microsoft-teknik kommer vi antagligen att godkänna din begäran såvida den inte bryter mot något av villkoren nedan.  
 
 Dessa principer garanterar att Microsoft Managed Desktop alltid uppfyller dina behov när du spårar avvikelser från vår standardmall. 
@@ -71,10 +71,10 @@ När ett begärt undantag är godkänt och distribuerat kan vi upptäcka problem
  
 Om det sker meddelar vi dig med hjälp av Microsoft Managed Desktop admin-portalen. Från första gången vi meddelar dig har du 90 dagar på dig att ta bort undantaget innan de enheter som har undantaget inte längre är bundna av Microsoft Managed Desktop Service Level-avtal. Vi skickar flera meddelanden till dig enligt en strikt tids linje – en allvarlig händelse kan kräva att vi ändrar tids linjen eller våra beslut om ett undantag. Vi *tar inte bort* ett undantag utan ditt medgivande, men alla enheter med ett återkallat undantag kommer inte längre att vara bundna av vårt service nivå avtal. Här är tids linjen för meddelanden som vi skickar till dig:
 
-- **Första omlägget:** Vi ger det första meddelandet i vårt beslut att återkalla godkännande, inklusive information om varför vi återkallar det, de åtgärder vi rekommenderar att du vidtar, deadline för dessa åtgärder och hur du följer om du vill överklaga beslutet. Det här är 90 dagar innan undantaget måste tas bort från alla enheter. 
+- **Första omlägget:** Vi ger det första meddelandet i vårt beslut att återkalla godkännande, inklusive information om varför vi återkallar det, de åtgärder vi rekommenderar att du vidtar, deadline för dessa åtgärder och hur du följer om du vill överklaga beslutet. Detta meddelande gäller 90 dagar innan undantaget måste tas bort från alla enheter. 
 - **Andra Förvarningen (30 dagar senare):** Vi tillhandahåller ett andra meddelande, inklusive informationen i det första meddelandet. 
 - **Tredje meddelande (60 dagar efter första Förvarningen):** Vi tillhandahåller ett tredje meddelande, inklusive informationen i det första meddelandet. 
-- **Slutligt meddelande (1 vecka före tids fri sten för 90 dagar):** Vi tillhandahåller ett fjärde meddelande, inklusive informationen i det första meddelandet.
+- **Slutligt meddelande (en vecka före den 90 dagen):** Vi tillhandahåller ett fjärde meddelande, inklusive informationen i det första meddelandet.
 - **90 dagar efter första Förvarningen:** Det går inte längre att använda Microsoft Managed Desktop service agreement för enheter som har återkallat undantag. Du kan när som helst utmana beslutet och ge ytterligare information för övervägande, inklusive uppgradering, konfigurations ändringar eller ändring av program vara. 
 
 

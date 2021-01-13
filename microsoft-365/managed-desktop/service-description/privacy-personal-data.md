@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 8412c10416a4a131129eebd20d1b4f01228afaf3
-ms.sourcegitcommit: 280200281aec862517876319a3fe4ce170674047
+ms.openlocfilehash: 7005e09d5a3df158569e132d2954f3b9a0ebf371
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49586691"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840487"
 ---
 # <a name="privacy-and-personal-data"></a>Integritets-och person uppgifter
 
@@ -30,7 +30,7 @@ När användare registrerar företags enheter på Microsoft Managed Desktop hant
 Microsoft Managed Desktop samlar inte in data för sig själv för att tillhandahålla sin tjänst (med undantag för [IT-administratörers kontakt information](#it-admin-contact-information). I stället används data från Microsoft Managed Desktop som andra källor, till exempel Windows och Microsoft Intune, redan har samlat in. Microsoft Managed Desktop använder data de här tjänsterna samlar från registrerade enheter:
 
 - Windows-diagnostikdata från enheter som hanteras av Microsoft Managed Desktop skickas till Microsofts Windows-diagnostikdata.
-- Microsoft Managed Desktop använder [modern hantering](https://docs.microsoft.com/learn/modules/introduction-to-modern-management-in-microsoft-365/) för att hantera registrerade enheter. Som en del av detta måste enheterna vara registrerade i klient organisationens Azure Active Directory.
+- Microsoft Managed Desktop använder [modern hantering](https://docs.microsoft.com/learn/modules/introduction-to-modern-management-in-microsoft-365/) för att hantera registrerade enheter. Som en del av "modern hantering" måste enheterna vara registrerade i klient organisationens Azure Active Directory.
 - Microsoft Managed Desktop använder Microsoft Intune för att distribuera dess högoptimerade och säkra konfiguration till registrerade enheter.
 - Microsoft Managed Desktop använder säkerhets information från Microsoft Defender Avancerat tråd skydd för de kunder som använder tjänsten.
 
@@ -60,8 +60,8 @@ Microsoft Managed Desktop använder följande data:
 |---------|---------|
 |Azure Active Directory-data     | Används i rapporter som har skapats för klient organisationer, vilka är tillgängliga på administrations portalen för Microsoft Managed Desktop.        |
 |Intune-data     | Används i rapporter som har skapats för klient organisationer, vilka är tillgängliga på administrations portalen för Microsoft Managed Desktop.        |
-|Microsoft Defender för slut punkt     |  Används för adressering av säkerhetshoten som upptäckts på registrerade enheter av Microsoft Managed Desktops säkerhets åtgärds Center (SOC).  |
-|Windows-diagnostikdata     |Används för att fastställa uppdaterings status för hanterade enheter samt för att tillhandahålla och förbättra Microsoft Managed Desktop-tjänsten IT-as-service (ITaaS).         |
+|Microsoft Defender för Endpoint     |  Används för adressering av säkerhetshoten som upptäckts på registrerade enheter av Microsoft Managed Desktops säkerhets åtgärds Center (SOC).  |
+|Windows-diagnostikdata     |Används för att fastställa uppdaterings status för hanterade enheter och för att tillhandahålla och förbättra Microsoft Managed Desktop-tjänsten-as-service (ITaaS).         |
 |Administratörs kontakt data     | Används av Microsoft Managed Desktop för att kommunicera med klient organisationer.        |
 
 
@@ -91,7 +91,7 @@ Mer information om regionerna Azure använder för data lagring finns i [Azure A
 
 Intune-data kan lagras i några olika regioner, till exempel Europe Nord (Irland) och Europe West (Nederländerna). Din IT-administratör skapar ett klient konto och väljer det land där data ska lagras när de ursprungligen registrerar i Intune-tjänsterna. En lista med data Center-platser som används av Intune finns i [Microsoft Intune – var finns mina kund uppgifter?](http://intunedatacentermap.azurewebsites.net/). Mer information om data lagring och användning av Intune finns i [data insamling i Intune](https://docs.microsoft.com/intune/privacy-data-collect).
 
-### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender för slut punkt
+### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender för Endpoint
 
 Microsoft Defender för slut punkts data kan lagras i några olika områden. Av den här anledningen fungerar Defender för slut punkt i Microsoft Azure-datacenters i Europeiska unionen, Storbritannien och USA, enligt vad som anges i [Microsoft Defender för slut punkten – data lagrings platser](http://intunedatacentermap.azurewebsites.net/). Mer information om data lagring och användning av Defender för slut punkter finns i [vilka data samlar Microsoft Defender för slut punkter?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
 

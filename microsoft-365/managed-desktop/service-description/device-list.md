@@ -1,6 +1,6 @@
 ---
 title: Microsoft hanterade Station ära enheter
-description: I det här avsnittet beskrivs specifikationerna för godkända enheter för Microsoft Managed Desktop.
+description: I den här artikeln finns en lista med specifikationer för godkända enheter för Microsoft Managed Desktop.
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e858ae1fc564fdcacbe181930ae1489d131965e7
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: fff44098e3da17c68e4347fb14690945154edfdb
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659684"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841193"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft hanterade Station ära enheter 
 
@@ -23,7 +23,7 @@ Mer information om Microsoft Managed Desktop finns i [dokumentationen och resurs
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-För att vara registrerade på Microsoft Managed Desktop en enhet måste vara en av följande modeller och uppfylla eller överträffa specifikationerna för RAM-, processor familj och disk utrymme. 
+För att vara registrerade på Microsoft Managed Desktop måste en enhet vara en av följande modeller och uppfylla eller överskrida specifikationerna för RAM-, processor familj och disk utrymme. 
 
 Länkar till enheter här är endast för din referens. Om du vill beställa enheter kan du arbeta med dina kommersiella kanal kontakter för att se till att du väljer rätt konfigurationer. I den här *tabellen är det här värdet det datum* då de här modellerna får ett kortare livs längd för Microsoft Managed Desktop-tjänsten; alla sådana enheter som ingick efter detta datum kommer inte att få en komplett 3-årig support från Microsoft Managed Desktop. Arkiverade enheter visas också i [Microsoft Managed Desktop archiveed Devices](archived-device-list.md). *Pensions datum* är det datum då den här modellen inte längre stöds av Microsoft Managed Desktop. På det datumet tas alla registrerade enheter i den här modellen bort från Microsoft Managed Desktop, oavsett var de registrerade sig.
 
@@ -44,9 +44,9 @@ Länkar till enheter här är endast för din referens. Om du vill beställa enh
 | [Dell Latitude 7410/7410 2-i-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-7410-business-laptop-or-2-in-1/spd/latitude-14-7410-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | IR-kamera krävs | 19 maj 2022  | 19 maj 2025  |
 | [Dell Latitude 9410 2-i-1](https://www.dell.com/en-us/work/shop/laptops/new-14-9410-2-in-1/spd/latitude-14-9410-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | IR-kamera krävs | Maj 2022  | Maj 2025  |
 | [Dell Latitude 9510](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-9510-laptop-or-2-in-1/spd/latitude-15-9510-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | IR-kamera krävs | Maj 2022  | Maj 2025  |
-| [Dell OptiPlex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop) | 128 GB/Intel i3/8 GB RAM | Inga | 27 maj 2022  | 27 maj 2025  |
-| [Dell OptiPlex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio) | 128 GB/Intel i3/8 GB RAM | Inga | 15 maj 2022  | 15 maj 2025  |
-| [Dell 5550 arbets Station](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop) | 256 GB/Intel i5/8 GB RAM | Inga | 27 maj 2022  | 27 maj 2025  |
+| [Dell OptiPlex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop) | 128 GB/Intel i3/8 GB RAM | Ingen | 27 maj 2022  | 27 maj 2025  |
+| [Dell OptiPlex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio) | 128 GB/Intel i3/8 GB RAM | Ingen | 15 maj 2022  | 15 maj 2025  |
+| [Dell 5550 arbets Station](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop) | 256 GB/Intel i5/8 GB RAM | Ingen | 27 maj 2022  | 27 maj 2025  |
 
 ### <a name="hp"></a>KLIENTANSLUTNINGAR
 
@@ -66,15 +66,15 @@ Länkar till enheter här är endast för din referens. Om du vill beställa enh
 
 | Modell    | Miniminormer  | Ytterligare krav   | Arkiv datum   | Pensions datum   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB/Intel i5/8 GB RAM | Inga | Maj 2022 | Maj 2027 |
-| [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB/Intel Core m3/8 GB RAM | Inga | Maj 2022 | Maj 2027 |
-| [Surface bärbar dator](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB/Intel i5/8 GB RAM | Inga | Okt 12, 2022 | Okt 12, 2025 |
-| [Bärbar dator 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB/Intel i5/8 GB RAM | Inga | Oktober 22, 2021 | Oktober 22, 2024 |
-| [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB/Intel i5/8 GB RAM | Inga | Oktober 22, 2021 | Oktober 22, 2024 |
+| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB/Intel i5/8 GB RAM | Ingen | Maj 2022 | Maj 2027 |
+| [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB/Intel Core m3/8 GB RAM | Ingen | Maj 2022 | Maj 2027 |
+| [Surface bärbar dator](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB/Intel i5/8 GB RAM | Ingen | Okt 12, 2022 | Okt 12, 2025 |
+| [Bärbar dator 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB/Intel i5/8 GB RAM | Ingen | Oktober 22, 2021 | Oktober 22, 2024 |
+| [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB/Intel i5/8 GB RAM | Ingen | Oktober 22, 2021 | Oktober 22, 2024 |
 
 Dessutom måste enheten också uppfylla följande kriterier:     
 
-- Om en viss SKU står med på enhets kraven bör du kontrol lera att du använder den när du befinner dig. Detta säkerställer att enheter uppfyller kraven för Microsoft hanterat Skriv bords program. 
+- Om en viss SKU står med på enhets kraven bör du kontrol lera att du använder den när du befinner dig. Om du gör det ser du till att enheterna uppfyller Microsofts program varu krav för hanterade skriv bord. 
 - Inte slutfört första körningen av Windows.
 - Vara registrerad med Microsoft Managed Desktop med funktionen för [enhets registrering](https://aka.ms/mmddrhelp)
 
@@ -84,7 +84,7 @@ Dessutom måste enheten också uppfylla följande kriterier:
 >-  Använda en enhet för flera olika arbets belastningar.
 >- Med flera bildskärmar.
 
-**Ytterligare hjälp**
+**Mer hjälp**
 
 De här resurserna kan hjälpa till att besvara frågor som du kan ha om specifika enheter:
 

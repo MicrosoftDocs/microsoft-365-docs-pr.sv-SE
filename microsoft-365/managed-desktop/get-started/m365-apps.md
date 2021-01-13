@@ -10,14 +10,14 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 767489ba9f9ac63bc1a2d8b4999b6634335b1aef
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 98995084fb7de9ecb434b70b5d38793a20675f19
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547752"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840355"
 ---
-# <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps för företag
+# <a name="microsoft-365-apps-for-enterprise"></a> Microsoft 365 Apps för företag
 
 ## <a name="initial-deployment"></a>Inledande distribution
 
@@ -27,12 +27,12 @@ Microsoft Managed Desktop garanterar att Microsoft 365-programmen för Enterpris
 - Excel
 - PowerPoint
 - Outlook
-- Skapas
+- Publisher
 - Åtkomst
 - Skype för företag
 - OneNote
 
-Den här metoden minimerar nätverks påverkan och säkerställer att användarna kan vara produktiva när de tar emot sina enheter. Vi distribuerar sedan ytterligare principer till hanterade enheter för att konfigurera programmen för användning.
+Den här metoden minimerar nätverks påverkan och säkerställer att användarna kan vara produktiva när de tar emot sina enheter. Vi distribuerar sedan fler principer till hanterade enheter för att konfigurera programmen för användning.
 
 > [!NOTE]
 > Microsoft Teams distribueras separat från Microsoft 365-appar för företag och ingår inte i bas bilden. 
@@ -51,8 +51,8 @@ Microsoft 365-apparna är inställda på att uppdatera [månadens Enterprise-kan
 
 Microsoft Managed Desktop-förskjutningar för att identifiera eventuella problem i miljön. Vi slutförde lanseringen av de 28 dagarna efter utgivningen från Microsoft 365 program produkt gruppen. Microsoft-hanterade Skriv bords scheman uppdaterar utgåvor till olika grupper för att tillåta tid för validering och testning: 
 
-- Test: 0 dagar
-- Först: 0 dagar
+- Test: noll dagar
+- Först: noll dagar
 - Snabbt: 7 dagar
 - Brett: 21 dagar
 
@@ -66,7 +66,7 @@ Under en version övervakar Microsoft Managed Desktop dator fel frekvenserna fö
 
 ### <a name="delivery-optimization"></a>Leverans optimering
 
-Leverans optimering är en peer-to-peer-postdistributionsgrupp som är tillgänglig i Windows 10. Det gör att enheter kan dela innehåll, till exempel uppdateringar, som enheterna har laddat ner från Microsoft via Internet. Detta kan minska nätverks bandbredden eftersom en enhet kan få delar av uppdateringen från en annan enhet i det lokala nätverket i stället för att behöva ladda ner uppdateringen helt från Microsoft.
+Leverans optimering är en peer-to-peer-postdistributionsgrupp som är tillgänglig i Windows 10. Det gör att enheter kan dela innehåll, till exempel uppdateringar, som enheterna har laddat ner från Microsoft via Internet. Genom att använda den kan minska nätverks bandbredden eftersom en enhet kan få delar av uppdateringen från en annan enhet i det lokala nätverket i stället för att behöva ladda ner uppdateringen helt från Microsoft.
 
 [Leverans optimering](https://docs.microsoft.com/deployoffice/delivery-optimization) är aktive rad som standard på enheter med utbildnings utgåvor för Windows 10 Enterprise eller Windows 10. 
 
@@ -94,8 +94,8 @@ Den här principen är konfigurerad för att säkerställa att alla Office-enhet
 
 Den här principen konfigureras olika för varje enhets grupp för uppdaterings hantering och krävs för Microsoft Managed Desktop för att uppfylla sina uppdaterings mål:  
 
-- Test: 0 dagar
-- Först: 0 dagar
+- Test: noll dagar
+- Först: noll dagar
 - Snabb sju dagar
 - Brett: 21 dagar
 
@@ -150,14 +150,14 @@ Vissa organisationer är bekymrade över användare som har till gång till båd
 
 ## <a name="settings-you-manage"></a>Inställningar som du hanterar
 
-Det finns många andra principer som Microsoft Managed Desktop ännu inte har angett som en del av vår tjänst. Du kan konfigurera dessa med hjälp av Microsoft Intune som använder princip tjänsten för [Office-moln](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) . Gör så här:
+Det finns många andra principer som Microsoft Managed Desktop ännu inte har angett som en del av vår tjänst. Dessa principer kan konfigureras med hjälp av Microsoft Intune som använder princip tjänsten för [Office-moln](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) . Gör så här för att ange dessa principer:
 
 1.  Logga in i administrations centret för Microsoft Endpoint Manager.
 2.  Välj **program > principer för Office-program > Skapa**
 3.  Gör följande på sidan **Skapa princip** konfiguration:
     - Ange ett namn.
     - Ange en beskrivning (valfritt).
-    - I **uppgifter**väljer du om den här policyn gäller för alla användare av Microsoft 365-appar för företag, eller bara för användare som anonymt får åtkomst till dokument med Office för webben.
+    - I **uppgifter** väljer du om den här policyn gäller för alla användare av Microsoft 365-appar för företag, eller bara för användare som anonymt får åtkomst till dokument med Office för webben.
     - Välj den AAD-baserade säkerhets grupp som är tilldelad till princip konfigurationen. Varje princip konfiguration kan bara tilldelas en grupp, och varje grupp kan bara tilldelas en princip konfiguration.
     - Konfigurera princip inställningarna så att de tas med i princip konfigurationen. Du kan söka i princip inställnings namnet för att hitta den princip inställning som du vill konfigurera. Du kan också filtrera efter programmet, på om principen är en rekommenderad säkerhets bas linje och om policyn har kon figurer ATS. I kolumnen Platform visas om policyn används för Microsoft 365-appar för Enterprise för Windows-enheter, Office för webben eller alla.
 4.  När du har gjort dina val väljer du **skapa**.

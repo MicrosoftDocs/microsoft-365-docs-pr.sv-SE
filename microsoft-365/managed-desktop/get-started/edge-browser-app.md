@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 60ffdcddcd069330d3cde2f9cc6b2635cf205a90
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+ms.openlocfilehash: 42ff665e8ba9c369e29eeeafd27affff04b40966
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47294680"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841345"
 ---
 # <a name="new-microsoft-edge-app"></a>Ny Microsoft Edge-app
 
@@ -25,11 +25,11 @@ I den nya [webbläsaren Microsoft Edge](https://www.microsoft.com/edge) får du 
 
 Om du vill migrera dina Microsoft Managed Station ära enheter till den nya webbläsaren Microsoft Edge kan du läsa en IT support-biljett via Microsoft Managed Desktop-portalen. Vi kommer att distribuera Edge stabil kanal till test gruppen när du arkiverar biljetten och sedan distribuera den i varje senare distributions grupp varje dygn. Om du vill pausa distributionen kan du spara en fil i en annan biljett.
 
-[Beta kanalen](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) är också tillgänglig på begäran om representativ verifiering inom din organisation. Microsoft Managed Desktop distribuerar programmet som obligatoriskt för test och första grupper så att alla dessa användare har beta kanalen utöver den stabila kanalen. För alla ytterligare användare som behöver komma åt beta kanalen ska du lägga till dem i den **moderna beta-användare-gruppen på arbets platsen** och låta dem installera den från företags portalen
+[Beta kanalen](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) är också tillgänglig på begäran om representativ verifiering inom din organisation. Microsoft Managed Desktop distribuerar programmet som obligatoriskt för test och första grupper så att alla dessa användare har beta kanalen utöver den stabila kanalen. För andra användare som behöver ha till gång till beta kanalen lägger du till dem till den **moderna beta-användare-gruppen för arbets platser** och får dem att installera från företags portalen
 
 ## <a name="updates-to-microsoft-edge"></a>Uppdateringar av Microsoft Edge
 
-Microsoft Managed Desktop distribuerar den [stabila kanalen](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) i Microsoft Edge som uppdateras automatiskt var sjätte vecka. Uppdateringar i den stabila kanalen lyfts [successivt](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout) av Microsoft Edge-produktnyckeln för att säkerställa den bästa upplevelsen för kunder. 
+Microsoft Managed Desktop distribuerar den [stabila kanalen](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) i Microsoft Edge, som uppdateras automatiskt var sjätte vecka. Uppdateringar i den stabila kanalen lyfts [successivt](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout) av Microsoft Edge-produktnyckeln för att säkerställa den bästa upplevelsen för kunder. 
 
 [Beta kanalen](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) distribueras till enheter i både test-och första grupperna för representativ verifiering i organisationen. Denna kanal stöds helt och uppdateras automatiskt med nya funktioner ungefär var sjätte vecka.
 
@@ -54,21 +54,21 @@ Microsoft Managed Desktop anger den här principen för att förhindra att Chrom
 
 **Standardvärde:** Aktiv
 
-Genom att inaktivera den här principen använder Microsoft Edge endast interna meddelande värdar som är installerade på system nivå. Interna meddelande värdar är en del av Chrome-tillägg som gör att webbläsaren interagerar med andra delar av användarens slut punkt och skapar en mängd olika säkerhets problem.  
+Genom att inaktivera den här principen använder Microsoft Edge endast interna meddelande värdar som är installerade på system nivå. Interna meddelande värdar är en del av Chrome-tillägg, som gör att webbläsaren interagerar med andra delar av användarens slut punkt och skapar en mängd olika säkerhets problem.  
 
-### <a name="secure-sockets-layer-ssl"></a>SSL (Secure Sockets Layer)
+### <a name="secure-sockets-layer-tlsssl"></a>SSL (Secure Sockets Layer)
 
-#### <a name="minimum-ssl-version"></a>Lägsta SSL-version
+#### <a name="minimum-tls-version"></a>Lägsta TLS-version
 
 **Standardvärde:** Minsta TLS 1,2 stöds
 
-Om du vill använda den mindre säkra TLS-1,1 kan du begära detta.
+Om du vill använda den mindre säkra TLS-1,1 kan du spara en begäran.
 
 #### <a name="allows-users-to-proceed-from-the-ssl-warning-page"></a>Tillåter användare att gå vidare från sidan SSL-varning
 
 **Standardvärde:** Aktiv
 
-Vi rekommenderar inte att du aktiverar den här inställningen eftersom den tillåter användare att besöka webbplatser med SSL-fel.
+Vi rekommenderar inte att du aktiverar den här inställningen eftersom den tillåter användare att besöka webbplatser med TSL-fel.
 
 ### <a name="microsoft-defender-smartscreen"></a>Microsoft Defender SmartScreen
 
@@ -114,7 +114,7 @@ Microsoft Managed Desktop gör att Internet Explorer-läget för dina enheter an
 #### <a name="internet-explorer-mode-integration"></a>Integrering med Internet Explorer
 **Standardvärde:** Internet Explorer-läge
 
-Som standard är enheter inställda på att använda Internet Explorer-läge, men du kan konfigurera dem så att de öppnas i ett fristående fönster i Internet Explorer 11. För att ändra detta, spara en supportbegäran.
+Som standard är enheter inställda på att använda Internet Explorer-läge, men du kan konfigurera dem så att de öppnas i ett fristående fönster i Internet Explorer 11. Om du vill ändra detta kan du spara en supportbegäran.
 
 #### <a name="add-sites-to-the-enterprise-mode-site-list"></a>Lägga till webbplatser i webbplats listan för företags lägen
 För att webbplatser ska öppnas i Internet Explorer-läge måste du inkludera dem i [listan med företags webbplatser](https://docs.microsoft.com/DeployEdge/edge-ie-mode-sitelist). Att behålla och distribuera företags plats listan är ditt ansvar. Mer information finns i [Konfigurera använda webbplatsen för webbplats listan för att konfigurera företags läge](https://docs.microsoft.com/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
@@ -157,7 +157,7 @@ Om du vill vara säker på att Microsoft Edge uppdateras korrekt ska du inte än
 
 ### <a name="other-common-enterprise-policies"></a>Andra vanliga företags principer
 
-Microsoft Edge erbjuder många fler principer. Här är några av de vanligaste:
+Microsoft Edge erbjuder många andra principer. Här är några av de vanligaste:
  
 - [Konfigurera webbplatser i företagets webbplats lista och IE-läge](https://docs.microsoft.com/deployedge/edge-ie-mode-sitelist)
 - [Konfigurera inställningar för start-, start sida och ny flik](https://docs.microsoft.com/deployedge/microsoft-edge-policies#startup-home-page-and-new-tab-page)

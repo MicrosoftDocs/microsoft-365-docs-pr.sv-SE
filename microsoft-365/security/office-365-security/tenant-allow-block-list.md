@@ -1,5 +1,5 @@
 ---
-title: Hantera tillåtna och blockerade webb adresser i listan Tillåt/blockera i klient organisationen
+title: Hantera dina tillåter och blockerar i listan Tillåt/blockera för klient organisation
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,15 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan läsa mer om hur du konfigurerar URL-poster i listan Tillåt/blockera i klient organisationen för säkerhets &.
-ms.openlocfilehash: f60e2f29bf9b880e9d2247fa59554300ae348a03
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+description: Administratörer kan läsa mer om hur du konfigurerar tillåter och blockerar i listan Tillåt/blockera i klient organisationen i säkerhets portalen.
+ms.openlocfilehash: c789b09224d00f5bb41ae29d6d2a6efa64d23a8d
+ms.sourcegitcommit: 495b66b77d6dbe6d69e5b06b304089e4e476e568
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683217"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49799719"
 ---
-# <a name="manage-urls-in-the-tenant-allowblock-list"></a>Hantera URL:er i Klientorganisation Tillåt / blockera listan
+# <a name="managing-allows-and-blocks-in-the-tenant-allowblock-list"></a>Hantera tillåter och blockerar i listan Tillåt/blockera för klient organisation
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -38,7 +38,7 @@ I det här avsnittet beskrivs hur du konfigurerar poster i listan Tillåt/blocke
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. För att gå direkt till sidan **Tillåt/blockera lista för klient organisation** , Använd <https://protection.office.com/tenantAllowBlockList> .
+- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. För att gå direkt till sidan **Tillåt/blockera lista för klient organisation** , Använd <https://protection.office.com/tenantAllowBlockList> .
 
 - Tillgängliga URL-värden beskrivs i [URL-syntaxen för avsnittet Tillåt/blockera lista för klient organisation](#url-syntax-for-the-tenant-allowblock-list) längre ned i den här artikeln.
 

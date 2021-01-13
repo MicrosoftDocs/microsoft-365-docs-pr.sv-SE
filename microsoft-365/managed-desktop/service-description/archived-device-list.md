@@ -11,23 +11,23 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 57b49e49a20ee9e088301e90590c19cfabf89a2b
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 5d386000fab8894dd60790d3514ae93feaa03a22
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658947"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841285"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft Managed Desktop-arkiverade enheter
 
-För att det ska fungera så bra som möjligt är det möjligt att hantera Microsoft Managed Station ära datorer för enheter på en viss plats. I det här avsnittet hittar du enheter som närmar sig till pension under de närmaste åren, som vi kallar "Arkiverad". Om du kommer igång med Microsoft Managed Desktop med enheter som du redan har, bör du kontrol lera listan noga.
+För att det ska fungera så bra som möjligt är det möjligt att hantera Microsoft Managed Station ära datorer för enheter på en viss plats. Den här artikeln innehåller enheter som närmar sig till pension under de närmaste åren, som vi kallar "Arkiverad". Om du kommer igång med Microsoft Managed Desktop med enheter som du redan har, bör du kontrol lera listan noga.
 
 >[!IMPORTANT]
 >Du kan fortfarande registrera dessa enheter i dag, men de har kortare livs längd med Microsoft Managed Desktop. Om du köper nya enheter bör du använda modeller från [listan med aktiva enheter](./device-list.md).
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-För att vara registrerade på Microsoft Managed Desktop en enhet måste vara en av följande modeller och uppfylla eller överträffa specifikationerna för RAM-, processor familj och disk utrymme. Ingen annan anpassning stöds.
+För att vara registrerade på Microsoft Managed Desktop måste en enhet vara en av följande modeller och uppfylla eller överskrida specifikationerna för RAM-, processor familj och disk utrymme. Ingen annan anpassning stöds.
 
 
 
@@ -44,7 +44,7 @@ För att vara registrerade på Microsoft Managed Desktop en enhet måste vara en
 |Dell Latitude 7200 2-i-1 | 256 GB/Intel i5/8 GB RAM | IR-kamera krävs | **Den 1 maj 2024** |
 |Dell Latitude 7300/7400/7400 2-i-1 | 256 GB/Intel i5/8 GB RAM | IR-kamera krävs | **Den 1 maj 2024**  |
 |Dell Latitude 7390/7390 2-i-1/7490 | 256 GB/Intel i5/8 GB RAM   | IR-kamera krävs | **Den 9 januari 2023** |
-|Dell OptiPlex 3070 | 128 GB/Intel i3/8 GB RAM | Inga | **Den 1 maj 2025**  |
+|Dell OptiPlex 3070 | 128 GB/Intel i3/8 GB RAM | Ingen | **Den 1 maj 2025**  |
 |HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB RAM | SKU med 5VS01AV, IR-kamera eller finger avtryck  | **2023 februari** |
 |HP EliteBook 830/840/850 G6| 128 GB/Intel i5/8 GB RAM | SKU med 5VS01AV, IR-kamera eller finger avtryck  | **November 2023** |
 |HP Elite x2 1013 G3| 256 GB/Intel i5/8 GB RAM | SKU med 5VS03AV, IR-kamera krävs |**14 maj 2023** |
@@ -57,12 +57,12 @@ För att vara registrerade på Microsoft Managed Desktop en enhet måste vara en
 |HP EliteDesk 800 G4 SFF | 128 GB/Intel i3/8 GB RAM | SKU med 5VS04AV | **Jul 18, 2023** |
 |HP EliteOne 800 G4 23.8 i AIO |128 GB/Intel i3/8 GB RAM |SKU med 5VS04AV| **Jul 18, 2023** |
 |HP ZBook 14U/15U G6 mobil arbets Station |256 GB/Intel i5/8 GB RAM |SKU med 5VS04AV, IR-kamera krävs| **November 2023** |
-|Surface Book 2| 256 GB/Intel i5/8 GB RAM | Inga | **November 2022** |
-|Surface go| 128 GB/Intel 4415Y/8 GB RAM | Inga | **Aug 2, 2023** |
-|Surface laptop| 256 GB/Intel i5/8 GB RAM | Inga | **Maj 2022** |
-|Surface laptop 2| 128 GB/Intel i5/8 GB RAM | Inga | **Oktober 2023** |
-|Surface Pro| 256 GB/Intel i5/8 GB RAM | Inga | **Jun 15, 2022** |
-|Surface Pro 6| 128 GB/Intel i5/8 GB RAM | Inga | **Oktober 2023** |
+|Surface Book 2| 256 GB/Intel i5/8 GB RAM | Ingen | **November 2022** |
+|Surface go| 128 GB/Intel 4415Y/8 GB RAM | Ingen | **Aug 2, 2023** |
+|Surface laptop| 256 GB/Intel i5/8 GB RAM | Ingen | **Maj 2022** |
+|Surface laptop 2| 128 GB/Intel i5/8 GB RAM | Ingen | **Oktober 2023** |
+|Surface Pro| 256 GB/Intel i5/8 GB RAM | Ingen | **Jun 15, 2022** |
+|Surface Pro 6| 128 GB/Intel i5/8 GB RAM | Ingen | **Oktober 2023** |
 
 Dessutom måste enheten också:
 
@@ -70,7 +70,7 @@ Dessutom måste enheten också:
 - Inte slutfört första körningen av Windows.
 - Vara registrerad med Microsoft Managed Desktop med funktionen för [enhets registrering](https://aka.ms/mmddrhelp)
 
-#### <a name="additional-help"></a>Ytterligare hjälp
+#### <a name="more-help"></a>Mer hjälp
 
 De här resurserna kan hjälpa till att besvara frågor som du kan ha om specifika enheter:
 

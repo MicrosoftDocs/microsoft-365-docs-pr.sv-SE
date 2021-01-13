@@ -11,16 +11,16 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bccfe9a6a6a0550f96ab33d5fd5142e4eaae7b51
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: cf31778d773a271ead6a1745197f04eca127ab5d
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333530"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841101"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Förbereda certifikat och nätverks profiler för Microsoft Hanterat skrivbord  
  
-Certifikatbaserad identifiering är ett gemensamt krav för kunder som använder Microsoft Managed Desktop. Du kanske behöver certifikat för att få åtkomst till Wi-Fi eller LAN, för att ansluta till VPN-lösningar eller för åtkomst till interna resurser i din organisation.   
+Certifikatbaserad identifiering är ett gemensamt krav för kunder som använder Microsoft Managed Desktop. Du kanske behöver certifikat för att få åtkomst till Wi-Fi eller LAN, för att ansluta till VPN-lösningar eller för att få åtkomst till interna resurser i organisationen.   
  
 Eftersom Microsoft Managed Station ära datorer är anslutna till Azure Active Directory (Azure AD) och hanteras av Microsoft Intune måste du distribuera sådana certifikat med hjälp av SCEP (Simple Certificate Enrollment Protocol) eller en PKCS (Public Key Cryptography Standard) infrastruktur som är integrerad med Intune.    
  
@@ -28,17 +28,17 @@ Eftersom Microsoft Managed Station ära datorer är anslutna till Azure Active D
  
 Rot certifikat krävs för att distribuera certifikat via en SCEP-eller PKCS-infrastruktur. Andra program och tjänster i din organisation kan kräva att rot certifikat ska distribueras till Microsoft Managed Station ära datorer.    
  
-Innan du distribuerar SCEP-eller PKCS-certifikat till Microsoft Managed Desktop bör du samla in krav för varje tjänst som kräver en användare eller ett enhets certifikat i organisationen. För att göra det enklare kan du använda någon av följande planeringsfunktioner:  
+Innan du distribuerar SCEP-eller PKCS-certifikat till Microsoft Managed Desktop bör du samla in krav för varje tjänst som kräver en användare eller ett enhets certifikat i organisationen. För att göra den här åtgärden enklare kan du använda en av följande planeringsfunktioner:  
  
 - [PKCS-certifikatmall](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/PKCS-certificate-template.xlsx) 
 - [SCEP-certifikatmall](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/SCEP-certificate-template.xlsx)
 
   
-## <a name="wi-fi-connectivity-requirements"></a>Krav för Wi-Fi-anslutning
+## <a name="wi-fi-connectivity-requirements"></a>Anslutnings krav för Wi-Fi
 
-Om du vill tillåta att en enhet automatiskt tillhandahålls med den nödvändiga WiFi-konfigurationen för ditt företags nätverk kan du behöva en konfigurations profil för WiFi. Du kan konfigurera Microsoft Managed Desktop så att dessa profiler distribueras till dina enheter. Om nätverks säkerheten kräver att enheter kan ingå i den lokala domänen kanske du måste utvärdera din Wi-Fi-nätverks infrastruktur för att kontrol lera att den är kompatibel med Microsoft Managed Station ära enheter (Microsoft Managed Station ära enheter). 
+Om du vill tillåta att en enhet automatiskt tillhandahålls med den nödvändiga Wi-Fi konfigurationen för företags nätverket kan du behöva en Wi-Fi konfigurations profil. Du kan konfigurera Microsoft Managed Desktop så att dessa profiler distribueras till dina enheter. Om nätverks säkerheten kräver att enheter kan ingå i den lokala domänen kanske du måste utvärdera din Wi-Fi nätverks infrastruktur för att kontrol lera att den är kompatibel med Microsoft Managed Desktop-enheter (Microsoft Managed Station ära enheter). 
  
-Innan du distribuerar en Wi-Fi-konfiguration till Microsoft Managed Station ära enheter måste du samla in organisationens krav för varje Wi-Fi-nätverk. För att göra det enklare kan du använda denna [WiFi-profil](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/WiFi-profile-template.xlsx).
+Innan du distribuerar en Wi-Fi-konfiguration till Microsoft Managed Station ära enheter måste du samla in organisationens krav för varje Wi-Fi nätverk. För att göra den här åtgärden lättare kan du använda denna [WiFi-profil](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/WiFi-profile-template.xlsx).
  
  
 ## <a name="wired-connectivity-requirements-and-8021x-authentication"></a>Krav på tråd bunden anslutning och 802.1 x-verifikation 
@@ -57,7 +57,7 @@ Innan du distribuerar en profil för kabelanslutna nätverk till Microsoft Manag
  
 ## <a name="deploy-certificate-infrastructure"></a>Distribuera certifikat infrastruktur  
  
-Om du redan har en befintlig SCEP-eller PKCS-infrastruktur med Intune och detta uppfyller dina krav kan du även använda den för Microsoft Managed Desktop. Om du inte redan har en SCEP-eller PKCS-infrastruktur måste du förbereda en.  
+Om du redan har en befintlig SCEP-eller PKCS-infrastruktur med Intune och den här metoden uppfyller dina krav kan du även använda den för Microsoft Managed Desktop. Om du inte redan har en SCEP-eller PKCS-infrastruktur måste du förbereda en.  
  
 Mer information finns i [Konfigurera en certifikat profil för dina enheter i Microsoft Intune](https://docs.microsoft.com/intune/certificates-configure). 
  
@@ -67,8 +67,8 @@ Mer information finns i [Konfigurera en certifikat profil för dina enheter i Mi
  
 När din LAN-profil har exporter ATS kan du förbereda principen för Microsoft Managed Desktop genom att följa de här stegen:   
  
-1. Skapa en anpassad profil i Microsoft Intune för LAN-profilen med följande inställningar (se [använda anpassade inställningar för Windows 10-enheter i Intune](https://docs.microsoft.com/intune/custom-settings-windows-10)). I **anpassade OMA-URI-inställningar**väljer du **Lägg till**och anger sedan följande värden: 
-    - Namn: *modern arbets plats – Windows 10 LAN-profil* 
+1. Skapa en anpassad profil i Microsoft Intune för LAN-profilen med följande inställningar (se [använda anpassade inställningar för Windows 10-enheter i Intune](https://docs.microsoft.com/intune/custom-settings-windows-10)). I **anpassade OMA-URI-inställningar** väljer du **Lägg till** och anger sedan följande värden: 
+    - Namn: *Modern Workplace-Windows 10-LAN-profil* 
     - Beskrivning: Ange en beskrivning av inställningen och annan viktig information. 
     - OMA-URI (Skift läges känsligt): retur *./Device/Vendor/MSFT/WiredNetwork/LanXML*
     - Datatyp: Välj **sträng (XML-fil)**. 

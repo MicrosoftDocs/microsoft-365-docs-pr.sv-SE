@@ -9,20 +9,20 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 491422126f7d159689e7995b69bef0f395491dcb
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 9c19a037ec280320d0800fe2c65f595e4b1010dd
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527715"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840367"
 ---
 # <a name="readiness-assessment-tool"></a>Verktyg för bedömning av beredskap
 
-För att du ska få den bästa möjliga upplevelsen när du registrerar dig på Microsoft Managed Desktop finns det ett antal inställningar och andra parametrar som du måste ange i förväg. Du kan använda det här verktyget för att kontrol lera dessa inställningar och få detaljerade anvisningar för att åtgärda något som inte är rätt.
+För att du ska få den bästa möjliga upplevelsen när du registrerar dig på Microsoft Managed Desktop finns det viktiga inställningar och andra parametrar som du måste ange i förväg. Du kan använda det här verktyget för att kontrol lera dessa inställningar och få detaljerade anvisningar för att åtgärda något som inte är rätt.
 
 Verktyget kontrollerar inställningar i Microsoft slut punkts hanteraren (specifikt, Microsoft Intune), Azure Active Directory (Azure AD) och Microsoft 365 för att säkerställa att de fungerar med Microsoft Managed Desktop. Microsoft Managed Desktop behåller de data som är kopplade till dessa kontroller i 12 månader efter den senaste gången du kör en check i din Azure AD-organisation (klient organisationen). Efter 12 månader behåller vi det i det format som identifieras.  Du kan välja att ta bort de data som samlas in.
 
-Alla som har minst rollen Intune-administratör kan köra det här verktyget, men två av kontrollerna ([villkorsstyrd åtkomst policy](readiness-assessment-fix.md#conditional-access-policies) och [multifaktorautentisering](readiness-assessment-fix.md#multifactor-authentication) kräver ytterligare behörigheter.
+Alla som har minst rollen Intune-administratör kan köra det här verktyget, men två av kontrollerna ([villkorsstyrd åtkomst policy](readiness-assessment-fix.md#conditional-access-policies) och [multifaktorautentisering](readiness-assessment-fix.md#multifactor-authentication) kräver fler behörigheter.
  
 Utvärderings verktyget kontrollerar följande objekt:
 

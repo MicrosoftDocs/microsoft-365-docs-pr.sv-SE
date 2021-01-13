@@ -1,6 +1,6 @@
 ---
 title: Säkerhets åtgärder på Microsoft Managed Desktop
-description: ''
+description: Tjänster och processer som tillhandahålls av säkerhets åtgärds Center
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5698e2a88adf3d2bae84a82e0e001132293e36be
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 4464c9c491af11831a3511dab60a472f1584d7f6
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847722"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840348"
 ---
 # <a name="security-operations-in-microsoft-managed-desktop"></a>Säkerhets åtgärder på Microsoft Managed Desktop
 
@@ -40,5 +40,5 @@ I SOC finns de här tjänsterna:
     - Utrotning
     - Uppbörd
     - Aktivitet efter incident
-- Microsoft-hanterade Skriv bords kunder är berättigade till Microsoft Threat experter-tjänsten. SOC-kontakterna med den här tjänsten för att förstå de komplexa hoten som påverkar din organisation, inklusive aviserings frågor, potentiellt kompromissade enheter, orsak till en misstänkt nätverks anslutning och ytterligare hot information om pågående avancerade kampanjer för beständiga hot. Mer information finns i [Microsoft Threat experter](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).
+- Microsoft-hanterade Skriv bords kunder är berättigade till Microsoft Threat experter-tjänsten. SOC-kontakterna med den här tjänsten för att förstå de komplexa hoten som påverkar din organisation, inklusive aviseringar, potentiellt kompromissade enheter, rotor Saks nätverks anslutning och annan Hot information om pågående avancerade kampanjer för beständiga hot. Mer information finns i [Microsoft Threat experter](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).
 - SOC för hot-och säkerhets problem för sårbarhet använder vissa av Microsofts tjänster för att hjälpa dig att skydda dig mot hot. SOC använder data från Microsoft Defender för säkerhets Center och från relevanta sårbarhets data källor inom och utanför Microsoft för att upptäcka säkerhets problem och felkonfigurationer och för att tillhandahålla åtgärdade rapporter.

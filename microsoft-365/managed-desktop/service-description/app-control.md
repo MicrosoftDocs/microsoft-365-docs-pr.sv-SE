@@ -1,6 +1,6 @@
 ---
 title: Appkontroll
-description: ''
+description: Använda program kontroll och förtroende med program
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -10,21 +10,21 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 32ed3f95ebb4299796c5ad3eb71802c949701b65
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 6f5cc923b5a18b1f45dd186e88228db8c3a891cc
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289133"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841309"
 ---
 # <a name="app-control"></a>Appkontroll
 
 App Control är en valfri säkerhets metod på Microsoft Managed Desktop som begränsar körning av kod på klient enheter. Den här kontrollen minskar risken för skadliga program eller skadliga skript genom att kräva att endast kod som är signerad av en kund godkänd lista över utgivare kan köras. Det finns många säkerhets fördelarna med den här kontrollen, men det är främst att skydda data och identitet från klientbaserade sårbarheter.
 
-Med Microsoft Managed Station ära datorer blir det enklare att hantera program kontroll principer genom att skapa en bas policy som möjliggör grundläggande produktivitets scenarier. Du kan utöka förtroendet till ytterligare undertecknare som är specifika för appar och skript i miljön. 
+Med Microsoft Managed Station ära datorer blir det enklare att hantera program kontroll principer genom att skapa en bas policy som möjliggör grundläggande produktivitets scenarier. Du kan utöka förtroendet till andra undertecknare som är specifika för appar och skript i miljön. 
 
 
-Alla säkerhets tekniker kräver en avvägning mellan användar upplevelse, säkerhet och kostnad. Program kontroll minskar risken för skadliga program i miljön, men det finns konsekvenser för användaren och ytterligare åtgärder för IT-administratören.
+Alla säkerhets tekniker kräver en avvägning mellan användar upplevelse, säkerhet och kostnad. Program kontroll minskar risken för skadliga program i miljön, men det finns konsekvenser för användaren och andra åtgärder för IT-administratören.
 
 **Ytterligare säkerhet:**
 
@@ -47,7 +47,7 @@ Microsoft Managed Desktop-granskare en bas policy som är betrodd för huvud kom
 
 ### <a name="base-policy"></a>Bas policy
 
-Microsoft Managed Desktop, i samarbete med Microsoft Cybersecurity experter, skapar och hanterar en standard policy som gör att de flesta program som distribueras via Microsoft Intune blockerar farliga aktiviteter, till exempel kodning eller körning av obetrodda filer.
+Microsoft Managed Desktop, i samarbete med Microsoft Cybersecurity experter, skapar och underhåller en standard princip som gör att de flesta program som distribueras via Microsoft Intune samtidigt blockerar farliga aktiviteter som kodning eller körning av obetrodda filer.
 
 Bas policyn har följande metod för att begränsa program körning:
 
@@ -61,7 +61,7 @@ Om en annan användare än en administratör har lagt till en app eller ett skri
 
 ### <a name="signer-requests"></a>Signerings förfrågningar
 
-Du informerar dig om vilka appar som tillhandahålls av program varu leverantörer som du litar på genom att arkivera en *registreringsbegäran*. Genom att göra så lägger vi till den förtroende information i princip policyn för program kontroll och gör att program vara som är signerad med den utgivarens certifikat körs på dina enheter.
+Du informerar dig om vilka appar som tillhandahålls av program varu utgivaren som du litar på genom att arkivera en *registreringsbegäran*. Genom att göra så lägger vi till den förtroende information i princip policyn för program kontroll och gör att program vara som är signerad med den utgivarens certifikat körs på dina enheter.
 
 ## <a name="audit-and-enforced-policies"></a>Gransknings-och genomdrivta principer
 

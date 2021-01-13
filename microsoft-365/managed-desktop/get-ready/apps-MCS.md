@@ -1,7 +1,7 @@
 ---
 title: Arbeta med Microsoft Consulting Services
-description: förberedelser och steg att följa för att arbeta med MCS för att paketera dina appar
-keywords: Microsoft Managed Desktop, Microsoft 365, tjänst, dokumentation, appar, MCS, förpackning
+description: förberedelser och anvisningar för att följa för att arbeta med MCS för att paketera dina appar
+keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation, appar, MCS, packning
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,51 +9,51 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d2a6c09e1bcb84885e607d133c14e26e08e3c621
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: f8c4e427c536577ea2fc768d4930b9d4db6ac697
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530169"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841429"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Arbeta med Microsoft Consulting Services
 
-Du kan samarbeta med Microsoft Consulting Services (MCS) för att få dina appar paketerade för användning med Microsoft Managed Desktop. Om du vill ha exakt information kan du arbeta med din kontorepresentant för att kontakta MCS och begränsa ditt specifika apppaketeringsprojekt.
+Du kan delta i Microsoft Consulting Services (MCS) för att få dina appar paketerade för användning med Microsoft Managed Desktop. Mer detaljerad information finns i arbeta med konto representanten för att kontakta MCS och räckvidd för ditt specifika program packnings projekt.
 
 ## <a name="roles-and-responsibilities"></a>Roller och ansvar
 
-Om du vill arbeta med MCS-appförpackningar **måste du ange följande element:**
+Om du vill arbeta med MCS-programpaketet **måste du tillhandahålla följande element**:
 
-- Källinstallationsfilerna (t.ex. setup.exe eller MSI).
-- Installationsinstruktionerna som anger information om hur den slutliga installationen ska se ut. Till exempel, bör det finnas en genväg till skrivbordet till appen? Vad ska appens synlighet vara? Ska appen ansluta till en server och i så fall vilken? Mer information finns i [mallen för begäran om programpaketering](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx).
-- Du måste utföra dina egna acceptanstester för att verifiera att appen fungerar som du behöver den i din miljö.
+- Installations program för källfiler (till exempel setup.exe eller. msi).
+- Installations anvisningar, med information om hur den slutliga installationen ska se ut. Om det till exempel finns en genväg till programmet? Vad bör appens synlighet vara? Ska programmet ansluta till en server och om så är fallet, vilken? Mer information finns i [mallen för begäran om program packning](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx).
+- Du måste utföra dina egna godkännande test för att verifiera att programmet fungerar när du behöver det i din miljö.
 
-**MCS kommer att ta hand om dessa åtgärder:**
+**MCS kommer att vidta dessa åtgärder:**
 
-- Kontrollera om appen är förbjuden eller begränsad i Microsoft Managed Desktop-miljön.
-- Testning av installation, start och avinstallation av appen för att säkerställa kompatibilitet med Windows 10. Om MCS upptäcker ett kompatibilitetsproblem lämnar de ut appen till [Desktop App Assure-programmet](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) för reparation.
-- Paketera appen efter din specifikation och testa sedan appdistribution med hjälp av Microsoft Intune.
+- Kontrollerar om programmet är förbjudet eller begränsat i Microsoft Managed Desktop Environment.
+- Att testa installation, start och avinstallation av appen för att säkerställa kompatibilitet med Windows 10. Om MCS upptäcker ett kompatibilitetsproblem kan de lämna in appen till [Skriv bords](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) programmet för att säkerställa att programmet är åtgärdat.
+- Paketera programmet i din specifikation och testa sedan program distributionen med hjälp av Microsoft Intune.
 
-## <a name="app-delivery-schedule"></a>Schema för appleverans
+## <a name="app-delivery-schedule"></a>Program leverans schema
 
-Starta förpackningsprocessen genom att ladda upp appinformationen till Microsoft Managed Desktop-portalen. Förpackningsteamet granskar nya inlämningar varje torsdag. Efter granskning och förpackning levereras de paketerade apparna följande fredag. Upp till fem appar per vecka kan paketeras för att starta men tjänsten kan skalas efter dina behov.
+Starta packningen genom att överföra program informationen till Microsoft Managed Desktop-portalen. Förpacknings gruppen granskar nya inlämningar varje torsdag. När du har granskat och paketerat levereras de paketerade apparna följande fredag: Det går att paketera upp till fem appar per vecka, men tjänsten kan anpassas efter dina behov.
 
-![kalender som visar appinflöde på en torsdag (den 21: a i det här exemplet), media validering nästa dag, förpackning på följande måndag (den 25: e) och app leverans på den efterföljande fredagen (den 29: e)](../../media/MCS-cal.png)
+![kalender som visar hur programmet inflödar på en torsdag (tjugoförsta i det här exemplet), media verifiering nästa dag, paket för följande måndag (25) och program leverans på nästa fredag (29)](../../media/MCS-cal.png)
 
-Du får ett meddelande när appen har levererats. Då har du 21 dagar på dig att utföra acceptanstester och logga ut på arbetet i Microsoft Managed Desktop-portalen. Om du upptäcker några problem med appen under acceptanstestningen avvisar du appen i Microsoft Managed Desktop-portalen så ansluts du via e-post med en MCS-paketerare för att förstå och lösa problemet.
+Du får ett meddelande när appen har levererats. Då har vi 21 dagar på dig för att testa och godkänna arbetet på Microsoft Managed Desktop-portalen. Om du upptäcker problem med appen under godkännande testningen kan du avvisa programmet på Microsoft Managed Desktop-portalen och du kommer att vara ansluten via e-post med en MCS-paketerare för att förstå och lösa problemet.
 
 ## <a name="testing-accounts-and-environment"></a>Testa konton och miljö
 
-För att paketeringsteamet ska kunna slutföra migreringen till Microsoft Intune rekommenderar vi att du anger vissa behörigheter:
+För att förpacknings gruppen ska kunna slutföra migreringen till Microsoft Intune rekommenderar vi att du ger vissa behörigheter:
  
--   Tillgång till Microsoft Intunes funktioner för appdistribution för paketeraren att lägga till och tilldela appen 
--   Testgrupper, användarkonton och licenser för paketerare för att kunna testa apparna
+-   Åtkomst till Microsoft Intune-funktioner för program distribution för att Paketeraren ska kunna lägga till och tilldela programmet 
+-   Testa grupper, användar konton och licenser för paketen för att kunna testa apparna
 
 MCS använder dessa behörigheter för att utföra följande åtgärder:
  
--   Se till att appen fungerar på virtuell dator som konfigurerats för Microsoft Managed Desktop
--   Ladda upp appen till Microsoft Intune för distribution till användarna
+-   Kontrol lera att programmet fungerar på en virtuell dator konfigurerad för Microsoft Managed Desktop
+-   Ladda upp appen till Microsoft Intune för distribution till dina användare
 
-Utan dessa behörigheter är det möjligt för MCS att gå vidare, men de kommer inte att kunna ladda upp programmen till din miljö.
+Utan dessa behörigheter är det möjligt för MCS att gå vidare, men de kommer inte att kunna ladda upp program till din miljö.
 
 

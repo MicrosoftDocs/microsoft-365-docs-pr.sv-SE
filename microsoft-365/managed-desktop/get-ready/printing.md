@@ -9,19 +9,19 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5198691a38b179a5491a36de95531edb9f32d691
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: b6e809505fed8b1f84eb502dc08751ad1f0b587c
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48322229"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841405"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Förbereda skrivarresurser för Microsoft Hanterat skrivbord
 
 När du är redo att registrera dig på Microsoft Managed Desktop bör du bedöma utskrifts kraven och bestämma rätt metod för din miljö. Du har tre alternativ:
  
 - Distribuera Microsofts universella utskrifts lösning för att göra det lättare för Microsoft-hanterade Station ära enheter att upptäcka skrivare. Mer information finns i [Vad är universell utskrift](https://docs.microsoft.com/universal-print/fundamentals/universal-print-whatis).
-- Distribuera skrivare direkt med ett anpassat PowerShell-skript. Gör det genom att följa anvisningarna i avsnittet [Konfigurera lokala skrivare](#set-up-local-printers) .
+- Distribuera skrivare direkt med ett anpassat PowerShell-skript. Följ stegen i avsnittet [Konfigurera lokala skrivare](#set-up-local-printers) .
 - Använd en lösning som inte kommer från Microsoft och som är kompatibel med Windows 10-enheter som är anslutna till en Azure Active Directory-domän. Lösningen måste uppfylla program varu kraven för Microsoft Managed Desktop. Mer information finns i [Microsofts hanterade program krav](../service-description/mmd-app-requirements.md).
  
 Om skrivar driv rutinerna inte är tillgängliga från Microsoft Update eller Microsoft Store måste du i alla fall skaffa dem själv och få dem att paketera för distribution till Microsoft Managed Station ära datorer med Microsoft Intune. Mer information finns i den [fristående-Win32-program hanteringen i Intune](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management)

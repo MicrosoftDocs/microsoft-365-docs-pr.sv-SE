@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c659772df6492d52a23ed099ebd21e878939b8f7
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d2aed005f0f1497cc9b545f48a8cb1dae3c90fb2
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950466"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841393"
 ---
 # <a name="microsoft-managed-desktop-supported-regions-and-languages"></a>Regioner och språk som stöds av Microsoft Managed Desktop
 
@@ -20,7 +20,7 @@ Den här artikeln innehåller information om regioner och språk som stöds av M
 
 ## <a name="supported-languages"></a>Språk som stöds
 
-Engelska är det enda språket som är tillgängligt för användare av Microsoft Managed Desktop. Detta inkluderar alla användar gränssnitt för både användare och administratörer och alla interaktioner med [Administratörs support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) och [Support för slutanvändare](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support).
+Engelska är det enda språket som är tillgängligt för användare av Microsoft Managed Desktop. Denna princip inkluderar alla användar gränssnitt för både användare och administratörer och alla interaktioner med både [Administratörs support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) och [användar support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support).
 
 
 Du kan fortfarande använda hanterade enheter utanför engelska, utan avbrott till Microsoft Managed Desktop-tjänsten. En anställd som är baserad i Storbritannien kan till exempel samar beta säkert och ta emot uppdateringar på deras hanterade enheter när de reser, Europa och Sydamerika. 

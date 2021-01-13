@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5533284d4a3f55a51b3017a64e4c353b4ec71352
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7086774c046ac28ffa467168e3b5b1affb508ec8
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846234"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840339"
 ---
 # <a name="device-configuration"></a>Enhetskonfiguration
 
@@ -23,7 +23,7 @@ ms.locfileid: "48846234"
 
 <!-- Device configuration and Security Addendum-->
 
-När en ny Microsoft-hanterad stationär enhet konfigureras kontrollerar vi att den har rätt konfiguration som är optimerad för Microsoft Managed Desktop. Detta inkluderar en uppsättning standard principer som är inställda som en del av registrerings processen. Dessa principer levereras med hantering av mobila enheter (MDM) när så är möjligt. Mer information finns i [Hantera mobila enheter](https://docs.microsoft.com/windows/client-management/mdm/). 
+När en ny Microsoft-hanterad stationär enhet konfigureras kontrollerar vi att den har rätt konfiguration som är optimerad för Microsoft Managed Desktop. Denna konfiguration innehåller en uppsättning standard principer som anges som en del av registrerings processen. Dessa principer levereras med hantering av mobila enheter (MDM) när så är möjligt. Mer information finns i [Hantera mobila enheter](https://docs.microsoft.com/windows/client-management/mdm/). 
 
 >[!NOTE]
 >För att undvika konflikter bör du inte ändra dessa principer.
@@ -53,5 +53,5 @@ Anslutningar med datapriser | Uppdateringar över anslutningar med datapriser (t
  ### <a name="additional-security-policies"></a>Ytterligare säkerhets principer
 
  Dessa principer läggs till för att öka säkerheten för högreglerade branscher. 
- - **Säkerhets övervakning** : Microsoft övervakar enheter med [Microsoft Defender för slut punkter](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Om ett hot identifieras meddelar Microsoft kunden, isolerar enheten och kan lösa problemet från fjärran. 
- - **Inaktivera PowerShell V2** : Microsoft har tagit bort PowerShell V2 i augusti 2017. Den här funktionen har inaktiverats på alla Microsoft-hanterade Skriv bords enheter. Mer information om den här ändringen finns i [Windows PowerShell 2,0-utfasning](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/).
+ - **Säkerhets övervakning**: Microsoft övervakar enheter med [Microsoft Defender för slut punkter](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Om ett hot identifieras meddelar Microsoft kunden, isolerar enheten och kan lösa problemet från fjärran. 
+ - **Inaktivera PowerShell V2**: Microsoft har tagit bort PowerShell V2 i augusti 2017. Den här funktionen har inaktiverats på alla Microsoft-hanterade Skriv bords enheter. Mer information om den här ändringen finns i [Windows PowerShell 2,0-utfasning](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/).

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Lär dig mer om de säkerhetsfunktioner som medföljer Microsoft 365 Business Premium för att skydda dina data på datorer, telefoner och surfplattor.
-ms.openlocfilehash: 587d80c27f867a387c901d23f4ec05f3c5905bf6
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: b7fdd3d7fa25c23ee49ae82aa037588d8fba61a1
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843497"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840398"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 Business Premium-funktioner för säkerhet och efterlevnad
 
@@ -61,7 +61,7 @@ Du kan hantera många av Microsoft 365 Business Premium-säkerhetsfunktionerna i
     
 ## <a name="additional-security-features"></a>Ytterligare säkerhetsfunktioner 
 
-Avancerade funktioner i Microsoft 365 Business Premium är tillgängliga för att hjälpa dig att skydda ditt företag mot cyberterrorism-hot och att skydda känslig information.
+Avancerade funktioner i Microsoft 365 Business Premium är tillgängliga för att skydda ditt företag mot cyberhot och skydda känslig information.
   
 - **[Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
     
@@ -86,7 +86,7 @@ Avancerade funktioner i Microsoft 365 Business Premium är tillgängliga för at
     - [Åtkomst baserat på plats](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined#conditional-access-policies-for-combined-registration);  Tillåt endast åtkomst från betrodda IP-adressintervall eller specifika länder 
     - Kräv MFA för åtkomst
     - Blockera åtkomst till program som använder [äldre](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication)
-    - Kräv app-programmet TP Använd [Intune-appens skydd](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
+    - Kräv att appar ska använda [Intune App Protection](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
     - Anpassad verifikation som MFA med leverantörer från tredje part, till exempel DUO.
    
     Andra funktioner:

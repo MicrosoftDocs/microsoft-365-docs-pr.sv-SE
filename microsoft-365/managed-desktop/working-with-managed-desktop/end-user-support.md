@@ -1,6 +1,6 @@
 ---
-title: Support för Microsoft Managed Desktop
-description: ''
+title: Få användar support för Microsoft Managed Desktop
+description: Så här får användare hjälp med tjänsten och enheter
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5b09b59efa6862782b04b7aa58d7c1fdc0383bb0
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: abd1b681f3d5900f846fde7922f2f4a2ca5821ef
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787540"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841369"
 ---
 # <a name="getting-help-for-users"></a>Få hjälp för användare
 
@@ -25,24 +25,24 @@ Det finns två sätt som användare i organisationen kan få hjälp med på sina
 
 ## <a name="get-help-app"></a>Skaffa hjälp programmet
 
-Den bästa metoden för att tillhandahålla stöd för dina användare är **att få hjälp** , ett lättanvänt gränssnitt inbyggt i användarnas enheter.  
+Den bästa metoden för att tillhandahålla stöd för dina användare är **att få hjälp**, ett lättanvänt gränssnitt inbyggt i användarnas enheter.  
 
 ![Ikonen skaffa hjälp program](../../media/get-help.png)
 
-Det här är ett program som är installerat på alla Microsoft Managed Station ära enheter och är fästa i aktivitets fältet. 
+Få hjälp är ett program som är installerat på alla Microsoft Managed Station ära enheter och är fästa i aktivitets fältet. 
 
-- Användare kan begära samtal tillbaka till ett angivet telefonnummer eller chatta online med en service representant.
+- Användare kan begära ett motanrop till ett angivet telefonnummer eller chatta online med en service representant.
 - Förfrågningar som faller utanför Microsoft Managed Desktop support scope dirigeras om till den lokala IT-supportavdelningen via telefonsamtal.
 
 > [!NOTE]
 > Visnings språket för Get Help app är endast på engelska, även om en användare har valt ett annat språk när de ställer in sin enhet eller i enhets inställningar. 
 
-### <a name="prerequisites"></a>Krav
+### <a name="prerequisites"></a>Förutsättningar
 För att användarna ska kunna få hjälp via programmet kontrollerar du att följande förutsättningar uppfylls:
 
 - Enheten måste vara registrerad med Microsoft Managed Desktop med någon av metoderna i [Konfigurera Microsoft Managed Station ära enheter](../get-started/set-up-devices.md), till exempel [registrera nya enheter själv](../get-started/register-devices-self.md).
 - Visnings språket för enheten måste vara inställt på något av dessa engelska språk: en-US, en-GB, en-au, en-NZ eller en-ca.
-- Appen skaffa hjälp ska vara uppdaterad. Bekräfta program uppdateringar i Microsoft Store.
+- Appen skaffa hjälp ska vara uppdaterad. Kontrol lera program uppdateringar i Microsoft Store för att bekräfta dess status.
 - Vissa [slut punkter](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) måste vara tillgängliga från enheten.
 
 > [!NOTE]
@@ -52,7 +52,7 @@ Om du har kontrollerat de här kraven och det inte fungerar att få hjälp appen
 
 ## <a name="phone-support"></a>Telefonsupport
 
-Användare med Microsoft hanterade Station ära Skriv bords enheter har också till gång till avgiftsfria telefonnummer de kan ringa. Det är avsett att användas när det inte går att få hjälp. Till exempel, om de inte kan logga in på enheten eller om enheten har brutits. Här är telefonnummer för telefon support:
+Användare med Microsoft hanterade Station ära Skriv bords enheter har också till gång till avgiftsfria telefonnummer de kan ringa. Siffrorna är avsedda att användas när det inte finns något hjälp avsnitt. Till exempel, om de inte kan logga in på enheten eller om enheten har brutits. Här är telefonnummer för telefon support:
 
 - USA: + 1 855 425 0216
 - Kanada (exklusive Quebec): + 1 855 425 0216
@@ -71,7 +71,7 @@ Användare med Microsoft hanterade Station ära Skriv bords enheter har också t
 >[!NOTE]
 >Du måste ha din organisations e-postadress klar när du ringer för att bekräfta din identitet. 
 
-## <a name="additional-resources"></a>Ytterligare resurser
+## <a name="more-resources"></a>Fler resurser
 - [Administratörs support för Microsoft Managed Desktop](admin-support.md). 
 - [Stöd för Microsoft Managed Desktop](../service-description/support.md).
-- Om du redan prenumererar på Microsoft Managed Desktop kan du hitta detaljerade procedurer, process flöden, arbets instruktioner och vanliga frågor och svar i administratörs guiden för Microsoft- **Online resources** hanterad Skriv bords **Administration** i Microsoft [Endpoint Manager](https://endpoint.microsoft.com/).
+- Om du redan prenumererar på Microsoft Managed Desktop kan du hitta detaljerade procedurer, process flöden, arbets instruktioner och vanliga frågor och svar i administratörs guiden för Microsoft-  hanterad Skriv bords **Administration** i Microsoft [Endpoint Manager](https://endpoint.microsoft.com/).
