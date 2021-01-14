@@ -1,6 +1,6 @@
 ---
-title: Är Microsoft Hanterat skrivbord rätt för dig
-description: ''
+title: Är Microsoft Hanterat skrivbord rätt för dig?
+description: Orientering för vad tjänsten är och genvägar till artiklar för olika målgrupper
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b877a35133be13cd6783659f1e5d981633338be8
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: 8e95eb0fd0e03dc718affa7e7cf044beb654bb56
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269379"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840941"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Vad är Microsoft Hanterat skrivbord?
 
@@ -73,7 +73,7 @@ Mer information om värdet för Microsoft Hanterat skrivbord, inklusive kund ber
 
 Om Microsoft Hanterat skrivbord verkar rätt för din organisation kan du fördjupa dig i avancerad dokumentation som förklarar mer om tjänsten, hur du förbereder din organisation för att registrera dig, hur du kommer igång med tjänsten och pågående åtgärder efter det, bland annat hur du och användarna enkelt får hjälp om det behövs. Om du redan är redo att komma igång börjar du med att kontakta det [lokala kontoteamet](https://pages.email.office.com/contactmmd/).
 
-**Mer översikt och bakgrunds ** främst för tekniska och affärs besluts fattare, information om hur du delar roller och ansvars områden mellan din organisation och Microsoft, mer om de tekniker som används på Microsoft Hanterat skrivbord ära datorer och hur tjänsten passar in i en bredare strategi som en del av ITIL-ramverket.
+**Mer översikt och bakgrunds** främst för tekniska och affärs beslutsfattare, information om hur du delar roller och ansvarsområden mellan din organisation och Microsoft, mer om de tekniker som används på Microsoft Hanterat skrivbord och hur tjänsten passar in i en bredare strategi som en del av ITIL-ramverket.
 
 - [Roller och ansvar för Microsoft Hanterat skrivbord](roles-and-responsibilities.md)
 - [Teknologier i Microsoft Hanterat skrivbord](technologies.md)
@@ -81,7 +81,7 @@ Om Microsoft Hanterat skrivbord verkar rätt för din organisation kan du fördj
 - [Efterlevnad](compliance.md)
 - [Tjänst beskrivning för Microsoft Hanterat skrivbord](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
 
-**Förbered dig för registrering ** i dessa avsnitt beskrivs de steg som du måste utföra i din organisation för att förbereda för registrering, t. ex. kontroll av att din miljö uppfyller viktiga förutsättningar, konfigurera nätverk, konfigurera certifikat och förbereda appar.
+**Förbered dig för registrering** i dessa avsnitt beskrivs de steg som du måste utföra i din organisation för att förbereda för registrering, t. ex. kontroll av att din miljö uppfyller viktiga förutsättningar, konfigurera nätverk, konfigurera certifikat och förbereda appar.
 
 - [Förutsättningar för Microsoft Hanterat skrivbord](../get-ready/prerequisites.md)
 - [Nätverks konfiguration för Microsoft Hanterat skrivbord](../get-ready/network.md)
