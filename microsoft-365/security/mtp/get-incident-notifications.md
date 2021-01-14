@@ -21,19 +21,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3af1dcfec165c88a18cbc0d8cbf6866bb6398adc
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: f25be4de3f25db869957474c3cb32b20e9f7aa53
+ms.sourcegitcommit: 88d358d778804b26d5e41c53b4f725d01a78112b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668363"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49848897"
 ---
 # <a name="get-incident-notifications-by-email"></a>Få incident meddelanden via e-post
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
->[!IMPORTANT]
-> Funktionen e-postaviseringar för incidenter finns för närvarande i offentlig för hands version. Viss information om den här funktionen kan komma att ändras innan du är tillgänglig. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
 
 **Gäller för:**
 - Microsoft 365 Defender

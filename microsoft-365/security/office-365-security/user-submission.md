@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Administratörer kan läsa hur du konfigurerar en post låda för att samla in skräp post och nätfiske som rapporteras av användare.
-ms.openlocfilehash: 7064e2d26722c433d33fe2f983484a40fa33c1e6
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 8f9da620643d46bf21a18eccc2047ad4361832cc
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615630"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865074"
 ---
 # <a name="user-submissions-policy"></a>Policy för användar inlägg
 
@@ -31,6 +31,8 @@ ms.locfileid: "49615630"
 I Microsoft 365-organisationer med Exchange Online-postlådor kan du ange en post låda som tar emot meddelanden som användare rapporterar som skadlig eller inte skadlig. När användarna skickar meddelanden med olika rapporterings alternativ kan du använda den här post lådan för att avlyssna meddelanden (endast skicka till den anpassade post lådan) eller ta emot kopior av meddelanden (skicka till den anpassade post lådan och Microsoft). Den här funktionen fungerar med följande alternativ för meddelande rapportering:
 
 - [Tillägget rapport](enable-the-report-message-add-in.md)
+
+- [Tillägget rapportera nät fiske](enable-the-report-phish-add-in.md)
 
 - [Inbyggd rapportering i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (tidigare Outlook Web App)
 
@@ -63,7 +65,7 @@ När du har verifierat att post lådan uppfyller alla tillämpliga förutsättni
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till sidan **användar överföring** kan du använda <https://protection.office.com/userSubmissionsReportMessage> .
+- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till sidan **användar överföring** kan du använda <https://protection.office.com/userSubmissionsReportMessage> .
 
 - Om du vill ändra konfigurationen för användar inlämningar måste du vara medlem i någon av följande roll grupper:
 
@@ -76,17 +78,17 @@ När du har verifierat att post lådan uppfyller alla tillämpliga förutsättni
 
 2. På sidan **användar inlägg** som visas väljer du något av följande alternativ:
 
-   1. **Aktivera funktionen rapport meddelande för Outlook (rekommenderas)**: Välj det här alternativet om du använder tillägget rapportera meddelande eller inbyggd rapportering i Outlook på webben och konfigurera sedan följande inställningar:
+   1. **Aktivera funktionen rapport meddelande för Outlook (rekommenderas)**: Välj det här alternativet om du använder tilläggsprogrammet rapportera tillägg, tillägget rapportera nät fiske eller den inbyggda rapporteringen i Outlook på webben och konfigurera sedan följande inställningar:
 
       - **Anpassa slutanvändarens bekräftelse meddelande**: Klicka på den här länken. Konfigurera följande inställningar i den utfällda **bekräftelse meddelandet** som visas:
 
-      - **Före inlämning**: Ange den beskrivande text som användarna ser innan de rapporterar ett meddelande med hjälp av tillägget rapport meddelande i rutorna **rubrik** och **bekräftelse meddelande** . Du kan använda variabeln% Type% för att inkludera sändnings typen (skräp, inte skräp post, Phish, osv.).
+      - **Före inlämning**: Ange den beskrivande text som användarna ser innan de rapporterar ett meddelande med hjälp av tillägget rapport eller rapport nät i meddelande rutan **rubrik** och **bekräftelse** . Du kan använda variabeln% Type% för att inkludera sändnings typen (skräp, inte skräp post, Phish, osv.).
 
         Om du väljer ett alternativ som skickar det rapporterade meddelandet till Microsoft läggs även följande text till i meddelandet:
 
         > Din e-post skickas till Microsoft för analys. Vissa e-postmeddelanden kan innehålla personlig eller känslig information.
 
-      - **Efter sändning**: Klicka på ![ ikonen Expandera ](../../media/scc-expand-icon.png) . Ange den  beskrivande text som användarna ser efter att de har rapporterat ett meddelande med hjälp av rapport tillägget.  Du kan använda variabel% Type% för att inkludera överförings typen.
+      - **Efter sändning**: Klicka på ![ ikonen Expandera ](../../media/scc-expand-icon.png) . Ange den  beskrivande text som användarna ser efter att de har rapporterat ett meddelande med hjälp av tillägget rapport eller rapport nät.  Du kan använda variabel% Type% för att inkludera överförings typen.
 
       Klicka på **Spara** när du är klar. Om du vill rensa de här värdena klickar du på **Återställ** bakåt på sidan **användar inlägg** .
 
@@ -104,9 +106,9 @@ När du har verifierat att post lådan uppfyller alla tillämpliga förutsättni
       När du är klar klickar du på **Bekräfta**.
 
       > [!CAUTION]
-      > Om du har [inaktiverat skräp post rapportering i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) med hjälp av Outlook på principer för Internet-postlådor, men du konfigurerar något av de föregående inställningarna för att rapportera meddelanden till Microsoft, kan användarna rapportera meddelanden till Microsoft i Outlook på webben med hjälp av rapport tillägget.
+      > Om du har [inaktiverat skräp post rapportering i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) med hjälp av Outlook på principer för Internet-postlådor, men du konfigurerar något av de föregående inställningarna för att rapportera meddelanden till Microsoft, kan användarna rapportera meddelanden till Microsoft i Outlook på webben med hjälp av tilläggsprogrammet rapport meddelande eller rapport-nätfiske.
 
-   - **Inaktivera funktionen rapport meddelande för Outlook**: Välj det här alternativet om du använder rapporterings verktyg från tredje part i stället för rapport tillägget eller den inbyggda rapporteringen i Outlook på webben och konfigurera sedan följande inställningar:
+   - **Inaktivera funktionen rapport meddelande för Outlook**: Välj det här alternativet om du använder rapporterings verktyg från tredje part i stället för rapport tillägget, rapportens nätfiske-tillägg eller den inbyggda rapportering i Outlook på webben och konfigurera sedan följande inställningar:
 
       Välj **Använd den här anpassade post lådan för att ta emot inlämning av användare**. I rutan som visas anger du e-postadressen för en befintlig post låda som redan finns i Office 365. Detta måste vara en befintlig post låda i Exchange Online som kan ta emot e-post.
 

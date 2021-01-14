@@ -14,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Lär dig hur du installerar och använder tillägget skräp post rapportering i Microsoft för att rapportera skräp post, icke skräp post-och nät fiske meddelanden till Microsoft.
-ms.openlocfilehash: 4345066ec180b5d7fe5ff8b537a3cd057f60c31c
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 2b98fb0183cb7164ee90fb6a3a22d949e6edc2bc
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658875"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865073"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installera och använda tillägget skräp post rapportering för Microsoft Outlook
 
@@ -27,7 +27,7 @@ ms.locfileid: "49658875"
 
 
 > [!NOTE]
-> Om du inte använder tillägget skräp post rapportering rekommenderar vi att du i stället [lägga till tillägget rapportera meddelanden](enable-the-report-message-add-in.md) . Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
+> Om du inte använder tillägget skräp post rapportering rekommenderar vi att du i stället lägger till [tillägget för rapport meddelanden](enable-the-report-message-add-in.md) eller [rapport](enable-the-report-phish-add-in.md) tillägget. Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
 Med tillägget skräp post rapportering för Microsoft Outlook kan användarna skicka falska positiva (god e-post), falsk negativ (dålig e-post) och nätfiske-meddelanden till Microsoft. Om din organisation inte använder Exchange Online Protection (till exempel lokala Exchange-eller e-posttjänster som inte är Exchange Online), påverkas inte din skräp post filtrering.
 

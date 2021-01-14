@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Följ de här rekommendationerna för en fristående Exchange Online Protection (EOP) för att ställa in dig själv och undvika vanliga konfigurations fel.
-ms.openlocfilehash: abf68e361293b2a55cd0a382cc376cbfe21236e7
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a229f8a269037296fa2b97ff7211343549b33685
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845954"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49864894"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Metod tips för att konfigurera fristående EOP
 
@@ -48,7 +48,7 @@ Dessa inställningar täcker ett antal funktioner utanför säkerhets principer.
 |[Konfigurera SPF för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Ja|Ja||
 |[Använd DKIM för att validera utgående e-post som skickas från din egna domän i Office 365](use-dkim-to-validate-outbound-email.md)|Ja|Ja||
 |[Använda DMARC för att validera e-post i Office 365](use-dmarc-to-validate-email.md)|Ja|Ja|Använd `action=quarantine` för standard och `action=reject` för strikt.|
-|Distribuera [tillägget rapportera meddelande](enable-the-report-message-add-in.md) för att förbättra slutanvändarnas rapportering av misstänkt e-post|Ja|Ja||
+|Distribuera [tillägget rapportera](enable-the-report-message-add-in.md) eller [rapportera](enable-the-report-phish-add-in.md) tillägg för att förbättra slutanvändarnas rapportering av misstänkt e-post|Ja|Ja||
 |Schemalägg skadlig program vara och skräp post|Ja|Ja||
 |Automatisk vidarebefordring till externa domäner tillåts inte heller att övervakas|Ja|Ja||
 |Enhetlig granskning bör vara aktiverat|Ja|Ja||

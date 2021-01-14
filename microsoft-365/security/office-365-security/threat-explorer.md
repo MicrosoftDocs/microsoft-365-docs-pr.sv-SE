@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Använd Utforskaren och real tids identifiering i &amp; Center för säkerhets efterlevnad för att undersöka och reagera på hot effektivt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8bca8e39029fe041c0bab59e92d8a653647746ef
-ms.sourcegitcommit: 0ecac0387be6b49025b79ce8eb949a8cf62481e2
+ms.openlocfilehash: 5ecc90602573de0de08336c3bca41aed701d8329
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49724420"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865038"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer och real tids identifiering
 
@@ -422,7 +422,7 @@ I e-postmeddelandet eller URL-flyouts, de viktigaste tryckningarna samt i våra 
 
 ## <a name="review-email-messages-reported-by-users"></a>Granska e-postmeddelanden som rapporter ATS av användare
 
-Anta att du vill se e-postmeddelanden som användare i din organisation rapporterat som *skräp post*, *inte skräp post* eller *nätfiske* via [rapport tillägget för Outlook och Outlook på webben](enable-the-report-message-add-in.md). Om du vill visa dem använder du vyn [ **e-**  >  **postinlägg**](threat-explorer-views.md#email--submissions) i Utforskaren (eller real tids identifieringar).
+Anta att du vill se e-postmeddelanden som användare i din organisation rapporterat som *skräp post*, *inte skräp post* eller *nätfiske* via [rapport tillägget](enable-the-report-message-add-in.md) eller tilläggs tillägget för [rapport](enable-the-report-phish-add-in.md). Om du vill visa dem använder du vyn [ **e-**  >  **postinlägg**](threat-explorer-views.md#email--submissions) i Utforskaren (eller real tids identifieringar).
 
 1. <https://protection.office.com>Välj **Threat Management** \> **Explorer** (eller **real tids identifiering**) i gruppen säkerhets & efterlevnad. (Det här exemplet använder Utforskaren.)
 

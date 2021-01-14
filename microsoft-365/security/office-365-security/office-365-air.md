@@ -21,12 +21,12 @@ description: Komma igång med automatiska undersökningar och svars funktioner i
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 6ccefb5c435f08fcef4dcc872af676fba70668ee
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 570fb3c9d180d3167cfc5a4e3c3825102875b74f
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794550"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865014"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Automatisk undersökning och svar (AIR) i Microsoft Defender för Office 365
 
@@ -107,7 +107,7 @@ Microsoft 365 innehåller många inbyggda aviserings principer som hjälper dig 
 |Meddelanden|Allvarlighets grad|Så här genereras varningen|
 |---|---|---|
 |En potentiellt skadlig URL-adress klickning upptäcktes|**Högsta**|Denna avisering genereras när något av följande inträffar: <ul><li>En användare som skyddas av [säkra länkar](atp-safe-links.md) i organisationen klickar på en illvillig länk</li><li>Verdict ändringar för webb adresser identifieras av Microsoft Defender för Office 365</li><li>Användare kan åsidosätta varnings sidor för säkra länkar (utifrån organisationens [princip för säkra länkar](set-up-atp-safe-links-policies.md)).</li></ul> <p> Mer information om händelser som utlöser den här varningen finns i [Konfigurera principer för säkra länkar](set-up-atp-safe-links-policies.md).|
-|Ett e-postmeddelande rapporteras av en användare som skadlig program vara eller Phish|**Informations**|Den här aviseringen skapas när användare i din organisation rapporterar meddelanden som nätfiske-e-post med hjälp av [tilläggsprogrammet för rapport meddelanden](enable-the-report-message-add-in.md).|
+|Ett e-postmeddelande rapporteras av en användare som skadlig program vara eller Phish|**Informations**|Den här aviseringen skapas när användare i din organisation rapporterar meddelanden som nätfiske-e-post med hjälp av [tillägget för rapport](enable-the-report-message-add-in.md) eller [rapport](enable-the-report-phish-add-in.md)tillägget.|
 |E-postmeddelanden med skadlig kod tas bort efter leverans|**Informations**|Denna avisering genereras när ett e-postmeddelande med skadlig kod levereras till post lådor i din organisation. Om den här händelsen inträffar tar Microsoft bort infekterade meddelanden från Exchange Online-postlådor med [Automatisk rensning av noll-timme](zero-hour-auto-purge.md).|
 |E-postmeddelanden som innehåller Phish URL-adresser tas bort efter leverans|**Informations**|Denna avisering genereras när meddelanden som innehåller Phish levereras till post lådor i din organisation. Om den här händelsen inträffar tar Microsoft bort infekterade meddelanden från Exchange Online-postlådor med [Automatisk rensning av noll-timme](zero-hour-auto-purge.md).|
 |Misstänkta e-postmeddelanden som skickar mönster identifieras|**Risk**|Denna avisering genereras när någon i din organisation har skickat misstänkt e-post och riskerar att begränsas från att skicka e-post. Det här är en tidig varning för problem som kan tyda på att kontot har komprometterats men inte är tillräckligt allvarligt för att begränsa användaren. <p> Även om det är ovanligt kan en notifiering som genereras av den här principen vara en avvikelse. Men det är en bra idé att [kontrol lera om användar kontot är angripet](responding-to-a-compromised-email-account.md).|

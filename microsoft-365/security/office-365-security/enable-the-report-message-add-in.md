@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Lär dig hur du aktiverar rapport tillägget för Outlook och Outlook på webben, för enskilda användare eller hela organisationen.
-ms.openlocfilehash: baed46e500e58702b7031db5aa5ff376a4eafcb5
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 13721317c33cf207f27cd8b98fb6d32864651847
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877759"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865002"
 ---
 # <a name="enable-the-report-message-add-in"></a>Aktivera tillägget för att rapportera meddelande
 
@@ -31,13 +31,13 @@ ms.locfileid: "48877759"
 > [!NOTE]
 > Om du är administratör i en Microsoft 365-organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen för säkerhets & efterlevnad. Mer information finns i [använda administratörs överföring för att skicka misstänkt skräp post, Phish, URL: er och filer till Microsoft](admin-submission.md).
 
-Med rapport tilläggs tillägget för Outlook och Outlook på webben (tidigare Outlook Web App) kan andra personer enkelt rapportera falsk identifiering (god e-post markerat som dåligt) eller falskt negativ (dålig e-post tillåts) till Microsoft och dess dotter bolag för analys. Microsoft använder dessa inlämningar för att förbättra effektiviteten hos e-postskydd.
+Med tilläggen rapport meddelande och rapportera nät fiske funktioner för Outlook och Outlook på webben (tidigare Outlook Web App) kan andra personer enkelt rapportera falsk identifiering (god e-post som är markerad som dålig) eller falskt negativ (dålig e-post) till Microsoft och dess dotter bolag för analys.
 
-Antag till exempel att personer rapporterar många meddelanden som nätfiske. De här informations ytorna i [säkerhets instrument panelen](security-dashboard.md) och andra rapporter. Din organisations säkerhets team kan använda den här informationen som en indikation på att mot nätfiske-principer kan behöva uppdateras. Om personer rapporterar många meddelanden som inte har flaggats som skräp post som icke-skräppost-objekt genom att använda tillägget rapport, kan organisationens säkerhets Team behöva justera [principer för skräp post](configure-your-spam-filter-policies.md).
+Microsoft använder dessa inlämningar för att förbättra effektiviteten hos e-postskydd. Om du till exempel rapporterar många meddelanden som har flaggats som skräp post som icke-skräppost-objekt med hjälp av tillägget rapport, kan organisationens säkerhets Team behöva justera [principer för skräp post](configure-your-spam-filter-policies.md).
 
-Dessutom, om din organisation använder [Microsoft Defender för Office 365 abonnemang 1](office-365-atp.md) eller [abonnemang 2](office-365-ti.md), ger din organisations säkerhets team en viktig information som de kan använda för att granska och uppdatera säkerhets principer.
+Du kan installera ett tilläggsprogram för rapport-eller rapport nät. Om du bara vill att användarna ska rapportera phishing-meddelanden kan du distribuera tillägget rapportera nät fiske i din organisation. Mer information finns i [aktivera tillägget rapportera nät fiske](enable-the-report-phish-add-in.md).
 
-Administratörer kan aktivera tillägget rapportera till organisationen, och enskilda användare kan installera den själva.
+Med tillägget rapport meddelanden kan du rapportera både skräp post och nät fiske meddelanden. Administratörer kan aktivera tillägget rapportera till organisationen, och enskilda användare kan installera den själva.
 
 Om du är en enskild användare kan du [Aktivera tilläggs tillägget för rapportering](#get-the-report-message-add-in-for-yourself).
 
@@ -109,17 +109,17 @@ Information om hur du använder tillägget finns i [använda tillägget rapporte
 
 6. På sidan **Konfigurera tillägg** som visas konfigurerar du följande inställningar:
 
-   - **Tilldelade användare** : Välj något av följande värden:
+   - **Tilldelade användare**: Välj något av följande värden:
 
      - **Alla** (standard)
      - **Specifika användare/grupper**
      - **Bara jag**
 
-   - **Distributions metod** : Välj något av följande värden:
+   - **Distributions metod**: Välj något av följande värden:
 
-     - **Åtgärdat (standard)** : tillägget distribueras automatiskt till de angivna användarna och de kan inte tas bort.
-     - **Tillgängligt** : användarna kan installera **tillägget via** \> **Skaffa** tillägg som \> **hanteras av administratören**.
-     - **Valfritt** : tillägget distribueras automatiskt till angivna användare, men de kan välja att ta bort det.
+     - **Åtgärdat (standard)**: tillägget distribueras automatiskt till de angivna användarna och de kan inte tas bort.
+     - **Tillgängligt**: användarna kan installera **tillägget via** \> **Skaffa** tillägg som \> **hanteras av administratören**.
+     - **Valfritt**: tillägget distribueras automatiskt till angivna användare, men de kan välja att ta bort det.
 
    ![Konfigurera tilläggs Sidan](../../media/configure-add-in.png)
 

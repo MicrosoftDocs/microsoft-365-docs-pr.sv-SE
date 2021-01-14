@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: Administratörer kan lära sig att identifiera varför och hur ett nät fiske meddelande gick igenom i Microsoft 365 och vad man bör göra för att förhindra fler nät fiske meddelanden i framtiden.
-ms.openlocfilehash: 8a2c63d499317427b921d7786dd60b3ad4f18c42
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 758945c64966763991bfdfba0d70a60ca1c2ddca
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615390"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865050"
 ---
 # <a name="tune-anti-phishing-protection"></a>Finjustera skydd mot nätfiske
 
@@ -83,7 +83,7 @@ Om du vill kontrol **lera att det finns ett meddelande** om att du har hoppat ö
 
 - När det är möjligt rekommenderar vi att du skickar e-post till din domän direkt till Microsoft 365. Med andra ord pekar du din Microsoft 365-domäns MX-post till Microsoft 365. Exchange Online Protection (EOP) ger det bästa skyddet för dina moln användare när deras e-post levereras direkt till Microsoft 365. Om du måste använda ett system för e-posthygien från tredje part framför EOP kan du använda förbättrad filtrering för kopplingar. Anvisningar finns i [utökad filtrering för kopplingar i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- Användarna bör [rapportera meddelanden](enable-the-report-message-add-in.md) till Microsoft, vilket kan träna vårt system. Administratörer bör också utnyttja [administrativa](admin-submission.md) uppgifter.
+- Användare bör använda [tillägget rapport](enable-the-report-message-add-in.md) eller [rapportens nätfiske](enable-the-report-phish-add-in.md) för att rapportera meddelanden till Microsoft, som kan träna vårt system. Administratörer bör också utnyttja [administrativa](admin-submission.md) uppgifter.
 
 - Multifaktorautentisering är ett bra sätt att förhindra att konton skadas. Du bör starkt överväga att aktivera MFA för alla dina användare. Börja med att aktivera MFA för dina mest känsliga användare (administratörer, chefer o.s.v.) innan du aktiverar MFA för alla. Anvisningar finns i [Konfigurera multifaktorautentisering](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 

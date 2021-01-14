@@ -1,6 +1,6 @@
 ---
-title: Identitets-och enhets åtkomst principer för att tillåta gäst och extern B2B-åtkomst-Microsoft 365 för företag | Microsoft-dok
-description: Här beskrivs rekommenderade villkor för villkorlig åtkomst och relaterade principer för att skydda gäst-och externa användare.
+title: Identitets-och enhets åtkomst principer för att tillåta gäst och extern användare B2B-åtkomst-Microsoft 365 för företag | Microsoft-dok
+description: Här beskrivs Rekommenderad villkorlig åtkomst och relaterade principer för att skydda åtkomst till gäster och externa användare.
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.author: josephd
@@ -17,24 +17,24 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 376845d8e3657b91b9efe0357e94f4bec3a84078
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 4ee6cb93e5c943d704950e28ba4dc70a246429a6
+ms.sourcegitcommit: 89097fb648987567b9493b9d94c85c5990562874
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688291"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49845101"
 ---
-# <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Principer för att tillåta gäst-och extern B2B-åtkomst
+# <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Principer för att tillåta gäst åtkomst och åtkomst till externa användare
 
-I den här artikeln beskrivs hur du justerar de rekommenderade vanliga principer för identitets-och enhets åtkomst för att tillåta åtkomst för gäst och externa användare som har ett Azure Active Directory (Azure AD)-konto. Den här vägledningen bygger på [vanliga principer för identitets-och enhets åtkomst](identity-access-policies.md).
+I den här artikeln beskrivs hur du justerar Rekommenderad enhet och identitets åtkomst för att tillåta åtkomst för gäster och externa användare som har ett Azure Active Directory (Azure AD)-konto. Den här vägledningen bygger på [vanliga principer för identitets-och enhets åtkomst](identity-access-policies.md).
 
-Dessa rekommendationer är avsedda att tillämpas på den **ursprungliga** skydds nivån. Men du kan också justera rekommendationerna baserat på hur många olika behov du har för **känsligt** och **starkt reglerat** skydd.
+Dessa rekommendationer är avsedda att tillämpas på den **ursprungliga** skydds nivån. Men du kan också justera rekommendationerna baserat på dina specifika behov för **känsligt** och **starkt reglerat** skydd.
 
-Om du tillhandahåller en sökväg för B2B-konton för att autentisera med din Azure AD-klient får inte dessa konton åtkomst till hela din miljö. B2B-användare och deras konton har till gång till resurser som delas med dem (till exempel filer) inom de tjänster som beviljats i principer för villkorsstyrd åtkomst.
+Om du tillhandahåller en sökväg för B2B-konton för att autentisera med din Azure AD-klient får inte dessa konton åtkomst till hela din miljö. B2B-användare och deras konton har till gång till tjänster och resurser, till exempel filer, som delas med dem via princip för villkorsstyrd åtkomst.
 
-## <a name="updating-the-common-policies-to-allow-and-protect-guest-and-external-access"></a>Uppdatera vanliga principer för att tillåta och skydda gäst och extern åtkomst
+## <a name="updating-the-common-policies-to-allow-and-protect-guests-and-external-user-access"></a>Uppdatera gemensamma principer för att tillåta och skydda gäster och åtkomst till externa användare
 
-För att skydda gäst-och extern åtkomst med Azure AD B2B-konton illustrerar följande diagram vilka principer du kan lägga till eller uppdatera från principer för åtkomst till gemensam identitet och enhet.
+Det här diagrammet visar vilka principer du kan lägga till eller uppdatera bland de vanliga åtkomst principerna för identitet och enheter, för B2B-gäst och åtkomst via extern användare.
 
 [![Sammanfattning av princip uppdateringar för att skydda gäst åtkomst](../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
 
@@ -44,41 +44,41 @@ I följande tabell visas de principer som du måste skapa och uppdatera. Gemensa
 
 |Skydds nivå|Principerna|Mer information|
 |---|---|---|
-|**Grundläggande**|[Kräv MFA alltid för gäst-och externa användare](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Skapa den här nya principen och konfigurera: <ul><li>För **uppgifter > användare och grupper > inkludera** väljer **du Välj användare och grupper** och sedan **alla gäst-och externa användare**.</li><li>För **tilldelningar > villkor > inloggning** ska du låta alla alternativ vara avmarkerade så att multifaktorautentisering alltid används (MFA).</li></ul>|
-||[Kräv MFA när en inloggnings risk är *mellan* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Ändra den här principen så att den exkluderar gäst-och externa användare.|
-||[Kräv kompatibla PC-datorer](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Ändra den här principen så att den exkluderar gäst-och externa användare.|
+|**Grundläggande**|[Kräv MFA alltid för gäster och externa användare](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Skapa den här nya principen och konfigurera: <ul><li>För **uppgifter > användare och grupper > inkludera** väljer **du Välj användare och grupper** och sedan **alla gäst-och externa användare**.</li><li>För **tilldelningar > villkor > inloggning** ska du låta alla alternativ vara avmarkerade så att multifaktorautentisering alltid används (MFA).</li></ul>|
+||[Kräv MFA när en inloggnings risk är *mellan* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Ändra den här principen för att exkludera gäster och externa användare.|
+||[Kräv kompatibla PC-datorer](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Ändra den här principen för att exkludera gäster och externa användare.|
 
-Om du vill inkludera eller exkludera gäst-och externa användare i principer för villkorsstyrd åtkomst för **uppgifter > användare och grupper > inkludera** eller **exkludera** markerar du **alla gäst-och externa användare**.
+Om du vill inkludera eller exkludera gäster och externa användare i principer för villkorsstyrd åtkomst för **uppgifter > användare och grupper > inkludera** eller **exkludera** markerar du **alla gäster och externa användare**.
 
-![skärm bild av kontroller för att exkludera gäst och externa användare](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
+![skärm bild av kontroller för att exkludera gäster och externa användare](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
 ## <a name="more-information"></a>Mer information
 
-### <a name="guest-and-external-access-with-microsoft-teams"></a>Gäst och extern åtkomst med Microsoft Teams
+### <a name="guests-and-external-user-access-with-microsoft-teams"></a>Gäster och åtkomst till externa användare med Microsoft Teams
 
-Microsoft Teams definierar följande:
+Microsoft Teams definierar följande användare:
 
-- **Gäst åtkomst** använder ett Azure AD B2B-konto som kan läggas till som medlem i ett team och få åtkomst till kommunikationen och resurserna i teamet.
+- **Gäst åtkomst** använder ett Azure AD B2B-konto som kan läggas till som medlem i ett team och ha åtkomst till kommunikationen och resurserna i teamet.
 
-- **Extern åtkomst** är för en extern användare som inte har ett B2B-konto. Extern åtkomst kan inkludera inbjudningar och deltagande i samtal, chattar och möten, men inte grupp medlemskap och åtkomst till teamens resurser.
+- **Extern åtkomst** är för en extern användare som inte har ett B2B-konto. Åtkomst till externa användare inkluderar inbjudningar, samtal, chattar och möten, men inkluderar inte grupp medlemskap och åtkomst till teamens resurser.
 
-Mer information finns i [jämförelsen mellan gäst och extern åtkomst för Teams](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
+Mer information finns i [jämförelsen mellan gäster och externa användar åtkomst för Teams](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
 
-Se [Policy rekommendationer för att skydda Teams, grupper och filer](teams-access-policies.md) för att få mer information om att skydda identitets-och enhets åtkomst principer för Teams.
+Mer information om hur du skyddar identitets-och åtkomst principer för grupper finns i [Policy rekommendationer för att skydda Teams, grupper och filer](teams-access-policies.md).
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>Kräv MFA alltid för gäst-och externa användare
 
-Den här principen ber dig registrera gäster för MFA i klient organisationen, oavsett om de är registrerade för MFA i sin hem klient organisation. När du får åtkomst till resurser i klient organisationen måste gäst och externa användare använda MFA för varje begäran.
+Den här principen ber dig registrera gäster för MFA i klient organisationen, oavsett om de är registrerade för MFA i sin hem klient organisation. När du får åtkomst till resurser i klient organisationen måste gäster och externa användare använda MFA för varje begäran.
 
-### <a name="excluding-guest-and-external-users-from-risk-based-mfa"></a>Exkluderar gäst och externa användare från riskfyllda MFA
+### <a name="excluding-guests-and-external-users-from-risk-based-mfa"></a>Exkludera gäster och externa användare från riskfyllda MFA
 
-Trots att organisationer kan använda riskbaserade principer för B2B-användare som använder Azure AD Identity Protection finns det begränsningar i implementeringen av Azure AD Identity Protection för B2B-samarbets användare i en resurs katalog på grund av deras identitet i sin Hem Katalog. På grund av dessa begränsningar rekommenderar Microsoft att du exkluderar gäst användare från riskfyllda principer och kräver att dessa användare alltid använder MFA.
+Trots att organisationer kan använda riskbaserade principer för B2B-användare som använder Azure AD Identity Protection finns det begränsningar i implementeringen av Azure AD Identity Protection för B2B-samarbets användare i en resurs katalog på grund av deras identitet i sin Hem Katalog. På grund av dessa begränsningar rekommenderar Microsoft att du exkluderar gäster från riskfyllda MFA-principer och kräver att dessa användare alltid använder MFA.
 
 Mer information finns i [begränsningar för identitets skydd för B2B-samarbets användare](https://docs.microsoft.com/azure/active-directory/identity-protection/concept-identity-protection-b2b#limitations-of-identity-protection-for-b2b-collaboration-users).
 
-### <a name="excluding-guest-and-external-users-from-device-management"></a>Exkludera gäst-och externa användare från enhets hantering
+### <a name="excluding-guests-and-external-users-from-device-management"></a>Exkludera gäster och externa användare från enhets hantering
 
-Endast en organisation kan hantera en enhet. Om du inte utesluter gäst-och externa användare från principer som kräver att enheter efterlevs blockerar dessa användare.
+Endast en organisation kan hantera en enhet. Om du inte utesluter gäster och externa användare från principer som kräver att enheter efterlevs blockerar dessa användare.
 
 ## <a name="next-step"></a>Nästa steg
 

@@ -1,6 +1,6 @@
 ---
 title: Nödvändigt arbete för implementering av identitets-och enhets åtkomst principer – Microsoft 365 för företag | Microsoft-dok
-description: Beskriver förutsättningarna innan du implementerar principer och konfigurationer för identitets-och enhets åtkomst.
+description: I den här artikeln beskrivs förutsättningar som måste uppfyllas för att du ska kunna använda principer och konfigurationer för identitets-och enhets åtkomst.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
@@ -18,20 +18,20 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: bd0b4efb1281d467a61e4aee792b507f0ca44181
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: eb07fe45c169d81559e4676f86abde5c6600a185
+ms.sourcegitcommit: 89097fb648987567b9493b9d94c85c5990562874
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616566"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49845090"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Nödvändigt arbete för implementering av identitets-och enhets åtkomst principer
 
-I den här artikeln beskrivs förutsättningar som måste implementeras innan du kan distribuera Rekommenderad identitet och enhets åtkomst principer. I den här artikeln beskrivs också rekommenderade standardinställningar för konfigurering av plattformar för att tillhandahålla den bästa enkel inloggnings upplevelsen (SSO) för användarna, samt de tekniska kraven för villkorlig åtkomst.
+I den här artikeln beskrivs kraven på administratörer måste uppfylla Rekommenderad identitet och åtkomst principer och för att använda villkorlig åtkomst. Det diskuterar också rekommenderade standardinställningar för konfigurering av klient plattformar för den bästa funktionen för enkel inloggning (SSO).
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Innan du implementerar de rekommenderade principer för identitet och enheter finns det flera förutsättningar för att organisationen måste mötas för dessa identitets-och autentiseringsdata för Microsoft 365 och Office 365:
+Innan du använder de identitets-och enhets åtkomst principer som rekommenderas måste din organisation uppfylla alla krav. Kraven är olika för de olika identitets-och autentiseringsmetoderna:
 
 - Endast molnet
 - Hybrid med lösenord för lösen ords-hash (PHS)
