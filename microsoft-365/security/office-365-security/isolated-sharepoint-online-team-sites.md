@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: Lär dig mer om isolerade SharePoint Online-gruppwebbplatser, inklusive användning, krav och funktioner som de kan användas med.
-ms.openlocfilehash: e4e45c8adffcf86d56a71e5b9935e634f2de9254
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 55bdf2999610310babb60b6938afb97732e5a7a0
+ms.sourcegitcommit: 89097fb648987567b9493b9d94c85c5990562874
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616458"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49845097"
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>Isolerade SharePoint Online-gruppwebbplatser
 
@@ -32,9 +32,9 @@ ms.locfileid: "49616458"
 
  **Sammanfattning:** Lär dig mer om hur du använder isolerade SharePoint Online-gruppwebbplatser.
 
-SharePoint Online-gruppwebbplatser är ett enkelt sätt att snabbt skapa ett utrymme för samarbete med anteckningar, dokument, artiklar, kalender och andra resurser i Microsoft Office 365. SharePoint Online-gruppwebbplatser baseras på en Microsoft 365-grupp och har en förenklad administrationsmodell som tillåter öppet samarbete med en privat uppsättning gruppmedlemmar eller med hela organisationen. Med en standardinställd SharePoint Online-gruppwebbplats kan medlemmar i Microsoft 365-gruppen bjuda in andra användare och styra behörighetsinställningar.
+SharePoint Online-gruppwebbplatser är ett enkelt sätt att snabbt skapa en plats för samarbete. Användare kan arbeta tillsammans med anteckningar, dokument, artiklar, en kalender och andra resurser i Microsoft Office 365. SharePoint Online-gruppwebbplatser baseras på en Microsoft 365-grupp och har en förenklad administrationsmodell som tillåter öppet samarbete med en privat uppsättning gruppmedlemmar eller med hela organisationen. Med en standardinställd SharePoint Online-gruppwebbplats kan medlemmar i Microsoft 365-gruppen bjuda in andra användare och styra behörighetsinställningar.
 
-Men i vissa fall kan du vilja skapa en SharePoint Online-gruppwebbplats för samarbete med strängare kontroll av behörigheterna för den webbplatsen genom gruppmedlemskap och SharePoint Online-behörighetsnivåer, som bara hanteras av SharePoint-administratörer. Vi kallar det här för en isolerad webbplats, som isoleras till den uppsättning användare som samarbetar, visar dess innehåll eller administrerar webbplatsen. Du kan behöva en isolerad webbplats av följande anledningar:
+Ibland måste dock åtkomsten till webbplatser styras av gruppmedlemskap och behörighetsnivåer i SharePoint Online som hanteras av SharePoint-administratörer. Vi kallar det här för en isolerad webbplats, som isoleras till den uppsättning användare som samarbetar, visar dess innehåll eller administrerar webbplatsen. Du kan behöva en isolerad webbplats av följande anledningar:
 
 - Ett hemligt projekt i organisationen.
 

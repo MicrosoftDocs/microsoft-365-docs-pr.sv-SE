@@ -521,6 +521,8 @@
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: Aktivera tillägget för att rapportera meddelande
               href: ./office-365-security/enable-the-report-message-add-in.md
+            - name: Aktivera tillägget för att rapportera nätfiske
+              href: ./office-365-security/enable-the-report-phish-add-in.md
             - name: Installera och använda tillägget för rapportering av skräppost
               href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
             - name: E-postflödesregler (transportregler) i fristående EOP
