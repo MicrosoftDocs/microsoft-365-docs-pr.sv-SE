@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du distribuerar team med skydd för mycket känslig data.
-ms.openlocfilehash: 6354de5a37547d14b16a4d6a0857ddc390d531e6
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 045f1b1d1ebf03eb70554dc5964acb0a12e0060f
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750815"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870857"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Konfigurera team med skydd för mycket känslig data
 
@@ -63,7 +63,7 @@ Att skapa en känslighetsetikett
 1. Öppna [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com).
 2. Under **Lösningar** klickar du på **Informationsskydd**.
 3. Klicka på **Skapa en etikett**.
-4. Namnge etiketten. Vi föreslår **Känslig**, men du kan välja ett annat namn om det redan används.
+4. Namnge etiketten. Vi föreslår **Mycket känslig**, men du kan välja ett annat namn om denna redan används.
 5. Lägg till ett visningsnamn och en beskrivning och klicka på **Nästa**.
 6. På sidan **Definiera omfång för etikett** väljer du **filer och e-postmeddelanden** samt **grupper och webbplatser** och klickar på **Nästa**.
 7. På sidan **Välj säkerhetsinställningar för filer och e-postmeddelanden** väljer du **Kryptera filer och e-postmeddelande** och klickar på **Nästa**.

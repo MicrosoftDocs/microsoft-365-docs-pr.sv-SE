@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du använder DomainKeys identifierad e-post (DKIM) med Microsoft 365 för att säkerställa att meddelanden som skickas från din anpassade domän är betrodda av mål-e-postsystemet.
-ms.openlocfilehash: f8ae6334a078d635de069d2fe7af351ad42d8df3
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 0c77798f0bf4b5dedfa5023eaa0b4de4ab8c5b64
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615366"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49871003"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Använda DKIM för att validera utgående e-post som skickas från din anpassade domän
 
@@ -209,6 +209,10 @@ När du har publicerat CNAME-posterna i DNS är du redo att aktivera DKIM-signer
 5. Välj domänen som du vill aktivera DKIM för och sedan går du till **Sign messages for this domain with DKIM signatures** (Signera meddelanden för domänen ed DKIM-signaturer) och väljer **Aktivera**. Upprepa det här steget för varje anpassad domän.
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>För att aktivera DKIM-signering för din anpassade domän med PowerShell
+
+> [!IMPORTANT]
+>:::image type="content" source="../../media/DKIMNoKeysSavedForThisDomain.PNG" alt-text="Felet &quot;Inga DKIM-nycklar sparade för den här domänen.&quot;":::
+> Om du konfigurerar DKIM för första gången och ser felet "Inga DKIM-nycklar sparade för den här domänen." slutför kommandot i steg 2 nedan (till exempel *Set-DkimSigningConfig -Identity contoso.com -Enabled $true*) för att se nyckeln.
 
 1. [Ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 

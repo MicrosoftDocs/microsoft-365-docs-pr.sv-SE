@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratörsroller mappar till affärsfunktioner och ger behörighet att utföra särskilda uppgifter i administrationscentret. Tjänsteadministratören kan till exempel öppna supportbiljetter via administratörscentret.
-ms.openlocfilehash: 774edf1a024bd7aab7f35d5635c84b355fc0ef5a
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: ddea8a06af2b529a369ea045913b639b84c6f9d4
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682663"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49867988"
 ---
 # <a name="about-admin-roles"></a>Om administratörsroller
 
@@ -88,9 +88,9 @@ Om du arbetar med en Microsoft-partner kan du tilldela dem administratörsroller
   
 Ett partnerföretag kan tilldela följande roller: 
   
-- **Fullständig administrering** Behörigheter som en global administratör, förutom behörighet att hantera flerfaktorautentisering via partnercentret.
+- **Administratörsagent** Behörigheter som en global administratör, förutom behörighet att hantera flerfaktorautentisering via partnercentret.
 
-- **Begränsad administration** Behörigheter som en supportadministratör.
+- **Supportagent** Behörigheter som en supportadministratör.
 
 För att partnerföretaget ska kunna tilldela de här rollerna till användare måste du lägga till partnern som delegerad administratör i kontot. Initiativet till en sådan här process tas av en auktoriserad partner. Partnern skickar ett e-postmeddelande till dig med frågan om du vill ge dem behörighet att fungera som delegerad administratör. Anvisningar finns i [Auktorisera eller ta bort partnerrelationer](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
   

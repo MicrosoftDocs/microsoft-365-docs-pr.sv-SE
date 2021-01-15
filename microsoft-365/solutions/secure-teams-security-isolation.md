@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du skapar ett team med en unik känslighetsetikett för säkerhet.
-ms.openlocfilehash: 03252cad8449ee83cd757fac3ae74db6df68bcfe
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: d5cfe33d4f254832ccf26552d8ca392cf1dc440c
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751149"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870985"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Konfigurera en team med säkerhetsisolering
 
@@ -106,7 +106,7 @@ Att skapa en känslighetsetikett
 1. Öppna [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com).
 2. Under **Lösningar** klickar du på **Informationsskydd**.
 3. Klicka på **Skapa en etikett**.
-4. Namnge etiketten. Vi föreslår **Känslig**, men du kan välja ett annat namn om det redan används.
+4. Namnge etiketten. Vi föreslår att du namnger det efter teamet som du ska använda det med.
 5. Lägg till ett visningsnamn och en beskrivning och klicka på **Nästa**.
 6. På sidan **Definiera omfång för etikett** väljer du **filer och e-postmeddelanden** samt **grupper och webbplatser** och klickar på **Nästa**.
 7. På sidan **Välj säkerhetsinställningar för filer och e-postmeddelanden** väljer du **Kryptera filer och e-postmeddelande** och klickar på **Nästa**.
