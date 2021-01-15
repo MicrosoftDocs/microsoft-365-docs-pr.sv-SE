@@ -19,21 +19,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig att använda en angrepps Simulator för att köra simulerade nät för nätfiske och lösen ord i Microsoft 365 E5-eller Microsoft Defender för Office 365 plan 2-organisationer.
-ms.openlocfilehash: 2ffec891f7b1021f3c6c51b003c78aacb0ec0d6a
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: f07cbbdac5d9b988301e9dfc3cb4446f7b44fca6
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794538"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49871103"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Angrepps Simulator i Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 Om din organisation har Microsoft Defender för Office 365 abonnemang 2, som innehåller [hot undersökningar och svars funktioner](office-365-ti.md), kan du använda angrepps simulatorn i säkerhets & Compliance Center för att köra realistiska angrepp i din organisation. Dessa simulerade attacker kan hjälpa dig att identifiera och hitta sårbara användare innan en verklig attack påverkar din botten linje. Läs den här artikeln om du vill veta mer.
-
-> [!NOTE]
-> Information om attack simulering och utbildning relaterade data lagras med andra kunddata för Microsoft 365-tjänster. Mer information finns i [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations).
 
 > [!TIP]
 > Utbildning för attack simulering är tillgängligt för offentlig för hands version i Microsoft 365 säkerhets Center. Ta en titt på [simulera ett nät fiske angrepp med Microsoft Defender för Office 365](attack-simulation-training.md) för mer information.
@@ -49,6 +46,8 @@ Om din organisation har Microsoft Defender för Office 365 abonnemang 2, som inn
 - Ditt konto måste konfigureras för multifaktorautentisering (MFA) för att skapa och hantera kampanjer i angrepps Simulator. Anvisningar finns i [Konfigurera multifaktorautentisering](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 - Nät fiske kampanjer samlar in och bearbetar händelser i 30 dagar. Historiska kampanj data kommer att vara tillgängliga i upp till 90 dagar efter att du har lanserat kampanjen.
+
+- Information om attack simulering och utbildning relaterade data lagras med andra kunddata för Microsoft 365-tjänster. Mer information finns i [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations).
 
 - Det finns inga motsvarande PowerShell-cmdlets för angrepps Simulator.
 

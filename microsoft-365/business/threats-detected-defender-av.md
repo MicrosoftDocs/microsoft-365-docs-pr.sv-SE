@@ -1,5 +1,5 @@
 ---
-title: Hot upptäckta av Microsoft Defender Antivirus
+title: Hot som upptäcks av Microsoft Defender Antivirus
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -15,14 +15,14 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Lär dig hur Microsoft Defender Antivirus skyddar dina Windows-enheter från program varu hot, till exempel virus, skadlig program vara och spionprogram.
-ms.openlocfilehash: e3c8a1071625bba41af5f3cccd50f8484acac18d
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 1653aef6967cdf76e6e19acda158fb29758280a8
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376735"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870905"
 ---
-# <a name="threats-detected-by-microsoft-defender-antivirus"></a>Hot upptäckta av Microsoft Defender Antivirus
+# <a name="threats-detected-by-microsoft-defender-antivirus"></a>Hot som upptäcks av Microsoft Defender Antivirus
 
 Microsoft Defender Antivirus skyddar dina Windows-enheter från program varu hot, till exempel virus, skadlig program vara och spionprogram.
 
@@ -64,9 +64,12 @@ När hot identifieras av Microsoft Defender Antivirus händer följande:
 
 - Användare får [aviseringar i Windows](https://support.microsoft.com/windows/8942c744-6198-fe56-4639-34320cf9444e). 
 - Identifieringar visas i Windows- [säkerhetsprogrammet](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) på sidan **skydds historik** .  
-- Om du har [skyddat dina Windows 10-enheter](secure-win-10-pcs.md) och [registrerat dem i Intune](/mem/intune/enrollment/windows-enrollment-methods)visas hot identifiering och insikter i <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrations centret för Microsoft 365</a> på sidan **aktiva hot** , som du kommer åt från **Microsoft Defender Antivirus** -kortet på **Start** sidan (eller från navigerings fönstret genom att välja **hälso skydd**  >  **& antivirus program**).
+- Om du har [skyddat dina Windows 10-enheter](secure-win-10-pcs.md) och [registrerat dem i Intune](/mem/intune/enrollment/windows-enrollment-methods), och din organisation har 800 eller färre registrerade enheter visas hot identifieringar och insikter i <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrations centret för Microsoft 365</a> på sidan **hot och Antivirus** , som du kommer åt från **Microsoft Defender Antivirus** -kortet på **Start** sidan (eller från navigerings fönstret genom att välja **hälso skydd**  >  **& antivirus program**).
+
+    Om organisationen har fler än 800 enheter registrerade i Intune uppmanas du att Visa hot identifieringar och insikter från [Microsoft slut punkts hanteraren](/mem/endpoint-manager-overview) i stället för från sidan **hot och Antivirus** .
+ 
     > [!NOTE]
-    > **Microsoft Defender Antivirus** -kortet och **aktiva hot** -sidan distribueras i faser, så du kanske inte har omedelbar åtkomst till dem.
+    > **Microsoft Defender Antivirus** -kortet och **Antivirus** sidan är distribuerade i faser, så du kanske inte har omedelbar åtkomst till dem.
 
 I de flesta fall behöver användarna inte vidta några ytterligare åtgärder. När en skadlig fil eller ett program identifieras på en enhet, blockerar Microsoft Defender Antivirus den och förhindrar att den körs. Dessutom kan nyligen upptäckta hot läggas till i Antivirus-och antimalware-motorn så att andra enheter och användare skyddas.  
 

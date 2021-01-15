@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 88a832f6c4e17756bfb25ef5cb7c4c5ecedaf2c0
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: ca919798480698f92bba094c3755b3eccce30888
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794394"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49867976"
 ---
 # <a name="adjust-settings-after-enrollment"></a>Justera inställningarna efter registrering
 
@@ -32,9 +32,9 @@ När du har registrerat dig på Microsoft Managed Desktop kan vissa hanterings i
 
 - Distributions profil för automatisk pilot: om du använder några principer för automatisk pilot uppdaterar du var och en för att exkludera den **moderna arbets ytan-alla** Azure AD-grupper. Om du vill uppdatera dem väljer du den **moderna arbets ytan** i avsnittet **undantagna grupper** under **TILLDELNINGar**-alla Azure AD-grupper som har skapats under Microsoft Managed Desktop-registrering. Microsoft Managed Desktop har också skapat en autopilot-profil, som kommer att ha "modern arbets plats" i namnet (den **moderna arbets ytans pilot profil**). När du uppdaterar dina egna autopilot-profiler bör du kontrol lera att du *inte* utesluter de **moderna arbets Stations enheterna-alla** Azure AD-grupper från den **moderna arbets platsen automatisk pilot-profil** som har skapats av Microsoft Managed Desktop.
 
-- Principer för villkorsstyrd åtkomst: om du har skapat villkorsstyrda åtkomst principer utesluter du den **moderna arbets plats tjänstens konton** Azure AD-grupp. Anvisningar finns i [villkorlig åtkomst: användare och grupper](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups). Microsoft Managed Desktop har också skapat vissa principer för villkorsstyrd åtkomst, vilka alla har "modern arbets plats" i namnet (till exempel **modern arbets plats säker arbets Station**). När du uppdaterar dina egna principer för villkorsstyrd åtkomst bör du kontrol lera att du *inte* utesluter den **moderna arbets ytans enheter-alla** Azure AD-grupper från alla principer som skapas av Microsoft Managed Desktop.
+- Principer för villkorsstyrd åtkomst: om du skapar nya villkorsstyrda åtkomst principer för Azure AD, Microsoft Intune eller Microsoft Defender för slut punkt efter Microsoft Managed Desktop-registrering kan du utesluta den **moderna arbets plats tjänsten** Azure AD-gruppen från dem. Anvisningar finns i [villkorlig åtkomst: användare och grupper](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups). Microsoft Managed Desktop har separata villkorsstyrda åtkomst principer för att begränsa åtkomsten till dessa konton. Om du vill granska villkorlig åtkomst policy för Microsoft Managed Desktop (**modern arbets plats – säker arbets Station**) går du till Microsoft slut punkts hanteraren och navigerar till **villkorlig åtkomst** i **Endpoint Security**. Ändra inte några principer för villkorlig åtkomst för Azure AD som har skapats av Microsoft Managed Desktop med "modern arbets plats" i namnet.
 
-- Multifaktorautentisering: kontrol lera att alla principer för villkorsstyrd åtkomst som kräver multifaktorautentisering exkluderar den **moderna arbets plats tjänstens konton** Azure AD-grupp. Mer information finns i [principer för villkorsstyrd åtkomst](../get-ready/readiness-assessment-fix.md#conditional-access-policies) och [villkorsstyrd åtkomst: Kräv MFA för alla användare](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
+- Multifaktorautentisering: om du skapar eventuella nya autentiseringskrav i villkor för villkorsstyrd åtkomst för Azure AD, Intune eller Microsoft Defender för slut punkt efter Microsoft Managed Desktop-registrering, utesluter den **moderna arbets plats tjänsten** Azure AD-gruppen. Anvisningar finns i [villkorlig åtkomst: användare och grupper](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups). Microsoft Managed Desktop har separata villkorsstyrda åtkomst principer för att begränsa åtkomsten till medlemmar i gruppen. Om du vill granska villkorlig åtkomst policy för Microsoft Managed Desktop (**modern arbets plats**) går du till Microsoft slut punkts hanteraren och navigerar till **villkorlig åtkomst** i **Endpoint Security**. 
 
 - Windows 10 – uppdatera signal: för en Windows 10-uppdaterings ring som du har skapat exkluderar du de **moderna arbets platserna-alla** Azure AD-grupper från varje princip. Anvisningar finns i [skapa och tilldela uppdaterings ringar](https://docs.microsoft.com/mem/intune/protect/windows-10-update-rings#create-and-assign-update-rings). Microsoft Managed Desktop har också skapat vissa uppdaterings samtals principer, vilka alla har "modern arbets plats" i namnet (till exempel **moderna arbets plats uppdaterings princip [breda]**, **moderna arbets plats uppdaterings princip [snabbt]**, **modern arbets plats uppdaterings princip [First]** och **moderna arbets plats uppdaterings princip [test]**). När du uppdaterar dina egna principer bör du kontrol lera att du *inte* utesluter de **moderna arbets Stations enheterna-alla** Azure AD-grupper från dem som hanteras av Microsoft.
 

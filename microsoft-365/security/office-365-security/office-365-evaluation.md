@@ -17,19 +17,19 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: abb33b85717e63cb78a2b1edfd86584fd165a71f
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: f8f105215b23ec49318c133714e758e2a2a9c1df
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701021"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870927"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Utvärdera Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Utvärdera Microsoft Defender för Office 365 kommer snart att vara i offentlig för hands version. Denna för hands version tillhandahålls utan service nivå avtal. Vissa funktioner kanske inte stöds eller så har de begränsad kapacitet.
+> Utvärderings versionen av Microsoft Defender för Office 365 är i offentlig för hands version. Denna för hands version tillhandahålls utan service nivå avtal. Vissa funktioner kanske inte stöds eller så har de begränsad kapacitet.
 
 Genom att utföra en omfattande utvärdering av en säkerhets produkt kan du få ett välinformerade beslut om uppgraderingar och köp. Det hjälper till att pröva säkerhets produktens kapacitet för att bedöma hur den kan hjälpa din säkerhets åtgärd i sina dagliga uppgifter.
 
