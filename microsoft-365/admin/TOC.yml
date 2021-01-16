@@ -24,6 +24,8 @@
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: Skydda Windows 10-datorer
           href: ../business/secure-win-10-pcs.md
+        - name: Ladda ned programvara och produktnycklar
+          href: setup/download-software-licenses-csp.md
         - name: Installera Office-appar
           href: setup/install-applications.md
         - name: Konfigurera Windows-enheter
@@ -360,12 +362,32 @@
               href: basic-mobility-security/overview.md
             - name: Jämför grundläggande Mobility and Security och Intune
               href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
-            - name: Vanliga frågor och svar om grundläggande Mobility and Security
-              href: basic-mobility-security/frequently-asked-questions.md
             - name: Funktioner i grundläggande Mobility and Security
               href: basic-mobility-security/capabilities.md
-            - name: Jämför grundläggande Mobility and Security och Intune
-              href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
+            - name: Konfigurera grundläggande Mobility and Security
+              href: basic-mobility-security/set-up.md
+            - name: Skapa säkerhetsprinciper för enheter
+              href: basic-mobility-security/create-device-security-policies.md
+            - name: Skapa ett APN-certifikat för iOS-enheter
+              href: basic-mobility-security/create-an-apns-certificate-for-ios-devices.md
+            - name: Hantera enhetsåtkomstinställningar
+              href: basic-mobility-security/manage-device-access-settings.md
+            - name: Få information om hanterade enheter
+              href: basic-mobility-security/get-details-about-managed-devices.md
+            - name: Hantera registrerade enheter
+              href: basic-mobility-security/manage-enrolled-devices.md
+            - name: Registrera din mobila enhet
+              href: basic-mobility-security/enroll-your-mobile-device.md
+            - name: Sekretess och säkerhet
+              href: basic-mobility-security/privacy-and-security.md
+            - name: Vanliga frågor och svar
+              href: basic-mobility-security/frequently-asked-questions.md
+            - name: Rensa mobila enheter
+              href: basic-mobility-security/wipe-mobile-device.md
+            - name: Stäng av grundläggande Mobility and Security
+              href: basic-mobility-security/turn-off.md
+            - name: Felsökning
+              href: basic-mobility-security/troubleshoot.md
     - name: Arbeta med kunder
       href: work-with-customers/index.yml
       items:
