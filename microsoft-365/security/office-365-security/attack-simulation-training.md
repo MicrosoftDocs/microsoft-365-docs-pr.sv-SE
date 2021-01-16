@@ -11,18 +11,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Administratörer kan lära sig hur man simulerar nät fiske attacker och tränar användarna att förhindra nätfiske genom att använda utbildning för attack simulering i Microsoft Defender för Office 365.
-ms.openlocfilehash: dfdd3c93afb1b0fb30cc5b5affc040a369c29447
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 56ee8b7c11187ee6883bffc9b41961d2783e1ff4
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870973"
+ms.locfileid: "49877158"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simulera nätfiske-attack
 
 Utbildning för angrepps simulering i Microsoft Defender för Office 365 kan du köra säkra cyberattack-simuleringar på din organisation för att testa din säkerhets policy och dina arbets rutiner, samt för att träna dina anställda att öka sin medvetenhet och minska deras känslighet för attacker. I den här artikeln får du lära dig hur du skapar en simulerad nätfiske-attack med utbildning för att simulera attacker.
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Information om hur du kommer igång med utbildning för att förbereda attacker finns i [komma igång med att använda funktionen för simulering av attacker](attack-simulation-training-get-started.md).
 

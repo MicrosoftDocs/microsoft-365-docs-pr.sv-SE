@@ -1,5 +1,5 @@
 ---
-title: Möjligheter till grundläggande mobilitet och säkerhet
+title: Funktioner i grundläggande Mobility and Security
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,14 +18,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: Grundläggande mobilitet och säkerhet kan hjälpa dig att skydda och hantera mobila enheter.
-ms.openlocfilehash: aed4f4c2d252e487d24496ac00f3de24bc57ab55
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 746131e90e207d7b888a3ddcaf4ff0656606a2c7
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545902"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49877122"
 ---
-# <a name="capabilities-of-basic-mobility-and-security"></a>Möjligheter till grundläggande mobilitet och säkerhet
+# <a name="capabilities-of-basic-mobility-and-security"></a>Funktioner i grundläggande Mobility and Security
 
 Med grundläggande mobilitet och säkerhet kan du skydda och hantera mobila enheter som iPhone, iPad, Android och Windows-telefoner som används av licensierade Microsoft 365-användare i din organisation. Du kan skapa principer för mobila enheter med inställningar som hjälper dig att kontrol lera åtkomsten till organisationens Microsoft 365-e-post och dokument för mobila enheter och program som stöds. Om en enhet går förlorad eller stjäls kan du fjärrrensa enheten för att ta bort känslig organisationsinformation.
 
@@ -34,16 +34,16 @@ Med grundläggande mobilitet och säkerhet kan du skydda och hantera mobila enhe
 Du kan använda grundläggande mobilitet och säkerhet för att skydda och hantera följande enheter.
 
 - iOS 11,0 eller senare
-    
+
 - Android 5,0 eller senare version<sup>3</sup>
-    
+
 - Windows 8,1<sup>1</sup>
-    
+
 - Windows 8,1 RT<sup>1</sup>
-    
+
 - Windows 10<sup>2</sup>
-    
-- Windows 10 Mobile<sup>2</sup>   
+
+- Windows 10 Mobile<sup>2</sup>
 
 <sup>1</sup> Åtkomst kontroll för Windows 8,1 RT-enheter är begränsad till Exchange ActiveSync.
 
@@ -65,18 +65,19 @@ De program som stöds för de olika typerna av mobila enheter i följande tabell
 |**Produkt**|**iOS 10,0 eller senare**|**Android 5,0 eller senare**|
 |:-----|:-----|:-----|
 |**Exchange** Exchange ActiveSync inkluderar inbyggd e-post och tredjepartsprogram, till exempel TouchDown, som använder Exchange ActiveSync version 14,1 eller senare. |Program |E-post |
-|**Office**   och **OneDrive för företag** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**På telefoner och surfplattor**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **Endast på telefoner:** <br/> Office Mobile |
+|**Office**   och  **OneDrive för företag** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**På telefoner och surfplattor**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **Endast på telefoner:** <br/> Office Mobile |
 
 >[!NOTE]
 - >Stöd för iOS 10,0 och senare versioner inkluderar iPhone-och iPad-enheter.
-- >Hantering av Black Berry OS-enheter stöds inte av mobila enheter som hanteras av Microsoft 365. Använda Black Berry Business Cloud Services (BBCS) från Black Berry för att hantera Black Berry OS-enheter. Black Berry-enheter med Android OS stöds som vanliga Android-enheter
+- >Hantering av Black Berry OS-enheter stöds inte av grundläggande säkerhet och mobilitet. Använda Black Berry Business Cloud Services (BBCS) från Black Berry för att hantera Black Berry OS-enheter. Black Berry-enheter med Android OS stöds som vanliga Android-enheter
 - >Användare uppmanas inte att registrera sig och kommer inte att blockeras eller rapporteras för policy brott om de använder mobilen för att komma åt Microsoft 365 SharePoint-webbplatser, dokument i Office Online eller via e-post i Outlook Web App.
-    
+
 Följande diagram visar vad som händer när en användare med en ny enhet loggar in i ett program som har stöd för åtkomst kontroll med grundläggande mobilitet och säkerhet. Användaren blockeras från att få åtkomst till Microsoft 365-resurser i appen tills de registrerar sina enheter.
 
 :::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="Grundläggande åtkomst kontroll för rörlighet och säkerhet":::
 
-Obs! principer och åtkomst regler som har skapats i MDM för Microsoft 365 Business Standard åsidosätter Exchange ActiveSync-principer för mobila enheter och åtkomst regler för enheter som skapats i administrations centret för Exchange. När en enhet har registrerats i MDM för Microsoft 365 Business Standard, ignoreras alla mobila enheter för Exchange ActiveSync-postlådor eller enhets åtkomst för enheten. Mer information om Exchange ActiveSync finns i [Exchange ActiveSync i Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=524380).
+> [!NOTE]
+> Principer och åtkomst regler som har skapats i grundläggande mobilitet och säkerhet för Microsoft 365 Business Standard åsidosätter Exchange ActiveSync-principer för mobila enheter och åtkomst regler för enheter som har skapats i administrations centret för Exchange. När en enhet har registrerats i grundläggande mobilitet och säkerhet för Microsoft 365 Business Standard, ignoreras den princip för Exchange ActiveSync-postlådan eller enhets åtkomst regeln som används för enheten. Mer information om Exchange ActiveSync finns i [Exchange ActiveSync i Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=524380).
 
 ## <a name="policy-settings-for-mobile-devices"></a>Princip inställningar för mobila enheter
 
@@ -85,11 +86,11 @@ Om du skapar en princip för att blockera åtkomst med vissa inställningar akti
 De inställningar som kan hindra användare från att komma åt Microsoft 365-resurser är i följande avsnitt:
 
 - Säkerhet
-    
+
 - Kryptering
-    
+
 - Jail trasig
-    
+
 - Hanterad e-postprofil  
 
 Följande diagram visar till exempel vad som händer när en användare med en registrerad enhet inte är kompatibel med en säkerhets inställning i en hanterings princip för mobila enheter som gäller för enheten. Användaren loggar in i ett program som har stöd för åtkomst kontroll med grundläggande mobilitet och säkerhet. De hindras från att använda Microsoft 365-resurser i appen förrän deras enheter uppfyller säkerhets inställningen.
@@ -111,7 +112,7 @@ I följande avsnitt visas de princip inställningar du kan använda för att sky
 |Lösen ordet upphör (dagar) |Ja|Ja|Ja|
 |Kom ihåg lösen ords historik och förhindra åter användning |Ja|Ja|Ja|
 
-## <a name="encryption-settings"></a>Krypterings inställningar 
+## <a name="encryption-settings"></a>Krypterings inställningar
 
 |**Ställa in namn**|**iOS 7,1 och senare**|**Android 5 och senare**|**Samsung KNOX**|
 |:-----|:-----|:-----|:-----|
@@ -133,7 +134,7 @@ Följande alternativ kan hindra användare från att komma åt sin Microsoft 365
 |:-----|:-----|:-----|:-----|
 |E-postprofil hanteras |Ja|Nej|Nej|
 
-## <a name="cloud-settings"></a>Moln inställningar 
+## <a name="cloud-settings"></a>Moln inställningar
 
 |**Ställa in namn**|**iOS 7,1 och senare**|**Android 5 och senare**|**Samsung KNOX**|
 |:-----|:-----|:-----|:-----|
@@ -144,14 +145,14 @@ Följande alternativ kan hindra användare från att komma åt sin Microsoft 365
 |Tillåt Google-säkerhetskopiering  |Saknas|Nej|Ja|
 |Tillåt automatisk synkronisering av Google-konto  |Saknas|Nej|Ja|
 
-## <a name="system-settings"></a>Systeminställningar 
+## <a name="system-settings"></a>Systeminställningar
 
 |**Ställa in namn**|**iOS 7,1 och senare**|**Android 5 och senare**|**Samsung KNOX**|
 |:-----|:-----|:-----|:-----|
 |Blockera skärmdump |Ja|Nej|Ja|
 |Blockera att skicka diagnostikdata från enheten |Ja|Nej|Ja|
 
-## <a name="application-settings"></a>Program inställningar 
+## <a name="application-settings"></a>Program inställningar
 
 |**Ställa in namn**|**iOS 7,1 och senare**|**Android 5 och senare**|**Samsung KNOX**|
 |:-----|:-----|:-----|:-----|
@@ -159,7 +160,7 @@ Följande alternativ kan hindra användare från att komma åt sin Microsoft 365
 |Blockera åtkomst till program lagring |Ja|Nej|Ja|
 |Kräv lösen ord vid åtkomst till program arkivet |Nej|Ja|Ja|
 
-## <a name="device-capabilities-settings"></a>Inställningar för enhets funktioner 
+## <a name="device-capabilities-settings"></a>Inställningar för enhets funktioner
 
 |**Ställa in namn**|**iOS 7,1 och senare**|**Android 5 och senare**|**Samsung KNOX**|
 |:-----|:-----|:-----|:-----|
@@ -186,7 +187,7 @@ Du kan ange följande princip inställningar genom att använda säkerhets & kom
 |SystemSecurityTLS  |Ja|Nej|
 |WLANEnabled  |Nej|Nej|
 
-## <a name="settings-supported-by-windows"></a>Inställningar som stöds av Windows 
+## <a name="settings-supported-by-windows"></a>Inställningar som stöds av Windows
 
 Du kan hantera Windows 10-enheter genom att registrera dem som mobila enheter. När en tillämplig princip har distribuerats måste användare med Windows 10-enheter registrera sig i grundläggande mobilitet och säkerhet första gången de använder den inbyggda e-postappen för att få åtkomst till Microsoft 365-e-post (kräver Azure AD Premium-prenumeration).
 
@@ -197,14 +198,14 @@ Följande inställningar stöds för Windows 10-enheter som är registrerade som
 - Kräva ett alfanumeriskt lösen ord
 
 - Minsta längd på lösen ord
-    
+
 - Antal misslyckade inloggnings försök innan enheten rensas
-    
+
 - Minuters inaktivitet innan enheten är låst
-    
+
 - Lösen ordet upphör (dagar)
-    
-- Kom ihåg lösen ords historik och förhindra åter användning   
+
+- Kom ihåg lösen ords historik och förhindra åter användning
 
 >[!NOTE]
 >Följande inställningar reglerar lösen ord endast lokala Windows-konton. Windows-konton som tillhandahålls via Anslut till en domän eller Azure Active Directory påverkas inte av de här inställningarna.
@@ -218,25 +219,24 @@ Blockera att skicka diagnostikdata från enhet.
 Du kan ange följande princip inställningar genom att använda PowerShell-cmdletar:
 
 - AllowConvenienceLogon
-    
+
 - UserAccountControlStatus
-    
+
 - FirewallStatus
-    
+
 - AutoUpdateStatus
-    
-- AntiVirusStatus   
+
+- AntiVirusStatus
 
 - AntiVirusSignatureStatus
-    
+
 - SmartScreenEnabled
-    
+
 - WorkFoldersSyncUrl
-    
 
 ## <a name="remotely-wipe-a-mobile-device"></a>Rensa en mobil enhet på en fjärrdator
 
-Om en enhet försvinner eller blir stulen kan du ta bort känslig organisations data och förhindra åtkomst till dina Microsoft 365-organisations resurser genom att göra en rensning från säkerhets & Compliance Center > hantering av **data förlust**  >  **Device management**. Du kan göra en selektiv rensning för att enbart ta bort organisations data eller en fullständig rensning för att ta bort all information från en enhet och återställa den till fabriks inställningarna.
+Om en enhet försvinner eller blir stulen kan du ta bort känslig organisations data och förhindra åtkomst till dina Microsoft 365-organisations resurser genom att göra en rensning från säkerhets & Compliance Center > hantering av **data förlust**  >  . Du kan göra en selektiv rensning för att enbart ta bort organisations data eller en fullständig rensning för att ta bort all information från en enhet och återställa den till fabriks inställningarna.
 
 Mer information finns i [Rensa en mobil enhet i grundläggande mobilitet och säkerhet](wipe-mobile-device.md).
 

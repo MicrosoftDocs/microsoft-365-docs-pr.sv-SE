@@ -11,18 +11,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Administratörer kan lära sig hur utbildning för attack simulering i Microsoft 365 Security Center påverkar anställda och kan få insikter från simulering och utbildning.
-ms.openlocfilehash: c283819550872691d8dd23d3921c22cb23637633
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: baff6032f295b2b49b4f2ec9280fb465d47b8dc3
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870961"
+ms.locfileid: "49877146"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Få insikter genom att träna på attacksimulering
 
 Med utbildning för att simulera attacker tillhandahåller Microsoft dig insikter baserade på resultat från simuleringar och utbildningar som de anställda gick igenom. Dessa insikter hjälper dig att hålla dig informerad om hur hotet utvecklas för dina anställda, samt att rekommendera nästa steg för att bättre förbereda dina anställda och din miljö för attacker.
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Vi arbetar ständigt med att utöka de insikter som är tillgängliga för dig. Beteende effekter och rekommenderade åtgärder är för tillfället tillgängliga. För att börja, gå över till en [utbildning för angrepps simulering i Microsoft 365 Security Center](https://security.microsoft.com/attacksimulator?viewid=overview).
 
@@ -53,7 +51,7 @@ Rekommendationer för rekommenderade åtgärder som är tillgängliga i [Microso
 
 ## <a name="related-links"></a>Relaterade länkar
 
-[Komma igång med att använda utbildning för attack simulering](attack-simulation-training-get-started.md)
+[Kom igång med Attack simuleringsträning](attack-simulation-training-get-started.md)
 
 [Skapa en simulering av nät fiske attacker](attack-simulation-training.md)
 

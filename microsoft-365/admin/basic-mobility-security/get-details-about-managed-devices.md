@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Använd Windows PowerShell för att få information om grundläggande mobilitet och säkerhets enheter i din organisation.
-ms.openlocfilehash: d34263ee215c568834034f2735bb69d9cef9ac6d
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: 7c6a0365dfd573377c3675bbcee8ee8280e33816
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430331"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876894"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>Få information om grundläggande mobilitet och hanterade enheter
 
@@ -49,20 +49,20 @@ Det finns några saker du måste ställa in för att köra de kommandon och skri
 
 Mer information om de här stegen finns i [ansluta till Microsoft 365 med PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell).
 
-1. Gå till [Microsoft Online Services-inloggnings assistent för IT-experter RTWl](https://www.microsoft.com/download/details.aspx?id=41950)   och välj  **Hämta för Microsoft Online Services-inloggnings assistent**.   
+1. Gå till [Microsoft Online services Sign-In Assistant för IT-experter RTWl](https://www.microsoft.com/download/details.aspx?id=41950)   och välj  **Hämta för Microsoft Online Services-inloggnings assistent**.   
 
-2. Installera Microsoft Azure Active Directory-modulen för Windows PowerShell genom att följa de här stegen:   
+2. Installera Microsoft Azure Active Directory-modulen för Windows PowerShell genom att följa de här stegen:
 
     1. Öppna en kommando tolk för PowerShell på administratörs nivå.  
 
     2. Kör kommandot Installera-modul MSOnline.
-    
-    3. Om du uppmanas att installera NuGet-leverantör skriver du Y och trycker på RETUR.   
 
-    4. Om du uppmanas att installera modulen från PSGGallery, skriver du Y och trycker på RETUR.   
+    3. Om du uppmanas att installera NuGet-leverantör skriver du Y och trycker på RETUR.
+
+    4. Om du uppmanas att installera modulen från PSGGallery, skriver du Y och trycker på RETUR.
 
     5. När installationen är slutförd stänger du PowerShell-Kommandotolken.
-    
+
 ### <a name="step-2-connect-to-your-microsoft-365-subscription"></a>Steg 2: Anslut till din Microsoft 365-prenumeration
 
 1. Kör följande kommando i Windows Azure Active Directory-modulen för Windows PowerShell.  
@@ -70,10 +70,10 @@ Mer information om de här stegen finns i [ansluta till Microsoft 365 med Powe
     $UserCredential = Get-Credential
 
 2. I dialog rutan begäran om autentiseringsuppgifter för Windows PowerShell anger du användar namn och lösen ord för ditt Microsoft 365-globala administratörs konto och väljer sedan **OK**.
-    
+
 3. Kör följande kommando.
-    
-    Connect-MsolService – Credential $UserCredential
+
+    Connect-MsolService-autentiseringsuppgifter $UserCredential
 
 ### <a name="step-3-make-sure-youre-able-to-run-powershell-scripts"></a>Steg 3: kontrol lera att du kan köra PowerShell-skript
 
@@ -82,21 +82,21 @@ Mer information om de här stegen finns i [ansluta till Microsoft 365 med Powe
 
 Om du vill köra det Get-MsolUserDeviceComplianceStatus.ps1 skriptet måste du aktivera körningen av PowerShell-skript.
 
-1. I Skriv bords versionen av Windows väljer du **Start**och skriver sedan Windows PowerShell. Högerklicka på Windows PowerShell och välj **Kör som administratör**.
+1. I Skriv bords versionen av Windows väljer du **Start** och skriver sedan Windows PowerShell. Högerklicka på Windows PowerShell och välj **Kör som administratör**.
 
 2. Kör följande kommando.
-    
+
     Set-ExecutionPolicy RemoteSigned
 
 3. Skriv Y när du uppmanas till det och tryck sedan på RETUR.
-    
+
 **Kör cmdleten Get-MsolDevice för att visa information för alla enheter i organisationen**
 
 1. Öppna Microsoft Azure Active Directory-modulen för Windows PowerShell.  
 
 2. Kör följande kommando.
-    
-    Get-MsolDevice-all-ReturnRegisteredOwners | Where-objekt {$ _. RegisteredOwners. count-gt 0}
+
+    Get-MsolDevice-all-ReturnRegisteredOwners | Where-Object {$ _. RegisteredOwners. count-gt 0}
 
 Fler exempel finns i  [Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=841721).
 
@@ -107,55 +107,38 @@ Spara först skriptet till datorn.
 1. Kopiera och klistra in följande text i anteckningar.  
 
 2.  parametrar
-    
 
 3.  [PSObject []] $users = @ (),
-    
 
 4.  [Växel] $export
-    
 
 5.  [Sträng] $exportFileName = "UserDeviceComplianceStatus_" + (Hämta-datum-format "yyMMdd_HHMMss") + ". csv",
-    
 
 6.  [Sträng] $exportPath = [miljö]:: GetFolderPath ("Skriv bord")
-    
 
 7.  )
-    
 
 9.  [System. Collection. IDictionary] $script: schema = @ {
-    
 
 11.  DeviceId = ' '
-    
 
 12.  DeviceOSType = ' '
-    
 
 13.  DeviceOSVersion = ' '
-    
 
 14.  DeviceTrustLevel = ' '
-    
 
 15.  DisplayName = ' '
-    
 
 16.  IsCompliant = ' '
-    
 
 17.  IsManaged = ' '
-    
 
 18.  ApproximateLastLogonTimestamp = ' '
-    
 
 19.  DeviceObjectId = ' '
-    
 
 20.  RegisteredOwnerUpn = ' '
-    
 
 21.  RegisteredOwnerObjectId = ' '
     
@@ -172,7 +155,7 @@ Spara först skriptet till datorn.
 26.  {
     
 
-28.  [PSObject] $resultObject = New-PSObject-egenskapen $script: schema
+28.  [PSObject] $resultObject = New-Object-TypeName PSObject-egenskap $script: schema
     
 
 30.  returnera $resultObject
@@ -187,7 +170,7 @@ Spara först skriptet till datorn.
 34.  {
     
 
-35.  $users = get-MsolUser
+35.  $users = Get-MsolUser
     
 
 36.  }
@@ -262,7 +245,7 @@ Spara först skriptet till datorn.
 64.  {
     
 
-65.  $result | Exportera-CSV-sökväg ($exportPath + " \" + $exportFileName)-NoTypeInformation
+65.  $result | Export-Csv-Path ($exportPath + " \" + $exportFileName)-NoTypeInformation
     
 
 66.  }
@@ -292,7 +275,7 @@ Spara först skriptet till datorn.
 
 3. Kör följande kommando för att identifiera den användare som du vill hämta enhets information för. Det här exemplet får information om bar@example.com.
     
-    $u = get-MsolUser-UserPrincipalName bar@example.com
+    $u = Get-MsolUser-UserPrincipalName bar@example.com
 
 4. Kör följande kommando för att starta skriptet.
 
@@ -322,6 +305,6 @@ Informationen exporteras till Windows-skrivbordet som en CSV-fil. Du kan använd
 
 [Microsoft Connect har avbrutits](https://docs.microsoft.com/collaborate/connect-redirect)
 
-[Översikt över grundläggande mobilitet och säkerhet](overview.md)
+[Översikt över grundläggande Mobility and Security](overview.md)
 
 [Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=841721)

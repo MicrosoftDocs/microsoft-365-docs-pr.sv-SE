@@ -19,16 +19,16 @@ ms.collection:
 - m365solution-overview
 - m365solution-protecthve
 description: Administratörer kan läsa mer om hur man höjer säkerhets inställningarna och använder rapporter, varningar och undersökningar för prioriterade konton i sina Microsoft 365-organisationer.
-ms.openlocfilehash: acd2eba0acd533d0cd8223f2c433cc023fc23287
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: 8a1d92ef12070a722a1b618bf51ab6d8130f49c0
+ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790132"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49881805"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Säkerhets rekommendationer för prioriterade konton i Microsoft 365
 
-Alla användar konton har inte till gång till samma företags information. Vissa konton har till gång till känslig information, till exempel ekonomiska data, produkt utvecklings information, partner åtkomst till viktiga versions system och mycket mer. Konton som har till gång till mycket konfidentiell information utgör ett allvarligt hot om de äventyras. Vi ringer dessa typer av konton med _prioritets_ konton. Med prioritets konton kan du CEOs, CISOs, CFOs, infrastruktur administratörs konton, bygga system konton och mycket mer.
+Alla användar konton har inte till gång till samma företags information. Vissa konton har till gång till känslig information, till exempel ekonomiska data, produkt utvecklings information, partner åtkomst till viktiga versions system och mycket mer. Om det äventyras kan konton som har till gång till mycket konfidentiell information utgöra ett allvarligt hot. Vi ringer dessa typer av konton med _prioritets_ konton. Prioritets konton inkluderar (men är inte begränsade till) CEOs, CISOs, CFOs, infrastruktur administratörs konton, bygg system konton m.m.
 
 För attackerare är det inte så effektivt med vanliga nät fiske attacker som kastar ett slumpmässigt nät för vanliga eller okända användare. Å andra sidan _Spear nät fiske_ eller _Whaling_ attacker som riktar sig till mål grupps konton. Därför kräver prioritets konton starkare än vanligt skydd för att förhindra konto intrång.
 
@@ -44,6 +44,7 @@ Microsoft 365 och Microsoft Defender för Office 365 innehåller flera viktiga f
 |[Använd strikta förvalda säkerhets principer för prioriterade konton](#use-strict-preset-security-policies-for-priority-accounts)|![Förts](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Förts](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Förts](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Använda användar koder på prioritets konton](#apply-user-tags-to-priority-accounts)|||![Förts](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Övervaka prioriterade konton i aviseringar, rapporter och identifieringar](#monitor-priority-accounts-in-alerts-reports-and-detections)|||![Förts](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[Utbilda användare](#train-users)|![Förts](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Förts](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Förts](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>Öka inloggnings säkerhet för prioriterade konton
@@ -98,6 +99,31 @@ När du har skyddat och taggat dina prioriterade användare kan du använda de t
 |Statusrapport för hotskydd|I alla vyer och detalj tabeller i den här **rapporten** kan du filtrera resultat efter **prioritets konton**. För mer information, se [status rapport för hot skydd](view-email-security-reports.md#threat-protection-status-report).|
 |E-postproblem för rapport med prioriterade konton|Rapporten om **e-postproblem för prioriterade konton** i administrations centret för Exchange (UK) innehåller information om ej levererade och fördröjda meddelanden för **prioriterade konton**. Mer information finns i artikeln [om e-postproblem för prioriterade konton](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).|
 |
+
+## <a name="train-users"></a>Utbilda användare
+
+Utbildning användare med prioritets konton kan spara dessa användare och arbets gruppen för säkerhets åtgärder på ett och samma sätt och på gång. Smarta användare är mindre troligt att öppna bifogade filer eller klicka på länkar i tveksamma e-postmeddelanden och det är mer sannolikt att misstänkta webbplatser undviks.
+
+Det [här är](https://www.belfercenter.org/CyberPlaybook) en utmärkt vägledning för att skapa en starkt kultur av säkerhets medvetenhet inom din organisation, inklusive utbildnings användare för att identifiera nät fiske attacker.
+
+Microsoft 365 tillhandahåller följande resurser för att hjälpa användare i organisationen:
+
+<br>
+
+****
+
+|Symboliserar konceptet|Resurser|Beskrivning|
+|---|---|---|
+|Microsoft 365|[Anpassningsbara Learning-vägar](https://docs.microsoft.com/office365/customlearning/)|De här resurserna kan vara till hjälp för utbildning för användare i organisationen.|
+|Microsoft 365-säkerhet|[Kodmodul: skydda din organisation med inbyggd, intelligent säkerhet från Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365)|Med den här modulen kan du beskriva hur säkerhetsfunktionerna i Microsoft 365 fungerar tillsammans och för att Articulate fördelarna med de här säkerhetsfunktionerna.|
+|Multifaktorautentisering|[Tvåstegsverifiering: Vad är sidan för ytterligare verifiering?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|Den här artikeln hjälper slutanvändarna att förstå vad multifaktorautentisering är och varför den används i din organisation.|
+|Utbildning för attack simulering|[Kom igång med Attack simuleringsträning](attack-simulation-training-get-started.md)|Utbildning för attack simulering i Microsoft Defender för Office 365 abonnemang 2 kan administratören konfigurera, starta och spåra simulerade nät fiske attacker mot specifika användar grupper.|
+
+Dessutom rekommenderar Microsoft att användare vidtar åtgärderna som beskrivs i den här artikeln: [skydda ditt konto och dina enheter från hackare och skadlig program vara](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6). Dessa åtgärder inkluderar:
+
+- Använda starka lösen ord
+- Skydda enheter
+- Aktivera säkerhetsfunktioner på Windows 10-och Mac-datorer (för ohanterade enheter)
 
 ## <a name="see-also"></a>Se även
 

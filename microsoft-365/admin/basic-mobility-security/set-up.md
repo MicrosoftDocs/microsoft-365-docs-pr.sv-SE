@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Konfigurera grundläggande mobilitet och säkerhet för att skydda och hantera användares mobila enheter.
-ms.openlocfilehash: 079593381d6395c18cd80f3eeab2e16837a2d27a
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 38f122141b370468bc591df49b3e1891a8a66a43
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545814"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876870"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Konfigurera grundläggande mobilitet och säkerhet
 
@@ -31,7 +31,7 @@ Den inbyggda grundläggande mobilitet och säkerhet för Microsoft 365 hjälper 
 
 Har du några frågor? Vanliga frågor och svar om vanliga frågor [och](frequently-asked-questions.md)svar om frågor finns här. Observera att du inte kan använda ett delegerat administratörs konto för att hantera grundläggande mobilitet och säkerhet. Mer information finns i [partners: tillhandahålla delegerad administration](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e). 
 
-Enhets hantering är en del av säkerhets & Compliance Center så du måste gå dit för att starta MDM-installationen.
+Enhets hantering är en del av säkerhets & Compliance Center så du måste gå dit för att starta grundläggande mobilitet och säkerhets inställningar.
 
 ## <a name="activate-the-basic-mobility-and-security-service"></a>Aktivera den grundläggande mobilitets-och säkerhets tjänsten
 
@@ -45,13 +45,13 @@ Enhets hantering är en del av säkerhets & Compliance Center så du måste gå 
 
 När tjänsten är klar följer du anvisningarna nedan för att slutföra konfigurationen.
 
-### <a name="step-1-required-configure-domains-for-mdm"></a>Steg 1: (obligatoriskt) konfigurera domäner för MDM
+### <a name="step-1-required-configure-domains-for-basic-mobility-and-security"></a>Steg 1: (obligatoriskt) konfigurera domäner för grundläggande mobilitet och säkerhet
 
 Om du inte har en egen domän kopplad till Microsoft 365 eller om du inte hanterar Windows-enheter kan du hoppa över det här avsnittet. Annars måste du lägga till DNS-poster för domänen hos DNS-värden. Om du har lagt till posterna som du redan har gjort, är du redo att konfigurera din domän med Microsoft 365. När du har lagt till posterna omdirigeras de Microsoft 365-användare i organisationen som loggar in på sin Windows-enhet med en e-postadress som använder din egen domän för att registrera dig för grundläggande mobilitet och säkerhet.
 
 Behöver du hjälp med att konfigurera posterna? Hitta din domän registrator och välj registratorns namn för att gå till steg-för-steg-hjälp för att skapa DNS-poster i listan i [Lägg till DNS-poster för att ansluta din domän](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). Använd dessa instruktioner för att skapa CNAME-poster som beskrivs i [förenkla Windows-registrering utan Azure AD Premium](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium).
 
-När du har lagt till de två CNAME-posterna kan du gå tillbaka till sidan säkerhets & efterlevnad och gå till hantering av **data förlust**  >  **Device management**   för att slutföra nästa steg.
+När du har lagt till de två CNAME-posterna kan du gå tillbaka till sidan säkerhets & efterlevnad och gå till hantering av **data förlust**  >     för att slutföra nästa steg.
 
 ### <a name="step-2-required-configure-an-apns-certificate-for-ios-devices"></a>Steg 2: (obligatoriskt) Konfigurera ett APN-certifikat för iOS-enheter
 
@@ -61,7 +61,7 @@ För att hantera iOS-enheter som iPad och iPhone måste du skapa ett APN-certifi
 
 2. I webbläsaren:  [https://protection.office.com](https://protection.office.com/) .
 
-3. Välj **Hantera data förlust**   >  **Device management**och välj **APNs-certifikat för iOS-enheter**.
+3. Välj  **Hantera data förlust**   >  **** och välj **APNs-certifikat för iOS-enheter**.
 
 4. På sidan Inställningar för Apple Push Notification-certifikat väljer du **Nästa**.
 
@@ -94,7 +94,7 @@ MFA hjälper dig att skydda inloggningen till Microsoft 365 för mobil telefon r
 
 Information om hur du aktiverar MFA i Azure AD-portalen finns i [Konfigurera multifaktorautentisering](https://go.microsoft.com/fwlink/p/?LinkId=519255).
 
-När du har konfigurerat MFA kan du gå tillbaka till säkerhets & Compliance Center och navigera till **Data loss prevention**   >  **Device management**   >  **enhets principer**för hantering av data förlust   för att slutföra nästa steg.
+När du har konfigurerat MFA kan du gå tillbaka till säkerhets & Compliance Center och navigera till ****   >     >  **enhets principer** för hantering av data förlust   för att slutföra nästa steg.
 
 ### <a name="step-4-recommended-manage-device-security-policies"></a>Steg 4: (rekommenderas) hantera säkerhets principer för enheter
 
@@ -129,5 +129,5 @@ Användare med Android-eller iOS-enheter måste installera företagsportalsappen
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Möjligheter till grundläggande mobilitet och säkerhet](capabilities.md)<br/>
+[Funktioner i grundläggande Mobility and Security](capabilities.md)<br/>
 [Skapa säkerhets principer för enheter i grundläggande mobilitet och säkerhet](create-device-security-policies.md)

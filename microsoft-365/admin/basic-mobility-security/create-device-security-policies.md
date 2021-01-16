@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Använd grundläggande mobilitet och säkerhet för att skapa enhets principer som skyddar din organisations information.
-ms.openlocfilehash: 322bca862c852f83406ca4622a63384b2e2275e5
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 077f1e7e0d763aaecfc38fd4b57d9e8912900a3c
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545890"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49877074"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Skapa säkerhets principer för enheter i grundläggande mobilitet och säkerhet
 
@@ -39,8 +39,8 @@ Du kan använda grundläggande mobilitet och säkerhet för att skapa enhets pri
 - För att skapa och distribuera grundläggande mobilitets-och säkerhets principer i Microsoft 365 måste du vara en global administratör för Microsoft 365. Mer information finns i [behörigheter i säkerhets & Compliance Center](https://support.microsoft.com/office/d10608af-7934-490a-818e-e68f17d0e9c1).
 - Innan du distribuerar principer kan du låta din organisation veta de potentiella konsekvenserna av att registrera en enhet i grundläggande mobilitet och säkerhet. Beroende på hur du konfigurerar principer kan inkompatibla enheter blockeras från att få åtkomst till Microsoft 365 och data, inklusive installerade program, foton och personlig information på en registrerad enhet och data kan tas bort.
 
-> [!NOTE]
-> Principer och åtkomst regler som har skapats i MDM för Microsoft 365 Business Standard åsidosätter Exchange ActiveSync-principer för mobila enheter och åtkomst regler för enheter som har skapats i administrations centret för Exchange. När en enhet har registrerats i MDM för Microsoft 365 Business Standard, ignoreras alla mobila enheter för Exchange ActiveSync-postlådor eller enhets åtkomst som används för enheten. Mer information om Exchange ActiveSync finns i [Exchange ActiveSync i Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=524380).
+>[!NOTE]
+>Principer och åtkomst regler som har skapats i grundläggande mobilitet och säkerhet för Microsoft 365 Business Standard åsidosätter Exchange ActiveSync-principer för mobila enheter och åtkomst regler för enheter som har skapats i administrations centret för Exchange. När en enhet har registrerats i grundläggande mobilitet och säkerhet för Microsoft 365 Business Standard, ignoreras den policy för mobila enheter i Exchange ActiveSync eller enhets åtkomst som används för enheten. Mer information om Exchange ActiveSync finns i [Exchange ActiveSync i Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=524380).
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>Steg 1: skapa en enhets princip och distribuera till en test grupp
 
@@ -91,7 +91,7 @@ För att skydda din organisationsinformation bör du blockera program åtkomst t
 
 1. Skriv in i webbläsaren [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .
 2. Välj **Hantera åtkomst inställningar för hela organisationen**.
-3. Om du vill blockera enheter som inte stöds väljer du **blockera** under **om en enhet inte stöds av MDM för Microsoft 365**och väljer sedan **Spara**.
+3. Om du vill blockera enheter som inte stöds väljer du **blockera** under **om en enhet inte stöds av grundläggande mobilitet och säkerhet för Microsoft 365** och väljer sedan **Spara**.
 
    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Grundläggande alternativ för mobilitet och säkerhets block":::
 
@@ -150,6 +150,6 @@ Du kan också rensa en enhet helt, eller rensa organisationsinformation från en
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Översikt över grundläggande mobilitet och säkerhet](overview.md)
+[Översikt över grundläggande Mobility and Security](overview.md)
 
-[Möjligheter till grundläggande mobilitet och säkerhet](capabilities.md)
+[Funktioner i grundläggande Mobility and Security](capabilities.md)

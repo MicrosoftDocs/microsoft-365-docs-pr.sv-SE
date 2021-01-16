@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Vanliga frågor och svar om grundläggande mobilitet och säkerhet.
-ms.openlocfilehash: e05815392510ad54bb530457d7f0f6490ece4a95
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: 5651b9f9742c45f1229e55b298cf78532c835c9a
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430332"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876882"
 ---
 # <a name="basic-mobility-and-security-frequently-asked-questions-faq"></a>Vanliga frågor och svar om grundläggande rörlighet och säkerhet
 
@@ -31,19 +31,19 @@ Den här artikeln innehåller vanliga frågor och svar om grundläggande mobilit
 
 ## <a name="how-can-i-get-basic-mobility-and-security-i-dont-see-it-in-the-microsoft-365-admin-center"></a>Hur kan jag få grundläggande rörlighet och säkerhet? Jag ser det inte i administrations centret för Microsoft 365
 
-1.  Aktivera grundläggande rörlighet och säkerhet genom att gå till sidan för [säkerhets & i Office 365](https://protection.office.com/) .   
+1.  Aktivera grundläggande rörlighet och säkerhet genom att gå till sidan för [säkerhets & i Office 365](https://protection.office.com/) .
 
-2.  Gå till > hantera data förlust.   
+2.  Gå till > hantera data förlust.
 
 ## <a name="how-can-i-get-started-with-device-management-in-basic-mobility-and-security"></a>Hur kan jag komma igång med enhets hantering i grundläggande mobilitet och säkerhet?
 
 Det finns fyra steg för att komma igång med grundläggande mobilitet och säkerhet: 
 
 1. Aktivera grundläggande mobilitet och säkerhet genom att gå till [Office 365-säkerhets & efterlevnad](https://protection.office.com/).
-    
+
 2. Gå till förhindra data förlust > enhets hantering > enhets principer.
     
-3. Skapa enhets hanterings principer och tillämpa dem på grupper med användare som har kon figurer ATS i säkerhets grupper. Vi rekommenderar att du börjar med att distribuera principerna till en liten test grupp. Mer information finns i [skapa säkerhets principer för enheter i grundläggande mobilitet och säkerhet](create-device-security-policies.md).      
+3. Skapa enhets hanterings principer och tillämpa dem på grupper med användare som har kon figurer ATS i säkerhets grupper. Vi rekommenderar att du börjar med att distribuera principerna till en liten test grupp. Mer information finns i [skapa säkerhets principer för enheter i grundläggande mobilitet och säkerhet](create-device-security-policies.md).
 
 4. Användare som har en princip tillfrågas om att registrera sina enheter när de försöker komma åt Microsoft 365-data. Mer information finns i [Registrera din mobila enhet med grundläggande mobilitet och säkerhet](enroll-your-mobile-device.md).
 
@@ -51,18 +51,18 @@ Mer information finns i [Konfigurera grundläggande mobilitet och säkerhet](set
 
 ## <a name="im-trying-to-set-up-basic-mobility-and-security-but-it-seems-stuck-the-microsoft-365-service-health-has-been-showing-provisioning-for-a-while-what-can-i-do"></a>Jag försöker ställa in grundläggande mobilitet och säkerhet men det verkar vara fastnat. Microsoft 365-tjänstens hälsa visar "etableringen" för ett tag. Vad kan jag göra?
 
-Det kan ta en stund för dig att få tjänsten redo för dig. När etableringen är slutfört visas sidan hantering av mobila enheter för Microsoft 365. Om du har väntat 24 timmar och status fortfarande är etablerad, kontakta supporten så hjälper vi dig att ta reda på vad problemet är. Om du [behöver hjälp](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp) kan du läsa mer i avsnittet om att få support. 
+Det kan ta en stund för dig att få tjänsten redo för dig. När etableringen är klar visas sidan grundläggande mobilitet och säkerhet. Om du har väntat 24 timmar och status fortfarande är etablerad, kontakta supporten så hjälper vi dig att ta reda på vad problemet är. Om du [behöver hjälp](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp)kan du läsa mer i avsnittet om att få support.
 
 ## <a name="what-can-i-do-if-device-enrollment-fails"></a>Vad kan jag göra om enhets registrering Miss lyckas?
 
 Om du har problem med att få en enhet registrerad måste du först kontrol lera följande:
 
 - Kontrol lera att enheten inte redan har registrerats hos en annan leverantör för hantering av mobila enheter, till exempel Intune.
-    
+
 - Kontrol lera att enheten är inställd på rätt datum och tid.
-    
+
 - Byt till ett annat WIFI-eller cellulärt nätverk på enheten.
-    
+
 - För Android-eller iOS-enheter avinstallerar och installerar du om Intune-företagsportalsappen på enheten.
     
 Om det fortfarande inte fungerar kan du läsa mer i [Felsöka grundläggande mobilitet och säkerhet](troubleshoot.md).
@@ -90,4 +90,3 @@ När en enhet har registrerats i grundläggande mobilitet och säkerhet, ignorer
 ## <a name="i--set-up-basic-mobility-and-security-but-now-i-want-to-remove-it-what-are-the-steps"></a>Jag har konfigurerat grundläggande mobilitet och säkerhet men nu vill jag ta bort den. Vilka är stegen?
 
 Tyvärr kan du inte helt enkelt "avetablera" grundläggande mobilitet och säkerhet när du har konfigurerat det. Men du kan ta bort det för grupper av användare genom att ta bort säkerhets grupper för användare från de enhets principer som du har skapat. Eller så kan du inaktivera det för alla genom att ta bort enhets principerna så att de inte är på plats och inte tillämpas. Mer information finns i [Inaktivera grundläggande mobilitet och säkerhet](turn-off.md).
-

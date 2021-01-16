@@ -11,18 +11,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Administratörer kan läsa mer om hur man skapar anpassade nytto laster för utbildning för angrepps simulering i Microsoft Defender för Office 365.
-ms.openlocfilehash: e3285b99d5b64255b9fdbda8c76b6f133aa013b2
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 45311ad4c4eb09c8238d278475248680fbc66287
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870869"
+ms.locfileid: "49877135"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Skapa en anpassad nyttolast för att träna på attacksimulering
 
 Microsoft erbjuder en robust nytto Last katalog för olika sociala teknik tekniker som kan kopplas till din utbildning för utskrivning av attacker. Men du kanske vill skapa anpassade nytto laster som fungerar bättre för din organisation. I den här artikeln beskrivs hur du skapar en nytto last för utbildning för attack simulering i Microsoft Defender för Office 365.
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Du kan skapa en nytto last genom att klicka på **skapa en nytto Last** på [fliken dedikerade **nytto laster**](https://security.microsoft.com/attacksimulator?viewid=payload) eller i [guiden skapa simulering](attack-simulation-training.md#selecting-a-payload).
 
@@ -67,7 +65,7 @@ Du är klar med att bygga din nytto Last. Nu är det dags att granska informatio
 
 ## <a name="related-links"></a>Relaterade länkar
 
-[Komma igång med att använda utbildning för attack simulering](attack-simulation-training-get-started.md)
+[Kom igång med Attack simuleringsträning](attack-simulation-training-get-started.md)
 
 [Skapa en simulering av nät fiske attacker](attack-simulation-training.md)
 

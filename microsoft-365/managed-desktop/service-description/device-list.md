@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fff44098e3da17c68e4347fb14690945154edfdb
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 6e904eee5a132d271ec32ee99a19380463e53193
+ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841193"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49881779"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft hanterade Station ära enheter 
 
@@ -71,6 +71,7 @@ Länkar till enheter här är endast för din referens. Om du vill beställa enh
 | [Surface bärbar dator](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB/Intel i5/8 GB RAM | Ingen | Okt 12, 2022 | Okt 12, 2025 |
 | [Bärbar dator 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB/Intel i5/8 GB RAM | Ingen | Oktober 22, 2021 | Oktober 22, 2024 |
 | [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB/Intel i5/8 GB RAM | Ingen | Oktober 22, 2021 | Oktober 22, 2024 |
+| **\*[Surface Pro 7 +](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 GB/Intel i5/8 GB RAM | Ingen | 15 januari 2022 | 15 januari 2025 |
 
 Dessutom måste enheten också uppfylla följande kriterier:     
 

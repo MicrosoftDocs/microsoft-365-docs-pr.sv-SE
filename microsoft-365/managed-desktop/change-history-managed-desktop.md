@@ -13,16 +13,50 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 9dec293a26cbc3d239a597e46815d60d79b9ac20
-ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
+ms.openlocfilehash: 8f6826865f38dad6040f65ac083be76450127299
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48370418"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49877206"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Ändringshistorik för dokumentationen om Microsoft Hanterat skrivbord
 
-I den här artikeln finns nya och uppdaterade artiklar i [Microsoft Managed Desktop](index.yml). "Uppdaterade" artiklar är de som har använt material tillägg eller korrigeringar – smärre korrigeringar som korrigering av skrivfel, format eller formateringsfel visas inte. Du kan alltid visa historiken för specifika skrivningar (inklusive uppgifter om eventuella ändringar) genom att gå in på [repo på GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+I den här artikeln finns nya och uppdaterade artiklar i [Microsoft Managed Desktop](index.yml). "Uppdaterade" artiklar har fått material tillägg eller korrigeringar – smärre korrigeringar som korrigering av skrivfel, format eller formateringsfel visas inte. Du kan alltid visa historiken för specifika skrivningar (inklusive uppgifter om eventuella ändringar) genom att gå in på [repo på GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+
+## <a name="december-2020"></a>December 2020
+Ny eller ändrad artikel | Beskrivning
+--- | ---
+[Vad är Microsoft Hanterat skrivbord?](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | Uppdaterad artikel
+[Arbeta med rapporter](working-with-managed-desktop/reports.md) | Uppdaterad artikel
+[Integritets-och person uppgifter](service-description/privacy-personal-data.md) | Uppdaterad artikel
+[Efterlevnad](intro/compliance.md) | Uppdaterad artikel
+[Krav](get-ready/prerequisites.md) | Uppdaterad artikel
+[Nätverks konfiguration](get-ready/network.md) | Uppdaterad artikel
+
+
+## <a name="november-2020"></a>November 2020
+Ny eller ändrad artikel | Beskrivning
+--- | ---
+[Åtgärda problem som hittats av verktyget för bedömning av beredskap](get-ready/readiness-assessment-fix.md) | Uppdaterad artikel
+[Verktyg för bedömning av beredskap](get-ready/readiness-assessment-tool.md) | Ny artikel
+[Åtgärda problem som hittats av verktyget för bedömning av beredskap](get-ready/readiness-assessment-fix.md) | Ny artikel
+[Registrera nya enheter själv](get-started/register-devices-self.md) | Uppdaterad artikel
+[Steg för partner för att registrera enheter](get-started/register-devices-partner.md) | Uppdaterad artikel
+[Förutsättningar för gästkonton](get-ready/guest-accounts.md) | Ny artikel
+[Gå till administrations portalen](get-started/access-admin-portal.md) | Uppdaterad artikel
+
+
+## <a name="october-2020"></a>Oktober 2020
+Ny eller ändrad artikel | Beskrivning
+--- | ---
+[Krav](get-ready/prerequisites.md) | Uppdaterad artikel
+[Arbeta med insikter](working-with-managed-desktop/insights.md) | Uppdaterad artikel
+[Steg för partner för att registrera enheter](get-started/register-devices-partner.md) | Uppdaterad artikel
+[Gå till administrations portalen](get-started/access-admin-portal.md) | Uppdaterad artikel
+[Distribuera appar till enheter](get-started/deploy-apps.md) | Uppdaterad artikel
+[Få hjälp för användare](working-with-managed-desktop/end-user-support.md) | Uppdaterad artikel
 
 
 ## <a name="september-2020"></a>September 2020

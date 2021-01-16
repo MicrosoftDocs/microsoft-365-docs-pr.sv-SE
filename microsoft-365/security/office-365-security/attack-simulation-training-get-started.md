@@ -1,5 +1,5 @@
 ---
-title: Komma igång med att använda utbildning för attack simulering
+title: Kom igång med Attack simuleringsträning
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,18 +19,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig att använda angrepps simulerings utbildning för att köra simulerade nätfiske och lösen ords attacker i sina Microsoft 365 E5-eller Microsoft Defender för Office 365 plan 2-organisationer.
-ms.openlocfilehash: 9d97816edf7d59c002658fc8bb3f39e72dbc2430
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 2c00fb27748887c6b8e2fa1458b10f0c3405eef7
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "49871254"
+ms.locfileid: "49877170"
 ---
-# <a name="get-started-using-attack-simulation-training"></a>Komma igång med att använda utbildning för attack simulering
+# <a name="get-started-using-attack-simulation-training"></a>Kom igång med Attack simuleringsträning
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Om din organisation har Microsoft 365 E5 eller Microsoft Defender för Office 365 abonnemang 2, som innehåller [hot undersöknings-och svars funktioner](office-365-ti.md), kan du använda funktionen för simulering av attacker i Microsoft säkerhets Center för att köra realistiska angrepp i din organisation. Dessa simulerade attacker kan hjälpa dig att identifiera och hitta sårbara användare innan en verklig attack påverkar din botten linje. Läs den här artikeln om du vill veta mer.
 

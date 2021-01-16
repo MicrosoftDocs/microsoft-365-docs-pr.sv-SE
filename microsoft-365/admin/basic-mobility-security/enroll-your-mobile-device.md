@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Innan du kan använda Microsoft 365-tjänster med din enhet kan du behöva registrera den i grundläggande mobilitet och säkerhet för Microsoft 365.
-ms.openlocfilehash: e31054621ba44a4d5f08de9b366fa0978b738cd9
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: dc5a43b12fce50c9146200a4559fe9b7e6824b18
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430333"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49877062"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>Registrera din mobila enhet med grundläggande mobilitet och säkerhet
 
@@ -39,15 +39,15 @@ Organisationer väljer grundläggande mobilitet så att de anställda kan använ
 Grundläggande mobilitet och säkerhet för Microsoft 365 som hanteras av Intune-tjänsten fungerar med de flesta, men inte alla, mobila enheter. Följande stöds med grundläggande mobilitet och säkerhet:
 
 - iOS 10,0 eller senare
-    
+
 - Android 4,4 eller senare
-    
+
 - Windows 8,1 och Windows 10 (telefon och dator)
-    
+
 Om enheten inte visas ovan, och du behöver använda den med grundläggande mobilitet och säkerhet, kontaktar du din arbets-eller skol administratör.
 
->[!TIP] 
->Om du har problem med att registrera enheten kan du läsa mer i [Felsöka grundläggande mobilitet och säkerhet](troubleshoot.md).
+>[!TIP]
+>Om du har problem med att registrera enheten kan du läsa mer i [Felsöka grundläggande mobilitet och säkerhet](/basic-mobility-security/troubleshoot.md).
 
 ## <a name="set-up-your-mobile-device-with-intune-and-basic-mobility-and-security"></a>Konfigurera din mobila enhet med Intune och grundläggande mobilitet och säkerhet
 

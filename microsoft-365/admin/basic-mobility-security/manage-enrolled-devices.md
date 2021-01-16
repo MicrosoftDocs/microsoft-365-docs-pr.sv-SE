@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Grundläggande mobilitet och säkerhet kan hjälpa dig att skydda och hantera mobila enheter.
-ms.openlocfilehash: e07ff0704afcb5bca1db4e2a5c2aff9c7d6008fd
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: 4954da0ff44276d9bd46cabc78bc52c7879e5e26
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430317"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876966"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Hantera enheter som är registrerade i hantering av mobila enheter i Microsoft 365
 
@@ -36,24 +36,24 @@ När du har konfigurerat det måste personerna i din organisation registrera sin
 Följ de här stegen för att komma till panelen enhets hantering:
 
 1. Gå till [administrations centret för Microsoft 365](https://support.microsoft.com/office/758befc4-0888-4009-9f14-0d147402fd23).
-    
+
 2. Skriv hantering av mobila enheter i Sök fältet och välj **hantering av mobila enheter**   i resultat listan.
 
     :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Alternativ för mobila enheter":::
 
-3. Välj  **Hantera enheter**.
+3. Välj  **Kom igång**.
 
 ## <a name="manage-mobile-devices"></a>Hantera mobila enheter
-    
+
 När du har grundläggande mobilitet och säkerhets inställningar är det här några sätt att hantera mobila enheter i din organisation.
 
 |**För att göra detta**|**Gör du så här**|
 |:----------------|:------------------------------------------------------------------------------|
-|Rensa en enhet |På panelen enhets hantering väljer du *enhetens namn*och sedan  **fullständig rensning**   för att ta bort all information eller  **selektiv rensning**   för att enbart ta bort organisationsinformation på enheten. Mer information finns i [Rensa en mobil enhet i grundläggande mobilitet och säkerhet](wipe-mobile-device.md).|
+|Rensa en enhet |På panelen enhets hantering väljer du *enhetens namn* och sedan  **fullständig rensning**   för att ta bort all information eller  **selektiv rensning**   för att enbart ta bort organisationsinformation på enheten. Mer information finns i [Rensa en mobil enhet i grundläggande mobilitet och säkerhet](wipe-mobile-device.md).|
 |Blockera enheter som inte stöds från åtkomst till Exchange-e-post med Exchange ActiveSync |I panelen enhets hantering väljer du  **blockera**. |
 |Konfigurera enhets principer som lösen ords krav och säkerhets inställningar |I panelen enhets hantering väljer du **säkerhets principer för enheter**   >  **Add +**. Mer information finns i [skapa säkerhets principer för enheter i grundläggande mobilitet och säkerhet](create-device-security-policies.md).|
-|Visa lista över blockerade enheter  |Välj blockera i panelen enhets hantering under  **Välj en vy**   .  **Blocked** |
-|Avblockera ej kompatibel eller enhet som inte stöds för en användare eller grupp av användare  |Välj något av följande för att avblockera enheter:<br/>-Ta bort användaren eller användarna från säkerhets gruppen som principen har använts för. Gå till administrations centret för Microsoft 365 > **grupper**och välj sedan grupp namn. Välj **Redigera medlemmar och administratörer**.<br/>-Ta bort den säkerhets grupp som användarna tillhör från enhets principen. Gå till säkerhets & Compliance Center >säkerhets principer för  **säkerhets principer**   >  **Device security policies**. Välj enhets princip namn och välj sedan **Redigera**  >  **distribution**.<br/>-Avblockera alla icke-kompatibla enheter för en enhets princip. Gå till säkerhets & Compliance Center >säkerhets principer för  **säkerhets principer**   >  **Device security policies**. Välj enhets princip namn och välj sedan **Redigera**  >  **åtkomst krav**. Välj  **Tillåt åtkomst och rapportera fel**.<br/>-För att häva blockering av en icke-kompatibel eller enhet som inte stöds för en användare eller grupp av användare, gå till säkerhets & Compliance  **Center >hantering av enhets**åtkomst i hantera enhets   >  **Device management**   >  **Inställningar**. Lägga till en säkerhets grupp med medlemmar som du vill undanta från åtkomst till Microsoft 365. Mer information finns i [skapa, redigera eller ta bort en säkerhets grupp i administrations centret för Microsoft 365](https://support.microsoft.com/office/55c96b32-e086-4c9e-948b-a018b44510cb).|
+|Visa lista över blockerade enheter  |Välj blockera i panelen enhets hantering under  **Välj en vy**   .  **** |
+|Avblockera ej kompatibel eller enhet som inte stöds för en användare eller grupp av användare  |Välj något av följande för att avblockera enheter:<br/>-Ta bort användaren eller användarna från säkerhets gruppen som principen har använts för. Gå till administrations centret för Microsoft 365 > **grupper** och välj sedan grupp namn. Välj **Redigera medlemmar och administratörer**.<br/>-Ta bort den säkerhets grupp som användarna tillhör från enhets principen. Gå till säkerhets & Compliance Center >säkerhets principer för  **säkerhets principer**   >  ****. Välj enhets princip namn och välj sedan **Redigera**  >  **distribution**.<br/>-Avblockera alla icke-kompatibla enheter för en enhets princip. Gå till säkerhets & Compliance Center >säkerhets principer för  **säkerhets principer**   >  ****. Välj enhets princip namn och välj sedan **Redigera**  >  **åtkomst krav**. Välj  **Tillåt åtkomst och rapportera fel**.<br/>-För att häva blockering av en icke-kompatibel eller enhet som inte stöds för en användare eller grupp av användare, gå till säkerhets & Compliance  **Center >hantering av enhets** åtkomst i hantera enhets   >  ****   >  **Inställningar**. Lägga till en säkerhets grupp med medlemmar som du vill undanta från åtkomst till Microsoft 365. Mer information finns i [skapa, redigera eller ta bort en säkerhets grupp i administrations centret för Microsoft 365](https://support.microsoft.com/office/55c96b32-e086-4c9e-948b-a018b44510cb).|
 |Ta bort användare så att deras enheter inte längre hanteras av grundläggande mobilitet och säkerhet |Om du vill ta bort användaren redigerar du den säkerhets grupp som innehåller principer för grundläggande mobilitet och säkerhet. Mer information finns i  [skapa, redigera eller ta bort en säkerhets grupp i administrations centret för Microsoft 365](https://support.microsoft.com/office/55c96b32-e086-4c9e-948b-a018b44510cb).<br/>Information om hur du tar bort grundläggande mobilitet och säkerhet från alla dina Microsoft 365-användare finns i [Inaktivera grundläggande mobilitet och säkerhet](turn-off.md).|
 
 Live (v14)

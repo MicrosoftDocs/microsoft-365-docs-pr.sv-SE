@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Grundläggande mobilitet och säkerhet kan hjälpa dig att skydda och hantera mobila enheter.
-ms.openlocfilehash: e66465d312c4268aca82677fa4e517aaeb822ce3
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: dd9d777798c2c96776a8f9b40a3c4dfe0b95702a
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430320"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876954"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Hantera åtkomst inställningar för enheter i grundläggande mobilitet och säkerhet
 
@@ -32,18 +32,18 @@ Om du använder grundläggande mobilitet och säkerhet kan det finnas enheter so
 Gör så här:
 
 1. Logga in på Microsoft 365 med ditt globala administratörs konto.
-    
+
 2. I webbläsaren skriver du:  [https://protection.office.com](https://protection.office.com/) .    
 
     >[!IMPORTANT]
-    >Om det är första gången du använder MDM för Microsoft 365 Business standard kan du aktivera det här: [aktivera hantering av mobila enheter](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). När du har aktiverat den kan du hantera dina enheter med [säkerhets & i Office 365](https://protection.office.com/).
+    >Om det är första gången du använder grundläggande mobilitet och säkerhet för Microsoft 365 Business Standard, aktiverar du det här: [aktivera grundläggande säkerhet och mobilitet](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). När du har aktiverat den kan du hantera dina enheter med [säkerhets & i Office 365](https://protection.office.com/).
 
-3. Gå till skydd mot data förlust >enhets principer för  **enhets hantering**   >  **Device policies**och välj **Hantera åtkomst inställningar för hela organisationen**.
-    
+3. Gå till skydd mot data förlust >enhets principer för  **enhets hantering**   >  **** och välj **Hantera åtkomst inställningar för hela organisationen**.
+
 4. Välj **block**.
 
     :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Kryss rutan grundläggande mobilitet och säkerhets block":::
 
-5. Välj **Spara**. 
+5. Välj **Spara**.
 
 För att lära dig vilka enheter grundläggande mobilitet och säkerhet stöder kan du läsa [grundläggande mobilitet och säkerhet](capabilities.md).
