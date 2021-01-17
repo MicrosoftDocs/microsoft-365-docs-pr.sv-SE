@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Sammanfattning: Office 365 kräver internetanslutning. Slutpunkterna nedan bör vara tillgängliga för kunder med Office 365-abonnemang, inklusive Government Community Cloud (GCC).'
 hideEdit: true
-ms.openlocfilehash: 9b705c6cad0387efb16f3fc5494b1ba2fe337732
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 386c92d0856b3faa88fb8a05f8ddff58a81e3c4f
+ms.sourcegitcommit: a92b150da1e11d4a204c556ab98a4776727dbc22
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794406"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883342"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>URL-adresser och IP-adressintervall för Office 365
 
@@ -62,7 +62,7 @@ Data kolumnerna som visas är:
 [!INCLUDE [Office 365 worldwide endpoints](../includes/office-365-worldwide-endpoints.md)]
 
 >[!Note]
->Rekommendationer för Yammer IP-adresser och URL-adresser finns i [detta blogginlägg](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592).
+>Rekommendationer om IP- och URL-adresser för Yammer finns i [Vi rekommenderar inte att du använder hårdkodade IP-adresser för Yammer](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592) på Yammer-bloggen.
 >
 
 ## <a name="related-topics"></a>Relaterade ämnen
@@ -71,7 +71,7 @@ Data kolumnerna som visas är:
 
 [Allmänna Microsoft Stream-slutpunkter](https://docs.microsoft.com/stream/network-overview#general-microsoft-stream-endpoints)
   
-[Övervaka Microsoft 365 anslutning](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity?view=o365-worldwide)
+[Övervaka Microsoft 365 anslutning](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity)
 
 [Rot certifikatutfärdare (CA) och mellanliggande certifikatutfärdare i programsystemet från tredje part](../compliance/encryption-office-365-certificate-chains.md)
   
@@ -88,3 +88,5 @@ Data kolumnerna som visas är:
 [Microsoft Azure IP-intervall och servicetaggar – moln i Kina](https://www.microsoft.com/download/details.aspx?id=57062)
   
 [Microsoft Public IP-utrymme](https://www.microsoft.com/download/details.aspx?id=53602)
+
+[Servicenamn och Transportprotokoll portnummerregister](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
