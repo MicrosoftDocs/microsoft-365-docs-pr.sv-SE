@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Administratörer kan läsa mer om hur man skapar anpassade nytto laster för utbildning för angrepps simulering i Microsoft Defender för Office 365.
-ms.openlocfilehash: 45311ad4c4eb09c8238d278475248680fbc66287
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 86a962dc3117708ac71195b9efc336fa30c573dd
+ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877135"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49908347"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Skapa en anpassad nyttolast för att träna på attacksimulering
 
@@ -58,7 +58,7 @@ Lägg till en egen beskrivning som beskriver indikatorn och klicka i indikatorn 
 
 ## <a name="review-payload"></a>Granska nytto Last
 
-Du är klar med att bygga din nytto Last. Nu är det dags att granska informationen och se en förhands granskning av din nytto Last. I förhands granskningen visas alla indikatorer som du har skapat. Du kan redigera varje del av nytto lasten från det här steget. **Skicka** in din betalning när du är nöjd.
+Du är klar med att bygga din nytto Last. Nu är det dags att granska informationen och se en förhands granskning av din nytto Last. I förhands granskningen visas alla indikatorer som du har skapat. Du kan redigera varje del av nytto lasten från det här steget. När du är nöjd kan du **Skicka** in din nytto Last.
 
 > [!IMPORTANT]
 > De nytto laster som du har skapat har **klient organisationen** som källa. När du väljer nytto laster bör du kontrol lera att du inte filtrerar bort **klient organisationen**.

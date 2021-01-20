@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Kontrollera att dina distansarbetare kan komma åt lokala resurser samtidigt som du optimerar åtkomst till Microsoft 365-molntjänster.
-ms.openlocfilehash: 1fbb1cb6ad9817f0e167ae95f9fc113ecdee4221
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: a9a8c972d58c7d2bac3f49ad602578358406c5a0
+ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681426"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49908335"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Steg 2. Tillhandahålla fjärråtkomst till lokala appar och tjänster
 
@@ -51,7 +51,7 @@ Utan delad tunnel skickas all din fjärrtrafik över VPN-anslutningen, där den 
 
 ![Nätverkstrafik från VPN-klienter utan tunnel](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
-Microsoft 365-trafik måste ta en indirekt väg via din organisation, som kan vara vidarebefordrad till en Microsoft Network startpunkt långt bort från VPN-klientens fysiska plats. Denna indirekta väg lägger till en fördröjning för nätverkstrafiken och minskar prestandan. 
+Microsoft 365-trafik måste ta en indirekt väg genom din organisation, som kan vidarebefordras till en Microsoft-nätverksingångspunkt långt ifrån VPN-klientens fysiska plats. Denna indirekta väg lägger till en fördröjning för nätverkstrafiken och minskar prestandan. 
 
 Med delad tunnel kan du konfigurera VPN-klienten så att den exkluderar vissa typer av trafik som inte skickas via VPN-anslutningen till organisationens nätverk.
 

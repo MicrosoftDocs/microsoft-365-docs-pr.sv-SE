@@ -18,33 +18,34 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du uppdaterar en DNS-post (Domain Name Service) för att använda en SPF-post (Sender Policy Framework) med din anpassade domän i Office 365.
-ms.openlocfilehash: a6cd2a0cf60812bb874c1be63fb2d294cda6d6aa
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.openlocfilehash: 536f727ee71db70490259179ff8e47009c547f89
+ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881723"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905229"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Konfigurera SPF för att förhindra förfalskning
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-- [Förutsättningar <a name="UpdateSPFTXT"></a>](#updating-your-spf-txt-record-for-office-365-a-nameUpdateSPFTXT)
-- [Skapa / uppdatera din SPF TXT-post för Office 365 <a name="CreateUpdateSPFTXT"></a>](#to-create-or-update-your-spf-txt-record-a-namecreateupdatespftxta)
-    - [Hur hanterar man underdomäner?<a name="SPFandSubdomains"></a>](#how-to-handle-subdomains-a-namespfandsubdomainsa)
-- [SPF-felsökning och metodtips <a name="TshootingSPF"></a>](#next-steps-after-you-set-up-spf-for-office-365-a-nametshootingspfa)
-- [Avancerade SPF-exempel <a name="AdvancedSPFexs"></a>](#more-information-about-spf-a-nameadvancedspfexsa)
+- [Förutsättningar](#prerequisites)
+- [Skapa eller uppdatera din SPF TXT-post](#create-or-update-your-spf-txt-record)   
+  - [Hur hanterar man underdomäner?](#how-to-handle-subdomains)
+- [Vad gör SPF-e-postautentisering egentligen?](#what-does-spf-email-authentication-actually-do)   
+   - [Felsökning av SPF](#troubleshooting-spf)
+- [Mer information om SPF](#more-information-about-spf)
 
 Den här artikeln beskriver hur du uppdaterar en DNS-post (Domain Name Service) så att du kan använda e-postautentisering av Sender Policy Framework (SPF) med din anpassade domän i Office 365.
 
 Med SPF kan du validera utgående e-post som skickas från din anpassade domän. Det är ett första steg i att ställa in andra rekommenderade e-postautentiseringsmetoder DMARC och DKIM (ytterligare två e-postautentiseringsmetoder som stöds i Office 365).
 
-## <a name="updating-your-spf-txt-record-for-office-365"></a>Uppdatera SPF TXT-posten för Office 365<a name="UpdateSPFTXT"></a>
+## <a name="prerequisites"></a>Förutsättningar
 
 > [!IMPORTANT]
 > Om du är **en småföretag** eller inte känner till IP-adresser eller DNS-konfiguration, ring din internetdomänregistrator (t.ex. GoDaddy, Bluehost, web.com) för att be om hjälp med DNS-konfiguration av SPF (och alla andra e-postautentiseringsmetoder). *Även*, om du inte har köpt eller inte använder en anpassad URL (med andra ord webbadressen som du och dina kunder bläddrar för att nå Office 365 slutar på **onmicrosoft.com**) har SPF ställts in för dig i Office 365 service. Inga ytterligare steg krävs i så fall. Tack för att du läser.
 
-Innan du uppdaterar TXT-posten i DNS måste du samla in viss information och bestämma postens format. Avancerade exempel och en mer detaljerad diskussion om SPF-syntax som stöds finns i [Så här fungerar SPF för att förhindra förfalskning och nätfiske i Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
+Innan du skapar eller uppdaterar SPF TXT-posten för Office 365 i extern DNS måste du samla in information som behövs för att göra posten. Avancerade exempel och en mer detaljerad diskussion om SPF-syntax som stöds finns i [Så här fungerar SPF för att förhindra förfalskning och nätfiske i Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
 
 Samla in följande information:
 
@@ -59,7 +60,7 @@ Samla in följande information:
 > [!IMPORTANT]
 > För att kunna använda en egen domän kräver Office 365 att du lägger till en SPF TXT-post (Sender Policy Framework) i din DNS-post för att förhindra förfalskning.
 
-## <a name="create-or-update-your-spf-txt-record"></a>Skapa eller uppdatera din SPF TXT-post <a name="CreateUpdateSPFTXT"></a>
+## <a name="create-or-update-your-spf-txt-record"></a>Skapa eller uppdatera din SPF TXT-post
 
 1. Kom ihåg att bekanta dig med SFP-syntaxen i följande tabell.
 
@@ -98,7 +99,7 @@ Samla in följande information:
 
 4. Testa din SPF TXT-post.
 
-## <a name="how-to-handle-subdomains"></a>Hur hanterar man underdomäner? <a name="SPFandSubdomains"></a>
+## <a name="how-to-handle-subdomains"></a>Hur hanterar man underdomäner?
 
 Det är viktigt att notera att *du måste skapa en separat post för varje underdomän eftersom underdomäner inte ärver SPF-posten för deras toppnivå domän*.
 
@@ -108,7 +109,7 @@ En ytterligare wildcard SPF-post (`*.`) krävs för varje domän och underdomän
 *.subdomain.contoso.com. IN TXT "v=spf1 -all"
 ```
 
-## <a name="next-steps"></a>Nästa steg <a name="TshootingSPF"></a>
+## <a name="troubleshooting-spf"></a>Felsökning av SPF
 
 Har du problem med din SPF TXT-post? Läs [Felsökning: Metodtips för SPF i Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
 
@@ -129,7 +130,7 @@ Om du har konfigurerat e-post för Office 365 så har du redan lagt till Microso
 
 - Du tänker konfigurera DKIM och DMARC (rekommenderas).
 
-## <a name="more-information-about-spf"></a>Mer information om SPF <a name="AdvancedSPFexs"></a>
+## <a name="more-information-about-spf"></a>Mer information om SPF
 
 Avancerade exempel och en mer detaljerad diskussion om SPF-syntax som stöds, förfalskning, felsökning och hur Office 365 stöder SPF finns i [Så här fungerar SPF för att förhindra förfalskning och nätfiske i Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
 

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om vilka phishing-principer som är tillgängliga i Exchange Online Protection (EOP) och Microsoft Defender för Office 365.
-ms.openlocfilehash: dadb41e1f0ff9e18681b13ad3d265f3f436c2052
-ms.sourcegitcommit: f40378013757d560d5566a11ad4e6f527c018cc4
+ms.openlocfilehash: f1ffebbca2d3a77d1a0c10d14205e52108614043
+ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796200"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49908359"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-nätfiske-principer i Microsoft 365
 
@@ -160,7 +160,7 @@ Följande inställningar för personifiering är bara tillgängliga i policy mot
 
   > [!NOTE]
   >
-  > - I varje skydds princip kan du ange högst 60 skyddade användare (avsändarens e-postadress). Du kan inte ange samma skyddade användare i flera principer.
+  > - I varje skydds princip kan du ange högst 60 skyddade användare (avsändarens e-postadress). Du kan inte ange samma skyddade användare i flera principer. Oavsett hur många principer som gäller för en mottagare är det högsta antalet skyddade användare (avsändarens e-postadresser) för varje enskild mottagare som 60. Mer information om princip prioritet och hur princip bearbetning slutar efter den första principen är att se [order och prioritetsordning för e-postskydd](how-policies-and-protections-are-combined.md).
   >
   > - Användarautentisering fungerar inte om avsändaren och mottagaren tidigare kommunicerat via e-post. Om avsändaren och mottagaren aldrig har kommunicerat via e-post identifieras meddelandet som ett personifierings försök.
 
