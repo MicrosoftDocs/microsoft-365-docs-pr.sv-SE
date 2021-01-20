@@ -93,6 +93,22 @@
           href: information-protection-deploy-monitor-respond.md
 - name: Lösningar och scenarier för arbetsbelastningar
   items:
+    - name: Översikt
+      href: workload-solutions-scenarios-overview.md
+    - name: Hantering av klientorganisation
+      items:
+        - name: Översikt
+          href: tenant-management-overview.md
+        - name: Steg 1. Dina klientorganisationar
+          href: tenant-management-tenants.md
+        - name: Steg 2. Optimalt nätverk
+          href: tenant-management-networking.md
+        - name: Steg 3. Identitet
+          href: tenant-management-identity.md
+        - name: Steg 4. Migrering
+          href: tenant-management-migration.md
+        - name: 'Steg 5: Enhets- och apphantering'
+          href: tenant-management-device-management.md
     - name: Lagarbete och samarbete.
       items:
         - name: Arkitekturaffischer för Microsoft Teams
