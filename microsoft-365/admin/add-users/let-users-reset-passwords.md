@@ -18,79 +18,80 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
-description: Lär dig hur du återställer dina lösen ord med standard verktyget för återställning av lösen ord.
-ms.openlocfilehash: bbde517858186d844412aca21f231620ed76496a
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+description: Lär dig hur du återställer dina lösenord med självbetjäningsverktyget för återställning av lösenord.
+ms.openlocfilehash: c777b9d840e0e9e467c1283fff94eca9a061ee73
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551926"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925560"
 ---
-# <a name="let-users-reset-their-own-passwords"></a><span data-ttu-id="b7d59-103">Låt användare återställa sina egna lösenord</span><span class="sxs-lookup"><span data-stu-id="b7d59-103">Let users reset their own passwords</span></span>
+# <a name="let-users-reset-their-own-passwords"></a><span data-ttu-id="c0251-103">Låt användare återställa sina egna lösenord</span><span class="sxs-lookup"><span data-stu-id="c0251-103">Let users reset their own passwords</span></span>
 
-<span data-ttu-id="b7d59-104">Som Microsoft 365-administratör kan du låta andra använda [standard verktyget för återställning av lösen ord](https://go.microsoft.com/fwlink/p/?LinkId=522677) så att du inte behöver återställa lösen ord för dem.</span><span class="sxs-lookup"><span data-stu-id="b7d59-104">As the Microsoft 365 admin, you can let people use the [self-service password reset tool](https://go.microsoft.com/fwlink/p/?LinkId=522677) so you don't have to reset passwords for them.</span></span> <span data-ttu-id="b7d59-105">Det innebär mindre jobb för dig!</span><span class="sxs-lookup"><span data-stu-id="b7d59-105">Less work for you!</span></span>
+<span data-ttu-id="c0251-104">Som Microsoft 365-administratör kan du [](https://go.microsoft.com/fwlink/p/?LinkId=522677) låta användare använda självbetjäningsverktyget för återställning av lösenord så att du inte behöver återställa lösenord för dem.</span><span class="sxs-lookup"><span data-stu-id="c0251-104">As the Microsoft 365 admin, you can let people use the [self-service password reset tool](https://go.microsoft.com/fwlink/p/?LinkId=522677) so you don't have to reset passwords for them.</span></span> <span data-ttu-id="c0251-105">Det innebär mindre jobb för dig!</span><span class="sxs-lookup"><span data-stu-id="c0251-105">Less work for you!</span></span>
   
-## <a name="before-you-begin"></a><span data-ttu-id="b7d59-106">Innan du börjar</span><span class="sxs-lookup"><span data-stu-id="b7d59-106">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="c0251-106">Innan du börjar</span><span class="sxs-lookup"><span data-stu-id="c0251-106">Before you begin</span></span>
   
-- <span data-ttu-id="b7d59-107">Du får själv återställning av lösen ord för moln användare **utan kostnad** för Microsoft 365-verksamhet, utbildning eller ideell betalning.</span><span class="sxs-lookup"><span data-stu-id="b7d59-107">You get self-service password reset for cloud users **free** with any Microsoft 365 business, education, or nonprofit paid plan.</span></span> <span data-ttu-id="b7d59-108">Den fungerar inte med utvärderings versionen av Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="b7d59-108">It doesn't work with Microsoft 365 trial.</span></span>
+- <span data-ttu-id="c0251-107">Självbetjäning för återställning av  lösenord för molnanvändare blir kostnadsfri i alla betalabonnemang för Microsoft 365 Business, Education eller Nonprofit.</span><span class="sxs-lookup"><span data-stu-id="c0251-107">You get self-service password reset for cloud users **free** with any Microsoft 365 business, education, or nonprofit paid plan.</span></span> <span data-ttu-id="c0251-108">Det fungerar inte med utvärderingsversionen av Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="c0251-108">It doesn't work with Microsoft 365 trial.</span></span>
 
-- <span data-ttu-id="b7d59-p103">Tjänsten använder Azure. Du får automatiskt den här funktionen **kostnadsfritt** när du utför de här stegen. Det kostar dig ingenting att aktivera självbetjäning för återställning av lösenord om du inte använder andra Azure-funktioner.</span><span class="sxs-lookup"><span data-stu-id="b7d59-p103">It uses Azure. You'll automatically get this feature in Azure for **free** when you do these steps. It won't cost you anything to turn on self-service password reset if you don't use other Azure features.</span></span>
+- <span data-ttu-id="c0251-p103">Tjänsten använder Azure. Du får automatiskt den här funktionen **kostnadsfritt** när du utför de här stegen. Det kostar dig ingenting att aktivera självbetjäning för återställning av lösenord om du inte använder andra Azure-funktioner.</span><span class="sxs-lookup"><span data-stu-id="c0251-p103">It uses Azure. You'll automatically get this feature in Azure for **free** when you do these steps. It won't cost you anything to turn on self-service password reset if you don't use other Azure features.</span></span>
 
-- <span data-ttu-id="b7d59-p104">**Om du använder Active Directory lokalt** gäller inte de två punkterna ovan. Du kan du konfigurera det här, men **det kräver en betald prenumeration på Azure AD Premium**.</span><span class="sxs-lookup"><span data-stu-id="b7d59-p104">**If you're using an on-premises Active Directory**, the above two points don't apply. Rather, you can set this up but **it requires a paid subscription to Azure AD Premium**.</span></span>
+- <span data-ttu-id="c0251-p104">**Om du använder Active Directory lokalt** gäller inte de två punkterna ovan. Du kan du konfigurera det här, men **det kräver en betald prenumeration på Azure AD Premium**.</span><span class="sxs-lookup"><span data-stu-id="c0251-p104">**If you're using an on-premises Active Directory**, the above two points don't apply. Rather, you can set this up but **it requires a paid subscription to Azure AD Premium**.</span></span>
 
-<span data-ttu-id="b7d59-114">Den här artikeln är avsedd för personer som anger en förfalloprincip för lösenord för ett företag, en skola eller en ideell förening.</span><span class="sxs-lookup"><span data-stu-id="b7d59-114">This article is for people who set password expiration policy for a business, school, or nonprofit.</span></span> <span data-ttu-id="b7d59-115">Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen.</span><span class="sxs-lookup"><span data-stu-id="b7d59-115">To complete these steps, you need to sign in with your Microsoft 365 admin account.</span></span> [<span data-ttu-id="b7d59-116">Vad är ett administratörs konto?</span><span class="sxs-lookup"><span data-stu-id="b7d59-116">What's an admin account?</span></span>](../admin-overview/admin-overview.md)
+<span data-ttu-id="c0251-114">Den här artikeln är avsedd för personer som anger en förfalloprincip för lösenord för ett företag, en skola eller en ideell förening.</span><span class="sxs-lookup"><span data-stu-id="c0251-114">This article is for people who set password expiration policy for a business, school, or nonprofit.</span></span> <span data-ttu-id="c0251-115">Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen.</span><span class="sxs-lookup"><span data-stu-id="c0251-115">To complete these steps, you need to sign in with your Microsoft 365 admin account.</span></span> [<span data-ttu-id="c0251-116">Vad är ett administratörskonto?</span><span class="sxs-lookup"><span data-stu-id="c0251-116">What's an admin account?</span></span>](../admin-overview/admin-overview.md)
 
-<span data-ttu-id="b7d59-117">Du måste vara [Global administratör eller lösen ords administratör](about-admin-roles.md) för att utföra de här stegen.</span><span class="sxs-lookup"><span data-stu-id="b7d59-117">You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.</span></span>
+<span data-ttu-id="c0251-117">Du måste vara global [administratör eller lösenordsadministratör för att](about-admin-roles.md) kunna utföra de här stegen.</span><span class="sxs-lookup"><span data-stu-id="c0251-117">You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.</span></span>
 
-## <a name="watch-let-users-reset-their-own-passwords"></a><span data-ttu-id="b7d59-118">Titta: Låt användare återställa sina egna lösen ord</span><span class="sxs-lookup"><span data-stu-id="b7d59-118">Watch: Let users reset their own passwords</span></span>
+## <a name="watch-let-users-reset-their-own-passwords"></a><span data-ttu-id="c0251-118">Titta: Låt användare återställa sina egna lösenord</span><span class="sxs-lookup"><span data-stu-id="c0251-118">Watch: Let users reset their own passwords</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
-<span data-ttu-id="b7d59-119">Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span><span class="sxs-lookup"><span data-stu-id="b7d59-119">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
+<span data-ttu-id="c0251-119">Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span><span class="sxs-lookup"><span data-stu-id="c0251-119">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
 
-## <a name="steps-let-people-reset-their-own-passwords"></a><span data-ttu-id="b7d59-120">Steg: Låt andra återställa sina egna lösen ord</span><span class="sxs-lookup"><span data-stu-id="b7d59-120">Steps: Let people reset their own passwords</span></span>
+## <a name="steps-let-people-reset-their-own-passwords"></a><span data-ttu-id="c0251-120">Steg: Låt användare återställa sina egna lösenord</span><span class="sxs-lookup"><span data-stu-id="c0251-120">Steps: Let people reset their own passwords</span></span>
 
-<span data-ttu-id="b7d59-121">Anvisningarna aktiverar Självbetjäning för återställning av lösenord för alla i organisationen.</span><span class="sxs-lookup"><span data-stu-id="b7d59-121">These steps turn on self-service password reset for everyone in your business.</span></span>
+<span data-ttu-id="c0251-121">Anvisningarna aktiverar Självbetjäning för återställning av lösenord för alla i organisationen.</span><span class="sxs-lookup"><span data-stu-id="c0251-121">These steps turn on self-service password reset for everyone in your business.</span></span>
   
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="b7d59-122">Gå till sidan **Inställningar** organisations inställningar i <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrations centret</a> > **Org settings** .</span><span class="sxs-lookup"><span data-stu-id="b7d59-122">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Settings** > **Org settings** page.</span></span>
+1. <span data-ttu-id="c0251-122">Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">sidan Inställningar</a>för organisationens **inställningar** > **i administrationscentret.**</span><span class="sxs-lookup"><span data-stu-id="c0251-122">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Settings** > **Org settings** page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="b7d59-123">I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrations centret</a>går du till sidan **Inställningar** för \> **säkerhets &amp; Sekretess** .</span><span class="sxs-lookup"><span data-stu-id="b7d59-123">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Settings** \> **Security &amp; privacy** page.</span></span>
+1. <span data-ttu-id="c0251-123">Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">sekretesssidan</a>inställningar  i \> **&amp; administrationscentret.**</span><span class="sxs-lookup"><span data-stu-id="c0251-123">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Settings** \> **Security &amp; privacy** page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="b7d59-124">I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrations centret</a>går du till sidan **Inställningar** för \> **Settings** \> **säkerhets &amp; Sekretess** .</span><span class="sxs-lookup"><span data-stu-id="b7d59-124">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Settings** \>**Settings** \> **Security &amp; privacy** page.</span></span>
+1. <span data-ttu-id="c0251-124">Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">sekretesssidan</a>Inställningar  för säkerhet \> **i** \> **&amp; administrationscentret.**</span><span class="sxs-lookup"><span data-stu-id="c0251-124">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Settings** \>**Settings** \> **Security &amp; privacy** page.</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="b7d59-125">Högst upp på sidan **organisations inställningar** väljer du fliken **säkerhet & sekretess** .</span><span class="sxs-lookup"><span data-stu-id="b7d59-125">At the top of the **Org settings** page, select the **Security & Privacy** tab.</span></span>
+2. <span data-ttu-id="c0251-125">Högst upp på sidan **Organisationsinställningar** väljer du fliken **&** Sekretess.</span><span class="sxs-lookup"><span data-stu-id="c0251-125">At the top of the **Org settings** page, select the **Security & Privacy** tab.</span></span>
   
-3. <span data-ttu-id="b7d59-126">Välj **självbetjäning för återställning av lösen ord**.</span><span class="sxs-lookup"><span data-stu-id="b7d59-126">Select **Self-service Password Reset**.</span></span>
+3. <span data-ttu-id="c0251-126">Välj **Självbetjäning för återställning av lösenord.**</span><span class="sxs-lookup"><span data-stu-id="c0251-126">Select **Self-service Password Reset**.</span></span>
 
-4. <span data-ttu-id="b7d59-127">Under **Automatisk återställning av lösen ord** väljer **du gå till Azure-portalen för att aktivera automatisk återställning av lösen ord**.</span><span class="sxs-lookup"><span data-stu-id="b7d59-127">Under **Self-service password reset**, select **Go to the Azure portal to turn on self-service password reset**.</span></span>
+4. <span data-ttu-id="c0251-127">Under **Självbetjäning för återställning** av lösenord väljer du Gå till Azure Portal för att aktivera **självbetjäning för återställning av lösenord.**</span><span class="sxs-lookup"><span data-stu-id="c0251-127">Under **Self-service password reset**, select **Go to the Azure portal to turn on self-service password reset**.</span></span>
 
-5. <span data-ttu-id="b7d59-128">I det vänstra navigerings fönstret väljer **du användare** och sedan, på **användare | Sidan alla användare** väljer du **Återställ lösen ord**.</span><span class="sxs-lookup"><span data-stu-id="b7d59-128">In the left navigation pane, select **Users**, and then, on the **Users | All users** page, select **Password reset**.</span></span>
+5. <span data-ttu-id="c0251-128">I det vänstra navigeringsfönstret **väljer du** Användare och går sedan till **| Välj Lösenordsåterställning** på **sidan Alla användare.**</span><span class="sxs-lookup"><span data-stu-id="c0251-128">In the left navigation pane, select **Users**, and then, on the **Users | All users** page, select **Password reset**.</span></span>
   
-6. <span data-ttu-id="b7d59-129">På sidan **Egenskaper** väljer du **alla** för att aktivera det för alla i företaget och väljer sedan **Spara**.</span><span class="sxs-lookup"><span data-stu-id="b7d59-129">On the **Properties** page, select **All** to enable it for everyone in your business, and then select **Save**.</span></span>
+6. <span data-ttu-id="c0251-129">På sidan **Egenskaper** väljer du **Alla för** att aktivera det för alla i företaget och väljer sedan **Spara.**</span><span class="sxs-lookup"><span data-stu-id="c0251-129">On the **Properties** page, select **All** to enable it for everyone in your business, and then select **Save**.</span></span>
   
-7. <span data-ttu-id="b7d59-130">När användarna loggar in uppmanas de att ange ytterligare kontakt information som hjälper dem att återställa lösen ordet i framtiden.</span><span class="sxs-lookup"><span data-stu-id="b7d59-130">When your users sign in, they will be prompted to enter additional contact information that will help them reset their password in the future.</span></span>
+7. <span data-ttu-id="c0251-130">När användarna loggar in uppmanas de att ange ytterligare kontaktinformation som hjälper dem att återställa lösenordet i framtiden.</span><span class="sxs-lookup"><span data-stu-id="c0251-130">When your users sign in, they will be prompted to enter additional contact information that will help them reset their password in the future.</span></span>
 
-## <a name="related-content"></a><span data-ttu-id="b7d59-131">Relaterat innehåll</span><span class="sxs-lookup"><span data-stu-id="b7d59-131">Related content</span></span>
+## <a name="related-content"></a><span data-ttu-id="c0251-131">Relaterat innehåll</span><span class="sxs-lookup"><span data-stu-id="c0251-131">Related content</span></span>
 
-[<span data-ttu-id="b7d59-132">Ange förfalloprincip för lösenord i organisationen</span><span class="sxs-lookup"><span data-stu-id="b7d59-132">Set the password expiration policy for your organization</span></span>](../manage/set-password-expiration-policy.md)
+[<span data-ttu-id="c0251-132">Ange förfalloprincip för lösenord i organisationen</span><span class="sxs-lookup"><span data-stu-id="c0251-132">Set the password expiration policy for your organization</span></span>](../manage/set-password-expiration-policy.md)
 
-[<span data-ttu-id="b7d59-133">Ange att en enskild användares lösenord aldrig ska förfalla</span><span class="sxs-lookup"><span data-stu-id="b7d59-133">Set an individual user's password to never expire</span></span>](set-password-to-never-expire.md)
+[<span data-ttu-id="c0251-133">Ange att en enskild användares lösenord aldrig ska förfalla</span><span class="sxs-lookup"><span data-stu-id="c0251-133">Set an individual user's password to never expire</span></span>](set-password-to-never-expire.md)
 
-[<span data-ttu-id="b7d59-134">Utbildningsvideor för Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="b7d59-134">Microsoft 365 Business training videos</span></span>](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[<span data-ttu-id="c0251-134">Utbildningsvideor för Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="c0251-134">Microsoft 365 Business training videos</span></span>](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -1,8 +1,8 @@
 ---
-title: Skapa och spåra ServiceNow biljetter i säkerhets Center för Microsoft 365
-description: Lär dig hur du skapar och spårar biljetter i ServiceNow från Microsoft 365 Security Center.
-keywords: säkerhet, Microsoft 365, M365, säker poäng, säkerhets Center, ServiceNow, biljetter, uppgifter
-ms.prod: w10
+title: Skapa och spåra ServiceNow-biljetter i Microsoft 365 säkerhetscenter
+description: Lär dig hur du skapar och spårar biljetter i ServiceNow från Säkerhetscenter för Microsoft 365.
+keywords: säkerhet, Microsoft 365, M365, secure score, säkerhetscenter, ServiceNow, biljetter, uppgifter
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -19,22 +19,23 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: f0aadbf2dbf8cb8d9815b4ef8b1c8d3d892c8b31
-ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
+ms.technology: m365d
+ms.openlocfilehash: 3df24e01df0436f6b5824917c91dc4e7c4ee984c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49588535"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925500"
 ---
-# <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a><span data-ttu-id="74388-104">Skapa och spåra ServiceNow biljetter i säkerhets Center för Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="74388-104">Create and track ServiceNow tickets in the Microsoft 365 security center</span></span>
+# <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a><span data-ttu-id="93d98-104">Skapa och spåra ServiceNow-biljetter i Microsoft 365 säkerhetscenter</span><span class="sxs-lookup"><span data-stu-id="93d98-104">Create and track ServiceNow tickets in the Microsoft 365 security center</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 >[!CAUTION]
-><span data-ttu-id="74388-105">**För hands perioden för ServiceNow-kopplingen har avslut ATS**</span><span class="sxs-lookup"><span data-stu-id="74388-105">**The preview period for the ServiceNow connector has ended**</span></span><br>
-><span data-ttu-id="74388-106">Den här funktionen är inte längre tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="74388-106">This capability is no longer available.</span></span> <span data-ttu-id="74388-107">Tack för din feedback och fortsatta support medan vi bestämmer nästa steg.</span><span class="sxs-lookup"><span data-stu-id="74388-107">Thank you for your feedback and continued support while we determine next steps.</span></span>
+><span data-ttu-id="93d98-105">**Förhandsgranskningsperioden för ServiceNow-kopplingen har avslutats**</span><span class="sxs-lookup"><span data-stu-id="93d98-105">**The preview period for the ServiceNow connector has ended**</span></span><br>
+><span data-ttu-id="93d98-106">Den här funktionen är inte längre tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="93d98-106">This capability is no longer available.</span></span> <span data-ttu-id="93d98-107">Tack för din feedback och fortsatt stöd medan vi fastställer nästa steg.</span><span class="sxs-lookup"><span data-stu-id="93d98-107">Thank you for your feedback and continued support while we determine next steps.</span></span>
 
-<span data-ttu-id="74388-108">[Säkerhets Center för Microsoft 365](overview-security-center.md) har förbättrats med möjligheten att skapa och spåra biljetter i ServiceNow.</span><span class="sxs-lookup"><span data-stu-id="74388-108">The [Microsoft 365 security center](overview-security-center.md) has been enhanced with the ability to natively create and track tickets in ServiceNow.</span></span> [<span data-ttu-id="74388-109">Lär dig mer om ServiceNow</span><span class="sxs-lookup"><span data-stu-id="74388-109">Learn more about ServiceNow</span></span>](https://www.servicenow.com/)
+<span data-ttu-id="93d98-108">Microsoft [365 Säkerhetscenter](overview-security-center.md) har förbättrats med möjligheten att inbyggt skapa och spåra biljetter i ServiceNow.</span><span class="sxs-lookup"><span data-stu-id="93d98-108">The [Microsoft 365 security center](overview-security-center.md) has been enhanced with the ability to natively create and track tickets in ServiceNow.</span></span> [<span data-ttu-id="93d98-109">Läs mer om ServiceNow</span><span class="sxs-lookup"><span data-stu-id="93d98-109">Learn more about ServiceNow</span></span>](https://www.servicenow.com/)
 
-<span data-ttu-id="74388-110">I säkerhets Center kan säkerhets administratörer skicka en åtgärd för [säker Poäng](microsoft-secure-score.md) förbättring direkt till ServiceNow och skapa en biljett.</span><span class="sxs-lookup"><span data-stu-id="74388-110">In the security center, security administrators can send a [Microsoft Secure Score](microsoft-secure-score.md) improvement action directly to ServiceNow and create a ticket.</span></span> <span data-ttu-id="74388-111">Både hantering av problem och hantering av ändringar kan skapas.</span><span class="sxs-lookup"><span data-stu-id="74388-111">Both incident management and change management tickets can be created.</span></span> <span data-ttu-id="74388-112">Spåra biljetter i säkerhets centrets start sida och ServiceNow.</span><span class="sxs-lookup"><span data-stu-id="74388-112">Track tickets in the security center home page and ServiceNow.</span></span>
+<span data-ttu-id="93d98-110">I säkerhetscentret kan säkerhetsadministratörer skicka en förbättringsåtgärd för [Microsoft Secure Score](microsoft-secure-score.md) direkt till ServiceNow och skapa en biljett.</span><span class="sxs-lookup"><span data-stu-id="93d98-110">In the security center, security administrators can send a [Microsoft Secure Score](microsoft-secure-score.md) improvement action directly to ServiceNow and create a ticket.</span></span> <span data-ttu-id="93d98-111">Både incidenthantering och ändringshanteringsärenden kan skapas.</span><span class="sxs-lookup"><span data-stu-id="93d98-111">Both incident management and change management tickets can be created.</span></span> <span data-ttu-id="93d98-112">Spåra biljetter på startsidan för säkerhetscentret och ServiceNow.</span><span class="sxs-lookup"><span data-stu-id="93d98-112">Track tickets in the security center home page and ServiceNow.</span></span>
 
