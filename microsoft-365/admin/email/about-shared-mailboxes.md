@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Delade post lådor används när flera personer behöver ha åtkomst till samma post låda. Läs mer om vad du behöver veta innan du skapar en delad post låda.
-ms.openlocfilehash: cc94ae30edcc7a8307328230989dc4a883732b0e
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+description: Delade postlådor används när flera personer behöver åtkomst till samma postlåda. Lär dig vad du behöver veta innan du skapar en delad postlåda.
+ms.openlocfilehash: 744c4fece24cf1fa5ee7259a0d722ff123ff2664
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568300"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926516"
 ---
 # <a name="about-shared-mailboxes"></a>Om delade postlådor
 
@@ -34,29 +35,29 @@ Delade postlådor används när flera personer behöver åtkomst till samma post
 
 Användare som har behörighet till gruppens postlåda kan skicka som eller skicka för postlådans e-postadress om administratören har gett dig behörighet att göra det. Det här är särskilt användbart för postlådor i hjälp och support eftersom användare kan skicka e-post från "contoso support" eller "Byggnad As reception".
 
-Här är några saker du bör känna till innan du [skapar en delad post låda](create-a-shared-mailbox.md):
+Innan du [skapar en delad postlåda](create-a-shared-mailbox.md)finns det några saker du bör känna till:
 
-- **Licenser:** Den delade post lådan kan lagra upp till 50 GB data utan att du tilldelar en licens till den. Därefter måste du tilldela postlådan en licens för att kunna lagra mer data. Mer information om licensiering för delade post lådor finns i [Exchange Online-begränsningar](https://technet.microsoft.com/library/exchange-online-limits.aspx#StorageLimits). När en delad postlåda når lagringsgränsen kommer du att kunna ta emot e-post ett tag till, men du kommer inte att kunna skicka ny e-post. Därefter slutar den att ta emot e-post. De som skickar e-post till postlådan får ett meddelande om utebliven leverans.
+- **Licenser:** Den delade postlådan kan lagra upp till 50 GB data utan att du behöver tilldela en licens till den. Därefter måste du tilldela postlådan en licens för att kunna lagra mer data. Mer information om licensiering av delade postlådor finns i Begränsningar för [Exchange Online.](https://technet.microsoft.com/library/exchange-online-limits.aspx#StorageLimits) När en delad postlåda når lagringsgränsen kommer du att kunna ta emot e-post ett tag till, men du kommer inte att kunna skicka ny e-post. Därefter slutar den att ta emot e-post. De som skickar e-post till postlådan får ett meddelande om utebliven leverans.
 
-- **Användar behörigheter:** Du måste ge användarna behörighet att använda den delade post lådan. Det är bara personer i organisationen som kan använda en delad postlåda.
+- **Användarbehörigheter:** Du måste ge användare behörighet (medlemskap) att använda den delade postlådan. Det är bara personer i organisationen som kan använda en delad postlåda.
 
-- **Externa användare:** Du kan inte ge personer utanför företaget (till exempel personer med ett Gmail-konto) åtkomst till din delade post låda. Om du vill kan du också skapa en grupp för Outlook i stället. Mer information finns i [skapa en Microsoft 365-grupp i administrations centret](../create-groups/create-groups.md).
+- **Externa användare:** Du kan inte ge personer utanför företaget (till exempel personer med ett Gmail-konto) åtkomst till den delade postlådan. Om du vill göra det kan du skapa en grupp för Outlook i stället. Mer information finns i [Skapa en Microsoft 365-grupp i administrationscentret.](../create-groups/create-groups.md)
 
-- **Använda med Outlook:** Förutom att använda Outlook på webben från webbläsaren för att komma åt delade post lådor kan du även använda Outlook för iOS-appen eller Outlook för Android-appen. Mer information finns i [lägga till en delad post låda i Outlook Mobile](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f). Ett annat alternativ är att skapa en grupp för den delade post lådan. Mer information finns i [jämföra grupper](../create-groups/compare-groups.md).
+- **Använd med Outlook:** Förutom att använda Outlook på webben från webbläsaren för att komma åt delade postlådor kan du också använda Outlook för iOS-appen eller Outlook för Android-appen. Mer information finns i Lägga [till en delad postlåda i Outlook Mobile.](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f) Ett annat alternativ är att skapa en grupp för den delade postlådan. Mer information finns i [Jämför grupper.](../create-groups/compare-groups.md)
 
-- **Kryptering:** Det går inte att kryptera e-post som skickas från en delad post låda. Detta beror på att en delad post låda inte har en egen säkerhets kontext (username/Password), så den kan inte tilldelas en. Om fler än en person är en medlem och de skickar/tar emot e-post som har krypterats med sina egna nycklar kanske andra medlemmar kan läsa e-postmeddelandet och andra kanske inte, beroende på vilken offentlig nyckel e-postmeddelandet krypterades med.
+- **Kryptering:** Du kan inte kryptera e-post som skickas från en delad postlåda. Det beror på att en delad postlåda inte har ett eget säkerhetssammanhang (användarnamn/lösenord) och kan därför inte tilldelas en nyckel. Om fler än en person är medlem och de skickar/tar emot e-postmeddelanden som de krypterat med sina egna nycklar kan andra medlemmar kanske inte läsa e-postmeddelandet och andra kanske inte, beroende på vilken offentlig nyckel e-postmeddelandet har krypterats med.
 
-- **Konvertering av post låda:** Du kan konvertera användar post lådor till delade post lådor. Se [Konvertera en användarpostlåda till en delad postlåda](convert-user-mailbox-to-shared-mailbox.md).
+- **Postlådekonvertering:** Du kan konvertera användarpostlådor till delade postlådor. Se [Konvertera en användarpostlåda till en delad postlåda](convert-user-mailbox-to-shared-mailbox.md).
 
-- **Administratörs roller:** Användare med rollen som global administratör eller Exchange-administratör kan skapa delade post lådor.
+- **Administratörsroller:** Användare med global administratör eller Exchange-administratörsroller kan skapa delade postlådor.
 
-- **Abonnemangs krav:** För att skapa en delad post låda måste du prenumerera på ett Microsoft 365 för företag-abonnemang som innehåller e-post (Exchange Online-tjänsten). Microsoft 365-programmen för företag-prenumeration inkluderar inte e-post. Microsoft 365 Business standard inkluderar e-post.
+- **Prenumerationskrav:** Om du vill skapa en delad postlåda måste du prenumerera på ett Microsoft 365 för företag-abonnemang som innehåller e-post (Exchange Online-tjänsten). E-post ingår inte i prenumerationen på Microsoft 365-appar för företag. Microsoft 365 Business Standard innehåller e-post.
 
-- **Loggar in:** En delad post låda är inte avsedd för direkt inloggning med tillhör ande användar konto. Du bör alltid blockera inloggning för det delade post lådan och behålla det blockerat.
+- **Logga in:** En delad postlåda är inte avsedd för direkt inloggning av det associerade användarkontot. Du bör alltid blockera inloggning för kontot för den delade postlådan och behålla den blockerad.
 
-- **För många användare:** När du har för många angivna användare samtidigt åtkomst till en delad post låda kan de ibland inte ansluta till post lådan. I det här fallet kan du överväga att minska antalet användare eller använda olika arbets belastningar, till exempel en Microsoft 365-grupp eller en gemensam mapp.
+- **För många användare:** Om det finns för många användare som samtidigt ansluter till en delad postlåda kan det hända att de inte kan ansluta till den här postlådan. I det här fallet kan du minska antalet användare eller använda en annan arbetsbelastning, till exempel en Microsoft 365-grupp eller offentlig mapp.
 
-- **Borttagning av meddelande:** Tyvärr kan du inte förhindra att personer tar bort meddelanden i en delad post låda. Det enda sättet är att skapa en Microsoft 365-grupp i stället för en delad post låda. En grupp i Outlook är som en delad post låda. En jämförelse av de två finns i [jämföra grupper](../create-groups/compare-groups.md). Mer information om grupper finns i [Läs mer om grupper](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+- **Meddelandeborttagning:** Tyvärr kan du inte hindra andra från att ta bort meddelanden i en delad postlåda. Det enda sättet runt det här är att skapa en Microsoft 365-grupp i stället för en delad postlåda. En grupp i Outlook är som en delad postlåda. En jämförelse av de två finns i [Jämför grupper.](../create-groups/compare-groups.md) Mer information om grupper finns i [Läs mer om grupper.](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

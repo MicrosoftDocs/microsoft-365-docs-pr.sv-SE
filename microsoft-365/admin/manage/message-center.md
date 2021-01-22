@@ -13,175 +13,177 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
-description: Få en översikt över Microsoft 365 meddelande Center och dess roll i ändrings hantering.
-ms.openlocfilehash: 6686fb8fe97cd38b432708c095b8d9545c33b6dd
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+description: Få en översikt över Microsoft 365 Meddelandecenter och dess roll i ändringshantering.
+ms.openlocfilehash: 58dec5676e7f2fd0ef590761dfa1e745cbb6814d
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881699"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926372"
 ---
 # <a name="message-center"></a>Meddelandecenter
 
 
-För att hålla reda på kommande ändringar, inklusive nya och ändrade funktioner, planerade underhåll och andra viktiga meddelanden, går du till <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">meddelande Center</a>. 
+Om du vill hålla reda på kommande ändringar, till exempel nya och ändrade funktioner, planerat underhåll eller andra viktiga meddelanden, går du till <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Meddelandecenter.</a> 
   
-Så här öppnar du meddelande Center:
+Så här öppnar du Meddelandecenter:
 
 ::: moniker range="o365-worldwide"
 
-- I administrations centret går du till Center för **hälso** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">meddelanden</a>.
+- Gå till Hälsomeddelandecenter  > <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">i administrationscentret.</a>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-- I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrations centret</a>går du till Center för **hälso** > **meddelanden**.
+- Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Hälsomeddelandecenter</a>  > **i administrationscentret.**
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
  
-- I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrations centret</a>går du till Center för **hälso** > **meddelanden**.
+- Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Hälsomeddelandecenter</a>  > **i administrationscentret.**
 
 ::: moniker-end
 
-Du kan också använda [Microsoft 365 admin-appen](https://go.microsoft.com/fwlink/p/?linkid=627216) på din mobila enhet för att Visa meddelande Center, som är ett bra sätt att fortsätta med push-meddelanden. 
+Du kan också använda [Microsoft 365 Admin-appen](https://go.microsoft.com/fwlink/p/?linkid=627216) på din mobila enhet för att visa Meddelandecenter, vilket är ett bra sätt att hålla dig aktuell med push-meddelanden. 
   
   
 ### <a name="frequently-asked-questions"></a>Vanliga frågor och svar
 
 |**Fråga**|**Svar**|
 |:-----|:-----|
-|Vem kan visa inlägg i Meddelandecenter?  <br/> |De flesta användare som har tilldelats en administratörs roll i Microsoft 365 kan visa meddelande Center inlägg. [Här är en lista](#admin-roles-that-dont-have-access-to-the-message-center) över administrativa roller som inte har till gång till meddelande Center. Du kan också tilldela rollen som meddelande Center läsare för användare som ska kunna läsa och dela meddelande Center inlägg utan andra administratörs behörigheter.<br/>|
-|Är det enda sättet som Microsoft kommunicerar ändringar om Microsoft 365?  <br/> |Nej, men meddelande Center är det vanligaste sättet för vi att kommunicera enskilda ändringar i Microsoft 365. Se [Håll koll på Microsoft 365-ändringar](stay-on-top-of-updates.md) för information om ytterligare resurser.  <br/> |
-|Hur kan jag se inlägg på mitt språk?  <br/> |Meddelande Center inlägg skrivs på endast på engelska, men du kan styra om inlägg ska visas på engelska eller automatiskt avbildas till önskat språk. Du kan också välja att översätta inlägg till alla språk som vi har stöd för. Mer information finns i [översättningar för meddelanden i meddelande Center](language-translation-for-message-center-posts.md) .  <br/> |
-|Kan jag förhandsgranska ändringar eller funktioner innan de distribueras i organisationen?  <br/> |Vissa ändringar och nya funktioner kan förhandsgranskas av vanligt i mål utgivnings programmet. Om du vill välja i administrations Center går du till **Inställningar** organisation för hantering av  >  **profil**  >  **Inställningar**. (I administrations centret kan du behöva välja **Visa alla** längst ned i det vänstra navigerings fönstret för att se **Inställningar**.) Du kan välja riktad version för hela organisationen eller bara för utvalda användare. Se [alternativ för standard eller riktade till Microsoft 365](release-options-in-office-365.md) för mer information om programmet.  <br/> |
-|Kan jag ta reda på det exakta datumet då en ändring blir tillgänglig för min organisation?  <br/> |Tyvärr kan vi inte berätta för dig vilket datum en ändring ska göras i din organisation. I vårt inlägg i meddelande Center kommer vi att ge så mycket information som möjligt för utgivnings perioden, baserat på vår konfidensnivå. Vi arbetar med förbättringar för bättre åtkomst till den detalj nivån.  <br/> |
-|Är de här meddelandena specifika för min organisation?  <br/> |Vi gör vårt bästa för att se till att du bara ser meddelanden i meddelande Center som påverkar din organisation. Microsoft 365-översikten innehåller alla funktioner som vi för närvarande arbetar med, men inte alla dessa funktioner gäller för varje organisation. <br/> |
-|Kan jag få e-post i meddelande Center i stället?  <br/> |Ja! Du kan välja att få en veckovis sammanfattad e-post till dig och upp till två andra e-postadresser. E-postmeddelandet per vecka är aktiverat som standard. Om du inte får dina vecko sammandrag markerar du mappen spam. I avsnittet [Inställningar](#preferences) i den här artikeln finns mer information om hur du ställer in en vecko sammandrag.  <br/> |
-|Hur slutar jag att ta emot meddelande Center sammandrag?  <br/> |Gå till meddelande Center i administrations centret och välj **Redigera inställningar**. Inaktivera alternativet för att **skicka en e-postsammandrag av mina meddelanden**. Om du inte längre vill få e-post om viktiga uppdateringar kan du stänga av **skicka mig e-post för viktiga uppdateringar**.  <br/> |
-|Hur kan jag se till att data integritets aviseringar tas emot av de rätta kontakterna i min organisation? <br/> |Som global administratör får du data integritets meddelanden för din organisation. Dessutom kan du tilldela rollen som sekretess läsare för meddelande Center till personer som ska kunna se data integritets meddelanden. Andra administratörs roller med åtkomst till meddelande Center kan inte visa data integritets meddelanden.   <br/><br/>Mer information finns i [Inställningar](#preferences) i den här artikeln.<br/> |
-|Varför kan jag inte se ett meddelande som tidigare fanns där? <br/> |För att hantera antalet meddelanden i meddelande Center upphör varje meddelande att gälla efter en viss tids period. Vanligt vis upphör meddelanden 30 dagar efter den tid som visas i meddelande texten. <br/> |
+|Vem kan visa inlägg i Meddelandecenter?  <br/> |De flesta användare som har tilldelats en administratörsroll i Microsoft 365 kan visa inlägg i Meddelandecenter. [Här är en lista](#admin-roles-that-dont-have-access-to-the-message-center) över administratörsroller som inte har tillgång till meddelandecentret. Du kan också tilldela rollen Läsare i Meddelandecenter till användare som ska kunna läsa och dela inlägg i Meddelandecenter utan att ha andra administratörsbehörigheter.<br/>|
+|Är det här det enda sättet Microsoft använder för att informera om ändringar om Microsoft 365?  <br/> |Nej, men Meddelandecenter är det huvudsakliga sätt vi använder för att informera om tidpunkten för enskilda ändringar i Microsoft 365. Se [Håll dig informerad om ändringarna i Microsoft 365](stay-on-top-of-updates.md) för information om ytterligare resurser.  <br/> |
+|Hur kan jag se inlägg på mitt språk?  <br/> |Inläggen i Meddelandecenter är skrivna på engelska, men du kan styra om inlägg som standard ska visas på engelska eller automatiskt maskinöversätts till det valda språket. Du kan också välja att maskinöversätt inlägg till vilket språk som helst som vi stöder. Mer [information finns i Översättningar för inlägg](language-translation-for-message-center-posts.md) i Meddelandecenter.  <br/> |
+|Kan jag förhandsgranska ändringar eller funktioner innan de distribueras i organisationen?  <br/> |Vissa ändringar och nya funktioner kan förhandsgranskas genom att anmäla dig till riktad version. Om du vill registrera dig går du till Inställningar för  >    >  **organisationsprofilens utgivningsinställningar i administrationscentret.** (I administrationscentret kan du behöva välja Visa **alla** längst ned i det vänstra navigeringsfönstret för att se **Inställningar.)** Du kan välja Riktad version för hela organisationen eller bara för valda användare. Se [alternativen för standard- eller riktad version i Microsoft 365](release-options-in-office-365.md) för mer information om programmet.  <br/> |
+|Kan jag ta reda på det exakta datumet då en ändring blir tillgänglig för min organisation?  <br/> |Tyvärr kan vi inte ange exakt datum då en ändring kommer att göras i organisationen. I inlägget i Meddelandecenter ger vi så mycket information som vi kan om tidpunkten för versionen, baserat på vår konfidensnivå. Vi arbetar med förbättringar för att bli bättre med den detaljnivån.  <br/> |
+|Är de här meddelandena specifika för min organisation?  <br/> |Vi gör vårt bästa för att se till att du bara ser inlägg i Meddelandecenter som påverkar din organisation. Översikt över Microsoft 365 innehåller alla funktioner som vi för närvarande arbetar med och distribuerar, men alla de här funktionerna gäller inte för alla organisationer. <br/> |
+|Kan jag få inlägg i meddelandecentret skickade via e-post i stället?  <br/> |Ja! Du kan välja om du vill att en veckovis sammanfattning ska skickas till dig och upp till två andra e-postadresser. Den veckovisa sammanfattningen som skickas via e-post är aktiverad som standard. Om du inte får dina veckovisa sammanfattningar kan du titta i skräppostmappen. I avsnittet [Inställningar](#preferences) i den här artikeln finns mer information om hur du ställer in vecko digest.  <br/> |
+|Hur slutar jag få sammanfattningen av Meddelandecenter?  <br/> |Gå till Meddelandecenter i administrationscentret och välj **Redigera inställningar.** Inaktivera alternativet Skicka en veckovis sammanfattning av mina meddelanden via **e-post.** Om du inte längre vill få e-post om större uppdateringar inaktiverar du Skicka **e-post för större uppdateringar.**  <br/> |
+|Hur kan jag se till att datasekretessmeddelanden tas emot av rätt kontakter i min organisation? <br/> |Som global administratör får du datasekretessmeddelanden för organisationen. Du kan även tilldela rollen Sekretessläsare i Meddelandecenter till personer som ska se datasekretessmeddelanden. Andra administratörsroller med åtkomst till Meddelandecenter kan inte visa datasekretessmeddelanden.   <br/><br/>Mer information finns i Inställningar [i](#preferences) den här artikeln.<br/> |
+|Varför kan jag inte se ett meddelande som tidigare fanns där? <br/> |För att hantera antalet meddelanden i Meddelandecenter förfaller varje meddelande och tas bort efter en tidsperiod. Vanligtvis upphör meddelanden att gälla 30 dagar efter tidsperioden som anges i meddelandets brödtext. <br/> |
 
 ### <a name="messages"></a>Meddelanden
 
-I meddelande centret presenteras alla aktiva meddelanden i ett tabell format. Som standard visas det senaste meddelandet högst upp i listan. Du kan välja en flik för att visa **alla aktiva meddelanden**, meddelanden med **hög prioritet** , **olästa meddelanden** och **meddelanden som stängts**. Och du kan använda den nedrullningsbara menyn **filtrera** för att visa alla meddelanden i en viss meddelande kategori.
+I Meddelandecenter visas en vy över alla aktiva meddelanden i ett tabellformat. Som standard visas det senaste meddelandet högst upp i listan. Du kan välja en flik för att **visa alla aktiva meddelanden,** **meddelanden med** hög **prioritet,** olästa meddelanden och **avvisade meddelanden.** Och du kan använda **den nedrullningrullningade** menyn Filter för att se alla meddelanden i en viss meddelandekategori.
 
-Här är en snabb översikt över informationen som du ser i varje kolumn. Välj någon av kolumn rubrikerna för att ändra sorterings ordningen.
+Här är en snabb överblick över informationen som visas i varje kolumn. Välj någon av kolumnrubrikerna om du vill ändra sorteringsordningen.
   
 |**Kolumn**|**Beskrivning**|
 |:-----|:-----|
-|Bockmarkering  <br/> |Om du markerar kryss rutan kolumn rubrik raden markeras alla meddelanden som för tillfället visas. Om du markerar kryss rutan bredvid ett eller flera meddelanden kan du ta en titt på dessa meddelanden.  <br/> |
-|Program ikon <br/> |Ikoner indikerar det program som meddelandet gäller.<br/> |
-|Meddelanderubrik  <br/> |Meddelande rubriker är kortfattade beskrivningar av kommande ändringar. Om den fullständiga rubriken inte visas placerar du markören över den och hela titeln visas i en popup-ruta.  <br/> |
-|Fler alternativ <br/> |Med fler alternativ kan du stänga ett meddelande, markera det som läst eller oläst, eller dela det med en annan administratör. Om du vill återställa ett avstängt meddelande väljer du fliken **avstängda meddelanden** , markerar kryss rutan bredvid meddelandet och väljer **Återställ**. <br/> |
-|Större uppdatering <br/> |Ett utrops tecken i den här kolumnen indikerar en större uppdatering. <br/> |
-|Åtgärd senast  <br/> |Vi anger datum här endast om vi gör en ändring som kräver att du vidtar en åtgärd före ett visst datum. Eftersom vi sällan använder kolumnen **åtgärd efter** , bör du betala extra uppmärksam på den om du ser något här.  <br/> |
-|Kategori  <br/> | Meddelanden identifieras av någon av följande kategorier: <br/><br/> **Förhindra eller åtgärda problem**: informerar dig om kända problem som påverkar din organisation och kan kräva att du vidtar åtgärder för att undvika avbrott i tjänsten. Meddelanden i Förhindra eller åtgärda problem skiljer från meddelanden om tjänstens tillstånd eftersom de förra uppmanar dig att ha framförhållning för att undvika problem. <br/> <br/> **Abonnemang för ändring**: du får information om ändringar i Microsoft 365 som kan kräva att du ska undvika avbrott i tjänsten. Vi meddelar till exempel att du har ändringar i system kraven eller vilka funktioner som tas bort. Vi försöker ge minst 30 dagars varsel om eventuella ändringar som kräver en administratör för att kunna fortsätta använda tjänsten. <br/> <br/> **Håll dig informerad**: visar om nya eller uppdaterade funktioner som vi aktiverar i din organisation. Funktionerna annonseras vanligt vis först i [Microsoft 365-översikten](https://go.microsoft.com/fwlink/?linkid=2070821). <br/><br/>Kan även informera dig om planerat underhåll i enlighet med vårt service nivå avtal. Planerat underhåll kan leda till att du eller användarna inte kan komma åt Microsoft 365, en specifik funktion eller en tjänst som e-post eller OneDrive för företag.  <br/> |
-|Senast uppdaterad  <br/> |Datum då meddelandet publicerades eller uppdaterades senast.  <br/> |
-|Meddelande-ID  <br/> |Microsoft håller reda på inläggen i Meddelandecenter med hjälp av meddelande-ID:n. Du kan referera till det här ID: t om du vill ge feedback eller om du ringer till ett visst meddelande.  <br/> |
+|Bockmarkering  <br/> |Om du markerar bockmarkeringen i kolumnrubrikraden markeras alla meddelanden som visas för närvarande. Om du markerar bockmarkeringen bredvid ett eller flera meddelanden kan du vidta åtgärder för dessa meddelanden.  <br/> |
+|Programikon <br/> |Ikoner anger det program som meddelandet gäller för.<br/> |
+|Meddelanderubrik  <br/> |Meddelanderubriker är korta beskrivningar av kommande ändringar. Om den fullständiga rubriken inte visas placerar du markören över den så visas hela rubriken i en popup-ruta.  <br/> |
+|Fler alternativ <br/> |Med fler alternativ kan du stänga ett meddelande, markera det som läst eller oläst, eller dela det med en annan administratör. Om du vill återställa ett  avvisat meddelande väljer du fliken Stäng meddelanden, markerar bockmarkeringen bredvid meddelandet och väljer **Återställ.** <br/> |
+|Större uppdatering <br/> |Ett utropstecken i den här kolumnen anger en större uppdatering. <br/> |
+|Åtgärd senast  <br/> |Vi anger datum här endast om vi gör en ändring som kräver att du vidtar en åtgärd före ett visst datum. Eftersom vi sällan använder **kolumnen Agera** senast bör du vara extra uppmärksam om du ser något här.  <br/> |
+|Kategori  <br/> | Meddelanden identifieras med någon av följande tre kategorier: <br/><br/> **Förhindra eller åtgärda problem:** Informerar dig om kända problem som påverkar organisationen och kan kräva att du vidta åtgärder för att undvika avbrott i tjänsten. Meddelanden i Förhindra eller åtgärda problem skiljer från meddelanden om tjänstens tillstånd eftersom de förra uppmanar dig att ha framförhållning för att undvika problem. <br/> <br/> **Planera för ändring:** Informerar dig om ändringar i Microsoft 365 som kan innebära att du måste agera för att undvika avbrott i tjänsten. Vi kommer till exempel att meddela dig om ändringar av systemkrav eller om funktioner som tas bort. Vi försöker tillhandahålla minst 30 dagar i förväg för alla ändringar som kräver att en administratör agerar för att tjänsten ska fungera normalt. <br/> <br/> **Håll dig** informerad: Berättar om nya eller uppdaterade funktioner som vi använder i din organisation. Funktionerna annonseras vanligtvis först i [översikten över Microsoft 365.](https://go.microsoft.com/fwlink/?linkid=2070821) <br/><br/>Kan även meddela dig om planerat underhåll enligt vårt servicenivåavtal. Planerat underhåll kan resultera i driftstopp, där du eller dina användare inte kan komma åt Microsoft 365, en viss funktion eller en tjänst som e-post eller OneDrive för företag.  <br/> |
+|Uppdaterades senast  <br/> |Datum då meddelandet publicerades eller uppdaterades senast.  <br/> |
+|Meddelande-ID  <br/> |Microsoft håller reda på inläggen i Meddelandecenter med hjälp av meddelande-ID:n. Du kan hänvisa till detta ID om du vill ge feedback eller ringer supporten angående ett visst meddelande.  <br/> |
 
 Mer information om vad du kan göra med meddelanden finns i [Hantera meddelanden i Meddelandecenter](manage-messages.md).
   
-### <a name="major-updates"></a>Viktiga uppdateringar
+### <a name="major-updates"></a>Större uppdateringar
 
-Du kan granska viktiga uppdateringar genom att välja fliken **hög prioritet** högst upp i meddelande Center.
+Du kan granska större uppdateringar genom att välja **fliken Hög** prioritet högst upp i meddelandecentret.
 
-Huvud uppdateringar skickas till minst 30 dagar i förväg när en åtgärd krävs och kan innehålla:
+Större uppdateringar meddelas minst 30 dagar i förväg när en åtgärd krävs och kan omfatta:
   
-- Ändringar av daglig produktivitet, till exempel Inkorgen, möten, ombud, delning och åtkomst
+- Ändringar av daglig produktivitet, till exempel inkorg, möten, möten, delning och åtkomst
 
-- Ändringar av teman, webb delar och andra komponenter som kan påverka anpassade funktioner
+- Ändringar av teman, webbdelar och andra komponenter som kan påverka anpassade funktioner
 
-- Ökar eller minskar till den synliga kapaciteten som lagring, antalet regler, objekt eller varaktigheter
+- Ökar eller minskar synlig kapacitet, till exempel lagring, antal regler, objekt eller varaktighet
 
-- Ändringar av produkt märkning som kan:
+- Ändringar av produktmärke som kan:
 
-  - Orsaka förvirring för slutanvändare,
+  - Orsaka förvirring för slutanvändarna
 
-  - Leder till ändringar i hjälp Skriv bords processer och referensmaterial, eller
+  - Resultera i ändringar av supportprocesser och referensmaterial, eller
 
   - Ändra en URL
 
 - En ny tjänst eller ett nytt program
 
-- Ändringar som kräver en administratörs åtgärd (exklusivt förhindrande eller åtgärdade problem)
+- Ändringar som kräver en administratörsåtgärd (endast för att förhindra eller åtgärda problem)
 
-- Ändringar där data lagras
+- Ändringar av var dina data lagras
   
-### <a name="preferences"></a>Önskemål
+### <a name="preferences"></a>Inställningar
 
-Om administrationen distribueras i hela organisationen kanske du inte vill ha några inlägg om alla Microsoft 365-tjänster. Varje administratör kan:
+Om administrationen har fördelats i organisationen kan det hända att du inte vill eller behöver se inlägg om alla Microsoft 365-tjänster. Varje administratör kan:
 
-- Ange inställningar som styr vilka meddelanden som visas i meddelande Center.
+- Ange inställningar som styr vilka meddelanden som visas i Meddelandecenter.
 - Filtrera meddelanden
-- Ange e-postinställningar för att få en veckovis sammandrag av alla meddelanden, e-postmeddelanden för endast viktiga uppdateringar och e-postmeddelanden för data integritets meddelanden.  
+- Ange e-postinställningar för att få en veckovis sammanfattning av alla meddelanden, e-postmeddelanden för endast större uppdateringar och e-postmeddelanden om datasekretessmeddelanden.  
 
 ::: moniker range="o365-worldwide"
 
-1. Välj **Redigera inställningar** högst upp i meddelande Center.
+1. Välj **Redigera inställningar** längst upp i meddelandecentret.
 
-2. Kontrol lera att kryss rutan är markerad för varje tjänst som du vill övervaka. Avmarkera kryss rutorna för de tjänster som du vill filtrera bort från din meddelande Center.
+2. Kontrollera att kryssrutan är markerad för varje tjänst som du vill övervaka. Avmarkera kryssrutorna för de tjänster som du vill filtrera bort från vyn i Meddelandecenter.
 
-3. Digest-meddelanden är aktiverade som standard och skickas till din primära e-postadress. Om du inte vill ta emot vecko sammandrag avmarkerar du kryss rutan **skicka en veckovis e-postsammandrag av mina meddelanden** . <br/><br/>E-postavisering för viktiga uppdateringar är en separat kontroll. Om du vill få e-postaviseringar om viktiga uppdateringar kontrollerar du att **skicka mig e-post för huvud uppdateringar** är markerat. Avmarkera kryss rutan om du vill sluta få e-post om viktiga uppdateringar. <br><br/>Markera kryss rutan bredvid **skicka mig e-post för data integritets meddelanden** för att få separata e-postaviseringar om data integritets meddelanden (data integritets meddelanden ingår inte i vecko sammandrag). <br><br/>Du kan markera eller avmarkera din primära e-postadress, men det går inte att ändra den. Om du vill ange andra e-postadresser som e-postmeddelandet för data integritets meddelanden skickas till markerar du kryss rutan **andra e-postadresser** och anger de andra e-postadresser dit du vill att e-postadressen ska skickas. Ange e-postadressen för en Microsoft 365-grupp eller en distributions lista om fler än två personer skulle få data integritets-e-post.
+3. Sammanfattningsmeddelanden är aktiverat som standard och skickas till din primära e-postadress. Om du vill sluta ta emot vecko digest avmarkerar du kryssrutan Skicka en veckovis sammanfattning av mina meddelanden via **e-post.** <br/><br/>E-postaviseringar för större uppdateringar är en separat kontroll. Om du vill få e-postmeddelanden om större uppdateringar kontrollerar du att **Skicka e-post för större uppdateringar** är markerat. Avmarkera kryssrutan om du vill sluta få e-post om större uppdateringar. <br><br/>Markera kryssrutan bredvid  Skicka e-postmeddelanden om datasekretessmeddelanden om du vill få separata e-postmeddelanden om datasekretessmeddelanden (datasekretessmeddelanden ingår inte i veckoinformationen). <br><br/>Du kan markera eller ta bort din primära e-postadress, men du kan inte ändra den. Om du vill ange andra e-postadresser som e-postmeddelandet med datasekretess skickas till markerar du kryssrutan Andra e-postadresser och anger de andra e-postadresserna dit du vill att e-postmeddelandet ska skickas.  Ange e-postadressen för en Microsoft 365-grupp eller en distributionslista om fler än två personer ska få e-post med datasekretess.
 
-4. Välj **Spara** om du vill behålla dina ändringar.
+4. Välj **Spara** om du vill behålla ändringarna.
   
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. Välj **Redigera inställningar för meddelande Center** överst i meddelande Center.
+1. Välj **Inställningar för Redigera meddelandecenter** högst upp i Meddelandecenter.
 
-2. Se till att knappen är inställd på **På** för varje tjänst du vill övervaka. Använd växlings knappen för att ändra inställningen till **av** för de tjänster som du vill filtrera bort från din meddelande Center.
+2. Se till att knappen är inställd på **På** för varje tjänst du vill övervaka. Använd växlingsknappen för att ändra inställningen till **Av** för de tjänster som du vill filtrera bort från vyn i Meddelandecenter.
 
-3. Digest-meddelanden är aktiverade som standard och skickas till din primära e-postadress. Om du inte vill ta emot vecko sammandrag ändrar du inställningen **skicka en veckovis sammandrag av mina meddelanden** till **av**. <br/><br/>E-postavisering för viktiga uppdateringar är en separat kontroll. Om du vill få e-postaviseringar om viktiga uppdateringar kontrollerar du att **skicka mig e-post för huvud uppdateringar** är **aktiverat**. Ändra inställningen till **av** för att sluta få e-post om viktiga uppdateringar. <br/><br/>För att få e-postaviseringar om data integritets meddelanden kontrollerar du att **skicka mig e-post för data integritets meddelanden** är **aktiverat**. Om du vill sluta få dessa meddelanden ändrar du inställningen till **av**. (Data integritets meddelanden är inte inkluderade i vecko sammandrag.)<br/><br/>Du kan markera eller avmarkera din primära e-postadress, men det går inte att ändra den. **Om** du vill ange andra e-postadresser som Sammanfattning av e-postmeddelandet skickas till kontrollerar du att **skicka en veckovis sammandrag av mina meddelanden** . Ange e-postadressen för en Microsoft 365-grupp eller en distributions lista om fler än två personer ska få den sammanfattande e-posten.
+3. Sammanfattningsmeddelanden är aktiverat som standard och skickas till din primära e-postadress. Om du vill sluta ta emot vecko digest ändrar du inställningen Skicka en veckovis sammanfattning av **mina** meddelanden till **Av.** <br/><br/>E-postaviseringar för större uppdateringar är en separat kontroll. Om du vill få e-postmeddelanden om större uppdateringar kontrollerar du att Skicka **e-post för större uppdateringar** är **på.** Ändra inställningen till Av om **du inte** vill få e-post om större uppdateringar. <br/><br/>Om du vill få e-postmeddelanden om datasekretessmeddelanden kontrollerar du att Skicka **e-postmeddelanden om datasekretessmeddelanden** är **på.** Om du inte vill få de här meddelandena ändrar du inställningen till **Av.** (Datasekretessmeddelanden ingår inte i vecko digesten.)<br/><br/>Du kan välja eller ta bort din primära e-postadress, men du kan inte ändra den. Om du vill ange andra e-postadresser som den veckovisa e-postsammanfattningen skickas till kontrollerar du att Skicka en veckovis sammanfattning **av mina meddelanden** är **På.** Ange e-postadressen för en Microsoft 365-grupp eller en distributionslista om du vill att sammanfattningen ska skickas till fler än två personer.
 
-4. Välj **Spara** om du vill behålla dina ändringar.<br/>
+4. Välj **Spara** om du vill behålla ändringarna.<br/>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Välj **Redigera inställningar för meddelande Center** överst i meddelande Center.
+1. Välj **Inställningar för Redigera meddelandecenter** högst upp i Meddelandecenter.
 
-2. Se till att knappen är inställd på **På** för varje tjänst du vill övervaka. Använd växlings knappen för att ändra inställningen till **av** för de tjänster som du vill filtrera bort från din meddelande Center.
+2. Se till att knappen är inställd på **På** för varje tjänst du vill övervaka. Använd växlingsknappen för att ändra inställningen till **Av** för de tjänster som du vill filtrera bort från vyn i Meddelandecenter.
 
-3. Digest-meddelanden är aktiverade som standard och skickas till din primära e-postadress. Om du inte vill ta emot vecko sammandrag ändrar du inställningen **skicka en veckovis sammandrag av mina meddelanden** till **av**. <br/><br/>E-postavisering för viktiga uppdateringar är en separat kontroll. Om du vill få e-postaviseringar om viktiga uppdateringar kontrollerar du att **skicka mig e-post för huvud uppdateringar** är **aktiverat**. Ändra inställningen till **av** för att sluta få e-post om viktiga uppdateringar. <br/><br/>För att få e-postaviseringar om data integritets meddelanden kontrollerar du att **skicka mig e-post för data integritets meddelanden** är **aktiverat**. Om du vill sluta få dessa meddelanden ändrar du inställningen till **av**. (Data integritets meddelanden är inte inkluderade i vecko sammandrag.)<br/><br/>Du kan markera eller avmarkera din primära e-postadress, men det går inte att ändra den. **Om** du vill ange andra e-postadresser som Sammanfattning av e-postmeddelandet skickas till kontrollerar du att **skicka en veckovis sammandrag av mina meddelanden** . Ange e-postadressen för en Microsoft 365-grupp eller en distributions lista om fler än två personer ska få den sammanfattande e-posten.
+3. Sammanfattningsmeddelanden är aktiverat som standard och skickas till din primära e-postadress. Om du vill sluta ta emot vecko digest ändrar du inställningen Skicka en veckovis sammanfattning av **mina** meddelanden till **Av.** <br/><br/>E-postaviseringar för större uppdateringar är en separat kontroll. Om du vill få e-postmeddelanden om större uppdateringar kontrollerar du att Skicka **e-post för större uppdateringar** är **på.** Ändra inställningen till Av om **du inte** vill få e-post om större uppdateringar. <br/><br/>Om du vill få e-postmeddelanden om datasekretessmeddelanden kontrollerar du att Skicka **e-postmeddelanden om datasekretessmeddelanden** är **på.** Om du inte vill få de här meddelandena ändrar du inställningen till **Av.** (Datasekretessmeddelanden ingår inte i vecko digesten.)<br/><br/>Du kan välja eller ta bort din primära e-postadress, men du kan inte ändra den. Om du vill ange andra e-postadresser som den veckovisa e-postsammanfattningen skickas till kontrollerar du att Skicka en veckovis sammanfattning **av mina meddelanden** är **På.** Ange e-postadressen för en Microsoft 365-grupp eller en distributionslista om du vill att sammanfattningen ska skickas till fler än två personer.
 
-4. Välj **Spara** om du vill behålla dina ändringar.<br/>
+4. Välj **Spara** om du vill behålla ändringarna.<br/>
 
 ::: moniker-end
 
-#### <a name="display-messages-in-your-preferred-language"></a>Visa meddelanden på önskat språk
+#### <a name="display-messages-in-your-preferred-language"></a>Visa meddelanden på det språk du föredrar
   
-Vi använder maskin översättning för att automatiskt visa meddelanden på ditt språk. Om du vill ha mer information om hur du ställer in språk kan du läsa [språk översättning för meddelanden i meddelande Center](language-translation-for-message-center-posts.md) .
+Vi använder maskinöversättning för att automatiskt visa meddelanden på det språk du föredrar. Läs [översättningar för inlägg i Meddelandecenter för](language-translation-for-message-center-posts.md) mer information om hur du ställer in ditt språk.
   
 > [!NOTE]
-> Vecko sammandrag och eventuella inlägg som är e-post skickas på engelska. Mottagarna kan använda [Translator för Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) för att läsa meddelandet på deras prioriterade språk. 
+> Veckoinlägget och alla inlägg som skickas via e-post skickas endast på engelska. Mottagarna kan använda [Translator för Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) för att läsa meddelandet på det språk de föredrar. 
   
-### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>Administratörs roller som inte har åtkomst till meddelande Center
+### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>Administratörsroller som inte har tillgång till meddelandecentret
 
 - Efterlevnadsadministratör
-- Administratör för villkorsstyrd åtkomst
-- Åtkomst granskare för kund lås
-- Enhets administratörer
-- Katalog läsare
-- Katalog-synkronisering
+- Villkorsstyrd åtkomstadministratör
+- Godkännare av Customer LockBox-åtkomst
+- Enhetsadministratörer
+- Katalogläsare
+- Katalogsynkroniseringskonton
 - Katalogredigerare
-- Intune tjänst administratör
-- Administratör för privilegierade roller
+- Intune-tjänstadministratör
+- Administratör med behörighet som administratör
 - Rapportläsare
 
-## <a name="unsubscribe-from-message-center-emails"></a>Avabonnera från e-post i meddelande Center
+## <a name="unsubscribe-from-message-center-emails"></a>Avbryta prenumerationen från e-postmeddelanden i Meddelandecenter
 
-1. Digest-meddelanden är aktiverade som standard och skickas till din primära e-postadress. Om du inte vill ta emot vecko sammandrag ändrar du inställningen **skicka en veckovis sammandrag av mina meddelanden** till **av**. <br/><br/>E-postavisering för viktiga uppdateringar är en separat kontroll. Om du inte vill få e-postaviseringar om viktiga uppdateringar kontrollerar du att **skicka e-post för huvud uppdateringar** är **inaktiverat**.  <br/><br/>För att sluta få meddelanden om data integritets meddelanden bör du kontrol lera att **skicka mig-e-postmeddelanden för data integritets meddelanden** är **inaktiverade**.  (Data integritets meddelanden är inte inkluderade i vecko sammandrag.)<br/><br/>
+1. Sammanfattningsmeddelanden är aktiverat som standard och skickas till din primära e-postadress. Om du vill sluta ta emot vecko digest ändrar du inställningen Skicka en veckovis sammanfattning av **mina** meddelanden till **Av.** <br/><br/>E-postaviseringar för större uppdateringar är en separat kontroll. Om du inte vill få e-postmeddelanden om större uppdateringar kontrollerar du att Skicka e-post **för större uppdateringar** är **av.**  <br/><br/>Om du vill sluta ta emot e-postmeddelanden om datasekretessmeddelanden kontrollerar du att Skicka **e-postmeddelanden för datasekretessmeddelanden** är **av.**  (Datasekretessmeddelanden ingår inte i vecko digesten.)<br/><br/>
 
-2. Välj **Spara** om du vill behålla dina ändringar.<br/>
+2. Välj **Spara** om du vill behålla ändringarna.<br/>

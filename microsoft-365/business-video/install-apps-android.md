@@ -1,5 +1,5 @@
 ---
-title: Installera Office-appar på Android
+title: Installera appar på Android
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,32 +16,33 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du installerar Outlook och andra Office-program på Android-enheter.
-ms.openlocfilehash: ba9e37a3012dd8d9e7000bf2af61c014df58023a
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Lär dig hur du installerar Outlook och andra Office-appar på Android-enheter.
+ms.openlocfilehash: 3b449d98a9e19e8f4ce8a3cc84dbbdce058dc310
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702726"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925128"
 ---
-# <a name="install-outlook-and-office-apps-on-android-devices"></a>Installera Outlook och Office-appar på Android-enheter
+# <a name="install-outlook-and-office-apps-on-android-devices"></a>Installera Outlook- och Office-appar på Android-enheter
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfquk?autoplay=false]
 
-Om din Android-enhet hanteras av Microsoft 365 Business Premium kan du uppmanas att konfigurera extra säkerhet första gången du installerar en Office-app. 
+Om din Android-enhet hanteras av Microsoft 365 Business Premium kan du uppmanas att ställa in extra säkerhet första gången du installerar ett Office-program. 
 
 ## <a name="try-it"></a>Prova!
 
-1. På din enhet väljer du Google Play-butiken.
-2. Sök efter det Office-program du vill installera. Vi&#39;lla använda Outlook för det här exemplet.
-3. På Välkomst skärmen för Outlook väljer du  **komma igång**.
-4. På sidan  **Lägg till konto**  anger du din Microsoft 365-e-postadress och väljer sedan  **Continue**.
-5. Ange lösen ordet under  **Ange lösen ord** och välj sedan  **Logga in**.
-6. På nästa sida väljer du  **Fortsätt**  om du vill lägga till ytterligare ett konto. Annars väljer du  **hoppa över**.
-7. När du uppmanas att lägga till programmet Intune-företagsportalsappen väljer du  **gå till butik**.
-8. Installera och öppna Intune-företagsportalsappen och välj sedan  **OK**  när du ser meddelandet som din organisation skyddar data i den här appen.
-9. Om du uppmanas att ange en PIN-kod anger du en 4-siffrig PIN-kod som du&#39;ll använda för att låsa upp telefonen, välja  **Skicka** , bekräfta din PIN-kod och sedan välja  **Skicka**  igen.
+1. Välj Google Play Store på enheten.
+2. Sök efter Office-programmet som du vill installera. Vi&#39;outlook för det här exemplet.
+3. Välj Kom igång på **välkomstskärmen i Outlook.**
+4. På sidan **Lägg till konto** anger du din Microsoft 365-e-postadress och väljer sedan **Fortsätt.**
+5. Skriv **ditt lösenord under** Ange ditt lösenord och välj sedan Logga **in.**
+6. På nästa sida väljer du Fortsätt  **om**  du vill lägga till ett annat konto. Annars väljer du **Hoppa över.**
+7. När du uppmanas att lägga till appen Intune-företagsportal väljer **du Gå till butik.**
+8. Installera och öppna appen Intune Company-portalen och välj  **sedan OK**  när du ser meddelandet om att din organisation skyddar data i appen.
+9. Om du tillfrågas om en PIN-kod anger du en fyrsiffrig PIN-kod som du&#39;använder för att låsa upp telefonen, väljer **Skicka,** bekräfta PIN-koden och väljer sedan Skicka **igen.**

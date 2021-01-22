@@ -9,41 +9,45 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bfd8305d23e0e6d761c629ee3048c6204f702d37
-ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
+ms.openlocfilehash: a80616b58298ba544b9eab1d19ffb77f0e6825d4
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49585334"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921356"
 ---
 # <a name="work-with-reports"></a>Arbeta med rapporter
 
-Microsoft Managed Desktop tillhandahåller flera rapporter och instrument paneler som IT-administratörer kan använda för att förstå olika aspekter av populationen av enheter.Du hittar rapporter på två platser: i [Microsoft slut punkts hanteraren](https://endpoint.microsoft.com) och i [administrations centret för Microsoft 365](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop). 
+Microsoft Managed Desktop tillhandahåller flera rapporter och instrumentpaneler som IT-administratörer i organisationen kan använda för att förstå olika aspekter av populationen av enheter.Du hittar rapporter på två platser: i [Microsoft Endpoint Manager och](https://endpoint.microsoft.com) i administrationscentret för Microsoft [365.](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop) 
 
-## <a name="reports-in-microsoft-endpoint-manager"></a>Rapporter i Microsoft slut punkts hanteraren
+## <a name="reports-in-microsoft-endpoint-manager"></a>Rapporter i Microsoft Endpoint Manager
 
-Microsoft Endpoint Manager-konsolen samlar in rapporter från flera produkter på en och samma plats så att du kan övervaka och undersöka problem med konfiguration och enheter för Azure AD Organization ("klient organisation"). Microsoft Managed Desktop har ett avsnitt under **rapporter** i huvud menyn där du kan hitta rapporter som är specifika för Microsoft Managed Desktop Management för de enheter som du har registrerat.
+I Microsoft Endpoint Manager-konsolen samlas rapportering från flera produkter på en enda plats så att du kan övervaka och undersöka problem med konfigurationen och enheterna i Azure AD-organisationen ("klientorganisationen"). Microsoft Managed Desktop har ett **avsnitt** under Rapporter i huvudmenyn där du kan hitta rapporter som är specifika för Microsoft Managed Desktop-hantering av enheter som du har registrerat.
 
-På flera platser i Microsoft slut punkts hanteraren kan du dessutom filtrera rapporter från andra produkt grupper till att omfatta eller utesluta dina enheter som hanteras av Microsoft Managed Desktop. Dessa rapporter har integrerat denna filtrerings funktion:
+Dessa rapporter omfattar:
+- **Hanterade enheter**  >  **Funktionsuppdateringar:** Den här vyn visar den övergripande statusen för funktionsuppdateringar för alla microsoft-enheter som hanteras av datorn.
+- **Hanterade enheter**  >  **Office-uppdateringar:** Den här vyn visar den övergripande statusen för Office-uppdateringar för alla dina Microsoft Managed Desktop-enheter.
 
-- **Alla enheter**
-- **Kompatibilitet med enheter**
-- **Icke-kompatibla enheter**
+På flera platser i Microsoft Endpoint Manager kan du dessutom filtrera rapporter från andra produktgrupper för att specifikt inkludera eller exkludera dina enheter som hanteras av Microsoft Managed Desktop. Dessa rapporter har integrerat den här filtreringsfunktionerna:
+
+- [Alla enheter](https://docs.microsoft.com/mem/intune/remote-actions/device-management#get-to-your-devices)
+- [Enhetsefterlevnad](https://docs.microsoft.com/mem/intune/fundamentals/reports#device-compliance-report-organizational)
+- [Enheter som inte är kompatibla](https://docs.microsoft.com/mem/intune/fundamentals/reports#noncompliant-devices-report-operational)
 
 > [!NOTE]
-> Anpassade Microsoft Managed Desktop-roller garanterar endast åtkomst till Microsoft Managed Desktop-rapporter. Om du vill komma åt andra delar av Microsoft slut punkts hanteraren, till exempel **alla enheter**, läser du [rollbaserad åtkomst kontroll med Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control). 
+> Anpassade Microsoft-hanterade skrivbordsroller garanterar endast åtkomst till Rapporter om Hanterade Microsoft-datorer. Information om hur du kommer åt andra delar av Microsoft Endpoint Manager, till exempel **Alla** enheter, finns i Rollbaserad [åtkomstkontroll med Microsoft Intune.](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control) 
 
-## <a name="reports-in-microsoft-365-admin-center"></a>Rapporter i administrations Center för Microsoft 365
+## <a name="reports-in-microsoft-365-admin-center"></a>Rapporter i administrationscentret för Microsoft 365
 
-Du hittar Microsoft Managed Desktop-rapporter genom att öppna [administrations centret för microsoft 365](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop)och sedan navigera till **rapporter** och välja **Microsoft Managed Desktop**. Du kan också följa den direkta länken till dessa rapporter från **Microsoft Managed Desktop** på Start sidans [Microsoft slut punkts hanterare](https://endpoint.microsoft.com). 
+Du hittar rapporter om Microsoft Hanterade skrivbord genom att öppna Administrationscenter  för [Microsoft 365](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop)och sedan navigera till Rapporter och välja **Microsoft Hanterat skrivbord.** Du kan också följa direktlänken till de här rapporterna från fliken **Microsoft Hanterad** dator på startsidan [Microsoft Endpoint Manager.](https://endpoint.microsoft.com) 
 
-Dessa rapporter innehåller: 
+Dessa rapporter omfattar: 
 
-- [Användnings](usage-insights.md) information – den här vyn innehåller användnings mått för Microsoft Managed Station ära datorer.
-- [Ökad tillförlitlighet](reliability-insights.md) – med den här vyn får du en översikt över dina hanterade enheter.
-- [Batteri insikter](battery-insights.md) – i den här vyn visas information om energi förbrukningen för appar och projektor livs längd för enheter i din miljö.
-- [Windows Security Update Insights](security-update-insights.md) – den här vyn visar information om status för säkerhets uppdateringar för Microsoft Managed Station ära datorer.
+- [Användningsinformation](usage-insights.md) – den här vyn ger användningsmått för Microsoft Hanterade skrivbordsenheter.
+- [Insikter om tillförlitlighet](reliability-insights.md) – den här vyn ger dig en hälsosammanfattning av dina hanterade enheter.
+- [Batteriinsikter](battery-insights.md) – Den här vyn visar information om energianvändningen för appar och den projicerade batteritiden för enheter i din miljö.
+- [Information om Windows-säkerhetsuppdateringar](security-update-insights.md) – Den här vyn visar information om säkerhetsuppdateringarna för dina Microsoft Managed Desktop-enheter.
 
- ## <a name="inventory-data"></a>Lager data
+ ## <a name="inventory-data"></a>Lagerdata
 
-Utöver de andra rapporterna kan du exportera information om enheter som hanteras av Microsoft Managed Desktop. Använd fliken **Exportera alla** i vyn **Devices** **enheter** i Microsoft slut punkts hanteraren för att [Hämta en detaljerad inventerings rapport](device-inventory-report.md).
+Förutom de andra rapporterna kan du exportera information om de enheter som hanteras av Microsoft Managed Desktop. I vyn **Enheter** i området **Enheter i** Microsoft Endpoint Manager använder du fliken Exportera **alla** för att ladda ned en [detaljerad lagerrapport.](device-inventory-report.md)

@@ -1,9 +1,9 @@
 ---
 title: Ge feedback om Microsoft 365 Defender
-description: Ge feedback från Microsoft 365 Defender
-keywords: feedback, m365, säkerhet, 365, funktioner
+description: Ge produktfeedback om Microsoft 365 Defender
+keywords: feedback, m365 säkerhet, säkerhet, 365, funktioner
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 56f8bd0ff303ff38f8b3a577f6bc7aa58f21a745
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: a06f7254a892b8fd9942940946699ecb23707387
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846741"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926744"
 ---
 # <a name="provide-feedback-on-microsoft-365-defender"></a>Ge feedback om Microsoft 365 Defender
 
@@ -34,12 +35,12 @@ ms.locfileid: "48846741"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Din feedback hjälper oss att få bättre möjligheter att skydda din miljö från avancerade attacker. Dela med dig av dina erfarenheter, exponeringar och förfrågningar genom att ge feedback.
+Din feedback hjälper oss att bli bättre i att skydda miljön mot avancerade attacker. Dela din upplevelse, intryck och förfrågningar genom att ge feedback.
 
-1. Välj **ge feedback** i vilken del av portalen som helst. 
+1. Välj Ge feedback från valfri del **av portalen.** 
 
-    ![Bild av knappen feedback](../../media/feedback.png)
+    ![Bild på feedbackknappen](../../media/feedback.png)
 
-2. Betygs ätt din upplevelse och ge information om vad du tyckte om eller var förbättringen kan göras. Du kan också välja att få kontakt med feedback. 
+2. Betygsätta din upplevelse och ange information om vad du gillade eller var förbättringar kan göras. Du kan också välja att bli kontaktad angående feedbacken. 
 
-3. Välj **Skicka**.
+3. Välj **Skicka.**

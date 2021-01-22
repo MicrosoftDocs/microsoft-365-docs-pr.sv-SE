@@ -16,42 +16,43 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du importerar e-post till Microsoft 365för Business.
-ms.openlocfilehash: ae72662c779d230addb3b15d0d486900328fa602
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Lär dig hur du importerar e-post till Microsoft 365 för företag.
+ms.openlocfilehash: a53552ddead1ed69a7c9b77bb8021a6340690059
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702515"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927184"
 ---
 # <a name="import-email-to-microsoft-365-for-business"></a>Importera e-post till Microsoft 365 för företag 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
 
-När du har registrerat dig för Microsoft 365 kanske du fortfarande har e-post till ett gammalt konto. Om du till exempel använde ett Gmail eller ett Outlook-konto för arbete. Du kan fortsätta att använda både nya och gamla konton, eller så kan du importera data från det gamla kontot till det nya.
+När du har registrerade dig för Microsoft 365 kanske du fortfarande har e-post på väg till ett gammalt konto. till exempel om du använde ett Gmail- eller Outlook-konto i arbetet. Du kan fortsätta att använda både nya och gamla konton eller så kan du importera data från det gamla kontot till det nya.
 
 ## <a name="try-it"></a>Prova!
 
-### <a name="step-1-export-your-old-email"></a>Steg 1: exportera din gamla e-post.
+### <a name="step-1-export-your-old-email"></a>Steg 1: Exportera din gamla e-post.
 
-1. I Outlook väljer du  **Arkiv**, **öppna och exportera** och sedan **Importera/exportera**.
-2. Välj  **Exportera till en fil** och välj sedan  **Nästa**.
-3. Välj  **Outlook-datafil** och sedan  **Nästa**.
-4. Välj det gamla e-postkontot.
-5. Kontrol lera att du inkluderar undermappar. Välj sedan  **Nästa**.
-6. Välj  **Bläddra** och gå till en plats som är lätt att komma ihåg, till exempel Skriv bordet. Välj  **OK** och sedan **Slutför**.
-7. Lämna lösen ords fälten tomma och välj sedan **OK**.
+1. I Outlook väljer **du Arkiv,** **Öppna och Exportera** och sedan **Importera/Exportera.**
+2. Välj **Exportera till en fil** och välj sedan **Nästa.**
+3. Välj **Outlook-datafil** och välj sedan **Nästa.**
+4. Välj ditt gamla e-postkonto.
+5. Kontrollera att du tar med undermappar. Välj sedan **Nästa.**
+6. Välj  **Bläddra** och gå till en plats som är lätt att komma ihåg, till exempel skrivbordet. Välj **OK** och sedan **Slutför.**
+7. Lämna lösenordsfälten tomma och välj **sedan OK.**
 
-    Det gamla e-postkontot har exporter ATS.
+    Ditt gamla e-postkonto har exporterats.
 
-### <a name="step-2-import-your-old-email-into-your-new-email-account"></a>Steg 2: importera din gamla e-post till det nya e-postkontot
+### <a name="step-2-import-your-old-email-into-your-new-email-account"></a>Steg 2: Importera din gamla e-post till det nya e-postkontot
 
-1. I Outlook väljer du  **Arkiv**, **Öppna**,  **Exportera** och sedan **Importera/exportera**.
-2. Välj  **Importera från ett annat program eller en fil** och välj sedan  **Nästa**.
-3. Välj  **Outlook-datafil** och sedan  **Nästa**.
-4. Välj  **Bläddra** och gå till den fil du just exporterade. Markera den och välj sedan  **Öppna** och sedan **Nästa**.
-5. Kontrol lera att du inkluderar undermappar och att du importerar objekt till samma mapp i det nya e-postkontot. Välj  **Slutför**.
+1. Välj Arkiv,  **Öppna,** **Exportera**  **och sedan** **Importera/exportera** i Outlook.
+2. Välj **Importera från ett annat program eller en** fil och välj sedan **Nästa.**
+3. Välj **Outlook-datafil** och välj sedan **Nästa.**
+4. Välj  **Bläddra** och gå till filen som du precis exporterade. Markera den och välj **sedan Öppna** och sedan **Nästa.**
+5. Kontrollera att du tar med undermappar och att du importerar objekt till samma mapp i det nya e-postkontot. Välj **Slutför.**

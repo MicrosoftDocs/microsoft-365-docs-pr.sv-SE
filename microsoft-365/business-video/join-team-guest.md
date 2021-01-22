@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du ansluter till ett team som gäst i Microsoft Teams.
-ms.openlocfilehash: 85ad752c3b54dcd64020771b097026c964e6fac5
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 31d5acb1a0294a54bcb5b5c7c74d76dbba7124f7
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702706"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925032"
 ---
 # <a name="join-a-team-as-a-guest"></a>Ansluta till ett team som gäst
 
@@ -34,18 +35,18 @@ ms.locfileid: "49702706"
 
 ## <a name="try-it"></a>Prova!
 
-Om du får en inbjudan från Microsoft Teams för att gå med i ett team finns det ett par steg för att acceptera inbjudan.
+Om du får en Microsoft Teams-inbjudan om att gå med i ett team finns det några saker du behöver göra för att acceptera inbjudan.
 
-1. Öppna e-postinbjudan och välj  **Öppna Microsoft Teams**. Om du inte ser inbjudan kan du kontrol lera mappen skräp post.
-  1. Om din e-postadress inte redan har använts för att skapa ett Microsoft-konto måste du skapa ett.
+1. Öppna e-postinbjudan och **välj Öppna Microsoft Teams.** Om du inte ser inbjudan tittar du i skräppostmappen.
+  1. Om din e-postadress inte har använts tidigare för att skapa ett Microsoft-konto måste du skapa ett.
 
-     I dialog rutan  **Skapa konto**  väljer du  **Nästa** , skapa ett lösen ord och väljer  **Nästa**.
-  1. Verifiera din e-postadress genom att öppna verifierings meddelandet och kopiera säkerhets koden.
-  1. Ange din säkerhets kod i dialog rutan  **Bekräfta e-post**  , Välj  **Nästa** , ange captcha i rutan  **Ange de tecken som du ser**  , Välj  **Nästa** och sedan  **acceptera**.
-1. Om du inte vill ladda ned Microsoft Teams-appen väljer du  **Använd webb programmet i stället**.
-1. I Teams Web App kan du Visa eller svara på inlägg eller skapa dina egna inlägg och välja fliken  **filer**  för att visa eller redigera team dokument.
+     Välj **Nästa i** dialogrutan **Skapa** konto, skapa ett lösenord och välj **Nästa.**
+  1. Verifiera din e-postadress genom att öppna e-postbekräftelsen och kopiera säkerhetskoden.
+  1. Ange din säkerhetskod  i dialogrutan Verifiera e-post, välj  **Nästa,** ange CAPTCHA i ange de tecken du ser raden, välj **Nästa** och sedan **Acceptera.**
+1. Om du inte vill ladda ned Microsoft Teams-appen väljer du **Använd webbappen i stället.**
+1. I Teams-webbappen kan du visa eller svara på inlägg  eller skapa dina egna inlägg och välja Fliken Filer för att visa eller redigera teamdokument.
 
-    Om du redan använder Teams-appen i organisationen som ansluter till ett team som gäst är det mycket enklare.
+    Om du redan använder Teams-appen i organisationen är det mycket enklare att gå med i ett team som gäst.
 
-1. Öppna bara Microsoft Teams-appen och välj  **Ja**  för att växla till det team du är inbjuden till.  Nu kan du samar beta med ett projekt i Teams.
-2. Om du vill gå tillbaka till företagets team väljer du det från List rutan  **organisation**  .
+1. Öppna bara Microsoft Teams-appen och välj  **Ja för**  att växla till det team som du är inbjuden till.  Nu kan du samarbeta i projektet i Teams.
+2. Om du vill växla tillbaka till företagets team väljer du det i  **listrutan**  Organisation.

@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
-description: Konfigurera vidarebefordran av e-post till ett eller flera e-postkonton med Office365.
-ms.openlocfilehash: 5bbb7d4fa122051725418153e43f40aec370de61
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+description: Konfigurera vidarebefordran av e-post till ett eller flera e-postkonton med hjälp av Office365.
+ms.openlocfilehash: 1168b549443de218339b1b8dcb32e57da175a2aa
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580621"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926648"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Konfigurera vidarebefordran av e-post i Microsoft 365
 
@@ -38,71 +39,71 @@ ms.locfileid: "49580621"
 
 ::: moniker-end
 
-Som administratör för en organisation kan du ha företags krav för att konfigurera e-postvidarekoppling för en användares post låda. Med vidarebefordran av e-post kan du vidarebefordra e-postmeddelanden som skickas till en användares brevlåda till en annan användares brevlåda i eller utanför organisationen.
+Som administratör för en organisation kanske du behöver konfigurera vidarebefordran av e-post för en användares postlåda. Med vidarebefordran av e-post kan du vidarebefordra e-postmeddelanden som skickas till en användares brevlåda till en annan användares brevlåda i eller utanför organisationen.
 
 > [!IMPORTANT]
-> Du kan använda filter principer för utgående e-post för att styra automatisk vidarebefordran till externa mottagare. Mer information finns i [styra automatisk extern e-postvidarebefordran i Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-worldwide&preserve-view=true#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
+> Du kan använda principer för utgående skräppostfilter för att styra automatisk vidarebefordran till externa mottagare. Mer information finns i Kontrollera [automatisk vidarebefordran av extern e-post i Microsoft 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-worldwide&preserve-view=true#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls)
 
 ## <a name="configure-email-forwarding"></a>Konfigurera vidarebefordran av e-post
 
-Observera följande innan du konfigurerar e-postvidarebefordran:
+Innan du konfigurerar vidarebefordran av e-post bör du observera följande:
 
-- När du har konfigurerat e-postvidarekoppling vidarekopplas bara **nya** e-postmeddelanden som skickas till  *från*  -post lådan.
+- När du har angett vidarebefordran av **e-post** vidarebefordras bara nya  *e-postmeddelanden*  som skickas till från postlådan.
 
-- För e-postvidarekoppling krävs det att  *from*  -kontot har en licens. Om du konfigurerar vidarebefordran av e-post eftersom användaren har lämnat organisationen är ett annat alternativ att [göra om postlådan till en delad postlåda](convert-user-mailbox-to-shared-mailbox.md). På det sättet kan flera personer komma åt den. En delad postlåda kan dock inte vara större än 50 GB.
+- Vidarebefordran av e-post kräver  *att från-kontot*  har en licens. Om du konfigurerar vidarebefordran av e-post eftersom användaren har lämnat organisationen är ett annat alternativ att [göra om postlådan till en delad postlåda](convert-user-mailbox-to-shared-mailbox.md). På det sättet kan flera personer komma åt den. En delad postlåda kan dock inte vara större än 50 GB.
 
-Du måste vara Exchange-administratör eller global administratör i Microsoft 365 för att utföra de här stegen. Mer information finns i avsnittet [om administratörs roller](../add-users/about-admin-roles.md).
+Du måste vara Exchange-administratör eller global administratör i Microsoft 365 för att kunna göra följande. Mer information finns i avsnittet om [administratörsroller.](../add-users/about-admin-roles.md)
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **användare** \> **[aktiva användare](https://go.microsoft.com/fwlink/p/?linkid=834822)** i administrations centret.
+1. Gå till sidan Användare aktiva användare **i** \> **[administrationscentret.](https://go.microsoft.com/fwlink/p/?linkid=834822)**
 
-2. Välj namnet på den användare vars e-postadress du vill vidarebefordra för att öppna egenskaps sidan.
+2. Välj namnet på den användare vars e-post du vill vidarebefordra för att öppna egenskapssidan.
 
-3. Välj **Hantera e-postvidarebefordran** på fliken **e-post** .
+3. Välj Hantera **vidarebefordran av** e-post **på fliken E-post.**
 
-4. På sidan e-postchatt väljer du **vidarebefordra alla e-postmeddelanden som skickas till den här post lådan**, anger adressen för vidarebefordran och väljer om du vill behålla en kopia av vidarebefordrade e-postmeddelanden. Se till att en licens tilldelas till användarkontot om du inte ser det här alternativet. Välj **Spara ändringar**.
+4. På sidan för vidarebefordran av e-post väljer du Vidarebefordra alla e-postmeddelanden som skickats till den här postlådan, anger adressen för vidarebefordran och väljer om du vill behålla en kopia av vidarebefordrade e-postmeddelanden. Se till att en licens tilldelas till användarkontot om du inte ser det här alternativet. Välj **Spara ändringar**.
 
-    **Om du vill vidarebefordra till flera e-postadresser** kan du be användaren att konfigurera en regel i Outlook så att den vidarebefordras till adresserna. Mer information finns i [använda regler för att automatiskt vidarebefordra meddelanden](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746).
+    **Om du vill vidarebefordra till flera e-postadresser** kan du be användaren att konfigurera en regel i Outlook som vidarebefordrar till adresserna. Mer information finns i Använda [regler för att automatiskt vidarebefordra meddelanden.](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)
 
-     Du kan också [skapa en distributions grupp](../setup/create-distribution-lists.md)i administrations centret, [lägga till adresser i den](add-user-or-contact-to-distribution-list.md)och ställa in vidarebefordran så att den pekar på dl enligt instruktionerna i den här artikeln.
+     Du kan också skapa en [distributionsgrupp](../setup/create-distribution-lists.md) [i](add-user-or-contact-to-distribution-list.md)administrationscentret, lägga till adresser till den och sedan konfigurera vidarebefordran så att den pekar på distributionslistan enligt anvisningarna i den här artikeln.
 
-5. Ta inte bort kontot för den användare som skickar e-post som du vidarebefordrar eller tar bort sin licens!  Om du gör det stoppas e-postvidarekoppling.
+5. Ta inte bort kontot för användaren som vidarebefordrar e-post till eller ta bort användarens licens.  Om du gör det avbryts vidarebefordran av e-post.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **användare** \> **[aktiva användare](https://go.microsoft.com/fwlink/p/?linkid=847686)** i administrations centret.
+1. Gå till sidan Användare aktiva användare **i** \> **[administrationscentret.](https://go.microsoft.com/fwlink/p/?linkid=847686)**
 
-2. Välj namnet på den användare vars e-postadress du vill vidarebefordra för att öppna egenskaps sidan.
+2. Välj namnet på den användare vars e-post du vill vidarebefordra för att öppna egenskapssidan.
 
-3. Expandera **e-postinställningar** och välj sedan **Redigera** i avsnittet **e-postvidarebefordran** .
+3. Expandera **e-postinställningarna** och välj Redigera i avsnittet **Vidarebefordran** av e-post. 
 
-4. På sidan e-postvidarekoppling ställer du in på **på**, anger adressen för vidarebefordran och väljer om du vill behålla en kopia av vidarebefordrade e-postmeddelanden. Se till att en licens tilldelas till användarkontot om du inte ser det här alternativet. Välj **Spara**.
+4. På sidan för vidarebefordran av e-post ställer du in växlingsknappen på **På,** anger adressen för vidarebefordran och väljer om du vill behålla en kopia av vidarebefordrade e-postmeddelanden. Se till att en licens tilldelas till användarkontot om du inte ser det här alternativet. Välj **Spara**.
 
-   **Om du vill vidarebefordra till flera e-postadresser** kan du be användaren att konfigurera en regel i Outlook så att den vidarebefordras till adresserna. Mer information finns i [använda regler för att automatiskt vidarebefordra meddelanden](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746).
+   **Om du vill vidarebefordra till flera e-postadresser** kan du be användaren att konfigurera en regel i Outlook som vidarebefordrar till adresserna. Mer information finns i Använda [regler för att automatiskt vidarebefordra meddelanden.](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)
 
-   Du kan också [skapa en distributions grupp](../setup/create-distribution-lists.md)i administrations centret, [lägga till adresser i den](add-user-or-contact-to-distribution-list.md)och ställa in vidarebefordran så att den pekar på dl enligt instruktionerna i den här artikeln.
+   Du kan också skapa en [distributionsgrupp](../setup/create-distribution-lists.md) [i](add-user-or-contact-to-distribution-list.md)administrationscentret, lägga till adresser till den och sedan konfigurera vidarebefordran så att den pekar på distributionslistan enligt anvisningarna i den här artikeln.
 
-5. Ta inte bort kontot för den användare som skickar e-post som du vidarebefordrar eller tar bort sin licens!  Om du gör det stoppas e-postvidarekoppling.
+5. Ta inte bort kontot för användaren som vidarebefordrar e-post till eller ta bort användarens licens.  Om du gör det avbryts vidarebefordran av e-post.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **användare** \> **[aktiva användare](https://go.microsoft.com/fwlink/p/?linkid=850628)** i administrations centret.
+1. Gå till sidan Användare aktiva användare **i** \> **[administrationscentret.](https://go.microsoft.com/fwlink/p/?linkid=850628)**
 
-2. Välj namnet på den användare vars e-postadress du vill vidarebefordra för att öppna egenskaps sidan.
+2. Välj namnet på den användare vars e-post du vill vidarebefordra för att öppna egenskapssidan.
 
-3. Expandera **e-postinställningar** och välj sedan **Redigera** i avsnittet **e-postvidarebefordran** .
+3. Expandera **e-postinställningarna** och välj Redigera i avsnittet **Vidarebefordran** av e-post. 
 
-4. På sidan e-postvidarekoppling ställer du in på **på**, anger adressen för vidarebefordran och väljer om du vill behålla en kopia av vidarebefordrade e-postmeddelanden. Se till att en licens tilldelas till användarkontot om du inte ser det här alternativet. Välj **Spara**.
+4. På sidan för vidarebefordran av e-post ställer du in växlingsknappen på **På,** anger adressen för vidarebefordran och väljer om du vill behålla en kopia av vidarebefordrade e-postmeddelanden. Se till att en licens tilldelas till användarkontot om du inte ser det här alternativet. Välj **Spara**.
 
-   **Om du vill vidarebefordra till flera e-postadresser** kan du be användaren att konfigurera en regel i Outlook så att den vidarebefordras till adresserna. Mer information finns i [använda regler för att automatiskt vidarebefordra meddelanden](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746).
+   **Om du vill vidarebefordra till flera e-postadresser** kan du be användaren att konfigurera en regel i Outlook som vidarebefordrar till adresserna. Mer information finns i Använda [regler för att automatiskt vidarebefordra meddelanden.](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)
 
-   Du kan också [skapa en distributions grupp](../setup/create-distribution-lists.md)i administrations centret, [lägga till adresser i den](add-user-or-contact-to-distribution-list.md)och ställa in vidarebefordran så att den pekar på dl enligt instruktionerna i den här artikeln.
+   Du kan också skapa en [distributionsgrupp](../setup/create-distribution-lists.md) [i](add-user-or-contact-to-distribution-list.md)administrationscentret, lägga till adresser till den och sedan konfigurera vidarebefordran så att den pekar på distributionslistan enligt anvisningarna i den här artikeln.
 
-5. Ta inte bort kontot för den användare som skickar e-post som du vidarebefordrar eller tar bort sin licens!  Om du gör det stoppas e-postvidarekoppling.
+5. Ta inte bort kontot för den användare som vidarebefordrar e-post till eller ta bort användarens licens.  Om du gör det avbryts vidarebefordran av e-post.
 
 ::: moniker-end

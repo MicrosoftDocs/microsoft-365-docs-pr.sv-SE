@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du distribuerar team med skydd för känslig data.
-ms.openlocfilehash: 16c4ceedcafee02ca5d168cc70fc61bb8d01fc72
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 0f3f12867314fdd91dfb563f0377995807c0f63d
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750793"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921116"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Konfigurera team med skydd för känslig data
 
@@ -143,7 +143,7 @@ Konfigurera webbplatsdelning endast för ägare
 2. I verktygsfältet för teamet klickar du på **Filer**.
 3. Klicka på ellipsen och sedan på **Öppna i SharePoint**.
 4. Klicka på inställningsikonen i verktygsfältet på den underliggande SharePoint-webbplatsen och klicka sedan på **Webbplatsbehörigheter**.
-5. I fönstret Webbplatsbehörigheter under **Delningsinställningar** klickar du på **Ändra delningsinställningar**.
+5. I fönstret **Webbplatsbehörigheter**, under **webbplatsdelning**, klickar du på **Ändra hur medlemmar kan dela**.
 6. Under **Delningsbehörigheter** väljer du **Webbplatsägare och medlemmar, och personer med redigeringsbehörighet kan dela filer och mappar, men endast webbplatsägare kan dela webbplatsen** och klicka sedan på **Spara**.
 
 

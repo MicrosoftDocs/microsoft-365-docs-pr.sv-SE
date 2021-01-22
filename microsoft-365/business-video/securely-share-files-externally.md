@@ -1,5 +1,5 @@
 ---
-title: Dela filer på säkert sätt utanför företaget
+title: Dela filer på ett säkert sätt utanför företaget
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,31 +16,32 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig att säkert dela dina affärsfiler externt.
-ms.openlocfilehash: 2ffb9067b73daad8591f6563640ca95ac4c8724b
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Lär dig hur du kan dela företagsfilerna externt på ett säkert sätt.
+ms.openlocfilehash: c2e611d6a6fc6fb239302d2b9d4960471cd5f707
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703184"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925988"
 ---
-# <a name="securely-share-files-externally"></a>Dela filer på säkert sätt externt
+# <a name="securely-share-files-externally"></a>Dela filer externt på ett säkert sätt
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE22Yf0?autoplay=false]
 
-I Microsoft 365 för företag är det enkelt att dela filer med personer i organisationen, men ibland måste du dela med personer utanför organisationen. Om du vill dela filer säkert med kunderna kan du skicka en säker länk.
+I Microsoft 365 för företag är det enkelt att dela filer med personer i organisationen, men ibland behöver du också dela med personer utanför organisationen. Om du vill dela filer på ett säkert sätt med dina kunder kan du skicka en säker länk.
 
 ## <a name="try-it"></a>Prova!
 
-1. Högst upp i dokument biblioteket på SharePoint-webbplatsen klickar du på **nytt** och väljer sedan **mapp**.
-1. Ge mappen ett namn och klicka sedan på **skapa**.
-1. Ladda upp de filer som du vill dela till det nya biblioteket eller Välj **nytt** för att skapa nya dokument direkt i biblioteket.
-1. Markera den nya mappen i dokument biblioteket och klicka på knappen **dela** .
-1. I fönstret **Skicka länk** klickar du på listan högst upp, väljer **specifika personer**, väljer **Tillåt redigering** och väljer sedan **Använd**.
-1. Ange kundens e-postadress i fönstret **Skicka länk** , Skriv ett meddelande och välj **Skicka**.
+1. Klicka på Nytt längst upp i dokumentbiblioteket på SharePoint-webbplatsen och välj sedan **Mapp.**
+1. Ge mappen ett namn och klicka sedan på **Skapa.**
+1. Ladda upp de filer du vill dela till det nya biblioteket eller välj **Ny** för att skapa nya dokument direkt i biblioteket.
+1. Välj den nya mappen i dokumentbiblioteket och klicka sedan på **knappen** Dela.
+1. Klicka på **listan högst** upp i fönstret Skicka länk, välj **Specifika** personer, välj Tillåt **redigering** och välj sedan **Använd.**
+1. I fönstret **Skicka länk** anger du kundens e-postadress, skriver ett meddelande och väljer **Skicka.**
 
-    Din kund får ett e-postmeddelande med en verifierings kod som de måste skicka till sig själva för att få åtkomst till mappen. Om det inte går att hitta e-postmeddelandet bör de kontrol lera mappen skräp post.
+    Kunden får ett e-postmeddelande med en verifieringskod som denna behöver skicka till sig själv för att komma åt din mapp. Om de inte hittar e-postmeddelandet bör de kontrollera mappen Skräppost.

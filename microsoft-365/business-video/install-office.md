@@ -1,5 +1,5 @@
 ---
-title: Installera Microsoft Office-appar
+title: Installera Microsoft Office-program
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du installerar Microsoft Office-program.
-ms.openlocfilehash: 7b50a639f5f2945c524d268502636d7a809f3866
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Lär dig hur du installerar Microsoft Office-appar.
+ms.openlocfilehash: abbeb8fdaa36956014ef955f853616cdb7d4e83c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702715"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925020"
 ---
 # <a name="install-office-apps"></a>Installera Office-appar 
 
@@ -34,12 +35,12 @@ ms.locfileid: "49702715"
 
 ## <a name="try-it"></a>Prova!
 
-Microsoft Office-program finns på  **Start** -menyn. Om&#39;du inte ser dem kan du installera dem själv.
+Du hittar Microsoft Office-appar på **Start-menyn.** Om du inte&#39;kan du installera dem själv.
 
-1. Gå till office.com. Du kanske måste logga in med ditt arbets konto.
-2. Välj **installera Office**   >   **Microsoft 365-appar**   >    och sedan **Ja**.
-3. Office-apparna installeras. Processen kan ta flera minuter. När den är klar väljer du  **Stäng**.
-4. Om du vill installera Microsoft Teams går du till sidan office.com och väljer  **Teams**.
-5. Hämta Windows-appen och välj sedan  **Kör**. Teams visar en uppmaning när installationen är klar.
+1. Gå till office.com. Du kan behöva logga in med ditt arbetskonto.
+2. Välj **Installera Office** Microsoft   >   **365-appar** Kör och välj sedan   >    **Ja.**
+3. Office-apparna installeras. Processen kan ta flera minuter. Välj Stäng när det **är klart.**
+4. Om du vill installera Microsoft Teams går du office.com och väljer **Teams.**
+5. Skaffa Windows-appen och välj sedan **Kör.** Teams visar en uppmaning när installationen är klar.
 
-De Office-program du installerat visas nu på  **Start** -menyn.
+De Office-program som du har installerat visas nu på **Start-menyn.**

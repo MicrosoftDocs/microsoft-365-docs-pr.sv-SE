@@ -1,5 +1,5 @@
 ---
-title: Registrera dig för Microsoft 365 Business Premium-prenumeration
+title: Registrera dig för en Microsoft 365 Business Premium-prenumeration
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,34 +16,35 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du registrerar dig för Microsoft 365 Business Premium.
-ms.openlocfilehash: 8026213b630d444e3611808082cdce4b084136d5
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: a2b632d0adfa0cfaf0ae2cebc20ec2642a3ceb48
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702596"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925904"
 ---
-# <a name="sign-up-for-microsoft-365-business-premium-subscription"></a>Registrera dig för Microsoft 365 Business Premium-prenumeration
+# <a name="sign-up-for-microsoft-365-business-premium-subscription"></a>Registrera dig för en Microsoft 365 Business Premium-prenumeration
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX?autoplay=false]
 
 ## <a name="try-it"></a>Prova!
 
-Följ de här anvisningarna för att registrera dig för Microsoft 365 Business Premium (tidigare kallat Microsoft 365 Business):
+Följ dessa steg för att registrera dig för Microsoft 365 Business Premium (kallades tidigare Microsoft 365 Business):
 
 1. Registrera dig för Microsoft 365 Business Premium genom att söka efter det online och välja det.
-2. Välj  **för företag** och  **Köp nu**.
-3. Ange din personliga e-postadress, Välj  **Nästa** och sedan  **Konfigurera konto**.
-4. Ange namn, telefonnummer och företagets namn. Om du&#39;d som hjälp från en Microsoft-partner markerar du rutan bredvid  **Jag vill att Microsoft ska dela min information**. Välj  **Nästa**.
-5. Om du vill verifiera telefonnumret väljer du  **Skicka verifierings kod**. Ange den kod du fick på telefonen och välj  **Verifiera**.
-6. Om du redan har en domän väljer du  **Skaffa en Microsoft-domän för tillfället** och anger företagets namn. Detta blir din tillfälliga e-postadress. Den blir också en del av dina permanenta SharePoint-och OneDrive-URL: er. Välj  **kontrol lera tillgänglighet** och sedan  **Nästa**.
-7. Ange ditt användar namn, lösen ord, bekräfta ditt lösen ord och välj sedan  **Registrera dig**  för att skapa ditt konto.
-8. Ange antalet användare, Välj en fakturerings plan och välj sedan  **Nästa**.
-9.  Ange ditt företags&#39;s-adress och sedan  **Nästa**.
-10. Ange din kreditkorts information och gör sedan  **order**. Efter en liten stund skapas ditt konto.
-11. I den här punkten kan du välja  **Fortsätt att konfigurera kontot** , eller så kan du logga in på administrations centret för Microsoft 365 och slutföra installationen senare.
+2. Välj **För företag** och sedan Köp **nu.**
+3. Ange din personliga e-postadress, **välj** Nästa och **konfigurera sedan konto.**
+4. Ange namn, telefonnummer och företagsnamn. Om du&#39;hjälp från en Microsoft-partner markerar du kryssrutan bredvid Jag vill **att Microsoft ska dela min information.** Välj **Nästa.**
+5. Bekräfta ditt telefonnummer genom att välja Skicka **verifieringskod.** Ange koden du fick på telefonen och välj **Verifiera.**
+6. Om du redan har en domän väljer du  **Hämta en Microsoft-domän och** anger ditt företagsnamn. Det här blir din tillfälliga e-postadress. Det blir också en del av dina permanenta URL-adresser för SharePoint och OneDrive. Välj **Kontrollera tillgänglighet** och sedan **Nästa.**
+7. Ange ditt användarnamn, ett lösenord, bekräfta lösenordet och välj sedan Registrera  **dig för**  att skapa ditt konto.
+8. Ange antalet användare, välj en faktureringsplan och välj sedan **Nästa.**
+9.  Ange ditt&#39;adress och sedan **Nästa.**
+10. Ange kreditkortsinformationen och gör **sedan beställningen.** Efter en liten stund skapas ditt konto.
+11. Nu kan du välja  **Fortsätt** för att konfigurera kontot, eller så kan du logga in på administrationscentret för Microsoft 365 och slutföra konfigurationen senare.

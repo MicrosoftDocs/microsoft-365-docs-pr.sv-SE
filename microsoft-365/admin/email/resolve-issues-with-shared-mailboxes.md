@@ -16,38 +16,39 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Prova de här lösningarna om du får problem med delade post lådor.
-ms.openlocfilehash: c889d3aa2fab8c2dce4cc2a8a00ef49a905363a1
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: Prova de här lösningarna om du upplever problem med delade postlådor.
+ms.openlocfilehash: ba62db76edff6e4ab3d738ed0af8db2a40c18394
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445513"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926492"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Lösa problem med delade postlådor
 
-Om du ser fel meddelanden när du skapar eller använder en delad post låda kan du försöka med följande. 
+Om du får felmeddelanden när du skapar eller använder en delad postlåda kan du prova de här lösningarna. 
 
-## <a name="error-when-creating-shared-mailboxes"></a>Fel när delade post lådor skapades
+## <a name="error-when-creating-shared-mailboxes"></a>Fel när delade postlådor skapas
 <a name="bkmk_Fix"> </a>
 
-Om du får fel meddelandet " **" SMTP: <delade post lådans namn \> "används redan av proxyadresser eller LegacyExchangeDN av" \<name> ". Välj en annan proxyadress**, det innebär att du försöker ge den delade post lådan ett namn som redan används. Anta att du vill ha delade postlådor med namnen info@domän1 och info@domän2. Du kan göra det på två sätt:
+Om du ser felmeddelandet används proxyadressen "smtp:<namn på delad postlåda " redan av proxyadresserna eller **\> LegacyExchangeDN för " \<name> ". Välj en annan proxyadress,** vilket innebär att du försöker ge den delade postlådan ett namn som redan används. Anta att du vill ha delade postlådor med namnen info@domän1 och info@domän2. Du kan göra det på två sätt:
 
-  - Använd Windows PowerShell. Anvisningar finns i det här blogg inlägget: [skapa delade post lådor med samma alias på olika domäner](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+  - Använd Windows PowerShell. Anvisningar finns i det här blogginlägget: [Skapa delade postlådor med samma alias på olika domäner](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     
-  - Ge den andra delade post lådan något annat från början för att få veta mer om felet. I Admin Center byter du namn på den delade post lådan till det du vill ha.
+  - Ge den andra delade postlådan ett annat namn från början för att komma runt felet. Byt sedan namn på den delade postlådan till det du vill i administrationscentret.
 
-## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>Fel om att inte ha behörighet att skicka när du använder en delad post låda
+## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>Fel om att du inte har skickat behörigheter när du använder en delad postlåda
 
-Om du har skapat en delad post låda och sedan försöker skicka ett meddelande från den kan du få följande:
+Om du har skapat en delad postlåda och sedan försöker skicka ett meddelande från den kan följande hända:
 
-**Det gick inte att skicka meddelandet. Du har inte behörighet att skicka meddelandet å angiven användares vägnar.**
+**Det här meddelandet kunde inte skickas. Du har inte behörighet att skicka meddelandet åt den angivna användaren.**
 
-Det här meddelandet visas när Microsoft 365 drabbas av ett problem med replikeringsfördröjning. Det ska gå längre tid än en timme, eller så när informationen om den nya delade post lådan (eller tillagd användare) replikeras i alla data Center. Vänta en timme och försök sedan igen för att skicka ett meddelande.
+Det här meddelandet visas när Microsoft 365 har problem med replikeringssvarstid. Den bör försvinna om någon timme, när informationen om den nya delade postlådan (eller den nya användaren) replikeras över alla våra datacenter. Vänta en timme och försök sedan igen för att skicka ett meddelande.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

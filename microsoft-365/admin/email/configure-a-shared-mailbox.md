@@ -16,23 +16,24 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: När du har skapat en delad post låda ska du konfigurera vissa inställningar för dess användare, till exempel vidarebefordran av e-post och automatiska svar. Senare kanske du vill ändra andra inställningar, till exempel post lådans namn eller medlemmar.
-ms.openlocfilehash: a007b3ca810bdfc00176e71a737a510230f18113
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: När du har skapat en delad postlåda kan du konfigurera vissa inställningar för den delade postlådan, till exempel för vidarebefordran av e-post och automatiska svar. Senare kanske du vill ändra andra inställningar, till exempel postlådenamnet eller medlemmarna.
+ms.openlocfilehash: fe5d35be556b8edf5456bc2c0b820dc0ce77e323
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445681"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926612"
 ---
 # <a name="configure-shared-mailbox-settings"></a>Redigera inställningar för delad postlåda
 
-När du har [skapat en delad post låda](create-a-shared-mailbox.md)kan du konfigurera vissa inställningar för användare av post lådor, till exempel vidarebefordran av e-post och automatiska svar. Senare kanske du vill ändra andra inställningar, till exempel namn på post låda, medlemmar eller medlem. 
+När du har [skapat en delad postlåda](create-a-shared-mailbox.md)kan du konfigurera vissa inställningar för postlådeanvändarna, till exempel vidarebefordran av e-post och automatiska svar. Senare kanske du vill ändra andra inställningar, till exempel postlådenamn, medlemmar eller medlemsbehörigheter. 
 
-## <a name="change-the-name-or-email-alias-of-a-shared-mailbox-or-change-the-primary-email-address"></a>Ändra namn eller e-postalias för en delad post låda eller ändra den primära e-postadressen
+## <a name="change-the-name-or-email-alias-of-a-shared-mailbox-or-change-the-primary-email-address"></a>Ändra namn eller e-postalias för en delad postlåda eller ändra den primära e-postadressen
 
 ::: moniker range="o365-worldwide"
 
@@ -52,15 +53,15 @@ När du har [skapat en delad post låda](create-a-shared-mailbox.md)kan du konfi
 
 ::: moniker-end
 
-2. Markera den delade post låda som du vill redigera och välj sedan **redigera** bredvid **namn, e-post, e-postalias**.
+2. Markera den delade postlådan som du vill redigera och välj sedan **Redigera** bredvid **Namn, E-post, E-postalias.**
 
-3. Ange ett nytt namn eller Lägg till ett annat alias. Om du vill ändra den primära e-postadressen måste din post låda ha fler än ett e-postalias.
+3. Ange ett nytt namn eller lägg till ett annat alias. Om du vill ändra den primära e-postadressen måste postlådan ha fler än ett e-postalias.
 
 4. Välj **Spara**.
 
 ## <a name="forward-emails-that-are-sent-to-a-shared-mailbox"></a>Vidarebefordra e-postmeddelanden som skickas till en delad postlåda
 
-Du behöver inte tilldela en licens till den delade post lådan för att vidarebefordra e-post som skickas till den. Du kan vidarebefordra meddelanden till alla giltiga e-postadresser och distributions listor.
+Du behöver inte tilldela den delade postlådan en licens för att vidarebefordra e-post som skickas till den. Du kan vidarebefordra meddelandena till en giltig e-postadress eller distributionslista.
 
 ::: moniker range="o365-worldwide"
 
@@ -80,9 +81,9 @@ Du behöver inte tilldela en licens till den delade post lådan för att vidareb
 
 ::: moniker-end
 
-2. Markera den delade post låda som du vill redigera och välj sedan redigera **e-postvidarekoppling** \> **Edit**.
+2. Markera den delade postlådan som du vill redigera och välj sedan Vidarebefordran av **e-post,** \> **redigera.**
     
-3. Ställ in växlings knappen **på på**och ange en e-postadress för att vidarebefordra meddelanden till. Det kan vara en valfri giltig e-postadress. Om du vill vidarebefordra till flera adresser måste du [skapa en distributions grupp](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists) för adresserna och sedan ange namnet på gruppen i den här rutan.
+3. Ställ in växlingsknappen **på På** och ange en e-postadress för att vidarebefordra meddelandena till. Det kan vara vilken giltig e-postadress som helst. Om du vill vidarebefordra till flera adresser måste du skapa en [distributionsgrupp](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists) för adresserna och sedan ange namnet på gruppen i den här rutan.
     
 4. Välj **Spara**.
 
@@ -106,13 +107,13 @@ Du behöver inte tilldela en licens till den delade post lådan för att vidareb
 
 ::: moniker-end
 
-2. Markera den delade post låda som du vill redigera och välj sedan **autosvar** \> **Edit**.
+2. Markera den delade postlådan som du vill redigera och välj **sedan Redigera** \> **autosvar.**
     
 3. Ändra växlingsknappen till **På** och välj om du vill skicka till personer inom eller utanför organisationen.
 
 4. Skriv ett meddelande till personer inom organisation. Du endast lägga till text, inga bilder.
 
-5. Om du *även* vill skicka ett svar till personer utanför organisationen markerar du kryss rutan som du vill ska få svaret från och skriver texten. Det går inte att bara skicka till personer utanför organisationen, men inte till personer inom organisationen.
+5. Om du även *vill* skicka ett svar till personer utanför organisationen markerar du kryssrutan, vem du vill ska få svaret och skriver texten. Det går inte bara att skicka till personer utanför organisationen, men inte till personer i organisationen.
 
 6. Välj **Spara**.
 
@@ -120,10 +121,10 @@ Du behöver inte tilldela en licens till den delade post lådan för att vidareb
 
 Standardinställningen är att e-post skickad från den delade postlådan inte sparas i den gemensamma Skickat-mappen. Den sparas istället hos den person som skickade meddelandet, i mappen Skickat.
 
-Om du vill att alla ska kunna se det skickade e-postmeddelandet redigerar du inställningarna för delade post lådor i administrations **Sent items** centret och väljer \> **Redigera**skickat.
+Om du vill att alla ska kunna se skickad e-post redigerar du inställningarna för den delade postlådan i administrationscentret och väljer **Redigera skickade** \> **objekt.**
 
 
-## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a>Välj de program som en delad post låda kan använda för att komma åt Microsoft-e-post
+## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a>Välj de appar som en delad postlåda kan använda för att komma åt e-post från Microsoft
 
 ::: moniker range="o365-worldwide"
 
@@ -143,16 +144,16 @@ Om du vill att alla ska kunna se det skickade e-postmeddelandet redigerar du ins
 
 ::: moniker-end
 
-2. Markera den delade post låda som du vill redigera och välj sedan redigera **e-postprogram** \> **Edit**.
+2. Markera den delade postlådan som du vill redigera och välj sedan Redigera i **e-postprogram.** \> 
 
-3. Ställ in växlings knappen **på** för alla program som du vill att medlemmar ska kunna använda för att komma åt den delade post lådan. Ställ in växlings knappen på **av** för de program som du inte vill att de ska använda. 
+3. Ställ in växlingsknappen **på På** för alla program som du vill att medlemmarna ska kunna använda för åtkomst till den delade postlådan. Ställ in växlingsknappen **på** Av för appar som du inte vill att de ska använda. 
 
 4. Välj **Spara**.
 
 
-## <a name="put-a-shared-mailbox-on-litigation-hold"></a>Lägga till en delad post låda i en tvist
+## <a name="put-a-shared-mailbox-on-litigation-hold"></a>Sätta en delad postlåda i bevarande av juridiska skäl
 
-Om du vill veta mer om rättsliga undantag läser du [skapa en tvist](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold).
+Mer information om bevarande av juridiska skäl finns i [Skapa ett bevarande av juridiska skäl.](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold)
 
 ::: moniker range="o365-worldwide"
 
@@ -172,11 +173,11 @@ Om du vill veta mer om rättsliga undantag läser du [skapa en tvist](https://do
 
 ::: moniker-end
 
-2. Markera den delade post låda som du vill redigera och välj sedan **rättsliga spärr** \> **redigering**.
+2. Markera den delade postlådan som du vill redigera och välj sedan Bevarande **av juridiska** \> **skäl, Redigera.**
 
-3. Ställ in växlings knappen **på på**. 
+3. Ställ in växlingsknappen på **På.** 
 
-4. Du kan också ange en varaktighet, anteckningen för spärren och en URL-adress med mer information.  
+4. Du kan också ange en varaktighet, en anteckning om hållen och en URL med mer information.  
 
 5. Välj **Spara**.
 
@@ -201,15 +202,15 @@ Om du vill veta mer om rättsliga undantag läser du [skapa en tvist](https://do
 
 ::: moniker-end
 
-2. Markera den delade post låda som du vill redigera och välj sedan **medlemmar** \> **Edit**.
+2. Markera den delade postlådan som du vill redigera och välj sedan **Redigera** \> **för medlemmar.**
 
 3. Gör något av följande:
-   - Om du vill lägga till medlemmar väljer du **Lägg till medlemmar**, Sök efter eller markera en medlem som du vill lägga till och väljer sedan **Spara**.
-   - För att ta bort medlemmar, Använd sökrutan för att söka efter medlemmen om det behövs, Välj **X** bredvid medlemmens namn och välj sedan **Spara**. 
+   - Om du vill lägga till **medlemmar väljer du Lägg** till medlemmar, söker efter eller väljer en medlem att lägga till och väljer sedan **Spara.**
+   - Om du vill ta bort medlemmar använder du sökrutan för att söka efter medlemmen om det behövs, väljer **X** bredvid medlemmens namn och väljer **sedan Spara.** 
 
 4. Välj **Spara** igen.
 
-## <a name="add-or-remove-permissions-of-members"></a>Lägga till eller ta bort medlemmars behörigheter
+## <a name="add-or-remove-permissions-of-members"></a>Lägga till eller ta bort behörigheter för medlemmar
 
 ::: moniker range="o365-worldwide"
 
@@ -229,19 +230,19 @@ Om du vill veta mer om rättsliga undantag läser du [skapa en tvist](https://do
 
 ::: moniker-end
 
-2. Markera den delade post låda som du vill redigera och välj sedan **medlemmar** , \> **Anpassa behörigheter**.
+2. Markera den delade postlådan som du vill redigera och välj sedan **Medlemmar** \> **Anpassa behörigheter.**
 
-3. Välj **Redigera** bredvid den behörighet du vill ändra för en medlem. 
+3. Välj **Redigera** bredvid den behörighet som du vill ändra för en medlem. 
 
 4. Gör något av följande:
-   - Om du vill ge den behörigheten till en medlem väljer du **Lägg till behörigheter**, söker efter eller väljer en medlem som du vill lägga till och väljer sedan **Spara**.
-   - Om du vill ta bort tillstånd från en medlem kan du använda sökrutan för att söka efter medlemmen, om det behövs, välja **X** bredvid medlemmens namn och sedan **Spara**. 
+   - Om du vill ge den behörigheten till ytterligare en medlem väljer du Lägg till **behörigheter,** söker efter eller väljer en medlem att lägga till och väljer sedan **Spara.**
+   - Om du vill ta bort behörigheten för en medlem använder du sökrutan för att söka efter medlemmen om det behövs, väljer **X** bredvid medlemmens namn och väljer **sedan Spara.** 
 
 4. Välj **Spara** igen.
 
-## <a name="show-or-hide-a-shared-mailbox-in-the-global-address-list"></a>Visa eller dölja en delad post låda i den globala adress listan
+## <a name="show-or-hide-a-shared-mailbox-in-the-global-address-list"></a>Visa eller dölja en delad postlåda i den globala adresslistan
 
-Om du väljer att inte visa den delade post lådan i den globala adress listan visas inte post lådan i organisationens adress lista, men e-post skickas till den. 
+Om du väljer att inte visa den delade postlådan i den globala adresslistan visas inte postlådan i organisationens adresslista, men den får fortfarande e-post som skickas till den. 
 
 ::: moniker range="o365-worldwide"
 
@@ -261,14 +262,14 @@ Om du väljer att inte visa den delade post lådan i den globala adress listan v
 
 ::: moniker-end
 
-2. Markera den delade post låda som du vill redigera och välj sedan **Visa i global adress lista** \> **redigering**.
+2. Markera den delade postlådan som du vill redigera och välj sedan **Visa i den globala adresslistan** \> **Redigera.**
 
-3. Ställ in växlings knappen **på**  eller **av**. 
+3. Ställ in växlingsknappen **på På** eller **Av.** 
 
 4. Välj **Spara**.
 
 > [!NOTE]
-> Om du döljer en delad post låda från adress listan blir det omöjligt för nya delade post lådor att lägga till den dolda post lådan i sin Outlook-profil förrän den delade post lådan visas i adress listan. 
+> Om du döljer en delad postlåda från adresslistan går det inte att lägga till den dolda postlådan i den delade postlådan i deras Outlook-profil tills den delade postlådan visas igen i adresslistan. 
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

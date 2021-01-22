@@ -18,74 +18,75 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
-description: Lär dig hur du återställer dina lösen ord med standard verktyget för återställning av lösen ord.
-ms.openlocfilehash: bbde517858186d844412aca21f231620ed76496a
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+description: Lär dig hur du återställer dina lösenord med självbetjäningsverktyget för återställning av lösenord.
+ms.openlocfilehash: c777b9d840e0e9e467c1283fff94eca9a061ee73
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551926"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925560"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Låt användare återställa sina egna lösenord
 
-Som Microsoft 365-administratör kan du låta andra använda [standard verktyget för återställning av lösen ord](https://go.microsoft.com/fwlink/p/?LinkId=522677) så att du inte behöver återställa lösen ord för dem. Det innebär mindre jobb för dig!
+Som Microsoft 365-administratör kan du [](https://go.microsoft.com/fwlink/p/?LinkId=522677) låta användare använda självbetjäningsverktyget för återställning av lösenord så att du inte behöver återställa lösenord för dem. Det innebär mindre jobb för dig!
   
 ## <a name="before-you-begin"></a>Innan du börjar
   
-- Du får själv återställning av lösen ord för moln användare **utan kostnad** för Microsoft 365-verksamhet, utbildning eller ideell betalning. Den fungerar inte med utvärderings versionen av Microsoft 365.
+- Självbetjäning för återställning av  lösenord för molnanvändare blir kostnadsfri i alla betalabonnemang för Microsoft 365 Business, Education eller Nonprofit. Det fungerar inte med utvärderingsversionen av Microsoft 365.
 
 - Tjänsten använder Azure. Du får automatiskt den här funktionen **kostnadsfritt** när du utför de här stegen. Det kostar dig ingenting att aktivera självbetjäning för återställning av lösenord om du inte använder andra Azure-funktioner.
 
 - **Om du använder Active Directory lokalt** gäller inte de två punkterna ovan. Du kan du konfigurera det här, men **det kräver en betald prenumeration på Azure AD Premium**.
 
-Den här artikeln är avsedd för personer som anger en förfalloprincip för lösenord för ett företag, en skola eller en ideell förening. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörs konto?](../admin-overview/admin-overview.md)
+Den här artikeln är avsedd för personer som anger en förfalloprincip för lösenord för ett företag, en skola eller en ideell förening. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörskonto?](../admin-overview/admin-overview.md)
 
-Du måste vara [Global administratör eller lösen ords administratör](about-admin-roles.md) för att utföra de här stegen.
+Du måste vara global [administratör eller lösenordsadministratör för att](about-admin-roles.md) kunna utföra de här stegen.
 
-## <a name="watch-let-users-reset-their-own-passwords"></a>Titta: Låt användare återställa sina egna lösen ord
+## <a name="watch-let-users-reset-their-own-passwords"></a>Titta: Låt användare återställa sina egna lösenord
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
 Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## <a name="steps-let-people-reset-their-own-passwords"></a>Steg: Låt andra återställa sina egna lösen ord
+## <a name="steps-let-people-reset-their-own-passwords"></a>Steg: Låt användare återställa sina egna lösenord
 
 Anvisningarna aktiverar Självbetjäning för återställning av lösenord för alla i organisationen.
   
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **Inställningar** organisations inställningar i <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrations centret</a> > **Org settings** .
+1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">sidan Inställningar</a>för organisationens **inställningar** > **i administrationscentret.**
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrations centret</a>går du till sidan **Inställningar** för \> **säkerhets &amp; Sekretess** .
+1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">sekretesssidan</a>inställningar  i \> **&amp; administrationscentret.**
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrations centret</a>går du till sidan **Inställningar** för \> **Settings** \> **säkerhets &amp; Sekretess** .
+1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">sekretesssidan</a>Inställningar  för säkerhet \> **i** \> **&amp; administrationscentret.**
 
 ::: moniker-end
 
-2. Högst upp på sidan **organisations inställningar** väljer du fliken **säkerhet & sekretess** .
+2. Högst upp på sidan **Organisationsinställningar** väljer du fliken **&** Sekretess.
   
-3. Välj **självbetjäning för återställning av lösen ord**.
+3. Välj **Självbetjäning för återställning av lösenord.**
 
-4. Under **Automatisk återställning av lösen ord** väljer **du gå till Azure-portalen för att aktivera automatisk återställning av lösen ord**.
+4. Under **Självbetjäning för återställning** av lösenord väljer du Gå till Azure Portal för att aktivera **självbetjäning för återställning av lösenord.**
 
-5. I det vänstra navigerings fönstret väljer **du användare** och sedan, på **användare | Sidan alla användare** väljer du **Återställ lösen ord**.
+5. I det vänstra navigeringsfönstret **väljer du** Användare och går sedan till **| Välj Lösenordsåterställning** på **sidan Alla användare.**
   
-6. På sidan **Egenskaper** väljer du **alla** för att aktivera det för alla i företaget och väljer sedan **Spara**.
+6. På sidan **Egenskaper** väljer du **Alla för** att aktivera det för alla i företaget och väljer sedan **Spara.**
   
-7. När användarna loggar in uppmanas de att ange ytterligare kontakt information som hjälper dem att återställa lösen ordet i framtiden.
+7. När användarna loggar in uppmanas de att ange ytterligare kontaktinformation som hjälper dem att återställa lösenordet i framtiden.
 
 ## <a name="related-content"></a>Relaterat innehåll
 

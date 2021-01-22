@@ -1,8 +1,8 @@
 ---
-title: Skapa och spåra ServiceNow biljetter i säkerhets Center för Microsoft 365
-description: Lär dig hur du skapar och spårar biljetter i ServiceNow från Microsoft 365 Security Center.
-keywords: säkerhet, Microsoft 365, M365, säker poäng, säkerhets Center, ServiceNow, biljetter, uppgifter
-ms.prod: w10
+title: Skapa och spåra ServiceNow-biljetter i Microsoft 365 säkerhetscenter
+description: Lär dig hur du skapar och spårar biljetter i ServiceNow från Säkerhetscenter för Microsoft 365.
+keywords: säkerhet, Microsoft 365, M365, secure score, säkerhetscenter, ServiceNow, biljetter, uppgifter
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -19,22 +19,23 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: f0aadbf2dbf8cb8d9815b4ef8b1c8d3d892c8b31
-ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
+ms.technology: m365d
+ms.openlocfilehash: 3df24e01df0436f6b5824917c91dc4e7c4ee984c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49588535"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925500"
 ---
-# <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a>Skapa och spåra ServiceNow biljetter i säkerhets Center för Microsoft 365
+# <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a>Skapa och spåra ServiceNow-biljetter i Microsoft 365 säkerhetscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 >[!CAUTION]
->**För hands perioden för ServiceNow-kopplingen har avslut ATS**<br>
->Den här funktionen är inte längre tillgänglig. Tack för din feedback och fortsatta support medan vi bestämmer nästa steg.
+>**Förhandsgranskningsperioden för ServiceNow-kopplingen har avslutats**<br>
+>Den här funktionen är inte längre tillgänglig. Tack för din feedback och fortsatt stöd medan vi fastställer nästa steg.
 
-[Säkerhets Center för Microsoft 365](overview-security-center.md) har förbättrats med möjligheten att skapa och spåra biljetter i ServiceNow. [Lär dig mer om ServiceNow](https://www.servicenow.com/)
+Microsoft [365 Säkerhetscenter](overview-security-center.md) har förbättrats med möjligheten att inbyggt skapa och spåra biljetter i ServiceNow. [Läs mer om ServiceNow](https://www.servicenow.com/)
 
-I säkerhets Center kan säkerhets administratörer skicka en åtgärd för [säker Poäng](microsoft-secure-score.md) förbättring direkt till ServiceNow och skapa en biljett. Både hantering av problem och hantering av ändringar kan skapas. Spåra biljetter i säkerhets centrets start sida och ServiceNow.
+I säkerhetscentret kan säkerhetsadministratörer skicka en förbättringsåtgärd för [Microsoft Secure Score](microsoft-secure-score.md) direkt till ServiceNow och skapa en biljett. Både incidenthantering och ändringshanteringsärenden kan skapas. Spåra biljetter på startsidan för säkerhetscentret och ServiceNow.
 

@@ -16,47 +16,48 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du ansluter datorn till Microsoft 365 Business.
-ms.openlocfilehash: 715f20ecd8f10d3d21fbdfac2953369504f02dec
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 61adae68541233ffb7b7087174c4633995b28fdd
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703025"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927316"
 ---
-# <a name="connect-your-pc-to-microsoft-365-business-premium"></a>Anslut datorn till Microsoft 365 Business Premium
+# <a name="connect-your-pc-to-microsoft-365-business-premium"></a>Anslut din dator till Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3?autoplay=false]
 
 ## <a name="try-it"></a>Prova!
-När du har konfigurerat Microsoft 365 Business Premium (tidigare Microsoft 365 Business) måste du och dina anställda vidta några åtgärder för att utnyttja sina säkerhets-och hanterings funktioner fullt ut. Här&#39;s how.
+När du har installerat Microsoft 365 Business Premium (kallades tidigare Microsoft 365 Business) behöver du och dina anställda slutföra några få steg för att kunna dra full nytta av säkerhets- och hanteringsfunktionerna. Gör&#39;här.
 
-Kontrol lera först att du har installerat Windows 10 Pro:
+Kontrollera först att du har Windows 10 Pro installerat:
 
-1. Välj  **Start** , Sök efter  **kontroll panelen** och markera det.
-2. Välj **system-och säkerhets**   >   **system** och bekräfta din Windows-utgåva.
+1. Välj  **Start,** sök  **efter Kontrollpanelen** och markera den.
+2. Välj **System och**   >   **säkerhetssystem** och bekräfta din Windows-version.
 
 Anslut sedan till Microsoft 365 Business:
 
-1. Välj  **Start** och sedan ikonen  **Inställningar** .
-2. Välj **konton** för  >   **åtkomst till arbete eller skola**   >   .
-3. Välj  **Anslut den här enheten till Azure Active Directory**.
-4. Ange e-postadressen för ditt Microsoft 365-konto och välj  **Nästa**.
-5. Ange ditt lösen ord, Välj  **Logga in** och kontrol lera sedan att du ansluter till rätt organisation.
-6. Välj  **Anslut** och välj sedan  **klar**.
+1. Välj  **Start** och sedan  **ikonen** Inställningar.
+2. Välj   >   **Kontoåtkomst för arbete eller**   >   skola.
+3. Välj **Anslut den här enheten till Azure Active Directory.**
+4. Ange e-postadressen för ditt Microsoft 365-konto och välj **Nästa.**
+5. Ange ditt lösenord,  **välj Logga in** och kontrollera sedan att du ansluter till rätt organisation.
+6. Välj **Anslut** och sedan **Klar.**
 
-Beroende på hur ditt företag konfigurerar Microsoft 365 Business kanske du ser ett meddelande om att kryptera din dator. Så här krypterar du datorn:
+Beroende på hur ditt företag har installerat Microsoft 365 Business kan du eventuellt se ett meddelande för att kryptera datorn. Så här krypterar du datorn:
 
-1. Välj meddelandet  **kryptering behövs**  .
-2. Välj  **jag&#39;jag har någon annan disk krypterings program vara installerad, krypterar alla mina diskar** och väljer sedan  **Ja**. Ett  **Start installations**  fönster visas med en förlopps indikator.
-3. I fönstret  **Välj hur du vill låsa upp enheten vid start**  väljer du **Ange en PIN-kod (rekommenderas)**.
-4. Ange PIN-koden och ange den igen för att verifiera den. Välj  **Ange PIN-kod**.
-5. Välj en metod för att spara en krypterings återställnings fil och välj sedan  **Nästa**.
-6. Välj hur mycket av enheten du vill kryptera och välj sedan  **Nästa**.
-7. Välj ett krypterings läge, Välj  **Nästa** och välj sedan  **Fortsätt**. Din enhet kommer nu att krypteras. Du kan fortsätta att arbeta under krypterings processen.
+1. Välj meddelandet  **kryptering som**  behövs.
+2. Markera **Jag&#39;inte har något annat program för diskkryptering installerat,** kryptera alla mina diskar och välj **sedan Ja.** Fönstret Startar  **BitLocker visas**  med en förloppsstapel.
+3. Välj Ange **en PIN-kod (rekommenderas)** i fönstret Välj hur du **låser upp enheten vid start.**
+4. Ange PIN-koden och ange den sedan igen för att verifiera den. Välj **Ange PIN-kod.**
+5. Välj en metod för att spara en återställningsnyckel för kryptering och välj sedan **Nästa.**
+6. Välj hur mycket av enheten som ska krypteras och välj sedan **Nästa.**
+7. Välj ett krypteringsläge, **välj Nästa** och sedan **Fortsätt.** Enheten krypteras nu. Du kan fortsätta att arbeta under krypteringsprocessen.
 
-Datorn är nu skyddad och hanteras av Microsoft 365 Business.
+Din dator skyddas och hanteras nu av Microsoft 365 Business.

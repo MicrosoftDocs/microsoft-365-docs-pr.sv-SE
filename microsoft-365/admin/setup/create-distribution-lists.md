@@ -21,23 +21,24 @@ ms.assetid: b1ffe755-59e5-4369-826d-825f145a8400
 ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
-description: Lär dig hur du skapar distributions grupper eller-listor i administrations centret för Microsoft 365 så att du kan skicka e-post till en grupp utan att behöva skriva varje mottagares namn.
-ms.openlocfilehash: c206e3eaa7987ba90d54daa55ae069d188908a0b
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+- okr_smb
+description: Lär dig hur du skapar distributionsgrupper eller listor i administrationscentret för Microsoft 365 så att du kan skicka e-postmeddelanden till en grupp utan att behöva skriva varje mottagares namn.
+ms.openlocfilehash: ffdafb7ef74e908f340a9ac80db0abffb1841442
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906375"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926312"
 ---
-# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Skapa distributions grupper i administrations centret för Microsoft 365
+# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Skapa distributionsgrupper i administrationscentret för Microsoft 365
   
-Används när du vill skicka e-post till en grupp med personer utan att behöva skriva varje mottagares namn, distributions grupper (distributions listor) ordnas efter ett visst diskussions ämne (till exempel "marknadsföring") eller av användare som delar gemensamt arbete som kräver att de kommunicera ofta. De kan också användas för att automatiskt vidarebefordra e-post till flera e-postadresser.
+Används när du vill skicka e-post till en grupp personer utan att behöva skriva varje enskild mottagares namn. Distributionsgrupper (distributionslistor) ordnas efter ett visst diskussionsämne (t.ex. "Marknadsföring") eller efter användare som delar gemensamt arbete som kräver att de kommunicerar ofta. De är också ett sätt för dig att automatiskt vidarebefordra e-post till flera e-postadresser.
 
-Distributions grupper kallas ibland distributions listor.
+Distributionsgrupper kallas ibland distributionslistor.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/e8747233-4f1c-4bf4-81cf-2a4ea9ccd80d?autoplay=false]
   
-## <a name="create-a-distribution-group-list"></a>Skapa en distributions grupp (lista)
+## <a name="create-a-distribution-group-list"></a>Skapa en distributionsgrupp (lista)
 
 ::: moniker range="o365-worldwide"
 
@@ -59,20 +60,20 @@ Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?
 
 1. Välj appfönsterikonen  i det övre vänstra hörnet och välj **Admin**.
     
-    Hittar du inte appen du söker? Från Start programmet väljer du **alla appar** för att se en alfabetisk lista över de program som är tillgängliga för dig. Därifrån kan du söka efter en specifik app. 
+    Hittar du inte appen du söker? Från appstartaren väljer du Alla **appar för** att se en alfabetisk lista över tillgängliga appar. Därifrån kan du söka efter en specifik app. 
     
-2. Välj **grupper** \> **grupper** i det vänstra navigerings fönstret och välj sedan **Lägg till en grupp**. 
+2. Välj **Grupper** \> **grupper** i det vänstra navigeringsfönstret och välj sedan **Lägg till en grupp.** 
       
-3. Välj **fördelning** i fältet **Välj en grupptyp** och välj sedan **Nästa**.
+3. I fältet **Välj en grupptyp** väljer du **Distribution** och sedan **Nästa.**
   
-4. Ange ett namn, en beskrivning och ett e-postalias för den nya gruppen och välj om du vill att personer utanför organisationen ska kunna skicka e-post till gruppen. 
+4. Ange ett namn, en beskrivning och ett e-postalias för den nya gruppen och välj om du vill att personer utanför organisationen ska skicka e-post till gruppen. 
     
-5. Tryck på **Lägg till** för att skapa en grupp och granska sedan gruppen och välj **Stäng**. 
+5. Tryck **på Lägg** till för att skapa en grupp, granska gruppen och välj **Stäng.** 
     
-6. Information om hur du lägger till användare i din distributions lista finns i [lägga till en användare eller kontakt i en distributions grupp](../email/add-user-or-contact-to-distribution-list.md).
+6. Information om hur du lägger till användare i distributionslistan [finns i Lägga till en användare eller kontakt i en distributionsgrupp.](../email/add-user-or-contact-to-distribution-list.md)
     
-Läs om hur du använder en grupp i Outlook 2016 och Outlook på webben i avsnittet [använda kontakt grupper (tidigare distributions listor) i Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) . 
+Läs mer om hur du använder grupper i Outlook 2016 och Outlook på webben i avsnittet Använd kontaktgrupper [(tidigare distributionslistor) i Outlook.](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
   
-Få hjälp med problem med distributions listan genom att checka ut [distributions grupp](https://docs.microsoft.com/office365/troubleshoot/groups/distribution-list-issues) . 
+Läs om [problem med distributionsgrupp](https://docs.microsoft.com/office365/troubleshoot/groups/distribution-list-issues) för hjälp med problem med distributionslistor. 
   
 

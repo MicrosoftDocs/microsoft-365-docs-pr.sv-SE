@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du distribuerar team med en grundläggande nivå av skydd.
-ms.openlocfilehash: 16f37175c3aa7b420745e6126de1aa96368d618a
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 11554dbd7e33a77c9f6397ae9c5e91669f537081
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613448"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921876"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Konfigurera teams med grundläggande skydd
 
@@ -87,7 +87,7 @@ Uppdatera inställningarna för webbplatsdelning
 1. I verktygsfältet för teamet klickar du på **Filer**.
 2. Klicka sedan **Öppna i SharePoint**.
 3. Klicka på inställningsikonen i verktygsfältet på SharePoint-gruppwebbplatsen och klicka sedan på **Webbplatsbehörigheter**.
-4. I fönstret **Webbplatsbehörigheter** under **Delningsinställningar** klickar du på **Ändra delningsinställningar**.
+4. I fönstret **Webbplatsbehörigheter**, under **webbplatsdelning**, klickar du på **Ändra hur medlemmar kan dela**.
 5. Under **Delningsbehörigheter** väljer du **Webbplatsägare och medlemmar, och personer med redigeringsbehörighet kan dela filer och mappar, men endast webbplatsägare kan dela webbplatsen** och klicka sedan på **Spara**.
 
 ## <a name="additional-protections"></a>Ytterligare skydd

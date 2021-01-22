@@ -1,9 +1,9 @@
 ---
 title: 'Microsoft 365 Defender API: er som stöds'
 description: 'Microsoft 365 Defender API: er som stöds'
-keywords: 'MTP, API: er'
+keywords: MTP, API:er, api
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: dbb7613dae3755b0fb794a3d68b5b424d765cc62
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: ee03e5a255a88c084403842e7bf0319c06c0517b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719328"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926204"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>Microsoft 365 Defender API: er som stöds 
 
@@ -34,30 +35,30 @@ ms.locfileid: "49719328"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
+> Viss information gäller förhandsversioner av produkter som kan komma att ändras väsentligt innan de släpps till kommersiellt bruk. Microsoft ger inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges här.
 
-## <a name="list-of-available-apis"></a>Lista över tillgängliga API: er
+## <a name="list-of-available-apis"></a>Lista över tillgängliga API:er
 
-Artiklar | Beskrivning
+Artikel | Beskrivning
 -|-
-[Advanced jakt-API](api-advanced-hunting.md) | Kör avancerade jakt frågor.
-[API:er för tillbud](api-incident.md) | Lista och uppdatera händelser samt andra praktiska uppgifter.
+[Advanced jakt-API](api-advanced-hunting.md) | Köra Avancerade frågor om sökfrågor.
+[API:er för tillbud](api-incident.md) | Lista och uppdatera incidenter, tillsammans med andra praktiska uppgifter.
 
-### <a name="endpoint-uris"></a>Slut punkts-URI
+### <a name="endpoint-uris"></a>Slutpunkts-URI:er
 
-Bas-URI för båda huvud gränssnitten är: https://api.security.microsoft.com . För bättre prestanda bör du använda en server närmast din plats:
+Bas-URI för båda de viktigaste API:erna är: https://api.security.microsoft.com . Använd en server närmare din geolokalisering för bättre prestanda:
 
 - USA: api-us.security.microsoft.com
 - Europa: api-eu.security.microsoft.com
 - Storbritannien: api-uk.security.microsoft.com
 
-Token kan erhållas genom åtkomst https://api.security.microsoft.com .
+Token kan köpas genom https://api.security.microsoft.com åtkomst.
 
-Alla API: er längs `/api` sökvägen använder protokollet [OData](https://docs.microsoft.com/odata/overview) , till exempel https://api.security.microsoft.com/api/incidents .
+Alla API:er längs vägen använder till exempel `/api` [OData-protokollet.](https://docs.microsoft.com/odata/overview) https://api.security.microsoft.com/api/incidents
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Översikt över Microsoft 365 Defender API](api-overview.md)
-- [Komma åt API: erna för skydd mot Microsoft Threat](api-access.md)
-- [Läs mer om API-begränsningar och licensiering](api-terms.md)
+- [Översikt över API:er för Microsoft 365 Defender](api-overview.md)
+- [Få åtkomst till API:er för Microsoft Threat Protection](api-access.md)
+- [Läs mer om API-begränsningar och -licensiering](api-terms.md)
 - [Förstå felkoder](api-error-codes.md)

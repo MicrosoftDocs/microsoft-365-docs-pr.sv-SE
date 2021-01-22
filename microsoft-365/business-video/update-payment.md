@@ -1,5 +1,5 @@
 ---
-title: Uppdatera betalnings metod
+title: Uppdatera betalningsmetod
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,35 +16,36 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du uppdaterar din betalnings metod för Microsoft 365 för företag.
-ms.openlocfilehash: a7424b4d104b83921f46024a1493444c9de547d1
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Lär dig hur du uppdaterar betalningsmetoden för Microsoft 365 för företag.
+ms.openlocfilehash: b29aea838e2682035ac56ef31291a5628854df79
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702576"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925868"
 ---
-# <a name="update-yor-payment-method-for-your-subscription"></a>Uppdatera listan betalnings metod för ditt abonnemang
+# <a name="update-yor-payment-method-for-your-subscription"></a>Uppdatera din prenumerations betalningsmetod
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
 
-Du kan enkelt uppdatera betalnings metoden för din Microsoft 365 Business-prenumeration. Du kan ändra dina uppgifter, till exempel kredit kort, namn eller adress.
+Du kan enkelt uppdatera betalningsmetoden för Microsoft 365 Business-prenumerationen. Du kan ändra information som vilket kreditkort som används, namn eller adress.
 
 ## <a name="try-it"></a>Prova!
 
 1. Logga in på [Administrationscenter för Microsoft 365](https://admin.microsoft.com).
-1. Välj **fakturering** och sedan **betalnings metod**. Alla kredit kort du har på filen visas.
+1. Välj **Fakturering** och **sedan Betalningsmetoder.** Du ser alla kreditkort som du har.
 1. Så här redigerar du ett befintligt kort:
-    1. Välj de tre punkterna bredvid kortet och välj **Redigera betalnings metod**.
-    1. Ange kortets säkerhets kod.
-    1. Du kan ändra utgångs datum, namnet på kortet och andra uppgifter.
-    1. Välj **Spara** när du är klar med ändringarna.
+    1. Välj de tre punkterna bredvid kortet och välj **Redigera betalningsmetod.**
+    1. Ange kortets säkerhetskod.
+    1. Du kan ändra utgångsdatumet, namnet på kortet och annan information.
+    1. Välj Spara när du är klar med **ändringarna.**
 1. Så här lägger du till ett nytt kort:
     1. Välj **Lägg till en betalningsmetod**.
-    1. Välj betalnings metod som du vill använda från List rutan **Välj en betalnings metod** .
-    1. Ange kort informationen och välj **Lägg till**.
+    1. Välj den betalningsmetod du vill använda i **listrutan** Välj en betalningsmetod.
+    1. Ange kortuppgifterna och välj Lägg **till.**

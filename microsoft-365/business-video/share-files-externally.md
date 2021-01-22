@@ -1,5 +1,5 @@
 ---
-title: Dela filer på ett enkelt sätt
+title: Dela enkelt filer utanför företaget
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,29 +16,30 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du enkelt kan dela dina affärsfiler externt.
-ms.openlocfilehash: 9fc15ab0b3eee3b32a4ede7122e8ca7baddb5143
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Lär dig hur du enkelt kan dela dina företagsfiler externt.
+ms.openlocfilehash: 4f5870859b06aa4229a37576bcc724ddb078d833
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703136"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925916"
 ---
-# <a name="easily-share-files-externally"></a>Dela filer externt
+# <a name="easily-share-files-externally"></a>Dela filer externt på ett enkelt sätt
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2dCOV?autoplay=false]
 
-Om du vill dela filer med dina kunder och arbeta med dokument tillsammans använder du en av länkarna i Microsoft 365.
+Om du vill dela filer med kunder och arbeta med dokument tillsammans använder du en länk för alla i Microsoft 365.
 
 ## <a name="try-it"></a>Prova!
 
-1. Välj den mapp du vill dela på din SharePoint-webbplats, Välj **dela** och klicka sedan på knappen länk inställningar.
-1. I fönstret **länk inställningar** ser du till att **alla** är markerade. Om det här alternativet är nedtonat måste det vara inaktiverat i administrations centret för SharePoint.
-1. Du kan också markera kryss rutan **Tillåt redigering** och ange ett förfallo datum för länken.
-1. Välj **Använd**.
-1. Ange kundens e-postadress i fönstret **Skicka länk** , Skriv ett meddelande och välj **Skicka**.
-1. Din kund får ett e-postmeddelande med ditt meddelande och en länk till dina filer.
+1. Välj den mapp du vill dela från din SharePoint-webbplats, välj **Dela** och klicka sedan på knappen länkinställningar.
+1. Kontrollera att **Alla är markerat** i **fönstret** Länkinställningar. Om det här alternativet är nedtonat måste det aktiveras i administrationscentret för SharePoint.
+1. Du kan också markera **kryssrutan Tillåt** redigering och ange ett utgångsdatum för länken.
+1. Välj **Använd.**
+1. I fönstret **Skicka länk** anger du kundens e-postadress, skriver ett meddelande och väljer **Skicka.**
+1. Kunden får ett e-postmeddelande med ditt meddelande och en länk till filerna.

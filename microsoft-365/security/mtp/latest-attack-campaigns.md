@@ -1,8 +1,8 @@
 ---
-title: Förstå de senaste angrepps kampanjerna och teknikerna med Threat Analytics
-description: Använd de interaktiva rapporterna för Threat Analytics i Microsoft 365 för att utvärdera Posture och återhämtning för din organisation mot nya hot.
-keywords: säkerhet, skadlig program vara, Microsoft 365, M365, säkerhets Center, Threat Analytics, Microsoft Defender ATP, cyberterrorism, säkerhets Posture, nya hot
-ms.prod: microsoft-365-enterprise
+title: Förstå de senaste attackkampanjerna och teknikerna med hotanalyser
+description: Använd interaktiva rapporter för hotanalyser i Microsoft 365 för att bedöma säkerheten och motståndskraften i din organisation mot nya hot.
+keywords: säkerhet, skadlig programvara, Microsoft 365, M365, säkerhetscenter, hotanalyser, Microsoft Defender ATP, cyber, säkerhetssäkerhet, nya hot
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -15,20 +15,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8590f73b32e452c9d34d179db12c4db978df8e4d
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: f02a469c40e964772703e9b0a4cf5bca208f1eea
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846706"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926840"
 ---
-# <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>Förstå de senaste angrepps kampanjerna och teknikerna med Threat Analytics 
+# <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>Förstå de senaste attackkampanjerna och teknikerna med hotanalyser 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-Cyberterrorism hot blir ofta mer frekventa och avancerade. Det är viktigt för organisationer att snabbt kunna bedöma deras säkerhets Posture och återhämtning mot specifika hot.
+Cyberhotet börjar bli allt vanligare och mer avancerat. Det är viktigt för organisationer att snabbt bedöma deras säkerhetsläge och motståndskraft mot nya hot.
 
-**Threat Analytics** är en uppsättning interaktiva rapporter som publiceras så snart nya hot – nya tekniker, angrepps kampanjer och intrång i skadlig program vara. Med hjälp av rapporterna kan du bedöma effekten av hot mot din miljö och ge rekommenderade åtgärder för att kunna innehålla, öka organisationens återhämtning och förhindra specifika hot.
+**Hotanalyser** är en uppsättning interaktiva rapporter som publiceras så snart nya hot – nya tekniker, attackkampanjer och utbrott av skadlig programvara – identifieras. Rapporterna hjälper dig att bedöma effekterna av hot mot din miljö och innehåller rekommenderade åtgärder för att begränsa, öka organisationens motståndskraft och förhindra specifika hot.
 
-[Lär dig mer om Threat Analytics i Microsoft Defender för slut punkter](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics).  
+[Läs mer om hotanalyser i Microsoft Defender för Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)  

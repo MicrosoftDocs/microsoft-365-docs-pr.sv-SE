@@ -16,68 +16,69 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig att hålla onlinemöten för ditt företag.
-ms.openlocfilehash: b0a95ff30fbff4da46ebcf0d8c236ba1023deebb
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Lär dig hur du är värd för onlinemöten för ditt företag.
+ms.openlocfilehash: 178091c5233da5e96ed6c9f074b5418cc00c4155
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702506"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926132"
 ---
-# <a name="host-online-meetings-for-your-business"></a>Värd onlinemöten för ditt företag
+# <a name="host-online-meetings-for-your-business"></a>Hålla onlinemöten för ditt företag
 
-Behöver du mötas av en kund, kund eller partner men kan inte skaffa alla på ett ställe? Oroa dig inte, har ett onlinemöte. Om de har en smartphone, surfplatta eller en bärbar dator kan de delta i med Microsoft Teams.
+Behöver du ha ett möte med en klient, kund eller partner, men kan inte få alla på ett ställe? Oroa dig inte, ha ett onlinemöte. Om de har en smartphone, surfplatta eller bärbar dator kan de ansluta till Microsoft Teams.
 
-De måste ladda ner den [kostnads fria versionen](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) eller [gå med i en webbläsare](https://support.microsoft.com/office/1613bb53-f3fa-431e-85a9-d6a91e3468c9) för att få video-och skärm delning.
+De måste ladda ned den kostnadsfria [versionen eller](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) ansluta sig online i en [webbläsare för](https://support.microsoft.com/office/1613bb53-f3fa-431e-85a9-d6a91e3468c9) att få video- och skärmdelning.
 
-Om du ofta samarbetar med projekt med en klient, en kund eller en partner bör du tänka på att [skapa ett team för dina klienter](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7) som du enkelt kan bjuda in till möten, dela filer och spåra projekt från Microsoft Teams.
+Om du ofta samarbetar i projekt med en kund, kund eller partner kan du överväga att skapa ett [team](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7) för dina klienter så att du enkelt kan bjuda in dem till möten och även föra konversationer, dela filer och spåra projekt i Microsoft Teams.
 
-Ladda ned en infografik för att få en snabb överblick över hur du ansluter till eller använder ett onlinemöte med Microsoft Teams.
+Ladda ned en infografik för att få en snabb överblick över hur du ansluter till eller är värd för ett onlinemöte med Microsoft Teams.
 
-Ladda ned en infografik för att få en snabb överblick över hur du ansluter till eller använder ett onlinemöte med Microsoft Teams. [PDF](https://go.microsoft.com/fwlink/?linkid=2078712)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)
+Ladda ned en infografik för att få en snabb överblick över hur du ansluter till eller är värd för ett onlinemöte med Microsoft Teams. [PDF](https://go.microsoft.com/fwlink/?linkid=2078712)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)
 
-## <a name="1-schedule-a-meeting"></a>1. schemalägga ett möte
+## <a name="1-schedule-a-meeting"></a>1. Schemalägga ett möte
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP?autoplay=false]
 
-Använd Microsoft Teams för att schemalägga möten med dina anställda, klienter och andra gäster. Prova:
+Använd Microsoft Teams för att schemalägga möten med dina anställda, klienter och andra gäster. Prova det:
 
-1. I det vänstra navigerings fältet i Microsoft Teams väljer du **möten**.
-1. Välj **Schemalägg ett möte**.
-1. Ange ett **namn** och en **plats** för mötet i **rutan nytt möte**.
-1. Ange **Start** -och **slut** tid.
-1. I rutan **information** anger du en beskrivning av mötet och annan information som du vill lägga till, till exempel en dag ordning.
-1. Under **Bjud in personer** anger du namnen på de anställda eller klienter som du vill bjuda in.
-1. Om du ser **preliminärt** eller **upptagen** under något av namnen väljer du en av de **lediga** tiderna eller klickar på **schemaläggnings assistenten** för fler alternativ.
-1. Välj **Schemalägg ett möte**.
+1. Välj Möten i det vänstra navigeringsfältet **i** Microsoft Teams.
+1. Välj **Schemalägg ett möte.**
+1. Ange **en rubrik och** plats för **mötet i** **rutan** Nytt möte.
+1. Ange **start-** och **slutdatum.**
+1. I rutan **Detaljer** anger du en beskrivning av mötet och annan information som du vill lägga till, till exempel en dagordning.
+1. Under **Bjud in** personer anger du namnen på anställda eller klienter som du vill bjuda in.
+1. Om du ser **Preliminärt** eller **Upptagen** under  något namn väljer du en av de lediga tiderna eller klickar på **Schemaläggningsassistenten för** fler alternativ.
+1. Välj **Schemalägg ett möte.**
 
-## <a name="2-join-a-meeting"></a>2. ansluta till ett möte
+## <a name="2-join-a-meeting"></a>2. Ansluta till ett möte
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWn?autoplay=false]
 
-Använd Microsoft Teams för att ansluta till möten med båda anställda i företaget och klienter utanför företaget. Prova:
+Använd Microsoft Teams för att ansluta till möten med både anställda i företaget och klienter utanför företaget. Prova det:
 
-1. I det vänstra navigerings fältet i Microsoft Teams väljer du **möten**.
-1. Öppna det möte som du vill ansluta till och välj **Anslut till Microsoft Teams-möte**.
-1. När mötet öppnas väljer du **Anslut nu**.
-1. Alla klienter som bjuds in till mötet öppnar mötet i kalendern, Välj Mötes länken, ladda ned Teams-appen eller öppna den på webben, Skriv in deras namn och välj **Anslut**.
-1. När du ser din klient visas i lobbyn väljer du **Tillåt** för att tillåta dem.
-1. När alla ansluter till varandra kan du starta mötet.
+1. Välj Möten i det vänstra navigeringsfältet **i** Microsoft Teams.
+1. Öppna mötet som du vill ansluta till och välj Anslut **till Microsoft Teams-möte.**
+1. När mötet öppnas väljer du Anslut **nu.**
+1. En klient som bjudits in till mötet öppnar mötet i sin kalender, väljer möteslänken, laddar ned Teams-appen eller öppnar den på webben, anger sitt namn och väljer **Anslut.**
+1. När klienten visas i lobbyn väljer du Släpp in den **för** att släppa in dem.
+1. När alla ansluter kan du starta mötet.
  
-## <a name="3-have-an-impromptu-meeting"></a>3. ha ett improviserat-möte
+## <a name="3-have-an-impromptu-meeting"></a>3. Ha ett improviserad möte
 
-Du kan enkelt konvertera en chatt i Microsoft Teams till ett möte. Klicka bara på **video samtals** :::image type="icon" source="../media/video-call-icon.png" border="false"::: knappen eller på knappen för **ljud samtal** :::image type="icon" source="../media/audio-call-icon.png" border="false"::: för att starta ett samtal. Du kan också lägga till personer i samtalet om det behövs för att det ska gå in i en grupp diskussion.
+Du kan enkelt konvertera en chatt i Microsoft Teams till ett möte. Välj bara **knappen Videosamtal** :::image type="icon" source="../media/video-call-icon.png" border="false"::: eller knappen **Ljudsamtal** för att starta ett :::image type="icon" source="../media/audio-call-icon.png" border="false"::: samtal. Du kan också lägga till personer i samtalet om det behövs en gruppdiskussion.
 
-Behöver du hjälp? Se [starta ett samtal från en chatt i Teams](https://support.microsoft.com/office/f5138c9d-df4c-43d8-9cf6-53400c1a7798).
+Behöver du lite hjälp? Se [Starta ett samtal från en chatt i Teams.](https://support.microsoft.com/office/f5138c9d-df4c-43d8-9cf6-53400c1a7798)
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
 [Chatta i Microsoft Teams](https://docs.microsoft.com/microsoftteams/tutorial-meetings-in-teams)
 
-[6 sätt att göra virtuella möten effektivare](https://products.office.com/en-us/business/articles/6-ways-to-make-virtual-meetings-more-efficient)
+[6 sätt att effektivisera virtuella möten](https://products.office.com/en-us/business/articles/6-ways-to-make-virtual-meetings-more-efficient)
 
-[Gör dina möten i dag ordningar](https://products.office.com/en-us/business/articles/6-ways-to-make-your-online-meeting-agendas-pop)
+[Sätt dina dagordningar för onlinemöten att visas](https://products.office.com/en-us/business/articles/6-ways-to-make-your-online-meeting-agendas-pop)

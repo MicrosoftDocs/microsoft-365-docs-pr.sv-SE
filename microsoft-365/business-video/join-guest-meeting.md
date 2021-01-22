@@ -1,5 +1,5 @@
 ---
-title: Ansluta till ett Microsoft Teams-möte med gäster
+title: Ansluta till ett Möte i Microsoft Teams med gäster
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du ansluter till ett Teams-möte med gäster.
-ms.openlocfilehash: bb13396f13062e65700a535315ef41292210b3a8
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: a5f19aab079685a76f31bf67c1c79bd7312d00a4
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702465"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927150"
 ---
 # <a name="join-a-teams-meeting-with-guests"></a>Ansluta till ett Teams-möte med gäster
 
@@ -36,11 +37,11 @@ Med Microsoft Teams kan du enkelt ansluta till och delta i möten med både inte
 
 ## <a name="try-it"></a>Prova!
 
-1. I Microsoft Teams väljer du **kalender** och letar upp mötet.
-1. Välj **Anslut**, Bestäm om du vill att kameran och mikrofonen ska vara på eller av och välj **Anslut nu**.
-1. Om du är en extern gäst öppnar du e-postmeddelandet som du fick om mötet och väljer **Anslut till Microsoft Teams-möte**.
+1. I Microsoft Teams väljer **du Kalender** och hittar mötet.
+1. Välj **Anslut,** bestäm om du vill ha kameran och mikrofonen på eller av och välj **Anslut nu.**
+1. Om du är en extern gäst öppnar du e-postmeddelandet du fick om mötet och väljer Anslut **till Microsoft Teams-möte.**
 
-    Om du inte vill ladda ned programmet väljer du **Anslut på webben** istället.
-1. Skriv in ditt namn och välj **Anslut nu**.
-1. När alla har kommit kan du starta mötet genom att dela ditt skriv bord, en bildskärm eller en app som PowerPoint.
-1. När mötet är över väljer du **Lägg** på.
+    Om du inte vill ladda ned programmet väljer du **Anslut på webben i** stället.
+1. Ange ditt namn och välj **Anslut nu.**
+1. När alla har anlänt kan du starta mötet genom att dela skrivbordet, en bildskärm eller en app som PowerPoint.
+1. Välj Lägg på när mötet är **slut.**

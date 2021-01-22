@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Få regelbundna rapporter om hur personer i organisationen använder Microsoft 365-tjänster. Med instrumentpanelen för översikt över användning kan du granska varje diagram för fler insikter.
-ms.openlocfilehash: d2c5b4f67d93500f7341463a01313271d182dc38
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+ms.openlocfilehash: 4ec7690e5300b2ac08a98fbec3f4c253e970738c
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611358"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921176"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365-rapporter i administrationscentret
 
@@ -86,7 +86,9 @@ Mer information finns i [Om administratörsroller](../add-users/about-admin-role
 
 De här rapporterna är tillgängliga, beroende på din prenumeration.
   
-- [E-postaktivitet](email-activity.md)
+- [E-postaktivitet](email-activity-ww.md)
+
+- [E-postaktivitet för US. Government](email-activity.md)
     
 - [Postlådeanvändning](mailbox-usage.md)
     
@@ -98,7 +100,9 @@ De här rapporterna är tillgängliga, beroende på din prenumeration.
 
 - [Aktiva användare för US Government](active-users.md)
   
-- [Användning av e-postprogram](email-apps-usage.md)
+- [Användning av e-postprogram](email-apps-usage-ww.md)
+
+- [Användning av e-postprogram för US Government](email-apps-usage.md)
 
 - [Formuläraktivitet](forms-activity-ww.md)
 
