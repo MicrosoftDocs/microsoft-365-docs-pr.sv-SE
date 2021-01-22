@@ -15,27 +15,28 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du avbryter Google Workspace-prenumerationen men behåll domänen.
-ms.openlocfilehash: f4cbb09907da399ab3fed07e7826c0a217b494f0
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+description: Läs om hur du avbryter prenumerationen på Google Workspace men behåller din domän.
+ms.openlocfilehash: 1ad7e4ae3583063281ac5b5e9510be539b1378dd
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794692"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928264"
 ---
-# <a name="cancel-google-workspace-subscription"></a><span data-ttu-id="36b81-103">Avbryt prenumeration på Google Workspace</span><span class="sxs-lookup"><span data-stu-id="36b81-103">Cancel Google Workspace subscription</span></span>
+# <a name="cancel-google-workspace-subscription"></a><span data-ttu-id="cb2b4-103">Avbryt prenumeration på Google Workspace</span><span class="sxs-lookup"><span data-stu-id="cb2b4-103">Cancel Google Workspace subscription</span></span>
 
-1. <span data-ttu-id="36b81-104">Logga in på [Google Admin](https://admin.google.com/) och gå till **fakturering**.</span><span class="sxs-lookup"><span data-stu-id="36b81-104">Sign in to [Google Admin](https://admin.google.com/) and go to **Billing**.</span></span>
-1. <span data-ttu-id="36b81-105">I listan **abonnemang** väljer du ditt G Suite-abonnemang, **avslutar abonnemang** och väljer sedan **Continue**.</span><span class="sxs-lookup"><span data-stu-id="36b81-105">In the **Subscriptions** list,choose your G Suite subscription, **Cancel subscription**, and then choose **Continue**.</span></span>
+1. <span data-ttu-id="cb2b4-104">Logga in på [Google Admin](https://admin.google.com/) och gå till **Fakturering.**</span><span class="sxs-lookup"><span data-stu-id="cb2b4-104">Sign in to [Google Admin](https://admin.google.com/) and go to **Billing**.</span></span>
+1. <span data-ttu-id="cb2b4-105">Välj **ditt** G Suite-abonnemang, avbryt prenumerationen **och** välj sedan Fortsätt i listan **Prenumerationer.**</span><span class="sxs-lookup"><span data-stu-id="cb2b4-105">In the **Subscriptions** list,choose your G Suite subscription, **Cancel subscription**, and then choose **Continue**.</span></span>
 
     > [!IMPORTANT]
-    > <span data-ttu-id="36b81-106">ditt-abonnemang kommer att avbrytas omedelbart och det går inte att ångra den här åtgärden.</span><span class="sxs-lookup"><span data-stu-id="36b81-106">your subscription will be cancelled immediately and you cannot undo this action.</span></span>
+    > <span data-ttu-id="cb2b4-106">prenumerationen avbryts omedelbart och du kan inte ångra den här åtgärden.</span><span class="sxs-lookup"><span data-stu-id="cb2b4-106">your subscription will be cancelled immediately and you cannot undo this action.</span></span>
 
-    :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="Skärm bild av fakturerings sidan för Google Admin.":::
+    :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="Skärmbild av faktureringssidan för Google-administratörer.":::
 
-<span data-ttu-id="36b81-108">Observera att du kanske inte ser domän registrering i din prenumerations lista om din DNS-värd inte är Google-domän.</span><span class="sxs-lookup"><span data-stu-id="36b81-108">Note that you might not see Domain Registration in your Subscriptions list if your DNS host provider isn't Google domains.</span></span>
+<span data-ttu-id="cb2b4-108">Observera att du kanske inte ser Domänregistrering i din prenumerationslista om din DNS-värd inte är Google-domäner.</span><span class="sxs-lookup"><span data-stu-id="cb2b4-108">Note that you might not see Domain Registration in your Subscriptions list if your DNS host provider isn't Google domains.</span></span>
