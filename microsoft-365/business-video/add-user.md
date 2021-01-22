@@ -16,35 +16,36 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du lägger till användare i Microsoft 365 för företag.
-ms.openlocfilehash: e897714e2ff80b2980bd2eb7ca98366d953ed96c
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: f9e00312883adcc1771fae809614b6fc88bc0269
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702776"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927580"
 ---
 # <a name="add-a-new-user"></a>Lägga till en ny användare
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 
-När en ny person ansluter till företaget måste du lägga till dem i ditt Microsoft 365 Business Premium-abonnemang som en ny användare.
+När en ny person ansluter till företaget måste du lägga till dem i din Microsoft 365 Business Premium-prenumeration som en ny användare.
 
 ## <a name="try-it"></a>Prova!
 
-1. I administrations centret för Microsoft 365 går du till **användar hantering** och väljer Lägg till användare.
-1. Ange den nya användarens **förnamn** och **efter namn**. **Visnings namnet** fylls i automatiskt, men du kan ändra det.
-1. Ange ett **användar namn**. Detta blir den nya användarens e-postadress. Om du har fler än en domän väljer du rätt domän i list rutan.
-1. Välj **skapa lösen** ord automatiskt för att skapa ett lösen ord.
-1. Om du vill att användaren ska byta lösen ord markerar du kryss rutan **Kräv att användaren ändrar sitt lösen ord första gången de loggar in** .
-1. Om du vill att konto uppgifterna ska skickas via e-post markerar du kryss rutan **Skicka lösen ord i e-post när** du är klar. Ditt e-postnamn läggs till automatiskt, men du kan lägga till den nya användarens alternativa e-postadress så att de tar emot konto uppgifter. Välj **Nästa**.
-1. Välj din plats i list rutan och markera sedan kryss rutan bredvid den prenumeration som du vill att användaren ska använda. Välj **NEX** t.
-1. Om du vill att användaren ska vara administratör, expanderar du **Role** s, avmarkerar kryss rutan **användare (ingen administratörs åtkomst)** och välj en administratörs roll i listan. Mer information om administratörs roller och hur du konfigurerar dem finns i [Vad är en administratör](what-is-admin.md)?
-1. Under **profil information** anger du information om användarens jobb, avdelning, kontor och så vidare. (Du eller den nya användaren kan alltid lägga till den här informationen senare.) Välj **Nästa**.
-1. Granska användar informationen. Om du behöver köpa ytterligare en licens för den här användaren visas en avisering på sidan Granska. Välj **Slutför tillägg** och välj sedan **Stäng**.
-1. Verifiera att användaren har skapats: Välj **användare** i administrations centret för Microsoft 365 i det vänstra navigerings fönstret och sedan **aktiva användare**. Den nya användaren ska vara listad samt tilldelad licens.
+1. Gå till Användarhantering i administrationscentret för Microsoft 365 **och** välj Lägg till användare.
+1. Ange den nya användarens **förnamn** **och efternamn.** Visningsnamnet **fylls** i automatiskt, men du kan ändra det.
+1. Ange ett **användarnamn.** Det blir den nya användarens e-postadress. Om du har fler än en domän väljer du rätt domän i listrutan.
+1. Om du vill att ett lösenord ska skapas automatiskt väljer **du Skapa lösenord automatiskt.**
+1. Om du vill att användaren ska ändra sitt lösenord markerar du kryssrutan Kräv att användaren ändrar sitt lösenord **vid första** inloggningen.
+1. Om du vill att kontoinformationen skickas med e-post markerar du kryssrutan Skicka lösenord med **e-post vid slutförande.** Ditt e-postnamn läggs till automatiskt, men du kan lägga till den nya användarens alternativa e-postadress så att de också får kontouppgifterna. Välj **Nästa**.
+1. Välj din plats i listrutan och markera sedan kryssrutan bredvid den prenumeration som du vill att användaren ska använda. Välj **Bra** t.
+1. Om du vill att användaren ska vara administratör expanderar du rollerna, avmarkerar kryssrutan Användare **(ingen** administratörsåtkomst) och väljer en administratörsroll i listan. Mer information om administratörsroller och hur du ställer in dem finns i [Vad är en administratör?](what-is-admin.md)
+1. Under **Profilinformation** anger du information om användarens jobb, avdelning, kontor och så vidare. (Du eller den nya användaren kan alltid lägga till den här informationen senare.) Välj **Nästa.**
+1. Granska användaruppgifterna. Om du behöver köpa ytterligare en licens för användaren visas ett meddelande på sidan Granska. Välj **Slutför tilläggning** och välj sedan **Stäng.**
+1. Kontrollera att användaren har skapats: i det vänstra navigeringsfönstret i administrationscentret förMicrosoft 365 väljer du Användare och sedan **Aktiva användare.** Den nya användaren ska visas tillsammans med sin tilldelade licens.

@@ -1,5 +1,5 @@
 ---
-title: Administrations Center för Microsoft 365 – översikt
+title: Administrationscenter för Microsoft 365 – Översikt
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,39 +16,40 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig mer om administrations centret för Microsoft 365.
-ms.openlocfilehash: 9d3b8c83429eec924e23ae1a63e57d6ed36f76b3
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Läs mer om administrationscentret för Microsoft 365.
+ms.openlocfilehash: 3070d6e9ce035786291fab4557648ab6bc520540
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703265"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927592"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Översikt över administrationscenter för Microsoft 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
-Administrations centret för Microsoft 365 är det du hanterar företaget i molnet. Du kan slutföra sådana uppgifter genom att lägga till och ta bort användare, ändra licenser och återställa lösen ord. 
+Administrationscentret för Microsoft 365 är den plats där du hanterar ditt företag i molnet. Du kan utföra sådana uppgifter som att lägga till och ta bort användare, ändra licenser och återställa lösenord. 
 
-Om du vill gå till administrations centret för Microsoft 365 går du till [admin.Microsoft.com](https://admin.microsoft.com) eller, om du redan är inloggad, väljer du Start programmet och väljer **admin**.
+Om du vill gå till administrationscentret för Microsoft 365 går du till [admin.microsoft.com](https://admin.microsoft.com) eller, om du redan är inloggad, väljer du startprogrammet och **sedan Admin.**
 
-På Start sidan kan du skapa kort för aktiviteter som du utför ofta. Om du vill lägga till ett nytt kort väljer du **Lägg till kort** och väljer sedan plus tecknet bredvid kortet du vill lägga till. När du är klar stänger du fönstret. Du kan ordna om korten genom att markera och dra dem till önskad plats. Om du vill ta bort ett kort väljer du **fler åtgärder** och väljer sedan **ta bort**.
+På startsidan kan du skapa kort för uppgifter som du utför ofta. Om du vill lägga till ett nytt **kort väljer du Lägg** till kort och sedan plustecknet bredvid det kort du vill lägga till. Stäng fönstret när du är klar. Du kan ordna om korten genom att markera och dra dem till den plats där du vill ha dem. Om du vill ta bort ett kort **väljer du Fler** åtgärder och sedan Ta **bort.**
 
-Expandera navigerings menyn om du vill visa fler administrativa uppgifter. Du hittar avancerade konfigurations inställningar i de extra administrations centrerna längst ned.
+Expandera navigeringsmenyn om du vill visa fler administrativa uppgifter. Du hittar avancerade konfigurationsinställningar i ytterligare administrationscenter längst ned.
 
-En vanlig uppgift som du kan utföra i administrations centret är att lägga till en användare. För att göra det väljer **du användare**, **aktiva användare** och väljer sedan **Lägg till en användare**. Ange användarens namn och annan information och välj sedan **Nästa**. Följ anvisningarna för att lägga till användaren. När du är klar väljer du **Avsluta** och väljer sedan **Stäng**.
+En vanlig uppgift som du kan utföra i administrationscentret är att lägga till en användare. Det gör du genom att **välja Användare,** **Aktiva användare** och sedan Lägga till **en användare.** Ange användarens namn och annan information och välj **sedan Nästa.** Följ anvisningarna för att slutföra tillägget av användaren. När du är klar väljer du **Slutför och** sedan **Stäng.**
 
-Du kan sortera aktiva användare efter kolumner, till exempel **visnings namn** eller **licenser**. Om du vill lägga till fler kolumner väljer du **Välj kolumner**, markerar de kolumner som du vill lägga till och väljer sedan **Spara**.
+Du kan sortera dina aktiva användare efter kolumner, till exempel **visningsnamn** eller **licenser.** Om du vill lägga till fler **kolumner väljer du Välj** kolumner, markerar de kolumner du vill lägga till och väljer sedan **Spara.**
 
-Välj en användare för att se fler alternativ, till exempel att hantera deras produkt licenser.
+Välj en användare om du vill se fler alternativ, till exempel hantera deras produktlicenser.
 
-Om du vill aktivera fler funktioner som ingår i prenumerationen väljer du **Inställningar**. Här kan du aktivera inloggnings säkerhet, mobilappen för mobilapp, DLP och andra funktioner som ingår i ditt abonnemang.
+Om du vill aktivera fler funktioner som ingår i prenumerationen väljer du **Konfigurera.** Här kan du aktivera inloggningssäkerhet, skydd för mobilappar, DLP och andra funktioner som ingår i prenumerationen.
 
-Om du behöver hjälp när du vill kan du välja **att ha hjälpen**. Skriv din fråga och kolla sedan de länkar som visas. Om du inte får svaret här väljer du **kontakta support** för att öppna en tjänst förfrågan. 
+Om du behöver support när som helst väljer **du Behöver hjälp.** Skriv din fråga och ta en titta på länkarna som visas. Om du inte får svaret här väljer du Kontakta **support för** att öppna en servicebegäran. 
 
-Mer information om hur du hanterar fakturering, lösen ord, användare och administratörer finns i andra lektioner i den här kursen.
+Mer information om hur du hanterar fakturering, lösenord, användare och administratörer finns i de andra lektionerna i den här kursen.

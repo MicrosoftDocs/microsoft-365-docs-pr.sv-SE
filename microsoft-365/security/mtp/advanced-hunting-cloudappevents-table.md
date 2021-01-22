@@ -1,10 +1,10 @@
 ---
-title: CloudAppEvents-tabell i det avancerade jakt-schemat
-description: Lär dig mer om händelser från moln program och-tjänster i CloudAppEvents-tabellen för avancerat jakt schema
-keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, kolumn, datatyp, beskrivning, CloudAppEvents, Cloud App-säkerhet, MCAS
+title: CloudAppEvents-tabellen i det avancerade sökschemat
+description: Läs mer om händelser från molnappar och -tjänster i tabellen CloudAppEvents i det avancerade sökschemat
+keywords: avancerad sökning, hotsökning, cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, CloudAppEvents, Cloud App Security, MCAS
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 3cb4498e5db6a7752e99b8c677bc8936d2c975ef
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.technology: m365d
+ms.openlocfilehash: 021a8210bbe5886021e980b33ade0b9e2ded7b5b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087776"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928459"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -36,37 +37,37 @@ ms.locfileid: "49087776"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-För närvarande tillgänglig i förhands granskningen `CloudAppEvents` innehåller tabellen i det [avancerade jakt](advanced-hunting-overview.md) -schemat information om aktiviteter i olika moln program och-tjänster, särskilt Microsoft Teams och Exchange Online. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+Tabellen i det avancerade sökschemat, som för närvarande finns i förhandsversion, innehåller information om aktiviteter i olika molnappar och -tjänster, särskilt `CloudAppEvents` Microsoft Teams och Exchange Online. [](advanced-hunting-overview.md) Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
-Denna tabell expanderar för att omfatta fler aktiviteter som övervakas av Microsoft Cloud App Security. Till sist kommer den här tabellen att innehålla fil aktivitet som lagras i tabellen [AppFileEvents](advanced-hunting-appfileevents-table.md) . Microsoft tillhandahåller ytterligare vägledning när mer data flyttas till den här tabellen.
+Den här tabellen utökas med fler aktiviteter som övervakas av Microsoft Cloud App Security. Så småningom kommer den här tabellen att innehålla filaktivitet som för närvarande lagras i [tabellen AppFileEvents.](advanced-hunting-appfileevents-table.md) Microsoft ger ytterligare vägledning när mer information flyttas till den här tabellen.
 
-Information om andra tabeller i det avancerade jakt schema [finns i referens för avancerad jakt](advanced-hunting-schema-tables.md).
+Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | Datum och tid när händelsen registrerades |
-| `ActionType` | strängvärdet | Typ av aktivitet som utlöste händelsen |
-| `Application` | strängvärdet | Program som utförde den inspelade åtgärden |
-| `ApplicationId` | strängvärdet | Unik identifierare för programmet |
-| `AccountObjectId` | strängvärdet | Unik identifierare för kontot i Azure Active Directory |
-| `AccountDisplayName` | strängvärdet | Namnet på kontot som visas i adress boken. Vanligt vis en kombination av ett visst eller förnamn, en mellan initiering och ett efter namn eller från gång. |
-| `IsAdminOperation` | strängvärdet | Anger om aktiviteten utfördes av en administratör |
-| `DeviceType` | strängvärdet | Typ av enhet baserat på syfte och funktioner, till exempel "nätverks enhet", "arbets Station", "Server", "mobil", "spel konsol" eller "skrivare" | 
-| `OSPlatform` | strängvärdet | Plattformen för det operativ system som körs på enheten. I den här kolumnen anges specifika operativ system, inklusive varianter inom samma familj, till exempel Windows 10 och Windows 7. |
-| `IPAddress` | strängvärdet | IP-adress tilldelad till slut punkten och används under relaterad nätverkskommunikation |
-| `IsAnonymousProxy` | strängvärdet | Anger om IP-adressen tillhör en känd anonym proxyserver |
-| `CountryCode` | strängvärdet | Kod med två bokstäver som anger det land där klient-IP-adressen finns |
-| `City` | strängvärdet | Ort där klient-IP-adressen finns |
-| `Isp` | strängvärdet | Internet leverantör (ISP) associerad med IP-adressen |
-| `UserAgent` | strängvärdet | Information om användar agent från webbläsaren eller andra klient program |
-| `ActivityType` | strängvärdet | Typ av aktivitet som utlöste händelsen |
-| `ActivityObjects` | strängvärdet | Lista över objekt, till exempel filer och mappar, som ingick i den registrerade aktiviteten |
-| `ObjectName` | strängvärdet | Namnet på det objekt som den inspelade åtgärden tillämpades på |
-| `ObjectType` | strängvärdet | Typ av objekt, till exempel en fil eller en mapp, som den inspelade åtgärden tillämpades på |
-| `ObjectId` | strängvärdet | Unik identifierare för det objekt som den inspelade åtgärden tillämpades på |
-| `ReportId` | strängvärdet | Unik identifierare för händelsen |
-| `RawEventData` | strängvärdet | Information om rå händelser från käll programmet eller tjänsten i JSON-format |
-| `AdditionalFields` | strängvärdet | Ytterligare information om enheten eller händelsen |
+| `Timestamp` | datetime | Datum och tid då händelsen spelades in |
+| `ActionType` | sträng | Typ av aktivitet som utlöste händelsen |
+| `Application` | sträng | Program som utförde den inspelade åtgärden |
+| `ApplicationId` | sträng | Unikt ID för programmet |
+| `AccountObjectId` | sträng | Unikt ID för kontot i Azure Active Directory |
+| `AccountDisplayName` | sträng | Namnet på kontoanvändaren som visas i adressboken. Vanligtvis en kombination av ett visst namn eller förnamn, en mellaninititiering och ett efternamn eller efternamn. |
+| `IsAdminOperation` | sträng | Anger om aktiviteten utfördes av en administratör |
+| `DeviceType` | sträng | Typ av enhet baserat på syfte och funktionalitet, till exempel "Nätverksenhet", "Arbetsstation", "Server", "Mobil", "Spelkonsol" eller "Skrivare" | 
+| `OSPlatform` | sträng | Operativsystemets plattform som körs på enheten. Den här kolumnen anger specifika operativsystem, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7. |
+| `IPAddress` | sträng | IP-adress som tilldelats slutpunkten och som används under relaterad nätverkskommunikation |
+| `IsAnonymousProxy` | sträng | Anger om IP-adressen tillhör en känd anonym proxy |
+| `CountryCode` | sträng | Kod med två bokstäver som anger landet där klient-IP-adressen är geolokal |
+| `City` | sträng | Ort där klient-IP-adressen är geolokal |
+| `Isp` | sträng | Internet tjänstprovider (ISP) som är kopplat till IP-adressen |
+| `UserAgent` | sträng | Information om användaragenter från webbläsaren eller ett annat klientprogram |
+| `ActivityType` | sträng | Typ av aktivitet som utlöste händelsen |
+| `ActivityObjects` | sträng | Lista över objekt, till exempel filer eller mappar, som var inblandade i den inspelade aktiviteten |
+| `ObjectName` | sträng | Namnet på det objekt som den inspelade åtgärden tillämpats på |
+| `ObjectType` | sträng | Typ av objekt, till exempel en fil eller en mapp, som den inspelade åtgärden tillämpats på |
+| `ObjectId` | sträng | Unikt ID för det objekt som den inspelade åtgärden tillämpats på |
+| `ReportId` | sträng | Unikt ID för händelsen |
+| `RawEventData` | sträng | Obearbetad händelseinformation från källprogrammet eller källtjänsten i JSON-format |
+| `AdditionalFields` | sträng | Ytterligare information om entiteten eller händelsen |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

@@ -96,16 +96,17 @@
       href: information-protection.md
     - name: Typer av känslig information
       items:
+        - name: Läs mer om typer av känslig information
+          href: sensitive-information-type-learn-about.md
         - name: Entitetsdefinitioner för typer av känslig information
           href: sensitive-information-type-entity-definitions.md
         - name: Vad DLP-funktionerna letar efter
           href: what-the-dlp-functions-look-for.md
         - name: Anpassa en inbyggd typ av känslig information
           href: customize-a-built-in-sensitive-information-type.md
-        - name: Anpassade typer av känslig information
-          href: custom-sensitive-info-types.md
-        - name: Skapa anpassade känsliga informationstyper med exakt datamatchning
+        - name: Skapa anpassade typer av känslig information med exakt datamatchning
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+        - name: Komma igång med anpassade typer av känslig information
         - name: Använd Exact Data Match-schema och guiden för typ av känslig information
           href: sit-edm-wizard.md
         - name: Ändra exakt dataskema för att använda konfigurerbar matchning

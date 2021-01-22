@@ -16,47 +16,48 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du installerar Microsoft 365 admin-mobilappen på din telefon.
-ms.openlocfilehash: cb69dbe02e91ab4eb29b14ac5e71e91bed6cdb88
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Lär dig hur du installerar Microsoft 365 Admin-mobilappen på din telefon.
+ms.openlocfilehash: 110e691858537a90a7bee03b4318a5f415b3e83f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702775"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927544"
 ---
-# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Installera Microsoft 365 admin-mobilappen på din telefon
+# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Installera Microsoft 365 Admin-mobilappen på telefonen
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWe8Kw?autoplay=false]
 
-Du kan använda Microsoft 365 admin-mobilappen för att hantera användare, övervaka tjänstens hälsa och utföra andra administrativa uppgifter från din telefon.
+Du kan använda Microsoft 365 Admin-mobilappen för att hantera användare, övervaka tjänstehälsa och utföra andra administrativa uppgifter från telefonen.
 
 ## <a name="try-it"></a>Prova!
 
-1. För att hämta Microsoft 365 admin-mobilappen söker du efter  **microsoft 365-administratör**  i App Store för enheten och installerar den.
-2. Logga in med din globala administratörs e-postadress och Visa instrument panelen för att se tjänstens status, övervaka användar licenser och se meddelanden och tjänst begär Anden.
-3. Här är några vanliga uppgifter som du kan göra med appen:
+1. Om du vill skaffa Microsoft 365 Admin-mobilappen söker du efter  **Microsoft 365**  Admin i appbutiken för din enhet och installerar den.
+2. Logga in med din globala administratörs e-postadress och visa instrumentpanelen för att se tjänstens status, övervaka användarlicenser och se meddelanden och tjänstförfrågningar.
+3. Här är några vanliga uppgifter som du kan utföra med appen:
 
 ### <a name="reset-a-users-password"></a>Återställ en användares lösenord
 
-1. Under  **snabb länkar** väljer  **du användare**.
-2. Välj användarens namn på sidan  **användare**  och välj sedan  **Återställ lösen ord**.
-3. Om du vill att användaren ska ändra sitt nya lösen ord första gången de loggar in markerar du kryss rutan  **ändra vid första inloggningen**  och väljer sedan  **Återställ**.
-4. När du uppmanas att bekräfta väljer du  **Ja** och sedan  **OK**.
-5. I fönstret  **dela lösen ord**  kan du även skicka det nya lösen ordet till användaren i ett e-postmeddelande eller SMS.
+1. Välj **Användare under** **Snabblänkar.**
+2. På **sidan Användare** väljer du användarens namn och sedan **Återställ lösenord.**
+3. Om du vill att användaren ska ändra sitt nya lösenord  när han eller hon loggar in första gången markerar du kryssrutan Ändra vid första inloggningen och väljer **sedan Återställ.**
+4. När du ombeds att bekräfta väljer **du Ja** och sedan **OK.**
+5. I fönstret  **Dela lösenord**  kan du skicka det nya lösenordet till användaren i ett e-postmeddelande eller SMS.
 
 ### <a name="add-a-user-to-a-group"></a>Lägga till en användare i en grupp
 
-1. Under  **snabb länkar** väljer du  **grupper**.
-2. På sidan  **grupper**  väljer du den grupp där du vill lägga till en användare och väljer sedan  **Redigera medlemmar** och sedan  **Lägg till en medlem**.
+1. Välj **Grupper under** **Snabblänkar.**
+2. På sidan **Grupper** väljer du den grupp du vill lägga till en användare i och väljer sedan **Redigera medlemmar** och sedan Lägg till **en medlem.**
 3. Välj den användare du vill lägga till.
-4. När du uppmanas att bekräfta väljer du  **Ja** och sedan  **OK**.
+4. När du ombeds att bekräfta väljer **du Ja** och sedan **OK.**
 
 ### <a name="turn-on-notifications"></a>Aktivera aviseringar
 
-1. I huvud menyn väljer du  **Inställningar**.
-2. Under  **appinställningar** väljer du  **aviseringar**.
-3. Markera kryss rutorna bredvid  **tjänstens hälsa**  och  **meddelande Center**.
+1. Välj Inställningar på **huvudmenyn.**
+2. Välj **Aviseringar under** **Appinställningar.**
+3. Markera kryssrutorna bredvid **Tjänstens hälsa** och **Meddelandecenter.**

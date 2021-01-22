@@ -1,5 +1,5 @@
 ---
-title: Konfigurera Microsoft 365 för migrering av Google Workspace
+title: Konfigurera Microsoft 365 för Google Workspace-migrering
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -15,36 +15,37 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du konfigurerar Microsoft 365 så att du kan migrera från Google-arbetsyta.
-ms.openlocfilehash: ec8813f62febbd1c4ee2afa6877e4be505a75a81
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+description: Läs om hur du ställer in Microsoft 365 så att det är klart för migrering från Google Workspace.
+ms.openlocfilehash: 42b8cd86ec03c4d4b43a4d32a1cee56e94bb7147
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794700"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928192"
 ---
-# <a name="set-up-microsoft-365-for-google-workspace-migration"></a>Konfigurera Microsoft 365 för migrering av Google Workspace
+# <a name="set-up-microsoft-365-for-google-workspace-migration"></a>Konfigurera Microsoft 365 för Google Workspace-migrering
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4JD2Y?autoplay=false]
 
-För att migrera e-post, kalender och kontakter från Google Workspace måste du konfigurera Microsoft 365 Business Premium med en tillfällig domän tills din företags domän är klar att användas med ditt abonnemang.
+Om du vill migrera e-post, kalender och kontakter från Google Workspace måste du konfigurera Microsoft 365 Business Premium med en tillfällig domän tills företagsdomänen är klar att användas med din prenumeration.
 
 ## <a name="try-it"></a>Prova! 
 
-1. Logga in på [Office.com](https://office.com)och välj **admin**.
-1. I administrations centret för Microsoft 365 väljer **du gå till Guidad installation**. 
-1. Du kan också installera Office-appar och sedan klicka på **Fortsätt**. 
-1. Eftersom du migrerar från Google Workspace väljer du standard domänen och väljer **Använd denna domän**. 
-1. Ange användarens namn och önskade användar namn, bekräfta din e-postadress så att du kan ta emot användarens lösen ord och välj sedan **Lägg till användare och tilldela licenser**. 
-1. Ange e-postadresserna där användarna ska få sina nya autentiseringsuppgifter, Välj **skicka e-post och fortsätt**.
-1. **Fortsätt** sedan igen för att ansluta till din tillfälliga domän. 
-1. Om du vill kan du välja att informera användare i organisationen om Teams och sedan **fortsätta**.
-1. Expandera och granska dina **Android-och iOS-inställningar** och välj sedan **skapa hanterings princip för mobilapp**.
-1. Ge feedback och välj **gå till administrations centret**.
+1. Logga in [på office.com](https://office.com)och välj **Admin.**
+1. I administrationscentret för Microsoft 365 väljer du **Gå till guidad konfiguration.** 
+1. Om du vill kan du installera Office-program och sedan **välja Fortsätt.** 
+1. Välj standarddomänen eftersom du migrerar från Google Workspace och välj Använd **den här domänen.** 
+1. Ange användarnas namn och önskade användarnamn, bekräfta din e-postadress så att du kan ta emot användarnas lösenord och välj sedan Lägg till användare **och tilldela licenser.** 
+1. Ange de e-postadresser där användarna får sina nya autentiseringsuppgifter, välj **Skicka e-post och fortsätt.**
+1. Fortsätt **sedan igen** för att ansluta din tillfälliga domän. 
+1. Om du vill kan du välja att informera användarna i organisationen om Teams och sedan **välja Fortsätt.**
+1. Expandera och granska dina **Android- och iOS-inställningar** och välj sedan **Skapa princip för hantering av mobilappar.**
+1. Ge feedback om du vill och välj **Gå till administrationscentret.**
 
-Nästa steg i processen är att konfigurera skydd för din organisation.
+Nästa steg i processen blir att skapa skydd för organisationen.

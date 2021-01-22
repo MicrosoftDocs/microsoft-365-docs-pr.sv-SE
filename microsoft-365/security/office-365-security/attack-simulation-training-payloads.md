@@ -1,72 +1,73 @@
 ---
-title: Skapa en nytto last för utbildning för attack simulering
+title: Skapa ett nyttolast för att simulera attacker
 ms.author: daniha
 author: danihalfin
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Administratörer kan läsa mer om hur man skapar anpassade nytto laster för utbildning för angrepps simulering i Microsoft Defender för Office 365.
-ms.openlocfilehash: 86a962dc3117708ac71195b9efc336fa30c573dd
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+description: Administratörer kan lära sig hur man skapar anpassade nyttolaster för att simulera attacker i Microsoft Defender för Office 365.
+ms.technology: mdo
+ms.openlocfilehash: 6cc5dd4a48ab89193133cfaf823d0a1b1868fa79
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908347"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929196"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Skapa en anpassad nyttolast för att träna på attacksimulering
 
-Microsoft erbjuder en robust nytto Last katalog för olika sociala teknik tekniker som kan kopplas till din utbildning för utskrivning av attacker. Men du kanske vill skapa anpassade nytto laster som fungerar bättre för din organisation. I den här artikeln beskrivs hur du skapar en nytto last för utbildning för attack simulering i Microsoft Defender för Office 365.
+Microsoft tillhandahåller en robust katalog för nyttolaster för olika tekniker för social teknik som kan paras ihop med din utbildnings attacksimulering. Men det kan vara bra att skapa anpassade nyttolaster som fungerar bättre för din organisation. I den här artikeln beskrivs hur du skapar en nyttolast i utbildningen Attack-simulering i Microsoft Defender för Office 365.
 
-Du kan skapa en nytto last genom att klicka på **skapa en nytto Last** på [fliken dedikerade **nytto laster**](https://security.microsoft.com/attacksimulator?viewid=payload) eller i [guiden skapa simulering](attack-simulation-training.md#selecting-a-payload).
+Du kan skapa en nyttolast genom att klicka på Skapa en nyttolast på antingen den dedikerade fliken Nyttolaster eller i [guiden för att skapa simulering.](attack-simulation-training.md#selecting-a-payload) [  ](https://security.microsoft.com/attacksimulator?viewid=payload) 
 
-I det första steget i guiden kan du välja en nytto Last typ. **För närvarande är bara e-post tillgänglig**.
+I det första steget i guiden väljer du en nyttolasttyp. **För närvarande är endast e-post tillgänglig.**
 
-Välj sedan en associerad teknik. Se mer information om tekniker när du [väljer en social teknik teknik](attack-simulation-training.md#selecting-a-social-engineering-technique).
+Välj sedan en associerad teknik. Mer information om olika tekniker finns [i Välja en social engineering-teknik.](attack-simulation-training.md#selecting-a-social-engineering-technique)
 
-I nästa steg namnger du din nytto Last. Du kan också ange en beskrivning.
+Namnge din nyttolast i nästa steg. Du kan också ge den en beskrivning.
 
-## <a name="configure-payload"></a>Konfigurera nytto Last
+## <a name="configure-payload"></a>Konfigurera nyttolast
 
-Nu är det dags att bygga din nytto Last. Ange avsändarens namn, e-postadress och meddelandets ämne i avsnittet **avsändare** . Välj en nät fiske-URL i listan. Denna URL kommer senare att bäddas in i meddelande texten.
-
-> [!TIP]
-> Du kan välja en intern e-postadress för avsändarens avsändare, som kommer att visas som en annan anställd i företaget. Detta ökar det mottagligt för nytto lasten och hjälper anställda att hålla sig utsatt för risk för interna hot.
-
-Det finns en RTF-redigerare som kan skapa din nytto Last. Du kan också importera ett e-postmeddelande som du har skapat i förväg. När du skapar bröd texten i e-postmeddelandet kan du dra nytta av de **dynamiska märkningarna** för att anpassa e-postmeddelandet till dina mål. Klicka på **phishing-länken** för att lägga till den tidigare valda nät fiske adressen i meddelande texten.
-
-![Phishing-länk och dynamiska Taggar markerade i nytto last för Microsoft Defender för Office 365](../../media/attack-sim-preview-payload-email-body.png)
+Nu är det dags att skapa din nyttolast. Ange avsändarens namn, e-postadress och ämne i avsnittet Med **avsändarinformation.** Välj en nätfiske-URL i den angivna listan. Den här URL-adressen bäddas senare in i meddelandets brödtext.
 
 > [!TIP]
-> Om du vill spara tid kan du växla till alternativet att **ersätta alla länkar i e-postmeddelandet med phishing-länken**.
+> Du kan välja ett internt e-postmeddelande för payloadens avsändare, så att nyttolasten visas som kommer från en annan anställd på företaget. Detta ökar känsligheten för nyttolasten och utbildar anställda om risken för interna hot.
 
-När du är klar med att bygga upp nytto lasten klickar du på **Nästa**.
+En RTF-redigerare finns tillgänglig för att skapa din nyttolast. Du kan också importera ett e-postmeddelande som du har skapat i förväg. När du skapar brödtexten i e-postmeddelandet kan du dra nytta av de **dynamiska taggarna** för att anpassa e-postmeddelandet efter dina mål. Klicka **på nätfiskelänk** för att lägga till den tidigare markerade nätfiske-URL:en i meddelandets brödtext.
+
+![Nätfiskelänk och dynamiska taggar markerade när nyttolast skapades för Microsoft Defender för Office 365](../../media/attack-sim-preview-payload-email-body.png)
+
+> [!TIP]
+> Spara tid genom att växla alternativet att ersätta **alla länkar i e-postmeddelandet med nätfiskelänken.**
+
+När du är klar med att skapa nyttolasten som du vill klickar du på **Nästa.**
 
 ## <a name="adding-indicators"></a>Lägga till indikatorer
 
-Med indikatorer blir det lättare för anställda att komma via attack simuleringen förstå vilken LED trådar de kan leta efter i framtida attacker. Börja genom att klicka på **Lägg till indikator**.
+Indikatorer hjälper anställda att gå igenom attackberäkningen och förstå ledtråden de kan leta efter i framtida attacker. Börja med att klicka på **Lägg till-indikator.**
 
-Välj en indikator du vill använda i list rutan. Listan granskas för att innehålla de vanligaste LED trådar som visas i nät fiske meddelanden. När du markerat det här alternativet kontrollerar du att indikator placeringen är inställd på **från bröd texten i e-** postmeddelandet och klickar på **Markera text**. Markera den del av nytto lasten där denna indikator visas och klicka på **Välj**.
+Välj en indikator som du vill använda i listrutan. Den här listan är listad för att innehålla de vanligaste ledtrådarna som visas i nätfiskemeddelanden. När det är markerat kontrollerar du att indikatorns placering är inställd på Från brödtexten i **e-postmeddelandet** och klickar **på Markera text.** Markera den del av nyttolasten där indikatorn visas och klicka på **Markera.**
 
-![Markerad text i meddelande texten för att lägga till en symbol i utbildning för attack simulering](../../media/attack-sim-preview-select-text.png)
+![Markerad text i meddelandets brödtext som ska läggas till i en indikator i attacksimuleringsutbildning](../../media/attack-sim-preview-select-text.png)
 
-Lägg till en egen beskrivning som beskriver indikatorn och klicka i indikatorn för förhands granskning för att se en förhands granskning av indikatorn. När du är klar klickar du på **Lägg till**. Upprepa de här stegen tills du har täckt alla indikatorer i din nytto Last.
+Lägg till en anpassad beskrivning för att beskriva indikatorn och klicka i förhandsgranskningsrutan för att se en förhandsgranskning av indikatorn. Klicka på Lägg till när du **är klar.** Upprepa dessa steg tills du har tagit upp alla indikatorer i din nyttolast.
 
-## <a name="review-payload"></a>Granska nytto Last
+## <a name="review-payload"></a>Granska nyttolast
 
-Du är klar med att bygga din nytto Last. Nu är det dags att granska informationen och se en förhands granskning av din nytto Last. I förhands granskningen visas alla indikatorer som du har skapat. Du kan redigera varje del av nytto lasten från det här steget. När du är nöjd kan du **Skicka** in din nytto Last.
+Du är klar med att skapa din nyttolast. Nu är det dags att granska informationen och se en förhandsgranskning av din nyttolast. Förhandsgranskningen innehåller alla indikatorer som du har skapat. I det här steget kan du redigera varje del av nyttolasten. När du är nöjd kan **du skicka** in din nyttolast.
 
 > [!IMPORTANT]
-> De nytto laster som du har skapat har **klient organisationen** som källa. När du väljer nytto laster bör du kontrol lera att du inte filtrerar bort **klient organisationen**.
+> Payloads that you've created will have **Tenant** as their source. När du väljer nyttolaster ska du se till att du inte filtrerar bort **klientorganisationen.**
 
 ## <a name="related-links"></a>Relaterade länkar
 
 [Kom igång med Attack simuleringsträning](attack-simulation-training-get-started.md)
 
-[Skapa en simulering av nät fiske attacker](attack-simulation-training.md)
+[Skapa en simulering av nätfiskeattack](attack-simulation-training.md)
 
 [Få insikter genom att träna på attacksimulering](attack-simulation-training-insights.md)

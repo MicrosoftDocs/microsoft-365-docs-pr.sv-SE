@@ -1,5 +1,5 @@
 ---
-title: Köp Microsoft 365 Business-röst
+title: Köp Microsoft 365 Business Voice
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -17,37 +17,38 @@ monikerRange: o365-worldwide
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Läs om hur du köper tillägget Microsoft 365 Business Voice.
-ms.openlocfilehash: b90f974f5cf8b752b8a9e87fd25a39cb9ba55ebe
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.openlocfilehash: b52d10587ce00cc2a9cd3bdb5364a0ba54cd2dbf
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712515"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927484"
 ---
-# <a name="buy-business-voice"></a>Köp företags röst
+# <a name="buy-business-voice"></a>Köp Business Voice
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Gryk?autoplay=false]
 
-Med Microsoft 365 Business Voice kan du ringa och ta emot samtal, använda ljud konferens och ställa in ett samtals meny system för att dirigera kunder till rätt avdelning. För att komma igång måste du köpa tillägget Business Voice.
+Med Microsoft 365 Business Voice kan du ringa och ta emot samtal, använda ljudkonferenser och konfigurera ett samtalsmenysystem för att dirigera kunderna till rätt avdelning. För att komma igång måste du köpa Business Voice-tillägget.
 
 ## <a name="try-it"></a>Prova!
 
-1. Gå till **fakturering** i administrations centret för Microsoft 365 och välj **Köp tjänster**.
-1. Bläddra nedåt och välj **tillägg**. 
-1. Välj **Microsoft 365 Business Voice**.
+1. Gå till Fakturering i administrationscentret för Microsoft 365 **och** välj **Köptjänster.**
+1. Rulla nedåt och **välj Tillägg.** 
+1. Välj **Microsoft 365 Business Voice.**
 
-    Om du inte ser det måste du först köpa ett företags abonnemang som innehåller Microsoft Teams.
-1. Ange antalet användare du vill ha licenser för och välj sedan **kolla nu**.
-1. Välj **automatisk omdebitering** för att köpa samtals kredit om det behövs och undvika avbrott i tjänsten.
+    Om du inte ser den måste du först köpa en företagsprenumeration som innehåller Microsoft Teams.
+1. Ange antalet användare som du vill ha licenser för och **välj Gå till Checka ut nu.**
+1. Välj **Automatisk omdening** om du vill köpa kommunikationskrediter om det behövs och undvika avbrott i tjänsten.
 
-    Kommunikations krediter används för internationella samtal, avgiftsfria nummer och ytterligare samtals minuter.
+    Samtalskrediter används för internationella samtal, avgiftsfria nummer och ytterligare samtalsminuter.
 1. Välj **Nästa**.
-1. Kontrol lera betalnings metod.
-1. Välj **Placera order** och **Fortsätt**.
+1. Verifiera din betalningsmetod.
+1. Välj **Lägg order** och **Fortsätt.**
 
-Tillägget Business Voice har lagts till.
+Nu har du lagt till Business Voice-tillägget.

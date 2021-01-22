@@ -1,10 +1,10 @@
 ---
-title: Få relevant information om en enhet med go-letare
-description: Lär dig hur du använder verktyget "go-fest" för att snabbt fråga efter relevant information om en enhet eller händelse med hjälp av avancerad jakt.
-keywords: Avancerad jakt, olycka, pivot, enhet, go-evenemang, relevanta händelser, hot mot cyberterrorism hotet om sökning, frågor, telemetri, Microsoft 365, Microsoft Threat Protection
+title: Få relevant information om en entitet med go-leta
+description: Lär dig hur du använder sökverktyget för att snabbt söka efter relevant information om en enhet eller händelse med avancerad sökning.
+keywords: avancerad sökning, incident, pivot, entitet, sök, relevanta händelser, hotsökning, sökning, fråga, telemetri, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 9ddad74d179ac16a25640e2bdf4ed4906f920102
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 9e707fe8b3dff40d0698630cd0592b297042e5fb
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846886"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929517"
 ---
-# <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Hitta snabbt en enhet eller händelse information med go-evenemang
+# <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Snabbt jaga efter entitets- eller händelseinformation med go-jagning
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,29 +35,29 @@ ms.locfileid: "48846886"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Med åtgärden *gå* med, kan du snabbt undersöka händelser och olika entitetstyper med hjälp av kraftfulla frågor baserade på de [avancerade jakt](advanced-hunting-overview.md) funktionerna. Den här åtgärden kör automatiskt en avancerad tilläggsfråga för att hitta relevant information om den markerade händelsen eller enheten.
+Med *sökåtgärden* Go kan du snabbt undersöka händelser och olika enhetstyper med hjälp av kraftfulla [frågebaserade avancerade](advanced-hunting-overview.md) sökfunktioner. Den här åtgärden kör automatiskt en avancerad sökningsfråga för att hitta relevant information om den valda händelsen eller enheten.
 
-Åtgärden *Go-letare* är tillgänglig i olika avsnitt i säkerhets Center när händelse-eller entitetsinformation visas. Du kan till exempel använda *Go-leta* från följande avsnitt:
+Åtgärden *gå-och-leta* är tillgänglig i olika delar av säkerhetscentret när händelse- eller entitetsinformation visas. Du kan till exempel använda *gå-jaga* från följande avsnitt:
 
-- På [sidan incident](investigate-incidents.md#incident-overview)kan du granska information om användare, enheter och många andra enheter som är kopplade till en olycka. När du väljer en entitet får du ytterligare information och olika åtgärder du kan vidta för den entitity. I exemplet nedan är en post låda markerad, med information om post lådan och även om du väljer att ha mer information om post lådan.
+- På [incidentsidan kan](investigate-incidents.md#incident-overview)du granska information om användare, enheter och många andra enheter som är kopplade till en incident. När du väljer en enhet får du ytterligare information samt olika åtgärder du kan utföra på den personen. I exemplet nedan är en postlåda markerad och visar information om postlådan samt alternativet att leta efter mer information om postlådan.
 
-    ![Bild som visar brev låde information med alternativet Sök efter](../../media/mtp-ah/go-hunt-email.png)
+    ![Bild som visar information om postlådan med alternativet gå-och-leta](../../media/mtp-ah/go-hunt-email.png)
 
-- På sidan incident kan du även komma åt en lista med enheter under fliken bevis. Om du väljer någon av dessa enheter kan du snabbt hitta information om den personen.
+- På incidentsidan kan du också komma åt en lista med enheter under bevisfliken. Om du väljer en av dessa enheter kan du snabbt jaga information om enheten.
 
-    ![Bild som visar markerad fil med alternativet Sök efter på fliken bevis](../../media/mtp-ah/go-hunt-evidence-file.png)
+    ![Bild som visar vald fil med sökalternativet Gå på fliken Bevis](../../media/mtp-ah/go-hunt-evidence-file.png)
 
 
-- När du visar tids linjen för en enhet kan du välja en händelse i tids linjen för att visa ytterligare information om händelsen. När en händelse är markerad får du möjlighet att hitta alla relevanta händelser i avancerad jakt.
+- När du visar tidslinjen för en enhet kan du välja en händelse på tidslinjen för att visa ytterligare information om händelsen. När en händelse har valts får du möjlighet att jaga andra relevanta händelser i avancerad sökning.
 
-    ![Bild som visar händelse Detaljer med alternativet Sök efter](../../media/mtp-ah/go-hunt-event.png)
+    ![Bild som visar händelseinformation med alternativet gå-och-leta](../../media/mtp-ah/go-hunt-event.png)
 
-När **Go hunt** du väljer Sök **efter relaterade händelser** skickas olika frågor, beroende på om du har valt en enhet eller en händelse.
+Om **du väljer** **Söksök eller Sök efter relaterade** händelser passeras olika frågor, beroende på om du har valt en enhet eller en händelse.
 
-## <a name="query-for-entity-information"></a>Fråga efter entitetsinformation
-När du använder *Go-leta* för att söka efter information om en användare, en enhet eller någon annan typ av enhet kontrollerar frågan alla relevanta schema tabeller för eventuella händelser som berör den entiteten. För att resultaten ska kunna hanteras begränsas frågan till samma tids period som den tidigaste aktiviteten under de senaste 30 dagarna som berör enheten och är kopplad till händelsen.
+## <a name="query-for-entity-information"></a>Fråga för entitetsinformation
+När du *använder sökfråga* efter information om en användare, enhet eller någon annan typ av entitet genomsöks alla relevanta schematabeller efter händelser som innefattar den enheten. För att resultatet ska kunna hanteras begränsades frågan till ungefär samma tidsperiod som den tidigaste aktiviteten under de senaste 30 dagarna som innefattar enheten och som är associerad med händelsen.
 
-Här är ett exempel på frågan Sök efter en enhet:
+Här är ett exempel på sökfrågan för en enhet:
 
 ```kusto
 let selectedTimestamp = datetime(2020-06-02T02:06:47.1167157Z);
@@ -70,19 +71,19 @@ and DeviceName == deviceName
 | take 100
 ```
 ### <a name="supported-entity-types"></a>Entitetstyper som stöds
-Du kan använda *gå* till efter att välja någon av följande typer av enheter:
+Du kan använda *gåsök när* du har valt någon av dessa entitetstyper:
 
-- Hjälpfiler
+- Filer
 - E-postmeddelanden
 - E-postkluster
-- Post lådor
+- Postlådor
 - Användare
-- Anordningar
+- Enheter
 - IP-adresser
-- Garanteras
+- URL:er
 
-## <a name="query-for-event-information"></a>Fråga efter händelse information
-När du använder *Go-leta* för att få information om en tids linje händelse kontrollerar frågan alla relevanta schema tabeller för andra händelser kring tiden för den markerade händelsen. I följande fråga visas till exempel händelser i olika schema tabeller som har inträffat kring samma tids period på samma enhet:
+## <a name="query-for-event-information"></a>Fråga för händelseinformation
+När du *använder sökfråga* efter information om en tidslinjehändelse söker frågan igenom alla relevanta schematabeller efter andra händelser vid den valda händelsens tidpunkt. I följande fråga visas till exempel händelser i olika schematabeller som inträffade under samma tidsperiod på samma enhet:
 
 ```kusto
 // List relevant events 30 minutes before and after selected LogonAttempted event
@@ -96,7 +97,7 @@ search in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents, DeviceRegistryEv
 ```
 
 ## <a name="adjust-the-query"></a>Justera frågan
-Med lite kunskap om [frågespråket](advanced-hunting-query-language.md)kan du ändra frågan till preferenser. Du kan till exempel justera den här raden, som avgör tidsfönstrets storlek:
+Om du har viss kunskap [om frågespråket](advanced-hunting-query-language.md)kan du justera frågan efter dina önskemål. Du kan till exempel justera den här raden, som bestämmer storleken på ett tidsfönster:
 
 ```kusto
 Timestamp between ((selectedTimestamp - 1h) .. (selectedTimestamp + 1h))
@@ -104,10 +105,10 @@ Timestamp between ((selectedTimestamp - 1h) .. (selectedTimestamp + 1h))
 
 Förutom att ändra frågan för att få mer relevanta resultat kan du också:
 - [Visa resultatet som diagram](advanced-hunting-query-results.md#view-query-results-as-a-table-or-chart)
-- [Skapa en anpassad detektions regel](custom-detection-rules.md)
+- [Skapa en anpassad identifieringsregel](custom-detection-rules.md)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Arbeta med frågeresultat](advanced-hunting-query-results.md)
-- [Anpassade identifierings regler](custom-detection-rules.md)
+- [Anpassade identifieringsregler](custom-detection-rules.md)

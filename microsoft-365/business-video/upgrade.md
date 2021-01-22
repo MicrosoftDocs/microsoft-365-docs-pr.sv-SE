@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du uppgraderar Windows 10 Home till Windows 10 Pro.
-ms.openlocfilehash: 64393e1b5c3f6652835fe5f5cd5859a6f4cf4320
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 3f775130728eb6f00b1adb008c697fb84254827b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703109"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927760"
 ---
 # <a name="upgrade-from-windows-10-home-to-windows-10-pro"></a>Uppgradera från Windows 10 Home till Windows 10 Pro
 
@@ -36,10 +37,10 @@ ms.locfileid: "49703109"
 
 Microsoft 365 Business kräver Windows 10 Pro för att skydda dina data. Om du har en dator med Windows 10 Home följer du de här stegen för att uppgradera till Windows 10 Pro.
 
-1. Välj  **Start**  -menyn i Skriv bordet, Sök efter  **Microsoft Store** och markera det.
-2. I Microsoft Store klickar du i Sök fältet, skriver  **Windows 10 Pro** och väljer sedan  **Uppgradera till Windows 10 Pro**.
-3. Under  **Uppgradera till Windows 10 Pro** väljer du  **Läs mer** och väljer sedan  **köp**.
-4. I rutan  **Windows-säkerhet**  anger du din PIN-kod för att verifiera din identitet.
-5. Gå till betalnings sidan, Läs villkoren för försäljning, ändra din betalnings metod om du vill och välj sedan  **köp**.
-6. Under  **Uppgradera till Windows 10 Pro** väljer du  **Installera**.
-7. Spara eventuella filer om det behövs och välj sedan  **Ja, låt&#39;s Go**  installera Windows.
+1. Välj Start-menyn  **på**  skrivbordet, sök efter  **Microsoft Store** och välj det.
+2. Klicka i sökfältet i Microsoft Store, skriv **Windows 10 Pro** och välj sedan Uppgradera **till Windows 10 Pro.**
+3. Under **Uppgradera till Windows 10 Pro** väljer du Läs **mer** och sedan **Köp.**
+4. Ange din  **PIN-kod**  för att verifiera din identitet i rutan Windows-säkerhet.
+5. Granska betalningssidan, läs köpvillkoren, ändra betalningsmetoden om du vill och välj sedan **Köp.**
+6. Välj Installera under Uppgradera till  **Windows 10 Pro.**
+7. Spara eventuella filer och välj sedan  **Ja, låt&#39;och börja**  installera Windows.

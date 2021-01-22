@@ -16,41 +16,42 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du hanterar inställningar för att förhindra data förlust.
-ms.openlocfilehash: 93c06af0203a5eb590d22d86e597d7485d7af238
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Lär dig hur du hanterar konfigurera principer för skydd mot dataförlust.
+ms.openlocfilehash: e963cf85fee887b6e91c6e54b00aaa9e5174e3b6
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702908"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927964"
 ---
-# <a name="prevent-data-loss-with-dlp"></a>Förhindra data förlust med DLP
+# <a name="prevent-data-loss-with-dlp"></a>Förhindra dataförlust med DLP
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3TGvL?autoplay=false]
 
-Principer för skydd mot data förlust hjälper dig att identifiera och skydda företagets känslig information, till exempel sociala säkerhets nummer eller medicinska uppgifter. 
+Principer för dataförlustskydd hjälper till att identifiera och skydda känslig information inom företaget, t.ex. personnummer eller journaler. 
 
 ## <a name="try-it"></a>Prova!
 
-1. För att komma igång går du till [administrations centret](https://admin.microsoft.com)och väljer **Installera**.
-1. Rulla ned för att **Konfigurera data förlust skydd** och välj sedan **Visa** och sedan **Hantera**.
-1. Om du vill redigera en princip markerar du den, väljer **Redigera princip** och väljer sedan vad du vill ändra. Välj till exempel **platser** för att ändra vad som ska skannas.
-1. Om du vill aktivera genomsökning av innehåll i Microsoft Teams aktiverar du växlings knappen **till position och** väljer sedan **Spara**.
-1. Om du vill redigera princip inställningar väljer du **Redigera**.
-1. Du måste ange separata regler som gäller för små och stora mängder av känsligt innehåll. Utöka din regel för dålig volym. Välj **Edit Rule**.
-1. Granska inställningarna och justera dem efter behov. Du kan till exempel välja att **Anpassa e-** postmeddelandet och **Anpassa princip Tips texten**. Välj **Spara**.
-1. Upprepa för den högsta volym regeln. Välj **Spara** och sedan **Stäng**.
-1. Om du vill skapa en ny princip väljer du **skapa en princip**.
-1. Du kan skapa en anpassad princip eller börja med en mall. Om du till exempel vill skapa en HIPAA policy väljer du hälso mal len **medicin och hälsa** och väljer sedan **amerikansk sjukförsäkring Act (HIPAA)**. Välj **Nästa**.
-1. Ange ett namn och en beskrivning för policyn. Välj **Nästa**.
-1. Välj var du vill skanna. Välj **Nästa**.
+1. Kom igång genom att gå till [administrationscentret](https://admin.microsoft.com)och välja **Installation.**
+1. Rulla ned till **Konfigurera skydd mot dataförlust** och välj sedan **Visa** och sedan **Hantera.**
+1. Om du vill redigera en princip markerar du den, **väljer Redigera princip** och sedan vad du vill ändra. Välj till exempel Platser **om du vill** ändra det som genomsöks.
+1. Om du vill aktivera genomsökning av innehåll i Microsoft Teams ändrar du växlingsknappen till **läget** På och väljer sedan **Spara.**
+1. Om du vill redigera principinställningarna väljer du **Redigera.**
+1. Du måste ange separata regler som gäller för små och stora mängder känsligt innehåll som upptäckts. Utöka regeln för låg volym. Välj **Redigera regel.**
+1. Granska inställningarna och justera dem efter behov. Du kan till exempel välja att anpassa **texten i e-postmeddelandet** **och anpassa texten i principtipset.** Välj **Spara**.
+1. Upprepa för regeln med hög volym. Välj **Spara** och sedan **Stäng.**
+1. Om du vill skapa en ny princip väljer **du Skapa en princip.**
+1. Du kan skapa en anpassad princip eller utgå från en mall. Om du till exempel vill skapa en  HIPAA-policy väljer du mallen Medicinskt och hälsa och sedan **U.S. Health Insurance Act (HIPAA).** Välj **Nästa**.
+1. Ange ett namn och en beskrivning för principen. Välj **Nästa**.
+1. Välj platser att söka igenom. Välj **Nästa**.
 1. Välj den typ av innehåll som du vill skydda. Välj **Nästa**.
-1. Välj vad du vill ska hända om känslig information upptäcks. Välj **Nästa**.
-1. Anpassa dina åtkomst-och behörighets behörigheter. Välj **Nästa**.
-1. Välj när du vill att principen ska börja gälla. Välj **Nästa**.
-1. Granska inställningarna och välj **skapa**. När din policy har verkställts blockeras e-post som innehåller den beskrivna känslig informationen och avsändaren som försökte skicka den informationen får ett varnings meddelande.
+1. Välj vad du vill ska hända om känslig information identifieras. Välj **Nästa**.
+1. Anpassa åtkomst och åsidosätta behörigheter. Välj **Nästa**.
+1. Välj när principen ska gälla. Välj **Nästa**.
+1. Granska inställningarna och välj **Skapa.** När principen börjar gälla blockeras e-postmeddelanden som innehåller den beskrivande känsliga informationen och avsändaren som försökte skicka informationen visas ett varningsmeddelande.

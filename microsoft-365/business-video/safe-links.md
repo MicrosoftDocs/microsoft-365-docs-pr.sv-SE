@@ -16,36 +16,37 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du hanterar säkra Länkar för att skydda ditt företag från skadliga webbplatser.
-ms.openlocfilehash: eabb2c1f71b1183867ffcb005ba4f7e44ed6e4b7
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Lär dig hur du hanterar säkra länkar för att skydda företaget från skadliga webbplatser.
+ms.openlocfilehash: 1f5b3f61871e8d231029156631031dbb0ef4f2f5
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702665"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928028"
 ---
 # <a name="manage-safe-links"></a>Hantera säkra länkar
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvdwy?autoplay=false]
 
-Microsoft Defender för Office 365, kallades tidigare Microsoft 365 ATP eller Avancerat skydd, hjälper till att skydda ditt företag mot skadliga webbplatser när personer klickar på länkar i Office-program.
+Microsoft Defender för Office 365 , som tidigare hette Microsoft 365 ATP eller Advanced Threat Protection, hjälper dig att skydda företaget mot skadliga webbplatser när personer klickar på länkar i Office-program.
 
 ## <a name="try-it"></a>Prova!
 
-1. Gå till [administrations centret](https://admin.microsoft.com)och välj **Installera**.
-1. Rulla nedåt för att **öka skyddet mot avancerade hot**. Välj **Visa**, **Hantera** och sedan **ATP-säkra länkar**.
-1. Under **principer som gäller för hela organisationen** väljer du **standard** principen och sedan **redigerings** ikonen.
+1. Gå till [administrationscentret](https://admin.microsoft.com)och välj **Installation.**
+1. Rulla nedåt för **att öka skyddet mot avancerade hot.** Välj **Visa,** **Hantera** och sedan **ATP – säkra länkar.**
+1. Under **Principer som gäller för hela** organisationen väljer du **Standardprincip** och sedan **redigeringsikonen.**
 1. Ange en URL som du vill blockera.
-1. Välj **Använd säkra länkar i Office-program, Office för iOS och Android**. Välj **Spåra inte när användare klickar på säkra länkar**; och välj **Tillåt inte att användare klickar via säkra länkar till original-URL: en**. Dessa kanske redan är markerade om du har ställt in standard policyn. Välj **Spara**.
-1. Välj **regel för rekommenderade säkra länkar** under **principer som gäller för specifika mottagare** och välj sedan **redigerings** ikonen.
-1. Välj **Inställningar**, Bläddra ned, ange den URL som du inte vill ska markeras och välj sedan ikonen **Lägg till** .
-1. Välj **tillämpas på** och välj sedan ditt domän namn. Markera de ytterligare domäner som du vill tillämpa regeln på. Välj **Lägg till**, **OK** och sedan **Spara**.
+1. Välj **Använd säkra länkar i Office-appar, Office för iOS och Android.** välj **Spåra inte när användare klickar på säkra länkar**; och välj **Låt inte användare klicka igenom säkra länkar till den ursprungliga URL:en.** De kanske redan är markerade om du har angett standardprincipen. Välj **Spara**.
+1. Under **Principer som gäller för specifika mottagare** väljer du **regeln** Rekommenderade säkra länkar och sedan **ikonen** Redigera.
+1. Välj **inställningar,** rulla nedåt, ange den URL-adress som du inte vill kontrollera och välj sedan ikonen **Lägg till.**
+1. Välj **det du** vill använda på och välj sedan domännamnet. Markera alla ytterligare domäner som du vill att regeln ska tillämpas på. Välj **Lägg till,** **OK** och sedan **Spara.**
 
-Nu har du konfigurerat ATP-länkar. Tillåt upp till 30 minuter innan ändringarna börjar gälla.
+ATP – säkra länkar är nu konfigurerade. Det kan ta upp till 30 minuter innan ändringarna verkställs.
 
-När en användare får ett e-postmeddelande med länkar genomsöks länkarna. Om länkarna betraktas som säkra kan de vara Klicka bara på dem. Om länken finns i blockeringslistan visas ett meddelande om att det har blockerats.
+När en användare får ett e-postmeddelande med länkar genomsöks länkarna. Om länkarna anses vara säkra går de att klicka på. Men om länken finns med i listan över blockerade ser användarna ett meddelande om att den har blockerats.

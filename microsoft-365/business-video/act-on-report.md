@@ -1,5 +1,5 @@
 ---
-title: Granska användnings rapporter
+title: Granska användningsrapporter
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,32 +16,33 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du använder informationen från användnings rapporter.
-ms.openlocfilehash: 898f72f3c89981cc7ea8112cd157239d42b08d20
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Lär dig hur du använder informationen i användningsrapporterna.
+ms.openlocfilehash: e69362a9190eda71cd7ab42fb404b6e715a5c48e
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702796"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927688"
 ---
-# <a name="review-usage-reports-in-microsoft-365"></a>Granska användnings rapporter i Microsoft 365
+# <a name="review-usage-reports-in-microsoft-365"></a>Granska användningsrapporter i Microsoft 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SOFC?autoplay=false]
 
-Ta reda på hur anställda använder Microsoft 365-tjänster som e-post eller OneDrive och vidta åtgärder.
+Ta reda på hur anställda använder Microsoft 365-tjänster, till exempel e-post eller OneDrive, och vidta åtgärder.
 
-I [Admin Center](https://admin.microsoft.com)ser du alla tillgängliga rapporter.
+I [administrationscentret](https://admin.microsoft.com)kan du se alla tillgängliga rapporter.
 
 ## <a name="try-it"></a>Prova!
 
-1. Gå till **rapporter** och Använd sedan **användning**. Hitta information för en rapport genom att välja en. I rapporten aktiva användare visas vilka tjänster som används mest av personer i ditt företag.
-1. Låt oss nu titta på OneDrive-rapporten. Här kan vi se hur många personer som har ett konto, du kan också visa antalet totalt och aktiva filer samt lagrings utrymme. Om du vill se alla andra rapporter går du till den nedrullningsbara menyn.
-1. Här kan vi ta en titt på rapporten om användning av e-postprogram och se vilka metoder dina anställda använder mest för att få åtkomst till deras e-post. Du kan också visa information som är specifik för en person men informationen döljs som standard. Om du vill visa den enskilda användar informationen går du till **Inställningar** och sedan **tjänster & tillägg**.
-1. I rapport panelen kan vi aktivera den anonyma identifieraren. Vi stänger panelen och går tillbaka till **rapporter**, **användning** och **e-postaktiviteter**. Här visas information som är specifik för en person.
+1. Gå till **Rapporter** och sedan **Användning.** Du hittar information om en rapport genom att välja en rapport. Rapporten Aktiva användare visar vilka tjänster som används mest av personerna i företaget.
+1. Låt oss till exempel gå vidare och titta på OneDrive-rapporten. Här kan du se hur många personer som har ett konto, du kan också visa det totala antalet och aktiva filer samt lagringsutrymme som används. Om du vill se alla andra rapporter går du till listrutan.
+1. Här kan vi titta på användningsrapporten för e-postappen och se vilka metoder dina anställda använder mest för att komma åt sin e-post. Du kan också visa information som är specifik för en enskild person, men informationen är dold som standard. Om du vill visa den enskilda användarens information går du **till** Inställningar och **sedan & tillägg.**
+1. I rapportpanelen kan vi aktivera den anonyma identifieraren. Nu stänger vi panelen och går tillbaka till Aktiviteter för **rapporter,** **användning och** **e-post.** Här kan vi se specifik information för en enskild person.
 
-    Kom ihåg att du kan alltid gå tillbaka till hjälp som visar information om den specifika rapport du visar.
+    Kom ihåg att om du någon gång fastnar kan du alltid gå tillbaka till Hjälpen som ger dig information om den specifika rapport du visar.

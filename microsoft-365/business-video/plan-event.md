@@ -16,53 +16,54 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du planerar en händelse med Microsoft Planner.
-ms.openlocfilehash: f5ee4e63579c2c5f6493e16d27b7102d3b99b6d1
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Lär dig hur du planerar ett evenemang med Microsoft Planner.
+ms.openlocfilehash: d978232dffaede882e81a491b4d927183781aa0f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702676"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928106"
 ---
-# <a name="use-microsoft-planner-to-plan-an-event"></a>Använda Microsoft Planner för att planera en händelse
+# <a name="use-microsoft-planner-to-plan-an-event"></a>Använda Microsoft Planner till att planera ett evenemang
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c8a41e1a-c30d-4adb-ab32-6eac922d0ec0?autoplay=false]
 
 ## <a name="try-it"></a>Prova!
 
-Använd Microsoft Planner för att planera en händelse, till exempel att spåra en produkt lansering.
+Använd Microsoft Planner till att planera ett evenemang, till exempel spåra en produktlansering.
 
 ### <a name="work-with-buckets"></a>Arbeta med buckets
 
-Använd buckets för att sortera uppgifter efter typ, till exempel planering, marknadsföring och annons material och PR.
+Använd buckets för att sortera uppgifter efter typ, till exempel evenemangsplanering, marknadsföring och säljmaterial.
 
-1. Välj  **Lägg till ny Bucket**  och skriv en ny aktivitets kategori.
-2. Välj  **+**  för att lägga till uppgifter i en Bucket och skriv ett namn.
-3. Välj  **Lägg till uppgift**.
+1. Välj  **Lägg till ny bucket**  och ange en ny uppgiftskategori.
+2. Välj  **+**  att lägga till uppgifter i en bucket och skriv ett namn.
+3. Välj **Lägg till uppgift.**
 
 ### <a name="work-with-labels"></a>Arbeta med etiketter
 
-Använd etiketter för att se vilka aktiviteter som behöver åtgärdas.
+Använd etiketter för att se vilka uppgifter som behöver din uppmärksamhet.
 
-1. Skriv in namn på etiketterna.
-2. Markera en färg ruta för att ta bort eller lägga till en etikett i en aktivitet.
+1. Skriv namnen på etiketterna.
+2. Välj en färgad ruta för att ta bort eller lägga till en etikett för en uppgift.
 
 ## <a name="add-a-comment"></a>Lägga till en kommentar
 
-Publicera en kommentar för att diskutera en aktivitet med de personer som den har tilldelats till.
+Publicera en kommentar för att diskutera en uppgift med de personer som den är tilldelad till.
 
-1. Skriv ett meddelande i rutan  **kommentarer**  .
-2. Välj  **Skicka**.
+1. Skriv ett meddelande i  **rutan**  Kommentarer.
+2. Välj **Skicka.**
 
 ### <a name="keep-track-of-tasks"></a>Hålla reda på uppgifter
 
-Använd  **diagram**  och anslags  **tavla**  för att övervaka framsteg för varje grupp medlem och det övergripande projektet, eller för att sortera och ordna aktiviteter.
+Använd  **diagram-**  **och tavlavyn**  för att övervaka förloppet för varje gruppmedlem och det övergripande projektet, eller för att sortera och organisera uppgifter.
 
-- Välj  **diagram**, sedan **Gruppera efter** och slutligen **slutdatum**  för att se vilken uppgift som förfaller.
-- Välj anslags **tavla** och sedan **Gruppera efter** och slutligen för att sortera aktiviteter **efter status.**
+- Välj  **Diagram** och sedan **Gruppera efter och** slutligen Förfallodatum om **du**  vill se vilken uppgift som förfaller härnäst.
+- Välj  **Tavla** och **sedan Gruppera efter** och slutligen **Förlopp för**  att sortera uppgifter efter förlopp.
 
-**Obs!**  Aktiviteter är organiserade efter att de  **inte har startats**,  **pågår** och  **slutförts**  så att du vet när du är redo att starta produkten.
+**Obs!**  Uppgifterna är ordnade **efter Ej påbörjad,** **Pågående** och Slutförd så att du vet när du är redo att lansera produkten. 

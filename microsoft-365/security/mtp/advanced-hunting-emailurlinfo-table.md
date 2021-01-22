@@ -1,10 +1,10 @@
 ---
-title: EmailUrlInfo-tabell i det avancerade jakt-schemat
-description: Lär dig mer om URL-eller länk information i EmailUrlInfo-tabellen för Advanced jakt-schemat
-keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, kolumn, datatyp, beskrivning, EmailUrlInfo, nätverks meddelande-ID, URL, länk
+title: Tabellen EmailUrlInfo i det avancerade sökschemat
+description: Läs mer om URL- eller länkinformation i tabellen EmailUrlInfo i det avancerade sökschemat
+keywords: avancerad sökning, hotsökning, cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, EmailUrlInfo, nätverksmeddelande-ID, url, länk
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6684f2d56cb30c909cae57e7b3e6593377449f6b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 56d35e2812d895215cbe76deb6791695380abc50
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842566"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929724"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
@@ -34,16 +35,16 @@ ms.locfileid: "48842566"
 **Gäller för:**
 - Microsoft 365 Defender
 
-`EmailUrlInfo`Tabellen i det [avancerade jakt](advanced-hunting-overview.md) -schemat innehåller information om URL: er för e-postmeddelanden och bifogade filer som hanteras av Microsoft Defender för Office 365. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+Tabellen i det avancerade utbildningsschemat innehåller information om URL:er för e-postmeddelanden och bifogade filer som `EmailUrlInfo` bearbetas av Microsoft Defender för Office [](advanced-hunting-overview.md) 365. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
-Information om andra tabeller i det avancerade jakt schema [finns i referens för avancerad jakt](advanced-hunting-schema-tables.md).
+Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | Datum och tid när händelsen registrerades |
-| `UrlId` | strängvärdet | Unik identifierare för URL: en i e-postämnet, bröd texten eller bilagan |
-| `NetworkMessageId` | strängvärdet | Unik identifierare för e-postmeddelandet, genererat av Microsoft 365 |
-| `Url` | strängvärdet | Fullständig URL i e-postämnet, bröd texten eller bilagan |
+| `Timestamp` | datetime | Datum och tid då händelsen spelades in |
+| `UrlId` | sträng | Unikt ID för WEBBADRESSen i e-postmeddelandet ämne, brödtext eller bilaga |
+| `NetworkMessageId` | sträng | Unikt ID för e-postmeddelandet som genereras av Microsoft 365 |
+| `Url` | sträng | Fullständig URL i e-postmeddelandet ämne, brödtext eller bilaga |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

@@ -1,9 +1,9 @@
 ---
-title: Prioritera incidenter i Microsoft 365 Defender
-description: Lär dig hur du filtrerar incidenter från incident kön i Microsoft 365 Defender
-keywords: incident, kö, översikt, enheter, identiteter, användare, post låda, e-post, incidenter
+title: Prioritera ärenden i Microsoft 365 Defender
+description: Lär dig hur du filtrerar incidentköer i Microsoft 365 Defender
+keywords: incident, kö, översikt, enheter, identiteter, användare, postlåda, e-post, incidenter
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,14 +21,15 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e587004fbb3bc6defab985cea9b427f64b3aab35
-ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
+ms.technology: m365d
+ms.openlocfilehash: e01fce970b806bc425db2cd4886e82f79434656f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49409261"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929300"
 ---
-# <a name="prioritize-incidents-in-microsoft-365-defender"></a>Prioritera incidenter i Microsoft 365 Defender
+# <a name="prioritize-incidents-in-microsoft-365-defender"></a>Prioritera ärenden i Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,77 +39,77 @@ ms.locfileid: "49409261"
 
 
 
-Microsoft 365 Defender använder korrelations analys och aggregerar alla relaterade varningar och undersökningar från olika produkter i en olycka. Microsoft 365 Defender utlöser också unika aviseringar för aktiviteter som endast kan identifieras som skadlig från slut punkt till slut punkt som Microsoft 365 Defender har på hela egendomen och produkt serien. Den här vyn ger säkerhets åtgärder som analyserar den större angrepps berättelsen som hjälper dem att förstå och hantera komplexa hot i organisationen.
+Microsoft 365 Defender tillämpar korrelationsanalyser och lägger till alla relaterade varningar och undersökningar från olika produkter i en incident. Microsoft 365 Defender utlöser även unika aviseringar för aktiviteter som bara kan identifieras som skadliga givet den synlighet från end-to-end som Microsoft 365 Defender har över hela webbplatsen och produktsviten. Den här vyn ger dina säkerhetsåtgärder analytiker en bredare attack story, som hjälper dem att bättre förstå och hantera komplexa hot i hela organisationen.
 
 
-**Incident kön** visar en samling händelser som har flaggats från mellan enheter, användare och post lådor. Det hjälper dig att sortera genom tillbud för att prioritera och skapa ett välinformerat Cybersecurity.
+I **kön Incidenter** visas en samling incidenter som har flaggats från olika enheter, användare och postlådor. Det hjälper dig att sortera incidenter för att prioritera och skapa ett välgrundat beslut om cybersäkerhet.
 
 
-![Bild av kön för incidenter](../../media/incidents-queue.png) 
+![Bild på incidentkö](../../media/incidents-queue.png) 
 
-Som standard visar kön i Microsoft 365 säkerhets Center de händelser som visas under de senaste 30 dagarna. Den senaste incidenten är högst upp i listan så att du kan se den först.
+Som standard visar kön i Microsoft 365 säkerhetscenter incidenter som har setts de senaste 30 dagarna. Den senaste incidenten visas högst upp i listan så att du kan se den först.
 
-Incident kön visar anpassningsbara kolumner som ger dig insyn i olika egenskaper för incidenten eller de inneslutna entiteterna. Det hjälper dig att fatta ett välgrundat beslut om prioritering av incidenter att hantera.
+Incidentkön visar anpassningsbara kolumner som ger dig insyn i olika egenskaper för incidenten eller de enheter som finns. På så sätt kan du fatta ett välgrundat beslut om prioritering av incidenter att hantera.
 
-Om du vill ha mer insyn är det lätt att ge automatisk fel sökning namn som baseras på notifieringsregler, till exempel hur många slut punkter som påverkas, användare som påverkas, identifierings källor eller kategorier. Då kan du snabbt förstå omfattningen av incidenten.
+Om du snabbt vill kunna se fler incidenter genererar namn på incidenter automatiskt baserat på aviseringsattribut, till exempel antalet slutpunkter som påverkas, användare som påverkas, identifieringskällor eller kategorier. På så sätt kan du snabbt förstå incidentens omfattning.
 
-Till exempel: *flera händelser på flera faser som rapporter ATS av flera källor.*
+Till exempel: *Incident i flera steg på flera slutpunkter som rapporterats av flera källor.*
 
 > [!NOTE]
-> Händelser som fanns före installationen av automatisk incident namn har inte ändrats.
+> Incidenter som fanns innan de automatiska namngivningarna för incidenter ändrades inte.
 
-I tillbuds kön visas också flera filtrerings alternativ, som används för att göra en bred borttagning av alla befintliga incidenter i miljön eller bestämma dig för ett visst scenario eller hot. Om du använder filter i kön för incidenter kan du avgöra vilken händelse som kräver omedelbar åtgärd. 
+I incidentkön visas också flera filtreringsalternativ, som när de används kan du rensa alla befintliga incidenter i din miljö eller bestämma dig för att fokusera på ett visst scenario eller hot. Genom att tillämpa filter på incidentkön kan du avgöra vilken händelse som kräver omedelbar uppmärksamhet. 
 
 ## <a name="available-filters"></a>Tillgängliga filter
 
 ### <a name="assigned-to"></a>Tilldelad till
-Du kan välja att visa meddelanden som har tilldelats dig eller de som hanteras via Automation.
+Du kan välja att visa aviseringar som har tilldelats dig eller de som hanteras automatiskt.
 
-### <a name="categories"></a>Klasser
-Välj kategorier för att fokusera på specifika taktiker, tekniker eller angrepps komponenter som visas. 
+### <a name="categories"></a>Kategorier
+Välj kategorier för att fokusera på specifika taktiker, tekniker eller attackkomponenter som visas. 
 
-### <a name="classification"></a>Nomenklatur
-Filtrera incidenter baserat på ange klassificeringar för relaterade aviseringar. Värdena inkluderar True Alerts, false Alerts eller inte.
+### <a name="classification"></a>Klassificering
+Filtrera incidenter baserat på de inställda klassificeringarna för relaterade aviseringar. Värdena inkluderar sanna varningar, falska aviseringar eller inte har angetts.
 
-### <a name="data-sensitivity"></a>Data känslighet
-Vissa attacker fokuserar på att rikta mot exfiltrate känsliga eller värdefulla data. Genom att använda ett filter för att se om känslig information är involverad i en olycka kan du snabbt avgöra om den känsliga informationen är potentiellt utsatt för att hantera dessa tillbud.
+### <a name="data-sensitivity"></a>Datakänslighet
+Vissa attacker fokuserar på att rikta in för att föra ut känsliga eller värdefulla data. Genom att använda ett filter för att se om det finns känslig information om händelsen kan du snabbt avgöra om känslig information potentiellt har komprometterats och prioriteras mot dessa incidenter.
 
 >[!NOTE]
->Gäller endast om Microsoft Information Protection är aktiverat.
+>Endast tillämpligt om Microsoft InformationSskydd är aktiverat.
 
-### <a name="device-group"></a>Enhets grupp
-Filtrera efter definierade enhets grupper.
+### <a name="device-group"></a>Enhetsgrupp
+Filtrera efter definierade enhetsgrupper.
 
-### <a name="investigation-state"></a>Gransknings status
-Filtrera incidenter genom att automatisera den automatiska undersökningen. 
+### <a name="investigation-state"></a>Undersökningstillstånd
+Filtrera incidenter efter status för automatiserad undersökning. 
 
 ### <a name="multiple-categories"></a>Flera kategorier 
-Du kan välja att bara se händelser som har mappats till flera kategorier och det kan leda till större skador. 
+Du kan välja att endast visa incidenter som har mappats till flera kategorier och därmed kan orsaka mer skada. 
 
-### <a name="multiple-service-sources"></a>Flera tjänst källor 
-Filtrera för att se händelser som innehåller aviseringar från olika källor (Microsoft Defender för slut punkt, Microsoft Cloud App Security, Microsoft Defender för identitet, Microsoft Defender för Office 365).
+### <a name="multiple-service-sources"></a>Flera tjänstkällor 
+Filter för att bara se händelser som innehåller aviseringar från olika källor (Microsoft Defender för slutpunkt, Microsoft Cloud App Security, Microsoft Defender för identitet, Microsoft Defender för Office 365).
 
 ### <a name="os-platform"></a>OS-plattform
-Begränsa vyn för incident kön efter operativ system.
+Begränsa incidentkövyn efter operativsystem.
 
-### <a name="service-sources"></a>Tjänste källor
-Genom att välja en specifik källa kan du fokusera på händelser som innehåller minst en avisering från den valda källan. 
+### <a name="service-sources"></a>Tjänstkällor
+Genom att välja en viss källa kan du fokusera på incidenter som innehåller minst en avisering från den valda källan. 
 
-### <a name="severity"></a>Allvarlighets grad
-Allvarlighets graden för en olycka är att det påverkar vilken inverkan den kan ha på dina till gångar. Ju högre allvarlighets grad desto större betydelse och det är vanligt vis mycket direkt uppmärksamhet. 
+### <a name="severity"></a>Allvarlighetsgrad
+Hur allvarlig en händelse är är att den är viktig för den inverkan den kan ha på dina tillgångar. Ju högre allvarlighetsgrad, desto större påverkan blir det vanligtvis och kräver i regel mest omedelbar uppmärksamhet. 
 
 ### <a name="status"></a>Status
-Du kan välja att begränsa listan med incidenter baserat på deras status för att se vilka som är aktiva eller stängda.
+Du kan välja att begränsa listan över incidenter som visas baserat på deras status för att se vilka som är aktiva eller lösta.
 
 
 
 
 ## <a name="next-steps"></a>Nästa steg
-När du har fastställt vilken händelse som kräver den högsta prioriteten kan du fortsätta att göra ytterligare utredningar på en olycka.
+När du har fastställt vilken händelse som kräver högsta prioritet kan du fortsätta att göra ytterligare arbete med en händelse.
 - [Undersöka incidenter](investigate-incidents.md)
 
 
 ## <a name="see-also"></a>Se även
-- [Incident översikt](incidents-overview.md)
+- [Översikt över incidenter](incidents-overview.md)
 - [Undersöka incidenter](investigate-incidents.md)
 - [Hantera incidenter](manage-incidents.md)

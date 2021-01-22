@@ -1,101 +1,102 @@
 ---
-title: Simulera nätfiske-attack med Microsoft Defender för Office 365
+title: Simulera en nätfiskeattack med Microsoft Defender för Office 365
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Administratörer kan lära sig hur man simulerar nät fiske attacker och tränar användarna att förhindra nätfiske genom att använda utbildning för attack simulering i Microsoft Defender för Office 365.
-ms.openlocfilehash: 56ee8b7c11187ee6883bffc9b41961d2783e1ff4
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+description: Administratörer kan lära sig hur de kan simulera nätfiskeattacker och träna sina användare mot nätfiskeskydd med hjälp av utbildning för attackbedrägerier i Microsoft Defender för Office 365.
+ms.technology: mdo
+ms.openlocfilehash: f22fe8633d8ffa8856f851369739a0f12364342b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877158"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929208"
 ---
-# <a name="simulate-a-phishing-attack"></a>Simulera nätfiske-attack
+# <a name="simulate-a-phishing-attack"></a>Simulera en nätfiskeattack
 
-Utbildning för angrepps simulering i Microsoft Defender för Office 365 kan du köra säkra cyberattack-simuleringar på din organisation för att testa din säkerhets policy och dina arbets rutiner, samt för att träna dina anställda att öka sin medvetenhet och minska deras känslighet för attacker. I den här artikeln får du lära dig hur du skapar en simulerad nätfiske-attack med utbildning för att simulera attacker.
+Med hjälp av attacksimuleringsutbildning i Microsoft Defender för Office 365 kan du köra simuleringar av cyberattacker på din organisation för att testa säkerhetsprinciper och säkerhetsmetoder, samt utbilda de anställda att öka medvetenheten och minska deras känslighet för attacker. I den här artikeln får du hjälp med att skapa en simulerad nätfiskeattack med hjälp av utbildning om attacksimulering.
 
-Information om hur du kommer igång med utbildning för att förbereda attacker finns i [komma igång med att använda funktionen för simulering av attacker](attack-simulation-training-get-started.md).
+Information om att simulera attacker finns i Komma igång med att [använda attackerssimuleringsutbildning.](attack-simulation-training-get-started.md)
 
-För att starta en simulerad nätfiske-attack, öppna [Microsoft 365 Security Center](https://security.microsoft.com/), gå till **e-& samarbets** möjligheter för \> **simulering** och gå till fliken [**simuleringar**](https://security.microsoft.com/attacksimulator?viewid=simulations) .
+Om du vill starta en simulerad nätfiskeattack öppnar du Säkerhetscenter för [Microsoft 365,](https://security.microsoft.com/)går till E-post&-utbildning för samarbetsattack och växlar till  \>  [**fliken Simuleringar.**](https://security.microsoft.com/attacksimulator?viewid=simulations)
 
-Välj **+ starta en simulering** under **simuleringar**.
+Under **Simuleringar** väljer du **+ Starta en simulering.**
 
-![Starta en simulerings knapp i Microsoft 365 säkerhets Center](../../media/attack-sim-preview-launch.png)
+![Starta en simuleringsknapp i Microsoft 365 säkerhetscenter](../../media/attack-sim-preview-launch.png)
 
 > [!NOTE]
-> När som helst under simuleringen kan du spara och stänga för att fortsätta att konfigurera simuleringen senare.
+> När som helst under simuleringen kan du spara och stänga för att fortsätta konfigurera simuleringen vid ett senare tillfälle.
 
-## <a name="selecting-a-social-engineering-technique"></a>Välja en social teknik teknik
+## <a name="selecting-a-social-engineering-technique"></a>Välja en social engineering-teknik
 
-Välj bland fyra olika tekniker som kan granskas från [Mitre to&CK® Framework](https://attack.mitre.org/techniques/enterprise/). Olika nytto laster är tillgängliga för olika tekniker:
+Välj bland fyra olika tekniker, utvalda från [MITRE ATT&CK® framework.](https://attack.mitre.org/techniques/enterprise/) Olika nyttolaster är tillgängliga för olika tekniker:
 
-- När uppgifter **skördas** försöker insamling av autentiseringsuppgifter genom att användare till en välkänd webbplats med inmatnings rutor skickar ett användar namn och lösen ord.
-- **Bifogad fil med skadlig kod** lägger till en skadlig bifogad fil i ett meddelande. När användaren öppnar den bifogade filen körs valfri kod som gör att angriparen kan kompromissa med mål enheten.
-- **Länk i bilaga** är en typ av certifiering skörde hybrid. En angripare infogar en URL i en e-postbilaga. URL-adressen i den bifogade filen följer samma teknik som skörd för autentiseringsuppgifter.
-- **Länk till malware kör skadlig** kod från en fil som finns på en välkänd fildelnings tjänst. Meddelandet som skickas till användaren innehåller en länk till den här skadliga filen. Att öppna filen och göra det lättare för angriparen att kompromissa med mål enheten.
+- **Autentiseringsuppgifter försöker samla** in autentiseringsuppgifter genom att ta användare till en känd webbplats med inmatningsrutor för att skicka ett användarnamn och lösenord.
+- **Bifogad fil i** skadlig programvara lägger till en skadlig bilaga i ett meddelande. När användaren öppnar den bifogade filen körs godtycklig kod som hjälper attackeraren att kompromettera målets enhet.
+- **Länk i bifogad** fil är en typ av hybrid för autentiseringsuppgifter för att samla information. En attack infogar en URL i en e-postbilaga. URL:en i den bifogade filen följer samma teknik som för den autentiseringsuppgifter.
+- **Länk till skadlig** programvara kör skadlig kod från en fil som finns på en känd fildelningstjänst. Meddelandet som skickas till användaren innehåller en länk till filen. Öppna filen och hjälp attackeraren att kompromettera målets enhet.
 
 > [!TIP]
-> Om du klickar på **Visa information** inom beskrivningen av varje teknik visas ytterligare information och simulerings stegen för tekniken.
+> Om du **klickar på** Visa information i beskrivningen av varje teknik visas ytterligare information och simuleringsstegen för tekniken.
 >
-> ![Simulerings steg för certifiering skörd inom utbildning för simulering av attacker i Microsoft 365 säkerhets Center](../../media/attack-sim-preview-sim-steps.png)
+> ![Simuleringssteg för att samla autentiseringsuppgifter i attacksimuleringsutbildning i Microsoft 365 säkerhetscenter](../../media/attack-sim-preview-sim-steps.png)
 
-När du har valt en teknik och klickat på **Nästa** ska du ge simuleringen ett namn och eventuellt en beskrivning.
+När du har valt metoden och klickat på **Nästa ger du** din simulering ett namn och en beskrivning om du vill.
 
-## <a name="selecting-a-payload"></a>Välja en nytto Last
+## <a name="selecting-a-payload"></a>Välja ett nyttolast
 
-Sedan måste du antingen välja en nytto Last från en befintlig nytto Last katalog.
+Därefter måste du antingen välja en nyttolast från den befintliga nyttolastkatalogen.
 
-Det finns många data punkter som du kan använda för att välja:
+Nyttolaster har ett antal datapunkter som hjälper dig att välja:
 
-- **Klicka på Rate** räknas hur många personer som klickade på denna nytto Last.
-- **Förväntad kompromiss frekvens** förväntar sig att procent andelen personer som kommer att bli utsatt för denna nytto Last baserat på historiska data för nytto lasten i Microsoft Defender för Office 365-kunder.
-- **Simuleringar startas** antal gånger denna nytto Last användes i andra simuleringar.
-- **Komplexitet**, tillgängliga genom **filter**, beräknas baserat på antalet indikatorer inom nytto lasten som led trådar till att det är en attack. Fler indikatorer kan leda till lägre komplexitet.
-- **Källa**, som är tillgänglig via **filter**, anger om nytto lasten skapades på din klient organisation eller är en del av Microsofts förvalda nytto fil katalog (global).
+- **Click rate counts** how many people clicked this payload.
+- **Förutsagd** komprometterad ränta förutsäger den procentandel av personer som kommer att bli komprometterad av den här nyttolasten baserat på historiska data för nyttolasten i Microsoft Defender för Office 365-kunder.
+- **Vid simuleringar** som startas räknas antalet gånger som den här nyttolasten har använts i andra simuleringar.
+- **Komplexiteten,** som är tillgänglig **via** filter, beräknas utifrån antalet indikatorer i nyttolasten som tyder på att den är en attack. Fler indikatorer leder till lägre komplexitet.
+- **Källa,** som är tillgänglig **via** filter, anger om nyttolasten skapades i klientorganisationen eller är en del av Microsofts befintliga nyttolastkatalog (global).
 
-![Vald nytto Last i utbildning för attack simulering i Microsoft 365 säkerhets Center](../../media/attack-sim-preview-select-payload.png)
+![Vald nyttolast inom attacksimuleringsutbildning i Microsoft 365 säkerhetscenter](../../media/attack-sim-preview-select-payload.png)
 
-Välj en nytto Last i listan för att se en förhands granskning av nytto lasten med ytterligare information om den.
+Välj en nyttolast i listan om du vill se en förhandsgranskning av nyttolasten med ytterligare information om den.
 
-Om du vill skapa en egen nytto Last läser du [skapa en nytto last för utbildning för utskrivning](attack-simulation-training-payloads.md).
+Om du vill skapa en egen nyttolast kan du läsa om att [skapa en nyttolast för att simulera attacker.](attack-simulation-training-payloads.md)
 
-## <a name="audience-targeting"></a>Mål grupps anpassning
+## <a name="audience-targeting"></a>Målgruppsanpassning
 
-Nu är det dags att välja simuleringens mål grupp. Du kan välja att **ta med alla användare i organisationen** eller **bara ta med specifika användare och grupper**.
+Nu är det dags att välja den här simuleringens målgrupp. Du kan välja att **inkludera alla användare i organisationen eller** att endast inkludera vissa användare och **grupper.**
 
-Om du väljer att **bara inkludera specifika användare och grupper** kan du antingen:
+När du väljer att **endast inkludera vissa användare och grupper kan** du antingen:
 
-- **Lägg till användare**, som gör att du kan använda Sök funktionen för din klient organisation, samt avancerade funktioner för sökning och filtrering, som mål för användare som inte har riktat mot en simulering under de senaste 3 månaderna.
-  ![Användar filter i utbildning för attack simulering i Microsoft 365 Security Center](../../media/attack-sim-preview-user-targeting.png)
-- **Importera från CSV** låter dig importera en fördefinierad uppsättning användare för den här simuleringen.
+- **Lägg till** användare, så att du kan utnyttja sökning för klientorganisationen, samt avancerade sök- och filtreringsfunktioner, till exempel rikta användare som inte har riktats av en simulering under de senaste 3 månaderna.
+  ![Användarfiltrering i utbildning om attacksimulering i Microsoft 365 säkerhetscenter](../../media/attack-sim-preview-user-targeting.png)
+- **Med import från CSV** kan du importera en fördefinierad uppsättning användare för den här simuleringen.
 
 ## <a name="assigning-training"></a>Tilldela utbildning
 
-Vi rekommenderar att du tilldelar utbildning för varje simulering, eftersom anställda som deltar i utbildningen är mindre utsatta för liknande attacker.
+Vi rekommenderar att du tilldelar utbildning för varje simulering eftersom anställda som går på utbildning är mindre känsliga för liknande attacker.
 
-Du kan antingen välja att ha utbildning tilldelat åt dig eller välja kurser och moduler själv.
+Du kan antingen välja att själv tilldela utbildning till dig eller välja själv kurser och moduler.
 
-Välj **förfallo datum för utbildning** för att se till att anställda avslutar sin utbildning i god tid.
+Välj förfallodatum **för utbildningen för** att se till att de anställda slutför sin utbildning i tid.
 
 > [!NOTE]
-> Om du väljer att välja kurser och moduler själv kan du fortfarande se det rekommenderade innehållet och alla tillgängliga kurser och moduler.
+> Om du väljer att själv välja kurser och moduler kan du fortfarande se det rekommenderade innehållet samt alla tillgängliga kurser och moduler.
 >
-> ![Lägga till Rekommenderad utbildning i utbildning för attack simulering i Microsoft 365 Security Center](../../media/attack-sim-preview-add-training.png)
+> ![Lägga till rekommenderad utbildning inom attacksimuleringsutbildning i Microsoft 365 säkerhetscenter](../../media/attack-sim-preview-add-training.png)
 
-I nästa steg måste du **lägga till utbildningar** om du väljer det själv och anpassar din utbildning. Du kan förhandsgranska övnings sidan för utbildning och även ändra sidhuvud och brödtext.
+I nästa steg måste du  lägga till utbildningar om du valt att själv välja det och anpassa startsidan för utbildningen. Du kommer att kunna förhandsgranska startsidan för utbildningen samt ändra sidhuvudet och brödtexten.
 
-## <a name="launch-details-and-review"></a>Starta detaljer och granska
+## <a name="launch-details-and-review"></a>Starta information och granska
 
-Nu när allt är konfigurerat kan du starta simuleringen direkt eller schemalägga det för ett senare datum. Du måste också välja när simuleringen ska avslutas. Vi slutar samla in interaktionen med den här simuleringen tidigare den valda tiden.
+Nu när allt är konfigurerat kan du starta den här simuleringen direkt eller schemalägga den till ett senare datum. Du måste också välja när du vill avsluta den här simuleringen. Vi slutar fånga interaktionen med den här simuleringen efter den valda tiden.
 
-**Aktivera region medveten leverans** för att leverera simulerade attack meddelanden till dina anställda under deras arbets tid baserat på deras region.
+**Aktivera regionmedveten tidszonsleverans** för att leverera simulerade attackmeddelanden till dina anställda under deras arbetstider baserat på deras region.
 
-När du är klar klickar du på **Nästa** och läser informationen för simuleringen. Klicka på **Redigera** på någon av delarna för att gå tillbaka och ändra eventuell information som behövs. När du är klar klickar du på **Skicka**.
+När du är klar klickar du på **Nästa och** granskar detaljerna i din simulering. Klicka på **Redigera** på någon av delarna för att gå tillbaka och ändra information som behöver ändras. Klicka på Skicka när du **är klar.**

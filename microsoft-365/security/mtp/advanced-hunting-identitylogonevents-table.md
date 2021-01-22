@@ -1,10 +1,10 @@
 ---
-title: IdentityLogonEvents-tabell i det avancerade jakt-schemat
-description: Lär dig mer om de autentiseringsnivåer som Active Directory har registrerat i IdentityLogonEvents-tabellen för det avancerade jakt schemat
-keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, kolumn, datatyp, beskrivning, IdentityLogonEvents, Azure AD, Active Directory, Azure ATP, identiteter
+title: Tabellen IdentityLogonEvents i det avancerade sökschemat
+description: Lär dig mer om autentiseringshändelser som registrerats av Active Directory i tabellen IdentityLogonEvents i det avancerade sökschemat
+keywords: avancerad sökning, hotsökning, sökning efter cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, IdentityLogonEvents, Azure AD, Active Directory, Azure ATP, identiteter
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 176f131ad020d001b72b97332d54be71feef5548
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 1df1295b3386b94e3737c53ac8226c719c8bfa08
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847422"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929928"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -34,42 +35,42 @@ ms.locfileid: "48847422"
 **Gäller för:**
 - Microsoft 365 Defender
 
-`IdentityLogonEvents`Tabellen i det [avancerade](advanced-hunting-overview.md) antivirus programmet innehåller information om de autentiseringsförfrågningar som görs via den lokala Active Directory som samlas in av Microsoft Defender för identitets-och autentiseringsdatas aktiviteter som är relaterade till Microsoft Online Services som fångas av Microsoft Cloud App Security. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+Tabellen i det avancerade sökschemat innehåller information om autentiseringsaktiviteter som görs via din lokala Active Directory som avbildats av Microsoft Defender för identitets- och autentiseringsaktiviteter relaterade till Microsofts onlinetjänster som avbildats av `IdentityLogonEvents` Microsoft Cloud App Security. [](advanced-hunting-overview.md) Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!TIP]
-> Detaljerad information om de händelse typer ( `ActionType` värden) som stöds av en tabell finns i den [inbyggda schema referensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) i säkerhets Center.
+> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` [inbyggda schemareferensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) som finns i säkerhetscentret.
 
 >[!NOTE]
->I den här tabellen beskrivs Azure Active Directory (AD)-inloggnings aktiviteter som spåras av Cloud App Security, särskilt interaktiva inloggnings-och autentiseringsdata med ActiveSync och andra äldre protokoll. Icke-interaktiva inloggningar som inte är tillgängliga i den här tabellen kan visas i Azure AD audit-loggen. [Läs mer om att ansluta Cloud App Security till Microsoft 365](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
+>Den här tabellen tar upp inloggningsaktiviteter för Azure Active Directory (AD) som spåras av Cloud App Security, särskilt interaktiva inloggningar och autentiseringsaktiviteter med ActiveSync och andra äldre protokoll. Icke-interaktiva inloggningar som inte är tillgängliga i den här tabellen kan visas i Azure AD-granskningsloggen. [Läs mer om hur du ansluter Cloud App Security till Microsoft 365](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
 
-Information om andra tabeller i det avancerade jakt schema [finns i referens för avancerad jakt](advanced-hunting-schema-tables.md).
+Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | Datum och tid när händelsen registrerades |
-| `ActionType` | strängvärdet | Typ av aktivitet som utlöste händelsen. Mer information finns [i referens för in-Portal schema](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
-| `LogonType` | strängvärdet | Typ av inloggningssession, särskilt:<br><br> - **Interaktivt** -användaren interagerar med datorn med det lokala tangent bordet och skärmen<br><br> - **Interaktivt (RDP) inloggningar** – användaren interagerar med datorn via fjärr skrivbord, Terminal Services, Fjärrhjälp eller andra RDP-klienter<br><br> - En **nätverks** session initieras när datorn nås med PsExec eller när delade resurser på datorn, till exempel skrivare och delade mappar, används<br><br> - **Batch** Gruppsession initierad av schemalagda aktiviteter<br><br> - **Tjänst** -session initierad av tjänster allteftersom de startas |
-| `Application` | strängvärdet | Program som utförde den inspelade åtgärden |
-| `Protocol` | strängvärdet | Använda nätverks protokoll |
-| `FailureReason` | strängvärdet | Information som förklarar varför den inspelade åtgärden misslyckades |
-| `AccountName` | strängvärdet | Kontots användar namn |
-| `AccountDomain` | strängvärdet | Kontots domän |
-| `AccountUpn` | strängvärdet | Kontots huvud namn (UPN) |
-| `AccountSid` | strängvärdet | Kontots säkerhets identifierare (SID) |
-| `AccountObjectId` | strängvärdet | Unik identifierare för kontot i Azure AD |
-| `AccountDisplayName` | strängvärdet | Namnet på kontot som visas i adress boken. Vanligt vis en kombination av ett visst eller förnamn, en mellan initiering och ett efter namn eller från gång. |
-| `DeviceName` | strängvärdet | Det fullständigt kvalificerade domän namnet (FQDN) för enheten |
-| `DeviceType` | strängvärdet | Enhets typ |
-| `OSPlatform` | strängvärdet | Plattformen för det operativ system som körs på datorn. Detta indikerar specifika operativ system, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7. |
-| `IPAddress` | strängvärdet | IP-adress tilldelad till slut punkten och används under relaterad nätverkskommunikation |
-| `DestinationDeviceName` | strängvärdet | Namn på den enhet som kör serverprogrammet som bearbetade den inspelade åtgärden |
-| `DestinationIPAddress` | strängvärdet | IP-adress för enheten som kör serverprogrammet som bearbetade den inspelade åtgärden |
-| `TargetDeviceName` | strängvärdet | Det fullständigt kvalificerade domän namnet (FQDN) för enheten som den inspelade åtgärden tillämpades på |
-| `TargetAccountDisplayName` | strängvärdet | Visnings namn för det konto som den inspelade åtgärden tillämpades på |
-| `Location` | strängvärdet | Ort, land eller annan geografisk plats som är kopplad till evenemanget |
-| `Isp` | strängvärdet | Internet leverantör (ISP) associerad med slut punktens IP-adress |
-| `ReportId` | tids | Unik identifierare för händelsen |
-| `AdditionalFields` | strängvärdet | Ytterligare information om enheten eller händelsen |
+| `Timestamp` | datetime | Datum och tid då händelsen spelades in |
+| `ActionType` | sträng | Typ av aktivitet som utlöste händelsen. Mer information [finns i referensen till portalschemat](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
+| `LogonType` | sträng | Typ av inloggningssession, särskilt:<br><br> - **Interaktiv** – användaren interagerar fysiskt med datorn med det lokala tangentbordet och den lokala skärmen<br><br> - **Fjärranslutna interaktiva inloggningar (RDP)** – Användaren interagerar med datorn på distans med Fjärrskrivbord, Terminal Services, Fjärrhjälp eller andra RDP-klienter<br><br> - **Nätverk** – Session initierad när datorn används med PsExec eller när delade resurser på datorn, till exempel skrivare och delade mappar, används<br><br> - **Batch** – session initierad av schemalagda aktiviteter<br><br> - **Tjänst** – Session initierad av tjänster när de startar |
+| `Application` | sträng | Program som utförde den inspelade åtgärden |
+| `Protocol` | sträng | Nätverksprotokoll som används |
+| `FailureReason` | sträng | Information som förklarar varför den inspelade åtgärden misslyckades |
+| `AccountName` | sträng | Användarnamn för kontot |
+| `AccountDomain` | sträng | Domän för kontot |
+| `AccountUpn` | sträng | Kontots huvudnamn (UPN) |
+| `AccountSid` | sträng | Säkerhetsidentifierare (SID) för kontot |
+| `AccountObjectId` | sträng | Unikt ID för kontot i Azure AD |
+| `AccountDisplayName` | sträng | Namnet på kontoanvändaren som visas i adressboken. Vanligtvis en kombination av ett visst namn eller förnamn, en mellaninititiering och ett efternamn eller efternamn. |
+| `DeviceName` | sträng | Fullständigt kvalificerat domännamn (FQDN) för enheten |
+| `DeviceType` | sträng | Typ av enhet |
+| `OSPlatform` | sträng | Operativsystemets plattform som körs på datorn. Detta indikerar specifika operativsystem, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7. |
+| `IPAddress` | sträng | IP-adress som tilldelats slutpunkten och som används under relaterad nätverkskommunikation |
+| `DestinationDeviceName` | sträng | Namn på den enhet som kör serverprogrammet som hanterade den inspelade åtgärden |
+| `DestinationIPAddress` | sträng | IP-adressen för den enhet som kör serverprogrammet som hanterade den inspelade åtgärden |
+| `TargetDeviceName` | sträng | Fullständigt kvalificerat domännamn (FQDN) för enheten som den inspelade åtgärden tillämpats på |
+| `TargetAccountDisplayName` | sträng | Visningsnamn för det konto som den inspelade åtgärden tillämpats på |
+| `Location` | sträng | Stad, land eller annan geografisk plats som är kopplad till händelsen |
+| `Isp` | sträng | Internet tjänstprovider (ISP) som är kopplad till slutpunktens IP-adress |
+| `ReportId` | long | Unikt ID för händelsen |
+| `AdditionalFields` | sträng | Ytterligare information om entiteten eller händelsen |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

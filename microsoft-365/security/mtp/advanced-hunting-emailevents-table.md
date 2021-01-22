@@ -1,10 +1,10 @@
 ---
-title: EmailEvents-tabell i det avancerade jakt-schemat
-description: Lär dig mer om de händelser som är kopplade till Microsoft 365-e-postmeddelanden i tabellen EmailEvents i det avancerade jakt-schemat
-keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, kolumn, datatyp, beskrivning, EmailEvents, nätverks meddelande-ID, avsändare, mottagare, bifogade filer
+title: Tabellen EmailEvents i den avancerade sökschemat
+description: Läs mer om händelser som är kopplade till Microsoft 365-e-postmeddelanden i tabellen EmailEvents i det avancerade sökschemat
+keywords: avancerad sökning, hot, sökning, telemetri, schemareferens, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, EmailEvents, nätverksmeddelande-ID, avsändare, mottagare, bifogad fil-ID, namn på bifogad fil, skadlig kod, nätfiske, antal bifogade filer, antal länkar, antal URL-adresser
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6dbd7473074212c6bc257e683288040056426048
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.technology: m365d
+ms.openlocfilehash: 48a0fe53cb92214d616887741c0c260edf1653c2
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780278"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928992"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -36,51 +37,51 @@ ms.locfileid: "49780278"
 
 
 
-`EmailEvents`Tabellen i det [avancerade jakt](advanced-hunting-overview.md) -schemat innehåller information om händelser som rör bearbetning av e-post i Microsoft Defender för Office 365. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+Tabellen `EmailEvents` i det avancerade [utbildningsschemat](advanced-hunting-overview.md) innehåller information om händelser som innefattar bearbetning av e-postmeddelanden på Microsoft Defender för Office 365. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!TIP]
-> Detaljerad information om de händelse typer ( `ActionType` värden) som stöds av en tabell finns i den [inbyggda schema referensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) i säkerhets Center.
+> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` [inbyggda schemareferensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) som finns i säkerhetscentret.
 
-Information om andra tabeller i det avancerade jakt schema [finns i referens för avancerad jakt](advanced-hunting-schema-tables.md).
+Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | Datum och tid när händelsen registrerades |
-| `EmailId` | strängvärdet | Unikt ID för e-post och mottagare |
-| `NetworkMessageId` | strängvärdet | Unik identifierare för e-postmeddelandet, genererat av Microsoft 365 |
-| `InternetMessageId` | strängvärdet | Public-Facing ID för e-postmeddelandet som anges i det sändande e-postsystemet |
-| `SenderMailFromAddress` | strängvärdet | Avsändarens e-postadress i e-postmeddelandet från huvudet, även kallat kuvert avsändare eller Return-Path adress |
-| `SenderFromAddress` | strängvärdet | Avsändarens e-postadress i formuläret från som visas för e-postmottagare på sina e-postklienter |
-| `SenderMailFromDomain` | strängvärdet | Avsändarens domän i e-post från huvudet, kallas även för kuvert avsändaren eller Return-Path adress |
-| `SenderFromDomain` | strängvärdet | Avsändarens domän i formuläret från som visas för e-postmottagare på sina e-postklienter |
-| `SenderIPv4` | strängvärdet | IPv4-adress för den senast identifierade e-postservern som vidarebefordrade meddelandet |
-| `SenderIPv6` | strängvärdet | IPv6-adress för den senast identifierade e-postservern som vidarebefordrade meddelandet |
-| `RecipientEmailAddress` | strängvärdet | E-postadress till mottagaren eller e-postadressen till mottagaren efter expansion av distributions lista |
-| `Subject` | strängvärdet | Ämne för e-postmeddelandet |
-| `EmailClusterId` | strängvärdet | ID för gruppen med likartade e-postmeddelanden grupperade baserat på heuristisk analys av innehållet |
-| `EmailDirection` | strängvärdet | E-postmeddelandets riktning i förhållande till ditt nätverk: inkommande, utgående, inom organisationen |
-| `DeliveryAction` | strängvärdet | Leverans åtgärd för e-postmeddelandet: levererat, mottaget, blockerat eller ersatt |
-| `DeliveryLocation` | strängvärdet | Plats där e-postmeddelandet levererades: Inkorgen/mapp, lokal/extern, skräp, karantän, misslyckad, avbruten, borttaget |
-| `PhishFilterVerdict` | strängvärdet | Verdict av e-postfiltrerings stacken på om e-postmeddelandet är Phish: Phish eller icke-Phish |
-| `PhishDetectionMethod` | strängvärdet | Metod som används för att hitta e-post som en Phish: skadlig URL-rykte, säkra länkar URL-sprängning, Avancerat Phish-filter, Allmänt Phish-filter, programförfalskningar: inom organisationen, mot förfalskning: extern domän, domän användning, användarens personifiering, varumärkes användning |
-| `MalwareFilterVerdict` | strängvärdet | Verdict av e-postfiltrerings stack på om e-postmeddelandet innehåller skadlig kod: skadlig kod, inte skadlig kod |
-| `MalwareDetectionMethod` | strängvärdet | Metod som används för att upptäcka skadlig program vara i e-postmeddelandet: skadlig program vara, fil rykte, säkra bilagor |
-| `EmailAction` | strängvärdet | Slutgiltig åtgärd som vidtas på e-postmeddelandet baserat på filter Verdict, principer och användar åtgärder: flytta meddelande till mappen skräp post, lägga till X-rubrik, ändra ämne, omdirigera meddelande, ta bort meddelande, skicka till karantän, ingen åtgärd vidtogs, hemlig kopia |
-| `EmailActionPolicy` | strängvärdet | Åtgärds policy som vidtogs: antispam hög exakthet, antispam, antispam Mass utskick, antispam nätfiske, icke-nätfiske-domän-personifiering, Antinätfiske-användare, förfalskning mot nätfiske, skydd mot nätfiske, antiskadligt, säkra bifogade filer för företags transport (Exchange) |
-| `EmailActionPolicyGuid` | strängvärdet | Unik identifierare för den policy som avgjorde den slutgiltiga e-poståtgärden |
-| `AttachmentCount` | signera | Antal bilagor i e-postmeddelandet |
-| `UrlCount` | signera | Antal inbäddade URL-adresser i e-postmeddelandet |
-| `EmailLanguage` | strängvärdet | Identifierat språk för e-postinnehållet |
-| `OrgLevelAction` | strängvärdet | Åtgärd som utförs på e-postmeddelandet som svar på matchningar till en princip som har definierats på organisations nivå |
-| `OrgLevelPolicy` | strängvärdet | Organisations princip som utlöste åtgärden som utförts på e-postmeddelandet |
-| `UserLevelAction` | strängvärdet | Åtgärd som utförs på e-postmeddelandet som svar på matchningar till en policy för post lådan som definieras av mottagaren |
-| `UserLevelPolicy` | strängvärdet | Policy för slut användar post lådan som utlöste åtgärden som utförs på e-postmeddelandet |
-| `Connectors` | strängvärdet | Anpassade instruktioner som definierar organisationens e-postflöde och hur e-postmeddelandet cirkulerades |
-| `SenderDisplayName` | strängvärdet | Namnet på den avsändare som visas i adress boken, vanligt vis en kombination av ett visst eller förnamn, en mellan initial och ett efter-eller efter namn |
-| `SenderObjectId` | strängvärdet |Unik identifierare för avsändarens konto i Azure AD |
-| `ThreatTypes` | strängvärdet | Verdict från e-postfiltrerings gruppen om e-postmeddelandet innehåller skadlig kod, nätfiske eller andra hot |
-| `ThreatNames` | strängvärdet |Identifierings namn för skadlig program vara eller andra hot Funna |
-| `DetectionMethods` | strängvärdet | Metoder som används för att upptäcka skadlig kod, nätfiske eller andra hot som hittats i e-postmeddelandet |
+| `Timestamp` | datetime | Datum och tid då händelsen spelades in |
+| `EmailId` | sträng | Unik identifierare för e-post och mottagare |
+| `NetworkMessageId` | sträng | Unikt ID för e-postmeddelandet som genereras av Microsoft 365 |
+| `InternetMessageId` | sträng | Offentlig identifierare för e-postmeddelandet som anges av det avsändande e-postsystemet |
+| `SenderMailFromAddress` | sträng | Avsändarens e-postadress i sidhuvudet E-POST FRÅN, även kallat kuvertavsändaren eller Return-Path postadressen |
+| `SenderFromAddress` | sträng | Avsändarens e-postadress i sidhuvudet FRÅN, som visas för e-postmottagare i deras e-postklienter |
+| `SenderMailFromDomain` | sträng | Sender domain in the MAIL FROM header, also known as the envelope sender or the Return-Path address |
+| `SenderFromDomain` | sträng | Sender domain in the FROM header, which is visible to email recipients on their email clients |
+| `SenderIPv4` | sträng | IPv4-adressen för den senast identifierade e-postservern som vidarebefordrade meddelandet |
+| `SenderIPv6` | sträng | IPv6-adressen för den senast identifierade e-postservern som vidarebefordrade meddelandet |
+| `RecipientEmailAddress` | sträng | Mottagarens e-postadress eller e-postadress för mottagaren efter distributionslistans expansion |
+| `Subject` | sträng | E-postmeddelandets ämne |
+| `EmailClusterId` | sträng | Identifierare för gruppen av liknande e-postmeddelanden grupperade baserat på heuristisk analys av innehållet |
+| `EmailDirection` | sträng | E-postriktning i förhållande till ditt nätverk: Inkommande, Utgående, Årsorganisation |
+| `DeliveryAction` | sträng | Leveransåtgärd för e-postmeddelandet: Levererad, Skräppost, Blockerad eller Ersatt |
+| `DeliveryLocation` | sträng | Plats där e-postmeddelandet levererades: Inkorg/Mapp, Lokal/Extern, Skräppost, Karantän, Misslyckades, Nedsänt, Borttaget |
+| `PhishFilterVerdict` | sträng | Bedömning av e-postfiltreringsstacken på om e-postmeddelandet är phish: Phish eller Inte phish |
+| `PhishDetectionMethod` | sträng | Metod som används för att identifiera e-postmeddelandet som ett phish: Skadligt URL-rykte, Safe Links URL Detonation, Advanced Phish Filter, Allmänt phish-filter, Anti-Spoof: Intra-org, Anti-spoof: external domain, Domain impersonation, User Impersonation, Brand impersonation |
+| `MalwareFilterVerdict` | sträng | Information om e-postfiltreringsstacken på om e-postmeddelandet innehåller skadlig programvara: skadlig programvara, inte skadlig programvara |
+| `MalwareDetectionMethod` | sträng | Metod som används för att identifiera skadlig kod i e-postmeddelandet: Motor mot skadlig kod, ryktet Arkiv, Säkra bifogade filer |
+| `EmailAction` | sträng | Sista åtgärd som vidtas på e-postmeddelandet baserat på filterbekräftelse, principer och användaråtgärder: Flytta meddelandet till skräppostmappen, Lägg till X-sidhuvud, Ändra ämne, Omdirigera meddelande, Ta bort meddelande, Skicka till karantän, Ingen åtgärd vidtas, Hemlig kopia-meddelande |
+| `EmailActionPolicy` | sträng | Åtgärdspolicy som verkställde: Skräppostskydd med hög säkerhet, skräppostskydd, massutskick av skräppost, nätfiskeskydd, nätfiske, skydd mot nätfiske, personifiering av nätfiskeanvändare, förfalskning mot nätfiske, personifiering mot nätfiske, skadlig programvara, säkra bifogade filer, ETR-regler (Enterprise Transport Rules) |
+| `EmailActionPolicyGuid` | sträng | Unikt ID för principen som avgör den slutliga e-poståtgärden |
+| `AttachmentCount` | int | Antal bifogade filer i e-postmeddelandet |
+| `UrlCount` | int | Antal inbäddade URL:er i e-postmeddelandet |
+| `EmailLanguage` | sträng | Upptäckt språk för e-postinnehållet |
+| `OrgLevelAction` | sträng | Åtgärder för e-postmeddelandet som svar på matchningar mot en princip som definierats på organisationsnivå |
+| `OrgLevelPolicy` | sträng | Organisationsprincip som utlöste e-postmeddelandets åtgärd |
+| `UserLevelAction` | sträng | Åtgärd som vidtas på e-postmeddelandet som svar på matchningar mot en postlådeprincip som definierats av mottagaren |
+| `UserLevelPolicy` | sträng | Postlådeprincip för slutanvändare som utlöste åtgärden för e-postmeddelandet |
+| `Connectors` | sträng | Anpassade instruktioner som definierar organisationens e-postflöde och hur e-posten har dirigerats |
+| `SenderDisplayName` | sträng | Namnet på avsändaren som visas i adressboken, vanligtvis en kombination av ett visst namn eller förnamn, en initial för mellannamn och efternamn eller efternamn |
+| `SenderObjectId` | sträng |Unikt ID för avsändarens konto i Azure AD |
+| `ThreatTypes` | sträng | Bedömning av e-postfiltreringsstacken på om e-postmeddelandet innehåller skadlig kod, nätfiske eller andra hot |
+| `ThreatNames` | sträng |Identifieringsnamn för skadlig programvara eller andra hot hittades |
+| `DetectionMethods` | sträng | Metoder som används för att identifiera skadlig kod, nätfiske eller andra hot som påträffas i e-postmeddelandet |
 
 
 ## <a name="related-topics"></a>Relaterade ämnen

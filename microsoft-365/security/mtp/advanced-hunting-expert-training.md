@@ -1,10 +1,10 @@
 ---
-title: Få expert utbildning om avancerad jakt
-description: Gratis utbildning och vägledning från avancerade jakt experter
-keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, språk, utbildning, scenarier, grundläggande för Avancerat, videoklipp, steg-för-steg
+title: Få expertutbildning om avancerad sökning
+description: Kostnadsfri utbildning och vägledning från avancerade experter på sökning
+keywords: avancerad sökning, hotsökning, cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, språk, utbildning, scenarier, grundläggande till avancerad, videor, steg för steg
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: c2772d0fc77e563bc80b0f29815349d1bfb3e2ea
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: d7c2ccb12cb096359e558af9e1b4a962a9130be5
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842518"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929640"
 ---
-# <a name="get-expert-training-on-advanced-hunting"></a>Få expert utbildning om avancerad jakt
+# <a name="get-expert-training-on-advanced-hunting"></a>Få expertutbildning om avancerad sökning
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,20 +35,20 @@ ms.locfileid: "48842518"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Öka dina kunskaper om Avancerat jakt snabbt med _spårning av adversary_ , en webb sändnings serie för nya säkerhets analyser och hotade hot Hunters. Serien vägleder dig genom grunderna för att skapa dina egna avancerade frågor. Börja med den första videon på grunderna eller gå till mer avancerade videor som passar din upplevelse.
+Du kan snabbt förbättra dina kunskaper om avancerad sökning med hjälp av En webbsändningsserie för nya säkerhetsanalytiker och rutinerade hot. Serien leder dig genom grunderna hela vägen till att skapa avancerade frågor. Börja med den första videon om grundläggande funktioner eller gå till mer avancerade videor som passar din upplevelsenivå.
 
 
-| Title | Beskrivning | Watch | Under | 
+| Title | Beskrivning | Titta | Frågor | 
 |--|--|--|--|
-| Avsnitt 1: grundläggande om Keyword | I det här avsnittet beskrivs de grundläggande jaktarna i Microsoft 365 Defender. Läs mer om tillgängliga avancerade jakt data och grundläggande Keyword-syntax och-operatörer. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [CSL-fil](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
-| Avsnitt 2: kopplingar | Fortsätt att lära sig mer om data i avancerad jakt och hur du ansluter samman tabeller. Lär dig mer om `inner` , `outer` , `unique` och `semi` kopplingar och förstå Nuances för standard Kusto- `innerunique` kopplingen. | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [CSL-fil](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
-| Avsnitt 3: summera, pivotera och visualisera data | Nu när du har lärt dig att filtrera, hantera och koppla data är det dags att summera, kvantifiera, pivotera och visualisera. I det här avsnittet beskrivs `summarize` operatorn och olika beräkningar, medan fler tabeller i schemat introduceras. Du får också lära dig att omvandla data mängder till diagram som kan hjälpa dig att extrahera inblick. | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52) | [CSL-fil](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
-| Avsnitt 4: Låt oss titta! Använda Keyword i händelse spårning | I det här avsnittet lär du dig hur du spårar vissa angrepps aktiviteter. Vi använder vår förbättrade förståelse av Kusto och avancerad jakt för att spåra ett angrepp. Lär dig mer om faktiska stick som används i fältet, inklusive ABCs för Cybersecurity och hur du ska tillämpa dem på händelsens svar. | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [CSL-fil](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)
+| Avsnitt 1: Grunderna i KQL | Det här avsnittet handlar om grunderna i avancerad sökning i Microsoft 365 Defender. Läs mer om tillgängliga avancerade sökdata och grundläggande KQL-syntax och -operatorer. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [CSL-fil](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
+| Avsnitt 2: Kopplingar | Fortsätt att lära dig mer om data inom avancerad sökning och hur du sammanfogar tabeller. Läs mer `inner` `outer` `unique` om, och `semi` kopplingar, och förstå nyanserna i den standarda kustokopplingen. `innerunique` | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [CSL-fil](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
+| Avsnitt 3: Sammanfatta, pivotera och visualisera data | Nu när du har lärt dig att filtrera, ändra och koppla data är det dags att sammanfatta, analysera, pivotera och visualisera. I det här avsnittet diskuteras `summarize` operatorn och olika beräkningar, samtidigt som ytterligare tabeller introduceras i schemat. Du får också lära dig att omvandla datauppsättningar till diagram som kan hjälpa dig att extrahera insikter. | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52) | [CSL-fil](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
+| Avsnitt 4: Vi jagar! Tillämpa KQL på incidentspårning | I det här avsnittet får du lära dig att spåra några attackersaktiviteter. Vi använder vår förbättrade förståelse för Kusto och avancerad sökning för att spåra en attack. Lär dig mer om faktiska trick som används inom fältet, inklusive ABCs för cybersäkerhet och hur du tillämpar dem på incidentsvar. | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [CSL-fil](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)
 
-## <a name="how-to-use-the-csl-file"></a>Använda CSL-filen
-Innan du startar ett avsnitt kan du gå till motsvarande [KUSTO CSL-fil på GitHub](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/tree/master/Webcasts/TrackingTheAdversary) och kopiera dess innehåll till den avancerade Frågeredigeraren. När du tittar på ett avsnitt kan du använda det kopierade innehållet för att följa högtalaren och köra frågor. 
+## <a name="how-to-use-the-csl-file"></a>Så här använder du CSL-filen
+Innan du påbörjar ett avsnitt öppnar du motsvarande [Kusto CSL-fil](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/tree/master/Webcasts/TrackingTheAdversary) på GitHub och kopierar innehållet till den avancerade frågeredigeraren. När du tittar på ett avsnitt kan du använda det kopierade innehållet för att följa talaren och köra frågor. 
 
-Följande utdrag från en CSL-fil visar en omfattande uppsättning vägledningar som är markerade som kommentarer med `//` .
+Följande utdrag från en CSL-fil visar en omfattande uppsättning vägledning som markerats som kommentarer `//` med.
 
 ```kusto
 // DeviceLogonEvents
@@ -60,7 +61,7 @@ Följande utdrag från en CSL-fil visar en omfattande uppsättning vägledningar
 // - Timestamp
 ```
 
-Samma CSL-fil innehåller frågor före och efter kommentarerna enligt nedan. Om du vill köra en specifik fråga med [flera frågor i redigeraren](advanced-hunting-query-language.md#work-with-multiple-queries-in-the-editor)flyttar du markören till frågan och väljer **Kör fråga**.   
+Samma CSL-fil innehåller frågor före och efter kommentarerna som visas nedan. Om du vill köra en specifik [fråga med flera frågor i redigeraren](advanced-hunting-query-language.md#work-with-multiple-queries-in-the-editor)flyttar du markören till den frågan och väljer Kör **fråga.**   
 
 ```kusto
 DeviceLogonEvents
@@ -82,7 +83,7 @@ AppFileEvents
      
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
-- [Lär dig mer om det avancerade frågespråket](advanced-hunting-query-language.md)
+- [Lär dig det avancerade språket för sökfrågor](advanced-hunting-query-language.md)
 - [Arbeta med frågeresultat](advanced-hunting-query-results.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
 - [Jaga över olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)

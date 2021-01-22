@@ -1,9 +1,9 @@
 ---
-title: Hej världen för Microsoft 365 Defender REST API
-description: Lär dig hur du skapar en app och använder ett token för att komma åt API för Microsoft 365 Defender
-keywords: app, token, Access, AAD, program, program registrering, PowerShell, skript, global administratör, tillåtelse, Microsoft 365 Defender
+title: Hello World för Microsoft 365 Defender REST API
+description: Lär dig hur du skapar en app och använder en token för åtkomst till API:er för Microsoft 365 Defender
+keywords: app, token, åtkomst, aad, app, programregistrering, powershell, skript, global administratör, behörighet, microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b36a6acca5880a455a66b03b5355cdf1fb85b29b
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 66afa27d0fa7a092d3f9e9ed6c3b6abc6020cb8d
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719316"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928384"
 ---
-# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hej världen för Microsoft 365 Defender REST API
+# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World för Microsoft 365 Defender REST API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,57 +36,57 @@ ms.locfileid: "49719316"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
+> Viss information gäller förhandsversioner av produkter som kan komma att ändras väsentligt innan de släpps till kommersiellt bruk. Microsoft ger inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges här.
 
-## <a name="get-incidents-using-a-simple-powershell-script"></a>Få incidenter med hjälp av ett enkelt PowerShell-skript
+## <a name="get-incidents-using-a-simple-powershell-script"></a>Få incidenter med ett enkelt PowerShell-skript
 
-Det bör ta 5-10 minuter för projektet att genomföras. I den här tids uppskattningen ingår att registrera programmet och tillämpa koden från PowerShell-exempelprogrammet.
+Det bör ta 5 till 10 minuter att slutföra projektet. Den här tidsberäkningen omfattar registrering av programmet och användning av koden från PowerShell-exempelskriptet.
 
-### <a name="register-an-app-in-azure-active-directory"></a>Registrera ett program i Azure Active Directory
+### <a name="register-an-app-in-azure-active-directory"></a>Registrera en app i Azure Active Directory
 
-1. Logga in på [Azure](https://portal.azure.com) som en användare med rollen **Global administratör** .
+1. Logga in på [Azure](https://portal.azure.com) som användare med **rollen Global** administratör.
 
-2. Navigera till **Azure Active Directory**-  >  **programregistreringar**  >  **ny registrering**.
+2. Gå till **Azure Active**  >  **Directory-appregistreringar**  >  **Ny registrering.**
 
-   ![Bild av Microsoft Azure och navigering till program registrering](../../media/atp-azure-new-app2.png)
+   ![Bild av Microsoft Azure och navigering till programregistrering](../../media/atp-azure-new-app2.png)
 
-3. I registrerings formuläret väljer du ett namn för ansökan och väljer sedan **Registrera**. Det är valfritt att välja en URL för omdirigering. Du behöver ingen för att genomföra det här exemplet.
+3. Välj ett namn för din ansökan i registreringsformuläret och välj sedan **Registrera.** Det är valfritt att välja en omdirigerings-URI. Du behöver ingen för att slutföra det här exemplet.
 
-4. På din program sida väljer du **API-behörigheter**  >  **Add permission**  >  **API min organisation använder** >, Skriv **Microsoft Threat Protection** och välj **Microsoft Threat Protection**. Ditt program kan nu komma åt Microsoft 365 Defender.
+4. Välj API-behörigheter Lägg till **behörighets-API:er** som min organisation använder >, skriv Microsoft Threat Protection och  >    >   välj Microsoft **Threat Protection.**  Nu kan du komma åt Microsoft 365 Defender.
 
    > [!TIP]
-   > *Microsoft Threat Protection* är ett tidigare namn för Microsoft 365 Defender och kommer inte att synas i den ursprungliga listan. Du måste börja skriva dess namn i text rutan för att se det.
-   ![Bild av API-behörighet](../../media/apis-in-my-org-tab.PNG)
+   > *Microsoft Threat Protection* är ett tidigare namn för Microsoft 365 Defender och visas inte i den ursprungliga listan. Du måste börja skriva namnet i textrutan för att det ska visas.
+   ![Bild av val av API-behörighet](../../media/apis-in-my-org-tab.PNG)
 
-   - Välj **program behörigheter**  >  **incident. Read. all** och välj **Add Permissions**.
+   - Välj   >  **Incident.Read.All för programbehörigheter** och välj **Lägg till behörigheter.**
 
    ![Bild av API-åtkomst och API-val](../../media/request-api-permissions.PNG)
 
-5. Välj **ge administratörs medgivande**. Varje gång du lägger till en behörighet måste du välja **bevilja administratörs medgivande** för att det ska börja gälla.
+5. Välj **Bevilja administratörsmedgivande.** Varje gång du lägger till en behörighet måste du välja **Ge administratörsmedgivande för** att den ska gälla.
 
-    ![Bild av beviljande behörigheter](../../media/grant-consent.PNG)
+    ![Bild av Bevilja behörigheter](../../media/grant-consent.PNG)
 
-6. Lägg till en hemlighet i programmet. Välj **certifikat & hemligheter**, Lägg till en beskrivning till hemligheten och välj sedan **Lägg till**.
+6. Gör programmet hemligt. Välj **Certifikat & hemligheter,** lägg till en beskrivning till hemligheten och välj sedan **Lägg till.**
 
     > [!TIP]
-    > När du har valt **Lägg till** väljer **du kopiera det genererade hemliga värdet**. Du kommer inte att kunna hämta det hemliga värdet efter att du har lämnat.
+    > När du har **valt Lägg** till väljer du kopiera **det genererade hemliga värdet.** Du kommer inte att kunna hämta det hemliga värdet när du lämnar det.
 
-    ![Bild av Create app-tangenten](../../media/webapp-create-key2.png)
+    ![Bild av skapa programnyckel](../../media/webapp-create-key2.png)
 
-7. Spela in ditt program-ID och klient-ID något säkert. De visas under **Översikt** på din program sida.
+7. Spela in ditt program-ID och ditt klient-ID någonstans säkert. De visas under Översikt **på** din programsida.
 
-   ![Bild av ID för skapat program](../../media/app-and-tenant-ids.png)
+   ![Bild på skapat program-ID](../../media/app-and-tenant-ids.png)
 
-### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>Hämta ett token med appen och Använd token för att få åtkomst till API: t
+### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>Hämta en token med hjälp av programmet och använd token för åtkomst till API:t
 
-Mer information om Azure Active Directory-tokens finns i [själv studie kursen för Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+Mer information om Azure Active Directory-token finns i självstudiekursen [om Azure AD.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 > [!IMPORTANT]
-> Även om exemplet i det här demo programmet uppmuntrar dig att klistra in ditt hemliga värde för testning bör du **aldrig hardcode hemligheter** i ett program som körs i produktion. En tredje part kan använda din hemlighet för att komma åt resurser. Du kan hålla dina programs hemligheter säkra genom att använda [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates). Ett praktiskt exempel på hur du kan skydda din app finns i [Hantera hemligheter i dina serverprogram med Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/).
+> Även om exemplet i den här demoappen uppmuntrar dig att klistra in i ditt hemliga värde för teständamål, ska du aldrig **hårdkoda** hemligheter i ett program som körs i produktionen. En tredje part kan använda din hemliga tillgång till resurser. Du kan skydda dina appars hemligheter med hjälp av [Azure Key Vault.](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates) Ett praktiskt exempel på hur du kan skydda din app finns i Hantera hemligheter [i serverapparna med Azure-nyckelvalv.](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
 
-1. Kopiera skriptet nedan och klistra in det i din text redigerare i Skype. Spara som **Get-Token.ps1**. Du kan också köra koden i PowerShell ISE, men du bör spara den eftersom vi måste köra den igen när vi använder skript för att hämta ett samtal i nästa avsnitt.
+1. Kopiera skriptet nedan och klistra in det i din favorittextredigerare. Spara som **Get-Token.ps1.** Du kan även köra koden som den är i PowerShell ISE, men du bör spara den eftersom vi måste köra den igen när vi använder skriptet för hämtning av incidenter i nästa avsnitt.
 
-    Med det här skriptet skapas ett token och sparas i arbetsmappen under namnet *Latest-token.txt*.
+    Det här skriptet genererar en token och sparar den i arbetsmappen under namnet *Latest-token.txt.*
 
     ```PowerShell
     # This script gets the app context token and saves it to a file named "Latest-token.txt" under the current directory.
@@ -109,21 +110,21 @@ Mer information om Azure Active Directory-tokens finns i [själv studie kursen f
     return $token
     ```
 
-#### <a name="validate-the-token"></a>Validera token
+#### <a name="validate-the-token"></a>Verifiera token
 
-1. Kopiera och klistra in den token du tog emot i [JWT](https://jwt.ms) för att avkoda den.
-1. *JWT* står för *JSON Web token*. Den kodade token innehåller ett antal JSON-formaterade objekt eller anspråk. Kontrol lera att de *roller* som är med i det kodade token innehåller de önskade behörigheterna.
+1. Kopiera och klistra in den token du fick i [JWT för](https://jwt.ms) att avkoda den.
+1. *JWT* står för *JSON Web Token.* Den avkodade token kommer att innehålla ett antal JSON-formaterade objekt eller anspråk. Kontrollera att rollerna *uppger* sig i det avkodade tokenet innehåller de önskade behörigheterna.
 
-    I följande bild kan du se ett avkodat token från en app, med ```Incidents.Read.All``` , ```Incidents.ReadWrite.All``` och ```AdvancedHunting.Read.All``` behörigheter:
+    I följande bild visas en avkodad token som förvärvats från en app, med ```Incidents.Read.All``` ```Incidents.ReadWrite.All``` och ```AdvancedHunting.Read.All``` behörigheter:
 
     ![Bild jwt.ms](../../media/api-jwt-ms.png)
 
-### <a name="get-a-list-of-recent-incidents"></a>Få en lista över de senaste incidenterna
+### <a name="get-a-list-of-recent-incidents"></a>Skapa en lista över de senaste incidenterna
 
-Skriptet nedan använder **Get-Token.ps1** för att komma åt API: t. Då hämtas en lista över de incidenter som senast uppdaterades inom 48 timmar, och listan sparas som en JSON-fil.
+Skriptet nedan använderGet-Token.ps1 **få** åtkomst till API:et. Därefter hämtas en lista över incidenter som uppdaterades senast de senaste 48 timmarna och listan sparas som en JSON-fil.
 
 > [!IMPORTANT]
-> Spara det här skriptet i samma mapp som du sparade **Get-Token.ps1**.
+> Spara skriptet i samma mapp som du sparade **Get-Token.ps1.**
 
 ```PowerShell
 # This script returns incidents last updated within the past 48 hours.
@@ -162,19 +163,19 @@ $outputJsonPath = "./Latest Incidents $dateTimeForFileName.json"
 Out-File -FilePath $outputJsonPath -InputObject $incidents
 ```
 
-Nu är du klar! Du har lyckats:
+Nu är allt klart! Du har lyckats:
 
-- Skapade och registrerade ett program.
-- Har beviljats behörighet för det programmet att läsa meddelanden.
-- Ansluten till API: t.
-- Använde ett PowerShell-skript för att returnera incidenter som uppdaterats under de senaste 48 timmarna.
+- Skapat och registrerat ett program.
+- Beviljad behörighet för det programmet att läsa aviseringar.
+- Ansluten till API:t.
+- Använde ett PowerShell-skript för att returnera incidenter som uppdaterats de senaste 48 timmarna.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Översikt över Microsoft 365 Defender API](api-overview.md)
-- [Gå till API för Microsoft 365 Defender](api-access.md)
-- [Skapa en app för åtkomst till Microsoft 365 Defender utan en användare](api-create-app-web.md)
-- [Skapa en app för att få åtkomst till Microsoft 365 Defender API: er för en användares räkning](api-create-app-user-context.md)
-- [Skapa en app med åtkomst för flera innehavare partner till Microsoft 365 Defender API: er](api-partner-access.md)
-- [Hantera hemligheter i dina serverprogram med Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
-- [OAuth 2,0-auktorisering för användare inloggning och API-åtkomst](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+- [Översikt över API:er för Microsoft 365 Defender](api-overview.md)
+- [Få åtkomst till API:er för Microsoft 365 Defender](api-access.md)
+- [Skapa en app för att komma åt Microsoft 365 Defender utan en användare](api-create-app-web.md)
+- [Skapa en app för att få åtkomst till Microsoft 365 Defender-API:er för en användares räkning](api-create-app-user-context.md)
+- [Skapa en app med partneråtkomst för flera klientorganisationsklienter till API:er för Microsoft 365 Defender](api-partner-access.md)
+- [Hantera hemligheter i dina serverappar med Azure-nyckelvalv](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
+- [OAuth 2.0 Auktorisering för användar logga in och API-åtkomst](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

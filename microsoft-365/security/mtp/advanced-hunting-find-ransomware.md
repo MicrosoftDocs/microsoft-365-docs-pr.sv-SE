@@ -1,10 +1,10 @@
 ---
-title: Hitta utpressnings tro Jan med avancerad jakt
-description: Använd avancerad jakt för att hitta enheter som eventuellt påverkas av utpressnings tro Jan.
-keywords: Avancerad jakt, utpressnings tro Jan, Hot jakt, cyberterrorism Threat jakt, Sök, fråga, telemetri, Microsoft 365, Microsoft Threat Protection, Microsoft 365 Defender
+title: Hitta utpressningstrojaner med avancerad sökning
+description: Använd avancerad sökning för att hitta enheter som kan påverkas av utpressningstrojaner.
+keywords: avancerad sökning, utpressningstrojaner, hot efter hot, sökning, sökning, fråga, telemetri, Microsoft 365, Microsoft Threat Protection, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,44 +19,45 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: aaee2af4b3df849b57b8e1c18ab330603042fe96
-ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
+ms.technology: m365d
+ms.openlocfilehash: f44a649035ef7f5993015142fb65fa29aaf5099f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "49422921"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929520"
 ---
-# <a name="hunt-for-ransomware"></a>Insekter
+# <a name="hunt-for-ransomware"></a>Jag utpressningstrojan
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Gäller för:**
 - Microsoft 365 Defender
 
-Utpressnings tro varan har snabbt utvecklats från att vara lätt att använda skadlig program vara som påverkar enskilda dator användare till ett företags hot som är mycket effektfulla i branscher och statliga institutioner. Även om [Microsoft 365 Defender](microsoft-threat-protection.md) tillhandahåller många funktioner som identifierar och blockerar utpressnings tro Jan program vara och tillhör ande intrångs aktiviteter, kan en proaktiv sökning efter tecken på intrång vara till hjälp för att skydda nätverket.
+Utpressningstrojaner har snabbt utvecklats från enkla varor och skadlig programvara som påverkar enskilda datoranvändare till ett företagshot som allvarligt påverkar branscher och myndigheter. [Microsoft 365 Defender](microsoft-threat-protection.md) tillhandahåller många funktioner för att identifiera och blockera utpressningstrojaner och associerade intrångsaktiviteter, men proaktiva kontroller efter intrångstecken kan skydda ditt nätverk.
 
-> [Läsa om livsmedels drivna utpressnings tro Jan](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
+> [Läs om utpressningstrojaner som drivs av människor](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 
-Med [Avancerad jakt](advanced-hunting-overview.md) i Microsoft 365 Defender kan du skapa frågor som letar efter enskilda artefakter som är kopplade till utpressnings tro Jan aktivitet. Du kan också köra mer sofistikerade frågor som kan leta efter tecken på aktivitet och väga dessa tecken för att hitta enheter som kräver omedelbar uppmärksamhet.
+Med [avancerad sökning](advanced-hunting-overview.md) i Microsoft 365 Defender kan du skapa frågor som hittar enskilda artefakter som är kopplade till utpressningstrojaner. Du kan också köra mer avancerade frågor som kan leta efter tecken på aktivitet och väga dessa tecken för att hitta enheter som kräver omedelbar uppmärksamhet.
 
-## <a name="signs-of-ransomware-activity"></a>Tecken på utpressnings aktiviteter
-Microsoft Security-forskare har observerat flera vanliga mindre små artefakter i många utpressnings tro Jana kampanjer som lanserats av avancerade inkräktare. Dessa tecken använder mest användning av system verktyg för att förbereda sig för kryptering, förhindra identifiering och tydliga Forensic-bevis.
+## <a name="signs-of-ransomware-activity"></a>Tecken på utpressningstrojaner
+Microsofts säkerhetsvakter har observerat flera vanliga men diskreta artefakter i många utpressningstrojankampanjer som startats av avancerade utpressningspersoner. Dessa tecken innebär oftast användning av systemverktyg för att förbereda kryptering, förhindra identifiering och tydliga bevis.
 
-| Utpressnings tro aktivitet | Vanliga verktyg | Avsikt |
+| Utpressningstrojanaktivitet | Vanliga verktyg | Avsikter |
 |--|--|--|
-| Stoppa processer | _taskkill.exe_, _net stop_ | Kontrol lera att filer riktade mot kryptering inte är låsta av olika program. |
-| Inaktivera tjänster | _sc.exe_ | -Se till att filer riktade mot kryptering inte är låsta av olika program.<br>-Förhindra att säkerhets programmet stör kryptering och annan utpressnings tro Jan aktivitet.<br>-Avsluta säkerhets kopierings program från att skapa återställnings bara kopior.  |
-| Ta bort loggar och filer | _cipher.exe_, _wevtutil_ _fsutil.exe_ | Ta bort Forensic-bevis. |
-| Ta bort skugg kopior  | _vsadmin.exe_ _wmic.exe_ | Ta bort skugg kopior av enheter som kan användas för att återställa krypterade filer. |
-| Ta bort och stoppa säkerhets kopior | _wbadmin.exe_ | Ta bort befintliga säkerhets kopior och stoppa schemalagda säkerhets kopierings aktiviteter och förhindra återställning efter kryptering. |
-| Ändra Start Inställningar | _bcdedit.exe_ | Inaktivera varningar och automatisk reparation efter startfel som kan orsakas av krypterings processen. |
-| Inaktivera återställnings verktyg | _schtasks.exe_ _regedit.exe_, | Inaktivera system återställning och andra alternativ för system återställning. |
+| Stoppa processer | _taskkill.exe,_ _nettostopp_ | Kontrollera att filer som är avsedda för kryptering inte är låsta av olika program. |
+| Inaktivera tjänster | _sc.exe_ | – se till att filer som är avsedda för kryptering inte är låsta av olika program.<br>– Förhindra att säkerhetsprogramvara stör kryptering och annan utpressningstrojanaktivitet.<br>- Stoppa säkerhetskopiering av programvara från att skapa återställningsbara kopior.  |
+| Ta bort loggar och filer | _cipher.exe,_ _wevtutil_, _fsutil.exe_ | Ta bort bevis för beviset. |
+| Ta bort skuggkopior  | _vsadmin.exe_, _wmic.exe_ | Ta bort skuggkopior på enheten som kan användas för att återställa krypterade filer. |
+| Ta bort och stoppa säkerhetskopior | _wbadmin.exe_ | Ta bort befintliga säkerhetskopior och stoppa schemalagda säkerhetskopieringsaktiviteter, vilket förhindrar återställning efter kryptering. |
+| Ändra startinställningar | _bcdedit.exe_ | Inaktivera varningar och automatiska reparationer efter fel i starten som kan bero på krypteringsprocessen. |
+| Inaktivera återställningsverktyg | _schtasks.exe,_ _regedit.exe_, | Inaktivera Systemåterställning och andra systemåterställningsalternativ. |
 
-## <a name="check-for-individual-signs-of-ransomware-activity"></a>Sök efter enskilda tecken på utpressnings tro Jan aktivitet
-Många aktiviteter som utgör utpressnings tro, inklusive aktiviteter som beskrivs i föregående avsnitt, kan vara ofarliga. Om du använder följande frågor för att hitta utpressnings tro janprodukter kör du fler än en fråga för att kontrol lera om samma enheter uppvisar olika tecken på eventuell utpressnings tro Jan aktivitet.
+## <a name="check-for-individual-signs-of-ransomware-activity"></a>Kontrollera enskilda tecken på utpressningstrojaner
+Många aktiviteter som utgör utpressningstrojaner, inklusive de aktiviteter som beskrivs i föregående avsnitt, kan vara en varning. När du använder följande frågor för att hitta utpressningstrojaner kör du fler än en fråga för att kontrollera om samma enheter har olika tecken på möjlig utpressningstrojanaktivitet.
 
 ### <a name="stopping-multiple-processes-using-_taskkillexe_"></a>Stoppa flera processer med _taskkill.exe_
-Den här frågan söker efter försök att stoppa minst 10 separata processer med _taskkill.exe_ -verktyget. [Kör fråga](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RS2vCUBCFz7rgfwiuIkit3eumVSgtpYvuS9SLDTY2eLUvxN_eb8YHKlFkyNzJzDkn505aailRX7mmGlFlmhNBhUrOSGeuT3L0s6QqNaMagolEcMyCbApjx2e8TYhcH8Q1mB-emq50z_lF39gvBzo9-gEF-6Yhlyh9653ejCfRK6zCsaZfuJOu-x2jkqqN-0Yls-8-gp6dZ52OVuT6Sad1plulyN0KIkMt15_zt7zHDe8OBwv3btoJToa7Tnp0T8Ou9WzfT761gPOm3_FQ16Zxp2qcCdg33_rlyokG-iXv7_4BRNMnhkortmvTW6rqnZ7bgP2Vtm70D3d9wcFaAgAA&runQuery=true&timeRangeId=week)
+Den här frågan söker efter försök att stoppa minst 10 olika processer med _hjälptaskkill.exe_ verktyg. [Kör fråga](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RS2vCUBCFz7rgfwiuIkit3eumVSgtpYvuS9SLDTY2eLUvxN_eb8YHKlFkyNzJzDkn505aailRX7mmGlFlmhNBhUrOSGeuT3L0s6QqNaMagolEcMyCbApjx2e8TYhcH8Q1mB-emq50z_lF39gvBzo9-gEF-6Yhlyh9653ejCfRK6zCsaZfuJOu-x2jkqqN-0Yls-8-gp6dZ52OVuT6Sad1plulyN0KIkMt15_zt7zHDe8OBwv3btoJToa7Tnp0T8Ou9WzfT761gPOm3_FQ16Zxp2qcCdg33_rlyokG-iXv7_4BRNMnhkortmvTW6rqnZ7bgP2Vtm70D3d9wcFaAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Find attempts to stop processes using taskkill.exe
@@ -67,8 +68,8 @@ DeviceProcessEvents
 | where taskKillCount > 10
 ```
   
-### <a name="stopping-processes-using-_net-stop_"></a>Stoppa processer med _net stop_
-Den här frågan söker efter försök att stoppa minst 10 separata processer med kommandot _net stop_ . [Kör fråga](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RQUvDUBCE5yz0P4ScUijWereXVkGQIti7aA1pqakhL7VVxN_ebzc1NBChPLJv2Z2ZN5sdaqhId1ppozeyF1WcVLkK7kCl0gcx-F2QFSrJFmACJ3XMlmgKGfmGWnXC6OlCU2qfIIz12OLfUk_h2FuG_IG505JayRdpDit3bIW33B2M3WeGSqIRrvudTJvpnWzmPKvc6JcYHx1eEvd8savV07e9TchzTt198AlNZ0kluNLfjHHjIPAvak4J_tvx9XtPR6ypbn1icxShvGgqyVkO-hrAm7VUrRcaTWOs6T_7hs7XjfSqL-Lpvu5BDLxjqKRjI9a9Juvew__T2x5HutIB3T1qt4QCAAA&runQuery=true&timeRangeId=week)
+### <a name="stopping-processes-using-_net-stop_"></a>Stoppar processer med _hjälp av netstopp_
+Den här frågan söker efter försök att stoppa minst 10 olika processer med hjälp av _kommandot för netstopp._ [Kör fråga](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RQUvDUBCE5yz0P4ScUijWereXVkGQIti7aA1pqakhL7VVxN_ebzc1NBChPLJv2Z2ZN5sdaqhId1ppozeyF1WcVLkK7kCl0gcx-F2QFSrJFmACJ3XMlmgKGfmGWnXC6OlCU2qfIIz12OLfUk_h2FuG_IG505JayRdpDit3bIW33B2M3WeGSqIRrvudTJvpnWzmPKvc6JcYHx1eEvd8savV07e9TchzTt198AlNZ0kluNLfjHHjIPAvak4J_tvx9XtPR6ypbn1icxShvGgqyVkO-hrAm7VUrRcaTWOs6T_7hs7XjfSqL-Lpvu5BDLxjqKRjI9a9Juvew__T2x5HutIB3T1qt4QCAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Find attempts to stop processes using net stop
@@ -79,7 +80,7 @@ DeviceProcessEvents
 | where netStopCount > 10
 ```
 ### <a name="deletion-of-data-on-multiple-drives-using-_cipherexe_"></a>Borttagning av data på flera enheter med _cipher.exe_
-Den här frågan söker efter försök att ta bort data på flera enheter med _cipher.exe_. Denna aktivitet sköts vanligt vis av utpressnings tro Jan för att förhindra återställning av data efter kryptering. [Kör fråga](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI1SXUvDQBCcZ8H_cOQpgWLoD7AvVUEo4oPvElO1pblUcmn9QPztzk6TEuEsIdzdZndndm73cuRwWGDLb0PrhWfDs8Qab1jhmX8X3D-4HJbcK66W0Rqv8hT8K4RsiPW0PHbMasVQdbiGf3vaAec4wxWtPT0lz3vhSsUCrpVVE33I_Cb6vdNhTA9EeeVaVc8KDjOugmq2SDFlrSyKvCHS1NwJZ55L_HBPondNGDGWXP2JdyMnv927UnXHWwf6l4MunupXTOPfXszVT8_smriFOCxrRU-QclOQDLgCNRwQ1u8vZc8H2o1xp-7a7U1NefSko6pnmKjakNVi4chpiA39j-rGeF6HJ3xyH76NW2ZMFLGsNDJ9i05pZSPmVdDfq-jncfqtOuU5zSuQz6Zq92w7Hfbm-9cUm-d_vZ9J9S81O2KIfAMAAA&runQuery=true&timeRangeId=week)
+Den här frågan söker efter försök att ta bort data på flera enheter med _hjälp avcipher.exe._ Den här aktiviteten utförs vanligtvis via utpressningstrojaner för att förhindra återställning av data efter kryptering. [Kör fråga](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI1SXUvDQBCcZ8H_cOQpgWLoD7AvVUEo4oPvElO1pblUcmn9QPztzk6TEuEsIdzdZndndm73cuRwWGDLb0PrhWfDs8Qab1jhmX8X3D-4HJbcK66W0Rqv8hT8K4RsiPW0PHbMasVQdbiGf3vaAec4wxWtPT0lz3vhSsUCrpVVE33I_Cb6vdNhTA9EeeVaVc8KDjOugmq2SDFlrSyKvCHS1NwJZ55L_HBPondNGDGWXP2JdyMnv927UnXHWwf6l4MunupXTOPfXszVT8_smriFOCxrRU-QclOQDLgCNRwQ1u8vZc8H2o1xp-7a7U1NefSko6pnmKjakNVi4chpiA39j-rGeF6HJ3xyH76NW2ZMFLGsNDJ9i05pZSPmVdDfq-jncfqtOuU5zSuQz6Zq92w7Hfbm-9cUm-d_vZ9J9S81O2KIfAMAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Look for cipher.exe deleting data from multiple drives
@@ -94,8 +95,8 @@ CipherList = make_set(ProcessCommandLine) by DeviceId, bin(Timestamp, 1m)
 | where CipherCount > 1
 ```
 
-### <a name="clearing-of-forensic-evidence-from-event-logs-using-_wevtutil_"></a>Rensning av Forensic-bevis från händelse loggar med _wevtutil_
-Den här frågan söker efter försök att rensa minst 10 logg poster från händelse loggar med hjälp av _wevtutil_. [Kör fråga](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWRTU_CQBCG37OJ_2HDqSQkwMGjXgoHEg4cUI-m2hUaqGu6BaPxx_vsEFCTxmA225nOvB_tzFBDOc0VOBuyZ2JD3CnKEwMVpzfyPbVWlba8t9Sdnsi9CsPXdLfWf7Wq4xm0QuVSF5oYv4LhtQAfLIucKXWvF5gH5Ke5rak1prKEVRu2xalG3emGW6AdlGmsUv1O5m-fnLzmFHiV_G9FTKg1lUjs6Z5vucPvljsD0TOXhP6_Vm7841dFZnPAN2A_DDu36eSnCSbNnc3B6Zpb4nasZGf59zWA963orZdcEiKelBNvQ_fBNny-utOj3nn-3OUMxMA6CZV1bCt1r8i6d_TXFNKWxxrpC48hm8miAgAA&runQuery=true&timeRangeId=week)
+### <a name="clearing-of-forensic-evidence-from-event-logs-using-_wevtutil_"></a>Rensar bevis från händelseloggar med _wevtutil_
+Den här frågan söker efter försök att rensa minst 10 loggposter från händelseloggar med _wevtutil._ [Kör fråga](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWRTU_CQBCG37OJ_2HDqSQkwMGjXgoHEg4cUI-m2hUaqGu6BaPxx_vsEFCTxmA225nOvB_tzFBDOc0VOBuyZ2JD3CnKEwMVpzfyPbVWlba8t9Sdnsi9CsPXdLfWf7Wq4xm0QuVSF5oYv4LhtQAfLIucKXWvF5gH5Ke5rak1prKEVRu2xalG3emGW6AdlGmsUv1O5m-fnLzmFHiV_G9FTKg1lUjs6Z5vucPvljsD0TOXhP6_Vm7841dFZnPAN2A_DDu36eSnCSbNnc3B6Zpb4nasZGf59zWA963orZdcEiKelBNvQ_fBNny-utOj3nn-3OUMxMA6CZV1bCt1r8i6d_TXFNKWxxrpC48hm8miAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Look for use of wevtutil to clear multiple logs
@@ -106,8 +107,8 @@ DeviceProcessEvents
 | where LogClearCount > 10
 ```
 
-### <a name="turning-off-services-using-_scexe_"></a>Stänga av tjänster med _sc.exe_
-Den här frågan kontrollerar om det finns fler än tio befintliga tjänster med _sc.exe_. [Kör fråga](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAKWST2vCQBDF31nodwg5RZCqhx7bi3ooeCjovaQxraIxxfU_fvj-ZoiiEIqlhM3Ozrz3ZnZm22or0lAl3xzrk33FHpTpUbn2rEgTzfCk-tACa6kvR-Qgt5wzrKAHNdTHOnveiJZVLGiAP4e5rpAnFHaauoZlGMMqHLsmT6FvfC-slFylEnWpoVnLvM3Twy74UnJNuJdVa6gpnsAe-81iVzbE3_kZiCV9mlHZf3Sue5pzii-3C9pU3BWYo_NGKPdvGJZh4x2N9Owzyi6e5K5qmmrVKg_9dNY11hzvu0_8fu0ItQP_6zfxCqLlEUMlNVO36BNW_ax_74K9l646-gFts39I1AIAAA&runQuery=true&timeRangeId=week)
+### <a name="turning-off-services-using-_scexe_"></a>Inaktivera tjänster med _sc.exe_
+Den här frågan söker efter försök att inaktivera minst 10 befintliga tjänster med _hjälp avsc.exe._ [Kör fråga](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAKWST2vCQBDF31nodwg5RZCqhx7bi3ooeCjovaQxraIxxfU_fvj-ZoiiEIqlhM3Ozrz3ZnZm22or0lAl3xzrk33FHpTpUbn2rEgTzfCk-tACa6kvR-Qgt5wzrKAHNdTHOnveiJZVLGiAP4e5rpAnFHaauoZlGMMqHLsmT6FvfC-slFylEnWpoVnLvM3Twy74UnJNuJdVa6gpnsAe-81iVzbE3_kZiCV9mlHZf3Sue5pzii-3C9pU3BWYo_NGKPdvGJZh4x2N9Owzyi6e5K5qmmrVKg_9dNY11hzvu0_8fu0ItQP_6zfxCqLlEUMlNVO36BNW_ax_74K9l646-gFts39I1AIAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Look for sc.exe disabling services
@@ -118,8 +119,8 @@ DeviceProcessEvents
 | where ScDisableCount > 10
 ```
 
-### <a name="turning-off-system-restore"></a>Inaktivera system återställning
-Den här frågan identifierar försök att stoppa system återställning och förhindra att systemet skapar återställnings punkter, som kan användas för att återställa data som krypterats av utpressnings tro Jan. [Kör fråga](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAK2S3UrDQBCFz7XgO6y9id4o6HWvrIVCkaJPENOYFNumZGO1ID673w4xJA1isbJMZnZ-zpzM7EiptlooQc9UqjDLc-7wp1qrwj7Via44MzK35FTotTI5PXMr0aVe8cy15NzoGo-zqg_0m3KQSsRpQtbC6uMGpdt3jHeJfU_GymqG-uQb9XpcEn1HIuvmGpZT0Aq99Dim4G3ousNO8K04sSE6EEN22kL6jvzO-LaDNW2QzqxLmGBsPo9vUMt_oA8Na3DQv3vwcmPiifpmds48jkhut8T2FLikxm_T4bI_m_6uQt-wrXO28lPPSBcdziOqPFlP9RYy47tDKtuZM07hVtSvaJ_HYRPL63-NyMgtmtWv5684jy2WDx2O0ZEM562ZBLQvURxur6gDAAA&runQuery=true&timeRangeId=week)
+### <a name="turning-off-system-restore"></a>Stänga av Systemåterställning
+Den här frågan identifierar försök att stoppa Systemåterställning och förhindra att systemet skapar återställningspunkter, som kan användas för att återställa data som krypteras med utpressningstrojaner. [Kör fråga](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAK2S3UrDQBCFz7XgO6y9id4o6HWvrIVCkaJPENOYFNumZGO1ID673w4xJA1isbJMZnZ-zpzM7EiptlooQc9UqjDLc-7wp1qrwj7Via44MzK35FTotTI5PXMr0aVe8cy15NzoGo-zqg_0m3KQSsRpQtbC6uMGpdt3jHeJfU_GymqG-uQb9XpcEn1HIuvmGpZT0Aq99Dim4G3ousNO8K04sSE6EEN22kL6jvzO-LaDNW2QzqxLmGBsPo9vUMt_oA8Na3DQv3vwcmPiifpmds48jkhut8T2FLikxm_T4bI_m_6uQt-wrXO28lPPSBcdziOqPFlP9RYy47tDKtuZM07hVtSvaJ_HYRPL63-NyMgtmtWv5684jy2WDx2O0ZEM562ZBLQvURxur6gDAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 DeviceProcessEvents
@@ -134,8 +135,8 @@ and ProcessCommandLine has 'Change' and ProcessCommandLine has 'SystemRestore'
 and ProcessCommandLine has 'disable'
 ```
 
-### <a name="backup-deletion"></a>Borttagning av säkerhets kopiering
-I den här frågan identifieras användning av _wmic.exe_ för att ta bort skugg kopior innan kryptering används. [Kör fråga](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWS2wqCQBCG_-ugd5CupTfoqgMIEV70AqFLGp5QyYLo2fsavEjxwlhWZ7-df2Z2dndyuitVxD9UrdKshrGHOxVqsZda6CVPnRJYzfR0QJVhnXRRbmSjN98VXrlFXEMfzNWkfphti50zLmSMdURfmFcCaSxqY3aMX4eqVKUn1OsV_8eLWX_rbwcVVhblBovY8bT76U-AxoedWeeWp7WzV0YDMqSQFNZavuuopnHH_Iku-lbJnLPMyxnYDTp4bZ5P9M5uNpsZIWSn7l_CuNoPSggb4z4CAAA&runQuery=true&timeRangeId=week)
+### <a name="backup-deletion"></a>Borttagning av säkerhetskopiering
+Den här frågan identifierar hur du _använderwmic.exe_ ta bort ögonblicksbilder av skuggkopior innan krypteringen. [Kör fråga](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWS2wqCQBCG_-ugd5CupTfoqgMIEV70AqFLGp5QyYLo2fsavEjxwlhWZ7-df2Z2dndyuitVxD9UrdKshrGHOxVqsZda6CVPnRJYzfR0QJVhnXRRbmSjN98VXrlFXEMfzNWkfphti50zLmSMdURfmFcCaSxqY3aMX4eqVKUn1OsV_8eLWX_rbwcVVhblBovY8bT76U-AxoedWeeWp7WzV0YDMqSQFNZavuuopnHH_Iku-lbJnLPMyxnYDTp4bZ5P9M5uNpsZIWSn7l_CuNoPSggb4z4CAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 DeviceProcessEvents
@@ -145,13 +146,13 @@ DeviceProcessEvents
 ProcessCommandLine, InitiatingProcessIntegrityLevel, InitiatingProcessParentFileName
 ```
 
-## <a name="check-for-multiple-signs-of-ransomware-activity"></a>Kontrol lera om det finns flera tecken på utpressnings tro Jan aktivitet
-I stället för att köra flera frågor separat kan du också använda en omfattande fråga som kontrollerar om det finns flera tecken på utpressnings troes aktiviteter för att identifiera berörda enheter. Följande konsol IDE rad fråga:
-- Letar efter både relativt konkreta och diskreta tecken på utpressnings tro aktivitet
-- Väger närvaron av dessa tecken
-- Identifierar enheter med en större chans att vara mål för utpressnings tro Jan 
+## <a name="check-for-multiple-signs-of-ransomware-activity"></a>Kontrollera om det finns flera tecken på utpressningstrojaner
+I stället för att köra flera frågor separat kan du också använda en omfattande fråga som söker efter flera tecken på utpressningstrojaner för att identifiera påverkade enheter. Följande konsoliderade fråga:
+- Letar efter både relativt betong- och diskreta tecken på utpressningstrojaner
+- Väga förekomsten av dessa tecken
+- Identifierar enheter som har högre chans att bli mål för utpressningstrojaner 
 
-Vid körning returnerar den här konsol IDE rad frågan en lista med enheter som har uppvisat flera tecken på angrepp. Antalet typer av utpressnings aktivitet visas också. Om du vill köra den här konsol IDE frågan kopierar du den direkt till den [avancerade Frågeredigeraren](https://security.microsoft.com/advanced-hunting). 
+När den här konsoliderade frågan körs returneras en lista över enheter som har visat flera attacktecken. Antalet av varje typ av utpressningstrojaner visas också. Om du vill köra den här konsoliderade frågan kopierar du den direkt till [den avancerade frågeredigeraren.](https://security.microsoft.com/advanced-hunting) 
 
 ```kusto
 // Find attempts to stop processes using taskkill.exe
@@ -228,17 +229,17 @@ ScDisable = iff(make_set(ScDisableUse) contains "1", 1, 0), TotalEvidenceCount =
 ### <a name="understand-and-tweak-the-query-results"></a>Förstå och justera frågeresultaten
 Den konsoliderade frågan returnerar följande resultat:
 
-- **DeviceID**– identifierar den påverkade enheten 
-- **Tidsstämpel**– första gången ett tecken på utpressnings tro aktivitet har observerats på enheten
-- **Specifika tecken på aktivitet**– antalet för varje tecken som visas i flera kolumner, till exempel _bcdedit_ eller _FsUtil_
+- **DeviceId**– identifierar enheten som påverkas 
+- **TimeStamp**– första gången ett tecken på utpressningstrojaner observerades på enheten
+- **Specifika tecken på aktivitet**– antalet för varje tecken som visas i flera kolumner, till exempel _BcdEdit_ eller _FsUtil_
 - **TotalEvidenceCount**– antal observerade tecken
 - **UniqueEvidenceCount**– antal typer av observerade tecken
 
-![Bild av frågeresultaten för utpressnings tro aktivitet](../../media/advanced-hunting-ransomware-query.png)
+![Bild av frågeresultat för utpressningstrojanaktivitet](../../media/advanced-hunting-ransomware-query.png)
 
-*Frågeresultat som visar påverkade enheter och antal olika tecken på utpressnings tro aktivitet*
+*Frågeresultat som visar påverkade enheter och antal olika tecken på utpressningstrojaner*
 
-Standardinställningen för frågeresultatet listar bara enheter som har fler än två typer av utpressnings tro Jan aktivitet. Om du vill se alla enheter med ett tecken på utpressnings tro aktivitet ändrar du följande `where` operator och anger numret till noll (0). Om du vill se färre enheter anger du ett högre nummer. 
+Som standard visas endast enheter som har fler än två typer av utpressningstrojaner i frågeresultatet. Om du vill se alla enheter med ett tecken på utpressningstrojaner ändrar du följande operatör och anger `where` siffran till noll (0). Ange ett högre antal om du vill se färre enheter. 
 
 ```kusto
 | where UniqueEvidenceCount > 2

@@ -1,5 +1,5 @@
 ---
-title: Återställa användar lösen ord
+title: Återställ användarlösenord
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,33 +16,34 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du återställer användar lösen ord i Microsoft 365 för företag.
-ms.openlocfilehash: ea6ff03a75c68c13ae27befd0f4eb2ac6c4e4a3e
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Lär dig hur du återställer användarlösenord i Microsoft 365 för företag.
+ms.openlocfilehash: 07752229e30c2a15ad1ece120a07b947bbe9c895
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702675"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928108"
 ---
-# <a name="reset-passwords-for-your-users"></a>Återställa lösen ord för användarna
+# <a name="reset-passwords-for-your-users"></a>Återställa lösenord för användarna
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP?autoplay=false]
 
-I Microsoft 365 för företag kan du återställa lösen ord för användare. Du kan också låta anställda återställa sina egna lösen ord. Mer information finns i [Konfigurera självbetjäning för återställning av lösen ord](set-up-self-serve-password-reset.md) .
+I Microsoft 365 för företag kan du återställa lösenord för användare. Du kan också låta användare återställa sina egna lösenord. Mer information finns i Konfigurera [självbetjäning för](set-up-self-serve-password-reset.md) återställning av lösenord.
 
 ## <a name="try-it"></a>Prova!
 
-1. När en användare begär ett nytt lösen ord får du en begäran om återställning av lösen ord via e-post. Återställ lösen ordet genom att öppna Start programmet och välja **admin**.
-1. I administrations centret för Microsoft 365 väljer **du användare**,  **aktiva användare** och sedan knappen för nycklar bredvid den användare som begärde återställningen.
-1. Välj **skapa lösen ord** automatiskt för att skapa ett slumpmässigt lösen ord.
-1. Välj **Återställ**.
-1. Markera kryss rutan **Skicka lösen ord via e-post** .
-1. Din e-postadress visas i e-postadressen med **det nya lösen ordet till följande mottagare** . Lägg till användarens alternativa e-postadress eller en adress som du väljer.
-1. Välj **skicka e-post och Stäng**.
+1. När en användare begär ett nytt lösenord får du en begäran om återställning av lösenord i ett e-postmeddelande. Om du vill återställa lösenordet öppnar du appstartaren och väljer **Admin.**
+1. I administrationscentret för Microsoft 365 väljer du **Användare,** Aktiva användare och sedan nyckelikonen bredvid den användare som begärde återställningen.
+1. Välj **Skapa lösenord automatiskt om du** vill att ett slumpmässigt lösenord ska skapas automatiskt.
+1. Välj **Återställ.**
+1. Markera kryssrutan **Skicka lösenord med e-post.**
+1. Din e-postadress visas i rutan Skicka det nya **lösenordet med e-post till följande** mottagare. Lägg till användarens alternativa e-postadress eller en adress som du väljer.
+1. Välj **Skicka e-post och stäng.**
 
-    Användaren får ett e-postmeddelande med instruktioner för återställning av lösen ord.
+    Användaren får ett e-postmeddelande med instruktionerna för återställning av lösenord.

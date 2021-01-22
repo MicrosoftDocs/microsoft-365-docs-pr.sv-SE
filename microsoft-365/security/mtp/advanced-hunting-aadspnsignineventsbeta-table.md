@@ -1,10 +1,10 @@
 ---
-title: AADSpnSignInEventsBeta-tabell i det avancerade jakt-schemat
-description: Lär dig mer om den information som är kopplad till tabellen för inloggnings händelser för Azure Active Directory-tjänsten och det avancerade Antivirus schema
-keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, kolumn, datatyp, beskrivning, AlertInfo, avisering, enheter, bevis, fil, IP-adress, enhet, dator, användare, konto, identitet, AAD
+title: Tabellen AADSpnSignInEventsBeta i det avancerade sökschemat
+description: Läs mer om information som är kopplad till Azure Active Directory-tjänstens huvudnamn och inloggningstabell för hanterade identiteter i det avancerade sökschemat
+keywords: avancerad sökning, hotsökning, sökning på cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, AviseringInfo, avisering, enheter, bevis, fil, IP-adress, enhet, dator, användare, konto, identitet, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 42acf24ce9b941fffb1ce0ed4b67216bd8c1de47
-ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
+ms.technology: m365d
+ms.openlocfilehash: 172c400df3adea70a2e2d2e37547fa39e0d3b9cf
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784305"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928624"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -33,16 +34,16 @@ ms.locfileid: "49784305"
 - Microsoft 365 Defender
 
 >[!IMPORTANT]
-> `AADSpnSignInEventsBeta`Tabellen finns för närvarande i Beta versionen och erbjuds på ett kortsiktigt sätt så att du kan gå igenom alla inloggnings händelser för Azure Active Directory-tjänsten (AAD) och hanterad identitet. Vi kommer slutligen att flytta all information om inloggnings schema till `IdentityLogonEvents` tabellen.<br><br>
-> Kunder som kan komma åt Microsoft 365 Defender via Azure säkerhets centrets integrerade Microsoft Defender för slut punkts lösning, men inte har licenser för Microsoft Defender för Office, Microsoft Defender för identitet eller Microsoft Cloud App Security, kan inte visa detta schema. 
+> Tabellen är för närvarande i betaversion och erbjuds på kort sikt så att du kan jaga via `AADSpnSignInEventsBeta` AAD-tjänstens huvudnamn (Azure Active Directory) och hanterade identitetsin signeringshändelser. Så småningom flyttar vi all information i inloggningsschemat till `IdentityLogonEvents` tabellen.<br><br>
+> Kunder som kan komma åt Microsoft 365 Defender via Azure Säkerhetscenters integrerade Microsoft Defender för slutpunktslösning, men inte har licenser för Microsoft Defender för Office, Microsoft Defender för identitet eller Microsoft Cloud App Security, kommer inte att kunna se det här schemat. 
 
 
 
-`AADSpnSignInEventsBeta`Tabellen i det avancerade jakt-schemat innehåller information om Azure Active Directory-tjänstens huvud konto och inloggnings uppgifter för hanterade identiteter. Du kan läsa mer om olika typer av inloggnings uppgifter i [Azure Active Directory-inloggnings aktivitets rapporter – för hands version](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins).
+Tabellen `AADSpnSignInEventsBeta` i det avancerade utbildningsschemat innehåller information om Azure Active Directory-tjänstens huvudnamn och inloggningar för hanterade identiteter. Du kan läsa mer om de olika typerna av inloggningar i [azure Active Directory-inloggningsrapporter](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins)– förhandsversion.
 
 Använd den här referensen för att skapa frågor som returnerar information från tabellen.
 
-Information om andra tabeller i det avancerade jakt schema finns i [referens för avancerad jakt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
+Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference)
 
 
 
@@ -50,25 +51,25 @@ Information om andra tabeller i det avancerade jakt schema finns i [referens fö
 
 | Kolumnnamn     | Datatyp | Beskrivning   |
 | ----- | ----- | ---- |
-| `Timestamp` | datetime      | Datum och tid när posten skapades                                                                                                     |
-| `Application`          | strängvärdet        | Program som utförde den inspelade åtgärden                                                                                                   |
-| `ApplicationId`        | strängvärdet        | Unik identifierare för programmet                                                                                                           |
-| `IsManagedIdentity`    | returtyp       | Anger om inloggningen initierats av en hanterad identitet                                                                               |
-| `ErrorCode`            | signera        | Innehåller felkoden om ett inloggnings fel inträffar. För att hitta en beskrivning av en specifik felkod, gå till <https://aka.ms/AADsigninsErrorCodes> . |
-| `CorrelationId`        | strängvärdet        | Unik identifierare för inloggnings händelsen                                                                                                          |
-| `ServicePrincipalName` | strängvärdet        | Namnet på tjänstens huvud namn som initierade inloggningen                                                                                        |
-| `ServicePrincipalId`   | strängvärdet        | Unik identifierare för tjänstens huvud namn som initierade inloggningen                                                                           |
-| `ResourceDisplayName`  | strängvärdet        | Visnings namn för den åtkomst som används för resursen                                                                                                           |
-| `ResourceId`           | strängvärdet        | Unik identifierare för den åtkomst som används för resursen                                                                                                      |
-| `ResourceTenantId`     | strängvärdet        | Unik identifierare för innehavaren av resursen                                                                                        |
-| `IPAddress`            | strängvärdet        | IP-adress tilldelad till slut punkten och används under relaterad nätverkskommunikation                                                              |
-| `CountryCode`          | strängvärdet        | Kod med två bokstäver som anger det land där klient-IP-adressen finns                                                                |
-| `State`                | strängvärdet        | Ange var inloggningen inträffar, om den är tillgänglig                                                                                                  |
-| `City`                 | strängvärdet        | Ort där konto användaren finns                                                                                                          |
-| `Latitude`             | strängvärdet        | Norr till syd-koordinaterna för inloggnings platsen                                                                                          |
-| `Longitude`            | strängvärdet        | Östra till väst-koordinater för inloggnings platsen                                                                                            |
-| `RequestId`            | strängvärdet        | Unik identifierare för begäran                                                                                                                |
-|`ReportId` | strängvärdet | Unik identifierare för händelsen | 
+| `Timestamp` | datetime      | Datum och tid då posten skapades                                                                                                     |
+| `Application`          | sträng        | Program som utförde den inspelade åtgärden                                                                                                   |
+| `ApplicationId`        | sträng        | Unikt ID för programmet                                                                                                           |
+| `IsManagedIdentity`    | boolesk       | Anger om inloggningen initierades med en hanterad identitet                                                                               |
+| `ErrorCode`            | int        | Innehåller felkoden om det uppstår ett inloggningsfel. Gå till en beskrivning av en specifik <https://aka.ms/AADsigninsErrorCodes> felkod. |
+| `CorrelationId`        | sträng        | Unikt ID för inloggningshändelsen                                                                                                          |
+| `ServicePrincipalName` | sträng        | Namnet på tjänstens huvudnamn som initierade inloggningen                                                                                        |
+| `ServicePrincipalId`   | sträng        | Unikt ID för tjänstens huvudnamn som initierade inloggningen                                                                           |
+| `ResourceDisplayName`  | sträng        | Visningsnamn för resursen som har åtkomst                                                                                                           |
+| `ResourceId`           | sträng        | Unikt ID för den resurs som används                                                                                                      |
+| `ResourceTenantId`     | sträng        | Unikt ID för klientorganisationen för resursen som används                                                                                        |
+| `IPAddress`            | sträng        | IP-adress som tilldelats slutpunkten och som används under relaterad nätverkskommunikation                                                              |
+| `CountryCode`          | sträng        | Kod med två bokstäver som anger landet där klient-IP-adressen är geolokal                                                                |
+| `State`                | sträng        | Delstat där inloggningen inträffade, om tillgänglig                                                                                                  |
+| `City`                 | sträng        | Ort där kontoanvändaren finns                                                                                                          |
+| `Latitude`             | sträng        | Koordinaterna för inloggningsplats för nord till syd                                                                                          |
+| `Longitude`            | sträng        | Inloggningsplatsens koordinater för öst till väst                                                                                            |
+| `RequestId`            | sträng        | Unik identifierare för begäran                                                                                                                |
+|`ReportId` | sträng | Unikt ID för händelsen | 
 
  
 

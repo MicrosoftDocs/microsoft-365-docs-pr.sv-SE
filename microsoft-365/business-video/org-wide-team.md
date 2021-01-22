@@ -1,5 +1,5 @@
 ---
-title: Skapa ett organisations team
+title: Skapa ett organisationsteam
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,40 +16,41 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du skapar ett organisations team i Microsoft Teams.
-ms.openlocfilehash: 900b5e39bd8d42c9c80b5307e224f9a59c67eb6a
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Lär dig hur du skapar ett organisationsomfattande team i Microsoft Teams.
+ms.openlocfilehash: 5df4ebce8e80babd8bd3e70004829c997a127a55
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702486"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928180"
 ---
-# <a name="create-an-org-wide-team"></a>Skapa ett organisations team
+# <a name="create-an-org-wide-team"></a>Skapa ett organisationsteam
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2GCG9?autoplay=false]
 
 ## <a name="try-it"></a>Prova!
 
-Skapa ett organisations team i Microsoft Teams som alla på ditt företag kan delta i. När du lägger till fler användare i Microsoft 365 läggs de automatiskt till i det här teamet.
+Skapa ett organisationsomfattande team i Microsoft Teams som alla på ditt företag kan delta i. När du lägger till fler användare i Microsoft 365 läggs de automatiskt till i det här teamet.
 
 1. I Microsoft Teams väljer du  **Teams** och sedan **Skapa team.**
-2. Välj  **skapa ett team från början**.
-3. Välj  **skapa ett organisations team**.
+2. Välj **Skapa ett team från grunden.**
+3. Välj **Skapa ett team för hela organisationen.**
 
 > [!NOTE]
-> Du måste vara Microsoft 365-administratör för att visa det här alternativet.
+> Du måste vara Microsoft 365-administratör för att kunna se det här alternativet.
 
-1. Ge gruppen ett namn, Lägg till en beskrivning och välj sedan  **skapa**.
+1. Ge teamet ett namn, lägg till en beskrivning och välj sedan **Skapa.**
 
-I gruppen är kanaler. Den allmänna kanalen skapas automatiskt. Du kan lägga till fler kanaler, separata konversationer och filer för olika avdelningar, händelser eller projekt.
+I ditt team finns kanaler. Kanalen Allmänt skapas automatiskt. Du kan lägga till fler kanaler, separata konversationer och filer för olika avdelningar, händelser eller projekt.
 
 Prova något av följande:
 
-- Använd fliken  **inlägg** för samarbetsbaserade samtal och meddelanden, till exempel ett välkomst meddelande till alla.
-- På fliken  **filer** kan du skapa nya dokument som alla kan bidra till, till exempel ett Microsoft Word-dokument. Eller dra och släpp befintliga dokument till fliken  **filer** .
-- Använd fliken  **wiki** för att föra snabb anteckningar. Och välj plus tecknet ( **+** ) för att lägga till appar eller filer som ytterligare flikar.
-- Med flikarna till vänster kan du Visa senaste aktivitet, chatta med andra grupp medlemmar, Visa de team som du tillhör och din kalender. Du kan ringa röst-och video samtal till andra grupp användare och se filer som du nyligen har arbetat med.
+- Använd fliken  **Inlägg** för konversationer och meddelanden som gäller hela organisationen, till exempel ett välkomstmeddelande till alla.
+- På fliken  **Filer** kan du skapa nya dokument som alla kan bidra till, till exempel ett Microsoft Word-dokument. Du kan också dra och släppa befintliga dokument på  **fliken** Filer.
+- Använd  **wiki-fliken** för att göra snabbanteckningar. Och välj plustecknet **+** () för att lägga till appar eller filer som ytterligare flikar.
+- Med flikarna till vänster kan du visa den senaste aktiviteten, chatta med andra teammedlemmar, visa de team du tillhör och din kalender. Du kan ringa röst- och videosamtal till andra gruppanvändare och visa filer som du nyligen arbetat med.

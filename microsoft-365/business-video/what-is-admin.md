@@ -1,5 +1,5 @@
 ---
-title: Vad är en administratör i Microsoft 365 för företag
+title: Vad är en administratör i Microsoft 365 för företag?
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,51 +16,52 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Läs mer om administratörs rollerna i Microsoft 365 för företag.
-ms.openlocfilehash: 417a8af4c367e8abbef2c15da86fd07e0d8fd72c
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Läs mer om administratörsrollerna i Microsoft 365 för företag.
+ms.openlocfilehash: 3f532080dfa8b492700e258ab109a04962820557
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702836"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927748"
 ---
 # <a name="what-is-a-microsoft-365-admin"></a>Vad är en Microsoft 365-administratör?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0?autoplay=false]
 
-I varje Microsoft 365 Business-prenumeration måste det finnas minst ett administratörs konto. Administratören hanterar tjänsten, användar konton och enheter. Om du är den som registrerade dig för abonnemanget är du den globala administratören för din prenumeration. Du kan också bli administratör om du har en annan administratör.
+I varje Microsoft 365 Business-prenumeration måste det finnas minst ett administratörskonto. Administratören hanterar tjänsten, användarkonton och enheter. Om du är den som registrerade dig för prenumerationen är du global administratör för prenumerationen. Du kan också bli administratör om en annan administratör skapar en sådan.
 
-Även om du måste ha minst en administratörs roll för ditt abonnemang kan det vara en säkerhets risk om administratörs kontot är utsatt för en utomstående part. Vi rekommenderar att du bara tilldelar administratörs rollen till dem som verkligen behöver den och tilldelar användar rollen till de flesta användare.
+Även om du alltid behöver minst en administratörsroll för prenumerationen kan det vara en säkerhetsrisk om administratörskontot komprometteras av en utomstående. Vi rekommenderar att du bara tilldelar administratörsrollen till dem som verkligen behöver den och tilldelar användarrollen till de flesta.
 
 ## <a name="try-it"></a>Prova!
 
-### <a name="change-a-user-role-to-an-admin-role"></a>Ändra en användar roll till en administratörs roll
+### <a name="change-a-user-role-to-an-admin-role"></a>Ändra en användarroll till en administratörsroll
 
-Så här ändrar du en användar roll till en administratörs roll:
+Så här ändrar du en användarroll till en administratörsroll:
 
-1. När du är inloggad i Microsoft 365 väljer du Start programmet. Om du ser knappen administratör är du administratör.
-1. Välj **admin** för att gå till administrations centret för Microsoft 365.
-1. I det vänstra navigerings fönstret väljer **du användare** och sedan **aktiva användare**.
-1. Välj den person som du vill göra till administratör. Användarens information visas i dialog rutan till höger.
-1. Välj **Manage roles**.
-1. Avmarkera kryss rutan **användare (ingen administratörs åtkomst)** och välj sedan en av administratörs rollerna. Om du vill ha mer information om en roll hovrar du över utrops tecknet (!) och läser beskrivningen. Om du vill ge användaren samma roll som din väljer du **Global administratör**.
+1. När du är inloggad i Microsoft 365 väljer du startprogrammet. Om du ser knappen Admin är du administratör.
+1. Välj **Admin** för att gå till administrationscentret för Microsoft 365.
+1. I det vänstra navigeringsfönstret väljer du **Användare** och sedan **Aktiva användare.**
+1. Välj den person som du vill göra till administratör. Användarens information visas i den högra dialogrutan.
+1. Välj **Hantera roller.**
+1. Avmarkera kryssrutan **Användare (ingen administratörsåtkomst)** och välj sedan en administratörsroll. Om du vill veta mer om en roll hovrar du över utropstecknet (!) och läser verktygstipset. Välj Global administratör om du vill ge användaren samma roll **som din.**
 1. Välj **Spara ändringar**.
 
-### <a name="create-an-admin-account"></a>Skapa ett administratörs konto 
+### <a name="create-an-admin-account"></a>Skapa ett administratörskonto 
 
-Du kan också skapa ett dedikerat administratörs konto för en person eller tjänst:
+Du kan också skapa ett dedikerat administratörskonto för en IT-person eller tjänst:
 
-1. När du är inloggad i Microsoft 365 väljer du Start programmet.
-1. Välj **admin** för att gå till administrations centret för Microsoft 365.
-1. I det vänstra navigerings fönstret väljer **du användare** och sedan **aktiva användare**.
-1. Välj **Lägg till en användare**.
-1. Ange användarens **förnamn** och **efter namn**, **visnings namn** och **användar namn** och välj sedan **Nästa**.
-1. Välj **skapa användare utan produkt licens**. Detta lägger till en ny användare, men du behöver inte betala för ett månads abonnemang. Välj **Nästa**.
-1. Öppna **roller**.
-1. Avmarkera kryss rutan och välj sedan en av administratörs rollerna. Välj **Nästa**.
-1. Granska informationen och klicka sedan på **Lägg till**.
+1. När du är inloggad i Microsoft 365 väljer du startprogrammet.
+1. Välj **Admin** för att gå till administrationscentret för Microsoft 365.
+1. I det vänstra navigeringsfönstret väljer du **Användare** och sedan **Aktiva användare.**
+1. Välj **Lägg till en användare.**
+1. Ange användarens **förnamn** **och efternamn,** **visningsnamn** och **användarnamn** och välj sedan **Nästa.**
+1. Välj **Skapa användare utan produktlicens.** Då läggs en ny användare till, men du behöver inte betala för en månadsprenumeration. Välj **Nästa**.
+1. Öppna **roller.**
+1. Avmarkera kryssrutan och välj sedan en administratörsroll. Välj **Nästa**.
+1. Granska informationen och välj sedan Slutför med **att lägga till.**
 1. Välj **Stäng**.

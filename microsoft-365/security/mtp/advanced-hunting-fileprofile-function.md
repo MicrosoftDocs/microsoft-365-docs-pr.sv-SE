@@ -1,10 +1,10 @@
 ---
-title: FileProfile ()-funktion i avancerad jakt för Microsoft 365 Defender
-description: Lär dig hur du använder FileProfile () för att utöka informationen om filer i de avancerade frågeresultaten
-keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, FileProfile, fil profil, funktion och berikning
+title: Funktionen FileProfile() för avancerad sökning för Microsoft 365 Defender
+description: Lär dig hur du använder FileProfile() för att utöka information om filer i dina avancerade sökfrågeresultat
+keywords: avancerad sökning, hotsökning, cyberhot, skydd mot cyberhot, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, FileProfile, filprofil, funktion, vinst
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 31959ed146df52aa6568f7aa60617b74ab8dd4db
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 68196f126ac470088d7ba5e2923accc492d8764c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847458"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929556"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -34,28 +35,28 @@ ms.locfileid: "48847458"
 **Gäller för:**
 - Microsoft 365 Defender
 
-`FileProfile()`Funktionen är en mångsidig funktion i [Avancerad jakt](advanced-hunting-overview.md) som lägger till följande data i filer som hittas av frågan.
+Funktionen `FileProfile()` är en funktion för avancerad sökning som [lägger](advanced-hunting-overview.md) till följande data i filer som hittas av frågan.
 
 | Kolumn | Datatyp | Beskrivning |
 |------------|-------------|-------------|
-| SHA1 | strängvärdet | SHA-1 av filen som den inspelade åtgärden tillämpades på |
-| SHA256 | strängvärdet | SHA-256 av filen som den inspelade åtgärden tillämpades på |
-| MD5 | strängvärdet | MD5-hash för filen som den inspelade åtgärden tillämpades för |
-| Storlek | signera | Storleken på filen i byte |
-| GlobalPrevalence | signera | Antal instanser av enheten som Microsoft globalt har iakttagit |
-| GlobalFirstSeen | datetime | Datum och tid då enheten först observerades av Microsoft globalt |
-| GlobalLastSeen | datetime | Datum och tid då enheten senast kom från Microsoft globalt |
-| Undertecknarens | strängvärdet | Information om undertecknaren av filen |
-| Utgivaren | strängvärdet | Information om utfärdande av certifikat utfärdare (CA) |
-| SignerHash | strängvärdet | Unikt hashvärde identifierar undertecknaren |
-| IsCertificateValid | returtyp | Om certifikatet som används för att signera filen är giltigt |
-| IsRootSignerMicrosoft | returtyp | Anger om undertecknaren hos rot certifikatet är Microsoft |
-| IsExecutable | returtyp | Om filen är en fil för Portable körbara filer (PE) |
-| ThreatName | strängvärdet | Identifierings namn för skadlig program vara eller andra hot Funna |
-| Publisher | strängvärdet | Namn på organisationen som har publicerat filen |
-| SoftwareName | strängvärdet | Namnet på program varu produkten |
+| SHA1 | sträng | SHA-1 för den fil som den inspelade åtgärden tillämpats på |
+| SHA256 | sträng | SHA-256 för filen som den inspelade åtgärden tillämpats på |
+| MD5 | sträng | MD5-hash för filen som den inspelade åtgärden tillämpats på |
+| FileSize | int | Storlek på filen i byte |
+| GlobalPrevalence | int | Antal förekomster av entitet som observerats av Microsoft globalt |
+| GlobalFirstSeen | datetime | Datum och tid då entiteten observerades första gången av Microsoft globalt |
+| GlobalLastSeen | datetime | Datum och tid då entiteten senast observerades av Microsoft globalt |
+| Undertecknaren | sträng | Information om den som signerar filen |
+| Utfärdare | sträng | Information om den certifikatutfärdare som utfärdar certifikatutfärdaren |
+| SignerHash | sträng | Unikt hashvärde som identifierar undertecknaren |
+| IsCertificateValid | boolesk | Om certifikatet som används för att signera filen är giltigt |
+| IsRootSignerMicrosoft | boolesk | Anger om undertecknaren av rotcertifikatet är Microsoft |
+| IsExecutable | boolesk | Om filen är en PORTABLE Executable-fil (PE) |
+| ThreatName | sträng | Identifieringsnamn för skadlig kod eller andra hot hittades |
+| Publisher | sträng | Namn på organisationen som publicerade filen |
+| SoftwareName | sträng | Namnet på programvaruprodukten |
 
-## <a name="syntax"></a>Frågesyntaxen
+## <a name="syntax"></a>Syntax
 
 ```kusto
 invoke FileProfile(x,y)
@@ -63,12 +64,12 @@ invoke FileProfile(x,y)
 
 ## <a name="arguments"></a>Argument
 
-- **x** — kolumnen fil-ID som ska användas: `SHA1` , `SHA256` ,, `InitiatingProcessSHA1` eller `InitiatingProcessSHA256` ;-funktionen används `SHA1` om ospecificerad
-- **y** – begränsa antalet poster som ska utökas, 1-1000; funktionen använder 100 om ospecificerad
+- **x**– kolumn med fil-ID som ska användas för: , , eller `SHA1` `SHA256` `InitiatingProcessSHA1` `InitiatingProcessSHA256` funktionen, `SHA1` om det inte har specificerats
+- **y**– begränsa antalet poster att utöka, 1–1 000; används 100 om de inte är angivna
 
 ## <a name="examples"></a>Exempel
 
-### <a name="project-only-the-sha1-column-and-enrich-it"></a>Endast kolumnen SHA1 och utöka den
+### <a name="project-only-the-sha1-column-and-enrich-it"></a>Projicera endast SHA1-kolumnen och utöka den
 
 ```kusto
 DeviceFileEvents
@@ -78,7 +79,7 @@ DeviceFileEvents
 | invoke FileProfile()
 ```
 
-### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>Utöka de första 500-posterna och visa en lista över lågprioriterade filer
+### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>Förbättra de första 500 posterna och lista filer som inte är så högena
 
 ```kusto
 DeviceFileEvents
@@ -92,4 +93,4 @@ DeviceFileEvents
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
-- [Exempel på fler frågor](advanced-hunting-shared-queries.md)
+- [Hämta fler frågeexempel](advanced-hunting-shared-queries.md)

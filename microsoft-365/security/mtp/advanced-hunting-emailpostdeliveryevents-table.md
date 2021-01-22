@@ -1,10 +1,10 @@
 ---
-title: EmailPostDeliveryEvents-tabell i det avancerade jakt-schemat
-description: Lär dig mer om åtgärder efter leverans på Microsoft 365-e-postmeddelanden i EmailPostDeliveryEvents-tabellen i det avancerade jakt-schemat
-keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, kolumn, datatyp, beskrivning, EmailPostDeliveryEvents, nätverks meddelande-ID, avsändare, mottagare, bifogade filer
+title: Tabellen EmailPostDeliveryEvents i det avancerade sökschemat
+description: Läs mer om åtgärder efter leverans som har vidtagits i e-postmeddelanden från Microsoft 365 i tabellen EmailPostDeliveryEvents i det avancerade sökschemat
+keywords: avancerad sökning, hotsökning, cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, E-postPostDeliveryEvents, nätverksmeddelande-ID, avsändare, mottagare, bifogad fil-ID, namn på bifogad fil, skadlig kod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 59e5d0d51997812689c7382d6a27af6f66a27d25
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: d7920be05156320411f3907cbcdae88d315b5136
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842614"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929715"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -34,32 +35,32 @@ ms.locfileid: "48842614"
 **Gäller för:**
 - Microsoft 365 Defender
 
-`EmailPostDeliveryEvents`Tabellen i det [avancerade jakt](advanced-hunting-overview.md) -schemat innehåller information om åtgärder efter leverans på de e-postmeddelanden som hanteras av Microsoft 365. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+Tabellen i det avancerade utbildningsschemat innehåller information om åtgärder efter leverans som har vidtagits `EmailPostDeliveryEvents` för e-postmeddelanden som bearbetats av Microsoft 365. [](advanced-hunting-overview.md) Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!TIP]
-> Detaljerad information om de händelse typer ( `ActionType` värden) som stöds av en tabell finns i den [inbyggda schema referensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) i säkerhets Center.
+> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` [inbyggda schemareferensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) som finns i säkerhetscentret.
 
-Om du vill ha mer information om enskilda e-postmeddelanden kan du även [`EmailEvents`](advanced-hunting-emailevents-table.md) använda [`EmailAttachmentInfo`](advanced-hunting-emailattachmentinfo-table.md) tabellerna, och [`EmailUrlInfo`](advanced-hunting-emailurlinfo-table.md) . Information om andra tabeller i det avancerade jakt schema [finns i referens för avancerad jakt](advanced-hunting-schema-tables.md).
+Du kan också använda tabellerna och om du vill ha mer information om [`EmailEvents`](advanced-hunting-emailevents-table.md) [`EmailAttachmentInfo`](advanced-hunting-emailattachmentinfo-table.md) enskilda [`EmailUrlInfo`](advanced-hunting-emailurlinfo-table.md) e-postmeddelanden. Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | Datum och tid när händelsen registrerades |
-| `EventId` | strängvärdet | Unik identifierare för händelsen |
-| `NetworkMessageId` | strängvärdet | Unik identifierare för e-postmeddelandet, genererat av Microsoft 365 |
-| `InternetMessageId` | strängvärdet | Public-Facing ID för e-postmeddelandet som anges i det sändande e-postsystemet |
-| `Action` | strängvärdet | Åtgärd som utförs på enheten |
-| `ActionType` | strängvärdet | Typ av aktivitet som utlöste händelsen: manuell reparation, Phish, ZAP |
-| `ActionTrigger` | strängvärdet | Anger om en åtgärd som utlöstes av en administratör (manuellt eller genom godkännande av en väntande automatiserad åtgärd) eller någon särskild mekanism, till exempel en ZAP eller dynamisk leverans |
-| `ActionResult` | strängvärdet | Resultat av åtgärden |
-| `RecipientEmailAddress` | strängvärdet | E-postadress till mottagaren eller e-postadressen till mottagaren efter expansion av distributions lista |
-| `DeliveryLocation` | strängvärdet | Plats där e-postmeddelandet levererades: Inkorgen/mapp, lokal/extern, skräp, karantän, misslyckad, avbruten, borttaget |
+| `Timestamp` | datetime | Datum och tid då händelsen spelades in |
+| `EventId` | sträng | Unikt ID för händelsen |
+| `NetworkMessageId` | sträng | Unikt ID för e-postmeddelandet som genereras av Microsoft 365 |
+| `InternetMessageId` | sträng | Offentlig identifierare för e-postmeddelandet som anges av det avsändande e-postsystemet |
+| `Action` | sträng | Åtgärd som vidtas på entiteten |
+| `ActionType` | sträng | Typ av aktivitet som utlöste händelsen: Manuell åtgärd, Phish ZAP, Malware ZAP |
+| `ActionTrigger` | sträng | Anger om en åtgärd utlöstes av en administratör (manuellt eller genom godkännande av en väntande automatiserad åtgärd) eller av någon särskild mekanism, till exempel en ZAP eller dynamisk leverans |
+| `ActionResult` | sträng | Åtgärdens resultat |
+| `RecipientEmailAddress` | sträng | Mottagarens e-postadress eller e-postadress för mottagaren efter distributionslistans expansion |
+| `DeliveryLocation` | sträng | Plats där e-postmeddelandet levererades: Inkorg/Mapp, Lokal/Extern, Skräppost, Karantän, Misslyckades, Nedsänt, Borttaget |
 
-## <a name="supported-event-types"></a>Händelse typer som stöds
-Den här tabellen registrerar händelser med följande `ActionType` värden:
+## <a name="supported-event-types"></a>Händelsetyper som stöds
+I den här tabellen visas händelser med följande `ActionType` värden:
 
-- **Manuell reparation** – en administratör vidtog en åtgärd manuellt i ett e-postmeddelande efter att det har skickats till användarens post låda. Detta inkluderar åtgärder som utförs manuellt via [Threat Explorer](../office-365-security/threat-explorer.md) eller godkännanden av [automatiserade undersökningar och svar (Air)](mtp-autoir-actions.md).
-- **PHISH ZAP** – [Automatisk rensning av Tom timme (Zap)](../office-365-security/zero-hour-auto-purge.md) vidtog en åtgärd på en nätfiske-e-postadress efter leverans.
-- **Malware-ZAP** – automatisk rensning för en timme (Zap) vidtog en åtgärd i ett e-postmeddelande som innehöll skadlig kod efter leverans.
+- **Manuell åtgärd – en** administratör har manuellt åtgärdat ett e-postmeddelande efter att det levererades till användarens postlåda. Detta omfattar åtgärder som vidtas manuellt via [Threat Explorer](../office-365-security/threat-explorer.md) eller godkännanden av automatisk undersökning [och svarsåtgärder (AIR).](mtp-autoir-actions.md)
+- **Zap i phish** – [zap (Zero-hour auto purge)](../office-365-security/zero-hour-auto-purge.md) har vidta åtgärder för nätfiske efter leverans.
+- **Malware ZAP** – ZAP (Zero-hour auto purge) vidtog åtgärder på ett e-postmeddelande som innehöll skadlig kod efter leverans.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

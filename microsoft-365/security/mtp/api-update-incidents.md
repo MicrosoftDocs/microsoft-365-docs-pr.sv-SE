@@ -1,9 +1,9 @@
 ---
-title: Uppdatera incident API
-description: Lär dig hur du uppdaterar incidenter med hjälp av Microsoft 365 Defender API
-keywords: uppdatering, API, incident
+title: API för uppdatering av incidenter
+description: Lär dig hur du uppdaterar incidenter med Microsoft 365 Defender API
+keywords: uppdatering, api, incident
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 6fc1ff730994f03aa500ad9a4559b66970e32d87
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 18be4565c2611457d0f5fdc135f99a301bb39e2a
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719410"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929076"
 ---
-# <a name="update-incidents-api"></a>Uppdatera incident API
+# <a name="update-incidents-api"></a>API för uppdatering av incidenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,30 +36,30 @@ ms.locfileid: "49719410"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
+> Viss information gäller förhandsversioner av produkter som kan komma att ändras väsentligt innan de släpps till kommersiellt bruk. Microsoft ger inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges här.
 
-## <a name="api-description"></a>API-Beskrivning
+## <a name="api-description"></a>API-beskrivning
 
-Uppdaterar egenskaper för befintlig incident. Uppdaterings bara egenskaper är: ```status``` , ```determination``` ,, ```classification``` ```assignedTo``` och ```tags``` .
+Uppdateringsegenskaper för befintliga incidenter. Egenskaper som kan uppdateras är: ```status``` , , , och ```determination``` ```classification``` ```assignedTo``` ```tags``` .
 
-### <a name="quotas-resource-allocation-and-other-constraints"></a>Kvoter, resursallokering och andra villkor
+### <a name="quotas-resource-allocation-and-other-constraints"></a>Kvoter, resurstilldelning och andra villkor
 
-1. Du kan ringa upp till 50 samtal per minut eller 1500 samtal per timme innan du klickar på tröskelvärdet för begränsning av bandbredd.
-2. Du kan endast ställa in `determination` egenskapen om `classification` är inställd på TruePositive.
+1. Du kan ringa upp till 50 samtal per minut eller 1 500 samtal per timme innan du kommer upp till tröskelvärdet för begränsning.
+2. Du kan bara ange `determination` egenskapen om den är inställd på `classification` TruePositive.
 
-Om din begäran är begränsad returneras en `429` svarskod. I svars texten visas tiden då du kan börja ringa nya samtal.
+Om din begäran begränsas returneras en `429` svarskod. Svarstexten anger när du kan börja ringa nya samtal.
 
 ## <a name="permissions"></a>Behörigheter
 
-En av följande behörigheter krävs för att kunna ringa detta API. Mer information om hur du väljer behörigheter finns i avsnittet [om Microsoft 365 Defender API: er](api-access.md).
+En av följande behörigheter krävs för att anropa detta API. Mer information, inklusive hur du väljer behörigheter, finns i Access API:er för [Microsoft 365 Defender.](api-access.md)
 
-Behörighets typ | Tillåtelse | Visnings namn för behörighet
+Behörighetstyp | Behörighet | Visningsnamn för behörighet
 -|-|-
-Program | Incident. ReadWrite. alla | Läsa och skriva alla händelser
-Delegerat (arbets-eller skol konto) | Incident. ReadWrite | Läs-och skriv händelser
+Program | Incident.ReadWrite.All | Läsa och skriva alla incidenter
+Delegerat (arbets- eller skolkonto) | Incident.ReadWrite | Läs- och skrivincidenter
 
 > [!NOTE]
-> När du erhåller ett token med användarautentiseringsuppgifter måste användaren ha behörighet att uppdatera händelsen i portalen.
+> När du skaffar en token med användarautentiseringsuppgifter måste användaren ha behörighet att uppdatera incidenten i portalen.
 
 ## <a name="http-request"></a>HTTP-begäran
 
@@ -66,32 +67,32 @@ Delegerat (arbets-eller skol konto) | Incident. ReadWrite | Läs-och skriv händ
 PATCH /api/incidents/{id}
 ```
 
-## <a name="request-headers"></a>Begärandehuvuden
+## <a name="request-headers"></a>Begär sidhuvuden
 
 Namn | Type (Typ) | Beskrivning
 -|-|-
-Bemyndigande | Sträng | Bearer {token}. **Obligatoriskt**.
-Innehålls typ | Sträng | Application/JSON. **Obligatoriskt**.
+Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
+Innehållstyp | Sträng | application/json. **Obligatoriskt.**
 
-## <a name="request-body"></a>Brödtext
+## <a name="request-body"></a>Begärandetext
 
-I begärans brödtext anger du värden för de fält som ska uppdateras. Befintliga egenskaper som inte är inkluderade i kravet på brödtext bibehåller sina värden, såvida de inte måste beräknas på nytt på grund av ändringar i relaterade värden. För bästa prestanda bör du utelämna befintliga värden som inte har ändrats.
+Ange värden för fälten som ska uppdateras i begärans brödtext. Befintliga egenskaper som inte ingår i begärans brödtext behåller sina värden, såvida de inte behöver beräknas om på grund av ändringar av relaterade värden. För bästa prestanda bör du utelämna befintliga värden som inte har ändrats.
 
 Egenskap | Type (Typ) | Beskrivning
 -|-|-
-status | Enum | Anger aviseringens aktuella status. Möjliga värden är: ```Active``` , ```Resolved``` och ```Redirected``` .
-Tilldelat | strängvärdet | Ägaren till incidenten.
-nomenklatur | Enum | Specifikation av aviseringen. Möjliga värden är: ```Unknown``` , ```FalsePositive``` , ```TruePositive``` .
-bedömning | Enum | Anger hur aviseringen ska visas. Möjliga värden är: ```NotAvailable``` , ```Apt``` , ```Malware``` , ```SecurityPersonnel``` , ```SecurityTesting``` , ```UnwantedSoftware``` , ```Other``` .
-taggen | sträng lista | Lista över incident koder.
+status | Uppräkning | Anger aktuell status för aviseringen. Möjliga värden är: ```Active``` ```Resolved``` och ```Redirected``` .
+assignedTo | sträng | Ägaren till incidenten.
+klassificering | Uppräkning | Specifikation för aviseringen. Möjliga värden är: ```Unknown``` , ```FalsePositive``` , ```TruePositive``` .
+determination | Uppräkning | Anger aviseringens avgörande. Möjliga värden är: ```NotAvailable``` , , , , ```Apt``` ```Malware``` ```SecurityPersonnel``` ```SecurityTesting``` ```UnwantedSoftware``` ```Other``` .
+taggar | stränglista | Lista över incidenttaggar.
 
-## <a name="response"></a>Interimssvar
+## <a name="response"></a>Svar
 
-Om det lyckas returneras den här metoden `200 OK` . Svars texten innehåller incident-enheten med uppdaterade egenskaper. Om en incident med angivet ID inte hittas returneras metoden `404 Not Found` .
+Om det lyckas returnerar den här `200 OK` metoden. Svarstexten innehåller incidententitet med uppdaterade egenskaper. Om en incident med det angivna ID:t inte hittas returneras `404 Not Found` metoden.
 
 ## <a name="example"></a>Exempel
 
-**Ställning**
+**Begäran**
 
 Här är ett exempel på begäran.
 
@@ -99,7 +100,7 @@ Här är ett exempel på begäran.
  PATCH https://api.security.microsoft.com/api/incidents/{id}
 ```
 
-**Interimssvar**
+**Svar**
 
 ```json
 {
@@ -113,9 +114,9 @@ Här är ett exempel på begäran.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Gå till API för Microsoft 365 Defender](api-access.md)
-- [Läs mer om API-begränsningar och licensiering](api-terms.md)
+- [Få åtkomst till API:er för Microsoft 365 Defender](api-access.md)
+- [Läs mer om API-begränsningar och -licensiering](api-terms.md)
 - [Förstå felkoder](api-error-codes.md)
 - [API:er för tillbud](api-incident.md)
 - [Lista incidenter](api-list-incidents.md)
-- [Incident översikt](incidents-overview.md)
+- [Översikt över incidenter](incidents-overview.md)

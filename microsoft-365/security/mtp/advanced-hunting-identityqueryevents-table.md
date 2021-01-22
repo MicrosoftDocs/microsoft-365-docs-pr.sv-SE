@@ -1,10 +1,10 @@
 ---
-title: IdentityQueryEvents-tabell i det avancerade jakt-schemat
-description: Lär dig mer om Active Directory-frågegrupper i tabellen IdentityQueryEvents för Advanced jakt-schemat
-keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, kolumn, datatyp, beskrivning, IdentityQueryEvents, Azure AD, Active Directory, Azure ATP, identiteter, LDAP-frågor
+title: Tabellen IdentityQueryEvents i det avancerade sökschemat
+description: Läs mer om Active Directory-frågehändelser i tabellen IdentityQueryEvents i det avancerade sökschemat
+keywords: avancerad sökning, hotsökning, cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, IdentityQueryEvents, Azure AD, Active Directory, Azure ATP, identiteter, LDAP-frågor
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 2b163dc39e56c82ef177b71d197c431c744b12d7
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 7016127a75bca48103f5325ce169faa3d7c31c85
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847410"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929820"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -34,38 +35,38 @@ ms.locfileid: "48847410"
 **Gäller för:**
 - Microsoft 365 Defender
 
-`IdentityQueryEvents`Tabellen i det [avancerade jakt](advanced-hunting-overview.md) -schemat innehåller information om frågor som gjorts mot Active Directory-objekt, till exempel användare, grupper, enheter och domäner. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+Tabellen i det avancerade sökschemat innehåller information om frågor som utförs mot Active Directory-objekt, till exempel `IdentityQueryEvents` användare, grupper, enheter [](advanced-hunting-overview.md) och domäner. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!TIP]
-> Detaljerad information om de händelse typer ( `ActionType` värden) som stöds av en tabell finns i den [inbyggda schema referensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) i säkerhets Center.
+> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` [inbyggda schemareferensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) som finns i säkerhetscentret.
 
-Information om andra tabeller i det avancerade jakt schema [finns i referens för avancerad jakt](advanced-hunting-schema-tables.md).
+Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | Datum och tid när händelsen registrerades |
-| `ActionType` | strängvärdet | Typ av aktivitet som utlöste händelsen. Mer information finns [i referens för in-Portal schema](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
-| `Application` | strängvärdet | Program som utförde den inspelade åtgärden |
-| `QueryType` | strängvärdet | Typ av fråga, till exempel QueryGroup, QueryUser eller EnumerateUsers |
-| `QueryTarget` | strängvärdet | Namn på användare, grupp, enhet, domän eller annan entitetstyp som frågas |
-| `Query` | strängvärdet | Sträng som används för att köra frågan |
-| `Protocol` | strängvärdet | Protokoll som används under kommunikationen |
-| `AccountName` | strängvärdet | Kontots användar namn |
-| `AccountDomain` | strängvärdet | Kontots domän |
-| `AccountUpn` | strängvärdet | Kontots huvud namn (UPN) |
-| `AccountSid` | strängvärdet | Kontots säkerhets identifierare (SID) |
-| `AccountObjectId` | strängvärdet | Unik identifierare för kontot i Azure AD |
-| `AccountDisplayName` | strängvärdet | Namnet på kontot som visas i adress boken. Vanligt vis en kombination av ett visst eller förnamn, en mellan initiering och ett efter namn eller från gång. |
-| `DeviceName` | strängvärdet | Slut punktens fullständiga domän namn (FQDN) |
-| `IPAddress` | strängvärdet | IP-adress tilldelad till slut punkten och används under relaterad nätverkskommunikation |
-| `DestinationDeviceName` | strängvärdet | Namn på den enhet som kör serverprogrammet som bearbetade den inspelade åtgärden |
-| `DestinationIPAddress` | strängvärdet | IP-adress för enheten som kör serverprogrammet som bearbetade den inspelade åtgärden |
-| `TargetDeviceName` | strängvärdet | Det fullständigt kvalificerade domän namnet (FQDN) för enheten som den inspelade åtgärden tillämpades på |
-| `TargetAccountUpn` | strängvärdet | Användarens huvud namn (UPN) för det konto som den inspelade åtgärden tillämpades på |
-| `TargetAccountDisplayName` | strängvärdet | Visnings namn för det konto som den inspelade åtgärden tillämpades på |
-| `Location` | strängvärdet | Ort, land eller annan geografisk plats som är kopplad till evenemanget |
-| `ReportId` | tids | Unik identifierare för händelsen |
-| `AdditionalFields` | strängvärdet | Ytterligare information om enheten eller händelsen |
+| `Timestamp` | datetime | Datum och tid då händelsen spelades in |
+| `ActionType` | sträng | Typ av aktivitet som utlöste händelsen. Mer information [finns i referensen till portalschemat](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
+| `Application` | sträng | Program som utförde den inspelade åtgärden |
+| `QueryType` | sträng | Typ av fråga, till exempel QueryGroup, QueryUser eller EnumerateUsers |
+| `QueryTarget` | sträng | Namn på användare, grupp, enhet, domän eller någon annan entitetstyp som blir tillfrågad |
+| `Query` | sträng | Sträng som används för att köra frågan |
+| `Protocol` | sträng | Protokoll som används under kommunikationen |
+| `AccountName` | sträng | Användarnamn för kontot |
+| `AccountDomain` | sträng | Domänen för kontot |
+| `AccountUpn` | sträng | Kontots huvudnamn (UPN) |
+| `AccountSid` | sträng | Säkerhetsidentifierare (SID) för kontot |
+| `AccountObjectId` | sträng | Unikt ID för kontot i Azure AD |
+| `AccountDisplayName` | sträng | Namnet på kontoanvändaren som visas i adressboken. Vanligtvis en kombination av ett visst namn eller förnamn, en mellaninititiering och ett efternamn eller efternamn. |
+| `DeviceName` | sträng | Fullständigt kvalificerat domännamn (FQDN) för slutpunkten |
+| `IPAddress` | sträng | IP-adress som tilldelats slutpunkten och som används under relaterad nätverkskommunikation |
+| `DestinationDeviceName` | sträng | Namn på den enhet som kör serverprogrammet som hanterade den inspelade åtgärden |
+| `DestinationIPAddress` | sträng | IP-adressen för den enhet som kör serverprogrammet som hanterade den inspelade åtgärden |
+| `TargetDeviceName` | sträng | Fullständigt kvalificerat domännamn (FQDN) för enheten som den inspelade åtgärden tillämpats på |
+| `TargetAccountUpn` | sträng | Användarens huvudnamn (UPN) för kontot som den inspelade åtgärden tillämpats på |
+| `TargetAccountDisplayName` | sträng | Visningsnamn för det konto som den inspelade åtgärden tillämpats på |
+| `Location` | sträng | Stad, land eller annan geografisk plats som är kopplad till händelsen |
+| `ReportId` | long | Unikt ID för händelsen |
+| `AdditionalFields` | sträng | Ytterligare information om entiteten eller händelsen |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

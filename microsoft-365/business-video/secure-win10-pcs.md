@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du konfigurerar principer för Windows 10-skydd med Microsoft 365 Business Premium.
-ms.openlocfilehash: e2ef5c3c3d1dbc07e1c3705389eb757e720c9182
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Lär dig konfigurera principer för Windows 10-skydd med Microsoft 365 Business Premium.
+ms.openlocfilehash: dadb24c5de46ef13ea64c4e164cf6edfd4592b35
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702635"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928012"
 ---
 # <a name="secure-windows-10-pcs"></a>Skydda Windows 10-datorer
 
@@ -34,14 +35,14 @@ ms.locfileid: "49702635"
  
 ## <a name="try-it"></a>Prova!  
 
-När du har konfigurerat enhets skydd i Microsoft 365 Business, följer du de här stegen för att skydda dina Windows 10-datorer.
+När du har angett enhetsskydd i Microsoft 365 Business ska du följa de här anvisningarna för att skydda dina Windows 10-datorer.
 
-1. Välj  **installation** i administrations centret för Microsoft 365.
-2. Under  **skydda Windows-datorerna väljer du**  **Visa**.
-3. Läs informationen på sidan  **säkra dina datorer med Windows 10**  så att du förstår principerna och hur de påverkar dina användare.
-4. Välj  **Kom igång**.
-5. Granska alternativen i fönstret  **Inställningar i Windows 10**  och justera om det behövs. Hovra över tooltip för att få mer information om en policy.
-6. Under  **vilka principer ska policyn gälla?** väljer du om dina val ska användas för alla i organisationen eller i specifika säkerhets grupper.
-7. Välj  **Spara ändringar**.
+1. Välj Installation i administrationscentret för Microsoft 365.
+2. Välj **Visa under Skydda dina Windows-datorer.** 
+3. Läs igenom informationen på sidan  **Skydda dina Windows 10-datorer**  så att du förstår principerna och hur de påverkar användarna.
+4. Välj **Kom igång.**
+5. I fönstret  **för Windows 10-inställningar**  granskar du alternativen och justerar dem om det behövs. Hovra över knappbeskrivningen om du vill veta mer om en princip.
+6. Under  **Vem ska principen gälla för?** väljer du om dina val ska tillämpas för alla i organisationen eller för specifika säkerhetsgrupper.
+7. Välj **Spara ändringar.**
 
-Microsoft 365 Business hjälper nu till att skydda Windows 10-datorer.
+Microsoft 365 Business hjälper nu till att skydda dina Windows 10-datorer.
