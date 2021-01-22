@@ -1,10 +1,10 @@
 ---
-title: AssignedIPAddresses ()-funktion i avancerad jakt för Microsoft 365 Defender
-description: Lär dig hur du använder funktionen AssignedIPAddresses () för att få de senaste IP-adresserna tilldelade till en enhet
-keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, FileProfile, fil profil, funktion och berikning
+title: Funktionen AssignedIPAddresses() i avancerad sökning för Microsoft 365 Defender
+description: Lär dig hur du använder funktionen AssignedIPAddresses() för att få de senaste IP-adresserna tilldelade till en enhet
+keywords: avancerad sökning, hotsökning, cyberhot, skydd mot cyberhot, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, FileProfile, filprofil, funktion, vinst
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,54 +19,55 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: cb9dffca148c95f284a6a7e920f3a08a839b748d
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: d16cd7efc49cc2498eff3f705bb43fa62f37d975
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847650"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49933024"
 ---
-# <a name="assignedipaddresses"></a><span data-ttu-id="0d16e-104">AssignedIPAddresses()</span><span class="sxs-lookup"><span data-stu-id="0d16e-104">AssignedIPAddresses()</span></span>
+# <a name="assignedipaddresses"></a><span data-ttu-id="159cc-104">AssignedIPAddresses()</span><span class="sxs-lookup"><span data-stu-id="159cc-104">AssignedIPAddresses()</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="0d16e-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="0d16e-105">**Applies to:**</span></span>
-- <span data-ttu-id="0d16e-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="0d16e-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="159cc-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="159cc-105">**Applies to:**</span></span>
+- <span data-ttu-id="159cc-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="159cc-106">Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="0d16e-107">Använd `AssignedIPAddresses()` funktionen i de [avancerade jakt](advanced-hunting-overview.md) frågorna för att snabbt få de senaste IP-adresserna som har tilldelats till en enhet.</span><span class="sxs-lookup"><span data-stu-id="0d16e-107">Use the `AssignedIPAddresses()` function in your [advanced hunting](advanced-hunting-overview.md) queries to quickly obtain the latest IP addresses that have been assigned to a device.</span></span> <span data-ttu-id="0d16e-108">Om du anger ett timestamp-argument får den här funktionen de senaste IP-adresserna vid den angivna tiden.</span><span class="sxs-lookup"><span data-stu-id="0d16e-108">If you specify a timestamp argument, this function obtains the most recent IP addresses at the specified time.</span></span> 
+<span data-ttu-id="159cc-107">Använd funktionen `AssignedIPAddresses()` i dina avancerade [sökningsfrågor](advanced-hunting-overview.md) för att snabbt hämta de senaste IP-adresserna som har tilldelats till en enhet.</span><span class="sxs-lookup"><span data-stu-id="159cc-107">Use the `AssignedIPAddresses()` function in your [advanced hunting](advanced-hunting-overview.md) queries to quickly obtain the latest IP addresses that have been assigned to a device.</span></span> <span data-ttu-id="159cc-108">Om du anger ett tidsstämpelargument hämtar den här funktionen de senaste IP-adresserna vid den angivna tiden.</span><span class="sxs-lookup"><span data-stu-id="159cc-108">If you specify a timestamp argument, this function obtains the most recent IP addresses at the specified time.</span></span> 
 
-<span data-ttu-id="0d16e-109">Den här funktionen returnerar en tabell med följande kolumner:</span><span class="sxs-lookup"><span data-stu-id="0d16e-109">This function returns a table with the following columns:</span></span>
+<span data-ttu-id="159cc-109">Den här funktionen returnerar en tabell med följande kolumner:</span><span class="sxs-lookup"><span data-stu-id="159cc-109">This function returns a table with the following columns:</span></span>
 
-| <span data-ttu-id="0d16e-110">Kolumn</span><span class="sxs-lookup"><span data-stu-id="0d16e-110">Column</span></span> | <span data-ttu-id="0d16e-111">Datatyp</span><span class="sxs-lookup"><span data-stu-id="0d16e-111">Data type</span></span> | <span data-ttu-id="0d16e-112">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="0d16e-112">Description</span></span> |
+| <span data-ttu-id="159cc-110">Kolumn</span><span class="sxs-lookup"><span data-stu-id="159cc-110">Column</span></span> | <span data-ttu-id="159cc-111">Datatyp</span><span class="sxs-lookup"><span data-stu-id="159cc-111">Data type</span></span> | <span data-ttu-id="159cc-112">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="159cc-112">Description</span></span> |
 |------------|-------------|-------------|
-| `Timestamp` | <span data-ttu-id="0d16e-113">datetime</span><span class="sxs-lookup"><span data-stu-id="0d16e-113">datetime</span></span> | <span data-ttu-id="0d16e-114">Senaste gången när enheten observerats med hjälp av IP-adressen</span><span class="sxs-lookup"><span data-stu-id="0d16e-114">Latest time when the device was observed using the IP address</span></span> |
-| `IPAddress` | <span data-ttu-id="0d16e-115">strängvärdet</span><span class="sxs-lookup"><span data-stu-id="0d16e-115">string</span></span> | <span data-ttu-id="0d16e-116">IP-adress som används av enheten</span><span class="sxs-lookup"><span data-stu-id="0d16e-116">IP address used by the device</span></span> |
-| `IPType` | <span data-ttu-id="0d16e-117">strängvärdet</span><span class="sxs-lookup"><span data-stu-id="0d16e-117">string</span></span> | <span data-ttu-id="0d16e-118">Anger om IP-adressen är en offentlig eller privat adress</span><span class="sxs-lookup"><span data-stu-id="0d16e-118">Indicates whether the IP address is a public or private address</span></span> |
-| `NetworkAdapterType` | <span data-ttu-id="0d16e-119">signera</span><span class="sxs-lookup"><span data-stu-id="0d16e-119">int</span></span> | <span data-ttu-id="0d16e-120">Nätverkskort typ som används av enheten som tilldelats IP-adressen.</span><span class="sxs-lookup"><span data-stu-id="0d16e-120">Network adapter type used by the device that has been assigned the IP address.</span></span> <span data-ttu-id="0d16e-121">För möjliga värden, se [den här uppräkningen](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype)</span><span class="sxs-lookup"><span data-stu-id="0d16e-121">For the possible values, refer to [this enumeration](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype)</span></span> |
-| `ConnectedNetworks` | <span data-ttu-id="0d16e-122">signera</span><span class="sxs-lookup"><span data-stu-id="0d16e-122">int</span></span> | <span data-ttu-id="0d16e-123">Nätverk som adaptern med den tilldelade IP-adressen är ansluten till.</span><span class="sxs-lookup"><span data-stu-id="0d16e-123">Networks that the adapter with the assigned IP address is connected to.</span></span> <span data-ttu-id="0d16e-124">Varje JSON-matris innehåller nätverks namnet, kategorin (offentlig, privat eller domän), en beskrivning och en flagga som anger om den är ansluten offentligt till Internet</span><span class="sxs-lookup"><span data-stu-id="0d16e-124">Each JSON array contains the network name, category (public, private, or domain), a description, and a flag indicating if it's connected publicly to the internet</span></span> |
+| `Timestamp` | <span data-ttu-id="159cc-113">datetime</span><span class="sxs-lookup"><span data-stu-id="159cc-113">datetime</span></span> | <span data-ttu-id="159cc-114">Senaste gången då enheten observerades med IP-adressen</span><span class="sxs-lookup"><span data-stu-id="159cc-114">Latest time when the device was observed using the IP address</span></span> |
+| `IPAddress` | <span data-ttu-id="159cc-115">sträng</span><span class="sxs-lookup"><span data-stu-id="159cc-115">string</span></span> | <span data-ttu-id="159cc-116">IP-adress som används av enheten</span><span class="sxs-lookup"><span data-stu-id="159cc-116">IP address used by the device</span></span> |
+| `IPType` | <span data-ttu-id="159cc-117">sträng</span><span class="sxs-lookup"><span data-stu-id="159cc-117">string</span></span> | <span data-ttu-id="159cc-118">Anger om IP-adressen är en offentlig eller privat adress</span><span class="sxs-lookup"><span data-stu-id="159cc-118">Indicates whether the IP address is a public or private address</span></span> |
+| `NetworkAdapterType` | <span data-ttu-id="159cc-119">int</span><span class="sxs-lookup"><span data-stu-id="159cc-119">int</span></span> | <span data-ttu-id="159cc-120">Nätverksadaptertyp som används av enheten som har tilldelats IP-adressen.</span><span class="sxs-lookup"><span data-stu-id="159cc-120">Network adapter type used by the device that has been assigned the IP address.</span></span> <span data-ttu-id="159cc-121">Referera till den här uppräkningen [för möjliga värden](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype)</span><span class="sxs-lookup"><span data-stu-id="159cc-121">For the possible values, refer to [this enumeration](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype)</span></span> |
+| `ConnectedNetworks` | <span data-ttu-id="159cc-122">int</span><span class="sxs-lookup"><span data-stu-id="159cc-122">int</span></span> | <span data-ttu-id="159cc-123">Nätverk som adaptern med den tilldelade IP-adressen är ansluten till.</span><span class="sxs-lookup"><span data-stu-id="159cc-123">Networks that the adapter with the assigned IP address is connected to.</span></span> <span data-ttu-id="159cc-124">Varje JSON-matris innehåller nätverksnamn, kategori (offentlig, privat eller domän), en beskrivning och en flagga som anger om den är ansluten offentligt till Internet</span><span class="sxs-lookup"><span data-stu-id="159cc-124">Each JSON array contains the network name, category (public, private, or domain), a description, and a flag indicating if it's connected publicly to the internet</span></span> |
 
-## <a name="syntax"></a><span data-ttu-id="0d16e-125">Frågesyntaxen</span><span class="sxs-lookup"><span data-stu-id="0d16e-125">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="159cc-125">Syntax</span><span class="sxs-lookup"><span data-stu-id="159cc-125">Syntax</span></span>
 
 ```kusto
 AssignedIPAddresses(x, y)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="0d16e-126">Argument</span><span class="sxs-lookup"><span data-stu-id="0d16e-126">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="159cc-126">Argument</span><span class="sxs-lookup"><span data-stu-id="159cc-126">Arguments</span></span>
 
-- <span data-ttu-id="0d16e-127">**x** – `DeviceId` eller `DeviceName` värde som identifierar enheten</span><span class="sxs-lookup"><span data-stu-id="0d16e-127">**x** —`DeviceId` or `DeviceName` value identifying the device</span></span>
-- <span data-ttu-id="0d16e-128">**y** – `Timestamp` (datetime)-värde som anger funktionen för att hämta de senaste tilldelade IP-adresserna från en viss tidpunkt.</span><span class="sxs-lookup"><span data-stu-id="0d16e-128">**y** —`Timestamp` (datetime) value instructing the function to obtain the most recent assigned IP addresses from a specific time.</span></span> <span data-ttu-id="0d16e-129">Om inget anges returnerar funktionen de senaste IP-adresserna.</span><span class="sxs-lookup"><span data-stu-id="0d16e-129">If not specified, the function returns the latest IP addresses.</span></span>
+- <span data-ttu-id="159cc-127">**x**– `DeviceId` eller värde som identifierar `DeviceName` enheten</span><span class="sxs-lookup"><span data-stu-id="159cc-127">**x**—`DeviceId` or `DeviceName` value identifying the device</span></span>
+- <span data-ttu-id="159cc-128">**y**– (datetime) som instruerar funktionen att hämta de senaste tilldelade `Timestamp` IP-adresserna från en viss tid.</span><span class="sxs-lookup"><span data-stu-id="159cc-128">**y**—`Timestamp` (datetime) value instructing the function to obtain the most recent assigned IP addresses from a specific time.</span></span> <span data-ttu-id="159cc-129">Om den inte anges returnerar funktionen de senaste IP-adresserna.</span><span class="sxs-lookup"><span data-stu-id="159cc-129">If not specified, the function returns the latest IP addresses.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="0d16e-130">Exempel</span><span class="sxs-lookup"><span data-stu-id="0d16e-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="159cc-130">Exempel</span><span class="sxs-lookup"><span data-stu-id="159cc-130">Examples</span></span>
 
-### <a name="get-the-list-of-ip-addresses-used-by-a-device-24-hours-ago"></a><span data-ttu-id="0d16e-131">Hämta listan med IP-adresser som används av en enhet för mer än 24 timmar sedan</span><span class="sxs-lookup"><span data-stu-id="0d16e-131">Get the list of IP addresses used by a device 24 hours ago</span></span>
+### <a name="get-the-list-of-ip-addresses-used-by-a-device-24-hours-ago"></a><span data-ttu-id="159cc-131">Hämta listan med IP-adresser som användes av en enhet för 24 timmar sedan</span><span class="sxs-lookup"><span data-stu-id="159cc-131">Get the list of IP addresses used by a device 24 hours ago</span></span>
 
 ```kusto
 AssignedIPAddresses('example-device-name', ago(1d))
 ```
 
-### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a><span data-ttu-id="0d16e-132">Hämta IP-adresser som används av en enhet och hitta enheter som kommunicerar med den</span><span class="sxs-lookup"><span data-stu-id="0d16e-132">Get IP addresses used by a device and find devices communicating with it</span></span>
-<span data-ttu-id="0d16e-133">Den här frågan använder `AssignedIPAddresses()` funktionen för att få tilldelade IP-adresser för enheten ( `example-device-name` ) på eller före ett visst datum ( `example-date` ).</span><span class="sxs-lookup"><span data-stu-id="0d16e-133">This query uses the `AssignedIPAddresses()` function to get assigned IP addresses for the device (`example-device-name`) on or before a specific date (`example-date`).</span></span> <span data-ttu-id="0d16e-134">Därefter används IP-adresserna för att hitta anslutningar till enheten som initieras av andra enheter.</span><span class="sxs-lookup"><span data-stu-id="0d16e-134">It then uses the IP addresses to find connections to the device initiated by other devices.</span></span> 
+### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a><span data-ttu-id="159cc-132">Få IP-adresser som används av en enhet och hitta enheter som kommunicerar med den</span><span class="sxs-lookup"><span data-stu-id="159cc-132">Get IP addresses used by a device and find devices communicating with it</span></span>
+<span data-ttu-id="159cc-133">Den här frågan använder `AssignedIPAddresses()` funktionen för att få tilldelade IP-adresser för enheten `example-device-name` () på eller före ett visst datum `example-date` ().</span><span class="sxs-lookup"><span data-stu-id="159cc-133">This query uses the `AssignedIPAddresses()` function to get assigned IP addresses for the device (`example-device-name`) on or before a specific date (`example-date`).</span></span> <span data-ttu-id="159cc-134">Därefter används IP-adresserna för att hitta anslutningar till enheten initierad av andra enheter.</span><span class="sxs-lookup"><span data-stu-id="159cc-134">It then uses the IP addresses to find connections to the device initiated by other devices.</span></span> 
 
 ```kusto
 let Date = datetime(example-date);
@@ -80,7 +81,7 @@ AssignedIPAddresses(DeviceName, Date)
 | where Timestamp between ((AssignedTime - 1h) .. (AssignedTime + 1h))
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="0d16e-135">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="0d16e-135">Related topics</span></span>
-- [<span data-ttu-id="0d16e-136">Översikt över avancerad jakt</span><span class="sxs-lookup"><span data-stu-id="0d16e-136">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="0d16e-137">Lär dig frågespråket</span><span class="sxs-lookup"><span data-stu-id="0d16e-137">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="0d16e-138">Förstå schemat</span><span class="sxs-lookup"><span data-stu-id="0d16e-138">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+## <a name="related-topics"></a><span data-ttu-id="159cc-135">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="159cc-135">Related topics</span></span>
+- [<span data-ttu-id="159cc-136">Översikt över avancerad jakt</span><span class="sxs-lookup"><span data-stu-id="159cc-136">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="159cc-137">Lär dig frågespråket</span><span class="sxs-lookup"><span data-stu-id="159cc-137">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="159cc-138">Förstå schemat</span><span class="sxs-lookup"><span data-stu-id="159cc-138">Understand the schema</span></span>](advanced-hunting-schema-tables.md)

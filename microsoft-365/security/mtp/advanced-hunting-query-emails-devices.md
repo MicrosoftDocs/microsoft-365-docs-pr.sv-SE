@@ -1,10 +1,10 @@
 ---
-title: Jakt efter hot på enheter, e-postmeddelanden, appar och identiteter med avancerad jakt
-description: Studera vanliga jakt scenarier och exempel frågor som täcker enheter, e-postmeddelanden, appar och identiteter.
-keywords: Avancerad jakt, Office365 data, Windows-enheter, Office365 e-post normalisera, e-post, appar, identiteter, Hot jakt, cyberterrorism hot jakt, sökning, fråga, telemetri, Microsoft 365, Microsoft Threat Protection
+title: Sök efter hot på olika enheter, e-postmeddelanden, appar och identiteter med avancerad sökning
+description: Studera vanliga sökscenarier och exempelfrågor som täcker enheter, e-postmeddelanden, appar och identiteter.
+keywords: avancerad sökning, Office365-data, Windows-enheter, Office365-e-postmeddelanden normalisera, e-postmeddelanden, appar, identiteter, sökning efter hot, sökning, fråga, telemetri, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,43 +19,44 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 97640c318908b87c211caed780624080508a255f
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: b408f574ab4b89806be9154394f49c00a7fd1e99
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847350"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932256"
 ---
-# <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a><span data-ttu-id="8bbc9-104">Jakt efter hot på enheter, e-postmeddelanden, appar och identiteter</span><span class="sxs-lookup"><span data-stu-id="8bbc9-104">Hunt for threats across devices, emails, apps, and identities</span></span>
+# <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a><span data-ttu-id="750ca-104">Leta efter hot på olika enheter, e-postmeddelanden, appar och identiteter</span><span class="sxs-lookup"><span data-stu-id="750ca-104">Hunt for threats across devices, emails, apps, and identities</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="8bbc9-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="8bbc9-105">**Applies to:**</span></span>
-- <span data-ttu-id="8bbc9-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="8bbc9-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="750ca-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="750ca-105">**Applies to:**</span></span>
+- <span data-ttu-id="750ca-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="750ca-106">Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="8bbc9-107">Med [Avancerad jakt](advanced-hunting-overview.md) i Microsoft 365 Defender kan du proaktivt efter problem i världen:</span><span class="sxs-lookup"><span data-stu-id="8bbc9-107">[Advanced hunting](advanced-hunting-overview.md) in Microsoft 365 Defender allows you to proactively hunt for threats across:</span></span>
-- <span data-ttu-id="8bbc9-108">Enheter som hanteras av Microsoft Defender för slut punkten</span><span class="sxs-lookup"><span data-stu-id="8bbc9-108">Devices managed by Microsoft Defender for Endpoint</span></span>
-- <span data-ttu-id="8bbc9-109">E-postmeddelanden som bearbetas av Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="8bbc9-109">Emails processed by Microsoft 365</span></span>
-- <span data-ttu-id="8bbc9-110">Molnprogram aktiviteter, autentiseringsnivåer och aktiviteter för domän kontrol Lanterna spåras av Microsoft Cloud App Security och Microsoft Defender för identitet</span><span class="sxs-lookup"><span data-stu-id="8bbc9-110">Cloud app activities, authentication events, and domain controller activities tracked by Microsoft Cloud App Security and Microsoft Defender for Identity</span></span>
+<span data-ttu-id="750ca-107">[Med avancerad](advanced-hunting-overview.md) sökning i Microsoft 365 Defender kan du proaktivt leta efter hot i:</span><span class="sxs-lookup"><span data-stu-id="750ca-107">[Advanced hunting](advanced-hunting-overview.md) in Microsoft 365 Defender allows you to proactively hunt for threats across:</span></span>
+- <span data-ttu-id="750ca-108">Enheter som hanteras av Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="750ca-108">Devices managed by Microsoft Defender for Endpoint</span></span>
+- <span data-ttu-id="750ca-109">E-postmeddelanden som bearbetas av Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="750ca-109">Emails processed by Microsoft 365</span></span>
+- <span data-ttu-id="750ca-110">Aktiviteter i molnappen, autentiseringshändelser och domänkontrollantaktiviteter som spåras av Microsoft Cloud App Security och Microsoft Defender för identitet</span><span class="sxs-lookup"><span data-stu-id="750ca-110">Cloud app activities, authentication events, and domain controller activities tracked by Microsoft Cloud App Security and Microsoft Defender for Identity</span></span>
 
-<span data-ttu-id="8bbc9-111">Med den här synbarheten kan du snabbt hitta hot som rör fram delar av nätverket, inklusive sofistikerade intrång som kommer via e-post eller webben, öka behörigheterna, skaffa privilegierade domänautentiseringsuppgifter och flytta dem senare till alla dina enheter.</span><span class="sxs-lookup"><span data-stu-id="8bbc9-111">With this level of visibility, you can quickly hunt for threats that traverse sections of your network, including sophisticated intrusions that arrive on email or the web, elevate local privileges, acquire privileged domain credentials, and move laterally to across your devices.</span></span> 
+<span data-ttu-id="750ca-111">Med den här synlighetsnivån kan du snabbt leta efter hot som passerar genom delar av nätverket, inklusive avancerade intrång som anländer på e-post eller webben, förhöjda lokala behörigheter, skaffa behörighet för domäner och flytta dem till andra enheter.</span><span class="sxs-lookup"><span data-stu-id="750ca-111">With this level of visibility, you can quickly hunt for threats that traverse sections of your network, including sophisticated intrusions that arrive on email or the web, elevate local privileges, acquire privileged domain credentials, and move laterally to across your devices.</span></span> 
 
-<span data-ttu-id="8bbc9-112">Här är allmänna tekniker och urvals frågor baserat på olika jakt scenarier som hjälper dig att upptäcka hur du kan skapa frågor när jakt efter sådana avancerade hot.</span><span class="sxs-lookup"><span data-stu-id="8bbc9-112">Here are general techniques and sample queries based on various hunting scenarios that can help you explore how you might construct queries when hunting for such sophisticated threats.</span></span>
+<span data-ttu-id="750ca-112">Här är allmänna tekniker och exempelfrågor som baseras på olika sökscenarier som kan hjälpa dig att utforska hur du kan skapa frågor när du letar efter så avancerade hot.</span><span class="sxs-lookup"><span data-stu-id="750ca-112">Here are general techniques and sample queries based on various hunting scenarios that can help you explore how you might construct queries when hunting for such sophisticated threats.</span></span>
 
-## <a name="get-entity-info"></a><span data-ttu-id="8bbc9-113">Hämta entitetsinformation</span><span class="sxs-lookup"><span data-stu-id="8bbc9-113">Get entity info</span></span>
-<span data-ttu-id="8bbc9-114">Använd de här frågorna för att få reda på hur du snabbt får information om användar konton, enheter och filer.</span><span class="sxs-lookup"><span data-stu-id="8bbc9-114">Use these queries to learn how you can quickly get information about user accounts, devices, and files.</span></span> 
+## <a name="get-entity-info"></a><span data-ttu-id="750ca-113">Hämta entitetsinformation</span><span class="sxs-lookup"><span data-stu-id="750ca-113">Get entity info</span></span>
+<span data-ttu-id="750ca-114">Använd dessa frågor för att lära dig hur du snabbt kan få information om användarkonton, enheter och filer.</span><span class="sxs-lookup"><span data-stu-id="750ca-114">Use these queries to learn how you can quickly get information about user accounts, devices, and files.</span></span> 
 
-### <a name="obtain-user-accounts-from-email-addresses"></a><span data-ttu-id="8bbc9-115">Skaffa användar konton från e-postadresser</span><span class="sxs-lookup"><span data-stu-id="8bbc9-115">Obtain user accounts from email addresses</span></span>
-<span data-ttu-id="8bbc9-116">När du skapar frågor över [tabeller som täcker enheter och e-post](advanced-hunting-schema-tables.md)måste du antagligen skaffa användar konto namn från avsändare eller mottagares e-postadresser.</span><span class="sxs-lookup"><span data-stu-id="8bbc9-116">When constructing queries across [tables that cover devices and emails](advanced-hunting-schema-tables.md), you will likely need to obtain user account names from sender or recipient email addresses.</span></span> <span data-ttu-id="8bbc9-117">Du kan vanligt vis göra detta för antingen mottagare eller avsändar adress via den *lokala värden* från e-postadressen.</span><span class="sxs-lookup"><span data-stu-id="8bbc9-117">You can generally do this for either recipient or sender address using the *local-host* from the email address.</span></span>
+### <a name="obtain-user-accounts-from-email-addresses"></a><span data-ttu-id="750ca-115">Hämta användarkonton från e-postadresser</span><span class="sxs-lookup"><span data-stu-id="750ca-115">Obtain user accounts from email addresses</span></span>
+<span data-ttu-id="750ca-116">När du skapar frågor i tabeller [som](advanced-hunting-schema-tables.md)täcker enheter och e-postmeddelanden måste du förmodligen hämta användarnamn från avsändares eller mottagares e-postadresser.</span><span class="sxs-lookup"><span data-stu-id="750ca-116">When constructing queries across [tables that cover devices and emails](advanced-hunting-schema-tables.md), you will likely need to obtain user account names from sender or recipient email addresses.</span></span> <span data-ttu-id="750ca-117">I allmänhet kan du göra detta för antingen mottagare eller avsändaradress med *den lokala värden* från e-postadressen.</span><span class="sxs-lookup"><span data-stu-id="750ca-117">You can generally do this for either recipient or sender address using the *local-host* from the email address.</span></span>
 
-<span data-ttu-id="8bbc9-118">I det här avsnittet nedan använder vi funktionen [toString ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto för att extrahera den lokala värd rättigheten före `@` från mottagarens e-postadresser i kolumnen `RecipientEmailAddress` .</span><span class="sxs-lookup"><span data-stu-id="8bbc9-118">In the snippet below, we use the [tostring()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto function to extract the local-host right before the `@` from recipient email addresses in the column `RecipientEmailAddress`.</span></span>
+<span data-ttu-id="750ca-118">I avsnittet nedan använder vi funktionen [tostring()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto för att extrahera den lokala värden direkt före från mottagarens `@` e-postadresser i `RecipientEmailAddress` kolumnen.</span><span class="sxs-lookup"><span data-stu-id="750ca-118">In the snippet below, we use the [tostring()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto function to extract the local-host right before the `@` from recipient email addresses in the column `RecipientEmailAddress`.</span></span>
 
 ```kusto
 //Query snippet showing how to extract the account name from an email address
 AccountName = tostring(split(RecipientEmailAddress, "@")[0])
 ```
-<span data-ttu-id="8bbc9-119">I frågan nedan visas hur det här avsnittet kan användas:</span><span class="sxs-lookup"><span data-stu-id="8bbc9-119">The query below shows how this snippet can be used:</span></span>
+<span data-ttu-id="750ca-119">Frågan nedan visar hur det här avsnittet kan användas:</span><span class="sxs-lookup"><span data-stu-id="750ca-119">The query below shows how this snippet can be used:</span></span>
 
 ```kusto
 EmailEvents
@@ -63,9 +64,9 @@ EmailEvents
 | project RecipientEmailAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
 ```
 
-### <a name="merge-the-identityinfo-table"></a><span data-ttu-id="8bbc9-120">Slå samman tabellen IdentityInfo</span><span class="sxs-lookup"><span data-stu-id="8bbc9-120">Merge the IdentityInfo table</span></span>
+### <a name="merge-the-identityinfo-table"></a><span data-ttu-id="750ca-120">Slå samman tabellen IdentityInfo</span><span class="sxs-lookup"><span data-stu-id="750ca-120">Merge the IdentityInfo table</span></span>
 
-<span data-ttu-id="8bbc9-121">Du kan skaffa konto namn och annan konto information genom att sammanfoga eller gå med i [IdentityInfo-tabellen](advanced-hunting-identityinfo-table.md).</span><span class="sxs-lookup"><span data-stu-id="8bbc9-121">You can get account names and other account information by merging or joining the [IdentityInfo table](advanced-hunting-identityinfo-table.md).</span></span> <span data-ttu-id="8bbc9-122">Frågan nedan erhåller listan över nät fiske och skadlig program vara som identifieras från [tabellen EmailEvents](advanced-hunting-emailevents-table.md) och sedan kopplas till den informationen med `IdentityInfo` tabellen för att få detaljerad information om varje mottagare.</span><span class="sxs-lookup"><span data-stu-id="8bbc9-122">The query below obtains the list of phishing and malware detections from the [EmailEvents table](advanced-hunting-emailevents-table.md) and then joins that information with the `IdentityInfo` table to get detailed information about each recipient.</span></span> 
+<span data-ttu-id="750ca-121">Du kan få kontonamn och annan kontoinformation genom att slå ihop eller koppla [tabellen IdentityInfo.](advanced-hunting-identityinfo-table.md)</span><span class="sxs-lookup"><span data-stu-id="750ca-121">You can get account names and other account information by merging or joining the [IdentityInfo table](advanced-hunting-identityinfo-table.md).</span></span> <span data-ttu-id="750ca-122">Frågan nedan hämtar listan över identifieringar av nätfiske och skadlig programvara från tabellen [EmailEvents](advanced-hunting-emailevents-table.md) och ansluter sedan informationen till tabellen för att få detaljerad `IdentityInfo` information om varje mottagare.</span><span class="sxs-lookup"><span data-stu-id="750ca-122">The query below obtains the list of phishing and malware detections from the [EmailEvents table](advanced-hunting-emailevents-table.md) and then joins that information with the `IdentityInfo` table to get detailed information about each recipient.</span></span> 
 
 ```kusto
 EmailEvents
@@ -81,11 +82,11 @@ SenderFromAddress, RecipientEmailAddress, AccountDisplayName, JobTitle,
 Department, City, Country
 ```
 
-### <a name="get-device-information"></a><span data-ttu-id="8bbc9-123">Hämta enhets information</span><span class="sxs-lookup"><span data-stu-id="8bbc9-123">Get device information</span></span>
-<span data-ttu-id="8bbc9-124">Det [avancerade jakt schemat](advanced-hunting-schema-tables.md) ger omfattande enhets information i olika tabeller.</span><span class="sxs-lookup"><span data-stu-id="8bbc9-124">The [advanced hunting schema](advanced-hunting-schema-tables.md) provides extensive device information in various tables.</span></span> <span data-ttu-id="8bbc9-125">[Tabellen deviceinfo](advanced-hunting-deviceinfo-table.md) innehåller till exempel omfattande enhets information baserat på händelse data som sammanlagts regelbundet.</span><span class="sxs-lookup"><span data-stu-id="8bbc9-125">For example, the [DeviceInfo table](advanced-hunting-deviceinfo-table.md) provides comprehensive device information based on event data aggregated regularly.</span></span> <span data-ttu-id="8bbc9-126">Den här frågan använder `DeviceInfo` tabellen för att kontrol lera om en potentiellt utsatt användare ( `<account-name>` ) har loggat in på några enheter och sedan en lista över de aviseringar som har Aktiver ATS på dessa enheter.</span><span class="sxs-lookup"><span data-stu-id="8bbc9-126">This query uses the `DeviceInfo` table to check if a potentially compromised user (`<account-name>`) has logged on to any devices and then lists the alerts that have been triggered on those devices.</span></span>
+### <a name="get-device-information"></a><span data-ttu-id="750ca-123">Hämta enhetsinformation</span><span class="sxs-lookup"><span data-stu-id="750ca-123">Get device information</span></span>
+<span data-ttu-id="750ca-124">Det [avancerade sökschemat](advanced-hunting-schema-tables.md) innehåller omfattande enhetsinformation i olika tabeller.</span><span class="sxs-lookup"><span data-stu-id="750ca-124">The [advanced hunting schema](advanced-hunting-schema-tables.md) provides extensive device information in various tables.</span></span> <span data-ttu-id="750ca-125">Till exempel innehåller [tabellen DeviceInfo omfattande](advanced-hunting-deviceinfo-table.md) enhetsinformation baserat på händelsedata som aggregeras regelbundet.</span><span class="sxs-lookup"><span data-stu-id="750ca-125">For example, the [DeviceInfo table](advanced-hunting-deviceinfo-table.md) provides comprehensive device information based on event data aggregated regularly.</span></span> <span data-ttu-id="750ca-126">Den här frågan använder tabellen för att kontrollera om en potentiellt komprometterad användare () har loggat in på någon enhet och visar sedan aviseringarna som har utlösts på `DeviceInfo` `<account-name>` dessa enheter.</span><span class="sxs-lookup"><span data-stu-id="750ca-126">This query uses the `DeviceInfo` table to check if a potentially compromised user (`<account-name>`) has logged on to any devices and then lists the alerts that have been triggered on those devices.</span></span>
 
 >[!Tip]
-> <span data-ttu-id="8bbc9-127">Den här frågan används `kind=inner` för att ange en [inre koppling](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), som förhindrar avduplicering av vänster sid värden för `DeviceId` .</span><span class="sxs-lookup"><span data-stu-id="8bbc9-127">This query uses `kind=inner` to specify an [inner-join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), which prevents deduplication of left side values for `DeviceId`.</span></span>
+> <span data-ttu-id="750ca-127">Den här frågan `kind=inner` används för att ange en inre [koppling,](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)vilket förhindrar avduplicering av värden på vänster sida `DeviceId` för.</span><span class="sxs-lookup"><span data-stu-id="750ca-127">This query uses `kind=inner` to specify an [inner-join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), which prevents deduplication of left side values for `DeviceId`.</span></span>
 
 ```kusto
 DeviceInfo
@@ -100,10 +101,10 @@ DeviceInfo
 | project AlertId, Timestamp, Title, Severity, Category 
 ```
 
-## <a name="hunting-scenarios"></a><span data-ttu-id="8bbc9-128">Jakt scenarier</span><span class="sxs-lookup"><span data-stu-id="8bbc9-128">Hunting scenarios</span></span>
+## <a name="hunting-scenarios"></a><span data-ttu-id="750ca-128">Scenarier med visning</span><span class="sxs-lookup"><span data-stu-id="750ca-128">Hunting scenarios</span></span>
 
-### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a><span data-ttu-id="8bbc9-129">Visa inloggnings aktiviteter för användare som fått e-post som inte zapped</span><span class="sxs-lookup"><span data-stu-id="8bbc9-129">List logon activities of users that received emails that were not zapped successfully</span></span>
-<span data-ttu-id="8bbc9-130">[Automatisk rensning för en tom timme (Zap)](../office-365-security/zero-hour-auto-purge.md) tar emot skadlig e-post efter att de har mottagits.</span><span class="sxs-lookup"><span data-stu-id="8bbc9-130">[Zero-hour auto purge (ZAP)](../office-365-security/zero-hour-auto-purge.md) addresses malicious emails after they have been received.</span></span> <span data-ttu-id="8bbc9-131">Om det inte fungerar kan det hända att skadlig kod kanske körs på enheten och lämnar konton.</span><span class="sxs-lookup"><span data-stu-id="8bbc9-131">If ZAP fails, malicious code might eventually run on the device and leave accounts compromised.</span></span> <span data-ttu-id="8bbc9-132">Den här frågan söker efter inloggnings aktiviteter som görs av mottagarna av e-postmeddelanden som inte kunde besvaras med ZAP.</span><span class="sxs-lookup"><span data-stu-id="8bbc9-132">This query checks for logon activity made by the recipients of emails that were not successfully addressed by ZAP.</span></span>
+### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a><span data-ttu-id="750ca-129">Lista inloggningsaktiviteter för användare som har fått e-postmeddelanden som inte har zappeds</span><span class="sxs-lookup"><span data-stu-id="750ca-129">List logon activities of users that received emails that were not zapped successfully</span></span>
+<span data-ttu-id="750ca-130">[ZAP (Zero-hour auto purge)](../office-365-security/zero-hour-auto-purge.md) adresserar skadliga e-postmeddelanden när de har tagits emot.</span><span class="sxs-lookup"><span data-stu-id="750ca-130">[Zero-hour auto purge (ZAP)](../office-365-security/zero-hour-auto-purge.md) addresses malicious emails after they have been received.</span></span> <span data-ttu-id="750ca-131">Om ZAP misslyckas kan skadlig kod så småningom köras på enheten och konton kan bli komprometterade.</span><span class="sxs-lookup"><span data-stu-id="750ca-131">If ZAP fails, malicious code might eventually run on the device and leave accounts compromised.</span></span> <span data-ttu-id="750ca-132">Den här frågan söker efter inloggningsaktivitet som gjorts av mottagarna av e-postmeddelanden som inte har åtgärdats av ZAP.</span><span class="sxs-lookup"><span data-stu-id="750ca-132">This query checks for logon activity made by the recipients of emails that were not successfully addressed by ZAP.</span></span>
 
 ```kusto
 EmailPostDeliveryEvents 
@@ -119,8 +120,8 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a><span data-ttu-id="8bbc9-133">Få inloggnings försök från domän konton riktade till stöld av autentiseringsuppgiften</span><span class="sxs-lookup"><span data-stu-id="8bbc9-133">Get logon attempts by domain accounts targeted by credential theft</span></span>
-<span data-ttu-id="8bbc9-134">Denna fråga identifierar först alla notifieringar om autentiseringsuppgifter i `AlertInfo` tabellen.</span><span class="sxs-lookup"><span data-stu-id="8bbc9-134">This query first identifies all credential access alerts in the `AlertInfo` table.</span></span> <span data-ttu-id="8bbc9-135">Då sammanfogas eller kopplas `AlertEvidence` tabellen, vilket bara kan tolka namn på riktade konton och filter för domänbaserade konton.</span><span class="sxs-lookup"><span data-stu-id="8bbc9-135">It then merges or joins the `AlertEvidence` table, which it parses for the names of the targeted accounts and filters for domain-joined accounts only.</span></span> <span data-ttu-id="8bbc9-136">Slutligen kontrollerar den `IdentityLogonEvents` tabellen för att få alla inloggnings aktiviteter av domänbaserade riktade konton.</span><span class="sxs-lookup"><span data-stu-id="8bbc9-136">Finally, it checks the `IdentityLogonEvents` table to get all logon activities by the domain-joined targeted accounts.</span></span>
+### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a><span data-ttu-id="750ca-133">Få inloggningsförsök för domänkonton som riktas av autentiseringsstöld</span><span class="sxs-lookup"><span data-stu-id="750ca-133">Get logon attempts by domain accounts targeted by credential theft</span></span>
+<span data-ttu-id="750ca-134">Den här frågan identifierar först alla aviseringar om autentiseringsuppgifter i `AlertInfo` tabellen.</span><span class="sxs-lookup"><span data-stu-id="750ca-134">This query first identifies all credential access alerts in the `AlertInfo` table.</span></span> <span data-ttu-id="750ca-135">Därefter slås tabellen ihop eller kopplas, som den parsar för namnen på de riktade kontona och filtren för endast `AlertEvidence` domänkopplingade konton.</span><span class="sxs-lookup"><span data-stu-id="750ca-135">It then merges or joins the `AlertEvidence` table, which it parses for the names of the targeted accounts and filters for domain-joined accounts only.</span></span> <span data-ttu-id="750ca-136">Slutligen kontrolleras tabellen för `IdentityLogonEvents` att få alla inloggningsaktiviteter för de domän sammanfogade riktade kontona.</span><span class="sxs-lookup"><span data-stu-id="750ca-136">Finally, it checks the `IdentityLogonEvents` table to get all logon activities by the domain-joined targeted accounts.</span></span>
 
 ```kusto
 AlertInfo
@@ -139,8 +140,8 @@ AlertInfo
 | project AccountDisplayName, TargetAccountSid, Application, Protocol, DeviceName, LogonType
 ```
 
-### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a><span data-ttu-id="8bbc9-137">Kontrol lera om filer från en känd angripare finns på dina enheter</span><span class="sxs-lookup"><span data-stu-id="8bbc9-137">Check if files from a known malicious sender are on your devices</span></span>
-<span data-ttu-id="8bbc9-138">Förutsatt att du känner till en e-postadress för att skicka skadliga filer ( `MaliciousSender@example.com` ) kan du köra den här frågan för att ta reda på om filer från den här avsändaren finns på din enhet.</span><span class="sxs-lookup"><span data-stu-id="8bbc9-138">Assuming you know of an email address sending malicious files (`MaliciousSender@example.com`), you can run this query to determine if files from this sender exist on your devices.</span></span> <span data-ttu-id="8bbc9-139">Du kan använda den här frågan, till exempel för att identifiera enheter som påverkas av en distributions kampanj med skadlig kod.</span><span class="sxs-lookup"><span data-stu-id="8bbc9-139">You can use this query, for example, to identify devices affected by a malware distribution campaign.</span></span>
+### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a><span data-ttu-id="750ca-137">Kontrollera om filer från en känd skadlig avsändare finns på dina enheter</span><span class="sxs-lookup"><span data-stu-id="750ca-137">Check if files from a known malicious sender are on your devices</span></span>
+<span data-ttu-id="750ca-138">Om du känner till en e-postadress som skickar skadliga filer (), kan du köra den här frågan för att avgöra om filer från den här `MaliciousSender@example.com` avsändaren finns på dina enheter.</span><span class="sxs-lookup"><span data-stu-id="750ca-138">Assuming you know of an email address sending malicious files (`MaliciousSender@example.com`), you can run this query to determine if files from this sender exist on your devices.</span></span> <span data-ttu-id="750ca-139">Du kan till exempel använda den här frågan för att identifiera enheter som påverkas av en distribution till skadlig programvara.</span><span class="sxs-lookup"><span data-stu-id="750ca-139">You can use this query, for example, to identify devices affected by a malware distribution campaign.</span></span>
 
 ```kusto
 EmailAttachmentInfo
@@ -155,8 +156,8 @@ DeviceFileEvents
 | project Timestamp, FileName , SHA256, DeviceName, DeviceId,  NetworkMessageId, SenderFromAddress, RecipientEmailAddress
 ```
 
-### <a name="review-logon-attempts-after-receipt-of-malicious-emails"></a><span data-ttu-id="8bbc9-140">Granska inloggnings försök efter mottagning av illasinnade e-postmeddelanden</span><span class="sxs-lookup"><span data-stu-id="8bbc9-140">Review logon attempts after receipt of malicious emails</span></span>
-<span data-ttu-id="8bbc9-141">Den här frågan hittar de tio senaste inloggningarna som utförs av e-postmottagarna inom 30 minuter efter att de fått kända skadliga meddelanden.</span><span class="sxs-lookup"><span data-stu-id="8bbc9-141">This query finds the 10 latest logons performed by email recipients within 30 minutes after they received known malicious emails.</span></span> <span data-ttu-id="8bbc9-142">Du kan använda den här frågan för att kontrol lera om kontona i e-postmottagaren har komprometterats.</span><span class="sxs-lookup"><span data-stu-id="8bbc9-142">You can use this query to check whether the accounts of the email recipients have been compromised.</span></span>
+### <a name="review-logon-attempts-after-receipt-of-malicious-emails"></a><span data-ttu-id="750ca-140">Granska inloggningsförsök efter kvitto på skadlig e-post</span><span class="sxs-lookup"><span data-stu-id="750ca-140">Review logon attempts after receipt of malicious emails</span></span>
+<span data-ttu-id="750ca-141">Den här frågan hittar de 10 senaste inloggningarna som utförts av e-postmottagare inom 30 minuter efter att de fått kända skadliga e-postmeddelanden.</span><span class="sxs-lookup"><span data-stu-id="750ca-141">This query finds the 10 latest logons performed by email recipients within 30 minutes after they received known malicious emails.</span></span> <span data-ttu-id="750ca-142">Du kan använda den här frågan för att kontrollera om kontona för e-postmottagarna har komprometterats.</span><span class="sxs-lookup"><span data-stu-id="750ca-142">You can use this query to check whether the accounts of the email recipients have been compromised.</span></span>
 
 ```kusto
 //Define new table for malicious emails
@@ -175,8 +176,8 @@ IdentityLogonEvents
 | take 10
 ```
 
-### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a><span data-ttu-id="8bbc9-143">Granska PowerShell-aktiviteter efter mottagning av e-postmeddelanden från känd skadlig avsändare</span><span class="sxs-lookup"><span data-stu-id="8bbc9-143">Review PowerShell activities after receipt of emails from known malicious sender</span></span>
-<span data-ttu-id="8bbc9-144">Illvilliga e-postmeddelanden innehåller ofta dokument och andra särskilt utformade bilagor som kör PowerShell-kommandon för att leverera extra nytto laster.</span><span class="sxs-lookup"><span data-stu-id="8bbc9-144">Malicious emails often contain documents and other specially crafted attachments that run PowerShell commands to deliver additional payloads.</span></span> <span data-ttu-id="8bbc9-145">Om du känner till e-postmeddelanden som kommer från en känd angripare ( `MaliciousSender@example.com` ) kan du använda den här frågan för att visa och granska PowerShell-aktiviteter som skedde inom 30 minuter efter att ett e-postmeddelande togs emot från avsändaren.</span><span class="sxs-lookup"><span data-stu-id="8bbc9-145">If you are aware of emails coming from a known malicious sender (`MaliciousSender@example.com`), you can use this query to list and review PowerShell activities that occurred within 30 minutes after an email was received from the sender.</span></span>  
+### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a><span data-ttu-id="750ca-143">Granska PowerShell-aktiviteter efter e-postmeddelanden från känd avsändare</span><span class="sxs-lookup"><span data-stu-id="750ca-143">Review PowerShell activities after receipt of emails from known malicious sender</span></span>
+<span data-ttu-id="750ca-144">Skadliga e-postmeddelanden innehåller ofta dokument och andra särskilt utformade bifogade filer som kör PowerShell-kommandon för att leverera ytterligare nyttolaster.</span><span class="sxs-lookup"><span data-stu-id="750ca-144">Malicious emails often contain documents and other specially crafted attachments that run PowerShell commands to deliver additional payloads.</span></span> <span data-ttu-id="750ca-145">Om du är medveten om att e-postmeddelanden kommer från en känd avsändare ( ) kan du använda den här frågan för att lista och granska PowerShell-aktiviteter som inträffat inom 30 minuter efter att ett e-postmeddelande togs emot från `MaliciousSender@example.com` avsändaren.</span><span class="sxs-lookup"><span data-stu-id="750ca-145">If you are aware of emails coming from a known malicious sender (`MaliciousSender@example.com`), you can use this query to list and review PowerShell activities that occurred within 30 minutes after an email was received from the sender.</span></span>  
 
 ```kusto
 //Define new table for emails from specific sender
@@ -197,10 +198,10 @@ DeviceProcessEvents
 | where (TimeProc - TimeEmail) between (0min.. 30min)
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="8bbc9-146">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="8bbc9-146">Related topics</span></span>
-- [<span data-ttu-id="8bbc9-147">Översikt över avancerad jakt</span><span class="sxs-lookup"><span data-stu-id="8bbc9-147">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="8bbc9-148">Lär dig frågespråket</span><span class="sxs-lookup"><span data-stu-id="8bbc9-148">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="8bbc9-149">Arbeta med frågeresultat</span><span class="sxs-lookup"><span data-stu-id="8bbc9-149">Work with query results</span></span>](advanced-hunting-query-results.md)
-- [<span data-ttu-id="8bbc9-150">Använda delade frågor</span><span class="sxs-lookup"><span data-stu-id="8bbc9-150">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="8bbc9-151">Förstå schemat</span><span class="sxs-lookup"><span data-stu-id="8bbc9-151">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="8bbc9-152">Använda metodtips för frågor</span><span class="sxs-lookup"><span data-stu-id="8bbc9-152">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+## <a name="related-topics"></a><span data-ttu-id="750ca-146">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="750ca-146">Related topics</span></span>
+- [<span data-ttu-id="750ca-147">Översikt över avancerad jakt</span><span class="sxs-lookup"><span data-stu-id="750ca-147">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="750ca-148">Lär dig frågespråket</span><span class="sxs-lookup"><span data-stu-id="750ca-148">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="750ca-149">Arbeta med frågeresultat</span><span class="sxs-lookup"><span data-stu-id="750ca-149">Work with query results</span></span>](advanced-hunting-query-results.md)
+- [<span data-ttu-id="750ca-150">Använda delade frågor</span><span class="sxs-lookup"><span data-stu-id="750ca-150">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="750ca-151">Förstå schemat</span><span class="sxs-lookup"><span data-stu-id="750ca-151">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="750ca-152">Använda metodtips för frågor</span><span class="sxs-lookup"><span data-stu-id="750ca-152">Apply query best practices</span></span>](advanced-hunting-best-practices.md)

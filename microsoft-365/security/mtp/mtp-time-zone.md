@@ -1,9 +1,9 @@
 ---
-title: Ange tids zonen för Microsoft 365 Defender-funktioner
-description: Lär dig hur du väljer tidszon för datum-och tidsinformation som är förknippade med tillbud, automatiserad undersökning och reparation samt avancerad jakt
-keywords: tidszon, datum, tid, MTP, Microsoft Threat Protection, M365, säkerhet, tillbud, automatisk undersökning och svar, flyg, avancerad jakt
+title: Ange tidszonen för Microsoft 365 Defender-funktioner
+description: Lär dig hur du väljer tidszon för datum- och tidsinformation som är kopplad till incidenter, automatiserad undersökning och åtgärd och avancerad sökning
+keywords: tidszon, datum, tid, MTP, Microsoft Threat Protection, M365, säkerhet, incidenter, automatisk undersökning och svar, AIR, avancerad sökning
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,26 +19,27 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 81a744c3f5ebace445a8a944c0fa152ae6b5a09e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 619da1402eadaa78dc14fdad58cb62aa1ffbbcab
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841920"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932844"
 ---
-# <a name="set-the-time-zone-for-microsoft-365-defender"></a><span data-ttu-id="675ec-104">Ange tids zonen för Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="675ec-104">Set the time zone for Microsoft 365 Defender</span></span>
+# <a name="set-the-time-zone-for-microsoft-365-defender"></a><span data-ttu-id="3970e-104">Ange tidszon för Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="3970e-104">Set the time zone for Microsoft 365 Defender</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="675ec-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="675ec-105">**Applies to:**</span></span>
-- <span data-ttu-id="675ec-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="675ec-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="3970e-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="3970e-105">**Applies to:**</span></span>
+- <span data-ttu-id="3970e-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="3970e-106">Microsoft 365 Defender</span></span>
 
 
 
-<span data-ttu-id="675ec-107">Microsoft 365 Defender kan visa information om datum och tid med antingen din lokala tidszon eller UTC.</span><span class="sxs-lookup"><span data-stu-id="675ec-107">Microsoft 365 Defender can display date and time information using either your local time zone or UTC.</span></span> <span data-ttu-id="675ec-108">Den valda tids zonen tillämpas på all information om datum och tid som visas i följande funktioner i Microsoft 365-säkerhets Center:</span><span class="sxs-lookup"><span data-stu-id="675ec-108">The selected time zone will apply to all date and time information shown in the following features in the Microsoft 365 security center:</span></span>
-- <span data-ttu-id="675ec-109">Incidenter</span><span class="sxs-lookup"><span data-stu-id="675ec-109">Incidents</span></span>
-- <span data-ttu-id="675ec-110">Automatisk undersökning och reparation, inklusive åtgärds Center</span><span class="sxs-lookup"><span data-stu-id="675ec-110">Automated investigation and remediation, including the action center</span></span>
-- <span data-ttu-id="675ec-111">Avancerad jakt</span><span class="sxs-lookup"><span data-stu-id="675ec-111">Advanced hunting</span></span>
+<span data-ttu-id="3970e-107">Microsoft 365 Defender kan visa datum- och tidsinformation med hjälp av din lokala tidszon eller UTC.</span><span class="sxs-lookup"><span data-stu-id="3970e-107">Microsoft 365 Defender can display date and time information using either your local time zone or UTC.</span></span> <span data-ttu-id="3970e-108">Den valda tidszonen gäller för all datum- och tidsinformation som visas i följande funktioner i Säkerhetscenter i Microsoft 365:</span><span class="sxs-lookup"><span data-stu-id="3970e-108">The selected time zone will apply to all date and time information shown in the following features in the Microsoft 365 security center:</span></span>
+- <span data-ttu-id="3970e-109">Incidenter</span><span class="sxs-lookup"><span data-stu-id="3970e-109">Incidents</span></span>
+- <span data-ttu-id="3970e-110">Automatiserad undersökning och åtgärd, inklusive åtgärdscenter</span><span class="sxs-lookup"><span data-stu-id="3970e-110">Automated investigation and remediation, including the action center</span></span>
+- <span data-ttu-id="3970e-111">Avancerad jakt</span><span class="sxs-lookup"><span data-stu-id="3970e-111">Advanced hunting</span></span>
 
-<span data-ttu-id="675ec-112">Om du vill ställa in tids zonen för de här funktionerna går du till **Inställningar**  >  **Microsoft 365 Defender**  >  **-tidszon**.</span><span class="sxs-lookup"><span data-stu-id="675ec-112">To set the time zone for these features, go to **Settings** > **Microsoft 365 Defender** > **Time zone**.</span></span>
+<span data-ttu-id="3970e-112">Gå till Inställningar för Microsoft   >  **365 Defender-tidszonen** om du vill ange tidszonen  >  **för de här funktionerna.**</span><span class="sxs-lookup"><span data-stu-id="3970e-112">To set the time zone for these features, go to **Settings** > **Microsoft 365 Defender** > **Time zone**.</span></span>
