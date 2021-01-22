@@ -1,5 +1,5 @@
 ---
-title: Utvärdera data integritets risker och identifiera känsliga objekt med Microsoft 365
+title: Utvärdera datasekretessrisker och identifiera känsliga objekt med Microsoft 365
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -16,219 +16,219 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Ta reda på vilka data integritets regler, relevanta scenarier, beredskap och känsliga informations typer som finns i din Microsoft 365-miljö.
-ms.openlocfilehash: c2f8bd6587e399fd1e928575b3cd9dfb2a4565eb
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+description: Fastställ datasekretessbestämmelser, relevanta scenarier, din beredskap och vilka typer av känslig information som finns i Din Microsoft 365-miljö.
+ms.openlocfilehash: c5a1662f5e82c8b8b9439439df0ee369d45e7616
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377121"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931908"
 ---
-# <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Utvärdera data integritets risker och identifiera känsliga objekt med Microsoft 365
+# <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Utvärdera datasekretessrisker och identifiera känsliga objekt med Microsoft 365
 
-Utvärdering av de data integritets regler och-risker som din organisation är föremål för är en viktig åtgärd innan du genomför implementering av relaterade förbättrings åtgärder, inklusive funktioner och tjänster i Microsoft 365. 
+Att utvärdera de sekretessregler och risker som gäller för din organisation är ett viktigt första steg innan relaterade förbättringsåtgärder implementeras, inklusive sådana som kan uppnås med Microsoft 365-funktioner och -tjänster. 
 
-## <a name="potentially-applicable-data-privacy-regulations"></a>Eventuellt tillämpliga data integritets regler
+## <a name="potentially-applicable-data-privacy-regulations"></a>Potentiellt tillämpliga sekretessregler för data
 
-En bra hänvisning till det bredare regelverket för data integritets regler finns i [Microsoft Services-förtroende-portalen](https://servicetrust.microsoft.com/) och [artiklarna i den allmänna förordningen om data skydd (GDPR)](../compliance/gdpr.md), samt annat material som gäller de bestämmelser du kan vara föremål för i din bransch eller region.
+En bra referens till det bredare ramverket för dataskyddsregler för datasekretess finns i [Microsoft Services Trust Portal](https://servicetrust.microsoft.com/) och serien med artiklar om dataskyddsförordningen [(GDPR),](../compliance/gdpr.md)samt annat material om bestämmelser som du kan omfattas av inom din bransch eller region.
 
 ### <a name="gdpr"></a>GDPR
 
-GDPR, den mest välkända och registrerade informations integritets reglerna, reglerar insamling, lagring, bearbetning och delning av person uppgifter som gäller för en identifierad eller identifierbar fysisk person som är bosatt i Europeiska unionen (EU). 
+GDPR, den mest kända och citerade av datasekretessreglerna, reglerar insamling, lagring, bearbetning och delning av personuppgifter som är relaterade till en identifierad eller identifierbar fysisk person som är bosatt i EU. 
 
-Enligt GDPR paragraf 4: 
+Enligt GDPR, artikel 4: 
 
-- person uppgifter: uppgifter rörande en identifierad eller identifierbar fysisk person ("registrerade ämne"); en identifierbar fysisk person är en som kan identifieras, direkt eller indirekt, särskilt med hänvisning till en identifierare, till exempel ett namn, ett identifikations nummer, plats uppgifter, en online-ID eller en eller flera faktorer som är specifika för den fysiska, fysiologiska, genetiska, personliga, ekonomiska, kulturella eller sociala identiteten hos den fysiska personen.
+- "personuppgifter" avser all information som relaterar till en identifierad eller identifierbar fysisk person ('data subject'); En identifierbar fysisk person är en person som kan identifieras, direkt eller indirekt, särskilt med referens till en identifierare som ett namn, ett IDENTIFIKATIONSNUMMER, platsdata, en onlineidentifierare eller en eller flera faktorer som är specifika för den fysiska, genetiskta, mentala, ekonomiska, sociala eller sociala identiteten hos den naturliga personen.
 
 ### <a name="iso-27001"></a>ISO 27001
 
-Andra standarder som ISO 27001 har också erkänts av flera europeiska tillsynsmyndigheterna som en giltig proxyserver för människor, processer och teknik spektrum. De standarder det anger överlappande och konsekvens för ISO-27001-drivna skydd kan betraktas som en proxy som uppfyller vissa sekretess krav under vissa omständigheter.
+Att följa andra standarder som ISO 27001 har också känts igen av flera europeiska myndigheter som en giltig proxy av avsikter för personer, processer och teknikspektrum. De standarder som anges överlappar varandra och att påverkas av ISO-27001-drivna skyddsmetoder kan ses som proxy under vissa omständigheter.
 
-### <a name="other-data-privacy-regulations"></a>Andra integritets regler för data
+### <a name="other-data-privacy-regulations"></a>Andra sekretessregler för data
 
-Andra framträdande regler för data integritet anger också kraven för att hantera person uppgifter.
+Andra framträdande sekretessregler för data specificerar också krav för hantering av personuppgifter.
 
-I USA ingår bland annat California konsument skydd Act ([CCPA](../compliance/ccpa-faq.md)), HIPAA-HITECH (policy för integritets skydd för USA) och Graham Leach Bliley Act (GLBA). Ytterligare statliga regler är också på plats eller under utveckling. 
+I USA omfattar dessa California Consumer Protection Act[(CCPA),](../compliance/ccpa-faq.md)HIPAA-HITECH (United States Health Care Privacy Act) och Graham Leach Bliley Act (GLBA). Ytterligare tillståndsspecifika bestämmelser är också på plats eller under utveckling. 
 
-Runt om i världen inkluderar fler exempel Tysklands nationella GDPR implementation Act (BDSG), Brasilien (Data Protection Act) och många andra.
+Runt om i världen kan ytterligare exempel vara Tysklands National GDPR Implementation Act (BDSG), Brazil Data Protection Act (LGPD) och många fler.
 
-## <a name="regulation-mapping-to-microsoft-365-technical-control-categories"></a>Regel mappning till Microsoft 365 tekniska kontroll kategorier
+## <a name="regulation-mapping-to-microsoft-365-technical-control-categories"></a>Mappning av regler till kategorier för teknisk kontroll i Microsoft 365
 
-Många av reglerna för data integritet – relaterade har överlappande krav, så du bör inte förstå vilka förordningar de är föremål för innan tekniska kontroll system utvecklas. 
+Många av de datasekretessrelaterade bestämmelser har överlappande krav, så du bör förstå vilka bestämmelser de omfattas av innan du utvecklar ett tekniskt kontrollschema. 
 
-För att senare kunna referera till artiklarna i den här generella lösningen tillhandahåller den här tabellen utdrag ur ett urval av data integritets regler. 
+Den här tabellen innehåller utdrag från ett urval av sekretessregler för data för senare referens i artiklarna om den här övergripande lösningen. 
 
-| Tillämpningsförordning | Artikel/avsnitt | Utdrag | Lämpliga tekniska kontroll kategorier |
+| Regel | Artikel/avsnitt | Utdrag | Tillämpliga kategorier för teknisk kontroll |
 |:-------|:-----|:-------|:-------|
-| GDPR | Paragraf 5 (1) (f) | Person uppgifter ska behandlas på ett sätt som säkerställer lämplig säkerhet för person uppgifter, inklusive skydd mot obehörig eller olaglig behandling samt mot oavsiktlig förlust, destruktion eller skada, med lämpliga tekniska eller organisatoriska åtgärder ("integritet och konfidentialitet").  |  Alla <br> Identitet <br> Enhet <br> Skydd för hotet <br> Skydda information <br> Styra information <br> Upptäcka och agera |
-|  | Artikel (32) (1) (a) | Genom att ta hänsyn till bildens status, kostnaderna för implementeringen och arten, omfattningen, sammanhanget och ändamålen med bearbetning, samt risken att varierande sannolikhet och allvarlighets grad för fysiska personers fri-och rättigheter för dem, den registeransvarige och denna drifts ansvarige vidtar lämpliga tekniska och organisatoriska åtgärder för att säkerställa en säkerhets nivå som är lämplig för risken , inklusive bland annat: (a) pseudonymization och kryptering av person uppgifter. | Skydda information |
-|  | Artikel (13) (2) (a) | "... vid den tidpunkt då person uppgifter hämtas ska den här informationen vara underkastad följande uppgifter som behövs för att säkerställa rättvis och öppen bearbetning: (a) den period som person uppgifterna ska lagras i, eller om det inte är möjligt, de kriterier som används för att fastställa denna period. | Styra information |
-|  | Artikel (15) (1) (e) | Den registrerade ska ha rätt att från kontroll organet bekräfta om person uppgifter som berör honom eller henne behandlas, och om så är fallet, till gång till person uppgifter och följande uppgifter: (e) förekomsten av rätten att begära från kontroll panelens rättelse eller radering av person uppgifter rörande den registrerades eller för föremålet för sådan behandling | Upptäcka och agera |
-| LGPD | Artikel 46 | Bearbetnings ombuden ska vidta säkerhets-, tekniska och administrativa åtgärder för att skydda person uppgifter från obehöriga och oavsiktliga och olagliga situationer med destruktion, förlust, ändring, kommunikation eller annan typ av icke godkänd eller olaglig behandling. | Skydda information <br> Styra information <br> Upptäcka och agera|
-|  | Artikel 48 | Den registeransvarige måste meddela den nationella myndigheten och uppgifterna om en säkerhets tillbud som kan skapa risk eller relevant skada för dessa. | Upptäcka och agera |
-| HIPPA-HITECH | 45 CFR 164.312 (e) (1) | Implementera tekniska säkerhets åtgärder för att skydda obehörig åtkomst till information om elektronisk skyddad hälsa som skickas via ett elektroniskt kommunikations nät verk. | Skydda information |
-|  | 45 C.F.R. 164.312 (e) (2) (II) | Implementera en mekanism för att kryptera elektronisk skyddad hälso information när det bedöms lämpligt. | Skydda information |
-|  | 45 CFR 164.312 (c) (2) | Implementera elektroniska mekanismer för att bekräfta att elektronisk skyddad hälso information inte har ändrats eller förstörts på ett otillbörligt sätt. | Styra information |
-|  | 45 CFR 164.316 (b) (1) (i) | Om en åtgärd, aktivitet eller utvärdering krävs enligt det här kapitel ska dokumenteras, Upprätthåll ett skriftligt (som kan vara elektroniskt) med åtgärd, aktivitet eller utvärdering | Styra information |
-|  | 45 CFR 164.316 (b) (1) (II) | Behåll den dokumentation som krävs enligt paragraf b (1) i det här avsnittet under 6 år efter den dag det skapades eller det datum då den senast användes, beroende på vilket som senare. | Styra information |
-|  | 45 C.F.R. 164.308 (a) (1) (II) (D) | Implementera procedurer för att regelbundet granska poster med informations system aktivitet, till exempel gransknings loggar, Access-rapporter och rapporter om säkerhets tillbud | Upptäcka och agera |
-|  | 45 C.F.R. 164.308 (a) (6) (II) | Identifiera och reagera på misstänkta eller kända säkerhets tillbud; minska risken för olycks händelser som är kända för den enhet eller det företag som är underrättat; och deras resultat för dokument säkerhets tillbud. | Upptäcka och agera |
-|  | 45 C.F.R. 164.312 (b) | Implementera maskinvaru-, program-och procedur mässiga mekanismer för att registrera och undersöka aktiviteter i informations system som innehåller eller använder elektronisk skyddad hälso information. | Upptäcka och agera |
-| CCPA | 1798.105 (c) | Ett företag som får en verifierbar begäran från en konsument för att ta bort konsumentens personliga uppgifter i enlighet med underavdelning (a) i det här avsnittet ska ta bort konsument personens personliga information från sina poster och dirigera alla tjänste leverantörer så att de kan ta bort sin personliga information från sina poster | Upptäcka och agera |
-|  | 1798.105 (d) | (undantag från 1798.105 (c) <br> Ett företag eller en tjänste leverantör ska inte vara skyldigt att följa en konsument begäran om att ta bort konsumentens person uppgifter om det behövs för att företaget eller tjänste leverantören ska kunna behålla konsument informationen för att: (mer information finns i den aktuella förordningen). | Upptäcka och agera |
+| GDPR | Artikel 5(1)(f) | Personuppgifter ska bearbetas på ett sätt som säkerställer tillräcklig säkerhet för personuppgifter, inklusive skydd mot obehörig eller olaglig bearbetning och mot oavsiktlig förlust, intrång eller skada, genom att använda lämpliga tekniska åtgärder eller organisationsåtgärder ('integritet och konfidentialitet').  |  (Alla) <br> Identitet <br> Enhet <br> Skydd mot hot <br> Skydda information <br> Reglera information <br> Upptäcka och agera |
+|  | Artikel (32)(1)(a) | Med hänsyn till tillståndet, kostnaderna för implementering och typ, omfattning, sammanhang och syfte med bearbetningen samt risken för olika sannolikheter och allvarlighetsgrad för rättigheter och enkelhet för naturliga personer, ska kontrollanten och processorn implementera lämpliga tekniska och organisatoriska åtgärder för att säkerställa en säkerhetsnivå som är lämplig för risken , inklusive efter behov: (a) kryptering av personuppgifter. | Skydda information |
+|  | Artikel (13)(2)(a) | "... När personuppgifter inhämtas ska den registeransvarige lämna in följande ytterligare information som behövs för att säkerställa en rättvis och transparent bearbetning: (a) den period då personuppgifterna ska lagras, eller, om det inte är möjligt, de villkor som används för att fastställa den perioden. | Reglera information |
+|  | Artikel (15)(1)(e) | Den registrerade har rätt att från kontrollkontrollen bekräfta huruvida personuppgifter om honom eller henne behandlas och, om så är fallet, åtkomst till personuppgifter och följande information: (e) det finns rätt att begära från kontrollanten för att radera eller radera personliga data eller begränsning av bearbetning av personuppgifter om de data som är registrerade eller objekt för sådan bearbetning | Upptäcka och agera |
+| LGPD | Artikel 46 | Bearbetande ombud ska vidta säkerhets-, tekniska och administrativa åtgärder som kan skydda personuppgifter från obehörig åtkomst och oavsiktliga eller olagliga situationer av typen intrång, intrång, kommunikation eller någon typ av olaglig bearbetning. | Skydda information <br> Reglera information <br> Upptäcka och agera|
+|  | Artikel 48 | Kontrollanten måste kommunicera till den nationella myndighet och till den registrerade förekomsten av en säkerhetshändelse som kan skapa risk eller relevant skada för datapersonerna. | Upptäcka och agera |
+| HIPPA-HITECH | 45 CFR 164.312(e)(1) | Implementera tekniska säkerhetsåtgärder för att skydda mot obehörig åtkomst till elektronisk skyddad hälsoinformation som överförs via ett elektroniskt kommunikationsnätverk. | Skydda information |
+|  | 45 C.F.R. 164.312(e)(2)(ii) | Implementera en mekanism för att kryptera elektronisk skyddad hälsoinformation när det anses lämpligt. | Skydda information |
+|  | 45 CFR 164.312(c)(2) | Implementera elektroniska mekanismer för att bekräfta att elektronisk skyddad hälsoinformation inte har ändrats eller destruerats på ett obehörigt sätt. | Reglera information |
+|  | 45 CFR 164.316(b)(1)(i) | Om en åtgärd, aktivitet eller bedömning krävs av den här underdelen för att dokumenteras, ska du föra in ett skriftligt (som kan vara elektroniskt) register över åtgärden, aktiviteten eller utvärderingen | Reglera information |
+|  | 45 CFR 164.316(b)(1)(ii) | Behålla den dokumentation som krävs i paragraf (b)(1) i det här avsnittet i sex år från datumet då den skapades eller det datum då den senast var i kraft, beroende på vilket som inträffar senare. | Reglera information |
+|  | 45 C.F.R. 164,308(a)(1)(ii)(D) | Implementera procedurer för att regelbundet granska poster för informationssystems aktivitet, till exempel granskningsloggar, åtkomstrapporter och rapporter om säkerhetstillbud | Upptäcka och agera |
+|  | 45 C.F.R. 164,308(a)(6)(ii) | Identifiera och svara på misstänkta eller kända säkerhetstillbud minimera, i den utsträckning som han eller hon kan göra skada av säkerhetstillbud som är kända för den täckta enheten eller affärsrelationen, och dokumentera säkerhetstillbud och deras resultat. | Upptäcka och agera |
+|  | 45 C.F.R. 164,312(b) | Implementera maskinvara, programvara och procedurmekanismer som registrerar och undersöker aktivitet i informationssystem som innehåller eller använder elektronisk skyddad hälsoinformation. | Upptäcka och agera |
+| CCPA | 1798.105(c) | Ett företag som får en verifierbar begäran från en konsument om att radera konsumentinformation enligt indelningen (a) i detta avsnitt ska radera konsumentinformationen från sina arkivhandlingar och hänvisa alla tjänsteleverantörer till att radera användarens personliga information från sina arkivhandlingar | Upptäcka och agera |
+|  | 1798.105(d) | (undantag till 1798.105(c) <br> Ett företag eller en tjänstprovider har inte krav på sig att följa en konsument begäran om att radera konsumentinformation om det är nödvändigt för företaget eller tjänstprovider att bevara konsumentinformation för att: (se den nuvarande lagstiftningen för ytterligare information). | Upptäcka och agera |
 |||||
 
 >[!Important]
->Detta är inte avsett att vara en uttömmande lista. Om du [vill ha](../compliance/compliance-manager.md) mer information om hur du använder de avsnitt som nämns nedan kan du läsa mer om hur du ansöker om de citerade avsnitten.
+>Listan är inte uttömmande. Mer information [om hur](../compliance/compliance-manager.md) de citerade avsnitten kan tillämpas i de kategorier av teknisk kontroll som listas finns i efterlevnadshanteraren eller den juridiska rådgivaren eller efterlevnadsrådgivaren.
 >
 
 ## <a name="knowing-your-data"></a>Känna till dina data
 
-Oberoende av vilka förordningar du lyder under, där olika användar data typer i och utanför organisationen interagerar med dina system, är alla viktiga faktorer som kan påverka din samlade strategi för personlig data skydd, med förbehåll för bransch-och myndighets bestämmelser som gäller för organisationen. Detta inkluderar var person uppgifter lagras, vilken typ av text det är och hur mycket det är, och under vilka omständigheter de samlades in.
+Oavsett vilka bestämmelser du omfattas av är alla viktiga faktorer som kan påverka din övergripande strategi för dataskydd, beroende på vilka bransch- och myndighetsföreskrifter som gäller för din organisation, när olika användardatatyper inom och utanför organisationen interagerar med era system. Det omfattar var personlig information lagras, vilken typ av information det är och hur mycket av det som finns och under vilka omständigheter de har samlats in.
  
-![Att veta dina data: vilken typ av text det är och hur mycket det är, och under vilka omständigheter det samlades in](../media/information-protection-deploy-assess/information-protection-deploy-assess-knowing-data.png)
+![Att känna till dina data: Vilken typ är det, hur mycket av dem det finns och under vilka omständigheter de har samlats in](../media/information-protection-deploy-assess/information-protection-deploy-assess-knowing-data.png)
 
-### <a name="data-portability"></a>Data portabilitet 
+### <a name="data-portability"></a>Dataporterbarhet 
 
-Data flyttas också med tiden när den behandlas, raffineras och andra versioner härleds från den. En ursprunglig ögonblicks bild är aldrig tillräckligt. Det måste finnas en fort löp ande process för dina data. Detta representerar en av de största utmaningarna för stora organisationer som hanterar stora mängder person uppgifter. Organisationer som inte löser problemet med att "veta dina uppgifter" kan komma att få problem med mycket stor risk och möjligt från reglerings organ.
+Data flyttas också med tiden när de bearbetas, förfinas och andra versioner härleds från den. En ursprunglig ögonblicksbild räcker aldrig. Det måste finnas en pågående process för att känna till dina data. Det representerar en av de största utmaningarna för stora organisationer som hanterar stora volymer personuppgifter. Organisationer som inte tar itu med problemet "känner till dina data" kan potentiellt hamna med mycket hög risk och eventuellt bot från regleringsbyråer.
 
-![Data livs cykeln](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-lifecycle.png)
+![Datalivscykeln](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-lifecycle.png)
  
-### <a name="where-the-personal-data-is"></a>Där person uppgifter är
+### <a name="where-the-personal-data-is"></a>Var personliga data finns
 
-För att adressera data integritets regler kan du inte använda allmänna begrepp för var du tror att dina person uppgifter finns, antingen nu eller i framtiden. För data integritets regler krävs att organisationerna försäkrar att de vet var person uppgifterna är fort löp ande. Det är viktigt att ta en första ögonblicks bild av alla dina data källor för eventuell lagring av personlig information, inklusive din Microsoft 365-miljö, och skapa mekanismer för fort löp ande övervakning och identifiering.
+När det gäller sekretessregler för data kan du inte förlita dig på allmänna skillnader i var du tror att personuppgifter kan finnas, antingen nu eller i framtiden. Enligt sekretessregler för datasekretess kan organisationer bevisa att de kontinuerligt vet var personuppgifter finns. Det gör det viktigt att ta en första ögonblicksbild av alla dina datakällor för möjlig lagring av personlig information, inklusive Microsoft 365-miljön, och skapa mekanismer för kontinuerlig övervakning och identifiering.
 
-Om du inte redan har bedömt den övergripande beredskapen och risken för data integritets regler kan du använda följande 3-stegs ramverk för att komma igång. 
+Om du inte redan har gjort en bedömning av din övergripande beredskap och risk i samband med datasekretessföreskrifter kan du komma igång genom att använda följande 3-stegs ramverk. 
 
-![Åtgärder för att utvärdera din totala beredskap och risk som är förknippad med data integritets regler](../media/information-protection-deploy-assess/information-protection-deploy-assess-grid.png)
+![Åtgärder för att bedöma din övergripande beredskap och risker som är kopplade till sekretessregler för data](../media/information-protection-deploy-assess/information-protection-deploy-assess-grid.png)
 
 >[!Note]
->Den här artikeln och dess innehåll är inte avsett att ta bort juridisk rådgivning. Det ger bara grundläggande vägledning och länkar till verktyg som kan vara hjälp i de tidiga faserna av din utvärdering.
+>Den här artikeln och dess innehåll är inte avsedda att i stället för juridiska rådgivningstjänster. Den innehåller bara grundläggande vägledning och länkar till verktyg som kan vara till hjälp i de tidiga stegen i utvärderingen.
 >
  
-## <a name="step-1-develop-a-foundational-understanding-of-your-organizations-personal-data-scenarios"></a>Steg 1: skapa en grundläggande förståelse av organisationens personliga data scenarier 
+## <a name="step-1-develop-a-foundational-understanding-of-your-organizations-personal-data-scenarios"></a>Steg 1: Utveckla en grundläggande förståelse av organisationens personliga datascenarier 
 
-Du måste mäta exponering för data integritets risk baserat på den typ av personliga data som den för närvarande hanterar, där den lagras, vilka skyddade kontroller som finns på den, hur den är livs cykel hanteras och vem som har åtkomst till den. 
+Du måste mäta exponering av datasekretessrisker baserat på vilken typ av personuppgifter den hanterar för närvarande, var den lagras, vilka skyddskontroller som finns på den, hur livscykeln hanteras och vem som har åtkomst till den. 
 
-Som utgångs punkt är det viktigt att inventera vilka typer av personliga data som finns i din Microsoft 365-miljö. Använd dessa kategorier:
+Som en utgångspunkt är det viktigt att inventera vilka typer av personliga data som finns i din Microsoft 365-miljö. Använd följande kategorier:
 
-- Information om anställda som behövs för dagliga affärs funktioner
-- Data organisationen har om sina affärs kunder, partners och andra relationer i B2B-scenario (Business-to-Business)
-- Data organisationen har om konsumenter som tillhandahåller information till online tjänster som organisationen hanterar i scenariot för Skype-till-kund (B2C)
+- Information om de anställda som krävs för att utföra dagliga affärsfunktioner
+- Data som organisationen har om sina företagskunder, partner och andra relationer i scenariot B2B (företag)
+- Data som organisationen har om konsumenter som tillhandahåller information till onlinetjänster som organisationen hanterar i scenariot B2C (företag till kund)
 
-Här är ett exempel på olika typer av data för typiska avdelningar i en organisation.
+Här är ett exempel på de olika typerna av data för typiska avdelningar i en organisation.
 
-![Typer av person uppgifter](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-types.png)
+![Typer av personliga data](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-types.png)
 
-Mycket av de person uppgifter som är föremål för data integritets reglering samlas in och lagras normalt utanför Microsoft 365. Alla personliga uppgifter från klientbaserade webb-eller mobil program måste ha exporter ATS från sådana program till Microsoft 365 för att kunna bli föremål för sekretess kontroll i Microsoft 365. 
+En stor del av de personuppgifter som omfattas av sekretessförordningen samlas vanligtvis in och lagras utanför Microsoft 365. Alla personliga data från webb- eller mobilprogram för konsumenter måste ha exporterats från sådana program till Microsoft 365 för att kunna granskas av datasekretess inom Microsoft 365. 
 
-Din exponering för data integritet i Microsoft 365 kan vara mer begränsad i förhållande till dina webb program och CRM-system, vilka den här lösningen inte hanterar.
+Din exponering av datasekretess i Microsoft 365 kan vara mer begränsad i förhållande till dina webbprogram och CRM-system, som denna lösning inte behandlar.
 
-Det är också viktigt att tänka på följande vanliga problem med data integritets efterlevnad när du utvärderar din risk profil:
+Det är också viktigt att tänka på följande vanliga utmaningar med datasekretessefterlevnad när du utvärderar din riskprofil:
 
- - **Person uppgifter.** Hur sprids information om ett visst ämne? Är det väl tillräckligt nog för att övertyga myndigheterna att det finns lämpliga kontroller? Kan den undersökas och åtgärdas om det behövs?
-- **Skyddar mot exfiltration.** Hur skyddar jag person uppgifter i en viss typ av källa och hur de kan reagera om det var?
-- **Skydd kontra risk.** Vilka mekanismer för informations skydd är lämpliga i relation till risken och hur du upprätthåller kontinuitet och produktivitet för verksamheten och minimerar slutanvändaren om slutanvändaren behöver åtgärdas? Ska manuell klassificering eller kryptering användas?
-- **Personlig data lagring.** Hur länge ska information som innehåller person uppgifter behöva behållas för giltiga affärs skäl och hur man kan undvika att det är en tidigare lösning med Behåll-för-för-för-för-för-för-för-för--
-- **Hantera data subjekt begär Anden.** Vilka mekanismer behövs för att hantera data ämnes förfrågningar (DSRs) och eventuella hjälp åtgärder, till exempel anonymisering, bortredigering och borttagning?
-- **Pågående övervakning och rapportering.** Vilken sorts daglig övervakning, undersöknings-och rapporterings teknik är tillgänglig för de olika data typerna och källorna?
-- **Begränsningar för data behandling.** Finns det begränsningar för data användning för information som samlas in eller lagras genom de här metoderna att organisationen måste återspegla i integritets kontroller? Exempel: åtaganden som person uppgifter inte kommer att användas av Sälj personal kan kräva att organisationen kan sätta in mekanismer för att förhindra överföring eller lagring av den informationen i system som är kopplade till Sälj organisationen.
+ - **Distribution av personliga data.** Hur utspridd är information om ett visst ämne? Är det känt tillräckligt för att övertyga regelorganen om att det finns lämpliga kontroller? Kan den undersökas och åtgärdas vid behov?
+- **Skyddar mot exfiltration.** Hur skyddar du personliga data av en viss typ eller källa från att avslöjas och hur du svarar om det var det?
+- **Skydd kontra risk.** Vilka informationsskyddsmetoder är lämpliga i förhållande till risken och hur du bevarar affärskontinuiteten och produktiviteten och minimerar slutanvändarkontinuiteten om slutanvändaråtgärd krävs? Ska till exempel manuell klassificering eller kryptering användas?
+- **Lagring av personuppgifter.** Hur länge behöver information som innehåller personuppgifter sparas av giltiga affärsorsaker och hur du kan undvika tidigare metodtips för evigheter, balanserade med bevarandebehov för affärskontinualitet?
+- **Hanterar dataförfrågningar från registrerade angående data.** Vilka mekanismer kommer att behövas för att hantera dataförfrågningar (DSR:er) och eventuella åtgärdsåtgärder, till exempel anonymisering, redigering och borttagning?
+- **Löpande övervakning och rapportering.** Vilken typ av teknik för dags övervakning, tidsrapportering och rapportering är tillgängliga för olika datatyper och källor?
+- **Begränsningar i databearbetningen.** Finns det begränsningar för dataanvändning för information som samlas in eller lagras med de här metoderna som organisationen måste återspegla i sekretesskontroller? Till exempel kan åtaganden som personlig information inte kommer att användas av säljpersonal kräva att organisationen använder mekanismer för att förhindra överföring eller lagring av den informationen i system som är associerade med säljorganisationen.
 
-### <a name="employee-data-required-to-carry-out-day-to-day-business-functions"></a>Information om anställda som behövs för dagliga affärs funktioner
+### <a name="employee-data-required-to-carry-out-day-to-day-business-functions"></a>Information om de anställda som krävs för att utföra dagliga affärsfunktioner
 
-Organisationer genom natur behöver samla in uppgifter om anställda för elektronisk identitet och HR, beroende på vad de godkänner till i sina avtalade anställda. Så länge en person arbetar för ett företag är detta vanligt vis inte ett problem. Organisationen kan vilja placera mekanismer för att förhindra att obehöriga aktörer exfiltration eller läcker person uppgifter. 
+Organisationer behöver samla in data om anställda i elektroniskt identitets- och personalsyfte, enligt vad de samtycker till i sina anställningsavtal. Så länge en person arbetar för ett företag är detta vanligtvis inte ett problem. Organisationen kan vilja skapa mekanismer för att förhindra att skadliga aktör exfiltrerar eller läcker personliga data. 
 
-Om en person lämnar ett företag har organisationer vanligt vis processer, procedurer och bevarande-och borttagnings scheman för att ta bort användar konton, avställa post lådor och personliga enheter samt ändra den anställdes status i sådant som Human Resources-system. När det gäller tvister kan en anställd eller någon annan part i en juridisk undersökning ha giltiga skäl för att få information om de person uppgifter som lagras i organisationens system. I vissa fall kan denna part begära att dessa uppgifter tas bort eller anonymiserad. 
+Om en person lämnar ett företag har organisationer vanligtvis processer, procedurer och scheman för bevarande och borttagning för att ta bort användarkonton, inaktivera postlådor och personliga enheter och ändra status för anställda i till exempel personalsystem. I situationer där rättstvist ingår kan en anställd eller en annan part i en juridisk undersökning ha giltiga skäl till att skaffa information om personuppgifter som lagras i organisationens system. Ibland kan parten begära att sådana data tas bort eller anonymiseras. 
 
-För att du ska kunna adressera sådana behov bör organisationer ha processer och förfaranden för att under lätta för sådana begär Anden och att vidta åtgärder som gör att en del information om en anställd kan tänkas vara avgörande för företags kontinuitet. Till exempel information som en enskild användare har skapat en fil eller utfört en funktion. 
+För att tillgodose sådana behov bör organisationer ha processer och procedurer som tillgodoser behovet av förebyggande, underhåll och åtgärder för att underlätta sådana förfrågningar, och se till att viss information om en anställd rimligen kan anses vara nödvändig för affärskontinuering. Till exempel information som en enskild person har skrivit en fil eller utfört en funktion. 
 
 >[!Note]
->En undersöknings teknik för person uppgifter i Microsoft 365 finns på [skärmen övervaka och svara](information-protection-deploy-monitor-respond.md)på. Du kanske också vill använda automatiserade klassificerings-och skydds system för att se till att personliga uppgifter kontrol leras samtidigt inom organisationen samt att de inte lämnar organisationen i situationer med skadlig aktör. Mer information finns i artikeln om att [skydda information](information-protection-deploy-protect-information.md) .
+>Vi rekommenderar att du tar del av teknikerna för övervakning och åtgärder för personuppgifter i Microsoft 365 i artikeln om att övervaka [och åtgärda.](information-protection-deploy-monitor-respond.md) Du kanske också vill använda automatiska klassificerings- och skyddsscheman för att se till att personliga data kontrolleras inom organisationen och förhindra att de lämnar organisationen i skadliga aktörssituationer. Mer information [finns i artikeln om att](information-protection-deploy-protect-information.md) skydda information.
 >
  
-### <a name="data-the-organization-has-about-its-business-customers-in-the-b2b-scenario"></a>Uppgifter som organisationen har till sina affärs kunder i B2B-scenariot
+### <a name="data-the-organization-has-about-its-business-customers-in-the-b2b-scenario"></a>Data som organisationen har om sina företagskunder i B2B-scenariot
 
-Insamling av B2B-information är också en utmaning eftersom din organisation kan behöva lagra kund namn och transaktioner i sina olika system för företags kontinuitet för att skydda informationen från oavsiktlig eller skadlig exfiltration. På samma sätt som uppgifter för anställda måste organisationer ha principer, procedurer och tekniska kontroller för att skydda sådana data, samt för att under rättas om hur du gör det i enlighet med definierade lagrings-och borttagnings scheman. 
+Insamling av B2B-information är också en utmaning eftersom din organisation kan behöva föra register över kundnamn och transaktioner i sina olika system för affärskontinuisering och ändå skydda informationen från oavsiktlig eller skadlig exfiltrering. Liksom med data om anställda måste organisationer ha policyer, procedurer och tekniska kontroller för att skydda sådana data samt ålderskontrollerna enligt definierade scheman för bevarande och borttagning. 
 
-Vanligt vis är avtal med externa kunder, partners och andra enheter som organisationen gör med ett språk som används för att hantera sådana data, inklusive skydd, bevarande och borttagning av både och efter att entiteten har en relation till organisationen. 
+Vanligtvis har avtal med externa kunder, partner och andra enheter som organisationen gör affärer med språk som hanterar sådana data, inklusive skydd, bevarande och borttagning både under och efter att entiteten har en relation med organisationen. 
 
-### <a name="data-the-organization-has-about-consumers-who-provide-information-to-online-services-that-the-organization-manages-in-the-b2c-scenario"></a>Data organisationen har om konsumenter som tillhandahåller information till online tjänster som organisationen hanterar i B2C-scenariot
+### <a name="data-the-organization-has-about-consumers-who-provide-information-to-online-services-that-the-organization-manages-in-the-b2c-scenario"></a>Data som organisationen har om konsumenter som tillhandahåller information till onlinetjänster som organisationen hanterar i B2C-scenariot
 
-Den här kategorin är den allra mest för data integritet, på grund av många offentliga instanser av kundens data läckage. Detta kan vara avsiktligt, till exempel tredje part, under kontrakt till leverantören, eller oavsiktligt, till exempel exfiltration av en illvillig aktör. Skyddet för konsument data är en av de viktigaste orsakerna till att EU och andra har fattat dessa regler. Data integritets regler som GDPR och CCPA kräver att du planerar:
+Den här kategorin är den som många tänker på när det gäller datasekretess, på grund av många offentliga förekomster av dataläckage. Detta kan vara avsiktligt, till exempel en tredje part som är kontraktslös till leverantören, eller oavsiktlig, till exempel exfiltrering av en skadlig aktör. Dataskydd är en av de primära anledningarna till att EU och andra har förtroende för dessa bestämmelser. Datasekretessregler som GDPR och CCPA kräver att du gör planering för:
 
-- Check planer och kontroll [listor](../compliance/gdpr-arc-office365.md) för [befattningar](../compliance/gdpr-action-plan.md)
-- [Konsekvens bedömning för data skydd](../compliance/gdpr-data-protection-impact-assessments.md)
-- [Meddelande om intrång](../compliance/gdpr-breach-office365.md)
+- [Handlingsplaner och](../compliance/gdpr-action-plan.md) [checklista för att ta del av ansvaret](../compliance/gdpr-arc-office365.md)
+- [Utvärderingar av dataskyddseffekter](../compliance/gdpr-data-protection-impact-assessments.md)
+- [Meddelanden om intrång](../compliance/gdpr-breach-office365.md)
 - [Begäranden från registrerad person](../compliance/gdpr-dsr-office365.md)
 
-Om din organisation inte gör en mängd direkt från konsument data insamling kan den här kategorin vara mindre än ett problem. Men du kan fortfarande behöva gå igenom de processer som beskrivs i dessa artiklar för att uppnå efterlevnad.
+Om organisationen inte gör mycket direkt från konsumentdatainsamling kan den här kategorin vara mindre viktig. Du kan dock fortfarande behöva gå igenom processerna som beskrivs i dessa artiklar för att uppnå efterlevnad.
 
-### <a name="step-1-summary"></a>Sammanfattning av steg 1
+### <a name="step-1-summary"></a>Steg 1-sammanfattning
 
-Det här är ett viktigt första steg som är baserat på en grundläggande förståelse av organisationens scenarier för person uppgifter.
+Att förstå exponeringen mot risker och regler om datasekretess är ett viktigt första steg som baseras på en grundläggande förståelse av organisationens personliga datascenarier.
 
-Om du inte har person uppgifter från konsumenter i din Microsoft 365-miljö eller begränsas till vissa delar av miljön och behovet av en teknisk kontroll är predikat för data exponering, så behöver den tekniska kontrollen bara vara anställd i högrisk delar av miljön, inte överallt.
+Om du inte har personliga data från konsumenter i din Microsoft 365-miljö eller om den begränsas till vissa delar av miljön och det finns ett behov av teknisk kontroll där det finns exponering av data av konsumenttyp, kanske den tekniska kontrollen bara behöver användas i delar av miljön med hög risk, inte överallt.
 
-Även om en extern organisation eller standard kontroll uppsättnings rekommendation, till exempel från Compliance Manager i Microsoft 365, kan hjälpa dig att informera din kontroll strategi, bör du utnyttja data inventerings medvetenheten för att kvantifiera din faktiska risk exponering.
+Även om en extern organisation eller standardrekommendationer för kontroller, till exempel från Efterlevnadshanteraren i Microsoft 365, kan hjälpa dig att informera om din kontrollstrategi, bör ditt val av implementering drivs av information från datainventeringen för att mäta den verkliga risk exponeringen.
 
-De flesta organisationer har viss exponering för något av ovanstående scenarier. Det är viktigt att göra en helhets lösning.
+De flesta organisationer har en exponering för någon av ovanstående scenarier. Det är viktigt att ha en metod att göra bedömningar av den.
 
-## <a name="step-2-assess-your-readiness-for-complying-with-data-privacy-regulations"></a>Steg 2: Bedöm din beredskap för att uppfylla data integritets regler
+## <a name="step-2-assess-your-readiness-for-complying-with-data-privacy-regulations"></a>Steg 2: Utvärdera din beredskap för att följa sekretessregler för data
 
-Trots att det är specifikt för GDPR är frågorna i det kostnads fria [Microsoft GDPR Assessment-verktyget](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) en bra början för att förstå din totala beredskap för data integritet. 
+Även om frågorna är specifika för GDPR, ger frågorna i det kostnadsfria microsoft GDPR-utvärderingsverktyget en bra start på att förstå din övergripande beredskap för datasekretess. [](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) 
 
-Organisationer som omfattas av andra integritets regler för data, till exempel CCPA i USA eller Brasilien, kan även dra nytta av detta verktygs lager av beredskaps regler med GDPR.
+Organisationer som omfattas av andra bestämmelser om datasekretess, till exempel CCPA i USA eller Brasiliens LGPD, kan också ha nytta av det här verktygets lager av beredskap på grund av överlappande bestämmelser med GDPR.
 
-GDPR-utvärdering består av följande avsnitt:
+GDPR-bedömning består av följande avsnitt:
 
-| Del | Beskrivning |
+| Avsnitt | Beskrivning |
 |:-------|:-----|
-| Styrning | <ol><li>Uppger integritets policyn uttryckligen vilken data information som bearbetas? </li><li>Kör du regelbundet integritets konsekvenser (PIAs)? </li><li> Använder du ett verktyg för att hantera personlig information (PI)? </li><li> Har du laglig myndighet att driva affärer med PI-data på en viss person? Spårar du medgivande för data? </li><li> Spårar, implementerar och hanterar du gransknings kontroller? Övervakar du för data läckor? </li></ol>|
-| Ta bort och meddela | <ol><li>Ger du uttryckligen instruktioner för hur användares data kan nås? </li><li> Har du dokumenterade processer för att hantera avbeställning? </li><li> Har du en automatiserad borttagnings process för data? </li><li>   Har du en process för att bekräfta identitet när du är med på en kund? </li></ol>|
-| Risk minskning och informations säkerhet | <ol><li>Använder du verktyg för att skanna ostrukturerade data? </li><li>Är alla servrar uppdaterade och tar du bort brand väggar för att skydda dem? </li><li>Använder du regelbunden säkerhets kopiering av dina servrar? </li><li>Övervakar du aktivt för data läckor? </li><li>Krypterar du dina data på rest och överförda? </li></ol>|
-| Princip hantering | <ol><li>Hur hanterar du dina bindande företags regler (BCRs)? </li><li>Spårar du medgivande för data? </li><li> För att en skala från 1 till 5 täcks helt, ska dina kontrakt omfatta data klassificeringar och hanterings behov? </li><li>Har du regelbundet testat ett svars abonnemang för incidenten? </li><li>Vilken princip använder du för att hantera åtkomst? </li></ol>|
+| Styrning | <ol><li>Anger din sekretesspolicy uttryckligen vilken datainformation som bearbetas? </li><li>Kör du regelbundet utvärderingar av sekretesseffekter? </li><li> Använder du ett verktyg för att hantera personlig information (PI)? </li><li> Har du juridisk behörighet att göra affärer med PI-data för en viss person? Spårar du medgivande för data? </li><li> Spårar, implementerar och hanterar du granskningskontroller? Övervakar du dataläckor? </li></ol>|
+| Borttagning och avisering | <ol><li>Ger du explicita instruktioner om hur användarnas data kan nås? </li><li> Har du dokumenterat processer för att hantera avanmälning från medgivande? </li><li> Har du en automatiserad borttagningsprocess för data? </li><li>   Har du en process för att verifiera identitet när du kontaktar en kund? </li></ol>|
+| Åtgärder för risker och informationssäkerhet | <ol><li>Använder du verktyg för att söka igenom ostrukturerade data? </li><li>Är alla servrar uppdaterade och använder du brandväggar för att skydda dem? </li><li>Säkerhetskopiera servrarna regelbundet? </li><li>Övervakar du aktivt för dataläckor? </li><li>Krypterar du dina data vilan och överföringen? </li></ol>|
+| Principhantering | <ol><li>Hur hanterar du dina bcr-regler (Binding Corporate Rules)? </li><li>Spårar du medgivande för data? </li><li> På en skala från 1 till 5 och 5 omfattas kontrakten helt och hållet av dataklassificering och hanteringskrav? </li><li>Har du och testar regelbundet en svarsplan för incidenter? </li><li>Vilken princip använder du för att hantera åtkomst? </li></ol>|
 |||
  
-## <a name="step-3-identify-sensitive-information-types-that-occur-in-your-microsoft-365-environment"></a>Steg 3: identifiera känsliga informations typer i Microsoft 365-miljön. 
+## <a name="step-3-identify-sensitive-information-types-that-occur-in-your-microsoft-365-environment"></a>Steg 3: Identifiera typer av känslig information som förekommer i Microsoft 365-miljön. 
 
-I det här steget ingår identifiering av särskilda känsliga informations typer som är föremål för specifika kontroll kontroller, samt förekomsten av dem i din Microsoft 365-miljö. 
+I det här steget måste du identifiera vissa typer av känslig information som är föremål för särskilda regler och förekomster av dem i Microsoft 365-miljön. 
 
-Att söka efter innehåll i din miljö som innehåller personligt kan vara en Formidable-uppgift, tidigare med en kombination av sökning efter efterlevnad, eDiscovery, Avancerad eDiscovery, DLP och granskning. 
+Att hitta innehåll i din miljö som innehåller personligt kan vara en överväldigande uppgift, tidigare med en kombination av att använda efterlevnadssökning, eDiscovery, Advanced eDiscovery, DLP och granskning. 
 
-Med den nya **data klassificerings** lösningen i Microsoft Compliance Admin Center har det blivit mycket enklare med [innehålls Utforskaren](../compliance/data-classification-content-explorer.md) , som fungerar med inbyggda eller anpassade informations typer, inklusive de som är relaterade till person uppgifter.
+Med den nya lösningen för **dataklassificering** i administrationscentret för Microsofts efterlevnad har det blivit mycket enklare med funktionerna i Innehållsutforskaren, som fungerar med inbyggda eller anpassade typer av känslig information, inklusive sådana som är relaterade till personuppgifter. [](../compliance/data-classification-content-explorer.md)
  
 ### <a name="sensitive-information-types"></a>Typer av känslig information
 
-Microsoft Compliance Admin Center levereras förinstallerat med över 100 känsliga informations typer, de flesta är relaterade till identifiering och lokalisering av person uppgifter. Dessa inbyggda känsliga informations typer kan hjälpa dig att identifiera och skydda kreditkorts nummer, bankkonto nummer, pass nummer och mer, baserat på mönster som definieras av ett vanligt uttryck (regex) eller en funktion. Om du vill ha mer information kan [du läsa vad den känsliga informations typen letar efter](../compliance/what-the-sensitive-information-types-look-for.md).
+Administrationscentret för Microsofts efterlevnad är förinstallerat med över 100 typer av känslig information, de flesta av dem relaterade till att identifiera och hitta personuppgifter. Dessa inbyggda typer av känslig information kan hjälpa till att identifiera och skydda kreditkortsnummer, bankkontonummer, passnummer och mer, baserat på mönster som definieras av ett reguljärt uttryck (regex) eller en funktion. Mer information finns i Vad [typer av känslig information letar efter.](../compliance/what-the-sensitive-information-types-look-for.md)
 
-Om du behöver identifiera och skydda en organisation eller en regional typ av känsliga objekt, till exempel ett anpassat format för ID: na eller annan personlig information som inte redan täcks av en inbyggd känslig informations typ, kan du skapa en anpassad känslig informations typ med följande metoder: 
+Om du behöver identifiera och skydda en organisationsspecifik eller regional typ av känsliga objekt, t.ex. ett anpassat format för anställnings-ID eller annan personlig information som inte redan omfattas av en inbyggd typ av känslig information, kan du skapa en anpassad typ av känslig information med följande metoder: 
 
 - PowerShell
-- Anpassade regler med exakt data träff (EDM)
-- Genom administratörs gränssnittet för användar gränssnitt, som är markerat i [artikeln Använd Poäng-och efterföljandekrav](information-protection-deploy-compliance.md) för regelefterlevnad
+- Anpassade regler med exakt datamatchning (EDM)
+- Via administrationsgränssnittet för efterlevnadscenter, som markerats [i artikeln Använd efterlevnadsresultat och efterlevnadshanteraren](information-protection-deploy-compliance.md)
 
-Du kan också anpassa en befintlig, inbyggd känslig informations typ.
+Du kan också anpassa en befintlig, inbyggd typ av känslig information.
 
-Mer information finns i de här artiklarna:
+Mer information finns i följande artiklar:
 
 - [Anpassa en inbyggd typ av känslig information](../compliance/customize-a-built-in-sensitive-information-type.md)
-- [Vanliga typer av känslig information](../compliance/custom-sensitive-info-types.md)
-- [Skapa en anpassad känslig informations typ i avsnittet säkerhets & efterlevnad](../compliance/create-a-custom-sensitive-information-type.md)
-- [Skapa en anpassad känslig informations typ i säkerhets & Compliance Center PowerShell](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Skapa anpassade typer av känslig information med exakt klassificering baserad på data matchning](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Läs mer om typer av känslig information](../compliance/sensitive-information-type-learn-about.md)
+- [Skapa en anpassad typ av känslig information i Säkerhets- & Efterlevnadscenter](../compliance/create-a-custom-sensitive-information-type.md)
+- [Skapa en anpassad typ av känslig information i Security & Compliance Center PowerShell](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Skapa anpassade typer av känslig information med exakt datamatchning baserad klassificering](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
-### <a name="content-explorer"></a>Innehålls Utforskaren
+### <a name="content-explorer"></a>Innehållsutforskaren
 
-Ett viktigt verktyg som används för att kontrol lera förekomsten av känsliga objekt i miljön är den nya [innehålls Utforskaren](../compliance/data-classification-content-explorer.md) i Microsoft 365 Compliance Admin Center. Det är ett automatiserat verktyg för initial och pågående genomsökning av hela Microsoft 365-prenumerationen för förekomsten av känsliga informations typer och visning av resultat.
+Ett viktigt verktyg för att fastställa förekomsten av känsliga [](../compliance/data-classification-content-explorer.md) objekt i miljön är den nya Innehållsutforskaren i administrationscentret för Microsoft 365-efterlevnad. Det är ett automatiskt verktyg för första och pågående genomsökning av hela Microsoft 365-prenumerationen för förekomst av typer av känslig information och visning av resultaten.
  
-Med det nya innehålls Utforskaren kan du snabbt identifiera platserna för känsliga objekt i miljön med hjälp av inbyggda, känsliga informations typer eller anpassade. Detta kan inbegripa att upprätta en process och tilldelat ansvar för att regelbundet undersöka närvaron och platsen för känsliga objekt.
+Med det nya verktyget Innehållsutforskaren kan du snabbt identifiera platser för känsliga objekt i din miljö med hjälp av inbyggda typer av känslig information eller anpassade. Det kan innefatta att upprätta en process och tilldelas ansvar att regelbundet undersöka närvaro och plats för känsliga objekt.
 
-Tillsammans med de andra stegen i den här artikeln får du en utgångs punkt för att identifiera din totala exponering, beredskap och plats för känsliga objekt för att skydda genom den planerade konfigurationen och övervakningen av Microsoft 365. 
+Tillsammans med de andra steg som beskrivs i den här artikeln utgör detta en utgångspunkt för att identifiera den totala risk exponering, beredskap och plats för känsliga objekt för att skydda genom planerad konfiguration och övervakning av Microsoft 365. 
 
-### <a name="other-methods-to-identify-personal-data-in-your-environment"></a>Andra metoder för att identifiera person uppgifter i din miljö
+### <a name="other-methods-to-identify-personal-data-in-your-environment"></a>Andra metoder för att identifiera personuppgifter i din miljö
 
-Utöver innehålls Utforskaren har organisationer till gång till funktioner för innehålls sökning för att skapa anpassade sökningar för att hitta person uppgifter i deras miljö med hjälp av avancerade Sök villkor och anpassade filter.
+Förutom Innehållsutforskaren har organisationer tillgång till funktionen Innehållssökning för att skapa anpassade sökningar för att hitta personliga data i miljön, med hjälp av avancerade sökvillkor och anpassade filter.
 
-Detaljerad vägledning om hur du använder innehålls sökning för att hitta person uppgifter finns i [den här artikeln](../compliance/search-for-and-find-personal-data.md). Innehålls sökning och andra identifierings metoder är också utforskade i [DSRs för GDPR och CCPA](../compliance/gdpr-dsr-office365.md#introduction-to-dsrs).
+Detaljerad information om hur du använder Innehållssökning för identifiering av personuppgifter finns i den [här artikeln.](../compliance/search-for-and-find-personal-data.md) Innehållssökning och andra identifieringstekniker utforskas också i [DSR-erna för GDPR och CCPA.](../compliance/gdpr-dsr-office365.md#introduction-to-dsrs)
 
-Ytterligare insikter om undersöknings-och reparations tekniker för person uppgifter i Microsoft 365 finns på [skärmen övervaka och svara på artikeln](information-protection-deploy-monitor-respond.md).
+Ytterligare insikter om teknik för andning av personliga data i Microsoft 365 finns i artikeln om övervakning [och svar.](information-protection-deploy-monitor-respond.md)

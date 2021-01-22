@@ -1,9 +1,9 @@
 ---
-title: Ange tids zonen för Microsoft 365 Defender-funktioner
-description: Lär dig hur du väljer tidszon för datum-och tidsinformation som är förknippade med tillbud, automatiserad undersökning och reparation samt avancerad jakt
-keywords: tidszon, datum, tid, MTP, Microsoft Threat Protection, M365, säkerhet, tillbud, automatisk undersökning och svar, flyg, avancerad jakt
+title: Ange tidszonen för Microsoft 365 Defender-funktioner
+description: Lär dig hur du väljer tidszon för datum- och tidsinformation som är kopplad till incidenter, automatiserad undersökning och åtgärd och avancerad sökning
+keywords: tidszon, datum, tid, MTP, Microsoft Threat Protection, M365, säkerhet, incidenter, automatisk undersökning och svar, AIR, avancerad sökning
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 81a744c3f5ebace445a8a944c0fa152ae6b5a09e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 619da1402eadaa78dc14fdad58cb62aa1ffbbcab
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841920"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932844"
 ---
-# <a name="set-the-time-zone-for-microsoft-365-defender"></a>Ange tids zonen för Microsoft 365 Defender
+# <a name="set-the-time-zone-for-microsoft-365-defender"></a>Ange tidszon för Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,9 +37,9 @@ ms.locfileid: "48841920"
 
 
 
-Microsoft 365 Defender kan visa information om datum och tid med antingen din lokala tidszon eller UTC. Den valda tids zonen tillämpas på all information om datum och tid som visas i följande funktioner i Microsoft 365-säkerhets Center:
+Microsoft 365 Defender kan visa datum- och tidsinformation med hjälp av din lokala tidszon eller UTC. Den valda tidszonen gäller för all datum- och tidsinformation som visas i följande funktioner i Säkerhetscenter i Microsoft 365:
 - Incidenter
-- Automatisk undersökning och reparation, inklusive åtgärds Center
+- Automatiserad undersökning och åtgärd, inklusive åtgärdscenter
 - Avancerad jakt
 
-Om du vill ställa in tids zonen för de här funktionerna går du till **Inställningar**  >  **Microsoft 365 Defender**  >  **-tidszon**.
+Gå till Inställningar för Microsoft   >  **365 Defender-tidszonen** om du vill ange tidszonen  >  **för de här funktionerna.**

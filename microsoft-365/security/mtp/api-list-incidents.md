@@ -1,9 +1,9 @@
 ---
-title: Lista över incident API i Microsoft 365 Defender
-description: 'Lär dig hur du visar API: er i Microsoft 365 Defender'
-keywords: lista, incident, incidenter, API
+title: API för listincidenter i Microsoft 365 Defender
+description: Lär dig hur du listar incident-API i Microsoft 365 Defender
+keywords: lista, incident, incidenter, api
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 13508d3ad9d61797517ccb55a27152883947843a
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 39a170a1845ab33f67d77b2de3d5f298f67fdc99
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719434"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932076"
 ---
-# <a name="list-incidents-api-in-microsoft-365-defender"></a>Lista över incident API i Microsoft 365 Defender
+# <a name="list-incidents-api-in-microsoft-365-defender"></a>API för listincidenter i Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,40 +37,40 @@ ms.locfileid: "49719434"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
+> Viss information gäller förhandsversioner av produkter som kan komma att ändras väsentligt innan de släpps till kommersiellt bruk. Microsoft ger inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges här.
 
 
-## <a name="api-description"></a>API-Beskrivning
+## <a name="api-description"></a>API-beskrivning
 
-Med API: er för incidenter kan du sortera genom händelser för att skapa ett underordnat Cybersecurity-svar. Den exponerar en mängd händelser som har flaggats i nätverket, inom det tidsintervall som du angav i din miljö bevarande princip. De senaste incidenterna visas högst upp i listan. Varje händelse innehåller en matris med relaterade aviseringar och tillhör deras relaterade enheter.
+Med API:t för listincidenter kan du sortera olika incidenter för att skapa en välinformerad cybersäkerhet. Här visas en samling incidenter som har flaggats i nätverket, inom det angivna tidsperioden i din miljöbevarandeprincip. De senaste incidenterna visas högst upp i listan. Varje incident innehåller en matris med relaterade aviseringar och deras relaterade enheter.
 
-API: et stöder följande **OData** -operatorer.
+API:t stöder följande **OData-operatorer:**
 
-- `$filter`i `lastUpdateTime` egenskaperna, `createdTime` , `status` , och `assignedTo`
-- `$top`, med maximalt **100**
+- `$filter` på `lastUpdateTime` fliken `createdTime` `status` , och `assignedTo` egenskaperna
+- `$top`, med maximalt **värde 100**
 - `$skip`
 
 ## <a name="limitations"></a>Begränsningar
 
-1. Maximal sid storlek är **100-incidenter**.
-2. Maximal taxa för förfrågningar är **50 samtal per minut** och **1500 samtal per timme**.
+1. Maximal sidstorlek är **100 ärenden.**
+2. Maximalt antal förfrågningar är **50 samtal per minut och** **1 500 samtal per timme.**
 
 ## <a name="permissions"></a>Behörigheter
 
-En av följande behörigheter krävs för att kunna ringa detta API. Mer information om hur du väljer behörigheter finns i [Access Microsoft 365 Defender API: er](api-access.md)
+En av följande behörigheter krävs för att anropa detta API. Mer information, inklusive hur du väljer behörigheter, finns i [Access-API:er för Microsoft 365 Defender](api-access.md)
 
-Behörighets typ | Tillåtelse | Visnings namn för behörighet
+Behörighetstyp | Behörighet | Visningsnamn för behörighet
 -|-|-
-Program | Incident. Read. all | Läs alla händelser
-Program | Incident. ReadWrite. alla | Läsa och skriva alla händelser
-Delegerat (arbets-eller skol konto) | Incident. Read | Läs händelser
-Delegerat (arbets-eller skol konto) | Incident. ReadWrite | Läs-och skriv händelser
+Program | Incident.Read.All | Läs alla incidenter
+Program | Incident.ReadWrite.All | Läsa och skriva alla incidenter
+Delegerat (arbets- eller skolkonto) | Incident.Read | Läs incidenter
+Delegerat (arbets- eller skolkonto) | Incident.ReadWrite | Läs- och skrivincidenter
 
 > [!Note]
-> När du erhåller ett token med användar uppgifter:
+> När du skaffar ett token med användarautentiseringsuppgifter:
 >
-> - Användaren måste ha behörigheten Visa för händelser i portalen.
-> - Svaret innehåller endast händelser som användaren utsätts för.
+> - Användaren måste ha visningsbehörighet för ärenden i portalen.
+> - Svaret inkluderar bara incidenter som användaren exponeras för.
 
 ## <a name="http-request"></a>HTTP-begäran
 
@@ -77,126 +78,126 @@ Delegerat (arbets-eller skol konto) | Incident. ReadWrite | Läs-och skriv händ
 GET /api/incidents
 ```
 
-## <a name="request-headers"></a>Begärandehuvuden
+## <a name="request-headers"></a>Begär sidhuvuden
 
 Namn | Type (Typ) | Beskrivning
 -|-|-
-Bemyndigande | Sträng | Bearer {token}. **Obligatoriskt**
+Auktorisering | Sträng | Bearer {token}. **Obligatoriskt**
 
 
-## <a name="request-body"></a>Brödtext
+## <a name="request-body"></a>Begärandetext
 
-Ingen.
+Inget.
 
-## <a name="response"></a>Interimssvar
+## <a name="response"></a>Svar
 
-Om det lyckas returnerar den här metoden `200 OK` och en lista med [incidenter](api-incident.md) i svars texten.
+Om det lyckas returneras den `200 OK` här metoden och en lista över [incidenter](api-incident.md) i svarstexten.
 
-## <a name="schema-mapping"></a>Schema mappning
+## <a name="schema-mapping"></a>Schemamappning
 
-### <a name="incident-metadata"></a>Metadata för incident
+### <a name="incident-metadata"></a>Incidentmetadata
 
-Fält namn | Beskrivning | Exempel värde
+Fältnamn | Beskrivning | Exempelvärde
 -|-|-
-incidentId | Unik identifierare som representerar incidenten | 924565
-redirectIncidentId | Endast i händelse av att en olycka grupperas tillsammans med en annan incident, som en del av bearbetnings logiken för olyckor. | 924569
-incidentName | Ett sträng värde är tillgängligt för alla händelser. | Utpressnings tro aktivitet
-createdTime | Tidpunkt då incidenten först skapades. | 2020 – 09-06T14:46:57.0733333 Z
-lastUpdateTime | Tid när händelsen senast uppdaterades på Server delen.<br /><br /> Det här fältet kan användas när du ställer in parametern request för det tidsintervall som incidenter hämtas. | 2020 – 09-06T14:46:57.29 Z
-Tilldelat | Ägaren till incidenten eller *Null* om ingen ägare är tilldelad. | secop2@contoso.com
-nomenklatur | Specifikation för incidenten. Egenskaps värden är: *okänd*, *FalsePositive*, *TruePositive* | Okänd
-bedömning | Anger hur incidenten ska visas. Egenskaps värden är: *NotAvailable*, *apt*, *malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *övrigt* | NotAvailable
-status | Kategorisera incidenter (som *aktiva* eller *löst*). Den kan hjälpa dig att organisera och hantera ditt svar på tillbud. | Aktiva
-allvarlighets grad | Anger möjlig påverkan på till gångar. Ju högre allvarlighets grad desto större effekt. Vanligt vis kräver objekt med högre allvarlighets grad den omedelbara uppmärksamheten.<br /><br />Något av följande värden: *information*, *Low*, * medium och *High*. | Risk
-taggen | Matris med anpassade taggar som är kopplade till en olycka, till exempel för att flagga en grupp med incidenter med en gemensam egenskap. | \[\]
-larm | Matris som innehåller alla notifieringar relaterade till incidenten plus annan information, till exempel allvarlighets grad, enheter som ingick i aviseringen och källan till aviseringarna. | \[\] (se informationen om aviserings fälten nedan)
+incidentId | Unikt ID som representerar incidenten | 924565
+redirectIncidentId | Fylls bara i om en incident grupperas tillsammans med en annan incident, som en del av händelsebearbetningslogiken. | 924569
+incidentName | Ett strängvärde som är tillgängligt för varje incident. | Utpressningstrojanaktivitet
+createdTime | Tidpunkt när incidenten skapades först. | 2020-09-06T14:46:57.0733333Z
+lastUpdateTime | Tid då incidenten uppdaterades senast på backend.<br /><br /> Det här fältet kan användas när du anger parametern för begäran för det tidsintervall som incidenterna ska hämtas. | 2020-09-06T14:46:57.29Z
+assignedTo | Ägaren till incidenten, eller *null* om ingen ägare har tilldelats. | secop2@contoso.com
+klassificering | Specifikationen för incidenten. Egenskapsvärdena är: *Okänt, FalsktPositive,* *TruePositive*  | Okänd
+determination | Anger incidentens avgörande. Egenskapsvärdena är: *NotAvailable,* *Apt,* *Malware,* *SecurityPersonnel,* *SecurityTesting,* *UnwantedSoftware,* *Other* | NotAvailable
+status | Kategorisera incidenter (som *aktiva* eller *lösta).* Det kan hjälpa dig att organisera och hantera dina svar på incidenter. | Aktiv
+allvarlighetsgrad | Anger den möjliga påverkan på tillgångar. Ju högre allvarlighetsgrad desto större påverkan. Vanligtvis kräver objekt med högre allvarlighetsgrad mest omedelbar uppmärksamhet.<br /><br />Ett av följande värden: *Information,* *Låg,**Medel och *Hög.* | Medel
+taggar | Matris med anpassade taggar kopplade till en incident, till exempel för att flagga en grupp med incidenter med en gemensam egenskap. | \[\]
+aviseringar | Matris som innehåller alla aviseringar som är relaterade till händelsen samt annan information, till exempel allvarlighetsgrad, enheter som var inblandade i aviseringen och källan till aviseringarna. | \[\] (se information om aviseringsfälten nedan)
 
-### <a name="alerts-metadata"></a>Metadata för aviseringar
+### <a name="alerts-metadata"></a>Aviseringsmetadata
 
-Fält namn | Beskrivning | Exempel värde
+Fältnamn | Beskrivning | Exempelvärde
 -|-|-
-alertId | Unik identifierare som representerar aviseringen | caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC
-incidentId | Unik identifierare som representerar den incident som aviseringen är associerad med | 924565
-serviceSource | Tjänsten som aviseringen härstammar från, till exempel Microsoft Defender för slut punkt, Microsoft Cloud App Security, Microsoft Defender för identitet eller Microsoft Defender för Office 365. | MicrosoftCloudAppSecurity
-creationTime | Tid då aviseringen först skapades. | 2020 – 09-06T14:46:55.7182276 Z
-lastUpdatedTime | Tid när aviseringen senast uppdaterades på Server delen. | 2020 – 09-06T14:46:57.2433333 Z
-resolvedTime | Tid då aviseringen löstes. | 2020 – 09-10T05:22:59Z
-firstActivity | Tid när aviseringen först rapporterades om att aktiviteten uppdaterades på Server delen.| 2020 – 09-04T05:22:59Z
-titelfält | Ett kort värde som är tillgängligt för varje varning. | Utpressnings tro aktivitet
-beskrivning | Sträng värde som beskriver varje varning. | User test user2 (testUser2@contoso.com) manipulerar 99-filer med flera tillägg som slutar med det ovanliga tillägget *Herunterladen*. Det här är ett ovanligt antal fil ändringar och är ett exempel på en potentiell utpressnings tro Jan attack.
-typ | Visuell och numerisk vy av hur långt angreppet har gått under Kill-kedjan. Justerad till [MITREn att&CK™ Framework](https://attack.mitre.org/). | Påverkan
-status | Kategorisera aviseringar (som *nya*, *aktiva* eller *stängda*). Den kan hjälpa dig att organisera och hantera dina svar på aviseringar. | Nya
-allvarlighets grad | Anger möjlig påverkan på till gångar. Ju högre allvarlighets grad desto större effekt. Vanligt vis kräver objekt med högre allvarlighets grad den omedelbara uppmärksamheten.<br>Något av följande värden: *information*, *Low*, * medium och *High*. | Risk
-investigationId | Det automatiska undersöknings-ID: t som utlöste den här varningen. | 1234
-investigationState | Information om utredningens aktuella status. Något av följande värden: *Okänt*, *avslutat*, *SuccessfullyRemediated*, *ofarligt*, *misslyckat*, *PartiallyRemediated*, *pågående*, *PendingApproval*, *PendingResource*, *PartiallyInvestigated*, *TerminatedByUser*, *TerminatedBySystem*, *köade*, *InnerFailure*, *PreexistingAlert*, *,* *UnsupportedAlertType*, *SuppressedAlert*. | UnsupportedAlertType
-nomenklatur | Specifikation för incidenten. Egenskaps värden är: *okänd*, *FalsePositive*, *TruePositive*, eller *Null* | Okänd
-bedömning | Anger hur incidenten ska visas. Egenskaps värden är: *NotAvailable*, *apt*, *malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *other* eller  *Null* | Apt
-Tilldelat | Ägaren till incidenten eller *Null* om ingen ägare är tilldelad. | secop2@contoso.com
-actorName | Aktivitets gruppen, om den är kopplad till den här aviseringen. | UTTRYCKT
-threatFamilyName | Hot familj som är associerad med den här aviseringen. | kan
-mitreTechniques | Angrepps metoderna, som är justerade med [MITREn att&CK](https://attack.mitre.org/)™ Framework. | \[\]
-anordningar | Alla enheter där aviseringar relaterade till händelsen skickades. | \[\] (se informationen om entitetsfält nedan)
+alertid | Unik identifierare som representerar aviseringen | caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC
+incidentId | Unikt ID som representerar den händelse som den här aviseringen är associerad med | 924565
+serviceSource | Tjänst som aviseringen kommer från, till exempel Microsoft Defender för Slutpunkt, Microsoft Cloud App Security, Microsoft Defender för identitet eller Microsoft Defender för Office 365. | MicrosoftCloudAppSecurity
+creationTime | Tidpunkt när aviseringen skapades. | 2020-09-06T14:46:55.7182276Z
+lastUpdatedTime | Tid när aviseringen senast uppdaterades på backend. | 2020-09-06T14:46:57.2433333Z
+resolvedTime | Tid när aviseringen löstes. | 2020-09-10T05:22:59Z
+firstActivity | Tid när aviseringen först rapporterade att aktiviteten uppdaterades på backend.| 2020-09-04T05:22:59Z
+rubrik | Kort identifiering av strängvärdet som är tillgängligt för varje avisering. | Utpressningstrojanaktivitet
+beskrivning | Strängvärde som beskriver varje avisering. | Användaren Test User2 (testUser2@contoso.com) har manipulerat 99 filer med flera tillägg som slutar med den ovanliga filnamnstillägget *herunterladen.* Det här är ett ovanligt antal filmanipuleringar och är därför en potentiell utpressningstrojanattack.
+kategori | Visuell och numerisk vy över hur långt attacken har fortskridt längs kill chain. I linje med [MITRE ATT&CK™ framework.](https://attack.mitre.org/) | Påverkan
+status | Kategorisera aviseringar (som *Ny,* *Aktiv* eller *Matchad).* Det kan hjälpa dig att organisera och hantera dina svar på aviseringar. | Ny
+allvarlighetsgrad | Anger den möjliga påverkan på tillgångar. Ju högre allvarlighetsgrad desto större påverkan. Vanligtvis kräver objekt med högre allvarlighetsgrad mest omedelbar uppmärksamhet.<br>Ett av följande värden: *Information,* *Låg,**Medel och *Hög.* | Medel
+investigationId | Detta är det automatiska undersöknings-ID som utlöses av den här aviseringen. | 1234
+investigationState | Information om undersökningens aktuella status. Ett av följande *värden:* *Okänt,* Avslutat, *Lyckades,*  *Misslyckades,* Delvis åtgärdat, Körs, *VäntandeApproval,* *PendingResource,* *DelvisInvesterat,* *AvslutatByUser,* *TerminatedBySystem,* *Queued,* *InnerFailure,* *PreexistingAlert,* *UnsupportedOs,* *UnsupportedAlertType,* *SuppressedAlert.*   | UnsupportedAlertType
+klassificering | Specifikationen för incidenten. Egenskapsvärdena *är:* *Okänt, FalsktPositive,* *TruePositive* eller *null* | Okänd
+determination | Anger incidentens avgörande. Egenskapsvärdena är: *NotAvailable,* *Apt,* *Malware,* *SecurityPersonnel,* *SecurityTesting,* *UnwantedSoftware,* *Other* eller  *null* | Apt
+assignedTo | Ägaren till händelsen, eller *null om* ingen ägare har tilldelats. | secop2@contoso.com
+actorName | Om det finns en aktivitetsgrupp som är kopplad till den här aviseringen. | BORON
+threatFamilyName | Hotfamilj kopplad till den här aviseringen. | null
+mitreTechniques | Attacktekniker, i enlighet med [MITRE ATT&CK-™](https://attack.mitre.org/)ramverket. | \[\]
+enheter | Alla enheter där aviseringar om händelsen har skickats. | \[\] (se information om entitetsfälten nedan)
 
-### <a name="device-format"></a>Enhets format
+### <a name="device-format"></a>Enhetsformat
 
-Fält namn | Beskrivning | Exempel värde
+Fältnamn | Beskrivning | Exempelvärde
 -|-|-
-DeviceId | Enhets-ID enligt Microsoft Defender ATP. | 24c222b0b60fe148eeece49ac83910cc6a7ef491
-aadDeviceId |  Enhets-ID enligt [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis). Endast tillgängligt för domänanslutna enheter. | kan
-deviceDnsName | Det fullt kvalificerade domän namnet för enheten. | user5cx.middleeast.corp.contoso.com
-osPlatform | Den OS-plattform enheten körs på.| WindowsServer2016
-osBuild | Versions versionen för det OS-enheten. | 14393
-rbacGroupName | Den [rollbaserad åtkomst kontroll](https://docs.microsoft.com/azure/role-based-access-control/overview) gruppen som är associerad med enheten. | WDATP-Ring0
-firstSeen | Tid då enheten först visades. | 2020 – 02-06T14:16:01.9330135 Z
-healthStatus | Enhetens hälso status. | Aktiva
-riskScore | Risk poängen för enheten. | Högsta
-posterna | Alla enheter som har identifierats som en del av eller är relaterade till en viss avisering. | \[\] (se informationen om entitetsfält nedan)
+DeviceId | Enhets-ID:t som angetts i Microsoft Defender ATP. | 24c222b0b60fe148eeece49ac83910cc6a7ef491
+aadDeviceId |  Det enhets-ID som angetts [i Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) Endast tillgängligt för domän anslutna enheter. | null
+deviceDnsName | Det fullständigt kvalificerade domännamnet för enheten. | user5cx.middleeast.corp.contoso.com
+osPlatform | Den OS-plattform som enheten körs på.| WindowsServer2016
+osBuild | Versionsversionen för operativsystemet som enheten kör. | 14393
+rbacGroupName | Den [rollbaserade åtkomstkontrollgruppen](https://docs.microsoft.com/azure/role-based-access-control/overview) (RBAC) som är kopplad till enheten. | WDATP-Ring0
+firstSeen | Tid när enheten sågs för första gången. | 2020-02-06T14:16:01.9330135Z
+healthStatus | Status för enheten. | Aktiv
+riskScore | Riskresultatet för enheten. | Högsta
+enheter | Alla enheter som har identifierats som en del av, eller relaterade till, en viss avisering. | \[\] (se information om entitetsfälten nedan)
 
-### <a name="entity-format"></a>Enhets format
+### <a name="entity-format"></a>Entitetsformat
 
-Fält namn | Beskrivning | Exempel värde
+Fältnamn | Beskrivning | Exempelvärde
 -|-|-
-Angiven | Enheter som har identifierats som en del av eller är relaterade till en viss avisering.<br>Egenskaps värden är: *användare*, *IP*, *URL*, *fil*, *process*, *post låda, e*- *postmeddelande*, *kluster*, *register* | Användare
-SHA1 | Tillgängligt om entityType är *File*.<br>Fil-hash för aviseringar som är kopplade till en fil eller process. | 5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
-sha256 | Tillgängligt om entityType är *File*.<br>Fil-hash för aviseringar som är kopplade till en fil eller process. | 28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
-Datafil | Tillgängligt om entityType är *File*.<br>Fil namnet för aviseringar som är kopplade till en fil eller process | Detector.UnitTests.dll
-Skript | Tillgängligt om entityType är *File*.<br>Fil Sök vägen för aviseringar som är kopplade till en fil eller process | C: \\ \ agent_work_temp \deploy\system\2020-09-06 12_14_54. \ out
-processId | Tillgängligt om entityType är *process*. | 24348
-processCommandLine | Tillgängligt om entityType är *process*. | "Filen är klar för nedladdning \_1911150169.exe"
-processCreationTime | Tillgängligt om entityType är *process*. | 2020 – 07-18T03:25:38.5269993 Z
-parentProcessId | Tillgängligt om entityType är *process*. | 16840
-parentProcessCreationTime | Tillgängligt om entityType är *process*. | 2020 – 07-18T02:12:32.8616797 Z
-IP | Tillgängligt om entityType är *IP*. <br>IP-adress för aviseringar som är kopplade till nätverks händelser, till exempel *kommunikation till ett skadligt nätverk*. | 62.216.203.204
-: | Tillgängligt om entityType är *URL*. <br>URL för aviseringar som är kopplade till nätverks händelser, till exempel *kommunikation till en illvillig nätverks destination*. | down.esales360.cn
-Konto | Tillgänglig om entityType är *User*. | testUser2
-domainName | Tillgänglig om entityType är *User*. | Europa. Corp. contoso
-userSid | Tillgänglig om entityType är *User*. | S-1-5-21-1721254763-462695806-1538882281-4156657
-aadUserId | Tillgänglig om entityType är *User*. | fc8f7484-f813-4db2-afab-bc1507913fb6
-userPrincipalName | Tillgänglig om EntityType är  / *e*- / *postmeddelandet* med användar post låda. | testUser2@contoso.com
-mailboxDisplayName | Tillgänglig om entityType är *post låda*. | testa user2
-mailboxAddress | Tillgänglig om EntityType är  / *e*- / *postmeddelandet* med användar post låda. | testUser2@contoso.com
-clusterBy | Tillgängligt om entityType är ett  *multicluster*. | Satt P2SenderDomain; Innehålls
-avsändare | Tillgänglig om EntityType är  / *e*- / *postmeddelandet* med användar post låda. | user.abc@mail.contoso.co.in
-Recipient | Tillgängligt om entityType är ett *meddelande*. | testUser2@contoso.com
-satt | Tillgängligt om entityType är ett *meddelande*. | \[EXTERN \] uppmärksamhet
-deliveryAction | Tillgängligt om entityType är ett *meddelande*. | Levereras
-securityGroupId | Tillgänglig om entityType är  *SecurityGroup*. | 301c47c8-e15f-4059-AB09-e2ba9ffd372b
-securityGroupName | Tillgänglig om entityType är  *SecurityGroup*. | Operatörer för nätverks konfiguration
-registryHive | Tillgängligt om entityType är  *Registry*. | lokala HKEY- \_ \_ datorer |
-registryKey | Tillgängligt om entityType är  *Registry*. | SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-registryValueType | Tillgängligt om entityType är  *Registry*. | Sträng
-registryValue | Tillgängligt om entityType är  *Registry*. | 31-00-00-00
-deviceId | ID, om sådant finns, för enheten som är relaterad till enheten. | 986e5df8b73dacd43c8917d17e523e76b13c75cd
+entityType | Enheter som har identifierats som en del av eller relaterade till en viss avisering.<br>Egenskapsvärdena är: *Användare,* *Ip,* *URL,* *Fil,* *Process,* *MailBox,* *MailMessage,* *MailCluster,* *Registry* | Användare
+sha1 | Tillgängligt om entityType är *File*.<br>Filhash för aviseringar som associeras med en fil eller process. | 5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
+sha256 | Tillgängligt om entityType är *File*.<br>Filhash för aviseringar som associeras med en fil eller process. | 28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
+fileName | Tillgängligt om entityType är *File*.<br>Filnamnet för aviseringar som associeras med en fil eller process | Detector.UnitTests.dll
+filePath | Tillgängligt om entityType är *File*.<br>Filsökvägen för aviseringar som associeras med en fil eller process | C: \\ \agent_work_temp\Deploy\SYSTEM\2020-09-06 12_14_54\Out
+processId | Tillgängligt om entityType är *Process.* | 24348
+processCommandLine | Tillgängligt om entityType är *Process.* | "Filen är klar att laddas ned \_1911150169.exe"
+processCreationTime | Tillgängligt om entityType är *Process.* | 2020-07-18T03:25:38.5269993Z
+parentProcessId | Tillgängligt om entityType är *Process.* | 16840
+parentProcessCreationTime | Tillgängligt om entityType är *Process.* | 2020-07-18T02:12:32.8616797Z
+ipAddress | Tillgängligt om entityType är *IP.* <br>IP-adress för aviseringar som associeras med nätverkshändelser, till exempel *kommunikation till ett skadligt nätverksdestination.* | 62.216.203.204
+url | Tillgängligt om entityType är *URL.* <br>URL för aviseringar som är associerade med nätverkshändelser, till exempel *kommunikation till ett skadligt nätverksdestination.* | down.esales360.cn
+accountName | Tillgängligt om entityType är *Användare.* | testUser2
+domainName | Tillgängligt om entityType är *User.* | europe.corp.contoso
+userSid | Tillgängligt om entityType är *User.* | S-1-5-21-1721254763-462695806-1538882281-4156657
+aadUserId | Tillgängligt om entityType är *User.* | fc8f7484-f813-4db2-afab-bc1507913fb6
+userPrincipalName | Tillgängligt om entityType är *User* / *MailBox* / *MailMessage.* | testUser2@contoso.com
+mailboxDisplayName | Tillgängligt om entityType är *MailBox.* | testa Användare2
+mailboxAddress | Tillgängligt om entityType är *User* / *MailBox* / *MailMessage.* | testUser2@contoso.com
+clusterBy | Tillgängligt om entityType är *MailCluster.* | Ämne; P2SenderDomain; ContentType
+avsändare | Tillgängligt om entityType är *User* / *MailBox* / *MailMessage.* | user.abc@mail.contoso.co.in
+mottagare | Tillgängligt om entityType är *MailMessage.* | testUser2@contoso.com
+ämne | Tillgängligt om entityType är *MailMessage.* | \[EXTERN \] uppmärksamhet
+deliveryAction | Tillgängligt om entityType är *MailMessage.* | Levererad
+securityGroupId | Tillgängligt om entityType är *SecurityGroup.* | 301c47c8-e15f-4059-ab09-e2ba9ffd372b
+securityGroupName | Tillgängligt om entityType är *SecurityGroup.* | Nätverkskonfigurationsoperatorer
+registryHive | Tillgängligt om entityType är *register.* | HKEY \_ LOCAL \_ MACHINE |
+registryKey | Tillgängligt om entityType är *register.* | SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
+registryValueType | Tillgängligt om entityType är *register.* | Sträng
+registryValue | Tillgängligt om entityType är *register.* | 31-00-00-00
+deviceId | EVENTUELLA ID:n för enheten som är relaterad till enheten. | 986e5df8b73dacd43c8917d17e523e76b13c75cd
 
 ## <a name="example"></a>Exempel
 
-**Ställning**
+**Begäran**
 
 ```HTTP
 GET https://api.security.microsoft.com/api/incidents
 ```
 
-**Interimssvar**
+**Svar**
 
 ```json
 {
@@ -713,9 +714,9 @@ GET https://api.security.microsoft.com/api/incidents
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Gå till API för Microsoft 365 Defender](api-access.md)
-- [Läs mer om API-begränsningar och licensiering](api-terms.md)
+- [Få åtkomst till API:er för Microsoft 365 Defender](api-access.md)
+- [Läs mer om API-begränsningar och -licensiering](api-terms.md)
 - [Förstå felkoder](api-error-codes.md)
-- [Incident översikt](incidents-overview.md)
+- [Incidentöversikt](incidents-overview.md)
 - [API:er för tillbud](api-incident.md)
-- [Uppdatera API för incident](api-update-incidents.md)
+- [API för uppdateringshändelse](api-update-incidents.md)

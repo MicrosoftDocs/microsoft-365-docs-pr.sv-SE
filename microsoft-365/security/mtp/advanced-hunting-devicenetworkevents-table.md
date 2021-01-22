@@ -1,10 +1,10 @@
 ---
-title: DeviceNetworkEvents-tabell i det avancerade jakt-schemat
-description: Lär dig mer om nätverks anslutnings händelser du kan söka i DeviceNetworkEvents-tabellen för det avancerade jakt schemat
-keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, kolumn, datatyp, devicenetworkevents, NetworkCommunicationEvents, nätverks anslutning, fjärr-IP, lokal IP
+title: DeviceNetworkEvents-tabellen i det avancerade sökschemat
+description: Läs mer om nätverksanslutningshändelser som du kan köra frågor från tabellen DeviceNetworkEvents i det avancerade sökschemat
+keywords: avancerad sökning, hotsökning, cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, devicenetworkevents, NetworkCommunicationEvents, nätverksanslutning, fjärr-ip, lokal ip
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: a1a1dd5bbf39a3d95a01cc27169cf3987f5c788e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 0ed696f36737a4102895369e1254b4215cad4def
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842675"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931224"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -36,45 +37,45 @@ ms.locfileid: "48842675"
 
 
 
-`DeviceNetworkEvents`Tabellen i det [avancerade jakt](advanced-hunting-overview.md) -schemat innehåller information om nätverks anslutningar och relaterade händelser. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+Tabellen `DeviceNetworkEvents` i det avancerade [sökschemat](advanced-hunting-overview.md) innehåller information om nätverksanslutningar och relaterade händelser. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!TIP]
-> Detaljerad information om de händelse typer ( `ActionType` värden) som stöds av en tabell finns i den [inbyggda schema referensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) i säkerhets Center.
+> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` [inbyggda schemareferensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) som finns i säkerhetscentret.
 
-Information om andra tabeller i det avancerade jakt schema [finns i referens för avancerad jakt](advanced-hunting-schema-tables.md).
+Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | Datum och tid när händelsen registrerades |
-| `DeviceId` | strängvärdet | Unik identifierare för datorn i tjänsten |
-| `DeviceName` | strängvärdet | Det fullständigt kvalificerade domän namnet (FQDN) för datorn |
-| `ActionType` | strängvärdet | Typ av aktivitet som utlöste händelsen. Mer information finns [i referens för in-Portal schema](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
-| `RemoteIP` | strängvärdet | IP-adress som var ansluten till |
-| `RemotePort` | signera | TCP-port på fjär renheten som du anslöt till |
-| `RemoteUrl` | strängvärdet | URL-adressen eller det fullständigt kvalificerade domän namnet (FQDN) som anslöts till |
-| `LocalIP` | strängvärdet | IP-adress som tilldelats till den lokala datorn under kommunikationen |
-| `LocalPort` | signera | TCP-port på den lokala datorn som används vid kommunikation |
-| `Protocol` | strängvärdet | Protokoll som används under kommunikationen |
-| `LocalIPType` | strängvärdet | Typ av IP-adress, till exempel offentlig, privat, reserverad, loopback, Teredo, FourToSixMapping och broadcast |
-| `RemoteIPType` | strängvärdet | Typ av IP-adress, till exempel offentlig, privat, reserverad, loopback, Teredo, FourToSixMapping och broadcast |
-| `InitiatingProcessSHA1` | strängvärdet | SHA-1 av processen (bildfil) som initierade händelsen |
-| `InitiatingProcessSHA256` | strängvärdet | SHA-256 av processen (bildfil) som initierade händelsen. Det här fältet är oftast inte ifyllt – Använd SHA1-kolumnen när det är tillgängligt. |
-| `InitiatingProcessMD5` | strängvärdet | MD5-hash för processen (bildfil) som initierade händelsen |
-| `InitiatingProcessFileName` | strängvärdet | Namn på processen som initierade händelsen |
-| `InitiatingProcessId` | signera | Process-ID (PID) för processen som initierade händelsen |
-| `InitiatingProcessCommandLine` | strängvärdet | Kommando rad som används för att köra processen som initierade händelsen |
-| `InitiatingProcessCreationTime` | datetime | Datum och tid när processen som initierade händelsen startade |
-| `InitiatingProcessFolderPath` | strängvärdet | Mapp som innehåller processen (bildfil) som initierade händelsen |
-| `InitiatingProcessParentFileName` | strängvärdet | Namnet på den överordnade process som skapade processen som är ansvarig för händelsen |
-| `InitiatingProcessParentId` | signera | Process-ID (PID) för den överordnade processen som skapade processen för händelsen |
-| `InitiatingProcessParentCreationTime` | datetime | Datum och tid då den överordnade för processen som är ansvarig för händelsen startade |
-| `InitiatingProcessAccountDomain` | strängvärdet | Domän för det konto som körde processen som är ansvarig för händelsen |
-| `InitiatingProcessAccountName` | strängvärdet | Användar namn för det konto som körde processen som är ansvarig för händelsen |
-| `InitiatingProcessAccountSid` | strängvärdet | Säkerhets identifierare (SID) för det konto som körde processen som är ansvarig för händelsen |
-| `InitiatingProcessIntegrityLevel` | strängvärdet | Integritets nivå för den process som initierade händelsen. Windows tilldelar integritets nivåer för processer baserat på vissa egenskaper, till exempel om de startades från en nedladdning via Internet. Dessa integritets nivåer påverkar behörigheter för resurser |
-| `InitiatingProcessTokenElevation` | strängvärdet | Tokentyp som anger närvaron av en behörighets höjning (User Access Control) som tillämpas på processen som initierade händelsen |
-| `ReportId` | tids | Händelse identifierare baserad på en upprepande räknare. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna enhets namn och tidsstämpel |
-| `AppGuardContainerId` | strängvärdet | Identifierare för den virtualiserade behållare som används av Application Guard för att isolera webbläsaren |
+| `Timestamp` | datetime | Datum och tid då händelsen spelades in |
+| `DeviceId` | sträng | Unikt ID för datorn i tjänsten |
+| `DeviceName` | sträng | Fullständigt kvalificerat domännamn (FQDN) för datorn |
+| `ActionType` | sträng | Typ av aktivitet som utlöste händelsen. Mer information [finns i referensen till portalschemat](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
+| `RemoteIP` | sträng | IP-adress som var ansluten till |
+| `RemotePort` | int | TCP-port på fjärrenheten som var ansluten till |
+| `RemoteUrl` | sträng | URL eller fullständigt kvalificerat domännamn (FQDN) som var anslutet till |
+| `LocalIP` | sträng | IP-adress tilldelad till den lokala datorn som används under kommunikation |
+| `LocalPort` | int | TCP-port på den lokala datorn som används under kommunikation |
+| `Protocol` | sträng | Protokoll som används under kommunikationen |
+| `LocalIPType` | sträng | Typ av IP-adress, till exempel Offentlig, Privat, Reserverad, Loopback,Okedo, FourToSixMapping och Sändning |
+| `RemoteIPType` | sträng | Typ av IP-adress, till exempel Offentlig, Privat, Reserverad, Loopback,Okedo, FourToSixMapping och Sändning |
+| `InitiatingProcessSHA1` | sträng | SHA-1 för processen (bildfil) som initierade händelsen |
+| `InitiatingProcessSHA256` | sträng | SHA-256 för processen (bildfil) som initierade händelsen. Det här fältet fylls vanligtvis inte i – använd SHA1-kolumnen när den är tillgänglig. |
+| `InitiatingProcessMD5` | sträng | MD5-hash för processen (bildfil) som initierade händelsen |
+| `InitiatingProcessFileName` | sträng | Namn på processen som initierade händelsen |
+| `InitiatingProcessId` | int | Process-ID (PID) för processen som initierade händelsen |
+| `InitiatingProcessCommandLine` | sträng | Kommandorad som används för att köra processen som initierade händelsen |
+| `InitiatingProcessCreationTime` | datetime | Datum och tid då processen som initierade händelsen startades |
+| `InitiatingProcessFolderPath` | sträng | Mapp som innehåller den process (bildfil) som initierade händelsen |
+| `InitiatingProcessParentFileName` | sträng | Namn på den överordnade process som gav upphov till processen som ansvarar för händelsen |
+| `InitiatingProcessParentId` | int | Process-ID (PID) för den överordnade process som hanterade processen som ansvarar för händelsen |
+| `InitiatingProcessParentCreationTime` | datetime | Datum och tid då den överordnade processen som ansvarar för händelsen startades |
+| `InitiatingProcessAccountDomain` | sträng | Domän för kontot som körde processen som ansvarar för händelsen |
+| `InitiatingProcessAccountName` | sträng | Användarnamnet för det konto som körde processen som ansvarar för händelsen |
+| `InitiatingProcessAccountSid` | sträng | Säkerhetsidentifierare (SID) för det konto som körde processen som ansvarar för händelsen |
+| `InitiatingProcessIntegrityLevel` | sträng | Integritetsnivån för processen som initierade händelsen. Windows tilldelar integritetsnivåer till processer baserat på vissa egenskaper, till exempel om de startades från en Internetnedladdning. De här integritetsnivåerna påverkar behörigheter för resurser |
+| `InitiatingProcessTokenElevation` | sträng | Tokentyp som anger närvaro eller frånvaro av UAC-behörighets ökning (User Access Control) som används för processen som initierade händelsen |
+| `ReportId` | long | Händelseidentifierare baserade på en återkommande räknare. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp |
+| `AppGuardContainerId` | sträng | Identifierare för den virtualiserade behållaren som används av Application Guard för att isolera webbläsaraktivitet |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

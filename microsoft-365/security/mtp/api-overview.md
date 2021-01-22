@@ -1,9 +1,9 @@
 ---
-title: 'Översikt över Microsoft 365 Defender API: er'
-description: 'Läs mer om tillgängliga API: er i Microsoft 365 Defender'
-keywords: 'API, API: er, översikt, tillbud, tillbud, hot om, Microsoft 365 Defender'
+title: Översikt över MICROSOFT 365 Defender API:er
+description: Läs mer om tillgängliga API:er i Microsoft 365 Defender
+keywords: api, apis, översikt, incident, incidenter, hotsökning, microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1a75a561e60c05208e8ea302505f9644ac0bc044
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 8e06d4b4f7c895b532091c73e8269411fb38bf21
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719196"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931008"
 ---
-# <a name="overview-of--microsoft-365-defender-apis"></a>Översikt över Microsoft 365 Defender API: er
+# <a name="overview-of--microsoft-365-defender-apis"></a>Översikt över API:er för Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,30 +36,30 @@ ms.locfileid: "49719196"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
+> Viss information gäller förhandsversioner av produkter som kan komma att ändras väsentligt innan de släpps till kommersiellt bruk. Microsoft ger inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges här.
 
-Microsoft 365 Defender är baserat på en integrations klar plattform.
+Microsoft 365 Defender är uppbyggt på en plattform som är integrationsklar.
 
-Använd Microsoft 365 Defender API: er till att automatisera arbets flöden baserat på tabellerna delade incidenter och avancerade jakt.
+Använd Microsoft 365 Defender API:er för att automatisera arbetsflöden baserat på delade tabeller för incidenter och avancerad sökning.
 
-- Sammanslagen **[händelse i kö](api-incident.md)** -fokusera på vad som är kritiskt genom att gruppera hela attack omfattningen och alla aktiva till gångar tillsammans under API: t.
+- **[Kombinerad incidentkö](api-incident.md)** – Fokusera på vad som är viktigt genom att gruppera hela attackomfånget och alla påverkade tillgångar under incident-API:t.
 
-- Stöldskydd **[mellan produkter](api-advanced-hunting.md)** – Använd din säkerhets grupps organisatoriska vetskap för att hitta inloggnings problem, genom att skapa egna anpassade frågor för att ändra rå data som samlats in över flera olika skydds produkter.
+- **[Produkter](api-advanced-hunting.md)** med flera hot på vift – använd säkerhetsteamets organisationskunskaper för att leta efter komprometterade tecken genom att skapa egna anpassade frågor för att gå igenom rådata som samlas in över flera skyddsprodukter.
 
-Tillsammans med dessa Microsoft 365 Defender-specifika API: er kan de andra säkerhets produkterna Visa [ytterligare API: er](api-articles.md) som hjälper dig att utnyttja deras unika funktioner.
+Tillsammans med dessa Microsoft 365 Defender-specifika API:er visar var och en av våra andra säkerhetsprodukter ytterligare [API:er](api-articles.md) för att hjälpa dig att dra nytta av deras unika funktioner.
 
 ## <a name="learn-more"></a>Mer information
 
-| **Förstå hur du kommer åt API: erna** |
+| **Förstå hur du kommer åt API:er** |
 |-|
-| [Läs mer om API-kvoter och licensiering](api-terms.md) |
-| [Gå till API för Microsoft 365 Defender](api-access.md) |
+| [Läs mer om API-kvoter och -licensiering](api-terms.md) |
+| [Få åtkomst till API:er för Microsoft 365 Defender](api-access.md) |
 | **Skapa appar** |
-| [Skapa en ' Hej världen '-App](api-hello-world.md) |
-| [Skapa en app för att få åtkomst till Microsoft 365 Defender API: er för en användares räkning](api-create-app-user-context.md) |
-| [Skapa en app för åtkomst till Microsoft 365 Defender utan en användare](api-create-app-web.md) |
-| [Skapa en app med åtkomst för flera innehavare partner till Microsoft 365 Defender API: er](api-partner-access.md) |
-| **Felsöka och underhålla dina appar** |
+| [Skapa appen Hej världen](api-hello-world.md) |
+| [Skapa en app för att få åtkomst till Microsoft 365 Defender-API:er för en användares räkning](api-create-app-user-context.md) |
+| [Skapa en app för att komma åt Microsoft 365 Defender utan en användare](api-create-app-web.md) |
+| [Skapa en app med partneråtkomst för flera klientorganisationsklienter till API:er för Microsoft 365 Defender](api-partner-access.md) |
+| **Felsöka och underhålla appar** |
 | [Förstå API-felkoder](api-error-codes.md) |
-| [Hantera hemligheter i dina appar med Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/) |
-| [Implementera OAuth 2,0-auktorisering för användarens inloggning](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |
+| [Hantera hemligheter i dina appar med Azure-nyckelvalv](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/) |
+| [Implementera OAuth 2.0-auktorisering för användar logga in](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |

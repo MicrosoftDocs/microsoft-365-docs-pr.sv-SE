@@ -1,10 +1,10 @@
 ---
-title: Rekommenderade principer för säkra dokument – Microsoft 365 för företag | Microsoft-dok
-description: Beskriver policyerna för Microsoft-rekommendationer om hur du skyddar åtkomst till SharePoint-filer.
+title: Rekommenderade principer för säkra dokument – Microsoft 365 för företag| Microsoft Docs
+description: Här beskrivs principer för Microsofts rekommendationer om hur du skyddar filåtkomst i SharePoint.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -17,85 +17,86 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 7e8104e234bd1b724bc62fb1a9b401ab83a2bcb4
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.technology: mdo
+ms.openlocfilehash: a3485896cae5e41808cfd16a77d484a35c768a6d
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357533"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931776"
 ---
-# <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Policy rekommendationer för att skydda SharePoint-webbplatser och-filer
+# <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Principrekommendationer för att skydda SharePoint-webbplatser och -filer
 
-I den här artikeln beskrivs hur du implementerar Rekommenderad identitet och enhets åtkomst principer för att skydda SharePoint och OneDrive för företag. Den här vägledningen bygger på [vanliga principer för identitets-och enhets åtkomst](identity-access-policies.md).
+I den här artikeln beskrivs hur du implementerar de rekommenderade principerna för identitets- och enhetsåtkomst för att skydda SharePoint och OneDrive för företag. Den här vägledningen bygger på de [gemensamma principerna för identitets- och enhetsåtkomst.](identity-access-policies.md)
 
-De här rekommendationerna bygger på tre olika nivåer av säkerhet och skydd för SharePoint-filer som kan användas baserat på hur olika behov fungerar: **original plan**, **känslig** och **högreglerad**. Du kan läsa mer om de här säkerhets nivåerna och de rekommenderade klient operativ systemen som hänvisas till av de här rekommendationerna i [översikten](microsoft-365-policies-configurations.md).
+De här rekommendationerna baseras på tre olika nivåer av säkerhet och skydd för SharePoint-filer som kan tillämpas utifrån dina behovs granularitet: **baslinje,** känslig och mycket **reglerad.** Du kan läsa mer om dessa säkerhetsnivåer och de rekommenderade klientoperativsystemet, som refereras av dessa rekommendationer [i översikten.](microsoft-365-policies-configurations.md)
 
-Förutom att implementera den här vägledningen måste du konfigurera SharePoint-webbplatser med rätt skydds nivå, inklusive att ange lämpliga behörigheter för känslig och hög reglerad information.
+Förutom att implementera den här vägledningen måste du konfigurera SharePoint-webbplatser med rätt skyddsnivå, inklusive att ange lämpliga behörigheter för känsligt och starkt reglerat innehåll.
 
-## <a name="updating-common-policies-to-include-sharepoint-and-onedrive-for-business"></a>Uppdatera gemensamma principer för att inkludera SharePoint och OneDrive för företag
+## <a name="updating-common-policies-to-include-sharepoint-and-onedrive-for-business"></a>Uppdatera vanliga principer så att de omfattar SharePoint och OneDrive för företag
 
-För att skydda filer i SharePoint och OneDrive illustrerar följande diagram vilka principer som ska uppdateras från principer för åtkomst för identitet och enheter.
+I följande diagram visas vilka principer som ska uppdateras från de gemensamma principerna för identitets- och enhetsåtkomst för att skydda filer i SharePoint och OneDrive.
 
-[![Sammanfattning av princip uppdateringar för att skydda åtkomst till team och dess beroende tjänster](../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png)
+[![Sammanfattning av principuppdateringar för att skydda åtkomsten till Teams och dess beroende tjänster](../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png)
 
-[Visa en större version av bilden](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png)
+[Visa en större version av den här bilden](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png)
 
-Om du har inkluderat SharePoint när du skapade de gemensamma policyerna behöver du bara skapa de nya principerna. För principer för villkorsstyrd åtkomst inkluderar SharePoint OneDrive.
+Om du inkluderade SharePoint när du skapade de gemensamma principerna behöver du bara skapa de nya principerna. SharePoint innehåller OneDrive för villkorsstyrda åtkomstprinciper.
 
-De nya principerna implementerar enhets skydd för känsligt och starkt reglerat innehåll genom att använda specifika åtkomst krav på SharePoint-webbplatser som du anger.
+Med de nya principerna implementeras enhetsskydd för känsligt och starkt reglerat innehåll genom att särskilda åtkomstkrav tillämpas på SharePoint-webbplatser som du anger.
 
-I följande tabell visas de principer som du måste granska och uppdatera eller skapa en ny för SharePoint. Gemensamma principer-länken till de associerade konfigurations anvisningarna i artikeln om [principer för åtkomst policys för identitet och enheter](identity-access-policies.md) .
+I följande tabell visas de principer som du antingen behöver granska och uppdatera eller skapa nya för SharePoint. De vanliga principerna länkar till de tillhörande konfigurationsanvisningarna i [artikeln Principer för gemensamma identiteter och enhetsåtkomst.](identity-access-policies.md)
 
-|Skydds nivå|Principerna|Mer information|
+|Skyddsnivå|Principer|Mer information|
 |---|---|---|
-|**Grundläggande**|[Kräv MFA när en inloggnings risk är *mellan* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera SharePoint i tilldelningen av Cloud-appar.|
-||[Blockera klienter som inte har stöd för modern autentisering](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inkludera SharePoint i tilldelningen av Cloud-appar.|
-||[Tillämpa program data skydds policy](identity-access-policies.md#apply-app-data-protection-policies)|Se till att alla rekommenderade appar ingår i listan med program. Se till att uppdatera policyn för varje plattform (iOS, Android, Windows).|
-||[Kräv kompatibla PC-datorer](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Ta med SharePoint i listan med moln program.|
-||[Använda tvingande program begränsningar i SharePoint](#use-app-enforced-restrictions-in-sharepoint)|Lägg till den här nya principen. Detta meddelar Azure Active Directory (Azure AD) att använda inställningarna i SharePoint. Den här principen gäller för alla användare, men påverkar bara åtkomst till webbplatser som ingår i SharePoint Access-principer.|
-|**Känslig**|[Kräv MFA när en inloggnings risk är *låg*, *medium* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera SharePoint i tilldelningarna för molnappar.|
-||[Kräv kompatibla datorer *och* mobila enheter](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Ta med SharePoint i listan med moln program.|
-||[Kontroll policy för SharePoint-åtkomst](#sharepoint-access-control-policies): Tillåt åtkomst via webbläsare till specifika SharePoint-webbplatser från ohanterade enheter.|Detta förhindrar redigering och nedladdning av filer. Använd PowerShell för att ange webbplatser.|
-|**Strikt reglerad**|[Kräv *alltid* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera SharePoint i tilldelningen av Cloud-appar.|
-||[Åtkomst kontroll princip för SharePoint](#use-app-enforced-restrictions-in-sharepoint): blockera åtkomst till specifika SharePoint-webbplatser från ohanterade enheter.|Använd PowerShell för att ange webbplatser.|
+|**Grundläggande**|[Kräv MFA när inloggningsrisken är *medelhög* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Ta med SharePoint när du tilldelning av molnappar.|
+||[Blockera klienter som inte har stöd för modern autentisering](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Ta med SharePoint i tilldelningen av molnappar.|
+||[Använda principer för APP-dataskydd](identity-access-policies.md#apply-app-data-protection-policies)|Se till att alla rekommenderade appar finns med i listan med appar. Se till att uppdatera principen för varje plattform (iOS, Android, Windows).|
+||[Kräv kompatibla PC-datorer](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Ta med SharePoint i listan med molnappar.|
+||[Använda appanvändningsbegränsningar i SharePoint](#use-app-enforced-restrictions-in-sharepoint)|Lägg till den här nya principen. Det innebär att Azure Active Directory (Azure AD) använder inställningarna som anges i SharePoint. Den här principen gäller för alla användare, men påverkar bara åtkomsten till webbplatser som ingår i SharePoint-åtkomstprinciper.|
+|**Känslig**|[Kräv MFA när inloggningsrisken är *låg,* *medel* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Ta med SharePoint i uppgifterna för molnappar.|
+||[Kräv kompatibla datorer *och* mobila enheter](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Ta med SharePoint i listan med molnappar.|
+||[Princip för åtkomstkontroll i SharePoint:](#sharepoint-access-control-policies)Tillåt åtkomst endast i webbläsaren till vissa SharePoint-webbplatser från ohanterade enheter.|Det förhindrar redigering och nedladdning av filer. Använd PowerShell för att ange webbplatser.|
+|**Strikt reglerad**|[*Kräv* alltid MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Ta med SharePoint i tilldelningen av molnappar.|
+||[Princip för åtkomstkontroll i SharePoint:](#use-app-enforced-restrictions-in-sharepoint)Blockera åtkomst till vissa SharePoint-webbplatser från ohanterade enheter.|Använd PowerShell för att ange webbplatser.|
 |
 
-## <a name="use-app-enforced-restrictions-in-sharepoint"></a>Använd program begränsningar i SharePoint
+## <a name="use-app-enforced-restrictions-in-sharepoint"></a>Använda apptvingade begränsningar i SharePoint
 
-Om du implementerar Access-kontroller i SharePoint måste du skapa den här principen för villkorsstyrd åtkomst i Azure AD för att Azure AD ska kunna använda de principer du konfigurerar i SharePoint. Den här principen gäller för alla användare, men påverkar bara åtkomst till de webbplatser som du anger med PowerShell när du skapar Access-kontroller i SharePoint.
+Om du implementerar åtkomstkontroller i SharePoint måste du skapa den här villkorsstyrda åtkomstprincipen i Azure AD för att ange att Azure AD ska tillämpa de principer som du konfigurerar i SharePoint. Den här principen gäller för alla användare, men påverkar bara åtkomsten till de webbplatser som du anger med PowerShell när du skapar åtkomstkontroller i SharePoint.
 
-Om du vill konfigurera den här principen kan du läsa "blockera eller begränsa åtkomst till specifika SharePoint-webbplats samlingar eller OneDrive-konton" i [kontrol lera åtkomst från ohanterade enheter](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
+Information om hur du konfigurerar den här principen finns i "Blockera eller begränsa åtkomst till specifika SharePoint-webbplatssamlingar eller OneDrive-konton" i Styra åtkomst från [ohanterade enheter.](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)
 
-## <a name="sharepoint-access-control-policies"></a>Åtkomst kontroll principer för SharePoint
+## <a name="sharepoint-access-control-policies"></a>Principer för åtkomstkontroll i SharePoint
 
-Microsoft rekommenderar att du skyddar innehåll på SharePoint-webbplatser med känsligt och starkt reglerat innehåll med enhets åtkomst kontroller. Det gör du genom att skapa en princip som anger nivån på skyddet och webbplatserna som skyddar mot.
+Microsoft rekommenderar att du skyddar innehåll på SharePoint-webbplatser med känsligt och starkt reglerat innehåll med enhetsåtkomstkontroller. Det gör du genom att skapa en princip som anger skyddsnivån och webbplatserna som skyddet ska gälla för.
 
-- Känsliga webbplatser: Tillåt åtkomst via webbläsare. Detta förhindrar att användare redigerar och laddar ned filer.
-- Högreglerade webbplatser: blockera åtkomst från ohanterade enheter.
+- Känsliga webbplatser: Tillåt åtkomst endast i webbläsaren. Det förhindrar att användare redigerar och laddar ned filer.
+- Starkt reglerade webbplatser: Blockera åtkomst från ohanterade enheter.
 
-Se "blockera eller begränsa åtkomst till specifika SharePoint-webbplats samlingar eller OneDrive-konton" i [kontrol lera åtkomst från ohanterade enheter](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
+Se "Blockera eller begränsa åtkomst till specifika SharePoint-webbplatssamlingar eller OneDrive-konton" i Kontrollera åtkomst [från ohanterade enheter.](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)
 
-## <a name="how-these-policies-work-together"></a>Hur dessa principer fungerar tillsammans
+## <a name="how-these-policies-work-together"></a>Så här fungerar dessa principer tillsammans
 
-Det är viktigt att förstå att SharePoint-webbplatsens behörigheter normalt baseras på affärs behov för åtkomst till webbplatser. Dessa behörigheter hanteras av webbplats ägare och kan vara mycket dynamiska. Genom att använda åtkomst principer för SharePoint-enheter skyddas de här webbplatserna, oavsett om användare är tilldelade till en Azure AD-grupp som är kopplad till original-, känsligt-eller starkt reglerat skydd.
+Det är viktigt att förstå att SharePoint-webbplatsbehörigheter vanligtvis baseras på affärs behov av åtkomst till webbplatser. De här behörigheterna hanteras av webbplatsägare och kan vara mycket dynamiska. Användning av principer för enhetsåtkomst i SharePoint säkerställer skydd för dessa webbplatser, oavsett om användare tilldelas till en Azure AD-grupp som är kopplad till baslinje, känsligt eller starkt reglerat skydd.
 
-Följande bild visar ett exempel på hur åtkomst principer för SharePoint-enheter skyddar åtkomst till webbplatser för en användare.
+Följande bild visar ett exempel på hur principer för enhetsåtkomst i SharePoint skyddar användarens åtkomst till webbplatser.
 
-[![Exempel på hur åtkomst principer för SharePoint-enheter skyddar webbplatser](../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)
+[![Exempel på hur åtkomstprinciper för SharePoint-enheter skyddar webbplatser](../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)
 
-[Visa en större version av bilden](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)
+[Visa en större version av den här bilden](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)
 
-Jonas har grundläggande principer för villkorsstyrd åtkomst, men han kan få åtkomst till SharePoint-webbplatser med känsligt och starkt reglerat skydd.
+James har grundläggande villkorsstyrda åtkomstprinciper tilldelade, men han kan ges åtkomst till SharePoint-webbplatser med känsligt eller starkt reglerat skydd.
 
-- Om Johan har åtkomst till en känslig eller högreglerad webbplats han är medlem i sin dator, ges hans åtkomst så länge datorn är kompatibel.
-- Om Jonas öppnar en känslig webbplats han är medlem i att använda sin ohanterade telefon, som är tillåten för bas linje användare, får han eller hon skrivskyddad åtkomst till den känsliga webbplatsen på grund av enhets åtkomst principen som har kon figurer ATS för den här webbplatsen.
-- Om Johan har åtkomst till en högreglerad webbplats som han är medlem i med sin ohanterade telefon kommer han att blockeras på grund av åtkomst principen som har kon figurer ATS för den här webbplatsen. Han kan bara komma åt den här webbplatsen via sin hanterade och kompatibla dator.
+- Om James öppnar en känslig eller hårt reglerad webbplats är han medlem i sin dator, men hans åtkomst beviljas så länge hans dator är kompatibel.
+- Om James öppnar en känslig webbplats är han medlem i sin ohanterade telefon, som är tillåten för grundläggande användare, han får endast webbläsaråtkomst till den känsliga webbplatsen på grund av principen för enhetsåtkomst som konfigurerats för den här webbplatsen.
+- Om James använder en webbplats med hög lagstiftning är han medlem i sin ohanterade telefon, så han kommer att blockeras på grund av åtkomstprincipen som konfigurerats för den här webbplatsen. Han kan bara komma åt den här webbplatsen med sin hanterade och kompatibla dator.
 
 ## <a name="next-step"></a>Nästa steg
 
-![Steg 4: principer för Microsoft 365-molnappar](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![Steg 4: Principer för Microsoft 365-molnappar](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
-Konfigurera principer för villkorsstyrd åtkomst för:
+Konfigurera villkorsstyrda åtkomstprinciper för:
 
 - [Microsoft Teams](teams-access-policies.md)
 - [Exchange Online](secure-email-recommended-policies.md)

@@ -1,10 +1,10 @@
 ---
-title: DeviceFromIP ()-funktion i avancerad jakt för Microsoft 365 Defender
-description: Lär dig hur du använder funktionen DeviceFromIP () för att hämta enheter som har tilldelats en viss IP-adress
-keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, enhet, devicefromIP, funktion och berikning
+title: Funktionen DeviceFromIP() i avancerad sökning för Microsoft 365 Defender
+description: Lär dig hur du använder funktionen DeviceFromIP() för att få enheter som har tilldelats en specifik IP-adress
+keywords: avancerad sökning, hotsökning, cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, enhet, devicefromIP, funktion, vinst
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 65409dd93f3703f1af115178c4cd9fa470fb7497
-ms.sourcegitcommit: 25ac2736a66bb72c0d574c3fbde7472ac98d5321
+ms.technology: m365d
+ms.openlocfilehash: 86373c903252fde4ab71c80a81404428a7366da7
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "49741118"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931308"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 
@@ -38,17 +39,17 @@ ms.locfileid: "49741118"
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 
-Använd `DeviceFromIP()` funktionen i de [avancerade jakt](advanced-hunting-overview.md) frågorna för att snabbt få reda på listan med enheter som har tilldelats en viss IP-adress vid en viss tidpunkt. 
+Använd funktionen i dina avancerade sökningsfrågor för att snabbt hämta listan över enheter som har tilldelats till en viss `DeviceFromIP()` IP-adress vid en [](advanced-hunting-overview.md) viss tidpunkt. 
 
 Den här funktionen returnerar en tabell med följande kolumner:
 
 | Kolumn | Datatyp | Beskrivning |
 |------------|-------------|-------------|
-| `IP` | strängvärdet | IP-adress  |
-| `DeviceId` | strängvärdet | Unik identifierare för enheten i tjänsten |
+| `IP` | sträng | IP-adress  |
+| `DeviceId` | sträng | Unikt ID för enheten i tjänsten |
 
 
-## <a name="syntax"></a>Frågesyntaxen
+## <a name="syntax"></a>Syntax
 
 ```kusto
 invoke DeviceFromIP()
@@ -58,13 +59,13 @@ invoke DeviceFromIP()
 
 Den här funktionen anropas som en del av en fråga.
 
-- **x**– den första parametern är oftast redan en kolumn i frågan. I det här fallet är det kolumnen som heter `IP` , den IP-adress som du vill visa en lista över enheter som har tilldelats till den. Det ska vara en lokal IP-adress. Externa IP-adresser stöds inte.
-- **y**– en andra valfri parameter är den `Timestamp` som används för att hämta de senaste tilldelade enheterna från en viss tid. Om det inte anges returnerar funktionen de senaste tillgängliga posterna.
+- **x**– Den första parametern är vanligtvis redan en kolumn i frågan. I det här fallet är det kolumnen med namnet , IP-adressen som du vill se en lista med `IP` enheter som har tilldelats till den. Det ska vara en lokal IP-adress. Externa IP-adresser stöds inte.
+- **y**– En andra valfri parameter är den som instruerar funktionen att hämta de senaste tilldelade enheterna `Timestamp` från en viss tid. Om den inte anges returnerar funktionen de senaste tillgängliga posterna.
 
 ## <a name="example"></a>Exempel
 
 
-### <a name="get-the-latest-devices-that-have-been-assigned-specific-ip-addresses"></a>Skaffa de senaste enheterna som har tilldelats särskilda IP-adresser
+### <a name="get-the-latest-devices-that-have-been-assigned-specific-ip-addresses"></a>Hämta de senaste enheterna som har tilldelats specifika IP-adresser
 
 ```kusto
 DeviceNetworkEvents 

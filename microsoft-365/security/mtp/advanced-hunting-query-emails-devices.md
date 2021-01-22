@@ -1,10 +1,10 @@
 ---
-title: Jakt efter hot på enheter, e-postmeddelanden, appar och identiteter med avancerad jakt
-description: Studera vanliga jakt scenarier och exempel frågor som täcker enheter, e-postmeddelanden, appar och identiteter.
-keywords: Avancerad jakt, Office365 data, Windows-enheter, Office365 e-post normalisera, e-post, appar, identiteter, Hot jakt, cyberterrorism hot jakt, sökning, fråga, telemetri, Microsoft 365, Microsoft Threat Protection
+title: Sök efter hot på olika enheter, e-postmeddelanden, appar och identiteter med avancerad sökning
+description: Studera vanliga sökscenarier och exempelfrågor som täcker enheter, e-postmeddelanden, appar och identiteter.
+keywords: avancerad sökning, Office365-data, Windows-enheter, Office365-e-postmeddelanden normalisera, e-postmeddelanden, appar, identiteter, sökning efter hot, sökning, fråga, telemetri, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 97640c318908b87c211caed780624080508a255f
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: b408f574ab4b89806be9154394f49c00a7fd1e99
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847350"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932256"
 ---
-# <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Jakt efter hot på enheter, e-postmeddelanden, appar och identiteter
+# <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Leta efter hot på olika enheter, e-postmeddelanden, appar och identiteter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,28 +35,28 @@ ms.locfileid: "48847350"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Med [Avancerad jakt](advanced-hunting-overview.md) i Microsoft 365 Defender kan du proaktivt efter problem i världen:
-- Enheter som hanteras av Microsoft Defender för slut punkten
+[Med avancerad](advanced-hunting-overview.md) sökning i Microsoft 365 Defender kan du proaktivt leta efter hot i:
+- Enheter som hanteras av Microsoft Defender för Endpoint
 - E-postmeddelanden som bearbetas av Microsoft 365
-- Molnprogram aktiviteter, autentiseringsnivåer och aktiviteter för domän kontrol Lanterna spåras av Microsoft Cloud App Security och Microsoft Defender för identitet
+- Aktiviteter i molnappen, autentiseringshändelser och domänkontrollantaktiviteter som spåras av Microsoft Cloud App Security och Microsoft Defender för identitet
 
-Med den här synbarheten kan du snabbt hitta hot som rör fram delar av nätverket, inklusive sofistikerade intrång som kommer via e-post eller webben, öka behörigheterna, skaffa privilegierade domänautentiseringsuppgifter och flytta dem senare till alla dina enheter. 
+Med den här synlighetsnivån kan du snabbt leta efter hot som passerar genom delar av nätverket, inklusive avancerade intrång som anländer på e-post eller webben, förhöjda lokala behörigheter, skaffa behörighet för domäner och flytta dem till andra enheter. 
 
-Här är allmänna tekniker och urvals frågor baserat på olika jakt scenarier som hjälper dig att upptäcka hur du kan skapa frågor när jakt efter sådana avancerade hot.
+Här är allmänna tekniker och exempelfrågor som baseras på olika sökscenarier som kan hjälpa dig att utforska hur du kan skapa frågor när du letar efter så avancerade hot.
 
 ## <a name="get-entity-info"></a>Hämta entitetsinformation
-Använd de här frågorna för att få reda på hur du snabbt får information om användar konton, enheter och filer. 
+Använd dessa frågor för att lära dig hur du snabbt kan få information om användarkonton, enheter och filer. 
 
-### <a name="obtain-user-accounts-from-email-addresses"></a>Skaffa användar konton från e-postadresser
-När du skapar frågor över [tabeller som täcker enheter och e-post](advanced-hunting-schema-tables.md)måste du antagligen skaffa användar konto namn från avsändare eller mottagares e-postadresser. Du kan vanligt vis göra detta för antingen mottagare eller avsändar adress via den *lokala värden* från e-postadressen.
+### <a name="obtain-user-accounts-from-email-addresses"></a>Hämta användarkonton från e-postadresser
+När du skapar frågor i tabeller [som](advanced-hunting-schema-tables.md)täcker enheter och e-postmeddelanden måste du förmodligen hämta användarnamn från avsändares eller mottagares e-postadresser. I allmänhet kan du göra detta för antingen mottagare eller avsändaradress med *den lokala värden* från e-postadressen.
 
-I det här avsnittet nedan använder vi funktionen [toString ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto för att extrahera den lokala värd rättigheten före `@` från mottagarens e-postadresser i kolumnen `RecipientEmailAddress` .
+I avsnittet nedan använder vi funktionen [tostring()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto för att extrahera den lokala värden direkt före från mottagarens `@` e-postadresser i `RecipientEmailAddress` kolumnen.
 
 ```kusto
 //Query snippet showing how to extract the account name from an email address
 AccountName = tostring(split(RecipientEmailAddress, "@")[0])
 ```
-I frågan nedan visas hur det här avsnittet kan användas:
+Frågan nedan visar hur det här avsnittet kan användas:
 
 ```kusto
 EmailEvents
@@ -65,7 +66,7 @@ EmailEvents
 
 ### <a name="merge-the-identityinfo-table"></a>Slå samman tabellen IdentityInfo
 
-Du kan skaffa konto namn och annan konto information genom att sammanfoga eller gå med i [IdentityInfo-tabellen](advanced-hunting-identityinfo-table.md). Frågan nedan erhåller listan över nät fiske och skadlig program vara som identifieras från [tabellen EmailEvents](advanced-hunting-emailevents-table.md) och sedan kopplas till den informationen med `IdentityInfo` tabellen för att få detaljerad information om varje mottagare. 
+Du kan få kontonamn och annan kontoinformation genom att slå ihop eller koppla [tabellen IdentityInfo.](advanced-hunting-identityinfo-table.md) Frågan nedan hämtar listan över identifieringar av nätfiske och skadlig programvara från tabellen [EmailEvents](advanced-hunting-emailevents-table.md) och ansluter sedan informationen till tabellen för att få detaljerad `IdentityInfo` information om varje mottagare. 
 
 ```kusto
 EmailEvents
@@ -81,11 +82,11 @@ SenderFromAddress, RecipientEmailAddress, AccountDisplayName, JobTitle,
 Department, City, Country
 ```
 
-### <a name="get-device-information"></a>Hämta enhets information
-Det [avancerade jakt schemat](advanced-hunting-schema-tables.md) ger omfattande enhets information i olika tabeller. [Tabellen deviceinfo](advanced-hunting-deviceinfo-table.md) innehåller till exempel omfattande enhets information baserat på händelse data som sammanlagts regelbundet. Den här frågan använder `DeviceInfo` tabellen för att kontrol lera om en potentiellt utsatt användare ( `<account-name>` ) har loggat in på några enheter och sedan en lista över de aviseringar som har Aktiver ATS på dessa enheter.
+### <a name="get-device-information"></a>Hämta enhetsinformation
+Det [avancerade sökschemat](advanced-hunting-schema-tables.md) innehåller omfattande enhetsinformation i olika tabeller. Till exempel innehåller [tabellen DeviceInfo omfattande](advanced-hunting-deviceinfo-table.md) enhetsinformation baserat på händelsedata som aggregeras regelbundet. Den här frågan använder tabellen för att kontrollera om en potentiellt komprometterad användare () har loggat in på någon enhet och visar sedan aviseringarna som har utlösts på `DeviceInfo` `<account-name>` dessa enheter.
 
 >[!Tip]
-> Den här frågan används `kind=inner` för att ange en [inre koppling](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), som förhindrar avduplicering av vänster sid värden för `DeviceId` .
+> Den här frågan `kind=inner` används för att ange en inre [koppling,](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)vilket förhindrar avduplicering av värden på vänster sida `DeviceId` för.
 
 ```kusto
 DeviceInfo
@@ -100,10 +101,10 @@ DeviceInfo
 | project AlertId, Timestamp, Title, Severity, Category 
 ```
 
-## <a name="hunting-scenarios"></a>Jakt scenarier
+## <a name="hunting-scenarios"></a>Scenarier med visning
 
-### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>Visa inloggnings aktiviteter för användare som fått e-post som inte zapped
-[Automatisk rensning för en tom timme (Zap)](../office-365-security/zero-hour-auto-purge.md) tar emot skadlig e-post efter att de har mottagits. Om det inte fungerar kan det hända att skadlig kod kanske körs på enheten och lämnar konton. Den här frågan söker efter inloggnings aktiviteter som görs av mottagarna av e-postmeddelanden som inte kunde besvaras med ZAP.
+### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>Lista inloggningsaktiviteter för användare som har fått e-postmeddelanden som inte har zappeds
+[ZAP (Zero-hour auto purge)](../office-365-security/zero-hour-auto-purge.md) adresserar skadliga e-postmeddelanden när de har tagits emot. Om ZAP misslyckas kan skadlig kod så småningom köras på enheten och konton kan bli komprometterade. Den här frågan söker efter inloggningsaktivitet som gjorts av mottagarna av e-postmeddelanden som inte har åtgärdats av ZAP.
 
 ```kusto
 EmailPostDeliveryEvents 
@@ -119,8 +120,8 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a>Få inloggnings försök från domän konton riktade till stöld av autentiseringsuppgiften
-Denna fråga identifierar först alla notifieringar om autentiseringsuppgifter i `AlertInfo` tabellen. Då sammanfogas eller kopplas `AlertEvidence` tabellen, vilket bara kan tolka namn på riktade konton och filter för domänbaserade konton. Slutligen kontrollerar den `IdentityLogonEvents` tabellen för att få alla inloggnings aktiviteter av domänbaserade riktade konton.
+### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a>Få inloggningsförsök för domänkonton som riktas av autentiseringsstöld
+Den här frågan identifierar först alla aviseringar om autentiseringsuppgifter i `AlertInfo` tabellen. Därefter slås tabellen ihop eller kopplas, som den parsar för namnen på de riktade kontona och filtren för endast `AlertEvidence` domänkopplingade konton. Slutligen kontrolleras tabellen för `IdentityLogonEvents` att få alla inloggningsaktiviteter för de domän sammanfogade riktade kontona.
 
 ```kusto
 AlertInfo
@@ -139,8 +140,8 @@ AlertInfo
 | project AccountDisplayName, TargetAccountSid, Application, Protocol, DeviceName, LogonType
 ```
 
-### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a>Kontrol lera om filer från en känd angripare finns på dina enheter
-Förutsatt att du känner till en e-postadress för att skicka skadliga filer ( `MaliciousSender@example.com` ) kan du köra den här frågan för att ta reda på om filer från den här avsändaren finns på din enhet. Du kan använda den här frågan, till exempel för att identifiera enheter som påverkas av en distributions kampanj med skadlig kod.
+### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a>Kontrollera om filer från en känd skadlig avsändare finns på dina enheter
+Om du känner till en e-postadress som skickar skadliga filer (), kan du köra den här frågan för att avgöra om filer från den här `MaliciousSender@example.com` avsändaren finns på dina enheter. Du kan till exempel använda den här frågan för att identifiera enheter som påverkas av en distribution till skadlig programvara.
 
 ```kusto
 EmailAttachmentInfo
@@ -155,8 +156,8 @@ DeviceFileEvents
 | project Timestamp, FileName , SHA256, DeviceName, DeviceId,  NetworkMessageId, SenderFromAddress, RecipientEmailAddress
 ```
 
-### <a name="review-logon-attempts-after-receipt-of-malicious-emails"></a>Granska inloggnings försök efter mottagning av illasinnade e-postmeddelanden
-Den här frågan hittar de tio senaste inloggningarna som utförs av e-postmottagarna inom 30 minuter efter att de fått kända skadliga meddelanden. Du kan använda den här frågan för att kontrol lera om kontona i e-postmottagaren har komprometterats.
+### <a name="review-logon-attempts-after-receipt-of-malicious-emails"></a>Granska inloggningsförsök efter kvitto på skadlig e-post
+Den här frågan hittar de 10 senaste inloggningarna som utförts av e-postmottagare inom 30 minuter efter att de fått kända skadliga e-postmeddelanden. Du kan använda den här frågan för att kontrollera om kontona för e-postmottagarna har komprometterats.
 
 ```kusto
 //Define new table for malicious emails
@@ -175,8 +176,8 @@ IdentityLogonEvents
 | take 10
 ```
 
-### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a>Granska PowerShell-aktiviteter efter mottagning av e-postmeddelanden från känd skadlig avsändare
-Illvilliga e-postmeddelanden innehåller ofta dokument och andra särskilt utformade bilagor som kör PowerShell-kommandon för att leverera extra nytto laster. Om du känner till e-postmeddelanden som kommer från en känd angripare ( `MaliciousSender@example.com` ) kan du använda den här frågan för att visa och granska PowerShell-aktiviteter som skedde inom 30 minuter efter att ett e-postmeddelande togs emot från avsändaren.  
+### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a>Granska PowerShell-aktiviteter efter e-postmeddelanden från känd avsändare
+Skadliga e-postmeddelanden innehåller ofta dokument och andra särskilt utformade bifogade filer som kör PowerShell-kommandon för att leverera ytterligare nyttolaster. Om du är medveten om att e-postmeddelanden kommer från en känd avsändare ( ) kan du använda den här frågan för att lista och granska PowerShell-aktiviteter som inträffat inom 30 minuter efter att ett e-postmeddelande togs emot från `MaliciousSender@example.com` avsändaren.  
 
 ```kusto
 //Define new table for emails from specific sender

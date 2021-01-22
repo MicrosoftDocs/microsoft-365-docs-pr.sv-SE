@@ -1,8 +1,8 @@
 ---
-title: Nyheter i Microsofts säkra Poäng
-description: Här beskrivs vilka nya ändringar som har hänt för säkert Poäng i Microsoft 365 säkerhets Center.
-keywords: Microsoft säkra poäng, säkra poäng, Office 365 säkra poäng, Microsoft-säkerhet, Microsoft 365 säkerhets Center
-ms.prod: microsoft-365-enterprise
+title: Vad är nytt i Microsoft Secure Score
+description: Här beskrivs vilka nya ändringar som har hänt med Microsoft Secure Score i Microsoft 365 Säkerhetscenter.
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -20,84 +20,91 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 61ac8c627dd701ac354a5d60d4774a6443b4d41e
-ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
+ms.technology: m365d
+ms.openlocfilehash: 039ec1c3f9b0ba233f950d11b9d58be341b28121
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "49737993"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930600"
 ---
-# <a name="whats-new-in-microsoft-secure-score"></a>Nyheter i Microsofts säkra Poäng
+# <a name="whats-new-in-microsoft-secure-score"></a>Vad är nytt i Microsoft Secure Score
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Vi har gjort några ändringar för att göra Microsoft säkert poäng en bättre representant för dina säkerhets Posture. Om du vill veta mer om planerade ändringar kan du läsa [vad som kommer i Microsofts säkra Poäng?](microsoft-secure-score-whats-coming.md)
+Vi har gjort några ändringar för att Microsoft Secure Score ska vara bättre representativt för din säkerhet. Mer information om planerade ändringar finns i [Vad kommer i Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
-Microsoft Secure score finns https://security.microsoft.com/securescore i [Microsoft 365 Security Center](overview-security-center.md).
+Microsoft Secure Score finns på https://security.microsoft.com/securescore Microsoft [365 säkerhetscenter.](overview-security-center.md)
+
+## <a name="january-2021"></a>Januari 2021
+
+### <a name="added-our-first-security-recommendation-for-microsoft-teams"></a>Lade till vår första säkerhetsrekommendationer för Microsoft Teams
+
+Microsoft Teams-kunder ser "Begränsa anonyma användare från att ansluta till möten" som en ny förbättringsåtgärd i Secure Score.
 
 ## <a name="december-2020"></a>December 2020
 
-### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Sex åtgärder för förbättring av konton har lagts till för Microsoft Defender för slut punkten (tidigare Microsoft Defender ATP):
+### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Sex kontorelaterade förbättringsåtgärder för Microsoft Defender för Slutpunkt (tidigare Microsoft Defender ATP):
 
-- Ange minsta längd för lösen ord för "14 eller fler tecken"
-- Ange "lösen ord historik" för "24 eller fler lösen ord"
-- Ange "maximalt lösen ord ålder" på "60 eller färre dagar", men inte 0 '
-- Ange "lägst lösen ord ålder" på "1 eller fler dagar"
-- Inaktivera det inbyggda administratörs kontot
-- Inaktivera det inbyggda gäst kontot
+- Ange "Minsta lösenordslängd" till 14 eller fler tecken
+- Ange "Framtvinga lösenordshistorik" till 24 eller fler lösenord
+- Ange maximal ålder för lösenord till 60 dagar eller färre, men inte 0.
+- Ange minsta lösenords ålder till 1 eller fler dagar
+- Inaktivera det inbyggda administratörskontot
+- Inaktivera det inbyggda gästkontot
 
 ## <a name="november-2020"></a>November 2020
 
-### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>Tog bort möjligheten att skapa ServiceNow biljetter genom säkra Poäng 
+### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>Tog bort möjligheten att skapa ServiceNow-biljetter via Secure Score 
 
-Möjligheten att skapa ServiceNow biljetter genom säkra poäng genom att gå till **dela > ServiceNow** är inte längre tillgänglig. Tack för din feedback och fortsatta support medan vi bestämmer nästa steg.
+Möjligheten att skapa ServiceNow-biljetter via Secure Score genom att gå till **Share > ServiceNow** är inte längre tillgänglig. Tack för din feedback och fortsatt support medan vi fastställer nästa steg.
 
-### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Tre tjänster-relaterade förbättrings åtgärder har lagts till i Microsoft Defender för slut punkten (tidigare Microsoft Defender ATP):
+### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Tre tjänsterelaterade förbättringsåtgärder för Microsoft Defender för Slutpunkt (tidigare Microsoft Defender ATP):
 
-- Åtgärda den icke-citerade tjänst Sök vägen för Windows-tjänster
-- Ändra sökvägen till den körbara filen till en gemensam skyddad plats
-- Ändra tjänst konto för att undvika cachelagrat lösen ord i Windows-registret
+- Åtgärda obevakad tjänstsökväg för Windows-tjänster
+- Ändra körbar sökväg för tjänsten till en gemensam skyddad plats
+- Ändra tjänstkonto för att undvika cachelagrat lösenord i Windows-registret
 
 ## <a name="october-2020"></a>Oktober 2020
 
-### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Ta bort förbättrings åtgärd relaterad till Microsoft Defender för slut punkt
+### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Ta bort förbättringsåtgärd relaterad till Microsoft Defender för Slutpunkt
 
-- Ange webb innehålls kontroll för Windows Store-appen för Microsoft Defender SmartScreen
+- Ställ in webbinnehållskontroll för Microsoft Defender SmartScreen i Windows Store-appen för att varna
 
 ## <a name="august-2020"></a>Augusti 2020
 
-### <a name="updated-improvement-action-for-azure-active-directory"></a>Uppdaterad förbättrings åtgärd för Azure Active Directory
+### <a name="updated-improvement-action-for-azure-active-directory"></a>Åtgärd för uppdaterad förbättring för Azure Active Directory
 
-- Aktivera princip för blockering av bakåtkompatibel-verifikation
+- Aktivera princip för att blockera äldre autentisering
 
-## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>Inkompatibilitet med identitets säkra poäng-och diagram-API
+## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>Inkompatibilitet med Identity Secure Score och Graph API
 
-I den senaste versionen av Microsofts säkra poäng är en förbättrad Poäng modell släppt. Dessa ändringar ger en mer flexibel och korrekt översikt av dina säkerhets Posture. Men de här uppdateringarna har gjort Microsoft säker Poäng tillfälligt inkompatibelt med identitets säkra poäng och diagram-API.
+I den senaste versionen av Microsoft Secure Score har en förbättrad poängmodell släppts. Dessa ändringar gör det möjligt att se säkerhetsvyn på ett mer flexibelt och korrekt sätt. Men dessa uppdateringar har gjort Microsoft Secure Score tillfälligt inkompatibelt med Identity Secure Score och Graph API.
 
-I tid kommer identitets säkra poäng och Graph API att anta den nya bedömnings modellen. Till dess kommer kunderna att se skillnaderna i resultaten som rapporter ATS av säkra poäng, identitets säkra poäng och diagram-API. Vi ber om ursäkt för eventuella besvär som det här orsakar och arbetar för att säkerställa att dessa upplevelser är mer kompatibla i framtiden.
+Med tiden kommer Identity Secure Score och Graph API att använda den nya poängmodellen. Tills dess kommer kunderna att se skillnader i poäng som rapporterats av Microsoft Secure Score, Identity Secure Score och Graph API. Vi ber om ursäkt för eventuella besvär det här orsakar och arbetar för att se till att dessa funktioner blir mer kompatibla i framtiden.
 
-## <a name="updated-improvement-actions"></a>Uppdaterade förbättrings åtgärder
+## <a name="updated-improvement-actions"></a>Uppdaterade förbättringsåtgärder
 
-- Åtgärder för Azure Active Directory-förbättring har lagts till
-- Microsoft Defender för förbättrings åtgärder har lagts till
-- Stöd för Microsoft Defender för att skydda slut punkter [&](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) säkerhets rekommendationer
-    - Alla publicerade säkerhets rekommendationer från TVM är nu tillgängliga
+- Åtgärder för att förbättra Azure Active Directory har lagts till
+- Microsoft Defender har lagts till för åtgärder för identitetsförbättring
+- Stöd för Microsoft Defender för endpoint [threat & vulnerability management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) security recommendations
+    - Alla släppta säkerhetsrekommendationer som tillhandahålls av TVM är nu tillgängliga
 
 ## <a name="updated-interface-and-functionality"></a>Uppdaterat gränssnitt och funktioner
 
-* Alla nya mått och trender för diskussioner på CISO och lead-nivå
-* Nya sätt att spåra och mäta Poäng
-* Bättre spårning och förståelse för resultat regressioner
-* Filtrera, tagga, söka och gruppera dina förbättrings åtgärder
-* Hantera dina framtida mål med Poäng prognoser och planerade åtgärder
-* Och mer!
+* Alla nya mätvärden och trendvyer för CISO- och leadnivådiskussioner
+* Nya sätt att spåra och skapa prestanda för ditt resultat
+* Bättre uppföljning och förståelse för poäng regressioner
+* Filtrera, tagga, söka och gruppera dina förbättringsåtgärder
+* Hantera mot dina framtida mål med hjälp av poängprojektioner och planerade åtgärder
+* Och mycket mer!
 
 ## <a name="we-want-to-hear-from-you"></a>Vi vill höra från dig
 
-Om du har några problem kan du meddela oss genom att publicera det i [säkerhets-, integritets &](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. Vi övervakar communityn och ger hjälp.
+Om du har problem kan du meddela oss genom att publicera i [communityn för säkerhet, & efterlevnad.](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) Vi övervakar communityn och hjälper till.
 
 ## <a name="related-resources"></a>Relaterade resurser
 
 - [Utvärdera säkerhets genom övergå molnet](microsoft-secure-score-improvement-actions.md)
-- [Spåra din Microsoft säkra Poäng historik och uppfylla målen](microsoft-secure-score-history-metrics-trends.md)
+- [Spåra din Microsoft Secure Score-historik och uppfylla mål](microsoft-secure-score-history-metrics-trends.md)
 - [Kommer snart](microsoft-secure-score-whats-coming.md)

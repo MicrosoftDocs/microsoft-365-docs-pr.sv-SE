@@ -1,10 +1,10 @@
 ---
-title: Namnge ändringar i Microsoft 365 Defender Advanced jakt-schemat
-description: Spåra och granska namn ändrings tabeller och kolumner i det avancerade jakt schemat
-keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, data, namn ändringar, Byt namn, Microsoft Threat Protection
+title: Namnändringar i det avancerade sökschemat i Microsoft 365 Defender
+description: Spåra och granska namnändringar – tabeller och kolumner i det avancerade sökschemat
+keywords: avancerad sökning, hotsökning, cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, data, namnändringar, namnbyte, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 0bef5f4abcaf0d57af9c160ff31f859c2536ccd2
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.technology: m365d
+ms.openlocfilehash: 483fedd1fb152e3df5311c981b305e621ec2aec3
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780827"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932208"
 ---
-# <a name="advanced-hunting-schema---naming-changes"></a>Avancerat schema för att ändra namn på ändringar
+# <a name="advanced-hunting-schema---naming-changes"></a>Avancerat schema för sök – namnändringar
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,15 +37,15 @@ ms.locfileid: "49780827"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Det [avancerade jakt schemat](advanced-hunting-schema-tables.md) uppdateras regelbundet för att lägga till nya tabeller och kolumner. I vissa fall byts namn på befintliga kolumn namn eller ersättas för att förbättra användar upplevelsen. I den här artikeln finns information om hur du granskar namn ändringar som kan påverka dina frågor.
+Det [avancerade sökschemat](advanced-hunting-schema-tables.md) uppdateras regelbundet för att lägga till nya tabeller och kolumner. I vissa fall byter befintliga kolumnnamn namn eller ersätts för att förbättra användarupplevelsen. I den här artikeln kan du läsa om vilka namnändringar som kan påverka dina frågor.
 
-Namn ändringar används automatiskt för frågor som sparas i säkerhets Center, inklusive frågor som används av anpassade identifierings regler. Du behöver inte uppdatera dessa frågor manuellt. Men du måste uppdatera följande frågor:
-- Frågor som körs med API
-- Frågor som sparas någonstans utanför säkerhets Center
+Namnändringar tillämpas automatiskt på frågor som sparas i säkerhetscentret, inklusive frågor som används av anpassade identifieringsregler. Du behöver inte uppdatera dessa frågor manuellt. Du måste dock uppdatera följande frågor:
+- Frågor som körs med API:t
+- Frågor som sparas någon annanstans utanför säkerhetscentret
 
 ## <a name="december-2020"></a>December 2020
 
-| Tabellnamn | Ursprungligt kolumn namn | Nytt kolumn namn | Orsak till ändring
+| Tabellnamn | Ursprungligt kolumnnamn | Nytt kolumnnamn | Orsak till ändring
 |--|--|--|--|
 | [EmailEvents](advanced-hunting-emailevents-table.md) | FinalEmailAction | EmailAction | Feedback från kunder |
 | [EmailEvents](advanced-hunting-emailevents-table.md) | FinalEmailActionPolicy | EmailActionPolicy | Feedback från kunder |

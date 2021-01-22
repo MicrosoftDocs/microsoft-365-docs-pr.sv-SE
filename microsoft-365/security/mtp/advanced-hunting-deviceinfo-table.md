@@ -1,10 +1,10 @@
 ---
-title: DeviceInfo-tabell i det avancerade jakt-schemat
-description: Lär dig mer om operativ system, dator namn och annan information om datorn i DeviceInfo-tabellen för Advanced jakt-schemat
-keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, kolumn, datatyp, beskrivning, machineinfo, DeviceInfo, enhet, maskin, OS, plattform, användare
+title: DeviceInfo-tabell i det avancerade sökschemat
+description: Läs mer om OS, datornamn och annan maskininformation i tabellen DeviceInfo i det avancerade sökschemat
+keywords: avancerad sökning, hotsökning, cyberhot, skydd mot cyberhot, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, maskininfo, Enhetsinfo, enhet, dator, OS, plattform, användare
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 1bb48b4332bc9d60de15bb513f04a503d6a6913b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: e445902ee83b734f84d02607905413a14c016b8f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842720"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931284"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -36,26 +37,26 @@ ms.locfileid: "48842720"
 
 
 
-`DeviceInfo`Tabellen i det [avancerade jakt](advanced-hunting-overview.md) -schemat innehåller information om datorerna i organisationen, inklusive OS-version, aktiva användare och dator namn. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+Tabellen `DeviceInfo` i det avancerade [utbildningsschemat](advanced-hunting-overview.md) innehåller information om maskiner i organisationen, inklusive OS-version, aktiva användare och datornamn. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
-Information om andra tabeller i det avancerade jakt schema [finns i referens för avancerad jakt](advanced-hunting-schema-tables.md).
+Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | Datum och tid när händelsen registrerades |
-| `DeviceId` | strängvärdet | Unik identifierare för datorn i tjänsten |
-| `DeviceName` | strängvärdet | Det fullständigt kvalificerade domän namnet (FQDN) för datorn |
-| `ClientVersion` | strängvärdet | Version av slut punkts agenten eller sensorn som körs på datorn |
-| `PublicIP` | strängvärdet | Offentlig IP-adress som används av den inbyggda datorn för att ansluta till Microsoft Defender för slut punkts tjänsten. Det här kan vara IP-adressen till själva datorn, en NAT-enhet eller en proxy |
-| `OSArchitecture` | strängvärdet | Arkitekturen för operativ systemet som körs på datorn |
-| `OSPlatform` | strängvärdet | Plattformen för det operativ system som körs på datorn. Detta indikerar specifika operativ system, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7 |
-| `OSBuild` | strängvärdet | Version av operativ systemet som körs på datorn |
-| `IsAzureADJoined` | returtyp | Boolesk indikator för om datorn är ansluten till Azure Active Directory |
-| `LoggedOnUsers` | strängvärdet | Lista över alla användare som är inloggade på datorn när händelsen inträffar i JSON-mat ris format |
-| `RegistryDeviceTag` | strängvärdet | Dator tag gen läggs till genom registret |
-| `ReportId` | tids | Händelse identifierare baserad på en upprepande räknare. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna enhets namn och tidsstämpel |
-| `OSVersion` | strängvärdet | Version av operativ systemet som körs på datorn |
-| `MachineGroup` | strängvärdet | Dator grupp. Den här gruppen används av rollbaserad åtkomst kontroll för att bestämma åtkomst till datorn |
+| `Timestamp` | datetime | Datum och tid då händelsen spelades in |
+| `DeviceId` | sträng | Unikt ID för datorn i tjänsten |
+| `DeviceName` | sträng | Fullständigt kvalificerat domännamn (FQDN) för datorn |
+| `ClientVersion` | sträng | Version av slutpunktsagenten eller sensorn som körs på datorn |
+| `PublicIP` | sträng | Offentlig IP-adress som används av den onboarded machine för att ansluta till Tjänsten Microsoft Defender för slutpunkt. Detta kan vara IP-adressen för själva datorn, en NAT-enhet eller en proxy |
+| `OSArchitecture` | sträng | Arkitekturen för operativsystemet som körs på datorn |
+| `OSPlatform` | sträng | Operativsystemets plattform som körs på datorn. Detta indikerar specifika operativsystem, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7 |
+| `OSBuild` | sträng | Version av operativsystemet som körs på datorn |
+| `IsAzureADJoined` | boolesk | Boolesk indikator om datorn är ansluten till Azure Active Directory |
+| `LoggedOnUsers` | sträng | Lista över alla användare som är inloggade på datorn vid tidpunkten för händelsen i JSON-matrisformat |
+| `RegistryDeviceTag` | sträng | Maskintagg som lagts till i registret |
+| `ReportId` | long | Händelseidentifierare baserade på en återkommande räknare. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp |
+| `OSVersion` | sträng | Version av operativsystemet som körs på datorn |
+| `MachineGroup` | sträng | Datorgruppen på datorn. Den här gruppen används av rollbaserad åtkomstkontroll för att fastställa åtkomsten till datorn |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

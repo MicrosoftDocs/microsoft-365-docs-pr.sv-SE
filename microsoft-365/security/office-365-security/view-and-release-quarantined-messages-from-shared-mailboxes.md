@@ -1,5 +1,5 @@
 ---
-title: Visa och släppa meddelanden i karantän från delade post lådor
+title: Visa och släppa meddelanden i karantän från delade postlådor
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -7,7 +7,6 @@ ms.reviewer: ''
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,50 +14,52 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
-description: Användare kan lära sig att visa och hantera meddelanden i karantän som skickades till delade post lådor.
-ms.openlocfilehash: 34a401d3bff66926acd3e04d7144ce465dfa3dbb
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+description: Användare kan lära sig hur de visar och agerar på meddelanden i karantän som har skickats till delade postlådor som de har behörighet till.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 3efccca375745b0850c91039165b72a7d6f0bcb3
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688035"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931452"
 ---
-# <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Visa och släppa meddelanden i karantän från delade post lådor
+# <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Visa och släppa meddelanden i karantän från delade postlådor
 
 > [!NOTE]
-> De funktioner som beskrivs i den här artikeln är för närvarande i för hands versionen, är inte tillgängliga för alla och kan komma att ändras.
+> De funktioner som beskrivs i den här artikeln är för närvarande i förhandsversion, är inte tillgängliga för alla och kan komma att ändras.
 
-Användare kan hantera meddelanden i karantän där de är en av mottagarna enligt beskrivningen i [hitta och släppa meddelanden i karantän som en användare i EOP](find-and-release-quarantined-messages-as-a-user.md). Men vad händer med delade post lådor där användaren har fullständig åtkomst och behörigheten skicka som eller skicka för ombud till post lådan enligt beskrivningen i [delade post lådor i Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes)?
+Användare kan hantera meddelanden i karantän där de är en av mottagarna enligt beskrivningen i Hitta och släppa meddelanden i karantän [som användare i EOP.](find-and-release-quarantined-messages-as-a-user.md) Men hur blir det med delade postlådor där användaren har behörigheten Fullständig åtkomst och Skicka som eller Skicka för till postlådan enligt beskrivningen i Delade postlådor [i Exchange Online?](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes)
 
-Tidigare var det möjligt för användarna att hantera meddelanden i karantän som skickas till en delad post låda som krävs för att den delade post lådan ska vara aktive rad (den är aktive rad som standard när en administratör ger en användare åtkomst till en annan post låda). Beroende på storleken och antalet post lådor som användaren har till gång till kan prestandan bli lidande för att ett försök görs att öppna *alla* post lådor som användaren har till gång till. Av den anledningen väljer många administratörer att [ta bort Automappning för delade post lådor](https://docs.microsoft.com/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox).
+Tidigare var möjligheten för användare att hantera meddelanden i karantän som skickas till en delad postlåda obligatoriska administratörer för att se till att automatisk mappning är aktiverat för den delade postlådan (den är aktiverad som standard när en administratör ger en användare åtkomst till en annan postlåda). Men prestandan kan drabbas av prestanda beroende på storleken på och antalet postlådor  som användaren har tillgång till, eftersom Outlook försöker öppna alla postlådor som användaren har åtkomst till. Därför väljer många administratörer att ta bort [automatisk mappning för delade postlådor.](https://docs.microsoft.com/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox)
 
-Nu behöver du inte längre mappa automatiskt för att användare ska kunna hantera meddelanden i karantän som skickades till delade post lådor. Det fungerar bara. Det finns två olika sätt att komma åt karantän meddelanden som skickades till en delad post låda:
+Automatisk mappning krävs nu inte längre för att användare ska kunna hantera meddelanden i karantän som har skickats till delade postlådor. Det fungerar bara. Det finns två olika metoder för att komma åt meddelanden i karantän som har skickats till en delad postlåda:
 
-- Om administratören har [aktiverat aviseringar om slutanvändare](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies) i principer för skräp post kan alla användare som har till gång till skräp post meddelanden i den delade post lådan Klicka på knappen **Granska** i meddelandet för att gå till karantän i säkerhets & Compliance Center. Observera att den här metoden endast tillåter användare att hantera meddelanden som skickats till den delade post lådan. Användarna kan inte hantera sina egna karantän meddelanden i den här kontexten.
+- Om administratören har aktiverat [skräppost-aviseringar](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies) för slutanvändare i principer för skräppostskydd kan alla användare som har  åtkomst till slutanvändarens skräppost-aviseringar i den delade postlådan klicka på knappen Granska i meddelandet för att gå till karantän i Säkerhets- & efterlevnadscenter. Den här metoden gör det bara möjligt för användare att hantera meddelanden i karantän som har skickats till den delade postlådan. Användare kan inte hantera sina egna karantänmeddelanden i det här sammanhanget.
 
-- Användaren kan [gå till karantänen i säkerhets & Compliance Center](find-and-release-quarantined-messages-as-a-user.md). Som standard visas bara meddelanden som skickades till användaren. Men användaren kan ändra **sorterings resultaten** ( **knappen meddelande-ID** som standard) till **mottagarens e-postadress**, skriva in e-postadressen för den delade post lådan och klicka på **Uppdatera** för att se de meddelanden i karantänen som skickades till den delade post lådan.
+- Användaren kan [gå till karantänen i säkerhets- & Efterlevnadscenter.](find-and-release-quarantined-messages-as-a-user.md) Som standard visas endast meddelanden som har skickats till användaren. Användaren kan ändra sorteringsresultatet **(knappen**  **Meddelande-ID** som standard) till Mottagarens e-postadress, ange den delade postlådans e-postadress och sedan klicka på Uppdatera för att se meddelanden i karantän som har skickats till den delade postlådan. 
 
-  ![Sortera meddelanden i karantänen efter mottagarens e-postadress.](../../media/quarantine-sort-results-by-recipient-email-address.png)
+  ![Sortera meddelanden i karantän efter mottagarens e-postadress.](../../media/quarantine-sort-results-by-recipient-email-address.png)
 
-Oavsett hur du använder den här metoden kan användarna undvika förvirring genom att lägga till kolumnen **mottagare** för meddelanden i karantän. Det maximala antalet kolumner som ska visas är 7, så användaren måste klicka på **Ändra kolumner**, ta bort en befintlig kolumn (till exempel en **typ av princip**), välja **mottagare** och sedan klicka på **Spara** eller **Spara som standard**.
+Oavsett metod kan användarna undvika förvirring genom att lägga till kolumnen **Mottagare för** meddelanden i karantän. Max antal kolumner som ska visas är 7, så användaren måste klicka på Ändra kolumner, ta bort en  befintlig kolumn (till exempel principtyp), välja Mottagare och sedan klicka på Spara eller Spara som **standard.**  
 
-  ![Ta bort kolumnen princip typ och Lägg till kolumnen mottagare i karantän.](../../media/quarantine-add-recipient-column.png)
+  ![Ta bort kolumnen Principtyp och lägg till kolumnen Mottagare i karantän.](../../media/quarantine-add-recipient-column.png)
 
 ## <a name="things-to-keep-in-mind"></a>Saker att tänka på
 
-- Den första användaren som ska agera på det satta meddelandet bestämmer överskrivning av meddelandet för alla som använder den delade post lådan. Om till exempel en delad post låda används av 10 användare och en användare bestämmer sig för att ta bort karantän meddelandet raderas meddelandet för alla tio användarna. Om en användare väljer att släppa meddelandet släpps det på den delade post lådan och är tillgänglig för alla andra användare av den delade post lådan.
+- Den första användaren som agerar på det meddelande som ligger i karantän avgör den första användaren av meddelandet för alla som använder den delade postlådan. Om till exempel en delad postlåda används av tio användare och en användare bestämmer sig för att ta bort karantänmeddelandet, tas meddelandet bort för alla tio användare. Om en användare väljer att släppa meddelandet släpps det till den delade postlådan och är tillgängligt för alla andra användare av den delade postlådan.
 
-- För närvarande går det inte att använda knappen **Blockera avsändare** för **infällbara meddelanden** som skickats till den delade post lådan.
+- Knappen Spärra **avsändare är för** närvarande  inte tillgänglig i den utfällna informationen för meddelanden i karantän som har skickats till den delade postlådan.
 
-- Om _du vill_ hantera meddelanden i karantän för den delade post lådan i [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)måste slutanvändaren använda cmdleten [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage) för att identifiera meddelandena. Till exempel:
+- För att hantera meddelanden i karantän för den delade postlådan i [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)måste slutanvändaren använda cmdleten [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage) med en delad postlådas e-postadress för värdet på parametern _RecipientAddress_ för att identifiera meddelandena. Till exempel:
 
   ```powershell
   Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com
   ```
 
-  Sedan kan slutanvändaren välja ett meddelande i karantän i listan för att visa eller vidta en åtgärd.
+  Slutanvändaren kan sedan välja ett meddelande i karantän i listan som du vill visa eller vidta åtgärder för.
 
-  I det här exemplet visas alla karantän meddelanden som skickats till den delade post lådan och sedan släpps det första meddelandet i listan från karantän (det första meddelandet i listan är 0, det andra är 1 o.s.v.).
+  Det här exemplet visar alla meddelanden i karantän som skickades till den delade postlådan och släpper sedan det första meddelandet i listan från karantän (det första meddelandet i listan är 0, det andra är 1 och så vidare).
 
   ```powershell
   $SharedMessages = Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com | select -ExpandProperty Identity
@@ -70,5 +71,5 @@ Oavsett hur du använder den här metoden kan användarna undvika förvirring ge
 
   - [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage)
   - [Get-QuarantineMessageHeader](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessageheader)
-  - [För hands version – QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/preview-quarantinemessage)
-  - [Utgivning-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage)
+  - [Preview-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/preview-quarantinemessage)
+  - [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage)

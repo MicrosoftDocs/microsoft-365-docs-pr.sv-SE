@@ -1,10 +1,10 @@
 ---
-title: DeviceEvents-tabell i det avancerade jakt-schemat
-description: Lär dig mer om antivirus-, brand Väggs-och andra händelse typer i DeviceEvents-tabellen (Diverse Device Events) för Advanced jakt-schemat
-keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, kolumn, datatyp, säkerhets händelser, antivirus, brand vägg, sårbarhets skydd, DeviceEvents
+title: Tabellen DeviceEvents i den avancerade sökschemat
+description: Läs mer om antivirus, brandvägg och andra händelsetyper i tabellen för övriga enhetshändelser (DeviceEvents) i det avancerade sökschemat
+keywords: avancerad sökning, hotsökning, cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, säkerhetshändelser, antivirus, brandvägg, sårbarhetsskydd, DeviceEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: d3f00e506d34b4c82137f368c8c8f24e52b0247a
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 536d95f7226ba907d913df58a47508e44b50147a
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843046"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931356"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -36,62 +37,62 @@ ms.locfileid: "48843046"
 
 
 
-De övriga enhets händelserna eller `DeviceEvents` tabellen i det [avancerade jakt](advanced-hunting-overview.md) -schemat innehåller information om olika händelse typer, inklusive händelser som utlöses av säkerhets kontroller, till exempel Windows Defender Antivirus och sårbarhets skydd. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+Diverse enhetshändelser eller -tabeller i det avancerade schemat för sökning innehåller information om olika händelsetyper, inklusive händelser som utlöses av säkerhetskontroller, till exempel Windows Defender Antivirus och `DeviceEvents` sårbarhetsskydd. [](advanced-hunting-overview.md) Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!TIP]
-> Detaljerad information om de händelse typer ( `ActionType` värden) som stöds av en tabell finns i den [inbyggda schema referensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) i säkerhets Center.
+> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` [inbyggda schemareferensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) som finns i säkerhetscentret.
 
-Information om andra tabeller i det avancerade jakt schema [finns i referens för avancerad jakt](advanced-hunting-schema-tables.md).
+Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | Datum och tid när händelsen registrerades |
-| `DeviceId` | strängvärdet | Unik identifierare för datorn i tjänsten |
-| `DeviceName` | strängvärdet | Det fullständigt kvalificerade domän namnet (FQDN) för datorn |
-| `ActionType` | strängvärdet | Typ av aktivitet som utlöste händelsen. Mer information finns [i referens för in-Portal schema](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
-| `FileName` | strängvärdet | Namnet på filen som den inspelade åtgärden tillämpades för |
-| `FolderPath` | strängvärdet | Mapp som innehåller filen som den inspelade åtgärden tillämpades för |
-| `SHA1` | strängvärdet | SHA-1 av filen som den inspelade åtgärden tillämpades på |
-| `SHA256` | strängvärdet | SHA-256 av filen som den registrerade åtgärden tillämpades på. Det här fältet är oftast inte ifyllt – Använd SHA1-kolumnen när det är tillgängligt. |
-| `MD5` | strängvärdet | MD5-hash för filen som den inspelade åtgärden tillämpades för |
-| `AccountDomain` | strängvärdet | Kontots domän |
-| `AccountName` | strängvärdet | Kontots användar namn |
-| `AccountSid` | strängvärdet | Kontots säkerhets identifierare (SID) |
-| `RemoteUrl` | strängvärdet | URL-adressen eller det fullständigt kvalificerade domän namnet (FQDN) som anslöts till |
-| `RemoteDeviceName` | strängvärdet | Namnet på den dator som utförde en fjärråtgärd på den påverkade datorn. Beroende på vilken händelse som rapporteras kan detta namn vara ett fullkvalificerat domän namn (FQDN), ett NetBIOS-namn eller ett värdnamn utan domän information |
-| `ProcessId` | signera | Process-ID (PID) för den nyskapade processen |
-| `ProcessCommandLine` | strängvärdet | Kommando rad som används för att skapa den nya processen |
+| `Timestamp` | datetime | Datum och tid då händelsen spelades in |
+| `DeviceId` | sträng | Unikt ID för datorn i tjänsten |
+| `DeviceName` | sträng | Fullständigt kvalificerat domännamn (FQDN) för datorn |
+| `ActionType` | sträng | Typ av aktivitet som utlöste händelsen. Mer information [finns i referensen till portalschemat](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
+| `FileName` | sträng | Namnet på filen där den inspelade åtgärden tillämpats på |
+| `FolderPath` | sträng | Mapp som innehåller den fil som den inspelade åtgärden tillämpats på |
+| `SHA1` | sträng | SHA-1 för den fil som den inspelade åtgärden tillämpats på |
+| `SHA256` | sträng | SHA-256 för filen som den inspelade åtgärden tillämpats på. Det här fältet fylls vanligtvis inte i – använd SHA1-kolumnen när den är tillgänglig. |
+| `MD5` | sträng | MD5-hash för filen som den inspelade åtgärden tillämpats på |
+| `AccountDomain` | sträng | Domänen för kontot |
+| `AccountName` | sträng | Användarnamn för kontot |
+| `AccountSid` | sträng | Säkerhetsidentifierare (SID) för kontot |
+| `RemoteUrl` | sträng | URL eller fullständigt kvalificerat domännamn (FQDN) som var anslutet till |
+| `RemoteDeviceName` | sträng | Namnet på den dator som utförde en fjärråtgärd på den aktuella datorn. Beroende på vilken händelse som rapporteras kan det här namnet vara ett fullständigt kvalificerat domännamn (FQDN), ett NetBIOS-namn eller ett värdnamn utan domäninformation |
+| `ProcessId` | int | Process-ID (PID) för den nya processen |
+| `ProcessCommandLine` | sträng | Kommandorad som används för att skapa den nya processen |
 | `ProcessCreationTime` | datetime | Datum och tid då processen skapades |
-| `ProcessTokenElevation` | strängvärdet | Tokentyp som anger närvaro eller frånvaro av behörighets höjning (UAC) för den nyskapade processen |
-| `LogonId` | strängvärdet | Identifierare för en inloggningssession. Detta ID är endast unikt på samma dator mellan omstarter |
-| `RegistryKey` | strängvärdet | Den register nyckel som den inspelade åtgärden tillämpades på |
-| `RegistryValueName` | strängvärdet | Namnet på det register värde som den inspelade åtgärden tillämpades på |
-| `RegistryValueData` | strängvärdet | Data för registervärdet som den inspelade åtgärden tillämpades för |
-| `RemoteIP` | strängvärdet | IP-adress som var ansluten till |
-| `RemotePort` | signera | TCP-port på fjär renheten som du anslöt till |
-| `LocalIP` | strängvärdet | IP-adress som tilldelats till den lokala datorn under kommunikationen |
-| `LocalPort` | signera | TCP-port på den lokala datorn som används vid kommunikation |
-| `FileOriginUrl` | strängvärdet | URL dit filen laddades ned från |
-| `FileOriginIP` | strängvärdet | IP-adress dit filen laddades ned från |
-| `AdditionalFields` | strängvärdet | Ytterligare information om händelsen i JSON-mat ris format |
-| `InitiatingProcessSHA1` | strängvärdet | SHA-1 av processen (bildfil) som initierade händelsen |
-| `InitiatingProcessSHA256` | strängvärdet | SHA-256 av processen (bildfil) som initierade händelsen. Det här fältet är oftast inte ifyllt – Använd SHA1-kolumnen när det är tillgängligt. |
-| `InitiatingProcessFileName` | strängvärdet | Namn på processen som initierade händelsen |
-| `InitiatingProcessFolderPath` | strängvärdet | Mapp som innehåller processen (bildfil) som initierade händelsen |
-| `InitiatingProcessId` | signera | Process-ID (PID) för processen som initierade händelsen |
-| `InitiatingProcessCommandLine` | strängvärdet | Kommando rad som används för att köra processen som initierade händelsen |
-| `InitiatingProcessCreationTime` | datetime | Datum och tid när processen som initierade händelsen startade |
-| `InitiatingProcessParentId` | signera | Process-ID (PID) för den överordnade processen som skapade processen för händelsen |
-| `InitiatingProcessParentFileName` | strängvärdet | Namnet på den överordnade process som skapade processen som är ansvarig för händelsen |
-| `InitiatingProcessParentCreationTime` | datetime | Datum och tid då den överordnade för processen som är ansvarig för händelsen startade |
-| `InitiatingProcessMD5` | strängvärdet | MD5-hash för processen (bildfil) som initierade händelsen |
-| `InitiatingProcessAccountDomain` | strängvärdet | Domän för det konto som körde processen som är ansvarig för händelsen |
-| `InitiatingProcessAccountName` | strängvärdet | Användar namn för det konto som körde processen som är ansvarig för händelsen |
-| `InitiatingProcessAccountSid` | strängvärdet | Säkerhets identifierare (SID) för det konto som körde processen som är ansvarig för händelsen |
-| `InitiatingProcessLogonId` | strängvärdet | ID för en inloggningssession för den process som initierade händelsen. Detta ID är endast unikt på samma dator mellan omstarter |
-| `ReportId` | tids | Händelse identifierare baserad på en upprepande räknare. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna enhets namn och tidsstämpel |
-| `AppGuardContainerId` | strängvärdet | Identifierare för den virtualiserade behållare som används av Application Guard för att isolera webbläsaren |
+| `ProcessTokenElevation` | sträng | Tokentyp som anger närvaro eller frånvaro av UAC-behörighets ökning (User Access Control) som används för den nya processen |
+| `LogonId` | sträng | Identifierare för en inloggningssession. Den här identifieraren är unik på samma dator endast mellan omstarter |
+| `RegistryKey` | sträng | Registernyckel som den inspelade åtgärden tillämpades på |
+| `RegistryValueName` | sträng | Namn på registervärdet som den inspelade åtgärden tillämpats på |
+| `RegistryValueData` | sträng | Data för registervärdet som den inspelade åtgärden tillämpats på |
+| `RemoteIP` | sträng | IP-adress som var ansluten till |
+| `RemotePort` | int | TCP-port på fjärrenheten som var ansluten till |
+| `LocalIP` | sträng | IP-adress tilldelad till den lokala datorn som används under kommunikation |
+| `LocalPort` | int | TCP-port på den lokala datorn som används under kommunikation |
+| `FileOriginUrl` | sträng | URL där filen laddades ned från |
+| `FileOriginIP` | sträng | IP-adress där filen laddades ned från |
+| `AdditionalFields` | sträng | Ytterligare information om händelsen i JSON-matrisformat |
+| `InitiatingProcessSHA1` | sträng | SHA-1 för processen (bildfil) som initierade händelsen |
+| `InitiatingProcessSHA256` | sträng | SHA-256 för processen (bildfil) som initierade händelsen. Det här fältet fylls vanligtvis inte i – använd SHA1-kolumnen när den är tillgänglig. |
+| `InitiatingProcessFileName` | sträng | Namn på processen som initierade händelsen |
+| `InitiatingProcessFolderPath` | sträng | Mapp som innehåller den process (bildfil) som initierade händelsen |
+| `InitiatingProcessId` | int | Process-ID (PID) för processen som initierade händelsen |
+| `InitiatingProcessCommandLine` | sträng | Kommandorad som används för att köra processen som initierade händelsen |
+| `InitiatingProcessCreationTime` | datetime | Datum och tid då processen som initierade händelsen startades |
+| `InitiatingProcessParentId` | int | Process-ID (PID) för den överordnade process som avkortade processen som ansvarar för händelsen |
+| `InitiatingProcessParentFileName` | sträng | Namn på den överordnade process som gav upphov till processen som ansvarar för händelsen |
+| `InitiatingProcessParentCreationTime` | datetime | Datum och tid då den överordnade processen som ansvarar för händelsen startades |
+| `InitiatingProcessMD5` | sträng | MD5-hash för processen (bildfil) som initierade händelsen |
+| `InitiatingProcessAccountDomain` | sträng | Domän för kontot som körde processen som ansvarar för händelsen |
+| `InitiatingProcessAccountName` | sträng | Användarnamnet för det konto som körde processen som ansvarar för händelsen |
+| `InitiatingProcessAccountSid` | sträng | Säkerhetsidentifierare (SID) för det konto som körde processen som ansvarar för händelsen |
+| `InitiatingProcessLogonId` | sträng | Identifierare för en inloggningssession i processen som initierade händelsen. Den här identifieraren är unik på samma dator endast mellan omstarter |
+| `ReportId` | long | Händelseidentifierare baserade på en återkommande räknare. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp |
+| `AppGuardContainerId` | sträng | Identifierare för den virtualiserade behållaren som används av Application Guard för att isolera webbläsaraktivitet |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

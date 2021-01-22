@@ -1,8 +1,8 @@
 ---
-title: Identitets övervakning och rapportering – säkerhets Center
-description: Här beskrivs hur du kan övervaka användarna i organisationen och hålla reda på misstänkta och riskfyllda problem.
-keywords: säkerhet, skadlig program vara, Microsoft 365, M365, säkerhets Center, skärm, rapport, identitet, användare
-ms.prod: microsoft-365-enterprise
+title: Identitetsövervakning och -rapportering – Säkerhetscenter
+description: Här beskrivs hur du kan övervaka användarna i organisationen och hålla reda på misstänkta eller riskfyllda beteenden.
+keywords: säkerhet, skadlig programvara, Microsoft 365, M365, säkerhetscenter, bildskärm, rapport, identitet, användare
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,26 +17,27 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2f938fba565d52658776d4a7573592026695f9ee
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.technology: m365d
+ms.openlocfilehash: 31c000871fe644f614da597912698792c5dc72ca
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429377"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930540"
 ---
-# <a name="identity-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Identitets övervakning och rapportering i säkerhets Center för Microsoft 365
+# <a name="identity-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Identitetsövervakning och -rapportering i Microsoft 365 säkerhetscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-Övervaka identiteterna i din organisation och håll koll på misstänkta och riskfyllda beteenden. I kategorin **identiteter** för **rapporter**kan du spåra:
+Övervaka identiteterna i organisationen och håll reda på misstänkta eller riskfyllda beteenden. I kategorin **Identiteter** i **Rapporter** kan du spåra:
 
-* Användare med mest upptäckta avvikelser
-* Hur många användare som rapporteras med policyn för villkorsstyrd åtkomst
+* Användare med de mest identifierade felen
+* Hur många användare som rapporteras på risk enligt villkorsstyrda åtkomstprinciper
 * Antalet globala administratörer i din organisation
 
-![Sidan identiteter för rapport](../../media/identities.png)
+![Kategorin Identiteter på sidan Rapporter](../../media/identities.png)
 
-För användare med specifika identifieringar kan du utforska den specifika varningen och undersöka i Microsoft Defender säkerhets Center. Identifieringar inkluderar avvikelser som användare som loggar in på okända platser.
+För användare med specifika identifieringar kan du utforska den specifika aviseringen och undersöka detta i Microsoft Defender Säkerhetscenter. Identifieringar omfattar bland annat användare som loggar in från okända platser.
 
-En fullständig uppsättning risker finns i [Azure Active Directory-risker](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-risk-events).
+En fullständig uppsättning riskhändelser finns i [Azure Active Directory-riskhändelser.](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-risk-events)

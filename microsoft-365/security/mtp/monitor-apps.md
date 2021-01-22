@@ -1,8 +1,8 @@
 ---
-title: Program övervakning & rapportering-säkerhets Center
-description: Lär dig mer om hur du får mer insikt i moln programmet i din organisation. Inkluderar olika typer av appar, deras risk nivå och aviseringar.
-keywords: säkerhet, skadlig program vara, Microsoft 365, M365, säkerhets Center, övervaka, rapport, appar
-ms.prod: microsoft-365-enterprise
+title: Programövervakning & rapportering – Säkerhetscenter
+description: Lär dig hur du får mer insyn i hur du använder molnappen i din organisation. Omfattar olika typer av appar, deras risknivå och aviseringar.
+keywords: säkerhet, skadlig programvara, Microsoft 365, M365, säkerhetscenter, bildskärm, rapport, appar
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,58 +17,59 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f73c6b010677cdc481655d1d5310872fd1a99126
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.technology: m365d
+ms.openlocfilehash: ed5fcfc16c08272a6a1d55af210ab48528538048
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920520"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930528"
 ---
-# <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Program övervakning och rapportering i säkerhets Center för Microsoft 365
+# <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Appövervakning och -rapportering i Microsoft 365 säkerhetscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-Rapporterna visar mer information om hur molnappar används i din organisation. Inkluderar olika typer av appar, deras risk nivå och aviseringar.
+De här rapporterna ger mer insyn i hur molnappar används i organisationen. Omfattar olika typer av appar, deras risknivå och aviseringar.
 
-## <a name="monitor-email-accounts-at-risk"></a>Övervaka e-postkonton
+## <a name="monitor-email-accounts-at-risk"></a>Övervaka e-postkonton som är riskerade
 
-**E-postskydd** visar e-postkonton med risk. Du kan välja ett konto att undersöka i Microsoft Defender säkerhets Center.
+**E-postskydd** visar att e-postkonton är riskerade. Du kan välja ett konto om du vill undersöka ytterligare i Microsoft Defender Säkerhetscenter.
 
-![E-postskydd](../../media/email-protection.png)
+![Kort för e-postskydd](../../media/email-protection.png)
 
-## <a name="monitor-app-permissions-granted-by-users"></a>Övervaka program behörigheter som beviljats av användare
+## <a name="monitor-app-permissions-granted-by-users"></a>Övervaka programbehörigheter som beviljas av användare
 
-**Cloud App-säkerhet – appar för OAuth-appar** som identifieras av Cloud App Security som har beviljats behörigheter av användare. Cloud App Security-risk katalogen inkluderar över 16 000-program som utvärderas med över 70-riskfaktorer.
+**Cloud App Security – OAuth-appar** visar appar som upptäcks av Cloud App Security och som har beviljats behörighet av användare. Cloud App Securitys riskkatalog innehåller över 16 000 appar som bedöms använda mer än 70 riskfaktorer.
 
-Riskfaktorerna börjar med allmän information, till exempel program utgivaren. Därefter flyttas den till säkerhets åtgärder och kontroller, till exempel om appen stöder kryptering på andra eller om det finns en Gransknings logg för användar aktivitet.
+Riskfaktorerna börjar med allmän information, som programutgivaren. Sedan flyttas programmet till säkerhetsåtgärder och kontroller, till exempel om appen stöder kryptering i vila eller ger en granskningslogg över användaraktivitet.
 
-![Cloud App-säkerhet för OAuth-appar](../../media/cloud-app-security-oauth-apps.png)
+![OAuth-appskort för Cloud App Security](../../media/cloud-app-security-oauth-apps.png)
 
-## <a name="monitor-cloud-app-user-accounts"></a>Övervaka användar konton för moln program
+## <a name="monitor-cloud-app-user-accounts"></a>Övervaka användarkonton i molnappen
 
-**Cloud App-konton för gransknings** listor konton som kan behöva åtgärdas.
+**Molnappkonton för granskning listar** konton som kan behöva uppmärksammas.
 
-![Cloud App-konton för gransknings kort](../../media/cloud-app-accounts-for-review.png)
+![Cloud App-konton för granskningskort](../../media/cloud-app-accounts-for-review.png)
 
 ## <a name="understand-which-cloud-apps-are-used"></a>Förstå vilka molnappar som används
 
-**Upptäckta moln program (kategorier)** visar vilka typer av program som används i din organisation. Den länkar till moln identifierings instrument panelen i Cloud App Security. Mer information finns i [snabb start: arbeta med upptäckta appar](https://docs.microsoft.com/cloud-app-security/discovered-apps).  
+**Identifierade molnappar (kategorier)** visar vilka typer av appar som används i organisationen. Den länkar till instrumentpanelen för molnidentifiering i Cloud App Security. Mer information finns i [Snabbstart: Arbeta med identifierade appar.](https://docs.microsoft.com/cloud-app-security/discovered-apps)  
 
-![Kategori kort för identifierade molnappar](../../media/discovered-cloud-apps-categories.png)
+![Identifierat kategorikort för molnappar](../../media/discovered-cloud-apps-categories.png)
 
-## <a name="monitor-where-users-access-cloud-apps"></a>Övervaka var användare kommer åt molnappar
+## <a name="monitor-where-users-access-cloud-apps"></a>Övervaka var användare får åtkomst till molnappar
 
-**Cloud App Activity locations** visar var användarna kan komma åt molnappar.
+**Platser för aktivitet i molnappar** visar var användare använder molnappar.
 
-![Moln programs aktivitets plats kort](../../media/cloud-app-activity-locations.png)
+![Kort för aktivitet i Molnapp](../../media/cloud-app-activity-locations.png)
 
-## <a name="monitor-health-for-infrastructure-workloads"></a>Övervaka hälsa för infrastruktur arbets belastningar
+## <a name="monitor-health-for-infrastructure-workloads"></a>Övervaka hälsotillståndet för arbetsbelastningen för infrastrukturen
 
-**Infrastruktur hälsa** visar hälso status aviseringar för infrastruktur arbets belastning i Azure Defender.
+**Infrastrukturstatus visar** hälsostatusvarningar om infrastrukturarbetsbelastningar i Azure Defender.
 
-Azure Defender innehåller enhetlig säkerhets hantering och Defender för Office 365 i lokala och moln arbets belastningar. Du kan samla in, söka efter och analysera säkerhets data från olika källor, bland annat brand väggar och andra partner lösningar.
+Azure Defender ger enhetlig säkerhetshantering och Defender för Office 365 i både lokala och molnbaserade arbetsbelastningar. Du kan samla in, söka efter och analysera säkerhetsdata från olika källor, inklusive brandväggar och andra partnerlösningar.
 
-Mer information finns i [dokumentationen för Azure Defender](https://docs.microsoft.com/azure/security-center/).
+Mer information finns i [Azure Defender-dokumentationen.](https://docs.microsoft.com/azure/security-center/)
 
-![Infrastruktur hälso kort](../../media/infrastructure-health.png)
+![Hälsokort för infrastruktur](../../media/infrastructure-health.png)

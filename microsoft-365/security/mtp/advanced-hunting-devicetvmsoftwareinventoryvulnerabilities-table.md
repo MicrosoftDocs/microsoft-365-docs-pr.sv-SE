@@ -1,10 +1,10 @@
 ---
-title: DeviceTvmSoftwareInventoryVulnerabilities-tabell i det avancerade jakt-schemat
-description: Lär dig mer om inventering av program vara på dina enheter och deras säkerhets problem i DeviceTvmSoftwareInventoryVulnerabilities-tabellen i det avancerade antivirus programmet.
-keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, kolumn, datatyp, beskrivning, Hot & sårbarhets hantering, TVM, enhets hantering, program vara, inventering, sårbarhet, CVE-ID, OS DeviceTvmSoftwareInventoryVulnerabilities
+title: DeviceTvmSoftwareInventoryVulnerabilities-tabellen i den avancerade sökschemat
+description: Läs mer om inventeringen av programvaran i dina enheter och deras svagheter i tabellen Förser DeviceTvmSoftwareInventoryVulnerabilities i det avancerade sökschemat.
+keywords: avancerad sökning, hotsökning, cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, hot & sårbarhetshantering, TVM, enhetshantering, programvara, lager, svagheter, CVE-ID, OS DeviceTvmSoftwareInventoryVulnerabilities
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 2eb194b2471d0324606a95b4ae7327ffc0751ff6
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 517f974657032a1a4b7fee5888b0c681ec8063d7
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847581"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931080"
 ---
 # <a name="devicetvmsoftwareinventoryvulnerabilities"></a>DeviceTvmSoftwareInventoryVulnerabilities
 
@@ -36,31 +37,31 @@ ms.locfileid: "48847581"
 
 
 
-`DeviceTvmSoftwareInventoryVulnerabilities`Tabellen i det avancerade jakt-schemat innehåller [hotet & sårbarhets hantering](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) av program vara på dina enheter samt eventuella kända säkerhets problem i dessa program varu produkter. Den här tabellen innehåller information om operativ system, CVE-ID och säkerhets problem. Använd den här referensen för att skapa frågor som returnerar information från tabellen.
+Tabellen i det avancerade utbildningsschemat innehåller inventeringen av & vulnerability management av programvara på dina enheter samt eventuella kända säkerhetsproblem `DeviceTvmSoftwareInventoryVulnerabilities` i dessa [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) programvaruprodukter. Den här tabellen innehåller även information om operativsystem, CVE-ID och information om allvarlighetsgrad för problemet. Använd den här referensen för att skapa frågor som returnerar information från tabellen.
 
-Information om andra tabeller i det avancerade jakt schema finns i [referens för avancerad jakt](advanced-hunting-schema-tables.md).
+Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
-| `DeviceId` | strängvärdet | Unik identifierare för datorn i tjänsten |
-| `DeviceName` | strängvärdet | Det fullständigt kvalificerade domän namnet (FQDN) för datorn |
-| `OSPlatform` | strängvärdet | Plattformen för det operativ system som körs på datorn. Detta indikerar specifika operativ system, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7. |
-| `OSVersion` | strängvärdet | Version av operativ systemet som körs på datorn |
-| `OSArchitecture` | strängvärdet | Arkitekturen för operativ systemet som körs på datorn |
-| `SoftwareVendor` | strängvärdet | Namn på program varu leverantören |
-| `SoftwareName` | strängvärdet | Namnet på program varu produkten |
-| `SoftwareVersion` | strängvärdet | Versions nummer för program varu produkten |
-| `CveId` | strängvärdet | Unik identifierare tilldelad säkerhets luckan under de allmänna sårbarheterna och exponeringarna (CVE) |
-| `VulnerabilitySeverityLevel` | strängvärdet | Allvarlighets grad tilldelad säkerhets luckan baserat på CVSS Poäng och dynamiska faktorer som påverkas av hotets liggande |
+| `DeviceId` | sträng | Unikt ID för datorn i tjänsten |
+| `DeviceName` | sträng | Fullständigt kvalificerat domännamn (FQDN) för datorn |
+| `OSPlatform` | sträng | Operativsystemets plattform som körs på datorn. Detta indikerar specifika operativsystem, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7. |
+| `OSVersion` | sträng | Version av operativsystemet som körs på datorn |
+| `OSArchitecture` | sträng | Arkitekturen för operativsystemet som körs på datorn |
+| `SoftwareVendor` | sträng | Namnet på programvaruleverantören |
+| `SoftwareName` | sträng | Namnet på programvaruprodukten |
+| `SoftwareVersion` | sträng | Versionsnummer för programvaran |
+| `CveId` | sträng | Unik identifierare som tilldelats säkerhetsproblemet under systemet för vanliga säkerhetsproblem och exponeringar (CVE) |
+| `VulnerabilitySeverityLevel` | sträng | Allvarlighetsnivå tilldelad till säkerhetsbristen baserat på CVSS-poäng och dynamiska faktorer som påverkas av hotbilden |
 
 
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Har varit inaktivt för hot](advanced-hunting-overview.md)
+- [Proaktivt leta efter hot](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
 - [Jaga över olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)
-- [Översikt över hotet & säkerhets problem hantering](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Översikt över hot & sårbarhetshantering](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

@@ -99,7 +99,7 @@
       items:
         - name: Översikt
           href: tenant-management-overview.md
-        - name: Steg 1. Dina klientorganisationar
+        - name: Steg 1. Dina klientorganisationer
           href: tenant-management-tenants.md
         - name: Steg 2. Optimalt nätverk
           href: tenant-management-networking.md
