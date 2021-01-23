@@ -241,18 +241,6 @@
                       href: mtp/custom-detections-overview.md
                     - name: Skapa och hantera identifieringsregler
                       href: mtp/custom-detection-rules.md
-            - name: Rapporter
-              items:
-                - name: Övervaka och visa rapporter
-                  href: mtp/monitoring-and-reporting.md
-                - name: Identitetsövervakning och rapportering
-                  href: mtp/monitor-and-report-identities.md
-                - name: Dataövervakning och rapportering
-                  href: mtp/monitor-data.md
-                - name: Enhetsövervakning och rapportering
-                  href: mtp/monitor-devices.md
-                - name: Appövervakning och rapportering
-                  href: mtp/monitor-apps.md
         - name: Referens
           items:
             - name: Behörigheter och inställningar
