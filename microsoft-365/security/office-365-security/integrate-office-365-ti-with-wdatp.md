@@ -6,10 +6,9 @@ keywords: integrering, Microsoft Defender, ATP
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/29/2020
+ms.date: 01/21/2021
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,12 +17,14 @@ ms.collection:
 - M365-security-compliance
 description: Använd Microsoft Defender för Office 365 tillsammans med Microsoft Defender för slut punkt för att få mer detaljerad information om hot mot dina enheter och e-postinnehåll.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8cc78e7d674facb371ea98125b6857502031d26e
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 24b81bb4c445c44d7c0228fa1c4440faff642816
+ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616518"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49939338"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Använda Microsoft Defender för Office 365 tillsammans med Microsoft Defender för slut punkten
 
@@ -61,7 +62,7 @@ Att integrera Microsoft Defender för Office 365 med Microsoft Defender för slu
 
    ![Utforskaren i Threat Management-menyn](../../media/ThreatMgmt-Explorer-nav.png)
 
-3. I det övre högra hörnet på skärmen väljer du **Defender för slut punkts inställningar**.
+3. I det övre högra hörnet på skärmen väljer du **Defender för slut punkts inställningar (MDE-inställningar)**.
 
 4. I dialog rutan Microsoft Defender för slut punkts anslutning aktiverar **du Anslut till Microsoft Defender för slut punkt**.
 
@@ -81,4 +82,4 @@ Att integrera Microsoft Defender för Office 365 med Microsoft Defender för slu
 
 [Microsoft Defender för Office 365](office-365-atp.md)
 
-[Microsoft Defender för slut punkt](https://docs.microsoft.com/windows/security/threat-protection)
+[Microsoft Defender för Endpoint](https://docs.microsoft.com/windows/security/threat-protection)

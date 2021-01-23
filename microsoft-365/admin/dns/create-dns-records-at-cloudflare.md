@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på CloudFlare för Microsoft.
-ms.openlocfilehash: 110bd96c0eecf40ae96efe7055d82a8d12dde607
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 8d5dd7779f07fd42dd230ee33c40849da3519d26
+ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657966"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49939278"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Skapa DNS-poster på CloudFlare för Microsoft
 
@@ -86,7 +86,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
   
 4. Klicka på **Lägg till post** på sidan **DNS Management** och välj sedan värdena från följande tabell. 
     
-    |**Type (typ)**|**Name (namn)**|**Automatic TTL (automatisk TTL)**|**Innehåll**|
+    | Type (Typ) | Namn | Automatic TTL (automatisk TTL) | Content |
     |:-----|:-----|:-----|:----|
     |TXT  <br/> |@  <br/> |30 minuter  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)    |
   
@@ -130,7 +130,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 4. Klicka på **Lägg till post** på sidan **DNS Management** och välj sedan värdena från följande tabell. 
     
-    |**Type (typ)**|**Namn**|**Mail server (postserver)**|**Prioritet**|**TTL**|
+    | Type (Typ) | Namn | E-postserver | Ordningen | TTL |
     |:-----|:-----|:-----|:-----|:-----|
     |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Obs!** Hämta ditt  *\<domain-key\>*  från ditt Microsoft 365-konto.   [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md) |9.1  <br/> [Mer information om prioritet finns i ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)Vad är MX-prioritet? <br/>|30 minuter  <br/> |
    
@@ -159,7 +159,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     Klicka på **Lägg till post** på sidan **DNS Management** och välj sedan värdena från följande tabell.
     
     
-    |**Type (typ)**|**Namn**|**Mål**|**TTL**|
+    | Type (Typ) | Namn | Mål | TTL |
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |30 minuter  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |30 minuter  <br/> |
@@ -169,7 +169,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     |CNAME  <br/> |msoid  <br/> |clientconfig.microsoftonline-p.net  <br/> |30 minuter  <br/> |
     
   
-5. Välj ikonen för **DNS-trafik** (orange moln) för att kringgå CloudFlare-servrarna.
+5. Välj ikonen för **DNS-trafik** (ändra orange moln till grått) för att kringgå CloudFlare-servrarna.
   
 6. Välj **Spara**.
   
@@ -192,7 +192,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 4. Klicka på **Lägg till post** på sidan **DNS Management** och välj sedan värdena från följande tabell.  
     
-    |**Type (typ)**|**Namn**|**TTL**|**Innehåll**|
+    | Type (Typ) | Namn | TTL | Content |
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |@  <br/> |30 minuter  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.       |
 
@@ -217,7 +217,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 
     Klicka på **Lägg till post** på sidan **DNS Management** och välj sedan värdena från den första raden i följande tabell.
         
-    |**Type (typ)**|**Service (tjänst)**|**Protocol (protokoll)**|**Namn**|**TTL**|**Prioritet**|**Vikt**|**Port**|**Target (mål)**|
+    | Type (Typ) | Tjänst | Protokoll | Namn | TTL | Ordningen | Väga | Port | Mål |
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV|_sip |TLS |Använd din *domain_name*; till exempel contoso.com  |30 minuter | 100|9.1 |443 |sipfed.online.lync.com  |
     |SRV|_sipfederationtls | TCP|Använd din *domain_name*; till exempel contoso.com   |30 minuter |100 |9.1 |5061 | sipfed.online.lync.com |

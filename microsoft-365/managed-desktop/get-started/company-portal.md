@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d457c4b96e47485eee041b72a1cf24e96a13bf18
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: bddf46e451408e4f17e58cc62186b7cd6cefb382
+ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430193"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49939290"
 ---
 # <a name="install-intune-company-portal-on-devices"></a>Installera Intune företags Portal på enheter
 
@@ -38,9 +38,7 @@ Det här avsnittet innehåller information om hur du:
 - Verifiera aktiv synkronisering mellan Intune och Microsoft Store för företag 
 
 ## <a name="step-2---assign-company-portal-to-your-users"></a>Steg 2 – tilldela företags Portal till dina användare
-Skicka en supportbegäran till Microsoft Managed Station ära datorer via administrations portalen för Microsoft Managed Desktop. I supportbegäran kan du begära att företags portalen är tilldelad till användarna. Microsoft Managed Desktop distribuerar företags portalen till klient organisationen och installerar appen på Microsoft Managed Station ära enheter i din organisation.
-
-Mer information om hur du skickar support ärenden med Microsoft Managed Desktop finns i [Administratörs support för Microsoft Managed Desktop](../working-with-managed-desktop/admin-support.md).
+När du har registrerat dig på Microsoft Managed Desktop kan Microsoft Managed Desktop-operationer automatiskt distribuera företags Portal till klient organisationen och installera programmet på Microsoft Managed Station ära enheter i din organisation.
 
 ## <a name="step-3---communicate-change-to-your-users"></a>Steg 3 – meddela användarnas ändringar
 Som IT-administratör i organisationen är det viktigt att låta användarna veta hur man använder företags portalen i din organisation. Microsoft Managed Station ära datorer rekommenderar:
