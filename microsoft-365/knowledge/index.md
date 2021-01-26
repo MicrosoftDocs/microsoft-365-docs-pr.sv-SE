@@ -8,16 +8,18 @@ audience: ''
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 description: Lär dig hur du hittar resurser för avsnitts upplevelser.
-ms.openlocfilehash: 9141f6b445932234ebfa5a3d77833f64110ceeb4
-ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
+ms.openlocfilehash: a9069b8723cb23a406fcce3b96a53b3de2a07568
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "49731349"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976185"
 ---
 # <a name="introduction-to-topic-experiences-preview"></a>Introduktion till ämnen (för hands version)
 

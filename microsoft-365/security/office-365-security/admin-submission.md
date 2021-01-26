@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,12 +17,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 'Administratörer kan läsa mer om hur du använder portalen för att skicka e-postmeddelanden, misstänkta nätfiske-meddelanden, skräp post och andra potentiellt skadligt meddelande, URL: er och filer till Microsoft för genomsökning i & den här gruppen.'
-ms.openlocfilehash: 432a245530d7906ae8babbc54176480d36315351
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 879a13e7c059495e653b79c424b227fe9f35a498
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49864954"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976609"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Använd administratörs sändning för att skicka misstänkt skräp post, Phish, URL: er och filer till Microsoft
 
@@ -32,7 +33,15 @@ ms.locfileid: "49864954"
 
 I Microsoft 365-organisationer med post lådor i Exchange Online kan administratörer använda & portalen för att skicka e-postmeddelanden, URL: er och bifogade filer till Microsoft för att söka.
 
-När du skickar ett e-postmeddelande får du information om eventuella principer som kan ha tillåtit inkommande e-post till din klient organisation samt granskning av URL: er och bilagor i e-postmeddelandet. Principer som kan ha tillåtelse till ett e-postmeddelande inkluderar en enskild användares lista över betrodda avsändare och policy principer för Exchange-flöden (kallas även transport regler).
+När du skickar ett e-postmeddelande får du:
+
+1. **Kontrol lera e-postauktorisering**: information om huruvida e-postauktoriseringen lyckades eller misslyckades när den levererades.
+2. **Princip träffar**: information om eventuella principer som kan ha tillåtit eller blockera inkommande e-post till din klient organisation och Åsidosätt vårt service filter verdicts.
+3. **Nytto lastens rykte/spränghet**: undersökning av URL-adresser och bilagor i meddelandet.
+4. **Kurs analys**: granska gjorda av de mänskliga betygen för att bekräfta att meddelanden är skadliga.
+
+> [!IMPORTANT]
+> Nytto lastens rykte/Spräng och betygs analyser utförs inte hos alla klient organisationer. Informationen blockeras från att gå utanför organisationen när data inte förväntas lämna klient organisationens gräns för efterlevnad.
 
 Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microsoft finns i [rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -77,7 +86,7 @@ Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microso
 
 4. När du är klar klickar du på **Skicka** .
 
-![Exempel på skicka URL](../../media/submission-flyout-email.PNG)
+   ![Exempel på skicka URL](../../media/submission-flyout-email.PNG)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Skicka en misstänkt URL till Microsoft
 
@@ -91,7 +100,7 @@ Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microso
 
 3. När du är klar klickar du på **Skicka** .
 
-![Exempel på Skicka e-post](../../media/submission-url-flyout.png)
+   ![Exempel på Skicka e-post](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>Skicka en misstänkt fil till Microsoft
 
@@ -107,7 +116,7 @@ Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microso
 
 4. När du är klar klickar du på **Skicka** .
 
-![Exempel på skicka bilagor](../../media/submission-file-flyout.PNG)
+   ![Exempel på skicka bilagor](../../media/submission-file-flyout.PNG)
 
 ## <a name="view-admin-submissions"></a>Visa administratörs inlämningar
 

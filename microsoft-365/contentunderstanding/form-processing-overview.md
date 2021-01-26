@@ -7,15 +7,17 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 localization_priority: Priority
 description: Läs mer om formulärbearbetning i Microsoft SharePoint Syntex
-ms.openlocfilehash: a1429d93d6716fe5db31f0da2a77a68dcf98cd6e
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 9a979e0f7e45694f1cc7f98bbe2012c773698297
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519676"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976489"
 ---
 # <a name="form-processing-overview"></a>Översikt av formulär bearbetning
 

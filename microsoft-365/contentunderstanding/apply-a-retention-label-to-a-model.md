@@ -7,15 +7,17 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 localization_priority: Priority
 description: Den här artikeln tar upp hur du använder kvarhållningsetiketter på modeller för dokumenttolkning
-ms.openlocfilehash: 2e6d300b63a173d01488406485cffa44fab4278e
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 6dcd81b580b7bf0801641bbd019e1b99ecfe7338
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087481"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976561"
 ---
 # <a name="apply-a-retention-label-to-a-document-understanding-model"></a>Använda kvarhållningsetiketter på modeller för dokumenttolkning
 

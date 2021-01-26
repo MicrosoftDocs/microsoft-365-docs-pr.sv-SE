@@ -106,7 +106,6 @@
           href: customize-a-built-in-sensitive-information-type.md
         - name: Skapa anpassade typer av känslig information med exakt datamatchning
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: Komma igång med anpassade typer av känslig information
         - name: Använd Exact Data Match-schema och guiden för typ av känslig information
           href: sit-edm-wizard.md
         - name: Ändra exakt dataskema för att använda konfigurerbar matchning
