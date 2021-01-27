@@ -10,7 +10,6 @@ audience: ITPro
 ms.topic: how-to
 f1_keywords:
 - ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -19,12 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan få information om hur de tar bort användare från portalen för åtkomstbegränsade användare i Office 365. Användare läggs till i portalen med åtkomstbegränsade användare för att de skickat utgående skräppost, oftast som ett resultat av kontointrång.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bca9366fdb8cacdc58c12757e870c8ead8f1fa7a
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 779e769b76299edf9b6d205f64bed4738f2f2499
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683061"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988198"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Ta bort blockerade användare från portalen med åtkomstbegränsade användare i Office 365
 
@@ -71,7 +72,7 @@ Administratörer kan ta bort användare från portalen med åtkomstbegränsade a
 5. Bekräfta ändringen genom att klicka på **Ja**.
 
    > [!NOTE]
-   > Det kan ta 30 minuter eller mer innan restriktioner tas bort.
+   > Det kan ta upp till 24 timmar innan alla begränsningar tas bort från användaren.
 
 ## <a name="verify-the-alert-settings-for-restricted-users"></a>Verifiera aviseringsinställningarna för begränsade användare
 

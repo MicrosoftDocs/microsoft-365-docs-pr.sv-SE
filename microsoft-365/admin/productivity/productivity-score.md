@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Översikt över Microsoft produktivitetspoäng.
-ms.openlocfilehash: 8ba1ceb57cd322a67e7b154700a8ac90c62f5ef0
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 9f3e24d4af6858f106cde937940d5f0be1a4f85f
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921248"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988074"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft produktivitetspoäng 
 
@@ -80,13 +80,14 @@ För data över personupplevelser måste du ha en Microsoft 365 for Business- el
 
 Produktivitetspoäng är endast tillgängligt i Microsoft 365 Admin Center och kan bara nås av IT-personal som har någon av följande roller:  
 
-- Global administratör 
+- Global administratör
 - Exchange-administratörer
-- SharePoint-administratör 
-- Skype för företag-administratör 
-- Teams-administratör 
-- Global läsare 
-- Rapportläsare 
+- SharePoint-administratör
+- Skype för företag-administratör
+- Teams-administratör
+- Global läsare
+- Rapportläsare
+- Sammanfattningsrapporter för användning
 
 > [!NOTE]
 > Endast en IT-professionell med rollen som global administratör kan registrera sig eller välja en klientorganisation för produktivitetspoäng.

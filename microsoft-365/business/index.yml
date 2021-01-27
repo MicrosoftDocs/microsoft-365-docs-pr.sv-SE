@@ -12,12 +12,12 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 7242da8ec406df383a12b984ae7585c0e5c1a91d
-  ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+  ms.openlocfilehash: ed25671989668d09f7ad3fcc233a6cf8e1e0f1fc
+  ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
   ms.translationtype: HT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 12/11/2020
-  ms.locfileid: "49658470"
+  ms.lasthandoff: 01/26/2021
+  ms.locfileid: "49988062"
 productDirectory:
   title: Säkert distansarbete med Microsoft 365 Business Premium
   items:
@@ -33,10 +33,10 @@ productDirectory:
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
     summary: Azure AD Premium P1 ingår nu i Microsoft 365 Business Premium!
     url: https://aka.ms/aadp1smbblog
-  - title: Titta på partnerwebinariet
+  - title: Gå med i partnerwebinarieserien
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-    summary: Kör vinst och minska risken i fjärran arbetsvärlden!
-    url: https://aka.ms/GrowwithMicrosoft365
+    summary: Öka företagstillväxten genom hanterade tjänster med Microsoft 365 Business Premium.
+    url: https://aka.ms/acceleratewithm365bp
 conceptualContent:
   items:
   - title: Vad är Microsoft 365 Business Premium?
