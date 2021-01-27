@@ -3,7 +3,6 @@ title: Nyheter i Microsoft Defender för Office 365
 description: Lär dig mer om de nya funktioner som finns tillgängliga i den senaste versionen av Microsoft Defender för Office 365.
 keywords: Nyheter i Office 365 ATP, ga, allmänt tillgänglig, funktioner, tillgängliga, ny
 search.appverid: met150
-ms.service: O365-seccomp
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
@@ -17,15 +16,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.topic: conceptual
-ms.date: 10/09/2020
+ms.date: 01/12/2021
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: fb588320461ab44d1ce0f10c0776bcc9ee61b551
-ms.sourcegitcommit: 0ecac0387be6b49025b79ce8eb949a8cf62481e2
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 3544f1ccb760c461b7ab72c6dc037fd653136db9
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49724408"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988166"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nyheter i Microsoft Defender för Office 365
 
@@ -41,6 +42,10 @@ Den här artikeln innehåller de nya funktionerna i den senaste versionen av Mic
 > [!TIP]
 > Har du inte Microsoft Defender för Office 365 ännu? [Kontakta Sales för att starta en prov period](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
+## <a name="december-2020"></a>December 2020
+
+- [Säkra som standard i Office 365](secure-by-default.md)
+
 ## <a name="november-2020"></a>November 2020
 
 - Uppdaterade export gränser i granska > åtgärds Center > reparation från e-post och åtgärds logg (Defender för Office 365 abonnemang 2)
@@ -48,7 +53,6 @@ Den här artikeln innehåller de nya funktionerna i den senaste versionen av Mic
 ## <a name="septemberoctober-2020"></a>September/oktober 2020
 
 - [Kontrol lera dina policyer med hjälp av Configuration Analyzer](configuration-analyzer-for-security-policies.md)
-- [Åsidosätt filter manuellt verdicts med listan Tillåt/blockera klient organisation](tenant-allow-block-list.md)
 - [Utökade funktioner i Threat Explorer inklusive Top riktade användare, transport regler och anslutningar](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Defender för Office 365 i [Threat Explorer](threat-explorer.md) (via e-post som klient/användar princip) (Defender för Office 365 abonnemang 2)
 - Visa URL-hot i [Threat Explorer](threat-explorer.md#threats-in-urls) (skadlig program vara, Phish, spam eller ingen) (Defender för Office 365 abonnemang 2)
 - [Förbättringar av skydds Utforskaren för jakt](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) och uppdatering kring hot, ytterligare åtgärder, leverans ställen och uppdaterad tidslinjevy (Defender för Office 365 abonnemang 2)

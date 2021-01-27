@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,12 +16,14 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du definierar principer för säkra bifogade filer för att skydda din organisation från skadliga filer via e-post.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8dfdcc0779fb8b8438ee7a63d2f0e180cbb12ac9
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 5a26d214fe99d0053bf178d7d85a0b526d64f887
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780518"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988086"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Konfigurera principer för säkra bifogade filer i Microsoft Defender för Office 365
 
@@ -51,7 +52,7 @@ Skillnaden mellan dessa två element är inte uppenbar när du hanterar Safe Att
 I Exchange Online PowerShell eller fristående EOP PowerShell hanterar du policyn och regeln separat. Mer information finns i [använda Exchange Online PowerShell eller fristående EOP PowerShell för att konfigurera principer för säker bifogade filer](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) längre fram i den här artikeln.
 
 > [!NOTE]
-> I området globala inställningar i inställningar för säker bifogade filer konfigurerar du funktioner som inte är beroende av principer för säker bifogad fil. Anvisningar finns i [Aktivera ATP för SharePoint-, OneDrive-och Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md) och [Safe-dokument i Microsoft 365 E5](safe-docs.md).
+> I området globala inställningar i inställningar för säker bifogade filer konfigurerar du funktioner som inte är beroende av principer för säker bifogad fil. Anvisningar finns i [Aktivera säkra bifogade filer för SharePoint-, OneDrive-och Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md) och [Safe-dokument i Microsoft 365 E5](safe-docs.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
@@ -106,7 +107,7 @@ Om du skapar en anpassad princip för säker bifogade filer i säkerhets & Compl
 
      Rekommendationen för standard-och strikta princip inställningar är att aktivera omdirigering. Mer information finns i [Inställningar för säkra bifogade filer](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
-   - **Använda ovanstående markering om genomsökning av skadlig kod för bifogade filer eller fel inträffar**: åtgärden som anges av **osäkra bifogade filer inget svar på skadlig program** vara tas med när säkra bilagor inte kan slutföras. Välj alltid det här alternativet om du väljer **Aktivera omdirigering**. Annars kan meddelanden gå förlorade.
+   - **Använda ovanstående markering om genomsökning av skadlig kod för bifogade filer eller fel inträffar**: åtgärden som anges av **osäkra bifogade filer inget svar på skadlig program** vara tas med när säkra bilagor inte kan slutföras. Om du har valt det här alternativet, Välj alltid **aktiverat omdirigering**. Annars kan meddelanden gå förlorade.
 
    När du är klar klickar du på **Nästa**.
 

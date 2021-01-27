@@ -1,7 +1,7 @@
 ---
-title: API för avancerad sökning för Microsoft 365 Defender
-description: Lär dig hur du kör avancerade sökfrågor med hjälp av Microsoft 365 Defenders avancerade API för sökningar
-keywords: Advanced Hunting, API:er, api, MTP, M365 Defender, Microsoft 365 Defender
+title: Microsoft 365 Defender Advanced jakt-API
+description: Lär dig hur du kör avancerade jakt frågor med Microsoft 365 Defender s Advanced jakt API
+keywords: 'Avancerad jakt, API: er, MTP, M365 Defender, Microsoft 365 Defender'
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4213773c3305c28f0913013d8f7634c083811f52
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 99f39a10de6231a72220c5c2a90ec915b1a4e44a
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932088"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988122"
 ---
-# <a name="microsoft-365-defender-advanced-hunting-api"></a>API för Microsoft 365 Defender Advanced-sökning
+# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender Advanced jakt-API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,36 +36,39 @@ ms.locfileid: "49932088"
 - Microsoft Threat Protection
 
 > [!IMPORTANT]
-> Viss information gäller förhandsversioner av produkter som kan komma att ändras väsentligt innan de släpps till kommersiellt bruk. Microsoft ger inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges här.
+> Vissa uppgifter gäller för FÖRLANSERADE produkter som kan komma att ändras väsentligt innan de saluförs. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på informationen som tillhandahålls här.
 
-[Avancerad sökning](advanced-hunting-overview.md) är ett verktyg för hot efter hot som använder [särskilt](advanced-hunting-query-language.md) uppbyggda frågor för att undersöka händelsedata för de senaste 30 dagarna i Microsoft 365 Defender. Du kan använda avancerade sökningsfrågor för att inspektera ovanlig aktivitet, identifiera möjliga hot och även svara på attacker. Med API:t för avancerad sökning kan du programmässigt fråga händelsedata.
+[Avancerad jakt](advanced-hunting-overview.md) är ett hot-jakt-verktyg som använder [särskilt utformade frågor](advanced-hunting-query-language.md) för att undersöka de senaste 30 dagarna av händelse data i Microsoft 365 Defender. Du kan använda avancerade jakt frågor för att kontrol lera ovanlig aktivitet, upptäcka möjliga hot och till och med reagera på attacker. Med Advanced jakt API kan du programatically fråga efter händelse data.
 
 ## <a name="quotas-and-resource-allocation"></a>Kvoter och resurstilldelning
 
 Följande villkor gäller för alla frågor.
 
 1. Frågor utforskar och returnerar data från de senaste 30 dagarna.
-2. Resultatet kan returnera upp till 100 000 rader.
-3. Du kan ringa upp till 10 samtal per minut per klientorganisation.
-4. Du har 10 minuters körning per timme per klientorganisation.
-5. Du har totalt fyra timmar löpande dag per klientorganisation.
-6. Om en enskild begäran körs i mer än 10 minuter time out och returnerar ett fel.
-7. En HTTP-svarskod anger att du har nått en kvot, antingen genom antal begäranden som skickas eller `429` med tilldelad körningstid. Svarstexten innehåller tiden tills kvoten du har nått återställs.
+2. Resultaten kan returnera upp till 100 000 rader.
+3. Du kan ringa upp till 15 samtal per minut per klient organisation.
+4. Du har 10 minuters kör tid per timme per klient organisation.
+5. Du har fyra totala timmar med kör tid per dag per klient organisation.
+6. Om en enda begäran körs i mer än 10 minuter upphör den att fungera och ett fel meddelande returneras.
+7. En `429` http-svarskod visar att du har nått en kvot, antingen av antalet begär Anden som skickats eller via utsatt tid för drift. Läs svars texten för att förstå den gräns du har uppnått. 
+
+> [!NOTE]
+> Alla kvoter ovan (till exempel 15 samtal per minut) är per innehavare. De här kvoterna är minst.
 
 ## <a name="permissions"></a>Behörigheter
 
-En av följande behörigheter krävs för att anropa API för avancerad sökning. Mer information, inklusive hur du väljer behörigheter, finns i Access API:er för [Microsoft 365 Defender Protection](api-access.md)
+En av följande behörigheter krävs för att kunna ringa det avancerade jakt-API: t. Om du vill veta mer, inklusive hur du väljer behörigheter, läser du [gå till Microsoft 365 Defender-skydds-API: erna](api-access.md)
 
-Behörighetstyp | Behörighet | Visningsnamn för behörighet
+Behörighets typ | Tillåtelse | Visnings namn för behörighet
 -|-|-
-Program | AdvancedHunting.Read.All | Köra avancerade frågor
-Delegerat (arbets- eller skolkonto) | AdvancedHunting.Read | Köra avancerade frågor
+Program | AdvancedHunting. Read. all | Kör avancerade frågor
+Delegerat (arbets-eller skol konto) | AdvancedHunting. Read | Kör avancerade frågor
 
 >[!Note]
-> När du skaffar ett token med användarautentiseringsuppgifter:
+> När du erhåller ett token med användar uppgifter:
 >
->- Användaren måste ha AD-rollen Visa data
->- Användaren måste ha åtkomst till enheten, baserat på enhetsgruppsinställningar.
+>- Användaren måste ha AD-rollen "Visa data"
+>- Användaren måste ha åtkomst till enheten baserat på Inställningar för enhets grupp.
 
 ## <a name="http-request"></a>HTTP-begäran
 
@@ -73,36 +76,36 @@ Delegerat (arbets- eller skolkonto) | AdvancedHunting.Read | Köra avancerade fr
 POST https://api.security.microsoft.com/api/advancedhunting/run
 ```
 
-## <a name="request-headers"></a>Begär sidhuvuden
+## <a name="request-headers"></a>Begärandehuvuden
 
-Sidhuvud | Value
+Meddelande | Value
 -|-
-Auktorisering | Bearer {token} **Obs! obligatoriskt**
-Innehållstyp | application/json
+Bemyndigande | Bevarad {token} **Obs!**
+Innehålls typ | program/JSON
 
-## <a name="request-body"></a>Begärandetext
+## <a name="request-body"></a>Brödtext
 
-Ange ett JSON-objekt med följande parametrar i begärans brödtext:
+Ange ett JSON-objekt med följande parametrar i den efterfrågade texten:
 
-Parameter | Type (Typ) | Beskrivning
+Indataparametern | Type (Typ) | Beskrivning
 -|-|-
-Fråga | Text | Frågan som ska köras. **Obs! obligatoriskt**
+Frågeserver | Text | Frågan att köra. **Obs!**
 
-## <a name="response"></a>Svar
+## <a name="response"></a>Interimssvar
 
-Om det lyckas returneras den här `200 OK` metoden och _ett QueryResponse-objekt_ i svarets brödtext.
+Om det lyckas returneras den här metoden `200 OK` och ett _QueryResponse_ -objekt i svars texten.
 
-Svarsobjektet innehåller tre egenskaper på översta nivån:
+Response-objektet innehåller tre högsta nivå egenskaper:
 
-1. Statistik – en ordlista för frågeprestandastatistik.
-2. Schema – Schemat för svaret, en lista Name-Type par för varje kolumn.
-3. Resultat – En lista över avancerade sökningsevenemang.
+1. Statistik – en ord lista med prestanda statistik för frågor.
+2. Schema – schemat för svaret, en lista över Name-Type par för varje kolumn.
+3. Resultat – en lista över avancerade jakt händelser.
 
 ## <a name="example"></a>Exempel
 
-I följande exempel skickar en användare frågan nedan och tar emot ett API-svarsobjekt som `Stats` innehåller `Schema` , `Results` och.
+I följande exempel skickar en användare frågan nedan och tar emot ett API-svarsmeddelande som innehåller `Stats` , `Schema` , och `Results` .
 
-### <a name="query"></a>Fråga
+### <a name="query"></a>Frågeserver
 
 ```json
 {
@@ -177,7 +180,7 @@ I följande exempel skickar en användare frågan nedan och tar emot ett API-sva
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Få åtkomst till API:er för Microsoft 365 Defender](api-access.md)
-- [Läs mer om API-begränsningar och -licensiering](api-terms.md)
+- [Gå till API för Microsoft 365 Defender](api-access.md)
+- [Läs mer om API-begränsningar och licensiering](api-terms.md)
 - [Förstå felkoder](api-error-codes.md)
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
