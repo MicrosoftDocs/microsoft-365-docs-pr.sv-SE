@@ -7,15 +7,17 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 localization_priority: Priority
 description: Använd en termlagringstaxonomi vid skapande av extraktor i modellen för dokumenttolkning i Microsoft SharePoint Syntex.
-ms.openlocfilehash: cf396d14a497981389cc336c5efd121f36392181
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: aff2df6a96fdfee7380651f68e647019e9485658
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709554"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49975745"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>Använda termlagringstaxonomi vid skapande av extraktor
 
@@ -39,7 +41,7 @@ Uppsättningar med termer konfigureras i hanterade metadatatjänstens (MMS) term
 
 Det kan finnas flera anledningar till att du vill använda en synonym i termuppsättningen. Det kan till exempel röra sig om föråldrade termer, termer som fått nya namn eller skillnader mellan företagets olika avdelningar.
 
-Om du vill att fältet för hanterade metadata ska vara tillgängligt att välja när du skapar din extraktor i modellen måste du [lägga till det som en webbplatskolumn med hanterade metadata](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f). När du har lagt till webbplatskolumnen blir den tillgänglig att välja när du skapar extraktorn för din modell.
+Om du vill att fältet för hanterade metadata ska vara tillgängligt att välja när du skapar din extraktor i modellen måste du [lägga till det som en webbplatskolumn med hanterade metadata](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f). När du har lagt till webbplatskolumnen kan du välja när du skapar extraktorn för din modell.
 
    ![Kontraktstjänst](../media/content-understanding/contract-services.png)</br>
 
