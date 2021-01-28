@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 53a21c4126e59861200df405ffe365b2ccef08f8
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 4d8de363cc9111fade719fdf5384519d1236f431
+ms.sourcegitcommit: 05657b39eaafc0503b01c6adcc5d8a5e615dc02c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840295"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50031345"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Hur uppdateringar hanteras på Microsoft Managed Desktop
 
@@ -37,19 +37,26 @@ Microsoft Managed Desktop använder fyra Azure AD-grupper för att hantera uppda
 - **Snabb**: prioriterar fortare. Användbart för att upptäcka kvalitets problem innan de erbjuds till den breda gruppen. Den här gruppen fungerar som ett Next-verifiering, men är ofta mer stabil än test och första grupp. 
 - **Brett**: senaste gruppen för att få funktioner och kvalitets uppdateringar tillgängliga. Den här gruppen innehåller de flesta användare i klient organisationen och förökade stabilitet i distributionen. Test av program bör göras här eftersom miljön är stabilare. 
 
+### <a name="moving-devices-between-update-groups"></a>Flytta enheter mellan uppdaterings grupper
+Du kanske vill att vissa enheter ska ta emot de senaste uppdateringarna och andra som du vill börja med. För att flytta dessa enheter till en lämplig uppdaterings grupp, [skicka in en begäran om administratörs support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support?view=o365-worldwide) så flyttar vi enheterna åt dig. 
+
 > [!NOTE]
-> Om du behöver flytta en användare till en annan uppdaterings grupp ska du skicka en supportbegäran. Se [Support för Microsoft Managed Desktop](support.md) om du vill ha mer information om att skicka support förfrågningar. Om du flyttar en användare själv återställs flytten.
+> Om du behöver flytta en användare till en annan uppdaterings grupp ska du skicka en supportbegäran. Flytta inte enheter mellan uppdaterings grupper själv. Det uppstår allvarliga konsekvenser om en enhet flyttas felaktigt. Enheten kan uppdateras oväntat och principer kan vara motstridiga och ändra enhetens konfiguration.
 
-Mer information om roller och ansvars områden med de här distributions grupperna finns i [Microsoft hanterade Skriv bords roller och ansvar](../intro/roles-and-responsibilities.md)
+Mer information om roller och behörigheter i de här distributions grupperna finns i [Microsoft hanterade Skriv bords roller och ansvars områden](../intro/roles-and-responsibilities.md)
 
-Så här fungerar uppdaterings distribution:
-- Microsoft Managed Desktop distribuerar en ny funktion eller kvalitets uppdatering enligt det schema som anges i tabellen.
-- Under distributionen är Microsoft Managed Desktop Monitors för tecken på misslyckanden eller avbrott (baserat på diagnostikdata och användar support systemet). Om det finns en sådan hittas distributionen till alla aktuella och framtida grupper omedelbart.
+### <a name="using-microsoft-managed-desktop-update-groups"></a>Använda Microsoft Managed Desktop Update-grupper 
+Det finns delar av den tjänst som du hanterar, till exempel program distribution, där det kan vara nödvändigt att rikta alla hanterade enheter. I de här fallen är det bra att använda uppdaterings grupper för att nå användarna om att du inte kan lägga till, ta bort eller ändra medlemskap för dessa grupper. 
+
+## <a name="how-update-deployment-works"></a>Så här fungerar uppdaterings distribution:
+1. Microsoft Managed Desktop distribuerar en ny funktion eller kvalitets uppdatering enligt det schema som anges i följande tabell.
+2. Under distributionen är Microsoft Managed Desktop Monitors för tecken på misslyckanden eller avbrott baserat på diagnostikdata och användar support systemet. Om det finns något identifieras kan vi omedelbart pausa distributionen till alla aktuella och framtida grupper.
     - Exempel: om ett problem upptäcks när du distribuerar en kvalitets uppdatering till den första gruppen pausas alla distributioner till första, snabba och breda tills problemet löses.
-    - Kompatibilitetsproblem kan rapporteras genom att en biljett skickas till Microsoft Managed Desktop admin-portalen.
-- Uppdateringar av funktioner och kvalitet pausas oberoende av varandra. Paus gäller för 35 dagar som standard, men kan minskas eller utökas beroende på om problemet är åtgärdat.
-- När grupperna har pausats fortsätter distributionen enligt schemat i tabellen.
-- Den här distributions processen gäller både funktions-och kvalitets uppdateringar, även om tids linjen varierar beroende på var och en av dem.
+    - Du kan rapportera kompatibilitetsproblem genom att arkivera en biljett på Microsoft Managed Desktop admin-portalen.
+    - Uppdateringar av funktioner och kvalitet pausas oberoende av varandra. Paus gäller för 35 dagar som standard, men kan minskas eller utökas beroende på om problemet är åtgärdat.
+3. När grupperna har avbrutits återställs distributionen enligt schemat i tabellen.
+
+Den här distributions processen gäller både funktions-och kvalitets uppdateringar, även om tids linjen varierar beroende på var och en av dem.
 
 
 
@@ -63,6 +70,7 @@ Så här fungerar uppdaterings distribution:
     <tr><td>Antivirus definition</td><td colspan="4">Uppdaterat med varje genomsökning</td></tr>
     <tr><td> Microsoft 365 Apps för företag</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">Läs mer</a></td></tr>
     <tr><td>Microsoft Edge</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">Läs mer</a></td></tr>
+    <tr><td>Microsoft Teams</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/teams#updates">Läs mer</a></td></tr>
 </table>
 
 >[!NOTE]
@@ -78,6 +86,5 @@ Alla enheter som hittas med Windows Insider-versioner kan ingå i test gruppen o
 
 ## <a name="bandwidth-management"></a>Bandbredds hantering
 
-Vi använder [leverans optimering](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) för alla operativ system och driv rutiner. Den här funktionen minimerar nedladdnings storleken från Windows Update-tjänsten genom att söka efter uppdateringar från peers i företags nätverket.
-
+Vi använder [leverans optimering](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) för alla operativ system och driv rutiner. Detta minimerar nedladdnings storleken från Windows Update-tjänsten genom att söka efter uppdateringar från peers i företags nätverket.
 
