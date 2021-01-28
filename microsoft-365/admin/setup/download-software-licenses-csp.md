@@ -1,5 +1,5 @@
 ---
-title: Hämta beständig program-och produkt licens nycklar
+title: Hämta beständig program-och produkt licens nycklar som har köpts via det CSP-programmet (Cloud Solution Provider)
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - AdminSurgePortfolio
 description: Lär dig hur du hämtar program varu-och produkt licens nycklar för beständig program vara som köpts via ett KRYPTOGRAFIPROVIDER-program.
-ms.openlocfilehash: bd9584e6a160f713cdfbfbcdac876b2e18b94110
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 9e55161111ae1796e8254a60ecdc693592988386
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877237"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029404"
 ---
 # <a name="download-perpetual-software-and-product-license-keys"></a>Hämta beständig program-och produkt licens nycklar
 

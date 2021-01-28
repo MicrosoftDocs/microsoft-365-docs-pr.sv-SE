@@ -3,22 +3,23 @@ title: Rapport om utebliven leverans i instrument panelen för e-postflöde
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära dig hur du använder rapporten för information om ej leverans i instrument panelen för e-postflöde i säkerhets & Compliance Center för att övervaka de vanligaste fel koderna i rapporter som inte kunde levereras (kallas även NDR eller studs meddelanden) från avsändare i din organisation.
-ms.openlocfilehash: 4967b3b5c294566e46bbc715dd6702c23d618105
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: dbd27fc818a46a983874a04f0e313c622e047ea5
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877687"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029840"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Rapport om utebliven leverans i säkerhets & efterlevnad
 
@@ -46,7 +47,7 @@ Om du klickar på **Visa informations tabell** i en rapportvy visas följande in
 - **Datum**
 - **Rapport kod för ej leverans**
 - **Öka**
-- **Exempel meddelanden** : meddelande-ID för ett urval av påverkade meddelanden.
+- **Exempel meddelanden**: meddelande-ID för ett urval av påverkade meddelanden.
 
 Om du klickar på **filter** i en detaljerad tabellvy kan du ange ett datum intervall med **start datum** och **slutdatum**.
 
@@ -55,9 +56,9 @@ Om du vill skicka rapporten för ett visst datum intervall till en eller flera m
 När du markerar en rad i tabellen visas en utfällbar tabell med följande information:
 
 - **Datum**
-- **Rapport kod för ej leverans** : du kan klicka på länken för att hitta mer information om orsakerna och lösningarna för den specifika felkoden.
+- **Rapport kod för ej leverans**: du kan klicka på länken för att hitta mer information om orsakerna och lösningarna för den specifika felkoden.
 - **Öka**
-- **Exempel meddelanden** : du kan klicka på **Visa exempel meddelanden** om du vill visa [meddelande spårnings](message-trace-scc.md) resultaten för ett prov av de påverkade meddelandena.
+- **Exempel meddelanden**: du kan klicka på **Visa exempel meddelanden** om du vill visa [meddelande spårnings](message-trace-scc.md) resultaten för ett prov av de påverkade meddelandena.
 
 ![Utfällda detaljer när du har markerat en rad i Tabellvy i rapporten för ej leverans](../../media/mfi-non-delivery-report-details-flyout.png)
 

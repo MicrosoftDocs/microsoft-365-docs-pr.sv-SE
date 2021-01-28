@@ -3,22 +3,23 @@ title: E-postflödeskarta
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om hur du använder översikten för e-postflöden i instrument panelen för e-postflöde i säkerhets & efterföljandekrav för att visualisera och spåra hur e-flöden kommer till och från sin organisation via kopplingar och utan att använda kopplingar.
-ms.openlocfilehash: fc03f05db77c40dbf726692e6fb6069d587a5ffc
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: c07730f3abcec8905285cdfdf1579ffb71573ec1
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877771"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029924"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Översikt över e-postflöde i säkerhets & efterlevnad
 
@@ -37,11 +38,11 @@ Om du klickar på widgeten **Koppla dokument flöden** tas du till **översikten
 
 Följande diagram är tillgängliga i rapportvyn:
 
-- **Visa data för: översikt** : det här är i stort sett en större vy av widgeten. Om du hovrar över en viss färg visas antalet meddelanden för den typen av koppling.
+- **Visa data för: översikt**: det här är i stort sett en större vy av widgeten. Om du hovrar över en viss färg visas antalet meddelanden för den typen av koppling.
 
   ![Vyn Översikt i rapporten e-postflödes karta](../../media/mfi-mail-flow-map-report-overview.png)
 
-- **Visa data för: detail** : den här vyn visar information om kopplingarna och mål domänerna. De översta avsändarna och mottagar domänerna visas och resten placeras i **andra**. Om du hovrar över en viss färg och ett avsnitt visas antalet meddelanden.
+- **Visa data för: detail**: den här vyn visar information om kopplingarna och mål domänerna. De översta avsändarna och mottagar domänerna visas och resten placeras i **andra**. Om du hovrar över en viss färg och ett avsnitt visas antalet meddelanden.
 
   ![Detaljvyn i rapporten dokument flödes karta](../../media/mfi-mail-flow-map-report-detail.png)
 

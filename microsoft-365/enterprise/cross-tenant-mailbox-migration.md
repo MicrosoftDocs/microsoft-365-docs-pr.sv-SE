@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: aecb1230ac9a9b2868c519c9b8920e312ff5a282
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 4296879b36e26f11f945105ccebea351ad88314d
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794050"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029532"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migrera mellan innehavare (för hands version)
 
@@ -176,7 +176,7 @@ Konfigurationen för mål administratören är nu klar!
 
 3. I administrations centret för Microsoft 365 eller en fjärr-PowerShell-session skapar du en eller flera e-postaktiverade säkerhets grupper för att kontrol lera listan med post lådor som tillåts av mål klient organisationen för att ta bort (flytta) från käll klient organisationen till mål klient organisationen. Du behöver inte fylla i den här gruppen i förväg, men minst en grupp måste tillhandahållas för att köra konfigurations stegen (skript). Kapslade grupper stöds inte. 
 
-4. Ladda ned SetupCrossTenantRelationshipForTargetResource.ps1-skript för käll klient organisations konfiguration från GitHub-databasen här: [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) . 
+4. Ladda ned SetupCrossTenantRelationshipForResourceTenant.ps1-skript för käll klient organisations konfiguration från GitHub-databasen här: [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) . 
 
 5. Skapa en fjärran sluten PowerShell-anslutning till käll klient organisationen med administratörs behörigheter för Exchange. Den globala administratörs behörighet krävs inte för att konfigurera käll klient organisationen, bara mål innehavaren på grund av processen att skapa Azure-program.
 

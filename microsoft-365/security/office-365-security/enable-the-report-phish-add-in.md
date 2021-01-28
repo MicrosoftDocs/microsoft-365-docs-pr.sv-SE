@@ -3,7 +3,7 @@ title: Aktivera tilläggsprogrammet rapportera Phish
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: Admin
 ms.topic: how-to
@@ -16,14 +16,14 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Lär dig hur du aktiverar tillägget för rapport-nätfiske för Outlook och Outlook på webben, för enskilda användare eller hela organisationen.
-ms.openlocfilehash: 2ea6a9bf9b00fc844aede6daeb9fc11f23c81e4a
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.openlocfilehash: 6d86fdc710539bc3c74eb94f8931ca48a0c992c1
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865288"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029144"
 ---
-# <a name="enable-the-report-phishing-add-in"></a>Aktivera tillägget rapportera nät fiske
+# <a name="enable-the-report-phishing-add-in"></a>Aktivera tillägget för att rapportera nätfiske
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -87,21 +87,23 @@ När tillägget har installerats och Aktiver ATS ser du följande ikoner:
 > [!NOTE]
 > Det kan ta upp till 12 timmar innan tillägget visas i din organisation.
 
-1. I administrations centret för Microsoft 365 går du till sidan **Inställningar, integrerade appar & tillägg** på <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> och klickar sedan på **distribuera tillägg**.
+1. Gå till sidan **Inställningar** för tillägg i administrations centret för Microsoft 365, \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> om du inte kan se **tilläggs** sidan går du till länken **Inställningar** för \> **integrerade appar** \>  i den övre delen av sidan **integrerade program** .
+
+2. Välj **distribuera tillägg** högst upp på sidan och välj sedan **Nästa**.
 
    ![Sidan tjänster och tillägg i administrations centret för Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. I **distribuera en ny** utfällbar tillägg som visas läser du informationen och klickar sedan på **Nästa**.
+3. I **distribuera en ny** utfällbar tillägg som visas läser du informationen och klickar sedan på **Nästa**.
 
-3. På nästa sida klickar du på **Välj från butiken**.
+4. På nästa sida klickar du på **Välj från butiken**.
 
    ![Distribuera en ny tilläggs sida](../../media/NewAddInScreen2.png)
 
-4. Klicka i **sökrutan på** sidan **Välj tillägg** som visas, ange **rapport nätfiske** och klicka sedan på ikonen **Sök** ![ sökning ](../../media/search-icon.png) . Sök efter **rapport nätfiske** i resultat listan och klicka sedan på **Lägg till**.
+5. Klicka i **sökrutan på** sidan **Välj tillägg** som visas, ange **rapport nätfiske** och klicka sedan på ikonen **Sök** ![ sökning ](../../media/search-icon.png) . Sök efter **rapport nätfiske** i resultat listan och klicka sedan på **Lägg till**.
 
-5. I dialog rutan som visas granskar du licensierings-och integritets informationen och klickar sedan på **Fortsätt**.
+6. I dialog rutan som visas granskar du licensierings-och integritets informationen och klickar sedan på **Fortsätt**.
 
-6. På sidan **Konfigurera tillägg** som visas konfigurerar du följande inställningar:
+7. På sidan **Konfigurera tillägg** som visas konfigurerar du följande inställningar:
 
    - **Tilldelade användare**: Välj något av följande värden:
 
@@ -117,9 +119,9 @@ När tillägget har installerats och Aktiver ATS ser du följande ikoner:
 
    När du är klar klickar du på **distribuera**.
 
-7. I sidan **distribuera rapport nät fiske** som visas visas en status rapport följt av en bekräftelse på att tillägget distribuerades. När du har läst informationen klickar du på **Nästa**.
+8. I sidan **distribuera rapport nät fiske** som visas visas en status rapport följt av en bekräftelse på att tillägget distribuerades. När du har läst informationen klickar du på **Nästa**.
 
-8. På sidan om meddelande **tillägget** som visas granskar du informationen och klickar sedan på **Stäng**.
+9. På sidan om meddelande **tillägget** som visas granskar du informationen och klickar sedan på **Stäng**.
 
 ## <a name="learn-how-to-use-the-report-phishing-add-in"></a>Lär dig hur du använder tillägget rapportera nät fiske
 
@@ -135,7 +137,7 @@ Personer som har tillägget tilldelat kommer att se följande ikoner:
 
 ## <a name="review-or-edit-settings-for-the-report-phishing-add-in"></a>Granska eller redigera inställningar för tillägget rapportera nät fiske
 
-1. Gå till sidan **tjänster & tillägg** i administrations centret för Microsoft 365 <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> .
+1. Gå till sidan **Inställningar** för tillägg i administrations centret för Microsoft 365, \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> om du inte kan se **tilläggs** sidan går du till länken **Inställningar** för \> **integrerade appar** \>  i den övre delen av sidan **integrerade program** .
 
 2. Sök reda på och välj tillägget **rapportera nät fiske** .
 

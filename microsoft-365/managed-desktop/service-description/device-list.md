@@ -8,16 +8,16 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6e904eee5a132d271ec32ee99a19380463e53193
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.openlocfilehash: ee2e473f947f35d4f0d192005718a26e89590fab
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881779"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032663"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft hanterade Station ära enheter 
 
-Microsoft Managed Desktop utvärderar regelbundet enheter så att de tas med i tjänsten. I den här artikeln beskrivs kraven för en enhet som ska registreras på Microsoft Managed Desktop och en lista med de specifika enheter som stöds för närvarande.
+Microsoft Managed Desktop utvärderar regelbundet enheter så att de tas med i tjänsten. I den här artikeln finns en lista över specifika enheter som stöds för närvarande. Mer allmän information om enhets kraven finns i [enhets krav](device-requirements.md).
 
 Mer information om Microsoft Managed Desktop finns i [dokumentationen och resurserna för Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/). 
 

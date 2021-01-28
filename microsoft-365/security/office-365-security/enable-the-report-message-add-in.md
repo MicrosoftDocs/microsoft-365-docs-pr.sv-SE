@@ -3,11 +3,10 @@ title: Aktivera tillägget för att rapportera meddelande
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,12 +15,14 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Lär dig hur du aktiverar rapport tillägget för Outlook och Outlook på webben, för enskilda användare eller hela organisationen.
-ms.openlocfilehash: 13721317c33cf207f27cd8b98fb6d32864651847
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: a1f8cffaa6346ec7f426da3c862014ed85a9a367
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865002"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029238"
 ---
 # <a name="enable-the-report-message-add-in"></a>Aktivera tillägget för att rapportera meddelande
 
@@ -91,23 +92,25 @@ Information om hur du använder tillägget finns i [använda tillägget rapporte
 > [!NOTE]
 > Det kan ta upp till 12 timmar innan tillägget visas i din organisation.
 
-1. I administrations centret för Microsoft 365 går du till sidan **Inställningar, integrerade appar & tillägg** på <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> och klickar sedan på **distribuera tillägg**.
+1. Gå till sidan **Inställningar** för tillägg i administrations centret för Microsoft 365, \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> om du inte kan se **tilläggs** sidan går du till länken **Inställningar** för \> **integrerade appar** \>  i den övre delen av sidan **integrerade program** .
+
+2. Välj **distribuera tillägg** högst upp på sidan och välj sedan **Nästa**.
 
    ![Sidan tjänster och tillägg i administrations centret för Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. I **distribuera en ny** utfällbar tillägg som visas läser du informationen och klickar sedan på **Nästa**.
+3. I **distribuera en ny** utfällbar tillägg som visas läser du informationen och klickar sedan på **Nästa**.
 
-3. På nästa sida klickar du på **Välj från butiken**.
+4. På nästa sida klickar du på **Välj från butiken**.
 
    ![Distribuera en ny tilläggs sida](../../media/NewAddInScreen2.png)
 
-4. Klicka i **sökrutan på** sidan **Välj tillägg** som visas, ange **rapport meddelande** och klicka sedan på ikonen **Sök** sökning ![ ](../../media/search-icon.png) . Sök efter **rapport meddelande** i listan med resultat och klicka sedan på **Lägg till**.
+5. Klicka i **sökrutan på** sidan **Välj tillägg** som visas, ange **rapport meddelande** och klicka sedan på ikonen **Sök** sökning ![ ](../../media/search-icon.png) . Sök efter **rapport meddelande** i listan med resultat och klicka sedan på **Lägg till**.
 
    ![Välja Sök Resultat för tillägg](../../media/NewAddInScreen3.png)
 
-5. I dialog rutan som visas granskar du licensierings-och integritets informationen och klickar sedan på **Fortsätt**.
+6. I dialog rutan som visas granskar du licensierings-och integritets informationen och klickar sedan på **Fortsätt**.
 
-6. På sidan **Konfigurera tillägg** som visas konfigurerar du följande inställningar:
+7. På sidan **Konfigurera tillägg** som visas konfigurerar du följande inställningar:
 
    - **Tilldelade användare**: Välj något av följande värden:
 
@@ -125,11 +128,11 @@ Information om hur du använder tillägget finns i [använda tillägget rapporte
 
    När du är klar klickar du på **distribuera**.
 
-7. På sidan **distribuera rapport meddelanden** som visas visas en status rapport följt av en bekräftelse på att tillägget distribuerades. När du har läst informationen klickar du på **Nästa**.
+8. På sidan **distribuera rapport meddelanden** som visas visas en status rapport följt av en bekräftelse på att tillägget distribuerades. När du har läst informationen klickar du på **Nästa**.
 
    ![Distribuera rapport meddelande sidan](../../media/deploy-report-message-page.png)
 
-8. På sidan om meddelande **tillägget** som visas granskar du informationen och klickar sedan på **Stäng**.
+9. På sidan om meddelande **tillägget** som visas granskar du informationen och klickar sedan på **Stäng**.
 
    ![Sidan meddelande om tillägg](../../media/announce-add-in-page.png)
 
@@ -149,7 +152,7 @@ När du meddelar användare om tillägget för rapport meddelanden infogar du en
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Granska eller redigera inställningar för rapport tillägget
 
-1. Gå till sidan **tjänster & tillägg** i administrations centret för Microsoft 365 <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> .
+1. Gå till sidan **Inställningar** för tillägg i administrations centret för Microsoft 365, \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> om du inte kan se **tilläggs** sidan går du till länken **Inställningar** för \> **integrerade appar** \>  i den övre delen av sidan **integrerade program** .
 
    ![Tjänster och Add-Ins sida i det nya administrations centret för Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 

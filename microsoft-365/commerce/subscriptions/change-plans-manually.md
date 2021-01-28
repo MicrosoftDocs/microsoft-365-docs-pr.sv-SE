@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Ändra abonnemangen manuellt genom att köpa ett nytt abonnemang och kontrol lera att både abonnemangen är listade och aktiva.
-ms.openlocfilehash: 09557b3556db1e6f17d7a4cd54a88ba34d0f0bd7
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1127a48ff23c528e3218bae4ccfd063df5e3c26d
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647825"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029392"
 ---
 # <a name="change-plans-manually"></a>Ändra abonnemang manuellt
 
@@ -88,7 +88,7 @@ Licenser för den aktuella prenumerationen tas bort senare. Du betalar då bara 
 
 2. På sidan **aktiva användare** väljer du den användare som du vill tilldela en licens till.
 
-3. Fliken te- **licenser och-appar** , expandera **licenser**, markera rutorna för de licenser som du vill tilldela och välj sedan **Spara ändringar**.
+3. Expandera **licenser** på fliken **licenser och appar** , markera rutorna för de licenser som du vill tilldela och välj sedan **Spara ändringar**.
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>Tilldela om licenser för flera användare samtidigt
 

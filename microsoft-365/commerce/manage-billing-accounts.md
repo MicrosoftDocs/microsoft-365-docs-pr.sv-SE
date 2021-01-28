@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Lär dig mer om fakturerings konton och hur du hanterar dem.
-ms.openlocfilehash: 3c99f3f22fb0eb13c4f9cab06a4037fe057b6fb4
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2382396c348fab0b24a269e9678193041ac2c19e
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638213"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032639"
 ---
 # <a name="manage-billing-accounts"></a>Hantera faktureringskonton
 
@@ -42,21 +42,20 @@ I följande tabell visas de viktiga villkor som visas på sidan **fakturerings k
 
 | Fält namn | Beskrivning |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Såld adress | Juridisk person som ansvarar för betalning och som identifieras på fakturan. Den adress som tillhandahålls här används för att bestämma din momssats såvida du inte väljer att ange en alternativ leverans adress under köpet. Mer information finns i [skatte information](billing-and-payments/tax-information.md). |
+| Såld adress | Juridisk person som ansvarar för betalning och som identifieras på fakturan. Adressen som anges här används för att fastställa din momssats, såvida du inte väljer att ange en alternativ leveransadress under köpet. Mer information finns i [Momsinformation](billing-and-payments/tax-information.md). |
 | Delen | Ett skrivskyddat fält som identifierar företags segmentet för din organisation (kommersiell, utbildning, myndighets eller ideellt). |
 | Konto status | Ett skrivskyddat fält som anger statusen för ditt kommersiella konto hos Microsoft. |
-| Skatte-ID | Om du befinner dig utanför USA måste du ange en VAT eller lokal motsvarighet. Mer information finns i [skatte information](billing-and-payments/tax-information.md). |
+| Skatte-ID | Om du befinner dig utanför USA måste du ange en VAT eller lokal motsvarighet. Mer information finns i [Momsinformation](billing-and-payments/tax-information.md). |
 | Enighet | När ett fakturerings konto skapas, antingen via direkt inköp eller med ett avtal för volym licensiering, godkänner en undertecknare för organisationen eller loggar en överenskommelse som beskriver villkoren & villkoren för kontot. I tillämpliga fall visas en avtals historik i den här vyn. Om du måste acceptera uppdaterade villkor visas en länk för godkännande av **avtalet** . |
 | Fakturerings profiler | En fakturerings profil definierar egenskaperna för din faktura, till exempel vem som tar emot räkningen, hur fakturan levereras, betalnings villkor och ett inköps order nummer. Om du vill distribuera fakturering i organisationen kan du skapa flera fakturerings profiler och identifiera lämplig fakturerings profil vid inköps tillfället. Mer information om fakturerings profiler och hur du kan använda dem för att skapa flexibla fakturerings alternativ för din organisation genom att [hantera fakturerings profiler](billing-and-payments/manage-billing-profiles.md). |
 
 > [!NOTE]
-> Om du vill ändra namnet eller adressen som **sålts** , men inte ser en **redigerings** länk, måste du  [kontakta supporten](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) för att ändra den. Begäran om en ändring av en **säljare till** namn kräver en kredit kontroll. När du kontaktar supporten kan du göra något av följande:
+> Om du vill ändra namnet eller adressen som **sålts** , men inte ser en **redigerings** länk, måste du  [kontakta supporten](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) för att ändra den. Begäran om en ändring av en **säljare till** namn kräver en kredit kontroll. Du kan dela med dig av ett av följande dokument med Microsoft när du kontaktar supporten: 
 >
-> - Externt meddelande dokument som visar vilken ändring som helst i företagets namn eller företagets struktur
 > - Statlig utfärdad handling eller registrerings brev
 > - Skriva ut från det lokala företagets register
 >
-> Support kan hjälpa med namn-och adress ändringar där bara kundens namn ändras, men enheten är oförändrad. Dokumentationen bör tydligt visa att endast enhetens namn har ändrats. Om ändringen är kopplad till en transaktion, till exempel en försäljning eller en Divestiture eller "spinoff" hos en kund, kontaktar du din Microsoft-säljare.
+> Support kan hjälpa med namn-och adress ändringar där bara kundens namn ändras, men enheten är oförändrad. Dokumentationen bör tydligt visa att endast enhetens namn har ändrats. Om ändringen är resultatet av en transaktion, inklusive försäljning av affärer, ändringar av kontroller eller en Divestiture eller "spinoff" för en kunds dotter bolag, kontaktar du din Microsoft-säljare.
 
 ## <a name="shipping-addresses"></a>Leverans adresser
 

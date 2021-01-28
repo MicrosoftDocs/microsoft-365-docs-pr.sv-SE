@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,12 +17,14 @@ ms.collection:
 - m365initiative-defender-office365
 description: Administratörer kan visa vanliga frågor och svar om meddelanden i karantän i Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 58ddb5847706aef3d2c3b8ea8cd9a96fd65a9b3d
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: abd2304e83d2814cab55d13312535bd94308d8be
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794418"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032607"
 ---
 # <a name="quarantined-messages-faq"></a>Vanliga frågor om meddelanden i karantän
 
@@ -72,16 +73,39 @@ Administratörer kan använda cmdletarna [Get-QuarantineMessage](https://docs.mi
 
 Jokertecken stöds inte i säkerhets & Compliance Center. Om du till exempel söker efter en avsändare måste du ange den fullständiga e-postadressen. Men du kan använda jokertecken i Exchange Online PowerShell eller fristående EOP PowerShell.
 
-Kör till exempel följande kommando för att hitta skräp post i karantänen från alla avsändare i domänen contoso.com:
+Kopiera till exempel följande PowerShell-kod till anteckningar och spara filen som. ps1 på en plats som är lätt att hitta (till exempel C:\Data\QuarantineRelease.ps1).
+
+När du sedan ansluter till [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) eller [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)kör du följande kommando för att köra skriptet:
 
 ```powershell
-$CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contoso.com"}
+& C:\Data\QuarantineRelease.ps1
 ```
 
-Kör sedan följande kommando för att släppa dessa meddelanden till alla ursprungliga mottagare:
+Skriptet gör följande:
+
+- Hitta avklarade meddelanden som satts i karantän som skräp post från alla avsändare i domänen fabrikam. Maximalt antal resultat är 50 000 (50-sidor i 1000-resultat).
+- Spara resultatet i en CSV-fil.
+- Släpp de matchande meddelanden i karantän till alla original mottagare.
 
 ```powershell
-$CQ | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
+$Page = 1
+$List = $null
+
+Do
+{
+Write-Host "Getting Page " $Page
+
+$List = (Get-QuarantineMessage -Type Spam -PageSize 1000 -Page $Page | where {$_.Released -like "False" -and $_.SenderAddress -like "*fabrikam.com"})
+Write-Host "                     " $List.count " rows in this page match"
+Write-Host "                                                             Exporting list to appended CSV for logging"
+$List | Export-Csv -Path "C:\Data\Quarantined Message Matches.csv" -Append -NoTypeInformation
+
+Write-Host "Releasing page " $Page
+$List | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
+
+$Page = $Page + 1
+
+} Until ($Page -eq 50)
 ```
 
 När du har släppt ett meddelande kan du inte frigöra det igen.

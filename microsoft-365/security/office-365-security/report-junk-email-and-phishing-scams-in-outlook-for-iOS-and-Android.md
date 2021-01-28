@@ -3,12 +3,11 @@ title: Rapportera skräp post och nätfiske i Outlook för iOS och Android
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,12 +15,14 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa om de inbyggda skräp posten, inte skräp post och nätfiske-alternativen i Outlook för iOS och Android.
-ms.openlocfilehash: 1c842ac5349f9c2804c637fa4c5598b06e8f489f
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: d702ab1d97c07c3e38430a9a7beff5f14db7b60a
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877297"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029286"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>Rapportera skräp post och nätfiske i Outlook för iOS och Android i Exchange Online
 
@@ -54,7 +55,7 @@ Använd följande steg för att rapportera skräp post och nät fiske meddelande
 
    ![Rapportera skräp post eller nätfiske](../../media/Android-report-junk-or-phishing.png)
 
-4. I dialog rutan som visas kan du välja **rapport** eller **Nej**. Om du väljer **Nej** , om du tryckte på **skräp** post flyttas meddelandet till mappen skräp post om du tryckte på **nätfiske** flyttas meddelandet till mappen Borttaget. Välj **rapport** om du även vill skicka en kopia av meddelandet till Microsoft.
+4. I dialog rutan som visas kan du välja **rapport** eller **Nej**. Om du väljer **Nej**, om du tryckte på **skräp** post flyttas meddelandet till mappen skräp post om du tryckte på **nätfiske** flyttas meddelandet till mappen Borttaget. Välj **rapport** om du även vill skicka en kopia av meddelandet till Microsoft.
 
    ![Rapportera alternativ för skräp post eller nätfiske](../../media/Android-junk-email-reporting-options.png)
 

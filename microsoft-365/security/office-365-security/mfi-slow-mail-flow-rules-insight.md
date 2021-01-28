@@ -3,23 +3,24 @@ title: Fixa insikter om långsamma flödesregler
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig att använda åtgärds reglerna för långsam e-postflöde inblick i säkerhets & Compliance Center för att identifiera och åtgärda ineffektiva eller felaktiga regler för e-postflöde (kallas även transport regler) i organisationen.
-ms.openlocfilehash: f51c5a577fc6d9c52e35a5217cae4ae94c546c9d
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: ef9f26994f563a5f9dad411f2276fd42c28496f9
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920554"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029132"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Åtgärda regler för långsam e-postflöde inblick i centret för säkerhets & efterlevnad
 
@@ -42,10 +43,10 @@ Du kan använda det här meddelandet för att identifiera och finjustera regler 
 
 När du klickar på **Visa information** i widgeten visas en utfällbar lista med mer information:
 
-- **Regel** : du kan hovra över sammanfattningen för att se alla villkor, undantag och åtgärder för regeln. Du kan klicka på sammanfattningen för att redigera regeln i administrations centret för Exchange (UK).
-- **Antal meddelanden som utvärderats** : du kan klicka på **Visa exempel meddelanden** [om du vill visa resultaten för](message-trace-scc.md) ett urval av de meddelanden som påverkade regeln.
+- **Regel**: du kan hovra över sammanfattningen för att se alla villkor, undantag och åtgärder för regeln. Du kan klicka på sammanfattningen för att redigera regeln i administrations centret för Exchange (UK).
+- **Antal meddelanden som utvärderats**: du kan klicka på **Visa exempel meddelanden** [om du vill visa resultaten för](message-trace-scc.md) ett urval av de meddelanden som påverkade regeln.
 - **Genomsnittlig tid som lagts ned på varje meddelande**
-- **Median tid som lagts på ett meddelande** : det mittersta värdet som avgränsar den övre halvan från den nedre halvan av tidsdata.
+- **Median tid som lagts på ett meddelande**: det mittersta värdet som avgränsar den övre halvan från den nedre halvan av tidsdata.
 
 ![Den utfällbara informationen som visas när du klickar på Visa information om regler för att åtgärda långsamma e-postflöde inblick](../../media/mfi-fix-slow-mail-flow-rules-details.png)
 

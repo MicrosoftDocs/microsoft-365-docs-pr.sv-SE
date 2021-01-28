@@ -14,19 +14,19 @@ ms.collection:
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Översikt över avsnitts upplevelser.
-ms.openlocfilehash: decc1a3aa5535b4d8bc97dc7d6b010eedd395741
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: f01b28b8ca5b0352f05fecac810c3e651c663947
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976597"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029650"
 ---
 # <a name="topic-experiences-overview-preview"></a>Avsnitts översikt (för hands version)
 
 > [!Note] 
 > Innehållet i den här artikeln gäller för projekt cortex privat för hands version. [Läs mer om Project Cortex](https://aka.ms/projectcortex).
 
-Avsnitts upplevelser använder Microsoft AI Technology, Microsoft 365, Delve, Microsoft Graph, Sök och andra komponenter och tjänster för att bygga ett kunskaps nätverk i din Microsoft 365-miljö. 
+Avsnitts upplevelser använder Microsoft AI Technology, Microsoft 365, Microsoft Graph, Sök och andra komponenter och tjänster för att bygga ett kunskaps nätverk i din Microsoft 365-miljö. 
 
 </br>
 
@@ -38,7 +38,7 @@ Målet är att konvertera information till kunskap och skicka den till dina anv�
 
 Avsnitts upplevelser hjälper till att adressera ett viktigt företags problem i många företag – vilket ger informationen till användarna när de behöver det. Nya anställda måste till exempel snabbt lära sig mer om nya uppgifter och få sökord som de inte känner till när de läser via företags information. För att få veta mer kan användaren behöva gå vidare från vad de gör och lägga ner värdefull Tidssökning för information, till exempel information om vad termen är, vilka i organisationen är ett ämne och kanske webbplatser och dokument som är relaterade till termen.
 
-Ämnen kan användas för att automatiskt söka efter och identifiera **ämnen** i din organisation. Den sammanfattar information om dem, till exempel en kort beskrivning, ämnes experter på ämnet och webbplatser, filer och sidor som är relaterade till den. En kunskaps chef eller deltagare kan välja att uppdatera ämnes informationen efter behov. Avsnitten är tillgängliga för användarna, vilket innebär att för varje förekomst av avsnittet som visas på en modern SharePoint-webbplats i Nyheter och sidor, markeras texten. Användare kan välja att välja ämne för att lära dig mer om det i avsnitts informationen. Du hittar även ämnen i SharePoint-sökning.
+Ämnen kan användas för att automatiskt söka efter och identifiera **ämnen** i din organisation. Den sammanfattar information om dem, till exempel en kort beskrivning, personer som arbetar med ämnet och webbplatser, filer och sidor som är relaterade till det. En kunskaps chef eller deltagare kan välja att uppdatera ämnes informationen efter behov. Avsnitten är tillgängliga för användarna, vilket innebär att för varje förekomst av avsnittet som visas på en modern SharePoint-webbplats i Nyheter och sidor, markeras texten. Användare kan välja att välja ämne för att lära dig mer om det i avsnitts informationen. Du hittar även ämnen i SharePoint-sökning.
 
 
 ## <a name="how-topics-are-displayed-to-users"></a>Hur ämnen visas för användarna
@@ -65,13 +65,13 @@ Dina kunskaps administratörer kan välja att crawla alla SharePoint-webbplatser
 
 ## <a name="roles"></a>Role
 
-När du använder avsnitts upplevelser i Microsoft 365-miljön får användarna följande roller:
+När du använder avsnitts upplevelser i din Microsoft 365-miljö har användarna följande roller:
 
 - Visnings program: användare som kan se ämnes markeringar på SharePoint-moderna webbplatser som de har minst *Läs* åtkomst till och i Microsoft Search. De kan välja ämnes rubriker för att Visa ämnes information på ämnes sidor. Med avsnitts visnings program kan du ge feedback om hur användbart ett ämne är.
 
-- Deltagare: användare som har behörighet att redigera befintliga ämnen eller skapa nya. Kunskaps administratörer tilldelar deltagare behörigheter till användare via inställningar för ämnen i administrations centret för Microsoft 365. Observera att du också kan välja att ge alla ämnen behörighet att redigera och skapa ämnen så att de också kan bidra till ämnen som de ser.
+- Deltagare: användare som har behörighet att redigera befintliga ämnen eller skapa nya. Kunskaps administratörer tilldelar deltagare behörigheter till användare via inställningar för ämnen i administrations centret för Microsoft 365. Observera att du också kan välja att ge alla ämnen behörighet att redigera och skapa ämnen så att alla kan bidra till ämnen som de ser.
 
-- Kunskaps chefer: användare som vägleder dig genom ämnes livs cykeln. Kunskaps chefer använder sidan **hantera ämnen** i ämnes centret för att bekräfta eller ta bort AI-förslag, samt redigera befintliga ämnen eller skapa nya och är de enda användare som har till gång till det. Kunskaps administratörer tilldelar kunskaps chefs behörigheter till användare via hjälp avsnitten administratörs inställningar i administrations centret för Microsoft 365. 
+- Kunskaps chefer: användare som vägleder dig genom ämnes livs cykeln. Kunskaps chefer använder sidan **hantera ämnen** i ämnes centret för att bekräfta AI-föreslagna ämnen, ta bort ämnen som inte är relevanta och redigera befintliga avsnitt eller skapa nya och är de enda användare som har till gång till den. Kunskaps administratörer tilldelar kunskaps chefs behörigheter till användare via hjälp avsnitten administratörs inställningar i administrations centret för Microsoft 365. 
 
 - Kunskaps administratörer: kunskaps administratörer har konfigurerat ämnen och hanterar dem via administratörs kontrollerna i administrations centret för Microsoft 365. För närvarande kan en Microsoft 365 global-eller SharePoint-administratör fungera som kunskaps administratör.
 
@@ -85,7 +85,7 @@ Alla licensierade användare kommer att kunna se ämnen som de ansluts till i ä
 
 Kunskaps cheferna kan:
 
-- Bekräfta eller avvisa ämnen som upptäckts i klient organisationen.
+- Bekräfta eller ta bort ämnen som upptäckts i klient organisationen.
 - Skapa nya ämnen manuellt efter behov (till exempel om det inte finns tillräckligt med information för att det ska identifieras via AI).
 - Redigera befintliga avsnitts sidor.</br>
 
@@ -109,7 +109,7 @@ Se [Tilldela användar behörigheter](https://docs.microsoft.com/microsoft-365/k
 
 AI fungerar fort löp ande för att ge förslag på att förbättra dina ämnen när ändringar sker i miljön. 
 
-Användare som du tillåter åtkomst till för att se ämnen i deras dagliga arbete kan tillfrågas om avsnittet var användbart för dem. AI kontrollerar dessa svar och använder dem för att bestämma vad som visas i avsnitts sammanfattningar och avsnitts information.
+Användare som du tillåter åtkomst till för att se ämnen i deras dagliga arbete kan tillfrågas om avsnittet var användbart för dem. Systemet kontrollerar dessa svar och använder dem för att fastställa vad som visas i avsnitts sammanfattningar och avsnitts information.
 
 Användare med behörigheten redigera eller skapa ämnen kan uppdatera ämnes sidor direkt om de vill göra korrigeringar eller lägga till ytterligare information. 
 

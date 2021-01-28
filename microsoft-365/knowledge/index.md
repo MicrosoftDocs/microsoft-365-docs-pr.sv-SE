@@ -14,12 +14,12 @@ ms.collection:
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 description: Lär dig hur du hittar resurser för avsnitts upplevelser.
-ms.openlocfilehash: a9069b8723cb23a406fcce3b96a53b3de2a07568
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: afba6930c30ad59dc95abb255eadab501b01f189
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976185"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029614"
 ---
 # <a name="introduction-to-topic-experiences-preview"></a>Introduktion till ämnen (för hands version)
 
@@ -43,12 +43,12 @@ Resurserna i det här avsnittet hjälper dig att få mer information om vad som 
 
 | Om du letar efter den här informationen: | Gå till den här resursen: |
 |:-----|:-----|
-|Läs mer om dokumenttolkning|[Översikt över ämnen](topic-experiences-overview.md)|
-|Lär dig hur ämnen identifieras och skapas av AI|[Identifiering av ämnen](topic-experiences-discovery.md)|
+|Lär dig mer om ämnen|[Översikt över ämnen](topic-experiences-overview.md)|
+|Lär dig hur ämnen identifieras och föreslås av AI|[Identifiering av ämnen](topic-experiences-discovery.md)|
 |Lär dig mer om ämne säkerhet|[Ämnets säkerhet och integritet](topic-experiences-security-privacy.md)|
 
 
-## <a name="adoption"></a>Införande
+## <a name="adoption"></a>Integrering
 
 Läs mer om hur du använder och implementerar avsnitts upplevelser i organisationen för att hjälpa dig att lösa dina företags problem: 
 
@@ -64,7 +64,7 @@ Resurserna i det här avsnittet hjälper din administratör i organisationen att
 |:-----|:-----|
 |Lär dig hur du konfigurerar och konfigurerar avsnitts upplevelser|[Konfigurera ämnen](set-up-topic-experiences.md)|
 |Lär dig hur du konfigurerar användar behörigheter|[Hantera ämnesbehörigheter](topic-experiences-user-permissions.md)|
-|Lär dig hur hantera vilka som kan se ämnen|[Hantera ämnes synlighet](topic-experiences-knowledge-rules.md)|
+|Lär dig hur du hanterar vilka som kan se ämnen|[Hantera ämnes synlighet](topic-experiences-knowledge-rules.md)|
 |Lär dig att hantera identifierings inställningar|[Hantera ämnesidentifiering](topic-experiences-discovery.md)|
 
 ## <a name="work-with-topics"></a>Arbeta med ämnen

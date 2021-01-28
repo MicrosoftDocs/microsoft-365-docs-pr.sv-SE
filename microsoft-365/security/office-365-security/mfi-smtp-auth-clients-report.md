@@ -3,22 +3,23 @@ title: SMTP-AUTH-klienter inblick och rapport i instrument panelen för e-postfl
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära dig hur du använder SMTP AUTH inblick och rapport i instrument panelen för e-postflöde i säkerhets & Compliance Center för att övervaka e-avsändare i organisationen som använder autentiserad SMTP (SMTP AUTH) för att skicka e-postmeddelanden.
-ms.openlocfilehash: 54798dfcad50c263705b027c879fdf71d0dabfba
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: afceb767f6ebfeed96deb6362e05bb088b548c3d
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877567"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029168"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>SMTP-AUTH-klienter inblick och rapportera i säkerhets & Compliance Center
 
@@ -45,11 +46,11 @@ Som standard visar rapporten data för de senaste 7 dagarna, men data är tillg�
 
 Avsnittet Översikt innehåller följande diagram:
 
-- **Visa data genom: skicka volym** : diagrammet visar som standard antalet SMTP auth client-meddelanden som skickades från alla domäner ( **Visa data för: alla avsändare** är markerade som standard). Du kan filtrera resultaten till en viss avsändares domän genom att klicka på **Visa data för** och välja avsändar domänen i list rutan. Om du hovrar över en viss data punkt (dag) visas antalet meddelanden.
+- **Visa data genom: skicka volym**: diagrammet visar som standard antalet SMTP auth client-meddelanden som skickades från alla domäner (**Visa data för: alla avsändare** är markerade som standard). Du kan filtrera resultaten till en viss avsändares domän genom att klicka på **Visa data för** och välja avsändar domänen i list rutan. Om du hovrar över en viss data punkt (dag) visas antalet meddelanden.
 
   ![Skicka vyn volym i rapporten SMTP-AUTH-klienter i säkerhets & efterlevnad](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
 
-- **Visa data genom: TLS-användning** : diagrammet visar procent andelen av TLS-användning för alla SMTP auth client-meddelanden under den valda tids perioden. I det här diagrammet kan du identifiera och vidta åtgärder för användare och system konton som fortfarande använder äldre versioner av TLS.
+- **Visa data genom: TLS-användning**: diagrammet visar procent andelen av TLS-användning för alla SMTP auth client-meddelanden under den valda tids perioden. I det här diagrammet kan du identifiera och vidta åtgärder för användare och system konton som fortfarande använder äldre versioner av TLS.
 
   ![Vyn användning av TLS i rapporten SMTP-AUTH-klienter i säkerhets & efterlevnad](../../media/mfi-smtp-auth-clients-report-tls-usage-view.png)
 
@@ -61,14 +62,14 @@ Klicka på **rapporten Request** för att få en mer detaljerad version av rappo
 
 Om du klickar på **Visa informations tabell** beror informationen som visas på diagrammet du tittade på:
 
-- **Visa data genom: skicka volym** : följande information visas i en tabell:
+- **Visa data genom: skicka volym**: följande information visas i en tabell:
 
   - **Avsändarens adress**
   - **Antal meddelanden**
 
   Om du markerar en rad visas samma detaljer i en utfällbar lista.
 
-- **Visa data genom: TLS-användning** : följande information visas i en tabell:
+- **Visa data genom: TLS-användning**: följande information visas i en tabell:
 
   - **Avsändarens adress**
   - **TLS 1.0%**<sup>\*</sup>

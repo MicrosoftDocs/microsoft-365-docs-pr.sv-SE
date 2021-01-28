@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: ea0bbc1f7d34ff01fcf446bfa4bbd0b95f310c4c
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 08860b32b6809f489a9c108dcfaed3f61fb2e306
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976173"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029644"
 ---
 # <a name="topic-experiences-discovery-and-curation-preview"></a>Ämnen Upptäck och granska (för hands version)
 
@@ -29,13 +29,13 @@ Avsnitts upplevelser konverterar kunskaps information till kunskap i din Microso
 
 Vilka ämnes upplevelser använder Microsoft Graph och AI för att identifiera **ämnen** i din organisation.  Ett ämne är en fras eller en term som har en specifik betydelse för en organisation, där användare skulle vilja ha nytta av att visa en wiki-sida om den. AI söker efter personer och innehåll som är anslutna till ämnet, och om det upptäcks blir det ett förslag till ämne.
 
-Informationen om AI-genererat ämne läggs till på en **ämnes sida**, som kan innehålla:
+Informationen om det föreslagna ämnet för AI läggs till på en **ämnes sida**, som kan innehålla:
 - En kort beskrivning av ämnet.
 - Alternativa namn för ämnet.
 - Personer som kan veta mer om ämnet.
 - Webbplatser, filer och sidor som kan vara relaterade till ämnet.
 
-Avsnitts upplevelser ser då till att alla förekomster av ett avsnitt är markerade på alla SharePoint-moderna webbplats sidor i klient organisationen. När en användare är nyfiken på mer information om ett ämne kan de välja det markerade avsnittet för att visa ett **sammanfattnings** kort för ämne med en kort beskrivning. Och om de vill lära sig mer kan de välja en länk för **ämnes information** i sammanfattningen för att öppna sidan detaljerad avsnitt.
+Avsnitts upplevelser när kontexten är lämplig, föreslår dessa ämnen att markeras på alla sidor i SharePoints moderna webbplatser i klient organisationen. När en användare är nyfiken på mer information om ett ämne kan de välja det markerade avsnittet för att visa ett **sammanfattnings** kort för ämne med en kort beskrivning. Och om de vill lära sig mer kan de välja en länk för **ämnes information** i sammanfattningen för att öppna sidan detaljerad avsnitt.
 
 ![Ämnes markeringar](../media/knowledge-management/saturn.png) </br>
 
@@ -44,40 +44,16 @@ Dessutom kan användarna Hitta ämnen via Microsoft Search.
 
 ## <a name="topic-curation"></a>Ämnes underavsnitt
 
-Ämnen som går vidare med "beslagning" för att förbättra kvaliteten på dina ämnen. Även om AI från början identifierar och föreslår ämnen, manuellt gjorda uppdateringar av innehåll från deltagare, bekräftelse från användare för AI-genererat innehåll och feedback om användbarheten av ämnena är allt som behövs.
+Ämnen som får bidrag från människa kan bidra till bättre kvalitet på dina ämnen. Även om AI från början identifierar och föreslår ämnen, manuellt gjorda redigeringar till innehåll från deltagare, bekräftelse från användare för AI-genererat innehåll och feedback om användbarheten av ämnena är allt nödvändigt.
 
 - AI-genererade ämnen ("föreslagna ämnen") kan granskas av **kunskaps cheferna** i din organisation. På sidan Hantera ämnen i ämnes Center kan de välja att bekräfta att de är giltiga eller avvisa dem för att förhindra att de visas.
 
 - Du kan tilldela behörigheter för att *skapa och redigera ämnen* till alla dina licensierade användare så att de kan göra ändringar i befintliga ämnen eller skapa nya ämnen när de behövs. 
 
-- Även användare som bara har Läs åtkomst till ämne (ämnes visnings program) ombeds att bekräfta att vissa ämnen är användbara.
+- Även användare som bara har Läs åtkomst till ämne (ämnes visnings program) ombeds att bekräfta att vissa ämnen är användbara. Deras feedback görs också för att bekräfta eller avvisa ett föreslaget ämne.
 
-Även med mänsklig granskning letar AI efter mer information om ämnen och söker efter mänsklig verifiering. Om t ex AI tror att du är en person som ska fästas som expert på ett ämne ber vi dig bekräfta detta. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Även med mänsklig redigering letar AI kontinuerligt efter mer information om ämnen och söker efter mänsklig verifiering. Om t ex AI tror att du är en person som ska vara en expert på ett ämne ber vi dig bekräfta detta. 
 
 
 
 ## <a name="see-also"></a>Se även
-
-
-
-  
-
-
-
-
-
-
