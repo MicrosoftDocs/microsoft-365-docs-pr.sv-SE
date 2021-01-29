@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: Institutioner för finansiella tjänster kan hålla ekonomiska säkerhets efterlevnad och effektivt samarbeta med Microsoft 365 och Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: ff4ce29e42ea3a8a5619f514373041c1e8c3e138
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 1d1c3886a38636e7e72774f8b2bb5ce574d1c7a6
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558484"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029960"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Viktig information om efterlevnad och säkerhet för amerikanska banker och stora marknader
 
@@ -319,7 +319,7 @@ Microsoft 365 lanserade nyligen en lösning för hantering av insiderrisk som ko
 
 Exempelvis kan hantering av insiderrisk i Microsoft 365 korrelera signaler från en användares skrivbord på Windows 10, till exempel att kopiera filer till en USB-enhet eller skicka e-post till ett personligt e-postkonto, med aktiviteter från onlinetjänster som Office 365 e-post, SharePoint Online, Microsoft Teams, eller OneDrive för företag, för att identifiera dataexfiltreringsmönster. Det kan också korrelera dessa aktiviteter med anställda som lämnar en organisation, vilket är ett vanligt dataexfiltreringsmönster. Du kan övervaka flera aktiviteter och uppträdande över tid. När vanliga mönster uppstår kan det ge aviseringar och hjälpa granskare att fokusera på nyckelaktiviteter för att verifiera en policyöverträdelse med en hög grad av säkerhet. Hantering av insiderrisk kan pseudo-anonymisera data från utredare för att uppfylla föreskrifterna för uppgifter om integritet, medan det fortfarande dyker upp nyckelaktiviteter som hjälper dem att utföra utredningar effektivt. Det tillåter utredare att paketera och säkert skicka viktig aktivitetsdata till HR och juridiska avdelningar, efter vanliga upptrappning av arbetsflöden för lyfta upp ärenden för saneringsåtgärder.
 
-Hantering av insiderrisk i Microsoft 365 ökar organisationers kapacitet att övervaka och undersöka insiderrisker avsevärt samtidigt som organisationer fortfarande kan uppfylla bestämmelserna om dataskydd och följa etablerade eskaleringsvägar när ärenden kräver åtgärder på högre nivå.
+Hantering av insiderrisk i Microsoft 365 ökar organisationers kapacitet att övervaka och undersöka insiderrisker avsevärt samtidigt som organisationer fortfarande kan uppfylla bestämmelserna om dataskydd och följa etablerade eskaleringsvägar när ärenden kräver åtgärder på högre nivå. Mer information om hantering av interna risker i Microsoft 365 finns i [Moderna riskhanteringspunkter och Arbetsflöde i hantering av interna risker i Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management?view=o365-worldwide).
 
 ![En anställd i ett bås på ett callcenter skriver och tittar på en skärm.](../media/clo17-call-center-006.jpg)
  

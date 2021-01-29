@@ -19,6 +19,8 @@
           href: service-description/regions-languages.md
         - name: Produktens livscykel
           href: service-description/device-lifecycle.md
+        - name: Enhetskrav
+          href: service-description/device-requirements.md
         - name: Programenheter
           href: service-description/device-list.md
           items:
