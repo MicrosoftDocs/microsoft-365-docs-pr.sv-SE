@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 multi-geo-klient konfiguration
+title: Konfiguration av Microsoft 365 Multi-Geo-klientorganisation
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,144 +14,147 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
-description: I den här artikeln lär du dig hur du lägger till satellit platser och konfigurerar klient organisationen för Microsoft 365 multi-geo.
-ms.openlocfilehash: 4276d8ff70fed99e74f2cbab29386c81da06d17b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: I den här artikeln lär du dig hur du lägger till satellitplatser och konfigurerar klientorganisationen för Microsoft 365 Multi-Geo.
+ms.openlocfilehash: fb907c02a4714c5a2d8e47245321252e7186a8a7
+ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694480"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50040574"
 ---
-# <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 multi-geo-klient konfiguration
+# <a name="microsoft-365-multi-geo-tenant-configuration"></a>Konfiguration av Microsoft 365 Multi-Geo-klientorganisation
 
-Innan du konfigurerar klient organisationen för Microsoft 365 multi-geo bör du se till att du har Läs [plan för microsoft 365 multi-geo](plan-for-multi-geo.md). För att följa anvisningarna i den här artikeln behöver du en lista över de geo-platser som du vill aktivera som satellit platser och vilka test användare som du vill etablera för dessa platser.
+Innan du konfigurerar klientorganisationen för Microsoft 365 Multi-Geo bör du läsa Abonnemang för [Microsoft 365 Multi-Geo.](plan-for-multi-geo.md) Om du vill följa stegen i den här artikeln behöver du en lista över de geoplatser som du vill aktivera som satellitplatser och testanvändarna som du vill etablera för dessa platser.
 
-## <a name="add-the-multi-geo-capabilities-in-your-microsoft-365-plan-to-your-tenant"></a>Lägga till multi-geo-funktioner i ditt Microsoft 365-abonnemang till klient organisationen
+## <a name="add-the-multi-geo-capabilities-in-your-microsoft-365-plan-to-your-tenant"></a>Lägg till Multi-Geo Capabilities i Microsoft 365-abonnemanget i din klientorganisation
 
-För att använda Microsoft 365 multi-geo måste du ha _flera geo-funktioner i Microsoft 365_ -abonnemanget. Arbeta med ditt konto team för att lägga till det här abonnemanget i klient organisationen. Ditt konto team ansluter dig med rätt licensierings specialist och får din klient organisation konfigurerad.
+Om du vill använda Microsoft 365 Multi-Geo behöver du _Multi-Geo Capabilities i Microsoft 365-abonnemanget._ Arbeta med ditt kontoteam för att lägga till den här planen i klientorganisationen. Ditt kontoteam kommer att ansluta dig till rätt licensieringsspecialist och få din klientorganisation konfigurerad.
 
-Observera att _multi-geo-funktionerna i Microsoft 365_ -abonnemanget är en tjänst plan på användar nivå. Du behöver en licens för varje användare som du vill ha på en satellit plats. Du kan lägga till fler licenser under tiden när du lägger till användare på satellit platser.
+Observera att _Multi-Geo Capabilities i Microsoft 365-abonnemanget_ är ett serviceabonnemang på användarnivå. Du behöver en licens för varje användare som du vill vara värd för på en satellitplats. Du kan lägga till fler licenser med tiden när du lägger till användare i satellitplatser.
 
-När din klient organisation har etablerats med  _flera geo-funktioner i Microsoft 365_ -abonnemang blir fliken **geo platser** tillgängliga i administrations centret för OneDrive och SharePoint.
+När klientorganisationen har etablerats med  _Multi-Geo Capabilities i Microsoft 365-abonnemanget_ blir fliken **Geoplatser** tillgänglig i administrationscentret för OneDrive och SharePoint.
 
-## <a name="add-satellite-locations-to-your-tenant"></a>Lägga till satellit platser till din klient organisation
+## <a name="add-satellite-locations-to-your-tenant"></a>Lägga till satellitplatser i klientorganisationen
 
-Du måste lägga till en satellit plats för varje Geo-plats där du vill lagra data. Tillgängliga geo-platser visas i följande tabell:
+Du måste lägga till en satellitplats för varje geoplats där du vill lagra data. Tillgängliga geografiska platser visas i följande tabell:
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
-![Skärm bild av sidan geo locations i administrations centret för SharePoint](../media/sharepoint-multi-geo-admin-center.png)
+![Skärmbild av sidan geoplatser i administrationscentret för SharePoint](../media/sharepoint-multi-geo-admin-center.png)
 
-Lägga till en satellit plats
+Lägga till en satellitplats
 
 1. Öppna SharePoint Online Administrationscenter.
 
-2. Gå till fliken **geo platser** .
+2. Gå till **fliken Geoplatser.**
 
-3. Klicka på **Lägg till plats**.
+3. Klicka **på Lägg till plats.**
 
-4. Välj den plats du vill lägga till och klicka sedan på **Nästa**.
+4. Välj den plats du vill lägga till och klicka sedan på **Nästa.**
 
-5. Skriv den domän som du vill använda med geo platsen och klicka sedan på **Lägg till**.
+5. Ange den domän som du vill använda med geoplatsen och klicka sedan på **Lägg till.**
 
 6. Klicka på **Stäng**.
 
-Etableringen kan ta från några timmar upp till 72 timmar, beroende på innehavarens storlek. När etableringen av en satellit plats har genomförts får du ett e-postmeddelande. När den nya geo-platsen visas i blått på kartan på fliken **geo locations** i administrations centret för OneDrive kan du fortsätta med att ange användarens önskade data plats till den geo-platsen. 
+Etableringen kan ta från ett par timmar upp till 72 timmar, beroende på storleken på klientorganisationen. När etableringen av en satellitplats har slutförts får du en e-postbekräftelse. När den nya geoplatsen visas i blått på kartan på fliken Geoplatser i administrationscentret för OneDrive kan du fortsätta och ange **användarnas** önskade dataplats till den geoplatsen. 
 
 > [!IMPORTANT]
-> Din nya satellit plats konfigureras med standardinställningar. Detta gör att du kan konfigurera den satellit platsen efter behov.
+> Din nya satellitplats konfigureras med standardinställningar. Det här gör att du kan konfigurera den satellitplatsen efter dina lokala efterlevnadsbehov.
 
-## <a name="setting-users-preferred-data-location"></a>Ange användarens förvalda plats
+## <a name="setting-users-preferred-data-location"></a>Ange användarnas föredragna dataplats
 <span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span> 
 
-När du aktiverar de satellitiska platserna kan du uppdatera dina användar konton så att de använder lämplig data plats. Vi rekommenderar att du anger en vald plats för varje användare, även om användaren befinner sig på Central platsen.
+När du har aktiverar de satellitplatser som behövs kan du uppdatera användarkontona så att de använder rätt önskad dataplats. Vi rekommenderar att du anger en önskad dataplats för varje användare, även om användaren finns kvar på den centrala platsen.
 
 > [!IMPORTANT]
-> Om en användares önskade data plats är inställt på en plats som inte har kon figurer ATS som en satellit plats eller central plats kommer systemet att standardiseras till den centrala platsen när du konfigurerar OneDrive-och SharePoint-webbplatser och grupp post lådor.
+> Om en användares önskade dataplats anges till en plats som inte har konfigurerats som en satellitplats eller den centrala platsen får systemet som standard den centrala platsen när OneDrive- och SharePoint-webbplatser och grupppostlådor etableras.
 
 > [!TIP]
-> Vi rekommenderar att du påbörjar verifiering med en test användare eller en liten grupp användare innan du rullar ut multi-geo till din bredare organisation.
+> Vi rekommenderar att du börjar validera med en testanvändare eller en liten grupp användare innan du distribuerar multi-geo till din bredare organisation.
 
-I Azure Active Directory (Azure AD) finns det två typer av användar objekt: endast molnbaserade användare och synkroniserade användare. Följ instruktionerna för din typ av användare.
+Det finns två typer av användarobjekt i Azure Active Directory (Azure AD): endast molnanvändare och synkroniserade användare. Följ anvisningarna för din typ av användare.
 
-### <a name="synchronize-users-preferred-data-location-using-azure-ad-connect"></a>Synkronisera användarens önskade data plats med Azure AD Connect 
+### <a name="synchronize-users-preferred-data-location-using-azure-ad-connect"></a>Synkronisera användarens föredragna dataplats med hjälp av Azure AD Connect 
 
-Om företagets användare synkroniseras från ett lokalt Active Directory-system till Azure AD måste deras PreferredDataLocation vara ifyllda i AD och synkroniseras till Azure AD.
+Om användarna i ditt företag synkroniseras från ett lokalt Active Directory-system till Azure AD måste deras PreferredDataLocation fyllas i i AD och synkroniseras med Azure AD.
 
-Följ processen i [Azure Active Directory Connect-synkronisering: konfigurera önskad data plats för Microsoft 365-resurser](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) för att konfigurera den önskade synkroniseringen av data platsen från din lokala Active Directory Domain Services (AD DS) till Azure AD.
+Följ processen i [Azure Active Directory Connect-synkronisering:](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) Konfigurera önskad dataplats för Microsoft 365-resurser för att konfigurera synkronisering av önskad dataplats från din lokala Active Directory DS (AD DS) till Azure AD.
 
-Vi rekommenderar att du anger användarens önskade data plats som en del av standard arbets flödet för skapande av användare.
+Vi rekommenderar att du anger användarens föredragna dataplats som en del av ditt vanliga arbetsflöde för att skapa användare.
 
 > [!IMPORTANT]
-> För nya användare som inte har OneDrive etablerad kan du vänta minst 24 timmar efter att en användares PDL synkroniserats till Azure AD för att ändringarna ska spridas innan användaren loggar in på OneDrive för företag. (Om du anger önskad data plats innan användaren loggar in för att etablera sin OneDrive för företag säkerställs att användarens nya OneDrive etableras på rätt plats.)
+> För nya användare som inte har någon OneDrive-etablering bör du vänta i minst 24 timmar efter att en användares PDF-fil har synkroniserats med Azure AD för att ändringarna ska spridas innan användarna loggar in i OneDrive för företag. (Genom att ange önskad dataplats innan användaren loggar in för att etablera sin OneDrive för företag säkerställer du att användarens nya OneDrive etableras på rätt plats.)
 
-### <a name="setting-preferred-data-location-for-cloud-only-users"></a>Ange önskad data plats för endast molnet 
+### <a name="setting-preferred-data-location-for-cloud-only-users"></a>Ange önskad dataplats för användare endast i molnet 
 
-Om företagets användare inte synkroniseras från ett lokalt Active Directory-system till Azure AD, vilket innebär att de skapas i Microsoft 365 eller Azure AD, måste PDL ställas in med Microsoft Azure Active Directory-modulen för Windows PowerShell.
+Om användarna i ditt företag inte synkroniseras från ett lokalt Active Directory-system till Azure AD, vilket innebär att de skapas i Microsoft 365 eller Azure AD, måste PDF-operativsystemet ställas in med Hjälp av Microsoft Azure Active Directory-modulen för Windows PowerShell.
 
-Procedurerna i det här avsnittet kräver [Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0). Om du redan har den här modulen installerad, se till att uppdatera till den senaste versionen.
+För procedurerna i det här avsnittet [krävs Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen.](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0) Om du redan har den här modulen installerad bör du uppdatera till den senaste versionen.
 
-1.  [Anslut och logga](/powershell/connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) in med en uppsättning globala administratörs uppgifter för din klient organisation.
+1.  [Anslut och logga in](/powershell/connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) med en uppsättning autentiseringsuppgifter som global administratör för klientorganisationen.
 
-2.  Använd cmdleten [set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser) för att ange den önskade data platsen för varje användare. Till exempel:
+2.  Använd [cmdleten Set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser) för att ange önskad dataplats för var och en av användarna. Till exempel:
 
     `Set-MsolUser -userprincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR`
 
-    Du kan kontrol lera att den önskade data platsen har uppdaterats korrekt med cmdleten Get-MsolUser. Till exempel:
+    Du kan kontrollera om den rekommenderade dataplatsen har uppdaterats korrekt med hjälp av cmdleten Get-MsolUser. Till exempel:
 
     `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
 
-![Skärm bild av PowerShell-fönstret med set-MsolUser](../media/multi-geo-tenant-configuration-image3.png)
+![Skärmbild av PowerShell-fönstret med Set-msoluser](../media/multi-geo-tenant-configuration-image3.png)
 
-Vi rekommenderar att du anger användarens önskade data plats som en del av standard arbets flödet för skapande av användare.
+Vi rekommenderar att du anger användarens föredragna dataplats som en del av ditt vanliga arbetsflöde för att skapa användare.
 
 > [!IMPORTANT]
-> För nya användare som inte har OneDrive etablerad väntar du minst 24 timmar efter att en användares PDL har ställts in för att ändringarna ska spridas innan användaren loggar in på OneDrive. (Om du anger önskad data plats innan användaren loggar in för att etablera sin OneDrive för företag säkerställs att användarens nya OneDrive etableras på rätt plats.)
+> För nya användare som inte har någon OneDrive-etablering bör du vänta i minst 24 timmar efter att en användares PDF-fil har angetts för att ändringarna ska spridas innan användaren loggar in på OneDrive. (Genom att ange önskad dataplats innan användaren loggar in för att etablera sin OneDrive för företag säkerställer du att användarens nya OneDrive etableras på rätt plats.)
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>OneDrive-etablering och effekten av PDL
 
-Om användaren redan har en OneDrive-webbplats skapad i klient organisationen, flyttas inte deras befintliga OneDrive automatiskt. Information om hur du flyttar en användares OneDrive finns i [för OneDrive för företag – för flytt](move-onedrive-between-geo-locations.md) Följ instruktionerna i flytta OneDrive mellan geo platser. (Observera att användarens Exchange-postlåda flyttas automatiskt när du ställer in användarens PDL.)
+Om användaren redan har en OneDrive-webbplats skapad i klientorganisationen flyttas inte deras befintliga OneDrive automatiskt när du anger deras PDF-fil. Information om hur du flyttar en användares OneDrive finns i [Geoflyttning i OneDrive för företag.](move-onedrive-between-geo-locations.md)
 
-Om användaren inte har en OneDrive-webbplats i klient organisationen tillhandahålls OneDrive för dem i enlighet med deras PDL-värde, under antagandet att användaren matchar ett av företagets satellit platser.
+> [!NOTE]
+> Exchange Online flyttar automatiskt användarens postlåda om PLD-ändringarna och postlåderegion inte längre stämmer överens med geoplatskoden för postlådedatabasen. Mer information finns i Administrera [Exchange Online-postlådor i en miljö med flera geografiska miljöer.](https://docs.microsoft.com/microsoft-365/enterprise/administering-exchange-online-multi-geo)
 
-## <a name="configuring-multi-geo-search"></a>Konfigurera multi-geo-sökning
+Om användaren inte har en OneDrive-webbplats i klientorganisationen etableras OneDrive åt dem i enlighet med deras PDL-värde, förutsatt att PDF-talet för användaren matchar en av företagets satellitplatser.
 
-Din multi-geo-klient har aggregerade Sök funktioner som gör att Sök frågor kan returnera resultat från valfri plats inom innehavaren.
+## <a name="configuring-multi-geo-search"></a>Konfigurera multi geosökning
 
-Som standard returnerar sökningar från dessa start punkter sammansatta resultat, även om varje Sök index finns inom dess relevanta Geo-plats:
+Din multigeobaserade klientorganisation har samlade sökfunktioner som gör att en sökfråga kan returnera resultat från valfri plats i klientorganisationen.
+
+Som standard returnerar sökningar från dessa startpunkter aggregerade resultat, även om varje sökindex finns inom dess relevanta geoplats:
 
 - OneDrive för företag
 
 - Delve
 
-- Start sidan för SharePoint
+- Start för SharePoint
 
-- Sök Center
+- Sökcenter
 
-Dessutom kan flera geo-Sök funktioner konfigureras för dina anpassade Sök program som använder SharePoint Search API.
+Dessutom kan funktioner för flera geosökning konfigureras för anpassade sökprogram som använder SharePoints sök-API.
 
-Läs igenom [Konfigurera Sök efter OneDrive för företag multi-geo](configure-search-for-multi-geo.md) för instruktioner, inklusive begränsningar och skillnader.
+I Konfigurera [sökning efter OneDrive för företag – Multi-Geo](configure-search-for-multi-geo.md) finns instruktioner, inklusive eventuella begränsningar och skillnader.
 
-## <a name="validating-the-microsoft-365-multi-geo-configuration"></a>Verifiera Microsoft 365 multi-geo-konfigurationen
+## <a name="validating-the-microsoft-365-multi-geo-configuration"></a>Validera Microsoft 365 Multi-Geo-konfigurationen
 
-Nedan följer några grundläggande användnings fall som du kanske vill ta med i verifierings planen innan du kan lansera Microsoft 365 multi-geo för ditt företag. När du har slutfört de här testerna och eventuella andra användnings fall som är relevanta för ditt företag kan du välja att gå vidare till att lägga till användarna i den första pilot gruppen.
+Nedan följer några grundläggande användningsfall som du kanske vill inkludera i din valideringsplan innan du allmänt distribuerar Microsoft 365 Multi-Geo till ditt företag. När du har slutfört dessa tester och eventuella ytterligare användningsfall som är relevanta för ditt företag kan du välja att gå vidare och lägga till användare i den första pilotgruppen.
 
 **OneDrive för företag**
 
-Välj OneDrive från Microsoft 365-Start programmet och bekräfta att du dirigeras automatiskt till rätt Geo-plats för användaren, baserat på användarens PDL. OneDrive för företag ska nu börja etablera på den platsen. När du har etablerat det kan du försöka ladda upp och ladda ned vissa dokument.
+Välj OneDrive från appstartaren för Microsoft 365 och bekräfta att du automatiskt dirigeras till rätt geoplats för användaren, baserat på användarens PDF-fil. OneDrive för företag bör nu börja etableras på den platsen. När de har etablerats kan du försöka ladda upp och ladda ned vissa dokument.
 
-**OneDrive-mobilapp**
+**OneDrive-mobilappen**
 
-Logga in på din OneDrive-mobilapp med autentiseringsuppgifterna för ditt testkonto. Kontrol lera att du kan se dina OneDrive för företag-filer och kan interagera med dem från din mobila enhet.
+Logga in på OneDrive-mobilappen med dina autentiseringsuppgifter för testkontot. Bekräfta att du kan se dina OneDrive för företag-filer och kan interagera med dem från din mobila enhet.
 
 **OneDrive-synkroniseringsklient**
 
-Bekräfta att OneDrive-synkroniseringsklienten automatiskt identifierar din OneDrive för företag-Geo plats när du loggar in. Om du behöver hämta synkroniseringsklienten kan du klicka på **Synkronisera** i OneDrive-biblioteket.
+Kontrollera att OneDrive-synkroniseringsklienten automatiskt identifierar din geoplats i OneDrive för företag vid inloggning. Om du behöver ladda ned synkroniseringsklienten kan du klicka **på Synkronisera** i OneDrive-biblioteket.
 
 **Office-program**
 
-Kontrol lera att du kan komma åt OneDrive för företag genom att logga in från ett Office-program, till exempel Word. Öppna Office-programmet och välj "OneDrive – <TenantName> ". Office identifierar din OneDrive-plats och visar de filer som du kan öppna.
+Bekräfta att du kan komma åt OneDrive för företag genom att logga in från ett Office-program, till exempel Word. Öppna Office-programmet och välj "OneDrive – <TenantName> ". Office identifierar din OneDrive-plats och visar de filer som du kan öppna.
 
 **Delning**
 
-Försök dela OneDrive-filer. Kontrol lera att person väljaren visar alla dina SharePoint Online-användare oavsett deras Geo-plats.
+Prova att dela OneDrive-filer. Bekräfta att alla dina SharePoint Online-användare visas i väljaren, oavsett deras geografiska position.

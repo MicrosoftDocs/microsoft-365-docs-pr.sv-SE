@@ -1,5 +1,5 @@
 ---
-title: Anpassa inloggningssidan med ett sekretess- och samtyckesmeddelande
+title: Anpassa inloggningssidan med en avskildhets- och medgivandemeddelande
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,31 +21,29 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Anpassa din inloggningssida med ett sekretess- och samtyckesmeddelande för Microsoft 365 för kampanjer.
-ms.openlocfilehash: 27d9ee496290c091c7bcdef4c59e0cc8df46b9b7
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+description: Anpassa din inloggningssida med ett sekretess- och medgivandemeddelande för Microsoft 365.
+ms.openlocfilehash: 894686ac785e979b8491cd5943c9a071d3be9ee9
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526964"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044560"
 ---
-# <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Anpassa din inloggningssida med ett sekretess- och samtyckesmeddelande
+# <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Anpassa din inloggningssida med en avskildhets- och medgivandemeddelande
 
-Din politiska kampanj kan göra det lättare för brottsbekämpande myndigheter att väcka åtal mot nätbrottslingar genom att lägga till ett meddelande om sekretess och samtycke på din inloggningssida.
+Ditt företag eller din kampanj kan göra det enklare för rättstvingande myndigheter att arkivera juridiska avgifter mot onlinebrottsligheter genom att lägga till en sekretess- och medgivandemeddelande på din inloggningssida.
 
-Du kan anpassa inloggningssidan med ditt varumärke. Du kan också lägga till text som hjälper användarna att logga in eller peka på juridiska krav eller begränsningar för att få åtkomst till Microsoft 365 för kampanjresurser.
+Du kan anpassa din inloggningssida med din profilering. Du kan också lägga till text som hjälper användarna att logga in eller peka på juridiska krav eller begränsningar för att få tillgång till Microsoft 365-resurser.
 
-## <a name="design-customization-the-text-on-your-sign-in-page"></a>Utforma anpassning av texten på inloggningssidan
+## <a name="design-customization-the-text-on-your-sign-in-page"></a>Anpassa texten på din inloggningssida
 
-Om du vill uppdatera de anpassningsbara elementen på inloggningssidan måste du vara global administratör. Specifika instruktioner finns [i lägga till företagsprofilartikel.](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)
+Du måste vara global administratör för att kunna uppdatera de anpassningsbara elementen på inloggningssidan. Specifika instruktioner finns i artikeln [om att lägga till företags varumärke.](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)
 
 De element du kan uppdatera är:
 
-- **Text på sidan logga in**
+- **Text på inloggningssidan** En enkel plats där du kan lägga till sekretesspolicyn och medgivandepolicyn.
+- Bakgrundsbild på inloggningssidan
+- Banderolllogotyp
+- Tips om användarnamn
 
-     Ett enkelt ställe att lägga till sekretess- och samtyckesuttalandet.
-- Bakgrundsbild för inloggningssidan
-- Banner logotyp
-- Tips för användarnamn
-
-Exempel på meddelanden om sekretess och samtycke finns i bilaga A [i sökning och beslag av datorer och erhålla elektroniska bevis i brottsutredningar](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).
+Exempel på sekretess- och medgivandemeddelanden finns i Bilaga A i Söka efter och urskriminera datorer [och skaffa elektroniska bevis i brottslingsundersökningar.](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)

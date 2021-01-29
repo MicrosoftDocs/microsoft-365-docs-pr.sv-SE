@@ -1,5 +1,5 @@
 ---
-title: Så påverkar Microsoft 365 för kampanjer dina användare
+title: Hur de här säkerhetsrekommendationerna påverkar dina användare
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -23,57 +23,63 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur Microsoft 365 för kampanjer påverkar dina användare.
-ms.openlocfilehash: c9cbb64a5585aae4db8f878afcfc19c98711518b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: Läs om hur de här säkerhetsrekommendationerna för Microsoft 365 Business Premium påverkar dina användare och skyddar dina data.
+ms.openlocfilehash: 91f6b1fb9ddd5938eb8a788ce7594ec8ab9908c3
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845198"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044240"
 ---
-# <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Så påverkar Microsoft 365 för kampanjer dina användare
+# <a name="how-these-security-recommendations-affect-your-users"></a>Hur de här säkerhetsrekommendationerna påverkar dina användare
 
-Microsoft 365 för kampanjer gör det svårare för hackare att komma åt din miljö. Kompromissa är att användarna måste känna till hur man kan arbeta i denna säkra miljö. Vi förstår lite extra tålamod, men det är värt att hålla din organisation skyddad.
+Säkerhetsrekommendationerna för Microsoft 365 i den här lösningen gör det mycket svårare för hackare att få åtkomst till din miljö. Kompromissen är att användarna måste vara medvetna om hur de arbetar i den här säkrare miljön. Vi förstår att det krävs lite extra tålamod, men det är värt att skydda organisationen.
 
-![Bild som summerar viktiga punkter från nedan för iPhone, Android-enheter, Mac, Windows 10, delning och viktiga personer](../media/M365-democracy-Users_700px.png)
+![Bild som summerar viktiga punkter nedan för iPhone, Android-enheter, Mac-datorer, Windows 10, delning och personal](../media/M365-democracy-Users_900px.png)
 
-## <a name="use-secure-email-practices"></a>Använda säkra e-posttips
-Alla användare bör vara medvetna om och använda dessa e-post tips för att skydda sin e-post:
-- Konfigurera e-post så att multifaktorautentisering används med autentiseringsservern.
-- Verifiera legitima e-postmeddelanden och leta efter säkerhets tips från Avancerat nätfiske i Defender för Office 365-skydd.
-- Öppna endast säkra länkar och bifogade filer som verifierade av säkra länkar och säkra bifogade filer.
+## <a name="use-secure-email-practices"></a>Använd säkra e-postrutiner
 
-Lär dig mer om [nätfiske och andra attacker](m365-campaigns-phishing-and-attacks.md). 
+Alla användare bör känna till och använda de här e-postmetoderna för att skydda sin e-post:
 
-Ladda ned en [infografik](m365-campaigns-protect-campaign-infographic.md) med tips för dig och medlemmarna i din kampanj grupp.
+- Konfigurera e-post för användning med multifaktorautentisering med autentiseringsappen.
+- Verifiera legitima e-postmeddelanden och leta efter säkerhetstips från Avancerad nätfiske i Defender för Office 365 Protection.
+- Öppna endast säkra länkar och bifogade filer, som verifierats med säkra länkar och säkra bifogade filer.
 
-## <a name="set-up-iphones-and-android-devices"></a>Konfigurera iPhone och Android-enheter
-Alla användare som du lägger till i miljön måste ta några minuter för att [Konfigurera iPhone och Android-enheter](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) på ett säkert sätt:
-- Konfigurera enheter för att använda multifaktorautentisering med autentiseringsservern-appen.
-- Använd Microsoft Mobile-appar, till exempel Outlook Mobile, Word, OneDrive och andra Microsoft-program från App Store. De inbyggda e-postapparna som ingår i iPhone och Android-enheter stöds inte. 
-- Kräv PIN-kod för att låsa upp sina enheter.
+Läs mer om [multifaktorautentisering](m365-campaigns-multifactor-authenication.md) och [nätfiske och andra attacker.](m365-campaigns-phishing-and-attacks.md)
 
-När du har angett dessa uppmanas användarna att använda verifiera-appen när de använder dina organisations data på dessa enheter, inklusive e-post. 
+Ladda ned [en infografik](m365-campaigns-protect-campaign-infographic.md) med tips för dig och medlemmarna i ditt team.
 
-## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>Håll BYOD Mac-och Windows 10-datorer färska 
-Det är också viktigt för användarna att hålla sin primära arbets enhet uppdaterad:
-- Installera de senaste versionerna av Office-programmen och uppdatera dessa med uppdateringar när du uppmanas att göra det. 
-- Håll koll på operativ system uppdateringar, till exempel Windows-uppdateringar.
+## <a name="set-up-iphones-and-android-devices"></a>Konfigurera iPhone- och Android-enheter
 
-För [ohanterade Windows 10-och Mac-enheter](m365-campaigns-protect-pcs-macs.md)har användare ansvaret för att säkerställa att grundläggande säkerhetsfunktioner aktive ras.
+Det tar några minuter för alla användare som du lägger till i din miljö att konfigurera [iPhone- och Android-enheter](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) så att de fungerar säkert:
 
-**Aktivera grundläggande säkerhets funktioner på BYOD Windows 10-och Mac-enheter**
+- Konfigurera enheter för multifaktorautentisering med autentiseringsappen.
+- Använd Microsoft-mobilappar, bland annat Outlook Mobile, Word, OneDrive och andra Microsoft-appar från appbutiken. De inbyggda e-postprogram som ingår på iPhone- och Android-enheter stöds inte. 
+- Kräv en PIN-kod för att användarna ska kunna låsa upp sin enhet.
 
-||||
+När du har konfigurerat dem uppmanas användarna att använda autentiseringsappen när de får åtkomst till organisationsdata på dessa enheter, inklusive e-post.
+
+## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>Håll BYOD Mac-datorer och Windows 10-datorer helt nya
+
+Det är också viktigt att användarna ser till att deras primära arbetsenhet är uppdaterad:
+
+- Installera de senaste versionerna av Office-skrivbordsapparna och uppdatera dem när du uppmanas att göra det.
+- Håll dig på operativsystemets uppdateringar, till exempel Windows-uppdateringar.
+
+För [ohanterade Windows 10- och Mac-enheter](m365-campaigns-protect-pcs-macs.md)ansvarar användarna för att säkerställa att grundläggande säkerhetsfunktioner är aktiverade.
+
+**Aktivera grundläggande säkerhetsfunktioner på BYOD-enheter med Windows 10 och Mac**
+
+| |**Windows 10**|**Mac**|
 |:-----|:-----|:------|
-||**Windows 10**|**Mac**|
-|Säkerhets funktioner|Aktivera BitLocker-diskkryptering<p><p> Kontrol lera att Windows Defender är aktiverat <p>Aktivera Windows-brandväggen| Använda FileVault för att kryptera Mac-disken <p><p>Använda ett pålitligt antivirus program <p>Aktivera brand Väggs skydd|
+|Säkerhetsfunktioner|Aktivera BitLocker-enhetsskydd<p><p> Se till att Windows Defender förblir på <p>Aktivera Windows-brandväggen| Använda FileVault för att kryptera Mac-hårddisken <p><p>Använda ett tillförlitligt antivirusprogram <p>Aktivera brandväggsskydd|
 
-Mer information om de här rekommendationerna finns i [skydda ditt konto och dina enheter från hackare och skadlig program vara](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
+Mer information om dessa rekommendationer finns i [Skydda ditt konto och dina enheter från hackare och skadlig programvara.](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)
 
-## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>Samar beta med hjälp av Microsoft Teams, OneDrive, SharePoint Online och andra verktyg
-Användarna kan vara frestade att dela och lagra dina filer på andra platser än Microsoft 365. Med Microsoft 365 blir det lika enkelt att samar beta och dela säkert. Du kan [dela filer och videor](share-files-and-videos.md) direkt från Microsoft Teams, OneDrive, Stream och även från en fil. Att dela inifrån dessa verktyg gör att dina data inte läcker. Du kan lägga till ytterligare skydd till känsliga data för att förhindra delning utanför organisationen. 
+## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>Samarbeta med hjälp av Microsoft Teams, OneDrive, SharePoint Online och andra verktyg
 
+Användarna kanske frestas att dela och lagra organisationsfiler på andra platser än Microsoft 365. Microsoft 365 gör det så enkelt som möjligt att samarbeta och dela säkert. Du kan [dela filer och videor](share-files-and-videos.md) direkt från Microsoft Teams, OneDrive, Stream och till och med inifrån en fil. Genom att dela inifrån dessa verktyg ser du till att dina data inte läcker. Du kan lägga till ytterligare skydd för känsliga data för att förhindra delning utanför organisationen.
 
 ## <a name="set-up-managed-windows-10-devices"></a>Konfigurera hanterade Windows 10-enheter
-Vi rekommenderar att dina viktigaste anställda använder nyligen skaffade Windows 10-enheter som du hanterar. Vi visar dig hur du [hanterar och skyddar dessa enheter](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). Detta säkerställer att personal medlemmar som är det högsta värde som riktar sig till hackare får flest skydd. 
+
+Vi rekommenderar att din viktigaste personal använder nyköpta Windows 10-enheter som du hanterar. Vi visar dig hur du hanterar [och skyddar dessa enheter.](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) Det säkerställer att personal som är störst värde på att bli hackare får mest skydd.

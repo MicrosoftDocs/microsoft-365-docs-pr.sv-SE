@@ -1,4 +1,4 @@
-- name: Microsoft 365 for Campaigns
+- name: Microsoft 365 för företag och campaigns
   items:
     - name: Översikt
       href: index.md
@@ -13,20 +13,20 @@
     - name: Registrera dig
       href: m365-campaigns-sign-up.md
     - name: Konfigurera
-      href: ../business/set-up.md?toc=/microsoft-365/campaigns/toc.json
+      href: ../business/set-up.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json
     - name: Logga in
       href: m365-campaigns-sign-in.md
     - name: Anpassa inloggningssidan
       href: m365-customize-sign-in.md
     - name: Lägga till användare
-      href: ../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json
+      href: ../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json
 - name: Öka säkerheten
   items:
     - name: Översikt
       href: m365-campaigns-security-overview.md
     - name: Skydda administratörskonton
       href: m365-campaigns-protect-admin-accounts.md
-    - name: Skydda åtkomst till kampanjdata
+    - name: Skydda åtkomst till din data
       href: m365-campaigns-conditional-access.md
     - name: Skydd mot skadlig kod och andra hot
       href: m365-campaigns-increase-protection.md
@@ -35,11 +35,11 @@
     - name: Konfigurera multifaktorautentisering
       href: m365-campaigns-multifactor-authenication.md
     - name: Konfigurera mobila enheter
-      href: ../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json
+      href: ../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json
     - name: Skydda PC- och Mac-datorer
       href: m365-campaigns-protect-pcs-macs.md
     - name: Konfigurera hanterade Windows-enheter
-      href: ../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json
+      href: ../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json
 - name: Skydda e-post för all personal
   items:
     - name: Skydd mot nätfiske och andra attacker
@@ -59,10 +59,10 @@
 - name: Återställa eller ta bort kampanjdata från enheter
   items:
     - name: Ta bort kampanj- eller företagsdata
-      href: ../business/remove-company-data.md?toc=/microsoft-365/campaigns/toc.json
+      href: ../business/remove-company-data.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json
     - name: Återställa enheter till fabriksinställningar
-      href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/campaigns/toc.json
+      href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json
 - name: Hantering av säkerhetsincidenter
   items:
     - name: Svara på ett komprometterat e-postkonto
-      href: 'https://docs.microsoft.com/microsoft-365/compliance/responding-to-a-compromised-email-account'
+      href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json

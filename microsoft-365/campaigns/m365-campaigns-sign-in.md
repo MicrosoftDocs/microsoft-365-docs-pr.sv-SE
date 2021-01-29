@@ -1,5 +1,5 @@
 ---
-title: Logga in på Microsoft 365 för kampanjer
+title: Logga in på Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,24 +22,26 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Logga in på Microsoft 365 för kampanjer. Skydda din kampanj från Cybersecurity hot mot e-post, data och kommunikation.
-ms.openlocfilehash: a11db9a16718d435842508504d7e7f0cba5df898
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+description: Logga in på Microsoft 365. Skydda företaget, övningen eller kampanjen från cybersäkerhetshot mot e-post, data och kommunikation.
+ms.openlocfilehash: d2bc0ddbfbc839f1b389b844544f33c444012fb4
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131994"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044210"
 ---
-# <a name="sign-in-to-microsoft-365-for-campaigns"></a>Logga in på Microsoft 365 för kampanjer
+# <a name="sign-in-to-microsoft-365"></a>Logga in på Microsoft 365
 
-## <a name="for-campaign-admins"></a>För kampanj administratörer
-Om du har registrerat dig för Microsoft 365 för kampanjer är du Microsoft 365-administratör. Så här loggar du in: 
-1. Hitta det användar namn och lösen ord som vi skickade till den e-postadress som du gav oss i steg 2 av [stegen för att registrera dig](m365-campaigns-sign-up.md#steps-to-sign-up).
-2. I webbläsaren går du till administrations centret för Microsoft 365 på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> . 
-3. Skriv in ditt användar namn och lösen ord. Välj **Logga in**.
-4. I det övre högra hörnet på sidan kan du leta reda **på** kontrollen. Välj **för hands version på** så att du kan använda alla kontroller som beskrivs i avsnittet öka [skyddet för din kampanj](m365-campaigns-security-overview.md).
+## <a name="for-business-or-campaign-admins"></a>För företags- eller kampanjadministratörer
 
-## <a name="for-campaign-staff"></a>För kampanj personal
-Ställ in kampanj personal enligt beskrivningen i [lägga till användare](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) du kan också återställa och skicka lösen ord på sidan **lägga till användare** .
-Alla kampanj personal kan logga in på <a href="https://office.com" target="_blank">https://Office.com</a> .
+Om du har registrerat dig för Microsoft 365 är du Microsoft 365-administratör. Så här loggar du in:
 
+1. Hitta användarnamnet och lösenordet som vi skickade till den e-postadress som du gav oss i steg 2 [för att registrera dig.](m365-campaigns-sign-up.md#steps-to-sign-up)
+2. Gå till administrationscentret för Microsoft 365 i <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> webbläsaren.
+3. Skriv in ditt användarnamn och lösenord. Välj **Logga in.**
+4. Leta upp förhandsgranskningen på kontrollen längst **upp till höger på** sidan. Välj **Förhandsgranska på** så att du kan använda alla kontroller som beskrivs i skyddet för din [kampanj.](m365-campaigns-security-overview.md)
+
+## <a name="for-staff"></a>För personal
+
+Konfigurera personal enligt beskrivningen i [Lägg till användare](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) Du kan också återställa och skicka lösenord igen på sidan Lägg **till** användare.
+All personal kan logga in på <a href="https://office.com" target="_blank">https://Office.com</a> .

@@ -1,5 +1,5 @@
 ---
-title: Säkra som standard i Office 365
+title: Säker som standard i Office 365
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -8,64 +8,72 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: Lär dig mer om inställningen säker med standardinställningen i Exchange Online Protection (EOP)
-ms.openlocfilehash: 8db8e7af569114e5829d24d65b8eee89c9dce8c3
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+description: Läs mer om den säkra inställningen som standard i Exchange Online Protection (EOP)
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: c8af609b8ed50b0bfacb7d9f5397fab4c4726927
+ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787979"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50040550"
 ---
-# <a name="secure-by-default-in-office-365"></a>Säkra som standard i Office 365
+# <a name="secure-by-default-in-office-365"></a>Säker som standard i Office 365
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-"Säkra som standard" är en term som används för att definiera de standardinställningar som är mest säkra.
+"Säker som standard" är en term som används för att definiera vilka standardinställningar som är säkrast som möjligt.
 
-Säkerheten måste dock bal anse ras. Detta kan vara en balans mellan:
+Säkerheten måste dock balanseras med produktiviteten. Detta kan innefatta balans mellan:
 
-- **Användbarhet**: inställningarna ska inte komma i vägen för användar produktivitet.
-- **Risk**: säkerheten kan blockera viktiga aktiviteter.
-- **Äldre inställningar**: vissa konfigurationer för äldre produkter och funktioner kan behöva bevaras av företags skäl, även om nya, moderna inställningar förbättras.
+- **Användbarhet:** Inställningar bör inte vara i vägen för användarnas produktivitet.
+- **Risk:** Säkerheten kan blockera viktiga aktiviteter.
+- **Äldre inställningar:** Vissa konfigurationer för äldre produkter och funktioner kan behöva underhållas av företagsskäl, även om nya, moderna inställningar förbättras.
 
-Microsoft 365-organisationer med post lådor i Exchange Online skyddas av Exchange Online Protection (EOP). Detta skydd inkluderar:
+Microsoft 365-organisationer med postlådor i Exchange Online skyddas av Exchange Online Protection (EOP). Skyddet omfattar:
 
-- E-post med misstänkt skadlig program vara placeras automatiskt i karantän och mottagarna får ett meddelande. Se [Konfigurera principer för skydd mot skadlig program vara i EOP](configure-anti-malware-policies.md).
-- E-postmeddelanden som identifieras som ett högkonfidens nät fiske hanteras enligt policyn för skydd mot skräp post. Se [Konfigurera principer för skräp post i EOP](configure-your-spam-filter-policies.md).
+- E-post med misstänkt skadlig programvara sätts automatiskt i karantän och mottagare meddelas. Se [Konfigurera principer för skydd mot skadlig programvara i EOP.](configure-anti-malware-policies.md)
+- E-post som identifieras som nätfiske hanteras i enlighet med policyåtgärden mot skräppost. Se [Konfigurera principer för skydd mot skräppost i EOP.](configure-your-spam-filter-policies.md)
 
-Mer information om EOP finns i [Översikt över Exchange Online-skydd](exchange-online-protection-overview.md).
+Mer information om EOP finns i [Översikt över Exchange Online Protection.](exchange-online-protection-overview.md)
 
-Eftersom Microsoft vill hålla våra kunder säkra som standard, tillämpas vissa klient organisationer inte på skadlig program vara eller nätfiske med hög exakthet. Dessa åsidosättningar inkluderar:
+Eftersom Microsoft vill att våra kunder ska vara säkra som standard tillämpas vissa klientinställningar inte för skadlig programvara eller nätfiske med hög förtroende. Dessa åsidosättningar omfattar:
 
-- Listan Tillåtna avsändare eller tillåtna domän listor (principer för skräp post)
-- Säkra avsändare i Outlook
-- Lista över tillåtna IP-adresser (anslutnings filter)
+- Tillåtna avsändarlistor eller listor över tillåtna domäner (principer för skydd mot skräppost)
+- Betrodda avsändare i Outlook
+- IP-lista över tillåtna (anslutningsfiltrering)
 
-Mer information om dessa åsidosättningar finns i [skapa säkra avsändare](create-safe-sender-lists-in-office-365.md).
+Mer information om dessa åsidosättningar finns i skapa [listor över betrodda avsändare.](create-safe-sender-lists-in-office-365.md)
 
-Säkra som standard är inte en inställning som kan sättas på eller av, men är det sätt på vilket vårt filter fungerar för att behålla potentiellt farliga eller oönskade meddelanden från dina post lådor. Nätfiske och högsäker nät fiske meddelanden bör vara i karantän. Endast administratörer kan hantera meddelanden som är i karantän som skadlig eller högkonfidens nätfiske, och de kan också rapportera falska positiva positiv till Microsoft. Mer information finns i [Hantera meddelanden och filer i karantän som administratör i EOP](manage-quarantined-messages-and-files.md)
+> [!NOTE]
+> Vi håller på att ta bort  åtgärden Flytta meddelandet till mappen  Skräppost för att få nätfiskeuttryck från EOP mot skräppost. Principer för skydd mot skräppost som använder den här åtgärden för nätfiskemeddelanden med hög förtroende konverteras till **karantänmeddelande.** Åtgärden **Omdirigera meddelande till e-postadress** för nätfiskemeddelanden med hög konfidens påverkas inte.
 
-## <a name="more-on-why-were-doing-this"></a>Mer om varför vi gör detta
+Säker är som standard inte en inställning som kan aktiveras eller inaktiveras, men det är så filtreringen fungerar för att hålla potentiellt skadliga eller oönskade meddelanden borta från dina postlådor. Skadlig programvara och nätfiskemeddelanden med hög konfidens ska ha karantän. Endast administratörer kan hantera meddelanden som har satts i karantän som skadlig kod eller nätfiske och de kan också rapportera falska positiva meddelanden till Microsoft därifrån. Mer information finns i [Hantera meddelanden och filer i karantän som administratör i EOP](manage-quarantined-messages-and-files.md)
 
-Den anda som är säker som standard är: Vi utför samma åtgärd på meddelandet som du skulle vidta om du kände till att meddelandet är skadligt, även om det var något möjligt. Det här är samma metod som vi har använt på skadlig program vara och nu utökas samma sak med högsäker nät fiske meddelanden. I våra data anges att den felaktiga positiva taxan för nät fiske samtal är väldigt svag och administratörer kan lösa eventuella falska positiva godkännanden med administratörs inlämningar. I våra data anges också att listan Tillåtna avsändare och tillåtna domän listor i principer för skräp post och betrodda avsändare i Outlook var för omfattande och vållar mindre skada.
+## <a name="more-on-why-were-doing-this"></a>Mer information om varför vi gör det här
 
-Så här lägger du till det på ett annat sätt: som en säkerhets tjänst, agerar vi för din räkning för att förhindra att användarna angrips. Dessutom är säkra som standard inte ett fullständigt övertag ande av dina tillgängliga alternativ för nät fiske meddelanden med skydd mot skräp post. Även om vi rekommenderar karantän är de andra åtgärderna som alltid är tillgängliga fortfarande tillgängliga (flytta till mappen skräp post eller omdirigera till en e-postadress).
+Andan för att vara säker som standard är att vi vidtar samma åtgärd för meddelandet du skulle vidta om du visste att meddelandet var skadligt, även om ett konfigurerat undantag annars skulle tillåta att meddelandet levereras. Det här är samma metod som vi alltid använt för skadlig programvara, och nu utökar vi samma beteende till nätfiskemeddelanden med hög förtroende.
 
-## <a name="exceptions"></a>Undanta
+Våra data anger att en användare är 30 gånger mer sannolikt att klicka på en skadlig länk i meddelanden i mappen Skräppost kontra karantän. Våra data anger också att den falska positiva hastigheten (bra meddelanden som markerats som dåliga) för nätfiskemeddelanden med hög förtroende är mycket låg och administratörer kan lösa alla falska positiva resultat med administratörsinskickningar.
 
-Den enda åsidosättning som möjliggör högsäker nät fiske meddelande för att kringgå filtrering är regler för Exchange-flöden (kallas även transport regler). Om du vill använda regler för e-postflöde för att kringgå filtrering läser du [använda regler för e-postflöde för att ange SCL i meddelanden](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
+Vi kom också fram till att listorna för tillåtna avsändare och tillåtna domäner i principerna för skräppostskydd och Betrodda avsändare i Outlook var för breda och orsakade mer skada än nytta.
 
-Du bör bara använda åsidosättningar i följande fall:
+För att uttrycka det på ett annat sätt: som en säkerhetstjänst arbetar vi för att förhindra att dina användare komprometteras. 
 
-- Nät fiske simulering: simulerade attacker kan hjälpa dig att identifiera sårbara användare innan en verklig attack påverkar din organisation.
-- Säkerhets-SecOps post lådor: dedikerade post lådor som används av säkerhets team för att få ofiltrerad meddelanden (både bra och dåligt). Teams kan sedan granska för att se om de innehåller skadligt innehåll.
-- Filter från tredje part är säkert som standard gäller inte när domänens MX-post inte pekar på Office 365.
-- Falsk positiva uppgifter: du kanske vill tillåta vissa meddelanden som fortfarande analyseras av Microsoft [via administratörs inlämningar](admin-submission.md). Precis som med alla åsidosättningar rekommenderar vi att de är tillfälliga.
+## <a name="exceptions"></a>Undantag
+
+Den enda åsidosättningen som tillåter nätfiskemeddelanden att kringgå filtrering är Exchange-e-postflödesregler (kallas även transportregler). Information om hur du använder e-postflödesregler för att kringgå filtrering finns i Använda [e-postflödesregler för att ange SCL i meddelanden.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
+
+Du bör endast överväga att använda åsidosättningar i följande scenarier:
+
+- Nätfiskebedrägerier: Simulerade attacker kan hjälpa dig att identifiera sårbara användare innan en verklig attack påverkar organisationen.
+- Säkerhet/SecOps-postlådor: Dedikerade postlådor som används av säkerhetsgrupper för att få ofiltrerade meddelanden (både bra och dåliga). Teams kan sedan granska dem för att se om de innehåller skadligt innehåll.
+- Filter från tredje part: Säker som standard gäller inte när domänens MX-post inte pekar på Office 365.
+- Falska positiva resultat: Du kanske tillfälligt vill tillåta vissa meddelanden som fortfarande analyseras av Microsoft [via administratörsinskickningar.](admin-submission.md) Precis som med alla åsidosättningar rekommenderar vi att de är tillfälliga.
