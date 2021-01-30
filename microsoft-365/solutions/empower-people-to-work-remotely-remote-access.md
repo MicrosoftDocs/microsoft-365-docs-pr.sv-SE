@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Kontrollera att dina distansarbetare kan komma åt lokala resurser samtidigt som du optimerar åtkomst till Microsoft 365-molntjänster.
-ms.openlocfilehash: a9a8c972d58c7d2bac3f49ad602578358406c5a0
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.openlocfilehash: 43000ce27fc24dbc6c2db3782b0ed40aa66b7fd2
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908335"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055537"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Steg 2. Tillhandahålla fjärråtkomst till lokala appar och tjänster
 
@@ -107,7 +107,7 @@ Mer information finns i [den här översikten över Windows Virtual Desktop](htt
 
 ## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>Skydda dina anslutningar för fjärrskrivbordstjänster med gateway för fjärrskrivbordstjänster
 
-Om du använder fjärrskrivbordstjänster (RDS) för att låta dina medarbetare ansluta till Windows-datorer i det lokala nätverket bör du använda en Microsoft Fjärrskrivbordtjänster-gateway i Edge-nätverket. Gatewayen använder SSL (Secure Sockets Layer) för att kryptera kommunikation och förhindra att den lokala datorn som är värd för fjärrskrivbordstjänster exponeras direkt mot Internet.
+Om du använder fjärrskrivbordstjänster (RDS) för att låta dina medarbetare ansluta till Windows-datorer i det lokala nätverket bör du använda en Microsoft Fjärrskrivbordtjänster-gateway i Edge-nätverket. Gateway använder TLS (Transport Layer Security) för att kryptera trafik och förhindrar att den lokala datorn som är värd för RDS exponeras direkt för Internet.
 
 ![Anslutningar för fjärrskrivbordstjänster med gateway för fjärrskrivbordstjänster](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
 

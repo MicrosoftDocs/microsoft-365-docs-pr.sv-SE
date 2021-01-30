@@ -1,5 +1,5 @@
 ---
-title: Välj mellan grundläggande mobilitet och säkerhet och Intune
+title: Välja mellan Basic Mobility och Security och Intune
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -17,21 +17,21 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Grundläggande mobilitet och säkerhet är en del av Microsoft 365-abonnemangen.
-ms.openlocfilehash: cfd1a68c313d1a1335490e2b8d6938de192fe3f3
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+description: Basic Mobility and Security är en del av Microsoft 365-abonnemangen.
+ms.openlocfilehash: ec3ffa8879bf14ab3116bbbbf5cf2a1a3fd7c6e6
+ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877098"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50053807"
 ---
-# <a name="choose-between-basic-mobility-and-security-or-intune"></a>Välj mellan grundläggande mobilitet och säkerhet eller Intune
+# <a name="choose-between-basic-mobility-and-security-or-intune"></a>Välja mellan Basic Mobility och Security eller Intune
 
-[Microsoft Intune](https://docs.microsoft.com/mem/intune/) är en fristående produkt som ingår i vissa Microsoft 365-abonnemang, och grundläggande mobilitet och säkerhet är en del av Microsoft 365-abonnemangen. 
+[Microsoft Intune är](https://docs.microsoft.com/mem/intune/) en fristående produkt som ingår i vissa Microsoft 365-abonnemang, medan Basic Mobility och Security ingår i Microsoft 365-abonnemangen.
 
- ## <a name="availability-of-basic-mobility-and-security-and-intune"></a>Till gång till grundläggande mobilitet och säkerhet och Intune
- 
-Både grundläggande mobilitet och säkerhet och Intune ingår i en mängd olika abonnemang, som beskrivs i följande tabell.
+ ## <a name="availability-of-basic-mobility-and-security-and-intune"></a>Tillgänglighet för basic rörlighet och säkerhet och Intune
+
+Både Basic Mobility och Security och Intune ingår i en mängd olika planer som beskrivs i följande tabell.
 
 | Planera | Grundläggande Mobility and Security | Microsoft Intune |
 |:-----|:-----|:-----|
@@ -42,65 +42,65 @@ Både grundläggande mobilitet och säkerhet och Intune ingår i en mängd olika
 |Office 365 E3 |Ja|Nej|
 |Office 365 E5 |Ja|Nej|
 |Microsoft 365 Business Premium |Ja|Ja|
-|Microsoft 365 firstline 3 |Ja|Ja|
+|Microsoft 365 Firstline 3 |Ja|Ja|
 |Microsoft 365 Enterprise, E3 |Ja|Ja|
-|Microsoft 365 Enterprise, E5 |Ja|Ja|
-|Microsoft 365 Education a1 |Ja|Ja|
-|Microsoft 365 Education a3 |Ja|Ja|
+|Microsoft 365 Enterprise E5 |Ja|Ja|
+|Microsoft 365 Education A1 |Ja|Ja|
+|Microsoft 365 Education A3 |Ja|Ja|
 |Microsoft 365 Education A5 |Ja|Ja|
 |Microsoft Intune |Nej|Ja|
-|Företags mobilitet & säkerhet E3 |Nej|Ja|
-|Företags mobilitet & säkerhet, E5 |Nej|Ja|
+|Enterprise Mobility & Security E3 |Nej|Ja|
+|Enterprise Mobility & Security E5 |Nej|Ja|
 
 >[!NOTE]
->Du kan inte börja använda grundläggande mobilitet och säkerhet om du redan använder Microsoft Intune.
+>Du kan inte börja använda Basic Mobility and Security om du redan använder Microsoft Intune.
 
- Mer information finns i [Beskrivning av tjänst beskrivningar för Microsoft 365 och Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description). 
+ Mer information finns i [tjänstbeskrivningarna för Microsoft 365- och Office 365-plattformen.](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description) 
 
 ## <a name="differences-in-capabilities"></a>Skillnader i funktioner
 
-Microsoft Intune med inbyggd grundläggande rörlighet och säkerhet ger båda dig möjligheten att hantera mobila enheter i organisationen, men det finns viktiga skillnader i kapaciteten, som beskrivs i följande tabell.
+Både Microsoft Intune och den inbyggda funktionen Basic Mobility och Security ger dig möjlighet att hantera mobila enheter i organisationen, men det finns viktiga skillnader i funktion som beskrivs i följande tabell.
 
 >[!NOTE]
->Du kan hantera användare och deras mobila enheter med både Intune och grundläggande mobilitet och säkerhet i samma Microsoft 365 Business Standard-organisation *genom att konfigurera grundläggande mobilitet och säkerhet först och sedan lägga till Microsoft Intune*. Med det här alternativet kan du välja grundläggande mobilitet och mer funktionalitet-rika Intune-lösning. Tilldela en Intune-licens för att aktivera Intune-funktioner.
+>Du kan hantera användare och deras mobila enheter med hjälp av både Intune och Basic Mobility and Security i samma Microsoft 365 Business Standard-organisation genom att först konfigurera Basic Mobility and Security och sedan lägga till *Microsoft Intune.* På så sätt kan du välja Basic Mobility and Security eller den mer funktionsrika Intune-lösningen. Tilldela en Intune-licens för att aktivera Intune-funktionerna.
 
-| Funktions område | Funktions markeringar | Grundläggande Mobility and Security | Microsoft Intune |
+| Funktionsområde | Viktiga funktioner | Grundläggande Mobility and Security | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
-|Enhets typer|Hantera olika OS-plattformar och stora hanterings lägen. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>Mac OS, iPad OS|
-|Kompatibilitet med enheter|Ange och hantera säkerhets principer, som PIN-lås och jailbreak identifiering på enhets nivå. |Begränsningar för Android 9 och senare enheter. Visa [information](capabilities.md). |Ja|
-|Villkorlig åtkomst baserat på enhetens efterlevnad |Förhindra att icke-kompatibla enheter får åtkomst till företagets e-post och data från molnet. |Stöds inte i Windows 10.<br/>Begränsat för att kontrol lera åtkomsten till Exchange Online, SharePoint Online och Outlook. |Ja |
-|Enhetskonfiguration  |Konfigurera enhets inställningar (till exempel att inaktivera kameran)|Begränsad uppsättning inställningar.|Ja|
-|Kompatibilitet med enheter  |Ange och hantera säkerhets principer, som PIN-lås och jailbreak identifiering på enhets nivå. |Begränsningar för Android 9 och senare enheter. Visa [information](capabilities.md). |Ja|
-|E-postprofiler  |Tillhandahålla en intern e-postprofil på enheten. |Ja|Ja|
-|WiFi-profiler |Tillhandahålla en inbyggd WiFi-profil på enheten. |Nej|Ja|
-|VPN-profiler |Tillhandahålla en intern VPN-profil på enheten. |Nej|Ja|
-|Grundläggande hantering av mobilitet och säkerhets program  |Distribuera dina interna branschspecifika program och från appar till användare. |Nej|Ja|
-|Skydd för mobil program  |Gör det möjligt för dina användare att säkert komma åt företags information med hjälp av Office Mobile-och line-of Business-apparna, samtidigt som du säkerställer säkerheten för data genom att hjälpa till att begränsa åtgärderna som att kopiera, klippa ut, klistra in och Spara som, för de program som hanteras av företags data. Fungerar även om enheterna inte är registrerade för grundläggande mobilitet och säkerhet. Se skydda AppData med MAM-principer. |Nej|Ja|
-|Hanterad webbläsare  |Aktivera säkrare surfning med programmet Edge. |Nej|Ja|
-|Autopilotering med Zero Touch-program) |Registrera ett stort antal företagsägda enheter och förenkla användar inställningar. |Nej|Ja|
+|Enhetstyper|Hantera olika OS-plattformar och större varianter av hanteringsläge. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS, iPad OS|
+|Enhetsefterlevnad|Ange och hantera säkerhetsprinciper, till exempel PIN-kodslås och identifiering av lås på enhetsnivå. |Begränsningar på Android 9 och senare enheter. Visa [information.](capabilities.md) |Ja|
+|Villkorsstyrd åtkomst baserat på enhetsefterlevnad |Förhindra att enheter som inte är kompatibla kommer åt företagets e-post och data från molnet. |Stöds inte i Windows 10.<br/>Begränsad till att kontrollera åtkomsten till Exchange Online, SharePoint Online och Outlook. |Ja |
+|Enhetskonfiguration  |Konfigurera enhetsinställningar (till exempel inaktivera kameran)|Begränsad uppsättning inställningar.|Ja|
+|Enhetsefterlevnad  |Ange och hantera säkerhetsprinciper, till exempel PIN-kodslås och identifiering av lås på enhetsnivå. |Begränsningar på Android 9 och senare enheter. Visa [information.](capabilities.md) |Ja|
+|E-postprofiler  |Etablera en inbyggd e-postprofil på enheten. |Ja|Ja|
+|WiFi-profiler |Etablera en inbyggd WiFi-profil på enheten. |Nej|Ja|
+|VPN-profiler |Etablera en inbyggd VPN-profil på enheten. |Nej|Ja|
+|Enkel hantering av mobilitets- och säkerhetsprogram  |Distribuera dina interna verksamhetsbaserade appar och från programbutiker till användare. |Nej|Ja|
+|Skydd för mobilprogram  |Gör det möjligt för användarna att få säker åtkomst till företagsinformation med hjälp av Office-mobilappar och verksamhetsappar som de känner till, samtidigt som du säkerställer datasäkerhet genom att begränsa åtgärder som att kopiera, klippa ut, klistra in och spara som, till endast de program som hanteras godkända för företagsdata. Fungerar även om enheterna inte är registrerade till Basic Mobility and Security. Se Skydda appdata med hjälp av MAM-principer. |Nej|Ja|
+|Hanterad webbläsare  |Aktivera säkrare surfning med Edge-appen. |Nej|Ja|
+|Program för noll pekregistrering – Autopilot) |Registrera ett stort antal företagsägda enheter, samtidigt som du förenklar användarkonfiguration. |Nej|Ja|
 |||
 
-Utöver de funktioner som visas i den föregående tabellen inkluderar grundläggande mobilitet och säkerhet och Intune båda en uppsättning fjärråtgärder som skickar kommandon till enheter över Internet. Du kan till exempel ta bort Office-data från en anställds enhet samtidigt som du lämnar person uppgifter på plats (från en person), tar bort Office-appar från en anställds enhet (rensning) eller återställer en enhet till fabriks inställningarna (fullständig rensning). 
+Förutom de funktioner som anges i föregående tabell innehåller Både Basic Mobility och Security och Intune en uppsättning fjärråtgärder som skickar kommandon till enheter via Internet. Du kan till exempel ta bort Office-data från en anställds enhet medan personliga data är kvar (dra tillbaka), ta bort Office-appar från en anställds enhet (rensa) eller återställa en enhet till fabriksinställningarna (fullständig rensning). 
 
-Grundläggande funktioner för rörlighet och säkerhet inkluderar borttagning, rensning och fullständig rensning. Mer information om grundläggande funktioner för rörlighet och säkerhet finns i [grundläggande mobilitet och säkerhet](capabilities.md).
+Grundläggande åtgärder för rörlighet och säkerhet omfattar retire, wipe and full wipe. Mer information om grundläggande mobilitets- och säkerhetsåtgärder finns i funktionerna [Basic Mobility och Security.](capabilities.md)
 
-Med Intune kan du göra följande:
+Med Intune har du följande uppsättning åtgärder:
 
 -   Autopilot-återställning (endast Windows)
--  [Nyckel rotation](https://docs.microsoft.com/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys)   i BitLocker (Endast Windows)
--  [Använda rensning, ta bort eller avregistrera enheten manuellt](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
--  [Inaktivera aktiverings](https://docs.microsoft.com/mem/intune/remote-actions/device-activation-lock-disable)   plats (endast iOS)
--  [Ny start](https://docs.microsoft.com/mem/intune/remote-actions/device-fresh-start)   (Endast Windows)
+-  [Bitlocker-nyckelrotation](https://docs.microsoft.com/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys)   (Endast Windows)
+-  [Använda rensning, dra tillbaka eller manuellt avregistrera enheten](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
+-  [Inaktivera aktiveringslokalen](https://docs.microsoft.com/mem/intune/remote-actions/device-activation-lock-disable)   (endast iOS)
+-  [Börja om från början](https://docs.microsoft.com/mem/intune/remote-actions/device-fresh-start)   (Endast Windows)
 - [Fullständig genomsökning](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)   (Endast Windows 10)
 - [Hitta enhet](https://docs.microsoft.com/mem/intune/remote-actions/device-locate)   (endast iOS)
-- [Förlorat läge](https://docs.microsoft.com/mem/intune/remote-actions/device-lost-mode)   (endast iOS)- [snabb sökning](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)(endast Windows 10)
-- [Fjärrkontroll för Android](https://docs.microsoft.com/mem/intune/remote-actions/teamviewer-support)
-- [Fjärrlåsning](https://docs.microsoft.com/mem/intune/remote-actions/device-remote-lock)
-- [Byt namn på enheten](https://docs.microsoft.com/mem/intune/remote-actions/device-rename)
--  [Återställ omstart för lösen ord](https://docs.microsoft.com/mem/intune/remote-actions/device-passcode-reset) [](https://docs.microsoft.com/mem/intune/remote-actions/device-restart)   (endast Windows)
--  Uppdatera Windows Defender säkerhets information (endast Windows)
--  PIN-återställning för Windows 10 (endast Windows)
+- [Borttappt läge](https://docs.microsoft.com/mem/intune/remote-actions/device-lost-mode)   (endast iOS)– [Snabbsökning](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)(endast Windows 10)
+- [Fjärrstyrning för Android](https://docs.microsoft.com/mem/intune/remote-actions/teamviewer-support)
+- [Fjärrlås](https://docs.microsoft.com/mem/intune/remote-actions/device-remote-lock)
+- [Byt namn på enhet](https://docs.microsoft.com/mem/intune/remote-actions/device-rename)
+-  [Återställa lösenordsåterställning](https://docs.microsoft.com/mem/intune/remote-actions/device-passcode-reset) [](https://docs.microsoft.com/mem/intune/remote-actions/device-restart)   (endast Windows)
+-  Uppdatera Windows Defender Säkerhetsinformation (endast Windows)
+-  Återställning av PIN-kod i Windows 10 (endast Windows)
 -  [Skicka anpassade meddelanden](https://docs.microsoft.com/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)   (Android, iOS, iPad OS)
 -  [Synkronisera enhet](https://docs.microsoft.com/mem/intune/remote-actions/device-sync)
 
-Mer information om Intune-åtgärder finns i [dokumentationen för Microsoft Intune](https://docs.microsoft.com/mem/intune/).
+Mer information om Intune-åtgärder finns i [Microsoft Intune-dokumentationen.](https://docs.microsoft.com/mem/intune/)

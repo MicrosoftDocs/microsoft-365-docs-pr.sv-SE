@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Använd säkerhets- och efterlevnadstjänsterna i Microsoft 365 för att skydda appar, data och enheter för distansarbetare.
-ms.openlocfilehash: 6c6c30e320068a6e97cf5fd2cd81b4bfeff1c49e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8248fdbaa96a651ad9ff4548ce0867bd7c2988eb
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845234"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055502"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Steg 3: Distribuera säkerhet och efterlevnad för distansarbetare
 
@@ -47,12 +47,12 @@ Här är de funktioner i Microsoft 365 som tillhandahåller säkerhets- och efte
 
 Skydda dina program och data med de här säkerhetsfunktionerna i Microsoft 365.
 
-| Resurs eller funktion | Beskrivning | Licensiering |
+| Resurs eller funktion | Varför jag behöver det | Licensiering |
 |:-------|:-----|:-------|
-| Microsoft Defender för Office 365 | Skydda dina Microsoft 365-appar och data – t.ex. e-postmeddelanden, Office-dokument och samarbetsverktyg – från angrepp. <br><br> Microsoft Defender för Office 365 samlar in och analyserar signaler från dina appar för identifiering, undersökning och korrigering av säkerhetsrisker och skyddar organisationen mot skadliga hot som finns i e-postmeddelanden, länkar (URL:er) och samarbetsverktyg. | Microsoft 365 E3 eller E5 | 
+| Microsoft Defender för Office 365 | Skydda dina Microsoft 365-appar och data – t.ex. e-postmeddelanden, Office-dokument och samarbetsverktyg – från angrepp. <br><br> Microsoft Defender för Office 365 samlar in och analyserar signaler från dina appar för identifiering, undersökning och korrigering av säkerhetsrisker och skyddar organisationen mot skadliga hot som finns i e-postmeddelanden, länkar (URL:er) och samarbetsverktyg. Det ger också automatisk konfiguration av klientorganisationens konfigurationsverktyg för standard och strikta säkerhetsställningar. | Microsoft 365 E3 eller E5 | 
 | Skydd mot skadlig programvara | ‎Windows Defender Antivirus och Device Guard tillhandahåller enhetsbaserat skydd mot skadlig programvara. <br><br> SharePoint‎ Online söker automatiskt igenom filuppladdningar efter känd skadlig programvara. ‎<br><br> Exchange Online Protection‎ (‎EOP‎) skyddar molnpostlådor. | Microsoft 365 E3 eller E5 |
 | Microsoft Defender för Endpoint | Skydda din organisationsenheter mot cyberhot och dataintrång och identifiera, undersök och reagera på avancerade hot. | Microsoft 365 E5 |
-| Cloud App Security | Skydda dina molnbaserade tjänster – både Microsoft 365 och andra SaaS-appar – mot angrepp. | Microsoft 365 E5 eller individuella Cloud App Security-licenser |
+| Cloud App Security | Skydda dina molnbaserade tjänster – både Microsoft 365 och andra SaaS-appar – från angrepp. | Microsoft 365 E5 eller individuella Cloud App Security-licenser |
 | Azure AD Identity Protection  | Automatisera identifiering och åtgärder för identitetsbaserade risker. <br><br>Skapa riskbaserade principer för villkorsstyrd åtkomst för att kräva multifaktorautentisering (MFA) för riskfyllda inloggningar. | Microsoft 365 E5 eller E3 med Azure AD Premium P2-licenser |
 ||||
 
@@ -62,7 +62,7 @@ Mer information finns i artikeln om [de 12 viktigaste åtgärderna för säkerhe
 
 Uppfyll de interna principerna eller regelkraven med dessa efterlevnadsfunktioner i Microsoft 365.
 
-| Resurs eller funktion | Beskrivning | Licensiering |
+| Resurs eller funktion | Varför jag behöver det | Licensiering |
 |:-------|:-----|:-------|
 | Känslighetsetiketter | Med hjälp av etiketter med olika nivåer av skydd för e-post, filer och webbplatser kan du klassificera och skydda din organisations data utan att hindra användarnas produktivitet och möjligheter att samarbeta. | Microsoft 365 E3 eller E5 |
 | Dataförlustskydd (DLP) | Identifiera, varna för och blockera riskfylld, oavsiktlig eller olämplig delning, t.ex. av data som innehåller personuppgifter, både internt och externt. | Microsoft 365 E3 eller E5 | 

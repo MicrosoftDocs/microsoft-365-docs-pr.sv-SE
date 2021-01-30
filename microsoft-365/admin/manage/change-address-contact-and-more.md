@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
-description: Lär dig hur du ändrar din organisations profil, till exempel organisationens namn, adress, telefon, tekniska kontakter och e-post.
-ms.openlocfilehash: 19769c827284000e1ad0e86e3666d9980322b6a9
-ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
+description: Lär dig hur du gör ändringar i din organisationsprofil, till exempel organisationens namn, adress, telefonnummer, teknisk kontakt och e-post.
+ms.openlocfilehash: 334bd1bee0571ba173987b7767465e8d82d7efe9
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49560866"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058441"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Ändra organisationens adress, tekniska kontakt med mera
 
@@ -37,52 +37,52 @@ ms.locfileid: "49560866"
 
 ::: moniker-end
   
-Du kan göra ändringar i din organisations profil, till exempel organisationens namn, adress, telefon och teknisk kontakt. **Du måste vara global administratör för att uppdatera den här informationen.**
+Du kan ändra din organisationsprofil, till exempel organisationens namn, adress, telefonnummer och teknisk kontakt. **Du måste vara global administratör för att uppdatera den här informationen.**
   
-Om du vill ändra adressen som är kopplad till din faktura eller prenumeration kan du läsa [ändra dina fakturerings adresser för Microsoft 365 för företag](../../commerce/billing-and-payments/change-your-billing-addresses.md).
+Om du vill ändra adressen som är kopplad till din faktura eller prenumeration går du till [Ändra dina faktureringsadresser för Microsoft 365 för företag.](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
 ## <a name="edit-organization-information"></a>Redigera organisationsinformation
 
 > [!IMPORTANT]
-> Du kan inte ändra land eller region för abonnemanget. Det beror på att det land eller den region där din organisation är sitt huvud kontor bestämmer vilka tjänster som är tillgängliga för dig, moms och fakturerings valuta samt data centrets plats. Om du vill ändra organisationens land eller region kan du registrera dig för ett nytt konto, välja önskat land eller region och köpa ett nytt abonnemang.
+> Du kan inte ändra land eller region för prenumerationen. Det beror på att det land eller den region där organisationen har sitt säte avgör vilka tjänster som är tillgängliga, vilka skatter och vilken faktureringsvaluta som används och platsen för datacentret. Om du vill ändra organisationens land eller region registrerar du ett nytt konto, väljer önskat land eller region och köper en ny prenumeration.
 
-Så här ändrar du annan information på företagets profil sida:
+Så här ändrar du annan information på företagets profilsida:
   
-1. Gå till sidan **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**organisations inställningar**</a> i administrations centret.
+1. Gå till sidan Inställningar för organisationens **inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**i administrationscentret.**</a>
 
-2. Välj **organisationsinformation** på fliken **organisations profil** .
+2. Välj **Organisationsinformation på** fliken **Organisationsprofil.**
 
-3. Uppdatera organisationens information och välj sedan **Spara ändringar**.
+3. Uppdatera organisationens information och välj sedan **Spara ändringar.** Se till att fylla i alla obligatoriska fält som är markerade med * för att du ska kunna spara ändringarna.
 
-    En beskrivning av varje fält finns nedan.
+En beskrivning av varje fält finns nedan.
 
 ## <a name="what-do-these-fields-mean"></a>Vad betyder fälten?
 
 |**Fält**  |**Beskrivning**  |
 |---------|---------|
-|Namn  <br/>   | Namnet som anges här är det som visas för användarna på följande sidor:  <br/>  Inloggningssidan: Om dina användare har konfigurerat andra TE102824469-konton med sina e-postadresser för företag eller skola ser de kanske organisationsnamnet på inloggningssidan. Det gör det lättare för dem att skilja sitt arbets- eller skolkonto från andra konton, vilket i sin tur gör att de enkelt kan se vilket konto de ska använda när de loggar in.  <br/>  Organisationens profillänk och profilsida: Länken till din organisations profil visar organisationsnamnet.  <br/>  Yammer-navigering: i Yammer använder den vänstra navigeringen organisations namnet som namn på Yammer-nätverket.  <br/> OneDrive-synkroniseringsklient: organisations namnet visas i Utforskaren i Windows och Finder på Mac, fil Sök vägar, OneDrive-aktivitets Center, verktygs tips för OneDrive-moln och fönstret OneDrive-inställningar. För närvarande uppdaterar inte organisations namnet för konfigurerade klienter. <br/> MS Teams: organisationens växlaren i Teams visar organisations namnet <br/>  |
-|Adress, ort, region, postnummer  <br/>     | Den adress som anges här är det som du kommer att se på fakturan, under såld till: den sålda till-adressen på din faktura är samma som din organisations adress på din profil sida (se [förstå din faktura för Microsoft 365 för företag](../../commerce/billing-and-payments/understand-your-invoice2.md)).  <br/>        |
-|Land eller region.  <br/>    | Landet eller regionen där företaget har sitt säte. Det valda landet eller regionen avgör vilka tjänster som är tillgängliga, vilka skatter och vilken faktureringsvaluta som används i ditt land eller region och platsen för närmaste datacenter (se [Licensbegränsningar för Microsoft Office](https://office.microsoft.com/redir/FX103037529)).  <br/>Obs! när du har valt kan landet eller regionen inte ändras. Om du vill ändra valet måste du avbryta din prenumeration och anmäla dig på nytt. Om du behöver hjälp med den här processen [kontaktar du support](../contact-support-for-business-products.md).        |
+|Namn  <br/>   | Namnet som anges här är det som visas för användarna på följande sidor:  <br/>  Inloggningssidan: Om dina användare har konfigurerat andra TE102824469-konton med sina e-postadresser för företag eller skola ser de kanske organisationsnamnet på inloggningssidan. Det gör det lättare för dem att skilja sitt arbets- eller skolkonto från andra konton, vilket i sin tur gör att de enkelt kan se vilket konto de ska använda när de loggar in.  <br/>  Organisationens profillänk och profilsida: Länken till din organisations profil visar organisationsnamnet.  <br/>  Yammer navigering: I Yammer det vänstra navigeringsfältet används organisationsnamnet som namn på Yammer nätverket.  <br/> OneDrive-synkroniseringsklienten: Organisationsnamnet visas i Utforskaren i Windows och Finder på Mac, filsökvägarna, OneDrive-aktivitetscentret, knappbeskrivningen för OneDrive-molnikonen och fönstret för OneDrive-inställningar. Om du uppdaterar organisationsnamnet för närvarande uppdateras det inte för konfigurerade klienter. <br/> MS Teams: Organisationsbyte i Teams visar organisationens namn <br/>  |
+|Adress, ort, region, postnummer  <br/>     | Adressen som anges här är det som visas på fakturan, under Såld till: Såld till-adressen på fakturan är samma som organisationens adress på profilsidan (se Förstå din faktura för [Microsoft 365](../../commerce/billing-and-payments/understand-your-invoice2.md)för företag).  <br/>        |
+|Land eller region.  <br/>    | Landet eller regionen där företaget har sitt säte. Det valda landet eller regionen avgör vilka tjänster som är tillgängliga, vilka skatter och vilken faktureringsvaluta som används i ditt land eller region och platsen för närmaste datacenter (se [Licensbegränsningar för Microsoft Office](https://office.microsoft.com/redir/FX103037529)).  <br/>Obs! När du har valt kan landet eller regionen inte ändras. Om du vill ändra valet måste du avbryta din prenumeration och anmäla dig på nytt. Om du behöver hjälp med den här processen [kontaktar du supporten.](../contact-support-for-business-products.md)        |
 |Telefonnummer  <br/>     | Det här är det primära numret för ditt företag. Det är oftast numret till ert huvudkontor.  <br/>        |
-|Teknisk kontakt  <br/> |Det här är e-postadressen för den primära tekniska person som administrerar ditt Microsoft 365-abonnemang. Det här är den person som kommer att få meddelanden om tjänst status för Microsoft 365.  <br/> |
-|Föredraget språk  <br/> |Med föredraget språk väljs språket för all kommunikation som skickas från Microsoft till din organisation. När du registrerar dig påverkar inställningen vilket språk som används i SharePoint Online, som är det som användarna ser på gruppwebbplatsen. Om du ändrar språkinställningen efter registreringen sker framtida kommunikation på det nya språket.    <br/> Obs! det språk som används av SharePoint Online kan inte ändras.           |
+|Teknisk kontakt  <br/> |Det här är e-postadressen för den primära tekniska personen som administrerar din Microsoft 365-prenumeration. Det här är den person som ska få meddelanden om Microsoft 365-tjänstens status.  <br/> |
+|Föredraget språk  <br/> |Med föredraget språk väljs språket för all kommunikation som skickas från Microsoft till din organisation. När du registrerar dig påverkar inställningen vilket språk som används i SharePoint Online, som är det som användarna ser på gruppwebbplatsen. Om du ändrar språkinställningen efter registreringen sker framtida kommunikation på det nya språket.    <br/> Obs! Språket som används i SharePoint Online kan inte ändras.           |
 
 ## <a name="change-your-alternate-email-address"></a>Ändra din alternativa e-postadress
 
-Som administratör kan du ändra din alternativa e-postadress för att återställa lösen ord.
+Som administratör kan du ändra din alternativa e-postadress för återställning av lösenord.
 
-1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrations centret för Microsoft 365</a>.
+1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrationscentret för Microsoft 365.</a>
 
-2. I sidhuvudet väljer du din profil ikon och sedan **Visa konto**.
+2. Välj din profilikon i sidhuvudet och välj sedan **Visa konto.**
 
-3. Välj **säkerhets information** till vänster.
+3. Välj Säkerhetsinformation till **vänster.**
 
-4. I avsnittet e-post väljer du **ändra**
+4. Välj Ändra i avsnittet **E-post**
 
-5. Redigera adressen i rutan **alternativ e-post** och välj sedan **Nästa**.
+5. Redigera adressen i rutan Alternativ **e-postadress** och välj **sedan Nästa.**
 
-6. Ange koden som skickas till den alternativa e-postadressen och välj **OK** för att bekräfta ändringen.
-Information om hur du ändrar andra profil uppgifter finns i [ändra dina kontakt inställningar](change-contact-preferences.md) eller [ändra visnings språk](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx).
+6. Ange koden som skickas till den alternativa e-postadressen och välj **OK** för att verifiera ändringen.
+Mer information om hur du ändrar annan profilinformation [finns i Ändra dina kontaktinställningar](change-contact-preferences.md) eller Ändra [visningsspråk.](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx)
   
 ### <a name="email-signatures"></a>E-postsignaturer
   

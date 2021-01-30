@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: Kontrollera att du har aktiverat alla funktioner i Microsoft 365 för att maximera produktiviteten på distansmedarbetaren och bibehålla säker åtkomst till servrar, data och moln.
-ms.openlocfilehash: c6f17f2a80fa37abe43ceabc7a06c86c80eeadbd
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: aa72ba0c47acdd507bf86a082c9b4c2a87e3f1ef
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616362"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055525"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Underlätta för distansarbetare med Microsoft 365
 
@@ -37,11 +37,16 @@ Microsoft 365 har förmågan att låta dina medarbetare att arbeta på distans.
 
 ![Underlätta för distansarbetare med Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
+>[!Note]
+>Om du är ny på Microsoft 365, se [de här resurserna](https://www.microsoft.com/microsoft-365).
+>
+
 Titta på den här videon för att få en översikt över distributionsprocessen.
+<br>
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
 
-Den här lösningen har de här nyckelfunktionerna.
+För IT-proffs som hanterar plats- och molnbaserad infrastruktur för att möjliggöra arbetsproduktiviteten, erbjuder denna lösning följande viktiga funktioner:
 
 - Ansluten
 

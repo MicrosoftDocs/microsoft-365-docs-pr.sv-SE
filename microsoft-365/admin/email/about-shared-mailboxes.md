@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Delade postlådor används när flera personer behöver åtkomst till samma postlåda. Lär dig vad du behöver veta innan du skapar en delad postlåda.
-ms.openlocfilehash: 744c4fece24cf1fa5ee7259a0d722ff123ff2664
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: c8d29ac2dfe8670181064e61a7fba145ae00fed1
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926516"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058453"
 ---
 # <a name="about-shared-mailboxes"></a>Om delade postlådor
 
@@ -41,15 +41,15 @@ Innan du [skapar en delad postlåda](create-a-shared-mailbox.md)finns det några
 
 - **Användarbehörigheter:** Du måste ge användare behörighet (medlemskap) att använda den delade postlådan. Det är bara personer i organisationen som kan använda en delad postlåda.
 
-- **Externa användare:** Du kan inte ge personer utanför företaget (till exempel personer med ett Gmail-konto) åtkomst till den delade postlådan. Om du vill göra det kan du skapa en grupp för Outlook i stället. Mer information finns i [Skapa en Microsoft 365-grupp i administrationscentret.](../create-groups/create-groups.md)
+- **Externa användare:** Du kan inte ge personer utanför företaget (t.ex. har ett Gmail-konto) åtkomst till den delade postlådan. Om du vill göra det kan du skapa en grupp för Outlook i stället. Mer information finns i [Skapa en Microsoft 365-grupp i administrationscentret.](../create-groups/create-groups.md)
 
 - **Använd med Outlook:** Förutom att använda Outlook på webben från webbläsaren för att komma åt delade postlådor kan du också använda Outlook för iOS-appen eller Outlook för Android-appen. Mer information finns i Lägga [till en delad postlåda i Outlook Mobile.](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f) Ett annat alternativ är att skapa en grupp för den delade postlådan. Mer information finns i [Jämför grupper.](../create-groups/compare-groups.md)
 
-- **Kryptering:** Du kan inte kryptera e-post som skickas från en delad postlåda. Det beror på att en delad postlåda inte har ett eget säkerhetssammanhang (användarnamn/lösenord) och kan därför inte tilldelas en nyckel. Om fler än en person är medlem och de skickar/tar emot e-postmeddelanden som de krypterat med sina egna nycklar kan andra medlemmar kanske inte läsa e-postmeddelandet och andra kanske inte, beroende på vilken offentlig nyckel e-postmeddelandet har krypterats med.
+- **Kryptering:** Du kan inte kryptera e-post som skickas från en delad postlåda. Det beror på att en delad postlåda inte har ett eget säkerhetssammanhang (användarnamn/lösenord) och kan därför inte tilldelas en nyckel. Om fler än en person är medlem och de skickar/tar emot e-postmeddelanden som de har krypterat med sina egna nycklar, kan andra medlemmar kanske inte läsa e-postmeddelandet och andra kanske inte, beroende på vilken offentlig nyckel e-postmeddelandet har krypterats med.
 
 - **Postlådekonvertering:** Du kan konvertera användarpostlådor till delade postlådor. Se [Konvertera en användarpostlåda till en delad postlåda](convert-user-mailbox-to-shared-mailbox.md).
 
-- **Administratörsroller:** Användare med global administratör eller Exchange-administratörsroller kan skapa delade postlådor.
+- **Administratörsroller:** Användare med globala administratörs- eller Exchange-administratörsroller kan skapa delade postlådor.
 
 - **Prenumerationskrav:** Om du vill skapa en delad postlåda måste du prenumerera på ett Microsoft 365 för företag-abonnemang som innehåller e-post (Exchange Online-tjänsten). E-post ingår inte i prenumerationen på Microsoft 365-appar för företag. Microsoft 365 Business Standard innehåller e-post.
 
@@ -58,6 +58,10 @@ Innan du [skapar en delad postlåda](create-a-shared-mailbox.md)finns det några
 - **För många användare:** Om det finns för många användare som samtidigt ansluter till en delad postlåda kan det hända att de inte kan ansluta till den här postlådan. I det här fallet kan du minska antalet användare eller använda en annan arbetsbelastning, till exempel en Microsoft 365-grupp eller offentlig mapp.
 
 - **Meddelandeborttagning:** Tyvärr kan du inte hindra andra från att ta bort meddelanden i en delad postlåda. Det enda sättet runt det här är att skapa en Microsoft 365-grupp i stället för en delad postlåda. En grupp i Outlook är som en delad postlåda. En jämförelse av de två finns i [Jämför grupper.](../create-groups/compare-groups.md) Mer information om grupper finns i [Läs mer om grupper.](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+
+
+> [!NOTE]
+> För att komma åt en delad postlåda måste en användare ha en Exchange Online-licens, men den delade postlådan kräver ingen separat licens. Utan licens är delade postlådor begränsade till 50 GB. Om du vill öka storleksgränsen till 100 GB måste den delade postlådan tilldelas en licens för Exchange Online abonnemang 2 eller en Licens för Exchange Online abonnemang 1 med en tilläggslicens för Exchange Online Arkivering. På så sätt kan du också aktivera automatisk expandering av arkivering med obegränsad lagringskapacitet. Om du vill skapa bevarande av juridiska skäl för en delad postlåda måste den delade postlådan ha en licens för Exchange Online abonnemang 2 eller en Exchange Online abonnemang 1-licens med en tilläggslicens för Exchange Online Arkivering. Om du vill använda avancerade funktioner som Microsoft Defender för Office 365, Advanced eDiscovery eller automatiska bevarandeprinciper måste den delade postlådan vara licensierad för dessa funktioner.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

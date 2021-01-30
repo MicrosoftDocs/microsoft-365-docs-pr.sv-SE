@@ -17,21 +17,24 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Gör det möjligt för användarna att vara produktiva med Teams, Exchange, SharePoint och andra Microsoft 365-tjänster.
-ms.openlocfilehash: 57e862769533b8c076513874e7f6daafdbe836da
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: ce19085a358861238e9a7cd4d650246d08fd272d
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681414"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055503"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>Steg 5: Distribuera produktivitetsappar och tjänster för distansarbetare
 
 För att kunna vara produktiva måste personer kommunicera och samarbeta med varandra. De måste träffas, chatta med röst och text, skapa nytt innehåll och dela information och filer, utbyta e-post och hantera kalendrar och uppgifter. Microsoft 365 tillhandahåller molnbaserade tjänster för alla de här nyckelfunktionerna:
 
-- Om du vill att personer ska vara anslutna när de arbetar tillsammans använder du Microsoft Teams, som har ett gemensamt kommunikationsnav för möten, chattar och fillagring för organisationen, avdelningarna och för små team och personer. 
-- Om du vill utbyta e-post och hantera kalendrar, kontakter och uppgifter använder du Exchange Online och Outlook-klienten.
-- Använd SharePoint och OneDrive för att lagra och samarbeta på filer. Du kan använda dem med en webbläsare eller i Teams.
-- Microsoft 365-appar för att skapa nytt innehåll eller samarbeta i befintligt innehåll är versioner av Word, PowerPoint, Excel och Outlook som är installerade på din lokala dator och får löpande funktions-och säkerhetsuppdateringar.
+| IT-funktion | Microsoft 365-komponenter | Beskrivning |
+|:-------|:-----|:-------|
+| E-posttjänster | Exchange Online | Utbyta e-post och hantera kalendrar, kontakter och uppgifter med Outlook-klienten. |
+| Organisatorisk chatt, VOIP (Voice over IP) och teambaserat samarbete | Microsoft Teams | Håll personer uppkopplade medan de arbetar från ett gemensamt nav för kommunikation för möten, chattar och fillagring för organisationen, avdelningarna och för små grupper och individer. |
+| Intranätwebbplatser, dokumentsamarbete | SharePoint och OneDrive | Lagra och samarbeta om filer i en webbläsare eller inom Teams. |
+| Stationära och mobila enheter Office-applikationer | Microsoft 365-applikationer | Skapa nytt innehåll eller samarbeta med befintligt innehåll med versioner av Word, PowerPoint, Excel och Outlook som är installerade på den lokala dator och får pågående funktioner och säkerhetsuppdateringar. |
+||||
 
 ![Använda Teams, Outlook, SharePoint, OneDrive och Microsoft 365 Apps för bibehållen produktivitet](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
 
