@@ -1,5 +1,5 @@
 ---
-title: Köpa eller ta bort prenumerationslicenser
+title: Köpa eller ta bort licenser
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -11,48 +11,59 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- Adm_TOC
-- commerce
 ms.custom:
-- SaRA
 - okr_SMB
 - AdminSurgePortfolio
 - manage_licenses
+- commerce
 search.appverid:
 - MET150
-description: Lär dig hur du köper fler licenser eller minskar antalet licenser för Microsoft 365 för företag-prenumerationen.
-ms.date: 07/01/2020
-ms.openlocfilehash: df9570649e1ba5d674f1f152afa9d4dcaee8fc5e
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+description: Läs om hur du köper fler licenser eller minskar antalet licenser för din Microsoft 365 för företag-prenumeration.
+ms.date: ''
+ms.openlocfilehash: 385d5b2bb4bb224c9e3f0944ac4cb024beb9831b
+ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324252"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50071245"
 ---
-# <a name="buy-or-remove-subscription-licenses"></a>Köpa eller ta bort prenumerationslicenser
+# <a name="buy-or-remove-licenses"></a>Köpa eller ta bort licenser
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
-Du kan köpa fler licenser eller minska antalet licenser för dina abonnemang med hjälp av de här stegen.
+Du kan köpa fler licenser eller minska antalet licenser för dina prenumerationer med hjälp av följande steg.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-- Du måste vara global administratör eller fakturerings administratör för att kunna utföra åtgärderna i den här artikeln. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
-- Du kan [lägga till användare och tilldela licenser samtidigt](../../admin/add-users/add-users.md).
+- Du måste vara global administratör eller faktureringsadministratör för att kunna utföra de uppgifter som beskrivs i den här artikeln. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
+- Du [kan lägga till användare och tilldela licenser samtidigt.](../../admin/add-users/add-users.md)
+- Om du har köpt ditt Microsoft 365 för företag- eller Office 365 Enterprise-abonnemang genom en tredjepartspartner måste du köpa ytterligare licenser via den partnern.
 
-## <a name="buy-or-remove-licenses-for-your-business-subscription"></a>Köpa eller ta bort licenser för ditt företags abonnemang
+## <a name="watch-buy-new-licenses"></a>Titta: Köp nya licenser
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE]
+
+Om de personer som du köper licenser för inte är aktiva användare i organisationen ännu är det nästa sak att lägga till användare och [tilldela licenser samtidigt.](../../admin/add-users/add-users.md)
+
+## <a name="watch-remove-existing-licenses"></a>Titta: Ta bort befintliga licenser
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4L53r]
+
+Om du har tagit bort licenser från en prenumeration är nästa sak att ta [bort användare från organisationen.](../../admin/add-users/delete-a-user.md)
+
+## <a name="buy-or-remove-licenses-for-your-business-subscription"></a>Köpa eller ta bort licenser för din företagsprenumeration
 
 ::: moniker range="o365-worldwide"
 
-1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
-2. Leta reda på den prenumeration som du vill köpa eller ta bort licenser för på fliken **produkter** . Välj **fler åtgärder** (tre punkter) och välj sedan **köp licenser**. [Vad gör jag om jag inte kan se länken Lägg till/ta bort licenser?](#what-if-i-dont-see-the-addremove-licenses-link)
-3. Om du vill minska antalet licenser väljer du **ta bort licenser**högst upp i fönstret **köp licenser** .
-4. För att köpa eller ta bort licenser, under **nytt antal** i rutan **Totalt antal licenser** , anger du det totala antalet licenser som du vill använda för abonnemanget. Om du till exempel har 100 licenser och vill lägga till ytterligare fem skriver du 105. Om du vill ta bort fem av dem skriver du 95.
+1. Gå till sidan Fakturering för dina produkter  i administrationscentret för Microsoft 365. \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a>
+2. Leta rätt **på** den prenumeration som du vill köpa eller ta bort licenser för på fliken Produkter. Välj **Fler åtgärder** (tre punkter) och välj sedan Köp **licenser.** [Vad händer om jag inte ser knapparna Köp licenser eller Ta bort licenser?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
+3. Om du vill minska antalet licenser väljer du ta bort licenser längst upp **i** fönstret Köp **licenser.**
+4. Om du vill köpa eller ta  bort **licenser anger** du det totala antalet licenser som du vill använda för prenumerationen under Nytt antal i rutan Totalt antal licenser. Om du till exempel har 100 licenser och vill lägga till ytterligare 5 skriver du 105. Om du vill ta bort fem av dem skriver du 95.
 5. Välj **Spara**.
 
 ::: moniker-end
@@ -60,62 +71,52 @@ Du kan köpa fler licenser eller minska antalet licenser för dina abonnemang me
 ::: moniker range="o365-germany"
 
 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a> i administrationscentret.
-2. På sidan **prenumerationer** väljer du den prenumeration där du vill köpa eller ta bort licenser och väljer sedan **Lägg till/ta bort licenser**. [Vad gör jag om jag inte kan se länken Lägg till/ta bort licenser?](#what-if-i-dont-see-the-addremove-licenses-link)
-3. I rutan **Totalt antal licenser** anger du det totala antalet licenser som du vill använda för den här prenumerationen och väljer sedan **Skicka** \> **nära**. Om du till exempel har 100 licenser och vill lägga till ytterligare fem skriver du 105. Om du vill ta bort fem licenser skriver du 95.
+2. Välj den **prenumeration** som du vill köpa eller ta bort licenser för på sidan Prenumerationer och välj sedan Lägg **till/ta bort licenser.** [Vad händer om jag inte ser knapparna Köp licenser eller Ta bort licenser?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
+3. I rutan **Totalt antal** licenser anger du det totala antalet licenser som du vill använda för prenumerationen och väljer sedan **Skicka** \> **stängning.** Om du till exempel har 100 licenser och vill lägga till ytterligare 5 skriver du 105. Om du vill ta bort fem licenser anger du 95.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a> i administrationscentret.
-2. På sidan **prenumerationer** väljer du den prenumeration där du vill köpa eller ta bort licenser och väljer sedan **Lägg till/ta bort licenser**. [Vad gör jag om jag inte kan se länken Lägg till/ta bort licenser?](#what-if-i-dont-see-the-addremove-licenses-link)
-3. I rutan **Totalt antal licenser** anger du det totala antalet licenser som du vill använda för den här prenumerationen och väljer sedan **Skicka** \> **nära**. Om du till exempel har 100 licenser och behöver lägga till ytterligare 5 skriver du 105. Om du vill ta bort fem av dem skriver du 95.
+2. Välj den **prenumeration** som du vill köpa eller ta bort licenser för på sidan Prenumerationer och välj sedan Lägg **till/ta bort licenser.** [Vad händer om jag inte ser knapparna Köp licenser eller Ta bort licenser?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
+3. I rutan **Totalt antal** licenser anger du det totala antalet licenser som du vill använda för prenumerationen och väljer sedan **Skicka** \> **stängning.** Om du till exempel har 100 licenser och behöver lägga till ytterligare 5 skriver du 105. Om du vill ta bort 5 av dem skriver du 95.
 
 ::: moniker-end
 
 > [!NOTE]
-> Du kan inte minska antalet licenser för din prenumeration om alla licenser är tilldelade till användare. Om du vill minska antalet licenser måste du först ta bort [en eller flera licenser från användarna](../../admin/manage/remove-licenses-from-users.md)och sedan avlägsna licenser från prenumerationen.
+> Du kan inte minska antalet licenser för prenumerationen om alla licenser är tilldelade till användare. För att minska antalet licenser tar du [först bort en eller flera licenser från användarna](../../admin/manage/remove-licenses-from-users.md)och tar sedan bort licenserna från prenumerationen.
 
-## <a name="what-if-i-dont-see-the-addremove-licenses-link"></a>Vad gör jag om jag inte kan se länken Lägg till/ta bort licenser?
+## <a name="what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons"></a>Vad händer om jag inte ser knapparna Köp licenser eller Ta bort licenser?
 
-I den här tabellen beskrivs varför länken **Lägg till/ta bort licenser** kanske inte är tillgänglig och vad du kan göra åt det.
+I den här tabellen beskrivs orsakerna till varför **knapparna Köp licenser** eller **Ta** bort licenser inte är tillgängliga och möjliga lösningar.
 
-|Precision  |Beskrivning  |Lösning  |
+|Orsak  |Beskrivning  |Lösning  |
 |---------|---------|---------|
-|En kredit kontroll pågår. |Om en kredit kontroll pågår visas meddelandet "väntande kredit kontroll". Du kan inte köpa licenser förrän kredit kontrollen är klar.  | Kom tillbaka senare för att se om kredit kontrollen är klar. Kreditkontroller tar vanligtvis upp till två arbetsdagar.<br/>När kredit kontrollen är klar ska du se länken **Lägg till/ta bort licenser** . |
-|Du aktiverade prenumerationen med en produkt nyckeln.| Om prenumerationen har köpts in och Aktiver ATS med en 25-siffrig produkt nyckeln visas texten "förbetalt".  |Se [lägga till licenser för en prenumeration som betalats med en produkt nyckeln](add-licenses-using-product-key.md). |
-|Du köpte ditt abonnemang via en partner. | Om prenumerationen har köpts via en partner ser du länken Volume Licensing Service Center (VLSC). | Se [lägga till licenser i en prenumeration som köpts via Volume Licensing Service Center](add-licenses-bought-through-vlsc.md). |
-|Du köpte ditt abonnemang via en åter försäljare.|| Om prenumerationen har köpts via en KRYPTOGRAFIPROVIDER-partner kontaktar du din CSP-partner och köper fler licenser.        |
-|Du har en prov prenumeration. |En utvärderings version av Microsoft 365 visar texten "test". | Köp din utvärderings prenumeration och sedan kan du lägga till fler licenser. Se [köpa ett abonnemang till Microsoft 365 för företag från din gratis prov period](../buy-a-subscription-from-your-free-trial.md).|
+|En kreditkontroll väntar. |Om det finns en kreditkontroll som väntar kan du inte köpa eller ta bort licenser förrän kreditkontrollen är klar.  | Kom tillbaka senare för att se om kreditkontrollen är klar. Kreditkontroller tar vanligtvis upp till två arbetsdagar.<br/>När kreditkontrollen är klar bör du se knapparna Köp **licenser** och **Ta bort** licenser. |
+|Du har aktiverat prenumerationen med en produktnyckel.| Om prenumerationen har köpts och aktiverats med en 25 tecken stor produktnyckel  visas ordet "Förbetald" i kolumnen Förköpskanal på **sidan Dina** produkter.  |Se [Lägga till licenser i en prenumeration som betalats med en produktnyckel.](add-licenses-using-product-key.md) |
+|Du har köpt prenumerationen via en återförsäljare.| Du ser ordet "Återförsäljare" i kolumnen **Inköpskanal** på **sidan Dina** produkter. | Om prenumerationen har köpts via en leverantör av molnlösningar (CSP) kontaktar du din partner för molnlösningar för att köpa fler licenser.        |
+|Du har en utvärderingsprenumeration. | Om du vill visa utvärderingsversionerna väljer du filterknappen och sedan **Utvärderingsversion.** | Först köper du utvärderingsprenumerationen och sedan kan du köpa fler licenser.|
 
-## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>Vad du behöver veta om att köpa licenser för ditt företags abonnemang
+## <a name="when-will-the-new-licenses-be-available-to-assign"></a>När blir de nya licenserna tillgängliga för tilldelning?
 
-### <a name="license-availability"></a>Licens tillgänglighet
+Den betalningsmetod som är kopplad till din prenumeration eller faktureringsprofil debiteras så snart du köper fler licenser för en prenumeration. Licenserna är direkt tillgängliga att tilldela till användare.
 
-- **Om du har en fakturerings profil**: kredit kortet som är kopplat till din fakturerings profil så fort du köper fler licenser för en prenumeration. Dessa licenser är omedelbart tillgängliga för dig. [Vad är en fakturerings profil?](../billing-and-payments/manage-billing-profiles.md)
-- **Om du inte har en betalnings profil**: om du betalar för din prenumeration med kredit-eller betalkort, eller bank konto, är alla nya licenser som du köper omedelbart tillgängliga när du har fått en beställnings bekräftelse. Om du betalar med faktura kan du behöva vänta på en kreditkontroll innan de nya licenserna är tillgängliga för användning.
-  > [!NOTE]
-  > Betalning med bankkonto är inte tillgängligt i vissa länder eller regioner.
-- **Om du har betalat för ditt abonnemang med en produkt nyckeln**kan du lägga till fler licenser genom att lägga till ett kredit-eller betalkort, eller bank konto för att täcka avgiften för de nya licenserna. När du har köpt de nya licenserna lägger vi till en andra prenumeration med antalet nya licenser som du just har lagt till. Om du till exempel har ett förbetalt abonnemang med fem licenser och sedan köpt tio fler licenser visas två abonnemang: en med fem förbetalda licenser och en med de tio nya licenserna.
+Om du har förbetalt prenumerationen med en produktnyckel kan du lägga till fler licenser med hjälp av en annan produktnyckel, eller genom att lägga till ett kreditkort eller bankkort eller bankkonto för att täcka de nya licenserna ytterligare kostnader. Om prenumerationen är förbetald kan du inte ta bort licenser.
 
-### <a name="changing-your-payment-method"></a>Ändra betalnings metod
+## <a name="how-does-buying-or-removing-licenses-affect-my-billing-statements"></a>Hur påverkas faktureringsutdrag om jag köper eller tar bort licenser?
 
-- **Om du har en fakturerings profil**: kredit kortet som är kopplat till din fakturerings profil så fort du köper fler licenser för en prenumeration. [Vad är en fakturerings profil?](../billing-and-payments/manage-billing-profiles.md)
-- **Om du inte har en fakturerings profil:** Om du betalar med kredit kort, betalkort eller bank konto kommer avgiften för att köpa nya licenser att visas på två dagar.
-
-### <a name="billing-statements"></a>Fakturerings utdrag
-
-- Licenser som lagts till i mitten av din fakturerings period visas på din nästa faktura. Om du betalar årligen får du en månad för dessa ändringar.
-- På ditt nästa fakturerings utdrag dras den föregående avgiften för det ursprungliga antalet licenser. Vi lägger till en proportionell avgift för tids perioden med det ursprungliga antalet licenser och lägger till en avgift för det nya antalet licenser. Det finns också en avgift för det aktuella antalet licenser för resten av din fakturerings period.
+- Licenser som läggs till mitt i din faktureringsperiod visas på nästa faktura. Om du betalar årsvis faktureras du inom en månad för dessa ändringar.
+- På nästa faktureringsutdrag dras den föregående avgiften för det ursprungliga antalet licenser av. Vi lägger till en pronumererad avgift för tidsperioden med det ursprungliga antalet licenser och lägger till en avgift för det nya antalet licenser. Det finns också en avgift för det aktuella antalet licenser för resten av faktureringsperioden.
 
 ## <a name="next-steps"></a>Nästa steg
 
-Om du har köpt fler licenser för ditt abonnemang måste du [tilldela dessa licenser till användarna i organisationen](../../admin/manage/assign-licenses-to-users.md).
+Om du har köpt fler licenser för prenumerationen ska du därefter tilldela [de licenserna till användare i organisationen.](../../admin/manage/assign-licenses-to-users.md)
 
-Om du har minskat antalet licenser för ditt abonnemang eftersom någon har lämnat organisationen kanske du vill ta bort användarens konto. Mer information finns i [ta bort en tidigare anställd](../../admin/add-users/remove-former-employee.md).
+Om du har minskat antalet licenser för din prenumeration eftersom någon har lämnat organisationen kan du ta bort användarens konto. Mer information finns i Ta [bort en tidigare anställd.](../../admin/add-users/remove-former-employee.md)
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Tilldela licenser till användare](../../admin/manage/assign-licenses-to-users.md) (artikel) \
+[Tilldela licenser till användare](../../admin/manage/assign-licenses-to-users.md) (artikel)\
 [Allmänt om prenumerationer och licenser](subscriptions-and-licenses.md) (artikel)\
-[Prova eller Köp en Microsoft 365-prenumeration](../try-or-buy-microsoft-365.md) (artikel)
+[Prova eller köp en Microsoft 365-prenumeration](../try-or-buy-microsoft-365.md) (artikel)
