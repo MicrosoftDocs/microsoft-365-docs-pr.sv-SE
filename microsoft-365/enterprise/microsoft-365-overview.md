@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/15/2019
+ms.date: 02/01/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Ger en introduktion till komponenterna, planer och distributionssökvägar för Microsoft 365 för företag.
-ms.openlocfilehash: 0916fa97daec166a7bae8b19e3c9efbd693f4874
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 324e5166dd722f9fcd682db7e536a4b864365025
+ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846970"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50068979"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Översikt över Microsoft 365 för företag
 
@@ -85,7 +85,7 @@ Med den här affischen på två sidor kan du snabbt inventera din befintliga inf
 
 [Windows 7](https://aka.ms/win7upgrade)upphörde med sin support den **14 januari 2020**.
 
-Dessa produkter nådde slutet av stöd på **13 oktober 2020** :
+Dessa produkter nådde slutet av stöd på **13 oktober 2020**:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)
@@ -131,6 +131,24 @@ För ett exempel på hur en fiktiv men representativ multinationella organisatio
 - [Microsoft 365 regeringen](https://www.microsoft.com/microsoft-365/government)
 
   Ge anställda inom den offentliga sektorn i USA att arbeta tillsammans på ett säkert sätt.
+
+## <a name="best-together-with-surface-and-the-edge-browser"></a>Bäst tillsammans med Surface och webbläsaren Microsoft Edge
+
+Optimera användarnas integrerade och säkra produktivitet med den bästa kombinationen av Microsoft 365 för företag, Microsoft Surface-enheter och webbläsaren Microsoft Edge. Den här integreringen mellan produkter innehåller:
+
+- En gemensam infrastruktur för identitets- och inloggningssäkerhet.
+- Integrerade lokala och molnbaserade appar för sökning, samarbete, produktivitet och efterlevnad.
+- Omfattande och integrerad säkerhet för maskinvara, webbläsare, lokala program och molnprogram.
+- En gemensam infrastruktur för IT-hantering av installationer och uppdateringar.
+
+Här är ett exempel för en företagsorganisation.
+
+![En företagsorganisation med Microsoft 365, Surface-enheter och webbläsaren Microsoft Edge](../media/microsoft-365-overview/best-together-with-surface-and-edge.png)
+
+För mer information och konfigurationsexempel för små och medelstora företag och utbildningsinstitutioner kan du ladda ned [Bäst tillsammans-affischen](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf).
+
+[![Bild för Bästa tillsammans med Surface och webbläsaren Microsoft Edge-affisch](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
+
 
 ## <a name="microsoft-365-training"></a>Utbildning för Microsoft 365
 
