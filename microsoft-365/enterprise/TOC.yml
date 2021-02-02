@@ -478,16 +478,20 @@
   href: 'https://docs.microsoft.com/windows/deployment/'
 - name: Microsoft 365-applikationer för företag
   href: 'https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps'
+- name: Surface-enheter
+  href: 'https://docs.microsoft.com/surface/deploy'
+- name: Enhetshantering
+  items:
+    - name: Översikt
+      href: device-management-roadmap-microsoft-365.md
+- name: Microsoft Edge
+  href: 'https://docs.microsoft.com/deployedge/deploy-edge-plan-deployment'
 - name: Distribution och uppdatering av kanalkonfigurationer
   items:
     - name: Översikt
       href: deploy-update-channels-examples.md
     - name: Bred distribution av de senaste utgåvorna
       href: deploy-update-channels-examples-rapid-deploy.md
-- name: Enhetshantering
-  items:
-    - name: Översikt
-      href: device-management-roadmap-microsoft-365.md
 - name: Hantera Microsoft 365 med PowerShell
   href: manage-microsoft-365-with-microsoft-365-powershell.md
   items:
