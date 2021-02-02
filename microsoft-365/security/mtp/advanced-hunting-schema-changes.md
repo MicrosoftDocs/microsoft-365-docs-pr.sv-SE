@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 483fedd1fb152e3df5311c981b305e621ec2aec3
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3f03543b03dca5fe426700ffff4f5c6edb8fa3c7
+ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932208"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50066875"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Avancerat schema för sök – namnändringar
 
@@ -47,10 +47,32 @@ Namnändringar tillämpas automatiskt på frågor som sparas i säkerhetscentret
 
 | Tabellnamn | Ursprungligt kolumnnamn | Nytt kolumnnamn | Orsak till ändring
 |--|--|--|--|
-| [EmailEvents](advanced-hunting-emailevents-table.md) | FinalEmailAction | EmailAction | Feedback från kunder |
-| [EmailEvents](advanced-hunting-emailevents-table.md) | FinalEmailActionPolicy | EmailActionPolicy | Feedback från kunder |
-| [EmailEvents](advanced-hunting-emailevents-table.md) | FinalEmailActionPolicyGuid | EmailActionPolicyGuid | Feedback från kunder |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | `FinalEmailAction` | `EmailAction` | Feedback från kunder |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | `FinalEmailActionPolicy` | `EmailActionPolicy` | Feedback från kunder |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | `FinalEmailActionPolicyGuid` | `EmailActionPolicyGuid` | Feedback från kunder |
 
+## <a name="january-2021"></a>Januari 2021
+
+| Kolumnnamn | Det ursprungliga värdenamnet | Nytt värdenamn | Orsak till ändring
+|--|--|--|--|
+| `DetectionSource` | MCAS |    Microsoft Cloud App Security | Rebranding |
+| `DetectionSource` | WindowsDefenderAtp|   EDR| Rebranding |
+| `DetectionSource` | WindowsDefenderAv | Antivirus | Rebranding |
+| `DetectionSource` | WindowsDefender SmartScreen |  SmartScreen | Rebranding |
+| `DetectionSource` | CustomerTI |  Anpassat TI | Rebranding |
+| `DetectionSource` | OfficeATP | Microsoft Defender för Office 365 | Rebranding |
+| `DetectionSource` | MTP   | Microsoft 365 Defender | Rebranding |
+| `DetectionSource` | AzureATP |    Microsoft Defender for Identity | Rebranding |
+| `DetectionSource` | CustomDetection   | Anpassad identifiering | Rebranding |
+| `DetectionSource` | AutomatedInvestigation |Automatiserad undersökning | Rebranding |
+| `DetectionSource` | ThreatExperts | Microsoft Threat Experts | Rebranding |
+| `DetectionSource` | TI från tredje part | Tredje parts sensor | Rebranding |
+| `ServiceSource` | Microsoft Defender Avancerat skydd| Microsoft Defender för Endpoint | Rebranding |
+|`ServiceSource` |Microsoft Hotskydd   | Microsoft 365 Defender | Rebranding |
+| `ServiceSource` | Skaffa Office 365 ATP  |Microsoft Defender för Office 365 | Rebranding |
+| `ServiceSource` |Azure ATP    |Microsoft Defender for Identity | Rebranding |
+
+`DetectionSource`är tillgängligt i [tabellen AlertInfo.](advanced-hunting-alertinfo-table.md) `ServiceSource`är tillgängligt i [tabellerna AlertEvidence](advanced-hunting-alertevidence-table.md) [och AlertInfo.](advanced-hunting-alertinfo-table.md) 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)

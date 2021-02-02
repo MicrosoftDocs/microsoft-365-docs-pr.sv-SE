@@ -152,8 +152,6 @@
           href: encryption-sensitivity-labels.md
         - name: Använda en känslighetsetikett för innehåll automatiskt
           href: apply-sensitivity-label-automatically.md
-        - name: Visa etikettanvändning med etikettanalys
-          href: label-analytics.md
         - name: 'Använda känslighetsetiketter med team, grupper och webbplatser'
           href: sensitivity-labels-teams-groups-sites.md
         - name: Aktivera känslighetsetiketter för Office-filer i SharePoint och OneDrive
