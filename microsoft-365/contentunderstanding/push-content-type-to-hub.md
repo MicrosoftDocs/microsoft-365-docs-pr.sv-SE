@@ -35,7 +35,7 @@ För att den här funktionen ska fungera måste innehållstyperna som publiceras
 Att skicka innehållstyper till en hubb
 
 1. Öppna **Innehållstjänster** i administrationscenter för SharePoint och välj sedan **Galleri med innehållstyper**.
-2. Välj den innehållstyp som du vill skicka till navet.
+2. Välj den innehållstyp som du vill skicka till hubben.
 3. Välj **Redigera** i kommandofältet.
 4. Välj **Välj navplatser**.
 5. Välj de navplatser du vill använda och välj sedan **OK**.
