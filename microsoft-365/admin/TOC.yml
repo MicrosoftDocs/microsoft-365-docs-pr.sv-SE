@@ -184,8 +184,6 @@
               href: email/resolve-issues-with-shared-mailboxes.md
         - name: Konfigurera prioriterad inkorg
           href: setup/configure-focused-inbox.md
-        - name: Om e-postsamarbete
-          href: email/email-collaboration.md
         - name: Lägga till en användare eller kontakt i en distributionslista
           href: email/add-user-or-contact-to-distribution-list.md
         - name: Hantera övrig e-post för organisationen

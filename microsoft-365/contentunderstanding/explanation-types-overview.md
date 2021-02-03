@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Mer information om olika typer av förklaringar i Microsoft SharePoint Syntex
-ms.openlocfilehash: 9a65c5de5321ee623a3d1a1e4260c0bcb2ad331e
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 2c2997fd165339cc43f7f007050f343794021a23
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975961"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080612"
 ---
 # <a name="introduction-to-explanation-types"></a>Introduktion till förklaringstyper
 
@@ -123,6 +123,31 @@ Det finns tre tokens i *(mobil)*:
 Konfigurera inställningen för närhet så att den har ett område med 0 till 3.
 
    ![Exempel på närhet](../media/content-understanding/proximity-example.png)</br>
+
+
+## <a name="configure-where-phrases-occur-in-the-document"></a>Konfigurera var fraser förekommer i dokumentet
+
+När du skapar en förklaring söks som standard hela dokumentet efter frasen du försöker extrahera. Du kan dock använda inställningen <b>Där fraserna förekommer</b> avancerade inställning för att hjälpa till att isolera en specifik plats i dokumentet som en fras förekommer på. Detta är användbart i situationer där liknande förekomster av en fras kan förekomma någon annanstans i dokumentet, och du vill kontrollera att rätt förekomst är markerad. Med hänvisning till vårt exempel på medicinsk remiss nämns alltid den **hänvisande läkaren** i första stycket i dokumentet. Med inställningen <b>Var dessa fraser förekommer</b> kan du i det här exemplet konfigurera förklaringen så att den bara söker efter den här etiketten i början av dokumentet eller någon annan plats där den kan förekomma.
+
+   ![Var dessa fraser förekommer inställning](../media/content-understanding/phrase-location.png)</br>
+
+Du kan välja följande alternativ för den här inställningen:
+
+- Var som helst i filen: Hela dokumentet söks efter frasen.
+- Början av filen: Dokumentet genomsöks från början till frasen plats.</br> 
+   ![Början på filen](../media/content-understanding/beginning-of-file.png)</br>
+I visningsprogrammet kan du manuellt justera urvalsrutan så att den inkluderar platsen där fasen inträffar. Den <b>slutpositionens</b> värde uppdateras för att visa antalet tokens som ditt valda område innehåller. Observera att du också kan uppdatera slutpositionsvärdet för att justera det valda området.</br>
+   ![Början på filens positionsruta](../media/content-understanding/beginning-box.png)</br>
+
+- Slut av filen: Dokumentet genomsöks från slutet till frasens plats.</br> 
+   ![Slutet av filen](../media/content-understanding/end-of-file.png)</br>
+I visningsprogrammet kan du manuellt justera urvalsrutan så att den inkluderar platsen där fasen inträffar. Värdet <b>startposition</b> uppdateras för att visa antalet tokens som ditt valda område innehåller. Observera att du också kan uppdatera startpositionens värde för att justera det markerade området.</br> 
+   ![Slutet på filens slutruta](../media/content-understanding/end-box.png)</br>
+- Anpassat intervall: Dokumentet genomsöks inom ett angivet intervall inom det för frasplatsen.</br> 
+   ![Anpassat intervall](../media/content-understanding/custom-file.png)</br>
+I visningsprogrammet kan du manuellt justera urvalsrutan så att den inkluderar platsen där fasen inträffar. För den här inställningen måste du välja en <b>start</b>- och en <b>slut</b>position. De här värdena representerar antalet tokens från början av dokumentet. Även om du kan ange dessa värden manuellt är det enklare att justera urvalsrutan i visningsprogrammet manuellt.</br> 
+   
+
 
 ## <a name="use-explanation-templates"></a>Använda förklaringsmallar
 
