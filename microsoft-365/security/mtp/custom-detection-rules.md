@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8c7e47e66f9e5543cc122c5b5154207cae836d2a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d58292f658446259bfab5b1b55c8b462d081421c
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932928"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080629"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Skapa och hantera regler för anpassade identifieringar
 
@@ -118,8 +118,8 @@ Med frågan i frågeredigeraren väljer du **Skapa identifieringsregel** och ang
 #### <a name="rule-frequency"></a>Regelfrekvens
 När du sparar eller redigerar en ny regel körs den och söker efter matchningar från de senaste 30 dagarnas data. Regeln körs sedan igen med fasta intervall och tillämpar en sökvaraktighet baserat på den frekvens du väljer:
 
-- **Körs en gång per dygn** och kontrollerar data från de senaste 30 dagarna
-- **En gång per dygn** körs var 12:e timme och data från de senaste 24 timmarna kontrolleras
+- **En gång per dygn körs** en gång per dygn och data från de senaste 30 dagarna kontrolleras
+- **Var 12:e** timme körs var 12:e timme och kontrollerar data från de senaste 24 timmarna
 - **Var 3:e** timme körs var tredje timme och kontrollerar data från de senaste 6 timmarna
 - **Varje timme** körs varje timme och du kontrollerar data från de senaste två timmarna
 
@@ -129,7 +129,7 @@ När du sparar eller redigerar en ny regel körs den och söker efter matchninga
 Välj hur ofta du vill övervaka identifieringar. Tänk på organisationens kapacitet att svara på aviseringarna.
 
 ### <a name="3-choose-the-impacted-entities"></a>3. Välj de enheter som påverkas.
-Identifiera kolumnerna i frågeresultatet där du förväntar dig att hitta den primära påverkade eller påverkade enheten. En fråga kan till exempel returnera avsändarens ( `SenderFromAddress` `SenderMailFromAddress` eller) och mottagarens ( `RecipientEmailAddress` ) adresser. Genom att identifiera vilka av dessa kolumner som representerar den viktigaste påverkade enheten bidrar du till att tjänsten sammanställer relevanta aviseringar, korrelerar incidenter och målsvarsåtgärder.
+Identifiera kolumnerna i frågeresultatet där du förväntar dig att hitta den primära påverkade eller påverkade enheten. En fråga kan till exempel returnera avsändarens ( `SenderFromAddress` `SenderMailFromAddress` eller) och mottagarens ( `RecipientEmailAddress` ) adresser. Genom att identifiera vilka av dessa kolumner som representerar den viktigaste påverkade entiteten bidrar du till att tjänsten sammanställer relevanta aviseringar, korrelerar incidenter och målsvarsåtgärder.
 
 Du kan bara välja en kolumn för varje entitetstyp (postlåda, användare eller enhet). Kolumner som inte returneras av frågan kan inte väljas.
 
@@ -137,18 +137,18 @@ Du kan bara välja en kolumn för varje entitetstyp (postlåda, användare eller
 Den anpassade identifieringsregeln kan automatiskt utföra åtgärder på enheter, filer eller användare som returneras av frågan.
 
 #### <a name="actions-on-devices"></a>Åtgärder på enheter
-De här åtgärderna tillämpas på enheter `DeviceId` i kolumnen med frågeresultat:
+Dessa åtgärder tillämpas på enheter i `DeviceId` kolumnen med frågeresultat:
 - **Identifiera enhet**– använder Microsoft Defender för Endpoint för att tillämpa fullständig nätverksisolering och hindra enheten från att ansluta till ett program eller en tjänst. [Läs mer om Microsoft Defender för slutpunktsisolering](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
-- Samla in **undersökningspaket**– samlar in enhetsinformation i en ZIP-fil. [Läs mer om undersökningspaket för Microsoft Defender för slutpunkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
+- Samla in **undersökningspaket**– samlar in enhetsinformation i en ZIP-fil. [Läs mer om paketet Microsoft Defender för slutpunktsundersökning](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
 - **Kör en antivirussökning**– utför en fullständig genomsökning av Windows Defender Antivirus på enheten
 - **Initiera undersökning**– initierar [en automatiserad](mtp-autoir.md) undersökning på enheten
-- **Begränsa programkörning –** anger begränsningar för enheten så att endast filer som har signerats med ett microsoft-utfärdat certifikat kan köras. [Läs mer om appbegränsningar med Microsoft Defender för Slutpunkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
+- **Begränsa programkörning –** anger begränsningar för enheten så att endast filer som har signerats med ett certifikat utfärdat av Microsoft kan köras. [Läs mer om appbegränsningar med Microsoft Defender för Slutpunkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
 
 #### <a name="actions-on-files"></a>Åtgärder för filer
 Med det här alternativet kan du välja att **tillämpa** filåtgärden karantän för filer i `SHA1` , eller kolumnen i `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` frågeresultaten. Den här åtgärden tar bort filen från dess aktuella plats och placerar en kopia i karantän.
 
 #### <a name="actions-on-users"></a>Åtgärder för användare
-Med det här **alternativet vidtas åtgärden** Markera användare som komprometterad för användare i eller kolumnen i `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` frågeresultaten. Den här åtgärden anger att användarnas risknivå ska vara "hög" i Azure Active Directory, vilket utlöser motsvarande [principer för identitetsskydd.](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+Med det här **alternativet vidtas åtgärden Markera** användare som komprometterad för användare i eller kolumnen i `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` frågeresultaten. Den här åtgärden anger att användarnas risknivå ska vara "hög" i Azure Active Directory, vilket utlöser motsvarande [principer för identitetsskydd.](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
 
 > [!NOTE]
 > Åtgärden tillåt eller blockering för anpassade identifieringsregler stöds för närvarande inte i Microsoft 365 Defender.
@@ -171,7 +171,7 @@ Du kan visa listan över befintliga anpassade identifieringsregler, kontrollera 
 
 ### <a name="view-existing-rules"></a>Visa befintliga regler
 
-Om du vill visa alla befintliga anpassade identifieringsregler går du till  >  **Söka efter anpassade identifieringar.** På sidan visas alla regler med följande körinformation:
+Om du vill visa alla befintliga anpassade identifieringsregler går du till  >  **Anpassad identifiering för söka.** På sidan visas alla regler med följande körningsinformation:
 
 - **Senaste körningen**– när en regel senast körts för att söka efter frågematchningar och generera aviseringar
 - **Status för senaste körningen**– om en regel kördes som den ska
@@ -180,7 +180,7 @@ Om du vill visa alla befintliga anpassade identifieringsregler går du till  >  
 
 ### <a name="view-rule-details-modify-rule-and-run-rule"></a>Visa regeldetaljer, ändra regel och kör regel
 
-Om du vill visa omfattande information om en anpassad identifieringsregel går du till Anpassade  >  **identifieringar för** söka och väljer sedan namnet på regeln. Du kan sedan visa allmän information om regeln, inklusive information om dess körningsstatus och omfattning. På sidan finns också en lista med utlösande aviseringar och åtgärder.
+Om du vill visa omfattande information om en anpassad identifieringsregel går du till Anpassade identifieringar för söka  >   och väljer sedan namnet på regeln. Du kan sedan visa allmän information om regeln, inklusive information om dess körningsstatus och omfattning. På sidan finns också en lista med utlösande aviseringar och åtgärder.
 
 ![Informationssida för anpassad identifieringsregel](../../media/custom-detection-details.png)<br>
 *Information om anpassad identifieringsregel*
@@ -207,7 +207,8 @@ På skärmen med regeldetaljer **(För** anpassade identifieringar av uppgifter 
 >[!TIP]
 >Om du snabbt vill visa information och vidta åtgärder för ett objekt i en tabell använder du markeringskolumnen [&#10003;] till vänster om tabellen.
 
-## <a name="related-topic"></a>Relaterat ämne
+## <a name="see-also"></a>Se även
 - [Översikt över anpassade identifieringar](custom-detections-overview.md)
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig det avancerade språket för sökfrågor](advanced-hunting-query-language.md)
+- [Migrera avancerade sökfrågor från Microsoft Defender för Slutpunkt](advanced-hunting-migrate-from-mdatp.md)

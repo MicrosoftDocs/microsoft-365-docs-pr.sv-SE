@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 08bdd1e22040166bb3becac32580a185c74f34a0
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 4e008488bdd733c9a7ce5b418fb838e0fe880d9d
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932319"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080751"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Migrera avancerade sökfrågor från Microsoft Defender för Slutpunkt
 
@@ -43,12 +43,12 @@ Flytta dina avancerade arbetsflöden för sökning från Microsoft Defender för
 - Microsoft Defender for Identity
 
 >[!NOTE]
->De flesta Microsoft Defender för slutpunktskunder [kan använda Microsoft 365 Defender utan ytterligare licenser.](prerequisites.md#licensing-requirements) Om du vill börja gå över dina avancerade arbetsflöden för sökning från Defender för Endpoint aktiverar du [Microsoft 365 Defender.](mtp-enable.md)
+>De flesta Microsoft Defender för slutpunktskunder [kan använda Microsoft 365 Defender utan ytterligare licenser.](prerequisites.md#licensing-requirements) Om du vill börja gå över dina avancerade arbetsflöden för sökning från Defender för Endpoint [aktiverar du Microsoft 365 Defender.](mtp-enable.md)
 
 Du kan gå över utan att påverka dina befintliga Defender för slutpunktsarbetsflöden. Sparade frågor förblir intakta, och anpassade identifieringsregler fortsätter att köras och genererar aviseringar. De visas däremot i Microsoft 365 Defender. 
 
 ## <a name="schema-tables-in-microsoft-365-defender-only"></a>Schematabeller endast i Microsoft 365 Defender
-I [det avancerade sökschemat i Microsoft 365 Defender finns](advanced-hunting-schema-tables.md) fler tabeller med data från olika säkerhetslösningar för Microsoft 365. Följande tabeller är endast tillgängliga i Microsoft 365 Defender:
+I [det avancerade sökschemat i Microsoft 365 Defender finns](advanced-hunting-schema-tables.md) fler tabeller som innehåller data från olika säkerhetslösningar från Microsoft 365. Följande tabeller är endast tillgängliga i Microsoft 365 Defender:
 
 | Tabellnamn | Beskrivning |
 |------------|-------------|
@@ -114,7 +114,66 @@ AlertInfo
 | where FileName == "powershell.exe"
 ```
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="migrate-custom-detection-rules"></a>Migrera anpassade identifieringsregler
+
+När Microsoft Defender för slutpunktsregler redigeras i Microsoft 365 Defender fortsätter de att fungera som tidigare om den resulterande frågan bara tittar på enhetstabeller. Till exempel kommer aviseringar som genereras av anpassade identifieringsregler som endast skickar frågor till enhetstabeller att fortsätta levereras till DIN SIEM och generera e-postaviseringar, beroende på hur du har konfigurerat dessa i Microsoft Defender för Endpoint. Befintliga regelregler i Defender för Endpoint fortsätter också att gälla.
+
+När du redigerar en Defender för slutpunktsregel så att den frågar om identitets- och e-posttabeller, som bara är tillgängliga i Microsoft 365 Defender, flyttas regeln automatiskt till Microsoft 365 Defender. 
+
+Varningar som genereras av den migrerade regeln:
+
+- Visas inte längre i Defender för slutpunktsportalen (Microsoft Defender Säkerhetscenter)
+- Sluta levereras till din SIEM eller generera e-postaviseringar. Du kan komma runt den här ändringen genom att konfigurera aviseringarna via Microsoft 365 Defender för att få aviseringarna. Du kan använda [Microsoft 365 Defender API](api-incident.md) för att få aviseringar om aviseringar om identifiering av kunder eller relaterade incidenter.
+- Kommer inte att döljas av Microsoft Defender för slutpunktsreglerna. För att förhindra att aviseringar skapas för vissa användare, enheter eller postlådor ändrar du motsvarande frågor så att de uttryckligen utesluts.
+
+Om du redigerar en regel på det här sättet uppmanas du att bekräfta att du inte har gjort de här ändringarna.
+
+Nya aviseringar som genereras av anpassade identifieringsregler i Microsoft 365 Defender-portalen visas på en aviseringssida med följande information:
+
+- Aviseringstitel och beskrivning 
+- Påverkade tillgångar
+- Åtgärder som vidtas som svar på aviseringen
+- Frågeresultat som utlöste aviseringen 
+- Information om den anpassade identifieringsregeln 
+ 
+![Bild på ny aviseringssida](../../media/newalertpage.png)
+
+## <a name="write-queries-without-devicealertevents"></a>Skriva frågor utan DeviceAlertEvents
+
+I Microsoft 365 Defender-schemat finns tabeller och tabeller för att passa den diverse uppsättningen information som medföljer `AlertInfo` `AlertEvidence` aviseringar från olika källor. 
+
+Om du vill ha samma aviseringsinformation som du använde för att komma från tabellen i Microsoft Defender för slutpunktsschemat filtrerar du tabellen och sammanfogar sedan varje unikt ID med tabellen, som ger detaljerad information om händelser och `DeviceAlertEvents` `AlertInfo` `ServiceSource` `AlertEvidence` enheter. 
+
+Se exempelfrågan nedan:
+
+```kusto
+AlertInfo
+| where Timestamp > ago(7d)
+| where ServiceSource == "Microsoft Defender for Endpoint"
+| join AlertEvidence on AlertId
+```
+
+Den här frågan ger många fler kolumner än `DeviceAlertEvents` i Microsoft Defender för Endpoint-schemat. Använd bara de kolumner du är intresserad av för att hålla resultaten `project` hanterbara. I exemplet nedan visas kolumner som du kan vara intresserad av när undersökningen upptäckte PowerShell-aktivitet:
+
+```kusto
+AlertInfo
+| where Timestamp > ago(7d)
+| where ServiceSource == "Microsoft Defender for Endpoint"
+    and AttackTechniques has "powershell"
+| join AlertEvidence on AlertId
+| project Timestamp, Title, AlertId, DeviceName, FileName, ProcessCommandLine 
+```
+
+Om du vill filtrera efter specifika enheter som ingår i aviseringarna kan du göra det genom att ange enhetstypen och värdet du vill `EntityType` filtrera efter. I följande exempel söker du efter en specifik IP-adress:
+
+```kusto
+AlertInfo
+| where Title == "Insert_your_alert_title"
+| join AlertEvidence on AlertId 
+| where EntityType == "Ip" and RemoteIP == "192.88.99.01" 
+```
+
+## <a name="see-also"></a>Se även
 - [Aktivera Microsoft 365 Defender](advanced-hunting-query-language.md)
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)

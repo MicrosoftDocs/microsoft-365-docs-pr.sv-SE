@@ -2,7 +2,7 @@
 title: Bästa poängsättning inom branschtester – Microsoft 365 Defender
 ms.reviewer: ''
 description: Visa de senaste resultaten och analyserna av Microsoft 365 Defender. Alla bra resultat uppnås konsekvent i oberoende tester (AV-TEST, AV-komparativ, SE-labb, MITRE ATT&CK). Visa de senaste resultaten och analyserna.
-keywords: Microsoft Defender Antivirus, Windows Defender Antivirus, av reviews, antivirus test, av testing, latest av scores, detection scores, security product testing, security industry tests, industry antivirus tests, best antivirus, av-test, av-comparatives, SE labs, MITRE ATT&CK, endpoint protection platform, DEFENDER, endpoint detection and response, EDR, Windows 10, Microsoft Defender Antivirus, WDAV, MDATP, Microsoft Threat Protection, security, malware, av, antivirus, scores, next generation protection, ranking, framgång
+keywords: Microsoft Defender Antivirus, Windows Defender Antivirus, av reviews, antivirus test, av testing, latest av scores, detection scores, security product testing, security industry tests, industry antivirus tests, best antivirus, av-test, av-comparatives, SE labs, MITRE ATT&CK, endpoint protection platform, WD, endpoint detection and response, EDR, Windows 10, Microsoft Defender Antivirus, WDAV, MDATP, Microsoft Threat Protection, security, malware, av, antivirus, scores, next generation protection, ranking,
 ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -15,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: cff6ec43c1eb90588107a58a2973fd3c5ad5c848
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 32eae12fb9d4bbe57e5e41695527c443976b241d
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929736"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084585"
 ---
-# <a name="top-scoring-in-industry-tests"></a>Bästa poängsättning inom branschtester
+# <a name="top-scoring-in-industry-tests"></a>Viktigaste poäng i branschtester
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -43,7 +43,7 @@ Det grundläggande i MITRE:s testmetoder är att skapa verkliga attacker för at
 
 - ATT&CK-baserad utvärdering av Microsoft 365 Defender – maj 2020: Inledande i verkliga [identifieringar](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
-    Microsoft 365 Defender tillhandahöll nästan 100 procent av täckningen över attackkedjefaserna. Det levererade inledande in- och utsyn till attackeraktiviteter. Synligheten minskar avsevärt det manuella arbetet för säkerhetscenter och leverantörslösningar som förlitar sig på specifika konfigurationsändringar. Microsoft 365 Defender hade också de minsta luckorna i synlighet, vilket gjorde att en försämrad attack skulle fungera oupptäckta.
+    Microsoft 365 Defender tillhandahåller nästan 100 procent av täckningen över attackkedja steg. Det levererade inledande in- och utsyn till attackeraktiviteter. Synligheten minskar avsevärt det manuella arbetet för säkerhetscenter och leverantörslösningar som förlitar sig på specifika konfigurationsändringar. Microsoft 365 Defender hade också de minsta luckorna i synlighet, vilket gjorde att en försämrad attack skulle fungera oupptäckta.
 
 ## <a name="next-generation-protection"></a>Nästa generations skydd
 
@@ -53,13 +53,13 @@ Microsoft Defender Antivirus är [nästa generations](https://www.youtube.com/wa
 
 ### <a name="av-test-protection-score-of-6060-in-the-latest-test"></a>AV-TEST: Skyddsresultat på 6,0/6,0 i det senaste testet
 
-Testerna av av-TEST-produktgranskning och -certifieringsrapport på tre kategorier: skydd, prestanda och användbarhet. Följande resultat gäller för kategorin Skydd som har två resultat: Real-World test och AV-TEST-referensuppsättningen (kallas "Vanlig skadlig kod").
+Testerna av av-TEST-produktgranskning och -certifieringsrapport visar tre kategorier: skydd, prestanda och användbarhet. Följande resultat gäller för kategorin Skydd som har två resultat: Real-World test och AV-TEST-referensuppsättningen (kallas "Vanlig skadlig kod").
 
-**Ladda ned den senaste transparensrapporten: [Granska AV-TEST-resultaten, January-February 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)**
+- November – december 2020 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2020/microsoft-defender-antivirus-4.18-205017/) <sup>**Latest**</sup>
 
-- September – oktober 2020 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2020/microsoft-defender-antivirus-4.18-204116/) <sup>**Latest**</sup>
+    Microsoft Defender Antivirus har uppnått det perfekta skyddsresultatet på 6.0/6.0, med 100 % i november och december. 11 382 exempel på skadlig programvara användes.
 
-    Microsoft Defender Antivirus uppnår ett perfekt skyddsresultat på 6.0/6.0, med 100 % i september och oktober. 12 650 exempel på skadlig programvara användes.
+- September – oktober 2020 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2020/microsoft-defender-antivirus-4.18-204116/)
 
 - Juli – augusti 2020 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2020/microsoft-defender-antivirus-4.18-203215/)
 
@@ -69,17 +69,15 @@ Testerna av av-TEST-produktgranskning och -certifieringsrapport på tre kategori
 
 - Januari – februari 2020 AV-TEST Business Användartest: Skyddsresultat [5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)  |  [Analys](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
 
-- November – december 2019 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2019/microsoft-windows-defender-antivirus-4.18-195015/)
-
-- September – oktober 2019 AV-TEST Business User test: [Protection score 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2019/microsoft-windows-defender-antivirus-4.18-194115/)
-
-### <a name="av-comparatives-protection-rating-of-997-in-the-latest-test"></a>AV-Komparativ: klassificeringen 99,7 % i det senaste testet
+### <a name="av-comparatives-protection-rating-of-998-in-the-latest-test"></a>AV-Komparativ: klassificeringen 99,8 % i det senaste testet
 
 Säkerhetstest för företag består av tre huvuddelar: Real-World Protection Test som efterliknar attacker mot skadlig programvara online, malware Protection Test där den skadlig programvara kommer in i systemet utanför internet (till exempel av USB) och prestandatestet som tittar på hur systemet påverkas.
 
-- Business Security Test 2020 (mars –juni): [Real-World Protection Rate 99,7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/) <sup>**Latest**</sup>
+- Business Security Test 2020 (augusti –november): [Real-World Protection Rate 99,8%](https://www.av-comparatives.org/tests/business-security-test-2020-august-november/) <sup>**Latest**</sup>
 
-    Microsoft Defender Antivirus har fått konsekvent höga betyg i Real-World protection rates under det senaste året, med 99,7 % i det senaste testet.
+    Microsoft Defender Antivirus har fått konsekvent höga betyg i Real-World protection rates under det senaste året, med 99,8 % i det senaste testet.
+
+- Business Security Test 2020 (mars –juni): [Real-World Protection Rate 99,7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/)
 
 - Säkerhetstest för företag 2019 (augusti–november): [Verkliga skyddshastighet 99,6 %](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
 
@@ -89,20 +87,15 @@ Säkerhetstest för företag består av tre huvuddelar: Real-World Protection Te
 
 SE-labb testar ett antal lösningar som används av produkter och tjänster för att identifiera och/eller skydda mot attacker. Den innehåller slutpunktsprogramvara, nätverksutrustning och molntjänster.
 
-**Ladda ned den senaste transparensrapporten: [Granska SE-labbtestresultat, January-March 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)**
+- Enterprise Endpoint Protection, oktober – december 2020: [AAA:s diplom](https://selabs.uk/reports/enterprise-endpoint-protection-2020-q4/) <sup>**Senaste**</sup>
 
-- Enterprise Endpoint Protection – juli – september 2020: [AAA:s diplom](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/) <sup>**Senaste**</sup>
+    Microsofts nästa generations skyddsprodukt hindrade alla offentliga och riktade attacker. Microsoft Defender Antivirus har uppnått så bra resultat med sin förmåga att blockera skadliga URL:er, hantera sårbarheter och korrekt klassificera legitima program och webbplatser.
 
-    Microsofts nästa generations skyddsprodukt stoppade alla riktade attacker men missade några offentliga hot.
+- Enterprise Endpoint Protection – juli – september 2020: [AAA-diplom](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
 
 - Enterprise Endpoint Protection April – Juni 2020: [AAA-diplom](https://selabs.uk/reports/epp-ent-20q2-security-testing/)
 
 - Enterprise Endpoint Protection januari – mars 2020: [AAA award](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup>  |  [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
-
-- Enterprise Endpoint Protection, oktober – december 2019: [AAA:s diplom](https://selabs.uk/download/enterprise/epp/2019/oct-dec-2019-enterprise.pdf) <sup>**pdf**</sup>
-
-- Enterprise Endpoint Protection – juli – september 2019: [AAA award](https://selabs.uk/download/enterprise/epp/2019/jul-sep-2019-enterprise.pdf) <sup>**pdf**</sup>  |  [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
-
 
 ## <a name="endpoint-detection--response"></a>Identifiering av slutpunkt & svar
 
@@ -120,10 +113,10 @@ MITRE testade möjligheten för produkter för att identifiera tekniker som ofta
 
 ## <a name="to-what-extent-are-tests-representative-of-protection-in-the-real-world"></a>I vilken utsträckning är tester representativa för skydd i verkligheten?
 
-Oberoende säkerhetsbranschen-tester strävar efter att utvärdera de bästa antivirus- och säkerhetsprodukterna på ett annat sätt. Men Microsoft ser en bredare och bredare uppsättning hot utöver vad som testats i utvärderingarna som beskrivs i den här artikeln. Under en genomsnittlig månad identifierar Microsofts säkerhetsprodukter över 100 miljoner nya hot. Även om en oberoende testare kan skaffa och testa 1 % av dessa hot, är det en miljon tester på 20 eller 30 produkter. Med andra ord gör det stora mängder skadlig programvara att det är svårt att utvärdera kvaliteten på skyddet mot verkliga hot.
+Oberoende säkerhetsbranschen-tester strävar efter att utvärdera de bästa antivirus- och säkerhetsprodukterna på ett icke-ligt sätt. Men Microsoft ser en bredare och bredare uppsättning hot utöver vad som testats i utvärderingarna som beskrivs i den här artikeln. Under en genomsnittlig månad identifierar Microsofts säkerhetsprodukter över 100 miljoner nya hot. Även om en oberoende testare kan skaffa och testa 1 % av dessa hot, är det en miljon tester på 20 eller 30 produkter. Med andra ord gör det stora mängder skadlig programvara att det är svårt att utvärdera kvaliteten på skyddet mot verkliga hot.
 
 Funktionerna i Microsoft Defender för [](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses) Endpoint ger ytterligare skyddslager som inte indelades i branschantivirusprograms tester, och som kan hantera några av de senaste och mest avancerade hoten. Genom att isolera AV från resten av Defender för Endpoint skapas en delvis bild av hur Microsofts säkerhetsstack fungerar i verkligheten. Till exempel kan minskning av attackytan och identifiering av & åtgärder förhindra att skadlig programvara kommer till enheter från början. Vi har visat att [Microsoft Defender för Endpoint-komponenter fångar upp exempel som](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA) Microsoft Defender Antivirus har missat i dessa branschtester. Den är mer representativ för hur effektivt Microsofts säkerhetspaket skyddar kunder i verkligheten.
 
-[Läs mer om Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) för slutpunkt och utvärdera det i ditt eget nätverk genom att registrera dig för en [90-dagars](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)utvärderingsversion av Microsoft Defender för Slutpunkt eller aktivera förhandsgranskningsfunktioner för befintliga [klientorganisationar.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/preview)
+[Läs mer om Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) för Slutpunkt och utvärdera det i ditt eget nätverk genom att registrera dig för en [90-dagars](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)utvärderingsversion eller aktivera förhandsversionsfunktioner för [befintliga klientorganisationar.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/preview)
 
 [Läs mer om Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) [eller börja använda tjänsten.](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable)

@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ae9617a55fd5efb40a3aba07202ebfb1494d4db6
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: de9fb28f09b88cf1730f3bb3539234f6a03ec2e3
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928814"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080719"
 ---
 # <a name="custom-detections-overview"></a>Översikt över anpassade identifieringar
 
@@ -38,9 +38,10 @@ Med anpassade identifieringar kan du proaktivt övervaka för och svara på olik
 Anpassade identifieringar fungerar med [avancerad](advanced-hunting-overview.md)sökning, som ger ett kraftfullt, flexibelt frågespråk som täcker en omfattande uppsättning händelse- och systeminformation från nätverket. Du kan ange att de ska köras med jämna mellanrum, generera aviseringar och vidta svarsåtgärder när det finns matchningar.
 
 Anpassade identifieringar ger:
-- Varningar för regelbaserade identifieringar byggda av avancerade sökningsfrågor
+- Varningar för regelbaserade identifieringar byggda av avancerade sökfrågor
 - Automatiska svarsåtgärder
 
-## <a name="related-topic"></a>Relaterat ämne
+## <a name="see-also"></a>Se även
 - [Skapa och hantera anpassade identifieringsregler](custom-detection-rules.md)
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
+- [Migrera avancerade sökfrågor från Microsoft Defender för Slutpunkt](advanced-hunting-migrate-from-mdatp.md)
