@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs mer om Microsoft 365-grupper.
-ms.openlocfilehash: b3bc0c30f4ac292da7af46678fc742854984db12
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 5d5c15c13d46738ac9de701b5a39f47274b9f1e5
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925356"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094739"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Översikt över Microsoft 365-grupper för administratörer
 
@@ -64,7 +64,7 @@ Som administratör kan du:
 
 Om du föredrar ett mer automatiserat sätt att hantera livscykeln för Microsoft 365-grupper kan du använda förfalloprinciper så att grupper upphör att gälla efter ett visst tidsintervall. Gruppens ägare får ett e-postmeddelande 30 dagar, 15 dagar och 1 dag innan gruppen upphör, så att de kan förnya gruppen om den fortfarande behövs. Mer information: [Förfalloprincip för Microsoft 365-grupper.](office-365-groups-expiration-policy.md)
 
-Du kan administrera grupper från administrationscentret för Microsoft 365 eller [med hjälp av PowerShell.](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershel)
+Du kan administrera grupper från administrationscentret för Microsoft 365 eller [med hjälp av PowerShell.](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
 
 Om du har många användare, till exempel i ett stort företag eller företag, kanske du har många användare som skapar grupper för olika ändamål. Vi rekommenderar att du granskar [plan för styrning i Microsoft 365-grupper](plan-for-groups-governance.md) för bästa praxis.
 
@@ -94,7 +94,7 @@ Du kan skapa känslighetsetiketter som användarna i organisationen kan ange nä
 - Åtkomst för externa användare
 - Ohanterad enhetsåtkomst
 
-Du kan till exempel skapa  en etikett med namnet Mycket konfidentiellt och ange att alla grupper som skapas med den här etiketten ska vara privata och inte tillåta externa användare. När användare i organisationen väljer den här etiketten när gruppen skapas sätts gruppen till privat och gruppmedlemmar kan inte lägga till externa användare i gruppen.
+Du kan till exempel skapa en etikett med namnet *Mycket* konfidentiellt och ange att alla grupper som skapas med den här etiketten ska vara privata och inte tillåta externa användare. När användare i organisationen väljer den här etiketten när gruppen skapas sätts gruppen till privat och gruppmedlemmar kan inte lägga till externa användare i gruppen.
 
 > [!IMPORTANT]
 > Om du använder klassificeringsetiketter är de för närvarande inte längre tillgängliga för användare som skapar grupper när känslighetsetiketter har aktiverats. 
@@ -106,7 +106,7 @@ Mer information om hur du skapar, hanterar och använder känslighetsetiketter f
 En Microsoft 365-prenumeration med Exchange Online och SharePoint Online har stöd för grupper. Detta inkluderar Business Essentials- och Business Premium-abonnemangen och Enterprise E1-, E3- och E5-abonnemangen. Gruppen använder licensiering för den person som skapar gruppen (kallas även "organisatör" för gruppen). Så länge organisatören har rätt licens för de funktioner som du vill att gruppen ska ha, kommer den licensen att förmedla till gruppen.
 
 > [!NOTE]
-> Mer information om tjänstfamiljer och abonnemang för Microsoft 365 finns i alternativen för [Microsoft 365-abonnemang.](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+> Mer information om tjänstfamiljer och abonnemang för Microsoft 365 finns i [alternativen för Microsoft 365-abonnemang.](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
 
 Om du har ett abonnemang med endast Exchange kan du ändå få funktioner för delad inkorg och delad kalender för grupper i Outlook, men du får inte dokumentbibliotek, Planner eller någon av de andra funktionerna.
 

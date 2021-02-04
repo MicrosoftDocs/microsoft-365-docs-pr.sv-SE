@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Delade postlådor används när flera personer behöver åtkomst till samma postlåda. Lär dig vad du behöver veta innan du skapar en delad postlåda.
-ms.openlocfilehash: c8d29ac2dfe8670181064e61a7fba145ae00fed1
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: f5d46af5abdd528ce3db817dbabce015ed5abade
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058453"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094727"
 ---
 # <a name="about-shared-mailboxes"></a>Om delade postlådor
 
@@ -61,7 +61,7 @@ Innan du [skapar en delad postlåda](create-a-shared-mailbox.md)finns det några
 
 
 > [!NOTE]
-> För att komma åt en delad postlåda måste en användare ha en Exchange Online-licens, men den delade postlådan kräver ingen separat licens. Utan licens är delade postlådor begränsade till 50 GB. Om du vill öka storleksgränsen till 100 GB måste den delade postlådan tilldelas en licens för Exchange Online abonnemang 2 eller en Licens för Exchange Online abonnemang 1 med en tilläggslicens för Exchange Online Arkivering. På så sätt kan du också aktivera automatisk expandering av arkivering med obegränsad lagringskapacitet. Om du vill skapa bevarande av juridiska skäl för en delad postlåda måste den delade postlådan ha en licens för Exchange Online abonnemang 2 eller en Exchange Online abonnemang 1-licens med en tilläggslicens för Exchange Online Arkivering. Om du vill använda avancerade funktioner som Microsoft Defender för Office 365, Advanced eDiscovery eller automatiska bevarandeprinciper måste den delade postlådan vara licensierad för dessa funktioner.
+> För att komma åt en delad postlåda måste en användare ha en Exchange Online-licens, men den delade postlådan kräver ingen separat licens. Alla delade postlådor har ett motsvarande användarkonto. Lade du märke till att du inte behövde ange något lösenord när du skapade den delade postlådan? Kontot har ett lösenord, men det genereras av systemet (okänt). Du bör inte använda kontot för att logga in på den delade postlådan. Utan licens är delade postlådor begränsade till 50 GB. Om du vill öka storleksgränsen till 100 GB måste den delade postlådan tilldelas en licens för Exchange Online abonnemang 2 eller en Licens för Exchange Online abonnemang 1 med en tilläggslicens för Exchange Online Arkivering. På så sätt kan du också aktivera automatisk expandering av arkivering med obegränsad lagringskapacitet. Om du vill skapa bevarande av juridiska skäl för en delad postlåda måste den delade postlådan ha en licens för Exchange Online abonnemang 2 eller en Exchange Online abonnemang 1-licens med en tilläggslicens för Exchange Online Arkivering. Om du vill använda avancerade funktioner som Microsoft Defender för Office 365, Advanced eDiscovery eller automatiska bevarandeprinciper måste den delade postlådan vara licensierad för dessa funktioner.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

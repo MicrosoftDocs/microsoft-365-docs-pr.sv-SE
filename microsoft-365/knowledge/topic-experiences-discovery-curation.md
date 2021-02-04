@@ -1,6 +1,6 @@
 ---
-title: 'Avsnitts identifiering och granskning (för hands version) '
-description: Översikt över hur ämnen identifieras.
+title: 'Ämnesupplevelser, ämnesidentifiering och läroplan (förhandsversion) '
+description: Översikt över hur ämnen upptäcks.
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -13,47 +13,63 @@ ms.collection:
 - m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 08860b32b6809f489a9c108dcfaed3f61fb2e306
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: b9f4d0e33cb7a74b921681709e3ef68780dd76c4
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029644"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094849"
 ---
-# <a name="topic-experiences-discovery-and-curation-preview"></a>Ämnen Upptäck och granska (för hands version)
+# <a name="topic-discovery-and-curation-preview"></a>Ämnesidentifiering och läroplan (förhandsversion)
 
 > [!Note] 
-> Innehållet i den här artikeln gäller för projekt cortex privat för hands version. [Läs mer om Project Cortex](https://aka.ms/projectcortex).
+> Den här artikelns innehåll är till för förhandsversionen av Project Och privat. [Läs mer om Project Cortex](https://aka.ms/projectcortex).
 
-Avsnitts upplevelser konverterar kunskaps information till kunskap i din Microsoft 365-miljö. Vi har allt Läs igenom dokument och webbplats sidor där vi inte känner till termer. Många gånger vi håller på att avbryta det vi gör för att göra en genom gång av mer information.
+Ämnesmiljöer omvandlar kunskapsinformation till kunskap i Microsoft 365-miljön. Vi har alla erfarenhet av att läsa igenom dokument och webbplatssidor där vi stöter på termer som vi inte är bekant med. Många gånger slutar vi göra det vi gör för att ägna tid åt att söka efter mer information.
 
-Vilka ämnes upplevelser använder Microsoft Graph och AI för att identifiera **ämnen** i din organisation.  Ett ämne är en fras eller en term som har en specifik betydelse för en organisation, där användare skulle vilja ha nytta av att visa en wiki-sida om den. AI söker efter personer och innehåll som är anslutna till ämnet, och om det upptäcks blir det ett förslag till ämne.
+I ämnesupplevelser används Microsoft Graph och AI för att **identifiera** ämnen i organisationen.  Ett ämne är en fras eller term som har en särskild betydelse för organisationen och som har relaterade resurser som kan hjälpa andra att förstå vad det är och hitta mer information om det. Det finns många olika typer av ämnen som är viktiga för din organisation. Till en början kan du identifiera följande typer av ämnen:
+- Project
+- Händelse
+- Organisation
+- Plats
+- Produkt
+- Kreativt arbete
+- Studiefält
 
-Informationen om det föreslagna ämnet för AI läggs till på en **ämnes sida**, som kan innehålla:
+AI identifierar personer och innehåll som är kopplat till ämnet och om tillräckligt mycket upptäcks blir det ett föreslaget ämne. Du identifierar följande egenskaper och visar dem på en **ämnessida:**
+- Alternativa namn och/eller förkortningar.
 - En kort beskrivning av ämnet.
-- Alternativa namn för ämnet.
-- Personer som kan veta mer om ämnet.
-- Webbplatser, filer och sidor som kan vara relaterade till ämnet.
+- Personer som kanske känner till ämnet.
+- Filer, sidor och webbplatser som är relaterade till ämnet.
 
-Avsnitts upplevelser när kontexten är lämplig, föreslår dessa ämnen att markeras på alla sidor i SharePoints moderna webbplatser i klient organisationen. När en användare är nyfiken på mer information om ett ämne kan de välja det markerade avsnittet för att visa ett **sammanfattnings** kort för ämne med en kort beskrivning. Och om de vill lära sig mer kan de välja en länk för **ämnes information** i sammanfattningen för att öppna sidan detaljerad avsnitt.
+Egenskaperna identifieras från filerna och sidorna som är en del av beviset för att identifiera ämnet. Alternativa namn och förkortningar kommer från dessa filer och sidor. Den korta beskrivningen kommer från dessa filer och sidor eller från Internet via Wikipedia. Källfilen, sidan eller Wikipedia-artikeln refereras till tillsammans med de föreslagna egenskaperna. Personer föreslås utifrån deras aktiva bidrag (t.ex. ändringar) i filer och sidor. En referens till beloppet för en viss person ger en ledtråd till varför personen har identifierats. Filer, sidor och webbplatser rangordnas utifrån om de är centrala för ämnet, oavsett om de kan ge en översikt eller introduktion till ämnet. 
 
-![Ämnes markeringar](../media/knowledge-management/saturn.png) </br>
+Alla ämnen som identifieras är inte användbara för organisationen eller om du har identifierat några eller rätt alternativa namn eller en beskrivning, lämpliga personer eller innehåll, så möjligheten att lägga till ämnen som inte identifierats, behålla föreslagna ämnen och ämnen är avgörande för att förbättra kvaliteten på ämnen som kan upptäckas i organisationen.
 
-Dessutom kan användarna Hitta ämnen via Microsoft Search.
+När kontexten är lämplig föreslår vi att dessa avsnitt markeras på alla moderna SharePoint-webbplatssidor i klientorganisationen. En sidförfattare kan också referera till avsnittet direkt på sidan för modern SharePoint-webbplats. När en användare är nyfiken på att få mer information om  ett ämne kan de välja det markerade avsnittet för att visa ett kort för ämnessammanfattning som ger en kort beskrivning. Och om de vill veta mer kan de välja en länk **för** ämnesinformation i sammanfattningen för att öppna den detaljerade ämnessidan.
 
+![Viktiga ämnen](../media/knowledge-management/saturn.png) </br>
 
-## <a name="topic-curation"></a>Ämnes underavsnitt
+Dessutom kan användare också hitta ämnen via Microsoft Search.
 
-Ämnen som får bidrag från människa kan bidra till bättre kvalitet på dina ämnen. Även om AI från början identifierar och föreslår ämnen, manuellt gjorda redigeringar till innehåll från deltagare, bekräftelse från användare för AI-genererat innehåll och feedback om användbarheten av ämnena är allt nödvändigt.
+## <a name="topic-curation-and-feedback"></a>Ämnes curation och feedback
 
-- AI-genererade ämnen ("föreslagna ämnen") kan granskas av **kunskaps cheferna** i din organisation. På sidan Hantera ämnen i ämnes Center kan de välja att bekräfta att de är giltiga eller avvisa dem för att förhindra att de visas.
+Ämnesupplevelser tar gärna del av en person som bidrar till att förbättra kvaliteten på dina ämnen. Medan AI först identifierar och föreslår ämnen är det viktigt att manuellt redigera innehåll från deltagare, manuellt lägga till ämnen, bekräfta från användare för AI-identifierade egenskaper och innehåll och att ge feedback på användbarheten för ämnen.
 
-- Du kan tilldela behörigheter för att *skapa och redigera ämnen* till alla dina licensierade användare så att de kan göra ändringar i befintliga ämnen eller skapa nya ämnen när de behövs. 
+- Ämnen kan granskas av **kunskapsansvariga** i organisationen. Kunskapshanteraren kan granska ämnen som de har behörighet att se. På sidan Hantera ämnen i Ämnescenter kan de välja att bekräfta att AI-genererade ämnen ("föreslagna ämnen") är giltiga, avvisa ämnen för att förhindra att innehållet visas som ett ämne, skapa ämnen som inte identifierats av AI eller identifiera ämnen som kan dra nytta av några redigeringar av ämnesexperter för att vara mer användbara eller korrekta. Mer information [finns i Hantera ämnen i Ämnescenter.](manage-topics.md)
 
-- Även användare som bara har Läs åtkomst till ämne (ämnes visnings program) ombeds att bekräfta att vissa ämnen är användbara. Deras feedback görs också för att bekräfta eller avvisa ett föreslaget ämne.
+- Du kan tilldela *behörigheten Skapa och* redigera ämnen till alla dina licensierade användare så att de kan göra ändringar i befintliga ämnen eller skapa nya ämnen. På så sätt kan användare som är kunniga om ämnet uppdatera ämnessidan direkt för att göra korrigeringar eller lägga till ytterligare information. De kan också lägga till nya ämnen som AI inte kunde identifiera. Om det finns tillräckligt med information om dessa manuellt tillagda ämnen, och AI kan identifiera den här typen av ämne, kan ytterligare förslag från AI förbättra dessa manuellt tillagda ämnen. Människor och AI kan tillsammans hålla kunskap rätt med tiden och inte ha detta på en enda person. Mer information [finns i Skapa ett](https://docs.microsoft.com/microsoft-365/knowledge/create-a-topic) nytt ämne och [Redigera](https://docs.microsoft.com/microsoft-365/knowledge/edit-a-topic) ett ämne.
 
-Även med mänsklig redigering letar AI kontinuerligt efter mer information om ämnen och söker efter mänsklig verifiering. Om t ex AI tror att du är en person som ska vara en expert på ett ämne ber vi dig bekräfta detta. 
+- Även användare som bara har läsbehörighet till ämnen (ämnesvisare) uppmanas att kontrollera hur användbara vissa ämnen är. Feedbackfrågor ställs på **sammanfattningskortet Ämne** för att förbättra ämnets värde och information. Frågor om kvaliteten och användbarheten i AI-förslagen presenteras för användarna en i taget. Frågor omfattar:
+1. Om det var användbart att identifiera ämnet på SharePoint-sidan. Det finns en möjlighet att ta bort markeringen om den inte är korrekt eller användbar. Om tillräckligt många personer anger att ett ämne inte identifieras korrekt på en viss sida kommer den här markeringen så småningom att tas bort för alla användare. 
 
+2. Om det föreslagna ämnet är värdefullt för organisationen. Om tillräckligt många anger att det föreslagna ämnet är värdefullt bekräftas ämnet automatiskt. Om det föreslagna ämnet inte är värdefullt avvisas ämnet automatiskt. Knowledge Manager kan observera den här aktiviteten i vyn Hantera ämnen.
+
+3. Om personer och resursförslag är användbara.
+
+4. På startsidan för Ämnescenter kan du se de ämnen i organisationen som du har en anslutning till. Du kan välja att själv stå kvar i listan över ämnet eller ta bort dig själv. Den här feedbacken återspeglas för alla som upptäcker det här avsnittet. Se [översikten över Ämnescenter](https://docs.microsoft.com/microsoft-365/knowledge/topic-center-overview) för mer information på startsidan för ämnescentret.
+
+Även när människor redigerar söker AI kontinuerligt efter mer information om ämnen och söker efter verifiering av människor. Om AI till exempel tror att du är en person som bör finnas med som expert på ett ämne, får du bekräfta detta. 
 
 
 ## <a name="see-also"></a>Se även

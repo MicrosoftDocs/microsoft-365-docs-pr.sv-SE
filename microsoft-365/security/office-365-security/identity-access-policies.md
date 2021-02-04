@@ -1,6 +1,6 @@
 ---
-title: Vanliga principer för identitets-och enhets åtkomst – Microsoft 365 för företag | Microsoft-dok
-description: Här beskrivs rekommenderade vanliga principer och konfigurationer för identitets-och enhets åtkomst.
+title: Vanliga principer för identitets- och enhetsåtkomst – Microsoft 365 för | Microsoft Docs
+description: Här beskrivs rekommenderade principer och konfigurationer för gemensamma identiteter och enhetsåtkomst.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
@@ -19,236 +19,236 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 511f044960c5b723c8e10f6644007036c45d1f44
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 5f1f9d8c5f4e507e62de1b815d2345fc6b70bfea
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988098"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097288"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Vanliga principer för identitets- och enhetsåtkomst
 
-I den här artikeln beskrivs vanliga rekommenderade principer för att skydda åtkomst till Microsoft 365-moln tjänster, inklusive lokala program som har publicerats med Azure Active Directory (Azure AD)-tillämpningsproxy.
+I den här artikeln beskrivs de vanligaste rekommenderade principerna för att skydda åtkomsten till Microsoft 365-molntjänster, inklusive lokala program som publicerats med Azure Active Directory-programproxy (Azure AD).
 
-Den här vägledningen handlar om hur du distribuerar rekommenderade principer i en nyligen etablerad miljö. Genom att konfigurera dessa principer i en särskild laboratorie miljö kan du förstå och utvärdera rekommenderade principer innan du förbereder introduktionen till din produkt miljö. Den nyligen etablerade miljön kan endast vara moln-eller hybrid för att återspegla dina behov.
+I den här vägledningen beskrivs hur du distribuerar rekommenderade principer i en nyetablerade miljö. Genom att konfigurera dessa principer i en separat labbmiljö kan du förstå och utvärdera de rekommenderade principerna innan du distribuerar dem till din förproduktion och produktionsmiljöer. Din nyligen etablerade miljö kan vara endast molnbaserad eller hybrid för att återspegla dina utvärderingsbehov.
 
-## <a name="policy-set"></a>Princip uppsättning
+## <a name="policy-set"></a>Principuppsättning
 
-Följande diagram illustrerar den rekommenderade uppsättningen principer. Det visar vilken skydds nivå varje princip gäller för och om policyn gäller för datorer eller telefoner och surfplattor, eller båda enhets kategorierna. Det visar också var du konfigurerar dessa principer.
+I följande diagram visas den rekommenderade uppsättningen principer. Den visar vilken nivå av skydd varje princip gäller för och om principerna gäller för datorer eller telefoner och surfplattor, eller båda kategorierna av enheter. Den visar också var du konfigurerar principerna.
 
-[![Gemensamma principer för att konfigurera åtkomst till identiteter och enheter](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[![Vanliga principer för konfigurering av identitet och enhetsåtkomst](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
-[Visa en större version av bilden](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[Visa en större version av den här bilden](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
-Här är en ensidig PDF-sammanfattning med länkar till enskilda principer:
+Här är en PDF-sammanfattning på en sida med länkar till enskilda principer:
 
-[![Bild av knapp för identitet och enhets skydd för Microsoft 365-åhörar kopia](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [Visa som en PDF-fil](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Ladda ned som PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
+[![Thumb-bild för Identitet och enhetsskydd för Microsoft 365-handout](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [Visa som PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Ladda ned som PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
 
 I resten av den här artikeln beskrivs hur du konfigurerar dessa principer.
 
 > [!NOTE]
-> Att kräva att multifaktorautentisering används (MFA) rekommenderas innan de registrerar enheter i Intune för att kontrol lera att enheten är avsedd för den avsedda användaren. Du måste registrera enheter i Intune innan du kan tvinga fram principer för enhetskompatibilitet.
+> Vi rekommenderar att du kräver multifaktorautentisering (MFA) innan du registrerar enheter i Intune för att försäkra dig om att enheten tillhör den avsedda användaren. Du måste registrera enheter i Intune innan du kan tillämpa principer för enhetsefterlevnad.
 
-För att ge dig tid att utföra dessa uppgifter rekommenderar vi att du implementerar rikt linjerna i den ordning som anges i tabellen. MFA-principerna för känslig och högreglerade skydds nivåer kan implementeras när som helst.
+För att ge dig tid att utföra de här uppgifterna rekommenderar vi att du implementerar baslinjeprinciperna i den ordning som anges i den här tabellen. MFA-principerna för känsliga och högreglerade skyddsnivåer kan implementeras när som helst.
 
-|Skydds nivå|Principerna|Mer information|
+|Skyddsnivå|Principer|Mer information|
 |---|---|---|
-|**Grundläggande**|[Kräv MFA när en inloggnings risk är *mellan* eller *hög*](#require-mfa-based-on-sign-in-risk)||
-||[Blockera klienter som inte har stöd för modern autentisering](#block-clients-that-dont-support-modern-authentication)|Klienter som inte använder modern lösenordsautentisering kan kringgå principer för villkorsstyrd åtkomst, så det är viktigt att blockera dessa.|
-||[Användare med hög risk måste byta lösenord](#high-risk-users-must-change-password)|Tvingar användare att ändra sitt lösen ord när de loggar in om en högrisk aktivitet identifieras för sitt konto.|
-||[Tillämpa program data skydds policy](#apply-app-data-protection-policies)|En Intune program skydds policy per plattform (Windows, iOS/iPad, Android).|
-||[Kräv godkända appar och program skydd](#require-approved-apps-and-app-protection)|Aktiverar dataexekveringsskydd för telefoner och surfplattor med iOS, iPad eller Android.|
-||[Definiera principer för efterlevnadsprinciper](#define-device-compliance-policies)|En princip för varje plattform.|
-||[Kräv kompatibla PC-datorer](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Framtvingar Intune-hantering av datorer med Windows eller MacOS.|
-|**Känslig**|[Kräv MFA när en inloggnings risk är *låg*, *medel* eller *hög*](#require-mfa-based-on-sign-in-risk)||
-||[Kräv kompatibla datorer *och* mobila enheter](#require-compliant-pcs-and-mobile-devices)|Framtvingar Intune-hantering för båda datorerna (Windows eller MacOS) och telefoner eller surfplattor (iOS, iPad eller Android).|
-|**Strikt reglerad**|[Kräv *alltid* MFA](#require-mfa-based-on-sign-in-risk)|
+|**Grundläggande**|[Kräv MFA när inloggningsrisken är *medelhög* eller *hög*](#require-mfa-based-on-sign-in-risk)||
+||[Blockera klienter som inte har stöd för modern autentisering](#block-clients-that-dont-support-multi-factor)|Klienter som inte använder modern autentisering kan åsidosätta villkorsstyrda åtkomstprinciper, så det är viktigt att blockera dessa.|
+||[Användare med hög risk måste byta lösenord](#high-risk-users-must-change-password)|Tvingar användarna att ändra sitt lösenord när de loggar in om högriskaktivitet identifieras för deras konto.|
+||[Använda principer för programdataskydd](#apply-app-data-protection-policies)|Appskyddsprincip för One Intune per plattform (Windows, iOS/iPadOS, Android).|
+||[Kräv godkända appar och appskydd](#require-approved-apps-and-app-protection)|Tillämpar skydd för mobilappar för telefoner och surfplattor med iOS, iPadOS eller Android.|
+||[Definiera principer för enhetsefterlevnad](#define-device-compliance-policies)|En princip för varje plattform.|
+||[Kräv kompatibla PC-datorer](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Framtvingar Intune-hantering av PC-datorer med Windows eller MacOS.|
+|**Känslig**|[Kräv MFA när inloggningsrisken *är låg,* *medel* eller *hög*](#require-mfa-based-on-sign-in-risk)||
+||[Kräv kompatibla datorer *och* mobila enheter](#require-compliant-pcs-and-mobile-devices)|Framtvingar Intune-hantering för både PC-datorer (Windows eller MacOS) och telefoner och surfplattor (iOS, iPadOS eller Android).|
+|**Strikt reglerad**|[*Kräv* alltid MFA](#require-mfa-based-on-sign-in-risk)|
 |
 
 ## <a name="assigning-policies-to-groups-and-users"></a>Tilldela principer till grupper och användare
 
-Innan du konfigurerar principer ska du identifiera de Azure AD-grupper du använder för varje skydds nivå. Bas linje skydd gäller normalt för alla i organisationen. En användare som ingår i både bas linje och känsligt skydd får alla rikt linjer som tillämpas samt känsliga principer. Skyddet är kumulativt och den mest restriktiva principen tillämpas.
+Innan du konfigurerar principer identifierar du de Azure AD-grupper du använder för varje skyddsnivå. Normalt gäller baslinjeskydd för alla i organisationen. En användare som ingår för både baslinje- och känsligt skydd kommer att tillämpa alla baslinjeprinciper plus känsliga principer. Skyddet ackumuleras och den mest restriktiva principen tillämpas.
 
-Ett rekommenderat tillvägagångs sätt är att skapa en Azure AD-grupp för undantag för villkorlig åtkomst. Lägg till den här gruppen i alla principer för villkorsstyrd åtkomst i området **exkludera** för **användare och grupper** i avsnittet **uppgifter** . Det gör att du kan ge åtkomst till en användare när du felsöker åtkomst problem. Detta rekommenderas endast som en tillfällig lösning. Övervaka den här gruppen för ändringar och kontrol lera att exkluderings gruppen bara används som avsett.
+En rekommenderad metod är att skapa en Azure AD-grupp för undantag i villkorsstyrd åtkomst. Lägg till den här gruppen i  alla **villkorsstyrda** åtkomstprinciper i inställningen Exkludera värdet för **användare och** grupper i avsnittet Tilldelningar. Det ger dig en metod för att ge åtkomst till en användare medan du felsöker åtkomstproblem. Det här rekommenderas endast som en tillfällig lösning. Övervaka den här gruppen efter ändringar och se till att undantagsgruppen endast används som avsett.
 
-Här är ett exempel på grupp tilldelning och undantag för MFA.
+Här är ett exempel på grupptilldelning och undantag för krav på MFA.
 
-![Exempel på grupp tilldelning och undantag för MFA-principer](../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
+![Exempel på grupptilldelning och undantag för MFA-principer](../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
 Här är resultatet:
 
-- Alla användare måste använda MFA när inloggnings risken är medel eller hög.
+- Alla användare måste använda MFA när inloggningsrisken är medelstor eller hög.
 
-- Medlemmar i gruppen exekutiv personal måste använda MFA när inloggnings risken är låg, medel eller hög.
+- Medlemmar i ledningsgruppen måste använda MFA när inloggningsrisken är låg, medium eller hög.
 
-  I det här fallet matchar medlemmar i gruppen exekutiva personer både principer för bas linje och villkorsstyrd åtkomst. Åtkomst kontrollerna för båda principer är kombinerade, vilka i det här fallet är likvärdigt med den känsliga principen för villkorsstyrd åtkomst.
+  I det här fallet matchar medlemmar i ledningsgruppen både baslinjepolicyn och känsliga villkorsstyrda åtkomstprinciper. Åtkomstkontrollerna för båda principerna kombineras, vilket i det här fallet motsvarar den känsliga villkorsstyrda åtkomstprincipen.
 
-- Medlemmar i den Top Secret-projekt X-gruppen måste alltid använda MFA
+- Medlemmar i den översta hemliga Project X-gruppen måste alltid använda MFA
 
-  I det här fallet matchar medlemmar i den Top Secreta projekt X-gruppen både bas linje och villkorsstyrd åtkomst policy som är starkt reglerad. Åtkomst kontrollerna för båda principer kombineras. Eftersom åtkomst kontrollen för den högreglerade principen för villkorsstyrd åtkomst är mer restriktiv används den.
+  I det här fallet matchar medlemmar i den översta hemliga Project X-gruppen både principerna för baslinje och starkt reglerade villkorsstyrd åtkomst. Åtkomstkontroller för båda principerna kombineras. Eftersom åtkomstkontrollen för den villkorsstyrda villkorsstyrda principen är mer restriktiv används den.
 
-Var försiktig när du tillämpar högre skydds nivåer för grupper och användare. Till exempel måste du använda MFA varje gång de loggar in, även om de inte arbetar med det starkt reglerade innehållet i Project X.
+Var försiktig när du använder högre skyddsnivåer för grupper och användare. Medlemmar i den översta hemliga project X-gruppen måste till exempel använda MFA varje gång de loggar in, även om de inte arbetar med det högreglerade innehållet för Project X.
 
-Alla Azure AD-grupper som skapas som en del av dessa rekommendationer måste skapas som Microsoft 365-grupper. Det här är viktigt för att du ska kunna distribuera känslighets etiketter när du skyddar dokument i Microsoft Teams och SharePoint.
+Alla Azure AD-grupper som skapats som en del av dessa rekommendationer måste skapas som Microsoft 365-grupper. Detta är viktigt för distribution av känslighetsetiketter när du skyddar dokument i Microsoft Teams och SharePoint.
 
 ![Skärmdump för att skapa Microsoft 365-grupper](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
-## <a name="require-mfa-based-on-sign-in-risk"></a>Kräv MFA baserat på inloggnings risker
+## <a name="require-mfa-based-on-sign-in-risk"></a>Kräv MFA baserat på inloggningsrisk
 
-Du bör ha användarna registrerade för MFA innan de behöver använda det. Om du har Microsoft 365 E5, Microsoft 365 E3 med identitets & hot Protection-tillägg, Office 365 med EMS, eller de enskilda Azure AD Premium P2-licenserna, kan du använda principen för MFA-registrering med Azure AD-skyddsagenten för att kräva att användare registrerar MFA. För [kravet på arbete](identity-access-prerequisites.md) ingår att registrera alla användare med MFA.
+Du bör be användarna registrera sig för MFA innan de kräver att de används. Om du har Microsoft 365 E5, Microsoft 365 E3 med tillägget Identity & Threat Protection, Office 365 med EMS E5 eller enskilda Azure AD Premium P2-licenser kan du använda MFA-registreringsprincipen med Azure AD Identity Protection för att kräva att användare registrerar sig för MFA. Förutsättningarna [för detta](identity-access-prerequisites.md) är att registrera alla användare med MFA.
 
-När användarna är registrerade kan du kräva MFA för att logga in med en ny princip för villkorsstyrd åtkomst.
+När användarna har registrerats kan du kräva MFA för inloggning med en ny villkorsstyrd åtkomstprincip.
 
-1. Gå till [Azure-portalen](https://portal.azure.com)och logga in med dina inloggnings uppgifter.
-2. I listan med Azure-tjänster väljer du **Azure Active Directory**.
-3. Välj **säkerhet** i listan **Hantera** och välj sedan **villkorlig åtkomst**.
-4. Välj **ny princip** och ange den nya Principens namn.
+1. Gå till [Azure Portal och](https://portal.azure.com)logga in med dina autentiseringsuppgifter.
+2. Välj Azure Active Directory i listan **med Azure-tjänster.**
+3. Välj **Säkerhet** i listan Hantera **och välj** sedan **Villkorsstyrd åtkomst.**
+4. Välj **Ny** princip och skriv namnet på den nya principen.
 
-I följande tabell beskrivs princip inställningarna för villkorsstyrd åtkomst för att kräva MFA baserat på inloggnings risker.
+I följande tabeller beskrivs principinställningarna för villkorsstyrd åtkomst så att MFA krävs baserat på inloggningsrisker.
 
-I avsnittet **uppgifter** :
+I **avsnittet Uppgifter:**
 
-|Inställning|Fjärråtkomstsegenskaper|Värden|Kommentarer|
+|Inställning|Egenskaper|Värden|Kommentarer|
 |---|---|---|---|
-|Användare och grupper|Inkludera|**Välj användare och grupper > användare och grupper**: Välj specifika grupper som innehåller riktade användar konton.|Börja med gruppen som innehåller pilot användar konton.|
-||Ta|**Användare och grupper**: Välj en undantags grupp för villkorlig åtkomst. tjänst konton (program identiteter).|Medlemskapet bör ändras efter behov.|
-|Moln program eller-åtgärder|**> moln program inkluderar**|**Välj appar**: Välj de program du vill att den här policyn ska tillämpas på. Välj till exempel Exchange Online.||
-|Situationer|||Konfigurera villkor som är specifika för din miljö och dina behov.|
-||Inloggnings risker||Se anvisningarna i följande tabell.|
+|Användare och grupper|Inkludera|**Välj användare och grupper > användare och grupper:** Välj specifika grupper som innehåller riktade användarkonton.|Börja med den grupp som innehåller pilotanvändarkonton.|
+||Undanta|**Användare och grupper:** Välj din undantagsgrupp för villkorsstyrd åtkomst; tjänstkonton (appidentiteter).|Medlemskapet ska ändras tillfälligt och efter behov.|
+|Molnappar eller -åtgärder|**Molnappar > Inkludera**|**Välj appar:** Välj de appar som du vill att den här principen ska gälla för. Välj till exempel Exchange Online.||
+|Villkor|||Konfigurera villkor som är specifika för din miljö och dina behov.|
+||Inloggningsrisk||Se vägledning i följande tabell.|
 |
 
-### <a name="sign-in-risk-condition-settings"></a>Inställningar för problem med inloggnings risk
+### <a name="sign-in-risk-condition-settings"></a>Villkorsinställningar för inloggningsrisker
 
-Tillämpa inställningarna på risk nivå baserat på den skydds nivå du är riktad mot.
+Tillämpa inställningarna för risknivå baserat på den skyddsnivå som du riktar in.
 
-|Skydds nivå|Risk nivå värden som behövs|Åtgärd|
+|Skyddsnivå|Nödvändiga risknivåvärden|Åtgärd|
 |---|---|---|
-|Grundläggande|Hög, medium|Markera båda.|
-|Känslig|Hög, medium, lågt|Markera alla tre.|
-|Strikt reglerad||Låt alla alternativ vara avmarkerade om du alltid vill använda MFA.|
+|Grundläggande|Hög, medel|Kontrollera båda.|
+|Känslig|Hög, medel, låg|Markera alla tre.|
+|Strikt reglerad||Låt alla alternativ vara avmarkerade för att alltid tillämpa MFA.|
 |
 
-I avsnittet **Access Controls** :
+I avsnittet **Access-kontroller:**
 
-|Inställning|Fjärråtkomstsegenskaper|Värden|Åtgärd|
+|Inställning|Egenskaper|Värden|Åtgärd|
 |---|---|---|---|
-|Tilldelas|**Grant access**||Använda|
+|Bevilja|**Grant access**||Välj|
 |||**Kräv multifaktorautentisering**|Check|
-||**Kräv alla markerade kontroller**||Använda|
+||**Kräv alla markerade kontroller**||Välj|
 |
 
-Välj **Välj** för att spara inställningen för **beviljande** .
+Välj **Välj för** att spara inställningarna **för** Bevilja.
 
-**Välj slutligen för** **att aktivera principer** och välj sedan **skapa**.
+Välj slutligen **På för** principen **Aktivera** och välj sedan **Skapa.**
 
-Överväg [också att använda verktyget för](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) att testa policyn.
+Överväg även att använda [verktyget Vad händer](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) om för att testa principen.
 
-## <a name="block-clients-that-dont-support-modern-authentication"></a>Blockera klienter som inte har stöd för modern autentisering
+## <a name="block-clients-that-dont-support-multi-factor"></a>Blockera klienter som inte har stöd för flera faktor
 
-Använd inställningarna i de här tabellerna för en princip för villkorsstyrd åtkomst för att blockera klienter som inte stöder modern.
+Använd inställningarna i de här tabellerna för en princip för villkorsstyrd åtkomst för att blockera klienter som inte har stöd för multifaktorautentisering.
 
-I [den här artikeln](../../enterprise/microsoft-365-client-support-modern-authentication.md) finns en lista med klienter i Microsoft 365 som gör suppport modern.
+I [den här artikeln](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md) finns en lista över klienter i Microsoft 365 som har stöd för multifaktorautentisering.
 
-I avsnittet **uppgifter** :
+I **avsnittet Uppgifter:**
 
-|Inställning|Fjärråtkomstsegenskaper|Värden|Kommentarer|
+|Inställning|Egenskaper|Värden|Kommentarer|
 |---|---|---|---|
-|Användare och grupper|Inkludera|**Välj användare och grupper > användare och grupper**: Välj specifika grupper som innehåller riktade användar konton.|Börja med gruppen som innehåller pilot användar konton.|
-||Ta|**Användare och grupper**: Välj en undantags grupp för villkorlig åtkomst. tjänst konton (program identiteter).|Medlemskapet bör ändras efter behov.|
-|Moln program eller-åtgärder|**> moln program inkluderar**|**Välj appar**: Välj de program som motsvarar klienterna som inte stöder modern lösenordsautentisering.||
-|Situationer|**Klient program**|Välj **Ja** för att **Konfigurera** <p> Avmarkera kryss markeringar för **webbläsare** och **mobilappar och Station ära klienter**||
+|Användare och grupper|Inkludera|**Välj användare och grupper > användare och grupper:** Välj specifika grupper som innehåller riktade användarkonton.|Börja med den grupp som innehåller pilotanvändarkonton.|
+||Undanta|**Användare och grupper:** Välj din undantagsgrupp för villkorsstyrd åtkomst; tjänstkonton (appidentiteter).|Medlemskapet ska ändras tillfälligt och efter behov.|
+|Molnappar eller -åtgärder|**Molnappar > Inkludera**|**Välj appar:** Välj de program som motsvarar de klienter som inte stöder modern autentisering.||
+|Villkor|**Klientappar**|Välj **Ja** för **Konfigurera** <p> Avmarkera bkryssmarkeringarna **för webbläsar-** och **mobilprogram och skrivbordsklienter**||
 |
 
-I avsnittet **Access Controls** :
+I avsnittet **Access-kontroller:**
 
-|Inställning|Fjärråtkomstsegenskaper|Värden|Åtgärd|
+|Inställning|Egenskaper|Värden|Åtgärd|
 |---|---|---|---|
-|Tilldelas|**Blockera åtkomst**||Använda|
-||**Kräv alla markerade kontroller**||Använda|
+|Bevilja|**Blockera åtkomst**||Välj|
+||**Kräv alla markerade kontroller**||Välj|
 |
 
-Välj **Välj** för att spara inställningen för **beviljande** .
+Välj **Välj för** att spara inställningarna **för** Bevilja.
 
-**Välj slutligen för** **att aktivera principer** och välj sedan **skapa**.
+Välj slutligen **På för** principen **Aktivera** och välj sedan **Skapa.**
 
-Överväg att använda [verktyget för att testa](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) policyn.
+Överväg att använda [verktyget Vad händer](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) om för att testa principen.
 
-För Exchange Online kan du använda autentiseringsprinciper för att [Inaktivera grundläggande](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)åtkomst, vilket tvingar alla klient åtkomst förfrågningar att använda modern verifikation.
+För Exchange Online kan du använda autentiseringsprinciper för att inaktivera [grundläggande](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)autentisering, vilket tvingar alla klientåtkomstförfrågningar att använda modern autentisering.
 
 ## <a name="high-risk-users-must-change-password"></a>Användare med hög risk måste byta lösenord
 
-För att säkerställa att alla högrisk användares komprometterade konton tvingas göra en ändring av lösen ord när de loggar in måste du tillämpa följande policy.
+För att säkerställa att alla högriskanvändares komprometterade konton tvingas utföra en lösenordsändring när du loggar in måste du använda följande princip.
 
-Logga in på [Microsoft Azure-portalen ( https://portal.azure.com)](https://portal.azure.com/) med administratörs uppgifterna och navigera sedan till **Azure AD Identity Protection > User risk policy**.
+Logga in på [Microsoft https://portal.azure.com) Azure-portalen (med](https://portal.azure.com/) dina administratörsuppgifter och navigera sedan till **Azure AD Identity Protection > user risk policy.**
 
-I avsnittet **uppgifter** :
+I **avsnittet Uppgifter:**
 
-|Type (Typ)|Fjärråtkomstsegenskaper|Värden|Åtgärd|
+|Type (Typ)|Egenskaper|Värden|Åtgärd|
 |---|---|---|---|
-|Användare|Inkludera|**Alla användare**|Använda|
-|Risk för användare|**Högsta**||Använda|
+|Användare|Inkludera|**Alla användare**|Välj|
+|Användarrisk|**Högsta**||Välj|
 |
 
-I avsnittet andra **uppgifter** :
+I det andra **avsnittet Om** uppgifter:
 
-|Type (Typ)|Fjärråtkomstsegenskaper|Värden|Åtgärd|
+|Type (Typ)|Egenskaper|Värden|Åtgärd|
 |---|---|---|---|
-|Åtkomst|**Tillåt åtkomst**||Använda|
-|||**Kräv lösen ords ändring**|Check|
+|Åtkomst|**Tillåt åtkomst**||Välj|
+|||**Kräv lösenordsändring**|Check|
 |
 
-Välj **klar** för att spara **åtkomst** inställningar.
+Välj **Klar** för att spara **Access-inställningarna.**
 
-Välj slutligen **på** för att **påtvinga policy** och välj sedan **Spara**.
+Välj slutligen **På för** **tillämpa-princip** och välj sedan **Spara.**
 
-Överväg att använda [verktyget för att testa](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) policyn.
+Överväg att använda [verktyget Vad händer](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) om för att testa principen.
 
-Använd den här principen tillsammans med [konfiguration av lösen ords skydd i Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)som identifierar och blockerar kända svaga lösen ord och deras varianter och ytterligare svaga termer som är specifika för din organisation. Genom att använda lösen ords skydd för Azure AD ser du till att ändrade lösen ord är starka.
+Använd den här principen tillsammans med konfigurera lösenordsskydd i [Azure AD,](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)som identifierar och blockerar kända svaga lösenord och deras varianter och ytterligare svaga termer som är specifika för din organisation. Genom att använda azure AD-lösenordsskydd ser du till att ändrade lösenord är starka.
 
-## <a name="apply-app-data-protection-policies"></a>Tillämpa program data skydds policy
+## <a name="apply-app-data-protection-policies"></a>Använda principer för APP-dataskydd
 
-App Protection policies (APP) definierar vilka appar som tillåts och vilka åtgärder de kan utföra med din organisations data. De val som är tillgängliga i appen gör det möjligt för organisationer att skräddarsy skyddet mot deras specifika behov. I vissa fall är det kanske inte uppenbart vilka princip inställningar som krävs för att implementera ett fullständigt scenario. För att hjälpa organisationer att prioritera en mobil klient Bryt punkts härdning har Microsoft infört taxonomi för programmets data skydds ramverk för iOS-och Android-mobilappar.
+Appskyddsprinciper (APP) definierar vilka appar som tillåts och vilka åtgärder de kan vidta med din organisations data. Med alternativen i APP kan organisationer anpassa skyddet efter sina specifika behov. I vissa fall är det kanske inte uppenbart vilka principinställningar som krävs för att implementera ett fullständigt scenario. Microsoft har introducerat taxonomi för sitt ramverk för appdataskydd för iOS- och Android-mobilappar för att hjälpa organisationer att prioritera ändpunkt för mobila klienter.
 
-PROGRAM data skydds ramverket är uppdelat i tre olika konfigurations nivåer, med varje nivå som bygger på föregående nivå:
+Ramverket för APP-dataskydd är indelade i tre olika konfigurationsnivåer, där varje nivå bygger på den föregående nivån:
 
-- **Företags grundläggande data skydd** (nivå 1) säkerställer att appar skyddas med en PIN-kod och krypterad och utför selektiv rensning. För Android-enheter verifierar den här nivån Android-enhetens attestering. Det här är en inmatnings nivå konfiguration som ger en liknande data skydds kontroll i Exchange Online Mailbox-principer och introducerar den och användar populationen till program.
-- **Förbättrat data skydd för företag** (nivå 2) introducerar mekanismer för att förhindra program data läckage och minimi krav på operativ system. Det här är den konfiguration som kan användas för de flesta mobila användare som vill komma åt arbets-eller skol data.
-- **Data skydd i företags kvalitet** (nivå 3) introducerar avancerade data skydds mekanismer, förbättrad PIN-konfiguration och försvar för mobil hot från appen. Denna konfiguration är önskvärt för användare som har till gång till högrisk data.
+- **Enterprise basic data protection** (Level 1) säkerställer att appar skyddas med en PIN-kod och krypteras, och utför selektiva rensningsåtgärder. För Android-enheter verifierar den här nivån attestation för Android-enheter. Det här är en konfiguration på inmatningsnivå som ger liknande dataskyddskontroll i Postlådeprinciper i Exchange Online och introducerar IT- och användarpopulationen i APP.
+- **Med Företag förbättrat dataskydd** (nivå 2) introduceras mekanismer för att förhindra dataläckning i APP och lägsta OS-krav. Det här är den konfiguration som gäller för de flesta mobila användare som har åtkomst till arbets- eller skoldata.
+- **Enterprise high data protection** (Level 3) introduces advanced data protection mechanisms, enhanced PIN configuration, and APP Mobile Threat Defense. Den här konfigurationen är ett bra sätt för användare som använder data med hög risk.
 
-Om du vill se de särskilda rekommendationerna för varje konfigurations nivå och de program som måste skyddas kan du granska [data skydds ramverket med hjälp av skydds principer för appar](https://docs.microsoft.com/mem/intune/apps/app-protection-framework).
+Granska dataskyddsramarna med appskyddsprinciper om du vill se specifika rekommendationer för varje konfigurationsnivå och de lägsta program [som måste](https://docs.microsoft.com/mem/intune/apps/app-protection-framework)skyddas.
 
-Genom att använda de principer som beskrivs i [identitets-och enhets åtkomst](microsoft-365-policies-configurations.md)kan du följa de grundläggande inställningarna för data skydd i nivå 2. De data skydds nivåer som är starkt prioriterade är nära nivå 3-inställningar för data skydd i Enterprise.
+Med de principer som beskrivs i identitets- och enhetsåtkomstkonfigurationer mappas baslinje och nivå för känsligt skydd nära med de förbättrade [dataskyddsinställningarna](microsoft-365-policies-configurations.md)på Nivå 2 för företag. Nivånivån för hög nivå av skydd som regleras ligger nära de höga dataskyddsinställningarna på Nivå 3 för företag.
 
-|Skydds nivå|Program skydds princip|Mer information|
+|Skyddsnivå|Appskyddsprincip|Mer information|
 |---|---|---|
-|Grundläggande|[Nivå 2-förbättrat data skydd](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|De princip inställningar som tillämpas i nivå 2 inkluderar alla princip inställningar som rekommenderas för nivå 1 och lägger till eller uppdaterar princip inställningarna nedan för att implementera fler kontroller och en mer avancerad konfiguration än nivå 1.|
-|Känslig|[Nivå 2-förbättrat data skydd](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|De princip inställningar som tillämpas i nivå 2 inkluderar alla princip inställningar som rekommenderas för nivå 1 och lägger till eller uppdaterar princip inställningarna nedan för att implementera fler kontroller och en mer avancerad konfiguration än nivå 1.|
-|Säkerhets regler|[Nivå 3-skydda företags data](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|De princip inställningar som tillämpas i nivå 3 inkluderar alla princip inställningar som rekommenderas för nivå 1 och 2 och lägger till eller uppdaterar de här princip inställningarna för att implementera fler kontroller och en mer avancerad konfiguration än nivå 2.|
+|Grundläggande|[Bättre dataskydd på Nivå 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Principinställningarna som tillämpas på nivå 2 innehåller alla principinställningar som rekommenderas för nivå 1 och lägger bara till eller uppdaterar principinställningarna nedan för att implementera fler kontroller och en mer avancerad konfiguration än nivå 1.|
+|Känslig|[Bättre dataskydd på Nivå 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Principinställningarna som tillämpas på nivå 2 innehåller alla principinställningar som rekommenderas för nivå 1 och lägger bara till eller uppdaterar principinställningarna nedan för att implementera fler kontroller och en mer avancerad konfiguration än nivå 1.|
+|Mycket reglerad|[Hög dataskyddsnivå 3 för företag](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|Principinställningarna som tillämpas på nivå 3 innehåller alla principinställningar som rekommenderas för nivå 1 och 2 och lägger bara till eller uppdaterar principinställningarna nedan för att implementera fler kontroller och en mer avancerad konfiguration än nivå 2.|
 |
 
-Om du vill skapa en ny skydds princip för varje plattform (iOS och Android) i Microsoft slut punkts hanteraren med inställningarna för data skydds ramverk kan du:
+Om du vill skapa en ny princip för programskydd för varje plattform (iOS och Android) i Microsoft Endpoint Manager med hjälp av inställningarna för dataskyddsramverk kan du:
 
-1. Skapa principer manuellt genom att följa de steg som beskrivs [för att skapa och distribuera skydds principer för appar med Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/app-protection-policies).
-2. Importera exempel på [princip konfigurations ramverket för Intune-appens skydd](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) med INTUNE-JSON- [skript](https://github.com/microsoftgraph/powershell-intune-samples).
+1. Skapa principerna manuellt genom att följa stegen i Skapa och distribuera principer [för programskydd med Microsoft Intune.](https://docs.microsoft.com/mem/intune/apps/app-protection-policies)
+2. Importera [exempelmallarna för Intune App Protection Policy Configuration Framework JSON](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) [med Intunes PowerShell-skript.](https://github.com/microsoftgraph/powershell-intune-samples)
 
-## <a name="require-approved-apps-and-app-protection"></a>Kräv godkända appar och program skydd
+## <a name="require-approved-apps-and-app-protection"></a>Kräv godkända appar och APPskydd
 
-För att påtvinga program skydds principer som du använde i Intune måste du skapa en princip för villkorsstyrd åtkomst för att Kräv godkända klient program och de villkor som ställts in i APPENs skydds principer.
+Om du vill tillämpa APP-skyddsprinciperna som du tillämpade i Intune måste du skapa en princip för villkorsstyrd åtkomst för att kräva godkända klientappar och villkoren i APP-skyddsprinciperna.
 
-För att tvinga skydds principer för appar krävs en uppsättning principer som beskrivs i [Kräv program skydds princip för Cloud App Access med villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access). Dessa principer ingår i de rekommenderade uppsättningarna med identitets-och åtkomst principer.
+Tillämpning av APP-skyddsprinciper kräver en uppsättning principer som beskrivs i [Kräv appskyddsprincip för molnbaserad appåtkomst med villkorsstyrd åtkomst.](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) Dessa principer ingår var och en i den här rekommenderade uppsättningen principer för identitets- och åtkomstkonfiguration.
 
-Om du vill skapa principen för villkorsstyrd åtkomst som kräver godkända appar och APP Protection följer du anvisningarna i "steg 1: Konfigurera en princip för villkorlig åtkomst för Azure AD för Microsoft 365" i [Scenario 1: Microsoft 365-appar kräver godkända appar med skydds principer för appar](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), som tillåter Outlook för iOS och Android, men blockerar OAuth-kompatibla Exchange ActiveSync-klienter från att ansluta till Exchange Online.
+Följ "Steg 1: Konfigurera en villkorsstyrd åtkomstprincip för Azure AD för Microsoft 365" i Scenario 1 om du vill skapa en princip för villkorsstyrd åtkomst som kräver godkända appar och APPskydd i Scenario [1: Microsoft 365-appar](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)kräver godkända appar med principer för appskydd, vilket gör att Outlook för iOS och Android blockeras, men OAuth-kompatibla Exchange ActiveSync-klienter blockeras från att ansluta till Exchange Online.
 
    > [!NOTE]
-   > Den här principen gör att mobila användare kan komma åt alla Office-slutpunkter med hjälp av tillämpliga appar.
+   > Den här principen säkerställer att mobila användare kan komma åt alla Office-slutpunkter med hjälp av tillämpliga appar.
 
-Om du aktiverar mobil åtkomst till Exchange Online implementerar du [spärrar ActiveSync-klienter](secure-email-recommended-policies.md#block-activesync-clients)som hindrar Exchange ActiveSync-klienter att använda grundläggande åtkomst från anslutning till Exchange Online. Den här principen visas inte i bilden högst upp i den här artikeln. Det beskrivs och visas i [Policy rekommendationer för att skydda e-post](secure-email-recommended-policies.md).
+Om du aktiverar mobil åtkomst till Exchange Online implementerar du [Blockera ActiveSync-klienter,](secure-email-recommended-policies.md#block-activesync-clients)vilket förhindrar att Exchange ActiveSync-klienter utnyttjar grundläggande autentisering från att ansluta till Exchange Online. Den här principen visas inte i illustrationen högst upp i den här artikeln. Den beskrivs och visas i principrekommendationer för [att skydda e-post.](secure-email-recommended-policies.md)
 
-Om du vill skapa principen för villkorsstyrd åtkomst som kräver att iOS och Android används, följer du anvisningarna i "steg 2: Konfigurera en princip för villkorlig åtkomst för Azure AD för Microsoft 365" i [Scenario 2: webb läsar program kräver godkända appar med skydds principer](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-2-browser-apps-require-approved-apps-with-app-protection-policies)för appar, vilka tillåter Edge för iOS och Android, men blockerar andra mobila enheter från att ansluta till Microsoft 365-slutpunkter.
+Om du vill skapa principen för villkorsstyrd åtkomst som kräver Edge för iOS och Android följer du "Steg 2: Konfigurera en villkorsbaserad åtkomstprincip för Azure AD för Microsoft 365" i [Scenario 2:](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-2-browser-apps-require-approved-apps-with-app-protection-policies)Webbläsarappar kräver godkända appar med appskyddsprinciper, vilket gör att Edge för iOS och Android blockeras, men blockerar andra webbläsare för mobila enheter från att ansluta till Microsoft 365-slutpunkter.
 
- Dessa principer använder kontrollen för [godkända klienter](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) och kräver [program skydds princip](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
+ Dessa principer använder grant-kontrollerna [Kräv godkänd klientapp](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) [och kräv programskyddsprincip.](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)
 
-Om du blockerar äldre klientautentisering för andra klient program på iOS-och Android-enheter säkerställer du att dessa klienter inte kan kringgå principer för villkorlig åtkomst. Om du följer anvisningarna i den här artikeln har du redan konfigurerat [blockera klienter som inte stöder modern](#block-clients-that-dont-support-modern-authentication).
+Slutligen säkerställer blockering av äldre autentisering för andra klientappar på iOS- och Android-enheter att dessa klienter inte kan kringgå villkorsstyrda åtkomstprinciper. Om du följer vägledningen i den här artikeln har du redan konfigurerat blockeringsklienter [som inte stöder modern autentisering.](#block-clients-that-dont-support-multi-factor)
 
 <!---
 With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several Conditional Access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
@@ -265,125 +265,125 @@ With Conditional Access, organizations can restrict access to approved (modern a
 3. Disable legacy authentication for other client apps on iOS and Android devices. For more information, see [Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication).
 -->
 
-## <a name="define-device-compliance-policies"></a>Definiera principer för enhetskompatibilitet
+## <a name="define-device-compliance-policies"></a>Definiera principer för enhetsefterlevnad
 
-Enhet – efterlevnadsprinciper definierar kraven som enheter måste uppfylla för att kunna identifieras som kompatibla. Du skapar principer för regelefterlevnad-enheter från administrations centret för Microsoft Endpoint Manager.
+Principer för enhetsefterlevnad definierar de krav som enheter måste uppfylla för att fastställas som kompatibla. Du skapar intune enhetsefterlevnadsprinciper från administrationscentret för Microsoft Endpoint Manager.
 
-Du måste skapa en princip för varje dator, telefon eller surfplatta:
+Du måste skapa en princip för varje dator, telefon eller pekplatta:
 
-- Android-enhetens administratör
+- Administratör för Android-enhet
 - Android Enterprise
-- iOS/iPad
+- iOS/iPadOS
 - macOS
-- Windows 8,1 och senare
+- Windows 8.1 och senare
 - Windows 10 och senare
 
-Om du vill skapa principer för efterlevnadsprinciper loggar du in i [administrations centret för Microsoft slut punkts hanteraren](https://endpoint.microsoft.com) med dina administratörs uppgifter och navigerar **sedan till principer** för principer för \> **efterlevnadsprinciper** \> . Välj **Skapa princip**.
+Om du vill skapa principer för enhetsefterlevnad loggar du in på administrationscentret för [Microsoft Endpoint Manager](https://endpoint.microsoft.com) med dina administratörsautentiseringsuppgifter och navigerar sedan till principer för  \> **enhetsefterlevnad.** \>  Välj **Skapa princip.**
 
-Om principer för enhetskompatibilitet ska distribueras måste de kopplas till användar grupper. Du tilldelar en policy när du har skapat och sparat den. I Admin Center väljer du policy och sedan **uppgifter**. När du har valt de grupper som du vill ta emot principen för väljer du **Spara** för att spara grupp tilldelningen och distribuera policyn.
+För att principer för enhetsefterlevnad ska distribueras måste de tilldelas till användargrupper. Du tilldelar en princip när du har skapat och sparat den. Välj principen i administrationscentret och välj sedan **Uppgifter.** När du har valt de grupper som du vill ska få principen väljer du **Spara** för att spara grupptilldelningen och distribuera principen.
 
-Stegvisa instruktioner om hur du skapar efterlevnadsprinciper i Intune finns i [skapa en policy för efterlevnad i Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy) i Intune-dokumentationen.
+Stegvisa instruktioner för hur du skapar efterlevnadsprinciper i Intune finns i Skapa en efterlevnadsprincip i [Microsoft Intune-dokumentationen.](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)
 
 ### <a name="recommended-settings-for-windows-10-and-later"></a>Rekommenderade inställningar för Windows 10 och senare
 
-Följande inställningar rekommenderas för datorer med Windows 10 och senare, enligt konfigurationen i **steg 2: inställningar för efterlevnad**, av processen för att skapa principer.
+Följande inställningar rekommenderas för datorer med Windows 10 och senare, enligt konfiguration i steg **2:** Efterlevnadsinställningar, för processen för att skapa principen.
 
-Information om **utvärderings regler för tjänsten för Hälsoattestering för Windows >** i den här tabellen.
+Information **om utvärderingsregler > för enhetshälsa för Windows Health-utvärderingstjänsten** finns i den här tabellen.
 
-|Fjärråtkomstsegenskaper|Value|Åtgärd|
+|Egenskaper|Value|Åtgärd|
 |---|---|---|
-|Kräv BitLocker|Nödvändig|Använda|
-|Kräv säker start för att vara aktive rad på enheten|Nödvändig|Använda|
-|Kräv kod integritet|Nödvändig|Använda|
+|Kräv BitLocker|Kräv|Välj|
+|Kräv säker uppstart för att vara aktiverat på enheten|Kräv|Välj|
+|Kräv kodintegritet|Kräv|Välj|
 |
 
-Ange lämpliga värden för operativ system versioner baserat på dina IT-och säkerhets principer för **enhets egenskaper**.
+För **enhetsegenskaper** anger du lämpliga värden för operativsystemsversioner baserat på IT- och säkerhetsprinciper.
 
-För **Configuration Manager-efterlevnad** väljer du **Kräv**.
+Välj **Konfigurationshanteraren för** **regelefterlevnad.**
 
-Information om **säkerhet** finns i den här tabellen.
+Information **om systemsäkerhet** finns i den här tabellen.
 
-|Type (Typ)|Fjärråtkomstsegenskaper|Value|Åtgärd|
+|Type (Typ)|Egenskaper|Value|Åtgärd|
 |---|---|---|---|
-|Lösenord|Kräv lösen ord för att låsa upp mobila enheter|Nödvändig|Använda|
-||Enkla lösen ord|Blockera|Använda|
-||Lösen ords typ|Enhetens standard|Använda|
-||Minsta längd på lösen ord|18.6|Type (Typ)|
-||Maximalt antal minuter av inaktivitet innan lösen ord krävs|0,15|Type (Typ) <p> Den här inställningen stöds för Android-versionerna 4,0 och senare eller KNOX 4,0 och senare. För iOS-enheter stöds det för iOS 8,0 och senare.|
-||Lösen ordet upphör (dagar)|41|Type (Typ)|
-||Antal tidigare lösen ord för att förhindra åter användning|T5|Type (Typ)|
-||Kräv lösen ord när enheten återgår från Idle-tillstånd (mobil och Holographic)|Nödvändig|Tillgängligt för Windows 10 och senare|
-|Kryptering|Kryptering av data lagring på enhet|Nödvändig|Använda|
-|Enhets säkerhet|Vägg|Nödvändig|Använda|
-||Viktigt|Nödvändig|Använda|
-||Antispionprogram|Nödvändig|Använda <p> För den här inställningen krävs en antispionprograms lösning registrerade i Windows säkerhets Center.|
-|Defender|Microsoft Defender antimalware|Nödvändig|Använda|
-||Microsoft Defender antimalware-version||Type (Typ) <p> Stöds endast för Windows 10-skrivbordet. Microsoft rekommenderar att versions nummer inte överstiger fem gånger från den senaste versionen.|
-||Microsoft Defender antimalware-signatur uppdaterad|Nödvändig|Använda|
-||Real tids skydd|Nödvändig|Använda <p> Stöds endast för Windows 10-skrivbordet|
+|Lösenord|Kräv lösenord för att låsa upp mobila enheter|Kräv|Välj|
+||Enkla lösenord|Blockera|Välj|
+||Lösenordstyp|Standardenhet|Välj|
+||Minsta lösenordslängd|6|Type (Typ)|
+||Maximalt antal minuter av inaktivitet innan lösenord krävs|15|Type (Typ) <p> Den här inställningen stöds i Android versionerna 4.0 och senare, eller KNOX 4.0 och senare. För iOS-enheter stöds det för iOS 8.0 och högre.|
+||Lösenords giltighetstid (dagar)|41|Type (Typ)|
+||Antal tidigare lösenord för att förhindra återanvändning|5|Type (Typ)|
+||Kräva lösenord när enheten återgår från inaktivt läge (mobil och holografi)|Kräv|Tillgängligt för Windows 10 och senare|
+|Kryptering|Kryptering av datalagring på enhet|Kräv|Välj|
+|Enhetssäkerhet|Brandvägg|Kräv|Välj|
+||Antivirus|Kräv|Välj|
+||Antispionprogram|Kräv|Välj <p> Den här inställningen kräver en lösning mot spionprogram som är registrerad på Windows säkerhetscenter.|
+|Defender|Microsoft Defender Antimalware|Kräv|Välj|
+||Minimiversion av Microsoft Defender Antimalware||Type (Typ) <p> Stöds endast för Windows 10 på datorn. Microsoft rekommenderar versioner som inte är längre än fem efter i den senaste versionen.|
+||Microsoft Defender Antimalware-signatur uppdaterad|Kräv|Välj|
+||Realtidsskydd|Kräv|Välj <p> Stöds endast för Windows 10 på datorn|
 |
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender för Endpoint
 
-|Type (Typ)|Fjärråtkomstsegenskaper|Value|Åtgärd|
+|Type (Typ)|Egenskaper|Value|Åtgärd|
 |---|---|---|---|
-|Microsoft Defender för slut punkts regler|Kräv att enheten bevaras på eller under maskin risk poängen|Risk|Använda|
+|Microsoft Defender för slutpunktsregler|Kräv att enheten ligger på eller under maskinriskresultatet|Medel|Välj|
 |
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Kräv kompatibla datorer (men inte kompatibla telefoner och surfplattor)
 
-Innan du lägger till en princip för att kräva kompatibla datorer måste du registrera enheter för hantering i Intune. Om du använder multifaktorautentisering rekommenderas innan du registrerar enheter i Intune för att garantera att enheten är avsedd för den avsedda användaren.
+Se till att registrera enheter för hantering i Intune innan du lägger till en princip som kräver kompatibla datorer. Vi rekommenderar multifaktorautentisering innan du registrerar enheter i Intune för att säkerställa att enheten tillhör den avsedda användaren.
 
 Så här kräver du kompatibla datorer:
 
-1. Gå till [Azure-portalen](https://portal.azure.com)och logga in med dina inloggnings uppgifter.
-2. I listan med Azure-tjänster väljer du **Azure Active Directory**.
-3. Välj **säkerhet** i listan **Hantera** och välj sedan **villkorlig åtkomst**.
-4. Välj **ny princip** och ange den nya Principens namn.
+1. Gå till [Azure Portal och](https://portal.azure.com)logga in med dina autentiseringsuppgifter.
+2. Välj Azure Active Directory i listan **med Azure-tjänster.**
+3. Välj **Säkerhet** i listan Hantera **och välj** sedan **Villkorsstyrd åtkomst.**
+4. Välj **Ny** princip och skriv namnet på den nya principen.
 
-5. Under **uppgifter** väljer du **användare och grupper** och inkluderar vem du vill att principen ska gälla för. Uteslut också din undantags grupp för villkorsstyrd åtkomst.
+5. Under **Tilldelningar** väljer du **Användare och grupper** och tar med vem som principen ska gälla för. Exkludera även undantagsgruppen för villkorsstyrd åtkomst.
 
-6. Välj **molnappar eller åtgärder** under **uppgifter**.
+6. Välj **Molnappar** eller **-åtgärder under Uppgifter.**
 
-7. Om du vill **Inkludera** väljer du **Välj program > väljer** och väljer sedan önskade appar i listan med **moln program** . Välj till exempel Exchange Online. Välj **Välj** när du är klar.
+7. För **Inkludera** väljer du **Välj > Välj** och sedan önskade appar i listan **Med** molnappar. Välj till exempel Exchange Online. Välj **Välj** när du är klar.
 
-8. För att kräva kompatibla datorer (men inte kompatibla telefoner och surfplattor) väljer du **villkor > enhets plattformar** under **uppgifter**. Välj **Ja** för att **Konfigurera**. Välj  **Välj maskinvaruplattformar**, Välj **Windows** och **MacOS** och välj sedan **klar**.
+8. Om du vill kräva kompatibla datorer (men inte kompatibla telefoner och surfplattor) **väljer** du Villkor och > **enhetsplattformar.** Välj **Ja** för **Konfigurera.** Välj **Välj enhetsplattformar,** **välj Windows** och **macOS** och välj sedan **Klar.**
 
-9. Välj **Tillåt** under **åtkomst kontroller**.
+9. Välj **Bevilja under Access-kontroller.** 
 
-10. Välj **bevilja åtkomst** och kontrol lera **att kryss rutan Kräv enhet är markerad som kompatibel**. För flera kontroller väljer du **Kräv alla markerade kontroller**. Välj **Markera** när du är klar.
+10. Välj **Bevilja åtkomst** och kontrollera sedan **kräv att enheten markeras som kompatibel.** För flera kontroller väljer du **Kräv alla markerade kontroller.** Välj Välj när det **är klart.**
 
-11. Välj **på** för **Aktivera policy** och välj sedan **skapa**.
+11. Välj **På** för **att aktivera** principen och välj sedan **Skapa.**
 
 > [!NOTE]
-> Kontrol lera att enheten är kompatibel innan du aktiverar den här principen. Annars kan du låsa upp och inte ändra denna princip förrän ditt användar konto har lagts till i gruppen uteslutning för villkorlig åtkomst.
+> Kontrollera att enheten är kompatibel innan du aktiverar den här principen. Annars kan du bli utelåst och kommer inte att kunna ändra den här principen förrän användarkontot har lagts till i undantagsgruppen villkorsstyrd åtkomst.
 
 ## <a name="require-compliant-pcs-and-mobile-devices"></a>Kräv kompatibla datorer *och* mobila enheter
 
 Så här kräver du efterlevnad för alla enheter:
 
-1. Gå till [Azure-portalen](https://portal.azure.com)och logga in med dina inloggnings uppgifter.
-2. I listan med Azure-tjänster väljer du **Azure Active Directory**.
-3. Välj **säkerhet** i listan **Hantera** och välj sedan **villkorlig åtkomst**.
-4. Välj **ny princip** och ange den nya Principens namn.
+1. Gå till [Azure Portal och](https://portal.azure.com)logga in med dina autentiseringsuppgifter.
+2. Välj Azure Active Directory i listan **med Azure-tjänster.**
+3. Välj **Säkerhet** i listan Hantera **och välj** sedan **Villkorsstyrd åtkomst.**
+4. Välj **Ny** princip och skriv namnet på den nya principen.
 
-5. Under **uppgifter** väljer du **användare och grupper** och inkluderar vem du vill att principen ska gälla för. Uteslut också din undantags grupp för villkorsstyrd åtkomst.
+5. Under **Tilldelningar** väljer du **Användare och grupper** och tar med vem som principen ska gälla för. Exkludera även undantagsgruppen för villkorsstyrd åtkomst.
 
-6. Välj **molnappar eller åtgärder** under **uppgifter**.
+6. Välj **Molnappar** eller **-åtgärder under Uppgifter.**
 
-7. Om du vill **Inkludera** väljer du **Välj program > väljer** och väljer sedan önskade appar i listan med **moln program** . Välj till exempel Exchange Online. Välj **Välj** när du är klar.
+7. För **Inkludera** väljer du **Välj > Välj** och sedan önskade appar i listan **Med** molnappar. Välj till exempel Exchange Online. Välj **Välj** när du är klar.
 
-8. Välj **Tillåt** under **åtkomst kontroller**.
+8. Välj **Bevilja under Access-kontroller.** 
 
-9. Välj **bevilja åtkomst** och kontrol lera **att kryss rutan Kräv enhet är markerad som kompatibel**. För flera kontroller väljer du **Kräv alla markerade kontroller**. Välj **Markera** när du är klar.
+9. Välj **Bevilja åtkomst** och kontrollera sedan **kräv att enheten markeras som kompatibel.** För flera kontroller väljer du **Kräv alla markerade kontroller.** Välj Välj när det **är klart.**
 
-10. Välj **på** för **Aktivera policy** och välj sedan **skapa**.
+10. Välj **På** för **att aktivera** principen och välj sedan **Skapa.**
 
 > [!NOTE]
-> Kontrol lera att enheten är kompatibel innan du aktiverar den här principen. Annars kan du låsa upp och inte ändra denna princip förrän ditt användar konto har lagts till i gruppen uteslutning för villkorlig åtkomst.
+> Kontrollera att enheten är kompatibel innan du aktiverar den här principen. Annars kan du bli utelåst och kommer inte att kunna ändra den här principen förrän användarkontot har lagts till i undantagsgruppen villkorsstyrd åtkomst.
 
 ## <a name="next-step"></a>Nästa steg
 
-[![Steg 3: principer för gäst-och externa användare](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
+[![Steg 3: Principer för gästanvändare och externa användare](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
 
-[Läs mer om policy rekommendationer för gäst-och externa användare](identity-access-policies-guest-access.md)
+[Läs mer om principrekommendationer för gästanvändare och externa användare](identity-access-policies-guest-access.md)

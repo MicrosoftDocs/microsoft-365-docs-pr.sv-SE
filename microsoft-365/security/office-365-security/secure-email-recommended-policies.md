@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: f3654762bf4d4c28a82b1e93829094b9e0386a60
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 261c375aa17e4a3bc8f7d1b469d82621cf4ae45b
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926528"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097134"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Principrekommendationer för att skydda e-post
 
@@ -32,7 +32,7 @@ I den här artikeln beskrivs hur du implementerar rekommenderade principer för 
 
 De här rekommendationerna baseras på tre olika nivåer av säkerhet och skydd som kan tillämpas utifrån dina behovs granularitet: **baslinje,** känslig och **mycket reglerad.** Du kan läsa mer om dessa säkerhetsnivåer och de rekommenderade klientoperativsystemet, som refereras av dessa rekommendationer i den rekommenderade introduktionen av säkerhetsprinciper [och konfigurationer.](microsoft-365-policies-configurations.md)
 
-De här rekommendationerna kräver att användarna använder moderna e-postklienter, till exempel Outlook för iOS och Android på mobila enheter. Outlook för iOS och Android har stöd för de bästa funktionerna i Office 365. Dessa Outlook-mobilappar är också uppbyggda med säkerhetsfunktioner som stöder mobil användning och samarbete med andra microsoft-molnsäkerhetsfunktioner. Mer information finns i vanliga frågor [och svar om Outlook för iOS och Android.](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq)
+De här rekommendationerna kräver att användarna använder moderna e-postklienter, till exempel Outlook för iOS och Android på mobila enheter. Outlook för iOS och Android har stöd för de bästa funktionerna i Office 365. Outlook-mobilapparna är också uppbyggda med säkerhetsfunktioner som stöder mobil användning och samarbete med andra microsoft-molnsäkerhetsfunktioner. Mer information finns i vanliga frågor och svar om Outlook för [iOS och Android.](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq)
 
 ## <a name="update-common-policies-to-include-email"></a>Uppdatera vanliga principer så att e-post inkluderas
 
@@ -44,12 +44,12 @@ För att skydda e-post illustrerar följande diagram vilka principer som ska upp
 
 Observera att det finns en ny princip för Exchange Online som blockerar ActiveSync-klienter. Det här tvingar fram användningen av Outlook Mobile.
 
-Om du inkluderade Exchange Online och Outlook i omfattningen av principerna när du konfigurerade dem behöver du bara skapa den nya principen för att blockera ActiveSync-klienter. Granska principerna som visas i följande tabell och gör antingen de rekommenderade tilläggen eller bekräfta att dessa redan finns med. Varje princip länkar till de tillhörande konfigurationsanvisningarna i [Gemensamma principer för identitets- och enhetsåtkomst.](identity-access-policies.md)
+Om du inkluderade Exchange Online och Outlook i omfattningen av principerna när du konfigurerade dem behöver du bara skapa den nya principen för att blockera ActiveSync-klienter. Granska principerna som visas i följande tabell och gör antingen de rekommenderade tilläggen eller bekräfta att dessa redan finns med. Varje princip länkar till de tillhörande konfigurationsanvisningarna i [Commons principer för identitets- och enhetsåtkomst.](identity-access-policies.md)
 
 |Skyddsnivå|Principer|Mer information|
 |---|---|---|
 |**Grundläggande**|[Kräv MFA när inloggningsrisken är *medelhög* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Ta med Exchange Online i tilldelningen av molnappar|
-||[Blockera klienter som inte har stöd för modern autentisering](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Ta med Exchange Online i tilldelningen av molnappar|
+||[Blockera klienter som inte har stöd för modern autentisering](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Ta med Exchange Online i tilldelningen av molnappar|
 ||[Använda principer för APP-dataskydd](identity-access-policies.md#apply-app-data-protection-policies)|Se till att Outlook ingår i listan med program. Se till att uppdatera principen för varje plattform (iOS, Android, Windows)|
 ||[Kräv godkända appar och APPskydd](identity-access-policies.md#require-approved-apps-and-app-protection)|Ta med Exchange Online i listan med molnappar|
 ||[Kräv kompatibla PC-datorer](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Ta med Exchange Online i listan med molnappar|
@@ -73,9 +73,9 @@ Du kan begränsa möjligheten för användare att ladda ned bifogade filer från
 
 Här är stegen:
 
-1. [Anslut till en Fjärr-PowerShell-session i Exchange Online.](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
+1. [Ansluta till en Fjärr-PowerShell-session i Exchange Online.](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
 2. Om du inte redan har en OWA-postlådeprincip skapar du en med [cmdleten New-OwaMailboxPolicy.](https://docs.microsoft.com/powershell/module/exchange/new-owamailboxpolicy)
-3. Använd det här kommandot om du vill tillåta visning av bifogade filer men ingen nedladdning:
+3. Om du vill tillåta visning av bifogade filer men ingen nedladdning använder du det här kommandot:
 
    ```powershell
    Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnly
@@ -97,13 +97,13 @@ Här är stegen:
 
 ## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>Kräv att iOS- och Android-enheter måste använda Outlook
 
-För att säkerställa att användare av iOS- och Android-enheter bara kan komma åt arbets- eller skolinnehåll med Hjälp av Outlook för iOS och Android behöver du en princip för villkorsstyrd åtkomst som riktar dessa potentiella användare.
+För att säkerställa att användare av iOS- och Android-enheter bara kan komma åt arbets- eller skolinnehåll med Outlook för iOS och Android behöver du en princip för villkorsstyrd åtkomst som riktar dessa potentiella användare.
 
 Se anvisningarna för hur du konfigurerar den här principen i Hantera åtkomst till samarbete via [meddelande med Hjälp av Outlook för iOS och Android.]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)
 
 ## <a name="set-up-message-encryption"></a>Konfigurera meddelandekryptering
 
-Med de nya funktionerna för meddelandekryptering (OME) i Office 365, som utnyttjar skyddsfunktioner i Azure Information Protection, kan din organisation enkelt dela skyddad e-post med vem som helst på valfri enhet. Användare kan skicka och ta emot skyddade meddelanden med andra Microsoft 365-organisationer och icke-kunder som använder Outlook.com, Gmail och andra e-posttjänster.
+Med de nya funktionerna för meddelandekryptering i Office 365 (OME), som utnyttjar skyddsfunktioner i Azure Information Protection, kan din organisation enkelt dela skyddad e-post med vem som helst på valfri enhet. Användare kan skicka och ta emot skyddade meddelanden med andra Microsoft 365-organisationer och icke-kunder som använder Outlook.com, Gmail och andra e-posttjänster.
 
 Mer information finns i Konfigurera nya funktioner för meddelandekryptering i [Office 365.](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities)
 

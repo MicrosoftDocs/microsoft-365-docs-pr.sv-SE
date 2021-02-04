@@ -1,5 +1,5 @@
 ---
-title: Microsoft produktivitets Poäng – kommunikation
+title: Microsoft Productivity Score – kommunikation
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,173 +18,173 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: Information om kommunikationen-människor upplever produktivitets poäng.
-ms.openlocfilehash: b688063c10749d15fc5b00b629ee18afedba927e
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+description: Information om kommunikationen – Personernas produktivitetsresultat.
+ms.openlocfilehash: de59a57f1c856d94836b59eba6a4869831fe700a
+ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712585"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099718"
 ---
-# <a name="communication--people-experiences"></a>Kommunikation – folk upplevelse
+# <a name="communication--people-experiences"></a>Kommunikation – upplevelser för personer
 
-Produktivitets Poäng Stöder resan till digital transformation med insikter om hur din organisation använder Microsoft 365 och de teknik funktioner som stöder det. Din organisations poäng speglar personer och tekniska upplevelsemätningar och kan jämföras med riktmärke från organisationer som har samma storlek som din. Kommunikations kategorin är en del av folks måtten. Mer information finns i [Översikt över produktivitets Poäng](productivity-score.md) och Läs [Microsofts sekretess policy](https://privacy.microsoft.com/privacystatement).
+Produktivitetsresultatet stöder resan mot digital omvandling med insikter om hur din organisation använder Microsoft 365 och de teknikupplevelser som stöder den. Din organisations poäng speglar personer och tekniska upplevelsemätningar och kan jämföras med riktmärke från organisationer som har samma storlek som din. Kommunikationskategorin är en del av måtten på personers upplevelser. Mer information finns i översikten [över Productivity Score](productivity-score.md) och [Microsofts sekretesspolicy.](https://privacy.microsoft.com/privacystatement)
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-För att komma igång med kommunikations insikter måste personer i din organisation vara licensierade för:
+För att komma igång med kommunikationsinsikter måste personer i organisationen vara licensierade för:
 
 - Microsoft Teams
 - Yammer
 - Exchange Online
 
-Mer information finns i [tilldela licenser till användare](../manage/assign-licenses-to-users.md).
+Mer information finns i tilldela [licenser till användare.](../manage/assign-licenses-to-users.md)
 
-När personer har varit aktiva i ovanstående produkter minst en gång under de senaste 28 dagarna visas insikter.
+När användare har varit aktiva i ovanstående produkter minst en gång under de senaste 28 dagarna börjar du se insikterna.
 
-## <a name="why-your-organizations-communication-score-matters"></a>Därför är det viktigt att organisationens kommunikation Poäng 
+## <a name="why-your-organizations-communication-score-matters"></a>Varför din organisations kommunikationsresultat är viktigt 
 
-Microsoft förstår att personer har olika kommunikations behov. För att få ett snabbt svar på en fråga kan du välja att skicka ett snabb meddelande. Om du vill skicka status uppdateringar till din ledarskap kan du välja ett e-postmeddelande. För att nå en bredare publik kan du välja att anslå ett community-meddelande. Microsoft 365 möjliggör den här flexibiliteten i kommunikations läget för att passa allas behov. Undersökningar visar att med hjälp av realtidskommunikation skapas en mer enhetlig organisation och skapar moral, oavsett plats. [Se beviset](https://go.microsoft.com/fwlink/?linkid=2127669).
+Microsoft förstår att personer har olika kommunikationsbehov. Om du vill få ett snabbt svar på en fråga kan du välja att skicka ett snabbmeddelande. Om du vill skicka statusuppdateringar till din ledning kan du välja ett e-postmeddelande. Om du vill nå en bredare målgrupp kan du välja att publicera ett community-meddelande. Microsoft 365 möjliggör denna flexibilitet i kommunikationslägen så att de passar allas behov. Efterforskningar visar att användning av kommunikationsverktyg i realtid skapar en mer enhetlig organisation och skapar moral, oavsett plats. [Se bevisen.](https://go.microsoft.com/fwlink/?linkid=2127669)
 
-## <a name="how-we-calculate-the-communication-score"></a>Så här beräknas kommunikations poängen
+## <a name="how-we-calculate-the-communication-score"></a>Så här beräknar vi kommunikationsresultatet
 
-För kommunikation ger vi en huvudsaklig insikt, som innehåller de viktigaste värdena som är förknippade med kommunikationen i organisationen, kombinerat med Poäng ramverket för att beräkna organisationens poäng.
+För kommunikation tillhandahåller vi en primär insikt, som innehåller de viktigaste måtten som är kopplade till kommunikation i din organisation, kombinerat med ett poängramverk för att använda dessa mått för att beräkna organisationens poäng.
 
-### <a name="primary-insight"></a>Huvudsaklig insikt
+### <a name="primary-insight"></a>Primär insikt
 
-Microsoft 365 ger folk flexibiliteten att passa allas kommunikations format genom att erbjuda flera lägen. Huvud inblicken ger ett mått på personer i organisationen som använder flera olika lägen för att kommunicera.
+Microsoft 365 ger personer flexibiliteten att passa allas kommunikationsformat genom att erbjuda flera lägen. Den primära insikten ger ett mått på personer i organisationen som använder flera lägen för att kommunicera.
 
-:::image type="content" source="../../media/primaryinsight.png" alt-text="Huvudsaklig inblick i kommunikations lägena.":::
+:::image type="content" source="../../media/primaryinsight.png" alt-text="Primär insyn i kommunikationsläge.":::
 
-1. **Sidhuvud:** Tillhandahåller huvud måttet för personer som använder mer än ett kommunikations läge, nämligen:
+1. **Sidhuvud:** Visar det viktigaste mätvärdet för personer som använder mer än ett kommunikationsläge, nämligen:
 
    - Skicka e-postmeddelanden via Exchange
    - Skicka meddelanden via Teams
-   - Publicera i webb grupper i Yammer
+   - Publicera på communities i Yammer
 
-   Detta nyckeltal visas som en procent andel av alla som använder två eller fler av Exchange, teams eller Yammer. 
+   Det här nyckeltal visas som en procentandel av alla personer som använder två eller fler av Exchange, Teams eller Yammer. 
 
-2. **Brödtext:** Visar mer information om hur flexibilitet i kommunikations läget är värdefull för personer i organisationen.
+2. **Brödtext:** Ger mer information om hur flexibilitet i kommunikationsmetoder är värdefullt för personer i din organisation.
 
-3. **Visualisering av aktuell status:**
+3. **Visualisering av aktuellt tillstånd:**
 
-   - Vågrätt fält där den blå delen representerar procent satsen i sidhuvudet
-   - Markerar den (täljare/nämnare) som används för att beräkna procent satsen i huvudet:
-     - **Täljare**: antal personer som använder mer än ett kommunikations läge under de senaste 28 dagarna
-     - **Nämnare**: # av personer som marker ATS som aktiverade för fler än en kommunikations produkt under de senaste 28 dagarna
-   - Nyckeltal **svärdet för huvud** måttet visas också som en procents ATS
+   - Vågrät stapel där den blå delen representerar procentandelen uttryckt i sidhuvudet
+   - Markerar den (täljare/nämnare) som används för att beräkna procentandelen som uttrycks i rubriken:
+     - **Täljare:**# för personer som använt mer än ett kommunikationsläge under de senaste 28 dagarna
+     - **Nämnare:**# för personer som markerats som aktiverade för mer än en kommunikationsprodukt de senaste 28 dagarna
+   - **Peer Benchmark-värdet** för det viktiga mätvärdet visas också som en procentandel
 
-4. **Visa kommunikations resurser:** Klicka här om du vill samla in hela support innehållet i form av videor/artiklar relaterade till kommunikation. Härifrån kan du gå till den anpassade spelnings listan för kommunikation och sedan för alla poäng kategorier för produktivitet.
+4. **Visa kommunikationsresurser:** Om du klickar här visas allt supportinnehåll i form av videoklipp/artiklar om kommunikation. Därifrån kan du navigera till den anpassade spellistan för kommunikation och därefter för alla Produktivitetspoängskategorier.
 
-#### <a name="trend-visualization-of-primary-insight"></a>Trend visualisering av huvudsaklig insikt
+#### <a name="trend-visualization-of-primary-insight"></a>Trendvisualisering av primär insyn
 
- I det här diagrammet får du en överblick över täljaren av viktiga mått i huvud inblicken – det vill säga antalet personer i din organisation som använder mer än ett kommunikations läge under de senaste 180 dagarna. Här visas värdet för dagligt antal personer som använder flera olika former av kommunikation under de senaste 28 dagarna.
+ Det här diagrammet visar trenden för täljarens nyckelmått i den primära insikten, det vill säga antalet personer i organisationen som använder mer än ett kommunikationsläge under de senaste 180 dagarna. Här är det dagliga värdet en mängd av antalet personer som använder flera kommunikationssätt under de senaste 28 dagarna.
 
-:::image type="content" source="../../media/trend-communication.png" alt-text="Diagram som visar antalet personer som använder mer än ett läge för kommunikation och tid.":::
+:::image type="content" source="../../media/trend-communication.png" alt-text="Diagram som visar antalet personer som använder mer än ett läge för att kommunicera och tid.":::
 
-### <a name="scoring-model"></a>Poäng modell
+### <a name="scoring-model"></a>Bedömningsmodell
 
-Kommunikations poängen för din organisations mått på en agg regerings nivå (organisation), oavsett om det är konsekvent att kommunicera med flera olika lägen via e-post, chatt och gemenskaps inlägg under ett fönster med 28 dagar.  
+Kommunikationsresultatet för organisationens mått på en aggregerad (organisations)nivå oavsett om personer konsekvent kommunicerar med flera lägen mellan e-post, chatt och inlägg i communityn under ett 28-dagarsfönster.  
 
-Poängen tillhandahålls inte på individuell användar nivå.
+Resultat anges inte på användarnivå.
 
-## <a name="explore-how-your-organization-communicates"></a>Lär dig hur din organisation kommunicerar
+## <a name="explore-how-your-organization-communicates"></a>Utforska hur din organisation kommunicerar
 
-Vi tillhandahåller också information som hjälper dig att få insyn i organisationens struktur. Dessa ytterligare mått påverkar inte direkt ditt produktivitets poäng, men det hjälper dig att skapa en åtgärds plan som en del av din digitala transformering.
+Vi ger dig även information som hjälper dig att få bättre insyn i hur din organisation kommunicerar. De här måtten påverkar inte ditt produktivitetsresultat direkt, men kan hjälpa dig att skapa en handlingsplan som en del av din digitala transformation.
 
-### <a name="breakdown-of-communication-by-modes"></a>Uppdelning av kommunikation via lägen
+### <a name="breakdown-of-communication-by-modes"></a>Uppdelning av kommunikationen efter lägen
 
-:::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="! [Nedbrytning av kommunikations lägen.]":::
+:::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="! [Uppdelning av kommunikationslägen.]":::
 
-1. **Sidhuvud:** Framhäver målet att inblicken ger en detaljerad översikt över olika kommunikations lägen i kommunikationen.
+1. **Sidhuvud:** Framhäver målet med insikten att ge en detaljerad uppdelning över de olika kommunikationssätten som beaktas inom kommunikation.
 
-2. **Brödtext:** Innehåller information om värdet för att använda olika sätt att dela kunskap.
+2. **Brödtext:** Innehåller information om hur du använder olika lägen för att dela kunskaper.
 
-3. **Visualisering:** Fördelningen representerar användning för varje steg. Den färgade delen och bråket i varje stapel representerar antalet personer som skickar e-post, meddelanden eller community-inlägg som en procent andel av de som är aktiverade för det läget:
+3. **Visualisering:** Fördelningen visar hur respektive läge används. Den färgade delen och bråktalet på varje stapel representerar antalet personer som skickar e-postmeddelanden, meddelanden eller inlägg i communityn som en procentandel av antalet personer som aktiverats för det läget:
 
-   - **Personer som skickar e-post:** Den färgade delen och bråkdel representerar procent av användare som är aktiverade för Exchange och skickar e-post. Detta bråk är konstruerat från:
+   - **Personer som skickar e-postmeddelanden:** Den färgade delen och bråket representerar procentandelen användare som aktiverats för Exchange som skickar e-postmeddelanden. Det här bråket är uppbyggt av:
    
-     - **Täljare**: personer som skickar e-post under de senaste 28 dagarna.
-     - **Nämnare**: personer aktiverade för Exchange de senaste 28 dagarna.
+     - **Täljare:** Personer som skickat e-post de senaste 28 dagarna.
+     - **Nämnare:** Personer som har aktiverats för Exchange under de senaste 28 dagarna.
      
-   - **Personer som skickar meddelanden i Microsoft Teams:** Den färgade delen och bråkdel representerar procent av användare som är aktiverade för Microsoft Teams som skickar meddelanden. Detta bråk är konstruerat från:
+   - **Personer som skickar meddelanden i Microsoft Teams:** Den färgade delen och bråket representerar procentandelen användare som aktiverats för Microsoft Teams som skickar meddelanden. Det här bråket är uppbyggt av:
    
-     - **Täljare**: personer som skickar meddelanden i Microsoft Teams de senaste 28 dagarna.
-     - **Nämnare**: personer aktiverade för Microsoft Teams de senaste 28 dagarna.
+     - **Täljare:** Personer som skickat meddelanden i Microsoft Teams de senaste 28 dagarna.
+     - **Nämnare:** Personer som aktiverats för Microsoft Teams under de senaste 28 dagarna.
      
-   - **Personer som publicerar i communities:** Den färgade delen och delen representerar procent av användare som är aktiverade för Yammer och som bokförs i communities. Detta bråk är konstruerat från:
+   - **Personer som publicerar i communities:** Den färgade delen och bråket representerar procentandelen användare som är aktiverade för Yammer som publicerar i communities. Det här bråket är uppbyggt av:
    
-     - **Täljare:** Personer som skickar inlägg i Yammer-communities de senaste 28 dagarna.
-     - **Nämnare:** Personer aktiverade för Yammer under de senaste 28 dagarna.
+     - **Täljare:** Personer som publicerar Yammer grupper de senaste 28 dagarna.
+     - **Nämnare:** Personer som aktiverats Yammer de senaste 28 dagarna.
           
-4. **Visa relaterat innehåll:** Välj den här länken om du vill visa sorterade videoklipp och annat relaterat hjälp innehåll.
+4. **Visa relaterat innehåll:** Välj den här länken om du vill visa sorterade videor och annat relaterat hjälpinnehåll.
 
 ### <a name="mentions-in-emails"></a>@mentions i e-postmeddelanden
 
 :::image type="content" source="../../media/emailmentions.png" alt-text="! [E-postmeddelanden med omnämnanden.]":::
 
-1. **Sidhuvud:** Markerar ökningen av svars frekvensen för nya e-posttrådar startade de senaste 28 dagarna när de innehåller @mentions.
+1. **Sidhuvud:** Markerar den ökade svarshastigheten för nya e-posttrådar som startats de senaste 28 dagarna när de innehåller @mentions.
 
-2. **Brödtext:** Innehåller information om värdet för att använda @mentions i e-postmeddelanden. Dessutom uttrycks de personer som använder @mentions som en procent andel av alla användare som har skickat ett e-postmeddelande under de senaste 28 dagarna.
+2. **Brödtext:** Innehåller information om värdet för att använda @mentions e-postmeddelanden. Dessutom uttrycks personer som @mentions procent av alla användare som har skickat ett e-postmeddelande under de senaste 28 dagarna.
 
-3. **Visualisering:** Delar upp svars frekvensen för nya e-posttrådar baserat på om de hade @mentions eller inte:
+3. **Visualisering:** Bryter ned svarsfrekvensen för nya e-posttrådar baserat på om de @mentions eller inte:
 
-   - **Svar på e-postmeddelanden med \@ omnämnanden:** den färgade delen och bråket representerar svars frekvensen för nya e-posttrådar som innehåller @mentions. Detta bråk är konstruerat från:
+   - **Svar på \@ e-postmeddelanden med omnämnanden:** Den färgade delen och bråket representerar svarsfrekvensen för nya e-posttrådar som innehåller @mentions. Det här bråket är uppbyggt av:
    
-     - **Täljare:** Nya e-posttrådar som innehåller @mentions som har startats och fått ett svar under de senaste 28 dagarna.
-     - **Nämnare:** Nya e-posttrådar som innehåller @mentions som har startats de senaste 28 dagarna.
+     - **Täljare:** Nya e-posttrådar @mentions som har startats och fått ett svar under de senaste 28 dagarna.
+     - **Nämnare:** Nya e-posttrådar @mentions som startats de senaste 28 dagarna.
      
-   - **Svar på e-postmeddelanden utan \@ omnämnande:** den färgade delen och bråkdel representerar svars frekvensen för nya e-posttrådar som innehåller @mentions. Detta bråk är konstruerat från:
+   - **Svar på \@ e-postmeddelanden utan omnämnanden:** Den färgade delen och bråket representerar svarsfrekvensen för nya e-posttrådar som innehåller @mentions. Det här bråket är uppbyggt av:
    
-     - **Täljare:** Nya e-posttrådar som inte innehåller @mentions, som har startats och också fått ett svar de senaste 28 dagarna.
-     - **Nämnare:** Nya e-posttrådar som inte innehåller @mentions som har startats under de senaste 28 dagarna.
+     - **Täljare:** Nya e-posttrådar som inte innehåller @mentions, som startades och också fått ett svar under de senaste 28 dagarna.
+     - **Nämnare:** Nya e-posttrådar som @mentions som har startats de senaste 28 dagarna.
      
-4. **Visa relaterat innehåll:** Välj den här länken om du vill visa sorterade videoklipp och annat relaterat hjälp innehåll.
+4. **Visa relaterat innehåll:** Välj den här länken om du vill visa sorterade videor och annat relaterat hjälpinnehåll.
 
 
-### <a name="breakdown-of-messages-by-type-in-microsoft-teams"></a>Uppdelning av meddelanden efter typ i Microsoft Teams
+### <a name="breakdown-of-messages-by-type-in-microsoft-teams"></a>Detaljerad information om meddelanden efter typ i Microsoft Teams
 
-:::image type="content" source="../../media/teamsmessages.png" alt-text="! [Teams meddelande typer.]":::
+:::image type="content" source="../../media/teamsmessages.png" alt-text="! [Meddelandetyper i Teams.]":::
 
-1. **Sidhuvud:** Markerar de personer som skickade kanal meddelanden som en procent andel av de som skickade meddelanden (inklusive chatt och kanal meddelanden) under de senaste 28 dagarna.
+1. **Sidhuvud:** Markerar de personer som har skickat kanalmeddelanden som en procentandel av personer som har skickat någon typ av meddelande (inklusive chatt- och kanalmeddelanden) under de senaste 28 dagarna.
 
-2. **Brödtext:** Innehåller information om värdet för att använda kanal meddelanden i Microsoft Teams.
+2. **Brödtext:** Innehåller information om värdet av att använda kanalmeddelanden i Microsoft Teams.
 
-3. **Visualisering:** Delar upp användning av chatt-och kanal meddelanden:
+3. **Visualisering:** Bryter ned användningen av chatt- och kanalmeddelanden:
 
-      - **Personer som skickar chatt meddelanden:** Den färgade delen och delen representerar användning av chatt meddelanden i personer som har skickat meddelanden i Microsoft Teams. Bråket är konstruerat från:
+      - **Personer som skickar chattmeddelanden:** Den färgade delen och bråket representerar användningen av chattmeddelanden i personer som har skickat meddelanden i Microsoft Teams. Bråket skapas från:
       
-        - **Täljare:** Personer som har skickat chatt meddelanden från Microsoft Teams de senaste 28 dagarna.
-        - **Nämnare:** Personer som har skickat meddelanden i Microsoft Teams de senaste 28 dagarna.
+        - **Täljare:** Personer som har skickat chattmeddelanden på Microsoft Teams de senaste 28 dagarna.
+        - **Nämnare:** Personer som har skickat meddelanden på Microsoft Teams under de senaste 28 dagarna.
         
-      - **Personer som skickar kanal meddelanden:** Den färgade delen och delen representerar användning av kanal meddelanden i personer som skickar meddelanden i Microsoft Teams. Bråket är konstruerat från:
+      - **Personer som skickar kanalmeddelanden:** Den färgade delen och bråket representerar användningen av kanalmeddelanden i personer som skickar meddelanden i Microsoft Teams. Bråket skapas från:
       
-        - **Täljare:** Personer som har skickat chatt meddelanden från Microsoft Teams de senaste 28 dagarna.
-        - **Nämnare:** Personer som har skickat meddelanden i Microsoft Teams de senaste 28 dagarna.
+        - **Täljare:** Personer som har skickat kanalmeddelanden i Microsoft Teams under de senaste 28 dagarna.
+        - **Nämnare:** Personer som har skickat meddelanden på Microsoft Teams under de senaste 28 dagarna.
         
-4. **Visa relaterat innehåll:** Välj den här länken om du vill visa sorterade videoklipp och annat relaterat hjälp innehåll.
+4. **Visa relaterat innehåll:** Välj den här länken om du vill visa sorterade videor och annat relaterat hjälpinnehåll.
 
 ### <a name="questions-and-answers-in-yammer"></a>Frågor och svar i Yammer
 
 :::image type="content" source="../../media/yammerqsandas.png" alt-text="[Frågor och svar i Yammer]"::: 
 
-1. **Sidhuvud:** Markerar de inlägg som har marker ATS som frågor på Yammer och som har fått ett svar markerat som &quot; bästa svar &quot; som en procent andel av alla poster som har marker ATS som frågor på Yammer under de senaste 28 dagarna.
+1. **Sidhuvud:** Markerar de inlägg som markerats som frågor på Yammer som har fått ett svar markerat som bästa svar som en procentandel av alla inlägg som markerats som frågor på Yammer de &quot; &quot; senaste 28 dagarna.
 
-2. **Brödtext:** Innehåller information om värdet för att använda frågor och svar i Yammer för att dela information.
+2. **Brödtext:** Innehåller information om värdet av att använda frågor och svar i Yammer att dela kunskaper.
 
-3. **Visualisering:** Delar upp användning av frågor och svar i organisationen:
+3. **Visualisering:** Om du inte vill använda funktionen frågor och svar i organisationen bryts användningen av:
 
-   - **Frågor:** Den färgade delen av fältet och det associerade numret visar det totala antalet poster som har marker ATS som frågor under de senaste 28 dagarna.
-   - **Frågor med svar:** Den färgade delen av stapeln och det associerade numret representerar antalet inlägg som har marker ATS som frågor och fått svar under de senaste 28 dagarna.
-   - **Frågor med bästa möjliga svar:** Den färgade delen av stapeln och det associerade numret representerar antalet inlägg som har marker ATS som frågor och som också har fått ett &quot; bäst svar &quot; under de senaste 28 dagarna.
+   - **Frågor:** Den färgade delen av fältet och tillhörande nummer representerar det totala antalet inlägg som har markerats som frågor under de senaste 28 dagarna.
+   - **Frågor med svar:** Den färgade delen av fältet och det associerade talet representerar antalet inlägg som markerats som frågor och har fått svar under de senaste 28 dagarna.
+   - **Frågor med bästa svar:** Den färgade delen av fältet och det associerade talet representerar antalet inlägg som har markerats som frågor och även fått ett bästa svar under de &quot; &quot; senaste 28 dagarna.
       
-4. **Visa relaterat innehåll:** Välj den här länken om du vill visa sorterade videoklipp och annat relaterat hjälp innehåll.
+4. **Visa relaterat innehåll:** Välj den här länken om du vill visa sorterade videor och annat relaterat hjälpinnehåll.
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Microsoft 365-appar hälsa – teknik upplevelser](apps-health.md) (artikel) \
-[Innehålls samarbete – folk upplevelse](content-collaboration.md) (artikel) \
-[Möten – människor upplever](meetings.md) (artikel) \
-[Rörlighet – människor upplever](mobility.md) (artikel) \
-[Integritets inställningar för produktivitets Poäng](privacy.md) (artikel) \
-[Samarbete – människor upplever](teamwork.md) (artikel)
+[Hälsa för Microsoft 365-appar – Teknikupplevelser](apps-health.md) (artikel)\
+[Innehållssamarbete – Upplevelser för personer](content-collaboration.md) (artikel)\
+[Möten – Upplevelser för personer](meetings.md) (artikel)\
+[Mobility – Upplevelser för personer](mobility.md) (artikel)\
+[Sekretesskontroller för Productivity Score](privacy.md) (artikel)\
+[Samarbete – upplevelser för personer](teamwork.md) (artikel)

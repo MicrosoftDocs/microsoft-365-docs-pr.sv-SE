@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 Client App Support: Villkorsstyrd åtkomst'
+title: 'Stöd för Microsoft 365-klientappen: Multifaktorautentisering'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -7,34 +7,36 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MET150
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
+search.appverid:
+- MET150
 f1.keywords:
 - NOCSH
-description: I den här artikeln får du lära dig vilka plattformar, klienter och PowerShell-moduler som stöder villkorsstyrd åtkomst för Microsoft 365.
+description: I den här artikeln får du lära dig vilka plattformar, klienter och PowerShell-moduler som har stöd för multifaktorautentisering för Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 969dd9d712fe124458273144b3e7974e03ade9e0
+ms.openlocfilehash: fdec611fc595cdc15abb0fc1fb7a998f7a615ff7
 ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097252"
+ms.locfileid: "50097486"
 ---
-# <a name="microsoft-365-client-app-support-conditional-access"></a>Microsoft 365 Client App Support: Villkorsstyrd åtkomst
+# <a name="microsoft-365-client-app-support-multi-factor-authentication"></a>Stöd för Microsoft 365-klientappen: Multifaktorautentisering
 
-På den moderna arbetsplatsen har användarna åtkomst till organisationens resurser via olika enheter och appar från valfri plats. Därför räcker det inte längre att fokusera på vem som kan komma åt en resurs. Organisationen måste också stödja hur och var en resurs används i infrastrukturen för åtkomstkontroll.
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Med Azure Active Directory-enhet, plats och multifaktorautentiseringsbaserad villkorsstyrd åtkomst kan du uppfylla detta nya krav. Villkorsstyrd åtkomst är en funktion i Azure Active Directory som gör att du kan tillämpa kontroller för åtkomst till appar i din miljö, allt baserat på specifika villkor och hanteras från en central plats.
+För att ge ytterligare säkerhetsnivå för inloggningar kan klienter konfigureras för att använda multifaktorautentisering (MFA), som använder både ett användarlösenord och en ytterligare metod för användarverifiering baserat på:
 
-Läs mer om [villkorlig åtkomst i Azure Active Directory.](/azure/active-directory/conditional-access/)
+- Något som de äger som inte är lätt dubblerat, till exempel en smartphone.
+- Något som användaren har unikt och oumbärligt, till exempel fingeravtryck, ansikte eller annat biometriskt attribut
+
+Läs mer om [multifaktorautentisering.](/azure/active-directory/authentication/multi-factor-authentication)
 
 ## <a name="supported-clients--platforms"></a>Klienter som stöds & plattformar
 
-De senaste versionerna av följande klienter och plattformar har stöd för villkorsstyrd åtkomst. Mer information om plattformsstöd i Microsoft 365 finns i [Systemkrav för Microsoft 365.](/microsoft-365/microsoft-365-and-office-resources)
-
+De senaste versionerna av följande klienter och plattformar har stöd för multifaktorautentisering. Mer information om plattformsstöd i Microsoft 365 finns i [Systemkrav för Microsoft 365.](/microsoft-365/microsoft-365-and-office-resources)
 <br>
 <br>
 
@@ -44,7 +46,7 @@ De senaste versionerna av följande klienter och plattformar har stöd för vill
 | Åtkomst | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
 | Azure Admin | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
 | Företagsportal | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Saknas |
-| Cortana | Planerat | Planerat | Saknas | ![Stöds](../media/check-mark.png) | Saknas |
+| Cortana | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Saknas | ![Stöds](../media/check-mark.png) | Saknas |
 | Delve | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
 | Edge | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
 | Excel | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) |
@@ -59,13 +61,14 @@ De senaste versionerna av följande klienter och plattformar har stöd för vill
 | OneNote | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) |
 | Outlook | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) |
 | Planner | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
-| Power Apps | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Saknas | Planerat | Saknas |
+| Power Apps | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Saknas | ![Stöds](../media/check-mark.png) | Saknas |
 | Power Automate | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
 | Power BI | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Saknas | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) |
 | PowerPoint | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) |
 | Project | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
 | Publisher | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
-| Skype för företag | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT ||
+| Skype för företag | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Saknas | ![Stöds](../media/check-mark.png) |
+| Skype för företag-administratör | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
 | SharePoint | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
 | SharePoint Online-administratör | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
 | Fästisar | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) | Saknas |

@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: a3485896cae5e41808cfd16a77d484a35c768a6d
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: a217970098ab88da286bb44a69845b6383a27bbc
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931776"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097180"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Principrekommendationer för att skydda SharePoint-webbplatser och -filer
 
@@ -50,14 +50,14 @@ I följande tabell visas de principer som du antingen behöver granska och uppda
 |Skyddsnivå|Principer|Mer information|
 |---|---|---|
 |**Grundläggande**|[Kräv MFA när inloggningsrisken är *medelhög* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Ta med SharePoint när du tilldelning av molnappar.|
-||[Blockera klienter som inte har stöd för modern autentisering](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Ta med SharePoint i tilldelningen av molnappar.|
+||[Blockera klienter som inte har stöd för modern autentisering](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Ta med SharePoint när du tilldelning av molnappar.|
 ||[Använda principer för APP-dataskydd](identity-access-policies.md#apply-app-data-protection-policies)|Se till att alla rekommenderade appar finns med i listan med appar. Se till att uppdatera principen för varje plattform (iOS, Android, Windows).|
 ||[Kräv kompatibla PC-datorer](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Ta med SharePoint i listan med molnappar.|
 ||[Använda appanvändningsbegränsningar i SharePoint](#use-app-enforced-restrictions-in-sharepoint)|Lägg till den här nya principen. Det innebär att Azure Active Directory (Azure AD) använder inställningarna som anges i SharePoint. Den här principen gäller för alla användare, men påverkar bara åtkomsten till webbplatser som ingår i SharePoint-åtkomstprinciper.|
 |**Känslig**|[Kräv MFA när inloggningsrisken är *låg,* *medel* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Ta med SharePoint i uppgifterna för molnappar.|
 ||[Kräv kompatibla datorer *och* mobila enheter](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Ta med SharePoint i listan med molnappar.|
 ||[Princip för åtkomstkontroll i SharePoint:](#sharepoint-access-control-policies)Tillåt åtkomst endast i webbläsaren till vissa SharePoint-webbplatser från ohanterade enheter.|Det förhindrar redigering och nedladdning av filer. Använd PowerShell för att ange webbplatser.|
-|**Strikt reglerad**|[*Kräv* alltid MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Ta med SharePoint i tilldelningen av molnappar.|
+|**Strikt reglerad**|[*Kräv* alltid MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Ta med SharePoint när du tilldelning av molnappar.|
 ||[Princip för åtkomstkontroll i SharePoint:](#use-app-enforced-restrictions-in-sharepoint)Blockera åtkomst till vissa SharePoint-webbplatser från ohanterade enheter.|Använd PowerShell för att ange webbplatser.|
 |
 
@@ -72,13 +72,13 @@ Information om hur du konfigurerar den här principen finns i "Blockera eller be
 Microsoft rekommenderar att du skyddar innehåll på SharePoint-webbplatser med känsligt och starkt reglerat innehåll med enhetsåtkomstkontroller. Det gör du genom att skapa en princip som anger skyddsnivån och webbplatserna som skyddet ska gälla för.
 
 - Känsliga webbplatser: Tillåt åtkomst endast i webbläsaren. Det förhindrar att användare redigerar och laddar ned filer.
-- Starkt reglerade webbplatser: Blockera åtkomst från ohanterade enheter.
+- Webbplatser med hög lagstiftning: Blockera åtkomst från ohanterade enheter.
 
 Se "Blockera eller begränsa åtkomst till specifika SharePoint-webbplatssamlingar eller OneDrive-konton" i Kontrollera åtkomst [från ohanterade enheter.](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)
 
 ## <a name="how-these-policies-work-together"></a>Så här fungerar dessa principer tillsammans
 
-Det är viktigt att förstå att SharePoint-webbplatsbehörigheter vanligtvis baseras på affärs behov av åtkomst till webbplatser. De här behörigheterna hanteras av webbplatsägare och kan vara mycket dynamiska. Användning av principer för enhetsåtkomst i SharePoint säkerställer skydd för dessa webbplatser, oavsett om användare tilldelas till en Azure AD-grupp som är kopplad till baslinje, känsligt eller starkt reglerat skydd.
+Det är viktigt att förstå att SharePoint-webbplatsbehörigheter vanligtvis baseras på affärs behov av åtkomst till webbplatser. De här behörigheterna hanteras av webbplatsägare och kan vara mycket dynamiska. Genom att använda principer för enhetsåtkomst i SharePoint skyddas de här webbplatserna, oavsett om användarna tilldelas till en Azure AD-grupp som är kopplad till baslinje, känsligt eller starkt reglerat skydd.
 
 Följande bild visar ett exempel på hur principer för enhetsåtkomst i SharePoint skyddar användarens åtkomst till webbplatser.
 
@@ -89,7 +89,7 @@ Följande bild visar ett exempel på hur principer för enhetsåtkomst i SharePo
 James har grundläggande villkorsstyrda åtkomstprinciper tilldelade, men han kan ges åtkomst till SharePoint-webbplatser med känsligt eller starkt reglerat skydd.
 
 - Om James öppnar en känslig eller hårt reglerad webbplats är han medlem i sin dator, men hans åtkomst beviljas så länge hans dator är kompatibel.
-- Om James öppnar en känslig webbplats är han medlem i sin ohanterade telefon, som är tillåten för grundläggande användare, han får endast webbläsaråtkomst till den känsliga webbplatsen på grund av principen för enhetsåtkomst som konfigurerats för den här webbplatsen.
+- Om James öppnar en känslig webbplats är han medlem i sin ohanterade telefon, vilket är tillåtet för grundläggande användare, han får endast webbläsaråtkomst till den känsliga webbplatsen på grund av principen för enhetsåtkomst som konfigurerats för den här webbplatsen.
 - Om James använder en webbplats med hög lagstiftning är han medlem i sin ohanterade telefon, så han kommer att blockeras på grund av åtkomstprincipen som konfigurerats för den här webbplatsen. Han kan bara komma åt den här webbplatsen med sin hanterade och kompatibla dator.
 
 ## <a name="next-step"></a>Nästa steg

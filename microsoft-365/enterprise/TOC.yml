@@ -113,14 +113,16 @@
               href: azure-integration.md
             - name: Azure ExpressRoute
               href: azure-expressroute.md
-        - name: Stöd för klientapp
+        - name: Support för klient- och tjänsterapp
           items:
+            - name: Support för klient- och tjänsterapp
+              href: microsoft-365-client-services-app-support.md
             - name: Certifikatbaserad autentisering
               href: microsoft-365-client-support-certificate-based-authentication.md
             - name: Villkorsstyrd åtkomst
               href: microsoft-365-client-support-conditional-access.md
-            - name: Modern autentisering
-              href: microsoft-365-client-support-modern-authentication.md
+            - name: Multifaktorautentisering
+              href: microsoft-365-client-support-multi-factor-authentication.md
             - name: Enkel inloggning
               href: microsoft-365-client-support-single-sign-on.md
             - name: 'Välj mellan grundläggande mobilitet, säkerhet och Intune'

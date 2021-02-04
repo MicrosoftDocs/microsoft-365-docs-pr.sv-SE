@@ -1,5 +1,5 @@
 ---
-title: Support för Azure information Protection för Office 365 som drivs av 21Vianet
+title: Azure Information Protection-support för Office 365 som drivs av 21Vianet
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -18,144 +18,146 @@ search.appverid:
 - MET150
 - GEU150
 - GEA150
-description: Lär dig mer om Azure information Protection (AIP) för Office 365 som drivs av 21Vianet och hur du konfigurerar den för kunder i Kina.
+description: Läs mer om Azure Information Protection (AIP) för Office 365 som drivs av 21Vianet och hur du konfigurerar det för kunder i Kina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: cee50384587ffc3e1e43eb9c6bb07d2e0ced7e13
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 300e7633237511fb9de64199ae7cf54594f2239e
+ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988050"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099684"
 ---
-# <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Support för Azure information Protection för Office 365 som drivs av 21Vianet
+# <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Azure Information Protection-support för Office 365 som drivs av 21Vianet
 
-I den här artikeln beskrivs skillnaderna mellan Azure information Protection (AIP)-stöd för Office 365 som drivs av 21Vianet och kommersiella bud samt särskilda anvisningar för hur du konfigurerar AIP för kunder i Kina, &mdash; inklusive hur du installerar den lokala skannern för AIP och hanterar innehålls genomsökningar.
+I den här artikeln beskrivs skillnaderna mellan stöd för Azure Information Protection (AIP) för Office 365 som drivs av 21Vianet och kommersiella erbjudanden, samt specifika instruktioner för hur du konfigurerar AIP för kunder i Kina, inklusive hur du installerar en lokal AIP-skanner och hanterar snabbsökningsjobb för &mdash; innehåll.
 
-## <a name="differences-between-aip-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>Skillnader mellan AIP för Office 365 som drivs av 21Vianet och kommersiella bud
+## <a name="differences-between-aip-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>Skillnader mellan AIP för Office 365 som drivs av 21Vianet och kommersiella erbjudanden
 
-När vårt mål är att leverera alla kommersiella funktioner och funktioner till kunder i Kina med vårt AIP för Office 365 som drivs av 21Vianet-bud finns det en del av de funktioner som vi vill framhäva.
+Även om vårt mål är att leverera alla kommersiella funktioner till kunder i Kina med AIP för Office 365 som drivs av 21Vianet-erbjudandet finns det några funktioner som vi vill lyfta fram.
 
-Följande lista innehåller befintliga luckor mellan AIP för Office 365 som drivs av 21Vianet och våra kommersiella bud per den 2021 januari:
+Följande lista innehåller de befintliga luckorna mellan AIP för Office 365 som drivs av 21Vianet och våra kommersiella erbjudanden från och med januari 2021:
 
-- IRM (Information Rights Management) stöds endast för Microsoft 365-program för företag (version 11731,10000 eller senare). Office 2010, Office 2013 och andra Office 2016-versioner stöds inte.
+- IRM (Information Rights Management) stöds endast för Microsoft 365-program för företag (version 11731.10000 eller senare). Office 2010, Office 2013 och andra versioner av Office 2016 stöds inte.
 
-- Migrering från AD RMS (Active Directory Rights Management Services) till AIP är inte tillgängligt för tillfället.
+- Migrering från AD RMS (Active Directory Rights Management Services) till AIP är för närvarande inte tillgänglig.
   
-- Det går att dela skyddade e-postmeddelanden med användare i det kommersiella molnet.
+- Delning av skyddade e-postmeddelanden med användare i det kommersiella molnet stöds.
   
-- Det går för närvarande inte att dela dokument och bifogade filer med användare i det kommersiella molnet. Detta inkluderar Office 365 som drivs av 21Vianet-användare i det kommersiella molnet, icke-Office 365 som drivs av 21Vianet-användare i det kommersiella molnet och användare med en licens för en person.
+- Delning av dokument och e-postbilagor med användare i det kommersiella molnet är för närvarande inte tillgängligt. Detta omfattar Office 365 som drivs av 21Vianet-användare i kommersiella molnet, icke-Office 365 som drivs av 21Vianet-användare i kommersiella molnet och användare med en RMS för individer-licens.
   
 - IRM med SharePoint (IRM-skyddade webbplatser och bibliotek) är för närvarande inte tillgängligt.
   
-- Mobil enhets tillägget för AD RMS är för närvarande inte tillgängligt.
+- Tillägget för mobila enheter för AD RMS är för närvarande inte tillgängligt.
 
-- [Mobile Viewer](/azure/information-protection/rms-client/mobile-app-faq) stöds inte av Azure Kina 21Vianet.
+- [Mobile Viewer stöds](/azure/information-protection/rms-client/mobile-app-faq) inte av Azure China 21Vianet.
+
+- Området AIP på Azure-portalen är inte tillgängligt för kunder i Kina. Använd [PowerShell-kommandon](#step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs) i stället för att utföra åtgärder i portalen, till exempel installera den lokala skannern och hantera sökjobben för innehåll.
 
 ## <a name="configure-aip-for-customers-in-china"></a>Konfigurera AIP för kunder i Kina
 
 Så här konfigurerar du AIP för kunder i Kina:
-1. [Aktivera rättighets hantering för innehavaren](#step-1-enable-rights-management-for-the-tenant).
+1. [Aktivera rättighetshantering för klientorganisationen.](#step-1-enable-rights-management-for-the-tenant)
 
-2. [Konfigurera DNS-kryptering](#step-2-configure-dns-encryption).
+2. [Konfigurera DNS-kryptering.](#step-2-configure-dns-encryption)
 
-3. [Installera och konfigurera AIP Unified Labeling-klienten](#step-3-install-and-configure-the-aip-unified-labeling-client).
+3. [Installera och konfigurera klient för enhetliga etiketter i AIP.](#step-3-install-and-configure-the-aip-unified-labeling-client)
 
-4. [Konfigurera AIP-appar i Windows](#step-4-configure-aip-apps-on-windows).
+4. [Konfigurera AIP-appar i Windows.](#step-4-configure-aip-apps-on-windows)
 
-5. [Installera AIP lokala skanner och hantera innehålls genomsöknings jobb](#step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs). 
+5. [Installera den lokala AIP-skannern och hantera genomsökningsjobb för innehåll.](#step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs) 
 
-### <a name="step-1-enable-rights-management-for-the-tenant"></a>Steg 1: Aktivera rättighets hantering för klient organisationen
+### <a name="step-1-enable-rights-management-for-the-tenant"></a>Steg 1: Aktivera rättighetshantering för klientorganisationen
 
-För att krypteringen ska fungera korrekt måste RMS vara aktiverat för innehavaren.
+För att krypteringen ska fungera korrekt måste RMS vara aktiverat för klientorganisationen.
 
-1. Kontrol lera om RMS är aktiverat:
+1. Kontrollera om RMS är aktiverat:
 
     1. Starta PowerShell som administratör.
-    2. Om AIPService-modulen inte är installerad kör du `Install-Module AipService` .
+    2. Om AIPService-modulen inte är installerad kör `Install-Module AipService` du.
     3. Importera modulen med `Import-Module AipService` .
-    4. Anslut till tjänsten med `Connect-AipService -environmentname azurechinacloud` .
-    5. Kör `(Get-AipServiceConfiguration).FunctionalState` och kontrol lera om tillståndet är `Enabled` .
+    4. Anslut till tjänsten med hjälp av `Connect-AipService -environmentname azurechinacloud` .
+    5. Kör `(Get-AipServiceConfiguration).FunctionalState` och kontrollera om statusen är `Enabled` .
 
-2. Kör om det funktionella läget är `Disabled` `Enable-AipService` .
+2. Om funktionstillståndet är `Disabled` , kör `Enable-AipService` .
 
 ### <a name="step-2-configure-dns-encryption"></a>Steg 2: Konfigurera DNS-kryptering
 
-För att krypteringen ska fungera korrekt måste Office-klientprogrammet ansluta till Kina-instansen av tjänsten och starta därifrån. För att omdirigera klient program till den högra tjänst instansen måste klient organisationens administratör konfigurera en DNS SRV-post med information om URL-adressen för Azure RMS. Utan DNS SRV-posten försöker klient programmet ansluta till den offentliga moln instansen som standard och kommer inte att fungera.
+För att krypteringen ska fungera måste Office-klientprogrammen ansluta till Kina-instansen av tjänsten och bootstrap därifrån. För att omdirigera klientprogram till rätt tjänstinstans måste innehavaradministratören konfigurera en DNS SRV-post med information om Azure RMS URL. Utan DNS SRV-posten försöker klientprogrammet ansluta till den offentliga molninstansen som standard och kommer att misslyckas.
 
-Dessutom är antagandet att användare loggar in med ett användar namn som baseras på den klient organisationens domän (till exempel `joe@contoso.cn` ) och inte `onmschina` användar namnet (till exempel `joe@contoso.onmschina.cn` ). Domän namnet från username används för DNS-omdirigering till rätt tjänst instans.
+Antagandet är också att användare loggar in med ett användarnamn baserat på den klientägda domänen (t.ex. ) och inte `joe@contoso.cn` `onmschina` användarnamnet (t.ex. `joe@contoso.onmschina.cn` ). Domännamnet från användarnamnet används för DNS-omdirigering till rätt tjänstinstans.
 
 #### <a name="configure-dns-encryption---windows"></a>Konfigurera DNS-kryptering – Windows
 
-1. Hämta RMS-ID:
+1. Skaffa RMS-ID:
 
     1. Starta PowerShell som administratör.
-    2. Om AIPService-modulen inte är installerad kör du `Install-Module AipService` .
-    3. Anslut till tjänsten med `Connect-AipService -environmentname azurechinacloud` .
-    4. Kör `(Get-AipServiceConfiguration).RightsManagementServiceId` för att hämta RMS-ID.
+    2. Om AIPService-modulen inte är installerad kör `Install-Module AipService` du.
+    3. Anslut till tjänsten med hjälp av `Connect-AipService -environmentname azurechinacloud` .
+    4. Kör `(Get-AipServiceConfiguration).RightsManagementServiceId` för att få RMS-ID.
 
-2. Logga in på din DNS-leverantör, gå till DNS-inställningarna för domänen och Lägg sedan till en ny SRV-post.
+2. Logga in på din DNS-leverantör, navigera till DNS-inställningarna för domänen och lägg sedan till en ny SRV-post.
 
-    - Tjänst = `_rmsredir`
-    - Protokoll = `_http`
+    - Service = `_rmsredir`
+    - Protocol = `_http`
     - Namn = `_tcp`
-    - Target = `[GUID].rms.aadrm.cn` (där GUID är ett RMS-ID)
-    - Prioritet, vikt, sekunder, TTL = standardvärden
+    - Target = `[GUID].rms.aadrm.cn` (där GUID är RMS-ID)
+    - Prioritet, Vikt, Sekunder, TTL = standardvärden
 
-3. Koppla den anpassade domänen till klient organisationen i [Azure-portalen](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains). Detta lägger till en post i DNS som kan ta flera minuter att verifiera när du har lagt till värdet i DNS-inställningarna.
+3. Koppla den anpassade domänen till klientorganisationen i [Azure Portal.](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains) Då kommer en post i DNS att läggas till, vilket kan ta flera minuter att verifieras när du har lagt till värdet i DNS-inställningarna.
 
-4. Logga in i administrations centret för Microsoft 365 med motsvarande globala administratörs behörighet och Lägg till domänen (till exempel `contoso.cn` ) för att skapa användare. I verifierings processen kanske ytterligare DNS-ändringar krävs. När verifieringen är klar kan du skapa användare.
+4. Logga in på administrationscentret för Microsoft 365 med motsvarande autentiseringsuppgifter som global administratör och lägg till domänen (till `contoso.cn` exempel) för att skapa användare. I verifieringsprocessen kan ytterligare DNS-ändringar krävas. När verifieringen är klar kan användarna skapas.
 
-#### <a name="configure-dns-encryption---mac-ios-android"></a>Konfigurera DNS-kryptering-Mac, iOS, Android
+#### <a name="configure-dns-encryption---mac-ios-android"></a>Konfigurera DNS-kryptering – Mac, iOS, Android
 
-Logga in på din DNS-leverantör, gå till DNS-inställningarna för domänen och Lägg sedan till en ny SRV-post.
+Logga in på din DNS-leverantör, navigera till DNS-inställningarna för domänen och lägg sedan till en ny SRV-post.
 
-- Tjänst = `_rmsdisco`
-- Protokoll = `_http`
+- Service = `_rmsdisco`
+- Protocol = `_http`
 - Namn = `_tcp`
 - Target = `api.aadrm.cn`
 - Port = `80`
-- Prioritet, vikt, sekunder, TTL = standardvärden
+- Prioritet, Vikt, Sekunder, TTL = standardvärden
 
-### <a name="step-3-install-and-configure-the-aip-unified-labeling-client"></a>Steg 3: installera och konfigurera AIP Unified etiketting-klienten
+### <a name="step-3-install-and-configure-the-aip-unified-labeling-client"></a>Steg 3: Installera och konfigurera den enhetliga AIP-etikettklienten
 
-Ladda ned AIP Unified Labeling-klienten från [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53018).
+Ladda ned AIP Unified Labeling Client från [Microsoft Download Center.](https://www.microsoft.com/download/details.aspx?id=53018)
 
 Mer information finns i:
 
-- [AIP dokumentation](/azure/information-protection/)
-- [Versions historik och support policy för AIP](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
-- [System krav för AIP](/azure/information-protection/requirements)
-- [AIP snabb start: Distribuera AIP-klienten](/azure/information-protection/quickstart-deploy-client)
-- [AIP administratörs guide](/azure/information-protection/rms-client/clientv2-admin-guide)
-- [AIP användar guide](/azure/information-protection/rms-client/clientv2-user-guide)
-- [Lär dig mer om Microsoft 365-känslighets etiketter](/microsoft-365/compliance/sensitivity-labels)
+- [AIP-dokumentation](/azure/information-protection/)
+- [AIP-versionshistorik och supportpolicy](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
+- [Systemkrav för AIP](/azure/information-protection/requirements)
+- [Snabbstartsguide för AIP: Distribuera AIP-klienten](/azure/information-protection/quickstart-deploy-client)
+- [AIP-administratörsguide](/azure/information-protection/rms-client/clientv2-admin-guide)
+- [Användarhandbok för AIP](/azure/information-protection/rms-client/clientv2-user-guide)
+- [Läs mer om känslighetsetiketter i Microsoft 365](/microsoft-365/compliance/sensitivity-labels)
 
 ### <a name="step-4-configure-aip-apps-on-windows"></a>Steg 4: Konfigurera AIP-appar i Windows
 
-AIP-appar i Windows behöver följande register nyckel för att kunna peka på rätt kraft-moln för Azure Kina:
+AIP-appar i Windows behöver följande registernyckel för att kunna peka dem till rätt självständig moln för Azure China:
 
-- Registry Node = `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIP`
+- Registernod = `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIP`
 - Namn = `CloudEnvType`
-- Värde = `6` (standardvärde = 0)
-- Skriv = `REG_DWORD`
+- Värde = `6` (standard = 0)
+- Typ = `REG_DWORD`
 
 > [!IMPORTANT]
-> Se till att du inte tar bort register nyckel efter en avinstallation. Om knappen är tom, felaktig eller inte finns, fungerar funktionerna som standardvärde (standardvärde = 0 för det kommersiella molnet). Om tangenten är tom eller felaktig läggs ett utskrifts fel till i loggen.
+> Se till att du inte tar bort registernyckeln efter en avinstallation. Om nyckeln är tom, felaktig eller inte finns fungerar funktionen som standardvärdet (standardvärdet = 0 för det kommersiella molnet). Om nyckeln är tom eller felaktig läggs även ett utskriftsfel till i loggen.
 
-### <a name="step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs"></a>Steg 5: installera den lokala skannern för AIP och hantera innehålls genomsöknings jobb
+### <a name="step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs"></a>Steg 5: Installera den lokala AIP-skannern och hantera genomsökningsjobb för innehåll
 
-Installera den lokala skannern i AIP för att söka igenom dina nätverks-och innehålls resurser för att Visa känsliga data och tillämpa klassificerings-och skydds etiketter enligt organisationens princip.
+Installera den lokala AIP-skannern för att söka igenom nätverks- och innehållsresurser efter känsliga data och tillämpa klassificerings- och skyddsetiketter enligt organisationens policy.
 
-När du installerar skannern och hanterar dina innehålls genomsöknings jobb kan du använda följande cmdletar i stället för Azure Portal-gränssnittet som används av de kommersiella medarbetarna:<br><br>
+När du installerar skannern och hanterar genomsökningsjobben för innehåll ska du använda följande cmdlets i stället för Azure Portal-gränssnittet som används av kommersiella erbjudanden:<br><br>
 
 | Cmdlet | Beskrivning |
 |--|--|
-| [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/add-aipscannerrepository) | Lägger till en ny lagrings plats i innehålls genomsökningen. |
-| [Get-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/get-aipscannercontentscanjob) | Hämtar information om ditt innehålls genomsöknings jobb. |
-| [Get-AIPScannerRepository](/powershell/module/azureinformationprotection/get-aipscannerrepository) | Hämtar information om databaserna som har definierats för innehålls genomsökningen. |
-| [Remove-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/remove-aipscannercontentscanjob) | Tar bort ditt innehålls genomsöknings jobb. |
-| [Remove-AIPScannerRepository](/powershell/module/azureinformationprotection/remove-aipscannerrepository) | Tar bort en databas från ditt innehålls genomsöknings jobb. |
-| [Set-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob) | Definierar inställningar för innehålls genomsöknings jobbet. |
-| [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | Definierar inställningar för en befintlig databas i innehålls genomsökningen. |
+| [Add-AIPDatabasnerRepository](/powershell/module/azureinformationprotection/add-aipscannerrepository) | Lägger till en ny lagringsplats i genomsökningsjobbet för innehåll. |
+| [Get-AIPKonventionnerContent Entledig](/powershell/module/azureinformationprotection/get-aipscannercontentscanjob) | Hämtar information om ditt genomsökningsjobb för innehåll. |
+| [Get-AIPDatabasnerRepository](/powershell/module/azureinformationprotection/get-aipscannerrepository) | Hämtar information om lagringsplatsen som definierats för genomsökningsjobbet för innehåll. |
+| [Remove-AIPKonventionnerContent Entledig](/powershell/module/azureinformationprotection/remove-aipscannercontentscanjob) | Tar bort genomsökningsjobbet för innehåll. |
+| [Remove-AIPDatabaserRepository](/powershell/module/azureinformationprotection/remove-aipscannerrepository) | Tar bort en lagringsplats från genomsökningsjobbet för innehåll. |
+| [Set-AIP Det här är Set-AIPKonventionnerContentNyckel](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob) | Definierar inställningar för genomsökningsjobbet för innehåll. |
+| [Set-AIPDatabasnerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | Definierar inställningar för en befintlig lagringsplats i genomsökningsjobbet för innehåll. |
 
-Mer information finns i [Vad är Azure information Protection Unified etiketting-skannern?](/azure/information-protection/deploy-aip-scanner) och [Hantera dina innehålls genomsöknings jobb med bara PowerShell](/azure/information-protection/deploy-aip-scanner-prereqs#use-powershell-with-a-disconnected-computer).
+Mer information finns i Vad är en enhetlig [azure Information Protection-skanner?](/azure/information-protection/deploy-aip-scanner) och Hantera sökjobben för innehåll [med endast PowerShell.](/azure/information-protection/deploy-aip-scanner-prereqs#use-powershell-with-a-disconnected-computer)

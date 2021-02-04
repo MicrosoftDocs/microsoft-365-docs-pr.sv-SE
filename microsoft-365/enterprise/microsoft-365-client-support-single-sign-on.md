@@ -1,5 +1,5 @@
 ---
-title: 'Stöd för Microsoft 365-klientprogram: Single Sign-On'
+title: 'Microsoft 365 Client App Support: Single Sign-On'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,65 +14,65 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: I den här artikeln lär du dig vilka plattformar, klienter och PowerShell-moduler som stöder enkel inloggning för Microsoft 365.
+description: I den här artikeln får du lära dig vilka plattformar, klienter och PowerShell-moduler som har stöd för enkel inloggning för Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b70f0c1ec4a6e94651b987830c8b29993732a3c2
-ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
+ms.openlocfilehash: 5a685f04ed64a89cda026ff9380aac7c6c2b3ea4
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48806675"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097204"
 ---
-# <a name="microsoft-365-client-app-support-single-sign-on"></a>Stöd för Microsoft 365-klientprogram: Single Sign-On
+# <a name="microsoft-365-client-app-support-single-sign-on"></a>Microsoft 365 Client App Support: Single Sign-On
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Enkel inloggning (SSO) lägger till säkerhet och bekvämlighet när användarna loggar in på program i Azure Active Directory. Med enkel inloggning loggar användarna in en gång med ett konto för att komma åt lokala Active Directory Domain Services (AD DS)-anslutna enheter, program som tjänst (SaaS) och webb program.
+Enkel inloggning (SSO) ger säkerhet och enkelhet när användarna loggar in på program i Azure Active Directory. Med enkel inloggning loggar användarna in en gång med ett konto för att komma åt lokala Active Directory DS-enheter (AD DS), SaaS-program (programvara som en tjänst) och webbprogram.
 
-Läs mer om [enkel inloggning](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on).
+Läs mer om [enkel inloggning.](/azure/active-directory/manage-apps/what-is-single-sign-on)
 
 ## <a name="supported-clients--platforms"></a>Klienter som stöds & plattformar
 
-De senaste versionerna av följande klienter och plattformar har stöd för enkel inloggning. Mer information om plattforms stöd i Microsoft 365 finns i [system krav för microsoft 365](https://products.office.com/office-system-requirements).
+De senaste versionerna av följande klienter och plattformar har stöd för enkel inloggning. Mer information om plattformsstöd i Microsoft 365 finns i [Systemkrav för Microsoft 365.](/microsoft-365/microsoft-365-and-office-resources)
 <br>
 <br>
 
-| Förvirra | Android | iOS | Mac| Windows 10 <br> Moderna appar| Windows 10 <br> Datorer |
+| Klienter | Android | iOS | Mac| Windows 10 <br> Moderna appar| Windows 10 <br> Skrivbord |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | Åtkomst | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
-| Företags Portal | Saknas | ![Stöds](../media/check-mark.png) | Disponera | ![Stöds](../media/check-mark.png) | Saknas |
+| Företagsportal | Saknas | ![Stöds](../media/check-mark.png) | Planerat | ![Stöds](../media/check-mark.png) | Saknas |
 | Cortana | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) | Saknas |
-| Delve | Disponera | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
-| Fördel | ![Stöds](../media/check-mark.png) | Disponera | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
+| Delve | Planerat | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
+| Edge | ![Stöds](../media/check-mark.png) | Planerat | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
 | Excel | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) |
-| Kaizala | ![Stöds](../media/check-mark.png) | Disponera | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
+| Kaizala | ![Stöds](../media/check-mark.png) | Planerat | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
 | Office Lens| ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
-| Office Mobile | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
-| Office-Portal | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) | Saknas |
-| OneDrive | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Disponera | ![Stöds](../media/check-mark.png) | Disponera |
-| OneNote | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Disponera |
-| Outlook | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Disponera | ![Stöds](../media/check-mark.png) |
+| Office mobile | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
+| Office-portalen | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) | Saknas |
+| OneDrive | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Planerat | ![Stöds](../media/check-mark.png) | Planerat |
+| OneNote | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Planerat |
+| Outlook | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Planerat | ![Stöds](../media/check-mark.png) |
 | Planner | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
-| Power Apps | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Saknas | Disponera | Saknas |
-| Automatisk strömförsörjning | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
-| Power BI | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Saknas | ![Stöds](../media/check-mark.png) | Disponera |
+| Power Apps | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Saknas | Planerat | Saknas |
+| Power Automate | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
+| Power BI | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Saknas | ![Stöds](../media/check-mark.png) | Planerat |
 | PowerPoint | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) |
 | Project | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
 | Publisher | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
-| Skype för företag | Disponera | Disponera | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
+| Skype för företag | Planerat | Planerat | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
 | SharePoint | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
 | Fästisar | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
-| Strömma | Disponera | Disponera | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
+| Strömma | Planerat | Planerat | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
 | Sway | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
-| Teams | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Disponera | Saknas | Disponera |
-| Att göra | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Saknas | ![Stöds](../media/check-mark.png) | Saknas |
+| Teams | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Planerat | Saknas | Planerat |
+| To Do | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Saknas | ![Stöds](../media/check-mark.png) | Saknas |
 | Visio | Saknas | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
 | Whiteboard | Saknas | ![Stöds](../media/check-mark.png) | Saknas | ![Stöds](../media/check-mark.png) | Saknas |
 | Word | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) |
-| Yammer | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | Disponera |
+| Yammer | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | Planerat |
 
 ## <a name="supported-powershell-modules"></a>PowerShell-moduler som stöds
 
-- [Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0)
-- [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
-- [SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
+- [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
+- [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
