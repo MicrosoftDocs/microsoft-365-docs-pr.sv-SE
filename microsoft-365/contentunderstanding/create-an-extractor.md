@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Lär dig hur du skapar en extraktor i Microsoft SharePoint-Syntex.
-ms.openlocfilehash: 7417805f51bb3a1c7b993ce2cd72137478abbc02
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: dd26b049f71688804cd5110a5a0bb7c87950be94
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976549"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080498"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Skapa en extraktor i Microsoft SharePoint-Syntex.
 
@@ -57,6 +57,14 @@ När du skapar extraktor öppnas extraktorsidan. Här visas en lista över dina 
 
  
 När du har etiketterade fem filer visas en meddelandebanderoll som informerar dig om att flytta till utbildning. Du kan välja att etikettera fler dokument eller att gå vidare till utbildning. 
+
+### <a name="use-find-to-search-your-file"></a>Använda Sök för att söka i filen
+Du kan använda funktionen <b>Sök</b> för att söka efter en enhet i dokumentet som du vill lägga till en etikett för.
+
+   ![Sök i fil](../media/content-understanding/find-feature.png) 
+
+Funktionen Sök är användbar om du söker i ett stort dokument eller om det finns flera instanser av entitet i dokumentet. Om du hittar flera instanser kan du välja den du behöver i sökresultatet för att gå till den platsen i visningsprogrammet för att märka den.
+
 
 ## <a name="add-an-explanation"></a>Lägg till förklaring
 
