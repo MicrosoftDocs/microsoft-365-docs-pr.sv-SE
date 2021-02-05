@@ -1,6 +1,6 @@
 ---
-title: Komma igång med att använda en ämnes upplevelse (för hands version)
-description: Lär dig hur du gör för att få en ämnes upplevelse i din organisation.
+title: Kom igång med införandet av Microsoft Viva Topics
+description: Lär dig hur du kan öka införandet av Microsoft Viva-ämnen i din organisation.
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -12,158 +12,155 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 ROBOTS: NOINDEX
-ms.openlocfilehash: 45469e17870a58966a42a13116b6ba645071722c
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 3548cb31f782052a3bd4da1802077a343b5da01f
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698537"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107536"
 ---
-# <a name="get-started-driving-adoption-of-topic-experiences-preview"></a>Komma igång med att använda en ämnes upplevelse (för hands version)
+# <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>Kom igång med införandet av Microsoft Viva Topics
 
-> [!Note]
-> Innehållet i den här artikeln gäller för projekt cortex privat för hands version. [Läs mer om Project Cortex](https://aka.ms/projectcortex).
+Innan du börjar använda programmet måste du förstå begreppen inom kunskapshantering och Viva-ämnen. Följande diagram visar vad som händer vid identifiering och identifiering av ämnen:
 
-Innan du börjar med att börja använda måste du förstå de koncept som ingår i kunskaps hantering och ämnen. Följande diagram visar vad som händer under identifiering och undersökning av ämnen:
+![Viva Topics-arkitekturen](../media/knowledge-management/topic-management-architecture.png)
 
-![Ämnets arkitektur](../media/knowledge-management/topic-management-architecture.png)
+- **Upptäckt:** Användare kan upptäcka kunskaper i de appar de använder varje dag via ämneskort – de kan också upptäcka ämnen i Microsoft Search.
+- **Läroplan:** Ämnesexperter (SM: Ämnesexperter) förfinar ämnen genom ämnessidor och AI lär sig av deras input. Ämnescentret innehåller ämnessidor som användare kan utforska och experter kan hantera.
+- **Identifiering:** Med Microsoft Graph och AI-kunskaper (artificiell intelligens) identifieras och ordnas personer (ämnen, färdigheter och så vidare) automatiskt i relaterade ämnen. SharePoint-innehåll indexeras med säkerhetsinnehåll.
+- **Tillägg:** Med Microsoft Graph-innehållsanslutningar (kommer snart) kan du mata in kunskap från externa tjänster och datakällor.
 
-- **Identifiering**: användarna kan upptäcka kunskaper i de program de använder varje dag genom ämnes kort – de kan också upptäcka ämnen i Microsoft Search.
-- Undervisar **: ämnes** experter (SMF) förfina ämnen via ämnes sidor och AI får från deras inmatning. Ämnes Center innehåller ämnes sidor som användare kan utforska och experter kan hantera.
-- **Identifiering**: med kunskap och personer i Microsoft Graph och artificiell intelligens (ämnen, färdigheter, så vidare) identifieras och ordnas automatiskt i närliggande ämnen. SharePoint-innehållet indexeras med säkerhets innehåll.
-- **Tillägg**: med Microsoft Graph-innehåll (kommer snart) kan du skriva ut kunskap från externa tjänster och data databaser.
-
-Om du vill ha mer information kan du läsa [översikten](topic-experiences-overview.md) för en introduktion.
+Mer information finns i översikten [och får](topic-experiences-overview.md) en introduktion.
 
 Tänk på följande:
 
-- Identifiering av avsnitt förbättras när det finns mer innehåll.
-- Säkerhet, sekretess och plats för dina data bevaras även om informationen visas i en ny upplevelse.
-- Användare behöver en licens för att kunna visa avsnitts upplevelser.
-- Identifiering är inlednings vis på Engelskt språk innehåll.
+- Identifiering av ämnen förbättras när mer innehåll är tillgängligt.
+- Säkerheten, sekretessen och platsen för dina data bevaras även om informationen presenteras i en ny upplevelse.
+- Användarna behöver en licens för att visa Viva-ämnen.
+- Identifiering finns först på innehåll på engelska.
 
-För att förbereda dig kan du tänka igenom de här frågorna:
+För att förbereda dig bör du tänka igenom följande frågor:
 
-- Vilket innehåll ska användas för avsnitts identifiering?
+- Vilket innehåll ska användas för identifiering av ämnen?
 - Vem ska hantera ämnen?
-- Vem kommer att se ämnen och markeringar?
+- Vilka kommer att se ämneskort och höjdpunkter?
 - Vilka ämnen förväntas?
 
-Kontrol lera den här listan över förutsättningar för att få ut det mesta möjliga av ämnena:
+Läs igenom den här listan med förutsättningar för att få ut mesta av Viva-ämnen:
 
 |Produkt eller funktion |Beskrivning |
 |:-------|:--------|
-|SharePoint Online med moderna SharePoint-sidor |Avsnitts utvinning inkluderar bara innehåll på SharePoint-webbplatser, och ämnes kort kan bara visas på moderna sidor.|
-|Microsoft Graph |Du kan styra om ämnen ska ingå eller uteslutas från sökning eller Delve med Microsoft Graph-inställningarna. |
+|SharePoint Online med moderna SharePoint-sidor |Ämnesnäring omfattar endast innehåll på SharePoint-webbplatser och ämneskort kan bara visas på moderna sidor.|
+|Microsoft Graph |Med Microsoft Graph-inställningarna kan du styra om ämnen ska tas med eller undantas från Sökning eller Delve. |
 
-## <a name="plan-for-adoption"></a>Abonnemang för antagande
+## <a name="plan-for-adoption"></a>Planera för införande
 
-För att planera för införande av avsnitts upplevelser måste du:
+För att planera införandet av Viva Topics måste du:
 
-![Steg för att planera för antagandet](../media/knowledge-management/km-adoption-plan-adoption.png)
+![Steg för att planera införandet](../media/knowledge-management/km-adoption-plan-adoption.png)
 
-1. Planera tillvägagångs sätt och mål scenarier:
-    - Tänk på hur du definierar och prioriterar [scenarier](#target-scenarios).
-    - Tänk på vilka [intressenter](#identify-stakeholders) och projekt medlemmar du måste ha inblandade.  
-    - Ta reda på vilken rörelse påverkan du vill ha och hur du kommer att [mäta framgång](#create-a-success-plan).
+1. Planera din metod och dina målscenarier:
+    - Fundera på att definiera och prioritera [scenarierna.](#target-scenarios)
+    - Tänk på de [intressenter](#identify-stakeholders) och projektgruppmedlemmar du behöver ha med.  
+    - Ta reda på vilken inverkan företaget har på vägen och hur du ska mäta [framgången.](#create-a-success-plan)
 
 2. Engagera organisationen:
-    - Identifiera de företags grupper och affärs team som måste vara inblandade och få justering av dem och de scenarier som du planerar.
-    - Börja tänka på hur vissa tidiga antaganden kommer att få kritiskt, snabb feedback så att du kan iterera för att få den bästa lösningen.
-    - Börja bygga gemenskapen och Tänk på hur olika ämnen kan användas i organisationen i de här grupperna.
+    - Identifiera de affärsgrupper och affärsteam som måste vara inblandade och få bättre justering över de och de scenarier som du planerar.
+    - Börja fundera på hur du engagerar vissa tidiga användare för att få kritisk och tidig feedback så att du kan iterera för att få den bästa lösningen.
+    - Börja skapa communityn och fundera på hur Viva Topics kan användas i organisationen av de olika grupperna.
 
-3. Utbilda din organisation: de flesta kan förstå konceptet med ämnen och hur ämnes kort sammanfattar relevant information och förstå och se värdet. Men du kanske vill skapa utbildning som är skräddarsydda efter din egen kultur och organisation för att visa hur du vill att olika ämnen ska användas i organisationen. Några utbildnings resurser:
-    - [Resurs Center för projekt cortex](https://aka.ms/projectcortex). Inkluderar översikter och funktions information, inspelade Office timme-videor och-presentationer samt information om partners och deras möjligheter.
-    - Kommer snart, utbildnings video och hjälp till slutanvändare.
+3. Utbilda din organisation: De flesta användare kommer att intuitivt förstå konceptet med ämnen och hur ämneskort sammanställer relevant information och förstår och ser värdet. Men du kanske vill skapa utbildning som är skräddarsydd för din egen kultur och organisation för att visa hur du vill att Viva-ämnen ska användas. Några utbildningsresurser:
+    - [Project Resource Center](https://aka.ms/projectcortex). Innehåller översikts- och funktionsinformation, inspelade videor och presentationer på kontorstid samt information om partners och deras erbjudanden.
+    - Kommer snart, utbildningsvideor och hjälp för slutanvändare.
 
-4. [Skapa ett mästare nätverk](#build-a-champion-network):
-    - Du kanske har en community med olika övnings-eller mästare-nätverk. Det här är bra sätt att Socialize och evangelize och få kollegor att hjälpa dig. Och de kan dela med dig av framgång berättelser som kan vara mycket värdefulla. De kan ge råd och generera spänningen.
+4. [Skapa ett mästarenätverk:](#build-a-champion-network)
+    - Det kanske redan finns grupper av övnings- eller mästarenätverk. Det här är bra sätt att umgås och sprida och få kollegor engagerade i att hjälpa varandra. Och de kan dela framgångar som kan vara mycket värdefulla. De kan ge råd och skapa intresse.
 
-### <a name="target-scenarios"></a>Mål scenarier
+### <a name="target-scenarios"></a>Målscenarier
 
-Anledningen hjälper dig att avgöra vilken modell som behövs och hur du strukturerar din organisation baserat på var modellen ska användas. Här är några scenarier där kunskaps hanteringen kan hjälpa din organisation:
+Du måste bestämma hur du vill använda Viva-ämnen i organisationen innan du kan lyckas med ämnen. Här är några scenarier där kunskapshantering och ämnen kan hjälpa din organisation:
 
-- Roll registrering & utbildning: det är viktigt att förstå en ny organisations terminologi, viktiga projekt och kulturen. Enkel identifiering av ämnen kan hjälpa nya anställda att komma igång snabbt med nya jobb, roller och projekt.
-- Expertis och informations delning: när ämnen hanteras och delas kan folk i dina organisationer lättare hitta information och experter för att under lätta arbetet.
-- Expanderat beslut som gör och förbättrar tiden för att marknadsföra: när det är lätt att nå information och experter kan du snabbt och Shave tid på projekt.
+- Introduktion till &: Att förstå den nya organisationens terminologi, nyckelprojekt och kultur är viktiga steg i introduktionen. Enkel upptäckt av ämnen kan hjälpa nya anställda att snabbt komma igång med nya jobb, roller eller projekt.
+- Expertkunskap och delning av information: När ämnen hanteras och delas kan personer i organisationen enklare hitta information och experter som kan hjälpa dem i det dagliga arbetet.
+- Utökat beslutsfattande och förbättrad tid på marknaden: När information och experter är lätta att nå kan du fatta enklare och enklare tidsåtkomliga projekt.
 
-Här är ett scenario för roll registrering:
+Här är till exempel ett scenario för roll onboarding:
 
-- En anställd (Jordanien) tar en ny roll eller har nyanställd och börjar med en roll. Jordanien vill vara inblandade och produktiva så snabbt som möjligt. Men Jordanien behöver också hjälp med att hitta en start plats.
-- En kollega (Kim) som fanns i rollen innan ämnes sidorna i Jordanien har kunnat hjälpa nya anställda och alla andra som letar efter den informationen.
-- Kim var ett litet företag och hade behörighet att titta på obekräftade ämnes sidor. Obekräftade ämnes sidor är fantastiska start punkter för vad AI har upptäckt och skapats och Kim kunde redigera dem för att lägga till expert resurser, definitioner och fästa andra resurser.
-- När Jordanien läser genom ett nytt inlägg i SharePoint, ser Jordanien ett ämne med fokus och hovra över det för att snabbt få en definition av termen och vem du ska kontakta med fler frågor. Tidigare kan du ha varit tvungen att hitta dessa uppgifter och kontakta kollegor för att se vem du ska fråga om något.
-- Att visa den här informationen genom avsnitts upplevelser kan vara kraftfullt, eftersom även om den här informationen kan vara tillgänglig förut kan den vara silod och svår att hitta. Att placera in det i de program som används av Jordanien och att hjälpa till att få dessa experter att hålla en uppfattning om engagemang och community. Det kan också hjälpa Jordanien att känna sig bättre när den nya rollen behandlas.
+- En anställd (Jordan) har en ny roll eller har nyligen anställts och har bara börjat med en roll. Jordan vill bli inblandat och produktivt så snabbt som möjligt. Men Jordan behöver också hjälp med att hitta en startpunkt.
+- En kollega (Kim) som var med i rollen innan Jordan skapade ämnessidor som kan hjälpa nya anställda och alla andra som letar efter den informationen.
+- Kim var MED OCH hade behörighet att titta på ofirmerade ämnessidor. Unconfirmed topic pages are great starting points for what the AI has discovered and created, and Kim was able to edit them to add expert resources, definitions, and pin other resources.
+- När Jordan läser upp ett nytt inlägg på SharePoint kan de se ett ämne som markeras och hovra över det för att snabbt få en definition av termen och vem de ska kontakta med fler frågor. Tidigare kunde Jordan ha varit tvungen att leta efter den här informationen och kontakta kollegor för att se vem som ska fråga om något.
+- Det kan vara kraftfullt att använda den här informationen, eftersom den informationen kan ha varit tillgänglig tidigare, men den kan ha blivit siloerad och svår att hitta. Genom att föra in programmet i de program som Jordan använder och hjälpa dem att hitta dessa experter kan det även skapa en känsla av engagemang och community. Det kan också hjälpa dem att känna sig mer ged när de hanterar den nya rollen.
 
-När du har identifierat dina scenarier kan du prioritera scenariot:
+När du har identifierat dina scenarier kan du prioritera scenarierna:
 
-Ett sätt att prioritera det är att illustrera dina scenarier i ett rutnät som visar effekten jämfört med. Leta efter scenarier som har både hög effekt och är lätta att implementera. Gör dem till din högsta prioritet. Den låga effekten och svåra att implementera scenarier är din lägsta prioritet. När du har en snabb chans som är lätt att implementera är det enklare att genomföra scenariot, det hjälper folk att få glädje och se möjligheterna att använda ämnen.
+Ett sätt att prioritera dem är att rita ut dina scenarier i ett rutnät som visar påverkan jämfört med enkel implementering. Leta efter scenarier som har både hög effekt och är lätta att implementera och ge dessa sådana högsta prioritet. Låg inverkan och svåra att implementera scenarier är din lägsta prioritet. När du har en snabb vinst med ett lättslaget scenario som är lätt att implementera hjälper det människor att bli glada och se möjligheterna med att använda ämnen.
 
-![Hög påverkan, det är lätt att implementera scenarier med hög prioritet](../media/knowledge-management/topics-prioritize-scenarios.png)
+![Hög effekt, enkla att implementera scenarier har hög prioritet](../media/knowledge-management/topics-prioritize-scenarios.png)
 
-Välj ett par viktiga scenarier att fokusera på från början, samar beta med dina tidiga efterföljare för att få lite feedback och sedan delta i faserna. På det sättet kan du iterera, göra förbättringar och få feedback så att du kan öka tiden. 
+Välj några viktiga scenarier att fokusera på först, arbeta med dina tidiga användare för att få lite feedback och sedan distribuera dem stegvis. På så sätt kan du iterera, göra förbättringar och få feedback så att du kan öka införandet med tiden. 
 
 ### <a name="identify-stakeholders"></a>Identifiera intressenter
 
-Identifiera intressenterna för projektet. Viktiga roller är direktör, slutägare och representanter.
+Identifiera projektets intressenter. Huvudrollerna är huvudsponsorn, framgångsägaren och mästare.
 
-|Roll |Uppgifter |Department |
+|Roll |Ansvarsområden |Department |
 |:-------|:-------|:--------|
-| Direktör (er)   | Kommunicerar visioner och-värden till företaget   |  Ledarskaps chef   |
-| Projektets leads | Övervaka hela kör-och start processen | Projektledning |
-| Kunskaps administratörer| Konfigurera och konfigurera avsnitts upplevelser | IT-avdelning |
-| Kunskaps chefer | Hantera ämnen och övervaka taxonomin | Alla avdelningar |
-| Kategoriserings chefer | Övervaka taxonomin | Alla avdelningar |
-| Ämnes experter och ämnes deltagare | Skapa eller läsa ämnen och beskrivningar | Alla avdelningar |
-| Representanter | Hjälp evangelize och hantering av objekt hantering | Alla avdelningar (personal) |
-| Klient organisations administratör | Konfigurera inställningar för klient organisations nivå | IT-avdelning |
-| Power Platform-administratör| Konfigurera gemensam data tjänst miljö | IT-avdelning |
-| Sök efter administratör eller chef | Konfigurera Sök inställningar | IT-avdelning |
+| Huvudsponsorer   | Kommunicera visioner och värden på hög nivå till företaget   |  Ledning   |
+| Projektledarna | Övervaka hela lanseringen av körningen och lanseringsprocessen | Projektledning |
+| Kunskapsadministratörer| Konfigurera och konfigurera Viva-ämnen | IT-avdelning |
+| Kunskapschefer | Hantera ämnen och övervaka taxonomin | Alla avdelningar |
+| Taxonomihanterare | Övervaka taxonomin | Valfri avdelning |
+| Ämnesexperter och ämnesdeltagare | Skapa eller granska ämnen och beskrivningar | Valfri avdelning |
+| Mästare | Hjälp till att sprida och hantera stötande hantering | Alla avdelningar (personal) |
+| Innehavaradministratör | Konfigurera inställningar på klientorganisationsnivå | IT-avdelning |
+| Administratör för Power Platform| Konfigurera en vanlig datatjänstmiljö | IT-avdelning |
+| Sökadministratör eller chef | Konfigurera sökinställningar | IT-avdelning |
 
-I en större organisation kanske du också har flera personer i de här rollerna, och du behöver driva en samordning mellan dem. I ett mindre företag kan en person utföra flera av dessa roller. Olika roller kanske är mer inblandade i de olika faserna i projektet. Vissa personer är bland annat inblandade i att konfigurera funktionerna (klient administratörer), medan andra inte är med i din början med att definiera ämnen malm kan delta i över gång (ämnes experter och representanter).
+I en större organisation kan du också ha flera personer i de här rollerna och du måste göra koordinationen mellan dem. I ett mindre företag kan en person ha flera av dessa roller. Olika roller kan vara mer engagerade i olika faser av projektet. Till exempel blir innehavaradministratörerna mer engagerade i att konfigurera funktionerna, medan ämnesexperter och mästare inte blir inblandade förrän du börjar definiera ämnen.
  
-Även om vi rekommenderar att du har var och en av de här rollerna, kanske du inte behöver allt för att komma igång med din lösning.
+Även om vi rekommenderar att var och en av de här rollerna har uppfyllts under hela utrullningen kan det hända att du inte behöver alla för att komma igång med din identifierade lösning.
 
-### <a name="create-a-success-plan"></a>Skapa en lyckad plan
+### <a name="create-a-success-plan"></a>Skapa en framgångsplan
 
-Använd dessa indikatorer för att mäta framgångar i din organisation. Titta på:
+Använd de här indikatorerna för att mäta framgången med Viva-ämnen i organisationen. Titta på:
 
-1. Ämnes användning:
-      - Ämnena exponeringar
-      - Antal ämnen – både bekräftade och obekräftade i den granskade ämnes listan.
-      - Antal publicerade avsnitts sidor.
-1. Slutanvändarens feedback från ämnes kort.
-1. Gör enkäterna för anställda. Ämnena bör förbättra personalens förmåga att hitta information, så Sök efter olika sätt att samla in sina uppgifter och synpunkter.
-1. Positiv effekt för Sök analys. Eftersom ämnena visas i Sök upplevelsen kan det vara enklare att hitta avbrutna sökningar eftersom det är lättare för fler än en sökning. 
+1. Ämnesanvändning:
+      - Ämnesintryck
+      - Antal ämnen – både bekräftade och inte bekräftade i din ämneslista.
+      - Antalet publicerade ämnessidor.
+1. Feedback från ämneskort för slutanvändare.
+1. Gör enkäter om medarbetarnöjning. Viva Topics bör förbättra de anställdas möjligheter att hitta information, så att de kan samla in information och feedback om den upplevelsen.
+1. Positiv inverkan på sökanalys. Eftersom ämnen visas i sökfunktionen kan du med tiden se lägre priser för övergiven sökning eftersom det är enklare för personer att hitta avsnitten i sökningen. 
 
-### <a name="build-a-champion-network"></a>Skapa ett mästare nätverk
+### <a name="build-a-champion-network"></a>Skapa ett mästarenätverk
 
-Skapa ett mästare nätverk i din organisation. Representanter är viktiga eftersom de kan:
+Skapa ett mästarenätverk i din organisation. Mästare är viktiga eftersom de kan:
 
-- Skapa en cirkel av påverkan bland deras team
-- Hantera hanteringen & underhåll
+- Skapa en cirkel med inflytande i deras team
+- Ämneshantering för enhet & underhåll
 
-Du kan rekrytera representanter från olika roller – kunskaps chefer och experter.
+Du kan rekrytering av mästare från olika roller – kunskapschefer och ämnesexperter.
 
-Massor av mästare-nätverk använder Yammer som sin plattform. I Yammer kan folk posta frågor och få svar och dela med dig av framgång. Det är svårt att få ord ut fristående, så du kan lita på att ett nätverk i hela företaget ger råd om sina kollegor och visar hur deras team använder ämnen så att andra team kan tänka på sina egna scenarier.
+Många av mästare på nätverk använder Yammer plattform. I Yammer kan personer publicera frågor och få svar och dela framgångar. Det är svårt att bara få ut ordet, så du kan förlita dig på nätverket av personer i hela företaget för att ge råd till kollegor och visa hur teamet använder Viva Topics så att andra grupper kan tänka ut sina egna scenarier.
 
-I vissa organisationer används hackathons (formell eller informell, virtuell eller person) för att samla grupper av personer att arbeta med ett visst projekt. Du kan till exempel samla dina ämnes experter och låta dem samar beta för att granska en uppsättning ämnes sidor.
+En del organisationer använder hackan (formellt eller informellt, virtuellt eller personligt) för att samla grupper med personer för att arbeta med ett visst projekt. Du kan till exempel samla dina ämnesexperter och be dem att samarbeta för att hålla en uppsättning ämnessidor.
 
-Tänk på hur du känner igen ditt representanter. Belöna sina aktiviteter, ge dem en viss igenkänning och skapa en synlig community-känsla så att de känner till att de är intressanta för något och att de också kommer tillbaka från det.
+Fundera på hur du kan känna igen din mästare. Belöna deras aktiviteter, ge dem ett erkännande och skapa en synlig community-känsla och engagemang så att de känner att de bidrar till något och de får också något tillbaka från sina investeringar.
 
-Nu när du är redo att sätta igång kan du se till att du håller på att främja pågående engagemang.
+Nu när du är redo att distribuera bör du se till att uppmuntra kontinuerligt engagemang.
 
-- Underhåll aktiva Yammer-grupper för din representanter.
-- Dela med dig av framgång.
-- Håll periodiska ytterligare åtagande händelser för att dela med dig av berättelser eller introducera nya funktioner.
-- Ställ in utmaningar för folk och kör tävlingar.
+- Se till att Yammer aktiva grupper för din mästare.
+- Dela framgångar.
+- Med jämna mellanrum värdar du engagemangshändelser för att dela berättelser eller introducera nya funktioner.
+- Ställ in utmaningar för personer och kör tävlingar.
 
 ## <a name="next-steps"></a>Nästa steg
 
-När du är redo att ta del av ämnen måste du skaffa personer.
+När du är redo att distribuera Viva Topics måste du få människor engagerade.
 
-- Börja presentera funktionerna och få dem att tänka på deras scenarier.
-- Samla intressenterna och skapa scenarier.
-- Kör gemenskapen och Tänk igenom hur du ska delta.
-- Slutför sedan förberedelse stegen. Vissa kan vara tekniska kunskaper och en del av företagets beredskap.
-- Socialize och Höj dig.
+- Börja introducera funktionsuppsättningen och få dem att tänka på deras scenarier.
+- Samla intressenter och skapa scenarier.
+- Driv communityn och tänk på hur du kommer att engagera dem.
+- Slutför sedan förberedelsestegen. En del kan vara teknisk beredskap och viss beredskap för företag.
+- Slutligen kan du umgås och lyfta fram.

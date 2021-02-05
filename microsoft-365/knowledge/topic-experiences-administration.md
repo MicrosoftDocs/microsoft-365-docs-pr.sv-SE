@@ -1,5 +1,5 @@
 ---
-title: Ändra namnet på ämnes centret i Microsoft 365
+title: Ändra namnet på ämnescentret i Microsoft Viva-ämnen
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,44 +9,43 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-description: Lär dig hur du ändrar namnet på ämnes centret i Microsoft 365.
-ms.openlocfilehash: 63ce6b75d26ad600d1241a70fcbd616ecc98a4d2
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+description: Lär dig hur du ändrar namnet på ämnescentret i Microsoft Viva Topics.
+ms.openlocfilehash: 91f0693ba24e412812e1b8db19cfcf0febd2ec66
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668334"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107735"
 ---
-# <a name="change-the-name-of-the-topic-center-in-microsoft-365"></a>Ändra namnet på ämnes centret i Microsoft 365
+# <a name="change-the-name-of-the-topic-center-in-microsoft-viva-topics"></a>Ändra namnet på ämnescentret i Microsoft Viva-ämnen
 
-Du kan ändra namnet på ditt ämnes Center i [administrations centret för Microsoft 365](https://admin.microsoft.com). Du måste vara global administratör eller SharePoint-administratör för att utföra dessa uppgifter.
+Du kan ändra namnet på ämnescentret i administrationscentret för [Microsoft 365.](https://admin.microsoft.com) Du måste vara global administratör eller SharePoint-administratör för att kunna utföra de här uppgifterna.
 
-## <a name="to-access-topics-management-settings"></a>Så här öppnar du inställningar för hantering av ämnen:
+## <a name="to-access-topics-management-settings"></a>Så här kommer du åt inställningar för hantering av ämnen:
 
-1. I administrations centret för Microsoft 365 klickar du på **Inställningar** och sedan på **org Settings**.
-2. Klicka på **kunskaps nätverk** på fliken **tjänster** .
+1. Klicka på Inställningar och sedan Organisationsinställningar i **administrationscentret** **för** Microsoft 365.
+2. Klicka på **Ämnesupplevelser** på **fliken Tjänster.**
 
-    ![Koppla personer till kunskap](../media/admin-org-knowledge-options-completed.png) 
+    ![Koppla samman personer med kunskap](../media/admin-org-knowledge-options-completed.png) 
 
-3. Välj fliken för **avsnitts Center** . I följande avsnitt finns information om de olika inställningarna.
+3. Välj fliken **Ämnescenter.** I följande avsnitt finns information om de olika inställningarna.
 
-    ![kunskap – nätverks inställningar](../media/knowledge-network-settings-topic-center.png) 
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) 
 
-##  <a name="update-your-topic-center-name"></a>Uppdatera namnet på ämnes Center
+##  <a name="update-your-topic-center-name"></a>Uppdatera ämnescenternamnet
 
-Så här ändrar du namnet på ämnes Center
+Så här byter du namn på ämnescentret
 
-1. Välj **Redigera** under **ämnes Center namn** på fliken **ämnes Center** .
-2. Skriv det nya namnet på ämnes centret i rutan **namn** på sidan **Redigera ämnes Center namn** .
+1. Välj Redigera **under Ämnescenter** **på fliken Ämnescenter.** 
+2. På **namnsidan för Redigera ämnescenter** skriver **du** det nya namnet på ämnescentret i namnrutan Ämnescenter.
 3. Välj **Spara**
 
-    ![Redigera namn på ämnes Center](../media/manage-topic-center-name.png)  
+    ![Namn på redigera ämnescenter](../media/manage-topic-center-name.png)  
 
 ## <a name="see-also"></a>Se även
 
-[Hantera identifiering av avsnitt i Microsoft 365](topic-experiences-discovery.md)
+[Hantera identifiering av ämnen i Microsoft Viva-ämnen](topic-experiences-discovery.md)
 
-[Hantera ämnets synlighet i Microsoft 365](topic-experiences-knowledge-rules.md)
+[Hantera synlighet för ämnen i Microsoft Viva-ämnen](topic-experiences-knowledge-rules.md)
 
-[Hantera behörigheter för ämne i Microsoft 365](topic-experiences-user-permissions.md)
+[Hantera ämnesbehörigheter i Microsoft Viva-ämnen](topic-experiences-user-permissions.md)

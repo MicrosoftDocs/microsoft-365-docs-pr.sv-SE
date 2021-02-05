@@ -20,24 +20,24 @@ search.appverid:
 - MOE150
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
-description: 'Läs om hur du delar webbplatser och filer med personer utanför organisationen. '
-ms.openlocfilehash: 79760f662ec68d2ac9089586fd9cbf38b0bd9897
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: 'Lär dig hur du delar webbplatser och filer med personer utanför organisationen. '
+ms.openlocfilehash: 3857cee3073950bbb9c130368abdd7df68d0da2a
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780055"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114471"
 ---
 # <a name="share-sites-and-files-with-guest-users"></a>Dela webbplatser och filer med gästanvändare
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
-Om du vill samarbeta med personer utanför organisationen kan du dela hela webbplatser eller specifika filer externt. Om du vill komma direkt till att konfigurera delning väljer du det scenario som du vill aktivera:
+Om du vill samarbeta med personer utanför organisationen kan du dela hela webbplatser eller specifika filer externt. Om du vill konfigurera delning direkt väljer du det scenario du vill aktivera:
 
 - [Samarbeta med gäster i ett dokument](../../solutions/collaborate-on-documents.md)
 - [Samarbeta med gäster på en webbplats](../../solutions/collaborate-in-site.md)
@@ -47,7 +47,7 @@ Om du vill samarbeta med personer utanför organisationen kan du dela hela webbp
 
 När du överväger om och hur du vill dela innehåll externt bör du tänka på följande:
   
-- Till vem vill du ge tillgång till innehåll på webbplatsen och eventuella underwebbplatser, och vad vill du att de ska kunna göra?
+- Vem ska kunna komma åt innehåll på webbplatsen och eventuella underwebbplatser, och vad vill du att de ska kunna göra?
     
 - Vem i organisationen vill du ska kunna bevilja behörighet att dela innehåll externt? 
     
@@ -57,27 +57,27 @@ Svaren på dessa frågor hjälper dig att planera en strategi för innehållsdel
   
 |**Prova det här:**|**Om du behöver …**|
 |:-----|:-----|
-|Lägga till en gäst i en grupp  <br/> |Ge någon utanför organisationen löpande åtkomst till information och innehåll på en gruppwebbplats. Personen måste kunna arbeta på webbplatsen som en fullvärdig användare och skapa, redigera och visa innehåll.  <br/> |
-|Dela ett dokument och kräva att gästerna autentiserar.  <br/> |Ge specifika personer utanför organisationen säker åtkomst till ett dokument för granskning eller samarbete, men dessa personer behöver inte åtkomst till annat innehåll på webbplatsen.  <br/> |
-|Dela ett dokument, men kräver inte autentisering.  <br/> |Dela en länk till ett dokument som inte innehåller känslig eller konfidentiell information med personer utanför organisationen så att de kan visa eller uppdatera det med feedback. Dessa personer behöver inte tillgång till innehåll på webbplatsen.  <br/> |
+|Lägga till en gäst i en grupp  <br/> |Ge någon utanför organisationen kontinuerlig åtkomst till information och innehåll på en gruppwebbplats. Personen måste kunna arbeta på webbplatsen som en fullvärdig användare och skapa, redigera och visa innehåll.  <br/> |
+|Dela ett dokument och kräv att gäster autentiserar.  <br/> |Ge specifika personer utanför organisationen säker åtkomst till ett dokument för granskning eller samarbete, men dessa personer behöver inte åtkomst till annat innehåll på webbplatsen.  <br/> |
+|Dela ett dokument, men kräver inte autentisering.  <br/> |Dela en länk till ett dokument som inte innehåller känslig eller konfidentiell information med personer utanför organisationen så att de kan visa eller uppdatera det med feedback. De här personerna behöver inte åtkomst till innehåll på webbplatsen.  <br/> |
    
 > [!IMPORTANT]
-> När du inaktiverar extern delning har personer utanför organisationen som för närvarande har åtkomst inte längre åtkomst. Om du senare aktiverar extern delning igen återställs åtkomsten för dessa personer. Om du vill förhindra att en användare kommer åt ett delat innehåll [tar du bort dem från Microsoft 365-gruppen,](/office365/admin/create-groups/add-or-remove-members-from-groups)tar bort deras behörigheter från webbplatsen eller slutar dela filen eller mappen med [dem](https://support.microsoft.com/office/0a36470f-d7fe-40a0-bd74-0ac6c1e13323). 
+> När du inaktiverar extern delning kommer personer utanför organisationen som för närvarande har åtkomst inte längre att ha åtkomst. Om du senare aktiverar extern delning igen återställs åtkomsten för dessa personer. Om du vill hindra en användare från att komma åt ett delat innehåll tar du bort dem från [Microsoft 365-gruppen,](/office365/admin/create-groups/add-or-remove-members-from-groups)tar bort deras behörigheter från webbplatsen eller slutar dela filen eller mappen [med dem.](https://support.microsoft.com/office/0a36470f-d7fe-40a0-bd74-0ac6c1e13323) 
   
 ## <a name="enable-external-sharing-at-the-organization-level"></a>Aktivera extern delning på organisationsnivå
 
-Extern delning är aktiverat som standard på organisationsnivå, men inte för alla nya webbplatser. Information finns i [Översikt över extern delning](/sharepoint/external-sharing-overview). 
+Extern delning är aktiverat som standard på organisationsnivå, men inte för alla nya webbplatser. Mer information finns i [översikten över extern delning.](/sharepoint/external-sharing-overview) 
 
 > [!NOTE]
 >  Om du vill tillåta extern delning för en webbplats måste du tillåta det på organisationsnivå. 
   
-1. Skriv "extern" i sökrutan på startsidan i [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=2024339)och välj **Extern delning av webbplatser**.
+1. Skriv ["extern"](https://go.microsoft.com/fwlink/p/?linkid=2024339)i sökrutan på startsidan i administrationscentret och välj extern **delning för webbplatser.**
   
-2. På sidan som öppnas väljer du om användarna endast kan dela med befintliga gäster, nya och befintliga gäster eller vem som helst. 
+2. På sidan som öppnas väljer du om användare endast ska kunna dela med befintliga gäster, nya och befintliga gäster eller med alla. 
     
 3. Välj **Spara**.
     
-När du har aktiverat extern delning på organisationsnivå kan du finjustera delningsinställningarna för att inaktivera extern delning för vissa webbplatser. Information finns i [Aktivera eller inaktivera extern delning för en webbplats](/sharepoint/change-external-sharing-site).
+När du har aktiverar extern delning på organisationsnivå kan du finjustera delningsinställningarna för att inaktivera extern delning för vissa webbplatser. Mer information finns i [Aktivera eller inaktivera extern delning för en webbplats.](/sharepoint/change-external-sharing-site)
   
 
   

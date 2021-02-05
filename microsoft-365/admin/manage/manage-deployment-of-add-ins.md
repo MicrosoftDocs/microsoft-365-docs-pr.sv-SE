@@ -21,20 +21,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
-description: Lär dig att distribuera tillägg till användare och grupper i organisationen med hjälp av centraliserad distribution i administrationscentret.
-ms.openlocfilehash: ef7237f20780cb67bc84561ad8617dd8da6f8b82
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: Lär dig att distribuera tillägg till användare och grupper i organisationen genom att använda centraliserad distribution i administrationscentret.
+ms.openlocfilehash: 5d17242d98f0e58ec4bfbcfd5b7014e6a6e0a6c5
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926360"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114507"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Distribuera tillägg i administrationscentret
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -45,7 +45,7 @@ Mer information om hur du fastställer om organisationen har stöd för centrali
 Mer information om hur du hanterar tillägg efter distributionen finns [i Hantera tillägg i administrationscentret](manage-addins-in-the-admin-center.md)
   
 > [!NOTE]
->  För Word, Excel och PowerPoint används en [SharePoint-programkatalog](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) för att distribuera tillägg till användare i en lokal miljö utan anslutning till Microsoft 365 och/eller stöd för SharePoint-tillägg. För Outlook använder du Exchange-kontrollpanelen för att distribuera i en lokal miljö utan anslutning till Microsoft 365.
+>  För Word, Excel och PowerPoint används en [SharePoint-programkatalog](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) för att distribuera tillägg till användare i en lokal miljö utan anslutning till Microsoft 365 och/eller stöd för SharePoint-tillägg. För Outlook använder du Kontrollpanelen i Exchange för att distribuera i en lokal miljö utan anslutning till Microsoft 365.
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Rekommenderad metod för distribution av Office-tillägg
 
@@ -123,16 +123,16 @@ Office-tillägg kombinerar en XML-manifestfil som innehåller vissa metadata om 
     
 Mer information om typer och funktioner i Office-tillägg finns i plattformsöversikten för [Office-tillägg,](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)särskilt avsnittet "Beskrivning av ett Office-tillägg".
   
-För att tillägget ska kunna interagera med användarens dokument måste det deklarera vilken behörighet som behövs i manifestet. En JavaScript API-åtkomstbehörighetsmodell med fem nivåer utgör grunden för sekretess och säkerhet för åtgärdsfönster tillägg. Majoriteten av tilläggen i Office Store är på nivån ReadWriteDocument med nästan alla tillägg som stöder minst ReadDocument-nivå. Mer information om behörighetsnivåer finns i [Begära behörigheter för API-användning i innehåll åtgärdsfönster tillägg.](https://docs.microsoft.com/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins)
+För att tillägget ska kunna interagera med användarens dokument måste det deklarera vilken behörighet som krävs i manifestet. En JavaScript API-åtkomstbehörighetsmodell med fem nivåer utgör grunden för sekretess och säkerhet för åtgärdsfönster tillägg. Majoriteten av tilläggen i Office Store är på nivån ReadWriteDocument med nästan alla tillägg som stöder minst ReadDocument-nivå. Mer information om behörighetsnivåer finns i [Begära behörigheter för API-användning i innehåll åtgärdsfönster tillägg.](https://docs.microsoft.com/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins)
   
-När du uppdaterar ett manifest är det vanligtvis ändringar av ikon och text för ett tillägg. Ibland kan tilläggskommandon ändras. Tilläggets behörigheter ändras däremot inte. Webbprogrammet där all kod och logik för tillägget körs kan ändras när som helst, vilket är natur hos webbprogram.
+När du uppdaterar ett manifest är det vanligtvis ändringar av ikon och text för ett tillägg. Ibland kan tilläggskommandon ändras. Tilläggets behörigheter ändras dock inte. Webbprogrammet där all kod och logik för tillägget körs kan ändras när som helst, vilket är natur hos webbprogram.
   
 Uppdateringar för tillägg sker så här:
   
 - **Verksamhets tillägg:** I det här fallet, där en administratör uttryckligen har laddat upp ett manifest, kräver tillägget att administratören laddar upp ett nytt manifest för att ge stöd för metadataändringar. Nästa gång Office-programmen startar uppdateras tillägget. Webbprogrammet kan ändras när som helst. 
 
     > [!NOTE]
-    > Administratören behöver inte ta bort ett LOB-tillägg för att göra en uppdatering.   I avsnittet Tillägg kan administratören helt enkelt klicka på tillägget LOB och välja uppdateringsknappen **i** det nedre högra hörnet. Uppdateringen fungerar bara om versionen av det nya tillägget är senare än det befintliga tillägget.   
+    > Administratören behöver inte ta bort ett LOB-tillägg för att göra en uppdatering.   I avsnittet Tillägg kan administratören helt enkelt klicka på tillägget LOB och välja uppdateringsknappen **i** det nedre högra hörnet. Uppdateringen fungerar endast om versionen av det nya tillägget är senare än det befintliga tillägget.   
     
 - **Office Store-tillägg:** När en administratör har valt ett tillägg från Office Store uppdateras tillägget senare i centraliserad distribution om ett tillägg uppdateras i Office Store. Nästa gång Office-programmen startar uppdateras tillägget. Webbprogrammet kan ändras när som helst. 
   

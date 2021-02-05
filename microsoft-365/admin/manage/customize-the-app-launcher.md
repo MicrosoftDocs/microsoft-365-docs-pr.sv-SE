@@ -23,19 +23,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: 'Skapa snabblänkar till e-post, dokument, appar, SharePoint-webbplatser, externa webbplatser och andra resurser genom att lägga till anpassade paneler i startprogrammet. '
-ms.openlocfilehash: 2bbcf64b807754aed199c441f6df028d5fe20a97
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 96d059b252b63e48e20edb29861cf8233e220e34
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926240"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114195"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Lägga till anpassade paneler i startprogrammet
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -79,7 +79,7 @@ Den anpassade panelen visas nu i startprogrammet på fliken **Alla** för dig oc
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. Gå till organisationsprofilfliken **Inställningar** för inställningar  >    >  **i** </a> administrationscentret.
+1. Gå till profilfliken Inställningar för  >  **organisationens** inställningar  >  **i administrationscentret.** </a>
     
 2. Välj **Redigera bredvid** Lägg till anpassade paneler för **din organisation** på sidan **Organisationsprofil.**
 
@@ -87,7 +87,7 @@ Den anpassade panelen visas nu i startprogrammet på fliken **Alla** för dig oc
     
 4. Välj **Uppdatera** \> **stäng.** 
     
-Om du vill ta bort en anpassad panel markerar **du panelen i** fönstret Anpassade paneler och väljer Ta bort **panel** Ta  >  **bort.** 
+Om du vill ta bort en anpassad panel markerar **du panelen i** fönstret Anpassade paneler och väljer Ta bort **panel.**  >   
   
 ## <a name="whats-next"></a>Hur går jag vidare?
 

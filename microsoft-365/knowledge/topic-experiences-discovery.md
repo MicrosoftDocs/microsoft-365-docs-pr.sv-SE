@@ -1,5 +1,5 @@
 ---
-title: Hantera identifiering av avsnitt i Microsoft 365
+title: Hantera identifiering av ämnen i Microsoft Viva-ämnen
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,65 +9,64 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-description: Lär dig att hantera identifiering av avsnitt i Microsoft 365.
-ms.openlocfilehash: dec8aeef9dda390fb19f5067638c2ebea6b6a2fe
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+description: Lär dig hur du administrerar ämnesidentifiering i Microsoft Viva-ämnen.
+ms.openlocfilehash: 36b64433726479dc2a46c809ae9504c6f12f4ab8
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698549"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107771"
 ---
-# <a name="manage-topic-discovery-in-microsoft-365"></a>Hantera identifiering av avsnitt i Microsoft 365
+# <a name="manage-topic-discovery-in-microsoft-viva-topics"></a>Hantera identifiering av ämnen i Microsoft Viva-ämnen
 
-Du kan hantera identifierings inställningar för avsnitt i [administrations centret för Microsoft 365](https://admin.microsoft.com). Du måste vara global administratör eller SharePoint-administratör för att utföra dessa uppgifter.
+Du kan hantera inställningar för identifiering av ämnen i administrationscentret för [Microsoft 365.](https://admin.microsoft.com) Du måste vara global administratör eller SharePoint-administratör för att kunna utföra de här uppgifterna.
 
-## <a name="to-access-topics-management-settings"></a>Så här öppnar du inställningar för hantering av ämnen:
+## <a name="to-access-topics-management-settings"></a>Så här kommer du åt inställningar för hantering av ämnen:
 
-1. I administrations centret för Microsoft 365 klickar du på **Inställningar** och sedan på **org Settings**.
-2. Klicka på **kunskaps nätverk** på fliken **tjänster** .
+1. Klicka på Inställningar och sedan Organisationsinställningar i **administrationscentret** **för** Microsoft 365.
+2. Klicka på **Ämnesupplevelser** på **fliken Tjänster.**
 
-    ![Koppla personer till kunskap](../media/admin-org-knowledge-options-completed.png) 
+    ![Koppla samman personer med kunskap](../media/admin-org-knowledge-options-completed.png) 
 
-3. Välj fliken **identifiering av ämne** . I följande avsnitt finns information om de olika inställningarna.
+3. Välj fliken **Ämnesidentifiering.** I följande avsnitt finns information om de olika inställningarna.
 
-    ![kunskap – nätverks inställningar](../media/knowledge-network-settings-topic-discovery.png) 
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-discovery.png) 
 
-## <a name="select-sharepoint-topic-sources"></a>Välj SharePoint-rubriker
+## <a name="select-sharepoint-topic-sources"></a>Välj SharePoint-ämneskällor
 
-Du kan ändra de SharePoint-webbplatser i din organisation som ska crawlas för avsnitt.
+Du kan ändra vilka SharePoint-webbplatser i organisationen som ska crawlas för ämnen.
 
-Om du vill ta med eller utesluta en viss lista med webbplatser kan du använda följande. csv-mall:
+Om du vill ta med eller utesluta en viss lista med webbplatser kan du använda följande CSV-mall:
 
 ``` csv
 Site name,URL
 ```
 
-Om du lägger till webbplatser med webbplats väljaren läggs de till i den befintliga listan över webbplatser som ska inkluderas eller exkluderas. Om du laddar upp en CSV-fil skrivs en befintlig lista över. Om du tidigare har inkluderat eller uteslutit vissa webbplatser kan du hämta listan som en CSV-fil, göra ändringar och ladda upp den nya listan.
+Om du lägger till webbplatser med hjälp av webbplatsväljaren läggs de till i den befintliga listan med webbplatser som ska inkluderas eller undantas. Om du laddar upp en CSV-fil kommer den att skriva över alla befintliga listor. Om du tidigare har tagit med eller uteslutit specifika webbplatser kan du ladda ned listan som en CSV-fil, göra ändringar och ladda upp den nya listan.
 
-Välja webbplatser för identifiering av ämnen
+Välja webbplatser för ämnesidentifiering
 
-1. På fliken **identifiering** , under **Välj SharePoint-ämnes källor**, väljer du **Redigera**.
-2. På sidan **Select SharePoint topic sources** väljer du vilka SharePoint-webbplatser som ska crawlas som källor för dina ämnen under identifiering. Detta inkluderar:
-    - **Alla webbplatser**: alla SharePoint-webbplatser i din klient organisation. Här fångar du aktuella och framtida webbplatser.
-    - **Alla, förutom markerade webbplatser**: Skriv namnen på de webbplatser du vill undanta.  Du kan också ladda upp en lista med webbplatser som du inte vill ska ingå i sökningen. Webbplatser som skapats i framtiden kommer att inkluderas som källor för avsnitts identifiering. 
-    - **Endast valda webbplatser**: Skriv in namnen på de webbplatser du vill ta med. Du kan också ladda upp en lista med webbplatser. Webbplatser som skapats i framtiden kommer inte att ingå som källor för identifiering av ämnen.
-    - **Inga webbplatser**: ämnen skapas eller uppdateras inte automatiskt med SharePoint-innehåll. Befintliga avsnitt finns kvar i ämnes centret.
+1. Välj Redigera **under Välj** SharePoint-ämneskällor **på fliken** Ämnesidentifiering. 
+2. På sidan **Välj SharePoint-ämneskällor** väljer du vilka SharePoint-webbplatser som ska crawlas som källor för ämnen under identifieringen. Det omfattar:
+    - **Alla webbplatser**: Alla SharePoint-webbplatser i klientorganisationen. Detta fångar aktuella och framtida webbplatser.
+    - **Alla, förutom valda webbplatser:** Skriv namnen på de webbplatser som du vill utesluta.  Du kan också ladda upp en lista över webbplatser som du vill avanmäla från identifiering. Webbplatser som skapas i framtiden kommer att ingå som källor för identifiering av ämnen. 
+    - **Endast valda webbplatser:** Skriv namnen på de webbplatser som du vill ska ingå. Du kan också ladda upp en lista med webbplatser. Webbplatser som skapas i framtiden kommer inte att inkluderas som källor för identifiering av ämnen.
+    - **Inga webbplatser:** Ämnen genereras eller uppdateras inte automatiskt med SharePoint-innehåll. Befintliga ämnen finns kvar i ämnescentret.
 
-    ![Skärm bild av användar gränssnittet för SharePoint-rubriker](../media/k-manage-select-topic-source.png)
+    ![Skärmbild av användargränssnittet för SharePoint-ämneskällor](../media/k-manage-select-topic-source.png)
    
 3. Klicka på **Spara**.
 
-## <a name="exclude-topics-by-name"></a>Utelämna ämnen efter namn
+## <a name="exclude-topics-by-name"></a>Utesluta ämnen efter namn
 
-Du kan utesluta ämnen från Upptäck genom att överföra en lista med en CSV-fil. Om du tidigare har uteslutit ämnen kan du ladda ned. csv, göra ändringar och ladda upp den igen.
+Du kan utesluta ämnen från identifiering genom att ladda upp en lista med hjälp av en CSV-fil. Om du tidigare har uteslutit ämnen kan du ladda ned CSV-filen, göra ändringar och ladda upp den igen.
 
-1. På fliken **identifiering** , under **utelämna ämnen**, väljer du **Redigera**.
-2. Klicka på **utelämna ämnen efter namn**.
-3. Om du behöver skapa en lista kan du Hämta CSV-mallen och lägga till ämnen som du vill undanta (se *arbeta med CSV-mallen* nedan). När filen är klar klickar du på **Bläddra** och laddar upp filen. Om det finns en befintlig lista kan du Hämta CSV-filen som innehåller listan.
+1. Välj Redigera **under Exkludera ämnen** på fliken Ämnesidentifiering. 
+2. Klicka **på Exkludera ämnen efter namn.**
+3. Om du behöver skapa en lista laddar du ned CSV-mallen och lägger till de ämnen du vill utesluta (se Arbeta med *CSV-mallen* nedan). När filen är klar klickar du på **Bläddra** och laddar upp filen. Om det finns en befintlig lista kan du ladda ned CSV-filen som innehåller listan.
 4. Klicka på **Spara**.
 
-    ![Skärm bild av användar gränssnittet undanta ämnen](../media/km-manage-exclude-topics.png)
+    ![Skärmbild av användargränssnittet för uteslutning av ämnen](../media/km-manage-exclude-topics.png)
 
 ### <a name="working-with-the-csv-template"></a>Arbeta med CSV-mallen
 
@@ -77,20 +76,20 @@ Du kan kopiera CSV-mallen nedan:
 Name (required),Expansion,MatchType- Exact/Partial (required)
 ```
 
-I CSV-mallen anger du följande information om de avsnitt som du vill undanta:
+I CSV-mallen anger du följande information om de ämnen du vill utesluta:
 
-- **Namn**: Skriv namnet på det ämne som du vill undanta. Du kan göra det på två sätt:
-    - Exakt träff: du kan ange exakt namn eller akronym (till exempel *contoso* eller *ATL*).
-    - Ofullständig matchning: du kan exkludera alla ämnen som har ett visst ord i det.  Till exempel kommer *bågen* att exkludera alla ämnen med ord *båge* i det, till exempel *båge cirkel*, *plasma båge svets* eller *tränings båge*. Observera att den inte utesluter ämnen där texten är inkluderad som en del av ett ord, till exempel *arkitekturen*.
-- **Står för (valfritt)**: om du vill utesluta en akronym skriver du orden som förkortningen står för.
-- **MatchType-exakt/delvis**: Skriv om det namn du angav är en *exakt* eller *delvis* matchnings typ.
+- **Namn:** Skriv namnet på det ämne som du vill utesluta. Du kan göra det på två sätt:
+    - Exakt matchning: Du kan ta med det exakta namnet eller förkortningen (till exempel *Contoso* eller *ATL).*
+    - Delvis matchning: Du kan utesluta alla ämnen som innehåller ett visst ord.  En båge *utesluter* till exempel  alla ämnen där ordet båge finns, t.ex. arcuscirkel, arcus-arcus- eller *utbildningsbåge.*  Observera att den inte exkluderar ämnen där texten ingår som en del av ett ord, till exempel *arkitektur.*
+- **Står för (valfritt)**: Om du vill utesluta en förkortning skriver du orden som förkortningen står för.
+- **MatchType-Exact/Partial:** Ange om namnet du angav var en *exakt eller* *delvis* matchningstyp.
 
-    ![Uteslut avsnitt i en CSV-mall](../media/exclude-topics-csv.png) 
+    ![Utesluta ämnen i CSV-mall](../media/exclude-topics-csv.png) 
 
 ## <a name="see-also"></a>Se även
 
-[Hantera ämnets synlighet i Microsoft 365](topic-experiences-knowledge-rules.md)
+[Hantera synlighet för ämnen i Microsoft 365](topic-experiences-knowledge-rules.md)
 
-[Hantera behörigheter för ämne i Microsoft 365](topic-experiences-user-permissions.md)
+[Hantera ämnesbehörigheter i Microsoft 365](topic-experiences-user-permissions.md)
 
-[Ändra namnet på ämnes centret i Microsoft 365](topic-experiences-administration.md)
+[Ändra namnet på ämnescentret i Microsoft 365](topic-experiences-administration.md)

@@ -1,9 +1,10 @@
 ---
-title: 'Skapa ett nytt avsnitt i avsnitts erfarenhet (för hands version) '
-description: Så här skapar du ett nytt avsnitt i avsnittet.
+title: Skapa ett nytt ämne i Microsoft Viva-ämnen
+description: Så här skapar du ett nytt ämne i Microsoft Viva-ämnen.
 author: efrene
 ms.author: efrene
 manager: pamgreen
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,61 +14,89 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 982cb4b0f750db9aecbaab6696f57be3f2390d1d
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 35d4615057deee81285ba950a157f28160b6eefa
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976357"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107306"
 ---
-# <a name="create-a-new-topic-preview"></a>Skapa ett nytt ämne (för hands version)
+# <a name="create-a-new-topic"></a>Skapa ett nytt ämne 
+
+I Viva Topics kan du skapa ett nytt ämne om ett ämne inte upptäcks genom indexering eller om AI-tekniken inte hittar tillräckligt med bevis för att etablera det som ett ämne.
 
 > [!Note] 
-> Innehållet i den här artikeln gäller för projekt cortex privat för hands version. [Läs mer om Project Cortex](https://aka.ms/projectcortex).
+> Observera att informationen i ett manuellt [](topic-experiences-security-trimming.md)skapat ämne är synlig för alla användare som har behörighet att visa ämnet medan information i ett ämne som har samlats av AI är säkerhets trim. 
 
-I avsnitts upplevelser kan du skapa ett nytt ämne om ett sådant inte upptäckts genom indexering eller om AI-tekniken inte hittade tillräckligt många belägg för att det ska bli ett ämne.
 
 ## <a name="requirements"></a>Krav
 
-Om du vill skapa ett nytt avsnitt måste du:
-- Har en licens för ämne.
-- Har behörighet till [**vem som kan skapa eller redigera ämnen**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Kunskaps administratörer kan ge användarna den här behörigheten i avsnittet behörigheter för kunskaps nätverk. 
+Om du vill skapa ett nytt ämne måste du:
+- Ha en Viva Topics-licens.
+- Ha behörighet till [**vem som kan skapa eller redigera ämnen.**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions) Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
 
 > [!Note] 
-> Användare som har behörighet att hantera ämnen i ämnes Center (kunskaps chef) har redan behörighet att skapa och redigera ämnen.
+> Användare som har behörighet att hantera ämnen i ämnescentret (knowledge managers) har redan behörighet att skapa och redigera ämnen.
 
 ## <a name="to-create-a-new-topic"></a>Så här skapar du ett nytt ämne:
 
-1. På sidan avsnitt Center väljer du **nytt** och sedan **sidan ämne**. Om du inte kan se det **nya** alternativet i ämnes centret kanske du inte har behörighet som krävs.
+1. I avsnittet **Namnge det här** avsnittet skriver du namnet på det nya avsnittet.
 
-    ![Nytt ämne](../media/knowledge-management/k-new-topic.png)
+    ![Ge det här avsnittet ett namn](../media/knowledge-management/k-new-topic-page.png) </br> 
 
-2. På sidan ny ämne kan du fylla i informationen om den nya ämnes mal len:
 
-    - Skriv namnet på det nya avsnittet i avsnittet **namn i det här avsnittet** .
+2. I avsnittet <b>Alternativa namn</b> skriver du andra namn som ämnet kan hänvisas till. 
+
+    ![Alternativa namn](../media/knowledge-management/alt-names.png) </br> 
+3. Skriv <b>några</b> meningar som beskriver ämnet i avsnittet Beskrivning. 
+
+    ![Beskrivning av ämnet](../media/knowledge-management/description.png)</br>
+
+4. I avsnittet <b>Fästa personer kan</b> du fästa en person för att visa personen som ämnesexpert i ämnet. Börja med att skriva in <b></b> användarens namn eller e-postadress i rutan lägg till en ny användare och välj sedan den användare du vill lägga till i sökresultatet. Du kan också "ta bort" dem genom att välja ikonen Ta bort <b>från listan</b> på användarkortet. Du kan också dra personen för att ändra ordningen som listan med personer visas.
+ 
+    ![Fästa personer](../media/knowledge-management/pinned-people.png)</br>
+
+
+5. I avsnittet <b>Fästa filer och sidor kan</b> du lägga till eller "fästa" en fil eller en SharePoint-webbplatssida som är kopplad till ämnet.
+
+   ![Fästa filer och sidor](../media/knowledge-management/pinned-files-and-pages.png)</br>
+ 
+    Om du vill lägga till en ny fil väljer du Lägg <b>till,</b>väljer SharePoint-webbplatsen från ofta besökta eller följda webbplatser och väljer sedan filen från webbplatsens dokumentbibliotek.
+
+    Du kan också använda alternativet <b>Från en länk för</b> att lägga till en fil eller sida genom att ange URL-adressen. 
+
+
+6.  I <b>avsnittet Relaterade</b> webbplatser visas webbplatser som har information om ämnet. 
+
+    ![Avsnittet Relaterade webbplatser](../media/knowledge-management/related-sites.png)</br>
+
+    Du kan lägga till en relaterad webbplats genom att välja <b>Lägg</b> till och sedan antingen söka efter webbplatsen eller välja den i listan med ofta besökta eller senaste webbplatser.</br>
     
-    - I avsnittet **alternativa namn** skriver du namn eller akronymer som också används för att referera till ämnet.
-    
-    - Skriv en eller två meningar för ämnet i avsnittet **kort beskrivning** . Den här texten används för det associerade ämnes kortet.
-    
-    - Skriv namnen på ämnes experterna i avsnittet **personer** . Personer som du lägger till manuellt i ämnet visas på ämnes sidan som **fasta personer**.
-    
-    - I avsnittet **filer och sidor** väljer du **Lägg till** och på nästa sida kan du välja associerade OneDrive-filer eller SharePoint Online-sidor.
-    
-    - I avsnittet **Sites** väljer du **Add**. I fönstret  **webbplatser** som visas väljer du de webbplatser som är kopplade till avsnittet.
+    ![Välj webbplats](../media/knowledge-management/sites.png)</br>
 
-    ![Sidan ny ämne](../media/knowledge-management/k-new-topic-page.png)
-    
-3. Om du behöver lägga till andra komponenter på sidan, till exempel text, bilder, webb delar, länkar o.s.v., väljer du ikonen arbets yta mitt på sidan för att hitta och lägga till dem.
+7. I <b>avsnittet Relaterade</b> ämnen visas kopplingar som finns mellan olika ämnen. Du kan lägga till en anslutning <b></b> till ett annat ämne genom att välja knappen Anslut till ett relaterat ämne, skriva namnet på det relaterade ämnet och välja det i sökresultatet. 
 
-    ![Lägga till objekt på sidan](../media/knowledge-management/static-icon.png)
+   ![Relaterade ämnen](../media/knowledge-management/related-topic.png)</br>  
 
-4. När du är klar väljer du **publicera** för att publicera avsnitts sidan. Publicerade ämnes sidor visas på fliken **sidor** .
+    Du kan sedan ge en beskrivning av hur ämnena är relaterade och välja <b>Uppdatera.</b></br>
 
-När du har publicerat artikeln visas namnet, det alternativa namnet, beskrivningen och de fästa personerna för alla licensierade användare som visar artikeln. Filer, sidor och webbplatser visas bara på sidan ämne om visnings programmet har Office 365-behörigheter för objektet. 
+   ![Beskrivning av närliggande ämnen](../media/knowledge-management/related-topics-update.png)</br> 
 
-Sidan ny ämne består av webb delar som är *medvetna om kunskaps nätverk*. Det innebär att när AI samlar in mer information om ämnet, uppdateras informationen i dessa webb delar med förslag för att göra sidan mer användbar för användarna.
+   Det relaterade ämnet som du lagt till visas som ett anslutet ämne.
+
+   ![Närliggande ämnen](../media/knowledge-management/related-topics-final.png)</br> 
+
+
+8. Du kan också lägga till statiska objekt på sidan (t.ex. text, bilder eller länkar) genom att välja ikonen för arbetsytan, som du hittar under den korta beskrivningen. När du markerar den öppnas SharePoint-verktygslådan där du kan välja objektet du vill lägga till på sidan.
+
+   ![Canvas-ikon](../media/knowledge-management/webpart-library.png)</br> 
+
+
+9. Välj **Publicera** för att spara ändringarna. 
+
+När du har publicerat sidan visas ämnesnamn, alternativt namn, beskrivning och fästa personer för alla licensierade användare som visar ämnet. Specifika filer, sidor och webbplatser visas bara på ämnessidan om visningsprogrammet har Office 365-behörighet till objektet. 
+
+
 
 ## <a name="see-also"></a>Se även
 

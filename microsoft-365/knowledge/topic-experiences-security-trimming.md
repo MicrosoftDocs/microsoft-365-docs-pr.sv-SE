@@ -1,8 +1,9 @@
 ---
-title: Ämne upplever säkerhets trimning (för hands version)
+title: Säkerhets trimning för Microsoft Viva Topics
 ms.author: efrene
 author: efrene
 manager: pamgreen
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -10,63 +11,59 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Översikt över hur säkerhet används för att Visa ämnen.
-ms.openlocfilehash: 7e503082494d27f9418b8e09b8d20d01e4708fe9
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+description: Översikt över hur säkerhet används för att visa ämnen.
+ms.openlocfilehash: fc8e2a08fcf9af266aee49eee878738f7f17aa59
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49699062"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107524"
 ---
-# <a name="topic-experiences-security-trimming-preview"></a>Ämne upplever säkerhets trimning (för hands version)
+# <a name="microsoft-viva-topics-security-trimming"></a>Säkerhets trimning för Microsoft Viva Topics 
 
-> [!Note] 
-> Innehållet i den här artikeln gäller för projekt cortex privat för hands version. [Läs mer om Project Cortex](https://aka.ms/projectcortex).
-
-Ämnen som gör att användarna inte kan se information om ämnen som de befintliga Office 365-behörigheterna hindrar dem från att se. Allt som en användare ser på en ämnes sida (till exempel SharePoint-webbplatser, dokument, filer) kommer att vara information som de redan är tillåtna för att visas. Avsnitts upplevelser ändrar inte befintliga behörigheter.
+Viva Topics-användare kan inte visa information i ämnen som deras befintliga Office 365-behörigheter hindrar dem från att se. Allt som en användare ser på en ämnessida (till exempel SharePoint-webbplatser, dokument och filer) blir information som användaren redan har tillåtelse att se. Viva Topics gör inga ändringar av befintliga behörigheter.
 
 ## <a name="why-two-users-may-have-different-views-of-the-same-topic"></a>Varför två användare kan ha olika vyer av samma ämne
 
-När ett ämne skapas via AI eller manuell bevarande kan det innehålla en beskrivning av ämnet, alternativa namn, personer som är kopplade till ämnet, samt webbplatser, sidor och filer relaterade till avsnittet. När den här informationen visas på en ämnes sida är det möjligt att två användare som visar samma ämne inte ser samma information.
+När ett ämne skapas med AI eller manuell läroplan kan det innehålla en beskrivning av ämnet, alternativa namn, personer kopplade till ämnet samt webbplatser, sidor och filer relaterade till ämnet. När den här informationen visas på en ämnessida är det möjligt att två användare som visar samma ämne min inte ser samma information.
   
-Om till exempel en användare 1 visar sidan Neptune, är detta det här som de kan se.
+När användare 1 till exempel visar ämnessidan för Neptune kan de se den här vyn av ämnessidan.
 
-![Neptune-avsnitt för användare 1](../media/knowledge-management/user2-topic-view.png) </br> 
+![Neptune-ämne för användare 1](../media/knowledge-management/user2-topic-view.png) </br> 
 
-Men när användare 2 tittar på samma Neptune visas en vy från användare 1.  Användare 2 kan se *produkt översikts filen DG-2000* i avsnittet **fästa filer och sidor** på sidan ämne, som inte visas för användare 1. 
+Men när Användare 2 tittar på samma ämnessida för Neptune skiljer sig deras vy från Användare 1.  Användare 2 kan se *FILEN DG-2000 Produktöversikt* i avsnittet Fästa filer och sidor på ämnessidan, som inte visas för Användare 1.  
 
-![Neptune-avsnitt för användare 2](../media/knowledge-management/user1-topic-view.png) </br> 
+![Neptune-ämne för användare 2](../media/knowledge-management/user1-topic-view.png) </br> 
 
-Skillnaden i vad användarna kan se i samma avsnitt är att användarna kanske inte har Office 365-behörighet för att visa en relaterad webbplats eller fil.  Avsnitts erfarenheten respekterar de behörigheter som är inställda för objekt i ett ämne och kan inte ändra åtkomsten till dem. I vårt exempel kan inte användare 1 Visa *produkt översikts filen DG-2000* på sidan för Neptune eftersom användare 1 inte har Office 365-behörighet för att visa filen.
+Skillnaden i vad användarna kan se i samma ämne är att användarna kanske inte har Office 365-behörighet att visa en relaterad webbplats eller fil.  Viva Topics respekterar de behörigheter som anges för objekt i ett ämne och kan inte ändra åtkomsten till dem. I vårt exempel kan användare 1 inte visa *filen DG-2000 Produktöversikt* på ämnessidan för Neptune eftersom Användare 1 inte har Office 365-behörigheter för att visa filen.
 
-Om en användare inte kan se tillräckligt med information i ett ämne för att den ska vara användbar, är avsnittet inte tillgängligt för användaren. I den här instansen visas inte det markerade avsnittet. Men en annan användare som har behörighet till mer information i ämnet för att det ska vara användbart kan se avsnittet.
-
-
-## <a name="topic-permissions-for-knowledge-managers-and-topic-contributors"></a>Behörigheter för ämne för kunskaps chefer och ämnes deltagare
-
-Användare som har tilldelats behörigheter för att hantera ämnen – kunskaps chefer-kommer bara att kunna visa information som de har behörighet att se i avsnitt.
-
-På liknande sätt kan användare som har behörigheten Skapa och redigera ämne-ämnes deltagare-bara visa information som de har behörighet att se i ämnen. 
+Om en användare inte kan se tillräckligt med information i ett ämne för att det ska vara användbart, är avsnittet inte tillgängligt för användaren. När det händer kan användaren inte se det markerade avsnittet. En annan användare som har behörighet till mer information i avsnittet för att den ska vara användbar kommer att kunna se ämnet.
 
 
-## <a name="ai-versus-manually-curated-topic-information"></a>AI och manuellt underavsnitts information
+## <a name="topic-permissions-for-knowledge-managers-and-topic-contributors"></a>Ämnesbehörigheter för knowledge managers och ämnesdeltagare
 
-Ämnen kan innehålla information som genererats av AI och information som lagts till eller redigerats av ämnes deltagare eller kunskaps chefer.
+Användare som har tilldelats behörighet att hantera ämnen – knowledge managers – kommer bara att kunna visa information som de har behörighet att se i ämnen.
 
- - Information i ett ämne som lagts till av AI visas bara för personer som har till gång till käll innehållet.
- - Information som har lagts till manuellt eller redigerats av en ämnes deltagare eller kunskaps chef visas för alla som kan se avsnittet.
+På samma sätt kan användare som har behörighet att skapa och redigera ämnesbehörigheter – ämnesdeltagare – bara visa information som de har behörighet att se i ämnen. 
 
-I följande tabell beskrivs vad användare – avsnitts läsare, deltagare och kunskaps chefer – kan se i ett visst ämne baserat på deras behörigheter.
 
-|Ämnes objekt|Vad användarna kan se|
+## <a name="ai-versus-manually-curated-topic-information"></a>AI kontra manuellt curated topic information
+
+Ämnen kan innehålla information som genereras av AI och information som lagts till eller redigerats av ämnesdeltagare eller kunskapshanterare.
+
+ - Information i ett ämne som lagts till av AI visas bara för personer som har åtkomst till källinnehållet.
+ - Information som har lagts till manuellt eller redigerats av en ämnesdeltagare eller knowledge manager är synlig för alla som kan se ämnet.
+
+I följande tabell beskrivs vad användare – ämnesanvändare, deltagare och kunskapshanterare – kan se i ett visst ämne baserat på deras behörigheter.
+
+|Ämnesobjekt|Vad användarna kan se|
 |:---------|:------------------|
-|Namn på avsnitt|Användare kan se ämnes namnet i alla ämnen i ämnes centret. Vissa ämnen kanske inte visas om de har en liten sökrelevans till användaren.|
-|Beskrivning av ämnet|AI-genererade beskrivningar visas endast för användare som har behörighet till käll innehållet. Manuellt angivna eller redigerade beskrivningar visas för alla användare.|
-|Kontakter|Fästa personer visas för alla användare. Föreslagna personer visas bara för användare som har behörighet till käll innehållet.|
-|Hjälpfiler|Filer visas endast för användare som har behörighet till käll innehållet.|
-|Målsidor|Sidor visas bara för användare som har behörighet till käll innehållet.|
-|Sidor|Webbplatser visas bara för användare som har behörighet till käll innehållet.|
+|Ämnesnamn|Användarna kan se ämnesnamnet för alla ämnen i ämnescentret. Vissa ämnen kanske inte visas om de har en låg relevans för användaren.|
+|Ämnesbeskrivning|AI-genererade beskrivningar visas endast för användare som har behörighet till källinnehållet. Manuellt angivna eller redigerade beskrivningar visas för alla användare.|
+|Kontakter|Fästa personer visas för alla användare. Föreslagna personer visas bara för användare som har behörighet till källinnehållet.|
+|Filer|Filer visas bara för användare som har behörighet till källinnehållet.|
+|Sidor|Sidor visas bara för användare som har behörighet till källinnehållet.|
+|Webbplatser|Webbplatser visas bara för användare som har behörighet till källinnehållet.|
 
 
 

@@ -1,152 +1,147 @@
 ---
-title: Förbered din miljö för ämne (för hands version)
-description: Förbered din miljö så att du kan ange så mycket innehåll som möjligt för användarna med ämnen (för hands version).
+title: Förbereda din miljö för Microsoft Viva-ämnen
+description: Gör miljön klar så att du kan ge användarna så mycket innehåll som möjligt med Microsoft Viva Topics.
 ms.author: samanro
 author: samanro
 manager: pamgreen
-ms.date: 7/20/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ROBOTS: NOINDEX
-ms.openlocfilehash: 19112b222be328eb75b7eea807bea94e524fd56d
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 5a13af3e78848471b436d44ab051eca945176c74
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683468"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107702"
 ---
-# <a name="get-your-environment-ready-for-topic-experiences-preview"></a>Förbered din miljö för ämne (för hands version)
+# <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>Förbereda din miljö för Microsoft Viva-ämnen
 
-> [!Note]
-> Innehållet i den här artikeln gäller för projekt cortex privat för hands version. [Läs mer om Project Cortex](https://aka.ms/projectcortex).
+För att få ut mesta möjliga av Viva-ämnen vill du ha så mycket innehåll som möjligt för att kunna identifiera ämnen, så att du kan ha en omfattande uppsättning ämnen för användarna. Men vilket innehåll ska användas för identifiering av ämnen? Hur maximerar du innehållet som indexeras samtidigt som du håller kontrollen? Ju mer innehåll som omfattas, desto bättre blir insikterna som artificiell intelligens kan upptäcka. I den här artikeln får du hjälp med att planera för att se till att du tar med rätt innehåll och att du har rätt personer och resurser för att göra en bra upplevelse för användarna.
 
-För att få ut det mesta av avsnitts upplevelser vill du ha så mycket innehåll som möjligt med avsnitts identifiering, så att du kan ha många olika ämnen för dina användare. Vilket innehåll ska användas för avsnitts identifiering? Hur gör du för att maximera innehållet som är indexerat, och samtidigt behålla kontrollen? Mer innehåll är i omfattning, desto bättre blir den artificiella intelligensen. I den här artikeln får du stegvisa instruktioner för att se till att du inkluderar lämpligt innehåll och att du har rätt personer och resurser för att få en bra upplevelse för dina användare.
+För att planera för Viva Topics behöver du:
 
-För att kunna planera för avsnitts upplevelser (för hands version) måste du:
-
-![Migrera, ansluta, modernisera, skydda och identifiera steg för att hantera kunskaps hantering](../media/knowledge-management/km-adoption-onboarding-checklist.png)
+![Migrera, ansluta, modernisera, skydda och identifiera steg för onboarding till kunskapshantering](../media/knowledge-management/km-adoption-onboarding-checklist.png)
 
 1. [Migrera innehåll till SharePoint](#1-migrate-content-to-microsoft-365)
-    - Avsnitts utvinning inkluderar bara innehåll på SharePoint-webbplatser.
-      - Om möjligt migrerar du värdefullt innehåll till SharePoint Online från externa källor.
-      - Prioritera innehålls källor med stor potential för tyst kunskap.
-      - Markera fördelarna med kunskaps hantering för att uppmuntra användare att flytta innehåll från OneDrive till SharePoint-webbplatser.
+    - Ämnesindexeringen omfattar endast innehåll på SharePoint-webbplatser.
+      - Om möjligt bör du migrera värdefullt innehåll till SharePoint Online från externa källor.
+      - Prioritera innehållskällor med hög potential för tacit-kunskap.
+      - Framhäv fördelarna med hantering av kunskap för att uppmuntra användarna att flytta innehåll från OneDrive till SharePoint-webbplatser.
 
 2. [Koppla information till Microsoft Graph](#2-connect-information-to-microsoft-graph)
-    - I framtiden kan du gå in i kunskaps diagrammet och bli tillgänglig.
-    - För innehåll som inte kan flyttas bör du överväga att använda Graph-kopplingar för att förbättra sökningar och förbereda för framtida inkludering.
+    - I framtiden kan externt innehåll läggas till i knowledge graph och bli tillgängligt.
+    - För innehåll som inte kan flyttas kan du använda Graph Connectors för att förbättra sökningen och förbereda för framtida integrering.
 
 3. [Modernisera SharePoint-sidor](#3-modernize-sharepoint-pages)
-    - Ämnes kort kan bara placeras på moderna sidor.
-    - Identifiera klassiska sidor med hög profil som är Modernization kandidater.
+    - Ämneskort kan endast visas på moderna sidor.
+    - Identifiera klassiska sidor med hög profil som går att modernisera.
 
-4. [Skydda innehållet på lämpligt sätt](#4-secure-content-appropriately)
-    - Ämnes resurser är säkerhetstrimmade baserat på en användares behörigheter.
-    - Identifiera innehåll som kan ha fel generella eller begränsade behörigheter:
-      - Uppmuntra webbplats ägarna att använda delnings rapporterna för att granska behörigheter
-      - Låt administratörer granska allt delat innehåll med Sök funktionen
-      - Uppmuntra innehålls ägarna att dela innehåll som inte är känsligt och kan ha en bredare fördel för organisationen.
+4. [Skydda innehåll på rätt sätt](#4-secure-content-appropriately)
+    - Ämnesresurser säkerhets trimas baserat på en användares behörigheter.
+    - Identifiera innehåll som kan ha felaktigt omfattande eller restriktiva behörigheter:
+      - Uppmuntra webbplatsägare att använda delningsrapporterna för att granska behörigheter
+      - Se till att administratörer granskar brett delat innehåll med hjälp av sökning
+      - Uppmuntra innehållsägare att dela innehåll som inte är känsligt och som kan ha bredare fördelar för organisationen.
     - Granska Microsoft Graph-konfigurationen för användare och innehåll:
-      - Avsnitts utvinning följer konfiguration exklusive innehåll från sökning eller Delve. Kontrol lera om dessa konfigurationer fortfarande är relevanta.
+      - Topic indexing honors configuration excluding content from Search or Delve (for example, NOINDEX). Kontrollera om de här konfigurationerna fortfarande är relevanta.
 
-5. [Identifiera kunskaps chefer och ämnen](#5-identify-knowledge-managers-and-topics)
-    - Använd befintliga taxonomier för att manuellt skapa avsnitt.
-    - Identifiera ämnes experter (SMF) för förväntade eller dirigerade ämnen.
-    - Identifiera webbplatser som täcker en stor del av värdefulla data som kan användas för pilot ämnen.
-    - Delta i kunskaps chefer och i övnings grupper.
+5. [Identifiera kunskapshanterare och ämnen](#5-identify-knowledge-managers-and-topics)
+    - Använd befintliga taxonomier för att manuellt skapa ämnen, eller hjälp med att bekräfta AI-föreslagna ämnen.
+    - Identifiera ämnesexperter (SS) för förväntade eller idelade ämnen.
+    - Identifiera webbplatser som täcker en stor mängd värdefulla data som kan användas för att pilottesta ämnesnäring.
+    - Engagera kunskapshanterare och communitys.
 
 ## <a name="1-migrate-content-to-microsoft-365"></a>1. Migrera innehåll till Microsoft 365
 
-Det finns flera verktyg och tjänster som hjälper dig med migreringen – du kan få en översikt över och information om hur du migrerar genom att [migrera innehållet till Microsoft 365](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online). Migreringsverktyg inkluderar:
+Det finns flera verktyg och tjänster som hjälper dig med migreringen – du kan få en översikt och information om hur du migrerar på Migrera innehåll till [Microsoft 365.](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online) Migreringsverktygen omfattar:
 
 - [Migreringshanteraren](https://docs.microsoft.com/sharepointmigration/mm-get-started)
-- [Migreringsverktyg för SharePoint (SPMT)](https://docs.microsoft.com/sharepointmigration/introducing-the-sharepoint-migration-tool)
+- [Migreringsverktyget för SharePoint (SPMT)](https://docs.microsoft.com/sharepointmigration/introducing-the-sharepoint-migration-tool)
 - [Microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)
-- [Migreringsverktyg och tjänster för partner](https://www.microsoft.com/solution-providers)
+- [Verktyg och tjänster för partnermigrering](https://www.microsoft.com/solution-providers)
 
-Få ut mesta möjliga av migreringen:
+Få ut det mesta av migreringen:
 
-- Migrera till en modern webbplats-med Microsoft Teams. När indexeringen kan ske på alla SharePoint-webbplatser (klassiska eller moderna) visas bara ämnen för användare via högdagrar och kort på moderna sidor.
-- Underhåll användar namn-de flesta Migreringsverktyg gör att du kan mappa användar identiteter i migreringen, så att egenskaper som skapas av eller ändras av hanteras efter migreringen. Det här är viktigt för ämnen eftersom fil författare används för att identifiera de experter som läggs till på en ämnes sida eller ett kort. 
-- Skapa namn på tjänst konton – det finns vissa fall där det inte går att bevara användar namn. Om du till exempel migrerar innehåll som skapats av någon som inte längre är anställd i organisationen. I den här instansen flyttar de flesta migreringsverktyget en fil som om den skapades av ett administratörs konto eller ett tjänst konto. Om det här inträffar ofta kan det här tjänst kontot listas mot ämnen som en expert. Det är där namnet på kontot blir mycket viktigt. Om du gör det beskrivande är närvaron av dessa icke-mänskliga konton lättare att förstå för användare som använder ämnen.
+- Migrera till en modern webbplats – som innehåller Microsoft Teams. Indexeringen kan ske på alla SharePoint-webbplatser (klassisk eller modern), men ämnen som bara visas på moderna sidor visas för användare med fokuspunkter och kort.
+- Behåll användarnamn – de flesta migreringsverktyg låter dig mappa användaridentiteter under migreringen, så att egenskaper som Skapat av eller Ändrad av bibehålls efter migreringen. Det här är viktigt för ämnen eftersom redigering av filer används för att identifiera de experter som läggs till på en ämnessida eller ett kort. 
+- Ange beskrivande namn på tjänstkontot – Det kommer att finnas vissa fall där det inte går att underhålla användarnamn. Till exempel om du migrerar innehåll som har skapats av någon som inte längre är anställd i organisationen. I det här fallet flyttar de flesta migreringsverktyg en fil som om den skapades med ett administratörskonto eller ett tjänstkonto. Om detta inträffar ofta kan det tjänstkontot sedan visas i en lista med ämnen som en expert. Det är här namnet på kontot blir mycket viktigt. Om du ger den en beskrivande beskrivning blir närvaro av dessa icke-mänskliga konton lättförståeliga genom användarnas användning av ämnen.
 
-## <a name="2-connect-information-to-microsoft-graph"></a>2. koppla informationen till Microsoft Graph
+## <a name="2-connect-information-to-microsoft-graph"></a>2. Koppla information till Microsoft Graph
 
-Om du inte kan migrera lite innehåll kan du ansluta det med Microsoft Graph:
+Om du inte kan migrera visst innehåll ansluter du det till Microsoft Graph:
 
-- Överväg att implementera [Graph-innehåll](https://docs.microsoft.com/microsoftsearch/connectors-overview). Genom att använda kopplingar kan externa innehåll indexeras i Microsoft Graph, där användarna kan hitta dem via Microsoft Search.
-- Den framtida utvecklingen kommer att överföra externa data till ämnen.
+- Överväg att [implementera Graph Content Connectors.](https://docs.microsoft.com/microsoftsearch/connectors-overview) Med kopplingar kan externt innehåll indexeras i Microsoft Graph, där användarna sedan kan hitta det via Microsoft Search.
+- Framtida utvecklingar kommer att föra med sig externa data till Viva Topics.
 
-## <a name="3-modernize-sharepoint-pages"></a>3. modernisera SharePoint-sidor
+## <a name="3-modernize-sharepoint-pages"></a>3. Modernisera SharePoint-sidor
 
-Eftersom det bara går att Visa ämnes kort och högdagrar på moderna sidor kan du uppdatera de sidor som du vill ska ingå i ämnes erfarenheterna från klassisk till modern. Se [modernisera dina klassiska SharePoint-webbplatser](https://docs.microsoft.com/sharepoint/dev/transform/modernize-classic-sites). Du kan använda [SharePoint Modernization-skannern](https://docs.microsoft.com/sharepoint/dev/transform/modernize-scanner) för att förbereda de klassiska webbplatserna för Modernization.
+Eftersom ämneskort och höjdpunkter bara kan visas på moderna sidor uppdaterar du alla sidor som du vill ska ingå i Viva-ämnen från klassisk till modern. Se [Hur du moderniserar dina klassiska SharePoint-webbplatser.](https://docs.microsoft.com/sharepoint/dev/transform/modernize-classic-sites) Du kan använda [SharePoint-moderniseringsskannern](https://docs.microsoft.com/sharepoint/dev/transform/modernize-scanner) för att förbereda klassiska webbplatser för modernisering.
 
-Om du har många klassiska webbplatser kan du prioritera de många profil sidor som du vill konvertera till moderna.
+Om du har många klassiska webbplatser bör du prioritera sidor med hög profil att konvertera till moderna.
 
-## <a name="4-secure-content-appropriately"></a>4. skydda innehållet på lämpligt sätt
+## <a name="4-secure-content-appropriately"></a>4. Skydda innehåll på rätt sätt
 
-När användarna interagerar med ett ämnes kort eller en ämnes sida kan de se olika resurser. Det beror på att de har åtkomst till olika filer som är kopplade till avsnittet. Om dina underliggande behörigheter är för strikta kan de serendipitous aspekterna av information som upptäcks genom ämnen minskas. Å andra sidan, om de är för breda kan ett avsnitt ha Surface-innehåll för en användare som du inte vill att de ska se.
-Det är viktigt att hantera god behörighet. Och hantering av god behörighet är baserat på ett pågående partnerskap mellan administratörer och innehålls ägare. Det här kan vara en pågående aktivitet som du kan vidta för att förbereda olika ämnen:
+När användare interagerar med ett ämneskort eller en ämnessida kan de se olika resurser. Det beror på att de har åtkomst till olika filer som är kopplade till ämnet. Om dina underliggande behörigheter är för strikta kan de serendiöriska aspekter av informationsidentifiering genom ämnen minska. Å andra sidan, om de är för breda kan ett ämne ytinnehåll för en användare som du inte vill att de ska se.
+Här är det viktigt att hantera bra behörigheter. Och god behörighetshantering baseras på ett pågående samarbete mellan administratörer och innehållsägare. Även om det kan vara en pågående aktivitet finns det några praktiska steg som du kan vidta när du förbereder dig för ämnen:
 
-- Uppmuntra webbplats ägarna att granska delning och behörigheter.
+- Uppmuntra webbplatsägare att granska delning och behörigheter.
 
-  Du kan granska en delnings rapport för webbplatsen som visar fullständiga uppgifter om alla behörigheter och delnings länkar som har kon figurer ATS på webbplatsen i [dela rapporter](https://docs.microsoft.com/sharepoint/sharing-reports). Här listas intern och extern (gäst) användare.
+  SharePoint-webbplatsägare kan granska en delningsrapport för sin webbplats med fullständig information om alla behörigheter och delningslänkar konfigurerade på webbplatsen, se [Delningsrapporter.](https://docs.microsoft.com/sharepoint/sharing-reports) Här listas interna och externa (gäst)användare.
 
-  Webbplats ägare kan också se vem som har behörighet för webbplatsen genom att gå till sidorna **webbplats behörigheter** och **avancerade behörigheter** .
+  Webbplatsägare kan också se vem som har behörighet för webbplatsen genom att gå till sidorna **Webbplatsbehörigheter** och **Avancerade behörighetsinställningar.**
 
-  1. Välj   >  **webbplats behörigheter** för inställningar på webbplatsen. Kontrol lera vilka som är listade under webbplats ägare, webbplats medlemmar och besökare. Sök efter gäst användare.
-  2. Välj **avancerade behörigheter** på sidan **behörigheter** . Du kan söka efter unika behörigheter och se vilka som har begränsad åtkomst till objekt på webbplatsen.
+  1. Välj Webbplatsbehörigheter **för Inställningar** på din  >  **webbplats.** Kontrollera vem som visas under Webbplatsägare, Webbplatsmedlemmar och Webbplatsbesökare. Kontrollera om det finns gästanvändare.
+  2. Välj Avancerade **behörighetsinställningar** på **sidan Behörigheter.** Du kan söka efter unika behörigheter och se vem som har begränsad åtkomst till objekt på webbplatsen.
 
-- Granska Microsoft 365-grupper och Teams för att se till att de är korrekt inställda som offentliga eller privata grupper eller team. Nya team och Microsoft 365 Groups är privata som standard, men när första utgivningen är offentlig som standard. Om du var tidigare inför dessa tekniker kanske du vill granska. Dessutom utvecklas en grupps funktion ofta över hela livs cykeln och det kan hända att inställningen måste uppdateras för att det ska gå att använda teamet.
-- Granska användning av "alla", "alla utom externa användare" eller breda säkerhets grupper. Innehållet kan delas felaktigt med dessa värden. Om du vill granska hur de här grupperna används kan du:
-  - Skapa ett konto som inte har några grupp medlemskap
-  - Använd Sök funktionen med det här kontot för att hitta innehåll som delas.
-  - Om olämpligt innehåll visas för det här kontot via sökning kan du arbeta med webbplats ägarna för att korrigera behörighets konfigurationen.
+- Granska Microsoft 365-grupper och -team för att se till att de är korrekt inställda som offentliga eller privata grupper eller team. Nya Grupper och Microsoft 365-grupper är inställda på privata som standard, men när de först släpptes var offentliga som standard. Om du redan använder dessa tekniker kanske du vill granska. Dessutom utvecklas en grupps funktion ofta under hela livscykeln, och inställningen kan behöva uppdateras för att återspegla den aktuella användningen av gruppen.
+- Granska användningen av "alla", "alla utom externa användare" eller breda säkerhetsgrupper. Innehållet kan delas felaktigt med dessa värden. Om du vill granska hur dessa grupper används kan du:
+  - Skapa ett konto som inte har några gruppmedlemskap
+  - Använd sökfunktionen med det här kontot om du vill hitta innehåll som delas allmänt.
+  - Om olämpligt innehåll visas för det här kontot via sökning kan du arbeta med webbplatsägarna för att korrigera behörighetskonfigurationen.
 
-Utöver behörigheter kan du också styra omfattningen av vad som kan upptäckas genom olika ämnen. Du har alltid kontroll över vad som är indexerat.
+Förutom behörigheter kan du även styra omfattningen av vad som kan upptäckas via ämnen. Du har alltid kontroll över vad som indexeras.
 
-Administratörer kan konfigurera indexering i administrations centret för Microsoft 365. När du konfigurerar [kunskaps hantering](set-up-topic-experiences.md)kan du göra följande:
+Administratörer kan konfigurera indexering i Administrationscenter för Microsoft 365. När du [konfigurerar Knowledge Management](set-up-topic-experiences.md)kan du:
 
-- Tillåt identifiering på alla SharePoint-webbplatser eller ange webbplatser att inkludera eller exkludera som avsnitts källor.
-- Om du har känsliga villkor kan du även utesluta ämnen efter namn. Om du till exempel har namnet på ett känsligt projekt och du inte vill att en högdager eller ett kort ska visas, oavsett användarens behörigheter, kan du utesluta projekt namnet.
+- Tillåt identifiering på alla SharePoint-webbplatser eller ange webbplatser som ska ingå eller uteslutas som ämneskällor.
+- Där du har känsliga termer kan du även utesluta ämnen med namn. Om du till exempel har namnet på ett känsligt projekt, där du inte vill att en markering eller ett kort ska visas, oavsett användarens behörighet, kan du utesluta det projektnamnet.
 
-På innehålls nivå kan du också kontrol lera vad som kan upptäckas. Alla konfigurationer som du har gjort för att undanta innehåll från sökning används också för innehålls identifiering. Om du till exempel har uteslutit ett visst dokument bibliotek från en sökning i Sök resultaten används inte det här dokument biblioteket för avsnitts ökning.
+På innehållsnivå kan du även styra vad som kan upptäckas. Alla konfigurationer som du har gjort för att utesluta innehåll från sökning används också för identifiering av innehåll. Om du till exempel har uteslutit att ett visst dokumentbibliotek visas i sökresultaten används inte det här dokumentbiblioteket för identifiering av ämnen.
 
-## <a name="5-identify-knowledge-managers-and-topics"></a>5. identifiera kunskaps chefer och ämnen
+## <a name="5-identify-knowledge-managers-and-topics"></a>5. Identifiera knowledge managers och ämnen
 
-Hantering av ämnen handlar om tre viktiga roller, inklusive två nya Azure Active Directory-roller (AAD): kunskaps administratör och kunskaps chef:
+Hantering av ämnen omfattar tre viktiga roller, inklusive två nya Azure Active Directory-roller (AAD): Kunskapsadministratör och Knowledge Manager:
 
-- Kunskaps administratören (KA) är en teknisk roll, vanligt vis i den. Med den här rollen kan du konfigurera avsnitts funktionerna i administrations centret för M365, samt konfiguration av identifiering och synlighet för avsnitt.
-- Kunskaps ledaren (KM) fungerar tillsammans med ämnena och ser till att deras kvalitet och fullständighet visas.
-- Ämnes deltagare är inte baserade på en AAD-roll, men behörigheter i administrations centret. De är föremål för experter som kan granska innehållet i avsnitt, lägga till resurser och personer.
+- Knowledge-administratören (KA) är en teknisk roll, vanligtvis inom IT. Med den här rollen kan du konfigurera Viva-ämnen i administrationscentret för M365, samt konfigurationen av ämnesidentifiering och synlighet.
+- Knowledge Manager (KM) arbetar med ämnena själva och övervakar deras kvalitet och fullständighet.
+- Ämnesdeltagare (TCs) är inte baserade på en AAD-roll, men behörigheter i administrationscentret. De är ämnesexperter som kan ta hand om innehåll om ämnen och lägga till resurser och personer.
 
-Beroende på din organisation kan du ha få eller många personer som agerar i dessa roller. För vissa organisationer kan de vara samma personer.
+Beroende på din organisation kanske det är få eller många personer som arbetar med de här rollerna. I vissa organisationer kan det vara samma personer.
 
-| Kunskaps administratör | Kunskaps chef | Ämnes deltagare |
+| Kunskapsadministratör | Knowledge Manager | Ämnesdeltagare |
 |:-------|:-------|:-------|:-------|
-| AAD-roll | AAD-roll | STORT |
-| Har åtkomst till administrations centret | Har åtkomst till administrations centret | Ingen åtkomst till administrations centret |
-| Konfigurerar ämnen | Äger hantering och kvalitet av ämnen | Bidrar till ämnen baserat på deras expertis. |
-| Säkerställer att säkerhets-och efterföljandekrav efterlevs och förstår licens avtal.| Utför hanterings uppgifter som att skapa, redigera, ta bort och avvisa ämnen. Stöd för ämne deltagare med deras uppgifter. | Granska informationen och innehållet på ämnes sidorna, inklusive vilka personer och resurser som har fästs i det avsnittet. |
+| AAD-roll | AAD-roll | KANT |
+| Har åtkomst till administrationscentret | Har åtkomst till administrationscentret | Ingen åtkomst till administrationscentret |
+| Uppsättningar av Viva-ämnen | Egen hantering och kvalitet för ämnen | Bidrar till ämnen baserat på deras expertis. |
+| Säkerställer att säkerhet och efterlevnadsstandarder upprätthålls och förstår licensavtal.| Utför ämneshanteringsuppgifter, till exempel skapa, redigera, ta bort och avvisa avsnitt. Stöder ämnesdeltagare med sina uppgifter. | Visar information och innehåll på ämnessidor, inklusive vilka personer och resurser som är fästa vid det ämnet. |
 
-Högdagrar och kort visas för användare i deras arbete, till exempel när de bläddrar bland moderna sidor i SharePoint. Du styr användar upplevelsen för slutanvändare.
+Höjdpunkter och kort visas för användare inom ramen för sitt arbete, till exempel när de bläddrar på moderna sidor i SharePoint. Du kan styra användarupplevelsen för ämnen.
 
-- Vilka kan se ämnena? Ämnet är synligt i administrations centret för Microsoft 365. Välj vilka grupper du vill tillåta att se ämnen:
-  - Alla i organisationen. "Alla" inkluderar inte gäster, det är alla interna användare i katalogen
-  - Endast valda personer eller säkerhets grupper (det här alternativet är bra när du fortfarande rullar ut avsnitts upplevelser, så att du kan testa med en delmängd användare). Om du vill att gäster ska Visa ämnen måste du använda alternativet "valda personer eller säkerhets grupper" och ge dem en licens.
+- Vem kan se ämnen? Synlighet för ämnen har konfigurerats i administrationscentret för Microsoft 365. Välj vilka grupper du vill tillåta för att visa ämnen:
+  - Alla i min organisation. "Alla" inkluderar inte gäster, det är alla interna användare i katalogen
+  - Endast valda personer eller säkerhetsgrupper (det här alternativet är bra medan du håller på att distribuera Viva Topics så att du kan testa med en delmängd användare). Om du vill att gäster ska visa ämnen måste du använda alternativet "valda personer eller säkerhetsgrupper" och ge dem en licens.
   - Ingen.
 
-    Alla användare, även gäst användare, måste ha en licens för att kunna se avsnitts upplevelsen. Kom ihåg att behörigheter alltid styr vad som visas.
+    Alla användare, även gästanvändare, måste ha en licens tillämpad för att kunna visa ämnesupplevelsen. Kom ihåg att behörigheter alltid styr vad som visas.
 
-- Vilka avsnitt är synliga? Du kan välja att:
-  - Visa alla kandidat avsnitt.
-  - Visa endast bekräftade avsnitt.
+- Vilka ämnen visas? Du kan välja att:
+  - Visa alla kandidatämnen.
+  - Visa endast bekräftade ämnen.
 
-Nu när vi har cheferna, experterna och användarna kan vi prata om själva avsnitten.
+Nu när vi har chefer, experter och användare kan vi prata om själva ämnena.
 
-- Det är en bra idé att dirigera ämnen till din ämnes lista. Kvaliteten och mängden av ämnena är baserat på ditt innehåll-det skapas bara som ett ämne om det ingår i innehållet i omfånget. Om det finns tillräckligt med information och bevis för ämnet skapas det av AI-filen. Med hjälp av dirigerade ämnen kan kunskaps chef och ämnes experter hjälpa dig. Att kombinera människo kunskap med AI är den bästa vägen för kvalitets ämnen. Om det finns ämnen som du förväntar dig kan du skapa dessa manuellt i ämnes centret. Om du gör det får du en stark ljus signal om det ämnets relevans och det identifierar resurser och personer som ska kopplas till det avsnittet.
-- Använd befintliga taxonomier för att lättare kunna planera, från SharePoint eller på andra platser. Befintliga taxonomier inkluderar ofta organisations villkor, produkter, ämnes områden och så vidare. Källor till ämnen kan också komma från listor med projekt, befintliga Sök bok märken och så vidare.
+- Det är en bra idé att lägga till ämnen i ämneslistan. Kvaliteten och antalet ämnen baseras på ditt innehåll. Det skapas bara som ett ämne om det ingår i det innehåll som omfattas. Om det finns tillräcklig information och bevis för ämnet skapas det av AI. Med hjälp av ämnen kan Knowledge Manager och ämnesexperter vara till hjälp. Att kombinera kunskap från människor med AI är den bästa vägen för ämnen av hög kvalitet. Så om det finns ämnen som du tror att du manuellt kan skapa i ämnescentret. På så sätt får AI en stark signal om ämnets relevans och identifierar resurser och personer att associera med det ämnet.
+- Använd befintliga taxonomier för att planera ditt ämne, antingen från SharePoint eller någon annanstans. Befintliga taxonomier omfattar ofta organisationstermer, produkter, ämnesområden och så vidare. Källor till ämnen kan också komma från listor med projekt, befintliga sökbokmärken och så vidare.

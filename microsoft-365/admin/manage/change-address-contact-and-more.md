@@ -21,19 +21,19 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Lär dig hur du gör ändringar i din organisationsprofil, till exempel organisationens namn, adress, telefonnummer, teknisk kontakt och e-post.
-ms.openlocfilehash: 334bd1bee0571ba173987b7767465e8d82d7efe9
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: 3c3a936c8961373a94dc8b8978dbc274048af09c
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058441"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114231"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Ändra organisationens adress, tekniska kontakt med mera
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
   

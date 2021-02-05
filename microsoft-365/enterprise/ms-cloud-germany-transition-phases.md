@@ -1,5 +1,5 @@
 ---
-title: Åtgärder och konsekvenser för migreringen från Microsoft Cloud Deutschland (allmänt)
+title: Åtgärder och effekter för migreringsfaserna för migreringen från Microsoft Cloud Deutschland (allmänt)
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -17,115 +17,117 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 'Sammanfattning: förstå åtgärderna för migrering och påverkan av förflyttning från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i det nya tyska Data Center-området.'
-ms.openlocfilehash: 0d508607877b86d6f6df6a6465fada67e385fba0
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+description: 'Sammanfattning: Förstå åtgärderna i migreringsfaserna och hur de påverkar flytten från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterområdet.'
+ms.openlocfilehash: c0fdfc83bbdb8ec4c2f408cef113a487908957bf
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029204"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110035"
 ---
-# <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Åtgärder och konsekvenser för migreringen från Microsoft Cloud Deutschland (allmänt)
+# <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Åtgärder och effekter för migreringsfaserna för migreringen från Microsoft Cloud Deutschland (allmänt)
 
-Migrering av klient organisationer från Microsoft Cloud Deutschland till Tyskland i Microsofts Office 365-tjänster körs som en uppsättning faser och deras konfigurerade åtgärder för varje arbets belastning. Den här bilden visar den nio flytt faserna till de nya tyska datarna.
+Klientmigrering från Microsoft Cloud Deutschland till Regionen Tyskland för Microsofts Office 365-tjänster utförs som en uppsättning faser och deras konfigurerade åtgärder för varje arbetsbelastning. I den här bilden visas de nio faserna av migreringen till de nya tyska datacenteren.
 
-![De nio stegen i migreringen till de nya Tyskland](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![De nio faserna av migreringen till de nya Tyskland-datacenter](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
-Faserna och deras åtgärder säkerställer att viktiga data och erfarenheter migreras till Office 365-tjänsterna. När klient organisationen har lagts till i migreringsarkivet bevaras varje belastning som en uppsättning steg som körs på backend-tjänsten. Vissa arbets belastningar kan kräva att administratörer (eller användare) eller migreringen kan påverka användning för de faser som körs och diskuteras i [hur är migreringen organiserad?](ms-cloud-germany-transition.md#how-is-the-migration-organized)
+Faserna och deras åtgärder säkerställer att kritiska data och upplevelser migreras till Office 365-tjänsterna. När klientorganisationen har lagts till i migreringskön slutförs varje arbetsbelastning som en uppsättning steg som körs på backend-tjänsten. Vissa arbetsbelastningar kan kräva åtgärder av administratören (eller användaren), eller så kan migreringen påverka användningen av faserna som utförs och diskuteras i Hur organiseras [migreringen?](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
-Följande avsnitt innehåller åtgärder och effekter för arbets belastning allteftersom de fortskrider genom olika faser av migreringen. Granska tabellerna och se vilka åtgärder som gäller för din organisation. Se till att du är för beredd att utföra stegen i respektive faser efter behov. Om det inte går att slutföra nödvändiga åtgärder kan det orsaka avbrott i tjänsten och kan fördröja migreringen till Office 365-tjänsterna.
-
-## <a name="exchange-online-phase-5-of-9"></a>Exchange Online (fas 5 av 9)
-
-| Steg | Beskrivning | Gäller för | Påverkan |
-|:-------|:-----|:-------|:-------|
-| Ny tysk region läggs till i befintlig organisations konfiguration och post lådor flyttas till Office 365-tjänster. | Med Exchange Online-konfiguration läggs den nya lokala tyska regionen till i över gången. Den här Office 365-regionen är inställd som standard, vilket gör det möjligt för intern belastnings utjämning att distribuera post lådor till rätt standard region i Office 365-tjänster. I den här över gången finns användare på vardera sidan (Tyskland eller Office 365-tjänster) inom samma organisation och kan använda antingen URL-slutpunkt. | Exchange Online | -Över gångs användare och tjänster från Tyskland URL-adresser till Office 365-adresser ( `https://outlook.office365.com` ). <br><br> -Användare kommer att fortsätta använda tjänsten via äldre Tyskland-URL: er under migreringen. Ingen omedelbar åtgärd nödvändig. <br><br> -Användarna bör börja använda office.com-portalen för Office Online-funktioner (kalender, e-post, kontakter). Navigering till tjänster som ännu inte migrerats till Office 365-tjänster fungerar inte förrän migreras. <br><br> -Outlook Web App tillhandahåller inte den offentliga mappens upplevelse under migreringen. |
-|||||
-
-Ytterligare överväganden:
-
-- `myaccount.msft.com` fungerar bara efter snabbmigrering av Office 365. Länkar ger fel meddelandet "något gick fel" till den tiden.
-
-- Användare av Outlook Web App som har till gång till en delad post låda i den andra miljön (till exempel att en användare i Tyskland får åtkomst till en delad post låda i den globala miljön) uppmanas att verifiera en andra gång. Användaren måste först verifiera och komma åt post lådan i `outlook.office.de` och sedan öppna den delade post lådan `outlook.office365.com` . De måste verifiera en andra gång när de använder de delade resurserna som finns på den andra tjänsten.
-
-- Om du har en delad post låda i Outlook genom att använda **fil > information > Lägg till konto**, kan det hända att det inte går att använda REST API för befintliga Microsoft Cloud-Deutschland kunder eller dem i över gången `https://outlook.office.de/api/v2.0/Me/Calendars` . Kunder som vill lägga till ett konto för att Visa kalender behörigheter kan lägga till register nyckel enligt beskrivningen i [användar miljö ändringar för att dela en kalender i Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) för att kontrol lera att åtgärden lyckas. Denna register nyckel kan distribueras till hela organisationen med hjälp av grup princip.
-
-- Under migreringsprocessen kan du använda PowerShell-cmdleten **New-migrationEndpoint**, **set-migrationEndpoint** och **test-MigrationsServerAvailability** kan resultera i fel (fel på proxy). Det här inträffar om medlings post lådan har migrerats till över hela världen men administratörs post lådan inte har eller vice versa. Lös problemet genom att använda medlings post lådan som cirkulations fältet i **ConnectionUri** när du skapar klientens PowerShell-session. Till exempel: `New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid?email=Migration.8f3e7716-2011-43e4-96b1-aba62d229136@TENANT.onmicrosoft.de" -Credential $UserCredential -Authentication Basic -AllowRedirection`
-
-- Om du använder Exchange Online hybrid:
-
-    - Du måste köra hybrid konfigurations guiden igen (HCW) för att uppdatera lokal konfiguration mot Microsoft Cloud Deutschland före över gången och sedan köra HCW vid rensning mot Office 365-tjänsterna. Ytterligare DNS-uppdateringar kan krävas om du använder anpassade domäner.
-
-Om du vill veta mer om skillnaderna mellan organisationer i migreringen och efter att Exchange Online-resurserna har migrerats läser du informationen i [kund upplevelsen under migreringen till Office 365-tjänster i de nya tyska Data Center-tjänsterna](ms-cloud-germany-transition-experience.md).
-
-## <a name="exchange-online-protection-phase-6-of-9"></a>Exchange Online Protection (fas 6 av 9)
-
-Backend Exchange Online Protection (EOP)-funktioner kopieras till nytt Tyskland. 
-
-| Steg | Beskrivning | Gäller för | Påverkan |
-|:-------|:-----|:-------|:-------|
-| Migrering av Exchange Online-Routning och historik meddelanden. | Med Exchange Online kan du routas från externa värdar till Office 365. De externa MX-posterna övergår till routing till EOP-tjänsten. Klient konfiguration och historik information migreras. | Exchange Online-kunder | -Microsoft-hanterade DNS-poster uppdateras från Office 365 Germany EOP till Office 365-tjänster. <br><br> -Kunderna bör vänta 30 dagar efter EOP dubbel skrivning för EOP-migrering. Annars kan data gå förlorade. |
-|||||
+Följande avsnitt innehåller åtgärder och effekter för arbetsbelastningar när de fortskrider genom olika faser av migreringen. Granska tabellerna och bestäm vilka åtgärder eller effekter som gäller för din organisation. Se till att du är redo att utföra stegen i respektive fas efter behov. Om du inte utför de steg som krävs kan det leda till avbrott i tjänsten och kan fördröja slutförandet av migreringen till Office 365-tjänsterna.
 
 ## <a name="sharepoint-online-phase-4-of-9"></a>SharePoint Online (fas 4 av 9)
 
 | Steg | Beskrivning | Gäller för | Påverkan |
 |:-------|:-----|:-------|:-------|
-| SharePoint och OneDrive är över gången. | SharePoint och OneDrive migreras från Microsoft Cloud Deutschland till Office 365-tjänster i den här fasen. Befintliga Microsoft Cloud Deutschland-URL: er bevaras (till exempel `contoso.sharepoint.de` ). Token som har utfärdats av Microsoft Cloud Deutschland eller Office 365-tjänsterna är giltiga under över gången. | SharePoint-kunder | -Innehållet blir skrivskyddat under två korta perioder under migreringen. Under den här tiden förväntar vi dig en "det går inte att redigera innehåll" i SharePoint. <br><br> -Sök indexet sparas inte och kan ta upp till 10 dagar innan det återskapas. <br><br> -SharePoint/OneDrive-innehåll är skrivskyddat under två korta perioder under migreringen. Användarna ser en "du kan inte redigera innehållet"-banderollen kortas under den här tiden. <br><br> -Sök indexet kanske inte är tillgängligt när indexet återskapas. Under den här perioden kan det hända att Sök frågor inte returnerar fullständiga resultat. <br><br> -Befintliga webbplatser bevaras. |
+| SharePoint och OneDrive har nu övergångar. | SharePoint och OneDrive migreras från Microsoft Cloud Deutschland till Office 365-tjänster i den här fasen. Befintliga URL-adresser för Microsoft Cloud Deutschland bevaras (till `contoso.sharepoint.de` exempel). Token som har utfärdats av Microsoft Cloud Deutschland eller Office 365-tjänster är giltiga under övergången. | SharePoint-kunder | – Innehållet är skrivskyddat under två korta perioder under migreringen. Under tiden kan du förvänta dig en banderoll som säger att du inte kan redigera innehåll i SharePoint. <br><br> - Sökindexet bevaras inte och kan ta upp till 10 dagar tills det återskapas. <br><br> – SharePoint-/OneDrive-innehåll är skrivskyddat under två korta perioder under migreringen. Användarna kommer att se banderollen "du kan inte redigera innehåll" kort under denna tid. <br><br> - Sökindexet kanske inte är tillgängligt när indexet återskapas. Under den här perioden kan det hända att sökfrågor inte returnerar fullständiga resultat. <br><br> – Befintliga webbplatser bevaras. |
 |||||
 
 Ytterligare överväganden:
 
-- När SharePoint Online-migreringen har slutförts till tyska-regionen återskapas data indexet. Funktioner som är beroende av Sök index kan påverkas när Omindexering är klar.
+- När SharePoint Online-migreringen till den tyska regionen är slutförd återskapas dataindex. Funktioner som är beroende av sökindex kan påverkas när du indexerar om.
 
-- Om din organisation ändå använder SharePoint 2010-arbetsflöden fungerar de inte längre efter 31 december 2021. SharePoint 2013-arbets flöden fortsätter att fungera men är inaktiverat som standard för nya klient organisationer som börjar den 1 november 2020. När migreringen till SharePoint Online-tjänsten är klar rekommenderar vi att du går vidare till Power automatisering eller andra lösningar som stöds.
+- Om organisationen fortfarande använder SharePoint 2010-arbetsflöden kommer de inte längre att fungera efter den 31 december 2021. SharePoint 2013-arbetsflöden stöds fortfarande, även om de är inaktiverade som standard för nya klientorganisationen från och med den 1 november 2020. När migreringen till SharePoint Online-tjänsten är klar rekommenderar vi att du går över till Power Automate eller andra lösningar som stöds.
 
-- När migreringen av OneDrive har genomförts till den tyska regionen återskapas data indexet. Funktioner som är beroende av Sök index kan påverkas under Omindexering.
+- När OneDrive-migreringen till den tyska regionen slutförs återskapas dataindex. Funktioner som är beroende av sökindex kan påverkas när omindexeringen pågår.
 
-- Microsoft Cloud Deutschland kunder vars SharePoint Online-instans ännu inte migrerats måste finnas kvar på SharePoint Online PowerShell-modulen/Microsoft. SharePointOnline. CSOM version 16.0.20616.12000 eller tidigare. Annars Miss lyckas anslutningar till SharePoint Online via PowerShell eller klient objekt modellen.
+- Microsoft Cloud Deutschland-kunder vars SharePoint Online-instans ännu inte har migrerats måste stanna kvar på SharePoint Online PowerShell-modulen/Microsoft.SharePointOnline.CSOM version 16.0.20616.12000 eller senare. Annars misslyckas anslutningar till SharePoint Online via PowerShell eller objektmodellen på klientsidan.
 
-- Microsoft Cloud Deutschland-kunder vars SharePoint Online-instans migreras måste uppdatera SharePoint Online PowerShell-modulen/Microsoft. SharePointOnline. CSOM till version 16.0.20717.12000 eller senare. Annars Miss lyckas anslutningar till SharePoint Online via PowerShell eller klient objekt modellen.
+- Microsoft Cloud Deutschland-kunder vars SharePoint Online-instans har migrerats måste uppdatera SharePoint Online PowerShell-modulen/Microsoft.SharePointOnline.CSOM till version 16.0.20717.12000 eller senare. Annars misslyckas anslutningar till SharePoint Online via PowerShell eller objektmodellen på klientsidan.
+
+
+## <a name="exchange-online-phase-5-of-9"></a>Exchange Online (fas 5 av 9)
+
+| Steg | Beskrivning | Gäller för | Påverkan |
+|:-------|:-----|:-------|:-------|
+| Nya Tyskland-regionen läggs till i den befintliga organisationskonfigurationen och postlådor flyttas till Office 365-tjänster. | Exchange Online-konfigurationen lägger till den nya lokala tyska regionen i övergången. Det här Office 365-tjänsteområdet är inställt som standard, vilket gör att den interna belastningsutjämningstjänsten kan distribuera postlådor till rätt standardområde i Office 365-tjänster. I den här övergången finns användarna på vardera sidan (Tyskland eller Office 365-tjänster) i samma organisation och kan använda någon av URL-slutpunkterna. | Exchange Online | - Gå över till URL-adresser för Office 365-tjänster från Tyskland (URL:er) till Office 365-tjänster `https://outlook.office365.com` (). <br><br> – Användarna fortsätter att få åtkomst till tjänsten via äldre Tyskland-URL:er under migreringen. Ingen omedelbar åtgärd krävs. <br><br> - Användarna bör börja använda office.com Office Online-funktioner (kalender, e-post, kontakter). Navigering till tjänster som ännu inte migrerats till Office 365-tjänster måste migreras. <br><br> - Outlook Web App tillhandahåller inte den gemensamma mappen under migreringen. |
+|||||
+
+Ytterligare överväganden:
+
+- `myaccount.msft.com` fungerar bara efter office 365-övergången. Länkar ger felmeddelanden om att något gick fel tills dess.
+
+- Användare av Outlook Web App som har åtkomst till en delad postlåda i den andra miljön (till exempel om en användare i Tyskland-miljön har åtkomst till en delad postlåda i den globala miljön) uppmanas att autentisera en andra gång. Användaren måste först autentisera och komma åt postlådan i `outlook.office.de` och sedan öppna den delade postlådan som finns `outlook.office365.com` i. De måste autentiseras en andra gång när de har åtkomst till de delade resurser som finns i den andra tjänsten.
+
+- För befintliga Microsoft Cloud Deutschland-kunder eller under övergång: när en delad postlåda läggs till i Outlook med hjälp av **File > Info > Lägg** till konto kan det hända att kalenderbehörigheter inte kan visas (Outlook-klienten försöker använda Rest `https://outlook.office.de/api/v2.0/Me/Calendars` API).) Kunder som vill lägga till ett konto för att visa kalenderbehörigheter kan lägga till registernyckeln enligt beskrivningen i Användarupplevelse ändringar för delning av en kalender i [Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) för att säkerställa att den här åtgärden kommer att lyckas. Den här registernyckeln kan distribueras i hela organisationen med hjälp av grupprincip.
+
+- Under migreringsfasen kan det uppstå fel (fel på proxy) om du använder **PowerShell-cmdlets** Ny **migreringEndpoint, Set-MigrationEndpoint** och **Test-MigrationsServerAvailability.** Det här inträffar när skiljeförfarandespostlådan har migrerats till hela världen men inte administratörspostlådan har det eller vice versa. Du kan lösa problemet genom att använda skiljepostlådan som tips om routning i ConnectionUri när du skapar PowerShell-sessionen **för klientorganisationen.** Till exempel: `New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid?email=Migration.8f3e7716-2011-43e4-96b1-aba62d229136@TENANT.onmicrosoft.de" -Credential $UserCredential -Authentication Basic -AllowRedirection`
+
+- Om du använder Exchange Online-hybrid:
+
+    - Du måste köra hybridkonfigurationsguiden (HCW) igen för att uppdatera den lokala konfigurationen mot Microsoft Cloud Deutschland innan övergången och köra HCW igen vid rensning mot Office 365-tjänsterna. Ytterligare DNS-uppdateringar kan krävas om du använder anpassade domäner.
+
+Om du vill veta mer om skillnaderna för organisationer vid migrering och när Exchange Online-resurser har migrerats kan du läsa informationen i Kundupplevelse under migreringen till [Office 365-tjänster](ms-cloud-germany-transition-experience.md)i de nya tyska datacenterområdena.
+
+## <a name="exchange-online-protection-phase-6-of-9"></a>Exchange Online Protection (fas 6 av 9)
+
+Backend Exchange Online Protection (EOP) funktioner kopieras till den nya Tyskland-region. 
+
+| Steg | Beskrivning | Gäller för | Påverkan |
+|:-------|:-----|:-------|:-------|
+| Migrering av Exchange Online-routning och historiska meddelandedetaljer. | Exchange Online aktiverar routning från externa värdar till Office 365. De externa MX-posterna förs över till routen till EOP-tjänsten. Klientkonfiguration och historisk information migreras. | Exchange Online-kunder | – Microsoft-hanterade DNS-poster uppdateras från Office 365 Germany EOP till Office 365-tjänster. <br><br> - Kunder bör vänta i 30 dagar efter EOP med dubbla skrivning för EOP-migrering. Annars kan data gå förlorade. |
+|||||
+
 
 
 ## <a name="skype-for-business-online-phase-7-of-9"></a>Skype för företag – Online (fas 7 av 9)
 
 | Steg | Beskrivning | Gäller för | Påverkan |
 |:-------|:-----|:-------|:-------|
-| Migrering av Skype för företag till Teams. | Befintliga Skype för företag-kunder migreras till Office 365-tjänster i Europa och sedan övergår till Microsoft Teams i Tyskland för Office 365-tjänster. | Skype för företag-kunder | -Användare kan inte logga in på Skype för företag på migrations datumet. Tio dagar före migreringen skickar vi till administrations centret för att informera dig om när migreringen sker och när vi påbörjar migreringen. <br><br> -Princip konfigurationen migreras. <br><br> -Användarna migreras till Teams och har inte längre Skype för företag efter migreringen. <br><br> -Användare måste ha en stationär klient program vara installerad. Installationen sker under de tio dagarna via policyn i Skype för företag-infrastrukturen, men om det inte fungerar kan användarna ändå Ladda ner klienten eller ansluta med en webbläsare som stöds. <br><br> -Kontakter och möten migreras till Teams. <br><br> -Användare kan inte logga in på Skype för företag mellan tids tjänst över gångar till Office 365-tjänster, och inte förrän kundernas DNS-poster har slutförts. <br><br> -Kontakter och befintliga möten fortsätter att fungera som Skype för företag-möten. |
+| Migrering av Skype för företag till Teams. | Befintliga Skype för företag-kunder migreras till Office 365-tjänster i Europa och flyttas sedan till Microsoft Teams i Tyskland-regionen för Office 365-tjänster. | Skype för företag-kunder | – Användarna kan inte logga in i Skype för företag på migreringsdatumet. Tio dagar före migreringen publicerar vi ett inlägg i administrationscentret för att berätta när migreringen kommer att ske, och igen när vi påbörjar migreringen. <br><br> - Principkonfigurationen migreras. <br><br> - Användarna migreras till Teams och kommer inte längre att ha Skype för företag efter migreringen. <br><br> - Användarna måste ha Teams-skrivbordsklienten installerad. Installationen sker under de 10 dagarna via principen för Infrastrukturen för Skype för företag, men om det misslyckas måste användarna fortfarande ladda ned klienten eller ansluta med en webbläsare som stöds. <br><br> - Kontakter och möten migreras till Teams. <br><br> - Användarna kan inte logga in i Skype för företag mellan tidstjänstens övergångar till Office 365-tjänster och inte förrän dns-posterna från kunder har slutförts. <br><br> - Kontakter och befintliga möten fortsätter att fungera som Skype för företag-möten. |
 |||||
 
 ## <a name="office-services"></a>Office-tjänster
 
-Den senast använda tjänsten i Office är en snabbmigrering från Tyskland-tjänsten till Office 365-tjänster, inte en migrering. Endast MRU-länkar från Office 365-sidan visas efter migrering från Office.com-portalen. MRU-länkar från Tyskland-tjänsten visas inte som MRU-länkar i Office 365-tjänster. I Office 365 är MRU-länkar endast tillgängliga när klient migreringen har slutförts.
+Den senast använda tjänsten i Office är en övergång från Tyskland-tjänsten till Office 365-tjänster, inte en migrering. Endast MNA-länkar från Office 365-tjänstsidan kommer att visas efter migreringen Office.com portalen. MRU-länkar från Tyskland-tjänsten visas inte som mru-länkar i Office 365-tjänster. I Office 365 är MNA-länkar bara tillgängliga när klientorganisationen har migrerat.
 
-## <a name="subscription"></a>Prenumerationsvy
+## <a name="subscription"></a>Prenumeration
 
 | Steg | Beskrivning | Gäller för | Påverkan |
 |:-------|:-----|:-------|:-------|
-| Vi kan inte migrera kunder utan medgivande. | Microsoft får rätten att migrera på två olika sätt, vilket gör att Microsoft dirigerar över gången från data och tjänster till Office 365 Services-instansen. <br> Administratören väljer att använda Microsoft-driven migration. <br> Kunderna förnyar eventuella prenumerationer i sin Microsoft Cloud Deutschland-klient organisation efter den 1 maj 2020. Vi meddelar de här kunderna om migreringen varje månad, vänta 30 dagar för att ge kunderna chansen att avbryta och sedan direkt välja dem som spåras i ICM. | Alla Office-kunder | -Klient organisationen har marker ATS som översänt för migrering och administrations centret visar bekräftelse. <br><br> -Bekräftelse skickas till molnet i Tyskland. Tjänst konfigurationen fortsätter från Microsofts moln Deutschland slut punkter. <br><br> -Övervaka meddelande Center för uppdateringar av status för tillståndsmigrering. |
-| Abonnemang överförs och licenser omfördelas. | När klient organisationen har gått över till Office 365 365-tjänster köps prenumerationen på de överförda abonnemangen för Microsoft Cloud Deutschland. Användare med tilldelade licenser för Microsoft Cloud Deutschland tilldelas Office 365-tjänst licenser. Microsoft Cloud Deutschland-prenumerationer tas bort från Office 365-klient organisationen när den är klar. | Alla Office-kunder | -Ändringar av befintliga abonnemang kommer att blockeras (till exempel inga nya abonnemangs köp eller ändringar av antalet) under den här fasen. <br><br> -Ändringar av licens tilldelning kommer att blockeras. <br><br> -Abonnemanget för Microsoft Cloud Deutschland migreras till motsvarande Office 365-tjänst-prenumeration. Office 365-tjänsterna för abonnemanget definieras av Microsoft (kallas även för _erbjudande mappning_). <br><br> -Antalet funktioner (tjänste abonnemang) som erbjuds av Office 365-tjänster kan vara större än det ursprungliga Microsoft Cloud Deutschland-erbjudande. Användar licenser i Office 365-tjänster är likvärdigt kopplade till liknande Microsoft Cloud Deutschland-funktioner (tjänste abonnemang). Användar licenser för alla användare tilldelas automatiskt till de nya funktionerna. Administratören måste vidta en uttrycklig åtgärd för att inaktivera dessa licenser om det behövs. <br><br> -När migreringen är klar kommer både Office 365-tjänsterna och Germany för Tyskland att synas i administrations portalen för Office 365, med statusen för Tyskland -abonnemangen. <br><br> -Användare tilldelas licenser som är kopplade till nya Office 365-abonnemang. Alla kund processer som är beroende av Tyskland-abonnemang eller SKU-GUID blir skadade och måste ändras med Office 365-tjänstens erbjudande. <br><br> -Nya prenumerationer i Office 365-tjänsterna kommer att köpas med den nya termen (per månad/kvartal eller år) och kunden får en proportionell åter betalning för den outnyttjade balansen för Microsoft Cloud Deutschland-prenumerationen. <br><br> -Partner Deutschland-klient organisationer migreras inte. CSP-kunder migreras till Office 365-tjänster under den nya Office 365-tjänstens klient organisation. Efter migrering kan partnern bara hantera den här kunden från Office 365-tjänstens klient organisation. <br><br> -Fler funktioner är tillgängliga (till exempel Microsoft Planner och Microsoft-flöde) om inte inaktive ras av klient organisationens administratör. Information om hur du inaktiverar tjänste abonnemang som är tilldelade till användarnas licenser finns i [inaktivera åtkomst till Microsoft 365-tjänster när du tilldelar användar licenser](disable-access-to-services-while-assigning-user-licenses.md).  |
+| Vi kan inte migrera kunder utan medgivande. | Microsoft får rätten att migrera på ett av två sätt, vilket gör att Microsoft kan överföra data och tjänster till Office 365-tjänstinstansen. <br> Administratören väljer att delta i den Microsoft-drivna migreringen. <br> Kunder förnyar alla prenumerationer i Sin Microsoft Cloud Deutschland-klientorganisation efter den 1 maj 2020. Vi meddelar dessa kunder om migreringen varje månad, vänta i 30 dagar för att ge kunderna möjlighet att avbryta och sedan registrera sig direkt i ICM. | Alla Office-kunder | – Klientorganisationen har markerats som godkännande för migrering och admincentret visar en bekräftelse. <br><br> - Bekräftelse publiceras i Cloud Germany Message Center-klientorganisationen. Tjänstkonfigurationen fortsätter från Microsoft Cloud Deutschland-slutpunkter. <br><br> - Övervaka meddelandecentret för uppdateringar om status för migreringsfasen. |
+| Prenumerationer överförs och licenser tilldelas om. | När klientorganisationen har övergåt till Office 365-tjänster köps motsvarande Office 365-tjänstprenumerationer till de överförda Microsoft Cloud Deutschland-prenumerationerna. Användare med tilldelade Microsoft Cloud Deutschland-licenser tilldelas Office 365-tjänstlicenser. Äldre Microsoft Cloud Deutschland-prenumerationer tas bort från Office 365-tjänstklientorganisationen när de slutförs. | Alla Office-kunder | – Ändringar av befintliga prenumerationer kommer att blockeras (t.ex. inga ändringar av nya prenumerationsköp eller antal platser) under den här fasen. <br><br> - Ändringar av licenstilldelning blockeras. <br><br> - Microsoft Cloud Deutschland-prenumerationen migreras till motsvarande Office 365-tjänstprenumeration. Office 365-tjänsterbjudandet för prenumerationen definieras av Microsoft (kallas även _erbjudandemappning)._ <br><br> - Antalet funktioner (tjänstplaner) som erbjuds av Office 365-tjänster kan vara större än i det ursprungliga Microsoft Cloud Deutschland-erbjudandet. Användarlicenser i Office 365-tjänster tilldelas likvärdigt med liknande Microsoft Cloud Deutschland-funktioner (tjänstplaner). Användarlicenserna för alla användare tilldelas automatiskt de nya funktionerna. Administratören måste vidta en uttrycklig åtgärd för att inaktivera licenserna, om det behövs. <br><br> – När prenumerationsmigrering har slutförts visas både Office 365-tjänster och Germany-prenumerationer i administrationsportalen för Office 365, med statusen för Germany-prenumerationer som _återkallad._ <br><br> - Användare kommer att omtilldelas licenser som är kopplade till de nya prenumerationerna på Office 365-tjänster. Alla kundprocesser som har beroenden på Germany-prenumerationer eller SKU GUID bryts och måste revideras med Office 365-tjänsterbjudandet. <br><br> - Nya prenumerationer på Office 365-tjänsterna köps med den nya perioden (varje månad/kvartal/år), och kunden får en prorerad återbetalning för det oanvända saldot för Microsoft Cloud Deutschland-prenumerationen. <br><br> – Partner Microsoft Cloud Deutschland-klientorganisationen migreras inte. Kunder som använder CSP migreras till Office 365-tjänster enligt den nya Klientorganisationen för Office 365-tjänster hos samma partner. Efter kundmigrering kan partnern endast hantera den här kunden från Office 365-tjänstklientorganisationen. <br><br> - Ytterligare funktioner är tillgängliga (till exempel Microsoft Planner och Microsoft Flow), om de inte inaktiveras av administratören för klientorganisationen. Mer information om hur du inaktiverar tjänstplaner som tilldelas till användarnas licenser finns i Inaktivera åtkomst till [Microsoft 365-tjänster när du tilldelar användarlicenser.](disable-access-to-services-while-assigning-user-licenses.md)  |
 |||||
 
 ## <a name="next-step"></a>Nästa steg
 
-[Utför ytterligare arbete](ms-cloud-germany-transition-add-pre-work.md)
+[Utföra ytterligare förarbete](ms-cloud-germany-transition-add-pre-work.md)
 
 ## <a name="more-information"></a>Mer information
 
 Komma igång:
 
-- [Migrering från Microsoft Cloud Deutschland till Office 365-tjänster i de nya tyska Data Center-regionerna](ms-cloud-germany-transition.md)
-- [Hjälp för Microsoft Cloud Deutschland](https://aka.ms/germanymigrateassist)
-- [Så här väljer du för migrering](ms-cloud-germany-migration-opt-in.md)
-- [Kund upplevelse under migreringen](ms-cloud-germany-transition-experience.md)
+- [Migrering från Microsoft Cloud Deutschland till Office 365-tjänster i de nya tyska datacenterområdena](ms-cloud-germany-transition.md)
+- [Migreringshjälp för Microsoft Cloud Deutschland](https://aka.ms/germanymigrateassist)
+- [Så här väljer du in för migrering](ms-cloud-germany-migration-opt-in.md)
+- [Kundupplevelse under migreringen](ms-cloud-germany-transition-experience.md)
 
-Flytta genom över gången:
+Flytta genom övergången:
 
-- [Övrig för hands arbete](ms-cloud-germany-transition-add-pre-work.md)
-- Ytterligare information för [Azure AD](ms-cloud-germany-transition-azure-ad.md), [enheter](ms-cloud-germany-transition-add-devices.md), [upplevelser](ms-cloud-germany-transition-add-experience.md)och [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- [Ytterligare förarbete](ms-cloud-germany-transition-add-pre-work.md)
+- Ytterligare information för [Azure AD,](ms-cloud-germany-transition-azure-ad.md) [enheter,](ms-cloud-germany-transition-add-devices.md) [upplevelser](ms-cloud-germany-transition-add-experience.md)och AD [FS.](ms-cloud-germany-transition-add-adfs.md)
 
 Molnappar:
 
-- [Information om programmet för Dynamics 365 migration](https://aka.ms/d365ceoptin)
-- [Information om datamigreringshanteraren för Power BI](https://aka.ms/pbioptin)
-- [Komma igång med din uppgradering av Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
+- [Information om Dynamics 365-migreringsprogram](https://aka.ms/d365ceoptin)
+- [Information om migreringsprogrammet för Power BI](https://aka.ms/pbioptin)
+- [Komma igång med uppgraderingen till Microsoft Teams](https://aka.ms/SkypeToTeams-Home)

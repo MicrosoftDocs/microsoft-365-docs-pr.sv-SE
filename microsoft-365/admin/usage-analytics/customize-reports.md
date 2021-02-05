@@ -19,24 +19,24 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
-description: Lär dig hur du anpassar rapporter i webbläsaren och Power BI-skrivbordet.
-ms.openlocfilehash: 8baeb1a9f48d8f1ccdb591a60fefe863502344b6
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+description: Lär dig hur du anpassar rapporter i webbläsaren och Power BI Desktop.
+ms.openlocfilehash: 0375b61b6922c99acf927a4283571451deabaf14
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841429"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114303"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Anpassa rapporter i Microsoft 365 användningsanalyser
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
-Microsoft 365 användnings analys tillhandahåller en instrument panel i Power BI som erbjuder insikter i hur användare kan använda Microsoft 365. Instrumentpanelen är bara en utgångspunkt för att interagera med användningsdata. Rapporterna kan anpassas för att ge en mer specialiserad insyn.
+Microsoft 365 användningsanalyser tillhandahåller en instrumentpanel i Power BI som ger insyn i hur användarna inför och använder Microsoft 365. Instrumentpanelen är bara en utgångspunkt för att interagera med användningsdata. Rapporterna kan anpassas för att ge en mer specialiserad insyn.
   
 Du kan också använda Power BI Desktop för att anpassa rapporterna ytterligare genom att koppla dem till andra datakällor i syfte att få bättre insyn i verksamheten.
   
@@ -46,65 +46,65 @@ I följande två exemplen får du se hur du kan ändra en befintlig visualiserin
   
 ### <a name="modify-an-existing-visual"></a>Ändra en befintlig visualisering
 
-Det här exemplet visar hur du ändrar fliken **aktivering** i rapporten **aktivering/licensiering** . 
+Det här exemplet visar hur du ändrar **fliken** Aktivering i **rapporten Om aktivering/licensiering.** 
   
-1. I rapporten **aktivering/licensiering** väljer du fliken **aktivering** .
+1. Välj **fliken Aktivering i** rapporten om **aktivering/licensiering.**
     
-2. Gå till redigerings läget genom att välja knappen **Redigera** högst upp via knappen ![ mer på sidan i Power BI- ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) knappen. 
+2. Öppna redigeringsläget genom att välja **knappen** Redigera högst upp via ![ knappen Mer sida i Power ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) BI. 
     
     ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
-3. Välj **duplicera den här sidan** längst upp till höger.
+3. Välj Duplicera den här **sidan längst upp till höger.**
     
     ![Choose Duplicate this page](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
   
-4. I det nedre högra hörnet väljer du något av stapeln-diagram som visar antalet användare som är aktiverade baserat på vilket operativ system som Android, iOS, Mac etc.
+4. Längst ned till höger väljer du något av de stapeldiagram som visar antalet användare som aktiverar baserat på operativsystemet, till exempel Android, iOS, Mac osv.
     
-5. I området **visualiseringar** till höger, för att ta bort Mac- **antal** från det visuella värdet, väljer du **X** bredvid det.
+5. I området **Visualiseringar** till höger väljer du X bredvid det för att ta bort **Mac Count** **från** det visuella objektet.
 
-    ![Ta bort Mac antal](../../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)    
+    ![Ta bort Mac Count](../../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)    
     
 ### <a name="create-a-new-visual"></a>Skapa en ny visualisering
 
 Följande exempel visar hur du skapar en ny visualisering för att spåra nya Yammer-användare på månadsbasis.
   
-1. Gå till rapporten **produkt användning** med hjälp av det vänstra navigerings fältet och välj fliken **Yammer** .
+1. Gå till rapporten **Produktanvändning** i det vänstra navigeringsfältet och välj **Yammer** fliken.
     
-2. Växla till redigerings läget genom att välja ![ knappen mer sida i Power BI ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) och **Redigera** . 
+2. Växla till redigeringsläge genom att ![ välja knappen Mer sida i Power BI och ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) **Redigera.** 
     
-3. Längst ned på sidan väljer du ![Knappen Lägg till sida i Power BI](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) Om du vill skapa en ny sida.
+3. Längst ned på sidan väljer du ![Knappen Lägg till sida i Power BI](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) för att skapa en ny sida.
   
-4. I området **visualiseringar** till höger väljer du det **staplade stapeldiagrammet** (översta raden, först från vänster).
+4. I området **Visualiseringar** till höger väljer du det staplade **liggande stapeldiagrammet** (översta raden, först från vänster).
 
-    ![Välja stapeldiagram](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
+    ![Välj stapeldiagram](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
     
 5. Markera den nedre högra delen av visualiseringen och dra för att göra den större.
 
-6. I området **fält** till höger expanderar du tabellen **kalender** .
+6. Expandera **kalendertabellen** i området Fält **till** höger.
 
-7. Dra **MonthName** till fältområdet direkt nedanför rubriken **Axel** i området **Visualiseringar** .
+7. Dra **MonthName** till fältområdet direkt nedanför rubriken **Axel** i området **Visualiseringar**.
  
-    ![Dra månads namn](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
+    ![Dra månadsnamn](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
     
 8. In the **Fields** area to the right, expand the **TenantProductUsage** table.
 
-9. Dra **FirstTimeUsers** till området för fält direkt nedanför rubriken **Värde** .
+9. Dra **FirstTimeUsers** till området för fält direkt nedanför rubriken **Värde**.
 
-10. Dra **Produkt** till området **Filter** direkt nedanför rubriken **Visuella nivåfilter** .
+10. Dra **Produkt** till området **Filter** direkt nedanför rubriken **Visuella nivåfilter**.
 
-11. I området **Filtertyp** som visas markerar du kryssrutan **Yammer** .
+11. I området **Filtertyp** som visas markerar du kryssrutan **Yammer**.
 
-    ![Markera Yammer-kryss](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
+    ![Markera Yammer kryssrutan](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. Under listan med visualiseringar väljer du ikonen **Formatera** ikon ![ format i Power BI-Visualizaions ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) .
+12. Precis under listan med visualiseringar väljer du **formatikonen Format** i ![ visualiseringarna i Power ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) BI.
 
 13. Expandera rubriken och ändra värdet för **Rubriktext** till **First-Time Yammer Users by Month** (Förstagångsanvändare av Yammer per månad).
     
-14. Ändra värdet för **textstorlek** till **12** .
+14. Ändra värdet för **textstorlek** till **12**.
     
-15. Ändra titeln på den nya sidan genom att redigera namnet på sidan längst ned till höger.
+15. Ändra rubriken på den nya sidan genom att redigera sidans namn längst ned till höger.
 
-16.  Spara rapporten genom att klicka på **läsvyn** överst och sedan **Spara** .
+16.  Spara rapporten genom att klicka på **Läsvy** överst och sedan **Spara.**
     
 ## <a name="customizing-the-reports-in-power-bi-desktop"></a>Anpassa rapporterna i Power BI Desktop
 
@@ -112,33 +112,33 @@ För de flesta kunder räcker det att ändra rapporterna och diagramvisualiserin
   
 ### <a name="use-the-reporting-apis"></a>Använda rapport-API:erna
 
-Du kan börja med att ansluta direkt till API för ODATA-rapportering från Microsoft 365 som visar dessa rapporter.
+Du kan börja genom att ansluta direkt till ODATA-rapport-API:erna från Microsoft 365 som driver rapporterna.
   
-1. Gå till **Hämta data** \> **Andra** \> **ODATA-feed** \> **Anslut** .
+1. Gå till **Hämta data** \> **Andra** \> **ODATA-feed** \> **Anslut**.
     
-2. Skriv "https:// <i></i> reports.Office.com/PBI/v1.0/" i URL- \<tenantid\> fönstret
+2. I URL-fönstret anger du "https:// <i></i> \<tenantid\> reports.office.com/pbi/v1.0/"
     
-    **Obs!** Rapporterings-API: erna är i förhands granskning och kan komma att ändras tills de går i produktion. 
+    **OBS!** Rapport-API:erna är förhandsversioner och kan komma att ändras tills de går till produktion. 
   
     ![OData feed URL for Power BI desktop](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
   
-3. Ange dina autentiseringsuppgifter för Microsoft 365 (organisation eller skola) för att autentisera till Microsoft 365 när du uppmanas att göra det.
+3. Ange dina autentiseringsuppgifter som administratör för Microsoft 365 (organisation eller skola) för att autentisera dig för Microsoft 365 när du uppmanas att göra det.
     
-    Se [vanliga frågor](usage-analytics.md#faq) för mer information om vem som har åtkomst till program rapporter för Microsoft 365 Adoption. 
+    Mer information [om vem](usage-analytics.md#faq) som har behörighet att komma åt apprapporterna för mallen för införande av Microsoft 365 finns i vanliga frågor och svar. 
     
 4. När anslutningen har autentiserats visas navigatörsfönstret med de datauppsättningar som är tillgängliga för anslutning.
     
-    Markera alla och välj **Läs in** .
+    Markera alla och välj **Läs in.**
     
-    Detta hämtar data till din Power BI-dator. Spara den här filen och sedan kan du börja skapa de rapporter du behöver.
+    Då hämtas data till Power BI Desktop. Spara den här filen och sedan kan du börja skapa de rapporter du behöver.
     
-    ![ODATA-värden tillgängliga i rapporterings-API: t](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
+    ![ODATA-värden som är tillgängliga i rapport-API:t](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
   
 ### <a name="use-the-microsoft-365-usage-analytics-template"></a>Använda Microsoft 365 mall för användningsanalys
 
 Du kan även använda mallfilen för Power BI som motsvarar Microsoft 365 användningsanalysrapporter som utgångspunkt när du ansluter till dessa data. Fördelen med att använda pbit-filen är att den redan har anslutningssträngen. Du kan också dra nytta av alla de anpassade åtgärder som skapas, utöver de data som det grundläggande schemat returnerar och bygga på dem ytterligare.
   
-Du kan hämta Power BI-mallfilen från Microsoft Download Center från [Download Center](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit). När du har hämtat Power BI-mallfilen följer du de här anvisningarna för att komma igång:
+Du kan hämta Power BI-mallfilen från Microsoft Download Center från [Download Center.](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit) När du har hämtat Power BI-mallfilen följer du de här anvisningarna för att komma igång:
   
 1. Öppna pbit-filen.
     
@@ -146,9 +146,9 @@ Du kan hämta Power BI-mallfilen från Microsoft Download Center från [Download
     
     ![Enter your tenant ID to open the pbit file](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
   
-3. Ange administratörsautentiseringsuppgifter för att autentisera till Microsoft 365 när du uppmanas att göra det.
+3. Ange dina autentiseringsuppgifter som administratör för att autentisera dig för Microsoft 365 när du uppmanas att göra det.
     
-     Mer information om vem som har åtkomst till Microsoft 365 användnings analys rapporter. 
+     för mer information om vem som har åtkomst till Microsoft 365 användningsanalysrapporter. 
     
     Så snart auktoriseringen är klar uppdateras alla data i Power BI-filen.
     

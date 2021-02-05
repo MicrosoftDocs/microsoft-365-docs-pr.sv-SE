@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 360cd50556b77f141d1585f42ac08ee5990b4851
-ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
+ms.openlocfilehash: 22b5a6353720f8fbee218c138a3c9d0dee444db9
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50040526"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114925"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Åtgärda problem som hittats av verktyget för bedömning av beredskap
 
@@ -24,7 +24,7 @@ För varje kontroll rapporterar verktyget ett av fyra möjliga resultat:
 |Resultat  |Betydelse  |
 |---------|---------|
 |Klar     | Ingen åtgärd krävs innan registrering kan slutföras.        |
-|Rådgivning    | Följ stegen i verktyget eller den här artikeln för att få den bästa upplevelsen med registrering och för användare. Du *kan* slutföra registreringen, men du måste åtgärda problemen innan du distribuerar din första enhet.        |
+|Rådgivning    | Följ stegen i verktyget eller den här artikeln för den bästa upplevelsen med registrering och för användare. Du *kan* slutföra registreringen, men du måste åtgärda problemen innan du distribuerar din första enhet.        |
 |Inte klar | *Registrering misslyckas om du inte åtgärdar dessa problem.* Följ anvisningarna i verktyget eller den här artikeln för att lösa problemen.        |
 |Fel | Azure Active Directory-rollen (AD) som du använder har inte tillräcklig behörighet för att köra den här kontrollen. |
 
@@ -45,7 +45,7 @@ Du har en Autopilot-profil som är tilldelad till alla enheter. Anvisningar finn
 
 **Rådgivning**
 
-Se till att Dina Autopilot-profiler riktar sig mot en tilldelad eller dynamisk Azure AD-grupp som inte inkluderar Microsoft Managed Desktop-enheter. Anvisningar finns i Registrera [Windows-enheter i Intune med Windows Autopilot.](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot) Efter Registrering i Microsoft Hanterad skrivbordsversionen ställer du in dina Autopilot-profiler så att **de exkluderar moderna workplace-enheter – alla** Azure AD-grupper.
+Se till att Dina Autopilot-profiler riktar sig mot en tilldelad eller dynamisk Azure AD-grupp som inte inkluderar Microsoft Managed Desktop-enheter. Anvisningar finns i Registrera [Windows-enheter i Intune med Windows Autopilot.](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot) Efter Microsoft Hanterad skrivbordsregistrering ställer du in dina Autopilot-profiler så att **de utesluter moderna workplace-enheter –alla** Azure AD-grupper.
 
 
 ### <a name="certificate-connectors"></a>Certifikatkopplingar
@@ -72,11 +72,11 @@ Villkorsstyrda åtkomstprinciper får inte hindra Microsoft Managed Desktop frå
 
 **Inte klar**
 
-Du har minst en princip för villkorsstyrd åtkomst som riktar alla användare mot varandra. Under registreringen exkluderar vi Microsofts hanterade skrivbordskonton från relevanta villkorsstyrda åtkomstprinciper och tillämpar nya villkorsstyrda åtkomstprinciper för att begränsa åtkomsten till dessa konton. Efter registrering kan du granska villkorsstyrd åtkomstpolicyn för Microsoft Managed Desktop i Microsoft Endpoint Manager. Mer information om de här tjänstkontona finns [i Standard-operativsystem.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
+Du har minst en princip för villkorsstyrd åtkomst som riktar alla användare mot varandra. Under registrering exkluderar vi Microsoft Hanterade skrivbordskonton från relevanta villkorsstyrda åtkomstprinciper och tillämpar nya villkorsstyrda åtkomstprinciper för att begränsa åtkomsten till dessa konton. Efter registrering kan du granska villkorsstyrd åtkomstpolicyn för Microsoft Managed Desktop i Microsoft Endpoint Manager. Mer information om dessa tjänstkonton finns i [Standard-operativsystem.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
 
 **Rådgivning**
 
-Du har villkorsstyrda åtkomstprinciper som kan hindra Microsoft Managed Desktop från att hantera Microsofts tjänst för hanterade skrivbord. Under registreringen exkluderar vi Microsofts hanterade skrivbordskonton från relevanta villkorsstyrda åtkomstprinciper och tillämpar nya villkorsstyrda åtkomstprinciper för att begränsa åtkomsten till dessa konton. Mer information om de här tjänstkontona finns [i Standard-operativsystem.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
+Du har villkorsstyrda åtkomstprinciper som kan hindra Microsoft Managed Desktop från att hantera Microsofts tjänst för hanterade skrivbord. Under registrering exkluderar vi Microsoft Hanterade skrivbordskonton från relevanta villkorsstyrda åtkomstprinciper och tillämpar nya villkorsstyrda åtkomstprinciper för att begränsa åtkomsten till dessa konton. Mer information om dessa tjänstkonton finns i [Standard-operativsystem.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
 
 **Fel**
 
@@ -95,11 +95,11 @@ Principer för Enhetsefterlevnad för Intune i din Azure AD-organisation kan på
 
 **Inte klar**
 
-Du har minst en efterlevnadsprincip som riktar sig mot alla användare. Microsoft Hanterat skrivbord innehåller efterlevnadsprinciper som riktar sig till Microsoft-enheter som hanteras av Microsoft.  Ändra principen så att den riktar sig mot en specifik Azure AD-grupp som inte inkluderar några användare eller enheter som hanteras av Microsoft Managed Desktop. Instruktioner finns i Skapa [en efterlevnadsprincip i Microsoft Intune.](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)
+Du har minst en efterlevnadsprincip som riktar sig mot alla användare. Microsoft Hanterat skrivbord innehåller efterlevnadsprinciper som riktar sig mot dina Microsoft Managed Desktop-enheter.  Ändra principen så att den riktar sig mot en viss Azure AD-grupp som inte inkluderar användare eller enheter som hanteras av Microsoft. Instruktioner finns i Skapa [en efterlevnadsprincip i Microsoft Intune.](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)
 
 **Rådgivning**
 
-Se till att eventuella efterlevnadsprinciper du har inte riktar sig mot användare av Microsoft Managed Desktop. Instruktioner finns i Skapa [en efterlevnadsprincip i Microsoft Intune.](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)
+Se till att eventuella efterlevnadsprinciper du har inte riktar sig till Microsoft Managed Desktop-användare. Instruktioner finns i Skapa [en efterlevnadsprincip i Microsoft Intune.](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)
 
 
 
@@ -119,7 +119,7 @@ Se till att de konfigurationsprinciper du har inte omfattar Microsoft-enheter el
 
 ### <a name="device-type-restrictions"></a>Begränsningar av enhetstyp
 
-Microsoft-enheter med hanterade datorer måste ha tillåtelse att registrera sig i Intune.
+Microsoft-enheter som hanteras av datorn måste ha tillåtelse att registrera sig i Intune.
 
 **Inte klar**
 
@@ -128,7 +128,7 @@ Du har för närvarande minst en princip för registreringbegränsning konfigure
 
 ### <a name="enrollment-status-page"></a>Statussida för registrering
 
-Du har för närvarande aktiverat ESP (Enrollment Status Page). Om du tänker delta i den offentliga förhandsversionen av Microsoft Managed Desktop av den här funktionen kan du ignorera det här objektet. Mer information finns i [Första körningsupplevelsen med Autopilot och statussidan för registrering.](../get-started/esp-first-run.md)
+Du har för närvarande aktiverat ESP (Enrollment Status Page). Om du tänker delta i den offentliga förhandsversionen av Microsoft Managed Desktop av den här funktionen kan du ignorera det här objektet. Mer information finns i [Första körningen av Autopilot och statussidan för registrering.](../get-started/esp-first-run.md)
 
 **Inte klar**
 
@@ -153,7 +153,7 @@ Multifaktorautentisering får inte hindra Microsoft Managed Desktop från att ha
 
 **Inte klar**
 
-Du har vissa principer för multifaktorautentisering som angetts **som** obligatoriska för villkorsstyrda åtkomstprinciper som har tilldelats till alla användare. Under registreringen exkluderar vi Microsofts hanterade skrivbordskonton från relevanta villkorsstyrda åtkomstprinciper och tillämpar nya villkorsstyrda åtkomstprinciper för att begränsa åtkomsten till dessa konton. Mer information om de här tjänstkontona finns [i Standard-operativsystem.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
+Du har vissa principer för multifaktorautentisering som **krävs** för villkorsstyrda åtkomstprinciper som har tilldelats till alla användare. Under registrering exkluderar vi Microsoft Hanterade skrivbordskonton från relevanta villkorsstyrda åtkomstprinciper och tillämpar nya villkorsstyrda åtkomstprinciper för att begränsa åtkomsten till dessa konton. Mer information om de här tjänstkontona finns [i Standard-operativsystem.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
 
 **Rådgivning**
 
@@ -176,7 +176,7 @@ Windows PowerShell-skript kan inte tilldelas på ett sätt som riktar sig till M
 
 **Rådgivning**
 
-Kontrollera att Windows PowerShell-skript i Azure AD-organisationen inte är mål för Microsoft Hantera skrivbordsenheter eller användare. Tilldela inte ett PowerShell-skript till alla användare, alla enheter eller båda. Ändra principen så att en tilldelning används som mål för en viss Azure AD-grupp som inte inkluderar några Microsoft Managed Desktop-enheter eller användare. Mer information finns i Använda [PowerShell-skript på Windows 10-enheter i Intune.](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)
+Kontrollera att Windows PowerShell-skript i Azure AD-organisationen inte är mål för Microsoft Hantera skrivbordsenheter eller användare. Tilldela inte ett PowerShell-skript till alla användare, alla enheter eller både och. Ändra principen så att en tilldelning används som mål för en viss Azure AD-grupp som inte inkluderar några Microsoft Managed Desktop-enheter eller användare. Mer information finns i Använda [PowerShell-skript på Windows 10-enheter i Intune.](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)
 
 ### <a name="region"></a>Region
 
@@ -197,11 +197,11 @@ Säkerhetsprinciper bör inte ha några Microsoft Managed Desktop-enheter som m�
 
 **Inte klar**
 
-Du har en säkerhetsbaslinje som riktar sig till alla användare, alla enheter eller båda. Ändra principen så att en tilldelning används som mål för en viss Azure AD-grupp som inte inkluderar några Microsoft Managed Desktop-enheter. Instruktioner finns i Använda [säkerhetsbaslinjer för att konfigurera Windows 10-enheter i Intune.](https://docs.microsoft.com/mem/intune/protect/security-baselines)
+Du har en säkerhetsbaslinjeprofil som riktar sig till alla användare, alla enheter eller båda. Ändra principen så att en tilldelning används som mål för en viss Azure AD-grupp som inte inkluderar några Microsoft Managed Desktop-enheter. Instruktioner finns i Använda [säkerhetsbaslinjer för att konfigurera Windows 10-enheter i Intune.](https://docs.microsoft.com/mem/intune/protect/security-baselines) Under registrering tillämpar vi en ny säkerhetsbaslinje på alla Microsoft Managed Desktop-enheter. Efter registrering kan du granska säkerhetsbaslinjepolicyn för Microsoft Managed Desktop i området **Konfigurationsprincip** i Microsoft Endpoint Manager.
 
 **Rådgivning**
 
-Kontrollera att eventuella principer för säkerhetsbaslinjer som du har utesluter Microsoft Managed Desktop-enheter. Instruktioner finns i Använda [säkerhetsbaslinjer för att konfigurera Windows 10-enheter i Intune.](https://docs.microsoft.com/mem/intune/protect/security-baselines) **The Modern Workplace Devices -All** Azure AD group is a dynamic group that we create when youroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
+Kontrollera att eventuella principer för säkerhetsbaslinjer som du har utesluter Microsoft Managed Desktop-enheter. Instruktioner finns i Använda [säkerhetsbaslinjer för att konfigurera Windows 10-enheter i Intune.](https://docs.microsoft.com/mem/intune/protect/security-baselines) Under registrering tillämpar vi en ny säkerhetsbaslinje på alla Microsoft Managed Desktop-enheter. **The Modern Workplace Devices -All** Azure AD group is a dynamic group that we create when youroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment. 
 
 
 ### <a name="windows-apps"></a>Windows-appar
@@ -238,7 +238,7 @@ Du har en princip för uppdateringsring som riktar alla enheter, alla användare
 
 **Rådgivning**
 
-Se till att alla principer för uppdateringsringen som du har **exkluderat moderna workplace-enheter –alla** Azure AD-grupper. Om du har tilldelat Azure AD-användargrupper till de här principerna ska du se till att alla principer för uppdateringsringen även har uteslutit den moderna arbetsplatsen – alla Azure AD-grupper som du lägger till dina Microsoft Managed **Desktop-användare** i (eller en motsvarande grupp). Instruktioner finns i Hantera [windows 10-programvaruuppdateringar i Intune.](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure) Både moderna workplace-enheter **–alla** och den moderna arbetsplatsen **–** Alla Azure AD-grupper är grupper som vi skapar när du registrerar dig för Microsoft Managed Desktop, så du måste gå tillbaka för att utesluta den här gruppen efter registreringen.
+Se till att alla principer för uppdateringsringen som du har **exkluderat moderna workplace-enheter –alla** Azure AD-grupper. Om du har tilldelat Azure AD-användargrupper till de här principerna ska du se till att alla principer för uppdateringsringen även har uteslutit den moderna arbetsplatsen – alla Azure AD-grupper som du lägger till dina Microsoft Managed **Desktop-användare** i (eller en motsvarande grupp). Anvisningar finns i Hantera [windows 10-programvaruuppdateringar i Intune.](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure) Både moderna workplace-enheter **–alla** och den moderna arbetsplatsen **–** Alla Azure AD-grupper är grupper som vi skapar när du registrerar dig för Microsoft Managed Desktop, så du måste gå tillbaka för att utesluta den här gruppen efter registreringen.
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory-inställningar
@@ -277,7 +277,7 @@ Ett antal licenser krävs för att använda Microsoft Managed Desktop.
 
 **Inte klar**
 
-Du har inte alla licenser du behöver för att använda Microsoft Managed Desktop. Mer information finns i [teknikerna för Microsoft Managed Desktop](../intro/technologies.md) och Mer om [licenser.](prerequisites.md#more-about-licenses)
+Du har inte alla licenser du behöver för att använda Microsoft Managed Desktop. Mer information finns i teknikerna [för Microsoft Managed Desktop](../intro/technologies.md) och Mer om [licenser.](prerequisites.md#more-about-licenses)
 
 
 ### <a name="security-account-names"></a>Namn på säkerhetskonto
@@ -295,7 +295,7 @@ Användare med vissa säkerhetsroller måste ha de rollerna tilldelade i Microso
 
 **Rådgivning**
 
-Om du har användare tilldelade till någon av de här rollerna i din Azure AD-organisation bör du kontrollera att de också har tilldelats de här rollerna i Microsoft Defender för Slutpunkt. Annars kan administratörer med de här rollerna inte komma åt administrationsportalen.
+Om du har användare tilldelade till någon av de här rollerna i Azure AD-organisationen bör du kontrollera att de också har tilldelats de här rollerna i Microsoft Defender för Slutpunkt. Annars kan administratörer med de här rollerna inte komma åt administrationsportalen.
 
 - Säkerhetsoperatör
 - Global läsare
@@ -305,15 +305,15 @@ Mer information finns i [Skapa och hantera roller för rollbaserad åtkomstkontr
 
 ### <a name="security-default"></a>Standardsäkerhet
 
-Säkerhetsstandarder i Azure Active Directory förhindrar att Microsoft Hanterat skrivbord hanterar dina enheter.
+Säkerhetsstandarder i Azure Active Directory hindrar Microsoft Hanterat skrivbord från att hantera dina enheter.
 
 **Inte klar**
 
-Du har aktiverat säkerhet som standard. Inaktivera säkerhetsstandarder och konfigurera principer för villkorsstyrd åtkomst. Mer information finns i Vanliga principer [för villkorsstyrd åtkomst.](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)
+Du har aktiverat säkerhet som standard. Inaktivera säkerhetsstandarder och konfigurera villkorsstyrda åtkomstprinciper. Mer information finns i Vanliga principer [för villkorsstyrd åtkomst.](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)
 
 ### <a name="self-service-password-reset"></a>Självbetjäning för återställning av lösenord
 
-Självbetjäning för återställning av lösenord (SSPR) kan aktiveras för alla Microsoft Managed Desktop-användare utom Microsoft Managed Desktop-tjänstkonton. Mer information finns i [självstudiekursen: Gör](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)det möjligt för användare att låsa upp sitt konto eller återställa lösenord med självbetjäning för återställning av lösenord i Azure Active Directory.
+Självbetjäning för återställning av lösenord (SSPR) kan aktiveras för alla Microsoft Managed Desktop-användare utom Microsoft Managed Desktop-tjänstkonton. Mer information finns i självstudiekursen: Aktivera användare för att låsa upp sitt konto eller återställa lösenord med självbetjäning för [lösenordsåterställning i Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)
 
 **Rådgivning**
 

@@ -22,23 +22,23 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Skydda din affärs-e-post och data från cyberhot, inklusive utpressningstrojaner, nätfiske och skadliga bifogade filer. '
-ms.openlocfilehash: a329d2879309812a516191fdbd1858ad10e4beeb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3ae6d896d5ef060e2f077167f81e2029a3a143ac
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926336"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114411"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>De 10 bästa sätten att skydda abonnemang för Microsoft 365 för företag
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
-Om du är en liten eller medelstor organisation som använder en av Microsofts affärsplaner och din typ av organisation riktar sig till cyberbrottsligheter och hackare kan du använda vägledningen i den här artikeln för att öka säkerheten för din organisation. Den här vägledningen hjälper organisationen att uppnå de mål som beskrivs i Handbookn för School [Cybersecurity Campaign Handbook.](https://go.microsoft.com/fwlink/p/?linkid=2015598)
+Om du är en liten eller medelstor organisation som använder en av Microsofts affärsplaner och din typ av organisation riktar sig till cyberbrottsligheter och hackare kan du använda vägledningen i den här artikeln för att öka säkerheten för din organisation. Den här vägledningen hjälper organisationen att uppnå de mål som beskrivs i Handbookn om cybersäkerhet i School [Cybersecurity .](https://go.microsoft.com/fwlink/p/?linkid=2015598)
 
 Microsoft rekommenderar att du utför de uppgifter som listas i följande tabell som gäller för ditt abonnemang.
 
@@ -46,7 +46,7 @@ Microsoft rekommenderar att du utför de uppgifter som listas i följande tabell
 |---|---|---|---|
 |1|[Konfigurera multifaktorautentisering](secure-your-business-data.md#setup)|![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[Utbilda dina användare](secure-your-business-data.md#train)|![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3|[Använda dedikerade administratörskonton](secure-your-business-data.md#admin)|![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3|[Använd dedikerade administratörskonton](secure-your-business-data.md#admin)|![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4|[Höja skyddsnivån för skadlig programvara i e-post](secure-your-business-data.md#malware)|![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5|[Skydda mot utpressningstrojaner](secure-your-business-data.md#ransomware)|![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6|[Stoppa automatisk vidarebefordran av e-post](secure-your-business-data.md#forwarding)|![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -85,10 +85,10 @@ När du har konfigurerat multifaktorautentisering för din organisation måste d
 
 Fullständig information och fullständiga rekommendationer finns i [Konfigurera multifaktorautentisering för användare.](set-up-multi-factor-authentication.md)
 
-## <a name="2-train-your-users"></a>2: Utbilda användarna
+## <a name="2-train-your-users"></a>2: Utbilda dina användare
 <a name="train"> </a>
 
-The Harvard School [Cybersecurity Campaign Handbook är](https://go.microsoft.com/fwlink/p/?linkid=2015598) en utmärkt vägledning om att etablera en stark säkerhetskultur i organisationen, inklusive utbildning av användare för att identifiera nätfiskeattacker.
+The Harvard Organisations School [Cybersecurity Campaign Handbook är](https://go.microsoft.com/fwlink/p/?linkid=2015598) en utmärkt vägledning om att etablera en stark säkerhetskultur inom organisationen, inklusive utbildning av användare för att identifiera nätfiskeattacker.
 
 Förutom den här vägledningen rekommenderar Microsoft att användarna gör som beskrivs i den här artikeln: Skydda ditt konto och dina [enheter från hackare och skadlig programvara.](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6) Dessa åtgärder omfattar:
 
@@ -118,7 +118,7 @@ De administrativa konton som du använder för att administrera Microsoft 365-mi
 ## <a name="4-raise-the-level-of-protection-against-malware-in-mail"></a>4: Höj skyddsnivån för skadlig programvara i e-post
 <a name="malware"> </a>
 
-I Microsoft 365-miljön finns skydd mot skadlig programvara, men du kan öka skyddet genom att blockera bifogade filer med filtyper som ofta används för skadlig programvara. Du kan stöta på skydd mot skadlig programvara i e-post, visa en kort [utbildningsvideo](https://support.microsoft.com/office/02b5783a-eea0-42e8-8856-62440718c3f0)eller utföra följande steg:
+I Microsoft 365-miljön finns skydd mot skadlig programvara, men du kan öka skyddet genom att blockera bifogade filer med filtyper som ofta används för skadlig programvara. Du kan stöta på skydd mot skadlig programvara i e-post, visa [en kort utbildningsvideo](https://support.microsoft.com/office/02b5783a-eea0-42e8-8856-62440718c3f0)eller utföra följande steg:
 
 1. Gå till <https://protection.office.com> och logga in med autentiseringsuppgifterna för ditt administratörskonto.
 
@@ -141,7 +141,7 @@ Utpressningstrojaner begränsar åtkomsten till data genom att kryptera filer el
 
 Du kan skydda mot utpressningstrojaner genom att skapa en eller flera e-postflödesregler för att blockera filnamnstillägg som ofta används för utpressningstrojaner, eller för att varna användare som får dessa bifogade filer i e-postmeddelanden. En bra utgångspunkt är att skapa två regler:
 
-- Varna användare innan de öppnar bifogade Office-filer som innehåller makron. Utpressningstrojaner kan vara dolda i makron, så vi varnar användarna för att inte öppna dessa filer från personer de inte känner.
+- Varna användare innan de öppnar bifogade Office-filer som innehåller makron. Utpressningstrojaner kan vara dolda i makron, så vi varnar användarna att inte öppna filerna från personer de inte känner.
 
 - Blockera filtyper som kan innehålla utpressningstrojaner eller annan skadlig kod. Vi börjar med en gemensam lista över körbara filer (som visas i tabellen nedan). Om din organisation använder någon av dessa körbara typer och du förväntar dig att de ska skickas med e-post, lägger du till dem i den föregående regeln (varna användare).
 
@@ -149,7 +149,7 @@ Om du vill skapa en e-posttransportregel kan [du titta på en kort utbildningsvi
 
 1. Gå till [administrationscentret för Exchange](https://go.microsoft.com/fwlink/p/?linkid=2059104).
 
-2. Välj regler i e-postflödeskategorin.  
+2. Välj regler **i kategorin** E-postflöde. 
 
 3. Markera **+** och skapa sedan en ny **regel.**
 
@@ -185,17 +185,17 @@ Så här skapar du en regel för e-posttransport:
 
 1. Gå till [administrationscentret för Exchange](https://go.microsoft.com/fwlink/p/?linkid=2059104).
 
-2. Välj regler **i kategorin** E-postflöde. 
+2. Välj regler i e-postflödeskategorin.  
 
 3. Markera **+** och skapa sedan en ny **regel.**
 
-4. Välj **Fler alternativ** längst ned i dialogrutan om du vill se hela uppsättningen alternativ.
+4. Välj **Fler alternativ** längst ned i dialogrutan om du vill se alla alternativ.
 
 5. Använd inställningarna i följande tabell. Låt resten av inställningarna vara som standard, såvida du inte vill ändra dessa.
 
 6. Välj **Spara**.
 
-|Inställning|Avvisa vidarebefordran av e-postmeddelanden automatiskt till externa domäner|
+|Inställning|Avvisa vidarebefordran av e-post automatiskt till externa domäner|
 |---|---|
 |Namn|Förhindra automatisk vidarebefordran av e-post till externa domäner|
 |Använd den här regeln om ...|Avsändaren. . . är extern/intern. . . Inom organisationen|
@@ -229,9 +229,9 @@ I Outlook.com du Skydda **i** e-postmeddelandet. Standardskyddet är **Vidarebef
 
 ### <a name="to-receive-encrypted-email"></a>Ta emot krypterad e-post
 
-Om mottagaren har Outlook 2013 eller Outlook 2016 och ett Microsoft-e-postkonto visas en varning om objektets begränsade behörigheter i läsfönstret. När mottagaren har öppnat meddelandet kan det visas precis som med andra.
+Om mottagaren har Outlook 2013 eller Outlook 2016 och ett Microsoft-e-postkonto visas en varning om objektets begränsade behörigheter i läsfönstret. När mottagaren har öppnat meddelandet kan det visas precis som med andra mottagare.
 
-Om mottagaren använder en annan e-postklient eller ett annat e-postkonto, till exempel Gmail eller Yahoo, visas en länk som gör att mottagaren antingen kan logga in och läsa e-postmeddelandet eller begära ett lösenord för att visa meddelandet i en webbläsare. Om användare inte får e-postmeddelandet kan du be dem kontrollera mappen Skräppost.
+Om mottagaren använder en annan e-postklient eller ett annat e-postkonto, till exempel Gmail eller Yahoo, visas en länk som gör att mottagaren antingen kan logga in och läsa e-postmeddelandet eller begära ett lösenord för att visa meddelandet i en webbläsare. Om användarna inte får e-postmeddelandet kan du be dem kontrollera mappen Skräppost.
 
 Mer information finns i [Skicka, visa och svara på krypterade meddelanden i Outlook för PC.](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980)
 
@@ -254,7 +254,7 @@ Om du vill skapa en princip mot nätfiske i Defender för Office 365 kan du titt
 
 4. Välj + Skapa på sidan **Mot nätfiske.** En guide startar stegen för att definiera din nätfiskeprincip.
 
-5. Ange namn, beskrivning och inställningar för principen enligt rekommendationer i diagrammet nedan. Mer [information finns i mer information om policy mot nätfiske i alternativen för Microsoft Defender för Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)
+5. Ange namn, beskrivning och inställningar för principen enligt rekommendationer i diagrammet nedan. Mer [information finns i Mer information om policy mot nätfiske i Alternativen för Microsoft Defender för Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)
 
 6. När du har granskat inställningarna väljer du Skapa **den här principen** eller **Spara** efter behov.
 
@@ -302,7 +302,7 @@ Om du vill skapa en princip för säkra bifogade filer kan [du titta på en kort
 |Tillämpas på|Mottagarens domän är. . . väljer du din domän.|
 |
 
-Mer information finns i Konfigurera [principer för nätfiske i Defender för Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)
+Mer information finns i Konfigurera [principer för skydd mot nätfiske i Defender för Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)
 
 ## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10: Skydda mot nätfiskeattacker med säkra länkar
 <a name="phishingatp"> </a>
@@ -319,7 +319,7 @@ Du kommer till Säkra länkar genom att visa [en kort utbildningsvideo](https://
 
 1. Gå till <https://protection.office.com> och logga in med ditt administratörskonto.
 
-2. I säkerhets- &, i det vänstra navigeringsfönstret under **Hothantering,** väljer du **Princip.**
+2. Välj Princip i & vänstra navigeringsfönstret, under Hothantering, i säkerhets- **och** **efterlevnadscentret.**
 
 3. Välj Säkra länkar på **sidan Princip.**
 

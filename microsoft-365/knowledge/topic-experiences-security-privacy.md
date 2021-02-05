@@ -1,5 +1,5 @@
 ---
-title: Ämnets säkerhet och integritet
+title: Microsoft Viva Topics – säkerhet och sekretess
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,84 +9,83 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-description: Lär dig hur du planerar för funktioner för säkerhet och sekretess i Microsoft 365
-ms.openlocfilehash: b3c33a49b8273c5f7830f08de17af9757a858413
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+description: Lär dig planera för säkerhet och sekretess i Microsoft Viva Topics
+ms.openlocfilehash: be5be01bce117a80bd95ee268c193889eccea67f
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698503"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107798"
 ---
-# <a name="topic-experiences-security-and-privacy"></a>Ämnets säkerhet och integritet
+# <a name="microsoft-viva-topics-security-and-privacy"></a>Microsoft Viva Topics – säkerhet och sekretess
 
-Avsnitts upplevelser använder befintliga innehålls säkerhets funktioner i Microsoft 365, tillsammans med kontroller för kunskaps nätverk, för att styra vilket AI-genererat innehåll som visas för användare i organisationen. Det är en kombination av säkerhets inställningar för Microsoft 365 (behörigheter till webbplatser, filer och mappar) och olika administratörs inställningar för ämnen som avgör vad en viss användare kan se.
+Ämnen använder befintliga funktioner för innehållssäkerhet i Microsoft 365, tillsammans med administrativa kontroller, för att styra vilket AI-genererat innehåll som visas för användare i organisationen. Det är en kombination av säkerhetsinställningar i Microsoft 365 (behörigheter till webbplatser, filer och mappar) och administratörsinställningar för Ämnen som avgör vad en viss användare kan se i avsnitten.
 
-Om du konfigurerar kunskaps nätet ändras inte befintliga åtkomst kontroller för innehåll i organisationen. Användarna ser bara vad de redan har åtkomst till.
+Att konfigurera ämnen ändrar inte befintliga åtkomstkontroller för innehåll i organisationen. Användarna kan bara se det som de redan har åtkomst till.
 
-I den här artikeln beskrivs hur erfarenheter fungerar från ett säkerhets perspektiv och alternativen som kunskaps administratörer och kunskaps chefer måste kontrol lera ämnets synlighet. Läs den här artikeln som en del av [planeringen av ämnen](plan-topic-experiences.md).
+I den här artikeln beskrivs hur ämnen fungerar ur ett säkerhetsperspektiv och de alternativ som kunskapsadministratörer och kunskapshanterare har för att kontrollera synligheten för ämnen. Läs den här artikeln som en del av [planeringen för ämnen.](plan-topic-experiences.md)
 
-Du bör vara bekant med [avsnitts upplevelser](topic-experiences-overview.md), [ämnes Center](topic-center-overview.md)och hur du [arbetar med ämnen i ämnes centret](manage-topics.md) innan du läser den här artikeln.
+Du bör känna till [vad ämnen](topic-experiences-overview.md)är, [ämnescentret](topic-center-overview.md)och hur du arbetar med ämnen i ämnescentret [innan](manage-topics.md) du läser den här artikeln.
 
 ## <a name="what-users-can-see-in-topics"></a>Vad användarna kan se i ämnen
 
-För att se ämnen måste en användare:
+För att kunna se ämnen måste en användare:
 
-- Har en licens för ämne
-- Vara en [ämnes läsare](topic-experiences-knowledge-rules.md#change-who-can-see-topics-in-your-organization), [deltagare eller kunskaps chef](topic-experiences-user-permissions.md)
+- Ha en Viva Topics-licens
+- Vara en [ämnesläsare,](topic-experiences-knowledge-rules.md#change-who-can-see-topics-in-your-organization) [deltagare eller knowledge manager](topic-experiences-user-permissions.md)
 
-De här två sakerna ger användarna åtkomst till ämnes Center och låter dem se högdagrar och ämnes kort.
+De här två sakerna ger användarna tillgång till ämnescentret och låter dem se höjdpunkter och ämneskort.
 
-Ämnes deltagare har dessutom behörigheterna [skapa och redigera](topic-experiences-user-permissions.md#change-who-has permissions-to-update-topic-details) för ämnen och kunskaps cheferna kan bekräfta eller ta bort ämnen.
+Ämnesdeltagare har dessutom behörighet [att skapa och redigera](topic-experiences-user-permissions.md) ämnen, och knowledge managers kan bekräfta eller ta bort ämnen.
 
-När ett ämne först identifieras kan kunskaps cheferna se det i ämnes centret. Beroende på vad som är komplett och relevans för ämnet kan ämnena som visas eller kanske inte visas i ämnes kort.
+När ett ämne upptäcks för första gången kan kunskapshanterare se det i ämnescentret. Beroende på ämnets fullständighet och relevans kanske ämnesarna ser eller inte kan se ämnet som presenteras på ämneskorten.
 
-Ämnen kan innehålla information som genererats av AI och information som lagts till eller redigerats av ämnes deltagare eller kunskaps chefer.
+Ämnen kan innehålla information som genereras av AI och information som lagts till eller redigerats av ämnesdeltagare eller kunskapshanterare.
 
-- Information i ett ämne som lagts till av AI visas bara för personer som har till gång till käll innehållet.
-- Text som har lagts till manuellt eller redigerats av en ämnes deltagare eller kunskaps chef visas för alla som kan se avsnittet.
+- Information i ett ämne som lagts till av AI visas bara för personer som har åtkomst till källinnehållet.
+- Text som har lagts till manuellt eller redigerats av en ämnesdeltagare eller knowledge manager är synlig för alla som kan se ämnet.
 
-Avsnitts läsare och deltagare kan se en lista över bekräftade och publicerade ämnen i ämnes centret, men de avsnitts uppgifter som en viss person kan se beror på vilka behörigheter de har till käll materialet och om avsnittet har redigerats manuellt.
+Användare och deltagare kan se listan över bekräftade och publicerade ämnen i ämnescentret, men den ämnesinformation som en viss person kan se beror på behörigheterna för källmaterial och på om ämnet har redigerats manuellt.
 
-I följande tabell beskrivs vad användare – avsnitts läsare, deltagare och kunskaps chefer – kan se i ett visst ämne baserat på deras behörigheter.
+I följande tabell beskrivs vad användare – ämnesanvändare, deltagare och kunskapshanterare – kan se i ett visst ämne baserat på deras behörigheter.
 
-|Ämnes objekt|Vad användarna kan se|
+|Ämnesobjekt|Vad användarna kan se|
 |:---------|:------------------|
-|Namn på avsnitt|Användare kan se ämnes namnet i alla ämnen i ämnes centret. Vissa ämnen kanske inte visas om de har en liten sökrelevans till användaren.|
-|Beskrivning av ämnet|AI-genererade beskrivningar visas endast för användare som har behörighet till käll innehållet. Manuellt angivna eller redigerade beskrivningar visas för alla användare.|
-|Kontakter|Fästa personer visas för alla användare. Föreslagna personer visas bara för användare som har behörighet till käll innehållet.|
-|Hjälpfiler|Filer visas endast för användare som har behörighet till käll innehållet.|
-|Målsidor|Sidor visas bara för användare som har behörighet till käll innehållet.|
-|Sidor|Webbplatser visas bara för användare som har behörighet till käll innehållet.|
+|Ämnesnamn|Användarna kan se ämnesnamnet för alla ämnen i ämnescentret. Vissa ämnen kanske inte visas om de har en låg relevans för användaren.|
+|Ämnesbeskrivning|AI-genererade beskrivningar visas endast för användare som har behörighet till källinnehållet. Manuellt angivna eller redigerade beskrivningar visas för alla användare.|
+|Kontakter|Fästa personer visas för alla användare. Föreslagna personer visas bara för användare som har behörighet till källinnehållet.|
+|Filer|Filer visas bara för användare som har behörighet till källinnehållet.|
+|Sidor|Sidor visas bara för användare som har behörighet till källinnehållet.|
+|Webbplatser|Webbplatser visas bara för användare som har behörighet till källinnehållet.|
 
 ## <a name="best-practices"></a>Metodtips
 
-Ämnen kan visa information om användare baserat på deras befintliga behörigheter till innehåll. I Microsoft 365 finns flera olika sätt att se till att känsligt innehåll begränsas till lämpliga användare. Utöver standard grupp-eller webbplats behörigheter kan du använda [känslighets etiketter](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) eller [förhindra data förlust](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) för att begränsa åtkomsten till innehåll och [åtkomst granskningar](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) för att regelbundet granska användarnas åtkomst till känslig information.
+Avsnitt presenterar information för användare baserat på deras befintliga behörigheter till innehåll. I Microsoft 365 finns en mängd olika sätt att säkerställa att känsligt innehåll begränsas till rätt användare. Utöver standardbehörigheter för grupp [](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) eller webbplats kan du använda känslighetsetiketter eller skydd mot [dataförlust](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) för att begränsa åtkomst till innehåll och åtkomstgranskningar till att regelbundet granska användaråtkomst till känslig information. [](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)
 
-Vi rekommenderar att du använder dessa verktyg för att se till att dina innehålls behörigheter är korrekt inställda i organisationen. Avsnitts upplevelser kan ge användarna användbar och lämplig information.
+Vi rekommenderar att du använder de här verktygen för att säkerställa att innehållsbehörigheter ställs in på rätt sätt i organisationen. Ämnesupplevelser kan sedan ge användbar och lämplig information till användarna.
 
-Om det finns avsnitt som du vill utesluta helt från avsnitts upplevelser kan du också:
+Om det finns ämnen som du vill utesluta helt från ämnesupplevelser kan du också:
 
-- [Exkludera känsliga SharePoint-webbplatser från identifiering av avsnitt](topic-experiences-discovery.md#select-sharepoint-topic-sources). Innehållet på dessa webbplatser visas inte i ämnes upplevelser.
+- [Undanta känsliga SharePoint-webbplatser från identifiering av ämnen.](topic-experiences-discovery.md#select-sharepoint-topic-sources) Innehållet på de här webbplatserna visas inte i ämnesupplevelser.
 
-- [Utelämna ämnen efter namn](topic-experiences-discovery.md#exclude-topics-by-name). Avsnitt som uttryckligen utesluts visas inte i ämnes upplevelser.
+- [Undanta ämnen efter namn.](topic-experiences-discovery.md#exclude-topics-by-name) Ämnen som uttryckligen utesluts visas inte i ämnesupplevelser.
 
-- Få kunskaps cheferna att ta bort ämnen i ämnes centret.
+- Få kunskapshanterare att ta bort ämnen i ämnescentret.
 
-Dessutom rekommenderar vi följande metod tips:
+Dessutom rekommenderar vi följande metodtips:
 
-- Rekrytera kunskaps chefer från olika delar av organisationen. Att ha kunskaps chefer med en mängd expertis-och åtkomst till underliggande innehåll som används av AI – kan hjälpa dig att granska den mest användbara kunskapen för användarna och ta bort känslig information om den hittas.
+- Rekrytering av kunskapschefer från olika områden i organisationen. Att ha kunskapschefer med en mängd olika kunskaper – och åtkomst till underliggande innehåll som används av AI – kan hjälpa dig att hitta den mest användbara kunskapen för användarna och ta bort känslig information om den hittas.
 
-- Konfigurera ett arbets flöde för att begära ändringar. Kunskaps chefer eller grupp-eller webbplats ägare bör ha en process där de kan begära uteslutning av ämnen eller webbplatser som nya projekt startas inom organisationen eller om de hittar innehåll med olämpliga behörighets inställningar.
+- Skapa ett arbetsflöde för att begära ändringar. Knowledge Managers or team or site owners should have a process by which they can request exclusion of topics or sites as new projects are started within your organization or if they find content with inappropriate permissions settings.
 
-- Observera publiken och känsligheten för informationen när du skapar beskrivningar. De här beskrivningarna kan vara synliga för användare som inte har behörighet till käll innehållet för ämnet.
+- Var uppmärksam på målgruppen och hur känslig informationen är när du skapar ämnesbeskrivningar. De här beskrivningarna kan visas för användare som inte har behörighet till källinnehållet för ämnet.
 
-Du kan ändra behörigheterna för enskilda ämnes sidor för att begränsa åtkomsten till en viss grupp användare, men vi rekommenderar inte den här metoden på grund av den goda administrativa ansträngningen.
+Du kan ändra behörigheterna för enskilda ämnessidor för att begränsa åtkomsten till en viss grupp användare, men vi rekommenderar inte den här metoden eftersom det krävs stora administrativa åtgärder.
 
 ## <a name="see-also"></a>Se även
 
 [Konfigurera Teams med tre skyddsnivåer](../solutions/configure-teams-three-tiers-protection.md)
 
-[Planera ämnen](plan-topic-experiences.md)
+[Planera ämnesupplevelser](plan-topic-experiences.md)
 
-[Konfigurera ämnen](set-up-topic-experiences.md)
+[Konfigurera ämnesupplevelser](set-up-topic-experiences.md)

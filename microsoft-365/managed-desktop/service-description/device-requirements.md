@@ -1,6 +1,6 @@
 ---
 title: Enhetskrav
-description: Översikt över minimi kraven för maskin vara och program vara för enheter för att fungera med Microsoft Managed Desktop
+description: Sammanfattning av de lägsta maskinvaru- och programvarukraven för enheter för Microsoft Managed Desktop
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,74 +9,74 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 88b1ba657b4823d90a41b28b01362760676410ba
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: a6b5cbbcb2f48797130b080d9d1dd1e6427d4fb8
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032709"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110057"
 ---
 # <a name="device-requirements"></a>Enhetskrav
 
-Microsoft Managed Desktop bedömer regelbundet vilka enheter som ska ingå i tjänsten. I den här artikeln beskrivs maskinvaru-och program varu kraven som en enhet måste uppfylla för att fungera med Microsoft Managed Desktop. Du kan granska en lista med [enheter som redan godkänts](device-list.md) för användning med tjänsten baserat på dessa krav.
+Microsoft Managed Desktop utvärderar regelbundet enhetskrav som ska ingå i tjänsten. I den här artikeln beskrivs de maskin- och programvarukrav en enhet måste uppfylla för att kunna arbeta med Microsoft Managed Desktop. Du kan granska en lista över [specifika enheter som redan är godkända](device-list.md) för användning med tjänsten baserat på dessa krav.
 
 > [!NOTE]
-> Dessa krav kan ändras när som helst, men vi kommer att erbjuda 90 dagars meddelande om sådana ändringar. De senaste kraven är markerade med **\*** . 
+> De här kraven kan ändras när som helst, men vi tillhandahåller 30 dagars förvarning om ändringar av maskinvarukrav. De senast ändrade kraven markeras **\*** med. 
 
-## <a name="check-hardware-requirements"></a>Kontrol lera maskin varu kraven
+## <a name="check-hardware-requirements"></a>Kontrollera maskinvarukraven
 
-Förutom att läsa enhets specifikationer kan du även använda nedladdnings [kontrollen](../get-ready/readiness-assessment-downloadable.md) för att kontrol lera att en given enhet uppfyller de nödvändiga kraven. Det här verktyget kontrollerar också nätverks inställningar och slut punkter som också behövs för att tjänsten ska fungera.
+Förutom att granska enhetsspecifikter kan du [](../get-ready/readiness-assessment-downloadable.md) också använda den nedladdningsbara beredskapskontrollen för att verifiera att en viss enhet uppfyller de nödvändiga kraven. Det här verktyget kontrollerar även nätverksinställningar och slutpunkter som också behövs för att tjänsten ska fungera.
 
-## <a name="minimum-requirements"></a>Minimi krav
+## <a name="minimum-requirements"></a>Minimikrav
 
-För att vara registrerade på Microsoft Managed Desktop måste en enhet uppfylla eller överträffa alla dessa krav.
+För att registreras i Microsoft Managed Desktop måste en enhet uppfylla eller överskrida alla dessa krav.
 
-### <a name="manufacturer"></a>Tillverkarnamn
+### <a name="manufacturer"></a>Tillverkare
 
 Enheten måste ha gjorts av någon av dessa tillverkare:
 
 - Dell
-- KLIENTANSLUTNINGAR
-- Lenovos
+- HP
+- Lenovo
 - Microsoft
 
 
-### <a name="installed-software"></a>Installerad program vara
+### <a name="installed-software"></a>Installerad programvara
 
-Enheten måste ha följande program vara förinstallerat:
+Enheten måste ha den här programvaran förinstallerad:
 
-- Windows 10 Enterprise, Pro eller Pro Workstation Edition
-- {64-bitars versionen av Office Klicka-och-kör {jag kontrollerar namn med Office-arbetskollegor]}
-- Alla tillämpliga driv rutiner
+- Windows 10 Enterprise, Pro eller Pro Arbetsstation
+- 64-bitarsversionen av Microsoft Office Klicka-och-kör 
+- Alla tillämpliga drivrutiner
 
 
 ### <a name="physical-features"></a>Fysiska funktioner
 
 Enheter måste ha följande funktioner:
 
-- Aktiverat för säker start med UEFI 
-- Trusted Platform Module 2,0 
-- Möjlighet till virtualiseringsbaserad säkerhet 
-- Stöder hypervisor-skyddad kod integritet 
+- Aktiverad för säker UEFI-uppstart 
+- Modulen Betrodd plattform 2.0 
+- Kan använda virtualiseringsbaserad säkerhet 
+- Stöder Hypervisor-skyddad kodintegritet 
 
-Mer information om de här funktionerna och de tekniker som tjänsten använder finns i [Microsoft Managed Desktop Technologies](../intro/technologies.md).
+Mer information om dessa funktioner och tekniker som är relaterade till dem som används i tjänsten finns i Microsofts teknik [för hanterade skrivbord.](../intro/technologies.md)
 
 > [!NOTE]
-> ARM-processorer stöds inte.
+> ARM processorer stöds inte.
 
-Enheter bör uppfylla eller överträffa följande begränsningar för lagring och minne:
+Enheter bör uppfylla eller överskrida följande gränser för lagring och minne:
 
-- Startenheten måste vara annan än hård disk. Till exempel SSD-, NVMe-och eMMC-enheter är giltiga val.
+- Startenheten måste vara av någon annan typ än en hårddisk. SSD-, NVMe- och eMMC-enheter är till exempel giltiga alternativ.
 - Startenheten måste ha en kapacitet på minst 128 GB.
 
-Om enheten har gjorts efter den 1 juli 2020 bör den också ha en IR-kamera, finger avtrycks läsare eller både och för att kunna använda [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security).
+Om enheten gjordes efter den 1 juli 2020 bör den också ha en IR-kamera, fingeravtrycksläsare eller båda för att stödja [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
 
 ## <a name="recommended-requirements"></a>Rekommenderade krav
 
-Även om de inte är absoluta krav får användarna en mycket bättre upplevelse om du väljer enheter som har följande funktioner:
+Även om de inte är absoluta krav får användarna mycket bättre upplevelse om du väljer enheter som har dessa funktioner:
 
-- Antingen en Intel vPro-plattforms processor eller en AMD Ryzen Pro-processor
-- Startenhet för typen SSD med en kapacitet på minst 256 GB
-- Stöd för moderna vänte läge
-- Enheten är av typen säker-core-dator
-- Stöd för kernel DMA-skydd
+- Antingen en Intel vPro-processor eller en AMD Ryzen Pro-processor
+- Startenhet av SSD-typ med en kapacitet på minst 256 GB
+- Stöd för modern vänteläge
+- Enheten är av säker datortyp
+- Stöder Kernel DMA-skydd

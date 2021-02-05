@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: Lär dig hur du förnyar din Microsoft 365 genom att aktivera eller inaktivera återkommande fakturering.
-ms.openlocfilehash: 1bf6d3957479d1cb695075e139dc4af2a09db3df
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 3bde3cc6d62e89e3339c268b9e3f9be5d657c467
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324310"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114615"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Förnya Microsoft 365 för företag
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -54,14 +54,14 @@ Om du har förbetalt för prenumerationen med en produktnyckel går prenumeratio
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
 2. Välj den prenumeration du vill hantera återkommande fakturering för.
-3. På sidan prenumerations information går du till ** Inställningar för prenumeration och betalning**, väljer du **redigera återkommande fakturerings**.
-4. I fönstret **Redigera inställningar för återkommande fakturering** väljer du**På**, **På, men förnya en gång**, eller **Inaktivera**.
+3. På sidan prenumerations information går du till **Inställningar för prenumeration och betalning**, väljer du **redigera återkommande fakturerings**.
+4. I fönstret **Redigera inställningar för återkommande fakturering** väljer du **På**, **På, men förnya en gång**, eller **Inaktivera**.
 5. Välj **Spara**.
 
     > [!NOTE]
     > - Du kan bara ändra inställningen för **återkommande fakturering** för aktiva prenumerationer. Om prenumerationen har gått ut eller inaktiverats måste du [återaktivera den](reactivate-your-subscription.md) innan du kan aktivera eller inaktivera **återkommande fakturering**.
     > - När **återkommande fakturering** är inaktiverat avbryts inte prenumerationen. Om du vill att prenumerationen ska vara aktiv måste du betala fakturan manuellt.
-    > - Om du inaktiverar **Återkommande fakturerings**förblir prenumerationen aktiv tills den upphör att gälla. Du kan visa utgångs datumet på sidan prenumerations information i avsnittet **prenumerations-och betalnings inställningar**.
+    > - Om du inaktiverar **Återkommande fakturerings** förblir prenumerationen aktiv tills den upphör att gälla. Du kan visa utgångs datumet på sidan prenumerations information i avsnittet **prenumerations-och betalnings inställningar**.
     > - Information om hur du avbryter prenumerationen omedelbart finns i [Avbryt min prenumeration](cancel-your-subscription.md).
 
 ::: moniker-end

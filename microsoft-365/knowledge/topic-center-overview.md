@@ -1,9 +1,10 @@
 ---
-title: 'Översikt över avsnitts Center (för hands version) '
-description: Läs mer om ämnes Center.
+title: 'Översikt över ämnescentret '
+description: Läs mer om Ämnescenter i Microsoft Viva-ämnen.
 author: efrene
 ms.author: efrene
 manager: pamgreen
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,41 +14,39 @@ ms.collection:
 - m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 03ecae794a0aee3297e305771452a6e5ce70015d
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: d9965c04335e77abc449cbc155ece63372869ee9
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975973"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107750"
 ---
-# <a name="topic-center-overview-preview"></a>Översikt över avsnitts Center (för hands version)
-
-> [!Note] 
-> Innehållet i den här artikeln gäller för projekt cortex privat för hands version. [Läs mer om Project Cortex](https://aka.ms/projectcortex).
-
-Ämnes Center är en modern SharePoint-webbplats som fungerar som en grupp kunskap för organisationen. Det skapas vid [konfiguration av ämnen](set-up-topic-experiences.md) i administrations centret för Microsoft 365.
-
-Ämnes Center har en standard start sida (mina ämnen) där alla användare kan se de ämnen som de har en anslutning till. 
-
-Även om alla licensierade användare som kan se ämnen kommer att ha åtkomst till ämnes Center kan de hantera ämnen via sidan **hantera ämnen** . Fliken Hantera ämnen visas endast för användare som har behörigheten **hantera ämnen** . 
-
-## <a name="where-is-my-topic-center"></a>Var finns mitt ämnes Center
-
-Ämnes centret skapas under inställning av ämnen. När installationen är slutförd kan administratören hitta URL-adressen på [sidan för hantering av ämnes Center](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-administration#to-access-topics-management-settings).
+# <a name="topic-center-overview"></a>Översikt över ämnescentret
 
 
-1. I administrations centret för Microsoft 365 klickar du på **Inställningar** och sedan på **org Settings**.
-2. Klicka på **kunskaps nätverk** på fliken **tjänster** .
+I Microsoft Viva Topics är ämnescentret en modern SharePoint-webbplats som fungerar som ett kunskapscenter för din organisation. Den skapas under installation av [Viva Topics](set-up-topic-experiences.md) i administrationscentret för Microsoft 365.
 
-    ![Koppla personer till kunskap](../media/admin-org-knowledge-options-completed.png) </br>
+Ämnescentret har en standard startsida med webbdelen Ämnen där alla licensierade användare kan se de ämnen som de har en anslutning till. 
 
-3. Välj fliken för **avsnitts Center** . Under **webbplats adress** finns en länk till ditt ämnes Center.
+Även om alla licensierade användare som kan visa ämnen har tillgång till ämnescentret kan kunskapshanterare hantera ämnen via **sidan Hantera** ämnen. Fliken Hantera ämnen visas bara för användare som har behörigheten **Hantera** ämnen. 
 
-    ![kunskap – nätverks inställningar](../media/knowledge-network-settings-topic-center.png) </br>
+## <a name="where-is-my-topic-center"></a>Var finns mitt ämnescenter?
+
+Ämnescentret skapas under installationen av Viva Topics. När konfigurationen är klar kan administratören hitta URL-adressen på sidan [för hantering av ämnescenter.](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-administration#to-access-topics-management-settings)
+
+
+1. Klicka på Inställningar och sedan Organisationsinställningar i **administrationscentret** **för** Microsoft 365.
+2. Klicka på **Ämnesupplevelser** på **fliken Tjänster.**
+
+    ![Koppla samman personer med kunskap](../media/admin-org-knowledge-options-completed.png) </br>
+
+3. Välj fliken **Ämnescenter.** Under **Webbplatsadress** finns en länk till ämnescentret.
+
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) </br>
 
 
 
-## <a name="home-page"></a>Start sida
+## <a name="home-page"></a>Startsida
 
 </br>
 
@@ -56,37 +55,38 @@ ms.locfileid: "49975973"
 </br>
 
 
-På Start sidan för ämnes Center kan du se avsnitten i organisationen som du har en anslutning till.
+På startsidan för ämnescentret kan du se de ämnen i organisationen som du har en anslutning till.
 
-- Föreslagna anslutningar – du kommer att se förslag på ämnen som visas under **vi har listat dig på dessa ämnen. Blev det rätt?**. Det här är avsnitt där din anslutning till avsnittet har föreslagits genom AI. Du kan till exempel vara ägare till en relaterad fil eller webbplats. Föreslagna ämnen ber dig bekräfta att du är ansluten till avsnittet.
+- Föreslagna anslutningar – du kommer att se ämnen under **Vi har listat dig om dessa ämnen. Fick vi det rätt?**. Det här är ämnen där din anslutning till ämnet har föreslagits via AI. Du kan till exempel vara författare till en relaterad fil eller webbplats. Du ombeds att bekräfta att du bör vara listad som en relaterad person för ämnet.
 
    ![Föreslagna anslutningar](../media/knowledge-management/my-topics.png) </br>
  
-- Bekräftade anslutningar – det här är avsnitt där du fästs på ämnet av en annan användare eller om du har bekräftat din anslutning till avsnittet. Ämnena flyttas från området föreslaget till bekräftat när du bekräftar en föreslagen anslutning.
+- Bekräftade anslutningar – det här är avsnitt där du är fäst på ämnessidan eller har bekräftat en föreslagen anslutning till ämnet. Ämnen flyttas från det föreslagna avsnittet till det bekräftade avsnittet när du bekräftar en föreslagen anslutning.
  
    ![Bekräftade ämnen](../media/knowledge-management/my-topics-confirmed.png) </br>
 
-När en användare bekräftar sin anslutning till ett ämne kan användaren göra ändringar på sidan ämne för att granska deras anslutningar. De kan till exempel ge mer information om deras anslutningar till ämnet.
+När en användare bekräftar sin anslutning till ett ämne kan användaren göra ändringar på ämnessidan för att curate anslutningen. De kan till exempel ge mer information om anslutningen till ämnet.
 
 
-## <a name="manage-topics-page"></a>Sidan hantera ämnen
+## <a name="manage-topics-page"></a>Sidan Hantera ämnen
 
-Om du vill arbeta i avsnittet **hantera ämnen** i ämnes Center måste du ha nödvändig behörighet för *hantera ämnen* för rollen som kunskaps chef. Administratören kan tilldela dessa behörigheter till användare under [inställning av kunskaps hantering](set-up-topic-experiences.md), eller så kan nya användare [läggas till senare](topic-experiences-knowledge-rules.md) av en administratör via administrations centret för Microsoft 365.
+För att kunna arbeta **i avsnittet Hantera** ämnen i  Ämnescenter måste du ha den behörighet för Hantera ämnen som krävs för rollen som knowledge manager. Administratören kan tilldela de här behörigheterna till användare under [](topic-experiences-knowledge-rules.md) konfigurationen av knowledge [management,](set-up-topic-experiences.md)eller så kan nya användare läggas till efteråt av en administratör via administrationscentret för Microsoft 365.
 
-På sidan Hantera ämnen visar instrument panelen för ämnen som identifierats från dina angivna käll platser. Varje ämne visar datumet som identifieras och om någon feedback har lämnats in. En användare som har tilldelats **Hantera avsnitts** behörigheter kan granska de obekräftade ämnena och välja att:
-- Bekräfta ämnet: markerar ämnet för användare som har åtkomst till och visar det associerade ämnes-och ämnes sidan.
-- Avvisa ämnet: gör att avsnittet inte är tillgängligt för användarna. Avsnittet flyttas till fliken **avvisad** och kan bekräftas senare om det behövs. en kunskaps chef kan hjälpa 
+På sidan Hantera ämnen i instrumentpanelen för ämnen visas alla ämnen, som du har tillgång till, som har identifierats från dina angivna källplatser. Varje ämne visar det datum då ämnet upptäcktes. En användare som har tilldelats **behörigheten** Hantera ämnen kan granska de ofirmerade avsnitten och välja att:
+- Bekräfta ämnet: Markerar avsnittet för användare som har åtkomst till filer och sidor som är relaterade till avsnittet och gör att de kan se det associerade ämneskortet och ämnessidan.
+- Publicera ämnet: Redigera ämnesinformationen för att förbättra kvaliteten på det ämne som först identifierades och framhäver ämnet för alla användare som har åtkomst till ämnen. 
+- Avvisa ämnet: Gör avsnittet inte tillgängligt för användare. Avsnittet flyttas till fliken **Avvisat och** kan bekräftas senare om det behövs. 
 
 > [!Note] 
-> Se [hantera ämnen](manage-topics.md) för mer information om avsnittet hantera ämnen på sidan Hantera ämnen.
+> Mer [information om ämneshantering](manage-topics.md) finns i Hantera ämnen på sidan Hantera ämnen.
 
 
 ## <a name="create-or-edit-a-topic"></a>Skapa eller redigera ett ämne
 
-Om du har behörigheterna **skapa och redigera ämnen** kan du:
+Om du har **behörigheten Skapa och redigera** ämnen kan du:
 
-- [Redigera befintliga ämnen](edit-a-topic.md): du kan göra ändringar i befintliga ämnes sidor som skapats genom identifiering.
-- [Skapa nya ämnen](create-a-topic.md): du kan skapa nya ämnen för dem som inte hittats via Upptäck, eller om AI-verktygen inte hittade tillräckligt många belägg för att skapa ett ämne.
+- [Redigera befintliga ämnen:](edit-a-topic.md)Du kan göra ändringar i befintliga ämnessidor som har skapats genom identifiering.
+- [Skapa nya ämnen:](create-a-topic.md)Du kan skapa nya ämnen för ämnen som inte hittades vid upptäckten eller om AI-verktygen inte hittade tillräckligt många bevis för att skapa ett ämne.
 
 
 

@@ -1,8 +1,9 @@
 ---
-title: Avsnitt som får roller (för hands version)
+title: Microsoft Viva Topics-roller
 ms.author: efrene
 author: efrene
 manager: pamgreen
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -12,81 +13,75 @@ ms.collection:
 - enabler-strategic
 - m365initiative-topics
 localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Lär dig mer om användar roller i avsnittet.
-ms.openlocfilehash: b649ea81d8e5b036e9332e9c87b67a951b5905a7
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+description: Läs mer om användarroller i Viva-ämnen.
+ms.openlocfilehash: e2975201124045574c516aad49bc5059db969b76
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975699"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107440"
 ---
-# <a name="topic-experiences-roles-preview"></a>Avsnitt som får roller (för hands version)
+# <a name="microsoft-viva-topics-roles"></a>Microsoft Viva Topics-roller 
 
-> [!Note] 
-> Innehållet i den här artikeln gäller för projekt cortex privat för hands version. [Läs mer om Project Cortex](https://aka.ms/projectcortex).
+När du använder Viva Topics i Microsoft 365-miljön kan användarna ha följande roller:
+-   Ämnesläsare
+-   Ämnesdeltagare
+-   Knowledge Manager
+-   Kunskapsadministratör
 
+## <a name="topic-viewer"></a>Ämnesläsare
 
-När du använder avsnitts upplevelser i din Microsoft 365-miljö kan användarna ha följande roller:
--   Visnings program
--   Ämnes deltagare
--   Kunskaps chef
--   Kunskaps administratör
+Ämnesvyer är användare i organisationen som kan visa ämnen som markerats på sin moderna SharePoint-webbplats, Microsoft Search via SharePoint och Office.com och ämnescentret. De kan visa mer information om ett ämne på ämnessidan. 
 
-## <a name="topic-viewer"></a>Visnings program
-
-Avsnitts läsare är användare i organisationen som kan visa markerade ämnen i sin moderna SharePoint-webbplats och i SharePoint-sökning. De kan välja avsnitt för att visa mer information om dem på en ämnes sida. 
-
-För avsnitts markeringar och deras ämnes sidor som ska visas för ett ämnes visnings program måste användaren:
--   [Tilldelas en licens för ämne](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) i Microsoft 365-administratören.
--   Får synlighet för avsnitt. Detta görs av kunskaps administratören på sidan Inställningar i administrations centret för Microsoft 365.
+För att ämnes höjdpunkter och deras ämnessidor ska vara synliga för ett ämnesvisningsprogram måste användaren:
+-   [Tilldelas en Viva Topics-licens](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) av Microsoft 365-administratören.
+-   Se till att du har tillgång till olika ämnen. Den här uppgiften utförs av kunskapsadministratören på inställningssidan för Viva-ämnen i administrationscentret för Microsoft 365.
 
 
-## <a name="topic-contributors"></a>Ämnes deltagare
+## <a name="topic-contributors"></a>Ämnesdeltagare
 
-Ämnes deltagare är användare i din organisation som inte bara har behörighet som visnings program, men som också kan redigera ett befintligt ämne eller skapa ett nytt ämne. De har en viktig roll i att manuellt "Visa" informationen på en ämnes sida (både AI eller manuellt angiven) för att säkerställa dess kvalitet.
+Ämnesdeltagare är användare i organisationen som inte bara har behörighet att visa ämnen, utan också kan redigera ett befintligt ämne eller skapa ett nytt ämne. De har en viktig roll i att manuellt "curating" av informationen på en ämnessida (både AI och manuellt tillhandahållna) för att säkerställa kvaliteten.
 
-Användare som har behörigheten ämne kan se en **redigerings** knapp som visas på ämnes sidor, vilket gör att de kan uppdatera och publicera ett ämne.
+Användare som har behörighet för  ämnesdeltagare ser knappen Redigera på ämnessidor där de kan uppdatera och publicera ett ämne.
 
-En ämnes deltagare kan också skapa och publicera ett nytt ämne genom sin ämnes Center-webbplats.
+En ämnesdeltagare kan också skapa och publicera ett nytt ämne via sitt ämnescenter.
 
-För att kunna skapa och redigera ett ämne måste användaren:
+Om du vill skapa och redigera ett ämne måste användaren:
 
--   [Tilldelas en licens för ämne](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) i Microsoft 365-administratören.
--   [Få behörighet att skapa och redigera ämnen](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center). Detta görs av kunskaps administratören på sidan Inställningar i administrations centret för Microsoft 365.
+-   [Tilldelas en Viva Topics-licens](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) av Microsoft 365-administratören.
+-   [Tilldelas behörigheter för att skapa och redigera ämnen.](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center) Den här uppgiften utförs av kunskapsadministratören på inställningssidan för Viva-ämnen i administrationscentret för Microsoft 365.
 
-## <a name="knowledge-managers"></a>Kunskaps chefer
+## <a name="knowledge-managers"></a>Kunskapschefer
 
-Kunskaps chefer är användare som hanterar ämnen i din organisation.  Avsnitts hantering sker via sidan Hantera ämnen i ämnes centret och är endast synlig för kunskaps cheferna.
+Kunskapshanterare är användare som hanterar ämnen i organisationen.  Ämneshanteringen görs via sidan Hantera ämnen i ämnescentret, och den visas bara för Knowledge-chefer.
 
-På sidan Hantera ämnen kan en kunskaps chef göra följande:
--   Visa alla AI-förslag.
--   Granska ämnen för att kontrol lera att de är giltiga.
--   Ta bort ämnen som du inte vill ska synas för användarna.
+På sidan Hantera ämnen kan kunskapshanterare göra följande:
+-   Visa AI-föreslagna ämnen.
+-   Läs avsnitt för att bekräfta att de är giltiga.
+-   Ta bort ämnen som du inte vill ska visas för användarna.
+
+En kunskapsansvarig kan dessutom redigera befintliga ämnen eller skapa nya.
+
+För att hantera ämnen måste användaren:
+-   [Tilldelas en Viva Topics-licens](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) av Microsoft 365-administratören.
+-   [Tilldelas behörigheter för att hantera ämnen](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center)). Den här uppgiften utförs av kunskapsadministratören på inställningssidan för Viva-ämnen i administrationscentret för Microsoft 365.
+
+Användare som har goda kunskaper om ditt företag kan vara bra som kandidater till rollen som knowledge manager. Sådana personer kanske inte bara har den kunskap som krävs för att veta om ämnena är giltiga eller inte, utan kanske också känner personer inom företaget som är relaterade till dessa ämnen.
 
 
-Dessutom kan en kunskaps chef redigera befintliga ämnen eller skapa nya.
+## <a name="knowledge-admins"></a>Kunskapsadministratörer
 
-För att kunna hantera ämnen måste användaren:
--   [Tilldelas en licens för ämne](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) i Microsoft 365-administratören.
--   [Få behörighet att hantera ämnen](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center)). Detta görs av kunskaps administratören på sidan Inställningar i administrations centret för Microsoft 365.
+Kunskapsadministratörer är administratörer som konfigurerar Viva-ämnen i din Microsoft 365-miljö. De hanterar även Viva Topics-inställningarna när inställningarna är klara. Rollen som kunskapsadministratör kräver att du är global Microsoft 365- eller SharePoint-administratör eftersom konfigurationen och hanteringen utförs i administrationscentret för Microsoft 365.
+Under installationen kan knowledge admins konfigurera Viva Topics till:
 
-Användare som har en bra överblick över ditt företag kan vara bra för rollen som kunskaps chef. Sådana personer kanske inte bara har kunskapen för att veta om ämnena är giltiga eller inte, men kan också vara kända personer inom företaget som är relaterade till ämnena.
-
-
-## <a name="knowledge-admins"></a>Kunskaps administratörer
-
-Kunskaps administratörer är administratörer som konfigurerar och konfigurerar ämnen i din Microsoft 365-miljö. De hanterar också inställningarna för avsnitts upplevelser när installationen är klar. För kunskaps administratörs rollen måste du ha en Microsoft 365 global-eller SharePoint-administratör eftersom konfiguration och hantering sker i administrations centret för Microsoft 365.
-Under installationen kan kunskaps administratörer konfigurera ämnen för att göra följande:
-
--   Välj vilka SharePoint-webbplatser som ska crawlas för avsnitt.
--   Välj vilka licensierade användare som ska kunna se ämnen (avsnitts läsare).
+-   Välj vilka SharePoint-webbplatser som ska crawlas för ämnen.
+-   Välj vilka licensierade användare som kan visa ämnen (ämnesvisningsprogram).
 -   Välj vilka ämnen som ska undantas från att identifieras.
--   Välj vilka licensierade användare som ska kunna skapa och redigera ämnen (ämnes deltagare).
--   Välj vilka licensierade användare som ska kunna hantera ämnen (kunskaps administratörer).
--   Ge ämnes Center ett namn.
+-   Välj vilka licensierade användare som kan skapa och redigera ämnen (ämnesdeltagare).
+-   Välj vilka licensierade användare som kan hantera ämnen (kunskapshanterare).
+-   Namnge ämnescentret.
 
-Kunskaps cheferna måste kunna koordineras av alla som har flera olika ämnen i organisationen för att kunna konfigurera den. Om det till exempel finns känslig information i ett nytt projekt måste kunskaps ledaren bli informerad så att de kan se till att SharePoint-webbplatsen inte crawlas för ämnen eller att vissa ämnes namn måste uteslutas.
+Kunskapschefer måste kunna samordna med alla Viva Topics-intressenter i organisationen för att ta reda på hur de ska konfigurera den. Om ett nytt projekt till exempel innehåller känslig information måste den kunskapsansvarige informeras så att han eller hon kan se till att SharePoint-webbplatsen inte crawlas för ämnen, eller att specifika ämnesnamn ska uteslutas.
 
 
 ## <a name="see-also"></a>Se även
