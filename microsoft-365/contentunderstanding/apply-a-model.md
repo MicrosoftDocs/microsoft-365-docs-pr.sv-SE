@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Lär dig att använda en publicerad modell på ett SharePoint-dokumentbibliotek
-ms.openlocfilehash: 742c6b7088619579f6157e20de63fe311039d6e2
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 17da1e37f72504ac5e0e26c0dd190efced08d285
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975937"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080782"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Använda en modell för dokumenttolkning i Microsoft SharePoint Syntex
 
@@ -61,10 +61,15 @@ För att använda din modell på ett SharePoint-dokumentbibliotek:
 
     ![Valt bibliotek](../media/content-understanding/selected-library.png)</br>
 
-7. Gå till dokumentbiblioteket och se till att du är i modellens dokumentbiblioteksvy. Observera att om du väljer informationsknappen bredvid dokumentbibliotekets namn noterar ett meddelande att modellen har använts i dokumentbiblioteket.
+7. Gå till dokumentbiblioteket och se till att du är i modellens dokumentbiblioteksvy. Observera att om du väljer informationsknappen bredvid dokumentbibliotekets namn noterar ett meddelande att biblioteket har en modell som tillämpats på det.
 
     ![Informationsvy](../media/content-understanding/info-du.png)</br> 
 
+    Du kan välja alternativet **Visa aktiva modeller** om du vill se information om eventuella modeller som tillämpas på dokumentbiblioteket.
+
+8. I fönstret **Aktiva modeller** kan du se de modeller som tillämpas på dokumentbiblioteket. Välj en modell om du vill se mer information om den, till exempel en modellbeskrivning, vem som publicerat modellen och om modellen tillämpar en kvarhållningsetikett på de filer den klassificerar.
+
+    ![Fönstret Aktiva modeller](../media/content-understanding/active-models.png)</br> 
 
 När du har använt modellen på dokumentbiblioteket kan du börja ladda upp dokument till webbplatsen och se resultatet.
 
@@ -83,10 +88,24 @@ Modellen identifierar alla filer med modellens kopplade innehållstyp och visar 
 > [!NOTE]
 > Du kan kopiera enskilda filer till ett bibliotek och använda dem i en modell, men inte mappar.
 
+### <a name="the-classification-date-field"></a>Fältet för klassificeringsdatum
+
+När en dokumenttolkning eller formulärbearbetningsmodell för SharePoint Syntex tillämpas på ett dokumentbibliotek ingår ett fält för <b> Klassificeringsdatum </b> i biblioteksschemat. Som standard är det här fältet tomt, men när dokument behandlas och klassificeras av en modell, uppdateras fältet med en stämpel för datum och tid för slutförande. 
+
+   ![Kolumn för klassificeringsdatum](../media/content-understanding/class-date-column.png)</br> 
+
+Fältet Klassificeringsdatum används av utlösaren [<b>När en fil klassificeras av en modell för innehållstolkning</b> ](https://docs.microsoft.com/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model)för att köra ett Power Automate-flöde när en modell för innehållstolkning för Syntex-innehåll har bearbetat en fil och uppdaterat fältet “Klassificeringsdatum”.
+
+   ![Flödesutlösare](../media/content-understanding/trigger.png)</br>
+
+Utlösaren <b>När en fil klassificeras av en modell för innehållstolkning</b> kan sedan användas för att starta ett annat arbetsflöde med hjälp av eventuell extraherad information från filen.
+
+
+
 ## <a name="see-also"></a>Se även
 [Skapa en klassificerare](create-a-classifier.md)
 
-[Skapa en extraherare](create-an-extractor.md)
+[Skapa en extraktor](create-an-extractor.md)
 
 [Översikt av dokumenttolkning](document-understanding-overview.md)
 
