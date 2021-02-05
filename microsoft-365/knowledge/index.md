@@ -1,9 +1,9 @@
 ---
-title: Introduktion till ämnen (för hands version)
+title: Introduktion till Microsoft Viva-ämnen
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.reviewer: ''
+ms.reviewer: cjtan
 audience: ''
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,20 +11,16 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-topics
-ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-description: Lär dig hur du hittar resurser för avsnitts upplevelser.
-ms.openlocfilehash: afba6930c30ad59dc95abb255eadab501b01f189
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+description: Lär dig hur du hittar resurser för Microsoft Viva-ämnen.
+ms.openlocfilehash: 3e75dfcfa17e5604e04b6f5e49be9019b1679110
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029614"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107176"
 ---
-# <a name="introduction-to-topic-experiences-preview"></a><span data-ttu-id="f2435-103">Introduktion till ämnen (för hands version)</span><span class="sxs-lookup"><span data-stu-id="f2435-103">Introduction to Topic Experiences (Preview)</span></span>
-
-> [!Note] 
-> <span data-ttu-id="f2435-104">Innehållet i den här artikeln gäller för projekt cortex privat för hands version.</span><span class="sxs-lookup"><span data-stu-id="f2435-104">The content in this article is for Project Cortex Private Preview.</span></span> <span data-ttu-id="f2435-105">[Läs mer om Project Cortex](https://aka.ms/projectcortex).</span><span class="sxs-lookup"><span data-stu-id="f2435-105">[Find out more about Project Cortex](https://aka.ms/projectcortex).</span></span>
+# <a name="introduction-to-microsoft-viva-topics"></a><span data-ttu-id="2210b-103">Introduktion till Microsoft Viva-ämnen</span><span class="sxs-lookup"><span data-stu-id="2210b-103">Introduction to Microsoft Viva Topics</span></span>
 
 </br>
 
@@ -33,51 +29,51 @@ ms.locfileid: "50029614"
 </br>
 
 
-<span data-ttu-id="f2435-106">Avsnitts upplevelser är en Office 365-tjänst som hjälper organisationer att omvandla information till kunskap.</span><span class="sxs-lookup"><span data-stu-id="f2435-106">Topic Experiences is an Office 365 service that helps organizations to transform information to knowledge.</span></span>
+<span data-ttu-id="2210b-104">Viva Topics är en Office 365-tjänst som hjälper organisationer att omvandla information till kunskap.</span><span class="sxs-lookup"><span data-stu-id="2210b-104">Viva Topics is an Office 365 service that helps organizations to transform information to knowledge.</span></span>
 
-<span data-ttu-id="f2435-107">Resurserna på den här sidan är avsedda att komma igång med att lära sig mer om och använda avsnitts upplevelser i din organisation.</span><span class="sxs-lookup"><span data-stu-id="f2435-107">The resources on this page are designed to get you started with learning about and using Topic Experiences in your organization.</span></span>
+<span data-ttu-id="2210b-105">Resurserna på den här sidan har utformats för att du ska komma igång med att lära dig mer om och använda Viva Topics i din organisation.</span><span class="sxs-lookup"><span data-stu-id="2210b-105">The resources on this page are designed to get you started with learning about and using Viva Topics in your organization.</span></span>
 
-## <a name="get-started"></a><span data-ttu-id="f2435-108">Komma igång</span><span class="sxs-lookup"><span data-stu-id="f2435-108">Get started</span></span>
+## <a name="get-started"></a><span data-ttu-id="2210b-106">Komma igång</span><span class="sxs-lookup"><span data-stu-id="2210b-106">Get started</span></span>
 
-<span data-ttu-id="f2435-109">Resurserna i det här avsnittet hjälper dig att få mer information om vad som händer och hur det kan hjälpa dig.</span><span class="sxs-lookup"><span data-stu-id="f2435-109">The resources in this section help you learn more about what Topic experiences is and how it can help you.</span></span>
+<span data-ttu-id="2210b-107">Resurserna i det här avsnittet hjälper dig att lära dig mer om viva-ämnen och hur det kan hjälpa dig.</span><span class="sxs-lookup"><span data-stu-id="2210b-107">The resources in this section help you learn more about what Viva Topics  is and how it can help you.</span></span>
 
-| <span data-ttu-id="f2435-110">Om du letar efter den här informationen:</span><span class="sxs-lookup"><span data-stu-id="f2435-110">If you're looking for this information:</span></span> | <span data-ttu-id="f2435-111">Gå till den här resursen:</span><span class="sxs-lookup"><span data-stu-id="f2435-111">Go to this resource:</span></span> |
+| <span data-ttu-id="2210b-108">Om du letar efter den här informationen:</span><span class="sxs-lookup"><span data-stu-id="2210b-108">If you're looking for this information:</span></span> | <span data-ttu-id="2210b-109">Gå till den här resursen:</span><span class="sxs-lookup"><span data-stu-id="2210b-109">Go to this resource:</span></span> |
 |:-----|:-----|
-|<span data-ttu-id="f2435-112">Lär dig mer om ämnen</span><span class="sxs-lookup"><span data-stu-id="f2435-112">Learn more about topic experiences</span></span>|[<span data-ttu-id="f2435-113">Översikt över ämnen</span><span class="sxs-lookup"><span data-stu-id="f2435-113">Topic Experiences overview</span></span>](topic-experiences-overview.md)|
-|<span data-ttu-id="f2435-114">Lär dig hur ämnen identifieras och föreslås av AI</span><span class="sxs-lookup"><span data-stu-id="f2435-114">Learn how topics are discovered and suggested by AI</span></span>|[<span data-ttu-id="f2435-115">Identifiering av ämnen</span><span class="sxs-lookup"><span data-stu-id="f2435-115">Topic Experiences discovery</span></span>](topic-experiences-discovery.md)|
-|<span data-ttu-id="f2435-116">Lär dig mer om ämne säkerhet</span><span class="sxs-lookup"><span data-stu-id="f2435-116">Learn about topic security</span></span>|[<span data-ttu-id="f2435-117">Ämnets säkerhet och integritet</span><span class="sxs-lookup"><span data-stu-id="f2435-117">Topic Experiences security and privacy</span></span>](topic-experiences-security-privacy.md)|
+|<span data-ttu-id="2210b-110">Läs mer om Viva-ämnen</span><span class="sxs-lookup"><span data-stu-id="2210b-110">Learn more about Viva Topics</span></span>|[<span data-ttu-id="2210b-111">Översikt över Microsoft Viva-ämnen</span><span class="sxs-lookup"><span data-stu-id="2210b-111">Microsoft Viva Topics overview</span></span>](topic-experiences-overview.md)|
+|<span data-ttu-id="2210b-112">Lär dig hur ämnen upptäcks och föreslås av AI</span><span class="sxs-lookup"><span data-stu-id="2210b-112">Learn how topics are discovered and suggested by AI</span></span>|[<span data-ttu-id="2210b-113">Upptäckt av Microsoft Viva Topics</span><span class="sxs-lookup"><span data-stu-id="2210b-113">Microsoft Viva Topics discovery</span></span>](topic-experiences-discovery.md)|
+|<span data-ttu-id="2210b-114">Läs mer om ämnessäkerhet</span><span class="sxs-lookup"><span data-stu-id="2210b-114">Learn about topic security</span></span>|[<span data-ttu-id="2210b-115">Säkerhet och sekretess för Microsoft Viva</span><span class="sxs-lookup"><span data-stu-id="2210b-115">Microsoft Viva security and privacy</span></span>](topic-experiences-security-privacy.md)|
 
 
-## <a name="adoption"></a><span data-ttu-id="f2435-118">Integrering</span><span class="sxs-lookup"><span data-stu-id="f2435-118">Adoption</span></span>
+## <a name="adoption"></a><span data-ttu-id="2210b-116">Integrering</span><span class="sxs-lookup"><span data-stu-id="2210b-116">Adoption</span></span>
 
-<span data-ttu-id="f2435-119">Läs mer om hur du använder och implementerar avsnitts upplevelser i organisationen för att hjälpa dig att lösa dina företags problem:</span><span class="sxs-lookup"><span data-stu-id="f2435-119">Learn more about how to use and implement Topic Experiences in your organization to help you solve your business problems:</span></span> 
+<span data-ttu-id="2210b-117">Läs mer om hur du använder och implementerar Viva-ämnen i din organisation för att hjälpa dig att lösa dina företagsproblem:</span><span class="sxs-lookup"><span data-stu-id="2210b-117">Learn more about how to use and implement Viva Topics in your organization to help you solve your business problems:</span></span> 
 
-| <span data-ttu-id="f2435-120">Om du letar efter den här informationen:</span><span class="sxs-lookup"><span data-stu-id="f2435-120">If you're looking for this information:</span></span> | <span data-ttu-id="f2435-121">Gå till den här resursen:</span><span class="sxs-lookup"><span data-stu-id="f2435-121">Go to this resource:</span></span> |
+| <span data-ttu-id="2210b-118">Om du letar efter den här informationen:</span><span class="sxs-lookup"><span data-stu-id="2210b-118">If you're looking for this information:</span></span> | <span data-ttu-id="2210b-119">Gå till den här resursen:</span><span class="sxs-lookup"><span data-stu-id="2210b-119">Go to this resource:</span></span> |
 |:-----|:-----|
-|<span data-ttu-id="f2435-122">Lär dig hur du börjar planera för att använda avsnitts upplevelser.</span><span class="sxs-lookup"><span data-stu-id="f2435-122">Learn how to start planning to use Topic Experiences.</span></span> |[<span data-ttu-id="f2435-123">Komma igång</span><span class="sxs-lookup"><span data-stu-id="f2435-123">Get started</span></span>](topics-adoption-getstarted.md)<br><br>|  
+|<span data-ttu-id="2210b-120">Lär dig hur du börjar planera för att använda Microsoft Viva.</span><span class="sxs-lookup"><span data-stu-id="2210b-120">Learn how to start planning to use Microsoft Viva.</span></span> |[<span data-ttu-id="2210b-121">Komma igång</span><span class="sxs-lookup"><span data-stu-id="2210b-121">Get started</span></span>](topics-adoption-getstarted.md)<br><br>|  
 
-## <a name="set-up-and-administration"></a><span data-ttu-id="f2435-124">Konfigurera och administrera</span><span class="sxs-lookup"><span data-stu-id="f2435-124">Set up and administration</span></span>
+## <a name="set-up-and-administration"></a><span data-ttu-id="2210b-122">Konfigurera och administrera</span><span class="sxs-lookup"><span data-stu-id="2210b-122">Set up and administration</span></span>
 
-<span data-ttu-id="f2435-125">Resurserna i det här avsnittet hjälper din administratör i organisationen att installera och konfigurera Microsoft SharePoint-Syntex i din Microsoft 365-miljö.</span><span class="sxs-lookup"><span data-stu-id="f2435-125">The resources in this section help your admin in your organization to set up and configure Microsoft SharePoint Syntex in your Microsoft 365 environment.</span></span>
+<span data-ttu-id="2210b-123">Resurserna i det här avsnittet hjälper administratören i organisationen att konfigurera Viva-ämnen i Microsoft 365-miljön.</span><span class="sxs-lookup"><span data-stu-id="2210b-123">The resources in this section help your admin in your organization to set up and configure Viva Topics in your Microsoft 365 environment.</span></span>
 
-| <span data-ttu-id="f2435-126">Om du letar efter den här informationen:</span><span class="sxs-lookup"><span data-stu-id="f2435-126">If you're looking for this information:</span></span> | <span data-ttu-id="f2435-127">Gå till den här resursen:</span><span class="sxs-lookup"><span data-stu-id="f2435-127">Go to this resource:</span></span> |
+| <span data-ttu-id="2210b-124">Om du letar efter den här informationen:</span><span class="sxs-lookup"><span data-stu-id="2210b-124">If you're looking for this information:</span></span> | <span data-ttu-id="2210b-125">Gå till den här resursen:</span><span class="sxs-lookup"><span data-stu-id="2210b-125">Go to this resource:</span></span> |
 |:-----|:-----|
-|<span data-ttu-id="f2435-128">Lär dig hur du konfigurerar och konfigurerar avsnitts upplevelser</span><span class="sxs-lookup"><span data-stu-id="f2435-128">Learn how to set up and configure Topic Experiences</span></span>|[<span data-ttu-id="f2435-129">Konfigurera ämnen</span><span class="sxs-lookup"><span data-stu-id="f2435-129">Set up Topic Experiences</span></span>](set-up-topic-experiences.md)|
-|<span data-ttu-id="f2435-130">Lär dig hur du konfigurerar användar behörigheter</span><span class="sxs-lookup"><span data-stu-id="f2435-130">Learn how to configure user permissions</span></span>|[<span data-ttu-id="f2435-131">Hantera ämnesbehörigheter</span><span class="sxs-lookup"><span data-stu-id="f2435-131">Manage topic permissions</span></span>](topic-experiences-user-permissions.md)|
-|<span data-ttu-id="f2435-132">Lär dig hur du hanterar vilka som kan se ämnen</span><span class="sxs-lookup"><span data-stu-id="f2435-132">Learn how to manage who can view topics</span></span>|[<span data-ttu-id="f2435-133">Hantera ämnes synlighet</span><span class="sxs-lookup"><span data-stu-id="f2435-133">Manage topic visibility</span></span>](topic-experiences-knowledge-rules.md)|
-|<span data-ttu-id="f2435-134">Lär dig att hantera identifierings inställningar</span><span class="sxs-lookup"><span data-stu-id="f2435-134">Learn how to manage your topic discovery settings</span></span>|[<span data-ttu-id="f2435-135">Hantera ämnesidentifiering</span><span class="sxs-lookup"><span data-stu-id="f2435-135">Manage topic discovery</span></span>](topic-experiences-discovery.md)|
+|<span data-ttu-id="2210b-126">Lär dig hur du konfigurerar Microsoft Viva</span><span class="sxs-lookup"><span data-stu-id="2210b-126">Learn how to set up and configure Microsoft Viva</span></span>|[<span data-ttu-id="2210b-127">Konfigurera Microsoft Viva</span><span class="sxs-lookup"><span data-stu-id="2210b-127">Set up Microsoft Viva</span></span>](set-up-topic-experiences.md)|
+|<span data-ttu-id="2210b-128">Lär dig hur du konfigurerar användarbehörigheter</span><span class="sxs-lookup"><span data-stu-id="2210b-128">Learn how to configure user permissions</span></span>|[<span data-ttu-id="2210b-129">Hantera ämnesbehörigheter</span><span class="sxs-lookup"><span data-stu-id="2210b-129">Manage topic permissions</span></span>](topic-experiences-user-permissions.md)|
+|<span data-ttu-id="2210b-130">Lär dig hur du hanterar vem som kan visa ämnen</span><span class="sxs-lookup"><span data-stu-id="2210b-130">Learn how to manage who can view topics</span></span>|[<span data-ttu-id="2210b-131">Hantera ämnes synlighet</span><span class="sxs-lookup"><span data-stu-id="2210b-131">Manage topic visibility</span></span>](topic-experiences-knowledge-rules.md)|
+|<span data-ttu-id="2210b-132">Lär dig hur du hanterar inställningar för identifiering av ämnen</span><span class="sxs-lookup"><span data-stu-id="2210b-132">Learn how to manage your topic discovery settings</span></span>|[<span data-ttu-id="2210b-133">Hantera ämnesidentifiering</span><span class="sxs-lookup"><span data-stu-id="2210b-133">Manage topic discovery</span></span>](topic-experiences-discovery.md)|
 
-## <a name="work-with-topics"></a><span data-ttu-id="f2435-136">Arbeta med ämnen</span><span class="sxs-lookup"><span data-stu-id="f2435-136">Work with topics</span></span>
+## <a name="work-with-topics"></a><span data-ttu-id="2210b-134">Arbeta med ämnen</span><span class="sxs-lookup"><span data-stu-id="2210b-134">Work with topics</span></span>
 
-<span data-ttu-id="f2435-137">Resurserna i det här avsnittet gör att användarna lär dig hur du använder och hanterar avsnitt.</span><span class="sxs-lookup"><span data-stu-id="f2435-137">The resources in this section help your users learn how to use and manage topics.</span></span>
+<span data-ttu-id="2210b-135">Resurserna i det här avsnittet hjälper användarna att lära sig att använda och hantera ämnen.</span><span class="sxs-lookup"><span data-stu-id="2210b-135">The resources in this section help your users learn how to use and manage topics.</span></span>
 
-| <span data-ttu-id="f2435-138">Om du letar efter den här informationen:</span><span class="sxs-lookup"><span data-stu-id="f2435-138">If you're looking for this information:</span></span> | <span data-ttu-id="f2435-139">Gå till den här resursen:</span><span class="sxs-lookup"><span data-stu-id="f2435-139">Go to this resource:</span></span> |
+| <span data-ttu-id="2210b-136">Om du letar efter den här informationen:</span><span class="sxs-lookup"><span data-stu-id="2210b-136">If you're looking for this information:</span></span> | <span data-ttu-id="2210b-137">Gå till den här resursen:</span><span class="sxs-lookup"><span data-stu-id="2210b-137">Go to this resource:</span></span> |
 |:-----|:-----|
-|<span data-ttu-id="f2435-140">Lär dig hur du arbetar med ämnen</span><span class="sxs-lookup"><span data-stu-id="f2435-140">Learn how to work with topics</span></span>|[<span data-ttu-id="f2435-141">Översikt över ämnescentret</span><span class="sxs-lookup"><span data-stu-id="f2435-141">Topic center overview</span></span>](topic-center-overview.md)<br><br>[<span data-ttu-id="f2435-142">Hantera ämnen</span><span class="sxs-lookup"><span data-stu-id="f2435-142">Manage topics</span></span>](manage-topics.md)<br><br>[<span data-ttu-id="f2435-143">Skapa ett nytt ämne</span><span class="sxs-lookup"><span data-stu-id="f2435-143">Create a new topic</span></span>](create-a-topic.md)<br><br>[<span data-ttu-id="f2435-144">Redigera ett befintligt ämne</span><span class="sxs-lookup"><span data-stu-id="f2435-144">Edit an existing topic</span></span>](edit-a-topic.md)<br><br>|
-|<span data-ttu-id="f2435-145">Förstå användar roller</span><span class="sxs-lookup"><span data-stu-id="f2435-145">Understand user roles</span></span>|[<span data-ttu-id="f2435-146">Avsnitts erfarenhets roller</span><span class="sxs-lookup"><span data-stu-id="f2435-146">Topic Experience roles</span></span>](topic-experiences-roles.md)|
-|<span data-ttu-id="f2435-147">Förstå varför ämnen kan skilja sig mellan olika användare</span><span class="sxs-lookup"><span data-stu-id="f2435-147">Understand why topics might differ to different users</span></span>|[<span data-ttu-id="f2435-148">Avsnittet får säkerhets trimning</span><span class="sxs-lookup"><span data-stu-id="f2435-148">Topic Experiences security trimming</span></span>](topic-experiences-security-trimming.md)|
-|<span data-ttu-id="f2435-149">Lär dig hur du förhindrar att vissa ämnen identifieras och visas</span><span class="sxs-lookup"><span data-stu-id="f2435-149">Learn how to prevent specific topics from being identified and viewed</span></span>|[<span data-ttu-id="f2435-150">Begränsa åtkomst till ämnen</span><span class="sxs-lookup"><span data-stu-id="f2435-150">Restrict access to topics</span></span>](restrict-access-to-topics.md)|
+|<span data-ttu-id="2210b-138">Lär dig hur du arbetar med ämnen</span><span class="sxs-lookup"><span data-stu-id="2210b-138">Learn how to work with topics</span></span>|[<span data-ttu-id="2210b-139">Översikt över ämnescentret</span><span class="sxs-lookup"><span data-stu-id="2210b-139">Topic center overview</span></span>](topic-center-overview.md)<br><br>[<span data-ttu-id="2210b-140">Hantera ämnen</span><span class="sxs-lookup"><span data-stu-id="2210b-140">Manage topics</span></span>](manage-topics.md)<br><br>[<span data-ttu-id="2210b-141">Skapa ett nytt ämne</span><span class="sxs-lookup"><span data-stu-id="2210b-141">Create a new topic</span></span>](create-a-topic.md)<br><br>[<span data-ttu-id="2210b-142">Redigera ett befintligt ämne</span><span class="sxs-lookup"><span data-stu-id="2210b-142">Edit an existing topic</span></span>](edit-a-topic.md)<br><br>[<span data-ttu-id="2210b-143">Hitta hjälpavsnitt med Microsoft Search</span><span class="sxs-lookup"><span data-stu-id="2210b-143">Find topics with Microsoft Search</span></span>](search.md)<br><br>|
+|<span data-ttu-id="2210b-144">Förstå användarroller</span><span class="sxs-lookup"><span data-stu-id="2210b-144">Understand user roles</span></span>|[<span data-ttu-id="2210b-145">Viva Topics-roller</span><span class="sxs-lookup"><span data-stu-id="2210b-145">Viva Topics roles</span></span>](topic-experiences-roles.md)|
+|<span data-ttu-id="2210b-146">Förstå varför ämnen kan skilja sig åt för olika användare</span><span class="sxs-lookup"><span data-stu-id="2210b-146">Understand why topics might differ to different users</span></span>|[<span data-ttu-id="2210b-147">Säkerhets trimning för Viva Topics</span><span class="sxs-lookup"><span data-stu-id="2210b-147">Viva Topics security trimming</span></span>](topic-experiences-security-trimming.md)|
+|<span data-ttu-id="2210b-148">Lär dig hur du kan förhindra att vissa avsnitt identifieras och visas</span><span class="sxs-lookup"><span data-stu-id="2210b-148">Learn how to prevent specific topics from being identified and viewed</span></span>|[<span data-ttu-id="2210b-149">Begränsa åtkomst till ämnen</span><span class="sxs-lookup"><span data-stu-id="2210b-149">Restrict access to topics</span></span>](restrict-access-to-topics.md)|
 
 
 
-## <a name="see-also"></a><span data-ttu-id="f2435-151">Se även</span><span class="sxs-lookup"><span data-stu-id="f2435-151">See Also</span></span>
+
