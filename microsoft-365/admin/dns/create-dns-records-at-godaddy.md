@@ -16,19 +16,18 @@ ms.collection:
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på GoDaddy för Microsoft.
-ms.openlocfilehash: fdd8688f848e676411e736a5be10a2d01dcce50b
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 2b53985dc17f3d124ec2b37dbf0047bce229385c
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658482"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126455"
 ---
 # <a name="create-dns-records-at-godaddy-for-microsoft"></a>Skapa DNS-poster på GoDaddy för Microsoft
 
@@ -55,7 +54,7 @@ Följ stegen nedan.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. Under **domäner** väljer du DNS under den domän som du vill redigera.
+2. Under **Domäner** väljer du DNS under den domän som du vill redigera.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -67,9 +66,9 @@ Följ stegen nedan.
 
     |**Record type** |**Värd**|**TXT Value**|**TTL** |
     |:-----|:-----|:-----|:-----|
-    |TXT (Text)|@|MS=ms *XXXXXXXX*<br>**Obs!** det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)|1 timme  <br>(Välj ett värde i list rutan.)|
+    |TXT (Text)|@|MS=ms *XXXXXXXX*<br>**Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)|1 timme  <br>(Välj ett värde i listrutan.)|
 
-      ![GoDaddy-BP-verify-1-0](../../media/dns/56526870-d6465780-651a-11e9-9cf0-d6fff71e2f62.png)
+      ![GoDaddy-BP-Verify-1-0](../../media/dns/56526870-d6465780-651a-11e9-9cf0-d6fff71e2f62.png)
 
 5. Välj **Spara**.
 
@@ -106,7 +105,7 @@ Följ stegen nedan.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. Under **domäner** väljer du DNS under den domän som du vill redigera.
+2. Under **Domäner** väljer du DNS under den domän som du vill redigera.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -120,11 +119,11 @@ Följ stegen nedan.
 
 5. I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
 
-    (Välj **TTL** -värdet i list rutan.)
+    (Välj **TTL-värdet** i listrutan.)
 
     |**Record type**|**Värd**|**Pekar på**|**Prioritet**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX (Mail Exchanger)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Obs!** Hämta ditt  *\<domain-key\>*  från ditt Microsoft-konto.           [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |10.3  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |1 timme  <br/> |
+    |MX (Mail Exchanger)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Obs!** Hämta ditt  *\<domain-key\>*  microsoft-konto.           [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |1 timme  <br/> |
 
 6. Välj **Spara**.
 
@@ -137,7 +136,7 @@ Följ stegen nedan.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. Under **domäner** väljer du DNS under den domän som du vill redigera.
+2. Under **Domäner** väljer du DNS under den domän som du vill redigera.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -154,7 +153,7 @@ Följ stegen nedan.
 
     I rutorna för den nya posten anger du eller kopierar och klistrar in värdena från den första raden i följande tabell.
 
-    (Välj **TTL** -värdet i list rutan.)
+    (Välj **TTL-värdet** i listrutan.)
 
     |**Record type**|**Värd**|**Pekar på**|**TTL**|
     |:-----|:-----|:-----|:-----|
@@ -166,13 +165,13 @@ Följ stegen nedan.
 
 
 
-6. Upprepa de här stegen för att lägga till nästa CNAME-post tills du har skapat alla sex av CNAME-posterna.
+6. Upprepa dessa steg för att lägga till nästa CNAME-post tills du har skapat alla sex CNAME-posterna.
 
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Lägga till en TXT-post för SPF för att förhindra skräppost
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. I stället kan du lägga till de Microsoft-värden som krävs i den aktuella posten så att du har en  *enda*  SPF-post som innehåller båda uppsättningar med värden.
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg istället till de obligatoriska Microsoft-värdena i den aktuella posten så att du har en  *enda*  SPF-post som innehåller båda uppsättningarna med värden.
 
 Följ stegen nedan.
 
@@ -180,7 +179,7 @@ Följ stegen nedan.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. Under **domäner** väljer du DNS under den domän som du vill redigera.
+2. Under **Domäner** väljer du DNS under den domän som du vill redigera.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -194,7 +193,7 @@ Följ stegen nedan.
 
 5. I rutorna för den nya posten skriver du in eller kopierar och klistrar in följande värden.
 
-    (Välj **TTL** -värdet i list rutorna.)
+    (Välj **TTL-värdet** i listrutan.)
 
     |**Record type**|**Värd**|**TXT Value**|**TTL**|
     |:-----|:-----|:-----|:-----|
@@ -214,7 +213,7 @@ Följ stegen nedan.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. Under **domäner** väljer du DNS under den domän som du vill redigera.
+2. Under **Domäner** väljer du DNS under den domän som du vill redigera.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -230,17 +229,17 @@ Följ stegen nedan.
 
     I rutorna för den nya posten anger du eller kopierar och klistrar in värdena från den första raden i följande tabell.
 
-    (Välj värdena **Record Type** och **TTL** i list rutorna.)
+    (Välj **posttyp** och **TTL-värden** i listrutan.)
 
     |**Record type**|**Namn**|**Mål**|**Protokoll**|**Tjänst**|**Prioritet**|**Vikt**|**Port**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Service)  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |9.1  <br/> |443  <br/> |1 timme  <br/> |
-    |SRV (Service)  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |9.1  <br/> |5061  <br/> |1 timme  <br/> |
+    |SRV (Service)  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 timme  <br/> |
+    |SRV (Service)  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 timme  <br/> |
 
     ![GoDaddy-BP-Configure-5-1](../../media/a1b15ab1-eb6a-4672-90d1-7ac3e0beb223.png)
 
 
-6. Upprepa **steg 5** för att skapa den andra SRV-posten.
+6. Upprepa **steg 5 för** att skapa den andra SRV-posten.
 
 7. Välj **Spara**.
 

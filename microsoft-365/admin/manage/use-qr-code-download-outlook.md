@@ -15,19 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Lär dig hur du använder en QR-kod för att autentisera och ladda ned Outlook Mobile.
-ms.openlocfilehash: 2d62a49b93fa7bd5f2d747525de7244e8014e6a7
-ms.sourcegitcommit: b8e9b2ecdc4927b67088c5fffb1585424c66fb10
+ms.openlocfilehash: b9e433e0c7d3f5f3466924b318e242e5ac29181c
+ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50050784"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50122378"
 ---
 # <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>Använda en QR-kod för att logga in på Outlook Mobile-apparna
 
 > [!IMPORTANT]
 > Den här Microsoft 365-funktionen är en offentlig förhandsversion. Offentlig förhandsversion ger tidig åtkomst till Microsoft 365-funktioner.
 
-Som Microsoft 365-administratör kan du låta användarna logga in på Outlook för Android- eller iOS-appen på sina mobila enheter utan att behöva ange sitt användarnamn och lösenord. Genom att skanna en QR-kod kan användare autentisera och logga in i Outlook Mobile på ett säkert sätt.
+Som Microsoft 365-administratör kan du låta användarna logga in på Outlook för Android- eller iOS-appen på sina mobila enheter utan att behöva ange sitt användarnamn och lösenord. Genom att skanna en QR-kod kan användarna autentisera och logga in på Outlook Mobile på ett säkert sätt.
 
 I Outlook på webben eller andra Outlook-skrivbordsprogram kanske användarna ser meddelanden om att de kan använda Outlook på sina mobila enheter. De här meddelandena kan hanteras av administratören med Exchange Powershell. Om användare väljer att själva skicka ett SMS för att ladda ned appen på sin mobila enhet visas en QR-kod på datorn. De kommer att kunna skanna QR-koden för att logga in i Outlook på sin telefon eller surfplatta. Den här QR-koden är ett kort löst token som bara kan lösas in en gång.
 
@@ -42,7 +42,7 @@ Den här upplevelsen är på som standard. Följ stegen nedan om du vill inaktiv
 2. Med PowerShell kan du inaktivera meddelanden som informerar användarna om Outlook-mobilapparna. Det förhindrar också att inloggningsflödet för QR-kod visas.
 
 ```powershell
-Set-Organization -MobileAppEducationEnabled <Boolean>
+Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
 ```
 
 Relaterade ämnen

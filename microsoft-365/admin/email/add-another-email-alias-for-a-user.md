@@ -15,7 +15,6 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
-- okr_smb
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Lär dig hur du kan ha fler än en e-postadress, ett så kallat e-postalias, som är kopplat till ditt Microsoft 365 för företag-konto. '
-ms.openlocfilehash: afb576a0499577b910fe3ed14eff75ae0a52b394
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 3c97640f4bb16876ec028a1af2b361a21a0decab
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114039"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126411"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Lägga till ytterligare ett e-postalias för en användare
 
@@ -111,7 +110,7 @@ Du måste ha [administratörsbehörighet för](../add-users/about-admin-roles.md
 
 6. Vänta 24 timmar för att de nya aliasen ska fyllas i i hela Microsoft 365. 
     
-    Användaren har nu en primär adress och ett alias. Till exempel kommer all e-post som skickats till ErnaCks primära adress, Eliza@NodPublishers.com, och hennes alias, Sales@NodPublishers.com, till Ernas inkorg.
+    Användaren har nu en primär adress och ett alias. Till exempel skickas all e-post till Erna Hanssons primära adress, Eliza@NodPublishers.com, och hennes alias, Sales@NodPublishers.com, till Ernas inkorg.
     
   
 7. **När användaren svarar kommer *från-adressen att*  vara hennes primära e-postalias.** Anta till exempel att ett meddelande skickas till Sales@NodPublishers.com och kommer till Ernas inkorg. När Erna besvarar meddelandet visas hennes primära e-postadress som avsändare, inte Sales@NodPublishers.com. 
@@ -142,7 +141,7 @@ Du måste ha [administratörsbehörighet för](../add-users/about-admin-roles.md
 
 6. Vänta 24 timmar för att de nya aliasen ska fyllas i i hela Microsoft 365. 
     
-    Användaren har nu en primär adress och ett alias. Till exempel skickas all e-post till Erna Hanssons primära adress, Eliza@NodPublishers.com, och hennes alias, Sales@NodPublishers.com, till Ernas inkorg.
+    Användaren har nu en primär adress och ett alias. Till exempel kommer all e-post som skickats till ErnaCks primära adress, Eliza@NodPublishers.com, och hennes alias, Sales@NodPublishers.com, till Ernas inkorg.
     
   
 7. **När användaren svarar kommer *från-adressen att*  vara hennes primära e-postalias.** Anta till exempel att ett meddelande skickas till Sales@NodPublishers.com och kommer till Ernas inkorg. När Erna besvarar meddelandet visas hennes primära e-postadress som avsändare, inte Sales@NodPublishers.com. 
@@ -153,7 +152,7 @@ Du måste ha [administratörsbehörighet för](../add-users/about-admin-roles.md
 ## <a name="did-you-get-a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>Fick du meddelandet "Det hittades ingen parameter som matchar parameternamnet E-postadresser"?
 
 
-Om du får felmeddelandet " Det gick inte att hitta en parameter som matchar **parameternamnet E-postadresser**" innebär det att det tar lite längre tid att slutföra klientorganisationen, eller den anpassade domänen om du nyligen lagt till en. Konfigurationen kan ta upp till 4 timmar. Vänta en stund så att konfigurationen hinner slutföras och försök sedan igen. Om problemet kvarstår kan du ringa supporten så att de kan göra en fullständig synkronisering åt dig.
+Om du får felmeddelandet " Det gick inte att hitta en parameter som matchar **parameternamnet E-postadresser**" innebär det att det tar lite längre tid att slutföra klientorganisationen eller den anpassade domänen om du nyligen har lagt till en. Konfigurationen kan ta upp till 4 timmar. Vänta en stund så att konfigurationen hinner slutföras och försök sedan igen. Om problemet kvarstår kan du ringa supporten så att de kan göra en fullständig synkronisering åt dig.
   
 ## <a name="did-you-purchase-your-subscription-from-godaddy-or-another-partner"></a>Har du köpt prenumerationen från GoDaddy eller från en annan partner?
 

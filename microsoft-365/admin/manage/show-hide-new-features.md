@@ -1,14 +1,31 @@
 ---
-rubrik: "Hantera vilka Office-funktioner som visas i Vad är nytt" f1.nyckelord:
-- NOCSH ms.author: danbrown författare: DHB-MSFT Manager: scotv audience: Admin ms.topic: article ms.service: o365-administration localization_priority: Normal ms.collection:
-- M365-prenumerationshantering
+title: Hantera vilka Office-funktioner som visas i Vad är nytt
+f1.keywords:
+- NOCSH
+ms.author: danbrown
+author: DHB-MSFT
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- M365-subscription-management
 - Adm_O365
-- Adm_TOC ms.custom: AdminSurgePortfolio search.appverid:
+- Adm_TOC
+ms.custom: AdminSurgePortfolio
+search.appverid:
 - BCS160
 - MET150
-- BESKRIVNING AV MOE150: "Avgör vilka Office-funktioner som ska visas eller döljas när en användare väljer Hjälp > Vad är nytt i Office-appen i Windows med hjälp av funktionen "Vad är nytt i Office" i administrationscentret för Microsoft 365."
+- MOE150
+description: Bestäm vilka Office-funktioner som ska visas eller döljas när en användare väljer Hjälp > Vad är nytt i Office-appen i Windows med hjälp av funktionen "Vad är nytt i Office" i administrationscentret för Microsoft 365.
+ms.openlocfilehash: d0b5bc3e643b306d9a38a707fed50ab546249c2b
+ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50122354"
 ---
-
 # <a name="manage-which-office-features-appear-in-whats-new"></a>Hantera vilka Office-funktioner som visas i Vad är nytt
 
 När en viktig Office-funktion släpps får användarna ett meddelande om det när de väljer Hjälp om vad som är nytt i  >   Office-appen i Windows.
@@ -39,7 +56,7 @@ Du kan också välja flera funktioner på sidan Hantera vilka **Office-funktione
 
 ## <a name="list-of-features"></a>Lista över funktioner
 
-Du kan filtrera vilka funktioner som visas på **sidan Hantera vilka Office-funktioner som visas på sidan Senaste.** Du kan filtrera efter kanal, program eller status, eller genom att välja en kombination av dem.
+Du kan filtrera vilka funktioner som visas på **sidan Hantera vilka Office-funktioner som visas på sidan Senaste.** Du kan filtrera efter kanal, program eller status, eller genom en kombination av dem.
 
 Nya funktioner visas på sidan enligt följande schema:
 

@@ -16,55 +16,54 @@ ms.collection:
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
-description: 'Hitta stegen här för att överföra en domän från Microsoft till en annan registrator. '
-ms.openlocfilehash: 1fb1fa50bd919bddb620a39d9edb46abb6710ba4
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 'Här hittar du stegen för att överföra en domän från Microsoft till en annan registrator. '
+ms.openlocfilehash: f34e9733ab53c8bdc6f4432c96e6232ecc26ee06
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645281"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126353"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>Överföra en domän från Microsoft till en annan värd
 
-Du kan inte överföra en Microsoft 365-domän till en annan registrator för 60 dagar efter att du har köpt domänen från Microsoft.
+Du kan inte överföra en Microsoft 365-domän till en annan registrator på 60 dagar efter att du har köpt domänen från Microsoft.
 
 > [!NOTE]
-> En _whois_-   fråga visar en Microsoft-köpt domän registrator som vilda Västeuropa Domains LLC. Men endast Microsoft bör kontaktas angående din Microsoft 365-köpta domän.
+> En _Whois-fråga_   visar en Microsoft-köpt domänregistrator som Wild West Domains LLC. Men det är bara Microsoft som kontaktas angående din köpta Microsoft 365-domän.
 
-Följ de här stegen för att få en kod på Microsoft 365 och gå sedan till den andra webbplatsen för domän registratorn för att konfigurera ditt domän namn till den nya registratorn.
+Följ dessa steg för att få en kod på Microsoft 365 och gå sedan till den andra domänregistratorns webbplats för att överföra domännamnet till den nya registratorn.
 
 ## <a name="transfer-a-domain"></a>Överföra en domän
 
-1. Gå till inställningar i administrations centret  **Settings**   >  **Domains**.
+1. Gå till Inställningsdomäner i   ****   >  **administrationscentret.**
 
-2. På sidan **domäner** väljer du den Microsoft 365-domän som du vill överföra till en annan domän registrator och väljer sedan **kontrol lera hälsa**.
+2. På sidan **Domäner** väljer du den Microsoft 365-domän som du vill överföra till en annan domänregistrator och väljer sedan **Kontrollera hälsa.**
 
-3. Högst upp på sidan väljer du **överför domän**.
+3. Välj Överför domän högst upp **på sidan.**
 
-4. På sidan **Välj var du vill överföra din domän** väljer du **en annan registrator**och klickar sedan på **Nästa**.
+4. Välj En **annan registrator** på sidan Välj vart domänöverföringen ska överföras och klicka sedan på **Nästa.**
 
-5. På sidan **Lås upp domän överföring** väljer ** _du_ > Lås upp överföring för <domänen**och väljer sedan **Nästa**.
+5. På sidan **Lås upp domänöverföring** väljer du **Lås upp överföring för <_domänen_ >** och sedan **Nästa.**
 
-6. Kontrol lera din domän överförings kontakt information och välj sedan **Nästa**.
+6. Kontrollera kontaktinformationen för domänöverföringen och välj **sedan Nästa.**
 
-7. Kopiera auktoriseringsregeln och vänta ungefär 30 minuter för din domän överförings status till **olåst för överföring** på fliken **registrering** innan du fortsätter med nästa steg.
+7. Kopiera auktoriseringskoden och vänta i ca 30 minuter på att  din domänöverföringsstatus ändras till **Olåst** för överföring på fliken Registrering innan du fortsätter med nästa steg.
 
-8. Gå till webbplatsen för den domän registrator som du vill hantera ditt domän namn på. Följ anvisningarna för att överföra en domän (Sök efter hjälp på webbplatsen). Det innebär vanligt vis att du betalar överförings avgifter och ger Authcode till den nya registratoren så att de kan initiera överföringen. Microsoft skickar dig ett e-postmeddelande för att bekräfta att vi har tagit emot överföringsbegäran och att domänen överförs inom fem dagar.
+8. Gå till webbplatsen för den domänregistrator som du vill hantera domännamnet i framtiden. Följ anvisningarna för att överföra en domän (sök efter hjälp på deras webbplats). Det innebär vanligtvis att betala överföringsavgifter och att ge autentiseringskoden till den nya registratorn så att de kan inleda överföringen. Microsoft skickar ett e-postmeddelande till dig för att bekräfta att vi har fått överföringsbegäran, och domänen kommer att överföras inom 5 dagar.
 
-    Fliken registrerings kod för **registrering** på sidan  **domäner** i Microsoft 365.
+    Du hittar fliken Registrering av **auktoriseringskod**  **på sidan** Domäner i Microsoft 365.
     
     > [!TIP]
-    > . uk-domäner kräver en annan procedur. Kontakta Microsoft support och be om en **IP-märkning** som stämmer överens med den registrator som du vill hantera domänen på. När märket ändras överförs domänen direkt till den nya registratorn. Sedan måste du arbeta med den nya registratorn för att slutföra överföringen, som troligen betalar överförings avgifter och lägga till den överförda domänen på ditt konto hos din nya registrator.
+    > För .uk-domäner krävs en annan procedur. Kontakta Microsoft Support och begär en **IPS-taggändring** så att den matchar registratorn som du vill hantera din domän i framtiden. När taggen ändras överförs domänen omedelbart till den nya registratorn. Du måste sedan arbeta med den nya registratorn för att slutföra överföringen, troliga överföringsavgifter och lägga till den överförda domänen på ditt konto med din nya registrator.
 
-9. När överföringen är färdig förnyar du din domän hos den nya domän registratorn.
+9. När överföringen är klar förnyar du domänen hos den nya domänregistratorn.
 
-10. Slutför processen genom att gå tillbaka till sidan **domäner** i administrations centret och sedan välja  **fullständig domän överföring**. Detta markerar domänen som att den inte längre är inköpt från Microsoft 365 och inaktiverar domän prenumerationen. Domänen tas inte bort från klienten och påverkar inte befintliga användare och post lådor på domänen.
+10. Slutför processen genom att gå tillbaka till **sidan** Domäner i administrationscentret och sedan välja   **Slutför domänöverföring.** Då markeras domänen som ej längre köpt från Microsoft 365 och domänprenumerationen inaktiveras. Den tar inte bort domänen från klientorganisationen och påverkar inte befintliga användare och postlådor på domänen.
 
 > [!NOTE]
-> Microsoft 365-köpta domäner är inte kvalificerat för namnserver ändringar eller överföring av domänen mellan Microsoft 365-organisationer. Om något av följande är obligatoriskt måste domän registreringen flyttas till en annan registrator.
+> Microsoft 365-köpta domäner är inte berättigade till namnserverändringar eller överföring av domänen mellan Microsoft 365-organisationer. Om detta krävs måste domänregistreringen överföras till en annan registrator.

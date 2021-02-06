@@ -15,14 +15,13 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 description: Administratörsroller mappar till affärsfunktioner och ger behörighet att utföra särskilda uppgifter i administrationscentret. Tjänstadministratören öppnar till exempel supportbegäranden hos Microsoft.
-ms.openlocfilehash: 767cd8dbb44da51f0d26844f761eee7d5862b753
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 48bb0f3d1a3a239025017fda261945094a3eda79
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432477"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126087"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Intune-administratörsroller i administrationscentret för Microsoft 365
 
