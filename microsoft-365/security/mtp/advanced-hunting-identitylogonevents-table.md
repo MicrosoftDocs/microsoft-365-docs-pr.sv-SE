@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1df1295b3386b94e3737c53ac8226c719c8bfa08
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 87ac6194374e8e042cf9d00271b17dd8bb785d64
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929928"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145361"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -54,7 +54,7 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `Protocol` | sträng | Nätverksprotokoll som används |
 | `FailureReason` | sträng | Information som förklarar varför den inspelade åtgärden misslyckades |
 | `AccountName` | sträng | Användarnamn för kontot |
-| `AccountDomain` | sträng | Domän för kontot |
+| `AccountDomain` | sträng | Domänen för kontot |
 | `AccountUpn` | sträng | Kontots huvudnamn (UPN) |
 | `AccountSid` | sträng | Säkerhetsidentifierare (SID) för kontot |
 | `AccountObjectId` | sträng | Unikt ID för kontot i Azure AD |
@@ -63,8 +63,10 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `DeviceType` | sträng | Typ av enhet |
 | `OSPlatform` | sträng | Operativsystemets plattform som körs på datorn. Detta indikerar specifika operativsystem, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7. |
 | `IPAddress` | sträng | IP-adress som tilldelats slutpunkten och som används under relaterad nätverkskommunikation |
+| `Port` | sträng | TCP-port som används under kommunikation |
 | `DestinationDeviceName` | sträng | Namn på den enhet som kör serverprogrammet som hanterade den inspelade åtgärden |
 | `DestinationIPAddress` | sträng | IP-adressen för den enhet som kör serverprogrammet som hanterade den inspelade åtgärden |
+| `DestinationPort` | sträng | Målport för relaterad nätverkskommunikation |
 | `TargetDeviceName` | sträng | Fullständigt kvalificerat domännamn (FQDN) för enheten som den inspelade åtgärden tillämpats på |
 | `TargetAccountDisplayName` | sträng | Visningsnamn för det konto som den inspelade åtgärden tillämpats på |
 | `Location` | sträng | Stad, land eller annan geografisk plats som är kopplad till händelsen |

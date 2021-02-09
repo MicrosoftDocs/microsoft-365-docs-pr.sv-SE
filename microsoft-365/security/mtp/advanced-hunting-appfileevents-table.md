@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 59e9affc53398f2a1b06fbab9774e4b53e146425
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 8406d1f9e3d56555b1699d191933c6f9735c9574
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932880"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145493"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -54,6 +54,7 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `Protocol` | sträng | Nätverksprotokoll som används |
 | `AccountName` | sträng | Användarnamn för kontot |
 | `AccountDomain` | sträng | Domän för kontot |
+| `AccountSid` | sträng | Säkerhetsidentifierare (SID) för kontot |
 | `AccountUpn` | sträng | Kontots huvudnamn (UPN) |
 | `AccountObjectId` | sträng | Unikt ID för kontot i Azure AD |
 | `AccountDisplayName` | sträng | Namnet på kontoanvändaren som visas i adressboken. Vanligtvis en kombination av ett visst namn eller förnamn, en mellaninititiering och ett efternamn eller efternamn. |
@@ -61,8 +62,10 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `DeviceType` | sträng | Typ av enhet | 
 | `OSPlatform` | sträng | Operativsystemets plattform som körs på enheten. Detta indikerar specifika operativsystem, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7. |
 | `IPAddress` | sträng | IP-adress som tilldelats slutpunkten och som används under relaterad nätverkskommunikation |
+| `Port` | sträng | TCP-port som används under kommunikation  |
 | `DestinationDeviceName` | sträng | Namn på den enhet som kör serverprogrammet som hanterade den inspelade åtgärden |
 | `DestinationIPAddress` | sträng | IP-adressen för den enhet som kör serverprogrammet som hanterade den inspelade åtgärden |
+| `DestinationPort` | sträng | Målport för relaterad nätverkskommunikation |
 | `Location` | sträng | Stad, land eller annan geografisk plats som är kopplad till händelsen |
 | `Isp` | sträng | Internet tjänstprovider (ISP) som är kopplad till slutpunktens IP-adress |
 | `ReportId` | long | Unikt ID för händelsen |

@@ -20,24 +20,22 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 48a0fe53cb92214d616887741c0c260edf1653c2
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: f39e8f77a53b018fdf9c96981524e12f9aface65
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928992"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145049"
 ---
 # <a name="emailevents"></a>EmailEvents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Gäller för:**
+
 - Microsoft 365 Defender
 
-
-
-Tabellen `EmailEvents` i det avancerade [utbildningsschemat](advanced-hunting-overview.md) innehåller information om händelser som innefattar bearbetning av e-postmeddelanden på Microsoft Defender för Office 365. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+Tabellen i det avancerade schemat för sökning innehåller information om händelser som innefattar bearbetning `EmailEvents` av e-postmeddelanden på Microsoft Defender för [](advanced-hunting-overview.md) Office 365. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!TIP]
 > Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` [inbyggda schemareferensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) som finns i säkerhetscentret.
@@ -47,44 +45,46 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Datum och tid då händelsen spelades in |
-| `EmailId` | sträng | Unik identifierare för e-post och mottagare |
 | `NetworkMessageId` | sträng | Unikt ID för e-postmeddelandet som genereras av Microsoft 365 |
 | `InternetMessageId` | sträng | Offentlig identifierare för e-postmeddelandet som anges av det avsändande e-postsystemet |
 | `SenderMailFromAddress` | sträng | Avsändarens e-postadress i sidhuvudet E-POST FRÅN, även kallat kuvertavsändaren eller Return-Path postadressen |
 | `SenderFromAddress` | sträng | Avsändarens e-postadress i sidhuvudet FRÅN, som visas för e-postmottagare i deras e-postklienter |
+| `SenderDisplayName` | sträng | Namnet på avsändaren som visas i adressboken, vanligtvis en kombination av ett visst namn eller ett förnamn, en initial för mellannamn och efternamn eller efternamn |
+| `SenderObjectId` | sträng |Unikt ID för avsändarens konto i Azure AD |
 | `SenderMailFromDomain` | sträng | Sender domain in the MAIL FROM header, also known as the envelope sender or the Return-Path address |
 | `SenderFromDomain` | sträng | Sender domain in the FROM header, which is visible to email recipients on their email clients |
 | `SenderIPv4` | sträng | IPv4-adressen för den senast identifierade e-postservern som vidarebefordrade meddelandet |
 | `SenderIPv6` | sträng | IPv6-adressen för den senast identifierade e-postservern som vidarebefordrade meddelandet |
 | `RecipientEmailAddress` | sträng | Mottagarens e-postadress eller e-postadress för mottagaren efter distributionslistans expansion |
+| `RecipientObjectId` | sträng | Unikt ID för e-postmottagaren i Azure AD |
 | `Subject` | sträng | E-postmeddelandets ämne |
 | `EmailClusterId` | sträng | Identifierare för gruppen av liknande e-postmeddelanden grupperade baserat på heuristisk analys av innehållet |
-| `EmailDirection` | sträng | E-postriktning i förhållande till ditt nätverk: Inkommande, Utgående, Årsorganisation |
+| `EmailDirection` | sträng | E-postriktning i förhållande till ditt nätverk: Inkommande, utgående, Årsbaserade |
 | `DeliveryAction` | sträng | Leveransåtgärd för e-postmeddelandet: Levererad, Skräppost, Blockerad eller Ersatt |
-| `DeliveryLocation` | sträng | Plats där e-postmeddelandet levererades: Inkorg/Mapp, Lokal/Extern, Skräppost, Karantän, Misslyckades, Nedsänt, Borttaget |
+| `DeliveryLocation` | sträng | Plats där e-postmeddelandet levererades: Inkorg/Mapp, Lokal/Extern, Skräppost, Karantän, Misslyckades, Släppt, Borttaget |
 | `PhishFilterVerdict` | sträng | Bedömning av e-postfiltreringsstacken på om e-postmeddelandet är phish: Phish eller Inte phish |
-| `PhishDetectionMethod` | sträng | Metod som används för att identifiera e-postmeddelandet som ett phish: Skadligt URL-rykte, Safe Links URL Detonation, Advanced Phish Filter, Allmänt phish-filter, Anti-Spoof: Intra-org, Anti-spoof: external domain, Domain impersonation, User Impersonation, Brand impersonation |
+| `PhishDetectionMethod` | sträng | Metod som används för att identifiera e-postmeddelandet som en phish: Skadligt URL-rykte, Safe Links URL Detonation, Advanced Phish Filter, Allmänt phish-filter, Anti-Spoof: Intra-org, Anti-spoof: external domain, Domain impersonation, User impersonation, Brand impersonation |
 | `MalwareFilterVerdict` | sträng | Information om e-postfiltreringsstacken på om e-postmeddelandet innehåller skadlig programvara: skadlig programvara, inte skadlig programvara |
 | `MalwareDetectionMethod` | sträng | Metod som används för att identifiera skadlig kod i e-postmeddelandet: Motor mot skadlig kod, ryktet Arkiv, Säkra bifogade filer |
+| `ThreatTypes` | sträng | Bedömning av e-postfiltreringsstacken på om e-postmeddelandet innehåller skadlig kod, nätfiske eller andra hot |
+| `ThreatNames` | sträng |Identifieringsnamn för skadlig programvara eller andra hot hittades |
+| `DetectionMethods` | sträng | Metoder som används för att identifiera skadlig kod, nätfiske eller andra hot som påträffas i e-postmeddelandet |
+| `ConfidenceLevel` | sträng | Lista över konfidensnivåer för skräppost- och nätfiskeförsök. För skräppost visar den här kolumnen konfidensnivån för skräppost (SCL), som anger om e-postmeddelandet hoppades över (-1), inte är skräppost (0,1), visar sig vara skräppost med måttligt förtroende (5,6) eller visar sig vara skräppost med högt förtroende (9). För nätfiske visar den här kolumnen om konfidensnivån är "Hög" eller "Låg". |
 | `EmailAction` | sträng | Sista åtgärd som vidtas på e-postmeddelandet baserat på filterbekräftelse, principer och användaråtgärder: Flytta meddelandet till skräppostmappen, Lägg till X-sidhuvud, Ändra ämne, Omdirigera meddelande, Ta bort meddelande, Skicka till karantän, Ingen åtgärd vidtas, Hemlig kopia-meddelande |
 | `EmailActionPolicy` | sträng | Åtgärdspolicy som verkställde: Skräppostskydd med hög säkerhet, skräppostskydd, massutskick av skräppost, nätfiskeskydd, nätfiske, skydd mot nätfiske, personifiering av nätfiskeanvändare, förfalskning mot nätfiske, personifiering mot nätfiske, skadlig programvara, säkra bifogade filer, ETR-regler (Enterprise Transport Rules) |
 | `EmailActionPolicyGuid` | sträng | Unikt ID för principen som avgör den slutliga e-poståtgärden |
 | `AttachmentCount` | int | Antal bifogade filer i e-postmeddelandet |
 | `UrlCount` | int | Antal inbäddade URL:er i e-postmeddelandet |
 | `EmailLanguage` | sträng | Upptäckt språk för e-postinnehållet |
-| `OrgLevelAction` | sträng | Åtgärder för e-postmeddelandet som svar på matchningar mot en princip som definierats på organisationsnivå |
-| `OrgLevelPolicy` | sträng | Organisationsprincip som utlöste e-postmeddelandets åtgärd |
-| `UserLevelAction` | sträng | Åtgärd som vidtas på e-postmeddelandet som svar på matchningar mot en postlådeprincip som definierats av mottagaren |
-| `UserLevelPolicy` | sträng | Postlådeprincip för slutanvändare som utlöste åtgärden för e-postmeddelandet |
 | `Connectors` | sträng | Anpassade instruktioner som definierar organisationens e-postflöde och hur e-posten har dirigerats |
-| `SenderDisplayName` | sträng | Namnet på avsändaren som visas i adressboken, vanligtvis en kombination av ett visst namn eller förnamn, en initial för mellannamn och efternamn eller efternamn |
-| `SenderObjectId` | sträng |Unikt ID för avsändarens konto i Azure AD |
-| `ThreatTypes` | sträng | Bedömning av e-postfiltreringsstacken på om e-postmeddelandet innehåller skadlig kod, nätfiske eller andra hot |
-| `ThreatNames` | sträng |Identifieringsnamn för skadlig programvara eller andra hot hittades |
-| `DetectionMethods` | sträng | Metoder som används för att identifiera skadlig kod, nätfiske eller andra hot som påträffas i e-postmeddelandet |
-
+| `OrgLevelAction` | sträng | Åtgärder för e-postmeddelanden som svar på matchningar mot en princip som definierats på organisationsnivå |
+| `OrgLevelPolicy` | sträng | Organisationsprincip som utlöste e-postmeddelandets åtgärd |
+| `UserLevelAction` | sträng | Åtgärd som vidtas på e-postmeddelandet som svar på matchningar mot en postlådeprincip som definieras av mottagaren |
+| `UserLevelPolicy` | sträng | Postlådeprincip för slutanvändare som utlöste åtgärden för e-postmeddelandet |
+| `ReportId` | long | Händelseidentifierare baserade på en återkommande räknare. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp. |
 
 ## <a name="related-topics"></a>Relaterade ämnen
+
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)

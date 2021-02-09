@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Läs om hur du planerar för Microsoft Viva-ämnen
-ms.openlocfilehash: 65983f342b3277d33c7bfeb21d8481b1d3d5e817
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 2f7b85399f0b1f49e25aae1f1d4627413594f618
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107960"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150484"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planera för Microsoft Viva-ämnen
 
@@ -34,7 +34,7 @@ Säkerheten och sekretessen för dina data respekteras och ämnesupplevelsen ger
 
 ## <a name="requirements"></a>Krav
 
-Du måste vara global administratör eller SharePoint-administratör för att få åtkomst till administrationscentret för Microsoft 365 och konfigurera ämnen.
+Du måste prenumerera [på Viva Topics](https://www.microsoft.com/microsoft-viva/topics) och vara global administratör eller SharePoint-administratör för att få åtkomst till administrationscentret för Microsoft 365 och konfigurera ämnen.
 
 Alla användare som kommer att använda Ämnen kräver en **licens för ämnesupplevelser.** Tilldelning av licenser omfattas av [Konfigurera Microsoft Viva-ämnen.](set-up-topic-experiences.md)
 
@@ -75,11 +75,11 @@ Du kan ange enskilda ämneshanterare, men vi rekommenderar att du skapar en säk
 
 Ämnesdeltagare är mästare och ämnesexperter i organisationen. De kan skapa och redigera ämnen. 
 
-Vi rekommenderar att du låter alla i organisationen skapa och redigera ämnen eftersom ämneserfarenheter fungerar bäst när alla användare kan dela information.
+Vi rekommenderar att du låter alla i organisationen skapa och redigera ämnen eftersom ämnesupplevelsen fungerar bäst när alla användare kan dela information.
 
 Om du vill begränsa skapandet och redigeringen av ämnen till specifika personer eller grupper, skapar du en säkerhetsgrupp för dem och anger den under installationen.
 
-Du kan välja att inte tillåta någon att bidra till ämnen, men det rekommenderas inte. Knowledge Managers kommer fortfarande att kunna redigera och skapa ämnen om du väljer det här alternativet.
+Du kan välja att inte tillåta att någon bidrar till ämnen, men det rekommenderas inte. Kunskapschefer kommer fortfarande att kunna redigera och skapa ämnen om du väljer det här alternativet.
 
 *Ämnes läsare*
 
@@ -91,7 +91,7 @@ När du inställningar för ämnes läsare kan du välja bland:
 - **Endast valda personer eller säkerhetsgrupper**
 - **Ingen**
 
-Vi rekommenderar **Alla i min organisation,** men om du kör ett pilottest kanske du bara vill välja vissa personer eller säkerhetsgrupper. Du kan också välja **Ingen om** du vill konfigurera Ämnen, men inte tillåta att andra ser ämnen ännu. (Kunskapshanterare har fortfarande åtkomst till att de kan visa ämnen och hjälpa till med beslutet att göra ämnen allmänt tillgängliga.)
+Vi rekommenderar **Alla i min organisation,** men om du kör ett pilottest kanske du bara vill välja valda personer eller säkerhetsgrupper. Du kan också välja **Ingen om** du vill konfigurera Ämnen, men inte tillåta att andra ser ämnen ännu. (Kunskapshanterare har fortfarande åtkomst till att visa ämnen och hjälpa till med beslutet att göra ämnen allmänt tillgängliga.)
 
 ## <a name="knowledge-rules"></a>Kunskapsregler
 
@@ -107,7 +107,7 @@ CSV-filen måste innehålla följande parametrar:
     - Delvis matchning: Du kan utesluta alla ämnen som innehåller ett visst ord.  En båge *utesluter* till exempel  alla ämnen där ordet båge finns, t.ex. arcuscirkel, arcus-arcus- eller *utbildningsbåge.*  Observera att den inte exkluderar ämnen där texten ingår som en del av ett ord, till exempel *arkitektur.*
 - **Står för (valfritt)**: (Kallas även *expansion)* Om du vill utesluta en förkortning skriver du orden som förkortningen står för.
 
-    ![Undanta ämnen i CSV-mall](../media/exclude-topics-csv.png) 
+    ![Utesluta ämnen i CSV-mall](../media/exclude-topics-csv.png) 
 
 Du kan kopiera CSV-mallen nedan:
 
@@ -117,11 +117,11 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## <a name="administration"></a>Administration
 
-När du ställer in ämnen, som en del av installationsprocessen, skapas ett ämnescenter automatiskt. Fundera på vad du vill ge ämnescentret och vad du vill att URL-adressen ska vara. Du kan ange både namn och URL-adress som en del av installationsprocessen och du kan ändra namn (men inte URL) senare i administrationscentret för Microsoft 365. Du kan bara ha ett ämnescenter.
+När du ställer in ämnen, som en del av installationsprocessen, skapas ett ämnescenter automatiskt. Fundera på vad du vill ge ämnescentret och vad du vill att URL-adressen ska vara. Du kan ange både namn och URL som en del av installationsprocessen och du kan ändra namn (men inte URL) senare i administrationscentret för Microsoft 365. Du kan bara ha ett ämnescenter.
 
 ## <a name="setup-checklist"></a>Checklista för installation
 
-När du ställer in ämnesupplevelser behöver du följande objekt när du går igenom installationsguiden:
+När du skapar ämnesupplevelser behöver du följande när du går igenom installationsguiden:
 
 > [!div class="checklist"]
 > * Lista över webbplatser som ska inkluderas eller undantas om de inte inkluderar alla webbplatser för identifiering av ämnen
@@ -129,7 +129,7 @@ När du ställer in ämnesupplevelser behöver du följande objekt när du går 
 > * Säkerhetsgrupp för ämnesdeltagare om inte alla användare kan skapa och redigera ämnen
 > * Säkerhetsgrupp för ämneskunskapershanterare om de inte tillåter att alla användare hanterar ämnen
 > * Lista över känsliga ämnen som inte ska upptäckas
-> * Ett namn på din ämnescenterwebbplats
+> * Ett namn på ämnescenterwebbplatsen
 
 ## <a name="see-also"></a>Se även
 

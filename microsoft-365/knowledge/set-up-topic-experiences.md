@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Lär dig konfigurera Microsoft Viva-ämnen
-ms.openlocfilehash: e8cfe1d849ba5df903f377fd001a8d067f80b608
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 6bd0d3eca653ae44e46b410ef3ac55fe11629a6b
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107945"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150506"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Konfigurera Microsoft Viva-ämnen
 
@@ -23,11 +23,11 @@ Du kan använda administrationscentret för Microsoft 365 för att konfigurera [
 
 Det är viktigt att planera det bästa sättet att konfigurera och konfigurera ämnen i din miljö. Läs Plan för [Microsoft Viva Topics innan du](plan-topic-experiences.md) börjar med procedurerna i den här artikeln.
 
-Du måste vara global administratör eller SharePoint-administratör för att få åtkomst till administrationscentret för Microsoft 365 och konfigurera ämnen.
+Du måste prenumerera [på Viva Topics](https://www.microsoft.com/microsoft-viva/topics) och vara global administratör eller SharePoint-administratör för att få åtkomst till administrationscentret för Microsoft 365 och konfigurera ämnen.
 
 ## <a name="video-demonstration"></a>Videodemonstration
 
-Den här videon visar processen för att konfigurera ämnen i Microsoft 365.
+I den här videon visas processen för att konfigurera ämnen i Microsoft 365.
 
 <br>
 
@@ -62,15 +62,15 @@ Så här ställer du in ämnen
 
     ![Undanta ämnen](../media/topics-excluded-by-name.png) 
 
-    (Kunskapshanterare kan också utesluta ämnen i ämnescentret efter upptäckten.)
+    (Knowledge managers can also exclude topics in the topic center after discovery.)
 
     #### <a name="how-to-exclude-topics-by-name"></a>Så här utesluter du ämnen efter namn    
 
-    Om du behöver utesluta ämnen ska du ladda ned CSV-mallen efter att ha valt Uteslut ämnen efter namn och uppdatera den med listan med ämnen som du inte vill ska visas i identifieringsresultaten.
+    Om du behöver utesluta ämnen ska du ladda ned CSV-mallen efter att ha valt Exkludera ämnen efter namn och uppdatera den med listan med ämnen som du inte vill ska få.
 
     ![Utesluta ämnen i CSV-mall](../media/exclude-topics-csv.png) 
 
-    Ange följande information i CSV-mallen om de ämnen du vill utesluta:
+    I CSV-mallen anger du följande information om de ämnen du vill utesluta:
 
     - **Namn:** Skriv namnet på det ämne som du vill utesluta. Du kan göra det på två sätt:
         - Exakt matchning: Du kan ta med det exakta namnet eller förkortningen (till exempel *Contoso* eller *ATL).*
@@ -78,11 +78,11 @@ Så här ställer du in ämnen
     - **Står för (valfritt)**: Om du vill utesluta en förkortning skriver du orden som förkortningen står för.
     - **MatchType-Exact/Partial:** Ange om namnet du angav var en *exakt eller* *delvis* matchningstyp.
 
-    När du har slutfört och sparat CSV-filen väljer du Bläddra **för att** hitta och markera den.
+    När du har slutfört och sparat CSV-filen väljer du Bläddra **för att** leta reda på och välja den.
     
     Välj **Nästa**.
 
-6. På sidan **Vilka som kan se ämnen och var kan de se dem** konfigurerar du avsnittets synlighet. I inställningen **Vem kan se ämnen** kan du välja vem som ska ha åtkomst till ämnesinformation, till exempel markerade ämnen, ämneskort, ämnessvar i sökningar och ämnessidor. Du kan välja:
+6. På sidan **Vilka som kan se ämnen och var de kan se dem** konfigurerar du avsnittets synlighet. I inställningen **Vem kan se ämnen** väljer du vilka som ska ha åtkomst till ämnesinformation, till exempel markerade ämnen, ämneskort, ämnessvar i sökningar och ämnessidor. Du kan välja:
     - **Alla i min organisation**
     - **Endast valda personer eller säkerhetsgrupper**
     - **Ingen**
@@ -115,9 +115,9 @@ Så här ställer du in ämnen
 
 10. På sidan **Granska och slutför** kan du titta på vald inställning och välja att göra ändringar. Om du är nöjd med dina val väljer du **Aktivera**.
 
-11. Sidan **Viva Ämnen som** aktiverats visas och bekräftar att systemet nu börjar analysera valda webbplatser för ämnen och skapa webbplatsen för ämnescenter. Välj **Klar**.
+11. Sidan **Aktiverade Viva-ämnen** visas och bekräftar att systemet nu börjar analysera valda webbplatser för ämnen och skapa webbplatsen för ämnescentret. Välj **Klar**.
 
-12. Då kommer du tillbaka till din **kunskapssida för personer med kontaktkunskap.** På den här sidan kan du välja **Hantera** om du vill göra ändringar i dina konfigurationsinställningar. 
+12. Då kommer du tillbaka till din **sida för att ansluta personer till kunskap.** På den här sidan kan du välja **Hantera** om du vill göra ändringar i dina konfigurationsinställningar. 
 
     ![Inställningar som används](../media/ksetup7.png)    
 
@@ -131,7 +131,7 @@ För att tilldela licenser:
 
 2. Markera de användare som du vill licensiera och klicka **på Licenser och program.**
 
-3. Kontrollera **att** sökning efter **Diagramkopplingar med Index och** **Viva-ämnen är** markerade under Program.
+3. Kontrollera **att** sökning efter **Diagramkopplingar med Index och Ämnesupplevelser** är markerade **under** Program.
 
 4. Klicka på **Spara ändringar**.
 

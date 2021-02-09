@@ -1,7 +1,7 @@
 ---
 title: Tabellen AADSpnSignInEventsBeta i det avancerade sökschemat
-description: Läs mer om information som är kopplad till Azure Active Directory-tjänstens huvudnamn och inloggningstabell för hanterade identiteter i det avancerade sökschemat
-keywords: avancerad sökning, hotsökning, sökning på cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, AviseringInfo, avisering, enheter, bevis, fil, IP-adress, enhet, dator, användare, konto, identitet, AAD
+description: Läs mer om information om azure Active Directory-tjänstens huvudnamn och inloggningshändelser för hanterade identiteter i det avancerade sökschemat
+keywords: avancerad sökning, hotsökning, cyberhot, skydd mot cyberhot, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, Aviseringinfo, avisering, enheter, bevis, fil, IP-adress, enhet, dator, användare, konto, identitet, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 172c400df3adea70a2e2d2e37547fa39e0d3b9cf
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3eba2459fd9a0af1963ca8d1446b22fc0b1bdb93
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928624"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145409"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -63,7 +63,7 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `ResourceId`           | sträng        | Unikt ID för den resurs som används                                                                                                      |
 | `ResourceTenantId`     | sträng        | Unikt ID för klientorganisationen för resursen som används                                                                                        |
 | `IPAddress`            | sträng        | IP-adress som tilldelats slutpunkten och som används under relaterad nätverkskommunikation                                                              |
-| `CountryCode`          | sträng        | Kod med två bokstäver som anger landet där klient-IP-adressen är geolokal                                                                |
+| `Country`          | sträng        | Kod med två bokstäver som anger landet där klient-IP-adressen är geolokal                                                                |
 | `State`                | sträng        | Delstat där inloggningen inträffade, om tillgänglig                                                                                                  |
 | `City`                 | sträng        | Ort där kontoanvändaren finns                                                                                                          |
 | `Latitude`             | sträng        | Koordinaterna för inloggningsplats för nord till syd                                                                                          |

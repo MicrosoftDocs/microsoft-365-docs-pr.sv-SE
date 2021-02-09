@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cb51d9b94cc500361f836f7ba8bc4fc290436805
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: cccbd268c8f69d6623df1ef4c8208d20ead2e9f5
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931332"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145313"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -35,7 +35,7 @@ ms.locfileid: "49931332"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Tabellen `DeviceFileEvents` i det avancerade [sökschemat](advanced-hunting-overview.md) innehåller information om att skapa filer, ändra filer och andra filsystemshändelser. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+Tabellen `DeviceFileEvents` i det avancerade [utbildningsschemat](advanced-hunting-overview.md) innehåller information om att skapa filer, ändra filer och andra filsystemshändelser. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!TIP]
 > Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` [inbyggda schemareferensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) som finns i säkerhetscentret.
@@ -56,9 +56,13 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `FileOriginUrl` | sträng | URL där filen laddades ned från |
 | `FileOriginReferrerUrl` | sträng | URL för webbsidan som länkar till den hämtade filen |
 | `FileOriginIP` | sträng | IP-adress där filen laddades ned från |
+| `PreviousFolderPath` | sträng | Originalmapp som innehåller filen innan den inspelade åtgärden tillämpades |
+| `PreviousFileName` | sträng | Det ursprungliga namnet på filen som ändrades på grund av åtgärden |
+| `FileSize` | long | Storlek på filen i byte |
 | `InitiatingProcessAccountDomain` | sträng | Domän för kontot som körde processen som ansvarar för händelsen |
 | `InitiatingProcessAccountName` | sträng | Användarnamnet för det konto som körde processen som ansvarar för händelsen |
 | `InitiatingProcessAccountSid` | sträng | Säkerhetsidentifierare (SID) för kontot som körde processen som ansvarar för händelsen |
+| `InitiatingProcessAccountUpn` | sträng | Användarens huvudnamn (UPN) för kontot som körde processen som ansvarar för händelsen |
 | `InitiatingProcessMD5` | sträng | MD5-hash för processen (bildfil) som initierade händelsen |
 | `InitiatingProcessSHA1` | sträng | SHA-1 för processen (bildfil) som initierade händelsen |
 | `InitiatingProcessSHA256` | sträng | SHA-256 för processen (bildfil) som initierade händelsen. Det här fältet fylls vanligtvis inte i – använd SHA1-kolumnen när den är tillgänglig. |
@@ -69,7 +73,7 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `InitiatingProcessCreationTime` | datetime | Datum och tid då processen som initierade händelsen startades |
 | `InitiatingProcessIntegrityLevel` | sträng | Integritetsnivån för processen som initierade händelsen. Windows tilldelar integritetsnivåer till processer baserat på vissa egenskaper, till exempel om de startades från en Internetnedladdning. De här integritetsnivåerna påverkar behörigheter för resurser |
 | `InitiatingProcessTokenElevation` | sträng | Tokentyp som anger närvaro eller frånvaro av UAC-behörighets ökning (User Access Control) som används för processen som initierade händelsen |
-| `InitiatingProcessParentId` | int | Process-ID (PID) för den överordnade process som avkortade processen som ansvarar för händelsen |
+| `InitiatingProcessParentId` | int | Process-ID (PID) för den överordnade process som hanterade processen som ansvarar för händelsen |
 | `InitiatingProcessParentFileName` | sträng | Namn på den överordnade process som gav upphov till processen som ansvarar för händelsen |
 | `InitiatingProcessParentCreationTime` | datetime | Datum och tid då den överordnade processen som ansvarar för händelsen startades |
 | `RequestProtocol` | sträng | Nätverksprotokoll, om tillämpligt, används för att starta aktiviteten: okänd, lokal, SMB eller NFS |
@@ -79,8 +83,10 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `RequestAccountName` | sträng | Användarnamn på konto som används för att starta aktiviteten på distans |
 | `RequestAccountDomain` | sträng | Domän för kontot som används för att starta aktiviteten via fjärren |
 | `RequestAccountSid` | sträng | Säkerhetsidentifierare (SID) för kontot som används för att starta aktiviteten på distans |
-| `ReportId` | long | Händelseidentifierare baserade på en återkommande räknare. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp |
+| `ReportId` | long | Händelseidentifierare baserade på en återkommande räknare. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp. |
 | `AppGuardContainerId` | sträng | Identifierare för den virtualiserade behållaren som används av Application Guard för att isolera webbläsaraktivitet |
+| `AdditionalFields` | sträng | Ytterligare information om entiteten eller händelsen |
+| `InitiatingProcessFileSize` | long | Storlek på filen som körde processen som ansvarar för händelsen |
 | `SensitivityLabel` | sträng | Etikett som används för ett e-postmeddelande, en fil eller annat innehåll för att klassificera det som informationsskydd |
 | `SensitivitySubLabel` | sträng | Underetikett som används för ett e-postmeddelande, en fil eller annat innehåll för att klassificera det som informationsskydd. känslighetsunderetiketter är grupperade under känslighetsetiketter men behandlas oberoende av varandra |
 | `IsAzureInfoProtectionApplied` | boolesk | Anger om filen krypteras med Azure Information Protection |

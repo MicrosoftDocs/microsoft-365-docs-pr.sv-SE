@@ -1,7 +1,7 @@
 ---
 title: Tabellen AlertEvidence i det avancerade sökschemat
 description: Läs mer om information som är kopplad till aviseringar i tabellen AlertEvidence i det avancerade sökschemat
-keywords: avancerad sökning, hotsökning, cyberhot, skydd mot cyberhot, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, Aviseringinfo, avisering, enheter, bevis, fil, IP-adress, enhet, dator, användare, konto
+keywords: avancerad sökning, hotsökning, sökning efter cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, AlertInfo, avisering, enheter, bevis, fil, IP-adress, enhet, dator, användare, konto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c01b0aae1eff3d9b4add632aff0f13cb56941a30
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 7457084d49c5a9fef4ef79abc7702c6b473efcd2
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932316"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145307"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -56,9 +56,10 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `RemoteIP` | sträng | IP-adress som var ansluten till |
 | `RemoteUrl` | sträng | URL eller fullständigt kvalificerat domännamn (FQDN) som var anslutet till |
 | `AccountName` | sträng | Användarnamn för kontot |
-| `AccountDomain` | sträng | Domän för kontot |
+| `AccountDomain` | sträng | Domänen för kontot |
 | `AccountSid` | sträng | Säkerhetsidentifierare (SID) för kontot |
 | `AccountObjectId` | sträng | Unikt ID för kontot i Azure Active Directory |
+| `AccountUpn` | sträng | Kontots huvudnamn (UPN) |
 | `DeviceId` | sträng | Unikt ID för enheten i tjänsten |
 | `DeviceName` | sträng | Fullständigt kvalificerat domännamn (FQDN) för datorn |
 | `LocalIP` | sträng | IP-adress tilldelad till den lokala enheten som används under kommunikation |
@@ -68,6 +69,9 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `Application` | sträng | Program som utförde den inspelade åtgärden |
 | `ProcessCommandLine` | sträng | Kommandorad som används för att skapa den nya processen |
 | `AdditionalFields` | sträng | Ytterligare information om händelsen i JSON-matrisformat |
+| `RegistryKey` |sträng | Registernyckel som den inspelade åtgärden tillämpades på |
+| `RegistryValueName` |sträng | Namn på registervärdet som den inspelade åtgärden tillämpats på |
+| `RegistryValueData` |sträng | Data för registervärdet som den inspelade åtgärden tillämpats på |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

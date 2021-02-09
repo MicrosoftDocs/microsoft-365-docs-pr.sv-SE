@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 376e54fb4bf5f07a1c821ff436ddc8ec7dd25812
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 6bd0e4fe3173fa899b0b9c86d6f85d724b52be3a
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931116"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145013"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 
@@ -52,20 +52,24 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `RegistryValueType` | sträng | Datatyp, till exempel binär eller sträng, för registervärdet som den inspelade åtgärden tillämpats på |
 | `RegistryValueName` | sträng | Namn på registervärdet som den inspelade åtgärden tillämpats på |
 | `RegistryValueData` | sträng | Data för registervärdet som den inspelade åtgärden tillämpats på |
+| `PreviousRegistryKey` | sträng | Den ursprungliga registernyckeln för registervärdet innan den ändrades |
 | `PreviousRegistryValueName` | sträng | Det ursprungliga namnet på registervärdet innan det ändrades |
 | `PreviousRegistryValueData` | sträng | Ursprungliga data för registervärdet innan det ändrades |
 | `InitiatingProcessAccountDomain` | sträng | Domän för kontot som körde processen som ansvarar för händelsen |
 | `InitiatingProcessAccountName` | sträng | Användarnamnet för det konto som körde processen som ansvarar för händelsen |
-| `InitiatingProcessAccountSid` | sträng | Säkerhetsidentifierare (SID) för det konto som körde processen som ansvarar för händelsen |
+| `InitiatingProcessAccountSid` | sträng | Säkerhetsidentifierare (SID) för kontot som körde processen som ansvarar för händelsen |
+| `InitiatingProcessAccountUpn` | sträng | Användarens huvudnamn (UPN) för det konto som körde processen som ansvarar för händelsen |
+| `InitiatingProcessAccountObjectId` | sträng | Azure AD-objekt-ID för användarkontot som körde processen som ansvarar för händelsen |
 | `InitiatingProcessSHA1` | sträng | SHA-1 för processen (bildfil) som initierade händelsen |
 | `InitiatingProcessSHA256` | sträng | SHA-256 för processen (bildfil) som initierade händelsen. Det här fältet fylls vanligtvis inte i – använd SHA1-kolumnen när den är tillgänglig. |
 | `InitiatingProcessMD5` | sträng | MD5-hash för processen (bildfil) som initierade händelsen |
 | `InitiatingProcessFileName` | sträng | Namn på processen som initierade händelsen |
+| `InitiatingProcessFileSize` | long | Storlek på filen som körde processen som ansvarar för händelsen |
 | `InitiatingProcessId` | int | Process-ID (PID) för processen som initierade händelsen |
 | `InitiatingProcessCommandLine` | sträng | Kommandorad som används för att köra processen som initierade händelsen |
 | `InitiatingProcessCreationTime` | datetime | Datum och tid då processen som initierade händelsen startades |
 | `InitiatingProcessFolderPath` | sträng | Mapp som innehåller den process (bildfil) som initierade händelsen |
-| `InitiatingProcessParentId` | int | Process-ID (PID) för den överordnade process som hanterade processen som ansvarar för händelsen |
+| `InitiatingProcessParentId` | int | Process-ID (PID) för den överordnade process som avkortade processen som ansvarar för händelsen |
 | `InitiatingProcessParentFileName` | sträng | Namn på den överordnade process som gav upphov till processen som ansvarar för händelsen |
 | `InitiatingProcessParentCreationTime` | datetime | Datum och tid då den överordnade processen som ansvarar för händelsen startades |
 | `InitiatingProcessIntegrityLevel` | sträng | Integritetsnivån för processen som initierade händelsen. Windows tilldelar integritetsnivåer till processer baserat på vissa egenskaper, till exempel om de startades från en Internetnedladdning. De här integritetsnivåerna påverkar behörigheter för resurser |

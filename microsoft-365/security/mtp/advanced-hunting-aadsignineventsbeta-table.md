@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b574717d0ba5621d85c8e73f36ddc72b062a1494
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 174db150920d2d95c043bb5d6e5a4593ea1ea39d
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931044"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145433"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -39,7 +39,7 @@ ms.locfileid: "49931044"
 
  
 
-Tabellen `AADSignInEventsBeta` i det avancerade utbildningsschemat innehåller information om interaktiva och icke-interaktiva inloggningar i Azure Active Directory. Läs mer om inloggningar i inloggningsrapporter [för Azure Active Directory – förhandsversion.](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins)
+Tabellen `AADSignInEventsBeta` i det avancerade utbildningsschemat innehåller information om interaktiva och icke-interaktiva inloggningar i Azure Active Directory. Läs mer om inloggningar i inloggningsrapporter [för Azure Active Directory - förhandsversion.](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins)
 
 Använd den här referensen för att skapa frågor som returnerar information från tabellen.
 Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference)
@@ -61,7 +61,7 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `AccountObjectId`                 | sträng        | Unikt ID för kontot i Azure AD                                                                                                                                       |
 | `AccountUpn`                      | sträng        | Kontots huvudnamn (UPN)                                                                                                                                            |
 | `IsExternalUser`                  | int        | Anger om användaren som loggat in är extern. Möjliga värden: -1 (inte angett) , 0 (inte extern), 1 (extern).                                                                   |
-| `IsGuestUser`                     | boolesk       | Anger om användaren som har loggat in är gäst i klientorganisationen                                                                                                                  |
+| `IsGuestUser`                     | boolesk       | Anger om användaren som loggat in är gäst i klientorganisationen                                                                                                                  |
 | `AlternateSignInName`             | sträng        | Lokalt användarhuvudnamn (UPN) för användaren som loggar in i Azure AD                                                                                                            |
 | `LastPasswordChangeTimestamp`     | datetime        | Datum och tid då användaren som loggade in senast ändrade sitt lösenord                                                                                                              |
 | `ResourceDisplayName`             | sträng        | Visningsnamn för resursen som har åtkomst                                                                                                                                               |
@@ -74,10 +74,10 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `IsManaged`                       | int       | Anger om enheten som initierade inloggningen är en hanterad enhet (1) eller inte en hanterad enhet (0)                                                                         |
 | `IsCompliant`                     | int       | Anger om enheten som initierade inloggningen är kompatibel (1) eller inte (0)                                                                                       |
 | `AuthenticationProcessingDetails` | sträng        | Information om autentiseringsprocessorn                                                                                                                                          |
-| `AuthenticationRequirement`       | sträng        | Typ av autentisering som krävs för inloggningen. Möjliga värden: multiFactorAuthentication (MFA var obligatoriskt) och enkelFactorAuthentication (ingen MFA var obligatoriskt).                |
-| `TokenIssuerType`                 | int        | Anger om token-utfärdaren är Azure Active Directory (0) eller Active Directory Federation Services (1)                                                                             |
+| `AuthenticationRequirement`       | sträng        | Typ av autentisering som krävs för inloggningen. Möjliga värden: multiFactorAuthentication (MFA) och enkelFactorAuthentication (ingen MFA var obligatoriskt).                |
+| `TokenIssuerType`                 | int        | Anger om tokenutfärdaren är Azure Active Directory (0) eller Active Directory Federation Services (1)                                                                             |
 | `RiskLevelAggregated`                       | int        | Aggregerad risknivå vid inloggning. Möjliga värden: 0 (aggregerad risknivå har inte angetts), 1 (ingen), 10 (låg), 50 (medium) eller 100 (hög).                               |
-| `RiskDetails`                      | int        | Information om riskabel status för den användare som loggade in                                                                                                                            |
+| `RiskDetails`                      | int        | Information om den riskfyllda statusen för den användare som loggade in                                                                                                                            |
 | `RiskState`                       | int        | Anger riskabelt användartillstånd. Möjliga värden: 0 (ingen), 1 (bekräftat kassaskåp), 2 (åtgärdat), 3 (avvisat), 4 (i riskabelt) eller 5 (bekräftad komprometterad).                                |
 | `UserAgent`                       | sträng        | Information om användaragenter från webbläsaren eller ett annat klientprogram                                                                                                             |
 | `ClientAppUsed`                   | sträng        | Anger klientappen som används                                                                                                                                                       |
@@ -85,7 +85,7 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `ConditionalAccessPolicies`       | sträng        | Information om villkorsstyrda åtkomstprinciper som tillämpas på inloggningshändelsen                                                                                                             |
 | `ConditionalAccessStatus`         | int        | Status för villkorsstyrda åtkomstprinciper som tillämpas på inloggningen. Möjliga värden är 0 (principer tillämpade), 1 (försök att använda principer misslyckades) eller 2 (principer tillämpas inte).      |
 | `IPAddress`                       | sträng        | IP-adress som tilldelats slutpunkten och som används under relaterad nätverkskommunikation                                                                                                  |
-| `CountryCode`                     | sträng        | Kod med två bokstäver som anger landet där klient-IP-adressen är geolokal                                                                                                    |
+| `Country`                     | sträng        | Kod med två bokstäver som anger landet där klient-IP-adressen är geolokal                                                                                                    |
 | `State`                           | sträng        | Delstat där inloggningen inträffade, om tillgänglig                                                                                                                                      |
 | `City`                            | sträng        | Ort där kontoanvändaren finns                                                                                                                                              |
 | `Latitude`                        | sträng        | Koordinaterna för inloggningsplats för nord till syd                                                                                                                              |

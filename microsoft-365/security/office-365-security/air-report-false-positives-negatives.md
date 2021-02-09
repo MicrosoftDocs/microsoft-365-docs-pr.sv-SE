@@ -1,9 +1,9 @@
 ---
-title: Rapportera falsk positiv eller falskt negativ efter en automatiserad undersökning i Microsoft Defender för Office 365
-description: Har något missats eller felaktigt upptäckts av AIR i Microsoft Defender för Office 365? Lär dig hur du skickar falska positiva eller falska negativa negativ till Microsoft för analys.
-keywords: automatiserad, undersökning, avisering, utlösare, åtgärd, reparation, falskt positivt, falskt negativt
+title: Rapportera falska positiva eller falska negativa tal efter en automatiserad undersökning i Microsoft Defender för Office 365
+description: Har något missats eller identifierats felaktigt av AIR i Microsoft Defender för Office 365? Lär dig hur du skickar falska positiva eller falska negativa tal till Microsoft för analys.
+keywords: automatiserad, undersökning, avisering, utlösare, åtgärd, falsk positiv, falsk negativ
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,88 +11,77 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 09/29/2020
+ms.date: 01/29/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom:
 - autoir
-ms.openlocfilehash: 0fe8891f5ea6af215791c5f4321a93667a9d58f0
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.openlocfilehash: 4ccc023a72ca450b1f0a433410206ccce59cb5f1
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616182"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142987"
 ---
-# <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Rapportera falskta positiva eller negativa negativ i den automatiska undersökningen och svars funktionerna
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
+# <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Hur du rapporterar falska positiva/negativa tal i automatiserad undersökning och svarsfunktioner
 
 **Gäller för:**
 - Microsoft Defender för Office 365
 
-Har [automatiserade undersökningar och svar (Air) i Office 365](automated-investigation-response-office.md) missats eller inte känner till något? Det finns några åtgärder du kan vidta för att åtgärda det. Du kan:
+Om automatisk undersökning och svar [(AIR) i Office 365](automated-investigation-response-office.md) missade eller felaktigt identifierat något finns det åtgärder som teamet kan vidta för att åtgärda det. Sådana åtgärder omfattar:
 
-- [Rapportera en falsk positiv/negativ till Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
-- [Justera dina meddelanden](#adjust-an-alert-to-prevent-false-positives-from-recurring) (vid behov); och
-- [Ångra reparations åtgärder som vidtogs](#undo-a-remediation-action).
+- [Rapportera ett falskt positivt/negativt värde till Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
+- [Justera aviseringar](#adjust-an-alert-to-prevent-false-positives-from-recurring) (vid behov). och
+- [Ångra åtgärder som har vidtas.](#undo-a-remediation-action)
 
 Använd den här artikeln som en guide.
 
-## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Rapportera en falsk positiv/negativ till Microsoft för analys
+## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Rapportera ett falskt positivt/negativt till Microsoft för analys
 
-Om luften i Microsoft Defender för Office 365 missade ett e-postmeddelande, en e-postbilaga, en URL i ett e-postmeddelande eller en URL i en Office-fil kan du [Skicka misstänkt skräp post, Phish, webb adresser och filer till Microsoft för Office 365-genomsökning](admin-submission.md).
+Om AIR i Microsoft Defender för Office 365 missade ett e-postmeddelande, en e-postbilaga, en URL-adress i ett e-postmeddelande eller en URL-adress i en Office-fil kan du skicka misstänkt [skräppost, phish, URL:er](admin-submission.md)och filer till Microsoft för Office 365-skanning.
 
-Du kan också [skicka en fil till Microsoft för analys av skadlig program vara](https://www.microsoft.com/wdsi/filesubmission).
+Du kan också [skicka en fil till Microsoft för analys av skadlig programvara.](https://www.microsoft.com/wdsi/filesubmission)
 
-## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Justera en avisering för att förhindra falsk negativ från återkommande
+## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Justera en avisering för att förhindra att falska positiva resultat upprepas
 
-Om en avisering utlöses av en legitim användning eller om aviseringen inte stämmer kan du [Hantera aviseringar i Cloud App Security-portalen](https://docs.microsoft.com/cloud-app-security/managing-alerts).
+Om en avisering utlöses av legitimt bruk eller om aviseringen är felaktig kan du hantera [aviseringar i Cloud App Security-portalen.](https://docs.microsoft.com/cloud-app-security/managing-alerts)
 
-Om din organisation använder [Microsoft Defender för slut punkt](https://docs.microsoft.com/windows/security/threat-protection) utöver Office 365 behandlas en fil, IP-adress, URL eller domän som skadlig program vara på en enhet, trots att det är säkert kan du [skapa en egen indikator med en "Tillåt"-åtgärd för enheten](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
+Om din organisation använder [Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection) för Slutpunkt utöver Office 365 och en fil, IP-adress, URL eller domän behandlas som skadlig programvara på en enhet, även om det är säkert, kan du skapa en anpassad indikator med åtgärden ["Tillåt"](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)för din enhet.
 
-## <a name="undo-a-remediation-action"></a>Ångra en åtgärd för reparation
+## <a name="undo-a-remediation-action"></a>Ångra en åtgärdsåtgärd
 
-I de flesta fall kan en reparations åtgärd vidtas i ett e-postmeddelande, en e-postbilaga eller en URL-adress, och objektet är egentligen inte ett hot, men din säkerhets åtgärds grupp återställer åtgärden och vidtar åtgärder för att förhindra att det falska positiva värdet för återkommande. Du kan antingen använda [Threat Explorer](#undo-an-action-using-threat-explorer) eller [fliken åtgärder för att få en undersökning](#undo-an-action-using-the-actions-tab-for-an-investigation) för att ångra en åtgärd.
+Om en åtgärdsåtgärd har vidtagits för ett e-postmeddelande, en e-postbilaga eller en URL,och objektet egentligen inte är ett hot, kan säkerhetsåtgärdsteamet i de flesta fall ångra åtgärden och vidta åtgärder för att förhindra att meddelandet felaktigt är återkommande. Du kan använda antingen [Hotutforskaren](#undo-an-action-using-threat-explorer) eller [fliken Åtgärder för en undersökning](#undo-an-action-in-the-action-center) för att ångra en åtgärd.
 
 > [!IMPORTANT]
-> Kontrol lera att du har nödvändig behörighet innan du försöker utföra följande uppgifter.
+> Kontrollera att du har de behörigheter som behövs innan du försöker utföra följande uppgifter.
 
-### <a name="undo-an-action-using-threat-explorer"></a>Ångra en åtgärd med hjälp av Threat Explorer
+### <a name="undo-an-action-using-threat-explorer"></a>Ångra en åtgärd med Hjälp av Hotutforskaren
 
-Med Threat Explorer kan säkerhets åtgärds gruppen Hitta ett e-postmeddelande som påverkas av en åtgärd och eventuellt ångra åtgärden.
+Med Threat Explorer kan ditt säkerhetsteam hitta ett e-postmeddelande som påverkas av en åtgärd och eventuellt ångra åtgärden.
 
-****
-
-|Ovanligt|Ångra-alternativ|Mer information|
+|Scenario|Ångra alternativ|Mer information|
 |---|---|---|
-|Ett e-postmeddelande dirigerades till en användares mapp för skräp post|<ul><li>Flytta meddelandet till användarens mapp för borttagna objekt</li><li>Flytta meddelandet till användarens inkorg</li><li>Ta bort meddelandet</li></ul>|[Hitta och undersöka skadlig e-post som har levererats i Office 365](investigate-malicious-email-that-was-delivered.md)|
-|Ett e-postmeddelande eller en fil sattes i karantän|<ul><li>Släpp e-postmeddelandet eller filen</li><li>Ta bort e-postmeddelandet eller filen</li></ul>|[Hantera meddelanden i karantän som administratör](manage-quarantined-messages-and-files.md)|
+|Ett e-postmeddelande har dirigerats till en användares skräppostmapp|- Flytta meddelandet till användarens borttagna objekt-mapp<br/>- Flytta meddelandet till användarens inkorg<br/>- Ta bort meddelandet|[Hitta och undersöka skadlig e-post som levererats i Office 365](investigate-malicious-email-that-was-delivered.md)|
+|Ett e-postmeddelande eller en fil har satts i karantän|- Släpp e-postmeddelandet eller filen<br/>- Ta bort e-postmeddelandet eller filen|[Hantera meddelanden i karantän som administratör](manage-quarantined-messages-and-files.md)|
 |
 
-### <a name="undo-an-action-using-the-actions-tab-for-an-investigation"></a>Ångra en åtgärd på fliken åtgärder för en undersökning
+### <a name="undo-an-action-in-the-action-center"></a>Ångra en åtgärd i Åtgärdscenter
 
-I åtgärds Center kan du se åtgärds åtgärder som vidtogs och eventuellt ångra åtgärden.
+I Åtgärdscenter kan du se åtgärder som har vidtagits och eventuellt ångra åtgärden.
 
-1. Gå till <https://protection.office.com> och logga in. Då kommer du till säkerhets & Compliance Center.
+1. Gå till Microsoft 365 säkerhetscenter ( [https://security.microsoft.com](https://security.microsoft.com) ).
+2. Välj Åtgärdscenter i **navigeringsfönstret.** 
+3. Välj fliken **Historik** för att visa listan över slutförda åtgärder.
+4. Markera ett objekt. Det utfällfönster som visas. 
+5. Välj Ångra i det utfällade **fönstret.** (Det är bara åtgärder som kan ångras som har **knappen Ångra.)**
 
-2. Gå till **Threat Management** \> **utredningar**.
+## <a name="see-also"></a>Se även
 
-3. I listan över undersökningar väljer du ikonen **Öppna i nytt fönster** bredvid ett objekts ID.
-
-4. Välj fliken **åtgärder** .
-
-5. Markera ett objekt som har statusen **slutförd** och leta efter en länk, till exempel **godkänd**, i kolumnen **beslut** . Då öppnas en utfällbar lista med mer information om åtgärden.
-
-6. Om du vill ångra åtgärden väljer du **ta bort reparation**.
-
-## <a name="related-articles"></a>Relaterade artiklar
-
-[Microsoft Defender för Office 365](office-365-atp.md)
-
-[LUFT i Microsoft Defender för Office 365](office-365-air.md)
+- [Microsoft Defender för Office 365](office-365-atp.md)
+- [Automatiserade undersökningar i Microsoft Defender för Office 365](office-365-air.md)

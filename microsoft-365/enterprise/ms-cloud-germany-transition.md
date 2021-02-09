@@ -19,19 +19,19 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Sammanfattning: Förstå migreringen från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterområdet.'
-ms.openlocfilehash: 28344f1249e4f51bb9802bf19ca7561182610a7c
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: d807637e9d5469131d3124d1ef8b6b1f874e81a1
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921604"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145421"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migrering från Microsoft Cloud Deutschland till Office 365-tjänster i de nya tyska datacenterområdena
 
 > [!NOTE]
 > Den här artikeln gäller endast för berättigade Microsoft Cloud Deutschland-kunder.
 
-I augusti 2018 meddelade Microsoft vår avsikt att tillhandahålla ett komplett Microsoft-moln – Azure, Office 365, Dynamics 365 och Power Platform – från nya molnområden i Tyskland för att förbättra våra kunders digitala omvandling. I augusti 2019 meddelade vi att vi nu håller på att öppna de nya molnområdena i Tyskland. Vi har sedan dess meddelat om tillgängligheten för Azure-, Office 365-, Dynamics 365- och Power-plattformen.
+I augusti 2018 meddelade Microsoft vår avsikt att tillhandahålla ett komplett Microsoft-moln – Azure, Office 365, Dynamics 365 och Power Platform – från nya molnområden i Tyskland för att möjliggöra en digital omvandling av våra kunder. I augusti 2019 meddelade vi att vi nu håller på att öppna de nya molnområdena i Tyskland. Vi har sedan dess meddelat om tillgängligheten för Azure- och Office 365-, Dynamics 365- och Power-plattformen.
 
 De nya regionerna är utformade för att tillgodose de föränderliga behoven hos tyska kunder med större behov, de senaste intelligenta molntjänsterna och fullständig anslutning till vårt molnnätverk för Microsoft 365-tjänster samt kunddata som finns i Tyskland.
 
@@ -69,7 +69,7 @@ I den här bilden visas de nio faserna av migreringen till de nya tyska datacent
 
 De här faserna startar [när du väljer att migrera.](https://aka.ms/office365germanymoveoptin) De flesta av migreringsfaserna utförs som tjänståtgärder i backend med minimal kundinteraktion som krävs och körs en fas efter den andra. Start för ytterligare kundledda uppgifter och övergripande migreringsstatus meddelas via meddelandecentret i administrationscentret för Microsoft 365 under migreringsprocessen. Exempel på uppgifter kan vara DNS-uppdateringar som hanteras av kunder, konfiguration av hybridkonfiguration för Exchange-hybridkunder eller Azure-migrering.
 
-Migreringen påbörjas inte direkt när anmälning sker. Organisationen läggs till i listan över klientorganisationar som är schemalagda för senare migrering. Du kan börja på de här faserna eftersom de är viktiga för att säkerställa en lyckad migrering och användning vid slutförande:
+Migreringen påbörjas inte direkt när anmälning sker. Organisationen läggs till i listan över klientorganisationar som är schemalagda för senare migrering. Du kan börja faserna före arbetet nu eftersom dessa är viktiga för att säkerställa en lyckad migrering och användning vid slutförande:
 
 - [Åtgärder och påverkan i migreringsfaser](ms-cloud-germany-transition-phases.md)
 - [Ytterligare förarbete](ms-cloud-germany-transition-add-pre-work.md)
@@ -91,20 +91,20 @@ Du får ett meddelande om migreringens förlopp med inlägg i Meddelandecenter. 
 - Exchange-migrering slutförd
 - Skype för företag har slutförts
 - Dynamics är klar
-- Power BI slutfört
+- Power BI har slutförts
 - Den slutliga övergången av tjänster är slutförd
 
 ## <a name="moving-to-the-new-german-datacenter-regions"></a>Flytta till de nya tyska datacenterområdena
 
-Befintliga Microsoft Cloud Deutschland-kunder kan nu börja migrera sina Office 365-, Dynamics 365 Customer Engagement- och Power-plattformstjänster. Det första steget är att [registrera dig för en Microsoft-ledd migrering till](https://aka.ms/office365germanymoveoptin) våra nya tyska datacenterområden. När du förnyar prenumerationen anmäler du dig automatiskt till en Microsoft-assisterad migrering. Microsoft meddelar kundens innehavaradministratörer via e-post och i meddelandecentret i administrationscentret för Microsoft 365 när detta har hänt. Men om du föredrar att starta processen nu kan du [anmäla dig](https://aka.ms/office365germanymoveoptin) direkt i administrationscentret för Microsoft 365 idag. Migreringarna beräknas påbörjas i början av 2021 och slutförs senast den 29 oktober 2021. 
+Befintliga Microsoft Cloud Deutschland-kunder kan nu börja migrera sina Office 365-, Dynamics 365 Customer Engagement- och Power-plattformstjänster. Det första steget är att [registrera dig för en Microsoft-ledd migrering till](https://aka.ms/office365germanymoveoptin) våra nya tyska datacenterområden. När du förnyar prenumerationen anmäler du dig automatiskt till en Microsoft-assisterad migrering. Microsoft meddelar kundens innehavaradministratörer via e-post och i meddelandecentret i administrationscentret för Microsoft 365 när detta har hänt. Men om du föredrar att starta processen nu kan du [anmäla dig](https://aka.ms/office365germanymoveoptin) direkt i administrationscentret för Microsoft 365 idag. Migreringarna beräknas starta i början av 2021 och slutförs senast den 29 oktober 2021. 
 
-På grund av migreringen flyttas basdata för kunder och prenumerationer till de nya tyska datacenterområdena.
+På grund av migreringen flyttas basdata och prenumerationer till de nya tyska datacenterområdena.
 
 ## <a name="how-to-prepare-for-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Förbereda migrering till Office 365-tjänster i de nya tyska datacenterområdena
 
 Det första steget är att meddela Microsoft så att vi har ditt tillstånd att migrera din prenumeration och dina data från Microsoft Cloud Deutschland till Office 365-tjänster i de nya tyska datacenterområdena. Se processen för [att registrera dig för instruktioner](https://aka.ms/office365germanymoveoptin) och observera att:
 
-- Alla kunder som migrerar måste verifiera anslutningen till Office 365 Services [Office 365-URL:er](urls-and-ip-address-ranges.md)och IP-adresser, som omfattar de nya tyska datacenterområdena. Inaction kan resultera i tjänst- och klientfel.
+- Alla migrerande kunder behöver verifiera anslutningen till Office 365 Services [Office 365-URL:er](urls-and-ip-address-ranges.md)och IP-adresser, som omfattar de nya tyska datacenterområdena. Inaction kan resultera i tjänst- och klientfel.
 - Granska listan med [aktiviteter före arbetet för](ms-cloud-germany-transition-add-pre-work.md) att säkerställa att organisationen är informerad och redo för ändringarna.
 - Läs tjänstbeskrivningen för Office 365-plattformen för att förstå vilka funktioner och tjänster som blir tillgängliga för din organisation efter migreringen till den tyska regionen.
 - Utvärderingsprenumerationer migreras inte och blockerar migreringen av alla betalda prenumerationer. Du måste avbryta utvärderingsversioner eller konvertera till betalda prenumerationer innan migreringen påbörjas.
@@ -205,13 +205,13 @@ Om du har Azure med Office 365, Dynamics 365 eller Power BI måste du följa mig
 
 **Dynamics 365 och Power BI**
 
-Välj till den Microsoft-drivna migreringen av [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) och Power BI [idag.](https://aka.ms/PBIOptIn) När vi är redo att starta migreringen meddelar vi dig via meddelandecentret i administrationscentret för Microsoft 365.
+Välj till den Microsoft-drivna migreringen för [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) och Power BI [idag.](https://aka.ms/PBIOptIn) När vi är redo att starta migreringen meddelar vi dig via meddelandecentret i administrationscentret för Microsoft 365.
 
 ### <a name="will-the-price-change-for-the-office-365-services-that-i-use"></a>Ändras priset för Office 365-tjänsterna som jag använder?
 
 Ja. Priserna i Microsoft&#39;globala molnområdena (inklusive de nya datacenterområdena) är i allmänhet lägre.
 
-### <a name="during-the-subscription-migration-what-skus-and-licenses-will-be-applied-to-my-organization-and-users"></a>Vilka SKU:er och licenser kommer att tillämpas på min organisation och mina användare under prenumerationsmigrering?
+### <a name="during-the-subscription-migration-what-skus-and-licenses-will-be-applied-to-my-organization-and-users"></a>Vilka SKU:er och licenser kommer att tillämpas för min organisation och mina användare under prenumerationsmigrering?
 
 Under migreringen från Microsoft Cloud Deutschland till Office 365-tjänsterna ersätts tjänstspecifika Tyskland-SKU:er med globala versioner av samma eller liknande SKU. I de flesta fall är SKU:n för Office 365-tjänster desamma, men det finns få ersättningstjänster där SKU i Tyskland inte längre är tillgänglig i Office 365-tjänsterna. Om du vill uppdatera den SKU som tilldelats din organisation efter migreringen kontaktar du din säljare för att lägga till eller ändra de tjänster som tilldelats.
 
@@ -219,7 +219,7 @@ Under migreringen från Microsoft Cloud Deutschland till Office 365-tjänsterna 
 | --- | --- |
 | Customer Lockbox \_ DE (LOCKBOX \_ DE) | Customer Lockbox (LOCKBOX) |
 | Dynamics 365 Enterprise Edition – Ytterligare databaslagring \_ DE (CRMSTORAGE \_ DE) | Dynamics 365 Enterprise Edition – Ytterligare databaslagring (CRMSTORAGE) |
-| Dynamics 365 Enterprise Edition – Ytterligare icke-produktionsinstans \_ DE (CRMTESTINSTANCE \_ DE) | Dynamics 365 Enterprise Edition – ytterligare icke-produktionsinstans (CRMTESTINSTANCE) |
+| Dynamics 365 Enterprise Edition – ytterligare icke-produktionsinstans \_ DE (CRMTESTINSTANCE \_ DE) | Dynamics 365 Enterprise Edition – ytterligare icke-produktionsinstans (CRMTESTINSTANCE) |
 | Dynamics 365 for Customer Service Enterprise Edition \_ DE (DYN365 \_ ENTERPRISE \_ CUSTOMER \_ SERVICE \_ DE) | Dynamics 365 for Customer Service Enterprise Edition (DYN365 \_ ENTERPRISE \_ CUSTOMER \_ SERVICE) |
 | Dynamics 365 for Sales Enterprise Edition \_ DE (DYN365 \_ ENTERPRISE \_ SALES \_ DE) | Dynamics 365 for Sales Enterprise Edition (DYN365 \_ ENTERPRISE \_ SALES) |
 | Dynamics 365 for Team Members Enterprise Edition \_ DE (DYN365 \_ ENTERPRISE \_ TEAM \_ MEMBERS \_ DE) | Dynamics 365 for Team Members Enterprise Edition (DYN365 \_ ENTERPRISE \_ TEAM \_ MEMBERS) |
@@ -236,8 +236,8 @@ Under migreringen från Microsoft Cloud Deutschland till Office 365-tjänsterna 
 | Microsoft 365 Business Standard (O365 \_ BUSINESS \_ PREMIUM) | Microsoft 365 Business Standard (O365 \_ BUSINESS \_ PREMIUM) |
 | Microsoft Dynamics CRM Online Instance \_ DE (CRMINSTANCE \_ DE) | Microsoft Dynamics CRM Online-instans (CRMINSTANCE) |
 | Office 365 A1 för lärare \_ och andra (STANDARDWOFFPACK \_ FACULTY \_ DE) | Office 365 A1 för lärare (STANDARDWOFFPACK \_ FACULTY) |
-| Office 365 A1 för studenter \_ DE (STANDARDWOFFPACK \_ STUDENT \_ DE) | Office 365 A1 för studenter (STANDARDWOFFPACK \_ STUDENT) |
-| Office 365 Advanced Compliance \_ DE (EQUIVIO \_ ANALYTICS \_ DE) | Microsoft 365 E5 efterlevnad \_ \_ (INFORMATIONSSKYDDSEFTERLEVNAD) |
+| Office 365 A1 för students \_ DE (STANDARDWOFFPACK \_ STUDENT \_ DE) | Office 365 A1 för studenter (STANDARDWOFFPACK \_ STUDENT) |
+| Office 365 Advanced Compliance \_ DE (EQUIVIO \_ ANALYTICS \_ DE) | Microsoft 365 E5 efterlevnad \_ \_ (INFORMATIONSSKYDD) |
 |Microsoft Defender för Office 365 (abonnemang 1) \_ DE (ATP \_ ENTERPRISE \_ DE) |Microsoft Defender för Office 365 (abonnemang 1) (ATP \_ ENTERPRISE) |
 | Office 365 Business Essentials \_ DE (O365 \_ BUSINESS \_ ESSENTIALS \_ DE) | Microsoft 365 Business Basic (O365 \_ BUSINESS \_ ESSENTIALS) |
 | Office 365 Business Premium \_ DE (O365 \_ BUSINESS \_ PREMIUM \_ DE) | Microsoft 365 Business Standard (O365 \_ BUSINESS \_ PREMIUM) |
@@ -249,7 +249,7 @@ Under migreringen från Microsoft Cloud Deutschland till Office 365-tjänsterna 
 | Office 365 Enterprise E3 \_ DE (ENTERPRISEPACK \_ DE) | Office 365 Enterprise E3 (ENTERPRISEPACK) |
 | Office 365 Extra Fillagring \_ DE (SHAREPOINTSTORAGE \_ DE) | Office 365 Extra fillagring (SHAREPOINTSTORAGE) |
 | Office 365 F1 \_ DE (DESKLESSPACK \_ DE) | Office 365 F1 (DESKLESSPACK) |
-| Office 365 ProPlus för lärare \_ och andra (OFFICESUBSCRIPTION \_ FACULTY \_ DE) | Office 365 ProPlus för lärare (OFFICESUBSCRIPTION \_ FACULTY) |
+| Office 365 ProPlus för lärare och andra \_ (OFFICESUBSCRIPTION \_ FACULTY \_ DE) | Office 365 ProPlus för lärare (OFFICESUBSCRIPTION \_ FACULTY) |
 | Office 365 ProPlus för Studenter \_ DE (OFFICESUBSCRIPTION \_ STUDENT \_ DE) | Office 365 ProPlus för studenter (OFFICESUBSCRIPTION \_ STUDENT) |
 | Office 365 ProPlus \_ DE (OFFICESUBSCRIPTION \_ DE) | Office 365 ProPlus (OFFICESUBSCRIPTION) |
 | OneDrive för företag (abonnemang 1) \_ DE (WACONEDRIVESTANDARD \_ DE) | OneDrive för företag (abonnemang 1) (WACONEDRIVESTANDARD) |
@@ -282,6 +282,52 @@ Om du har frågor kan du kontakta oss eller din partner:
 - För Azure kan du skicka in [nya supportbegäranden](https://portal.microsoftazure.de/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) i Azure Portal.
 - För Office 365 kan du skicka frågor med hjälp av länken Behöver du hjälp? i administrationscentret för &quot; &quot; Microsoft [365.](https://portal.office.de/)
 - Om du är Dynamics 365 Customer Engagement- och Power BI-kund och även har Office 365 kan du skicka frågor med hjälp av länken Behöver du hjälp? i administrationscentret för &quot; &quot; Microsoft [365.](https://portal.office.de/) Supportalternativ för Dynamics 365 Kundsupport finns [här.](https://docs.microsoft.com/dynamics365/get-started/support/) Supportalternativ för Power BI finns [här.](https://powerbi.microsoft.com/support/)
+
+### <a name="my-customer-already-has-a-m365-tenant-in-the-global-microsoft-cloud-in-addition-to-a-microsoft-cloud-deutschland-tenant-can-these-two-tenants-be-merged-into-one-as-part-of-the-migration"></a>Min kund har redan en M365-klientorganisation i det globala Microsoft-molnet utöver en Microsoft Cloud Deutschland-klientorganisation. Kan de här två innehavarna slås ihop till en som en del av migreringen?
+
+Nej, det finns ingen möjlighet till sammanslagning av klientorganisationen. Klientorganisationen förblir separat och unik eftersom varje klientorganisation har ett eget namnområde och ett unikt ID. Microsoft migrerar en Microsoft Cloud Deutschland-klientorganisation till det globala molnet om så önskas eller så kan kunden avbryta och avbryta den.
+
+
+### <a name="what-actions-are-required-to-be-done-by-most-end-users-as-part-of-the-migration"></a>Vilka åtgärder krävs för de flesta slutanvändare som en del av migreringen?
+Migreringen har utformats för att ha minimal påverkan på slutanvändare/kunder.
+- Kontrollera att Office-programmen kör de senaste tillgängliga versionerna. 
+- Kunder som använder Skype för företag går över till Teams som en del av migreringen och kan behöva [ladda ned och installera Teams](https://docs.microsoft.com/deployoffice/teams-install) på enheter.
+- Slutanvändarna kan behöva logga ut från Office-programmen och logga in igen när migreringen är klar. 
+- Kunder som kör synkroniseringsklienten för OneDrive måste logga ut från sin arbetsstation och logga in igen för att oneDrive-synkroniseringsklienten ska kunna logga in på den globala Azure Active Directory-tjänsten.
+- Var uppmärksam på nya globala URL:er när migreringen är slutförd, den största är outlook Web Access (exempel: använd outlook.office365.com). SharePoint Online-klienter fortsätter att ansluta till MCD-namnområdet med hjälp av den befintliga URL-adressen (exempel: contoso.sharepoint.de).
+
+
+### <a name="which-customers-are-affected-by-the-azure-active-directory-migration"></a>Vilka kunder påverkas av Azure Active Directory-migreringen? 
+
+Alla Office365-kunder är beroende av Azure Active Directory för att autentisera och lagra viktiga tjänstkomponenter som behövs för att Microsofts värdtjänster ska kunna tillhandahållas. 
+
+
+### <a name="what-are-the-impacts-of-the-azure-active-directory-migration"></a>Vilka blir effekterna av Azure Active Directory-migreringen?
+
+Den första migreringen av Azure Active Directory i den tidiga fasen påverkar inte kundupplevelsen. Efter den sista migreringen är alla tjänster för kundens klientorganisation helt i den globala tjänsten. Efter den här sista fasen kan Azure Active Directory-tjänsten i Microsoft Cloud Deutschland inte längre acceptera auktoriseringsförfrågningar eller tillhandahålla åtkomsttoken till Office-tjänster.
+
+
+### <a name="what-does-it-mean-to-ensure-network-connectivity-to-office-365-services-urls-and-ip-addresses"></a>Vad innebär det att säkerställa nätverksanslutning till URL-adresser och IP-adresser för [Office 365-tjänster?](https://aka.ms/o365urls)
+
+I den här artikeln beskrivs de URL:er och IP-adresser som krävs för en korrekt funktion i den globala tjänsten för att säkerställa en bra kundupplevelse. I relativt sällsynta fall försöker vissa kunder konfigurera nätverkets perimetersäkerhet på ett sådant sätt att minimera trafikflöden och har begränsad åtkomst till tjänster till dem bara som en del av IP-adressintervallen för Microsoft Cloud Deutschland.
+
+
+### <a name="how-do-i-manage-the-dns-changes-for-exchange-online-so-mail-will-continue-to-flow"></a>Hur hanterar jag DNS-ändringarna för Exchange Online så att e-post fortsätter att flöda?
+
+Microsoft-hanterade IP-intervall och DNS-zoner migreras under och som en del av migreringen till den globala tjänsten. 
+
+Kundhanterade DNS-zoner, till exempel anpassade domän-MX-poster, ansvarar däremot för att förenkla den här migreringen som den kundhanterade MX-posten pekar på en Slutpunkt för Office 365-tjänst i office.de-zonen och Microsoft hanterar migreringen av den här tjänstslutpunkten automatiskt.
+
+
+### <a name="how-do-i-manage-the-dns-changes-for-skype-for-business"></a>Hur hanterar jag DNS-ändringarna för Skype för företag? 
+ 
+Alla Skype för företag-kunder kommer att övergå till Microsoft Teams. Övergången av Skype DNS-zoner för kunder krävs inte vid migrering till Teams. Kunder kommer att kunna logga in i Teams omedelbart med alla funktioner efter migreringen.
+ 
+
+### <a name="will-outlook-for-ios-and-android-work-after-the-migration"></a>Fungerar Outlook för iOS och Android efter migreringen? 
+
+Ja. Microsofts rekommendation är att alla kunder kör de senaste tillgängliga versionerna av Office-klienter, inklusive Outlook för iOS- och Android-klienter. När migreringen till den globala Office 365-tjänsten är slutförd måste alla Office-klienter logga ut och logga in igen för att få en ny Azure Active Directory-åtkomsttoken från den globala tjänsten. 
+
 
 
 ## <a name="next-step"></a>Nästa steg

@@ -1,5 +1,5 @@
 ---
-title: Köers inblick i instrument panelen för e-postflöde
+title: Köinsikter i instrumentpanelen för e-postflöde
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -9,88 +9,92 @@ audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
-description: Administratörer kan lära dig hur du använder widgeten köer i instrument panelen för e-postflöde i säkerhets & Compliance Center för att övervaka misslyckade e-postflöden till deras lokala eller partner organisationer via utgående anslutningar.
+description: Administratörer kan lära sig att använda widgeten Köer i instrumentpanelen för e-postflöde i säkerhets- och efterlevnadscentret för & för att övervaka ett misslyckat e-postflöde till sina lokala organisationer eller partnerorganisationer via utgående anslutningar.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 73e97cbbd05e298013e9e686053a969d587ad5cf
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 94e8a1f3b54c3738c21e94ba85ae4f1d3f953498
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029156"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150177"
 ---
-# <a name="queues-insight-in-the-security--compliance-center"></a>Köer inblickar i säkerhets & Compliance Center
+# <a name="queues-insight-in-the-security--compliance-center"></a>Köinsikter i Säkerhets- & Efterlevnadscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender för Office 365 abonnemang 1 och abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-När meddelanden inte kan skickas från din organisation till lokala eller partnersbaserade e-postservrar med kopplingar köas de i Microsoft 365. Vanliga exempel som orsakar det här problemet:
+När meddelanden inte kan skickas från din organisation till dina lokala e-postservrar eller partner-e-postservrar med hjälp av kopplingar, är meddelandena i kö i Microsoft 365. Vanliga exempel som kan orsaka detta villkor är:
 
 - Kopplingen är felaktigt konfigurerad.
-- Nätverks-eller vägg ändringar har gjorts i din lokala miljö.
+- Det har skett nätverks- eller brandväggsändringar i din lokala miljö.
 
-Microsoft 365 fortsätter att försöka leverera i 24 timmar. Efter 24 timmar upphör meddelanden att gälla och kommer att återföras till avsändare i rapporter som inte kunde levereras (kallas även för NDR eller studs meddelanden).
+Microsoft 365 fortsätter att försöka leverera igen i 24 timmar. Efter 24 timmar förfaller meddelandena och returneras till avsändarna i rapporter om utebliven leverans (kallas även NDR-rapporter eller icke-leveranskavsändarmeddelanden).
 
-Om den köade e-postvolymen överskrider det fördefinierade tröskelvärdet (Standardvärdet är 200 meddelanden) finns informationen på följande platser:
+Om den fördefinierade e-postvolymen överskrider det fördefinierade tröskelvärdet (standardvärdet är 200 meddelanden) är informationen tillgänglig på följande platser:
 
-- **Köerna** inblickar i [instrument panelen för e-postflöden](mail-flow-insights-v2.md) i [säkerhets & Compliance Center](https://protection.office.com). Mer information finns i [köer i avsnittet e-postflöde](#queues-insight-in-the-mail-flow-dashboard) i den här artikeln.
+- **Köinsikter** i [instrumentpanelen för e-postflöde](mail-flow-insights-v2.md) i [& Säkerhets- och efterlevnadscenter.](https://protection.office.com) Mer information finns i [köinsikter i instrumentpanelen för e-postflöde](#queues-insight-in-the-mail-flow-dashboard) i den här artikeln.
 
-- En avisering visas i de **senaste varningarna** instrument panelen för aviseringar i [säkerhets & Compliance Center](https://protection.office.com) (instrument panelen för **aviseringar** \>  eller <https://protection.office.com/alertsdashboard> ).
+- En avisering visas i **instrumentpanelen för senaste** aviseringar i [säkerhets- & (instrumentpanelen](https://protection.office.com) för aviseringar \>  <https://protection.office.com/alertsdashboard> eller).
 
-  ![Senaste meddelanden i instrument panelen för aviseringar i säkerhets & efterlevnad](../../media/mfi-queued-messages-alert.png)
+  ![Senaste aviseringar i instrumentpanelen för aviseringar i Säkerhets- & Efterlevnadscenter](../../media/mfi-queued-messages-alert.png)
 
-- Administratörer får ett e-postmeddelande baserat på konfigurationen av den standard aviserings princip som heter **meddelanden har försen ATS**. Se nästa avsnitt om du vill konfigurera aviserings inställningarna för den här aviseringen.
+- Administratörer får ett e-postmeddelande baserat på konfigurationen av standardaviseringsprincipen **med namnet Meddelanden har fördröjts.** Information om hur du konfigurerar aviseringsinställningarna för den här aviseringen finns i nästa avsnitt.
 
-  Mer information om aviserings principer finns i [aviserings principer i säkerhets & efterlevnad](../../compliance/alert-policies.md).
+  Mer information om aviseringsprinciper finns i [Aviseringsprinciper i Säkerhets- & Efterlevnadscenter.](../../compliance/alert-policies.md)
 
-## <a name="customize-queue-alerts"></a>Anpassa aviseringar i kö
+## <a name="customize-queue-alerts"></a>Anpassa köaviseringar
 
-1. Gå till **aviserings** principer för varningar eller öppna i fönstret [säkerhets & efterlevnad](https://protection.office.com) \>  <https://protection.office.com/alertpolicies> .
+1. Gå till [aviseringsprinciperna eller öppna i säkerhets-](https://protection.office.com)och **&** säkerhets- \>  och efterlevnadscentret. <https://protection.office.com/alertpolicies>
 
-2. Leta reda på och välj policyn som heter **meddelanden** på sidan **aviserings principer** .
+2. Sök efter **och välj** principen Meddelanden har fördröjts på sidan **Aviseringsprinciper.**
 
-3. I **meddelandet har fördröjd** utfällning som öppnas kan du aktivera eller inaktivera aviseringen och konfigurera aviserings inställningarna.
+3. I meddelandet **har fördröjts** och öppnats kan du aktivera eller inaktivera aviseringen och konfigurera aviseringsinställningarna.
 
-   ![Meddelanden har fördröjts med aviserings princip uppgifter säkerhets & efterlevnad](../../media/mfi-queued-messages-alert-policy.png)
+   ![Meddelanden har fördröjts med information om avisering & Säkerhets- och efterlevnadscenter](../../media/mfi-queued-messages-alert-policy.png)
 
-   - **Status**: du kan aktivera eller inaktivera aviseringen.
+   - **Status:** Du kan aktivera eller inaktivera aviseringen.
 
-   - **E-postmottagare** och **daglig meddelande gräns**: Klicka på **Redigera** för att konfigurera följande inställningar:
+   - **Gräns för** **e-postmottagare och daglig** avisering: **Klicka på** Redigera för att konfigurera följande inställningar:
 
-4. Konfigurera aviserings inställningarna genom att klicka på **Redigera**. I redigera utfällbar **princip** som visas konfigurerar du följande inställningar:
+4. Om du vill konfigurera meddelandeinställningarna klickar du på **Redigera.** Konfigurera följande **inställningar i** den utfällblad för Redigera princip som visas:
 
-   - **Skicka e-postmeddelanden**: standardvärdet är på.
-   - **E-postmottagare**: standardvärdet är **TenantAdmins**.
-   - **Daglig meddelande gräns**: standardvärdet är **ingen gräns**.
-   - **Tröskelvärde**: standardvärdet är 200.
+   - **Skicka e-postaviseringar:** Standardvärdet är på.
+   - **E-postmottagare:** Standardvärdet är **TenantAdmins.**
+   - **Daglig meddelandegräns:** Standardvärdet är **Ingen gräns.**
+   - **Tröskelvärde:** Standardvärdet är 200.
 
-   ![Aviserings inställningar i meddelanden har fördröjts med aviserings princip uppgifter säkerhets & efterlevnad](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
+   ![Meddelandeinställningar i meddelanden har fördröjts med information om säkerhets- & efterlevnadscenter](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
 
-5. När du är klar klickar du på **Spara** och **Stäng**.
+5. Klicka på Spara och Stäng **när** du är **klar.**
 
-## <a name="queues-insight-in-the-mail-flow-dashboard"></a>Köers inblick i instrument panelen för e-postflöde
+## <a name="queues-insight-in-the-mail-flow-dashboard"></a>Köinsikter i instrumentpanelen för e-postflöde
 
-Även om den köade meddelande volymen inte har överskridit tröskelvärdet och genererat en avisering kan du ändå använda **köer** i [instrument panelen för e-postflöde](mail-flow-insights-v2.md) för att visa meddelanden som har placerats i kö i mer än en timme och vidta åtgärder innan antalet köade meddelanden blir för stora.
+Även om volymen för meddelanden i kö inte har överskridit tröskelvärdet och  genererat en [](mail-flow-insights-v2.md) avisering kan du fortfarande använda köinsikterna i instrumentpanelen för e-postflöde för att se meddelanden som har köats i mer än en timme och vidta åtgärder innan antalet köade meddelanden blir för stort.
 
-![Widgeten för köer i instrument panelen för säkerhets &](../../media/mfi-queues-widget.png)
+![Widget för köer i instrumentpanelen för e-postflöde i & Säkerhets- och efterlevnadscenter](../../media/mfi-queues-widget.png)
 
-Om du klickar på antalet meddelanden i widgeten visas en utfällbar **meddelande** med följande information:
+Om du klickar på antalet meddelanden  på widgeten visas en utfällbara meddelandekö med följande information:
 
-- **Antal köade meddelanden**
-- **Anslutnings namn**: Klicka på kopplingens namn för att hantera kopplingen i administrations centret för Exchange (UK).
-- **Start tid för kö**
-- **Äldsta meddelanden har upphört**
-- **Mål Server**
-- **Sista IP-adress**
-- **Senaste fel**
-- **Så här löser du problemet**: vanliga problem och lösningar finns tillgängliga. Om du har en lösning på att länken **nu** är tillgänglig klickar du på den för att åtgärda problemet. Annars kan du klicka på eventuella tillgängliga länkar för mer information om felet och möjliga lösningar.
+- **Antal meddelanden i kö**
+- **Kopplingsnamn:** Klicka på kopplingsnamnet för att hantera kopplingen i administrationscentret för Exchange (EAC).
+- **Starttid för kö**
+- **Äldsta meddelanden har gått ut**
+- **Målserver**
+- **Senaste IP-adress**
+- **Senaste felet**
+- **Så här åtgärdar** du problemet: Vanliga problem och lösningar finns tillgängliga. Om länken **Åtgärda det nu** är tillgänglig kan du klicka på den för att åtgärda problemet. Annars klickar du på de tillgängliga länkarna för att få mer information om felet och möjliga lösningar.
 
-![Information efter att du klickat på ärende köerna i instrument panelen för e-postflöde](../../media/mfi-queues-details.png)
+![Information när du klickar på köinsikter på instrumentpanelen för e-postflöde](../../media/mfi-queues-details.png)
 
-Samma utfällda meddelande visas när du klickar på **Visa kö** i **meddelandet har fördröjts** .
+Samma utfällbara bild visas när du **klickar på Visa kö** i information om ett meddelande har **fördröjts.**
 
-![Meddelanden har fördröjts med aviserings informationen i centret för säkerhets &](../../media/mfi-queued-messages-alert-details.png)
+![Meddelanden har fördröjts i säkerhets- & Efterlevnadscenter](../../media/mfi-queued-messages-alert-details.png)
 
 ## <a name="see-also"></a>Se även
 
-Information om andra insikter i instrument panelen för e-postflöden finns i avsnittet om [hur du använder e-postflöde i säkerhets & Compliance Center](mail-flow-insights-v2.md).
+Mer information om andra insikter i instrumentpanelen för e-postflöde finns i [E-postflödesinsikter i Säkerhets- & Efterlevnadscenter.](mail-flow-insights-v2.md)
