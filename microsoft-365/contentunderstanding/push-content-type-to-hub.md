@@ -12,12 +12,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-ms.openlocfilehash: 89c03a70da364bd4b945debc64de02255dec15e1
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 22d146b1d376bab134e82ad7d1313cb7881ca45b
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975721"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50144977"
 ---
 # <a name="push-content-types-to-a-hub"></a>Skicka innehållstyper till en navplats
 
@@ -28,7 +28,7 @@ ms.locfileid: "49975721"
 </br>
 
 
-Om du vill göra viktiga innehållstyper mer kontinuerligt tillgängliga för SharePoint-bibliotek och -listor kan du skicka dem till de navplatser du väljer. Om du trycker på innehållstyperna läggs de automatiskt till i nya listor och bibliotek som skapas på de webbplatser som är kopplade till navet och till alla nya webbplatser som läggs till navet.
+Om du vill göra viktiga innehållstyper mer kontinuerligt tillgängliga för SharePoint-bibliotek och -listor kan du skicka dem till de navplatser du väljer. Om du trycker på innehållstyperna läggs de automatiskt till i nya listor och bibliotek som skapas på de webbplatser som är kopplade till navet och till alla nya webbplatser som läggs till navet. Den här funktionen kräver en [SharePoint Syntex](index.md) licens.
 
 För att den här funktionen ska fungera måste innehållstyperna som publiceras redan vara publicerade.
 

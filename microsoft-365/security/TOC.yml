@@ -25,6 +25,8 @@
           href: ./office-365-security/secure-email-recommended-policies.md
         - name: Rekommenderade åtkomstprinciper för SharePoint Online
           href: ./office-365-security/sharepoint-file-access-policies.md
+    - name: Microsoft 365 Säkerhetscenter
+      href: mtp/overview-security-center.md
     - name: Microsoft Secure Score
       items:
         - name: Översikt över Secure Score
@@ -45,10 +47,14 @@
               href: mtp/microsoft-threat-protection.md
             - name: Nyheter i Microsoft 365 Defender
               href: mtp/whats-new.md
+            - name: Defender för Endpoint i Microsoft 365 Säkerhetscenter
+              href: mtp/microsoft-365-security-center-mde.md
+            - name: Defender för Office 365 i Microsoft 365 Säkerhetscenter
+              href: mtp/microsoft-365-security-center-mdo.md
+            - name: Omdirigera Defender för Endpoint till Microsoft 365 Säkerhetscenter
+              href: mtp/microsoft-365-security-mde-redirection.md
             - name: Förhandsgranskningsfunktioner
               href: mtp/preview.md
-            - name: Microsoft 365 Säkerhetscenter
-              href: mtp/overview-security-center.md
             - name: Felsöka problem
               href: ./mtp/troubleshoot.md
             - name: Branschtester
@@ -63,22 +69,18 @@
               href: mtp/portals.md
         - name: Utvärdera funktioner
           items:
-            - name: Översikt över utvärderingslaboratorie
-              href: mtp/mtp-evaluation.md
-            - name: Förbereda
-              href: mtp/prepare-mtpeval.md
-            - name: Installation
-              href: mtp/setup-mtpeval.md
-            - name: Konfigurera och introducera
-              href: mtp/config-mtpeval.md
-            - name: Starta tjänsten Microsoft 365 Defender
-              href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
-            - name: Skapa ett testmeddelande
-              href: mtp/generate-test-alert.md
-        - name: Distribuera
-          items:
-            - name: Aktivera Microsoft Threat Protection
-              href: mtp/mtp-enable.md
+            - name: Skapa ett utvärderingslabb
+              items:
+                - name: Översikt över utvärderingslaboratorie
+                  href: mtp/mtp-evaluation.md
+                - name: Förbereda
+                  href: mtp/prepare-mtpeval.md
+                - name: Installation
+                  href: mtp/setup-mtpeval.md
+                - name: Konfigurera stolpar och introduktioner i Microsoft 365 Defender
+                  href: mtp/config-mtpeval.md
+                - name: Skapa ett testmeddelande
+                  href: mtp/generate-test-alert.md
             - name: Kör ditt pilotprojekt i produktion
               items:
                 - name: Pilotöversikt
@@ -91,8 +93,16 @@
                   href: mtp/mtp-pilot-simulate.md
                 - name: Stäng och sammanfatta
                   href: mtp/mtp-pilot-close.md
+        - name: Komma igång
+          items:
+            - name: Översikt
+              href: mtp/get-started.md
+            - name: Aktivera Microsoft Threat Protection
+              href: mtp/mtp-enable.md
             - name: Distribuera tjänster som stöds
               href: mtp/deploy-supported-services.md
+            - name: Aktivera vanliga frågor och svar om Microsoft 365 Defender
+              href: mtp/mtp-enable-faq.md
         - name: Guider med anvisningar
           items:
             - name: Skapa en utvärderings- eller pilotlaboratoriemiljö
@@ -101,6 +111,12 @@
               href: mtp/mtp-pilot.md
             - name: Aktivera vanliga frågor och svar
               href: mtp/mtp-enable-faq.md
+            - name: Analys av hot
+              items:
+                - name: Översikt över hotanalys
+                  href: mtp/threat-analytics.md
+                - name: Läs analysrapporten
+                  href: mtp/threat-analytics-analyst-reports.md
             - name: Incidenter
               items:
                 - name: Översikt
@@ -113,6 +129,10 @@
                       href: mtp/investigate-incidents.md
                     - name: Hantera incidenter
                       href: mtp/manage-incidents.md
+                    - name: Undersöka aviseringar
+                      href: mtp/investigate-alerts.md
+                    - name: Undersöka användare i Microsoft 365 Säkerhetscenter
+                      href: mtp/investigate-users.md
                 - name: Få e-postaviseringar
                   href: mtp/get-incident-notifications.md
             - name: Automatiska undersökningar och svar
@@ -247,6 +267,8 @@
               items:
                 - name: Hantera åtkomst
                   href: mtp/mtp-permissions.md
+                - name: Anpassade roller i rollbaserad åtkomst
+                  href: mtp/custom-roles.md
                 - name: Ange tidszon
                   href: mtp/mtp-time-zone.md
                 - name: Visa enhetsprofiler
@@ -302,6 +324,8 @@
           items:
             - name: Säkerhetsöversikt
               href: ./office-365-security/security-roadmap.md
+            - name: Defender för Office 365 i Microsoft 365 Säkerhetscenter
+              href: mtp/microsoft-365-security-center-mdo.md
             - name: Exchange Online Protection
               items:
                 - name: Översikt över Exchange Online Protection
@@ -328,7 +352,7 @@
               href: office-365-security/whats-new-in-office-365-atp.md
             - name: 'Säkra bilagor för SharePoint, OneDrive och Microsoft Teams'
               href: ./office-365-security/atp-for-spo-odb-and-teams.md
-            - name: Ny Microsoft 365 säkerhetscenter
+            - name: Microsoft 365 Säkerhetscenter översikt
               href: ./mtp/overview-security-center.md
             - name: Hotutforskaren (och realtidsidentifieringar)
               href: ./office-365-security/threat-explorer.md

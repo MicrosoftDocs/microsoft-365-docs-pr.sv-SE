@@ -11,16 +11,16 @@ ms.service: ''
 ms.collection: enabler-strategic
 search.appverid: ''
 localization_priority: Priority
-ms.openlocfilehash: ba0f240caa8b3452783436e9a35c53d44baba894
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 3d6efce9b6414444793da54d9c6d7be47d6a9a5c
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976441"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145085"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>Importera en termuppsättning med ett SKOS-baserat format
 
-Du kan importera en termuppsättning med ett SKOS-baserat format. Mer information om formatet finns i [SKOS-formatreferens för SharePoint-taxonomi](skos-format-reference.md).
+Du kan importera en termuppsättning med ett SKOS-baserat format. Mer information om formatet finns i [SKOS-formatreferens för SharePoint-taxonomi](skos-format-reference.md). Den här funktionen kräver en [SharePoint Syntex](index.md) licens.
 
 Vi rekommenderar att du endast importerar filer med färre än 20 000 termer. Större filer kan göra att verifiering och import tar längre tid.
 
