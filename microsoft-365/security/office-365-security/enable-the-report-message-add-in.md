@@ -17,26 +17,30 @@ ms.collection:
 description: Lär dig hur du aktiverar tillägget Rapportmeddelande för Outlook och Outlook på webben för enskilda användare eller hela organisationen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9b21472736cff2fd0eed7da5495ab6aae597032f
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: fe47bcb4db42514f3a5252a567421ad792967cd1
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094861"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167581"
 ---
 # <a name="enable-the-report-message-add-in"></a>Aktivera tillägget för att rapportera meddelande
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
-> Om du är administratör i en Microsoft 365-organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen Inskickade i Säkerhets- & Efterlevnadscenter. Mer information finns i Använda [administrationsinskick för att skicka misstänkt skräppost, phish, URL:er och filer till Microsoft.](admin-submission.md)
+> Om du är administratör i en Microsoft 365-organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen För inskickade material i Säkerhets- & Efterlevnadscenter. Mer information finns i Använda [administrationsinskick för att skicka misstänkt skräppost, phish, URL:er och filer till Microsoft.](admin-submission.md)
 
 Med tilläggen Rapportmeddelande och Rapport nätfiske för Outlook och Outlook på webben (tidigare kallat Outlook Web App) kan användare enkelt rapportera falska positiva meddelanden (bra e-postmeddelanden markerade som dåliga) eller falska negativa (felaktig e-post tillåts) till Microsoft och dess dotterbolag för analys.
 
-Microsoft använder dessa inskickade e-postmeddelanden för att göra e-postskyddstekniken mer effektiv. Om personer till exempel rapporterar många meddelanden som flaggats som Skräppost med hjälp av tillägget Rapportmeddelande kan organisationens säkerhetsgrupp behöva justera principerna för [skräppostskydd.](configure-your-spam-filter-policies.md)
+Microsoft använder dessa inskickade e-postmeddelanden för att göra e-postskyddstekniken mer effektiv. Om personer till exempel rapporterar många meddelanden som flaggats som Skräppost med tillägget Rapportmeddelande kan din organisations säkerhetsgrupp behöva justera principerna för [skräppostskydd.](configure-your-spam-filter-policies.md)
 
-Du kan installera antingen tillägget Rapportmeddelande eller Rapportera nätfiske. Om du vill att användarna endast ska rapportera nätfiskemeddelanden distribuerar du tillägget Rapport nätfiske i organisationen. Mer information finns i [Aktivera tillägget Rapport nätfiske.](enable-the-report-phish-add-in.md)
+Du kan installera tillägget Rapportmeddelande eller Rapportera nätfiske. Om du vill att användarna endast ska rapportera nätfiskemeddelanden distribuerar du tillägget Rapport nätfiske i organisationen. Mer information finns i [Aktivera tillägget Rapport nätfiske.](enable-the-report-phish-add-in.md)
 
 Med tillägget Rapportmeddelande kan du rapportera både skräppost och nätfiske. Administratörer kan aktivera tillägget Rapportmeddelande för organisationen och enskilda användare kan installera det själva.
 
@@ -56,7 +60,7 @@ Om du är global administratör eller Exchange [Online-administratör](#get-and-
 
 - Tillägget Rapportmeddelande är inte tillgängligt för postlådor i lokala Exchange-organisationer.
 
-- Du kan konfigurera rapporterade meddelanden så att de kopieras eller omdirigeras till en postlåda som du anger. Mer information finns i principer [för användarinskick.](user-submission.md)
+- Du kan konfigurera rapporterade meddelanden som ska kopieras eller omdirigeras till en postlåda som du anger. Mer information finns i principer [för användarinskick.](user-submission.md)
 
 - Din befintliga webbläsare bör fungera med tillägget Rapportmeddelande. Om du märker att tillägget inte är tillgängligt eller inte fungerar som förväntat kan du prova med en annan webbläsare.
 
@@ -70,7 +74,7 @@ Om du är global administratör eller Exchange [Online-administratör](#get-and-
 
 2. Klicka **på HÄMTA NU.**
 
-   ![Rapportmeddelande – Skaffa nu](../../media/ReportMessageGETITNOW.png)
+   ![Rapportmeddelande – skaffa nu](../../media/ReportMessageGETITNOW.png)
 
 3. I dialogrutan som visas granskar du användningsvillkoren och sekretesspolicyn och klickar sedan på **Fortsätt.**
 
@@ -84,7 +88,7 @@ När tillägget är installerat och aktiverat visas följande ikoner:
 
 - Ikonen ser ut så här i Outlook på webben:
 
-  ![Ikonen för tillägget Rapportmeddelande i Outlook på webben](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+  ![Tilläggsikon för rapportmeddelande i Outlook på webben](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
 Mer information om hur du använder tillägget finns i Använda tillägget [Rapportmeddelande.](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
 
@@ -119,7 +123,7 @@ Mer information om hur du använder tillägget finns i Använda tillägget [Rapp
      - **Specifika användare/grupper**
      - **Bara jag**
 
-   - **Distributionsmetod:** Välj ett av följande värden:
+   - **Distributionsmetod:** Välj något av följande värden:
 
      - **Åtgärdat (standard)**: Tillägget distribueras automatiskt till angivna användare och de kan inte ta bort det.
      - **Tillgängligt:** Användare kan installera tillägget **på Startsidan** Få administratör \>  \> **hanterade tillägg.**

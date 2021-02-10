@@ -6,7 +6,6 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -18,25 +17,31 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig att visa och hantera meddelanden i karantän för alla användare i Exchange Online Protection (EOP). Administratörer i organisationer med Microsoft Defender för Office 365 kan också hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams.
-ms.openlocfilehash: 5f4d63576e57ac50abe1ec1eb378221c4d457280
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: a91f53f8efe4fa6944f0debff472da87b7f17e0c
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659992"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167497"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Hantera meddelanden och filer i karantän som administratör i EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor lagrar karantänen potentiellt farliga eller oönskade meddelanden. Mer information finns i [e-postmeddelanden i karantän i EOP](quarantine-email-messages.md).
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor lagrar karantänen potentiellt farliga eller oönskade meddelanden. Mer information finns i [e-postmeddelanden i karantän i EOP.](quarantine-email-messages.md)
 
-Administratörer kan visa, frigöra och ta bort alla typer av meddelanden i karantän för alla användare. Endast administratörer kan hantera meddelanden som satts i karantän som skadlig program vara, högsäker nät fiske eller resultat av regler för e-postflöden (kallas även transport regler). Administratörer kan också rapportera falsk identifiering till Microsoft.
+Administratörer kan visa, släppa och ta bort alla typer av meddelanden i karantän för alla användare. Endast administratörer kan hantera meddelanden som har satts i karantän som skadlig kod, nätfiske med hög konfidens eller som ett resultat av e-postflödesregler (kallas även transportregler). Administratörer kan också rapportera falska positiva resultat till Microsoft.
 
 Administratörer i organisationer med Microsoft Defender för Office 365 kan också visa, ladda ned och ta bort filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams.
 
-Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med post lådor i Exchange Online, fristående EOP PowerShell för organisationer utan Exchange Online-postlådor).
+Du visar och hanterar meddelanden i karantän i Säkerhets- & och efterlevnadscenter eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med postlådor i Exchange Online, fristående EOP PowerShell för organisationer utan Exchange Online-postlådor).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
@@ -45,8 +50,8 @@ Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
-  - Du måste vara medlem i roll grupperna **organisations hantering**, **säkerhets administratör** eller **karantän administratör** för att kunna vidta åtgärder för alla användare <sup>\*</sup> .
-  - Om du vill ha skrivskyddad åtkomst till meddelanden i karantän för alla användare måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** .
+  - Om du vill vidta åtgärder för meddelanden i karantän för alla användare måste du vara medlem i rollgrupperna Organisationshantering, Säkerhetsadministratör eller  <sup>\*</sup> Karantänadministratör.
+  - För skrivskyddad åtkomst till meddelanden i karantän för alla användare måste du vara medlem i rollgrupperna **Global Reader** eller **Säkerhetsläsare.**
 
   Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
@@ -54,22 +59,22 @@ Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav 
 
   - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
   - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
-  - <sup>\*</sup> Medlemmar i roll gruppen **karantän administratörer** måste också vara medlemmar i roll gruppen **hygien hantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) för att kunna göra karantän förfaranden i Exchange Online PowerShell.
+  - <sup>\*</sup>Medlemmar i **rollgruppen för** karantänadministratör måste  också vara medlemmar i rollgruppen Hantering avfrågas i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) för att kunna göra karantänprocedurer i Exchange Online PowerShell.
 
-- Meddelanden i karantän bevaras under en standard tids period innan de tas bort automatiskt:
-  - 30 dagar för meddelanden i karantän med principer för skräp post (spam, nätfiske och Mass utskick). Det här är standardvärdet och Max värdet. Om du vill konfigurera (sänka) det här värdet läser du [Konfigurera principer för skräp post](configure-your-spam-filter-policies.md).
-  - 15 dagar för meddelanden som innehåller skadlig program vara.
-  - 15 dagar för filer i karantän med ATP för SharePoint, OneDrive och Microsoft Teams i Defender för Office 365.
+- Meddelanden i karantän behålls under en standardtid innan de tas bort automatiskt:
+  - 30 dagar för meddelanden i karantän enligt principer mot skräppost (skräppost, nätfiske och massutskick). Det här är standardvärdet och det högsta värdet. Information om hur du konfigurerar (lägre) det här värdet [finns i Konfigurera principer för skydd mot skräppost.](configure-your-spam-filter-policies.md)
+  - 15 dagar för meddelanden som innehåller skadlig programvara.
+  - 15 dagar för filer i karantän efter Säkra bifogade filer för SharePoint, OneDrive och Microsoft Teams i Defender för Office 365.
 
-  När ett meddelande utgår från karantän kan du inte återställa det.
+  När ett meddelande förfaller från karantän kan du inte återställa det.
 
-## <a name="use-the-security--compliance-center-to-manage-quarantined-email-messages"></a>Hantera e-postmeddelanden med hjälp av säkerhets &
+## <a name="use-the-security--compliance-center-to-manage-quarantined-email-messages"></a>Använda Säkerhets- & för att hantera e-postmeddelanden i karantän
 
 ### <a name="view-quarantined-email"></a>Visa e-post i karantän
 
 1. I Säkerhets- och efterlevnadscentret går du till **Hothantering** \> **Granska** \> **Karantän**.
 
-2. Kontrol lera att **Visa karantän** är inställt på standardvärdet för **e-post**.
+2. Kontrollera att **Visa i karantän är** inställt på standardvärdet för e-post. 
 
 3. Du kan sortera resultaten genom att klicka på en tillgänglig kolumnrubrik. Klicka på **Ändra kolumner** för att visa högst sju kolumner. Standardvärdena är markerade med en asterisk (<sup>\*</sup>):
 
@@ -99,21 +104,21 @@ Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav 
    - **Togs emot**: Ange ett **Startdatum** och **Slutdatum**.
 
    - **Orsak till karantän**:
-     - **Princip**: meddelandet överensstämde med villkoren i en regel för e-postflöde (kallas även för transport regel).
+     - **Princip:** Meddelandet matchade villkoren i en e-postflödesregel (kallas även transportregel).
      - **Bulk** (Massutskick)
-     - **Phish**: skräp post filtret Verdict var ett **nät fiske** meddelande eller skydd mot nätfiske ([Spoof inställningar](set-up-anti-phishing-policies.md#spoof-settings) eller [personifieringstoken](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
-     - **Program**
+     - **Nätfiske:** Skräppostfiltrets  bedömning var nätfiskeskydd eller skydd mot nätfiske i karantän för meddelandet [(förfalskningsinställningar](set-up-anti-phishing-policies.md#spoof-settings) eller [personifieringsskydd).](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+     - **Skadlig programvara**
      - **Skräppost**
-     - **Hög exakthet Phish**
+     - **Phish med hög konfidens**
 
    - **Principtyp**: filtrera meddelanden efter principtyp:
-     - **Policy för mot skadlig program vara**
-     - **Principer för säkra bifogade filer**
+     - **Policy för skydd mot skadlig programvara**
+     - **Princip för säkra bifogade filer**
      - **Princip för skydd mot nätfiske**
      - **Filterprincip för värdbaserat innehåll** (Skräppostprincip)
-     - **Transport regel**
+     - **Transportregel**
 
-   - **E-postmottagare**: alla användare eller bara meddelanden som skickas till dig. Slutanvändare kan bara hantera skickade meddelanden till dem.
+   - **E-postmottagare:** Alla användare eller endast meddelanden som skickats till dig. Slutanvändarna kan bara hantera meddelanden i karantän som skickas till dem.
 
    Tryck på **Rensa** om du vill ta bort filtret. Klicka på **Filter** igen om du vill dölja den utfällbara filterrutan.
 
@@ -121,7 +126,7 @@ Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav 
 
    - **Meddelande-ID**: Meddelandets globalt unika identifierare.
 
-     Du använde exempelvis [meddelande spårning](message-trace-scc.md) för att leta efter ett meddelande som skickades till en användare i din organisation, och du fastställer att meddelandet satts i stället för att levereras. Se till att du inkluderar fullständigt meddelande-ID, som kan innehålla vinkelparenteser ( \<\> ). Till exempel: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>` .
+     Du använde till exempel [meddelandespårning](message-trace-scc.md) för att leta efter ett meddelande som skickades till en användare i organisationen och du fastställer att meddelandet har satts i karantän i stället för att levereras. Se till att ta med det fullständiga id-värdet för meddelandet, vilket kan inkludera vinkelparenteser ( \<\> ). Till exempel: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>` .
 
    - **Avsändarens e-postadress**: En enskild avsändarens e-postadress.
 
@@ -131,7 +136,7 @@ Du visar och hanterar meddelanden i karantän i säkerhets & efterföljandekrav 
 
    - **Ämne**: Använd meddelandets hela ämne. Sökningen är inte skiftlägeskänslig.
 
-   - **Princip namn**: namnet på den policy som var ansvarig för quarantining meddelandet.
+   - **Principnamn:** Namnet på principen som ansvarar för att kvartilen av meddelandet.
 
    När du har angett sökvillkor klickar du på ![knappen Uppdatera](../../media/scc-quarantine-refresh.png) **Uppdatera**, så filtreras resultatet.
 
@@ -149,7 +154,7 @@ När du väljer ett e-postmeddelande i listan visas följande meddelandeinformat
 
 - **Ämne**
 
-- **Karantän orsak**: visar om ett meddelande har identifierats som **skräp post**, **bulk**, **Phish**, matchade en e-postregel (**Transport regel**) eller som innehåller **skadlig program vara**.
+- **Orsak till** karantän: Visar om ett meddelande har identifierats som **skräppost,** massutskick,  **phish** matchat en e-postflödesregel **(transportregel)** eller identifierats som innehåller skadlig **programvara.**
 
 - **Antal mottagare**
 
@@ -163,23 +168,23 @@ När du väljer ett e-postmeddelande i listan visas följande meddelandeinformat
 
 ### <a name="take-action-on-quarantined-email"></a>Vidta åtgärder för e-post i karantän
 
-När du har valt ett meddelande har du flera alternativ för vad du kan göra med meddelandena i fönstret utfällda **Detaljer** :
+När du har valt ett meddelande kan du välja mellan flera alternativ för vad du vill göra med meddelandena i den **utfällna** rutan Information:
 
-- **Släpp meddelande**: i fönstret som visas väljer du följande alternativ:
+- **Släpp meddelandet:** Välj följande alternativ i det utfällfönster som visas:
 
-  - **Rapportera meddelanden till Microsoft för analys**: det här är markerat som standard och rapporterar det felaktiga meddelandet till Microsoft som ett falskt positivt tal. Om meddelandet sattes i karantän som skräp post, bulk, nätfiske eller innehåller skadlig program vara, rapporteras meddelandet också till Microsoft spam-gruppen. Beroende på vilken analys de har, kan de globala skräp post filter reglerna justeras så att de tillåter meddelandet.
+  - **Rapportera meddelanden till Microsoft för analys:** Det här är valt som standard och rapporterar det felaktiga meddelandet i karantän till Microsoft som felaktigt positivt. Om meddelandet har satts i karantän som skräppost, massutskick, nätfiske eller som innehåller skadlig programvara rapporteras meddelandet även till Microsofts team för skräppostanalys. Beroende på deras analys kan reglerna för skräppostfilter för hela tjänsten justeras så att meddelandet tillåts.
 
   - Välj något av följande alternativ:
-    - **Släpp meddelanden till alla mottagare**
-    - **Släpp meddelanden till specifika mottagare**
-    - **Släpp meddelanden till andra personer**: Obs! det går inte att släppa skadliga program mot andra personer än de ursprungliga mottagarna.
+    - **Släppa meddelanden till alla mottagare**
+    - **Släppa meddelanden till specifika mottagare**
+    - **Släpp meddelanden till andra personer:** Observera att det inte går att släppa skadlig programvara till andra personer än de ursprungliga mottagarna.
 
   Klicka på **Släpp meddelandet** när du är klar.
 
-  Anmärkningar om att frigöra meddelanden:
+  Kommentarer om att släppa meddelanden:
 
-  - Du kan inte frigöra ett meddelande till samma mottagare flera gånger.
-  - Endast mottagare som inte har fått meddelandet visas i listan över potentiella mottagare.
+  - Du kan inte släppa ett meddelande till samma mottagare fler än en gång.
+  - Endast mottagare som inte har fått meddelandet visas i listan med potentiella mottagare.
 
 - **Visa meddelandehuvud**: Välj den här länken om du vill visa meddelandehuvudets text. Om du vill analysera fälten och värden för huvuden mer ingående kopierar du meddelandehuvudets text till Urklipp och väljer sedan **Microsofts analysverktyg för meddelanderubrik** för att gå till analysverktyget för fjärranslutning (högerklicka och välj **Öppna i ny flik** om du inte vill lämna Microsoft 365 för att slutföra den här uppgiften). Klistra in meddelandehuvudet på sidan i analysverktyget för meddelanderubrik. Välj **Analyze headers** (Analysera rubriker):
 
@@ -188,21 +193,21 @@ När du har valt ett meddelande har du flera alternativ för vad du kan göra me
   - **Källvy**: Visar HTML-versionen av meddelandetexten med alla länkar inaktiverade.
   - **Textvy**: Visar meddelandetexten som oformaterad text.
 
-- **Ta bort från karantän**: när du klickar på **Ja** i den varning som visas, tas meddelandet omedelbart bort utan att skickas till de ursprungliga mottagarna.
+- **Ta bort från karantän:** När du **klickar** på Ja i varningen som visas tas meddelandet bort omedelbart utan att skickas till de ursprungliga mottagarna.
 
 - **Ladda ned meddelande**: Välj **Jag är medveten om riskerna om jag laddar ned meddelandet** i den utfällbara rutan som visas om du vill spara en lokal kopia av meddelandet i .eml-format.
 
-- **Skicka meddelande**: i fönstret som visas väljer du följande alternativ:
+- **Skicka ett** meddelande: Välj följande alternativ i det utfällfönster som visas:
 
-  - **Objekt typ**: **e-post** (standard), **URL** eller **bifogad fil**.
+  - **Objekttyp:** **E-post** (standard), **URL** eller **bifogad fil.**
 
-  - **Sändnings format**: **ID för nätverks meddelanden** (standard, med motsvarande värde i fältet för **nätverks meddelande-ID** ) eller **filen** (Bläddra till en lokal. eml-eller. msg-fil). Observera att om du väljer **Arkiv** och sedan **nätverks meddelande-ID** är det ursprungliga värdet borta.
+  - **Överföringsformat:** **Nätverksmeddelande-ID** (standard med motsvarande värde i rutan **Nätverksmeddelande-ID)** eller Fil **(bläddra** till en lokal .eml- eller .msg-fil). Observera att om du väljer **Arkiv** och sedan **Nätverksmeddelande-ID** är det ursprungliga värdet borta.
 
-  - **Mottagare**: Ange en ursprunglig mottagare för meddelandet eller klicka på **Markera alla** för att identifiera alla mottagare. Du kan också klicka på **Markera alla** och sedan ta bort enskilda mottagare.
+  - **Mottagare:** Skriv vid leasa en ursprunglig mottagare av meddelandet eller klicka **på Markera alla** för att identifiera alla mottagare. Du kan också klicka **på Markera alla** och sedan selektivt ta bort enskilda mottagare.
 
-  - **Orsak för inlämning**: **ska inte vara blockerat** (standard) eller **ha blockerats**.
+  - **Orsak till** **inskickning: Borde inte ha blockerats** (standard) **eller borde ha blockerats.**
 
-  När du är klar klickar du på **Skicka**.
+  Klicka på Skicka när du är **klar.**
 
 Om du inte släpper eller tar bort meddelandet tas det bort när standardtiden för att behålla i karantän går ut.
 
@@ -213,35 +218,35 @@ När du markerar flera meddelanden i karantän i listan (upp till 100) visas den
 - **Släpp meddelanden**: Du har samma alternativ som när du släpper ett enstaka meddelande, förutom att du inte kan välja **Släpp meddelanden till vissa mottagare**. Du kan endast välja **Släpp meddelanden till alla mottagare** eller **Släpp meddelanden till andra personer**.
 
   > [!NOTE]
-  > Tänk på följande: john@gmail.com skickar ett meddelande till faith@contoso.com och john@subsidiary.contoso.com. Gmail bifurcates det här meddelandet i två kopior som båda dirigeras till karantän som nätfiske i Microsoft. En administratör frigör båda dessa meddelanden till admin@contoso.com. Det första meddelandet som når administratörs post lådan levereras. Det andra publicerade meddelandet identifieras som dubbel leverans och hoppas över. Meddelandet identifieras som dubbletter om de har samma meddelande-ID och tid.
+  > Tänk dig följande scenario: john@gmail.com skickar ett meddelande till faith@contoso.com och john@subsidiary.contoso.com. Gmail delar upp det här meddelandet i två kopior som båda dirigeras till karantän som nätfiske i Microsoft. En administratör släpper båda dessa meddelanden till admin@contoso.com. Det första släppta meddelandet som når administratörspostlådan levereras. Det andra släppta meddelandet identifieras som dubblettleverans och hoppas över. Meddelandet identifieras som dubbletter om de har samma meddelande-ID och tid för mottagna meddelanden.
 
-- **Ta bort meddelanden**: när du klickar på **Ja** i den varning som visas, tas meddelandena omedelbart bort utan att skickas till de ursprungliga mottagarna.
+- **Ta bort** meddelanden: När du klickar på **Ja** i varningen som visas tas meddelandena bort omedelbart utan att skickas till de ursprungliga mottagarna.
 
 Klicka på **Stäng** när du är klar.
 
-## <a name="microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files"></a>Endast Microsoft Defender för Office 365: Använd säkerhets & Compliance Center för att hantera filer i karantän
+## <a name="microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files"></a>Endast Microsoft Defender för Office 365: Använd säkerhets- & för att hantera filer i karantän
 
 > [!NOTE]
-> Procedurerna för filer i karantän i det här avsnittet är endast tillgängliga för Microsoft Defender för Office 365 abonnemang 1 och abonnemang 2-abonnenter.
+> Procedurerna för filer i karantän i det här avsnittet är endast tillgängliga för Microsoft Defender för Office 365 Abonnemang 1- och Abonnemang 2-prenumeranter.
 
-I organisationer med Defender för Office 365 kan administratörer hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams. Information om hur du aktiverar skyddet för dessa filer finns i [Aktivera ATP för SharePoint, OneDrive och Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
+I organisationer med Defender för Office 365 kan administratörer hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams. Information om hur du aktiverar skydd för dessa [filer finns i Aktivera Säkra bifogade filer för SharePoint, OneDrive och Microsoft Teams.](turn-on-atp-for-spo-odb-and-teams.md)
 
 ### <a name="view-quarantined-files"></a>Visa filer i karantän
 
 1. I Säkerhets- och efterlevnadscentret går du till **Hothantering** \> **Granska** \> **Karantän**.
 
-2. Ändra **vy i karantän** **till Values**. Du kan sortera efter ett fält genom att klicka på en tillgänglig kolumn rubrik.
+2. Ändra **visa i karantän** till **värdefilerna.** Du kan sortera på ett fält genom att klicka på en tillgänglig kolumnrubrik.
 
-3. Du kan sortera resultaten genom att klicka på en tillgänglig kolumnrubrik. Klicka på **Ändra kolumner** för att visa högst sju kolumner. Standard kolumnerna är markerade med en asterisk ( <sup>\*</sup> ):
+3. Du kan sortera resultaten genom att klicka på en tillgänglig kolumnrubrik. Klicka på **Ändra kolumner** för att visa högst sju kolumner. Standardkolumnerna är markerade med en asterisk ( <sup>\*</sup> ):
 
-   - **Användarläge**<sup>\*</sup>
+   - **Användare**<sup>\*</sup>
    - **Plats**<sup>\*</sup>
-   - **Fil namn**<sup>\*</sup>
+   - **Filnamn**<sup>\*</sup>
    - **Fil-URL**<sup>\*</sup>
-   - **Fil storlek**<sup>\*</sup>
+   - **Filstorlek**<sup>\*</sup>
    - **Upphör**<sup>\*</sup>
    - **Släppt?**<sup>\*</sup>
-   - **Identifieras av**
+   - **Upptäckt av**
    - **Ändrad efter tid**
 
 4. Om du vill filtrera resultaten klickar du på **Filter**. Följande filter är tillgängliga:
@@ -250,58 +255,58 @@ I organisationer med Defender för Office 365 kan administratörer hantera filer
      - **I dag**
      - **Kommande 2 dagarna**
      - **Kommande 7 dagarna**
-     - Ett anpassat datum-och tidsintervall.
-   - **Mottaget**
-   - **Karantän orsak**: det enda tillgängliga värdet är **skadlig program vara**.
-   - **Principtyp**
+     - Ett anpassat datum-/tidsintervall.
+   - **Mottagen tid**
+   - **Orsak till karantän:** Det enda tillgängliga värdet är skadlig **programvara.**
+   - **Typ av princip**
 
-När du har hittat en viss fil i karantän väljer du filen för att visa information om den och för att utföra en åtgärd på den (till exempel Visa, släppa, ladda ned eller ta bort meddelandet).
+När du har hittat en specifik fil i karantän väljer du filen för att visa information om den och för att vidta åtgärder på den (till exempel visa, släppa, ladda ned eller ta bort meddelandet).
 
-#### <a name="view-quarantined-file-details"></a>Visa fil information i karantän
+#### <a name="view-quarantined-file-details"></a>Visa information om karantän
 
-När du väljer en fil i listan visas följande fil information i fönstret **detaljerad information** :
+När du väljer en fil i listan visas  följande filinformation i den utfällopanelen Information:
 
-- **Fil namn**
-- **URL: URL** som definierar filens plats (till exempel i SharePoint Online).
-- **Skadligt innehåll upptäcktes på** Det datum/den tid då filen sattes i karantän.
-- **Upphör**: det datum då filen ska tas bort från karantänen.
-- **Identifieras av**: Defender för Office 365 eller Microsoft-programmet mot skadlig program vara.
+- **Filnamn**
+- **Fil-URL:** URL som definierar platsen för filen (till exempel i SharePoint Online).
+- **Skadligt innehåll som upptäckts** Datum/tid då filen satt i karantän.
+- **Går ut:** Datumet då filen tas bort från karantän.
+- **Upptäckt av:** Defender för Office 365 eller Microsofts motor mot skadlig programvara.
 - **Släppt?**
-- **Namn på skadlig kod**
-- **Dokument-ID**: ett unikt ID för dokumentet.
-- **Fil storlek**: i KILOBYTE (KB).
-- **Organisation** Organisationens unika ID.
+- **Malware Name**
+- **Dokument-ID:** unik identifierare beskrivning av dokumentet.
+- **Filstorlek:** I kilobyte (KB).
+- **Organisation** Din organisations unika ID.
 - **Senast ändrad**
-- **Ändrad av**: den användare som senast ändrade filen.
-- **Secure Hash Algorithm 256-bit (SHA-256) värde**: du kan använda det här hashvärdet för att identifiera filen i andra ryktes butiker eller på andra platser i miljön.
+- **Ändrad av:** Den användare som senast ändrade filen.
+- **256-bitars algoritmen för säker hash-algoritm (SHA-256):** Du kan använda det här hash-värdet för att identifiera filen i andra rykteslager eller på andra platser i din miljö.
 
-### <a name="take-action-on-quarantined-files"></a>Vidta en åtgärd för filer i karantän
+### <a name="take-action-on-quarantined-files"></a>Vidta åtgärder för filer i karantän
 
-När du väljer en fil i listan kan du utföra följande åtgärder på filen i fönstret **detaljerad information** :
+När du väljer en fil i listan kan du utföra  följande åtgärder på filen i den utfällopanelen Information:
 
-- **Släpp filer**: Välj (standard) eller avmarkera **rapportera filer till Microsoft för analys** och klicka sedan på **släpp filer**.
-- **Ladda ner fil**
-- **Ta bort fil från karantän**
+- **Släpp filer:** Markera (standard) eller avmarkera **rapportfiler till Microsoft för** analys och klicka sedan **på Släpp filer.**
+- **Ladda ned fil**
+- **Ta bort en fil från karantän**
 
-Om du inte släpper eller tar bort filerna tas de bort när standard perioden för karantän lagring upphör.
+Om du inte släpper eller tar bort filerna tas de bort när standardlagringsperioden för karantän löper ut.
 
-#### <a name="actions-on-multiple-quarantined-files"></a>Åtgärder på flera filer i karantän
+#### <a name="actions-on-multiple-quarantined-files"></a>Åtgärder för flera filer i karantän
 
-När du markerar flera filer i karantän i listan (upp till 100) visas utfällda **Mass åtgärder** -fönstret där du kan vidta följande åtgärder:
+När du markerar flera filer i karantän i listan (upp till 100) visas fönstret Massåtgärder där du kan utföra följande åtgärder: 
 
-- **Släpp filer**
-- **Ta bort filer**: när du har klickat på **Ja** i varningen som visas tas filerna bort omedelbart.
+- **Släppa filer**
+- **Ta bort** filer: När du **klickar** på Ja i varningen som visas tas filerna bort direkt.
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>Använda Exchange Online PowerShell eller fristående EOP PowerShell för att visa och hantera meddelanden och filer i karantänen
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>Använda Exchange Online PowerShell eller fristående EOP PowerShell för att visa och hantera meddelanden och filer i karantän
 
-De cmdlets som du använder för att visa och hantera meddelanden och filer i karantänen är:
+De cmdlets du använder för att visa och hantera meddelanden och filer i karantän är:
 
 - [Delete-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/delete-quarantinemessage)
 
-- [Exportera-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/export-quarantinemessage)
+- [Export-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/export-quarantinemessage)
 
 - [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage)
 
-- För [hands version – QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/preview-quarantinemessage): Observera att denna cmdlet endast gäller för meddelanden, inte malware-filer från ATP för SharePoint Online, OneDrive för företag eller teams.
+- [Preview-QuarantineMessage:](https://docs.microsoft.com/powershell/module/exchange/preview-quarantinemessage)Observera att den här cmdleten endast används för meddelanden, inte för skadlig programvara från säkra bifogade filer i SharePoint, OneDrive och Microsoft Teams.
 
-- [Utgivning-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage)
+- [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage)

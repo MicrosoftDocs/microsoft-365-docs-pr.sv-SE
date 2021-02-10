@@ -22,17 +22,20 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 4ccc023a72ca450b1f0a433410206ccce59cb5f1
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 451a6b19139502a3765795694860e884a7a469bf
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142987"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175757"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Hur du rapporterar falska positiva/negativa tal i automatiserad undersökning och svarsfunktioner
 
-**Gäller för:**
-- Microsoft Defender för Office 365
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Gäller för**
+- [Microsoft Defender för Office 365 abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Om automatisk undersökning och svar [(AIR) i Office 365](automated-investigation-response-office.md) missade eller felaktigt identifierat något finns det åtgärder som teamet kan vidta för att åtgärda det. Sådana åtgärder omfattar:
 
@@ -56,7 +59,7 @@ Om din organisation använder [Microsoft Defender](https://docs.microsoft.com/wi
 
 ## <a name="undo-a-remediation-action"></a>Ångra en åtgärdsåtgärd
 
-Om en åtgärdsåtgärd har vidtagits för ett e-postmeddelande, en e-postbilaga eller en URL,och objektet egentligen inte är ett hot, kan säkerhetsåtgärdsteamet i de flesta fall ångra åtgärden och vidta åtgärder för att förhindra att meddelandet felaktigt är återkommande. Du kan använda antingen [Hotutforskaren](#undo-an-action-using-threat-explorer) eller [fliken Åtgärder för en undersökning](#undo-an-action-in-the-action-center) för att ångra en åtgärd.
+Om en åtgärdsåtgärd har vidtagits för ett e-postmeddelande, en e-postbilaga eller en URL,och objektet egentligen inte är ett hot, kan säkerhetsåtgärdsteamet i de flesta fall ångra åtgärden och vidta åtgärder för att förhindra att meddelandet felaktigt är återkommande. Du kan antingen använda [Hotutforskaren](#undo-an-action-using-threat-explorer) eller [fliken Åtgärder för en undersökning](#undo-an-action-in-the-action-center) för att ångra en åtgärd.
 
 > [!IMPORTANT]
 > Kontrollera att du har de behörigheter som behövs innan du försöker utföra följande uppgifter.

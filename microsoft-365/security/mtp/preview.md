@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ce0f1ae41b57db398c7ec84e078897a7345c1b9a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 9156025990e8da61006ac1d3b81a71be5580e00c
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930084"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167389"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Förhandsversionsfunktioner i Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 >[!IMPORTANT]
->Förhandsversionerna tillhandahålls utan ett servicenivåavtal och rekommenderas inte för produktionsarbetsbelastning. Vissa funktioner kanske inte stöds eller kan ha begränsade funktioner.
+>Förhandsversionerna tillhandahålls utan ett servicenivåavtal och rekommenderas inte för produktionsbelastningar. Vissa funktioner kanske inte stöds eller kan ha begränsade funktioner.
 
 **Gäller för:**
 - Microsoft 365 Defender
@@ -52,19 +52,20 @@ Aktivera inställningen för förhandsversionen och var bland de första att pro
 
 2. Välj **Microsoft 365 Defender.**
 
-
 3. Välj **Förhandsgranskningsfunktioner** > **Aktivera förhandsgranskningsfunktioner**. 
 
-3. Välj **Spara**.
+4. Välj **Spara**.
 
 Du vet att du har aktiverat förhandsgranskningsfunktionerna när kryssrutan **Aktivera förhandsgranskningsfunktioner** är markerad. 
 
 ## <a name="preview-features"></a>Förhandsgranskningsfunktioner
 Följande funktioner och förbättringar är för närvarande tillgängliga för förhandsgranskning:
 
-- **[Microsoft 365 Defender API:er](api-overview.md)** – Microsoft 365 Defender-API:er på nivå 1 gör att du kan automatisera arbetsflöden baserat på delade incidenter och avancerade tabeller för sökning. 
+### <a name="improved-microsoft-365-security-center"></a>Förbättrat Säkerhetscenter för Microsoft 365
+Det förbättrade [Microsoft 365 Säkerhetscenter](https://security.microsoft.com) är nu tillgänglig i allmänt tillgänglig förhandsversion. Den här nya upplevelsen tar Defender för Endpoint, Defender för Office 365, Microsoft 365 Defender och mer till Säkerhetscenter för Microsoft 365. Det här är det nya hemmet för att hantera dina säkerhetskontroller. [Läs om de senaste](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center).
+
+- **[Microsoft 365 Defender threat analytics-rapport](threat-analytics.md)** – Hotanalyser hjälper dig att svara på och minimera påverkan på aktiva attacker. Du kan också lära dig mer om attackförsök som blockeras av Microsoft 365 Defender-lösningar och vidta förebyggande åtgärder som minskar risken för ytterligare exponering och ökar motståndskraft. Som en del av den enhetliga säkerhetsupplevelsen är hotanalyser nu tillgängliga för Microsoft Defender för Endpoint och Microsoft Defender för Office E5-licensinnehavare.
+- **[Microsoft 365 Defender API:er](api-overview.md)** – Den högsta nivån i Microsoft 365 Defender API:er gör att du kan automatisera arbetsflöden baserat på delade incidenter och avancerade tabeller för sökning. 
 - **[Vidta åtgärder för avancerad sökning](advanced-hunting-take-action.md)**– innehåller snabbt hot eller hantera komprometterade tillgångar som du hittar i avancerad [sökning.](advanced-hunting-overview.md)
 - **[Schemareferens i portalen –](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** Få information om avancerade schematabeller för sökning direkt i säkerhetscentret. Förutom tabell- och kolumnbeskrivningar innehåller den här referensen händelsetyper `ActionType` (värden) och exempelfrågor som stöds.
 - **[Funktionen DeviceFromIP()](advanced-hunting-devicefromip-function.md)**– Få information om vilka enheter som har tilldelats en specifik IP-adress eller adresser vid ett visst intervall.
-
-

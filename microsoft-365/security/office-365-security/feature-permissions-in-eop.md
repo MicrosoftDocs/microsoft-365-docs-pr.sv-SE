@@ -8,150 +8,153 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
-description: Läs mer om den behörighet som krävs för uppgifter i det fristående Exchange Online Protection
-ms.openlocfilehash: ae43dc2223b17d3b73f9b76fa6bde8fb9cb95e77
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Läs mer om den behörighet som krävs för uppgifter i fristående Exchange Online Protection
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 4f1f364e684f2d1d76f26f573e66fbd50bf5138b
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202873"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167401"
 ---
 # <a name="permissions-in-standalone-eop"></a>Behörigheter i fristående EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+-  [Exchange Online Protection fristående](https://go.microsoft.com/fwlink/?linkid=2148611)
 
-Fristående Exchange Online Protection (EOP) utan Exchange Online-postlådor använder RBAC-behörighet (rollbaserad åtkomst kontroll) för att enkelt ge administratörer behörigheter. Du kan använda behörighets funktionerna i fristående EOP för att snabbt komma igång med din nya organisation.
+Fristående Exchange Online Protection (EOP) utan Exchange Online-postlådor använder behörighetsmodellen Rollbaserad åtkomstkontroll (RBAC) för att enkelt ge behörigheter till administratörer. Du kan använda behörighetsfunktionerna i fristående EOP för att komma igång snabbt och komma igång med den nya organisationen.
 
-Information om hur du tilldelar användare behörigheter finns i [Hantera administratörs roll grupper i EOP](manage-admin-role-group-permissions-in-eop.md).
+Information om hur du beviljar behörigheter till användare [finns i Hantera administratörsrollgrupper i EOP.](manage-admin-role-group-permissions-in-eop.md)
 
-Mer information om behörigheter i Microsoft 365 finns i [om administratörs roller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+Mer information om behörigheter i Microsoft 365 finns i [Om administratörsroller.](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)
 
 ## <a name="role-based-permissions"></a>Rollbaserade behörigheter
 
-Administratörs behörighet som du ger användare baseras på hanterings roller. En hanterings roll definierar de cmdlets som är tillgängliga för en uppsättning uppgifter. Eftersom administrations centret för Exchange (UK) och den fristående EOP-PowerShell använder båda cmdlets ger användare behörighet att utföra relaterade uppgifter i UK eller i fristående EOP PowerShell. Rollen e-postmottagare definierar till exempel de cmdlets som krävs för att ändra e-postanvändare.
+Administratörsbehörigheterna du till användarna är baserade på hanteringsroller. En hanteringsroll definierar cmdlets som är tillgängliga för en uppsättning aktiviteter. Eftersom både Exchange admin center (EAC) och fristående EOP PowerShell använder cmdlets, ger bevilja åtkomst till en cmdlet användaren behörighet att utföra relaterade uppgifter i EAC eller i fristående EOP PowerShell. Till exempel definierar rollen E-postmottagare de cmdlets som krävs för att ändra e-postanvändare.
 
-I fristående EOP är administrativa roller den enda typ av hanterings roll som är tillgänglig (det finns inga roller för slutanvändare eller roll tilldelning).
+I fristående EOP är administrativa roller den enda typ av hanteringsroll som är tillgänglig (det finns inga slutanvändareroller eller rolltilldelningsprinciper).
 
-## <a name="role-groups"></a>Roll grupper
+## <a name="role-groups"></a>Rollgrupper
 
-För att göra det lättare att tilldela roller till användare använder fristående EOP roll grupper. Hanterings roller är tilldelade till roll grupper och roll gruppens medlemmar får de behörigheter som är kopplade till rollerna. Med andra ord är inte lednings roller direkt kopplade till användarna. de har tilldelats roll gruppen. Med den här modellen kan du tilldela många roller till många roll grupps medlemmar samtidigt. Roll grupps medlemmar kan vara e-postanvändare, e-postaktiverade säkerhets grupper, användare från Microsoft 365 Admin Center och andra roll grupper.
+Fristående EOP använder rollgrupper för att göra det enklare att tilldela roller till användare. Hanteringsroller tilldelas rollgrupper och rollgruppsmedlemmarna får de behörigheter som är kopplade till rollerna. Med andra ord är hanteringsroller inte direkt tilldelade till användare. de har tilldelats till rollgruppen. Med den här modellen kan du tilldela många roller till många rollgruppmedlemmar samtidigt. Rollgruppsmedlemmar kan vara e-postanvändare, e-postaktiverade säkerhetsgrupper, användare från administrationscentret för Microsoft 365 och andra rollgrupper.
 
-Följande bild visar förhållandet mellan användare, roll grupper och roller.
+I följande bild visas förhållandet mellan användare, rollgrupper och roller.
 
 ![Relationer mellan roller, rollgrupper och medlemmar](../../media/ITPro_Security_RBAC_EXO_SimplifiedRoleGroupRelationship.png)
 
-De tillgängliga roll grupperna i fristående EOP beskrivs i följande tabell.
+De tillgängliga rollgrupperna i fristående EOP beskrivs i följande tabell.
 
 ****
 
-|Roll grupp|Beskrivning|Standard roller tilldelade|
+|Rollgrupp|Beskrivning|Tilldelade standardroller|
 |---|---|---|
-|ComplianceManagement|Konfigurera och hantera inställningar för efterlevnad i organisationen, inklusive data förlust skydd (DLP) om ditt abonnemang har DLP-funktioner. <br/><br/> Medlemmar i rollen [efterlevnad för administratörer](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator) i Azure AD får automatiskt behörigheterna för den här roll gruppen.|Gransknings loggar <br/><br/> Administration av efterlevnad <br/><br/> Information Rights Management <br/><br/> Hantering av bevarande <br/><br/> Gransknings loggar endast för visning <br/><br/> Skrivskyddad konfiguration <br/><br/> Endast visning-mottagare|
-|ContentExplorerContentViewer|Används inte.|Innehålls översikt för data klassificering|
-|ContentExplorerListViewer|Används inte.|Visnings program för data klassificering|
-|Kontakta|Visa och hantera e-postanvändare.|Återställ lösen ord <br/><br/> Användar alternativ <br/><br/> Endast visning-mottagare|
-|HygieneManagement|Hantera skydds funktioner (anti-spam, mot skadlig program vara osv.).|Transport hygien <br/><br/> Skrivskyddad konfiguration <br/><br/> Endast visning-mottagare|
-|MailFlowAdministrator|Visa och hantera godkända domäner och kopplingar|Fjärranslutna och godkända domäner <br/><br/> Endast visning-mottagare|
-|I|Administratörs åtkomst till hela organisationen och möjligheten att utföra nästan alla uppgifter. <br/><br/> Medlemmar i rollen [Global administratör](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) i Azure AD hämtar automatiskt behörigheterna för den här roll gruppen. <br/><br/> **Viktigt**! eftersom roll gruppen i är en kraftfull roll ska endast användare som utför administrativa uppgifter på arbets nivå vara medlemmar i den här roll gruppen.|Antimalware <br/><br/> AntiSpam <br/><br/> Gransknings loggar <br/><br/> Administratör för efterlevnad <br/><br/> Distributionsgrupper <br/><br/> Information Rights Management <br/><br/> Skapa e-postmottagare <br/><br/> E-postmottagare <br/><br/> Meddelande uppföljning <br/><br/> Migrering <br/><br/> Åtkomst till organisations klient <br/><br/> Organisations konfiguration <br/><br/> Inställningar för organisations transport <br/><br/> Karantän <br/><br/> Mottagar principer <br/><br/> Fjärranslutna och godkända domäner <br/><br/> Återställ lösen ord <br/><br/> Hantering av bevarande <br/><br/> Roll hantering <br/><br/> Säkerhets administratör <br/><br/> Skapa och medlemskap i säkerhets grupper <br/><br/> Säkerhets läsare <br/><br/> Etikett administratör för känslighet <br/><br/> Valt <br/><br/> Transport hygien <br/><br/> Transport regler <br/><br/> Användar alternativ <br/><br/> Skrivskyddat antivirus program <br/><br/> Skrivskyddat AntiSpam <br/><br/> Gransknings loggar endast för visning <br/><br/> Skrivskyddad konfiguration <br/><br/> Endast visning-karantän <br/><br/> Endast visning-mottagare <br/><br/> Skrivskyddad Threat Intelligence|
+|ComplianceManagement|Konfigurera och hantera efterlevnadsinställningar inom organisationen, inklusive skydd mot dataförlust (DLP) om prenumerationen har DLP-funktioner. <p> Medlemmar med rollen [Efterlevnadsadministratör](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator) i Azure AD får automatiskt behörigheterna för rollgruppen.|Granskningsloggar <p> Efterlevnadsadministration <p> Information Rights Management <p> Bevarandehantering <p> View-Only granskningsloggar <p> View-Only konfiguration <p> View-Only mottagare|
+|ContentExplorerContentViewer|Används inte.|Visningsprogram för dataklassificeringsinnehåll|
+|ContentExplorerListViewer|Används inte.|Visningsprogram för dataklassificeringslista|
+|HelpDesk|Visa och hantera e-postanvändare.|Återställa lösenord <p> Användaralternativ <p> View-Only mottagare|
+|Det här är Enmanagement|Hantera skyddsfunktioner (skydd mot skräppost, skadlig programvara osv.).|Transport Ende sn s <p> View-Only konfiguration <p> View-Only mottagare|
+|MailFlowAdministrator|Visa och hantera godkända domäner och kopplingar|Fjärrdomäner och godkända domäner <p> View-Only mottagare|
+|OrganizationManagement|Administratörsåtkomst till hela organisationen och möjligheten att utföra nästan vilken uppgift som helst. <p> Medlemmar med rollen [Global administratör](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) i Azure AD får automatiskt behörigheterna för rollgruppen. <p> **Viktigt:** Eftersom rollgruppen Organisationsmanagement är en kraftfull roll är det endast användare som utför administrativa uppgifter på organisationsnivå som ska vara medlemmar i den här rollgruppen.|AntiMalware <p> AntiSpam <p> Granskningsloggar <p> Efterlevnadsadministratör <p> Distributionsgrupper <p> Information Rights Management <p> Skapa e-postmottagare <p> E-postmottagare <p> Meddelandespårning <p> Migrering <p> Klientåtkomst för organisationen <p> Organisationskonfiguration <p> Inställningar för organisationstransport <p> Karantän <p> Principer för mottagare <p> Fjärrdomäner och godkända domäner <p> Återställa lösenord <p> Bevarandehantering <p> Rollhantering <p> Säkerhetsadministratör <p> Skapa och medlemskap i säkerhetsgrupper <p> Säkerhetsläsare <p> Känslighetsetikettsadministratör <p> Över överse med <p> Transport Ende sn s <p> Transportregler <p> Användaralternativ <p> View-Only AntiMalware <p> View-Only AntiSpam <p> View-Only granskningsloggar <p> View-Only konfiguration <p> View-Only karantän <p> View-Only mottagare <p> View-Only Threat Intelligence|
 |QuarantineAdministrator|Hantera meddelanden i karantän för alla mottagare.|Karantän|
-|RecipientManagement|Skapa, hantera och ta bort mottagar objekt i organisationen.|Distributionsgrupper <br/><br/> Skapa e-postmottagare <br/><br/> E-postmottagare <br/><br/> Meddelande uppföljning <br/><br/> Migrering <br/><br/> Mottagar principer <br/><br/> Återställ lösen ord|
-|RecordsManagement|Konfigurera funktioner för regelefterlevnad, till exempel bevarande princip koder, meddelande klassificeringar och regler för e-postflöde (kallas även transport regler).|Meddelande uppföljning <br/><br/> Hantering av bevarande <br/><br/> Transport regler|
-|SecurityAdministrator|Konfigurera alla aspekter av skydd i organisationen (anti-spam, mot skadlig kod, anti-förfalskning, karantän osv.). <br/><br/> Medlemmar i rollen [säkerhets administratör](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) i Azure AD hämtar automatiskt behörigheterna för den här roll gruppen.|Antimalware <br/><br/> AntiSpam <br/><br/> Gransknings loggar <br/><br/> Karantän <br/><br/> Säkerhets administratör <br/><br/> Etikett administratör för känslighet <br/><br/> Skrivskyddat antivirus program <br/><br/> Skrivskyddat AntiSpam <br/><br/> Gransknings loggar endast för visning <br/><br/> Endast visning-karantän <br/><br/> Skrivskyddad Threat Intelligence|
-|SecurityReader|Skrivskyddad åtkomst till alla skydds aspekter i organisationen (anti-spam, skadlig program vara, anti-förfalskning, karantän osv.). <br/><br/> Medlemmar i rollen [säkerhets läsare](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader) i Azure AD får automatiskt behörigheterna för den här roll gruppen.|Säkerhets läsare <br/><br/> Skrivskyddat antivirus program <br/><br/> Skrivskyddat AntiSpam <br/><br/> Endast visning-karantän <br/><br/> Skrivskyddad Threat Intelligence|
-|TenantAdmins|Medlemskap i den här roll gruppen synkroniseras mellan tjänster och hanteras centralt. Den här roll gruppen är som standard inte tilldelad några roller. Det kommer att vara medlem i roll gruppen organisations hantering och kommer att ärva dessa behörigheter.|none (ingen)|
-|ViewOnlyOrganizationManagement|Visa mottagare, skydd och konfigurations objekt samt deras egenskaper i organisationen.|Administratör för efterlevnad <br/><br/> Säkerhets administratör <br/><br/> Säkerhets läsare <br/><br/> Etikett administratör för känslighet <br/><br/> Skrivskyddad konfiguration <br/><br/> Endast visning-mottagare|
+|RecipientManagement|Skapa, hantera och ta bort mottagarobjekt i organisationen.|Distributionsgrupper <p> Skapa e-postmottagare <p> E-postmottagare <p> Meddelandespårning <p> Migrering <p> Principer för mottagare <p> Återställa lösenord|
+|RecordsManagement|Konfigurera efterlevnadsfunktioner, till exempel bevarandeprinciptaggar, meddelandeklassificerings- och e-postflödesregler (kallas även transportregler).|Meddelandespårning <p> Bevarandehantering <p> Transportregler|
+|SecurityAdministrator|Konfigurera alla aspekter av skydd i organisationen (skydd mot skräppost, skadlig programvara, förfalskning, karantän osv.). <p> Medlemmar med rollen [Säkerhetsadministratör](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) i Azure AD får automatiskt behörigheterna för rollgruppen.|AntiMalware <p> AntiSpam <p> Granskningsloggar <p> Karantän <p> Säkerhetsadministratör <p> Känslighetsetikettsadministratör <p> View-Only AntiMalware <p> View-Only AntiSpam <p> View-Only granskningsloggar <p> View-Only karantän <p> View-Only Threat Intelligence|
+|SecurityReader|Enkel åtkomst till alla aspekter av skyddet i organisationen (skydd mot skräppost, skadlig programvara, förfalskning, karantän osv.). <p> Medlemmar med rollen [Säkerhetsläsare](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader) i Azure AD får automatiskt behörigheterna för rollgruppen.|Säkerhetsläsare <p> View-Only AntiMalware <p> View-Only AntiSpam <p> View-Only karantän <p> View-Only Threat Intelligence|
+|TenantAdmins|Medlemskap i den här rollgruppen synkroniseras mellan tjänster och hanteras centralt. Som standard tilldelas den här rollgruppen inte några roller. Den blir dock medlem i rollgruppen Organisationshantering och ärver behörigheterna.|none (ingen)|
+|ViewOnlyOrganizationManagement|Visa mottagare, skydd och konfigurationsobjekt och deras egenskaper i organisationen.|Efterlevnadsadministratör <p> Säkerhetsadministratör <p> Säkerhetsläsare <p> Känslighetsetikettsadministratör <p> View-Only konfiguration <p> View-Only mottagare|
 |
 
-Om du arbetar i en mindre organisation som bara har några få administratörer kan du behöva lägga till dessa användare i roll gruppen organisations hantering och du kan aldrig behöva använda de andra roll grupperna. Om du arbetar i en större organisation kan du ha administratörer som utför specifika uppgifter, till exempel inställningar för mottagare. I sådana fall kan du lägga till en administratör i roll gruppen för mottagar hantering och en annan administratör till roll gruppen organisations hantering. Dessa administratörer kan sedan hantera sina särskilda områden, men de har inte behörighet att hantera områden som de inte ansvarar för.
+Om du arbetar i en liten organisation som bara har ett fåtal administratörer kan du behöva lägga till de användarna endast i rollgruppen Organisationshantering, och du kanske aldrig behöver använda de andra rollgrupperna. Om du arbetar i en större organisation kan det hända att du har administratörer som utför specifika uppgifter, till exempel mottagarens konfiguration. I så fall kan du lägga till en administratör i rollgruppen Mottagarhantering och en annan administratör i rollgruppen Organisationshantering. Administratörerna kan sedan hantera sina specifika områden, men de har inte behörighet att hantera områden som de inte ansvarar för.
 
-Om de inbyggda roll grupperna i Exchange Online inte matchar arbets administratörens jobb funktion kan du skapa roll grupper och lägga till roller för dem. Mer information finns i [Hantera roll grupper i fristående EOP](manage-admin-role-group-permissions-in-eop.md).
+Om de inbyggda rollgrupperna i Exchange Online inte stämmer överens med jobbfunktionen för administratörerna kan du skapa rollgrupper och lägga till roller i dem. Mer information finns i [Hantera rollgrupper i fristående EOP.](manage-admin-role-group-permissions-in-eop.md)
 
-## <a name="roles"></a>Role
+## <a name="roles"></a>Roller
 
 De inbyggda rollerna som är tillgängliga i fristående EOP beskrivs i följande tabell.
 
 ****
 
-|Roll * *|Beskrivning|Standard roll grupp tilldelningar|
+|Roll**|Beskrivning|Tilldelningar av standardrollgrupper|
 |---|---|---|
-|Antimalware|Visa och ändra konfiguration och rapporter för funktioner mot skadlig program vara.|I <br/><br/> SecurityAdministrator|
-|AntiSpam|Visa och ändra konfiguration och rapporter för skydd mot skräp post.|I <br/><br/> SecurityAdministrator|
-|Gransknings loggar|Sök i gransknings loggen för administratörer och se resultatet.|ComplianceManagement <br/><br/> I <br/><br/> SecurityAdministrator|
-|Administratör för efterlevnad<sup>\*</sup>||ComplianceManagement <br/><br/> I <br/><br/> ViewOnlyOrganizationManagement|
-|Innehålls översikt för data klassificering<sup>\*</sup>||ContentExplorerContentViewer|
-|Visnings program för data klassificering<sup>\*</sup>||
-|Distributionsgrupper|Skapa och hantera alla distributions grupper, e-postaktiverade säkerhets grupper och medlemmar.|I <br/><br/> RecipientManagement|
-|Information Rights Management<sup>\*</sup>||ComplianceManagement <br/><br/> I|
-|Skapa e-postmottagare|Skapa och ta bort e-postanvändare.|I <br/><br/> RecipientManagement|
-|E-postmottagare|Ändra befintliga e-postanvändare.|I <br/><br/> RecipientManagement|
-|Meddelande uppföljning<sup>\*</sup>||I <br/><br/> RecipientManagement <br/><br/> Hantering av Arkiv handlingar|
-|Migreringsläge<sup>\*</sup>||I <br/><br/> RecipientManagement|
-|MyBaseOptions|Gör det möjligt för användarna att visa sina egna meddelanden i karantän. <br/><br/> Rollen tilldelas automatiskt till användarna och du kan inte tilldela den manuellt.|none (ingen)|
-|Åtkomst till organisations klient<sup>\*</sup>||I|
-|Organisations konfiguration|Visa rapporter.|I|
-|Inställningar för organisations transport<sup>\*</sup>||I|
-|Karantän|Hantera alla typer av meddelande i karantän för alla mottagare.|I <br/><br/> QuarantineAdministrator <br/><br/> SecurityAdministrator|
-|Mottagar principer<sup>\*</sup>||I <br/><br/> RecipientManagement|
-|Fjärranslutna och godkända domäner|Hantera fjärrdomäner, godkända domäner och kopplingar.|MailFlowAdministrator <br/><br/> I|
-|Återställ lösen ord<sup>\*</sup>||Kontakta <br/><br/> I <br/><br/> RecipientManagement|
-|Hantering av bevarande<sup>\*</sup>||ComplianceManagement <br/><br/> I <br/><br/> RecordsManagement|
-|Roll hantering|Skapa och hantera roll grupper.|I|
-|Säkerhets administratör|Hantera konfigurationen och rapporterna för alla säkerhets-och skydds funktioner.|I <br/><br/> SecurityAdministrator <br/><br/> ViewOnlyOrganizationManagement|
-|Skapa och medlemskap i säkerhets grupper|Skapa och hantera e-postaktiverade säkerhets grupper.|I|
-|Säkerhets läsare|Visa konfiguration och rapporter för säkerhets-och skydds funktioner.|Organisationshantering <br/><br/> SecurityReader <br/><br/> ViewOnlyOrganizationManagement|
-|Etikett administratör för känslighet<sup>\*</sup>||I <br/><br/> SecurityAdministrator <br/><br/> ViewOnlyOrganizationManagement|
-|Valt<sup>\*</sup>||I|
-|Transport hygien|Hantera funktioner mot skadlig program vara, skräp post och anti-förfalskningar.|HygieneManagement <br/><br/> I|
-|Transport regler|Skapa och hantera regler för e-postflöde (kallas även transport regler).|I <br/><br/> RecordsManagement|
-|Användar alternativ|Ändra befintliga e-postanvändare.|Kontakta <br/><br/> I|
-|Skrivskyddat antivirus program|Visa konfiguration och rapporter för funktioner mot skadlig program vara.|I <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
-|Skrivskyddat AntiSpam|Visa konfiguration och rapporter för skydd mot skräp post.|I <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
-|Gransknings loggar endast för visning|Sök i gransknings loggen för administratörer och se resultatet.|ComplianceManagement <br/><br/> I <br/><br/> SecurityAdministrator|
-|Skrivskyddad konfiguration|Visa alla inställningar för organisationen och e-postflöde (icke-mottagare) i organisationen.|ComplianceManagement <br/><br/> HygieneManagement <br/><br/> I <br/><br/> ViewOnlyOrganizationManagement|
-|Endast visning-karantän|Visa alla meddelanden i karantän för alla mottagare.|I <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
-|Endast visning-mottagare|Visa egenskaper för mottagare och kör meddelande spårning.|ComplianceManagement <br/><br/> Kontakta <br/><br/> HygieneManagement <br/><br/> MailFlowAdministrator <br/><br/>  I <br/><br/> ViewOnlyOrganizationManagement|
-|Skrivskyddad Threat Intelligence<sup>\*</sup>||I <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
+|AntiMalware|Visa och ändra konfiguration och rapporter för funktioner mot skadlig programvara.|OrganizationManagement <p> SecurityAdministrator|
+|AntiSpam|Visa och ändra konfiguration och rapporter för skydd mot skräppost.|OrganizationManagement <p> SecurityAdministrator|
+|Granskningsloggar|Sök i administratörens granskningslogg och visa resultaten.|ComplianceManagement <p> OrganizationManagement <p> SecurityAdministrator|
+|Efterlevnadsadministratör<sup>\*</sup>||ComplianceManagement <p> OrganizationManagement <p> ViewOnlyOrganizationManagement|
+|Visningsprogram för dataklassificeringsinnehåll<sup>\*</sup>||ContentExplorerContentViewer|
+|Visningsprogram för dataklassificeringslista<sup>\*</sup>||
+|Distributionsgrupper|Skapa och hantera alla distributionsgrupper, e-postaktiverade säkerhetsgrupper och medlemmar.|OrganizationManagement <p> RecipientManagement|
+|IR (Information Rights Management)<sup>\*</sup>||ComplianceManagement <p> OrganizationManagement|
+|Skapa e-postmottagare|Skapa och ta bort e-postanvändare.|OrganizationManagement <p> RecipientManagement|
+|E-postmottagare|Ändra befintliga e-postanvändare.|OrganizationManagement <p> RecipientManagement|
+|Meddelandespårning<sup>\*</sup>||OrganizationManagement <p> RecipientManagement <p> Hantering av arkivhandlingar|
+|Migrering<sup>\*</sup>||OrganizationManagement <p> RecipientManagement|
+|MyBaseOptions|Tillåter användare att visa sina egna meddelanden i karantän. <p> Den här rollen tilldelas automatiskt till användare och du kan inte tilldela den manuellt.|none (ingen)|
+|Klientåtkomst för organisationen<sup>\*</sup>||OrganizationManagement|
+|Organisationskonfiguration|Visa rapporter.|OrganizationManagement|
+|Inställningar för organisationstransport<sup>\*</sup>||OrganizationManagement|
+|Karantän|Hantera alla typer av meddelande i karantän för alla mottagare.|OrganizationManagement <p> QuarantineAdministrator <p> SecurityAdministrator|
+|Principer för mottagare<sup>\*</sup>||OrganizationManagement <p> RecipientManagement|
+|Fjärrdomäner och godkända domäner|Hantera fjärrdomäner, godkända domäner och kopplingar.|MailFlowAdministrator <p> OrganizationManagement|
+|Återställa lösenord<sup>\*</sup>||HelpDesk <p> OrganizationManagement <p> RecipientManagement|
+|Bevarandehantering<sup>\*</sup>||ComplianceManagement <p> OrganizationManagement <p> RecordsManagement|
+|Rollhantering|Skapa och hantera rollgrupper.|OrganizationManagement|
+|Säkerhetsadministratör|Hantera konfiguration och rapporter för alla säkerhets- och skyddsfunktioner.|OrganizationManagement <p> SecurityAdministrator <p> ViewOnlyOrganizationManagement|
+|Skapa och medlemskap i säkerhetsgrupper|Skapa och hantera e-postaktiverade säkerhetsgrupper.|OrganizationManagement|
+|Säkerhetsläsare|Visa konfiguration och rapporter för säkerhets- och skyddsfunktioner.|Organisationshantering <p> SecurityReader <p> ViewOnlyOrganizationManagement|
+|Känslighetsetikettsadministratör<sup>\*</sup>||OrganizationManagement <p> SecurityAdministrator <p> ViewOnlyOrganizationManagement|
+|Överövervakning<sup>\*</sup>||OrganizationManagement|
+|Transport Ende sn s|Hantera skydd mot skadlig programvara, skydd mot skräppost och skydd mot förfalskning.|Det här är Enmanagement <p> OrganizationManagement|
+|Transportregler|Skapa och hantera e-postflödesregler (kallas även transportregler).|OrganizationManagement <p> RecordsManagement|
+|Användaralternativ|Ändra befintliga e-postanvändare.|HelpDesk <p> OrganizationManagement|
+|View-Only AntiMalware|Visa konfiguration och rapporter för funktioner mot skadlig programvara.|OrganizationManagement <p> SecurityAdministrator <p> SecurityReader|
+|View-Only AntiSpam|Visa konfiguration och rapporter för funktioner som är skräppostskyddade.|OrganizationManagement <p> SecurityAdministrator <p> SecurityReader|
+|View-Only granskningsloggar|Sök i administratörens granskningslogg och visa resultaten.|ComplianceManagement <p> OrganizationManagement <p> SecurityAdministrator|
+|View-Only konfiguration|Visa alla inställningar för organisation och e-postflöde (icke-mottagare) i organisationen.|ComplianceManagement <p> Det här är Enmanagement <p> OrganizationManagement <p> ViewOnlyOrganizationManagement|
+|View-Only karantän|Visa alla meddelanden i karantän för alla mottagare.|OrganizationManagement <p> SecurityAdministrator <p> SecurityReader|
+|View-Only mottagare|Visa mottagaregenskaper och köra meddelandespårning.|ComplianceManagement <p> HelpDesk <p> Det här är Enmanagement <p> MailFlowAdministrator <p>  OrganizationManagement <p> ViewOnlyOrganizationManagement|
+|View-Only Threat Intelligence<sup>\*</sup>||OrganizationManagement <p> SecurityAdministrator <p> SecurityReader|
 |
 
-<sup>\*</sup> Även om den här rollen är tillgänglig gör den egentligen inget användbart i fristående EOP.
+<sup>\*</sup> Även om den här rollen är tillgänglig så har den i princip ingenting användbart i fristående EOP.
 
 ## <a name="microsoft-365-permissions-in-standalone-eop"></a>Microsoft 365-behörigheter i fristående EOP
 
-När du skapar en användare i administrations centret för Microsoft 365 kan du välja om du vill tilldela olika administrativa roller, till exempel global administratör, tjänst administratör, lösen ords administratör och så vidare, till användaren. Vissa, men inte alla, Microsoft 365-roller ger administratörs behörighet för användare i EOP.
+När du skapar en användare i administrationscentret för Microsoft 365 kan du välja om du vill tilldela olika administrativa roller, till exempel global administratör, tjänstadministratör, lösenordsadministratör och så vidare, till användaren. Vissa, men inte alla, Microsoft 365-roller beviljar administrativa användarbehörigheter i EOP.
 
 > [!NOTE]
-> Det konto som du använde för att skapa en fristående EOP-organisation tilldelas automatiskt till rollen global administratör.
+> Det konto som du använde för att skapa en fristående EOP-organisation tilldelas automatiskt rollen Global administratör.
 
-I följande tabell visas Microsoft 365-roller och de fristående EOP som de motsvarar. Mer information om de här rollerna finns i [om administratörs roller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+I följande tabell visas Microsoft 365-roller och de fristående EOP-rollgrupper som de motsvarar. Mer information om de här rollerna finns i [Om administratörsroller.](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)
 
 ****
 
-|Microsoft 365-roll|Roll gruppen EOP|
+|Microsoft 365-roll|EOP-rollgrupp|
 |---|---|
-|Exchange-administratör|I|
-|Global administratör|I <br/><br/> **Obs!** den globala administratörs rollen och i-rolltjänsten är sammankopplade med en speciell roll grupp för företags administratörer. Roll gruppen företags administratörer hanteras internt och kan inte ändras direkt.|
-|Lösenordsadministratör|Kontakta|
+|Exchange-administratör|OrganizationManagement|
+|Global administratör|OrganizationManagement <p> **Obs!** Rollen Global administratör och rollgruppen Organisationsmanagement är knutna till varandra med hjälp av en särskild rollgrupp som företagsadministratör. Rollgruppen Företagsadministratör hanteras internt och kan inte ändras direkt.|
+|Lösenordsadministratör|HelpDesk|
 |Global läsare|ViewOnlyOrganizationManagement|
 |Säkerhetsadministratör|SecurityAdministrator|
 |Säkerhetsläsare|SecurityReader|
 |
 
-Andra Microsoft 365-roller har ingen motsvarande EOP roll grupp och ger inte administratörs behörighet i EOP. Mer information om hur du tilldelar en Microsoft 365-roll till en användare finns i [tilldela administratörs roller](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles).
+Andra Microsoft 365-roller har inte en motsvarande EOP-rollgrupp och beviljar inte administrativa behörigheter i EOP. Mer information om hur du tilldelar en Microsoft 365-roll till en användare finns i [Tilldela administratörsroller.](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)
 
-Användare kan beviljas administrativa rättigheter i EOP utan att lägga till dem i Microsoft 365-roller. Det gör du genom att lägga till användaren som medlem i en EOP. Användaren får behörighet i EOP, men de får inte behörighet i andra Microsoft 365-arbetsbelastningar.
+Användare kan beviljas administrativ behörighet i EOP utan att lägga till dem i Microsoft 365-roller. Det gör du genom att lägga till användaren som medlem i en EOP-rollgrupp. Användaren får behörigheter i EOP, men de får inte behörigheter i andra Microsoft 365-arbetsbelastningar.
 
 ### <a name="how-do-you-know-this-worked"></a>Hur vet du att det fungerade?
 
-Om du vill kontrol lera att du har kopierat en roll grupp gör du något av följande:
+Kontrollera att du har kopierat en rollgrupp genom att göra något av följande:
 
-- Gå **till** \> **Administratörs rollerna**i UK och kontrol lera att roll gruppen är listad (eller inte listad). Välj roll gruppen och kontrol lera inställningarna i informations fönstret eller klicka på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-EditIcon.png) för att bekräfta inställningarna.
+- Gå till Behörigheter för  administratörsroller i EAC och kontrollera \> att rollgruppen visas (eller inte visas). Markera rollgruppen och kontrollera inställningarna i informationsfönstret eller klicka på **Redigera** ikon för ![ att verifiera ](../../media/ITPro-EAC-EditIcon.png) inställningarna.
 
-- I Exchange Online PowerShell ersätter du \<Role Group Name\> namnet på roll gruppen och kör följande kommando för att kontrol lera att roll gruppen finns (eller inte existerar) och verifierar inställningarna:
+- I Exchange Online PowerShell ersätter du med namnet på rollgruppen och kör följande kommando för att verifiera att rollgruppen finns (eller inte finns) och verifiera \<Role Group Name\> inställningarna:
 
-    ```PowerShell
-    Get-RoleGroup -Identity "<Role Group Name>" | Format-List
-    ```
+  ```PowerShell
+  Get-RoleGroup -Identity "<Role Group Name>" | Format-List
+  ```

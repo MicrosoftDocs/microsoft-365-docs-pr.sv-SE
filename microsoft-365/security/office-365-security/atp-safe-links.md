@@ -9,7 +9,6 @@ audience: Admin
 ms.article: overview
 f1_keywords:
 - "197503"
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
@@ -25,355 +24,361 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: I den här artikeln kan administratörer lära sig mer om skydd för säkra länkar i Defender för Office 365 för att skydda sin organisation från nätfiske och andra attacker som använder skadlig URL.
-ms.openlocfilehash: 066732e2f1a886e303fea86730baeb78c8152990
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: I den här artikeln kan administratörer läsa mer om skydd mot säkra länkar i Defender för Office 365 för att skydda organisationen från nätfiske och andra attacker som använder skadliga URL-adresser.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 251b3e71be30f90ac828abc8bf34877d65615336
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659495"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175781"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Säkra länkar i Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
 > [!IMPORTANT]
-> Den här artikeln är avsedd för företags kunder som har [Microsoft Defender för Office 365](office-365-atp.md). Om du använder Outlook.com, Microsoft 365 eller Microsoft 365 personal och du letar efter information om Safelinks i Outlook kan du läsa mer i [avancerad Outlook.com-säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Den här artikeln är avsedd för företagskunder som har [Microsoft Defender för Office 365](office-365-atp.md). Om du använder Outlook.com, Microsoft 365 Family eller Microsoft 365 Personal och letar efter information om säkra länkar i Outlook, se [Avancerad Outlook.com säkerhet.](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)
 
-Säkra länkar är en funktion i [Defender för Office 365](office-365-atp.md) som tillhandahåller URL-genomsökning och omskrivning av inkommande e-postmeddelanden i e-postflöde och för kontroll av URL-adresser och länkar i e-postmeddelanden och andra platser. Sökning efter säkra länkar sker utöver det vanliga [skyddet mot skräp post och skydd mot skadlig program vara](anti-spam-and-anti-malware-protection.md) i inkommande e-postmeddelanden i Exchange Online Protection (EOP). Sökning efter säkra länkar skyddar din organisation från illasinnade länkar som används i nätfiske och andra attacker.
+Säkra länkar är en funktion i Defender för [Office 365](office-365-atp.md) som tillhandahåller URL-genomsökning och omskrivning av inkommande e-postmeddelanden i e-postflödet samt tids för klick-verifiering av URL:er och länkar i e-postmeddelanden och andra platser. Genomsökning av säkra länkar sker utöver det vanliga skyddet mot skräppost och skadlig programvara för inkommande [e-postmeddelanden](anti-spam-and-anti-malware-protection.md) i Exchange Online Protection (EOP). Genomsökning av säkra länkar kan skydda organisationen från skadliga länkar som används vid nätfiske och andra angrepp.
 
-Säkra länkar skyddar du på följande platser:
+Skydd mot säkra länkar är tillgängligt på följande platser:
 
-- **E-postmeddelanden**: skyddade länkar skydd för länkar i e-postmeddelanden styrs av principer för säkra länkar. Det finns ingen standard princip för säkra länkar, **så för att skydda säkra länkar i e-postmeddelanden måste du skapa en eller flera principer för säkra länkar**. Anvisningar finns i [Konfigurera principer för säkra länkar i Microsoft Defender för Office 365](set-up-atp-safe-links-policies.md).
+- **E-postmeddelanden:** Skydd mot säkra länkar för länkar i e-postmeddelanden styrs av principer för säkra länkar. Det finns ingen standardprincip för säkra länkar, så för att skydda säkra länkar i e-postmeddelanden måste du skapa en eller flera principer **för säkra länkar.** Instruktioner finns i Konfigurera [principer för säkra länkar i Microsoft Defender för Office 365.](set-up-atp-safe-links-policies.md)
 
-  Mer information om säkra Länkar för e-postmeddelanden finns i avsnittet [Inställningar för säkra länkar i e-postmeddelanden](#safe-links-settings-for-email-messages) längre ned i den här artikeln.
+  Mer information om skydd mot säkra länkar för e-postmeddelanden finns i inställningarna [för säkra länkar för e-postmeddelanden](#safe-links-settings-for-email-messages) längre fram i den här artikeln.
 
-- **Microsoft Teams** (för närvarande i tryck för hands version): säkra länkar skydd för länkar i Teams konversationer, gruppchattar eller från kanaler styrs också av principer för säkra länkar. Det finns ingen standard princip för Safe Links, **så för att skydda säkra länkar i Teams måste du skapa en eller flera principer för säkra länkar**.
+- **Microsoft Teams** (för närvarande i förhandsversionen av TAP): Skydd av säkra länkar för länkar i Teams-konversationer, gruppchattar eller från kanaler styrs också av principer för säkra länkar. Det finns ingen standardprincip för säkra länkar, så för att få skydd av säkra länkar i Teams måste du skapa en **eller flera principer för säkra länkar.**
 
-  Mer information om skydd för säkra länkar i Teams finns i avsnittet [Inställningar för säkra Länkar för Microsoft Teams](#safe-links-settings-for-microsoft-teams) senare i den här artikeln.
+  Mer information om skydd mot säkra länkar i Teams finns i inställningarna [för säkra länkar för Microsoft Teams](#safe-links-settings-for-microsoft-teams) senare i den här artikeln.
 
-- **Office 365-appar**: säkra länkar skydd för Office 365-appar är tillgängliga i Skriv bords-, mobil-och webb åtkomst punkter som stöds. Du **konfigurerar** skydd för säkra Länkar för Office 365-appar i den globala inställningen **utanför** Safe Links-principer. Anvisningar finns i [Konfigurera globala inställningar för inställningar för säkra länkar i Microsoft Defender för Office 365](configure-global-settings-for-safe-links.md).
+- **Office 365-program:** Skydd mot säkra länkar för Office 365-program är tillgängligt i skrivbords-, mobil- och webb-APS som stöds. Du **konfigurerar** skydd mot säkra länkar för Office 365-program i den globala inställning som ligger **utanför** principerna för säkra länkar. Instruktioner finns i Konfigurera [globala inställningar för inställningar för säkra länkar i Microsoft Defender för Office 365.](configure-global-settings-for-safe-links.md)
 
-  Men säkra länkar skyddar för Office 365- **appar endast för** användare som är inkluderade i principer för aktiva säkra länkar. Om en användare inte ingår i en princip för aktiva säkra länkar får användaren inte säkra länkar i Office 365-appar som stöds.
+  Skydd mot säkra länkar för Office 365-program används däremot bara för användare som ingår i aktiva principer för säkra länkar.  Om en användare inte ingår i en aktiv princip för säkra länkar får användaren inte skydd mot säkra länkar i Office 365-program som stöds.
 
-  Mer information om skydd för säkra länkar i Office 365-appar finns i avsnittet [Inställningar för säkra Länkar för office 365-appar](#safe-links-settings-for-office-365-apps) längre ned i den här artikeln.
+  Mer information om skydd mot säkra länkar i Office 365-program finns i inställningarna för Säkra länkar för [Office 365-program](#safe-links-settings-for-office-365-apps) senare i den här artikeln.
 
-Den här artikeln innehåller detaljerad information om följande typer av inställningar för säkra länkar:
+Den här artikeln innehåller detaljerade beskrivningar av följande typer av inställningar för säkra länkar:
 
-- **Inställningar i principer för säkra länkar**: de här inställningarna gäller endast för användare som ingår i vissa principer och inställningarna kan skilja sig mellan principer. Dessa inställningar omfattar:
+- **Inställningar i principer för säkra** länkar: De här inställningarna gäller endast för de användare som ingår i de specifika principerna, och inställningarna kan skilja sig åt mellan principer. Dessa inställningar omfattar:
 
-  - [Inställningar för säkra Länkar för e-postmeddelanden](#safe-links-settings-for-email-messages)
-  - [Inställningar för säkra Länkar för Microsoft Teams](#safe-links-settings-for-microsoft-teams)
-  - ["Skriv inte över följande URL-adresser" i principer för säkra länkar](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
+  - [Inställningar för säkra länkar för e-postmeddelanden](#safe-links-settings-for-email-messages)
+  - [Inställningar för säkra länkar för Microsoft Teams](#safe-links-settings-for-microsoft-teams)
+  - ["Skriva inte om följande URL:er" i principer för säkra länkar](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **Inställningar för global Safe Links**: de här inställningarna är globalt konfigurerade, inte i principer för säkra länkar. Inställningarna gäller dock endast för användare som ingår i principer för aktiva säkra länkar. Dessa inställningar omfattar:
+- **Globala inställningar för säkra** länkar: De här inställningarna konfigureras globalt, inte i principer för säkra länkar. Inställningarna gäller dock endast för användare som ingår i aktiva principer för säkra länkar. Dessa inställningar omfattar:
 
-  - [Inställningar för säkra Länkar för Office 365-appar](#safe-links-settings-for-office-365-apps)
-  - ["Blockera följande URL-adresser" för säkra länkar](#block-the-following-urls-list-for-safe-links)
+  - [Inställningar för säkra länkar för Office 365-appar](#safe-links-settings-for-office-365-apps)
+  - [Listan "Blockera följande URL:er" för Säkra länkar](#block-the-following-urls-list-for-safe-links)
 
-I följande tabell beskrivs scenarier för säkra länkar i Microsoft 365 och Office 365 organisationer som innehåller Defender för Office 365 (med andra ord är bristande licenser aldrig ett problem i exemplen).
+I följande tabell beskrivs scenarier för säkra länkar i Microsoft 365- och Office 365-organisationer där Defender för Office 365 ingår (brist på licensiering är alltså aldrig ett problem i exemplen).
 
 ****
 
-|Ovanligt|Resultat|
+|Scenario|Resultat|
 |---|---|
-|Jean är medlem i marknadsförings avdelningen. Säkra länkar skydd för Office 365-appar är aktiverat i de globala inställningarna för säkra länkar och en policy för säkra länkar som gäller för medlemmar i marknadsförings avdelningen finns. Jean öppnar en PowerPoint-presentation i ett e-postmeddelande och klickar sedan på en URL i presentationen.|Jean skyddas av säkra länkar. <p> Jean ingår i en policy för säkra länkar och skydd för säkra Länkar för Office 365-appar är aktiverat. <p> Mer information om kraven för skydd mot säkra länkar i Office 365-appar finns i avsnittet [Inställningar för säkra Länkar för Office 365-appar](#safe-links-settings-for-office-365-apps) längre ned i den här artikeln.|
-|Chris Microsoft 365 E5-organisation har inga konfigurerade principer för säkra länkar. Chris får ett e-postmeddelande från en extern avsändare som innehåller en URL till en illvillig webbplats som han sedan klickar på.|Chris skyddas inte av säkra länkar. <p> En administratör måste skapa minst en princip för säkra Länkar för att alla ska få säkra länkar i inkommande e-postmeddelanden. Christer måste inkludera villkoren i policyn för att skydda skydd mot säkra länkar.|
-|I Pat organisation har inga administratörer några principer för Safe Links, men säkra länkar skyddar Office 365-apparna. Pat öppnar ett Word-dokument och klickar på en URL i filen.|Pat skyddas inte av säkra länkar. <p> Även om skydd för säkra Länkar för Office 365-appar är aktiverat globalt är Pat inte inkluderat i några aktiva principer för säkert länkar, så skyddet kan inte tillämpas.|
-|I Aaron Lee-organisationen `https://tailspintoys.com` konfigureras i **Blockera följande URL-adresser** i de globala inställningarna för säkra länkar. En princip för säkra länkar som innehåller Aaron Lee finns redan. Aaron Lee får ett e-postmeddelande som innehåller URL-adressen `https://tailspintoys.com/aboutus/trythispage` . Aaron Lee klickar på URL-adressen.|URL-adressen kanske blockeras automatiskt för Aaron Lee; Det beror på URL-posten i listan och e-postklienten Aaron Lee används. Mer information finns i avsnittet ["Blockera följande URL-adresser" för säkra länkar](#block-the-following-urls-list-for-safe-links) längre ned i den här artikeln.|
-|Janne och Julia är både arbete för contoso.com. För länge sedan, administratörer konfigurerade principer för säkra länkar som gäller för båda Janne och Julia. Janne skickar ett e-postmeddelande till Julia och vet inte att e-postmeddelandet innehåller en skadlig URL.|Julia skyddas av säkra länkar **om** den princip för säkra länkar som gäller för henne är konfigurerad för att tillämpas på meddelanden mellan interna mottagare. Mer information finns i avsnittet [Inställningar för säkra länkar i e-postmeddelanden](#safe-links-settings-for-email-messages) i den här artikeln.|
+|Han är medlem i marknadsföringsavdelningen. Skydd mot säkra länkar för Office 365-program aktiveras i de globala inställningarna för Säkra länkar och det finns en princip för säkra länkar som gäller för medlemmar i marknadsföringsavdelningen. Han öppnar en PowerPoint-presentation i ett e-postmeddelande och klickar sedan på en URL i presentationen.|Han är skyddad av Säkra länkar. <p> Ingår i en princip för säkra länkar och skydd mot säkra länkar för Office 365-appar är aktiverat. <p> Mer information om kraven för skydd mot säkra länkar i Office 365-program finns i avsnittet Säkra länkar för [Office 365-program](#safe-links-settings-for-office-365-apps) senare i den här artikeln.|
+|Chris Microsoft 365 E5-organisation har inga principer för säkra länkar konfigurerade. Chris får ett e-postmeddelande från en extern avsändare som innehåller en URL till en skadlig webbplats som han slutligen klickar på.|Chris skyddas inte av Säkra länkar. <p> En administratör måste skapa minst en princip för säkra länkar för att alla ska kunna få skydd mot säkra länkar i inkommande e-postmeddelanden. Chris måste omfattas av policyvillkoren för att skydda säkra länkar.|
+|I Pats organisation har inga administratörer skapat några principer för säkra länkar, men skydd mot säkra länkar för Office 365-program är aktiverat. Pat öppnar ett Word-dokument och klickar på en URL i filen.|Pat skyddas inte av Säkra länkar. <p> Även om skydd mot säkra länkar för Office 365-program är aktiverat globalt ingår Pat inte i några aktiva principer för säkra länkar, så skyddet kan inte tillämpas.|
+|I Lees organisation är `https://tailspintoys.com` den konfigurerad i listan **Blockera följande URL-adresser** i de globala inställningarna för Säkra länkar. En princip för säkra länkar som innehåller Lee redan finns. Lee får ett e-postmeddelande som innehåller `https://tailspintoys.com/aboutus/trythispage` WEBBADRESSen. Lee klickar på WEBBADRESSen.|URL-adressen kan blockeras automatiskt för Lee. Det beror på URL-posten i listan och vilken e-postklient Lee använde. Mer information finns i listan ["Blockera följande URL:er" för avsnittet Säkra](#block-the-following-urls-list-for-safe-links) länkar senare i den här artikeln.|
+|Både Johan och Julia arbetar för contoso.com. För länge sedan konfigurerade administratörer principer för säkra länkar som gäller för både Janne och Julia. Johan skickar ett e-postmeddelande till Julia, utan att veta att e-postmeddelandet innehåller en skadlig URL.|Julia skyddas av säkra länkar **om principen** för säkra länkar som gäller för henne är konfigurerad att gälla meddelanden mellan interna mottagare. Mer information finns i inställningarna för [Säkra länkar för e-postmeddelanden](#safe-links-settings-for-email-messages) längre fram i den här artikeln.|
 
-## <a name="safe-links-settings-for-email-messages"></a>Inställningar för säkra Länkar för e-postmeddelanden
+## <a name="safe-links-settings-for-email-messages"></a>Inställningar för säkra länkar för e-postmeddelanden
 
-Säkra länkar söker efter kända hyperlänkar i inkommande e-post. Skannade URL-adresser skrivs om med Microsofts standard-URL-prefix: `https://nam01.safelinks.protection.outlook.com` . När länken har skrivits om analyseras den för potentiellt skadligt innehåll.
+Säkra länkar söker igenom inkommande e-postmeddelanden efter kända skadliga hyperlänkar. Skannade URL:er skrivs om med Microsofts standard-URL-prefix: `https://nam01.safelinks.protection.outlook.com` . När länken har skrivits om analyseras den för potentiellt skadligt innehåll.
 
-När du har skrivit om en URL-adress sparas URL-adressen om, även om meddelandet vidarebefordras eller besvaras. Ytterligare länkar som läggs till i meddelandet vidarebefordras eller besvaras inte.
+När säkra länkar har skrivit om en URL förblir URL:en omskriven, även om meddelandet vidarebefordras eller besvaras. Ytterligare länkar som läggs till i det vidarebefordrade eller besvarade meddelandet skrivs inte om.
 
 Inställningarna i principer för säkra länkar som gäller för e-postmeddelanden beskrivs i följande lista:
 
-- **Välj åtgärd för okända URL-adresser i meddelanden**: aktiverar eller inaktiverar sökning efter säkra länkar i e-postmeddelanden. Det rekommenderade värdet är **på**. Om du aktiverar den här inställningen får du följande åtgärder.
+- **Välj åtgärden för okända potentiellt skadliga URL-adresser i meddelanden:** Aktiverar eller inaktiverar sökning med säkra länkar i e-postmeddelanden. Det rekommenderade värdet är **På.** Om du slår på den här inställningen resulterar det i följande åtgärder.
 
-  - Sökning efter säkra länkar är aktiverat i Outlook (C2R) i Windows.
-  - URL-adresser skrivs om och användare dirigeras genom skydd för säkra länkar när de klickar på URL-adresser i meddelanden.
-  - När du klickar på det här alternativet kontrol leras URL-adresser mot en lista med kända skadliga URL-adresser och [listan Blockera följande URL](#block-the-following-urls-list-for-safe-links): er.
-  - URL-adresser som inte har ett giltigt rykte är sprängade asynkront i bakgrunden.
+  - Genomsökning av säkra länkar är aktiverat i Outlook (C2R) i Windows.
+  - URL:er skrivs om och användare dirigeras genom skydd mot säkra länkar när de klickar på URL-adresser i meddelanden.
+  - Vid klickning kontrolleras URL:er mot en lista med kända skadliga URL:er och listan ["Blockera följande URL:er".](#block-the-following-urls-list-for-safe-links)
+  - URL:er som inte har ett giltigt rykte detoneras asynkront i bakgrunden.
 
-- **Använda URL-genomsökning i real tid för misstänkta länkar och länkar som pekar på filer**: aktiverar genomsökning i real tid med länkar, inklusive länkar i e-postmeddelanden som pekar på nedladdnings Bart innehåll. Det rekommenderade värdet är aktiverat.
+- **Använd URL-skanning** i realtid för misstänkta länkar och länkar som pekar på filer: Möjliggör genomsökning av länkar i realtid, inklusive länkar i e-postmeddelanden som pekar på hämtningsbart innehåll. Det rekommenderade värdet aktiveras.
 
-  - **Vänta på att URL-genomsökningen ska slutföras innan du levererar meddelandet**:
+  - **Vänta tills URL-skanningen har slutförts innan du levererar meddelandet:**
 
-    - Aktive rad: meddelanden som innehåller URL: er sparas tills genomsökningen är klar. Meddelanden levereras först efter att URL-adresserna bekräftats. Det här är det rekommenderade värdet.
-    - Disabled: om URL-genomsökning inte kan slutföras kan du leverera meddelandet ändå.
+    - Aktiverad: Meddelanden som innehåller URL:er hålls kvar tills genomsökning har slutförts. Meddelanden levereras endast när URL:erna har bekräftats vara säkra. Det här är det rekommenderade värdet.
+    - Inaktiverat: Om URL-skanningen inte kan slutföra levereras meddelandet ändå.
 
-- **Använda säkra Länkar för e-postmeddelanden som skickas inom organisationen**: aktiverar eller inaktiverar sökningar efter säkra länkar på meddelanden som skickas mellan interna avsändare och interna mottagare i samma Exchange Online-organisation. Det rekommenderade värdet är aktiverat.
+- **Tillämpa säkra länkar på e-postmeddelanden** som skickas inom organisationen: Aktiverar eller inaktiverar säker länkskanning för meddelanden som skickas mellan interna avsändare och interna mottagare inom samma Exchange Online-organisation. Det rekommenderade värdet aktiveras.
 
-- **Spåra inte användare**: aktiverar eller inaktiverar lagring av säkra länkar Klicka på data för URL-adresser som visas i e-postmeddelanden. Rekommenderat värde är att lämna den här inställningen avmarkerad (för att spåra användares klickningar).
+- **Spåra inte användarklick: Aktiverar** eller inaktiverar lagring av data för säkra länkar klickdata för URL:er som klickas i e-postmeddelanden. Rekommenderad inställning är att låta den här inställningen vara avmarkerad (för att spåra användarklick).
 
-  URL-adress klicka på spårning för länkar i e-postmeddelanden som skickas mellan interna avsändare och interna mottagare stöds inte för närvarande.
+  URL-klickspårning för länkar i e-postmeddelanden som skickas mellan interna avsändare och interna mottagare stöds för närvarande inte.
 
-- **Tillåt inte att användare klickar genom till ursprunglig URL**: tillåter eller blockerar användare från att klicka på [varnings sidan](#warning-pages-from-safe-links) till den ursprungliga URL-adressen. Rekommendation svärdet är aktiverat.
+- **Tillåt inte att användare klickar till den ursprungliga** URL:en: Tillåter eller blockerar användare från att klicka på [varningssidan](#warning-pages-from-safe-links) till den ursprungliga URL:en. Rekommenderade värden är aktiverat.
 
-- **Skriv inte om följande webb adresser**: lämnar URL-adresser som de är. Behåller en anpassad lista med URL-adresser som inte behöver skannas. Listan är unik för varje princip för säkert länkar. Mer information om listan för att **inte skriva om följande URL-adresser** finns i [listorna "Skriv inte om följande URL: er" i avsnittet principer för säkra länkar](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) längre ned i den här artikeln.
+- **Skriva inte om följande URL:er:** Lämnar URL:er som de är. Med den här listan ser du till att en anpassad lista med säkra webbadresser som inte behöver skannas visas. Listan är unik för varje princip för säkra länkar. Mer information om  listan Ange inte om följande URL-adresser finns i listorna "Skriva inte om följande URL:er" i avsnittet om principer för säkra länkar längre fram i den här artikeln. [](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-Mer information om rekommenderade värden för princip inställningar för standard och Strict för principer för säkra länkar finns i [princip inställningar för säkra länkar](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).
+Mer information om rekommenderade värden för standard- och strikt-principinställningar för principer för säkra länkar finns i [principinställningarna för Säkra länkar.](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings)
 
-- **Mottagar filter**: du måste ange de mottagar villkor och undantag som avgör vem principen gäller för. Du kan använda dessa egenskaper för villkor och undantag:
+- **Mottagarfilter:** Du måste ange mottagarens villkor och undantag som bestämmer vem principen gäller för. Du kan använda de här egenskaperna för villkor och undantag:
 
-  - **Mottagaren är**
-  - **Mottagar domänen är**
+  - **Mottagaren**
+  - **Mottagardomänen är**
   - **Mottagaren är medlem i**
 
-  Du kan bara använda ett villkor eller ett undantag, men villkoret eller undantaget kan innehålla flera värden. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_).
+  Du kan bara använda ett villkor eller undantag en gång, men villkoret eller undantaget kan innehålla flera värden. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_).
 
-- **Prioritet**: om du skapar flera principer kan du ange i vilken ordning de används. Inga två policyer kan ha samma prioritet, och policyhantering stannar efter att den första policyn har tillämpats.
+- **Prioritet:** Om du skapar flera principer kan du ange i vilken ordning de ska tillämpas. Inga två policyer kan ha samma prioritet, och policyhantering stannar efter att den första policyn har tillämpats.
 
   För mer information om ordningsföljden och hur flera policyer utvärderas och tillämpas, se [Order och prioritet för e-postskydd](how-policies-and-protections-are-combined.md).
 
-### <a name="how-safe-links-works-in-email-messages"></a>Så fungerar länkar i e-postmeddelanden
+### <a name="how-safe-links-works-in-email-messages"></a>Hur säkra länkar fungerar i e-postmeddelanden
 
-På en hög nivå finns här hur säkra länkar skyddar sig på URL-adresser i e-postmeddelanden:
+Så här fungerar skydd mot säkra länkar på en hög nivå med URL-adresser i e-postmeddelanden:
 
-1. All e-post går genom EOP, där IP (Internet Protocol) och kuvert filter, signaturbaserade skydd mot skadlig program vara, filter mot skräp post och skadlig program vara innan meddelandet skickas till mottagarens post låda.
+1. All e-post går via EOP, där INTERNETPROTOKOLL (IP) och kuvertfilter, signaturbaserat skydd mot skadlig programvara, skydd mot skräppost och skadlig programvara filtreras innan meddelandet levereras till mottagarens postlåda.
 
-2. Användaren öppnar meddelandet i post lådan och klickar på en URL i meddelandet.
+2. Användaren öppnar meddelandet i sin postlåda och klickar på en URL i meddelandet.
 
-3. Säkra länkar kontrollerar URL-adressen omedelbart innan webbplatsen öppnas:
+3. Med Säkra länkar kontrolleras url:en omedelbart innan webbplatsen öppnas:
 
-   - Om URL-adressen ingår i listan **Blockera följande URL-adresser** öppnas en [blockerad URL-varning](#blocked-url-warning) .
+   - Om URL:en finns i **listan Blockera följande URL:er** öppnas en varning [om blockerad](#blocked-url-warning) URL.
 
-   - Om URL: en pekar på en webbplats som har bedömts vara skadlig visas en [varnings sida för skadlig webbplats](#malicious-website-warning) (eller en annan varnings sida).
+   - Om URL:en pekar på en webbplats som [](#malicious-website-warning) har fastställt att den är skadlig, öppnas en varningssida för skadlig webbplats (eller en annan varningssida).
 
-   - Om URL: en pekar på en nedladdnings bar fil och **Använd URL-genomsökning i real tid för att misstänkta länkar och länkar som pekar på filer** har Aktiver ATS i den princip som gäller för användaren, är nedladdnings bar fil markerad.
+   - Om **URL:en** pekar på en hämtningsbar fil och använd URL-genomsökning i realtid för misstänkta länkar och länkar som pekar på filer har aktiverats i principen som gäller för användaren, är den hämtningsbara filen markerad.
 
-   - Om webb adressen är säker öppnas webbplatsen.
+   - Om URL:en är säker öppnas webbplatsen.
 
-## <a name="safe-links-settings-for-microsoft-teams"></a>Inställningar för säkra Länkar för Microsoft Teams
+## <a name="safe-links-settings-for-microsoft-teams"></a>Inställningar för säkra länkar för Microsoft Teams
 
 > [!IMPORTANT]
-> Från och med mars 2020 är den här funktionen i förhands granskning och är endast tillgänglig för medlemmar i Microsoft Teams-programmet (KNACKa). Information om versions schema finns i [Microsoft 365-översikten](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams).
+> Från och med mars 2020 är den här funktionen i förhandsversion och är endast tillgänglig för medlemmar i Microsoft Teams Technology Adoption Program (TAP). Mer information om versionsschemat finns i Microsoft [365-översikten.](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams)
 
-Du aktiverar eller inaktiverar skydd för säkra Länkar för Microsoft Teams i principer för säkra länkar. Du använder specifikt **åtgärden Välj åtgärd för okända eller potentiellt skadliga URL-adresser i Microsoft Teams** . Det rekommenderade värdet är **på**.
+Du aktiverar eller inaktiverar skydd mot säkra länkar för Microsoft Teams i principer för säkra länkar. Mer specifikt använder du åtgärden **Markera för okända eller potentiellt skadliga URL-adresser i Microsoft Teams-inställningen.** Det rekommenderade värdet är **På.**
 
 Följande inställningar i principer för säkra länkar som gäller för länkar i e-postmeddelanden gäller även för länkar i Teams:
 
-- **Använda URL-genomsökning i real tid för misstänkta länkar och länkar som pekar på filer**
-- **Spåra inte användar klickningar**
-- **Tillåt inte att användare klickar genom till ursprunglig URL**
+- **Använda URL-genomsökning i realtid för misstänkta länkar och länkar som pekar på filer**
+- **Spåra inte användarklick**
+- **Tillåt inte att användare klickar till den ursprungliga URL:en**
 
-De här inställningarna förklaras i tidigare [Inställningar för säkra länkar i e-postmeddelanden](#safe-links-settings-for-email-messages) .
+De här inställningarna förklaras i tidigare [inställningar för säkra länkar för e-postmeddelanden.](#safe-links-settings-for-email-messages)
 
-När du har aktiverat Safe Links Protection för Microsoft Teams kontrol leras URL-adresser i Teams mot en lista med kända illasinnade länkar när den skyddade användaren klickar på länken (tids kontroll). URL-adresser skrivs inte över. Om en länk har visat sig vara skadlig kan användarna se följande:
+När du aktiverar skydd mot säkra länkar för Microsoft Teams kontrolleras URL:er i Teams mot en lista med kända skadliga länkar när den skyddade användaren klickar på länken (tids för klickskydd). URL:er skrivs inte om. Om en länk visas som skadlig har användarna följande funktioner:
 
-- Om länken klickade i en grupp konversation, gruppchatt eller från kanaler visas varnings sidan som visas i skärm bilden nedan i standard webbläsaren.
-- Om länken klickade på en Fäst flik visas varnings sidan i Teams-gränssnittet på den fliken. Alternativet att öppna länken i en webbläsare är avaktiverat av säkerhets skäl.
-- Beroende på hur alternativet **Tillåt inte att användare klickar via till ursprunglig URL** i principen är konfigurerat, kommer användaren att tillåtas eller får inte klicka dig fram till den ursprungliga URL-adressen (**Fortsätt ändå (rekommenderas inte)** i skärm bilden. Vi rekommenderar att du aktiverar inställningen **Tillåt inte att användare klickar via till ursprunglig URL-adress** så att användarna inte kan klicka dig fram till den ursprungliga URL-adressen.
+- Om länken klickades i en Teams-konversation, gruppchatt eller från kanaler visas varningssidan som visas i skärmbilden nedan i standardwebbläsaren.
+- Om du klickade på länken från en fäst flik visas varningssidan i Teams-gränssnittet på den fliken. Alternativet att öppna länken i en webbläsare är inaktiverat av säkerhetsskäl.
+- Beroende på hur tillåt inte användare att klicka sig fram till den ursprungliga **URL-inställningen** i principen har konfigurerats tillåts eller tillåts användaren inte att klicka till den ursprungliga URL:en (Fortsätt ändå **(rekommenderas inte)** på skärmbilden. Vi rekommenderar att du aktiverar Tillåt inte att användare klickar sig fram till den ursprungliga **URL-inställningen** så att användarna inte kan klicka till den ursprungliga URL:en.
 
-Om användaren som skickade länken inte är med i en princip för säkra länkar där team skydd är aktiverat kan användaren klicka dig fram till original-URL: en på deras dator eller enhet.
+Om användaren som skickade länken inte finns med i en princip för säkra länkar där Teams-skydd är aktiverat kan användaren klicka sig fram till den ursprungliga URL:en på sin dator eller enhet.
 
-![Ett säkert länkar för Teams-sidan rapporterar en illasinnad länk.](../../media/tp-safe-links-for-teams-malicious.png)
+![En sida med säkra länkar för Teams som rapporterar en skadlig länk.](../../media/tp-safe-links-for-teams-malicious.png)
 
-Om du klickar på knappen **gå tillbaka** på varnings sidan returneras användaren till dess ursprungliga kontext eller URL-plats. Om du klickar på den ursprungliga länken igen kommer du att få säkra länkar att söka igenom URL-adressen igen, så att varnings sidan visas igen.
+Om du **klickar på knappen** Gå tillbaka på varningssidan återgår användaren till sin ursprungliga kontext eller URL-plats. Om du klickar på den ursprungliga länken igen får dock Felsäkert länkar att ändra webbadressen, så att varningssidan visas igen.
 
 ### <a name="how-safe-links-works-in-teams"></a>Hur säkra länkar fungerar i Teams
 
-På en hög nivå finns här hur säkra länkar skyddar sig efter URL-adresser i Microsoft Teams:
+På en hög nivå fungerar skydd av säkra länkar för URL:er i Microsoft Teams så här:
 
 1. En användare startar Teams-appen.
 
-2. Microsoft 365 kontrollerar att användarens organisation innehåller Microsoft Defender för Office 365 och att användaren ingår i en Active Safe Links-princip där skyddet för Microsoft Teams är aktiverat.
+2. Microsoft 365 verifierar att användarens organisation inkluderar Microsoft Defender för Office 365 och att användaren ingår i en aktiv princip för säkra länkar där skydd för Microsoft Teams är aktiverat.
 
-3. URL-adresser verifieras vid tiden för användaren i chatt, gruppchatt, kanaler och flikar.
+3. URL:er valideras när användaren klickar i chattar, gruppchattar, kanaler och flikar.
 
-## <a name="safe-links-settings-for-office-365-apps"></a>Inställningar för säkra Länkar för Office 365-appar
+## <a name="safe-links-settings-for-office-365-apps"></a>Inställningar för säkra länkar för Office 365-appar
 
-Säkra länkar skydd för Office 365-appar kontrollerar länkar i Office-dokument, inte länkar i e-postmeddelanden (men den kan kontrol lera länkar i bifogade Office-dokument i e-postmeddelanden när dokumentet har öppnats).
+Skydd mot säkra länkar för Office 365-program kontrollerar länkar i Office-dokument, inte länkar i e-postmeddelanden (men det kan kontrollera länkar i bifogade Office-dokument i e-postmeddelanden när dokumentet har öppnats).
 
-Säkra länkar skydd för Office 365-appar har följande klient krav:
+Skydd mot säkra länkar för Office 365-program har följande klientkrav:
 
-- Microsoft 365-appar eller Microsoft 365 Business Premium.
+- Microsoft 365 Apps eller Microsoft 365 Business Premium.
   - Aktuella versioner av Word, Excel och PowerPoint på Windows, Mac eller i en webbläsare.
-  - Office-appar på iOS-eller Android-enheter.
-  - Visio på Windows.
+  - Office-appar på iOS- eller Android-enheter.
+  - Visio i Windows.
   - OneNote i en webbläsare.
 
-- Office 365-apparna är konfigurerade för modern lösenordsautentisering. Mer information finns i [så här fungerar modern inloggningsautentisering för office 2013-, office 2016-och office 2019-klient program](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016).
+- Office 365-program är konfigurerade för modern autentisering. Mer information finns i Hur modern autentisering fungerar för [Office 2013-, Office 2016- och Office 2019-klientprogram.](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)
 
-- Användarna loggas in med sina arbets-eller skol konton. Mer information finns i [Logga in på Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).
+- Användarna loggas in med sina arbets- eller skolkonton. Mer information finns i [Logga in på Office.](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)
 
-Du konfigurerar skydd för säkra Länkar för Office 365-appar i de globala inställningarna för säkra länkar, inte i principer för säkra länkar. Men för att skydda säkra Länkar för Office 365-appar ska användas, användaren som öppnar Office-dokumentet och klickar på länken, måste ingå i en aktiv säker länk-princip.
+Du konfigurerar skydd mot säkra länkar för Office 365-program i de globala inställningarna för Säkra länkar, inte i principer för säkra länkar. Men för att skydd mot säkra länkar för Office 365-program ska tillämpas måste användaren som öppnar Office-dokumentet och klickar på länken inkluderas i en aktiv princip för säkra länkar.
 
-Följande inställningar för säkra länkar är tillgängliga för Office 365-appar:
+Följande inställningar för Säkra länkar är tillgängliga för Office 365-program:
 
-- **Office 365-program**: aktiverar eller inaktiverar sökning efter säkra länkar i Office 365-appar som stöds. Standard och Rekommenderat värde är **på**.
+- **Office 365-program:** Aktiverar eller inaktiverar säker sökning med länkar i Office 365-program som stöds. Standardvärdet och det rekommenderade värdet är **På.**
 
-- **Spåra inte när användare klickar på säkra länkar**: aktiverar eller inaktiverar lagring av säkra länkar Klicka på data för URL-adresser på Word, Excel, PowerPoint och Visio. Det rekommenderade värdet är **inaktiverat**, vilket innebär att användare spåras.
+- **Spåra inte när användare** klickar på Säkra länkar: Aktiverar eller inaktiverar data för säker länkklick på data för URL-adresser som klickas i skrivbordsversionerna av Word, Excel, PowerPoint och Visio. Det rekommenderade värdet är **Av,** vilket innebär att användarens klick spåras.
 
-- **Tillåt inte att användare klickar via säkra länkar till original-URL**: tillåter eller blockerar användare från att klicka på [varnings sidan](#warning-pages-from-safe-links) till den ursprungliga URL-adressen i Skriv bords versionerna Word, Excel, PowerPoint och Visio. Standard och Rekommenderat värde är **på**.
+- **Låt inte användare** klicka igenom säkra länkar till den ursprungliga [](#warning-pages-from-safe-links) URL:en: Tillåter eller blockerar användare från att klicka på varningssidan till den ursprungliga URL-adressen i skrivbordsversionerna av Word, Excel, PowerPoint och Visio. Standardvärdet och det rekommenderade värdet är **På.**
 
-Information om hur du konfigurerar inställningar för Safe Links för Office 365-appar finns i [Konfigurera skydd för säkra Länkar för office 365-appar](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center).
+Information om hur du konfigurerar inställningarna för säkra länkar för Office 365-program finns i Konfigurera skydd mot säkra länkar för [Office 365-program.](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center)
 
-Mer information om rekommenderade värden för standard-och strikta princip inställningar finns i [globala inställningar för säkra länkar](recommended-settings-for-eop-and-office365-atp.md#global-settings-for-safe-links).
+Mer information om rekommenderade värden för principinställningarna Standard och Strikt finns i [Globala inställningar för Säkra länkar.](recommended-settings-for-eop-and-office365-atp.md#global-settings-for-safe-links)
 
-### <a name="how-safe-links-works-in-office-365-apps"></a>Så fungerar säkra länkar i Office 365-appar
+### <a name="how-safe-links-works-in-office-365-apps"></a>Hur säkra länkar fungerar i Office 365-appar
 
-På en hög nivå finns här hur säkra länkar skyddar sig för URL-adresser i Office 365-appar. De Office 365-appar som stöds beskrivs i föregående avsnitt.
+Så här fungerar säkert länkskydd för URL:er i Office 365-program på en hög nivå. De Office 365-program som stöds beskrivs i föregående avsnitt.
 
-1. En användare loggar in med sitt arbets-eller skol konto i en organisation som innehåller Microsoft 365-appar eller Microsoft 365 Business Premium.
+1. En användare loggar in med sitt arbets- eller skolkonto i en organisation som innehåller Microsoft 365 Apps eller Microsoft 365 Business Premium.
 
-2. Användaren öppnar och klickar på en länk ett Office-dokument i en Office-app som stöds.
+2. Användaren öppnas och klickar på en länk till ett Office-dokument i ett Office-program som stöds.
 
-3. Säkra länkar kontrollerar URL-adressen omedelbart innan mål webbplatsen öppnas:
+3. Med Säkra länkar kontrolleras URL:en omedelbart innan målwebbplatsen öppnas:
 
-   - Om URL-adressen ingår i listan som hoppar över genomsökning av säkra länkar ( **blockera den här listan med** URL-adresser) öppnas [varnings sidan för blockerad URL](#blocked-url-warning) .
+   - Om URL:en finns med i listan som  hoppar över genomsökning av säkra länkar (listan Blockera följande URL-adresser) öppnas en [varningssida](#blocked-url-warning) för blockerade URL:er.
 
-   - Om URL: en pekar på en webbplats som har bedömts vara skadlig visas en [varnings sida för skadlig webbplats](#malicious-website-warning) (eller en annan varnings sida).
+   - Om URL:en pekar på en webbplats som [](#malicious-website-warning) har fastställt att den är skadlig, öppnas en varningssida för skadlig webbplats (eller en annan varningssida).
 
-   - Om URL: en pekar på en nedladdnings bar fil och den princip för säkra länkar som gäller för användaren är konfigurerad för att söka igenom länkar till nedladdnings Bart innehåll (**Använd URL-genomsökning i real tid för misstänkta länkar och länkar som pekar på filer**), är nedladdnings bar fil markerad.
+   - Om **URL-adressen** pekar på en hämtningsbar fil och principen för säkra länkar som gäller för användaren är konfigurerad att söka igenom länkar till hämtningsbart innehåll (använd URL-genomsökning i realtid för misstänkta länkar och länkar som pekar på filer) är den nedladdningsbara filen markerad.
 
-   - Om URL: en anses vara säker kommer användaren till webbplatsen.
+   - Om URL:en anses vara säker tas användaren till webbplatsen.
 
-   - Om det inte går att slutföra sökning efter säkra länkar utlöses inte skydd mot säkra länkar. I Office-skrivbords klienter får användaren en varning innan de fortsätter till mål webbplatsen.
+   - Om genomsökning av säkra länkar inte kan slutföras utlöses inte skydd för säkra länkar. I Office-skrivbordsklienter får användaren en varning innan han eller hon går vidare till målwebbplatsen.
 
 > [!NOTE]
-> Det kan ta några sekunder i början av varje session att kontrol lera att användaren har säkra Länkar för Office aktiverat.
+> Det kan ta flera sekunder i början av varje session att verifiera att användaren har säkra länkar för Office aktiverat.
 
-## <a name="block-the-following-urls-list-for-safe-links"></a>"Blockera följande URL-adresser" för säkra länkar
+## <a name="block-the-following-urls-list-for-safe-links"></a>Listan "Blockera följande URL:er" för Säkra länkar
 
-I listan **Blockera följande URL: er** definieras de länkar som alltid blockeras av genomsökning av Safe Links på följande platser.
+Listan **Blockera följande URL:er** definierar de länkar som alltid blockeras av genomsökning av säkra länkar på följande platser:
 
 - E-postmeddelanden.
-- Dokument i Office 365-appar i Windows och Mac.
+- Dokument i Office 365-program i Windows och Mac.
 - Dokument i Office för iOS och Android.
 
-När en användare i en Active Safe Link-princip klickar på en blockerad länk i ett program som stöds, tas de till den [blockerade varnings](#blocked-url-warning) sidan för URL-adressen.
+När en användare i en aktiv princip för säkra länkar klickar på en blockerad länk i ett program som stöds kommer de till varningssidan [Blockerad](#blocked-url-warning) URL.
 
-Du konfigurerar listan med URL-adresser i de globala inställningarna för säkra länkar. Anvisningar finns i [Konfigurera listan "Blockera följande URL-adresser"](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center).
+Du konfigurerar listan med URL-adresser i de globala inställningarna för Säkra länkar. Instruktioner finns i [Konfigurera listan "Blockera följande URL:er".](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center)
 
 **Anmärkningar**:
 
-- En verklig universell lista med URL: er som blockeras överallt finns i [hantera URL-adresser i listan Tillåt/blockera för klient organisation](tenant-allow-block-list.md).
+- En verkligt universell lista över URL-adresser som blockeras överallt finns i [Hantera klientorganisationens lista över tillåtna/blockerade adresser.](tenant-allow-block-list.md)
 
-- Restriktioner
+- Begränsningar:
   - Det maximala antalet poster är 500.
-  - Den maximala längden för en post är 128 tecken.
-  - Alla poster får inte överstiga 10 000 tecken.
+  - Den maximala längden på en post är 128 tecken.
+  - Alla poster får högst vara 10 000 tecken.
 
-- Ta inte med snedstreck ( `/` ) i slutet av webb adressen. Till exempel Använd `https://www.contoso.com` , inte `https://www.contoso.com/` .
+- Inkludera inte ett snedstreck `/` () i slutet av URL:en. Du kan till exempel `https://www.contoso.com` använda , inte `https://www.contoso.com/` .
 
-- Endast en domän-URL (till exempel `contoso.com` eller `tailspintoys.com` ) blockerar alla URL-adresser som innehåller domänen.
+- En URL med endast domän (till `contoso.com` `tailspintoys.com` exempel) blockerar alla URL-adresser som innehåller domänen.
 
-- Du kan blockera en under domän utan att blockera den fullständiga domänen. Om du till exempel `toys.contoso.com*` blockerar en URL som innehåller under domänen, men den blockerar inte URL-adresser som innehåller den fullständiga domänen `contoso.com` .
+- Du kan blockera en underdomän utan att blockera hela domänen. Spärrar `toys.contoso.com*` till exempel URL-adresser som innehåller underdomänen, men url-adresser som innehåller den fullständiga domänen blockeras `contoso.com` inte.
 
 - Du kan ta med upp till tre jokertecken ( `*` ) per URL-post.
 
-### <a name="entry-syntax-for-the-block-the-following-urls-list"></a>Syntax för listan "Blockera följande URL-adresser"
+### <a name="entry-syntax-for-the-block-the-following-urls-list"></a>Postsyntaxen för listan "Blockera följande URL:er"
 
-Exempel på vilka värden du kan ange och deras resultat finns beskrivna i följande tabell:
+Exempel på värden som du kan ange och deras resultat beskrivs i följande tabell:
 
 ****
 
 |Value|Resultat|
 |---|---|
-|`contoso.com` <p> eller <p> `*contoso.com*`|Blockerar domänen, under domäner och sökvägar. Till exempel, `https://www.contoso.com` , `https://sub.contoso.com` och `https://contoso.com/abc` blockeras.|
-|`https://contoso.com/a`|Block `https://contoso.com/a` men inte ytterligare under banor som `https://contoso.com/a/b` .|
-|`https://contoso.com/a*`|Blockerar `https://contoso.com/a` och ytterligare under Sök vägar som `https://contoso.com/a/b` .|
-|`https://toys.contoso.com*`|Blockerar en under domän ( `toys` i det här exemplet) men tillåter klickningar till andra domän-URL: er (gilla `https://contoso.com` eller `https://home.contoso.com` ).|
+|`contoso.com` <p> eller <p> `*contoso.com*`|Spärrar domäner, underdomäner och sökvägar. Till `https://www.contoso.com` `https://sub.contoso.com` exempel, och `https://contoso.com/abc` blockeras.|
+|`https://contoso.com/a`|Spärrar `https://contoso.com/a` men inte ytterligare undervägar `https://contoso.com/a/b` som.|
+|`https://contoso.com/a*`|Blockerar `https://contoso.com/a` och ytterligare undervägar `https://contoso.com/a/b` som.|
+|`https://toys.contoso.com*`|Spärrar en underdomän `toys` (i det här exemplet) men tillåter klick till andra domän-URL:er (t.ex. `https://contoso.com` `https://home.contoso.com` eller).|
 |
 
-## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>"Skriv inte över följande URL-adresser" i principer för säkra länkar
+## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>"Skriva inte om följande URL:er" i principer för säkra länkar
 
 > [!NOTE]
-> Om din organisation använder principer för säkra länkar är **inte Skriv om följande URL** -listor de enda tillgängliga metoderna för nät fiske test av tredje part.
+> Om organisationen använder principer för säkra länkar skriver du inte om följande **URL-listor** är den enda metod som stöds för nätfisketester från tredje part.
 
-Alla principer för säkra länkar innehåller en, **Skriv inte över följande URL** -lista som du kan använda för att ange URL: er som inte skrivs om efter en säker sökning. Med andra ord kan du använda listan för att komma åt de angivna URL-adresser som annars skulle blockeras av säkra länkar. Du kan konfigurera olika listor i olika principer för säkra länkar. Princip bearbetning slutar efter den första (sannolika, högsta prioritets principen) tillämpas på användaren. Det innebär att bara en **inte skriver om följande webb adress** lista används för en användare som ingår i flera aktiva principer för säkra länkar.
+Varje princip för  säkra länkar innehåller följande lista över Url-adresser som du kan använda för att ange URL-adresser som inte skrivs om vid genomsökning av säkra länkar. Med andra ord gör listan att användare som ingår i principen kan komma åt angivna URL:er som annars skulle blockeras av säkra länkar. Du kan konfigurera olika listor i olika principer för säkra länkar. Principbearbetningen avbryts efter att den första principen (förmodligen högsta prioritet) tillämpas på användaren. Därför är det bara en som inte skriver om följande **URL-lista** och tillämpas på en användare som ingår i flera aktiva principer för säkra länkar.
 
-Information om hur du lägger till poster i listan i nya eller befintliga principer för säkra länkar finns i [skapa principer för säkra länkar](set-up-atp-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) eller [ändra principer för säkra länkar](set-up-atp-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies).
+Information om hur du lägger till poster i listan i nya eller befintliga principer för säkra länkar finns i Skapa principer för säkra [länkar](set-up-atp-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) [eller Ändra principer för säkra länkar.](set-up-atp-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies)
 
 **Anmärkningar**:
 
-- Följande klienter känner inte igen listan " **Skriv inte om följande URL-adresser** i principer för säkra länkar". Användare som ingår i polisen kan blockeras från att komma åt URL-adresserna baserat på resultaten av sökning efter säkra länkar i följande klienter:
+- Följande klienter känner inte igen följande **URL-listor** i principer för säkra länkar. Användare som omfattas av de här säkerheterna kan blockeras från att komma åt webbadresserna baserat på resultatet av genomsökning av Säkra länkar i dessa klienter:
 
   - Microsoft Teams
-  - Office Web Apps
+  - Office-webbappar
 
-  En verklig universell lista över webb adresser som tillåts överallt finns i [hantera URL-adresser i listan Tillåt/blockera för klient organisation](tenant-allow-block-list.md).
+  En verkligt universell lista med URL-adresser som är tillåtna överallt finns i [Hantera klientorganisationens lista över tillåtna/blockerade adresser.](tenant-allow-block-list.md)
 
-- Överväg att lägga till vanliga interna URL-adresser i listan för att förbättra användar upplevelsen. Om du till exempel har lokala tjänster, till exempel Skype för företag eller SharePoint, kan du lägga till dessa URL-adresser för att utesluta dem från genomsökningen.
+- Överväg att lägga till vanliga interna URL:er i listan för att förbättra användarupplevelsen. Om du till exempel har lokala tjänster, till exempel Skype för företag eller SharePoint, kan du lägga till de URL-adresser som undantar dem från genomsökning.
 
-- Om du redan har angett **följande URL** -poster i dina principer för säkra länkar måste du läsa listorna och lägga till jokertecken efter behov. Din lista har till exempel en post som `https://contoso.com/a` du bestämmer dig för att inkludera under Sök vägar som `https://contoso.com/a/b` . I stället för att lägga till en ny post lägger du till ett jokertecken i den befintliga posten så att den blir `https://contoso.com/a/*` .
+- Om du redan har skriver du inte om följande **URL-adresser** i principerna för säkra länkar, bör du granska listorna och lägga till jokertecken efter behov. Listan har till exempel en post som du senare `https://contoso.com/a` bestämmer dig för att ta med undervägar `https://contoso.com/a/b` som. I stället för att lägga till en ny post kan du lägga till ett jokertecken för den befintliga posten så att det blir `https://contoso.com/a/*` det.
 
-- Du kan ta med upp till tre jokertecken ( `*` ) per URL-post. Jokertecken inkluderar uttryckligen prefix eller under domäner. Posten är till exempel `contoso.com` inte samma sak som `*.contoso.com/*` eftersom `*.contoso.com/*` tillåter personer att besöka under domäner och sökvägar i den angivna domänen.
+- Du kan ta med upp till tre jokertecken ( `*` ) per URL-post. Jokertecken innehåller uttryckligen prefix eller underdomäner. Posten är till exempel inte samma som , eftersom den tillåter att personer besöker underdomäner `contoso.com` `*.contoso.com/*` och `*.contoso.com/*` sökvägar i den angivna domänen.
 
-### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>Syntax för listan "Skriv inte om följande URL: er"
+### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>Postsyntaxen för listan "Ange inte följande URL:er"
 
-Exempel på vilka värden du kan ange och deras resultat finns beskrivna i följande tabell:
+Exempel på värden som du kan ange och deras resultat beskrivs i följande tabell:
 
 ****
 
 |Value|Resultat|
 |---|---|
-|`contoso.com`|Tillåter åtkomst till `https://contoso.com` men inte under domäner eller sökvägar.|
-|`*.contoso.com/*`|Tillåter åtkomst till en domän, under domäner och sökvägar (till exempel, `https://www.contoso.com` ,, `https://www.contoso.com` `https://maps.contoso.com` eller `https://www.contoso.com/a` ). <p> Den här posten är mycket bättre än `*contoso.com*` , eftersom den inte tillåter falska webbplatser, till exempel `https://www.falsecontoso.com` eller `https://www.false.contoso.completelyfalse.com`|
-|`https://contoso.com/a`|Tillåter åtkomst till `https://contoso.com/a` , men inte under Sök vägar `https://contoso.com/a/b`|
-|`https://contoso.com/a/*`|Tillåter åtkomst till `https://contoso.com/a` och under Sök vägar som `https://contoso.com/a/b`|
+|`contoso.com`|Tillåter åtkomst till `https://contoso.com` men inte underdomäner eller sökvägar.|
+|`*.contoso.com/*`|Tillåter åtkomst till en domän, underdomäner och sökvägar (till `https://www.contoso.com` `https://www.contoso.com` exempel, `https://maps.contoso.com` `https://www.contoso.com/a` eller). <p> Den här posten är bättre än den är eftersom den inte tillåter potentiellt falska `*contoso.com*` webbplatser, som `https://www.falsecontoso.com` eller `https://www.false.contoso.completelyfalse.com`|
+|`https://contoso.com/a`|Tillåter åtkomst `https://contoso.com/a` till, men inte undervägar som `https://contoso.com/a/b`|
+|`https://contoso.com/a/*`|Tillåter åtkomst till `https://contoso.com/a` och undervägar som `https://contoso.com/a/b`|
 |
 
-## <a name="warning-pages-from-safe-links"></a>Varnings sidor från säkra länkar
+## <a name="warning-pages-from-safe-links"></a>Varningssidor från Säkra länkar
 
-Det här avsnittet innehåller exempel på de olika varnings sidor som aktive ras av skydd mot säkra länkar när du klickar på en webb adress.
+Det här avsnittet innehåller exempel på de olika varningssidor som utlöses av skydd mot säkra länkar när du klickar på en URL.
 
-Observera att flera varnings sidor har uppdaterats. Om du inte redan ser de uppdaterade sidorna är det snart. De uppdaterade sidorna innehåller ett nytt färg schema, mer information och möjligheten att gå vidare till en webbplats trots den angivna varningen och rekommendationerna.
+Observera att flera varningssidor har uppdaterats. Om du inte redan ser de uppdaterade sidorna kommer du snart att göra det. De uppdaterade sidorna innehåller ett nytt färgschema, mer detaljerad information och möjlighet att gå vidare till en webbplats trots den angivna varningen och rekommendationerna.
 
-### <a name="scan-in-progress-notification"></a>Avisering om genomsökning pågår
+### <a name="scan-in-progress-notification"></a>Avisering om pågående sökning
 
-URL-adressen skannas av Safe Links. Du kan behöva vänta en liten stund innan du försöker igen.
+Url:en som du klickar på genomsöks av Säkra länkar. Det kan ta en liten stund innan du provar länken igen.
 
-![Meddelandet "länken skannas"](../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
+![Meddelandet "Länken genomsöks"](../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
 
-Den ursprungliga meddelande sidan såg ut så här:
+Den ursprungliga aviseringssidan såg ut så här:
 
-![Ursprunglig "länken skannas"](../../media/04368763-763f-43d6-94a4-a48291d36893.png)
+![Ursprungliga meddelandet "Länken genomsöks"](../../media/04368763-763f-43d6-94a4-a48291d36893.png)
 
 ### <a name="suspicious-message-warning"></a>Varning om misstänkt meddelande
 
-URL-adressen fanns i ett e-postmeddelande som liknar andra misstänkta meddelanden. Vi rekommenderar att du dubbelklickar på e-postmeddelandet innan du fortsätter till webbplatsen.
+Den klickade URL-adressen fanns i ett e-postmeddelande som liknar andra misstänkta meddelanden. Vi rekommenderar att du dubbelkollar e-postmeddelandet innan du fortsätter till webbplatsen.
 
-!["En länk klickade på ett misstänkt meddelande"](../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
+![Varningen "En länk klickades från ett misstänkt meddelande"](../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
 
-### <a name="phishing-attempt-warning"></a>Varning om nät fiske försök
+### <a name="phishing-attempt-warning"></a>Varning om försök till nätfiske
 
-URL-adressen fanns i ett e-postmeddelande som har identifierats som nätfiske-attack. Därför blockeras alla URL-adresser i e-postmeddelandet. Vi rekommenderar att du inte fortsätter till webbplatsen.
+Webbadressen som du klickade på fanns i ett e-postmeddelande som identifierats som nätfiskeattack. Därför blockeras alla URL:er i e-postmeddelandet. Vi rekommenderar att du inte fortsätter till webbplatsen.
 
-!["Länken klickade på ett nät fiske meddelande" visas](../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
+![Varningen "Länken klickades från ett nätfiskemeddelande"](../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
 
 ### <a name="malicious-website-warning"></a>Varning om skadlig webbplats
 
-URL: en till en webbplats som har identifierats som skadlig. Vi rekommenderar att du inte fortsätter till webbplatsen.
+Den klickade URL-adressen pekar på en webbplats som har identifierats som skadlig. Vi rekommenderar att du inte fortsätter till webbplatsen.
 
-![Varnings meddelandet "den här webbplatsen klassificeras som skadlig"](../../media/058883c8-23f0-4672-9c1c-66b084796177.png)
+![Varningsmeddelandet "Den här webbplatsen klassificeras som skadlig"](../../media/058883c8-23f0-4672-9c1c-66b084796177.png)
 
-Den ursprungliga varnings sidan såg ut så här:
+Den ursprungliga varningssidan såg ut så här:
 
-![Original varningen "den här webbplatsen har klassificerats som skadlig"](../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png)
+![Den ursprungliga varningen "Den här webbplatsen har klassificerats som skadlig"](../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png)
 
-### <a name="blocked-url-warning"></a>Blockerad URL-varning
+### <a name="blocked-url-warning"></a>Varning om blockerad URL
 
-URL-adressen har blockerats av en administratör i din organisation ( **Blockera följande URL-adresser** i de globala inställningarna för säkra länkar). Länken skannades inte av säkra länkar eftersom den blockerades manuellt.
+Url:en som du har klickat på har  blockerats manuellt av en administratör i din organisation (listan Blockera följande URL-adresser i de globala inställningarna för säkra länkar). Länken genomsökdes inte av Säkra länkar eftersom den blockerades manuellt.
 
-Det finns flera orsaker till att en administratör manuellt blockerar specifika URL: er. Om du tror att webbplatsen inte ska blockeras kontaktar du din administratör.
+Det finns flera orsaker till varför en administratör manuellt skulle blockera specifika URL:er. Kontakta administratören om du tror att webbplatsen inte ska blockeras.
 
-![Varningen "webbplatsen har blockerats av din administratör"](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+![Varningen "Den här webbplatsen blockerades av din administratör"](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
 
-Den ursprungliga varnings sidan såg ut så här:
+Den ursprungliga varningssidan såg ut så här:
 
-![Ursprunglig "den här webbplatsen har blockerats per din organisations URL-princip"-varning](../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
+![Den ursprungliga varningen "Den här webbplatsen har blockerats enligt organisationens URL-princip"](../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
 
-### <a name="error-warning"></a>Fel varning
+### <a name="error-warning"></a>Felvarning
 
-En typ av fel har inträffat och URL: en kan inte öppnas.
+Någon typ av fel har inträffat och URL-adressen kan inte öppnas.
 
-![Varningen "sidan som du försöker komma åt går inte att läsa in"](../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
+![Varningsmeddelandet "Sidan du försöker komma åt kan inte läsas in"](../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
 
-Den ursprungliga varnings sidan såg ut så här:
+Den ursprungliga varningssidan såg ut så här:
 
-![Ursprunglig "Det gick inte att läsa in den här webb sidan"](../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png)
+![Varning om att den här webbsidan inte kunde läsas in](../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png)

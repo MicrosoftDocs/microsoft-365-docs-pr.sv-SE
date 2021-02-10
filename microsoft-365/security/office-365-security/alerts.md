@@ -1,5 +1,5 @@
 ---
-title: Aviseringar i säkerhets & efterlevnad
+title: Varningar i Säkerhets- & Efterlevnadscenter
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: hub-page
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -18,52 +17,57 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Lär dig mer om hur du använder aviserings funktionerna i säkerhets & för Office 365 för att visa och hantera aviseringar, till exempel hantera avancerade aviseringar.
+description: Lär dig hur du använder varningsfunktioner i Säkerhets- och efterlevnadscenter för Office 365 för & för att visa och hantera aviseringar, inklusive hantering av avancerade varningar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a40e880315b49620c372cf09416457c1bcaa00e7
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: f4af23ac1fd3c7272fc60b2228bf808351cb4d2b
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615054"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176033"
 ---
-# <a name="alerts-in-the-security--compliance-center"></a>Aviseringar i säkerhets & efterlevnad
+# <a name="alerts-in-the-security--compliance-center"></a>Varningar i Säkerhets- & Efterlevnadscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
-Använd aviserings funktionerna i säkerhets & Compliance Center för att visa och hantera aviseringar för din organisation, inklusive hantering av avancerade varningar som en del av [Microsofts moln program säkerhet översikt](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
+Använd varningsfunktioner i Säkerhets- och & för att visa och hantera aviseringar för din organisation, inklusive hantering av avancerade varningar som en del av översikten över säkerhet [i Microsoft Cloud App Security.](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
 
-## <a name="how-to-get-to-the-alerts-features"></a>Så här kommer du till aviserings funktionerna
+## <a name="how-to-get-to-the-alerts-features"></a>Så här kommer du till varningsfunktioner
 
-Aviseringar ligger i säkerhets & Compliance Center. Så här kommer du till sidan.
+Aviseringar finns i Säkerhets- & Efterlevnadscenter. Så här kommer du till sidan.
 
-### <a name="to-go-directly-to-the-security--compliance-center"></a>För att gå direkt till säkerhets & Compliance Center
+### <a name="to-go-directly-to-the-security--compliance-center"></a>Gå direkt till säkerhets- & Efterlevnadscenter
 
 1. Gå till <https://protection.office.com>.
 
-2. Logga in med ditt arbets-eller skol konto.
+2. Logga in med ditt arbets- eller skolkonto.
 
-3. Klicka på **aviseringar** i det vänstra fönstret för att Visa aviserings funktionerna.
+3. I den vänstra rutan klickar du **på Aviseringar för** att se varningsfunktioner.
 
-### <a name="to-go-to-the-security--compliance-center-using-the-app-launcher"></a>Gå till sidan säkerhets & efterlevnad med Start programmet
+### <a name="to-go-to-the-security--compliance-center-using-the-app-launcher"></a>Gå till Säkerhets- & efterlevnadscenter med startprogrammet
 
-1. Logga in med ditt arbets-eller skol konto.
+1. Logga in med ditt arbets- eller skolkonto.
 
-2. Klicka på Start programmet i det övre vänstra hörnet och klicka sedan på **säkerhets & efterlevnad**.
+2. Klicka på startprogrammet i det övre vänstra hörnet och sedan på Säkerhet **och & efterlevnad.**
 
    Hittar du inte appen du söker? Från appfönstret kan du välja **Alla appar** för att se en alfabetisk lista över tillgängliga Office 365-appar. Därifrån kan du söka efter en specifik app.
 
-3. Klicka på **aviseringar** i det vänstra fönstret för att Visa aviserings funktionerna.
+3. I den vänstra rutan klickar du **på Aviseringar för** att se varningsfunktioner.
 
-## <a name="alerts-features"></a>Aviserings funktioner
+## <a name="alerts-features"></a>Varningsfunktioner
 
-I följande tabell beskrivs de verktyg som är tillgängliga under **aviseringar** i säkerhets & Compliance Center.
+I följande tabell beskrivs de verktyg som är tillgängliga under **Varningar** i Säkerhets- & Efterlevnadscenter.
 
 ****
 
-|Sysprep|Beskrivning|
+|Verktyg|Beskrivning|
 |---|---|
-|[Hantera aviseringar](../../compliance/create-activity-alerts.md)|Använd aktivitets aviseringar för att skicka e-postaviseringar till dig själv eller andra administratörer när användare utför specifika aktiviteter i Microsoft 365. Aktivitets aviseringar liknar att söka i gransknings loggen efter händelser, förutom att du kommer att skicka ett e-postmeddelande när en händelse som du har skapat en avisering om inträffar.|
-|[Hantera avancerade aviseringar](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Använd funktionen **Hantera avancerade aviseringar** i Microsoft 365 Cloud App-säkerhet för att konfigurera principer som kan avisera dig om misstänkta och avvikande aktiviteter i Microsoft 365. När du har blivit aviserad kan du undersöka situationer som kan vara problematiska och, om det behövs, vidta åtgärder för att lösa säkerhets problem.|
+|[Hantera aviseringar](../../compliance/create-activity-alerts.md)|Använd aktivitetsaviseringar för att skicka e-postaviseringar till dig själv eller andra administratörer när användare utför specifika aktiviteter i Microsoft 365. Aktivitetsaviseringar påminner om att söka i granskningsloggen efter händelser, förutom att du får ett e-postmeddelande när en händelse som du har skapat en avisering för inträffar.|
+|[Hantera avancerade varningar](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Använd funktionen **Hantera avancerade varningar i** Microsoft 365 Cloud App Security för att konfigurera principer som kan varna dig om misstänkt och onormal aktivitet i Microsoft 365. När du får ett varningsmeddelande kan du undersöka situationer som kan vara problematiska och vid behov vidta åtgärder för att ta itu med säkerhetsproblem|
 |
