@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: 11/21/2019
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -18,23 +17,23 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du uppdaterar en DNS-post (Domain Name Service) för att använda en SPF-post (Sender Policy Framework) med din anpassade domän i Office 365.
-ms.openlocfilehash: 536f727ee71db70490259179ff8e47009c547f89
-ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: fbed28047b88a3eff75f574fc4d2581a75f15518
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49905229"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166237"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Konfigurera SPF för att förhindra förfalskning
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-- [Förutsättningar](#prerequisites)
-- [Skapa eller uppdatera din SPF TXT-post](#create-or-update-your-spf-txt-record)   
-  - [Hur hanterar man underdomäner?](#how-to-handle-subdomains)
-- [Vad gör SPF-e-postautentisering egentligen?](#what-does-spf-email-authentication-actually-do)   
-   - [Felsökning av SPF](#troubleshooting-spf)
-- [Mer information om SPF](#more-information-about-spf)
+**Gäller för**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Den här artikeln beskriver hur du uppdaterar en DNS-post (Domain Name Service) så att du kan använda e-postautentisering av Sender Policy Framework (SPF) med din anpassade domän i Office 365.
 

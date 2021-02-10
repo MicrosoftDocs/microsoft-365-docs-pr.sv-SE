@@ -1,5 +1,5 @@
 ---
-title: Rapportera skräp post och nätfiske i Outlook för iOS och Android
+title: Rapportera skräppost och nätfiske i Outlook för iOS och Android
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -14,62 +14,66 @@ search.appverid:
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan läsa om de inbyggda skräp posten, inte skräp post och nätfiske-alternativen i Outlook för iOS och Android.
+description: Administratörer kan läsa mer om de inbyggda alternativen för skräppost, inte skräppost och nätfiske i Outlook för iOS och Android.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d702ab1d97c07c3e38430a9a7beff5f14db7b60a
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 58027f7589280b1266cddc8cfbf44db9e4f0ece4
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029286"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166825"
 ---
-# <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>Rapportera skräp post och nätfiske i Outlook för iOS och Android i Exchange Online
+# <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>Rapportera skräppost och nätfiske i Outlook för iOS och Android i Exchange Online
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-I Microsoft 365-organisationer med post lådor i Exchange Online eller lokala post lådor med [hybrid modern inloggningsautentisering](https://docs.microsoft.com/microsoft-365/enterprise/hybrid-modern-auth-overview)kan du använda de inbyggda rapporterings alternativen i Outlook för iOS och Android för att skicka falska positiva (e-postmeddelanden markerade som skräp post), falskt negativ (dålig e-post) och nätfiske-meddelanden till Exchange Online Protection (EOP).
+I Microsoft 365-organisationer med postlådor i Exchange Online eller lokala postlådor som använder [modern hybridautentisering](https://docs.microsoft.com/microsoft-365/enterprise/hybrid-modern-auth-overview)kan du använda de inbyggda rapporteringsalternativen i Outlook för iOS och Android för att skicka falska positiva identifieringar (bra e-post som har markerats som skräppost), falska negativa identifieringar (felaktig e-post tillåten) och nätfiskemeddelanden till Exchange Online Protection (EOP).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver du veta innan du börjar
 
-- Om du är administratör i en organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen för säkerhets & efterlevnad. Mer information finns i [använda administratörs överföring för att skicka misstänkt skräp post, Phish, URL: er och filer till Microsoft](admin-submission.md).
+- Om du är administratör i en organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen Inskickade i Säkerhets- & Efterlevnadscenter. Mer information finns i Använda administratörs inskickat material för att skicka misstänkt [skräppost, phish, URL:er och filer till Microsoft.](admin-submission.md)
 
-- Du kan konfigurera vilka meddelanden som ska kopieras eller dirigeras om till en post låda som du anger. Mer information finns i [principer för användar profiler](user-submission.md).
+- Du kan konfigurera rapporterade meddelanden som ska kopieras eller omdirigeras till en postlåda som du anger. Mer information finns i principer [för användarinskick.](user-submission.md)
 
-- Mer information om hur du rapporterar meddelanden till Microsoft finns i [rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
+- Mer information om hur du rapporterar meddelanden till Microsoft finns [i Rapportera meddelanden och filer till Microsoft.](report-junk-email-messages-to-microsoft.md)
 
   > [!NOTE]
-  > Om skräp post rapportering är inaktiverat för Outlook i princip för användar överföring flyttas skräp post eller nätfiske-meddelanden till skräppostmappen och inte rapporteras till din administratör eller Microsoft.
+  > Om skräppostrapportering är inaktiverad för Outlook i användarinskickingsprincipen flyttas skräppost- eller nätfiskemeddelanden till mappen Skräppost och rapporteras inte till din administratör eller Microsoft.
 
-## <a name="report-spam-and-phishing-messages-in-outlook-for-ios-and-android"></a>Rapportera skräp post och nät fiske meddelanden i Outlook för iOS och Android
+## <a name="report-spam-and-phishing-messages-in-outlook-for-ios-and-android"></a>Rapportera skräppost och nätfiskemeddelanden i Outlook för iOS och Android
 
-Använd följande steg för att rapportera skräp post och nät fiske meddelanden för iOS och Android för meddelanden i Inkorgen, eller annan e-postmapp, utom skräp posten:
-
-1. Markera ett eller flera meddelanden.
-2. I det övre högra hörnet trycker du på de tre lodräta punkterna. Åtgärd-menyn öppnas.
-
-   ![Rapportera skräp post eller nätfiske via åtgärd-menyn](../../media/Android-report-as-junk-dialog.png)
-
-3. Tryck på **Rapportera skräp post** och välj sedan **skräp** post eller **nätfiske**.
-
-   ![Rapportera skräp post eller nätfiske](../../media/Android-report-junk-or-phishing.png)
-
-4. I dialog rutan som visas kan du välja **rapport** eller **Nej**. Om du väljer **Nej**, om du tryckte på **skräp** post flyttas meddelandet till mappen skräp post om du tryckte på **nätfiske** flyttas meddelandet till mappen Borttaget. Välj **rapport** om du även vill skicka en kopia av meddelandet till Microsoft.
-
-   ![Rapportera alternativ för skräp post eller nätfiske](../../media/Android-junk-email-reporting-options.png)
-
-Om du ändrar dig väljer du **Ångra** i popup-meddelandet som visas. Meddelandet finns kvar i mappen Inkorgen.
-
-## <a name="report-non-spam-messages-from-the-junk-folder-in-outlook-for-ios-and-android"></a>Rapportera icke-skräppost meddelanden från mappen skräp post i Outlook för iOS och Android
-
-I mappen skräp post följer du stegen nedan för att rapportera skräp post som falsk.
+Använd följande steg för att rapportera skräppost och nätfiskemeddelanden för iOS och Android för meddelanden i Inkorgen eller någon annan e-postmapp utom Skräppost:
 
 1. Markera ett eller flera meddelanden.
-2. I det övre högra hörnet trycker du på de tre lodräta punkterna. Åtgärd-menyn öppnas.
+2. Tryck på de tre lodräta punkterna i det övre högra hörnet. Åtgärdsmenyn öppnas.
 
-   ![Rapportera inte skräp post från åtgärd-menyn](../../media/Android-not-junk-email.png)
+   ![Rapportera skräppost och nätfiske i åtgärdsmenyn](../../media/Android-report-as-junk-dialog.png)
 
-3. Tryck på **inte skräp post**.
+3. Tryck **på Rapportera skräppost** och välj sedan **Skräppost** eller **nätfiske.**
 
-En popup-avisering visas där e-postmeddelandet har flyttats till Inkorgen. Om du ändrar dig väljer du **Ångra** på popup-meddelandet. E-postmeddelandet finns kvar i skräppostmappen.
+   ![Rapportera skräppost och nätfiske](../../media/Android-report-junk-or-phishing.png)
+
+4. I dialogrutan som visas kan du välja Rapport **eller** **Nej tack.** Om du **väljer Nej** tack  flyttas meddelandet till mappen Skräppost om du  trycker på Meddelandet flyttas till mappen Borttaget om du trycker på Nätfiske. Välj **Rapport** för att även skicka en kopia av meddelandet till Microsoft.
+
+   ![Rapportalternativ för skräppost- och nätfiskemeddelanden](../../media/Android-junk-email-reporting-options.png)
+
+Om du ändrar dig väljer du **Ångra i** popup-meddelandet som visas. Meddelandet finns kvar i mappen Inkorgen.
+
+## <a name="report-non-spam-messages-from-the-junk-folder-in-outlook-for-ios-and-android"></a>Rapportera meddelanden som inte är skräppost från skräppostmappen i Outlook för iOS och Android
+
+Använd följande steg i skräppostmappen för att rapportera skräppost med falska positiva resultat:
+
+1. Markera ett eller flera meddelanden.
+2. Tryck på de tre lodräta punkterna i det övre högra hörnet. Åtgärdsmenyn öppnas.
+
+   ![Rapportera inte skräppost från åtgärdsmenyn](../../media/Android-not-junk-email.png)
+
+3. Tryck **på Inte skräppost.**
+
+En avisering visas om att e-postmeddelandet har flyttats till Inkorgen. Om du ändrar dig väljer du Ångra **i** aviseringen. E-postmeddelandet ligger kvar i skräppostmappen.

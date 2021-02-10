@@ -1,5 +1,5 @@
 ---
-title: Konfigurations analys för säkerhets principer
+title: Konfigurationsanalys för säkerhetsprinciper
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,54 +15,58 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan lära sig hur de använder konfigurations analys för att hitta och åtgärda säkerhets principer som är under standard säkerhets principer för förvalda skydd och begränsande skydd.
+description: Administratörer kan lära sig att använda konfigurationsanalys för att hitta och åtgärda säkerhetsprinciper som finns under de förinställda säkerhetsprinciperna Standardskydd och Strikt skydd.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04027e78a2683c6c33954bb548c502497c5e8323
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: a78452cb3a7e4cb65c72d98b9322f217309a6d6f
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029484"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165913"
 ---
-# <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Konfigurations analys för skydds principer i EOP och Microsoft Defender för Office 365
+# <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Konfigurationsanalys för skyddsprinciper i EOP och Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Med konfigurations analys i säkerhets & Compliance Center får du en central plats för att hitta och åtgärda säkerhets principer där inställningarna är under standard skydds-och strikta skydds profil inställningar i [förvalda säkerhets principer](preset-security-policies.md).
+Konfigurationsanalys i säkerhets- och efterlevnadscentret för & tillhandahåller en central plats för att hitta och åtgärda säkerhetsprinciper där inställningarna finns under profilinställningarna Standardskydd och Strikt skydd i [förinställda säkerhetsprinciper.](preset-security-policies.md)
 
-Följande typer av principer analyseras av konfigurations analys:
+Följande typer av principer analyseras av konfigurationsanalysatorn:
 
-- **Principer för Exchange Online Protection (EOP)**: det inkluderar Microsoft 365-organisationer med Exchange Online-postlådor och fristående EOP-organisationer utan Exchange Online-postlådor:
+- **Principer för Exchange Online Protection (EOP):** Detta omfattar Microsoft 365-organisationer med Exchange Online-postlådor och fristående EOP-organisationer utan Exchange Online-postlådor:
 
-  - [Principer för skräp post](configure-your-spam-filter-policies.md).
-  - [Principer mot skadlig program vara](configure-anti-malware-policies.md).
-  - [EOP anti-nätfiske-principer](set-up-anti-phishing-policies.md#spoof-settings).
+  - [Principer för skydd mot skräppost.](configure-your-spam-filter-policies.md)
+  - [Principer för skydd mot skadlig programvara.](configure-anti-malware-policies.md)
+  - [Principer för skydd mot nätfiske i EOP.](set-up-anti-phishing-policies.md#spoof-settings)
 
-- **Microsoft Defender för Office 365-principer**: Detta inkluderar organisationer med Microsoft 365 E5-eller Defender för Office 365-tilläggs prenumerationer:
+- **Principer för Microsoft Defender för Office 365:** Detta omfattar organisationer med Microsoft 365 E5 eller Defender för Office 365-tilläggsprenumerationer:
 
-  - Skydd mot nätfiske i Microsoft Defender för Office 365, som omfattar:
+  - Principer mot nätfiske i Microsoft Defender för Office 365, som omfattar:
 
-    - Samma [falska inställningar](set-up-anti-phishing-policies.md#spoof-settings) som är tillgängliga i EOP anti-phishing-principer.
+    - Samma inställningar [för förfalskning som](set-up-anti-phishing-policies.md#spoof-settings) finns i EOP-principer för skydd mot nätfiske.
     - [Inställningar för personifiering](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-    - [Avancerade nät fiske trösklar](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+    - [Avancerade tröskelvärden för nätfiske](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-  - [Principer för säkra länkar](set-up-atp-safe-links-policies.md).
+  - [Principer för säkra länkar.](set-up-atp-safe-links-policies.md)
 
-  - [Principer för säkra bifogade filer](set-up-atp-safe-attachments-policies.md).
+  - [Principer för säkra bifogade filer.](set-up-atp-safe-attachments-policies.md)
 
-De **vanliga** och **strikta** princip inställnings värden som används som bas linjer beskrivs i [rekommenderade inställningar för EOP och Microsoft Defender för Office 365-säkerhet](recommended-settings-for-eop-and-office365-atp.md).
+Principinställningsvärdena **Standard** och Strikt som används som baslinjer beskrivs i Rekommenderade inställningar för EOP och Microsoft Defender för [Office 365-säkerhet.](recommended-settings-for-eop-and-office365-atp.md) 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till sidan **konfigurations analys** kan du använda <https://protection.office.com/configurationAnalyzer> .
+- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt **till sidan Konfigurationsanalys** använder du <https://protection.office.com/configurationAnalyzer> .
 
 - Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
-  - För att använda konfigurations analys **och** göra uppdateringar av säkerhets principer måste du vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** .
-  - Om du vill ha skrivskyddad åtkomst till konfigurations analys måste du vara medlem i rollen **global läsare** eller **säkerhets läsare** .
+  - Om du vill använda **konfigurationsanalysatorn** och uppdatera säkerhetsprinciper måste du vara medlem i rollgrupperna Organisationshantering **eller** **Säkerhetsadministratör.**
+  - För skrivskyddade åtkomst till konfigurationsanalys behöver du vara medlem i rollgrupperna **Global Reader** eller **Säkerhetsläsare.**
 
   Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
@@ -72,71 +76,71 @@ De **vanliga** och **strikta** princip inställnings värden som används som ba
   > 
   > - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
-## <a name="use-the-configuration-analyzer-in-the-security--compliance-center"></a>Använda Configuration Analyzer i Center för säkerhets &
+## <a name="use-the-configuration-analyzer-in-the-security--compliance-center"></a>Använda konfigurationsanalysatorn i Säkerhets- & Efterlevnadscenter
 
-Gå till  \>  \> **konfigurations analys** för Threat Management policy i säkerhets & efterlevnad.
+Gå till Konfigurationsanalys för & för **hothanteringspolicy** i \>  \> **Säkerhets- och efterlevnadscenter.**
 
-![Widgeten för konfigurations analys på \> sidan Threat Management policy](../../media/configuration-analyzer-widget.png)
+![Widget för konfigurationsanalys på sidan Policy för \> hothantering](../../media/configuration-analyzer-widget.png)
 
-Konfigurations analysen har två primära flikar:
+Konfigurationsanalysatorn har två huvudflikar:
 
-- **Inställningar och rekommendationer**: du väljer standard eller Strict och jämför dessa inställningar med dina befintliga säkerhets principer. I resultatet kan du justera värdena för inställningarna så att de får samma nivå som standard eller strikt.
+- **Inställningar och rekommendationer:** Du väljer Standard eller Strikt och jämför dessa inställningar med dina befintliga säkerhetsprinciper. I resultatet kan du justera värdena i inställningarna så att de hamnar på samma nivå som Standard eller Strikt.
 
-- **Analys och historik för konfigurations avvikelse**: med den här vyn kan du spåra princip förändringar med tiden.
+- **Konfigurationsanalys och historik:** I den här vyn kan du spåra principändringar över tid.
 
-### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>Fliken inställning och rekommendationer i konfigurations analys
+### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>Fliken Inställningar och rekommendationer i konfigurationsanalys
 
-Som standard öppnas fliken i jämförelsen med standard skydds profilen. Du kan växla till jämförelsen av den strikta skydds profilen genom att klicka på **Visa strikta rekommendationer**. Om du vill gå tillbaka väljer du **Visa standard rekommendationer**.
+Som standard öppnas fliken med jämförelsen med profilen för standardskydd. Du kan växla till jämförelsen av profilen för strikt skydd genom att klicka på **Visa strikt rekommendationer.** Om du vill växla tillbaka väljer du **Visa standardrekommendationer.**
 
-![Vyn inställningar och rekommendationer i konfigurations analys](../../media/configuration-analyzer-settings-and-recommendations-view.png)
+![Vyn Inställningar och rekommendationer i Konfigurationsanalys](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
-Som standard innehåller kolumnen **princip grupp/inställnings namn** en dold vy av de olika typerna av säkerhets principer och det antal inställningar som behöver förbättras. Följande typer av principer är:
+Som standard innehåller **namnkolumnen Principgrupp/inställning** en komprimerad vy av de olika typerna av säkerhetsprinciper och antalet inställningar som behöver förbättras (om det finns några). Olika typer av principer är:
 
-- **Skydd mot skräp post**
-- **Anti-nätfiske**
-- **Skadlig program vara**
-- **ATP-säkra bifogade filer** (om ditt abonnemang innehåller Microsoft Defender för Office 365)
-- **Säkerhet för ATP** (om ditt abonnemang inkluderar Microsoft Defender för Office 365)
+- **Skräppostskydd**
+- **Skydd mot nätfiske**
+- **Skydd mot skadlig programvara**
+- **ATP – säkra bifogade** filer (om prenumerationen omfattar Microsoft Defender för Office 365)
+- **ATP – säkra länkar** (om prenumerationen omfattar Microsoft Defender för Office 365)
 
-I standardvyn är allting dolda. Bredvid varje princip finns en sammanfattning av jämförelse resultat från dina principer (som du kan ändra) och inställningarna i motsvarande principer för standard-eller sträng skydds profilerna (som du inte kan ändra). Följande information om den skydds profil som du jämför med ska visas:
+I standardvyn döljs allt. Bredvid varje princip finns en sammanfattning av jämförelseresultaten från dina principer (som du kan ändra) och inställningarna i motsvarande principer för standard- eller striktskyddsprofilerna (som du inte kan ändra). Följande information visas för den skyddsprofil som du jämför med:
 
-- **Grön**: alla inställningar i alla befintliga principer är åtminstone lika säkra som skydds profilen.
-- **Gul**: ett litet antal inställningar i befintliga principer är inte så säkert som skydds profilen.
-- **Rött**: ett stort antal inställningar i befintliga principer är inte så säkert som skydds profilen. Det här kan vara några få inställningar i många principer eller många inställningar i en princip.
+- **Grön:** Alla inställningar i alla befintliga principer är minst lika säkra som skyddsprofilen.
+- **Gult:** Ett litet antal inställningar i de befintliga principerna är inte lika säkra som skyddsprofilen.
+- **Röd**: Ett stort antal inställningar i de befintliga principerna är inte lika säkra som skyddsprofilen. Det kan vara några inställningar i många principer eller många inställningar i en princip.
 
-För fördelaktig jämförelser visas texten: **alla inställningar följer** \<**Standard** or **Strict**\> **rekommendationer**. I annat fall ser du antalet rekommenderade inställningar att ändra.
+För bra jämförelser ser du texten: Alla inställningar **följer** \<**Standard** or **Strict**\> **rekommendationer.** Annars visas antalet rekommenderade inställningar som ska ändras.
 
-Om du expanderar **princip grupp/inställnings namn** visas alla principer och associerade inställningar i varje specifik princip som kräver åtgärd. Eller så kan du expandera en viss typ av princip (till exempel **anti-spam**) för att se bara de inställningar som gäller för de principer som kräver din uppmärksamhet.
+Om du **expanderar principens grupp-/inställningsnamn** visas alla principer och tillhörande inställningar i varje specifik princip som kräver uppmärksamhet. Du kan också expandera en viss typ av princip (till exempel **Skräppostskydd)** om du bara vill visa inställningarna i de typer av principer som kräver din uppmärksamhet.
 
-Om jämförelsen inte har några rekommendationer för förbättring (grön) kan du utöka policyn genom att Visa ingenting. Om det finns några rekommendationer för förbättringar (gul eller röd) visas de inställningar som kräver åtgärd och informationen visas i följande kolumner:
+Om jämförelsen inte har några rekommendationer för förbättring (grön) visar expandering av principen ingenting. Om det finns något antal rekommendationer för förbättring (gult eller rött) visas de inställningar som kräver uppmärksamhet och motsvarande information visas i följande kolumner:
 
-- Namnet på den inställning som kräver din uppmärksamhet. I föregående skärm bild är det till exempel att **tröskelvärdet för Mass** utskick av e-post i en policy för skräp post.
+- Namnet på den inställning som kräver din uppmärksamhet. I den föregående skärmbilden är till exempel tröskelvärdet för massutskick **av** e-post i en princip mot skräppost.
 
-- **Princip**: namnet på den berörda policyn som innehåller inställningen.
+- **Princip:** Namnet på den princip som påverkas som innehåller inställningen.
 
-- **Tillämpas på**: antalet användare som de berörda principerna tillämpas på.
+- **Tillämpas på:** Antalet användare som de påverkade principerna tillämpas på.
 
-- **Aktuell konfiguration**: det aktuella värdet för inställningen.
+- **Aktuell konfiguration:** Det aktuella värdet för inställningen.
 
-- **Senast ändrad**: det datum då principen senast ändrades.
+- **Senast ändrad:** Det datum då principen senast ändrades.
 
-- **Rekommendationer**: värdet för inställningen i standard-eller sträng skydds profilen. Om du vill ändra värdet för inställningen i principen så att det matchar det rekommenderade värdet i skydds profilen klickar du **på Välj.** Om ändringen lyckas visas meddelandet: **rekommendationerna har antagits**. Klicka på **Uppdatera** om du vill visa det nedsänkta antalet rekommendationer och borttagning av raden specifik inställning/princip från resultaten.
+- **Rekommendationer:** Värdet för inställningen i profilen för standard- eller strikt skydd. Om du vill ändra värdet för inställningen i principen så att den matchar det rekommenderade värdet i skyddsprofilen klickar du på **Införa.** Om ändringen lyckas visas meddelandet: Rekommendationerna **har godkänts.** Klicka **på** Uppdatera om du vill se det minskade antalet rekommendationer och borttagningen av den specifika inställningen/principraden från resultatet.
 
-### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Konfiguration av avvikelser och historik i konfigurations analys
+### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Konfigurationsanalys och historikflik i konfigurationsanalys
 
-Med den här fliken kan du spåra de ändringar du har gjort i dina anpassade säkerhets principer. Följande information visas som standard:
+Med den här fliken kan du spåra de ändringar som du har gjort i dina anpassade säkerhetsprinciper. Som standard visas följande information:
 
 - **Senast ändrad**
-- **Ändrat av**
-- **Inställnings namn**
-- **Autentiseringsprincip**
+- **Ändrad av**
+- **Inställningsnamn**
+- **Princip**
 - **Typ**
 
-Om du vill filtrera resultaten klickar du på **Filter**. I de utfällbara **filter** som visas kan du välja bland följande filter:
+Om du vill filtrera resultaten klickar du på **Filter**. I  den utfällna listan Filter som visas kan du välja bland följande filter:
 
-- **Start tid** och **slut tid** (datum)
-- **Standard skydd** eller **strikt skydd**
+- **Starttid** **och sluttid** (datum)
+- **Standardskydd** eller **Strikt skydd**
 
-Exportera resultaten till en CSV-fil genom att klicka på **Exportera**.
+Om du vill exportera resultaten till en CSV-fil klickar du på **Exportera.**
 
-![Konfiguration av avvikelser och historik i konfigurations analys](../../media/configuration-analyzer-configuration-drift-analysis-view.png)
+![Konfigurationsanalys och historikvy i Konfigurationsanalys](../../media/configuration-analyzer-configuration-drift-analysis-view.png)

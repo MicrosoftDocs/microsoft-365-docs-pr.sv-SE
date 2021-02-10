@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,39 +15,46 @@ search.appverid:
 ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
-description: Lär dig mer om hur EOP och Office 365 skyddar dig mot skräp post, nätfiske och dataexekveringsskydd genom att lägga till ett säkerhets tips längst upp i e-postmeddelandena.
+description: Lär dig mer om hur EOP och Office 365 skyddar dig med skydd mot skräppost, nätfiske och skadlig kod genom att lägga till säkerhetstips överst i e-postmeddelanden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e36887e2bb0146c86a8a4f1526f1e712a38b46ba
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: c37eba07b306ff47e14640e494e468b63b358726
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376625"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166621"
 ---
 # <a name="safety-tips-in-email-messages"></a>Säkerhetstips i e-postmeddelanden
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Exchange Online Protection (EOP) och Microsoft 365 skyddar dig mot skräp post, nätfiske och skadlig program vara. I dag är vissa av dessa attacker så väl utformade att de ser äkta ut. Det räcker inte med att skicka meddelanden till mappen skräp post. När du sedan checkar in din e-post i Outlook eller Outlook på webben eller en e-postklient kontrollerar EOP automatiskt avsändaren och lägger till ett säkerhets tips längst upp i e-postmeddelandet.
+**Gäller för**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Säkerhets tips i Outlook är inte beroende av vilken version av Outlook du använder eftersom säkerhets tipset är knäckt och infogat direkt i meddelande texten. Det innebär att säkerhets tipset visas i den e-postklient som du använder. Den är klar på e-postfilter nivån och återges inte på e-postklientnivå, så den visas också i alla e-postklienter.
+Exchange Online Protection (EOP) och Microsoft 365 skyddar dig med skydd mot skräppost, nätfiske och skadlig kod. Vissa av dessa attacker är i dag så väl utformade att de ser legitima ut. Det räcker inte alltid att skicka meddelanden till mappen Skräppost. När du kontrollerar din e-post i Outlook eller Outlook på webben eller någon annan e-postklient kontrollerar EOP nu automatiskt avsändaren och lägger till ett säkerhetstips högst upp i e-postmeddelandet.
 
-Säkerhets tipset--ett färgkodat meddelande – du får en varning om potentiellt skadliga meddelanden. De flesta meddelanden i Inkorgen har ingen säkerhets tips. Du kan bara se dem när EOP och Microsoft 365 har information som du behöver för att förhindra skräp post, nätfiske och skadlig program vara. Om säkerhets tips visas i Inkorgen kan du använda följande exempel för att lära dig mer om olika typer av säkerhets tips.
+Säkerhetstips i Outlook beror inte på vilken version av Outlook du använder eftersom säkerhetstipset är sprucket och infogade direkt i meddelandets brödtext. Det innebär att säkerhetstipset visas i den e-postklient du använder. Det görs på e-postfilternivån och återges inte på e-postklientnivån, så det visas inte bara i någon version av Outlook, det visas också i alla e-postklienter.
 
-- Misstänkt e-post (rött säkerhets tips).
+Säkerhetstipset är ett färgkodat varningsmeddelande om eventuellt skadliga meddelanden. De flesta meddelanden i Inkorgen har inte något säkerhetstips. Du kan bara se dem när EOP och Microsoft 365 har information som du behöver för att förhindra attacker i skräppost, nätfiske och skadlig kod. Om det dyker upp säkerhetstips i Inkorgen kan du använda följande exempel för att lära dig mer om de olika säkerhetstipsen.
 
-    ![Skärm bild som visar ett rött säkerhets tips.](../../media/5078a0be-e556-44a1-b169-09d780d26898.png)
+- Misstänkt e-postmeddelande (rött säkerhetstips).
 
-    Ett rött säkerhets tips i ett e-postmeddelande betyder att meddelandet du fick innehåller något misstänkt, till exempel ett phishing-bedrägeri. Vi rekommenderar att du tar bort e-postmeddelandet från inkorgen utan att öppna det.
+    ![Skärmbild som visar ett rött säkerhetstips.](../../media/5078a0be-e556-44a1-b169-09d780d26898.png)
 
-- Säker e-post (grönt säkerhets tips).
+    Ett rött säkerhetstips i ett e-postmeddelande innebär att meddelandet som du har fått innehåller något misstänkt, till exempel ett försök till nätfiske. Vi rekommenderar att du tar bort den här typen av e-postmeddelanden från Inkorgen utan att öppna dem.
 
-    ![Skärm bild som visar ett grönt säkerhets tips.](../../media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
+- Säker e-post (grönt säkerhetstips).
 
-    Förutom osäkra meddelanden berättar vi också om giltiga meddelanden från avsändare som vi litar på med ett grönt säkerhets tips. Ett grönt säkerhets tips i ett e-postmeddelande innebär att vi kontrollerade avsändaren av meddelandet och kontrollerat att det är säkert. Microsoft bevarar den här listan över betrodda avsändare som innehåller ekonomiska organisationer och andra som ofta är falska eller personifierade.
+    ![Skärmbild som visar ett grönt säkerhetstips.](../../media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
 
-## <a name="working-with-safety-tips"></a>Arbeta med säkerhets tips
+    Förutom osäkra meddelanden kommer vi också att berätta om giltiga meddelanden från betrodda avsändare med ett grönt säkerhetstips. Ett grönt säkerhetstips i ett e-postmeddelande innebär att vi kontrollerat avsändaren till meddelandet och verifierat att det är säkert. Microsoft har en lista över betrodda avsändare som bland annat omfattar finansiella företag och andra som ofta kapas eller utger sig för att vara.
 
-Säkerhets tips är alltid aktiverade för Outlook på webben, även om inte alla meddelanden kommer att ta emot något. Administratörer kan stänga av säkerhets tips för andra e-postklienter, till exempel Outlook. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
+## <a name="working-with-safety-tips"></a>Arbeta med säkerhetstips
 
-Om du inte samtycker till hur EOP kategoriserade ett meddelande (det vill säga att meddelandet inte är skräp post eller om det har marker ATS som skräp post) kan du skicka meddelanden till Microsoft för analys för att förbättra upplevelsen. Anvisningar finns i [rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md). Du kan också klicka på länken feedback i säkerhets tipset och skicka kommentarer direkt till Microsoft för att hjälpa oss att förbättra.
+Säkerhetstips är alltid aktiverade för Outlook på webben, även om inte alla meddelanden får något. Administratörer kan inaktivera säkerhetstips för andra e-postklienter, till exempel Outlook. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
+
+Om du inte håller med om hur EOP kategoriserat ett meddelande (det vill säga om meddelandet inte är skräppost eller om det borde ha markerats som skräppost) kan du skicka meddelandena till Microsoft för analys för att förbättra din upplevelse. Instruktioner finns i Rapportera [meddelanden och filer till Microsoft.](report-junk-email-messages-to-microsoft.md) Du kan också klicka på länken Feedback i säkerhetstipset och skicka kommentarer direkt till Microsoft för att hjälpa oss att bli bättre.

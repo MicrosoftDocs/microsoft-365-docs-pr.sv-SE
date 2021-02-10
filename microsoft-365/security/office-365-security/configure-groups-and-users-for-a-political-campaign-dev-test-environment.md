@@ -11,24 +11,27 @@ ms.topic: article
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Sammanfattning: skapa utvärderingsversioner av Office 365 och Enterprise Mobility + Security (EMS) med användare och grupper i en utvecklings-/test miljö för en politisk kampanj.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1fac15cc0b2a512745e0538ec689bd5f17555419
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 2d23539951e4d51fcd29417ab71ce599853d7537
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614912"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165709"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Konfigurera grupper och användare i en utvecklings-/testmiljö för en politisk kampanj
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Microsoft Defender för Office 365 abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
  **Sammanfattning:** skapa utvärderingsversioner av Office 365 och Enterprise Mobility + Security (EMS) med användare och grupper i en utvecklings-/test miljö för en politisk kampanj.
 

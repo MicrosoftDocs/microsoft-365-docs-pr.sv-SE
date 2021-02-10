@@ -1,5 +1,5 @@
 ---
-title: Exempel skript för EOP-inställningar-flera innehavare
+title: Exempelskript för EOP-inställningar – flera klientorganisationar
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,34 +8,37 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 ms.custom:
 - seo-marvel-apr2020
-description: I den här artikeln lär du dig hur du använder PowerShell för att tillämpa konfigurations inställningar för klient organisationer i Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: b18fc71171a93e2a2f415800bcf2b5abd5c5a526
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: I den här artikeln får du lära dig hur du använder PowerShell för att använda konfigurationsinställningar för klientorganisationen i Microsoft Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: b7d856a7cec3bddc32455ba3afadf0323ddce935
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615870"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166597"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>Exempelskript för att tillämpa EOP-inställningar i flera klientorganisationer
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+-  [Exchange Online Protection fristående](https://go.microsoft.com/fwlink/?linkid=2148611)
 
-Med följande exempel skript kan du använda Exchange Online PowerShell för att visa och/eller tillämpa konfigurations inställningar för sina klient organisationer i Microsoft Exchange Online Protection (EOP)-administratörer som hanterar flera klient organisationer.
+Med följande exempelskript kan Microsoft Exchange Online Protection-administratörer (EOP) som hanterar flera innehavare (företag) använda Exchange Online PowerShell för att visa och/eller använda konfigurationsinställningar för sina klientorganisationar.
 
-## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>Köra ett skript eller en cmdlet på flera klient organisationer
+## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>Köra ett skript eller en cmdlet på flera klientorganisationar
 
-1. Om du inte redan har gjort [det installerar du Exchange Online v2-modulen](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+1. Om du inte redan har gjort det installerar [du Exchange Online V2-modulen.](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)
 
-2. Använd ett kalkyl blads program (till exempel Excel) och skapa en CSV-fil med följande information:
+2. Använd ett kalkylbladsprogram (till exempel Excel) och skapa en CSV-fil med följande information:
 
-   - Kolumnen UserName: det konto som du använder för att ansluta (till exempel `admin@contoso.onmicrosoft.com` ).
-   - Cmdlet-kolumn: cmdleten eller kommandot som ska köras (till exempel `Get-AcceptedDomain` eller `Get-AcceptedDomain | FT Name` ).
+   - Kolumnen Användarnamn: Det konto som du kommer att använda för att ansluta (till `admin@contoso.onmicrosoft.com` exempel).
+   - Kolumnen Cmdlet: Cmdleten eller kommandot som ska köras (till exempel `Get-AcceptedDomain` eller `Get-AcceptedDomain | FT Name` ).
 
    Filen ser ut så här:
 
@@ -47,9 +50,9 @@ Med följande exempel skript kan du använda Exchange Online PowerShell för att
 
 3. Spara CSV-filen på en plats som är lätt att hitta (till exempel c:\scripts\inputfile.csv).
 
-4. Kopiera [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) -skript till anteckningar och spara sedan filen på en plats som är lätt att hitta (till exempel c:\Scripts).
+4. Kopiera skriptet [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) Anteckningar och spara sedan filen på en plats som är lätt att hitta (till exempel c:\skript).
 
-5. Kör skriptet genom att använda följande syntax:
+5. Kör skriptet med följande syntax:
 
    ```powershell
    & "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"
@@ -61,12 +64,12 @@ Med följande exempel skript kan du använda Exchange Online PowerShell för att
    & "c:\scripts\RunCmdletOnMultipleTenants.ps1" "c:\scripts\inputfile.csv"
    ```
 
-6. Varje klient organisation kommer att vara inloggad på och skriptet körs.
+6. Varje klientorganisation loggas in på och skriptet körs.
 
 ## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
 
 > [!NOTE]
-> Du kan behöva ändra `Connect-IPPSSession` raden i skriptet för att passa din miljö. Office 365 Germany kräver till exempel ett annat _ConnectionUri_ -värde än det aktuella värdet i ett skript. Mer information finns i ansluta till [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+> Du kan behöva ändra raden `Connect-IPPSSession` i skriptet så att den matchar din miljö. Till exempel kräver Office 365 Germany ett annat _ConnectionUri-värde_ än det aktuella värdet i ett skript. Mer information finns i Ansluta till [Exchange Online Powershell.](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)
 
 ```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.

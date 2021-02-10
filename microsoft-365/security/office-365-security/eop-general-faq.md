@@ -8,88 +8,91 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 ms.custom:
 - seo-marvel-apr2020
-description: Få svar på vanliga allmänna frågor om Exchange Online Protection (EOP)-Server för e-postfiltrering.
-ms.openlocfilehash: aa0b881250466c71cb05123216fcf9eccc64018d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Få svar på de vanligaste allmänna frågorna om e-postfiltreringstjänsten i Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: d0a5712d2bfb110c3292dee06b456161599d40b1
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202921"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165493"
 ---
 # <a name="eop-general-faq"></a>Allmänna vanliga frågor och svar om EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+-  [Exchange Online Protection fristående](https://go.microsoft.com/fwlink/?linkid=2148611)
 
-Här svarar de vanligaste allmänna frågorna om Exchange Online Protection (EOP)-Server för e-postfiltrering. Information om fler vanliga frågor och svar finns i följande länkar:
+Här får du svar på de vanligaste allmänna frågorna om e-postfiltreringstjänst med Exchange Online Protection (EOP). Om du vill ha fler vanliga frågor och svar går du till följande länkar:
 
 - [Vanliga frågor och svar om köade, uppskjutna och studsade meddelanden i EOP](eop-queued-deferred-and-bounced-messages-faq.md)
 
 - [Vanliga frågor och svar om delegerad administration](delegated-administration-faq.md)
 
-- [Vanliga frågor om skydd mot skräppost](anti-spam-protection-faq.md)
+- [Vanliga frågor och svar om skydd mot skräppost](anti-spam-protection-faq.md)
 
 - [Vanliga frågor och svar om karantän](quarantine-faq.md)
 
 - [Vanliga frågor och svar om skydd mot skadlig kod](anti-malware-protection-faq-eop.md)
 
-- [Vanliga frågor om meddelande spårning](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/message-trace-faq)
+- [Vanliga frågor och svar om meddelandespårning](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/message-trace-faq)
 
 ## <a name="what-is-eop"></a>Vad är EOP?
 
-EOP är en molnbaserad e-postfiltrerande tjänst som skyddar kunder mot skräp post och skadlig program vara, samt för att implementera anpassade policy regler. EOP ingår i alla Microsoft 365-abonnemang som innehåller Exchange Online-postlådor. EOP finns också som en fristående tjänst för att skydda lokala e-postmiljöer.
+EOP är en molnbaserad tjänst för e-postfiltrering som skapats för att skydda kunderna mot skräppost och skadlig programvara och för att implementera regler för anpassade policyer. EOP ingår i alla Microsoft 365-prenumerationer som innehåller Exchange Online-postlådor. EOP finns även tillgängligt som ett fristående erbjudande för att skydda lokala e-postmiljöer.
 
-## <a name="how-do-i-sign-up-for-an-eop-trial-or-purchase-eop"></a>Hur registrerar jag mig för en utvärderings version av EOP eller EOP?
+## <a name="how-do-i-sign-up-for-an-eop-trial-or-purchase-eop"></a>Hur registrerar jag mig för en EOP-utvärderingsversion eller ett köp av EOP?
 
-Registrera dig för en EOP utvärderings version eller köp EOP via webben på [Start sidan för Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection). Observera att funktionerna för ett prov köp är desamma som för en betald prenumeration, men inkluderar också de ytterligare funktioner som tillhandahålls med [Exchange Enterprise CAL med abonnemang för tjänster](https://products.office.com/exchange/microsoft-exchange-server-licensing-licensing-overview) .
+Registrera dig för en utvärderingsversion av EOP eller köp EOP via webben på startsidan för [Exchange Online Protection.](https://products.office.com/exchange/exchange-email-security-spam-protection) Observera att funktionerna för ett köp av en utvärderingsversion är samma som för en betald prenumeration, men även innehåller de ytterligare funktioner som tillhandahålls med [Exchange Enterprise CAL med Services-abonnemanget.](https://products.office.com/exchange/microsoft-exchange-server-licensing-licensing-overview)
 
-## <a name="how-is-eop-priced"></a>Hur kostar EOP?
+## <a name="how-is-eop-priced"></a>Hur kostar EOP priset?
 
-EOP är licensierad av användare. Den senaste pris informationen finns på [Start sidan för Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection).
+EOP licensieras av användaren. Den senaste prisinformationen finns på startsidan [för Exchange Online Protection.](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-## <a name="how-long-does-it-take-to-put-eop-into-production"></a>Hur lång tid tar det att sätta EOP i produktionen?
+## <a name="how-long-does-it-take-to-put-eop-into-production"></a>Hur lång tid tar det att sätta in EOP i produktion?
 
-När du ändrar MX-posten, enligt anvisningarna i [Konfigurera EOP-tjänsten](set-up-your-eop-service.md)och dina e-postflöden genom EOP, börjar filtreringen omedelbart. MX-posten kan ta så lång tid som 24-48 timmar att spridas via DNS. Du kan när som helst finjustera dina skydds inställningar under den här processen.
+När du ändrar MX-posten enligt stegen som beskrivs i Konfigurera [EOP-tjänsten,](set-up-your-eop-service.md)och e-posten flödar via EOP, börjar filtreringen omedelbart. MX-posten kan ta upp till 24–48 timmar att spridas via DNS. Du kan finjustera skyddsinställningarna när som helst under den här processen.
 
-## <a name="do-i-have-to-use-all-features-of-microsoft-365-to-use-eop-what-if-i-just-want-eop-protection-and-thats-all"></a>Måste jag använda alla funktioner i Microsoft 365 för att använda EOP? Vad gör jag om jag vill ha EOP skydd och det är allt?
+## <a name="do-i-have-to-use-all-features-of-microsoft-365-to-use-eop-what-if-i-just-want-eop-protection-and-thats-all"></a>Måste jag använda alla funktioner i Microsoft 365 för att använda EOP? Vad händer om jag bara vill ha EOP-skydd?
 
-Du kan använda EOP för att skydda dina lokala post lådor utan att använda några andra funktioner i Microsoft 365. Detta kallas för en fristående prenumeration. En lista med EOP-funktioner finns i beskrivningen av [Exchange Online Protection Service](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+Du kan använda EOP för att skydda dina lokala postlådor utan att använda några andra funktioner i Microsoft 365. Det här kallas för en fristående prenumeration. En lista med EOP-funktioner finns i tjänstbeskrivningen [för Exchange Online Protection.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
 
-## <a name="why-do-i-need-a-microsoft-365-tenant-when-signing-up-for-email-filtering-through-eop"></a>Varför behöver jag en Microsoft 365-klient för att registrera dig för e-postfiltrering via EOP?
+## <a name="why-do-i-need-a-microsoft-365-tenant-when-signing-up-for-email-filtering-through-eop"></a>Varför behöver jag en Microsoft 365-klientorganisation när jag registrerar mig för e-postfiltrering via EOP?
 
-Microsoft 365 är det namn som ges till en samling produkter och tjänster som kan nås via en Microsoft 365-klient organisation. Microsoft 365-klient organisationen som utgångs punkt för att lägga till licenser för e-postfiltrering.
+Microsoft 365 är namnet på en samling produkter och tjänster som kan kommas åt via en Microsoft 365-klientorganisation. Tänk på Microsoft 365-klientorganisationen som startpunkt för att lägga till licenser för e-postfiltrering.
 
-## <a name="does-eop-have-a-communication-portal-where-i-can-find-out-about-known-issues-and-expected-resolutions-what-about-new-features"></a>Har EOP en kommunikations portal där jag kan få veta mer om kända problem och uppskattade lösningar? Vad har du för funktioner?
+## <a name="does-eop-have-a-communication-portal-where-i-can-find-out-about-known-issues-and-expected-resolutions-what-about-new-features"></a>Har EOP en kommunikationsportal där jag kan ta reda på kända problem och förväntade lösningar? Vad gäller för nya funktioner?
 
-Administrations centret för Microsoft 365 har viss information. Om du påverkas av en tjänst nivå händelse bör du se en kommunikations varning (som normalt åtföljs av en klock ikon) efter att du har loggat in på administrations centret för Microsoft 365. Vi rekommenderar att du läser och vidtar lämpliga objekt.
+En del av den här informationen finns i administrationscentret för Microsoft 365. Om du påverkas av en händelse på tjänstnivå bör du se en kommunikationsavisering (vanligtvis åtföljd av en klockikon) när du har loggat in på administrationscentret för Microsoft 365. Vi rekommenderar att du läser och agerar på alla objekt efter behov.
 
-För nya EOP-funktioner är [Microsoft 365 för Business-översikt](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) en bra resurs för att få information om kommande nya funktioner. Vi kommer även att skicka blogg artiklar om nya funktioner till webbplatsen [Microsoft 365-Bloggar](https://www.microsoft.com/microsoft-365/blog/) .
+När det gäller nya EOP-funktioner är översikten över [Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) för företag en bra resurs för att ta reda på information om kommande nya funktioner. Vi kommer också att publicera bloggartiklar om nya funktioner på [webbplatsen för Microsoft 365-bloggar.](https://www.microsoft.com/microsoft-365/blog/)
 
-## <a name="does-the-service-work-with-legacy-exchange-versions-such-as-exchange-server-2010-and-non-exchange-environments"></a>Fungerar tjänsten med äldre Exchange-versioner (till exempel Exchange Server 2010) och miljöer utanför Exchange?
+## <a name="does-the-service-work-with-legacy-exchange-versions-such-as-exchange-server-2010-and-non-exchange-environments"></a>Fungerar tjänsten med äldre Exchange-versioner (till exempel Exchange Server 2010) och icke-Exchange-miljöer?
 
-Ja, tjänsten är Server oberoende och kan användas med valfri SMTP-överförings agent.
+Ja, tjänsten är server agnostisk och kan användas med alla SMTP-ombud för e-postöverföring.
 
-## <a name="what-size-organization-can-use-the-service"></a>Vilken storlek organisationen kan använda tjänsten?
+## <a name="what-size-organization-can-use-the-service"></a>Vilken storlek kan organisationen använda tjänsten?
 
-Valfri storlek. EOP-nätverket har tillräckligt med kapacitet för tillväxt, oavsett hur snabbt organisationen växer.
+Valfri storlek. EOP-nätverket har tillräcklig kapacitet för att klara tillväxten, oavsett hur snabbt organisationen växer.
 
 ## <a name="what-permissions-do-i-need-to-set-up-eop"></a>Vilka behörigheter behöver jag för att konfigurera EOP?
 
-För att kunna konfigurera EOP måste du vara global administratör eller administratör för Exchange-företag (roll gruppen organisations hantering).
+Om du vill konfigurera EOP måste du vara global administratör eller Exchange-företagsadministratör (rollgruppen Organisationshantering).
 
-## <a name="how-do-i-know-my-data-and-private-information-are-safe"></a>Hur vet jag att min data och privata information är säker?
+## <a name="how-do-i-know-my-data-and-private-information-are-safe"></a>Hur vet jag att mina data och min privata information är säkra?
 
-Om du vill veta mer om de åtgärder vi har fattat för att säkerställa säkerheten hos dina data och privata uppgifter, inklusive information om service nivå avtal (SLAs), går du till [Office 365 säkerhets Center](https://www.microsoft.com/trust-center).
+Mer information om de steg vi har vidtagit för att säkerställa säkerheten för dina data och privat information, inklusive information om tjänstenivåavtal (SLA:er), finns i [Office 365 Säkerhetscenter.](https://www.microsoft.com/trust-center)
 
-## <a name="are-there-any-limits-i-should-be-aware-of-such-as-message-size-limitations"></a>Finns det några begränsningar Jag bör känna till, till exempel storleks begränsningar för meddelanden?
+## <a name="are-there-any-limits-i-should-be-aware-of-such-as-message-size-limitations"></a>Finns det några begränsningar som jag bör känna till, till exempel storleksbegränsningar för meddelanden?
 
-Ja. Mer information om begränsningar i EOP finns i [begränsningar för Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
+Ja. Mer information om begränsningar i EOP finns i Begränsningar för [Exchange Online-skydd.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)
 
-## <a name="does-eop-support-powershell"></a>Stöder EOP PowerShell?
+## <a name="does-eop-support-powershell"></a>Har EOP stöd för PowerShell?
 
-Ja, fullständiga funktioner för EOP är tillgängliga via PowerShell: Exchange Online PowerShell för organisationer med Exchange Online-postlådor. fristående EOP PowerShell för fristående EOP-organisationer. Mer information finns i [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) och [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell).
+Ja, fullständiga EOP-funktioner är tillgängliga via PowerShell: Exchange Online PowerShell för organisationer med Exchange Online-postlådor. fristående EOP PowerShell för fristående EOP-organisationer. Mer information finns i [Exchange Online PowerShell och](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) Exchange Online Protection [PowerShell.](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell)

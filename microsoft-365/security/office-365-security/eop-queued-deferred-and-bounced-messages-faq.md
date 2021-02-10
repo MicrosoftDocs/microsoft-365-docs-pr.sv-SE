@@ -8,38 +8,43 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
 ms.custom:
 - seo-marvel-apr2020
-description: Få svar på de vanligaste frågorna om meddelanden som har placerats i kö, skjuts upp eller studsade under Exchange Online Protection (EOP)-filtrerings processen.
-ms.openlocfilehash: 4ae38e871c0d6e4321bd7586c5cfd0bea3aeef81
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Hitta svar på de vanligaste frågorna om meddelanden som har lagts i kö, skjutits upp eller studsats under filtreringsprocessen för Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 854e954e3ebb995ba23db2afc6f2ca9ab19de508
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202945"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165433"
 ---
 # <a name="eop-queued-deferred-and-bounced-messages-faq"></a>Vanliga frågor och svar om köade, uppskjutna och studsade meddelanden i EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-I det här avsnittet får du svar på vanliga frågor om meddelanden som har placerats i kö, skjuts upp eller studsade under Exchange Online Protection (EOP)-filtrerings processen.
+I det här avsnittet finns svar på vanliga frågor om meddelanden som har lagts i kö, skjutits upp eller studsats under filtreringsprocessen för Exchange Online Protection (EOP).
 
-## <a name="why-is-mail-queuing"></a>Varför är e-postköer?
+## <a name="why-is-mail-queuing"></a>Varför är köer av e-post?
 
-Meddelanden köas eller är köade om tjänsten inte kan ansluta till mottagar servern för leverans. Meddelanden skjuts inte upp om ett 500-serie fel returneras från det mottagande nätverket.
+Meddelanden köas eller uppskjuts om tjänsten inte kan upprätta en anslutning till mottagarservern för leverans. Meddelandet skjuter inte upp meddelanden om ett 500-seriefel returneras från mottagarnätverket.
 
-## <a name="how-does-a-message-become-deferred"></a>Hur skjuts ett meddelande upp?
+## <a name="how-does-a-message-become-deferred"></a>Hur uppskjuts ett meddelande?
 
-Meddelanden sparas när det inte går att ansluta till mottagar servern och mottagarens server returnerar ett tillfälligt fel, till exempel en anslutnings-timeout, anslutningen nekades eller ett 400-serie fel. Om det finns ett permanent fel, till exempel ett 500-serie fel, returneras meddelandet till avsändaren.
+Meddelanden hålls kvar om det inte går att upprätta en anslutning till mottagarservern och mottagarens server returnerar ett "tillfälligt fel" som en time out för anslutning, anslutning som inte är upprättad eller ett 400-seriesfel. Om det finns ett permanent fel, till exempel ett 500-seriefel, returneras meddelandet till avsändaren.
 
-## <a name="how-long-does-a-message-remain-in-deferral-and-what-is-the-retry-interval"></a>Hur länge stannar ett meddelande i uppskov och vad är återförsöksintervallet?
+## <a name="how-long-does-a-message-remain-in-deferral-and-what-is-the-retry-interval"></a>Hur lång tid tar det att skjuta upp ett meddelande och vad är försöksintervallet?
 
-Meddelanden i avstängnings kön bevaras i våra köer i 1 dag. Försök att försöka igen baseras på det fel vi får tillbaka från mottagarens e-postsystem. De första förskjutna samtalen är 15 minuter eller mindre, med efterföljande försök (över nästa halvtimme eller så) att öka intervallet över flera försök till högst 60 minuter. Utökning av intervall längd är dynamisk, med hänsyn till flera variabler som kös storlek och intern meddelande prioritet. I grundläggande fall är det 15 minuter (eller mindre) att börja och sedan expanderar vi under de närmaste timmarna till 60 minuter.
+Meddelanden vid upp skjutas upp kommer att finnas kvar i våra köer i 1 dag. Försök att göra om meddelanden beror på felet vi får tillbaka från mottagarens e-postsystem. De första uppvaktarna är 15 minuter eller mindre, med efterföljande försök (under de kommande sex) som ökar intervallet över flera försök till maximalt 60 minuter. Utökningen av intervallets varaktighet är dynamisk, med hänsyn till flera variabler som köstorlekar och intern meddelandeprioritet. I grundläggande fall är det 15 minuter (eller mindre) att börja och sedan expandera därifrån under de kommande timmarna till 60 min max.
 
-## <a name="after-your-email-server-is-restored-how-are-queued-messages-distributed"></a>Hur distribueras köade meddelanden när e-postservern har återställts?
+## <a name="after-your-email-server-is-restored-how-are-queued-messages-distributed"></a>Hur distribueras meddelanden i kö när e-postservern har återställts?
 
-När e-postservern återställts bearbetas alla köade meddelanden automatiskt i den ordning de togs emot och köade när servern inte är tillgänglig.
+När e-postservern har återställts bearbetas alla i köade meddelanden automatiskt i den ordning som de togs emot och i kö när servern blev otillgänglig.

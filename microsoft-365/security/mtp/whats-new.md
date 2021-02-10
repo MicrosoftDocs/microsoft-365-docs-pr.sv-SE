@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8e66c734151e7476d7c54bd050891a1bffb17b3c
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 4e065ff4da80b50ea11ff2069e8938c59f16f962
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932028"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165997"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nyheter i Microsoft 365 Defender
 
@@ -38,8 +38,9 @@ RSS-feed: Få ett meddelande när den här sidan uppdateras genom att kopiera oc
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
-> Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera det i en labbmiljö](https://aka.ms/mtp-trial-lab) eller köra [pilotprojektet i produktion](https://aka.ms/m365d-pilotplaybook)
->
+
+## <a name="february-2021"></a>Februari 2021
+- (Förhandsversion) Det förbättrade [säkerhetscentret i Microsoft https://security.microsoft.com) 365 (är](https://security.microsoft.com) nu tillgängligt i offentlig förhandsversion. Den här nya upplevelsen tar Defender för Endpoint och Defender för Office 365 till mitten. [Läs mer om vad som har ändrats.](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)
 
 ## <a name="september-2020"></a>September 2020
 - [IdentityDirectoryEvents-tabell](advanced-hunting-identitydirectoryevents-table.md) <br> Hitta händelser som innefattar en lokal domänkontrollant som kör Active Directory (AD). Den [här avancerade](advanced-hunting-overview.md) tabellen för sökning omfattar ett antal identitetsrelaterade händelser och systemhändelser på domänkontrollanten.

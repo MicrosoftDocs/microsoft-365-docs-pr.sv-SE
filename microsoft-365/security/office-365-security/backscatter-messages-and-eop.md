@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,24 +16,30 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: I den här artikeln får du lära dig mer om bakEOP och Microsoft Exchange Online Protection ()
-ms.openlocfilehash: 2a752c89e2430f24441d14178942b89362736322
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: I den här artikeln får du lära dig mer om bakåtcatter och Microsoft Exchange Online Protection (EOP)
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 3cdc556a8cc193466d150fc82298796779841cca
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203593"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165961"
 ---
 # <a name="backscatter-in-eop"></a>Återspridning i EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-*Bakgrunds rapporter som inte* kan levereras (kallas även NDR eller studsande meddelanden) som du får för meddelanden som du inte har skickat. Skräp post Forge (förfalskningar) från: adress till sina meddelanden och använder ofta riktiga e-postadresser för att ge trovärdigheten till sina meddelanden. Så när skräp post avsändare inte kan skicka meddelanden till icke befintliga mottagare (spam är en hög volym), är mål-e-postservern i huvudsak att returnera det icke-skickade meddelandet i en NDR till den förfalskade avsändaren i mappen från: adress.
+*Bakåtcatter är* rapporter om utebliven leverans (kallas även NDR-rapporter eller icke-leveranskända meddelanden) som du får för meddelanden som du inte har skickat. Skräppostavsmedlare förfalskar från-adressen till sina meddelanden, och de använder ofta riktiga e-postadresser för att låna ut trovärdigheten för sina meddelanden. Så om skräppostavsändare oundvikligen skickar meddelanden till mottagare som inte finns (skräppost är en stor volymåtgärd), luras mål-e-postservern i princip att returnera det olevererbara meddelandet i en NDR-meddelande till den förfalskade avsändaren i från-adressen.
 
-I Microsoft 365-organisationer med post lådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor gör EOP till att identifiera och tyst släppa meddelanden från Dubious källor utan att generera en NDR. Men baserat på skir volym e-post som flödar via tjänsten är det alltid möjligt att EOP oavsiktligt skickar en bakgrunds bild.
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor gör EOP allt för att identifiera och tyst släppa meddelanden från tveksamma källor utan att generera en NDR. Men utifrån den större mängd e-post som flödar genom tjänsten finns det alltid en möjlighet att EOP oavsiktligt skickar bakåtcatter.
 
-Backscatterer.org bevarar en block lista (kallas även DNS-blockeringslistan eller DNSBL) av e-postservrar som är ansvariga för att skicka bakgrunds-och EOP servrar kan visas i den här listan. Men det går inte att ta bort oss själva från Backscatterer.org-blockeringslistan eftersom det inte är en lista över skräp post avsändare (efter eget godkännande).
+Backscatterer.org en blockeringslista (kallas även DNS-blockeringslista eller DNSBL) över e-postservrar som ansvarar för att skicka bakåtcatter, och EOP-servrar kan visas i den här listan. Men vi försöker inte ta bort dig från blockeringslistan i Backscatterer.org för att det inte är en lista över skräppostavs skräppostavsägare (enligt eget medgivande).
 
 > [!TIP]
-> Backscatter.org webbplats ( <http://www.backscatterer.org/?target=usage> ) rekommenderar att den används för att kontrol lera inkommande e-post i fel säkert läge (stora e-posttjänster som nästan alltid skickar lite bakmatning).
+> Webbplatsen Backscatter.org () rekommenderar att du använder tjänsten för att kontrollera inkommande e-post i felsäkert läge i stället för i läget Avvisa (stora e-posttjänster skickar nästan alltid <http://www.backscatterer.org/?target=usage> bakåt).

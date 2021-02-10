@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -16,17 +15,23 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa om hur de visar, skapar, ändrar och tar bort principer för skräppostskydd i Exchange Online Protection (EOP).
-ms.openlocfilehash: f5cc652bcc16cec28dd411ad30ce0896334733f4
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: a31f65eb415fbe6ebd58eddf50456ca5e9bb1d27
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683385"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165793"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurera principer för skräppostskydd i EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor skyddas automatiskt inkommande e-postmeddelanden mot skräppost av EOP. EOP använder principer för skräppostskydd (kallas även för principer för skräppostfilter eller principer för innehållsfilter) som en del av organisationens övergripande försvar mot skräppost. Mer information finns i [Skydd mot skräppost](anti-spam-protection.md).
 

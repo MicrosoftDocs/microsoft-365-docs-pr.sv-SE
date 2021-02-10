@@ -1,5 +1,5 @@
 ---
-title: Ge användarna åtkomst till säkerhets & efterlevnad
+title: Ge användare tillgång till Säkerhets- & Efterlevnadscenter
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,56 +10,61 @@ audience: Admin
 ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.PermissionsHelp
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: Användare måste tilldelas behörigheter i Microsoft 365 Security & Compliance Center innan de kan hantera säkerhets-eller efterlevnadsprinciper.
+description: Användare måste ha tilldelats behörigheter i Säkerhets- och & Microsoft 365 innan de kan hantera någon av dess säkerhets- eller efterlevnadsfunktioner.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1bf8da85a0e090a9d74934ea5084f547d6a8794f
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 9e19825ce0f8224b2aee8e1419ef5d1ad425aadb
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616614"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165421"
 ---
-# <a name="give-users-access-to-the-security--compliance-center"></a>Ge användarna åtkomst till säkerhets & efterlevnad
+# <a name="give-users-access-to-the-security--compliance-center"></a>Ge användare tillgång till Säkerhets- & Efterlevnadscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Användare måste tilldelas behörigheter i säkerhets & efterlevnad för att de ska kunna hantera alla dess säkerhets-eller efterlevnads funktioner. Som global administratör eller medlem i roll gruppen i i säkerhets & Compliance Center kan du ge dessa behörigheter till användare. Användarna kan bara hantera de säkerhets-eller efterföljandekrav du ger dem till gång till.
+Användare måste ha tilldelats behörigheter i Säkerhets- & center för efterlevnad innan de kan hantera någon av dess säkerhets- eller efterlevnadsfunktioner. Som global administratör eller medlem i rollgruppen Organisationsmanagement i Säkerhets- & Efterlevnadscenter kan du ge de här behörigheterna till användare. Användare kommer bara att kunna hantera de säkerhets- och efterlevnadsfunktioner som du ger dem åtkomst till.
 
-Om du vill ha mer information om de olika behörigheter du kan ge användare i avsnittet om säkerhets & efterlevnad kan du läsa [behörigheter i avsnittet säkerhets & efterlevnad](permissions-in-the-security-and-compliance-center.md).
+Mer information om de olika behörigheter du kan ge användare i Säkerhets- och & efterlevnadscenter finns i Behörigheter i Säkerhets- & [Efterlevnadscenter.](permissions-in-the-security-and-compliance-center.md)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du måste vara global administratör eller medlem i roll gruppen i i säkerhets & Compliance Center för att slutföra stegen i den här artikeln.
+- Du måste vara global administratör eller medlem i rollgruppen Organisationsadministration i Säkerhets- och & efterlevnadscenter för att slutföra stegen i den här artikeln.
 
-- Roll grupper för säkerhets & efterlevnad kan ha liknande namn för roll grupperna i Exchange Online, men de är inte samma.
+- Rollgrupper för Säkerhets- & Efterlevnadscenter kan ha liknande namn som rollgrupperna i Exchange Online, men de är inte desamma.
 
-- Roll grupps medlemskap delas inte mellan Exchange Online och säkerhets & Compliance Center.
+- Medlemskap i rollgrupper delas inte mellan Exchange Online och Säkerhets- & Efterlevnadscenter.
 
-- DAP-partners (delegerad Access permission) med administrera (AOBO) behörigheter får inte till gång till säkerhets & Compliance Center.
+- DAP-partners (Delegated Access Permission) med AOBO-behörigheter (Administer On Behalf) har inte åtkomst till Säkerhets- & Efterlevnadscenter.
 
-## <a name="use-the-security--compliance-center-to-give-another-user-access-to-the-security--compliance-center"></a>Använd säkerhets & Compliance Center för att ge en annan användare åtkomst till säkerhets & Compliance Center
+## <a name="use-the-security--compliance-center-to-give-another-user-access-to-the-security--compliance-center"></a>Använd Säkerhets- & för att ge en annan användare åtkomst till Säkerhets- & Efterlevnadscenter
 
-1. Öppna säkerhets & Compliance Center på <https://protection.office.com> och gå sedan till **behörigheter**. Öppna för att gå direkt till fliken **behörigheter** <https://protection.office.com/permissions> .
+1. Öppna Säkerhets- & Efterlevnadscenter <https://protection.office.com> och gå sedan till **Behörigheter.** Gå direkt till fliken **Behörigheter** genom att <https://protection.office.com/permissions> öppna.
 
-2. I listan över roll grupper väljer du roll gruppen och klickar sedan på **Redigera** ![ redigerings ikon ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) .
+2. I listan över rollgrupper väljer du rollgruppen  och klickar sedan på ikonen ![ ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) Redigera.
 
-3. På roll gruppens egenskaps sida under **medlemmar** klickar du på **Lägg** till ![ Lägg till ikonen ](../../media/ITPro-EAC-AddIcon.gif) och väljer namnet på den eller de användare som du vill lägga till.
+3. På rollgruppens egenskapssida under  **Medlemmar** klickar du på Lägg till ikon och väljer namnet på den ![ användare ](../../media/ITPro-EAC-AddIcon.gif) (eller användare) du vill lägga till.
 
-4. När du har valt alla användare som du vill lägga till i roll gruppen klickar du på **Lägg till \>** och sedan på **OK**.
+4. När du har markerat alla användare som du vill lägga till i rollgruppen klickar du på **lägg till och \>** sedan på **OK.**
 
 5. Klicka på **Spara** när du är klar.
 
-## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Använda säkerhets & Compliance Center PowerShell för att ge en annan användare åtkomst till säkerhets & Compliance Center
+## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Använda Säkerhets- & Efterlevnadscenter PowerShell för att ge en annan användare tillgång & Säkerhets- och efterlevnadscenter
 
-1. [Anslut till säkerhets & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+1. [Anslut till Säkerhets- & Compliance Center PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
 2. Använd följande syntax:
 
@@ -75,18 +80,18 @@ Om du vill ha mer information om de olika behörigheter du kan ge användare i a
    Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
-Detaljerad information om syntax och parametrar finns i [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/add-rolegroupmember)
+Detaljerade syntax- och parameterproblem finns i [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/add-rolegroupmember)
 
 ### <a name="how-do-you-know-this-worked"></a>Hur vet du att det fungerade?
 
-Gör något av följande om du vill verifiera att du har beviljats åtkomst till säkerhets & Compliance Center.
+Om du vill verifiera att du har beviljats åtkomst till Säkerhets- & Efterlevnadscenter gör du något av följande:
 
-- Gå till **behörigheter** i säkerhets & efterlevnad och välj roll gruppen. I den utfällbara informationen som öppnas kontrollerar du medlemmarna i roll gruppen.
+- Gå till & i Säkerhets- **och efterlevnadscenter** och välj rollgruppen. Kontrollera rollgruppens medlemmar i informationsfällan som öppnas.
 
-- I säkerhets & Compliance Center PowerShell, Ersätt \<RoleGroupName\> med namnet på roll gruppen och kör följande kommando:
+- I Säkerhetscenter & PowerShell ersätter du med namnet på \<RoleGroupName\> rollgruppen och kör följande kommando:
 
   ```powershell
   Get-RoleGroupMember -Identity "<RoleGroupName>"
   ```
 
-  Detaljerad information om syntax och parametrar finns i [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember).
+  Detaljerad information om syntax och parametrar finns i [Get-RoleGroupMember.](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember)

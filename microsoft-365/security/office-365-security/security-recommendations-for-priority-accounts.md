@@ -1,5 +1,5 @@
 ---
-title: Säkerhetsrekommendationer för prioriterade konton i Microsoft 365
+title: Säkerhetsrekommendationer för prioriterade konton i Microsoft 365, prioritetskonton, prioritetskonton i Office 365, prioritetskonton i Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,16 +20,16 @@ ms.collection:
 description: Administratörer kan lära sig att höja säkerhetsinställningarna och använda rapporter, aviseringar och undersökningar för prioriterade konton i Microsoft 365-organisationer.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 10890a5fe797439de0bfc28bf28a216318016908
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 814ca47ee48e844e313f7d75640643a0b659c527
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929312"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166375"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Säkerhetsrekommendationer för prioriterade konton i Microsoft 365
 
-Alla användarkonton har inte åtkomst till samma företagsinformation. Vissa konton har tillgång till känslig information, till exempel ekonomiska data, utvecklingsinformation, partneråtkomst till kritiska utvecklingssystem och mycket mer. Om de har komprometterats utgör konton som har tillgång till mycket konfidentiell information ett allvarligt hot. Vi kallar den här typen av _kontons prioritetskonton._ Prioritetskonton omfattar (men är inte begränsade till) CEOs, CISOs, CFOs, infrastrukturadministratörskonton, skapa systemkonton och mycket mer.
+Alla användarkonton har inte tillgång till samma företagsinformation. Vissa konton har tillgång till känslig information, till exempel ekonomiska data, utvecklingsinformation, partneråtkomst till kritiska utvecklingssystem och mycket mer. Om de har komprometterats utgör konton som har tillgång till mycket konfidentiell information ett allvarligt hot. Vi kallar den här typen av _kontons prioritetskonton._ Prioritetskonton omfattar (men är inte begränsade till) CEOs, CISOs, CFOs, infrastrukturadministratörskonton, skapa systemkonton och mycket mer.
 
 Vid attacker är vanliga nätfiskeattacker som visar ett slumpmässigt net för vanliga eller okända användare ineffektiva. Å andra sidan är _nätfiske-_ och _whalingattacker_ som prioriterade konton är mycket givande för attacker. Prioritetskonton kräver därför starkare än vanligt skydd för att förhindra kontokompromettering.
 
@@ -86,7 +86,7 @@ Du kan också skapa anpassade taggar för att ytterligare identifiera och klassi
 
 ## <a name="monitor-priority-accounts-in-alerts-reports-and-detections"></a>Övervaka prioriterade konton i aviseringar, rapporter och identifieringar
 
-När du har skyddat och taggt dina prioriterade användare kan du använda tillgängliga rapporter, aviseringar och undersökningar i EOP och Defender för Office 365 för att snabbt identifiera incidenter eller identifieringar som omfattar prioriterade konton. De funktioner som har stöd för användartaggar beskrivs i följande tabell.
+När du har säkrat och tagga dina prioriterade användare kan du använda tillgängliga rapporter, aviseringar och undersökningar i EOP och Defender för Office 365 för att snabbt identifiera incidenter eller identifieringar som omfattar prioriterade konton. De funktioner som har stöd för användartaggar beskrivs i följande tabell.
 
 <br>
 
@@ -94,7 +94,7 @@ När du har skyddat och taggt dina prioriterade användare kan du använda tillg
 
 |Funktion|Beskrivning|
 |---|---|
-|Varningar|Användartaggarna för påverkade användare är synliga  och tillgängliga som filter på sidan Visa aviseringar i Säkerhets- & Efterlevnadscenter. Mer information finns i [Visa aviseringar.](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#viewing-alerts)|
+|Varningar|Användartaggarna för påverkade användare är synliga  och tillgängliga som filter på sidan Visa aviseringar i Säkerhets- & Efterlevnadscenter. Mer information finns i Visa [aviseringar.](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#viewing-alerts)|
 |Hotutforskaren <p> Identifiering i realtid|I **Threat Explorer** (Microsoft Defender för Office 365 abonnemang 2) eller identifieringar i realtid (Microsoft Defender för Office 365 abonnemang 1) visas användartaggar i rutnätsvyn för e-post och den utfällbara informationen om **e-post.** Användartaggar är också tillgängliga som en filtrerbar egenskap. Mer information finns i Taggar [i Hotutforskaren.](threat-explorer.md#tags-in-threat-explorer)|
 |Kampanjvyer|Användartaggar är en av många filterbara egenskaper i kampanjvyer i Microsoft Defender för Office 365 abonnemang 2. Mer information finns i [Kampanjvyer.](campaigns.md)|
 |Statusrapport för hotskydd|I praktiskt taget alla vyer och detaljtabeller i **rapporten om skydd mot hot** kan du filtrera resultaten efter **prioritetskonton.** Mer information finns i rapporten [om skydd mot hot.](view-email-security-reports.md#threat-protection-status-report)|

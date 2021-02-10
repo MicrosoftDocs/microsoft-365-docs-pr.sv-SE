@@ -20,17 +20,21 @@ description: Administratörer kan få information om hur de tar bort användare 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 779e769b76299edf9b6d205f64bed4738f2f2499
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: ae630babaf68457567bbe49e743ca8be8ce38fc2
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988198"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166837"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Ta bort blockerade användare från portalen med åtkomstbegränsade användare i Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Om en användare överskrider någon av de utgående sändningsgränserna som anges i [tjänstbegränsningarna](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) eller i [utgående skräppostprinciper](configure-the-outbound-spam-policy.md), begränsas användaren från att skicka e-post, men de kan fortfarande ta emot e-post.
 
@@ -52,10 +56,10 @@ Administratörer kan ta bort användare från portalen med åtkomstbegränsade a
 
   Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
-  **Anmärkningar**:
-
-  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
+  > [!NOTE]
+  > 
+  > - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  > - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
 - En avsändare som överskrider gränsen för utgående e-post är ett bevis på ett komprometterat konto. Innan du tar bort användaren från portalen för åtkomstbegränsade användare måste du följa de nödvändiga stegen för att återfå kontroll över kontot. Mer information finns i [Svara på ett komprometterat e-postkonto i Office 365](responding-to-a-compromised-email-account.md).
 

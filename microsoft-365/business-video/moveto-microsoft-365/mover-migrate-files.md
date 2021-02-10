@@ -15,40 +15,39 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du migrerar Google-filer till Microsoft 365 för företag med hjälp av Mover.
-ms.openlocfilehash: 99040e4846aba084f40536e88f0aed70998f48be
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 72ea81ad86a20e01b4650915fef96a713b207c3b
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928204"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166165"
 ---
 # <a name="migrate-google-files-to-microsoft-365-for-business"></a>Migrera Google-filer till Microsoft 365 för företag 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MhaD?autoplay=false]
 
-När du flyttar över till Microsoft 365 för företag bör du migrera dina filer från Google Drive. Du kan använda appen Mover för att flytta filer från personliga och delade enheter. Mer information finns i [Mover Cloud Migration](https://docs.microsoft.com/sharepointmigration/mover-plan-migration)
+När du flyttar över till Microsoft 365 för företag bör du migrera dina filer från Google Drive. Du kan använda appen Mover för att flytta filer från personliga och delade enheter. Mer information finns i [Mover Cloud Migration.](https://docs.microsoft.com/sharepointmigration/mover-plan-migration)
 
 > [!NOTE]
 > Mover gör en kopia av filerna och flyttar kopiorna till Microsoft 365 för företag. De ursprungliga filerna finns också kvar i Google Drives.
 
 ## <a name="before-you-start"></a>Innan du börjar
 
-Alla användare bör ha loggat in på Microsoft 365 för företag och konfigurera onedrive för företag. Det gör du genom att [gå till office.com,](https://office.com)logga in med microsft 365 för företag-autentiseringsuppgifter och sedan välja OneDrive.
+Alla användare bör ha loggat in på Microsoft 365 för företag och konfigurera onedrive för företag. Det gör du genom att [gå office.com,](https://office.com)logga in med dina Microsoft 365 för företag-autentiseringsuppgifter och sedan välja OneDrive.
 
 ## <a name="try-it"></a>Prova!
 
 ### <a name="install-mover"></a>Installera Mover
 
-1. Logga in på administratörskonsolen för Google Workspace [på admin.google.com.](https://admin.google.com)
+1. Logga in på administratörskonsolen för Google Workspace [admin.google.com.](https://admin.google.com)
 
-1. Välj **Appar,** **Google Workspace Marketplace-appar** och lägg sedan till app i listan **Domäninstallation.**
+1. Välj **Apps**  >  **Google Workspace Marketplace-appar Lägg** till app i listan  >  **Domäninstallation.**
 
 1. Sök efter Mover och markera den.
 
@@ -61,7 +60,7 @@ Alla användare bör ha loggat in på Microsoft 365 för företag och konfigurer
 1. Återgå till **Google Workspace Marketplace-appar.**
 1. Uppdatera webbläsaren och välj **appen Mover.**
 1. Rulla nedåt och välj den universella navigeringslänken.
-1. Välj **Auktorisera ny** koppling, **leta upp G Suite (administratör)** och välj **Auktorisera.**
+1. Välj **Auktorisera ny** anslutare, **leta upp G Suite (administratör)** och välj **Auktorisera.**
 1. Ändra **visningsnamnet om** du vill och välj sedan **Godkänn.**
 1. Välj ett administratörskonto för Google, granska behörigheterna och välj **sedan Tillåt.**
 
@@ -72,7 +71,7 @@ Alla användare bör ha loggat in på Microsoft 365 för företag och konfigurer
 1. Välj **Office 365 Mover,** **Behörigheter,** **Bevilja administratörsmedgivande för ditt företag.**
 1. Välj ditt konto, granska behörigheterna och välj **Acceptera.**
 1. Välj **Egenskaper** och kontrollera att **användartilldelning krävs?** är aktiverat.
-1. Gå tillbaka till appen Mover, ändra visningsnamn **,** välj **Godkänn** om du vill och välj sedan ett Microsoft-administratörskonto.
+1. Gå tillbaka till appen Mover, ändra **visningsnamn**, välj **Godkänn** om du vill och välj sedan ett Microsoft-administratörskonto.
 
     Mover informerar dig om antalet SharePoint Online-webbplatser (eller SPO-webbplatser) och användare som upptäckts.
 1. Välj **Fortsätt migrering, välj** Lägg till **användare** och sedan Identifiera automatiskt och Lägg **till användare.**
@@ -86,7 +85,7 @@ Alla användare bör ha loggat in på Microsoft 365 för företag och konfigurer
 
     Mer information finns [i aka.ms/movercsv.](https://docs.microsoft.com/sharepointmigration/mover-create-migration-csv)
 
-    När du lägger till URL:en för målsökvägen tar du bort allt efter Delade dokument, till exempel fungerar inte den här fullständiga URL:en: `https://TENANT01.sharepoint.com/sites/SiteName/Shared Documents/Forms/AllItems.aspx`
+    När du lägger till URL:en för målsökvägen tar du bort allt efter delade dokument. Den här fullständiga WEBBADRESSen fungerar till exempel inte: `https://TENANT01.sharepoint.com/sites/SiteName/Shared Documents/Forms/AllItems.aspx`
 
     Ändra den till: `https://TENANT01.sharepoint.com/sites/SiteName/Shared Documents`
 

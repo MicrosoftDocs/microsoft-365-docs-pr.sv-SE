@@ -17,19 +17,24 @@ ms.collection:
 description: Läs mer om den säkra inställningen som standard i Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c8af609b8ed50b0bfacb7d9f5397fab4c4726927
-ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
+ms.openlocfilehash: 51b33afa6b07c040e6aa18abe996c78b770f0773
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50040550"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166585"
 ---
 # <a name="secure-by-default-in-office-365"></a>Säker som standard i Office 365
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-"Säker som standard" är en term som används för att definiera vilka standardinställningar som är säkrast som möjligt.
+**Gäller för**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+"Säker som standard" är en term som används för att definiera de standardinställningar som är säkrast som möjligt.
 
 Säkerheten måste dock balanseras med produktiviteten. Detta kan innefatta balans mellan:
 
@@ -53,15 +58,15 @@ Eftersom Microsoft vill att våra kunder ska vara säkra som standard tillämpas
 Mer information om dessa åsidosättningar finns i skapa [listor över betrodda avsändare.](create-safe-sender-lists-in-office-365.md)
 
 > [!NOTE]
-> Vi håller på att ta bort  åtgärden Flytta meddelandet till mappen  Skräppost för att få nätfiskeuttryck från EOP mot skräppost. Principer för skydd mot skräppost som använder den här åtgärden för nätfiskemeddelanden med hög förtroende konverteras till **karantänmeddelande.** Åtgärden **Omdirigera meddelande till e-postadress** för nätfiskemeddelanden med hög konfidens påverkas inte.
+> Vi håller på att ta bort  åtgärden Flytta meddelandet till mappen  Skräppost för nätfiskeuttryck i EOP:s principer för skräppost. Skydd mot skräppost som använder den här åtgärden för nätfiskemeddelanden med hög konfidens konverteras till **karantänmeddelande.** Åtgärden **Omdirigera meddelande till e-postadress** för nätfiskemeddelanden med hög konfidens påverkas inte.
 
 Säker är som standard inte en inställning som kan aktiveras eller inaktiveras, men det är så filtreringen fungerar för att hålla potentiellt skadliga eller oönskade meddelanden borta från dina postlådor. Skadlig programvara och nätfiskemeddelanden med hög konfidens ska ha karantän. Endast administratörer kan hantera meddelanden som har satts i karantän som skadlig kod eller nätfiske och de kan också rapportera falska positiva meddelanden till Microsoft därifrån. Mer information finns i [Hantera meddelanden och filer i karantän som administratör i EOP](manage-quarantined-messages-and-files.md)
 
 ## <a name="more-on-why-were-doing-this"></a>Mer information om varför vi gör det här
 
-Andan för att vara säker som standard är att vi vidtar samma åtgärd för meddelandet du skulle vidta om du visste att meddelandet var skadligt, även om ett konfigurerat undantag annars skulle tillåta att meddelandet levereras. Det här är samma metod som vi alltid använt för skadlig programvara, och nu utökar vi samma beteende till nätfiskemeddelanden med hög förtroende.
+Andan med att vara säker som standard är att vi vidtar samma åtgärd för meddelandet du skulle vidta om du visste att meddelandet var skadligt, även om ett konfigurerat undantag annars skulle tillåta att meddelandet levereras. Det här är samma metod som vi alltid använt för skadlig programvara, och nu utökar vi samma beteende till nätfiskemeddelanden med hög förtroende.
 
-Våra data anger att en användare är 30 gånger mer sannolikt att klicka på en skadlig länk i meddelanden i mappen Skräppost kontra karantän. Våra data anger också att den falska positiva hastigheten (bra meddelanden som markerats som dåliga) för nätfiskemeddelanden med hög förtroende är mycket låg och administratörer kan lösa alla falska positiva resultat med administratörsinskickningar.
+Våra data anger att en användare är 30 gånger mer sannolikt att klicka på en skadlig länk i meddelanden i mappen Skräppost kontra karantän. Våra data visar också att den falska positiva hastigheten (bra meddelanden som markerats som dåliga) för nätfiskemeddelanden med hög förtroende är mycket låg och administratörer kan lösa alla falska positiva resultat med administratörsinskickningar.
 
 Vi kom också fram till att listorna för tillåtna avsändare och tillåtna domäner i principerna för skräppostskydd och Betrodda avsändare i Outlook var för breda och orsakade mer skada än nytta.
 

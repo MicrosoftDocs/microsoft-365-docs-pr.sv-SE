@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 search.appverid:
 - MET150
 ms.assetid: ''
@@ -18,16 +17,23 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Administratörer kan lära sig hur EOP använder e-autentisering (SPF, DKIM och DMARC) för att förhindra förfalskning, phishing och skräppost.
-ms.openlocfilehash: 6a0bf6fd7958f44a9cfbe7ae0600aeb064170437
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: ff6bbaa4831234e45c5617fb4e7ee9d4113f1eb1
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760524"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165460"
 ---
 # <a name="email-authentication-in-eop"></a>E-postautentisering i EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Gäller för**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 E-postautentisering (kallas även för e-postverifiering) är en grupp standarder som försöker sluta förfalskning (e-postmeddelanden från falska avsändare). I alla Microsoft 365-organisationer använder EOP dessa standarder för att verifiera inkommande e-post:

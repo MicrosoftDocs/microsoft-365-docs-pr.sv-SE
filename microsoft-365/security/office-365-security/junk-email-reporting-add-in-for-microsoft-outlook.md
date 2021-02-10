@@ -1,5 +1,5 @@
 ---
-title: Installera och använda tillägget skräp post rapportering för Microsoft Outlook
+title: Installera och använda tillägget Skräppostrapportering för Microsoft Outlook
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -12,158 +12,162 @@ localization_priority: Normal
 ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
-description: Lär dig hur du installerar och använder tillägget skräp post rapportering i Microsoft för att rapportera skräp post, icke skräp post-och nät fiske meddelanden till Microsoft.
+description: Lär dig hur du installerar och använder tillägget Microsoft Skräppostrapportering för att rapportera skräppost, icke-skräppost och nätfiskemeddelanden till Microsoft.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 896ef89149e5ef65ea96b2b21e1010c29fa7a7fc
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 171bdc43e565a0890cddcd1e48208b49774a5315
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029426"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167353"
 ---
-# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installera och använda tillägget skräp post rapportering för Microsoft Outlook
+# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installera och använda tillägget Skräppostrapportering för Microsoft Outlook
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
-> Om du inte använder tillägget skräp post rapportering rekommenderar vi att du i stället lägger till [tillägget för rapport meddelanden](enable-the-report-message-add-in.md) eller [rapport](enable-the-report-phish-add-in.md) tillägget. Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
+> Om du inte använder tillägget Skräppostrapportering rekommenderar vi i stället [](enable-the-report-message-add-in.md) tilläggen [Rapportmeddelande](enable-the-report-phish-add-in.md) eller Rapport nätfiske. Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
-Med tillägget skräp post rapportering för Microsoft Outlook kan användarna skicka falska positiva (god e-post), falsk negativ (dålig e-post) och nätfiske-meddelanden till Microsoft. Om din organisation inte använder Exchange Online Protection (till exempel lokala Exchange-eller e-posttjänster som inte är Exchange Online), påverkas inte din skräp post filtrering.
+Med tillägget Skräppostrapportering för Microsoft Outlook kan användare skicka falska positiva meddelanden (bra e-post som har markerats som skräppost), falska negativa meddelanden (felaktig e-post tillåts) och nätfiskemeddelanden till Microsoft. Om din organisation inte använder Exchange Online Protection (till exempel lokal Exchange eller andra e-posttjänster än Exchange Online) påverkar inte inskickingen av skräppostrapporten skräppostfiltreringen.
 
-I det här avsnittet förklaras hur du installerar och använder tillägget skräp post rapportering.
+I det här avsnittet förklaras hur du installerar och använder tillägget Skräppostrapportering.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Information om hur du installerar tillägget skräp post rapportering finns i avsnittet [installera tillägget skräp post rapportering](#install-the-junk-email-reporting-add-in) längre ned i den här artikeln.
+- Om du vill installera tillägget Skräppostrapportering [](#install-the-junk-email-reporting-add-in) läser du avsnittet Installera tillägget Skräppostrapportering senare i den här artikeln.
 
-- Tillägget skräp post rapportering fungerar med följande versioner av Outlook:
+- Tillägget Skräppostrapportering fungerar med följande versioner av Outlook:
 
   - Outlook 2013 eller senare
-  - Outlook ingår i Microsoft 365-appar för företag
+  - Outlook ingår i Microsoft 365-program för företag
 
-- Mer information om hur du rapporterar meddelanden till Microsoft finns i [rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
+- Mer information om hur du rapporterar meddelanden till Microsoft finns [i Rapportera meddelanden och filer till Microsoft.](report-junk-email-messages-to-microsoft.md)
 
-## <a name="use-the-junk-email-reporting-add-in-to-report-spam-and-phishing-messages"></a>Använda tillägget skräp post rapportering för att rapportera skräp post och nät fiske meddelanden
+## <a name="use-the-junk-email-reporting-add-in-to-report-spam-and-phishing-messages"></a>Använd tillägget Skräppostrapportering för att rapportera skräppost och nätfiskemeddelanden
 
-1. Använd någon av följande metoder för att rapportera skräp post och nät fiske meddelanden, för meddelanden i Inkorgen eller annan mapp för e-post, utom spam.
+1. För meddelanden i Inkorgen eller någon annan e-postmapp utom Skräppost använder du någon av följande metoder för att rapportera skräppost och nätfiske:
 
-   - Markera meddelandet eller öppna meddelandet. Klicka på **skräp post** på fliken **Start** eller **meddelande** i menyfliksområdet och välj sedan **rapportera som skräp post** eller **rapportera som nätfiske**.
+   - Markera meddelandet eller öppna meddelandet. Klicka på **Skräppost** **på fliken** Start eller Meddelande i **menyfliksområdet** och välj sedan Rapportera **som skräppost** eller Rapportera **som nätfiske.**
 
-     ![Rapportera skräp post eller nätfiske via menyfliksområdet](../../media/junk-email-reporting-ribbon.png)
+     ![Rapportera skräppost och nätfiske i menyfliksområdet](../../media/junk-email-reporting-ribbon.png)
 
-   - Högerklicka på meddelandet, Välj **skräp post** och välj sedan **rapportera som skräp post** eller **rapportera som nätfiske**.
+   - Högerklicka på meddelandet, välj **Skräppost** och välj sedan **Rapportera som skräppost eller** Rapportera som **nätfiske.**
 
-     ![Rapportera skräp post eller nätfiske-e-postadress från höger musknapp](../../media/junk-email-reporting-right-click.png)
+     ![Rapportera skräppost och nätfiske genom att högerklicka](../../media/junk-email-reporting-right-click.png)
 
-   - Välj flera meddelanden, högerklicka och välj sedan **rapportera som skräp post** eller **rapportera som nätfiske**.
+   - Markera flera meddelanden, högerklicka och välj sedan Rapportera **som skräppost** eller Rapportera **som nätfiske.**
 
-     ![Rapportera flera skräp post-eller nätfiske-meddelanden från höger musknapp](../../media/junk-email-reporting-right-click-multiple.png)
+     ![Rapportera flera skräppost- eller nätfiskemeddelanden från högerklickning](../../media/junk-email-reporting-right-click-multiple.png)
 
-2. Läs informationen i dialog rutan som visas och klicka på **rapportera**. Om du ändrar dig klickar du på **rapportera inte**.
+2. Läs informationen i dialogrutan som visas och klicka på **Rapport.** Om du ändrar dig klickar du **på Rapportera inte.**
 
-   ![Dialog rutan rapportera som skräp post](../../media/junk-email-reporting-report-as-junk-dialog.png)
+   ![Dialogrutan Rapportera som skräppost](../../media/junk-email-reporting-report-as-junk-dialog.png)
 
-   ![Dialog rutan rapportera som nätfiske](../../media/junk-email-reporting-report-as-phishing-dialog.png)
-
-3. De valda meddelandena skickas till Microsoft för analys och:
-
-   - Flyttas till mappen skräp post om den rapporter ATS som skräp post.
-   - Borttagen om den rapporterades som nätfiske.
-
-   Bekräfta att meddelanden har skickats genom att öppna mappen **skickat** för att visa de meddelanden som skickats.
-
-## <a name="use-the-junk-email-reporting-add-in-to-report-non-spam-and-phishing-messages-from-the-junk-email-folder"></a>Använda tillägget skräp post rapportering för att rapportera icke-spam-och nät fiske meddelanden från mappen skräp post
-
-1. I mappen skräp post kan du använda någon av följande metoder för att rapportera skräp post i falsk positiv eller nätfiske:
-
-   - Markera meddelandet eller öppna meddelandet. På fliken **Start** eller **meddelande** i menyfliksområdet klickar du på **inte skräp post** och väljer **rapportera inte som skräp post** eller **rapportera som nätfiske**.
-
-     ![Rapportera inte skräp post eller nätfiske via menyfliksområdet i mappen skräp post](../../media/junk-email-reporting-junk-folder-ribbon.png)
-
-   - Högerklicka på meddelandet, klicka på **skräp post** och välj sedan **rapportera som inte skräp post** eller **rapportera som nätfiske**.
-
-     ![Rapportera inte skräp post eller nätfiske-e-postadress Högerklicka i mappen skräp post](../../media/junk-email-reporting-junk-folder-right-click.png)
-
-   - Välj flera meddelanden, högerklicka och välj sedan **rapportera som inte skräp post** eller **rapportera som nätfiske**.
-
-     ![Rapportera flera inte skräp post eller nätfiske-meddelanden från höger musknapp i mappen skräp post](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
-
-2. Läs informationen i dialog rutan som visas och klicka på **rapportera**. Om du ändrar dig klickar du på **rapportera inte**.
-
-   ![Dialog rutan rapportera inte som skräp post](../../media/junk-email-reporting-report-as-not-junk-dialog.png)
-
-   ![Dialog rutan rapportera som nätfiske](../../media/junk-email-reporting-report-as-phishing-dialog.png)
+   ![Dialogrutan Rapportera som nätfiske](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
 3. De valda meddelandena skickas till Microsoft för analys och:
 
-   - Flyttas till mappen skräp post om den rapporter ATS som skräp post.
-   - Borttagen om den rapporterades som nätfiske.
+   - Flyttades till mappen Skräppost om den rapporterades som skräppost.
+   - Borttagna om de rapporterats som nätfiske.
 
-   Bekräfta att meddelanden har skickats genom att öppna mappen **skickat** för att visa de meddelanden som skickats.
+   Bekräfta att meddelandena har skickats genom att öppna mappen **Skickat för** att visa skickade meddelanden.
 
-## <a name="install-the-junk-email-reporting-add-in"></a>Installera tillägget skräp post rapportering
+## <a name="use-the-junk-email-reporting-add-in-to-report-non-spam-and-phishing-messages-from-the-junk-email-folder"></a>Använd tillägget Skräppostrapportering för att rapportera icke skräppost- och nätfiskemeddelanden från mappen Skräppost
 
-- Du måste ha administratörs behörighet på den dator där du installerar tillägget.
+1. Använd någon av följande metoder i mappen Skräppost för att rapportera skräppost med falska positiva resultat eller nätfiskemeddelanden:
+
+   - Markera meddelandet eller öppna meddelandet. Klicka på **Inte** skräppost **på** fliken Start eller Meddelande i menyfliksområdet och välj sedan Rapporten **som** Inte skräppost eller Rapportera **som nätfiske.**
+
+     ![Rapportera inte skräppost eller nätfiskemeddelande från menyfliksområdet i mappen Skräppost](../../media/junk-email-reporting-junk-folder-ribbon.png)
+
+   - Högerklicka på meddelandet, klicka på **Skräppost** och välj sedan **Rapportera som** Inte skräppost eller Rapportera **som nätfiske.**
+
+     ![Rapportera inte skräppost eller nätfiskemeddelande från att högerklicka i mappen Skräppost](../../media/junk-email-reporting-junk-folder-right-click.png)
+
+   - Markera flera meddelanden, högerklicka och välj sedan Rapportera som Inte **skräppost** eller **Rapportera som nätfiske.**
+
+     ![Rapportera flera icke-skräppost- eller nätfiskemeddelanden från högerklick i mappen Skräppost](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
+
+2. Läs informationen i dialogrutan som visas och klicka på **Rapport.** Om du ändrar dig klickar du **på Rapportera inte.**
+
+   ![Dialogrutan Rapportera som inte skräppost](../../media/junk-email-reporting-report-as-not-junk-dialog.png)
+
+   ![Dialogrutan Rapportera som nätfiske](../../media/junk-email-reporting-report-as-phishing-dialog.png)
+
+3. De valda meddelandena skickas till Microsoft för analys och:
+
+   - Flyttades till mappen Skräppost om den rapporterades som skräppost.
+   - Borttagna om de rapporterats som nätfiske.
+
+   Bekräfta att meddelandena har skickats genom att öppna mappen **Skickat för** att visa skickade meddelanden.
+
+## <a name="install-the-junk-email-reporting-add-in"></a>Installera tillägget Skräppostrapportering
+
+- Du måste ha administratörsbehörighet på den dator där du installerar tillägget.
 
 - Gå till <https://www.microsoft.com/download/details.aspx?id=18275> och ladda ned lämplig MSI-fil för din version av Office till en plats som är lätt att hitta:
 
-  - **32-bitar**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
-  - **64-bitar**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
+  - **32-bitars:**`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
+  - **64-bitars:**`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-- För Outlook 2013 eller senare är det enda kravet för Microsoft .NET Framework 2,0. I Windows 10 kan du inte installera .NET Framework 2,0 från en nedladdning.
+- För Outlook 2013 eller senare är Microsoft .NET Framework 2.0 den enda förutsättningen. I Windows 10 kan du inte installera .NET Framework 2.0 från en nedladdning.
 
-### <a name="install-the-junk-email-reporting-add-in-using-the-setup-wizard"></a>Installera tillägget skräp post rapportering med installations guiden
+### <a name="install-the-junk-email-reporting-add-in-using-the-setup-wizard"></a>Installera tillägget Skräppostrapportering med hjälp av installationsguiden
 
 1. Stäng Outlook på datorn.
 
-2. I Windows 10 kontrollerar du att .NET Framework 2,0 är aktiverat. Anvisningar finns i [Aktivera .NET Framework 3,5 på kontroll panelen](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel).
+2. Kontrollera att .NET Framework 2.0 är aktiverat i Windows 10. Instruktioner finns i [Aktivera .NET Framework 3.5 på Kontrollpanelen.](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel)
 
-3. Leta reda på. msi-filen du laddade ner och dubbelklicka på den.
+3. Leta upp .msi-filen som du laddade ned och dubbelklicka på den.
 
-4. Klicka på **Nästa** på sidan **Välkommen till installations programmet för skräp post** .
+4. På sidan **Välkommen till installationsprogrammet för rapportering av** skräppost för Microsoft klickar du på **Nästa.**
 
-5. Granska licens avtalet, klicka på **Jag godkänner villkoren i licens avtalet** om du godkänner villkoren och klicka sedan på **Nästa**.
+5. Granska licensavtalet, klicka **på Jag accepterar villkoren i licensavtalet** om du godkänner villkoren och klicka sedan på **Nästa.**
 
-6. När guiden är klar klickar du på **Slutför**.
+6. Klicka på Slutför när guiden är **klar.**
 
 Starta Outlook.
 
-Leta efter knappen **skräp post** i menyfliksområdet i Outlook. Du kan nu Rapportera skräp post meddelanden till Microsoft genom att välja skräp post meddelanden i Inkorgen och klicka på knappen **Rapportera skräp** post.
+Leta efter knappen **Skräppost** i menyfliksområdet i Outlook. Nu kan du rapportera skräppost till Microsoft genom att markera skräppostmeddelanden i Inkorgen och klicka på **knappen Rapportera** skräppost.
 
-Välj nedpilen bredvid **skräp post** för fler alternativ, till exempel **rapportera som nätfiske** om du vill rapportera nät fiske meddelanden till Microsoft. I mappen skräp post kan du också välja att **rapportera inte skräp** post om ett e-postmeddelande felaktigt identifierades som skräppost.
+Välj nedåtpilen bredvid skräppost för **fler** alternativ, till exempel Rapport som **nätfiske** om du vill rapportera nätfiskemeddelanden till Microsoft. I skräppostmappen kan du också markera **Rapportera** inte skräppost om ett e-postmeddelande felaktigt identifierats som skräppost.
 
-### <a name="install-the-junk-email-reporting-add-in-using-silent-mode"></a>Installera Add-In för skräp post rapportering i tyst läge
+### <a name="install-the-junk-email-reporting-add-in-using-silent-mode"></a>Installera rapportering av skräppost i Add-In tyst läge
 
 1. Stäng Outlook på datorn.
 
-2. I Windows 10 installerar du .NET Framework 2,0 genom att köra följande kommando:
+2. Installera .NET Framework 2.0 i Windows 10 genom att köra följande kommando:
 
    ```dos
    DISM /Online /Enable-Feature /FeatureName:NetFx3 /All
    ```
 
-3. Om du vill installera tillägget utan några åtgärder från användaren öppnar du kommando tolken och använder följande syntax:
+3. Om du vill installera tillägget utan interaktion med användarna öppnar du kommandotolken och använder följande syntax:
 
    ```dos
    msiexec /qn /i "<PathToMSIFile>\<MSIFile>" [MaxMessageSelection=<1-50>] [BccEmailAddress="<EmailAddress1>; <EmailAddress2>"...]
    ```
 
-   - `MaxMessageSelection` anger maximalt antal meddelanden som du kan välja för en enda överföring. Giltiga värden är mellan 1 och 50. Standardvärdet är 15.
+   - `MaxMessageSelection` anger det maximala antalet meddelanden som du kan välja för en enskild inskickning. Giltiga värden är 1 till 50. Standardvärdet är 15.
 
-   - `BccEmailAddress` anger ytterligare hemliga kopior som kommer att få en kopia av alla användar inlämningar. Standardvärdet är tomt (inga fler mottagare av hemlig kopia).
+   - `BccEmailAddress` ytterligare mottagare av hemlig kopia som ska få en kopia av alla användarinskickningar. Standardvärdet är tomt (inga ytterligare mottagare av Hemlig kopia).
 
-   I det här exemplet installeras 64-bitars versionen av tillägget från den angivna sökvägen med standardinställningarna.
+   I det här exemplet installeras 64-bitarsversionen av tillägget från den angivna sökvägen med standardinställningarna.
 
    ```dos
    msiexec /qn /i "C:\Downloads\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi"
    ```
 
-   I det här exemplet installeras 32-bitars versionen av tillägget från den angivna sökvägen med följande inställningar:
+   I det här exemplet installeras 32-bitarsversionen av tillägget från den angivna sökvägen med följande ytterligare inställningar:
 
-   - Upp till 20 meddelanden kan väljas med en enda överföring.
-   - junkreports@contoso.com och hollyd@treyresearch.net ta emot kopior av alla inlägg.
+   - Upp till 20 meddelanden kan väljas i en enda inskickning.
+   - junkreports@contoso.com och hollyd@treyresearch.net ta emot hemlig kopia av alla bidrag.
 
    ```dos
    msiexec /qn /i "C:\Downloads\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi" MaxMessageSelection=20 BccEmailAddress="junkreports@contoso.com; hollyd@treyresearch.net"
@@ -171,100 +175,100 @@ Välj nedpilen bredvid **skräp post** för fler alternativ, till exempel **rapp
 
 ### <a name="how-do-you-know-this-worked"></a>Hur vet du att det fungerade?
 
-Kontrol lera att du har installerat tillägget skräp post rapportering genom att göra något av följande i Outlook:
+Kontrollera att du har installerat tillägget Skräppostrapportering genom att göra något av följande i Outlook:
 
-- Markera meddelandet eller öppna meddelandet. Klicka på **skräp post** på fliken **Start** eller **meddelande** i menyfliksområdet och kontrol lera att följande alternativ är tillgängliga:
+- Markera meddelandet eller öppna meddelandet. Klicka på **Skräppost** **på fliken** Start eller Meddelande **i** menyfliksområdet och kontrollera att följande alternativ är tillgängliga:
 
-  - **Rapportera som skräp post**
+  - **Rapportera som skräppost**
   - **Rapportera som nätfiske**
-  - **Alternativ för skräp post**
-  - **Rapportera skräppost-onlinehjälp**
+  - **Alternativ för skräppostrapportering**
+  - **Rapportera hjälp för Skräppost online**
 
-  ![Rapportera skräp post eller nätfiske via menyfliksområdet](../../media/junk-email-reporting-ribbon.png)
+  ![Rapportera skräppost och nätfiske i menyfliksområdet](../../media/junk-email-reporting-ribbon.png)
 
-- Högerklicka på meddelandet, Välj **skräp post** och kontrol lera att följande alternativ är tillgängliga:
+- Högerklicka på meddelandet, välj **Skräppost** och kontrollera att följande alternativ är tillgängliga:
 
-  - **Rapportera som skräp post**
+  - **Rapportera som skräppost**
   - **Rapportera som nätfiske**
-  - **Alternativ för skräp post**
-  - **Rapportera skräppost-onlinehjälp**
+  - **Alternativ för skräppostrapportering**
+  - **Rapportera hjälp för Skräppost online**
 
-  ![Rapportera skräp post eller nätfiske-e-postadress från höger musknapp](../../media/junk-email-reporting-right-click.png)
+  ![Rapportera skräppost och nätfiske genom att högerklicka](../../media/junk-email-reporting-right-click.png)
 
-- Välj flera meddelanden, högerklicka och kontrol lera att följande alternativ är tillgängliga:
+- Markera flera meddelanden, högerklicka och kontrollera att följande alternativ är tillgängliga:
 
-  - **Rapportera som skräp post**
+  - **Rapportera som skräppost**
   - **Rapportera som nätfiske**
 
-  ![Rapportera flera skräp post-eller nätfiske-meddelanden från höger musknapp](../../media/junk-email-reporting-right-click-multiple.png)
+  ![Rapportera flera skräppost- eller nätfiskemeddelanden från högerklickning](../../media/junk-email-reporting-right-click-multiple.png)
 
-- Gör föregående åtgärder i mappen **skräp post** och kontrol lera att tidigare alternativ för **skräp** post rapportering **inte är skräp post**.
+- Gör de föregående åtgärderna i **mappen Skräppost** och kontrollera att de **tidigare** alternativen för skräppostrapportering nu är **Inte skräppost.**
 
-  ![Rapportera inte skräp post eller nätfiske via menyfliksområdet i mappen skräp post](../../media/junk-email-reporting-junk-folder-ribbon.png)
+  ![Rapportera inte skräppost eller nätfiskemeddelande från menyfliksområdet i mappen Skräppost](../../media/junk-email-reporting-junk-folder-ribbon.png)
 
-  ![Rapportera inte skräp post eller nätfiske-e-postadress Högerklicka i mappen skräp post](../../media/junk-email-reporting-junk-folder-right-click.png)
+  ![Rapportera inte skräppost eller nätfiskemeddelande från att högerklicka i mappen Skräppost](../../media/junk-email-reporting-junk-folder-right-click.png)
 
-  ![Rapportera flera inte skräp post eller nätfiske-meddelanden från höger musknapp i mappen skräp post](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
+  ![Rapportera flera icke-skräppost- eller nätfiskemeddelanden från högerklick i mappen Skräppost](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
 
-## <a name="uninstall-the-junk-email-reporting-add-in"></a>Avinstallera tillägget skräp post rapportering
+## <a name="uninstall-the-junk-email-reporting-add-in"></a>Avinstallera tillägget Skräppostrapportering
 
-När du har stängt Outlook kan du använda någon av följande procedurer för att avinstallera tillägget skräp post rapportering:
+När du stänger Outlook kan du använda någon av följande procedurer för att avinstallera tillägget Skräppostrapportering:
 
-- **Kontroll panelen**: Tryck på Windows-tangenten + R. I dialog rutan **Kör** som öppnas anger du `control appwiz.cpl` och klickar sedan på **OK**.
+- **Kontrollpanelen:** Tryck på Windows-tangenten + R. I dialogrutan **Kör** som öppnas anger du och `control appwiz.cpl` klickar sedan på **OK.**
 
-  Leta reda på och markera **tillägget skräp post rapportering** i listan och klicka sedan på **Avinstallera**.
+  Leta upp och **välj tillägget Microsoft Skräppostrapportering** i listan och klicka sedan på **Avinstallera.**
 
-- **Windows installations paket**: Sök eller ladda ned lämplig. msi-fil och dubbelklicka på den.
+- **Windows Installer paket:** Hitta eller hämta lämplig .msi-fil och dubbelklicka på den.
 
-  - **32-bitar**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
+  - **32-bitars:**`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
-  - **64-bitar**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
+  - **64-bitars:**`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-  I dialog rutan som visas väljer du **ta bort Microsoft skräppost-e-postrapportering för Outlook** och klicka sedan på **Nästa**.
+  I dialogrutan som visas väljer du **Ta bort microsoft-tillägget Skräppostrapportering för Outlook och** klickar sedan på **Nästa.**
 
-- **Tyst läge**: hitta eller ladda ned lämplig. msi-fil. Ersätt \<PathToFile\> med platsen för MSI-filen i kommando tolken och kör något av följande kommandon:
+- **Tyst läge:** Hitta eller hämta lämplig MSI-fil. I kommandotolken ersätter du med MSI-filens plats \<PathToFile\> och kör något av följande kommandon:
 
-  - **32-bitar**:
+  - **32-bitars:**
 
     ```dos
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
     ```
 
-  - **64-bitar**:
+  - **64-bitars:**
 
     ```dos
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
     ```
 
-När du öppnar Outlook när du har avinstallerat bör du inte gå vidare med alternativen för skräp post, inte skräp post och nätfiske.
+När du öppnar Outlook efter avinstallationen ska alternativen för skräppost, inte skräppost och nätfiskerapportering vara borta.
 
-## <a name="troubleshooting-the-junk-email-reporting-add-in"></a>Felsöka tillägget skräp post rapportering
+## <a name="troubleshooting-the-junk-email-reporting-add-in"></a>Felsöka tillägget Skräppostrapportering
 
-Ibland kan du få problem med Outlook när du har lagt till tillägget skräp post rapportering. I det här avsnittet beskrivs problem som du kan stöta på, tillsammans med tips för att åtgärda problemen.
+Ibland kan du uppleva problem med Outlook när du har lagt till tillägget Skräppostrapportering. I det här avsnittet beskrivs problem som du kan stöta på samt tips för att lösa problemen.
 
-### <a name="troubleshooting-for-users"></a>Fel sökning för användare
+### <a name="troubleshooting-for-users"></a>Felsökning för användare
 
-Ett eller flera av följande problem uppstår:
+Du får ett eller flera av följande problem:
 
-- Inget händer när du klickar på **Rapportera skräp post**
+- Inget händer när du klickar **på Rapportera skräppost**
 - Outlook slutar svara när du har valt ett e-postmeddelande
-- Rapporterade att skräp post inte kan levereras på grund av ett "unleveransable"-svar
+- Rapporterad skräppost kan inte levereras på grund av ett "olevererbart" svar
 
-Så här löser du problemet:
+Lös problemet genom att göra följande:
 
 1. Stäng och starta om Outlook.
-2. Skapa och skicka ett test meddelande och kontrol lera att mottagaren fått meddelandet.
-3. Om problemet kvarstår kontaktar du din administratör.
+2. Skapa och skicka ett testmeddelande och kontrollera att mottagaren har fått meddelandet.
+3. Kontakta administratören om problemet kvarstår.
 
-Andra metoder som du kan använda för att skicka meddelanden till Microsoft finns i [rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
+Information om andra metoder som du kan använda för att skicka meddelanden till Microsoft finns i [Rapportera meddelanden och filer till Microsoft.](report-junk-email-messages-to-microsoft.md)
 
-### <a name="troubleshooting-for-admins"></a>Fel sökning för administratörer
+### <a name="troubleshooting-for-admins"></a>Felsökning för administratörer
 
-#### <a name="problem-an-error-message-continually-appears-that-asks-users-to-contact-their-system-administrator"></a>Problem: ett fel meddelande visas hela tiden så att användarna kan kontakta sin system administratör
+#### <a name="problem-an-error-message-continually-appears-that-asks-users-to-contact-their-system-administrator"></a>Problem: Ett felmeddelande visas kontinuerligt som ber användarna att kontakta sina systemadministratör
 
-1. Verifiera eller ange `LoggingLevel` register nyckel för värdet "VERBOSE":
+1. Verifiera eller ange `LoggingLevel` registernyckeln till värdet "Utförlig":
 
-   - **32-bitars Outlook på 32-bitars versionen av Windows**:
+   - **32-bitars Outlook på 32-bitars Windows:**
 
      ```text
      Windows Registry Editor Version 5.00
@@ -273,7 +277,7 @@ Andra metoder som du kan använda för att skicka meddelanden till Microsoft fin
      "LoggingLevel"="Verbose"
      ```
 
-   - **32-bitars Outlook på 64-bitars versionen av Windows**:
+   - **32-bitars Outlook på 64-bitars Windows:**
 
      ```text
      Windows Registry Editor Version 5.00
@@ -282,7 +286,7 @@ Andra metoder som du kan använda för att skicka meddelanden till Microsoft fin
      "LoggingLevel"="Verbose"
      ```
 
-   - **64-bitars Outlook**:
+   - **64-bitars Outlook:**
 
      ```text
      Windows Registry Editor Version 5.00
@@ -291,17 +295,17 @@ Andra metoder som du kan använda för att skicka meddelanden till Microsoft fin
      "LoggingLevel"="Verbose"
      ```
 
-2. Starta om Outlook och be användare rapportera tillbaka när de ser fel meddelandet.
+2. Starta om Outlook och be användarna att rapportera när de ser felmeddelandet.
 
-3. Samla in logg informationen som finns på följande plats:
+3. Samla in logginformationen som finns på följande plats:
 
    `%LOCALAPPDATA%\Microsoft\Junk Email Reporting Add-in\SpamReporterAddinLog.txt`
 
-4. Kontakta Exchange Online Protection Technical Support och ge dem logg information.
+4. Kontakta den tekniska supporten för Exchange Online Protection och ge dem logginformationen.
 
-#### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a>Problem: användarna har markerat sig för att inte få en bekräftelse när de rapporterar meddelanden och nu vill att de ska uppmanas tillbaka
+#### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a>Problem: Användarna valde att inte få någon bekräftelsefråga när de rapporterar meddelanden, och nu vill de få tillbaka uppmaningen
 
-1. Skapa `ConfirmReportJunk` register nyckel med värdet "true":
+1. Skapa `ConfirmReportJunk` registernyckeln med värdet "True":
 
    ```text
    Windows Registry Editor Version 5.00
