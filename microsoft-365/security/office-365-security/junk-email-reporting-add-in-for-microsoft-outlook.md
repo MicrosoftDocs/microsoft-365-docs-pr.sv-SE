@@ -1,5 +1,5 @@
 ---
-title: Installera och använda tillägget skräp post rapportering för Microsoft Outlook
+title: Installera och använda tillägget Skräppostrapportering för Microsoft Outlook
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -12,259 +12,263 @@ localization_priority: Normal
 ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
-description: Lär dig hur du installerar och använder tillägget skräp post rapportering i Microsoft för att rapportera skräp post, icke skräp post-och nät fiske meddelanden till Microsoft.
+description: Lär dig hur du installerar och använder tillägget Microsoft Skräppostrapportering för att rapportera skräppost, icke-skräppost och nätfiskemeddelanden till Microsoft.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 896ef89149e5ef65ea96b2b21e1010c29fa7a7fc
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 171bdc43e565a0890cddcd1e48208b49774a5315
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029426"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167353"
 ---
-# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a><span data-ttu-id="29e7d-103">Installera och använda tillägget skräp post rapportering för Microsoft Outlook</span><span class="sxs-lookup"><span data-stu-id="29e7d-103">Install and use the Junk Email Reporting add-in for Microsoft Outlook</span></span>
+# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a><span data-ttu-id="3cdf6-103">Installera och använda tillägget Skräppostrapportering för Microsoft Outlook</span><span class="sxs-lookup"><span data-stu-id="3cdf6-103">Install and use the Junk Email Reporting add-in for Microsoft Outlook</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+<span data-ttu-id="3cdf6-104">**Gäller för**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-104">**Applies to**</span></span>
+- [<span data-ttu-id="3cdf6-105">Exchange Online Protection</span><span class="sxs-lookup"><span data-stu-id="3cdf6-105">Exchange Online Protection</span></span>](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [<span data-ttu-id="3cdf6-106">Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2</span><span class="sxs-lookup"><span data-stu-id="3cdf6-106">Microsoft Defender for Office 365 plan 1 and plan 2</span></span>](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [<span data-ttu-id="3cdf6-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="3cdf6-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
-> <span data-ttu-id="29e7d-104">Om du inte använder tillägget skräp post rapportering rekommenderar vi att du i stället lägger till [tillägget för rapport meddelanden](enable-the-report-message-add-in.md) eller [rapport](enable-the-report-phish-add-in.md) tillägget.</span><span class="sxs-lookup"><span data-stu-id="29e7d-104">If you aren't currently using the Junk E-mail Reporting add-in, we recommend the [Report Message add-in](enable-the-report-message-add-in.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md) instead.</span></span> <span data-ttu-id="29e7d-105">Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).</span><span class="sxs-lookup"><span data-stu-id="29e7d-105">For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).</span></span>
+> <span data-ttu-id="3cdf6-108">Om du inte använder tillägget Skräppostrapportering rekommenderar vi i stället [](enable-the-report-message-add-in.md) tilläggen [Rapportmeddelande](enable-the-report-phish-add-in.md) eller Rapport nätfiske.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-108">If you aren't currently using the Junk E-mail Reporting add-in, we recommend the [Report Message add-in](enable-the-report-message-add-in.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md) instead.</span></span> <span data-ttu-id="3cdf6-109">Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).</span><span class="sxs-lookup"><span data-stu-id="3cdf6-109">For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).</span></span>
 
-<span data-ttu-id="29e7d-106">Med tillägget skräp post rapportering för Microsoft Outlook kan användarna skicka falska positiva (god e-post), falsk negativ (dålig e-post) och nätfiske-meddelanden till Microsoft.</span><span class="sxs-lookup"><span data-stu-id="29e7d-106">The Junk Email Reporting Add-in for Microsoft Outlook allows users to submit false positives (good email marked as spam), false negatives (bad email allowed) and phishing messages to Microsoft.</span></span> <span data-ttu-id="29e7d-107">Om din organisation inte använder Exchange Online Protection (till exempel lokala Exchange-eller e-posttjänster som inte är Exchange Online), påverkas inte din skräp post filtrering.</span><span class="sxs-lookup"><span data-stu-id="29e7d-107">If your organization doesn't use Exchange Online Protection (for example, on-premises Exchange or email services other than Exchange Online), your junk email report submission will not affect your spam filtering.</span></span>
+<span data-ttu-id="3cdf6-110">Med tillägget Skräppostrapportering för Microsoft Outlook kan användare skicka falska positiva meddelanden (bra e-post som har markerats som skräppost), falska negativa meddelanden (felaktig e-post tillåts) och nätfiskemeddelanden till Microsoft.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-110">The Junk Email Reporting Add-in for Microsoft Outlook allows users to submit false positives (good email marked as spam), false negatives (bad email allowed) and phishing messages to Microsoft.</span></span> <span data-ttu-id="3cdf6-111">Om din organisation inte använder Exchange Online Protection (till exempel lokal Exchange eller andra e-posttjänster än Exchange Online) påverkar inte inskickingen av skräppostrapporten skräppostfiltreringen.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-111">If your organization doesn't use Exchange Online Protection (for example, on-premises Exchange or email services other than Exchange Online), your junk email report submission will not affect your spam filtering.</span></span>
 
-<span data-ttu-id="29e7d-108">I det här avsnittet förklaras hur du installerar och använder tillägget skräp post rapportering.</span><span class="sxs-lookup"><span data-stu-id="29e7d-108">This topic explains how to install and use the Junk Email Reporting add-in.</span></span>
+<span data-ttu-id="3cdf6-112">I det här avsnittet förklaras hur du installerar och använder tillägget Skräppostrapportering.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-112">This topic explains how to install and use the Junk Email Reporting add-in.</span></span>
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="29e7d-109">Vad behöver jag veta innan jag börjar?</span><span class="sxs-lookup"><span data-stu-id="29e7d-109">What do you need to know before you begin?</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="3cdf6-113">Vad behöver jag veta innan jag börjar?</span><span class="sxs-lookup"><span data-stu-id="3cdf6-113">What do you need to know before you begin?</span></span>
 
-- <span data-ttu-id="29e7d-110">Information om hur du installerar tillägget skräp post rapportering finns i avsnittet [installera tillägget skräp post rapportering](#install-the-junk-email-reporting-add-in) längre ned i den här artikeln.</span><span class="sxs-lookup"><span data-stu-id="29e7d-110">To install the Junk Email Reporting add-in, see the [Install the Junk Email Reporting add-in](#install-the-junk-email-reporting-add-in) section later in this article.</span></span>
+- <span data-ttu-id="3cdf6-114">Om du vill installera tillägget Skräppostrapportering [](#install-the-junk-email-reporting-add-in) läser du avsnittet Installera tillägget Skräppostrapportering senare i den här artikeln.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-114">To install the Junk Email Reporting add-in, see the [Install the Junk Email Reporting add-in](#install-the-junk-email-reporting-add-in) section later in this article.</span></span>
 
-- <span data-ttu-id="29e7d-111">Tillägget skräp post rapportering fungerar med följande versioner av Outlook:</span><span class="sxs-lookup"><span data-stu-id="29e7d-111">The Junk Email Reporting add-in works with the following versions of Outlook:</span></span>
+- <span data-ttu-id="3cdf6-115">Tillägget Skräppostrapportering fungerar med följande versioner av Outlook:</span><span class="sxs-lookup"><span data-stu-id="3cdf6-115">The Junk Email Reporting add-in works with the following versions of Outlook:</span></span>
 
-  - <span data-ttu-id="29e7d-112">Outlook 2013 eller senare</span><span class="sxs-lookup"><span data-stu-id="29e7d-112">Outlook 2013 or later</span></span>
-  - <span data-ttu-id="29e7d-113">Outlook ingår i Microsoft 365-appar för företag</span><span class="sxs-lookup"><span data-stu-id="29e7d-113">Outlook included with Microsoft 365 Apps for enterprise</span></span>
+  - <span data-ttu-id="3cdf6-116">Outlook 2013 eller senare</span><span class="sxs-lookup"><span data-stu-id="3cdf6-116">Outlook 2013 or later</span></span>
+  - <span data-ttu-id="3cdf6-117">Outlook ingår i Microsoft 365-program för företag</span><span class="sxs-lookup"><span data-stu-id="3cdf6-117">Outlook included with Microsoft 365 Apps for enterprise</span></span>
 
-- <span data-ttu-id="29e7d-114">Mer information om hur du rapporterar meddelanden till Microsoft finns i [rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).</span><span class="sxs-lookup"><span data-stu-id="29e7d-114">For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).</span></span>
+- <span data-ttu-id="3cdf6-118">Mer information om hur du rapporterar meddelanden till Microsoft finns [i Rapportera meddelanden och filer till Microsoft.](report-junk-email-messages-to-microsoft.md)</span><span class="sxs-lookup"><span data-stu-id="3cdf6-118">For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).</span></span>
 
-## <a name="use-the-junk-email-reporting-add-in-to-report-spam-and-phishing-messages"></a><span data-ttu-id="29e7d-115">Använda tillägget skräp post rapportering för att rapportera skräp post och nät fiske meddelanden</span><span class="sxs-lookup"><span data-stu-id="29e7d-115">Use the Junk Email Reporting add-in to report spam and phishing messages</span></span>
+## <a name="use-the-junk-email-reporting-add-in-to-report-spam-and-phishing-messages"></a><span data-ttu-id="3cdf6-119">Använd tillägget Skräppostrapportering för att rapportera skräppost och nätfiskemeddelanden</span><span class="sxs-lookup"><span data-stu-id="3cdf6-119">Use the Junk Email Reporting add-in to report spam and phishing messages</span></span>
 
-1. <span data-ttu-id="29e7d-116">Använd någon av följande metoder för att rapportera skräp post och nät fiske meddelanden, för meddelanden i Inkorgen eller annan mapp för e-post, utom spam.</span><span class="sxs-lookup"><span data-stu-id="29e7d-116">For messages in the Inbox or any other email folder except Junk Email, use any of the following methods to report spam and phishing messages:</span></span>
+1. <span data-ttu-id="3cdf6-120">För meddelanden i Inkorgen eller någon annan e-postmapp utom Skräppost använder du någon av följande metoder för att rapportera skräppost och nätfiske:</span><span class="sxs-lookup"><span data-stu-id="3cdf6-120">For messages in the Inbox or any other email folder except Junk Email, use any of the following methods to report spam and phishing messages:</span></span>
 
-   - <span data-ttu-id="29e7d-117">Markera meddelandet eller öppna meddelandet.</span><span class="sxs-lookup"><span data-stu-id="29e7d-117">Select the message or open the message.</span></span> <span data-ttu-id="29e7d-118">Klicka på **skräp post** på fliken **Start** eller **meddelande** i menyfliksområdet och välj sedan **rapportera som skräp post** eller **rapportera som nätfiske**.</span><span class="sxs-lookup"><span data-stu-id="29e7d-118">In the **Home** or **Message** tab in the ribbon, click **Junk**, and then select **Report as Junk** or **Report as Phishing**.</span></span>
+   - <span data-ttu-id="3cdf6-121">Markera meddelandet eller öppna meddelandet.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-121">Select the message or open the message.</span></span> <span data-ttu-id="3cdf6-122">Klicka på **Skräppost** **på fliken** Start eller Meddelande i **menyfliksområdet** och välj sedan Rapportera **som skräppost** eller Rapportera **som nätfiske.**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-122">In the **Home** or **Message** tab in the ribbon, click **Junk**, and then select **Report as Junk** or **Report as Phishing**.</span></span>
 
-     ![Rapportera skräp post eller nätfiske via menyfliksområdet](../../media/junk-email-reporting-ribbon.png)
+     ![Rapportera skräppost och nätfiske i menyfliksområdet](../../media/junk-email-reporting-ribbon.png)
 
-   - <span data-ttu-id="29e7d-120">Högerklicka på meddelandet, Välj **skräp post** och välj sedan **rapportera som skräp post** eller **rapportera som nätfiske**.</span><span class="sxs-lookup"><span data-stu-id="29e7d-120">Right-click on the message, select **Junk**, and then select **Report as Junk** or **Report as Phishing**.</span></span>
+   - <span data-ttu-id="3cdf6-124">Högerklicka på meddelandet, välj **Skräppost** och välj sedan **Rapportera som skräppost eller** Rapportera som **nätfiske.**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-124">Right-click on the message, select **Junk**, and then select **Report as Junk** or **Report as Phishing**.</span></span>
 
-     ![Rapportera skräp post eller nätfiske-e-postadress från höger musknapp](../../media/junk-email-reporting-right-click.png)
+     ![Rapportera skräppost och nätfiske genom att högerklicka](../../media/junk-email-reporting-right-click.png)
 
-   - <span data-ttu-id="29e7d-122">Välj flera meddelanden, högerklicka och välj sedan **rapportera som skräp post** eller **rapportera som nätfiske**.</span><span class="sxs-lookup"><span data-stu-id="29e7d-122">Select multiple messages, right-click, and then select **Report as Junk** or **Report as Phishing**.</span></span>
+   - <span data-ttu-id="3cdf6-126">Markera flera meddelanden, högerklicka och välj sedan Rapportera **som skräppost** eller Rapportera **som nätfiske.**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-126">Select multiple messages, right-click, and then select **Report as Junk** or **Report as Phishing**.</span></span>
 
-     ![Rapportera flera skräp post-eller nätfiske-meddelanden från höger musknapp](../../media/junk-email-reporting-right-click-multiple.png)
+     ![Rapportera flera skräppost- eller nätfiskemeddelanden från högerklickning](../../media/junk-email-reporting-right-click-multiple.png)
 
-2. <span data-ttu-id="29e7d-124">Läs informationen i dialog rutan som visas och klicka på **rapportera**.</span><span class="sxs-lookup"><span data-stu-id="29e7d-124">In the dialog that appears, read the information and click **Report**.</span></span> <span data-ttu-id="29e7d-125">Om du ändrar dig klickar du på **rapportera inte**.</span><span class="sxs-lookup"><span data-stu-id="29e7d-125">If you change your mind, click **Don't Report**.</span></span>
+2. <span data-ttu-id="3cdf6-128">Läs informationen i dialogrutan som visas och klicka på **Rapport.**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-128">In the dialog that appears, read the information and click **Report**.</span></span> <span data-ttu-id="3cdf6-129">Om du ändrar dig klickar du **på Rapportera inte.**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-129">If you change your mind, click **Don't Report**.</span></span>
 
-   ![Dialog rutan rapportera som skräp post](../../media/junk-email-reporting-report-as-junk-dialog.png)
+   ![Dialogrutan Rapportera som skräppost](../../media/junk-email-reporting-report-as-junk-dialog.png)
 
-   ![Dialog rutan rapportera som nätfiske](../../media/junk-email-reporting-report-as-phishing-dialog.png)
+   ![Dialogrutan Rapportera som nätfiske](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
-3. <span data-ttu-id="29e7d-128">De valda meddelandena skickas till Microsoft för analys och:</span><span class="sxs-lookup"><span data-stu-id="29e7d-128">The selected messages will be sent to Microsoft for analysis and:</span></span>
+3. <span data-ttu-id="3cdf6-132">De valda meddelandena skickas till Microsoft för analys och:</span><span class="sxs-lookup"><span data-stu-id="3cdf6-132">The selected messages will be sent to Microsoft for analysis and:</span></span>
 
-   - <span data-ttu-id="29e7d-129">Flyttas till mappen skräp post om den rapporter ATS som skräp post.</span><span class="sxs-lookup"><span data-stu-id="29e7d-129">Moved to the Junk Email folder if it was reported as spam.</span></span>
-   - <span data-ttu-id="29e7d-130">Borttagen om den rapporterades som nätfiske.</span><span class="sxs-lookup"><span data-stu-id="29e7d-130">Deleted if it was reported as phishing.</span></span>
+   - <span data-ttu-id="3cdf6-133">Flyttades till mappen Skräppost om den rapporterades som skräppost.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-133">Moved to the Junk Email folder if it was reported as spam.</span></span>
+   - <span data-ttu-id="3cdf6-134">Borttagna om de rapporterats som nätfiske.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-134">Deleted if it was reported as phishing.</span></span>
 
-   <span data-ttu-id="29e7d-131">Bekräfta att meddelanden har skickats genom att öppna mappen **skickat** för att visa de meddelanden som skickats.</span><span class="sxs-lookup"><span data-stu-id="29e7d-131">To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.</span></span>
+   <span data-ttu-id="3cdf6-135">Bekräfta att meddelandena har skickats genom att öppna mappen **Skickat för** att visa skickade meddelanden.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-135">To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.</span></span>
 
-## <a name="use-the-junk-email-reporting-add-in-to-report-non-spam-and-phishing-messages-from-the-junk-email-folder"></a><span data-ttu-id="29e7d-132">Använda tillägget skräp post rapportering för att rapportera icke-spam-och nät fiske meddelanden från mappen skräp post</span><span class="sxs-lookup"><span data-stu-id="29e7d-132">Use the Junk Email Reporting add-in to report non-spam and phishing messages from the Junk Email folder</span></span>
+## <a name="use-the-junk-email-reporting-add-in-to-report-non-spam-and-phishing-messages-from-the-junk-email-folder"></a><span data-ttu-id="3cdf6-136">Använd tillägget Skräppostrapportering för att rapportera icke skräppost- och nätfiskemeddelanden från mappen Skräppost</span><span class="sxs-lookup"><span data-stu-id="3cdf6-136">Use the Junk Email Reporting add-in to report non-spam and phishing messages from the Junk Email folder</span></span>
 
-1. <span data-ttu-id="29e7d-133">I mappen skräp post kan du använda någon av följande metoder för att rapportera skräp post i falsk positiv eller nätfiske:</span><span class="sxs-lookup"><span data-stu-id="29e7d-133">In the Junk Email folder, use any of the following methods to report spam false positives or phishing messages:</span></span>
+1. <span data-ttu-id="3cdf6-137">Använd någon av följande metoder i mappen Skräppost för att rapportera skräppost med falska positiva resultat eller nätfiskemeddelanden:</span><span class="sxs-lookup"><span data-stu-id="3cdf6-137">In the Junk Email folder, use any of the following methods to report spam false positives or phishing messages:</span></span>
 
-   - <span data-ttu-id="29e7d-134">Markera meddelandet eller öppna meddelandet.</span><span class="sxs-lookup"><span data-stu-id="29e7d-134">Select the message or open the message.</span></span> <span data-ttu-id="29e7d-135">På fliken **Start** eller **meddelande** i menyfliksområdet klickar du på **inte skräp post** och väljer **rapportera inte som skräp post** eller **rapportera som nätfiske**.</span><span class="sxs-lookup"><span data-stu-id="29e7d-135">In the **Home** or **Message** tab in the ribbon, click **Not Junk**, and then select **Report as Not Junk** or **Report as Phishing**.</span></span>
+   - <span data-ttu-id="3cdf6-138">Markera meddelandet eller öppna meddelandet.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-138">Select the message or open the message.</span></span> <span data-ttu-id="3cdf6-139">Klicka på **Inte** skräppost **på** fliken Start eller Meddelande i menyfliksområdet och välj sedan Rapporten **som** Inte skräppost eller Rapportera **som nätfiske.**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-139">In the **Home** or **Message** tab in the ribbon, click **Not Junk**, and then select **Report as Not Junk** or **Report as Phishing**.</span></span>
 
-     ![Rapportera inte skräp post eller nätfiske via menyfliksområdet i mappen skräp post](../../media/junk-email-reporting-junk-folder-ribbon.png)
+     ![Rapportera inte skräppost eller nätfiskemeddelande från menyfliksområdet i mappen Skräppost](../../media/junk-email-reporting-junk-folder-ribbon.png)
 
-   - <span data-ttu-id="29e7d-137">Högerklicka på meddelandet, klicka på **skräp post** och välj sedan **rapportera som inte skräp post** eller **rapportera som nätfiske**.</span><span class="sxs-lookup"><span data-stu-id="29e7d-137">Right-click on the message, click **Junk**, and then select **Report as Not Junk** or **Report as Phishing**.</span></span>
+   - <span data-ttu-id="3cdf6-141">Högerklicka på meddelandet, klicka på **Skräppost** och välj sedan **Rapportera som** Inte skräppost eller Rapportera **som nätfiske.**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-141">Right-click on the message, click **Junk**, and then select **Report as Not Junk** or **Report as Phishing**.</span></span>
 
-     ![Rapportera inte skräp post eller nätfiske-e-postadress Högerklicka i mappen skräp post](../../media/junk-email-reporting-junk-folder-right-click.png)
+     ![Rapportera inte skräppost eller nätfiskemeddelande från att högerklicka i mappen Skräppost](../../media/junk-email-reporting-junk-folder-right-click.png)
 
-   - <span data-ttu-id="29e7d-139">Välj flera meddelanden, högerklicka och välj sedan **rapportera som inte skräp post** eller **rapportera som nätfiske**.</span><span class="sxs-lookup"><span data-stu-id="29e7d-139">Select multiple messages, right-click, and then select **Report as Not Junk** or **Report as Phishing**.</span></span>
+   - <span data-ttu-id="3cdf6-143">Markera flera meddelanden, högerklicka och välj sedan Rapportera som Inte **skräppost** eller **Rapportera som nätfiske.**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-143">Select multiple messages, right-click, and then select **Report as Not Junk** or **Report as Phishing**.</span></span>
 
-     ![Rapportera flera inte skräp post eller nätfiske-meddelanden från höger musknapp i mappen skräp post](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
+     ![Rapportera flera icke-skräppost- eller nätfiskemeddelanden från högerklick i mappen Skräppost](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
 
-2. <span data-ttu-id="29e7d-141">Läs informationen i dialog rutan som visas och klicka på **rapportera**.</span><span class="sxs-lookup"><span data-stu-id="29e7d-141">In the dialog that appears, read the information and click **Report**.</span></span> <span data-ttu-id="29e7d-142">Om du ändrar dig klickar du på **rapportera inte**.</span><span class="sxs-lookup"><span data-stu-id="29e7d-142">If you change your mind, click **Don't Report**.</span></span>
+2. <span data-ttu-id="3cdf6-145">Läs informationen i dialogrutan som visas och klicka på **Rapport.**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-145">In the dialog that appears, read the information and click **Report**.</span></span> <span data-ttu-id="3cdf6-146">Om du ändrar dig klickar du **på Rapportera inte.**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-146">If you change your mind, click **Don't Report**.</span></span>
 
-   ![Dialog rutan rapportera inte som skräp post](../../media/junk-email-reporting-report-as-not-junk-dialog.png)
+   ![Dialogrutan Rapportera som inte skräppost](../../media/junk-email-reporting-report-as-not-junk-dialog.png)
 
-   ![Dialog rutan rapportera som nätfiske](../../media/junk-email-reporting-report-as-phishing-dialog.png)
+   ![Dialogrutan Rapportera som nätfiske](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
-3. <span data-ttu-id="29e7d-145">De valda meddelandena skickas till Microsoft för analys och:</span><span class="sxs-lookup"><span data-stu-id="29e7d-145">The selected messages will be sent to Microsoft for analysis and:</span></span>
+3. <span data-ttu-id="3cdf6-149">De valda meddelandena skickas till Microsoft för analys och:</span><span class="sxs-lookup"><span data-stu-id="3cdf6-149">The selected messages will be sent to Microsoft for analysis and:</span></span>
 
-   - <span data-ttu-id="29e7d-146">Flyttas till mappen skräp post om den rapporter ATS som skräp post.</span><span class="sxs-lookup"><span data-stu-id="29e7d-146">Moved to the Junk Email folder if it was reported as spam.</span></span>
-   - <span data-ttu-id="29e7d-147">Borttagen om den rapporterades som nätfiske.</span><span class="sxs-lookup"><span data-stu-id="29e7d-147">Deleted if it was reported as phishing.</span></span>
+   - <span data-ttu-id="3cdf6-150">Flyttades till mappen Skräppost om den rapporterades som skräppost.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-150">Moved to the Junk Email folder if it was reported as spam.</span></span>
+   - <span data-ttu-id="3cdf6-151">Borttagna om de rapporterats som nätfiske.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-151">Deleted if it was reported as phishing.</span></span>
 
-   <span data-ttu-id="29e7d-148">Bekräfta att meddelanden har skickats genom att öppna mappen **skickat** för att visa de meddelanden som skickats.</span><span class="sxs-lookup"><span data-stu-id="29e7d-148">To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.</span></span>
+   <span data-ttu-id="3cdf6-152">Bekräfta att meddelandena har skickats genom att öppna mappen **Skickat för** att visa skickade meddelanden.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-152">To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.</span></span>
 
-## <a name="install-the-junk-email-reporting-add-in"></a><span data-ttu-id="29e7d-149">Installera tillägget skräp post rapportering</span><span class="sxs-lookup"><span data-stu-id="29e7d-149">Install the Junk Email Reporting add-in</span></span>
+## <a name="install-the-junk-email-reporting-add-in"></a><span data-ttu-id="3cdf6-153">Installera tillägget Skräppostrapportering</span><span class="sxs-lookup"><span data-stu-id="3cdf6-153">Install the Junk Email Reporting add-in</span></span>
 
-- <span data-ttu-id="29e7d-150">Du måste ha administratörs behörighet på den dator där du installerar tillägget.</span><span class="sxs-lookup"><span data-stu-id="29e7d-150">You need to have administrator privileges on the computer where you're installing the add-in.</span></span>
+- <span data-ttu-id="3cdf6-154">Du måste ha administratörsbehörighet på den dator där du installerar tillägget.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-154">You need to have administrator privileges on the computer where you're installing the add-in.</span></span>
 
-- <span data-ttu-id="29e7d-151">Gå till <https://www.microsoft.com/download/details.aspx?id=18275> och ladda ned lämplig MSI-fil för din version av Office till en plats som är lätt att hitta:</span><span class="sxs-lookup"><span data-stu-id="29e7d-151">Go to <https://www.microsoft.com/download/details.aspx?id=18275> and download the appropriate .msi file for your version of Office to a location that's easy to find:</span></span>
+- <span data-ttu-id="3cdf6-155">Gå till <https://www.microsoft.com/download/details.aspx?id=18275> och ladda ned lämplig MSI-fil för din version av Office till en plats som är lätt att hitta:</span><span class="sxs-lookup"><span data-stu-id="3cdf6-155">Go to <https://www.microsoft.com/download/details.aspx?id=18275> and download the appropriate .msi file for your version of Office to a location that's easy to find:</span></span>
 
-  - <span data-ttu-id="29e7d-152">**32-bitar**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`</span><span class="sxs-lookup"><span data-stu-id="29e7d-152">**32-bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`</span></span>
-  - <span data-ttu-id="29e7d-153">**64-bitar**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`</span><span class="sxs-lookup"><span data-stu-id="29e7d-153">**64-bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`</span></span>
+  - <span data-ttu-id="3cdf6-156">**32-bitars:**`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`</span><span class="sxs-lookup"><span data-stu-id="3cdf6-156">**32-bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`</span></span>
+  - <span data-ttu-id="3cdf6-157">**64-bitars:**`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`</span><span class="sxs-lookup"><span data-stu-id="3cdf6-157">**64-bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`</span></span>
 
-- <span data-ttu-id="29e7d-154">För Outlook 2013 eller senare är det enda kravet för Microsoft .NET Framework 2,0.</span><span class="sxs-lookup"><span data-stu-id="29e7d-154">For Outlook 2013 or later, the only prerequisite is the Microsoft .NET Framework 2.0.</span></span> <span data-ttu-id="29e7d-155">I Windows 10 kan du inte installera .NET Framework 2,0 från en nedladdning.</span><span class="sxs-lookup"><span data-stu-id="29e7d-155">In Windows 10, you don't install the .NET Framework 2.0 from a download.</span></span>
+- <span data-ttu-id="3cdf6-158">För Outlook 2013 eller senare är Microsoft .NET Framework 2.0 den enda förutsättningen.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-158">For Outlook 2013 or later, the only prerequisite is the Microsoft .NET Framework 2.0.</span></span> <span data-ttu-id="3cdf6-159">I Windows 10 kan du inte installera .NET Framework 2.0 från en nedladdning.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-159">In Windows 10, you don't install the .NET Framework 2.0 from a download.</span></span>
 
-### <a name="install-the-junk-email-reporting-add-in-using-the-setup-wizard"></a><span data-ttu-id="29e7d-156">Installera tillägget skräp post rapportering med installations guiden</span><span class="sxs-lookup"><span data-stu-id="29e7d-156">Install the Junk Email Reporting Add-in using the Setup wizard</span></span>
+### <a name="install-the-junk-email-reporting-add-in-using-the-setup-wizard"></a><span data-ttu-id="3cdf6-160">Installera tillägget Skräppostrapportering med hjälp av installationsguiden</span><span class="sxs-lookup"><span data-stu-id="3cdf6-160">Install the Junk Email Reporting Add-in using the Setup wizard</span></span>
 
-1. <span data-ttu-id="29e7d-157">Stäng Outlook på datorn.</span><span class="sxs-lookup"><span data-stu-id="29e7d-157">On your computer, close Outlook.</span></span>
+1. <span data-ttu-id="3cdf6-161">Stäng Outlook på datorn.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-161">On your computer, close Outlook.</span></span>
 
-2. <span data-ttu-id="29e7d-158">I Windows 10 kontrollerar du att .NET Framework 2,0 är aktiverat.</span><span class="sxs-lookup"><span data-stu-id="29e7d-158">In Windows 10, verify the .NET Framework 2.0 is enabled.</span></span> <span data-ttu-id="29e7d-159">Anvisningar finns i [Aktivera .NET Framework 3,5 på kontroll panelen](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel).</span><span class="sxs-lookup"><span data-stu-id="29e7d-159">For instructions, see [Enable the .NET Framework 3.5 in Control Panel](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel).</span></span>
+2. <span data-ttu-id="3cdf6-162">Kontrollera att .NET Framework 2.0 är aktiverat i Windows 10.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-162">In Windows 10, verify the .NET Framework 2.0 is enabled.</span></span> <span data-ttu-id="3cdf6-163">Instruktioner finns i [Aktivera .NET Framework 3.5 på Kontrollpanelen.](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel)</span><span class="sxs-lookup"><span data-stu-id="3cdf6-163">For instructions, see [Enable the .NET Framework 3.5 in Control Panel](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel).</span></span>
 
-3. <span data-ttu-id="29e7d-160">Leta reda på. msi-filen du laddade ner och dubbelklicka på den.</span><span class="sxs-lookup"><span data-stu-id="29e7d-160">Locate the .msi file you downloaded and double-click on it.</span></span>
+3. <span data-ttu-id="3cdf6-164">Leta upp .msi-filen som du laddade ned och dubbelklicka på den.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-164">Locate the .msi file you downloaded and double-click on it.</span></span>
 
-4. <span data-ttu-id="29e7d-161">Klicka på **Nästa** på sidan **Välkommen till installations programmet för skräp post** .</span><span class="sxs-lookup"><span data-stu-id="29e7d-161">On the **Welcome to Microsoft Junk Email Reporting Add-in Setup** page, click **Next**.</span></span>
+4. <span data-ttu-id="3cdf6-165">På sidan **Välkommen till installationsprogrammet för rapportering av** skräppost för Microsoft klickar du på **Nästa.**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-165">On the **Welcome to Microsoft Junk Email Reporting Add-in Setup** page, click **Next**.</span></span>
 
-5. <span data-ttu-id="29e7d-162">Granska licens avtalet, klicka på **Jag godkänner villkoren i licens avtalet** om du godkänner villkoren och klicka sedan på **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="29e7d-162">Review the license agreement, click **I accept the terms in the License Agreement** if you agree to the terms, and then click **Next**.</span></span>
+5. <span data-ttu-id="3cdf6-166">Granska licensavtalet, klicka **på Jag accepterar villkoren i licensavtalet** om du godkänner villkoren och klicka sedan på **Nästa.**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-166">Review the license agreement, click **I accept the terms in the License Agreement** if you agree to the terms, and then click **Next**.</span></span>
 
-6. <span data-ttu-id="29e7d-163">När guiden är klar klickar du på **Slutför**.</span><span class="sxs-lookup"><span data-stu-id="29e7d-163">When the wizard is complete, click **Finish**.</span></span>
+6. <span data-ttu-id="3cdf6-167">Klicka på Slutför när guiden är **klar.**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-167">When the wizard is complete, click **Finish**.</span></span>
 
-<span data-ttu-id="29e7d-164">Starta Outlook.</span><span class="sxs-lookup"><span data-stu-id="29e7d-164">Start Outlook.</span></span>
+<span data-ttu-id="3cdf6-168">Starta Outlook.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-168">Start Outlook.</span></span>
 
-<span data-ttu-id="29e7d-165">Leta efter knappen **skräp post** i menyfliksområdet i Outlook.</span><span class="sxs-lookup"><span data-stu-id="29e7d-165">Look for the **Junk** button on your Outlook ribbon.</span></span> <span data-ttu-id="29e7d-166">Du kan nu Rapportera skräp post meddelanden till Microsoft genom att välja skräp post meddelanden i Inkorgen och klicka på knappen **Rapportera skräp** post.</span><span class="sxs-lookup"><span data-stu-id="29e7d-166">You can now report junk email messages to Microsoft by selecting the junk email messages in your Inbox and clicking the **Report Junk** button.</span></span>
+<span data-ttu-id="3cdf6-169">Leta efter knappen **Skräppost** i menyfliksområdet i Outlook.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-169">Look for the **Junk** button on your Outlook ribbon.</span></span> <span data-ttu-id="3cdf6-170">Nu kan du rapportera skräppost till Microsoft genom att markera skräppostmeddelanden i Inkorgen och klicka på **knappen Rapportera** skräppost.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-170">You can now report junk email messages to Microsoft by selecting the junk email messages in your Inbox and clicking the **Report Junk** button.</span></span>
 
-<span data-ttu-id="29e7d-167">Välj nedpilen bredvid **skräp post** för fler alternativ, till exempel **rapportera som nätfiske** om du vill rapportera nät fiske meddelanden till Microsoft.</span><span class="sxs-lookup"><span data-stu-id="29e7d-167">Choose the down arrow next to **Junk** for more options such as **Report as Phishing** if you want to report phishing scam emails to Microsoft.</span></span> <span data-ttu-id="29e7d-168">I mappen skräp post kan du också välja att **rapportera inte skräp** post om ett e-postmeddelande felaktigt identifierades som skräppost.</span><span class="sxs-lookup"><span data-stu-id="29e7d-168">In your junk mail folder, you can also select, **Report not junk** if an email was incorrectly identified as junk mail.</span></span>
+<span data-ttu-id="3cdf6-171">Välj nedåtpilen bredvid skräppost för **fler** alternativ, till exempel Rapport som **nätfiske** om du vill rapportera nätfiskemeddelanden till Microsoft.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-171">Choose the down arrow next to **Junk** for more options such as **Report as Phishing** if you want to report phishing scam emails to Microsoft.</span></span> <span data-ttu-id="3cdf6-172">I skräppostmappen kan du också markera **Rapportera** inte skräppost om ett e-postmeddelande felaktigt identifierats som skräppost.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-172">In your junk mail folder, you can also select, **Report not junk** if an email was incorrectly identified as junk mail.</span></span>
 
-### <a name="install-the-junk-email-reporting-add-in-using-silent-mode"></a><span data-ttu-id="29e7d-169">Installera Add-In för skräp post rapportering i tyst läge</span><span class="sxs-lookup"><span data-stu-id="29e7d-169">Install the Junk Email Reporting Add-In using Silent Mode</span></span>
+### <a name="install-the-junk-email-reporting-add-in-using-silent-mode"></a><span data-ttu-id="3cdf6-173">Installera rapportering av skräppost i Add-In tyst läge</span><span class="sxs-lookup"><span data-stu-id="3cdf6-173">Install the Junk Email Reporting Add-In using Silent Mode</span></span>
 
-1. <span data-ttu-id="29e7d-170">Stäng Outlook på datorn.</span><span class="sxs-lookup"><span data-stu-id="29e7d-170">On your computer, close Outlook.</span></span>
+1. <span data-ttu-id="3cdf6-174">Stäng Outlook på datorn.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-174">On your computer, close Outlook.</span></span>
 
-2. <span data-ttu-id="29e7d-171">I Windows 10 installerar du .NET Framework 2,0 genom att köra följande kommando:</span><span class="sxs-lookup"><span data-stu-id="29e7d-171">In Windows 10, install the .NET Framework 2.0 by running the following command:</span></span>
+2. <span data-ttu-id="3cdf6-175">Installera .NET Framework 2.0 i Windows 10 genom att köra följande kommando:</span><span class="sxs-lookup"><span data-stu-id="3cdf6-175">In Windows 10, install the .NET Framework 2.0 by running the following command:</span></span>
 
    ```dos
    DISM /Online /Enable-Feature /FeatureName:NetFx3 /All
    ```
 
-3. <span data-ttu-id="29e7d-172">Om du vill installera tillägget utan några åtgärder från användaren öppnar du kommando tolken och använder följande syntax:</span><span class="sxs-lookup"><span data-stu-id="29e7d-172">To install the add-in without any user interaction, open a Command Prompt and use the following syntax:</span></span>
+3. <span data-ttu-id="3cdf6-176">Om du vill installera tillägget utan interaktion med användarna öppnar du kommandotolken och använder följande syntax:</span><span class="sxs-lookup"><span data-stu-id="3cdf6-176">To install the add-in without any user interaction, open a Command Prompt and use the following syntax:</span></span>
 
    ```dos
    msiexec /qn /i "<PathToMSIFile>\<MSIFile>" [MaxMessageSelection=<1-50>] [BccEmailAddress="<EmailAddress1>; <EmailAddress2>"...]
    ```
 
-   - <span data-ttu-id="29e7d-173">`MaxMessageSelection` anger maximalt antal meddelanden som du kan välja för en enda överföring.</span><span class="sxs-lookup"><span data-stu-id="29e7d-173">`MaxMessageSelection` specifies the maximum number of messages that you can select for a single submission.</span></span> <span data-ttu-id="29e7d-174">Giltiga värden är mellan 1 och 50.</span><span class="sxs-lookup"><span data-stu-id="29e7d-174">Valid values are from 1 to 50.</span></span> <span data-ttu-id="29e7d-175">Standardvärdet är 15.</span><span class="sxs-lookup"><span data-stu-id="29e7d-175">The default value is 15.</span></span>
+   - <span data-ttu-id="3cdf6-177">`MaxMessageSelection` anger det maximala antalet meddelanden som du kan välja för en enskild inskickning.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-177">`MaxMessageSelection` specifies the maximum number of messages that you can select for a single submission.</span></span> <span data-ttu-id="3cdf6-178">Giltiga värden är 1 till 50.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-178">Valid values are from 1 to 50.</span></span> <span data-ttu-id="3cdf6-179">Standardvärdet är 15.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-179">The default value is 15.</span></span>
 
-   - <span data-ttu-id="29e7d-176">`BccEmailAddress` anger ytterligare hemliga kopior som kommer att få en kopia av alla användar inlämningar.</span><span class="sxs-lookup"><span data-stu-id="29e7d-176">`BccEmailAddress` specifies additional Bcc recipients who will receive a copy of all user submissions.</span></span> <span data-ttu-id="29e7d-177">Standardvärdet är tomt (inga fler mottagare av hemlig kopia).</span><span class="sxs-lookup"><span data-stu-id="29e7d-177">The default value is blank (no additional Bcc recipients).</span></span>
+   - <span data-ttu-id="3cdf6-180">`BccEmailAddress` ytterligare mottagare av hemlig kopia som ska få en kopia av alla användarinskickningar.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-180">`BccEmailAddress` specifies additional Bcc recipients who will receive a copy of all user submissions.</span></span> <span data-ttu-id="3cdf6-181">Standardvärdet är tomt (inga ytterligare mottagare av Hemlig kopia).</span><span class="sxs-lookup"><span data-stu-id="3cdf6-181">The default value is blank (no additional Bcc recipients).</span></span>
 
-   <span data-ttu-id="29e7d-178">I det här exemplet installeras 64-bitars versionen av tillägget från den angivna sökvägen med standardinställningarna.</span><span class="sxs-lookup"><span data-stu-id="29e7d-178">This example installs the 64-bit version of the add-in from the specified path with the default settings.</span></span>
+   <span data-ttu-id="3cdf6-182">I det här exemplet installeras 64-bitarsversionen av tillägget från den angivna sökvägen med standardinställningarna.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-182">This example installs the 64-bit version of the add-in from the specified path with the default settings.</span></span>
 
    ```dos
    msiexec /qn /i "C:\Downloads\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi"
    ```
 
-   <span data-ttu-id="29e7d-179">I det här exemplet installeras 32-bitars versionen av tillägget från den angivna sökvägen med följande inställningar:</span><span class="sxs-lookup"><span data-stu-id="29e7d-179">This example installs the 32-bit version of the add-in from the specified path with the following additional settings:</span></span>
+   <span data-ttu-id="3cdf6-183">I det här exemplet installeras 32-bitarsversionen av tillägget från den angivna sökvägen med följande ytterligare inställningar:</span><span class="sxs-lookup"><span data-stu-id="3cdf6-183">This example installs the 32-bit version of the add-in from the specified path with the following additional settings:</span></span>
 
-   - <span data-ttu-id="29e7d-180">Upp till 20 meddelanden kan väljas med en enda överföring.</span><span class="sxs-lookup"><span data-stu-id="29e7d-180">Up to 20 messages can be selected in a single submission.</span></span>
-   - <span data-ttu-id="29e7d-181">junkreports@contoso.com och hollyd@treyresearch.net ta emot kopior av alla inlägg.</span><span class="sxs-lookup"><span data-stu-id="29e7d-181">junkreports@contoso.com and hollyd@treyresearch.net receive Bcc copies of all submissions.</span></span>
+   - <span data-ttu-id="3cdf6-184">Upp till 20 meddelanden kan väljas i en enda inskickning.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-184">Up to 20 messages can be selected in a single submission.</span></span>
+   - <span data-ttu-id="3cdf6-185">junkreports@contoso.com och hollyd@treyresearch.net ta emot hemlig kopia av alla bidrag.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-185">junkreports@contoso.com and hollyd@treyresearch.net receive Bcc copies of all submissions.</span></span>
 
    ```dos
    msiexec /qn /i "C:\Downloads\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi" MaxMessageSelection=20 BccEmailAddress="junkreports@contoso.com; hollyd@treyresearch.net"
    ```
 
-### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="29e7d-182">Hur vet du att det fungerade?</span><span class="sxs-lookup"><span data-stu-id="29e7d-182">How do you know this worked?</span></span>
+### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="3cdf6-186">Hur vet du att det fungerade?</span><span class="sxs-lookup"><span data-stu-id="3cdf6-186">How do you know this worked?</span></span>
 
-<span data-ttu-id="29e7d-183">Kontrol lera att du har installerat tillägget skräp post rapportering genom att göra något av följande i Outlook:</span><span class="sxs-lookup"><span data-stu-id="29e7d-183">To verify that you've successfully installed the Junk Email Reporting Add-in, do the any of the following steps in Outlook:</span></span>
+<span data-ttu-id="3cdf6-187">Kontrollera att du har installerat tillägget Skräppostrapportering genom att göra något av följande i Outlook:</span><span class="sxs-lookup"><span data-stu-id="3cdf6-187">To verify that you've successfully installed the Junk Email Reporting Add-in, do the any of the following steps in Outlook:</span></span>
 
-- <span data-ttu-id="29e7d-184">Markera meddelandet eller öppna meddelandet.</span><span class="sxs-lookup"><span data-stu-id="29e7d-184">Select the message or open the message.</span></span> <span data-ttu-id="29e7d-185">Klicka på **skräp post** på fliken **Start** eller **meddelande** i menyfliksområdet och kontrol lera att följande alternativ är tillgängliga:</span><span class="sxs-lookup"><span data-stu-id="29e7d-185">In the **Home** or **Message** tab in the ribbon, click **Junk**, and verify that the following options are available:</span></span>
+- <span data-ttu-id="3cdf6-188">Markera meddelandet eller öppna meddelandet.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-188">Select the message or open the message.</span></span> <span data-ttu-id="3cdf6-189">Klicka på **Skräppost** **på fliken** Start eller Meddelande **i** menyfliksområdet och kontrollera att följande alternativ är tillgängliga:</span><span class="sxs-lookup"><span data-stu-id="3cdf6-189">In the **Home** or **Message** tab in the ribbon, click **Junk**, and verify that the following options are available:</span></span>
 
-  - <span data-ttu-id="29e7d-186">**Rapportera som skräp post**</span><span class="sxs-lookup"><span data-stu-id="29e7d-186">**Report as Junk**</span></span>
-  - <span data-ttu-id="29e7d-187">**Rapportera som nätfiske**</span><span class="sxs-lookup"><span data-stu-id="29e7d-187">**Report as Phishing**</span></span>
-  - <span data-ttu-id="29e7d-188">**Alternativ för skräp post**</span><span class="sxs-lookup"><span data-stu-id="29e7d-188">**Junk Reporting Options**</span></span>
-  - <span data-ttu-id="29e7d-189">**Rapportera skräppost-onlinehjälp**</span><span class="sxs-lookup"><span data-stu-id="29e7d-189">**Report Junk Online Help**</span></span>
+  - <span data-ttu-id="3cdf6-190">**Rapportera som skräppost**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-190">**Report as Junk**</span></span>
+  - <span data-ttu-id="3cdf6-191">**Rapportera som nätfiske**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-191">**Report as Phishing**</span></span>
+  - <span data-ttu-id="3cdf6-192">**Alternativ för skräppostrapportering**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-192">**Junk Reporting Options**</span></span>
+  - <span data-ttu-id="3cdf6-193">**Rapportera hjälp för Skräppost online**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-193">**Report Junk Online Help**</span></span>
 
-  ![Rapportera skräp post eller nätfiske via menyfliksområdet](../../media/junk-email-reporting-ribbon.png)
+  ![Rapportera skräppost och nätfiske i menyfliksområdet](../../media/junk-email-reporting-ribbon.png)
 
-- <span data-ttu-id="29e7d-191">Högerklicka på meddelandet, Välj **skräp post** och kontrol lera att följande alternativ är tillgängliga:</span><span class="sxs-lookup"><span data-stu-id="29e7d-191">Right-click on the message, select **Junk**, and verify that the following options are available:</span></span>
+- <span data-ttu-id="3cdf6-195">Högerklicka på meddelandet, välj **Skräppost** och kontrollera att följande alternativ är tillgängliga:</span><span class="sxs-lookup"><span data-stu-id="3cdf6-195">Right-click on the message, select **Junk**, and verify that the following options are available:</span></span>
 
-  - <span data-ttu-id="29e7d-192">**Rapportera som skräp post**</span><span class="sxs-lookup"><span data-stu-id="29e7d-192">**Report as Junk**</span></span>
-  - <span data-ttu-id="29e7d-193">**Rapportera som nätfiske**</span><span class="sxs-lookup"><span data-stu-id="29e7d-193">**Report as Phishing**</span></span>
-  - <span data-ttu-id="29e7d-194">**Alternativ för skräp post**</span><span class="sxs-lookup"><span data-stu-id="29e7d-194">**Junk Reporting Options**</span></span>
-  - <span data-ttu-id="29e7d-195">**Rapportera skräppost-onlinehjälp**</span><span class="sxs-lookup"><span data-stu-id="29e7d-195">**Report Junk Online Help**</span></span>
+  - <span data-ttu-id="3cdf6-196">**Rapportera som skräppost**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-196">**Report as Junk**</span></span>
+  - <span data-ttu-id="3cdf6-197">**Rapportera som nätfiske**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-197">**Report as Phishing**</span></span>
+  - <span data-ttu-id="3cdf6-198">**Alternativ för skräppostrapportering**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-198">**Junk Reporting Options**</span></span>
+  - <span data-ttu-id="3cdf6-199">**Rapportera hjälp för Skräppost online**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-199">**Report Junk Online Help**</span></span>
 
-  ![Rapportera skräp post eller nätfiske-e-postadress från höger musknapp](../../media/junk-email-reporting-right-click.png)
+  ![Rapportera skräppost och nätfiske genom att högerklicka](../../media/junk-email-reporting-right-click.png)
 
-- <span data-ttu-id="29e7d-197">Välj flera meddelanden, högerklicka och kontrol lera att följande alternativ är tillgängliga:</span><span class="sxs-lookup"><span data-stu-id="29e7d-197">Select multiple messages, right click, and verify that the following options are available:</span></span>
+- <span data-ttu-id="3cdf6-201">Markera flera meddelanden, högerklicka och kontrollera att följande alternativ är tillgängliga:</span><span class="sxs-lookup"><span data-stu-id="3cdf6-201">Select multiple messages, right click, and verify that the following options are available:</span></span>
 
-  - <span data-ttu-id="29e7d-198">**Rapportera som skräp post**</span><span class="sxs-lookup"><span data-stu-id="29e7d-198">**Report as Junk**</span></span>
-  - <span data-ttu-id="29e7d-199">**Rapportera som nätfiske**</span><span class="sxs-lookup"><span data-stu-id="29e7d-199">**Report as Phishing**</span></span>
+  - <span data-ttu-id="3cdf6-202">**Rapportera som skräppost**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-202">**Report as Junk**</span></span>
+  - <span data-ttu-id="3cdf6-203">**Rapportera som nätfiske**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-203">**Report as Phishing**</span></span>
 
-  ![Rapportera flera skräp post-eller nätfiske-meddelanden från höger musknapp](../../media/junk-email-reporting-right-click-multiple.png)
+  ![Rapportera flera skräppost- eller nätfiskemeddelanden från högerklickning](../../media/junk-email-reporting-right-click-multiple.png)
 
-- <span data-ttu-id="29e7d-201">Gör föregående åtgärder i mappen **skräp post** och kontrol lera att tidigare alternativ för **skräp** post rapportering **inte är skräp post**.</span><span class="sxs-lookup"><span data-stu-id="29e7d-201">Do the previous actions in the **Junk Email** folder and verify the previous **Junk** reporting options are now **Not Junk**.</span></span>
+- <span data-ttu-id="3cdf6-205">Gör de föregående åtgärderna i **mappen Skräppost** och kontrollera att de **tidigare** alternativen för skräppostrapportering nu är **Inte skräppost.**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-205">Do the previous actions in the **Junk Email** folder and verify the previous **Junk** reporting options are now **Not Junk**.</span></span>
 
-  ![Rapportera inte skräp post eller nätfiske via menyfliksområdet i mappen skräp post](../../media/junk-email-reporting-junk-folder-ribbon.png)
+  ![Rapportera inte skräppost eller nätfiskemeddelande från menyfliksområdet i mappen Skräppost](../../media/junk-email-reporting-junk-folder-ribbon.png)
 
-  ![Rapportera inte skräp post eller nätfiske-e-postadress Högerklicka i mappen skräp post](../../media/junk-email-reporting-junk-folder-right-click.png)
+  ![Rapportera inte skräppost eller nätfiskemeddelande från att högerklicka i mappen Skräppost](../../media/junk-email-reporting-junk-folder-right-click.png)
 
-  ![Rapportera flera inte skräp post eller nätfiske-meddelanden från höger musknapp i mappen skräp post](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
+  ![Rapportera flera icke-skräppost- eller nätfiskemeddelanden från högerklick i mappen Skräppost](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
 
-## <a name="uninstall-the-junk-email-reporting-add-in"></a><span data-ttu-id="29e7d-205">Avinstallera tillägget skräp post rapportering</span><span class="sxs-lookup"><span data-stu-id="29e7d-205">Uninstall the Junk Email Reporting Add-in</span></span>
+## <a name="uninstall-the-junk-email-reporting-add-in"></a><span data-ttu-id="3cdf6-209">Avinstallera tillägget Skräppostrapportering</span><span class="sxs-lookup"><span data-stu-id="3cdf6-209">Uninstall the Junk Email Reporting Add-in</span></span>
 
-<span data-ttu-id="29e7d-206">När du har stängt Outlook kan du använda någon av följande procedurer för att avinstallera tillägget skräp post rapportering:</span><span class="sxs-lookup"><span data-stu-id="29e7d-206">After you close Outlook, use any of the following procedures to uninstall the Junk Email Reporting Add-in:</span></span>
+<span data-ttu-id="3cdf6-210">När du stänger Outlook kan du använda någon av följande procedurer för att avinstallera tillägget Skräppostrapportering:</span><span class="sxs-lookup"><span data-stu-id="3cdf6-210">After you close Outlook, use any of the following procedures to uninstall the Junk Email Reporting Add-in:</span></span>
 
-- <span data-ttu-id="29e7d-207">**Kontroll panelen**: Tryck på Windows-tangenten + R. I dialog rutan **Kör** som öppnas anger du `control appwiz.cpl` och klickar sedan på **OK**.</span><span class="sxs-lookup"><span data-stu-id="29e7d-207">**Control Panel**: Press the Windows key + R. In the **Run** dialog that opens, enter `control appwiz.cpl` and then click **OK**.</span></span>
+- <span data-ttu-id="3cdf6-211">**Kontrollpanelen:** Tryck på Windows-tangenten + R. I dialogrutan **Kör** som öppnas anger du och `control appwiz.cpl` klickar sedan på **OK.**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-211">**Control Panel**: Press the Windows key + R. In the **Run** dialog that opens, enter `control appwiz.cpl` and then click **OK**.</span></span>
 
-  <span data-ttu-id="29e7d-208">Leta reda på och markera **tillägget skräp post rapportering** i listan och klicka sedan på **Avinstallera**.</span><span class="sxs-lookup"><span data-stu-id="29e7d-208">Find and select **Microsoft Junk Email Reporting Add-in** in the list, and then click **Uninstall**.</span></span>
+  <span data-ttu-id="3cdf6-212">Leta upp och **välj tillägget Microsoft Skräppostrapportering** i listan och klicka sedan på **Avinstallera.**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-212">Find and select **Microsoft Junk Email Reporting Add-in** in the list, and then click **Uninstall**.</span></span>
 
-- <span data-ttu-id="29e7d-209">**Windows installations paket**: Sök eller ladda ned lämplig. msi-fil och dubbelklicka på den.</span><span class="sxs-lookup"><span data-stu-id="29e7d-209">**Windows Installer package**: Find or download the appropriate .msi file, and double-click on it.</span></span>
+- <span data-ttu-id="3cdf6-213">**Windows Installer paket:** Hitta eller hämta lämplig .msi-fil och dubbelklicka på den.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-213">**Windows Installer package**: Find or download the appropriate .msi file, and double-click on it.</span></span>
 
-  - <span data-ttu-id="29e7d-210">**32-bitar**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`</span><span class="sxs-lookup"><span data-stu-id="29e7d-210">**32-bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`</span></span>
+  - <span data-ttu-id="3cdf6-214">**32-bitars:**`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`</span><span class="sxs-lookup"><span data-stu-id="3cdf6-214">**32-bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`</span></span>
 
-  - <span data-ttu-id="29e7d-211">**64-bitar**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`</span><span class="sxs-lookup"><span data-stu-id="29e7d-211">**64-bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`</span></span>
+  - <span data-ttu-id="3cdf6-215">**64-bitars:**`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`</span><span class="sxs-lookup"><span data-stu-id="3cdf6-215">**64-bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`</span></span>
 
-  <span data-ttu-id="29e7d-212">I dialog rutan som visas väljer du **ta bort Microsoft skräppost-e-postrapportering för Outlook** och klicka sedan på **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="29e7d-212">In the dialog that appears, select **Remove Microsoft Junk Email Reporting Add-in for Outlook** and then click **Next**.</span></span>
+  <span data-ttu-id="3cdf6-216">I dialogrutan som visas väljer du **Ta bort microsoft-tillägget Skräppostrapportering för Outlook och** klickar sedan på **Nästa.**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-216">In the dialog that appears, select **Remove Microsoft Junk Email Reporting Add-in for Outlook** and then click **Next**.</span></span>
 
-- <span data-ttu-id="29e7d-213">**Tyst läge**: hitta eller ladda ned lämplig. msi-fil.</span><span class="sxs-lookup"><span data-stu-id="29e7d-213">**Silent Mode**: Find or download the appropriate .msi file.</span></span> <span data-ttu-id="29e7d-214">Ersätt \<PathToFile\> med platsen för MSI-filen i kommando tolken och kör något av följande kommandon:</span><span class="sxs-lookup"><span data-stu-id="29e7d-214">In a Command Prompt window, replace \<PathToFile\> with the location of the .msi file, and run one of the following commands:</span></span>
+- <span data-ttu-id="3cdf6-217">**Tyst läge:** Hitta eller hämta lämplig MSI-fil.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-217">**Silent Mode**: Find or download the appropriate .msi file.</span></span> <span data-ttu-id="3cdf6-218">I kommandotolken ersätter du med MSI-filens plats \<PathToFile\> och kör något av följande kommandon:</span><span class="sxs-lookup"><span data-stu-id="3cdf6-218">In a Command Prompt window, replace \<PathToFile\> with the location of the .msi file, and run one of the following commands:</span></span>
 
-  - <span data-ttu-id="29e7d-215">**32-bitar**:</span><span class="sxs-lookup"><span data-stu-id="29e7d-215">**32-bit**:</span></span>
+  - <span data-ttu-id="3cdf6-219">**32-bitars:**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-219">**32-bit**:</span></span>
 
     ```dos
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
     ```
 
-  - <span data-ttu-id="29e7d-216">**64-bitar**:</span><span class="sxs-lookup"><span data-stu-id="29e7d-216">**64-bit**:</span></span>
+  - <span data-ttu-id="3cdf6-220">**64-bitars:**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-220">**64-bit**:</span></span>
 
     ```dos
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
     ```
 
-<span data-ttu-id="29e7d-217">När du öppnar Outlook när du har avinstallerat bör du inte gå vidare med alternativen för skräp post, inte skräp post och nätfiske.</span><span class="sxs-lookup"><span data-stu-id="29e7d-217">When you open Outlook after the uninstall, the junk, not junk, and phishing reporting options should be gone.</span></span>
+<span data-ttu-id="3cdf6-221">När du öppnar Outlook efter avinstallationen ska alternativen för skräppost, inte skräppost och nätfiskerapportering vara borta.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-221">When you open Outlook after the uninstall, the junk, not junk, and phishing reporting options should be gone.</span></span>
 
-## <a name="troubleshooting-the-junk-email-reporting-add-in"></a><span data-ttu-id="29e7d-218">Felsöka tillägget skräp post rapportering</span><span class="sxs-lookup"><span data-stu-id="29e7d-218">Troubleshooting the Junk Email Reporting add-in</span></span>
+## <a name="troubleshooting-the-junk-email-reporting-add-in"></a><span data-ttu-id="3cdf6-222">Felsöka tillägget Skräppostrapportering</span><span class="sxs-lookup"><span data-stu-id="3cdf6-222">Troubleshooting the Junk Email Reporting add-in</span></span>
 
-<span data-ttu-id="29e7d-219">Ibland kan du få problem med Outlook när du har lagt till tillägget skräp post rapportering.</span><span class="sxs-lookup"><span data-stu-id="29e7d-219">Occasionally, you might experience trouble with Outlook after adding the Junk Email Reporting Add-In.</span></span> <span data-ttu-id="29e7d-220">I det här avsnittet beskrivs problem som du kan stöta på, tillsammans med tips för att åtgärda problemen.</span><span class="sxs-lookup"><span data-stu-id="29e7d-220">This section describes problems that you might encounter, along with tips for resolving these issues.</span></span>
+<span data-ttu-id="3cdf6-223">Ibland kan du uppleva problem med Outlook när du har lagt till tillägget Skräppostrapportering.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-223">Occasionally, you might experience trouble with Outlook after adding the Junk Email Reporting Add-In.</span></span> <span data-ttu-id="3cdf6-224">I det här avsnittet beskrivs problem som du kan stöta på samt tips för att lösa problemen.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-224">This section describes problems that you might encounter, along with tips for resolving these issues.</span></span>
 
-### <a name="troubleshooting-for-users"></a><span data-ttu-id="29e7d-221">Fel sökning för användare</span><span class="sxs-lookup"><span data-stu-id="29e7d-221">Troubleshooting for users</span></span>
+### <a name="troubleshooting-for-users"></a><span data-ttu-id="3cdf6-225">Felsökning för användare</span><span class="sxs-lookup"><span data-stu-id="3cdf6-225">Troubleshooting for users</span></span>
 
-<span data-ttu-id="29e7d-222">Ett eller flera av följande problem uppstår:</span><span class="sxs-lookup"><span data-stu-id="29e7d-222">You experience one or more of the following problems:</span></span>
+<span data-ttu-id="3cdf6-226">Du får ett eller flera av följande problem:</span><span class="sxs-lookup"><span data-stu-id="3cdf6-226">You experience one or more of the following problems:</span></span>
 
-- <span data-ttu-id="29e7d-223">Inget händer när du klickar på **Rapportera skräp post**</span><span class="sxs-lookup"><span data-stu-id="29e7d-223">Nothing happens when you click **Report Junk**</span></span>
-- <span data-ttu-id="29e7d-224">Outlook slutar svara när du har valt ett e-postmeddelande</span><span class="sxs-lookup"><span data-stu-id="29e7d-224">Outlook stops responding after you select an email message</span></span>
-- <span data-ttu-id="29e7d-225">Rapporterade att skräp post inte kan levereras på grund av ett "unleveransable"-svar</span><span class="sxs-lookup"><span data-stu-id="29e7d-225">Reported junk mail cannot be delivered due to an "undeliverable" reply</span></span>
+- <span data-ttu-id="3cdf6-227">Inget händer när du klickar **på Rapportera skräppost**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-227">Nothing happens when you click **Report Junk**</span></span>
+- <span data-ttu-id="3cdf6-228">Outlook slutar svara när du har valt ett e-postmeddelande</span><span class="sxs-lookup"><span data-stu-id="3cdf6-228">Outlook stops responding after you select an email message</span></span>
+- <span data-ttu-id="3cdf6-229">Rapporterad skräppost kan inte levereras på grund av ett "olevererbart" svar</span><span class="sxs-lookup"><span data-stu-id="3cdf6-229">Reported junk mail cannot be delivered due to an "undeliverable" reply</span></span>
 
-<span data-ttu-id="29e7d-226">Så här löser du problemet:</span><span class="sxs-lookup"><span data-stu-id="29e7d-226">To fix this problem, do the following steps:</span></span>
+<span data-ttu-id="3cdf6-230">Lös problemet genom att göra följande:</span><span class="sxs-lookup"><span data-stu-id="3cdf6-230">To fix this problem, do the following steps:</span></span>
 
-1. <span data-ttu-id="29e7d-227">Stäng och starta om Outlook.</span><span class="sxs-lookup"><span data-stu-id="29e7d-227">Close and restart Outlook.</span></span>
-2. <span data-ttu-id="29e7d-228">Skapa och skicka ett test meddelande och kontrol lera att mottagaren fått meddelandet.</span><span class="sxs-lookup"><span data-stu-id="29e7d-228">Create and send a test message, and verify that the recipient received the message.</span></span>
-3. <span data-ttu-id="29e7d-229">Om problemet kvarstår kontaktar du din administratör.</span><span class="sxs-lookup"><span data-stu-id="29e7d-229">If the problem persists, contact your admin.</span></span>
+1. <span data-ttu-id="3cdf6-231">Stäng och starta om Outlook.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-231">Close and restart Outlook.</span></span>
+2. <span data-ttu-id="3cdf6-232">Skapa och skicka ett testmeddelande och kontrollera att mottagaren har fått meddelandet.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-232">Create and send a test message, and verify that the recipient received the message.</span></span>
+3. <span data-ttu-id="3cdf6-233">Kontakta administratören om problemet kvarstår.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-233">If the problem persists, contact your admin.</span></span>
 
-<span data-ttu-id="29e7d-230">Andra metoder som du kan använda för att skicka meddelanden till Microsoft finns i [rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).</span><span class="sxs-lookup"><span data-stu-id="29e7d-230">For other methods that you can use to submit messages to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).</span></span>
+<span data-ttu-id="3cdf6-234">Information om andra metoder som du kan använda för att skicka meddelanden till Microsoft finns i [Rapportera meddelanden och filer till Microsoft.](report-junk-email-messages-to-microsoft.md)</span><span class="sxs-lookup"><span data-stu-id="3cdf6-234">For other methods that you can use to submit messages to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).</span></span>
 
-### <a name="troubleshooting-for-admins"></a><span data-ttu-id="29e7d-231">Fel sökning för administratörer</span><span class="sxs-lookup"><span data-stu-id="29e7d-231">Troubleshooting for admins</span></span>
+### <a name="troubleshooting-for-admins"></a><span data-ttu-id="3cdf6-235">Felsökning för administratörer</span><span class="sxs-lookup"><span data-stu-id="3cdf6-235">Troubleshooting for admins</span></span>
 
-#### <a name="problem-an-error-message-continually-appears-that-asks-users-to-contact-their-system-administrator"></a><span data-ttu-id="29e7d-232">Problem: ett fel meddelande visas hela tiden så att användarna kan kontakta sin system administratör</span><span class="sxs-lookup"><span data-stu-id="29e7d-232">Problem: An error message continually appears that asks users to contact their system administrator</span></span>
+#### <a name="problem-an-error-message-continually-appears-that-asks-users-to-contact-their-system-administrator"></a><span data-ttu-id="3cdf6-236">Problem: Ett felmeddelande visas kontinuerligt som ber användarna att kontakta sina systemadministratör</span><span class="sxs-lookup"><span data-stu-id="3cdf6-236">Problem: An error message continually appears that asks users to contact their system administrator</span></span>
 
-1. <span data-ttu-id="29e7d-233">Verifiera eller ange `LoggingLevel` register nyckel för värdet "VERBOSE":</span><span class="sxs-lookup"><span data-stu-id="29e7d-233">Verify or set the `LoggingLevel` registry key to the value "Verbose":</span></span>
+1. <span data-ttu-id="3cdf6-237">Verifiera eller ange `LoggingLevel` registernyckeln till värdet "Utförlig":</span><span class="sxs-lookup"><span data-stu-id="3cdf6-237">Verify or set the `LoggingLevel` registry key to the value "Verbose":</span></span>
 
-   - <span data-ttu-id="29e7d-234">**32-bitars Outlook på 32-bitars versionen av Windows**:</span><span class="sxs-lookup"><span data-stu-id="29e7d-234">**32-bit Outlook on 32-bit Windows**:</span></span>
+   - <span data-ttu-id="3cdf6-238">**32-bitars Outlook på 32-bitars Windows:**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-238">**32-bit Outlook on 32-bit Windows**:</span></span>
 
      ```text
      Windows Registry Editor Version 5.00
@@ -273,7 +277,7 @@ ms.locfileid: "50029426"
      "LoggingLevel"="Verbose"
      ```
 
-   - <span data-ttu-id="29e7d-235">**32-bitars Outlook på 64-bitars versionen av Windows**:</span><span class="sxs-lookup"><span data-stu-id="29e7d-235">**32-bit Outlook on 64-bit Windows**:</span></span>
+   - <span data-ttu-id="3cdf6-239">**32-bitars Outlook på 64-bitars Windows:**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-239">**32-bit Outlook on 64-bit Windows**:</span></span>
 
      ```text
      Windows Registry Editor Version 5.00
@@ -282,7 +286,7 @@ ms.locfileid: "50029426"
      "LoggingLevel"="Verbose"
      ```
 
-   - <span data-ttu-id="29e7d-236">**64-bitars Outlook**:</span><span class="sxs-lookup"><span data-stu-id="29e7d-236">**64-bit Outlook**:</span></span>
+   - <span data-ttu-id="3cdf6-240">**64-bitars Outlook:**</span><span class="sxs-lookup"><span data-stu-id="3cdf6-240">**64-bit Outlook**:</span></span>
 
      ```text
      Windows Registry Editor Version 5.00
@@ -291,17 +295,17 @@ ms.locfileid: "50029426"
      "LoggingLevel"="Verbose"
      ```
 
-2. <span data-ttu-id="29e7d-237">Starta om Outlook och be användare rapportera tillbaka när de ser fel meddelandet.</span><span class="sxs-lookup"><span data-stu-id="29e7d-237">Restart Outlook and ask users to report back when they see the error message.</span></span>
+2. <span data-ttu-id="3cdf6-241">Starta om Outlook och be användarna att rapportera när de ser felmeddelandet.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-241">Restart Outlook and ask users to report back when they see the error message.</span></span>
 
-3. <span data-ttu-id="29e7d-238">Samla in logg informationen som finns på följande plats:</span><span class="sxs-lookup"><span data-stu-id="29e7d-238">Collect the log information found at the following location:</span></span>
+3. <span data-ttu-id="3cdf6-242">Samla in logginformationen som finns på följande plats:</span><span class="sxs-lookup"><span data-stu-id="3cdf6-242">Collect the log information found at the following location:</span></span>
 
    `%LOCALAPPDATA%\Microsoft\Junk Email Reporting Add-in\SpamReporterAddinLog.txt`
 
-4. <span data-ttu-id="29e7d-239">Kontakta Exchange Online Protection Technical Support och ge dem logg information.</span><span class="sxs-lookup"><span data-stu-id="29e7d-239">Contact Exchange Online Protection Technical Support and provide them with the log information.</span></span>
+4. <span data-ttu-id="3cdf6-243">Kontakta den tekniska supporten för Exchange Online Protection och ge dem logginformationen.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-243">Contact Exchange Online Protection Technical Support and provide them with the log information.</span></span>
 
-#### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a><span data-ttu-id="29e7d-240">Problem: användarna har markerat sig för att inte få en bekräftelse när de rapporterar meddelanden och nu vill att de ska uppmanas tillbaka</span><span class="sxs-lookup"><span data-stu-id="29e7d-240">Problem: Users selected not to receive a confirmation prompt when they report messages, and now they want the prompt back</span></span>
+#### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a><span data-ttu-id="3cdf6-244">Problem: Användarna valde att inte få någon bekräftelsefråga när de rapporterar meddelanden, och nu vill de få tillbaka uppmaningen</span><span class="sxs-lookup"><span data-stu-id="3cdf6-244">Problem: Users selected not to receive a confirmation prompt when they report messages, and now they want the prompt back</span></span>
 
-1. <span data-ttu-id="29e7d-241">Skapa `ConfirmReportJunk` register nyckel med värdet "true":</span><span class="sxs-lookup"><span data-stu-id="29e7d-241">Create the `ConfirmReportJunk`registry key with the value "True":</span></span>
+1. <span data-ttu-id="3cdf6-245">Skapa `ConfirmReportJunk` registernyckeln med värdet "True":</span><span class="sxs-lookup"><span data-stu-id="3cdf6-245">Create the `ConfirmReportJunk`registry key with the value "True":</span></span>
 
    ```text
    Windows Registry Editor Version 5.00
@@ -310,4 +314,4 @@ ms.locfileid: "50029426"
    "ConfirmReportJunk"="True"
    ```
 
-2. <span data-ttu-id="29e7d-242">Starta om Outlook.</span><span class="sxs-lookup"><span data-stu-id="29e7d-242">Restart Outlook.</span></span>
+2. <span data-ttu-id="3cdf6-246">Starta om Outlook.</span><span class="sxs-lookup"><span data-stu-id="3cdf6-246">Restart Outlook.</span></span>

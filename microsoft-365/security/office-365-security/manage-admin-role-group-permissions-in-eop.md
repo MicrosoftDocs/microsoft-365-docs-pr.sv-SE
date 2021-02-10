@@ -1,5 +1,5 @@
 ---
-title: Hantera roll grupper i EOP
+title: Hantera rollgrupper i EOP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,242 +8,245 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
-description: Administratörer kan läsa mer om hur du tilldelar eller tar bort behörigheter i administrations centret för Exchange (UK) i Exchange Online Protection.
-ms.openlocfilehash: 4a1353963e5e3eadc1a07f8b4aa3a765b06c86ec
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Administratörer kan läsa om hur de tilldelar eller tar bort behörigheter i administrationscentret för Exchange (EAC) i Exchange Online Protection.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: b53023521f477b5e864424ec648ccf7e5b749d0c
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659303"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166993"
 ---
-# <a name="manage-role-groups-in-standalone-eop"></a><span data-ttu-id="02d65-103">Hantera rollgrupper i fristående EOP</span><span class="sxs-lookup"><span data-stu-id="02d65-103">Manage role groups in standalone EOP</span></span>
+# <a name="manage-role-groups-in-standalone-eop"></a><span data-ttu-id="87855-103">Hantera rollgrupper i fristående EOP</span><span class="sxs-lookup"><span data-stu-id="87855-103">Manage role groups in standalone EOP</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+<span data-ttu-id="87855-104">**Gäller för**</span><span class="sxs-lookup"><span data-stu-id="87855-104">**Applies to**</span></span>
+-  [<span data-ttu-id="87855-105">Exchange Online Protection fristående</span><span class="sxs-lookup"><span data-stu-id="87855-105">Exchange Online Protection standalone</span></span>](https://go.microsoft.com/fwlink/?linkid=2148611)
 
-<span data-ttu-id="02d65-104">I fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor kan du använda administrations centret för Exchange (UK) för att lägga till användare i roll grupper.</span><span class="sxs-lookup"><span data-stu-id="02d65-104">In standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you can use the Exchange admin center (EAC) to add users to role groups.</span></span> <span data-ttu-id="02d65-105">Om du lägger till en användare i en roll grupp får användaren behörighet att utföra särskilda administratörs uppgifter.</span><span class="sxs-lookup"><span data-stu-id="02d65-105">Adding a users to a role group gives the user permissions to do specific admin tasks.</span></span> <span data-ttu-id="02d65-106">Du kan också ta bort användare från roll grupper.</span><span class="sxs-lookup"><span data-stu-id="02d65-106">You can also remove users from role groups.</span></span>
+<span data-ttu-id="87855-106">I fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor kan du använda administrationscentret för Exchange (EAC) för att lägga till användare i rollgrupper.</span><span class="sxs-lookup"><span data-stu-id="87855-106">In standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you can use the Exchange admin center (EAC) to add users to role groups.</span></span> <span data-ttu-id="87855-107">Om du lägger till en användare i en rollgrupp får användaren behörighet att utföra särskilda administrativa uppgifter.</span><span class="sxs-lookup"><span data-stu-id="87855-107">Adding a users to a role group gives the user permissions to do specific admin tasks.</span></span> <span data-ttu-id="87855-108">Du kan också ta bort användare från rollgrupper.</span><span class="sxs-lookup"><span data-stu-id="87855-108">You can also remove users from role groups.</span></span>
 
-<span data-ttu-id="02d65-107">Mer information om roller och roll grupper finns i [behörigheter i fristående EOP](feature-permissions-in-eop.md).</span><span class="sxs-lookup"><span data-stu-id="02d65-107">For more information about roles and role groups, see [Permissions in standalone EOP](feature-permissions-in-eop.md).</span></span>
+<span data-ttu-id="87855-109">Mer information om roller och rollgrupper finns i [Behörigheter i fristående EOP.](feature-permissions-in-eop.md)</span><span class="sxs-lookup"><span data-stu-id="87855-109">For more information about roles and role groups, see [Permissions in standalone EOP](feature-permissions-in-eop.md).</span></span>
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="02d65-108">Vad behöver jag veta innan jag börjar?</span><span class="sxs-lookup"><span data-stu-id="02d65-108">What do you need to know before you begin?</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="87855-110">Vad behöver jag veta innan jag börjar?</span><span class="sxs-lookup"><span data-stu-id="87855-110">What do you need to know before you begin?</span></span>
 
-- <span data-ttu-id="02d65-109">Om du vill öppna administrations centret för Exchange (UK) läser du [administrations Center för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).</span><span class="sxs-lookup"><span data-stu-id="02d65-109">To open the Exchange admin center (EAC), see [Exchange admin center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md).</span></span>
+- <span data-ttu-id="87855-111">Om du vill öppna administrationscentret för Exchange (EAC) går du till [administrationscentret för Exchange i fristående EOP.](exchange-admin-center-in-exchange-online-protection-eop.md)</span><span class="sxs-lookup"><span data-stu-id="87855-111">To open the Exchange admin center (EAC), see [Exchange admin center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md).</span></span>
 
-- <span data-ttu-id="02d65-110">Information om hur du öppnar fristående EOP PowerShell finns i [ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).</span><span class="sxs-lookup"><span data-stu-id="02d65-110">To open standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).</span></span>
+- <span data-ttu-id="87855-112">Information om hur du öppnar fristående EOP PowerShell [finns i Ansluta till Exchange Online Protection PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)</span><span class="sxs-lookup"><span data-stu-id="87855-112">To open standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).</span></span>
 
-- <span data-ttu-id="02d65-111">Du måste ha behörighet i Exchange Online Protection innan du kan göra det i den här artikeln.</span><span class="sxs-lookup"><span data-stu-id="02d65-111">You need to be assigned permissions in Exchange Online Protection before you can do the procedures in this article.</span></span> <span data-ttu-id="02d65-112">Specifikt behöver du **roll hanterings** rollen, som tilldelats roll gruppen **organisations hantering** .</span><span class="sxs-lookup"><span data-stu-id="02d65-112">Specifically, you need the **Role Management** role, which is assigned to the **Organization Management** role group by default.</span></span> <span data-ttu-id="02d65-113">Mer information finns i [behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd UK för att ändra listan över medlemmar i roll grupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).</span><span class="sxs-lookup"><span data-stu-id="02d65-113">For more information, see [Permissions in standalone EOP](feature-permissions-in-eop.md) and [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).</span></span>
+- <span data-ttu-id="87855-113">Du måste ha tilldelats behörigheter i Exchange Online Protection innan du kan utföra procedurerna i den här artikeln.</span><span class="sxs-lookup"><span data-stu-id="87855-113">You need to be assigned permissions in Exchange Online Protection before you can do the procedures in this article.</span></span> <span data-ttu-id="87855-114">Specifikt behöver du **rollhanteringsrollen,** som är tilldelad **rollgruppen Organisationshantering** som standard.</span><span class="sxs-lookup"><span data-stu-id="87855-114">Specifically, you need the **Role Management** role, which is assigned to the **Organization Management** role group by default.</span></span> <span data-ttu-id="87855-115">Mer information finns i [Behörigheter i fristående EOP](feature-permissions-in-eop.md) och Använda EAC för att [ändra listan över medlemmar i rollgrupper.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)</span><span class="sxs-lookup"><span data-stu-id="87855-115">For more information, see [Permissions in standalone EOP](feature-permissions-in-eop.md) and [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).</span></span>
 
-- <span data-ttu-id="02d65-114">Information om kortkommandon som kan gälla för procedurerna i den här artikeln finns i kortkommandon [för administrations centret för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).</span><span class="sxs-lookup"><span data-stu-id="02d65-114">For information about keyboard shortcuts that may apply to the procedures in this article, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).</span></span>
+- <span data-ttu-id="87855-116">Mer information om kortkommandon som kan gälla för procedurerna i den här artikeln finns i Kortkommandon för [administrationscentret för Exchange i Exchange Online.](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)</span><span class="sxs-lookup"><span data-stu-id="87855-116">For information about keyboard shortcuts that may apply to the procedures in this article, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).</span></span>
 
 > [!TIP]
-> <span data-ttu-id="02d65-115">Har du problem?</span><span class="sxs-lookup"><span data-stu-id="02d65-115">Having problems?</span></span> <span data-ttu-id="02d65-116">Be om hjälp i [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.</span><span class="sxs-lookup"><span data-stu-id="02d65-116">Ask for help in the [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.</span></span>
+> <span data-ttu-id="87855-117">Har du problem?</span><span class="sxs-lookup"><span data-stu-id="87855-117">Having problems?</span></span> <span data-ttu-id="87855-118">Be om hjälp i [forumet för Exchange Online Protection.](https://go.microsoft.com/fwlink/p/?linkId=285351)</span><span class="sxs-lookup"><span data-stu-id="87855-118">Ask for help in the [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.</span></span>
 
-## <a name="use-the-eac-to-manage-role-groups"></a><span data-ttu-id="02d65-117">Använda UK för att hantera roll grupper</span><span class="sxs-lookup"><span data-stu-id="02d65-117">Use the EAC to manage role groups</span></span>
+## <a name="use-the-eac-to-manage-role-groups"></a><span data-ttu-id="87855-119">Använda EAC för att hantera rollgrupper</span><span class="sxs-lookup"><span data-stu-id="87855-119">Use the EAC to manage role groups</span></span>
 
-### <a name="use-the-eac-to-view-role-groups"></a><span data-ttu-id="02d65-118">Använda roll grupperna UK för att Visa</span><span class="sxs-lookup"><span data-stu-id="02d65-118">Use the EAC to view role groups</span></span>
+### <a name="use-the-eac-to-view-role-groups"></a><span data-ttu-id="87855-120">Använda EAC för att visa rollgrupper</span><span class="sxs-lookup"><span data-stu-id="87855-120">Use the EAC to view role groups</span></span>
 
-1. <span data-ttu-id="02d65-119">Gå till  \> **rollerna för administratörs** behörighet i UK.</span><span class="sxs-lookup"><span data-stu-id="02d65-119">In the EAC, go to **Permissions** \> **Admin roles**.</span></span> <span data-ttu-id="02d65-120">Alla roll grupper i din organisation visas här.</span><span class="sxs-lookup"><span data-stu-id="02d65-120">All of the role groups in your organization are listed here.</span></span>
+1. <span data-ttu-id="87855-121">Gå till Behörighetsadministratörsroller **i** \> EAC.</span><span class="sxs-lookup"><span data-stu-id="87855-121">In the EAC, go to **Permissions** \> **Admin roles**.</span></span> <span data-ttu-id="87855-122">Här listas alla rollgrupper i din organisation.</span><span class="sxs-lookup"><span data-stu-id="87855-122">All of the role groups in your organization are listed here.</span></span>
 
-2. <span data-ttu-id="02d65-121">Välj en roll grupp.</span><span class="sxs-lookup"><span data-stu-id="02d65-121">Select a role group.</span></span> <span data-ttu-id="02d65-122">I informations fönstret visas **namnet**, **beskrivningen**, **tilldelade roller** och **som hanteras av** roll gruppen.</span><span class="sxs-lookup"><span data-stu-id="02d65-122">The Details pane shows the **Name**, **Description**, **Assigned roles**, and **Managed by** of the role group.</span></span> <span data-ttu-id="02d65-123">Du kan också se informationen genom att klicka på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-EditIcon.png) .</span><span class="sxs-lookup"><span data-stu-id="02d65-123">You can also see this information by clicking **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png).</span></span>
+2. <span data-ttu-id="87855-123">Välj en rollgrupp.</span><span class="sxs-lookup"><span data-stu-id="87855-123">Select a role group.</span></span> <span data-ttu-id="87855-124">I informationsfönstret visas **rollgruppens** **namn,** beskrivning, **tilldelade** roller och hanteras av. </span><span class="sxs-lookup"><span data-stu-id="87855-124">The Details pane shows the **Name**, **Description**, **Assigned roles**, and **Managed by** of the role group.</span></span> <span data-ttu-id="87855-125">Du kan också visa den här informationen genom att klicka **på** ![ redigeringsikonen. ](../../media/ITPro-EAC-EditIcon.png)</span><span class="sxs-lookup"><span data-stu-id="87855-125">You can also see this information by clicking **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png).</span></span>
 
-### <a name="use-the-eac-to-create-role-groups"></a><span data-ttu-id="02d65-124">Använda UK för att skapa roll grupper</span><span class="sxs-lookup"><span data-stu-id="02d65-124">Use the EAC to create role groups</span></span>
+### <a name="use-the-eac-to-create-role-groups"></a><span data-ttu-id="87855-126">Använda EAC för att skapa rollgrupper</span><span class="sxs-lookup"><span data-stu-id="87855-126">Use the EAC to create role groups</span></span>
 
-<span data-ttu-id="02d65-125">När du skapar en ny roll grupp kan du konfigurera alla inställningar själv (när du skapar gruppen eller efter).</span><span class="sxs-lookup"><span data-stu-id="02d65-125">When you create a new role group, you can configure all of the settings yourself (during the creation of the group or after).</span></span> <span data-ttu-id="02d65-126">Eller så kan du kopiera en befintlig roll grupp och ändra den.</span><span class="sxs-lookup"><span data-stu-id="02d65-126">Or, you can copy an existing role group and modify it.</span></span>
+<span data-ttu-id="87855-127">När du skapar en ny rollgrupp kan du konfigurera alla inställningar själv (när gruppen eller efter den skapas).</span><span class="sxs-lookup"><span data-stu-id="87855-127">When you create a new role group, you can configure all of the settings yourself (during the creation of the group or after).</span></span> <span data-ttu-id="87855-128">Du kan också kopiera en befintlig rollgrupp och ändra den.</span><span class="sxs-lookup"><span data-stu-id="87855-128">Or, you can copy an existing role group and modify it.</span></span>
 
-1. <span data-ttu-id="02d65-127">Gå **till** \> **Administratörs roller** i UK och gör sedan något av följande:</span><span class="sxs-lookup"><span data-stu-id="02d65-127">In the EAC, go to **Permissions** \> **Admin roles**, and then do one of the following steps:</span></span>
+1. <span data-ttu-id="87855-129">Gå till Behörighetsadministratörsroller i EAC  \> och gör sedan något av följande:</span><span class="sxs-lookup"><span data-stu-id="87855-129">In the EAC, go to **Permissions** \> **Admin roles**, and then do one of the following steps:</span></span>
 
-   - <span data-ttu-id="02d65-128">**Skapa en ny roll grupp manuellt**: Klicka på **Lägg** till ![ ikonen Lägg till ](../../media/ITPro-EAC-AddIcon.png) .</span><span class="sxs-lookup"><span data-stu-id="02d65-128">**Manually create a new role group**: Click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png).</span></span>
+   - <span data-ttu-id="87855-130">**Skapa en ny rollgrupp manuellt: Klicka** på **ikonen Lägg** till lägg ![ ](../../media/ITPro-EAC-AddIcon.png) till.</span><span class="sxs-lookup"><span data-stu-id="87855-130">**Manually create a new role group**: Click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png).</span></span>
 
-   - <span data-ttu-id="02d65-129">**Kopiera en befintlig roll grupp**: Välj den roll grupp som du vill kopiera och klicka sedan på **Kopiera** ![ kopierings ikon ](../../media/ITPro-EAC-CopyIcon.png) .</span><span class="sxs-lookup"><span data-stu-id="02d65-129">**Copy an existing role group**: Select the role group that you want to copy and then click **Copy** ![Copy icon](../../media/ITPro-EAC-CopyIcon.png).</span></span>
+   - <span data-ttu-id="87855-131">**Kopiera en befintlig rollgrupp:** Markera den rollgrupp som du vill kopiera och klicka sedan på ikonen **Kopiera** ![ ](../../media/ITPro-EAC-CopyIcon.png) kopia.</span><span class="sxs-lookup"><span data-stu-id="87855-131">**Copy an existing role group**: Select the role group that you want to copy and then click **Copy** ![Copy icon](../../media/ITPro-EAC-CopyIcon.png).</span></span>
 
-2. <span data-ttu-id="02d65-130">I fönstret **ny roll grupp** som visas konfigurerar du följande inställningar:</span><span class="sxs-lookup"><span data-stu-id="02d65-130">In the **New role group** window that appears, configure the following settings:</span></span>
+2. <span data-ttu-id="87855-132">I fönstret **Ny rollgrupp** som visas konfigurerar du följande inställningar:</span><span class="sxs-lookup"><span data-stu-id="87855-132">In the **New role group** window that appears, configure the following settings:</span></span>
 
-    - <span data-ttu-id="02d65-131">**Namn**: Ange ett unikt namn för roll gruppen.</span><span class="sxs-lookup"><span data-stu-id="02d65-131">**Name**: Enter a unique name for the role group.</span></span>
+    - <span data-ttu-id="87855-133">**Namn:** Ange ett unikt namn för rollgruppen.</span><span class="sxs-lookup"><span data-stu-id="87855-133">**Name**: Enter a unique name for the role group.</span></span>
 
-    - <span data-ttu-id="02d65-132">**Beskrivning**: Ange en valfri beskrivning för roll gruppen.</span><span class="sxs-lookup"><span data-stu-id="02d65-132">**Description**: Enter an optional description for the role group.</span></span>
+    - <span data-ttu-id="87855-134">**Beskrivning:** Ange en valfri beskrivning för rollgruppen.</span><span class="sxs-lookup"><span data-stu-id="87855-134">**Description**: Enter an optional description for the role group.</span></span>
 
-    - <span data-ttu-id="02d65-133">**Roller**: Klicka på **Lägg** till ![ Lägg till ](../../media/ITPro-EAC-AddIcon.png) eller **ta bort** ![ ikon ](../../media/ITPro-EAC-RemoveIcon.gif) för att välja eller ändra de roller som är tilldelade till roll gruppen.</span><span class="sxs-lookup"><span data-stu-id="02d65-133">**Roles**: Click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png) or **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif) to select or modify the roles that are assigned to the role group.</span></span>
+    - <span data-ttu-id="87855-135">**Roller:** Klicka **på ikonen** Lägg till eller ta bort om du vill välja eller ändra ![ ](../../media/ITPro-EAC-AddIcon.png)  ![ ](../../media/ITPro-EAC-RemoveIcon.gif) rollerna som har tilldelats rollgruppen.</span><span class="sxs-lookup"><span data-stu-id="87855-135">**Roles**: Click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png) or **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif) to select or modify the roles that are assigned to the role group.</span></span>
 
-    - <span data-ttu-id="02d65-134">**Medlemmar**: Klicka på **Lägg** till ![ Lägg till ](../../media/ITPro-EAC-AddIcon.png) eller **ta bort** ![ ikon ](../../media/ITPro-EAC-RemoveIcon.gif) för att ändra medlemskap i roll gruppen.</span><span class="sxs-lookup"><span data-stu-id="02d65-134">**Members**: Click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png) or **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif) to modify the role group membership.</span></span>
+    - <span data-ttu-id="87855-136">**Medlemmar:** Klicka på **ikonen Lägg** till eller ![ ta ](../../media/ITPro-EAC-AddIcon.png) **bort** om du vill ![ ändra ](../../media/ITPro-EAC-RemoveIcon.gif) rollgruppmedlemskapet.</span><span class="sxs-lookup"><span data-stu-id="87855-136">**Members**: Click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png) or **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif) to modify the role group membership.</span></span>
 
-3. <span data-ttu-id="02d65-135">När du är klar klickar du på **Spara** för att skapa roll gruppen.</span><span class="sxs-lookup"><span data-stu-id="02d65-135">When you're finished, click **Save** to create the role group.</span></span>
+3. <span data-ttu-id="87855-137">När du är klar klickar du på **Spara** för att skapa rollgruppen.</span><span class="sxs-lookup"><span data-stu-id="87855-137">When you're finished, click **Save** to create the role group.</span></span>
 
-### <a name="use-the-eac-to-modify-role-groups"></a><span data-ttu-id="02d65-136">Använda UK för att ändra roll grupper</span><span class="sxs-lookup"><span data-stu-id="02d65-136">Use the EAC to modify role groups</span></span>
+### <a name="use-the-eac-to-modify-role-groups"></a><span data-ttu-id="87855-138">Använda EAC för att ändra rollgrupper</span><span class="sxs-lookup"><span data-stu-id="87855-138">Use the EAC to modify role groups</span></span>
 
-<span data-ttu-id="02d65-137">I avsnittet UK går du till **behörigheter för behörighets** \> **Administration**, väljer den roll grupp som du vill ändra och klickar sedan på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-EditIcon.png) .</span><span class="sxs-lookup"><span data-stu-id="02d65-137">In the EAC, go to **Permissions** \> **Admin roles**, select the role group you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png).</span></span>
+<span data-ttu-id="87855-139">I EAC går  du till \> **Behörighetsadministratörsroller,** väljer den rollgrupp du vill ändra och klickar sedan på **ikonen** ![ Redigera ](../../media/ITPro-EAC-EditIcon.png) redigera.</span><span class="sxs-lookup"><span data-stu-id="87855-139">In the EAC, go to **Permissions** \> **Admin roles**, select the role group you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png).</span></span>
 
-<span data-ttu-id="02d65-138">Samma alternativ är tillgängliga när du ändrar roll grupper som när du skapar roll grupper.</span><span class="sxs-lookup"><span data-stu-id="02d65-138">The same options are available when you modify role groups as when you create role groups.</span></span> <span data-ttu-id="02d65-139">Du kan:</span><span class="sxs-lookup"><span data-stu-id="02d65-139">You can:</span></span>
+<span data-ttu-id="87855-140">Samma alternativ är tillgängliga när du ändrar rollgrupper som när du skapar rollgrupper.</span><span class="sxs-lookup"><span data-stu-id="87855-140">The same options are available when you modify role groups as when you create role groups.</span></span> <span data-ttu-id="87855-141">Du kan:</span><span class="sxs-lookup"><span data-stu-id="87855-141">You can:</span></span>
 
-- <span data-ttu-id="02d65-140">Ändra namn och beskrivning.</span><span class="sxs-lookup"><span data-stu-id="02d65-140">Change the name and description.</span></span>
+- <span data-ttu-id="87855-142">Ändra namn och beskrivning.</span><span class="sxs-lookup"><span data-stu-id="87855-142">Change the name and description.</span></span>
 
-- <span data-ttu-id="02d65-141">Lägga till och ta bort hanterings roller (skapa eller ta bort roll tilldelningar).</span><span class="sxs-lookup"><span data-stu-id="02d65-141">Add and remove management roles (create or remove role assignments).</span></span>
+- <span data-ttu-id="87855-143">Lägga till och ta bort hanteringsroller (skapa eller ta bort rolltilldelningar).</span><span class="sxs-lookup"><span data-stu-id="87855-143">Add and remove management roles (create or remove role assignments).</span></span>
 
-- <span data-ttu-id="02d65-142">Lägga till och ta bort medlemmar.</span><span class="sxs-lookup"><span data-stu-id="02d65-142">Add and remove members.</span></span>
+- <span data-ttu-id="87855-144">Lägga till och ta bort medlemmar.</span><span class="sxs-lookup"><span data-stu-id="87855-144">Add and remove members.</span></span>
 
-<span data-ttu-id="02d65-143">**Obs!** vissa roll grupper (till exempel organisations hantering) begränsar vilka roller du kan ta bort från gruppen.</span><span class="sxs-lookup"><span data-stu-id="02d65-143">**Note**: Some role groups (for example, Organization Management) restrict the roles that you can remove from group.</span></span>
+<span data-ttu-id="87855-145">**Obs!** Vissa rollgrupper (till exempel Organisationshantering) begränsar vilka roller du kan ta bort från gruppen.</span><span class="sxs-lookup"><span data-stu-id="87855-145">**Note**: Some role groups (for example, Organization Management) restrict the roles that you can remove from group.</span></span>
 
-#### <a name="use-the-eac-modify-the-list-of-members-in-role-groups"></a><span data-ttu-id="02d65-144">Använda UK ändra listan över medlemmar i roll grupper</span><span class="sxs-lookup"><span data-stu-id="02d65-144">Use the EAC modify the list of members in role groups</span></span>
+#### <a name="use-the-eac-modify-the-list-of-members-in-role-groups"></a><span data-ttu-id="87855-146">Använd EAC för att ändra listan över medlemmar i rollgrupper</span><span class="sxs-lookup"><span data-stu-id="87855-146">Use the EAC modify the list of members in role groups</span></span>
 
-1. <span data-ttu-id="02d65-145">Gå **till** \> **Administratörs roller** i UK, Välj den roll grupp som du vill ändra och klicka sedan på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-EditIcon.png) .</span><span class="sxs-lookup"><span data-stu-id="02d65-145">In the EAC, go to **Permissions** \> **Admin roles**, select the role group that you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png).</span></span>
+1. <span data-ttu-id="87855-147">I EAC går  du till \> **Behörighetsadministratörsroller,** väljer den rollgrupp som du vill ändra och klickar sedan på **ikonen** ![ Redigera ](../../media/ITPro-EAC-EditIcon.png) redigera.</span><span class="sxs-lookup"><span data-stu-id="87855-147">In the EAC, go to **Permissions** \> **Admin roles**, select the role group that you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png).</span></span>
 
-2. <span data-ttu-id="02d65-146">Gör något av följande i avsnittet **medlemmar** på sidan roll grupp egenskaper som öppnas:</span><span class="sxs-lookup"><span data-stu-id="02d65-146">In the role group properties page that opens, in the **Members** section, do either of the following steps:</span></span>
+2. <span data-ttu-id="87855-148">Gör något av följande i avsnittet Medlemmar på sidan **med** rollgruppegenskaper som öppnas:</span><span class="sxs-lookup"><span data-stu-id="87855-148">In the role group properties page that opens, in the **Members** section, do either of the following steps:</span></span>
 
-   - <span data-ttu-id="02d65-147">Klicka på **Lägg** till ![ ikonen Lägg till ](../../media/ITPro-EAC-AddIcon.png) .</span><span class="sxs-lookup"><span data-stu-id="02d65-147">Click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png).</span></span> <span data-ttu-id="02d65-148">Leta reda på den användare som Wou vill lägga till på sidan som visas och klicka sedan på **Lägg till >**.</span><span class="sxs-lookup"><span data-stu-id="02d65-148">In the page that appears, find the user that wou want to add, and then click **add ->**.</span></span> <span data-ttu-id="02d65-149">Välj användare och klicka på **Lägg till >** många gånger efter behov.</span><span class="sxs-lookup"><span data-stu-id="02d65-149">Select users and click **add ->** many times as necessary.</span></span> <span data-ttu-id="02d65-150">När du är klar klickar du på **OK**.</span><span class="sxs-lookup"><span data-stu-id="02d65-150">When you're finished, click **OK**.</span></span>
+   - <span data-ttu-id="87855-149">Klicka **på Lägg till** lägg ![ till-ikon. ](../../media/ITPro-EAC-AddIcon.png)</span><span class="sxs-lookup"><span data-stu-id="87855-149">Click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png).</span></span> <span data-ttu-id="87855-150">Leta rätt på den användare som du vill lägga till på sidan som visas och klicka sedan på **lägg till ->.**</span><span class="sxs-lookup"><span data-stu-id="87855-150">In the page that appears, find the user that wou want to add, and then click **add ->**.</span></span> <span data-ttu-id="87855-151">Välj användare och klicka **på lägg >** gånger som behövs.</span><span class="sxs-lookup"><span data-stu-id="87855-151">Select users and click **add ->** many times as necessary.</span></span> <span data-ttu-id="87855-152">Klicka på OK när du är **klar.**</span><span class="sxs-lookup"><span data-stu-id="87855-152">When you're finished, click **OK**.</span></span>
 
-   - <span data-ttu-id="02d65-151">Markera de användare som du vill ta bort och klicka sedan på **ta bort** ![ ikonen Ta bort ](../../media/ITPro-EAC-RemoveIcon.gif) .</span><span class="sxs-lookup"><span data-stu-id="02d65-151">Select the users that you want to remove, and then click **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif).</span></span>
+   - <span data-ttu-id="87855-153">Markera de användare som du vill ta bort och klicka sedan på ikonen **Ta** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) bort.</span><span class="sxs-lookup"><span data-stu-id="87855-153">Select the users that you want to remove, and then click **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif).</span></span>
 
-3. <span data-ttu-id="02d65-152">Klicka på **Spara** när du är klar.</span><span class="sxs-lookup"><span data-stu-id="02d65-152">When you're finished, click **Save**.</span></span>
+3. <span data-ttu-id="87855-154">Klicka på **Spara** när du är klar.</span><span class="sxs-lookup"><span data-stu-id="87855-154">When you're finished, click **Save**.</span></span>
 
    > [!NOTE]
-   > <span data-ttu-id="02d65-153">Användarna kan behöva logga ut och logga in igen för att se ändringarna i deras administrativa rättigheter efter att du har lagt till eller tagit bort medlemmar från roll gruppen.</span><span class="sxs-lookup"><span data-stu-id="02d65-153">Users may have to sign out and sign in again to see the change in their administrative rights after you add or remove members from the role group.</span></span>
+   > <span data-ttu-id="87855-155">Användare kan behöva logga ut och logga in igen för att se ändringen av sina administrativa rättigheter när du har lagt till eller tagit bort medlemmar från rollgruppen.</span><span class="sxs-lookup"><span data-stu-id="87855-155">Users may have to sign out and sign in again to see the change in their administrative rights after you add or remove members from the role group.</span></span>
 
-### <a name="use-the-eac-to-remove-role-groups"></a><span data-ttu-id="02d65-154">Använda UK för att ta bort roll grupper</span><span class="sxs-lookup"><span data-stu-id="02d65-154">Use the EAC to remove role groups</span></span>
+### <a name="use-the-eac-to-remove-role-groups"></a><span data-ttu-id="87855-156">Använda EAC för att ta bort rollgrupper</span><span class="sxs-lookup"><span data-stu-id="87855-156">Use the EAC to remove role groups</span></span>
 
-<span data-ttu-id="02d65-155">Det går inte att ta bort inbyggda roll grupper, men du kan ta bort anpassade roll grupper som du har skapat.</span><span class="sxs-lookup"><span data-stu-id="02d65-155">You can't remove built-in role groups, but you can remove custom role groups that you've created.</span></span>
+<span data-ttu-id="87855-157">Du kan inte ta bort inbyggda rollgrupper, men du kan ta bort anpassade rollgrupper som du har skapat.</span><span class="sxs-lookup"><span data-stu-id="87855-157">You can't remove built-in role groups, but you can remove custom role groups that you've created.</span></span>
 
-1. <span data-ttu-id="02d65-156">Gå till  \> **rollerna för administratörs** behörighet i UK.</span><span class="sxs-lookup"><span data-stu-id="02d65-156">In the EAC, go to **Permissions** \> **Admin roles**.</span></span>
+1. <span data-ttu-id="87855-158">Gå till Behörighetsadministratörsroller **i** \> EAC.</span><span class="sxs-lookup"><span data-stu-id="87855-158">In the EAC, go to **Permissions** \> **Admin roles**.</span></span>
 
-2. <span data-ttu-id="02d65-157">Välj den roll grupp du vill ta bort och klicka sedan på **ta bort** ![ ikon för borttagning ](../../media/ITPro-EAC-DeleteIcon.png) .</span><span class="sxs-lookup"><span data-stu-id="02d65-157">Select the role group you want to remove and then click **Delete** ![Delete icon](../../media/ITPro-EAC-DeleteIcon.png).</span></span>
+2. <span data-ttu-id="87855-159">Markera den rollgrupp du vill ta bort och klicka sedan på ikonen **Ta** ![ ](../../media/ITPro-EAC-DeleteIcon.png) bort.</span><span class="sxs-lookup"><span data-stu-id="87855-159">Select the role group you want to remove and then click **Delete** ![Delete icon](../../media/ITPro-EAC-DeleteIcon.png).</span></span>
 
-3. <span data-ttu-id="02d65-158">Klicka på **Ja** i bekräftelse fönstret som visas.</span><span class="sxs-lookup"><span data-stu-id="02d65-158">Click **Yes** in the confirmation window that appears.</span></span>
+3. <span data-ttu-id="87855-160">Klicka **på Ja** i bekräftelsefönstret som visas.</span><span class="sxs-lookup"><span data-stu-id="87855-160">Click **Yes** in the confirmation window that appears.</span></span>
 
-## <a name="use-powershell-to-manage-role-groups"></a><span data-ttu-id="02d65-159">Använda PowerShell för att hantera roll grupper</span><span class="sxs-lookup"><span data-stu-id="02d65-159">Use PowerShell to manage role groups</span></span>
+## <a name="use-powershell-to-manage-role-groups"></a><span data-ttu-id="87855-161">Använda PowerShell för att hantera rollgrupper</span><span class="sxs-lookup"><span data-stu-id="87855-161">Use PowerShell to manage role groups</span></span>
 
-### <a name="use-standalone-eop-powershell-to-view-role-groups"></a><span data-ttu-id="02d65-160">Använd fristående EOP PowerShell för att Visa roll grupper</span><span class="sxs-lookup"><span data-stu-id="02d65-160">Use standalone EOP PowerShell to view role groups</span></span>
+### <a name="use-standalone-eop-powershell-to-view-role-groups"></a><span data-ttu-id="87855-162">Använda fristående EOP PowerShell för att visa rollgrupper</span><span class="sxs-lookup"><span data-stu-id="87855-162">Use standalone EOP PowerShell to view role groups</span></span>
 
-<span data-ttu-id="02d65-161">Använd följande syntax för att visa en roll grupp:</span><span class="sxs-lookup"><span data-stu-id="02d65-161">To view a role group, use the following syntax:</span></span>
+<span data-ttu-id="87855-163">Använd följande syntax för att visa en rollgrupp:</span><span class="sxs-lookup"><span data-stu-id="87855-163">To view a role group, use the following syntax:</span></span>
 
 ```PowerShell
 Get-RoleGroup [-Identity "<Role Group Name>"] [-Filter <Filter>]
 ```
 
-<span data-ttu-id="02d65-162">I det här exemplet returneras en sammanfattnings lista över alla roll grupper.</span><span class="sxs-lookup"><span data-stu-id="02d65-162">This example returns a summary list of all role groups.</span></span>
+<span data-ttu-id="87855-164">Det här exemplet returnerar en sammanfattningslista över alla rollgrupper.</span><span class="sxs-lookup"><span data-stu-id="87855-164">This example returns a summary list of all role groups.</span></span>
 
 ```PowerShell
 Get-RoleGroup
 ```
 
-<span data-ttu-id="02d65-163">Det här exemplet returnerar detaljerad information för roll gruppen som heter mottagare.</span><span class="sxs-lookup"><span data-stu-id="02d65-163">This example returns detailed information for the role group named Recipient Administrators.</span></span>
+<span data-ttu-id="87855-165">Det här exemplet returnerar detaljerad information för rollgruppen med namnet Mottagaradministratörer.</span><span class="sxs-lookup"><span data-stu-id="87855-165">This example returns detailed information for the role group named Recipient Administrators.</span></span>
 
 ```PowerShell
 Get-RoleGroup -Identity "Recipient Administrators" | Format-List
 ```
 
-<span data-ttu-id="02d65-164">I det här exemplet returneras alla roll grupper där användaren Julia är medlem.</span><span class="sxs-lookup"><span data-stu-id="02d65-164">This example returns all role groups where the user Julia is a member.</span></span> <span data-ttu-id="02d65-165">Du måste använda värdet för DistinguishedName (DN) för Julia, som du kan söka efter genom att köra kommandot: `Get-User -Identity Julia | Format-List DistinguishedName` .</span><span class="sxs-lookup"><span data-stu-id="02d65-165">You need to use the DistinguishedName (DN) value for Julia, which you can find by running the command: `Get-User -Identity Julia | Format-List DistinguishedName`.</span></span>
+<span data-ttu-id="87855-166">I det här exemplet returneras alla rollgrupper där användaren Julia är medlem.</span><span class="sxs-lookup"><span data-stu-id="87855-166">This example returns all role groups where the user Julia is a member.</span></span> <span data-ttu-id="87855-167">Du måste använda värdet DistinguishedName (DN) för Julia, som du hittar genom att köra kommandot: `Get-User -Identity Julia | Format-List DistinguishedName` .</span><span class="sxs-lookup"><span data-stu-id="87855-167">You need to use the DistinguishedName (DN) value for Julia, which you can find by running the command: `Get-User -Identity Julia | Format-List DistinguishedName`.</span></span>
 
 ```PowerShell
 Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=NAMPR001,DC=PROD,DC=OUTLOOK,DC=COM'"
 ```
 
-<span data-ttu-id="02d65-166">Detaljerad information om syntax och parametrar finns i [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroup).</span><span class="sxs-lookup"><span data-stu-id="02d65-166">For detailed syntax and parameter information, see [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroup).</span></span>
+<span data-ttu-id="87855-168">Detaljerad information om syntax och parametrar finns i [Get-RoleGroup.](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroup)</span><span class="sxs-lookup"><span data-stu-id="87855-168">For detailed syntax and parameter information, see [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroup).</span></span>
 
-### <a name="use-standalone-eop-powershell-to-create-role-groups"></a><span data-ttu-id="02d65-167">Använda fristående EOP PowerShell för att skapa roll grupper</span><span class="sxs-lookup"><span data-stu-id="02d65-167">Use standalone EOP PowerShell to create role groups</span></span>
+### <a name="use-standalone-eop-powershell-to-create-role-groups"></a><span data-ttu-id="87855-169">Använda fristående EOP PowerShell för att skapa rollgrupper</span><span class="sxs-lookup"><span data-stu-id="87855-169">Use standalone EOP PowerShell to create role groups</span></span>
 
-<span data-ttu-id="02d65-168">När du skapar en ny roll grupp kan du konfigurera alla inställningar manuellt (när du skapar gruppen eller efter).</span><span class="sxs-lookup"><span data-stu-id="02d65-168">When you create a new role group, you can configure all of the settings manually (during the creation of the group or after).</span></span> <span data-ttu-id="02d65-169">Eller så kan du kopiera en befintlig roll grupp och ändra den.</span><span class="sxs-lookup"><span data-stu-id="02d65-169">Or, you can copy an existing role group and modify it.</span></span>
+<span data-ttu-id="87855-170">När du skapar en ny rollgrupp kan du konfigurera alla inställningar manuellt (när gruppen eller efter den skapas).</span><span class="sxs-lookup"><span data-stu-id="87855-170">When you create a new role group, you can configure all of the settings manually (during the creation of the group or after).</span></span> <span data-ttu-id="87855-171">Du kan också kopiera en befintlig rollgrupp och ändra den.</span><span class="sxs-lookup"><span data-stu-id="87855-171">Or, you can copy an existing role group and modify it.</span></span>
 
-- <span data-ttu-id="02d65-170">Använd följande syntax för att manuellt skapa en ny roll grupp:</span><span class="sxs-lookup"><span data-stu-id="02d65-170">To manually create a new role group, use the following syntax:</span></span>
+- <span data-ttu-id="87855-172">Om du vill skapa en ny rollgrupp manuellt använder du följande syntax:</span><span class="sxs-lookup"><span data-stu-id="87855-172">To manually create a new role group, use the following syntax:</span></span>
 
   ```PowerShell
   New-RoleGroup -Name "Unique Name" -Description "Descriptive text" -Roles <"Role1","Role2"...>
   ```
 
-  - <span data-ttu-id="02d65-171">Parametern _roles_ anger de hanterings roller som ska tilldelas roll gruppen genom att använda följande syntax `"Role1","Role1",..."RoleN"` .</span><span class="sxs-lookup"><span data-stu-id="02d65-171">The _Roles_ parameter specifies the management roles to assign to the role group by using the following syntax `"Role1","Role1",..."RoleN"`.</span></span> <span data-ttu-id="02d65-172">Du kan se tillgängliga roller med cmdleten **Get-ManagementRole** .</span><span class="sxs-lookup"><span data-stu-id="02d65-172">You can see the available roles by using the **Get-ManagementRole** cmdlet.</span></span>
+  - <span data-ttu-id="87855-173">_Parametern_ Roles anger vilka hanteringsroller som ska tilldelas rollgruppen med hjälp av följande `"Role1","Role1",..."RoleN"` syntax.</span><span class="sxs-lookup"><span data-stu-id="87855-173">The _Roles_ parameter specifies the management roles to assign to the role group by using the following syntax `"Role1","Role1",..."RoleN"`.</span></span> <span data-ttu-id="87855-174">Du kan se tillgängliga roller med hjälp av **cmdleten Get-ManagementRole.**</span><span class="sxs-lookup"><span data-stu-id="87855-174">You can see the available roles by using the **Get-ManagementRole** cmdlet.</span></span>
 
-  - <span data-ttu-id="02d65-173">Parametern _members_ anger medlemmar i roll gruppen genom att använda följande syntax: `"Member1","Member2",..."MemberN"` .</span><span class="sxs-lookup"><span data-stu-id="02d65-173">The _Members_ parameter specifies the members of the role group by using the following syntax: `"Member1","Member2",..."MemberN"`.</span></span> <span data-ttu-id="02d65-174">Du kan ange användare, e-postaktiverade universella säkerhets grupper (USGs) eller andra roll grupper (säkerhets objekt).</span><span class="sxs-lookup"><span data-stu-id="02d65-174">You can specify users, mail-enabled universal security groups (USGs), or other role groups (security principals).</span></span>
+  - <span data-ttu-id="87855-175">_Parametern_ Members anger medlemmarna i rollgruppen genom att använda följande syntax: `"Member1","Member2",..."MemberN"` .</span><span class="sxs-lookup"><span data-stu-id="87855-175">The _Members_ parameter specifies the members of the role group by using the following syntax: `"Member1","Member2",..."MemberN"`.</span></span> <span data-ttu-id="87855-176">Du kan ange användare, e-postaktiverade universal security groups (USGs) eller andra rollgrupper (säkerhetshuvudnamn).</span><span class="sxs-lookup"><span data-stu-id="87855-176">You can specify users, mail-enabled universal security groups (USGs), or other role groups (security principals).</span></span>
 
-  <span data-ttu-id="02d65-175">I det här exemplet skapas en ny roll grupp med namnet "begränsad mottagar hantering" med följande inställningar:</span><span class="sxs-lookup"><span data-stu-id="02d65-175">This example creates a new role group named "Limited Recipient Management" with the following settings:</span></span>
+  <span data-ttu-id="87855-177">I det här exemplet skapas en ny rollgrupp med namnet "Hantering av begränsad mottagare" med följande inställningar:</span><span class="sxs-lookup"><span data-stu-id="87855-177">This example creates a new role group named "Limited Recipient Management" with the following settings:</span></span>
 
-  - <span data-ttu-id="02d65-176">Rollen e-postmottagare är tilldelad roll gruppen.</span><span class="sxs-lookup"><span data-stu-id="02d65-176">The Mail Recipients role is assigned to the role group.</span></span>
+  - <span data-ttu-id="87855-178">Rollen E-postmottagare tilldelas till rollgruppen.</span><span class="sxs-lookup"><span data-stu-id="87855-178">The Mail Recipients role is assigned to the role group.</span></span>
 
-  - <span data-ttu-id="02d65-177">Användare Kim och Martin läggs till som medlemmar.</span><span class="sxs-lookup"><span data-stu-id="02d65-177">The users Kim and Martin are added as members.</span></span>
+  - <span data-ttu-id="87855-179">Användarna Kim och Martin läggs till som medlemmar.</span><span class="sxs-lookup"><span data-stu-id="87855-179">The users Kim and Martin are added as members.</span></span>
 
   ```PowerShell
   New-RoleGroup -Name "Limited Recipient Management" -Roles "Mail Recipients" -Members "Kim","Martin"
   ```
 
-- <span data-ttu-id="02d65-178">Gör så här om du vill kopiera en befintlig roll grupp:</span><span class="sxs-lookup"><span data-stu-id="02d65-178">To copy an existing role group, do the following steps:</span></span>
+- <span data-ttu-id="87855-180">Så här kopierar du en befintlig rollgrupp:</span><span class="sxs-lookup"><span data-stu-id="87855-180">To copy an existing role group, do the following steps:</span></span>
 
-  1. <span data-ttu-id="02d65-179">Lagra den roll grupp som du vill kopiera med hjälp av följande syntax:</span><span class="sxs-lookup"><span data-stu-id="02d65-179">Store the role group that you want to copy in a variable using the following syntax:</span></span>
+  1. <span data-ttu-id="87855-181">Lagra rollgruppen som du vill kopiera i en variabel med följande syntax:</span><span class="sxs-lookup"><span data-stu-id="87855-181">Store the role group that you want to copy in a variable using the following syntax:</span></span>
 
      ```PowerShell
      $RoleGroup = Get-RoleGroup "<Existing Role Group Name>"
      ```
 
-  2. <span data-ttu-id="02d65-180">Skapa den nya roll gruppen med följande syntax:</span><span class="sxs-lookup"><span data-stu-id="02d65-180">Create the new role group using the following syntax:</span></span>
+  2. <span data-ttu-id="87855-182">Skapa den nya rollgruppen med följande syntax:</span><span class="sxs-lookup"><span data-stu-id="87855-182">Create the new role group using the following syntax:</span></span>
 
      ```PowerShell
      New-RoleGroup -Name "<Unique Name>" -Roles $RoleGroup.Roles [-Members <Members>]
      ```
 
-     <span data-ttu-id="02d65-181">Parametern _members_ anger medlemmar i roll gruppen genom att använda följande syntax: `"Member1","Member2",..."MemberN"` .</span><span class="sxs-lookup"><span data-stu-id="02d65-181">The _Members_ parameter specifies the members of the role group by using the following syntax: `"Member1","Member2",..."MemberN"`.</span></span> <span data-ttu-id="02d65-182">Du kan ange användare, e-postaktiverade universella säkerhets grupper (USGs) eller andra roll grupper (säkerhets objekt).</span><span class="sxs-lookup"><span data-stu-id="02d65-182">You can specify users, mail-enabled universal security groups (USGs), or other role groups (security principals).</span></span>
+     <span data-ttu-id="87855-183">_Parametern_ Members anger medlemmarna i rollgruppen genom att använda följande syntax: `"Member1","Member2",..."MemberN"` .</span><span class="sxs-lookup"><span data-stu-id="87855-183">The _Members_ parameter specifies the members of the role group by using the following syntax: `"Member1","Member2",..."MemberN"`.</span></span> <span data-ttu-id="87855-184">Du kan ange användare, e-postaktiverade universal security groups (USGs) eller andra rollgrupper (säkerhetshuvudnamn).</span><span class="sxs-lookup"><span data-stu-id="87855-184">You can specify users, mail-enabled universal security groups (USGs), or other role groups (security principals).</span></span>
 
-     <span data-ttu-id="02d65-183">I det här exemplet kopieras roll gruppen organisations hantering till den nya roll gruppen "begränsad organisations hantering".</span><span class="sxs-lookup"><span data-stu-id="02d65-183">This example copies the Organization Management role group to the new role group named "Limited Organization Management".</span></span> <span data-ttu-id="02d65-184">Medlemmar i roll gruppen är Isabelle, Cartere och Lukas.</span><span class="sxs-lookup"><span data-stu-id="02d65-184">The role group members are Isabelle, Carter, and Lukas.</span></span>
+     <span data-ttu-id="87855-185">I det här exemplet kopieras rollgruppen Organisationshantering till den nya rollgruppen "Begränsad organisationshantering".</span><span class="sxs-lookup"><span data-stu-id="87855-185">This example copies the Organization Management role group to the new role group named "Limited Organization Management".</span></span> <span data-ttu-id="87855-186">Rollgruppmedlemmarna är Isabelle, Bengt och Han.</span><span class="sxs-lookup"><span data-stu-id="87855-186">The role group members are Isabelle, Carter, and Lukas.</span></span>
 
      ```PowerShell
      $RoleGroup = Get-RoleGroup "Organization Management"
      New-RoleGroup "Limited Organization Management" -Roles $RoleGroup.Roles -Members "Isabelle","Carter","Lukas"
      ```
 
-<span data-ttu-id="02d65-185">Detaljerad information om syntax och parametrar finns i [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup).</span><span class="sxs-lookup"><span data-stu-id="02d65-185">For detailed syntax and parameter information, [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup).</span></span>
+<span data-ttu-id="87855-187">För detaljerad information om syntax och [parametrar, New-RoleGroup.](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup)</span><span class="sxs-lookup"><span data-stu-id="87855-187">For detailed syntax and parameter information, [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup).</span></span>
 
-### <a name="use-standalone-eop-powershell-modify-the-list-of-members-in-role-groups"></a><span data-ttu-id="02d65-186">Använda fristående EOP PowerShell ändra listan över medlemmar i roll grupper</span><span class="sxs-lookup"><span data-stu-id="02d65-186">Use standalone EOP PowerShell modify the list of members in role groups</span></span>
+### <a name="use-standalone-eop-powershell-modify-the-list-of-members-in-role-groups"></a><span data-ttu-id="87855-188">Använda fristående EOP PowerShell för att ändra listan över medlemmar i rollgrupper</span><span class="sxs-lookup"><span data-stu-id="87855-188">Use standalone EOP PowerShell modify the list of members in role groups</span></span>
 
-- <span data-ttu-id="02d65-187">Cmdletarna **Add-RoleGroupMember** och **Remove-RoleGroupMember** lägger till eller tar bort enskilda medlemmar ett i taget.</span><span class="sxs-lookup"><span data-stu-id="02d65-187">The **Add-RoleGroupMember** and **Remove-RoleGroupMember** cmdlets add or remove individual members one at a time.</span></span> <span data-ttu-id="02d65-188">Cmdleten **Update-RoleGroupMember** kan ersätta eller ändra befintlig lista över medlemmar.</span><span class="sxs-lookup"><span data-stu-id="02d65-188">The **Update-RoleGroupMember** cmdlet can replace or modify the existing list of members.</span></span>
+- <span data-ttu-id="87855-189">**Cmdlet:arna Add-RoleGroupMember** och **Remove-RoleGroupMember** lägger till eller tar bort enskilda medlemmar en i taget.</span><span class="sxs-lookup"><span data-stu-id="87855-189">The **Add-RoleGroupMember** and **Remove-RoleGroupMember** cmdlets add or remove individual members one at a time.</span></span> <span data-ttu-id="87855-190">Cmdleten **Update-RoleGroupMember** kan ersätta eller ändra den befintliga listan över medlemmar.</span><span class="sxs-lookup"><span data-stu-id="87855-190">The **Update-RoleGroupMember** cmdlet can replace or modify the existing list of members.</span></span>
 
-- <span data-ttu-id="02d65-189">Medlemmar i en roll grupp kan vara användare, e-postaktiverade universella säkerhets grupper (USGs) eller andra roll grupper (säkerhets objekt).</span><span class="sxs-lookup"><span data-stu-id="02d65-189">The members of a role group can be users, mail-enabled universal security groups (USGs), or other role groups (security principals).</span></span>
+- <span data-ttu-id="87855-191">Medlemmar i en rollgrupp kan vara användare, e-postaktiverade universal security groups (USGs) eller andra rollgrupper (säkerhetshuvudnamn).</span><span class="sxs-lookup"><span data-stu-id="87855-191">The members of a role group can be users, mail-enabled universal security groups (USGs), or other role groups (security principals).</span></span>
 
-<span data-ttu-id="02d65-190">Använd följande syntax för att ändra medlemmar i en roll grupp:</span><span class="sxs-lookup"><span data-stu-id="02d65-190">To modify the members of a role group, use the following syntax:</span></span>
+<span data-ttu-id="87855-192">Använd följande syntax för att ändra medlemmar i en rollgrupp:</span><span class="sxs-lookup"><span data-stu-id="87855-192">To modify the members of a role group, use the following syntax:</span></span>
 
 ```PowerShell
 Update-RoleGroupMember -Identity "<Role Group Name>" -Members <Members>
 ```
 
-- <span data-ttu-id="02d65-191">Använd följande syntax för att _ersätta_ den befintliga listan över medlemmar med de värden du anger: `"Member1","Member2",..."MemberN"` .</span><span class="sxs-lookup"><span data-stu-id="02d65-191">To _replace_ the existing list of members with the values you specify, use the following syntax: `"Member1","Member2",..."MemberN"`.</span></span>
+- <span data-ttu-id="87855-193">Använd _följande_ syntax för att ersätta den befintliga listan med medlemmar med de värden du `"Member1","Member2",..."MemberN"` anger:</span><span class="sxs-lookup"><span data-stu-id="87855-193">To _replace_ the existing list of members with the values you specify, use the following syntax: `"Member1","Member2",..."MemberN"`.</span></span>
 
-- <span data-ttu-id="02d65-192">Om du vill _ändra_ den befintliga listan med medlemmar kan du använda följande syntax: `@{Add="Member1","Member2"...; Remove="Member3","Member4"...}` .</span><span class="sxs-lookup"><span data-stu-id="02d65-192">To _selectively modify_ the existing list of members, use the following syntax: `@{Add="Member1","Member2"...; Remove="Member3","Member4"...}`.</span></span>
+- <span data-ttu-id="87855-194">Använd följande syntax _för_ att selektivt ändra den befintliga listan med medlemmar: `@{Add="Member1","Member2"...; Remove="Member3","Member4"...}` .</span><span class="sxs-lookup"><span data-stu-id="87855-194">To _selectively modify_ the existing list of members, use the following syntax: `@{Add="Member1","Member2"...; Remove="Member3","Member4"...}`.</span></span>
 
-<span data-ttu-id="02d65-193">I det här exemplet ersätts alla aktuella medlemmar i roll gruppen supportavdelning med de angivna användarna.</span><span class="sxs-lookup"><span data-stu-id="02d65-193">This example replaces all current members of the Help Desk role group with the specified users.</span></span>
+<span data-ttu-id="87855-195">Det här exemplet ersätter alla aktuella medlemmar i rollgruppen supportavdelning med angivna användare.</span><span class="sxs-lookup"><span data-stu-id="87855-195">This example replaces all current members of the Help Desk role group with the specified users.</span></span>
 
 ```PowerShell
 Update-RoleGroupMember -Identity "Help Desk" -Members "Gabriela Laureano","Hyun-Ae Rim","Jacob Berger"
 ```
 
-<span data-ttu-id="02d65-194">I det här exemplet läggs Daigoro Akai och tas bort från listan med medlemmar i roll gruppen supportavdelning.</span><span class="sxs-lookup"><span data-stu-id="02d65-194">This example adds Daigoro Akai and removes Valeria Barrio from the list of members on the Help Desk role group.</span></span>
+<span data-ttu-id="87855-196">I det här exemplet läggs Daigoro Ario till och Valerie Barrio tas bort från listan över medlemmar i rollgruppen Supportavdelning.</span><span class="sxs-lookup"><span data-stu-id="87855-196">This example adds Daigoro Akai and removes Valeria Barrio from the list of members on the Help Desk role group.</span></span>
 
 ```PowerShell
 Update-RoleGroupMember -Identity "Help Desk" -Members @{Add="Daigoro Akai"; Remove="Valeria Barrios"}
 ```
 
-<span data-ttu-id="02d65-195">Detaljerad information om syntax och parametrar finns i [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember).</span><span class="sxs-lookup"><span data-stu-id="02d65-195">For detailed syntax and parameter information, see [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember).</span></span>
+<span data-ttu-id="87855-197">Detaljerad information om syntax och parametrar finns i [Update-RoleGroupMember.](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember)</span><span class="sxs-lookup"><span data-stu-id="87855-197">For detailed syntax and parameter information, see [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember).</span></span>
 
-### <a name="use-standalone-eop-powershell-to-remove-role-groups"></a><span data-ttu-id="02d65-196">Använd fristående EOP-PowerShell för att ta bort roll grupper</span><span class="sxs-lookup"><span data-stu-id="02d65-196">Use standalone EOP PowerShell to remove role groups</span></span>
+### <a name="use-standalone-eop-powershell-to-remove-role-groups"></a><span data-ttu-id="87855-198">Använda fristående EOP PowerShell för att ta bort rollgrupper</span><span class="sxs-lookup"><span data-stu-id="87855-198">Use standalone EOP PowerShell to remove role groups</span></span>
 
-<span data-ttu-id="02d65-197">Det går inte att ta bort inbyggda roll grupper, men du kan ta bort anpassade roll grupper som du har skapat.</span><span class="sxs-lookup"><span data-stu-id="02d65-197">You can't remove built-in role groups, but you can remove custom role groups that you've created.</span></span>
+<span data-ttu-id="87855-199">Du kan inte ta bort inbyggda rollgrupper, men du kan ta bort anpassade rollgrupper som du har skapat.</span><span class="sxs-lookup"><span data-stu-id="87855-199">You can't remove built-in role groups, but you can remove custom role groups that you've created.</span></span>
 
-<span data-ttu-id="02d65-198">Använd följande syntax för att ta bort en anpassad roll grupp:</span><span class="sxs-lookup"><span data-stu-id="02d65-198">To remove a custom role group, use the following syntax:</span></span>
+<span data-ttu-id="87855-200">Använd följande syntax för att ta bort en anpassad rollgrupp:</span><span class="sxs-lookup"><span data-stu-id="87855-200">To remove a custom role group, use the following syntax:</span></span>
 
 ```PowerShell
 Remove-RoleGroup -Identity "<Role Group Name>" [-BypassSecurityGroupManagerCheck]
 ```
 
-<span data-ttu-id="02d65-199">I det här exemplet tas roll gruppen utbildnings administratörer bort.</span><span class="sxs-lookup"><span data-stu-id="02d65-199">This example removes the Training Administrators role group.</span></span>
+<span data-ttu-id="87855-201">I det här exemplet tas rollgruppen Utbildningsadministratörer bort.</span><span class="sxs-lookup"><span data-stu-id="87855-201">This example removes the Training Administrators role group.</span></span>
 
 ```PowerShell
 Remove-RoleGroup -Identity "Training Administrators"
 ```
 
-<span data-ttu-id="02d65-200">Detaljerad information om syntax och parametrar finns i [Remove-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Remove-RoleGroup).</span><span class="sxs-lookup"><span data-stu-id="02d65-200">For detailed syntax and parameter information, see [Remove-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Remove-RoleGroup).</span></span>
+<span data-ttu-id="87855-202">Detaljerad information om syntax och parametrar finns i [Remove-RoleGroup.](https://docs.microsoft.com/powershell/module/exchange/Remove-RoleGroup)</span><span class="sxs-lookup"><span data-stu-id="87855-202">For detailed syntax and parameter information, see [Remove-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Remove-RoleGroup).</span></span>
 
-### <a name="how-do-you-know-these-procedures-worked"></a><span data-ttu-id="02d65-201">Hur vet jag att de här procedurerna fungerade?</span><span class="sxs-lookup"><span data-stu-id="02d65-201">How do you know these procedures worked?</span></span>
+### <a name="how-do-you-know-these-procedures-worked"></a><span data-ttu-id="87855-203">Hur vet jag att de här procedurerna fungerade?</span><span class="sxs-lookup"><span data-stu-id="87855-203">How do you know these procedures worked?</span></span>
 
-<span data-ttu-id="02d65-202">Om du vill kontrol lera att du har kopierat en roll grupp gör du något av följande:</span><span class="sxs-lookup"><span data-stu-id="02d65-202">To verify that you've successfully copied a role group, do either of the following steps:</span></span>
+<span data-ttu-id="87855-204">Kontrollera att du har kopierat en rollgrupp genom att göra något av följande:</span><span class="sxs-lookup"><span data-stu-id="87855-204">To verify that you've successfully copied a role group, do either of the following steps:</span></span>
 
-- <span data-ttu-id="02d65-203">Gå **till** \> **Administratörs rollerna** i UK och kontrol lera att roll gruppen är listad (eller inte listad).</span><span class="sxs-lookup"><span data-stu-id="02d65-203">In the EAC, go to **Permissions** \> **Admin roles**, and verify the role group is listed (or not listed).</span></span> <span data-ttu-id="02d65-204">Välj roll gruppen och kontrol lera inställningarna i informations fönstret eller klicka på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-EditIcon.png) för att bekräfta inställningarna.</span><span class="sxs-lookup"><span data-stu-id="02d65-204">Select the role group, and verify the settings in the Details pane or click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png) to verify the settings.</span></span>
+- <span data-ttu-id="87855-205">Gå till Behörighetsadministratörsroller i EAC och kontrollera  \> att rollgruppen visas (eller inte visas).</span><span class="sxs-lookup"><span data-stu-id="87855-205">In the EAC, go to **Permissions** \> **Admin roles**, and verify the role group is listed (or not listed).</span></span> <span data-ttu-id="87855-206">Markera rollgruppen och kontrollera inställningarna i informationsfönstret eller klicka på **Redigera** ikon för ![ att verifiera ](../../media/ITPro-EAC-EditIcon.png) inställningarna.</span><span class="sxs-lookup"><span data-stu-id="87855-206">Select the role group, and verify the settings in the Details pane or click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png) to verify the settings.</span></span>
 
-- <span data-ttu-id="02d65-205">I Exchange Online PowerShell ersätter du \<Role Group Name\> namnet på roll gruppen och kör följande kommando för att kontrol lera att roll gruppen finns (eller inte existerar) och verifierar inställningarna:</span><span class="sxs-lookup"><span data-stu-id="02d65-205">In Exchange Online PowerShell, replace \<Role Group Name\> with the name of the role group, and run the following command to verify the role group exists (or doesn't exist) and verify the settings:</span></span>
+- <span data-ttu-id="87855-207">I Exchange Online PowerShell ersätter du med namnet på rollgruppen och kör följande kommando för att verifiera att rollgruppen finns (eller inte finns) och verifiera \<Role Group Name\> inställningarna:</span><span class="sxs-lookup"><span data-stu-id="87855-207">In Exchange Online PowerShell, replace \<Role Group Name\> with the name of the role group, and run the following command to verify the role group exists (or doesn't exist) and verify the settings:</span></span>
 
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List
