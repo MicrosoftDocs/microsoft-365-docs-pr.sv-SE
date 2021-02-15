@@ -30,6 +30,8 @@
       href: model-usage-analytics.md
     - name: Använd termlagringstaxonomi vid skapande av extraktor
       href: leverage-term-store-taxonomy.md
+    - name: Tillgänglighetsläge för SharePoint Syntex
+      href: accessibility-mode.md
 - name: Integrering
   items:
     - name: Komma igång med integrering
