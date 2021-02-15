@@ -18,19 +18,19 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Administratörer kan läsa mer om utvärderingsläget för Microsoft Defender för Office 365
-ms.openlocfilehash: f5ab0b0cd4ef5c2bf1a799043af94a0938a53783
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 6207ae117f06a0e5f10d4a7a47a251137c51df05
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114901"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233585"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Om utvärderingsversionen av Microsoft Defender för Office 365
 
 Microsoft Defender för Office 365 skyddar organisationen mot skadliga hot som medförs av e-postmeddelanden, länkar (URL:er) och samarbetsverktyg. Defender för Office 365 innehåller:
 
 - **Principer för hotskydd**: Definiera skyddsprinciper för hot för att ange rätt skyddsnivå för din organisation.
-- **Rapporter:** Visa rapporter i realtid och övervaka Defender för Office 365-prestanda i organisationen.
+- **Rapporter:** Visa rapporter i realtid för att övervaka Defender för Office 365-prestanda i organisationen.
 - **Funktioner för undersökning av hot och svar**: Använd verktygen för nya funktioner för att undersöka, förstå, simulera och förhindra hot.
 - **Automatiserade funktioner för undersökning och svar**: Spara tid och ansträngning för att undersöka och mildra hot.
 
@@ -41,7 +41,7 @@ En utvärderingsversion av Microsoft Defender för Office 365 är det enklaste s
 
 ## <a name="terms-and-conditions"></a>Villkor
 
-Utvärderingsversionen av Defender för Office 365 finns tillgänglig i 90 dagar och kan initieras för alla dina användare. Mer information finns i [användningsvillkoren för utvärderingsversionen av Microsoft Defender för Office 365.](terms-of-use-defender-for-office-365-trial.md)
+Utvärderingsversionen av Defender för Office 365 finns tillgänglig i 90 dagar och kan initieras för alla dina användare. Mer information finns i villkoren [för utvärderingsversionen av Microsoft Defender för Office 365 & Villkor.](defender-for-office-365-trial-terms-and-conditions.md)
 
 ## <a name="set-up-a-defender-for-office-365-trial"></a>Konfigurera en utvärderingsversion av Defender för Office 365
 

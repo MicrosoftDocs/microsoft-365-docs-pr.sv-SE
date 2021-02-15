@@ -20,12 +20,12 @@ ms.custom:
 description: Administratörer kan ta reda på hur de kan använda Attack Plan för att köra simulerade nätfiske- och lösenordsattacker i sina organisationer med Microsoft 365 E5 eller Microsoft Defender för Office 365 Abonnemang 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 824ee04e2fcf0757a7eb32b48246bf1a1c638926
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 9d3d55c17e5d77ee18bd822899fea2f64136e1a3
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175896"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233606"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>AttackTat In Microsoft Defender för Office 365
 
@@ -35,6 +35,10 @@ ms.locfileid: "50175896"
 
 Om din organisation har Microsoft Defender för Office 365 abonnemang 2, som innehåller funktioner för hotundersökning och [svar,](office-365-ti.md)kan du använda Attack i Säkerhets- & Efterlevnadscenter för att köra realistiska attackscenarier i organisationen. Dessa simulerade attacker kan hjälpa dig att identifiera och hitta sårbara användare innan en verklig attack påverkar din nederkant. Läs den här artikeln om du vill veta mer.
 
+> [!NOTE]
+> AttackTat v1-upplevelsen har bytts till skrivskyddad läge och ersatts av attackutbildningen som beskrivs i Komma igång med utbildning för [attacksimulering.](attack-simulation-training-get-started.md)
+> Möjligheten att starta nya simuleringar från den här webbplatsen har inaktiverats. Du kan dock fortfarande komma åt rapporter för simuleringar från och med den 24 januari 2021 under 90 dagar.
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
 - Gå till <https://protection.office.com/> för att öppna Säkerhets- och efterlevnadscenter. Attackattack är tillgänglig på **Threat Management** \> **Attack administration.** Gå direkt till attack nu, <https://protection.office.com/attacksimulator> öppna.
@@ -43,7 +47,7 @@ Om din organisation har Microsoft Defender för Office 365 abonnemang 2, som inn
 
 - Du måste vara medlem i rollgrupperna **Organisationshantering** **eller Säkerhetsadministratör.** Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
-- Ditt konto måste konfigureras för multifaktorautentisering (MFA) för att skapa och hantera kampanjer i Attack Den här enheten. Instruktioner finns i Konfigurera [multifaktorautentisering.](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)
+- Ditt konto måste konfigureras för multifaktorautentisering (MFA) för att skapa och hantera kampanjer i Attack Attack. Instruktioner finns i Konfigurera [multifaktorautentisering.](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)
 
 - Nätfiskekampanjer samlar in och bearbetar händelser i 30 dagar. Historiska kampanjdata är tillgängliga i upp till 90 dagar efter att du startade kampanjen.
 
@@ -53,7 +57,7 @@ Om din organisation har Microsoft Defender för Office 365 abonnemang 2, som inn
 
 ## <a name="spear-phishing-campaigns"></a>Nätfiskekampanjer
 
-*Nätfiske* är en vanlig term för e-postattacker som försöker stjäla känslig information i meddelanden som verkar komma från legitima eller betrodda avsändare. *Nätfiske* är en riktad nätfiskeattack som använder fokuserat och anpassat innehåll som är specifikt anpassat efter de riktade mottagarna (vanligtvis efterkontroll på mottagarna av attacken).
+*Nätfiske* är en vanlig term för e-postattacker som försöker stjäla känslig information i meddelanden som verkar vara från legitima eller betrodda avsändare. *Nätfiske* är en riktad nätfiskeattack som använder fokuserat och anpassat innehåll som är specifikt anpassat efter de riktade mottagarna (vanligtvis efterkontroll på mottagarna av attacken).
 
 Två olika typer av nätfiskekampanjer är tillgängliga i Attack Det finns två olika typer av nätfiskekampanjer:
 
@@ -86,7 +90,7 @@ Om du ska använda någon av de inbyggda mallarna eller skapa e-postmeddelandet 
 
 1. I Säkerhets- & Säkerhets- och efterlevnadscenter går du **till Attack** för \> **hothantering.**
 
-2. På sidan **Simulera attacker,** i antingen avsnitten **Nätfiske (autentiseringsinloggning)** eller **Nätfiske (bifogad fil),** klickar du **på Attackinformation.**
+2. På sidan **Simulera attacker klickar** du på Attackinformation i något av avsnitten Nätfiske **(information** om nätfiske) eller Nätfiske **(bifogad** **fil).**
 
    Det spelar ingen roll var du skapar mallen. De tillgängliga alternativen i mallen är desamma för båda typerna av nätfiskeattacker.
 
@@ -119,7 +123,7 @@ Om du ska använda någon av de inbyggda mallarna eller skapa e-postmeddelandet 
      >
      > En url-ryktestjänst kan identifiera en eller flera av dessa URL:er som osäkra. Kontrollera url-adressens tillgänglighet i dina webbläsare som stöds innan du använder URL:en i en nätfiskekampanj.
 
-   - **Anpassad webbadress till startsidan:** Ange en valfri landningssida dit användarna tas om de klickar på nätfiskelänken och anger sina autentiseringsuppgifter. Den här länken ersätter standardlandningssidan. Om du till exempel har intern informationsutbildning kan du ange url:en här.
+   - **Anpassad webbadress till startsidan:** Ange en valfri landningssida där användarna tas om de klickar på nätfiskelänken och anger sina autentiseringsuppgifter. Den här länken ersätter standardlandningssidan. Om du till exempel har intern informationsutbildning kan du ange url:en här.
 
    - **Kategori:** Den här inställningen används inte för närvarande (allt du anger ignoreras).
 
@@ -201,9 +205,9 @@ Om du ska använda någon av de inbyggda mallarna eller skapa e-postmeddelandet 
 
    - **Typ av** bifogad fil: Den här inställningen är endast tillgänglig i **kampanjer för nätfiske (bifogad** fil). Klicka på listrutan och **välj. DOCX** eller **. PDF** från listan.
 
-   - **Namn på** bifogad fil: Den här inställningen är endast tillgänglig i kampanjer för **nätfiske (bifogad** fil). Ange ett filnamn för den bifogade filen .docx eller .pdf.
+   - **Namn på** bifogad fil: Den här inställningen är endast tillgänglig i **kampanjer för nätfiske (bifogad** fil). Ange ett filnamn för den bifogade filen .docx eller .pdf.
 
-   - **Anpassad webbadress till startsidan:** Ange en valfri landningssida dit användarna tas om de klickar på nätfiskelänken och anger sina autentiseringsuppgifter. Den här länken ersätter standardlandningssidan. Om du till exempel har intern informationsutbildning kan du ange url:en här.
+   - **Anpassad webbadress till startsidan:** Ange en valfri landningssida där användarna tas om de klickar på nätfiskelänken och anger sina autentiseringsuppgifter. Den här länken ersätter standardlandningssidan. Om du till exempel har intern informationsutbildning kan du ange url:en här.
 
    - **Ämne:** **Ämnesfältet** i e-postmeddelandet.
 
@@ -232,7 +236,7 @@ En *lösenordsattack* försöker gissa lösenord för användarkonton i en organ
 
 I AttackTat finns det två olika typer av lösenordsattackkampanjer som du kan använda för att testa komplexiteten på användarnas lösenord:
 
-- **Råstyrt** lösenord (ordlisteattack)  : En rå kraft- eller ordlisteattack använder en stor ordlistefil med lösenord för ett användarkonto och hoppas att ett av dem fungerar (många lösenord mot ett konto).  Felaktiga lösenordslåsningar hjälper till att avstyra råstyra lösenordsattacker.
+- **Råstyrt** lösenord (ordlisteattack)  : En råstyrt attack eller ordlisteattack använder en stor ordlistefil med lösenord för ett användarkonto och hoppas att en av dem fungerar (många lösenord mot ett konto).  Felaktiga lösenordslåsningar hjälper till att avstyra råstyra lösenordsattacker.
 
   För ordlisteattacken kan du ange ett eller flera lösenord att prova (manuellt angivna eller i en uppladdad fil), och du kan ange en eller flera användare.
 
@@ -241,7 +245,7 @@ I AttackTat finns det två olika typer av lösenordsattackkampanjer som du kan a
   För lösenordsattacken kan du bara ange ett lösenord att prova och du kan ange en eller flera användare.
 
 > [!NOTE]
-> Lösenordsattackerna i Attack Pass användarnamn och lösenord Basic begär till en slutpunkt, så de fungerar även med andra autentiseringsmetoder (AD FS, synkronisering av lösenordshashar, direktuppspelning, PingFederate osv.). För användare som har MFA aktiverat, även om lösenordsattacken försöker med sitt faktiska lösenord, registreras försöket alltid  som ett fel (MFA-användare visas alltså aldrig i antalet lyckade försök för kampanjen). Det här är det förväntade resultatet. MFA är en primär metod för att skydda mot lösenordsattacker.
+> Lösenordsattackerna i Attack Attack Pass användarnamn och lösenord Basic begär till en slutpunkt, så de fungerar även med andra autentiseringsmetoder (AD FS, synkronisering av lösenordshashar, direktuppspelning, PingFederate osv.). För användare som har MFA aktiverat, även om lösenordsattacken försöker med sitt faktiska lösenord, registreras försöket alltid  som ett fel (MFA-användare visas alltså aldrig i antalet lyckade försök för kampanjen). Det här är det förväntade resultatet. MFA är en primär metod för att skydda mot lösenordsattacker.
 
 ### <a name="create-and-launch-a-password-attack-campaign"></a>Skapa och starta en kampanj för lösenordsattack
 
@@ -249,9 +253,9 @@ I AttackTat finns det två olika typer av lösenordsattackkampanjer som du kan a
 
 2. Gör något **av följande** val på sidan Simulera attacker baserat på vilken typ av kampanj du vill skapa:
 
-   - Klicka på Starta attack eller klicka på  Starta attackinformation i avsnittet Råstyrt tvinga lösenord  (Ordlisteattack).  \> 
+   - Klicka på Starta attack eller klicka på  Starta attackinformation i avsnittet Råstyrt tvinga lösenord (Ordlisteattack).   \> 
 
-   - i avsnittet **Lösenordsattack klickar** du på **Starta** attack eller klickar på Starta **attackinformation.** \> 
+   - i avsnittet **Lösenordsattack klickar** du på Starta attack **eller klickar** på **Starta** \> attackinformation. 
 
 3. Guiden **Konfigurera lösenordsattack** startar i en ny utfällklar. Ange ett **unikt** visningsnamn för kampanjen i steget Start och klicka sedan på **Nästa.**
 
@@ -281,7 +285,7 @@ I AttackTat finns det två olika typer av lösenordsattackkampanjer som du kan a
 
 När du har lanserat en kampanj kan du kontrollera förloppet och resultaten på **huvudsidan För simulera attacker.**
 
-Aktiva kampanjer visar ett statusfält, ett slutfört procentvärde och antalet "(slutförda användare) (totalt antal användare)". Om du **klickar på** knappen Uppdatera uppdateras förloppet för alla aktiva kampanjer. Du kan också klicka på **Avbryt** om du vill stoppa en aktiv kampanj.
+Aktiva kampanjer visar ett statusfält, ett slutfört procentvärde och antalet "(slutförda användare) (totalt antal användare)". Om du **klickar på** uppdatera-knappen uppdateras förloppet för alla aktiva kampanjer. Du kan också klicka på **Avbryt** om du vill stoppa en aktiv kampanj.
 
 När kampanjen är klar har statusen ändras till **Attack slutförd.** Du kan visa resultatet av kampanjen genom att göra något av följande:
 
@@ -289,7 +293,7 @@ När kampanjen är klar har statusen ändras till **Attack slutförd.** Du kan v
 
 - På huvudsidan **Simulera attacker** klickar du **på Attackinformation** i avsnittet för typen av attack. Välj **kampanjen i** avsnittet Attackhistorik på sidan Attackinformation **som** öppnas.
 
-Någon av de föregående åtgärderna tar dig till en sida som heter **Attack details.** Informationen som är tillgänglig på den här sidan för varje typ av kampanj beskrivs i följande avsnitt.
+Någon av de föregående åtgärderna tar dig till en sida med **namnet Attackinformation.** Informationen som är tillgänglig på den här sidan för varje typ av kampanj beskrivs i följande avsnitt.
 
 ### <a name="spear-phishing-credentials-harvest-campaign-results"></a>Kampanjresultat för nätfiske (autentiseringsuppgifter)
 

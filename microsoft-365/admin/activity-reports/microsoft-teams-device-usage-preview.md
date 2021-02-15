@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365-rapporter i administrations Center – användning av Microsoft Teams-enheter
+title: Microsoft 365-rapporter i administrationscentret – Enhetsanvändning i Microsoft Teams
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,45 +20,47 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Få insikter i de Microsoft Teams-appar som används i din organisation genom att hämta rapporten Microsoft Teams-programmet användning från Microsoft 365-rapporter.
-ms.openlocfilehash: 928ba7bbe4d4753499e71b347baffafa7441f5b5
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+description: Få inblick i vilka Microsoft Teams-appar som används i organisationen genom att hämta appanvändningsrapporten för Microsoft Teams från Microsoft 365-rapporter.
+ms.openlocfilehash: 54219b060767193e711c839d25780dd3b4a618bf
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988534"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233440"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 365-rapporter i administrations Center – användning av Microsoft Teams-enheter
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 365-rapporter i administrationscentret – Enhetsanvändning i Microsoft Teams
 
-Instrument panelen för Microsoft 365- **rapporter** visar en översikt över produkterna i organisationen. Här kan du gå in på detaljnivå i rapporter för enskilda produkter för att få bättre insikter om aktiviteterna inom varje produkt. Läs [översiktsavsnittet om rapporter](activity-reports.md). I appanvändningsrapporten för Microsoft Teams får du inblick i vilka Microsoft Teams-appar som används inom organisationen.
+Instrumentpanelen Microsoft **365-rapporter** visar en översikt över aktiviteter för produkter i din organisation. Här kan du gå in på detaljnivå i rapporter för enskilda produkter för att få bättre insikter om aktiviteterna inom varje produkt. Läs [översiktsavsnittet om rapporter](activity-reports.md). I appanvändningsrapporten för Microsoft Teams får du inblick i vilka Microsoft Teams-appar som används inom organisationen.
   
 > [!NOTE]
-> Du måste vara global administratör, global läsare eller rapport läsare i Microsoft 365 eller en Exchange-, SharePoint-, teams-tjänst, grupp kommunikation eller Skype för företag-administratör för att se rapporter.  
+> Du måste vara global administratör, global läsare eller rapportläsare i Microsoft 365 eller Exchange-, SharePoint-, Teams-tjänst, Teams Communications- eller Skype för företag-administratör för att kunna se rapporter.  
  
 ## <a name="how-to-get-to-the-microsoft-teams-app-usage-report"></a>Så här visar du appanvändningsrapporten för Microsoft Teams
 
 1. I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>. 
-2. Från instrument panelens start sida klickar du på knappen **Visa mer** på aktivitets kortet för Microsoft Teams.
+2. På startsidan för instrumentpanelen klickar du på **knappen Visa mer** på Microsoft Teams aktivitetskort.
   
 ## <a name="interpret-the-microsoft-teams-app-usage-report"></a>Tolka appanvändningsrapporten för Microsoft Teams
 
-Du kan se vilken enhet som används i Teams-rapporten genom att välja fliken **enhets användning** .<br/>![Microsoft 365-rapporter – enhets användning för Microsoft Teams.](../../media/e46c7f7c-8371-4a20-ae82-b20df64b0205.png)
+Du kan visa enhetens användning i Teams-rapporten genom att välja **fliken Enhetsanvändning.**<br/>![Microsoft 365-rapporter – Enhetsanvändning i Microsoft Teams.](../../media/e46c7f7c-8371-4a20-ae82-b20df64b0205.png)
 
-Välj **Välj kolumner** för att lägga till eller ta bort kolumner i rapporten.  <br/> ![Rapport om Teams-användare – Välj kolumner](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
+Välj **Välj kolumner för** att lägga till eller ta bort kolumner i rapporten.  <br/> ![Rapport om användarenhet för Teams – välj kolumner](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
 
-Du kan också exportera rapport data till en Excel. csv-fil genom att välja **Exportera** -länken. Då exporteras data för alla användare och du kan göra enkel sortering och filtrering för vidare analys. Om du har mindre än 2 000 användare kan du sortera och filtrera i tabellen i själva rapporten. Om du har fler än 2 000 användare måste du exportera data för att kunna filtrera och sortera. 
+Du kan också exportera rapportdata till en CSV-fil för Excel genom att välja **länken** Exportera. Då exporteras data för alla användare och du kan göra enkel sortering och filtrering för vidare analys. Om du har mindre än 2 000 användare kan du sortera och filtrera i tabellen i själva rapporten. Om du har fler än 2 000 användare måste du exportera data för att kunna filtrera och sortera. 
+
+I rapporten **Microsoft Teams enhetsanvändning** visas trender för de senaste 7, 30, 90 eller 180 dagarna. Men om du väljer en viss dag i rapporten visar tabellen (7) data för de senaste 28 dagarna (inte från det datum då rapporten skapades).
   
 |Objekt|Beskrivning|
 |:-----|:-----|
-|**Mät**|**Definition**|
-|Användar namn  <br/> |Användarens visnings namn.  <br/> |
-|Windows  <br/> |Markerad om användaren varit aktiv i Teams-klienten på en Windows-baserad dator.  <br/> |
-|Mac  <br/> |Markerad om användaren varit aktiv i Teams-klienten på en Mac-dator.  <br/> |
-|iOS  <br/> |Markerad om användaren varit aktiv i Teams Mobile-klienten för iOS.  <br/> |
-|Android-telefon  <br/> | Markerad om användaren varit aktiv i Teams-mobilappen för Android.  <br/> |
-|Chrome OS  <br/> |Markerad om användaren varit aktiv i Teams-klienten på en dator.|
-|Linux  <br/> | Markerad om användaren varit aktiv i Teams-klienten på en Linux-dator.  <br/> |
-|Webb  <br/> |Markerad om användaren varit aktiv i Teams-webbklienten på enheter.|
-|Datum för senaste aktivitet (UTC)  <br/> |Det sista datum (UTC) som användaren deltog i en team aktivitet.  <br/> |
-|Är licensierad|Markerad om användaren är licensierad för att använda Teams.|
+|**Metrisk**|**Definition**|
+|Användarnamn  <br/> |Användarens visningsnamn.  <br/> |
+|Windows  <br/> |Väljs om användaren var aktiv i Teams skrivbordsklient på en Windows-baserad dator.  <br/> |
+|Mac  <br/> |Markerad om användaren var aktiv i Teams skrivbordsklient på en macOS-dator.  <br/> |
+|iOS  <br/> |Markerad om användaren var aktiv på Teams mobila klient för iOS.  <br/> |
+|Android-telefon  <br/> | Markerad om användaren var aktiv i Teams mobila klient för Android.  <br/> |
+|Chrome OS  <br/> |Markerad om användaren var aktiv i Teams skrivbordsklient på en ChromeOS-dator.|
+|Linux  <br/> | Väljs om användaren var aktiv i Teams skrivbordsklient på en Linux-dator.  <br/> |
+|Webb  <br/> |Väljs om användaren var aktiv i Teams webbklient på enheter.|
+|Datum för senaste aktivitet (UTC)  <br/> |Det senaste datum (UTC) då användaren deltog i en Teams-aktivitet.  <br/> |
+|Är licensierad|Väljs om användaren är licensierad att använda Teams.|
 |||

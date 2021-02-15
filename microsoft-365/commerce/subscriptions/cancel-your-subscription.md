@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Läs om hur du avbryter utvärderingsversionen av Microsoft 365 för företag eller betalprenumerationen.
 ms.date: ''
-ms.openlocfilehash: 4141de3f1a228f465559212098cf46e68f2844f6
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 5d96b541030646668f636ee09cc3ccc4b43ef75a
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114735"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233346"
 ---
 # <a name="cancel-your-subscription"></a>Avbryt prenumerationen
 
@@ -35,7 +35,7 @@ ms.locfileid: "50114735"
 
 ::: moniker-end
 
-*Kvalificering:* Om du har färre än 25 licenser tilldelade till användare kan du när som helst avbryta utvärderingsversionen av Microsoft 365 för företag eller den betalda prenumerationen online i administrationscentret för Microsoft 365. Om du har fler än 25 licenser tilldelade till användare kan du ringa [supporten för att avbryta prenumerationen.](../../admin/contact-support-for-business-products.md)
+*Kvalificering:* Om du har färre än 25 licenser tilldelade till användare kan du när som helst avbryta utvärderingsversionen av Microsoft 365 för företag eller den betalda prenumerationen online i administrationscentret för Microsoft 365. Om du har fler än 25 licenser tilldelade till användare kan du minska till färre än 25 licenser eller ringa supporten för [att avbryta prenumerationen.](../../admin/contact-support-for-business-products.md)
 
 *Återbetalning:* En prorated kredit återbetalas till dig under nästa faktureringsperiod.
 
@@ -71,7 +71,7 @@ Prenumerationen visas nu som **inaktiverad** och har nedsatt funktionalitet till
 
     ![Close up of the More Actions menu.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
-4. Granska de viktiga datumen, ge feedback om varför du avbryter och välj sedan **Avbryt prenumeration.**
+4. Granska de viktiga datumen, ge feedback om varför du avslutar prenumerationen och välj **sedan Avbryt prenumeration.**
 
     Din prenumeration visas nu som **inaktiverad** och har nedsatt funktionalitet tills den tas bort. Mer information om vad du kan förvänta dig när en betald Microsoft 365 för företag-prenumeration avbryts finns i Vad händer med mina data och åtkomst när min [Microsoft 365](what-if-my-subscription-expires.md) för företag-prenumeration går ut?
 
@@ -87,9 +87,9 @@ Prenumerationen visas nu som **inaktiverad** och har nedsatt funktionalitet till
 
     ![Close up of the More Actions menu.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
-4. Granska de viktiga datumen, ge feedback om varför du avbryter och välj sedan **Avbryt prenumeration.**
+4. Granska de viktiga datumen, ge feedback om varför du avslutar prenumerationen och välj **sedan Avbryt prenumeration.**
 
-    Prenumerationen visas nu som **inaktiverad** och har reducerade funktioner tills den tas bort. Mer information om vad du kan förvänta dig när en betald Microsoft 365 för företag-prenumeration avbryts finns i Vad händer med mina data och åtkomst när min [Microsoft 365](what-if-my-subscription-expires.md) för företag-prenumeration går ut?
+    Prenumerationen visas nu som **inaktiverad** och har nedsatt funktionalitet tills den tas bort. Mer information om vad du kan förvänta dig när en betald Microsoft 365 för företag-prenumeration avbryts finns i Vad händer med mina data och åtkomst när min [Microsoft 365](what-if-my-subscription-expires.md) för företag-prenumeration går ut?
 
 ::: moniker-end
 
@@ -138,7 +138,7 @@ Information om hur du ändrar NS-posterna finns [i Ta bort en domän.](../../adm
 
 ### <a name="save-your-data"></a>Spara dina data
 
-När avslutningen blir effektiv förlorar användarna åtkomsten till sina data. Innan du avbryter prenumerationen be dem spara sina OneDrive för företag- eller SharePoint Online-filer på en annan plats. Kunddata som du lämnar kvar kan tas bort efter 30 dagar och tas bort senast 180 dagar efter uppsägningen.
+När avslutningen blir effektiv förlorar användarna åtkomsten till sina data. Innan du avbryter prenumerationen be dem spara sina OneDrive för företag- eller SharePoint Online-filer på en annan plats. Kunddata som du lämnar kvar kan tas bort efter 30 dagar och tas bort senast 180 dagar efter uppsägning.
 
 - Om du vill flytta e-post, kontakter, uppgifter och kalenderinformation till ett annat konto hittar du information i artikeln om att [exportera eller säkerhetskopiera e-post, kontakter och kalender till en Outlook-datafil (.pst)](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
 

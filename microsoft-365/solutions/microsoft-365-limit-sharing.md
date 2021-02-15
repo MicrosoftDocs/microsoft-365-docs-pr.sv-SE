@@ -19,12 +19,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Lär dig mer om olika alternativ för att begränsa eller inaktivera delning i Microsoft 365.
-ms.openlocfilehash: 504d2b5dd72aead266697d273395e371ad6f5846
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+ms.openlocfilehash: 388d354886805f593b1c7815f16d1e0156e12fe0
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030047"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233536"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Begränsa delning i Microsoft 365
 
@@ -37,7 +37,7 @@ Olika metoder för att dela filer visas i tabellen nedan. Klicka på länken i k
 |[Microsoft 365-grupp eller team](#microsoft-365-group-or-team)|Personer som beviljats åtkomst till ett team i Microsoft Teams eller en grupp i Microsoft 365 har redigeringsbehörighet för filer på den associerade SharePoint-webbplatsen.|Om gruppen eller teamet är privat skickas delningsinbjudningar för att gå med i gruppen till ägaren för godkännande. Administratörer kan inaktivera gäståtkomst eller använda känslighetsetikett för att förhindra åtkomst av personer utanför organisationen.|
 |[SharePoint-webbplats](#sharepoint-site)|Personer kan beviljas åtkomst som ägare, medlem eller besökare till en SharePoint-webbplats, och får samma åtkomstnivå till filer på webbplatsen.|Webbplatsbehörigheter kan begränsas så att bara webbplatsägare kan dela webbplatsen. Administratörer kan ange att en webbplats ska vara skrivskyddad eller blockera åtkomst helt.|
 |[Dela med vissa personer](#sharing-with-specific-people)|Webbplatsmedlemmar och personer med redigeringsbehörighet kan ge direkt behörighet till filer och mappar eller dela dem med hjälp av länkarna *Vissa personer*.|Webbplatsbehörigheter kan begränsas så att bara webbplatsägare kan dela filer och mappar. I det här fallet skickas direkt åtkomst och länkdelning för *Vissa personer* från webbplatsmedlemmar till webbplatsägaren för godkännande.|
-|[Gästdelning i SharePoint](#sharepoint-guest-sharing)|SharePoint-webbplatsägare och -medlemmar kan dela filer och mappar med personer utanför organisationen.|Gästdelning kan inaktiveras för hela organisationen eller för enskilda webbplatser.|
+|[SharePoint- och OneDrive-gästdelning](#sharepoint-guest-sharing)|SharePoint-webbplatsägare och -medlemmar samt OneDrive-ägare kan dela filer och mappar med personer utanför organisationen.|Gästdelning kan inaktiveras för hela organisationen eller för enskilda webbplatser.|
 |[Delningslänkarna *Personer i din organisation*](#people-in-your-organization-sharing-links)|SharePoint-webbplatsägare och -medlemmar kan dela filer genom att använda länkarna *Personer i din organisation* som fungerar för alla inom organisationen.|Länkarna *Personer i din organisation* kan inaktiveras på webbplatsnivå.|
 |[Skapa webbplatser, grupper och teams](#create-sites-groups-and-teams)|Som standard kan användare skapa nya webbplatser, grupper och teams som de kan dela innehåll ifrån.|Administratörer kan begränsa vem som kan skapa webbplatser, grupper och teams.|
 |[E-post](#email)|Personer som har åtkomst till en fil kan skicka den till andra via e-post.|Administratörer kan kryptera filer med hjälp av känslighetsetiketter för att förhindra att de delas med obehöriga personer.|
@@ -107,7 +107,7 @@ Inaktivera åtkomstbegäranden
 Du kan begränsa delning av webbplatser till vissa domäner genom att tillåta eller blockera domäner för den webbplatsen.
 
 Begränsa webbplatsdelning per domän
-1. I administrationscentret för SharePoint, under **Webbplatser** , klickar du på **Aktiva webbplatser**.
+1. I administrationscentret för SharePoint, under **Webbplatser**, klickar du på **Aktiva webbplatser**.
 2. Klicka på den webbplats du vill konfigurera.
 3. Klicka på **Redigera** under **Extern delning** på fliken **Principer**.
 4. Under **Avancerade inställningar för extern delning** väljer du **Begränsa delning per domän**.
@@ -141,7 +141,7 @@ Begränsa delning av webbplatser, filer och mappar till ägare
 Om du vill förhindra att SharePoint- eller OneDrive-filer och -mappar delas med personer utanför organisationen, kan du inaktivera gästdelning för hela organisationen eller för en enskild webbplats.
 
 Inaktivera gästdelning i SharePoint för organisationen
-1. I administrationscentret för SharePoint, under **Principer** , klickar du på **Delning**.
+1. I administrationscentret för SharePoint, under **Principer**, klickar du på **Delning**.
 2. Under **Extern delning** drar du reglaget för SharePoint nedåt till **Endast personer i din organisation**.
 3. Klicka på **Spara**.
 
@@ -149,24 +149,26 @@ Inaktivera gästdelning i SharePoint för organisationen
 
 
 Inaktivera gästdelning för en webbplats
-1. I administrationscentret för SharePoint, under **Webbplatser** , klickar du på **Aktiva webbplatser**.
+1. I administrationscentret för SharePoint, under **Webbplatser**, klickar du på **Aktiva webbplatser**.
 2. Klicka på den webbplats du vill konfigurera.
 3. Klicka på **Redigera** under **Extern delning** på fliken **Principer**.
 4. Under **Extern delning** väljer du **Endast personer i din organisation** och klickar sedan på **Spara**.
 
     ![Skärmbild på SharePoint webbplatsnivå delningsinställningar inställd på Bara personer i egen organisationen](../media/sharepoint-site-external-sharing-settings-off.png)
 
+Du kan inaktivera gästdelning för en enskild OneDrive genom att klicka på användaren i administrationscentret för Microsoft 365 och välja **Hantera extern delning** på fliken **OneDrive**.
+
 Om du vill tillåta delning med personer utanför organisationen, men du vill vara säker på att alla autentiseras, kan du inaktivera länkarna *Alla* (anonym delning) för hela organisationen eller för en enskild webbplats.
 
 Inaktivera länkarna *Alla* på organisationsnivå
-1. I administrationscentret för SharePoint, under **Principer** , klickar du på **Delning**.
+1. I administrationscentret för SharePoint, under **Principer**, klickar du på **Delning**.
 2. Under **Extern delning** drar du reglaget för SharePoint nedåt till **Nya och befintliga gäster**.
 3. Klicka på **Spara**.
 
     ![Skärmbild på delningsinställningar för SharePoint på organisationsnivå inställd på Nya och nuvarande gäster](../media/sharepoint-guest-sharing-new-existing-guests.png)
 
-Inaktivera *Alla* -länkar för en webbplats
-1. I administrationscentret för SharePoint, under **Webbplatser** , klickar du på **Aktiva webbplatser**.
+Inaktivera *Alla*-länkar för en webbplats
+1. I administrationscentret för SharePoint, under **Webbplatser**, klickar du på **Aktiva webbplatser**.
 2. Klicka på den webbplats du vill konfigurera.
 3. Klicka på **Redigera** under **Extern delning** på fliken **Principer**.
 4. Under **Extern delning** väljer du **Nya och befintliga gäster** och klickar sedan på **Spara**.
@@ -177,11 +179,15 @@ Inaktivera *Alla* -länkar för en webbplats
 
 Som standard kan medlemmar på en webbplats dela filer och mappar med andra personer i din organisation genom att använda länken *Personer i din organisation*. Du kan inaktivera länkarna *Personer i din organisation* genom att använda PowerShell:
 
-`Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks`
+```powershell
+Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks
+```
 
 Till exempel:
 
-`Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks`
+```powershell
+Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks
+```
 
 ## <a name="create-sites-groups-and-teams"></a>Skapa webbplatser, grupper och teams
 
@@ -190,7 +196,8 @@ Som standard kan användare skapa nya webbplatser, grupper och teams som de kan 
 - [Hantera webbplatsskapande i SharePoint](https://docs.microsoft.com/sharepoint/manage-site-creation)
 - [Hantera vilka som kan skapa Microsoft 365 Grupper](https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups)
 
-Observera att begränsande av grupper hindrar teamskapande.
+> [!NOTE]
+> Begränsning av skapandet av grupper hindrar teamskapande.
 
 ## <a name="email"></a>E-post
 

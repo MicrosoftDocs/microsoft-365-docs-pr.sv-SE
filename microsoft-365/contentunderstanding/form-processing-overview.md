@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Läs mer om formulärbearbetning i Microsoft SharePoint Syntex
-ms.openlocfilehash: 9a979e0f7e45694f1cc7f98bbe2012c773698297
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 4a6ecc9e6eaca6f0b61f8c04b67eabb29674f6bd
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976489"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242452"
 ---
 # <a name="form-processing-overview"></a>Översikt av formulär bearbetning
 
@@ -41,6 +41,10 @@ Du använder exempelfiler för att träna modellen och definiera vilken informat
 När du har tränat och publicerat modellen skapar modellen ett [Power Automate-flöde](https://docs.microsoft.com/power-automate/getting-started). Flödet körs när en fil överförs till dokumentbiblioteket i SharePoint och hämtar data som har identifierats av modellen. Extraherade data visas i kolumner i modellens dokumentbiblioteksvy.
 
 En Office 365-administratör måste [aktivera formulärbearbetning](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding#to-set-up-content-understanding) för SharePoint-dokumentbiblioteket för att användarna ska kunna [skapa en modell för formulärbearbetning](create-a-form-processing-model.md) i det. Du kan välja webbplatser under eller efter konfigurationen i dina hanteringsinställningar.
+
+### <a name="file-limitations"></a>Filbegränsningar
+
+När du använder formulärbearbetningsmodeller ska du observera [kraven och begränsningar för filanvändningen](https://docs.microsoft.com/ai-builder/form-processing-model-requirements).
 
 
 

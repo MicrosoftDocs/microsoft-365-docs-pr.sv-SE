@@ -6,7 +6,6 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: m365-security
 ms.topic: article
-ms.date: 09/29/2020
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -19,22 +18,22 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 2b72152b94d7bea85d92f86f16bdb27ffe541ebc
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 0f6e3d7bef0f09dc922a7c1878e6ea7ce0aad3d7
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150802"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233158"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationer av identiteter och enhetsåtkomst
 
 **Gäller för**
 - [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 abonnemang 1 och abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
-Organisationens moderna säkerhetsområde omfattar nu mer än nätverket och inkluderar användare som använder molnbaserade appar från valfri plats med olika enheter. Din säkerhetsinfrastruktur måste fastställa om en viss åtkomstbegäran ska beviljas och under vilka villkor.
+Organisationens moderna säkerhetsområde omfattar nu mer än ditt nätverk så att användare kan komma åt molnbaserade appar från valfri plats med olika enheter. Din säkerhetsinfrastruktur måste fastställa om en viss åtkomstbegäran ska beviljas och under vilka villkor.
 
-Det här avgörandet bör baseras på inloggningens användarkonto, vilken enhet som används, vilken app som användaren använder för åtkomst, den plats som åtkomstbegäran görs från och en bedömning av risken för begäran. Denna funktion hjälper till att säkerställa att endast godkända användare och enheter kan komma åt dina kritiska resurser.
+Det här avgörandet bör baseras på inloggningens användarkonto, vilken enhet som används, vilken app som användaren använder för åtkomst, platsen som åtkomstbegäran görs från och en bedömning av risken för begäran. Denna funktion hjälper till att säkerställa att endast godkända användare och enheter kan komma åt dina kritiska resurser.
 
 Den här serien med artiklar beskriver en uppsättning konfigurationer med identiteter och enhetsåtkomst, samt villkorsstyrd åtkomst i Azure Active Directory (Azure AD), Microsoft Intune och andra principer för säker åtkomst till Microsoft 365 för företagsmolnappar och -tjänster, andra SaaS-tjänster och lokala program som publiceras med Azure AD Application Proxy.
 
@@ -47,6 +46,11 @@ Dessa funktioner och deras rekommendationer:
 - Hjälper dig att implementera de här [fem stegen för att skydda din identitetsinfrastruktur.](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)
 
 Om organisationen har unika miljökrav eller komplexitet kan du använda de här rekommendationerna som utgångspunkt. Men de flesta organisationer kan implementera dessa rekommendationer som bestämts.
+
+Titta på den här videon för en snabb överblick över identitets- och enhetsåtkomstkonfigurationer för Microsoft 365 för företag.
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxEDQ]
 
 > [!NOTE]
 > Microsoft säljer även Enterprise Mobility + Security -licenser (EMS) för Office 365-abonnemang. EMS E3- och EMS E5-funktionerna motsvarar funktionerna i Microsoft 365 E3 och Microsoft 365 E5. Mer [information finns i EMS-abonnemang.](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing)
@@ -79,7 +83,7 @@ Varje bransch har också en egen uppsättning särskilda bestämmelser. I ställ
 - **Känsligt** skydd : Vissa kunder har en delmängd data som måste skyddas på högre nivåer, eller så kan de kräva att alla data skyddas på en högre nivå. Du kan tillämpa ett bättre skydd på alla eller vissa datauppsättningar i Din Microsoft 365-miljö. Vi rekommenderar att du skyddar identiteter och enheter som använder känsliga data med liknande säkerhetsnivåer.
 - **Mycket reglerad**: Vissa organisationer kan ha en liten mängd data som klassificeras i hög grad, utgör affärshemligheter eller är reglerade data. Microsoft tillhandahåller funktioner som hjälper organisationer att uppfylla dessa krav, inklusive ytterligare skydd för identiteter och enheter.
 
-![Säkerhetskoner – alla kunder > vissa > specifika kunder. Bred applikation på ett visst program](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
+![Säkerhetskoner – alla kunder > vissa > specifika kunder. Bred tillämpning på ett visst program](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
 
 Den här vägledningen visar hur du implementerar skydd för identiteter och enheter för var och en av dessa nivåer av skydd. Använd den här vägledningen som utgångspunkt för din organisation och justera principerna så att de uppfyller organisationens specifika krav.
 
@@ -89,9 +93,9 @@ Det är viktigt att använda konsekventa skyddsnivåer för dina data, identitet
 
 [![Thumb-bild för Identitet och enhetsskydd för Microsoft 365-affisch](../../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [Visa som PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Ladda ned som PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Ladda ned som Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
 
-Mer information finns i artikeln Om att distribuera informationsskydd för en lösning för datasekretessföreskrifter för att skydda information som lagras i Microsoft 365. [](../../solutions/information-protection-deploy.md)
+Läs även artikeln Distribuera [informationsskydd för lösningen för datasekretessföreskrifter](../../solutions/information-protection-deploy.md) för att skydda information som lagras i Microsoft 365.
 
-## <a name="security-and-productivity-trade-offs"></a>Byte av säkerhet och produktivitet
+## <a name="security-and-productivity-trade-offs"></a>Avslut av säkerhet och produktivitet
 
 För att implementera en säkerhetsstrategi krävs förseningar mellan säkerhet och produktivitet. Det är bra att utvärdera hur varje beslut påverkar balans i säkerhet, funktion och enkelhet.
 
@@ -106,7 +110,7 @@ Rekommendationerna baseras på följande principer:
 
 Microsoft 365 för företag har utformats för stora organisationer för att alla ska kunna vara kreativa och arbeta säkert tillsammans.
 
-Det här avsnittet innehåller en översikt över De Microsoft 365-tjänster och -funktioner som är viktiga för identiteter och enhetsåtkomst.
+Det här avsnittet innehåller en översikt över De Microsoft 365-tjänster och funktioner som är viktiga för identiteter och enhetsåtkomst.
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -114,8 +118,8 @@ Azure AD ger en komplett uppsättning identitetshanteringsfunktioner. Vi rekomme
 
 |Resurs eller funktion|Beskrivning|Licensiering|
 |---|---|---|
-|[Multifaktorautentisering (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA kräver att användare anger två typer av verifiering, till exempel ett användarlösenord plus ett meddelande från Microsoft Authenticator-appen eller ett telefonsamtal. MFA minskar kraftigt risken för att stulna autentiseringsuppgifter kan användas för att komma åt din miljö. Microsoft 365 använder Tjänsten Azure AD Multi-Factor Authentication för MFA-baserade inloggningar.|Microsoft 365 E3 eller E5|
-|[Villkorsstyrd åtkomst](/azure/active-directory/conditional-access/overview)|Azure AD utvärderar villkoren för användarens inloggning och använder villkorsstyrda åtkomstprinciper för att fastställa tillåten åtkomst. I den här vägledningen visar vi till exempel hur du skapar en princip för villkorsstyrd åtkomst för att kräva enhetsefterlevnad för åtkomst till känsliga data. Det här minskar kraftigt risken att en hackare med sin egen enhet och stulna autentiseringsuppgifter kan komma åt känsliga data. Den skyddar även känslig information på enheterna eftersom enheterna måste uppfylla särskilda hälso- och säkerhetskrav.|Microsoft 365 E3 eller E5|
+|[Multifaktorautentisering (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA kräver att användare anger två typer av verifiering, till exempel ett användarlösenord plus en avisering från Microsoft Authenticator-appen eller ett telefonsamtal. MFA minskar kraftigt risken för att stulna autentiseringsuppgifter kan användas för att komma åt din miljö. Microsoft 365 använder Tjänsten Azure AD Multi-Factor Authentication för MFA-baserade inloggningar.|Microsoft 365 E3 eller E5|
+|[Villkorsstyrd åtkomst](/azure/active-directory/conditional-access/overview)|Azure AD utvärderar villkoren för användarens inloggning och använder villkorsstyrda åtkomstprinciper för att fastställa tillåten åtkomst. I den här vägledningen visar vi till exempel hur du skapar en princip för villkorsstyrd åtkomst för att kräva enhetsefterlevnad för åtkomst till känsliga data. Det här minskar kraftigt risken att en hackare med sin egen enhet och stulna autentiseringsuppgifter kan komma åt känsliga data. Den skyddar även känslig information på enheterna, eftersom enheterna måste uppfylla särskilda hälso- och säkerhetskrav.|Microsoft 365 E3 eller E5|
 |[Azure AD-grupper](/azure/active-directory/fundamentals/active-directory-manage-groups)|Villkorsstyrda åtkomstprinciper, enhetshantering med Intune och till och med behörigheter till filer och webbplatser i organisationen är beroende av tilldelning till användarkonton eller Azure AD-grupper. Vi rekommenderar att du skapar Azure AD-grupper som motsvarar de skyddsnivåer som du implementerar. Din personal har till exempel sannolikt högre värdemål för hackare. Därför är det vettigt att lägga till användarkonton för dessa anställda i en Azure AD-grupp och tilldela den här gruppen till villkorsstyrda åtkomstprinciper och andra principer som upprätthåller en högre skyddsnivå för åtkomst.|Microsoft 365 E3 eller E5|
 |[Enhetsregistrering](/azure/active-directory/devices/overview)|Du registrerar en enhet i Azure AD för att skapa en identitet för enheten. Den här identiteten används för att autentisera enheten när en användare loggar in och för att använda villkorsstyrda åtkomstprinciper som kräver en domän ansluten eller kompatibel dator. För den här vägledningen använder vi enhetsregistrering för att automatiskt registrera domän sammanskrivna Windows-datorer. Enhetsregistrering krävs för att hantera enheter med Intune.|Microsoft 365 E3 eller E5|
 |[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|Gör att du kan upptäcka potentiella svagheter som påverkar organisationens identiteter och konfigurera en automatiserad åtgärdspolicy till låg, medelstor och hög inloggningsrisk och användarrisk. Det här vägledningen bygger på den här riskutvärderingen för att tillämpa villkorsstyrda åtkomstprinciper för multifaktorautentisering. Den här vägledningen innehåller också en princip för villkorsstyrd åtkomst som kräver att användarna ändrar sitt lösenord om högriskaktivitet identifieras för deras konto.|Microsoft 365 E5, Microsoft 365 E3 med licenserna Identity & Threat Protection, EMS E5 eller Azure Premium P2|
@@ -151,7 +155,7 @@ I den här vägledningen visas hur du implementerar en uppsättning principer f�
 
 ### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Windows 10 och  Microsoft 365-appar för företag
 
-Windows 10 med Microsoft 365-appar för företag är den rekommenderade klientmiljön för DATORER. Vi rekommenderar Windows 10 eftersom Azure har utformats för att ge bästa möjliga upplevelse för både lokal och Azure AD. Windows 10 innehåller också avancerade säkerhetsfunktioner som kan hanteras via Intune. Microsoft 365-appar för företag innehåller de senaste versionerna av Office-programmen. De använder modern autentisering, som är säkrare och ett krav för villkorsstyrd åtkomst. De här apparna innehåller även förbättrade säkerhets- och efterlevnadsverktyg.
+Windows 10 med Microsoft 365-appar för företag är den rekommenderade klientmiljön för DATORER. Vi rekommenderar Windows 10 eftersom Azure har utformats för att ge bästa möjliga upplevelse för både lokal och Azure AD. Windows 10 innehåller även avancerade säkerhetsfunktioner som kan hanteras via Intune. Microsoft 365-appar för företag innehåller de senaste versionerna av Office-programmen. De använder modern autentisering, som är säkrare och ett krav för villkorsstyrd åtkomst. De här apparna innehåller även förbättrade säkerhets- och efterlevnadsverktyg.
 
 ## <a name="applying-these-capabilities-across-the-three-tiers-of-protection"></a>Tillämpa de här funktionerna på de tre skyddsnivåerna
 
@@ -162,7 +166,7 @@ I följande tabell sammanfattas våra rekommendationer om hur du använder de h�
 |**Framtvinga MFA**|På medelhög eller över inloggningsrisk|Vid låg eller över inloggningsrisk|På alla nya sessioner|
 |**Tillämpa lösenordsändring**|För högriskanvändare|För högriskanvändare|För högriskanvändare|
 |**Tillämpa Intune-programskydd**|Ja|Ja|Ja|
-|**Framtvinga Intune-registrering för organisationsägda enheter**|Kräv en kompatibel eller domän ansluten dator, men tillåt ta med egna enheter (BYOD) telefoner och surfplattor|Kräv en kompatibel eller domän ansluten enhet|Kräv en kompatibel eller domän ansluten enhet|
+|**Framtvinga Intune-registrering för en organisationsägd enhet**|Kräv en kompatibel eller domän ansluten dator, men tillåt ta med egna enheter (BYOD) telefoner och surfplattor|Kräv en kompatibel eller domän ansluten enhet|Kräv en kompatibel eller domän ansluten enhet|
 |
 
 ## <a name="device-ownership"></a>Enhetsägarskap

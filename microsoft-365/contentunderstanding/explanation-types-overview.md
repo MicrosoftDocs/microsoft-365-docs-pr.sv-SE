@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Mer information om olika typer av förklaringar i Microsoft SharePoint Syntex
-ms.openlocfilehash: 2c2997fd165339cc43f7f007050f343794021a23
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: caba92b635feaf8f87e2c487559f70be3fab6df9
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080612"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242625"
 ---
 # <a name="introduction-to-explanation-types"></a>Introduktion till förklaringstyper
 
@@ -147,13 +147,11 @@ I visningsprogrammet kan du manuellt justera urvalsrutan så att den inkluderar 
    ![Anpassat intervall](../media/content-understanding/custom-file.png)</br>
 I visningsprogrammet kan du manuellt justera urvalsrutan så att den inkluderar platsen där fasen inträffar. För den här inställningen måste du välja en <b>start</b>- och en <b>slut</b>position. De här värdena representerar antalet tokens från början av dokumentet. Även om du kan ange dessa värden manuellt är det enklare att justera urvalsrutan i visningsprogrammet manuellt.</br> 
    
-
-
 ## <a name="use-explanation-templates"></a>Använda förklaringsmallar
 
-Även om du kan lägga till olika mönsterlistvärden för dina förklaringar manuellt kan det vara mycket enklare att använda de färdiga mallar som har skapats åt dig i förklaringsbiblioteket.
+Medan du manuellt kan lägga till olika fraslistvärden för din förklaring kan det vara lättare att använda mallarna som du har fått i förklaringsbiblioteket.
 
-I stället för att exempelvis manuellt lägga till alla variationer för *Datum* kan du använda mönsterlistmallen för *Datum*, som redan har ett antal mönsterlistvärden:</br>
+Till exempel, istället för att manuellt lägga till alla variationer för *Datum*, kan du använda fraslistmallen för *Datum* eftersom den redan innehåller ett antal värden för fraslistor:</br>
 
    ![Förklaringsbiblioteket](../media/content-understanding/explanation-template.png)</br>
  
@@ -163,27 +161,51 @@ I förklaringsbiblioteket finns flera vanliga förklaringar för mönsterlistor,
 - Datum (numeriskt)</br>
 - Tid</br>
 - Siffra</br>
+- Procentsats</br>
 - Telefonnummer</br>
 - Postnummer</br>
 - Första ord i mening</br>
+- Slutet av meningen</br>
 - Kontokort</br>
 - Personnummer</br>
+- Kryssruta</br>
+- Valuta</br>
+- Skicka e-post till CC</br>
+- E-postdatum</br>
+- E-posthälsning</br>
+- E-postmottagare</br>
+- E-postavsändare</br>
+- Ämne för e-post</br>
 
-Observera att förklaringsbiblioteket även innehåller mallar för fraslistförklaringar:
-- Slutet av meningen
-- Valuta
+I förklaringsbiblioteket finns också tre automatiska malltyper som fungerar med de data som du har märkt i exempelfilerna:
 
+- Efter etikett: De ord eller tecken som förekommer efter etiketterna i exempelfilerna.</br>
+- Före etikett: De ord eller tecken som förekommer före etiketterna i exempelfilerna.</br>
+- Etiketter: Upp till de första 10 etiketterna från exempelfilerna.</br>
+
+Om du vill ge dig ett exempel på hur automatiska mallar fungerar, i följande exempelfil, kommer vi att använda förklaringsmallen före etikett för att ge modellen mer information för att få en mer exakt matchning.
+
+   ![Exempelfil](../media/content-understanding/before-label.png)</br>
+
+När du väljer mallen Före etikettförklaring letar den efter den första uppsättningen ord som visas före etiketten i dina exempelfiler. I exemplet är orden som identifierats i den första exempelfilen "Från och med".
+
+   ![Före etikettmall](../media/content-understanding/before-label-explanation.png)</br>
+
+Du kan välja <b>Lägg</b> om du vill skapa en förklaring från mallen.  När du lägger till fler exempelfiler identifieras och läggs ytterligare ord till i fraslistan.
+
+   ![Lägga till etiketten](../media/content-understanding/before-label-add.png)</br>
+ 
 #### <a name="to-use-a-template-from-the-explanation-library"></a>Använda en mall från förklaringsbiblioteket
 
 1. Välj **Ny** i avsnittet **Förklaringar** på modellens sida **Träna** och välj **Från en mall**.</br>
 
-   ![Skapa från mall](../media/content-understanding/from-template.png)</br>
+   ![Lägg till före etikett](../media/content-understanding/from-template.png)</br>
 
 2.  På sidan **Förklaringsmallar** väljer du den förklaring du vill använda och väljer sedan **Lägga till**.</br>
 
        ![Välj en mall](../media/content-understanding/phone-template.png)</br>
 
-3. Informationen för den mall som du valde visas på sidan **Skapa en förklaring**. Om det behövs kan du redigera namnet på förklaringen och lägga till eller ta bort objekt från mönsterlistan. </br> 
+3. Informationen för den mall som du valde visas på sidan **Skapa en förklaring**. Om det behövs kan du redigera namnet på förklaringen och lägga till eller ta bort objekt från fraslistan. </br> 
 
    ![Redigera mall](../media/content-understanding/phone-template-live.png)</br>
 
