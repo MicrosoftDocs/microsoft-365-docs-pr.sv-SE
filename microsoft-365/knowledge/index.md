@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-topics
 localization_priority: None
 description: Lär dig hur du hittar resurser för Microsoft Viva-ämnen.
-ms.openlocfilehash: 3e75dfcfa17e5604e04b6f5e49be9019b1679110
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: d5c54bda3432fc9a1ff5ce4342cc523544eb6e78
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107176"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242872"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Introduktion till Microsoft Viva-ämnen
 
@@ -42,9 +42,12 @@ Resurserna i det här avsnittet hjälper dig att lära dig mer om viva-ämnen oc
 |Läs mer om Viva-ämnen|[Översikt över Microsoft Viva-ämnen](topic-experiences-overview.md)|
 |Lär dig hur ämnen upptäcks och föreslås av AI|[Upptäckt av Microsoft Viva Topics](topic-experiences-discovery.md)|
 |Läs mer om ämnessäkerhet|[Säkerhet och sekretess för Microsoft Viva](topic-experiences-security-privacy.md)|
+|Lär dig hur du hämtar Viva-ämnen|[Microsoft Viva Topics-produktsida](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
+|Se resurser i Microsoft Tech Community Resurscenter|[Microsoft Viva Topics Tech Community](https://resources.techcommunity.microsoft.com/viva-topics/)|
 
 
-## <a name="adoption"></a>Integrering
+
+## <a name="adoption"></a>Införande
 
 Läs mer om hur du använder och implementerar Viva-ämnen i din organisation för att hjälpa dig att lösa dina företagsproblem: 
 
@@ -61,7 +64,7 @@ Resurserna i det här avsnittet hjälper administratören i organisationen att k
 |Lär dig hur du konfigurerar Microsoft Viva|[Konfigurera Microsoft Viva](set-up-topic-experiences.md)|
 |Lär dig hur du konfigurerar användarbehörigheter|[Hantera ämnesbehörigheter](topic-experiences-user-permissions.md)|
 |Lär dig hur du hanterar vem som kan visa ämnen|[Hantera ämnes synlighet](topic-experiences-knowledge-rules.md)|
-|Lär dig hur du hanterar inställningar för identifiering av ämnen|[Hantera ämnesidentifiering](topic-experiences-discovery.md)|
+|Lär dig hur du hanterar inställningar för ämnesidentifiering|[Hantera ämnesidentifiering](topic-experiences-discovery.md)|
 
 ## <a name="work-with-topics"></a>Arbeta med ämnen
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Lär dig hur du hittar resurser för Microsoft SharePoint Syntex.
-ms.openlocfilehash: 02f3da4e03d13b0710590336e49292ac6df70560
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 21dc0e29e9322b4c009b0f1e63b7bfbc4b92da9a
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044762"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242706"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Introduktion till Microsoft SharePoint-Syntex
 
@@ -45,8 +45,8 @@ Resurserna i det här avsnittet hjälper dig att lära dig mer om de två metode
 |Läs mer om dokumenttolkning|[Översikt för dokumenttolkning](https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview)|
 |Läs mer om formulärbearbetning|[Översikt för formulärbearbetning](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)|
 |Förstå skillnaderna mellan de två metoderna|[Skillnad mellan modeller för dokumenttolkning och formulärbearbetning](https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
-|Se resurser i Microsoft Tech Community Resurscenter|[SharePoint Syntex – Innehållstjänster i Microsoft 365](https://resources.techcommunity.microsoft.com/sharepoint-syntex/)|
-|Vanliga frågor om SharePoint Syntex i Microsoft Tech Community Resurscenter |[SharePoint Syntex – Vanliga frågor](https://resources.techcommunity.microsoft.com/project-cortex-microsoft-365/faq/)|
+|Se resurser i Microsoft Tech Community Resurscenter|[SharePoint Syntex – Innehållstjänster i Microsoft 365](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
+|Vanliga frågor om SharePoint Syntex i Microsoft Tech Community Resurscenter |[SharePoint Syntex – Vanliga frågor](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
 |Att skaffa SharePoint Syntex |[Produktsida för SharePoint Syntex](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
 
 ## <a name="adoption"></a>Integrering
@@ -76,6 +76,7 @@ Resurserna i det här avsnittet hjälper dina användare att lära sig skapa och
 |Applicera en kvarhållningsetikett för din modell|[Använda kvarhållningsetiketter på modeller för dokumenttolkning](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)|
 |Använd Hanterade Metadata-tjänster för termlagringstaxonomi vid skapande av en extraherare|[Använd termlagringstaxonomi vid skapande av extraherare](https://docs.microsoft.com/microsoft-365/contentunderstanding/leverage-term-store-taxonomy)|
 |Lär dig hur du kan se data om dina modeller|[Modell för användningsanalys](https://docs.microsoft.com/microsoft-365/contentunderstanding/model-usage-analytics)|
+|Lär dig hur du använder tillgänglighetsläge när du tränar en modell|[Tillgänglighetsläge för SharePoint Syntex ](https://docs.microsoft.com/microsoft-365/contentunderstanding/accessibility-mode)|
 
 ## <a name="premium-services"></a>Premiumtjänster
 

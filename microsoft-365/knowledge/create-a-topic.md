@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 35d4615057deee81285ba950a157f28160b6eefa
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 2b543dbc8132f261814aec45e713874971b9b5d1
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107306"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242896"
 ---
 # <a name="create-a-new-topic"></a>Skapa ett nytt ämne 
 
@@ -38,7 +38,19 @@ Om du vill skapa ett nytt ämne måste du:
 > [!Note] 
 > Användare som har behörighet att hantera ämnen i ämnescentret (knowledge managers) har redan behörighet att skapa och redigera ämnen.
 
-## <a name="to-create-a-new-topic"></a>Så här skapar du ett nytt ämne:
+## <a name="to-create-a-topic"></a>Så här skapar du ett ämne
+
+Du kan skapa ett nytt ämne från två platser:
+
+- Startsidan för Ämnescenter: Alla  licensierade användare med behörigheten Vem kan skapa eller redigera ämnen (deltagare) kan skapa ett nytt ämne från ämnescentret genom att välja menyn Nytt och sedan välja <b>Sidan Ämne.</b> <b></b></br> 
+
+    ![Nytt ämne från ämnescenter](../media/knowledge-management/new-topic.png) </br> 
+
+- Sidan Hantera ämnen: Alla licensierade användare som har behörigheten Vem kan hantera ämnen (knowledge managers) kan skapa ett nytt ämne från sidan Hantera ämnen i Ämnescenter genom att välja <b>Sidan Nytt ämne.</b> </br> 
+
+    ![Nytt ämne från att hantera ämnen](../media/knowledge-management/new-topic-topic-center.png) </br> 
+
+### <a name="to-create-a-new-topic"></a>Så här skapar du ett nytt ämne:
 
 1. I avsnittet **Namnge det här** avsnittet skriver du namnet på det nya avsnittet.
 
@@ -52,7 +64,7 @@ Om du vill skapa ett nytt ämne måste du:
 
     ![Beskrivning av ämnet](../media/knowledge-management/description.png)</br>
 
-4. I avsnittet <b>Fästa personer kan</b> du fästa en person för att visa personen som ämnesexpert i ämnet. Börja med att skriva in <b></b> användarens namn eller e-postadress i rutan lägg till en ny användare och välj sedan den användare du vill lägga till i sökresultatet. Du kan också "ta bort" dem genom att välja ikonen Ta bort <b>från listan</b> på användarkortet. Du kan också dra personen för att ändra ordningen som listan med personer visas.
+4. I avsnittet <b>Fästa personer kan</b> du fästa en person för att visa personen som ämnesexpert i ämnet. Börja med att skriva in <b></b> användarens namn eller e-postadress i rutan lägg till en ny användare och välj sedan den användare du vill lägga till i sökresultatet. Du kan även "ta bort" dem genom att välja ikonen Ta bort <b>från listan</b> på användarkortet. Du kan också dra personen för att ändra ordningen som listan med personer visas.
  
     ![Fästa personer](../media/knowledge-management/pinned-people.png)</br>
 
