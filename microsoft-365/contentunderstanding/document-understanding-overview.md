@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Få en översikt av dokumenttolkning i Microsoft SharePoint Syntex.
-ms.openlocfilehash: c0396c8e702d3e32db93d26dba23ab038546bea0
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: d2bf581468eeee008d09a242876bed5ad07ae01f
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976525"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242416"
 ---
 # <a name="document-understanding-overview"></a>Översikt av dokumenttolkning
 
@@ -46,10 +46,45 @@ Lägg till *klassificerare* och *extraktorer* till modellen för dokumenttolknin
 
 Du kan använda exempelfiler för att träna och testa dina klassificerare och extraktorer på din modell. Exempelfiler tillhandahåller modellexemplen för vad du ska titta efter när du försöker identifiera och hämta data från filer. Till exempel kan du träna dina klassificerare för avtalsförnyelse och extraktorer med exempel på avtalsförlängningar som företaget arbetar med. Du kan också använda exempelfiler för att testa hur effektiv modellen är.
 
-> [!NOTE]
-> Om du använder optisk teckenläsning (OCR) för att skanna dokument, har Syntex en gräns på 15 sidor för modellträning.
-
 När du har publicerat modellen använder du innehållscentret för att använda det på alla SharePoint-dokumentbibliotek som du har åtkomst till.  
+
+### <a name="file-limitations"></a>Filbegränsningar
+
+Dokument för dokumenttolkning använder optisk teckenläsning (OCR) för att skanna PDF-filer, bilder och TIFF-filer, både när du utbildar en modell med exempelfiler och när du kör modellen mot filer i ett dokumentbibliotek.
+
+Observera följande skillnader i fråga om textbaserade filer i Microsoft Office och skannade OCR-filer (PDF, bild eller TIFF):
+
+- Office-filer: Vi trunkerar vid 64 000 tecken (i utbildning och när vi kör mot filer i ett dokumentbibliotek).
+- OCR-skannade filer: Det finns en gräns på 20 sidor.  
+
+#### <a name="supported-file-types"></a>Filtyper som stöds
+
+Dokument för dokumenttolkning stöder följande filtyper:
+
+- dokument
+- docx
+- eml
+- heic
+- heif
+- htm
+- html
+- jpeg
+- jpg
+- markdown
+- md
+- msg
+- pdf
+- png
+- ppt
+- pptx
+- rtf
+- tif
+- tiff
+- txt
+- xls
+- xlsx
+
+
 
 ## <a name="see-also"></a>Se även
 [Skapa en klassificerare](create-a-classifier.md)
@@ -65,3 +100,5 @@ När du har publicerat modellen använder du innehållscentret för att använda
 [Skillnader mellan en modell för dokumenttolkning och en modell för formulärbearbetning](difference-between-document-understanding-and-form-processing-model.md)
   
 [Översikt av formulärbearbetning](form-processing-overview.md)
+
+[Tillgänglighetsläge för SharePoint Syntex](accessibility-mode.md)
