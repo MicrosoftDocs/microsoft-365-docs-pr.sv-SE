@@ -275,6 +275,8 @@
                   href: mtp/device-profile.md
                 - name: Ge feedback
                   href: mtp/feedback.md
+                - name: Tillhandahålla åtkomst för hanterad tjänstleverantör (MSSP)
+                  href: mtp/mssp-access.md
                 - name: Skapa ärenden och uppgifter i ServiceNow
                   items:
                     - name: Översikt över ServiceNow-integrering
