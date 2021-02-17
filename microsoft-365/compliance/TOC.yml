@@ -307,6 +307,8 @@
               href: retention-policies-yammer.md
             - name: Kvarhållning för Exchange
               href: retention-policies-exchange.md
+            - name: Begränsningar för kvarhållning
+              href: retention-limits.md
         - name: Komma igång med kvarhållning
           href: get-started-with-retention.md
         - name: Skapa kvarhållningsprinciper
