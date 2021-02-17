@@ -19,12 +19,12 @@ ms.custom:
 description: I den här artikeln förklarar vi de ändringar som distribueras till skyddsfunktioner i Azure Information Protection
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2cb78f9e13d8ae429f5f46f2b1051d07ee541a10
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 0769306c3aa2d1a357e1d5999d1a1406c02aa5f3
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165985"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261567"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Skyddsfunktioner i Azure Information Protection lanseras för befintliga klientorganisationar
 
@@ -60,11 +60,12 @@ Meddelandekryptering i Office 365 utnyttjar skyddsfunktioner i Azure Information
 
 Om din organisation har köpt en berättigad Office 365-licens påverkas klientorganisationen av den här ändringen.
 
- **VIKTIGT!** Om du använder AD RMS (Active Directory Rights Management Services) i din lokala miljö måste du antingen välja bort ändringen direkt eller migrera till Azure Information Protection innan vi distribuerar den här ändringen inom 30 dagar. Mer information om hur du avanmäler finns i "Jag använder AD RMS, hur gör jag för att avanmäla?" längre fram i den här artikeln. Om du föredrar att migrera kan [du gå till migreringen från AD RMS till Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+> [!IMPORTANT]
+> Om du använder AD RMS (Active Directory Rights Management Services) i din lokala miljö måste du antingen välja bort ändringen direkt eller migrera till Azure Information Protection innan vi distribuerar den här ändringen inom 30 dagar. Mer information om hur du avanmäler finns i "Jag använder AD RMS, hur gör jag för att avanmäla?" längre fram i den här artikeln. Om du föredrar att migrera kan [du gå till migrera från AD RMS till Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
 
 ## <a name="can-i-use-azure-information-protection-with-active-directory-rights-management-services-ad-rms"></a>Kan jag använda Azure Information Protection med AD RMS (Active Directory Rights Management Services)?
 
-Nej. Det här är inte ett distributionsscenario som stöds. Utan att vidta ytterligare steg för avanmälning kan vissa datorer automatiskt börja använda tjänsten Azure Rights Management och även ansluta till AD RMS-klustret. Det här scenariot stöds inte och har opålitliga resultat, så det är viktigt att du avanmäler dig från denna ändring inom 30 dagar innan vi distribuerar de här nya funktionerna. Mer information om hur du avanmäler finns i "Jag använder AD RMS, hur gör jag för att avanmäla?" längre fram i den här artikeln. Om du föredrar att migrera kan [du gå till migreringen från AD RMS till Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+Nej. Det här är inte ett distributionsscenario som stöds. Utan att vidta ytterligare steg för avanmälning kan vissa datorer automatiskt börja använda tjänsten Azure Rights Management och även ansluta till AD RMS-klustret. Det här scenariot stöds inte och har opålitliga resultat, så det är viktigt att du avanmäler dig från denna ändring inom 30 dagar innan vi distribuerar de här nya funktionerna. Mer information om hur du avanmäler finns i "Jag använder AD RMS, hur gör jag för att avanmäla?" längre fram i den här artikeln. Om du föredrar att migrera kan [du gå till migrera från AD RMS till Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
 
 ## <a name="how-do-i-know-if-im-using-ad-rms"></a>Hur vet jag om jag använder AD RMS?
 
@@ -72,11 +73,11 @@ Följ de här anvisningarna i Förbereda miljön för Azure Rights Management n�
 
 1. Även om det är valfritt publicerar de flesta AD RMS-distributioner tjänstanslutningspunkten (SCP) i Active Directory så att domändatorerna kan identifiera AD RMS-klustret.
 
-Använda ADSI-redigering för att se om du har publicerat en SCP i Active Directory: CN=Configuration [server name], CN=Services, CN=RightsManagementServices, CN=SCP
+   Använda ADSI-redigering för att se om du har publicerat en SCP i Active Directory: CN=Configuration [server name], CN=Services, CN=RightsManagementServices, CN=SCP
 
-2. Om du inte använder en SCP måste Windows-datorer som ansluter till ett AD RMS-kluster konfigureras för identifiering av klienttjänster eller licensieringsomdirigering med hjälp av Windows-registret: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation eller HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation
+2. Om du inte använder en SCP måste Windows-datorer som ansluter till ett AD RMS-kluster konfigureras för identifiering av klienttjänster eller licensieringsomdirigering med hjälp av Windows-registret: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation or HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation` .
 
-Mer information om de här registerkonfigurationerna finns i aktivera identifiering av klientsidan med Hjälp av [Windows-registret](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry) och omdirigering av [licensservertrafik.](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic)
+Mer information om de här registerkonfigurationerna finns i aktivera identifiering av klienttjänster med [Windows-registret](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry) och omdirigering av [licensservertrafik.](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic)
 
 ## <a name="i-use-ad-rms-how-do-i-opt-out"></a>Jag använder AD RMS, hur gör jag för att avanmäla?
 
@@ -96,4 +97,4 @@ När detta är aktiverat, förutsatt att du inte har valt bort det, kan du börj
 
 ![Skärmbild som visar ett OME-skyddat meddelande i Outlook på webben.](../../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
 
-Mer information om de nya förbättringarna finns i meddelandekryptering [i Office 365.](../../compliance/ome.md)
+Mer information om de nya förbättringarna finns i meddelandekryptering i [Office 365.](../../compliance/ome.md)

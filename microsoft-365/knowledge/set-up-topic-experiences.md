@@ -10,20 +10,22 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Lär dig konfigurera Microsoft Viva-ämnen
-ms.openlocfilehash: 6bd0d3eca653ae44e46b410ef3ac55fe11629a6b
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: a90e75330527992f8519d625f94fe0d5ecb3de6b
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150506"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261475"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Konfigurera Microsoft Viva-ämnen
 
 Du kan använda administrationscentret för Microsoft 365 för att konfigurera [ämnen.](topic-experiences-overview.md) 
 
-Det är viktigt att planera det bästa sättet att konfigurera och konfigurera ämnen i din miljö. Läs Plan för [Microsoft Viva Topics innan du](plan-topic-experiences.md) börjar med procedurerna i den här artikeln.
+Det är viktigt att planera det bästa sättet att konfigurera och konfigurera ämnen i din miljö. Läs Plan för [Microsoft Viva Topics innan du](plan-topic-experiences.md) påbörjar procedurerna i den här artikeln.
 
 Du måste prenumerera [på Viva Topics](https://www.microsoft.com/microsoft-viva/topics) och vara global administratör eller SharePoint-administratör för att få åtkomst till administrationscentret för Microsoft 365 och konfigurera ämnen.
+
+Om du har konfigurerat SharePoint så att [hanterade enheter](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)krävs måste du konfigurera Ämnen från en hanterad enhet.
 
 ## <a name="video-demonstration"></a>Videodemonstration
 
@@ -57,12 +59,12 @@ Så här ställer du in ämnen
     ![Välj hur du vill hitta ämnen](../media/ksetup1.png) 
    
 5. I avsnittet **Exkludera ämnen efter namn** kan du lägga till namn på ämnen som du inte vill ska upptäckas. Använd den här inställningen för att förhindra att känslig information inkluderas som ämnen. Alternativen är:
-    - **Uteslut inte några ämnen** 
+    - **Exkludera inte några ämnen** 
     - **Utesluta ämnen efter namn**
 
     ![Undanta ämnen](../media/topics-excluded-by-name.png) 
 
-    (Knowledge managers can also exclude topics in the topic center after discovery.)
+    (Kunskapshanterare kan också utesluta ämnen i ämnescentret efter upptäckten.)
 
     #### <a name="how-to-exclude-topics-by-name"></a>Så här utesluter du ämnen efter namn    
 
@@ -74,7 +76,7 @@ Så här ställer du in ämnen
 
     - **Namn:** Skriv namnet på det ämne som du vill utesluta. Du kan göra det på två sätt:
         - Exakt matchning: Du kan ta med det exakta namnet eller förkortningen (till exempel *Contoso* eller *ATL).*
-        - Delvis matchning: Du kan utesluta alla ämnen som innehåller ett visst ord.  En båge *utesluter* till exempel  alla ämnen med ordet båge i den, till exempel arcuscirkel,  *Arcus* arcus-arcus eller *utbildningsbåge.* Observera att den inte exkluderar ämnen där texten ingår som en del av ett ord, till exempel *arkitektur.*
+        - Delvis matchning: Du kan utesluta alla ämnen som innehåller ett visst ord.  En båge *utesluter* till exempel  alla ämnen där ordet båge finns, t.ex. arcuscirkel, arcus-arcus- eller *utbildningsbåge.*  Observera att den inte exkluderar ämnen där texten ingår som en del av ett ord, till exempel *arkitektur.*
     - **Står för (valfritt)**: Om du vill utesluta en förkortning skriver du orden som förkortningen står för.
     - **MatchType-Exact/Partial:** Ange om namnet du angav var en *exakt eller* *delvis* matchningstyp.
 
@@ -82,7 +84,7 @@ Så här ställer du in ämnen
     
     Välj **Nästa**.
 
-6. På sidan **Vilka som kan se ämnen och var de kan se dem** konfigurerar du avsnittets synlighet. I inställningen **Vem kan se ämnen** väljer du vilka som ska ha åtkomst till ämnesinformation, till exempel markerade ämnen, ämneskort, ämnessvar i sökningar och ämnessidor. Du kan välja:
+6. På sidan **Vilka som kan se ämnen och var de kan se dem** konfigurerar du avsnittets synlighet. I inställningen **Vem kan se ämnen** kan du välja vem som ska ha åtkomst till ämnesinformation, till exempel markerade ämnen, ämneskort, ämnessvar i sökningar och ämnessidor. Du kan välja:
     - **Alla i min organisation**
     - **Endast valda personer eller säkerhetsgrupper**
     - **Ingen**
@@ -129,9 +131,9 @@ För att tilldela licenser:
 
 1. I Administrationscenter för Microsoft 365 klickar du på **Användare** > **Aktiva användare**.
 
-2. Markera de användare som du vill licensiera och klicka **på Licenser och program.**
+2. Markera de användare som du vill licensiera och klicka **på Licenser och appar.**
 
-3. Kontrollera **att** sökning efter **Diagramkopplingar med Index och Ämnesupplevelser** är markerade **under** Program.
+3. Kontrollera **att** sökning efter **Graph-kopplingar med index och Ämnesupplevelser** är markerade **under** Program.
 
 4. Klicka på **Spara ändringar**.
 

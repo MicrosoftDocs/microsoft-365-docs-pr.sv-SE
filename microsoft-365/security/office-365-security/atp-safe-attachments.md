@@ -20,12 +20,12 @@ ms.collection:
 description: Administratörer kan läsa mer om funktionen Säkra bifogade filer i Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5e85695a6d0fba221f3c614ec33b3552d37153e2
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 5d2d348856dbd51cabe2b320d315406076921fee
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175853"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261543"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Säkra bifogade filer i Microsoft Defender för Office 365
 
@@ -54,7 +54,7 @@ I följande tabell beskrivs scenarier för säkra bifogade filer i Microsoft 365
 Genomsökning av säkra bifogade filer sker i samma region som dina Microsoft 365-data finns. Mer information om datacentergeografi finns i [Var finns dina data?](https://products.office.com/where-is-your-data-located?geo=All)
 
 > [!NOTE]
-> Följande funktioner finns i de globala inställningarna för principer för säkra bifogade filer i Säkerhets- och efterlevnadscenter för &, men de här inställningarna är aktiverade eller inaktiverade globalt och kräver inte principer för säkra bifogade filer:
+> Följande funktioner finns i de globala inställningarna för principer för säkra bifogade filer i & Säkerhets- och efterlevnadscenter. Men de här inställningarna är aktiverade eller inaktiverade globalt och kräver inte principer för säkra bifogade filer:
 >
 > - [Säkra bifogade filer i SharePoint, OneDrive och Microsoft Teams.](atp-for-spo-odb-and-teams.md)
 >
@@ -70,7 +70,7 @@ I det här avsnittet beskrivs inställningarna i principer för säkra bifogade 
 
   |Alternativ|Effekt|Använd det här när du vill:|
   |---|---|---|
-  |**Av**|Bifogade filer genomsöks inte efter skadlig kod via säkra bifogade filer. Meddelanden genomsöks fortfarande efter skadlig programvara [genom skydd mot skadlig programvara i EOP.](anti-malware-protection.md)|Inaktivera skanning för valda mottagare. <p> Förhindra onödiga fördröjningar i dirigering av intern e-post. <p> **Det här alternativet rekommenderas inte för de flesta användare. Du bör endast använda det här alternativet för att inaktivera säker genomsökning av bifogade filer för mottagare som bara tar emot meddelanden från betrodda avsändare.**|
+  |**Av**|Bifogade filer genomsöks inte efter skadlig programvara genom säkra bifogade filer. Meddelanden genomsöks fortfarande efter skadlig programvara [genom skydd mot skadlig programvara i EOP.](anti-malware-protection.md)|Inaktivera skanning för valda mottagare. <p> Förhindra onödiga fördröjningar i dirigering av intern e-post. <p> **Det här alternativet rekommenderas inte för de flesta användare. Du bör endast använda det här alternativet för att inaktivera säker genomsökning av bifogade filer för mottagare som bara tar emot meddelanden från betrodda avsändare.**|
   |**Övervaka**|Levererar meddelanden med bifogade filer och spårar sedan vad som händer med identifierade skadlig programvara. <p> Leveransen av säkra meddelanden kan fördröjas på grund av säker genomsökning av bifogade filer.|Se var den identifierade skadlig programvara går i organisationen.|
   |**Blockera**|Förhindrar att meddelanden med identifierade bifogade filer från skadlig programvara levereras. <p> Meddelanden [sätts i karantän](manage-quarantined-messages-and-files.md) där bara administratörer (inte slutanvändare) kan granska, släppa eller ta bort meddelanden. <p> Blockerar automatiskt framtida förekomster av meddelanden och bifogade filer. <p> Leveransen av säkra meddelanden kan fördröjas på grund av säker genomsökning av bifogade filer.|Skyddar organisationen från upprepade attacker med hjälp av samma bifogade filer i skadlig programvara. <p> Det här är standardvärdet och det rekommenderade värdet i de förinställda säkerhetsprinciperna Standard [och Strikt.](preset-security-policies.md)|
   |**Ersätt**|Tar bort identifierade bifogade filer från skadlig programvara. <p> Meddelar mottagarna att bifogade filer har tagits bort. <p>  Meddelanden [sätts i karantän](manage-quarantined-messages-and-files.md) där bara administratörer (inte slutanvändare) kan granska, släppa eller ta bort meddelanden. <p> Leveransen av säkra meddelanden kan fördröjas på grund av säker genomsökning av bifogade filer.|Se till mottagarna att bifogade filer har tagits bort på grund av upptäckt skadlig programvara.|
@@ -79,7 +79,7 @@ I det här avsnittet beskrivs inställningarna i principer för säkra bifogade 
 
 - **Omdirigering av** bifogade filer vid identifiering: Aktivera omdirigering och Skicka  den bifogade filen till följande e-postadress: För åtgärder som  **Blockera,** Övervaka eller Ersätt kan du skicka meddelanden som innehåller bifogade filer med skadlig programvara till den angivna interna eller externa e-postadressen för analys och undersökning.
 
-  Rekommendationen för principinställningarna Standard och Strikt är att aktivera omdirigering. Mer information finns i inställningarna [för säkra bifogade filer.](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings)
+  Rekommendationen för standardinställningar och strikt-principinställningar är att aktivera omdirigering. Mer information finns i inställningarna [för säkra bifogade filer.](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings)
 
 - Använd ovanstående val om skadlig programvara söker efter bifogade filer  på tider eller fel uppstår: Åtgärden som anges av okända säkra bifogade filer som är okänt svar på skadlig programvara vidtas på meddelanden även när genomsökning av bifogade filer inte kan **slutföras.** Välj alltid det här alternativet om du väljer **Aktivera omdirigering.** Annars kan meddelanden gå förlorade.
 
@@ -102,7 +102,7 @@ I det här avsnittet beskrivs inställningarna i principer för säkra bifogade 
 
 Med åtgärden Dynamisk leverans i principer för säkra bifogade filer vill du eliminera alla e-postleveransfördröjningar som kan orsakas av genomsökning av säkra bifogade filer. Brödtexten i e-postmeddelandet levereras till mottagaren med en platshållare för varje bifogad fil. Platshållaren finns kvar tills den bifogade filen visat sig vara säker, och sedan blir den bifogade filen tillgänglig att öppna eller ladda ned.
 
-Om en bifogad fil visas som skadlig sätts meddelandet i karantän. Endast administratörer (inte slutanvändare) kan granska, släppa eller ta bort meddelanden som satt i karantän genom sökning efter säkra bifogade filer. Mer information finns i [Hantera meddelanden och filer i karantän som administratör.](manage-quarantined-messages-and-files.md)
+Om en bifogad fil visas som skadlig sätts meddelandet i karantän. Endast administratörer (inte slutanvändare) kan granska, släppa eller ta bort meddelanden som satt i karantän genom sökning efter säkra bifogade filer. Mer information finns i [Hantera meddelanden i karantän och filer som administratör.](manage-quarantined-messages-and-files.md)
 
 De flesta PDF-filer och Office-dokument kan förhandsgranskas i felsäkert läge medan sökning av säkra bifogade filer pågår. Om en bifogad fil inte är kompatibel med förhandsgranskningen av dynamisk leverans ser mottagarna en platshållare för den bifogade filen tills skanningen av säkra bifogade filer är klar.
 

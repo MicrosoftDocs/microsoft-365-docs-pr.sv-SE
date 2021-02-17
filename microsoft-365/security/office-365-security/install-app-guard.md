@@ -1,6 +1,6 @@
 ---
 title: Application Guard för Office 365 för administratörer
-keywords: application guard, skydd, avgränsning, isolerad behållare, maskinvaruisolering
+keywords: application guard, protection, isolation, isolated container, hardware isolation
 f1.keywords:
 - NOCSH
 ms.author: maccruz
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: Få den senaste maskinvarubaserade separatheten. Förhindra aktuella och nya attacker som sårbarheter eller skadliga länkar från att störa medarbetarnas produktivitet och företagssäkerhet.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cf02f6776eb68537486b49c4fe45e8f88eeb38c6
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 50065c4c0b9cbac9dee29892d9ebb0c7ce5f20f8
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094885"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261531"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Application Guard för Office för administratörer
 
@@ -40,8 +40,8 @@ Microsoft Defender Application Guard för Office (Application Guard för Office)
 ### <a name="minimum-software-requirements"></a>Lägsta programvarukrav
 
 * **Windows 10**: Windows 10 Enterprise-versionen, klientversion 2004 (20H1) version 19041 eller senare
-* **Office:** Office Current Channel version 2011 16.0.13530.10000 eller senare. Både 32-bitars- och 64-bitarsversioner av Office stöds.
-* **Uppdateringspaket:** Kumulativ månatlig säkerhetsuppdatering för Windows 10 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
+* **Office:** Office Current Channel Version 2011 16.0.13530.10000 eller senare. Både 32-bitars- och 64-bitarsversioner av Office stöds.
+* **Uppdateringspaket:** Kumulativ månads säkerhetsuppdatering för Windows 10 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
 Detaljerade systemkrav finns i [Systemkrav för Microsoft Defender Application Guard.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard) Mer information om Kanaler för Office-uppdateringar finns i [Översikt över uppdateringskanaler för Microsoft 365.](https://docs.microsoft.com/deployoffice/overview-update-channels)
 
@@ -53,9 +53,9 @@ Detaljerade systemkrav finns i [Systemkrav för Microsoft Defender Application G
 
 ### <a name="enable-application-guard-for-office"></a>Aktivera Application Guard för Office
 
-1. Ladda ned och installera **den kumulativa månatliga säkerhetsuppdateringen för Windows 10 KB4571756.**
+1. Ladda ned och **installera den kumulativa månatliga säkerhetsuppdateringen för Windows 10 KB4571756.**
 
-2. Välj **Microsoft Defender Application Guard** under Windows-funktioner och välj **OK.** När du aktiverar Application Guard-funktionen uppmanas du att starta om systemet. Du kan välja att starta om nu eller efter steg 3.
+2. Välj **Microsoft Defender Application Guard** under Windows-funktioner och välj **OK.** Om du aktiverar Application Guard-funktionen uppmanas du att starta om systemet. Du kan välja att starta om nu eller efter steg 3.
 
    ![Dialogrutan Windows-funktioner visar AG](../../media/ag03-deploy.png)
 
@@ -77,7 +77,7 @@ Detaljerade systemkrav finns i [Systemkrav för Microsoft Defender Application G
 
 ### <a name="set-diagnostics--feedback-to-send-full-data"></a>Ställ in diagnostik & feedback för att skicka fullständiga data
 
-Det här steget säkerställer att de data som behövs för att identifiera och åtgärda problem når Microsoft. Följ anvisningarna för att aktivera diagnostik på din Windows-enhet:
+Det här steget säkerställer att de data som behövs för att identifiera och åtgärda problem når Microsoft. Följ de här anvisningarna för att aktivera diagnostik på din Windows-enhet:
 
 1. Öppna **Inställningar** på Start-menyn.
 
@@ -122,14 +122,14 @@ Office har stöd för följande principer för att du ska kunna konfigurera funk
 
 |Princip|Beskrivning|
 |---|---|
-|Använd inte Application Guard för Office|Aktivering av den här principen tvingar Word, Excel och PowerPoint att använda den skyddade visningsisolering i stället för Application Guard för Office. Den här principen kan användas för att tillfälligt inaktivera Application Guard för Office när det är problem med att lämna det aktiverat för Microsoft Edge.|
+|Använd inte Application Guard för Office|Aktivering av den här principen tvingar Word, Excel och PowerPoint att använda den skyddade vyisolering i stället för Application Guard för Office. Den här principen kan användas för att tillfälligt inaktivera Application Guard för Office när det är problem med att lämna det aktiverat för Microsoft Edge.|
 |Konfigurera Application Guard för Office-behållaren i förväg|Den här principen bestämmer om Application Guard för Office-behållaren, för att isolera icke betrodda filer, är förskapad för förbättrad körningsprestanda. Om du aktiverar den här inställningen kan du ange antalet dagar för att fortsätta att skapa en behållare, eller låta den inbyggda heuristiska Office-pre-skapa behållaren.
 |Tillåt inte att Office-dokument öppnas i Application Guard för Office|Aktivering av den här principen förhindrar att en användare kopierar och klistrar in innehåll från ett dokument som öppnas i Application Guard för Office till ett dokument som öppnas utanför det.|
 |Inaktivera maskinvaruacceleration i Application Guard för Office|Den här principen styr om Application Guard för Office använder maskinvaruacceleration för att återge grafik. Om du aktiverar den här inställningen använder Application Guard för Office programvarubaserad återgivning (CPU) och läser inte in några grafikdrivrutiner från tredje part eller interagerar med ansluten grafikmaskinvara.
-|Inaktivera filtyper som inte stöds i Application Guard för Office|Den här principen styr om Application Guard för Office blockerar filtyper som inte stöds från att öppnas eller omdirigeringen till Skyddad vy aktiveras.
-|Inaktivera åtkomst till kameran och mikrofonen för dokument som öppnas i Application Guard för Office|Om du aktiverar den här principen tas Office-åtkomsten till kameran och mikrofonen i Application Guard för Office bort.|
+|Inaktivera filtyper som inte stöds i Application Guard för Office|Den här principen styr om Application Guard för Office blockerar filtyper som inte stöds från att öppnas eller om det aktiverar omdirigeringen till Skyddad vy.
+|Inaktivera åtkomst till kameran och mikrofonen för dokument som öppnas i Application Guard för Office|Om du aktiverar den här principen tas Office bort åtkomst till kameran och mikrofonen i Application Guard för Office.|
 |Begränsa utskrift från dokument som öppnas i Application Guard för Office|Aktivering av den här principen begränsar vilka skrivare som en användare kan skriva ut från en fil som öppnas i Application Guard för Office. Du kan till exempel använda den här principen för att begränsa användare till att bara skriva ut till PDF.|
-|Hindra användare från att ta bort Application Guard för Office-skydd på filer|Aktivering av den här principen tar bort alternativet (i Office-programupplevelsen) för att inaktivera Application Guard för Office-skydd eller öppna en fil utanför Application Guard för Office. <p> **Obs!** Användare kan fortfarande kringgå den här principen genom att manuellt ta bort egenskapen Markera på webben från filen eller genom att flytta ett dokument till en betrodd plats.|
+|Hindra användare från att ta bort Application Guard för Office-skydd på filer|Aktivering av den här principen tar bort alternativet (i Office-programupplevelsen) för att inaktivera Application Guard för Office-skydd eller öppna en fil utanför Application Guard för Office. <p> **Obs!** Användare kan fortfarande kringgå den här principen genom att manuellt ta bort webbegenskapen Mark-of-the-web från filen eller genom att flytta ett dokument till en betrodd plats.|
 |
 
 > [!NOTE]
@@ -147,7 +147,7 @@ Om du stöter på problem när du startar Application Guard för Office uppmanas
 
 1. Öppna **appen Feedbackhubben** och logga in.
 
-2. Om du får en dialogruta när du startar Application Guard väljer du Rapportera till **Microsoft** i feldialogrutan för att starta en ny feedbackinskickning. Annars navigerar du <https://aka.ms/mdagoffice-fb> för att välja rätt kategori för Application Guard och väljer Sedan Lägg till ny **+ &nbsp; feedback** uppe till höger.
+2. Om du får en dialogruta när du startar Application Guard väljer du Rapportera till **Microsoft** i feldialogrutan för att starta en ny feedbackinskickning. Annars navigerar du <https://aka.ms/mdagoffice-fb> för att välja rätt kategori för Application Guard och väljer Lägg till ny **+ &nbsp; feedback** uppe till höger.
 
 3. Ange en sammanfattning i **rutan Summera din feedback** om den inte redan har fyllts i åt dig.
 
@@ -163,13 +163,13 @@ Om du stöter på problem när du startar Application Guard för Office uppmanas
 
    2. Om problemet uppstår medan Application Guard körs öppnar du en Application Guard-instans. Om du öppnar en instans kan ytterligare spårningar samlas in från Application Guard-behållaren.
 
-   3. Välj **Starta inspelning och** vänta tills panelen snurrar och säg Stoppa *inspelning.*
+   3. Välj **Starta inspelning och** vänta tills panelen slutar snurra och säg Stoppa *inspelning.*
 
    4. Återskapa problemet med Application Guard helt. Reproducering kan innefatta försök att starta en Application Guard-instans och vänta tills den misslyckas eller återger ett problem i en Application Guard-instans som körs.
 
    5. Välj panelen **Stoppa** inspelning.
 
-   6. Låt Application Guard-instanserna vara öppna, även efter några minuter efter inskickat material, så att även behållardiagnostik kan samlas in.
+   6. Låt Application Guard-instanserna vara öppna även i några minuter efter inskickat material, så att även behållardiagnostik kan samlas in.
 
 8. Bifoga alla relevanta skärmbilder eller filer som är relaterade till problemet.
 
@@ -183,13 +183,13 @@ Du kan också skicka feedback från Office om problemet inträffar när Office-d
 
 Application Guard för Office är integrerat med Microsoft Defender för Endpoint för att tillhandahålla övervakning och aviseringar om skadlig aktivitet som sker i den isolerade miljön.
 
-Microsoft Defender för Endpoint är en säkerhetsplattform som utformats för att hjälpa företagsnätverk att förhindra, upptäcka, undersöka och svara på avancerade hot. Mer information om den här plattformen finns i [Microsoft Defender för Slutpunkt.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) Mer information om onboarding-enheter till den här plattformen finns [i Onboard-enheter i Microsoft Defender för Slutpunkt-tjänsten.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)
+Microsoft Defender för Endpoint är en säkerhetsplattform som utformats för att hjälpa företagsnätverk att förhindra, upptäcka, undersöka och reagera på avancerade hot. Mer information om den här plattformen finns i [Microsoft Defender för Slutpunkt.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) Mer information om onboarding-enheter till den här plattformen finns [i Onboard-enheter till Microsoft Defender för Slutpunkt-tjänsten.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)
 
 Du kan också konfigurera Microsoft Defender för Office 365 så att det fungerar med Defender för Slutpunkt. Mer information finns i Integrera [Defender för Office 365 med Microsoft Defender för Slutpunkt.](integrate-office-365-ti-with-wdatp.md)
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 
-* Application Guard för Office är ett begränsat läge som isolerar dokument som inte är betrodda så att de inte kan komma åt betrodda företagsresurser, ett intranät, användarens identitet och godtyckliga filer på datorn. Om en användare försöker komma åt en funktion som är beroende av en sådan åtkomst, t.ex. infoga en bild från en lokal fil på disken, kommer åtkomsten att misslyckas och generera en fråga som i följande exempel. Om du vill aktivera ett dokument som inte är betrott för åtkomst till betrodda resurser måste användarna ta bort Application Guard-skyddet från dokumentet.
+* Application Guard för Office är ett begränsat läge som isolerar dokument som inte är betrodda så att de inte kan komma åt betrodda företagsresurser, ett intranät, användarens identitet och godtyckliga filer på datorn. Om en användare försöker komma åt en funktion som är beroende av en sådan åtkomst, t.ex. infoga en bild från en lokal fil på disken, kommer åtkomsten att misslyckas och ge en uppmaning som följande exempel. Om du vill aktivera ett dokument som inte är betrott för åtkomst till betrodda resurser måste användarna ta bort Application Guard-skyddet från dokumentet.
 
   ![Dialogruta som säger att funktionen inte är tillgänglig för att hjälpa dig att hålla dig säker](../../media/ag10-limitations.png)
 
@@ -200,7 +200,7 @@ Du kan också konfigurera Microsoft Defender för Office 365 så att det fungera
 
 * Filer som inte är betrodda från nätverksresurser eller filer som delats från OneDrive, OneDrive för företag eller SharePoint Online från en annan organisation öppnas som skrivskyddade i Application Guard. Användare kan spara en lokal kopia av sådana filer om de vill fortsätta arbeta i behållaren eller ta bort skydd för att arbeta direkt med den ursprungliga filen.
 
-* Filer som skyddas av IRM (Information Rights Management) blockeras som standard. Om användare vill öppna sådana filer i Skyddad vy måste en administratör konfigurera principinställningarna för filtyper som inte stöds för organisationen.
+* Filer som skyddas av IRM (Information Rights Management) blockeras som standard. Om användarna vill öppna sådana filer i Skyddad vy måste en administratör konfigurera principinställningarna för filtyper som inte stöds för organisationen.
 
 * Eventuella anpassningar av Office-program i Application Guard för Office kvarstår inte när en användare loggar ut och loggar in igen eller efter att enheten startats om.
 
@@ -208,17 +208,17 @@ Du kan också konfigurera Microsoft Defender för Office 365 så att det fungera
 
 * Nätverksanslutningen krävs för första lanseringen av Application Guard efter installationen. Anslutning krävs för att Application Guard ska kunna verifiera licensen.
 
-* I dokumentets informationsavsnitt kan egenskapen *Senast ändrad av* visa **WDAGUtilityAccount** som användare. WDAGUtilityAccount är den anonyma användare som konfigurerats i Application Guard. Skrivbordsanvändarens identitet delas inte i Application Guard-behållaren.
+* I dokumentets informationsavsnitt kan *egenskapen Senast ändrad av* visa **WDAGUtilityAccount** som användare. WDAGUtilityAccount är den anonyma användare som konfigurerats i Application Guard. Skrivbordsanvändarens identitet delas inte i Application Guard-behållaren.
 
 ## <a name="performance-optimizations-for-application-guard-for-office"></a>Prestandaoptimeringar för Application Guard för Office
 
 Det här avsnittet innehåller en översikt över prestandaoptimeringar som används i Application Guard för Office. Den här informationen kan hjälpa administratörer att diagnostisera rapporter från användare som är relaterade till prestanda i Office eller det övergripande systemet när Application Guard är aktiverat.
 
-Application Guard använder en virtualiserad behållare för att isolera dokument som inte är betrodda bort från systemet. Processen att skapa en behållare och konfigurera Application Guard-behållaren för att öppna Office-dokument kan påverka användarupplevelsen negativt när användare öppnar ett dokument som inte är betrodd.
+Application Guard använder en virtualiserad behållare för att isolera dokument som inte är betrodda från systemet. Processen att skapa en behållare och konfigurera Application Guard-behållaren för att öppna Office-dokument har en prestandamiljö som kan påverka användarupplevelsen negativt när användare öppnar ett dokument som inte är betrodd.
 
 För att ge användarna den förväntade filöppningen använder Application Guard logik för att förinstallera en behållare när följande heuristisk uppfylls på ett system: En användare har öppnat en fil i antingen Skyddad vy eller Application Guard under de senaste 28 dagarna.
 
-När den här heuristiskt uppfylls skapar Office en Application Guard-behållare för användaren när de har loggat in på Windows. Medan den här förinstallerade åtgärden pågår kan prestandan vara långsam i systemet, men effekten löses så fort åtgärden har slutförts.
+När den här heuristiskt uppfylls skapar Office en Application Guard-behållare för användaren när de har loggat in på Windows. Medan den här för skapa-åtgärden pågår kan prestandan gå långsammare i systemet, men effekten löses så fort åtgärden har slutförts.
 
 > [!NOTE]
 > De tips som behövs för att skapa behållaren i förväg genereras av Office-program när en användare använder dem. Om en användare installerar Office på ett nytt system där Application Guard är aktiverat förinstallerar inte Office behållaren förrän efter första gången en användare öppnar ett dokument som inte är betrodd i systemet. Användaren kommer att observera att den här första filen tar längre tid att öppna i Application Guard.
@@ -227,4 +227,4 @@ När den här heuristiskt uppfylls skapar Office en Application Guard-behållare
 
 * Om du väljer `http` `https` webblänkar (eller) öppnas inte webbläsaren.
 * Det går för närvarande inte att klistra in RTF-innehåll eller -bilder i Office-dokument som öppnats med Application Guard.
-* Uppdateringar av .NET leder till att filer inte öppnas i Application Guard. En lösning är att användare kan starta om enheten när de får det här felet. Läs mer om problemet med att [ta emot ett felmeddelande när du försöker öppna Windows Defender Application Guard eller Windows Sandbox.](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)
+* Uppdateringar av .NET leder till att filer inte öppnas i Application Guard. En lösning är att användare kan starta om sin enhet när de får det här felet. Läs mer om problemet med att [ta emot ett felmeddelande när du försöker öppna Windows Defender Application Guard eller Windows Sandbox.](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)
