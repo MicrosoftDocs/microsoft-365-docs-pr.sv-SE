@@ -18,25 +18,25 @@ ms.custom:
 description: Få en översikt över säkerhetsinformation och händelsehantering (SIEM) serverintegrering med Microsoft 365-molntjänster och -program
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f29da87aa6eab1852330092d93187a27b2d36eb2
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: b4490d52cbd403bf4ce2cc3f3fb3c5a91c5646b9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167149"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290387"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Säkerhetsinformation och händelsehantering (SIEM) serverintegrering med Microsoft 365-tjänster och -program
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 ## <a name="summary"></a>Sammanfattning
 
-Använder eller planerar organisationen en säkerhetsinformations- och händelsehanteringsserver (SIEM)? Du kanske undrar hur det är integrerat med Microsoft 365 eller Office 365. Den här artikeln innehåller en lista med resurser som du kan använda för att integrera DIN SIEM-server med Microsoft 365-tjänster och -program.
+Använder eller planerar organisationen en säkerhetsinformations- och händelsehanteringsserver (SIEM)? Du kanske undrar hur det är integrerat med Microsoft 365 eller Office 365. Den här artikeln innehåller en lista över resurser som du kan använda för att integrera DIN SIEM-server med Microsoft 365-tjänster och -program.
 
 > [!TIP]
 > Om du inte har en SIEM-server ännu och utforskar alternativen kan du överväga **[Microsoft Azure Sentinel.](https://docs.microsoft.com/azure/sentinel/overview)**
@@ -51,7 +51,7 @@ Om du behöver en SIEM-server beror på många faktorer, till exempel organisati
 
 ## <a name="siem-server-integration-with-microsoft-365"></a>SIEM-serverintegrering med Microsoft 365
 
-En SIEM-server kan ta emot data från en mängd olika Microsoft 365-tjänster och -program. I följande tabell visas flera Microsoft 365-tjänster och -program, tillsammans med SIEM-serverindata och resurser för mer information.
+En SIEM-server kan ta emot data från en mängd olika Microsoft 365-tjänster och -program. I följande tabell finns flera Microsoft 365-tjänster och -program samt SIEM-serverindata och resurser för mer information.
 
 ****
 

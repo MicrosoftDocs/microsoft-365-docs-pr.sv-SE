@@ -15,21 +15,21 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2f623957a79ccd76702482cd23b4d8ce219603f6
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1b32982298a368dc435dad8b6c09188321d099e2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166885"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289239"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Åtgärda skadlig e-post som levereras i Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
--    [Microsoft Defender för Office 365 abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender för Office 365 abonnemang 2](office-365-atp.md)
 
-Åtgärd innebär att vidta en föreskriven åtgärd mot ett hot. Skadliga e-postmeddelanden som skickas till organisationen kan rensas antingen av systemet, via autorensning utan timme (ZAP) eller av säkerhetsgrupper genom åtgärder som att flytta till *Inkorgen,* flytta till *skräppost,* gå till borttagna *objekt,* mjuk borttagning eller permanent *borttagning.* Med Microsoft Defender för Office 365 P2/E5 kan säkerhetsteam åtgärda hot via e-post och samarbete med hjälp av manuell och automatiserad undersökning.
+Åtgärd innebär att vidta en bestämt åtgärd mot ett hot. Skadliga e-postmeddelanden som skickas till organisationen kan rensas antingen av systemet, via autorensning utan timme (ZAP) eller av säkerhetsgrupper genom åtgärder som att flytta till *Inkorgen,* flytta till *skräppost,* gå till borttagna *objekt,* mjuk borttagning eller permanent *borttagning.* Med Microsoft Defender för Office 365 P2/E5 kan säkerhetsteam åtgärda hot via e-post och samarbete med hjälp av manuell och automatisk undersökning.
 
 > [!NOTE]
 > För att åtgärda skadlig e-post behöver säkerhetsteam den *sök- och rensningsroll* som de har tilldelats. Rolltilldelning utförs via behörigheter i säkerhets- och efterlevnadscentret.
@@ -51,11 +51,11 @@ Säkerhetsteam kan använda Hotutforskaren för att välja e-postmeddelanden på
 
 - Frågeval: Markera en hel fråga med hjälp av den översta **knappen Markera** alla. Samma fråga visas också i information om inskickade e-postmeddelanden i åtgärdscenter.
 
-- Frågeval med undantag: Ibland vill säkerhetsåtgärder grupper åtgärda e-postmeddelanden genom att markera en hel fråga och exkludera vissa e-postmeddelanden från frågan manuellt. För att göra det kan en administratör använda kryssrutan Markera **alla och rulla** nedåt för att utesluta e-postmeddelanden manuellt. Frågan kan innehålla högst 1 000 e-postmeddelanden. Det maximala antalet undantag är 100.
+- Frågeval med undantag: Ibland vill säkerhetsåtgärder grupper åtgärda e-postmeddelanden genom att markera en hel fråga och utesluta vissa e-postmeddelanden från frågan manuellt. För att göra det kan en administratör använda kryssrutan Markera **alla och rulla** nedåt för att utesluta e-postmeddelanden manuellt. Frågan kan innehålla högst 1 000 e-postmeddelanden. Det maximala antalet undantag är 100.
 
 När e-postmeddelanden har valts via Hotutforskaren kan du börja åtgärda genom att vidta direkta åtgärder eller genom att köa e-postmeddelanden för en åtgärd:
 
-- Direktgodkännande: När åtgärder som att flytta till Inkorgen, gå till *skräppost,* flytta till borttagna *objekt,* mjuk borttagning eller permanent borttagning väljs av säkerhetspersonalen som har rätt behörighet och nästa steg i åtgärden följs, så utförs den valda åtgärden.   En tillfällig utfällning visar den åtgärd som pågår.
+- Direktgodkännande: När åtgärder som att flytta till Inkorgen, flytta till *skräppost,* flytta till borttagna *objekt,* mjuk borttagning eller permanent borttagning väljs av säkerhetspersonalen som har rätt behörighet och nästa steg i åtgärden följs, så utförs den valda åtgärden.   En tillfällig utfällning visar den åtgärd som pågår.
 
 - Tvåstegsgodkännande: Åtgärden "Lägg till för åtgärd" kan vidtas av administratörer som inte har rätt behörighet eller som måste vänta på att utföra åtgärden. I det här fallet läggs de riktade e-postmeddelandena till i en åtgärdsbehållare. Godkännande krävs innan åtgärd utförs.
 
@@ -73,7 +73,7 @@ Alla åtgärder (antingen direkt godkännande eller tvåstegsgodkännande) som s
 
 Öppna ett åtgärdsobjekt för att visa information om det, inklusive dess namn, skapandedatum, beskrivning, allvarlighetsgrad och status för hot. Dessutom visas följande två flikar.
 
-- **Fliken** Postinskickning: Visar antalet e-postmeddelanden som skickats via Threat Explorer eller automatiserade undersökningar som ska åtgärdas. De här e-postmeddelandena kan vara åtgärdsbara eller inte kan vidtas.
+- **Fliken** Postinskickning: Visar antalet e-postmeddelanden som skickats via Threat Explorer eller automatiserade undersökningar som ska åtgärdas. De här e-postmeddelandena kan du vidta åtgärder för eller inte kan vidta åtgärder för.
 
   > [!div class="mx-imgBorder"]
   > [![Åtgärdscenter med åtgärdsbara och inte åtgärdbara hot.](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
@@ -106,7 +106,7 @@ Alla åtgärder (antingen direkt godkännande eller tvåstegsgodkännande) som s
 
   Endast åtgärdsbara e-postmeddelanden vidta åtgärder under åtgärder. Icke-åtgärdsbara e-postmeddelanden kan inte åtgärdas av Office 365-e-postsystemet, eftersom de inte lagras i molnbaserade postlådor.
 
-  Administratörer kan vidta åtgärder för e-postmeddelanden i karantän om det behövs, men de e-postmeddelandena upphör att vara i karantän om de inte rensas manuellt. E-postmeddelanden som sätts i karantän på grund av skadligt innehåll är inte tillgängliga för användare, så säkerhetspersonalen behöver inte vidta någon åtgärd för att ta bort hot i karantän. Om e-postmeddelandena är lokala eller externa kan användaren kontaktas för att åtgärda det misstänkta e-postmeddelandet. Administratörer kan också använda separata e-postservrar/säkerhetsverktyg för borttagning. Dessa e-postmeddelanden kan identifieras genom att använda *leveransplatsen = on-prem externt* filter i Threat Explorer. För misslyckade eller släppta e-postmeddelanden, eller e-post som inte är tillgänglig för användare, finns det inte några e-postmeddelanden att minimera, eftersom dessa e-postmeddelanden inte når postlådan.
+  Administratörer kan vidta åtgärder för e-postmeddelanden i karantän om det behövs, men de e-postmeddelandena upphör att vara i karantän om de inte rensas manuellt. E-postmeddelanden som sätts i karantän på grund av skadligt innehåll är inte tillgängliga för användare, så säkerhetspersonalen behöver inte vidta någon åtgärd för att ta bort hot i karantän. Om e-postmeddelandena är lokala eller externa kan användaren kontaktas för att åtgärda det misstänkta e-postmeddelandet. Annars kan administratörerna använda separata e-postservrar/säkerhetsverktyg för borttagning. Dessa e-postmeddelanden kan identifieras genom att använda *leveransplatsen = det externa filtret on-prem* i Threat Explorer. För misslyckade eller släppta e-postmeddelanden, eller e-post som inte är tillgänglig för användare, finns det inte några e-postmeddelanden att minimera, eftersom dessa e-postmeddelanden inte når postlådan.
 
   Följande bild visar hur en inskickning ser ut i Åtgärdscenter. En åtgärd kan innehålla flera inskickade objekt. Om flera åtgärder godkänns genom en automatiserad undersökning visas varje åtgärd för e-post- eller e-postkluster på samma åtgärd som för en annan inskicking.
 
@@ -122,17 +122,17 @@ Alla åtgärder (antingen direkt godkännande eller tvåstegsgodkännande) som s
   - **Startad:** Åtgärd utlöses.
   - **I kö:** Åtgärd är i kö för åtgärder av e-postmeddelanden.
   - **Pågående:** Åtgärder är under utveckling.
-  - **Slutförd:** Minskning av alla remedierbara e-postmeddelanden har slutförts eller med vissa fel.
+  - **Slutförd:** Minskning av alla åtgärdsbara e-postmeddelanden har slutförts eller med vissa fel.
   - **Misslyckades:** Inga åtgärder lyckades.
 
   Eftersom endast åtgärdsbara e-postmeddelanden kan åtgärdas visas rensningen för varje e-postmeddelande som lyckades eller misslyckades. Bland de totala åtgärdsbara e-postmeddelandena rapporteras lyckade och misslyckade minskningar.
 
   - **Lyckades:** Önskad åtgärd för åtgärdsbara e-postmeddelanden har utförts. Till exempel: En administratör vill ta bort e-postmeddelanden från postlådor, så administratören vidtar åtgärder för mjuk borttagning av e-postmeddelanden. Om ett åtgärdat e-postmeddelande inte hittas i den ursprungliga mappen efter att åtgärden har vidtagits, visas statusen som lyckades.
 
-  - **Fel:** Den åtgärd du önskade för åtgärdsbara e-postmeddelanden misslyckades. Till exempel: En administratör vill ta bort e-postmeddelanden från postlådor, så administratören vidtar åtgärder för mjuk borttagning av e-postmeddelanden. Om ett åtgärdat e-postmeddelande fortfarande finns i postlådan när åtgärden har vidtagits, visas statusen som misslyckad.
+  - **Fel:** Den åtgärd du önskade för åtgärdsbara e-postmeddelanden misslyckades. Till exempel: En administratör vill ta bort e-postmeddelanden från postlådor, så administratören vidtar åtgärder för mjuk borttagning av e-postmeddelanden. Om ett åtgärdat e-postmeddelande fortfarande finns i postlådan när åtgärden har vidtagits, visas statusen som misslyckades.
 
-  Markera ett objekt i åtgärdsloggen för att visa åtgärdsinformation. Om informationen säger "lyckades" eller "hittades inte i postlådan" har objektet redan tagits bort från postlådan. Ibland finns det ett stavfel under åtgärd. I sådana fall är det en bra idé att försöka åtgärda det igen.
+  Markera ett objekt i åtgärdsloggen för att visa åtgärdsinformation. Om informationen säger "lyckades" eller "hittades inte i postlådan" har objektet redan tagits bort från postlådan. Ibland finns det ett fel under en åtgärd. I sådana fall är det en bra idé att försöka åtgärda det igen.
 
-  Om du åtgärdar stora batchar kan du också exportera meddelanden för åtgärd via inskickad e-post och meddelanden som har åtgärdats via åtgärdsloggar. Exportgränsen ökar till 100 000 poster.
+  Om du åtgärdar stora batchar kan du också exportera meddelanden som skickas för åtgärd via inskick av e-post och meddelanden som har åtgärdats via åtgärdsloggar. Exportgränsen ökar till 100 000 poster.
 
   Åtgärd är ett kraftfullt verktyg för att minimera hot och hantera misstänkta e-postmeddelanden. Det hjälper till att skydda organisationen.

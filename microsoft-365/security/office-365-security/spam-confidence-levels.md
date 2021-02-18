@@ -19,23 +19,23 @@ ms.custom:
 description: Administratörer kan lära sig mer om nivån för skräppostförtroende (SCL) som gäller för meddelanden i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e4fc20b7d7db5b85b5bdde02ab720fa26af2a4b5
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 05faec8101bfb13265d3cca7c661f2e86ac21c8d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167161"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290411"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>SCL (Spam Confidence Level) i EOP
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor tilldelas inkommande meddelanden skräppostfiltrering i EOP och tilldelas ett skräppostresultat. Poängen mappas till en enskild nivå för skräppostförtroende (SCL) som läggs till i meddelandet i ett X-sidhuvud. Ett högre SCL-tecken anger att ett meddelande är mer troligt att det är skräppost. EOP vidtar åtgärder för meddelandet baserat på SCL.
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor tilldelas inkommande meddelanden skräppostfiltrering i EOP och tilldelas ett skräppostresultat. Poängen mappas till en enskild nivå för skräppostförtroende (SCL) som läggs till i meddelandet i ett X-sidhuvud. En högre SCL anger att ett meddelande är mer troligt att det är skräppost. EOP vidtar åtgärder för meddelandet baserat på SCL.
 
 Vad SCL innebär och standardåtgärderna som vidtas på meddelanden beskrivs i följande tabell. Mer information om åtgärder du kan vidta på meddelanden baserat på skräppostfiltreringens bedömning finns i Konfigurera principer för skydd mot [skräppost i EOP.](configure-your-spam-filter-policies.md)
 
@@ -43,7 +43,7 @@ Vad SCL innebär och standardåtgärderna som vidtas på meddelanden beskrivs i 
 
 |SCL|Definition|Standardåtgärd|
 |:---:|---|---|
-|-1|Meddelandet hoppade över skräppostfiltrering. Meddelandet kommer till exempel från en betrodd avsändare, har skickats till en betrodd mottagare eller kommer från en e-postkälla på listan över tillåtna IP-adresser. Mer information finns i Skapa [listor över betrodda avsändare i EOP.](create-safe-sender-lists-in-office-365.md)|Skicka meddelandet till mottagarnas inkorg.|
+|-1|Meddelandet hoppade över skräppostfiltrering. Meddelandet kommer till exempel från en betrodd avsändare, skickades till en betrodd mottagare eller kommer från en e-postkälla på listan över tillåtna IP-adresser. Mer information finns i Skapa [listor över betrodda avsändare i EOP.](create-safe-sender-lists-in-office-365.md)|Skicka meddelandet till mottagarnas inkorg.|
 |0, 1|Skräppostfiltreringen gjorde att meddelandet inte var skräppost.|Skicka meddelandet till mottagarnas inkorg.|
 |5, 6|Skräppostfiltrering har markerat meddelandet som **skräppost**|Leverera meddelandet till mottagarnas skräppostmapp.|
 |9|Skräppostfiltrering markerade meddelandet som **skräppost med hög konfidens**|Leverera meddelandet till mottagarnas skräppostmapp.|

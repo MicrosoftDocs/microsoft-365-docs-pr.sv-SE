@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.article: how-to
+ms.topic: article
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,21 +15,21 @@ ms.collection:
 description: Microsoft 365-administratörer kan ta reda på hur de kan återställa efter utpressningstrojaner.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b834adb3d9ba5f85984e09b4bb1e4b48673c32f2
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 120dd9ae71f04d6921fae95965f56f0a08f1280c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166909"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289311"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Återställa efter en utpressningstrojanattack i Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Även om du vidtar alla åtgärder för att skydda organisationen kan du ändå bli offer för en [utpressningstrojanattack.](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) Utpressningstrojaner är en stor verksamhet och attackerna är mycket avancerade.
 
@@ -37,7 +37,7 @@ Stegen i den här artikeln ger dig bäst möjlighet att återställa data och st
 
 - Det finns ingen garanti för att betala utpressningstrojanen för att få åtkomst till dina filer. Betalning av utpressning kan faktiskt göra dig till ett mål för mer utpressningstrojaner.
 
-  Om du redan har betalat, men du återställt utan att använda attackerns lösning, kontaktar du din bank för att se om de kan blockera transaktionen.
+  Om du redan har betalat, men du har återställt utan att använda attackerns lösning, kontaktar du din bank för att se om de kan blockera transaktionen.
 
   Vi rekommenderar även att du rapporterar utpressningstrojanattacken till jurister, webbplatser för bedrägerirapportering och Microsoft enligt beskrivningen senare i den här artikeln.
 
@@ -105,13 +105,13 @@ När du har rensat dina datorer och enheter och återställt dina data kan du å
 
 ## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>Steg 8 (valfritt): Blockera OneDrive-synkronisering för specifika filnamnstillägg
 
-När du har återställt kan du förhindra att OneDrive för företag-klienter synkroniserar filtyper som påverkades av den här utpressningstrojanen. Mer information finns i [Set-SPOTenantSyncClientRestriction](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
+När du har återställt kan du förhindra att OneDrive för företag-klienter synkroniserar filtyperna som påverkades av den här utpressningstrojanen. Mer information finns i [Set-SPOTenantSyncClientRestriction](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
 
 ## <a name="report-the-attack"></a>Rapportera attacken
 
 ### <a name="contact-law-enforcement"></a>Upprätthållande av kontaktlagstiftning
 
-Kontakta dina lokala eller federala myndigheter. Om du till exempel befinner dig i USA kan du kontakta det lokala [fältet AVS.EX. kontor,](https://www.fbi.gov/contact-us/field) [IC3](http://www.ic3.gov/complaint/default.aspx) eller [hemlig tjänst.](http://www.secretservice.gov/)
+Kontakta dina lokala eller federala myndigheter. Om du till exempel befinner dig i USA kan du kontakta det lokala fältet [AVS.EX. kontor,](https://www.fbi.gov/contact-us/field) [IC3](http://www.ic3.gov/complaint/default.aspx) eller [hemlig tjänst.](http://www.secretservice.gov/)
 
 ### <a name="submit-a-report-to-your-countrys-scam-reporting-website"></a>Skicka en rapport till ditt lands webbplats för bedrägerirapportering
 
@@ -121,7 +121,7 @@ På webbplatser för rapportering av bedrägerier får du information om hur du 
 
 - Kanada: [Canadian Anti-Fraud Centre](http://www.antifraudcentre-centreantifraude.ca/)
 
-- Frankrike: [Agence nationale de la sécurité des systèmes d'information](http://www.ssi.gouv.fr/)
+- France: [Agence nationale de la sécurité des systèmes d'information](http://www.ssi.gouv.fr/)
 
 - Tyskland: [Der Informationstechniks für Sicherheit](https://www.bsi.bund.de/DE/Home/home_node.html)
 

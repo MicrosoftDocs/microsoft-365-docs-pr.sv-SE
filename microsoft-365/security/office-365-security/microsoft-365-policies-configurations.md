@@ -6,6 +6,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: m365-security
 ms.topic: article
+audience: Admin
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -18,20 +19,20 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 0f6e3d7bef0f09dc922a7c1878e6ea7ce0aad3d7
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: e4b85091366927596a2c8f52c579c369fc9697c3
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233158"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290723"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationer av identiteter och enhetsåtkomst
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
 
-Organisationens moderna säkerhetsområde omfattar nu mer än ditt nätverk så att användare kan komma åt molnbaserade appar från valfri plats med olika enheter. Din säkerhetsinfrastruktur måste fastställa om en viss åtkomstbegäran ska beviljas och under vilka villkor.
+Organisationens moderna säkerhetsområde omfattar nu mer än nätverket och inkluderar användare som använder molnbaserade appar från valfri plats med olika enheter. Din säkerhetsinfrastruktur måste fastställa om en viss åtkomstbegäran ska beviljas och under vilka villkor.
 
 Det här avgörandet bör baseras på inloggningens användarkonto, vilken enhet som används, vilken app som användaren använder för åtkomst, platsen som åtkomstbegäran görs från och en bedömning av risken för begäran. Denna funktion hjälper till att säkerställa att endast godkända användare och enheter kan komma åt dina kritiska resurser.
 
@@ -42,7 +43,7 @@ Inställningar och principer för åtkomst till identiteter och enheter rekommen
 Dessa funktioner och deras rekommendationer:
 
 - Stöds i Microsoft 365 E3 och Microsoft 365 E5.
-- Är i linje med [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) samt [identitetspoäng i Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)och ökar dessa resultat för organisationen.
+- Är i linje med [Microsoft Secure Score](../mtp/microsoft-secure-score.md) samt [identitetspoäng i Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)och ökar dessa resultat för organisationen.
 - Hjälper dig att implementera de här [fem stegen för att skydda din identitetsinfrastruktur.](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)
 
 Om organisationen har unika miljökrav eller komplexitet kan du använda de här rekommendationerna som utgångspunkt. Men de flesta organisationer kan implementera dessa rekommendationer som bestämts.
@@ -110,7 +111,7 @@ Rekommendationerna baseras på följande principer:
 
 Microsoft 365 för företag har utformats för stora organisationer för att alla ska kunna vara kreativa och arbeta säkert tillsammans.
 
-Det här avsnittet innehåller en översikt över De Microsoft 365-tjänster och funktioner som är viktiga för identiteter och enhetsåtkomst.
+Det här avsnittet innehåller en översikt över De Microsoft 365-tjänster och -funktioner som är viktiga för identiteter och enhetsåtkomst.
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -155,7 +156,7 @@ I den här vägledningen visas hur du implementerar en uppsättning principer f�
 
 ### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Windows 10 och  Microsoft 365-appar för företag
 
-Windows 10 med Microsoft 365-appar för företag är den rekommenderade klientmiljön för DATORER. Vi rekommenderar Windows 10 eftersom Azure har utformats för att ge bästa möjliga upplevelse för både lokal och Azure AD. Windows 10 innehåller även avancerade säkerhetsfunktioner som kan hanteras via Intune. Microsoft 365-appar för företag innehåller de senaste versionerna av Office-programmen. De använder modern autentisering, som är säkrare och ett krav för villkorsstyrd åtkomst. De här apparna innehåller även förbättrade säkerhets- och efterlevnadsverktyg.
+Windows 10 med Microsoft 365-appar för företag är den rekommenderade klientmiljön för DATORER. Vi rekommenderar Windows 10 eftersom Azure har utformats för att ge bästa möjliga upplevelse för både lokal och Azure AD. Windows 10 innehåller också avancerade säkerhetsfunktioner som kan hanteras via Intune. Microsoft 365-appar för företag innehåller de senaste versionerna av Office-programmen. De använder modern autentisering, som är säkrare och ett krav för villkorsstyrd åtkomst. De här apparna innehåller även förbättrade säkerhets- och efterlevnadsverktyg.
 
 ## <a name="applying-these-capabilities-across-the-three-tiers-of-protection"></a>Tillämpa de här funktionerna på de tre skyddsnivåerna
 
@@ -166,7 +167,7 @@ I följande tabell sammanfattas våra rekommendationer om hur du använder de h�
 |**Framtvinga MFA**|På medelhög eller över inloggningsrisk|Vid låg eller över inloggningsrisk|På alla nya sessioner|
 |**Tillämpa lösenordsändring**|För högriskanvändare|För högriskanvändare|För högriskanvändare|
 |**Tillämpa Intune-programskydd**|Ja|Ja|Ja|
-|**Framtvinga Intune-registrering för en organisationsägd enhet**|Kräv en kompatibel eller domän ansluten dator, men tillåt ta med egna enheter (BYOD) telefoner och surfplattor|Kräv en kompatibel eller domän ansluten enhet|Kräv en kompatibel eller domän ansluten enhet|
+|**Framtvinga Intune-registrering för organisationsägda enheter**|Kräv en kompatibel eller domän ansluten dator, men tillåt ta med egna enheter (BYOD) telefoner och surfplattor|Kräv en kompatibel eller domän ansluten enhet|Kräv en kompatibel eller domän ansluten enhet|
 |
 
 ## <a name="device-ownership"></a>Enhetsägarskap

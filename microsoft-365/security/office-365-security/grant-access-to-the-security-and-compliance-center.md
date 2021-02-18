@@ -20,21 +20,21 @@ description: Användare måste ha tilldelats behörigheter i Säkerhets- och & M
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9e19825ce0f8224b2aee8e1419ef5d1ad425aadb
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e1a619b184c575e3750b2499adc661627b4d27d6
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165421"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289883"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Ge användare tillgång till Säkerhets- & Efterlevnadscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Användare måste ha tilldelats behörigheter i Säkerhets- & center för efterlevnad innan de kan hantera någon av dess säkerhets- eller efterlevnadsfunktioner. Som global administratör eller medlem i rollgruppen Organisationsmanagement i Säkerhets- & Efterlevnadscenter kan du ge de här behörigheterna till användare. Användare kommer bara att kunna hantera de säkerhets- och efterlevnadsfunktioner som du ger dem åtkomst till.
 
@@ -48,7 +48,7 @@ Mer information om de olika behörigheter du kan ge användare i Säkerhets- och
 
 - Medlemskap i rollgrupper delas inte mellan Exchange Online och Säkerhets- & Efterlevnadscenter.
 
-- DAP-partners (Delegated Access Permission) med AOBO-behörigheter (Administer On Behalf) har inte åtkomst till Säkerhets- & Efterlevnadscenter.
+- DAP-partners (Delegated Access Permission) med AOBO-behörigheter (Administer On Behalf Of) har inte åtkomst till Säkerhets- & Efterlevnadscenter.
 
 ## <a name="use-the-security--compliance-center-to-give-another-user-access-to-the-security--compliance-center"></a>Använd Säkerhets- & för att ge en annan användare åtkomst till Säkerhets- & Efterlevnadscenter
 
@@ -56,7 +56,7 @@ Mer information om de olika behörigheter du kan ge användare i Säkerhets- och
 
 2. I listan över rollgrupper väljer du rollgruppen  och klickar sedan på ikonen ![ ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) Redigera.
 
-3. På rollgruppens egenskapssida under  **Medlemmar** klickar du på Lägg till ikon och väljer namnet på den ![ användare ](../../media/ITPro-EAC-AddIcon.gif) (eller användare) du vill lägga till.
+3. På egenskapssidan för rollgruppen under  **Medlemmar** klickar du på Lägg till ikon och väljer namnet på den ![ användare ](../../media/ITPro-EAC-AddIcon.gif) (eller användare) du vill lägga till.
 
 4. När du har markerat alla användare som du vill lägga till i rollgruppen klickar du på **lägg till och \>** sedan på **OK.**
 
@@ -84,9 +84,9 @@ Detaljerade syntax- och parameterproblem finns i [Add-RoleGroupMember](https://d
 
 ### <a name="how-do-you-know-this-worked"></a>Hur vet du att det fungerade?
 
-Om du vill verifiera att du har beviljats åtkomst till Säkerhets- & Efterlevnadscenter gör du något av följande:
+Om du vill verifiera att du har beviljats åtkomst till Säkerhets- & efterlevnadscenter gör du något av följande:
 
-- Gå till & i Säkerhets- **och efterlevnadscenter** och välj rollgruppen. Kontrollera rollgruppens medlemmar i informationsfällan som öppnas.
+- Gå till & i Säkerhets- **och efterlevnadscenter** och välj rollgruppen. Kontrollera medlemmarna i rollgruppen i den utfäll plats för information som öppnas.
 
 - I Säkerhetscenter & PowerShell ersätter du med namnet på \<RoleGroupName\> rollgruppen och kör följande kommando:
 

@@ -1,5 +1,5 @@
 ---
-title: Växla till EOP från en annan skydds tjänst
+title: Växla till EOP från en annan skyddstjänst
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,61 +8,66 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 ms.custom:
 - seo-marvel-apr2020
-description: I den här artikeln får du lära dig hur du växlar till Exchange Online Protection (EOP) från en lokal server för e-posthygien eller Cloud-baserad skydd.
-ms.openlocfilehash: a007bb94c35f7712b69ad5eef4152455c114ca24
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+description: I den här artikeln får du lära dig hur du byter till Exchange Online Protection (EOP) från en lokal e-postinstallation eller en molnbaserad skyddstjänst.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 0cb946fbb60393657aab21195bc4dd723458f16e
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760392"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290195"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Byta till EOP från Google Postini, Barracuda Spam and Virus Firewall eller Cisco IronPort
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
- Syftet med det här avsnittet är att hjälpa dig att förstå processen för att växla till Exchange Online Protection (EOP) från en lokal server för e-posthygien eller Cloud-baserad skydds tjänst, och sedan tillhandahålla hjälp resurser för att komma igång. Det finns många lösningar för skräp post filtrering, men processen för att växla till EOP är i de flesta fall.
+ Syftet med det här avsnittet är att hjälpa dig att förstå processen för att byta till Exchange Online Protection (EOP) från en lokal e-postlösning eller molnbaserad skyddstjänst och sedan ge dig hjälpresurser för att komma igång. Det finns många skräppostfiltreringslösningar, men i de flesta fall är processen för att byta till EOP liknande.
 
-Om du är nybörjare i EOP och vill läsa en översikt över dess funktioner innan du bestämmer dig för att byta, börjar du med avsnittet [Exchange Online Protection Overview](exchange-online-protection-overview.md) .
+Om du inte har börjat använda EOP tidigare och vill läsa en översikt över funktionerna innan du bestämmer dig för att byta börjar du med [översiktsavsnittet](exchange-online-protection-overview.md) för Exchange Online Protection.
 
-Innan du växlar till EOP är det viktigt att tänka på om du vill ha dina EOP-skyddade post lådor i molnet, med Exchange Online, lokalt eller i ett hybrid scenario. (Hybrid innebär att du har vissa post lådor som hanteras lokalt och en annan del som är värd för Exchange Online.) Var och en av de här värd scenarierna: molnet, lokala och Hybrid är möjligt, men konfigurations stegen kan variera. Här är några saker som hjälper dig att välja lämplig installation:
+Innan du byter till EOP är det viktigt att tänka efter om du vill lagra dina EOP-skyddade postlådor i molnet, med Exchange Online, lokalt eller i ett hybridscenario. (Hybrid innebär att du har några postlådor lokalt och en annan del med Exchange Online.) Var och en av dessa värdscenarier: molnet, lokalt och hybrid är möjligt, men konfigurationsstegen kan variera. Här är några saker du bör tänka på när du väljer rätt distribution:
 
-- **EOP skydd med lokala post lådor**: det här scenariot är lämpligt om du har befintlig e-postvärd infrastruktur som du vill använda, eller om du har företags krav för att behålla post lådor lokalt, och du vill använda EOP som ditt molnbaserade e-postskydd. [Växla till EOP fristående](#switch-to-eop-standalone) beskriver det här scenariot mer detaljerat.
+- **EOP-skydd** med lokala postlådor: Det här scenariot är lämpligt om du har befintlig e-postvärdinfrastruktur som du vill använda, eller om du har företagskrav för att behålla postlådorna lokalt och du vill använda EOP som ditt molnbaserade e-postskydd. [Om du byter till fristående EOP](#switch-to-eop-standalone) beskrivs det här scenariot mer i detalj.
 
-- **EOP skydd med Exchange Online-postlådor**: det här scenariot är lämpligt om du vill ha EOP skydd och alla dina post lådor i molnet. Den kan hjälpa dig att minska komplexiteten, eftersom du inte behöver underhålla lokala meddelande servrar. [Växla till Exchange Online](#switch-to-exchange-online) beskriver det här scenariot.
+- **EOP-skydd med Exchange** Online-postlådor: Det här scenariot är lämpligt om du vill ha EOP-skydd och alla dina postlådor i molnet. Det kan hjälpa dig att minska komplexiteten eftersom du inte behöver ha lokala meddelandeservrar. [Byt till Exchange Online](#switch-to-exchange-online) beskriver det här scenariot.
 
-- **EOP skydd med hybrid post lådor**: kanske du vill lägga till en post låda för vissa användare lokalt. Välj det här scenariot om du vill att vissa post lådor ska vara lokalt och en annan del med Exchange Online. [Byt till en hybrid lösning](#switch-to-a-hybrid-solution) beskriver det här scenariot.
+- **EOP-skydd med hybridpostlådor:** Du kanske vill ha molnpostlådor, men du måste ha postlådor för vissa användare lokalt. Välj det här scenariot om du vill ha några postlådor lokalt och en annan del med Exchange Online som värd. [När du byter till en hybridlösning](#switch-to-a-hybrid-solution) beskrivs det här scenariot.
 
-## <a name="switch-to-eop-standalone"></a>Växla till EOP fristående
+## <a name="switch-to-eop-standalone"></a>Byt till EOP fristående
 
-Om du för närvarande är värd för dina post lådor på lokala enheter och använder en lokal skydds apparat eller ett moln meddelande skydds tjänst kan du växla till EOP och dra nytta av dess skydds funktioner och tillgänglighet. Om du vill konfigurera EOP i ett fristående scenario, vilket innebär att du är värd för dina post lådor lokalt och använder EOP för att tillhandahålla e-postskydd kan du följa stegen som beskrivs i [Konfigurera din EOP-tjänst](set-up-your-eop-service.md). I det här avsnittet beskrivs hur du konfigurerar EOP-skydd, som inkluderar registreringen, lägger till din domän och hur du konfigurerar e-postflöde med kopplingar.
+Om du för närvarande är värd för dina postlådor lokalt och använder ett lokalt skydd eller en tjänst för molnmeddelandeskydd kan du byta till EOP för att dra nytta av dess skyddsfunktioner och tillgänglighet. Om du vill konfigurera EOP i ett fristående scenario, vilket innebär att du har dina postlådor lokalt och använder EOP för att skydda e-posten, kan du följa stegen som beskrivs i Konfigurera [EOP-tjänsten.](set-up-your-eop-service.md) I det här avsnittet beskrivs stegen för att konfigurera EOP-skydd, som omfattar registrering, lägga till din domän och konfigurera e-postflöde med kopplingar.
 
-## <a name="switch-to-exchange-online"></a>Växla till Exchange Online
+## <a name="switch-to-exchange-online"></a>Byt till Exchange Online
 
-Kanske har du lokala post lådor som skyddas av en lokal enhet och du vill hoppa till Exchange Online-postköer och EOP skydd för att utnyttja Microsoft 365 Cloud Messaging och skydds funktioner. För att komma igång kan du registrera dig för Microsoft 365 och lägga till din domän. För det här scenariot behöver du inte konfigurera kopplingar, eftersom det inte finns någon routning på lokala post lådor. Börja med att [Skaffa de senaste avancerade funktionerna med Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) för att registrera dig och få bekanta med dess funktioner.
+Du kanske har lokala postlådor som skyddas av en lokal utrustning och vill gå till molnbaserade postlådor och EOP-skydd i Exchange Online för att kunna dra nytta av funktionerna för molnmeddelanden och skydd i Microsoft 365. För att komma igång kan du registrera dig för Microsoft 365 och lägga till din domän. I det här scenariot behöver du inte konfigurera kopplingar, eftersom det inte finns någon routning till lokala postlådor. Börja på [Skaffa de senaste avancerade funktionerna med Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) för att registrera dig och bekanta dig med funktionerna.
 
-Under installationen av Microsoft 365 skapar du dina molnbaserade användare av post lådor.
+Under installationen av Microsoft 365 skapar du dina molnbaserade postlådeanvändare.
 
-## <a name="switch-to-a-hybrid-solution"></a>Växla till en hybrid lösning
+## <a name="switch-to-a-hybrid-solution"></a>Byt till en hybridlösning
 
-Du kanske vill flytta bara en del av dina post lådor till molnet på grund av företagets krav. När du distribuerar ett hybrid scenario kan du flytta post lådor till molnet allteftersom dina affärs krav gäller. Att migrera till ett hybrid scenario med EOP skydd är mer komplicerat än att flytta till ett allt-moln-scenario, men Microsoft tillhandahåller fullt hybrid stöd och gott om resurser för att det ska bli enklare att flytta till hybrid.
+På grund av affärskrav eller regelöverväganden kanske du bara vill flytta en del av dina postlådor till molnet. När du distribuerar ett hybridscenario kan du flytta postlådor till molnet allt eftersom företagskraven kräver det. Att migrera till ett hybridscenario med EOP-skydd är mer komplicerat än att flytta till ett scenario med hela molnet, men Microsoft har fullt hybridstöd och tillräckligt med resurser för att göra flytten till hybrid enklare.
 
-Det bästa stället att börja om du använder en hybrid distribution är [Exchange Server hybrid distributioner](https://docs.microsoft.com/exchange/exchange-hybrid). Dessutom finns det några olika sätt att dirigera e-post i ett hybrid scenario som är viktigt att förstå. [Transport dirigering i Exchange hybrid distributioner](https://docs.microsoft.com/exchange/transport-routing) förklarar varje typ, så att du kan välja scenariot för bästa routning baserat på ditt företags behov.
+Det bästa sättet att börja på om du överväger en hybriddistribution är [att Exchange Server hybriddistributioner.](https://docs.microsoft.com/exchange/exchange-hybrid) Det finns dessutom några olika sätt att dirigera e-post i ett hybridscenario som är viktigt att förstå. [Transportdirigering i Exchange-hybriddistributioner](https://docs.microsoft.com/exchange/transport-routing) förklarar varje typ, så du kan välja det bästa dirigeringsscenariot utifrån dina affärskrav.
 
-## <a name="migration-planning"></a>Planering för migrering
+## <a name="migration-planning"></a>Migreringsplanering
 
-När du bestämmer dig för att växla till EOP bör du tänka på följande:
+När du väljer att byta till EOP bör du särskilt beakta följande områden:
 
-- **Anpassade filtrerings regler**: om du har anpassade filtrerings-eller affärs princip regler för att fånga särskilda skräp post rekommenderar vi att du testar EOP med standardinställningarna för en viss tids period innan du migrerar dina regler. EOP erbjuder skräp post skydd på företags nivå med standardinställningarna, det kan hända att du inte behöver migrera vissa av dina regler till EOP. Om du har regler som gäller för vissa anpassade affärs principer kan du naturligtvis skapa dem. [Regler för e-postflöde (transport regler) i Exchange Online Protection](mail-flow-rules-transport-rules-0.md) innehåller detaljerade anvisningar för hur du skapar e-postflödes regler i EOP.
+- **Anpassade filtreringsregler:** Om du har anpassade filtrerings- eller affärsprincipregler som fångar upp särskild skräppost rekommenderar vi att du provar EOP med standardinställningarna under en viss tidsperiod innan du migrerar dina regler. EOP ger skräppostskydd på företagsnivå med standardinställningarna, men det kan hända att du inte behöver migrera vissa av dina regler till EOP. Om du har regler som tillämpar särskilda anpassade affärsprinciper kan du naturligtvis skapa dem. [E-postflödesregler (transportregler) i Exchange Online Protection ger](mail-flow-rules-transport-rules-0.md) detaljerade instruktioner för hur du skapar e-postflödesregler i EOP.
 
-- Listor med **IP-adresser och IP-blockerare**: om du har listor och blockerade listor per användare tillåter det att du kan kopiera listorna till EOP som en del av din konfigurations process. Mer information om listan över tillåtna IP-adresser och IP-blockeringslistan finns i [Konfigurera principen för anslutnings filter](configure-the-connection-filter-policy.md).
+- **Tillåtna IP-listor** och IP-blockeringslistor: Om du har tillåtna listor och blockeringslistor per användare kan du få lite tid att kopiera listorna till EOP som en del av installationen. Mer information om listan över tillåtna IP-adresser och IP-blockeringslistan finns i [Konfigurera principen för anslutningsfilter.](configure-the-connection-filter-policy.md)
 
-- **Säker kommunikation**: om du har en partner som kräver krypterade meddelanden rekommenderar vi att du konfigurerar detta i administrations centret för Exchange. Om du vill konfigurera det här scenariot läser du [Konfigurera kopplingar för säkert e-postflöde med en partner organisation](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner).
+- **Säker kommunikation:** Om du har en partner som kräver krypterade meddelanden rekommenderar vi att du krypterar detta i administrationscentret för Exchange. Information om hur du konfigurerar det här scenariot finns i [Konfigurera kopplingar för säkert e-postflöde med en partnerorganisation.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)
 
 > [!TIP]
-> När du växlar från en lokal apparat till EOP är det möjligt att lämna din apparat eller en server som utför affärs regel kontroller. Om din enhet till exempel utför anpassad filtrering för utgående e-post och du vill att den ska fortsätta gör du så kan du konfigurera EOP för att skicka e-post direkt till apparaten för ytterligare filtrering innan den dirigeras till Internet.
+> När du växlar från en lokal utrustning till EOP kan du låta utrustningen eller en server vara på plats och utföra affärsregelkontroller. Om din enhet till exempel utför anpassad filtrering på utgående e-post och du vill att det ska fortsätta kan du konfigurera EOP så att e-post skickas direkt till utrustningen för ytterligare filtrering, innan den dirigeras till Internet.

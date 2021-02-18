@@ -14,21 +14,21 @@ ms.custom:
 description: Administratörer kan lära sig att använda statusinsikten för e-postflödesstatus för toppdomänen i instrumentpanelen för e-postflöde i Säkerhets- & efterlevnadscenter för att felsöka e-postflödesproblem som rör deras MX-poster.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: df0f571d29d72b23e7b2e210b61a4fb1676175aa
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 9ecda78047384a581a1043d0049b8dd25fadbe27
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150213"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290627"
 ---
-# <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>Den viktigaste statusen för domänflödet i Säkerhets- & Efterlevnadscenter
+# <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>Statusinsikter för e-postflöde i toppdomänen & Säkerhets- och efterlevnadscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 abonnemang 1 och abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 **Statusinsikten för det** [](mail-flow-insights-v2.md) översta domänflödet i instrumentpanelen för e-postflöde i Säkerhets- & [efterlevnadscenter](https://protection.office.com) ger dig den aktuella e-postflödesstatusen för din organisation.
 
@@ -36,7 +36,7 @@ Den här insikten hjälper dig att identifiera och felsöka domäner som har pro
 
 ![Widget för toppdomänflödesstatus i instrumentpanelen för e-postflöde & Säkerhets- och efterlevnadscenter](../../media/mfi-top-domain-mail-flow-status-widget.png)
 
-När du klickar **på Visa** information i widgeten visas en utfällsymbol för Domänstatus som visar mer information om status för varje domän: 
+När du klickar **på Visa** information i widgeten visas en **utfällsymbol** för Domänstatus som visar mer information om status för varje domän:
 
 - **Domain**
 - **Föregående MX-post**

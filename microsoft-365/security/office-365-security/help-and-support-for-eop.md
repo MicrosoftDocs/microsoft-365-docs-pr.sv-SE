@@ -13,21 +13,21 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft tillhandahåller hjälp för EOP på flera olika platser och metoder, inklusive självsupport och assisterad support.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a2b8228d33648f7bd20bde9d9e7b852276231aa6
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 945f3c4e32a6c41193e3df4813cc4ed4fe9f7b1f
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167113"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289799"
 ---
 # <a name="help-and-support-for-eop"></a>Hjälp och support för EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor kan du använda de tekniska supportresurser som listas i den här artikeln för att få svar om du har problem med EOP. Microsoft tillhandahåller hjälp för EOP på flera olika platser och metoder, inklusive självsupport och assisterad support.
 
@@ -37,7 +37,7 @@ När du loggar in tillhandahåller administrationscentret för Microsoft 365 inf
 
 [Produktöversikt för Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Kontakta supporten för företagsprodukter – hjälp för administratörer](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)
+[Kontakta supporten för företagsprodukter – hjälp för administratörer](../../admin/contact-support-for-business-products.md)
 
 [Microsoft 365-communityn](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
@@ -67,7 +67,7 @@ Mer information om hur Premier Support kan hjälpa din organisation att maximera
 
 1. Logga in på administrationscentret för Microsoft 365.
 
-2. För allmänna produktproblem går du till **Support** \> **Fråga om teknisk** \> **support.**
+2. För allmänna produktproblem går du till **Support** \> **Be om kundsupport Ring** teknisk \> **support.**
 
    Om du har frågor innan du köper EOP, eller frågor om fakturering och prenumerationer, går du till **Support** Fråga om fakturering och prenumerationssupport för \>  \> **kundsupportsamtal.**
 

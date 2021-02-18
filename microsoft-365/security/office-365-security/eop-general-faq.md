@@ -15,19 +15,19 @@ ms.custom:
 description: Få svar på de vanligaste allmänna frågorna om e-postfiltreringstjänsten i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d0a5712d2bfb110c3292dee06b456161599d40b1
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1a1ce845ef50d7485113c211b0a8d7770ea57815
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165493"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290027"
 ---
 # <a name="eop-general-faq"></a>Allmänna vanliga frågor och svar om EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
--  [Exchange Online Protection fristående](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection fristående](exchange-online-protection-overview.md)
 
 Här får du svar på de vanligaste allmänna frågorna om e-postfiltreringstjänst med Exchange Online Protection (EOP). Om du vill ha fler vanliga frågor och svar går du till följande länkar:
 
@@ -71,7 +71,7 @@ Microsoft 365 är namnet på en samling produkter och tjänster som kan kommas �
 
 En del av den här informationen finns i administrationscentret för Microsoft 365. Om du påverkas av en händelse på tjänstnivå bör du se en kommunikationsavisering (vanligtvis åtföljd av en klockikon) när du har loggat in på administrationscentret för Microsoft 365. Vi rekommenderar att du läser och agerar på alla objekt efter behov.
 
-När det gäller nya EOP-funktioner är översikten över [Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) för företag en bra resurs för att ta reda på information om kommande nya funktioner. Vi kommer också att publicera bloggartiklar om nya funktioner på [webbplatsen för Microsoft 365-bloggar.](https://www.microsoft.com/microsoft-365/blog/)
+När det gäller nya EOP-funktioner är översikten över [Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) för företag en bra resurs för att ta reda på information om kommande nya funktioner. Vi kommer också att publicera bloggartiklar om nya funktioner på [webbplatsen För Microsoft 365-bloggar.](https://www.microsoft.com/microsoft-365/blog/)
 
 ## <a name="does-the-service-work-with-legacy-exchange-versions-such-as-exchange-server-2010-and-non-exchange-environments"></a>Fungerar tjänsten med äldre Exchange-versioner (till exempel Exchange Server 2010) och icke-Exchange-miljöer?
 

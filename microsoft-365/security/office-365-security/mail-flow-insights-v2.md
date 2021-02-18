@@ -13,23 +13,23 @@ description: Administratörer kan läsa mer om de insikter och rapporter som är
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b65e235e3446fa62bca1c9f8aef73f2387b1140b
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 7432eca577fb264126b9fc8f10bdd83de32711cf
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167101"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289681"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>E-postflödesinsikter i Säkerhets- och efterlevnadscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Administratörer kan använda instrumentpanelen för e-postflöde i Säkerhets- & efterlevnadscenter för att upptäcka trender, insikter och vidta åtgärder för att åtgärda problem som rör e-postflödet i organisationen.
+Administratörer kan använda instrumentpanelen för e-postflöde i Säkerhets- & efterlevnadscenter för att upptäcka trender, insikter och vidta åtgärder för att åtgärda problem relaterade till e-postflödet i organisationen.
 
 ![Instrumentpanelen för e-postflöde i Säkerhets- & Efterlevnadscenter](../../media/mail-flow-dashboard-v2.png)
 
@@ -61,7 +61,7 @@ De tillgängliga insikterna är:
 
 <sup>1</sup> Den här insikten visas **i området Rekommenderas** för dig på instrumentpanelen för e-postflöde först när problemet har upptäckts. Annars visas det inte.
 
-<sup>2</sup> Den här insikten visas inte på instrumentpanelen [](view-mail-flow-reports.md#forwarding-report) för e-postflöde, men visas på sidan med vidarebefordransrapport när problemet har upptäckts. Annars visas det inte.
+<sup>2</sup> Den här insikten visas inte på instrumentpanelen [](view-mail-flow-reports.md#forwarding-report) för e-postflöde, men visas på sidan Med vidarebefordransrapport när problemet har upptäckts. Annars visas det inte.
 
 ## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>Behörigheter som krävs för att visa instrumentpanelen för e-postflöde
 
@@ -82,4 +82,4 @@ Mer information om behörigheter finns i Behörigheter i Säkerhets- [& Efterlev
 
 Öppna Säkerhets- & efterlevnadscenter <https://protection.office.com> för, expandera **e-postflödet** och välj sedan **Instrumentpanel.**
 
-Gå direkt till instrumentpanelen för e-postflöde genom att <https://protection.office.com/mailflow/dashboard> öppna.
+Om du vill gå direkt till instrumentpanelen för e-postflöde öppnar du <https://protection.office.com/mailflow/dashboard> .

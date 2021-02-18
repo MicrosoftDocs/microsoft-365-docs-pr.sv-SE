@@ -14,27 +14,27 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Administratörer kan få mer information om felkoder som associeras med meddelandeleverans med hjälp av kopplingar (kallas även för e-postflödesinformation).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 864b69bf650a4e460376ae988a9ce4abc4c61ad4
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 32a98459ce3d3494e576b10d5c5b097393ee2335
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167077"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289669"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>E-postflödesinformation i EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection (EOP) utan Exchange Online-postlådor använder du vanligtvis en koppling för att dirigera e-postmeddelanden från EOP till din lokala e-postmiljö. Du kan också använda en koppling för att dirigera meddelanden från Microsoft 365 till en partnerorganisation. När Microsoft 365 inte kan leverera dessa meddelanden via anslutningen är de i kö i Microsoft 365. Microsoft 365 fortsätter att försöka leverera igen för varje meddelande i 24 timmar. Efter 24 timmar upphör det köade meddelandet att gälla och meddelandet returneras till den ursprungliga avsändaren i en rapport om utebliven leverans (kallas även NDR-rapport eller icke-leveranskavvisningsmeddelande).
 
 Microsoft 365 genererar ett fel när ett meddelande inte kan levereras med hjälp av en koppling. De vanligaste felen och deras lösningar beskrivs i den här artikeln. Sammantaget kallas köer och meddelandefel för olevererbara meddelanden som skickas via kopplingar _e-postflödesinformation._
 
-## <a name="error-code-450-44312-dns-query-failed"></a>Felkod: DNS-frågan 450 4.4.312 misslyckades
+## <a name="error-code-450-44312-dns-query-failed"></a>Felkod: 450 4.4.312 DNS-frågan misslyckades
 
 Vanligtvis innebär det här felet att Microsoft 365 försökte ansluta till den smarta värden som anges i kopplingen, men DNS-frågan för att hitta den smarta värdens IP-adresser misslyckades. Möjliga orsaker till det här felet är:
 
@@ -70,7 +70,7 @@ Vanligtvis innebär det här felet att Microsoft 365 stött på ett anslutningsf
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>Hur åtgärdar jag felkod 450 4.4.316?
 
-- Om du har postlådor i din lokala miljö måste du ändra brandväggsinställningarna för att tillåta anslutningar från Microsoft 365 IP-adresser på TCP-port 25 till dina lokala e-postservrar. En lista över Microsoft 365 IP-adresser finns i URL-adresser och IP-adressintervall för [Microsoft 365.](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)
+- Om du har postlådor i din lokala miljö måste du ändra brandväggsinställningarna för att tillåta anslutningar från Microsoft 365 IP-adresser på TCP-port 25 till dina lokala e-postservrar. En lista över Microsoft 365 IP-adresser finns i URL-adresser och IP-adressintervall för [Microsoft 365.](../../enterprise/urls-and-ip-address-ranges.md)
 
 - Om inga fler meddelanden ska levereras till din lokala miljö klickar du på **Åtgärda** nu i aviseringen så att Microsoft 365 omedelbart kan avvisa meddelanden med ogiltiga mottagare. Det här minskar risken för att organisationens kvot för ogiltiga mottagare överskrids, vilket kan påverka normal meddelandeleverans. Du kan även använda följande anvisningar för att åtgärda problemet manuellt:
 
@@ -94,7 +94,7 @@ Vanligtvis innebär det här felet att Microsoft 365 stött på ett anslutningsf
 
 Vanligtvis innebär det här felet att Microsoft 365 är ansluten till mål-e-postservern, men servern har svarat med ett omedelbart fel eller inte uppfyller anslutningskraven. Felinformationen förklarar problemet. Till exempel:
 
-- Mål-e-postservern svarade med ett felmeddelande om att tjänsten inte är tillgänglig, vilket betyder att servern inte kan behålla kommunikationen med Microsoft 365.
+- Mål-e-postservern svarade med felet "Tjänsten är inte tillgänglig", vilket betyder att servern inte kan behålla kommunikationen med Microsoft 365.
 
 - Kopplingen är konfigurerad till att kräva TLS, men mål-e-postservern stöder inte TLS.
 

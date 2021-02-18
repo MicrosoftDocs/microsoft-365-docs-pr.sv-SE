@@ -15,21 +15,21 @@ ms.collection:
 description: Administratörer kan lära sig hur de tillämpar standard- och strikt-principinställningar i skyddsfunktioner i Exchange Online Protection (EOP) och Microsoft Defender för Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f57b388716eca02741ba48b3e6b47b7cf9f28884
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: e8f254f2a1ea2dcf1a4b51594a5c340e91cb3f15
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150089"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290781"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Förinställda säkerhetsprinciper i EOP och Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 abonnemang 1 och abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Förinställda säkerhetsprinciper ger en central plats där användarna kan använda alla rekommenderade principer för skräppost, skadlig programvara och nätfiske på en gång. Principinställningarna kan inte konfigureras. De ställs i stället in av oss och baseras på våra observationer och upplevelser i datacenter för en balans mellan att hålla skadligt innehåll borta från användare utan att störa deras arbete.
 
@@ -52,7 +52,7 @@ En profil avgör skyddsnivån. Följande profiler är tillgängliga:
 - **Standardskydd:** En baslinjeskyddsprofil som är lämplig för de flesta användare.
 - **Strikt skydd:** En mer aggressiva skyddsprofil för valda användare (högvärdesmålen eller prioritetsanvändare).
 
-Du använder regler med villkor och undantag som avgör vilka profiler som profilerna ska tillämpas på eller inte.
+Du använder regler med villkor och undantag som avgör vilka profiler som profilerna är eller inte ska tillämpas på.
 
 Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_).
 
@@ -70,13 +70,13 @@ Förinställda säkerhetsprinciper använder motsvarande principer från de olik
 
   - [Principer för skydd mot skräppost](configure-your-spam-filter-policies.md) som heter Standard Preset Security **Policy** och Strict Preset **Security Policy.**
   - [Principer för skydd mot skadlig programvara](configure-anti-malware-policies.md) som heter Standard Preset Security **Policy** och Strict Preset **Security Policy.**
-  - [EOP-principer för skydd mot nätfiske](set-up-anti-phishing-policies.md#spoof-settings) med namnet **Standardförinställd** säkerhetsprincip och **Strikt** förinställd säkerhetsprincip (förfalskningsinställningar).
+  - [EOP Anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings) named **Standard Preset Security Policy** and Strict Preset Security **Policy** (spoof settings).
 
 - **Principer för Microsoft Defender för Office 365:** Detta omfattar organisationer med Microsoft 365 E5 eller Defender för Office 365-tilläggsprenumerationer:
 
   - Principer för skydd mot nätfiske i Microsoft Defender för Office 365 med namnet **Standardförvald** säkerhetsprincip och **Strikt förinställd** säkerhetsprincip, som omfattar:
 
-    - Samma inställningar [för förfalskning som](set-up-anti-phishing-policies.md#spoof-settings) finns i EOP-principer för skydd mot nätfiske.
+    - Samma inställningar [för förfalskning som](set-up-anti-phishing-policies.md#spoof-settings) finns i EOP:s principer för skydd mot nätfiske.
     - [Inställningar för personifiering](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Avancerade tröskelvärden för nätfiske](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
@@ -88,7 +88,7 @@ Observera att du kan använda EOP-skydd för olika användare än Microsoft Defe
 
 ### <a name="policy-settings-in-preset-security-policies"></a>Principinställningar i förinställda säkerhetsprinciper
 
-Du kan inte ändra principinställningarna i skyddsprofilerna. **Principinställningsvärdena** Standard och Strikt beskrivs i Rekommenderade inställningar för EOP och [Microsoft Defender för Office 365-säkerhet.](recommended-settings-for-eop-and-office365-atp.md) 
+Du kan inte ändra principinställningarna i skyddsprofilerna. **Standard-** och Strikt-principinställningsvärdena beskrivs i Rekommenderade inställningar för EOP och [Microsoft Defender för Office 365-säkerhet.](recommended-settings-for-eop-and-office365-atp.md) 
 
 ### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>Prioritetsordning för förinställda säkerhetsprinciper och andra principer
 
@@ -115,11 +115,11 @@ Med andra ord åsidosätter  inställningarna för principen Strikt skydd instä
 
   Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
-  **Obs!** Om du lägger till användare till motsvarande Azure Active Directory-roll i administrationscentret för Microsoft  365 får användarna de behörigheter som krävs i säkerhets- och efterlevnadscentret för & och behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  **Obs!** Om du lägger till användare till motsvarande Azure Active Directory-roll i administrationscentret för Microsoft  365 får användarna de behörigheter som krävs i säkerhets- och efterlevnadscentret för & och behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Använd Säkerhets- & center för att tilldela förinställda säkerhetsprinciper till användare
 
-1. Gå till förinställda säkerhetsprinciper för hothantering i Säkerhets- **och** & \>  \> Center.
+1. Gå till förvalda säkerhetsprinciper för & Säkerhets- **och** \>  \> **efterlevnadscenter.**
 
 2. Klicka **på Redigera** under **Standardskydd eller** Strikt **skydd.**
 
@@ -143,7 +143,7 @@ Med andra ord åsidosätter  inställningarna för principen Strikt skydd instä
 
    Klicka på Nästa när du är **klar.**
 
-4. Om din organisation har Microsoft Defender för Office 365 tas du till de **ATP-skydd** som gäller för steg för att identifiera de interna mottagare som Microsoft Defender för [Office 365-skydd](#policies-in-preset-security-policies) gäller för.
+4. Om din organisation har Microsoft Defender för Office 365 tas du till de **ATP-skydd** som gäller för steg för att identifiera de interna mottagare som Skydd i Microsoft Defender för [Office 365](#policies-in-preset-security-policies) gäller för.
 
    Inställningarna och beteendet är exakt som **EOP-skydden gäller för** steg.
 

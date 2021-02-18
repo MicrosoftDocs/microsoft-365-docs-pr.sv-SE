@@ -17,21 +17,21 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan ta reda på hur de kan använda Attack Plan för att köra simulerade nätfiske- och lösenordsattacker i sina organisationer med Microsoft 365 E5 eller Microsoft Defender för Office 365 Abonnemang 2.
+description: Administratörer kan lära sig hur de kan använda Attack Program för att köra simulerade nätfiske- och lösenordsattacker i sina organisationer med Microsoft 365 E5 eller Microsoft Defender för Office 365 Abonnemang 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9d3d55c17e5d77ee18bd822899fea2f64136e1a3
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 1e877900698d033cb99154b31e32fa04ff7d1010
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233606"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289587"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>AttackTat In Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**Gäller Microsoft** [Defender för Office 365 abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+**Gäller Microsoft** [Defender för Office 365 abonnemang 2](office-365-atp.md)
 
 Om din organisation har Microsoft Defender för Office 365 abonnemang 2, som innehåller funktioner för hotundersökning och [svar,](office-365-ti.md)kan du använda Attack i Säkerhets- & Efterlevnadscenter för att köra realistiska attackscenarier i organisationen. Dessa simulerade attacker kan hjälpa dig att identifiera och hitta sårbara användare innan en verklig attack påverkar din nederkant. Läs den här artikeln om du vill veta mer.
 
@@ -41,13 +41,13 @@ Om din organisation har Microsoft Defender för Office 365 abonnemang 2, som inn
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Gå till <https://protection.office.com/> för att öppna Säkerhets- och efterlevnadscenter. Attackattack är tillgänglig på **Threat Management** \> **Attack administration.** Gå direkt till attack nu, <https://protection.office.com/attacksimulator> öppna.
+- Gå till <https://protection.office.com/> för att öppna Säkerhets- och efterlevnadscenter. Attackattack är tillgänglig vid **hothanteringsattack.** \>  Gå direkt till attack nu, <https://protection.office.com/attacksimulator> öppna.
 
-- Mer information om tillgängligheten för Attack Defender för olika Microsoft 365-prenumerationer finns i [tjänstbeskrivningen för Microsoft Defender för Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+- Mer information om tillgängligheten för AttackTrafik för olika Microsoft 365-prenumerationer finns i [tjänstbeskrivningen för Microsoft Defender för Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
 - Du måste vara medlem i rollgrupperna **Organisationshantering** **eller Säkerhetsadministratör.** Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
-- Ditt konto måste konfigureras för multifaktorautentisering (MFA) för att skapa och hantera kampanjer i Attack Attack. Instruktioner finns i Konfigurera [multifaktorautentisering.](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)
+- Ditt konto måste konfigureras för multifaktorautentisering (MFA) för att skapa och hantera kampanjer i Attack Den här enheten. Instruktioner finns i Konfigurera [multifaktorautentisering.](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)
 
 - Nätfiskekampanjer samlar in och bearbetar händelser i 30 dagar. Historiska kampanjdata är tillgängliga i upp till 90 dagar efter att du startade kampanjen.
 
@@ -76,11 +76,11 @@ Två olika typer av nätfiskekampanjer är tillgängliga i Attack Det finns två
 
 ### <a name="create-a-spear-phishing-campaign"></a>Skapa en nätfiskekampanj
 
-En viktig del av en nätfiskekampanj är utseendet och känslan i e-postmeddelandet som skickas till de riktade mottagarna. Om du vill skapa och konfigurera e-postmeddelandet har du följande alternativ:
+En viktig del av alla nätfiskekampanjer är utseendet och känslan i e-postmeddelandet som skickas till de riktade mottagarna. Om du vill skapa och konfigurera e-postmeddelandet har du följande alternativ:
 
 - **Använd en inbyggd e-postmall:** Två inbyggda mallar är tillgängliga: Gåkampanj **och** **löneuppdatering.** Du kan ytterligare anpassa vissa, alla eller inga av e-postegenskaperna från mallen när du skapar och startar kampanjen.
 
-- **Skapa en återanvändbar e-postmall: När** du har skapat och sparat e-postmallen kan du använda den igen i kommande nätfiskekampanjer. Du kan ytterligare anpassa vissa, alla eller inga av e-postegenskaperna från mallen när du skapar och startar kampanjen.
+- **Skapa en återanvändningsbar e-postmall:** När du har skapat och sparat e-postmallen kan du använda den igen i kommande nätfiskekampanjer. Du kan ytterligare anpassa vissa, alla eller inga av e-postegenskaperna från mallen när du skapar och startar kampanjen.
 
 - **Skapa e-postmeddelandet i guiden:** Du kan skapa e-postmeddelandet direkt i guiden när du skapar och startar nätfiskekampanjen.
 
@@ -90,11 +90,11 @@ Om du ska använda någon av de inbyggda mallarna eller skapa e-postmeddelandet 
 
 1. I Säkerhets- & Säkerhets- och efterlevnadscenter går du **till Attack** för \> **hothantering.**
 
-2. På sidan **Simulera attacker klickar** du på Attackinformation i något av avsnitten Nätfiske **(information** om nätfiske) eller Nätfiske **(bifogad** **fil).**
+2. På sidan **Simulera attacker,** i antingen avsnitten **Nätfiske (autentiseringsinloggning)** eller **Nätfiske (bifogad fil),** klickar du **på Attackinformation.**
 
    Det spelar ingen roll var du skapar mallen. De tillgängliga alternativen i mallen är desamma för båda typerna av nätfiskeattacker.
 
-3. Klicka på Ny **mall** i  området Skapa mallar  på sidan Attackinformation som öppnas i avsnittet **Nätfiskemallar.**
+3. Klicka på **Ny** mall i  området Skapa mallar  på sidan Attackinformation som öppnas i avsnittet **Nätfiskemallar.**
 
 4. Guiden **Konfigurera nätfiskemall** startar i en ny utfällningsguide. Ange ett unikt visningsnamn för mallen i steget **Start** och klicka sedan på **Nästa.**
 
@@ -121,7 +121,7 @@ Om du ska använda någon av de inbyggda mallarna eller skapa e-postmeddelandet 
 
      > [!NOTE]
      >
-     > En url-ryktestjänst kan identifiera en eller flera av dessa URL:er som osäkra. Kontrollera url-adressens tillgänglighet i dina webbläsare som stöds innan du använder URL:en i en nätfiskekampanj.
+     > En url-ryktestjänst kan identifiera en eller flera av dessa URL:er som osäkra. Kontrollera om URL:en är tillgänglig i dina webbläsare som stöds innan du använder URL:en i en nätfiskekampanj.
 
    - **Anpassad webbadress till startsidan:** Ange en valfri landningssida där användarna tas om de klickar på nätfiskelänken och anger sina autentiseringsuppgifter. Den här länken ersätter standardlandningssidan. Om du till exempel har intern informationsutbildning kan du ange url:en här.
 
@@ -131,9 +131,9 @@ Om du ska använda någon av de inbyggda mallarna eller skapa e-postmeddelandet 
 
    Klicka på Nästa när du är **klar.**
 
-6. Skapa **meddelandetexten i** e-postmeddelandet i steget Skriv e-postmeddelande. Du kan använda fliken **E-post** (en RTF-redigerare) eller **fliken** Källa (obearbetad HTML-kod).
+6. Skapa **meddelandetexten i** e-postmeddelandet i steget Skriv e-postmeddelande. Du kan använda fliken **E-post** (en RTF-redigerare) eller **fliken** Källa (raw HTML-kod).
 
-   HTML-formateringen kan vara så enkel eller komplex som du vill ha den. Du kan infoga bilder och text för att göra meddelandet bättre att läsa i mottagarens e-postklient.
+   HTML-formateringen kan vara så enkel eller komplex som du vill ha den. Du kan infoga bilder och text för att göra meddelandet bättre i mottagarens e-postklient.
 
    - `${username}` infogar mottagarens namn.
 
@@ -149,7 +149,7 @@ Om du ska använda någon av de inbyggda mallarna eller skapa e-postmeddelandet 
 
 2. Gör något **av följande** val på sidan Simulera attacker baserat på vilken typ av kampanj du vill skapa:
 
-   - Klicka på Starta attack eller klicka på Starta attackinformation i avsnittet **Om** nätfiske **(autentiseringsuppgifter)**  \> .
+   - Klicka på Starta attack eller klicka  på Starta attack med information om nätfiske (autentiseringsuppgifter) **i** avsnittet Om  \> **nätfiske**(autentiseringsstart).
 
    - Klicka på Starta attack eller  klicka på Attack **Details** Launch Attack i avsnittet Nätfiske **(bifogad** \> **fil).**
 
@@ -166,7 +166,7 @@ Om du ska använda någon av de inbyggda mallarna eller skapa e-postmeddelandet 
 
 4. Gör något **av följande** i steget Målmottagare:
 
-   - Klicka **på Adressbok** för att välja mottagare (användare eller grupper) för kampanjen. Varje riktad mottagare måste ha en Exchange Online-postlåda. Om du klickar **på Filtrera** **och använd** utan att ange sökvillkor returneras alla mottagare och läggs till i kampanjen.
+   - Klicka **på Adressbok** för att välja mottagare (användare eller grupper) för kampanjen. Varje mottagare måste ha en Exchange Online-postlåda. Om du klickar **på Filtrera** **och använd** utan att ange sökvillkor returneras alla mottagare och läggs till i kampanjen.
 
    - Klicka **på** Importera **och sedan på Importera** fil för att importera en fil med kommaavgränsade värden (CSV) eller en radavgränsad fil med e-postadresser. Varje rad måste innehålla mottagarens e-postadress.
 
@@ -199,13 +199,13 @@ Om du ska använda någon av de inbyggda mallarna eller skapa e-postmeddelandet 
      >
      > - Alla URL:er är avsiktligt http, inte https.
      >
-     > - En url-ryktestjänst kan identifiera en eller flera av dessa URL:er som osäkra. Kontrollera url-adressens tillgänglighet i dina webbläsare som stöds innan du använder URL:en i en nätfiskekampanj.
+     > - En url-ryktestjänst kan identifiera en eller flera av dessa URL:er som osäkra. Kontrollera om URL:en är tillgänglig i dina webbläsare som stöds innan du använder URL:en i en nätfiskekampanj.
      >
      > - Du måste välja en URL-adress. Vid kampanjer mot nätfiske **(bifogad fil)** kan du ta bort länken från brödtexten i  meddelandet i nästa steg (annars innehåller meddelandet både en länk och en bifogad fil).
 
    - **Typ av** bifogad fil: Den här inställningen är endast tillgänglig i **kampanjer för nätfiske (bifogad** fil). Klicka på listrutan och **välj. DOCX** eller **. PDF** från listan.
 
-   - **Namn på** bifogad fil: Den här inställningen är endast tillgänglig i **kampanjer för nätfiske (bifogad** fil). Ange ett filnamn för den bifogade filen .docx eller .pdf.
+   - **Namn på** bifogad fil: Den här inställningen är endast tillgänglig i kampanjer för **nätfiske (bifogad** fil). Ange ett filnamn för den bifogade filen .docx eller .pdf.
 
    - **Anpassad webbadress till startsidan:** Ange en valfri landningssida där användarna tas om de klickar på nätfiskelänken och anger sina autentiseringsuppgifter. Den här länken ersätter standardlandningssidan. Om du till exempel har intern informationsutbildning kan du ange url:en här.
 
@@ -213,9 +213,9 @@ Om du ska använda någon av de inbyggda mallarna eller skapa e-postmeddelandet 
 
    Klicka på Nästa när du är **klar.**
 
-6. Skapa **meddelandetexten i** e-postmeddelandet i steget Skriv e-postmeddelande. Om du valde en mall i **Start-steget** är meddelandetexten redan konfigurerad, men du kan anpassa den. Du kan använda fliken **E-post** (en RTF-redigerare) eller **fliken** Källa (obearbetad HTML-kod).
+6. Skapa **meddelandetexten i** e-postmeddelandet i steget Skriv e-postmeddelande. Om du valde en mall i **Start-steget** är meddelandetexten redan konfigurerad, men du kan anpassa den. Du kan använda fliken **E-post** (en RTF-redigerare) eller **fliken** Källa (raw HTML-kod).
 
-   HTML-formateringen kan vara så enkel eller komplex som du vill ha den. Du kan infoga bilder och text för att göra meddelandet bättre att läsa i mottagarens e-postklient.
+   HTML-formateringen kan vara så enkel eller komplex som du vill ha den. Du kan infoga bilder och text för att göra meddelandet bättre i mottagarens e-postklient.
 
    - `${username}` infogar mottagarens namn.
 
@@ -236,16 +236,16 @@ En *lösenordsattack* försöker gissa lösenord för användarkonton i en organ
 
 I AttackTat finns det två olika typer av lösenordsattackkampanjer som du kan använda för att testa komplexiteten på användarnas lösenord:
 
-- **Råstyrt** lösenord (ordlisteattack)  : En råstyrt attack eller ordlisteattack använder en stor ordlistefil med lösenord för ett användarkonto och hoppas att en av dem fungerar (många lösenord mot ett konto).  Felaktiga lösenordslåsningar hjälper till att avstyra råstyra lösenordsattacker.
+- **Råstyrt** lösenord (ordlisteattack)  : En rå kraft- eller ordlisteattack använder en stor ordlistefil med lösenord för ett användarkonto och hoppas att ett av dem fungerar (många lösenord mot ett konto).  Felaktiga lösenordslåsningar hjälper till att avstyra råstyra lösenordsattacker.
 
-  För ordlisteattacken kan du ange ett eller flera lösenord att prova (manuellt angivna eller i en uppladdad fil), och du kan ange en eller flera användare.
+  För ordlisteattacken kan du ange ett eller flera lösenord att prova (manuellt anges eller i en uppladdad fil) och du kan ange en eller flera användare.
 
-- **Lösenordsattack:** En *lösenordsattack* använder samma noggrant övervägde lösenord mot en lista med användarkonton (ett lösenord mot många konton). Lösenordsattacker är svårare att identifiera än råstyra lösenordsattacker (sannolikheten för att en attack lyckas ökar när en attacker försöker ett lösenord med dussintals eller hundratals konton utan risk för att sätt användarens felaktiga lösenord utelåst).
+- **Lösenordsattack:** En *lösenordsattack* använder samma noggrant övervägde lösenord mot en lista med användarkonton (ett lösenord mot många konton). Lösenordsattacker är svårare att identifiera än råstyra lösenordsattacker (sannolikheten för att en attack lyckas ökar när en attacker försöker ett lösenord med dussintals eller hundratals konton utan risk för att utlåsa användarens felaktiga lösenord).
 
   För lösenordsattacken kan du bara ange ett lösenord att prova och du kan ange en eller flera användare.
 
 > [!NOTE]
-> Lösenordsattackerna i Attack Attack Pass användarnamn och lösenord Basic begär till en slutpunkt, så de fungerar även med andra autentiseringsmetoder (AD FS, synkronisering av lösenordshashar, direktuppspelning, PingFederate osv.). För användare som har MFA aktiverat, även om lösenordsattacken försöker med sitt faktiska lösenord, registreras försöket alltid  som ett fel (MFA-användare visas alltså aldrig i antalet lyckade försök för kampanjen). Det här är det förväntade resultatet. MFA är en primär metod för att skydda mot lösenordsattacker.
+> Lösenordsattackerna i Attack Pass användarnamn och lösenord Basic begär till en slutpunkt, så de fungerar även med andra autentiseringsmetoder (AD FS, synkronisering av lösenordshashar, direktuppspelning, PingFederate osv.). För användare som har MFA aktiverat, även om lösenordsattacken försöker med sitt faktiska lösenord, registreras försöket alltid  som ett fel (MFA-användare visas alltså aldrig i antalet lyckade försök för kampanjen). Det här är det förväntade resultatet. MFA är en primär metod för att skydda mot lösenordsattacker.
 
 ### <a name="create-and-launch-a-password-attack-campaign"></a>Skapa och starta en kampanj för lösenordsattack
 
@@ -255,13 +255,13 @@ I AttackTat finns det två olika typer av lösenordsattackkampanjer som du kan a
 
    - Klicka på Starta attack eller klicka på  Starta attackinformation i avsnittet Råstyrt tvinga lösenord (Ordlisteattack).   \> 
 
-   - i avsnittet **Lösenordsattack klickar** du på Starta attack **eller klickar** på **Starta** \> attackinformation. 
+   - i avsnittet **Lösenordsattack klickar** du på **Starta** attack eller klickar på Starta **attackinformation.** \> 
 
 3. Guiden **Konfigurera lösenordsattack** startar i en ny utfällklar. Ange ett **unikt** visningsnamn för kampanjen i steget Start och klicka sedan på **Nästa.**
 
 4. Gör något **av följande** i steget Målanvändare:
 
-   - Klicka **på Adressbok** för att välja mottagare (användare eller grupper) för kampanjen. Varje riktad mottagare måste ha en Exchange Online-postlåda. Om du klickar **på Filtrera** **och använd** utan att ange sökvillkor returneras alla mottagare och läggs till i kampanjen.
+   - Klicka **på Adressbok** för att välja mottagare (användare eller grupper) för kampanjen. Varje mottagare måste ha en Exchange Online-postlåda. Om du klickar **på Filtrera** **och använd** utan att ange sökvillkor returneras alla mottagare och läggs till i kampanjen.
 
    - Klicka **på** Importera **och sedan på Importera** fil för att importera en fil med kommaavgränsade värden (CSV) eller en radavgränsad fil med e-postadresser. Varje rad måste innehålla mottagarens e-postadress.
 
@@ -271,7 +271,7 @@ I AttackTat finns det två olika typer av lösenordsattackkampanjer som du kan a
 
    - **Råstyrt lösenord (ordlisteattack)**: Gör något av följande:
 
-     - **Ange lösenord manuellt:** Skriv ett lösenord **i rutan Tryck** på Retur för att lägga till ett lösenord och tryck sedan på RETUR. Upprepa det här steget så många gånger det behövs.
+     - **Ange lösenord manuellt:** Skriv ett lösenord **i rutan** Tryck på Retur för att lägga till ett lösenord och tryck sedan på RETUR. Upprepa det här steget så många gånger det behövs.
 
      - **Ladda upp lösenord från en ordlistefil:** Klicka på Ladda upp om du vill importera en befintlig textfil som innehåller ett lösenord på varje rad och en tom sista rad.  Textfilen måste vara 10 MB eller mindre och får inte innehålla fler än 3 0000 lösenord.
 
@@ -285,9 +285,9 @@ I AttackTat finns det två olika typer av lösenordsattackkampanjer som du kan a
 
 När du har lanserat en kampanj kan du kontrollera förloppet och resultaten på **huvudsidan För simulera attacker.**
 
-Aktiva kampanjer visar ett statusfält, ett slutfört procentvärde och antalet "(slutförda användare) (totalt antal användare)". Om du **klickar på** uppdatera-knappen uppdateras förloppet för alla aktiva kampanjer. Du kan också klicka på **Avbryt** om du vill stoppa en aktiv kampanj.
+Aktiva kampanjer visar ett statusfält, ett slutfört procentvärde och antalet "(slutförda användare) (totalt antal användare)". Om du **klickar på** knappen Uppdatera uppdateras förloppet för alla aktiva kampanjer. Du kan också klicka på **Avbryt** om du vill stoppa en aktiv kampanj.
 
-När kampanjen är klar har statusen ändras till **Attack slutförd.** Du kan visa resultatet av kampanjen genom att göra något av följande:
+När kampanjen är klar har statusen ändras till **Attack.** Du kan visa resultatet av kampanjen genom att göra något av följande:
 
 - På huvudsidan **För simulera** attacker klickar **du på Visa** rapport under namnet på kampanjen.
 
@@ -303,7 +303,7 @@ Följande information finns på sidan **Attackinformation** för varje kampanj:
 
 - **Totalt antal riktade användare**
 
-- **Lyckade försök:** Antalet användare som klickade på länken och **angav** sina autentiseringsuppgifter *(val av* användarnamn och lösenord).
+- **Lyckade försök:** Antalet användare som klickade på länken **och** angav sina autentiseringsuppgifter *(val av* användarnamn och lösenord).
 
 - **Övergripande framgångsfrekvens**: En procentandel som beräknas med Lyckades försök **Totalt antal**  /  **användare riktad.**
 
@@ -311,7 +311,7 @@ Följande information finns på sidan **Attackinformation** för varje kampanj:
 
 - **Genomsnittligt** klick: Summan av hur lång tid det tog att klicka på länken dividerat med antalet användare som klickade på länken.
 
-- **Klicka på Framgång:** En procentandel som beräknas av (antalet användare som klickade på länken) **/Totalt antal riktade användare.**
+- **Klicka på Framgång:** En procentandel som beräknas utifrån (antalet användare som klickade på länken) **/Totalt antal riktade användare.**
 
 - **Snabbaste** autentiseringsuppgifterna: Hur lång tid det tog den första användaren att ange sina autentiseringsuppgifter efter att du startat kampanjen.
 
@@ -351,7 +351,7 @@ Följande information finns på sidan **Attackinformation** för varje kampanj:
 
 - **Genomsnittlig öppen tid för bifogade** filer: Summan av hur lång tid det tog att öppna den bifogade filen dividerat med antalet användare som öppnade den bifogade filen.
 
-- **Antal öppna bifogade filer som lyckats:** En procentandel som beräknas av (antalet användare som öppnade den bifogade filen) **/Totalt antal riktade användare.**
+- **Antal användare som öppnat den** bifogade filen som lyckades: En procentandel som beräknas av (antalet användare som öppnade den bifogade filen) **/Totalt antal riktade användare.**
 
 ### <a name="brute-force-password-dictionary-attack-campaign-results"></a>Kampanjresultat för råstyrt lösenord (ordlisteattack)
 

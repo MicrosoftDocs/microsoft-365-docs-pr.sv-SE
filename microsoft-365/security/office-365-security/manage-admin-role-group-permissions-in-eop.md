@@ -13,19 +13,19 @@ ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Administratörer kan läsa om hur de tilldelar eller tar bort behörigheter i administrationscentret för Exchange (EAC) i Exchange Online Protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b53023521f477b5e864424ec648ccf7e5b749d0c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: ce272985f195f44c57848e6861cefb64431698b9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166993"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289931"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>Hantera rollgrupper i fristående EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
--  [Exchange Online Protection fristående](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection fristående](exchange-online-protection-overview.md)
 
 I fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor kan du använda administrationscentret för Exchange (EAC) för att lägga till användare i rollgrupper. Om du lägger till en användare i en rollgrupp får användaren behörighet att utföra särskilda administrativa uppgifter. Du kan också ta bort användare från rollgrupper.
 
@@ -37,18 +37,18 @@ Mer information om roller och rollgrupper finns i [Behörigheter i fristående E
 
 - Information om hur du öppnar fristående EOP PowerShell [finns i Ansluta till Exchange Online Protection PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)
 
-- Du måste ha tilldelats behörigheter i Exchange Online Protection innan du kan utföra procedurerna i den här artikeln. Specifikt behöver du **rollhanteringsrollen,** som är tilldelad **rollgruppen Organisationshantering** som standard. Mer information finns i [Behörigheter i fristående EOP](feature-permissions-in-eop.md) och Använda EAC för att [ändra listan över medlemmar i rollgrupper.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
+- Du måste ha tilldelats behörigheter i Exchange Online Protection innan du kan utföra procedurerna i den här artikeln. Specifikt behöver du **rollhanteringsrollen,** som är tilldelad **rollgruppen Organisationshantering** som standard. Mer information finns i [Behörigheter i fristående EOP](feature-permissions-in-eop.md) [och Använda EAC för att ändra listan över medlemmar i rollgrupper.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
 - Mer information om kortkommandon som kan gälla för procedurerna i den här artikeln finns i Kortkommandon för [administrationscentret för Exchange i Exchange Online.](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
-> Har du problem? Be om hjälp i [forumet för Exchange Online Protection.](https://go.microsoft.com/fwlink/p/?linkId=285351)
+> Har du problem? Be om hjälp i [forumet för Exchange Online Protection.](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE)
 
 ## <a name="use-the-eac-to-manage-role-groups"></a>Använda EAC för att hantera rollgrupper
 
 ### <a name="use-the-eac-to-view-role-groups"></a>Använda EAC för att visa rollgrupper
 
-1. Gå till Behörighetsadministratörsroller **i** \> EAC. Här listas alla rollgrupper i din organisation.
+1. Gå till Behörighetsadministratörsroller **i** \> EAC. Här visas alla rollgrupper i din organisation.
 
 2. Välj en rollgrupp. I informationsfönstret visas **rollgruppens** **namn,** beskrivning, **tilldelade** roller och hanteras av.  Du kan också visa den här informationen genom att klicka **på** ![ redigeringsikonen. ](../../media/ITPro-EAC-EditIcon.png)
 
@@ -58,7 +58,7 @@ När du skapar en ny rollgrupp kan du konfigurera alla inställningar själv (n�
 
 1. Gå till Behörighetsadministratörsroller i EAC  \> och gör sedan något av följande:
 
-   - **Skapa en ny rollgrupp manuellt: Klicka** på **ikonen Lägg** till lägg ![ ](../../media/ITPro-EAC-AddIcon.png) till.
+   - **Skapa en ny rollgrupp manuellt: Klicka** på **ikonen Lägg** ![ ](../../media/ITPro-EAC-AddIcon.png) till.
 
    - **Kopiera en befintlig rollgrupp:** Markera den rollgrupp som du vill kopiera och klicka sedan på ikonen **Kopiera** ![ ](../../media/ITPro-EAC-CopyIcon.png) kopia.
 
@@ -70,7 +70,7 @@ När du skapar en ny rollgrupp kan du konfigurera alla inställningar själv (n�
 
     - **Roller:** Klicka **på ikonen** Lägg till eller ta bort om du vill välja eller ändra ![ ](../../media/ITPro-EAC-AddIcon.png)  ![ ](../../media/ITPro-EAC-RemoveIcon.gif) rollerna som har tilldelats rollgruppen.
 
-    - **Medlemmar:** Klicka på **ikonen Lägg** till eller ![ ta ](../../media/ITPro-EAC-AddIcon.png) **bort** om du vill ![ ändra ](../../media/ITPro-EAC-RemoveIcon.gif) rollgruppmedlemskapet.
+    - **Medlemmar:** Klicka på **ikonen Lägg** till eller ![ ta ](../../media/ITPro-EAC-AddIcon.png) **bort** om du vill ändra medlemskap ![ i ](../../media/ITPro-EAC-RemoveIcon.gif) rollgrupper.
 
 3. När du är klar klickar du på **Spara** för att skapa rollgruppen.
 
@@ -90,13 +90,13 @@ Samma alternativ är tillgängliga när du ändrar rollgrupper som när du skapa
 
 #### <a name="use-the-eac-modify-the-list-of-members-in-role-groups"></a>Använd EAC för att ändra listan över medlemmar i rollgrupper
 
-1. I EAC går  du till \> **Behörighetsadministratörsroller,** väljer den rollgrupp som du vill ändra och klickar sedan på **ikonen** ![ Redigera ](../../media/ITPro-EAC-EditIcon.png) redigera.
+1. I EAC går du **till** \> **Behörighetsadministratörsroller,** väljer den rollgrupp som du vill ändra och klickar sedan på **ikonen** ![ Redigera ](../../media/ITPro-EAC-EditIcon.png) redigering.
 
 2. Gör något av följande i avsnittet Medlemmar på sidan **med** rollgruppegenskaper som öppnas:
 
    - Klicka **på Lägg till** lägg ![ till-ikon. ](../../media/ITPro-EAC-AddIcon.png) Leta rätt på den användare som du vill lägga till på sidan som visas och klicka sedan på **lägg till ->.** Välj användare och klicka **på lägg >** gånger som behövs. Klicka på OK när du är **klar.**
 
-   - Markera de användare som du vill ta bort och klicka sedan på ikonen **Ta** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) bort.
+   - Markera de användare du vill ta bort och klicka sedan på ikonen **Ta** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) bort.
 
 3. Klicka på **Spara** när du är klar.
 

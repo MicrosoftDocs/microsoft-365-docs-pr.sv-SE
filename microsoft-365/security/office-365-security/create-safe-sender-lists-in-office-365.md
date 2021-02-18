@@ -17,21 +17,21 @@ ms.custom:
 description: Administratörer kan läsa mer om de tillgängliga och rekommenderade alternativen för att tillåta inkommande meddelanden i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 92229f0324eb9c05b233e5c4b0bc9f1bd7ab2e39
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: ddcd6240cfc80350920999f9fc1e8ea188834553
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165565"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289717"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Skapa listor över betrodda avsändare i EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Om du är Microsoft 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection-kund (EOP) utan Exchange Online-postlådor erbjuder EOP flera sätt att säkerställa att användarna får e-post från betrodda avsändare. De här alternativen omfattar Exchange-e-postflödesregler (kallas även transportregler), Betrodda avsändare i Outlook, listan över tillåtna IP-adresser (anslutningsfiltrering) och listor över tillåtna avsändare eller domänlistor som är tillåtna i principer för skydd mot skräppost. Sammantaget kan du tänka på de här alternativen som listor _över betrodda avsändare._
 
@@ -66,7 +66,7 @@ I följande exempel förutsätts att du behöver e-contoso.com att hoppa över s
 
 2. Konfigurera någon av följande inställningar:
 
-   - **Villkor för e-postflödesregel:** **Ett meddelandehuvud** innehåller något av följande ord \>  \> **Rubriknamn:** `Authentication-Results` \> **Rubrikvärde**: `dmarc=pass` eller `dmarc=bestguesspass` .
+   - **Villkor för e-postflödesregel:** **Ett meddelandehuvud** innehåller något av följande ord \>  \> **Rubriknamn:** `Authentication-Results` \> **Rubrikvärde**: `dmarc=pass` `dmarc=bestguesspass` eller.
 
      Det här villkoret kontrollerar e-postautentiseringsstatusen för den avsändande e-postdomänen för att säkerställa att den avsändande domänen inte kapas. Mer information om e-postautentisering finns [i SPF,](set-up-spf-in-office-365-to-help-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)och [DMARC.](use-dmarc-to-validate-email.md)
 
@@ -105,7 +105,7 @@ I följande exempel förutsätts att du behöver e-contoso.com att hoppa över s
 > [!CAUTION]
 > Den här metoden innebär en hög risk för att attacker ska leverera e-post till Inkorgen som annars skulle filtreras. Men listorna Betrodda avsändare och Betrodda domäner hindrar inte skadlig programvara eller betrodda nätfiskemeddelanden från att filtreras.
 
-I stället för en organisationsinställning kan användare eller administratörer lägga till avsändaradresserna i listan Betrodda avsändare i postlådan. Instruktioner finns i Konfigurera [skräppostinställningar för Exchange Online-postlådor i Office 365.](configure-junk-email-settings-on-exo-mailboxes.md) Det här är inte ett bra sätt i de flesta situationer eftersom avsändare kringgår delar av filtreringsstacken. Även om du litar på avsändaren kan avsändaren fortfarande komprometteras och skicka skadligt innehåll. Det är bäst att du låter våra filter göra det som behövs för att kontrollera varje meddelande och sedan rapportera det falska [positiva/negativa](report-junk-email-messages-to-microsoft.md) till Microsoft om våra filter fick det fel. Förbikoppling av filtreringsstacken stör även [ZAP.](zero-hour-auto-purge.md)
+I stället för en organisationsinställning kan användare eller administratörer lägga till avsändaradresserna i listan Betrodda avsändare i postlådan. Instruktioner finns i Konfigurera [skräppostinställningar för Exchange Online-postlådor i Office 365.](configure-junk-email-settings-on-exo-mailboxes.md) Det här är inte ett bra sätt i de flesta situationer eftersom avsändare kringgår delar av filtreringsstacken. Även om du litar på avsändaren kan avsändaren fortfarande komprometteras och skicka skadligt innehåll. Det är bäst att du låter våra filter göra det som behövs för att kontrollera varje meddelande och sedan rapportera det falska [positiva/negativa](report-junk-email-messages-to-microsoft.md) till Microsoft om våra filter fick det fel. Förbikoppling av filtreringsstack stör även [ZAP.](zero-hour-auto-purge.md)
 
 När meddelanden hoppar över skräppostfiltrering på grund av en användares lista över betrodda avsändare innehåller **rubrikfältet X-Forefront-Antispam-Report** värdet, vilket anger att filtrering av skräppost, förfalskning och nätfiske har `SFV:SFE` kringgåts.
 
@@ -122,7 +122,7 @@ Om du inte kan använda e-postflödesregler enligt beskrivningen ovan är det n�
 - Regelbundet granska posterna i listan över tillåtna IP-adresser och ta bort poster som du inte längre behöver.
 
 > [!CAUTION]
-> Utan ytterligare verifiering, som e-postflödesregler, hoppar e-post från källor i listan över tillåtna IP-adresser över skräppostfiltrering och avsändarautentisering (SPF, DKIM, DMARC). Då skapas en hög risk för att attacker ska leverera e-post till Inkorgen som annars skulle filtreras. Men listan över tillåtna IP-adresser förhindrar inte att skadlig programvara eller nätfiskemeddelanden med hög säkerhet filtreras.
+> Utan ytterligare verifiering, som e-postflödesregler, hoppar e-post från källor i listan över tillåtna IP-adresser över skräppostfiltrering och avsändarautentisering (SPF, DKIM, DMARC). Då skapas en hög risk för att attacker ska leverera e-post till Inkorgen som annars skulle filtreras. Men listan över tillåtna IP-adresser förhindrar inte att skadlig programvara eller nätfiskemeddelanden med hög konfidens filtreras.
 
 ## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>Använda tillåtna avsändarlistor eller listor med tillåtna domäner
 

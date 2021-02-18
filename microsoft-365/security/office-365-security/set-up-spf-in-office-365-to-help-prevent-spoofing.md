@@ -19,21 +19,21 @@ ms.custom:
 description: Lär dig hur du uppdaterar en DNS-post (Domain Name Service) för att använda en SPF-post (Sender Policy Framework) med din anpassade domän i Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fbed28047b88a3eff75f574fc4d2581a75f15518
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 52997150302805ea5085028e9a8f1cd5f745d841
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166237"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290459"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Konfigurera SPF för att förhindra förfalskning
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Den här artikeln beskriver hur du uppdaterar en DNS-post (Domain Name Service) så att du kan använda e-postautentisering av Sender Policy Framework (SPF) med din anpassade domän i Office 365.
 
@@ -48,7 +48,7 @@ Innan du skapar eller uppdaterar SPF TXT-posten för Office 365 i extern DNS må
 
 Samla in följande information:
 
-- Aktuell SPF TXT-post för din anpassade domän, om en finns. Instruktioner finns i [Samla den information du behöver för att skapa DNS-poster i Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
+- Aktuell SPF TXT-post för din anpassade domän, om en finns. Instruktioner finns i [Samla den information du behöver för att skapa DNS-poster i Office 365](../../admin/get-help-with-domains/information-for-dns-records.md).
 
 - Gå till din eller dina meddelandeserver och ta reda på de externa IP-adresserna (behövs från alla lokala meddelandeservrar). Till exempel: **131.107.2.200**.
 
@@ -94,7 +94,7 @@ Samla in följande information:
 
    Om du redan har distribuerats i Office 365 och har konfigurerat dina SPF TXT-poster för din anpassade domän och migrerar till Office 365 Germany måste du uppdatera din SPF TXT-post. Det gör du genom att ändra `include:spf.protection.outlook.com` till `include:spf.protection.outlook.de`.
 
-3. När du har skapat din SPF TXT-post måste du uppdatera posten i DNS. Du kan bara ha en SPF TXT-post för en domän. Om det redan finns en SPF TXT-post ska du inte lägga till en ny post utan i stället uppdatera den befintliga posten. Gå till [Skapa DNS-poster för Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) och klicka på länken för din DNS-värd.
+3. När du har skapat din SPF TXT-post måste du uppdatera posten i DNS. Du kan bara ha en SPF TXT-post för en domän. Om det redan finns en SPF TXT-post ska du inte lägga till en ny post utan i stället uppdatera den befintliga posten. Gå till [Skapa DNS-poster för Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) och klicka på länken för din DNS-värd.
 
 4. Testa din SPF TXT-post.
 
@@ -137,6 +137,6 @@ Avancerade exempel och en mer detaljerad diskussion om SPF-syntax som stöds, f�
 
  SPF har utformats för att hjälpa till att förhindra förfalskning men det finns förfalskningsmetoder som SPF inte skyddar mot. För att skydda mot dessa ska du, efter att ha konfigurerat SPF, även konfigurera DKIM och DMARC för Office 365.
 
-[DKIM](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide) e-postautentiseringens mål är att bevisa att innehållet i e-postmeddelandet inte har manipulerats.
+[DKIM](use-dkim-to-validate-outbound-email.md) e-postautentiseringens mål är att bevisa att innehållet i e-postmeddelandet inte har manipulerats.
 
-[DMARC](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide) E-postautentiseringens mål är att se till att SPF- och DKIM-information matchar Från-adressen.
+[DMARC](use-dmarc-to-validate-email.md) E-postautentiseringens mål är att se till att SPF- och DKIM-information matchar Från-adressen.

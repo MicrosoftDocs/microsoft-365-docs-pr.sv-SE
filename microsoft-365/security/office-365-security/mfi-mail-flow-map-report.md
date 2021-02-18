@@ -14,21 +14,21 @@ ms.custom:
 description: Administratörer kan lära sig att använda e-postflödeskartan i instrumentpanelen för e-postflöde i Säkerhets- & och efterlevnadscenter för att visualisera och spåra hur e-post flödar till och från organisationen via kopplingar och utan att använda kopplingar.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 87a5780bd2485ba6ad3b295c09a30a4d7fc34277
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 2f507f7f01999492d17e168a2a56da906bfcb52d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150566"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290591"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>E-postflödeskarta i Säkerhets- & Efterlevnadscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 abonnemang 1 och abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 **E-postflödeskartan** [i](mail-flow-insights-v2.md) instrumentpanelen för e-postflöde i Säkerhets- & [efterlevnadscenter](https://protection.office.com) ger insyn i hur e-post flödar genom organisationen. Du kan använda den här informationen för att lära dig mönster, identifiera problem och åtgärda problem när de uppstår.
 
@@ -58,7 +58,7 @@ Relaterade insikter visas under e-postflödeskartan om de är tillgängliga (til
 
 ## <a name="details-table-view-for-the-mail-flow-map"></a>Detaljtabellvy för e-postflödeskartan
 
-Om du **klickar på tabellen Visa** information i en rapportvy visas följande information:
+Om du **klickar på Tabellen Visa** information i en rapportvy visas följande information:
 
 - **Datum**
 - **Kategori**

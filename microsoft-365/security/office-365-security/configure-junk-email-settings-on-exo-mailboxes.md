@@ -14,24 +14,24 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan läsa mer om hur de konfigurerar skräppostinställningarna i Exchange Online-postlådor. Många av de här inställningarna är tillgängliga för användare i Outlook eller Outlook på webben.
+description: Administratörer kan läsa mer om hur de konfigurerar inställningarna för skräppost i Exchange Online-postlådor. Många av de här inställningarna är tillgängliga för användare i Outlook eller Outlook på webben.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2aa75376a431ded5abf44ad17ddad4f0ac731fa8
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 31f247ec74f1780d05aaeb79753abd0075401d9a
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165697"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290123"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurera inställningar för skräppost i Exchange Online-postlådor
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 I Microsoft 365-organisationer med postlådor i Exchange Online styrs inställningarna för skydd mot skräppost i organisationen av Exchange Online Protection (EOP). Mer information finns i [Skydd mot skräppost i EOP.](anti-spam-protection.md)
 
@@ -41,11 +41,11 @@ Men det finns också särskilda inställningar för skydd mot skräppost som adm
 
   - Flytta meddelanden till mappen Skräppost baserat på principer mot **skräppost:** När en princip  mot skräppost är konfigurerad med åtgärden Flytta meddelandet till mappen Skräppost för en skräppostfiltreringsregel, flyttar skräppostfilterregeln meddelandet till mappen Skräppost när meddelandet har levererats till postlådan. Mer information om skräppostfiltreringsprinciper i principer mot skräppost finns i Konfigurera principer för skydd [mot skräppost i EOP.](configure-your-spam-filter-policies.md) Om ZAP (Zero-Hour Auto Purge) på samma sätt bestämmer att ett levererat meddelande är skräppost eller  nätfiske flyttar skräppostfiltret meddelandet till mappen Skräppost för att flytta meddelandet till skräppostmappens filtreringsåtgärder. Mer information om ZAP finns i [Zap (Zero-hour auto purge) i Exchange Online.](zero-hour-auto-purge.md)
 
-  - **Skräppostinställningar** som användarna konfigurerar åt sig själva i  Outlook eller Outlook på webben: Samlingen Betrodda avsändare är listan Betrodda avsändare, Listan Betrodda mottagare och Listan Spärrade avsändare i varje postlåda. Posterna i listorna avgör om skräppostregeln flyttar meddelandet till Inkorgen eller mappen Skräppost. Användare kan konfigurera samlingen med listor över säkra listor för sin egen postlåda i Outlook eller Outlook på webben (hette tidigare Outlook Web App). Administratörer kan konfigurera samlingslistan för alla användares postlådor.
+  - **Skräppostinställningar** som användarna konfigurerar åt sig själva i  Outlook eller Outlook på webben: Samlingen Betrodda avsändare är listan Betrodda avsändare, Listan Betrodda mottagare och Listan Spärrade avsändare i varje postlåda. Posterna i de här listorna avgör om skräppostregeln flyttar meddelandet till Inkorgen eller mappen Skräppost. Användare kan konfigurera samlingen med listor över säkra listor för sin egen postlåda i Outlook eller Outlook på webben (hette tidigare Outlook Web App). Administratörer kan konfigurera samlingslistan för alla användares postlådor.
 
 När skräppostregeln har aktiverats för postlådan kan EOP flytta meddelanden till mappen Skräppost  baserat på skräppostfiltreringsåtgärden Flytta meddelandet till mappen Skräppost eller listan Spärrade avsändare i postlådan och förhindra att meddelanden levereras till mappen Skräppost (baserat på listan Betrodda avsändare i postlådan).
 
- När skräppostregeln är inaktiverad för postlådan kan EOP inte flytta meddelanden till mappen  Skräppost baserat på skräppostfiltreringsåtgärden Flytta meddelandet till mappen Skräppost eller listan över säkra i postlådan.
+ När skräppostregeln är inaktiverad för postlådan kan EOP inte flytta meddelanden till mappen  Skräppost baserat på åtgärden skräppostfiltrering och flytta meddelandet till mappen Skräppost eller listan över säkra i postlådan.
 
 Administratörer kan använda Exchange Online PowerShell för att inaktivera, aktivera och visa status för skräppostregeln för postlådor. Administratörer kan också använda Exchange Online PowerShell för att konfigurera poster i listan över betrodda postlådor (listan Betrodda avsändare, Listan Betrodda mottagare och Spärrade avsändare).
 
@@ -89,7 +89,7 @@ Detaljerad information om syntax och parametrar finns i [Set-MailboxJunkEmailCon
 
 > [!NOTE]
 >
-> - Om användaren aldrig har öppnat sin postlåda kan du få ett felmeddelande när du kör det föregående kommandot. Om du vill dölja det här felet för gruppåtgärder lägger du till `-ErrorAction SilentlyContinue` **kommandot Set-MailboxJunkEmailConfiguration.**
+> - Om användaren aldrig har öppnat sin postlåda kan du få ett felmeddelande när du kör föregående kommando. Om du vill dölja det här felet för gruppåtgärder lägger du till `-ErrorAction SilentlyContinue` **kommandot Set-MailboxJunkEmailConfiguration.**
 >
 > - Även om du inaktiverar skräppostregeln kan Outlook-skräppostfiltret (beroende på hur det är konfigurerat) också avgöra om ett meddelande är skräppost, och kan flytta meddelanden till Inkorgen eller mappen Skräppost baserat på dess egen skräppostprognos och samlingen med listor över säkra listor för postlådan. Mer information finns i avsnittet [Om skräppostinställningar i Outlook i](#about-junk-email-settings-in-outlook) den här artikeln.
 
@@ -105,7 +105,7 @@ Använd någon av följande metoder för att kontrollera att du har aktiverat el
 
 ## <a name="use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox"></a>Använda Exchange Online PowerShell för att konfigurera samlingen listor över säkra listor för en postlåda
 
-I samlingen listor över betrodda avsändare för en postlåda finns listan Betrodda avsändare, listan Betrodda mottagare och listan Spärrade avsändare. Som standard kan användare konfigurera samlingen listor över säkra listor i sina egna postlådor i Outlook eller Outlook på webben. Administratörer kan använda motsvarande parametrar i cmdleten **Set-MailboxJunkEmailConfiguration** till att konfigurera samlingen listor över säkra listor för en användares postlåda. Dessa parametrar beskrivs i följande tabell.
+I samlingen listor över betrodda avsändare för en postlåda finns listan Betrodda avsändare, listan Betrodda mottagare och listan Spärrade avsändare. Som standard kan användarna konfigurera samlingen listor över säkra listor i sina egna postlådor i Outlook eller Outlook på webben. Administratörer kan använda motsvarande parametrar i cmdleten **Set-MailboxJunkEmailConfiguration** till att konfigurera samlingen listor över säkra listor för en användares postlåda. Dessa parametrar beskrivs i följande tabell.
 
 ****
 
@@ -129,7 +129,7 @@ Använd följande syntax om du vill konfigurera samlingen listor över säkra i 
 Set-MailboxJunkEmailConfiguration <MailboxIdentity> -BlockedSendersAndDomains <EmailAddressesOrDomains | $null> -ContactsTrusted <$true | $false> -TrustedListsOnly <$true | $false> -TrustedSendersAndDomains  <EmailAddresses | $null>
 ```
 
-Om du vill ange flera värden och skriva över befintliga poster för parametrarna _BlockedSendersAndDomains_ och _TrustedSendersAndDomains_ använder du följande `"<Value1>","<Value2>"...` syntax: Använd följande syntax om du vill lägga till eller ta bort ett eller flera värden utan att påverka andra befintliga poster: `@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
+Om du vill ange flera värden och skriva över befintliga poster för parametrarna _BlockedSendersAndDomains_ och _TrustedSendersAndDomains_ använder du följande syntax: `"<Value1>","<Value2>"...` . Använd följande syntax om du vill lägga till eller ta bort ett eller flera värden utan att påverka andra befintliga poster: `@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
 
 Det här exemplet konfigurerar följande inställningar för samlingen lista över säkra listor i Ori Epsteins postlåda:
 
@@ -161,7 +161,7 @@ Detaljerad information om syntax och parametrar finns i [Set-MailboxJunkEmailCon
 
 ### <a name="how-do-you-know-this-worked"></a>Hur vet du att det fungerade?
 
-Gör så här för att verifiera att du har konfigurerat samlingen listor över säkra listor för en postlåda:
+För att verifiera att du har konfigurerat samlingen med listor över säkra listor för en postlåda kan du använda någon av följande metoder:
 
 - Ersätt _\<MailboxIdentity\>_ med postlådans namn, alias eller e-postadress och kör följande kommando för att verifiera egenskapsvärdena:
 
@@ -196,7 +196,7 @@ Samlingslistan över betrodda avsändare (listan Betrodda avsändare, Listan Bet
 
 - Samlingslistan över säkra listor i användarens postlåda har en gräns på 510 kB, som omfattar alla listor, plus ytterligare inställningar för skräppostfilter. Om en användare överskrider den här gränsen får de ett Outlook-fel som ser ut så här:
 
-  > Kan inte/Kan inte lägga till i serverns skräppostlistor. Du är större än den storlek som tillåts på servern. Skräppostfiltret på servern inaktiveras tills dina skräppostlistor har förminskats till den storlek som tillåts av servern.
+  > Det går inte att lägga till i serverns skräppostlistor. Du är större än den storlek som tillåts på servern. Skräppostfiltret på servern inaktiveras tills dina skräppostlistor har minskats till den storlek som tillåts av servern.
 
   Mer information om den här gränsen och hur du ändrar den finns i [KB2669081.](https://support.microsoft.com/help/2669081)
 

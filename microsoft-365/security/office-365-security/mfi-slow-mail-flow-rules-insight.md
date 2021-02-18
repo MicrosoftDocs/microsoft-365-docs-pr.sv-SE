@@ -15,21 +15,21 @@ ms.custom:
 description: Administratörer kan ta reda på hur de kan använda information om åtgärda långsam e-postflödesregler i Säkerhets- & och efterlevnadscenter för att identifiera och åtgärda ineffektiva eller trasiga e-postflödesregler (kallas även transportregler) i organisationen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f7f084735decda922b5bcc57c029f2b384114d30
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: a50fa0d36cb025f5d0627a2212254b9d08dc5d9c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150790"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290699"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Åtgärda information om regler för långsamt e-postflöde & Säkerhets- och efterlevnadscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 abonnemang 1 och abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Ineffektiva e-postflödesregler (kallas även transportregler) kan leda till e-postflödesfördröjningar för organisationen. Den här insikten rapporterar e-postflödesregler som påverkar organisationens e-postflöde. Exempel på dessa typer av regler är:
 

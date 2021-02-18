@@ -14,19 +14,19 @@ description: Lär dig hur du hanterar e-postanvändare i Exchange Online Protect
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 34edafea7567da04094ea386d469d3d27937eee5
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 6a0dc1c0c343be77c6d6f713ee6b68a08a4fe5be
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166399"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289919"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Hantera e-postanvändare i fristående EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
--  [Exchange Online Protection fristående](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection fristående](exchange-online-protection-overview.md)
 
 I fristående Exchange Online Protection -organisationer (EOP) utan Exchange Online-postlådor är e-postanvändare den grundläggande typen av användarkonto. En e-postanvändare har kontoautentiseringsuppgifter i din fristående EOP-organisation och kan komma åt resurser (har tilldelats behörigheter). En e-postanvändares e-postadress är extern (till exempel i din lokala e-postmiljö).
 
@@ -50,7 +50,7 @@ För fristående EOP-organisationer med ett litet antal användare kan du lägga
 - Mer information om kortkommandon som kan gälla för procedurerna i den här artikeln finns i Kortkommandon för [administrationscentret för Exchange i Exchange Online.](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
-> Har du problem? Be om hjälp i Exchange-forumen. Gå till [forumet för Exchange Online Protection.](https://go.microsoft.com/fwlink/p/?linkId=285351)
+> Har du problem? Be om hjälp i Exchange-forumen. Besök [forumet för Exchange Online Protection.](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE)
 
 ## <a name="use-the-exchange-admin-center-to-manage-mail-users"></a>Använda administrationscentret för Exchange för att hantera e-postanvändare
 
@@ -98,7 +98,7 @@ Använd fliken **Allmänt för** att visa eller ändra grundläggande informatio
 
 - **Efternamn**
 
-- **Visningsnamn:** Det här namnet visas i organisationens adressbok, raderna Till och Från i e-postmeddelanden och i listan över kontakter i EAC. Namnet får inte innehålla tomma blanksteg före eller efter visningsnamnet.
+- **Visningsnamn:** Det här namnet visas i organisationens adressbok, raderna Till och Från i e-postmeddelanden och i listan med kontakter i EAC. Namnet får inte innehålla tomma blanksteg före eller efter visningsnamnet.
 
 - **Användar-ID:** Det här är användarens konto i Microsoft 365. Du kan inte ändra det här värdet här.
 
@@ -139,7 +139,7 @@ Använd fliken **Organisation** om du vill spela in detaljerad information om an
 
 ### <a name="use-standalone-eop-powershell-to-view-mail-users"></a>Använda fristående EOP PowerShell för att visa e-postanvändare
 
-Om du vill returnera en sammanfattningslista över alla e-postanvändare i fristående EOP PowerShell kör du följande kommando:
+Kör följande kommando för att returnera en sammanfattningslista över alla e-postanvändare i fristående EOP PowerShell:
 
 ```powershell
 Get-Recipient -RecipientType MailUser -ResultSize unlimited
@@ -169,7 +169,7 @@ New-EOPMailUser -Name "<UniqueName>" -MicrosoftOnlineServicesID <Account> -Passw
 
 - _Namnparametern_ är obligatorisk, får innehålla högst 64 tecken och måste vara unik. Om du inte använder _displayName-parametern_ används värdet för _namnparametern_ för visningsnamnet.
 - Om du inte använder _aliasparametern_ används vänster sida av _MicrosoftOnlineServicesID-parametern_ för aliaset.
-- Om du inte använder _parametern ExternalEmailAddress används_ _värdet i MicrosoftOnlineServicesID_ för den externa e-postadressen.
+- Om du inte använder _parametern ExternalEmailAddress_ används _värdet MicrosoftOnlineServicesID_ för den externa e-postadressen.
 
 I det här exemplet skapas en e-postanvändare med följande inställningar:
 

@@ -8,47 +8,52 @@ manager: laurawi
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
-description: Hantera en isolerad SharePoint Online-gruppwebbplats, lägga till nya användare och grupper, ta bort användare och grupper och skapa en undermapp med anpassade behörigheter.
-ms.openlocfilehash: 1e244738071b434efd09e8fd700462bbef7e116a
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: Hantera en isolerad SharePoint Online-gruppwebbplats, lägg till nya användare och grupper, ta bort användare och grupper och skapa en dokumentundermapp med anpassade behörigheter.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 20e354de77b70ea69d69e201bd3b1d40ea32cc5b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616770"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289527"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>Hantera en isolerad SharePoint Online-gruppwebbplats
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 abonnemang 1](office-365-atp.md)
+- SharePoint Online 
 
  **Sammanfattning:** Hantera din isolerade SharePoint Online-gruppwebbplats med de här procedurerna.
 
-I den här artikeln beskrivs vanliga hanterings åtgärder för en isolerad SharePoint Online-gruppwebbplats.
+I den här artikeln beskrivs vanliga hanteringsåtgärder för en isolerad SharePoint Online-gruppwebbplats.
 
 ## <a name="add-a-new-user"></a>Lägga till en ny användare
 
-När någon ny ansluter till webbplatsen måste du bestämma deras deltagande på webbplatsen:
+När någon ny ansluter till webbplatsen måste du bestämma i vilken grad de vill delta på webbplatsen:
 
-- Administration: lägga till det nya användar kontot i gruppen webbplats administratörs åtkomst
+- Administration: Lägg till det nya användarkontot i åtkomstgruppen för webbplatsadministratörer
 
-- Aktivt samarbete: lägga till användar kontot i gruppen webbplats medlemmar
+- Aktivt samarbete: Lägg till användarkontot i åtkomstgruppen för webbplatsmedlemmar
 
-- Visa: lägga till användar kontot i gruppen webbplats visnings åtkomst
+- Visa: Lägga till användarkontot i åtkomstgruppen för webbplatsvisningsprogram
 
-Om du hanterar användar konton och grupper via AD DS (Active Directory Domain Services) lägger du till de användare du vill använda i de lämpliga åtkomst grupperna med din vanliga AD DS-användare och grupp hanterings procedurer och väntar på synkronisering med ditt abonnemang.
+Om du hanterar användarkonton och grupper via Active Directory DS (AD DS) lägger du till rätt användare i lämpliga åtkomstgrupper med dina vanliga procedurer för hantering av AD DS och grupper och väntar på synkronisering med din prenumeration.
 
-Om du hanterar användar konton och grupper via Microsoft 365 kan du använda Microsoft 365 Admin Center eller Microsoft PowerShell:
+Om du hanterar användarkonton och grupper via Microsoft 365 kan du använda administrationscentret för Microsoft 365 eller Microsoft PowerShell:
 
-- För administrations centret för Microsoft 365 loggar du in med ett användar konto som har tilldelats rollen användar konto administratör eller företags administratör och använder grupper för att lägga till rätt användare i lämpliga åtkomst grupper.
+- I administrationscentret för Microsoft 365 loggar du in med ett användarkonto som har tilldelats rollen Som administratör för användarkonto eller Företagsadministratör, och använder Grupper för att lägga till rätt användare i lämpliga åtkomstgrupper.
 
-- För PowerShell, [Anslut först med Azure Active Directory PowerShell för Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module). Om du vill lägga till ett användar konto i en åtkomst grupp med dess huvud namn (UPN) använder du följande PowerShell-kommando block:
+- För PowerShell ska du [först ansluta till Azure Active Directory PowerShell för Graph-modulen.](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module) Om du vill lägga till ett användarkonto i en åtkomstgrupp med dess huvudnamn (UPN) använder du följande PowerShell-kommandoblock:
 
 ```powershell
 $userUPN="<UPN of the user account>"
@@ -56,7 +61,7 @@ $grpName="<display name of the group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
 ```
 
-Om du vill lägga till ett användar konto i en åtkomst grupp med dess visnings namn använder du följande PowerShell-kommando block:
+Om du vill lägga till ett användarkonto i en åtkomstgrupp med dess visningsnamn använder du följande PowerShell-kommandoblock:
 
 ```powershell
 $userDisplayName="<display name of the user account>"
@@ -66,21 +71,21 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 ## <a name="add-a-new-group"></a>Lägga till en ny grupp
 
-Om du vill lägga till åtkomst till en hel grupp måste du bestämma hur många medlemmar i gruppen som ska delta på webbplatsen:
+Om du vill lägga till åtkomst till en hel grupp måste du bestämma i vilken grad alla medlemmar i gruppen ska delta på webbplatsen:
 
-- Administration: lägga till gruppen i gruppen webbplats administratörer
+- Administration: Lägg till gruppen i åtkomstgruppen för webbplatsadministratörer
 
-- Aktivt samarbete: lägga till gruppen i gruppen webbplats medlemmar
+- Aktivt samarbete: Lägg till gruppen i åtkomstgruppen för webbplatsmedlemmar
 
-- Visa: lägga till gruppen i gruppen webbplats visnings program
+- Visa: Lägga till gruppen i åtkomstgruppen för webbplatsvisningsprogram
 
-Om du använder AD DS för att hantera användar konton och grupper kan du lägga till lämpliga grupper i lämpliga grupper med hjälp av dina vanliga procedurer för AD DS-användare och-grupper och vänta på synkronisering med ditt abonnemang.
+Om du hanterar användarkonton och grupper via AD DS kan du lägga till lämpliga grupper i lämpliga grupper med dina vanliga användar- och grupphanteringsprocedurer AD DS och vänta på synkronisering med din prenumeration.
 
-Om du hanterar användar konton och grupper via Office 365 kan du använda Microsoft 365 Admin Center eller PowerShell:
+Om du hanterar användarkonton och grupper via Office 365 kan du använda administrationscentret för Microsoft 365 eller PowerShell:
 
-- För administrations centret för Microsoft 365 loggar du in med ett användar konto som har tilldelats rollen användar konto administratör eller företags administratör och använder grupper för att lägga till lämpliga grupper i lämpliga åtkomst grupper.
+- I administrationscentret för Microsoft 365 loggar du in med ett användarkonto som har tilldelats rollen Som administratör för användarkonto eller Företagsadministratör, och använder Grupper för att lägga till lämpliga grupper i lämpliga åtkomstgrupper.
 
-- För PowerShell, [Anslut först med Azure Active Directory PowerShell för Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+- För PowerShell ska du [först ansluta till Azure Active Directory PowerShell för Graph-modulen.](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
  Använd sedan följande PowerShell-kommandon:
 
 ```powershell
@@ -91,22 +96,22 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -
 
 ## <a name="remove-a-user"></a>Ta bort en användare
 
-När någons åtkomst måste tas bort från webbplatsen tar du bort dem från den åtkomst grupp för vilken de för närvarande är medlemmar baserat på deras deltagande på webbplatsen:
+När någons åtkomst måste tas bort från webbplatsen tar du bort dem från åtkomstgruppen för vilken de för närvarande är medlemmar baserat på deras deltagande på webbplatsen:
 
-- Administration: ta bort användar kontot från gruppen webbplats administratörs åtkomst
+- Administration: Ta bort användarkontot från åtkomstgruppen för webbplatsadministratörer
 
-- Aktivt samarbete: ta bort användar kontot från gruppen webbplats medlemmar
+- Aktivt samarbete: Ta bort användarkontot från åtkomstgruppen för webbplatsmedlemmar
 
-- Visa: ta bort användar kontot från gruppen webbplats visnings åtkomst
+- Visa: Ta bort användarkontot från åtkomstgruppen för webbplatsvisningsprogram
 
-Om du hanterar användar konton och grupper via AD DS tar du bort de lämpliga användarna från lämpliga åtkomst grupper med hjälp av dina vanliga procedurer för AD DS-användare och-grupper och väntar på synkronisering med ditt abonnemang.
+Om du hanterar användarkonton och grupper via AD DS kan du ta bort lämpliga användare från lämpliga åtkomstgrupper med dina vanliga procedurer AD DS för användar- och grupphantering och vänta på synkronisering med din prenumeration.
 
-Om du hanterar användar konton och grupper via Office 365 kan du använda Microsoft 365 Admin Center eller PowerShell:
+Om du hanterar användarkonton och grupper via Office 365 kan du använda administrationscentret för Microsoft 365 eller PowerShell:
 
-- För administrations centret för Microsoft 365 loggar du in med ett användar konto som har tilldelats rollen användar konto administratör eller företags administratör och använder grupper för att ta bort lämpliga användare från lämpliga åtkomst grupper.
+- I administrationscentret för Microsoft 365 loggar du in med ett användarkonto som har tilldelats rollen Som administratör för användarkonto eller Företagsadministratör, och använder Grupper för att ta bort rätt användare från lämpliga åtkomstgrupper.
 
-- För PowerShell, [Anslut först med Azure Active Directory PowerShell för Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
-Om du vill ta bort ett användar konto från en åtkomst grupp med dess UPN kan du använda följande PowerShell-kommando block:
+- För PowerShell ska du [först ansluta till Azure Active Directory PowerShell för Graph-modulen.](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Om du vill ta bort ett användarkonto från en åtkomstgrupp med dess UPN använder du följande PowerShell-kommandoblock:
 
 ```powershell
 $userUPN="<UPN of the user account>"
@@ -114,7 +119,7 @@ $grpName="<display name of the access group>"
 Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
 ```
 
-Om du vill ta bort ett användar konto från en åtkomst grupp med dess visnings namn kan du använda följande PowerShell-kommando block:
+Om du vill ta bort ett användarkonto från en åtkomstgrupp med dess visningsnamn använder du följande PowerShell-kommandoblock:
 
 ```powershell
 $userDisplayName="<display name of the user account>"
@@ -124,22 +129,22 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.DisplayName -e
 
 ## <a name="remove-a-group"></a>Ta bort en grupp
 
-Om du vill ta bort åtkomst för en hel grupp tar du bort gruppen från den åtkomst grupp för vilken de för närvarande är medlemmar baserat på deras deltagande på webbplatsen:
+Om du vill ta bort åtkomst för en hel grupp tar du bort gruppen från den åtkomstgrupp där de för närvarande är medlemmar baserat på deras deltagande på webbplatsen:
 
-- Administration: ta bort gruppen från gruppen webbplats administratörer
+- Administration: Ta bort gruppen från åtkomstgruppen för webbplatsadministratörer
 
-- Aktivt samarbete: ta bort gruppen från gruppen webbplats medlemmar
+- Aktivt samarbete: Ta bort gruppen från åtkomstgruppen för webbplatsmedlemmar
 
-- Visa: ta bort gruppen från gruppen webbplats visnings åtkomst
+- Visa: Ta bort gruppen från åtkomstgruppen för webbplatsvisningsprogram
 
-Om du hanterar användar konton och grupper via Windows Server Active Directory tar du bort lämpliga grupper från lämpliga åtkomst grupper med hjälp av dina vanliga procedurer för AD DS-användare och grupp hantering och väntar på synkronisering med ditt abonnemang.
+Om du hanterar användarkonton och grupper via Windows Server Active Directory kan du ta bort lämpliga grupper från lämpliga åtkomstgrupper med dina vanliga procedurer för användar- och grupphantering i AD DS och vänta på synkronisering med din prenumeration.
 
-Om du hanterar användar konton och grupper via Office 365 kan du använda Microsoft 365 Admin Center eller PowerShell:
+Om du hanterar användarkonton och grupper via Office 365 kan du använda administrationscentret för Microsoft 365 eller PowerShell:
 
-- För administrations centret för Microsoft 365 loggar du in med ett användar konto som har tilldelats rollen användar konto administratör eller företags administratör och använder grupper för att ta bort lämpliga grupper från lämpliga åtkomst grupper.
+- I administrationscentret för Microsoft 365 loggar du in med ett användarkonto som har tilldelats rollen Som administratör för användarkonto eller Företagsadministratör, och använder Grupper för att ta bort lämpliga grupper från lämpliga åtkomstgrupper.
 
-- För PowerShell, [Anslut först med Azure Active Directory PowerShell för Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
-Om du vill ta bort en grupp från en åtkomst grupp med deras visnings namn kan du använda följande PowerShell-kommando block:
+- För PowerShell ska du [först ansluta till Azure Active Directory PowerShell för Graph-modulen.](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Om du vill ta bort en grupp från en åtkomstgrupp med hjälp av deras visningsnamn använder du följande PowerShell-kommandoblock:
 
 ```powershell
 $groupMemberName="<display name of the group to remove>"
@@ -147,45 +152,45 @@ $grpName="<display name of the access group>"
 Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupMemberName }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
 ```
 
-## <a name="create-a-documents-subfolder-with-custom-permissions"></a>Skapa en undermapp för dokument med anpassade behörigheter
+## <a name="create-a-documents-subfolder-with-custom-permissions"></a>Skapa en dokumentundermapp med anpassade behörigheter
 
-I vissa fall måste en delmängd av de personer som arbetar inom den isolerade webbplatsen vara en privat plats för att samar beta. För SharePoint Online-webbplatser kan du skapa en undermapp i mappen dokument på webbplatsen och tilldela anpassade behörigheter. Dessa utan behörigheter visas inte i undermappen.
+I vissa fall behöver en del av de personer som arbetar på den isolerade webbplatsen en mer privat plats för samarbete. För SharePoint Online-webbplatser kan du skapa en undermapp i mappen Dokument på webbplatsen och tilldela anpassade behörigheter. De som inte har behörighet kan inte se undermappen.
 
-Gör så här om du vill skapa en undermapp för dokument med anpassade behörigheter:
+Så här skapar du en dokumentundermapp med anpassad behörighet:
 
-1. Logga in på ett konto som är medlem i gruppen Administratörer för webbplatsen. Mer information finns i [Så här loggar du in i Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Logga in på ett konto som är medlem i administratörsåtkomstgruppen för webbplatsen. Mer information finns i [Så här loggar du in i Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
-2. Gå till den isolerade grupp webbplatsen och klicka på **dokument**.
+2. Gå till den isolerade gruppwebbplatsen och klicka på **Dokument.**
 
-3. Bläddra till mappen i mappen dokument som ska innehålla undermappen med anpassade behörigheter, skapa mappen och öppna den.
+3. Bläddra till mappen i dokumentmappen som innehåller undermappen med anpassade behörigheter, skapa mappen och öppna den sedan.
 
-4. Klicka på **dela**.
+4. Klicka **på Dela.**
 
-5. Klicka på **delas med > Avancerat**.
+5. Klicka **på Delas > Avancerat.**
 
-6. Klicka på **sluta ärva behörigheter** och klicka sedan på **OK**.
+6. Klicka **på Sluta ärva behörigheter** och klicka sedan på **OK.**
 
-7. Klicka på **dela**.
+7. Klicka **på Dela.**
 
-8. Klicka på **delas med > Avancerat**.
+8. Klicka **på Delas > Avancerat.**
 
-9. Klicka på **bevilja behörigheter > delas med > Avancerat**.
+9. Klicka **på Bevilja behörigheter > Delas med > Avancerat.**
 
-10. Klicka på **\<site name> medlemmar i listan** på sidan behörigheter.
+10. Klicka på Medlemmar i **\<site name> listan på behörighetssidan.**
 
-11. På sidan **\<site name> medlemmar** markerar du kryss rutan bredvid gruppen webbplats medlemmar, klickar på **åtgärder**, klickar på **ta bort användare från grupp** och klickar sedan på **OK**.
+11. På sidan **\<site name> Medlemmar** markerar du kryssrutan bredvid åtkomstgruppen Webbplatsmedlemmar, klickar på **Åtgärder,** klickar på Ta bort användare från grupp och klickar sedan på **OK.**
 
-12. Om du vill lägga till specifika medlemmar i den här undermappen klickar du på **ny > lägga till användare**.
+12. Om du vill lägga till specifika medlemmar i den här undermappen **klickar du på > Lägg till användare.**
 
-13. I dialog rutan **dela** skriver du namnen på de användar konton som kan samar beta med filer i undermappen och klickar sedan på **dela**.
+13. I dialogrutan **Dela** skriver du namnen på användarkontona som kan samarbeta med filer i undermappen och klickar sedan på **Dela.**
 
-14. Uppdatera webb sidan för att se de nya resultaten.
+14. Uppdatera webbsidan för att se de nya resultaten.
 
-15. Klicka på gruppen **\<site name> besökare** under **grupper** i det vänstra navigerings fältet och Använd stegen 11-14 för att ange den uppsättning användar konton som kan visa filerna i undermappen (efter behov).
+15. Under **Grupper** i det vänstra **\<site name>** navigeringsfältet klickar du på gruppen Besökare och använder steg 11–14 för att ange vilken uppsättning användarkonton som kan visa filerna i undermappen (vid behov).
 
-16. Under **grupper** i det vänstra navigerings fältet klickar du på gruppen **\<site name> ägare** och använder steg 11-14 för att ange den uppsättning användar konton som kan hantera behörigheterna i undermappen (efter behov).
+16. Under **Grupper i** det vänstra **\<site name>** navigeringsfältet klickar du på gruppen Ägare och använder steg 11–14 för att ange den uppsättning användarkonton som kan administrera behörigheterna i undermappen (vid behov).
 
-17. Stäng fliken **personer och grupper** i webbläsaren.
+17. Stäng fliken **Personer och** grupper i webbläsaren.
 
 ## <a name="see-also"></a>Se även
 

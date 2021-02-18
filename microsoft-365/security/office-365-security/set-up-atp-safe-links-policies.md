@@ -18,27 +18,27 @@ ms.collection:
 description: Administratörer kan ta reda på hur de visar, skapar, ändrar och tar bort principer för säkra länkar och globala inställningar för säkra länkar i Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 71ea33f1f6fbebf6d87a4b42ad3bd96a60597b90
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 29d777a7f351b9ab33232cb0136703ce3fa29842
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166273"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290159"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Konfigurera principer för säkra länkar i Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!IMPORTANT]
 > Den här artikeln är avsedd för företagskunder som har [Microsoft Defender för Office 365](office-365-atp.md). Om du är hemanvändare och vill ha information om säkra länkar i Outlook kan du [läsa Mer Outlook.com säkerhet.](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)
 
 Säkra länkar är en funktion i Microsoft Defender för [Office 365](office-365-atp.md) som ger URL-genomsökning av inkommande e-postmeddelanden i e-postflödet och tidpunkten för klickverifiering av URL:er och länkar i e-postmeddelanden och på andra platser. Mer information finns i [Säkra länkar i Microsoft Defender för Office 365.](atp-safe-links.md)
 
-Det finns ingen inbyggd eller standardprincip för säkra länkar. För att få säker länkskanning av URL:er måste du skapa en eller flera principer för säkra länkar enligt beskrivningen i den här artikeln.
+Det finns ingen inbyggd eller standardprincip för säkra länkar. För att få säker länksökning av URL:er måste du skapa en eller flera principer för Säkra länkar enligt beskrivningen i den här artikeln.
 
 > [!NOTE]
 > Du konfigurerar de globala inställningarna för skydd mot **säkra länkar utanför** principerna för säkra länkar. Instruktioner finns i Konfigurera [globala inställningar för Säkra länkar i Microsoft Defender för Office 365.](configure-global-settings-for-safe-links.md)
@@ -47,13 +47,13 @@ Du kan konfigurera principer för säkra länkar i Säkerhets- & och efterlevnad
 
 Grunderna i en princip för säkra länkar är:
 
-- Principen för säkra **länkar:** Aktivera skydd mot säkra länkar, aktivera URL-genomsökning i realtid, ange om du vill vänta med att skanning i realtid slutförs innan meddelandet levereras, aktivera genomsökning för interna meddelanden, ange om användaren ska klicka på URL-adresser och ange om användarna ska kunna klicka på webbadressen.
+- Principen **för** säkra länkar: Aktivera skydd mot säkra länkar, aktivera URL-genomsökning i realtid, ange om du vill vänta med att skanning i realtid slutförs innan meddelandet levereras, aktivera genomsökning för interna meddelanden, ange om användaren ska klicka på URL-adresser och ange om användarna ska kunna klicka på webbadressen.
 - **Regeln för säkra länkar:** Anger prioritet och mottagarfilter (vem principen gäller för).
 
 Skillnaden mellan dessa två element är inte uppenbara när du hanterar säkerhetschefer i Säkerhets- och & Efterlevnadscenter:
 
 - När du skapar en princip för säkra länkar skapar du i själva verket en regel för säkra länkar och den associerade principen för säkra länkar samtidigt som du använder samma namn för båda.
-- När du ändrar en princip för säkra länkar ändras regeln för säkra länkar om inställningarna är relaterade till namn, prioritet, aktiverade eller inaktiverade, och mottagarnas filter ändrar regeln för säkra länkar. Alla andra inställningar ändrar den associerade principen för säkra länkar.
+- När du ändrar en princip för säkra länkar ändras regeln för säkra länkar om namn, prioritet, aktiverad eller inaktiverad, och mottagarens filter ändrar regeln för säkra länkar. Alla andra inställningar ändrar den associerade principen för säkra länkar.
 - När du tar bort en princip för säkra länkar tas regeln för säkra länkar och den tillhörande principen för säkra länkar bort.
 
 I Exchange Online PowerShell eller fristående EOP PowerShell hanterar du policyn och regeln separat. Mer information finns i avsnittet Använda Exchange Online PowerShell eller [fristående EOP PowerShell](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) för att konfigurera principer för säkra länkar längre fram i den här artikeln.
@@ -65,14 +65,14 @@ I Exchange Online PowerShell eller fristående EOP PowerShell hanterar du policy
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Du måste ha tilldelats behörigheter innan du kan utföra procedurerna i den här artikeln:
-  - Om du vill skapa, ändra och ta bort principer  för säkra  länkar måste du vara medlem i rollgrupperna Organisationshantering  eller Säkerhetsadministratör i Säkerhets- & och efterlevnadscenter och medlem i rollgruppen Organisationshantering i Exchange Online. 
-  - För skrivskyddade åtkomst till principer för säkra länkar måste du vara medlem i rollgrupperna **Global Reader** **eller Säkerhetsläsare.**
+  - Om du vill skapa, ändra och ta bort principer  för säkra  länkar måste du vara medlem i rollgrupperna Organisationshantering  eller Säkerhetsadministratör i Säkerhets- & Efterlevnadscenter och medlem i rollgruppen Organisationshantering i Exchange Online. 
+  - För skrivskyddade åtkomst till principer för säkra länkar måste du vara medlem i rollgrupperna **Global Reader** **eller** Säkerhetsläsare.
 
-  Mer information finns i [Behörigheter i Säkerhets- & Efterlevnadscenter](permissions-in-the-security-and-compliance-center.md) [och Behörigheter i Exchange Online.](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+  Mer information finns i [Behörigheter i Säkerhets- & Efterlevnadscenter](permissions-in-the-security-and-compliance-center.md) och [Behörigheter i Exchange Online.](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
 
   > [!NOTE]
   > 
-  > - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  > - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
   . - **Rollgruppen Skrivskyddade organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddsåtkomst till funktionen.
 
 - Vi rekommenderar inställningar för principer för säkra länkar i [principinställningarna för Säkra länkar.](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings)
@@ -101,9 +101,9 @@ Om du skapar en egen princip för säkra länkar i Säkerhets- & efterlevnadscen
 
    - **Välj åtgärden för okända potentiellt skadliga URL:er i** meddelanden: Välj **På** för att aktivera skydd mot säkra länkar för länkar i e-postmeddelanden.
 
-   - **Välj åtgärden för okända eller potentiellt skadliga URL-adresser i Microsoft Teams:** Välj På för **att** aktivera skydd mot säkra länkar för länkar i Teams.
+   - **Välj åtgärden för okända eller potentiellt skadliga URL-adresser i Microsoft Teams:** Välj **På** för att aktivera skydd mot säkra länkar för länkar i Teams.
 
-   - **Använd URL-genomsökning** i realtid för misstänkta länkar och länkar som pekar på filer: Välj den här inställningen om du vill aktivera sökning i realtid av länkar i e-postmeddelanden.
+   - **Använd URL-skanning i realtid** för misstänkta länkar och länkar som pekar på filer: Välj den här inställningen om du vill aktivera sökning i realtid av länkar i e-postmeddelanden.
 
    - **Vänta tills URL-skanningen har slutförts innan** du levererar meddelandet: Välj den här inställningen om du vill vänta tills sökningen i realtid har slutförts innan meddelandet levereras.
 
@@ -111,7 +111,7 @@ Om du skapar en egen princip för säkra länkar i Säkerhets- & efterlevnadscen
 
    - **Spåra inte användarklick: Låt** den här inställningen vara avmarkerad om du vill aktivera uppföljningsanvändaren klick på URL-adresser i e-postmeddelanden.
 
-   - **Tillåt inte att användare klickar till** den ursprungliga URL:en: Välj den här inställningen om du vill blockera användare från att klicka till den ursprungliga URL:en på [varningssidor.](atp-safe-links.md#warning-pages-from-safe-links)
+   - **Tillåt inte att användare klickar sig fram till** den ursprungliga URL:en: Välj den här inställningen om du vill blockera användare från att klicka till den ursprungliga URL:en på [varningssidor.](atp-safe-links.md#warning-pages-from-safe-links)
 
    - **Skapa inte om följande URL:er:** Ger åtkomst till de angivna URL:er som annars skulle blockeras av säkra länkar.
 
@@ -119,7 +119,7 @@ Om du skapar en egen princip för säkra länkar i Säkerhets- & efterlevnadscen
 
      Om du vill ta bort en befintlig post markerar du den och klickar sedan på ![Knappikonen Ta bort](../../media/ITPro-EAC-DeleteIcon.png).
 
-     Mer information om [postsyntaxen finns i Postsyntax för listan "Ange inte följande URL:er".](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)
+     Information om postsyntaxen [finns i Postsyntax för listan "Ange inte följande URL:er".](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)
 
    Detaljerad information om dessa inställningar finns i inställningarna [för Säkra länkar för e-postmeddelanden](atp-safe-links.md#safe-links-settings-for-email-messages) och inställningar för Säkra länkar för Microsoft [Teams.](atp-safe-links.md#safe-links-settings-for-microsoft-teams)
 
@@ -171,7 +171,7 @@ Om du skapar en egen princip för säkra länkar i Säkerhets- & efterlevnadscen
 
 3. I den policyinformation som visas klickar du på **Redigera princip.**
 
-De tillgängliga inställningarna i flyg utfällpunkten som visas är identiska med de som beskrivs i Använd säkerhets- och & [säkerhets-](#use-the-security--compliance-center-to-create-safe-links-policies) och efterlevnadscentret för att skapa avsnittet principer för säkra länkar.
+De tillgängliga inställningarna i flyg utfällpunkten som visas är identiska med de som beskrivs i Använda säkerhets- och & säkerhets- och [efterlevnadscentret](#use-the-security--compliance-center-to-create-safe-links-policies) för att skapa avsnittet för principer för säkra länkar.
 
 Läs följande avsnitt om du vill aktivera eller inaktivera en princip eller ange prioritetsordning för principen.
 
@@ -264,13 +264,13 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEn
 > 
 > - Mer information om ytterligare syntax som du kan använda för parametern _DoNotRewriteUrls_ när du ändrar befintliga principer för säkra länkar med hjälp av cmdleten **Set-SafeLinksPolicy** finns i avsnittet Använda [PowerShell](#use-powershell-to-modify-safe-links-policies) för att ändra principer för säkra länkar senare i den här artikeln.
 
-I det här exemplet skapas en princip för säkra länkar med namnet Contoso Alla med följande värden:
+I det här exemplet skapas en princip för säkra länkar med namnet Contoso All med följande värden:
 
 - Aktivera URL-genomsökning och omskrivning i e-postmeddelanden.
 - Aktivera URL-genomsökning i Teams (endast TAP Preview).
 - Aktivera genomsökning i realtid av klickade URL:er, inklusive klickade länkar som pekar på filer.
 - Vänta tills URL-skanningen är klar innan du levererar meddelandet.
-- Aktivera URL-skanning och skriva om interna meddelanden.
+- Aktivera URL-genomsökning och omskrivning av interna meddelanden.
 - Spåra användarklick relaterade till skydd mot säkra länkar (vi använder inte parametern _DoNotTrackUserClicks_ och standardvärdet är $false, vilket innebär att användarklick spåras).
 - Tillåt inte att användare klickar sig fram till den ursprungliga URL:en.
 
@@ -293,13 +293,13 @@ I det här exemplet skapas en regel för säkra länkar med namnet Contoso Alla 
 - Regeln är kopplad till principen för säkra länkar med namnet Contoso All.
 - Regeln gäller för alla mottagare i contoso.com domän.
 - Eftersom vi inte använder _parametern Priority_ används standardprioritet.
-- Regeln är aktiverad (vi använder inte parametern _Aktiverad_ och standardvärdet är `$true` ).
+- Regeln är aktiverad (vi använder inte parametern _Enabled_ och standardvärdet är `$true` ).
 
 ```powershell
 New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs contoso.com
 ```
 
-Detaljerad information om syntax och parametrar finns [i New-SafeLinksRule.](https://docs.microsoft.com/powershell/module/exchange/new-safelinksrule)
+Detaljerad information om syntax och parametrar finns i [New-SafeLinksRule.](https://docs.microsoft.com/powershell/module/exchange/new-safelinksrule)
 
 ### <a name="use-powershell-to-view-safe-links-policies"></a>Använda PowerShell för att visa principer för säkra länkar
 
@@ -315,7 +315,7 @@ Det här exemplet returnerar en sammanfattning av alla principer för säkra lä
 Get-SafeLinksPolicy | Format-Table Name
 ```
 
-I det här exemplet returneras detaljerad information för policyn för säkra länkar med namnet Contoso Executives.
+I det här exemplet returneras detaljerad information för principen för säkra länkar med namnet Contoso Executives.
 
 ```PowerShell
 Get-SafeLinksPolicy -Identity "Contoso Executives"
@@ -361,7 +361,7 @@ Du kan inte byta namn på en princip för säkra länkar i PowerShell **(set-Saf
 
 Den enda ytterligare överväganden för att ändra principer för säkra länkar i PowerShell är den tillgängliga syntaxen för parametern _DoNotRewriteUrls_ (listan ["Skriva](atp-safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)inte om följande URL:er"):
 
-- Om du vill lägga till värden som ska ersätta befintliga poster använder du följande syntax: `"Entry1","Entry2,..."EntryN"` .
+- Använd följande syntax om du vill lägga till värden som ersätter befintliga `"Entry1","Entry2,..."EntryN"` poster:
 - Om du vill lägga till eller ta bort värden utan att påverka andra befintliga poster använder du följande syntax: `@{Add="Entry1","Entry2"...; Remove="Entry3","Entry4"...}`
 
 Annars är samma inställningar tillgängliga när du skapar en princip för säkra länkar enligt beskrivningen i steg [1:](#step-1-use-powershell-to-create-a-safe-links-policy) Använda PowerShell för att skapa ett avsnitt för principen för säkra länkar tidigare i den här artikeln.
@@ -455,7 +455,7 @@ Detaljerad information om syntax och parametrar finns i [Remove-SafeLinksPolicy.
 
 När du använder PowerShell för att ta bort en regel för säkra länkar tas motsvarande princip för säkra länkar inte bort.
 
-Använd följande syntax för att ta bort en regel för säkra länkar i PowerShell:
+Om du vill ta bort en regel för säkra länkar i PowerShell använder du följande syntax:
 
 ```PowerShell
 Remove-SafeLinksRule -Identity "<PolicyName>"

@@ -14,26 +14,26 @@ search.appverid:
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan läsa mer om BCL-värden (Bulk Compliance Level) som används i Exchange Online Protection (EOP).
+description: Administratörer kan lära sig mer om BCL-värden (Bulk Compliance Level) som används i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 403f79a1ce81ae13a23aa77f4cca7654939d7814
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: c68314cf992d39a105293955b6fade7b1a2bec56
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165973"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289907"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>Nivå för massklagomål (BCL) i EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor tilldelar EOP en BCL (bulk-compliant level) till inkommande meddelanden från massutskick. BCL läggs till i meddelandet i en X-rubrik och liknar nivån för skräppostförtroende [(SCL)](spam-confidence-levels.md) som används för att identifiera meddelanden som skräppost. Om du får ett högre BCL-meddelande är det troligare att ett massmeddelande skapar klagomål (och därför är det troligare att det blir skräppost). Microsoft använder både interna och tredjepartskällor för att identifiera massutskick och fastställa lämplig BCL.
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor tilldelar EOP en BCL (bulk-compliant level) till inkommande meddelanden från massutskick. BCL läggs till i meddelandet i en X-rubrik och liknar nivån för skräppostförtroende [(SCL)](spam-confidence-levels.md) som används för att identifiera meddelanden som skräppost. Om du får ett högre BCL-tecken på att ett massmeddelande genererar klagomål (och därför är det troligare att det blir skräppost). Microsoft använder både interna och tredjepartskällor för att identifiera massutskick och fastställa lämplig BCL.
 
 Massutskick varierar beroende på avsändarmönster, metoder för att skapa innehåll och mottagarköp. Bra massutskick skickar önskade meddelanden med relevant innehåll till prenumeranterna. Dessa meddelanden skapar få klagomål från mottagare. Andra massutskick skickar oönskade meddelanden som liknar skräppost och skapar många klagomål från mottagare. Meddelanden från en massutskick kallas massutskick eller grå post.
 

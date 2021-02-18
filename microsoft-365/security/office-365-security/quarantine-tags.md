@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: Administratörer kan ta reda på hur de kan använda karantäntaggar för att styra vad användarna kan göra med meddelanden i karantän.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6f18ad6ce1c8b12d38aef377ab663ca679a703e5
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 207f22c9acaa183e195f5a2ee33be65cdf4991dd
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928908"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289419"
 ---
 # <a name="quarantine-tags"></a>Karantäntaggar
 
@@ -50,16 +50,16 @@ De tillgängliga enskilda behörigheterna och vad som ingår eller inte ingår i
 |**Delete** _(PermissionToDelete)_||![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|
 |**Preview** _(PermissionToPreview)_||![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|
 |**Tillåt mottagare att släppa ett meddelande från karantän** _(PermissionToRelease)_|||![Bockmarkering](../../media/checkmark.png)|
-|**Tillåt mottagare att begära att ett meddelande ska släppas från karantän** _(PermissionToRequestRelease)_||![Bockmarkering](../../media/checkmark.png)||
+|**Tillåt mottagare att begära att ett meddelande släpps från karantän** _(PermissionToRequestRelease)_||![Bockmarkering](../../media/checkmark.png)||
 |
 
-Om du inte gillar standardbehörigheterna i de förinställda behörighetsgrupperna kan du använda anpassade behörigheter när du skapar eller ändrar anpassade karantäntaggar. Mer information om vad varje behörighet gör finns i avsnittet om taggbehörighet [för](#quarantine-tag-permission-details) karantän senare i den här artikeln.
+Om du inte gillar standardbehörigheterna i de förinställda behörighetsgrupperna kan du använda anpassade behörigheter när du skapar eller ändrar anpassade karantäntaggar. Mer information om vad varje behörighet gör finns i avsnittet [om](#quarantine-tag-permission-details) taggbehörighet för karantän senare i den här artikeln.
 
 Du skapar och tilldelar karantäntaggar i Säkerhets- & och efterlevnadscenter eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med Exchange Online-postlådor, fristående EOP PowerShell i EOP-organisationer utan Exchange Online-postlådor).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Gå direkt till sidan **med taggar för karantän** genom att <https://protection.office.com/quarantineTags> öppna.
+- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Gå direkt till sidan **med karantäntaggar** genom att <https://protection.office.com/quarantineTags> öppna.
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -155,11 +155,11 @@ Använd värdet 106 för begränsad åtkomst. För fullständig åtkomstbehörig
 
 För anpassade behörigheter använder du föregående tabell för att få det binära värde som motsvarar de behörigheter du vill ha. Konvertera det binära värdet till ett decimalvärde och använd decimalvärdet för _parametern EndUserQuarantinePermissionsValue._
 
-Detaljerad information om syntax och parametrar finns i [New-QuarantineTag.](https://docs.microsoft.com/powershell/module/exchange/new-quarantinetag)
+Detaljerad information om syntax och parametrar finns [i New-QuarantineTag.](https://docs.microsoft.com/powershell/module/exchange/new-quarantinetag)
 
 #### <a name="use-the-enduserquarantinepermissions-parameter"></a>Använda parametern EndUserQuarantinePermissions
 
-Så här skapar du en karantäntagg med hjälp av _EndUserQuarantinePermissionsValue:_
+Så här skapar du en _karantäntagg med parametern EndUserQuarantinePermissionsValue:_
 
 A. Lagra ett behörighetsobjekt i karantän för en variabel med cmdleten **New-QuarantinePermissions.**
 
@@ -229,11 +229,11 @@ I _skyddsfunktioner_ som stöds som sätt meddelanden eller filer i karantän (a
 
 |Funktion|Stöds karantäntaggar?|Standardtaggar för karantän som används|
 |---|:---:|---|
-|[Principer för skydd mot skräppost:](configure-your-spam-filter-policies.md) <ul><li>**Spam** _(SpamAction)_</li><li>**Skräppost med högt förtroende** _(HighConfidenceSpamAction)_</li><li>**Nätfiskemeddelande** _(PhishSpamAction)_</li><li>**Nätfiskemeddelande med hög konfidens** _(HighConfidencePhishAction)_</li><li>**Massutskick** _(BulkSpamAction)_</li></ul>|Ja|<ul><li>DefaultSpamTag (fullständig åtkomst)</li><li>DefaultHighConfSpamTag (fullständig åtkomst)</li><li>DefaultPhishTag (Fullständig åtkomst)</li><li>DefaultHighConfPhishTag (ingen åtkomst)</li><li>DefaultBulkTag (fullständig åtkomst)</li></ul>
+|[Principer för skydd mot skräppost:](configure-your-spam-filter-policies.md) <ul><li>**Spam** _(SpamAction)_</li><li>**Skräppost med högt förtroende** _(HighConfidenceSpamAction)_</li><li>**Nätfiskemeddelande** _(PhishSpamAction)_</li><li>**Nätfiske med högt förtroende** _(HighConfidencePhishAction)_</li><li>**Massutskick** _(BulkSpamAction)_</li></ul>|Ja|<ul><li>DefaultSpamTag (Fullständig åtkomst)</li><li>DefaultHighConfSpamTag (Fullständig åtkomst)</li><li>DefaultPhishTag (Fullständig åtkomst)</li><li>DefaultHighConfPhishTag (ingen åtkomst)</li><li>DefaultBulkTag (fullständig åtkomst)</li></ul>
 |Principer mot nätfiske: <ul><li>[Spoof Intelligence Protection](set-up-anti-phishing-policies.md#spoof-settings) _(AuthenticationFailAction)_</li><li>[Personifieringsskydd:](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)<sup>\*</sup> <ul><li>**Om e-post skickas av en imiterad användare** _(TargetedUserProtectionAction)_</li><li>**Om e-post skickas med en imiterad domän** _(TargetedDomainProtectionAction)_</li><li>**Postlådeinformation** \> **Om e-post skickas av en imiterad användare** _(MailboxIntelligenceProtectionAction)_</li></ul></li></ul></ul>|Nej|ej a|
 |[Principer för skydd mot skadlig](configure-anti-malware-policies.md)programvara: Alla identifierade meddelanden sätts alltid i karantän.|Nej|ej a|
-|[Säkra bifogade filer i SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md)|Nej|ej a|
-|[E-postflödesregler](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (kallas även transportregler) med åtgärden: Leverera meddelandet till den **värdinde karantänen** _(karantän)._|Nej|ej a|
+|[Säkra bilagor för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md)|Nej|ej a|
+|[E-postflödesregler](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (kallas även transportregler) med åtgärden: Leverera meddelandet till **den värdinde karantänen** _(karantän)._|Nej|ej a|
 |
 
 <sup>\*</sup> Inställningar för personifieringsskydd är endast tillgängliga i principer mot nätfiske i Microsoft Defender för Office 365.
@@ -242,7 +242,7 @@ Om du är nöjd med slutanvändarbehörigheterna som anges av standardtaggarna f
 
 ### <a name="assign-quarantine-tags-in-anti-spam-policies-in-the-security--compliance-center"></a>Tilldela karantäntaggar i principer för skydd mot skräppost i Säkerhets- & Efterlevnadscenter
 
-Fullständiga instruktioner för hur du skapar och ändrar principer för skydd mot skräppost beskrivs i Konfigurera principer för skydd [mot skräppost i EOP.](configure-your-spam-filter-policies.md)
+Fullständiga instruktioner för hur du skapar och ändrar principer för skydd mot skräppost beskrivs i [Konfigurera principer för skydd mot skräppost i EOP.](configure-your-spam-filter-policies.md)
 
 1. I Säkerhets- & Efterlevnadscenter går du till **Policy för** hantering \> **av** hot och väljer \> sedan **Skräppostskydd.** Eller <https://protection.office.com/antispam> öppna.
 
@@ -303,7 +303,7 @@ Detaljerad information om syntax och parametrar finns i [Set-HostedContentFilter
 
 ## <a name="configure-global-quarantine-notification-settings-in-the-security--compliance-center"></a>Konfigurera meddelandeinställningar för global karantän i Säkerhets- & Efterlevnadscenter
 
-Med de globala inställningarna för karantäntaggar kan du anpassa skräppost-aviseringarna för slutanvändaren som skickas till mottagare av meddelanden som har satts i karantän. Mer information om dessa meddelanden finns i [skräppost-aviseringar för slutanvändaren.](use-spam-notifications-to-release-and-report-quarantined-messages.md)
+Med de globala inställningarna för karantäntaggar kan du anpassa skräppost-aviseringarna för slutanvändaren som skickas till mottagare av meddelanden som har satts i karantän. Mer information om dessa meddelanden finns i [skräppost-aviseringarna för slutanvändaren.](use-spam-notifications-to-release-and-report-quarantined-messages.md)
 
 1. Gå till policyn för & och  välj sedan karantäntaggar i Säkerhets- och \>  **efterlevnadscenter.**
 
@@ -311,7 +311,7 @@ Med de globala inställningarna för karantäntaggar kan du anpassa skräppost-a
 
 3. I **meddelandeinställningarna för karantän** som öppnas konfigurerar du några eller alla av följande inställningar:
 
-   - **Använd mitt företags logotyp:** Välj det här alternativet om du vill ersätta standardlogotypen för Microsoft som används högst upp i skräppost-aviseringarna för slutanvändaren. Innan du gör det måste du följa instruktionerna i Anpassa [Microsoft 365-temat](https://docs.microsoft.com/microsoft-365/admin/setup/customize-your-organization-theme) för din organisation för att ladda upp din anpassade logotyp.
+   - **Använd mitt företags logotyp:** Välj det här alternativet om du vill ersätta standardlogotypen för Microsoft som används högst upp i skräppost-aviseringarna för slutanvändaren. Innan du gör det måste du följa instruktionerna i Anpassa [Microsoft 365-temat](../../admin/setup/customize-your-organization-theme.md) för din organisation för att ladda upp din anpassade logotyp.
 
      Följande skärmbild visar en anpassad logotyp i en skräppost-avisering för slutanvändaren:
 
@@ -325,11 +325,11 @@ Med de globala inställningarna för karantäntaggar kan du anpassa skräppost-a
 
    - **Visningsnamn:** Anpassa avsändarens visningsnamn som används i skräppost-aviseringar för slutanvändaren.
 
-     För varje språk som du har lagt till väljer du språket i den andra språkrutan (klicka inte på X) och anger det textvärde du vill ha i rutan **Visningsnamn.**
+     För varje språk som du har lagt till väljer du språket i den andra språkrutan (klicka inte på X) och ange det textvärde du vill ha i rutan **Visningsnamn.**
 
-     Följande skärmbild visar det anpassade visningsnamnet i en skräppost-avisering för slutanvändaren:
+     Följande skärmbild visar det anpassade visningsnamnet i ett skräppost-meddelande för slutanvändaren:
 
-     ![Ett anpassat visningsnamn för avsändare i en skräppost-avisering för slutanvändaren](../../media/quarantine-tags-esn-customization-display-name.png)
+     ![Ett anpassat avsändarvisningsnamn i en skräppost-avisering för slutanvändare](../../media/quarantine-tags-esn-customization-display-name.png)
 
    - **Ansvarsfriskrivning:** Lägg till en anpassad ansvarsfriskrivning längst ned i skräppost-aviseringar för slutanvändaren. Lokaliserad text, **en ansvarsfriskrivning från din organisation:** inkluderas alltid först, följt av den text du anger.
 
@@ -341,7 +341,7 @@ Med de globala inställningarna för karantäntaggar kan du anpassa skräppost-a
 
 ## <a name="view-quarantine-tags-in-the-security--compliance-center"></a>Visa karantäntaggar i Säkerhets- & Efterlevnadscenter
 
-1. Gå till policyn för & och  välj sedan karantäntaggar i Säkerhets- \>  och **efterlevnadscenter.**
+1. Gå till policyn för & och  välj sedan karantäntaggar i Säkerhets- och \>  **efterlevnadscenter.**
 
 - Om du vill visa inställningarna för inbyggda eller anpassade karantäntaggar väljer du karantäntaggen i listan (markera inte kryssrutan).
 
@@ -393,7 +393,7 @@ Detaljerad information om syntax och parametrar finns i [Get-HostedContentFilter
 
 ### <a name="remove-quarantine-tags-in-powershell"></a>Ta bort karantäntaggar i PowerShell
 
-Om du hellre vill använda PowerShell för att ta bort en anpassad karantäntagg ersätter du med namnet på karantäntaggen \<TagName\> och kör följande kommando:
+Om du hellre vill använda PowerShell för att ta bort en anpassad karantäntagg ersätter du med namnet på karantänstaggen \<TagName\> och kör följande kommando:
 
 ```powershell
 Remove-QuarantineTag -Identity "<TagName>"
@@ -413,7 +413,7 @@ De enskilda behörigheterna som ingår i förinställda behörighetsgrupper visa
 
 Om karantäntaggen tilldelar **inga åtkomstbehörigheter** (inga behörigheter) får användarna fortfarande vissa grundläggande funktioner:
 
-- **Information om meddelanden i karantän:** **Knappen Visa meddelanderubrik** är alltid tillgänglig.
+- **Information om meddelande i karantän:** **Knappen Visa meddelanderubrik** är alltid tillgänglig.
 
   ![Tillgängliga knappar i meddelandeinformation i karantän om karantäntaggen ger användaren inga åtkomstbehörigheter](../../media/quarantine-tags-quarantined-message-details-no-access.png)
 
@@ -425,7 +425,7 @@ Om karantäntaggen tilldelar **inga åtkomstbehörigheter** (inga behörigheter)
 
 Om karantäntaggen tilldelar **behörigheterna** begränsad åtkomst får användarna följande funktioner:
 
-- **Information om meddelanden i karantän:** Följande knappar är tillgängliga:
+- **Meddelandeinformation i karantän:** Följande knappar är tillgängliga:
   - **Begär version**
   - **Visa meddelanderubrik**
   - **Förhandsgranskningsmeddelande**
@@ -442,10 +442,10 @@ Om karantäntaggen tilldelar **behörigheterna** begränsad åtkomst får använ
 
 #### <a name="full-access"></a>Fullständig åtkomst
 
-Om karantäntaggen tilldelar **fullständig åtkomst** (alla tillgängliga behörigheter) får användarna följande funktioner:
+Om karantäntaggen tilldelar **fullständig behörighet** (alla tillgängliga behörigheter) får användarna följande funktioner:
 
-- **Information om meddelanden i karantän:** Följande knappar är tillgängliga:
-  - **Släpp meddelande**
+- **Meddelandeinformation i karantän:** Följande knappar är tillgängliga:
+  - **Utgivningsmeddelande**
   - **Visa meddelanderubrik**
   - **Förhandsgranskningsmeddelande**
   - **Spärra avsändare**
@@ -476,7 +476,7 @@ Tillåt **avsändarbehörighet** _(PermissionToAllowSender)_ styr åtkomsten til
 
 - **Skräppost-aviseringar för slutanvändare:** Ingen effekt.
 
-Mer information om listan Betrodda avsändare finns i Förhindra att betrodda avsändare [blockeras](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) och Använda Exchange Online PowerShell för att konfigurera samlingen med listor över betrodda [avsändare för en postlåda.](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)
+Mer information om listan Betrodda avsändare finns i Förhindra att betrodda avsändare [blockeras](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) och Använda Exchange Online PowerShell för att konfigurera samlingen listor över betrodda avsändare [för en postlåda.](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)
 
 #### <a name="block-sender-permission"></a>Blockera avsändarbehörighet
 
@@ -487,7 +487,7 @@ Behörigheten **Blockera avsändare** _(PermissionToBlockSender)_ styr åtkomste
   - **Spärra avsändarbehörighet** inaktiverad: **Knappen Spärra** avsändare är inte tillgänglig.
 
 - **Skräppost-aviseringar för slutanvändare:**
-  - **Behörigheten Blockera** avsändare inaktiverad: **Knappen Spärra** avsändare är inte tillgänglig.
+  - **Spärra avsändarbehörighet** inaktiverad: **Knappen Spärra** avsändare är inte tillgänglig.
   - **Behörigheten** Blockera avsändare aktiverad: **Knappen Spärra** avsändare är tillgänglig.
 
 Mer information om listan Spärrade avsändare [](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) finns i Spärra meddelanden från någon och Använda Exchange Online PowerShell för att konfigurera samlingen med listor över betrodda avsändare [för en postlåda.](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)
@@ -526,7 +526,7 @@ Allow **recipients to release a message from quarantine** permission _(Permissio
 
 #### <a name="allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission"></a>Tillåt mottagare att begära att ett meddelande ska släppas från karantänsbehörighet
 
-Allow **recipients to request a message to be released from quarantine** permission _(PermissionToRequestRelease)_ controls the ability of users to request _the_ release of their quarantined messages. Meddelandet släpps bara när en administratör godkänt begäran.
+Allow **recipients to request a message to be released from quarantine** permission _(PermissionToRequestRelease) controls_ the ability of users to request the release of their quarantined messages.  Meddelandet släpps bara när en administratör godkänt begäran.
 
 - **Information om meddelanden i karantän:**
   - Behörighet aktiverad: **Knappen Begär version** är tillgänglig.

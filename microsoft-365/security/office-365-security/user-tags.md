@@ -13,15 +13,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan lära sig att identifiera specifika grupper av användare med användartaggar i Microsoft Defender för Office 365 abonnemang 2. Taggfiltrering är tillgängligt i aviseringar, rapporter och undersökningar i Microsoft Defender för Office 365 för att snabbt identifiera de taggade användarna.
+description: Administratörer kan lära sig att identifiera specifika grupper av användare med användartaggar i Microsoft Defender för Office 365 abonnemang 2. Taggfiltrering är tillgängligt för aviseringar, rapporter och undersökningar i Microsoft Defender för Office 365 för att snabbt identifiera taggade användare.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ed91492e652773b3a48373df49b20d97887df6ee
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 62d858fe5962b94f536d4ccbd712e21bdd5caa57
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931440"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290135"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Användartaggar i Microsoft Defender för Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "49931440"
 
 Användartaggar är identifierare för specifika användargrupper i [Microsoft Defender för Office 365.](office-365-atp.md) Det finns två typer av användartaggar:
 
-- **Systemtaggar:** För närvarande [är Prioritet-konton](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) den enda typen av systemtagg.
+- **Systemtaggar:** För närvarande [är Prioritet-konton](../../admin/setup/priority-accounts.md) den enda typen av systemtagg.
 - **Anpassade taggar:** Du skapar dessa användartaggar själv.
 
 Om din organisation har Defender för Office 365 Abonnemang 2 (ingår i din prenumeration eller som ett tillägg) kan du skapa anpassade användartaggar utöver att använda taggen för prioriterade konton.
@@ -58,10 +58,10 @@ I den här artikeln förklaras hur du konfigurerar användartaggar & Säkerhets-
 
   **Anmärkningar**:
 
-  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
   - Hantering av användartaggar styrs av **rollerna Taggläsare,** **Taggdeltagare** **och Tagghanteraren.**
 
-- Du kan också hantera och övervaka prioriterade konton i administrationscentret för Microsoft 365. Instruktioner finns i Hantera [och övervaka prioriterade konton.](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)
+- Du kan också hantera och övervaka prioriterade konton i administrationscentret för Microsoft 365. Instruktioner finns i Hantera [och övervaka prioriterade konton.](../../admin/setup/priority-accounts.md)
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>Använda Säkerhetscenter för att skapa användartaggar
 
@@ -77,7 +77,7 @@ I den här artikeln förklaras hur du konfigurerar användartaggar & Säkerhets-
 
 4. Gör något **av följande** på sidan Tilldela användare:
 
-   - Klicka **på Lägg till användare.** I den utfällo som visas gör du något av följande för att lägga till enskilda användare eller grupper:
+   - Klicka **på Lägg till användare.** I den utfälling som visas gör du något av följande för att lägga till enskilda användare eller grupper:
      - Klicka i rutan och bläddra igenom listan för att välja en användare eller grupp.
      - Klicka i rutan och börja skriva för att filtrera listan och välj en användare eller grupp.
      - Om du vill lägga till ytterligare värden klickar du i ett tomt område i rutan.

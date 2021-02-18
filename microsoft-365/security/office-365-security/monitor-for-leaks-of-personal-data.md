@@ -19,12 +19,12 @@ search.appverid:
 description: Läs om tre verktyg som du kan använda för att övervaka personliga data.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1425015843b2f444c6a410df449eeeaf4045ee5
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: a8fb8557d6cd2677aeb6dcda75d34e86ada8f68c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261431"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290675"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Övervaka läckage av personliga data
 
@@ -65,7 +65,7 @@ Du kan också använda DLP-rapporterna för att finjustera dina DLP-principer n�
 
 DLP-rapporter finns i säkerhetscenter och efterlevnadscenter. Gå till Rapporter \> Visa rapporter. Under Dataförlustskydd (DLP) går du till antingen Matchning mot DLP-principer och regler eller Falskt positiva identifieringar och åsidosättningar för DLP.
 
-Mer information finns i [Visa rapporterna för dataförlustskydd](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports).
+Mer information finns i [Visa rapporterna för dataförlustskydd](../../compliance/view-the-dlp-reports.md).
 
 ![Rapport som visar matchningar av DLP-principer](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
@@ -87,17 +87,17 @@ Det finns lösningar som du kan använda för att prenumerera på enhetliga gran
 
 Mer information om aviseringsprinciper och sökning i granskningsloggen:
 
-- [Aviseringsprinciper i säkerhets- och efterlevnadscenter för Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+- [Aviseringsprinciper i säkerhets- och efterlevnadscenter för Microsoft 365](../../compliance/alert-policies.md)
 
-- [Söka i granskningsloggen efter användar- och administratörsaktivitet i Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log) (introduktion)
+- [Söka i granskningsloggen efter användar- och administratörsaktivitet i Office 365](../../compliance/search-the-audit-log-in-security-and-compliance.md) (introduktion)
 
-- [Aktivera och inaktivera granskningsloggsökning](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
+- [Aktivera och inaktivera granskningsloggsökning](../../compliance/turn-audit-log-search-on-or-off.md)
 
-- [Söka i granskningsloggen](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
+- [Söka i granskningsloggen](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
 - [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
 
-- [Detaljerade egenskaper i granskningsloggen](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
+- [Detaljerade egenskaper i granskningsloggen](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 

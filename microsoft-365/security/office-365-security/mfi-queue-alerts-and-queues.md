@@ -12,21 +12,21 @@ ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Administratörer kan lära sig att använda widgeten Köer i instrumentpanelen för e-postflöde i säkerhets- och efterlevnadscentret för & för att övervaka ett misslyckat e-postflöde till sina lokala organisationer eller partnerorganisationer via utgående anslutningar.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94e8a1f3b54c3738c21e94ba85ae4f1d3f953498
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: ca8ee5ea37fa5a63b8035572059e419c400d66f3
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150177"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289443"
 ---
-# <a name="queues-insight-in-the-security--compliance-center"></a>Köinsikter i Säkerhets- & Efterlevnadscenter
+# <a name="queues-insight-in-the-security--compliance-center"></a>Köinsikter i säkerhets- & Efterlevnadscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 abonnemang 1 och abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 När meddelanden inte kan skickas från din organisation till dina lokala e-postservrar eller partner-e-postservrar med hjälp av kopplingar, är meddelandena i kö i Microsoft 365. Vanliga exempel som kan orsaka detta villkor är:
 
@@ -61,33 +61,33 @@ Om den fördefinierade e-postvolymen överskrider det fördefinierade tröskelv�
 
    - **Gräns för** **e-postmottagare och daglig** avisering: **Klicka på** Redigera för att konfigurera följande inställningar:
 
-4. Om du vill konfigurera meddelandeinställningarna klickar du på **Redigera.** Konfigurera följande **inställningar i** den utfällblad för Redigera princip som visas:
+4. Om du vill konfigurera meddelandeinställningarna klickar du på **Redigera.** Konfigurera följande **inställningar i** den utfällna menyn Redigera princip som visas:
 
    - **Skicka e-postaviseringar:** Standardvärdet är på.
    - **E-postmottagare:** Standardvärdet är **TenantAdmins.**
    - **Daglig meddelandegräns:** Standardvärdet är **Ingen gräns.**
    - **Tröskelvärde:** Standardvärdet är 200.
 
-   ![Meddelandeinställningar i meddelanden har fördröjts med information om säkerhets- & efterlevnadscenter](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
+   ![Meddelandeinställningar i meddelanden har fördröjts med information om säkerhets- & Efterlevnadscenter](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
 
 5. Klicka på Spara och Stäng **när** du är **klar.**
 
 ## <a name="queues-insight-in-the-mail-flow-dashboard"></a>Köinsikter i instrumentpanelen för e-postflöde
 
-Även om volymen för meddelanden i kö inte har överskridit tröskelvärdet och  genererat en [](mail-flow-insights-v2.md) avisering kan du fortfarande använda köinsikterna i instrumentpanelen för e-postflöde för att se meddelanden som har köats i mer än en timme och vidta åtgärder innan antalet köade meddelanden blir för stort.
+Även om volymen för det köade meddelandet inte har överskridit tröskelvärdet  och genererat [](mail-flow-insights-v2.md) en avisering kan du fortfarande använda köinsikterna i instrumentpanelen för e-postflöde för att se meddelanden som har köats i mer än en timme och vidta åtgärder innan antalet köade meddelanden blir för stora.
 
-![Widget för köer i instrumentpanelen för e-postflöde i & Säkerhets- och efterlevnadscenter](../../media/mfi-queues-widget.png)
+![Widget för köer i instrumentpanelen för e-postflöde i Säkerhets- & Efterlevnadscenter](../../media/mfi-queues-widget.png)
 
 Om du klickar på antalet meddelanden  på widgeten visas en utfällbara meddelandekö med följande information:
 
 - **Antal meddelanden i kö**
 - **Kopplingsnamn:** Klicka på kopplingsnamnet för att hantera kopplingen i administrationscentret för Exchange (EAC).
 - **Starttid för kö**
-- **Äldsta meddelanden har gått ut**
+- **Äldsta meddelanden har förfallit**
 - **Målserver**
 - **Senaste IP-adress**
 - **Senaste felet**
-- **Så här åtgärdar** du problemet: Vanliga problem och lösningar finns tillgängliga. Om länken **Åtgärda det nu** är tillgänglig kan du klicka på den för att åtgärda problemet. Annars klickar du på de tillgängliga länkarna för att få mer information om felet och möjliga lösningar.
+- **Så här åtgärdar** du problemet: Vanliga problem och lösningar finns tillgängliga. Om länken Åtgärda **det nu** är tillgänglig kan du klicka på den för att åtgärda problemet. Annars klickar du på de tillgängliga länkarna för att få mer information om felet och möjliga lösningar.
 
 ![Information när du klickar på köinsikter på instrumentpanelen för e-postflöde](../../media/mfi-queues-details.png)
 

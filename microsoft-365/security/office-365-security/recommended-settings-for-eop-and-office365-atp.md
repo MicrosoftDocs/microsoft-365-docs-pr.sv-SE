@@ -1,6 +1,6 @@
 ---
 title: Microsoft-rekommendationer för EOP och Defender för Säkerhetsinställningar i Office 365
-keywords: Säkerhetsrekommendationer för Office 365, Sender Policy Framework, domänbaserad meddelanderapportering och överensstämmelse, DomainKeys Identified Mail, steg, hur det fungerar, säkerhetsbaslinjer, baslinjer för EOP, baslinjer för Defender för Office 365, konfigurera Defender för Office 365, konfigurera EOP, konfigurera Defender för Office 365, konfigurera Defender för Office 365, konfigurera Defender för Office 365, konfigurera EOP, konfigurera Defender för Office 365, konfigurera EOP, säkerhetskonfiguration
+keywords: Office 365-säkerhetsrekommendationer, Sender Policy Framework, domänbaserad meddelanderapportering och överensstämmelse, DomainKeys Identified Mail, steg, hur det fungerar, säkerhetsbaslinjer, baslinjer för EOP, baslinjer för Defender för Office 365, konfigurera Defender för Office 365, konfigurera EOP, konfigurera EOP, konfigurera Defender för Office 365, konfigurera EOP, säkerhetskonfiguration
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,30 +16,30 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Vilka metodtips gäller för Säkerhetsinställningar i Exchange Online Protection (EOP) och Defender för Office 365? Vilka är de aktuella rekommendationerna för standardskydd? Vad ska användas om du vill vara striktare? Och vad extra får du om du också använder Defender för Office 365?
+description: Vilka metodtips är för Säkerhetsinställningar i Exchange Online Protection (EOP) och Defender för Office 365? Vilka är de aktuella rekommendationerna för standardskydd? Vad ska användas om du vill vara striktare? Och vad extra får du om du också använder Defender för Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7a609a069e0e35b673b0902f2600f9c5433a14bb
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d635a28c41c9aceb0e3c499301156e53a1e2fa68
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166945"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289359"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Rekommenderade inställningar för EOP och Microsoft Defender för Office 365-säkerhet
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 **Exchange Online Protection (EOP)** är kärnan i säkerheten för Microsoft 365-prenumerationer och ser till att skadliga e-postmeddelanden inte når de anställdas inkorgar. Men med nya, mer avancerade attacker som växer varje dag krävs ofta förbättrade skydd. **Microsoft Defender för Office 365** Abonnemang 1 eller abonnemang 2 innehåller ytterligare funktioner som ger administratörer fler lager för säkerhet, kontroll och undersökning.
 
 Även om vi ger säkerhetsadministratörer möjlighet att anpassa sina säkerhetsinställningar finns det två säkerhetsnivåer i EOP och Microsoft Defender för Office 365 som vi rekommenderar: **Standard** och **Strikt.** Varje kund miljö och behov är olika, men vi tror att de här filtreringsnivåerna hjälper till att förhindra att oönskad e-post når de anställdas inkorg i de flesta situationer.
 
-Information om hur du automatiskt använder standardinställningarna eller strikt för användarna finns i Förinställda säkerhetsprinciper i EOP och [Microsoft Defender för Office 365.](preset-security-policies.md)
+Information om hur du automatiskt använder standard- eller striktinställningar för användare finns i Förinställda säkerhetsprinciper i EOP och [Microsoft Defender för Office 365.](preset-security-policies.md)
 
 > [!NOTE]
 > Skräppostregeln måste vara aktiverad för postlådor för att filtreringen ska fungera korrekt. Det är aktiverat som standard, men du bör kontrollera det om filtrering inte verkar fungera. Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
@@ -82,7 +82,7 @@ Information om hur du skapar och konfigurerar principer för skydd mot skräppos
 
 Det finns flera andra avancerade inställningar för skräppostfilter (ASF) i policyn för skräppost som håller på att föraktas. Mer information om tidslinjerna för avskrivningen av dessa funktioner meddelas utanför den här artikeln.
 
-Vi rekommenderar att du inaktiverar de här **ASF-inställningarna** för både **standard-** och **striktnivåer.** Mer information om ASF-inställningar finns i inställningarna för avancerat skräppostfilter [(ASF) i Office 365.](advanced-spam-filtering-asf-options.md)
+Vi rekommenderar att du inaktiverar de här **ASF-inställningarna** för både **standard-** och **striktnivåer.** Mer information om ASF-inställningar finns i inställningarna för avancerat [skräppostfilter (ASF) i Office 365.](advanced-spam-filtering-asf-options.md)
 
 ****
 
@@ -100,7 +100,7 @@ Vi rekommenderar att du inaktiverar de här **ASF-inställningarna** för både 
 |**Formulärtaggar i HTML** _(MarkAsSpamFormTagsInHtml)_||
 |**Webbbuggar i HTML** _(MarkAsSpamWebBugsInHtml)_||
 |**Använda listan över känsliga ord** _(MarkAsSpamSensitiveWordList)_||
-|**SPF-post: hård fail** _(MarkAsSpamSpfRecordHardFail_)||
+|**SPF-post: hard fail** _(MarkAsSpamSpfRecordHardFail_)||
 |**Filtrering av villkorsstyrd avsändare-ID: hårt fel** _(MarkAsSpamFromAddressAuthFail)_||
 |**NDR backscatter** _(MarkAsSpamNdrBackscatter_)||
 |
@@ -155,7 +155,7 @@ Ytterligare säkerhetsfördelar följer med en Microsoft Defender för Office 36
 
 > [!IMPORTANT]
 >
-> - Standardprincipen för skydd mot nätfiske i Microsoft Defender för Office 365 ger skydd mot [förfalskning](set-up-anti-phishing-policies.md#spoof-settings) och postlådeinformation för alla mottagare. Men andra tillgängliga funktioner [för personifieringsskydd](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) och [avancerade inställningar är](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) inte konfigurerade eller aktiverade i standardprincipen. Om du vill aktivera alla skyddsfunktioner ändrar du standardprincipen för skydd mot nätfiske eller skapar ytterligare principer mot nätfiske.
+> - Standardprincipen för skydd mot nätfiske i Microsoft Defender för Office 365 ger skydd mot [förfalskning](set-up-anti-phishing-policies.md#spoof-settings) och postlådeinformation för alla mottagare. Men andra tillgängliga funktioner [för personifieringsskydd](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) och [avancerade inställningar är](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) inte konfigurerade eller aktiverade i standardprincipen. Om du vill aktivera alla skyddsfunktioner ändrar du standardprincipen för skydd mot nätfiske eller skapar ytterligare principer för skydd mot nätfiske.
 >
 > - Det finns inga standardprinciper för säkra länkar eller principer för säkra bifogade filer som automatiskt skyddar alla mottagare i organisationen. För att få skydd måste du skapa minst en princip för säkra länkar och en princip för säkra bifogade filer.
 >
@@ -179,7 +179,7 @@ Mer information om de här inställningarna finns i inställningarna för person
 |Skyddade domäner: **Inkludera automatiskt de domäner jag äger** <p> _EnableOrganizationDomainsProtection_|Av <p> `$false`|På <p> `$true`|På <p> `$true`||
 |Skyddade domäner: **Inkludera egna domäner** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Av <p> `$false` <p> none (ingen)|På <p> `$true` <p> \<list of domains\>|På <p> `$true` <p> \<list of domains\>|Beroende på din organisation rekommenderar vi att du lägger till domäner (avsändardomäner) som du inte äger, men som du ofta interagerar med.|
 |Skyddade användare: **Om e-post skickas av en imiterad användare** <p> _TargetedUserProtectionAction_|**Använd ingen åtgärd** <p> `NoAction`|**Sätt meddelandet i karantän** <p> `Quarantine`|**Sätt meddelandet i karantän** <p> `Quarantine`||
-|Skyddade domäner: **Om e-post skickas av en imiterad domän** <p> _TargetedDomainProtectionAction_|**Använd ingen åtgärd** <p> `NoAction`|**Sätt meddelandet i karantän** <p> `Quarantine`|**Sätt meddelandet i karantän** <p> `Quarantine`||
+|Skyddade domäner: **Om e-post skickas med en imiterad domän** <p> _TargetedDomainProtectionAction_|**Använd ingen åtgärd** <p> `NoAction`|**Sätt meddelandet i karantän** <p> `Quarantine`|**Sätt meddelandet i karantän** <p> `Quarantine`||
 |**Visa tips för imiterade användare** <p> _EnableSimilarUsersSafetyTips_|Av <p> `$false`|På <p> `$true`|På <p> `$true`||
 |**Visa tips för imiterade domäner** <p> _EnableSimilarDomainsSafetyTips_|Av <p> `$false`|På <p> `$true`|På <p> `$true`||
 |**Visa tips för ovanliga tecken** <p> _EnableUnusualCharactersSafetyTips_|Av <p> `$false`|På <p> `$true`|På <p> `$true`||
@@ -228,7 +228,7 @@ I PowerShell använder du cmdleten [Set-AtpPolicyForO365](https://docs.microsoft
 
 |Namn på säkerhetsfunktion|Standard|Standard|Strikt|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Använda säkra länkar i: Office 365-program** <p> _EnableSafeLinksForO365Clients_|På <p> `$true`|På <p> `$true`|På <p> `$true`|Använd Säkra länkar i Office 365-skrivbords- och mobilprogram (iOS och Android). Mer information finns i inställningarna [för Säkra länkar för Office 365-appar.](atp-safe-links.md#safe-links-settings-for-office-365-apps)|
+|**Använda säkra länkar i: Office 365-program** <p> _EnableSafeLinksForO365Clients_|På <p> `$true`|På <p> `$true`|På <p> `$true`|Använd Säkra länkar i Office 365-skrivbords- och mobilprogram (iOS och Android). Mer information finns i inställningarna [för Säkra länkar för Office 365-program.](atp-safe-links.md#safe-links-settings-for-office-365-apps)|
 |**Spåra inte när användare klickar på Säkra länkar** <p> _TrackClicks_|På <p> `$false`|Av <p> `$true`|Av <p> `$true`|Om du inaktiverar den här inställningen (ställa in _TrackClicks_ `$true` till) spåras användarklick i Office 365-program som stöds.|
 |**Låt inte användare klicka genom Säkra länkar till den ursprungliga URL:en** <p> _AllowClickThrough_|På <p> `$false`|På <p> `$false`|På <p> `$false`|Om du använder den här inställningen (inställningen _AllowClickThrough_ till) förhindrar du att du klickar dig fram till den ursprungliga `$false` URL:en i Office 365-program som stöds.|
 |
@@ -237,7 +237,7 @@ I PowerShell använder du cmdleten [Set-AtpPolicyForO365](https://docs.microsoft
 
 Information om hur du konfigurerar de här inställningarna finns i Konfigurera principer för säkra [länkar i Microsoft Defender för Office 365.](set-up-atp-safe-links-policies.md)
 
-I PowerShell använder du [cmdlets New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) [och Set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) för de här inställningarna.
+I PowerShell använder du [cmdlets New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) [och Set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) för dessa inställningar.
 
 > [!NOTE]
 > Som vi beskrivit tidigare finns det ingen standardprincip för säkra länkar. Värdena i kolumnen Standard är standardvärdena i de nya principer för säkra länkar som du skapar.
@@ -257,7 +257,7 @@ I PowerShell använder du [cmdlets New-SafeLinksPolicy](https://docs.microsoft.c
 
 ### <a name="safe-attachments-settings"></a>Inställningar för säkra bifogade filer
 
-Säkra bifogade filer i Microsoft Defender för Office 365 innehåller globala inställningar som inte har något samband med principer för säkra bifogade filer och inställningar som är specifika för varje princip för säkra länkar. Mer information finns i Säkra [bifogade filer i Defender för Office 365.](atp-safe-attachments.md)
+Säkra bifogade filer i Microsoft Defender för Office 365 innehåller globala inställningar som inte har någon relation till principer för säkra bifogade filer och inställningar som är specifika för varje princip för säkra länkar. Mer information finns i Säkra [bifogade filer i Defender för Office 365.](atp-safe-attachments.md)
 
 #### <a name="global-settings-for-safe-attachments"></a>Globala inställningar för säkra bifogade filer
 

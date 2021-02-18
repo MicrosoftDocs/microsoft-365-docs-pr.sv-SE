@@ -20,16 +20,16 @@ ms.collection:
 description: Administratörer kan lära sig att höja säkerhetsinställningarna och använda rapporter, aviseringar och undersökningar för prioriterade konton i Microsoft 365-organisationer.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 814ca47ee48e844e313f7d75640643a0b659c527
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 4038a9abc3357bb72a0c21db3e4ca4679c1aa745
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166375"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290757"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Säkerhetsrekommendationer för prioriterade konton i Microsoft 365
 
-Alla användarkonton har inte tillgång till samma företagsinformation. Vissa konton har tillgång till känslig information, till exempel ekonomiska data, utvecklingsinformation, partneråtkomst till kritiska utvecklingssystem och mycket mer. Om de har komprometterats utgör konton som har tillgång till mycket konfidentiell information ett allvarligt hot. Vi kallar den här typen av _kontons prioritetskonton._ Prioritetskonton omfattar (men är inte begränsade till) CEOs, CISOs, CFOs, infrastrukturadministratörskonton, skapa systemkonton och mycket mer.
+Alla användarkonton har inte tillgång till samma företagsinformation. Vissa konton har tillgång till känslig information, till exempel ekonomiska data, produktutvecklingsinformation, partneråtkomst till kritiska utvecklingssystem och mycket mer. Om de har komprometterats utgör konton som har tillgång till mycket konfidentiell information ett allvarligt hot. Vi kallar den här typen av _kontons prioritetskonton._ Prioritetskonton omfattar (men är inte begränsade till) CEOs, CISOs, CFOs, infrastrukturadministratörskonton, skapa systemkonton och mycket mer.
 
 Vid attacker är vanliga nätfiskeattacker som visar ett slumpmässigt net för vanliga eller okända användare ineffektiva. Å andra sidan är _nätfiske-_ och _whalingattacker_ som prioriterade konton är mycket givande för attacker. Prioritetskonton kräver därför starkare än vanligt skydd för att förhindra kontokompromettering.
 
@@ -50,9 +50,9 @@ Microsoft 365 och Microsoft Defender för Office 365 innehåller flera viktiga f
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>Öka inloggningssäkerheten för prioriterade konton
 
-Prioriterade konton kräver ökad inloggningssäkerhet. Du kan öka deras inloggningssäkerhet genom att kräva multifaktorautentisering (MFA) och inaktivera äldre autentiseringsprotokoll.
+Prioritetskonton kräver ökad inloggningssäkerhet. Du kan öka deras inloggningssäkerhet genom att kräva multifaktorautentisering (MFA) och inaktivera äldre autentiseringsprotokoll.
 
-Instruktioner finns i [steg 1. Öka inloggningssäkerheten för fjärranslutna medarbetare med MFA.](https://docs.microsoft.com/microsoft-365/solutions/empower-people-to-work-remotely-secure-sign-in) Även om den här artikeln handlar om fjärranslutna medarbetare gäller samma begrepp för prioriterade användare.
+Instruktioner finns i [steg 1. Öka inloggningssäkerheten för fjärranslutna medarbetare med MFA.](../../solutions/empower-people-to-work-remotely-secure-sign-in.md) Även om den här artikeln handlar om fjärranslutna medarbetare gäller samma begrepp för prioriterade användare.
 
 **Obs!** Vi rekommenderar starkt att du inaktiverar äldre autentiseringsprotokoll för alla prioriterade användare globalt enligt beskrivningen i föregående artikel. Om ditt företagskrav hindrar dig från att göra det erbjuder Exchange Online följande kontroller för att begränsa omfattningen av äldre autentiseringsprotokoll:
 
@@ -70,7 +70,7 @@ För prioriterade användare krävs striktare åtgärder för de olika skydd som
 
 I stället för att leverera meddelanden som klassificerats som skräppost till mappen Skräppost bör du till exempel sätta dem i karantän om de är avsedda för prioriterade konton.
 
-Du kan implementera den här strikta metoden för prioriterade konton genom att använda profilen Strikt i förinställda säkerhetsprinciper.
+Du kan implementera den här strikt metoden för prioriterade konton genom att använda profilen Strikt i förinställda säkerhetsprinciper.
 
 Förinställda säkerhetsprinciper är en bekväm och central plats där du kan använda våra rekommenderade strikt principinställningar för alla skydd i EOP och Defender för Office 365. Mer information finns i [Förinställda säkerhetsprinciper i EOP och Microsoft Defender för Office 365.](preset-security-policies.md)
 
@@ -80,7 +80,7 @@ Mer information om hur strikt principinställningar skiljer sig från standardin
 
 Användartaggar i Microsoft Defender för Office 365 abonnemang 2 (som en del av Microsoft 365 E5 eller en tilläggsprenumeration) är ett sätt att snabbt identifiera och klassificera specifika användare eller grupper av användare i rapporter och incidentundersökningar.
 
-**Prioritetskonton** är en typ av inbyggd användartagg (kallas _systemtagg)_ som du kan använda för att identifiera incidenter och aviseringar som omfattar prioriterade konton. Mer information om **prioritetskonton finns** i Hantera [och övervaka prioritetskonton.](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)
+**Prioritetskonton** är en typ av inbyggd användartagg (kallas _systemtagg)_ som du kan använda för att identifiera incidenter och aviseringar som omfattar prioriterade konton. Mer information om **prioritetskonton finns** i Hantera [och övervaka prioritetskonton.](../../admin/setup/priority-accounts.md)
 
 Du kan också skapa anpassade taggar för att ytterligare identifiera och klassificera dina prioriterade konton. Mer information finns i [Användartaggar.](user-tags.md) Observera att du kan hantera **prioritetskonton** (systemtaggar) i samma gränssnitt som anpassade användartaggar.
 
@@ -94,11 +94,11 @@ När du har säkrat och tagga dina prioriterade användare kan du använda tillg
 
 |Funktion|Beskrivning|
 |---|---|
-|Varningar|Användartaggarna för påverkade användare är synliga  och tillgängliga som filter på sidan Visa aviseringar i Säkerhets- & Efterlevnadscenter. Mer information finns i Visa [aviseringar.](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#viewing-alerts)|
+|Varningar|Användartaggarna för påverkade användare är synliga  och tillgängliga som filter på sidan Visa aviseringar i Säkerhets- & Efterlevnadscenter. Mer information finns i [Visa aviseringar.](../../compliance/alert-policies.md#viewing-alerts)|
 |Hotutforskaren <p> Identifiering i realtid|I **Threat Explorer** (Microsoft Defender för Office 365 abonnemang 2) eller identifieringar i realtid (Microsoft Defender för Office 365 abonnemang 1) visas användartaggar i rutnätsvyn för e-post och den utfällbara informationen om **e-post.** Användartaggar är också tillgängliga som en filtrerbar egenskap. Mer information finns i Taggar [i Hotutforskaren.](threat-explorer.md#tags-in-threat-explorer)|
 |Kampanjvyer|Användartaggar är en av många filterbara egenskaper i kampanjvyer i Microsoft Defender för Office 365 abonnemang 2. Mer information finns i [Kampanjvyer.](campaigns.md)|
 |Statusrapport för hotskydd|I praktiskt taget alla vyer och detaljtabeller i **rapporten om skydd mot hot** kan du filtrera resultaten efter **prioritetskonton.** Mer information finns i rapporten [om skydd mot hot.](view-email-security-reports.md#threat-protection-status-report)|
-|Rapport om e-postproblem för prioriterade konton|Rapporten **E-postproblem för prioriterade** konton i administrationscentret för Exchange (EAC) innehåller information om olevererade och fördröjda meddelanden för prioriterade **konton.** Mer information finns i rapporten [E-postproblem för prioritetskonton.](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)|
+|Rapport om e-postproblem för prioritetskonton|Rapporten **E-postproblem för prioritetskonton** i administrationscentret för Exchange (EAC) innehåller information om olevererade och fördröjda meddelanden för prioriterade **konton.** Mer information finns i rapporten [E-postproblem för prioritetskonton.](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)|
 |
 
 ## <a name="train-users"></a>Utbilda användare
@@ -116,9 +116,9 @@ I Microsoft 365 finns följande resurser för att informera användarna i organi
 |Begrepp|Resurser|Beskrivning|
 |---|---|---|
 |Microsoft 365|[Anpassningsbara utbildningsvägar](https://docs.microsoft.com/office365/customlearning/)|De här resurserna kan hjälpa dig att samla utbildning för användare i organisationen.|
-|Microsoft 365-säkerhet|[Learning module: Secure your organization with built-in, intelligent security from Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365)|I den här modulen kan du beskriva hur säkerhetsfunktionerna i Microsoft 365 fungerar tillsammans och att uttrycka fördelarna med dessa säkerhetsfunktioner.|
+|Microsoft 365-säkerhet|[Learning module: Secure your organization with built-in, intelligent security from Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365)|I den här modulen kan du beskriva hur Säkerhetsfunktioner i Microsoft 365 fungerar tillsammans och att uttrycka fördelarna med dessa säkerhetsfunktioner.|
 |Multifaktorautentisering|[Tvåstegsverifiering: Vad är ytterligare verifieringssida?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|Den här artikeln hjälper slutanvändarna att förstå vad multifaktorautentisering är och varför den används i organisationen.|
-|Utbildning i attacksimulering|[Kom igång med Attack simuleringsträning](attack-simulation-training-get-started.md)|Med utbildning om attackbedrägerier i Microsoft Defender för Office 365 abonnemang 2 kan administratörer konfigurera, starta och spåra simulerade nätfiskeattacker mot särskilda grupper av användare.|
+|Utbildning i attacksimulering|[Kom igång med Attack simuleringsträning](attack-simulation-training-get-started.md)|Med hjälp av attacksimuleringsutbildning i Microsoft Defender för Office 365 abonnemang 2 kan administratörer konfigurera, starta och spåra simulerade nätfiskeattacker mot särskilda grupper av användare.|
 
 Dessutom rekommenderar Microsoft att användare gör som beskrivs i den här artikeln: Skydda ditt konto och dina [enheter från hackare och skadlig programvara.](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6) Dessa åtgärder omfattar:
 

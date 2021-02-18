@@ -17,21 +17,21 @@ ms.collection:
 description: Lär dig hur leveranspooler används för att skydda ryktet för e-postservrar i Microsoft 365-datacenter.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5480916f55fc180a6f08d3c420cb92c730e4065b
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 89aac1478d3e5840df4379b9f49832b79d0e133a
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167545"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289811"
 ---
 # <a name="outbound-delivery-pools"></a>Pooler för utgående leverans
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 E-postservrar i Microsoft 365-datacenter kan tillfälligt skickas skräppost. Till exempel skadlig kod eller skadlig skräppost-attack i en lokal e-postorganisation som skickar utgående e-post via Microsoft 365 eller komprometterat Microsoft 365-konton. Attacker försöker också undvika identifiering genom att vidarebefordra meddelanden via Microsoft 365-vidarebefordran.
 
@@ -47,7 +47,7 @@ Den verkliga risken att IP-adresser i högriskleveranspoolen placeras i listor �
 Mer information finns i [Kontrollera utgående skräppost.](outbound-spam-controls.md)
 
 > [!NOTE]
-> Meddelanden där käll-e-postdomänen inte har någon A-post och ingen MX-post som definierats i offentlig DNS dirigeras alltid genom högriskleveranspoolen, oavsett hur många skräppost- och sändningsbegränsningar de har.
+> Meddelanden där käll-e-postdomänen inte har någon A-post och ingen MX-post som definierats i offentlig DNS dirigeras alltid genom högriskleveranspoolen, oavsett hur många som är skräppost eller hur många som skickas.
 
 ### <a name="bounce-messages"></a>Studsa meddelanden
 
@@ -55,7 +55,7 @@ Den utgående högriskleveranspoolen hanterar leveransen för alla rapporter om 
 
 Möjliga orsaker till en ökning av NDR-inkluderar:
 
-- En förfalskningskampanj som påverkar en av kunderna som använder tjänsten.
+- En förfalskningskampanj som påverkar en av de kunder som använder tjänsten.
 - En katalogd till exempel en skördeattack.
 - En skräppostattack.
 - En falsk e-postserver.

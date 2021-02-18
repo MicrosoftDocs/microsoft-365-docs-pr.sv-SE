@@ -17,21 +17,21 @@ ms.collection:
 description: Microsoft har utvecklat olika policyer, metoder och använder flera branschrekommendationer för att skydda våra användare från olämplig, oönskad eller skadlig e-post.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01df2e8c1cc8a8ca68688377c4cad6ade91b5623
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1065fdef5f804214ca48f7ca54170e6e417490d7
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166861"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289215"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referens: principer, övningar och riktlinjer
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Microsoft arbetar för att tillhandahålla den mest betrodda användarupplevelsen på webben. Därför har Microsoft utvecklat olika policyer, metoder och använder flera branschrekommendationer för att skydda våra användare från olämplig, oönskad eller skadlig e-post. Avsändare som försöker skicka e-post till användare bör se till att de är helt förstådda och följer hjälpen i den här artikeln för att hjälpa till med detta och för att undvika potentiella leveransproblem.
 
@@ -41,7 +41,7 @@ Om du inte följer dessa policyer och riktlinjer kanske det inte är möjligt f�
 
 E-post som skickas till Microsoft 365-användare måste följa Microsofts policyer för e-postöverföring och användning av Microsoft 365.
 
-- Villkor för tjänster som gäller Microsoft 365; i synnerhet att förbjuda användning av tjänsten för skräppost eller distribuera skadlig programvara.
+- Villkor för tjänster som gäller För Microsoft 365; i synnerhet att förbjuda användning av tjänsten för skräppost eller distribuera skadlig programvara.
 
 - [Avtal för Microsoft-tjänster](https://www.microsoft.com/servicesagreement/)
 
@@ -57,7 +57,7 @@ E-post som skickas till Microsoft 365-användare måste följa alla tillämpliga
 
 E-post som skickas till Microsoft 365 måste följa de tillämpliga rekommendationer som listas i dokumenten nedan (vissa länkar är endast tillgängliga på engelska).
 
-- [RFC 2505: Anti-Spam Recommendations for SMTP MTAs](https://www.ietf.org/rfc/rfc2505.txt)
+- [RFC 2505: Rekommendationer mot skräppost för SMTP MTAs](https://www.ietf.org/rfc/rfc2505.txt)
 
 - [RFC 2920: SMTP-tjänsttillägg för kommandoledning](https://www.ietf.org/rfc/rfc2920.txt)
 
@@ -79,15 +79,15 @@ Dessutom måste e-postservrar som ansluter till Microsoft 365 följa följande k
 
 ## <a name="reputation-management"></a>Rykteshantering
 
-Avsändare, Internetleverantör och andra tjänsteleverantörer bör aktivt hantera ryktet för dina utgående IP-adresser.
+Avsändare, Internetleverantörer och andra tjänsteleverantörer bör aktivt hantera ryktet för dina utgående IP-adresser.
 
 ## <a name="microsoft-365-limits"></a>Begränsningar för Microsoft 365
 
-Avsändare måste följa de Microsoft 365-begränsningar som anges i [Exchange Online Protection Limits.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)
+Avsändare måste följa microsoft 365-begränsningar som finns i Exchange [Online Protection Limits.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)
 
 ## <a name="email-delivery-resources-and-organizations"></a>Resurser för e-postleverans och organisationer
 
-Microsoft arbetar aktivt med branschorgan och tjänsteleverantörer för att förbättra internet- och e-postesystemen. De här organisationerna har publicerat dokument med bästa praxis som vi ger support och rekommenderar avsändare följer. Det förbättrar möjligheten att leverera e-post bland flera olika e-postleverantörer över hela världen.
+Microsoft arbetar aktivt med branschorgan och tjänsteleverantörer för att förbättra internet- och e-postesystemen. Dessa organisationer har publicerat dokument med bästa praxis som vi ger support och rekommenderar avsändare följer. Det förbättrar möjligheten att leverera e-post bland flera olika e-postleverantörer över hela världen.
 
 - [Messaging Malware Mobile – anti abuse working group](https://www.m3aawg.org/)
 
@@ -97,8 +97,8 @@ Microsoft arbetar aktivt med branschorgan och tjänsteleverantörer för att fö
 
 ## <a name="abuse-and-spam-reporting"></a>Rapportering av missbruk och skräppost
 
-Om du vill rapportera olagliga, olämpliga, oönskade eller skadliga e-postmeddelanden, [se Rapportera meddelanden och filer till Microsoft.](report-junk-email-messages-to-microsoft.md) Att skicka den här typen av kommunikation är ett brott mot Microsoft-principen och lämpliga åtgärder vidtas på bekräftade rapporter.
+Om du vill rapportera olagliga, olämpliga, oönskade eller skadliga e-postmeddelanden, se [Rapportera meddelanden och filer till Microsoft.](report-junk-email-messages-to-microsoft.md) Att skicka den här typen av kommunikation är ett brott mot Microsoft-principen och lämpliga åtgärder vidtas på bekräftade rapporter.
 
 ## <a name="law-enforcement"></a>Upprätthållande av lagar
 
-Ring (1) (425) 722-1299 om du är medlem i rätts verkställande och vill hjälpa Microsoft Corporation med juridisk dokumentation om Office 365, eller om du har frågor om juridisk dokumentation som du har skickat till Microsoft.
+Om du är medlem i lagens verkställande och vill hjälpa Microsoft Corporation med juridisk dokumentation om Office 365, eller om du har frågor om juridisk dokumentation du har skickat till Microsoft, kan du ringa (1) (425) 722-1299.

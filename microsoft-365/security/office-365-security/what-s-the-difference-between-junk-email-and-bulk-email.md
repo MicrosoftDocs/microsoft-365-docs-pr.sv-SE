@@ -1,5 +1,5 @@
 ---
-title: Vad &apos; är skillnaden mellan skräp post och Mass utskick?
+title: Vad &apos; är skillnaden mellan skräppost och massutskick?
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,39 +16,45 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan läsa mer om skillnaderna mellan skräp post och Mass utskick (Gråskala) i Exchange Online Protection (EOP).
-ms.openlocfilehash: 1e11f897a145f7b34acc81e1d132d6babac08979
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Administratörer kan lära sig mer om skillnaderna mellan skräppost och massutskick (grå e-post) i Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: c656ed1807b451ae03ecfeb0f220f5d7b902c7ac
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195485"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290651"
 ---
-# <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>Vad är skillnaden mellan skräp post och Mass utskick i EOP?
+# <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>Vad är skillnaden mellan skräppost och massutskick i EOP?
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-I Microsoft 365-organisationer med post lådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor ber kunderna dig ibland: "Vad är skillnaden mellan skräp post och Mass utskick?" I det här avsnittet beskrivs skillnaden och beskriver de kontroller som är tillgängliga i EOP.
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection (EOP) utan Exchange Online-postlådor frågar kunderna ibland: "Vad är skillnaden mellan skräppost och massutskick?" I det här avsnittet beskrivs skillnaden och de kontroller som är tillgängliga i EOP.
 
-- **Skräp posten** är skräp post, som inte är efterfrågad och är universellt oönskade (när den identifieras korrekt). Som standard avvisar EOP inte skräp post baserat på e-postserverns rykte. Om ett meddelande skickar en käll-IP-kontroll skickas det till skräp post filtrering. Om meddelandet klassificeras som skräp post genom filtrering av skräp post är meddelandet (som standard) levererat till mottagarna och flyttas till mappen skräp post.
+- **Skräppost är** skräppost, som är oönskade och oönskade oönskade meddelanden (när de identifieras korrekt). Som standard avvisas skräppost av EOP baserat på ryktet hos käll-e-postservern. Om ett meddelande klarar käll-IP-kontrollen skickas det till skräppostfiltrering. Om meddelandet klassificeras som skräppost med hjälp av skräppostfiltrering levereras meddelandet (som standard) till de avsedda mottagarna och flyttas till mappen Skräppost.
 
-  - Du kan konfigurera åtgärderna så att de tas med i spam verdicts. Anvisningar finns i [Konfigurera principer för skräp post i EOP](configure-your-spam-filter-policies.md).
+  - Du kan konfigurera åtgärderna för filtrering av skräppost. Instruktioner finns i Konfigurera [principer för skydd mot skräppost i EOP.](configure-your-spam-filter-policies.md)
 
-  - Om du inte samtycker till Verdict spam kan du rapportera meddelanden som du anser vara skräp post eller icke-skräp post till Microsoft på flera sätt, enligt beskrivningen i [rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
+  - Om du inte är nöjd med skräppostfiltreringen kan du rapportera meddelanden som du anser vara skräppost eller icke-skräppost till Microsoft på flera olika sätt, enligt beskrivningen i Rapportera meddelanden och filer till [Microsoft.](report-junk-email-messages-to-microsoft.md)
 
-- **Mass utskick via e-post** (kallas även _grå e-post_) är svårare att klassificera. Skräp post är ett konstant hot, Mass utskick är ofta en engångs annonsering eller marknadsförings meddelande. Vissa användare vill ha Mass utskick av e-post (och faktiskt har de tagit emot dem) medan andra användare anser att Mass utskick av e-post. Vissa användare vill till exempel ta emot reklam meddelanden från Contoso Corporation eller inbjudningar till en kommande konferens på cyberterrorism säkerhet, medan andra användare anser att samma meddelande ska vara skräp post.
+- **Massutskick** (kallas även _grå post)_ är svårare att klassificera. Skräppost är ett konstant hot, men massutskick är ofta bara en gång reklam- eller marknadsföringsmeddelanden. Vissa användare vill att stora e-postmeddelanden (och faktiskt avsiktligt har registrerat sig för att ta emot dem), medan andra användare anser att massutskick är skräppost. Vissa användare vill till exempel få reklammeddelanden från Contoso Corporation eller inbjudningar till en kommande konferens om cybersäkerhet, medan andra användare ser samma meddelanden som skräppost.
 
-  Mer information om hur Mass utskick identifieras finns i bulk- [nivå (BCL) i EOP](bulk-complaint-level-values.md).
+  Mer information om hur massutskick identifieras finns i Nivå för gruppklagomål [(BCL) i EOP.](bulk-complaint-level-values.md)
 
-## <a name="how-to-manage-bulk-email"></a>Hantera Mass utskick
+## <a name="how-to-manage-bulk-email"></a>Hantera massutskick
 
-På grund av den blandade högreaktioner till Mass utskick av e-post är det inte till hjälp för varje organisation.
+På grund av den blandade reaktionen mot massutskick finns det inte någon universell vägledning som gäller för varje organisation.
 
-Skydd mot skräp post har en standard tröskel för BCL som används för att identifiera Mass utskick via e-post. Administratörer kan öka eller minska tröskelvärdet. Mer information finns i följande avsnitt:
+Skräppostskyddsprinciper har en standardtröskel för BCL som används för att identifiera massutskick som skräppost. Administratörer kan öka eller minska tröskelvärdet. Mer information finns i följande avsnitt:
 
-- [Konfigurera principer för skräp post i EOP](configure-your-spam-filter-policies.md).
+- [Konfigurera principer för skydd mot skräppost i EOP.](configure-your-spam-filter-policies.md)
 
-- [EOP princip inställningar för skräp post](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)
+- [Principinställningar för EOP-skydd mot skräppost](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)
 
-Ett annat alternativ som är lätt att missa: om en användare klagande tar emot Mass utskick, men meddelanden kommer från välkända avsändare som skickar skräp post filtrering i EOP, måste användaren kontrol lera om det finns ett alternativ för att avbryta prenumerationen i e-postmeddelandet.
+Ett annat alternativ som är lätt att missat: om en användare klagar på att få massutskick av e-post, men meddelandena kommer från betrodda avsändare som klarar skräppostfiltreringen i EOP, kan du be användaren att avregistrera sig från prenumerationen i massmeddelandet.

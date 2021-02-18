@@ -1,5 +1,5 @@
 ---
-title: Skicka meddelanden till Microsoft för analys manuellt
+title: Skicka meddelanden till Microsoft manuellt för analys
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -14,89 +14,93 @@ search.appverid:
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
-description: Administratörer och slutanvändare kan läsa mer om hur man skickar meddelanden (god e-post markerat som dålig eller dålig e-post) till Microsoft för analys.
+description: Administratörer och slutanvändare kan lära sig att e-postmeddelanden (bra e-postmeddelanden som markerats som dåliga eller dåliga e-postmeddelanden) till Microsoft för analys.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d5d3b7a51c39b85af8a6fae84f525da6d806789c
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 98964d17c41222fa708bdf0059c0e67151582ef1
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029590"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290375"
 ---
-# <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Skicka meddelanden till Microsoft för analys manuellt
+# <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Skicka meddelanden till Microsoft manuellt för analys
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!NOTE]
-> Om du är administratör i en organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen för säkerhets & efterlevnad. Mer information finns i [använda administratörs överföring för att skicka misstänkt skräp post, Phish, URL: er och filer till Microsoft](admin-submission.md).
+> Om du är administratör i en organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen Inskickade i Säkerhets- & Efterlevnadscenter. Mer information finns i Använda [administrationsinskick för att skicka misstänkt skräppost, phish, URL:er och filer till Microsoft.](admin-submission.md)
 
-Det kan vara frustrerande när användare i din organisation får skräp post eller nätfiske-meddelanden i sin inkorg, eller om de inte får ett legitimt e-postmeddelande eftersom det är markerat som skräp post. Vi kan alltid finjustera våra skräp post filter så att de blir mer korrekta.
+Det kan vara frustrerande när användare i organisationen får skräppost (skräppost) eller nätfiskemeddelanden i Inkorgen, eller om de inte får ett legitimt e-postmeddelande eftersom det markeras som skräppost. Vi finjusterar kontinuerligt våra skräppostfilter för att bli mer exakta.
 
-Du och dina användare kan hjälpa till med den här processen genom att skicka falsk identifiering (god e-post markerat som dåligt), falskt negativ (dålig e-post) och nätfiske-meddelanden till Microsoft för analys.
+Du och dina användare kan hjälpa till med detta genom att skicka falska positiva meddelanden (bra e-post markerad som dålig), falska negativa meddelanden (felaktig e-post tillåts) och nätfiskemeddelanden till Microsoft för analys.
 
 > [!NOTE]
-> På grund av de stora mängder som vi tar emot kanske vi inte kan besvara alla förfrågningar om analys.
+> På grund av den stora mängden inskickade uppgifter kan vi kanske inte besvara alla förfrågningar om analys.
 
-## <a name="submit-false-negatives-to-microsoft"></a>Skicka falska negativa negativ till Microsoft
+## <a name="submit-false-negatives-to-microsoft"></a>Skicka falska negativa tal till Microsoft
 
 > [!TIP]
-> I stället för att använda följande procedurer för att rapportera falska negativa tal, kan användare i Outlook och Outlook på webben (tidigare Outlook Web App) använda tillägget rapport meddelande eller rapport-nätfiske. Information om hur du installerar och använder de här verktygen finns i [aktivera tillägget rapportera meddelande](enable-the-report-message-add-in.md) och [aktivera tillägget Rapportera nätfiske](enable-the-report-phish-add-in.md).
+> Istället för att använda följande procedurer för att rapportera falska negativa tal kan användare i Outlook och Outlook på webben (tidigare kallat Outlook Web App) använda tillägget Rapportmeddelande eller tillägget Rapport nätfiske. Mer information om hur du installerar [](enable-the-report-message-add-in.md) och använder de här verktygen finns i Aktivera tillägget Rapportmeddelande och Aktivera tillägget [Rapport nätfiske.](enable-the-report-phish-add-in.md)
 
-Om du får ett meddelande som skickas via skräp post filter som skulle ha identifierats som skräp post eller nätfiske kan du skicka meddelandet till Microsoft spam och Microsoft Phishing Analysis Teams. Analyserna granskar meddelandet och lägger till det i tjänstens globala filter om det uppfyller klassificerings villkoren.
+Om du får ett meddelande som har passerat skräppostfiltrering som borde ha identifierats som skräppost eller nätfiske kan du skicka meddelandet till Microsofts team för skräppostanalys och Microsofts nätfiskeanalys. Analytikerna granskar meddelandet och lägger till det i filtren för hela tjänsten om det uppfyller klassificeringskriterierna.
 
 1. Skapa ett nytt, tomt e-postmeddelande med någon av följande mottagare:
 
-   - **Skräp post**: `junk@office365.microsoft.com`
+   - **Skräppost:**`junk@office365.microsoft.com`
 
-   - **Nätfiske**: `phish@office365.microsoft.com`
+   - **Nätfiske:**`phish@office365.microsoft.com`
 
-2. Dra och släpp skräp post eller nätfiske till det nya meddelandet. Detta sparar skräp post-eller nät fiske meddelandet som en bifogad fil i det nya meddelandet. Kopiera och klistra inte in innehållet i meddelandet eller vidarebefordra det (vi behöver det ursprungliga meddelandet så att vi kan kontrol lera meddelande huvudena).
-
-   > [!NOTE]
-   >
-   > - Du kan bifoga flera meddelanden i det nya meddelandet. Kontrol lera att alla meddelanden är av samma typ: antingen nät fiske meddelanden och skräp post.
-   >
-   > - Lämna bröd texten i det nya meddelandet tomt.
-   >
-   > - Använd antingen. msg (standard Outlook-format) eller. eml (standard i Outlook på webb format) format för bifogade meddelanden.
-
-3. När du är klar klickar du på **Skicka**.
-
-> [!TIP]
-> Administratörer har flera olika sätt att blockera specifika meddelanden som identifieras som skräp post. Mer information finns i [skapa spärrade avsändare i EOP](create-block-sender-lists-in-office-365.md).
-
-## <a name="submit-false-positives-to-microsoft"></a>Skicka falsk positiv till Microsoft
-
-> [!TIP]
-> I stället för att använda följande procedurer för att rapportera falsk identifiering kan användare i Outlook och Outlook på webben (tidigare Outlook Web App) använda tillägget rapport meddelande eller rapport-nätfiske. Information om hur du installerar och använder de här verktygen finns i [aktivera tillägget rapportera meddelande](enable-the-report-message-add-in.md) och [aktivera tillägget Rapportera nätfiske](enable-the-report-phish-add-in.md).
-
-
-Om ett meddelande felaktigt har identifierats som skräp post kan du skicka meddelandet till Microsoft spam-gruppen. Analyserna utvärderar meddelandet och (beroende på analys resultaten) kan de globala filtren justeras så att de tillåter meddelandet.
-
-1. Skapa ett nytt, tomt e-postmeddelande med `not_junk@office365.microsoft.com` som mottagare:
-
-2. Dra och släpp det felidentifierade meddelandet i det nya meddelandet. Detta sparar det felidentifierade meddelandet som en bifogad fil i det nya meddelandet. Kopiera och klistra inte in innehållet i meddelandet eller vidarebefordra det (vi behöver det ursprungliga meddelandet så att vi kan kontrol lera meddelande huvudena).
+2. Dra och släpp skräppost- eller nätfiskemeddelandet i det nya meddelandet. Då sparas skräppost- eller nätfiskemeddelandet som en bifogad fil i det nya meddelandet. Kopiera inte och klistra inte in innehållet i meddelandet eller vidarebefordra meddelandet (vi behöver det ursprungliga meddelandet så att vi kan granska meddelanderubrikerna).
 
    > [!NOTE]
    >
-   > - Du kan bifoga flera meddelanden i det nya meddelandet. Kontrol lera att alla meddelanden är av samma typ: antingen nät fiske meddelanden och skräp post.
+   > - Du kan bifoga flera meddelanden i det nya meddelandet. Kontrollera att alla meddelanden har samma typ: nätfiskemeddelanden eller skräppost.
    >
-   > - Lämna bröd texten i det nya meddelandet tomt.
+   > - Lämna brödtexten i det nya meddelandet tom.
    >
-   > - Använd antingen. msg (standard Outlook-format) eller. eml (standard i Outlook på webb format) format för bifogade meddelanden.
+   > - Använd antingen .msg-format (standardformatet i Outlook) eller .eml-format (standardformatet i Outlook på webben) för bifogade meddelanden.
 
-3. När du är klar klickar du på **Skicka**.
+3. Klicka på Skicka när du är **klar.**
 
 > [!TIP]
-> Administratörer har flera olika sätt att tillåta vissa meddelanden att hoppa över filtrering av skräp post. Mer information finns i [skapa säkra avsändar listor i EOP](create-safe-sender-lists-in-office-365.md).
+> Administratörer kan blockera specifika meddelanden som felaktigt stavas som skräppost på flera olika sätt. Mer information finns i [Skapa listor med spärrade avsändare i EOP.](create-block-sender-lists-in-office-365.md)
 
-## <a name="where-is-the-data-from-submissions-to-microsoft-stored"></a>Var lagras data från inlägg till Microsoft?
+## <a name="submit-false-positives-to-microsoft"></a>Skicka falska positiva resultat till Microsoft
 
-Informationen finns i begränsningen för Office 365-kompatibilitet i Nord amerikanska data Center. Informationen granskas av analytiker på ingenjörs avdelningen för att förbättra filterens effektivitet.
+> [!TIP]
+> I stället för att använda följande procedurer för att rapportera falska positiva resultat kan användare i Outlook och Outlook på webben (tidigare kallat Outlook Web App) använda tillägget Rapportmeddelande eller tillägget Rapport nätfiske. Mer information om hur du installerar [](enable-the-report-message-add-in.md) och använder de här verktygen finns i Aktivera tillägget Rapportmeddelande och Aktivera tillägget [Rapport nätfiske.](enable-the-report-phish-add-in.md)
 
-## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Skapa en regel för e-postflöde för att ta emot kopior av meddelanden som rapporteras till Microsoft
 
-Anvisningar finns i [använda e-postflödes regler för att se vad användarna rapporterar till Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).
+Om ett meddelande felaktigt identifierats som skräppost kan du skicka meddelandet till Microsofts team för skräppostanalys. Analytikerna kommer att utvärdera meddelandet och (beroende på resultatet av analysen) kan filtren för hela tjänsten justeras så att meddelandet tillåts.
+
+1. Skapa ett nytt, tomt e-postmeddelande `not_junk@office365.microsoft.com` med mottagaren:
+
+2. Dra och släpp det felidentifierade meddelandet i det nya meddelandet. Då sparas det felidentifierade meddelandet som en bifogad fil i det nya meddelandet. Kopiera inte och klistra inte in innehållet i meddelandet eller vidarebefordra meddelandet (vi behöver det ursprungliga meddelandet så att vi kan granska meddelanderubrikerna).
+
+   > [!NOTE]
+   >
+   > - Du kan bifoga flera meddelanden i det nya meddelandet. Kontrollera att alla meddelanden har samma typ: nätfiskemeddelanden eller skräppost.
+   >
+   > - Lämna brödtexten i det nya meddelandet tom.
+   >
+   > - Använd antingen .msg-format (standardformatet i Outlook) eller .eml-format (standardformatet i Outlook på webben) för bifogade meddelanden.
+
+3. Klicka på Skicka när du är **klar.**
+
+> [!TIP]
+> Administratörer kan tillåta filtrering av skräppost på flera olika sätt. Mer information finns i [Skapa listor över betrodda avsändare i EOP.](create-safe-sender-lists-in-office-365.md)
+
+## <a name="where-is-the-data-from-submissions-to-microsoft-stored"></a>Var lagras data från inskickade data till Microsoft?
+
+Data finns i Efterlevnadsgränsen för Office 365 i nordamerikas datacenter. Data granskas av analytiker i teknikteamet för att hjälpa till att göra filtren mer effektiva.
+
+## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Skapa en e-postflödesregel för att ta emot kopior av meddelanden som rapporterats till Microsoft
+
+Instruktioner finns i Använda [e-postflödesregler för att se vad användarna rapporterar till Microsoft.](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)

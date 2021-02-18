@@ -18,16 +18,16 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Administratörer kan läsa mer om utvärderingsläget för Microsoft Defender för Office 365
-ms.openlocfilehash: 6207ae117f06a0e5f10d4a7a47a251137c51df05
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 0f45379bec52b54059c743823e2c8eb366f9bd59
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233585"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289395"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Om utvärderingsversionen av Microsoft Defender för Office 365
 
-Microsoft Defender för Office 365 skyddar organisationen mot skadliga hot som medförs av e-postmeddelanden, länkar (URL:er) och samarbetsverktyg. Defender för Office 365 innehåller:
+Microsoft Defender för Office 365 skyddar organisationen mot skadliga hot som e-postmeddelanden, länkar (URL:er) och samarbetsverktyg medför. Defender för Office 365 innehåller:
 
 - **Principer för hotskydd**: Definiera skyddsprinciper för hot för att ange rätt skyddsnivå för din organisation.
 - **Rapporter:** Visa rapporter i realtid för att övervaka Defender för Office 365-prestanda i organisationen.
@@ -41,7 +41,7 @@ En utvärderingsversion av Microsoft Defender för Office 365 är det enklaste s
 
 ## <a name="terms-and-conditions"></a>Villkor
 
-Utvärderingsversionen av Defender för Office 365 finns tillgänglig i 90 dagar och kan initieras för alla dina användare. Mer information finns i villkoren [för utvärderingsversionen av Microsoft Defender för Office 365 & Villkor.](defender-for-office-365-trial-terms-and-conditions.md)
+Utvärderingsversionen av Defender för Office 365 finns tillgänglig i 90 dagar och kan initieras för alla dina användare. Mer information finns i [villkoren för utvärderingsversionen av Microsoft Defender för Office 365 & Villkor.](defender-for-office-365-trial-terms-and-conditions.md)
 
 ## <a name="set-up-a-defender-for-office-365-trial"></a>Konfigurera en utvärderingsversion av Defender för Office 365
 
@@ -57,7 +57,7 @@ Som en del av utvärderingsversionen tillämpas Defender för Office 365-license
 
 ## <a name="permissions"></a>Behörigheter
 
-För att starta eller avsluta utvärderingsversionen måste du vara medlem i rollerna **Global administratör eller** **Säkerhetsadministratör** i Azure Active Directory. Mer information finns i [Om administratörsroller.](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)
+För att starta eller avsluta utvärderingsversionen måste du vara medlem i rollerna **Global administratör eller** **Säkerhetsadministratör** i Azure Active Directory. Mer information finns i [Om administratörsroller.](../../admin/add-users/about-admin-roles.md)
 
 ## <a name="additional-information"></a>Ytterligare information
 
@@ -67,7 +67,7 @@ Administratörer kan inaktivera utvärderingsversionen när som helst genom att 
 
 ## <a name="availability"></a>Tillgänglighet
 
-Utvärderingsversionen av Defender för Office 365 lanseras gradvis till befintliga kunder som uppfyller specifika villkor (inklusive geografi) och som inte har befintliga licenser för Defender för Office 365 abonnemang 1 eller abonnemang 2 (ingår i prenumerationen eller som ett tillägg).
+Utvärderingsversionen av Defender för Office 365 lanseras gradvis till befintliga kunder som uppfyller specifika villkor (inklusive geografi) och som inte har befintliga licenser för Defender för Office 365 Abonnemang 1 eller Abonnemang 2 (ingår i prenumerationen eller som ett tillägg).
 
 ## <a name="learn-more-about-defender-for-office-365"></a>Läs mer om Defender för Office 365
 
@@ -98,11 +98,11 @@ Kraftfulla funktioner hjälper dig att identifiera, prioritera och undersöka ho
 - [Hotutforskaren och identifieringar i realtid](threat-explorer.md)
 - [Realtidsrapporter i Defender för Office 365](view-reports-for-atp.md)
 - [Threat Trackers – nytt och värt att uppmärksamma](threat-trackers.md)
-- Integrering med [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+- Integrering med [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 ### <a name="response-and-remediation"></a>Svar och åtgärder
 
-Omfattande incidentsvars- och automatiseringsfunktioner ökar säkerhetsteamets effektivitet och effektivitet.
+Omfattande svars- och automatiseringsfunktioner för incidenter ökar säkerhetsteamets effektivitet och effektivitet.
 
 - [Automatiserad undersökning och svar (AIR) i Microsoft Defender för Office 365](office-365-air.md)
 

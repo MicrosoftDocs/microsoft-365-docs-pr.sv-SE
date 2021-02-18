@@ -9,22 +9,22 @@ audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
-description: Följ de här rekommendationerna för fristående Exchange Online Protection (EOP) för att konfigurera dig själv och undvika vanliga konfigurationsfel.
+description: Följ de här rekommendationerna för fristående Exchange Online Protection (EOP) så att du kan konfigurera dig själv och undvika vanliga konfigurationsfel.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a38454ceaba7f95dff172335dc374530efca20a
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: c64a9592d93ef046ad1c023a49bf378ccf6cf503
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165937"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290839"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Rekommendationer för konfiguration av fristående EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
--  [Exchange Online Protection fristående](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection fristående](exchange-online-protection-overview.md)
 
 Följ de här rekommendationerna för fristående Exchange Online Protection (EOP) för att konfigurera dig själv och undvika vanliga konfigurationsfel. Den här artikeln förutsätter att du redan har slutfört installationen. Om du inte har slutfört EOP-konfigurationen kan du [gå till Konfigurera EOP-tjänsten.](set-up-your-eop-service.md)
 
@@ -62,12 +62,12 @@ De här inställningarna omfattar ett antal funktioner som ligger utanför säke
 |[PowerShell-anslutning](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|Inaktiverad|Inaktiverad|Tillgängligt för postlådeanvändare eller e-postanvändare (användarobjekt som returneras av cmdleten [Get-User).](https://docs.microsoft.com/powershell/module/exchange/get-user)|
 |Använda [förfalskningsinformation för](learn-about-spoof-intelligence.md) att lägga till avsändare i listan över tillåtna avsändare|Ja|Ja||
 |[Katalogbaserad edge-blockering (DBEB)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Aktiverad|Aktiverad|Domain Type = Authoritative|
-|[Konfigurera multifaktorautentisering för alla administratörskonton](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|Aktiverad|Aktiverad||
+|[Konfigurera multifaktorautentisering för alla administratörskonton](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)|Aktiverad|Aktiverad||
 |
 
 ## <a name="troubleshooting"></a>Felsökning
 
-Felsöka allmänna problem och trender med hjälp av rapporterna i administrationscentret. Hitta specifik information om ett meddelande med hjälp av verktyget för meddelandespårning. Mer information om rapportering finns [i Rapportering och meddelandespårning i Exchange Online Protection.](reporting-and-message-trace-in-exchange-online-protection.md) Läs mer om verktyget för meddelandespårning i [Meddelandespårning i Säkerhets- & Efterlevnadscenter.](message-trace-scc.md)
+Felsöka allmänna problem och trender med hjälp av rapporterna i administrationscentret. Hitta specifika data om ett meddelande med hjälp av verktyget för meddelandespårning. Mer information om rapportering finns i [Rapportering och meddelandespårning i Exchange Online Protection.](reporting-and-message-trace-in-exchange-online-protection.md) Läs mer om verktyget för meddelandespårning i [Meddelandespårning i Säkerhets- & Efterlevnadscenter.](message-trace-scc.md)
 
 ## <a name="report-false-positives-and-false-negatives-to-microsoft"></a>Rapportera falska positiva tal och falska negativa tal till Microsoft
 
@@ -81,4 +81,4 @@ När du distribuerar en ny regel i produktionen väljer du ett av testlägena f�
 
 När du distribuerar nya regler bör du överväga att lägga till den ytterligare åtgärden **i Generera incidentrapport** för att övervaka regeln i praktiken.
 
-I hybridmiljöer där organisationen innehåller både lokal Exchange och Exchange Online bör du tänka på de villkor som du använder i e-postflödesregler. Om du vill att reglerna ska gälla för hela organisationen ska du se till att använda villkor som är tillgängliga i både lokal Exchange och i Exchange Online. De flesta villkor är tillgängliga i båda miljöerna, men det finns några som bara är tillgängliga i en miljö eller en annan. Läs mer under [E-postflödesregler (transportregler) i Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
+I hybridmiljöer där organisationen innehåller både lokal Exchange och Exchange Online bör du tänka på de villkor som du använder i e-postflödesregler. Om du vill att reglerna ska gälla för hela organisationen ska du se till att använda villkor som är tillgängliga i både lokal Exchange och i Exchange Online. De flesta villkor är tillgängliga i båda miljöerna, men det finns några som bara är tillgängliga i den ena eller den andra miljön. Läs mer under [E-postflödesregler (transportregler) i Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
