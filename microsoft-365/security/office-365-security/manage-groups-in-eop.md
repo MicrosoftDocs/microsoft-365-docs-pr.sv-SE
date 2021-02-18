@@ -15,25 +15,25 @@ ms.custom:
 description: Administratörer i fristående Exchange Online Protection-organisationer (EOP) kan lära sig att skapa, ändra och ta bort distributionsgrupper och e-postaktiverade säkerhetsgrupper i administrationscentret för Exchange (EAC) och i fristående Exchange Online Protection (EOP) PowerShell.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01fe5c6ab1555749d38f9c092b05aca9befb67fe
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d03b8a5129eb3b070f30de46b9b9c7bcc8e9898d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166969"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286807"
 ---
 # <a name="manage-groups-in-eop"></a>Hantera grupper i EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
--  [Exchange Online Protection fristående](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection fristående](exchange-online-protection-overview.md)
 
 I fristående Exchange Online Protection -organisationer (EOP) utan Exchange Online-postlådor kan du skapa, ändra och ta bort följande typer av grupper:
 
 - **Distributionsgrupper:** En samling e-postanvändare eller andra distributionsgrupper. Till exempel grupper eller andra ad hoc-grupper som behöver ta emot eller skicka e-post i ett gemensamt intresse. Distributionsgrupper är enbart för distribution av e-postmeddelanden och är inte säkerhetsobjekt (de kan inte ha tilldelats behörighet).
 
-- **E-postaktiverade säkerhetsgrupper:** En samling e-postanvändare och andra säkerhetsgrupper som behöver åtkomstbehörighet för administratörsroller. Du kanske till exempel vill ge vissa grupper av användare administratörsbehörigheter så att de kan konfigurera inställningarna för skydd mot skräppost och skadlig programvara.
+- **E-postaktiverade säkerhetsgrupper:** En samling e-postanvändare och andra säkerhetsgrupper som behöver åtkomstbehörighet för administratörsroller. Du kanske till exempel vill ge vissa grupper av användare administratörsbehörigheter så att de kan konfigurera inställningar för skydd mot skräppost och skadlig programvara.
 
     > [!NOTE]
     >
@@ -51,12 +51,12 @@ Du kan hantera grupper i administrationscentret för Exchange (EAC) och i frist�
 
 - När du hanterar grupper i fristående EOP PowerShell kan det uppstå begränsningar. PowerShell-procedurerna i den här artikeln använder en batchbearbetningsmetod som resulterar i en överföringsfördröjning på några minuter innan resultatet av kommandona visas.
 
-- Du måste ha tilldelats behörigheter i Exchange Online Protection innan du kan utföra procedurerna i den här artikeln. Specifikt behöver du rollen **Distributionsgrupper,** som är tilldelad **rollgrupperna Organisationshantering** **och Mottagarhantering** som standard. Mer information finns i [Behörigheter i fristående EOP](feature-permissions-in-eop.md) och Använda EAC för att [ändra listan över medlemmar i rollgrupper.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
+- Du måste ha tilldelats behörigheter i Exchange Online Protection innan du kan utföra procedurerna i den här artikeln. Specifikt behöver du rollen **Distributionsgrupper,** som är tilldelad **rollgrupperna Organisationshantering** **och Mottagarhantering** som standard. Mer information finns i [Behörigheter i fristående EOP](feature-permissions-in-eop.md) [och Använda EAC för att ändra listan över medlemmar i rollgrupper.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
 - Mer information om kortkommandon som kan gälla för procedurerna i den här artikeln finns i Kortkommandon för [administrationscentret för Exchange i Exchange Online.](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
-> Har du problem? Be om hjälp i [forumet för Exchange Online Protection.](https://go.microsoft.com/fwlink/p/?linkId=285351)
+> Har du problem? Be om hjälp i [forumet för Exchange Online Protection.](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE)
 
 ## <a name="use-the-exchange-admin-center-to-manage-distribution-groups"></a>Använda administrationscentret för Exchange för att hantera distributionsgrupper
 
@@ -82,7 +82,7 @@ Du kan hantera grupper i administrationscentret för Exchange (EAC) och i frist�
 
    - <sup>\*</sup>**Ägare:** En gruppägare kan hantera gruppmedlemskap. Som standard är den person som skapar en grupp ägaren. Alla grupper måste ha minst en ägare.
 
-     Om du vill lägga till ägare klickar **du på ikonen** Lägg ![ ](../../media/ITPro-EAC-AddIcon.png) till. I dialogrutan som visas går du till och väljer en mottagare eller grupp och klickar sedan **på lägg till ->.** Upprepa det här steget så många gånger det behövs. Klicka på OK när du är **klar.**
+     Klicka på Lägg till-ikonen om **du vill lägga** till ![ ](../../media/ITPro-EAC-AddIcon.png) ägare. I dialogrutan som visas går du till och väljer en mottagare eller grupp och klickar sedan **på lägg till ->.** Upprepa det här steget så många gånger det behövs. Klicka på OK när du är **klar.**
 
      Om du vill ta bort en ägare markerar du ägaren och klickar sedan på **ikonen Ta** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) bort.
 
@@ -112,7 +112,7 @@ Använd den här fliken för att visa eller ändra grundläggande information om
 
   Om du har implementerat en gruppnamnsprincip måste visningsnamnet följa namnformatet som definieras av principen.
 
-- **Alias:** Det här är den del av e-postadressen som visas till vänster om at-symbolen (@). Om du ändrar alias ändras även gruppens primära SMTP-adress och innehåller det nya aliaset. Dessutom sparas e-postadressen med det tidigare aliaset som proxyadress för gruppen.
+- **Alias:** Det här är den del av e-postadressen som visas till vänster om at-symbolen (@). Om du ändrar alias ändras även gruppens primära SMTP-adress och innehåller det nya aliaset. Dessutom sparas e-postadressen med det tidigare aliaset som en proxyadress för gruppen.
 
 - **E-postadress:** E-postadressen består av alias till vänster om at-symbolen (@) och en domän på höger sida. Som standard används värdet för **Alias** för aliasvärdet, men du kan ändra det. För domänvärdet klickar du på listrutan och väljer och godkänner domänen i din organisation.
 
@@ -122,7 +122,7 @@ Använd den här fliken för att visa eller ändra grundläggande information om
 
 Använd den här fliken för att tilldela gruppägare. En gruppägare kan hantera gruppmedlemskap. Som standard är den person som skapar en grupp ägaren. Alla grupper måste ha minst en ägare.
 
-Om du vill lägga till ägare klickar **du på ikonen** Lägg ![ ](../../media/ITPro-EAC-AddIcon.png) till. I dialogrutan som visas går du till och väljer en mottagare och klickar sedan **på lägg till ->.** Upprepa det här steget så många gånger det behövs. Klicka på OK när du är **klar.**
+Klicka på Lägg till-ikonen om **du vill lägga** till ![ ](../../media/ITPro-EAC-AddIcon.png) ägare. I dialogrutan som visas går du till och väljer en mottagare och klickar sedan **på lägg till ->.** Upprepa det här steget så många gånger det behövs. Klicka på OK när du är **klar.**
 
 Om du vill ta bort en ägare markerar du ägaren och klickar sedan på **ikonen Ta** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) bort.
 
@@ -232,9 +232,9 @@ Detaljerad information om syntax och parametrar finns i [Remove-EOPDistributionG
 
 Kontrollera att du har skapat, ändrat eller tagit bort en distributionsgrupp eller e-postaktiverad säkerhetsgrupp genom att göra något av följande:
 
-- Öppna EAC och gå till **Mottagare** \> **Grupper**. Kontrollera att gruppen finns med i listan (eller inte visas) och verifiera **värdet grupptyp.** Markera gruppen och visa informationen i informationsfönstret, eller klicka på **redigeringsikonen** ![ för att visa ](../../media/ITPro-EAC-AddIcon.png) inställningarna.
+- Öppna EAC och gå till **Mottagare** \> **Grupper**. Kontrollera att gruppen finns med i listan (eller inte visas) och verifiera **värdet för Grupptyp.** Markera gruppen och visa informationen i informationsfönstret, eller klicka på **redigeringsikonen** ![ för att visa ](../../media/ITPro-EAC-AddIcon.png) inställningarna.
 
-- Kör följande kommando i fristående EOP PowerShell för att verifiera att gruppen listas (eller inte visas):
+- Kör följande kommando i fristående EOP PowerShell för att verifiera att gruppen listas (eller inte finns med i listan):
 
   ```PowerShell
   Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited

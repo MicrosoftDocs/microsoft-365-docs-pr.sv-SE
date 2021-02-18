@@ -19,29 +19,29 @@ ms.custom:
 description: Administratörer kan ta reda på hur de använder portalen inskickade innehåll i Säkerhets- & och efterlevnadscenter för att skicka misstänkta e-postmeddelanden, misstänkta nätfiskemeddelanden, skräppost och andra potentiellt skadliga meddelanden, URL:er och filer till Microsoft för genomsökning.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7a822909c318cb336c179b299aa64cd71dcca4d8
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 7b4e6dfcb5900ed41ad3ab0b44fada93599f0b4b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175877"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288795"
 ---
-# <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Använd admininskickning för att skicka misstänkt skräppost, nätt phish, URL:er och filer till Microsoft
+# <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Använd administrationsinskickning för att skicka misstänkt skräppost, nätt phish, URL:er och filer till Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
 
 
 I Microsoft 365-organisationer med postlådor i Exchange Online kan administratörer använda portalen Inskickade i säkerhets- och efterlevnadscentret för & för att skicka e-postmeddelanden, URL:er och bifogade filer till Microsoft för genomsökning.
 
 När du skickar ett e-postmeddelande får du:
 
-1. **Kontroll av e-postautentisering:** Information om huruvida e-postautentisering har godkänts eller misslyckats när den levererades.
+1. **Kontroll av e-postautentisering:** Information om e-postautentisering har godkänts eller misslyckats när den levererades.
 2. **Principträffar:** Information om principer som kan ha tillåtit eller blockerat inkommande e-post i klientorganisationen åsidosätter våra tjänstefilterprinciper.
-3. **Payload reputation/detonation**: En undersökning av url:er och bifogade filer i meddelandet.
+3. **Payload reputation/detonation**: En undersökning av alla URL:er och bifogade filer i meddelandet.
 4. **Analys av** grader: Granska gjort av mänskliga graders för att bekräfta om meddelanden är skadliga.
 
 > [!IMPORTANT]
@@ -75,7 +75,7 @@ Andra sätt att skicka e-postmeddelanden, URL:er och bifogade filer till Microso
 
    - **Nätverksmeddelande-ID:** Det här är ett GUID-värde som är tillgängligt i rubriken **X-MS-Exchange-Organization-Network-Message-Id** i meddelandet eller i rubriken **X-MS-Office365-Filtering-Correlation-Id** i meddelanden i karantän.
 
-   - **Arkiv:** Klicka **på Välj fil.** Leta upp och markera .eml- eller .msg-filen i dialogrutan som öppnas och klicka sedan på **Öppna.**
+   - **Fil:** Klicka **på Välj fil.** Leta upp och markera .eml- eller .msg-filen i dialogrutan som öppnas och klicka sedan på **Öppna.**
 
    > [!NOTE]
    > Administratörer med Defender för Office 365 abonnemang 1 eller abonnemang 2 kan skicka meddelanden som är så gamla som 30 dagar. Andra administratörer kan bara gå tillbaka 7 dagar.
@@ -116,7 +116,7 @@ Andra sätt att skicka e-postmeddelanden, URL:er och bifogade filer till Microso
 
    - **Borde inte ha blockerats**
 
-   - **Bör ha blockerats:** **Skadlig programvara** är det enda alternativet och väljs automatiskt.
+   - **Bör ha blockerats:** **Skadlig** programvara är det enda alternativet och väljs automatiskt.
 
 4. Klicka på knappen Skicka när du **är** klar.
 
@@ -128,7 +128,7 @@ I Säkerhets- & Efterlevnadscenter går  du till Sändning av hothantering, kont
 
 Högst upp på sidan kan du ange ett startdatum, ett slutdatum och (som  standard) kan du filtrera efter inskicknings-ID (ett GUID-värde som tilldelas till varje inskickat värde) genom att ange ett värde i rutan och klicka på ![ ](../../media/scc-quarantine-refresh.png) Uppdatera. Du kan ange flera värden avgränsade med kommatecken.
 
-Om du vill ändra filtervillkor klickar du **på knappen** Submission ID och väljer något av följande värden:
+Om du vill ändra filtervillkor klickar du **på knappen** Överförings-ID och väljer något av följande värden:
 
 - **Avsändare**
 - **Ämne/URL/Filnamn**
@@ -149,7 +149,7 @@ Klicka på **fliken E-post.**
 Du kan klicka på **knappen Kolumnalternativ** längst ned på sidan om du vill lägga till eller ta bort kolumner i vyn:
 
 - **Datum**
-- **Inskickings-ID:** Ett GUID-värde som tilldelas till varje sändning.
+- **Inskickings-ID:** Ett GUID-värde som har tilldelats till varje sändning.
 - **Skickat av**<sup>\*</sup>
 - **Ämne**<sup>\*</sup>
 - **Avsändare**
@@ -162,14 +162,14 @@ Du kan klicka på **knappen Kolumnalternativ** längst ned på sidan om du vill 
 
 #### <a name="admin-submission-rescan-details"></a>Information om administratörsinskickning
 
-Meddelanden som skickas som inskickade administratörer skannas på ny sida och resultaten visas i den utfällna informationen:
+Meddelanden som skickas som inskickade administratörer genomsöks på ny sida och resultaten visas i den utfällna informationen:
 
 - Om det var fel i avsändarens e-postautentisering vid leverans.
 - Information om principträffar som kan ha påverkat eller åsidosättt ett meddelandes bedömning.
 - Aktuella detonationsresultat för att se om URL:erna eller filerna som finns i meddelandet är skadliga eller inte.
 - Feedback från graders.
 
-Om en åsidosättning hittades ska reningen slutföras inom några minuter. Om det inte uppstod något problem med e-postautentisering eller e-postleverans påverkades inte av en åsidosättning, kan det ta upp till en dag för feedback från grader.
+Om en åsidosättning hittades ska det slutföras om några minuter. Om det inte uppstod något problem med e-postautentisering eller e-postleverans påverkades inte av en åsidosättning kan det ta upp till en dag för feedback från grader.
 
 ### <a name="view-admin-url-submissions"></a>Visa url-inskickade administratörs-URL
 
@@ -203,11 +203,11 @@ Du kan klicka på **knappen Kolumnalternativ** längst ned på sidan om du vill 
 
 ## <a name="view-user-submissions-to-microsoft"></a>Visa användarinskick till Microsoft
 
-Om du har distribuerat tillägget Rapportmeddelande, [](enable-the-report-phish-add-in.md) [](enable-the-report-message-add-in.md)tillägget Rapport nätfiske eller personer använder den [inbyggda](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)rapporteringen i Outlook på webben  kan du se vad användarna rapporterar på fliken Användarinsändning.
+Om du har distribuerat tillägget Rapportmeddelande, [](enable-the-report-phish-add-in.md) [](enable-the-report-message-add-in.md)tillägget Rapport nätfiske eller använder den [inbyggda](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)rapporteringen i Outlook på webben kan  du se vad användarna rapporterar på fliken Användarinsändning.
 
 1. Gå till & för hantering av  hothantering i Säkerhets- \> **och efterlevnadscentret.**
 
-2. Välj fliken **Användarinskickningar** och klicka sedan på **Ny inskickning.**
+2. Välj fliken **Användarinskickningar** och klicka sedan på **Ny inskicking.**
 
 Du kan klicka på **knappen Kolumnalternativ** längst ned på sidan om du vill lägga till eller ta bort kolumner i vyn:
 

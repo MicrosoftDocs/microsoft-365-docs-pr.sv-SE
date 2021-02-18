@@ -15,21 +15,21 @@ ms.custom:
 description: I den här artikeln får du lära dig mer om rapporter och felsökningsverktyg som är tillgängliga för Microsoft Exchange Online Protection-administratörer (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 86c9eb0ee050c4c1a40ef7f29ea3d01dc202be9a
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 783c7ea0aca47c805daf66592b401a98f739d071
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166681"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288085"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Rapportering och meddelandespårning i EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor erbjuder EOP många olika rapporter som kan hjälpa dig att avgöra organisationens övergripande status och status. Det finns även verktyg som hjälper dig att felsöka specifika händelser (till exempel ett meddelande som inte kommer till de avsedda mottagarna) och granskningsrapporter för att hjälpa dig med efterlevnadskraven.
 
@@ -45,17 +45,17 @@ I Microsoft 365-organisationer med postlådor i Exchange Online eller friståend
 
 Mer information finns i följande resurser:
 
-- [Microsoft 365-rapporter i administrationscentret – Microsoft 365-grupper](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
+- [Microsoft 365-rapporter i administrationscentret – Microsoft 365-grupper](../../admin/activity-reports/office-365-groups.md)
 
-- [Microsoft 365-rapporter i administrationscentret – E-postaktivitet](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-activity)
+- [Microsoft 365-rapporter i administrationscentret – E-postaktivitet](../../admin/activity-reports/email-activity.md)
 
-- [Microsoft 365-rapporter i administrationscentret – Användning av e-postprogram](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-apps-usage)
+- [Microsoft 365-rapporter i administrationscentret – Användning av e-postprogram](../../admin/activity-reports/email-apps-usage.md)
 
-- [Microsoft 365-rapporter i administrationscenter – Postlådeanvändning](https://docs.microsoft.com/microsoft-365/admin/activity-reports/mailbox-usage)
+- [Microsoft 365-rapporter i administrationscentret – Postlådeanvändning](../../admin/activity-reports/mailbox-usage.md)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Säkerhets- & efterlevnadsrapporter i administrationscentret för Microsoft 365
 
-De här förbättrade rapporterna ger en interaktiv rapporteringsupplevelse för EOP-administratörer, som innehåller sammanfattningsinformation, och möjlighet att öka detaljgranskningen för mer information.
+Dessa förbättrade rapporter ger en interaktiv rapporteringsupplevelse för EOP-administratörer, som innehåller sammanfattningsinformation, och möjlighet att öka detaljgranskningen för mer information.
 
 **Defender för Office 365:** Visa information om säkra länkar och säkra bifogade filer som ingår i Microsoft Defender för Office 365.
 

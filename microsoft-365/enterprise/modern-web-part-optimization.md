@@ -1,5 +1,5 @@
 ---
-title: Optimera webb dels prestanda i sidor i SharePoint Online
+title: Optimera webbdelsprestanda i moderna webbplatssidor i SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -20,83 +20,86 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Lär dig hur du använder Nätverksdiagnostik för att optimera prestanda för webb delar i SharePoint Online-moderna webbplats sidor.
-ms.openlocfilehash: f7b72aa8ed212147c06660585c4e58e548762c35
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+description: Lär dig hur du använder siddiagnostik för att optimera prestanda för webbdelar på moderna webbplatssidor i SharePoint Online.
+ms.openlocfilehash: ca1b9328ad71fdd4a3f3c6c6be47eaa3993d4fc7
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519757"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287155"
 ---
-# <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimera webb dels prestanda i sidor i SharePoint Online
+# <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimera webbdelsprestanda i moderna webbplatssidor i SharePoint Online
 
-Moderna webbplats sidor för SharePoint Online innehåller webb delar som kan bidra till den totala sid inläsnings tiden. Den här artikeln hjälper dig att förstå hur webb delar på sidor påverkar uppskattad svars tid och hur du åtgärdar vanliga problem.
-
->[!NOTE]
->Mer information om prestanda i SharePoint Online-moderna portaler finns i [prestanda i den moderna SharePoint-upplevelsen](https://docs.microsoft.com/sharepoint/modern-experience-performance).
-
-## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>Använda verktyget för nätverksdiagnostik för SharePoint för att analysera webb delar
-
-Verktyget för nätverksdiagnostik för SharePoint är ett webb läsar tillägg för de nya Microsoft Edge- https://www.microsoft.com/edge) webbläsarna (och Chrome som analyserar både SharePoint Online moderna Portal och klassisk publicerings webbplats sidor. Verktyget visar en rapport för varje sida som visar hur sidan fungerar mot en viss uppsättning prestanda villkor. Om du vill installera och läsa mer om verktyget för nätverksdiagnostik för SharePoint kan du gå till [använda diagnostikverktyget för SharePoint Online](page-diagnostics-for-spo.md).
+Moderna webbplatssidor i SharePoint Online innehåller webbdelar som kan bidra till den övergripande sidinläsningstiden. Den här artikeln hjälper dig att förstå hur du avgör hur webbdelar i dina sidor påverkar användarens uppfattas fördröjning och hur du åtgärdar vanliga problem.
 
 >[!NOTE]
->Verktyget för nätverksdiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint-Systemsida.
+>Mer information om prestanda i moderna SharePoint Online-portaler finns [i Prestanda i det moderna SharePoint-programmet.](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
-När du analyserar en SharePoint-webbplats med Page Diagnostics för SharePoint-verktyget kan du Visa information om vilka webb delar som överskrider bas linjen i **webb delarna som påverkar sid inläsnings tiden** i fönstret _diagnostiktest_ .
+## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>Använda verktyget Siddiagnostik för SharePoint för att analysera webbdelar
 
-Möjliga resultat:
-
-- **Åtgärd krävs** (röd): en _anpassad_ webbdel som visas i visnings området (skärm synlig del av sidan som laddas först) och som tar längre tid än **två** sekunder att läsa in. _Anpassade_ webb delar utanför det område som tar längre tid än **fyra** sekunder att läsa in. Total inläsnings tid visas i test resultat och är uppdelat per modul laddas, Lazy load, init and rendering.
-- **Förbättrings möjligheter** (gula): objekt som kan påverka sid inläsnings tid visas i det här avsnittet och bör granskas och övervakas. Det kan innehålla "från lådan" (OOTB) webb delar. Resultaten för de Microsoft-webbdelar som visas i det här avsnittet rapporteras automatiskt till Microsoft, så **Ingen åtgärd krävs**. Du bör bara logga ett support ärende för att få en undersökning om du har mycket långsam prestanda på sidan och **alla Microsoft webb delar** på sidan visas i avsnittet **förbättrings möjligheter** . Observera att om du uppdaterar en framtida diagnostik för SharePoint-verktyg kommer resultaten att brytas efter den specifika konfigurationen för Microsoft-webbdelen.
-- **Ingen åtgärd krävs** (grön): ingen webbdel tar längre tid än **två** sekunder att returnera data.
-
-Om **webb delarna påverkar tiden för sid inläsnings tid** som visas i avsnittet **Obs!** eller **förbättrings möjligheter** i resultatet klickar du på resultatet för att visa information om vilka webb delar som laddas långsamt. Framtida uppdateringar av diagnostikverktyget för SharePoint kan innehålla uppdateringar av analys regler, så se till att du alltid har den senaste versionen av verktyget.
-
-![Resultat för verktyget Nätverksdiagnostik](../media/modern-portal-optimization/pagediag-web-part.png)
-
-Informationen i resultatet inkluderar:
-
-- **Gjort av** visar om webb delen är anpassad eller Microsoft OOTB
-- **Namn och ID** visar identifierande information som kan hjälpa dig att hitta webb delen på sidan
-- **Totalt** visar den totala tiden för webb delen som ska läsas in
-- **Modul beläggning** visar hur lång tid det tar att hämta och ladda webb dels komponenter
-- **Lazy load** visar tiden för uppskjutning av webb delar som inte visas i huvud avsnittet på sidan
-- **Init** visar den tid det tar för webb dels initiering
-- **Rendera** visar den tid det tar för webb delen att hämta och återge resultat
-
-Den här informationen tillhandahålls för att utvecklare och utvecklare ska kunna felsöka problem. Denna information bör ges till din design-och utvecklings grupp.
-
-## <a name="remediate-web-part-performance-issues"></a>Åtgärda problem med webb dels prestanda
-
-Följ anvisningarna i det här avsnittet om du vill identifiera och åtgärda prestanda problem med webb delar som listas i **webb delarna påverkar sid inläsnings tid** .
-
-Det finns tre möjliga orsaker till dåligt webb dels prestanda. Använd informationen nedan för att avgöra vilka problem som gäller för ditt scenario och åtgärda dem.
-
-- Skript storlek och samband för webb delar
-  - Optimera det första skriptet som visar Mainline-scenariot för _endast visnings läge_.
-  - Flytta de mindre vanliga scenarierna och redigerings läges koden (som egenskaps fönstret) till olika segment med hjälp av _import ()_ -instruktionen.
-  - Ta bort alla döda koder fullständigt genom att granska sambanden för _package.js_ . Flytta alla test/skapa bara samband till devDependencies.
-  - Användning av Office 365 CDN krävs för optimal statisk resurs nedladdning. Offentliga CDN-ursprung är lämpligt för _JS/CSS-_ filer. Mer information om hur du använder Office 365 CDN finns i [använda office 365-leverans Network (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md).
-  - Åter användnings bara ramverk som _reagerar_ och _Fabric-import_ som ingår i SharePoint Framework (SPFx). Mer information finns i [Översikt över SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview).
-  - Kontrol lera att du använder den senaste versionen av SharePoint Framework och uppgradera till nya versioner när de blir tillgängliga.
-- Data hämtning/cachning
-  - Om webb delen är beroende av extra Server samtal för att hämta data för visning kontrollerar du att dessa Server-API: er snabbt och/eller implementerar cachelagring på klient sidan (till exempel genom att använda _localStorage_ eller _IndexedDB_ för större uppsättningar).
-  - Om det krävs flera samtal för att återge viktiga data bör du överväga att använda en server eller någon annan metod för att konsolidera förfrågningar till ett enda samtal.
-  - Om vissa delar av data kräver ett långsammare API men inte är kritiska för inledande rendering kan du koppla ihop dessa med ett separat samtal som körs efter att kritiska data har Render ATS.
-  - Om flera delar använder samma data kan du använda ett vanligt data lager för att undvika dubbletter.
-- Åter givnings tid
-  - Alla medie källor som bilder och videor bör begränsas till gränserna för behållaren, enheten och/eller nätverket för att undvika onödigt stora till gångar. Mer information om innehålls beroenden finns i [använda Office 365 Content Delivery Network (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md).
-  - Undvik API-samtal som orsakar omflöde, komplexa CSS-regler eller komplexa animeringar. Mer information finns i [minimera bakströmningen](https://developers.google.com/speed/docs/insights/browser-reflow).
-  - Undvik att använda inaktiva långa aktiviteter. I stället kan du dela tids krävande uppgifter i olika köer. Mer information finns i [optimera JavaScript-körning](https://developers.google.com/web/fundamentals/performance/rendering/optimize-javascript-execution).
-  - Reservera motsvarande utrymme för asynkron åter givning av media eller visuella element för att undvika överhoppade ramar och hackigt (kallas även _Jank_).
-  - Om en viss webbläsare inte har stöd för en funktion som används i rendering kan du antingen använda en polyfyllning eller utesluta en beroende kod. Om funktionen inte är kritisk kan du ta bort resurser som händelse hanterare för att undvika minnes läckor.
-
-Innan du gör sid ändringar för att åtgärda prestanda problem ska du anteckna sid inläsnings tiden i analys resultaten. Kör verktyget igen efter ändringen för att se om det nya resultatet är inom bas linje standarden och kontrol lera den nya sid inläsnings tiden för att se om det gjorts en förbättring.
-
-![Tids resultat för sid inläsning](../media/modern-portal-optimization/pagediag-page-load-time.png)
+Verktyget Siddiagnostik för SharePoint är ett webbläsartillägg för nya Microsoft Edge (och Chrome-webbläsare som analyserar både modern portal för SharePoint Online och https://www.microsoft.com/edge) klassiska publiceringswebbplatssidor. Verktyget tillhandahåller en rapport för varje analyserad sida som visar hur sidan fungerar mot en definierad uppsättning prestandavillkor. Om du vill installera och lära dig mer om verktyget Siddiagnostik för SharePoint går du [till Använda verktyget Siddiagnostik för SharePoint Online.](page-diagnostics-for-spo.md)
 
 >[!NOTE]
->Sid inläsnings tiden kan variera beroende på en mängd olika faktorer, till exempel nätverks belastning, tidpunkt och andra tillfälliga förhållanden. Testa sid inläsnings tid ett par gånger innan och efter det att du har gjort ändringar för att få hjälp med medelvärdet.
+>Verktyget Siddiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint-systemsida.
+
+När du analyserar en SharePoint-webbplatssida med verktyget Siddiagnostik för SharePoint kan du  se information om webbdelar som  överskrider baslinjemåttet i webbdelarna påverkar sidinläsningstidens resultat i fönstret Diagnostiktest.
+
+Möjliga resultat är:
+
+- **Obs!** (röd): _Alla_ anpassade webbdelen som visas i visningsområdet (den del av sidan som visas på skärmen som läses in först) tar längre tid än **två** sekunder att läsa in. Anpassade _webbdelar_ utanför visningsområdet som tar längre tid än **fyra** sekunder att läsa in. Total inläsningstid visas i testresultat och delas upp efter inläsning i modulen, lat inläsning, init och återgivning.
+- **Förbättringsmöjligheter** (gult): Objekt som kan påverka sidinläsningstiden visas i det här avsnittet och bör granskas och övervakas. Det kan inkludera Microsoft-webbdelar (OOTB). Resultat för alla Microsoft-webbdelar som visas i det här avsnittet rapporteras automatiskt till Microsoft, så **ingen åtgärd krävs.** Du bör bara logga ett support ärende för undersökning om  du har mycket långsam prestanda på sidan och alla Microsoft-webbdelar på sidan visas i resultatet i avsnittet för **förbättringsmöjligheter.** Observera att en kommande uppdatering av siddiagnostik för SharePoint-verktyget ytterligare delar upp resultaten baserat på den specifika konfigurationen av Microsoft-webbdelen.
+- **Ingen åtgärd krävs** (grön): Ingen webbdel tar längre tid än **två sekunder** att returnera data.
+
+Om **webbdelarna** påverkar sidinläsningstidens resultat  visas  i antingen avsnittet om obligatoriska åtgärder eller förbättringsmöjligheter i resultatet klickar du på resultatet för att se information om vilka webbdelar som läses in långsamt. Framtida uppdateringar av verktyget Siddiagnostik för SharePoint kan innehålla uppdateringar av analysregler, så se till att du alltid har den senaste versionen av verktyget.
+
+![Resultat för verktyget Siddiagnostik](../media/modern-portal-optimization/pagediag-web-part.png)
+
+Information som är tillgänglig i resultatet är:
+
+- **Skapad** av visar om webbdelen är anpassad eller Microsoft OOTB.
+- **Namn och ID** visar identifierande information som kan hjälpa dig att hitta webbdelen på sidan.
+- **Totalt** visar den totala tiden för webbdelen att läsa in, initiera och återge webbdelen. Det är den totala relativa tid som webbdelen tar för att återge på sidan, från början till slutet.
+- **Modulladdning** visar tiden det tar att ladda ned, utvärdera och läsa in tilläggen JavaScript- och CSS-filer. Sedan startas Init-processen.
+- **I Lat** lata belastning visas tiden för uppskjuten inläsning av webbdelar som inte visas i huvudavsnittet på sidan. Det finns vissa villkor där det finns för många webbdelar för att återges och de finns i kö för att återges för att minimera inläsningstiden för sidan.
+- **Init** visar hur lång tid det tar för webbdelen att initiera data.
+    Det är ett asynkront anrop och inittid är beräkningen av tid för onInit-funktionen när den returnerade lovat har lösts.
+- **Återgivningen** visar tiden det tar att återge användargränssnittet (användargränssnittet) när inläsningen av modulen och Init har slutförts.
+    Det är JavaScript-körningstiden att sätta fast DOM-versionen i dokumentet (sidan).
+    Rendering av asynkrona resurser, till exempel bilder, kan ta ytterligare tid att slutföra.
+
+Den här informationen tillhandahålls för att hjälpa designers och utvecklare att felsöka problem. Den här informationen ska ges till din design- och utvecklingsgrupp.
+
+## <a name="remediate-web-part-performance-issues"></a>Åtgärda prestandaproblem för webbdel
+
+Följ instruktionerna i det här avsnittet för att identifiera och åtgärda prestandaproblem med webbdelar som listas i webbdelarna påverkar **sidinläsningstidens** resultat.
+
+Det finns tre kategorier av möjliga orsaker till dålig prestanda för webbdel. Använd informationen nedan för att avgöra vilka problem som gäller för ditt scenario och åtgärda dem.
+
+- Skriptstorlek och beroenden för webbdel
+  - Optimera det första skriptet som återger huvudlinjescenariot endast _för visningsläge._
+  - Flytta mindre vanliga scenarier och redigeringslägeskod (som egenskapsfönstret) för att separera delar med hjälp av _import(-satsen)._
+  - Granska beroenden för filen _package.jsför_ att ta bort all avliden kod helt. Flytta test-/build-beroenden till devDependencies.
+  - Du måste använda Office 365 CDN för optimal nedladdning av statiska resurser. Offentliga CDN-ursprung är bättre för _js/css-filer._ Mer information om hur du använder Office 365 CDN finns i Använda [Office 365 Content Delivery Network (CDN) med SharePoint Online.](use-microsoft-365-cdn-with-spo.md)
+  - Återanvänd ramverk som _React_ och _Fabric-import_ som kommer som en del av SharePoint Framework (SPFx). Mer information finns i [Översikt över SharePoint Framework.](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview)
+  - Se till att du använder den senaste versionen av SharePoint Framework och uppgradera till nya versioner när de blir tillgängliga.
+- Hämtning/cachelagring av data
+  - Om webbdelen är beroende av extra serveranrop för att hämta data för visning ska du se till att de server-API:erna är snabba och/eller implementera cachelagring på klientsidan (t.ex. använda _localStorage_ eller _IndexedDB_ för större uppsättningar).
+  - Om flera anrop krävs för att återge viktiga data kan du överväga att batcha på servern eller andra metoder för att konsolidera förfrågningar till ett enda samtal.
+  - Alternativt, om vissa dataelement kräver ett långsammare API, men inte är viktiga för den första renderingen, kan du avkoda dessa till ett separat anrop som körs när viktiga data har återges.
+  - Om flera delar använder samma data bör du använda ett vanligt datalager för att undvika dubbletter av samtal.
+- Renderingstid
+  - Alla mediekällor som bilder och videor bör ha en storlek som begränsar behållaren, enheten och/eller nätverket för att undvika att ladda ned onödiga stora tillgångar. Mer information om innehållsberoenden finns i Använda [Office 365 Content Delivery Network (CDN) med SharePoint Online.](use-microsoft-365-cdn-with-spo.md)
+  - Undvik API-anrop som leder till flödesschema, komplexa CSS-regler eller komplicerade animeringar. Mer information finns i [Minimera webbläsarens flödesomformning.](https://developers.google.com/speed/docs/insights/browser-reflow)
+  - Undvik att använda kedjeaktiviteter som körs länge. Dela i stället upp långa aktiviteter i separata köer. Mer information finns i Optimera [körning av JavaScript.](https://developers.google.com/web/fundamentals/performance/rendering/optimize-javascript-execution)
+  - Reservera motsvarande utrymme för asynkron rendering av media eller visuella element för att undvika överhoppade ramar och hackar (kallas även _jank)._
+  - Om en viss webbläsare inte har stöd för en funktion som används för rendering kan du antingen läsa in en polyfyllfunktion eller utesluta löpande beroende kod. Om funktionen inte är kritisk kasserar du resurser som händelsehanterare för att undvika minnesläckor.
+
+Innan du gör sidändringar för att åtgärda prestandaproblem bör du anteckna sidinläsningstiden i analysresultaten. Kör verktyget igen efter ändringen för att se om det nya resultatet ligger inom baslinjestandarden och kontrollera inläsningstiden för den nya sidan för att se om det finns en förbättring.
+
+![Inläsningstidsresultat för sida](../media/modern-portal-optimization/pagediag-page-load-time.png)
+
+>[!NOTE]
+>Sidinläsningstiden kan variera beroende på en mängd olika faktorer, till exempel nätverksbelastning, tid på dagen och andra tillfälliga villkor. Du bör testa inläsningstiden för sidorna några gånger före och efter ändringarna för att beräkna medelvärdet för resultatet.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
@@ -104,8 +107,8 @@ Innan du gör sid ändringar för att åtgärda prestanda problem ska du anteckn
 
 [Justera Office 365-prestanda](tune-microsoft-365-performance.md)
 
-[Prestanda i den moderna SharePoint-upplevelsen](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Prestanda i det moderna SharePoint-programmet](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
 [Nätverk för innehållsleverans](content-delivery-networks.md)
 
-[Använda Office 365-innehålls leverans nätverk (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md)
+[Använda Office 365 Content Delivery Network (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md)

@@ -22,22 +22,22 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 451a6b19139502a3765795694860e884a7a469bf
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 48d7e1a7497f9bc2a07a84b36fb07939d25609bf
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175757"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289155"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Hur du rapporterar falska positiva/negativa tal i automatiserad undersökning och svarsfunktioner
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Microsoft Defender för Office 365 abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender för Office 365 abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Om automatisk undersökning och svar [(AIR) i Office 365](automated-investigation-response-office.md) missade eller felaktigt identifierat något finns det åtgärder som teamet kan vidta för att åtgärda det. Sådana åtgärder omfattar:
+Om funktioner för automatisk undersökning och svar [(AIR) i Office 365](automated-investigation-response-office.md) missade eller felaktigt identifierat något finns det åtgärder som teamet kan vidta för att åtgärda det. Sådana åtgärder omfattar:
 
 - [Rapportera ett falskt positivt/negativt värde till Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Justera aviseringar](#adjust-an-alert-to-prevent-false-positives-from-recurring) (vid behov). och
@@ -82,7 +82,7 @@ I Åtgärdscenter kan du se åtgärder som har vidtagits och eventuellt ångra �
 2. Välj Åtgärdscenter i **navigeringsfönstret.** 
 3. Välj fliken **Historik** för att visa listan över slutförda åtgärder.
 4. Markera ett objekt. Det utfällfönster som visas. 
-5. Välj Ångra i det utfällade **fönstret.** (Det är bara åtgärder som kan ångras som har **knappen Ångra.)**
+5. Välj Ångra i det utfällade **fönstret.** (Det är bara åtgärder som kan ångras som har **knappen** Ångra.)
 
 ## <a name="see-also"></a>Se även
 

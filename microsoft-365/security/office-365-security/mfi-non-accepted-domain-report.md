@@ -14,21 +14,21 @@ ms.custom:
 description: Administratörer kan ta reda på hur de använder rapporten om icke-godkända domäner i instrumentpanelen för e-postflöde i säkerhets- och efterlevnadscentret för & för att övervaka meddelanden från den lokala organisationen där avsändarens domän inte har konfigurerats i Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 573fb0ba2bf7981b6eb7df4eec7c8c4e5d596cac
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 6d7355af49c5810a593c5776b70cf7497b43af6b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150826"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287871"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Icke-godkänd domänrapport i Säkerhets- & Efterlevnadscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 abonnemang 1 och abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 I instrumentpanelen för e-postflöde i säkerhets- och efterlevnadscentret för [&](https://protection.office.com) visas information om meddelanden från din lokala e-postorganisation där avsändarens domän inte har konfigurerats som en godkänd domän i Microsoft [](mail-flow-insights-v2.md) 365-organisationen. 
 
@@ -48,15 +48,15 @@ Om du hovrar över en datapunkt (dag) i diagrammet visas det totala antalet medd
 
 ## <a name="details-table-view-for-the-non-accepted-domain-report"></a>Detaljtabellvy för domänrapporten Godkänd
 
-Om du **klickar på Tabellen Visa** information i en rapportvy visas följande information:
+Om du **klickar på tabellen Visa** information i en rapportvy visas följande information:
 
 - **Datum**
 - **Namn på inkommande koppling**
 - **Avsändningsdomän**
 - **Antal meddelanden**
-- **Exempelmeddelanden:** Meddelande-ID:na för ett urval av påverkade meddelanden.
+- **Exempelmeddelanden:** Meddelande-ID:na för ett exempel på påverkade meddelanden.
 
-Om du klickar **på** Filter i en detaljtabellvy kan du ange ett datumintervall **med startdatum** **och slutdatum.**
+Om du klickar **på** Filter i en detaljtabellvy kan du ange ett datumintervall **med Startdatum** **och Slutdatum.**
 
 Om du vill skicka rapporten för ett visst datumintervall till en eller flera mottagare via e-post klickar du **på Begär nedladdning.**
 

@@ -1,5 +1,5 @@
 ---
-title: Optimera anpassade tillägg i SharePoint Online-sidor med moderna webbplatser
+title: Optimera anpassade tillägg på moderna webbplatssidor i SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -18,95 +18,96 @@ ms.custom: Adm_O365
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Lär dig hur du optimerar prestanda för anpassade tillägg i sidor med moderna webbplatser i SharePoint Online.
-ms.openlocfilehash: 3f9474bcfa3266742d2e01af2f1df6eb5c0d017c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Lär dig hur du optimerar prestanda för anpassade tillägg på moderna webbplatssidor i SharePoint Online.
+ms.openlocfilehash: 92d328c64c89a1a01bbcd50fb7ad04affdf69af8
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694712"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287203"
 ---
-# <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Optimera anpassade prestanda i SharePoint Online-sidor med moderna webbplatser
+# <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Optimera anpassade tillägg i moderna webbplatssidor i SharePoint Online
 
-Den här artikeln hjälper dig att förstå hur anpassade tillägg påverkar uppskattad svars tid och hur du åtgärdar vanliga problem.
+Den här artikeln hjälper dig att förstå hur anpassade tillägg påverkar användarens uppfattas svarstid och hur du åtgärdar vanliga problem.
 
-## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-custom-extensions"></a>Använd verktyget för nätverksdiagnostik för SharePoint för att analysera anpassade tillägg
+## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-custom-extensions"></a>Använd verktyget Siddiagnostik för SharePoint för att analysera anpassade tillägg
 
-Verktyget för nätverksdiagnostik för SharePoint är ett webb läsar tillägg för de nya Microsoft Edge- https://www.microsoft.com/edge) webbläsarna (och Chrome som analyserar både SharePoint Online moderna Portal och klassisk publicerings webbplats sidor. Verktyget visar en rapport för varje sida som visar hur sidan fungerar mot en viss uppsättning prestanda villkor. Om du vill installera och läsa mer om verktyget för nätverksdiagnostik för SharePoint kan du gå till [använda diagnostikverktyget för SharePoint Online](page-diagnostics-for-spo.md).
+Verktyget Siddiagnostik för SharePoint är ett webbläsartillägg för nya Microsoft Edge (och Chrome-webbläsare som analyserar både modern portal för SharePoint Online och https://www.microsoft.com/edge) klassiska publiceringswebbplatssidor. Verktyget tillhandahåller en rapport för varje analyserad sida som visar hur sidan fungerar mot en definierad uppsättning prestandavillkor. Om du vill installera och lära dig mer om verktyget Siddiagnostik för SharePoint går du [till Använda verktyget Siddiagnostik för SharePoint Online.](page-diagnostics-for-spo.md)
 
 >[!NOTE]
->Verktyget för nätverksdiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint-Systemsida.
+>Verktyget Siddiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint-systemsida.
 
-När du analyserar en SharePoint-webbplats med Page Diagnostics för SharePoint-verktyget kan du Visa information om anpassade tillägg som överskrider bas linjens mått i **tilläggen påverkar laddnings tiden** och/eller **för många tillägg som används** i fönstret _diagnostiktest_ 
+När du analyserar en SharePoint-webbplatssida med verktyget Siddiagnostik för SharePoint kan du  se information om anpassade tillägg  som överskrider baslinjemåttet i tilläggen påverkar inläsningstiden och/eller resultatet för för många tillägg som används i fönstret Diagnostiktest  
 
-Möjliga resultat:
+Möjliga resultat är:
 
-- **Åtgärd krävs** (röd): alla _anpassade_ tillägg som tar längre tid än **en** sekund att läsa in. Den totala inläsnings tiden som visas i test resultaten är uppdelad efter modul beläggning och initiering. Om det finns för många fil namns tillägg på en sida kan de påverka sid inläsnings tiden och det markeras om **sju** eller fler fil namns tillägg används på sidan.
-- **Förbättrings möjligheter** (gult) om **fem** eller fler fil namns tillägg används kommer de att markeras i det här avsnittet som en varning tills sju eller fler används, vilka då markeras som åtgärd krävs.
-- **Ingen åtgärd krävs** (grön): inget tillägg tar längre än en sekund att läsa in.
+- **Åtgärder krävs** (röd): Alla _anpassade tillägg_ som tar längre tid **än en** sekund att läsa in. Den totala inläsningstiden som visas i testresultaten delas in efter modulbelastning och init. Om det finns för många tillägg på en sida kan de påverka inläsningstiden och det markeras om **sju** eller fler tillägg används på sidan.
+- **Förbättringsmöjligheter** (gul) **Om** fem eller fler tillägg används markeras de i det här avsnittet som en varning tills sju eller fler används, och sedan markeras som Åtgärder krävs.
+- **Ingen åtgärd krävs** (grön): Inget tillägg tar längre tid än en sekund att läsa in.
 
-Om ett tillägg påverkar sid inläsnings tiden eller om det finns för många extsnions på sidan, visas resultatet i avsnittet för att kontrol lera att det är **åtgärdat** . Klicka på resultatet för att visa information om vilka tillägg som laddas långsamt eller för många tillägg har marker ATS. Framtida uppdateringar av diagnostikverktyget för SharePoint kan innehålla uppdateringar av analys regler, så se till att du alltid har den senaste versionen av verktyget.
+Om ett tillägg påverkar sidinläsningstiden eller om det finns för många  tillägg på sidan visas resultatet i den obligatoriska delen av resultatet. Klicka på resultatet om du vill se information om vilket tillägg som läses in långsamt eller för många tillägg har markerats. Framtida uppdateringar av verktyget Siddiagnostik för SharePoint kan innehålla uppdateringar av analysregler, så se till att du alltid har den senaste versionen av verktyget.
 
-![Tids resultat för sid inläsning](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
+![Inläsningstidsresultat för sida](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
-Informationen i resultatet inkluderar:
+Information som är tillgänglig i resultatet är:
 
 - **Namn och ID** visar identifierande information som kan hjälpa dig att hitta tillägget på sidan
-- **Totalt** visar den totala tiden för tillägget att initiera och läsa in
-- **Modul inläsning** visar den tid det tar att hämta och läsa in tillägget
-- **Init** visar tids åtgången för att tillägget ska initieras
+- **Summan** visar total tid för tillägget för inläsning och initialisering av modulen. Det är den totala relativa tid som det tar att köra tillägget på sidan, från början till slutet.
+- **Modulladdning** visar tiden det tar att ladda ned, utvärdera och läsa in tilläggen JavaScript- och CSS-filer. Sedan startas Init-processen.
+- **Init** visar hur lång tid det tar för tillägget att initiera data.
+    Det är ett asynkront anrop och inittid är beräkningen av tid för onInit-funktionen när den returnerade lovat har lösts.
 
-Den här informationen tillhandahålls för att utvecklare och utvecklare ska kunna felsöka problem. Denna information bör ges till din design-och utvecklings grupp.
+Den här informationen tillhandahålls för att hjälpa designers och utvecklare att felsöka problem. Den här informationen bör tillhandahållas till din design- och utvecklingsgrupp.
 
 ## <a name="overview-of-extensions"></a>Översikt över tillägg
 
-SPFx-tillägg (SharePoint Framework) kan användas för att utöka SharePoint-gränssnittet. Med SharePoint Framework-tillägg kan du anpassa fler aspekter av SharePoint-upplevelsen, inklusive aviserings områden, verktygsfält och listvyer.
+SharePoint Framework-tillägg (SPFx) kan användas för att utöka användarupplevelsen för SharePoint. Med SharePoint Framework-tillägg kan du anpassa SharePoint-upplevelsen på ett mer övergripande sätt, inklusive meddelandeområden, verktygsfält och listdatavyer.
 
-Tilläggen kan ha dålig inverkan på en SharePoint-sidas prestanda eftersom den också tar processor-och nätverks resurser för att fungera.
+Tillägg kan ha ett dåligt inflytande över prestandan för en SharePoint-sida eftersom det också tar PROCESSOR- och nätverksresurser att göra obligatoriskt arbete.
 
 Det finns fyra typer av tillägg:
 
-- Med **Programanpassare** läggs skript till på sidan och du får till gång till välbekanta plats hållare för HTML-element och förlänger dem med anpassade åter givningar.
-- **Fält anpassningar** ger ändrade vyer till data för fält i en lista.
-- **Kommando uppsättningar** utökar kommando ytorna i SharePoint för att lägga till nya åtgärder och innehåller kod för klient sidan som du kan använda för att implementera beteenden.
-- Alternativet för **sökning efter frågor (endast för hands version)** anropas precis innan Sök frågan körs.
+- **Application Customizers** lägger till skript på sidan och öppnar välkända platshållare för HTML-element och utökar dem med anpassade renderingar.
+- **Med Fältanpassare** får du ändrade vyer för data för fält i en lista.
+- **Kommandouppsättningar** utökar SharePoint-kommandoytorna för att lägga till nya åtgärder och tillhandahåller klientkod som du kan använda för att implementera beteenden.
+- **Ändring av sökfråga (endast förhandsgranskning)** anropas precis innan sökfrågan körs.
 
-## <a name="remediate-extension-performance-issues"></a>Åtgärda problem med tilläggets prestanda
+## <a name="remediate-extension-performance-issues"></a>Åtgärda prestandaproblem med tillägg
 
-Följ anvisningarna i det här avsnittet för att identifiera och åtgärda prestanda problem med tillägg som listas i **fil namns tilläggen påverkar sid inläsnings tiden** .
-
->[!NOTE]
->Programanpassare kan köras i tidigt skede under en sidas livs cykel och det kan påverka prestandan hos andra tillägg på sidan.
-
-Gransknings resultaten i verktyget för sid Diagnostic visar två steg för att utföra ett tillägg för att identifiera den potentiella prestanda påverkan.
-
-- **Modul belastning** är hur lång tid det tar att läsa in tillägget, som påverkas av storleken på ett tillägg, så det är en bra idé att bara bunta ihop nödvändiga bibliotek i tillägget och att välja ljusare bibliotek.
-- **Init** är initierings tiden för tillägget och utöknings utvecklare bör överväga om tillägget gör onödigt arbete eller kör för många kommandon under initieringen.
-
-Sid författare kan också använda gransknings resultatet för att kontrol lera om en sida har för många fil namns tillägg som för många fil namns tillägg påverkar sidans prestanda negativt.
-
-- **Storlek och samband för tillägg**
-  - Användning av Office 365 CDN krävs för optimal statisk resurs nedladdning. Offentliga CDN-ursprung är lämpligt för _JS/CSS-_ filer. Mer information om hur du använder Office 365 CDN finns i [använda office 365-leverans Network (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md).
-  - Åter användnings bara ramverk som _reagerar_ och _Fabric-import_ som ingår i SharePoint Framework (SPFx). Mer information finns i [Översikt över SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview).
-  - Kontrol lera att du använder den senaste versionen av SharePoint Framework och uppgradera till nya versioner när de blir tillgängliga.
-- **Data hämtning/cachning**
-  - Om fil namns tillägget är beroende av extra Server samtal för att hämta data för visning kontrollerar du att dessa Server-API: er snabbt och/eller implementerar cachelagring på klient sidan (som att använda _localStorage_ eller _IndexDB_ för större uppsättningar).
-  - Om det krävs flera samtal för att återge viktiga data bör du överväga att använda en server eller någon annan metod för att konsolidera förfrågningar till ett enda samtal.
-  - Om vissa delar av data kräver ett långsammare API men inte är kritiska för inledande rendering kan du koppla ihop dessa med ett separat samtal som körs efter att kritiska data har Render ATS.
-  - Om flera delar använder samma data kan du använda ett vanligt data lager för att undvika dubbletter.
-- **Åter givnings tid**
-  - Alla medie källor som bilder och videor bör begränsas till gränserna för behållaren, enheten och/eller nätverket för att undvika onödigt stora till gångar. Mer information om innehålls beroenden finns i [använda Office 365 Content Delivery Network (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md).
-  - Undvik API-samtal som orsakar omflöde, komplexa CSS-regler eller komplexa animeringar. Mer information finns i [minimera bakströmningen](https://developers.google.com/speed/docs/insights/browser-reflow).
-  - Undvik att använda inaktiva långa aktiviteter. I stället kan du dela tids krävande uppgifter i olika köer. Mer information finns i [optimera JavaScript-körning](https://developers.google.com/web/fundamentals/performance/rendering/optimize-javascript-execution).
-  - Reservera motsvarande utrymme för asynkron åter givning av media eller visuella element för att undvika överhoppade ramar och hackigt (kallas även _Jank_).
-  - Om en viss webbläsare inte har stöd för en funktion som används i rendering kan du antingen använda en polyfyllning eller utesluta en beroende kod. Om funktionen inte är kritisk kan du ta bort resurser som händelse hanterare för att undvika minnes läckor.
-
-Innan du gör sid ändringar för att åtgärda prestanda problem ska du anteckna sid inläsnings tiden i analys resultaten. Kör verktyget igen efter ändringen för att se om det nya resultatet är inom bas linje standarden och kontrol lera den nya sid inläsnings tiden för att se om det gjorts en förbättring.
-
-![Tids resultat för sid inläsning](../media/modern-portal-optimization/pagediag-page-load-time.png)
+Följ instruktionerna i det här avsnittet för att identifiera och åtgärda prestandaproblem med tillägg som listas i tillägg som **påverkar sidinläsningstidens** resultat.
 
 >[!NOTE]
->Sid inläsnings tiden kan variera beroende på en mängd olika faktorer, till exempel nätverks belastning, tidpunkt och andra tillfälliga förhållanden. Testa sid inläsnings tid ett par gånger innan och efter det att du har gjort ändringar för att få hjälp med medelvärdet.
+>Programanpassare kan köras i ett tidigt skede under en sidas livscykel och det kan påverka prestandan för andra tillägg på sidan.
+
+Granskningsresultatet i siddiagnostikverktyget visar två steg i körningen av ett tillägg för att hjälpa till att identifiera den potentiella prestanda påverkan.
+
+- **Modulens** inläsning är hur lång tid det tar att läsa in tillägget, vilket påverkas av storleken på ett tillägg, så det är en bra idé att bara samla de bibliotek som behövs i tillägget och att även välja ljusare bibliotek.
+- **Init** is the initialization time of the extension and extension developers should consider whether the extension is doing unnecessary work or executing too many commands during the initializing stage.
+
+Sidförfattare kan också använda granskningsresultatet för att se om en sida har för många tillägg eftersom för många tillägg negativt påverkar prestandan för en sida.
+
+- **Filstorlek och beroenden**
+  - Du måste använda Office 365 CDN för optimal nedladdning av statiska resurser. Offentliga CDN-ursprung är bättre för _js/css-filer._ Mer information om hur du använder Office 365 CDN finns i Använda [Office 365 Content Delivery Network (CDN) med SharePoint Online.](use-microsoft-365-cdn-with-spo.md)
+  - Återanvänd ramverk som _React_ och _Fabric-import_ som kommer som en del av SharePoint Framework (SPFx). Mer information finns i [Översikt över SharePoint Framework.](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview)
+  - Se till att du använder den senaste versionen av SharePoint Framework och uppgradera till nya versioner när de blir tillgängliga.
+- **Hämtning/cachelagring av data**
+  - Om tillägget förlitar sig på extra serveranrop för att hämta data för visning ska du se till att de server-API:erna är snabba och/eller implementera cachelagring på klientsidan (t.ex. använda _localStorage_ eller _IndexDB_ för större uppsättningar).
+  - Om flera anrop krävs för att återge viktiga data kan du överväga att batcha på servern eller andra metoder för att konsolidera förfrågningar till ett enda samtal.
+  - Alternativt, om vissa dataelement kräver ett långsammare API, men inte är viktiga för den första renderingen, kan du avkoda dessa till ett separat anrop som körs när viktiga data har återges.
+  - Om flera delar använder samma data bör du använda ett vanligt datalager för att undvika dubbletter av samtal.
+- **Renderingstid**
+  - Alla mediekällor som bilder och videor bör ha en storlek som begränsar behållaren, enheten och/eller nätverket för att undvika att ladda ned onödiga stora tillgångar. Mer information om innehållsberoenden finns i Använda [Office 365 Content Delivery Network (CDN) med SharePoint Online.](use-microsoft-365-cdn-with-spo.md)
+  - Undvik API-anrop som leder till flödesschema, komplexa CSS-regler eller komplicerade animeringar. Mer information finns i [Minimera webbläsarens flödesomformning.](https://developers.google.com/speed/docs/insights/browser-reflow)
+  - Undvik att använda kedjeaktiviteter som körs länge. Dela i stället upp långa aktiviteter i separata köer. Mer information finns i Optimera [körning av JavaScript.](https://developers.google.com/web/fundamentals/performance/rendering/optimize-javascript-execution)
+  - Reservera motsvarande utrymme för asynkron rendering av media eller visuella element för att undvika överhoppade ramar och hackar (kallas även _jank)._
+  - Om en viss webbläsare inte har stöd för en funktion som används för rendering kan du antingen läsa in en polyfyllfunktion eller exkludera att köra beroende kod. Om funktionen inte är kritisk kasserar du resurser som händelsehanterare för att undvika minnesläckor.
+
+Innan du gör sidändringar för att åtgärda prestandaproblem bör du anteckna sidinläsningstiden i analysresultaten. Kör verktyget igen efter ändringen för att se om det nya resultatet ligger inom baslinjestandarden och kontrollera inläsningstiden för den nya sidan för att se om det finns en förbättring.
+
+![Inläsningstidsresultat för sida](../media/modern-portal-optimization/pagediag-page-load-time.png)
+
+>[!NOTE]
+>Sidinläsningstiden kan variera beroende på en mängd olika faktorer, till exempel nätverksbelastning, tid på dagen och andra tillfälliga villkor. Du bör testa inläsningstiden för sidor några gånger före och efter du gör ändringar för att beräkna medelvärdet för resultatet.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
@@ -114,8 +115,8 @@ Innan du gör sid ändringar för att åtgärda prestanda problem ska du anteckn
 
 [Justera Office 365-prestanda](tune-microsoft-365-performance.md)
 
-[Prestanda i den moderna SharePoint-upplevelsen](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Prestanda i det moderna SharePoint-programmet](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
-[Nätverk för innehålls leverans](content-delivery-networks.md)
+[Nätverk för innehållsleverans](content-delivery-networks.md)
 
-[Använda Office 365-innehålls leverans nätverk (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md)
+[Använda Office 365 Content Delivery Network (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md)

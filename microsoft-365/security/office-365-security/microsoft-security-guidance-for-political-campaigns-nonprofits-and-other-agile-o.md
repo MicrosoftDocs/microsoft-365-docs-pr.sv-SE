@@ -22,20 +22,20 @@ ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: 'Sammanfattning: Vägledning för planering och implementering för snabbrörliga organisationer som har en ökad hotprofil.'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7d16f63b808edc008022b17d20461df6cd30e75
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: f8ed01d2c41529782c5c714bfe66096b97300712
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150778"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287407"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Microsofts säkerhetsvägledning för politiska kampanjer, ideella föreningar och andra snabbrörliga organisationer
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
 
  **Sammanfattning:** Vägledning för planering och implementering för snabbrörliga organisationer som har en ökad hotprofil.
 
@@ -69,6 +69,6 @@ Fler säkerhetsfunktioner för demonstration eller koncepttest finns i [Testlabb
 
 ## <a name="see-also"></a>Se även
 
-[Testlabbguider för integrering med molntjänster](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Testlabbguider för integrering med molntjänster](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[IT-arkitekturresurser för Microsoft Cloud](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)
+[IT-arkitekturresurser för Microsoft Cloud](../../solutions/cloud-architecture-models.md)

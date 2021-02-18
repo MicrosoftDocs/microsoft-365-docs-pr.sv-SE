@@ -8,48 +8,49 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan visa vanliga frågor och svar om delegerade administrations uppgifter i Microsoft 365 för Microsoft-partners och åter försäljare.
-ms.openlocfilehash: 6729f276e6afea83568ca59d3bf48c08fcd837d2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Administratörer kan visa vanliga frågor och svar om uppgifter med delegerad administration i Microsoft 365 för Microsoft-partner och återförsäljare.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 971572f8bff80da6dd63bed8958112332292feb9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203149"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288365"
 ---
 # <a name="delegated-administration-faq"></a>Vanliga frågor och svar om delegerad administration
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Den här artikeln innehåller vanliga frågor och svar om delegerade administrations uppgifter i Microsoft 365 för Microsoft-partners och åter försäljare. Delegerad administration inkluderar möjligheten att hantera inställningar för Exchange Online Protection (EOP) för andra klient organisationer.
+Den här artikeln innehåller vanliga frågor och svar om uppgifter med delegerad administration i Microsoft 365 för Microsoft-partner och återförsäljare. Delegerad administration omfattar möjligheten att hantera Exchange Online Protection-inställningar (EOP) för andra klientorganisationar (företag).
 
-## <a name="im-a-reseller-and-i-need-to-manage-my-customer-tenants-how-does-this-work"></a>Jag är åter försäljare och måste hantera mina kund innehavare. Hur fungerar detta?
+## <a name="im-a-reseller-and-i-need-to-manage-my-customer-tenants-how-does-this-work"></a>Jag är återförsäljare och behöver hantera mina kundklienter. Hur fungerar det?
 
-Om du är Microsoft-partner eller åter försäljare och har registrerat dig för att vara Microsoft Advisor kan du begära _delegerade administrativa_ funktioner i kundens Microsoft 365-organisation.
+Om du är Microsoft-partner eller återförsäljare och har registrerat dig som Microsoft-rådgivare kan du begära delegerad _administration_ i kundens Microsoft 365-organisation.
 
-Delegerad administration gör att du kan hantera Microsoft 365 (inklusive EOP-inställningar) som om du vore administratör inom organisationen. Stegen för att konfigurera delegerad administration beskrivs i följande lista:
+Med delegerad administration kan du hantera Microsoft 365 (inklusive EOP-inställningar) som om du var administratör i den organisationen. Stegen för att konfigurera delegerad administration beskrivs i följande lista:
 
-1. Registrera dig som [Microsoft Office 365-rådgivare](https://aka.ms/cloudbenefits).
+1. Registrera dig för att bli [Microsoft Office 365-rådgivare.](https://aka.ms/cloudbenefits)
 
-2. Registrera dig för delegerad administration. Innan du kan börja administrera en kunds klient organisation måste de ge dig som administratör. För att få sitt godkännande, [Skicka först dem ett anbud för delegerad administration](https://support.microsoft.com/office/26530dc0-ebba-415b-86b1-b55bc06b073e). Du kan även ge din kund en delegerad administration senare.
+2. Registrera dig för delegerad administration. Innan du kan börja administrera en kunds klientorganisation måste de godkänna dig som delegerad administratör. Om du vill få deras godkännande skickar du [först ett erbjudande om delegerad administration till dem.](https://support.microsoft.com/office/26530dc0-ebba-415b-86b1-b55bc06b073e) Du kan också erbjuda kunden delegerad administration vid ett senare tillfälle.
 
-3. Skapa det delegerade administratörs kontot enligt anvisningarna i [lägga till, ändra eller ta bort en abonnemangs rådgivare](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
+3. Skapa ett delegerat administratörskonto med hjälp av stegen i [Lägga till, ändra eller ta bort en partner till prenumerationsrådgivaren.](../../admin/misc/add-partner.md)
 
-Besök [partners: skapa en prenumeration på ditt företag och administrera partner](https://support.microsoft.com/office/30dd1681-47e0-4cbc-abfe-a222cd111319) för mer information om hur du konfigurerar delegerad administration.
+Besök [partners: Bygg upp din verksamhet och administrera partnerprenumerationen](https://support.microsoft.com/office/30dd1681-47e0-4cbc-abfe-a222cd111319) för mer information om hur du tecknar delegerad administration.
 
-## <a name="im-a-customer-not-a-reseller-how-can-set-up-delegated-administrator-for-my-subtenants"></a>Jag är kund och inte en åter försäljare. Hur kan du konfigurera den delegerade administratören för mina under klienter?
+## <a name="im-a-customer-not-a-reseller-how-can-set-up-delegated-administrator-for-my-subtenants"></a>Jag är kund, inte återförsäljare. Hur kan jag konfigurera delegerade administratörer för mina undergrupp?
 
-Delegerad administration är endast tillgänglig för åter försäljare och partners. Men det finns ett exempel på PowerShell-skript som hjälper dig att tillämpa principer på dina under klienter (företag). Mer information finns i [exempel skript för att tillämpa EOP-inställningar på flera klient organisationer](sample-script-for-applying-eop-settings-to-multiple-tenants.md).
+Delegerad administration är endast tillgänglig för återförsäljare och partner. Det finns dock ett PowerShell-exempelskript som hjälper dig att tillämpa principer på underetr (företag). Mer information finns i [Exempelskript för tillämpning av EOP-inställningar på flera klientorganisationar.](sample-script-for-applying-eop-settings-to-multiple-tenants.md)
 
-## <a name="can-i-prevent-my-subtenant-admin-from-modifying-my-policy"></a>Kan jag förhindra att mina administratörer ändrar min princip?
+## <a name="can-i-prevent-my-subtenant-admin-from-modifying-my-policy"></a>Kan jag hindra en underadministratör från att ändra min princip?
 
 Nej. Microsoft 365 har för närvarande inte den här funktionen.
 
-## <a name="can-i-get-consolidated-reporting-across-all-of-my-subtenants"></a>Kan jag få konsol IDE rad rapportering i alla mina under klienter?
+## <a name="can-i-get-consolidated-reporting-across-all-of-my-subtenants"></a>Kan jag få konsoliderad rapportering för alla mina subtenanter?
 
-Konsol IDE rad rapportering över de företag som du hanterar är inte tillgängliga i Microsoft 365 Admin Center-rapporter. Men du kan få rapporter med [Microsoft Graph](https://docs.microsoft.com/graph/overview).
+Konsoliderad rapportering i de företag du hanterar är inte tillgänglig i rapporter i administrationscentret för Microsoft 365. Däremot kan du få rapporter genom att använda [Microsoft Graph.](https://docs.microsoft.com/graph/overview)

@@ -19,21 +19,21 @@ ms.custom:
 description: Administratörer kan visa vanliga frågor och svar om skydd mot skräppost i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8620ad3f99c45dae3442ec89d879124053c1a005
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 8abccdac73877c3f24114afaa78c13143e156868
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175985"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288975"
 ---
 # <a name="anti-spam-protection-faq"></a>Vanliga frågor och svar om skydd mot skräppost
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Det här avsnittet innehåller vanliga frågor och svar om skydd mot skadlig programvara för Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor.
 
@@ -120,7 +120,7 @@ Ja. Mer information finns i [Skydda din integritet på Internet](https://support
 
 ## <a name="are-spam-and-malware-messages-being-investigated-as-to-who-sent-them-or-being-transferred-to-law-enforcement-entities"></a>Undersöks skräppost och skadlig programvara som till vem som har skickat dem eller överförs till rättstvingande myndigheter?
 
-Tjänsten fokuserar på identifiering och borttagning av skadlig programvara, men vi kan emellanåt undersöka särskilt farligt eller skadligt skräppost eller attackkampanjer och nå ut med intrången. Det här kan innebära att vi arbetar med våra juridiska och digitala brottsplatser för att ta bort en botnät som skickar skräppost, blockerar skräppostavs skräppostavsändaren från att använda tjänsten (om de använder den för att skicka utgående e-post) och att vidarebefordra informationen till brottslingen av brottslingen.
+Tjänsten fokuserar på identifiering och borttagning av skadlig programvara, men vi kan emellanåt undersöka särskilt farligt eller skadligt skräppost eller attackkampanjer och följa upp de skadliga effekterna. Det här kan innebära att vi arbetar med våra juridiska och digitala brottsplatser för att ta bort en botnät som skickar skräppost, blockerar skräppostavs skräppostavsändaren från att använda tjänsten (om de använder den för att skicka utgående e-post) och att vidarebefordra informationen till brottslingen av brottslingen.
 
 ## <a name="what-are-a-set-of-best-outbound-mailing-practices-that-will-ensure-that-my-mail-is-delivered"></a>Vad är en uppsättning bästa metoder för utgående e-post som säkerställer att min e-post levereras?
 
@@ -130,7 +130,7 @@ Riktlinjerna nedan är de bästa metoderna för att skicka utgående e-postmedde
 
   Om avsändaren till exempel är user@fabrikam matchas domänen fabrikam med IP-adressen 192.0.43.10.
 
-  Om en avsändande domän inte har någon A-post och ingen MX-post i DNS, dirigerar tjänsten meddelandet genom sin högriskleveranspool oavsett om innehållet i meddelandet är skräppost eller inte. Mer information om högriskleveranspool finns i [Högriskleveranspool för utgående meddelanden.](high-risk-delivery-pool-for-outbound-messages.md)
+  Om en avsändande domän inte har någon A-post och ingen MX-post i DNS, dirigerar tjänsten meddelandet via sin högriskleveranspool oavsett om innehållet i meddelandet är skräppost eller inte. Mer information om högriskleveranspool finns i [Högriskleveranspool för utgående meddelanden.](high-risk-delivery-pool-for-outbound-messages.md)
 
 - **Utgående e-postserver bör ha en omvänd DNS-post (PTR).**
 
@@ -146,7 +146,7 @@ Riktlinjerna nedan är de bästa metoderna för att skicka utgående e-postmedde
 
   [Konfigurera SPF för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-  [Vanliga frågor och svar om domäner](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
+  [Vanliga frågor och svar om domäner](../../admin/setup/domains-faq.yml#how-can-i-validate-spf-records-for-my-domain)
 
 - **Signera e-post med DKIM, signera med lugnt kanonisk ordning.**
 
@@ -170,7 +170,7 @@ Riktlinjerna nedan är de bästa metoderna för att skicka utgående e-postmedde
 
   Avanmälningsalternativen bör se ut så här:
 
-  > Det här meddelandet skickades till example@contoso.com via sender@fabrikam.com. Uppdatera profil/e-postadress | Snabbborttagning **med SafeUnsubscribe** &trade; | Sekretesspolicy
+  > Det här meddelandet skickades till example@contoso.com av sender@fabrikam.com. Uppdatera profil/e-postadress | Snabbborttagning **med SafeUnsubscribe** &trade; | Sekretesspolicy
 
 - **Om du skickar massutskick bör hämtning av listor utföras med dubbel opt-in. Om du använder massutskick är det bäst att dubbelanmäla sig.**
 
@@ -200,6 +200,6 @@ Riktlinjerna nedan är de bästa metoderna för att skicka utgående e-postmedde
 
   Om du får en NDR som anger att en e-postadress inte längre används tar du bort e-postaliaset som inte finns i listan. E-postadresser ändras med tiden och ibland ignoreras de.
 
-- **Använd Hotmails SNDS-program (Smart Network Data Services).**
+- **Använd SNDS-programmet (Smart Network Data Services) i Hotmail.**
 
   Hotmail använder ett program som kallas Smart Network Data Services som gör att avsändare kan kontrollera klagomål som skickats in av slutanvändare. SNDS är den primära portalen för felsökning av leveransproblem till Hotmail.

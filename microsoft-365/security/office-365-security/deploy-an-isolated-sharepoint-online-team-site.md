@@ -17,20 +17,20 @@ ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: Använd den här stegvisa distributionsguiden för att skapa och konfigurera en isolerad SharePoint Online-gruppwebbplats i Microsoft Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b1f0342afc92b4540330417ad0fc9cabe1dc8a8
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d226a545c3f8dc274f02e5d54d39739fe5d981ea
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165505"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288353"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Distribuera en isolerad SharePoint Online-gruppwebbplats
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
  **Sammanfattning:** Distribuera en ny isolerad SharePoint Online-gruppwebbplats med de här stegvisa instruktionerna.
 
@@ -41,7 +41,7 @@ Den här artikeln är en stegvis distributionsguide för hur du skapar och konfi
 I den här fasen skapar du de tre Azure AD-baserade åtkomstgrupperna för de tre standardgrupperna i SharePoint och fyller dem med lämpliga användarkonton.
 
 > [!NOTE]
-> Följande steg förutsätter att alla nödvändiga användarkonton redan finns och har tilldelats rätt licenser. Annars kan du lägga till dem och tilldela licenser innan du fortsätter med steg 1.
+> Följande steg förutsätter att alla nödvändiga användarkonton redan finns och har tilldelats lämpliga licenser. Annars kan du lägga till dem och tilldela licenser innan du fortsätter med steg 1.
 
 ### <a name="step-1-list-the-sharepoint-online-admins-for-the-site"></a>Steg 1: Lista SharePoint Online-administratörerna för webbplatsen
 
@@ -71,7 +71,7 @@ Du måste skapa följande åtkomstgrupper i Azure AD:
 - Webbplatsmedlemmar (som kommer att innehålla listan från steg 2)
 - Webbplatsvisare (som kommer att innehålla listan från steg 3)
 
-1. Gå till Azure-portalen i webbläsaren och logga in med autentiseringsuppgifterna för ett konto som har tilldelats rollen Användarhanteringsadministratör <https://portal.azure.com> eller Företagsadministratör.
+1. Gå till Azure-portalen i webbläsaren och logga in med autentiseringsuppgifterna för ett konto som har tilldelats rollen Användarhanteringsadministratör eller <https://portal.azure.com> Företagsadministratör.
 
 2. I Azure-portalen klickar du på **Azure Active Directory > Grupper**.
 
@@ -92,7 +92,7 @@ Du måste skapa följande åtkomstgrupper i Azure AD:
 6. Upprepa steg 3–5 för de övriga grupperna.
 
 > [!NOTE]
-> Du måste använda Azure Portal för att skapa grupperna så att de har Office-funktioner aktiverade. Om en SharePoint Online-isolerad webbplats senare konfigureras som en webbplats med mycket konfidentiell information med azure informationsskydd-etiketten för att kryptera filer och tilldela behörighet till specifika grupper, måste de tillåtna grupperna ha skapats med Office-funktioner aktiverade. Du kan inte ändra Office-funktioner för en Azure AD-grupp när den har skapats.
+> Du måste använda Azure Portal för att skapa grupperna så att de har Office-funktioner aktiverade. Om en sharePoint Online-isolerad webbplats senare konfigureras som en webbplats med mycket konfidentiell information med azure informationsskydd-etiketten för att kryptera filer och tilldela behörighet till specifika grupper, måste de tillåtna grupperna ha skapats med Office-funktioner aktiverade. Du kan inte ändra Office-funktioner för en Azure AD-grupp när den har skapats.
 
 Här är den resulterande konfigurationen med de tre grupperna för webbplatsåtkomst.
 
@@ -112,7 +112,7 @@ Om du hanterar användarkonton och grupper via Office 365 kan du använda admini
 
 I administrationscentret för Microsoft 365 loggar du in med ett användarkonto som har tilldelats rollen Som administratör för användarkonto eller Företagsadministratör, och använder Grupper för att lägga till användarkonton och grupper i lämpliga åtkomstgrupper.
 
-För PowerShell ska du [först ansluta till Azure Active Directory PowerShell för Graph-modulen.](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)
+För PowerShell ska du [först ansluta till Azure Active Directory PowerShell för Graph-modulen.](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 Använd sedan följande kommandoblock för att lägga till ett enskilt användarkonto i en åtkomstgrupp:
 
@@ -182,7 +182,7 @@ Konfigurera sedan behörigheter från den nya SharePoint Online-gruppwebbplatsen
 
 1. Klicka på inställningsikonen i verktygsfältet och klicka sedan på **Webbplatsbehörigheter**.
 
-2. Klicka **på Ändra** hur medlemmarna kan dela under **Webbplatsdelning.**
+2. Klicka **på Ändra hur** medlemmar kan dela under **Webbplatsdelning.**
 
 3. Välj endast **webbplatsägare som kan dela filer, mappar och webbplatsen.**
 
@@ -190,11 +190,11 @@ Konfigurera sedan behörigheter från den nya SharePoint Online-gruppwebbplatsen
 
 5. Klicka på **Spara**.
 
-6. Klicka på **Avancerade** behörighetsinställningar **i fönstret Behörigheter.**
+6. Klicka på **Avancerade** behörighetsinställningar i **fönstret Behörigheter.**
 
 7. Klicka **på Medlemmar** i listan på fliken **\<site name> Behörigheter** i webbläsaren.
 
-8. Klicka **på Nytt i Personer** och **grupper.**
+8. Klicka **på Nytt i** Personer och **grupper.**
 
 9. Skriv namnet **på** åtkomstgruppen webbplatsmedlemmar i dialogrutan Dela, markera den och klicka sedan på **Dela.**
 
@@ -202,7 +202,7 @@ Konfigurera sedan behörigheter från den nya SharePoint Online-gruppwebbplatsen
 
 11. Klicka **\<site name> på** Ägare i listan.
 
-12. Klicka **på Nytt i** Personer och **grupper.**
+12. Klicka **på Nytt i Personer** och **grupper.**
 
 13. Skriv namnet **på** åtkomstgruppen webbplatsadministratörer i dialogrutan Dela, markera den och klicka sedan på **Dela.**
 
@@ -219,7 +219,7 @@ Konfigurera sedan behörigheter från den nya SharePoint Online-gruppwebbplatsen
 Resultatet av de här behörighetsinställningarna är:
 
 - SharePoint-gruppen Ägare innehåller webbplatsadministratörsåtkomstgruppen, där alla medlemmar har **behörighetsnivån Fullständig** behörighet. **\<site name>**
-- SharePoint-gruppen Medlemmar innehåller gruppen webbplatsmedlemmar, där alla medlemmar har **behörighetsnivån** Redigera. **\<site name>**
+- **\<site name> SharePoint-gruppen** Medlemmar innehåller gruppen webbplatsmedlemmar, där alla medlemmar har **behörighetsnivån** Redigera.
 - **\<site name> SharePoint-gruppen** Besökare innehåller gruppen Webbplatsläsaråtkomst, där alla medlemmar har **behörighetsnivån** Läsa.
 - Möjligheten för medlemmar att bjuda in andra medlemmar eller för icke-medlemmar att begära åtkomst inaktiveras.
 

@@ -16,18 +16,18 @@ ms.collection:
 description: Säkerhet i Office 365, från EOP till Defender för Office 365 Abonnemang 1 och 2, Standard och Strikt säkerhetskonfigurationer med mera. Förstå vad du har och hur du skyddar dina egenskaper.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 68570cedd0696510f2181edcea7ef149ace606e3
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: cbe95946ab7214efded8feca39578c364b948df0
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166423"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287907"
 ---
 # <a name="office-365-security-overview"></a>Översikt över Säkerhet i Office 365
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
 
 
 Den här artikeln presenterar de nya säkerhetsegenskaperna i molnet. Oavsett om du ingår i ett säkerhetsoperationscenter, är du säkerhetsadministratör och nybörjare på utrymmet, eller vill uppdatera något, så är det bara att komma igång.
@@ -44,7 +44,7 @@ Alla Office 365-prenumerationer levereras med säkerhetsfunktioner. Vilka mål o
 1. Microsoft Defender för Office 365 abonnemang 2 (Defender för Office P2)
 
 > [!NOTE]
-> Om du har köpt din prenumeration och behöver distribuera säkerhetsfunktionerna just *nu* kan du gå vidare till stegen i [artikeln Skydda mot](protect-against-threats.md) hot. Om du inte har börjat använda prenumerationen och vill ha information om din licens innan du börjar bläddrar du till Fakturering > Dina produkter i administrationscentret för [Microsoft 365.](https://admin.microsoft.com/AdminPortal/#/homepage)
+> Om du har köpt din prenumeration och behöver distribuera säkerhetsfunktionerna just *nu* kan du gå vidare till stegen i [artikeln Skydda mot](protect-against-threats.md) hot. Om du inte har börjat använda prenumerationen tidigare och vill ha en licens innan du börjar bläddrar du till Fakturering > Dina produkter i administrationscentret för [Microsoft 365.](https://admin.microsoft.com/AdminPortal/#/homepage)
 
 Office 365-säkerhetsuppdateringar bygger på de kärnskydd som EOP erbjuder. EOP finns i alla prenumerationer där Exchange Online-postlådor kan hittas (kom ihåg att alla säkerhetsprodukter som diskuteras här är molnbaserade).
 
@@ -106,7 +106,7 @@ Vinster med **Defender för Office 365, abonnemang 1** (hittills):
 
 Därför utökas Microsoft Defender för Office 365 P1 på ***prevention** _ sidan av huset och lägger till extra former av _*_identifiering_**.
 
-Microsoft Defender för Office 365 P1 lägger också **till realtidsidentifiering för** undersökningar. Namnet på det här hotverktyget är i fetstil  eftersom det är tydligt att känna till att du har Defender för Office 365 P1. Den visas inte i Defender för Office 365 P2.
+Microsoft Defender för Office 365 P1 lägger också **till realtidsidentifiering** för undersökningar. Namnet på det här hotverktyget är i fetstil  eftersom det är tydligt att känna till att du har Defender för Office 365 P1. Den visas inte i Defender för Office 365 P2.
 
 Vinster med **Defender för Office 365, abonnemang 2** (hittills):
 <p>
@@ -122,7 +122,7 @@ I Microsoft Defender för Office 365 P2  kallas det primära sökverktyget Hotut
 Mer information om Microsoft Defender för Office 365 P1 och P2 finns i **[den här artikeln.](office-365-atp.md)**
 
 > [!TIP]
-> EOP och Microsoft Defender för Office 365 skiljer sig också åt för slutanvändare. I EOP och Defender för Office 365 P1 är fokus på information och så att de två tjänsterna inkluderar rapportmeddelandet Outlook-tillägget så att användarna kan rapportera *e-postmeddelanden* som de hittar misstänkta, för vidare analys. <p> I Defender för Office 365 P2 (som innehåller allt i EOP och P1) flyttas fokus till vidare utbildning  för slutanvändare, och därför har Säkerhetscenter tillgång till ett kraftfullt verktyg för hot och slutanvändarstatistiken som ingår. 
+> EOP och Microsoft Defender för Office 365 skiljer sig också åt för slutanvändare. I EOP och Defender för Office 365 P1 är fokus på information och därför innehåller de två tjänsterna rapportmeddelandet Outlook-tillägget så att användarna kan rapportera *e-postmeddelanden* som de hittar misstänkta, för vidare analys. <p> I Defender för Office 365 P2 (som innehåller allt i EOP och P1) flyttas fokus till vidare utbildning  för slutanvändare, och därför har Säkerhetscenter tillgång till ett kraftfullt verktyg för hot och slutanvändarstatistik som ingår. 
 
 ## <a name="microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet"></a>Microsoft Defender för Office 365 abonnemang 1 jämfört med abonnemang 2 – lathund
 
@@ -141,10 +141,10 @@ Den här snabbreferensen hjälper dig att förstå vilka funktioner som ingår i
 
 - Funktionen [Säkra dokument](safe-docs.md) är bara tillgänglig för användare med Microsoft 365 E5- eller Microsoft 365 E5 Säkerhet-licenser (inte inkluderad i Microsoft Defender för Office 365-abonnemang).
 
-- Om Microsoft Defender för Office 365 inte ingår i din nuvarande prenumeration och du vill ha [den,](https://go.microsoft.com/fwlink/p/?LinkId=518644)kan du kontakta försäljning för att starta en utvärderingsversion och ta reda på hur Microsoft Defender för Office 365 kan arbeta för din organisation.
+- Om Microsoft Defender för Office 365 inte ingår i din nuvarande prenumeration och du vill ha [den,](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)kan du kontakta försäljning för att starta en utvärderingsversion och ta reda på hur Microsoft Defender för Office 365 kan arbeta för din organisation.
 
 > [!TIP]
-> ***Insider-tips** _. Du kan använda docs.microsoft.com om du vill veta mer om EOP och Microsoft Defender för Office 365. Gå tillbaka till den här sidan, översikten över Säkerhet i [Office 365,](https://docs.microsoft.com/microsoft-365/security/office-365-security)och du kommer att märka att organisationen med innehållsförteckningar finns i sidofältet. Den börjar med distribution (inklusive migrering) och fortsätter sedan i förebyggande, identifiering, undersökning och svar. <p> Strukturen är uppdelad så att avsnitten _ *Säkerhetsadministration** följs av **avsnitten om Säkerhetsåtgärder.** Om du är ny medlem i någon av jobbrollerna använder du länken i det här tipset och dina kunskaper om innehållsförteckningen för att lära dig mer om utrymmet. Kom ihåg att *använda feedbacklänkar* *och betygsätta* artiklar i takt med det. Feedback hjälper oss att förbättra det vi erbjuder.
+> ***Insider-tips** _. Du kan använda docs.microsoft.com om du vill veta mer om EOP och Microsoft Defender för Office 365. Gå tillbaka till den här sidan, översikten över Säkerhet i [Office 365,](index.md)och du kommer att märka att organisationen med innehållsförteckningar finns i sidofältet. Det börjar med distribution (inklusive migrering) och fortsätter sedan i förebyggande, identifiering, undersökning och svar. <p> Strukturen är uppdelad så att avsnitten _ *Säkerhetsadministration** följs av **avsnitten om Säkerhetsåtgärder.** Om du är ny medlem i någon av jobbrollerna använder du länken i det här tipset och dina kunskaper om innehållsförteckningen för att lära dig mer om utrymmet. Kom ihåg att *använda feedbacklänkar* *och betygsätta* artiklar när du är på språng. Feedback hjälper oss att förbättra det vi erbjuder.
 
 ## <a name="where-to-go-next"></a>Nästa steg
 
@@ -152,10 +152,10 @@ Om du är säkerhetsadministratör kan du behöva konfigurera DKIM eller DMARC f
 
 [E-postautentisering, inklusive SPF, DKIM och DMARC (med länkar till konfigurationen av alla tre)](email-validation-and-authentication.md)
 
-[Se de specifika rekommenderade "gyllene" konfigurationerna och](recommended-settings-for-eop-and-office365-atp.md) [använd deras rekommenderade förval för att snabbt konfigurera säkerhetsprinciper](preset-security-policies.md)
+[Se de särskilda rekommenderade "gyllene" konfigurationerna och](recommended-settings-for-eop-and-office365-atp.md) [använd deras rekommenderade förval för att snabbt konfigurera säkerhetsprinciper](preset-security-policies.md)
 
-Få information om [vad som är nytt i Microsoft Defender för Office 365 (inklusive EOP-utvecklingar)](whats-new-in-office-365-atp.md)
+Kom ikapp [med vad som är nytt i Microsoft Defender för Office 365 (inklusive EOP-utvecklingar)](whats-new-in-office-365-atp.md)
 
-[Använda hotutforskaren eller identifieringar i realtid](threat-explorer.md)
+[Använda Hotutforskaren eller identifieringar i realtid](threat-explorer.md)
 
 Använda [AttackTat i Microsoft Defender för Office 365](attack-simulator.md)

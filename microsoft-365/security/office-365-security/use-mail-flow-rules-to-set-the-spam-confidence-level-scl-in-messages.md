@@ -1,5 +1,5 @@
 ---
-title: Använda e-postflödes regler i SCL i meddelanden
+title: Använda e-postflödesregler till SCL i meddelanden
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,76 +8,81 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
-description: Lär dig hur du skapar e-postflödes regler (transport regler) för att identifiera meddelanden och ange SCL (skräp säkerhets nivå) för meddelanden i Exchange Online Protection.
+description: Lär dig hur du skapar e-postflödesregler (transportregler) för att identifiera meddelanden och ange SCL (Spam Confidence Level) för meddelanden i Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 447333eb968ba7d91a1673c57b11afdb16b90469
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: aa2893214543f77114d517dc38f874d6172a920a
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659843"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287563"
 ---
-# <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages-in-eop"></a>Använda regler för e-postflöde för att ange säkerhets nivån för skräp post (SCL) i meddelanden i EOP
+# <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages-in-eop"></a>Använda e-postflödesregler för att ange konfidensnivån för skräppost (SCL) i meddelanden i EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-I Microsoft 365-organisationer med post lådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor används principer för skräp post (kallas även för principer för skräp post filter eller principer för innehålls filter) för att söka igenom inkommande meddelanden. Mer information finns i [Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md).
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor använder EOP principer för skräppostskydd (kallas även principer för skräppostfilter eller innehållfilterprinciper) för att söka igenom inkommande meddelanden efter skräppost. Mer information finns i [Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md).
 
-Om du vill markera specifika meddelanden som skräp post innan de är inaktiverade med skräp post filtrering, eller markera meddelanden så att de hoppar över skräp post filtrering, kan du skapa regler för e-postflöde (kallas även transport regler) för att identifiera meddelandena och ställa in säkerhets nivån för skräp post. Mer information om SCL finns i [säkerhets nivå för skräp post (SCL) i EOP](spam-confidence-levels.md).
+Om du vill markera vissa meddelanden som skräppost innan de ens genomsöks av skräppostfiltrering eller markerar meddelanden så att de hoppar över skräppostfiltreringen kan du skapa e-postflödesregler (kallas även transportregler) för att identifiera meddelandena och ange SCL (Spam Confidence Level). Mer information om SCL finns i [SCL (Spam Confidence Level) i EOP.](spam-confidence-levels.md)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du måste tilldelas behörigheter i Exchange Online eller Exchange Online Protection innan du kan göra det i den här artikeln. För det specifika måste du ha rollen **Transport regel** , som är tilldelad till **organisations hantering**, **hantering av efterlevnad** (globala administratörer) och roll grupperna **Arkiv handlings hantering** som standard.
+- Du måste ha tilldelats behörigheter i Exchange Online eller Exchange Online Protection innan du kan utföra procedurerna i den här artikeln. Specifikt behöver du rollen **Transportregler,** som tilldelas rollgrupperna Organisationshantering, Efterlevnadshantering **(globala** administratörer) och Hantering **av** arkivhandlingar som standard.
 
   Mer information finns i följande avsnitt:
 
   - [Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
   - [Behörigheter i fristående EOP](feature-permissions-in-eop.md)
-  - [Använda UK ändra listan över medlemmar i roll grupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
+  - [Använd EAC för att ändra listan över medlemmar i rollgrupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
-- Om du vill öppna UK i Exchange Online läser du [administrations Center för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center). Information om hur du öppnar UK i fristående EOP finns i [administrations Center för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
+- Information om hur du öppnar EAC i Exchange Online finns [i administrationscentret för Exchange i Exchange Online.](https://docs.microsoft.com/Exchange/exchange-admin-center) Information om hur du öppnar EAC i fristående EOP finns i [administrationscentret för Exchange i fristående EOP.](exchange-admin-center-in-exchange-online-protection-eop.md)
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Mer information om regler för e-postflöden i Exchange Online och Exchange Online Protection finns i [regler för e-postflöde (transport regler) i Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
+- Mer information om e-postflödesregler i Exchange Online och Exchange Online Protection finns i [E-postflödesregler (transportregler) i Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
-## <a name="use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>Använd UK för att skapa en regel för e-postflöde som anger SCL för ett meddelande
+## <a name="use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>Använda EAC för att skapa en e-postflödesregel som anger SCL för ett meddelande
 
-1. Gå till regler för **e-postflöde** i UK \> .
+1. Gå till E-postflödesregler **i** \> EAC.
 
-2. Klicka på **Lägg** till ![ ikonen Lägg till ](../../media/ITPro-EAC-AddIcon.png) och välj sedan **skapa en ny regel**.
+2. Klicka **på ikonen** Lägg till lägg till och välj sedan Skapa en ny ![ ](../../media/ITPro-EAC-AddIcon.png) **regel.**
 
-3. På sidan **ny regel** som öppnas konfigurerar du följande inställningar:
+3. Konfigurera **följande inställningar** på sidan Ny regel som öppnas:
 
-   - **Namn**: Ange ett unikt, beskrivande namn för regeln.
+   - **Namn:** Ange ett unikt, beskrivande namn för regeln.
 
-   - Klicka på **fler alternativ**.
+   - Klicka **på Fler alternativ.**
 
-   - **Använd den här regeln om**: Välj ett eller flera villkor för att identifiera meddelanden. Mer information finns i [villkor och undantag för e-postflödes regler (predikat) i Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
+   - **Använd den här regeln om:** Markera ett eller flera villkor för att identifiera meddelanden. Mer information finns i Villkoren [för e-postflödesregel och undantag (predikat) i Exchange Online.](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
-   - **Gör följande**: Välj **ändra meddelande egenskaper** \> **ange nivån för skräp post (SCL)**. I dialog rutan **Ange SCL** väljer du något av följande värden:
+   - **Gör följande:** Välj **Ändra meddelandeegenskaperna** \> **som anger skräppostförtroendenivån (SCL).** I dialogrutan **Ange SCL** som visas konfigurerar du något av följande värden:
 
-   - **Kringgå skräp post filtrering**: meddelanden åsidosätter inte skräp post filtrering.
+   - **Kringgå skräppostfiltrering:** Meddelandena hoppar över skräppostfiltrering.
 
      > [!CAUTION]
-     > Var försiktig om att låta meddelanden hoppa över skräp post filtrering. Angripare kan använda detta problem för att skicka nätfiske och andra skadliga meddelanden till din organisation. Reglerna för e-postflöden kräver mer än avsändarens e-postadress eller domän. Mer information finns i [skapa säkra avsändare i EOP](create-safe-sender-lists-in-office-365.md).
+     > Var mycket noga med att tillåta att meddelanden hoppar över skräppostfiltrering. Attacker kan använda det här problemet för att skicka nätfiske och andra skadliga meddelanden till organisationen. E-postflödesregler kräver mer än bara avsändarens e-postadress eller domän. Mer information finns i Skapa [listor över betrodda avsändare i EOP.](create-safe-sender-lists-in-office-365.md)
 
-   - **0 till 4**: meddelandet skickas via spam för ytterligare bearbetning.
+   - **0 till 4:** Meddelandet skickas via skräppostfiltrering för ytterligare bearbetning.
 
-   - **5 eller 6**: meddelandet är markerat som **skräp post**. Den åtgärd som du har konfigurerat för **skräp post** filtrering verdicts i dina meddelanden (standardvärdet **flyttas till mappen skräp post**).
+   - **5 eller 6:** Meddelandet markeras som **skräppost.** Åtgärden som du har konfigurerat  för skräppostfiltreringsval i principerna för skräppostskydd tillämpas på meddelandet (standardvärdet är Flytta meddelandet till mappen **Skräppost).**
 
-   - **7 till 9**: meddelandet har marker ATS som **skräp post**. Den åtgärd som du har konfigurerat för filtrering av skräp post med **hög exakthet** verdicts i meddelandet (standardvärdet **flyttas till mappen skräp post**).
+   - **7 till 9:** Meddelandet markeras som **skräppost med hög konfidens.** Åtgärden som du har konfigurerat  för skräppostfiltrering med hög konfidens i principerna för skräppostskydd tillämpas på meddelandet (standardvärdet är Flytta meddelandet till mappen **Skräppost).**
 
-4. Ange ytterligare egenskaper för regeln. Klicka på **Spara** när du är klar.
+4. Ange ytterligare egenskaper som du vill använda för regeln. Klicka på **Spara** när du är klar.
 
 ## <a name="how-do-you-know-this-worked"></a>Hur vet du att det fungerade?
 
-Verifiera att den här proceduren fungerar som den ska genom att skicka ett e-postmeddelande till någon inom organisationen och kontrol lera att åtgärden som utförs på meddelandet är som förväntat. Om du till exempel **ställer in säkerhets nivån för skräp post (SCL)** för att **kringgå skräp post** ska meddelandet skickas till den angivna mottagarens inkorg. Men om du **har angett säkerhets nivån för skräp post (SCL)** till **9** och åtgärden att ta bort **hög säkerhet** för dina tillämpliga skydd mot skräp post är att meddelandet ska flyttas till mappen skräp post.
+Kontrollera att den här proceduren fungerar korrekt genom att skicka ett e-postmeddelande till någon i organisationen och kontrollera att åtgärden som utförts för meddelandet är som förväntat. Om du till exempel anger att skräppostförtroendenivån **(SCL)** ska kringgå **skräppostfiltrering** ska meddelandet skickas till den angivna mottagarens inkorg. Men om du ställer in skräppostförtroendenivån **(SCL)** på **9** och åtgärden hög konfidens för dina tillämpliga principer för skräppost är att flytta meddelandet till mappen Skräppost, ska meddelandet skickas till den angivna mottagarens skräppostmapp. 

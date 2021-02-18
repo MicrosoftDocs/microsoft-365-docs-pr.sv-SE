@@ -19,21 +19,21 @@ ms.custom:
 description: Lär dig hur Microsoft 365 använder SPF-posten (Sender Policy Framework) i DNS för att säkerställa att mål-e-postsystem litar på meddelanden som skickas från din anpassade domän.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b6b79957f84e660fe952f88dab18d8934937d875
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: daf170339f4a218c404114f9c82b1d465779100d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167533"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286874"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Så använder Microsoft 365 SPF (Sender Policy Framework) för att förhindra förfalskning
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
  **Sammanfattning:** I den här artikeln beskrivs hur Microsoft 365 använder SPF-TXT-posten (Sender Policy Framework) i DNS för att säkerställa att mål-e-postsystem litar på meddelanden som skickas från din anpassade domän. Det här gäller utgående e-post som skickas från Microsoft 365. Meddelanden som skickas från Microsoft 365 till en mottagare inom Microsoft 365 passerar alltid SPF.
 
@@ -50,7 +50,7 @@ Domänadministratörer publicerar SPF-information i TXT-poster i DNS. SPF-inform
 ## <a name="how-spf-works-to-prevent-spoofing-and-phishing-in-microsoft-365"></a>Så här fungerar SPF för att förhindra förfalskning och nätfiske i Microsoft 365
 <a name="HowSPFWorks"> </a>
 
-SPF avgör om en avsändare tillåts skicka för en domäns räkning. Om avsändaren inte har tillåtelse att göra det, det vill säga om e-posten misslyckas med SPF-kontrollen på den mottagande servern, avgör skräppostprincipen som konfigurerats på den servern vad som ska göra med meddelandet.
+SPF avgör om en avsändare är tillåten att skicka för en domäns räkning. Om avsändaren inte har tillåtelse att göra det, det vill säga om e-posten misslyckas med SPF-kontrollen på den mottagande servern, avgör skräppostprincipen som konfigurerats på den servern vad som ska göra med meddelandet.
 
 Varje SPF TXT-post innehåller tre delar: deklarationen att det är en SPF TXT-post, DE IP-adresser som tillåts skicka e-post från din domän och de externa domäner som kan skicka för din domän samt en regel för verkställande. Du behöver alla tre i en giltig SPF TXT-post. I den här artikeln beskrivs hur du skapar SPF TXT-posten och metodtips för att arbeta med tjänster i Microsoft 365. Länkar till instruktioner om hur du arbetar med din domänregistrator för att publicera posten till DNS finns också.
 
@@ -119,7 +119,7 @@ Förutom IP-adresser kan du också konfigurera SPF TXT-posten så att domäner i
 v=spf1 include:contoso.net include:contoso.org -all
 ```
 
-När den mottagande servern ser den här posten i DNS utför den också ett DNS-uppslag på SPF TXT-posten för contoso.net och sedan för contoso.org. Om det hittar ytterligare ett include-uttryck i posterna för contoso.net eller contoso.org följer även det. För att förhindra denial of service-attacker är det maximala antalet DNS-uppslag för ett enskilt e-postmeddelande 10. Varje include-instruktion representerar ytterligare ett DNS-uppslag. Om ett meddelande överskrider 10 gränsen misslyckas meddelandet SPF. När ett meddelande når den här gränsen, beroende på hur den mottagande servern har konfigurerats, kan avsändaren få ett meddelande om att meddelandet genererat "för många uppslag" eller att "det maximala antalet hopp för meddelandet har överskridits" (vilket kan hända när uppslagsloopen och överskrider DNS-tidsgränsen). Tips om hur du undviker detta finns i [Felsökning: Rekommendationer för SPF i Microsoft 365.](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)
+När den mottagande servern ser den här posten i DNS utför den också ett DNS-uppslag på SPF TXT-posten för contoso.net och sedan för contoso.org. Om det hittar ytterligare ett include-uttryck i posterna för contoso.net eller contoso.org följer även det. För att förhindra denial of service-attacker är det maximala antalet DNS-uppslag för ett enskilt e-postmeddelande 10. Varje include-instruktion representerar ett ytterligare DNS-uppslag. Om ett meddelande överskrider 10 gränsen misslyckas meddelandet SPF. När ett meddelande når den här gränsen, beroende på hur den mottagande servern har konfigurerats, kan avsändaren få ett meddelande om att meddelandet genererat "för många uppslag" eller att "det maximala antalet hopp för meddelandet har överskridits" (vilket kan hända när uppslagsloopen och överskrider DNS-tidsgränsen). Tips om hur du undviker detta finns i [Felsökning: Rekommendationer för SPF i Microsoft 365.](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)
 
 ## <a name="requirements-for-your-spf-txt-record-and-microsoft-365"></a>Krav för SPF TXT-posten och Microsoft 365
 <a name="SPFReqsinO365"> </a>
@@ -139,7 +139,7 @@ Om du har en hybriddistribution (det vill säga du har vissa postlådor lokalt o
 
 Använd syntaxinformationen i den här artikeln för att skapa SPF TXT-posten för din anpassade domän. Det finns andra syntaxalternativ som inte nämns här, men det här är de vanligaste alternativen. När du har skapat posten måste du uppdatera posten hos domänregistratorn.
 
-Mer information om de domäner som du måste ta med för Microsoft 365 finns i Externa [DNS-poster som krävs för SPF.](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records) Följ de [stegvisa anvisningarna för att](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) uppdatera SPF-poster (TXT) för din domänregistrator.
+Mer information om de domäner som du måste ta med för Microsoft 365 finns i Externa [DNS-poster som krävs för SPF.](../../enterprise/external-domain-name-system-records.md) Följ de [stegvisa anvisningarna för att](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md#add-or-edit-an-spf-txt-record-to-help-prevent-email-spam-outlook-exchange-online) uppdatera SPF-poster (TXT) för din domänregistrator.
 
 ### <a name="spf-txt-record-syntax-for-microsoft-365"></a>SPF TXT-postsyntax för Microsoft 365
 <a name="SPFSyntaxO365"> </a>
@@ -162,9 +162,9 @@ där:
 
 - **ip4** anger att du använder IP version 4-adresser. **ip6** anger att du använder IP version 6-adresser. Om du använder IPv6 IP-adresser ersätter du **ip4** med **ip6** i exemplen i den här artikeln. Du kan också ange IP-adressintervall med hjälp av CIDR-notation, till exempel **ip4:192.168.0.1/26.**
 
-- _IP-adressen_ är den IP-adress som du vill lägga till i SPF TXT-posten. Det här är vanligtvis IP-adressen för organisationens utgående e-postserver. Du kan lista flera utgående e-postservrar. Mer information finns i [exempel: SPF TXT-post för flera utgående lokala e-postservrar och Microsoft 365.](how-office-365-uses-spf-to-prevent-spoofing.md#ExampleSPFMultipleMailServerO365)
+- _IP-adressen_ är den IP-adress som du vill lägga till i SPF TXT-posten. Det här är vanligtvis IP-adressen för organisationens utgående e-postserver. Du kan lista flera utgående e-postservrar. Mer information finns i [Exempel: SPF TXT-post för flera utgående lokala e-postservrar och Microsoft 365.](how-office-365-uses-spf-to-prevent-spoofing.md#ExampleSPFMultipleMailServerO365)
 
-- _domännamnet_ är den domän som du vill lägga till som en äkta avsändare. En lista över domännamn som du ska ta med för Microsoft 365 finns i Externa [DNS-poster som krävs för SPF.](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)
+- _domännamnet_ är den domän som du vill lägga till som en äkta avsändare. En lista över domännamn som du ska ta med för Microsoft 365 finns i Externa [DNS-poster som krävs för SPF.](../../enterprise/external-domain-name-system-records.md)
 
 - Tillämpningsregel är vanligtvis något av följande:
 
@@ -174,7 +174,7 @@ där:
 
   - ~all
 
-    Anger mjuk fel. Om du inte är säker på att du har den fullständiga listan med IP-adresser bör du använda kvalificeraren ~all (mjuk fel). Om du använder DMARC med p=karantän eller p=avvisa kan du också använda ~all. Annars använder du -all.
+    Anger mjuk fel. Om du inte är säker på att du har den fullständiga listan med IP-adresser bör du använda kvalificeraren ~all (mjuk underkänd). Om du använder DMARC med p=karantän eller p=avvisa kan du också använda ~all. Annars använder du -all.
 
   - ?all
 
@@ -192,7 +192,7 @@ v=spf1 include:spf.protection.outlook.com -all
 ### <a name="example-spf-txt-record-for-a-hybrid-scenario-with-one-on-premises-exchange-server-and-microsoft-365"></a>Exempel: SPF TXT-post för ett hybridscenario med en lokal Exchange Server och Microsoft 365
 <a name="ExampleSPFHybridOneExchangeServer"> </a>
 
-Om IP-adressen för din lokala Exchange Server i en hybridmiljö är 192.168.0.1 utgör du SPF TXT-posten på följande sätt för att ställa in SPF-tvingande regel på ett hårt fel:
+Om IP-adressen för din lokala Exchange Server i en hybridmiljö är 192.168.0.1 utgör du SPF TXT-posten på följande sätt för att sätta SPF-tvingande regel till svår att misslyckas:
 
 ```text
 v=spf1 ip4:192.168.0.1 include:spf.protection.outlook.com -all
@@ -219,7 +219,7 @@ När du har utformat SPF TXT-posten följer du stegen i Konfigurera SPF i [Micro
 
 Du kan bara skapa en SPF TXT-post för din anpassade domän. Om du skapar flera poster misslyckas en round robin situation och SPF misslyckas. Du kan undvika detta genom att skapa separata poster för varje underdomän. Du kan till exempel skapa en post för contoso.com och en annan post för bulkmail.contoso.com.
 
-Om ett e-postmeddelande orsakar fler än 10 DNS-uppslag innan det levereras svarar den mottagande e-postservern med ett permanent fel, även kallat  _permerror,_ och orsakar att meddelandet misslyckas i SPF-kontrollen. Den mottagande servern kan också svara med en rapport om utebliven leverans (NDR) som innehåller ett fel som liknar följande:
+Om ett e-postmeddelande orsakar fler än 10 DNS-uppslag innan det levereras svarar den mottagande e-postservern med ett permanent fel, även kallat  _permerror,_ och orsakar att meddelandet misslyckas i SPF-kontrollen. Den mottagande servern kan också svara med en rapport om utebliven leverans (NDR) som innehåller ett fel som liknar dessa:
 
 - Meddelandet överskred antalet hopp.
 
@@ -251,11 +251,9 @@ När du inkluderar domäner från tredje part i SPF TXT-posten måste du kontrol
 ## <a name="how-to-view-your-current-spf-txt-record-and-determine-the-number-of-lookups-that-it-requires"></a>Hur du visar din aktuella SPF TXT-post och fastställer antalet uppslag som krävs
 <a name="SPFTroubleshoot"> </a>
 
-Du kan använda nslookup för att visa dina DNS-poster, inklusive SPF TXT-posten. Om du föredrar det finns det ett antal kostnadsfria onlineverktyg som du kan använda för att visa innehållet i SPF TXT-posten. Genom att titta på SPF TXT-posten och följa kedjan med include-instruktioner och omdirigeringar, kan du avgöra hur många DNS-uppslag posten kräver. Vissa onlineverktyg räknar och visar dessa uppslag åt dig. Om du håller reda på det här antalet förhindrar du att meddelanden som skickas från organisationen utlöser ett permanent fel, ett så kallat permerror, från den mottagande servern.
+Du kan använda nslookup för att visa dina DNS-poster, inklusive SPF TXT-posten. Om du föredrar det finns det ett antal kostnadsfria onlineverktyg som du kan använda för att visa innehållet i SPF TXT-posten. Genom att titta på SPF TXT-posten och följa kedjan med include-uttryck och omdirigeringar, kan du avgöra hur många DNS-uppslag posten kräver. Vissa onlineverktyg räknar och visar dessa uppslag åt dig. Om du håller reda på det här antalet förhindrar du att meddelanden som skickas från organisationen utlöser ett permanent fel, ett så kallat permerror, från den mottagande servern.
 
 ## <a name="for-more-information"></a>Mer information
 <a name="SPFTroubleshoot"> </a>
 
-Behöver du hjälp med att lägga till SPF TXT-posten? Läs artikeln [Create DNS records at any DNS hosting provider for Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) for detailed information about usage of Sender Policy Framework with your custom domain in Microsoft 365. [Rubriker som är skräppostskyddade innehåller](anti-spam-message-headers.md) syntax- och rubrikfälten som används av Microsoft 365 för SPF-kontroller.
-
-
+Behöver du hjälp med att lägga till SPF TXT-posten? Läs artikeln [Create DNS records at any DNS hosting provider for Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md#add-or-edit-an-spf-txt-record-to-help-prevent-email-spam-outlook-exchange-online) for detailed information about usage of Sender Policy Framework with your custom domain in Microsoft 365. [Rubriker som är skräppostskyddade innehåller](anti-spam-message-headers.md) syntax- och rubrikfälten som används av Microsoft 365 för SPF-kontroller.

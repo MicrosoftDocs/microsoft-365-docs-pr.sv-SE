@@ -19,19 +19,19 @@ description: 'Sammanfattning: skapa utvärderingsversioner av Office 365 och Ent
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d23539951e4d51fcd29417ab71ce599853d7537
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e600b3baf012d416a7b5de974b94111bb6cf90a2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165709"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287455"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Konfigurera grupper och användare i en utvecklings-/testmiljö för en politisk kampanj
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Microsoft Defender för Office 365 abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender för Office 365 abonnemang 2](office-365-atp.md)
 
  **Sammanfattning:** skapa utvärderingsversioner av Office 365 och Enterprise Mobility + Security (EMS) med användare och grupper i en utvecklings-/test miljö för en politisk kampanj.
 
@@ -41,7 +41,7 @@ Följ anvisningarna i den här artikeln om du vill skapa en utvecklings-/testmil
 
 I den här fasen får du provprenumerationer för Office 365 E5 och Enterprise Mobility + Security (EMS) E5 för en fiktiv organisation som representerar en politisk kampanj.
 
-Följ anvisningarna i **fas 2** i [Enkel baskonfiguration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).
+Följ anvisningarna i **fas 2** i [Enkel baskonfiguration](../../enterprise/lightweight-base-configuration-microsoft-365-enterprise.md).
 
 Registrera dig sedan för en utvärderingsprenumeration på EMS E5 och lägg till den i samma organisation som utvärderingsprenumerationen.
 
@@ -139,7 +139,7 @@ Därefter konfigurerar du grupperna så att medlemmarna automatiskt tilldelas Of
 
 I den här fasen lägger du till exempelanvändarkonton för din politiska kampanj.
 
-Först [Anslut med Azure Active Directory PowerShell för diagrammodulen](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell).
+Först [Anslut med Azure Active Directory PowerShell för diagrammodulen](../../enterprise/connect-to-microsoft-365-powershell.md).
 
 Därefter fyller du i ditt organisationsnamn, din plats och ett vanligt lösenord och kör dessa kommandon från PowerShells kommandotolk eller integrerat skriptmiljö (ISE):
 
@@ -212,6 +212,6 @@ Skapa fyra olika typer av SharePoint Online-gruppwebbplatser i den här utveckli
 
 [Skapa gruppwebbplatser i en utvecklings-/testmiljö för en politisk kampanj](create-team-sites-in-a-political-campaign-dev-test-environment.md)
 
-[TLG (Test Lab Guides) för integrering med molntjänster](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[TLG (Test Lab Guides) för integrering med molntjänster](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
 [Integrering av moln- och hybridlösningar](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)

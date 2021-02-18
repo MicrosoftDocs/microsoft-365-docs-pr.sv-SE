@@ -1,7 +1,7 @@
 ---
-title: Nyheter i Microsoft Defender för Office 365
-description: Lär dig mer om de nya funktioner som finns tillgängliga i den senaste versionen av Microsoft Defender för Office 365.
-keywords: Nyheter i Office 365 ATP, ga, allmänt tillgänglig, funktioner, tillgängliga, ny
+title: Vad är nytt i Microsoft Defender för Office 365
+description: Läs mer om de nya funktionerna som är tillgängliga i den senaste versionen av Microsoft Defender för Office 365.
+keywords: vad är nytt i Office 365 atp, ga, allmänt tillgänglig, funktioner, tillgänglig, ny
 search.appverid: met150
 ms.sitesec: library
 ms.pagetype: security
@@ -21,100 +21,100 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3544f1ccb760c461b7ab72c6dc037fd653136db9
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 5934abb3afec3253da78c680735730b63ddb5701
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988166"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287359"
 ---
-# <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nyheter i Microsoft Defender för Office 365
+# <a name="whats-new-in-microsoft-defender-for-office-365"></a>Vad är nytt i Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-**Gäller för:**
-
-- [Microsoft Defender för Office 365](office-365-atp.md)
-
-Den här artikeln innehåller de nya funktionerna i den senaste versionen av Microsoft Defender för Office 365. Funktioner som för närvarande visas i för hands versionen är **(för hands version)**.
+Den här artikeln innehåller nya funktioner i den senaste versionen av Microsoft Defender för Office 365. Funktioner som för närvarande finns i förhandsgranskningsvyn visas **med (förhandsversion).**
 
 > [!TIP]
-> Har du inte Microsoft Defender för Office 365 ännu? [Kontakta Sales för att starta en prov period](https://go.microsoft.com/fwlink/p/?LinkId=518644).
+> Har du inte Microsoft Defender för Office 365 ännu? [Kontakta försäljning för att starta en utvärderingsversion.](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
 ## <a name="december-2020"></a>December 2020
 
-- [Säkra som standard i Office 365](secure-by-default.md)
+- [Säker som standard i Office 365](secure-by-default.md)
+- Förbättringar av automatiserad undersökning: allmänna varningar för manuellt utlösta e-postundersökningar, behandla postlådeändringar som en separat enhetskategori, ta bort redundanta URL-blockeringsåtgärder och skapa utgående e-postkluster för användare som komprometterat undersökningar.
 
 ## <a name="november-2020"></a>November 2020
 
-- Uppdaterade export gränser i granska > åtgärds Center > reparation från e-post och åtgärds logg (Defender för Office 365 abonnemang 2)
+- Uppdaterade exportbegränsningar i Granska > åtgärdscenter > e-postinskickning och åtgärdslogg (Defender för Office 365 abonnemang 2)
 
 ## <a name="septemberoctober-2020"></a>September/oktober 2020
 
-- [Kontrol lera dina policyer med hjälp av Configuration Analyzer](configuration-analyzer-for-security-policies.md)
-- [Utökade funktioner i Threat Explorer inklusive Top riktade användare, transport regler och anslutningar](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Defender för Office 365 i [Threat Explorer](threat-explorer.md) (via e-post som klient/användar princip) (Defender för Office 365 abonnemang 2)
-- Visa URL-hot i [Threat Explorer](threat-explorer.md#threats-in-urls) (skadlig program vara, Phish, spam eller ingen) (Defender för Office 365 abonnemang 2)
-- [Förbättringar av skydds Utforskaren för jakt](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) och uppdatering kring hot, ytterligare åtgärder, leverans ställen och uppdaterad tidslinjevy (Defender för Office 365 abonnemang 2)
+- [Kontrollera principer med hjälp av Configuration Analyzer](configuration-analyzer-for-security-policies.md)
+- Utökade funktioner i Hotutforskaren, inklusive populära riktade användare, transportregler och kopplingar (Defender för Office 365-information i [Threat Explorer](threat-explorer.md) (e-post [tilläts/blockerades](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) av klientorganisations-/användarprincip) (Defender för Office 365-abonnemang 2)
+- Surfa på URL-hot i [Threat Explorer](threat-explorer.md#threats-in-urls) (skadlig kod, nätt, skräppost eller inget) (Defender för Office 365 Abonnemang 2)
+- [Förbättringar av Hunting Experience Threat Explorer](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) med uppdateringar kring hot, ytterligare åtgärder, leveransplatser och uppdaterad tidslinjevy (Defender för Office 365 abonnemang 2)
 
-## <a name="julyaugust-2020"></a>Juli 2020
+## <a name="julyaugust-2020"></a>Juli/augusti 2020
 
-- [Upplev förbättringar av jakt upplevelsen](threat-explorer.md#improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
-- [Använd de rekommenderade inställningarna med förvalda säkerhets principer](preset-security-policies.md)
+- [Förbättringar av upplevelsen för den här upplevelsen](threat-explorer.md#improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
+- [Använd enkelt rekommenderade inställningar med förinställda säkerhetsprinciper](preset-security-policies.md)
 
-## <a name="marchapril-2020"></a>Mars 2020
+## <a name="marchapril-2020"></a>Mars/april 2020
 
-- Möjligheten att [adressera kompromissade användar konton med automatisk undersökning och svar](address-compromised-users-quickly.md) är nu allmänt tillgänglig. (Microsoft Defender för Office 365 abonnemang 2)
+- Möjligheten att hantera [komprometterade användarkonton med automatisk undersökning och svar är](address-compromised-users-quickly.md) nu allmänt tillgänglig. (Microsoft Defender för Office 365 abonnemang 2)
 
-## <a name="januaryfebruary-2020"></a>Januari 2020
+## <a name="januaryfebruary-2020"></a>Januari/februari 2020
 
-- [Allmän tillgänglighet för kampanjmallar i Microsoft Defender för office 365](campaigns.md) (Microsoft Defender för Office 365 abonnemang 2)
-- Förbättringar av [Threat Explorer](threat-explorer.md) för att aktivera säkerhets åtgärder för att söka och filtrera efter flera fält när du [undersöker e-post](investigate-malicious-email-that-was-delivered.md): (Microsoft Defender för Office 365 abonnemang 2)
-  - Leverans plats och särskilda åtgärder
-  - Riktning (inkommande, utgående eller inom organisationen)
-  - Avancerade icke-filter (det här är avancerade filtrerings alternativ som inte innehåller, inkluderar inte, etc.)
-  - Detaljerade tids filter (dag, timme, halvtimme)
+- [Allmän tillgänglighet för kampanjvyer i Microsoft Defender för Office 365](campaigns.md) (Microsoft Defender för Office 365 abonnemang 2)
+- Förbättringar av [Hotutforskaren för](threat-explorer.md) att aktivera säkerhetsåtgärder för grupper att söka och filtrera på flera fält medan de undersöker e-post: [](investigate-malicious-email-that-was-delivered.md)(Microsoft Defender för Office 365 abonnemang 2)
+  - Leveransplats och specialåtgärder
+  - Directionality (inkommande, utgående eller årsbaserade)
+  - Avancerade NOT-filter (de här avancerade filtreringsalternativen innehåller inte, inkluderar inte osv.)
+  - Granular time filters (day, hour, half-hour)
 
-- Widgeten **incidenter** är nu widgeten **Åtgärds Center** . (Om du vill visa dina säkerhetswidgetar kan du gå till **Threat Management** \> i säkerhets & efterlevnad **Granska**.) (Microsoft Defender för Office 365 abonnemang 2)
+- Widgeten **Incidenter** är nu **widgeten Åtgärdscenter.** (Om du vill visa dina säkerhetswidgetar går du till & Säkerhets- och **efterlevnadscenter** \> **Granska**.) (Microsoft Defender för Office 365 abonnemang 2)
 
-- [Säkra dokument i Microsoft 365](safe-docs.md) **(för hands version)**
+- [Säkra dokument i Microsoft 365](safe-docs.md) **(förhandsversion)**
 
 ## <a name="december-2019"></a>December 2019
 
-- [Exportera URL Klicka på data för offline-analys](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
+- [Exportera URL-klickdata för offlineanalys](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
 
-- [Använda kampanjmallar i Microsoft Defender för office 365 (för **hands version**)](campaigns.md) (microsoft Defender för Office 365 abonnemang 2)
+- [Använda kampanjvyer i Microsoft Defender för Office 365 **(förhandsversion)**](campaigns.md) (Microsoft Defender för Office 365 abonnemang 2)
 
 ## <a name="november-2019"></a>November 2019
 
-- [Läs mer om nya problem med identifiering och svar](address-compromised-users-quickly.md) **(Microsoft** Defender för Office 365 abonnemang 2)
+- [Se nya komprometterade funktioner för identifiering](address-compromised-users-quickly.md) och svar **(förhandsversion)**(Microsoft Defender för Office 365 abonnemang 2)
 
 ## <a name="september-2019"></a>September 2019
 
-- Använda [automatiserade undersökningar och svars funktioner](automated-investigation-response-office.md) (Microsoft Defender för Office 365 abonnemang 2)
+- [Använd automatisk undersökning och svarsfunktioner](automated-investigation-response-office.md) (Microsoft Defender för Office 365 abonnemang 2)
 
-- [Integrera automatisk granskning och svars händelser med Microsoft Defender för office 365 med hjälp av API för hanterings aktivitet för office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Defender för Office 365 abonnemang 2)
+- [Integrera med Microsoft Defender för Office 365–](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) automatisk undersökning och svarshändelser med API:t för hanteringsaktivitet i Office 365 (Defender för Office 365 abonnemang 2)
 
-- [Visa e-postrubrikerna och ladda ned meddelande texten](investigate-malicious-email-that-was-delivered.md) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
+- [Visa e-posthuvudena och ladda ned e-posttexten](investigate-malicious-email-that-was-delivered.md) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
 
 ## <a name="august-2019"></a>Augusti 2019
 
-- [Visa tids linjen för e-post](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
+- [Visa tidslinjen för e-post](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
 
 ## <a name="july-2019"></a>Juli 2019
 
-- [Kontrol lera leverans åtgärden och platsen för e-postmeddelanden](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location) (Microsoft Defender för Office 365 abonnemang 1 eller 2)
+- [Kontrollera leveransåtgärden och platsen för e-postmeddelanden](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location) (Microsoft Defender för Office 365 abonnemang 1 eller 2)
 
 ## <a name="june-2019"></a>Juni 2019
 
-- [Visa nät fiske adresser och klicka på Verdict data](threat-explorer.md#view-phishing-url-and-click-verdict-data) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
+- [Visa nätfiske-URL:er och klicka på data](threat-explorer.md#view-phishing-url-and-click-verdict-data) som utser nätfiske (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
 
 ## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2
 
-Visste du att Microsoft Defender för Office 365 finns i två planer? [Lär dig mer om vad varje abonnemang innehåller](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
+Visste du att Microsoft Defender för Office 365 är tillgängligt i två abonnemang? [Läs mer om vad varje plan innehåller.](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)
 
 ## <a name="see-also"></a>Se även
 
-[Microsoft 365-översikt](https://www.microsoft.com/microsoft-365/roadmap)
+[Översikt över Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 
-[Beskrivning av tjänsten Microsoft Defender för Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+[Tjänstbeskrivning för Microsoft Defender för Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)

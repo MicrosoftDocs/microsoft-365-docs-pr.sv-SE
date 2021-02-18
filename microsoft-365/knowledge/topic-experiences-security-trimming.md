@@ -12,12 +12,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: None
 description: Översikt över hur säkerhet används för att visa ämnen.
-ms.openlocfilehash: fc8e2a08fcf9af266aee49eee878738f7f17aa59
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 12a2ad34c55cd63468266abca1fa053048053dd2
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107524"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279338"
 ---
 # <a name="microsoft-viva-topics-security-trimming"></a>Säkerhets trimning för Microsoft Viva Topics 
 
@@ -35,7 +35,7 @@ Men när Användare 2 tittar på samma ämnessida för Neptune skiljer sig deras
 
 ![Neptune-ämne för användare 2](../media/knowledge-management/user1-topic-view.png) </br> 
 
-Skillnaden i vad användarna kan se i samma ämne är att användarna kanske inte har Office 365-behörighet att visa en relaterad webbplats eller fil.  Viva Topics respekterar de behörigheter som anges för objekt i ett ämne och kan inte ändra åtkomsten till dem. I vårt exempel kan användare 1 inte visa *filen DG-2000 Produktöversikt* på ämnessidan för Neptune eftersom Användare 1 inte har Office 365-behörigheter för att visa filen.
+Skillnaden i vad användarna kan se i samma ämne är att användarna kanske inte har Office 365-behörighet att visa en relaterad webbplats eller fil.  Viva Topics respekterar behörigheterna som anges för objekt i ett ämne och kan inte ändra åtkomsten till dem. I vårt exempel kan användare 1 inte visa *filen DG-2000 Produktöversikt* på ämnessidan för Neptune eftersom Användare 1 inte har Office 365-behörigheter för att visa filen.
 
 Om en användare inte kan se tillräckligt med information i ett ämne för att det ska vara användbart, är avsnittet inte tillgängligt för användaren. När det händer kan användaren inte se det markerade avsnittet. En annan användare som har behörighet till mer information i avsnittet för att den ska vara användbar kommer att kunna se ämnet.
 
@@ -52,7 +52,8 @@ På samma sätt kan användare som har behörighet att skapa och redigera ämnes
 Ämnen kan innehålla information som genereras av AI och information som lagts till eller redigerats av ämnesdeltagare eller kunskapshanterare.
 
  - Information i ett ämne som lagts till av AI visas bara för personer som har åtkomst till källinnehållet.
- - Information som har lagts till manuellt eller redigerats av en ämnesdeltagare eller knowledge manager är synlig för alla som kan se ämnet.
+ - Information om ämnen och personer som manuellt har lagts till eller redigerats av en ämnesdeltagare eller knowledge manager är synliga för alla som kan se ämnet.
+ - Filer, sidor och webbplatser visas bara för användare som har behörighet till källinnehållet, oavsett om de har lagts till manuellt eller lagts till av AI.
 
 I följande tabell beskrivs vad användare – ämnesanvändare, deltagare och kunskapshanterare – kan se i ett visst ämne baserat på deras behörigheter.
 

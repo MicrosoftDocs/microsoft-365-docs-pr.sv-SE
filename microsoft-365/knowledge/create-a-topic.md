@@ -14,19 +14,19 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 2b543dbc8132f261814aec45e713874971b9b5d1
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: fbdd0e9b75e92d8080d9aaf43a2d1eaa8baacbc3
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242896"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279404"
 ---
 # <a name="create-a-new-topic"></a>Skapa ett nytt ämne 
 
 I Viva Topics kan du skapa ett nytt ämne om ett ämne inte upptäcks genom indexering eller om AI-tekniken inte hittar tillräckligt med bevis för att etablera det som ett ämne.
 
 > [!Note] 
-> Observera att informationen i ett manuellt [](topic-experiences-security-trimming.md)skapat ämne är synlig för alla användare som har behörighet att visa ämnet medan information i ett ämne som har samlats av AI är säkerhets trim. 
+> Observera att informationen i ett ämne [](topic-experiences-security-trimming.md)som har samlats av AI är säkerhets trimad, men observera att ämnesbeskrivningen och personinformationen i ett manuellt skapat ämne är synlig för alla användare som har behörighet att visa ämnet. 
 
 
 ## <a name="requirements"></a>Krav
@@ -42,7 +42,7 @@ Om du vill skapa ett nytt ämne måste du:
 
 Du kan skapa ett nytt ämne från två platser:
 
-- Startsidan för Ämnescenter: Alla  licensierade användare med behörigheten Vem kan skapa eller redigera ämnen (deltagare) kan skapa ett nytt ämne från ämnescentret genom att välja menyn Nytt och sedan välja <b>Sidan Ämne.</b> <b></b></br> 
+- Startsidan för Ämnescenter: Alla  licensierade användare med behörigheten Vem kan skapa eller redigera ämnen (deltagare) kan skapa ett nytt ämne från ämnescentret genom att välja menyn Nytt och sedan välja <b>sidan Ämne.</b> <b></b></br> 
 
     ![Nytt ämne från ämnescenter](../media/knowledge-management/new-topic.png) </br> 
 
@@ -77,6 +77,9 @@ Du kan skapa ett nytt ämne från två platser:
 
     Du kan också använda alternativet <b>Från en länk för</b> att lägga till en fil eller sida genom att ange URL-adressen. 
 
+    > [!Note] 
+    > Filer och sidor som du lägger till måste finnas inom samma Microsoft 365-klientorganisation. Om du vill lägga till en länk till en extern resurs i ämnet kan du lägga till den via arbetsytans ikon i steg 8.
+
 
 6.  I <b>avsnittet Relaterade</b> webbplatser visas webbplatser som har information om ämnet. 
 
@@ -97,6 +100,16 @@ Du kan skapa ett nytt ämne från två platser:
    Det relaterade ämnet som du lagt till visas som ett anslutet ämne.
 
    ![Närliggande ämnen](../media/knowledge-management/related-topics-final.png)</br> 
+
+   Om du vill ta bort ett relaterat ämne väljer du det ämne du vill ta bort och sedan ikonen <b>Ta bort</b> ämne.</br>
+ 
+   ![Ta bort relaterat ämne](../media/knowledge-management/remove-related.png)</br>  
+
+   Välj sedan <b>Ta bort.</b></br>
+
+   ![Bekräfta borttagning](../media/knowledge-management/remove-related-confirm.png)</br> 
+     
+ 
 
 
 8. Du kan också lägga till statiska objekt på sidan (t.ex. text, bilder eller länkar) genom att välja ikonen för arbetsytan, som du hittar under den korta beskrivningen. När du markerar den öppnas SharePoint-verktygslådan där du kan välja objektet du vill lägga till på sidan.

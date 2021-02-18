@@ -20,20 +20,20 @@ ms.collection:
 description: Administratörer kan läsa mer om funktionen Säkra bifogade filer i Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d2d348856dbd51cabe2b320d315406076921fee
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: f0d7028f33e7a9259d12930631f259ae1cedc4fe
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261543"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287035"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Säkra bifogade filer i Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Säkra bifogade filer i Microsoft Defender för [Office 365](office-365-atp.md) ger ytterligare ett skyddslager för e-postbilagor som redan har skannats med skydd mot skadlig programvara [i Exchange Online Protection (EOP).](anti-malware-protection.md) Specifikt använder säkra bifogade filer en virtuell miljö för att kontrollera bifogade filer i e-postmeddelanden innan de levereras till mottagare (en process som kallas _detonation)._
 
@@ -70,7 +70,7 @@ I det här avsnittet beskrivs inställningarna i principer för säkra bifogade 
 
   |Alternativ|Effekt|Använd det här när du vill:|
   |---|---|---|
-  |**Av**|Bifogade filer genomsöks inte efter skadlig programvara genom säkra bifogade filer. Meddelanden genomsöks fortfarande efter skadlig programvara [genom skydd mot skadlig programvara i EOP.](anti-malware-protection.md)|Inaktivera skanning för valda mottagare. <p> Förhindra onödiga fördröjningar i dirigering av intern e-post. <p> **Det här alternativet rekommenderas inte för de flesta användare. Du bör endast använda det här alternativet för att inaktivera säker genomsökning av bifogade filer för mottagare som bara tar emot meddelanden från betrodda avsändare.**|
+  |**Av**|Bifogade filer genomsöks inte efter skadlig kod via säkra bifogade filer. Meddelanden genomsöks fortfarande efter skadlig programvara [genom skydd mot skadlig programvara i EOP.](anti-malware-protection.md)|Inaktivera skanning för valda mottagare. <p> Förhindra onödiga fördröjningar i dirigering av intern e-post. <p> **Det här alternativet rekommenderas inte för de flesta användare. Du bör endast använda det här alternativet för att inaktivera säker genomsökning av bifogade filer för mottagare som bara tar emot meddelanden från betrodda avsändare.**|
   |**Övervaka**|Levererar meddelanden med bifogade filer och spårar sedan vad som händer med identifierade skadlig programvara. <p> Leveransen av säkra meddelanden kan fördröjas på grund av säker genomsökning av bifogade filer.|Se var den identifierade skadlig programvara går i organisationen.|
   |**Blockera**|Förhindrar att meddelanden med identifierade bifogade filer från skadlig programvara levereras. <p> Meddelanden [sätts i karantän](manage-quarantined-messages-and-files.md) där bara administratörer (inte slutanvändare) kan granska, släppa eller ta bort meddelanden. <p> Blockerar automatiskt framtida förekomster av meddelanden och bifogade filer. <p> Leveransen av säkra meddelanden kan fördröjas på grund av säker genomsökning av bifogade filer.|Skyddar organisationen från upprepade attacker med hjälp av samma bifogade filer i skadlig programvara. <p> Det här är standardvärdet och det rekommenderade värdet i de förinställda säkerhetsprinciperna Standard [och Strikt.](preset-security-policies.md)|
   |**Ersätt**|Tar bort identifierade bifogade filer från skadlig programvara. <p> Meddelar mottagarna att bifogade filer har tagits bort. <p>  Meddelanden [sätts i karantän](manage-quarantined-messages-and-files.md) där bara administratörer (inte slutanvändare) kan granska, släppa eller ta bort meddelanden. <p> Leveransen av säkra meddelanden kan fördröjas på grund av säker genomsökning av bifogade filer.|Se till mottagarna att bifogade filer har tagits bort på grund av upptäckt skadlig programvara.|

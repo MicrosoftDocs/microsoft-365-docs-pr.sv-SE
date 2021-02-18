@@ -19,22 +19,22 @@ ms.custom:
 description: I den här artikeln förklarar vi de ändringar som distribueras till skyddsfunktioner i Azure Information Protection
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0769306c3aa2d1a357e1d5999d1a1406c02aa5f3
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: fe85a46e3f20cda62cd8a52bd5df92257f8fee57
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261567"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286675"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Skyddsfunktioner i Azure Information Protection lanseras för befintliga klientorganisationar
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Microsoft Defender för Office 365 abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender för Office 365 abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Som hjälp med det första steget för att skydda din information kommer alla kvalificerade Azure Information Protection-klientorganisationen från juli 2018 att ha aktiverat skyddsfunktioner i Azure Information Protection som standard. Skyddsfunktioner i Azure Information Protection kallades tidigare för Rättighetshantering eller Azure RMS i Office 365. Om din organisation har ett Office E3-abonnemang eller ett högre serviceabonnemang får du nu ett försprång till att skydda informationen via Azure Information Protection när vi distribuerar de här funktionerna.
+Som hjälp med det första steget för att skydda din information kommer alla kvalificerade Azure Information Protection-klientorganisationen från och med juli 2018 att ha aktiverat skyddsfunktioner i Azure Information Protection som standard. Skyddsfunktioner i Azure Information Protection kallades tidigare för Rättighetshantering eller Azure RMS i Office 365. Om din organisation har ett Office E3-abonnemang eller ett högre serviceabonnemang får du nu ett försprång till att skydda informationen via Azure Information Protection när vi distribuerar de här funktionerna.
 
 ## <a name="changes-beginning-july-1-2018"></a>Ändringar som börjar den 1 juli 2018
 
@@ -44,7 +44,7 @@ Från och med den 1 juli 2018 aktiverar Microsoft skyddsfunktioner i Azure Infor
 
 - Du kan också lägga till Azure Information Protection Plan 1 i följande abonnemang för att få de nya funktionerna för meddelandekryptering i Office 365: Exchange Online abonnemang 1, Exchange Online abonnemang 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard eller Office 365 Enterprise E1.
 
-- Alla användare som drar nytta av meddelandekryptering i Office 365 måste ha en licens för att kunna omfattas av funktionen.
+- Alla användare som drar nytta av meddelandekryptering i Office 365 måste ha en licens för att omfattas av funktionen.
 
 - Den fullständiga listan finns i [meddelandekrypteringsbeskrivningarna för Exchange Online-tjänsten](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) för Office 365.
 
@@ -61,7 +61,7 @@ Meddelandekryptering i Office 365 utnyttjar skyddsfunktioner i Azure Information
 Om din organisation har köpt en berättigad Office 365-licens påverkas klientorganisationen av den här ändringen.
 
 > [!IMPORTANT]
-> Om du använder AD RMS (Active Directory Rights Management Services) i din lokala miljö måste du antingen välja bort ändringen direkt eller migrera till Azure Information Protection innan vi distribuerar den här ändringen inom 30 dagar. Mer information om hur du avanmäler finns i "Jag använder AD RMS, hur gör jag för att avanmäla?" längre fram i den här artikeln. Om du föredrar att migrera kan [du gå till migrera från AD RMS till Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+> Om du använder AD RMS (Active Directory Rights Management Services) i din lokala miljö måste du antingen välja bort ändringen direkt eller migrera till Azure Information Protection innan vi distribuerar den här ändringen inom 30 dagar. Mer information om hur du avanmäler finns i "Jag använder AD RMS, hur gör jag för att avanmäla?" längre fram i den här artikeln. Om du föredrar att migrera, se [Hur du migrerar från AD RMS till Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
 
 ## <a name="can-i-use-azure-information-protection-with-active-directory-rights-management-services-ad-rms"></a>Kan jag använda Azure Information Protection med AD RMS (Active Directory Rights Management Services)?
 
@@ -77,7 +77,7 @@ Följ de här anvisningarna i Förbereda miljön för Azure Rights Management n�
 
 2. Om du inte använder en SCP måste Windows-datorer som ansluter till ett AD RMS-kluster konfigureras för identifiering av klienttjänster eller licensieringsomdirigering med hjälp av Windows-registret: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation or HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation` .
 
-Mer information om de här registerkonfigurationerna finns i aktivera identifiering av klienttjänster med [Windows-registret](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry) och omdirigering av [licensservertrafik.](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic)
+Mer information om de här registerkonfigurationerna finns i aktivera identifiering av klientsidan med Hjälp av [Windows-registret](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry) och omdirigering av [licensservertrafik.](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic)
 
 ## <a name="i-use-ad-rms-how-do-i-opt-out"></a>Jag använder AD RMS, hur gör jag för att avanmäla?
 
@@ -93,7 +93,7 @@ Om du vill avanmäla dig från den kommande ändringen slutför du följande ste
 
 ## <a name="what-can-i-expect-after-this-change-has-been-made"></a>Vad kan jag förvänta mig när den här ändringen har gjorts?
 
-När detta är aktiverat, förutsatt att du inte har valt bort det, kan du börja använda den nya versionen av meddelandekryptering i Office 365 som annonserades på [Microsoft Ignite 2017](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801) och som utnyttjar krypterings- och skyddsfunktioner i Azure Information Protection.
+När detta är aktiverat, förutsatt att du inte har valt bort det, kan du börja använda den nya versionen av meddelandekryptering i Office 365 som annonserades på [Microsoft Ignite 2017](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801) och använder krypterings- och skyddsfunktioner i Azure Information Protection.
 
 ![Skärmbild som visar ett OME-skyddat meddelande i Outlook på webben.](../../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
 

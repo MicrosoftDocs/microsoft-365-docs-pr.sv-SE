@@ -19,12 +19,12 @@ description: Läs mer om åtgärder för automatisk undersökning och svar i Mic
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: 3fb77fa41ff3e9af995cf80b9f4024aa92a51212
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: a11e9ee6a4c2426951fe2b4aa4f2dd08d1931f1c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176021"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287119"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Granska och hantera åtgärder i Office 365
 
@@ -32,13 +32,13 @@ Eftersom automatiska undersökningar av e& och samarbetsinnehåll resulterar  i 
 - Blockera en URL (tid för klickning)
 - Mjuk borttagning av e-postmeddelanden och kluster
 - Kvartil som e-post eller e-postbilagor
-- Inaktivera vidarebefordran av extern e-post
+- Stänga av vidarebefordran av extern e-post
 
-Dessa åtgärder vidtas inte om inte och tills säkerhetsteamet godkänner dem. Vi rekommenderar att granska och godkänna alla väntande åtgärder så snart som möjligt så att de automatiserade undersökningarna slutförs i tid. I vissa fall kan du ångra en åtgärdsåtgärd.
+Dessa åtgärder vidtas inte om inte och tills säkerhetsteamet godkänner dem. Vi rekommenderar att du granskar och godkänner alla väntande åtgärder så snart som möjligt så att de automatiserade undersökningarna slutförs i tid. I vissa fall kan du ångra en åtgärdsåtgärd.
 
 **Gäller för**
-- [Microsoft Defender för Office 365 abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender för Office 365 abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 ## <a name="approve-or-reject-pending-actions"></a>Godkänna (eller avvisa) väntande åtgärder
 
@@ -48,7 +48,7 @@ Dessa åtgärder vidtas inte om inte och tills säkerhetsteamet godkänner dem. 
 4. Markera ett objekt i listan. Det utfällfönster som visas. 
 5. Granska informationen i det utfällfönster och gör sedan något av följande:
    - Välj **sidan Öppna undersökning** om du vill visa mer information om undersökningen.
-   - Välj **Godkänn för** att påbörja en väntande åtgärd.
+   - Välj **Godkänn** för att påbörja en väntande åtgärd.
    - Välj **Avvisa** om du vill förhindra att en väntande åtgärd vidtas.
 
 ## <a name="undo-one-remediation-action"></a>Ångra en åtgärdsåtgärd
@@ -61,7 +61,7 @@ Dessa åtgärder vidtas inte om inte och tills säkerhetsteamet godkänner dem. 
 
 1. Gå till Åtgärdscenter [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () och logga in.
 2. Markera **de** åtgärder som du vill ångra på fliken Historik. Se till att markera objekt som har samma åtgärdstyp. Ett utfällt fönster öppnas.
-3. Välj Ångra i det utfällfönster du vill använda.
+3. Välj Ångra i det utfällade fönstret.
 
 ## <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>Ta bort en fil från karantän på flera enheter
 

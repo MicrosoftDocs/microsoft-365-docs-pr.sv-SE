@@ -1,5 +1,5 @@
 ---
-title: Visa rapporter för e-postflöden i instrument panelen rapporter
+title: Visa e-postflödesrapporter på instrumentpanelen Rapporter
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,545 +15,549 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan läsa om vilka e-postflödes rapporter som är tillgängliga på instrument panelen för rapporter i säkerhets & efterlevnad.
+description: Administratörer kan läsa mer om e-postflödesrapporterna som är tillgängliga i instrumentpanelen Rapporter i säkerhets- & Efterlevnadscenter.
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e69085d1fad845ab519f2590b0527316463373a7
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: dbbec056203ad816d37f5451115d2c7d172eee92
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029804"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286723"
 ---
-# <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Visa rapporter om e-postflöden i instrument panelen för säkerhet &
+# <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Visa e-postflödesrapporter i instrumentpanelen Rapporter i Säkerhets- & Efterlevnadscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Utöver de e-postflödes rapporter som är tillgängliga i [instrument panelen för e-postflöden](mail-flow-insights-v2.md) i säkerhets & Compliance Center finns det flera olika e-postflödes rapporter som hjälper dig att övervaka din Microsoft 365-organisation.
+Förutom e-postflödesrapporterna som är [](mail-flow-insights-v2.md) tillgängliga på instrumentpanelen för e-postflöde i säkerhets- och efterlevnadscentret för & finns det flera olika e-postflödesrapporter på instrumentpanelen Rapporter som hjälper dig att övervaka Din Microsoft 365-organisation.
 
-Om du har [nödvändig behörighet](#what-permissions-are-needed-to-view-these-reports)kan du visa dessa rapporter i [säkerhets & Compliance Center](https://protection.office.com) genom att gå till  \> **instrument panelen** för rapporter. Öppna för att gå direkt till instrument panelen rapporter <https://protection.office.com/insightdashboard> .
+Om du har nödvändiga [behörigheter kan](#what-permissions-are-needed-to-view-these-reports)du visa de här rapporterna i Säkerhets- och [& genom](https://protection.office.com) att gå till  \> **instrumentpanelen Rapporter.** Om du vill gå direkt till instrumentpanelen Rapporter öppnar du <https://protection.office.com/insightdashboard> .
 
-![Instrument panel för rapporter i centret för säkerhets &](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Instrumentpanelen Rapporter i Säkerhets- & Efterlevnadscenter](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="connector-report"></a>Kopplings rapport
+## <a name="connector-report"></a>Kopplingsrapport
 
-**Kopplings rapporten** visar aktivitet för e-postflöde i de [inkommande och utgående kopplingarna](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) som har kon figurer ATS för organisationen.
+Kopplingsrapporten **visar** e-postflödesaktivitet [för inkommande och](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) utgående anslutningar som är konfigurerade för din organisation.
 
-Om du vill visa rapporten öppnar du [säkerhets & Compliance Center](https://protection.office.com), går till **rapport** \> **instrument panelen** och väljer **kopplings rapport**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=ConnectorReport> .
+Om du vill visa rapporten öppnar du [Säkerhets- & Efterlevnadscenter,](https://protection.office.com)går **till** instrumentpanelen \> **Rapporter** och väljer **Kopplingsrapport.** Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=ConnectorReport> .
 
-![Widgeten kopplings rapport i instrument panelen rapporter](../../media/connector-report-widget.png)
+![Widget för kopplingsrapport på instrumentpanelen Rapporter](../../media/connector-report-widget.png)
 
-### <a name="report-view-for-the-connector-report"></a>Rapportvy för kopplings rapporten
+### <a name="report-view-for-the-connector-report"></a>Rapportvy för kopplingsrapporten
 
 Följande diagram är tillgängliga i rapportvyn:
 
-- **Visa data via: e-post**: det här diagrammet visar antalet inkommande och utgående meddelanden sorterade efter:
+- **Visa data efter: E-postflöde:** I det här diagrammet visas antalet inkommande och utgående meddelanden ordnade efter:
 
   - **Totalt**
-  - **Från Internet utan en koppling**
-  - **Till Internet utan en koppling**
+  - **Från Internet utan anslutning**
+  - **Till Internet utan anslutning**
   - En specifik koppling som du har konfigurerat.
 
-  Om du vill isolera data i diagrammet använder du kryss rutan **Visa data för** kontroll och väljer ett av dessa alternativ eller **alla e-postflöde**.
+  Om du vill isolera data i diagrammet använder du Visa data för kontroll **och** väljer ett av de här alternativen eller **Allt e-postflöde.**
 
-  ![Visa data efter e-postflöde i kopplings rapporten](../../media/connector-report-view-data-by-mail-flow.png)
+  ![Visa data efter e-postflöde i kopplingsrapporten](../../media/connector-report-view-data-by-mail-flow.png)
 
-- **Visa data genom: TLS-användning**: det här diagrammet visar procent av TLS-version (Transport Layer Security) för e-postflöde.
+- **Visa data efter: TLS-användning:** Det här diagrammet visar procentandelen TLS-versionsanvändning (Transport Layer Security) för e-postflöde.
 
-  Om du vill isolera data i diagrammet använder du alternativet **Visa data för** kontroll och väljer något av följande alternativ:
+  Om du vill isolera data i diagrammet använder du **Visa data för kontroll** och väljer ett av följande alternativ:
 
-  - **Alla e-postflöden**
-  - **Från Internet utan en koppling**
-  - **Till Internet utan en koppling**
+  - **Allt e-postflöde**
+  - **Från Internet utan anslutning**
+  - **Till Internet utan anslutning**
   - En specifik koppling som du har konfigurerat.
 
-  ![Visa data efter TLS-användning i kopplings rapporten](../../media/connector-report-view-data-by-tls-usage.png)
+  ![Visa data efter TLS-användning i kopplingsrapporten](../../media/connector-report-view-data-by-tls-usage.png)
 
-Om du klickar på **filter** i en rapportvy kan du ange ett datum intervall med **start datum** och **slutdatum**.
+Om du klickar **på** Filter i en rapportvy kan du ange ett datumintervall **med startdatum** **och slutdatum.**
 
-### <a name="details-table-view-for-the-connector-report"></a>Vyn detaljerad tabell för kopplings rapporten
+### <a name="details-table-view-for-the-connector-report"></a>Detaljtabellvy för kopplingsrapporten
 
-Om du klickar på **Visa informations tabell** i en rapportvy visas följande information:
+Om du **klickar på Tabellen Visa** information i en rapportvy visas följande information:
 
 - **Datum**
-- **Kopplingens riktning och namn**
-- **Kopplings typ**
-- **Tvingad TLS?**: värdet **Sant** eller **falskt**.
-- **Inget TLS** (procent)
+- **Kopplingsriktning och namn**
+- **Kopplingstyp**
+- **Tvingad TLS?**: Värdet **Sant** eller **Falskt.**
+- **Ingen TLS** (procent)
 - **TLS 1,0** (procent)
 - **TLS 1,1** (procent)
 - **TLS 1,2** (procent)
-- **Volym**: antalet meddelanden.
+- **Volym:** Antalet meddelanden.
 
-Om du klickar på **filter** i en detaljerad tabellvy kan du ange ett datum intervall med **start datum** och **slutdatum**.
+Om du klickar **på** Filter i en detaljtabellvy kan du ange ett datumintervall **med Startdatum** **och Slutdatum.**
 
-Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
+Klicka på Visa rapport om du vill gå tillbaka **till rapportvyn.**
 
-## <a name="exchange-transport-rule-report"></a>Rapport om Exchange-transportprovidern
+## <a name="exchange-transport-rule-report"></a>Regelrapport för Exchange-transport
 
-I **rapporten Exchange Transport Rule** visas resultatet av regler för e-postflöden (kallas även transport regler) i inkommande och utgående meddelanden i organisationen.
+I **regelrapporten för Exchange-transport** visas effekten av e-postflödesregler (kallas även transportregler) på inkommande och utgående meddelanden i organisationen.
 
-Om du vill visa rapporten öppnar du [säkerhets & Compliance Center](https://protection.office.com), går till  \> **instrument paneler** för rapporter och väljer **Exchange Transport Rule**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=ETRRuleReport> .
+Om du vill visa rapporten öppnar du [Säkerhets- & Efterlevnadscenter,](https://protection.office.com)går **till** instrumentpanelen \> **Rapporter** och väljer **Exchange-transportregel.** Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=ETRRuleReport> .
 
-![Widget för Exchange-transportläge i instrument panelen rapporter](../../media/transport-rule-report-widget.png)
+![Widget för Exchange-transportregel på instrumentpanelen Rapporter](../../media/transport-rule-report-widget.png)
 
-### <a name="report-view-for-the-exchange-transport-rule-report"></a>Rapportvy för rapporten om Exchange-transportprovidern
+### <a name="report-view-for-the-exchange-transport-rule-report"></a>Rapportvy för Exchange-transportregelrapporten
 
 Följande diagram är tillgängliga i rapportvyn:
 
-- **Visa data genom att: Exchange-regler** \> **Bryt ned efter: riktning**: det här diagrammet visar antalet **inkommande** och **utgående** meddelanden som påverkades av transport regler.
+- **Visa data efter: Exchange-transportregler** \> **Radbryt för: Riktning:** Det här diagrammet visar antalet **ingående** och **utgående** meddelanden som påverkades av transportreglerna.
 
-- **Visa data genom att: Exchange-regler** \> **Bryt ned med: allvarlighets** grad: det här diagrammet visar antalet **högsta allvarlighets** **grad och mellanliggande och** **lågprioriterade** meddelanden. Du anger allvarlighets nivån som en åtgärd i regeln (**Granska den här regeln med allvarlighets grad** eller _SetAuditSeverity_). Mer information finns i [åtgärder för e-postflödes regler i Exchange Online](https://docs.microsoft.com//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
+- **Visa data efter: Exchange-transportregler** \> **Break down by: Severity**: This chart shows the number of **High severity** and **Medium severity**, and **Low severity** messages. Du anger allvarlighetsnivån som en åtgärd i regeln (Granska den här regeln med **allvarlighetsnivå** eller _AngeAuditSeverity_). Mer information finns i Åtgärder för [e-postflödesregel i Exchange Online.](https://docs.microsoft.com//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-- **Visa data med: transport regler** \> för DLP Exchange **Bryt ned efter: riktning**: det här diagrammet visar antalet **inkommande** och **utgående** meddelanden som påverkades av transport reglerna för data förlust skydd (DLP). Du kan förfina diagrammet ytterligare genom att välja något av följande alternativ:
+- **Visa data efter: DLP Exchange-transportregler** \> **Åtser sig: Riktning:** I det här  diagrammet visas antalet **ingående** och utgående meddelanden som påverkades av DLP-transportregler (Data Loss Prevention). Du kan förfina diagrammet ytterligare genom att välja bland följande alternativ:
 
-  - **Visa data för: alla DLP transport regler**
-  - **Visa data för: äventyrade användare**
-  - **Visa data för: den billiga Patriot Act har identifierats**
+  - **Visa data för: Alla DLP-transportregler**
+  - **Visa data för: Komprometterade användare**
+  - **Visa data för: Låg mängd innehåll upptäckt av U.S. Act**
 
-- **Visa data med: transport regler** \> för DLP Exchange **Bryt ned efter: riktning**: den här vyn visar antalet **högsta allvarlighets** **grad och mellanliggande och** **låg allvarlighets grad** meddelanden som påverkades av DLP transport regler. Du kan förfina diagrammet ytterligare genom att välja något av följande alternativ:
+- **Visa data efter: DLP Exchange-transportregler** \> **Break down by: Direction:** This view shows the number of **High severity** and **Medium severity**, and **Low severity** messages that were affected by DLP transport rules. Du kan förfina diagrammet ytterligare genom att välja bland följande alternativ:
 
-  - **Visa data för: alla DLP transport regler**
-  - **Visa data för: äventyrade användare**
-  - **Visa data för: den billiga Patriot Act har identifierats**
+  - **Visa data för: Alla DLP-transportregler**
+  - **Visa data för: Komprometterade användare**
+  - **Visa data för: Låg mängd innehåll upptäckt av U.S. Act**
 
-Om du klickar på **filter** i en rapportvy kan du ändra resultatet med följande filter::
+Om du klickar **på** Filter i en rapportvy kan du ändra resultatet med följande filter:
 
-- **Start datum** och **slutdatum**
-- Riktnings värden
-- Allvarlighets värden
+- **Startdatum** och **slutdatum**
+- Riktningsvärden
+- Allvarlighetsvärden
 
-![Rapportvy i rapporten om Exchange-transportprovidern](../../media/transport-rule-report-report-view.png)
+![Rapportvy i exchange-transportregelrapporten](../../media/transport-rule-report-report-view.png)
 
-### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Vyn detaljerad tabell för rapporten Exchange-överföring
+### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Detaljtabellvy för rapporten Exchange-transportregel
 
-Om du klickar på **Visa informations tabell** beror informationen som visas på diagrammet du tittade på:
+Om du **klickar på Tabellen** Visa information beror den information som visas på det diagram som du visade:
 
-- **Visa data genom: Exchange-transportläge**:
+- **Visa data efter: Exchange-transportregler:**
 
   - **Datum**
-  - **Transport regel**
+  - **Transportregel**
   - **Ämne**
   - **Avsändarens adress**
-  - **Mottagarens adress**
-  - **Allvarlighets grad**
+  - **Mottagaradress**
+  - **Allvarlighetsgrad**
   - **Riktning**
 
-- **Visa data med: transport regler för DLP Exchange**:
+- **Visa data efter: DLP Exchange-transportregler:**
 
   - **Datum**
   - **DLP-princip**
-  - **Transport regel**
+  - **Transportregel**
   - **Ämne**
   - **Avsändarens adress**
-  - **Mottagarens adress**
-  - **Allvarlighets grad**
+  - **Mottagaradress**
+  - **Allvarlighetsgrad**
   - **Riktning**
 
-Om du klickar på **filter** i en detaljerad tabellvy kan du ändra resultatet med följande filter:
+Om du klickar **på** Filter i en detaljtabellvy kan du ändra resultatet med följande filter:
 
-- **Start datum** och **slutdatum**
-- Riktnings värden
-- Allvarlighets värden
+- **Startdatum** och **slutdatum**
+- Riktningsvärden
+- Allvarlighetsvärden
 
-Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
+Klicka på Visa rapport om du vill gå tillbaka **till rapportvyn.**
 
-## <a name="forwarding-report"></a>Vidarebefordra rapport
+## <a name="forwarding-report"></a>Vidarebefordransrapport
 
-I **vidarekoppling** visas organisationens automatiskt vidarebefordrade meddelanden till externa domäner från Exchange Online-postlådor. Vidarebefordrade meddelanden kan utgöra en säkerhets-eller efterlevnad och kan tyda på ett komprometterat konto.
+I **vidarebefordransrapporten** visas organisationens automatiskt vidarebefordrade meddelanden till externa domäner från Exchange Online-postlådor. Vidarebefordrade meddelanden kan utgöra en säkerhets- eller efterlevnadsrisk och kan ange ett komprometterat konto.
 
-Om du vill visa rapporten öppnar du [säkerhets & Compliance Center](https://protection.office.com), går till  \> **instrument paneler** för rapporter och väljer **vidarebefordra rapport**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=MailFlowForwarding> .
+Om du vill visa rapporten öppnar du [Säkerhets- & Efterlevnadscenter,](https://protection.office.com)går till **instrumentpanelen** \> **Rapporter** och väljer **Vidarebefordransrapport.** Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=MailFlowForwarding> .
 
-![Widget för vidarebefordrade rapporter i instrument panelen rapporter](../../media/forwarding-report-widget.png)
+![Widget för vidarebefordransrapport på instrumentpanelen Rapporter](../../media/forwarding-report-widget.png)
 
-### <a name="report-view-for-the-forwarding-report"></a>Rapportvy för rapport för vidarebefordran
+### <a name="report-view-for-the-forwarding-report"></a>Rapportvy för vidarebefordransrapporten
 
 Följande diagram är tillgängliga i rapportvyn:
 
-- **Visa data för: metod för vidarekoppling**: följande metoder visas:
+- **Visa data för: Vidarebefordransmetoder:** Följande metoder visas:
 
-  - **Transport regel**: kallas även för [regler för e-postflöde](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
-  - **Post lådans regel**: kallas även för [regler för Inkorgen](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59).
+  - **Transportregel:** Kallas även [e-postflödesregler.](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
+  - **Postlåderegel:** Kallas även [inkorgsregler.](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59)
 
-  ![Vyn för vidarebefordran av en rapport](../../media/forwarding-report-forwarding-methods.png)
+  ![Vyn Vidarebefordransmetoder i rapporten om vidarebefordran](../../media/forwarding-report-forwarding-methods.png)
 
-- **Visa data för: vidarebefordrande domäner**: den här vyn visar de mottagare som är destinationer för vidarebefordran.
+- **Visa data för: Domäner för vidarebefordran:** I den här vyn visas de mottagardomäner som är destinationer för vidarebefordran.
 
-  ![Vyn vidarebefordra domäner i rapport för vidarebefordran](../../media/forwarding-report-forwarding-domains.png)
+  ![Vyn Vidarebefordra domäner i rapporten Om vidarebefordran](../../media/forwarding-report-forwarding-domains.png)
 
-- **Visa data för: vidarebefordrare**: följande vidarebefordrare visas:
+- **Visa data för: Vidarebefordrare:** Följande vidarebefordrare visas:
 
-  - **Transport regel**
-  - Post lådan som innehåller inkorgen för vidarebefordran.
+  - **Transportregel**
+  - Postlådan som innehåller vidare vidarebefordrans inkorgsregeln.
 
-  ![Vyn vidarebefordrare i rapporten vidarebefordran](../../media/forwarding-report-forwarders.png)
+  ![Vyn Vidarebefordrare i rapporten Vidarebefordran](../../media/forwarding-report-forwarders.png)
 
-Om du klickar på **filter** i en rapportvy kan du ange ett datum intervall med **start datum** och **slutdatum**.
+Om du klickar **på** Filter i en rapportvy kan du ange ett datumintervall **med startdatum** **och slutdatum.**
 
-### <a name="details-table-view-for-the-forwarding-report"></a>Vyn detaljerad tabell för vidarebefordran
+### <a name="details-table-view-for-the-forwarding-report"></a>Tabellvyn Information för vidarebefordransrapporten
 
-Om du klickar på **Visa informations tabell** i en rapportvy visas följande information:
+Om du **klickar på Tabellen Visa** information i en rapportvy visas följande information:
 
-- **Vidarebefordrare**: värde **transport regeln** eller post lådan som innehåller regeln för vidarebefordran av Inkorgen.
-- **Typ av vidarekoppling**: regeln eller **transport regeln** för värde **post lådan** .
+- **Vidarebefordrare:** Värdet **Transport-regeln eller** postlådan som innehåller vidare vidarebefordrans inkorgsregeln.
+- **Vidarebefordranstyp:** **Värdepostlåderegel** eller **transportregel.**
 - **Mottagarens namn**
-- **Mottagar domän**
-- **Information**: det här är värdet på ett GUID-värde för regeln för e-postflöde, eller RuleIdentity-värdet i regeln för Inkorgen.
-- **Öka**
-- **Första framåtriktade datum**
+- **Mottagardomän**
+- **Information:** Det här är GUID-värdet för e-postflödesregeln eller RuleIdentity-värdet för inkorgsregeln.
+- **Antal**
+- **Första vidarebefordransdatum**
 
-Om du klickar på **filter** i en detaljerad tabellvy kan du ange ett datum intervall med **start datum** och **slutdatum**.
+Om du klickar **på** Filter i en detaljtabellvy kan du ange ett datumintervall **med Startdatum** **och Slutdatum.**
 
-Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
+Om du vill gå tillbaka till rapportvyn klickar du **på Visa rapport.**
 
-## <a name="mailflow-status-report"></a>Flödes status rapport
+## <a name="mailflow-status-report"></a>Statusrapport för e-postflöde
 
-**Status rapporten** för [skicka och ta emot liknar e-](#sent-and-received-email-report)postmeddelandet, med ytterligare information om e-post som tillåts eller blockeras. Det här är den enda rapporten som innehåller information om skydd och visar hur många e-postmeddelanden som blockeras innan de tillåts i tjänsten för utvärdering genom Exchange Online Protection (EOP). Det är viktigt att förstå att om ett meddelande skickas till fem mottagare räknas det som fem olika meddelanden och inte ett meddelande.
-Om du vill visa rapporten öppnar du [säkerhets & Compliance Center](https://protection.office.com), går till **rapport** \> **instrument panelen** och väljer **flödes status rapport**. Om du vill gå direkt till **rapporten status för e-postflöde** öppnar du <https://protection.office.com/mailflowStatusReport> .
+Statusrapporten **e-postflöde** liknar [](#sent-and-received-email-report)rapporten Skickad och mottagen e-post, med ytterligare information om tillåtna eller blockerade e-postmeddelanden i edge. Det här är den enda rapporten som innehåller information om gränsskydd och visar hur mycket e-post som blockeras innan de tillåts i tjänsten för utvärdering av Exchange Online Protection (EOP). Det är viktigt att förstå att om ett meddelande skickas till fem mottagare räknas det som fem olika meddelanden och inte ett meddelande.
+Om du vill visa rapporten öppnar du [Säkerhets- &](https://protection.office.com)Efterlevnadscenter, går till **instrumentpanelen** \> **Rapporter** och väljer **Statusrapport för e-postflöde.** Gå direkt till statusrapporten **för e-postflödet** genom att <https://protection.office.com/mailflowStatusReport> öppna.
 
-![Widget för status rapport för flödes schema i instrument panelen rapporter](../../media/mail-flow-status-report-widget.png)
+![Widget för statusrapport i e-postflöde på instrumentpanelen Rapporter](../../media/mail-flow-status-report-widget.png)
 
-### <a name="type-view-for-the-mailflow-status-report"></a>Skriv vy för status rapporten flödes schema
+### <a name="type-view-for-the-mailflow-status-report"></a>Typvy för statusrapporten För e-postflöde
 
-När du öppnar rapporten är fliken **typ** markerad som standard. Den här vyn innehåller som standard ett diagram och en data tabell som är konfigurerad med följande filter:
+När du öppnar rapporten är **fliken** Typ markerad som standard. Som standard innehåller den här vyn ett diagram och en datatabell som är konfigurerad med följande filter:
 
-- **Datum**: de senaste sju dagarna.
-- **Riktning**:
+- **Datum:** De senaste sju dagarna.
+- **Riktning:**
 
   - **Inkommande**
-  - **Gående**
-  - **Inom organisationen**: det här antalet är för meddelanden inom en klient organisation, d.v.s. avsändarens abc@domain.com skickar till mottagaren xyz@domain.com (räknas separat från **inkommande** och **utgående**)
+  - **Utgående**
+  - **Årsantal:** antalet är för meddelanden inom en klientorganisation, dvs. avsändaren abc@domain.com till mottagarens xyz@domain.com (räknas separat från **Inkommande** och **Utgående)**
 
-- **Skriv**:
+- **Typ:**
 
   - **Bra e-post**
-  - **Program**
+  - **Skadlig programvara**
   - **Skräppost**
-  - **Edge Protection**
-  - **Regel meddelanden**
+  - **Edge-skydd**
+  - **Regelmeddelanden**
   - **Nätfiske-e-post**
 
-Diagrammet är ordnat efter **textvärdena** .
+Diagrammet är ordnat efter **typvärdena.**
 
-Du kan ändra dessa filter genom att klicka på **filter** eller genom att klicka på ett värde i diagram förklaringen.
+Du kan ändra dessa filter genom att klicka **på Filter** eller genom att klicka på ett värde i diagramförklaringen.
 
-Data tabellen innehåller följande information:
+Datatabellen innehåller följande information:
 
 - **Riktning**
 - **Typ**
 - **24 timmar**
 - **3 dagar**
-- **sju dagar**
+- **7 dagar**
 - **15 dagar**
 - **30 dagar**
 
-Om du klickar på **Välj en kategori för mer information** kan du välja bland följande värden:
+Om du klickar **på Välj en kategori för mer** information kan du välja bland följande värden:
 
-- **Nät fiske meddelande**: den här markeringen tar dig till [status rapporten för hotets skydd](view-email-security-reports.md#threat-protection-status-report).
-- **Skadlig program vara i e-post**: den här markeringen tar dig till [status rapporten för hotets skydd](view-email-security-reports.md#threat-protection-status-report).
-- **Skräp identifiering**: den här markeringen tar dig till [rapporten skräp identifiering](view-email-security-reports.md#spam-detections-report).
-- **Edge blockera skräp post**: den här markeringen tar dig till [rapporten skräp identifiering](view-email-security-reports.md#spam-detections-report).
+- **Nätfiskemeddelande:** Det här valet tar dig till [statusrapporten om skydd mot hot.](view-email-security-reports.md#threat-protection-status-report)
+- **Skadlig programvara i** e-postmeddelanden: Det här valet tar dig [till statusrapporten om skydd mot hot.](view-email-security-reports.md#threat-protection-status-report)
+- **Identifiering av skräppost:** Det här valet tar dig till [rapporten Identifiering av skräppost.](view-email-security-reports.md#spam-detections-report)
+- **Blockerad skräppost i Edge:** Det här valet tar dig till rapporten [Identifiering av skräppost.](view-email-security-reports.md#spam-detections-report)
 
-**Exportera**:
+**Exportera:**
 
-För detaljvyn kan du bara exportera data för en dag. Om du till exempel vill exportera data i 7 dagar måste du göra 7 olika export åtgärder.
+I detaljvyn kan du bara exportera data för en dag. Om du vill exportera data i 7 dagar måste du utföra 7 olika exportåtgärder.
 
-Alla exporterade CSV-filer är begränsade till 150 000 rader. Om data för den dagen innehåller fler än 150 000 rader skapas flera CSV-filer.
+Varje exporterad CSV-fil är begränsad till 150 000 rader. Om dagens data innehåller fler än 150 000 rader skapas flera CSV-filer.
 
-![Skriv vy i rapporten flödes status ](../../media/mail-flow-status-report-type-view.png)
+![Typvy i statusrapporten för E-postflöde ](../../media/mail-flow-status-report-type-view.png)
 
-### <a name="direction-view-for-the-mailflow-status-report"></a>Visnings läge för vyn flödes schema
+### <a name="direction-view-for-the-mailflow-status-report"></a>Vyn Riktning för statusrapporten E-postflöde
 
-Om du klickar på fliken **riktning** används samma standard filter från **typ** vyn.
+Om du klickar **på** fliken Riktning används samma standardfilter **från** vyn Typ.
 
-Diagrammet är ordnat efter **riktnings** värden.
+Diagrammet är ordnat efter **riktningsvärden.**
 
-Du kan ändra dessa filter genom att klicka på **filter** eller genom att klicka på ett värde i diagram förklaringen. Samma filter i vyn **typ** används.
+Du kan ändra dessa filter genom att klicka **på Filter** eller genom att klicka på ett värde i diagramförklaringen. Samma filter används **i** vyn Typ.
 
-Data tabellen innehåller samma information från **typen** vy.
+Datatabellen innehåller samma information från **vyn** Typ.
 
-**Välj en kategori om** du vill se fler val och beteendet är samma som i **textfältet.**
+Välj **en kategori om du vill ha mer** information om tillgängliga val och beteenden är samma som **vyn** Typ.
 
-**Exportera**:
+**Exportera:**
 
-För detaljvyn kan du bara exportera data för en dag. Om du till exempel vill exportera data i 7 dagar måste du göra 7 olika export åtgärder.
+I detaljvyn kan du bara exportera data för en dag. Om du vill exportera data i 7 dagar måste du utföra 7 olika exportåtgärder.
 
-Alla exporterade CSV-filer är begränsade till 150 000 rader. Om data för den dagen innehåller fler än 150 000 rader skapas flera CSV-filer.
+Varje exporterad CSV-fil är begränsad till 150 000 rader. Om dagens data innehåller fler än 150 000 rader skapas flera CSV-filer.
 
-![Vyn riktning i rapporten flödes status ](../../media/mail-flow-status-report-direction-view.png)
+![Vyn Riktning i statusrapporten för e-postflöde ](../../media/mail-flow-status-report-direction-view.png)
 
-### <a name="funnel-view-for-the-mailflow-status-report"></a>Vyn tratt för status rapporten flöde
+### <a name="funnel-view-for-the-mailflow-status-report"></a>Trattvy för statusrapporten för e-postflöde
 
-I vyn **tratt** visas hur Microsofts funktioner för skydd mot e-posthotet filtrerar inkommande och utgående e-post i organisationen. Den innehåller detaljerad information om det totala antalet e-postmeddelanden och hur de konfigurerade hot skydds funktionerna, inklusive Edge Protection, skadlig program vara, anti-nätfiske, anti-spam och skydd mot förfalskning påverkar det här antalet.
+I **vyn Tratt** kan du se hur Microsofts skyddsfunktioner för e-posthot filtrerar inkommande och utgående e-post i din organisation. Här finns information om totalt antal e-postmeddelanden och hur de konfigurerade skyddsfunktionerna för hot, inklusive gränsskydd, skadlig programvara, skydd mot nätfiske, skräppostskydd och förfalskning påverkar antalet.
 
-Om du klickar på fliken **tratt** visas den här vyn som standard ett diagram och en data tabell som är konfigurerad med följande filter:
+Om du klickar **på fliken** Tratt innehåller den här vyn som standard ett diagram och en datatabell som är konfigurerad med följande filter:
 
-- **Datum**: de senaste sju dagarna.
+- **Datum:** De senaste sju dagarna.
 
-- **Riktning**:
+- **Riktning:**
 
   - **Inkommande**
-  - **Gående**
-  - **Inom organisationen**: det här antalet är för meddelanden som skickas inom en klient organisation. avsändare skickar abc@domain.com till mottagaren xyz@domain.com (räknas åtskilt från inkommande och utgående).
+  - **Utgående**
+  - **Årsantal:** Antalet är för meddelanden som skickas inom en klientorganisation. Det vill säga att avsändaren abc@domain.com till mottagarens xyz@domain.com (räknas separat från inkommande och utgående).
 
-I vyn mängd och data tabell kan du se 90 dagar.
+Mängdvyn och datatabellvyn tillåter 90 dagars filtrering.
 
-Om du klickar på **filter** kan du filtrera både diagrammet och data tabellen.
+Om du klickar **på Filter** kan du filtrera både diagrammet och datatabellen.
 
-Det här diagrammet visar antalet e-postmeddelanden ordnade efter:
+I det här diagrammet visas antalet e-postmeddelanden ordnade efter:
 
-- **Totalt e-postmeddelande**
-- **E-post efter Edge-skydd**
-- **E-post efter skadlig program vara, fil rykte, fil typs block**
-- **E-post efter anti-Phish, URL-rykte, varumärkes-och programförfalskning**
-- **E-post efter anti-spam, Mass utskick**
-- **E-post efter användare och domän-personifiering**<sup>1</sup>
-- **E-post efter fil-och URL-sprängning**<sup>1</sup>
-- **E-post identifieras som oskadlig efter efter leverans skydd (URL-adress klicka på tids skydd)**
+- **Totalt antal e-postmeddelanden**
+- **E-post efter gränsskydd**
+- **E-post efter skadlig programvara, rykte, filtypsblock**
+- **E-post efter anfing, URL-rykte, varumärkespersonifiering, förfalskning**
+- **E-post efter skräppostskydd, massfiltrering**
+- **E-post efter användare och domänpersonifiering**<sup>1</sup>
+- **E-post efter fil och URL-detonation**<sup>1</sup>
+- **E-post identifieras som hotad efter leveransskydd (URL-klicktidsskydd)**
 
-<sup>1</sup> Defender för Office 365
+<sup>1</sup> Endast Defender för Office 365
 
-Om du vill visa e-postmeddelandet filtrerat efter EOP eller Defender för Office 365 klickar du på värdet i diagram förklaringen.
+Om du vill visa e-post som filtreras separat med EOP eller Defender för Office 365 klickar du på värdet i diagramförklaringen.
 
-Data tabellen innehåller följande information, som visas i fallande ordning:
+Datatabellen innehåller följande information, som visas i fallande datumordning:
 
 - **Datum**
-- **Totalt e-postmeddelande**
-- **Edge Protection**
-- **Skadlig program vara, fil rykte, fil typs block**:
-  - **Fil rykte**: meddelanden som filtrerats på grund av identifiering av en bifogad fil av andra Microsoft-kunder.
-  - **Fil typs block**: meddelanden som filtrerats på grund av den typ av skadlig fil som identifieras i meddelandet.
-- **Anti-Phish, URL-rykte, varumärkes-och programförfalskning**:
-  - **URL-rykte**: meddelanden som filtrerats på grund av URL-adressen till andra Microsoft-kunder.
-  - **Varumärkes-personifiering**: meddelanden som filtrerats på grund av att meddelandet kommer från välbekant varumärkes som imiterar avsändare.
-  - **Stöldskydd**: meddelanden som filtrerats på grund av meddelandet försöker att skicka falska en domän som mottagaren tillhör, eller en domän som meddelande avsändaren inte äger.
-- **Skräp post filtrering**:
-  - **Mass utskick av e-post**: meddelanden som filtrerats på grund av ett försök att skicka mass utskick till mottagarna.
-- **Användarens och domänens personifiering (Defender för Office 365)**:
-  - **Användarens personifiering**: meddelanden som filtrerats på grund av ett försök att personifiera en användare (meddelande avsändare) som har definierats i inställningarna för personifieringsnivå för en skydds policy.
-  - **Domän** användning: meddelanden som filtrerats på grund av ett försök att personifiera en domän som är definierad i inställningarna för personifieringsnivå för en skydds policy.
-- **Fil-och URL-sprängare (Defender för Office 365)**:
-  - **Fil sprängare**: meddelanden som filtrerats med en princip för bifogade filer.
-  - **URL-sprängning**: meddelande filtrerat med en princip för säkra länkar.
-- **Efter leverans skydd och ZAP (ATP) eller ZAP (EOP)**: ZAP indikerar nollställning för automatisk rensning.
+- **Totalt antal e-postmeddelanden**
+- **Edge-skydd**
+- **Skydd mot skadlig programvara, rykte, filtypsblock:**
+  - **Rykte:** Meddelanden filtrerade på grund av identifiering av en bifogad fil av andra Microsoft-kunder.
+  - **Filtypsblock:** Meddelanden filtrerade på grund av den typ av skadlig fil som identifieras i meddelandet.
+- **Skydd mot phish, URL-rykte, varumärkespersonifiering, skydd mot förfalskning:**
+  - **Rykte:** Meddelanden filtrerade på grund av identifiering av WEBBADRESSen av andra Microsoft-kunder.
+  - **Profilering:** Meddelanden filtrerade på grund av meddelandet från välkända avsändare som utger sig för att vara avsändare.
+  - Skydd mot **förfalskning:** Meddelanden filtrerade på grund av meddelandet som försöker kapa en domän som mottagaren tillhör eller en domän som meddelandets avsändare inte äger.
+- **Skydd mot skräppost och massfiltrering:**
+  - **Massfiltrering:** Filtrerade meddelanden på grund av ett försök att leverera massutskick till mottagarna.
+- **Personifiering av användare och domän (Defender för Office 365)**:
+  - **Användarpersonifiering:** Filtrerade meddelanden på grund av ett försök att personifiera en användare (meddelandeavsändare) som definierats i inställningarna för personifieringsskydd i en princip mot nätfiske.
+  - **Domänpersonifiering:** Meddelanden filtrerade på grund av ett försök att personifiera en domän som definierats i inställningarna för personifieringsskydd i en princip mot nätfiske.
+- **Detonation för fil och URL (Defender för Office 365)**:
+  - **Detonation för filer:** Meddelanden filtrerade med en princip för säkra bifogade filer.
+  - **URL-detonation:** Meddelande filtrerat med en princip för säkra länkar.
+- **Post-delivery protection and ZAP (ATP), or ZAP (EOP)**: ZAP indicates zero hour auto-purge.
 
-Om du markerar en rad i data tabellen visas en uppdelning av antalet e-postmeddelanden.
+Om du markerar en rad i datatabellen visas ytterligare en uppdelning av antalet e-postmeddelanden i den utfällna listan.
 
-**Exportera**:
+**Exportera:**
 
-När du klickar på **Exportera** under **alternativ** kan du välja ett av följande värden:
+När du har **klickat** **på Exportera** under Alternativ kan du välja något av följande värden:
 
-- **Sammanfattning (med data för de senaste 90 dagarna)**
-- **Uppgifter (med data för de senaste 30 dagarna)**
+- **Sammanfattning (med data för de senaste 90 dagarna som mest)**
+- **Information (med data för de senaste 30 dagarna som mest)**
 
-Under **datum** väljer du ett område och klickar sedan på **Använd**. Data för de aktuella filtren exporteras till en. csv-fil.
+Välj **ett** område under Datum och klicka sedan på **Använd.** Data för de aktuella filtren exporteras till en CSV-fil.
 
-Alla exporterade CSV-filer är begränsade till 150 000 rader. Om data innehåller fler än 150 000 rader skapas flera CSV-filer.
+Varje exporterad CSV-fil är begränsad till 150 000 rader. Om informationen innehåller fler än 150 000 rader skapas flera CSV-filer.
 
- ![Vyn tratt i rapporten flödes status ](../../media/mail-flow-status-report-funnel-view.png)
+ ![Trattvyn i statusrapporten för e-postflöde ](../../media/mail-flow-status-report-funnel-view.png)
 
-### <a name="tech-view-for-the-mailflow-status-report"></a>Teknisk vy för rapporten flödes schema
+### <a name="tech-view-for-the-mailflow-status-report"></a>Tech view for the Mailflow status report
 
-**Tech-vyn** liknar vyn **tratt** och ger mer detaljerad information om de konfigurerade hot skydds funktionerna. Från diagrammet kan du se hur meddelanden kategoriseras i olika stadier av hotets skydd.
+**Tech-vyn** liknar vyn **Tratt,** med mer detaljerad information om funktionerna för konfigurerade skydd mot hot. I diagrammet kan du se hur meddelanden kategoriseras i olika faser av skydd mot hot.
 
-Om du klickar på fliken **teknisk vy** innehåller den här vyn som standard ett diagram och en data tabell som är konfigurerad med följande filter:
+Om du klickar **på fliken Teknisk** vy innehåller den här vyn som standard ett diagram och en datatabell som är konfigurerad med följande filter:
 
-- **Datum**: de senaste sju dagarna.
+- **Datum:** De senaste sju dagarna.
 
-- **Riktning**:
+- **Riktning:**
 
   - **Inkommande**
-  - **Gående**
-  - **Inom organisationen**: det här antalet är för meddelanden inom en klient organisation, d.v.s. avsändarens abc@domain.com skickar till mottagaren xyz@domain.com (räknas separat från inkommande och utgående)
+  - **Utgående**
+  - **Årsantal:** antalet är för meddelanden inom en klientorganisation, dvs. avsändaren abc@domain.com till mottagarens xyz@domain.com (räknas separat från inkommande och utgående)
 
-I vyn mängd och data tabell kan du se 90 dagar.
+Mängdvyn och datatabellvyn tillåter 90 dagars filtrering.
 
-Om du klickar på **filter** kan du filtrera både diagrammet och data tabellen.
+Om du klickar **på Filter** kan du filtrera både diagrammet och datatabellen.
 
 I det här diagrammet visas meddelanden ordnade i följande kategorier:
 
-- **Totalt e-postmeddelande**
--  **Filtrerat**
-- **Ej skadlig kod**, identifiering av skadliga **bilagor** <sup>\*</sup> , **identifiering av skadlig program vara** samt **regel meddelanden**
-- **Inte Phish**, **DMARC-fel**, **identifiering av obehörig person**, **förfalsknings avkänning** och **Phish-identifiering**
-- **Ingen identifiering med URL-sprängning** och **URL-sprängning**<sup>\*</sup>
-- **Inte skräp post** och  **skräp post**
-- **Ej skadlig e-post**, **identifiering av säkra länkar** <sup>\*</sup> och **ZAP**
+- **Totalt antal e-postmeddelanden**
+- **Tillåtna Edge** **och Filtrerad Edge**
+- **Inte skadlig programvara,** **identifiering av säkra bifogade** <sup>\*</sup> **filer, identifiering av skadlig programvara** och **regelmeddelanden**
+- **Inte phish,** **DMARC-fel,** identifiering **av personifiering,** identifiering **av förfalskning** och **phish**
+- **Ingen identifiering med URL-detonation och** **URL-detonation**<sup>\*</sup>
+- **Inte** skräppost 
+- **Icke-skadlig e-post,** **identifiering av säkra** länkar och <sup>\*</sup> **ZAP**
 
 <sup>\*</sup> Defender för Office 365
 
-När du hovrar över en kategori i diagrammet kan du se antalet meddelanden i den kategorin.
+När du hovrar över en kategori i diagrammet visas antalet meddelanden i den kategorin.
 
-Data tabellen innehåller följande information, som visas i fallande ordning:
+Datatabellen innehåller följande information, som visas i fallande datumordning:
 
 - **Datum**
-- **Totalt e-postmeddelande**
-- **Filtrerad**
-- **Skydd mot skadlig program vara, säkra bilagor, regel filtrerat**:
-  - **Regel filtrerad**: meddelanden som filtrerats på grund av regler för e-postflöde (kallas även transport regler).
-- **DMARC, Phish, filtrerat**:
-  - **DMARC**: meddelanden som filtrerats på grund av meddelandet Det gick inte att kontrol lera DMARC.
-- **Identifiering av URL-sprängning**
-- **Skräp post filter**
-- **ZAP borttagen**
-- **Identifiering via säkra länkar**
+- **Totalt antal e-postmeddelanden**
+- **Filtrerad Edge**
+- **Motor mot skadlig programvara, säkra bifogade filer, regel filtrerad:**
+  - **Regel filtrerad:** Meddelanden filtrerade på grund av e-postflödesregler (kallas även transportregler).
+- **DMARC, personifiering, förfalskning, nätfiske filtrerat:**
+  - **DMARC:** Meddelanden filtrerade på grund av att meddelandet inte klarar sin DMARC-autentiseringskontroll.
+- **Identifiering av URL-detonation**
+- **Skräppostskydd filtreras**
+- **ZAP har tagits bort**
+- **Identifiering av säkra länkar**
 
-Om du markerar en rad i data tabellen visas en uppdelning av antalet e-postmeddelanden.
+Om du markerar en rad i datatabellen visas ytterligare en uppdelning av antalet e-postmeddelanden i den utfällna listan.
 
-**Exportera**:
+**Exportera:**
 
-Om du klickar på **Exportera** kan du välja ett av följande värden under **alternativ** :
+När du **klickar** på Exportera **kan** du välja något av följande värden under Alternativ:
 
-- **Sammanfattning (med data för de senaste 90 dagarna)**
-- **Uppgifter (med data för de senaste 30 dagarna)**
+- **Sammanfattning (med data för de senaste 90 dagarna som mest)**
+- **Information (med data för de senaste 30 dagarna som mest)**
 
-Under **datum** väljer du ett område och klickar sedan på **Använd**. Data för de aktuella filtren exporteras till en. csv-fil.
+Välj **ett** område under Datum och klicka sedan på **Använd.** Data för de aktuella filtren exporteras till en CSV-fil.
 
-Alla exporterade CSV-filer är begränsade till 150 000 rader. Om data innehåller fler än 150 000 rader skapas flera CSV-filer.
+Varje exporterad CSV-fil är begränsad till 150 000 rader. Om informationen innehåller fler än 150 000 rader skapas flera CSV-filer.
 
- ![Teknisk vy i rapporten flödes status ](../../media/mail-flow-status-report-Tech-view.png)
+ ![Teknisk vy i statusrapporten för E-postflöde ](../../media/mail-flow-status-report-Tech-view.png)
 
-## <a name="sent-and-received-email-report"></a>Skicka och ta emot e-postrapport
+## <a name="sent-and-received-email-report"></a>Rapport om skickad och mottagen e-post
 
-Rapporten **skickat och mottaget e-postmeddelande** är en Smart rapport som visar information om inkommande och utgående e-post, inklusive skräp identifiering, skadlig program vara och e-postmeddelanden som identifieras som "bra". Skillnaden mellan den här rapporten och [flödet flödes status](#mailflow-status-report) är: den här rapporten innehåller inte data om meddelanden som blockeras av Edge Protection. Det är viktigt att förstå att om ett meddelande skickas till fem mottagare räknas det som ett meddelande.
+Rapporten **skickad och mottagen** e-post är en smart rapport som visar information om inkommande och utgående e-post, inklusive identifiering av skräppost, skadlig programvara och e-post som identifieras som "bra". Skillnaden mellan den här rapporten och [statusrapporten](#mailflow-status-report) för E-postflöde är: den här rapporten innehåller inte data om meddelanden som blockeras av Edge Protection. Det är viktigt att förstå att om ett meddelande skickas till fem mottagare räknas det som ett meddelande.
 
-I den aggregerade vyn och detaljvyn för rapporten får du 90 dagar på filtreringen.
+Mängdvyn och detaljvyn för rapporten tillåter 90 dagars filtrering.
 
-Om du vill visa rapporten öppnar du [säkerhets & efterlevnad](https://protection.office.com), går till  \> **instrument paneler** för rapporter och väljer **skickade och mottagna e-postmeddelanden**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=SentAndReceivedMailATP> .
+Om du vill visa rapporten öppnar du [säkerhets- & Efterlevnadscenter,](https://protection.office.com)går till instrumentpanelen Rapporter och väljer  \>  **Skickad och mottagen e-post.** Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=SentAndReceivedMailATP> .
 
-![Widget för skicka och ta emot e-post i instrument panelen rapporter](../../media/sent-and-received-email-report-widget.png)
+![Widget för skickad och mottagen e-post på instrumentpanelen Rapporter](../../media/sent-and-received-email-report-widget.png)
 
-### <a name="report-view-for-the-sent-and-received-email-report"></a>Rapportvy för rapporten för skickad och mottagen e-post
+### <a name="report-view-for-the-sent-and-received-email-report"></a>Rapportvy för rapporten Skickat och mottaget e-postmeddelande
 
 Följande diagram är tillgängliga i rapportvyn:
 
-- **Bryt ned per: typ**: diagrammet visar alla tillgängliga kategorier:
+- **Dela upp efter: Typ:** I diagrammet visas alla tillgängliga kategorier:
 
   - **Totalt**
   - **Bra e-post**
-  - **Skadlig program vara (antivirus program)** (EOP)
-  - **Skräp identifiering**
-  - **Regel meddelanden**
-  - **Avancerad skadlig program vara** (Microsoft Defender för Office 365)
+  - **Skadlig programvara (anti-malware)** (EOP)
+  - **Identifiering av skräppost**
+  - **Regelmeddelanden**
+  - **Avancerad skadlig programvara** (Microsoft Defender för Office 365)
 
-  När du hovrar över en dag (data punkt) i diagrammet kan du se information om den dagen.
+  När du hovrar över en dag (datapunkt) i diagrammet kan du se information om den dagen.
 
-  ![Skriv vy i rapporten för skickad och mottagen e-post](../../media/sent-and-received-email-report-type-view.png)
+  ![Vyn Typ i rapporten Skickat och mottaget e-postmeddelande](../../media/sent-and-received-email-report-type-view.png)
 
-- **Bryt ned efter: riktning**: diagrammet visar **totalt**, **inkommande** och **utgående** data. När du hovrar över en dag (data punkt) i diagrammet kan du se information om den dagen.
+- **Dela upp efter: Riktning:** Diagrammet visar **data för summa,** **inkommande** **och utgående** trafik. När du hovrar över en dag (datapunkt) i diagrammet kan du se information om den dagen.
 
-  ![Vyn riktning i e-postrapporten för skicka och ta emot](../../media/sent-and-received-email-report-direction-view.png)
+  ![Vyn Riktning i rapporten Skickat och mottaget e-postmeddelande](../../media/sent-and-received-email-report-direction-view.png)
 
-- **Öka detalj nivån med** \> **Skadlig program vara (skadlig program vara)**: den här markeringen tar dig till [identifieringar av skadlig program vara i e-postrapporten](view-email-security-reports.md#malware-detections-in-email-report).
+- **Öka detalj detalj för** \> **Skadlig programvara (skadlig kod)**: Med det här valet kommer du till identifieringar av skadlig programvara [i e-postrapporten.](view-email-security-reports.md#malware-detections-in-email-report)
 
-- **Öka detalj nivån med** \> **Skräp identifiering)**: den här markeringen tar dig till [rapporten skräp identifiering](view-email-security-reports.md#spam-detections-report).
+- **Öka detalj detalj för** \> **Identifiering av skräppost)**: Det här valet tar dig till rapporten [Identifiering av skräppost.](view-email-security-reports.md#spam-detections-report)
 
-Om du klickar på **filter** i en rapportvy kan du ändra resultatet med följande filter:
+Om du klickar **på** Filter i en rapportvy kan du ändra resultatet med följande filter:
 
-- **Start datum** och **slutdatum**
-- Riktnings värden
-- Ange värden
+- **Startdatum** och **slutdatum**
+- Riktningsvärden
+- Typvärden
 
-Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
+Klicka på Visa rapport om du vill gå tillbaka **till rapportvyn.**
 
-### <a name="details-table-view-for-the-sent-and-received-email-report"></a>Vyn detaljerad tabell för den skickade och mottagna e-postrapporten
+### <a name="details-table-view-for-the-sent-and-received-email-report"></a>Tabellvyn Information för rapporten skickat och mottaget e-postmeddelande
 
-Om du klickar på **Visa informations tabell** i **Bryt ned efter: riktning** eller **Bryt ned efter: vyn riktning** visas följande information:
+Om du **klickar på tabellen Visa** information i tabellen Dela upp **efter:** Riktning eller Dela upp **efter:** Riktningsvy visas följande information:
 
 - **Datum (UTC)**
 - **Typ**
 - **Riktning**
 - **Antal meddelanden**
 
-Om du klickar på **filter** i en detaljerad tabellvy kan du ändra resultatet med följande filter:
+Om du klickar **på** Filter i en detaljtabellvy kan du ändra resultatet med följande filter:
 
-- **Start datum** och **slutdatum**
-- Riktnings värden
-- Ange värden
+- **Startdatum** och **slutdatum**
+- Riktningsvärden
+- Typvärden
 
-Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
+Klicka på Visa rapport om du vill gå tillbaka **till rapportvyn.**
 
-## <a name="top-senders-and-recipients-report"></a>Rapporter för högsta avsändare och mottagare
+## <a name="top-senders-and-recipients-report"></a>Rapport om de viktigaste avsändarna och mottagarna
 
-Den **översta rapporten avsändare och mottagare** är ett cirkel diagram som visar dina e-postmeddelanden och mottagare.
+Rapporten **De bästa avsändarna och mottagarna** är ett cirkeldiagram som visar dina mest populära e-postavsändare och mottagare.
 
-Om du vill visa rapporten öppnar du [säkerhets & Compliance Center](https://protection.office.com), går till **rapport** \> **instrument panelen** och väljer **de översta avsändaren och mottagarna**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=TopSenderRecipientsATP> .
+Om du vill visa rapporten öppnar [du säkerhets- &](https://protection.office.com)Efterlevnadscenter, går till **instrumentpanelen** Rapporter \>  och väljer De **främsta avsändarna och mottagarna.** Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=TopSenderRecipientsATP> .
 
-![Widgeten vanliga avsändare och mottagare i instrument panelen rapporter](../../media/top-senders-and-recipients-widget.png)
+![Widget för de bästa avsändarna och mottagarna på instrumentpanelen Rapporter](../../media/top-senders-and-recipients-widget.png)
 
-### <a name="report-view-for-the-top-senders-and-recipient-report"></a>Rapportvy för rapporten högsta avsändare och mottagare
+### <a name="report-view-for-the-top-senders-and-recipient-report"></a>Rapportvy för rapporten Mest om avsändare och mottagare
 
 Följande diagram är tillgängliga i rapportvyn:
 
-- **Visa data för \> de flesta e-postutskick**
-- **Visa data för \> högsta antal e-postmottagare**
-- **Visa data för \> mottagare av reklam**
-- **Visa data för \> Högsta antal mottagare av skadlig program vara** (EOP)
-- **Visa data för \> högsta antal mottagare av skadlig program vara (Defender för Office 365)**
+- **Visa data för \> de viktigaste e-postavsändarna**
+- **Visa data för de \> viktigaste e-postmottagarna**
+- **Visa data för \> de viktigaste skräppostmottagarna**
+- **Visa data för \> Populära mottagare av skadlig programvara** (EOP)
+- **Visa data för \> de viktigaste mottagarna av skadlig programvara (Defender för Office 365)**
 
-Sammansättningen för cirkel diagrammet ändras utifrån de här valen.
+Sammansättning av cirkeldiagrammet ändras baserat på dessa val.
 
-När du hovrar över en sektor i cirkel diagrammet kan du se antalet meddelanden som skickats eller tagits emot.
+När du hovrar över en kil i cirkeldiagrammet visas antalet meddelanden som skickats eller tagits emot.
 
-Om du klickar på **filter** i en rapportvy kan du ange ett datum intervall med **start datum** och **slutdatum**.
+Om du klickar **på** Filter i en rapportvy kan du ange ett datumintervall **med startdatum** **och slutdatum.**
 
-![Cirkel diagram i rapportvyn i rapporten överst avsändare och mottagare](../../media/top-senders-and-recipients-report-view.png)
+![Cirkeldiagram i rapportvyn i rapporten De största avsändarna och mottagarna](../../media/top-senders-and-recipients-report-view.png)
 
-### <a name="details-table-view-for-the-top-senders-and-recipient-report"></a>Vyn detaljerad lista för rapporten överst avsändare och mottagare
+### <a name="details-table-view-for-the-top-senders-and-recipient-report"></a>Tabellvyn Information för rapporten om de viktigaste avsändarna och mottagaren
 
-Om du klickar på **Visa informations tabell** beror informationen som visas på diagrammet du tittade på:
+Om du **klickar på Tabellen** Visa information beror den information som visas på det diagram som du visade:
 
-- **Visa data för \> de flesta e-postutskick**
+- **Visa data för \> de viktigaste e-postavsändarna**
 
-  - **Vanligaste e-postutskick**
-  - **Öka**
+  - **Mest populära e-postavsändare**
+  - **Antal**
 
-- **Visa data för \> högsta antal e-postmottagare**
+- **Visa data för de \> viktigaste e-postmottagarna**
 
-  - **Vanligaste e-postmottagare**
-  - **Öka**
+  - **De viktigaste e-postmottagarna**
+  - **Antal**
 
-- **Visa data för \> mottagare av reklam**
+- **Visa data för \> de viktigaste skräppostmottagarna**
 
-  - **Populära skräp mottagare**
-  - **Öka**
+  - **Populära mottagare av skräppost**
+  - **Antal**
 
-- **Visa data för \> Högsta antal mottagare av skadlig program vara** (EOP)
+- **Visa data för \> Populära mottagare av skadlig** programvara (EOP)
 
-  - **Högsta antal mottagare av skadlig program vara**
-  - **Öka**
+  - **De viktigaste mottagarna av skadlig programvara**
+  - **Antal**
 
-- **Visa data för \> högsta antal mottagare av skadlig program vara (Defender för Office 365)**
+- **Visa data för \> de viktigaste mottagarna av skadlig programvara (Defender för Office 365)**
 
-  - **Högsta antal mottagare av skadlig program vara (Defender för Office 365)**
-  - **Öka**
+  - **De viktigaste mottagarna av skadlig programvara (Defender för Office 365)**
+  - **Antal**
 
-Om du klickar på **filter** i en detaljerad tabellvy kan du ange ett datum intervall med **start datum** och **slutdatum**.
+Om du klickar **på** Filter i en detaljtabellvy kan du ange ett datumintervall **med Startdatum** **och Slutdatum.**
 
-Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
+Klicka på Visa rapport om du vill gå tillbaka **till rapportvyn.**
 
-## <a name="what-permissions-are-needed-to-view-these-reports"></a>Vilka behörigheter behövs för att visa rapporterna?
+## <a name="what-permissions-are-needed-to-view-these-reports"></a>Vilka behörigheter krävs för att visa de här rapporterna?
 
-För att kunna visa och använda de rapporter som beskrivs i den här artikeln måste du vara medlem i någon av följande roll grupper i säkerhets & Compliance Center:
+För att kunna visa och använda rapporterna som beskrivs i den här artikeln måste du vara medlem i någon av följande rollgrupper i Säkerhets- och & Efterlevnadscenter:
 
 - **Organisationshantering**
-- **Säkerhets administratör**
-- **Säkerhets läsare**
-- **Global läsare**
+- **Säkerhetsadministratör**
+- **Säkerhetsläsare**
+- **Global Reader**
 
 Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
 > [!NOTE]
-> Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+> Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Smarta rapporter och insikter i säkerhets & efterlevnad](reports-and-insights-in-security-and-compliance.md)
+[Smarta rapporter och insikter i Säkerhets- & Efterlevnadscenter](reports-and-insights-in-security-and-compliance.md)
 
-[Insikter om e-postflöde i säkerhets & Compliance Center](mail-flow-insights-v2.md)
+[Insikter i e-postflöde i Säkerhets- & Efterlevnadscenter](mail-flow-insights-v2.md)
 
-[Visa säkerhets rapporter för e-post i säkerhets & efterlevnad](view-email-security-reports.md)
+[Visa e-postsäkerhetsrapporter i Säkerhets- & Efterlevnadscenter](view-email-security-reports.md)
 
 [Visa rapporter för Microsoft Defender för Office 365](view-reports-for-atp.md)

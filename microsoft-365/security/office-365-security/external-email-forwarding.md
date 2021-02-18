@@ -15,21 +15,21 @@ ms.custom:
 description: .
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e578cadf6687e02c900299a75bdd00a9d6e5b2ee
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 77f666e5eeceee3f5b324e5b9b6fac721c10e410
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166153"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286879"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Kontrollera automatisk vidarebefordran av extern e-post i Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Som administratör kan du behöva begränsa eller styra automatiskt vidarebefordrade meddelanden till externa mottagare (mottagare utanför organisationen). Vidarebefordran av e-post kan vara användbart, men kan också utgöra en säkerhetsrisk på grund av potentiellt avslöjande av information. Attacker kan använda den här informationen för att attackerna mot organisationen eller partnern.
 
@@ -72,8 +72,8 @@ Fjärrdomäninställningar och e-postflödesregler är oberoende av inställning
 
 Med det här funktionsoberoendet kan du (till exempel) tillåta automatisk vidarebefordran i principer för utgående skräppostfilter, men använda fjärrdomäner för att styra externa domäner som användare kan vidarebefordra meddelanden till.
 
-## <a name="the-blocked-email-forwarding-message"></a>Meddelandet om blockerad vidarebefordran av e-post
+## <a name="blocked-email-forwarding-messages"></a>Blockerade vidarebefordran av e-postmeddelanden
 
-När ett meddelande identifieras som automatiskt vidarebefordrat  och organisationens princip blockerar aktiviteten returneras meddelandet till avsändaren i en NDR som innehåller följande information:
+När ett meddelande identifieras som automatiskt vidarebefordrat och principen  för utgående skräppostfilter blockerar aktiviteten returneras meddelandet till avsändaren i en NDR som innehåller följande information: [](configure-the-outbound-spam-policy.md)
 
 `5.7.520 Access denied, Your organization does not allow external forwarding. Please contact your administrator for further assistance. AS(7555)`

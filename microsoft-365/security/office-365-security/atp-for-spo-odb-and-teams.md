@@ -23,20 +23,20 @@ ms.custom:
 description: Läs mer om Microsoft Defender för Office 365 för filer i SharePoint Online, OneDrive för företag och Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 640867cb38dab650bca990fe36c0b7cea7f6a0d8
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: ce73e1fd5c8ecb63bee1db2e9e64aade305b37e9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175733"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287059"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Säkra bilagor för SharePoint, OneDrive och Microsoft Teams
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Säkra bifogade filer i SharePoint, OneDrive och Microsoft Teams i Microsoft Defender för [Office 365](office-365-atp.md) ger ytterligare ett lager med skydd för filer som redan har skannats vid uppladdningen av den vanliga virusidentifieringsmotorn i [Microsoft 365.](virus-detection-in-spo.md) Säkra bifogade filer för SharePoint, OneDrive och Microsoft Teams hjälper till att identifiera och blockera befintliga filer som identifieras som skadliga på gruppwebbplatser och dokumentbibliotek.
 
@@ -48,7 +48,7 @@ När Säkra bifogade filer för SharePoint, OneDrive och Microsoft Teams är akt
 
 ![Filer i OneDrive för företag med en som identifierats som skadlig](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
 
-Den blockerade filen finns fortfarande med i listan i dokumentbiblioteket och i webb-, mobil- eller skrivbordsprogrammen, men det går inte att öppna, kopiera, flytta eller dela filen. Men de kan ta bort den blockerade filen.
+Även om den blockerade filen fortfarande finns med i dokumentbiblioteket och i webb-, mobil- eller datorprogram kan andra inte öppna, kopiera, flytta eller dela filen. Men de kan ta bort den blockerade filen.
 
 Här är ett exempel på hur en blockerad fil ser ut på en mobil enhet:
 
@@ -70,7 +70,7 @@ Efter maj 2018, när en fil identifieras som skadlig av Microsoft Defender för 
 
 ## <a name="keep-these-points-in-mind"></a>Tänk på följande punkter
 
-- Defender för Office 365 söker inte igenom alla filer i SharePoint Online, OneDrive för företag eller Microsoft Teams. Detta är avsiktligt. Filer skannas asynkront. I processen används delning och gästaktivitetshändelser tillsammans med smart heuristics och hotsignaler för att identifiera skadliga filer.
+- Defender för Office 365 söker inte igenom alla filer i SharePoint Online, OneDrive för företag eller Microsoft Teams. Detta är avsiktligt. Filer genomsöks asynkront. I processen används delnings- och gästaktivitetshändelser tillsammans med smart heuristics och hotsignaler för att identifiera skadliga filer.
 
 - Kontrollera att SharePoint-webbplatserna är konfigurerade för att använda [det moderna användande programmet.](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience) Defender för Office 365-skydd gäller oavsett om det moderna eller den klassiska vyn används. Visuella indikatorer på att en fil är blockerad är dock bara tillgängliga i det moderna användayn tet.
 

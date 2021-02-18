@@ -4,6 +4,7 @@ description: Så här redigerar du ett befintligt ämne i Microsoft Viva-ämnen.
 author: efrene
 ms.author: efrene
 manager: pamgreen
+audience: admin
 ms.reviewer: cjtan
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,12 +14,12 @@ ms.collection:
 - m365initiative-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: 4194328804285f93f023092f1c7ac31d31a581da
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 9dfad7e179699c599d9320390aaefd2dac176fbb
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107485"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279416"
 ---
 # <a name="edit-an-existing-topic"></a>Redigera ett befintligt ämne 
 
@@ -31,7 +32,7 @@ ms.locfileid: "50107485"
 I Viva-ämnen kan du redigera ett befintligt ämne. Du kan behöva göra det om du vill korrigera eller lägga till ytterligare information på en befintlig ämnessida. 
 
 > [!Note] 
-> Observera att informationen som du lägger [](topic-experiences-security-trimming.md)till manuellt när du redigerar ett befintligt ämne är synlig för alla användare som har behörighet att visa ämnen när information samlas in av AI. 
+> Observera att informationen i ett ämne [](topic-experiences-security-trimming.md)som har samlats av AI är säkerhets trimad, men observera att information om ämnen och personer som du lägger till manuellt när du redigerar ett befintligt ämne är synlig för alla användare som har behörighet att visa ämnen. 
 
 ## <a name="requirements"></a>Krav
 
@@ -44,7 +45,7 @@ Om du vill redigera ett befintligt ämne måste du:
 
 ## <a name="how-to-edit-a-topic-page"></a>Redigera en ämnessida
 
-Användare som har **behörigheten** Vem kan skapa eller redigera ämnen kan redigera ett ämne <b></b> genom att öppna ämnessidan från en ämnesstrykning och sedan välja knappen Redigera längst upp till höger på ämnessidan. Ämnessidan kan också öppnas från startsidan för ämnescentret där du hittar alla ämnen som du har en anslutning till.
+Användare som  har behörigheten Vem kan skapa eller redigera ämnen kan redigera ett ämne <b></b> genom att öppna ämnessidan från en ämnesstrykning och sedan välja knappen Redigera längst upp till höger på ämnessidan. Ämnessidan kan också öppnas från startsidan för ämnescentret där du hittar alla ämnen som du har en anslutning till.
 
    ![Knappen Redigera](../media/knowledge-management/edit-button.png) </br> 
 
@@ -66,7 +67,7 @@ Knowledge managers can also edit topics directly from the Manage Topics page by 
 
     ![Beskrivningsavsnitt](../media/knowledge-management/description.png)</br>
 
-4. I avsnittet <b>Fästa personer kan</b> du fästa en person om du vill visa personen som ämnesexpert i ämnet. Börja med att skriva in <b></b> användarens namn eller e-postadress i rutan Lägg till en ny användare och välj sedan den användare du vill lägga till i sökresultatet. Du kan även "ta bort" dem genom att välja ikonen Ta bort <b>från listan</b> på användarkortet.
+4. I avsnittet <b>Fästa personer kan</b> du fästa en person för att visa personen som ämnesexpert i ämnet. Börja med att skriva in <b></b> användarens namn eller e-postadress i rutan Lägg till en ny användare och välj sedan den användare du vill lägga till i sökresultatet. Du kan också "ta bort" dem genom att välja ikonen Ta bort <b>från listan</b> på användarkortet.
  
     ![Lägga till fästa personer](../media/knowledge-management/pinned-people.png)</br>
 
@@ -82,11 +83,14 @@ Knowledge managers can also edit topics directly from the Manage Topics page by 
 
     Du kan också använda alternativet <b>Från en länk för</b> att lägga till en fil eller sida genom att ange URL-adressen. 
 
+   > [!Note] 
+   > Filer och sidor som du lägger till måste finnas inom samma Microsoft 365-klientorganisation. Om du vill lägga till en länk till en extern resurs i ämnet kan du lägga till den via canvas-ikonen i steg 9.
+
 6. I <b>avsnittet Föreslagna filer och</b> sidor visas filer och sidor som AI föreslår för att kopplas till ämnet.
 
    ![Avsnittet Föreslagna filer och sidor](../media/knowledge-management/suggested-files-and-pages.png)</br>
 
-    Du kan göra en föreslagen fil eller sida till en fäst fil eller sida genom att välja ikonen fäst.
+    Du kan ändra en föreslagen fil eller sida till en fäst fil eller sida genom att välja ikonen fäst.
 
 7.  I <b>avsnittet Relaterade</b> webbplatser visas webbplatser som har information om ämnet. 
 
@@ -107,6 +111,14 @@ Knowledge managers can also edit topics directly from the Manage Topics page by 
    Det relaterade ämnet som du lagt till visas som ett anslutet ämne.
 
    ![Närliggande ämnen](../media/knowledge-management/related-topics-final.png)</br> 
+
+   Om du vill ta bort ett relaterat ämne väljer du det ämne du vill ta bort och sedan ikonen <b>Ta bort</b> ämne.</br>
+ 
+   ![Ta bort relaterat ämne](../media/knowledge-management/remove-related.png)</br>  
+
+   Välj sedan <b>Ta bort.</b></br>
+
+   ![Bekräfta borttagning](../media/knowledge-management/remove-related-confirm.png)</br> 
 
 
 9. Du kan också lägga till statiska objekt på sidan, t.ex. text, bilder eller länkar, genom att välja ikonen för arbetsytan, som du hittar under den korta beskrivningen. När du markerar den öppnas SharePoint-verktygslådan där du kan välja objektet du vill lägga till på sidan.

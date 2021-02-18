@@ -1,5 +1,5 @@
 ---
-title: Meddelanden om avanmälan till slutanvändare i Microsoft 365
+title: Skräppost-aviseringar för slutanvändare i Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -19,45 +18,51 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan lära sig om skräp post meddelanden för meddelanden i karantän i Exchange Online Protection (EOP).
-ms.openlocfilehash: 0440056e8e31d24e659f9d0ff6662f86f31a6189
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+description: Administratörer kan läsa mer om skräppost-aviseringar för slutanvändare för meddelanden i karantän i Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: bb347f7fd3d3793b563714e8116316b30165ef9a
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600303"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287551"
 ---
-# <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Använda skräp post meddelanden för att frigöra och rapportera översatta meddelanden
+# <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Använda skräppost-aviseringar för användare för att släppa och rapportera meddelanden i karantän
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor lagrar karantänen potentiellt farliga eller oönskade meddelanden. Mer information finns i [karantän meddelanden i EOP](quarantine-email-messages.md).
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor lagrar karantänen potentiellt farliga eller oönskade meddelanden. Mer information finns i meddelanden [i karantän i EOP.](quarantine-email-messages.md)
 
-Som standard är skräp post meddelanden avaktiverade i principer för skräp post. När en administratör [aktiverar skräp post meddelanden för slutanvändare](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications), får mottagarna (inklusive delade post lådor med Automappning aktiverat) regelbundna meddelanden om sina meddelanden som sattes i karantän som skräp post, Mass utskick eller (från april 2020) nätfiske.
+Som standard är skräppost-aviseringar för slutanvändare inaktiverade i principerna för skydd mot skräppost. När en administratör aktiverar [skräppost-aviseringar](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)för slutanvändare får mottagare (inklusive delade postlådor med automatisk mappning aktiverat) periodiska meddelanden om meddelanden som har satts i karantän som skräppost, massutskick eller (från och med april 2020) nätfiske.
 
-För delade post lådor stöds inte skräp post meddelanden för användare som har tilldelats behörigheten Full Access-behörighet till den delade post lådan. Mer information finns i [använda UK för att redigera delegerade post lådor](https://docs.microsoft.com/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation).
+För delade postlådor stöds skräppost-aviseringar för slutanvändare endast för användare som beviljas behörigheten FullAccess till den delade postlådan. Mer information finns i Använda [EAC för att redigera delegering av delade postlådor.](https://docs.microsoft.com/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation)
 
-Det går inte att skicka skräp post till slutanvändaren för grupper.
-
-> [!NOTE]
-> Meddelanden som satts i karantän som nätfiske, skadlig program vara eller enligt regler för e-postflöde (kallas även transport regler) är endast tillgängliga för administratörer. Mer information finns i [Hantera meddelanden och filer i karantän som administratör i EOP](manage-quarantined-messages-and-files.md).
-
-Ett skräp post meddelande för slutanvändare innehåller följande information för varje meddelande i karantän:
-
-- **Avsändare**: skicka namn och e-postadress till det uppsatta meddelandet.
-
-- **Ämne**: ämnes raden i det mellanliggande meddelandet.
-
-- **Datum**: det datum och den tid (i UTC) som meddelandet satts i karantän.
-
-- **Spärra avsändare**: Klicka på den här länken för att lägga till avsändaren i listan med spärrade avsändare. Mer information finns i [blockera en e-avsändare](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
-
-- **Version**: för skräp post meddelanden (inte nätfiske) kan du släppa meddelandet här utan att gå till karantänen säkerhets & Compliance Center.
-
-- **Granska**: Klicka på den här länken om du vill gå till karantän i säkerhets & Compliance Center, där du kan (beroende på varför meddelandet satts i karantän), släpp, ta bort eller rapportera dina meddelanden i karantän. Mer information finns i [hitta och släppa meddelanden i karantän som en användare i EOP](find-and-release-quarantined-messages-as-a-user.md).
-
-![Exempel på påminnelse om slutanvändare](../../media/end-user-spam-notification.png)
+Skräppost-avisering för slutanvändare stöds inte för grupper.
 
 > [!NOTE]
-> En blockerad avsändare kan fortfarande skicka e-post. Alla meddelanden från denna avsändare som gör det till post lådan flyttas omedelbart till mappen skräp post. Framtida meddelanden från den här avsändaren skickas till mappen skräp post eller till slutanvändarnas karantän. Om du vill ta bort dessa meddelanden när de anländer i stället för quarantining kan du använda [e-postflödes regler](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (kallas även transport regler) för att ta bort meddelanden när de anländer.
+> Meddelanden som satts i karantän som nätfiske, skadlig kod eller genom e-postflödesregler (kallas även transportregler) är bara tillgängliga för administratörer. Mer information finns i [Hantera meddelanden och filer i karantän som administratör i EOP](manage-quarantined-messages-and-files.md).
+
+En skräppost-avisering för slutanvändaren innehåller följande information för varje meddelande i karantän:
+
+- **Avsändare:** Skicka meddelandets namn och e-postadress i karantän.
+
+- **Ämne:** Ämnesraden i det meddelande som sätts i karantän.
+
+- **Datum:** Datum och tid (i UTC) då meddelandet satts i karantän.
+
+- **Spärra avsändare:** Klicka på den här länken om du vill lägga till avsändaren i listan Spärrade avsändare. Mer information finns i Spärra [en e-postavsändare.](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)
+
+- **Version:** För skräppost (inte nätfiske) kan du släppa meddelandet här utan att behöva sätta i karantän för & Efterlevnadscenter.
+
+- **Granska**&: Klicka på den här länken för att gå till karantän i Säkerhets- och efterlevnadscenter, där du kan visa (beroende på varför meddelandet har satts i karantän), släppa, ta bort eller rapportera meddelanden i karantän. Mer information finns i [Hitta och släppa meddelanden i karantän som användare i EOP.](find-and-release-quarantined-messages-as-a-user.md)
+
+![Exempel på skräppost-avisering för slutanvändare](../../media/end-user-spam-notification.png)
+
+> [!NOTE]
+> En spärrad avsändare kan fortfarande skicka e-post till dig. Alla meddelanden från den här avsändaren som skickar dem till din postlåda flyttas omedelbart till mappen Skräppost. Framtida meddelanden från den här avsändaren hamnar i mappen Skräppost eller till slutanvändaren. Om du vill ta bort dessa meddelanden vid ankomst i stället för att kvartilila dem kan du använda e-postflödesregler [(kallas](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) även transportregler) för att ta bort meddelandena när de kommer in.

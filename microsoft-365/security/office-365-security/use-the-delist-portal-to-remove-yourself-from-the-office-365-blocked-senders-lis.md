@@ -1,5 +1,5 @@
 ---
-title: Ta bort från listan Spärrade avsändare
+title: Ta bort dig själv från listan med spärrade avsändare
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: 04/18/2016
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,50 +17,56 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: I den här artikeln får du lära dig hur du använder list portalen för att ta bort dig själv från listan med spärrade avsändare i Microsoft 365.
-ms.openlocfilehash: 0c87d467db004a50502402b05eb0fa3283aa46c5
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: I den här artikeln får du lära dig hur du använder delist-portalen för att ta bort dig själv från listan med spärrade avsändare i Microsoft 365.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: c11fced30ef52315ecb44dda51e6825d36b57c7e
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614768"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287527"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Använda avlistningsportalen för att ta bort dig själv från listan med spärrade avsändare
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Får du ett fel meddelande när du försöker skicka ett e-postmeddelande till en mottagare vars e-postadress finns i Microsoft 365? Om du tror att du inte ska få fel meddelandet kan du ta bort dig själv från listan med spärrade avsändare genom att använda List portalen.
+Får du ett felmeddelande när du försöker skicka ett e-postmeddelande till en mottagare vars e-postadress finns i Microsoft 365? Om du tror att du inte bör få felmeddelandet kan du använda delist-portalen för att ta bort dig själv från listan med spärrade avsändare.
 
 ## <a name="what-is-the-blocked-senders-list"></a>Vad är listan med spärrade avsändare?
 
-Microsoft använder listan Spärrade avsändare för att skydda sina kunder mot skräp post, förfalskningar och nätfiske-attacker. Din e-postservers IP-adress, det vill säga den adress som din e-postserver använder för att identifiera sig på Internet, har taggats som ett potentiellt hot mot Microsoft 365 på en av många olika anledningar. När Microsoft 365 lägger till IP-adressen i listan förhindrar den all kommunikation mellan IP-adressen och våra kunder via våra data Center.
+Microsoft använder listan med spärrade avsändare för att skydda sina kunder mot skräppost, förfalskning och nätfiske. E-postserverns IP-adress, det vill säga den adress som e-postservern använder för att identifiera sig själv på Internet, har märkts som ett potentiellt hot mot Microsoft 365 av en mängd olika orsaker. När Microsoft 365 lägger till IP-adressen i listan förhindrar det all vidare kommunikation mellan IP-adressen och någon av våra kunder via våra datacenter.
 
 Du vet att du har lagts till i listan när du får ett svar på ett e-postmeddelande som innehåller ett fel som ser ut ungefär så här:
 
-> 550 5.7.606-649 åtkomst nekad, tillåts inte skickande IP [_IP-adress_]; För att begära borttagning från den här listan <https://sender.office.com/> , gå till och följ instruktionerna. Mer information finns i [rapportera om icke-postleveranser för e-post i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
+> 550 5.7.606-649 Access denied, banned sending IP [_IP address_]; Om du vill begära borttagning från den här listan går <https://sender.office.com/> du till och följer anvisningarna. Mer information finns i [e-postrapporter om utebliven leverans i Exchange Online.](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 
-där  _IP-adress_ är IP-adressen för den dator där e-postservern körs.
+där  _IP-adressen_ är IP-adressen för den dator där e-postservern körs.
 
-### <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Så här använder du en List Portal för att ta bort dig själv från listan Spärrade avsändare
+### <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Så här använder du delist-portalen för att ta bort dig själv från listan över spärrade avsändare
 
-1. Gå till i en webbläsare <https://sender.office.com> .
+1. Öppna en webbläsare och gå till <https://sender.office.com> .
 
-2. Följ instruktionerna på sidan. Kontrol lera att du använder den e-postadress som fel meddelandet skickades till och den IP-adress som anges i fel meddelandet. Du kan bara ange en e-postadress och en IP-adress per besök.
+2. Följ instruktionerna på sidan. Kontrollera att du använder e-postadressen som felmeddelandet skickades till och den IP-adress som anges i felmeddelandet. Du kan bara ange en e-postadress och en IP-adress per besök.
 
-3. Klicka på **Skicka**.
+3. Klicka **på Skicka.**
 
-    Portalen skickar ett e-postmeddelande till den e-postadress som du anger. E-postmeddelandet ser ut ungefär så här: ![ skärm bild av e-post som tas emot när du skickar en begäran via List portalen](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    Portalen skickar ett e-postmeddelande till den e-postadress som du uppser. E-postmeddelandet ser ut ungefär så här: Skärmbild av e-postmeddelandet som tas emot ![ när du skickar en begäran via delist-portalen](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
 
-4. Klicka på bekräftelse länken i e-postmeddelandet som skickas till dig via den nedvisande portalen.
+4. Klicka på bekräftelselänken i e-postmeddelandet som delistingportalen skickar till dig.
 
-    Då kommer du tillbaka till Portal för att avlista.
+    Då kommer du tillbaka till delist-portalen.
 
-5. I listan avlistas klickar du på **avlistaa IP**.
+5. Klicka på Delist IP i **delist-portalen.**
 
-    När IP-adressen tas bort från listan med spärrade avsändare levereras e-postmeddelanden från den IP-adressen till mottagarna som använder Microsoft 365. Därför bör du kontrol lera att e-postmeddelandet som skickas från den IP-adressen inte är grovt eller skadligt. Annars kan IP-adressen blockeras igen.
+    När IP-adressen tas bort från listan med spärrade avsändare levereras e-postmeddelanden från IP-adressen till mottagare som använder Microsoft 365. Kontrollera därför att du är säker på att e-post som skickas från IP-adressen inte är olämplig eller skadlig. Annars kan IP-adressen blockeras igen.
 
     > [!NOTE]
-    > Det kan ta upp till 24 timmar eller resultat kan variera innan restriktioner tas bort.
+    > Det kan ta upp till 24 timmar, eller resultaten kan variera kraftigt innan begränsningarna tas bort.
 
-Se [skapa listor med säkra avsändare i EOP](create-safe-sender-lists-in-office-365.md) och [utgående spam i EOP](outbound-spam-controls.md) för att förhindra att IP blockeras.
+Se [Skapa listor över betrodda avsändare i EOP](create-safe-sender-lists-in-office-365.md) och skydd mot utgående skräppost i [EOP](outbound-spam-controls.md) för att förhindra att en IP blockeras.

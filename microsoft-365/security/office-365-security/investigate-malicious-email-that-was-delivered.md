@@ -20,12 +20,12 @@ description: Lär dig hur du använder funktioner för hotundersökning och -sva
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b1fd9af5267defd55025ca712b3e5f7c0cc3b56
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: b36e16f5351ab30ac8150fbc3e87feb9ca4a6453
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167365"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286639"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Undersöka skadlig e-post som levererats i Office 365
 
@@ -33,8 +33,8 @@ ms.locfileid: "50167365"
 
 **Gäller för**
 
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 [Med Microsoft Defender för Office 365](office-365-atp.md) kan du undersöka aktiviteter som riskerar för personer i organisationen och vidta åtgärder för att skydda din organisation. Om du till exempel ingår i organisationens säkerhetsteam kan du söka efter och undersöka misstänkta e-postmeddelanden som levererades. Det kan du göra med [hjälp av Hotutforskaren (eller identifieringar i realtid).](threat-explorer.md)
 
@@ -63,7 +63,7 @@ Om du vill utföra vissa åtgärder, till exempel visa meddelanderubriker eller 
 |---|---|---|
 |Använda Hotutforskaren (och identifieringar i realtid) för att analysera hot |Global administratör <p> Säkerhetsadministratör <p> Säkerhetsläsare|Nej|
 |Använd HotUtforskaren (och identifieringar i realtid) för att visa rubriker för e-postmeddelanden samt förhandsgranska och ladda ned e-postmeddelanden i karantän|Global administratör <p> Säkerhetsadministratör <p> Säkerhetsläsare|Nej|
-|Använd Hotutforskaren för att visa rubriker, förhandsgranska e-post (endast på sidan för e-post entitet) och ladda ned e-postmeddelanden som levereras till postlådor|Global administratör <p> Säkerhetsadministratör <p> Säkerhetsläsare <p> Förhandsgranska|Ja|
+|Använda Hotutforskaren för att visa rubriker, förhandsgranska e-post (endast på sidan för e-post entitet) och ladda ned e-postmeddelanden som levereras till postlådor|Global administratör <p> Säkerhetsadministratör <p> Säkerhetsläsare <p> Förhandsgranska|Ja|
 |
 
 > [!NOTE]
@@ -74,7 +74,7 @@ Vi förstår att förhandsgranskning och nedladdning av e-post är känsliga akt
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Hitta misstänkta e-postmeddelanden som har levererats
 
-Hotutforskaren är en kraftfull rapport som kan ha flera syften, till exempel för att hitta och ta bort meddelanden, identifiera IP-adressen för en skadlig e-postavsändare eller starta en incident för vidare undersökning. Följande procedur fokuserar på att använda Utforskaren för att hitta och ta bort skadlig e-post från mottagarens postlådor.
+Threat Explorer är en kraftfull rapport som kan ha flera syften, till exempel att söka efter och ta bort meddelanden, identifiera IP-adressen för en skadlig e-postavsändare eller starta en incident för ytterligare undersökning. Följande procedur fokuserar på att använda Utforskaren för att hitta och ta bort skadlig e-post från mottagarens postlådor.
 
 > [!NOTE]
 > Standardsökningar i Utforskaren inkluderar för närvarande inte zapped objekt.  Det här gäller för alla vyer, till exempel skadlig programvara eller phish-vyer. Om du vill inkludera Zapped-objekt måste du lägga till **en leveransåtgärd som** är inställd på att **inkludera Borttaget av ZAP.** Om du inkluderar alla alternativ visas alla leveransåtgärdsresultat, inklusive Zapped items.
@@ -89,9 +89,9 @@ Hotutforskaren är en kraftfull rapport som kan ha flera syften, till exempel f�
 
 3. **Vyer i Hotutforskaren:** Välj **All e-post** på **Visa-menyn.**
 
-    ![Menyn För visning av hotutforskaren och e-post – skadlig programvara, nätt innehåll och alla e-postalternativ, även innehåll – skadlig kod.](../../media/tp-InvestigateMalEmail-viewmenu.png)
+    ![Menyn För visning av hotutforskaren och e-post – skadlig programvara, nätt innehåll och alla e-postalternativ, även innehåll – skadlig programvara.](../../media/tp-InvestigateMalEmail-viewmenu.png)
 
-    Vyn *skadlig* programvara är för närvarande standard och fångar e-postmeddelanden där ett skadlig kodshot identifieras. *Phish-vyn* fungerar på samma sätt, för Phish.
+    Vyn *skadlig* programvara är för närvarande standard och fångar e-postmeddelanden där ett skadlig kodshot identifieras. *Phish-vyn* fungerar på samma sätt för Phish.
 
     I vyn *All e-post* visas dock alla meddelanden som tas emot av organisationen, oavsett om hot har upptäckts eller inte. Som du kan föreställa dig är det mycket data, vilket är anledningen till att den här vyn visar en platshållare som begär att ett filter ska användas. (Den här vyn är endast tillgänglig för Defender för Office 365 P2-kunder.)
 
@@ -117,11 +117,11 @@ Hotutforskaren är en kraftfull rapport som kan ha flera syften, till exempel f�
 
 6. **Fält i** Hotutforskaren: Hotutforskaren visar mycket mer säkerhetsrelaterad e-postinformation, till exempel leveransåtgärd, leveransplats,  *specialåtgärd,*  *riktning,* åsidosättningar och *URL-hot.* Det gör också att organisationens säkerhetsteam kan undersöka saken med högre säkerhet.
 
-    *Leveransåtgärd* är den åtgärd som vidtas på ett e-postmeddelande på grund av befintliga principer eller identifieringar. Här är de åtgärder som kan vidtas i ett e-postmeddelande:
+    *Leveransåtgärd* är den åtgärd som vidtas för ett e-postmeddelande på grund av befintliga principer eller identifieringar. Här är de åtgärder som kan vidtas i ett e-postmeddelande:
 
     - **Levererad** – e-post levererades till en användares inkorg eller mapp och användaren kan komma åt den direkt.
     - **Skräppost** (levererad till skräppost) – e-post skickades till antingen användarens skräppostmapp eller borttagna mapp och användaren har tillgång till e-postmeddelanden i mappen Skräppost eller Borttaget.
-    - **Blockerad** – alla e-postmeddelanden som har satts i karantän, som har misslyckats eller har släppts. (Användaren är helt otillgänglig.)
+    - **Blockerad** – alla e-postmeddelanden som har satts i karantän, som har misslyckats eller släppts. (Användaren är helt otillgänglig.)
     - **Ersatt** – alla e-postmeddelanden där skadliga bifogade filer ersätts med TXT-filer som säger att den bifogade filen var skadlig
 
     **Leveransplats:** Filtret Leveransplats är tillgängligt för att hjälpa administratörer att förstå var misstänkt skadlig e-post upphört och vilka åtgärder som har vidtas på den. Resulterande data kan exporteras till kalkylblad. Möjliga leveransplatser är:
@@ -129,12 +129,12 @@ Hotutforskaren är en kraftfull rapport som kan ha flera syften, till exempel f�
     - **Inkorgen eller mappen** – E-postmeddelandet ligger i Inkorgen eller i en särskild mapp, enligt dina e-postregler.
     - **Lokal eller extern** – Postlådan finns inte i molnet men är lokal.
     - **Skräppostmapp** – e-postmeddelandet finns i användarens skräppostmapp.
-    - **Mappen Borttaget** – e-postmeddelandet finns i en användares borttagna objekt-mapp.
+    - **Mappen Borttaget** – e-postmeddelandet finns i en användares mapp Borttaget.
     - **Karantän** – e-postmeddelandet i karantän, och inte i en användares postlåda.
     - **Misslyckades** – E-postmeddelandet kunde inte nå postlådan.
     - **Släppt –** e-postmeddelandet förlorades någonstans i e-postflödet.
 
-    **Riktning: Med det** här alternativet kan teamet för säkerhetsåtgärder filtrera efter i vilken riktning ett e-postmeddelande kommer från eller går. Directionality values are *Inbound,* *Outbound,* and *Intra-org* (corresponding to mail coming into your org from outside, being sent out of your org, or being sent internally to your org, respectively). Den här informationen kan hjälpa säkerhetsåtgärder för grupper att upptäcka förfalskning och personifiering, eftersom det finns en felmatchning mellan riktningsvärdet (t.ex. *Inkommande*), och domänen för avsändaren (som *verkar* vara en intern domän) blir tydlig! Riktningsvärdet är separat och kan skilja sig från meddelandespårningen. Resultaten kan exporteras till kalkylblad.
+    **Riktning: Med det** här alternativet kan teamet för säkerhetsåtgärder filtrera efter i vilken riktning ett e-postmeddelande kommer från eller går. Directionality values are *Inbound,* *Outbound,* and *Intra-org* (corresponding to mail coming into your org from outside, being sent out of your org, or being sent internally to your org, respectively). Den här informationen kan hjälpa säkerhetsåtgärder för grupper att upptäcka förfalskning och personifiering, eftersom det finns en felmatchning mellan riktningsvärdet (t.ex. *Inkommande*), och domänen för avsändaren (som *verkar* vara en intern domän) blir tydlig! The Directionality value is separate, and can differ from, the Message Trace. Resultaten kan exporteras till kalkylblad.
 
     **Åsidosätter:** Det här filtret tar information som visas på e-postmeddelandets informationsflik och använder den för att exponera organisationens eller användarnas principer för att tillåta och blockera *e-postmeddelanden.* Det viktigaste med filtret är att det hjälper organisationens säkerhetsteam att se hur många misstänkta e-postmeddelanden som har levererats på grund av konfiguration. Det ger dem möjlighet att ändra tillåt och spärrar efter behov. Den här resultatuppsättningen för det här filtret kan exporteras till kalkylblad.
 
@@ -153,9 +153,9 @@ Hotutforskaren är en kraftfull rapport som kan ha flera syften, till exempel f�
 
 7. **Vyn för e-posttidslinje:** Ditt säkerhetsteam kan behöva fördjupa sig i e-postinformationen för att undersöka ytterligare. På tidslinjen för e-post kan administratörer visa åtgärder som vidtas i ett e-postmeddelande från leverans till efterleverans. Om du vill visa en tidslinje för e-post klickar du på ämnet för ett e-postmeddelande och klickar sedan på E-posttidslinje. (Den visas bland andra rubriker i panelen, till exempel Sammanfattning eller Detaljer.) De här resultaten kan exporteras till kalkylblad.
 
-    Tidslinjen för e-post öppnas i en tabell som visar alla leverans- och efterleveranshändelser för e-postmeddelandet. Om det inte finns några ytterligare åtgärder för e-postmeddelandet bör du se en händelse för den ursprungliga leveransen som visar resultatet, till exempel *Blockerad,* med en bedömning *som Phish.* Administratörer kan exportera hela tidslinjen för e-post, inklusive all information på fliken och e-postmeddelandet (t.ex. ämne, avsändare, mottagare, nätverk och meddelande-ID). Tidslinjen för e-post klipper ut slumpmässigt eftersom det är mindre tid att kontrollera olika platser för att försöka förstå händelser som har hänt sedan e-postmeddelandet kom. När flera händelser inträffar samtidigt, eller i närheten, i ett e-postmeddelande visas dessa händelser i en tidslinjevy.
+    Tidslinjen för e-post öppnas i en tabell som visar alla leverans- och efterleveranshändelser för e-postmeddelandet. Om det inte finns några ytterligare åtgärder för e-postmeddelandet bör du se en enda händelse för den ursprungliga leveransen som visar resultatet, till exempel *Blockerad,* med en bedömning *som Phish.* Administratörer kan exportera hela tidslinjen för e-post, inklusive all information på fliken och e-postmeddelandet (t.ex. ämne, avsändare, mottagare, nätverk och meddelande-ID). Tidslinjen för e-post klipper ut slumpmässigt eftersom det är mindre tid att kontrollera olika platser för att försöka förstå händelser som har hänt sedan e-postmeddelandet kom. När flera händelser inträffar samtidigt, eller i närheten, i ett e-postmeddelande visas dessa händelser i en tidslinjevy.
 
-8. **Förhandsversion/nedladdning:** Hotutforskaren ger ditt säkerhetsteam den information de behöver för att undersöka misstänkt e-post. Ditt säkerhetsteam kan antingen:
+8. **Förhandsversion/nedladdning:** Med Threat Explorer får teamet i säkerhetsåtgärder den information de behöver för att undersöka misstänkt e-post. Ditt säkerhetsteam kan antingen:
 
     - [Kontrollera leveransåtgärd och plats.](#check-the-delivery-action-and-location)
 
@@ -163,15 +163,15 @@ Hotutforskaren är en kraftfull rapport som kan ha flera syften, till exempel f�
 
 ### <a name="check-the-delivery-action-and-location"></a>Kontrollera leveransåtgärd och plats
 
-I [Threat Explorer (och identifieringar i realtid)](threat-explorer.md)har du nu kolumnerna **Leveransåtgärd** och **Leveransplats** i stället för den tidigare **kolumnen Leveransstatus.** Det ger en mer fullständig bild av var e-postmeddelandena hamnar. En del av syftet med den här ändringen är att förenkla undersökningar för säkerhetsteam, men nettoresultatet är att snabbt kunna se platsen för problemmeddelanden.
+I [Threat Explorer (och identifieringar i realtid)](threat-explorer.md)har du nu kolumnerna Leveransåtgärd och **Leveransplats** i stället för den tidigare **kolumnen Leveransstatus.**  Det ger en mer fullständig bild av var e-postmeddelandena hamnar. En del av syftet med den här ändringen är att göra undersökningar enklare för säkerhetsteam, men nettoresultatet är att snabbt kunna se platsen för problemmeddelanden.
 
 Leveransstatus delas nu upp i två kolumner:
 
 - **Leveransåtgärd** – Vilken status har det här e-postmeddelandet?
 
-- **Leveransplats** – Var har e-postmeddelandet därför dirigerats?
+- **Leveransplats** – Var har e-postmeddelandet dirigerats som ett resultat?
 
-Leveransåtgärd är den åtgärd som vidtas på ett e-postmeddelande på grund av befintliga principer eller identifieringar. Här är de åtgärder som kan vidtas i ett e-postmeddelande:
+Leveransåtgärd är den åtgärd som vidtas för ett e-postmeddelande på grund av befintliga principer eller identifieringar. Här är de åtgärder som kan vidtas i ett e-postmeddelande:
 
 - **Levererad** – e-post levererades till en användares inkorg eller mapp och användaren kan komma åt den direkt.
 
@@ -187,9 +187,9 @@ Leveransplats visar resultatet av principer och identifieringar som körs efter 
 
 - **Lokal eller extern** – Postlådan finns inte i molnet men är lokal.
 
-- **Skräppostmapp** – e-postmeddelandet finns i användarens skräppostmapp.
+- **Skräppostmapp** – E-postmeddelandet finns i användarens skräppostmapp.
 
-- **Mappen Borttaget** – e-postmeddelandet finns i en användares borttagna objekt-mapp.
+- **Mappen Borttaget** – e-postmeddelandet finns i en användares mapp Borttaget.
 
 - **Karantän** – e-postmeddelandet i karantän, och inte i en användares postlåda.
 

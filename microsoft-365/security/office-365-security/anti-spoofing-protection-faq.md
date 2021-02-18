@@ -18,21 +18,21 @@ ms.collection:
 description: Administratörer kan visa vanliga frågor och svar om skydd mot förfalskning i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d0805b5ca9e951234679ed8b3d03b6bdfced2be
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: d2d307d201af8ad09a4faf7a865a29da8942bdf8
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175901"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288915"
 ---
 # <a name="anti-spoofing-protection-faq"></a>Vanliga frågor och svar om skydd mot förfalskning
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Den här artikeln innehåller vanliga frågor och svar om skydd mot förfalskning för Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor.
 
@@ -46,7 +46,7 @@ Microsoft anser att risken för att fortsätta tillåta oauticerad inkommande e-
 
 ## <a name="does-junking-unauthenticated-inbound-email-cause-legitimate-email-to-be-marked-as-spam"></a>Leder skräppost oautisk inkommande e-post till att legitim e-post markeras som skräppost?
 
-När Microsoft aktiverade den här funktionen 2018 har vissa felaktiga positiva resultat inträffat (bra meddelanden markerades som dåliga). Men med tiden har avsändarna anpassat sig efter kraven. Antalet meddelanden som blev felidentifierade som falska blev tillgängliga för de flesta e-postsökvägar.
+När Microsoft aktiverade den här funktionen 2018 har vissa felaktiga positiva resultat inträffat (bra meddelanden markerades som dåliga). Med tiden har dock avsändarna anpassat sig efter kraven. Antalet meddelanden som blev felidentifierade som falska blev tillgängliga för de flesta e-postsökvägar.
 
 Microsoft införde först de nya autentiseringskraven för e-post flera veckor innan de distribuerade till kunder. I början förekom störningar men de minskade gradvis.
 
@@ -80,7 +80,7 @@ Nästan alla stora e-posttjänster implementerar traditionella SPF-, DKIM- och D
 
 Nej. Den här ASF-inställningen är inte längre obligatorisk. Skydd mot förfalskning tar hänsyn till både SPF-fel och en mycket bredare uppsättning kriterier. Om du har aktiverat skydd mot förfalskning och **SPF-post: Hard Fail** (_MarkAsSpamSpfRecordHardFail_) aktiverad kommer du antagligen att få mer falska positiva identifieringar.
 
-Vi rekommenderar att du inaktiverar den här funktionen eftersom den i princip inte ger några ytterligare fördelar när det gäller identifiering av skräppost eller nätfiske, och i stället generera huvudsakligen falska positiva identifieringar. Mer information finns i avancerade [inställningar för skräppostfilter (ASF) i EOP.](advanced-spam-filtering-asf-options.md)
+Vi rekommenderar att du inaktiverar den här funktionen eftersom den nästan inte ger några ytterligare fördelar när du identifierar skräppost eller nätfiskemeddelanden, och i stället genererar huvudsakligen falska positiva identifieringar. Mer information finns i avancerade [inställningar för skräppostfilter (ASF) i EOP.](advanced-spam-filtering-asf-options.md)
 
 ## <a name="does-sender-rewriting-scheme-help-fix-forwarded-email"></a>Kan vidarebefordrad e-post åtgärdas med hjälp av avsändarschemat?
 

@@ -1,5 +1,5 @@
 ---
-title: Visa Defender för Office 365-rapporter i instrument panelen rapporter
+title: Visa Defender för Office 365-rapporter på instrumentpanelen Rapporter
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,280 +16,285 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Hitta och använda rapporter för Microsoft Defender för Office 365 i säkerhets & Compliance Center.
+description: Hitta och använda rapporter för Microsoft Defender för Office 365 i Säkerhets- & Efterlevnadscenter.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 82c003478538274be1dd1d2e04816de80d1eae6d
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: e3e5d48f6ac8f6246b65761f5728405c37333d71
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659459"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286603"
 ---
-# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>Visa Defender för Office 365-rapporter i rapport instrument panelen i säkerhets & efterlevnad
+# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>Visa Defender för Office 365-rapporter i instrumentpanelen Rapporter i Säkerhets- & Efterlevnadscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Microsoft Defender för Office 365-organisationer (till exempel Microsoft 365 E5-prenumerationer eller Microsoft Defender för Office 365 abonnemang 1 eller Microsoft Defender för Office 365 abonnemang 2 tillägg) innehåller flera olika säkerhets relaterade rapporter. Om du har [nödvändig behörighet](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)kan du visa dessa rapporter i säkerhets & Compliance Center genom att gå till  \> **instrument panelen** för rapporter. Öppna för att gå direkt till instrument panelen rapporter <https://protection.office.com/insightdashboard> .
+Microsoft Defender för Office 365-organisationer (till exempel Microsoft 365 E5-prenumerationer eller Microsoft Defender för Office 365-abonnemang 1 eller Microsoft Defender för Office 365-abonnemang 2-tillägg) innehåller en mängd olika säkerhetsrelaterade rapporter. Om du har nödvändiga [behörigheter kan](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)du visa de här rapporterna i Säkerhets- och & genom att gå till  \> **instrumentpanelen Rapporter.** Om du vill gå direkt till instrumentpanelen Rapporter öppnar du <https://protection.office.com/insightdashboard> .
 
-![Instrument panelen för rapporter i säkerhets & efterlevnad](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Instrumentpanelen Rapporter i Säkerhets- & Efterlevnadscenter](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="defender-for-office-365-file-types-report"></a>Rapport om fil typer i Defender för Office 365
+## <a name="defender-for-office-365-file-types-report"></a>Typrapport för Defender for Office 365
 
-I rapporten **Defender för Office 365-filtyper** visas en typ av filer som identifieras i skadlig kod för [bifogade](atp-safe-attachments.md)filer.
+Filtypen **Defender för Office 365** visar vilken typ av filer som identifierats som skadliga av säkra [bifogade filer.](atp-safe-attachments.md)
 
- I den sammanställda vyn i rapporten kan du använda 90 dagar för att filtrera den, men i detaljvyn kan du bara tillåta 10 dagars filtrering.
+ I mängdvyn för rapporten kan du filtrera i 90 dagar, medan detaljvyn bara tillåter 10 dagars filtrering.
 
-Om du vill visa rapporten öppnar du [säkerhets & Compliance Center](https://protection.office.com), går till  \> **instrument paneler** för rapporter och väljer **Defender för Office 365-filtyper**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=ATPFileReport> .
+Om du vill visa rapporten öppnar du [säkerhets- & Efterlevnadscenter,](https://protection.office.com)går till instrumentpanelen Rapporter och väljer Defender för  \>  **Office 365-filtyper.** Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=ATPFileReport> .
 
-![Widget för Office 365-filtyper i rapport instrument panelen](../../media/atp-file-types-report-widget.png)
+![Defender för Office 365-filtyper i instrumentpanelen Rapporter](../../media/atp-file-types-report-widget.png)
 
 > [!NOTE]
-> Informationen i den här rapporten är också tillgänglig i [meddelande dispositions rapporten för Defender för Office 365](#defender-for-office-365-message-disposition-report).
+> Informationen i den här rapporten är också tillgänglig i [meddelandedispositionsrapporten i Defender för Office 365.](#defender-for-office-365-message-disposition-report)
 
-### <a name="report-view-for-the-defender-for-office-365-file-types-report"></a>Rapportvy för rapporten fil typer i Defender för Office 365
+### <a name="report-view-for-the-defender-for-office-365-file-types-report"></a>Rapportvyn för filtyperna Defender för Office 365
 
 Följande vyer är tillgängliga:
 
-- **Visa data genom: fil**: diagrammet innehåller följande information:
+- **Visa data efter: Fil:** Diagrammet innehåller följande information:
 
-  - **Skadliga Excel-bilagor**
-  - **Skadliga Flash-filer**
-  - **Skadliga PDF-filer**
+  - **Skadliga bifogade Excel-bilagor**
+  - **Skadliga Flash-bilagor**
+  - **Skadliga BIFOGADE PDF-filer**
   - **Skadliga PowerPoint-bilagor**
-  - **Illasinnade URL: er**
-  - **Skadliga Word-bilagor**
-  - **Skadliga körbara filer**
-  - **Gemensamma**
+  - **Skadliga URL:er**
+  - **Skadliga bifogade Word-filer**
+  - **Skadliga körbara bifogade filer**
+  - **Andra**
 
-  När du håller mus pekaren över en viss dag (data punkt) kan du se en uppdelning av skadliga filer som identifieras av [säkra bifogade filer](atp-safe-attachments.md) och [skydd mot skadlig program vara i EOP](anti-malware-protection.md).
+  När du hovrar över en viss dag (datapunkt) kan du se [](atp-safe-attachments.md) en uppdelning av typer av skadliga filer som upptäckts av säkra bifogade filer och skydd mot skadlig [programvara i EOP.](anti-malware-protection.md)
 
-  ![Vyn Arkiv i rapporten fil typer i Defender för Office 365](../../media/atp-file-types-report-file-view.png)
+  ![Filvyn i filtyperna Defender för Office 365](../../media/atp-file-types-report-file-view.png)
 
-  Om du klickar på **filter** kan du ändra rapporten med följande filter:
+  Om du **klickar på** Filter kan du ändra rapporten med följande filter:
 
-  - **Start datum** och **slutdatum**
-  - Samma fil typs värden som visas i diagrammet.
+  - **Startdatum** och **slutdatum**
+  - Samma filtypsvärden som visas i diagrammet.
 
-- **Visa data via: meddelande**: diagrammet innehåller följande information:
+- **Visa data efter: Meddelande:** Diagrammet innehåller följande information:
 
   - **Blockera åtkomst**
-  - **Meddelanden ersatta**
-  - **Meddelanden som övervakas**
-  - **Ersatt med dynamisk e-postleverans**: Mer information finns i [dynamisk leverans i principer för säkra bifogade filer](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
+  - **Meddelanden har ersatts**
+  - **Meddelanden övervakas**
+  - **Ersatt av Dynamisk e-postleverans:** Mer information finns [i principer för dynamisk leverans i principer för säkra bifogade filer.](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)
 
-  ![Vyn meddelande i rapporten fil typer i Defender för Office 365](../../media/atp-file-types-report-message-view.png)
+  ![Meddelandevyn i filtyperna Defender för Office 365](../../media/atp-file-types-report-message-view.png)
 
-  Om du klickar på **filter** kan du ändra rapporten med följande filter:
+  Om du **klickar på** Filter kan du ändra rapporten med följande filter:
 
-  - **Start datum** och **slutdatum**
-  - Samma meddelande dispositions värden som är tillgängliga i diagrammet och ytterligare **meddelanden** .
+  - **Startdatum** och **slutdatum**
+  - Samma dispositionsvärden för meddelanden som är tillgängliga i diagrammet och de ytterligare meddelanden som **överförs.**
 
-### <a name="details-table-view-for-the-defender-for-office-365-file-types-report"></a>Vyn detaljerad tabell för fil typer i Defender för Office 365
+### <a name="details-table-view-for-the-defender-for-office-365-file-types-report"></a>Detaljtabellvy för filtyper i Defender för Office 365
 
-Om du klickar på **Visa informations tabell** visas en vy i real tid av alla klickningar i organisationen under de senaste 10 dagarna. Informationen som visas beror på diagrammet du tittade på:
+Om du **klickar på tabellen** Visa information visas en vy i nära realtid av alla klick som har hänt inom organisationen under de senaste 10 dagarna. Vilken information som visas beror på vilket diagram du visade:
 
-- **Visa data per: fil**:
+- **Visa data efter: Fil:**
 
   - **Datum**
-  - **Mottagarens adress**
+  - **Mottagaradress**
   - **Avsändarens adress**
-  - **Meddelande-ID**: tillgängligt i fältet **meddelande-ID** i meddelande huvudet och ska vara unikt. Ett exempel värde är `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (Observera vinkelparenteser).
+  - **Meddelande-ID:** Tillgängligt i **meddelande-ID-sidhuvudet** i meddelandehuvudet och ska vara unikt. Ett exempelvärde är `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (observera vinkelparenteserna).
   - **Fil**
 
-  Om du klickar på **filter** kan du ändra rapporten med följande filter:
+  Om du **klickar på** Filter kan du ändra rapporten med följande filter:
 
-  - **Start datum** och **slutdatum**
-  - Samma fil typs värden som visas i diagrammet.
+  - **Startdatum** och **slutdatum**
+  - Samma filtypsvärden som visas i diagrammet.
 
-- **Visa data via: meddelande**:
+- **Visa data efter: Meddelande:**
 
   - **Datum**
-  - **Mottagarens adress**
+  - **Mottagaradress**
   - **Avsändarens adress**
   - **Meddelande-ID**
   - **Fil**
   - **Ämne**
 
-  Om du klickar på **filter** kan du ändra resultatet med följande filter:
+  Om du **klickar på** Filter kan du ändra resultatet med följande filter:
 
-  - **Start datum** och **slutdatum**
-  - Samma meddelande dispositions värden som är tillgängliga i diagrammet och ytterligare **meddelanden** .
+  - **Startdatum** och **slutdatum**
+  - Samma dispositionsvärden för meddelanden som är tillgängliga i diagrammet och de ytterligare meddelanden som **överförs.**
 
-Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
+Om du vill gå tillbaka till rapportvyn klickar du **på Visa rapport.**
 
-## <a name="defender-for-office-365-message-disposition-report"></a>Meddelande disposition för Defender för Office 365
+## <a name="defender-for-office-365-message-disposition-report"></a>Rapport om meddelandeborttagning i Office 365
 
-I rapporten för att visa **ATP** visas de åtgärder som vidtogs för e-postmeddelanden som identifierats som skadligt innehåll.
+I **rapporten Disposition av ATP-meddelanden** visas de åtgärder som har vidtas för e-postmeddelanden som identifierats ha skadligt innehåll.
 
-Om du vill visa rapporten öppnar du [säkerhets & efterlevnad](https://protection.office.com), går till  \> **instrument paneler** för rapporter och väljer **Defender för Office 365 meddelande disposition**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=ATPMessageReport> .
+Om du vill visa rapporten öppnar du [säkerhets- & Efterlevnadscenter,](https://protection.office.com)går till instrumentpanelen Rapporter och väljer Defender för meddelandedispositionen  \>  i **Office 365.** Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=ATPMessageReport> .
 
-![Widget för Defender för Office 365 meddelande dispositioner i instrument panelen rapporter](../../media/atp-message-disposition-report-widget.png)
+![Dispositionswidget för Defender för Office 365 på instrumentpanelen Rapporter](../../media/atp-message-disposition-report-widget.png)
 
 > [!NOTE]
-> Informationen i den här rapporten är också tillgänglig i [rapporten fil typer i Defender för Office 365](#defender-for-office-365-file-types-report).
+> Informationen i den här rapporten är också tillgänglig i filtyperna Defender för [Office 365.](#defender-for-office-365-file-types-report)
 
-### <a name="report-view-for-the-defender-for-office-365-message-disposition-report"></a>Rapportvy för meddelande dispositions rapport för Defender för Office 365
+### <a name="report-view-for-the-defender-for-office-365-message-disposition-report"></a>Rapportvy för meddelandedispositionsrapporten i Defender för Office 365
 
 Följande vyer är tillgängliga:
 
-- **Visa data via: meddelande**: diagrammet innehåller följande information:
+- **Visa data efter: Meddelande:** Diagrammet innehåller följande information:
 
   - **Blockera åtkomst**
-  - **Meddelanden ersatta**
-  - **Meddelanden som övervakas**
-  - **Ersatt med dynamisk e-postleverans**: Mer information finns i [dynamisk leverans i principer för säkra bifogade filer](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
+  - **Meddelanden har ersatts**
+  - **Meddelanden övervakas**
+  - **Ersatt av Dynamisk e-postleverans:** Mer information finns [i principer för dynamisk leverans i principer för säkra bifogade filer.](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)
 
-  ![Vyn meddelande i rapporten fil typer i Defender för Office 365](../../media/atp-file-types-report-message-view.png)
+  ![Meddelandevyn i filtyperna Defender för Office 365](../../media/atp-file-types-report-message-view.png)
 
-  Om du klickar på **filter** kan du ändra rapporten med följande filter:
+  Om du **klickar på** Filter kan du ändra rapporten med följande filter:
 
-  - **Start datum** och **slutdatum**
-  - Samma meddelande dispositions värden som är tillgängliga i diagrammet och ytterligare **meddelanden** .
+  - **Startdatum** och **slutdatum**
+  - Samma dispositionsvärden för meddelanden som är tillgängliga i diagrammet och de ytterligare meddelanden som **överförs.**
 
-- **Visa data genom: fil**: diagrammet innehåller följande information:
+- **Visa data efter: Fil:** Diagrammet innehåller följande information:
 
-  - **Skadliga Excel-bilagor**
-  - **Skadliga Flash-filer**
-  - **Skadliga PDF-filer**
+  - **Skadliga bifogade Excel-bilagor**
+  - **Skadliga Flash-bilagor**
+  - **Skadliga BIFOGADE PDF-filer**
   - **Skadliga PowerPoint-bilagor**
-  - **Illasinnade URL: er**
-  - **Skadliga Word-bilagor**
-  - **Skadliga körbara filer**
-  - **Gemensamma**
+  - **Skadliga URL:er**
+  - **Skadliga bifogade Word-filer**
+  - **Skadliga körbara bifogade filer**
+  - **Andra**
 
-  När du håller mus pekaren över en viss dag (data punkt) kan du se en uppdelning av skadliga filer som identifieras av [säkra bifogade filer](atp-safe-attachments.md) och [skydd mot skadlig program vara i EOP](anti-malware-protection.md).
+  När du hovrar över en viss dag (datapunkt) kan du se [](atp-safe-attachments.md) en uppdelning av typer av skadliga filer som upptäckts av säkra bifogade filer och skydd mot skadlig [programvara i EOP.](anti-malware-protection.md)
 
-  ![Vyn Arkiv i rapporten fil typer i Defender för Office 365](../../media/atp-file-types-report-file-view.png)
+  ![Filvyn i filtyperna Defender för Office 365](../../media/atp-file-types-report-file-view.png)
 
-  Om du klickar på **filter** kan du ändra rapporten med följande filter:
+  Om du **klickar på** Filter kan du ändra rapporten med följande filter:
 
-  - **Start datum** och **slutdatum**
-  - Samma fil typs värden som visas i diagrammet.
+  - **Startdatum** och **slutdatum**
+  - Samma filtypsvärden som visas i diagrammet.
 
-### <a name="details-table-view-for-the-defender-for-office-365-message-disposition-report"></a>Vyn detaljerad tabell för meddelande dispositionen för Defender för Office 365
+### <a name="details-table-view-for-the-defender-for-office-365-message-disposition-report"></a>Detaljtabellvy för meddelandedispositionsrapporten i Defender för Office 365
 
-Om du klickar på **Visa informations tabell** visas en vy i real tid av alla klickningar i organisationen under de senaste 10 dagarna. Informationen som visas beror på diagrammet du tittade på:
+Om du **klickar på tabellen** Visa information visas en vy i nära realtid av alla klick som har hänt inom organisationen under de senaste 10 dagarna. Vilken information som visas beror på vilket diagram du visade:
 
-- **Visa data via: meddelande**:
+- **Visa data efter: Meddelande:**
 
   - **Datum**
-  - **Mottagarens adress**
+  - **Mottagaradress**
   - **Avsändarens adress**
   - **Meddelande-ID**
   - **Fil**
   - **Ämne**
 
-  Om du klickar på **filter** kan du ändra resultatet med följande filter:
+  Om du **klickar på** Filter kan du ändra resultatet med följande filter:
 
-  - **Start datum** och **slutdatum**
-  - Samma meddelande dispositions värden som är tillgängliga i diagrammet och ytterligare **meddelanden** .
+  - **Startdatum** och **slutdatum**
+  - Samma dispositionsvärden för meddelanden som är tillgängliga i diagrammet och de ytterligare meddelanden som **överförs.**
 
-- **Visa data per: fil**:
+- **Visa data efter: Fil:**
 
   - **Datum**
-  - **Mottagarens adress**
+  - **Mottagaradress**
   - **Avsändarens adress**
   - **Meddelande-ID**
   - **Fil**
 
-  Om du klickar på **filter** kan du ändra rapporten med följande filter:
+  Om du **klickar på** Filter kan du ändra rapporten med följande filter:
 
-  - **Start datum** och **slutdatum**
-  - Samma fil typs värden som visas i diagrammet.
+  - **Startdatum** och **slutdatum**
+  - Samma filtypsvärden som visas i diagrammet.
 
-Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
+Om du vill gå tillbaka till rapportvyn klickar du **på Visa rapport.**
 
-## <a name="mail-latency-report"></a>E-postrapport
+## <a name="mail-latency-report"></a>E-postsvarstid – rapport
 
-I **rapporten e-postsvars tid** visas en sammanslagen för leverans-och spräng tiden i din organisation. Leverans tiden för e-post påverkas av många faktorer och den absoluta leverans tiden i sekunder är ofta inte en bra indikation på framgång eller ett problem. En långsam leverans tid på en dag kan betraktas som en genomsnittlig leverans tid på en annan dag, eller tvärtom. I **rapporten e-postsvars tid** görs ett försök att kvalificera meddelande leverans baserat på statistik om den observerade leverans tiden för andra meddelanden:
+I **rapporten E-postfördröjning** visas en samlad vy av den e-postleverans och den tidsfördröjning som din organisation har haft. E-postleveranstiderna i tjänsten påverkas av ett antal faktorer, och den absoluta leveranstiden i sekunder är ofta inte en bra indikator på ett lyckat resultat eller ett problem. En långsam leveranstid på en dag kan ses som en genomsnittlig leveranstid på en annan dag, eller tvärtom. I **rapporten Mail latency** tries to qualify message delivery based on the statistical data about the observed delivery times of other messages:
 
-- **femtio percentil**: det här är mitten för leverans tider för meddelanden. Du kan betrakta detta värde som en genomsnittlig leverans tid.
-- **nittionde percentil**: Detta indikerar en hög latens för meddelande leverans. Det tog längre tid än 10 procent av meddelandena att leverera.
-- **99th percentil**: här visas den högsta svars tiden för meddelande leverans.
+- **50:e percentilen**: Det här är mitten för leveranstiden för meddelanden. Du kan betrakta det här värdet som en genomsnittlig leveranstid.
+- **90:e percentilen**: Det här anger en lång svarstid för meddelandeleveransen. Endast 10 % av meddelandena tog längre tid än det här värdet att leverera.
+- **99:e percentilen:** Det här anger den högsta svarstiden för meddelandeleveransen.
 
-Klient sidan och nätverks fördröjningen ingår inte.
+Klientsidan och nätverksfördröjning ingår inte.
 
-Om du vill visa rapporten öppnar du [säkerhets & efterlevnad](https://protection.office.com), går till  \> **instrument paneler** för rapporter och väljer **rapport om e-postsvar**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/mailLatencyReport?viewid=P50> .
+Om du vill visa rapporten öppnar du [Säkerhets- & Efterlevnadscenter,](https://protection.office.com)går till **instrumentpanelen** \> **Rapporter** och väljer E-postsvarstidsrapport.  Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/mailLatencyReport?viewid=P50> .
 
-![Widget för tids rapport för e-post i instrument panelen rapporter](../../media/mail-latency-report-widget.png)
+![Widget för rapport med e-postsvarstid på instrumentpanelen Rapporter](../../media/mail-latency-report-widget.png)
 
-### <a name="report-view-for-the-mail-latency-report"></a>Rapportvy för rapport om e-postsvar
+### <a name="report-view-for-the-mail-latency-report"></a>Rapportvy för rapporten E-postsvarstid
 
-När du öppnar rapporten är fliken **femtio percentil** markerad som standard.
+När du öppnar rapporten är den **50:e percentilfliken** markerad som standard.
 
 Som standard innehåller den här vyn ett diagram som är konfigurerat med följande filter:
 
-- **Datum**: de senaste 7 dagarna
-- **Meddelande vy**:
-  - Översprängta meddelanden
+- **Datum:** De senaste 7 dagarna
+- **Meddelandevy:**
+  - Detonerade meddelanden
 
 I det här diagrammet visas meddelanden ordnade i följande kategorier:
 
-- **Leverans svars tid för e-post**
-- **Fördröjning för sprängning**
+- **Svarstid för e-postleverans**
+- **Detonationssvarstid**
 
-När du hovrar över en kategori i diagrammet kan du se en uppdelning av svars tiden i varje kategori.
+När du hovrar över en kategori i diagrammet kan du se en uppdelning av svarstiden i varje kategori.
 
-![E-postrapport](../../media/mail-latency-report.png)
+![E-postsvarstid – rapport](../../media/mail-latency-report.png)
 
-Om du klickar på **filter** i rapportvyn kan du ändra resultatet med följande filter:
+Om du **klickar på** Filter i rapportvyn kan du ändra resultatet med följande filter:
 
 - Alla meddelanden
-- Meddelanden som innehåller bilagor eller URL: er
+- Meddelanden som innehåller bifogade filer eller URL-adresser
 
-Om du klickar på fliken **nittionde percentiler** eller på fliken **99th percentiler** används samma standard filter från vyn **50 percentiler** .
+Om du klickar på den **90:e** percentilfliken eller den **99:e** percentilfliken används samma standardfilter från den **50:e** percentilvyn.
 
-### <a name="details-table-view-for-the-mail-latency-report"></a>Vyn detaljerad tabell för rapporten e-postsvar
+### <a name="details-table-view-for-the-mail-latency-report"></a>Detaljtabellvy för rapporten E-postsvarstid
 
-Följande information visas i vyn detaljerad tabell:
+Följande information visas i detaljtabellvyn:
 
 - **Datum**
-- **Värden**
+- **Percentiler**
 - **Antal meddelanden**
-- **Total svars tid**
+- **Total svarstid**
 
-![Rapport information om e-postsvar](../../media/mail-latency-report-details.png)
+![Information om e-postfördröjningsrapport](../../media/mail-latency-report-details.png)
 
-Ovanstående visar att genomsnittlig tids åtgång den 14 november för alla meddelanden som levererats och sprängat sig **108,033** sekunder.
+Ovanstående visar att den genomsnittliga svarstiden för alla meddelanden som levererats och detonerat var **108,033** sekunder den 14 november.
 
-Tabellen information innehåller samma information på varje flik.
+Informationstabellen innehåller samma information på varje flik.
 
 ## <a name="threat-protection-status-report"></a>Statusrapport för hotskydd
 
-Status rapporten för **hotets skydd** är en enkel vy som innehåller information om skadligt innehåll och skadlig e-post som identifieras och blockeras av [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) och Microsoft Defender för Office 365. För mer information, se [status rapport för hot skydd](view-email-security-reports.md#threat-protection-status-report).
+Statusrapporten **för skydd** mot hot är en vy som samlar information om skadligt innehåll och skadlig e-post som identifieras och blockeras av [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) och Microsoft Defender för Office 365. Mer information finns i rapporten [om skydd mot hot.](view-email-security-reports.md#threat-protection-status-report)
 
-## <a name="url-threat-protection-report"></a>Rapport om skydd mot URL-hotet
+## <a name="url-threat-protection-report"></a>Rapport om URL-skydd
 
-**Rapporten skydd mot URL-hotet** innehåller översikts-och trend lägen för hot som upptäcks och åtgärder som vidtas på URL-adresser till vissa [säkra länkar](atp-safe-links.md). Den här rapporten kommer inte att behöva klicka på data från användare där **principen för Safe** Links har Aktiver ATS.
+Rapporten **om skydd mot URL-hot** innehåller sammanfattnings- och trendvyer för identifierade hot och åtgärder som vidtas på URL-klick som en del av Säkra [länkar.](atp-safe-links.md) Den här rapporten kommer inte att ha klickdata från användare där principen Säkra länkar har markerats med alternativet Spåra **inte användarklick.**
 
-Om du vill visa rapporten öppnar du [säkerhets & Compliance Center](https://protection.office.com), går till **rapport** \> **instrument panelen** och väljer **URL-skydd**. Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=URLProtectionActionReport> .
+Om du vill visa rapporten öppnar du [Säkerhets- & Efterlevnadscenter,](https://protection.office.com)går till **instrumentpanelen** \> **Rapporter** och väljer **EN URL-skyddsrapport.** Om du vill gå direkt till rapporten öppnar du <https://protection.office.com/reportv2?id=URLProtectionActionReport> .
 
-![Widgeten rapport om URL-skydd i instrument panelen rapporter](../../media/url-protection-report-widget.png)
+![Widget för URL-skyddsrapport på instrumentpanelen Rapporter](../../media/url-protection-report-widget.png)
 
 > [!NOTE]
-> Det här är en *skydds trend rapport* som visar trender i en större data mängd. Därför är data i den aggregerade vyn inte tillgängliga i real tid, men data i vyn detaljerad tabell är så att du kan se en liten avvikelse mellan de två vyerna.
+> Det här är en *trendrapport för skydd,* vilket innebär att data representerar trender i en större datauppsättning. Därför är data i mängdvyn inte tillgängliga i realtid här, men data i detaljtabellvyn är det, så du kan se små avvikelser mellan de två vyerna.
 
-### <a name="report-view-for-the-url-threat-protection-report"></a>Rapportvy för rapport om URL-Threat
+### <a name="report-view-for-the-url-threat-protection-report"></a>Rapportvy för rapporten om URL-hot
 
-Rapporten **skydd mot URL-hotet** har två aggregerade vyer som uppdateras en gång var fjärde timme som visar data för de senaste 90 dagarna:
+Rapporten **om skydd mot** webbadressshot har två sammanslagna vyer som uppdateras en gång var fjärde timme och som visar data för de senaste 90 dagarna:
 
-- **Webb adress klicka på skydds åtgärd**: visar antalet URL-musklick efter användare i organisationen och resultatet av klickning:
+- **Åtgärden URL-klickskydd:** Visar antalet URL-klick som användare i organisationen har klickat på och resultatet av klickning:
 
-  - **Blockerad** (användaren hindrades från att gå till URL-adressen)
-  - **Blockerad och klickat genom**
-  - **Klickning genom under genomsökning**
+  - **Blockerad** (användaren blockerades från att navigera till URL:en)
+  - **Blockeras och klickas igenom**
+  - **Klickade igenom under genomsökning**
 
-  Ett klick visar att användaren har klickat via block sidan till webbplatsen för illasinnade webbplatser (administratörer kan inaktivera Klicka genom i principer för säkra länkar).
+  Ett klick indikerar att användaren har klickat igenom blockeringssidan till den skadliga webbplatsen (administratörer kan inaktivera klicka sig igenom i principer för säkra länkar).
 
-  Om du klickar på **filter** kan du ändra rapporten med följande filter:
+  Om du **klickar på** Filter kan du ändra rapporten med följande filter:
 
-  - **Start datum** och **slutdatum**
-  - De tillgängliga Klicka på skydds åtgärder plus värdet som **tillåts** (användaren kunde navigera till URL: en).
+  - **Startdatum** och **slutdatum**
+  - De tillgängliga åtgärderna för klickskydd plus värdet **Tillåts** (användaren tilläts att navigera till URL:en).
 
-  ![URL-adress klicka på skydds åtgärd i rapporten URL-skydd](../../media/url-threat-protection-report-url-click-protection-action-view.png)
+  ![Åtgärdsvy för URL-klickskydd i rapporten om skydd mot URL-hot](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
-- **URL-adress klicka** här: visar antalet URL-musklick med program som stöder säkra länkar:
+- **URL-klick per** program: Visar antalet URL-klick för program som stöder säkra länkar:
 
   - **E-postklient**
   - **PowerPoint**
@@ -301,60 +305,63 @@ Rapporten **skydd mot URL-hotet** har två aggregerade vyer som uppdateras en g�
   - **Teams**
   - **Annat**
 
-  Om du klickar på **filter** kan du ändra rapporten med följande filter:
+  Om du **klickar på** Filter kan du ändra rapporten med följande filter:
 
-  - **Start datum** och **slutdatum**
-  - Tillgängliga program.
+  - **Startdatum** och **slutdatum**
+  - De tillgängliga programmen.
 
-### <a name="details-table-view-for-the-url-threat-protection-report"></a>Vyn detaljerad tabell för rapportering av URL-hotet
+### <a name="details-table-view-for-the-url-threat-protection-report"></a>Detaljtabellvy för rapporten om skydd mot URL-hot
 
-Om du klickar på **Visa informations tabell** visas en vy i real tid av alla klickningar i organisationen under de senaste 7 dagarna med följande information:
+Om du **klickar på** tabellen Visa information ger rapporten en nästan realtidsvy över alla klick som har hänt inom organisationen under de senaste 7 dagarna med följande information:
 
-- **Klicka på tid**
+- **Klicka tid**
 - **Användare**
-- **:**
+- **URL**
 - **Åtgärd**
 - **Program**
 
-Om du klickar på **filter** i vyn detaljerad tabell kan du filtrera efter samma villkor som i rapportvyn och även efter **domäner** eller **mottagare** avgränsade med kommatecken.
+Om du klickar **på Filter** i detaljtabellvyn kan du filtrera efter samma  villkor  som i rapportvyn och även efter Domäner eller Mottagare avgränsade med kommatecken.
 
-Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
+> [!NOTE]
+> **Domänfiltret** refererar till URL-domänen som visas i rapportresultaten. 
 
-## <a name="additional-reports-to-view"></a>Ytterligare rapporter att Visa
+Om du vill gå tillbaka till rapportvyn klickar du **på Visa rapport.**
 
-Utöver de rapporter som beskrivs i den här artikeln är flera andra rapporter tillgängliga enligt följande tabell:
+## <a name="additional-reports-to-view"></a>Ytterligare rapporter att visa
+
+Utöver rapporterna som beskrivs i den här artikeln finns det flera andra rapporter tillgängliga enligt beskrivningen i följande tabell:
 
 ****
 
-|Rapport|Ämnes|
+|Rapport|Ämne|
 |---|---|
-|**Explorer** (Microsoft Defender för Office 365 abonnemang 2) eller **real tids identifiering** (microsoft Defender för Office 365 abonnemang 1)|[Hotutforskaren (och realtidsidentifieringar)](threat-explorer.md)|
-|**Säkerhets rapporter för e-post**, till exempel rapporten Top avsändare och mottagare, rapporten Spoof meddelanden och rapporten skräp identifiering.|[Visa säkerhets rapporter för e-post i säkerhets & efterlevnad](view-email-security-reports.md)|
-|**E-postflödes rapporter**, till exempel vidarebefordran, rapporten flödes schema och rapport om avsändare och mottagare.|[Visa rapporter om e-postflöden i säkerhets & Compliance Center](view-mail-flow-reports.md)|
-|**URL-spårning för säkra länkar** (endast PowerShell). Utdata från denna cmdlet visar resultaten av åtgärder för säkra länkar under de senaste sju dagarna.|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
-|**Resultat för e-posttrafik för EOP och Microsoft Defender för Office 365** (endast PowerShell). Utdata från den här cmdleten innehåller information om domäner, datum, händelse typ, riktning, åtgärd och antal meddelanden.|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
-|**E-postdetaljerade rapporter för EOP och Defender för Office 365-identifiering** (endast PowerShell). Utdata från den här cmdleten innehåller information om skadliga filer och URL-adresser, nät fiske försök, personifiering och andra potentiella hot i e-post och filer.|[Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
+|**Utforskaren** (Microsoft Defender för Office 365 abonnemang 2) eller identifieringar i realtid **(Microsoft** Defender för Office 365 abonnemang 1)|[Hotutforskaren (och realtidsidentifieringar)](threat-explorer.md)|
+|**Säkerhetsrapporter för** e-post, till exempel rapporten De viktigaste avsändarna och mottagarna, rapporten Spoof Mail och rapporten Om identifiering av skräppost.|[Visa e-postsäkerhetsrapporter i Säkerhets- & Efterlevnadscenter](view-email-security-reports.md)|
+|**E-postflödesrapporter,** till exempel vidarebefordransrapporten, statusrapporten E-postflöde och rapporten De viktigaste avsändarna och mottagarna.|[Visa e-postflödesrapporter i Säkerhets- & Efterlevnadscenter](view-mail-flow-reports.md)|
+|**URL-spårning för säkra länkar** (endast PowerShell). Resultatet av den här cmdleten visar resultatet av åtgärder för Säkra länkar under de senaste sju dagarna.|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
+|**EOP- och Microsoft Defender-resultat för e-posttrafik för Office 365** (endast PowerShell). Utdata för den här cmdleten innehåller information om domän, datum, händelsetyp, riktning, åtgärd och antal meddelanden.|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
+|**E-postdetaljrapporter för identifiering av EOP och Defender för Office 365** (endast PowerShell). Utdata från den här cmdleten innehåller information om skadliga filer eller URL:er, nätfiskeförsök, personifiering och andra potentiella hot i e-postmeddelanden och filer.|[Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
 |
 
-## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Vilka behörigheter behövs för att Visa Defender för Office 365-rapporterna?
+## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Vilka behörigheter krävs för att visa Defender för Office 365-rapporter?
 
-För att kunna visa och använda de rapporter som beskrivs i den här artikeln måste du vara medlem i någon av följande roll grupper i säkerhets & Compliance Center:
+För att kunna visa och använda rapporterna som beskrivs i den här artikeln måste du vara medlem i någon av följande rollgrupper i Säkerhets- och & Efterlevnadscenter:
 
 - **Organisationshantering**
-- **Säkerhets administratör**
-- **Säkerhets läsare**
-- **Global läsare**
+- **Säkerhetsadministratör**
+- **Säkerhetsläsare**
+- **Global Reader**
 
 Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
-**Obs!** när du lägger till användare i motsvarande Azure Active Directory-roll i Microsoft 365 Admin Center får användarna den behörighet som krävs för säkerhets & efterlevnad Center _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+**Obs!** Om du lägger till användare till motsvarande Azure Active Directory-roll i administrationscentret för Microsoft  365 får användarna de behörigheter som krävs i säkerhets- och efterlevnadscentret för & och behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Vad händer om rapporterna inte visar data?
 
-Om du inte ser data i din Defender för Office 365-rapporter kontrollerar du att dina principer är korrekt konfigurerade. Din organisation måste ha principer för [säkert](set-up-atp-safe-links-policies.md) och [bifogade filer](set-up-atp-safe-attachments-policies.md) definierade för att Defender för Office 365-skydd ska vara installerat. Se även [antiskräppost-och skydd mot skadlig program vara](anti-spam-and-anti-malware-protection.md).
+Om du inte ser data i Defender för Office 365-rapporterna kontrollerar du att dina principer är korrekt konfigurerade. Organisationen måste ha principer [](set-up-atp-safe-attachments-policies.md) [för säkra länkar](set-up-atp-safe-links-policies.md) och principer för säkra bifogade filer definierade för att Defender ska kunna använda Office 365-skyddet. Se även [Skydd mot skräppost och skadlig programvara.](anti-spam-and-anti-malware-protection.md)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Smarta rapporter och insikter i säkerhets & efterlevnad](reports-and-insights-in-security-and-compliance.md)
+[Smarta rapporter och insikter i Säkerhets- & Efterlevnadscenter](reports-and-insights-in-security-and-compliance.md)
 
-[Roll behörigheter (Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
+[Rollbehörigheter (Azure Active Directory)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

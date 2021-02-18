@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,29 +16,31 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Lär dig som extern avsändare, hur kan du öka möjligheten att skicka e-post till användare i Microsoft 365. Läs även hur du rapporterar skräp post & nätfiske-försök som extern användare.
-ms.openlocfilehash: 0c0a981d12fa5b8159789a69597f83eb15d9b194
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Lär dig hur du som extern avsändare kan öka möjligheten att leverera e-post till användare i Microsoft 365. Lär dig också hur du rapporterar skräppost & nätfiskeförsök som en extern användare.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 4869b0f02415b3802b34625789817068cbe14c57
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196803"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "50286579"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Skicka e-post till Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-De här artiklarna hjälper externa avsändare att förbättra sitt rykte och öka sin förmåga att skicka e-post till användare i Microsoft 365. De innehåller också information om hur du kan rapportera skräp post och nät fiske försök även om du inte är en Microsoft 365-användare själv.
+De här artiklarna hjälper externa avsändare att förbättra sitt rykte och ökar möjligheten att leverera e-post till användare i Microsoft 365. De ger också viss information om hur du kan rapportera skräppost och nätfiskeförsök även om du inte är Microsoft 365-användare själv.
 
-Om du inte är kund men försöker skicka e-post till någon i Vem är du på rätt plats. Om du är administratör och behöver hjälp med att bekämpa skräp post är det här inte rätt avsnitt för dig. I stället kan du gå till [skydd mot skräp post och skyddar mot skadlig program vara i Microsoft 365](anti-spam-and-anti-malware-protection.md).
+Om du inte är kund men försöker skicka e-post till någon som är det, har du rätt plats. Om du är administratör och behöver hjälp med att bekämpa skräppost är det här inte rätt avsnitt för dig. Gå i stället till Skydd mot skräppost och skadlig programvara [i Microsoft 365.](anti-spam-and-anti-malware-protection.md)
 
 ****
 
-|Information om...|Se...|
+|Om du vill veta mer om...|Se...|
 |---|---|
-|Tjänster vi tillhandahåller administratörer för e-postsystem som skickar enskilda och Mass utskick via e-post till kunder.|[Tjänster för ej kunder som skickar e-post till Office 365](services-for-non-customers.md)|
-|Så här löser du problem med att nå kunder i Microsoft 365 via e-post. Metod tips för att skicka mass utskick till Microsoft 365-mottagare.|[Felsöka e-post som skickas till Office 365](troubleshooting-mail-sent-to-office-365.md)|
-|Hur Microsoft 365 hindrar skräp post, till exempel nätfiske och falska e-post, från att skickas till våra kunder.|[Skydd mot skräp post i Microsoft 365](anti-spam-protection.md)|
-|Hur du, en administratör som skickar e-post till Microsoft 365-kunder, kan förhindra att e-post blockeras genom att följa våra policyer för skräp post skydd. Det här är de juridiska saker du behöver veta.|[Referens: principer, övningar och riktlinjer](reference-policies-practices-and-guidelines.md)|
+|Tjänster vi tillhandahåller till administratörer av e-postsystem som skickar enskilda e-postmeddelanden och massutskick till kunder.|[Tjänster för icke-kunder som skickar e-post till Office 365](services-for-non-customers.md)|
+|Hur du åtgärdar problem med att nå kunder i Microsoft 365 via e-post. Metodtips för att skicka massutskick till Microsoft 365-mottagare.|[Felsöka e-post som skickas till Office 365](troubleshooting-mail-sent-to-office-365.md)|
+|Hur Microsoft 365 förhindrar skräppost, inklusive nätfiske och förfalskning, från att skickas till våra kunder.|[Skydd mot skräppost i Microsoft 365](anti-spam-protection.md)|
+|Hur du som administratör skickar e-post till Microsoft 365-kunder kan undvika att e-post blockeras genom att följa våra principer för skydd mot skräppost. Det här är den juridiska information du behöver veta.|[Referens: principer, övningar och riktlinjer](reference-policies-practices-and-guidelines.md)|
 |

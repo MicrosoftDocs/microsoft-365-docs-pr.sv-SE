@@ -15,27 +15,27 @@ ms.custom:
 description: I den här artikeln får du lära dig hur du använder PowerShell för att använda konfigurationsinställningar för klientorganisationen i Microsoft Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b7d856a7cec3bddc32455ba3afadf0323ddce935
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 4823ed09cd8a9d72aef21df3d51213cb4512b4f9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166597"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288543"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>Exempelskript för att tillämpa EOP-inställningar i flera klientorganisationer
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
--  [Exchange Online Protection fristående](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection fristående](exchange-online-protection-overview.md)
 
 Med följande exempelskript kan Microsoft Exchange Online Protection-administratörer (EOP) som hanterar flera innehavare (företag) använda Exchange Online PowerShell för att visa och/eller använda konfigurationsinställningar för sina klientorganisationar.
 
 ## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>Köra ett skript eller en cmdlet på flera klientorganisationar
 
-1. Om du inte redan har gjort det installerar [du Exchange Online V2-modulen.](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)
+1. Om du inte redan har gjort det [installerar du Exchange Online V2-modulen.](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)
 
-2. Använd ett kalkylbladsprogram (till exempel Excel) och skapa en CSV-fil med följande information:
+2. Skapa en CSV-fil med följande information med hjälp av ett kalkylblad (till exempel Excel):
 
    - Kolumnen Användarnamn: Det konto som du kommer att använda för att ansluta (till `admin@contoso.onmicrosoft.com` exempel).
    - Kolumnen Cmdlet: Cmdleten eller kommandot som ska köras (till exempel `Get-AcceptedDomain` eller `Get-AcceptedDomain | FT Name` ).
@@ -69,7 +69,7 @@ Med följande exempelskript kan Microsoft Exchange Online Protection-administrat
 ## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
 
 > [!NOTE]
-> Du kan behöva ändra raden `Connect-IPPSSession` i skriptet så att den matchar din miljö. Till exempel kräver Office 365 Germany ett annat _ConnectionUri-värde_ än det aktuella värdet i ett skript. Mer information finns i Ansluta till [Exchange Online Powershell.](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)
+> Du kan behöva ändra raden `Connect-IPPSSession` i skriptet så att den matchar din miljö. Office 365 Germany kräver till exempel ett annat _ConnectionUri-värde_ än det aktuella värdet i ett skript. Mer information finns i Ansluta till [Exchange Online Powershell.](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)
 
 ```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.

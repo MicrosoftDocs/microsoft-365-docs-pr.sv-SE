@@ -18,26 +18,26 @@ description: Administratörer kan lära sig att dirigera skräppost till använd
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 926ac6dec33bf00fc8f0dcd292229e20ccc2b93f
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: b8fbc1b065e348f759806d80fd85421eb9d66098
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167125"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288879"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
--  [Exchange Online Protection fristående](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection fristående](exchange-online-protection-overview.md)
 
 > [!IMPORTANT]
 > Det här avsnittet gäller endast fristående EOP-kunder i hybridmiljöer. Det här avsnittet gäller inte för Microsoft 365-kunder med Exchange Online-postlådor.
 
 Om du är en fristående Exchange Online Protection-kund (EOP) i en hybridmiljö måste du konfigurera den lokala Exchange-organisationen så att den identifierar och översätter skräppostfiltreringsregel för EOP, så att skräppostregeln i den lokala postlådan kan flytta meddelanden till mappen Skräppost.
 
-Specifikt måste du skapa e-postflödesregler (kallas även transportregler) i din lokala Exchange-organisation med villkor som hittar meddelanden med något av följande EOP-värden för skydd mot skräppost och åtgärder som anger SCL (Spam Confidence Level) för dessa meddelanden till 6:
+Specifikt måste du skapa e-postflödesregler (kallas även transportregler) i din lokala Exchange-organisation med villkor som hittar meddelanden med något av följande EOP-värden för skydd mot skräppost, och åtgärder som anger SCL (Spam Confidence Level) för dessa meddelanden till 6:
 
 - `X-Forefront-Antispam-Report: SFV:SPM` (meddelande som markerats som skräppost med skräppostfiltrering)
 
@@ -94,7 +94,7 @@ I det här avsnittet beskrivs hur du skapar de här e-postflödesreglerna i admi
 
    - Klicka **på Fler alternativ.**
 
-   - **Använd den här regeln om:** Välj **ett** \> **meddelandehuvud innehåller något av dessa ord.**
+   - **Använd den här regeln om:** **Välj ett** \> **meddelandehuvud som innehåller något av dessa ord.**
 
      Gör så **här i textrubriken Ange** ord som visas:
 
@@ -148,7 +148,7 @@ Kontrollera att du har konfigurerat fristående EOP för att leverera skräppost
 
 - I ett externt e-postsystem som inte söker igenom utgående meddelanden efter **skräppost** skickar du ett allmänt test för oombedd GTUBE-meddelande (Massutskick) till en mottagare och bekräftar att det har levererats till mappen Skräppost. Ett GTUBE-meddelande liknar EICAR-textfilen (European Institute for Computer Antivirus Research) för att testa inställningar för skadlig kod.
 
-  När du vill skicka ett GTUBE-meddelande ska du ta med följande text i brödtexten i ett e-postmeddelande på en enda rad, utan blanksteg eller radbrytningar:
+  Om du vill skicka ett GTUBE-meddelande ska du ta med följande text i brödtexten i ett e-postmeddelande på en enda rad, utan blanksteg eller radbrytningar:
 
   ```text
   XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X

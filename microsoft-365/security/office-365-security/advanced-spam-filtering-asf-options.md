@@ -19,26 +19,26 @@ ms.custom:
 description: Administratörer kan lära sig mer om inställningarna för avancerat skräppostfilter (ASF) som finns tillgängliga i principer för skydd mot skräppost i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec316c98befada7a793f525be909ba0b8fa5e3ae
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 0b6db02815f5b50d199e10685e2895a174997fd2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176057"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288687"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Avancerade inställningar för skräppostfilter (ASF) i EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!NOTE]
-> ASF-inställningar som för närvarande är tillgängliga i principer för skydd mot skräppost håller på att bli inaktuella. Vi rekommenderar att du inte använder de här inställningarna i principer mot skräppost. Funktionerna i de här ASF-inställningarna införlivas i andra delar av filtreringsstacken. Mer information finns i principinställningarna [för EOP-skydd mot skräppost.](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)
+> ASF-inställningar som för närvarande är tillgängliga i principer för skydd mot skräppost håller på att bli föråldrade. Vi rekommenderar att du inte använder de här inställningarna i principer mot skräppost. Funktionerna i de här ASF-inställningarna införlivas i andra delar av filtreringsstacken. Mer information finns i principinställningarna [för EOP-skydd mot skräppost.](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)
 
-I alla Microsoft 365-organisationer tillåter ASF-inställningarna (Advanced Spam Filter) i principer för skräppostskydd i EOP att administratörer markerar meddelanden som skräppost baserat på specifika meddelandeegenskaper. ASF riktar sig specifikt mot dessa egenskaper eftersom de ofta förekommer i skräppost. Beroende på egenskapen markerar ASF-identifieringar antingen meddelandet **som** skräppost eller skräppost **med hög konfidens.**
+I alla Microsoft 365-organisationer tillåter ASF-inställningarna (Advanced Spam Filter) i principer för skräppostskydd i EOP att administratörer markerar meddelanden som skräppost baserat på specifika meddelandeegenskaper. ASF riktar sig specifikt mot dessa egenskaper eftersom de ofta förekommer i skräppost. Beroende på egenskapen markerar ASF-identifieringar antingen meddelandet **som** skräppost eller **skräppost med hög konfidens.**
 
 > [!NOTE]
 > Att aktivera en eller flera av ASF-inställningarna är en mer aggressiv metod för skräppostfiltrering. Du kan inte rapportera meddelanden som filtreras av ASF som falska positiva resultat. Du kan identifiera meddelanden som filtrerats med ASF genom att:
@@ -63,7 +63,7 @@ För varje ASF-inställning finns följande alternativ i principerna för skydd 
 
   - **Inget:** Leverans av meddelanden påverkas inte av identifieringen av ASF. Meddelandet omfattas fortfarande av andra typer av filtrering och regler i EOP.
 
-  - **Lägg till X-sidhuvudtext *(AddXHeader)*** som `X-CustomSpam: This message was filtered by the custom spam filter option` standard: X-sidhuvudvärdet läggs till i meddelandet. Du kan använda det här värdet i Inkorgsregler eller e-postflödesregler (kallas även transportregler) för att påverka leveransen av meddelandet.
+  - **Lägg till X-sidhuvudtext *(AddXHeader)***– X-sidhuvudvärdet `X-CustomSpam: This message was filtered by the custom spam filter option` läggs till i meddelandet. Du kan använda det här värdet i Inkorgsregler eller e-postflödesregler (kallas även transportregler) för att påverka leveransen av meddelandet.
 
   - **Skicka hemlig kopia *(BccMessage)***: De angivna e-postadresserna *(parametervärdet TestModeBccToRecipients* i PowerShell) läggs till i fältet Hemlig kopia i meddelandet och meddelandet levereras till ytterligare mottagare av Hemlig kopia. I Säkerhets- & Du avgränsar flera e-postadresser med semikolon (;). I PowerShell avgränsar du flera e-postadresser med kommatecken.
 
@@ -73,7 +73,7 @@ För varje ASF-inställning finns följande alternativ i principerna för skydd 
 
     - **Filtrering av villkorsstyrd avsändare-ID: hårt fel** *(MarkAsSpamFromAddressAuthFail)*
     - **NDR backscatter***(MarkAsSpamNdrBackscatter*)
-    - **SPF-post: hård fail** *(MarkAsSpamSpfRecordHardFail*)
+    - **SPF-post: hard fail** *(MarkAsSpamSpfRecordHardFail*)
 
   - Samma testlägesåtgärd tillämpas på *alla* ASF-inställningar som är inställda på **Test.** Du kan inte konfigurera olika testlägesåtgärder för olika ASF-inställningar.
 
@@ -102,12 +102,12 @@ Följande ASF-inställningar ställer in SCL för detekterade meddelanden  på 9
 |**Tomma meddelanden** <p> *MarkAsSpamEmptyMessages*|Meddelanden utan ämne, inget innehåll i meddelandets brödtext och inga bifogade filer markeras som skräppost med hög konfidens.|`X-CustomSpam: Empty Message`|
 |**JavaScript eller VBScript i HTML** <p> *MarkAsSpamJavaScriptInHtml*|Meddelanden som använder JavaScript eller Visual Basic Script Edition i HTML markeras som skräppost med hög konfidens. <p> De här skriptspråken används i e-postmeddelanden för att orsaka att specifika åtgärder sker automatiskt.|`X-CustomSpam: Javascript or VBscript tags in HTML`|
 |**Ram- eller IFrame-taggar i HTML** <p> *MarkAsSpamFramesInHtml*|Meddelanden som innehåller `<frame>` eller `<iframe>` HTML-taggar markeras som skräppost med hög konfidens. <p> De här taggarna används i e-postmeddelanden för att formatera sidan för att visa text eller grafik.|`X-CustomSpam: IFRAME or FRAME in HTML`|
-|**Objekttaggar i HTML** <p> *MarkAsSpamObjectTagsInHtml*|Meddelanden som innehåller `<object>` HTML-taggar markeras som skräppost med hög konfidens. <p> Den här taggen tillåter att plugin-program körs i ett HTML-fönster.|`X-CustomSpam: Object tag in html`|
+|**Objekttaggar i HTML** <p> *MarkAsSpamObjectTagsInHtml*|Meddelanden som innehåller `<object>` HTML-taggar markeras som skräppost med hög konfidens. <p> Med den här taggen kan plugin-program och plugin-program köras i ett HTML-fönster.|`X-CustomSpam: Object tag in html`|
 |**Bädda in taggar i HTML** <p> *MarkAsSpamEmbedTagsInHtml*|Meddelanden som innehåller `<embed>` HTML-taggar markeras som skräppost med hög konfidens. <p> Med den här taggen kan du bädda in olika typer av dokument i ett HTML-dokument (till exempel ljud, videor eller bilder).|`X-CustomSpam: Embed tag in html`|
 |**Formulärtaggar i HTML** <p> *MarkAsSpamFormTagsInHtml*|Meddelanden som innehåller `<form>` HTML-taggar markeras som skräppost med hög konfidens. <p> Den här taggen används för att skapa webbplatsformulär. E-postannonser innehåller ofta den här taggen för att begära information från mottagaren.|`X-CustomSpam: Form tag in html`|
-|**Webbbuggar i HTML** <p> *MarkAsSpamWebBugsInHtml*|En *webbfel* (kallas även *webb-beacon)* är ett grafiskt element (ofta en bildpunkt i en bildpunkt) som används i e-postmeddelanden för att avgöra om meddelandet har lästs av mottagaren. <p> Meddelanden som innehåller webbbuggar markeras som skräppost med hög förtroende. <p> Legitima nyhetsbrev kan använda webbbuggar, men många anser att det här är en sekretesskydd. |`X-CustomSpam: Web bug`|
-|**Använda lista med känsliga ord** <p> *MarkAsSpamSensitiveWordList*|Microsoft har en dynamisk men icke-redigerbar lista med ord som associeras med potentiellt stötande meddelanden. <p> Meddelanden som innehåller ord från den känsliga ordlistan i ämnes- eller meddelandetexten markeras som skräppost med hög konfidens.|`X-CustomSpam: Sensitive word in subject/body`|
+|**Webbbuggar i HTML** <p> *MarkAsSpamWebBugsInHtml*|En *webbfel* (kallas även *webb-beacon)* är ett grafiskt element (ofta en bildpunkt i en bildpunkt) som används i e-postmeddelanden för att avgöra om meddelandet har lästs av mottagaren. <p> Meddelanden som innehåller webbbuggar markeras som skräppost med hög förtroende. <p> Legitima nyhetsbrev kan använda webbbuggar, även om många anser att det här är en sekretesskydd. |`X-CustomSpam: Web bug`|
+|**Använda lista med känsliga ord** <p> *MarkAsSpamSensitiveWordList*|Microsoft har en dynamisk men icke-redigerbar lista över ord som associeras med potentiellt stötande meddelanden. <p> Meddelanden som innehåller ord från den känsliga ordlistan i ämnes- eller meddelandetexten markeras som skräppost med hög konfidens.|`X-CustomSpam: Sensitive word in subject/body`|
 |**SPF-post: hårt fel** <p> *MarkAsSpamSpfRecordHardFail*|Meddelanden som skickas från en IP-adress som inte anges i SPF Sender Policy Framework (SPF)-posten (Sender Policy Framework) i DNS för käll-e-postdomänen markeras som skräppost med hög konfidens. <p> Testläget är inte tillgängligt för den här inställningen.|`X-CustomSpam: SPF Record Fail`|
-|**Filtrering av villkorsstyrd avsändare-ID: hårt fel** <p> *MarkAsSpamFromAddressAuthFail*|Meddelanden som hårt misslyckas med en kontroll av villkorsstyrd avsändar-ID markeras som skräppost. <p> Den här inställningen kombinerar en SPF-kontroll med en Sender ID-kontroll för att skydda mot meddelanderubriker som innehåller förfalskade avsändare. <p> Testläget är inte tillgängligt för den här inställningen.|`X-CustomSpam: SPF From Record Fail`|
-|**NDR-bakåtcatter** <p> *MarkAsSpamNdrBackscatter*|*Bakåtcatter är bara* onödiga rapporter om utebliven leverans (kallas även NDR-rapporter eller icke-leveranskavsändarmeddelanden) som orsakas av förfalskade avsändare i e-postmeddelanden. Mer information finns i [Meddelanden på grund av bakåtcatter och EOP.](backscatter-messages-and-eop.md) <p> Du behöver inte konfigurera den här inställningen i följande miljöer eftersom legitima NDR-meddelanden levereras och bakåtcatter markeras som skräppost: <ul><li>Microsoft 365-organisationer med Exchange Online-postlådor.</li><li>Lokala e-postorganisationer där du dirigerar *utgående e-post* via EOP.</li></ul> <p> I fristående EOP-miljöer som skyddar inkommande e-post till lokala postlådor ger det här resultatet att aktivera eller inaktivera den här inställningen: <ul><li> **Den:** Legitima NDR-meddelanden levereras och bakåtcatter markeras som skräppost.</li><li>**Av:** Legitima NDR-meddelanden och bakåtcatter går igenom vanlig skräppostfiltrering. De flesta legitima NDR-meddelanden levereras till den ursprungliga meddelandeavsändaren. Vissa, men inte alla, bakåtcatter markeras som skräppost med hög konfidens. Per definition kan bakåtcatter bara levereras till den falska avsändaren, inte till den ursprungliga avsändaren.</li></ul> <p> Testläget är inte tillgängligt för den här inställningen.|`X-CustomSpam: Backscatter NDR`|
+|**Filtrering av villkorsstyrd avsändare-ID: hårt fel** <p> *MarkAsSpamFromAddressAuthFail*|Meddelanden som misslyckas på ett villkorat avsändar-ID markeras som skräppost. <p> Den här inställningen kombinerar en SPF-kontroll med en Sender ID-kontroll för att skydda mot meddelanderubriker som innehåller förfalskade avsändare. <p> Testläget är inte tillgängligt för den här inställningen.|`X-CustomSpam: SPF From Record Fail`|
+|**NDR-bakåtcatter** <p> *MarkAsSpamNdrBackscatter*|*Bakåtcatter är bara* onödiga rapporter om utebliven leverans (kallas även NDR-rapporter eller icke-leveranskavsändarmeddelanden) som orsakas av förfalskade avsändare i e-postmeddelanden. Mer information finns i [Meddelanden på grund av bakåtcatter och EOP.](backscatter-messages-and-eop.md) <p> Du behöver inte konfigurera den här inställningen i följande miljöer eftersom legitima NDR-meddelanden levereras och bakåtcatter markeras som skräppost: <ul><li>Microsoft 365-organisationer med Exchange Online-postlådor.</li><li>Lokala e-postorganisationer där du dirigerar *utgående e-post* via EOP.</li></ul> <p> I fristående EOP-miljöer som skyddar inkommande e-post till lokala postlådor ger det här resultatet att aktivera eller inaktivera den här inställningen: <ul><li> **På:** Legitima NDR-meddelanden levereras och bakåtcatter markeras som skräppost.</li><li>**Av:** Legitima NDR-meddelanden och bakåtcatter går igenom vanlig skräppostfiltrering. De flesta legitima NDR-meddelanden levereras till den ursprungliga meddelandeavsändaren. Vissa, men inte alla, bakåtcatter markeras som skräppost med hög konfidens. Per definition kan bakåtcatter bara levereras till den falska avsändaren, inte till den ursprungliga avsändaren.</li></ul> <p> Testläget är inte tillgängligt för den här inställningen.|`X-CustomSpam: Backscatter NDR`|
 |

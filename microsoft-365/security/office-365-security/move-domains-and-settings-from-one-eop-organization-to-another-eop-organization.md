@@ -15,19 +15,19 @@ ms.custom:
 description: I den här artikeln får du lära dig hur du flyttar domäner och inställningar från en Organisation (EOP) (Microsoft Exchange Online Protection) till en annan organisation (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4cfb5c31728174f7f7307e9492abc03a62f8bf9a
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 42a212c1826f63f9e7ed8395fe1d6b6564625b7b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150766"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287779"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Flytta domäner och inställningar från en EOP-organisation till en annan
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
--  [Exchange Online Protection fristående](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection fristående](exchange-online-protection-overview.md)
 
 Om du ändrar affärskrav kan det ibland kräva att du delar upp en Microsoft Exchange Online Protection-organisation (EOP) i två separata organisationer, kopplar två organisationer till en eller flyttar domänerna och EOP-inställningarna från en organisation till en annan organisation. Det kan vara svårt att flytta från en EOP-organisation till en andra EOP-organisation, men med några grundläggande Windows PowerShell-fjärrskript och lite förberedelse kan detta uppnås med ett relativt litet underhållsfönster.
 
@@ -75,7 +75,7 @@ mkdir C:\EOP\Export
 cd C:\EOP\Export
 ```
 
-Följande skript kan användas för att samla in alla e-postanvändare, grupper, inställningar för skydd mot skräppost, inställningar för skadlig programvara, kopplingar och e-postflödesregler i källorganisationen. Kopiera och klistra in följande text i en textredigerare som Anteckningar, spara filen som Source_EOP_Settings.ps1 i exportkatalogen du just har skapat och kör följande kommando:
+Följande skript kan användas för att samla in alla e-postanvändare, grupper, inställningar för skydd mot skräppost, inställningar för skadlig programvara, kopplingar och e-postflödesregler i källorganisationen. Kopiera och klistra in följande text i en textredigerare som Anteckningar, spara filen som den Source_EOP_Settings.ps1 i exportkatalogen som du just har skapat och kör följande kommando:
 
 ```PowerShell
 & "C:\EOP\Export\Source_EOP_Settings.ps1"
@@ -179,7 +179,7 @@ Foreach ($domain in $Domains) {
 }
 ```
 
-Nu kan du granska och samla in informationen från målorganisationens Microsoft 365-administrationscenter så att du snabbt kan verifiera domänerna när det är dags:
+Nu kan du granska och samla in informationen från målorganisationens Administrationscenter för Microsoft 365 så att du snabbt kan verifiera domänerna när det är dags:
 
 1. Logga in på administrationscentret för Microsoft 365 på <https://portal.office.com> .
 
@@ -193,7 +193,7 @@ Nu kan du granska och samla in informationen från målorganisationens Microsoft
 
 5. Spela in MX-posten eller TXT-posten som du använder för att verifiera din domän och slutför installationsguiden.
 
-6. Lägg till txt-verifieringsposterna i dina DNS-poster. Det gör att du snabbare kan verifiera domänerna i källorganisationen när de tagits bort från målorganisationen. Mer information om hur du konfigurerar DNS finns [i Skapa DNS-poster hos valfri DNS-värd för Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
+6. Lägg till verifieringen TXT-poster i dina DNS-poster. Det gör att du snabbare kan verifiera domänerna i källorganisationen när de tagits bort från målorganisationen. Mer information om hur du konfigurerar DNS finns [i Skapa DNS-poster hos valfri DNS-värd för Microsoft 365.](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
 
 ## <a name="step-3-force-senders-to-queue-mail"></a>Steg 3: Tvinga avsändare att köa e-post
 
@@ -203,7 +203,7 @@ Ett alternativ för att tvinga avsändare att köa e-post är att uppdatera MX-p
 
 Ett annat alternativ är att placera en ogiltig MX-post i varje domän där DNS-posterna för din domän sparas (kallas även dns-värdtjänsten). Det här gör att avsändaren köar din e-post och försöker igen (vanliga försök är i 48 timmar, men det kan variera mellan olika leverantörer). Du kan använda invalid.outlook.com som ett ogiltigt MX-mål. Sänka TTL-värdet (Time to Live) till fem minuter på MX-posten så att ändringen sprids till DNS-leverantörer snabbare.
 
-Mer information om hur du konfigurerar DNS finns [i Skapa DNS-poster hos valfri DNS-värd för Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
+Mer information om hur du konfigurerar DNS finns [i Skapa DNS-poster hos valfri DNS-värd för Microsoft 365.](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
 
 > [!IMPORTANT]
 > Olika leverantörer köar e-post för olika tidsperioder. Du måste konfigurera den nya klientorganisationen snabbt och återställa DNS-inställningarna för att undvika att rapporter om utebliven leverans (NDR-rapporter) skickas till avsändaren om kötiden löper ut.
@@ -933,4 +933,4 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>Steg 8: Återställ DNS-inställningarna för att stoppa e-postköer
 
-Om du väljer att ställa in MX-posterna på en ogiltig adress så att avsändarna köar e-post under övergången, måste du ställa in dem till rätt värde som anges i [administrationscentret.](https://admin.microsoft.com) Mer information om hur du konfigurerar DNS finns [i Skapa DNS-poster hos valfri DNS-värd för Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
+Om du väljer att ställa in MX-posterna på en ogiltig adress så att avsändarna köar e-post under övergången, måste du ställa in dem till rätt värde som anges i [administrationscentret.](https://admin.microsoft.com) Mer information om hur du konfigurerar DNS finns [i Skapa DNS-poster hos valfri DNS-värd för Microsoft 365.](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)

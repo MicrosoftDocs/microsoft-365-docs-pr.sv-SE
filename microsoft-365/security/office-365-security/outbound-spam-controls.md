@@ -20,23 +20,23 @@ ms.custom:
 description: Administratörer kan lära sig mer om kontrollerna för utgående skräppost i Exchange Online Protection (EOP) och vad de kan göra om du behöver göra massutskick.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6d5a82b4a2c7f94b3c5d0958abc8c4552cc04032
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: f9d434c858f7c66f82dd4f551bac99458b9e5c8c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150694"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287635"
 ---
 # <a name="outbound-spam-protection-in-eop"></a>Skydd mot utgående skräppost i EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 abonnemang 1 och abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor tar vi allvarligt hanteringen av utgående skräppost. En kund som avsiktligt eller oavsiktligt skickar skräppost från sin organisation kan försämra ryktet för hela tjänsten, och kan påverka e-postleveransen för andra kunder.
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor tar vi den utgående skräpposten på största allvar. En kund som avsiktligt eller oavsiktligt skickar skräppost från sin organisation kan försämra ryktet för hela tjänsten, och kan påverka e-postleveransen för andra kunder.
 
 I det här avsnittet beskrivs de kontroller och meddelanden som är utformade för att förhindra utgående skräppost, och vad du kan göra om du behöver skicka massutskick.
 
@@ -56,15 +56,15 @@ I det här avsnittet beskrivs de kontroller och meddelanden som är utformade f�
 
 - **Inaktivera konton** som skickar för mycket e-post för snabbt: Förutom de begränsningar som gäller för meddelanden som markeras som skräppost finns det också begränsningar som blockerar konton när de når en övergripande gräns för utgående meddelanden, oavsett skräppostfiltrering för utgående <sup>\*</sup> meddelanden. Ett komprometterat konto kan skicka skräppost utan dag (tidigare okänd) som missas av skräppostfiltret. Eftersom det kan vara svårt att identifiera en legitim massutskickskampanj jämfört med en skräppostkampanj hjälper de här begränsningarna till att minimera potentiella skador.
 
-<sup>\*</sup> Vi annonserar inte de exakta gränserna så skräppostavs skräppostavs så att de inte kan spela systemet, och vi kan öka eller minska gränserna efter behov. Gränserna är tillräckligt stora för att förhindra att en genomsnittlig företagsanvändare någonsin överskrider dem, och tillräckligt låga för att hjälpa till att begränsa de skador en spammare orsakar.
+<sup>\*</sup> Vi annonserar inte de exakta gränserna så skräppostavs skräppostavs så att de inte kan spela systemet, och vi kan öka eller minska gränserna efter behov. Gränserna är tillräckligt stora för att hindra en genomsnittlig företagsanvändare från att någonsin överskrida dem, och tillräckligt låga för att hjälpa till att begränsa de skador en spammare orsakar.
 
 ## <a name="recommendations-for-customers-who-want-to-send-mass-mailings-through-eop"></a>Rekommendationer för kunder som vill göra massutskick via EOP
 
-Det är svårt att hitta en balans mellan kunder som vill skicka en stor mängd e-post och att skydda tjänsten från komprometterade konton och massutskick av e-post med dåliga metoder för mottagarköp. Kostnaden för att en Microsoft 365-e-postkälla landar på en blockeringslista från tredje part är större än att blockera en användare som skickar för mycket e-post.
+Det är svårt att skapa balans mellan kunder som vill skicka en stor mängd e-post och att skydda tjänsten från komprometterade konton och massutskick av e-post med dåliga metoder för mottagarköp. Kostnaden för att en Microsoft 365-e-postkälla landar på en blockeringslista från tredje part är större än att blockera en användare som skickar för mycket e-post.
 
-Enligt beskrivningen i [tjänstbeskrivningen](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)för Exchange Online stöds inte användningen av tjänsten med EOP för att skicka massutskick, och den tillåts endast med "bästa möjliga" användning. För kunder som vill skicka massutskick rekommenderar vi följande lösningar:
+Enligt beskrivningen i [tjänstbeskrivningen för Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)stöds inte användningen av tjänsten med EOP för att skicka massutskick, och den tillåts endast med "bästa möjliga" användning. För kunder som vill skicka massutskick rekommenderar vi följande lösningar:
 
-- **Skicka massutskick via lokala e-postservrar**: Det innebär att kunderna måste ha en egen e-postinfrastruktur för massutskick.
+- **Skicka massutskick via lokala e-postservrar:** Det innebär att kunderna måste ha en egen e-postinfrastruktur för massutskick.
 
 - **Använd en tredjepartsleverantör för massutskick:** Det finns flera tredjepartsleverantörer av massutskick som du kan använda för massutskick. Dessa företag har ett intresse av att arbeta med kunder för att säkerställa bra metoder för att skicka e-post.
 

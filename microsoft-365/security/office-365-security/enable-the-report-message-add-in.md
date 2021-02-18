@@ -17,36 +17,36 @@ ms.collection:
 description: Lär dig hur du aktiverar tillägget Rapportmeddelande för Outlook och Outlook på webben för enskilda användare eller hela organisationen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fe47bcb4db42514f3a5252a567421ad792967cd1
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 08ad2f61cc5dcd2e59af89ca788319c81e2f6bdb
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167581"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287371"
 ---
 # <a name="enable-the-report-message-add-in"></a>Aktivera tillägget för att rapportera meddelande
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!NOTE]
-> Om du är administratör i en Microsoft 365-organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen För inskickade material i Säkerhets- & Efterlevnadscenter. Mer information finns i Använda [administrationsinskick för att skicka misstänkt skräppost, phish, URL:er och filer till Microsoft.](admin-submission.md)
+> Om du är administratör i en Microsoft 365-organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen För inskickade material i Säkerhets- & Efterlevnadscenter. Mer information finns i Använda administratörs inskickat material för att skicka misstänkt [skräppost, phish, URL:er och filer till Microsoft.](admin-submission.md)
 
 Med tilläggen Rapportmeddelande och Rapport nätfiske för Outlook och Outlook på webben (tidigare kallat Outlook Web App) kan användare enkelt rapportera falska positiva meddelanden (bra e-postmeddelanden markerade som dåliga) eller falska negativa (felaktig e-post tillåts) till Microsoft och dess dotterbolag för analys.
 
 Microsoft använder dessa inskickade e-postmeddelanden för att göra e-postskyddstekniken mer effektiv. Om personer till exempel rapporterar många meddelanden som flaggats som Skräppost med tillägget Rapportmeddelande kan din organisations säkerhetsgrupp behöva justera principerna för [skräppostskydd.](configure-your-spam-filter-policies.md)
 
-Du kan installera tillägget Rapportmeddelande eller Rapportera nätfiske. Om du vill att användarna endast ska rapportera nätfiskemeddelanden distribuerar du tillägget Rapport nätfiske i organisationen. Mer information finns i [Aktivera tillägget Rapport nätfiske.](enable-the-report-phish-add-in.md)
+Du kan installera antingen tillägget Rapportmeddelande eller Rapportera nätfiske. Om du vill att användarna endast ska rapportera nätfiskemeddelanden distribuerar du tillägget Rapport nätfiske i organisationen. Mer information finns i [Aktivera tillägget Rapport nätfiske.](enable-the-report-phish-add-in.md)
 
 Med tillägget Rapportmeddelande kan du rapportera både skräppost och nätfiske. Administratörer kan aktivera tillägget Rapportmeddelande för organisationen och enskilda användare kan installera det själva.
 
-Om du är en enskild användare kan [du aktivera tillägget Rapportmeddelande](#get-the-report-message-add-in-for-yourself)för dig själv.
+Om du är en enskild användare kan du aktivera tillägget Rapportmeddelande [för dig själv.](#get-the-report-message-add-in-for-yourself)
 
-Om du är global administratör eller Exchange [Online-administratör](#get-and-enable-the-report-message-add-in-for-your-organization)och Exchange är konfigurerat att använda OAuth-autentisering kan du aktivera tillägget Rapportmeddelande för organisationen. Rapportmeddelandets Add-In nu tillgänglig via [centraliserad distribution.](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)
+Om du är global administratör eller Exchange [Online-administratör](#get-and-enable-the-report-message-add-in-for-your-organization)och Exchange är konfigurerat att använda OAuth-autentisering kan du aktivera tillägget Rapportmeddelande för organisationen. Rapportmeddelandets Add-In nu tillgänglig via [centraliserad distribution.](../../admin/manage/centralized-deployment-of-add-ins.md)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
@@ -60,7 +60,7 @@ Om du är global administratör eller Exchange [Online-administratör](#get-and-
 
 - Tillägget Rapportmeddelande är inte tillgängligt för postlådor i lokala Exchange-organisationer.
 
-- Du kan konfigurera rapporterade meddelanden som ska kopieras eller omdirigeras till en postlåda som du anger. Mer information finns i principer [för användarinskick.](user-submission.md)
+- Du kan konfigurera rapporterade meddelanden så att de kopieras eller omdirigeras till en postlåda som du anger. Mer information finns i principer [för användarinskick.](user-submission.md)
 
 - Din befintliga webbläsare bör fungera med tillägget Rapportmeddelande. Om du märker att tillägget inte är tillgängligt eller inte fungerar som förväntat kan du prova med en annan webbläsare.
 
@@ -78,7 +78,7 @@ Om du är global administratör eller Exchange [Online-administratör](#get-and-
 
 3. I dialogrutan som visas granskar du användningsvillkoren och sekretesspolicyn och klickar sedan på **Fortsätt.**
 
-4. Logga in med ditt arbets- eller skolkonto (för företag) eller ditt Microsoft-konto (för personlig användning).
+4. Logga in med ditt arbets- eller skolkonto (för företagsanvändning) eller ditt Microsoft-konto (för personlig användning).
 
 När tillägget är installerat och aktiverat visas följande ikoner:
 
@@ -88,7 +88,7 @@ När tillägget är installerat och aktiverat visas följande ikoner:
 
 - Ikonen ser ut så här i Outlook på webben:
 
-  ![Tilläggsikon för rapportmeddelande i Outlook på webben](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+  ![Ikonen för tillägget Rapportmeddelande i Outlook på webben](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
 Mer information om hur du använder tillägget finns i Använda tillägget [Rapportmeddelande.](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
 
@@ -99,7 +99,7 @@ Mer information om hur du använder tillägget finns i Använda tillägget [Rapp
 
 1. I administrationscentret för Microsoft 365 går  du till sidan Inställningar för tillägg. Om du inte ser tilläggssidan går du till länken Inställningar integrerade appar tillägg högst upp på sidan Integrerade \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>   \>  \>  appar. 
 
-2. Välj **Distribuera tillägg överst** på sidan och välj sedan **Nästa.**
+2. Välj **Distribuera tillägg högst** upp på sidan och välj sedan **Nästa.**
 
    ![Sidan Tjänster och tillägg i administrationscentret för Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
@@ -109,7 +109,7 @@ Mer information om hur du använder tillägget finns i Använda tillägget [Rapp
 
    ![Distribuera en ny tilläggssida](../../media/NewAddInScreen2.png)
 
-5. På sidan Välj **tillägg som visas** klickar  du i sökrutan, skriver rapportmeddelande och klickar sedan på  ![ sökikonen. ](../../media/search-icon.png) Leta rätt på Rapportmeddelande i **resultatlistan och klicka** sedan på **Lägg till.**
+5. På sidan Välj **tillägg som visas** klickar  du i sökrutan, skriver rapportmeddelande och klickar sedan på  ![ sökikonen. ](../../media/search-icon.png) Leta reda på rapportmeddelandet i **resultatlistan och** klicka sedan på **Lägg till.**
 
    ![Välj sökresultat för tillägg](../../media/NewAddInScreen3.png)
 
@@ -163,7 +163,7 @@ När du meddelar användarna om tillägget Rapportmeddelande tar du med en länk
 
 2. Leta upp och **välj tillägget** Rapportmeddelande.
 
-3. I den **utfällna** menyn Redigera rapportmeddelande som visas granskar och redigerar du inställningar efter behov för din organisation. Klicka på **Spara** när du är klar.
+3. I den **utfällna** menyn Redigera rapportmeddelande som visas granskar och redigerar du lämpliga inställningar för din organisation. Klicka på **Spara** när du är klar.
 
    ![Inställningar för tillägget Rapportmeddelande](../../media/EditReportMessageAddIn.png)
 

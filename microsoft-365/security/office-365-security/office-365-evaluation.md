@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7c0bb1701cf030692bc98218b38be00cae57a2bd
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 1d16c0afc675ba759e392c9fe9a44c42b89dbad0
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080707"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287659"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Utvärdera Microsoft Defender för Office 365
 
@@ -42,7 +42,7 @@ Om du inte redan har en licens som stöder Microsoft Defender för Office 365 ka
 
 Defender för Office 365 i utvärderingsläge skapar Defender för Office 365-e-postprinciper som loggar ut, till exempel skadlig programvara, men inte agerar på meddelanden. Du behöver inte ändra konfigurationen av MX-posten.
 
-Med utvärderingsläge [konfigureras principer för](atp-safe-attachments.md) [säkra](atp-safe-links.md)bifogade filer, säkra länkar och skydd [mot](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) nätfiske för din räkning. Alla Defender för Office 365-principer skapas i icke-tvingande läge i bakgrunden och visas inte för dig.
+Med utvärderingsläge [konfigureras principer för](atp-safe-attachments.md) [säkra](atp-safe-links.md)bifogade filer, säkra länkar och skydd [mot](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) nätfiske för din räkning. Alla Defender för Office 365-principer skapas i läget för icke-tvingande tillämpning i bakgrunden och visas inte för dig.
 
 Som en del av konfigurationen konfigurerar utvärderingsläget även [utökad filtrering för kopplingar.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Det förbättrar filtreringsprecisionen genom att bevara IP-adress och avsändarinformation, som annars går förlorad när e-post passerar genom en e-postsäkerhetsgateway (ESG) framför Defender för Office 365. Förbättrad filtrering förbättrar också filtreringsprecisionen för skydd mot skräppost och nätfiske i Exchange Online Protection (EOP).
 
@@ -76,14 +76,14 @@ Om du vill ha en utvärderingslicens för Microsoft Defender för Office 365 må
 
 När du har rätt roll är det rekommenderade att skaffa en utvärderingslicens för Microsoft Defender för Office 365 (abonnemang 2) i administrationscentret för Microsoft 365 genom att gå till Billing > Purchase services. Utvärderingsversionen omfattar en kostnadsfri provperiod på 30 dagar för 25 licenser. [Skaffa en utvärderingsversion av Microsoft Defender för Office 365 (abonnemang 2).](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)
 
-Det finns ett 30-dagarsfönster med en utvärdering som du kan använda för att övervaka och rapportera avancerade hot. Du kan också köpa en betald prenumeration om du vill ha hela Defender för Office 365-funktioner.
+Det finns ett 30-dagarsfönster med en utvärdering som du kan använda för att övervaka och rapportera avancerade hot. Du kan också köpa en betald prenumeration om du vill ha hela Defender för Office 365-funktionerna.
 
 ### <a name="roles"></a>Roller
 
 Exchange Online-roller krävs för att konfigurera Defender för Office 365 i utvärderingsläge.
 
 - [Läs mer om behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
-- [Läs mer om hur du tilldelar administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)
+- [Läs mer om hur du tilldelar administratörsroller](../../admin/add-users/assign-admin-roles.md)
 
 Följande roller krävs:
 
@@ -105,7 +105,7 @@ Förbättrad filtrering för kopplingar gör att klientorganisationen kan använ
 
 ### <a name="urls"></a>URL:er
 
-URL:er detoneras under e-postflödet. Om du inte vill att specifika URL:er ska detoneras hanterar du listan med tillåtna URL-adresser på rätt sätt. Mer [information finns i Hantera klientorganisationens lista över tillåtna/blockerade.](tenant-allow-block-list.md)
+URL:er detoneras under e-postflödet. Om du inte vill att specifika URL:er ska detoneras hanterar du listan med tillåtna URL-adresser på rätt sätt. Mer [information finns i Hantera klientorganisationens lista över tillåtna/blockerade](tenant-allow-block-list.md) användare.
 
 URL-länkar i e-postmeddelandet kommer inte att radbrytas, för att minska kundens påverkan.
 
@@ -120,7 +120,7 @@ Exempel på e-postdirigeringsscenarier som stöds:
 
 ### <a name="email-security-gateway"></a>E-postsäkerhetsgateway
 
-Om du använder en e-postsäkerhetsgateway från tredje part (ESG) måste du känna till leverantörens namn. Om du använder en lokal eller ej ESG-leverantör måste du känna till de offentliga IP-adresserna för enheterna.
+Om du använder en e-postsäkerhetsgateway från tredje part (ESG) behöver du känna till leverantörens namn. Om du använder en lokal eller icke-stödd ESG-leverantör måste du känna till de offentliga IP-adresserna för enheterna.
 
 Tredjepartspartner som stöds är:
 
@@ -134,7 +134,7 @@ Tredjepartspartner som stöds är:
 
 ### <a name="scoping"></a>Scoping
 
-Du kommer att kunna begränsa utvärderingen till en inkommande koppling. Om det inte finns någon konfigurerad anslutare gör utvärderingsomfånget att administratörer kan samla in data från alla användare i klientorganisationen för att utvärdera Defender för Office 365.
+Du kommer att kunna begränsa utvärderingen till en inkommande koppling. Om det inte finns någon konfigurerad anslutning kan administratörer i utvärderingsomfånget samla in data från alla användare i klientorganisationen för att utvärdera Defender för Office 365.
 
 ## <a name="get-started-with-the-evaluation"></a>Komma igång med utvärderingen
 
@@ -146,9 +146,9 @@ Leta reda på kortet för utvärderingsuppsättningen i Microsoft Defender för 
 
 ## <a name="setting-up-the-evaluation"></a>Konfigurera utvärderingen
 
-När du startar set-up-flödet för utvärderingen får du två routningsalternativ. Beroende på organisationens behov av e-postdirigering och utvärdering kan du välja om du använder en tredje part och/eller en lokal tjänstprovider eller endast Microsoft Exchange Online.
+När du startar set-up-flödet för utvärderingen får du två routningsalternativ. Beroende på organisationens behov av e-postdirigering och utvärdering kan du välja om du använder en tredjeparts- och/eller lokal tjänstprovider eller endast Microsoft Exchange Online.
 
-- Om du använder en tredjepartspartner och/eller en lokal tjänstprovider måste du välja namnet på leverantören i listrutan. Ange annan kopplingsrelaterad information.
+- Om du använder en partner från tredje part och/eller en lokal tjänstprovider måste du välja namnet på leverantören i listrutan. Ange annan kopplingsrelaterad information.
 
 - Välj Microsoft Exchange Online om MX-posten pekar på Microsoft och du har en Exchange Online-postlåda.
 
@@ -158,7 +158,7 @@ Utvärderingsrapporten för Microsoft Defender för Office 365 genereras en gån
 
 ### <a name="exchange-rules-optional"></a>Exchange-regler (valfritt)
 
-Om du har en befintlig gateway aktiverar utvärderingsläget utökad filtrering för kopplingar. Detta förbättrar filtreringens precision genom att ändra IP-adressen för inkommande avsändare. Detta kan ändra filtrets bedömning och om du inte kringgår Exchange Online Protection kan detta ändra slutbarheten för vissa meddelanden. I det här fallet kanske du tillfälligt vill kringgå filtrering för att analysera påverkan. Om du vill kringgå detta navigerar du till administrationscentret för Exchange och skapar en princip för SCL -1 (om du inte redan har ett). Mer information om regelkomponenter och hur de fungerar finns i E-postflödesregler (transportregler) i Exchange Online.
+Om du har en befintlig gateway aktiverar utvärderingsläget utökad filtrering för kopplingar. Detta förbättrar filtreringens precision genom att ändra IP-adressen för inkommande avsändare. Detta kan ändra filtrets bedömning och om du inte kringgår Exchange Online Protection kan detta förändra slutbarheten för vissa meddelanden. I det här fallet kanske du tillfälligt vill kringgå filtrering för att analysera påverkan. Om du vill kringgå detta navigerar du till administrationscentret för Exchange och skapar en princip för SCL -1 (om du inte redan har ett). Mer information om regelkomponenter och hur de fungerar finns i E-postflödesregler (transportregler) i Exchange Online.
 
 ## <a name="evaluate-capabilities"></a>Utvärdera funktioner
 

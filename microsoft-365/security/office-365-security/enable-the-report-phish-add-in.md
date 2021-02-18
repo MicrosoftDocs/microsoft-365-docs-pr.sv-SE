@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
-description: Läs om hur du aktiverar tillägget Rapport nätfiske för Outlook och Outlook på webben för enskilda användare eller hela organisationen.
-ms.openlocfilehash: abac24e447d0afe9bc725dd8f9a976dce900b278
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+description: Läs om hur du aktiverar tillägget Rapportfiske för Outlook och Outlook på webben för enskilda användare eller hela organisationen.
+ms.openlocfilehash: 8242f3fcac27f8c76f7bef5a84c70960a204e3bd
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094683"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286663"
 ---
 # <a name="enable-the-report-phishing-add-in"></a>Aktivera tillägget för att rapportera nätfiske
 
@@ -29,23 +29,23 @@ ms.locfileid: "50094683"
 
 
 > [!NOTE]
-> Om du är administratör i en Microsoft 365-organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen Inskickade i Säkerhets- & Efterlevnadscenter. Mer information finns i Använda [administrationsinskick för att skicka misstänkt skräppost, phish, URL:er och filer till Microsoft.](admin-submission.md)
+> Om du är administratör i en Microsoft 365-organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen För inskickade material i Säkerhets- & Efterlevnadscenter. Mer information finns i Använda [administrationsinskick för att skicka misstänkt skräppost, phish, URL:er och filer till Microsoft.](admin-submission.md)
 
-Med tilläggen Rapportmeddelande och Rapport nätfiske för Outlook och Outlook på webben (tidigare kallat Outlook Web App) kan användare enkelt rapportera falska positiva meddelanden (bra e-postmeddelanden som markerats som dåliga) eller falska negativa (felaktig e-post tillåts) till Microsoft och dess dotterbolag för analys.
+Med hjälp av tilläggen Rapportmeddelande och Rapport nätfiske för Outlook och Outlook på webben (tidigare kallat Outlook Web App) kan användare enkelt rapportera falska positiva meddelanden (bra e-postmeddelanden som markerats som dåliga) eller falska negativa meddelanden (felaktig e-post tillåts) till Microsoft och dess dotterbolag för analys.
 
 Microsoft använder dessa inskickade e-postmeddelanden för att göra e-postskyddstekniken mer effektiv. Anta till exempel att personer rapporterar många meddelanden med hjälp av tillägget Rapport nätfiske. Den här informationen visas i [säkerhetspanelen](security-dashboard.md) och andra rapporter. Din organisations säkerhetsgrupp kan använda den här informationen som en indikation på att skydd mot nätfiskeprinciper kan behöva uppdateras.
 
-Du kan installera antingen tillägget Rapportmeddelande eller Rapportera nätfiske. Om du vill att användarna ska rapportera både skräppost och nätfiske ska du distribuera tillägget Rapportmeddelande i organisationen. Mer information finns i [Aktivera tillägget Rapportmeddelande.](enable-the-report-message-add-in.md)
+Du kan installera antingen tillägget Rapportmeddelande eller Rapportera nätfiske. Om du vill att användarna ska rapportera både skräppost och nätfiskemeddelanden distribuerar du tillägget Rapportmeddelande i organisationen. Mer information finns i [Aktivera tillägget Rapportmeddelande.](enable-the-report-message-add-in.md)
 
 Med tillägget Rapport nätfiske kan du endast rapportera nätfiskemeddelanden. Administratörer kan aktivera tillägget Rapport nätfiske för organisationen och enskilda användare kan installera det själva.
 
 Om du är enskild användare kan du aktivera tillägget Nätfiske för [dig själv.](#get-the-report-phishing-add-in-for-yourself)
 
-Om du är global administratör eller Exchange [Online-administratör](#get-and-enable-the-report-phishing-add-in-for-your-organization)och Exchange är konfigurerat att använda OAuth-autentisering kan du aktivera tillägget Rapport nätfiske för din organisation. Rapportens nätfiskeAdd-In är nu tillgänglig via [centraliserad distribution.](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)
+Om du är global administratör eller Exchange [Online-administratör](#get-and-enable-the-report-phishing-add-in-for-your-organization)och Exchange är konfigurerat att använda OAuth-autentisering kan du aktivera tillägget Rapport nätfiske för din organisation. Rapportens nätfiskeAdd-In är nu tillgänglig via [centraliserad distribution.](../../admin/manage/centralized-deployment-of-add-ins.md)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Tillägget Nätfiskerapport fungerar med de flesta Microsoft 365-prenumerationer och följande produkter:
+- Tillägget Rapportfiske fungerar med de flesta Microsoft 365-prenumerationer och följande produkter:
 
   - Outlook på webben
   - Outlook 2013 SP1 eller senare
@@ -55,7 +55,7 @@ Om du är global administratör eller Exchange [Online-administratör](#get-and-
 
 - Tillägget Rapportfiske är inte tillgängligt för postlådor i lokala Exchange-organisationer.
 
-- Du kan konfigurera rapporterade meddelanden så att de kopieras eller omdirigeras till en postlåda som du anger. Mer information finns i principer [för användarinskick.](user-submission.md)
+- Du kan konfigurera rapporterade meddelanden som ska kopieras eller omdirigeras till en postlåda som du anger. Mer information finns i principer [för användarinskick.](user-submission.md)
 
 - Din befintliga webbläsare bör fungera med tillägget Rapport nätfiske. Om du märker att tillägget inte är tillgängligt eller inte fungerar som förväntat kan du prova med en annan webbläsare.
 
@@ -71,7 +71,7 @@ Om du är global administratör eller Exchange [Online-administratör](#get-and-
 
 3. I dialogrutan som visas granskar du användningsvillkoren och sekretesspolicyn och klickar sedan på **Fortsätt.**
 
-4. Logga in med ditt arbets- eller skolkonto (för företag) eller ditt Microsoft-konto (för personlig användning).
+4. Logga in med ditt arbets- eller skolkonto (för företagsanvändning) eller ditt Microsoft-konto (för personlig användning).
 
 När tillägget är installerat och aktiverat visas följande ikoner:
 
@@ -100,7 +100,7 @@ När tillägget är installerat och aktiverat visas följande ikoner:
 
    ![Distribuera en ny tilläggssida](../../media/NewAddInScreen2.png)
 
-5. På sidan Välj **tillägg som visas** klickar  du i sökrutan, anger nätfiskerapport och klickar sedan på  ![ sökikonen. ](../../media/search-icon.png) I listan med resultat går du till **Rapport nätfiske** och klickar sedan på **Lägg till.**
+5. På sidan Välj **tillägg som visas** klickar  du i sökrutan, anger nätfiskerapport och klickar sedan på  ![ sökikonen. ](../../media/search-icon.png) I listan med resultat går du till Rapport **nätfiske** och klickar sedan på **Lägg till.**
 
 6. I dialogrutan som visas granskar du licens- och sekretessinformationen och klickar sedan på **Fortsätt.**
 
@@ -120,7 +120,7 @@ När tillägget är installerat och aktiverat visas följande ikoner:
 
    Klicka på Distribuera när du är **klar.**
 
-8. På sidan **Distribuera rapport nätfiske** som visas visas en förloppsrapport följt av en bekräftelse på att tillägget har distribuerats. Klicka på Nästa när du har läst **informationen.**
+8. På sidan **Distribuera rapport** nätfiske som visas visas en förloppsrapport följt av en bekräftelse på att tillägget har distribuerats. Klicka på Nästa när du har läst **informationen.**
 
 9. Granska **informationen på sidan Presentera** tillägg som visas och klicka sedan på **Stäng.**
 

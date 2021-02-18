@@ -19,21 +19,21 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8dd7a90255fdd3e083a5d7306cac2e9ca6411024
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: d37fb232b717485c40218fd8a3c3117ba9b8322b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150189"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287647"
 ---
 # <a name="security-incident-response"></a>Svar på säkerhetstillbud
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 abonnemang 1 och abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
  **Sammanfattning:** Den här lösningen anger vilka indikatorer som finns för de vanligaste cybersäkerhetsattackerna i Office 365, hur du bekräftar en viss attack positivt och hur du ska svara på den.
 
@@ -51,7 +51,7 @@ Den här artikeln hjälper dig att förstå hur en viss typ av attack kan se ut 
 
 - Åtgärder för att minska attacken och skydda organisationen bättre i framtiden.
 
-- Länkar till djupgående information om varje attacktyp.
+- Länkar till ingående information om varje attacktyp.
 
 Kom tillbaka hit varje månad eftersom fler artiklar kommer att läggas till med tiden.
 

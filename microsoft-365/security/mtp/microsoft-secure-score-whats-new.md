@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 039ec1c3f9b0ba233f950d11b9d58be341b28121
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 520a5627d2cd280f28c4e2c3db0e565640a1eace
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930600"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289167"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Vad är nytt i Microsoft Secure Score
 
@@ -35,6 +35,12 @@ ms.locfileid: "49930600"
 Vi har gjort några ändringar för att Microsoft Secure Score ska vara bättre representativt för din säkerhet. Mer information om planerade ändringar finns i [Vad kommer i Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
 Microsoft Secure Score finns på https://security.microsoft.com/securescore Microsoft [365 säkerhetscenter.](overview-security-center.md)
+    
+## <a name="february-2021"></a>Februari 2021
+
+### <a name="compatibility-with-graph-api"></a>Kompatibilitet med Graph API
+
+Rekommendationerna från Microsoft Secure Score som levereras via Graph API kommer att se ut och viktas på samma sätt som de rekommendationer du för närvarande ser i Microsoft 365 säkerhetscenter.
 
 ## <a name="january-2021"></a>Januari 2021
 
@@ -46,7 +52,7 @@ Microsoft Teams-kunder ser "Begränsa anonyma användare från att ansluta till 
 
 ### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Sex kontorelaterade förbättringsåtgärder för Microsoft Defender för Slutpunkt (tidigare Microsoft Defender ATP):
 
-- Ange "Minsta lösenordslängd" till 14 eller fler tecken
+- Ange "Minsta lösenordslängd" till 14 tecken eller fler tecken
 - Ange "Framtvinga lösenordshistorik" till 24 eller fler lösenord
 - Ange maximal ålder för lösenord till 60 dagar eller färre, men inte 0.
 - Ange minsta lösenords ålder till 1 eller fler dagar
@@ -57,7 +63,7 @@ Microsoft Teams-kunder ser "Begränsa anonyma användare från att ansluta till 
 
 ### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>Tog bort möjligheten att skapa ServiceNow-biljetter via Secure Score 
 
-Möjligheten att skapa ServiceNow-biljetter via Secure Score genom att gå till **Share > ServiceNow** är inte längre tillgänglig. Tack för din feedback och fortsatt support medan vi fastställer nästa steg.
+Möjligheten att skapa ServiceNow-biljetter via Secure Score genom att gå till **Share > ServiceNow** är inte längre tillgänglig. Tack för din feedback och fortsatt stöd medan vi fastställer nästa steg.
 
 ### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Tre tjänsterelaterade förbättringsåtgärder för Microsoft Defender för Slutpunkt (tidigare Microsoft Defender ATP):
 
@@ -77,11 +83,11 @@ Möjligheten att skapa ServiceNow-biljetter via Secure Score genom att gå till 
 
 - Aktivera princip för att blockera äldre autentisering
 
-## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>Inkompatibilitet med Identity Secure Score och Graph API
+## <a name="incompatibility-with-identity-secure-score"></a>Inkompatibilitet med Identity Secure Score
 
-I den senaste versionen av Microsoft Secure Score har en förbättrad poängmodell släppts. Dessa ändringar gör det möjligt att se säkerhetsvyn på ett mer flexibelt och korrekt sätt. Men dessa uppdateringar har gjort Microsoft Secure Score tillfälligt inkompatibelt med Identity Secure Score och Graph API.
+I den senaste versionen av Microsoft Secure Score har en förbättrad poängmodell släppts. Dessa ändringar gör det möjligt att se säkerhetsvyn på ett mer flexibelt och korrekt sätt. Men dessa uppdateringar har gjort Microsoft Secure Score tillfälligt inkompatibelt med Identity Secure Score.
 
-Med tiden kommer Identity Secure Score och Graph API att använda den nya poängmodellen. Tills dess kommer kunderna att se skillnader i poäng som rapporterats av Microsoft Secure Score, Identity Secure Score och Graph API. Vi ber om ursäkt för eventuella besvär det här orsakar och arbetar för att se till att dessa funktioner blir mer kompatibla i framtiden.
+Med tiden kommer Identity Secure Score att införa den nya poängmodellen. Tills dess kommer kunderna att se skillnader i poäng som rapporterats av Microsoft Secure Score och Identity Secure Score. Vi ber om ursäkt för eventuella besvär det här orsakar och arbetar för att se till att dessa funktioner blir mer kompatibla i framtiden.
 
 ## <a name="updated-improvement-actions"></a>Uppdaterade förbättringsåtgärder
 

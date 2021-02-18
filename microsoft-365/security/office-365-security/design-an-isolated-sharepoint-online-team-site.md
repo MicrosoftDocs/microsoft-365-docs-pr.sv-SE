@@ -19,20 +19,20 @@ ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: Utforma isolerade SharePoint Online-gruppwebbplatser, inklusive att fastställa behörighetsnivåer, tilldela behörigheter till användare med åtkomstgrupper och kapslade Azure AD-grupper.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0f92a925948dbf6c8c5c1beb6b9c709f508c4b3
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 0d53f3b45e3f406dfb0b38bcc910bd34876acb08
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165517"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288341"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Utforma en isolerad SharePoint Online-gruppwebbplats
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 
  **Sammanfattning:** Stega igenom designprocessen för isolerade SharePoint Online-gruppwebbplatser.
@@ -72,7 +72,7 @@ Här är standardgrupperna och behörighetsnivåerna i SharePoint.
 
 Du kan tilldela behörigheter till användare genom att lägga till deras användarkonto, eller en Microsoft 365- eller Azure AD-grupp där användarkontot är medlem, till SharePoint-grupperna. När användarkontona har lagts till tilldelas användarkontona, antingen direkt eller indirekt via medlemskap i en Microsoft 365- eller Azure AD-grupp, den behörighetsnivå som är kopplad till SharePoint-gruppen.
 
-Använd SharePoint-standardgrupperna som exempel:
+Använda SharePoint-standardgrupper som exempel:
 
 - Medlemmar i **\<site name> SharePoint-gruppen** Medlemmar, som kan innehålla både användarkonton och grupper, tilldelas **behörighetsnivån** Redigera
 
@@ -127,7 +127,7 @@ För ett projekt som begränsas till ett litet antal personer kommer en enda niv
 
 Du vill till exempel skapa en isolerad SharePoint Online-gruppwebbplats för samarbete mellan chefer för sälj-, marknadsförings-, teknik-, juridik- och supportavdelningar och de avdelningarna har redan egna grupper med användarkontomedlemskap i ledningen. I stället för att skapa en ny grupp för de nya webbplatsmedlemmarna och placera alla enskilda chefers användarkonton i den, kan du placera befintliga ledningsgrupper för varje avdelning i den nya gruppen.
 
- Om du delar en Microsoft 365-prenumeration mellan flera organisationer kan det bli svårt att hantera en enstaka nivå av gruppmedlemskap för en isolerad webbplats i en organisation på grund av det stora antalet användarkonton. I det här fallet kan du använda kapslade Azure AD-grupper för varje organisation som innehåller grupper i sina organisationer för att hantera behörigheterna.
+ Om du delar en Microsoft 365-prenumeration mellan flera organisationer kan det bli svårt att hantera en enstaka nivå av gruppmedlemskap för en isolerad webbplats på grund av det stora antalet användarkonton. I det här fallet kan du använda kapslade Azure AD-grupper för varje organisation som innehåller grupperna i deras organisationer för att hantera behörigheterna.
 
 Så här använder du kapslade Azure AD-grupper:
 
@@ -144,7 +144,7 @@ Här är ett exempel på kapslade Azure AD-grupper för projectX-medlemsåtkomst
 
 ![Ett exempel på hur du använder kapslade åtkomstgrupper för medlemmars åtkomstgrupp för ProjectX-webbplatsen.](../../media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
 
-Eftersom alla användarkonton i grupperna Forskning, Teknik och Project är avsedda att vara webbplatsmedlemmar är det enklare att lägga till deras Azure AD-grupper i åtkomstgruppen För ProjectX-medlemmar.
+Eftersom alla användarkonton i grupperna Forskning, Teknik och Project är avsedda att vara webbplatsmedlemmar är det enklare att lägga till deras Azure AD-grupper i åtkomstgruppen ProjectX-medlemmar.
 
 ## <a name="next-step"></a>Nästa steg
 

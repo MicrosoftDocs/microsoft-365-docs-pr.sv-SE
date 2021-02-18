@@ -17,19 +17,19 @@ ms.collection:
 description: Läs mer om webbhanteringsgränssnittet i fristående Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81af6c64d2ec3204d0c9d46888bbfe21335955bd
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: ec9dcbccbee734ea7c475b1ac0a5f9a92a0b401b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166225"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286963"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Administrationscenter för Exchange i fristående EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
--  [Exchange Online Protection fristående](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection fristående](exchange-online-protection-overview.md)
 
 Administrationscentret för Exchange (EAC) är en webbaserad hanteringskonsol för fristående Exchange Online Protection (EOP).
 
@@ -45,7 +45,7 @@ Fristående EOP-kunder kan komma åt EAC på följande sätt:
 
      ![Klicka på Visa alla i administrationscentret för Microsoft 365](../../media/m365-center-show-all.png)
 
-  2. Klicka på **Alla administrationscenter** i avsnittet **Administrationscenter som visas.**
+  2. Klicka på **Alla administrationscenter** i avsnittet Administrationscenter som **visas.**
 
      ![Klicka på Alla administrationscenter i administrationscentret för Microsoft 365](../../media/m365-center-select-all-admin-centers.png)
 
@@ -92,7 +92,7 @@ När du klickar på de flesta flikar visas ett verktygsfält. Verktygsfältet in
 |---|---|---|
 |![Ikonen Lägg till](../../media/ITPro-EAC-AddIcon.gif)|Lägg till, Ny|Använd den här ikonen för att skapa ett nytt objekt. Vissa av dessa ikoner har en associerad nedpil som du kan klicka på för att visa ytterligare objekt som du kan skapa.|
 |![Redigeringsikon](../../media/ITPro-EAC-EditIcon.gif)|Redigera|Använd den här ikonen för att redigera ett objekt.|
-|![ikonen Ta bort](../../media/ITPro-EAC-DeleteIcon.gif)|Ta bort|Använd den här ikonen för att ta bort ett objekt. Vissa borttagningsikoner har en nedåtpil som du kan klicka på för att visa ytterligare alternativ.|
+|![ikonen Ta bort](../../media/ITPro-EAC-DeleteIcon.gif)|Ta bort|Använd den här ikonen för att ta bort ett objekt. Vissa borttagningsikoner har en nedpil som du kan klicka på för att visa ytterligare alternativ.|
 |![Sökikon](../../media/ITPro-EAC-.gif)|Sök|Använd den här ikonen för att öppna en sökruta där du kan skriva sökfrasen för ett objekt som du vill hitta.|
 |![Uppdatera-ikon](../../media/ITPro-EAC-RefreshIcon.gif)|Återställning|Använd den här ikonen för att uppdatera listvyn.|
 |![Ikonen Fler alternativ](../../media/ITPro-EAC-MoreOptionsIcon.gif)|Fler alternativ|Använd den här ikonen för att visa fler åtgärder som du kan utföra för objekten på den fliken. Om du till exempel **klickar \> på ikonen Mottagare** visas ett alternativ för avancerad **sökning.**|
@@ -112,9 +112,9 @@ När du väljer ett objekt i listvyn visas information om objektet i information
 
 På **panelen** Jag kan du logga ut från EAC och logga in som en annan användare. Gör **följande** ![ på den ](../../media/ITPro-EAC-HelpIcon.gif) nedrullningsmenyn i hjälpikonen:
 
-- **Hjälp:** Klicka ![ på ikonen Hjälp om du vill visa ](../../media/ITPro-EAC-HelpIcon.gif) onlinehjälpens innehåll.
+- **Hjälp:** Klicka ![ på ](../../media/ITPro-EAC-HelpIcon.gif) hjälpikonen om du vill visa onlinehjälpens innehåll.
 - **Feedback:** Lämna feedback.
-- **Community:** Ställa en fråga för att få svar i community-forumen.
+- **Community:** Skicka en fråga för att få svar i community-forumen.
 - **Inaktivera hjälpbubblan:** Hjälpbubblan visar sammanhangsberoende hjälp för fält när du skapar eller redigerar ett objekt. Du kan stänga av hjälpbubblan eller aktivera den om den har inaktiverats.
 - **Visa kommandologgning:** Ett nytt fönster öppnas som visar motsvarande PowerShell-kommandon baserat på vad du har konfigurerat i EAC.
 

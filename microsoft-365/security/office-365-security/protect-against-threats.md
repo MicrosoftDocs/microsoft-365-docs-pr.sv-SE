@@ -20,23 +20,23 @@ description: Administratörer kan läsa mer om skydd mot hot i Microsoft 365 och
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cb2866fd3e60c021ae89ffabe7149f4b415d63bc
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: c9ca420609628476faba6262fe7ed412b8fa5746
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150718"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288807"
 ---
 # <a name="protect-against-threats"></a>Skydda mot hot
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 abonnemang 1 och abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Här är en snabbstartsguide som delar upp konfigurationen av Defender för Office 365. Om du inte har börjat använda skyddsfunktioner för hot i Office 365 förr eller är osäker på var du ska börja, eller om du lär dig bäst genom att göra det, kan du använda den här vägledningen som en checklista och en utgångspunkt.
+Här är en snabbstartsguide som bryter konfigurationen av Defender för Office 365 i delar. Om du inte har börjat använda skyddsfunktioner för hot i Office 365 förr eller är osäker på var du ska börja, eller om du lär dig bäst genom att göra det, kan du använda den här vägledningen som en checklista och en utgångspunkt.
 
 > [!IMPORTANT]
 > **De rekommenderade initiala inställningarna** ingår för varje typ av princip, men det finns många alternativ och du kan justera inställningarna så att de uppfyller organisationens behov. Det tar ungefär 30 minuter för principer eller ändringar att fungera genom datacentret.
@@ -71,7 +71,7 @@ Om du vill konfigurera Defender för Office 365-principer måste du ha tilldelat
 
 |Roll eller rollgrupp|Här kan du lära dig mer|
 |---|---|
-|global administratör|[Om administratörsroller i Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|global administratör|[Om administratörsroller i Microsoft 365](../../admin/add-users/about-admin-roles.md)|
 |Säkerhetsadministratör|[Administratörens rollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Organisationshantering i Exchange Online|[Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> och <p> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |
@@ -112,11 +112,11 @@ Här beskrivs hur du konfigurerar en princip mot nätfiske i Microsoft Defender 
 
 3. Klicka på **Redigera i** avsnittet **Personifiering** och ange sedan följande inställningar:
 
-   - Aktivera **skydd på fliken Lägg till** användare för att *skydda.* Sedan kan du lägga till användare, till exempel organisationens styrelsemedlemmar, din VD, ekonomichef och andra högre chefer. (Du kan skriva en enskild e-postadress eller klicka för att visa en lista.)
+   - Aktivera **skydd på fliken Lägg till** användare för att *skydda.* Lägg sedan till användare, till exempel organisationens styrelsemedlemmar, din VD, ekonomichef och andra högre chefer. (Du kan skriva en enskild e-postadress eller klicka för att visa en lista.)
 
    - På fliken **Lägg till domäner för att** skydda aktiverar du Inkludera automatiskt de domäner jag **äger.** Om du har egna domäner kan du lägga till dem nu.
 
-   - Välj Sätt **meddelandet** i karantän för  **både den personifierade** användaren och de imiterade **domänalternativen på fliken** Åtgärder. Aktivera även säkerhetstips för personifiering.
+   - På fliken **Åtgärder** väljer du Sätt **meddelandet i karantän för** både alternativen för den **imiterade användaren** och den **personifierade** domänen. Aktivera även säkerhetstips för personifiering.
 
    - Kontrollera att **postlådeinformation** är aktiverat på fliken Postlådeinformation och aktivera postlådebaserat personifieringsskydd. I listan **Om e-post skickas med en imiterad** användare väljer du **Sätt meddelandet i karantän.**
 
@@ -134,13 +134,13 @@ Här beskrivs hur du konfigurerar en princip mot nätfiske i Microsoft Defender 
 
 5. Stäng sidan med standardprincipinställningar.
 
-Mer information om alternativen för nätfiskeprinciper finns i Konfigurera principer mot nätfiske i [Microsoft Defender för Office 365.](configure-atp-anti-phishing-policies.md)
+Mer information om dina alternativ för skydd mot nätfiske finns i Konfigurera principer för nätfiske i [Microsoft Defender för Office 365.](configure-atp-anti-phishing-policies.md)
 
 ## <a name="part-3---anti-spam-protection"></a>Del 3 – Skydd mot skräppost
 
 [Skydd mot skräppost är tillgängligt](anti-spam-protection.md) i prenumerationer som innehåller [EOP.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
 
-1. Välj [Skydd mot skräppost i & Säkerhets-](https://protection.office.com)  \> **och efterlevnadscenter.** \> 
+1. I [Säkerhets- & Center väljer](https://protection.office.com)du **Policy för hantering** av \> **hot** \> **mot skräppost.**
 
 2. Aktivera **Anpassade** inställningar på fliken Anpassad.
 
@@ -160,7 +160,7 @@ Tids för klick-skydd mot skadliga URL:er och filer är tillgängligt i prenumer
 
 ### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Principer för säkra bifogade filer i Microsoft Defender för Office 365
 
-Skapa minst [en princip för](atp-safe-attachments.md)säkra länkar om du vill konfigurera säkra bifogade filer.
+Skapa minst [en princip för](atp-safe-attachments.md)säkra länkar för att konfigurera säkra bifogade filer.
 
 1. I [Säkerhets- & Center väljer](https://protection.office.com)du ATP **för** hothanteringspolicy , säkra \>  \> **bifogade** filer och klickar sedan på **Skapa.**
 
@@ -182,11 +182,11 @@ Skapa minst [en princip för](atp-safe-attachments.md)säkra länkar om du vill 
 
 Konfigurera säkra [länkar, granska](atp-safe-links.md)och redigera dina globala inställningar för säkra länkar och skapa minst en princip för säkra länkar.
 
-1. I [Säkerhets- & Säkerhets-](https://protection.office.com)  och efterlevnadscenter väljer du ATP – säkra länkar för hothanteringspolicy, klickar på Globala inställningar och \>  \> konfigurerar sedan följande inställningar: 
+1. I [Säkerhets- & Säkerhets-](https://protection.office.com)  och efterlevnadscenter väljer du ATP – säkra länkar för hothanteringspolicy, klickar på Globala inställningar \>  \> och konfigurerar sedan följande inställningar: 
 
    - Kontrollera **Att Använd säkra länkar i: Office 365-program** är aktiverat: Slå ![ ](../../media/scc-toggle-on.png) på.
    - **Spåra inte när användare klickar på Säkra länkar**: Inaktivera den här inställningen om du vill spåra användarklick: ![ ](../../media/scc-toggle-off.png) Inaktivera.
-   - **Låt inte användare klicka sig fram genom säkra länkar till den ursprungliga** URL:en: Kontrollera att den här inställningen är ![ aktiverad: ](../../media/scc-toggle-on.png) Aktivera.
+   - **Låt inte användare klicka sig igenom säkra länkar till den ursprungliga** URL:en: Kontrollera att den här inställningen är ![ aktiverad: ](../../media/scc-toggle-on.png) Aktivera.
 
    Klicka på **Spara** när du är klar.
 
@@ -200,13 +200,13 @@ Konfigurera säkra [länkar, granska](atp-safe-links.md)och redigera dina global
      - **Välj åtgärden för okända potentiellt skadliga URL-adresser i meddelanden:** Välj **På.**
      - **Välj åtgärden för okända eller potentiellt skadliga URL-adresser i Microsoft Teams:** **Välj På.**
      - **Använda säkra länkar i e-postmeddelanden som skickas inom organisationen**
-     - **Vänta tills URL-skanningen har slutförts innan meddelandet levereras**
+     - **Vänta tills URL-genomsökning har slutförts innan meddelandet levereras**
      - **Använda säkra länkar i e-postmeddelanden som skickas inom organisationen**
      - **Tillåt inte att användare klickar till den ursprungliga URL:en**
 
      Klicka på **Nästa**
 
-4. Klicka på Lägg till ett **villkor** på sidan Används för, välj Används **om:** Mottagarens domän är, klicka på Lägg **till,** välj din domän eller domäner, klicka på Lägg **till,** klicka på Klar och klicka sedan på  **Nästa.**
+4. Klicka på Lägg till ett **villkor** på sidan Används på, välj Används **om:** Mottagarens domän är, klicka på Lägg **till,** välj din domän eller domäner, klicka på Lägg **till,** klicka på Klar och klicka sedan på  **Nästa.**
 
 5. Granska inställningarna och klicka sedan på **Slutför.**
 
@@ -223,15 +223,15 @@ Arbetsbelastningar som SharePoint, OneDrive och Teams är byggda för samarbete.
 
 2. Kontrollera att växlingsknappen Aktivera Defender för **Office 365 för SharePoint, OneDrive** och Microsoft Teams är till höger: Aktivera och klicka sedan ![ på ](../../media/scc-toggle-on.png) **Spara.**
 
-3. Granska (och vid behov, redigera) organisationens principer för [säkra bifogade](set-up-atp-safe-attachments-policies.md) filer och principer för [säkra länkar.](set-up-atp-safe-links-policies.md)
+3. Granska (och vid behov, redigera) organisationens principer för [säkra bifogade filer](set-up-atp-safe-attachments-policies.md) och principer för säkra [länkar.](set-up-atp-safe-links-policies.md)
 
 4. (Rekommenderas) Som global administratör eller SharePoint Online-administratör kör du cmdleten **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** med _parametern DisallowInfectedFileDownload_ inställd `$true` på.
 
    - `$true` blockerar alla åtgärder (utom Ta bort) för identifierade filer. Användare kan inte öppna, flytta, kopiera eller dela identifierade filer.
-   - `$false` blockerar alla åtgärder utom Ta bort och Ladda ned. Personer kan välja att acceptera risken och ladda ned en upptäckt fil.
+   - `$false` blockerar alla åtgärder utom Ta bort och Ladda ned. Andra kan välja att acceptera risken och ladda ned en upptäckt fil.
 
    > [!TIP]
-   > Mer information om hur du använder PowerShell med Microsoft 365 finns i [Hantera Microsoft 365 med PowerShell.](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)
+   > Mer information om hur du använder PowerShell med Microsoft 365 finns i [Hantera Microsoft 365 med PowerShell.](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)
 
 5. Tillåt upp till 30 minuter för dina ändringar att spridas till alla Microsoft 365-datacenter.
 
@@ -289,7 +289,7 @@ När du har konfigurerat funktionerna för skydd mot hot bör du övervaka hur f
 
 |Vad kan jag göra?|Resurser för att få mer information|
 |---|---|
-|Se hur skyddsfunktioner för hot fungerar för din organisation genom att visa rapporter|[Säkerhetsinstrumentpanel](security-dashboard.md) <p> [E-postsäkerhetsrapporter](view-email-security-reports.md) <p> [Rapporter för Microsoft Defender för Office 365](view-reports-for-atp.md) <p> [Hotutforskaren](threat-explorer.md)|
+|Se hur skyddsfunktioner för hot fungerar för din organisation genom att visa rapporter|[Säkerhetsinstrumentpanel](security-dashboard.md) <p> [Säkerhetsrapporter för e-post](view-email-security-reports.md) <p> [Rapporter för Microsoft Defender för Office 365](view-reports-for-atp.md) <p> [Hotutforskaren](threat-explorer.md)|
 |Regelbundet granska och revidera dina principer för skydd mot hot efter behov|[Secure Score](../mtp/microsoft-secure-score.md) <p> [Smarta rapporter och insikter](reports-and-insights-in-security-and-compliance.md) <p> [Funktioner för undersökning av hot och hot i Microsoft 365](keep-users-safe-with-office-365-ti.md)|
-|Håll utkik efter nya funktioner och tjänstuppdateringar|[Alternativ för standard och riktad version](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365) <p> [Meddelandecentral](https://docs.microsoft.com/microsoft-365/admin/manage/message-center) <p> [Översikt över Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Tjänstbeskrivningar](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
+|Håll utkik efter nya funktioner och tjänstuppdateringar|[Alternativ för standard och riktad version](../../admin/manage/release-options-in-office-365.md) <p> [Meddelandecentral](../../admin/manage/message-center.md) <p> [Översikt över Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Tjänstbeskrivningar](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
 |Läs mer om rekommenderade standard- och strikt säkerhetskonfigurationer för EOP och Defender för Office 365|[Rekommenderade inställningar för EOP och Microsoft Defender för Office 365-säkerhet](recommended-settings-for-eop-and-office365-atp.md)|

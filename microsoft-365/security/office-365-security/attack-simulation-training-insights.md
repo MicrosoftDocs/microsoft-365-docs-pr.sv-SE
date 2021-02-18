@@ -10,14 +10,14 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Administratörer kan lära sig hur attackersutbildning i Säkerhetscenter i Microsoft 365 påverkar anställda och kan få insikter från simulering och utbildningsresultat.
+description: Administratörer kan lära sig hur utbildningskurser för attacker i Säkerhetscenter i Microsoft 365 påverkar anställda och kan få insikter från simulering och utbildningsresultat.
 ms.technology: mdo
-ms.openlocfilehash: b7fd414cc355e768077198eb5215720c4d4a9444
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 43319089f604d32bf295392dd223cf65af8bd4be
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49933072"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288663"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Få insikter genom att träna på attacksimulering
 
@@ -31,10 +31,10 @@ På fliken **Översikt** över attacksimuleringsutbildning ser du hur **beteende
 
 I diagrammet kan du se:
 
-- **Förutsagd** komprometteringshastighet som återspeglar den genomsnittliga komprometteringen för simuleringar som använder samma typ av nyttolast i andra Microsoft 365-klientorganisationen som använder utbildning i attacksimulering.
+- **Förutsagd** komprometteringshastighet som återspeglar den genomsnittliga komprometteringen för simuleringar som använder samma typ av nyttolast i andra Microsoft 365-klientorganisationar som använder attacksimuleringsutbildning.
 - **Den faktiska komprometteringen** återspeglar procentandelen anställda som var med i simuleringen.
 
-Återspeglar dessutom `<number> less susceptible to phishing` skillnaden mellan det faktiska antalet anställda som komprometterats av attacken och den förutsagda komprometteras. Antalet anställda är mindre sannolikt att bli komprometterade av liknande angrepp i framtiden, samtidigt som det visar hur anställda gjorde generellt i motsats till den `<percent%> better than predicted rate` förutsagda komprometterande hastigheten.
+Återspeglar dessutom `<number> less susceptible to phishing` skillnaden mellan det faktiska antalet anställda som komprometterats av attacken och den förutsagda komprometteras. Antalet anställda är mindre sannolikt att bli komprometterade av liknande angrepp i framtiden, samtidigt som det visar hur anställda gjorde generellt i motsats till den `<percent%> better than predicted rate` förutsagda komprometterande räntan.
 
 > [!div class="mx-imgBorder"]
 > ![Kortet Påverkar beteendet på översikt över attacksimulering](../../media/attack-sim-preview-behavior-impact-card.png)
@@ -45,7 +45,7 @@ Om du vill se en mer detaljerad rapport klickar du **på Visa simuleringar och �
 
 På [ **fliken Simuleringar**](https://security.microsoft.com/attacksimulator?viewid=simulations)kommer du till simuleringsinformationen där du hittar avsnittet Rekommenderade **åtgärder** när du väljer en simulering.
 
-Avsnitten med rekommenderade åtgärder innehåller information om rekommendationer som finns [i Microsoft Secure Score.](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) De här rekommendationerna baseras på den nyttolast som användes i simuleringen och hjälper dig att skydda dina anställda och din miljö. Om du klickar på varje förbättringsåtgärd visas information om den.
+Avsnitten med rekommenderade åtgärder innehåller information om rekommendationer som finns [i Microsoft Secure Score.](../mtp/microsoft-secure-score.md) De här rekommendationerna baseras på den nyttolast som användes i simuleringen och hjälper dig att skydda dina anställda och din miljö. Om du klickar på varje förbättringsåtgärd visas information om den.
 
 > [!div class="mx-imgBorder"]
 > ![Avsnittet Rekommendationsåtgärder på attacksimuleringsutbildning](../../media/attack-sim-preview-recommended-actions.png)
@@ -54,6 +54,6 @@ Avsnitten med rekommenderade åtgärder innehåller information om rekommendatio
 
 [Kom igång med Attack simuleringsträning](attack-simulation-training-get-started.md)
 
-[Skapa en nätfiskeattack som kan simuleras](attack-simulation-training.md)
+[Skapa en simulering av nätfiskeattack](attack-simulation-training.md)
 
 [skapa ett nyttolast för att utbilda dina användare](attack-simulation-training-payloads.md)

@@ -19,21 +19,21 @@ ms.custom:
 description: Administratörer kan lära sig att visa, skapa, ändra och ta bort principer för utgående skräppost i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6b7ba1e398466c448de37060db340c1d20cb1504
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 742c58a8a94938c5896382a6d53acac127974f02
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165770"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288939"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurera utgående skräppostfiltrering i EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection (EOP) organisationer utan Exchange Online-postlådor kontrolleras utgående e-postmeddelanden som skickas via EOP automatiskt efter skräppost och ovanlig avsändaraktivitet.
 
@@ -60,7 +60,7 @@ I Exchange Online PowerShell eller fristående EOP PowerShell hanterar du policy
 
 Varje organisation har en inbyggd princip för utgående skräppost med namnet Standard som har följande egenskaper:
 
-- Principen tillämpas på alla mottagare i organisationen, även om det inte finns någon regel för utgående skräppostfilter (mottagarfilter) kopplad till principen.
+- Principen tillämpas på alla mottagare i organisationen, även om det inte finns någon utgående skräppostfilterregel (mottagarfilter) kopplad till principen.
 - Principen har det anpassade prioritetsvärdet **Lägsta** som du inte kan ändra (policyn tillämpas alltid sist). Alla anpassade principer som du skapar har alltid högre prioritet än principen som heter Standard.
 - Politik är standardpolicyn (egenskapen **IsDefault** har värdet `True`) och du kan inte ta bort standardpolicyn.
 
@@ -80,7 +80,7 @@ För att göra utgående skräppostfiltrering mer effektiv kan du skapa anpassad
 
   **Anmärkningar**:
 
-  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
   - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
 - Våra rekommenderade inställningar för principer för utgående skräppost finns i principinställningarna för [EOP-filter för utgående skräppost.](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)
@@ -120,7 +120,7 @@ Om du skapar en anpassad policy för utgående skräppost i Säkerhets- & och ef
 
         Upprepa de här stegen så många gånger det behövs.
 
-        De mottagare du har lagt till visas i **avsnittet Mottagarlista** på den utfällna sidan. Om du vill ta bort en mottagare klickar du ![ på Knappen Ta ](../../media/scc-remove-icon.png) bort.
+        De mottagare du har lagt till visas i **avsnittet Mottagarlista** i den utfällna listrutan. Om du vill ta bort en mottagare klickar du ![ på Knappen Ta ](../../media/scc-remove-icon.png) bort.
 
      1. Klicka på **Spara** när du är klar.
 
@@ -134,7 +134,7 @@ Om du skapar en anpassad policy för utgående skräppost i Säkerhets- & och ef
      >
      > - [Standardaviseringsprincipen](../../compliance/alert-policies.md) med namnet **Användare** begränsad från att skicka e-post skickar redan e-postmeddelanden till medlemmar i gruppen **TenantAdmins** (globala administratörer) när användare **blockeras** på grund av att de överskrider gränserna i avsnittet **Mottagargränser.** **Vi rekommenderar starkt att du använder aviseringsprincipen i** stället för den här inställningen i principen för utgående skräppost för att meddela administratörer och andra användare. Instruktioner finns i Verifiera [aviseringsinställningarna för begränsade användare.](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)
 
-5. (Valfritt) Expandera avsnittet **Mottagargränser för** att konfigurera begränsningar och åtgärder för misstänkta utgående e-postmeddelanden:
+5. (Valfritt) Expandera avsnittet **Mottagargränser om** du vill konfigurera begränsningar och åtgärder för misstänkta utgående e-postmeddelanden:
 
    > [!NOTE]
    > De här inställningarna gäller endast för molnbaserade postlådor.
@@ -149,7 +149,7 @@ Om du skapar en anpassad policy för utgående skräppost i Säkerhets- & och ef
 
      - **Daglig gräns:** Det maximala totala antalet mottagare per dag.
 
-   - **Åtgärd när en användare överskrider gränserna ovan:** Konfigurera åtgärden som ska vidtas när någon av **mottagargränserna** överskrids. För alla åtgärder kommer mottagarna  som angetts i användaren att inte kunna skicka e-postaviseringar (och i den nu **redundanta** principen meddela specifika personer om en avsändare blockeras på grund av inställning för utgående skräppost i principen för utgående skräppost ta emot e-postmeddelanden.
+   - **Åtgärd när en användare överskrider gränserna ovan:** Konfigurera åtgärden som ska vidtas när någon av **mottagarbegränsningarna** överskrids. För alla åtgärder kommer mottagarna  som angetts i användaren att inte kunna skicka e-postaviseringar (och i den nu **redundanta** principen meddela specifika personer om en avsändare blockeras på grund av inställning för utgående skräppost i principen för utgående skräppost ta emot e-postmeddelanden.
 
      - **Begränsa användarens sändning av e-post till följande** dag: Det här är standardvärdet. E-postaviseringar skickas och användaren kan inte skicka fler meddelanden förrän nästa dag, baserat på UTC-tid. Det finns inget sätt för administratören att åsidosätta det här blocket.
 
@@ -195,7 +195,7 @@ Om du skapar en anpassad policy för utgående skräppost i Säkerhets- & och ef
 
 8. Klicka på **Spara** när du är klar.
 
-## <a name="use-the-security--compliance-center-to-view-outbound-spam-policies"></a>Använd Säkerhets- & center för att visa principer för utgående skräppost
+## <a name="use-the-security--compliance-center-to-view-outbound-spam-policies"></a>Använd Säkerhets- & Center för att visa principer för utgående skräppost
 
 1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd**.
 
@@ -241,9 +241,9 @@ Du kan inte inaktivera standardprincipen för utgående skräppost.
 
 ### <a name="set-the-priority-of-custom-outbound-spam-policies"></a>Ange prioritet för anpassade principer för utgående skräppost
 
-Som standard prioriteras principer för utgående skräppost baserat på i vilken ordning de skapades (nyare principer har lägre prioritet än äldre principer). Ett lägre prioritetsnummer innebär att principen har högre prioritet (0 är det högsta), och principerna bearbetas i prioritetsordning (principer med högre prioritet bearbetas före principer med lägre prioritet). Inga två policyer kan ha samma prioritet, och policyhantering stannar efter att den första policyn har tillämpats.
+Som standard prioriteras principer för utgående skräppost baserat på den ordning de skapades i (nyare principer har lägre prioritet än äldre principer). Ett lägre prioritetsnummer innebär att principen har högre prioritet (0 är det högsta), och principerna bearbetas i prioritetsordning (principer med högre prioritet bearbetas före principer med lägre prioritet). Inga två policyer kan ha samma prioritet, och policyhantering stannar efter att den första policyn har tillämpats.
 
-Anpassade principer för utgående skräppost visas i den ordning de bearbetas (den första principen har **prioritetsvärdet** 0). Standardprincipen för utgående skräppost med **namnet Utgående skräppostfilter** har prioritetsvärdet **Lägsta** och du kan inte ändra den.
+Anpassade principer för utgående skräppost visas i den ordning de bearbetas (den första principen har **prioritetsvärdet** 0). Standardprincipen för utgående skräppost med **namnet Utgående skräppostfilter** har lägst prioritet **och** du kan inte ändra den.
 
 Du ändrar prioriteten för en princip genom att flytta principen uppåt eller nedåt i listan (du kan inte ändra **prioritetsnumret** direkt i Säkerhets- och efterlevnadscenter).
 
@@ -275,7 +275,7 @@ Du kan inte ta bort standardprincipen.
 
 Som vi beskrivit tidigare består en princip för utgående skräppost av en princip för utgående skräppostfilter och en regel för utgående skräppostfilter.
 
-I Exchange Online PowerShell eller fristående EOP PowerShell visar sig skillnaden mellan principer för skräppostfilter för utgående och utgående skräppost. Du hanterar principer för utgående skräppostfilter med cmdlet:arna **\* -HostedOutboundSpamFilterPolicy** och du hanterar filterregler för utgående skräppost med **\* cmdlet:arna -HostedOutboundSpamFilterRule.**
+I Exchange Online PowerShell eller fristående EOP PowerShell visar sig skillnaden mellan principer för utgående skräppostfilter och utgående skräppostfilter. Du hanterar principer för utgående skräppostfilter med cmdlet:arna **\* -HostedOutboundSpamFilterPolicy** och du hanterar filterregler för utgående skräppost med **\* cmdlet:arna -HostedOutboundSpamFilterRule.**
 
 - I PowerShell skapar du först principen för utgående skräppostfilter och sedan skapar du den utgående skräppostfilterregel som identifierar principen som regeln gäller för.
 - I PowerShell ändrar du inställningarna i filterprincipen för utgående skräppost och filterregeln för utgående skräppost separat.
@@ -418,7 +418,7 @@ Detaljerad information om syntax och parametrar finns [i Set-HostedOutboundSpamF
 
 Den enda inställning som inte är tillgänglig när du ändrar en regel för utgående skräppostfilter i PowerShell är den aktiverade _parametern_ som gör att du kan skapa en inaktiverad regel. Om du vill aktivera eller inaktivera befintliga regler för skräppostfilter, se nästa avsnitt.
 
-Annars är inga ytterligare inställningar tillgängliga när du ändrar en regel för utgående skräppostfilter i PowerShell. Samma inställningar är tillgängliga när du skapar en regel enligt beskrivningen i steg [2:](#step-2-use-powershell-to-create-an-outbound-spam-filter-rule) Använd PowerShell för att skapa en regel för utgående skräppostfilter tidigare i den här artikeln.
+Annars finns det inga ytterligare inställningar tillgängliga när du ändrar en regel för utgående skräppostfilter i PowerShell. Samma inställningar är tillgängliga när du skapar en regel enligt beskrivningen i steg [2:](#step-2-use-powershell-to-create-an-outbound-spam-filter-rule) Använd PowerShell för att skapa en regel för utgående skräppostfilter tidigare i den här artikeln.
 
 Använd följande syntax för att ändra en regel för utgående skräppostfilter:
 
@@ -430,7 +430,7 @@ Detaljerad information om syntax och parametrar finns [i Set-HostedOutboundSpamF
 
 ### <a name="use-powershell-to-enable-or-disable-outbound-spam-filter-rules"></a>Använda PowerShell för att aktivera eller inaktivera regler för utgående skräppostfilter
 
-Om du aktiverar eller inaktiverar en regel för utgående skräppostfilter i PowerShell aktiveras eller inaktiveras principen för hela utgående skräppost (regeln för utgående skräppostfilter och den tilldelade principen för utgående skräppostfilter). Du kan inte aktivera eller inaktivera standardprincipen för utgående skräppost (den används alltid för alla mottagare).
+Genom att aktivera eller inaktivera en regel för utgående skräppostfilter i PowerShell aktiveras eller inaktiveras principen för helt utgående skräppost (regeln för utgående skräppostfilter och den tilldelade principen för utgående skräppostfilter). Du kan inte aktivera eller inaktivera standardprincipen för utgående skräppost (den används alltid för alla mottagare).
 
 Om du vill aktivera eller inaktivera en regel för utgående skräppostfilter i PowerShell använder du följande syntax:
 
@@ -452,7 +452,7 @@ Enable-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 
 Detaljerad information om syntax och parametrar finns i [Enable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/enable-hostedoutboundspamfilterrule) och [Disable-HostedOutboundSpamFilterRule.](https://docs.microsoft.com/powershell/module/exchange/disable-hostedoutboundspamfilterrule)
 
-### <a name="use-powershell-to-set-the-priority-of-outbound-spam-filter-rules"></a>Använda PowerShell för att ange prioriteten för regler för skräppostfilter för utgående trafik
+### <a name="use-powershell-to-set-the-priority-of-outbound-spam-filter-rules"></a>Använda PowerShell för att ange prioritet för regler för skräppostfilter som utgående trafik
 
 Det högsta prioritetsvärde du kan ange för en regel är 0. Det lägsta värde du kan ange beror på antalet regler. Om du till exempel har fem regler kan du använda prioritetsvärden från 0 till 4. Om du ändrar prioriteten för en befintlig regel kan det ha en dominoeffekt på andra regler. Om du till exempel har fem anpassade regler (prioriteterna 0 till 4) och du ändrar prioriteten för en regel till 2 ändras den befintliga regeln med prioritet 2 till prioritet 3, och regeln med prioritet 3 ändras till prioritet 4.
 

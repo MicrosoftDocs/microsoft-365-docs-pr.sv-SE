@@ -15,25 +15,25 @@ search.appverid:
 ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
-description: Lär dig mer om hur EOP och Office 365 skyddar dig med skydd mot skräppost, nätfiske och skadlig kod genom att lägga till säkerhetstips överst i e-postmeddelanden.
+description: Lär dig mer om hur EOP och Office 365 skyddar dig med skydd mot skräppost, nätfiske och skadlig kod genom att lägga till säkerhetstips högst upp i e-postmeddelanden.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c37eba07b306ff47e14640e494e468b63b358726
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 2eae3f17d4ba9b72383bf1b8864a136cd9e7b2b8
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166621"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288567"
 ---
 # <a name="safety-tips-in-email-messages"></a>Säkerhetstips i e-postmeddelanden
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Exchange Online Protection (EOP) och Microsoft 365 skyddar dig med skydd mot skräppost, nätfiske och skadlig kod. Vissa av dessa attacker är i dag så väl utformade att de ser legitima ut. Det räcker inte alltid att skicka meddelanden till mappen Skräppost. När du kontrollerar din e-post i Outlook eller Outlook på webben eller någon annan e-postklient kontrollerar EOP nu automatiskt avsändaren och lägger till ett säkerhetstips högst upp i e-postmeddelandet.
 

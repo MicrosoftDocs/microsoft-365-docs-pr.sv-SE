@@ -15,28 +15,28 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan ta reda på hur de visar och konfigurerar globala inställningar (listan Blockera följande URL:er och skydd för Office 365-program) för säkra länkar i Microsoft Defender för Office 365.
+description: Administratörer kan lära sig hur de visar och konfigurerar globala inställningar (listan Blockera följande URL:er och skydd för Office 365-program) för säkra länkar i Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 885fe6a06cce054bea6d6f20c24c5c1f2a159c07
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d52a4dc5ed35ec73c1410d6428a581b098bf2c52
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165733"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287467"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Konfigurera globala inställningar för Säkra länkar i Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!IMPORTANT]
 > Den här artikeln är avsedd för företagskunder som har [Microsoft Defender för Office 365](office-365-atp.md). Om du är hemanvändare och vill ha information om säkra länkar i Outlook kan du [läsa Mer Outlook.com säkerhet.](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)
 
-Säkra länkar är en funktion i Microsoft Defender för [Office 365](office-365-atp.md) som ger URL-genomsökning av inkommande e-postmeddelanden i e-postflödet och tidpunkten för klickverifiering av URL:er och länkar i e-postmeddelanden och på andra platser. Mer information finns i [Säkra länkar i Microsoft Defender för Office 365.](atp-safe-links.md)
+Säkra länkar är en funktion i Microsoft Defender för [Office 365](office-365-atp.md) som tillhandahåller URL-genomsökning av inkommande e-postmeddelanden i e-postflödet och tidpunkten för verifiering av URL:er och länkar i e-postmeddelanden och på andra platser. Mer information finns i [Säkra länkar i Microsoft Defender för Office 365.](atp-safe-links.md)
 
 Du konfigurerar de flesta inställningarna för Säkra länkar i principer för säkra länkar. Instruktioner finns i Konfigurera [principer för säkra länkar i Microsoft Defender för Office 365.](set-up-atp-safe-links-policies.md)
 
@@ -63,10 +63,10 @@ Du kan konfigurera globala inställningar för säkra länkar i Säkerhets- & oc
 
   **Anmärkningar**:
 
-  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
   - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
-- Våra rekommenderade värden för de globala inställningarna för Säkra länkar finns i [inställningarna för Säkra länkar.](recommended-settings-for-eop-and-office365-atp.md#safe-links-settings)
+- Våra rekommenderade värden för globala inställningar för säkra länkar finns i [inställningarna för Säkra länkar.](recommended-settings-for-eop-and-office365-atp.md#safe-links-settings)
 
 - Det kan ta upp till 30 minuter innan en ny eller uppdaterad princip tillämpas.
 
@@ -144,8 +144,8 @@ Set-AtpPolicyForO365 [-EnableSafeLinksForO365Clients <$true | $false> [-AllowCli
 Det här exemplet konfigurerar följande inställningar för skydd mot säkra länkar i Office 365-program:
 
 - Säkra länkar för Office 365-appar är aktiverat (vi använder inte parametern _EnableSafeLinksForO365Clients_ och standardvärdet är $true).
-- Användarklick som är relaterade till blockerade URL:er i Office 365-program spåras.
-- Användare får inte klicka till den ursprungliga blockerade URL:en i Office 365-program som stöds (parametern _AllowClickThrough_ används inte och standardvärdet är $false).
+- Användarklick som är relaterade till blockerade URL:er i Office 365-appar som stöds spåras.
+- Användare får inte klicka till den ursprungliga blockerade URL:en i Office 365-program som stöds (parametern _AllowClickThrough_ används inte och standardvärdet $false).
 
 ```powershell
 Set-AtpPolicyForO365 -TrackClicks $true

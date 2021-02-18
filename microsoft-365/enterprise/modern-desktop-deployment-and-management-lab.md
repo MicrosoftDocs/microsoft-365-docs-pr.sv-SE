@@ -1,5 +1,5 @@
 ---
-title: Windows- och Office deployment lab kit
+title: Windows- och Office-distributionslabbpaket
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Läs mer om Deployment Lab kit för Windows och Office, och var du hittar det.
-ms.openlocfilehash: 459b0fd246455f46a1c1ff497379487de9fdb61d
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 9b558ad20a84bc902dd9a4a78ebafdbcecd8a9bb
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142271"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288269"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows- och Office deployment lab kit
 
@@ -44,7 +44,7 @@ Paketet förser dig med en automatiskt konfigurerad virtuell labmiljö, inklusiv
   - Windows Server 
   - Microsoft SQL Server 
 
-Det resulterande labbet är avsett att anslutas till försök i: 
+Det resulterande labbet är avsett att anslutas till försök under: 
 
   - Microsoft 365 E5
   - Office 365 E5 med Enterprise Mobility + Security (EMS)
@@ -56,7 +56,7 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
 ### <a name="plan-and-prepare-infrastructure"></a>Planera och förbereda infrastrukturen 
 - Desktop Analytics 
 - Cloud Management Gateway & Cloud Distribution Point 
-- Klientorganisationen bifogar, samhantering och växling av arbetsbelastningar 
+- Bifoga klientorganisation, samhantering och växla arbetsbelastningar 
 - Fjärråtkomst (VPN) 
 
 ### <a name="prepare-configuration"></a>Förbereda konfiguration   
@@ -99,7 +99,7 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
 
 [Ladda ned Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-* Den installerade baslinjeversionen 2002 kan uppdateras till version 2010 med hjälp av uppdatering i konsolen. Använd en bred bandbredd för Internetanslutning för att ladda ned innehållet och ta 30–45 minuter för automatisk etablering. Labmiljön kräver minst 16 GB tillgängligt minne och 150 GB ledigt diskutrymme. För optimala prestanda rekommenderas 32 GB tillgängligt minne och 300 GB ledigt utrymme. Paketet går ut 11 februari 2021. En ny version publiceras före utgångsdatumet.
+* Den installerade baslinjeversionen 2002 kan uppdateras till version 2010 med hjälp av uppdatering i konsolen. Använd en bred bandbredd för Internetanslutning för att ladda ned innehållet och ta 30–45 minuter för automatisk etablering. Labmiljön kräver minst 16 GB tillgängligt minne och 150 GB ledigt diskutrymme. För optimala prestanda rekommenderas 32 GB tillgängligt minne och 300 GB ledigt utrymme. Paketet går ut 2 maj 2021. En ny version publiceras före utgångsdatumet.
 
 ## <a name="additional-guidance"></a>Ytterligare vägledning
 

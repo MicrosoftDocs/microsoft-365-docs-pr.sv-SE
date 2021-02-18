@@ -15,39 +15,39 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan läsa mer om vilka typer av e-postadresser som godkänns eller avvisas av Exchange Online Protection (EOP) och e Outlook.com för att förhindra nätfiske.
+description: Administratörer kan läsa om vilka typer av e-postadresser som godkänns eller avvisas av Exchange Online Protection (EOP) och e Outlook.com för att förhindra nätfiske.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7c2cbec49082fbded857dde13f73516fd3e0fd5
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: f8ced200c2e521533c1dec8a9d0917add7ca058f
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167521"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287825"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Hur EOP verifierar från-adressen för att förhindra nätfiske
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Nätfiskeattacker är ett konstant hot mot e-postorganisationen. Förutom att använda falska [(förfalskade)](anti-spoofing-protection.md)avsändaradresser använder attacker ofta värden i från-adressen som bryter mot Internetstandarder. För att förhindra den här typen av nätfiske kräver Exchange Online Protection (EOP) och Outlook.com nu att inkommande meddelanden inkluderar en RFC-kompatibel från-adress enligt beskrivningen i den här artikeln. Den här tillämpning aktiverades i november 2017.
+Nätfiskeattacker är ett konstant hot mot e-postorganisation. Förutom att använda falska [(förfalskade) avsändares](anti-spoofing-protection.md)e-postadresser använder attacker ofta värden i från-adressen som bryter mot Internetstandarder. För att förhindra den här typen av nätfiske kräver Exchange Online Protection (EOP) och Outlook.com nu att inkommande meddelanden inkluderar en RFC-kompatibel från-adress enligt beskrivningen i den här artikeln. Den här tillämpning aktiverades i november 2017.
 
 **Anmärkningar**:
 
 - Om du regelbundet får e-post från organisationer som har felformulär från adresser enligt beskrivningen i den här artikeln bör du uppmuntra dessa organisationer att uppdatera sina e-postservrar så att de uppfyller moderna säkerhetsstandarder.
 
-- Det relaterade avsändarfältet (som används av Skicka för och distributionslistor) påverkas inte av dessa krav. Mer information finns i följande blogginlägg: Vad innebär det när vi [refererar till "avsändaren" av ett e-postmeddelande?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/).
+- Det relaterade fältet Sender (används av Send on Behalf och mailing lists) påverkas inte av dessa krav. Mer information finns i följande blogginlägg: Vad innebär det när vi refererar till avsändaren av ett [e-postmeddelande?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/).
 
 ## <a name="an-overview-of-email-message-standards"></a>En översikt över standarder för e-postmeddelanden
 
 Ett vanligt SMTP-e-postmeddelande består av ett *meddelandekuvert* och meddelandeinnehåll. Meddelandekuvertet innehåller information som behövs för att överföra och leverera meddelandet mellan SMTP-servrar. Meddelandeinnehållet innehåller fält för meddelanderubriker (kallas gemensamt *för meddelanderubriken)* och meddelandets brödtext. Meddelandekuvertet beskrivs i [RFC 5321](https://tools.ietf.org/html/rfc5321)och meddelanderubriken beskrivs i [RFC 5322.](https://tools.ietf.org/html/rfc5322) Mottagarna ser aldrig det faktiska meddelandekuvertet eftersom det genereras av meddelandeöverföringsprocessen och det är faktiskt inte en del av meddelandet.
 
-- Adressen (kallas även MAIL `5321.MailFrom` **FROM-adress,** P1-avsändare eller kuvertavsändare) är den e-postadress som används vid meddelandets SMTP-överföring. Den här **e-postadressen** registreras vanligtvis i huvudfältet för retursökväg i meddelandehuvudet (även om avsändaren kan ange en annan **e-postadress** för retursökvägen).
+- Adressen (kallas även MAIL `5321.MailFrom` **FROM-adress,** P1-avsändare eller kuvertavsändare) är den e-postadress som används vid meddelandets SMTP-överföring. Den här **e-postadressen** registreras vanligtvis i huvudfältet för retursökväg i meddelandehuvudet (även om det är möjligt för avsändaren att ange en annan **e-postadress** för retursökväg).
 
 - Den (kallas även från-adress eller P2-avsändare) är e-postadressen i fältet Från rubrik och är avsändarens e-postadress som visas i `5322.From` e-postklienter.  Från-adressen är fokus på kraven i den här artikeln.
 
@@ -110,7 +110,7 @@ Följande från e-postadresser är ogiltiga:
 
 - `From: "Microsoft 365"<sender@contoso.com>` (Inget blanksteg mellan det avslutande dubbla citattecknet och den vänstra vinkelparentesen.)
 
-## <a name="suppress-auto-replies-to-your-custom-domain"></a>Ignorera automatiska svar på din anpassade domän
+## <a name="suppress-auto-replies-to-your-custom-domain"></a>Ignorera autosvar i din egen domän
 
 Du kan inte använda värdet för `From: <>` att ignorera automatiska svar. I stället måste du konfigurera en null MX-post för din anpassade domän. Autosvar (och alla svar) utelämnas naturligt eftersom det inte finns någon publicerad adress som svarsservern kan skicka meddelanden till.
 
@@ -132,7 +132,7 @@ Mer information om hur du publicerar en null MX finns [i RFC 7505.](https://tool
 
 Om du vill åsidosätta kraven för från-adress för inkommande e-post kan du använda IP-listan över tillåtna adresser (anslutningsfiltrering) eller e-postflödesregler (kallas även transportregler) enligt beskrivningen i Skapa listor över betrodda avsändare i [Microsoft 365.](create-safe-sender-lists-in-office-365.md)
 
-Du kan inte åsidosätta kraven för från-adress för utgående e-post som du skickar från Microsoft 365. Dessutom kommer Outlook.com att inte tillåta åsidosättningar av något slag, även via support.
+Du kan inte åsidosätta kraven för från-adress för utgående e-post som du skickar från Microsoft 365. Dessutom kan Outlook.com åsidosättningar av något slag, inte ens via support.
 
 ## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Andra sätt att förhindra och skydda mot cyberbrott i Microsoft 365
 

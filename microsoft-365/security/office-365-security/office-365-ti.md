@@ -21,19 +21,19 @@ ms.custom:
 description: Läs mer om funktioner för undersökning av hot och svar i Microsoft Defender för Office 365-abonnemanget.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 32b23dca0d4cb70407ce91a652e458b729b3c12f
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 2a772ed3016bebc8f380cf384257e12497e9eb7c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150742"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287683"
 ---
 # <a name="threat-investigation-and-response"></a>Hotundersökning och -svar
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
--    [Microsoft Defender för Office 365 abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender för Office 365 abonnemang 2](office-365-atp.md)
 
 
 Med funktionerna för undersökning av hot och svar i Microsoft Defender för [Office 365](office-365-atp.md) kan säkerhetsanalytiker och administratörer skydda organisationens Microsoft 365 för företag-användare genom att:
@@ -49,13 +49,13 @@ Funktioner för undersökning av hot och svar ger insikter om hot och relaterade
 
 Funktionerna för undersökning av hot och svar finns i Säkerhets- & Efterlevnadscenter som en uppsättning verktyg och svarsarbetsflöden, inklusive följande:
 
-- [Hotinstrumentpanel](#threat-dashboard)
+- [Instrumentpanelen för hot](#threat-dashboard)
 - [Utforskaren](#threat-explorer)
 - [Incidenter](#incidents)
 - [Attacksimulator](#attack-simulator)
 - [Automatiska undersökningar och svar](automated-investigation-response-office.md)
 
-### <a name="threat-dashboard"></a>Instrumentpanelen för hot
+### <a name="threat-dashboard"></a>Hotinstrumentpanel
 
 Använd instrumentpanelen för hot (kallas [](security-dashboard.md)även för säkerhetsinstrumentpanel) för att snabbt se vilka hot som har åtgärdats och som ett visuellt sätt att rapportera till beslutsfattare hur Microsoft 365-tjänsterna skyddar ditt företag.
 
@@ -97,7 +97,7 @@ Som en del av erbjudandet från Microsoft Defender för Office 365 Abonnemang 2 
 
 ## <a name="how-do-we-get-these-capabilities"></a>Hur får vi de här funktionerna?
 
-Funktionerna för undersökning av hot och hot i Microsoft 365 ingår i Microsoft Defender för Office 365 abonnemang 2, som ingår i Enterprise E5 eller som ett tillägg till vissa prenumerationer. Mer information finns i [Defender för Office 365 abonnemang 1 och abonnemang 2.](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)
+Microsoft 365 threat investigation and response capabilities are included in Microsoft Defender for Office 365 Plan 2, which is included in Enterprise E5 or as an add-on to certain subscriptions. Mer information finns i [Defender för Office 365 abonnemang 1 och abonnemang 2.](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)
 
 ## <a name="required-roles-and-permissions"></a>Obligatoriska roller och behörigheter
 

@@ -14,66 +14,65 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Lär dig mer om fakturerings konton och hur du hanterar dem.
-ms.openlocfilehash: 2382396c348fab0b24a269e9678193041ac2c19e
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+description: Läs mer om faktureringskonton och hur du hanterar dem.
+ms.openlocfilehash: 6c90bdd9087a67cc3639cfb06644a5587273dc35
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032639"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279304"
 ---
 # <a name="manage-billing-accounts"></a>Hantera faktureringskonton
 
-Ett fakturerings konto skapas när du registrerar dig för att försöka köpa Microsoft-produkter. Du använder ditt fakturerings konto för att hantera dina konto inställningar, fakturor, betalnings metoder och inköp. Du kan ha till gång till flera fakturerings konton. Du registrerade dig för Microsoft 365 direkt, eller så har du till gång till organisationens företags avtal för Microsoft Product & Services eller Microsoft Customer Agreement. För varje scenario har du ett separat fakturerings konto.
+Ett faktureringskonto skapas när du registrerar dig för att prova eller köpa Microsoft-produkter. Du använder ditt faktureringskonto för att hantera dina kontoinställningar, fakturor, betalningsmetoder och köp. Du kan ha åtkomst till flera faktureringskonton. Du registrerade dig till exempel för Microsoft 365 direkt eller så har du åtkomst till din organisations Enterprise-avtal, Microsofts &-tjänstavtal eller Microsofts kundavtal. För var och en av de här scenarierna skulle du ha ett separat faktureringskonto.
 
-Administrations Center för Microsoft 365 stöder för närvarande följande typ av fakturerings konto:
+Administrationscentret för Microsoft 365 har för närvarande stöd för följande typer av faktureringskonton:
 
-- Microsoft Online Services-program: detta konto skapas när du registrerar dig för en Microsoft 365-prenumeration direkt.
-- Programmet Microsoft Product & Services Agreement (MPSA): detta fakturerings konto skapas när organisationen signerar ett MPSA volym licens avtal för att köpa program vara och online tjänster.
-- Microsoft-kundavtal: detta konto skapas när din organisation samarbetar med en Microsoft-representant, en godkänd partner eller köp oberoende.
+- Microsoft Online Services Program: Det här faktureringskontot skapas när du registrerar dig för en Microsoft 365-prenumeration direkt.
+- Microsoft Products & Services Agreement (MPSA) Program: Det här faktureringskontot skapas när din organisation signerar ett MPSA-volymlicensieringsavtal för att köpa programvara och onlinetjänster.
+- Microsofts kundavtal: Det här faktureringskontot skapas när din organisation arbetar med en Microsoft-representant, en auktoriserad partner eller köp oberoende av varandra.
 
-På sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">fakturerings konton</a> får du en översikt över dina kommersiella konton hos Microsoft. Som standard har din organisation minst ett fakturerings konto som är kopplat till ett avtal som accepteras antingen vid direkt köpet, eller genom ett avtal för volym licensiering.
+På <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">sidan Faktureringskonton</a> visas microsoft för dina kommersiella konton. Som standard har organisationen minst ett faktureringskonto kopplat till ett avtal som accepteras antingen vid ett direktköp eller genom ett volymlicensieringsarrangemang.
 
-## <a name="understand-billing-account-details"></a>Förstå konto uppgifter för fakturering
+## <a name="understand-billing-account-details"></a>Förstå faktureringskontoinformation
 
-Den övre delen av sidan **fakturerings konto** information är din konto profil och innehåller juridisk information om din organisation. Du kan uppdatera din profil för att ändra din juridiska adress och telefonnummer. Det här kontot är den juridiska personen som betalar för produkterna du köper.
+Den översta delen av **informationssidan för faktureringskonton** är din kontoprofil och innehåller juridisk och skatteinformation om din organisation. Du kan uppdatera din profil för att ändra din juridiska adress och ditt telefonnummer. Det här kontot är den juridiska person som betalar för de produkter som du köper.
 
-I följande tabell visas de viktiga villkor som visas på sidan **fakturerings konton** .
+I följande tabell visas de viktiga termer som visas på **informationssidan för faktureringskonton.**
 
-| Fält namn | Beskrivning |
+| Fältnamn | Beskrivning |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Såld adress | Juridisk person som ansvarar för betalning och som identifieras på fakturan. Adressen som anges här används för att fastställa din momssats, såvida du inte väljer att ange en alternativ leveransadress under köpet. Mer information finns i [Momsinformation](billing-and-payments/tax-information.md). |
-| Delen | Ett skrivskyddat fält som identifierar företags segmentet för din organisation (kommersiell, utbildning, myndighets eller ideellt). |
-| Konto status | Ett skrivskyddat fält som anger statusen för ditt kommersiella konto hos Microsoft. |
-| Skatte-ID | Om du befinner dig utanför USA måste du ange en VAT eller lokal motsvarighet. Mer information finns i [Momsinformation](billing-and-payments/tax-information.md). |
-| Enighet | När ett fakturerings konto skapas, antingen via direkt inköp eller med ett avtal för volym licensiering, godkänner en undertecknare för organisationen eller loggar en överenskommelse som beskriver villkoren & villkoren för kontot. I tillämpliga fall visas en avtals historik i den här vyn. Om du måste acceptera uppdaterade villkor visas en länk för godkännande av **avtalet** . |
-| Fakturerings profiler | En fakturerings profil definierar egenskaperna för din faktura, till exempel vem som tar emot räkningen, hur fakturan levereras, betalnings villkor och ett inköps order nummer. Om du vill distribuera fakturering i organisationen kan du skapa flera fakturerings profiler och identifiera lämplig fakturerings profil vid inköps tillfället. Mer information om fakturerings profiler och hur du kan använda dem för att skapa flexibla fakturerings alternativ för din organisation genom att [hantera fakturerings profiler](billing-and-payments/manage-billing-profiles.md). |
+| Såld till-adress | Den juridiska person som ansvarar för betalningen och som identifieras på fakturan. Adressen som anges här används för att fastställa din momssats, såvida du inte väljer att ange en alternativ leveransadress under köpet. Mer information finns i [Momsinformation](billing-and-payments/tax-information.md). |
+| Segment | Ett skrivskyddsfält som identifierar affärssegmentet i organisationen (kommersiell, utbildnings-, myndighets- eller ideell). |
+| Kontostatus | Ett skrivskyddsfält som anger statusen för ditt kommersiella konto hos Microsoft. |
+| Skatte-ID | Om du befinner dig utanför USA måste du ange en moms eller lokal motsvarighet. Mer information finns i [Momsinformation](billing-and-payments/tax-information.md). |
+| Avtal | När ett faktureringskonto skapas, antingen genom ett direkt köp eller genom ett volymlicensieringsarrangemang, accepterar eller signerar en avtal som beskriver villkoren för & för kontot. I den här vyn finns en avtalshistorik, om tillämpligt. Om du måste godkänna uppdaterade villkor visas en länk för **att godkänna** avtalet. |
+| Faktureringsprofiler | En faktureringsprofil definierar egenskaper för fakturan, till exempel vem som får fakturan, hur fakturan levereras, betalningsvillkor och ett inköpsordernummer. Om du vill distribuera fakturering i hela organisationen kan du skapa flera faktureringsprofiler och identifiera lämplig faktureringsprofil vid köpet. Mer information om faktureringsprofiler och hur du kan använda dem för att skapa mer flexibla faktureringsalternativ för din organisation finns i [Förstå faktureringsprofiler.](billing-and-payments/manage-billing-profiles.md) |
 
 > [!NOTE]
-> Om du vill ändra namnet eller adressen som **sålts** , men inte ser en **redigerings** länk, måste du  [kontakta supporten](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) för att ändra den. Begäran om en ändring av en **säljare till** namn kräver en kredit kontroll. Du kan dela med dig av ett av följande dokument med Microsoft när du kontaktar supporten: 
+> Om du behöver ändra namn **eller** adress för Såld  till, men inte ser en redigeringslänk, måste du kontakta [supporten för](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) att ändra den. Begäranden om ändring **av Såld** till-namn kräver en kreditkontroll. Fyll [i det här](https://www.microsoft.com/download/details.aspx?id=102732)formuläret och var redo att dela något av följande dokument med Microsoft när du kontaktar supporten:
 >
-> - Statlig utfärdad handling eller registrerings brev
+> - Myndighets utfärdat dokument eller registreringsbrev
 > - Skriva ut från det lokala företagets register
 >
-> Support kan hjälpa med namn-och adress ändringar där bara kundens namn ändras, men enheten är oförändrad. Dokumentationen bör tydligt visa att endast enhetens namn har ändrats. Om ändringen är resultatet av en transaktion, inklusive försäljning av affärer, ändringar av kontroller eller en Divestiture eller "spinoff" för en kunds dotter bolag, kontaktar du din Microsoft-säljare.
+> Supporten kan hjälpa dig med namn- och adressändringar där bara kundnamnet ändras, men enheten förblir oförändrad. Dokumentation som ges bör tydligt visa att endast enhetens namn har ändrats. Kontakta din Microsoft-återförsäljare om ändringen är resultatet av en transaktion, inklusive försäljning av verksamhet, ändring av kontroller eller en omslutning eller "rotation"av en kundpartner.
 
-## <a name="shipping-addresses"></a>Leverans adresser
+## <a name="shipping-addresses"></a>Leveransadresser
 
-I det här avsnittet visas de leverans adresser som är kopplade till ditt fakturerings konto. När du köper ett inköp kan du använda den här adressen för att identifiera var köpet levereras eller används. Leverans adressen är redigerbar. Du kan lägga till en leverans adress eller uppdatera den befintliga adressen. Denna adress används för att bestämma moms satsen för köpet.
+Det här avsnittet innehåller leveransadresserna som är kopplade till ditt faktureringskonto. När du gör ett köp kan du använda den här adressen för att identifiera var köpet levererades eller används. Leveransadressen kan redigeras. Du kan lägga till en leveransadress eller uppdatera den befintliga adressen. Den här adressen används för att fastställa momssatsen för ditt köp.
 
-## <a name="understand-access-to-billing-accounts"></a>Förstå åtkomst till fakturerings konton
+## <a name="understand-access-to-billing-accounts"></a>Förstå åtkomst till faktureringskonton
 
-Du kan ge andra åtkomst till fakturerings kontot i administrations centret för Microsoft 365 via roller och behörigheter. Endast ett fakturerings konto får ge åtkomst till ett fakturerings konto. Du kan tilldela användarna en av följande roller:
+Du kan ge andra åtkomst till faktureringskontot i administrationscentret för Microsoft 365 via roller och behörigheter. Endast en faktureringskontoägare kan bevilja åtkomst till ett faktureringskonto. Du kan tilldela en av följande roller till användare:
 
-- Ägare till fakturerings **konto** &mdash; Kan tilldela behörigheter, redigera konton, signera avtal och Visa konton.
-- Deltagare i fakturerings **konto** &mdash; Kan redigera konton, signera avtal och Visa konton.
-- Läsare för fakturerings **konto** &mdash; Kan visa konton.
+- **Faktureringskontoägare** &mdash; Kan tilldela behörigheter, redigera konton, signera avtal och visa konton.
+- **Deltagare i faktureringskonto** &mdash; Kan redigera konton, signera avtal och visa konton.
+- **Läsare av faktureringskonto** &mdash; Kan visa konton.
 
 > [!Note]
-> Fakturerings konto roller gäller endast för fakturerings konton och gäller inte andra Microsoft 365 Admin Center-scenarier.
+> Faktureringskontoroller gäller endast faktureringskonton och gäller inte för andra scenarier i administrationscentret för Microsoft 365.
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
-[Momsinformation](billing-and-payments/tax-information.md)
-
-[Hantera faktureringsprofiler](billing-and-payments/manage-billing-profiles.md)
+[Skatteinformation](billing-and-payments/tax-information.md) (artikel) \
+[Förstå faktureringsprofiler](billing-and-payments/manage-billing-profiles.md) (artikel)

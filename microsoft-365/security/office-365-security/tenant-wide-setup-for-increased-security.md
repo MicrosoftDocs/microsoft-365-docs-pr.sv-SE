@@ -1,5 +1,5 @@
 ---
-title: Konfigurera Microsoft 365-klient organisationen för ökad säkerhet
+title: Konfigurera Microsoft 365-klienten för ökad säkerhet
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -8,7 +8,6 @@ manager: laurawi
 ms.date: 10/11/2018
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Ent_O365
@@ -18,117 +17,123 @@ search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
-description: I det här avsnittet får du hjälp med rekommenderad konfiguration för klient organisationens inställningar som påverkar säkerheten för din Microsoft 365-miljö.
-ms.openlocfilehash: cc1f69663badaa7ae6590bb1d389cb15f13da79d
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+description: I det här avsnittet får du hjälp med rekommenderad konfiguration för inställningar för hela klientorganisationen som påverkar säkerheten för Microsoft 365-miljön.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 6eff529a4ab2271df30579af227fe0c28691ae58
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357545"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286351"
 ---
-# <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Konfigurera Microsoft 365-klient organisationen för ökad säkerhet
+# <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Konfigurera Microsoft 365-klienten för ökad säkerhet
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gäller för**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-I det här avsnittet får du hjälp med rekommenderad konfiguration för klient organisationens inställningar som påverkar säkerheten för din Microsoft 365-miljö. Dina säkerhets behov kan kräva mer eller mindre säkerhet. Använd dessa rekommendationer som utgångs punkt.
+I det här avsnittet får du hjälp med rekommenderad konfiguration för inställningar för hela klientorganisationen som påverkar säkerheten för Microsoft 365-miljön. Dina säkerhetsbehov kan kräva mer eller mindre säkerhet. Använd de här rekommendationerna som utgångspunkt.
 
-## <a name="check-office-365-secure-score"></a>Kontrol lera säkert Poäng för Office 365
+## <a name="check-office-365-secure-score"></a>Kontrollera Office 365 Secure Score
 
-Med säkra Poäng för Office 365 analyseras organisationens säkerhet baserat på dina vanliga aktiviteter och säkerhets inställningar och du får en poäng. Börja med att anteckna ditt aktuella Poäng värde. Om du justerar vissa inställningar för hela klient organisationen ökar poängen. Målet är inte att få det högsta antalet poäng, men att vara medveten om möjligheter att skydda din miljö som inte negativt påverkar användarnas produktivitet. Se [Microsofts säkra Poäng](../mtp/microsoft-secure-score.md).
+Office 365 Secure Score analyserar organisationens säkerhet utifrån vanliga aktiviteter och säkerhetsinställningar och tilldelar ett poäng. Börja med att anteckna det aktuella resultatet. Om du justerar vissa inställningar för hela klientorganisationen ökar poängen. Målet är inte att uppnå maximal poäng, utan att vara medveten om möjligheter att skydda din miljö som inte negativt påverkar produktiviteten för användarna. Se [Microsoft Secure Score.](../mtp/microsoft-secure-score.md)
 
-## <a name="tune-threat-management-policies-in-the-microsoft-365-security-center"></a>Finjustera principer för Threat Management i säkerhets Center för Microsoft 365
+## <a name="tune-threat-management-policies-in-the-microsoft-365-security-center"></a>Justera principer för hantering av hot i Microsoft 365 säkerhetscenter
 
-Säkerhets Center för Microsoft 365 inkluderar funktioner som skyddar din miljö. Det inkluderar också rapporter och instrument paneler som du kan använda för att övervaka och vidta åtgärder. Vissa områden levereras med standardkonfigurationer för principer. Vissa områden inkluderar inte standard principer eller regler. Besök dessa principer under Threat Management för att justera Threat Management inställningar för en säkrare miljö.
+Säkerhetscentret i Microsoft 365 innehåller funktioner som skyddar din miljö. Den innehåller även rapporter och instrumentpaneler som du kan använda för att övervaka och vidta åtgärder. Vissa områden har standardprincipkonfigurationer. Vissa områden innehåller inte standardprinciper eller regler. Besök de här principerna under hantering av hot och anpassa inställningarna för hantering av hot för en säkrare miljö.
 
 ****
 
-|Under|Innehåller en standard princip|Rekommendation|
+|Område|Innehåller en standardprincip|Rekommendation|
 |---|---|---|
-|**Anti-nätfiske**|Ja|Om du har en egen domän konfigurerar du standard policyn för nätfiske för att skydda e-postkonton för dina mest värdefulla användare, till exempel VD: n och för att skydda din domän. <p> Granska [anti-nätfiske-principer i Office 365](set-up-anti-phishing-policies.md) och se [Konfigurera AntiPhishing-principer i EOP](configure-anti-phishing-policies-eop.md) eller [Konfigurera AntiPhishing-principer i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md).|
-|**Skydd mot skadlig program vara**|Ja| Redigera standard policyn: <ul><li>Filtret vanliga bilagor: Välj på</li></ul> <p> Du kan också skapa anpassade filter principer för skadlig kod och tillämpa dem på specifika användare, grupper eller domäner i organisationen. <p> Mer information: <ul><li>[Skydd mot skadlig kod](anti-malware-protection.md)</li><li>[Konfigurera principer för skydd mot skadlig kod](configure-anti-malware-policies.md)</li></ul>|
-|**Säkra bifogade filer i Microsoft Defender för Office 365**|Nej|På huvud sidan för säkra bifogade filer klickar du på **globala inställningar** och aktiverar den här inställningen: <ul><li>**Aktivera ATP för SharePoint, OneDrive och Microsoft Teams**</li></ul> <p> Skapa en princip för bifogade filer med följande inställningar: <ul><li> **Blockera**: Välj **block** som ett okänt svar på skadlig program vara.</li><li>**Aktivera omdirigera**: Markera den här rutan och ange en e-postadress, till exempel ett administratörs-eller karantän konto.</li><li>**Tillämpa ovanstående markering om genomsökning av skadlig kod för bifogade filer eller fel inträffar**: Markera den här rutan.</li><li>**_Tillkopplat_*: **mottagar domänen** \> väljer din domän.</li></ul> <p> Mer information: [ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md) och [Konfigurera principer för säkra bifogade filer](set-up-atp-safe-attachments-policies.md)|
-|**Säkra länkar i Microsoft Defender för Office 365**|Ja|Klicka på **globala inställningar** på huvud sidan för säkra länkar: <ul><li>**Använda säkra länkar i: Office 365-program**: kontrol lera att den här inställningen är aktive rad.</li><li>**Spåra inte när användare klickar på säkra länkar**: inaktivera den här inställningen för att spåra användare.</li></ul> <p> Skapa en princip för säkra länkar med de här inställningarna: <ul><li>**Välj åtgärd för okända URL-adresser i meddelanden**: kontrol lera att den här inställningen är **på**.</li><li>**Välj åtgärd för okända eller potentiellt skadliga URL-adresser i Microsoft Teams**: kontrol lera att den här inställningen är **på**.</li><li>**Använd URL-genomsökning i real tid för att få misstänkta länkar och länkar som pekar på filer**: Markera den här rutan.</li><li>**Vänta på att URL-genomsökningen ska slutföras innan meddelandet levereras**: Markera den här rutan.</li><li>**Använd Safe Links för e-postmeddelanden som skickas inom organisationen**: Markera den här rutan</li><li>**Tillåt inte att användare klickar genom till ursprunglig URL**: Markera den här rutan.</li><li>**Tillkopplat**: **mottagar domänen** \> väljer din domän.</li></ul> <p> Mer information: [Konfigurera principer för säkra länkar](set-up-atp-safe-links-policies.md).|
-|**Skydd mot skräp post (e-postfilter)**|Ja| Vad du kan titta efter: <ul><li>För mycket skräp post – Välj de anpassade inställningarna och redigera standard princip för skräp post filter.</li><li>Spoof intelligens – granska avsändare som har falska din domän. Blockera eller tillåta dessa avsändare.</li></ul> <p> Mer information: [skräp post skydd i Microsoft 365](anti-spam-protection.md).|
-|**_E-postidentifiering_* _|Ja|E-postidentifiering använder DNS (Domain Name System) för att lägga till verifierbar information i e-postmeddelanden om avsändaren av ett e-postmeddelande. I Microsoft 365 konfigureras e-postautentisering för standard domänen (onmicrosoft.com), men Microsoft 365-administratörer kan också använda e-postautentisering för egna domäner. Tre autentiseringsmetoder används: <ul><li>(Eller SPF) för avsändare.</li><ul><li>För installation, se [Konfigurera SPF i Microsoft 365 för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md).</li></ul> <li>DomainKeys identifieras (DKIM).</li><ul><li>Se [använda DKIM för att verifiera utgående e-post som skickas från din egen domän](use-dkim-to-validate-outbound-email.md).</li><li>När du har konfigurerat DKIM kan du aktivera det i säkerhets Center.</li></ul><li>Domänbaserad meddelandeautentisering, rapportering och omslutande (DMARC).</li><ul><li>För DMARC Setup [Använd DMARC för att verifiera e-post i Microsoft 365](use-dmarc-to-validate-email.md).</li></ul></ul>|
+|**Skydd mot nätfiske**|Ja|Om du har en egen domän konfigurerar du standardprincipen mot nätfiske för att skydda dina mest värdefulla användares e-postkonton, till exempel din VD, och för att skydda din domän. <p> Granska principer för skydd mot nätfiske i [Office 365](set-up-anti-phishing-policies.md) och se Konfigurera principer för skydd mot nätfiske i [EOP](configure-anti-phishing-policies-eop.md) eller Konfigurera principer för nätfiske i [Microsoft Defender för Office 365.](configure-atp-anti-phishing-policies.md)|
+|**Anti-Malware Engine**|Ja| Redigera standardprincipen: <ul><li>Vanliga typer av bifogade filer: Välj på</li></ul> <p> Du kan också skapa anpassade principer för skadlig programvara och tillämpa dem på vissa användare, grupper eller domäner i organisationen. <p> Mer information: <ul><li>[Skydd mot skadlig kod](anti-malware-protection.md)</li><li>[Konfigurera principer för skydd mot skadlig kod](configure-anti-malware-policies.md)</li></ul>|
+|**Säkra bifogade filer i Microsoft Defender för Office 365**|Nej|Klicka på Globala inställningar på huvudsidan för Säkra **bifogade filer och** aktivera den här inställningen: <ul><li>**Aktivera Defender för Office 365 för SharePoint, OneDrive och Microsoft Teams.**</li></ul> <p> Skapa en princip för säkra bifogade filer med följande inställningar: <ul><li> **Blockera:** Välj **Blockera som** det okända svaret på skadlig programvara.</li><li>**Aktivera omdirigering:** Markera den här rutan och ange en e-postadress, till exempel ett administratörs- eller karantänkonto.</li><li>**Använd ovanstående val om skadlig programvara söker efter bifogade filer på tider** eller fel uppstår: Markera den här rutan.</li><li>**_Används för:_* **Mottagarens domän** \> väljer din domän.</li></ul> <p> Mer information: [Säkra bifogade filer för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md) och konfigurera principer för säkra bifogade [filer](set-up-atp-safe-attachments-policies.md)|
+|**Säkra länkar i Microsoft Defender för Office 365**|Ja|Klicka på Globala inställningar på huvudsidan för **Säkra länkar:** <ul><li>**Använd säkra länkar i: Office 365-program:** Kontrollera att den här inställningen är aktiverad.</li><li>**Spåra inte när användare klickar på Säkra länkar**: Inaktivera den här inställningen för att spåra användarklick.</li></ul> <p> Skapa en princip för säkra länkar med följande inställningar: <ul><li>**Välj åtgärden för okända potentiellt skadliga URL-adresser i meddelanden:** Kontrollera att den här inställningen är **på.**</li><li>**Välj åtgärden för okända eller potentiellt skadliga URL-adresser i Microsoft Teams:** Kontrollera att den här inställningen är **På.**</li><li>**Använd URL-sökning i realtid för misstänkta länkar och länkar som pekar på filer:** Markera den här rutan.</li><li>**Vänta tills URL-skanningen är klar innan du levererar meddelandet:** Markera den här rutan.</li><li>**Använd säkra länkar i e-postmeddelanden som skickas inom organisationen:** Markera den här rutan</li><li>**Tillåt inte att användare klickar sig fram till den ursprungliga URL:en:** Markera den här rutan.</li><li>**Används för:** **Mottagarens domän** \> väljer din domän.</li></ul> <p> Mer information: [Konfigurera principer för säkra länkar.](set-up-atp-safe-links-policies.md)|
+|**Skräppostskydd (e-postfiltrering)**|Ja| Vad du bör titta efter: <ul><li>För mycket skräppost – välj anpassade inställningar och redigera standardprincipen för skräppostfilter.</li><li>Spoof intelligence – Granska avsändare som förfalskning av din domän. Spärra eller tillåt dessa avsändare.</li></ul> <p> Mer information: [Skydd mot skräppost för e-post i Microsoft 365.](anti-spam-protection.md)|
+|***E-postautentisering***|Ja|E-postautentisering använder DNS (Domain Name System) för att lägga till verifierbar information i e-postmeddelanden om avsändaren av ett e-postmeddelande. Microsoft 365 uppsättningar för e-postautentisering för standarddomänen (onmicrosoft.com), men Microsoft 365-administratörer kan också använda e-postautentisering för egna domäner. Tre autentiseringsmetoder används: <ul><li>Sender Policy Framework (eller SPF).</li><ul><li>Mer information om konfigurationen [finns i Konfigurera SPF i Microsoft 365 för att förhindra förfalskning.](set-up-spf-in-office-365-to-help-prevent-spoofing.md)</li></ul> <li>DKIM (DomainKeys Identified Mail).</li><ul><li>Se [Använda DKIM för att validera utgående e-post som skickas från din anpassade domän.](use-dkim-to-validate-outbound-email.md)</li><li>När du har konfigurerat DKIM aktiverar du det i säkerhetscentret.</li></ul><li>DMARC (Domain-based Message Authentication, Reporting, and Conformance).</li><ul><li>För DMARC-konfiguration [använder du DMARC för att validera e-post i Microsoft 365.](use-dmarc-to-validate-email.md)</li></ul></ul>|
 |
 
 > [!NOTE]
-> För icke-standardiserade distributioner av SPF, hybrid distributioner och fel sökning: [hur Microsoft 365 utnyttjar avsändarens princip ramverk (SPF) för att förhindra förfalskning](how-office-365-uses-spf-to-prevent-spoofing.md).
+> För icke-standarddistributioner av SPF, hybriddistributioner och felsökning: Hur [Microsoft 365 använder Sender Policy Framework (SPF)](how-office-365-uses-spf-to-prevent-spoofing.md)för att förhindra förfalskning.
 
-## <a name="view-dashboards-and-reports-in-the-security-and-compliance-centers"></a>Visa instrument paneler och rapporter i Center för säkerhet och efterlevnad
+## <a name="view-dashboards-and-reports-in-the-security-and-compliance-centers"></a>Visa instrumentpaneler och rapporter i säkerhets- och efterlevnadscenter
 
-Besök dessa rapporter och instrument paneler för att få mer information om miljön. Informationen i dessa rapporter blir bättre när din organisation använder Office 365-tjänster. Nu är det bekant med vad du kan övervaka och vidta åtgärder för. Mer information finns i: [rapporter i Microsoft 365 Security och Compliance Centers](../../compliance/reports-in-security-and-compliance.md).
+Besök de här rapporterna och instrumentpanelerna om du vill veta mer om din miljös hälsa. Data i de här rapporterna blir mer avancerade allt eftersom organisationen använder Office 365-tjänster. För tillfället bör du känna till vad du kan övervaka och vidta åtgärder på. Mer information finns i: Rapporter i Säkerhets- och efterlevnadscenter för [Microsoft 365.](../../compliance/reports-in-security-and-compliance.md)
 
-_***
+****
 
 |Instrumentpanelen|Beskrivning|
 |---|---|
-|[Instrument panel för Threat Management](security-dashboard.md)|I avsnittet **Threat Management** i säkerhets Center använder du den här instrument panelen för att Visa hot som redan har hanterats, och som ett praktiskt verktyg för att rapportera till besluts fattarna om hot undersökningen och svars funktionerna för att skydda ditt företag.|
-|[Hotutforskaren (eller realtidsidentifieringar)](threat-explorer.md)|Det finns också i avsnittet **Threat Management** i säkerhets Center. Om du undersöker eller drabbas av en attack mot klient organisationen kan du använda Explorer (eller identifiering i real tid) för att analysera hot. Utforskaren (och rapporten om identifiering av real tid) visar hur mycket du har attacker med tid, och du kan analysera dessa data via hot familjer, angrepps infrastruktur och mycket mer. Du kan också markera misstänkt e-post för listan incidenter.|
-|Rapporter – instrument panel|I avsnittet **rapporter** i säkerhets Center kan du läsa gransknings rapporter för SharePoint Online-och Exchange Online-organisationer. Du kan också komma åt Azure AD-användares inloggnings rapporter, användar aktivitets rapporter och Azure AD audit log från sidan **Visa rapporter** .|
+|[Instrumentpanel för hothantering](security-dashboard.md)|I avsnittet **Hantering** av hot på säkerhetscentret använder du den här instrumentpanelen för att se hot som redan har hanterats, och som ett praktiskt verktyg för att rapportera till beslutsfattare om vilka funktioner för hotundersökning och svar som redan har gjorts för att skydda ditt företag.|
+|[Hotutforskaren (eller realtidsidentifieringar)](threat-explorer.md)|Det här är också i **avsnittet Om hantering** av hot på säkerhetscentret. Om du undersöker eller upplever en attack mot klientorganisationen kan du använda Utforskaren (eller identifieringar i realtid) för att analysera hot. Utforskaren (och rapporten över identifieringar i realtid) visar mängden attacker över tid och du kan analysera dessa data efter hotfamiljer, attackersinfrastruktur med mera. Du kan också markera alla misstänkta e-postmeddelanden för listan Incidenter.|
+|Rapporter – Instrumentpanel|Visa **granskningsrapporter** för SharePoint Online- och Exchange Online-organisationer i avsnittet Rapporter i säkerhetscentret. Du kan också öppna azure Active Directory-användarinloggningsrapporter (Azure Active Directory), användaraktivitetsrapporter och Azure AD-granskningsloggen från **sidan Visa** rapporter.|
 |
 
-![Instrument panel för säkerhets Center](../../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
+![Instrumentpanel för säkerhetscenter](../../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
 
-## <a name="configure-additional-exchange-online-tenant-wide-settings"></a>Konfigurera ytterligare Exchange Online-inställningar för klient organisationen
+## <a name="configure-additional-exchange-online-tenant-wide-settings"></a>Konfigurera ytterligare inställningar för hela klientorganisationen i Exchange Online
 
-Många av kontrollerna för säkerhet och skydd i administrations centret för Exchange finns också i säkerhets Center. Du behöver inte konfigurera dessa på båda platserna. Här är några ytterligare inställningar som rekommenderas.
+Många av kontrollerna för säkerhet och skydd i administrationscentret för Exchange ingår också i säkerhetscentret. Du behöver inte konfigurera dessa på båda platserna. Här är några ytterligare inställningar som rekommenderas.
 
 ****
 
-|Under|Innehåller en standard princip|Rekommendation|
+|Område|Innehåller en standardprincip|Rekommendation|
 |---|---|---|
-|**E-postflöde** (regler för e-postflöde, kallas även transport regler)|Nej|Lägga till en regel för e-postflöde för att skydda mot utpressnings tro Jan program vara genom att blockera filtyper och Office-filtyper som innehåller makron Mer information finns i [använda regler för e-postflöde för att inspektera bifogade filer i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments). <p> Se följande avsnitt: <ul><li>[Skydda mot utpressningstrojaner](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)</li><li>[Skydd mot skadlig program vara och utpressnings Jan attack i Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection)</li><li>[Återställ från en utpressnings tro Jan attack i Office 365](recover-from-ransomware.md)</li></ul> <p> Skapa en regel för e-postflöde för att förhindra vidarebefordran av e-post till externa domäner automatiskt. Mer information finns i [begränsa regler för extern vidarebefordring med klienter med säkra Poäng](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score). <p> Mer information: [regler för e-postflöde (transport regler) i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
-|**Aktivera modern verifikation**|Nej|Modern verifiering är en förutsättning för att använda multifaktorautentisering. MFA rekommenderas för att skydda åtkomst till moln resurser, inklusive e-post. <p> Se följande avsnitt: <ul><li>[Aktivera eller inaktivera modern lösenordsautentisering i Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)</li><li>[Skype för företag – online: aktivera din klient organisation för modern](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)</li></ul> <p> Modern autentisering är aktive rad som standard för Office 2016-klienter, SharePoint Online och OneDrive för företag. <p> Mer information: [så här fungerar den moderna autentiseringsprocessen för office 2013-och office 2016-klient program](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)|
+|**E-postflöde** (e-postflödesregler, kallas även transportregler)|Nej|Lägg till en e-postflödesregel som skyddar mot utpressningstrojaner genom att blockera körbara filtyper och Office-filtyper som innehåller makron. Mer information finns i Använda [e-postflödesregler för att kontrollera bifogade filer i meddelanden i Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments) <p> Se följande avsnitt: <ul><li>[Skydda mot utpressningstrojaner](../../admin/security-and-compliance/secure-your-business-data.md#5-protect-against-ransomware)</li><li>[Skydd mot skadlig kod och utpressningstrojaner i Microsoft 365](https://docs.microsoft.com/compliance/assurance/assurance-malware-and-ransomware-protection)</li><li>[Återställa efter en utpressningstrojanattack i Office 365](recover-from-ransomware.md)</li></ul> <p> Skapa en e-postflödesregel för att förhindra automatisk vidarebefordran av e-post till externa domäner. Mer information finns i för att minska externa klient [vidarebefordransregler med Secure Score.](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score) <p> Mer information: [E-postflödesregler (transportregler) i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
+|**Aktivera modern autentisering**|Nej|Modern autentisering krävs för användning av multifaktorautentisering (MFA). MFA rekommenderas för att skydda åtkomst till molnresurser, inklusive e-post. <p> Se följande avsnitt: <ul><li>[Aktivera eller inaktivera modern autentisering i Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)</li><li>[Skype för företag – Online: Aktivera modern autentisering för klientorganisationen](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)</li></ul> <p> Modern autentisering är aktiverad som standard för Office 2016-klienter, SharePoint Online och OneDrive för företag. <p> Mer information: [Hur modern autentisering fungerar för Office 2013- och Office 2016-klientprogram](../../enterprise/modern-auth-for-office-2013-and-2016.md)|
 |
 
-## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>Konfigurera delnings principer för hela klient organisationen i administrations centret för SharePoint
+## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>Konfigurera principer för delning för hela klientorganisationen i administrationscentret för SharePoint
 
-Microsoft-rekommendationer för konfiguration av SharePoint-gruppwebbplatser med ökande skydds nivåer, med start från grundläggande skydd. Mer information finns i [säkra SharePoint Online-webbplatser och-filer](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files)
+Microsofts rekommendationer för att konfigurera SharePoint-gruppwebbplatser på en stigande skyddsnivå, med början från grundläggande skydd. Mer information finns i principrekommendationer [för att skydda SharePoint-webbplatser och -filer.](sharepoint-file-access-policies.md)
 
-SharePoint-gruppwebbplatser som har kon figurer ATS på bas nivå kan dela filer med externa användare med länkar för anonym åtkomst. Den här metoden rekommenderas istället för att skicka filer via e-post.
+SharePoint-gruppwebbplatser som konfigurerats på baslinjenivå tillåter delning av filer med externa användare genom att använda anonyma åtkomstlänkar. Den här metoden rekommenderas i stället för att skicka filer i e-post.
 
-För att stödja målen för baseline-skydd ska du konfigurera delnings principer för hela klient organisationen enligt rekommendationer här. Delnings inställningar för enskilda webbplatser kan vara mer restriktiva än den här klient organisations principen, men inte mer tillåta.
+Konfigurera principer för hela klientorganisationen som vi rekommenderar för att stödja målen för baslinjeskyddet. Delningsinställningar för enskilda webbplatser kan vara mer restriktiva än den här klientprincipen, men inte mer tillåtande.
 
 ****
 
-|Under|Innehåller en standard princip|Rekommendation|
+|Område|Innehåller en standardprincip|Rekommendation|
 |---|---|---|
-|**Delning** (SharePoint Online och OneDrive för företag)|Ja|Extern delning är aktiverat som standard. De här inställningarna rekommenderas: <ul><li>Tillåt delning till autentiserade externa användare och Använd anonyma åtkomst länkar (standardinställningen).</li><li>Anonyma åtkomst länkar upphör om antal dagar. Ange ett nummer, om det behövs, till exempel 30 dagar.</li><li>Standard länk typ – Välj intern (endast personer i organisationen). Användare som vill dela med anonyma länkar måste välja det här alternativet från menyn delning.</li></ul> <p> Mer information: [Översikt över extern delning](https://docs.microsoft.com/sharepoint/external-sharing-overview)|
+|**Delning** (SharePoint Online och OneDrive för företag)|Ja|Extern delning är aktiverat som standard. De här inställningarna rekommenderas: <ul><li>Tillåt delning för autentiserade externa användare och användning av anonyma åtkomstlänkar (standardinställning).</li><li>Länkar för anonym åtkomst upphör att gälla så här många dagar. Ange ett tal om du vill, till exempel 30 dagar.</li><li>Standardlänktyp – välj Intern (endast personer inom organisationen). Användare som vill dela med anonyma länkar måste välja det här alternativet på delningsmenyn.</li></ul> <p> Mer information: Översikt [över extern delning](https://docs.microsoft.com/sharepoint/external-sharing-overview)|
 |
 
-Administrations centret för SharePoint administrations Center och OneDrive för företag innehåller samma inställningar. Inställningarna i administrations centret gäller båda.
+SharePoint-administrationscentret och administrationscentret för OneDrive för företag har samma inställningar. Inställningarna i båda administrationscentret gäller för båda.
 
 ## <a name="configure-settings-in-azure-active-directory"></a>Konfigurera inställningar i Azure Active Directory
 
-Se till att besöka dessa två områden i Azure Active Directory för att slutföra konfigurationen för hela klient organisationen för säkrare miljö.
+Se till att besöka dessa två områden i Azure Active Directory för att slutföra konfigurationen för hela klientorganisationen för säkrare miljöer.
 
 ### <a name="configure-named-locations-under-conditional-access"></a>Konfigurera namngivna platser (under villkorsstyrd åtkomst)
 
-Om din organisation innehåller kontor med säker nätverks åtkomst lägger du till de betrodda IP-adressintervallet i Azure Active Directory som namngivna platser. Med den här funktionen kan du minska antalet rapporterade falsk identifierings händelser för inloggnings risker.
+Om organisationen innehåller kontor med säker nätverksåtkomst lägger du till de betrodda IP-adressintervallen i Azure Active Directory som namngivna platser. Den här funktionen hjälper till att minska antalet rapporterade falska positiva resultat för inloggningsriskhändelser.
 
-Se: [namngivna platser i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-named-locations)
+Mer information: [Namngivna platser i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-named-locations)
 
-### <a name="block-apps-that-dont-support-modern-authentication"></a>Blockera appar som inte stöder modern lösenordsautentisering
+### <a name="block-apps-that-dont-support-modern-authentication"></a>Blockera appar som inte stöder modern autentisering
 
-Multifaktorautentisering kräver appar som stöder modern lösenordsautentisering. Appar som inte stöder modern lösenordsautentisering kan inte blockeras med hjälp av regler för villkorlig åtkomst.
+Multifaktorautentisering kräver appar som stöder modern autentisering. Appar som inte stöder modern autentisering kan inte blockeras med hjälp av regler för villkorsstyrd åtkomst.
 
-För säkra miljöer bör du se till att inaktivera inaktive ring av program som inte stöder modern. Du kan göra det i Azure Active Directory med en kontroll som kommer snart.
+För säkra miljöer måste du inaktivera autentisering för program som inte stöder modern autentisering. Du kan göra detta i Azure Active Directory med en kontroll som kommer snart.
 
-Under tiden kan du använda någon av följande metoder för att åstadkomma detta för SharePoint Online och OneDrive för företag:
+Under tiden kan du använda någon av följande metoder för att uppnå detta för SharePoint Online och OneDrive för företag:
 
-- Använd PowerShell, se [blockera program som inte använder modern (ADAL)](https://docs.microsoft.com/mem/intune/protect/app-modern-authentication-block).
+- Använd PowerShell, se [Blockera appar som inte använder modern autentisering (ADAL)](https://docs.microsoft.com/mem/intune/protect/app-modern-authentication-block).
 
-- Konfigurera det här i administrations centret för SharePoint på sidan "enhets åtkomst" – styr åtkomst från program som inte använder modern. Välj blockera.
+- Konfigurera detta i administrationscentret för SharePoint på sidan "Enhetsåtkomst" – "Styr åtkomst från program som inte använder modern autentisering". Välj Blockera.
 
 ## <a name="get-started-with-cloud-app-security-or-office-365-cloud-app-security"></a>Komma igång med Cloud App Security eller Office 365 Cloud App Security
 
-Använd Office 365 Cloud App Security för att utvärdera riskerna, för att varna för misstänkt aktivitet, och för att automatiskt vidta åtgärder. Kräver Office 365 E5-abonnemang.
+Använd Office 365 Cloud App Security för att utvärdera risker, för att varna om misstänkt aktivitet och för att automatiskt vidta åtgärder. Kräver Office 365 E5-abonnemang.
 
-Du kan också använda säkerhets inställningar i Microsoft Cloud App för att få djupare insyn även efter åtkomst till, omfattande kontroller och förbättrat skydd för alla dina moln tillämpningar, inklusive Office 365.
+Du kan också använda Microsoft Cloud App Security för att få bättre insyn även när åtkomst beviljas, omfattande kontroller och förbättrat skydd för alla dina molnprogram, inklusive Office 365.
 
-Eftersom den här lösningen rekommenderar EMS-abonnemanget för SaaS rekommenderar vi att du börjar med att skydda Cloud app så att du kan använda det med andra-program i din miljö. Börja med standard principer och inställningar.
+Eftersom den här lösningen rekommenderar EMS E5-abonnemanget rekommenderar vi att du börjar med Cloud App Security så att du kan använda det med andra SaaS-program i din miljö. Börja med standardprinciper och inställningar.
 
 Mer information:
 
@@ -136,14 +141,14 @@ Mer information:
 
 - [Mer information om Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
-- [Vad är Cloud App-säkerhet?](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
+- [Vad är Cloud App Security?](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
 
 ![Instrumentpanelen i Cloud App Security](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-De här artiklarna och guiderna ger ytterligare information om hur du skyddar din Microsoft 365-miljö:
+De här artiklarna och guiderna innehåller ytterligare information om hur du skyddar Microsoft 365-miljön:
 
-- [Microsofts säkerhets guider för politisk kampanjer, icke-vinster och andra Agile-organisationer](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) (du kan använda den här rekommendationen i alla miljöer, särskilt molnbaserade miljöer)
+- [Microsofts säkerhetsvägledning för politiska kampanjer,](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) ideella organisationer och andra Agile-organisationer (du kan använda de här rekommendationerna i alla miljöer, särskilt i miljöer som bara är molnbaserade)
 
-- [Rekommenderade säkerhets principer och konfigurationer för identiteter och enheter](microsoft-365-policies-configurations.md) (dessa rekommendationer inkluderar hjälp för AD FS-miljöer)
+- [Rekommenderade säkerhetsprinciper och konfigurationer för identiteter och enheter](microsoft-365-policies-configurations.md) (dessa rekommendationer inkluderar hjälp för AD FS-miljöer)

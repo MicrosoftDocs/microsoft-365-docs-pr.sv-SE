@@ -18,35 +18,35 @@ description: Lär dig hur du känner igen och åtgärdar att medgivande från me
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1c724bb3b201e0ddf1edea4794606c7083605e8
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 2a50ce58d91d2ff7b2e31e57830289c870364d9b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165445"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288293"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Identifiera och åtgärda beviljat medgivande för någon av de här medgivandena
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 **Sammanfattning**  Lär dig hur du känner igen och åtgärdar att medgivande från medgivande förser dig med angrepp i Office 365.
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>Vad är det för medgivande som godkänner angrepp i Office 365?
 
-I ett medgivande från medgivande på begäran av en förälder skapar attackeraren ett Azure-registrerat program som begär åtkomst till data, till exempel kontaktinformation, e-post eller dokument. Attackeraren tricksar sedan en slutanvändare till att ge det programmet medgivande för att få åtkomst till sina data antingen genom en nätfiskeattack eller genom att mata in en säkerhetskod på en betrodd webbplats. När programmet med programmet för programmet för kontot har beviljats medgivande har det tillgång till data på kontonivå utan att ett organisationskonto behövs. Vanliga åtgärder som att återställa lösenord för konton som har brutits eller som kräver Multi-Factor Authentication (MFA) på konton, är inte effektiva mot den här typen av angrepp eftersom dessa är tredjepartsprogram och är externa för organisationen.
+I ett medgivande från medgivande på begäran av en förälder skapar attackeraren ett Azure-registrerat program som begär åtkomst till data, till exempel kontaktinformation, e-post eller dokument. Attackeraren tricksar sedan en slutanvändare till att ge det programmet medgivande för att få åtkomst till sina data antingen genom en nätfiskeattack eller genom att mata in en säkerhetskod på en betrodd webbplats. Efter att programmet med programmet för programmet har beviljats medgivande har det åtkomst på kontonivå till data utan att ett organisationskonto behövs. Vanliga åtgärder som att återställa lösenord för konton som har brutits eller som kräver Multi-Factor Authentication (MFA) på konton, är inte effektiva mot den här typen av angrepp eftersom dessa är tredjepartsprogram och är externa för organisationen.
 
 Dessa attacker utnyttjar en interaktionsmodell som antas vara entitet som anropar informationen är automation och inte en person.
 
 > [!IMPORTANT]
-> Misstänker du att du har problem med att få medgivande från en app, just nu? Microsoft Cloud App Security (MCAS) har verktyg för att identifiera, undersöka och åtgärda OAuth-apparna. Den här MCAS-artikeln innehåller en självstudiekurs som beskriver hur du [undersöker riskfyllda OAuth-appar.](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth) Du kan också ange [OAuth-appprinciper](https://docs.microsoft.com/cloud-app-security/app-permission-policy) för att undersöka vilka behörigheter som efterfrågas, vilka användare som godkänner dessa appar, och godkänna eller förbjuda dessa behörighetsbegäranden.
+> Misstänker du att du har problem med att få medgivande från en app, just nu? Microsoft Cloud App Security (MCAS) har verktyg för att identifiera, undersöka och åtgärda OAuth-apparna. Den här MCAS-artikeln innehåller en självstudiekurs som beskriver hur du [undersöker riskfyllda OAuth-appar.](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth) Du kan också ange [OAuth-appprinciper](https://docs.microsoft.com/cloud-app-security/app-permission-policy) för att undersöka vilka behörigheter som efterfrågas, vilka användare som godkänner dessa appar, och godkänna eller förbjuda behörighetsförfrågningar.
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>Hur ser en förälders medgivande ut för att bevilja attack i Office 365?
 
-Du måste söka i **granskningsloggen för** att hitta tecken, även kallade indikatorer på kompromett (IOC) för den här attacken. För organisationer med många Azure-registrerade program och en stor användarbas är det bäst att granska organisationens medgivande beviljar varje vecka.
+Du måste söka i **granskningsloggen för** att hitta tecken, även kallade indikatorer på kompromett (IOC) för den här attacken. För organisationer med många Azure-registrerade program och en stor användarbas är det bäst att granska organisationens medgivande beviljat varje vecka.
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Steg för att hitta tecken på den här attacken
 
@@ -72,7 +72,7 @@ Du måste söka i **granskningsloggen för** att hitta tecken, även kallade ind
 
 Om du har en eller flera instanser av IOCs som anges ovan måste du undersöka ytterligare för att bekräfta att attacken inträffade. Du kan använda någon av följande tre metoder för att bekräfta attacken:
 
-- Inventeringsprogram och deras behörigheter med hjälp av Azure Active Directory-portalen. Den här metoden är genomgående, men du kan bara kontrollera en användare i taget, vilket kan ta mycket tid om du har många användare att kontrollera.
+- Inventeringsprogram och deras behörigheter med hjälp av Azure Active Directory-portalen. Den här metoden är genomgående, men du kan bara kontrollera en användare i taget vilket kan ta mycket tid om du har många användare att kontrollera.
 
 - Inventeringsprogram och deras behörigheter med hjälp av PowerShell. Det här är den snabbaste och mest genomgående metoden med minsta möjliga overhead.
 
@@ -96,7 +96,7 @@ Du kan slå upp de program som en enskild användare har beviljat behörighet ti
 
 5. Välj **program.**
 
-Då visas de appar som tilldelats till användaren och vilka behörigheter programmen har.
+Då visas de appar som tilldelats användaren och vilka behörigheter programmen har.
 
 ### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>Steg för att användarna ska räkna upp sin programåtkomst
 
@@ -104,7 +104,7 @@ Be användarna gå till https://myapps.microsoft.com och granska sina egna progr
 
 ### <a name="steps-for-doing-this-with-powershell"></a>Steg för att göra detta med PowerShell
 
-Det enklaste sättet att verifiera ett medgivande för medgivande-attacken är att köra [Get-AzureADPSPermissions.ps1, ](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)som dådumpar alla OAuth-medgivandetillägg och OAuth-appar för alla användare i ditt innehavare i en CSV-fil.
+Det enklaste sättet att verifiera medgivande grant-attacken för medgivande är att köra [Get-AzureADPSPermissions.ps1, ](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)så att alla OAuth-medgivandetillägg och OAuth-appar för alla användare i ditt innehavare sätts i en CSV-fil.
 
 #### <a name="pre-requisites"></a>Förutsättningar
 
@@ -119,7 +119,7 @@ Det enklaste sättet att verifiera ett medgivande för medgivande-attacken är a
 
 1. Logga in på den dator som du kör skriptet från med lokala administratörsrättigheter.
 
-2. Ladda ned eller [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) skriptet från GitHub till en mapp som du ska köra skriptet från. Det här blir samma mapp som utdatafilen "permissions.csv" skrivs till.
+2. Ladda ned eller [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) skriptet från GitHub till en mapp som du ska köra skriptet från. Det blir samma mapp som utdatafilen "permissions.csv" ska skrivas till.
 
 3. Öppna en PowerShell-instans som administratör och öppna den mapp där du sparade skriptet.
 
@@ -131,22 +131,22 @@ Det enklaste sättet att verifiera ett medgivande för medgivande-attacken är a
    Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
    ```
 
-Skriptet ger en fil med namnet Permissions.csv. Följ dessa steg för att söka efter beviljad behörighet för programmet:
+Skriptet ger en fil med namnet Permissions.csv. Följ dessa steg om du vill söka efter beviljad behörighet för programmet:
 
-1. I kolumnen ConsentType (kolumn G) söker du efter värdet "AllPrinciples". Med behörigheten AllPrincipals har klientprogrammet åtkomst till innehållet som gäller för alla i klientprogrammet. Ursprungliga Microsoft 365-program behöver den här behörigheten för att fungera korrekt. Alla program som inte är Microsoft-program med den här behörigheten bör granskas noggrant.
+1. I kolumnen ConsentType (kolumn G) söker du efter värdet "AllPrinciples". Med behörigheten AllPrincipals har klientprogrammet åtkomst till innehållet som gäller för alla under klienttiden. Ursprungliga Microsoft 365-program behöver den här behörigheten för att fungera korrekt. Alla program som inte är Microsoft-program med den här behörigheten bör granskas noggrant.
 
-2. I kolumnen Behörighet (kolumn F) granskar du behörigheterna som varje delegerat program har till innehållet. Leta efter behörigheterna "Läsa" och "Skriva" eller "*. Alla" och granska dem noggrant eftersom de kanske inte är lämpliga.
+2. I kolumnen Behörighet (kolumn F) granskar du behörigheterna som varje delegerat program har till innehållet. Leta efter behörigheten "Läsa" och "Skriva" eller "*. Alla" och granska dem noggrant eftersom de kanske inte är lämpliga.
 
 3. Granska specifika användare som har beviljats medgivande. Om användare med hög profil eller hög effekt beviljas olämpliga medgivanden bör du undersöka ytterligare.
 
-4. Leta efter appar som verkar misstänkta i kolumnen ClientDisplayName (kolumn C). Appar med felstavade namn, supersltande namn och hackarljud bör granskas noggrant.
+4. Leta efter appar som verkar misstänkta i kolumnen ClientDisplayName (kolumn C). Appar med felstavade namn, supersliga namn och hackarljud bör granskas noggrant.
 
 ## <a name="determine-the-scope-of-the-attack"></a>Fastställa attackens omfattning
 
-När du har slutfört inventeringen av programåtkomst granskar du **granskningsloggen** för att fastställa den fullständiga omfattningen av intrånget. Sök efter de aktuella användarna, tidsramarna som det berörda programmet hade åtkomst till din organisation och vilka behörigheter appen hade. Du kan söka i **granskningsloggen** i Säkerhets- och [efterlevnadscenter för Microsoft 365.](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
+När du har slutfört inventeringen av programåtkomst granskar du **granskningsloggen** för att fastställa den fullständiga omfattningen av intrånget. Sök efter de aktuella användarna, tidsramarna som det berörda programmet hade åtkomst till din organisation och vilka behörigheter appen hade. Du kan söka i **granskningsloggen** i Säkerhets- och [efterlevnadscenter för Microsoft 365.](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
 > [!IMPORTANT]
-> [Postlådegranskning](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing) [och aktivitetsgranskning för administratörer](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) och användare måste ha aktiverats före attacken för att du ska få den här informationen.
+> [Postlådegranskning](../../compliance/enable-mailbox-auditing.md) [och aktivitetsgranskning för administratörer](../../compliance/turn-audit-log-search-on-or-off.md) och användare måste ha aktiverats före attacken för att du ska få den här informationen.
 
 ## <a name="how-to-stop-and-remediate-an-illicit-consent-grant-attack"></a>Hur man stoppar och åtgärdar ett medgivande från en förälder för att bevilja attack
 
@@ -168,7 +168,7 @@ När du har identifierat ett program med behörigheten så kan du ta bort den å
 
 - Du kan också inaktivera inloggning för det påverkade kontot helt och hållet, vilket i sin tur inaktiverar appåtkomst till data i det kontot. Det här är naturligtvis inte perfekt för slutanvändarens produktivitet, men om du arbetar för att begränsa påverkan snabbt kan det vara en möjlig åtgärd på kort sikt.
 
-- Du kan inaktivera integrerade program för ditt tiotal. Det här är ett avsevärt steg som inaktiverar möjligheten för slutanvändare att bevilja medgivande för hela klientorganisationen. Det förhindrar att användarna oavsiktligt beviljar åtkomst till ett skadligt program. Det rekommenderas inte särskilt mycket eftersom det allvarligt försämrar dina användares möjligheter att vara produktiva med program från tredje part. Det gör du genom att följa anvisningarna för [att aktivera eller inaktivera integrerade appar.](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps)
+- Du kan inaktivera integrerade program för ditt tiotal. Det här är ett avsevärt steg som inaktiverar möjligheten för slutanvändare att bevilja medgivande för hela klientorganisationen. Det förhindrar att användarna oavsiktligt beviljar åtkomst till ett skadligt program. Det rekommenderas inte särskilt mycket eftersom det allvarligt försämrar dina användares möjligheter att vara produktiva med program från tredje part. Det gör du genom att följa anvisningarna för [att aktivera eller inaktivera integrerade appar.](../../admin/misc/user-consent.md)
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Skydda Microsoft 365 som en expert på cybersäkerhet
 
