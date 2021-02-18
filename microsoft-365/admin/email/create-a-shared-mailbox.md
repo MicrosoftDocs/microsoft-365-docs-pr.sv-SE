@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: När en delad postlåda har skapats kan flera personer i verksamheten dela på ansvaret att läsa och svara på e-postmeddelanden som skickas till en adress.
-ms.openlocfilehash: d0bd5770f347766638af0f0e66b9f961b3721697
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d71e33aa0a04bd52f707038ac31e98bef68f27b0
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926600"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287239"
 ---
 # <a name="create-a-shared-mailbox"></a>Skapa en delad postlåda 
 
@@ -81,6 +81,30 @@ Innan du skapar en delad postlåda bör du läsa [Om delade postlådor](about-sh
 7. Välj **Stäng**.
 
 Du har en delad postlåda och den innehåller en delad kalender. Gå vidare till nästa steg: Blockera inloggning för den delade postlådans konto.
+
+## <a name="which-permissions-should-you-use"></a>Vilken behörighet ska du välja?
+
+Du kan använda följande behörigheter med en delad postlåda:
+
+- **Fullständig åtkomst**: Med behörigheten Fullständig åtkomst kan användaren logga in till den delade postlådan och agera som ägare av postlådan. Efter åtkomst till den delade postlådan kan en användare skapa kalenderobjekt, läsa, visa, radera och ändra e-postmeddelanden och skapa uppgifter och kalenderkontakter. Men användare med behörigheten Fullständig åtkomst kan inte skicka e-post från den delade postlådan om de inte också har behörigheten Skicka som eller Skicka för.
+
+- **Skicka som** Med behörigheten Skicka som kan användaren skicka e-post för den delade postlådans räkning. Till exempel, om Katerina loggar in på den delade postlådans marknadsavdelning och skickar ett e-postmeddelande, ser det ut som att marknadsavdelningen skickade e-postmeddelandet.
+
+- **Skicka för**: Med behörigheten Skicka för kan användaren skicka e-post för den delade postlådans räkning. Till exempel, om John loggar in till den delade postlådan Reception byggnad 32 och skickar ett e-postmeddelande, kommer det att se ut som att e-postmeddelandet skickades av "John för Reception byggnad 32". Du kan inte använda EAC för att bevilja behörigheter för skicka på väg, du måste använda cmdlet **Set-Mailbox** med parametern _GrantSendonBehalf_.
+
+### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>Använda EAC för att redigera delegering för delad postlåda
+
+1. Öppna EAC och gå till **Mottagare** \> **Grupper**. Välj den delade postlådan och välj sedan **Redigera** ![redigeringsikon](../../media/ITPro-EAC-EditIcon.png).
+
+2. Välj **delegering av postlåda**.
+
+3. Om du vill bevilja eller ta bort full åtkomst och skicka som behörighet, välj **Lägg till** ![lägg till ikonen](../../media/ITPro-EAC-AddIcon.png) eller **ta bort** ![ta bort ikonen](../../media/ITPro-EAC-RemoveIcon.gif) och välj sedan de användare du vill ge behörighet till.
+
+   > [!NOTE]
+   > Med behörigheten Fullständig åtkomst kan användaren öppna postlådan samt skapa och ändra objekt i den. Med behörigheten Skicka som kan alla utöver postlådans ägare skicka e-post från den delade postlådan. Båda behörigheterna krävs för att den delade postlådan ska kunna hanteras.
+
+4. Välj **Spara** för att spara ändringarna.
+
 
 ## <a name="block-sign-in-for-the-shared-mailbox-account"></a>Blockera inloggning för den delade postlådans konto
 
@@ -185,8 +209,5 @@ När du skapade den delade postlådan, skapade du automatiskt en delad kalender.
 [Ta bort en licens från en delad postlåda](remove-license-from-shared-mailbox.md)
 
 [Lösa problem med delade postlådor](resolve-issues-with-shared-mailboxes.md)
-
-
-
 
 
