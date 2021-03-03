@@ -1,8 +1,8 @@
 ---
-title: Betalnings information för Finland
-author: cmcatee-MSFT
+title: Betalningsinformation för Finland
 f1.keywords:
 - NOCSH
+author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 audience: Admin
@@ -11,26 +11,35 @@ ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Lär dig hur du skickar betalningen för din prenumeration.
+description: Läs om var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ce84cb49d0b120b50fba27980e9b061ac81f6290
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: cdcc7508ffb0974a5c6ef5105c09521af5f62116
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647657"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406962"
 ---
-# <a name="payment-information-for-finland"></a><span data-ttu-id="f83d8-103">Betalnings information för Finland</span><span class="sxs-lookup"><span data-stu-id="f83d8-103">Payment information for Finland</span></span>
+# <a name="payment-information-for-finland"></a><span data-ttu-id="631e1-103">Betalningsinformation för Finland</span><span class="sxs-lookup"><span data-stu-id="631e1-103">Payment information for Finland</span></span>
 
-<span data-ttu-id="f83d8-104">[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="f83d8-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="631e1-104">[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)</span><span class="sxs-lookup"><span data-stu-id="631e1-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="f83d8-105">Betala endast i EUR och ange faktura numret som referens vid betalning.</span><span class="sxs-lookup"><span data-stu-id="f83d8-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="631e1-105">Elektronisk betalningsöverföring</span><span class="sxs-lookup"><span data-stu-id="631e1-105">Electronic Funds Transfer</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="f83d8-106">Elektronisk betalningsöverföring</span><span class="sxs-lookup"><span data-stu-id="f83d8-106">Electronic Funds Transfer</span></span>
+<span data-ttu-id="631e1-106">**Betala i euro och ange fakturanumret som referens vid betalning.**</span><span class="sxs-lookup"><span data-stu-id="631e1-106">**Please pay in EUR and reference invoice number(s) on your payment remittance.**</span></span>
 
-<span data-ttu-id="f83d8-107">**Bank:** Citibank, London</span><span class="sxs-lookup"><span data-stu-id="f83d8-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="f83d8-108">**SWIFT-kod/BIC:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="f83d8-108">**SWIFT Code/BIC:** CITIGB2L</span></span>  
-<span data-ttu-id="f83d8-109">**IBAN:** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="f83d8-109">**IBAN:** GB31CITI18500812207591</span></span>  
-<span data-ttu-id="f83d8-110">**Sorterings kod:** 185008</span><span class="sxs-lookup"><span data-stu-id="f83d8-110">**SORT Code:** 185008</span></span>  
-<span data-ttu-id="f83d8-111">**Konto nummer:** 12207591</span><span class="sxs-lookup"><span data-stu-id="f83d8-111">**Account Number:** 12207591</span></span>  
-<span data-ttu-id="f83d8-112">**Konto namn:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="f83d8-112">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="631e1-107">Använd den här bankinformationen om du har en faktura som faktureras av **Microsoft Ireland Operations Limited:**</span><span class="sxs-lookup"><span data-stu-id="631e1-107">If you have an invoice billed by **Microsoft Ireland Operations Limited**, use this bank information:</span></span>
+
+<span data-ttu-id="631e1-108">Bank: Citibank, London</span><span class="sxs-lookup"><span data-stu-id="631e1-108">Bank: Citibank, London</span></span>\
+<span data-ttu-id="631e1-109">SWIFT-kod: CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="631e1-109">SWIFT Code: CITIGB2L</span></span>\
+<span data-ttu-id="631e1-110">IBAN-kod: GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="631e1-110">IBAN Code: GB31CITI18500812207591</span></span>\
+<span data-ttu-id="631e1-111">Kontonummer: 12207591</span><span class="sxs-lookup"><span data-stu-id="631e1-111">Account Number: 12207591</span></span>\
+<span data-ttu-id="631e1-112">Kontonamn: MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="631e1-112">Account Name: MICROSOFT</span></span>
+
+<span data-ttu-id="631e1-113">Använd den här bankinformationen om du har en faktura debiterad av **Microsoft Oy** för order och förbrukning från och med den 1 mars 2021:</span><span class="sxs-lookup"><span data-stu-id="631e1-113">If you have an invoice billed by **Microsoft Oy** for orders and consumption starting March 1, 2021, use this bank information:</span></span>
+
+<span data-ttu-id="631e1-114">Bank: Citibank Europe plc</span><span class="sxs-lookup"><span data-stu-id="631e1-114">Bank: Citibank Europe plc</span></span>\
+<span data-ttu-id="631e1-115">SWIFT-kod: CITIIE2X</span><span class="sxs-lookup"><span data-stu-id="631e1-115">SWIFT Code: CITIIE2X</span></span>\
+<span data-ttu-id="631e1-116">IBAN-kod: IE97CITI99005170000127</span><span class="sxs-lookup"><span data-stu-id="631e1-116">IBAN Code: IE97CITI99005170000127</span></span>\
+<span data-ttu-id="631e1-117">Kontonummer: 70000127</span><span class="sxs-lookup"><span data-stu-id="631e1-117">Account Number: 70000127</span></span>\
+<span data-ttu-id="631e1-118">Kontonamn: MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="631e1-118">Account Name: MICROSOFT</span></span>

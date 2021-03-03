@@ -237,6 +237,8 @@
               href: data-loss-prevention-policies.md
             - name: Mer information om skydd mot Endpoint data förlust
               href: endpoint-dlp-learn-about.md
+            - name: Mer information om Microsoft 365 lokal skanner för dataförlustskydd (förhandsversion)
+              href: dlp-on-premises-scanner-learn.md
         - name: Kom igång med DLP
           items:
             - name: Kom igång med DLP-standardprincipen
@@ -245,6 +247,8 @@
               href: create-a-dlp-policy-from-a-template.md
             - name: 'Skapa, testa och justera en DLP-princip'
               href: create-test-tune-dlp-policy.md
+            - name: Kom igång med Microsoft 365 lokal skanner för dataförlustskydd (förhandsversion)
+              href: dlp-on-premises-scanner-get-started.md
             - name: Komma igång med data förlust skydd för Endpoint
               href: endpoint-dlp-getting-started.md
             - name: Konfigurera enhetsproxy- och Internetanslutningsinställningar för Slutpunkt DLP
@@ -269,6 +273,8 @@
               href: dlp-microsoft-teams.md
             - name: Använda skydd mot Endpoint data förlust
               href: endpoint-dlp-using.md
+            - name: Använd Microsoft 365 lokal skanner för dataförlustskydd (förhandsversion)
+              href: dlp-on-premises-scanner-use.md
             - name: Använda aviseringar och principtips i DLP-principer
               href: use-notifications-and-policy-tips.md
             - name: Det här innehåller DLP-principmallarna
