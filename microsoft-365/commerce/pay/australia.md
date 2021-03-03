@@ -1,8 +1,8 @@
 ---
-title: Betalnings information för Australien
-author: cmcatee-MSFT
+title: Betalningsinformation för Australien
 f1.keywords:
 - NOCSH
+author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 audience: Admin
@@ -11,25 +11,35 @@ ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Lär dig hur du skickar betalningen för din prenumeration.
+description: Läs om var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 66aaf084da0cd86fd379f2b667e37cbac3192565
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 0dc0d574e07868cd01e491f9e4d1ad28e42b9c8d
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637973"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407032"
 ---
-# <a name="payment-information-for-australia"></a>Betalnings information för Australien
+# <a name="payment-information-for-australia"></a>Betalningsinformation för Australien
 
-[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
-
-Betala endast i AUD och ange faktura numret som referens vid betalning.
+[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
-**Bank:** Citibank, Sydney  
-**SWIFT-kod:** CITIAU2X  
-**BSB-kod:** 242000  
-**Konto nummer:** 205565043  
-**Konto namn:** MICROSOFT REGIONAL SALES CORP  
+**Betala i AUD och ange fakturanumret som referens vid betalning.**
+
+Använd den här bankinformationen om du har en faktura som faktureras **av Microsoft Regional Sales Pte Ltd:**
+
+Bank: Citibank, Sydney\
+SWIFT-kod: CITIAU2X\
+BSB-kod: 242000\
+Kontonummer: 205565043\
+Kontonamn: MICROSOFT
+
+Använd den här bankinformationen om du har en faktura som faktureras av **Microsoft Pty Ltd** för beställningar och förbrukning från och med den 1 mars 2021:
+
+Bank: Citibank, N.A. Sydney\
+SWIFT-kod: CITIAU2X\
+BSB-kod: 248053\
+Kontonummer: 100001074\
+Kontonamn: MICROSOFT

@@ -1,8 +1,8 @@
 ---
-title: Betalnings information för Österrike
-author: cmcatee-MSFT
+title: Betalningsinformation för Österrike
 f1.keywords:
 - NOCSH
+author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 audience: Admin
@@ -11,26 +11,36 @@ ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Lär dig hur du skickar betalningen för din prenumeration.
+description: Lär dig var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c7797855725f51f86f87631afe81cc602365d400
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 400315ba59bc9fb74330f08b3ce030366705d512
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637961"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407020"
 ---
-# <a name="payment-information-for-austria"></a>Betalnings information för Österrike
+# <a name="payment-information-for-austria"></a>Betalningsinformation för Österrike
 
-[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
-
-Betala endast i EUR och ange faktura numret som referens vid betalning.
+[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
-**Bank:** Citibank, London  
-**SWIFT-kod/BIC:** CITIGB2L  
-**Sorterings kod:** 185008  
-**IBAN** GB31CITI18500812207591  
-**Konto nummer:** 12207591  
-**Konto namn:** MICROSOFT  
+**Betala i euro och ange fakturanumret som referens vid betalning.**
+
+Använd den här bankinformationen om du har en faktura som faktureras av **Microsoft Ireland Operations Limited:**
+
+Bank: Citibank, London\
+SWIFT-kod: CITIGB2L\
+IBAN-kod: GB31CITI18500812207591\
+SORTERINGskod: 185008\
+Kontonummer: 12207591\
+Kontonamn: MICROSOFT
+
+Använd den här bankinformationen om du har en faktura debiterad av **MICROSOFT Österreich Brah** för order och förbrukning från och med den 1 mars 2021:
+
+Bank: Citibank Europe plc\
+SWIFT-kod: CITIIE2X\
+IBAN-kod: IE81CITI99005170000124\
+Kontonummer: 70000124\
+Kontonamn: MICROSOFT

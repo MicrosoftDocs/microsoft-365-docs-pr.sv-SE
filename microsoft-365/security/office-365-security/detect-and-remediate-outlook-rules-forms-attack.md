@@ -18,12 +18,12 @@ description: Lär dig hur du känner igen och åtgärdar Outlook-regler och anpa
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e22cfa97ae59fdd094c161cdaeff899dc1dd6507
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 30ddd5f57dee2156504211e76304d346a63e192d
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286399"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406706"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Identifiera och åtgärda Outlook-regler och anpassade formulärinsamlingsattacker
 
@@ -34,70 +34,69 @@ ms.locfileid: "50286399"
 
 ## <a name="what-is-the-outlook-rules-and-custom-forms-injection-attack"></a>Vad är Outlook-regler och custom Forms-injiceringsattack?
 
-När en attack har brutit mot ett konto i ditt användarkonto och kommer in kommer du att försöka etablera ett sätt att stanna kvar eller komma tillbaka in när de upptäcks och tas bort. Det här kallas för att upprätta en mekanism för beständighet. Det kan de göra på två sätt genom att utnyttja Outlook-regler eller genom att mata in anpassade formulär i Outlook.
-I båda fallen synkroniseras regeln eller formuläret från molntjänsten till skrivbordsklienten, så att ett fullständigt format och en ominstallation av klientprogramvaran inte tar bort inlösningen. Det beror på att regler och formulär hämtas igen från molnet när Outlook-klientprogramvaran återansluts till postlådan i molnet. När reglerna och formulären är på plats använder attackerarna dem för att köra fjärr- eller anpassad kod, vanligtvis för att installera skadlig programvara på den lokala datorn. Den skadliga programvaran stjäl sedan autentiseringsuppgifter igen eller utför andra aktiviteter som kan vara affärsverksamhet.
-Den goda nyheten här är att om du håller dina klienter uppdaterade till den senaste versionen är du inte sårbar för risken eftersom den aktuella Outlook-klientens standardinställningar blockerar båda mekanismerna.
+När en attacker får åtkomst till organisationen försöker de upprätta ett fothåll för att stanna kvar eller gå in igen när de har identifierats. Den här aktiviteten kallas för *att fastställa en mekanism för beständighet.* Det finns två sätt som en attackerare kan använda Outlook för att upprätta en beständig mekanism:
+
+- Genom att utnyttja Outlook-regler.
+- Genom att mata in anpassade formulär i Outlook.
+
+Att installera om Outlook eller till och med ge personen en ny dator hjälper inte. När den nya installationen av Outlook ansluter till postlådan synkroniseras alla regler och formulär från molnet. Reglerna eller formulären är vanligtvis utformade för att köra fjärrkod och installera skadlig programvara på den lokala datorn. Skadlig programvara stjäl autentiseringsuppgifter eller utför andra aktiviteter som är affärsverksamhet.
+
+Den goda nyheten är: om du har kvar dina Outlook-klienter i den senaste versionen är du inte sårbar för risken eftersom den aktuella Outlook-klientens standardinställningar blockerar båda mekanismerna.
 
 Attackerna följer vanligtvis dessa mönster:
 
 **Utnyttja reglerna:**
 
-1. Attackeraren stjäl användarnamn och lösenord för en av dina användare.
+1. Attackeraren stjäl en användares autentiseringsuppgifter.
 
-2. Attackeraren loggar sedan in på den användarens Exchange-postlåda. Postlådan kan antingen finnas i Exchange Online eller lokalt i Exchange.
+2. Attacken loggar in på den användarens Exchange-postlåda (Exchange Online eller lokal Exchange).
 
-3. Då skapas en vidarebefordransregel i postlådan som utlöses när postlådan får ett e-postmeddelande som matchar villkoren i regeln. Villkoren för regeln och innehållet i e-postmeddelandet med utlösaren är anpassade efter varandra.
+3. Attackerningen skapar en vidare vidarebefordrans inkorgsregel i postlådan. Vidare vidarebefordransregeln utlöses när postlådan får ett specifikt meddelande från attackeraren som matchar villkoren i regeln. Regelvillkoren och meddelandeformatet är skräddarsytt för varandra.
 
-4. Attackeraren skickar utlösarmeddelandet till den användare som normalt använder postlådan.
+4. Attackeraren skickar e-postmeddelandet med utlösaren till den komprometterade postlådan, som fortfarande används som vanligt av den intet ont anande användaren.
 
-5. När e-postmeddelandet tas emot utlöses regeln. Regelns åtgärd är vanligtvis att starta ett program på en fjärrserver (WebDAV).
+5. När postlådan får ett meddelande som matchar villkoren i regeln tillämpas åtgärden för regeln. Regelåtgärden brukar vara att starta ett program på en fjärrserver (WebDAV).
 
-6. Programmet installerar vanligtvis skadlig programvara, till exempel [Powershell Empire,](https://www.powershellempire.com/)lokalt på användarens dator.
+6. Vanligtvis installerar programmet skadlig programvara på användarens dator (till exempel [PowerShell Empire).](https://www.powershellempire.com/)
 
-7. Den skadlig programvara gör att attackeraren kan stjäla användarens användarnamn och lösenord eller andra autentiseringsuppgifter från den lokala datorn igen och utföra andra skadliga aktiviteter.
+7. Med den skadlig programvara kan attackeraren stjäla (eller stjäla igen) användarens användarnamn och lösenord eller andra autentiseringsuppgifter från den lokala datorn och utföra andra skadliga aktiviteter.
 
 **Sårbarheten i Forms:**
 
-1. Attackeraren stjäl användarnamn och lösenord för en av dina användare.
+1. Attackeraren stjäl en användares autentiseringsuppgifter.
 
-2. Attackeraren loggar sedan in på den användarens Exchange-postlåda. Postlådan kan antingen finnas i Exchange Online eller lokalt i Exchange.
+2. Attacken loggar in på den användarens Exchange-postlåda (Exchange Online eller lokal Exchange).
 
-3. Då skapas en egen e-postformulärmall för attackeret och den infogas i användarens postlåda. Det anpassade formuläret utlöses när postlådan får ett e-postmeddelande som kräver att postlådan läser in det anpassade formuläret. Det anpassade formuläret och formatet på e-post är anpassade efter varandra.
-4. Attackeraren skickar utlösarmeddelandet till användaren, som normalt använder postlådan.
+3. Attackeraren infogar en anpassad e-postformulärmall i användarens postlåda. Det anpassade formuläret utlöses när postlådan får ett specifikt meddelande från attacken som kräver att postlådan läser in det anpassade formuläret. Det anpassade formuläret och meddelandeformatet är anpassade efter varandra.
 
-5. När e-postmeddelandet tas emot läses formuläret in. Formuläret öppnar ett program på en fjärrserver (WebDAV).
+4. Attackeraren skickar e-postmeddelandet med utlösaren till den komprometterade postlådan, som fortfarande används som vanligt av den intet ont anande användaren.
 
-6. Programmet installerar vanligtvis skadlig programvara, till exempel [Powershell Empire,](https://www.powershellempire.com/)lokalt på användarens dator.
+5. När postlådan får meddelandet läser postlådan in det formulär som krävs. Formuläret öppnar ett program på en fjärrserver (WebDAV).
 
-7. Den skadlig programvara gör att attackeraren kan stjäla användarens användarnamn och lösenord eller andra autentiseringsuppgifter från den lokala datorn igen och utföra andra skadliga aktiviteter.
+6. Vanligtvis installerar programmet skadlig programvara på användarens dator (till exempel [PowerShell Empire).](https://www.powershellempire.com/)
+
+7. Med den skadlig programvara kan attackeraren stjäla (eller stjäla igen) användarens användarnamn och lösenord eller andra autentiseringsuppgifter från den lokala datorn och utföra andra skadliga aktiviteter.
 
 ## <a name="what-a-rules-and-custom-forms-injection-attack-might-look-like-office-365"></a>Hur en regel och en anpassad formulärinsamlingsattack kan se ut som i Office 365?
 
 De här beständighetsmetoderna kommer inte att synas av dina användare och kan i vissa fall till och med vara osynliga för dem. Den här artikeln beskriver hur du söker efter de sju tecken (indikatorer på komprometterade) som anges nedan. Om du hittar något av detta måste du vidta åtgärder.
 
-- Indikatorer på regelprometten:
-
+- **Indikatorer på regelprometten:**
   - Regelåtgärd är att starta ett program.
-
   - Regelreferenser med EXE, ZIP eller URL.
-
   - På den lokala datorn letar du efter nya processer som kommer från Outlook PID.
 
-- Indikatorer på att anpassade formulär har komprometterats:
-
-  - Anpassade formulär som har sparats som en egen meddelandeklass.
-
+- **Indikatorer på att anpassade formulär har komprometterats:**
+  - Anpassade formulär finns sparade som en egen meddelandeklass.
   - Meddelandeklass innehåller körbar kod.
-
-  - Lagras vanligtvis i personliga formulärbibliotek eller inkorgsmappar.
-
+  - Vanligtvis lagras skadliga formulär i personliga formulärbibliotek eller inkorgsmappar.
   - Formuläret heter IPM. Obs! [eget namn].
 
 ## <a name="steps-for-finding-signs-of-this-attack-and-confirming-it"></a>Steg för att hitta tecken på den här attacken och bekräfta den
 
-Du kan använda någon av dessa två metoder för att bekräfta attacken:
+Du kan använda någon av följande metoder för att bekräfta attacken:
 
-- Granska regler och formulär manuellt för varje postlåda med Hjälp av Outlook-klienten. Den här metoden är genomgående, men du kan bara kontrollera postlådeanvändare i en tid som kan ta mycket tid om du har många användare att kontrollera. Det kan också leda till ett brott mot datorn som du kör kontrollen från.
+- Granska regler och formulär manuellt för varje postlåda med Hjälp av Outlook-klienten. Den här metoden är genomgående, men du kan bara kontrollera en postlåda i taget. Den här metoden kan ta mycket tid om du har många användare att kontrollera och kan även smitta datorn du använder.
 
 - Använd [Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell-skriptet för att automatisktdumpa alla regler för vidarebefordran av e-post och anpassade formulär för alla användare i ditt tiotal. Det här är den snabbaste och säkraste metoden med minsta möjliga overhead.
 
@@ -117,11 +116,11 @@ Du kan använda någon av dessa två metoder för att bekräfta attacken:
 
 1. Öppna användarens Outlook-klient som användare.
 
-2. Följ anvisningarna i [Visa fliken Utvecklare för](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45) användarversionen av Outlook.
+2. Följ anvisningarna i [Visa fliken Utvecklare](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45) för användarens version av Outlook.
 
 3. Öppna den nu synliga fliken Utvecklare i Outlook och klicka på **Designa ett formulär.**
 
-4. Välj **Inkorgen** i **listan Leta i.** Leta efter eventuella anpassade formulär. Anpassade formulär är sällsynta så att om du har några anpassade formulär alls är det värt att se djupare.
+4. Välj **Inkorgen** i **listan Leta i.** Leta efter eventuella anpassade formulär. Anpassade formulär är sällsynta så att det är värt att titta närmare på anpassade formulär om du har några anpassade formulär.
 
 5. Undersök eventuella anpassade formulär, särskilt de som markerats som dolda.
 
@@ -151,9 +150,9 @@ Du måste ha global administratörsbehörighet för att köra skriptet eftersom 
 
   - **ÄrIIallyMalicious (kolumn D)**: Om det här värdet är "SANT" är regeln sannolikt skadlig.
 
-  - **ActionCommand (kolumn G)**: Om det här listar ett program eller en fil med filnamnstillägget .exe, .zip eller en post som refererar till en URL-adress som inte ska finnas där är regeln sannolikt skadlig.
+  - **ActionCommand (kolumn G)**: Om den här kolumnen listar ett program eller en fil med .exe- eller .zip-tillägg eller en okänd post som refererar till en URL är regeln sannolikt skadlig.
 
-- **MailboxFormsExport-*yyyy-mm-dd*.csv:** I allmänhet är användningen av anpassade formulär mycket ovanligt. Om det finns några i arbetsboken öppnar du användarens postlåda och undersöker själva formuläret. Om organisationen inte lagt upp det avsiktligt är det troligt att det är skadligt.
+- **MailboxFormsExport-*yyyy-mm-dd*.csv:** I allmänhet är användningen av anpassade formulär ovanligt. Om det finns några i arbetsboken öppnar du användarens postlåda och undersöker själva formuläret. Om organisationen inte lagt upp det avsiktligt är det troligt att det är skadligt.
 
 ## <a name="how-to-stop-and-remediate-the-outlook-rules-and-forms-attack"></a>Så här stoppar och åtgärdar du attacken med Outlook-regler och formulär
 
@@ -169,7 +168,7 @@ Om du hittar bevis för något av dessa attacker är det enkelt att åtgärda, t
 
 4. Installera de senaste versionerna av Outlook. Kom ihåg att den aktuella versionen av Outlook blockerar båda typerna av den här attacken som standard.
 
-5. När alla offlinekopior av postlådan har tagits bort återställer du användarens lösenord (använd [](../../admin/security-and-compliance/set-up-multi-factor-authentication.md) ett lösenord av hög kvalitet) och följer stegen i Konfigurera multifaktorautentisering för användare om MFA inte redan har aktiverats. Detta garanterar att användarens autentiseringsuppgifter inte exponeras på annat sätt (t.ex. nätfiske eller lösenord).
+5. När alla offlinekopior av postlådan har tagits bort återställer du användarens lösenord (använd ett lösenord av hög kvalitet) och följer stegen i Konfigurera multifaktorautentisering för användare om MFA inte redan har aktiverats. [](../../admin/security-and-compliance/set-up-multi-factor-authentication.md) Detta garanterar att användarens autentiseringsuppgifter inte exponeras på annat sätt (t.ex. nätfiske eller lösenord).
 
 ### <a name="using-powershell"></a>Använda PowerShell
 
@@ -191,15 +190,15 @@ Det finns två PowerShell-fjärr cmdlets som du kan använda för att ta bort el
 
 3. Om du vill behålla regeln och dess innehåll för vidare undersökning använder du cmdleten [Disable-InboxRule.](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule)
 
-## <a name="how-to-minimize-future-attacks"></a>Hur du minimerar framtida attacker
+## <a name="how-to-minimize-future-attacks"></a>Minimera framtida attacker
 
 ### <a name="first-protect-your-accounts"></a>Först: skydda dina konton
 
-De regler och formulär-sårbarheter som bara används av en attackerare efter att de har stulit eller bryter mot ett av dina användares konton. Det första steget för att förhindra användning av dessa sårbarheter mot organisationen är därför att aggressivt skydda användarkonton. Några av de vanligaste sätten som konton bryter mot är nätfiske- eller [lösenordsattacker.](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/)
+De regler och formulär-sårbarheter som bara används av en attackerare efter att de har stulit eller bryter mot ett av dina användares konton. Det första steget för att förhindra användning av dessa sårbarheter mot organisationen är därför att aggressivt skydda användarkonton. Några av de vanligaste sätten som konton bryter mot är nätfiske- eller [lösenordsattacker.](https://www.microsoft.com/security/blog/2020/04/23/protecting-organization-password-spray-attacks/)
 
 Det bästa sättet att skydda användarkonton, och särskilt administratörskonton, är att [konfigurera multifaktorautentisering för användare.](../../admin/security-and-compliance/set-up-multi-factor-authentication.md) Du bör också:
 
-- Övervaka hur användarkonton är [åtkomlade och används.](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports) Du kan inte förhindra den första intrånget, men du förkortar varaktigheten och påverkan på intrånget genom att upptäcka det snabbare. Du kan använda de här [säkerhetsprinciperna för Office 365 Cloud App](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) för att övervaka dina konton och varna för ovanlig aktivitet:
+- Övervaka hur användarkonton är [åtkomlade och används.](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports) Du kan inte förhindra den första intrånget, men du förkortar varaktigheten och påverkan på den genom att upptäcka den snabbare. Du kan använda de här [säkerhetsprinciperna för Office 365 Cloud App](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) för att övervaka dina konton och varna för ovanlig aktivitet:
 
   - **Flera misslyckade inloggningsförsök:** Den här principprofilen profilerar din miljö och utlöser aviseringar när användare utför flera misslyckade inloggningsaktiviteter i en enskild session med avseende på den inlärda baslinjen, vilket kan ange ett försök till intrång.
 
@@ -211,7 +210,7 @@ Det bästa sättet att skydda användarkonton, och särskilt administratörskont
 
 ### <a name="second-keep-your-outlook-clients-current"></a>Andra: Håll Outlook-klienterna aktuella
 
-Helt uppdaterade och korrigerade versioner av Outlook 2013 och 2016 inaktiverar som standard åtgärden "Starta program" med regler och formulär. På så sätt kan du se till att regeln och formuläråtgärder blockeras, även om en attack bryter mot kontot. Du kan installera de senaste uppdateringarna och säkerhetskorrigeringarna genom att följa stegen i [Installera Office-uppdateringar.](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5)
+Helt uppdaterade och korrigerade versioner av Outlook 2013 och 2016 inaktiverar åtgärden "Starta program" regel/formulär som standard. På så sätt kan du säkerställa att även om en attack bryter mot kontot blockeras åtgärderna för regler och formulär. Du kan installera de senaste uppdateringarna och säkerhetskorrigeringarna genom att följa stegen i [Installera Office-uppdateringar.](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5)
 
 Här är korrigeringsversionerna för Outlook 2013- och 2016-klienter:
 
@@ -243,7 +242,7 @@ Kunder med lokala Exchange-installationer bör överväga att blockera äldre ve
 
 Din Microsoft 365-prenumeration innehåller kraftfulla säkerhetsfunktioner som du kan använda för att skydda dina data och dina användare. Använd [Säkerhetsöversikt för Microsoft 365 – de vanligaste prioriteringarna för de första 30 dagarna, 90 dagarna och bortom](security-roadmap.md) för att implementera Microsofts metodtips för att skydda din Microsoft 365-klientorganisation.
 
-- Uppgifter som ska utföras under de första 30 dagarna. De har omedelbar effekt och påverkar inte användarna i någon större utsträckning.
+- Uppgifter som ska utföras under de första 30 dagarna. De har omedelbar effekt och påverkar inte dina användare så mycket.
 
 - Uppgifter som ska utföras inom 90 dagar. De tar lite längre tid att planera och implementera men förbättrar din säkerhet avsevärt.
 

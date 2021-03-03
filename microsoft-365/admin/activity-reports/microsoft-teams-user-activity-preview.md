@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du får användaraktivitetsrapporten för Microsoft Teams och får inblick i Teams-aktiviteten i din organisation.
-ms.openlocfilehash: e8e4ab6fd78fb290243d8fdc780b5a7a14ca2ee0
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 41403bcda1d1485798ac5eefe8f3386a314aea1b
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233416"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406188"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 365-rapporter i administrationscentret – användaraktivitet för Microsoft Teams
 
@@ -42,7 +42,7 @@ Instrumentpanelen Microsoft **365-rapporter** visar en översikt över aktivitet
 
 Du kan visa användaraktiviteten i Teams-rapporten genom att välja **fliken Användaraktivitet.** <br/>![Microsoft 365-rapporter – användaraktivitet för Microsoft Teams.](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
 
-Välj **Välj kolumner för** att lägga till eller ta bort kolumner i rapporten.  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
+Välj **Välj kolumner för** att lägga till eller ta bort kolumner i rapporten.  <br/> ![Teams user activity report - choose columns](../../media/6d3c013e-2c5e-4d66-bb41-998aa4bd1c20.png)
 
 Du kan också exportera rapportdata till en CSV-fil för Excel genom att välja **länken** Exportera. Då exporteras data för alla användare och du kan göra enkel sortering och filtrering för vidare analys. Om du har mindre än 2 000 användare kan du sortera och filtrera i tabellen i själva rapporten. Om du har fler än 2 000 användare måste du exportera data för att kunna filtrera och sortera. Det exporterade formatet för **ljudtid,** **videotid och** **skärmresurstid** följer ISO8601-formatet för varaktighet.
 
@@ -59,9 +59,15 @@ För att säkerställa datakvaliteten utför vi dagliga dataverifieringskontroll
 |Totalt antal möten   <br/> |Antalet onlinemöten som användaren har deltagit i under den angivna tidsperioden.  <br/> |
 |1:1-samtal   <br/> | Antalet 1:1-anrop som användaren har deltagit i under den angivna tidsperioden.  <br/> |
 |Datum för senaste aktivitet (UTC)  <br/> |Det senaste datum då användaren deltog i en Microsoft Teams-aktivitet.<br/> |
-|Adhoc för möten som deltagare   <br/> | Antalet möten som inte har schemalagts i kalendern som användaren har deltagit i under den angivna tidsperioden.  <br/> |
-|Möten organiserade adhoc <br/> |Antalet möten som inte har schemalagts i kalendern som användaren organiserat under den angivna tidsperioden. <br/>|
-|Schemalagda möten  <br/> |Antalet schemalagda möten som en användare organiserat under den angivna tidsperioden.  <br/> |
-|Är licensierad |Väljs om användaren är licensierad att använda Teams.|
-|Annan aktivitet|Användaren är aktiv men har utfört andra aktiviteter än de åtgärdstyper som exponeras som erbjuds i rapporten (skicka eller svara på kanalmeddelanden och chattmeddelanden, schemalägga eller delta i 1:1-samtal och möten). Exempelåtgärder är när en användare ändrar Teams status eller Teams statusmeddelande eller öppnar ett kanalmeddelandeinlägg men inte svarar. |
+|Ad hoc-möten som deltagare   <br/> | Antalet ad hoc-möten som en användare har deltagit i under den angivna tidsperioden.  <br/> |
+|Möten organiserade ad hoc <br/> |Antalet ad hoc-möten som en användare organiserat under den angivna tidsperioden. <br/>|
+|Totalt antal ordnade möten  <br/> |Summan av enplanerade, återkommande, ad hoc- och oklassificerade möten som en användare organiserat under den angivna tidsperioden.  <br/> |
+|Totalt antal möten som deltagare  <br/> |Summan av engångs schemalagda, återkommande, ad hoc- och oklassificerade möten som en användare deltagit i under den angivna tidsperioden.  <br/> |
+|Möten som schemalagts en gång  <br/> |Antalet tidsbokade möten som en användare organiserat under den angivna tidsperioden.  <br/> |
+|Schemalagda återkommande möten  <br/> |Antalet återkommande möten som en användare organiserat under den angivna tidsperioden.  <br/> |
+|Möten som deltagare har schemalagts en gång  <br/> |Antalet schemalagda möten som en användare har deltagit i under den angivna tidsperioden.  <br/> |
+|Möten som har deltagit i schemalagda återkommande möten  <br/> |Antalet återkommande möten som en användare har deltagit i under den angivna tidsperioden.  <br/> |
+|Är licensierad  <br/> |Väljs om användaren är licensierad att använda Teams. <br/>|
+|Annan aktivitet  <br/>|Användaren är aktiv men har utfört andra aktiviteter än de åtgärdstyper som exponeras som erbjuds i rapporten (skicka eller svara på kanalmeddelanden och chattmeddelanden, schemalägga eller delta i 1:1-samtal och möten). Exempelåtgärder är när en användare ändrar Teams status eller Teams statusmeddelande eller öppnar ett kanalmeddelandeinlägg men inte svarar.  <br/>|
+|oklassificerade möten <br/>|Den som inte kan klassificeras som schema eller återkommande eller ad hoc. De är korta och kan för det mesta inte identifieras på grund av manipulerad telemetriinformation. |
 |||

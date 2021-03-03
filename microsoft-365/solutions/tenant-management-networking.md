@@ -1,5 +1,5 @@
 ---
-title: Steg 2. Optimalt nätverk för Microsoft 365 för företags klienter
+title: Steg 2. Optimala nätverk för dina klientorganisationar i Microsoft 365 för företag
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,66 +11,68 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- tenant-management
+- m365solution-scenario
 ms.custom:
 - Ent_Solutions
-description: Optimera nätverks åtkomst till Microsoft 365-klient organisationer.
-ms.openlocfilehash: 1e57911a6e8c51af3ae00ff0f9053bf9273e0e17
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+description: Optimera nätverksåtkomsten till dina Microsoft 365-innehavare.
+ms.openlocfilehash: 5eac0793d2afc924a919671ffa105362ea1866d9
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908777"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407198"
 ---
-# <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Steg 2. Optimalt nätverk för Microsoft 365 för företags klienter
+# <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Steg 2. Optimala nätverk för dina klientorganisationar i Microsoft 365 för företag
 
-Microsoft 365 för Enterprise inkluderar moln produktivitets program som team och Exchange Online och Microsoft Intune tillsammans med många identitets-och säkerhets tjänster i Microsoft Azure. Alla de här molnbaserade tjänsterna är beroende av säkerheten, prestandan och tillförlitligheten hos anslutningar från klient enheter i det lokala nätverket eller någon annan plats på Internet. 
+Microsoft 365 för företag innehåller produktivitetsprogram för molnet, till exempel Teams och Exchange Online och Microsoft Intune, samt många identitets- och säkerhetstjänster för Microsoft Azure. Alla dessa molnbaserade tjänster förlitar sig på säkerhet, prestanda och tillförlitlighet i anslutningar från klientenheter i ditt lokala nätverk eller valfri plats på Internet. 
 
-För att optimera nätverks åtkomst för din klient organisation måste du:
+Om du vill optimera nätverksåtkomst för klientorganisationen måste du:
 
-- Optimera vägen mellan lokala användare och den närmaste platsen till Microsofts globala nätverk.
-- Optimera åtkomst till det globala Microsoft-nätverket för fjärran vändare som använder en VPN-lösning för fjärråtkomst.
-- Använd Nätverks insikter för att utforma nätverks omkretsen för dina Office-platser.
-- Optimera åtkomsten till vissa till gångar som hanteras på SharePoint-webbplatser med Office 365 CDN.
-- Konfigurera enheter för proxy och nätverks Edge för att förbigå behandling för betrodd trafik med Microsoft 365 med slut punkter och automatisk uppdatering av listan.
+- Optimera sökvägen mellan dina lokala användare och den närmaste platsen för Microsofts globala nätverk.
+- Optimera åtkomsten till Microsofts globala nätverk för dina fjärranvändare som använder en VPN-lösning för fjärråtkomst.
+- Använd Nätverksinsikter för att utforma nätverks perimeter för dina kontorsplatser.
+- Optimera åtkomsten till specifika tillgångar på SharePoint-webbplatser med Office 365 CDN.
+- Konfigurera proxy- och nätverks-edge-enheter för att kringgå bearbetning för Microsoft 365-betrodd trafik med listan med slutpunkter och automatisera uppdateringen av listan när ändringar görs.
 
-## <a name="enterprise-on-premises-workers"></a>Företags lokala arbetare
+## <a name="enterprise-on-premises-workers"></a>Företagsanställda lokalt
 
-För företags nätverk bör du optimera slutanvändarens upplevelse genom att aktivera nätverks åtkomst med högsta prestanda mellan klienter och de närmaste Microsoft 365-slutpunkterna. Slutanvändarens kvalitet är direkt relaterad till prestanda och svars tid för det program som användaren använder. Till exempel är Microsoft Teams beroende av liten latens för att användarna ska kunna ringa samtal, konferenser och samarbeten med samarbete.
+För företagsnätverk bör du optimera slutanvändarupplevelsen genom att aktivera nätverksåtkomst med högsta möjliga prestanda mellan klienter och de närmaste Microsoft 365-slutpunkterna. Kvaliteten på slutanvändarupplevelsen är direkt relaterad till prestanda och svarstiden för programmet som användaren använder. Microsoft Teams förlitar sig till exempel på låg fördröjning så att användarnas telefonsamtal, konferenser och samarbete på delad skärm blir felfria.
 
-Det primära målet i nätverks utformningen bör vara att minimera fördröjningen genom att minska tiden för cirkulering från klient enheter till Microsoft globalt nätverk, Microsofts offentliga nätverks stamnät som sammankopplar alla Microsofts Data Center med låga svars tider, till exempel start punkter för högtillgänglig moln program, som kallas front dörrar, över hela världen.
+Det primära målet i nätverksdesignen bör vara att minimera svarstiden genom att minska tidsfördröjningstid (ROUND-trip time, RTT) från klientenheter till Microsoft Global Network, Microsofts offentliga stamnät som sammanbinder alla Microsofts datacenter med låg latens, startpunkter för molnprogram med hög tillgänglighet, så kallade fram dörrar, utspridda över hela världen.
 
-Här är ett exempel på ett traditionellt företags nätverk.
+Här är ett exempel på ett traditionellt företagsnätverk.
 
-![Ett traditionellt företags nätverk med central åtkomst till Internet](../media/tenant-management-overview/tenant-management-networking-traditional.png)
+![Ett traditionellt företagsnätverk med central tillgång till Internet](../media/tenant-management-overview/tenant-management-networking-traditional.png)
 
-I den här bilden ansluter filial kontor till ett centralt kontor via WAN-enheter och ett WAN-stamnät. Internet åtkomst är via en säkerhets-eller proxyserver på nätverks kontoret och en Internet leverantör. På Internet har Microsofts globala nätverk en serie front dörrar i regioner runt om i världen. Organisationer kan även använda mellanliggande platser för ytterligare paket bearbetning och säkerhet för trafik. En organisations Microsoft 365-innehavare finns i Microsofts globala nätverk.
+I den här illustrationen ansluter filialer till ett centralt kontor via WAN-enheter (Wide Area Network) och ett WAN-stamnät. Internetanslutningen är via en säkerhets- eller proxyenhet vid nätverkskanten på det centrala kontoret och en Internet-tjänstprovider (ISP). På Internet har Microsoft Global Network en serie dörrar fram i områden runt om i världen. Organisationer kan också använda mellanliggande platser för ytterligare paketbearbetning och säkerhet för trafik. En organisations Microsoft 365-innehavare finns i Microsofts globala nätverk.
 
-Problem med den här konfigurationen för Microsoft 365-moln tjänster är:
+Problemen med den här konfigurationen för Microsoft 365-molntjänsterna är:
 
-- För användare i filial kontor skickas trafiken till icke-lokala front dörrar, ökande svars tid.
-- Att skicka trafik till mellanliggande platser skapar nätverks-hairpins som utför dubbel paket bearbetning på betrodd trafik, ökande svars tid.
-- Nätverks kant enheter utför onödiga och dubbla paket bearbetningar på betrodd trafik, ökande svars tid.
+- För användare på filialkontor skickas trafiken till icke-lokala dörrar, och ökar svarstiden.
+- Om du skickar trafik till mellanliggande platser skapas nätverksnålsnålar som utför duplicerad paketbearbetning på betrodd trafik och ökar svarstiden.
+- Nätverk edge-enheter utför oläst och duplicerad paketbearbetning på betrodd trafik, ökande svarstid.
 
-Optimering av nätverks prestanda för Microsoft 365 behöver inte vara komplicerad. Du får bästa möjliga prestanda genom att följa några viktiga principer:
+Det behöver inte vara svårt att optimera Microsoft 365-nätverksprestandan. Du får bästa möjliga prestanda genom att följa några viktiga principer:
 
-- Identifiera Microsoft 365 nätverks trafik, som är betrodd trafik till Microsofts moln tjänster.
-- Tillåt lokal branchning från Microsoft 365-nätverks trafik till Internet från varje plats där användarna ansluter till Microsoft 365.
-- Undvik nätverks hairpins.
-- Tillåt att Microsoft 365-trafik kringgår enheter för att kontrol lera proxyservrar och paket.
+- Identifiera Microsoft 365-nätverkstrafik som är betrodd trafik till Microsofts molntjänster.
+- Tillåt lokal branchning av Microsoft 365-nätverkstrafik till Internet från varje plats där användarna ansluter till Microsoft 365.
+- Undvik hårnålsklipp i nätverket.
+- Tillåt Att Microsoft 365-trafik kringgå proxy proxy- och paketinspektionsenheter.
 
-Om du verkställer dessa principer får du ett företags nätverk optimerat för Microsoft 365.
+Om du implementerar de här principerna får du ett företagsnätverk optimerat för Microsoft 365.
 
-![Ett företags nätverk optimerat för Microsoft 365](../media/tenant-management-overview/tenant-management-networking-optimized.png)
+![Ett företagsnätverk optimerat för Microsoft 365](../media/tenant-management-overview/tenant-management-networking-optimized.png)
 
-I den här bilden har avdelnings kontor sin egen Internet anslutning via en programdefinierad WAN-enhet (SDWAN) som skickar betrodd Microsoft 365-trafik till den regionala närmaste främre dörren. På Central kontoret gäller inte tillförlitlig Microsoft 365-trafik säkerhets-eller proxyservern och mellanliggande enheter används inte längre.
+I den här illustrationen har filialkontor sin egen Internetanslutning via en programvarudefinierad WAN-enhet (SDWAN), som skickar betrodd Microsoft 365-trafik till den regionala närmaste ytterporten. På det centrala kontoret går betrodd Microsoft 365-trafik förbi säkerheten eller proxyenheten och mellanliggande enheter används inte längre.
 
-Så här löses en optimerad konfiguration för ett traditionellt företags nätverk:
+Så här löser den optimerade konfigurationen problem med fördröjning i ett traditionellt företagsnätverk:
 
-- Den betrodda Microsoft 365-trafiken hoppar över WAN-stamnätet och skickas till lokala front dörrar för alla kontor, under tiden för minskad svars tid.
-- Nätverks hairpins som utför dubbel paket bearbetning hoppas över för betrodd trafik i Microsoft 365, och minskar svars tiden.
-- Nätverks kant enheter som kräver onödiga och dubbel paket bearbetning hoppas över för Microsoft 365-betrodd trafik, vilket minskar svars tiden.
+- Betrodd Microsoft 365-trafik hoppar över WAN-stamnätet och skickas till lokal dörrar för alla kontor, vilket minskar svarstiden.
+- Nätverkshårsnålar som utför duplicerad paketbearbetning hoppas över för Microsoft 365-betrodd trafik och minskar svarstiden.
+- Nätverk edge-enheter som utför obevakad och duplicerad paketbearbetning hoppas över för Microsoft 365-betrodd trafik, vilket minskar svarstiden.
 
-Mer information finns i [Översikt över Microsoft 365-nätverk](../enterprise/microsoft-365-networking-overview.md).
+Mer information finns i [översikten över Microsoft 365-nätverksanslutning.](../enterprise/microsoft-365-networking-overview.md)
 
 ## <a name="remote-workers"></a>Distansarbetare
 
@@ -78,103 +80,103 @@ Om din distansarbetare använder en traditionell VPN-klient för att få fjärr�
 
 ![Nätverkstrafik från VPN-klienter utan tunnel](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
-I den här bilden måste Microsoft 365-trafik ta en indirekt väg genom organisationen, som kan vidarekopplas till en Microsoft Global Network-frontend-enhet långt bort från VPN-klientens fysiska plats. Denna indirekta väg lägger till en fördröjning för nätverkstrafiken och minskar prestandan. 
+I den här illustrationen måste Microsoft 365-trafiken ta en indirekt väg genom din organisation som kan vidarebefordras till en av Microsoft Global Networks frontporter långt ifrån VPN-klientens fysiska plats. Denna indirekta väg lägger till en fördröjning för nätverkstrafiken och minskar prestandan. 
 
 Med delad tunnel kan du konfigurera VPN-klienten så att den exkluderar vissa typer av trafik som inte skickas via VPN-anslutningen till organisationens nätverk.
 
-Om du vill optimera åtkomst till Microsoft 365 molnresurser konfigurerar du VPN-klienter för uppdelad tunnel för att undanta trafik till **optimera** kategori Microsoft 365-slutpunkter över VPN-anslutningen. Mer information finns i avsnitten [Office 365-slutpunkter](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories) och [listorna](../enterprise/microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) över optimering av kategori slut punkter för delad tunnel.
+Om du vill optimera åtkomst till Microsoft 365 molnresurser konfigurerar du VPN-klienter för uppdelad tunnel för att undanta trafik till **optimera** kategori Microsoft 365-slutpunkter över VPN-anslutningen. Mer information finns i Office [365-slutpunktskategorier](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories) och [listorna för](../enterprise/microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) optimera kategorislutpunkter för delade tunnlar.
 
-Här är det resulterande trafikflödet för delade tunnlar, i vilka de flesta trafik till Microsoft 365-molnappar kringgår VPN-anslutningen.
+Här är det resulterande trafikflödet för delade tunnlar, där större delen av trafiken till Microsoft 365-molnappar kringgår VPN-anslutningen.
 
 ![Nätverkstrafik från VPN-klienter med tunnel](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
 
-I den här bilden skickar VPN-klienten och får viktig tjänst trafik för Microsoft 365-molnet direkt över Internet och till närmaste främre dörr i Microsofts globala nätverk.
+I den här illustrationen skickar VPN-klienten och får viktig Microsoft 365-molntjänsttrafik direkt via Internet och till närmaste klient så att det går in i Microsoft Global Network.
 
 Detaljerad information finn i [Optimera Office 365-anslutning för fjärranvändare med delad VPN-tunnel](../enterprise/microsoft-365-vpn-split-tunnel.md).
 
-## <a name="using-network-insights-preview"></a>Använda nätverks insikter (för hands version)
+## <a name="using-network-insights-preview"></a>Använda Nätverksinsikter (förhandsversion)
 
-Nätverks insikter är prestanda värden som samlas från din Microsoft 365-klient organisation som hjälper dig att utforma nätverks gränser för dina Office-platser. Varje Insight innehåller information om prestanda i ett angivet problem för varje geografisk plats där lokala användare kommer åt din klient organisation.
+Nätverksinsikter är prestandamått som samlas in från din Microsoft 365-klientorganisation som hjälper dig att utforma nätverks perimeter för dina kontor. Varje insikt ger direktinformation om prestandaegenskaperna för ett visst problem för varje geografisk plats där lokala användare har åtkomst till din klientorganisation.
 
-Det finns två nätverks insikter för klient organisations nivå som kan visas för klient organisationen:
+Det finns två nätverksinsikter på klientorganisationsnivå som kan visas för innehavaren:
 
-- [Exchange-sampel som påverkas av anslutnings problem](../enterprise/office-365-network-mac-perf-insights.md#exchange-sampled-connections-impacted-by-connectivity-issues)
-- [SharePoint-sampel som påverkas av anslutnings problem](../enterprise/office-365-network-mac-perf-insights.md#sharepoint-sampled-connections-impacted-by-connectivity-issues)
+- [Exempel på Exchange-anslutningar som påverkas av anslutningsproblem](../enterprise/office-365-network-mac-perf-insights.md#exchange-sampled-connections-impacted-by-connectivity-issues)
+- [SharePoint-exempelanslutningar som påverkas av anslutningsproblem](../enterprise/office-365-network-mac-perf-insights.md#sharepoint-sampled-connections-impacted-by-connectivity-issues)
 
-Det här är särskilda nätverks insikter för varje Office-plats:
+Det här är de specifika nätverksinsikterna för varje kontor:
 
-- [Utgående nätverks utgångar](../enterprise/office-365-network-mac-perf-insights.md#backhauled-network-egress)
+- [Utgående nätverksback](../enterprise/office-365-network-mac-perf-insights.md#backhauled-network-egress)
 - [Bättre prestanda upptäckt för kunder nära dig](../enterprise/office-365-network-mac-perf-insights.md#better-performance-detected-for-customers-near-you)
-- [Användning av en icke optimal Exchange Online-onlinetjänst](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-exchange-online-service-front-door)
-- [Användning av en icke-optimal SharePoint Online-onlinetjänst](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-sharepoint-online-service-front-door)
-- [Liten nedladdnings hastighet från SharePoint-startdörren](../enterprise/office-365-network-mac-perf-insights.md#low-download-speed-from-sharepoint-front-door)
-- [Kina-användarens optimala nätverks utgång](../enterprise/office-365-network-mac-perf-insights.md#china-user-optimal-network-egress)
+- [Användning av en icke-optimal Exchange Online-tjänsts framsida](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-exchange-online-service-front-door)
+- [Användning av en icke-optimal SharePoint Online-tjänsts framsida](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-sharepoint-online-service-front-door)
+- [Låg nedladdningshastighet från SharePoints dörr](../enterprise/office-365-network-mac-perf-insights.md#low-download-speed-from-sharepoint-front-door)
+- [Optimal utgående nätverkstrafik för användare i Kina](../enterprise/office-365-network-mac-perf-insights.md#china-user-optimal-network-egress)
 
 >[!IMPORTANT]
->Nätverks insikter, prestanda rekommendationer och utvärderingar i administrations centret för Microsoft 365 visas för närvarande. Det är endast tillgängligt för Microsoft 365-klient organisationer som har registrerats i funktionen för förhands granskning.
+>Nätverksinsikter, prestandarekommendationer och utvärderingar i Administrationscenter för Microsoft 365 finns för närvarande i förhandsgranskningsstatus. Den är bara tillgänglig för Microsoft 365-innehavare som har registrerats i förhandsgranskningsprogrammet för funktioner.
 
-Mer information finns i [Microsoft 365 nätverks insikter](../enterprise/office-365-network-mac-perf-insights.md).
+Mer information finns i [Microsoft 365 Network Insights.](../enterprise/office-365-network-mac-perf-insights.md)
 
 ## <a name="sharepoint-performance-with-the-office-365-cdn"></a>SharePoint-prestanda med Office 365 CDN
 
-Med ett molnbaserade innehålls leverans nätverk (CDN) kan du minska inläsnings tid, spara bandbredd och snabba svar. En CDN förbättrar prestandan genom att cachelagra statiska till gångar, till exempel grafik-eller videofiler, i webbläsare som begär dem, vilket gör det enklare att ladda ner nedladdningar och minska svars tiden. Du kan använda det inbyggda Office 365 Content Delivery Network (CDN), som ingår i SharePoint i Microsoft 365 E3 och E5, för att hantera statiska till gångar för bättre prestanda för SharePoint-sidorna.
+Ett molnbaserat nätverk för innehållsleverans (CDN) gör att du kan minska inläsningstiden, spara bandbredd och snabba svarstider. Ett CDN förbättrar prestanda genom cachelagring av statiska tillgångar, till exempel grafik- eller videofiler närmare de webbläsare som begär dem, vilket hjälper till att snabba på hämtningar och minska svarstiden. Du kan använda det inbyggda nätverket för innehållsleverans i Office 365 (CDN), som ingår i SharePoint i Microsoft 365 E3 och E5, för att lagra statiska tillgångar för att ge bättre prestanda för dina SharePoint-sidor.
 
-Office 365 CDN består av flera CDN som låter dig hantera fasta till gångar på flera platser, eller _ursprung_, och betjäna dem från globala nätverk med snabb hastighet. Beroende på vilken typ av innehåll du vill ha i Office 365 CDN kan du lägga till **offentliga** ursprung, **privata** ursprung eller både och.
+Office 365 CDN består av flera CDN:er som gör att du kan lagra statiska tillgångar på flera platser, eller ursprung, och tjäna dem från globala _höghastighetsnätverk._ Beroende på vilken typ av innehåll du vill ha i Office 365 CDN kan du lägga till offentliga **ursprung,** privata ursprung eller båda. 
 
-När du distribuerat och konfigurerat laddar Office 365 CDN upp till gångar från offentliga och privata ursprung och gör dem tillgängliga för snabb åtkomst till användare som finns på Internet.
+När Office 365 CDN distribueras och konfigureras laddar det upp tillgångar från offentliga och privata ursprung och gör dem tillgängliga för snabb åtkomst till användare på Internet.
 
 ![Office 365 CDN distribuerat för användare](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN distribuerat för användare")
 
-Mer information finns i [använda Office 365 CDN med SharePoint Online](../enterprise/use-microsoft-365-cdn-with-spo.md).
+Mer information finns i Använda [Office 365 CDN med SharePoint Online.](../enterprise/use-microsoft-365-cdn-with-spo.md)
 
-## <a name="automated-endpoint-listing"></a>Automatisk slut punkts listning
+## <a name="automated-endpoint-listing"></a>Automatiserad slutpunktslista
 
-Om du vill att dina lokala klienter, kant enheter och molnbaserade paket analys tjänster ska hoppa över bearbetning av betrodd Microsoft 365-trafik måste du konfigurera dem med slut punkter (IP-adressintervall och DNS-namn) som motsvarar Microsoft 365-tjänsterna. Dessa slut punkter kan konfigureras manuellt i brand väggar och andra Edge-säkerhetsenheter, PAC-filer för klient datorer för att kringgå proxyservrar eller SD-WAN-enheter hos filialer. Slut punkterna ändras emellertid med tiden och kräver kontinuerligt manuellt underhåll av slut punkts listorna på dessa platser.
+Om du vill att dina lokala klienter, edge-enheter och molnbaserade paketanalystjänster ska hoppa över bearbetningen av betrodd Microsoft 365-trafik måste du konfigurera dem med den uppsättning slutpunkter (IP-adressintervall och DNS-namn) som motsvarar Microsoft 365-tjänster. Dessa slutpunkter kan konfigureras manuellt i brandväggar och andra edge-säkerhetsenheter, PAC-filer för klientdatorer för att kringgå proxyenheter eller SD-WAN-enheter på filialkontor. Slutpunkterna ändras dock över tid, vilket kräver löpande manuellt underhåll av slutpunktslistorna på dessa platser.
 
-Om du vill automatisera visningen av list-och ändrings hantering för Microsoft 365-slutpunkter i klientens PAC-filer och nätverks enheter kan du använda [Office 365 IP-adress och övrig URL-baserad webb tjänst](../enterprise/microsoft-365-ip-web-service.md). Denna tjänst hjälper dig att bättre identifiera och skilja på Microsoft 365-nätverks trafik, vilket gör det lättare för dig att utvärdera, konfigurera och hålla sig uppdaterad med de senaste ändringarna.
+För att automatisera list- och ändringshanteringen för Microsoft 365-slutpunkter i klientens PAC-filer och nätverksenheter använder du [IP-adressen och URL REST-baserade webbtjänsten för Office 365.](../enterprise/microsoft-365-ip-web-service.md) Den här tjänsten hjälper dig att bättre identifiera och särskilja Microsoft 365-nätverkstrafik, vilket gör det enklare för dig att utvärdera, konfigurera och hålla dig aktuell med de senaste ändringarna.
 
-Du kan använda PowerShell, python eller andra språk för att ta reda på ändringar av slut punkter över tiden och konfigurera dina PAC-filer och nätverks enheter för Edge.
+Du kan använda PowerShell, Python eller andra språk för att fastställa ändringar av slutpunkter över tid och konfigurera PAC-filer och edge-nätverksenheter.
 
-Den grundläggande processen är:
+Så här gör du:
 
-1. Använd Office 365 IP Address and URL web service och konfigurations mekanismen för att konfigurera dina PAC-filer och nätverks enheter med den aktuella uppsättningen av Microsoft 365-slutpunkter.
-2. Kör en daglig återkommande för att kontrol lera ändringar av slut punkterna eller Använd en meddelande metod.
-3. När ändringar identifieras kan du återskapa och distribuera PAC-filen för klient datorer och göra ändringarna på dina nätverks enheter.
+1. Använd IP-adress- och URL-webbtjänsten för Office 365 och valfri konfigurationsmekanism för att konfigurera PAC-filer och nätverksenheter med den aktuella uppsättningen Microsoft 365-slutpunkter.
+2. Kör ett dagligt återkommande för att söka efter ändringar i slutpunkterna eller använda en aviseringsmetod.
+3. När ändringar upptäcks, återskapas och distribueras PAC-filen på nytt för klientdatorer och gör ändringarna på dina nätverksenheter.
 
-Mer information finns i [Office 365 IP Address and URL Web Service](../enterprise/microsoft-365-ip-web-service.md).
+Mer information finns i [Office 365 IP-adress och URL-webbtjänst.](../enterprise/microsoft-365-ip-web-service.md)
 
 ## <a name="results-of-step-2"></a>Resultat av steg 2
 
-För din Microsoft 365-klient med optimalt nätverk har du bestämt:
+För din Microsoft 365-klientorganisation med optimala nätverk har du fastställt:
 
-- Hur du optimerar nätverks prestanda för lokala användare genom att lägga till Internet anslutningar till alla filial kontor och eliminera nätverks hairpins.
-- Implementera automatisk lista över betrodda slut punkter för klientbaserade PAC-filer och nätverks enheter och-tjänster, inklusive pågående uppdateringar (mest passande för företags nätverk).
-- Så här kan du få åtkomst till fjärranslutna kollegor till lokala resurser.
-- Använda nätverks insikter
-- Så här distribuerar du Office 365 CDN.
+- Optimera nätverksprestanda för lokala användare genom att lägga till Internetanslutningar till alla filialkontor och ta bort nätverkshårsnålar.
+- Så här implementerar du automatiska betrodda slutpunktslistor för dina klientbaserade PAC-filer och dina nätverksenheter och -tjänster, inklusive pågående uppdateringar (passar bäst för företagsnätverk).
+- Hur du ger distansarbetare tillgång till lokala resurser.
+- Så här använder du Nätverksinsikter
+- Distribuera Office 365 CDN.
 
-Här är ett exempel på en företags organisation och dess innehavare med optimala nätverksfunktioner.
+Här är ett exempel på en stor verksamhet och dess klientorganisation med optimala nätverksfunktioner.
 
-![Exempel på en klient organisation med optimalt nätverk](../media/tenant-management-overview/tenant-management-tenant-build-step2.png)
+![Exempel på en klientorganisation med optimala nätverk](../media/tenant-management-overview/tenant-management-tenant-build-step2.png)
 
-[Visa en större version av bilden](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-management-overview/tenant-management-tenant-build-step2.png)
+[Visa en större version av den här bilden](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-management-overview/tenant-management-tenant-build-step2.png)
 
-I den här bilden har innehavaren för företags organisationen:
+I den här illustrationen har klientorganisationen för den här företagsorganisationen:
 
-- Lokal Internet åtkomst för varje filial kontor med en SDWAN-enhet som vidarebefordrar betrodd Microsoft 365-trafik till en lokal front dörr.
-- Inga nätverks hairpins.
-- Centrala Office-säkerhetsfunktioner och-nätenheter som vidarebefordrar Microsoft 365-tillförlitliga trafik till en lokal front dörr.
+- Lokal internetåtkomst för varje filial med en SDWAN-enhet som vidarebefordrar betrodd Microsoft 365-trafik till en lokal dörr.
+- Inga hårnålsnätverk.
+- Centrala office-säkerhet och proxy-edge-enheter som vidarebefordrar Microsoft 365-betrodd trafik till en lokal dörr.
 
-## <a name="ongoing-maintenance-for-optimal-networking"></a>Kontinuerligt underhåll för optimala nätverk
+## <a name="ongoing-maintenance-for-optimal-networking"></a>Löpande underhåll för optimala nätverk
 
-Kontinuerligt måste du kanske:
+Du kan kontinuerligt behöva:
 
-- Uppdatera dina gräns enheter och distribuerade PAC-filer för ändringar i slut punkter eller kontrol lera att din automatiserade process fungerar korrekt.
-- Hantera dina till gångar i Office 365 CDN.
-- Uppdatera delnings konfigurationen för delade tunnlar på dina VPN-klienter för ändringar i slut punkter.
+- Uppdatera dina edge-enheter och distribuerade PAC-filer för ändringar i slutpunkter eller kontrollera att din automatiserade process fungerar som den ska.
+- Hantera dina tillgångar i Office 365 CDN.
+- Uppdatera konfigurationen för delade tunnlar i dina VPN-klienter för ändringar i slutpunkter.
 
 ## <a name="next-step"></a>Nästa steg
 
-[![Steg 3. Synkronisera dina identiteter och påtvinga säkra inloggningar](../media/tenant-management-overview/tenant-management-step-grid-identity.png)](tenant-management-identity.md)
+[![Steg 3. Synkronisera dina identiteter och tillämpa säkra inloggningar](../media/tenant-management-overview/tenant-management-step-grid-identity.png)](tenant-management-identity.md)
 
-Fortsätt med [identiteten](tenant-management-identity.md) för att synkronisera dina lokala konton och grupper och påtvinga säkra användar inloggningar.
+Fortsätt med [identitet](tenant-management-identity.md) för att synkronisera dina lokala konton och grupper och se till att du använder säkra inloggningar.

@@ -1,5 +1,5 @@
 ---
-title: Steg 4. Migrering för Microsoft 365 för företags innehavare
+title: Steg 4. Migrering av Microsoft 365 för företag-klientorganisation
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,91 +11,93 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- tenant-management
+- m365solution-scenario
 ms.custom:
 - Ent_Solutions
-description: Migrera dina Windows-enheter, Office-klientprogram och Office-servrar för dina Microsoft 365-klient organisationer.
-ms.openlocfilehash: 3230f7e1087b573691f04b9335a15b4ad6d20b65
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+description: Migrera dina Windows-enheter, Office-klientappar och Office-servrar för Microsoft 365-klientorganisationen.
+ms.openlocfilehash: 85f1c0d927b881c4d1526ce538ae54f5954a0664
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908754"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406366"
 ---
-# <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>Steg 4. Migrering för Microsoft 365 för företags innehavare
+# <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>Steg 4. Migrering av Microsoft 365 för företag-klientorganisation
 
-De flesta företags organisationer har en heterogen miljö som inkluderar flera versioner av operativ system, klient program vara och serverprogram vara. Microsoft 365 för Enterprise innehåller de säkraste versionerna av huvud komponenterna i din IT-infrastruktur. Det inkluderar också produktivitets funktioner som är avsedda att utnyttja moln teknologier.
+De flesta företagsorganisationer har en heterogen miljö som omfattar flera versioner av operativsystem, klientprogramvara och serverprogramvara. Microsoft 365 för företag innehåller de säkraste versionerna av de viktigaste komponenterna i IT-infrastrukturen. Den innehåller även produktivitetsfunktioner som är utformade för att dra nytta av molntekniker.
 
-Om du vill maximera företags värdet för Microsoft 365 för Enterprise-integrerad produkt serie kan du börja planera och implementera en strategi för att migrera dessa utgåvor:
+Om du vill maximera affärsvärdet för Microsoft 365 för företag-integrerade produktpaket börjar du planera och implementera en strategi för att migrera dessa versioner:
 
 | Från | Till |
 |:-------|:-----|
-| Windows 7 och Windows 8,1 | Windows 10 Enterprise |
-| Office-klientprodukter installerade på din arbets tagares enheter |  Microsoft 365 Apps för företag |
-| Office Server-produkter installerade på lokala servrar | Deras motsvarande molnbaserade tjänster i Microsoft 365 |
+| Windows 7 och Windows 8.1 | Windows 10 Enterprise |
+| Office-klientprodukter installerade på användarens enheter |  Microsoft 365 Apps för företag |
+| Office-serverprodukter installerade på lokala servrar | Motsvarande molnbaserade tjänster i Microsoft 365 |
 |  |  |
 
 ## <a name="migrating-to-windows-10"></a>Migrera till Windows 10
 
-Alla Microsoft 365 för företags licenser inkluderar en licens för Windows 10 Enterprise. Om du vill migrera dina enheter som kör Windows 7 eller Windows 8,1 kan du göra en uppgradering på plats. Support upphörde för Windows 7 den *14 januari 2020*. 
+Alla Microsoft 365 för företag-licenser innehåller en licens för Windows 10 Enterprise. Om du vill migrera dina enheter som kör Windows 7 eller Windows 8.1 kan du göra en uppgradering på plats. Supporten för Windows 7 *upphörde 14 januari 2020.* 
 
-Ytterligare metoder för att installera Windows 10 Enterprise efter en uppgradering på plats finns i [Windows 10: distributions scenarier](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). Du kan också [planera för distribution av Windows 10](https://aka.ms/planforwin10deployment) på egen hand.
+Fler metoder för installation av Windows 10 Enterprise utöver en på plats-uppgradering finns i windows [10-distributionsscenarier.](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios) Du kan också [planera för distribution av Windows 10](https://aka.ms/planforwin10deployment) på egen hand.
 
 ## <a name="migrating-to-microsoft-365-apps-for-enterprise"></a>Migrera till Microsoft 365-appar för företag
 
-Microsoft 365 för Enterprise innehåller Microsoft 365-appar för företag, en version av Office-klientprodukter (Word, PowerPoint, Excel och Outlook) som installeras och uppdateras från Microsoft Cloud. Mer information finns i [om Microsoft 365-appar för företag](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
+Microsoft 365 för företag innehåller Microsoft 365-appar för företag, en version av Office-klientprodukterna (Word, PowerPoint, Excel och Outlook) som installeras och uppdateras från Microsoft-molnet. Mer information finns i Om [Microsoft 365-appar för företag.](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)
 
-I stället för att hålla datorerna aktuella för Office 2019 eller äldre versioner gör du så här:
+I stället för att hålla datorerna aktuella för Office 2019 eller äldre versioner gör du följande:
 
 1. Skaffa och tilldela en Microsoft 365-licens för dina användare.
-2. Avinstallera Office 2013 eller Office 2016 på sina datorer.
-3. Installera Microsoft 365-appar för företag, antingen individuellt eller under en IT-installation. Mer information finns i [distributions guide för Microsoft 365-appar](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
+2. Avinstallera Office 2013 eller Office 2016 på deras datorer.
+3. Installera Microsoft 365-program för företag, antingen enskilt eller vid en IT-utrullning. Mer information finns i [distributionsguiden för Microsoft 365-program.](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-Microsoft 365-appar för Enterprise installerar både säkerhets uppdateringar och nya funktioner uppdateringar automatiskt och kan utnyttja molnbaserade tjänster i Microsoft 365 för ökad säkerhet och produktivitet.
+Microsoft 365 Apps för företag installerar både säkerhetsuppdateringar och nya funktionsuppdateringar automatiskt och kan dra nytta av molnbaserade tjänster i Microsoft 365 för bättre säkerhet och produktivitet.
 
 ## <a name="migrating-on-premises-servers-and-data-to-microsoft-365"></a>Migrera lokala servrar och data till Microsoft 365
 
-Microsoft 365 för Enterprise innehåller molnbaserade versioner av Office Server-tjänster som använder vissa av de verktyg som lokala versioner av Office Server-program, till exempel webbläsare och Outlook-klienten. Dessa molnbaserade tjänster uppdateras automatiskt för säkerhets-och nya funktioner. Efter migrering kan din IT-avdelning Spara den tid det tar att underhålla och uppdatera lokala servrar.
+Microsoft 365 for enterprise innehåller molnbaserade versioner av Office servertjänster som använder vissa av de verktyg som finns i lokala versioner av Office Server-programvara, till exempel webbläsare och Outlook-klienten. De här molnbaserade tjänsterna uppdateras automatiskt för säkerhet och nya funktioner. Efter migreringen kan IT-avdelningen spara den tid det tar att underhålla och uppdatera lokala servrar.
 
-Använd följande resurser för information om hur du migrerar användare och data för specifika Microsoft 365-arbets belastningar:
+Använd följande resurser för information om hur du migrerar användare och data för specifika Microsoft 365-arbetsbelastningar:
 
-- [Flytta post lådor från lokal Exchange-Server till Exchange Online](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes)
+- [Flytta postlådor från en lokal Exchange Server till Exchange Online](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes)
 - [Migrera SharePoint-data från SharePoint Server till SharePoint Online](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)
 - [Migrera Skype för företag – Online till Microsoft Teams](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype)
 
 ## <a name="transition-your-entire-organization"></a>En övergång för hela organisationen
 
-För att få en bättre bild av hur du flyttar hela organisationen till produkterna och tjänsterna i Microsoft 365 för företag kan du hämta denna över gångs affisch:
+För att få en bättre bild av hur du flyttar över hela organisationen till produkter och tjänster i Microsoft 365 för företag kan du ladda ned den här övergångsaffischen:
 
-[![Bild som visar över gången till Microsoft 365-affisch.](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
+[![Bild som visar affischen Övergång till Microsoft 365.](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
-Med den här affischen på två sidor kan du snabbt inventera din befintliga infrastruktur. Använd den för att få vägledning för att flytta till en produkt eller tjänst i Microsoft 365 för företag. Det visar Windows-och Office-produkter och andra infrastruktur-och säkerhets element som enhets hantering, identitets-och hot skydd samt informations skydd och efterlevnad.
+Med den här affischen på två sidor kan du snabbt inventera din befintliga infrastruktur. Använd den för att få vägledning för att flytta över till en produkt eller tjänst i Microsoft 365 för företag. Den visar Windows- och Office-produkter och andra infrastruktur- och säkerhetselement, till exempel enhetshantering, identitets- och hotskydd samt informationsskydd och efterlevnad.
 
 ## <a name="results-of-step-4"></a>Resultat i steg 4
 
-Om du vill migrera din Microsoft 365-klient kan du bestämma:
+För migrering av Microsoft 365-klientorganisationen har du fastställt:
 
-- Vilka enheter som kör Windows 7 eller Windows 8,1 och abonnemanget för att uppdatera dem till Windows 10 Enterprise.
-- Vilka enheter som kör Office-klientprogram och abonnemanget för att uppdatera dem till Microsoft 365-appar för företag.
-- Vilka lokala Office Server-tjänster som bör migreras till deras Microsoft 365-motsvarighet och för att migrera dem och deras data.
+- Vilka enheter som kör Windows 7 eller Windows 8.1 och planerar att uppdatera dem till Windows 10 Enterprise.
+- Vilka enheter som kör Office-klientapparna och planerar att uppdatera dem till Microsoft 365-program för företag.
+- Vilka lokala Office-servertjänster ska migreras till sina Microsoft 365-motsvarigheter och planera för att migrera dem och deras data.
 
-Här är ett exempel på en klient organisation med en slutförd migrering av lokala servrar.
+Här är ett exempel på en klientorganisation med slutförd migrering av lokala servrar.
 
-![Exempel på en klient organisation med fullständig migrering av lokala servrar](../media/tenant-management-overview/tenant-management-tenant-build-step4.png)
+![Exempel på en klientorganisation med slutförd migrering av lokala servrar](../media/tenant-management-overview/tenant-management-tenant-build-step4.png)
 
-I den här bilden har organisationen:
+I den här illustrationen har organisationen:
 
-- Migrerade sina lokala Exchange Server-postlådor till Exchange Online.
-- Migrerade dess lokala SharePoint Server-webbplatser och data till SharePoint i Microsoft 365.
+- Migrerade postlådorna lokalt Exchange Server till Exchange Online.
+- Migrerade sina lokala SharePoint Server-webbplatser och data till SharePoint i Microsoft 365.
 
-## <a name="ongoing-maintenance-for-migration"></a>Löpande underhåll för migrering
+## <a name="ongoing-maintenance-for-migration"></a>Pågående underhåll för migrering
 
-Kontinuerligt måste du kanske:
+Du kan kontinuerligt behöva:
 
-- Beroende på tillståndet för din Exchange-postmigrering fortsätter du att rulla över gången till Exchange Online till din organisation.
-- Beroende på tillståndet för den lokala SharePoint-webbplatsens migrering fortsätter du att rulla över gången till SharePoint i Microsoft 365 till din organisation.
+- Beroende på statusen för din Exchange-postlådemigrering fortsätter du övergången till Exchange Online till din organisation.
+- Beroende på statusen för din lokala migrering av SharePoint-webbplats fortsätter du övergången till SharePoint i Microsoft 365 till din organisation.
 
 ## <a name="next-step"></a>Nästa steg
 
-[![Steg 5. Distribuera enhets-och program hantering](../media/tenant-management-overview/tenant-management-step-grid-device-mgmt.png)](tenant-management-device-management.md)
+[![Steg 5. Distribuera enhet- och programhantering](../media/tenant-management-overview/tenant-management-step-grid-device-mgmt.png)](tenant-management-device-management.md)
 
-Fortsätt med [enhet och program hantering](tenant-management-device-management.md) för att distribuera enheter och program hantering.
+Fortsätt med [enhet- och programhantering för](tenant-management-device-management.md) att distribuera enhet- och programhantering.

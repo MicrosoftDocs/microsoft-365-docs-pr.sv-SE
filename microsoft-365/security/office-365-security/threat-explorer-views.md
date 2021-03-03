@@ -1,5 +1,5 @@
 ---
-title: Vyer i HotUtforskaren och identifieringar i realtid
+title: Vyer i Hotutforskaren och identifieringar i realtid
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -13,18 +13,18 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Läs mer om hur du använder Hotutforskaren och rapporten om identifiering i realtid för att undersöka och hantera hot i Säkerhets- & Efterlevnadscenter.
+description: Lär dig hur du använder Threat Explorer och rapporten om identifieringar i realtid för att undersöka och hantera hot i Säkerhets- & Efterlevnadscenter.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: aef3f7fe69e5cbd1d70b7aee3284f0c5dc6416df
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: b00b78432a34ec982208586f2fe19c1588354293
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290291"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406486"
 ---
-# <a name="views-in-threat-explorer-and-real-time-detections"></a>Vyer i HotUtforskaren och identifieringar i realtid
+# <a name="views-in-threat-explorer-and-real-time-detections"></a>Vyer i Hotutforskaren och identifieringar i realtid
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "50290291"
 
 ![Hotutforskaren](../../media/ThreatExplorerFirstOpened.png)
 
-[Threat Explorer](threat-explorer.md) (och rapporten om identifiering i realtid) är ett kraftfullt verktyg i närheten av realtid som hjälper grupper i säkerhetsoperationer att undersöka och reagera på hot i Säkerhets- & Efterlevnadscenter. Utforskaren (och rapporten om identifieringar i realtid) visar information om misstänkt skadlig programvara och phish i e-post och filer i Office 365, samt andra säkerhetshot och risker för din organisation.
+[Threat Explorer](threat-explorer.md) (och rapporten om identifiering i realtid) är ett kraftfullt verktyg i närheten av realtid som hjälper grupper i säkerhetsoperationer att undersöka och reagera på hot i Säkerhets- & Efterlevnadscenter. Utforskaren (och rapporten om identifiering i realtid) visar information om misstänkt skadlig programvara och phish i e-post och filer i Office 365, samt andra säkerhetshot och risker för din organisation.
 
 - Om du har [Microsoft Defender för Office 365](office-365-atp.md) abonnemang 2 har du Utforskaren.
 - Om du har Microsoft Defender för Office 365 abonnemang 1 kan du göra identifieringar i realtid.
@@ -48,10 +48,13 @@ När du först öppnar Utforskaren (eller rapporten över identifieringar i real
 |---|---|---|
 |Utvärderingsversion av Microsoft Defender för Office 365 P1|Identifiering i realtid|7|
 |Microsoft Defender för Office 365 P1 betalad|Identifiering i realtid|30|
-|Betaltestning av Microsoft Defender för Office 365 P1 för Office 365 P2|Hotutforskaren|7|
+|Utvärderingsversion av Microsoft Defender för Office 365 P1-betaltestning av Defender för Office 365 P2|Hotutforskaren|7|
 |Utvärderingsversion av Microsoft Defender för Office 365 P2|Hotutforskaren|7|
 |Microsoft Defender för Office 365 P2 betalad|Hotutforskaren|30|
 |
+
+> [!NOTE]
+> Vi kommer snart att utöka datalagrings- och sökbegränsningen i Utforskaren (och realtidsidentifiering) för utvärderingsklienter från 7 till 30 dagar. Den här ändringen spåras som en del av översiktsobjektet no. 70544 och håller på att distribueras.
 
 Använd **Visa-menyn** om du vill ändra vilken information som visas. Verktygstips hjälper dig att avgöra vilken vy du ska använda.
 
@@ -115,12 +118,12 @@ Markera ett objekt i listan om du vill visa ytterligare information.
 
 ## <a name="email--all-email"></a>E-> all e-post
 
-Om du vill visa den här rapporten väljer du Visa **e-post** för all \> **e-post i** \> **Utforskaren.** I de här vyerna visas en vy över e-postaktivitet, inklusive e-post som identifieras som skadlig på grund av nätfiske eller skadlig kod, samt all icke-skadlig e-post (vanlig e-post, skräppost och massutskick).
+Om du vill visa den här rapporten väljer du Visa **e-post** för all \> **e-post** \> **i Utforskaren.** I de här vyerna visas en vy över e-postaktivitet, inklusive e-post som identifieras som skadlig på grund av nätfiske eller skadlig kod, samt all icke-skadlig e-post (vanlig e-post, skräppost och massutskick).
 
 > [!NOTE]
 > Om du får ett felmeddelande där det står För mycket **data** kan du lägga till ett filter och, om det behövs, begränsa det datumintervall som du visar.
 
-Om du vill använda ett filter **väljer du Avsändare,** markerar ett objekt i listan och klickar sedan på knappen Uppdatera. I exemplet använde vi **identifieringsteknik som** ett filter (det finns flera tillgängliga alternativ). Visa information efter avsändare, avsändarens domän, mottagare, ämne, filnamn på bifogad fil, skadlig kodfamilj, skyddsstatus (åtgärder som vidtas av dina skyddsfunktioner och principer i Office 365), identifieringsteknik (hur den skadlig programvara identifierades) och mycket mer.
+Om du vill använda ett filter **väljer** du Avsändare, markerar ett objekt i listan och klickar sedan på knappen Uppdatera. I exemplet använde vi **identifieringsteknik som** ett filter (det finns flera tillgängliga alternativ). Visa information efter avsändare, avsändarens domän, mottagare, ämne, filnamn på bifogad fil, skadlig programvara, skyddsstatus (åtgärder som vidtas av dina skyddsfunktioner och principer i Office 365), identifieringsteknik (hur skadlig programvara identifierades) och mycket mer.
 
 ![Visa data om identifierad e-post med identifieringsteknik](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png)
 
@@ -158,7 +161,7 @@ Möjligheten att filtrera med ett klick och navigera till specifika detaljer kan
 
 ## <a name="queries-and-filters"></a>Frågor och filter
 
-Utforskaren (liksom rapporten över identifieringar i realtid) har flera kraftfulla filter- och frågefunktioner som gör att du kan öka detalj detaljinformationen, till exempel de mest riktade användarna, de mest populära familjerna av skadlig programvara, identifieringsteknik med mera. Varje typ av rapport erbjuder en mängd olika sätt att visa och utforska data.
+Utforskaren (liksom rapporten över identifieringar i realtid) har flera kraftfulla filter- och frågefunktioner som gör att du kan öka detaljgranskningen, till exempel de mest riktade användarna, de mest populära programfamiljerna, identifieringsteknik med mera. Varje typ av rapport erbjuder en mängd olika sätt att visa och utforska data.
 
 > [!IMPORTANT]
 > Använd inte jokertecken, till exempel en asterisk eller ett frågetecken, i frågefältet för Utforskaren (eller identifieringar i realtid). När du söker i **ämnesfältet** efter e-postmeddelanden utför Utforskaren (eller identifieringar i realtid) delvis matchning och ger resultat som liknar en sökning med jokertecken.

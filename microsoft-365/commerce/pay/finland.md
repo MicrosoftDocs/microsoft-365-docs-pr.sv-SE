@@ -1,8 +1,8 @@
 ---
-title: Betalnings information för Finland
-author: cmcatee-MSFT
+title: Betalningsinformation för Finland
 f1.keywords:
 - NOCSH
+author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 audience: Admin
@@ -11,26 +11,35 @@ ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Lär dig hur du skickar betalningen för din prenumeration.
+description: Läs om var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ce84cb49d0b120b50fba27980e9b061ac81f6290
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: cdcc7508ffb0974a5c6ef5105c09521af5f62116
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647657"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406962"
 ---
-# <a name="payment-information-for-finland"></a>Betalnings information för Finland
+# <a name="payment-information-for-finland"></a>Betalningsinformation för Finland
 
-[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
-
-Betala endast i EUR och ange faktura numret som referens vid betalning.
+[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
-**Bank:** Citibank, London  
-**SWIFT-kod/BIC:** CITIGB2L  
-**IBAN:** GB31CITI18500812207591  
-**Sorterings kod:** 185008  
-**Konto nummer:** 12207591  
-**Konto namn:** MICROSOFT  
+**Betala i euro och ange fakturanumret som referens vid betalning.**
+
+Använd den här bankinformationen om du har en faktura som faktureras av **Microsoft Ireland Operations Limited:**
+
+Bank: Citibank, London\
+SWIFT-kod: CITIGB2L\
+IBAN-kod: GB31CITI18500812207591\
+Kontonummer: 12207591\
+Kontonamn: MICROSOFT
+
+Använd den här bankinformationen om du har en faktura debiterad av **Microsoft Oy** för order och förbrukning från och med den 1 mars 2021:
+
+Bank: Citibank Europe plc\
+SWIFT-kod: CITIIE2X\
+IBAN-kod: IE97CITI99005170000127\
+Kontonummer: 70000127\
+Kontonamn: MICROSOFT

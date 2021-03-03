@@ -1,8 +1,8 @@
 ---
-title: Betalnings information för nya Zeeland
-author: cmcatee-MSFT
+title: Betalningsinformation för Nya Zeeland
 f1.keywords:
 - NOCSH
+author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 audience: Admin
@@ -11,28 +11,38 @@ ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Lär dig hur du skickar betalningen för din prenumeration.
+description: Läs om var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 26cf6aa0302b2ff6d05750c5cea21cb1f04cda64
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bf43c61b37050fee3d3819f1ec44b1c39596811f
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649049"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406870"
 ---
-# <a name="payment-information-for-new-zealand"></a>Betalnings information för nya Zeeland
+# <a name="payment-information-for-new-zealand"></a>Betalningsinformation för Nya Zeeland
 
-[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
-
-Betala endast i NZD och ange faktura numret som referens vid betalning.
+[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
-**Bank:** Citibank  
-**Bank kod:** 31  
-**Filial nummer:** 2840  
-**SWIFT-kod:** CITINZ2X  
-**Suffix (tresiffriga):** 004    
-**Suffix (tvåsiffrigt):** 04  
-**Konto nummer:** 0026181  
-**Konto namn:** MICROSOFT REGIONAL SALES CORP  
+**Betala i NZD och ange fakturanumret som referens vid betalning.**
+
+Använd den här bankinformationen om du har en faktura som faktureras av **MICROSOFT REGIONAL SALES PTE LTD:**
+
+Bank: Citibank\
+Bankkod: 31\
+Branchkod: 2840\
+SWIFT-kod: CITINZ2X\
+Suffix (3 siffror): 004\
+Suffix (2 siffror): 04\
+Kontonummer: 0026181\
+Kontonamn: MICROSOFT
+
+Använd den här bankinformationen om du har en faktura debiterad av **Microsoft New Zealand Limited** för order och förbrukning från och med den 1 mars 2021:
+
+Bank: Citibank, N.A. New Zealand Branch\
+SWIFT-kod: CTINZ2X\
+BSB: 312825\
+Kontonummer: 0008655083\
+Kontonamn: MICROSOFT

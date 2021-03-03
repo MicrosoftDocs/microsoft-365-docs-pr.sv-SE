@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan läsa om hur de konfigurerar anslutningsfiltrering i Exchange Online Protection (EOP) för att tillåta eller blockera e-postmeddelanden från e-postservrar.
+description: Administratörer kan läsa om hur de konfigurerar anslutningsfiltrering i Exchange Online Protection (EOP) för att tillåta eller blockera e-post från e-postservrar.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c6ec8b4adcdda692ee561f7d50bacf0511642269
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: bdc8033996c41238bb1defe831eb8e8c7650bb44
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290051"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406096"
 ---
 # <a name="configure-connection-filtering"></a>Konfigurera anslutningsfiltrering
 
@@ -38,11 +38,11 @@ ms.locfileid: "50290051"
 
 Om du är Microsoft 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection-kund (EOP) utan Exchange Online-postlådor använder du anslutningsfiltrering i EOP (speciellt standardprincip för anslutningsfilter) för att identifiera bra eller dåliga käll-e-postservrar med hjälp av IP-adresser. Huvudkomponenterna i standardprincipen för anslutningsfilter är:
 
-- **Lista över tillåtna** IP-adresser: Hoppa över skräppostfiltrering för alla inkommande meddelanden från käll-e-postservrarna som du anger efter IP-adress eller IP-adressintervall. Scenarier där skräppostfiltrering fortfarande kan inträffa på meddelanden från dessa källor finns i scenarier där meddelanden från källor i listan över tillåtna [IP-adresser](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) fortfarande filtreras senare i den här artikeln. Mer information om hur listan över tillåtna IP-adresser ska passa din övergripande strategi för betrodda avsändare finns i Skapa listor över [betrodda avsändare i EOP.](create-safe-sender-lists-in-office-365.md)
+- **Lista över tillåtna** IP-adresser: Hoppa över skräppostfiltrering för alla inkommande meddelanden från käll-e-postservrarna som du anger efter IP-adress eller IP-adressintervall. Scenarier där skräppostfiltrering fortfarande kan inträffa på meddelanden från dessa källor finns i scenarier där meddelanden från källor i listan över tillåtna [IP-adresser](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) fortfarande filtreras senare i den här artikeln. Mer information om hur listan över tillåtna IP-adresser ska passa din övergripande strategi för betrodda avsändare finns i Skapa [listor över betrodda avsändare i EOP.](create-safe-sender-lists-in-office-365.md)
 
 - **IP-blockeringslista:** Blockera alla inkommande meddelanden från käll-e-postservrarna som du anger efter IP-adress eller IP-adressintervall. Inkommande meddelanden avvisas, markeras inte som skräppost och ingen ytterligare filtrering sker. Mer information om hur IP-blockeringslistan ska passa in i din övergripande strategi för spärrade avsändare finns i Skapa listor med [spärrade avsändare i EOP.](create-block-sender-lists-in-office-365.md)
 
-- **Lista över** säkra : *Listan över säkra är* en dynamisk lista över tillåtna i Microsoft-datacentret som inte kräver någon kundkonfiguration. Microsoft identifierar dessa betrodda e-postkällor från prenumerationer till olika listor från tredje part. Du aktiverar eller inaktiverar användningen av listan över säkra fel. kan du inte konfigurera käll-e-postservrarna i listan över säkra. Skräppostfiltrering hoppas över på inkommande meddelanden från e-postservrarna på listan över säkra meddelanden.
+- **Listan Över säkra**: Listan *över säkra är* en dynamisk lista över tillåtna i Microsoft-datacentret som inte kräver någon kundkonfiguration. Microsoft identifierar dessa betrodda e-postkällor från prenumerationer till olika listor från tredje part. Du aktiverar eller inaktiverar användningen av listan över säkra fel. kan du inte konfigurera käll-e-postservrarna i listan över säkra e-postmeddelanden. Skräppostfiltrering hoppas över på inkommande meddelanden från e-postservrarna på listan över säkra meddelanden.
 
 I det här avsnittet beskrivs hur du konfigurerar standardprincipen för anslutningsfilter i Säkerhets- & och efterlevnadscenter eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med postlådor i Exchange Online; fristående EOP PowerShell för organisationer utan Exchange Online-postlådor). Mer information om hur EOP använder anslutningsfiltrering är en del av organisationens övergripande inställningar för skydd mot skräppost finns i [Skydd mot skräppost.](anti-spam-protection.md)
 
@@ -55,18 +55,18 @@ I det här avsnittet beskrivs hur du konfigurerar standardprincipen för anslutn
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
+- Du måste ha tilldelats behörigheter i **Exchange Online innan** du kan utföra procedurerna i den här artikeln:
   - Om du vill ändra standardprincipen för anslutningsfilter måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.**
   - För skrivskyddade åtkomst till standardprincipen för anslutningsfilter måste du vara medlem i rollgrupperna **Global Reader** eller **Säkerhetsläsare.**
 
-  Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
+  Mer information finns i [Behörigheter i Exchange Online.](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
 
   **Anmärkningar**:
 
-  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
+  - Om du lägger till användare till motsvarande Azure Active Directory-roll i  administrationscentret för Microsoft 365 får användarna de behörigheter och behörigheter som krävs för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
   - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
-- Du hittar IP-adresserna för käll-IP-adresserna för de e-postservrar (avsändare) som du vill tillåta eller blockera genom att kontrollera huvudfältet för anslutande IP **(CIP)** i meddelandehuvudet. Information om hur du visar ett meddelandehuvud i olika [e-postklienter finns i Visa rubriker för internetmeddelanden i Outlook.](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)
+- Du hittar IP-adresserna för käll-IP-adresserna för de e-postservrar (avsändare) som du vill tillåta eller blockera genom att kontrollera huvudfältet för anslutande IP **(CIP)** i meddelandehuvudet. Information om hur du visar ett meddelandehuvud i olika [e-postklienter finns i Visa rubriker för Internet-meddelanden i Outlook.](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)
 
 - Listan över tillåtna IP-adresser har företräde framför ip-blockeringslistan (en adress i båda listorna blockeras inte).
 
@@ -76,13 +76,13 @@ I det här avsnittet beskrivs hur du konfigurerar standardprincipen för anslutn
 
 1. I Säkerhets- & och gå till **Policy för** hantering \> **av hot** mot \> **skräppost.**
 
-2. På **inställningssidan Skydd mot skräppost expanderar** du **anslutningsfilterprincipen** genom att klicka ![ på ikonen Expandera och sedan på Redigera ](../../media/scc-expand-icon.png) **princip.**
+2. På **inställningssidan Skydd mot skräppost expanderar** du **anslutningsfilterprincipen** genom att klicka på ![ ikonen Expandera och sedan på Redigera ](../../media/scc-expand-icon.png) **princip.**
 
 3. I den **utfällmappen** Standard som visas konfigurerar du någon av följande inställningar:
 
    - **Beskrivning:** Ange valfri beskrivande text.
 
-   - **Listan över tillåtna** IP:er: Klicka **på Redigera.** Ange en IPV4-adress i rutan Adress eller  adressintervall i den utfällningslista för tillåtna **IP-adresser** som visas med följande syntax:
+   - **Listan över tillåtna** IP:er: Klicka **på Redigera.** Ange **en** IPV4-adress i rutan Adress eller  adressintervall i den utfäll plats som visas i listan över tillåtna IP-adresser med följande syntax:
 
      - Enskild IP: Till exempel 192.168.1.1.
 
@@ -92,7 +92,7 @@ I det här avsnittet beskrivs hur du konfigurerar standardprincipen för anslutn
 
      Om du vill lägga till IP-adressen eller adressintervallet klickar du **på Lägg till** ![ ](../../media/ITPro-EAC-AddIcon.png) ikon. Om du vill ta bort en post markerar du posten i Tillåten **IP-adress och** klickar sedan på **Ta** ![ ](../../media/scc-remove-icon.png) bort. Klicka på **Spara** när du är klar.
 
-   - **IP-blockeringslista:** Klicka på **Redigera.** Ange en **enda** IP-adress, IP-intervall eller CIDR-IP i  rutan Adress eller adressintervall enligt  beskrivningen i inställningen tillåtna IP-adresser i den utfällningslista som visas.
+   - **IP-blockeringslista:** Klicka på **Redigera.** Ange en **enda** IP-adress, IP-intervall eller CIDR-IP i  rutan Adress eller adressintervall enligt beskrivningen ovan i inställningen tillåtna IP-adresser i den utfällningslista  som visas.
 
      Om du vill lägga till IP-adressen eller adressintervallet klickar du **på Lägg till** ![ ](../../media/ITPro-EAC-AddIcon.png) ikon. Om du vill ta bort en post markerar du posten i **Blockerad IP-adress och** klickar sedan på **Ta** ![ ](../../media/scc-remove-icon.png) bort. Klicka på **Spara** när du är klar.
 
@@ -150,7 +150,7 @@ Detaljerad information om syntax och parametrar finns [i Set-HostedConnectionFil
 
 Kontrollera att du har ändrat standardprincipen för anslutningsfilter genom att göra något av följande:
 
-- I Säkerhets- & Efterlevnadscenter går du till Threat **Management** \> **Policy** \> **Anti-Spam** och klickar på listrutan bredvid \> Anslutningsfilterprincip **(alltid PÅ)** och kontrollerar inställningarna.
+- I Säkerhets- & Efterlevnadscenter går du till Threat **Management** \> **Policy** \> **Anti-Spam** och klickar på listrutan bredvid Anslutningsfilterprincip \> **(alltid PÅ)** och kontrollerar inställningarna.
 
 - Kör följande kommando i Exchange Online PowerShell eller fristående EOP PowerShell och kontrollera inställningarna:
 
@@ -184,7 +184,7 @@ Käll-e-postservern 192.168.1.25 skickar till exempel e-post från domänerna co
 
 1. Lägg till 192.168.1.25 i listan över tillåtna IP-adresser.
 
-2. Konfigurera en e-postflödesregel med minst följande inställningar:
+2. Konfigurera en e-postflödesregel med följande inställningar (minst:
 
    - Regelvillkor:  Använd den här regeln om avsändarens IP-adress finns i något av dessa intervall eller exakt matchar \>  \>  \> 192.168.1.25 (samma IP-adress eller adressintervall som du lade till i listan över tillåtna IP-adresser i föregående steg).
 
@@ -196,7 +196,7 @@ Käll-e-postservern 192.168.1.25 skickar till exempel e-post från domänerna co
 
 Meddelanden från en e-postserver i listan över tillåtna IP-adresser omfattas fortfarande av skräppostfiltrering i följande scenarier:
 
-- En IP-adress i listan över tillåtna IP-adresser är också konfigurerad  på en lokal, IP-baserad inkommande koppling i valfri klientorganisation i Microsoft 365 (vi kallar detta klientorganisation **A),** och klientorganisation a och EOP-servern som först stöter på meddelandet råkar båda finnas i samma *Active* Directory-skog i Microsoft-datacenter. I det här scenariot läggs **IPV:CAL**  till i [meddelandets](anti-spam-message-headers.md) rubriker för skydd mot skräppost (som anger att meddelandet kringgår skräppostfiltrering), men meddelandet omfattas fortfarande av skräppostfiltrering.
+- En IP-adress i listan över tillåtna IP-adresser är också konfigurerad  på en lokal, IP-baserad inkommande koppling i valfri klientorganisation i Microsoft 365 (vi kallar detta klientorganisation **A),** och klientorganisation A och EOP-servern som först stöter på meddelandet båda råkar finnas i samma *Active* Directory-skog i Microsoft-datacenter. I det här scenariot läggs **IPV:CAL**  till i [meddelandets](anti-spam-message-headers.md) rubriker för skydd mot skräppost (som anger att meddelandet kringgår skräppostfiltrering), men meddelandet omfattas fortfarande av skräppostfiltrering.
 
 - Klientorganisationen som innehåller IP-listan över tillåtna adresser och EOP-servern som först stöter på meddelandet kan båda finnas i olika *Active* Directory-skogar i Microsoft-datacenter. I det här **scenariot läggs IPV:CAL** *inte* till i meddelanderubrikerna, så meddelandet omfattas fortfarande av skräppostfiltrering.
 

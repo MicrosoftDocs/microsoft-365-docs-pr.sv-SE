@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b335ba90479c670d918226caa18f80ee5535f0a1
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 2bfc02203000f448cf11bf75bf00f6045225a821
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925067"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407378"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Förstå det avancerade sökschemat
 
@@ -48,7 +48,7 @@ När du skapar frågor kan du använda den inbyggda schemareferensen för att sn
 - **Exempelfråga**– exempelfrågor som innehåller hur tabellen kan användas.
 
 ### <a name="access-the-schema-reference"></a>Komma åt schemareferensen
-Om du snabbt vill komma åt schemareferensen väljer du **referensåtgärden** Visa bredvid tabellnamnet i schemarepresentationen. Du kan också välja **schemareferens om** du vill söka efter en tabell.   
+Om du snabbt vill komma åt schemareferensen **väljer** du åtgärden Visa referens bredvid tabellnamnet i schemarepresentationen. Du kan också välja **schemareferens om** du vill söka efter en tabell.   
 
 ![Bild som visar hur du kommer åt schemareferensen i portalen ](../../media/mtp-ah/ah-reference.png) 
 
@@ -73,7 +73,8 @@ I följande referens visas alla tabeller i schemat. Varje tabellnamn länkar til
 | **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | Skapa och ändra registerposter |
 | **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)** | Hot & utvärderingshändelser för sårbarhetshantering, som anger status för olika säkerhetskonfigurationer på enheter |
 | **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | Kunskapsbas av olika säkerhetskonfigurationer som används av & sårbarhetshantering för att utvärdera enheter; inkluderar mappningar till olika standarder och riktvärden  |
-| **[DeviceTvmSoftwareInventoryVulnerabilities](advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md)** | Inventering av programvara på enheter och alla kända svagheter i dessa programvaruprodukter |
+| **[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)** | Inventering av programvara installerad på enheter, inklusive deras versionsinformation och status för slutet av supporten |
+| **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | Sårbarheter i programvaran som finns på enheter och listan över tillgängliga säkerhetsuppdateringar som är tillgängliga för varje sårbarhet |
 | **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | Kunskapsbas för offentligt säkerhetsproblem, inklusive om sårbarhetskod är allmänt tillgänglig |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Information om bifogade filer i e-postmeddelanden |
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | E-posthändelser i Microsoft 365, inklusive e-postleverans och blockeringshändelser |

@@ -16,12 +16,12 @@ ms.collection:
 description: Läs mer om säkra dokument i Microsoft 365 E5 eller Microsoft 365 E5 Säkerhet.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a3f4ed3535c7e53774b9b567b50f7c06e99cef9d
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 75dfa9e5687a4c4b561067190e7ce338074b2f66
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288591"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407426"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Säkra dokument i Microsoft 365 E5
 
@@ -43,15 +43,15 @@ Säkra dokument är en funktion i Microsoft 365 E5 eller Microsoft 365 E5-säker
 
 - Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
+- Du måste ha tilldelats behörigheter i **Exchange Online innan** du kan utföra procedurerna i den här artikeln:
   - Om du vill konfigurera inställningarna för säkra dokument måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.**
   - För skrivskyddade åtkomst till inställningarna för säkra dokument måste du vara medlem i rollgrupperna **Global Reader** **eller** Säkerhetsläsare.
 
-  Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
+  Mer information finns i [Behörigheter i Exchange Online.](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
 
   > [!NOTE]
   >
-  > - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
+  > - Om du lägger till användare till motsvarande Azure Active Directory-roll i  administrationscentret för Microsoft 365 får användarna de behörigheter och behörigheter som krävs för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
   >
   > - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
@@ -61,7 +61,7 @@ Om du vill skydda dig skickas filer till Microsoft [Defender för slutpunktsmoln
 
 Filer som skickas av säkra dokument sparas inte i Defender utöver den tid som krävs för analys (vanligtvis mindre än 24 timmar).
 
-## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Använda Säkerhets- & center för att konfigurera säkra dokument
+## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Använd Säkerhets- & center för att konfigurera säkra dokument
 
 1. Gå till  ATP & för hanteringspolicy för säkerhet och säkerhet i Säkerhets- och efterlevnadscenter och klicka sedan \>  \> på **Globala inställningar.**
 
@@ -96,9 +96,9 @@ Detaljerad information om syntax och parametrar finns [i Set-AtpPolicyForO365.](
 
 ### <a name="how-do-i-know-this-worked"></a>Hur vet jag att det fungerade?
 
-Kontrollera att du har aktiverat och konfigurerat Säkra dokument genom att göra något av följande:
+Verifiera att du har aktiverat och konfigurerat Säkra dokument genom att göra något av följande:
 
-- I Säkerhets- &  \>  \> **Efterlevnadscenter** går du till **ATP**(Hanteringspolicy för hothanteringspolicy) – säkra bifogade filer, klickar på Globala inställningar och kontrollerar aktivera Säkra dokument för **Office-klienter** och tillåter användare att klicka igenom Skyddad vy även om säkra dokument identifierar filen som skadlig.
+- I Säkerhets- &  \>  \> **Efterlevnadscenter** går du till **ATP** för hanteringspolicy för säkra bifogade filer, klickar på Globala inställningar och kontrollerar aktivera Säkra dokument för **Office-klienter** och tillåter att andra klickar genom Skyddad vy även om säkra dokument identifierar filen som skadlig kod.
 
 - Kör följande kommando i Exchange Online PowerShell och verifiera egenskapsvärdena:
 
@@ -106,7 +106,7 @@ Kontrollera att du har aktiverat och konfigurerat Säkra dokument genom att gör
   Get-AtpPolicyForO365 | Format-List *SafeDocs*
   ```
 
-- Följande filer är tillgängliga för att testa skyddet mot säkra dokument. Dessa dokument liknar filen EICAR.TXT för att testa antivirus- och antiviruslösningar. Filerna är inte skadliga, men de utlöser skydd för säkra dokument.
+- Följande filer är tillgängliga för att testa skyddet mot säkra dokument. De här dokumenten liknar den EICAR.TXT filen för att testa antivirus- och antivirusprogram-lösningar. Filerna är inte skadliga, men de utlöser skydd för säkra dokument.
 
   - [SafeDocsDemo.docx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.docx)
   - [SafeDocsDemo.pptx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.pptx)

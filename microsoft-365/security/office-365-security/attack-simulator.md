@@ -20,12 +20,12 @@ ms.custom:
 description: Administratörer kan lära sig hur de kan använda Attack Program för att köra simulerade nätfiske- och lösenordsattacker i sina organisationer med Microsoft 365 E5 eller Microsoft Defender för Office 365 Abonnemang 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1e877900698d033cb99154b31e32fa04ff7d1010
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 85b376701ffa0c567fd66aa629371e9f69b354e9
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289587"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407484"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>AttackTat In Microsoft Defender för Office 365
 
@@ -43,11 +43,13 @@ Om din organisation har Microsoft Defender för Office 365 abonnemang 2, som inn
 
 - Gå till <https://protection.office.com/> för att öppna Säkerhets- och efterlevnadscenter. Attackattack är tillgänglig vid **hothanteringsattack.** \>  Gå direkt till attack nu, <https://protection.office.com/attacksimulator> öppna.
 
-- Mer information om tillgängligheten för AttackTrafik för olika Microsoft 365-prenumerationer finns i [tjänstbeskrivningen för Microsoft Defender för Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+- Mer information om tillgängligheten för Attack Defender för olika Microsoft 365-prenumerationer finns i [tjänstbeskrivningen för Microsoft Defender för Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
 - Du måste vara medlem i rollgrupperna **Organisationshantering** **eller Säkerhetsadministratör.** Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
 - Ditt konto måste konfigureras för multifaktorautentisering (MFA) för att skapa och hantera kampanjer i Attack Den här enheten. Instruktioner finns i Konfigurera [multifaktorautentisering.](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)
+
+- Attack Det fungerar bara för molnbaserade postlådor.
 
 - Nätfiskekampanjer samlar in och bearbetar händelser i 30 dagar. Historiska kampanjdata är tillgängliga i upp till 90 dagar efter att du startade kampanjen.
 
@@ -57,7 +59,7 @@ Om din organisation har Microsoft Defender för Office 365 abonnemang 2, som inn
 
 ## <a name="spear-phishing-campaigns"></a>Nätfiskekampanjer
 
-*Nätfiske* är en vanlig term för e-postattacker som försöker stjäla känslig information i meddelanden som verkar vara från legitima eller betrodda avsändare. *Nätfiske* är en riktad nätfiskeattack som använder fokuserat och anpassat innehåll som är specifikt anpassat efter de riktade mottagarna (vanligtvis efterkontroll på mottagarna av attacken).
+*Nätfiske* är en vanlig term för e-postattacker som försöker stjäla känslig information i meddelanden som verkar komma från legitima eller betrodda avsändare. *Nätfiske* är en riktad nätfiskeattack som använder fokuserat och anpassat innehåll som är specifikt anpassat efter de riktade mottagarna (vanligtvis efterkontroll på mottagarna av attacken).
 
 Två olika typer av nätfiskekampanjer är tillgängliga i Attack Det finns två olika typer av nätfiskekampanjer:
 
@@ -80,7 +82,7 @@ En viktig del av alla nätfiskekampanjer är utseendet och känslan i e-postmedd
 
 - **Använd en inbyggd e-postmall:** Två inbyggda mallar är tillgängliga: Gåkampanj **och** **löneuppdatering.** Du kan ytterligare anpassa vissa, alla eller inga av e-postegenskaperna från mallen när du skapar och startar kampanjen.
 
-- **Skapa en återanvändningsbar e-postmall:** När du har skapat och sparat e-postmallen kan du använda den igen i kommande nätfiskekampanjer. Du kan ytterligare anpassa vissa, alla eller inga av e-postegenskaperna från mallen när du skapar och startar kampanjen.
+- **Skapa en återanvändbar e-postmall: När** du har skapat och sparat e-postmallen kan du använda den igen i kommande nätfiskekampanjer. Du kan ytterligare anpassa vissa, alla eller inga av e-postegenskaperna från mallen när du skapar och startar kampanjen.
 
 - **Skapa e-postmeddelandet i guiden:** Du kan skapa e-postmeddelandet direkt i guiden när du skapar och startar nätfiskekampanjen.
 
@@ -90,7 +92,7 @@ Om du ska använda någon av de inbyggda mallarna eller skapa e-postmeddelandet 
 
 1. I Säkerhets- & Säkerhets- och efterlevnadscenter går du **till Attack** för \> **hothantering.**
 
-2. På sidan **Simulera attacker,** i antingen avsnitten **Nätfiske (autentiseringsinloggning)** eller **Nätfiske (bifogad fil),** klickar du **på Attackinformation.**
+2. På sidan **Simulera attacker klickar** du på Attackinformation i något av avsnitten Nätfiske **(information** om nätfiske) eller Nätfiske **(bifogad** **fil).**
 
    Det spelar ingen roll var du skapar mallen. De tillgängliga alternativen i mallen är desamma för båda typerna av nätfiskeattacker.
 
@@ -123,7 +125,7 @@ Om du ska använda någon av de inbyggda mallarna eller skapa e-postmeddelandet 
      >
      > En url-ryktestjänst kan identifiera en eller flera av dessa URL:er som osäkra. Kontrollera om URL:en är tillgänglig i dina webbläsare som stöds innan du använder URL:en i en nätfiskekampanj.
 
-   - **Anpassad webbadress till startsidan:** Ange en valfri landningssida där användarna tas om de klickar på nätfiskelänken och anger sina autentiseringsuppgifter. Den här länken ersätter standardlandningssidan. Om du till exempel har intern informationsutbildning kan du ange url:en här.
+   - **Anpassad webbadress till startsidan:** Ange en valfri landningssida dit användarna tas om de klickar på nätfiskelänken och anger sina autentiseringsuppgifter. Den här länken ersätter standardlandningssidan. Om du till exempel har intern informationsutbildning kan du ange url:en här.
 
    - **Kategori:** Den här inställningen används inte för närvarande (allt du anger ignoreras).
 
@@ -131,9 +133,9 @@ Om du ska använda någon av de inbyggda mallarna eller skapa e-postmeddelandet 
 
    Klicka på Nästa när du är **klar.**
 
-6. Skapa **meddelandetexten i** e-postmeddelandet i steget Skriv e-postmeddelande. Du kan använda fliken **E-post** (en RTF-redigerare) eller **fliken** Källa (raw HTML-kod).
+6. Skapa **meddelandetexten i** e-postmeddelandet i steget Skriv e-postmeddelande. Du kan använda fliken **E-post** (en RTF-redigerare) eller **fliken** Källa (obearbetad HTML-kod).
 
-   HTML-formateringen kan vara så enkel eller komplex som du vill ha den. Du kan infoga bilder och text för att göra meddelandet bättre i mottagarens e-postklient.
+   HTML-formateringen kan vara så enkel eller komplex som du vill ha den. Du kan infoga bilder och text för att göra meddelandet bättre att läsa i mottagarens e-postklient.
 
    - `${username}` infogar mottagarens namn.
 
@@ -205,17 +207,17 @@ Om du ska använda någon av de inbyggda mallarna eller skapa e-postmeddelandet 
 
    - **Typ av** bifogad fil: Den här inställningen är endast tillgänglig i **kampanjer för nätfiske (bifogad** fil). Klicka på listrutan och **välj. DOCX** eller **. PDF** från listan.
 
-   - **Namn på** bifogad fil: Den här inställningen är endast tillgänglig i kampanjer för **nätfiske (bifogad** fil). Ange ett filnamn för den bifogade filen .docx eller .pdf.
+   - **Namn på** bifogad fil: Den här inställningen är endast tillgänglig i **kampanjer för nätfiske (bifogad** fil). Ange ett filnamn för den bifogade filen .docx eller .pdf.
 
-   - **Anpassad webbadress till startsidan:** Ange en valfri landningssida där användarna tas om de klickar på nätfiskelänken och anger sina autentiseringsuppgifter. Den här länken ersätter standardlandningssidan. Om du till exempel har intern informationsutbildning kan du ange url:en här.
+   - **Anpassad webbadress till startsidan:** Ange en valfri landningssida dit användarna tas om de klickar på nätfiskelänken och anger sina autentiseringsuppgifter. Den här länken ersätter standardlandningssidan. Om du till exempel har intern informationsutbildning kan du ange url:en här.
 
    - **Ämne:** **Ämnesfältet** i e-postmeddelandet.
 
    Klicka på Nästa när du är **klar.**
 
-6. Skapa **meddelandetexten i** e-postmeddelandet i steget Skriv e-postmeddelande. Om du valde en mall i **Start-steget** är meddelandetexten redan konfigurerad, men du kan anpassa den. Du kan använda fliken **E-post** (en RTF-redigerare) eller **fliken** Källa (raw HTML-kod).
+6. Skapa **meddelandetexten i** e-postmeddelandet i steget Skriv e-postmeddelande. Om du valde en mall i **Start-steget** är meddelandetexten redan konfigurerad, men du kan anpassa den. Du kan använda fliken **E-post** (en RTF-redigerare) eller **fliken** Källa (obearbetad HTML-kod).
 
-   HTML-formateringen kan vara så enkel eller komplex som du vill ha den. Du kan infoga bilder och text för att göra meddelandet bättre i mottagarens e-postklient.
+   HTML-formateringen kan vara så enkel eller komplex som du vill ha den. Du kan infoga bilder och text för att göra meddelandet bättre att läsa i mottagarens e-postklient.
 
    - `${username}` infogar mottagarens namn.
 
@@ -253,11 +255,11 @@ I AttackTat finns det två olika typer av lösenordsattackkampanjer som du kan a
 
 2. Gör något **av följande** val på sidan Simulera attacker baserat på vilken typ av kampanj du vill skapa:
 
-   - Klicka på Starta attack eller klicka på  Starta attackinformation i avsnittet Råstyrt tvinga lösenord (Ordlisteattack).   \> 
+   - Klicka på Starta attack eller klicka på  Starta attackinformation i avsnittet Råstyrt tvinga lösenord  (Ordlisteattack).  \> 
 
-   - i avsnittet **Lösenordsattack klickar** du på **Starta** attack eller klickar på Starta **attackinformation.** \> 
+   - i avsnittet **Lösenordsattack klickar** du på Starta attack **eller klickar** på **Starta** \> attackinformation. 
 
-3. Guiden **Konfigurera lösenordsattack** startar i en ny utfällklar. Ange ett **unikt** visningsnamn för kampanjen i steget Start och klicka sedan på **Nästa.**
+3. Guiden **Konfigurera lösenordsattack** startar i en ny utfäll kant. Ange ett **unikt** visningsnamn för kampanjen i steget Start och klicka sedan på **Nästa.**
 
 4. Gör något **av följande** i steget Målanvändare:
 
@@ -271,7 +273,7 @@ I AttackTat finns det två olika typer av lösenordsattackkampanjer som du kan a
 
    - **Råstyrt lösenord (ordlisteattack)**: Gör något av följande:
 
-     - **Ange lösenord manuellt:** Skriv ett lösenord **i rutan** Tryck på Retur för att lägga till ett lösenord och tryck sedan på RETUR. Upprepa det här steget så många gånger det behövs.
+     - **Ange lösenord manuellt:** Skriv ett lösenord **i rutan Tryck** på Retur för att lägga till ett lösenord och tryck sedan på RETUR. Upprepa det här steget så många gånger det behövs.
 
      - **Ladda upp lösenord från en ordlistefil:** Klicka på Ladda upp om du vill importera en befintlig textfil som innehåller ett lösenord på varje rad och en tom sista rad.  Textfilen måste vara 10 MB eller mindre och får inte innehålla fler än 3 0000 lösenord.
 
@@ -311,9 +313,9 @@ Följande information finns på sidan **Attackinformation** för varje kampanj:
 
 - **Genomsnittligt** klick: Summan av hur lång tid det tog att klicka på länken dividerat med antalet användare som klickade på länken.
 
-- **Klicka på Framgång:** En procentandel som beräknas utifrån (antalet användare som klickade på länken) **/Totalt antal riktade användare.**
+- **Klicka på Framgång:** En procentandel som beräknas av (antalet användare som klickade på länken) **/Totalt antal riktade användare.**
 
-- **Snabbaste** autentiseringsuppgifterna: Hur lång tid det tog den första användaren att ange sina autentiseringsuppgifter efter att du startat kampanjen.
+- **Snabbast:** Hur lång tid det tog för den första användaren att ange sina autentiseringsuppgifter efter att du startat kampanjen.
 
 - **Genomsnittligt** antal autentiseringsuppgifter: Summan av hur lång tid det tog för alla att ange sina autentiseringsuppgifter dividerat med antalet användare som angav deras autentiseringsuppgifter.
 

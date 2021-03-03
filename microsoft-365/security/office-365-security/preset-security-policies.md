@@ -12,15 +12,15 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan lära sig hur de tillämpar standard- och strikt-principinställningar i skyddsfunktioner i Exchange Online Protection (EOP) och Microsoft Defender för Office 365
+description: Administratörer kan lära sig hur de använder standard- och strikt-principinställningarna i skyddsfunktioner i Exchange Online Protection (EOP) och Microsoft Defender för Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e8f254f2a1ea2dcf1a4b51594a5c340e91cb3f15
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: b49b980d217d60865029c8e64ad02ed722f6b86e
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290781"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407462"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Förinställda säkerhetsprinciper i EOP och Microsoft Defender för Office 365
 
@@ -49,7 +49,7 @@ Prioritetsordningen är dessutom viktig om flera förinställda säkerhetsprinci
 
 En profil avgör skyddsnivån. Följande profiler är tillgängliga:
 
-- **Standardskydd:** En baslinjeskyddsprofil som är lämplig för de flesta användare.
+- **Standardskydd:** En profil för baslinjeskydd som är lämplig för de flesta användare.
 - **Strikt skydd:** En mer aggressiva skyddsprofil för valda användare (högvärdesmålen eller prioritetsanvändare).
 
 Du använder regler med villkor och undantag som avgör vilka profiler som profilerna är eller inte ska tillämpas på.
@@ -64,7 +64,7 @@ De tillgängliga villkoren och undantagen är:
 
 ### <a name="policies-in-preset-security-policies"></a>Principer i förinställda säkerhetsprinciper
 
-Förinställda säkerhetsprinciper använder motsvarande principer från de olika skyddsfunktionerna i EOP och Microsoft Defender för Office 365. Dessa principer skapas när _du_ tilldelar **standardskyddet eller** **Strikt skydd förinställda** säkerhetsprinciper till användare. Du kan inte ändra de här principerna.
+Förinställda säkerhetsprinciper använder motsvarande principer från de olika skyddsfunktionerna i EOP och Microsoft Defender för Office 365. Dessa principer skapas när _du_ tilldelar de **förinställda säkerhetsprinciperna** **Standardskydd** eller Strikt skydd till användare. Du kan inte ändra de här principerna.
 
 - **Principer för Exchange Online Protection (EOP):** Detta omfattar Microsoft 365-organisationer med Exchange Online-postlådor och fristående EOP-organisationer utan Exchange Online-postlådor:
 
@@ -76,7 +76,7 @@ Förinställda säkerhetsprinciper använder motsvarande principer från de olik
 
   - Principer för skydd mot nätfiske i Microsoft Defender för Office 365 med namnet **Standardförvald** säkerhetsprincip och **Strikt förinställd** säkerhetsprincip, som omfattar:
 
-    - Samma inställningar [för förfalskning som](set-up-anti-phishing-policies.md#spoof-settings) finns i EOP:s principer för skydd mot nätfiske.
+    - Samma inställningar [för förfalskning som](set-up-anti-phishing-policies.md#spoof-settings) finns i EOP-principer för skydd mot nätfiske.
     - [Inställningar för personifiering](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Avancerade tröskelvärden för nätfiske](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
@@ -109,17 +109,17 @@ Med andra ord åsidosätter  inställningarna för principen Strikt skydd instä
 
 - Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
+- Du måste ha tilldelats behörigheter i **Exchange Online innan** du kan utföra procedurerna i den här artikeln:
   - Om du vill konfigurera förinställda säkerhetsprinciper måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.**
   - För skrivskyddade åtkomst till förinställda säkerhetsprinciper måste du vara medlem i **rollgruppen Global Reader.**
 
-  Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
+  Mer information finns i [Behörigheter i Exchange Online.](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
 
-  **Obs!** Om du lägger till användare till motsvarande Azure Active Directory-roll i administrationscentret för Microsoft  365 får användarna de behörigheter som krävs i säkerhets- och efterlevnadscentret för & och behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
+  **Obs!** Om du lägger till användare till motsvarande Azure Active Directory-roll  i administrationscentret för Microsoft 365 får användarna de behörigheter som krävs för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Använd Säkerhets- & center för att tilldela förinställda säkerhetsprinciper till användare
 
-1. Gå till förvalda säkerhetsprinciper för & Säkerhets- **och** \>  \> **efterlevnadscenter.**
+1. Gå till förinställda säkerhetsprinciper för hothantering i Säkerhets- **och** & \>  \> Center.
 
 2. Klicka **på Redigera** under **Standardskydd eller** Strikt **skydd.**
 
@@ -133,7 +133,7 @@ Med andra ord åsidosätter  inställningarna för principen Strikt skydd instä
 
       Du kan bara använda ett villkor en gång, men du kan ange flera värden för villkoret. Flera värden med samma villkor använder ELLER-logik (till exempel _\<recipient1\>_ _\<recipient2\>_ eller).
 
-   2. Villkoret som du har valt visas i ett skuggat avsnitt. I det avsnittet klickar du i **någon av dessa** rutor. Om du väntar en stund visas en lista så att du kan välja ett värde. Du kan också börja skriva ett värde för att filtrera listan och välja ett värde. Upprepa det här steget så många gånger det behövs. Om du vill ta bort ett enskilt värde klickar **du på** ![ ta ](../../media/scc-remove-icon.png) bort-ikonen för värdet. Om du vill ta bort hela villkoret klickar du **på ikonen** Ta bort ![ i ](../../media/scc-remove-icon.png) villkoret.
+   2. Villkoret som du har valt visas i ett skuggat avsnitt. I det avsnittet klickar du i **någon av dessa** rutor. Om du väntar en stund visas en lista så att du kan välja ett värde. Du kan också börja skriva ett värde för att filtrera listan och välja ett värde. Upprepa det här steget så många gånger det behövs. Om du vill ta bort ett enskilt värde klickar **du på** ![ ta ](../../media/scc-remove-icon.png) bort-ikonen för värdet. Om du vill ta bort hela villkoret klickar du **på ta** ![ ](../../media/scc-remove-icon.png) bort-ikonen för villkoret.
 
    3. Om du vill lägga till ytterligare ett villkor **klickar du på Lägg** till ett villkor och väljer bland övriga villkor. Olika villkor använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_ ).
 
@@ -159,8 +159,8 @@ Om du vill  **inaktivera säkerhetsprinciperna Standard** eller Strikt skydd sam
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Hur vet jag att de här procedurerna fungerade?
 
-Om du vill verifiera att du  har tilldelat en användare **säkerhetsprincipen Standardskydd** eller Strikt skydd använder du en skyddsinställning  där standardvärdet skiljer sig från standardskyddsinställningen, som skiljer sig från inställningen Strikt skydd. 
+Kontrollera att du har tilldelat en  användare **säkerhetsprincipen Standardskydd** eller Strikt skydd till en användare genom att använda en skyddsinställning där standardvärdet skiljer sig från standardskyddsinställningen, vilket är annorlunda än inställningen **Strikt** skydd. 
 
 För e-post som identifierats som skräppost (inte högförtroende för skräppost) kontrollerar du till exempel att meddelandet levereras till mappen Skräppost för användare med **standardskydd** och sätts i karantän för användare med **strikt** skydd.
 
-För massutskick kan du kontrollera att BCL-värdet 6 eller senare levererar meddelandet till mappen Skräppost för användare med **standardskydd,** och BCL-värdet 4 eller högre sätt meddelandet i karantän för användare med Strikt skydd. [](bulk-complaint-level-values.md) 
+För massutskick kan du kontrollera att BCL-värdet 6 eller senare levererar meddelandet till mappen Skräppost för användare med **standardskydd** och BCL-värdet 4 eller högre sätt meddelandet i karantän för användare med Strikt skydd. [](bulk-complaint-level-values.md) 

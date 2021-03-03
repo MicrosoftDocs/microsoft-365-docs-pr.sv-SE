@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 48d7e1a7497f9bc2a07a84b36fb07939d25609bf
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 8a91a55d9598b5e780474315ddf1f7019e593fed
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289155"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406168"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Hur du rapporterar falska positiva/negativa tal i automatiserad undersökning och svarsfunktioner
 
@@ -59,7 +59,7 @@ Om din organisation använder [Microsoft Defender](https://docs.microsoft.com/wi
 
 ## <a name="undo-a-remediation-action"></a>Ångra en åtgärdsåtgärd
 
-Om en åtgärdsåtgärd har vidtagits för ett e-postmeddelande, en e-postbilaga eller en URL,och objektet egentligen inte är ett hot, kan säkerhetsåtgärdsteamet i de flesta fall ångra åtgärden och vidta åtgärder för att förhindra att meddelandet felaktigt är återkommande. Du kan antingen använda [Hotutforskaren](#undo-an-action-using-threat-explorer) eller [fliken Åtgärder för en undersökning](#undo-an-action-in-the-action-center) för att ångra en åtgärd.
+Om en åtgärdsåtgärd har vidtagits för ett e-postmeddelande, en e-postbilaga eller en URL,och objektet egentligen inte är ett hot, kan säkerhetsåtgärdsteamet i de flesta fall ångra åtgärden och vidta åtgärder för att förhindra att meddelandet felaktigt är återkommande. Du kan använda antingen [Hotutforskaren](#undo-an-action-using-threat-explorer) eller [fliken Åtgärder för en undersökning](#undo-an-action-in-the-action-center) för att ångra en åtgärd.
 
 > [!IMPORTANT]
 > Kontrollera att du har de behörigheter som behövs innan du försöker utföra följande uppgifter.
@@ -78,11 +78,11 @@ Med Threat Explorer kan ditt säkerhetsteam hitta ett e-postmeddelande som påve
 
 I Åtgärdscenter kan du se åtgärder som har vidtagits och eventuellt ångra åtgärden.
 
-1. Gå till Microsoft 365 säkerhetscenter ( [https://security.microsoft.com](https://security.microsoft.com) ).
-2. Välj Åtgärdscenter i **navigeringsfönstret.** 
+1. Gå till Microsoft 365 säkerhetscenter ( <https://security.microsoft.com> ).
+2. Välj Åtgärdscenter i **navigeringsfönstret.**
 3. Välj fliken **Historik** för att visa listan över slutförda åtgärder.
-4. Markera ett objekt. Det utfällfönster som visas. 
-5. Välj Ångra i det utfällade **fönstret.** (Det är bara åtgärder som kan ångras som har **knappen** Ångra.)
+4. Markera ett objekt. Det utfällfönster som visas.
+5. Välj Ångra i det utfällfönster **som visas.** (Det är bara åtgärder som kan ångras som har **knappen** Ångra.)
 
 ## <a name="see-also"></a>Se även
 

@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5934abb3afec3253da78c680735730b63ddb5701
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 2fd999c27598db6f17073cfe82e4c4f91ffb1667
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287359"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407210"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Vad är nytt i Microsoft Defender för Office 365
 
@@ -41,10 +41,16 @@ Den här artikeln innehåller nya funktioner i den senaste versionen av Microsof
 > [!TIP]
 > Har du inte Microsoft Defender för Office 365 ännu? [Kontakta försäljning för att starta en utvärderingsversion.](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
+## <a name="februarymarch-2021"></a>Februari/mars 2021 
+
+- Integrering av aviserings-ID (sökning med aviserings-ID Alert-Explorer navigering) i [sökupplevelser](threat-explorer.md)
+- Öka begränsningarna för export av poster från 9 990 till 200 000 i [upplevelser för fiske](threat-explorer.md)
+- Utöka lagringsgränsen för datalagring och sökning i Utforskaren (och identifiering i [realtid)](threat-explorer.md) för utvärderingsklienter från 7 (tidigare gräns) till 30 dagar med upplevelser för sökning
+
 ## <a name="december-2020"></a>December 2020
 
 - [Säker som standard i Office 365](secure-by-default.md)
-- Förbättringar av automatiserad undersökning: allmänna varningar för manuellt utlösta e-postundersökningar, behandla postlådeändringar som en separat enhetskategori, ta bort redundanta URL-blockeringsåtgärder och skapa utgående e-postkluster för användare som komprometterat undersökningar.
+- Förbättringar av automatiserad undersökning: allmänna varningar för manuellt utlösta e-postundersökningar, behandla postlådeändringar som en separat enhetskategori, ta bort redundanta URL-blockeringsåtgärder och skapa utgående e-postkluster för användare komprometterade undersökningar.
 
 ## <a name="november-2020"></a>November 2020
 
@@ -53,13 +59,13 @@ Den här artikeln innehåller nya funktioner i den senaste versionen av Microsof
 ## <a name="septemberoctober-2020"></a>September/oktober 2020
 
 - [Kontrollera principer med hjälp av Configuration Analyzer](configuration-analyzer-for-security-policies.md)
-- Utökade funktioner i Hotutforskaren, inklusive populära riktade användare, transportregler och kopplingar (Defender för Office 365-information i [Threat Explorer](threat-explorer.md) (e-post [tilläts/blockerades](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) av klientorganisations-/användarprincip) (Defender för Office 365-abonnemang 2)
+- Utökade funktioner i Hotutforskaren, inklusive de viktigaste riktade användarna, transportregler och kopplingar (Defender för Office 365-information i [Threat Explorer](threat-explorer.md) (e-post [tillåts/blockerades](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) av klientorganisations-/användarprincip) (Defender för Office 365-abonnemang 2)
 - Surfa på URL-hot i [Threat Explorer](threat-explorer.md#threats-in-urls) (skadlig kod, nätt, skräppost eller inget) (Defender för Office 365 Abonnemang 2)
 - [Förbättringar av Hunting Experience Threat Explorer](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) med uppdateringar kring hot, ytterligare åtgärder, leveransplatser och uppdaterad tidslinjevy (Defender för Office 365 abonnemang 2)
 
 ## <a name="julyaugust-2020"></a>Juli/augusti 2020
 
-- [Förbättringar av upplevelsen för den här upplevelsen](threat-explorer.md#improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
+- [Förbättringar av upplevelsen för den här upplevelsen](threat-explorer.md#improvements-to-threat-hunting-experience) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
 - [Använd enkelt rekommenderade inställningar med förinställda säkerhetsprinciper](preset-security-policies.md)
 
 ## <a name="marchapril-2020"></a>Mars/april 2020

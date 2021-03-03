@@ -15,16 +15,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Använd identifieringar i Utforskaren och realtid i &amp; Säkerhetsefterlevnadscenter för att undersöka och reagera på hot effektivt.
+description: Använd identifieringar av Utforskaren och realtid i &amp; Säkerhetsefterlevnadscenter för att undersöka och reagera på hot effektivt.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: daa7b4014d1302743578d79c2e1e0e1d2d5ac61f
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 614cd7c256fe8af5fd7474a2101f937b1ecfd0d3
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288903"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406414"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Hotutforskaren och identifieringar i realtid
 
@@ -52,7 +52,26 @@ Med den här rapporten kan du:
 - [Starta en automatiserad undersökning och svarsprocess från en vy i Utforskaren](#start-automated-investigation-and-response) (endast Defender för Office 365 abonnemang 2)
 - [Undersöka skadlig e-post med mera](#more-ways-to-use-explorer-and-real-time-detections)
 
-## <a name="improvements-to-threat-explorer-and-real-time-detections"></a>Förbättringar av Hotutforskaren och identifieringar i realtid
+## <a name="improvements-to-threat-hunting-experience"></a>Förbättringar av Hot-upplevelsen
+
+### <a name="introduction-of-alert-id-for-mdo-alerts-within-explorerreal-time-detections-preview"></a>Introduktion till aviserings-ID för MDO-aviseringar i Utforskaren/identifieringar i realtid (förhandsversion)
+Om du i dag navigerar från en avisering till Hotutforskaren öppnas en filtrerad vy i Utforskaren, med vyn filtrerad med aviseringsprincip-ID (princip-ID som är ett unik identifierare för en aviseringsprincip).
+Vi gör den här integreringen mer relevant genom att introducera aviserings-ID (se ett exempel på aviserings-ID nedan) i Hotutforskaren och Identifiering av realtid så att du ser meddelanden som är relevanta för den specifika aviseringen samt antalet e-postmeddelanden. Du kan också se om ett meddelande var en del av en avisering och även navigera från meddelandet till den specifika aviseringen.  
+
+Aviserings-ID är tillgängligt i URL-adressen när du visar en enskild avisering. ett exempel som är `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`
+
+> [!div class="mx-imgBorder"]
+> ![Filtrera efter aviserings-ID](../../media/AlertID-Filter.png)
+
+> [!div class="mx-imgBorder"]
+> ![Aviserings-ID i den utfällna informationen](../../media/AlertID-DetailsFlyout.png)
+
+ 
+### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>Utöka lagringsgränsen för datalagring och sökning i Utforskaren (och identifiering i realtid) för utvärderingsklienter från 7 till 30 dagar (förhandsversion)  
+Som en del av den här ändringen kommer du att kunna söka efter och filtrera e-postdata i 30 dagar (en ökning från de föregående 7 dagarna) i Threat Explorer/realtidsidentifiering för både Defender för office P1- och P2-utvärderingsklienter. Det här påverkar inte produktionsklienter för både P1- och P2/E5-kunder som redan har 30 dagars datalagring och sökfunktioner. 
+
+### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>Uppdaterade begränsningar för export av poster för Threat Explorer (förhandsversion) 
+Som en del av den här uppdateringen ökas antalet rader för e-postposter som kan exporteras från Threat Explorer från 9990 till 200 000 poster. Den uppsättning kolumner som kan exporteras förblir oförändrad, men antalet rader från den aktuella gränsen ökar.
 
 ### <a name="tags-in-threat-explorer"></a>Taggar i Hotutforskaren
 
@@ -68,7 +87,7 @@ I Threat Explorer kan du se information om användartaggar i följande funktione
 Kolumnen **Taggar** i e-postrutnätet innehåller alla taggar som har tillämpats på avsändarens eller mottagarens postlådor. Som standard visas systemtaggar som prioritetskonton först.
 
 > [!div class="mx-imgBorder"]
-> ![Filtertaggar i rutnätsvyn för e-post](../../media/tags-grid.png)
+> ![Filtrera taggar i rutnätsvyn för e-post](../../media/tags-grid.png)
 
 #### <a name="filtering"></a>Filtrering
 
@@ -88,6 +107,9 @@ Informationen om enskilda taggar för avsändare och mottagare omfattar även ex
 
 Information om taggar visas också i url-klickningens utfällsida. Om du vill visa den går du till vyn Phish eller All e-post och **sedan fliken URL-adresser** **eller URL-klickningar.** Välj en utfällsida för en enskild URL om du vill visa mer information om klickningar för URL-adressen, inklusive taggar kopplade till den klickningen.
 
+
+### <a name="updated-timeline-view"></a>Uppdaterad tidslinjevy
+
 > [!div class="mx-imgBorder"]
 > ![URL-taggar](../../media/tags-urls.png)
 
@@ -95,11 +117,11 @@ Information om taggar visas också i url-klickningens utfällsida. Om du vill vi
 
 ### <a name="updated-threat-information-for-emails"></a>Uppdaterad information om hot för e-postmeddelanden
 
-Vi har fokuserat på förbättringar av plattform och datakvalitet för att öka dataprecisionen och konsekvensen för e-postposter. Förbättringarna är bland annat konsolidering av information om förleverans och efterleverans, till exempel åtgärder som utförs på ett e-postmeddelande som en del av ZAP-processen, i en enda post. Ytterligare information som skräppostutsåtanden, hot på entitetsnivå (till exempel vilken URL som var skadlig) och senaste leveransplatser ingår också.
+Vi har fokuserat på plattforms- och datakvalitetsförbättringar för att öka dataprecisionen och konsekvensen för e-postposter. Förbättringarna är bland annat konsolidering av information om förleverans och efterleverans, till exempel åtgärder som utförs på ett e-postmeddelande som en del av ZAP-processen, i en enda post. Ytterligare information som skräppostutsåtanden, hot på entitetsnivå (till exempel vilken URL som var skadlig) och senaste leveransplatser ingår också.
 
-Efter dessa uppdateringar visas en post för varje meddelande, oavsett vilka händelser efter leverans som påverkar meddelandet. Åtgärder kan omfatta ZAP, manuell åtgärd (vilket innebär administrativa åtgärder), dynamisk leverans och så vidare.
+Efter dessa uppdateringar visas en post för varje meddelande, oavsett vilka händelser efter leveransen som påverkar meddelandet. Åtgärder kan omfatta ZAP, manuell åtgärd (vilket innebär administrativa åtgärder), dynamisk leverans och så vidare.
 
-Förutom att visa skadlig programvara och nätfiskehot kan du se skräpposten som är kopplad till ett e-postmeddelande. I e-postmeddelandet ser du alla hot som är kopplade till e-postmeddelandet tillsammans med motsvarande identifieringstekniker. Ett e-postmeddelande kan innehålla noll, ett eller flera hot. Du ser de aktuella hoten i avsnittet Information i e-postmeddelandet.  För flera hot (till exempel skadlig  kod och nätfiske) visar det tekniska fältet Identifiering av hotmappningen, som är den identifieringsteknik som identifierade hoten.
+Förutom att visa skadlig programvara och nätfiskehot kan du se skräpposten som är kopplad till ett e-postmeddelande. I e-postmeddelandet ser du alla hot som är kopplade till e-postmeddelandet tillsammans med motsvarande identifieringsteknik. Ett e-postmeddelande kan innehålla noll, ett eller flera hot. Du ser de aktuella hoten i avsnittet Information i e-postmeddelandet.  För flera hot (till exempel skadlig  kod och nätfiske) visar det tekniska fältet Identifiering av hotmappningen, som är den identifieringsteknik som identifierade hoten.
 
 Uppsättningen identifieringstekniker innehåller nu nya identifieringsmetoder och teknik för identifiering av skräppost. Du kan använda samma uppsättning identifieringstekniker för att filtrera resultatet i olika e-postvyer (skadlig kod, phish, all e-post).
 
@@ -128,9 +150,9 @@ Tidslinjevyn identifierar alla leverans- och efterleveranshändelser. Den inneh�
 
 ### <a name="original-and-latest-delivery-location"></a>Ursprunglig och senaste leveransplats
 
-För närvarande surface vi leveransplats i e-postrutnätet och utfällfältet för e-post. Fältet **Leveransplats** får ett nytt namn **_på den ursprungliga leveransplatsen_*_. Och vi introducerar ett annat fält, _*_Senaste leveransplats._**
+För närvarande yta för leveransplats i rutnätet och den utfällna e-posten. Fältet **Leveransplats** får ett nytt namn **_på den ursprungliga leveransplatsen_*_. Och vi introducerar ett annat fält, _*_Senaste leveransplats._**
 
-**Den ursprungliga leveransplatsen** ger mer information om var ett e-postmeddelande levererades från början. **Senaste leveransplats** kan ange var ett e-postmeddelande landade efter systemåtgärder som *ZAP* eller administrativa åtgärder som *Flytta till borttagna objekt.* Senaste leveransplatsen är avsedd att meddela administratörerna meddelandets senast kända plats efter leverans eller eventuella system-/administratörsåtgärder. Den innehåller inga slutanvändaråtgärder för e-postmeddelandet. Om en användare till exempel tagit bort ett meddelande eller flyttat meddelandet till arkivering/pst uppdateras inte meddelandets leveransplats. Men om en systemåtgärd uppdaterade platsen (till exempel ZAP som resulterade i att ett e-postmeddelande flyttas till **karantän)** visades den senaste leveransplatsen som "karantän".
+**Den ursprungliga leveransplatsen** ger mer information om var ett e-postmeddelande levererades från början. **Senaste leveransplats** kan ange var ett e-postmeddelande landade efter systemåtgärder som *ZAP* eller administrativa åtgärder som *Flytta till borttagna objekt.* Senaste leveransplatsen är avsedd att meddela administratörerna meddelandets senast kända plats efter leverans eller eventuella system-/administratörsåtgärder. Den innehåller inga slutanvändaråtgärder för e-postmeddelandet. Om en användare till exempel tagit bort ett meddelande eller flyttat meddelandet till arkivering/pst uppdateras inte meddelandets leveransplats. Men om en systemåtgärd uppdaterade platsen (till exempel ZAP som resulterade i att ett e-postmeddelande flyttades till **karantän)** visades den senaste leveransplatsen som "karantän".
 
 > [!div class="mx-imgBorder"]
 > ![Uppdaterade leveransplatser](../../media/Updated_Delivery_Location.png)
@@ -140,7 +162,7 @@ För närvarande surface vi leveransplats i e-postrutnätet och utfällfältet f
 >
 > - Du kan se **Leveransplats** som  "Levererat" och Leveransplats som "okänd" om meddelandet levererades, men en regel för Inkorgen flyttade meddelandet till en standardmapp (till exempel Utkast eller Arkiv) i stället för till Inkorgen eller mappen Skräppost.
 >
-> - **Senaste leveransplats** kan vara okänd om en åtgärd för administratör/system (till exempel ZAP) försöktes, men meddelandet hittades inte. Vanligtvis händer åtgärden efter att användaren flyttat eller tagit bort meddelandet. Kontrollera i så fall kolumnen **Resultat/Detaljer** i tidslinjevyn. Leta efter uttrycket "Meddelandet har flyttats eller tagits bort av användaren".
+> - **Senaste leveransplats** kan vara okänd om en åtgärd för administratör/system (till exempel ZAP) försöktes, men meddelandet hittades inte. Vanligtvis händer åtgärden efter att användaren flyttat eller tagit bort meddelandet. I sådana fall kan du kontrollera **kolumnen Resultat/Detaljer** i tidslinjevyn. Leta efter uttrycket "Meddelandet har flyttats eller tagits bort av användaren".
 
 > [!div class="mx-imgBorder"]
 > ![Leveransplatser för tidslinjen](../../media/Updated_Timeline_Delivery_Location.png)
@@ -158,15 +180,15 @@ För närvarande surface vi leveransplats i e-postrutnätet och utfällfältet f
 
 > ![Ytterligare åtgärder i Utforskaren](../../media/Additional_Actions.png)
 
-### <a name="system-overrides"></a>System åsidosätter
+### <a name="system-overrides"></a>System åsidosättningar
 
-*Med system åsidosättningar* kan du göra undantag till den avsedda leveransplatsen för ett meddelande. Du åsidosätter leveransplatsen som tillhandahålls av systemet, baserat på hot och andra identifieringar som identifieras av filtreringsstacken. System åsidosättningar kan ställas in via klientorganisations- eller användarprincipen för att leverera meddelandet som föreslås av principen. Åsidosättningar kan identifiera oavsiktlig leverans av skadliga meddelanden på grund av luckor i konfigurationen, till exempel en för omfattande princip för betrodd avsändare som har angetts av en användare. Dessa åsidosättningsvärden kan vara:
+*Med system åsidosättningar* kan du göra undantag till den avsedda leveransplatsen för ett meddelande. Du åsidosätter leveransplatsen som tillhandahålls av systemet, baserat på hot och andra identifieringar som identifieras av filtreringsstacken. System åsidosättningar kan ställas in via klientorganisationens eller användarens princip för att leverera meddelandet som föreslås av principen. En åsidosättning kan identifiera oavsiktlig leverans av skadliga meddelanden på grund av luckor i konfigurationen, till exempel en för omfattande princip för Betrodd avsändare som har angetts av en användare. Dessa åsidosättningsvärden kan vara:
 
 - Tillåts av användarprincip: En användare skapar principer på postlådenivå för att tillåta domäner eller avsändare.
 - Blockeras av användarprincip: En användare skapar principer på e-postråddsnivå för att blockera domäner eller avsändare.
 - Tillåts i organisationens princip: Organisationens säkerhetsteam anger principer eller Exchange-e-postflödesregler (kallas även transportregler) för att tillåta avsändare och domäner för användare i organisationen. Det kan vara för en uppsättning användare eller för hela organisationen.
 - Blockeras av organisationens policy: Organisationens säkerhetsteam anger principer eller e-postflödesregler för att blockera avsändare, domäner, meddelandespråk eller käll-IP:er för användare i organisationen. Det här kan tillämpas på en uppsättning användare eller för hela organisationen.
-- Filnamnstillägg som blockeras av organisationsprincipen: En organisations säkerhetsgrupp blockerar ett filnamnstillägg via inställningarna för policyn mot skadlig programvara. Värdena visas nu i e-postinformation som hjälp vid undersökningar. Sekopsteam kan också använda rtf-filtreringsfunktioner för att filtrera på blockerade filnamnstillägg.
+- Filnamnstillägg som blockeras av organisationens policy: En organisations säkerhetsgrupp blockerar ett filnamnstillägg via inställningarna för policyn mot skadlig programvara. Värdena visas nu i e-postinformation som hjälp vid undersökningar. Sekopsteam kan också använda rtf-filtreringsfunktioner för att filtrera på blockerade filnamnstillägg.
 
 [![System åsidosättningar i Utforskaren](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
 
@@ -177,13 +199,13 @@ För närvarande surface vi leveransplats i e-postrutnätet och utfällfältet f
 
 Förbättringarna är bland annat:
 
-- Visa den fullständigt klickade URL:en (inklusive alla frågeparametrar som är en del av URL:en) i avsnittet **Klick** på den utfällliga URL-adressen. För närvarande visas URL-domänen och sökvägen i namnlisten. Vi utökar den informationen så att den fullständiga URL:en visas.
+- Visa den fullständigt klickade URL:en (inklusive eventuella frågeparametrar som är en del av URL:en) i avsnittet **Klick** på den utfällliga URL-adressen. För närvarande visas URL-domänen och sökvägen i namnlisten. Vi utökar den informationen så att den fullständiga URL:en visas.
 
 - Korrigeringar bland URL-filter *(URL-* eller *URL-domän* kontra *URL-domän* och sökväg): Uppdateringarna påverkar sökningen efter meddelanden som innehåller en URL-adress/klickning. Vi har aktiverat stöd för protokoll-agnostic-sökningar, så att du kan söka efter en URL utan att `http` använda. Som standard mappas URL-sökningen till http, om inte ett annat värde uttryckligen anges. Till exempel:
 
-   -  Sök med och utan `http://` prefixet i **filterfälten URL,** **URL-domän** och **URL-domän och** sökväg. Sökningarna ska visa samma resultat.
+   -  Sök med och utan `http://` prefixet i **filterfälten URL,** **URL Domain** och URL Domain **och Path.** Sökningarna ska visa samma resultat.
 
-   -  Sök efter `https://` prefixet i **URL.** När inget värde anges `http://` antas prefixet.
+   -  Sök efter `https://` prefixet i **URL.** När inget värde anges `http://` används prefixet.
 
    - `/`ignoreras i början och slutet av **URL-sökvägen,** **URL-domän,** **URL-domän och sökvägsfält.** `/` i slutet av **URL-fältet** ignoreras.
 
@@ -197,7 +219,7 @@ Phish konfidensnivå hjälper till att identifiera graden av förtroende som ett
 
 ZAP URL-signalen används vanligtvis för ZAP Phish-aviseringsscenarier där ett e-postmeddelande identifierades som Phish och togs bort efter leverans. Den här signalen ansluter aviseringen till motsvarande resultat i Utforskaren. Det är en av I/ICS för aviseringen.
 
-Vi har uppdaterat Hot Explorer och identifieringar i realtid för att göra upplevelsen mer enhetlig för vis hela tiden. Ändringarna beskrivs här:
+Vi har uppdaterat Hot Explorer och identifieringar i realtid för att vi ska kunna hitta ännu mer konsekvent. Ändringarna beskrivs här:
 
 - [Förbättringar av tidszoner](#timezone-improvements)
 - [Uppdatera i uppdateringsprocessen](#update-in-the-refresh-process)
@@ -224,7 +246,7 @@ Tidszonen för e-postposterna i portalen och för exporterade data visas. Den vi
 
 Vissa användare har kommenterat att det är förvirrande med automatisk uppdatering (till exempel så fort du ändrar datumet, sidan uppdateras) och manuell uppdatering (för andra filter). På samma sätt leder borttagning av filter till automatisk uppdatering. Om du ändrar filter samtidigt som frågan ändras kan det orsaka inkonsekventa sökupplevelser. För att lösa de här problemen flyttar vi till en manuell filtreringsmekanism.
 
-Ur en perspektiv kan användaren tillämpa och ta bort de olika filterområdet (från filteruppsättningen och datumet) och välja uppdateringsknappen för att filtrera resultaten när de har definierat frågan. Uppdateringsknappen är nu också framhävd på skärmen. Vi har även uppdaterat relaterade verktygstips och produktdokumentation.
+Ur en perspektiv kan användaren tillämpa och ta bort de olika filterområdet (från filteruppsättningen och datumet) och välja uppdateringsknappen för att filtrera resultaten när de har definierat frågan. Uppdateringsknappen är nu också framhävd på skärmen. Vi har även uppdaterat relaterade knappbeskrivningar och produktdokumentation.
 
 > [!div class="mx-imgBorder"]
 > ![Välj Uppdatera för att filtrera resultat](../../media/ManualRefresh.png)
@@ -262,7 +284,7 @@ Du kan se både GUID och namnet på de transportregler som tillämpats på medde
 
 #### <a name="important-note"></a>Viktigt meddelande:
 
-ETR-sökning och namntillgänglighet beror på den specifika roll som har tilldelats till dig. Du måste ha någon av följande roller/behörigheter för att visa ETR-namn och sökning. Om du inte har någon av de här rollerna tilldelad till dig kan du inte se namnen på transportreglerna eller söka efter meddelanden med hjälp av ETR-namn. Du kan dock se ETR-etiketten och GUID-informationen i e-postinformationen. Andra funktioner för postvisning i e-postrutnät, utfällningar för e-post, filter och export påverkas inte.
+ETR-sökning och tillgänglighet för namn beror på den specifika roll som har tilldelats till dig. Du måste ha någon av följande roller/behörigheter för att visa ETR-namn och sökning. Om du inte har någon av de här rollerna tilldelad till dig kan du inte se namnen på transportreglerna eller söka efter meddelanden med hjälp av ETR-namn. Däremot kunde du se ETR-etiketten och GUID-informationen i e-postinformationen. Andra funktioner för postvisning i e-postrutnät, utfällningar för e-post, filter och export påverkas inte.
 
 - Exo Only – Skydd mot dataförlust: Alla
 - Endast EXO - O365SupportViewConfig: Alla
@@ -287,32 +309,58 @@ Sökningen efter kopplingar är "innehåller" till sin natur, vilket innebär at
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>Nya funktioner i Hotutforskaren och identifieringar i realtid
 
-Tre nya funktioner är tillgängliga i Threat Explorer och identifieringar i realtid:
-
-- [Förhandsgranska e-posthuvud och ladda ned brödtext för e-post](#preview-email-header-and-download-email-body)
+- [Visa nätfiskemeddelanden som skickas till imiterade användare och domäner](#view-phishing-emails-sent-to-impersonated-users-and-domains)
+-  [Förhandsgranska e-posthuvud och ladda ned brödtext för e-post](#preview-email-header-and-download-email-body)
 - [E-posttidslinje](#email-timeline)
 - [Exportera URL-klickdata](#export-url-click-data)
 
-De nya funktionerna beskrivs nedan.
+### <a name="view-phishing-emails-sent-to-impersonated-users-and-domains"></a>Visa nätfiskemeddelanden som skickas till imiterade användare och domäner
+
+Om du vill identifiera nätfiskeförsök mot användare och domäner som är imiterade användare måste läggas till i *listan över användare för att skydda.* För domäner måste administratörer antingen aktivera *organisationsdomäner eller* lägga till ett domännamn i *Domäner för att skydda.* Domänerna som du skyddar finns på *sidan Mot nätfiskeprincip* i avsnittet *Personifiering.*
+
+Om du vill granska nättande meddelanden och söka efter imiterade användare eller domäner använder du [e-> i Utforskaren.](threat-explorer-views.md)
+
+I det här exemplet används Hotutforskaren.
+
+1. I [Säkerhets- & Center](https://protection.office.com) https://protection.office.com) (, väljer du > Explorer (eller identifieringar i realtid).
+
+2. I menyn Visa väljer du E-> Phish.
+
+   Här kan du välja **imiterad domän** **eller personifierad användare.**
+
+3. **VÄLJ** **ANTINGEN en imiterad** domän och skriv sedan en skyddad domän i textrutan.
+
+   Sök till exempel efter skyddade domännamn som *contoso,* *contoso.com* eller *contoso.com.au.*
+
+4. Välj ämne för ett meddelande under fliken E-> om du vill se ytterligare personifieringsinformation som Personifierad domän/identifierade plats.
+
+5. **ELLER** Välj **Personifierad användare** och skriv en skyddad användares e-postadress i textrutan.
+
+6. Välj ämnet **för** ett meddelande **under** fliken Information om e-post för att se ytterligare personifieringsinformation om användaren eller domänen  >   och den *identifierade platsen.*
+
+:::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="Informationsfönstret i Hotutforskaren för en skyddad användare som visar identifieringsplatsen och det hot som identifierades (här nättrifiering av en användare).":::
+
+> [!TIP]
+> **Bäst resultat får du** om du använder *fullständiga e-postadresser* för att söka efter skyddade användare. Du kommer att hitta den skyddade användaren snabbare och fler om du söker *efter firstname.lastname@contoso.com,* till exempel när du undersöker användarpersonifiering. När du söker efter en skyddad domän tar sökningen rotdomänen (contoso.com till exempel) och domännamnet *(contoso).* Om du söker efter *rotdomänen contoso.com* returneras  både contoso.com och domännamnet *contoso.*
 
 ### <a name="preview-email-header-and-download-email-body"></a>Förhandsgranska e-posthuvud och ladda ned brödtext för e-post
 
 Nu kan du förhandsgranska ett e-posthuvud och ladda ned e-posttexten i Threat Explorer-administratörerna kan analysera nedladdade rubriker/e-postmeddelanden för hot. Eftersom nedladdning av e-postmeddelanden kan riskera exponering av information styrs den här processen av rollbaserad åtkomstkontroll (RBAC). En ny *roll,* Förhandsversion, måste läggas till i en annan rollgrupp (till exempel säkerhetsåtgärder eller säkerhetsadministratör) för att det ska gå att ladda ned e-postmeddelanden i vyn för alla e-postmeddelanden. Det krävs dock ingen ytterligare roll för att visa e-posthuvuden (förutom vad som krävs för att visa meddelanden i Hotutforskaren).
 
-Identifieringar av Utforskaren och Realtid får också nya fält som ger en mer fullständig bild av var dina e-postmeddelanden hamnar. Dessa ändringar gör det enklare att hitta Säkerhetsvakterna. Men det viktigaste resultatet är att du snabbt kan se platsen för de problemmeddelanden som uppstår.
+Identifieringar av Utforskaren och Realtid får också nya fält som ger en mer fullständig bild av var dina e-postmeddelanden hamnar. De här ändringarna gör det enklare att hitta Säkerhets ops. Men det viktigaste resultatet är att du snabbt kan se platsen för de problemmeddelanden som uppstår.
 
 Hur gör man det? Leveransstatus delas nu upp i två kolumner:
 
 - **Leveransåtgärd** – Status för e-postmeddelandet.
 - **Leveransplats** – dit e-postmeddelandet har dirigerats.
 
-*Leveransåtgärd* är den åtgärd som vidtas för ett e-postmeddelande på grund av befintliga principer eller identifieringar. Här är de möjliga åtgärderna för ett e-postmeddelande:
+*Leveransåtgärd* är den åtgärd som vidtas på ett e-postmeddelande på grund av befintliga principer eller identifieringar. Här är de möjliga åtgärderna för ett e-postmeddelande:
 
 |Levererad|Skräppost|Blockerad|Ersatt|
 |---|---|---|---|
-|E-post levererades till inkorgen eller mappen för en användare och användaren kan komma åt den.|E-post skickades till användarens skräppostmapp eller borttaget och användaren kan komma åt den.|E-postmeddelanden som har satts i karantän, som misslyckades eller släppts. De här e-postmeddelandena är inte tillgängliga för användaren.|E-post har ersatts med skadliga bifogade filer av TXT-filer som säger att den bifogade filen var skadlig.|
+|E-post har levererats till inkorgen eller mappen för en användare och användaren kan komma åt den.|E-post skickades till användarens skräppostmapp eller borttaget och användaren kan komma åt den.|E-postmeddelanden som har satts i karantän, misslyckats eller släppts. De här e-postmeddelandena är inte tillgängliga för användaren.|E-post hade skadliga bifogade filer ersatts med TXT-filer som uppger att den bifogade filen var skadlig.|
 
-Det här kan och kan användaren inte se:
+Här är vad användaren kan och inte kan se:
 
 |Tillgängligt för slutanvändare|Inte tillgänglig för slutanvändare|
 |---|---|
@@ -331,9 +379,9 @@ Det här kan och kan användaren inte se:
 
 ### <a name="email-timeline"></a>E-posttidslinje
 
-Tidslinjen **för e-post** är en ny funktion i Utforskaren som förbättrar upplevelsen för administratörer. Klipper ut tiden som läggs på att kontrollera olika platser för att försöka förstå händelsen. När flera händelser inträffar samtidigt som ett e-postmeddelande skickas visas de i en tidslinjevy. Vissa händelser som inträffar för din e-post efter leverans visas i kolumnen **Specialåtgärd.** Administratörer kan kombinera information från tidslinjen med den särskilda åtgärd som vidtas för e-postmeddelandet efter leveransen för att få insyn i hur deras principer fungerar, var e-postmeddelandet slutligen skickades och, i vissa fall, vad den slutliga bedömningen var.
+Tidslinjen **för e-post** är en ny funktion i Utforskaren som förbättrar upplevelsen för administratörer. Det klipper av tiden som läggs på att kontrollera olika platser för att försöka förstå händelsen. När flera händelser inträffar samtidigt som ett e-postmeddelande skickas visas de i en tidslinjevy. Vissa händelser som inträffar för din e-post efter leverans visas i kolumnen **Specialåtgärd.** Administratörer kan kombinera information från tidslinjen med den särskilda åtgärd som vidtas för e-postmeddelandet efter leveransen för att få insyn i hur deras principer fungerar, var e-postmeddelandet slutligen skickades och, i vissa fall, vad den slutliga bedömningen var.
 
-Mer information finns i [Undersöka och åtgärda skadlig e-post som har levererats i Office 365.](investigate-malicious-email-that-was-delivered.md)
+Mer information finns i Undersöka [och åtgärda skadlig e-post som har levererats i Office 365.](investigate-malicious-email-that-was-delivered.md)
 
 ### <a name="export-url-click-data"></a>Exportera URL-klickdata
 
@@ -353,7 +401,7 @@ Följ den här sökvägen för att komma till samma plats i rapporten om identif
 > [!div class="mx-imgBorder"]
 > ![Fliken Klick i Utforskaren](../../media/tp_ExportClickResultAndNetworkID.png)
 
-## <a name="see-malware-detected-in-email-by-technology"></a>Visa skadlig programvara som upptäckts i e-post med teknik
+## <a name="see-malware-detected-in-email-by-technology"></a>Visa skadlig programvara som identifieras i e-post efter teknik
 
 Anta att du vill se skadlig kod som upptäckts i e-post sorterad med Microsoft 365-teknik. Det gör du genom att använda [e> vyn för](threat-explorer-views.md#email--malware) skadlig programvara i Utforskaren (eller identifieringar i realtid).
 
@@ -376,13 +424,13 @@ Anta att du vill se skadlig kod som upptäckts i e-post sorterad med Microsoft 3
    > [!div class="mx-imgBorder"]
    > ![Vald identifieringsteknik](../../media/ExplorerEmailMalwareDetectionTechATP.png)
 
-Rapporten uppdateras för att visa resultatet att skadlig programvara upptäckts i e-post med hjälp av det teknikalternativ som du har valt. Härifrån kan du göra ytterligare analyser.
+Rapporten uppdateras för att visa resultatet att skadlig programvara upptäckts i e-post med hjälp av det teknikalternativ som du valt. Härifrån kan du göra ytterligare analyser.
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>Visa nätfiske-URL och klicka på bedömningsdata
 
-Anta att du vill se nätfiskeförsök via URL:er i e-post, inklusive en lista över URL-adresser som tillåts, blockeras och åsidosätts. Om du vill identifiera URL:er som har [klickats på måste](atp-safe-links.md) Säkra länkar konfigureras. Kontrollera att du har angett principer [för säkra](set-up-atp-safe-links-policies.md) länkar för tidsbe klickar-skydd och loggning av klicka-beslut med hjälp av säkra länkar.
+Anta att du vill se nätfiskeförsök via URL:er i e-postmeddelanden, inklusive en lista över URL-adresser som har tillåtits, blockerats och åsidosättts. Om du vill identifiera URL:er som har [klickats på måste](atp-safe-links.md) Säkra länkar konfigureras. Kontrollera att du har angett principer [för säkra](set-up-atp-safe-links-policies.md) länkar för tidsbe klickar-skydd och loggning av klicka-beslut med hjälp av säkra länkar.
 
-Om du vill granska phish-URL:er i meddelanden och klickar på URL:er i phish-meddelanden använder du e-post [   >  **phish-vyn**](threat-explorer-views.md#email--phish) i Utforskaren eller identifieringar i realtid.
+Om du vill granska phish URL:er i meddelanden och klickar på URL:er i phish meddelanden, använder du e-post [   >  **phish-vyn**](threat-explorer-views.md#email--phish) i Utforskaren eller identifieringar i realtid.
 
 1. I Säkerhets- & Center <https://protection.office.com> (), väljer du Hothanteringsutforskaren  \>  **(eller identifieringar i realtid).** (I det här exemplet används Utforskaren.)
 
@@ -402,28 +450,28 @@ Om du vill granska phish-URL:er i meddelanden och klickar på URL:er i phish-med
 
    - **Url:er** är url:er i meddelanden som du filtrerat ned till och åtgärden för e-postleverans räknas för varje URL. I e-postvyn phish innehåller den här listan vanligtvis legitima URL:er. Attacker innehåller en blandning av bra och dåliga URL:er i sina meddelanden för att försöka leverera dem, men de skadliga länkarna ser mer intressanta ut. Tabellen med URL-adresser sorteras efter totalt antal e-postmeddelanden, men den här kolumnen är dold för att förenkla vyn.
 
-   - **De översta klicken** är de URL-adresser som är säkra länkar som har klickats på, sorterade efter totalt antal klick. Den här kolumnen visas inte heller för att förenkla vyn. Totalt antal per kolumn anger antalet säkra länkar vid klickning för varje klickad URL. I e-postvyn i Phish är det oftast misstänkta eller skadliga URL-adresser. Men vyn kan innehålla URL:er som inte är hot men som är i phish-meddelanden. URL-klick på olästa länkar visas inte här.
+   - **De översta klicken** är de URL-adresser som är säkra länkar som har klickats på, sorterade efter totalt antal klick. Den här kolumnen visas inte heller för att förenkla vyn. Totalt antal per kolumn anger antalet säkra länkar vid klickning för varje klickad URL. I e-postvyn phish är det oftast misstänkta eller skadliga URL-adresser. Men vyn kan innehålla URL:er som inte är hot men som är i phish-meddelanden. URL-klick på olästa länkar visas inte här.
 
    De två URL-tabellerna visar de viktigaste webbadresserna i nätfiskemeddelanden efter leveransåtgärd och plats. I tabellerna visas URL-klick som har blockerats eller besökts trots en varning, så att du kan se vilka potentiella dåliga länkar som visas för användare och att användaren har klickat på dem. Härifrån kan du göra ytterligare analyser. Under diagrammet kan du till exempel se de översta WEBBADRESSerna i e-postmeddelanden som har blockerats i organisationens miljö.
 
    > [!div class="mx-imgBorder"]
    > ![URL-adresser i Utforskaren som har blockerats](../../media/ExplorerPhishClickVerdictURLs.png)
 
-   Välj en URL om du vill visa mer detaljerad information.
+   Välj en URL för att visa mer detaljerad information.
 
    > [!NOTE]
    > I den utfällningsdialogrutan för URL tas filtreringen av e-postmeddelanden bort för att visa den fullständiga visningen av exponering av URL:en i miljön. På så sätt kan du filtrera efter e-postmeddelanden som du är orolig för i Utforskaren, hitta specifika URL:er som är potentiella hot och sedan utöka förståelsen av exponering av URL-adresser i din miljö (via dialogrutan URL-information) utan att behöva lägga till URL-filter i själva Utforskarvyn.
 
 ### <a name="interpretation-of-click-verdicts"></a>Tolkning av klickningar
 
-I de utfällade e-postmeddelandena eller URL-adresserna, de bästa klicken och i filtreringen visas olika värden för klickningar:
+I de utfällade e-postmeddelandena eller URL-adresserna, De bästa klicken samt i filtreringen visas olika värden för klickningar:
 
-- **Inget:** Det går inte att registrera url-adressens bedömning. Användaren kan ha klickat via URL-adressen.
+- **Inget:** Det går inte att registrera url-adressens bedömning. Användaren kan ha klickat genom URL:en.
 - **Tillåtet:** Användaren tilläts navigera till URL-adressen.
 - **Blockerad:** Användaren blockerades från att navigera till URL-adressen.
 - **Väntande bedömning:** Användaren visades en sida som väntar på att detonation.
 - **Blockerad åsidosätts:** Användaren blockerades från att navigera direkt till URL-adressen. Men användaren överbröt blocket för att navigera till URL:en.
-- **Väntande bedömning kringgås:** Användaren visades en detonationssida. Men användaren överbröt meddelandet för att få åtkomst till URL-adressen.
+- **Väntande bedömning kringgås:** Användaren visades en detonationssida. Men användaren överrode meddelandet för att få åtkomst till URL-adressen.
 - **Fel:** Användaren visades på felsidan eller så uppstod ett fel vid inspelning av bedömningsfelet.
 - **Fel:** Ett okänt undantag inträffade vid inspelningen av bedömningsfelet. Användaren kan ha klickat genom URL:en.
 
@@ -433,7 +481,7 @@ Anta att du vill se [e-postmeddelanden](enable-the-report-message-add-in.md) som
 
 1. I Säkerhets- & Center <https://protection.office.com> (), väljer du Hothanteringsutforskaren  \>  **(eller identifieringar i realtid).** (I det här exemplet används Utforskaren.)
 
-2. Välj Skicka **via** e-post **i** \> **visa-menyn.**
+2. Välj Skicka **e-post** i  \> **visa-menyn.**
 
    > [!div class="mx-imgBorder"]
    > ![Visa-menyn för e-postmeddelanden i Utforskaren](../../media/explorer-view-menu-email-user-reported.png)
@@ -445,7 +493,7 @@ Anta att du vill se [e-postmeddelanden](enable-the-report-message-add-in.md) som
    > [!div class="mx-imgBorder"]
    > ![Användarrapporterad phish](../../media/EmailUserReportedReportType.png)
 
-Rapporten uppdateras för att visa data om e-postmeddelanden som personer i organisationen har rapporterat som nätfiskeförsök. Du kan använda den här informationen för ytterligare analyser och, om det behövs, justera dina principer för skydd mot nätfiske i [Microsoft Defender för Office 365.](configure-atp-anti-phishing-policies.md)
+Rapporten uppdateras för att visa data om e-postmeddelanden som personer i organisationen har rapporterat som nätfiskeförsök. Du kan använda den här informationen för ytterligare analys och, om det behövs, justera dina principer för skydd mot nätfiske i [Microsoft Defender för Office 365.](configure-atp-anti-phishing-policies.md)
 
 ## <a name="start-automated-investigation-and-response"></a>Starta automatisk undersökning och svar
 
@@ -466,7 +514,7 @@ Utöver scenarierna som beskrivs i den här artikeln finns det många fler rappo
 
 ## <a name="required-licenses-and-permissions"></a>Licenser och behörigheter som krävs
 
-Du måste ha [Microsoft Defender för Office 365 för](office-365-atp.md) att kunna använda Identifieringar i realtid eller Utforskaren.
+Du måste ha [Microsoft Defender för Office 365 för](office-365-atp.md) att kunna använda Utforskaren eller identifiering i realtid.
 
 - Utforskaren ingår i Defender för Office 365 abonnemang 2.
 - Rapporten Identifieringar i realtid ingår i Defender för Office 365 abonnemang 1.
@@ -498,3 +546,7 @@ Mer information om roller och behörigheter finns i följande resurser:
 - Med rapporten Realtidsidentifiering kan du visa identifieringar i realtid. Threat Explorer gör det här också, men det ger också ytterligare information om en viss attack.
 - Vyn *All e-post* är tillgänglig i Hotutforskaren men inte i rapporten om identifieringar i realtid.
 - Fler filtreringsfunktioner och tillgängliga åtgärder ingår i Hotutforskaren. Mer information finns i [Tjänstbeskrivning för Microsoft Defender för Office 365: Funktionstillgänglighet i Defender för Office 365-abonnemang.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
+
+## <a name="other-articles"></a>Andra artiklar
+
+[Undersöka e-postmeddelanden med sidan E-post entitet](mdo-email-entity-page.md)
