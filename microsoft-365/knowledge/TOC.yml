@@ -1,12 +1,12 @@
-- name: Komma igång med Microsoft Viva
+- name: Microsoft Viva-ämnen
+  href: index.md
+- name: Komma igång med Microsoft Viva-ämnen
   items:
-    - name: Introduktion till Microsoft Viva
-      href: index.md
-    - name: Översikt över Microsoft Viva
+    - name: Översikt över Microsoft Viva-ämnen
       href: topic-experiences-overview.md
-    - name: Identifiering och curation av Microsoft Viva
+    - name: Identifiering och säkring av Microsoft Viva-ämnen
       href: topic-experiences-discovery-curation.md
-    - name: Microsoft Viva-roller
+    - name: Roller i Microsoft Viva-ämnen
       href: topic-experiences-roles.md
     - name: Förbered din miljö
       href: topic-experiences-get-ready.md
@@ -28,6 +28,8 @@
       href: topic-experiences-administration.md
 - name: Arbeta med ämnen
   items:
+    - name: Komma igång med Viva-ämnen
+      href: get-started-with-viva-topics.md
     - name: Översikt över ämnescentret
       href: topic-center-overview.md
     - name: Hantera ämnen i ämnes centret
