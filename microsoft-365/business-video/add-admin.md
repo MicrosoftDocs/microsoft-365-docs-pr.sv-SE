@@ -9,54 +9,52 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du lägger till en annan administratör.
-ms.openlocfilehash: edeaf39c83271d1ba5be1af175a48fba94e7e2af
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 83b4432858f33f8132647840b746bb5aa23d68b5
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927652"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423183"
 ---
-# <a name="add-an-admin"></a><span data-ttu-id="4eb00-103">Lägga till en administratör</span><span class="sxs-lookup"><span data-stu-id="4eb00-103">Add an admin</span></span>
+# <a name="add-an-admin"></a><span data-ttu-id="24f53-103">Lägga till en administratör</span><span class="sxs-lookup"><span data-stu-id="24f53-103">Add an admin</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO?autoplay=false]
 
-<span data-ttu-id="4eb00-104">När du registrerar dig för Microsoft 365 Business blir du automatiskt global administratör. För att hjälpa till att hantera företaget kan du även göra andra personer till administratörer.</span><span class="sxs-lookup"><span data-stu-id="4eb00-104">When you sign up for Microsoft 365 Business, you automatically become a global admin. To help manage the business, you can make other people admins as well.</span></span> 
+<span data-ttu-id="24f53-104">När du registrerar dig för Microsoft 365 Business blir du automatiskt global administratör. För att hjälpa till att hantera företaget kan du även göra andra personer till administratörer.</span><span class="sxs-lookup"><span data-stu-id="24f53-104">When you sign up for Microsoft 365 Business, you automatically become a global admin. To help manage the business, you can make other people admins as well.</span></span> 
 
-## <a name="try-it"></a><span data-ttu-id="4eb00-105">Prova!</span><span class="sxs-lookup"><span data-stu-id="4eb00-105">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="24f53-105">Prova!</span><span class="sxs-lookup"><span data-stu-id="24f53-105">Try it!</span></span>
 
-### <a name="add-an-existing-employee-as-an-admin"></a><span data-ttu-id="4eb00-106">Lägga till en befintlig anställd som administratör</span><span class="sxs-lookup"><span data-stu-id="4eb00-106">Add an existing employee as an admin</span></span>
+### <a name="add-an-existing-employee-as-an-admin"></a><span data-ttu-id="24f53-106">Lägga till en befintlig anställd som administratör</span><span class="sxs-lookup"><span data-stu-id="24f53-106">Add an existing employee as an admin</span></span>
 
-1. <span data-ttu-id="4eb00-107">När du registrerar dig för Microsoft 365 Business blir du automatiskt global administratör. För att hjälpa till att hantera företaget kan du även göra andra personer till administratörer.</span><span class="sxs-lookup"><span data-stu-id="4eb00-107">When you sign up for Microsoft 365 Business, you automatically become a global admin. To help manage the business, you can make other people admins as well.</span></span> 
-1. <span data-ttu-id="4eb00-108">I administrationscentret för Microsoft 365 väljer du **Användare** och sedan **Aktiva användare.**</span><span class="sxs-lookup"><span data-stu-id="4eb00-108">In the Microsoft 365 admin center, select **Users**, and then **Active users**.</span></span>
-1. <span data-ttu-id="4eb00-109">Välj den användare som du vill göra till administratör och välj sedan **Hantera roller.**</span><span class="sxs-lookup"><span data-stu-id="4eb00-109">Choose the user you want to make an admin, and then select **Manage roles**.</span></span>
-1. <span data-ttu-id="4eb00-110">Avmarkera **kryssrutan för** användarens aktuella roll i fönstret Hantera roller och välj den nya roll som du vill tilldela användaren.</span><span class="sxs-lookup"><span data-stu-id="4eb00-110">On the **Manage roles** pane, clear the user's current role check box, and select the new role that you want to assign to the user.</span></span>
-1. <span data-ttu-id="4eb00-111">Välj **Spara ändringar** och stäng sedan **bekräftelsefönstret med uppdaterade administratörsroller.**</span><span class="sxs-lookup"><span data-stu-id="4eb00-111">Select **Save changes**, and then close the **Admin roles updated** confirmation pane.</span></span>
+1. <span data-ttu-id="24f53-107">När du registrerar dig för Microsoft 365 Business blir du automatiskt global administratör. För att hjälpa till att hantera företaget kan du även göra andra personer till administratörer.</span><span class="sxs-lookup"><span data-stu-id="24f53-107">When you sign up for Microsoft 365 Business, you automatically become a global admin. To help manage the business, you can make other people admins as well.</span></span> 
+1. <span data-ttu-id="24f53-108">I administrationscentret för Microsoft 365 väljer du **Användare** och sedan **Aktiva användare.**</span><span class="sxs-lookup"><span data-stu-id="24f53-108">In the Microsoft 365 admin center, select **Users**, and then **Active users**.</span></span>
+1. <span data-ttu-id="24f53-109">Välj den användare som du vill göra till administratör och välj sedan **Hantera roller.**</span><span class="sxs-lookup"><span data-stu-id="24f53-109">Choose the user you want to make an admin, and then select **Manage roles**.</span></span>
+1. <span data-ttu-id="24f53-110">Avmarkera **kryssrutan för** användarens aktuella roll i fönstret Hantera roller och välj den nya roll som du vill tilldela användaren.</span><span class="sxs-lookup"><span data-stu-id="24f53-110">On the **Manage roles** pane, clear the user's current role check box, and select the new role that you want to assign to the user.</span></span>
+1. <span data-ttu-id="24f53-111">Välj **Spara ändringar** och stäng sedan **bekräftelsefönstret med uppdaterade administratörsroller.**</span><span class="sxs-lookup"><span data-stu-id="24f53-111">Select **Save changes**, and then close the **Admin roles updated** confirmation pane.</span></span>
 
-### <a name="add-someone-outside-the-company-as-an-admin"></a><span data-ttu-id="4eb00-112">Lägga till någon utanför företaget som administratör</span><span class="sxs-lookup"><span data-stu-id="4eb00-112">Add someone outside the company as an admin</span></span>
+### <a name="add-someone-outside-the-company-as-an-admin"></a><span data-ttu-id="24f53-112">Lägga till någon utanför företaget som administratör</span><span class="sxs-lookup"><span data-stu-id="24f53-112">Add someone outside the company as an admin</span></span>
 
-<span data-ttu-id="4eb00-113">Om det finns en extern IT-person som hjälper dig att hantera ditt företag kan du lägga till personen som global administratör.</span><span class="sxs-lookup"><span data-stu-id="4eb00-113">If there's an external IT person who will help manage your business, you can add them as a global admin.</span></span>
+<span data-ttu-id="24f53-113">Om det finns en extern IT-person som hjälper dig att hantera ditt företag kan du lägga till personen som global administratör.</span><span class="sxs-lookup"><span data-stu-id="24f53-113">If there's an external IT person who will help manage your business, you can add them as a global admin.</span></span>
 
-1. <span data-ttu-id="4eb00-114">I administrationscentret för Microsoft 365 väljer du **Användare,** **Aktiva användare** och sedan Lägg till **en användare.**</span><span class="sxs-lookup"><span data-stu-id="4eb00-114">In the Microsoft 365 admin center, select **Users**, **Active users**, and then **Add a user**.</span></span>
-1. <span data-ttu-id="4eb00-115">På **sidan Konfigurera grunderna anger** du användarens namn, visningsnamn och användarnamn.</span><span class="sxs-lookup"><span data-stu-id="4eb00-115">On the **Set up the basics** page, enter the user's name, display name, and username.</span></span>
-1. <span data-ttu-id="4eb00-116">Markera kryssrutan **Skicka lösenord med e-post vid** slutförande om du vill att användarens lösenord ska skickas till dem.</span><span class="sxs-lookup"><span data-stu-id="4eb00-116">Select the **Send password in email upon completion** check box to have the user's password emailed to them.</span></span> <span data-ttu-id="4eb00-117">Skriv deras e-postadress.</span><span class="sxs-lookup"><span data-stu-id="4eb00-117">Type their email address.</span></span> <span data-ttu-id="4eb00-118">Avgränsa flera adresser med semikolon.</span><span class="sxs-lookup"><span data-stu-id="4eb00-118">Separate multiple addresses with semicolons.</span></span> <span data-ttu-id="4eb00-119">Välj **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="4eb00-119">Select **Next**.</span></span>
-1. <span data-ttu-id="4eb00-120">Välj **användarens** plats i listrutan Välj plats.</span><span class="sxs-lookup"><span data-stu-id="4eb00-120">In the **Select location** drop-down list, choose the user's location.</span></span>
-1. <span data-ttu-id="4eb00-121">Markera kryssrutan **Skapa användare utan produktlicens.**</span><span class="sxs-lookup"><span data-stu-id="4eb00-121">Select the **Create user without product license** check box.</span></span> <span data-ttu-id="4eb00-122">Du behöver inte tilldela användaren en licens eftersom de bara hanterar Microsoft 365-tjänsterna och inte använder dem.</span><span class="sxs-lookup"><span data-stu-id="4eb00-122">You don't need to assign this user a license because they'll only be managing the Microsoft 365 services, and not using them.</span></span> <span data-ttu-id="4eb00-123">Välj **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="4eb00-123">Select **Next**.</span></span>
-1. <span data-ttu-id="4eb00-124">Expandera **avsnittet** Roller.</span><span class="sxs-lookup"><span data-stu-id="4eb00-124">Expand the **Roles** section.</span></span> <span data-ttu-id="4eb00-125">Avmarkera kryssrutan bredvid användarens aktuella roll och välj sedan **Global administratör.**</span><span class="sxs-lookup"><span data-stu-id="4eb00-125">Clear the check box next to the user's current role, and then choose **Global administrator**.</span></span> <span data-ttu-id="4eb00-126">Välj **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="4eb00-126">Select **Next**.</span></span>
-1. <span data-ttu-id="4eb00-127">Granska inställningarna och välj sedan Slutför med **att lägga till.**</span><span class="sxs-lookup"><span data-stu-id="4eb00-127">Review your settings, and then select **Finish adding**.</span></span>
-1. <span data-ttu-id="4eb00-128">Välj **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="4eb00-128">Select **Close**.</span></span>
+1. <span data-ttu-id="24f53-114">I administrationscentret för Microsoft 365 väljer du **Användare,** **Aktiva användare** och sedan Lägg till **en användare.**</span><span class="sxs-lookup"><span data-stu-id="24f53-114">In the Microsoft 365 admin center, select **Users**, **Active users**, and then **Add a user**.</span></span>
+1. <span data-ttu-id="24f53-115">På **sidan Konfigurera grunderna anger** du användarens namn, visningsnamn och användarnamn.</span><span class="sxs-lookup"><span data-stu-id="24f53-115">On the **Set up the basics** page, enter the user's name, display name, and username.</span></span>
+1. <span data-ttu-id="24f53-116">Markera kryssrutan **Skicka lösenord med e-post vid** slutförande om du vill att användarens lösenord ska skickas till dem.</span><span class="sxs-lookup"><span data-stu-id="24f53-116">Select the **Send password in email upon completion** check box to have the user's password emailed to them.</span></span> <span data-ttu-id="24f53-117">Skriv deras e-postadress.</span><span class="sxs-lookup"><span data-stu-id="24f53-117">Type their email address.</span></span> <span data-ttu-id="24f53-118">Avgränsa flera adresser med semikolon.</span><span class="sxs-lookup"><span data-stu-id="24f53-118">Separate multiple addresses with semicolons.</span></span> <span data-ttu-id="24f53-119">Välj **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="24f53-119">Select **Next**.</span></span>
+1. <span data-ttu-id="24f53-120">Välj **användarens** plats i listrutan Välj plats.</span><span class="sxs-lookup"><span data-stu-id="24f53-120">In the **Select location** drop-down list, choose the user's location.</span></span>
+1. <span data-ttu-id="24f53-121">Markera kryssrutan **Skapa användare utan produktlicens.**</span><span class="sxs-lookup"><span data-stu-id="24f53-121">Select the **Create user without product license** check box.</span></span> <span data-ttu-id="24f53-122">Du behöver inte tilldela användaren en licens eftersom de bara hanterar Microsoft 365-tjänsterna och inte använder dem.</span><span class="sxs-lookup"><span data-stu-id="24f53-122">You don't need to assign this user a license because they'll only be managing the Microsoft 365 services, and not using them.</span></span> <span data-ttu-id="24f53-123">Välj **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="24f53-123">Select **Next**.</span></span>
+1. <span data-ttu-id="24f53-124">Expandera **avsnittet** Roller.</span><span class="sxs-lookup"><span data-stu-id="24f53-124">Expand the **Roles** section.</span></span> <span data-ttu-id="24f53-125">Avmarkera kryssrutan bredvid användarens aktuella roll och välj sedan **Global administratör.**</span><span class="sxs-lookup"><span data-stu-id="24f53-125">Clear the check box next to the user's current role, and then choose **Global administrator**.</span></span> <span data-ttu-id="24f53-126">Välj **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="24f53-126">Select **Next**.</span></span>
+1. <span data-ttu-id="24f53-127">Granska inställningarna och välj sedan Slutför med **att lägga till.**</span><span class="sxs-lookup"><span data-stu-id="24f53-127">Review your settings, and then select **Finish adding**.</span></span>
+1. <span data-ttu-id="24f53-128">Välj **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="24f53-128">Select **Close**.</span></span>
 
-<span data-ttu-id="4eb00-129">Din nya globala administratör kan nu hjälpa dig att hantera dina Microsoft 365-tjänster.</span><span class="sxs-lookup"><span data-stu-id="4eb00-129">Your new global admin can now help manage your Microsoft 365 services.</span></span>
+<span data-ttu-id="24f53-129">Din nya globala administratör kan nu hjälpa dig att hantera dina Microsoft 365-tjänster.</span><span class="sxs-lookup"><span data-stu-id="24f53-129">Your new global admin can now help manage your Microsoft 365 services.</span></span>
