@@ -158,6 +158,8 @@
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: Använda känslighetsetiketter i Office-appar
           href: sensitivity-labels-office-apps.md
+        - name: Aktivera samtidig redigering för dokument krypterade med känslighetsetiketter (förhandsgranskning)
+          href: sensitivity-labels-coauthoring.md
     - name: Kryptering
       items:
         - name: Förstå kryptering
