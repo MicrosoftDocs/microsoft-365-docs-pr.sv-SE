@@ -1,7 +1,7 @@
 ---
 title: DeviceTvmSoftwareInventory-tabell i det avancerade sökschemat
 description: Läs mer om inventeringen av programvara i dina enheter i tabellen DeviceTvmSoftwareInventory i det avancerade sökschemat.
-keywords: avancerad sökning, hotsökning, cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, hot & sårbarhetshantering, TVM, enhetshantering, programvara, lager, svagheter, CVE-ID, OS DeviceTvmSoftwareInventoryVulnerabilities
+keywords: avancerad sökning, hotsökning, sökning på cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, hot & sårbarhetshantering, TVM, enhetshantering, programvara, lager, svagheter, CVE-ID, OS DeviceTvmSoftwareInventoryVulnerabilities
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -11,7 +11,7 @@ ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: maccruz
-author: maccruz
+author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5edb6205e0392441163060aa7181ca031e1fbb0d
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 445e6f767cc2269315a0b280df2f4deefa2faa08
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50416844"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423981"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -55,7 +55,7 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `OSArchitecture` | sträng | Arkitekturen för operativsystemet som körs på datorn |
 | `SoftwareVendor` | sträng | Namnet på programvaruleverantören |
 | `SoftwareName` | sträng | Namnet på programvaruprodukten |
-| `SoftwareVersion` | sträng | Versionsnummer för programvaran |
+| `SoftwareVersion` | sträng | Versionsnummer för programvaruprodukten |
 | `EndOfSupportStatus` | sträng | Visar livscykelfasen för programvaran i förhållande till dess angivna supportdatum (EOS) eller slutdatum (EOL) |
 | `EndOfSupportDate` | sträng | Supporten för EOS (EOS) eller slutet av livscykeln (EOL) för programvaran |
 

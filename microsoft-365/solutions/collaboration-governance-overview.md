@@ -1,5 +1,5 @@
 ---
-title: Vad är samarbets styrning?
+title: Vad är samarbetsstyrning?
 ms.reviewer: mmclean
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -15,180 +15,183 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Lär dig mer om hur du styr relaterade funktioner i Microsoft 365 Groups, teams, SharePoint och Yammer.
-ms.openlocfilehash: 2319a0f5b8c74925569d00eb781d247fe61a5a76
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+description: Läs mer om hur du styr relaterade funktioner i Microsoft 365-grupper, Teams, SharePoint och Yammer.
+ms.openlocfilehash: 8f1341b3b3bab1e9ae7219f01124983aefb022b1
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613038"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50424062"
 ---
-# <a name="what-is-collaboration-governance"></a>Vad är samarbets styrning?
+# <a name="what-is-collaboration-governance"></a>Vad är samarbetsstyrning?
 
-Samarbete hantering är hur du hanterar användares åtkomst till resurser, efterlevnad av dina företags standarder och säkerställer säkerheten för dina data.
+Med styrning av samarbete hanterar du användarnas åtkomst till resurser, följer dina affärsstandarder och säkerställer säkerheten för dina data.
 
-Organisationer i dag använder en mängd olika verktygs uppsättningar. Det finns en grupp med utvecklare som använder gruppchatt, chefer som skickar e-post och hela organisationen som ansluter via företags social. Flera samarbets verktyg används eftersom alla grupper är unika och har sina egna funktioner och arbets format. Vissa kommer bara att använda e-post medan andra bor i chatten. 
+Organisationer använder i dag en mängd olika verktyg. Det finns en grupp utvecklare som använder gruppchatt, cheferna som skickar e-post och hela organisationen som ansluter via företagets sociala nätverk. Flera samarbetsverktyg används eftersom varje grupp är unik och har sina egna funktionella behov och arbetsstil. Vissa använder endast e-post medan andra främst kommer att live i chatten. 
 
-Om användarna tycker att de verktyg som tillhandahålls inte passar deras behov kommer de sannolikt att ladda ner sin favorit-Consumer-app som stöder deras scenarier. Även om den här processen gör det möjligt för användare att komma igång snabbt, leder den till en frustrerande användar upplevelse i hela organisationen med flera inloggningar, svårt att dela och ingen plats för att visa innehåll. Det här begreppet kallas "skuggat" och innebär en betydande risk för organisationer. Det reducerar förmågan att enhetligt hantera användar åtkomst, kontrol lera säkerheten och behovet av tjänst.
+Om användarna anser att de VERKTYG som tillhandahålls av IT inte passar deras behov kommer de antagligen att ladda ned sin favorit konsumentapp som har stöd för deras scenarier. Även om den här processen gör att användarna kan komma igång snabbt, ger det en frustrerande användarupplevelse i hela organisationen med flera inloggningar, problem med att dela och ingen enda plats att visa innehåll. Det här begreppet kallas "Skugg-IT" och utgör en betydande risk för organisationer. Det minskar möjligheten att på ett enhetligt sätt hantera användaråtkomst, säkerställa säkerhet och tjänstefterlevnad.
 
-Tjänster som Microsoft 365 Groups, teams och Yammer gör det möjligt för användarna att minska risken för att skugga den genom att tillhandahålla de verktyg som behövs för att samar beta. Microsoft 365 har en mängd olika verktyg för att implementera styr funktioner som din organisation kan behöva. 
+Tjänster som Microsoft 365-grupper, Teams och Yammer ger användarna möjlighet och minskar risken för skugg-IT genom att tillhandahålla de verktyg som krävs för att samarbeta. Microsoft 365 har en omfattande uppsättning verktyg för att implementera alla hanteringsfunktioner som din organisation kan behöva. 
 
-![Diagram som visar alternativ för samarbets styrning i Microsoft 365](../media/collaboration-governance-overview.png)
+![Diagram som visar alternativ för styrning av samarbete i Microsoft 365](../media/collaboration-governance-overview.png)
 
-Den här artikeln hjälper dig att förstå hur grupper, team och SharePoint-inställningar interagerar, vilka styr funktioner som är tillgängliga och hur du skapar och implementerar en plan ritning för samarbets funktionerna i Microsoft 365.
+Den här serien med artiklar hjälper dig att förstå hur grupper, team och SharePoint-inställningar interagerar, vilka hanteringsfunktioner som är tillgängliga och hur du skapar och implementerar en hanteringsplan för samarbetsfunktionerna i Microsoft 365.
+
+### <a name="setting-up-secure-collaboration-with-microsoft-365"></a>Konfigurera säkert samarbete med Microsoft 365
+
+Det finns många alternativ för att distribuera Microsoft 365-grupper och Teams för säkert samarbete i organisationen. Vi rekommenderar att du använder det här styrningsinnehållet tillsammans med Konfigurera säkert samarbete med [Microsoft 365](setup-secure-collaboration-with-teams.md) och tillhörande artiklar för att skapa den bästa samarbetslösningen för din organisation.
 
 ## <a name="what-are-microsoft-365-groups"></a>Vad är Microsoft 365-grupper?
 
-Med Microsoft 365-grupper kan du välja en uppsättning personer som du vill samar beta med och enkelt skapa en samling resurser för de personer som ska dela. Om du lägger till medlemmar i gruppen beviljar du automatiskt de behörigheter som krävs för alla till gångar som tillhandahålls av gruppen. Både team och Yammer använder Microsoft 365 Groups för att hantera deras medlemskap.
+Med Microsoft 365-grupper kan du välja en grupp personer som du vill samarbeta med och enkelt skapa en samling med resurser som personerna kan dela. När medlemmar läggs till i gruppen tilldelas automatiskt nödvändiga behörigheter för alla tillgångar som tillhandahålls av gruppen. Både Teams och Yammer microsoft 365-grupper för att hantera sitt medlemskap.
 
-Microsoft 365-grupper innehåller en uppsättning länkade resurser som användarna kan använda för kommunikation och samarbete. Grupper inkluderar alltid en SharePoint-webbplats, Planner, en Power BI-arbetsyta, en post låda och en kalender samt direkt uppspelning. Beroende på hur du skapar gruppen kan du lägga till andra tjänster som team, Yammer och projekt.
+Microsoft 365-grupper innehåller en uppsättning länkade resurser som användare kan använda för kommunikation och samarbete. Grupper inkluderar alltid en SharePoint-webbplats, Planner, en Power BI-arbetsyta, en postlåda, en kalender och Stream. Beroende på hur du skapar gruppen kan du lägga till andra tjänster som Teams, Yammer och Project.
 
-![Diagram som visar Microsoft 365-grupper och tillhör ande tjänster](../media/microsoft-365-groups-hub-spoke.png)
+![Diagram som visar Microsoft 365-grupper och relaterade tjänster](../media/microsoft-365-groups-hub-spoke.png)
 
-|Resurspool|Beskrivning|
+|Resurs|Beskrivning|
 |:------|:----------|
-|[Kalender](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a)|För schemaläggning av händelser relaterade till gruppen|
-|[Brevlåda](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|För e-postkonversationer mellan grupp medlemmar. Denna inkorg har en e-postadress och kan anges för att acceptera meddelanden från personer utanför gruppen, till och med utanför organisationen, ungefär som en traditionell distributions lista.|
-|[OneNote-anteckningsbok](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|För att samla idéer, forskning och information|
-|[Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|För att tilldela och hantera projektuppgifter bland grupp medlemmarna|
-|[Power BI-arbetsyta](https://docs.microsoft.com/power-bi/collaborate-share/service-new-workspaces)|Ett data samarbets utrymme med instrument paneler och rapporter|
-|[Projekt och översikt](https://support.microsoft.com/project)|Webbaserade verktyg för projektledning|
-|[SharePoint-gruppwebbplats](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|En central lagrings plats för information, länkar och innehåll som rör din grupp|
-|[Strömma](https://support.microsoft.com/microsoft-stream)|En video direkt uppspelnings tjänst|
-|[Teams](https://support.microsoft.com/teams)|En chatt-baserad arbets yta i Microsoft 365|
-|[Yammer-grupp](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)|En gemensam plats för konversationer och informations delning|
+|[Kalender](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a)|För schemaläggning av händelser som är relaterade till gruppen|
+|[Inkorgen](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|För e-postkonversationer mellan gruppmedlemmar. Den här inkorgen har en e-postadress och kan ställas in för att ta emot meddelanden från personer utanför gruppen och även utanför organisationen, ungefär som en traditionell distributionslista.|
+|[OneNote-anteckningsbok](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|Samla idéer, forskning och information|
+|[Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|För att tilldela och hantera projektuppgifter bland gruppmedlemmarna|
+|[Power BI-arbetsyta](https://docs.microsoft.com/power-bi/collaborate-share/service-new-workspaces)|En samarbetsyta för data med instrumentpaneler och rapporter|
+|[Projekt och översikt](https://support.microsoft.com/project)|Webbaserade projekthanteringsverktyg|
+|[SharePoint-gruppwebbplats](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|En central lagringsplats för information, länkar och innehåll som rör gruppen|
+|[Strömma](https://support.microsoft.com/microsoft-stream)|En tjänst för direktuppspelning av video|
+|[Teams](https://support.microsoft.com/teams)|En chattbaserad arbetsyta i Microsoft 365|
+|[Yammer grupp](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)|En gemensam plats för konversationer och för att dela information|
 
-Microsoft 365-grupper innehåller flera olika styrnings kontroller, inklusive en policy för utgångs datum, namn regler och en blockerad ord policy som hjälper dig att hantera grupper i din organisation. Eftersom grupp kontroll medlemskap och åtkomst till den här sviten är en viktig del i hur du hanterar samarbete i Microsoft 365.
+Microsoft 365 Groups innehåller flera olika hanteringskontroller, bland annat en förfalloprincip, namnkonventioner och en princip för blockerade ord som hjälper dig att hantera grupper i organisationen. Eftersom grupper styr medlemskapet och åtkomsten till den här resurssviten är hanteringen av grupper en viktig del av samarbetet i Microsoft 365.
 
-## <a name="define-a-collaboration-strategy-for-your-organization"></a>Definiera en samarbets strategi för din organisation
+## <a name="define-a-collaboration-strategy-for-your-organization"></a>Definiera en samarbetsstrategi för organisationen
 
-Det finns flera ställen att samar beta och ha konversationer i Microsoft 365. Förstå var användarna kan starta konversationer kan hjälpa dig att definiera en strategi för kommunikation.
+Det finns flera platser för samarbete och konversationer i Microsoft 365. Att förstå var användare kan starta konversationer kan hjälpa dig att definiera en strategi för kommunikation.
 
-Det finns tre huvudsakliga kommunikations metoder i Microsoft 365:
+Det finns tre huvudsakliga kommunikationsmetoder som stöds av Microsoft 365:
 
 - Outlook: samarbete via e-post med en delad gruppinkorg och kalender
-- Microsoft Teams: en beständig chatt-baserad arbets yta där du kan ha informella samtal i real tid med olika ämnen, ordnade efter specifika under grupper
-- Yammer: social erfarenhet för företag
+- Microsoft Teams: en beständig chattbaserad arbetsyta där du kan ha informella konversationer i realtid om olika ämnen, ordnade efter specifika undergrupper
+- Yammer: företagets sociala upplevelse för samarbete
 
-![Diagram som visar när du ska använda Teams, Yammer och Outlook](../media/inner-loop-outer-loop.png)
+![Diagram som visar när teams, Yammer och Outlook ska användas](../media/inner-loop-outer-loop.png)
 
-- Teams: chatt-baserad arbets yta (höghastighets samarbete) – inre loop
-  - Byggd för samarbete med de personer användarna samarbetar med varje dag
-  - Placerar information lättillgängligt för användarna i en enda upplevelse
+- Teams: chattbaserad arbetsyta (hög hastighet samarbete) – inre loop
+  - Skapat för samarbete med de personer som dina användare arbetar med varje dag
+  - Gör att information finns nära till hands för användare i samma upplevelse
   - Lägga till flikar, kopplingar och robotar
-  - Live chatt, ljud-och video konferens, registrerade möten
+  - Livechatt, ljud-/videokonferens, inspelade möten
 
-- Yammer: ansluta i organisationsschemat (företags social) – yttre loop
-  - Communitys med övning – kors funktionella grupper av personer som delar ett gemensamt intresse eller kunnande, men som inte nödvändigt vis arbetar tillsammans i dag-till-dags basis
-  - Ledarskaps förbindelse, utbildnings grupper, rollbaserade samhällen
+- Yammer: ansluta i hela organisationen (företagets sociala nätverk) – yttre slinga
+  - Övningsgemenskaper – Tvärfunktionella grupper med personer som delar ett gemensamt intresse eller expertkunskap, men som inte nödvändigtvis arbetar tillsammans i det dagliga arbetet
+  - Ledningsanslutning, utbildningsgemenskaper, rollbaserade communities
 
-- Post låda och kalender (e-postbaserad samarbete)
+- Postlåda och kalender (e-postbaserat samarbete)
   - Används för riktad kommunikation med en grupp personer
-  - Delad kalender för möten med andra grupp medlemmar
+  - Delad kalender för möten med andra gruppmedlemmar
  
-När du bestämmer dig för hur du vill använda samarbets funktioner i Microsoft 365 bör du överväga de här kommunikations metoderna och vilka användarna sannolikt kommer att använda i olika situationer.
+När du avgör hur du vill använda samarbetsfunktionerna i Microsoft 365 bör du tänka på de här kommunikationssätten och vilka användare som förmodligen kommer att använda i olika scenarier.
 
 > [!NOTE]
-> När en ny Office 365-grupp skapas via Yammer eller teams visas den inte i Outlook eller adress boken eftersom den primära kommunikationen mellan dessa användare sker i sina respektive klienter. Yammer-grupper kan inte anslutas till team.
+> När en ny Office 365-grupp skapas via Yammer eller Teams visas inte gruppen i Outlook eller adressboken eftersom den primära kommunikationen mellan dessa användare sker i respektive klienter. Yammer grupper kan inte anslutas till Teams.
 
 
 ## <a name="best-practices"></a>Metodtips
 
-När du startar planerings processen för styrning bör du tänka på följande:
+När du börjar processen för styrningsplanering bör du ha dessa metodtips i åtanke:
 
-- **Prata med användarna** – identifiera dina största användare av samarbets funktioner och träffa dem för att förstå deras grundläggande företags behov och användnings fall.
+- **Prata med dina användare** – identifiera dina största användare av samarbetsfunktioner och träffa dem för att förstå deras grundläggande affärskrav och använda fallscenarier.
 
-- **Utjämna risker och fördelar** – granska dina affärer, regler, juridik-och efterföljandekrav och planera en lösning som optimerar för alla resultat.
+- **Balansera risker och fördelar** – granska dina affärs-, regel-, juridiska och efterlevnadsbehov och planera en lösning som optimerar för alla resultat.
 
-- **Anpassa sig till olika organisationer och olika typer av innehåll och scenarier** -titta på de olika behoven för olika grupper eller avdelningar och olika typer av innehåll, till exempel intranät innehåll och en användares OneDrive-innehåll.
+- **Anpassa till olika organisationer** och olika typer av innehåll och scenarier – tänk på olika behov för olika grupper eller avdelningar och olika typer av innehåll, t.ex. intranätinnehåll kontra en användares OneDrive-innehåll.
 
-- **Justera till företags prioriteringar** -företags mål hjälper dig att definiera hur lång tid och energi du behöver för att investera i styrning.
+- **Justera affärsprioriteringar** – affärsmål hjälper dig att definiera hur mycket tid och energi du behöver för att investera i styrning.
 
-- Med funktioner för **att bädda in styr beslut direkt i de lösningar du skapar** -många styrnings beslut kan implementeras genom att aktivera eller inaktivera funktionerna i Microsoft 365.
+- Bädda in **styrningsbeslut direkt i de lösningar du** skapar – många styrningsbeslut kan implementeras genom att aktivera eller inaktivera funktioner i Microsoft 365.
 
-- **Stärk dig med utbildning** -anpassningsbara lösningar som [Microsoft 365 Learning-vägar](https://docs.microsoft.com/office365/customlearning) för att säkerställa att dina organisations specifika förväntningar är förstärkta med utbildning från Microsoft.
+- **Förstärker med** utbildning – anpassa lösningar som Utbildningsvägar i [Microsoft 365](https://docs.microsoft.com/office365/customlearning) för att säkerställa att de förväntningar som gäller just din organisation förstärks med utbildning från Microsoft.
 
-- **Ha en strategi för att kommunicera styrnings politik och rikt linjer i din organisation** – skapa ett Microsoft 365 Adoption Center på en SharePoint-kommunikations webbplats för att kommunicera principer och procedurer.
+- **Ha en strategi för att** förmedla principer och riktlinjer för styrning i din organisation – skapa ett Microsoft 365 Adoption Center i en SharePoint-kommunikationswebbplats för att kommunicera principer och procedurer.
 
-- **Definiera roller och ansvars områden** -identifiera din styrelse grupp och arbeta via viktiga styr beslut om etablering och namngivning och extern åtkomst och gå sedan igenom de återstående besluten.
+- **Definiera roller och ansvarsområden** – identifiera ditt huvudteam för styrning och arbeta med viktiga styrningsbeslut om etablering, namngivning och extern åtkomst först, och arbeta sedan med återstående beslut.
 
-- Gå igenom **dina beslut när företags-och teknik ändringar** -uppfyller regelbundet för att granska nya funktioner och nya förväntningar.
+- **Gå tillbaka till dina beslut när företaget och tekniken förändras** – träffas regelbundet för att granska nya funktioner och nya affärsförväntningar.
 
-Om du vill veta mer om de här metoderna läser [du skapa din plan för hantering av samarbete](collaboration-governance-first.md).
+Mer information om hur du skapar en plan för styrning av samarbete finns i Skapa en plan [för styrning av samarbete.](collaboration-governance-first.md)
 
-## <a name="end-user-impact-and-change-management"></a>Slutanvändarens effekt och ändrings hantering
+## <a name="end-user-impact-and-change-management"></a>Slutanvändareffekter och ändringshantering
 
-Eftersom grupper och team kan skapas på flera olika sätt rekommenderar vi att du använder den metod som passar din organisation bäst:
+Eftersom grupper och team kan skapas på flera olika sätt rekommenderar vi att användarna utbildas för att använda den metod som passar bäst för din organisation:
 
-- Om din organisation utför större delen av sin kommunikation via e-post kan du be användarna att skapa grupper i Outlook.
-- Om din organisation använder SharePoint eller om du migrerar från lokala SharePoint-användare kan du be användarna att skapa SharePoint-gruppwebbplatser för samarbete.
-- Om din organisation har distribuerat Teams kan du be användarna att skapa ett team när de behöver ett samarbets utrymme.
+- Om organisationen kommunicerar via e-post bör du be användarna att skapa grupper i Outlook.
+- Om din organisation använder SharePoint eller migrerar från SharePoint lokalt, instruerar du användarna att skapa SharePoint-gruppwebbplatser för samarbete.
+- Om din organisation har distribuerat Teams ska du be användarna att skapa ett team när de behöver ett samarbetsutrymme.
 
-Det gör det lättare för användarna att undvika förvirring om hur grupper relaterar till deras relaterade tjänster. Mer information om hur du pratar med användare om grupper finns i avsnittet [förklara Microsoft 365-grupper till användarna](../admin/create-groups/explain-groups-knowledge-worker.md).
+På så sätt undviker du förvirring om användare inte känner till hur grupper relaterar till sina relaterade tjänster. Mer information om hur du talar om grupper för användarna finns i [Förklara Microsoft 365-grupper för användarna.](../admin/create-groups/explain-groups-knowledge-worker.md)
 
-## <a name="key-governance-capabilities-and-licensing-requirements"></a>Viktiga styr funktioner och licens krav
+## <a name="key-governance-capabilities-and-licensing-requirements"></a>Viktiga hanteringsfunktioner och licenskrav
 
-Styr funktioner för samarbete i Microsoft 365 inkluderar funktioner i Microsoft 365, team, SharePoint och Azure Active Directory.
+Hanteringsfunktioner för samarbete i Microsoft 365 inkluderar funktioner i Microsoft 365, Teams, SharePoint och Azure Active Directory.
 
 | Resurs eller funktion | Beskrivning | Licensiering |
 |:----------------------|:------------|:----------|
-|Grupp-och webbplats delning|Kontrol lera om team, grupper och webbplatser kan delas med personer utanför organisationen.|Microsoft 365 E5 eller E3|
-|Tillåt/blockera domän|Begränsa delning med personer utanför din organisation till personer från specifika domäner.|Microsoft 365 E5 eller E3|
-|Standard sidan för att skapa webbplatser|Tillåta eller hindra användare från att skapa sina egna SharePoint-webbplatser.|Microsoft 365 E5 eller E3|
-|Begränsad webbplats-och fildelning|Begränsa webbplats-, fil-och mappdelning till medlemmar i en viss säkerhets grupp.|Microsoft 365 E5 eller E3|
-|Begränsad grupp skapande|Begränsa grupp-och grupp skapande till medlemmar i en viss säkerhets grupp.|Microsoft 365 E5 eller E3 med Azure AD Premium-eller Azure AD-EDU-licenser|
-|Namn princip för grupper|Tillämpa prefix eller suffix på grupp-och team namn.|Microsoft 365 E5 eller E3 med Azure AD Premium-eller Azure AD-EDU-licenser|
-|Policy för giltighets tid för grupp|Ange att inaktiva grupper och team ska upphöra och tas bort efter en viss tids period.|Microsoft 365 E5 eller E3 med Azure AD Premium-licenser|
-|Gäståtkomst per grupp|Tillåt eller förhindra grupp-och grupp delning med personer utanför organisationen per grupp.|Microsoft 365 E5 eller E3|
+|Grupp- och webbplatsdelning|Kontrollera om grupper, grupper och webbplatser kan delas med personer utanför organisationen.|Microsoft 365 E5 eller E3|
+|Tillåt/blockera domän|Begränsa delning med personer utanför organisationen till personer från specifika domäner.|Microsoft 365 E5 eller E3|
+|Självbetjäning för att skapa webbplatser|Tillåta eller förhindra användare från att skapa egna SharePoint-webbplatser.|Microsoft 365 E5 eller E3|
+|Begränsad webbplats- och fildelning|Begränsa webbplats-, fil- och mappdelning till medlemmar i en viss säkerhetsgrupp.|Microsoft 365 E5 eller E3|
+|Begränsad skapande av grupp|Begränsa skapande av team och grupper till medlemmar i en viss säkerhetsgrupp.|Microsoft 365 E5 eller E3 med Azure AD Premium eller Azure AD Basic EDU-licenser|
+|Namngivningsprincip för grupp|Framtvinga prefix och suffix i grupp- och gruppnamn.|Microsoft 365 E5 eller E3 med Azure AD Premium eller Azure AD Basic EDU-licenser|
+|Förfalloprincip för grupper|Ställ in inaktiva grupper och team så att de upphör att gälla och tas bort efter en angiven tidsperiod.|Microsoft 365 E5 eller E3 med Azure AD Premium-licenser|
+|Gäståtkomst per grupp|Tillåta eller förhindra grupp- och gruppdelning med personer utanför organisationen per grupp.|Microsoft 365 E5 eller E3|
 
-## <a name="collaboration-governance-planning-step-by-step"></a>Planerings steg-för-steg-samarbete för samarbets styrning
+## <a name="collaboration-governance-planning-step-by-step"></a>Planering av samarbetsstyrning steg för steg
 
-Följ de här grundläggande stegen för att skapa din plan ritning:
+Följ de här grundläggande stegen för att skapa din styrningsplan:
 
-1. Tänk på viktiga företags mål och processer- [skapa din plan ritning](collaboration-governance-first.md) för att uppfylla behoven hos ditt företag.
-2. Förstå inställningar i tjänster – [Inställningar i grupper och SharePoint](groups-sharepoint-governance.md) interagerar med varandra, som gör [Inställningar i grupper, SharePoint och team](groups-sharepoint-teams-governance.md) och [andra tjänster](groups-services-interactions.md). Se till att du förstår dessa interaktioner när du planerar din styrnings strategi.
-3. Planera för att hantera användar åtkomst-planera [vilken behörighets nivå du vill tilldela användare i grupper, SharePoint och team](groups-teams-access-governance.md).
-4. Planera inställningar för efterlevnad-granska tillgängliga [alternativ för kompatibilitet för Microsoft 365-grupper,-team och SharePoint-samarbete](groups-teams-compliance-governance.md).
-5. Planera för kommunikation-granska de tillgängliga [kommunikations alternativen för kommunikation under samarbete](groups-teams-communication-governance.md).
-6. Planera för organisationen och livs cykel styrelserna – Välj [de principer du vill använda för grupp-och grupp skapande, namn, förfallo datum och arkivering](plan-organization-lifecycle-governance.md). Förstå även [slutet av livs cykel alternativen för grupper, team och Yammer](end-life-cycle-groups-teams-sites-yammer.md)
+1. Överväg viktiga affärsmål och -processer – [skapa en styrningsplan](collaboration-governance-first.md) för att uppfylla behoven i din verksamhet.
+2. Förstå inställningar i tjänster – inställningar i grupper och [SharePoint](groups-sharepoint-governance.md) interagerar med varandra, liksom i inställningar i [grupper, SharePoint och Teams](groups-sharepoint-teams-governance.md) och [andra tjänster.](groups-services-interactions.md) Se till att du förstår dessa interaktioner när du planerar din strategi för styrning.
+3. Planera att hantera användaråtkomst – [planera vilken åtkomstnivå du vill bevilja användare i grupper, SharePoint och Teams.](groups-teams-access-governance.md)
+4. Planera att hantera inställningar för efterlevnad – granska de tillgängliga [efterlevnadsalternativen för Microsoft 365-grupper, Teams och SharePoint-samarbeten.](groups-teams-compliance-governance.md)
+5. Planera för hantering av kommunikation – granska tillgängliga alternativ [för hantering av kommunikation för samarbetsscenarier.](groups-teams-communication-governance.md)
+6. Planera för styrning av organisation och livscykel – välj de principer du vill använda för att skapa grupper och [team, namnge,](plan-organization-lifecycle-governance.md)gå ut och arkivera. Förstå även slutet [av livscykelalternativen för grupper, team och Yammer](end-life-cycle-groups-teams-sites-yammer.md)
 
-![Bild av rekommenderade styr steg](../media/collaboration-governance-steps.png)
+![Illustration av rekommenderade styrningssteg](../media/collaboration-governance-steps.png)
 
 ## <a name="training-for-administrators"></a>Utbildning för administratörer
 
-Med de här utbildnings modulerna kan du lära dig hur du samarbetar i team och SharePoint.
+De här utbildningsmodulerna från Microsoft Learn kan hjälpa dig att lära dig styrningsfunktioner i Microsoft 365.
 
-#### <a name="teams"></a>Teams
+#### <a name="information-protection"></a>Informationsskydd
 
-|Höjd|Hantera grupp samarbete med Microsoft Teams|
+|Utbildning:|Hantera informationsskydd och styrning|
 |:---|:---|
-|![Utbildnings ikonen Teams](../media/manage-team-collaboration-with-microsoft-teams.svg)|Hantera grupp samarbete med Microsoft Teams introducerar dig funktioner och funktioner i Microsoft Teams, det centrala navet för grupp samarbete i Microsoft 365. Du får lära dig hur du kan använda Teams för att under lätta samarbete och kommunikation inom din organisation, både på och av lokalt, på en mängd olika enheter — från Station ära datorer till surfplattor till telefoner – samtidigt som du utnyttjar alla funktioner i Office 365-program. Du får mer information om hur Teams erbjuder en omfattande och flexibel miljö för samarbete mellan program och enheter. Den här utbildnings vägen kan hjälpa dig att förbereda Microsoft 365 Certified: Teams-administratören för att koppla ett certifikat.<br><br>2 HR 17 min-Learning Path-5 moduler|
+|![Utbildningsikon för informationsskydd](../media/information-protection-governance.svg)|Mängden data som skapas i dag ökar snabbare än någonsin, anställda vill få jobbet gjort var som helst och regelbilden förändras hela tiden. Microsofts lösningar för informationsskydd och styrning hjälper organisationer att skapa rätt balans mellan att skydda sina data och sina användare produktiva. Den här utbildningsvägen kan hjälpa dig att förbereda dig för Microsoft 365 Certified: Security Administrator Associate och Microsoft 365 Certified: Enterprise Administration Expert-certifieringar.<br><br>5 t 13 min - Utbildningsväg - 7 moduler|
 
 > [!div class="nextstepaction"]
-> [Starta >](https://docs.microsoft.com/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
+> [Starta >](https://docs.microsoft.com/learn/modules/m365-compliance-information-governance/introduction/)
 
-#### <a name="sharepoint"></a>SharePoint
+<br><br>
 
-|Höjd|Samar beta med SharePoint i Microsoft 365|
+|Utbildning:|Skydda företagsinformation med Microsoft 365|
 |:---|:---|
-|![Utbildnings ikon för SharePoint](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|Med hantera delat innehåll i Microsoft SharePoint får du en introduktion till funktioner och funktioner i SharePoint, och hur det fungerar med Microsoft 365. Du får mer information om de olika typerna av SharePoint-webbplatser, inklusive nav webbplatser, samt informations skydd, rapportering och övervakning. Du får också lära dig hur du kan använda fil-och mappdelning för SharePoint för att optimera samarbetet, hur du delar filer externt och hur du hanterar SharePoint-webbplatser i administrations centret för SharePoint. Med den här utbildnings vägen kan du förbereda Microsoft 365 Certified: lag för certifierings administratören.<br><br>1 timme 14 min-Learning Path-4 moduler|
+|![Utbildningsikon för Teams](../media/protect-enterprise-information-microsoft-365.svg)|Det är svårare än någonsin att skydda och skydda organisationens information. I utbildningsvägen Skydda företagsinformation med Microsoft 365 lär du dig hur du skyddar känslig information från att oavsiktligt skriva över eller felaktigt, hur du identifierar och klassificerar data, hur du skyddar dem med känslighetsetiketter och hur du både övervakar och analyserar känslig information för att skydda mot förlust. Den här utbildningsvägen kan hjälpa dig att förbereda dig för Microsoft 365 Certified: Security Administrator Associate och Microsoft 365 Certified: Enterprise Administration Expert-certifieringar.<br><br>1 t - Utbildningsväg - 5 moduler|
 
 > [!div class="nextstepaction"]
-> [Starta >](https://docs.microsoft.com/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
+> [Starta >](https://docs.microsoft.com/learn/modules/m365-security-info-overview/introduction/)
 
-## <a name="training-for-end-users"></a>Utbildning för slutanvändare
+#### <a name="security-and-compliance"></a>Säkerhet och efterlevnad
 
-Med dessa utbildnings funktioner kan användarna använda team, grupper och SharePoint för samarbete i Microsoft 365.
-
-|Teams|SharePoint|
+|Utbildning:|Demonstrera grundläggande kunskaper om säkerhets- och efterlevnadsfunktioner i Microsoft 365|
 |:---|:---|
-|![Konfigurera och anpassa din grupp utbildnings ikon](../media/set-up-customize-team-training.png)<br>**[Konfigurera och anpassa ditt team](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![Ikonen för SharePoint-resurstjänsten och-synkronisering](../media/sharepoint-share-sync-training.png)<br>**[Dela och synkronisera](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
-|![Ikonen för att ladda upp och hitta filer](../media/smc-teams-upload-find-files-training.png)<br>**[Ladda upp och hitta filer](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
-|![Ikonen samar beta i team och kanaler](../media/teams-collaborate-channels-training.png)<br>**[Samar beta i team och kanaler](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**|||
+|![Ikon för utbildning om säkerhet och efterlevnad](../media/microsoft-365-security-and-compliance-capabilities.svg)|Läs mer om områdena för säkerhets- och efterlevnadslösningar i Microsoft 365 och vilka funktioner som finns tillgängliga för att hjälpa företag att skydda sitt företag och uppfylla kraven i regelverken. Om du inte är bekant med grundläggande molnberäkningskoncept rekommenderar vi att du använder molnkoncept – [principer för molntjänster.](https://docs.microsoft.com/learn/modules/principles-cloud-computing/index)<br><br>3 t 11 min - Utbildningsväg - 8 moduler|
+
+> [!div class="nextstepaction"]
+> [Starta >](https://docs.microsoft.com/learn/modules/what-is-m365/1-introduction/)
 
 ## <a name="illustrations"></a>Illustrationer
 
-De här illustrationerna hjälper dig att förstå hur grupper och team interagerar med andra tjänster i Microsoft 365 och vilka funktioner för styrning och kompatibilitet som hjälper dig att hantera de här tjänsterna i din organisation.
+De här illustrationerna hjälper dig att förstå hur grupper och team interagerar med andra tjänster i Microsoft 365 och vilka styrnings- och efterlevnadsfunktioner som är tillgängliga för att hjälpa dig att hantera de här tjänsterna i din organisation.
 
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>Grupper i Microsoft 365 för IT-arkitekter
 Det IT-arkitekter behöver veta om grupper i Microsoft 365
@@ -204,35 +207,41 @@ Den logiska arkitekturen för produktivitetstjänster i Microsoft 365, med Micro
 |:-----|:-----|
 |[![Miniatyrbild av affischen för Teams logiska arkitektur](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Uppdaterad i april 2019   |Microsoft erbjuder ett utbud av produktivitetstjänster som samverkar för att tillhandahålla samarbetsupplevelser med funktioner för datastyrning, säkerhet och efterlevnad. <br/> <br/>Den här serien med illustrationer ger en översikt över produktivitetstjänsternas logiska arkitektur för företagsarkitekter, med Microsoft Teams i spetsen.|
 
-### <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365 informations skydd och funktioner för efterlevnad
+### <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Funktioner för informationsskydd och efterlevnad i Microsoft 365
 
-Microsoft 365 innehåller en mängd olika funktioner för informations skydd och efterlevnad. Tillsammans med Microsofts produktivitets verktyg är de här funktionerna utformade för att hjälpa organisationer att samar beta i real tid, samtidigt som de uppfyller stränga villkor för efterlevnad. 
+Microsoft 365 innehåller en omfattande uppsättning funktioner för informationsskydd och efterlevnad. Tillsammans med Microsofts produktivitetsverktyg är de här funktionerna utformade för att hjälpa organisationer att samarbeta i realtid samtidigt som de har ett strikt ramverk för regelefterlevnad. 
 
-Denna uppsättning illustrationer använder en av de mest reglerade industrierna, finans tjänsterna, för att demonstrera hur dessa funktioner kan användas för att åtgärda gemensamma reglerings krav. Du kan anpassa illustrationerna för eget bruk. 
+I den här uppsättningen illustrationer används en av de mest reglerade branscherna, finansiella tjänster, för att visa hur dessa funktioner kan tillämpas för att uppfylla vanliga regelkrav. Du kan anpassa illustrationerna för eget bruk. 
 
 
 | Objekt | Beskrivning |
 |:-----|:-----|
-|[![Modellaffisch: Microsoft 365 illustrationer för informationsskydd och efterlevnadsfunktioner](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Engelska:[Ladda ned som PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [Hämta som Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japanska[Ladda ned som PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)\| [Hämta som Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Uppdaterad i november 2020|Innehåller: <ul><li>  Microsoft Informationsskydd och dataförlustskydd </li><li>Bevarande principer och bevarande etiketter </li><li>Informationsbarriärer</li><li>Efterlevnad av kommunikation</li><li>Intern risk</li><li>Datainmatning för tredje part</li>|
+|[![Modellaffisch: Microsoft 365 illustrationer för informationsskydd och efterlevnadsfunktioner](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Engelska:[Ladda ned som PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [Hämta som Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japanska[Ladda ned som PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)\| [Hämta som Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Uppdaterad i november 2020|Innehåller: <ul><li>  Microsoft Informationsskydd och dataförlustskydd </li><li>Kvarhållningsprinciper och -etiketter </li><li>Informationsbarriärer</li><li>Kommunikationsefterlevnad</li><li>Intern risk</li><li>Datainmatning för tredje part</li>|
 
-## <a name="conference-sessions"></a>Konferens-sessioner
+## <a name="conference-sessions"></a>Konferenssessioner
 
-Se dessa konferens samtal för att lära dig mer om styrning för Microsoft 365-grupper och-team.
+Titta på de här konferenssessionerna om du vill veta mer om styrning för Microsoft 365-grupper och Teams.
 
-**Programmering**
+**Grunderna**
 
-Lär dig grunderna och nya innovationer i Microsoft 365-grupper, inklusive ledning och styrelse trafik, metod tips för att driva användning och antagande samt själv service.
+Lär dig grunderna och nya innovationer i Microsoft 365-grupper, inklusive hantering och styrning på en skala, metodtips för att driva användning och införande och självbetjäning.
 
-- [Ta med Microsoft 365-grupper](https://www.youtube.com/watch?v=dAamBF1gb7M)
+- [Microsoft 365-grupper](https://www.youtube.com/watch?v=dAamBF1gb7M)
 
 **Styrning**
 
-Lär dig hur du konfigurerar gruppernas livs cykel, namngivnings principer, klassificerings etiketter, samarbete med externa gäster och hanterar behörighet för att skapa grupper.
+Lär dig konfigurera livscykeln för grupps giltighetstid, namnprinciper, klassificeringsetiketter, samarbete med externa gäster och hantera behörigheter för att skapa grupper.
 
-- [Omvandla samarbete och bekämpa skuggat med Office 365-grupper](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
+- [Transformera samarbete och bekämpa skuggning av IT med Office 365-grupper](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
 
-**Kund exempel**
+**Kundexempel**
 
-Se ett exempel på hur Microsoft 365 Groups, SharePoint, teams och Yammer samarbetar för att tillhandahålla en global samarbets plattform.
+Se ett bakom kulisserna-exempel på hur Microsoft 365-grupper, SharePoint, Teams och Yammer samarbetar för att tillhandahålla en global samarbetsplattform.
 
-- [Hitta ditt samarbete på en plats med Office 365-grupper, SharePoint, teams och Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
+- [Hitta ditt samarbete med Office 365-grupper, SharePoint, Teams och Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
+
+## <a name="see-also"></a>Se även
+
+[Dokumentation för Microsoft 365 Säkerhetscenter](https://docs.microsoft.com/microsoft-365/security)
+
+[Dokumentation för Microsoft 365 Efterlevnadscenter](https://docs.microsoft.com/microsoft-365/compliance)

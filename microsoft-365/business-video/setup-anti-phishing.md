@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig konfigurera skydd mot nätfiske.
-ms.openlocfilehash: bcb6b8bac316b4b74c505656cb9a93e7a87e0830
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 8cef8f916a8a3e2b27dd7f76ddecd921d59ca0c4
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927880"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422009"
 ---
 # <a name="set-up-anti-phishing"></a>Konfigurera skydd mot nätfiske och ATP-principer för skydd mot nätfiske
 

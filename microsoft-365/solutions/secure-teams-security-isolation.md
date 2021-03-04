@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du skapar ett team med en unik känslighetsetikett för säkerhet.
-ms.openlocfilehash: 439dee40d1501801fc09d570614a591259c6f09c
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.openlocfilehash: 5ddd42f9e2f2779ca6bf864554140a3f18d2cdea
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881711"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405708"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Konfigurera en team med säkerhetsisolering
 
@@ -44,6 +44,7 @@ Komponenterna i konfigurationen för en grupp med säkerhets isolering är:
 
 Titta på den här videon för att få en översikt över distributionsprocessen.
 <br>
+<br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
 <a name="poster"></a> För en 1-sidig sammanfattning av detta scenario, se [Microsoft Teams med säkerhetsisoleringsaffisch](../downloads/team-security-isolation-poster.pdf).
@@ -51,6 +52,10 @@ Titta på den här videon för att få en översikt över distributionsprocessen
 [![Microsoft Teams med säkerhets isolering, affisch](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
 Du kan också ladda ned den här affischen i [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)- eller [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx)-format och skriva ut den i pappersstorleken letter, legal eller tabloid (11 x 17).
+
+Prova den här konfigurationen i den egna testlabbmiljön med hjälp av [de här instruktionerna](team-security-isolation-dev-test.md).
+
+Se hur Contoso Corporation använde en isolerad grupp för ett topphemligt projekt i [den här fallstudien](contoso-team-for-top-secret-project.md).
 
 ## <a name="initial-protections"></a>Initiala skydd
 

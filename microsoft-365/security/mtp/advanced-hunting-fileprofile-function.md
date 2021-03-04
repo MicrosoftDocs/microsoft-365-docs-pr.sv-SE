@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 68196f126ac470088d7ba5e2923accc492d8764c
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: f2e92967b8951cd0f5a3c394a537404db1d53819
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929556"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50424029"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -40,7 +40,7 @@ Funktionen `FileProfile()` är en funktion för avancerad sökning som [lägger]
 | Kolumn | Datatyp | Beskrivning |
 |------------|-------------|-------------|
 | SHA1 | sträng | SHA-1 för den fil som den inspelade åtgärden tillämpats på |
-| SHA256 | sträng | SHA-256 för filen som den inspelade åtgärden tillämpats på |
+| SHA256 | sträng | SHA-256 av filen som den inspelade åtgärden tillämpats på |
 | MD5 | sträng | MD5-hash för filen som den inspelade åtgärden tillämpats på |
 | FileSize | int | Storlek på filen i byte |
 | GlobalPrevalence | int | Antal förekomster av entitet som observerats av Microsoft globalt |
@@ -53,7 +53,7 @@ Funktionen `FileProfile()` är en funktion för avancerad sökning som [lägger]
 | IsRootSignerMicrosoft | boolesk | Anger om undertecknaren av rotcertifikatet är Microsoft |
 | IsExecutable | boolesk | Om filen är en PORTABLE Executable-fil (PE) |
 | ThreatName | sträng | Identifieringsnamn för skadlig kod eller andra hot hittades |
-| Publisher | sträng | Namn på organisationen som publicerade filen |
+| Publisher | sträng | Namnet på organisationen som publicerade filen |
 | SoftwareName | sträng | Namnet på programvaruprodukten |
 
 ## <a name="syntax"></a>Syntax
@@ -66,6 +66,10 @@ invoke FileProfile(x,y)
 
 - **x**– kolumn med fil-ID som ska användas för: , , eller `SHA1` `SHA256` `InitiatingProcessSHA1` `InitiatingProcessSHA256` funktionen, `SHA1` om det inte har specificerats
 - **y**– begränsa antalet poster att utöka, 1–1 000; används 100 om de inte är angivna
+
+
+>[!TIP]
+> Tilläggsfunktioner visar endast kompletterande information när de är tillgängliga. Tillgängligheten på informationen är varierad och beror på många faktorer. Tänk på det här när du använder FileProfile() i dina frågor eller när du skapar anpassade identifieringar. För bästa resultat rekommenderar vi att du använder funktionen FileProfile() med SHA1.
 
 ## <a name="examples"></a>Exempel
 

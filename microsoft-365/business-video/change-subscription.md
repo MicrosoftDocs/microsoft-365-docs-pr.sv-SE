@@ -9,32 +9,30 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du flyttar användare till en annan prenumeration.
-ms.openlocfilehash: b3b82dcf029395dbbe49d0e0ea87f87f4494b4f0
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 158201eb4bcdf7e4b7451c1811dcc68692f341ff
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927424"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422969"
 ---
 # <a name="move-users-to-different-subscriptions"></a>Flytta användare till olika prenumerationer
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 
-När användarna byter roller kan de behöva funktioner som inte är tillgängliga i deras nuvarande Microsoft 365 Business Premium-prenumeration. När det händer kan du lägga till en ny prenumeration som innehåller de här funktionerna och tilldela licenser till de personer som behöver dem.
+När användarna byter roller kan de behöva funktioner som inte är tillgängliga i deras nuvarande Microsoft 365 Business Premium-prenumeration. När det händer kan du lägga till en ny prenumeration som innehåller de funktionerna och tilldela licenser till de personer som behöver dem.
 
 ## <a name="try-it"></a>Prova!
 
@@ -48,7 +46,7 @@ När användarna byter roller kan de behöva funktioner som inte är tillgängli
 
 ### <a name="change-the-license-assigned-to-a-user"></a>Ändra licensen som tilldelats en användare
 
-1. I det vänstra navigeringsfönstret i administrationscentret för Microsoft 365 väljer du **Användare** och sedan **Aktiva användare.**
+1. I det vänstra navigeringsfönstret i administrationscentret för Microsoft 365 väljer **du** Användare och sedan **Aktiva användare.**
 1. Välj namnet på användaren och välj sedan **Licenser och program.**
 1. Under **Licenser** visas den nya prenumerationen. Markera kryssrutan bredvid den nya prenumerationen och avmarkera kryssrutan bredvid den gamla prenumerationen.
 1. Välj **Spara ändringar**. Licensen för den nya prenumerationen är nu tilldelad till den här användaren.

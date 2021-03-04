@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du hanterar säkra länkar för att skydda företaget från skadliga webbplatser.
-ms.openlocfilehash: 1f5b3f61871e8d231029156631031dbb0ef4f2f5
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 0f0cc6845f699ba5b05c30e21f876f4b4d47b6a6
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928028"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422256"
 ---
 # <a name="manage-safe-links"></a>Hantera säkra länkar
 
@@ -40,10 +38,10 @@ Microsoft Defender för Office 365 , som tidigare hette Microsoft 365 ATP eller 
 
 1. Gå till [administrationscentret](https://admin.microsoft.com)och välj **Installation.**
 1. Rulla nedåt för **att öka skyddet mot avancerade hot.** Välj **Visa,** **Hantera** och sedan **ATP – säkra länkar.**
-1. Under **Principer som gäller för hela** organisationen väljer du **Standardprincip** och sedan **redigeringsikonen.**
+1. Under **Principer som gäller för hela organisationen** väljer du **Standardprincip** och sedan **redigeringsikonen.**
 1. Ange en URL som du vill blockera.
 1. Välj **Använd säkra länkar i Office-appar, Office för iOS och Android.** välj **Spåra inte när användare klickar på säkra länkar**; och välj **Låt inte användare klicka igenom säkra länkar till den ursprungliga URL:en.** De kanske redan är markerade om du har angett standardprincipen. Välj **Spara**.
-1. Under **Principer som gäller för specifika mottagare** väljer du **regeln** Rekommenderade säkra länkar och sedan **ikonen** Redigera.
+1. Under **Principer som gäller för specifika mottagare** väljer du regeln **Rekommenderade** säkra länkar och sedan **ikonen** Redigera.
 1. Välj **inställningar,** rulla nedåt, ange den URL-adress som du inte vill kontrollera och välj sedan ikonen **Lägg till.**
 1. Välj **det du** vill använda på och välj sedan domännamnet. Markera alla ytterligare domäner som du vill att regeln ska tillämpas på. Välj **Lägg till,** **OK** och sedan **Spara.**
 

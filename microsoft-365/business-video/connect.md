@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du ansluter datorn till Microsoft 365 Business.
-ms.openlocfilehash: 61adae68541233ffb7b7087174c4633995b28fdd
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d1c53feb0940e3ec8fcd040bb119ec3d285a615f
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927316"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422801"
 ---
 # <a name="connect-your-pc-to-microsoft-365-business-premium"></a>Anslut din dator till Microsoft 365 Business Premium
 
@@ -54,7 +52,7 @@ Beroende på hur ditt företag har installerat Microsoft 365 Business kan du eve
 
 1. Välj meddelandet  **kryptering som**  behövs.
 2. Markera **Jag&#39;inte har något annat program för diskkryptering installerat,** kryptera alla mina diskar och välj **sedan Ja.** Fönstret Startar  **BitLocker visas**  med en förloppsstapel.
-3. Välj Ange **en PIN-kod (rekommenderas)** i fönstret Välj hur du **låser upp enheten vid start.**
+3. Välj Ange **en PIN-kod (rekommenderas)** i fönstret Välj hur **du låser upp enheten vid start.**
 4. Ange PIN-koden och ange den sedan igen för att verifiera den. Välj **Ange PIN-kod.**
 5. Välj en metod för att spara en återställningsnyckel för kryptering och välj sedan **Nästa.**
 6. Välj hur mycket av enheten som ska krypteras och välj sedan **Nästa.**

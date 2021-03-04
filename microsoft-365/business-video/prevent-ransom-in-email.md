@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du skapar e-postregler för att förhindra utpressningstrojaner.
-ms.openlocfilehash: 3b45af71aa26beb31e21f5db662091f46343f97d
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 0d8b4a9de881f47752ac0bfbf778453d6ee73046
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926120"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422261"
 ---
 # <a name="create-email-rules-to-prevent-ransomware"></a>Skapa e-postregler för att förhindra utpressningstrojaner
 
@@ -43,7 +41,7 @@ Microsoft 365 hjälper till att skydda företaget mot utpressningstrojaner genom
 1. På fliken Regler väljer du pilen bredvid plustecknet (+) och väljer sedan **Skapa en ny regel.**
 1. På den **nya regelsidan** anger du ett namn för regeln, bläddrar längst ned och väljer **Sedan Fler alternativ.**
 1. Under **Använd den här regeln om,** välj **Valfri** bifogad fil och välj **sedan filnamnstillägget innehåller följande ord.**
-1. I rutan under ange ord eller fraser anger du de filnamnstillägg som du vill att regeln ska tillämpas på, till exempel **filnamnstillägg** som kan innehålla makron. Använd plustecknet (+) om du vill lägga till dem ett i taget.
+1. I rutan under ange ord eller fraser anger du de filnamnstillägg som du vill att regeln ska tillämpas på, till exempel **filnamnstillägg** som kan innehålla makron. Använd plustecknet (+) om du vill lägga till ett i taget.
 
     Läs mer om filtyper genom att läsa [Skydda mot utpressningstrojaner.](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)
 

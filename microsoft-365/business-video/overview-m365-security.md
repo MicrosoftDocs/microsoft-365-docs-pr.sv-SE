@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Läs mer om de säkerhetsfunktioner som ingår i Microsoft 365 för företag.
-ms.openlocfilehash: 72ed57d0f6392d7475f11aebb9da700e6aef78ae
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: e21dc1a9f27f9b5896ace2f09ebb936b8189fdd3
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928144"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422333"
 ---
 # <a name="overview-of-security"></a>Översikt över säkerhet
 
@@ -41,7 +39,7 @@ Microsoft 365 Business Premium tillhandahåller skydd mot hot, dataskydd och enh
 
 ## <a name="threat-protection"></a>Skydd mot hot
 
-Microsoft 365 Business Premium innehåller Office 365 Advanced Threat Protection (ATP), en molnbaserad tjänst för e-postfiltrering som skyddar dig från skadlig programvara, utpressningstrojaner, skadliga länkar med mera. ATP – säkra länkar skyddar dig från skadliga URL:er i e-postmeddelanden och Office-dokument. ATP – säkra bifogade filer skyddar dig mot skadlig kod och virus som bifogas i meddelanden eller dokument.
+Microsoft 365 Business Premium innehåller Office 365 Advanced Threat Protection (ATP), en molnbaserad e-postfiltreringstjänst som skyddar dig från skadlig programvara, utpressningstrojaner, skadliga länkar med mera. ATP – säkra länkar skyddar dig från skadliga URL:er i e-postmeddelanden och Office-dokument. ATP – säkra bifogade filer skyddar dig från skadlig kod och virus som är kopplade till meddelanden eller dokument.
 
 Multifaktorautentisering (MFA) eller tvåstegsverifiering kräver att du presenterar en andra form av autentisering, till exempel en verifieringskod, för att bekräfta din identitet innan du kan komma åt resurser.  
 
@@ -53,9 +51,9 @@ Dataskyddsfunktionerna i Microsoft 365 Business Premium hjälper till att säker
 
 Du kan använda principer för dataförlustskydd (DLP) för att identifiera och hantera känslig information, till exempel personnummer eller kreditkortsnummer, så att den inte felaktigt delas. 
 
-Meddelandekryptering i Office 365 kombinerar krypterings- och åtkomstbehörighetsfunktioner för att säkerställa att endast tilltänkta mottagare kan visa meddelandeinnehållet. Meddelandekryptering i Office 365 fungerar med Outlook.com, Yahoo!, Gmail och andra e-posttjänster.
+Meddelandekryptering i Office 365 kombinerar kryptering och åtkomstbehörighetsfunktioner för att säkerställa att endast tilltänkta mottagare kan visa meddelandeinnehållet. Meddelandekryptering i Office 365 fungerar med Outlook.com, Yahoo!, Gmail och andra e-posttjänster.
 
-Exchange Online arkivering är en molnbaserad arkiveringslösning som fungerar tillsammans med Microsoft Exchange eller Exchange Online för att tillhandahålla avancerade arkiveringsfunktioner, inklusive kvarlighet och redundans. Du kan använda bevarandeprinciper för att hjälpa organisationen att minska ansvarsanvändningen som är kopplad till e-post och annan kommunikation. Om ditt företag måste behålla kommunikation relaterad till rättstvister kan du använda In-Place kvarhållen och rättstvist för att bevara relaterad e-post.
+Exchange Online Arkivering är en molnbaserad arkiveringslösning som fungerar tillsammans med Microsoft Exchange eller Exchange Online för att tillhandahålla avancerade arkiveringsfunktioner, inklusive kvarlighet och redundans. Du kan använda bevarandeprinciper för att hjälpa organisationen att minska ansvarsåtagandena som är förknippade med e-post och annan kommunikation. Om ditt företag måste behålla kommunikation relaterad till rättstvister kan du använda In-Place kvarhållen och rättstvist för att bevara relaterad e-post.
 
 ## <a name="device-management"></a>Enhetshantering
 

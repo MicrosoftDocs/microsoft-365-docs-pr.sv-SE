@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du skapar en grupp-e-postadress.
-ms.openlocfilehash: 8ebbd311e77b509b1d4c2b00ed59012a2e08399d
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 9591d7e70a480200977b6a77cab3a1bf683263ba
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927129"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422573"
 ---
 # <a name="create-a-group-email-address"></a>Skapa en grupp-e-postadress
 
@@ -41,6 +39,6 @@ När du skapar en grupp skapar du en central e-postadress och en plats för sama
 2. Ange ett  **gruppnamn,**  en kortare e-postadress som info och en beskrivning i rutan Skapa grupp.
 3. Öppna sekretess-listrutan och välj **Privat.**
 4. Markera kryssrutan **Skicka all grupp-e-post och händelser till medlemmarnas inkorgar.**
-5. Markera **de anställda** som du vill ska få e-postmeddelandena under Lägg till medlemmar och välj sedan Lägg till **medlemmar.**
+5. Under **Lägg till medlemmar** väljer du de anställda som du vill ska få e-postmeddelandena och väljer sedan Lägg till **medlemmar.**
 6. På fliken **Start** i Outlook väljer du **Gruppinställningar och** sedan **Redigera grupp.**
 7. Markera kryssrutan **Låt personer utanför** organisationen skicka **e-post** till gruppen i rutan Redigera grupp och välj sedan **OK.**

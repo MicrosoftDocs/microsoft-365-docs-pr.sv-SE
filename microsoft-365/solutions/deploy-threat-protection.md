@@ -1,6 +1,6 @@
 ---
-title: Distribuera hot Protection-funktioner i Microsoft 365
-description: Lär dig hur du distribuerar hot Protection Services och säkerhets funktioner i Microsoft 365 E5.
+title: Distribuera skyddsfunktioner för hot i Microsoft 365
+description: Lär dig hur du distribuerar skyddstjänster för hot och säkerhetsfunktioner i Microsoft 365 E5.
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -8,6 +8,7 @@ ms.audience: ITPro
 ms.topic: article
 ms.prod: m365-security
 ms.technology: m365d
+audience: Admin
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
@@ -15,66 +16,70 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 2da2ace96b731baedea9142e211e9301db69000d
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: a2d758ca4628e4cd5f73e77d0d86946e350163c5
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976583"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50424113"
 ---
-# <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Distribuera hot Protection-funktioner i Microsoft 365
+# <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Distribuera skyddsfunktioner för hot i Microsoft 365
 
-[Skadlig program](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware)vara och sofistikerade cyberattacks, till exempel [Filskydd](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats), är ofta en vanlig förekomst. Företag måste skydda sig själva och deras kunder med effektiva IT-säkerhetsfunktioner. Cyberattacks kan orsaka större problem i din organisation, från förlust av förtroende till ekonomisk woes, Business-hotar nertid och mer. Det är viktigt att skydda mot hot, men det kan vara svårt att avgöra var du ska fokusera din organisations tid, ansträngning och resurser. 
+[Skadlig](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware)programvara och avancerade cyberattacker, som [fillösa hot,](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats)är vanligt förekommande. Företag måste skydda sig själva och sina kunder med effektiva IT-säkerhetsfunktioner. Cyberattacker kan orsaka stora problem för organisationen, allt från förlust av förtroende till ekonomiska problem, verksamhetsproblem med mera. Det är viktigt att skydda sig mot hot, men det kan vara svårt att avgöra var du ska fokusera organisationens tid, arbete och resurser. 
 
-Microsoft Security Solutions är inbyggda i våra produkter och tjänster. Automatiserings-och maskin inlärnings funktioner minskar belastningen på dina säkerhets team för att se till att rätt objekt adresseras. Och styrkan hos Microsoft Security Solutions bygger på biljon tals won som vi behandlar varje dag i vårt [intelligenta säkerhets diagram](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph). Microsoft 365-säkerhetslösningen innehåller [microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection), en lösning som sammanförs med dina e-postmeddelanden, data, enheter och identiteter för att måla en bild av avancerade hot mot din organisation.
+Microsofts säkerhetslösningar är inbyggda i våra produkter och tjänster. Automatiserings- och maskininlärningsfunktioner minskar belastningen på dina säkerhetsteam för att se till att rätt objekt hanteras. Och styrkan i Microsofts säkerhetslösningar bygger på var och en av de signaler vi bearbetar varje dag i vår [intelligenta säkerhetsgraf.](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph) Microsoft 365-säkerhetslösningarna omfattar [Microsoft 365 Defender,](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)en lösning som för samman signaler över din e-post, dina data, enheter och identiteter för att måla ut en bild av avancerade hot mot din organisation.
 
 
 Titta på den här videon för att få en översikt över distributionsprocessen.
-
+<br><br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vsI7]
 
-Använd den här artikeln som en guide för implementering av skydds lösning för hotet.
+>[!Note]
+>I den här videon används de tidigare namnen på skyddsprodukter och -funktioner, men begreppen är desamma. En uppdatering av den här videon pågår.
+>
 
-## <a name="threat-protection-in-microsoft-365-e5"></a>Hot Protection in Microsoft 365 E5
+Använd den här artikeln som en guide för att implementera din lösning för hotskydd.
 
-Med [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise-e5-business-software?activetab=pivot%3aoverviewtab) kan du skydda din organisation med anpassningsbar, inbyggd intelligens. Med hotet Protection-funktionerna i Microsoft 365 E5 kan du upptäcka och undersöka avancerade hot, kompromissade identiteter och illasinnade åtgärder i din lokala och moln miljö.
+## <a name="threat-protection-in-microsoft-365-e5"></a>Skydd mot hot i Microsoft 365 E5
 
-I Microsoft 365 E5 är skydds funktionerna för hotet som standard integrerade. Signaler från varje kapacitet till helhet för att upptäcka och reagera på hot. Den kombinerade uppsättningen funktioner ger det bästa skyddet för organisationer, särskilt flera nationella organisationer, jämfört med produkter som inte kommer från Microsoft. Följande bild illustrerar hotet Protection Services och funktioner i Microsoft 365 E5 som beskrivs i den här artikeln.
+[Med Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise-e5-business-software?activetab=pivot%3aoverviewtab) kan du skydda din organisation med anpassningsbar, inbyggd intelligens. Med funktionerna för skydd mot hot i Microsoft 365 E5 kan du identifiera och undersöka avancerade hot, komprometterade identiteter och skadliga åtgärder i din lokala och molnbaserad miljö.
 
-![Översikt över Microsoft 365 Defender](../media/solutions-architecture-center/deploy-threat-protection-across-m365-overview.png)
+I Microsoft 365 E5 är skyddsfunktioner integrerade som standard. Signaler från varje funktion ger en hållfasthet för den övergripande möjligheten att upptäcka och reagera på hot. Den kombinerade uppsättningen funktioner ger det bästa skyddet för organisationer, särskilt multinationella organisationer, jämfört med att köra produkter som inte är Microsoft-produkter. I följande bild visas de skyddstjänster och funktioner för hot i Microsoft 365 E5 som beskrivs i den här artikeln.
 
-Så fort du har distribuerat någon av Defender för Office 365-funktionerna kan du aktivera Microsoft 365 Defender, som ger signalerna och data på ett och samma ställe. 
+![Översikt över Microsoft 365 Defender](../media/deploy-threat-protection/deploy-threat-protection-across-m365-overview.png)
 
-![Koncept bild av instrument panelen för Microsoft 365 Defender](../media/solutions-architecture-center/deploy-threat-protection-across-m365-mtp.png)
+Så snart du har distribuerat någon av Defender för Office 365-funktionerna kan du aktivera Microsoft 365 Defender, som för samman signalerna och data på ett ställe. 
 
-Följande bild visar en rekommenderad sökväg för distribution av de här enskilda funktionerna. 
+![Konceptuell illustration av instrumentpanelen i Microsoft 365 Defender](../media/deploy-threat-protection/deploy-threat-protection-across-m365-mtp.png)
 
-![M365 hot Protection-signaler](../media/solutions-architecture-center/deploy-threat-protection-across-m365.png)
+I följande bild visas en rekommenderad väg för att distribuera de här enskilda funktionerna. 
 
-|Lösning/funktioner  |Beskrivning  |
+![M365 hotskyddssignaler](../media/deploy-threat-protection/deploy-threat-protection-across-m365.png)
+
+|Lösningar/funktioner  |Beskrivning  |
 |---------|---------|
-|Multifaktorautentisering och villkorlig åtkomst     |Skydda mot kompromissade identiteter och enheter. Börja med det här skyddet eftersom det är grundläggande. Konfigurationen som rekommenderas i den här vägledningen inkluderar ett krav för Azure AD Identity-skydd.     |
-|Microsoft Defender for Identity     |  En molnbaserad säkerhets lösning som använder dina lokala Active Directory-signaler för att identifiera, upptäcka och undersöka avancerade hot, kompromissade identiteter och skadliga Insider-åtgärder som riktas till din organisation. Fokusera på Microsoft Defender för identiteten så att den skyddar din lokala och moln infrastrukturen, har inga beroenden eller förutsättningar och kan ge omedelbara fördelar.       | 
-|Microsoft Defender för Office 365     | Skyddar din organisation mot illasinnade hot via e-postmeddelanden, länkar (URL: er) och samarbets verktyg. Skydd mot skadlig program vara, nätfiske, förfalskning och andra typer av attacker. Du rekommenderas att konfigurera Microsoft Defender för Office 365 nästa eftersom det kan ta längre tid att distribuera inställningar från systemet och andra faktorer. <br><br>Obs! se till att konfigurera hot skydds funktionerna som ingår i alla Office 365-prenumerationer (Exchange Online Protection).       |
-|Microsoft Defender för Endpoint    | En Endpoint Protection-plattform som hjälper till att förhindra, upptäcka, undersöka och svara på avancerade hot.  Det kan ta lite tid att distribuera Defender för slut punkten, men konfigurationen kan göras parallellt med andra funktioner.   |
-|Microsoft Cloud App Security     |   En säkerhets koordinator för moln åtkomst för identifiering, undersökning och styrning. Du kan aktivera Microsoft Cloud App Security för att börja samla in data och insikter. Att implementera information och annat riktat skydd i dina SaaS-program inkluderar planering och kan ta längre tid.       | 
+|Multifaktorautentisering och villkorsstyrd åtkomst     |Skydda mot komprometterade identiteter och enheter. Börja med det här skyddet eftersom det är grundläggande. Konfigurationen som rekommenderas i den här vägledningen inkluderar Azure AD Identity Protection som en förutsättning.     |
+|Microsoft Defender for Identity     |  En molnbaserad säkerhetslösning som utnyttjar dina lokala Active Directory DS-signaler (AD DS) för att identifiera, identifiera och undersöka avancerade hot, komprometterade identiteter och skadliga Insider-åtgärder riktade till organisationen. Fokusera sedan på Microsoft Defender för identitet eftersom det skyddar din lokala infrastruktur och molninfrastruktur, inte har några beroenden eller krav och kan ge omedelbar säkerhetsfördelar. | 
+|Microsoft Defender för Office 365     | Skyddar organisationen mot skadliga hot som uppstår genom e-postmeddelanden, länkar (URL:er) och samarbetsverktyg. Skydd mot skadlig programvara, nätfiske, förfalskning och andra attacktyper. Vi rekommenderar sedan att du konfigurerar Microsoft Defender för Office 365 eftersom det kan ta längre tid att distribuera om du vill ändra kontrollen, migrera inställningar från systemet som fungerar bra och andra överväganden. <br><br>Obs! Se till att konfigurera funktionerna för skydd mot hot som ingår i alla Office 365-prenumerationer (Exchange Online Protection).       |
+|Microsoft Defender för Endpoint    | En plattform för slutpunktsskydd som hjälper till att förhindra, upptäcka, undersöka och hantera avancerade hot.  Defender för Endpoint kan ta lite tid att distribuera, men konfigurationen kan göras parallellt med andra funktioner.   |
+|Microsoft Cloud App Security     |   En säkerhetsförmedlare för identifiering, undersökning och styrning av molnåtkomst. Du kan aktivera Microsoft Cloud App Security tidigt för att börja samla in data och insikter. Att implementera information och annat målriktat skydd i SaaS-apparna innebär planering och kan ta längre tid.       | 
 
 > [!TIP]
-> Organisationer med flera säkerhets team kan implementera dessa funktioner parallellt.
+> Organisationer med flera säkerhetsteam kan implementera dessa funktioner parallellt.
 
-## <a name="deploy-your-threat-protection-solution"></a>Distribuera skydds lösning för hotet
+## <a name="deploy-your-threat-protection-solution"></a>Distribuera din lösning för hotskydd
 
-Om du vill vara säker på att organisationen har bästa möjliga skydd kan du ställa in och distribuera din säkerhets lösning så här:
+Konfigurera och distribuera din säkerhetslösning för att inkludera följande steg för att se till att din organisation har bästa möjliga skydd:
 
 1. [Konfigurera principer för multifaktorautentisering och villkorsstyrd åtkomst](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies)
 2. [Konfigurera Microsoft Defender för identitet](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity)
 3. [Aktivera Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender)
 4. [Konfigurera Defender för Office 365](deploy-threat-protection-configure.md#step-4-configure-microsoft-defender-for-office-365)
-5. [Konfigurera Microsoft Defender för slut punkten](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-for-endpoint)
-6. [Konfigurera säkerhet för Microsoft Cloud App](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security)
-7. [Övervaka status och utför åtgärder](deploy-threat-protection-configure.md#step-7-monitor-status-and-take-actions)
+5. [Konfigurera Microsoft Defender för slutpunkt](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-for-endpoint)
+6. [Konfigurera Microsoft Cloud App-säkerhet](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security)
+7. [Övervaka status och vidta åtgärder](deploy-threat-protection-configure.md#step-7-monitor-status-and-take-actions)
 8. [Utbilda användare](deploy-threat-protection-configure.md#step-8-train-users)
 
-Dina skydds funktioner kan konfigureras parallellt, så om du har flera nätverks säkerhets team som är ansvariga för olika tjänster kan de konfigurera organisationens skydds funktioner samtidigt. Följande diagram illustrerar den omfattande processen för distribution av skydds funktioner. 
+Funktionerna för skydd mot hot kan konfigureras parallellt, så om du har flera nätverkssäkerhetsteam som ansvarar för olika tjänster kan de konfigurera din organisations skyddsfunktioner samtidigt. Följande diagram visar en högnivåprocess för distribution av skyddsfunktioner för hot. 
 
-![Process för distribution av hot Protection-funktioner](../media/solutions-architecture-center/deploy-threat-protection-across-m365-grid.png) 
+![Process för distribution av skyddsfunktioner för hot](../media/deploy-threat-protection/deploy-threat-protection-across-m365-grid.png) 

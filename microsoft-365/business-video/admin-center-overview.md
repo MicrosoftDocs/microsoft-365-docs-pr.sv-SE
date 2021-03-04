@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Läs mer om administrationscentret för Microsoft 365.
-ms.openlocfilehash: 3070d6e9ce035786291fab4557648ab6bc520540
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: b936a42629086c8674bd2d89454e98e387b15efc
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927592"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423041"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Översikt över administrationscenter för Microsoft 365
 
@@ -44,12 +42,12 @@ Expandera navigeringsmenyn om du vill visa fler administrativa uppgifter. Du hit
 
 En vanlig uppgift som du kan utföra i administrationscentret är att lägga till en användare. Det gör du genom att **välja Användare,** **Aktiva användare** och sedan Lägga till **en användare.** Ange användarens namn och annan information och välj **sedan Nästa.** Följ anvisningarna för att slutföra tillägget av användaren. När du är klar väljer du **Slutför och** sedan **Stäng.**
 
-Du kan sortera dina aktiva användare efter kolumner, till exempel **visningsnamn** eller **licenser.** Om du vill lägga till fler **kolumner väljer du Välj** kolumner, markerar de kolumner du vill lägga till och väljer sedan **Spara.**
+Du kan sortera dina aktiva användare efter kolumner, till exempel **visningsnamn** eller **licenser.** Om du vill lägga till fler kolumner **väljer du Välj** kolumner, markerar de kolumner du vill lägga till och väljer sedan **Spara.**
 
 Välj en användare om du vill se fler alternativ, till exempel hantera deras produktlicenser.
 
 Om du vill aktivera fler funktioner som ingår i prenumerationen väljer du **Konfigurera.** Här kan du aktivera inloggningssäkerhet, skydd för mobilappar, DLP och andra funktioner som ingår i prenumerationen.
 
-Om du behöver support när som helst väljer **du Behöver hjälp.** Skriv din fråga och ta en titta på länkarna som visas. Om du inte får svaret här väljer du Kontakta **support för** att öppna en servicebegäran. 
+Om du behöver support när som helst väljer **du Behöver hjälp.** Skriv din fråga och ta en del av länkarna som visas. Om du inte får svaret här väljer du Kontakta **support för** att öppna en servicebegäran. 
 
 Mer information om hur du hanterar fakturering, lösenord, användare och administratörer finns i de andra lektionerna i den här kursen.

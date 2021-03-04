@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du skapar och hanterar känslighetsetiketter.
-ms.openlocfilehash: c8d528e7a742ca60345def415ce47b29b371c738
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: e1e7d030065ab5146056d36f396eb5ddd44f360e
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927328"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422789"
 ---
 # <a name="protect-documents-with-sensitivity-labels"></a>Skydda dokument med känslighetsetiketter
 
@@ -38,7 +36,7 @@ Med känslighetsetiketter kan du klassificera och skydda innehåll som är käns
 
 ## <a name="try-it"></a>Prova!
 
-1. Välj [administrationscentret för](https://admin.microsoft.com)efterlevnad **i** administrationscentret.
+1. I [administrationscentret väljer](https://admin.microsoft.com)du **administrationscentret för** efterlevnad.
 1. Välj **Klassificering** och sedan **Känslighetsetiketter.**
 1. Välj **Skapa en etikett** och välj Ja när varningen **visas.**
 1. Ange ett **etikettnamn,** **en knappbeskrivning** och **en beskrivning.** Välj **Nästa**.
@@ -60,7 +58,7 @@ Med känslighetsetiketter kan du klassificera och skydda innehåll som är käns
 1. Ange ett **namn** och **en beskrivning** för principen. Välj **Nästa**.
 1. Granska inställningarna och välj sedan **Publicera.**
 
-För att etiketterna ska fungera måste varje användare ladda ned Azure Information Protection Unified Labeling Client. Sök på webben **efterAzinfoProtection_UL.exe** ladda sedan ned den från Microsoft Download Center och kör den på användarnas datorer.
+För att etiketterna ska fungera måste varje användare ladda ned Azure Information Protection Unified Labeling Client. Sök på webben efter **AzinfoProtection_UL.exe** ladda sedan ned den från Microsoft Download Center och kör den på användarnas datorer.
 
 Nästa gång du öppnar ett Office-program, till exempel Word, visas känslighetsetiketterna som har skapats. Om du vill ändra eller använda en etikett väljer du Känslighet och väljer en etikett.
 

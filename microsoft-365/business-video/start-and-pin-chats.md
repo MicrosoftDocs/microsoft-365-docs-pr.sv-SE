@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du startar och fäster chattar i Microsoft Teams.
-ms.openlocfilehash: 22a24a533f4d3627ac66ab8e0472071ff88eb516
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 02e7336a5de51526e7c1535eb62724823753d8a0
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927820"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421889"
 ---
 # <a name="chat-with-employees-and-customers"></a>Chatta med medarbetare och kunder
 
@@ -37,11 +35,11 @@ Du kan chatta internt med dina kollegor eller chatta med en gästanvändare, til
 
 ## <a name="try-it"></a>Prova!
 
-Starta enskilda chattar eller gruppchattar för att samarbeta i en mindre grupp eller prata privat, och fäst chattar för snabb åtkomst.
+Starta enskilda chattar eller gruppchattar om du vill samarbeta i en mindre grupp eller prata privat, och fäst chattar för snabb åtkomst.
 
 1. I  **Chattar** kan du chatta privat eller i grupp med andra.
 2. Välj **Ny chatt.** :::image type="icon" source="../media/new-chat-icon.png" border="false":::  
-3. Skriv namnet på den person eller de personer du vill kontakta.
+3. Skriv namnet på den person eller de personer som du vill kontakta.
 4. Välj nedåtpilen för att lägga till ett namn i chattgruppen.
 
 Så här ringer du ett video- eller ljudsamtal från en chatt

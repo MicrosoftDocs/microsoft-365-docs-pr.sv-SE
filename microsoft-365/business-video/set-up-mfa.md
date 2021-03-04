@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig konfigurera multifaktorautentisering på telefonen.
-ms.openlocfilehash: b682ec58c73d90b0936c107ab8fef1de5aff867d
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: a41f8b99dfbfc25af0815450b42cb83884e3246e
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925940"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422057"
 ---
 # <a name="set-up-multi-factor-authentication-on-your-phone"></a>Konfigurera multifaktorautentisering på telefonen
 
@@ -38,8 +36,8 @@ Multifaktorautentisering ger större säkerhet för ditt företag. Konfigurera d
 
 ## <a name="try-it"></a>Prova!
 
-1. När du loggar in [https://office.com](https://office.com) på visas uppmaningen Mer **information som** krävs. Välj **Nästa**.
-1. Välj Mobilapp i listrutan På **telefonautentisering** under steg **1.** 
+1. När du loggar in [https://office.com](https://office.com) i visas uppmaningen Mer **information som** krävs. Välj **Nästa**.
+1. Välj Mobilapp i listrutan På **telefonautentisering under** steg **1.** 
 1. Under Hur vill du använda mobilappen? väljer du den metod du vill använda för att logga in:
     - Välj **Ta emot meddelanden för verifiering** för att autentisera direkt från din mobilapp, som kan inkludera fingeravtrycksautentisering.
     - Välj **Använd verifieringskod** om du vill ange en ny verifieringskod varje gång du autentiserar.
@@ -51,4 +49,4 @@ Multifaktorautentisering ger större säkerhet för ditt företag. Konfigurera d
 1. När kontot har lagts till väljer du **Jag vill ha det.**
 1. Välj Nästa på **datorn och** välj sedan **Nästa** igen.
 1. Anteckna koden som visas på din mobila enhet, ange koden på datorn i rutan under Steg **2** och välj sedan **Verifiera.**
-1. I rutorna under **Steg 3** anger du ett telefonnummer för säkerhetskopian, till exempel ditt kontorsnummer, väljer **Nästa** och sedan **Klar.**
+1. I rutorna under **Steg 3** anger du ett telefonnummer för säkerhetskopian, till exempel ditt kontorsnummer, väljer **Nästa** och väljer sedan **Klar.**

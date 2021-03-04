@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du hanterar konfigurera principer för skydd mot dataförlust.
-ms.openlocfilehash: e963cf85fee887b6e91c6e54b00aaa9e5174e3b6
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 54cd508ef0b0cfcf8b71dc86a4903f77a5354c36
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927964"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422069"
 ---
 # <a name="prevent-data-loss-with-dlp"></a>Förhindra dataförlust med DLP
 
@@ -40,8 +38,8 @@ Principer för dataförlustskydd hjälper till att identifiera och skydda känsl
 
 1. Kom igång genom att gå till [administrationscentret](https://admin.microsoft.com)och välja **Installation.**
 1. Rulla ned till **Konfigurera skydd mot dataförlust** och välj sedan **Visa** och sedan **Hantera.**
-1. Om du vill redigera en princip markerar du den, **väljer Redigera princip** och sedan vad du vill ändra. Välj till exempel Platser **om du vill** ändra det som genomsöks.
-1. Om du vill aktivera genomsökning av innehåll i Microsoft Teams ändrar du växlingsknappen till **läget** På och väljer sedan **Spara.**
+1. Om du vill redigera en princip markerar du den, **väljer Redigera princip** och sedan vad du vill ändra. Välj till exempel Platser **för att ändra** det som genomsöks.
+1. Om du vill aktivera genomsökning av innehåll i Microsoft Teams ändrar du växlingsknappen **till** läget På och väljer sedan **Spara.**
 1. Om du vill redigera principinställningarna väljer du **Redigera.**
 1. Du måste ange separata regler som gäller för små och stora mängder känsligt innehåll som upptäckts. Utöka regeln för låg volym. Välj **Redigera regel.**
 1. Granska inställningarna och justera dem efter behov. Du kan till exempel välja att anpassa **texten i e-postmeddelandet** **och anpassa texten i principtipset.** Välj **Spara**.

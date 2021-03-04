@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du planerar ett evenemang med Microsoft Planner.
-ms.openlocfilehash: d978232dffaede882e81a491b4d927183781aa0f
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 11453ae83f636e20cd67cc7a4202e8d6995e09a1
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928106"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422309"
 ---
 # <a name="use-microsoft-planner-to-plan-an-event"></a>Använda Microsoft Planner till att planera ett evenemang
 
@@ -63,7 +61,7 @@ Publicera en kommentar för att diskutera en uppgift med de personer som den är
 
 Använd  **diagram-**  **och tavlavyn**  för att övervaka förloppet för varje gruppmedlem och det övergripande projektet, eller för att sortera och organisera uppgifter.
 
-- Välj  **Diagram** och sedan **Gruppera efter och** slutligen Förfallodatum om **du**  vill se vilken uppgift som förfaller härnäst.
+- Välj  **Diagram** och sedan **Gruppera efter och** slutligen Förfallodatum **om**  du vill se vilken uppgift som förfaller härnäst.
 - Välj  **Tavla** och **sedan Gruppera efter** och slutligen **Förlopp för**  att sortera uppgifter efter förlopp.
 
 **Obs!**  Uppgifterna är ordnade **efter Ej påbörjad,** **Pågående** och Slutförd så att du vet när du är redo att lansera produkten. 

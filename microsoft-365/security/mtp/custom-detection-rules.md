@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d58292f658446259bfab5b1b55c8b462d081421c
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 51a6bc33778248a69e533d9e2077365a63b97e30
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080629"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50424137"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Skapa och hantera regler för anpassade identifieringar
 
@@ -37,7 +37,7 @@ ms.locfileid: "50080629"
 
 Anpassade identifieringsregler är regler som du kan utforma och modifiera [med avancerade sökfrågor.](advanced-hunting-overview.md) Med dessa regler kan du proaktivt övervaka olika händelser och systemhändelser, inklusive misstänkt intrångsaktivitet och felkonfigurerade slutpunkter. Du kan ange att de ska köras med jämna mellanrum, generera aviseringar och vidta svarsåtgärder när det finns matchningar.
 
-## <a name="required-permissions-for-managing-custom-detections"></a>Behörigheter som krävs för att hantera anpassade identifieringar
+## <a name="required-permissions-for-managing-custom-detections"></a>Behörigheter som krävs för hantering av anpassade identifieringar
 
 För att kunna hantera anpassade identifieringar måste du tilldelas en av följande roller:
 
@@ -85,9 +85,9 @@ Om du vill skapa en anpassad identifieringsregel måste frågan returnera följa
 >[!NOTE]
 >Stöd för ytterligare enheter läggs till när nya tabeller läggs till i det [avancerade sökschemat.](advanced-hunting-schema-tables.md)
 
-Enkla frågor, till exempel de som inte använder operatorn eller för att anpassa eller sammanställa resultat, returnerar `project` `summarize` vanligtvis dessa gemensamma kolumner.
+Enkla frågor, till exempel de som inte använder operatorn eller för att anpassa eller sammanställa `project` `summarize` resultat, returnerar vanligtvis dessa gemensamma kolumner.
 
-Det finns olika sätt att se till att mer komplexa frågor returnerar dessa kolumner. Om du till exempel föredrar att aggregera och räkna efter entitet under en kolumn, till exempel, kan du fortfarande returnera och genom att hämta den från den senaste händelsen som innefattar `DeviceId` `Timestamp` varje `ReportId` `DeviceId` unik.
+Det finns flera sätt att se till att mer komplexa frågor returnerar dessa kolumner. Om du till exempel föredrar att aggregera och räkna efter entitet under en kolumn, till exempel, kan du fortfarande returnera och genom att hämta den från den senaste händelsen som innefattar `DeviceId` `Timestamp` varje `ReportId` `DeviceId` unik.
 
 I exempelfrågan nedan räknas antalet unika enheter () med antivirusidentifiering och antalet används för att endast hitta de enheter som har `DeviceId` fler än fem identifieringar. För att returnera det `Timestamp` senaste och motsvarande används `ReportId` `summarize` operatorn med `arg_max` funktionen.
 
@@ -100,7 +100,7 @@ DeviceEvents
 ```
 
 > [!TIP]
-> För bättre frågeprestanda kan du ange ett tidsfilter som matchar den avsedda körfrekvensen för regeln. Eftersom det minsta antalet körningar _är en gång per_ dygn täcker filtreringen för den senaste dagen alla nya data.
+> Du kan förbättra frågeprestandan genom att ange ett tidsfilter som matchar den avsedda körfrekvensen för regeln. Eftersom det minsta antalet körningar _är en gång per_ dygn täcker filtreringen för den senaste dagen alla nya data.
 
 ### <a name="2-create-new-rule-and-provide-alert-details"></a>2. Skapa en ny regel och ange aviseringsinformation.
 
@@ -118,8 +118,8 @@ Med frågan i frågeredigeraren väljer du **Skapa identifieringsregel** och ang
 #### <a name="rule-frequency"></a>Regelfrekvens
 När du sparar eller redigerar en ny regel körs den och söker efter matchningar från de senaste 30 dagarnas data. Regeln körs sedan igen med fasta intervall och tillämpar en sökvaraktighet baserat på den frekvens du väljer:
 
-- **En gång per dygn körs** en gång per dygn och data från de senaste 30 dagarna kontrolleras
-- **Var 12:e** timme körs var 12:e timme och kontrollerar data från de senaste 24 timmarna
+- **Körs en gång per dygn** och kontrollerar data från de senaste 30 dagarna
+- **En gång per dygn** körs var 12:e timme och data från de senaste 24 timmarna kontrolleras
 - **Var 3:e** timme körs var tredje timme och kontrollerar data från de senaste 6 timmarna
 - **Varje timme** körs varje timme och du kontrollerar data från de senaste två timmarna
 
@@ -129,7 +129,7 @@ När du sparar eller redigerar en ny regel körs den och söker efter matchninga
 Välj hur ofta du vill övervaka identifieringar. Tänk på organisationens kapacitet att svara på aviseringarna.
 
 ### <a name="3-choose-the-impacted-entities"></a>3. Välj de enheter som påverkas.
-Identifiera kolumnerna i frågeresultatet där du förväntar dig att hitta den primära påverkade eller påverkade enheten. En fråga kan till exempel returnera avsändarens ( `SenderFromAddress` `SenderMailFromAddress` eller) och mottagarens ( `RecipientEmailAddress` ) adresser. Genom att identifiera vilka av dessa kolumner som representerar den viktigaste påverkade entiteten bidrar du till att tjänsten sammanställer relevanta aviseringar, korrelerar incidenter och målsvarsåtgärder.
+Identifiera kolumnerna i frågeresultatet där du förväntar dig att hitta den primära påverkade eller påverkade enheten. En fråga kan till exempel returnera avsändarens ( `SenderFromAddress` `SenderMailFromAddress` eller) och mottagarens ( `RecipientEmailAddress` ) adresser. Genom att identifiera vilka av dessa kolumner som representerar den viktigaste påverkade enheten bidrar du till att tjänsten sammanställer relevanta aviseringar, korrelerar incidenter och målsvarsåtgärder.
 
 Du kan bara välja en kolumn för varje entitetstyp (postlåda, användare eller enhet). Kolumner som inte returneras av frågan kan inte väljas.
 
@@ -145,10 +145,10 @@ Dessa åtgärder tillämpas på enheter i `DeviceId` kolumnen med frågeresultat
 - **Begränsa programkörning –** anger begränsningar för enheten så att endast filer som har signerats med ett certifikat utfärdat av Microsoft kan köras. [Läs mer om appbegränsningar med Microsoft Defender för Slutpunkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
 
 #### <a name="actions-on-files"></a>Åtgärder för filer
-Med det här alternativet kan du välja att **tillämpa** filåtgärden karantän för filer i `SHA1` , eller kolumnen i `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` frågeresultaten. Den här åtgärden tar bort filen från dess aktuella plats och placerar en kopia i karantän.
+Med det här alternativet kan du välja att **tillämpa** åtgärden karantänfil på filer i `SHA1` , eller kolumnen i `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` frågeresultaten. Den här åtgärden tar bort filen från dess aktuella plats och placerar en kopia i karantän.
 
 #### <a name="actions-on-users"></a>Åtgärder för användare
-Med det här **alternativet vidtas åtgärden Markera** användare som komprometterad för användare i eller kolumnen i `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` frågeresultaten. Den här åtgärden anger att användarnas risknivå ska vara "hög" i Azure Active Directory, vilket utlöser motsvarande [principer för identitetsskydd.](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+Med det här **alternativet vidtas åtgärden** Markera användare som komprometterad för användare i eller kolumnen i `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` frågeresultaten. Den här åtgärden anger att användarnas risknivå ska vara "hög" i Azure Active Directory, vilket utlöser motsvarande [principer för identitetsskydd.](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
 
 > [!NOTE]
 > Åtgärden tillåt eller blockering för anpassade identifieringsregler stöds för närvarande inte i Microsoft 365 Defender.
@@ -156,7 +156,7 @@ Med det här **alternativet vidtas åtgärden Markera** användare som kompromet
 ### <a name="5-set-the-rule-scope"></a>5. Ange regelns omfattning.
 Ange omfattningen för att ange vilka enheter som omfattas av regeln. Omfattningen påverkar regler som kontrollerar enheter och påverkar inte regler som bara kontrollerar postlådor och användarkonton eller identiteter.
 
-När du anger omfattningen kan du välja:
+När du ställer in omfattningen kan du välja:
 
 - Alla enheter
 - Specifika enhetsgrupper
@@ -166,12 +166,18 @@ Endast data från enheter i omfattningen kommer att tillfrågas. Dessutom vidtas
 ### <a name="6-review-and-turn-on-the-rule"></a>6. Granska och aktivera regeln.
 När du har granskat regeln väljer du **Skapa för** att spara den. Regeln för anpassad identifiering körs direkt. Körs igen baserat på konfigurerad frekvens för att söka efter matchningar, generera aviseringar och vidta svarsåtgärder.
 
+
+>[!Important] 
+>Anpassade identifieringar bör regelbundet granskas för effektivitet och effektivitet. Ta dig tid att granska befintliga anpassade identifieringar genom att följa stegen i Hantera befintliga anpassade identifieringsregler för att vara säker på att du skapar identifieringar som utlöser sant [aviseringar.](#manage-existing-custom-detection-rules) <br>  
+Du behåller kontroll över hur omfattande och specifika dina anpassade identifieringar är, så att falska varningar som genereras av anpassade identifieringar kan ange ett behov av att ändra vissa parametrar för reglerna.
+
+
 ## <a name="manage-existing-custom-detection-rules"></a>Hantera befintliga regler för anpassad identifiering
 Du kan visa listan över befintliga anpassade identifieringsregler, kontrollera deras tidigare körningar och granska de aviseringar som de har utlöst. Du kan även köra en regel på begäran och ändra den.
 
 ### <a name="view-existing-rules"></a>Visa befintliga regler
 
-Om du vill visa alla befintliga anpassade identifieringsregler går du till  >  **Anpassad identifiering för söka.** På sidan visas alla regler med följande körningsinformation:
+Om du vill visa alla befintliga anpassade identifieringsregler går du till  >  **Söka efter anpassade identifieringar.** På sidan visas alla regler med följande körningsinformation:
 
 - **Senaste körningen**– när en regel senast körts för att söka efter frågematchningar och generera aviseringar
 - **Status för senaste körningen**– om en regel kördes som den ska
@@ -180,7 +186,7 @@ Om du vill visa alla befintliga anpassade identifieringsregler går du till  >  
 
 ### <a name="view-rule-details-modify-rule-and-run-rule"></a>Visa regeldetaljer, ändra regel och kör regel
 
-Om du vill visa omfattande information om en anpassad identifieringsregel går du till Anpassade identifieringar för söka  >   och väljer sedan namnet på regeln. Du kan sedan visa allmän information om regeln, inklusive information om dess körningsstatus och omfattning. På sidan finns också en lista med utlösande aviseringar och åtgärder.
+Om du vill visa omfattande information om en anpassad identifieringsregel går du till Anpassade identifieringar för söka  >   och väljer sedan namnet på regeln. Du kan sedan visa allmän information om regeln, inklusive information om dess körningsstatus och omfattning. På sidan finns också en lista över utlösta aviseringar och åtgärder.
 
 ![Informationssida för anpassad identifieringsregel](../../media/custom-detection-details.png)<br>
 *Information om anpassad identifieringsregel*
@@ -193,7 +199,7 @@ Du kan också utföra följande åtgärder på regeln från den här sidan:
 - **Aktivera**  /  **Inaktivera –** aktivera regeln eller hindra den från att köras
 - **Ta** bort – inaktivera regeln och ta bort den
 
-### <a name="view-and-manage-triggered-alerts"></a>Visa och hantera utlösande aviseringar
+### <a name="view-and-manage-triggered-alerts"></a>Visa och hantera utlösta aviseringar
 
 På skärmen med regeldetaljer **(Om** anpassade identifieringar av uppgifter  >    >  **[Regelnamn]**), går du till Utlösade aviseringar, som visar de aviseringar som genereras av matchningar mot regeln. Välj en avisering om du vill visa detaljerad information om den och vidta följande åtgärder:
 
@@ -202,7 +208,7 @@ På skärmen med regeldetaljer **(Om** anpassade identifieringar av uppgifter  >
 - Kör frågan som utlöste aviseringen på avancerad sökning
 
 ### <a name="review-actions"></a>Granska åtgärder
-På skärmen med regeldetaljer **(För** anpassade identifieringar av uppgifter  >    >  **[Regelnamn]**) går du till Åtgärder som utlöses och visar de åtgärder som vidtas baserat på matchningar mot regeln.
+På skärmen med regelinformation **(För** anpassade identifieringar av uppgifter  >    >  **[Regelnamn]**) går du till Åtgärder som utlöses och visar de åtgärder som vidtas baserat på matchningar mot regeln.
 
 >[!TIP]
 >Om du snabbt vill visa information och vidta åtgärder för ett objekt i en tabell använder du markeringskolumnen [&#10003;] till vänster om tabellen.

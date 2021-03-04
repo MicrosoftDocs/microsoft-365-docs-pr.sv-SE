@@ -1,7 +1,7 @@
 ---
-title: DeviceTvmSoftwareVulnerabilities-tabellen i det avancerade sökschemat
-description: Läs mer om säkerhetsproblem i programvaran på enheter och listan över tillgängliga säkerhetsuppdateringar som åtgärdar varje problem i tabellen DeviceTvmSoftwareVulnerabilities i tabellen avancerad sökning.
-keywords: avancerad sökning, hotsökning, sökning på cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, hot & sårbarhetshantering, TVM, enhetshantering, programvara, lager, svagheter, CVE-ID, OS DeviceTvmSoftwareInventoryVulnerabilities
+title: DeviceTvmSoftwareVulnerabilities-tabellen i den avancerade sökschemat
+description: Läs mer om säkerhetsproblem i programvaran som finns på enheter och listan över tillgängliga säkerhetsuppdateringar som åtgärdar varje problem i tabellen DeviceTvmSoftwareVulnerabilities i tabellen för avancerad sökning.
+keywords: avancerad sökning, hotsökning, cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, hot & sårbarhetshantering, TVM, enhetshantering, programvara, lager, svagheter, CVE-ID, OS DeviceTvmSoftwareInventoryVulnerabilities
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -11,7 +11,7 @@ ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: maccruz
-author: maccruz
+author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ed5104068d7cff4ddace3405219ebc57092d390e
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: c5a143d835120339ade006dfd2dc394ec7c542d3
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50416836"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423879"
 ---
 # <a name="devicetvmsoftwarevulnerabilities"></a>DeviceTvmSoftwareVulnerabilities
 
@@ -54,11 +54,11 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `OSArchitecture` | sträng | Arkitekturen för operativsystemet som körs på datorn |
 | `SoftwareVendor` | sträng | Namnet på programvaruleverantören |
 | `SoftwareName` | sträng | Namnet på programvaruprodukten |
-| `SoftwareVersion` | sträng | Versionsnummer för programvaruprodukten |
+| `SoftwareVersion` | sträng | Versionsnummer för programvaran |
 | `CveId` | sträng | Unik identifierare som tilldelats säkerhetsproblemet under systemet för vanliga säkerhetsproblem och exponeringar (CVE) |
-| `VulnerabilitySeverityLevel` | sträng | Allvarlighetsnivå tilldelad till säkerhetsbristen baserat på CVSS-poäng och dynamiska faktorer som påverkas av hotbilden |
+| `VulnerabilitySeverityLevel` | sträng | Allvarlighetsnivå tilldelad till säkerhetsrisken baserat på CVSS-poäng och dynamiska faktorer påverkas av hotbilden |
 | `RecommendedSecurityUpdate` | sträng | Namn eller beskrivning av säkerhetsuppdateringen som tillhandahålls av programvaruleverantören för att hantera problemet |
-| `RecommendedSecurityUpdateId` | sträng | Identifierare för tillämpliga säkerhetsuppdateringar eller identifierare för motsvarande väglednings- eller kunskapsbasartiklar (KB) |
+| `RecommendedSecurityUpdateId` | sträng | Identifierare för tillämpliga säkerhetsuppdateringar eller identifierare för motsvarande vägledning eller kunskapsbasartiklar (KB) |
 
 
 

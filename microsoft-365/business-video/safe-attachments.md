@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du hanterar säkra bifogade filer.
-ms.openlocfilehash: 75146a05a091cf91a77ee3bc9bb63c813d84dce3
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 89297ec7daeca4b20c01baa9f9554d4574d9df6a
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926108"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422285"
 ---
 # <a name="manage-safe-attachments"></a>Hantera säkra bilagor
 
@@ -42,7 +40,7 @@ Microsoft Defender för Office 365 , som tidigare hette Microsoft 365 ATP eller 
 1. Rulla nedåt för **att öka skyddet mot avancerade hot.** Välj **Visa,** **Hantera och** sedan **ATP – säkra bifogade filer.**
 1. Välj regeln för säkra bifogade filer och välj sedan **ikonen** Redigera.
 1. Välj **inställningar** och kontrollera sedan att Blockera är markerat.
-1. Rulla nedåt. Välj **Aktivera omdirigering** och ange din e-postadress eller adressen till den person som du vill granska de blockerade bifogade filerna.
+1. Rulla nedåt. Välj **Aktivera omdirigering** och ange din e-postadress eller adressen till den person som du vill ska granska de blockerade bifogade filerna.
 1. Välj **det du** vill använda på och välj sedan domännamnet.
 1. Välj ytterligare domäner du äger (till exempel onmicrosoft.com) som du vill att regeln ska tillämpas på. Välj **Lägg till** och sedan **OK.**
 1. Välj **Spara**.

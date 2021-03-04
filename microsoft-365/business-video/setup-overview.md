@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig vad du behöver till hands för att konfigurera Microsoft 365 Business Premium.
-ms.openlocfilehash: 23524c96e994aa9df9a2799c81a6bbd5861ce5e4
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ac13ab8a932c76c000873866a7feae3b6b0c9d7f
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927916"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421901"
 ---
 # <a name="overview-of-microsoft-365-business-premium-setup"></a>Översikt över konfiguration av Microsoft 365 Business Premium
 
@@ -40,7 +38,7 @@ Till att börja med kan&#39;granska det du&#39;får:
 - Office-program som Word, Excel, PowerPoint och Outlook.
 - En personlig e-postadress för dig och dina anställda, till exempel rob@contoso.com.
 - Dokumentlagring i molnet (OneDrive och Microsoft Teams) med mera.
-- Uppgraderar till Windows 10 Pro från Windows 7 Professional, Windows 8 Pro eller Windows 8.1 Pro.
+- Uppgraderingar till Windows 10 Pro från Windows 7 Professional, Windows 8 Pro eller Windows 8.1 Pro.
 - Skydd för dina arbetsfiler på alla dina iOS-, Android- och Windows 10-enheter med säkerhet i företagsklass.
 
 Du&#39;inte program för redovisning, lönehantering, CRM eller en offentlig webbplats.
@@ -53,11 +51,11 @@ Du&#39;inte program för redovisning, lönehantering, CRM eller en offentlig web
 
 ## <a name="1-sign-up-for-the-cloud"></a>1. Registrera dig för molnet
 
-När du väljer en molnprenumeration för företaget kan du välja vilka funktioner du vill ha i prenumerationen. Läs mer om [våra Microsoft Small Business-abonnemang.](https://www.microsoft.com/microsoft-365/business?rtc=1)
+När du väljer en molnprenumeration för företaget har du olika alternativ för vilka funktioner du vill ha i prenumerationen. Läs mer om [våra Microsoft Small Business-abonnemang.](https://www.microsoft.com/microsoft-365/business?rtc=1)
 
 - Välj [Office 365 Business Essentials](https://www.microsoft.com/en-us/p/office-365-business-essentials/cfq7ttc0k59v?rtc=1&amp;activetab=pivot:overviewtab) om du bara vill använda onlineappar (appar du kan komma åt i en webbläsare) för e-post, skapande av dokument, samarbete och molnlagring. Det omfattar Word Online, Excel Online, PowerPoint Online och SharePoint Online.
 - Välj [Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium) om du vill ha den funktionsrika versionen av Office-appar som Word, Excel och Teams som körs direkt på PC och Mac. Det här är ett tillägg till onlineapparna.
-- Välj [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business?rtc=1) om du vill ha alla Office-apparna, plus molnsäkerhet och enhetshantering. Det omfattar skydd mot virus, skadlig programvara, utpressningstrojaner med mera samt hantering och kryptering av enheter. Du får också en kostnadsfri uppgradering till Windows 10 Pro från tidigare versioner av Windows Professional.
+- Välj [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business?rtc=1) om du vill ha alla Office-apparna, plus molnsäkerhet och enhetshantering. Det omfattar skydd mot virus, skadlig programvara, utpressningstrojaner med mera, samt enhetshantering och kryptering. Du får också en kostnadsfri uppgradering till Windows 10 Pro från tidigare versioner av Windows Professional.
 - Om du har ett större företag eller behöver mer komplexa IT-appar och tjänster kan du läsa mer om [våra Microsoft 365 Enterprise-abonnemang.](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
 
 
@@ -76,7 +74,7 @@ När du väljer en molnprenumeration för företaget kan du välja vilka funktio
 
 ## <a name="4-enable-threat-protection"></a>4. Aktivera skydd mot hot
 
-- Du&#39;aktivera Avancerat skydd när du 3653333 är konfigurerad. Microsoft 365 Advanced Threat Protection innefattar funktioner för konfiguration, skydd och identifiering, inklusive säkra bifogade filer, säkra länkar, SharePoint, OneDrive och Microsoft Teams-skydd, skydd mot nätfiske och identifiering av hot i realtid.
+- Du&#39;vill aktivera Avancerat skydd när du gäller tjänsten. Microsoft 365 Advanced Threat Protection innefattar funktioner för konfiguration, skydd och identifiering, inklusive säkra bifogade filer, säkra länkar, SharePoint, OneDrive och Microsoft Teams-skydd, skydd mot nätfiske och identifiering av hot i realtid.
 - Som standard får&#39;hjälp med grundläggande skydd mot vanliga onlinehot, men du kan anpassa inställningarna senare efter dina affärsbehov.
 
 ## <a name="5-manage-and-secure-your-devices"></a>5. Hantera och skydda dina enheter
@@ -88,11 +86,11 @@ När du väljer en molnprenumeration för företaget kan du välja vilka funktio
 ## <a name="6-upgrade-your-pcs-to-windows-10-pro"></a>6. Uppgradera dina datorer till Windows 10 Pro
 
 - Börja uppgradera dina datorer till Windows 10 Professional (kostnadsfritt med Microsoft 365 Business Premium om du&#39;kör Windows 7 Pro, Windows 8 Pro eller Windows 8.1 Pro) så att du kan dra nytta av alla Microsoft 365 Business Premium-funktioner, till exempel avancerad säkerhet och enhetshantering.
-- Du kan också uppgradera till Windows 10 Pro från en konsumentversion eller om du&#39;kör Microsoft 365 Business Standard, men ett enda köp krävs.
+- Du kan också uppgradera till Windows 10 Pro från en konsumentversion eller om du&#39;kör Microsoft 365 Business Standard, men ett köp måste göras endast ett gång.
 
 ## <a name="7-connect-your-pcs-to-microsoft-365"></a>7. Anslut dina datorer till Microsoft 365
 
-- För att få ut mesta av Microsoft 365 kan du&#39;ansluta dina Windows 10-datorer till Microsoft 365 Business Premium och Azure Active Directory som körs bakom det. Det gör att din dator kan hanteras av Microsoft 365 Business Premium för att få programvaruuppdateringar och skydd mot dataförlust och andra cyberhot.
+- För att få ut mesta av Microsoft 365 kan du&#39;ansluta dina Windows 10-datorer till Microsoft 365 Business Premium och Azure Active Directory som körs bakom det. Det gör att datorn kan hanteras av Microsoft 365 Business Premium för att få programvaruuppdateringar och skydd mot dataförlust och andra cyberhot.
 - När du ansluter datorn registrerar Windows 10 enheten i organisationens&#39;-nätverk och ansluter sedan enheten till nätverket så att du kan använda din organisations&#39;användarnamn och lösenord för att logga in och komma åt resurser.
 - Beroende på organisationens&#39;uppmanas du kanske att konfigurera tvåstegsverifiering, kryptering och hantering av mobila enheter, till exempel Microsoft Intune.
 
@@ -110,5 +108,5 @@ När du väljer en molnprenumeration för företaget kan du välja vilka funktio
 
 ## <a name="10-set-up-your-phones"></a>10. Konfigurera telefonerna
 
-- Om du planerar att använda dina telefoner för att vara produktiv när du är på språng&#39;lägga till Office-appar som Outlook, Teams och Excel på mobila enheter som Android och iOS.
+- Om du planerar att använda dina telefoner för att vara produktiv var du än är kan du&#39;lägga till Office-appar som Outlook, Teams och Excel på mobila enheter som Android och iOS.
 - Med Microsoft 365 Business Premium tillämpas säkerhet på varje enhet, så när du installerar och öppnar appar uppmanas du&#39;att skapa en PIN-kod, skapa en andra form av autentisering (MFA) och andra inställningar som hjälper till att skydda affärsdata på telefonen.

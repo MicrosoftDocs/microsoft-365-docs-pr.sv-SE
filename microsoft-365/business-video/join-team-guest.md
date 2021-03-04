@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du ansluter till ett team som gäst i Microsoft Teams.
-ms.openlocfilehash: 31d5acb1a0294a54bcb5b5c7c74d76dbba7124f7
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 8ed7b8c92fa9fbe22c8a4f74b89916266a4af46f
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925032"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422489"
 ---
 # <a name="join-a-team-as-a-guest"></a>Ansluta till ett team som gäst
 
@@ -44,7 +42,7 @@ Om du får en Microsoft Teams-inbjudan om att gå med i ett team finns det någr
   1. Verifiera din e-postadress genom att öppna e-postbekräftelsen och kopiera säkerhetskoden.
   1. Ange din säkerhetskod  i dialogrutan Verifiera e-post, välj  **Nästa,** ange CAPTCHA i ange de tecken du ser raden, välj **Nästa** och sedan **Acceptera.**
 1. Om du inte vill ladda ned Microsoft Teams-appen väljer du **Använd webbappen i stället.**
-1. I Teams-webbappen kan du visa eller svara på inlägg  eller skapa dina egna inlägg och välja Fliken Filer för att visa eller redigera teamdokument.
+1. I Teams-webbappen kan du visa eller svara på inlägg  eller skapa dina egna inlägg och välja fliken Filer för att visa eller redigera teamdokument.
 
     Om du redan använder Teams-appen i organisationen är det mycket enklare att gå med i ett team som gäst.
 

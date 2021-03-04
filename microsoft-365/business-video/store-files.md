@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig var du kan lagra filer i Microsoft 365 för företag.
-ms.openlocfilehash: 4f9ce18ca86a59e615426b994ef440279a78990a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: e8c0347489b3d35217b3cad38e26670d2c6023bb
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927808"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421841"
 ---
 # <a name="where-to-store-files"></a>Platser för fillagring
 
@@ -39,7 +37,7 @@ I Microsoft 365 kan du lagra ditt arbete i OneDrive för företag eller på Shar
 
 ### <a name="store-or-share-files-with-onedrive"></a>Lagra eller dela filer med OneDrive
 
-1. Öppna OneDrive i Utforskaren på datorn. Eller öppna **OneDrive** från startprogrammet i [Office 365.](https://www.office.com/)
+1. Öppna OneDrive i Utforskaren på datorn. Eller öppna **OneDrive** [från appstartaren i Office 365.](https://www.office.com/)
 2. Visa och ladda upp personliga filer eller  dela dokument och mappar genom att klicka på Dela och bjud sedan in andra att visa dokumenten eller skicka en länk till dem. [Mer information](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07#os_type=onedrive_-_business).
 
 ### <a name="collaborate-with-a-sharepoint-site"></a>Samarbeta med en SharePoint-webbplats

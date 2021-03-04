@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du är värd för onlinemöten för ditt företag.
-ms.openlocfilehash: 178091c5233da5e96ed6c9f074b5418cc00c4155
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 18a142700e8b83545219ddabf17be7d562037140
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926132"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422321"
 ---
 # <a name="host-online-meetings-for-your-business"></a>Hålla onlinemöten för ditt företag
 
@@ -45,7 +43,7 @@ Ladda ned en infografik för att få en snabb överblick över hur du ansluter t
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP?autoplay=false]
 
-Använd Microsoft Teams för att schemalägga möten med dina anställda, klienter och andra gäster. Prova det:
+Använd Microsoft Teams om du vill schemalägga möten med dina anställda, klienter och andra gäster. Prova det:
 
 1. Välj Möten i det vänstra navigeringsfältet **i** Microsoft Teams.
 1. Välj **Schemalägg ett möte.**

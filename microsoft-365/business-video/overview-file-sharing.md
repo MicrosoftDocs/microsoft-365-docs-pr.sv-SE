@@ -1,5 +1,5 @@
 ---
-title: Dela dina affärsfiler – översikt
+title: Dela affärsfiler – översikt
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Översikt över hur du delar företagsfiler.
-ms.openlocfilehash: 333954c92039d124c83cf03b6e1f6637183a4f25
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: b481e7564625fcd019a53ba9116acdb724b4af61
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928156"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422369"
 ---
 # <a name="overview-of-sharing-business-files"></a>Översikt över att dela företagsfiler
 
@@ -38,7 +36,7 @@ Du behöver dela filer med kunder, kunder, partner, leverantörer och andra pers
 
 ## <a name="share-a-file-with-someone-outside-of-your-company"></a>Dela en fil med någon utanför företaget
 
-- Dela en fil med någon utanför företaget (t.ex. en kund eller kund) via e-post om du bara behöver den för att kunna göra det på ett sätt.
+- Dela en fil med någon utanför företaget (t.ex. en kund eller kund) via e-post om du bara behöver det.
 - Om du behöver ett svar, eller vill att de ska fylla i information och skicka tillbaka det, kan du använda SharePoint eller Microsoft Teams för att dela det med en redigeringslänk.
 
 Läs mer om hur du [delar filer utanför organisationen med](securely-share-files-externally.md) säkra länkar och hur du delar filer med en länk till vem som [helst.](share-files-externally.md)

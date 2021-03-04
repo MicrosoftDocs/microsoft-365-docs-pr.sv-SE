@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du skapar en GoDaddy-webbplats för ditt företag.
-ms.openlocfilehash: 44f1a82706ff2dc025fc9dcc6f74a71dc0a987e5
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 64b8b7bacaf218f95a0fb89d03eb280f755f1f2f
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927340"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422741"
 ---
 # <a name="create-a-website"></a>Skapa en webbplats
 
@@ -40,6 +38,6 @@ Microsoft 365 inkluderar inte en offentlig webbplats för ditt företag. Om du v
 1. Sök efter ett webbhotell där du kan skapa din webbplats.
 
      Det kan vara enklast att välja webbplatsverktyget på samma företag där domännamnet är registrerat.
-1. Utforma företagets webbplats och se till att ta med din företagslogotyp, affärsändamål, text, bilder och länkar.
+1. Utforma din företagswebbplats och se till att ta med företagets logotyp, affärsändamål, text, bilder och länkar.
 1. Om du vill integrera webbplatsen med Microsoft 365 kan du lägga till företagets e-postadress på webbplatsen och en länk till Microsoft Teams, SharePoint eller andra samarbetsverktyg.
 1. Se till att ansluta din webbplats till ditt domännamn, som du&#39;använder för e-post på Microsoft 365.

@@ -9,28 +9,26 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Läs om hur du hanterar enhetsprinciper för Windows 10 Pro med Microsoft 365 Business Premium.
-ms.openlocfilehash: f42c175543ae16ae645c17997b20ed67aa5d705c
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 8d3e5107c0b2dfe3a84f31b98d9bd3ff8f7c5e4f
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926012"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422129"
 ---
-# <a name="manage-windows-10-pro-device-policies"></a>Hantera principer för Windows 10 Pro-enheter
+# <a name="manage-windows-10-pro-device-policies"></a>Hantera enhetsprinciper för Windows 10 Pro
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSL?autoplay=false]
 

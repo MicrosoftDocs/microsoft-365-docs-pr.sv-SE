@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du installerar Microsoft 365 Admin-mobilappen på din telefon.
-ms.openlocfilehash: 110e691858537a90a7bee03b4318a5f415b3e83f
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 43c2c2905dec978a520e2bf2d4b9b2aa7318b7a7
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927544"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423017"
 ---
 # <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Installera Microsoft 365 Admin-mobilappen på telefonen
 
@@ -37,9 +35,9 @@ Du kan använda Microsoft 365 Admin-mobilappen för att hantera användare, öve
 
 ## <a name="try-it"></a>Prova!
 
-1. Om du vill skaffa Microsoft 365 Admin-mobilappen söker du efter  **Microsoft 365**  Admin i appbutiken för din enhet och installerar den.
+1. Om du vill skaffa Microsoft 365 Admin-mobilappen söker du efter  **Microsoft 365 Admin**  i appbutiken för din enhet och installerar den.
 2. Logga in med din globala administratörs e-postadress och visa instrumentpanelen för att se tjänstens status, övervaka användarlicenser och se meddelanden och tjänstförfrågningar.
-3. Här är några vanliga uppgifter som du kan utföra med appen:
+3. Här är några vanliga uppgifter som du kan utföra med programmet:
 
 ### <a name="reset-a-users-password"></a>Återställ en användares lösenord
 
@@ -47,7 +45,7 @@ Du kan använda Microsoft 365 Admin-mobilappen för att hantera användare, öve
 2. På **sidan Användare** väljer du användarens namn och sedan **Återställ lösenord.**
 3. Om du vill att användaren ska ändra sitt nya lösenord  när han eller hon loggar in första gången markerar du kryssrutan Ändra vid första inloggningen och väljer **sedan Återställ.**
 4. När du ombeds att bekräfta väljer **du Ja** och sedan **OK.**
-5. I fönstret  **Dela lösenord**  kan du skicka det nya lösenordet till användaren i ett e-postmeddelande eller SMS.
+5. I fönstret  **Dela lösenord**  kan du, om du vill, skicka det nya lösenordet till användaren i ett e-postmeddelande eller sms.
 
 ### <a name="add-a-user-to-a-group"></a>Lägga till en användare i en grupp
 

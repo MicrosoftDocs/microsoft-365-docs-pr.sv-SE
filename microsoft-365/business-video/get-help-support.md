@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du får administratörshjälp eller support i Microsoft 365 Business Premium.
-ms.openlocfilehash: bcfe140ec87b50048db570ad4efe4575135b3191
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 852b931f4710ad4117560485002ebe10ef97d3ad
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927181"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422585"
 ---
 # <a name="get-help-or-support"></a>Få hjälp eller support
 
@@ -57,7 +55,7 @@ I Microsoft 365 Business Premium finns det flera sätt att få hjälp eller hjä
 1. Logga in [office.com](https://office.com) logga in med dina autentiseringsuppgifter för arbetet och välj Administratör.
 1. Välj Behöver du hjälp längst ned på **sidan?** För att öppna supportassistenten.
 1. Skriv din fråga och välj sedan ikonen **Skicka** meddelande.
-1. Granska resultatet och välj det alternativ du vill använda.
+1. Granska resultaten och välj det alternativ du vill använda.
 1. Om du behöver mer hjälp väljer du **ikonen** Kontakt.
 1. På sidan **Kontakta support** anger du information om din fråga och anger sedan din kontaktinformation. Välj hur du vill bli kontaktad och välj sedan **Kontakta mig.**
 

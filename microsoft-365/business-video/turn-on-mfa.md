@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du aktiverar multifaktorautentisering.
-ms.openlocfilehash: 1485875d1d40d93dab7a04d4e3d81016ac1536f3
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 36a556046deac98a8687b7a74affda908fb15e4f
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927772"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421781"
 ---
 # <a name="turn-on-multi-factor-authentication"></a>Aktivera multifaktorautentisering
 

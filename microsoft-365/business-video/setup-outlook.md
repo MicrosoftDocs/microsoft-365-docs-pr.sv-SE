@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig konfigurera Outlook för din Microsoft 365-e-post.
-ms.openlocfilehash: 9ccb654daf8e7cf9748de4213b9a07ecdff9edbb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: b27f59e50190a4f355ff1f4c346161b8efc4219e
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925928"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421997"
 ---
 # <a name="set-up-outlook-for-microsoft-365-for-business-email"></a>Konfigurera e-post i Outlook för Microsoft 365 för företag 
 

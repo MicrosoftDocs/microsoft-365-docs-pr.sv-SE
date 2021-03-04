@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du skyddar Office-appar på iOS med Microsoft 365 Business Premium.
-ms.openlocfilehash: fd7fdd32500f9a2362ac29059abe9424d045c206
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 197041a4eb9ada65f4b6046d93f2a856cbdfb40d
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928036"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422117"
 ---
 # <a name="secure-office-apps-on-ios"></a>Säkra Office-appar på iOS
 
@@ -47,7 +45,7 @@ Du kan konfigurera en princip för användaråtkomst som kräver att mobila anv�
     - **Kryptera arbetsfiler**
 
 1. Under **Filer i de här apparna skyddas** markerar du de Office-program som du vill skydda på mobila enheter.
-1. Under **Vem får de här inställningarna?** är alla användare  valda som standard, men du kan välja Ändra för att välja de säkerhetsgrupper som du har skapat.
+1. Under **Vem får de här inställningarna?** är alla användare  valda som standard, men du kan välja Ändra om du vill välja säkerhetsgrupper som du har skapat.
 1. Välj Lägg till för att slutföra **principen.**
 1. Välj Stäng **på sidan** Lägg till **princip.**
 1. På startsidan för administrationscentret bekräftar du att den nya principen har lagts till genom att välja **Principer** och granska principen på **sidan** Principer.
