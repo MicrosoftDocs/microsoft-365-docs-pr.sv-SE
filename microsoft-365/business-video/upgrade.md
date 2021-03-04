@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du uppgraderar Windows 10 Home till Windows 10 Pro.
-ms.openlocfilehash: 3f775130728eb6f00b1adb008c697fb84254827b
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3e4d1e5220399ff2cfa25102cada165b25bc53ba
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927760"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421757"
 ---
 # <a name="upgrade-from-windows-10-home-to-windows-10-pro"></a>Uppgradera från Windows 10 Home till Windows 10 Pro
 
@@ -37,7 +35,7 @@ ms.locfileid: "49927760"
 
 Microsoft 365 Business kräver Windows 10 Pro för att skydda dina data. Om du har en dator med Windows 10 Home följer du de här stegen för att uppgradera till Windows 10 Pro.
 
-1. Välj Start-menyn  **på**  skrivbordet, sök efter  **Microsoft Store** och välj det.
+1. Välj Start-menyn på  **skrivbordet,**  sök efter  **Microsoft Store** och välj det.
 2. Klicka i sökfältet i Microsoft Store, skriv **Windows 10 Pro** och välj sedan Uppgradera **till Windows 10 Pro.**
 3. Under **Uppgradera till Windows 10 Pro** väljer du Läs **mer** och sedan **Köp.**
 4. Ange din  **PIN-kod**  för att verifiera din identitet i rutan Windows-säkerhet.

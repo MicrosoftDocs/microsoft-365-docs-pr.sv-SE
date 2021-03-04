@@ -9,31 +9,29 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Översikt över hur du kan arbeta var du än är med Microsoft 365.
-ms.openlocfilehash: 55327fff51b67107aab7069c0036e8ded9b73cbb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 7c3a0ee4b69f7fa4e07064f0adc108afe70bd54d
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927784"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421687"
 ---
 # <a name="work-from-anywhere---overview"></a>Arbeta var du än är – översikt
 
 Inte vid skrivbordet? Behöver du inte längre något mer batteri för bärbar dator? Inga problem! Hantera ditt arbete var du än är med Office på din telefon eller surfplatta.
 
-**Proffstips:** Håll ditt jobbsaldo i schack genom att stänga av meddelanden för dina arbetsappar på dina personliga enheter.
+**Proffstips:** Håll balans mellan jobb och arbete i check genom att inaktivera meddelanden för dina arbetsappar på dina personliga enheter.
 
 Använd de fyra tipsen nedan för att arbeta var du än är: Ladda ned en infografik för att få tips om hur du kan arbeta var du än är: [PDF,](https://go.microsoft.com/fwlink/?linkid=2079451) [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455)
 
@@ -65,7 +63,7 @@ Du kan lagra dina personliga filer i OneDrive och synkronisera dem från telefon
 
 Behöver du lite hjälp? Få råd om [var du lagrar filer,](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)hur [du använder OneDrive-mobilappen](https://support.microsoft.com/office/448d4051-3a43-4d2e-b1d8-de0aa03c069e) och hur du [synkroniserar filer och mappar.](https://support.microsoft.com/office/d9262485-9bf8-4ceb-bac2-e83f68cb6a97)
 
-## <a name="open-and-edit-your-files-from-any-device"></a>Öppna och redigera dina filer från valfri enhet
+## <a name="open-and-edit-your-files-from-any-device"></a>Öppna och redigera filer från valfri enhet
 
 ### <a name="work-on-your-phone-or-tablet"></a>Arbeta på din telefon eller surfplatta
 
@@ -100,7 +98,7 @@ Du kan också skapa och redigera dokument direkt i webbläsaren. Öppna filer, r
 
 Från din bärbara dator:
 
-- I Microsoft Teams klickar **du på** knappen Möten till vänster i appen så visas en lista över alla dina möten :::image type="icon" source="../media/meetings-icon.png" border="false"::: under veckan. Leta reda på mötet du vill ha och klicka sedan på Anslut.
+- I Microsoft Teams klickar **du** på knappen Möten till vänster i appen så visas en lista över :::image type="icon" source="../media/meetings-icon.png" border="false"::: alla dina möten under veckan. Leta reda på mötet du vill ha och klicka sedan på Anslut.
 
 Från telefonen:
 
