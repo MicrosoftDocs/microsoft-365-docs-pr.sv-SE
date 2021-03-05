@@ -36,10 +36,6 @@
           href: communication-compliance-feature-reference.md
         - name: Fallstudie – Contoso konfigurerar snabbt en princip för stötande språk
           href: communication-compliance-case-study.md
-        - name: Övervakningsprinciper i Office 365
-          href: supervision-policies.md
-        - name: Konfigurera övervakningsprinciper för Office 365
-          href: configure-supervision-policies.md
     - name: Hantering av insiderrisk
       items:
         - name: Översikt

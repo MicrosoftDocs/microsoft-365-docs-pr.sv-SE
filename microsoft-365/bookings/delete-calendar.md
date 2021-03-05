@@ -1,5 +1,5 @@
 ---
-title: Ta bort en boknings kalender
+title: Ta bort en bokningskalender
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,87 +8,86 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
-description: Använd administrations centret för Microsoft 365 eller Windows PowerShell för att ta bort kalendrar.
-ms.openlocfilehash: 2fcb92cee18d709ef0e1fa3faa0246e622a9f9db
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+description: Använd administrationscentret för Microsoft 365 eller Windows PowerShell för att ta bort bookingskalendrar.
+ms.openlocfilehash: 1f8df15eafac7867f7ae852e344e1c5730362598
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126655"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454211"
 ---
-# <a name="delete-a-booking-calendar-in-bookings"></a><span data-ttu-id="8e18e-103">Ta bort en boknings kalender i bokningar</span><span class="sxs-lookup"><span data-stu-id="8e18e-103">Delete a booking calendar in Bookings</span></span>
+# <a name="delete-a-booking-calendar-in-bookings"></a><span data-ttu-id="c6c22-103">Ta bort en bokningskalender i Bookings</span><span class="sxs-lookup"><span data-stu-id="c6c22-103">Delete a booking calendar in Bookings</span></span>
 
-<span data-ttu-id="8e18e-104">I den här artikeln förklarar vi hur du kan ta bort en oönskad boknings kalender.</span><span class="sxs-lookup"><span data-stu-id="8e18e-104">This article explains how you can delete an unwanted booking calendar.</span></span> <span data-ttu-id="8e18e-105">Du kan ta bort boknings kalendern i administrations centret för Microsoft 365 eller så kan du använda PowerShell.</span><span class="sxs-lookup"><span data-stu-id="8e18e-105">You can delete the booking calendar in the Microsoft 365 admin center or you can use PowerShell.</span></span> <span data-ttu-id="8e18e-106">Kalender kalendrar är en post låda i Exchange Online så du tar bort ett motsvarande användar konto för att ta bort boknings kalendern.</span><span class="sxs-lookup"><span data-stu-id="8e18e-106">The Bookings calendar is a mailbox in Exchange Online so you delete the corresponding user account to delete the booking calendar.</span></span>
+<span data-ttu-id="c6c22-104">I den här artikeln förklaras hur du tar bort en oönskad bokningskalender.</span><span class="sxs-lookup"><span data-stu-id="c6c22-104">This article explains how you can delete an unwanted booking calendar.</span></span> <span data-ttu-id="c6c22-105">Du kan ta bort bokningskalendern i administrationscentret för Microsoft 365 eller använda PowerShell.</span><span class="sxs-lookup"><span data-stu-id="c6c22-105">You can delete the booking calendar in the Microsoft 365 admin center or you can use PowerShell.</span></span> <span data-ttu-id="c6c22-106">Kalendern i Bookings är en postlåda i Exchange Online så du tar bort motsvarande användarkonto för att ta bort bokningskalendern.</span><span class="sxs-lookup"><span data-stu-id="c6c22-106">The Bookings calendar is a mailbox in Exchange Online so you delete the corresponding user account to delete the booking calendar.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="8e18e-107">Alla boknings kalendrar som du skapade i 2017 eller tidigare måste tas bort med hjälp av PowerShell-instruktionerna i det här avsnittet.</span><span class="sxs-lookup"><span data-stu-id="8e18e-107">All booking calendars that you created in 2017 or before must be deleted using the PowerShell instructions on this topic.</span></span> <span data-ttu-id="8e18e-108">Alla boknings kalendrar som skapats i 2018 eller efter kan tas bort i administrations centret för Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="8e18e-108">All booking calendars created in 2018 or after can be deleted in the Microsoft 365 admin center.</span></span>
+> <span data-ttu-id="c6c22-107">Alla bokningskalendrar som du skapade under 2017 eller tidigare måste tas bort med hjälp av PowerShell-instruktionerna för det här avsnittet.</span><span class="sxs-lookup"><span data-stu-id="c6c22-107">All booking calendars that you created in 2017 or before must be deleted using the PowerShell instructions on this topic.</span></span> <span data-ttu-id="c6c22-108">Alla bokningskalendrar som skapades under 2018 eller senare kan tas bort i administrationscentret för Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="c6c22-108">All booking calendars created in 2018 or after can be deleted in the Microsoft 365 admin center.</span></span>
 
-<span data-ttu-id="8e18e-109">I boknings kalendern är det viktigt att all relevant information om kalender och data lagras, inklusive:</span><span class="sxs-lookup"><span data-stu-id="8e18e-109">The booking calendar is where all relevant information about that booking calendar and data are stored, including:</span></span>
+<span data-ttu-id="c6c22-109">Bokningskalendern är den plats där all relevant information om bokningskalendern och bokningsdata lagras, inklusive:</span><span class="sxs-lookup"><span data-stu-id="c6c22-109">The booking calendar is where all relevant information about that booking calendar and data are stored, including:</span></span>
 
-- <span data-ttu-id="8e18e-110">Företags information, logo typ och arbets tider som lagts till när boknings kalendern skapades</span><span class="sxs-lookup"><span data-stu-id="8e18e-110">Business information, logo, and working hours added when the booking calendar was created</span></span>
-- <span data-ttu-id="8e18e-111">Relevant personal och tjänster som läggs till när boknings kalendern skapades</span><span class="sxs-lookup"><span data-stu-id="8e18e-111">Relevant staff and services added when the booking calendar was created</span></span>
-- <span data-ttu-id="8e18e-112">Alla bokningar och ledig tid för avtalade tider har lagts till i boknings kalendern när den skapades.</span><span class="sxs-lookup"><span data-stu-id="8e18e-112">All bookings and time off appointments added to the booking calendar once it was created.</span></span>
+- <span data-ttu-id="c6c22-110">Företagsinformation, logotyp och arbetstid som lades till när bokningskalendern skapades</span><span class="sxs-lookup"><span data-stu-id="c6c22-110">Business information, logo, and working hours added when the booking calendar was created</span></span>
+- <span data-ttu-id="c6c22-111">Relevant personal och tjänster som lades till när bokningskalendern skapades</span><span class="sxs-lookup"><span data-stu-id="c6c22-111">Relevant staff and services added when the booking calendar was created</span></span>
+- <span data-ttu-id="c6c22-112">Alla bokningar och återkommande avtalade tider läggs till i bokningskalendern när den har skapats.</span><span class="sxs-lookup"><span data-stu-id="c6c22-112">All bookings and time off appointments added to the booking calendar once it was created.</span></span>
 
 > [!WARNING]
-> <span data-ttu-id="8e18e-113">När en boknings kalender raderas tas denna ytterligare information bort permanent och kan inte återställas.</span><span class="sxs-lookup"><span data-stu-id="8e18e-113">Once a booking calendar is deleted, this additional information is also permanently deleted and can't be recovered.</span></span>
+> <span data-ttu-id="c6c22-113">När en bokningskalender tas bort tas den här ytterligare informationen också bort permanent och kan inte återställas.</span><span class="sxs-lookup"><span data-stu-id="c6c22-113">Once a booking calendar is deleted, this additional information is also permanently deleted and can't be recovered.</span></span>
 
-## <a name="delete-a-booking-calendar-in-the-microsoft-365-admin-center"></a><span data-ttu-id="8e18e-114">Ta bort en boknings kalender i administrations centret för Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="8e18e-114">Delete a booking calendar in the Microsoft 365 admin center</span></span>
+## <a name="delete-a-booking-calendar-in-the-microsoft-365-admin-center"></a><span data-ttu-id="c6c22-114">Ta bort en bokningskalender i administrationscentret för Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="c6c22-114">Delete a booking calendar in the Microsoft 365 admin center</span></span>
 
-1. <span data-ttu-id="8e18e-115">Gå till administrationscentret för Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="8e18e-115">Go to the Microsoft 365 admin center.</span></span>
+1. <span data-ttu-id="c6c22-115">Gå till administrationscentret för Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="c6c22-115">Go to the Microsoft 365 admin center.</span></span>
 
-1. <span data-ttu-id="8e18e-116">Välj **Användare** i administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="8e18e-116">In the Admin center, select **Users**.</span></span>
+1. <span data-ttu-id="c6c22-116">Välj **Användare** i administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="c6c22-116">In the Admin center, select **Users**.</span></span>
 
-   ![Bild av användar gränssnittet i Microsoft 365 Admin Center](../media/bookings-admin-center-users.png)
+   ![Bild av användargränssnittet för användare i administrationscentret för Microsoft 365](../media/bookings-admin-center-users.png)
 
-1. <span data-ttu-id="8e18e-118">På sidan **Aktiva användare** väljer du namnen på de användare du vill ta bort och väljer sedan **Ta bort användare**.</span><span class="sxs-lookup"><span data-stu-id="8e18e-118">On the **Active Users** page, choose the names of the users that you want to delete, and then select **Delete user**.</span></span>
+1. <span data-ttu-id="c6c22-118">På sidan **Aktiva användare** väljer du namnen på de användare du vill ta bort och väljer sedan **Ta bort användare**.</span><span class="sxs-lookup"><span data-stu-id="c6c22-118">On the **Active Users** page, choose the names of the users that you want to delete, and then select **Delete user**.</span></span>
 
-   ![Bild av användar gränssnittet ta bort i Microsoft 365 Admin Center](../media/bookings-delete-user.png)
+   ![Bild av användargränssnittet för Ta bort användare i administrationscentret för Microsoft 365](../media/bookings-delete-user.png)
 
-## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a><span data-ttu-id="8e18e-120">Ta bort en boknings kalender med Exchange Online PowerShell</span><span class="sxs-lookup"><span data-stu-id="8e18e-120">Delete a booking calendar using Exchange Online PowerShell</span></span>
+## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a><span data-ttu-id="c6c22-120">Ta bort en bokningskalender med Exchange Online PowerShell</span><span class="sxs-lookup"><span data-stu-id="c6c22-120">Delete a booking calendar using Exchange Online PowerShell</span></span>
 
-<span data-ttu-id="8e18e-121">Se [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) för förutsättningar och vägledning för anslutning till Exchange Online PowerShell.</span><span class="sxs-lookup"><span data-stu-id="8e18e-121">See [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) for prerequisites and guidance for connecting to Exchange Online PowerShell.</span></span>
+<span data-ttu-id="c6c22-121">Se [Ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) för krav och vägledning för anslutning till Exchange Online PowerShell.</span><span class="sxs-lookup"><span data-stu-id="c6c22-121">See [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) for prerequisites and guidance for connecting to Exchange Online PowerShell.</span></span>
 
-<span data-ttu-id="8e18e-122">För att utföra de här stegen måste du använda ett aktivt Microsoft PowerShell-Kommandotolken som du körde genom att välja alternativet Kör som administratör.</span><span class="sxs-lookup"><span data-stu-id="8e18e-122">To perform these steps, you must be using an active Microsoft PowerShell command window that you ran by choosing the “Run as administrator” option.</span></span>
+<span data-ttu-id="c6c22-122">För att utföra de här stegen måste du använda ett aktivt Microsoft PowerShell-kommandofönster som du kör genom att välja alternativet "Kör som administratör".</span><span class="sxs-lookup"><span data-stu-id="c6c22-122">To perform these steps, you must be using an active Microsoft PowerShell command window that you ran by choosing the “Run as administrator” option.</span></span>
 
-1. <span data-ttu-id="8e18e-123">Ange följande kommando:</span><span class="sxs-lookup"><span data-stu-id="8e18e-123">Enter the following command:</span></span>
+1. <span data-ttu-id="c6c22-123">I ett PowerShell-fönster laddar du EXO V2-modulen genom att köra följande kommando:</span><span class="sxs-lookup"><span data-stu-id="c6c22-123">In a PowerShell window, load the EXO V2 module by running the following command:</span></span>
 
-   ```PowerShell
-    $user = get-credential
+   ```powershell
+   Import-Module ExchangeOnlineManagement
    ```
 
-1. <span data-ttu-id="8e18e-124">När du uppmanas att göra det loggar du in med autentiseringsuppgifter för klient organisation för Microsoft 365-klienten som är värd för den boknings kalender du vill ta bort permanent.</span><span class="sxs-lookup"><span data-stu-id="8e18e-124">When you are prompted, log on with tenant administrator credentials to the Microsoft 365 tenant that hosts the booking calendar you want to permanently delete.</span></span>
+   > [!NOTE]
+   > <span data-ttu-id="c6c22-124">Om du redan har [installerat EXO V2-modulen](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module)fungerar det föregående kommandot som det är skrivet.</span><span class="sxs-lookup"><span data-stu-id="c6c22-124">If you've already [installed the EXO V2 module](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module), the previous command will work as written.</span></span>
+   
+2. <span data-ttu-id="c6c22-125">Följande syntax används för kommandot du behöver köra:</span><span class="sxs-lookup"><span data-stu-id="c6c22-125">The command that you need to run uses the following syntax:</span></span>
 
-1. <span data-ttu-id="8e18e-125">I kommando tolken för PowerShell anger du det här kommandot:</span><span class="sxs-lookup"><span data-stu-id="8e18e-125">At the PowerShell command prompt, enter this command:</span></span>
-
-   ```PowerShell
-    $s = New-Pssession -ConnectionUri https://outlook.office365.com/powershell-liveid -Credential $user -Authentication basic -AllowRedirection -ConfigurationName Microsoft.Exchange
+   ```powershell
+   Connect-ExchangeOnline -UserPrincipalName <UPN> 
    ```
 
-1. <span data-ttu-id="8e18e-126">Ange följande kommando:</span><span class="sxs-lookup"><span data-stu-id="8e18e-126">Enter the following command:</span></span>
+   - <span data-ttu-id="c6c22-126">_\<UPN\>_ är ditt konto i huvudnamnsformat (till `john@contoso.com` exempel).</span><span class="sxs-lookup"><span data-stu-id="c6c22-126">_\<UPN\>_ is your account in user principal name format (for example, `john@contoso.com`).</span></span>
 
-   ```PowerShell
-    Import-PSSession $s
+3. <span data-ttu-id="c6c22-127">När du uppmanas till det loggar du in med autentiseringsuppgifter som innehavaradministratör på Microsoft 365-klienten som är värd för den bokningskalender du vill ta bort permanent.</span><span class="sxs-lookup"><span data-stu-id="c6c22-127">When you are prompted, log on with tenant administrator credentials to the Microsoft 365 tenant that hosts the booking calendar you want to permanently delete.</span></span>
+
+4. <span data-ttu-id="c6c22-128">När det här kommandot har körts klart anger du följande kommando för att få en lista över bokningspostlådor i klientorganisationen:</span><span class="sxs-lookup"><span data-stu-id="c6c22-128">Once this command is done processing, enter the following command to get a list of the booking mailboxes in your tenant:</span></span>
+
+   ```powershell
+   Get-EXOMailbox -RecipientTypeDetails Scheduling
    ```
 
-1. <span data-ttu-id="8e18e-127">När det här kommandot har körts klart anger du följande kommando för att få en lista över bokningspostlådor i klientorganisationen:</span><span class="sxs-lookup"><span data-stu-id="8e18e-127">Once this command is done processing, enter the following command to get a list of the booking mailboxes in your tenant:</span></span>
+5. <span data-ttu-id="c6c22-129">Skriv följande kommando:</span><span class="sxs-lookup"><span data-stu-id="c6c22-129">Type the following command:</span></span>
 
-   ```PowerShell
-    get-mailbox -RecipientTypeDetails Scheduling
-   ```
-
-1. <span data-ttu-id="8e18e-128">Skriv följande kommando:</span><span class="sxs-lookup"><span data-stu-id="8e18e-128">Type the following command:</span></span>
-
-   ```PowerShell
+   ```powershell
    remove-mailbox [BookingCalendarToDelete]
    ```
 
    > [!IMPORTANT]
-   > <span data-ttu-id="8e18e-129">Var försiktig så att du skriver det exakta namnet på det alias som du vill ta bort permanent.</span><span class="sxs-lookup"><span data-stu-id="8e18e-129">Be careful to type the exact name of the booking mailbox alias that you want to permanently delete.</span></span>
+   > <span data-ttu-id="c6c22-130">Var noga med att skriva det exakta namnet på det bokningspostlådealias som du vill ta bort permanent.</span><span class="sxs-lookup"><span data-stu-id="c6c22-130">Be careful to type the exact name of the booking mailbox alias that you want to permanently delete.</span></span>
 
-1. <span data-ttu-id="8e18e-130">Om du vill kontrol lera att kalendern har tagits bort skriver du följande kommando:</span><span class="sxs-lookup"><span data-stu-id="8e18e-130">To verify that the calendar has been deleted, enter the following command:</span></span>
+6. <span data-ttu-id="c6c22-131">Bekräfta att kalendern har tagits bort genom att ange följande kommando:</span><span class="sxs-lookup"><span data-stu-id="c6c22-131">To verify that the calendar has been deleted, enter the following command:</span></span>
 
-   ```PowerShell
-    get-mailbox -RecipientTypeDetails Scheduling
+   ```powershell
+    Get-EXOMailbox -RecipientTypeDetails Scheduling
    ```
 
-   <span data-ttu-id="8e18e-131">Den borttagna kalendern visas inte i resultatet.</span><span class="sxs-lookup"><span data-stu-id="8e18e-131">The deleted calendar will not appear in the output.</span></span>
+   <span data-ttu-id="c6c22-132">Den borttagna kalendern visas inte i utdata.</span><span class="sxs-lookup"><span data-stu-id="c6c22-132">The deleted calendar will not appear in the output.</span></span>
